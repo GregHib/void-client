@@ -192,7 +192,7 @@ abstract class Class318_Sub1 : Class318() {
                         var class324 = Class240.aClass324_4684
                         var class143 = Class258_Sub1.aClass143_8527
                         if (class42.anInt576 == 1) {
-                            class324 = Applet_Sub1.aClass324_20
+                            class324 = GameAppletFrame.aClass324_20
                             class143 = Class246.aClass143_3179
                         }
                         if (class42.anInt576 == 2) {

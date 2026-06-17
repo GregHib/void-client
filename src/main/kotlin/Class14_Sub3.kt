@@ -1,4 +1,4 @@
-import Applet_Sub1.Companion.method94
+import GameAppletFrame.Companion.method94
 import Class348_Sub40_Sub3.Companion.method3055
 import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage3Dub

@@ -244,7 +244,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 if (Class298.aBoolean3811) {
                                                     var i_39_ = -256
                                                     if (Class239_Sub5.anInt5891 < 20) i_39_ = -65536
-                                                    Applet_Sub1.aClass324_20!!.method2569("Fps:" + (Class239_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1)
+                                                    GameAppletFrame.aClass324_20!!.method2569("Fps:" + (Class239_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1)
                                                     i_38_ += 15
                                                     val runtime = Runtime.getRuntime()
                                                     var i_40_ = (((runtime.totalMemory()) + -(runtime.freeMemory())) / 1024L).toInt()
@@ -258,12 +258,12 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                             if (i_40_ > 65536) method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4)
                                                         }
                                                     }
-                                                    Applet_Sub1.aClass324_20!!.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1)
+                                                    GameAppletFrame.aClass324_20!!.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1)
                                                     i_38_ += 15
-                                                    Applet_Sub1.aClass324_20!!.method2569(("In:" + Class264.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
+                                                    GameAppletFrame.aClass324_20!!.method2569(("In:" + Class264.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 15
                                                     val i_43_ = (Class348_Sub8.aRenderer6654!!.E() / 1024)
-                                                    Applet_Sub1.aClass324_20!!.method2569("Offheap:" + i_43_ + "k", i_38_, (if (i_43_ <= 65536) -256 else -65536), i_37_, -125, -1)
+                                                    GameAppletFrame.aClass324_20!!.method2569("Offheap:" + i_43_ + "k", i_38_, (if (i_43_ <= 65536) -256 else -65536), i_37_, -125, -1)
                                                     i_38_ += 15
                                                     var i_44_ = 0
                                                     var i_45_ = 0

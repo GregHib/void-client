@@ -70,7 +70,7 @@ public abstract class Class101 {
             RenderNode.anIntArray9724 = IntArray(i_6_)
             Class295.anIntArray3759 = IntArray(i_6_)
             Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
-            Applet_Sub1.anIntArray38 = IntArray(i_6_)
+            GameAppletFrame.anIntArray38 = IntArray(i_6_)
             Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_6_)
             Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_6_)
             i_6_ = 0
@@ -81,13 +81,13 @@ public abstract class Class101 {
                     val i_9_ = i_8_ + (i_7_ shl 8)
                     Class348_Sub23_Sub3.anIntArray9042!![i_6_] = i_9_
                     NativeSprite.anIntArray5192!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
-                    Applet_Sub1.anIntArray38!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
+                    GameAppletFrame.anIntArray38!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
                     Class322.anIntArray4031!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
                     Class295.anIntArray3759!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
                     RenderNode.anIntArray9724!![i_6_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i.toInt(), -49)))
                     if (Class322.anIntArray4031!![i_6_] == -1) {
                         NativeSprite.anIntArray5192!![i_6_] = -1
-                        Applet_Sub1.anIntArray38!![i_6_] = -1
+                        GameAppletFrame.anIntArray38!![i_6_] = -1
                         Class295.anIntArray3759!![i_6_] = -1
                         RenderNode.anIntArray9724!![i_6_] = -1
                     }
@@ -100,7 +100,7 @@ public abstract class Class101 {
             while (Class322.anIntArray4031!!.size > i_10_) {
                 Class322.anIntArray4031!![i_10_] = -1
                 NativeSprite.anIntArray5192!![i_10_] = -1
-                Applet_Sub1.anIntArray38!![i_10_] = -1
+                GameAppletFrame.anIntArray38!![i_10_] = -1
                 Class295.anIntArray3759!![i_10_] = -1
                 RenderNode.anIntArray9724!![i_10_] = -1
                 i_10_++

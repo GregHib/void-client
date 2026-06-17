@@ -41,7 +41,7 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
         @JvmField
         var anInt9168: Int = 0
         @JvmField
-        var anApplet_Sub1_9169: Applet_Sub1? = null
+        var anGameApplet_Frame_9169: GameAppletFrame? = null
         @JvmField
         var anInt9170: Int = 0
         @JvmField
@@ -53,7 +53,7 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
 
         @JvmStatic
         fun method3071(i: Byte) {
-            if (i.toInt() != 59) anApplet_Sub1_9169 = null
+            if (i.toInt() != 59) anGameApplet_Frame_9169 = null
             aClass60_9171 = null
             aClass324_9173 = null
         }

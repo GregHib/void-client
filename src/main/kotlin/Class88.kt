@@ -374,7 +374,7 @@ class Class88 {
                                 OpenGlTerrainTile.aString8265 = class348_sub49_sub2.method3371(-13487)
                                 Class132.aPlayer_1907!!.aString10537 = OpenGlTerrainTile.aString8265
                                 Class132.aPlayer_1907!!.aString10544 = Class132.aPlayer_1907!!.aString10537
-                                Applet_Sub1.anInt37 = class348_sub49_sub2.readUnsignedByte(255)
+                                GameAppletFrame.anInt37 = class348_sub49_sub2.readUnsignedByte(255)
                                 Class348_Sub1.anInt6551 = class348_sub49_sub2.readInt((-126).toByte())
                                 IndexedSprite.aClass161_5199 = Class161()
                                 IndexedSprite.aClass161_5199!!.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944)

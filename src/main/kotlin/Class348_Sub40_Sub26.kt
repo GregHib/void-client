@@ -118,7 +118,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)
             NativeSprite.anIntArray5192 = IntArray(i_18_)
             Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
-            Applet_Sub1.anIntArray38 = IntArray(i_18_)
+            GameAppletFrame.anIntArray38 = IntArray(i_18_)
             Class348_Sub50.aByteArrayArray7212 = null
             RenderNode.anIntArray9724 = IntArray(i_18_)
             Class322.anIntArray4031 = null
@@ -132,7 +132,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
                 while ((i_22_ <= ((Class348_Sub40_Sub3.Companion.anInt9109 shr 4) + i_16_) / 8)) {
                     Class348_Sub23_Sub3.anIntArray9042!![i_18_] = i_22_ + (i_21_ shl 8)
                     NativeSprite.anIntArray5192!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_21_ + "_" + i_22_, 0)
-                    Applet_Sub1.anIntArray38!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
+                    GameAppletFrame.anIntArray38!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
                     Class295.anIntArray3759!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)
                     RenderNode.anIntArray9724!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
                     i_18_++

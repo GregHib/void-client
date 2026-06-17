@@ -1,5 +1,5 @@
-import Applet_Sub1.Companion.method94
-import Applet_Sub1.Companion.set
+import GameAppletFrame.Companion.method94
+import GameAppletFrame.Companion.set
 import Class110.Companion.method1034
 import Class238.Companion.method1703
 import Class239.Companion.method1713

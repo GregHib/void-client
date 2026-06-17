@@ -108,7 +108,7 @@ class Class311 : Runnable {
                 else if (Class93.anApplet1530 != null) {
                     container = Class93.anApplet1530!!.getPulseComponent() as? Container
                 }
-                else container = Class348_Sub40_Sub9.anApplet_Sub1_9169
+                else container = Class348_Sub40_Sub9.anGameApplet_Frame_9169
                 container!!.getSize()
                 container.getSize()
                 if (Class52.aFrame4904 === container) Class52.aFrame4904!!.getInsets()

@@ -38,7 +38,7 @@ object Class215 {
                 Class272.anInt3473 = i_0_
                 container = Class34.aFrame476
             } else if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169
+                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169
                 else container = Class93.anApplet1530 as? Container
                 Class272.anInt3473 = container!!.getSize().width
                 Class348_Sub22.anInt6857 = container.getSize().height

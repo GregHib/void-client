@@ -12,14 +12,17 @@ import java.io.IOException
 import java.net.URL
 import java.util.*
 
-abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, WindowListener {
+/*
+ * Applet_Sub1
+ */
+abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, WindowListener {
     private var aBoolean17 = false
     private var aBoolean27 = false
     abstract fun method80(i: Int)
 
     fun stop() {
         anInt24++
-        if (this === Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L
+        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L
     }
 
     override fun getParameter(string: String?): String? {
@@ -118,7 +121,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         val container: Container
         if (Class34.aFrame476 == null) {
             if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169!!
+                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169!!
                 else container = Class93.anApplet1530!!.getPulseComponent() as Container
             } else container = Class52.aFrame4904 as Container
         } else container = Class34.aFrame476 as Container
@@ -147,7 +150,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
     @Synchronized
     override fun paint(graphics: Graphics?) {
         anInt18++
-        if (this === Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) {
+        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) {
             Class49.aBoolean4726 = true
             if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
                 val rectangle = graphics?.getClipBounds()
@@ -275,7 +278,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
 
     override fun destroy() {
         anInt21++
-        if (Class348_Sub40_Sub9.anApplet_Sub1_9169 === this && !Class26.aBoolean384) {
+        if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 === this && !Class26.aBoolean384) {
             Class113.aLong1739 = Class62.method599(-108)
             Class286_Sub5.method2161(77.toByte(), 5000L)
             Class231.aClass297_2993 = null
@@ -311,7 +314,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
                     }
                     if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true
                 }
-                var applet: Panel? = Class348_Sub40_Sub9.anApplet_Sub1_9169
+                var applet: Panel? = Class348_Sub40_Sub9.anGameApplet_Frame_9169
                 if (Class93.anApplet1530 != null) {
                     val container = Class93.anApplet1530!!.getPulseComponent() as? Container
                     if (container != null) {
@@ -357,7 +360,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
     fun method95(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, string: String?, i_19_: Int) {
         anInt25++
         try {
-            if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == null) {
+            if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 == null) {
                 Class348_Sub48.anInt7129 = 0
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_
                 Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
@@ -365,7 +368,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
                 Class272.anInt3473 = Class321.anInt4017
                 Class335.anInt4167 = 0
                 Class348_Sub1_Sub3.anInt8818 = i_15_
-                Class348_Sub40_Sub9.anApplet_Sub1_9169 = this
+                Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530
                 Class348_Sub23_Sub1.aClass297_8992 = Class297(i_17_, string, i_18_, Class93.anApplet1530 != null)
                 Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
@@ -390,7 +393,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
             Class272.anInt3473 = Class321.anInt4017
             Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_
             Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
-            Class348_Sub40_Sub9.anApplet_Sub1_9169 = this
+            Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
             Class335.anInt4167 = 0
             Class348_Sub48.anInt7129 = 0
             Class348_Sub1_Sub3.anInt8818 = i_21_
@@ -425,7 +428,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
 
     fun start() {
         anInt36++
-        if (this === Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L
+        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L
     }
 
     abstract fun method99(i: Byte)

@@ -1,4 +1,4 @@
-import Applet_Sub1.Companion.provideLoaderApplet
+import GameAppletFrame.Companion.provideLoaderApplet
 import java.awt.BorderLayout
 import java.awt.Component
 import java.awt.Dimension

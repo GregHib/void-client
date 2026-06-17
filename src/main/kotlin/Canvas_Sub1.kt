@@ -1,4 +1,4 @@
-import Applet_Sub1.Companion.method94
+import GameAppletFrame.Companion.method94
 import Class239_Sub12.Companion.method1772
 import Class239_Sub2.Companion.method1725
 import Class286_Sub3.Companion.method2148
@@ -156,8 +156,8 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                         Class268.anInt3441++
                     }
                 }
-                if (Applet_Sub1.anIntArray38!![i_19_] != -1 && Class14_Sub4.aByteArrayArray8642!![i_19_] == null) {
-                    Class14_Sub4.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(Applet_Sub1.anIntArray38!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
+                if (GameAppletFrame.anIntArray38!![i_19_] != -1 && Class14_Sub4.aByteArrayArray8642!![i_19_] == null) {
+                    Class14_Sub4.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
                     if (Class14_Sub4.aByteArrayArray8642!![i_19_] == null) {
                         Class268.anInt3441++
                         bool = false
@@ -221,7 +221,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                     }
                 }
                 if (bool) {
-                    if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aRenderer6654)
+                    if (Class36.anInt489 != 0) Class362.method3511(true, GameAppletFrame.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aRenderer6654)
                     method3570(false)
                     Class348_Sub18.method2938(102.toByte())
                     method1772(i xor 0x41)

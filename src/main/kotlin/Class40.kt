@@ -127,7 +127,7 @@ class Class40 internal constructor() {
             Class348_Sub40_Sub37.aClass105Array9467 = null
             Class262.aClass324_3326 = null
             Class239_Sub24.aClass105_6097 = null
-            Applet_Sub1.aClass324_20 = null
+            GameAppletFrame.aClass324_20 = null
             Class240.aClass324_4684 = null
             Class169.aClass105Array2260 = null
             Class113.aClass105Array1744 = null

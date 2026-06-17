@@ -68,7 +68,7 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
             Class240.aClass324_4684 = Class14.method232(var_renderer, (-53).toByte(), true, Class56.anInt1044)
             Class258_Sub1.aClass143_8527 = Class135.method1151(-25411, var_renderer, Class56.anInt1044)
             if (i != 4) aClass143_4962 = null
-            Applet_Sub1.aClass324_20 = Class14.method232(var_renderer, (-53).toByte(), true, Class17.anInt235)
+            GameAppletFrame.aClass324_20 = Class14.method232(var_renderer, (-53).toByte(), true, Class17.anInt235)
             Class246.aClass143_3179 = Class135.method1151(-25411, var_renderer, Class17.anInt235)
             Class262.aClass324_3326 = Class14.method232(var_renderer, (-53).toByte(), true, Class291.anInt3736)
             aClass143_4962 = Class135.method1151(-25411, var_renderer, Class291.anInt3736)

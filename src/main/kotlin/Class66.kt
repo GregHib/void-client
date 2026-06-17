@@ -1,4 +1,4 @@
-import Applet_Sub1.Companion.method94
+import GameAppletFrame.Companion.method94
 import Class10.Companion.method217
 import Class11.method222
 import Class130.Companion.method1129
@@ -2304,7 +2304,7 @@ object Class66 {
                     return
                 }
                 if (i == 6911) {
-                    anIntArray1149!![anInt1173++] = Applet_Sub1.anInt37
+                    anIntArray1149!![anInt1173++] = GameAppletFrame.anInt37
                     return
                 }
                 if (i == 6912) {

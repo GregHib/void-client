@@ -547,7 +547,7 @@ import java.util.*
 import kotlin.math.max
 import kotlin.math.min
 
-class Client : Applet_Sub1() {
+class Client : GameAppletFrame() {
     private fun method101(i: Byte) {
         anInt5179++
         if (Class348_Sub4.aClass248_6601!!.anInt3213 > Class239_Sub11.anInt5959) {
@@ -1670,7 +1670,7 @@ class Client : Applet_Sub1() {
             if (Class34.aFrame476 == null) {
                 val container: Container?
                 if (Class52.aFrame4904 == null) {
-                    if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169
+                    if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169
                     else container = Class93.anApplet1530 as? Container
                 } else container = Class52.aFrame4904
                 var i = container!!.getSize().width
