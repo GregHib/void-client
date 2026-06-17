@@ -766,14 +766,14 @@ open class Class75 {
             return null
         }
 
-        fun method767(i: Int, i_192_: Int): Class107 {
-            val class107 = Class107()
+        fun method767(i: Int, i_192_: Int): LinkedNodeListIterator {
+            val linkedNodeListIterator = LinkedNodeListIterator()
             var class348_sub42_sub14 = aClass356_1241!!.method3484(0) as Class348_Sub42_Sub14?
             while (class348_sub42_sub14 != null) {
-                if (class348_sub42_sub14.aBoolean9639 && class348_sub42_sub14.method3238(29.toByte(), i, i_192_)) class107.method1005(true, class348_sub42_sub14)
+                if (class348_sub42_sub14.aBoolean9639 && class348_sub42_sub14.method3238(29.toByte(), i, i_192_)) linkedNodeListIterator.method1005(true, class348_sub42_sub14)
                 class348_sub42_sub14 = aClass356_1241!!.method3482(0) as Class348_Sub42_Sub14?
             }
-            return class107
+            return linkedNodeListIterator
         }
 
         private fun method768(`is`: ByteArray, is_193_: ByteArray, is_194_: ShortArray, i: Int, i_195_: Int) {

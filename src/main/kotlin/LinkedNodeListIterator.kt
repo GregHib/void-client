@@ -8,7 +8,7 @@ import RenderNode.Companion.method3284
 /* Class107 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class107 {
+class LinkedNodeListIterator {
     @JvmField
     var aClass348_Sub42_1647: Class348_Sub42 = Class348_Sub42()
     private var aClass348_Sub42_1652: Class348_Sub42? = null

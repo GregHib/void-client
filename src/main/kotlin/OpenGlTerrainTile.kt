@@ -769,7 +769,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
         @JvmField
         var anInt8239: Int = 0
         @JvmField
-        var aClass107_8241: Class107? = Class107()
+        var aLinkedNodeListIterator_8241: LinkedNodeListIterator? = LinkedNodeListIterator()
         @JvmField
         var anInt8242: Int = 0
         @JvmField
@@ -816,7 +816,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             if (i != 8448) aString8265 = null
             anIntArray8269 = null
             aString8265 = null
-            aClass107_8241 = null
+            aLinkedNodeListIterator_8241 = null
         }
 
         @JvmStatic

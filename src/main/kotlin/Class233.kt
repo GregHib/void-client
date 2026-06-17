@@ -76,7 +76,7 @@ class Class233 internal constructor() {
                     i_5_ = 0
                     var class318_sub9_12_ = class318_sub9.aClass318_Sub9_6469
                     var i_13_ = -2
-                    if (i > -23) aClass107_3022 = null
+                    if (i > -23) aLinkedNodeListIterator_3022 = null
                     var bool = true
                     var bool_14_ = true
                     while (class318_sub9 !== class318_sub9_12_) {
@@ -409,13 +409,13 @@ class Class233 internal constructor() {
         var anInt3019: Int = 0
         var anInt3021: Int = 0
         @JvmField
-        var aClass107_3022: Class107? = Class107()
+        var aLinkedNodeListIterator_3022: LinkedNodeListIterator? = LinkedNodeListIterator()
         var anInt3023: Int = 0
         @JvmStatic
         fun method1653(i: Int) {
-            aClass107_3022 = null
+            aLinkedNodeListIterator_3022 = null
             aFloatArray3015 = null
-            if (i != 1489574736) aClass107_3022 = null
+            if (i != 1489574736) aLinkedNodeListIterator_3022 = null
         }
     }
 }

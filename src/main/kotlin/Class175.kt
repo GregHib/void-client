@@ -8,7 +8,7 @@ import kotlin.math.sqrt
 */
 class Class175 internal constructor(private var anInt2311: Int) {
     private val aClass356_2312: Class356
-    private var aClass107_2316: Class107? = Class107()
+    private var aLinkedNodeListIterator_2316: LinkedNodeListIterator? = LinkedNodeListIterator()
     private val anInt2324: Int
     private fun method1338(i: Int, interface14: Interface14) {
         anInt2321++
@@ -44,12 +44,12 @@ class Class175 internal constructor(private var anInt2311: Int) {
                     if (class348_sub42_sub9.method3206((-128).toByte())) {
                         val class348_sub42_sub9_sub1 = (Class348_Sub42_Sub9_Sub1(interface14, `object`, (class348_sub42_sub9.anInt9556)))
                         aClass356_2312.method3483(125.toByte(), (class348_sub42_sub9.aLong4291), class348_sub42_sub9_sub1)
-                        aClass107_2316!!.method1005(true, class348_sub42_sub9_sub1)
+                        aLinkedNodeListIterator_2316!!.method1005(true, class348_sub42_sub9_sub1)
                         class348_sub42_sub9_sub1.aLong7057 = 0L
                         class348_sub42_sub9.method2715(65.toByte())
                         class348_sub42_sub9.method3162(true)
                     } else {
-                        aClass107_2316!!.method1005(true, class348_sub42_sub9)
+                        aLinkedNodeListIterator_2316!!.method1005(true, class348_sub42_sub9)
                         class348_sub42_sub9.aLong7057 = 0L
                     }
                     return `object`
@@ -69,12 +69,12 @@ class Class175 internal constructor(private var anInt2311: Int) {
                 method1338(7, interface14!!)
                 anInt2311 -= i_0_
                 while (anInt2311 < 0) {
-                    val class348_sub42_sub9 = aClass107_2316!!.method1008(20) as Class348_Sub42_Sub9?
+                    val class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1008(20) as Class348_Sub42_Sub9?
                     method1342(class348_sub42_sub9, 60.toByte())
                 }
                 val class348_sub42_sub9_sub1 = Class348_Sub42_Sub9_Sub1(interface14, `object`, i_0_)
                 aClass356_2312.method3483(120.toByte(), interface14.method52(120.toByte()), class348_sub42_sub9_sub1)
-                aClass107_2316!!.method1005(true, class348_sub42_sub9_sub1)
+                aLinkedNodeListIterator_2316!!.method1005(true, class348_sub42_sub9_sub1)
                 class348_sub42_sub9_sub1.aLong7057 = 0L
             }
         } catch (runtimeexception: RuntimeException) {
@@ -94,20 +94,20 @@ class Class175 internal constructor(private var anInt2311: Int) {
 
     fun method1344(i: Byte) {
         anInt2319++
-        var class348_sub42_sub9 = aClass107_2316!!.method1011(-87) as Class348_Sub42_Sub9?
+        var class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1011(-87) as Class348_Sub42_Sub9?
         while (class348_sub42_sub9 != null) {
             if (class348_sub42_sub9.method3206(5.toByte())) {
                 class348_sub42_sub9.method2715(127.toByte())
                 class348_sub42_sub9.method3162(true)
                 anInt2311 += class348_sub42_sub9.anInt9556
             }
-            class348_sub42_sub9 = (aClass107_2316!!.method1003(69.toByte()) as Class348_Sub42_Sub9?)
+            class348_sub42_sub9 = (aLinkedNodeListIterator_2316!!.method1003(69.toByte()) as Class348_Sub42_Sub9?)
         }
         if (i > -34) aBooleanArray2326 = null
     }
 
     fun method1345(i: Byte) {
-        aClass107_2316!!.method1009(2110355138)
+        aLinkedNodeListIterator_2316!!.method1009(2110355138)
         anInt2325++
         aClass356_2312.method3481(0)
         val i_3_ = 18 % ((i - -89) / 35)
@@ -117,7 +117,7 @@ class Class175 internal constructor(private var anInt2311: Int) {
     fun method1346(i: Int, i_4_: Int) {
         anInt2322++
         if (MinimapDrawController.aClass345_1607 != null) {
-            var class348_sub42_sub9 = aClass107_2316!!.method1011(-72) as Class348_Sub42_Sub9?
+            var class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1011(-72) as Class348_Sub42_Sub9?
             while (class348_sub42_sub9 != null) {
                 if (class348_sub42_sub9.method3206((-124).toByte())) {
                     if (class348_sub42_sub9.method3205(i + 67027) == null) {
@@ -132,7 +132,7 @@ class Class175 internal constructor(private var anInt2311: Int) {
                     class348_sub42_sub9.method2715(70.toByte())
                     class348_sub42_sub9.method3162(true)
                 }
-                class348_sub42_sub9 = (aClass107_2316!!.method1003(59.toByte()) as Class348_Sub42_Sub9?)
+                class348_sub42_sub9 = (aLinkedNodeListIterator_2316!!.method1003(59.toByte()) as Class348_Sub42_Sub9?)
             }
         }
         if (i != -1491) method1342(null, 51.toByte())
@@ -144,7 +144,7 @@ class Class175 internal constructor(private var anInt2311: Int) {
                 anInt2318++
                 method1341(`object`, interface14, -114, 1)
                 if (i > 62) break
-                aClass107_2316 = null
+                aLinkedNodeListIterator_2316 = null
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("pq.K(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (interface14 != null) "{...}" else "null") + ')'))
             }

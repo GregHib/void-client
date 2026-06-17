@@ -1290,7 +1290,7 @@ object Class66 {
             }
             if (i == 5602) {
                 if (Class225.anInt2955 == 0) {
-                    Class107.anInt1645 = -2
+                    LinkedNodeListIterator.anInt1645 = -2
                     Class348_Sub6.anInt6634 = -2
                 }
                 return
@@ -1370,7 +1370,7 @@ object Class66 {
                 return
             }
             if (i == 5617) {
-                anIntArray1149!![anInt1173++] = Class107.anInt1645
+                anIntArray1149!![anInt1173++] = LinkedNodeListIterator.anInt1645
                 return
             }
             if (i == 5618) {

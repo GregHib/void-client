@@ -195,7 +195,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         if (class46.anInt765 == Class290.anInt3717) {
                                             if (class46.method425((Class348_Sub8.aRenderer6654!!), 8.toByte()) != null) {
                                                 method3570(false)
-                                                Class107.method1007(class46, (Class348_Sub8.aRenderer6654), i_24_, i_25_, 22960)
+                                                LinkedNodeListIterator.method1007(class46, (Class348_Sub8.aRenderer6654), i_24_, i_25_, 22960)
                                                 Class268.aBooleanArray3438!![i_23_] = true
                                                 Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (Class59_Sub1.aBoolean5300) {

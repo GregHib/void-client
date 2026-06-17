@@ -3,10 +3,10 @@ import java.io.IOException
 import kotlin.concurrent.Volatile
 
 class Class248 {
-    private val aClass107_3197 = Class107()
-    private val aClass107_3204 = Class107()
-    private val aClass107_3205 = Class107()
-    private val aClass107_3206 = Class107()
+    private val aLinkedNodeListIterator_3197 = LinkedNodeListIterator()
+    private val aLinkedNodeListIterator_3204 = LinkedNodeListIterator()
+    private val aLinkedNodeListIterator_3205 = LinkedNodeListIterator()
+    private val aLinkedNodeListIterator_3206 = LinkedNodeListIterator()
     private var aLong3207: Long = 0
     private val aClass348_Sub49_3208 = Class348_Sub49(4)
     private var aClass202_3209: Class202? = null
@@ -67,25 +67,25 @@ class Class248 {
         try {
             aClass202_3209!!.method1472(true)
             run {
-                var class348_sub42_sub16_sub1 = (aClass107_3197.method1011(-30) as Class348_Sub42_Sub16_Sub1?)
+                var class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3197.method1011(-30) as Class348_Sub42_Sub16_Sub1?)
                 while (class348_sub42_sub16_sub1 != null) {
                     aClass348_Sub49_3208.anInt7197 = 0
                     aClass348_Sub49_3208.writeByte(false, 1)
                     aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
                     aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
-                    aClass107_3204.method1005(true, class348_sub42_sub16_sub1)
-                    class348_sub42_sub16_sub1 = (aClass107_3197.method1003(65.toByte()) as Class348_Sub42_Sub16_Sub1?)
+                    aLinkedNodeListIterator_3204.method1005(true, class348_sub42_sub16_sub1)
+                    class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3197.method1003(65.toByte()) as Class348_Sub42_Sub16_Sub1?)
                 }
             }
-            var class348_sub42_sub16_sub1 = aClass107_3205.method1011(-75) as Class348_Sub42_Sub16_Sub1?
+            var class348_sub42_sub16_sub1 = aLinkedNodeListIterator_3205.method1011(-75) as Class348_Sub42_Sub16_Sub1?
             if (i <= 72) return false
             while ( /**/class348_sub42_sub16_sub1 != null) {
                 aClass348_Sub49_3208.anInt7197 = 0
                 aClass348_Sub49_3208.writeByte(false, 0)
                 aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
                 aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
-                aClass107_3206.method1005(true, class348_sub42_sub16_sub1)
-                class348_sub42_sub16_sub1 = (aClass107_3205.method1003(102.toByte()) as Class348_Sub42_Sub16_Sub1?)
+                aLinkedNodeListIterator_3206.method1005(true, class348_sub42_sub16_sub1)
+                class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3205.method1003(102.toByte()) as Class348_Sub42_Sub16_Sub1?)
             }
             for (i_1_ in 0..99) {
                 val i_2_ = aClass202_3209!!.method1467(83.toByte())
@@ -136,16 +136,16 @@ class Class248 {
                             val `object`: Any? = null
                             var class348_sub42_sub16_sub1_14_: Class348_Sub42_Sub16_Sub1?
                             if (bool) {
-                                class348_sub42_sub16_sub1_14_ = (aClass107_3206.method1011(-89) as Class348_Sub42_Sub16_Sub1?)
+                                class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3206.method1011(-89) as Class348_Sub42_Sub16_Sub1?)
                                 while (class348_sub42_sub16_sub1_14_ != null) {
                                     if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break
-                                    class348_sub42_sub16_sub1_14_ = (aClass107_3206.method1003(98.toByte()) as Class348_Sub42_Sub16_Sub1?)
+                                    class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3206.method1003(98.toByte()) as Class348_Sub42_Sub16_Sub1?)
                                 }
                             } else {
-                                class348_sub42_sub16_sub1_14_ = (aClass107_3204.method1011(-108) as Class348_Sub42_Sub16_Sub1?)
+                                class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3204.method1011(-108) as Class348_Sub42_Sub16_Sub1?)
                                 while (class348_sub42_sub16_sub1_14_ != null) {
                                     if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break
-                                    class348_sub42_sub16_sub1_14_ = (aClass107_3204.method1003(90.toByte()) as Class348_Sub42_Sub16_Sub1?)
+                                    class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3204.method1003(90.toByte()) as Class348_Sub42_Sub16_Sub1?)
                                 }
                             }
                             if (class348_sub42_sub16_sub1_14_ == null) throw IOException()
@@ -182,7 +182,7 @@ class Class248 {
     private fun method1894(i: Int): Int {
         anInt3199++
         if (i != 4350) return 29
-        return aClass107_3205.method1002(0) - -aClass107_3206.method1002(0)
+        return aLinkedNodeListIterator_3205.method1002(0) - -aLinkedNodeListIterator_3206.method1002(0)
     }
 
     private fun method1896(i: Int) {
@@ -235,7 +235,7 @@ class Class248 {
     fun method1902(i: Int): Int {
         anInt3192++
         if (i != 4) this.anInt3213 = 18
-        return aClass107_3197.method1002(0) + aClass107_3204.method1002(0)
+        return aLinkedNodeListIterator_3197.method1002(0) + aLinkedNodeListIterator_3204.method1002(0)
     }
 
     fun method1903(bool: Boolean, bool_28_: Boolean, class202: Class202?) {
@@ -255,14 +255,14 @@ class Class248 {
         aClass348_Sub42_Sub16_Sub1_3215 = null
         if (bool != false) aLong3207 = -35L
         while (true) {
-            val class348_sub42_sub16_sub1 = aClass107_3204.method1008(20) as? Class348_Sub42_Sub16_Sub1?
+            val class348_sub42_sub16_sub1 = aLinkedNodeListIterator_3204.method1008(20) as? Class348_Sub42_Sub16_Sub1?
             if (class348_sub42_sub16_sub1 == null) break
-            aClass107_3197.method1005(true, class348_sub42_sub16_sub1)
+            aLinkedNodeListIterator_3197.method1005(true, class348_sub42_sub16_sub1)
         }
         while (true) {
-            val class348_sub42_sub16_sub1 = aClass107_3206.method1008(20) as? Class348_Sub42_Sub16_Sub1?
+            val class348_sub42_sub16_sub1 = aLinkedNodeListIterator_3206.method1008(20) as? Class348_Sub42_Sub16_Sub1?
             if (class348_sub42_sub16_sub1 == null) break
-            aClass107_3205.method1005(!bool, class348_sub42_sub16_sub1)
+            aLinkedNodeListIterator_3205.method1005(!bool, class348_sub42_sub16_sub1)
         }
         if (aByte3212.toInt() != 0) {
             try {
@@ -330,10 +330,10 @@ class Class248 {
         class348_sub42_sub16_sub1.aByte10449 = i_29_
         if (bool) {
             if (method1902(4) >= 20) throw RuntimeException()
-            aClass107_3197.method1005(true, class348_sub42_sub16_sub1)
+            aLinkedNodeListIterator_3197.method1005(true, class348_sub42_sub16_sub1)
         } else {
             if (method1894(4350) >= 20) throw RuntimeException()
-            aClass107_3205.method1005(true, class348_sub42_sub16_sub1)
+            aLinkedNodeListIterator_3205.method1005(true, class348_sub42_sub16_sub1)
         }
         return class348_sub42_sub16_sub1
     }

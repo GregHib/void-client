@@ -151,22 +151,22 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                         class348_sub42_sub12!!.method2715(111.toByte())
                         Class73.anInt4776--
                         if (class348_sub42_sub12.aBoolean9611) {
-                            var class348_sub42_sub13 = (Class233.aClass107_3022!!.method1011(-99) as Class348_Sub42_Sub13?)
+                            var class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1011(-99) as Class348_Sub42_Sub13?)
                             while (class348_sub42_sub13 != null) {
                                 if (class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601) {
                                     var bool = false
-                                    var class348_sub42_sub12_12_ = (class348_sub42_sub13.aClass107_9621.method1011(-58) as Class348_Sub42_Sub12?)
+                                    var class348_sub42_sub12_12_ = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1011(-58) as Class348_Sub42_Sub12?)
                                     while (class348_sub42_sub12_12_ != null) {
                                         if (class348_sub42_sub12 == class348_sub42_sub12_12_) {
                                             if (class348_sub42_sub13.method3234((-123).toByte(), class348_sub42_sub12)) Class242.method1868((-98).toByte(), class348_sub42_sub13)
                                             bool = true
                                             break
                                         }
-                                        class348_sub42_sub12_12_ = (class348_sub42_sub13.aClass107_9621.method1003(112.toByte()) as Class348_Sub42_Sub12?)
+                                        class348_sub42_sub12_12_ = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1003(112.toByte()) as Class348_Sub42_Sub12?)
                                     }
                                     if (bool) break
                                 }
-                                class348_sub42_sub13 = (Class233.aClass107_3022!!.method1003(110.toByte()) as Class348_Sub42_Sub13?)
+                                class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1003(110.toByte()) as Class348_Sub42_Sub13?)
                             }
                         } else {
                             val l = (class348_sub42_sub12.aLong9600)

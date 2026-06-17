@@ -4,15 +4,15 @@
 class Class308 internal constructor(private var anInt3891: Int) {
     private var aClass348_Sub42_3887 = Class348_Sub42()
     private val aClass356_3888: Class356
-    private var aClass107_3889: Class107? = Class107()
+    private var aLinkedNodeListIterator_3889: LinkedNodeListIterator? = LinkedNodeListIterator()
     private val anInt3890: Int
 
     fun method2302(l: Long, i: Byte): Class348_Sub42? {
         try {
-            if (i > -25) aClass107_3889 = null
+            if (i > -25) aLinkedNodeListIterator_3889 = null
             anInt3885++
             val class348_sub42 = aClass356_3888.method3480(l, -6008) as Class348_Sub42?
-            if (class348_sub42 != null) aClass107_3889!!.method1005(true, class348_sub42)
+            if (class348_sub42 != null) aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42)
             return class348_sub42
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, "wu.D(" + l + ',' + i + ')')
@@ -22,7 +22,7 @@ class Class308 internal constructor(private var anInt3891: Int) {
     fun method2303(bool: Boolean) {
         anInt3879++
         if (bool != true) method2305(-121L, null, -1)
-        aClass107_3889!!.method1009(2110355138)
+        aLinkedNodeListIterator_3889!!.method1009(2110355138)
         aClass356_3888.method3481(0)
         aClass348_Sub42_3887 = Class348_Sub42()
         anInt3891 = anInt3890
@@ -51,17 +51,17 @@ class Class308 internal constructor(private var anInt3891: Int) {
         try {
             anInt3881++
             if ((anInt3891.inv()) == i) {
-                var class348_sub42_0_ = aClass107_3889!!.method1008(20)
+                var class348_sub42_0_ = aLinkedNodeListIterator_3889!!.method1008(20)
                 class348_sub42_0_!!.method2715(113.toByte())
                 class348_sub42_0_.method3162(true)
                 if (class348_sub42_0_ === aClass348_Sub42_3887) {
-                    class348_sub42_0_ = aClass107_3889!!.method1008(20)
+                    class348_sub42_0_ = aLinkedNodeListIterator_3889!!.method1008(20)
                     class348_sub42_0_!!.method2715(79.toByte())
                     class348_sub42_0_.method3162(true)
                 }
             } else anInt3891--
             aClass356_3888.method3483(37.toByte(), l, class348_sub42)
-            aClass107_3889!!.method1005(true, class348_sub42!!)
+            aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42!!)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("wu.E(" + l + ',' + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ')'))
         }

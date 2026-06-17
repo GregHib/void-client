@@ -13,7 +13,7 @@ import MinimapDrawController.method948
 import MinimapDrawController.method949
 import SoftwareSpriteRaster.Companion.method953
 import DualMaterialContainer.Companion.method999
-import Class107.Companion.method1004
+import LinkedNodeListIterator.Companion.method1004
 import Class108.method1013
 import Class11.method221
 import Class110.Companion.method1030

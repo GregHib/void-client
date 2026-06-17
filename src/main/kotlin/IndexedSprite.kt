@@ -90,7 +90,7 @@ class IndexedSprite : Sprite {
                 Class239_Sub21.anIntArray6062!![0] = Class239_Sub21.anIntArray6062!![1]
             } else if (i_12_ >= 22) {
                 val i_15_ = Class275.method2064(i_9_, i, 11219, i_11_) - i_7_
-                if (Class59_Sub1.aBoolean5300) Class107.method1010(false, true)
+                if (Class59_Sub1.aBoolean5300) LinkedNodeListIterator.method1010(false, true)
                 else {
                     Class157.aAbstractCameraTransform_2123!!.method891(i_10_, 0, 0)
                     Class348_Sub8.aRenderer6654!!.method3638(Class157.aAbstractCameraTransform_2123)

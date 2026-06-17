@@ -2953,7 +2953,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInterface11Array7741 = arrayOfNulls<Interface11>(4)
         anInterface11Array7743 = arrayOfNulls<Interface11>(4)
         anInt7746 = -1
-        Class107()
+        LinkedNodeListIterator()
         Class356(16)
         aClass262_7749 = Class262()
         aClass262_7751 = Class262()

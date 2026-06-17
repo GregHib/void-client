@@ -185,7 +185,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                                 }
                                 if (i_17_ != -1) {
                                     var i_22_ = 0
-                                    val class156 = Class156(Class233.aClass107_3022!!)
+                                    val class156 = Class156(Class233.aLinkedNodeListIterator_3022!!)
                                     var class348_sub42_sub13 = (class156.method1240(75) as Class348_Sub42_Sub13?)
                                     while (class348_sub42_sub13 != null) {
                                         if (i_17_ == i_22_) {
@@ -218,7 +218,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                         }
                         if (i_25_ != -1) {
                             var i_29_ = 0
-                            val class156 = Class156(Class242.aClass348_Sub42_Sub13_3152!!.aClass107_9621)
+                            val class156 = Class156(Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
                             var class348_sub42_sub12 = (class156.method1240(98) as Class348_Sub42_Sub12?)
                             while (class348_sub42_sub12 != null) {
                                 if (i_29_ == i_25_) {
@@ -250,11 +250,11 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                             }
                             if (i_30_ != -1) {
                                 var i_34_ = 0
-                                val class156 = Class156(Class233.aClass107_3022!!)
+                                val class156 = Class156(Class233.aLinkedNodeListIterator_3022!!)
                                 var class348_sub42_sub13 = (class156.method1240(18) as Class348_Sub42_Sub13?)
                                 while (class348_sub42_sub13 != null) {
                                     if (i_34_ == i_30_) {
-                                        Class325.method2599(122.toByte(), ((class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?), i_24_, i_23_)
+                                        Class325.method2599(122.toByte(), ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?), i_24_, i_23_)
                                         method2146(118.toByte())
                                         break
                                     }

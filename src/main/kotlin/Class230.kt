@@ -51,8 +51,8 @@ class Class230 internal constructor(string: String?, i: Int) {
                         var i_20_ = i_18_
                         var i_21_ = i_19_
                         if (Class348_Sub49.anInt7207 == 1) {
-                            i_20_ = (i_18_.toDouble() * Class107.anInt1651.toDouble() / Class239_Sub16.anInt6008.toDouble()).toInt()
-                            i_21_ = (Class107.anInt1651.toDouble() * i_19_.toDouble() / Class239_Sub16.anInt6008.toDouble()).toInt()
+                            i_20_ = (i_18_.toDouble() * LinkedNodeListIterator.anInt1651.toDouble() / Class239_Sub16.anInt6008.toDouble()).toInt()
+                            i_21_ = (LinkedNodeListIterator.anInt1651.toDouble() * i_19_.toDouble() / Class239_Sub16.anInt6008.toDouble()).toInt()
                         }
                         if (!Class348_Sub16_Sub2.aBoolean8870) {
                             if (Class348_Sub49.anInt7207 == 1) method383(0)
@@ -65,7 +65,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                             val i_27_ = i_25_ + Class211.anInt2747 - Class328.anInt4100
                             val i_28_ = (Class348_Sub42_Sub9_Sub1.anInt10444 + i_26_ + -Class348_Sub3.anInt6568)
                             val i_29_ = Class59_Sub1.anInt5283 + i_27_
-                            val i_30_ = Class107.anInt1651 + i_28_
+                            val i_30_ = LinkedNodeListIterator.anInt1651 + i_28_
                             if ((i_27_ < 0 || i_28_ < 0 || i_29_ > Class348_Sub16_Sub1.anInt8854 || (i_30_ > Class239_Sub16.anInt6008)) && Class348_Sub49.anInt7207 != 2) {
                                 if (i_29_ <= 0 || i_30_ <= 0 || (Class348_Sub16_Sub1.anInt8854 <= i_27_) || (i_28_ >= Class239_Sub16.anInt6008)) Class348_Sub16_Sub2.aBoolean8870 = true
                                 else {
@@ -289,7 +289,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                             if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3672()
                             if (Class348_Sub49.anInt7207 == 1) method1469(-117)
                         }
-                        if (Class348_Sub49.anInt7207 == 0) Class17.anInterface4_252!!.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, Class107.anInt1651, 0, 0, true, true)
+                        if (Class348_Sub49.anInt7207 == 0) Class17.anInterface4_252!!.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
                         Class318_Sub1_Sub1_Sub2.anInt9997++
                         method3284(true, Class348_Sub42_Sub4.aDouble9517)
                         Class318_Sub1_Sub5_Sub1.aDouble10120 = Class348_Sub42_Sub4.aDouble9517
@@ -309,7 +309,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                             Class318_Sub5.anInt6417 = -Class348_Sub3.anInt6568 + i_17_
                             Class129.anInt1879 = i_21_
                             Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879)
-                            Class21.aRenderer326!!.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (Class107.anInt1651 + Class348_Sub40_Sub8.anInt9157))
+                            Class21.aRenderer326!!.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (LinkedNodeListIterator.anInt1651 + Class348_Sub40_Sub8.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (Class348_Sub49.anInt7207 != 2) 2 else 0, Class348_Sub49.anInt7207 == 1)
                         Class21.aRenderer326!!.la()

@@ -242,10 +242,10 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
             if (i_48_ > -79) method252(127, 53)
             if (Loader.skipLobby) {
                 Class348_Sub6.anInt6634 = i
-                Class107.anInt1645 = i
+                LinkedNodeListIterator.anInt1645 = i
             } else if (Class239_Sub12.anInt5969 != 1) {
                 if (Class239_Sub12.anInt5969 == 2) Class348_Sub6.anInt6634 = i
-            } else Class107.anInt1645 = i
+            } else LinkedNodeListIterator.anInt1645 = i
             anInt8643++
         }
     }

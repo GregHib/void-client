@@ -8,23 +8,23 @@ import kotlin.math.pow
 */
 class Class348_Sub42_Sub13 internal constructor(var aString9617: String?) : Class348_Sub42() {
     var anInt9615: Int = 0
-    var aClass107_9621: Class107
+    var aLinkedNodeListIterator_9621: LinkedNodeListIterator
 
     fun method3233(class348_sub42_sub12: Class348_Sub42_Sub12, i: Int): Boolean {
         anInt9613++
         var bool = true
         class348_sub42_sub12.method3162(true)
-        var class348_sub42_sub12_2_ = (this.aClass107_9621.method1011(-74) as Class348_Sub42_Sub12?)
+        var class348_sub42_sub12_2_ = (this.aLinkedNodeListIterator_9621.method1011(-74) as Class348_Sub42_Sub12?)
         while (class348_sub42_sub12_2_ != null) {
             if (method2496(class348_sub42_sub12_2_.anInt9608, class348_sub42_sub12.anInt9608, true)) {
                 method721(class348_sub42_sub12_2_, class348_sub42_sub12, -1)
                 this.anInt9615++
                 return !bool
             }
-            class348_sub42_sub12_2_ = this.aClass107_9621.method1003(48.toByte()) as Class348_Sub42_Sub12?
+            class348_sub42_sub12_2_ = this.aLinkedNodeListIterator_9621.method1003(48.toByte()) as Class348_Sub42_Sub12?
             bool = false
         }
-        this.aClass107_9621.method1005(true, class348_sub42_sub12)
+        this.aLinkedNodeListIterator_9621.method1005(true, class348_sub42_sub12)
         val i_3_ = 80 % ((i - -81) / 33)
         this.anInt9615++
         return bool
@@ -47,13 +47,13 @@ class Class348_Sub42_Sub13 internal constructor(var aString9617: String?) : Clas
     }
 
     init {
-        this.aClass107_9621 = Class107()
+        this.aLinkedNodeListIterator_9621 = LinkedNodeListIterator()
     }
 
     fun method3235(i: Int): Int {
         if (i != -17937) return 104
         anInt9619++
-        if ((this.aClass107_9621.aClass348_Sub42_1647) !== this.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) return (this.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).anInt9608
+        if ((this.aLinkedNodeListIterator_9621.aClass348_Sub42_1647) !== this.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) return (this.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).anInt9608
         return -1
     }
 

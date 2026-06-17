@@ -46,11 +46,11 @@ object Class99 {
         anInt1576++
         if (Class5_Sub1.aBoolean8335) {
             var i_12_ = 0
-            var class348_sub42_sub12 = (class348_sub42_sub13.aClass107_9621.method1011(-59) as? Class348_Sub42_Sub12)
+            var class348_sub42_sub12 = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1011(-59) as? Class348_Sub42_Sub12)
             while (class348_sub42_sub12 != null) {
                 val i_13_ = method138(class348_sub42_sub12, false)
                 if (i_13_ > i_12_) i_12_ = i_13_
-                class348_sub42_sub12 = (class348_sub42_sub13.aClass107_9621.method1003(108.toByte()) as? Class348_Sub42_Sub12)
+                class348_sub42_sub12 = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1003(108.toByte()) as? Class348_Sub42_Sub12)
             }
             i_12_ += 8
             if (bool == true) {

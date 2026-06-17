@@ -3489,21 +3489,21 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         @JvmStatic
         fun method661(i: Byte) {
             anInt5466++
-            var class348_sub42_sub13 = (Class233.aClass107_3022!!.method1011(-93) as Class348_Sub42_Sub13?)
+            var class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1011(-93) as Class348_Sub42_Sub13?)
             while (class348_sub42_sub13 != null) {
                 if (class348_sub42_sub13.anInt9615 > 1) {
                     class348_sub42_sub13.anInt9615 = 0
-                    Class259.aClass60_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).aLong9600, (-124).toByte())
-                    class348_sub42_sub13.aClass107_9621.method1009(2110355138)
+                    Class259.aClass60_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).aLong9600, (-124).toByte())
+                    class348_sub42_sub13.aLinkedNodeListIterator_9621.method1009(2110355138)
                 }
-                class348_sub42_sub13 = (Class233.aClass107_3022!!.method1003(46.toByte()) as Class348_Sub42_Sub13?)
+                class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1003(46.toByte()) as Class348_Sub42_Sub13?)
             }
             Class8.anInt166 = 0
             if (i < 92) method661(114.toByte())
             Class73.anInt4776 = 0
             Class348_Sub40_Sub4.aClass262_9111!!.method1996(115)
             Class348_Sub42_Sub12.aClass356_9603!!.method3481(0)
-            Class233.aClass107_3022!!.method1009(2110355138)
+            Class233.aLinkedNodeListIterator_3022!!.method1009(2110355138)
             method3743(6.toByte(), Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144)
         }
 

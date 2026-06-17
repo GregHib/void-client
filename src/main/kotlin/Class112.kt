@@ -4,7 +4,7 @@ import Class286_Sub5.Companion.method2161
 * Visit http://jode.sourceforge.net/
 */
 class Class112 internal constructor(class297: Class297) : Runnable {
-    private val aClass107_1730 = Class107()
+    private val aLinkedNodeListIterator_1730 = LinkedNodeListIterator()
     private var aThread1733: Thread?
     var anInt1734: Int = 0
     private var aBoolean1738 = false
@@ -28,19 +28,19 @@ class Class112 internal constructor(class297: Class297) : Runnable {
 
     private fun method1050(class348_sub42_sub16_sub2: Class348_Sub42_Sub16_Sub2, i: Int) {
         anInt1735++
-        synchronized(aClass107_1730) {
-            aClass107_1730.method1005(true, class348_sub42_sub16_sub2)
+        synchronized(aLinkedNodeListIterator_1730) {
+            aLinkedNodeListIterator_1730.method1005(true, class348_sub42_sub16_sub2)
             anInt1734++
             if (i > -100) aClass207_1727 = null
-            (aClass107_1730 as Object).notifyAll()
+            (aLinkedNodeListIterator_1730 as Object).notifyAll()
         }
     }
 
     fun method1051(bool: Boolean) {
         aBoolean1738 = bool
         anInt1731++
-        synchronized(aClass107_1730) {
-            (aClass107_1730 as Object).notifyAll()
+        synchronized(aLinkedNodeListIterator_1730) {
+            (aLinkedNodeListIterator_1730 as Object).notifyAll()
         }
         try {
             aThread1733!!.join()
@@ -64,11 +64,11 @@ class Class112 internal constructor(class297: Class297) : Runnable {
 
     fun runClass348() : Class348_Sub42_Sub16_Sub2? {
         val class348_sub42_sub16_sub2: Class348_Sub42_Sub16_Sub2?
-        synchronized(aClass107_1730) {
-            class348_sub42_sub16_sub2 = (aClass107_1730.method1008(20) as? Class348_Sub42_Sub16_Sub2?)
+        synchronized(aLinkedNodeListIterator_1730) {
+            class348_sub42_sub16_sub2 = (aLinkedNodeListIterator_1730.method1008(20) as? Class348_Sub42_Sub16_Sub2?)
             if (class348_sub42_sub16_sub2 == null) {
                 try {
-                    (aClass107_1730 as Object).wait()
+                    (aLinkedNodeListIterator_1730 as Object).wait()
                 } catch (interruptedexception: InterruptedException) {
                     /* empty */
                 }
@@ -98,15 +98,15 @@ class Class112 internal constructor(class297: Class297) : Runnable {
         anInt1737++
         val class348_sub42_sub16_sub2 = Class348_Sub42_Sub16_Sub2()
         class348_sub42_sub16_sub2.anInt10457 = 1
-        synchronized(aClass107_1730) {
-            var class348_sub42_sub16_sub2_21_ = (aClass107_1730.method1011(-95) as Class348_Sub42_Sub16_Sub2?)
+        synchronized(aLinkedNodeListIterator_1730) {
+            var class348_sub42_sub16_sub2_21_ = (aLinkedNodeListIterator_1730.method1011(-95) as Class348_Sub42_Sub16_Sub2?)
             while (class348_sub42_sub16_sub2_21_ != null) {
                 if ((class348_sub42_sub16_sub2_21_.aLong7057 == i.toLong()) && (class348_sub42_sub16_sub2_21_.aClass137_10458 == class137) && class348_sub42_sub16_sub2_21_.anInt10457 == 2) {
                     class348_sub42_sub16_sub2.aByteArray10461 = class348_sub42_sub16_sub2_21_.aByteArray10461
                     class348_sub42_sub16_sub2.aBoolean9664 = false
                     return class348_sub42_sub16_sub2
                 }
-                class348_sub42_sub16_sub2_21_ = (aClass107_1730.method1003(73.toByte()) as Class348_Sub42_Sub16_Sub2?)
+                class348_sub42_sub16_sub2_21_ = (aLinkedNodeListIterator_1730.method1003(73.toByte()) as Class348_Sub42_Sub16_Sub2?)
             }
         }
         class348_sub42_sub16_sub2.aByteArray10461 = class137.method1161(((-4).toByte()).toByte(), i)
@@ -171,10 +171,10 @@ class Class112 internal constructor(class297: Class297) : Runnable {
                         }
                         if (i_9_ != -1) {
                             var i_13_ = 0
-                            val class156 = Class156(Class233.aClass107_3022!!)
+                            val class156 = Class156(Class233.aLinkedNodeListIterator_3022!!)
                             var class348_sub42_sub13 = (class156.method1240(110) as? Class348_Sub42_Sub13)
                             while (class348_sub42_sub13 != null) {
-                                if (i_9_ == i_13_++) return (class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).anInt9609
+                                if (i_9_ == i_13_++) return (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).anInt9609
                                 class348_sub42_sub13 = (class156.method1243(77.toByte()) as? Class348_Sub42_Sub13)
                             }
                         }
@@ -193,7 +193,7 @@ class Class112 internal constructor(class297: Class297) : Runnable {
                         }
                         if (i_4_ != -1) {
                             var i_8_ = 0
-                            val class156 = Class156(Class242.aClass348_Sub42_Sub13_3152!!.aClass107_9621)
+                            val class156 = Class156(Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
                             var class348_sub42_sub12 = (class156.method1240(9) as? Class348_Sub42_Sub12)
                             while (class348_sub42_sub12 != null) {
                                 if (i_8_++ == i_4_) return (class348_sub42_sub12.anInt9609)

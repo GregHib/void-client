@@ -5,12 +5,12 @@ import java.net.URL
 
 class Class156 {
     private var aClass348_Sub42_2115: Class348_Sub42? = null
-    private var aClass107_2118: Class107? = null
+    private var aLinkedNodeListIterator_2118: LinkedNodeListIterator? = null
     fun method1240(i: Int): Class348_Sub42? {
         anInt2114++
         if (i <= 7) method1240(79)
-        val class348_sub42 = (aClass107_2118!!.aClass348_Sub42_1647.aClass348_Sub42_7063)
-        if (class348_sub42 === aClass107_2118!!.aClass348_Sub42_1647) {
+        val class348_sub42 = (aLinkedNodeListIterator_2118!!.aClass348_Sub42_1647.aClass348_Sub42_7063)
+        if (class348_sub42 === aLinkedNodeListIterator_2118!!.aClass348_Sub42_1647) {
             aClass348_Sub42_2115 = null
             return null
         }
@@ -24,7 +24,7 @@ class Class156 {
         anInt2120++
         if (i < 44) aStringArray2113 = null
         val class348_sub42 = aClass348_Sub42_2115
-        if (class348_sub42 === aClass107_2118!!.aClass348_Sub42_1647) {
+        if (class348_sub42 === aLinkedNodeListIterator_2118!!.aClass348_Sub42_1647) {
             aClass348_Sub42_2115 = null
             return null
         }
@@ -32,8 +32,8 @@ class Class156 {
         return class348_sub42
     }
 
-    internal constructor(class107: Class107) {
-        aClass107_2118 = class107
+    internal constructor(linkedNodeListIterator: LinkedNodeListIterator) {
+        aLinkedNodeListIterator_2118 = linkedNodeListIterator
     }
 
     companion object {

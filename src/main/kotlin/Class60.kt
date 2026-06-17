@@ -5,15 +5,15 @@ import Class59_Sub2_Sub2.Companion.method573
 */
 class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_10_: Int = anInt1086) {
     private val anInt1084: Int
-    private var aClass107_1089: Class107? = Class107()
+    private var aLinkedNodeListIterator_1089: LinkedNodeListIterator? = LinkedNodeListIterator()
     private val aClass356_1100: Class356
     fun method575(i: Int): Int {
         anInt1101++
         var i_0_ = i
-        var class348_sub42_sub8 = aClass107_1089!!.method1011(-84) as Class348_Sub42_Sub8?
+        var class348_sub42_sub8 = aLinkedNodeListIterator_1089!!.method1011(-84) as Class348_Sub42_Sub8?
         while (class348_sub42_sub8 != null) {
             if (!class348_sub42_sub8.method3195(-4)) i_0_++
-            class348_sub42_sub8 = (aClass107_1089!!.method1003(79.toByte()) as Class348_Sub42_Sub8?)
+            class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1003(79.toByte()) as Class348_Sub42_Sub8?)
         }
         return i_0_
     }
@@ -28,7 +28,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         if (i == 2) {
             anInt1093++
             if (MatrixCameraTransform.aClass246_5675 != null) {
-                var class348_sub42_sub8 = (aClass107_1089!!.method1011(-59) as Class348_Sub42_Sub8?)
+                var class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1011(-59) as Class348_Sub42_Sub8?)
                 while (class348_sub42_sub8 != null) {
                     if (!class348_sub42_sub8.method3195(-4)) {
                         if (i_2_.toLong() < ++class348_sub42_sub8.aLong7057) {
@@ -43,7 +43,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
                         class348_sub42_sub8.method3162(true)
                         anInt1086 += (class348_sub42_sub8.anInt9545)
                     }
-                    class348_sub42_sub8 = (aClass107_1089!!.method1003(97.toByte()) as Class348_Sub42_Sub8?)
+                    class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1003(97.toByte()) as Class348_Sub42_Sub8?)
                 }
             }
         }
@@ -72,13 +72,13 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
             method586(l, 0)
             anInt1086 -= i_5_
             while (anInt1086 < 0) {
-                val class348_sub42_sub8 = (aClass107_1089!!.method1008(i xor 0x7c8a) as Class348_Sub42_Sub8?)
+                val class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1008(i xor 0x7c8a) as Class348_Sub42_Sub8?)
                 method585(class348_sub42_sub8, i xor 0x7cfa.inv())
             }
             val class348_sub42_sub8_sub2 = Class348_Sub42_Sub8_Sub2(`object`, i_5_)
             aClass356_1100.method3483(54.toByte(), l, class348_sub42_sub8_sub2)
             if (i != 31902) anInt1086 = -106
-            aClass107_1089!!.method1005(true, class348_sub42_sub8_sub2)
+            aLinkedNodeListIterator_1089!!.method1005(true, class348_sub42_sub8_sub2)
             class348_sub42_sub8_sub2.aLong7057 = 0L
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("jr.E(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + l + ',' + i_5_ + ')'))
@@ -117,12 +117,12 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
             if (class348_sub42_sub8.method3195(-4)) {
                 val class348_sub42_sub8_sub2 = Class348_Sub42_Sub8_Sub2(`object`, (class348_sub42_sub8.anInt9545))
                 aClass356_1100.method3483(90.toByte(), (class348_sub42_sub8.aLong4291), class348_sub42_sub8_sub2)
-                aClass107_1089!!.method1005(true, class348_sub42_sub8_sub2)
+                aLinkedNodeListIterator_1089!!.method1005(true, class348_sub42_sub8_sub2)
                 class348_sub42_sub8_sub2.aLong7057 = 0L
                 class348_sub42_sub8.method2715(112.toByte())
                 class348_sub42_sub8.method3162(true)
             } else {
-                aClass107_1089!!.method1005(true, class348_sub42_sub8)
+                aLinkedNodeListIterator_1089!!.method1005(true, class348_sub42_sub8)
                 class348_sub42_sub8.aLong7057 = 0L
             }
             return `object`
@@ -143,7 +143,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
 
     private fun method586(l: Long, i: Int) {
         try {
-            if (i != 0) aClass107_1089 = null
+            if (i != 0) aLinkedNodeListIterator_1089 = null
             anInt1090++
             val class348_sub42_sub8 = aClass356_1100.method3480(l, -6008) as Class348_Sub42_Sub8?
             method585(class348_sub42_sub8, -57)
@@ -154,14 +154,14 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
 
     fun method587(i: Int) {
         anInt1096++
-        var class348_sub42_sub8 = aClass107_1089!!.method1011(-71) as Class348_Sub42_Sub8?
+        var class348_sub42_sub8 = aLinkedNodeListIterator_1089!!.method1011(-71) as Class348_Sub42_Sub8?
         while (class348_sub42_sub8 != null) {
             if (class348_sub42_sub8.method3195(-4)) {
                 class348_sub42_sub8.method2715(118.toByte())
                 class348_sub42_sub8.method3162(true)
                 anInt1086 += class348_sub42_sub8.anInt9545
             }
-            class348_sub42_sub8 = (aClass107_1089!!.method1003(50.toByte()) as Class348_Sub42_Sub8?)
+            class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1003(50.toByte()) as Class348_Sub42_Sub8?)
         }
         if (i >= -75) method587(-97)
     }
@@ -185,7 +185,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
 
     fun method590(i: Int) {
         anInt1091++
-        aClass107_1089!!.method1009(i + 2110355138)
+        aLinkedNodeListIterator_1089!!.method1009(i + 2110355138)
         aClass356_1100.method3481(i)
         anInt1086 = anInt1084
     }

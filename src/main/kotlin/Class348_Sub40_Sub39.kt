@@ -124,20 +124,20 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
         @JvmStatic
         fun method3153(i: Int) {
             anInt9482++
-            var class348_sub42_sub13 = (Class233.aClass107_3022!!.method1011(-49) as Class348_Sub42_Sub13?)
+            var class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1011(-49) as Class348_Sub42_Sub13?)
             while (class348_sub42_sub13 != null) {
                 if (class348_sub42_sub13.anInt9615 > 1) {
                     class348_sub42_sub13.anInt9615 = 0
-                    Class259.aClass60_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).aLong9600, (-108).toByte())
-                    class348_sub42_sub13.aClass107_9621.method1009(i xor 0x7dc976c2)
+                    Class259.aClass60_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).aLong9600, (-108).toByte())
+                    class348_sub42_sub13.aLinkedNodeListIterator_9621.method1009(i xor 0x7dc976c2)
                 }
-                class348_sub42_sub13 = (Class233.aClass107_3022!!.method1003(51.toByte()) as Class348_Sub42_Sub13?)
+                class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1003(51.toByte()) as Class348_Sub42_Sub13?)
             }
             Class8.anInt166 = 0
             Class73.anInt4776 = i
             Class348_Sub40_Sub4.Companion.aClass262_9111!!.method1996(125)
             Class348_Sub42_Sub12.aClass356_9603!!.method3481(0)
-            Class233.aClass107_3022!!.method1009(2110355138)
+            Class233.aLinkedNodeListIterator_3022!!.method1009(2110355138)
             Class5_Sub1.aBoolean8335 = false
         }
     }

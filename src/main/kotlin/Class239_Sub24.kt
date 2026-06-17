@@ -112,7 +112,7 @@ class Class239_Sub24 : Class239 {
                 val i_11_: Int
                 val i_12_: Int
                 if (Class59_Sub1.aBoolean5300) {
-                    Class107.method1010(false, false)
+                    LinkedNodeListIterator.method1010(false, false)
                     abstractCameraTransform = var_renderer.method3640()!!
                     val `is` = var_renderer.Y()
                     i_7_ = `is`[0]
@@ -192,7 +192,7 @@ class Class239_Sub24 : Class239 {
                     var i_28_ = i
                     var i_29_ = i_4_
                     if (Class59_Sub1.aBoolean5300) {
-                        Class107.method1010(false, bool)
+                        LinkedNodeListIterator.method1010(false, bool)
                         i_28_ += Class121.method1082(-92, bool)
                         i_29_ += Class348_Sub23.method2960(bool, -48)
                     }

@@ -41,8 +41,8 @@ object Class331 {
         val i_5_ = -114 % ((i - 22) / 33)
         anInt4137++
         MinimapRenderer.aClass356_1585!!.method3481(0)
-        OpenGlTerrainTile.aClass107_8241!!.method1009(2110355138)
-        Class367_Sub4.aClass107_7325!!.method1009(2110355138)
+        OpenGlTerrainTile.aLinkedNodeListIterator_8241!!.method1009(2110355138)
+        Class367_Sub4.aLinkedNodeListIterator_7325!!.method1009(2110355138)
     }
 
     @JvmStatic
