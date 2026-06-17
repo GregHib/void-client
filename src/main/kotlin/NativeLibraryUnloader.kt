@@ -1,7 +1,10 @@
 import java.io.File
 import java.util.*
 
-object Class228 {
+/*
+ * Class228
+ */
+object NativeLibraryUnloader {
     var anInt2971: Int = 0
     var aIntRange_2972: IntRange? = IntRange(49, 4)
     var anInt2973: Int = 0

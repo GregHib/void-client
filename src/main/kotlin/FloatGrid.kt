@@ -37,7 +37,7 @@ class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : I
                     i_3_ = method260(false)
                 }
                 method1373(RenderNode.anInt9721, i_2_, i_2_, Class321.anInt4017 + i_2_, i_1_, i_0_, -1391, i_0_ + i_2_, Class348_Sub42_Sub8_Sub2.anInt10432 + i_3_, i_3_, i_3_ + i_1_, i_3_)
-                if (HeapDiagnosticsHolder.aClass46_2249 != null) Class228.method1630(0, i_3_ + i_1_, i_2_ + i_0_)
+                if (HeapDiagnosticsHolder.aClass46_2249 != null) NativeLibraryUnloader.method1630(0, i_3_ + i_1_, i_2_ + i_0_)
             }
         }
 

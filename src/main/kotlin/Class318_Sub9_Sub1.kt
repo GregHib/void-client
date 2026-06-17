@@ -23,7 +23,7 @@ class Class318_Sub9_Sub1 internal constructor(@JvmField var aString8783: String?
         fun method2515(i: Int): Array<Class57?>? {
             if (i != 1494) method2515(-18)
             anInt8782++
-            if (Class228.aClass57Array2974 == null) {
+            if (NativeLibraryUnloader.aClass57Array2974 == null) {
                 val class57s: Array<Class57?> = WorldListEntry.method286((-107).toByte(), Class348_Sub23_Sub1.aClass297_8992!!)
                 val class57s_0_: Array<Class57?> = arrayOfNulls<Class57>(class57s.size)
                 var i_1_ = 0
@@ -45,18 +45,18 @@ class Class318_Sub9_Sub1 internal constructor(@JvmField var aString8783: String?
                     }
                     i_3_++
                 }
-                Class228.aClass57Array2974 = arrayOfNulls<Class57>(i_1_)
-                ArrayCopyUtil.method1575<Class57?>(class57s_0_, 0, Class228.aClass57Array2974!!, 0, i_1_)
-                val `is` = IntArray(Class228.aClass57Array2974!!.size)
+                NativeLibraryUnloader.aClass57Array2974 = arrayOfNulls<Class57>(i_1_)
+                ArrayCopyUtil.method1575<Class57?>(class57s_0_, 0, NativeLibraryUnloader.aClass57Array2974!!, 0, i_1_)
+                val `is` = IntArray(NativeLibraryUnloader.aClass57Array2974!!.size)
                 var i_6_ = 0
-                while ((Class228.aClass57Array2974!!.size > i_6_)) {
-                    val class57 = Class228.aClass57Array2974!![i_6_]
+                while ((NativeLibraryUnloader.aClass57Array2974!!.size > i_6_)) {
+                    val class57 = NativeLibraryUnloader.aClass57Array2974!![i_6_]
                     `is`[i_6_] = (class57!!.anInt1047 * class57.anInt1054)
                     i_6_++
                 }
-                Class39.method366(Class228.aClass57Array2974 as Array<Any?>, (-123).toByte(), `is`)
+                Class39.method366(NativeLibraryUnloader.aClass57Array2974 as Array<Any?>, (-123).toByte(), `is`)
             }
-            return Class228.aClass57Array2974
+            return NativeLibraryUnloader.aClass57Array2974
         }
 
         @JvmStatic

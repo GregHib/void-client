@@ -650,7 +650,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (player != null) {
                                 Class26.anInt385 = i_73_
                                 Class239_Sub20.anInt6048 = 2
-                                Class228.anInt2975++
+                                NativeLibraryUnloader.anInt2975++
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 val class348_sub47 = method2148((Class52.aClass351_4907), (Class348_Sub23_Sub2.aClass77_9029), -93)
@@ -893,7 +893,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class239_Sub20.anInt6048 = 2
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
-                                Class228.anInt2975++
+                                NativeLibraryUnloader.anInt2975++
                                 val class348_sub47 = method2148((Class52.aClass351_4907), (Class348_Sub23_Sub2.aClass77_9029), -127)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle((LocalPlayerState.aPlayer_1907!!.anInt10290), 3.toByte())

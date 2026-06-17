@@ -161,7 +161,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string.equals("unloadnatives", ignoreCase = true)) {
-                            method94((if (Class228.method1629(true)) "Libraries unloaded" else "Library unloading failed!"), 63)
+                            method94((if (NativeLibraryUnloader.method1629(true)) "Libraries unloaded" else "Library unloading failed!"), 63)
                             return
                         }
                         if (string.equals("clientdrop", ignoreCase = true)) {
