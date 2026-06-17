@@ -4,7 +4,7 @@ import CompletedResourceRequest.Companion.method3265
 /* Class352 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class352 {
+class RenderableEntry {
     var aFont_4332: Font?
     var aFontDefinition_4333: FontDefinition? = null
 

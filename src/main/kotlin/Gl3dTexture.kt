@@ -105,7 +105,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 CombineTextureNode.aIntRange_9225,
                 MapArchiveSource.aIntRange_4798,
                 Class5_Sub2.aIntRange_8365,
-                Class352.aIntRange_4331,
+                RenderableEntry.aIntRange_4331,
                 DetailLevelOptionState.aIntRange_6121,
                 TerrainShadowBuilderGl3.aIntRange_7015,
                 LightingOptionState.aIntRange_5883,

@@ -1313,7 +1313,7 @@ object Class66 {
                 return
             }
             if (i == 5606) {
-                if (Class367_Sub2.anInt7297 == 0) Class352.anInt4337 = -2
+                if (Class367_Sub2.anInt7297 == 0) RenderableEntry.anInt4337 = -2
                 return
             }
             if (i == 5607) {
@@ -1325,7 +1325,7 @@ object Class66 {
                 return
             }
             if (i == 5609) {
-                anIntArray1149!![anInt1173++] = Class352.anInt4337
+                anIntArray1149!![anInt1173++] = RenderableEntry.anInt4337
                 return
             }
             if (i == 5611) {

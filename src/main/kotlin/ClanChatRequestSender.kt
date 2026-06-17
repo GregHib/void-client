@@ -32,7 +32,7 @@ object ClanChatRequestSender {
         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3383(1809639944, -i_0_ + (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197))
         InterfaceComponentGroup.method3243(118, class348_sub47)
         Class367_Sub2.anInt7297 = 1
-        Class352.anInt4337 = -3
+        RenderableEntry.anInt4337 = -3
         HostPingThread.anInt2264 = 0
         AnimatedModelRenderer.anInt8398 = 0
     }

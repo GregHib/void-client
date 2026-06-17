@@ -257,7 +257,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
                 }
             }
             i_17_ = 256 + ClanChatRequestSender.anInt3647 * 512
-            i_16_ = 256 + 512 * Class352.anInt4336
+            i_16_ = 256 + 512 * RenderableEntry.anInt4336
             i_18_ = (CollisionMapAccessor.method2064(i_16_, Class355.anInt4372, 11219, i_17_) - MinimapFlagRenderer.anInt1797)
             val i_19_ = -GlslMaterialPass.anInt6246 + i_16_
             val i_20_ = -ParticleSystemRenderer.anInt3855 + i_18_

@@ -145,33 +145,33 @@ class ChatEffectsOptionState : GraphicsOptionState {
             class348_sub42_sub15.method3251(-16058)
         }
 
-        fun method1734(i: Int, var_renderer: Renderer?, i_25_: Byte, bool: Boolean): Class352? {
+        fun method1734(i: Int, var_renderer: Renderer?, i_25_: Byte, bool: Boolean): RenderableEntry? {
             try {
                 anInt5859++
                 if (i == -1) return null
                 if (AbstractTileShape.anIntArray6547 != null) {
                     for (i_26_ in AbstractTileShape.anIntArray6547!!.indices) {
-                        if (AbstractTileShape.anIntArray6547!![i_26_] == i) return LoadingScreenState.aClass352Array2636!![i_26_]
+                        if (AbstractTileShape.anIntArray6547!![i_26_] == i) return LoadingScreenState.aRenderableEntryArray2636!![i_26_]
                     }
                 }
-                var class352 = SoundCacheState.aClass60_4139!!.method583(i.toLong(), -92) as? Class352?
-                if (class352 != null) {
-                    if (bool && class352.aFontDefinition_4333 == null) {
+                var renderableEntry = SoundCacheState.aClass60_4139!!.method583(i.toLong(), -92) as? RenderableEntry?
+                if (renderableEntry != null) {
+                    if (bool && renderableEntry.aFontDefinition_4333 == null) {
                         val class143 = RangedGraphicsOptionState.method1766((-76).toByte(), i, TerrainTile.aClass45_4585!!)
                         if (class143 == null) return null
-                        class352.aFontDefinition_4333 = class143
+                        renderableEntry.aFontDefinition_4333 = class143
                     }
-                    return class352
+                    return renderableEntry
                 }
                 val i_27_ = -118 / ((-33 - i_25_) / 44)
                 val spriteImages = SpriteImage.method1523(Class39.aClass45_518!!, i)
                 if (spriteImages == null) return null
                 val class143 = RangedGraphicsOptionState.method1766((-39).toByte(), i, TerrainTile.aClass45_4585!!)
                 if (class143 == null) return null
-                if (!bool) class352 = Class352(var_renderer!!.method3686(class143, spriteImages, true))
-                else class352 = Class352(var_renderer!!.method3686(class143, spriteImages, true), class143)
-                SoundCacheState.aClass60_4139!!.method582(class352, i.toLong(), (-109).toByte())
-                return class352
+                if (!bool) renderableEntry = RenderableEntry(var_renderer!!.method3686(class143, spriteImages, true))
+                else renderableEntry = RenderableEntry(var_renderer!!.method3686(class143, spriteImages, true), class143)
+                SoundCacheState.aClass60_4139!!.method582(renderableEntry, i.toLong(), (-109).toByte())
+                return renderableEntry
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("jaa.K(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
             }

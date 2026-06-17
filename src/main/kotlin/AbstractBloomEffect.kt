@@ -112,7 +112,7 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                             }
                             if (AnimatedModelRenderer.anInt8398 >= 2) {
                                 Class367_Sub2.anInt7297 = 0
-                                Class352.anInt4337 = -5
+                                RenderableEntry.anInt4337 = -5
                                 return
                             }
                             ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
@@ -136,7 +136,7 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                             if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 104)) {
                                 PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-116).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                                 val i_11_ = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
-                                Class352.anInt4337 = i_11_
+                                RenderableEntry.anInt4337 = i_11_
                                 Class367_Sub2.anInt7297 = 0
                                 PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                                 PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
@@ -154,7 +154,7 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                         AnimatedModelRenderer.anInt8398++
                         Class367_Sub2.anInt7297 = 1
                     } else {
-                        Class352.anInt4337 = -4
+                        RenderableEntry.anInt4337 = -4
                         Class367_Sub2.anInt7297 = 0
                     }
                 }

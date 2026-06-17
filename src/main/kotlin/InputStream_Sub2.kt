@@ -195,7 +195,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_81_ = ArbVertexProgram.regionTileX - -i_80_
                     val bool = (i_80_ >= 0 && i_78_ >= 0 && Class367_Sub4.anInt7319 > i_80_ && RangeThresholdTextureNode.anInt9109 > i_78_)
                     if (bool || NpcEntityUpdater.method2112(124, WidgetRedrawTracker.anInt3931)) {
-                        Class352.method3459(IntPair(i_76_, i_75_), GradientLookupEffect.anInt9200, i_79_, i_81_, -2)
+                        RenderableEntry.method3459(IntPair(i_76_, i_75_), GradientLookupEffect.anInt9200, i_79_, i_81_, -2)
                         if (bool) ProjectileSpawner.method1479(i_78_, (-124).toByte(), i_80_, GradientLookupEffect.anInt9200)
                     }
                 } else if (class74 == Class374.aClass74_4537) {
@@ -226,7 +226,7 @@ class InputStream_Sub2 : InputStream() {
                                     if ((class348_sub34.anInt6973) == (0x7fff and i_94_) && i_95_ == class348_sub34.anInt6971) {
                                         class348_sub34.method2715(32.toByte())
                                         class348_sub34.anInt6971 = i_96_
-                                        Class352.method3459(class348_sub34, (GradientLookupEffect.anInt9200), i_91_, i_93_, i.toInt() xor 0x9.inv())
+                                        RenderableEntry.method3459(class348_sub34, (GradientLookupEffect.anInt9200), i_91_, i_93_, i.toInt() xor 0x9.inv())
                                         break
                                     }
                                     class348_sub34 = (class348_sub37.aNodeDeque_6998.method1990(34.toByte()) as IntPair?)
@@ -246,7 +246,7 @@ class InputStream_Sub2 : InputStream() {
                         if (i_104_ != CharCodeMap.anInt9591) {
                             val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < Class367_Sub4.anInt7319) && (i_99_ < RangeThresholdTextureNode.anInt9109))
                             if (bool || NpcEntityUpdater.method2112(122, WidgetRedrawTracker.anInt3931)) {
-                                Class352.method3459(IntPair(i_103_, i_97_), GradientLookupEffect.anInt9200, i_100_, i_102_, i + -10)
+                                RenderableEntry.method3459(IntPair(i_103_, i_97_), GradientLookupEffect.anInt9200, i_100_, i_102_, i + -10)
                                 if (bool) ProjectileSpawner.method1479(i_99_, (-120).toByte(), i_101_, (GradientLookupEffect.anInt9200))
                             }
                         }

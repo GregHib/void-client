@@ -104,7 +104,7 @@ class CipheredPacketBuffer internal constructor(i: Int) : Buffer(i) {
         fun method3405(i: Int, bool: Boolean): Int {
             anInt9765++
             if (AbstractTileShape.anIntArray6547 == null) return 0
-            if (!bool && LoadingScreenState.aClass352Array2636 != null) return AbstractTileShape.anIntArray6547!!.size * 2
+            if (!bool && LoadingScreenState.aRenderableEntryArray2636 != null) return AbstractTileShape.anIntArray6547!!.size * 2
             var i_1_ = 0
             if (i != 2012104999) method3405(118, false)
             var i_2_ = 0

@@ -102,7 +102,7 @@ class Class48 {
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.method3350(i_4_, true, `is`, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197))
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.method3383(1809639944, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 + -i_3_))
                     InterfaceComponentGroup.method3243(2, class348_sub47)
-                    Class352.anInt4337 = -3
+                    RenderableEntry.anInt4337 = -3
                     Class367_Sub2.anInt7297 = 1
                     HostPingThread.anInt2264 = 0
                     AnimatedModelRenderer.anInt8398 = 0

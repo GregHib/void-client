@@ -333,7 +333,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     InterfaceBounds.method2938(62.toByte())
                     FrameStatsReset.method1131(99)
                     if (Class52.aFrame4904 != null && PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {
-                        Class352.anInt4335++
+                        RenderableEntry.anInt4335++
                         val class348_sub47 = method2148(FileIoUtil.aFontMetaRef_4094, (TheoraVideoStream.aClass77_9029), i xor 0x55.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), 1057001181)
                         InterfaceComponentGroup.method3243(-122, class348_sub47)

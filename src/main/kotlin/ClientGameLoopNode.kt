@@ -542,7 +542,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
 
         fun method2994(i: Int) {
             anInt6871++
-            if (i == 2) LoadingScreenState.aClass352Array2636 = null
+            if (i == 2) LoadingScreenState.aRenderableEntryArray2636 = null
         }
 
         init {

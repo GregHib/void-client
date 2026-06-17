@@ -206,7 +206,7 @@ class RegionSceneShifter : LinkedListNode() {
                     if (i_17_ != 11) {
                         CollisionMapAccessor.anInt3550 -= i_21_
                         GlslMaterialPass.anInt6246 -= 512 * i_20_
-                        Class352.anInt4336 -= i_20_
+                        RenderableEntry.anInt4336 -= i_20_
                         ClanChatRequestSender.anInt3647 -= i_21_
                         IntKeyNode.Companion.anInt6981 -= i_20_
                         Class59_Sub2_Sub2.anInt8685 -= 512 * i_21_

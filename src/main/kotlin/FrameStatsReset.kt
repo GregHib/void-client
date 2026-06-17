@@ -212,7 +212,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ConfigShortValueNode.anInt9540 = 0
             MidiSequencePlayer.anInt8951 = 0
             ModelGroundDecor.anInt10007 = 0
-            Class352.anInt4334 = 0
+            RenderableEntry.anInt4334 = 0
             NativeRenderer.anInt8054 = 0
             Class59_Sub1.anInt5286 = 0
             GlFramebufferBlitter.anInt288 = 0
@@ -1419,7 +1419,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NpcSummaryDefinition.anInt1955 = 0
             RandomAccessFileOnDisk.anInt3048 = 0
             BufferedMessageQueue.anInt3580 = 0
-            Class352.anInt4330 = 0
+            RenderableEntry.anInt4330 = 0
             Npc.anInt10506 = 0
             Class367_Sub2.anInt7291 = 0
             DynamicSceneObjectEntity.anInt10183 = 0
@@ -2092,7 +2092,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             EmoteDefCache.anInt4088 = 0
             OpenGlRenderer.anInt7614 = 0
             Renderer.anInt4577 = 0
-            Class352.anInt4335 = 0
+            RenderableEntry.anInt4335 = 0
             ModelGroundDecor.anInt10021 = 0
             ScriptCompilerThread.anInt1729 = 0
             Class64_Sub2.anInt5491 = 0
@@ -4135,7 +4135,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlTextureCubeMap.anInt8537 = 0
             MinimapFlagRenderer.anInt1797 = 0
             ShortMatrixNode.anInt9515 = 0
-            Class352.anInt4336 = 0
+            RenderableEntry.anInt4336 = 0
             TileTextureNode.anInt9406 = 0
             IntKeyNode.anInt6981 = 0
             Class367_Sub11.anInt7403 = 0

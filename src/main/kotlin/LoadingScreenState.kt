@@ -41,7 +41,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
         var anIntArray2633: IntArray?
         var anInt2634: Int = 0
         @JvmField
-        var aClass352Array2636: Array<Class352?>?
+        var aRenderableEntryArray2636: Array<RenderableEntry?>?
         var anInt2637: Int = 0
 
         @JvmStatic
@@ -120,7 +120,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
             anInt2637++
             val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 10)
             class348_sub42_sub15.method3251(-16058)
-            if (i_9_ != 2) aClass352Array2636 = null
+            if (i_9_ != 2) aRenderableEntryArray2636 = null
         }
 
         @JvmStatic
@@ -128,7 +128,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
             anIntArray2633 = null
             if (i <= 77) anIntArray2633 = null
             anIntArray2631 = null
-            aClass352Array2636 = null
+            aRenderableEntryArray2636 = null
             anIntArray2632 = null
         }
 
@@ -136,7 +136,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
             for (i in 0..4095) anIntArray2631!![i] = SmoothingBuffer.method1918(-3358, i)
             anIntArray2632 = IntArray(32)
             anIntArray2633 = IntArray(32)
-            aClass352Array2636 = null
+            aRenderableEntryArray2636 = null
         }
     }
 }

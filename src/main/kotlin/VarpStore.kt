@@ -161,7 +161,7 @@ class VarpStore : Interface17 {
         }
 
         fun method1311(i: Int, var_renderer: Renderer) {
-            LoadingScreenState.aClass352Array2636 = arrayOfNulls<Class352>(AbstractTileShape.anIntArray6547!!.size)
+            LoadingScreenState.aRenderableEntryArray2636 = arrayOfNulls<RenderableEntry>(AbstractTileShape.anIntArray6547!!.size)
             anInt5064++
             if (i != 5139) anInt5065 = 62
             var i_21_ = 0
@@ -169,7 +169,7 @@ class VarpStore : Interface17 {
                 val i_22_ = AbstractTileShape.anIntArray6547!![i_21_]
                 val class143 = RangedGraphicsOptionState.method1766((-86).toByte(), i_22_, TerrainTile.aClass45_4585!!)
                 val class324 = var_renderer.method3686(class143, SpriteImage.method1523(Class39.aClass45_518!!, i_22_), true)
-                LoadingScreenState.aClass352Array2636!![i_21_] = Class352(class324, class143)
+                LoadingScreenState.aRenderableEntryArray2636!![i_21_] = RenderableEntry(class324, class143)
                 i_21_++
             }
         }
