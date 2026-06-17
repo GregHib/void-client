@@ -963,7 +963,7 @@ class Class46 {
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1390(23)
             Class239.aItemDefinitionLoader_3147!!.method1283(1)
             SpriteLoadValidator.aClass65_4787!!.method694(-1007)
-            Class73.aClass219_4782!!.method1598(111)
+            Class73.aModelDefinitionCache_4782!!.method1598(111)
             Class331.method2638(-4631)
             NpcCountAccessor.method1328(-26162)
             method3102(22385)

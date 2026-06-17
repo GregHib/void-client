@@ -43,7 +43,7 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
         @JvmField
         var anInt4781: Int = 0
         @JvmField
-        var aClass219_4782: Class219? = null
+        var aModelDefinitionCache_4782: ModelDefinitionCache? = null
         @JvmField
         var aLong4783: Long = 20000000L
         var anInt4784: Int = 0
@@ -55,7 +55,7 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
             anIntArray4780 = null
             if (i.toInt() != -128) method743(113, -98)
             aIntRange_4779 = null
-            aClass219_4782 = null
+            aModelDefinitionCache_4782 = null
         }
 
         fun method742(i: Int, i_0_: Int): MapAreaDefinition {

@@ -43,7 +43,7 @@ class Class347 {
                 }
                 var i_2_ = i_0_ + Class258_Sub4.aClass373_8552!!.method3597(true)
                 var i_3_ = i_1_ + Class258_Sub4.aClass373_8552!!.method3594(80.toByte())
-                i_3_ -= Class219.anInt2872
+                i_3_ -= ModelDefinitionCache.anInt2872
                 i_2_ -= Class318_Sub4.anInt6411
                 if (i_2_ < Class348_Sub40_Sub37.anInt9461) i_2_ = Class348_Sub40_Sub37.anInt9461
                 if (i == -30206) {
@@ -79,8 +79,8 @@ class Class347 {
                                 method705(class348_sub36)
                             }
                             if (Class318_Sub1_Sub3_Sub4.aClass46_10336 != null && (Client.method108(Class289.aClass46_3701) != null)) method173(-67, Class289.aClass46_3701, (Class318_Sub1_Sub3_Sub4.aClass46_10336))
-                        } else if ((Class318_Sub1_Sub5.anInt8770 == 1 || method2485(-113)) && Class73.anInt4776 > 2) method191(true, (NativeRenderer.anInt8001 + Class318_Sub4.anInt6411), (Class219.anInt2872 - -(Class348_Sub40_Sub13.anInt9203)))
-                        else if (method913(127.toByte())) method191(true, (NativeRenderer.anInt8001 + Class318_Sub4.anInt6411), (Class219.anInt2872 + (Class348_Sub40_Sub13.anInt9203)))
+                        } else if ((Class318_Sub1_Sub5.anInt8770 == 1 || method2485(-113)) && Class73.anInt4776 > 2) method191(true, (NativeRenderer.anInt8001 + Class318_Sub4.anInt6411), (ModelDefinitionCache.anInt2872 - -(Class348_Sub40_Sub13.anInt9203)))
+                        else if (method913(127.toByte())) method191(true, (NativeRenderer.anInt8001 + Class318_Sub4.anInt6411), (ModelDefinitionCache.anInt2872 + (Class348_Sub40_Sub13.anInt9203)))
                         Class289.aClass46_3701 = null
                     }
                 }

@@ -117,8 +117,8 @@ import CompressedBlockDecoder.method1551
 import ItemDefinition.Companion.method1564
 import ParticleAmountCache.Companion.method1585
 import MapSceneIconDef.Companion.method1594
-import Class219.Companion.method1600
-import Class219.Companion.method1604
+import ModelDefinitionCache.Companion.method1600
+import ModelDefinitionCache.Companion.method1604
 import Class22.Companion.method294
 import Class225.Companion.method1619
 import Class226.Companion.method1624
@@ -2233,10 +2233,10 @@ class Client : GameAppletFrame() {
                                                 Class348_Sub42.anInt7059 = 1
                                                 Class348_Sub17.aBoolean6788 = false
                                                 Class318_Sub4.anInt6411 = Class258_Sub4.aClass373_8552!!.method3597(true)
-                                                Class219.anInt2872 = Class258_Sub4.aClass373_8552!!.method3594(72.toByte())
+                                                ModelDefinitionCache.anInt2872 = Class258_Sub4.aClass373_8552!!.method3594(72.toByte())
                                             }
                                         } else if (bool_53_ && (Class348_Sub42.anInt7059 > 0)) {
-                                            if (Class348_Sub42.anInt7059 == 1 && ((Class318_Sub4.anInt6411 != Class258_Sub4.aClass373_8552!!.method3597(true)) || (Class219.anInt2872 != (Class258_Sub4.aClass373_8552!!.method3594(117.toByte()))))) {
+                                            if (Class348_Sub42.anInt7059 == 1 && ((Class318_Sub4.anInt6411 != Class258_Sub4.aClass373_8552!!.method3597(true)) || (ModelDefinitionCache.anInt2872 != (Class258_Sub4.aClass373_8552!!.method3594(117.toByte()))))) {
                                                 ParticleDefLoader.anInt2464 = Class348_Sub36.anInt6992
                                                 OpenGlTerrainTile.anInt8237 = Class245.anInt3170
                                                 Class348_Sub42.anInt7059 = 2
@@ -2244,12 +2244,12 @@ class Client : GameAppletFrame() {
                                             if (Class348_Sub42.anInt7059 == 2) {
                                                 Class348_Sub17.aBoolean6788 = true
                                                 Class64_Sub3.method689((-59).toByte(), (ParticleDefLoader.anInt2464 + (((Class318_Sub4.anInt6411) - (Class258_Sub4.aClass373_8552!!.method3597(true))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()))
-                                                method2170((OpenGlTerrainTile.anInt8237 - (((Class219.anInt2872) - (Class258_Sub4.aClass373_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()), 3.toByte())
+                                                method2170((OpenGlTerrainTile.anInt8237 - (((ModelDefinitionCache.anInt2872) - (Class258_Sub4.aClass373_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()), 3.toByte())
                                             }
                                         } else {
                                             if (Class348_Sub42.anInt7059 > 0 && !Class348_Sub17.aBoolean6788) {
-                                                if (((Class318_Sub1_Sub5.anInt8770 == 1) || method2485(-124)) && Class73.anInt4776 > 2) method191(true, Class318_Sub4.anInt6411, Class219.anInt2872)
-                                                else if (method913(117.toByte())) method191(true, Class318_Sub4.anInt6411, Class219.anInt2872)
+                                                if (((Class318_Sub1_Sub5.anInt8770 == 1) || method2485(-124)) && Class73.anInt4776 > 2) method191(true, Class318_Sub4.anInt6411, ModelDefinitionCache.anInt2872)
+                                                else if (method913(117.toByte())) method191(true, Class318_Sub4.anInt6411, ModelDefinitionCache.anInt2872)
                                             }
                                             Class348_Sub42.anInt7059 = 0
                                         }

@@ -2210,9 +2210,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     abstract fun method3931(bool: Boolean, class304: Class304?, class68: Class68?): Boolean
 
     fun method3932(i: Byte) {
-        if (this.aSingletonMarker_8184 != Class219.aSingletonMarker_2864) {
+        if (this.aSingletonMarker_8184 != ModelDefinitionCache.aSingletonMarker_2864) {
             val class196 = this.aSingletonMarker_8184
-            this.aSingletonMarker_8184 = Class219.aSingletonMarker_2864!!
+            this.aSingletonMarker_8184 = ModelDefinitionCache.aSingletonMarker_2864!!
             if (class196.method1450(-116)) method3913((-100).toByte())
             anInt8100 = anInt8100 and 0x1f.inv()
             this.aFloatArray8135 = aFloatArray8111
@@ -2486,7 +2486,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aFloat8174 = -1.0f
         this.aFloatArray8170 = floatArrayOf(0.0f, 0.0f, 1.0f, 0.0f)
         this.anInt8181 = 0
-        this.aSingletonMarker_8184 = Class219.aSingletonMarker_2864!!
+        this.aSingletonMarker_8184 = ModelDefinitionCache.aSingletonMarker_2864!!
         this.aFloat8180 = 1.0f
         this.aFloat8186 = -1.0f
         anInt8172 = 16777215

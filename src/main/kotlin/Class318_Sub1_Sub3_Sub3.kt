@@ -609,7 +609,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             var i_109_ = -1
             var i_110_ = 0
             if (i_100_ >= 0) {
-                val class31 = Class73.aClass219_4782!!.method1601(46, i_100_)
+                val class31 = Class73.aModelDefinitionCache_4782!!.method1601(46, i_100_)
                 i_109_ = class31.anInt431
                 i_110_ = class31.anInt434
             }

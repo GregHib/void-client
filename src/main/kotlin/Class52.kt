@@ -5,7 +5,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
     override fun method51(i: Byte): Class223? {
         anInt4894++
         if (i < 116) return null
-        return Class219.aClass223_2868
+        return ModelDefinitionCache.aClass223_2868
     }
 
     companion object {

@@ -89,7 +89,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1393((-13).toByte())
             Class239.aItemDefinitionLoader_3147!!.method1290(-8)
             SpriteLoadValidator.aClass65_4787!!.method695(true)
-            Class73.aClass219_4782!!.method1602(0)
+            Class73.aModelDefinitionCache_4782!!.method1602(0)
             method3573(-15326)
             method1277(62.toByte())
             method821(-126)

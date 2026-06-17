@@ -149,7 +149,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         var i_29_ = (Class258_Sub4.aClass373_8552!!.method3597(true) - -i_26_)
                                         var i_30_ = (Class258_Sub4.aClass373_8552!!.method3594(101.toByte()) + i_27_)
                                         i_29_ -= Class318_Sub4.anInt6411
-                                        i_30_ -= Class219.anInt2872
+                                        i_30_ -= ModelDefinitionCache.anInt2872
                                         if (Class348_Sub40_Sub37.Companion.anInt9461 > i_29_) i_29_ = Class348_Sub40_Sub37.Companion.anInt9461
                                         if (i_30_ < Class40.anInt558) i_30_ = Class40.anInt558
                                         if (class46.anInt709 + i_29_ > ((Class331.aClass46_4130!!.anInt709) + Class348_Sub40_Sub37.Companion.anInt9461)) i_29_ = (-class46.anInt709 + ((Class348_Sub40_Sub37.Companion.anInt9461) + (Class331.aClass46_4130!!.anInt709)))

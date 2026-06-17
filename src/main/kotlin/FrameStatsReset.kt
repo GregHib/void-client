@@ -239,7 +239,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Gl2dTexture.anInt8617 = 0
             ModelDefinition.anInt1861 = 0
             Class348_Sub18.anInt6822 = 0
-            Class219.anInt2865 = 0
+            ModelDefinitionCache.anInt2865 = 0
             MinimapRectClipper.anInt219 = 0
             Class55.anInt994 = 0
             NativeTerrainTile.anInt8290 = 0
@@ -344,7 +344,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub23_Sub1.anInt8990 = 0
             Crc64Hashable.anInt4994 = 0
             Class95.anInt1539 = 0
-            Class219.anInt2867 = 0
+            ModelDefinitionCache.anInt2867 = 0
             Class5_Sub1_Sub1.anInt9928 = 0
             FrameBufferObject.anInt4871 = 0
             Class239_Sub26.anInt6117 = 0
@@ -1180,7 +1180,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SizeBoundedSoftCache.anInt2310 = 0
             Class285_Sub1.anInt8488 = 0
             Class377.anInt9858 = 0
-            Class219.anInt2863 = 0
+            ModelDefinitionCache.anInt2863 = 0
             SoftwareSpriteRaster.anInt1615 = 0
             Class348_Sub42_Sub18.anInt9681 = 0
             RefCountedHandle.anInt2271 = 0
@@ -1810,7 +1810,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7604 = 0
             Class348_Sub42_Sub16.anInt9666 = 0
             Class238_Sub1.anInt5831 = 0
-            Class219.anInt2874 = 0
+            ModelDefinitionCache.anInt2874 = 0
             Class348_Sub49.anInt7205 = 0
             NativeRenderer.anInt7906 = 0
             OpenGlRenderer.anInt7662 = 0
@@ -2494,7 +2494,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49_Sub2.anInt9761 = 0
             Class99.anInt1576 = 0
             Class348_Sub42_Sub14.anInt9623 = 0
-            Class219.anInt2869 = 0
+            ModelDefinitionCache.anInt2869 = 0
             OpenGlTerrainTile.anInt8236 = 0
             Class48.anInt848 = 0
             OpenGlRenderer.anInt7589 = 0
@@ -3470,7 +3470,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7173 = 0
             Class348_Sub40_Sub5.anInt9120 = 0
             Class330.anInt4125 = 0
-            Class219.anInt2870 = 0
+            ModelDefinitionCache.anInt2870 = 0
             OpenGlRenderer.anInt7601 = 0
             Class64_Sub3.anInt5625 = 0
             Class373_Sub2.anInt7440 = 0

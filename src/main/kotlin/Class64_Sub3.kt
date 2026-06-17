@@ -1030,7 +1030,7 @@ class Class64_Sub3 : Class64 {
                     i_231_++
                 }
             } else class64_sub3_211_.aShortArray5601 = aShortArray5601
-            if (Class219.method1599((-113).toByte(), i, anInt5556)) {
+            if (ModelDefinitionCache.method1599((-113).toByte(), i, anInt5556)) {
                 if (class64_sub3_213_!!.aClass48Array5596 != null && (class64_sub3_213_.aClass48Array5596!!.size >= anInt5536)) {
                     class64_sub3_211_.aClass48Array5596 = class64_sub3_213_.aClass48Array5596
                     for (i_232_ in 0..<anInt5536) class64_sub3_211_.aClass48Array5596!![i_232_]!!.method451(aClass48Array5596!![i_232_]!!, (-110).toByte())

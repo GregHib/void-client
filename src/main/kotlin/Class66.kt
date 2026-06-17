@@ -4296,7 +4296,7 @@ object Class66 {
                     return
                 }
                 if (i == 3616) {
-                    anIntArray1149!![anInt1173++] = Class219.aByte2871.toInt()
+                    anIntArray1149!![anInt1173++] = ModelDefinitionCache.aByte2871.toInt()
                     return
                 }
                 if (i == 3617) {

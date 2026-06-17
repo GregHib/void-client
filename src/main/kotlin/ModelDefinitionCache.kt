@@ -3,7 +3,7 @@ import kotlin.math.max
 /* Class219 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class219 internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_17_: Class45?) {
+class ModelDefinitionCache internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_17_: Class45?) {
     var aClass60_2862: Class60 = Class60(20)
     private val aClass45_2866: Class45?
     var aClass45_2873: Class45? = null
@@ -32,7 +32,7 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
             `is` = aClass45_2866.method410(-1860, i, i_15_)
         }
         class31 = Class31()
-        class31.aClass219_438 = this
+        class31.aModelDefinitionCache_438 = this
         if (`is` != null) class31.method332(i xor 0x55.inv(), Class348_Sub49(`is`))
         synchronized(aClass60_2875) {
             aClass60_2875.method582(class31, i_15_.toLong(), (-109).toByte())
