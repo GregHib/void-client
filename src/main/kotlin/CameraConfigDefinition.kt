@@ -3,7 +3,7 @@ import Player.Companion.method2460
 /* Class253 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class253 {
+class CameraConfigDefinition {
     var anInt3244: Int = 2048
     var anInt3245: Int = 0
     var anInt3249: Int = 2048

@@ -12,24 +12,24 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         anInt2486++
     }
 
-    fun method1391(i: Byte, i_1_: Int): Class253 {
+    fun method1391(i: Byte, i_1_: Int): CameraConfigDefinition {
         anInt2485++
-        var class253: Class253?
+        var cameraConfigDefinition: CameraConfigDefinition?
         synchronized(aClass60_2479) {
-            class253 = aClass60_2479.method583(i_1_.toLong(), 96) as Class253?
+            cameraConfigDefinition = aClass60_2479.method583(i_1_.toLong(), 96) as CameraConfigDefinition?
         }
-        if (class253 != null) return class253
+        if (cameraConfigDefinition != null) return cameraConfigDefinition
         val `is`: ByteArray?
         synchronized(aClass45_2480!!) {
             `is` = aClass45_2480.method410(-1860, 31, i_1_)
         }
-        class253 = Class253()
+        cameraConfigDefinition = CameraConfigDefinition()
         val i_2_ = 50 / ((i - -63) / 56)
-        if (`is` != null) class253.method1921((-69).toByte(), Class348_Sub49(`is`))
+        if (`is` != null) cameraConfigDefinition.method1921((-69).toByte(), Class348_Sub49(`is`))
         synchronized(aClass60_2479) {
-            aClass60_2479.method582(class253, i_1_.toLong(), (-108).toByte())
+            aClass60_2479.method582(cameraConfigDefinition, i_1_.toLong(), (-108).toByte())
         }
-        return class253
+        return cameraConfigDefinition
     }
 
     fun method1392(i: Int, i_3_: Int) {

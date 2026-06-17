@@ -1576,7 +1576,7 @@ class Client : GameAppletFrame() {
             Class258_Sub4.aClass373_8552!!.method3589(0)
             if (Class348_Sub8.aRenderer6654 != null) Class348_Sub8.aRenderer6654!!.method3646(method599(-74).toInt())
             method1315(93)
-            Class253.anInt3246 = 0
+            CameraConfigDefinition.anInt3246 = 0
             Class348_Sub42_Sub19.anInt9699 = 0
             var interface6 = LoadProgressCounters.aClass346_2449!!.method2697(0)
             while (interface6 != null) {
@@ -1590,9 +1590,9 @@ class Client : GameAppletFrame() {
                         }
                     } else if (!method3263(true)) method2363(-84)
                     else Class367_Sub4.method3543((-89).toByte())
-                } else if (i_109_ == 0 && Class253.anInt3246 < 75) {
-                    Class308.anInterface6Array3884!![Class253.anInt3246] = interface6
-                    Class253.anInt3246++
+                } else if (i_109_ == 0 && CameraConfigDefinition.anInt3246 < 75) {
+                    Class308.anInterface6Array3884!![CameraConfigDefinition.anInt3246] = interface6
+                    CameraConfigDefinition.anInt3246++
                 }
                 interface6 = LoadProgressCounters.aClass346_2449!!.method2697(0)
             }

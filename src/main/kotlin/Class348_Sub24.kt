@@ -147,12 +147,12 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(121.toByte(), i_9_ shl 16 or i_10_)
                         Class348_Sub42_Sub14.method3243(25, class348_sub47)
                     }
-                    if (Class253.anInt3246 > 0) {
+                    if (CameraConfigDefinition.anInt3246 > 0) {
                         Class348_Sub40_Sub26.anInt9348++
                         val class348_sub47 = method2148((Class328_Sub1_Sub1.aClass351_8798), (Class348_Sub23_Sub2.aClass77_9029), -111)
-                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * Class253.anInt3246)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinition.anInt3246)
                         var i_13_ = 0
-                        while ((i_13_ < Class253.anInt3246)) {
+                        while ((i_13_ < CameraConfigDefinition.anInt3246)) {
                             val interface6 = Class308.anInterface6Array3884!![i_13_]
                             var l = ((interface6!!.method29((-29).toByte()) + -Class348_Sub7.aLong6651) / 50L)
                             Class348_Sub7.aLong6651 = interface6.method29(106.toByte())

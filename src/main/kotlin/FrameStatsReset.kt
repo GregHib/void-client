@@ -74,7 +74,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlTerrainTile.anInt8262 = 0
             Class318_Sub1_Sub3_Sub1.anInt10004 = 0
             Class322.anInt4018 = 0
-            Class253.anInt3247 = 0
+            CameraConfigDefinition.anInt3247 = 0
             InputStream_Sub1.anInt73 = 0
             FloatCameraTransform.anInt5719 = 0
             Class318_Sub1_Sub4_Sub2.anInt10111 = 0
@@ -1579,7 +1579,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RangedGraphicsOptionState.anInt5939 = 0
             Class368.anInt4497 = 0
             Class45.anInt632 = 0
-            Class253.anInt3255 = 0
+            CameraConfigDefinition.anInt3255 = 0
             Class70.anInt1203 = 0
             Class348_Sub38.anInt7009 = 0
             NativeRenderer.anInt8010 = 0
@@ -2223,10 +2223,10 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub4_Sub1.anInt10083 = 0
             Class318_Sub1_Sub3.anInt8740 = 0
             Class367.anInt4484 = 0
-            Class253.anInt3250 = 0
+            CameraConfigDefinition.anInt3250 = 0
             Class285.anInt4752 = 0
             OutputStream_Sub1.anInt96 = 0
-            Class253.anInt3252 = 0
+            CameraConfigDefinition.anInt3252 = 0
             OpenGlRenderer.anInt7550 = 0
             Class316.anInt3965 = 0
             Class318_Sub1_Sub5_Sub2.anInt10158 = 0
@@ -2557,7 +2557,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7608 = 0
             OpenGlRenderer.anInt7706 = 0
             Class362.anInt4457 = 0
-            Class253.anInt3254 = 0
+            CameraConfigDefinition.anInt3254 = 0
             Class348_Sub42_Sub1.anInt9489 = 0
             NativeRenderer.anInt8018 = 0
             Class89.anInt1511 = 0

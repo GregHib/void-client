@@ -101,7 +101,7 @@ class MultiLevelOptionState : GraphicsOptionState {
             Class318_Sub1_Sub3_Sub2.anInt10047 = Class286_Sub4.anInt6246
             val i_12_ = -99 % ((i - 11) / 56)
             BloomGraphicsOptionState.anInt5973 = 0
-            Class253.anInt3253 = Class5.anInt4638
+            CameraConfigDefinition.anInt3253 = Class5.anInt4638
             Class367_Sub11.anInt7403 = 0
             Class348_Sub40_Sub21.anInt9282 = 5
             NativeShaderProgram.anInt9775 = -1

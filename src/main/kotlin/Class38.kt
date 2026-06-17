@@ -271,7 +271,7 @@ class Class38 {
                     i_6_++
                 }
                 Class348_Sub42_Sub19.anInt9699 = 0
-                Class253.anInt3246 = 0
+                CameraConfigDefinition.anInt3246 = 0
                 Class354.method3466(89)
             }
         }

@@ -80,7 +80,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             anInt8353++
             if (i_3_ != -1922) aClass273_8356 = null
             val `is` = ByteArray(i * i_5_ * i_10_)
-            Class253.method1919(i, f_8_, `is`, f_6_, 0, f_9_, textureGenerator, f_7_, i_4_, 119.toByte(), i_10_, f, i_5_)
+            CameraConfigDefinition.method1919(i, f_8_, `is`, f_6_, 0, f_9_, textureGenerator, f_7_, i_4_, 119.toByte(), i_10_, f, i_5_)
             return `is`
         }
 

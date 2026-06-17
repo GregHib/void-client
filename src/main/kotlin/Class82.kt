@@ -536,7 +536,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             val strings = (method3113(' ', true, string.substring(12)))
                             if (strings.size >= 2) {
                                 val i_17_ = (if (strings.size > 2) strings[2]!!.toInt() else 0)
-                                Class253.method1922(strings[1], i_17_, strings[0], true)
+                                CameraConfigDefinition.method1922(strings[1], i_17_, strings[0], true)
                                 return
                             }
                         }

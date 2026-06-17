@@ -127,11 +127,11 @@ class Class268 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
                 Class305.anInt3855 = ((-Class5_Sub3.anInt8368 + Class305.anInt3855).toFloat() * f + Class5_Sub3.anInt8368.toFloat()).toInt()
                 Class348_Sub42_Sub19.anInt9701 = (Class283.anInt3662.toFloat() + (Class348_Sub42_Sub19.anInt9701 - Class283.anInt3662).toFloat() * f).toInt()
                 Class59_Sub2_Sub2.anInt8685 = (Class359.anInt4424.toFloat() + f * (-Class359.anInt4424 + Class59_Sub2_Sub2.anInt8685).toFloat()).toInt()
-                var i_8_ = Class5.anInt4638 - Class253.anInt3253
+                var i_8_ = Class5.anInt4638 - CameraConfigDefinition.anInt3253
                 if (i_8_ <= 8192) {
                     if (i_8_ < -8192) i_8_ += 16384
                 } else i_8_ -= 16384
-                Class5.anInt4638 = (i_8_.toFloat() * f + Class253.anInt3253.toFloat()).toInt()
+                Class5.anInt4638 = (i_8_.toFloat() * f + CameraConfigDefinition.anInt3253.toFloat()).toInt()
                 Class5.anInt4638 = Class5.anInt4638 and 0x3fff
             }
         }
