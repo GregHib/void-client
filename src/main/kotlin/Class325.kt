@@ -452,7 +452,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ >= 2000) i_76_ -= 2000
                         val l = (class348_sub42_sub12.aLong9605)
                         if (i_76_ == 19) {
-                            if (Class192.anInt2581 <= 0 || !LoadProgressCounters.aClass346_2449!!.method2696(82, -125) || !LoadProgressCounters.aClass346_2449!!.method2696(81, -126)) {
+                            if (AsyncTaskHandle.anInt2581 <= 0 || !LoadProgressCounters.aClass346_2449!!.method2696(82, -125) || !LoadProgressCounters.aClass346_2449!!.method2696(81, -126)) {
                                 val class348_sub47 = Class348_Sub14.method2807(i_75_, i_74_, (-110).toByte(), i_77_)!!
                                 if (i_77_ == 1) {
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, -1)
@@ -622,7 +622,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 12) {
-                            if (Class192.anInt2581 > 0 && LoadProgressCounters.aClass346_2449!!.method2696(82, -127) && LoadProgressCounters.aClass346_2449!!.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
+                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aClass346_2449!!.method2696(82, -127) && LoadProgressCounters.aClass346_2449!!.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
                             else {
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_

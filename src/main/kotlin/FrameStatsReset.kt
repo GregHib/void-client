@@ -2164,7 +2164,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class346_Sub1.anInt6529 = 0
             Class348_Sub40_Sub30.anInt9397 = 0
             ProjectionCameraTransform.anInt5757 = 0
-            Class192.anInt2582 = 0
+            AsyncTaskHandle.anInt2582 = 0
             GameAppletFrame.anInt8 = 0
             OpenGlRenderer.anInt7549 = 0
             GlRectangleTexture.anInt8645 = 0
@@ -3166,7 +3166,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class5_Sub2.anInt8358 = 0
             Class52.anInt4894 = 0
             Class375.anInt4539 = 0
-            Class192.anInt2573 = 0
+            AsyncTaskHandle.anInt2573 = 0
             Class318_Sub1_Sub4_Sub2.anInt10109 = 0
             GameAppletFrame.anInt23 = 0
             Class348_Sub1.anInt6557 = 0
@@ -3475,7 +3475,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5625 = 0
             Class373_Sub2.anInt7440 = 0
             Class367_Sub11.anInt7405 = 0
-            Class192.anInt2575 = 0
+            AsyncTaskHandle.anInt2575 = 0
             Class45.anInt648 = 0
             GlVertexBufferBase.anInt1924 = 0
             Class64_Sub3.anInt5538 = 0
@@ -3794,7 +3794,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub5.anInt10377 = 0
             NativeRenderer.anInt7994 = 0
             Class348_Sub31.anInt6918 = 0
-            Class192.anInt2580 = 0
+            AsyncTaskHandle.anInt2580 = 0
             Class248.anInt3186 = 0
             Class373_Sub2.anInt7435 = 0
             Class228.anInt2973 = 0

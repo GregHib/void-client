@@ -52,8 +52,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                 anInt66++
                 val i_0_ = (Class20.anInt319 + LocalPlayerState.aPlayer_1907!!.x)
                 val i_1_ = (Class260.anInt3310 + LocalPlayerState.aPlayer_1907!!.y)
-                if (-i_0_ + FrameStatsReset.anInt5799 < -2000 || -i_0_ + FrameStatsReset.anInt5799 > 2000 || Class192.anInt2578 - i_1_ < -2000 || -i_1_ + Class192.anInt2578 > 2000) {
-                    Class192.anInt2578 = i_1_
+                if (-i_0_ + FrameStatsReset.anInt5799 < -2000 || -i_0_ + FrameStatsReset.anInt5799 > 2000 || AsyncTaskHandle.anInt2578 - i_1_ < -2000 || -i_1_ + AsyncTaskHandle.anInt2578 > 2000) {
+                    AsyncTaskHandle.anInt2578 = i_1_
                     FrameStatsReset.anInt5799 = i_0_
                 }
                 if (FrameStatsReset.anInt5799 != i_0_) {
@@ -68,8 +68,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                 }
                 if (i == -1) {
                     Class314.aFloat3938 += Class205.aFloat2687 * l.toFloat() / 6.0f
-                    if (i_1_ != Class192.anInt2578) {
-                        val i_4_ = i_1_ - Class192.anInt2578
+                    if (i_1_ != AsyncTaskHandle.anInt2578) {
+                        val i_4_ = i_1_ - AsyncTaskHandle.anInt2578
                         var i_5_ = (i_4_.toLong() * l / 320L).toInt()
                         if (i_4_ > 0) {
                             if (i_5_ != 0) {
@@ -78,7 +78,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         } else if (i_5_ != 0) {
                             if (i_5_ < i_4_) i_5_ = i_4_
                         } else i_5_ = -1
-                        Class192.anInt2578 += i_5_
+                        AsyncTaskHandle.anInt2578 += i_5_
                     }
                     Class76.aFloat1287 += Class348_Sub27.aFloat6898 * l.toFloat() / 6.0f
                     method1725(262144)

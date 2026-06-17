@@ -1093,7 +1093,7 @@ class ModelDefinition {
         fun method1097(i: Byte, i_20_: Int, random: Random): Int {
             anInt1861++
             require(i_20_ > 0)
-            if (Class192.method1436(-19, i_20_)) return (i_20_.toLong() * (0xffffffffL and random.nextInt().toLong()) shr 32).toInt()
+            if (AsyncTaskHandle.method1436(-19, i_20_)) return (i_20_.toLong() * (0xffffffffL and random.nextInt().toLong()) shr 32).toInt()
             val i_21_ = -2147483648 + -(4294967296L % i_20_.toLong()).toInt()
             if (i < 78) aClass45_1848 = null
             var i_22_: Int

@@ -471,7 +471,7 @@ public abstract class Class64 {
                 val class348_sub42_sub10 = Class239_Sub6.aClass355_5900!!.method3471(i_55_, (-102).toByte())
                 if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase(Locale.getDefault()).indexOf(string) != -1) {
                     if (i_52_ >= 50) {
-                        Class192.aShortArray2579 = null
+                        AsyncTaskHandle.aShortArray2579 = null
                         Class76.anInt1285 = -1
                         return
                     }
@@ -489,14 +489,14 @@ public abstract class Class64 {
             }
             Class76.anInt1285 = i_52_
             WidgetNodeLink.anInt2037 = 0
-            Class192.aShortArray2579 = `is`
+            AsyncTaskHandle.aShortArray2579 = `is`
             val strings = arrayOfNulls<String>(Class76.anInt1285)
             var i_58_ = 0
             while (Class76.anInt1285 > i_58_) {
                 strings[i_58_] = Class239_Sub6.aClass355_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(Class348_Sub21.method2955(i, 81))
                 i_58_++
             }
-            SpotAnimVector.method1333(Class192.aShortArray2579, i + 26073, strings)
+            SpotAnimVector.method1333(AsyncTaskHandle.aShortArray2579, i + 26073, strings)
         }
 
         @JvmStatic

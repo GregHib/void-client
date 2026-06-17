@@ -214,7 +214,7 @@ class Class348_Sub41 : Class348() {
                     } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
                         Class348_Sub7.anInt6652 -= i_21_ * 512
                         FrameStatsReset.anInt5799 -= i_20_ * 512
-                        Class192.anInt2578 -= 512 * i_21_
+                        AsyncTaskHandle.anInt2578 -= 512 * i_21_
                         Class348_Sub6.anInt6633 -= i_20_ * 512
                     } else {
                         Class348_Sub40_Sub21.anInt9282 = 1

@@ -256,7 +256,7 @@ object Class66 {
                 anInt1170 -= 2
                 val string = aStringArray1152!![anInt1170]
                 val string_15_ = aStringArray1152!![anInt1170 + 1]
-                if (Class192.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+                if (AsyncTaskHandle.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
                     anInt1159++
                     val class348_sub47 = method2148((Class348_Sub40_Sub22.aClass351_9304), (Class348_Sub23_Sub2.aClass77_9029), -116)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -543,9 +543,9 @@ object Class66 {
                 return
             }
             if (i == 5072) {
-                if (Class192.aShortArray2579 == null || WidgetNodeLink.anInt2037 >= Class76.anInt1285) anIntArray1149!![anInt1173++] = -1
+                if (AsyncTaskHandle.aShortArray2579 == null || WidgetNodeLink.anInt2037 >= Class76.anInt1285) anIntArray1149!![anInt1173++] = -1
                 else {
-                    anIntArray1149!![anInt1173++] = (Class192.aShortArray2579!![WidgetNodeLink.anInt2037++].toInt() and 0xffff)
+                    anIntArray1149!![anInt1173++] = (AsyncTaskHandle.aShortArray2579!![WidgetNodeLink.anInt2037++].toInt() and 0xffff)
                     return
                 }
                 return
@@ -2549,7 +2549,7 @@ object Class66 {
 
     private fun method707(string: String, i: Int) {
         var string = string
-        if (Class192.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+        if (AsyncTaskHandle.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
             var string_240_ = string.lowercase(Locale.getDefault())
             var i_241_ = 0
             if (string_240_.startsWith(Class274.aClass274_3530!!.method2063(0, 544)!!)) {
@@ -3971,7 +3971,7 @@ object Class66 {
                     return
                 }
                 if (i == 3316) {
-                    if (Class192.anInt2581 >= 2) anIntArray1149!![anInt1173++] = Class192.anInt2581
+                    if (AsyncTaskHandle.anInt2581 >= 2) anIntArray1149!![anInt1173++] = AsyncTaskHandle.anInt2581
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4906,9 +4906,9 @@ object Class66 {
                     return
                 }
                 if (i == 4211) {
-                    if (Class192.aShortArray2579 == null || WidgetNodeLink.anInt2037 >= Class76.anInt1285) anIntArray1149!![anInt1173++] = -1
+                    if (AsyncTaskHandle.aShortArray2579 == null || WidgetNodeLink.anInt2037 >= Class76.anInt1285) anIntArray1149!![anInt1173++] = -1
                     else {
-                        anIntArray1149!![anInt1173++] = (Class192.aShortArray2579!![WidgetNodeLink.anInt2037++].toInt() and 0xffff)
+                        anIntArray1149!![anInt1173++] = (AsyncTaskHandle.aShortArray2579!![WidgetNodeLink.anInt2037++].toInt() and 0xffff)
                         return
                     }
                     return

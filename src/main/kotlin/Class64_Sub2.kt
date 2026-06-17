@@ -61,7 +61,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var aBoolean5477 = false
     private var anInt5478 = 0
     private var aClass290_5482: Class290? = null
-    private var aClass192_5485: Class192? = null
+    private var aAsyncTaskHandle_5485: AsyncTaskHandle? = null
     private var aShortArray5486: ShortArray? = null
     private var anIntArrayArray5492: Array<IntArray?>? = null
     private var aShortArray5493: ShortArray? = null
@@ -536,7 +536,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             }
             if (i != 262144) method623(-95, 94, null, true, 116, 62)
             if (aShortArray5508 != null && !HeapDiagnosticsHolder.method1299(i + 131072, anInt5463, anInt5472)) {
-                if ((aClass192_5485 == null || aClass192_5485!!.method1437((-100).toByte())) && (aClass290_5482 == null || aClass290_5482!!.method2197((-56).toByte()))) {
+                if ((aAsyncTaskHandle_5485 == null || aAsyncTaskHandle_5485!!.method1437((-100).toByte())) && (aClass290_5482 == null || aClass290_5482!!.method2197((-56).toByte()))) {
                     aShortArray5512 = null
                     aShortArray5495 = aShortArray5512
                     aShortArray5508 = aShortArray5495
@@ -613,7 +613,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         if (aClass290_5482 != null) aClass290_5482!!.method2195(false)
         if (i != -23755) aBoolean5477 = false
         if (aClass290_5424 != null) aClass290_5424!!.method2195(false)
-        if (aClass192_5485 != null) aClass192_5485!!.method1435((-95).toByte())
+        if (aAsyncTaskHandle_5485 != null) aAsyncTaskHandle_5485!!.method1435((-95).toByte())
     }
 
     public override fun method619(): Array<ModelFacePriorityNode?>? {
@@ -841,9 +841,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
 
     private fun method666(i: Int): Boolean {
         anInt5421++
-        if (aClass192_5485!!.aBoolean2577) return true
-        if (aClass192_5485!!.anInterface5_Impl2_2576 == null) aClass192_5485!!.anInterface5_Impl2_2576 = aHa_Sub3_5419!!.method3840(-28633, aBoolean5462)
-        val interface5_impl2 = aClass192_5485!!.anInterface5_Impl2_2576!!
+        if (aAsyncTaskHandle_5485!!.aBoolean2577) return true
+        if (aAsyncTaskHandle_5485!!.anInterface5_Impl2_2576 == null) aAsyncTaskHandle_5485!!.anInterface5_Impl2_2576 = aHa_Sub3_5419!!.method3840(-28633, aBoolean5462)
+        val interface5_impl2 = aAsyncTaskHandle_5485!!.anInterface5_Impl2_2576!!
         interface5_impl2.method23(15959, 6 * anInt5516)
         val buffer = interface5_impl2.method24(true, false)
         val i_146_ = 84 / ((-70 - i) / 49)
@@ -868,9 +868,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             }
             stream.a()
             if (interface5_impl2.method22(-23)) {
-                aClass192_5485!!.aBoolean2577 = true
+                aAsyncTaskHandle_5485!!.aBoolean2577 = true
                 aBoolean5402 = true
-                aClass192_5485!!.anInterface5_Impl2_2572 = interface5_impl2
+                aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572 = interface5_impl2
                 return true
             }
         }
@@ -1112,12 +1112,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 class64_sub2_154_.aShortArray5508 = aShortArray5508
             }
             if (method2783(anInt5472, 80.toByte(), i)) {
-                class64_sub2_154_.aClass192_5485 = class64_sub2_153_!!.aClass192_5485
-                class64_sub2_154_.aClass192_5485!!.aBoolean2577 = aClass192_5485!!.aBoolean2577
-                class64_sub2_154_.aClass192_5485!!.aBoolean2574 = true
-                class64_sub2_154_.aClass192_5485!!.anInterface5_Impl2_2572 = aClass192_5485!!.anInterface5_Impl2_2572
-            } else if (method3563(i, 56.toByte(), anInt5472)) class64_sub2_154_.aClass192_5485 = aClass192_5485
-            else class64_sub2_154_.aClass192_5485 = null
+                class64_sub2_154_.aAsyncTaskHandle_5485 = class64_sub2_153_!!.aAsyncTaskHandle_5485
+                class64_sub2_154_.aAsyncTaskHandle_5485!!.aBoolean2577 = aAsyncTaskHandle_5485!!.aBoolean2577
+                class64_sub2_154_.aAsyncTaskHandle_5485!!.aBoolean2574 = true
+                class64_sub2_154_.aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572 = aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572
+            } else if (method3563(i, 56.toByte(), anInt5472)) class64_sub2_154_.aAsyncTaskHandle_5485 = aAsyncTaskHandle_5485
+            else class64_sub2_154_.aAsyncTaskHandle_5485 = null
             if (Class278.method2077(-122, anInt5472, i)) {
                 if (class64_sub2_153_!!.aShortArray5423 != null && class64_sub2_153_.aShortArray5423!!.size >= anInt5478) class64_sub2_154_.aShortArray5423 = class64_sub2_153_.aShortArray5423
                 else {
@@ -2410,7 +2410,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     var i_477_ = aShortArray5423!![i_475_].toInt() and 0xffff
                     if (i_477_ == 65535) i_477_ = -1
                     aHa_Sub3_5419!!.method3814(true, bool, i_477_, 102.toByte())
-                    aHa_Sub3_5419!!.method3938(Class247.aClass21_3181, -i_475_ + i_476_, (aClass192_5485!!.anInterface5_Impl2_2572), anIntArray5415!![i_474_], 3 * i_475_, anIntArray5473!![i_474_], 54)
+                    aHa_Sub3_5419!!.method3938(Class247.aClass21_3181, -i_475_ + i_476_, (aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572), anIntArray5415!![i_474_], 3 * i_475_, anIntArray5473!![i_474_], 54)
                     i_474_++
                 }
             }
@@ -2436,7 +2436,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     }
 
     private fun method674(i: Int) {
-        if (aClass192_5485 != null) aClass192_5485!!.aBoolean2577 = false
+        if (aAsyncTaskHandle_5485 != null) aAsyncTaskHandle_5485!!.aBoolean2577 = false
         val i_482_ = 28 % ((i - 18) / 43)
         anInt5505++
     }
@@ -3349,7 +3349,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             if (bool || method1837(anInt5472, 102, anInt5463)) aClass290_5460 = Class290(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
             if (bool || Class296.method2224(anInt5463, 110.toByte(), anInt5472)) aClass290_5482 = Class290(Class348_Sub42_Sub8_Sub2.method3200(anInt5463, anInt5472, (-82).toByte()))
             if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aClass290_5424 = Class290(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
-            if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aClass192_5485 = Class192(Class348_Sub9.method2783(anInt5472, (-97).toByte(), anInt5463))
+            if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(Class348_Sub9.method2783(anInt5472, (-97).toByte(), anInt5463))
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))
         }

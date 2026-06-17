@@ -140,7 +140,7 @@ public abstract class AbstractCameraTransform {
             try {
                 anInt1594++
                 if (i <= 42) method906(123)
-                if (var_ha_Sub2!!.aBoolean7793 || (Class192.method1436(82, i_25_) && Class192.method1436(81, i_26_))) return Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_24_, i_25_, i_26_)
+                if (var_ha_Sub2!!.aBoolean7793 || (AsyncTaskHandle.method1436(82, i_25_) && AsyncTaskHandle.method1436(81, i_26_))) return Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_24_, i_25_, i_26_)
                 if (var_ha_Sub2.aBoolean7837) return Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_24_, i_25_, i_26_)
                 return Class258_Sub3_Sub1(var_ha_Sub2, i_24_, i_25_, i_26_, Class33.method340(i_25_, 108.toByte()), Class33.method340(i_26_, 108.toByte()))
             } catch (runtimeexception: RuntimeException) {

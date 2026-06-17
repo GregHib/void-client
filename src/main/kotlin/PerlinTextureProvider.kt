@@ -123,7 +123,7 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
         fun method1401(var_ha_Sub2: OpenGlRenderer, i: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int): Class258_Sub3_Sub1 {
             anInt5809++
             if (i_37_ != 34037) aClass341_5808 = null
-            if (var_ha_Sub2.aBoolean7793 || Class192.method1436(-20, i_38_) && Class192.method1436(-119, i_40_)) return Class258_Sub3_Sub1(var_ha_Sub2, 3553, i, i_39_, i_38_, i_40_, true)
+            if (var_ha_Sub2.aBoolean7793 || AsyncTaskHandle.method1436(-20, i_38_) && AsyncTaskHandle.method1436(-119, i_40_)) return Class258_Sub3_Sub1(var_ha_Sub2, 3553, i, i_39_, i_38_, i_40_, true)
             if (!var_ha_Sub2.aBoolean7837) return Class258_Sub3_Sub1(var_ha_Sub2, i, i_39_, i_38_, i_40_, Class33.method340(i_38_, 108.toByte()), Class33.method340(i_40_, 108.toByte()), true)
             return Class258_Sub3_Sub1(var_ha_Sub2, 34037, i, i_39_, i_38_, i_40_, true)
         }
@@ -141,8 +141,8 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
             var i = i
             var i_45_ = i_45_
             anInt5806++
-            require(!(i_45_ > 0 && !Class192.method1436(69, i_45_))) { "" }
-            require(!(i > 0 && !Class192.method1436(100, i))) { "" }
+            require(!(i_45_ > 0 && !AsyncTaskHandle.method1436(69, i_45_))) { "" }
+            require(!(i > 0 && !AsyncTaskHandle.method1436(100, i))) { "" }
             val i_49_ = ParticleDefLoader.method1382(i_46_, -6409)
             var i_50_ = 0
             var i_51_ = min(i_45_, i)

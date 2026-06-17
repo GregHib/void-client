@@ -143,7 +143,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         this.anInt10540 = class348_sub49.readByte(-89).toInt()
         this.anInt10522 = class348_sub49.readByte(i.toInt() xor 0x1.inv()).toInt()
         this.aBoolean10551 = class348_sub49.readByte(i + -199).toInt() == 1
-        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 && Class192.anInt2581 >= 2) this.aBoolean10551 = false
+        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 && AsyncTaskHandle.anInt2581 >= 2) this.aBoolean10551 = false
         this.anInt10542 = 0
         var i_14_ = -1
         val `is` = IntArray(12)

@@ -82,7 +82,7 @@ object ScriptOpcodeHolder {
                         }
                     }
                     if (i_6_ >= 250) {
-                        Class192.aShortArray2579 = null
+                        AsyncTaskHandle.aShortArray2579 = null
                         Class76.anInt1285 = -1
                         return
                     }
@@ -95,7 +95,7 @@ object ScriptOpcodeHolder {
                 }
                 i_7_++
             }
-            Class192.aShortArray2579 = `is`
+            AsyncTaskHandle.aShortArray2579 = `is`
             Class76.anInt1285 = i_6_
             WidgetNodeLink.anInt2037 = 0
             val strings = arrayOfNulls<String>(Class76.anInt1285)
@@ -104,7 +104,7 @@ object ScriptOpcodeHolder {
                 strings[i_10_] = Exception_Sub1.aClass255_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
                 i_10_++
             }
-            SpotAnimVector.Companion.method1333(Class192.aShortArray2579, 26073, strings)
+            SpotAnimVector.Companion.method1333(AsyncTaskHandle.aShortArray2579, 26073, strings)
             SpotAnimVector.Companion.aClass45_2306!!.method412(116.toByte())
             SpotAnimVector.Companion.aClass45_2306!!.anInt634 = 2
         } catch (runtimeexception: RuntimeException) {

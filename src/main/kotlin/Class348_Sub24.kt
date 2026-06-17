@@ -403,7 +403,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             }
                             if (HeapDiagnosticsHolder.aClass46_2249 == null) Class348_Sub42.anInt7059 = 0
                             if (Class289.aClass46_3701 != null) method2708(-30206)
-                            if (Class192.anInt2581 > 0 && LoadProgressCounters.aClass346_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCounters.aClass346_2449!!.method2696(81, -121) && Class98.anInt1565 != 0) {
+                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aClass346_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCounters.aClass346_2449!!.method2696(81, -121) && Class98.anInt1565 != 0) {
                                 var i_30_ = ((LocalPlayerState.aPlayer_1907!!.plane) - Class98.anInt1565)
                                 if (i_30_ >= 0) {
                                     if (i_30_ > 3) i_30_ = 3

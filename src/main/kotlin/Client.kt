@@ -96,7 +96,7 @@ import GlowPostProcessor.Companion.method1416
 import WorldListEntry.Companion.method284
 import ModelLightingConfig.Companion.method1426
 import SpriteSheetCache.Companion.method1431
-import Class192.Companion.method1438
+import AsyncTaskHandle.Companion.method1438
 import Class193.Companion.method1440
 import Class194.Companion.method1441
 import Class195.Companion.method1447
@@ -2221,7 +2221,7 @@ class Client : GameAppletFrame() {
                                                 val `is`: IntArray? = IntArray(3)
                                                 class348_sub42_sub14.method3239(true, i_73_, i_72_, `is`!!)
                                                 if (`is` != null) {
-                                                    if (LoadProgressCounters.aClass346_2449!!.method2696(82, -128) && (Class192.anInt2581 > 0)) {
+                                                    if (LoadProgressCounters.aClass346_2449!!.method2696(82, -128) && (AsyncTaskHandle.anInt2581 > 0)) {
                                                         method3502(`is`[2], 2, `is`[0], `is`[1])
                                                         continue
                                                     }

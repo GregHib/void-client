@@ -100,7 +100,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                     method94((Class274.aClass274_3485!!.method2063(Class348_Sub33.anInt6967, 544)!!), -99)
                     return
                 }
-                if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271 || Class192.anInt2581 >= 2) {
+                if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271 || AsyncTaskHandle.anInt2581 >= 2) {
                     if (string.equals("errortest", ignoreCase = true)) throw RuntimeException()
                     if (string == "nativememerror") throw OutOfMemoryError("native(MPR")
                     try {
@@ -728,8 +728,8 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                     val i_30_ = Class348_Sub7.anInt6652
                     Class76.Companion.aFloat1287 += Class348_Sub27.aFloat6898 * l.toFloat() / 40.0f * 8.0f
                     Class314.aFloat3938 += Class205.aFloat2687 * l.toFloat() / 40.0f * 8.0f
-                    if (Class192.anInt2578 != i_30_) {
-                        val i_31_ = -Class192.anInt2578 + i_30_
+                    if (AsyncTaskHandle.anInt2578 != i_30_) {
+                        val i_31_ = -AsyncTaskHandle.anInt2578 + i_30_
                         var i_32_ = (l * i_31_.toLong() / 320L).toInt()
                         if (i_31_ <= 0) {
                             if (i_32_ == 0) i_32_ = -1
@@ -737,7 +737,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         } else if (i_32_ != 0) {
                             if (i_31_ < i_32_) i_32_ = i_31_
                         } else i_32_ = 1
-                        Class192.anInt2578 += i_32_
+                        AsyncTaskHandle.anInt2578 += i_32_
                     }
                     method1725(262144)
                 }

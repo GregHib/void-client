@@ -326,7 +326,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             anInt9846++
             if (i_14_ != 32) anOpenGL9856 = null
-            if (!aBoolean9926 && (!Class192.method1436(i_14_ xor 0x46, i_12_) || !Class192.method1436(i_14_ + 83, i))) {
+            if (!aBoolean9926 && (!AsyncTaskHandle.method1436(i_14_ xor 0x46, i_12_) || !AsyncTaskHandle.method1436(i_14_ + 83, i))) {
                 if (aBoolean9919) return GlRectangleTexture(this, class304, i_12_, i, `is`, i_11_, i_13_)
                 val class14_sub1 = Gl2dTexture(this, class304, Class68.aClass68_1183, Class33.method340(i_12_, 108.toByte()), Class33.method340(i, 108.toByte()))
                 class14_sub1.method70(0, i_11_, (-45).toByte(), i_13_, i, i_12_, 0, `is`, class304)
@@ -833,7 +833,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     override fun method3855(class304: Class304?, i: Int, i_54_: Int, fs: FloatArray?, bool: Boolean, i_55_: Int, i_56_: Int, i_57_: Int): Interface18_Impl3 {
         try {
             anInt9890++
-            if (!aBoolean9926 && (!Class192.method1436(60, i) || !Class192.method1436(-73, i_57_))) {
+            if (!aBoolean9926 && (!AsyncTaskHandle.method1436(60, i) || !AsyncTaskHandle.method1436(-73, i_57_))) {
                 if (aBoolean9919) return GlRectangleTexture(this, class304, i, i_57_, fs, i_54_, i_55_)
                 val class14_sub1 = Gl2dTexture(this, class304, Class68.aClass68_1187, Class33.method340(i, 108.toByte()), Class33.method340(i_57_, 108.toByte()))
                 class14_sub1.method240(i_55_, (-126).toByte(), fs, class304, 0, i_54_, 0, i, i_57_)
@@ -873,7 +873,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             val i_64_ = 101 / ((i_60_ - -21) / 46)
             anInt9830++
-            if (aBoolean9926 || Class192.method1436(103, i) && Class192.method1436(-53, i_63_)) return Gl2dTexture(this, i, i_63_, bool, `is`, i_61_, i_62_)
+            if (aBoolean9926 || AsyncTaskHandle.method1436(103, i) && AsyncTaskHandle.method1436(-53, i_63_)) return Gl2dTexture(this, i, i_63_, bool, `is`, i_61_, i_62_)
             if (!aBoolean9919) {
                 val class14_sub1 = Gl2dTexture(this, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, Class33.method340(i, 108.toByte()), Class33.method340(i_63_, 108.toByte()))
                 class14_sub1.method68(i_62_, 22809, `is`, 0, i_61_, i, 0, i_63_)
@@ -1137,7 +1137,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             if (i_88_.toInt() != -84) method3842(false)
             anInt9882++
-            if (aBoolean9926 || (Class192.method1436(i_88_ + 15, i_89_) && Class192.method1436(65, i))) return Gl2dTexture(this, class304, class68, i_89_, i)
+            if (aBoolean9926 || (AsyncTaskHandle.method1436(i_88_ + 15, i_89_) && AsyncTaskHandle.method1436(65, i))) return Gl2dTexture(this, class304, class68, i_89_, i)
             if (!aBoolean9919) return Gl2dTexture(this, class304, class68, Class33.method340(i_89_, 108.toByte()), Class33.method340(i, 108.toByte()))
             return GlRectangleTexture(this, class304, class68, i_89_, i)
         } catch (runtimeexception: RuntimeException) {

@@ -94,8 +94,8 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         var i_2_ = i_2_
         var i_3_ = i_3_
         anInt5100++
-        require(!(i_2_ > 0 && !Class192.method1436(66, i_2_))) { "" }
-        require(!(i_3_ > 0 && !Class192.method1436(i xor 0x1cb6, i_3_))) { "" }
+        require(!(i_2_ > 0 && !AsyncTaskHandle.method1436(66, i_2_))) { "" }
+        require(!(i_3_ > 0 && !AsyncTaskHandle.method1436(i xor 0x1cb6, i_3_))) { "" }
         val i_5_ = this.aClass304_5084!!.anInt3850
         var i_6_ = 0
         var i_7_ = min(i_2_, i_3_)
@@ -157,8 +157,8 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         var i = i
         var i_23_ = i_23_
         anInt5092++
-        require(!(i > 0 && !Class192.method1436(-43, i))) { "" }
-        require(!(i_23_ > 0 && !Class192.method1436(i_25_ xor 0xd2.inv(), i_23_))) { "" }
+        require(!(i > 0 && !AsyncTaskHandle.method1436(-43, i))) { "" }
+        require(!(i_23_ > 0 && !AsyncTaskHandle.method1436(i_25_ xor 0xd2.inv(), i_23_))) { "" }
         require(GroundItemRenderState.aClass304_1662 == this.aClass304_5084) { "" }
         var i_26_ = 0
         var i_27_ = min(i, i_23_)
@@ -246,8 +246,8 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         var i_49_ = i_49_
         var i_50_ = i_50_
         anInt5102++
-        require(!(i_49_ > 0 && !Class192.method1436(100, i_49_))) { "" }
-        require(!(i_50_ > 0 && !Class192.method1436(i_48_ + 109, i_50_))) { "" }
+        require(!(i_49_ > 0 && !AsyncTaskHandle.method1436(100, i_49_))) { "" }
+        require(!(i_50_ > 0 && !AsyncTaskHandle.method1436(i_48_ + 109, i_50_))) { "" }
         val i_51_ = this.aClass304_5084!!.anInt3850
         var i_52_ = 0
         if (i_48_ != 1) method228(107)

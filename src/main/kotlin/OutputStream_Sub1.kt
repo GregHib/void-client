@@ -47,7 +47,7 @@ class OutputStream_Sub1 : OutputStream() {
                     Class248.anInt3203 = -1
                     Class299_Sub1_Sub2.method2264(false)
                 }
-                Class192.method1434(-14988)
+                AsyncTaskHandle.method1434(-14988)
                 if (!bool) Class282.method2109(512)
                 GroundItemRenderState.method1014(-4)
                 Class348_Sub42_Sub3.method3174(i_1_, i_3_, i_0_, true, (-82).toByte(), i_2_)
@@ -61,13 +61,13 @@ class OutputStream_Sub1 : OutputStream() {
                     if (Class348_Sub35.anInt6979 shr 8 > i_4_) i_4_ = Class348_Sub35.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && Class255.anIntArray3273!![4] + 128 > i_4_) i_4_ = Class255.anIntArray3273!![4] + 128
                     val i_5_ = Class314.aFloat3938.toInt() + Class195.anInt5016 and 0x3fff
-                    Class17.method268(i_4_, -200 + (Class275.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, Class192.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
+                    Class17.method268(i_4_, -200 + (Class275.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
                 } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
                     var i_6_ = Class76.aFloat1287.toInt()
                     if (i_6_ < Class348_Sub35.anInt6979 shr 8) i_6_ = Class348_Sub35.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && (i_6_ < Class255.anIntArray3273!![4] + 128)) i_6_ = 128 + Class255.anIntArray3273!![4]
                     val i_7_ = Class314.aFloat3938.toInt() and 0x3fff
-                    Class17.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, Class355.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, Class192.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
+                    Class17.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, Class355.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
                 } else if (Class348_Sub40_Sub21.anInt9282 == 5) Class268.method2035(i_2_, 0)
                 val i_8_ = Class286_Sub4.anInt6246
                 val i_9_ = Class305.anInt3855
