@@ -4305,7 +4305,7 @@ object Class66 {
                     return
                 }
                 if (i == 3618) {
-                    anIntArray1149!![anInt1173++] = Class119_Sub1.aByte4702.toInt()
+                    anIntArray1149!![anInt1173++] = NativeIndexBuffer.aByte4702.toInt()
                     return
                 }
                 if (i == 3619) {

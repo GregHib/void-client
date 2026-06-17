@@ -593,7 +593,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             Class169.aClass19Array2261!![i_73_]!!.anInt308 = i
                             Class169.aClass19Array2261!![i_73_]!!.aByte310 = i_68_
                             Class169.aClass19Array2261!![i_73_]!!.aString313 = string_72_
-                            if (string_67_ == Class132.aPlayer_1907!!.aString10544) Class119_Sub1.aByte4702 = i_68_
+                            if (string_67_ == Class132.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                             Class230.anInt2986 = Class311.anInt3918
                             Class348_Sub3.aIntRange_6584 = null
                             return true
@@ -609,7 +609,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     if (Class37.anInt496 == 0) Class169.aClass19Array2261 = arrayOfNulls<Class19>(100)
                     Class169.aClass19Array2261!![i_73_ - -1] = class19
                     Class37.anInt496++
-                    if (string_67_ == Class132.aPlayer_1907!!.aString10544) Class119_Sub1.aByte4702 = i_68_
+                    if (string_67_ == Class132.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                 }
                 Class230.anInt2986 = Class311.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
@@ -1762,7 +1762,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     class19s[i_234_]!!.anInt308 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     class19s[i_234_]!!.aByte310 = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-118)
                     class19s[i_234_]!!.aString313 = Class299.aClass348_Sub49_Sub2_3813!!.readString((-124).toByte())
-                    if (class19s[i_234_]!!.aString306 == Class132.aPlayer_1907!!.aString10544) Class119_Sub1.aByte4702 = class19s[i_234_]!!.aByte310
+                    if (class19s[i_234_]!!.aString306 == Class132.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = class19s[i_234_]!!.aByte310
                     i_234_++
                 }
                 var bool_235_ = false

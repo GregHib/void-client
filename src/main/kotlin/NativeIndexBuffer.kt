@@ -3,7 +3,7 @@ import Class239_Sub21.Companion.method1813
 import Class367_Sub8.Companion.method3549
 import jaclib.memory.Buffer
 
-class Class119_Sub1 : Class119, Interface2 {
+class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
     private var anInt4697 = 0
 
     internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, `is`: ByteArray?, i_0_: Int) : super(var_ha_Sub2, `is`, i_0_) {

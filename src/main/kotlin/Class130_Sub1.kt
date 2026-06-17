@@ -396,7 +396,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class377.anInt9822 = 0
             OpenGlRenderer.anInt7536 = 0
             Class279.anInt3611 = 0
-            Class119_Sub2.anInt4826 = 0
+            NativeVertexBuffer.anInt4826 = 0
             Class233.anInt3017 = 0
             NativeRenderer.anInt7904 = 0
             Class51.anInt867 = 0
@@ -420,7 +420,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Client.anInt5180 = 0
             Class356.anInt4387 = 0
             Class318_Sub1_Sub2.anInt8738 = 0
-            Class119_Sub1.anInt4705 = 0
+            NativeIndexBuffer.anInt4705 = 0
             Class318_Sub1_Sub2_Sub1.anInt10188 = 0
             DelegatingRenderCanvas.anInt66 = 0
             Class237_Sub1.anInt5818 = 0
@@ -610,7 +610,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class66.anInt1165 = 0
             Class273.anInt5166 = 0
             FloatCameraTransform.anInt5728 = 0
-            Class119_Sub1.anInt4701 = 0
+            NativeIndexBuffer.anInt4701 = 0
             Class64_Sub3.anInt5560 = 0
             Class87.anInt1489 = 0
             NativeShaderProgram.anInt9771 = 0
@@ -2217,7 +2217,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub22.anInt6074 = 0
             Class61.anInt1108 = 0
             Class348_Sub23_Sub2.anInt9025 = 0
-            Class119_Sub2.anInt4829 = 0
+            NativeVertexBuffer.anInt4829 = 0
             Class79.anInt1379 = 0
             Class286_Sub8.anInt6305 = 0
             Class318_Sub1_Sub4_Sub1.anInt10083 = 0
@@ -2295,7 +2295,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class367_Sub1.anInt7281 = 0
             Client.anInt5175 = 0
             Class31.anInt440 = 0
-            Class119_Sub2.anInt4832 = 0
+            NativeVertexBuffer.anInt4832 = 0
             Class62.anInt1115 = 0
             Class348_Sub40.anInt7034 = 0
             Class14_Sub4.anInt8647 = 0
@@ -2627,7 +2627,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class286_Sub5.anInt6249 = 0
             NativeRenderer.anInt8044 = 0
             Class348_Sub41.anInt7051 = 0
-            Class119_Sub1.anInt4704 = 0
+            NativeIndexBuffer.anInt4704 = 0
             Class45.anInt651 = 0
             Class258.anInt4852 = 0
             Class161.anInt2142 = 0
@@ -2767,7 +2767,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class190.anInt2550 = 0
             MatrixCameraTransform.anInt5658 = 0
             Class239_Sub1.anInt5848 = 0
-            Class119_Sub2.anInt4831 = 0
+            NativeVertexBuffer.anInt4831 = 0
             Class67.anInt4642 = 0
             Class64_Sub3.anInt5623 = 0
             Class368.anInt4494 = 0
@@ -2812,7 +2812,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class369_Sub3.anInt8594 = 0
             Class279.anInt3599 = 0
             Class50_Sub1.anInt5210 = 0
-            Class119_Sub1.anInt4700 = 0
+            NativeIndexBuffer.anInt4700 = 0
             Class250.anInt3219 = 0
             NativeRenderer.anInt7939 = 0
             Class315.anInt3945 = 0
@@ -2944,7 +2944,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub20.anInt6838 = 0
             Class78.anInt1309 = 0
             Class348_Sub23_Sub3.anInt9045 = 0
-            Class119_Sub2.anInt4830 = 0
+            NativeVertexBuffer.anInt4830 = 0
             Class305.anInt3864 = 0
             Player.anInt10548 = 0
             Class239_Sub24.anInt6088 = 0
@@ -3183,7 +3183,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class67.anInt4645 = 0
             Class239_Sub4.anInt5877 = 0
             NativeRenderer.anInt7971 = 0
-            Class119_Sub1.anInt4698 = 0
+            NativeIndexBuffer.anInt4698 = 0
             Class135_Sub2.anInt4842 = 0
             GameAppletFrame.anInt32 = 0
             ScriptCompilerThread.anInt1726 = 0
@@ -3513,7 +3513,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class143.anInt1980 = 0
             GameAppletFrame.anInt40 = 0
             Renderer.anInt4563 = 0
-            Class119_Sub2.anInt4828 = 0
+            NativeVertexBuffer.anInt4828 = 0
             Class348_Sub49.anInt7182 = 0
             ProjectionCameraTransform.anInt5783 = 0
             Class348_Sub16_Sub3.anInt8889 = 0
@@ -3647,7 +3647,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class18.anInt273 = 0
             Class318_Sub1_Sub3_Sub4.anInt10361 = 0
             Class286_Sub3.anInt6217 = 0
-            Class119_Sub1.anInt4699 = 0
+            NativeIndexBuffer.anInt4699 = 0
             NativeRenderer.anInt8034 = 0
             Class348_Sub49.anInt7209 = 0
             Class348_Sub16_Sub2.anInt8860 = 0

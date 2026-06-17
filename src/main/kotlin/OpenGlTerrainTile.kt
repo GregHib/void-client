@@ -558,7 +558,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 }
             }
             if (i_158_ > 0) {
-                val class119_sub2 = Class119_Sub2(this.aHa_Sub2_8272, 5123, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
+                val class119_sub2 = NativeVertexBuffer(this.aHa_Sub2_8272, 5123, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
                 this.aHa_Sub2_8272!!.method3759(i_158_, -128, 4, class119_sub2, 0)
             }
         }

@@ -11,7 +11,7 @@ class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, softwareSprite
     private val anInt3008: Int
     var aBoolean3009: Boolean = true
     private var anInt3010 = -1
-    private var aClass119_Sub2_3011: Class119_Sub2? = null
+    private var aClass119_Sub2_3011: NativeVertexBuffer? = null
     fun method1643(`is`: ByteArray?, i: Int, i_0_: Int, i_1_: Byte) {
         aClass119_Sub2_3011!!.method35(`is`, i, 110, aHa_Sub2_3000!!.method3785(i, 4) * i_0_)
         anInt3005++
@@ -96,7 +96,7 @@ class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, softwareSprite
                     }
                 }
                 anInterface8_3001 = (aHa_Sub2_3000.method3733(5123, -39, class348_sub49.anInt7197, class348_sub49.aByteArray7154, false))
-                aClass119_Sub2_3011 = Class119_Sub2(aHa_Sub2_3000, 5123, null, 1)
+                aClass119_Sub2_3011 = NativeVertexBuffer(aHa_Sub2_3000, 5123, null, 1)
             }
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("sm.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (softwareSpriteRaster != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))

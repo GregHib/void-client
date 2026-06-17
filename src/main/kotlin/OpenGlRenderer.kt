@@ -403,7 +403,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (i != 2) method3781((-13).toByte(), 54)
             anInt7530++
             if (aBoolean7873 && (!bool || aBoolean7869)) return Class135_Sub1(this, i_8_, `is`, i_9_, bool)
-            return Class119_Sub1(this, i_8_, `is`, i_9_)
+            return NativeIndexBuffer(this, i_8_, `is`, i_9_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.VB(" + i + ',' + bool + ',' + i_8_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_9_ + ')'))
         }
@@ -433,7 +433,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7565++
             if (i_14_ >= -2) method3644()
             if (aBoolean7873 && (!bool || aBoolean7869)) return Class135_Sub2(this, i, `is`, i_15_, bool)
-            return Class119_Sub2(this, i, `is`, i_15_)
+            return NativeVertexBuffer(this, i, `is`, i_15_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.G(" + i + ',' + i_14_ + ',' + i_15_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ')'))
         }
@@ -527,7 +527,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (i != 8448) this.aClass64_Sub3_7844 = null
             anInt7605++
             if (aBoolean7873 && (!bool || aBoolean7869)) return Class135_Sub1(this, i_35_, buffer, i_36_, bool)
-            return Class119_Sub1(this, i_35_, buffer)
+            return NativeIndexBuffer(this, i_35_, buffer)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.OG(" + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + bool + ',' + i_35_ + ',' + i_36_ + ')'))
         }

@@ -1,6 +1,6 @@
 import jaclib.memory.Buffer
 
-open class Class119 {
+open class NativeBufferWrapper {
     var aBuffer1792: Buffer?
     private val aHa_Sub2_1793: OpenGlRenderer?
 

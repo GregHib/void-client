@@ -52,7 +52,7 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
 
         fun method3281(i: Byte, var_renderer: Renderer) {
             if (Class5_Sub1.aBoolean8335) method2288(false, var_renderer)
-            else Class119_Sub1.method1077(var_renderer, (-123).toByte())
+            else NativeIndexBuffer.method1077(var_renderer, (-123).toByte())
             anInt9709++
             if (i < 29) method3280(81)
         }

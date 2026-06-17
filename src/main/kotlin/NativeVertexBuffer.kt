@@ -1,7 +1,7 @@
 /* Class119_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class119_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, `is`: ByteArray?, i_7_: Int) : Class119(var_ha_Sub2, `is`, i_7_), Interface8 {
+class NativeVertexBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, `is`: ByteArray?, i_7_: Int) : NativeBufferWrapper(var_ha_Sub2, `is`, i_7_), Interface8 {
     private var anInt4827 = 0
     override fun method33(i: Int): Int {
         if (i != -23923) return 92

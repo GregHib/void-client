@@ -11,7 +11,7 @@ class Class348_Sub20 internal constructor(private val aS_Sub2_6839: OpenGlTerrai
     var aFloat6832: Float
     private var aNativeHeapBuffer6840: NativeHeapBuffer? = null
     private val anIntArray6842: IntArray
-    private val aClass119_Sub2_6843: Class119_Sub2
+    private val aClass119_Sub2_6843: NativeVertexBuffer
     private var aClass123_6844: Class123? = null
     private var aStream6846: Stream? = null
 
@@ -172,7 +172,7 @@ class Class348_Sub20 internal constructor(private val aS_Sub2_6839: OpenGlTerrai
         anIntArray6842 = IntArray((aS_Sub2_6839.anInt4587 * aS_Sub2_6839.anInt4590))
         this.aFloat6832 = i_38_.toFloat()
         aHa_Sub2_6831 = aS_Sub2_6839.aHa_Sub2_8272
-        aClass119_Sub2_6843 = Class119_Sub2(aHa_Sub2_6831, 5123, null, 1)
+        aClass119_Sub2_6843 = NativeVertexBuffer(aHa_Sub2_6831, 5123, null, 1)
     }
 
     companion object {

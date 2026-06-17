@@ -3420,9 +3420,9 @@ class Class64_Sub3 : Class64 {
                 }
                 anIntArray5626!![i_811_] = anInt5537
                 Class258_Sub2.aLongArray8530 = null
-                aShortArray5564 = Class119_Sub2.method1078(aShortArray5564, anInt5529, 114)
-                aShortArray5583 = Class119_Sub2.method1078(aShortArray5583, anInt5529, 126)
-                aShortArray5576 = Class119_Sub2.method1078(aShortArray5576, anInt5529, 100)
+                aShortArray5564 = NativeVertexBuffer.method1078(aShortArray5564, anInt5529, 114)
+                aShortArray5583 = NativeVertexBuffer.method1078(aShortArray5583, anInt5529, 126)
+                aShortArray5576 = NativeVertexBuffer.method1078(aShortArray5576, anInt5529, 100)
                 aByteArray5594 = Class93.method863(anInt5529, 113.toByte(), aByteArray5594)
                 aFloatArray5552 = Class231.method1638(anInt5529, aFloatArray5552!!, -1)
                 aFloatArray5571 = Class231.method1638(anInt5529, aFloatArray5571!!, -1)

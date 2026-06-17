@@ -1,5 +1,5 @@
 import CollisionMapRegion.Companion.method1045
-import Class119_Sub2.Companion.method1079
+import NativeVertexBuffer.Companion.method1079
 import Class139.Companion.method1166
 import Class149.method1201
 import Class16.method258
