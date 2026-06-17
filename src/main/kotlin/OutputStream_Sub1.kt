@@ -109,8 +109,8 @@ class OutputStream_Sub1 : OutputStream() {
                 }
                 Class369_Sub1.method3570(false)
                 if (i >= 80) {
-                    Class157.aAbstractCameraTransform_2123!!.method903(Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -Class348_Sub42_Sub19.anInt9701 and 0x3fff, -Class5.anInt4638 and 0x3fff, 0x3fff and -Class338.anInt4186)
-                    Class348_Sub8.aRenderer6654!!.method3638(Class157.aAbstractCameraTransform_2123)
+                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -Class348_Sub42_Sub19.anInt9701 and 0x3fff, -Class5.anInt4638 and 0x3fff, 0x3fff and -Class338.anInt4186)
+                    Class348_Sub8.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                     Class348_Sub8.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 shl 1, Class97.anInt1550 shl 1)
                     Class30.method319(Class97.anInt1550 shl 1, Class97.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
                     Class348_Sub42_Sub20.method3282(0x3fff and -(Class348_Sub42_Sub19.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 and 0x3fff, Class286_Sub4.anInt6246, -Class338.anInt4186 and 0x3fff)

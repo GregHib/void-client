@@ -140,7 +140,7 @@ class Class341 {
                         }
                     }
                     Class50_Sub1.aAbstractCameraTransform_5209 = null
-                    Class157.aAbstractCameraTransform_2123 = null
+                    SettingsCrcWriter.aAbstractCameraTransform_2123 = null
                     Class348_Sub8.aRenderer6654!!.method3635(64.toByte())
                     Class348_Sub8.aRenderer6654 = null
                 }

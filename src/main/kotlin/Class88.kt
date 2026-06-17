@@ -232,7 +232,7 @@ class Class88 {
                             class348_sub49_sub2.writeByte(false, if (Gl2dTexture.aString8605 == null) 0 else 1)
                             if (Gl2dTexture.aString8605 != null) class348_sub49_sub2.writeString((-5).toByte(), (Gl2dTexture.aString8605!!))
                             class348_sub49_sub2.writeByte(false, (if (!method3131(50.toByte(), "jagtheora")) 0 else 1))
-                            Class157.method1244(64, class348_sub49_sub2)
+                            SettingsCrcWriter.method1244(64, class348_sub49_sub2)
                             class348_sub49_sub2.method3350(i_7_, true, `is`, (class348_sub49_sub2.anInt7197))
                             class348_sub49_sub2.method3383(1809639944, -i_6_ + (class348_sub49_sub2.anInt7197))
                         } else {
@@ -248,7 +248,7 @@ class Class88 {
                             method4002(class348_sub49_sub2, 55.toByte())
                             class348_sub49_sub2.writeString((-5).toByte(), Class239_Sub12.aString5966!!)
                             class348_sub49_sub2.writeInt(106.toByte(), Class202.anInt2670)
-                            Class157.method1244(92, class348_sub49_sub2)
+                            SettingsCrcWriter.method1244(92, class348_sub49_sub2)
                             class348_sub49_sub2.method3350(i_5_, true, `is`, (class348_sub49_sub2.anInt7197))
                             class348_sub49_sub2.method3383(1809639944, -i_4_ + (class348_sub49_sub2.anInt7197))
                         }

@@ -461,8 +461,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     i_64_ += (i_62_ * (class46.anInt688) shr 9)
                                                     i_65_ += (i_63_ * (class46.anInt799) shr 9)
                                                 }
-                                                Class157.aAbstractCameraTransform_2123!!.method910()
-                                                Class348_Sub8.aRenderer6654!!.method3638(Class157.aAbstractCameraTransform_2123)
+                                                SettingsCrcWriter.aAbstractCameraTransform_2123!!.method910()
+                                                Class348_Sub8.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                                                 Class348_Sub8.aRenderer6654!!.DA(i_64_, i_65_, i_62_, i_63_)
                                                 Class348_Sub8.aRenderer6654!!.ya()
                                                 if (class46.aBoolean754) Class348_Sub8.aRenderer6654!!.C(false)

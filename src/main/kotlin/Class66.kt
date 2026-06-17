@@ -4258,7 +4258,7 @@ object Class66 {
                     if (Class50.aString863 == null) {
                         aStringArray1152!![anInt1170++] = ""
                         return
-                    } else aStringArray1152!![anInt1170++] = Class157.method1245(Class50.aString863!!, false)
+                    } else aStringArray1152!![anInt1170++] = SettingsCrcWriter.method1245(Class50.aString863!!, false)
                     return
                 }
                 if (i == 3612) {

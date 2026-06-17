@@ -4,7 +4,7 @@ import Class239_Sub16.Companion.method1788
 /* Class157 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class157 {
+object SettingsCrcWriter {
     var anInt2121: Int = 0
     var anInt2122: Int = 0
     @JvmField

@@ -1637,7 +1637,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub5.anInt6629 = 0
             Class367_Sub8.anInt7359 = 0
             Class367_Sub1.anInt7282 = 0
-            Class157.anInt2122 = 0
+            SettingsCrcWriter.anInt2122 = 0
             Class239_Sub17.anInt6020 = 0
             Class348_Sub9.anInt6672 = 0
             Class348_Sub15.anInt6779 = 0
@@ -2417,7 +2417,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class34.anInt467 = 0
             Class348_Sub49.anInt7202 = 0
             OpenGlRenderer.anInt7547 = 0
-            Class157.anInt2121 = 0
+            SettingsCrcWriter.anInt2121 = 0
             CompositeNpcModelBuilder.anInt2096 = 0
             Class346_Sub1.anInt6525 = 0
             Class58.anInt1062 = 0
