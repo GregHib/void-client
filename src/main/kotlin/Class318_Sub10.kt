@@ -58,7 +58,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
     }
 
     private fun method2531(i: Int, bool: Boolean) {
-        Class152.aClass243_2077!!.method1869(-88, this)
+        GzipDecompressor.aClass243_2077!!.method1869(-88, this)
         aLong6472 = i.toLong()
         aLong6471 = i.toLong()
         aBoolean6484 = true

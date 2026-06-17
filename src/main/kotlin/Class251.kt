@@ -53,7 +53,7 @@ class Class251 {
         @JvmStatic
         fun method1916(i: Int, class46: Class46) {
             anInt3229++
-            if (class46.anInt794 == Class58.anInt1064) Class152.aBooleanArray2076!![class46.anInt760] = true
+            if (class46.anInt794 == Class58.anInt1064) GzipDecompressor.aBooleanArray2076!![class46.anInt760] = true
             if (i != -9343) method1914(-107, 120)
         }
     }

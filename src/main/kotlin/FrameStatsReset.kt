@@ -424,7 +424,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub2_Sub1.anInt10188 = 0
             DelegatingRenderCanvas.anInt66 = 0
             Class237_Sub1.anInt5818 = 0
-            Class152.anInt2074 = 0
+            GzipDecompressor.anInt2074 = 0
             Class348_Sub1_Sub2.anInt8812 = 0
             Class348_Sub40_Sub23.anInt9316 = 0
             OpenGlRenderer.anInt7674 = 0
@@ -3453,7 +3453,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             AnimatedModelRenderer.anInt8401 = 0
             Class202.anInt2660 = 0
             NativeRenderer.anInt7889 = 0
-            Class152.anInt2070 = 0
+            GzipDecompressor.anInt2070 = 0
             Class348_Sub49.anInt7148 = 0
             OpenGlRenderer.anInt7696 = 0
             Class348_Sub31.anInt6915 = 0
@@ -3860,7 +3860,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9825 = 0
             Class64_Sub2.anInt5451 = 0
             GlRectangleTexture.anInt8643 = 0
-            Class152.anInt2078 = 0
+            GzipDecompressor.anInt2078 = 0
             NativeRenderer.anInt8022 = 0
             NativeRenderer.anInt7915 = 0
             Class368.anInt4510 = 0
@@ -3940,7 +3940,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class59.anInt1070 = 0
             Class348_Sub49.anInt7183 = 0
             Class55.anInt1004 = 0
-            Class152.anInt2073 = 0
+            GzipDecompressor.anInt2073 = 0
             Class64_Sub3.anInt5568 = 0
             Class42.anInt563 = 0
             Class318_Sub1_Sub1.anInt8721 = 0
@@ -4164,7 +4164,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
 
             Class363.method3515(-45)
             Class238_Sub1.aBoolean5840 = true
-            for (j1 in 0..99) Class152.aBooleanArray2076!![j1] = true
+            for (j1 in 0..99) GzipDecompressor.aBooleanArray2076!![j1] = true
 
             for (k1 in 0..5) Class239_Sub26.aClass54Array6114!![k1] = Class54()
 

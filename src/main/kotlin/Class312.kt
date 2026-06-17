@@ -85,7 +85,7 @@ class Class312 {
                 Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
                 Class348_Sub40_Sub21.anInt9282 = 1
                 Class348_Sub49.method3379(2, 10)
-                for (i_2_ in 0..99) Class152.aBooleanArray2076!![i_2_] = true
+                for (i_2_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_2_] = true
                 method2145(-24498)
                 Class239_Sub4.aClass348_Sub26_5881 = null
                 FloatCameraTransform.aLong5745 = 0L

@@ -84,10 +84,10 @@ class Class250 : Runnable {
             Class367_Sub11.aClass32_7415 = Class32(8)
             anInt3219++
             Class318_Sub7.anInt6450 = 0
-            var class318_sub10 = Class152.aClass243_2077!!.method1872(8) as Class318_Sub10?
+            var class318_sub10 = GzipDecompressor.aClass243_2077!!.method1872(8) as Class318_Sub10?
             while (class318_sub10 != null) {
                 class318_sub10.method2530()
-                class318_sub10 = Class152.aClass243_2077!!.method1878((-115).toByte()) as Class318_Sub10?
+                class318_sub10 = GzipDecompressor.aClass243_2077!!.method1878((-115).toByte()) as Class318_Sub10?
             }
         }
     }

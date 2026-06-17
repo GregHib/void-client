@@ -125,7 +125,7 @@ class Class354 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_renderConf
         fun method3466(i: Int) {
             val i_2_ = 22 / ((-2 - i) / 52)
             anInt4352++
-            for (i_3_ in 0..99) Class152.aBooleanArray2076!![i_3_] = true
+            for (i_3_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_3_] = true
         }
 
         @JvmStatic

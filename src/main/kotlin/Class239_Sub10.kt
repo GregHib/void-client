@@ -80,9 +80,9 @@ class Class239_Sub10 : Class239 {
             if (RenderNode.anInt9721 != -1) Class75_Sub1.method769(RenderNode.anInt9721, 118.toByte())
             var i_6_ = 0
             while (Class348_Sub38.anInt7008 > i_6_) {
-                if (Class152.aBooleanArray2076!![i_6_]) Class268.aBooleanArray3438!![i_6_] = true
-                Class175.aBooleanArray2326!![i_6_] = Class152.aBooleanArray2076!![i_6_]
-                Class152.aBooleanArray2076!![i_6_] = false
+                if (GzipDecompressor.aBooleanArray2076!![i_6_]) Class268.aBooleanArray3438!![i_6_] = true
+                Class175.aBooleanArray2326!![i_6_] = GzipDecompressor.aBooleanArray2076!![i_6_]
+                GzipDecompressor.aBooleanArray2076!![i_6_] = false
                 i_6_++
             }
             Class58.anInt1064 = Class367_Sub11.anInt7396

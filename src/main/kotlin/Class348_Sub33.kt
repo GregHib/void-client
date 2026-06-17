@@ -48,7 +48,7 @@ class Class348_Sub33 internal constructor(@JvmField var anInt6958: Int, `is`: By
     }
 
     companion object {
-        var aClass152_6955: Class152? = Class152()
+        var aGzipDecompressor_6955: GzipDecompressor? = GzipDecompressor()
         var anInt6956: Int = 0
         var anInt6961: Int = 0
         @JvmField
@@ -61,7 +61,7 @@ class Class348_Sub33 internal constructor(@JvmField var anInt6958: Int, `is`: By
 
         @JvmStatic
         fun method3024(i: Int) {
-            aClass152_6955 = null
+            aGzipDecompressor_6955 = null
             if (i >= -74) anInt6967 = 12
             aByteArrayArrayArray6962 = null
         }

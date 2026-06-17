@@ -114,10 +114,10 @@ class Class243 {
         fun method1877(var_renderer: Renderer?, i: Int) {
             anInt3164++
             if (i >= -20) method1877(null, -112)
-            var class318_sub10 = Class152.aClass243_2077!!.method1872(8) as Class318_Sub10?
+            var class318_sub10 = GzipDecompressor.aClass243_2077!!.method1872(8) as Class318_Sub10?
             while (class318_sub10 != null) {
                 if (class318_sub10.aBoolean6482) class318_sub10.method2528(var_renderer)
-                class318_sub10 = Class152.aClass243_2077!!.method1878(124.toByte()) as Class318_Sub10?
+                class318_sub10 = GzipDecompressor.aClass243_2077!!.method1878(124.toByte()) as Class318_Sub10?
             }
         }
 

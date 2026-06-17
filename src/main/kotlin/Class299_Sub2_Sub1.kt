@@ -73,8 +73,8 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: NativeR
         fun method2271(i: Int) {
             anInt8710++
             if (!Class55_Sub1.aBoolean5265) {
-                Class152.method1217(0, Class65.aClass357ArrayArrayArray1148!!)
-                if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) Class152.method1217(0, (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!!))
+                GzipDecompressor.method1217(0, Class65.aClass357ArrayArrayArray1148!!)
+                if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) GzipDecompressor.method1217(0, (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!!))
                 Class55_Sub1.aBoolean5265 = true
             }
         }

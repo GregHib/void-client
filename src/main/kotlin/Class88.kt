@@ -180,7 +180,7 @@ class Class88 {
                             GlRectangleTexture.method254(i_3_, (-113).toByte())
                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                             Class348_Sub40_Sub8.aClass238_9165 = null
-                            Class152.method1215(3.toByte())
+                            GzipDecompressor.method1215(3.toByte())
                             return
                         }
                         Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
@@ -284,7 +284,7 @@ class Class88 {
                                             GlRectangleTexture.method254(i_11_, (-87).toByte())
                                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                                             Class348_Sub40_Sub8.aClass238_9165 = null
-                                            Class152.method1215(3.toByte())
+                                            GzipDecompressor.method1215(3.toByte())
                                             return
                                         }
                                         return
@@ -313,7 +313,7 @@ class Class88 {
                             GlRectangleTexture.method254(21, (-95).toByte())
                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                             Class348_Sub40_Sub8.aClass238_9165 = null
-                            Class152.method1215(3.toByte())
+                            GzipDecompressor.method1215(3.toByte())
                         }
                     } else if (Class225.anInt2955 == 13) {
                         if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 102)) {
@@ -323,7 +323,7 @@ class Class88 {
                             GlRectangleTexture.method254(29, (-97).toByte())
                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                             Class348_Sub40_Sub8.aClass238_9165 = null
-                            Class152.method1215(3.toByte())
+                            GzipDecompressor.method1215(3.toByte())
                         }
                     } else if (Class225.anInt2955 == 8) {
                         if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 107)) {
@@ -484,7 +484,7 @@ class Class88 {
                     if (Class318_Sub1_Sub1_Sub2.anInt9971 >= 3) {
                         Class225.anInt2955 = 0
                         GlRectangleTexture.method254(-4, (-87).toByte())
-                        Class152.method1215(3.toByte())
+                        GzipDecompressor.method1215(3.toByte())
                     } else {
                         if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285!!.method1259(0)
                         else Class3.aClass161_125!!.method1259(0)

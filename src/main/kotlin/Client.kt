@@ -898,7 +898,7 @@ class Client : GameAppletFrame() {
         method1619(108.toByte())
         Class27.method316((-94).toByte())
         method2199(63.toByte())
-        Class152.method1216((-97).toByte())
+        GzipDecompressor.method1216((-97).toByte())
         method2286(114)
         method2645(i + -16777324)
         method2331(true)

@@ -1553,7 +1553,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub7.method2772(i_202_, 123.toByte())
                 method1713(false, 520)
                 Class66.method703(RenderNode.anInt9721)
-                for (i_203_ in 0..99) Class152.aBooleanArray2076!![i_203_] = true
+                for (i_203_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_203_] = true
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

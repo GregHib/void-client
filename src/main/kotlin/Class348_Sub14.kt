@@ -39,8 +39,8 @@ class Class348_Sub14 : Class348 {
         fun method2804(i: Byte): Boolean {
             anInt6765++
             try {
-                val class152 = Class152()
-                val `is` = class152.method1214(9, Class348_Sub42_Sub14.aByteArray9622!!)
+                val gzipDecompressor = GzipDecompressor()
+                val `is` = gzipDecompressor.method1214(9, Class348_Sub42_Sub14.aByteArray9622!!)
                 val i_0_ = 19 % ((19 - i) / 43)
                 method1969(`is`, -5901)
                 return true

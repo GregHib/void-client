@@ -247,8 +247,8 @@ class Class348_Sub41 : Class348() {
                 val is_40_ = ByteArray(i_39_)
                 if (i_37_ == 1) method1547(is_40_, i_39_, `is`, i_38_, 9)
                 else {
-                    synchronized(Class348_Sub33.Companion.aClass152_6955!!) {
-                        Class348_Sub33.Companion.aClass152_6955!!.method1218(is_40_, 29123, class348_sub49)
+                    synchronized(Class348_Sub33.Companion.aGzipDecompressor_6955!!) {
+                        Class348_Sub33.Companion.aGzipDecompressor_6955!!.method1218(is_40_, 29123, class348_sub49)
                     }
                 }
                 return is_40_

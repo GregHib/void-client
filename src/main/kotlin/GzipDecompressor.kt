@@ -1,6 +1,9 @@
 import java.util.zip.Inflater
 
-class Class152 private constructor(i: Int, i_6_: Int, i_7_: Int) {
+/*
+ * Class152
+ */
+class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
     private var anInflater2072: Inflater? = null
     fun method1214(i: Int, `is`: ByteArray): ByteArray {
         anInt2074++
