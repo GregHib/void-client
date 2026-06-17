@@ -122,7 +122,7 @@ import ModelDefinitionCache.Companion.method1604
 import HslColorConfig.Companion.method294
 import NpcDefinition.Companion.method1619
 import TextureDefinitionCache.Companion.method1624
-import Class227.Companion.method1627
+import BoxedIntHolder.Companion.method1627
 import Class228.method1628
 import Class229.Companion.method1632
 import Class230.Companion.method1635

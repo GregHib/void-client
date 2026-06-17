@@ -29,7 +29,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
         @JvmField
         var anInt149: Int = 0
         @JvmField
-        var aClass227_151: Class227? = Class227(2)
+        var aBoxedIntHolder_151: BoxedIntHolder? = BoxedIntHolder(2)
         @JvmField
         var anInt152: Int = 0
         @JvmField
@@ -40,7 +40,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
         fun method203(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             anInt149++
             var i_4_ = 0
-            if (i > -92) aClass227_151 = null
+            if (i > -92) aBoxedIntHolder_151 = null
             var i_5_ = i_3_
             var i_6_ = -i_3_
             var i_7_ = -1
@@ -147,7 +147,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     anInt153++
                     var i_35_ = 0
                     var i_36_ = 0
-                    if (i < 113) aClass227_151 = null
+                    if (i < 113) aBoxedIntHolder_151 = null
                     if (Class59_Sub1.aBoolean5300) {
                         i_35_ = NativeTerrainTile.method4008((-127).toByte())
                         i_36_ = SceneTilePlaneManager.method260(false)
@@ -192,7 +192,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
         @JvmStatic
         fun method208(i: Byte) {
             if (i.toInt() != 0) method204(29)
-            aClass227_151 = null
+            aBoxedIntHolder_151 = null
         }
     }
 }

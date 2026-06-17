@@ -1094,7 +1094,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class95.aIntRange_1540 == Class348_Sub3.aIntRange_6584) {
-                Class57.aClass227_1055 = Class38.method360((-57).toByte(), Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
+                Class57.aBoxedIntHolder_1055 = Class38.method360((-57).toByte(), Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

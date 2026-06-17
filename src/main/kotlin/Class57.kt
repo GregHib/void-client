@@ -22,7 +22,7 @@ class Class57 {
         @JvmField
         var anInt1053: Int = 0
         @JvmField
-        var aClass227_1055: Class227? = null
+        var aBoxedIntHolder_1055: BoxedIntHolder? = null
 
         @JvmStatic
         fun method529(i: Int, bool: Boolean) {
@@ -35,7 +35,7 @@ class Class57 {
         @JvmStatic
         fun method530(i: Int) {
             aWidgetDefinitionArray1048s = null
-            aClass227_1055 = null
+            aBoxedIntHolder_1055 = null
             aAudioResampler_1050 = null
             aClass251_1051 = null
             if (i != 14) aClass251_1051 = null

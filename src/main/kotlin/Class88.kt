@@ -107,9 +107,9 @@ class Class88 {
         var anInt1502: Int = 0
         @JvmField
         var anInt1504: Int = 0
-        fun method841(i: Int): Array<Class227?> {
+        fun method841(i: Int): Array<BoxedIntHolder?> {
             anInt1504++
-            return (arrayOf<Class227?>(SpriteSheetCache.aClass227_2568, MinimapRenderer.aClass227_1591, Class6.aClass227_151))
+            return (arrayOf<BoxedIntHolder?>(SpriteSheetCache.aBoxedIntHolder_2568, MinimapRenderer.aBoxedIntHolder_1591, Class6.aBoxedIntHolder_151))
         }
 
         @JvmStatic

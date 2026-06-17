@@ -81,7 +81,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         var anInt2560: Int = 0
         var anInt2566: Int = 0
         var anInt2567: Int = 0
-        var aClass227_2568: Class227? = Class227(0)
+        var aBoxedIntHolder_2568: BoxedIntHolder? = BoxedIntHolder(0)
         var anInt2569: Int = 0
         @JvmField
         var aClass304_2571: Class304? = Class304(2)
@@ -137,8 +137,8 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         @JvmStatic
         fun method1431(i: Int) {
             aClass304_2571 = null
-            aClass227_2568 = null
-            if (i != 0) aClass227_2568 = null
+            aBoxedIntHolder_2568 = null
+            if (i != 0) aBoxedIntHolder_2568 = null
         }
     }
 }

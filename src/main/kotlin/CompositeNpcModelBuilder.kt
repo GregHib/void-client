@@ -69,7 +69,7 @@ class CompositeNpcModelBuilder {
                             var i_22_ = class17_18_.anIntArray237[i_20_]
                             Class295.aClass348_Sub42_Sub17Array3753!![i_17_] = class87.method839(i_22_ ushr 16, 3)
                             i_22_ = i_22_ and 0xffff
-                            Class227.anIntArray2967!![i_17_] = i_22_
+                            BoxedIntHolder.anIntArray2967!![i_17_] = i_22_
                             if (Class295.aClass348_Sub42_Sub17Array3753!![i_17_] != null) {
                                 bool_13_ = bool_13_ or Class295.aClass348_Sub42_Sub17Array3753!![i_17_]!!.method3272(i_22_, 0)
                                 bool_12_ = bool_12_ or Class295.aClass348_Sub42_Sub17Array3753!![i_17_]!!.method3271(i_22_, 14)
@@ -79,7 +79,7 @@ class CompositeNpcModelBuilder {
                             MinimapRenderer.anIntArray1583!![i_17_] = 0
                             Class50_Sub3.anIntArray5241!![i_17_] = 0
                             Class295.aClass348_Sub42_Sub17Array3753!![i_17_] = null
-                            Class227.anIntArray2967!![i_17_] = -1
+                            BoxedIntHolder.anIntArray2967!![i_17_] = -1
                         }
                     }
                 }
@@ -245,7 +245,7 @@ class CompositeNpcModelBuilder {
             var i_55_ = 0
             var i_56_ = 1
             while ( /**/i_16_ > i_55_) {
-                if (Class95.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + Class50_Sub3.anIntArray5241!![i_55_], null, i_56_, ScanlineRasterFiller.anIntArray2471!![i_55_], Class227.anIntArray2967!![i_55_], Class295.aClass348_Sub42_Sub17Array3753!![i_55_], 0, Class95.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRenderer.anIntArray1583!![i_55_])
+                if (Class95.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + Class50_Sub3.anIntArray5241!![i_55_], null, i_56_, ScanlineRasterFiller.anIntArray2471!![i_55_], BoxedIntHolder.anIntArray2967!![i_55_], Class295.aClass348_Sub42_Sub17Array3753!![i_55_], 0, Class95.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRenderer.anIntArray1583!![i_55_])
                 i_56_ = i_56_ shl 1
                 i_55_++
             }

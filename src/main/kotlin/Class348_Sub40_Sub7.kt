@@ -298,7 +298,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 if (GlowPostProcessor.aBoolean2514) {
                                                     Class240.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
-                                                    Class240.aClass324_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + Class227.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
+                                                    Class240.aClass324_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + BoxedIntHolder.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
                                                     MapLabelMenuEntry.method1042((-123).toByte())
                                                     i_38_ += 12
                                                 }

@@ -199,10 +199,10 @@ class OutputStream_Sub1 : OutputStream() {
                 Class355.anObject4366 = GrowableStringList.method1357(`is`, false, 111.toByte())
             }
             anInt92++
-            if (Class227.anObject2969 == null) {
+            if (BoxedIntHolder.anObject2969 == null) {
                 val class59_sub2_sub2 = Class59_Sub2_Sub2()
                 val `is` = class59_sub2_sub2.method571(128, (-38).toByte(), 16, 128)
-                Class227.anObject2969 = GrowableStringList.method1357(`is`, false, 106.toByte())
+                BoxedIntHolder.anObject2969 = GrowableStringList.method1357(`is`, false, 106.toByte())
             }
         }
 

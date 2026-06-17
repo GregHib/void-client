@@ -72,7 +72,7 @@ class Class38 {
         var anInt513: Int = 100
 
         @JvmStatic
-        fun method360(i: Byte, i_0_: Int): Class227? {
+        fun method360(i: Byte, i_0_: Int): BoxedIntHolder? {
             anInt505++
             if (i.toInt() != -57) method363(97)
             val class227s = Class88.method841(i + -70)

@@ -2439,7 +2439,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub3.anInt7307 = 0
             Class318_Sub1_Sub3_Sub2.anInt10043 = 0
             GameDisplayManager.anInt2839 = 0
-            Class227.anInt2966 = 0
+            BoxedIntHolder.anInt2966 = 0
             Class318_Sub1_Sub4_Sub1.anInt10063 = 0
             Class5.anInt4627 = 0
             ScreenAnchorAlignment.anInt2879 = 0

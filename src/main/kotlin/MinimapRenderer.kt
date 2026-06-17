@@ -91,14 +91,14 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         var anInt1589: Int = 0
         @JvmField
         var anInt1590: Int = 0
-        var aClass227_1591: Class227? = Class227(1)
+        var aBoxedIntHolder_1591: BoxedIntHolder? = BoxedIntHolder(1)
         @JvmStatic
         fun method886(i: Int) {
             aClass356_1585 = null
             aClass78Array1579 = null
             if (i != 16) aClass78Array1579 = null
             anIntArray1583 = null
-            aClass227_1591 = null
+            aBoxedIntHolder_1591 = null
         }
 
         @JvmStatic

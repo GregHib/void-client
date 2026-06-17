@@ -1,7 +1,7 @@
 /* Class227 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class227 internal constructor(var anInt2970: Int) {
+class BoxedIntHolder internal constructor(var anInt2970: Int) {
     override fun toString(): String {
         anInt2966++
         throw IllegalStateException()
