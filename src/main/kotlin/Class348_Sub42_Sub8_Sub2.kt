@@ -219,7 +219,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub40_Sub23.anInt9313 = ResourceLoaderThread.anInt3918
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class330.aIntRange_4126) {
+            if (Class348_Sub3.aIntRange_6584 == VideoStreamDecoder.aIntRange_4126) {
                 method128(Class348_Sub16_Sub1.aClass74_8853, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true

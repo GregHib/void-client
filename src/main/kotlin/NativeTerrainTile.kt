@@ -16,7 +16,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
     private var anInt8303 = 0
     private var aFloat8305 = -3.4028235E38f
     private var aFloat8306 = 3.4028235E38f
-    private var aClass330_8307: Class330? = null
+    private var aVideoStreamDecoder_8307: VideoStreamDecoder? = null
     private var anIntArrayArrayArray8308: Array<Array<IntArray?>?>?
     private val anInt8311: Int
     private var aClass348_Sub3ArrayArrayArray8312: Array<Array<Array<Class348_Sub3?>?>?>?
@@ -84,10 +84,10 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
 
     override fun wa(var_renderNode: RenderNode?, i: Int, i_33_: Int, i_34_: Int, i_35_: Int, bool: Boolean) {
         anInt8315++
-        if (aClass330_8307 != null && var_renderNode != null) {
+        if (aVideoStreamDecoder_8307 != null && var_renderNode != null) {
             val i_36_ = (i + -(i_33_ * (this.aHa_Sub3_8322!!.anInt8133) shr 8) shr this.aHa_Sub3_8322!!.anInt8107)
             val i_37_ = (i_34_ - ((this.aHa_Sub3_8322!!.anInt8114) * i_33_ shr 8) shr this.aHa_Sub3_8322!!.anInt8107)
-            aClass330_8307!!.method2629(i_37_, var_renderNode, 1, i_36_)
+            aVideoStreamDecoder_8307!!.method2629(i_37_, var_renderNode, 1, i_36_)
         }
     }
 
@@ -97,15 +97,15 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
 
     override fun CA(var_renderNode: RenderNode?, i: Int, i_39_: Int, i_40_: Int, i_41_: Int, bool: Boolean) {
         anInt8319++
-        if (aClass330_8307 != null && var_renderNode != null) {
+        if (aVideoStreamDecoder_8307 != null && var_renderNode != null) {
             val i_42_ = (i + -((this.aHa_Sub3_8322!!.anInt8133 * i_39_) shr 8) shr this.aHa_Sub3_8322!!.anInt8107)
             val i_43_ = (-((this.aHa_Sub3_8322!!.anInt8114 * i_39_) shr 8) + i_40_ shr this.aHa_Sub3_8322!!.anInt8107)
-            aClass330_8307!!.method2633(287, i_42_, var_renderNode, i_43_)
+            aVideoStreamDecoder_8307!!.method2633(287, i_42_, var_renderNode, i_43_)
         }
     }
 
     override fun YA() {
-        if (anInt8329 <= 0) aClass330_8307 = null
+        if (anInt8329 <= 0) aVideoStreamDecoder_8307 = null
         else {
             val `is` = Array<ByteArray?>(1 + this.anInt4587) { ByteArray(this.anInt4590 + 1) }
             run {
@@ -381,7 +381,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 i_127_++
             }
             Class339.method2669(aClass348_Sub3Array8328 as? Array<Any?>, ls, -101)
-            if (aClass330_8307 != null) aClass330_8307!!.method2632(128)
+            if (aVideoStreamDecoder_8307 != null) aVideoStreamDecoder_8307!!.method2632(128)
         }
         anInt8298++
         anIntArrayArrayArray8308 = null
@@ -400,10 +400,10 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
 
     override fun method3989(var_renderNode: RenderNode?, i: Int, i_128_: Int, i_129_: Int, i_130_: Int, bool: Boolean): Boolean {
         anInt8316++
-        if (aClass330_8307 == null || var_renderNode == null) return false
+        if (aVideoStreamDecoder_8307 == null || var_renderNode == null) return false
         val i_131_ = (-(this.aHa_Sub3_8322!!.anInt8133 * i_128_ shr 8) + i shr this.aHa_Sub3_8322!!.anInt8107)
         val i_132_ = (i_129_ + -((this.aHa_Sub3_8322!!.anInt8114 * i_128_) shr 8) shr this.aHa_Sub3_8322!!.anInt8107)
-        return aClass330_8307!!.method2628(i_131_, 69.toByte(), var_renderNode, i_132_)
+        return aVideoStreamDecoder_8307!!.method2628(i_131_, 69.toByte(), var_renderNode, i_132_)
     }
 
     override fun ka(i: Int, i_133_: Int, i_134_: Int) {
@@ -459,7 +459,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 aFloat8305++
                 aClass356_8325 = Class356(128)
                 if ((this.anInt8294 and 0x10) == 0) break
-                aClass330_8307 = Class330(this.aHa_Sub3_8322, this)
+                aVideoStreamDecoder_8307 = VideoStreamDecoder(this.aHa_Sub3_8322, this)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("qm.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_139_ + ',' + i_140_ + ',' + i_141_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_142_ != null) "{...}" else "null") + ',' + i_143_ + ')'))
             }
@@ -528,11 +528,11 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     this.aHa_Sub3_8322!!.method3850(90.toByte(), null)
                     this.aHa_Sub3_8322!!.L(i_165_, i_166_, this.aHa_Sub3_8322!!.anInt8105)
                 }
-                if (aClass330_8307 != null) {
+                if (aVideoStreamDecoder_8307 != null) {
                     this.aHa_Sub3_8322!!.method3925(-91, anInterface5_Impl1_8327, 0)
                     this.aHa_Sub3_8322!!.method3925(-71, anInterface5_Impl1_8326, 1)
                     this.aHa_Sub3_8322!!.method3862(0, this.aModelBatchBase_8324)
-                    aClass330_8307!!.method2630(128, i_153_, i, bool, bools, i_149_)
+                    aVideoStreamDecoder_8307!!.method2630(128, i_153_, i, bool, bools, i_149_)
                 }
             }
             anInt8297++

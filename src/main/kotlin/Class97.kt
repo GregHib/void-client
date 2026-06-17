@@ -4,7 +4,7 @@ import Class89.Companion.method849
 import NativeRenderer.Companion.method3936
 import jaclib.memory.Stream.Companion.c
 
-class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class330?, var_s_Sub3: NativeTerrainTile?, i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
+class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDecoder: VideoStreamDecoder?, var_s_Sub3: NativeTerrainTile?, i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
     private val anInt1544: Int
     private var anInt1546 = 0
     private var anInt1547 = 0
@@ -12,7 +12,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
     private var anInterface18_Impl3_1556: Interface18_Impl3? = null
     private var anInt1558 = -1
     private val anInt1559: Int
-    private val aClass330_1560: Class330?
+    private val aVideoStreamDecoder_1560: VideoStreamDecoder?
     private val aHa_Sub3_1561: NativeRenderer?
     @JvmField
     var aBoolean1562: Boolean = true
@@ -28,10 +28,10 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
         anInt1553++
         if (this.aBoolean1562) {
             this.aBoolean1562 = false
-            val `is` = aClass330_1560!!.aByteArray4112
+            val `is` = aVideoStreamDecoder_1560!!.aByteArray4112
             var i_8_ = 0
-            val i_9_ = aClass330_1560.anInt4113
-            var i_10_ = (aClass330_1560.anInt4113 * anInt1559 + anInt1544)
+            val i_9_ = aVideoStreamDecoder_1560.anInt4113
+            var i_10_ = (aVideoStreamDecoder_1560.anInt4113 * anInt1559 + anInt1544)
             for (i_11_ in -128..-1) {
                 i_8_ = (i_8_ shl 8) - i_8_
                 for (i_12_ in -128..-1) {
@@ -60,7 +60,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
                             } else is_14_[i_13_++] = 68.toByte()
                             i_10_++
                         }
-                        i_10_ += -128 + aClass330_1560.anInt4113
+                        i_10_ += -128 + aVideoStreamDecoder_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
                         anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((Class367_Sub11.aByteArray7394), 128, (Class348_Sub40_Sub38.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
@@ -81,7 +81,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
                             } else is_18_[i_13_++] = 1140850688
                             i_10_++
                         }
-                        i_10_ += -128 + aClass330_1560.anInt4113
+                        i_10_ += -128 + aVideoStreamDecoder_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
                         anInterface18_Impl3_1556 = aHa_Sub3_1561.method3839(128, 128, -15137, false, Class40.anIntArray543)
@@ -107,7 +107,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
             aHa_Sub3_1561 = var_ha_Sub3
             anInt1544 = i_26_
             anInt1559 = i_27_
-            aClass330_1560 = class330
+            aVideoStreamDecoder_1560 = videoStreamDecoder
             val i_28_ = 1 shl i_25_
             var i_29_ = 0
             val i_30_ = i shl i_25_
@@ -181,7 +181,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
                 this.anInt1563 = i_29_ / 3
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (class330 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + i_27_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("mc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (videoStreamDecoder != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + i_27_ + ')'))
         }
     }
 

@@ -69,7 +69,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SequencedWallEntity.anInt10154 = 0
             NodeDeque.anInt3332 = 0
             Class52.anInt4902 = 0
-            Class330.anInt4110 = 0
+            VideoStreamDecoder.anInt4110 = 0
             Class348_Sub5_Sub1.anInt8828 = 0
             OpenGlTerrainTile.anInt8262 = 0
             ModelGroundDecor.anInt10004 = 0
@@ -882,7 +882,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub14.anInt9641 = 0
             Class367_Sub11.anInt7401 = 0
             Class64_Sub2.anInt5403 = 0
-            Class330.anInt4114 = 0
+            VideoStreamDecoder.anInt4114 = 0
             GlTexture.anInt4855 = 0
             Class348_Sub49_Sub2.anInt9764 = 0
             TerrainTile.anInt4591 = 0
@@ -2117,7 +2117,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7169 = 0
             ProjectileConfigUtil.anInt390 = 0
             Class348_Sub42_Sub16_Sub1.anInt10455 = 0
-            Class330.anInt4120 = 0
+            VideoStreamDecoder.anInt4120 = 0
             Class373_Sub2.anInt7449 = 0
             IOException_Sub1.anInt87 = 0
             GlslEnvMaterialPass.anInt6271 = 0
@@ -3028,7 +3028,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7558 = 0
             Class348_Sub40_Sub7.anInt9142 = 0
             Class356.anInt4384 = 0
-            Class330.anInt4119 = 0
+            VideoStreamDecoder.anInt4119 = 0
             ConfigFlagUtil.anInt3233 = 0
             GameAppletFrame.anInt9 = 0
             VarpStore.anInt5072 = 0
@@ -3192,7 +3192,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class66.anInt1157 = 0
             ConfigFlagUtil.anInt3235 = 0
             MapElementDefinitionCache.anInt3984 = 0
-            Class330.anInt4115 = 0
+            VideoStreamDecoder.anInt4115 = 0
             Class42.anInt600 = 0
             WalkingTypeUtil.anInt3308 = 0
             ParticleAmountConfig.anInt2128 = 0
@@ -3469,7 +3469,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7981 = 0
             Class348_Sub49.anInt7173 = 0
             Class348_Sub40_Sub5.anInt9120 = 0
-            Class330.anInt4125 = 0
+            VideoStreamDecoder.anInt4125 = 0
             ModelDefinitionCache.anInt2870 = 0
             OpenGlRenderer.anInt7601 = 0
             Class64_Sub3.anInt5625 = 0

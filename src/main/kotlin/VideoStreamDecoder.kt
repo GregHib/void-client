@@ -2,7 +2,10 @@ import SceneEntityModel.Companion.method2503
 import Class99.method880
 import jaclib.memory.Stream.Companion.c
 
-class Class330 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: NativeTerrainTile?) {
+/*
+ * Class330
+ */
+class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: NativeTerrainTile?) {
     private val aHa_Sub3_4111: NativeRenderer?
     var aByteArray4112: ByteArray
     var anInt4113: Int = 0

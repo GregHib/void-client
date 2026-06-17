@@ -107,7 +107,7 @@ class Class48 {
                     HostPingThread.anInt2264 = 0
                     AnimatedModelRenderer.anInt8398 = 0
                     if (i >= 13) break
-                    Class330.aBoolean4127 = true
+                    VideoStreamDecoder.aBoolean4127 = true
                     method2172(60)
                 } catch (runtimeexception: RuntimeException) {
                     throw Class348_Sub17.method2929(runtimeexception, ("iq.D(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + bool_2_ + ')'))

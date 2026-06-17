@@ -1404,11 +1404,11 @@ object Class66 {
                 return
             }
             if (i == 5625) {
-                anIntArray1149!![anInt1173++] = if (Class330.aBoolean4127) 1 else 0
+                anIntArray1149!![anInt1173++] = if (VideoStreamDecoder.aBoolean4127) 1 else 0
                 return
             }
             if (i == 5626) {
-                Class330.aBoolean4127 = true
+                VideoStreamDecoder.aBoolean4127 = true
                 method2172(84)
                 return
             }
@@ -2359,7 +2359,7 @@ object Class66 {
                 if (i == 7006) {
                     if (Class64_Sub3.anInt5584 == 2) ScreenAnchorAlignment.aBoolean2881 = true
                     else {
-                        if (Class64_Sub3.anInt5584 == 1) Class330.aBoolean4117 = true
+                        if (Class64_Sub3.anInt5584 == 1) VideoStreamDecoder.aBoolean4117 = true
                         else {
                             if (Class64_Sub3.anInt5584 == 3) Class348_Sub1.aBoolean6558 = true
                             return

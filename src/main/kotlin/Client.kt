@@ -273,7 +273,7 @@ import MaterialTypeMarker.Companion.method2613
 import MaterialTypeVariant.method2614
 import RenderQueueState.method2617
 import PolygonFiller.method2621
-import Class330.Companion.method2631
+import VideoStreamDecoder.Companion.method2631
 import Class331.method2637
 import Class332.method2640
 import Class333.Companion.method2645
@@ -1351,7 +1351,7 @@ class Client : GameAppletFrame() {
             InputSettingsState.aString1761 = this.getParameter("quiturl")
             BloomGraphicsOptionState.aString5966 = this.getParameter("settings")
             if (BloomGraphicsOptionState.aString5966 == null) BloomGraphicsOptionState.aString5966 = ""
-            Class330.aBoolean4127 = "1" == this.getParameter("under")
+            VideoStreamDecoder.aBoolean4127 = "1" == this.getParameter("under")
             val string_27_ = this.getParameter("country")
             if (string_27_ != null) {
                 try {

@@ -82,7 +82,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
                 } else bool_5_ = true
             }
             if (ScreenAnchorAlignment.aBoolean2881) bool = false
-            if (Class330.aBoolean4117) bool_5_ = false
+            if (VideoStreamDecoder.aBoolean4117) bool_5_ = false
             if (Class348_Sub1.aBoolean6558) bool_6_ = false
             if (!bool && !bool_5_ && !bool_6_) return method2348(-8454)
             var i_7_ = -1
