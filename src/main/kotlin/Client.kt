@@ -286,8 +286,8 @@ import MapRegionLoaderThread.Companion.method2664
 import MapRegionLoaderThread.Companion.method2666
 import SkeletalAnimFrameLoader.Companion.method347
 import SkeletalAnimFrameLoader.Companion.method351
-import Class340.Companion.method2671
-import Class340.Companion.method2672
+import RsaPacketDecoder.Companion.method2671
+import RsaPacketDecoder.Companion.method2672
 import Class341.Companion.method2676
 import Class341.Companion.method2677
 import Class341.Companion.method2678
@@ -1569,7 +1569,7 @@ class Client : GameAppletFrame() {
                 MinimapRectClipper.anInt221 = 0
             }
             method102(61.toByte())
-            if (SizeBoundedSoftCache.aClass340_2327 != null) SizeBoundedSoftCache.aClass340_2327!!.method2670(0)
+            if (SizeBoundedSoftCache.aRsaPacketDecoder_2327 != null) SizeBoundedSoftCache.aRsaPacketDecoder_2327!!.method2670(0)
             method2228(0)
             method3260(66)
             LoadProgressCounters.aClass346_2449!!.method2695(67)

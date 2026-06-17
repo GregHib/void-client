@@ -356,7 +356,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         if (WorldMapRenderer.anInt4674 != 8) {
                             Class348_Sub49.method3379(2, 10)
                             if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
-                                val class348_sub47 = method2148((Class340.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106)
+                                val class348_sub47 = method2148((RsaPacketDecoder.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106)
                                 Class348_Sub42_Sub14.method3243(127, class348_sub47)
                             }
                         } else Class348_Sub49.method3379(2, 7)

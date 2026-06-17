@@ -1,7 +1,10 @@
 import Class348_Sub1_Sub2.Companion.method2730
 import java.math.BigInteger
 
-class Class340 internal constructor(mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, biginteger: BigInteger?, biginteger_14_: BigInteger?) {
+/*
+ * Class340
+ */
+class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, biginteger: BigInteger?, biginteger_14_: BigInteger?) {
     private val aMediaStreamClient_4212: MediaStreamClient?
     private val aBigInteger4213: BigInteger?
     private var aClass348_Sub49_4215: Class348_Sub49? = null

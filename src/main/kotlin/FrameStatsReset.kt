@@ -618,7 +618,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RenderNode.anInt9717 = 0
             Class348_Sub40_Sub26.anInt9355 = 0
             Class59.anInt1075 = 0
-            Class340.anInt4221 = 0
+            RsaPacketDecoder.anInt4221 = 0
             Class348_Sub1_Sub2.anInt8811 = 0
             GroundDecorSceneEntity.anInt9979 = 0
             FixedFunctionMaterialPass.anInt6203 = 0
@@ -2129,7 +2129,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlTextureBase.anInt5100 = 0
             OpenGlRenderNode.anInt10490 = 0
             CacheIndexManager.anInt3950 = 0
-            Class340.anInt4219 = 0
+            RsaPacketDecoder.anInt4219 = 0
             Class348_Sub18.anInt6817 = 0
             NativeRenderer.anInt8021 = 0
             Class348_Sub23_Sub4.anInt9053 = 0
@@ -2443,7 +2443,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NpcActorEntity.anInt10063 = 0
             Class5.anInt4627 = 0
             ScreenAnchorAlignment.anInt2879 = 0
-            Class340.anInt4214 = 0
+            RsaPacketDecoder.anInt4214 = 0
             ConfigDefinitionLoader.anInt2088 = 0
             GroundDecorSceneEntity.anInt10000 = 0
             Class64_Sub2.anInt5434 = 0
@@ -3902,7 +3902,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeTerrainTile.anInt8309 = 0
             GlArrayBufferObject.anInt4713 = 0
             OpenGlRenderer.anInt7630 = 0
-            Class340.anInt4224 = 0
+            RsaPacketDecoder.anInt4224 = 0
             TwoStateOptionState.anInt6136 = 0
             OpenGlRenderer.anInt7683 = 0
             Class367_Sub8.anInt7358 = 0
@@ -4006,7 +4006,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SocketFactory.anInt3474 = 0
             Class377.anInt9845 = 0
             ScriptCompilerThread.anInt1728 = 0
-            Class340.anInt4222 = 0
+            RsaPacketDecoder.anInt4222 = 0
             NativeRenderer.anInt7969 = 0
             NativeRenderer.anInt7948 = 0
             SoftwareSpriteRaster.anInt1614 = 0

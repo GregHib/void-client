@@ -185,7 +185,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
         @JvmField
         var aBooleanArray2326: BooleanArray? = BooleanArray(100)
         @JvmField
-        var aClass340_2327: Class340? = null
+        var aRsaPacketDecoder_2327: RsaPacketDecoder? = null
         var anInt2328: Int = 0
         @JvmField
         var aBoolean2329: Boolean = false
@@ -265,7 +265,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
         @JvmStatic
         fun method1349(i: Byte) {
             anIntArray2330 = null
-            aClass340_2327 = null
+            aRsaPacketDecoder_2327 = null
             aBooleanArray2326 = null
             aClass351_2315 = null
             if (i > -103) aBooleanArray2326 = null

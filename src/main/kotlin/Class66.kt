@@ -3746,7 +3746,7 @@ object Class66 {
                 if (i == 3105) {
                     val string = aStringArray1152!![--anInt1170]!!
                     anInt1162++
-                    val class348_sub47 = method2148(Class340.aClass351_4225, (Class348_Sub23_Sub2.aClass77_9029), -96)
+                    val class348_sub47 = method2148(RsaPacketDecoder.aClass351_4225, (Class348_Sub23_Sub2.aClass77_9029), -96)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string.length + 1)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                     Class348_Sub42_Sub14.method3243(-81, class348_sub47)

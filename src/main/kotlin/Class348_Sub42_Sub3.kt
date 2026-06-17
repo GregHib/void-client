@@ -1,7 +1,7 @@
 import MinimapFlagRenderer.method1083
 import FrameStatsReset.Companion.method1131
 import GlFramebufferBlitter.Companion.method282
-import Class340.Companion.method2672
+import RsaPacketDecoder.Companion.method2672
 import Class348_Sub17.Companion.method2929
 import Class348_Sub23_Sub4.Companion.method2988
 import Class348_Sub40_Sub30.Companion.method3126

@@ -3,7 +3,7 @@ import HeadIconRenderer.Companion.method1213
 import LoadProgressCounters.Companion.method1372
 import CameraConfigDefinition.Companion.method1922
 import CacheIndexManager.Companion.method2355
-import Class340.Companion.method2672
+import RsaPacketDecoder.Companion.method2672
 import Class348_Sub17.Companion.method2929
 import Class348_Sub31.Companion.method3007
 import Class348_Sub40_Sub16.Companion.method3088
