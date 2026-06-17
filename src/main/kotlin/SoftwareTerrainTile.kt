@@ -13,7 +13,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     private var aSpriteTextureDataArrayArray8219: Array<Array<SpriteTextureData?>?>? = null
     private var aByteArrayArray8220: Array<ByteArray?>?
     private var aFloat8221 = 0f
-    private var aClass236ArrayArray8222: Array<Array<Class236?>?>? = null
+    private var aModelVertexDataArrayArray8222: Array<Array<ModelVertexData?>?>? = null
     private var aFloat8224 = 0f
     private var aTerrainTileDataArrayArray8225: Array<Array<TerrainTileData?>?>? = null
     private var aFloat8226 = 0f
@@ -339,7 +339,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     override fun method3978(i: Int, i_60_: Int, `is`: IntArray, is_61_: IntArray, is_62_: IntArray, is_63_: IntArray, is_64_: IntArray, is_65_: IntArray, is_66_: IntArray, is_67_: IntArray, is_68_: IntArray, is_69_: IntArray, is_70_: IntArray, i_71_: Int, i_72_: Int, i_73_: Int, bool: Boolean) {
         if (aVertexNormalArrayArray8215 == null) {
             aVertexNormalArrayArray8215 = Array<Array<VertexNormal?>?>(this.anInt4587) { arrayOfNulls<VertexNormal?>(this.anInt4590) }
-            aClass236ArrayArray8222 = Array<Array<Class236?>?>(this.anInt4587) { arrayOfNulls<Class236?>(this.anInt4590) }
+            aModelVertexDataArrayArray8222 = Array<Array<ModelVertexData?>?>(this.anInt4587) { arrayOfNulls<ModelVertexData?>(this.anInt4590) }
         } else check(!(aClass266ArrayArray8230 != null || aSpriteTextureDataArrayArray8219 != null))
         var bool_74_ = false
         if (is_67_.size == 2 && is_64_.size == 2 && (is_67_[0] == is_67_[1] || is_69_[0] != -1 && is_69_[0] == is_69_[1])) {
@@ -354,32 +354,32 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
             }
         }
         if (!bool_74_) {
-            val class236 = Class236()
+            val modelVertexData = ModelVertexData()
             val i_78_ = `is`.size.toShort().toInt()
             val i_79_ = is_67_.size.toShort().toInt()
-            class236.aShort3089 = i_78_.toShort()
-            class236.aShortArray3088 = ShortArray(i_78_)
-            class236.aShortArray3096 = ShortArray(i_78_)
-            class236.aShortArray3097 = ShortArray(i_78_)
-            class236.aShortArray3094 = ShortArray(i_78_)
+            modelVertexData.aShort3089 = i_78_.toShort()
+            modelVertexData.aShortArray3088 = ShortArray(i_78_)
+            modelVertexData.aShortArray3096 = ShortArray(i_78_)
+            modelVertexData.aShortArray3097 = ShortArray(i_78_)
+            modelVertexData.aShortArray3094 = ShortArray(i_78_)
             for (i_80_ in 0..<i_78_) {
                 val i_81_ = `is`[i_80_]
                 val i_82_ = is_62_[i_80_]
-                if (i_81_ == 0 && i_82_ == 0) class236.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]).toShort()
-                else if (i_81_ == 0 && i_82_ == this.anInt4592) class236.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i]!![i_60_ + 1] - aByteArrayArray8232!![i]!![i_60_ + 1]).toShort()
-                else if (i_81_ == this.anInt4592 && i_82_ == this.anInt4592) class236.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i + 1]!![i_60_ + 1] - aByteArrayArray8232!![i + 1]!![i_60_ + 1]).toShort()
-                else if (i_81_ == this.anInt4592 && i_82_ == 0) class236.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]).toShort()
+                if (i_81_ == 0 && i_82_ == 0) modelVertexData.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]).toShort()
+                else if (i_81_ == 0 && i_82_ == this.anInt4592) modelVertexData.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i]!![i_60_ + 1] - aByteArrayArray8232!![i]!![i_60_ + 1]).toShort()
+                else if (i_81_ == this.anInt4592 && i_82_ == this.anInt4592) modelVertexData.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i + 1]!![i_60_ + 1] - aByteArrayArray8232!![i + 1]!![i_60_ + 1]).toShort()
+                else if (i_81_ == this.anInt4592 && i_82_ == 0) modelVertexData.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]).toShort()
                 else {
                     val i_83_ = (((aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]) * (this.anInt4592 - i_81_)) + (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]) * i_81_)
                     val i_84_ = (((aByteArrayArray8220!![i]!![i_60_ + 1] - aByteArrayArray8232!![i]!![i_60_ + 1]) * (this.anInt4592 - i_81_)) + ((aByteArrayArray8220!![i + 1]!![i_60_ + 1] - aByteArrayArray8232!![i + 1]!![i_60_ + 1]) * i_81_))
-                    class236.aShortArray3088!![i_80_] = ((i_83_ * (this.anInt4592 - i_82_) + i_84_ * i_82_) shr 2 * this.anInt4588).toShort()
+                    modelVertexData.aShortArray3088!![i_80_] = ((i_83_ * (this.anInt4592 - i_82_) + i_84_ * i_82_) shr 2 * this.anInt4588).toShort()
                 }
                 val i_85_ = (i shl this.anInt4588) + i_81_
                 val i_86_ = (i_60_ shl this.anInt4588) + i_82_
-                class236.aShortArray3096!![i_80_] = i_81_.toShort()
-                class236.aShortArray3094!![i_80_] = i_82_.toShort()
-                class236.aShortArray3097!![i_80_] = (this.method3986(i_85_, i_86_, 67.toByte()) + (if (is_61_ != null) is_61_[i_80_] else 0)).toShort()
-                if (class236.aShortArray3088!![i_80_] < 2) class236.aShortArray3088!![i_80_] = 2.toShort()
+                modelVertexData.aShortArray3096!![i_80_] = i_81_.toShort()
+                modelVertexData.aShortArray3094!![i_80_] = i_82_.toShort()
+                modelVertexData.aShortArray3097!![i_80_] = (this.method3986(i_85_, i_86_, 67.toByte()) + (if (is_61_ != null) is_61_[i_80_] else 0)).toShort()
+                if (modelVertexData.aShortArray3088!![i_80_] < 2) modelVertexData.aShortArray3088!![i_80_] = 2.toShort()
             }
             var bool_87_ = false
             var i_88_ = 0
@@ -390,40 +390,40 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                     val class12 = aHa_Sub1_8217.aRenderConfig4579!!.method3(i_90_, -6662)
                     if (!class12!!.aBoolean209) {
                         bool_87_ = true
-                        if (method3997(class12.aByte213.toInt()) || class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) class236.aByte3100 = (class236.aByte3100.toInt() or 0x4).toByte()
+                        if (method3997(class12.aByte213.toInt()) || class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) modelVertexData.aByte3100 = (modelVertexData.aByte3100.toInt() or 0x4).toByte()
                     }
                 }
             }
-            class236.anIntArray3093 = IntArray(i_88_)
-            if (is_68_ != null) class236.anIntArray3092 = IntArray(i_88_)
-            class236.aShortArray3091 = ShortArray(i_88_)
-            class236.aShortArray3090 = ShortArray(i_88_)
-            class236.aShortArray3101 = ShortArray(i_88_)
+            modelVertexData.anIntArray3093 = IntArray(i_88_)
+            if (is_68_ != null) modelVertexData.anIntArray3092 = IntArray(i_88_)
+            modelVertexData.aShortArray3091 = ShortArray(i_88_)
+            modelVertexData.aShortArray3090 = ShortArray(i_88_)
+            modelVertexData.aShortArray3101 = ShortArray(i_88_)
             if (bool_87_) {
-                class236.aShortArray3095 = ShortArray(i_88_)
-                class236.aShortArray3098 = ShortArray(i_88_)
+                modelVertexData.aShortArray3095 = ShortArray(i_88_)
+                modelVertexData.aShortArray3098 = ShortArray(i_88_)
             }
             for (i_91_ in 0..<i_79_) {
                 if (is_67_[i_91_] >= 0 || is_68_ != null && is_68_[i_91_] >= 0) {
-                    if (is_67_[i_91_] >= 0) class236.anIntArray3093!![class236.aShort3099.toInt()] = Class25.method303(is_67_[i_91_], 30).toInt()
-                    else class236.anIntArray3093!![class236.aShort3099.toInt()] = -1
+                    if (is_67_[i_91_] >= 0) modelVertexData.anIntArray3093!![modelVertexData.aShort3099.toInt()] = Class25.method303(is_67_[i_91_], 30).toInt()
+                    else modelVertexData.anIntArray3093!![modelVertexData.aShort3099.toInt()] = -1
                     if (is_68_ != null) {
-                        if (is_68_[i_91_] != -1) class236.anIntArray3092!![class236.aShort3099.toInt()] = Class25.method303(is_68_[i_91_], 30).toInt()
-                        else class236.anIntArray3092!![class236.aShort3099.toInt()] = -1
+                        if (is_68_[i_91_] != -1) modelVertexData.anIntArray3092!![modelVertexData.aShort3099.toInt()] = Class25.method303(is_68_[i_91_], 30).toInt()
+                        else modelVertexData.anIntArray3092!![modelVertexData.aShort3099.toInt()] = -1
                     }
-                    class236.aShortArray3091!![class236.aShort3099.toInt()] = is_64_[i_91_].toShort()
-                    class236.aShortArray3090!![class236.aShort3099.toInt()] = is_65_[i_91_].toShort()
-                    class236.aShortArray3101!![class236.aShort3099.toInt()] = is_66_[i_91_].toShort()
+                    modelVertexData.aShortArray3091!![modelVertexData.aShort3099.toInt()] = is_64_[i_91_].toShort()
+                    modelVertexData.aShortArray3090!![modelVertexData.aShort3099.toInt()] = is_65_[i_91_].toShort()
+                    modelVertexData.aShortArray3101!![modelVertexData.aShort3099.toInt()] = is_66_[i_91_].toShort()
                     if (bool_87_) {
                         if (is_69_[i_91_] != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(is_69_[i_91_], -6662)!!.aBoolean209)) {
-                            class236.aShortArray3095!![class236.aShort3099.toInt()] = is_69_[i_91_].toShort()
-                            class236.aShortArray3098!![class236.aShort3099.toInt()] = is_70_[i_91_].toShort()
-                        } else class236.aShortArray3095!![class236.aShort3099.toInt()] = (-1).toShort()
+                            modelVertexData.aShortArray3095!![modelVertexData.aShort3099.toInt()] = is_69_[i_91_].toShort()
+                            modelVertexData.aShortArray3098!![modelVertexData.aShort3099.toInt()] = is_70_[i_91_].toShort()
+                        } else modelVertexData.aShortArray3095!![modelVertexData.aShort3099.toInt()] = (-1).toShort()
                     }
-                    class236.aShort3099++
+                    modelVertexData.aShort3099++
                 }
             }
-            aClass236ArrayArray8222!![i]!![i_60_] = class236
+            aModelVertexDataArrayArray8222!![i]!![i_60_] = modelVertexData
         } else if (is_67_[0] >= 0 || is_68_ != null && is_68_[0] >= 0) {
             val vertexNormal = VertexNormal()
             val i_92_ = is_67_[0]
@@ -1298,7 +1298,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     private fun method3994(i: Int, i_300_: Int, shadowProjector: ShadowProjector, `is`: IntArray, is_301_: IntArray, is_302_: IntArray, is_303_: IntArray?, i_304_: Int) {
         val class102 = aVertexNormalArrayArray8215!![i]!![i_300_]
         if (class102 == null) {
-            val class236 = aClass236ArrayArray8222!![i]!![i_300_]
+            val class236 = aModelVertexDataArrayArray8222!![i]!![i_300_]
             if (class236 != null) {
                 if (i_304_ != 0) {
                     if ((class236.aByte3100.toInt() and 0x4) != 0) {
@@ -1947,8 +1947,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             shadowProjector.method1022((i_463_ - i_461_).toFloat(), (i_463_ - i_461_).toFloat(), i_463_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), 100.0f, 100.0f, 100.0f, i_467_.toFloat(), i_467_.toFloat(), i_467_.toFloat())
                             shadowProjector.method1022(i_463_.toFloat(), i_463_.toFloat(), (i_463_ - i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), 100.0f, 100.0f, 100.0f, i_467_.toFloat(), i_467_.toFloat(), i_467_.toFloat())
                         }
-                    } else if (aClass236ArrayArray8222!![i_464_]!![i_465_] != null) {
-                        val class236 = aClass236ArrayArray8222!![i_464_]!![i_465_]!!
+                    } else if (aModelVertexDataArrayArray8222!![i_464_]!![i_465_] != null) {
+                        val class236 = aModelVertexDataArrayArray8222!![i_464_]!![i_465_]!!
                         for (i_468_ in 0..<class236.aShort3089) {
                             `is`[i_468_] = i_462_ + ((class236.aShortArray3096!![i_468_]) * i_461_ / this.anInt4592)
                             is_459_[i_468_] = i_463_ - ((class236.aShortArray3094!![i_468_]) * i_461_ / this.anInt4592)

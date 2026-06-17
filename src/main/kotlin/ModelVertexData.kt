@@ -1,7 +1,7 @@
 /* Class236 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class236 {
+class ModelVertexData {
     var aShortArray3088: ShortArray? = null
     var aShort3089: Short = 0
     var aShortArray3090: ShortArray? = null
