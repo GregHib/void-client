@@ -1916,7 +1916,7 @@ object Class66 {
                 return
             }
             if (i == 6406) {
-                anIntArray1149!![anInt1173++] = if (Class247.method1891(314376967)) 1 else 0
+                anIntArray1149!![anInt1173++] = if (VideoAdChecker.method1891(314376967)) 1 else 0
                 return
             }
         } else if (i < 6600) {

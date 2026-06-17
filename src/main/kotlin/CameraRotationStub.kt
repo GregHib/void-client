@@ -48,7 +48,7 @@ class CameraRotationStub {
                 val d_5_ = sin(d_3_)
                 val d_6_ = cos(d)
                 val d_7_ = sin(d)
-                Class247.aDouble3182 = d_4_
+                VideoAdChecker.aDouble3182 = d_4_
                 Class348_Sub15.aDouble6774 = d_7_
                 Class295.aDouble3761 = d_6_
                 Class348_Sub16_Sub2.aDouble8869 = d_4_ * d_6_

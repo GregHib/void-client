@@ -96,7 +96,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
         if (i_22_ > 0) {
             method874(-12763)
             aHa_Sub3_1561!!.method3850(119.toByte(), anInterface18_Impl3_1556)
-            aHa_Sub3_1561.method3938(Class247.aCameraRotationStub_3181, i_22_, interface5_impl2, anInt1547, 0, -anInt1547 + (anInt1546 - -1), 47)
+            aHa_Sub3_1561.method3938(VideoAdChecker.aCameraRotationStub_3181, i_22_, interface5_impl2, anInt1547, 0, -anInt1547 + (anInt1546 - -1), 47)
         }
         anInt1545++
         if (i > -47) this.anInt1563 = 75

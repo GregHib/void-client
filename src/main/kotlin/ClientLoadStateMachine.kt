@@ -135,7 +135,7 @@ object ClientLoadStateMachine {
             LightingOptionState.aClass45_5878 = Class369_Sub2.method3571(false, 14, (-23).toByte(), 1)
             HoverActionEntry.aClass45_1815 = Class369_Sub2.method3571(false, 15, (-23).toByte(), 1)
             Class94.aClass45_1538 = Class369_Sub2.method3571(false, 16, (-23).toByte(), 1)
-            Class247.aClass45_3183 = Class369_Sub2.method3571(false, 17, (-23).toByte(), 1)
+            VideoAdChecker.aClass45_3183 = Class369_Sub2.method3571(false, 17, (-23).toByte(), 1)
             FloatGrid.aClass45_4975 = Class369_Sub2.method3571(false, 18, (-23).toByte(), 1)
             SpotAnimVector.aClass45_2306 = Class369_Sub2.method3571(false, 19, (-23).toByte(), 1)
             OpenGlRenderNode.aClass45_10480 = Class369_Sub2.method3571(false, 20, (-23).toByte(), 1)
@@ -183,7 +183,7 @@ object ClientLoadStateMachine {
             ProjectionCameraTransform.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
-            Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class247.aClass45_3183)
+            Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, VideoAdChecker.aClass45_3183)
             RenderConfigFactory.aClass268_2979 = Class268(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class362.aParticleDefLoader_4460 = ParticleDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class73.aModelDefinitionCache_4782 = ModelDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
@@ -256,7 +256,7 @@ object ClientLoadStateMachine {
             Class348_Sub35.aClass45_6980!!.method404(0, true, true)
             Class95.aClass45_1541!!.anInt634 = 2
             Class319.aBoolean3988 = true
-            Class247.aClass45_3183!!.anInt634 = 2
+            VideoAdChecker.aClass45_3183!!.anInt634 = 2
             Class94.aClass45_1538!!.anInt634 = 2
             FloatGrid.aClass45_4975!!.anInt634 = 2
             SpotAnimVector.aClass45_2306!!.anInt634 = 2

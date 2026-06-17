@@ -772,7 +772,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             if (cameraRotationStub == Class249.aCameraRotationStub_3217) return 2
             if (Class348_Sub5_Sub1.aCameraRotationStub_8832 == cameraRotationStub) return 3
             if (Class277.aCameraRotationStub_3572 == cameraRotationStub) return 1
-            if (cameraRotationStub == Class247.aCameraRotationStub_3181) return 4
+            if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) return 4
             if (Class348_Sub42_Sub16.aCameraRotationStub_9661 == cameraRotationStub) return 6
             if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) return 5
             throw IllegalArgumentException("")

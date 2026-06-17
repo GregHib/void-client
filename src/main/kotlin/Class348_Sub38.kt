@@ -36,7 +36,7 @@ class Class348_Sub38 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Su
                             aHa_Sub3_7007!!.method3909((255.0f * aClass348_Sub1_7004!!.method2721(-37)).toInt().toByte(), -112)
                             aHa_Sub3_7007.method3925(-123, anInterface5_Impl1_7020, 0)
                             aHa_Sub3_7007.method3862(0, (aHa_Sub3_7007.aModelBatchBase_8202))
-                            aHa_Sub3_7007.method3938(Class247.aCameraRotationStub_3181, anInt7018 / 3, anInterface5_Impl2_7002, 0, 0, anInt7013, 116)
+                            aHa_Sub3_7007.method3938(VideoAdChecker.aCameraRotationStub_3181, anInt7018 / 3, anInterface5_Impl2_7002, 0, 0, anInt7013, 116)
                             return
                         }
                         i_3_++

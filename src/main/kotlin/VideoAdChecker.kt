@@ -3,7 +3,7 @@ import JavaScriptBridge.method1617
 /* Class247 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class247 {
+object VideoAdChecker {
     var anInt3180: Int = 0
     @JvmField
     var aCameraRotationStub_3181: CameraRotationStub? = CameraRotationStub()
@@ -32,7 +32,7 @@ object Class247 {
     }
 
     fun method1891(i: Int): Boolean {
-        if (i != 314376967) Class247.method1890(-22, (-36).toByte(), 19, 113)
+        if (i != 314376967) VideoAdChecker.method1890(-22, (-36).toByte(), 19, 113)
         anInt3184++
         if (Class289.aBoolean3697) {
             try {

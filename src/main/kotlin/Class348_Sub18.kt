@@ -129,7 +129,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 LightingOptionState.aClass45_5878!!.method412(29.toByte())
                 HoverActionEntry.aClass45_1815!!.method412(80.toByte())
                 Class94.aClass45_1538!!.method412(34.toByte())
-                Class247.aClass45_3183!!.method412((-116).toByte())
+                VideoAdChecker.aClass45_3183!!.method412((-116).toByte())
                 FloatGrid.aClass45_4975!!.method412(28.toByte())
                 SpotAnimVector.aClass45_2306!!.method412((-115).toByte())
                 OpenGlRenderNode.aClass45_10480!!.method412(22.toByte())

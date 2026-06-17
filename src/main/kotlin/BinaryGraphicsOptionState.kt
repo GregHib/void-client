@@ -102,7 +102,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 Class267.aClass267_3409!!.method2025(Class292(Class348_Sub11.aClass45_4770!!), false)
                 Class267.aClass267_3410!!.method2025(Class292(Class95.aClass45_1541!!), false)
                 Class267.aClass267_3411!!.method2025(Class292(Class94.aClass45_1538!!), false)
-                Class267.aClass267_3412!!.method2025(Class292(Class247.aClass45_3183!!), false)
+                Class267.aClass267_3412!!.method2025(Class292(VideoAdChecker.aClass45_3183!!), false)
                 Class267.aClass267_3413!!.method2025(Class292(FloatGrid.aClass45_4975!!), false)
                 Class267.aClass267_3414!!.method2025(Class292(SpotAnimVector.aClass45_2306!!), false)
                 Class267.aClass267_3415!!.method2025(Class292(OpenGlRenderNode.aClass45_10480!!), false)

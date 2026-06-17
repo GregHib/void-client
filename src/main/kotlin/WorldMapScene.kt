@@ -875,7 +875,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                     i_192_ -= (Class318_Sub9_Sub1.anIntArray8785!![i_195_])
                                     i_189_ -= (Class348_Sub40_Sub6.anIntArray9135!![i_195_])
                                 }
-                                if (i_193_ >= 0 && i_191_ > 0 && i_192_ > 0) `is`[i_182_]!![i_193_] = Class247.method1890(i_190_ / i_192_, 66.toByte(), i_189_ / i_192_, (256 * i_188_ / i_191_))
+                                if (i_193_ >= 0 && i_191_ > 0 && i_192_ > 0) `is`[i_182_]!![i_193_] = VideoAdChecker.method1890(i_190_ / i_192_, 66.toByte(), i_189_ / i_192_, (256 * i_188_ / i_191_))
                                 i_193_++
                             }
                         }

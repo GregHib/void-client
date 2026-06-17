@@ -709,7 +709,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             } else if (cameraRotationStub == Class348_Sub5_Sub1.aCameraRotationStub_8832) {
                 i_45_ = 1 + i
                 i_44_ = 3
-            } else if (cameraRotationStub == Class247.aCameraRotationStub_3181) {
+            } else if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) {
                 i_44_ = 4
                 i_45_ = i * 3
             } else if (Class348_Sub42_Sub16.aCameraRotationStub_9661 == cameraRotationStub) {
@@ -801,7 +801,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             } else if (Class348_Sub5_Sub1.aCameraRotationStub_8832 == cameraRotationStub) {
                 i_51_ = i - -1
                 i_52_ = 3
-            } else if (Class247.aCameraRotationStub_3181 == cameraRotationStub) {
+            } else if (VideoAdChecker.aCameraRotationStub_3181 == cameraRotationStub) {
                 i_52_ = 4
                 i_51_ = i * 3
             } else if (cameraRotationStub == Class348_Sub42_Sub16.aCameraRotationStub_9661) {

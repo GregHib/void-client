@@ -838,7 +838,7 @@ open class Class75 {
                                 is_193_[i_215_] = 0.toByte()
                                 is_194_[i_215_] = 0.toShort()
                             } else {
-                                val i_216_ = (if (i_210_ == 0) 0 else Class247.method1890(i_209_ / i_211_, 76.toByte(), i_208_ / i_211_, (i_207_ * 256 / i_210_)))
+                                val i_216_ = (if (i_210_ == 0) 0 else VideoAdChecker.method1890(i_209_ / i_211_, 76.toByte(), i_208_ / i_211_, (i_207_ * 256 / i_210_)))
                                 var i_217_ = (i_216_ and 0x7f) + i_195_
                                 if (i_217_ < 0) i_217_ = 0
                                 else if (i_217_ > 127) i_217_ = 127

@@ -752,7 +752,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 this.aHa_Sub3_8322!!.method3925(63, anInterface5_Impl1_8327, 0)
                 this.aHa_Sub3_8322!!.method3925(-90, anInterface5_Impl1_8326, 1)
                 this.aHa_Sub3_8322!!.method3862(0, this.aModelBatchBase_8324)
-                this.aHa_Sub3_8322!!.method3938(Class247.aCameraRotationStub_3181, i_218_ / 3, interface5_impl2, i_219_, 0, -i_219_ + i_220_ - -1, 114)
+                this.aHa_Sub3_8322!!.method3938(VideoAdChecker.aCameraRotationStub_3181, i_218_ / 3, interface5_impl2, i_219_, 0, -i_219_ + i_220_ - -1, 114)
                 this.aHa_Sub3_8322!!.method3926(82.toByte(), true)
             }
         }

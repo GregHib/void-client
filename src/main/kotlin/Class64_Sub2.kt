@@ -2410,7 +2410,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     var i_477_ = aShortArray5423!![i_475_].toInt() and 0xffff
                     if (i_477_ == 65535) i_477_ = -1
                     aHa_Sub3_5419!!.method3814(true, bool, i_477_, 102.toByte())
-                    aHa_Sub3_5419!!.method3938(Class247.aCameraRotationStub_3181, -i_475_ + i_476_, (aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572), anIntArray5415!![i_474_], 3 * i_475_, anIntArray5473!![i_474_], 54)
+                    aHa_Sub3_5419!!.method3938(VideoAdChecker.aCameraRotationStub_3181, -i_475_ + i_476_, (aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572), anIntArray5415!![i_474_], 3 * i_475_, anIntArray5473!![i_474_], 54)
                     i_474_++
                 }
             }

@@ -160,7 +160,7 @@ import ManagedGlResource.Companion.method1866
 import TextureMetadataProvider.Companion.method1880
 import DebugOverlayRenderer.method1882
 import ParticleEmitterFactory.Companion.method1886
-import Class247.method1889
+import VideoAdChecker.method1889
 import Class248.Companion.method1897
 import Class249.method1907
 import Class25.Companion.method305
