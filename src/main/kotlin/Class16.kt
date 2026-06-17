@@ -43,7 +43,7 @@ object Class16 {
     @JvmStatic
     fun method259(i: Int, i_3_: Int, bool: Boolean, string: String?, i_4_: Int) {
         anInt230++
-        Class178.method1356(false, null, i, i_4_, bool, string, true)
+        ScriptOpcodeHolder.method1356(false, null, i, i_4_, bool, string, true)
         val i_5_ = -1 / ((i_3_ - -33) / 63)
     }
 

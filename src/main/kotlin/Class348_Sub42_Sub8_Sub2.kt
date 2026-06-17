@@ -954,7 +954,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class178.aIntRange_2338 == Class348_Sub3.aIntRange_6584) {
+            if (ScriptOpcodeHolder.aIntRange_2338 == Class348_Sub3.aIntRange_6584) {
                 val string = Class299.aClass348_Sub49_Sub2_3813!!.readString(100.toByte())
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())

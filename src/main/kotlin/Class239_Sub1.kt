@@ -62,7 +62,7 @@ class Class239_Sub1 : Class239 {
         @JvmStatic
         fun method1719(bool: Boolean, string: String?, string_0_: String?, i: Int, i_1_: Int) {
             try {
-                Class178.method1356(true, string_0_, i_1_, i, bool, string, true)
+                ScriptOpcodeHolder.method1356(true, string_0_, i_1_, i, bool, string, true)
                 anInt5845++
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("aj.G(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))

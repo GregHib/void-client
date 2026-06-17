@@ -592,7 +592,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class26.anInt385 = i_73_
                             Class93.anInt1534 = i_72_
                             Class348.anInt4292 = 0
-                            Class178.anInt2336++
+                            ScriptOpcodeHolder.anInt2336++
                             Class239_Sub20.anInt6048 = 2
                             val class348_sub47 = method2148((MatrixCameraTransform.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(86.toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -121)) 0 else 1))

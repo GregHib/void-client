@@ -142,7 +142,7 @@ class Class239_Sub17 : Class239 {
             val string = method1753(0, class46)
             if (string != null) {
                 Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-83).toByte(), false, class46.anInt704, class46.anInt812, true, 13, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string, 0L, class46.anInt713)
-                Class178.anInt2340++
+                ScriptOpcodeHolder.anInt2340++
             }
             for (i_14_ in 4 downTo 0) {
                 val string_15_ = method3561(i_14_, class46, true)

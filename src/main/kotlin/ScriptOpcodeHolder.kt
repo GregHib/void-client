@@ -4,7 +4,7 @@ import java.util.*
 /* Class178 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class178 {
+object ScriptOpcodeHolder {
     @JvmField
     var anInt2336: Int = 0
     var anInt2337: Int = 0

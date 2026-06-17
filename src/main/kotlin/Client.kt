@@ -79,7 +79,7 @@ import NpcCountAccessor.method1325
 import ObjectByteSerializerHolder.Companion.method1329
 import SizeBoundedSoftCache.Companion.method1343
 import PingHostListHolder.method1351
-import Class178.method1355
+import ScriptOpcodeHolder.method1355
 import Class18.Companion.method273
 import Class18.Companion.method277
 import Class181.Companion.method1369
@@ -593,7 +593,7 @@ class Client : GameAppletFrame() {
                 if (Class47.anInt846 == 2) {
                     Class193.aClass202_2589 = Class202(Sprite.aLinkedQueueNode_114!!.anObject1998 as Socket?, Class348_Sub23_Sub1.aClass297_8992, 25000)
                     val class348_sub49 = Class348_Sub49(5)
-                    class348_sub49.writeByte(false, (Class178.aClass29_2341!!.anInt400))
+                    class348_sub49.writeByte(false, (ScriptOpcodeHolder.aClass29_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)
                     Class193.aClass202_2589!!.method1470((class348_sub49.aByteArray7154!!), 5, 0, -1)
                     Class47.anInt846++
