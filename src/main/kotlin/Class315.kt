@@ -1,4 +1,4 @@
-import Class122.method1087
+import ObjectSpawnDecoder.method1087
 import Class273.Companion.method2056
 import kotlin.concurrent.Volatile
 

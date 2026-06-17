@@ -34,7 +34,7 @@ class Class348_Sub47 : Class348() {
         fun method3324(var_renderer: Renderer?, i: Byte, l: Long) {
             do {
                 try {
-                    Class122.anInt1803 = 0
+                    ObjectSpawnDecoder.anInt1803 = 0
                     Class292.anInt4797 = Class313.anInt3936
                     Class318_Sub1_Sub5.anInt8780 = 0
                     anInt7120++
@@ -48,7 +48,7 @@ class Class348_Sub47 : Class348() {
                         }
                         if (!Class348_Sub16_Sub2.aBoolean8874 || l % 100L != 0L) break
                         println("Particle system count: " + Class152.aClass243_2077!!.method1874(0) + ", running: " + Class318_Sub1_Sub5.anInt8780)
-                        println("Emitters: " + Class122.anInt1803 + " Particles: " + Class313.anInt3936 + ". Time taken: " + (-l_1_ + method599(-112)) + "ms")
+                        println("Emitters: " + ObjectSpawnDecoder.anInt1803 + " Particles: " + Class313.anInt3936 + ". Time taken: " + (-l_1_ + method599(-112)) + "ms")
                     }
                 } catch (runtimeexception: RuntimeException) {
                     throw method2929(runtimeexception, ("wm.A(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ')'))

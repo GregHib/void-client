@@ -93,7 +93,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, class129: Clas
                 } else bool = false
                 anInt6445++
                 if (bool) {
-                    Class122.anInt1803++
+                    ObjectSpawnDecoder.anInt1803++
                     val i_11_ = (((this.aClass284_6444.anInt3675) + this.aClass284_6444.anInt3668 + this.aClass284_6444.anInt3680) / 3)
                     val i_12_ = (((this.aClass284_6444.anInt3669) + this.aClass284_6444.anInt3678 + this.aClass284_6444.anInt3670) / 3)
                     val i_13_ = (((this.aClass284_6444.anInt3672) + this.aClass284_6444.anInt3679 + this.aClass284_6444.anInt3666) / 3)

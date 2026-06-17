@@ -86,7 +86,7 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
     override fun keyTyped(keyevent: KeyEvent) {
         anInt6527++
         val c = keyevent.getKeyChar()
-        if (c.code != 0 && Class122.method1089(-125, c)) {
+        if (c.code != 0 && ObjectSpawnDecoder.method1089(-125, c)) {
             method2702(-1, 128, c, 3)
             keyevent.consume()
         }

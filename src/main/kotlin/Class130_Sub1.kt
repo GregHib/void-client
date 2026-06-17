@@ -1139,7 +1139,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class175.anInt2321 = 0
             Class288.anInt4956 = 0
             OpenGlRenderer.anInt7556 = 0
-            Class122.anInt1807 = 0
+            ObjectSpawnDecoder.anInt1807 = 0
             Class239_Sub13.anInt5977 = 0
             NativeRenderer.anInt7982 = 0
             Class348_Sub40_Sub29.anInt9377 = 0
@@ -1618,7 +1618,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             OpenGlRenderer.anInt7639 = 0
             Class318_Sub1_Sub2_Sub1.anInt10198 = 0
             Class348_Sub40_Sub16.anInt9228 = 0
-            Class122.anInt1805 = 0
+            ObjectSpawnDecoder.anInt1805 = 0
             Class68.anInt1180 = 0
             Class279.anInt3606 = 0
             InputSettingsState.anInt1760 = 0
@@ -2686,7 +2686,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Player.anInt10532 = 0
             Class47.anInt844 = 0
             CacheArchiveIndex.anInt1777 = 0
-            Class122.anInt1809 = 0
+            ObjectSpawnDecoder.anInt1809 = 0
             Class348_Sub17.anInt6801 = 0
             AnimatedModelRenderer.anInt8394 = 0
             Class348_Sub49.anInt7176 = 0
@@ -2874,7 +2874,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub21.anInt6060 = 0
             Class318_Sub1_Sub4_Sub1.anInt10087 = 0
             Class346_Sub1.anInt6527 = 0
-            Class122.anInt1804 = 0
+            ObjectSpawnDecoder.anInt1804 = 0
             Class313.anInt3933 = 0
             OpenGlRenderer.anInt7700 = 0
             Class314.anInt3940 = 0
@@ -3925,7 +3925,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub1_Sub1.anInt9954 = 0
             Class318_Sub1_Sub5_Sub1.anInt10144 = 0
             Class182.anInt2450 = 0
-            Class122.anInt1802 = 0
+            ObjectSpawnDecoder.anInt1802 = 0
             Class127.anInt4658 = 0
             Class243.anInt3161 = 0
             Class346_Sub1.anInt6540 = 0

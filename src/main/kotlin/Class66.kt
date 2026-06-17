@@ -4371,7 +4371,7 @@ object Class66 {
                 }
                 if (i == 3627) {
                     val i_370_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 == 2 && i_370_ >= 0 && i_370_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = if (Class122.aBooleanArray1806!![i_370_]) 1 else 0
+                    if (Class125.anInt4930 == 2 && i_370_ >= 0 && i_370_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = if (ObjectSpawnDecoder.aBooleanArray1806!![i_370_]) 1 else 0
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4409,7 +4409,7 @@ object Class66 {
                 }
                 if (i == 3633) {
                     val i_373_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 != 0 && i_373_ < Class348_Sub42_Sub12.anInt9604) aStringArray1152!![anInt1170++] = Class122.aStringArray1808!![i_373_]
+                    if (Class125.anInt4930 != 0 && i_373_ < Class348_Sub42_Sub12.anInt9604) aStringArray1152!![anInt1170++] = ObjectSpawnDecoder.aStringArray1808!![i_373_]
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return

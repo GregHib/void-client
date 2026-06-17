@@ -25,7 +25,7 @@ import InputSettingsState.method1062
 import CacheArchiveIndex.Companion.method1064
 import MapSceneTileDefinition.Companion.method1075
 import MinimapFlagRenderer.method1081
-import Class122.method1086
+import ObjectSpawnDecoder.method1086
 import Class123.Companion.method1091
 import Class124.Companion.method1096
 import Class126.Companion.method1112

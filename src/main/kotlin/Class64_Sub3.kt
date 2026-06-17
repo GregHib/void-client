@@ -877,7 +877,7 @@ class Class64_Sub3 : Class64 {
                 class64_sub3_211_.aClass123_5605!!.aByte1812 = aClass123_5605!!.aByte1812
             } else if (!method616(i_212_ + 2, i, anInt5556)) class64_sub3_211_.aClass123_5605 = null
             else class64_sub3_211_.aClass123_5605 = aClass123_5605
-            if (Class122.method1087(12644, anInt5556, i)) {
+            if (ObjectSpawnDecoder.method1087(12644, anInt5556, i)) {
                 if (class64_sub3_213_!!.aShortArray5580 != null && (class64_sub3_213_.aShortArray5580!!.size >= anInt5632)) class64_sub3_211_.aShortArray5580 = class64_sub3_213_.aShortArray5580
                 else {
                     class64_sub3_213_.aShortArray5580 = ShortArray(anInt5632)

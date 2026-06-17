@@ -142,7 +142,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                             var i_10_ = i
                             while (Class348_Sub42_Sub12.anInt9604 > i_10_) {
                                 Class51.aStringArray932!![i_10_] = Class51.aStringArray932!![i_10_ + 1]
-                                Class122.aStringArray1808!![i_10_] = Class122.aStringArray1808!![1 + i_10_]
+                                ObjectSpawnDecoder.aStringArray1808!![i_10_] = ObjectSpawnDecoder.aStringArray1808!![1 + i_10_]
                                 Class348_Sub40_Sub21.aStringArray9275!![i_10_] = (Class348_Sub40_Sub21.aStringArray9275!![1 + i_10_])
                                 IndexedSprite.aStringArray5197!![i_10_] = IndexedSprite.aStringArray5197!![1 + i_10_]
                                 Class367_Sub3.Companion.aBooleanArray7304!![i_10_] = Class367_Sub3.Companion.aBooleanArray7304!![i_10_ - -1]

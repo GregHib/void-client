@@ -286,7 +286,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class338.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aRenderer6654, (if (!bool_25_) null else (Class170.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108)
                     if (Class312.anInt3931 == 0) {
                         Class289.method2193(true, (-128).toByte())
-                        Class122.method1090(Class14_Sub4.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)
+                        ObjectSpawnDecoder.method1090(Class14_Sub4.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)
                         if (Class348_Sub50.aByteArrayArray7212 != null) Class92.method859(i xor 0x7e.inv())
                     } else {
                         Class289.method2193(true, (-121).toByte())
@@ -302,7 +302,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         Class243.method1879(true)
                         Class289.method2193(true, (-124).toByte())
                         if (Class312.anInt3931 != 0) ProjectionCameraTransform.method944(-8212, (Class348_Sub23_Sub1.aByteArrayArray8996), Class170.aClass237_Sub1_5067)
-                        else Class122.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, Class170.aClass237_Sub1_5067)
+                        else ObjectSpawnDecoder.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, Class170.aClass237_Sub1_5067)
                         Class348_Sub18.method2938(73.toByte())
                         Class289.method2193(true, (-121).toByte())
                         Class170.aClass237_Sub1_5067!!.method1680((Class348_Sub1_Sub1.aTerrainTileArray8801!![0]), (-127).toByte(), null, (Class348_Sub8.aRenderer6654))

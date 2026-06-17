@@ -3,7 +3,7 @@ import Class369_Sub1.Companion.method3570
 /* Class122 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class122 {
+object ObjectSpawnDecoder {
     var aBoolean1801: Boolean = false
     @JvmField
     var anInt1802: Int = 0
@@ -41,7 +41,7 @@ object Class122 {
 
     @JvmStatic
     fun method1087(i: Int, i_4_: Int, i_5_: Int): Boolean {
-        if (i != 12644) Class122.method1085(55, -60, (-29).toByte(), -35, -112)
+        if (i != 12644) ObjectSpawnDecoder.method1085(55, -60, (-29).toByte(), -35, -112)
         anInt1809++
         return (0x84080 and i_5_) != 0
     }
