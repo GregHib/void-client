@@ -39,9 +39,9 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
 
         @JvmStatic
         fun method2991(i: Int) {
-            if (Class289.anInt3699 > 1) {
+            if (RegionSceneLoader.anInt3699 > 1) {
                 Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
-                Class289.anInt3699--
+                RegionSceneLoader.anInt3699--
             }
             anInt6874++
             if (AbstractMenuEntry.aBoolean1712) {
@@ -402,7 +402,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 method705(class348_sub36)
                             }
                             if (HeapDiagnosticsHolder.aClass46_2249 == null) Class348_Sub42.anInt7059 = 0
-                            if (Class289.aClass46_3701 != null) method2708(-30206)
+                            if (RegionSceneLoader.aClass46_3701 != null) method2708(-30206)
                             if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aClass346_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCounters.aClass346_2449!!.method2696(81, -121) && Class98.anInt1565 != 0) {
                                 var i_30_ = ((LocalPlayerState.aPlayer_1907!!.plane) - Class98.anInt1565)
                                 if (i_30_ >= 0) {

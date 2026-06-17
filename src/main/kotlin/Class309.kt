@@ -118,7 +118,7 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
             do {
                 try {
                     anInt4811++
-                    Class289.aNodeDeque_3705!!.method1996(125)
+                    RegionSceneLoader.aNodeDeque_3705!!.method1996(125)
                     if (!Class348_Sub1_Sub1.aBoolean8805) {
                         var class348_sub21 = nodeDeque!!.method1995(4) as Class348_Sub21?
                         while (class348_sub21 != null) {

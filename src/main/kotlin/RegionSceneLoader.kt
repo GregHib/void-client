@@ -6,7 +6,7 @@ import java.io.IOException
 /* Class289 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class289 {
+object RegionSceneLoader {
     var anInt3696: Int = 0
     @JvmField
     var aBoolean3697: Boolean = false
@@ -26,7 +26,7 @@ object Class289 {
 
     @JvmStatic
     fun method2191(i: Int) {
-        if (i != 0) Class289.method2192((-74).toByte())
+        if (i != 0) RegionSceneLoader.method2192((-74).toByte())
         aClass46_3701 = null
         aByteArrayArrayArray3700 = null
         aNodeDeque_3705 = null
@@ -37,7 +37,7 @@ object Class289 {
         anInt3702++
         val i_0_ = (((LocalPlayerState.aPlayer_1907!!.x) shr 9) - -ArbVertexProgram.regionTileX)
         val i_1_ = (Class90.regionTileY + (LocalPlayerState.aPlayer_1907!!.y shr 9))
-        if (i.toInt() != 80) Class289.method2192((-34).toByte())
+        if (i.toInt() != 80) RegionSceneLoader.method2192((-34).toByte())
         if (i_0_ >= 3053 && i_0_ <= 3156 && i_1_ >= 3056 && i_1_ <= 3136) BackgroundWorkerThread.anInt3227 = 1
         if (i_0_ >= 3072 && i_0_ <= 3118 && i_1_ >= 9492 && i_1_ <= 9535) BackgroundWorkerThread.anInt3227 = 1
         if (BackgroundWorkerThread.anInt3227 == 1 && i_0_ >= 3139 && i_0_ <= 3199 && i_1_ >= 3008 && i_1_ <= 3062) BackgroundWorkerThread.anInt3227 = 0

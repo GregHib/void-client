@@ -141,8 +141,8 @@ object NativeLibraryUnloader {
             Class34.anInt481 = -1
             Class348_Sub40_Sub30.anInt9399 = -1
         }
-        if (ParticleEmitterFactory.aBoolean3174 && Class289.aNodeDeque_3705 != null) {
-            var class348_sub12 = Class289.aNodeDeque_3705!!.method1995(4) as Class348_Sub12?
+        if (ParticleEmitterFactory.aBoolean3174 && RegionSceneLoader.aNodeDeque_3705 != null) {
+            var class348_sub12 = RegionSceneLoader.aNodeDeque_3705!!.method1995(4) as Class348_Sub12?
             while (class348_sub12 != null) {
                 val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub12.aClass348_Sub21_6751!!.anInt6847, 125.toByte()))
                 if (class348_sub12.method2799(i_6_, i_7_, 95)) {
@@ -162,7 +162,7 @@ object NativeLibraryUnloader {
                     class348_sub12.aClass348_Sub21_6751!!.aBoolean6848 = false
                     Class66.method701(Class77.aBoundsConstraintEntry_1298!!, class348_sub12.aClass348_Sub21_6751!!.anInt6847, class42!!.anInt596)
                 }
-                class348_sub12 = (Class289.aNodeDeque_3705!!.method1990(116.toByte()) as Class348_Sub12?)
+                class348_sub12 = (RegionSceneLoader.aNodeDeque_3705!!.method1990(116.toByte()) as Class348_Sub12?)
             }
         }
     }

@@ -29,11 +29,11 @@ class Class347 {
 
         @JvmStatic
         fun method2708(i: Int) {
-            ConfigFlagUtil.method1916(-9343, Class289.aClass46_3701!!)
+            ConfigFlagUtil.method1916(-9343, RegionSceneLoader.aClass46_3701!!)
             anInt4280++
             Class318_Sub1.anInt6392++
             if (!Class50_Sub1.aBoolean5221 || !ScrollingWidgetComponentNode.aBoolean8386) {
-                if (Class318_Sub1.anInt6392 > 1) Class289.aClass46_3701 = null
+                if (Class318_Sub1.anInt6392 > 1) RegionSceneLoader.aClass46_3701 = null
             } else {
                 var i_0_ = 0
                 var i_1_ = 0
@@ -47,41 +47,41 @@ class Class347 {
                 i_2_ -= Class318_Sub4.anInt6411
                 if (i_2_ < Class348_Sub40_Sub37.anInt9461) i_2_ = Class348_Sub40_Sub37.anInt9461
                 if (i == -30206) {
-                    if (i_2_ - -Class289.aClass46_3701!!.anInt709 > (Class348_Sub40_Sub37.anInt9461 - -Class331.aClass46_4130!!.anInt709)) i_2_ = (Class331.aClass46_4130!!.anInt709 + (Class348_Sub40_Sub37.anInt9461 + -Class289.aClass46_3701!!.anInt709))
+                    if (i_2_ - -RegionSceneLoader.aClass46_3701!!.anInt709 > (Class348_Sub40_Sub37.anInt9461 - -Class331.aClass46_4130!!.anInt709)) i_2_ = (Class331.aClass46_4130!!.anInt709 + (Class348_Sub40_Sub37.anInt9461 + -RegionSceneLoader.aClass46_3701!!.anInt709))
                     if (i_3_ < Class40.anInt558) i_3_ = Class40.anInt558
-                    if (Class289.aClass46_3701!!.anInt789 + i_3_ > (Class40.anInt558 - -Class331.aClass46_4130!!.anInt789)) i_3_ = (-Class289.aClass46_3701!!.anInt789 + (Class40.anInt558 - -Class331.aClass46_4130!!.anInt789))
+                    if (RegionSceneLoader.aClass46_3701!!.anInt789 + i_3_ > (Class40.anInt558 - -Class331.aClass46_4130!!.anInt789)) i_3_ = (-RegionSceneLoader.aClass46_3701!!.anInt789 + (Class40.anInt558 - -Class331.aClass46_4130!!.anInt789))
                     val i_4_ = (-Class348_Sub40_Sub37.anInt9461 + (i_2_ - -Class331.aClass46_4130!!.anInt747))
                     val i_5_ = (-Class40.anInt558 + (i_3_ + Class331.aClass46_4130!!.anInt755))
                     if (GlTexture1D.aClass373_8552!!.method3593(94)) {
-                        if (Class289.aClass46_3701!!.anInt703 < Class318_Sub1.anInt6392) {
+                        if (RegionSceneLoader.aClass46_3701!!.anInt703 < Class318_Sub1.anInt6392) {
                             val i_6_ = i_2_ + -NativeRenderer.anInt8001
                             val i_7_ = -Class348_Sub40_Sub13.anInt9203 + i_3_
-                            if (Class289.aClass46_3701!!.anInt729 < i_6_ || (-Class289.aClass46_3701!!.anInt729 > i_6_) || (i_7_ > Class289.aClass46_3701!!.anInt729) || i_7_ < -Class289.aClass46_3701!!.anInt729) Class300.aBoolean3819 = true
+                            if (RegionSceneLoader.aClass46_3701!!.anInt729 < i_6_ || (-RegionSceneLoader.aClass46_3701!!.anInt729 > i_6_) || (i_7_ > RegionSceneLoader.aClass46_3701!!.anInt729) || i_7_ < -RegionSceneLoader.aClass46_3701!!.anInt729) Class300.aBoolean3819 = true
                         }
-                        if ((Class289.aClass46_3701!!.anObjectArray823 != null) && Class300.aBoolean3819) {
+                        if ((RegionSceneLoader.aClass46_3701!!.anObjectArray823 != null) && Class300.aBoolean3819) {
                             val class348_sub36 = Class348_Sub36()
-                            class348_sub36.aClass46_6989 = Class289.aClass46_3701
+                            class348_sub36.aClass46_6989 = RegionSceneLoader.aClass46_3701
                             class348_sub36.anInt6984 = i_4_
-                            class348_sub36.anObjectArray6987 = (Class289.aClass46_3701!!.anObjectArray823)
+                            class348_sub36.anObjectArray6987 = (RegionSceneLoader.aClass46_3701!!.anObjectArray823)
                             class348_sub36.anInt6995 = i_5_
                             method705(class348_sub36)
                         }
                     } else {
                         if (Class300.aBoolean3819) {
                             Class341.Companion.method2678(-2049)
-                            if (Class289.aClass46_3701!!.anObjectArray692 != null) {
+                            if (RegionSceneLoader.aClass46_3701!!.anObjectArray692 != null) {
                                 val class348_sub36 = Class348_Sub36()
                                 class348_sub36.aClass46_6983 = Class318_Sub1_Sub3_Sub4.aClass46_10336
                                 class348_sub36.anInt6984 = i_4_
-                                class348_sub36.anObjectArray6987 = (Class289.aClass46_3701!!.anObjectArray692)
+                                class348_sub36.anObjectArray6987 = (RegionSceneLoader.aClass46_3701!!.anObjectArray692)
                                 class348_sub36.anInt6995 = i_5_
-                                class348_sub36.aClass46_6989 = Class289.aClass46_3701
+                                class348_sub36.aClass46_6989 = RegionSceneLoader.aClass46_3701
                                 method705(class348_sub36)
                             }
-                            if (Class318_Sub1_Sub3_Sub4.aClass46_10336 != null && (Client.method108(Class289.aClass46_3701) != null)) method173(-67, Class289.aClass46_3701, (Class318_Sub1_Sub3_Sub4.aClass46_10336))
+                            if (Class318_Sub1_Sub3_Sub4.aClass46_10336 != null && (Client.method108(RegionSceneLoader.aClass46_3701) != null)) method173(-67, RegionSceneLoader.aClass46_3701, (Class318_Sub1_Sub3_Sub4.aClass46_10336))
                         } else if ((Class318_Sub1_Sub5.anInt8770 == 1 || method2485(-113)) && Class73.anInt4776 > 2) method191(true, (NativeRenderer.anInt8001 + Class318_Sub4.anInt6411), (ModelDefinitionCache.anInt2872 - -(Class348_Sub40_Sub13.anInt9203)))
                         else if (method913(127.toByte())) method191(true, (NativeRenderer.anInt8001 + Class318_Sub4.anInt6411), (ModelDefinitionCache.anInt2872 + (Class348_Sub40_Sub13.anInt9203)))
-                        Class289.aClass46_3701 = null
+                        RegionSceneLoader.aClass46_3701 = null
                     }
                 }
             }

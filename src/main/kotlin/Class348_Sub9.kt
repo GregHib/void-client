@@ -214,7 +214,7 @@ class Class348_Sub9 : Class348() {
                                 Class348_Sub42_Sub14.method3243(126, class348_sub47)
                             }
                             if (i_8_ == 3) {
-                                Class289.anInt3703++
+                                RegionSceneLoader.anInt3703++
                                 val class348_sub47 = method2148((GlslMaterialPass.aClass351_6244), (Class348_Sub23_Sub2.aClass77_9029), -93)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 Class348_Sub42_Sub14.method3243(-80, class348_sub47)

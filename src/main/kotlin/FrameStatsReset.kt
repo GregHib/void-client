@@ -2782,7 +2782,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9838 = 0
             Class346_Sub1.anInt6538 = 0
             Class318_Sub1_Sub3_Sub4.anInt10363 = 0
-            Class289.anInt3698 = 0
+            RegionSceneLoader.anInt3698 = 0
             Class59_Sub1_Sub2.anInt8661 = 0
             RectangleBounds.anInt2152 = 0
             Class294.anInt5033 = 0
@@ -3041,7 +3041,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class376.anInt4552 = 0
             MediaStreamClient.anInt3194 = 0
             Class367_Sub9.anInt7374 = 0
-            Class289.anInt3703 = 0
+            RegionSceneLoader.anInt3703 = 0
             Class318_Sub1_Sub3_Sub3.anInt10205 = 0
             SceneryDetailOptionState.anInt6085 = 0
             Class356.anInt4375 = 0
@@ -3279,7 +3279,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub4_Sub1.anInt10093 = 0
             Class367_Sub4.anInt7312 = 0
             Class318_Sub1_Sub5.anInt8767 = 0
-            Class289.anInt3696 = 0
+            RegionSceneLoader.anInt3696 = 0
             FrameBufferObject.anInt4868 = 0
             FloatCameraTransform.anInt5730 = 0
             Class79.anInt1326 = 0
@@ -3354,7 +3354,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9862 = 0
             Class59_Sub1_Sub1.anInt8658 = 0
             Class305.anInt3868 = 0
-            Class289.anInt3702 = 0
+            RegionSceneLoader.anInt3702 = 0
             ScriptOpcodeHolder.anInt2337 = 0
             Class348_Sub37.anInt6999 = 0
             Class51.anInt899 = 0

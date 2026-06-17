@@ -161,7 +161,7 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
             Class79.aClient1367!!.method83(true)
             anInt9569++
             method2739(0)
-            Class289.anInt3699 = 0
+            RegionSceneLoader.anInt3699 = 0
             Class348_Sub40_Sub36.aIntRange_9456 = null
             Class348_Sub50.anInt7213 = 0
             GraphicsOptionState.aIntRange_3145 = null

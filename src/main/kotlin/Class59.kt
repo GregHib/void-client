@@ -309,7 +309,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                         class348_sub12.anInt6753 = i_69_
                         class348_sub12.anInt6747 = i_58_ - i_56_
                         class348_sub12.anInt6745 = i_68_
-                        Class289.aNodeDeque_3705!!.method1999(class348_sub12, -20180)
+                        RegionSceneLoader.aNodeDeque_3705!!.method1999(class348_sub12, -20180)
                     }
                 }
             } catch (runtimeexception: RuntimeException) {

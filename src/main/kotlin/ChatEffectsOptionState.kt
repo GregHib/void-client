@@ -120,7 +120,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         fun method1731(i: Int) {
             anInt5863++
             val class348_sub45 = (Class318_Sub1_Sub3.aNodeDeque_8744!!.method1995(i xor 0x5) as Class348_Sub45?)
-            val bool = (Class289.aClass46_3701 != null || Class348_Sub42.anInt7059 > 0)
+            val bool = (RegionSceneLoader.aClass46_3701 != null || Class348_Sub42.anInt7059 > 0)
             val i_19_ = class348_sub45!!.method3308((-128).toByte())
             val i_20_ = class348_sub45.method3311(119)
             if (bool) NpcEntityUpdater.anInt3655 = 1

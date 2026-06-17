@@ -34,7 +34,7 @@ object VideoAdChecker {
     fun method1891(i: Int): Boolean {
         if (i != 314376967) VideoAdChecker.method1890(-22, (-36).toByte(), 19, 113)
         anInt3184++
-        if (Class289.aBoolean3697) {
+        if (RegionSceneLoader.aBoolean3697) {
             try {
                 return !(method1617(125.toByte(), Class93.anApplet1530, "showingVideoAd") as Boolean)
             } catch (throwable: Throwable) {

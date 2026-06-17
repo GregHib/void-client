@@ -151,7 +151,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
         fun method1053(i: Int): Int {
             anInt1728++
             if (i != 3112) method1052(121.toByte())
-            if (Class289.aClass46_3701 == null) {
+            if (RegionSceneLoader.aClass46_3701 == null) {
                 if (!Class5_Sub1.aBoolean8335 && Class316.aClass348_Sub42_Sub12_3963 != null) return (Class316.aClass348_Sub42_Sub12_3963!!.anInt9609)
                 val i_2_ = GlTexture1D.aClass373_8552!!.method3597(true)
                 val i_3_ = GlTexture1D.aClass373_8552!!.method3594(81.toByte())

@@ -126,7 +126,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
                 for (i_7_ in 0..3) {
                     var i_8_ = 0
                     while (Class348_Sub40_Sub3.anInt9109 > i_8_) {
-                        Class289.aByteArrayArrayArray3700!![i_7_]!![i_6_]!![i_8_] = i_5_
+                        RegionSceneLoader.aByteArrayArrayArray3700!![i_7_]!![i_6_]!![i_8_] = i_5_
                         i_8_++
                     }
                 }

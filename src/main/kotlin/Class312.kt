@@ -69,7 +69,7 @@ class Class312 {
                 GraphicsOptionState.aIntRange_3145 = null
                 Class348_Sub50.anInt7213 = 0
                 Class348_Sub3.aIntRange_6584 = null
-                Class289.anInt3699 = 0
+                RegionSceneLoader.anInt3699 = 0
                 method3153(0)
                 method3147(27.toByte())
                 for (i_0_ in 0..2047) Class294.aPlayerArray5058!![i_0_] = null

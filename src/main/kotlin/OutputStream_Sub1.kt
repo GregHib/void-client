@@ -120,7 +120,7 @@ class OutputStream_Sub1 : OutputStream() {
                         SceneProjector.method1634(
                             Class64.anIntArray1127,
                             -2,
-                            Class289.aByteArrayArrayArray3700,
+                            RegionSceneLoader.aByteArrayArrayArray3700,
                             (LocalPlayerState.aPlayer_1907!!.y) shr 9,
                             (LocalPlayerState.aPlayer_1907!!.plane) - -1,
                             Class327.anIntArray4097,
@@ -142,7 +142,7 @@ class OutputStream_Sub1 : OutputStream() {
                         GlslMaterialPass.anInt6246,
                         Class305.anInt3855,
                         Class59_Sub2_Sub2.anInt8685,
-                        Class289.aByteArrayArrayArray3700,
+                        RegionSceneLoader.aByteArrayArrayArray3700,
                         Class327.anIntArray4097,
                         LinkedListIterator.anIntArray2117,
                         Class348_Sub40_Sub19.anIntArray9259,

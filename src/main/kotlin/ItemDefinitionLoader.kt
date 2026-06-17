@@ -135,7 +135,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
                 class105!!.method974(i_7_ + -8, -8 + i_8_)
                 Class338.method2663(-5590, i_7_ - 8, class105.method966() + i_7_ + -8, -8 + i_8_, class105.method980() + -8 + i_8_)
             }
-            Class289.method2192(80.toByte())
+            RegionSceneLoader.method2192(80.toByte())
         }
     }
 }

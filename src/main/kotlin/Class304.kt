@@ -1,6 +1,6 @@
 import GlVertexBufferArb.Companion.method2131
 import TexGenMaterialPass.Companion.method2161
-import Class289.method2194
+import RegionSceneLoader.method2194
 import OutputStream_Sub2.Companion.method138
 
 /* Class304 - Decompiled by JODE

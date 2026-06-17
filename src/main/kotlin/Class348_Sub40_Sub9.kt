@@ -64,7 +64,7 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
             val i_0_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350)
             val i_1_ = 14 / ((i - -34) / 61)
             if (i_0_ == 0) {
-                Class289.aByteArrayArrayArray3700 = null
+                RegionSceneLoader.aByteArrayArrayArray3700 = null
                 Class46.method440(0, (-61).toByte())
             } else if (i_0_ == 1) {
                 Class301.method2280(0.toByte(), 28587)

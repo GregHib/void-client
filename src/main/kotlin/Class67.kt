@@ -64,7 +64,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heap
 
         fun method717(i: Int): Boolean {
             anInt4645++
-            if (Class289.aBoolean3697) {
+            if (RegionSceneLoader.aBoolean3697) {
                 try {
                     JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "showVideoAd")
                     return true

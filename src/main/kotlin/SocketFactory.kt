@@ -60,7 +60,7 @@ abstract class SocketFactory {
                 Class348_Sub7.aSpriteImage_6643 = null
                 Class295.anInt3762 = i_8_
                 Class348_Sub40_Sub1.aSpriteImage_9090 = null
-                Class289.anInt3704 = i_3_
+                RegionSceneLoader.anInt3704 = i_3_
                 ConnectionStateRefs.anInt317 = i_5_
                 anInt3471++
                 NormalMapGenerator.anInt3451 = i_0_

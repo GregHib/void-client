@@ -113,7 +113,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                     var i_18_ = 0
                     while ( /**/class46s!!.size > i_18_) {
                         val class46 = class46s[i_18_]
-                        if (class46 != null && (class46.anInt834 == i_16_ || (i_16_ == -1412584499 && Class289.aClass46_3701 == class46))) {
+                        if (class46 != null && (class46.anInt834 == i_16_ || (i_16_ == -1412584499 && RegionSceneLoader.aClass46_3701 == class46))) {
                             val i_19_ = i_11_ + class46.anInt800
                             val i_20_ = class46.anInt750 + i_10_
                             val i_21_ = 1 + (class46.anInt709 + i_19_)
@@ -137,7 +137,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                 }
                                 var i_28_ = class46.anInt696
                                 if (Class299_Sub2.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127
-                                if (class46 == Class289.aClass46_3701) {
+                                if (class46 == RegionSceneLoader.aClass46_3701) {
                                     if (i_16_ != -1412584499 && ((Class312.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                         SpriteLoadValidator.anInt4792 = i_10_
                                         Class348_Sub1.anInt6555 = i_11_

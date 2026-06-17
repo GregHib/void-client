@@ -117,7 +117,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             Class75.aClass348_Sub42_Sub14_1243 = null
             HeapDiagnosticsHolder.aClass46_2249 = null
             anInt4290 = 0
-            Class289.aNodeDeque_3705 = null
+            RegionSceneLoader.aNodeDeque_3705 = null
             method749()
             Class75.aNodeDeque_1254!!.method1996(127)
             GlBufferObject.aClass323_4754 = null

@@ -1558,8 +1558,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == WalkingTypeUtil.aIntRange_3307) {
-                if (!Class340.method2672(WorldMapRenderer.anInt4674, -105)) Class289.anInt3699 = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) * 30)
-                else Class289.anInt3699 = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toFloat() * 2.5f).toInt()
+                if (!Class340.method2672(WorldMapRenderer.anInt4674, -105)) RegionSceneLoader.anInt3699 = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) * 30)
+                else RegionSceneLoader.anInt3699 = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toFloat() * 2.5f).toInt()
                 Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true

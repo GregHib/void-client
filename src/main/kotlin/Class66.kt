@@ -3979,7 +3979,7 @@ object Class66 {
                     return
                 }
                 if (i == 3317) {
-                    anIntArray1149!![anInt1173++] = Class289.anInt3699
+                    anIntArray1149!![anInt1173++] = RegionSceneLoader.anInt3699
                     return
                 }
                 if (i == 3318) {

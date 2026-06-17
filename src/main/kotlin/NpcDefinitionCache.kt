@@ -295,14 +295,14 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             } else {
                 if (i_14_ == 0 && ((Class318_Sub1_Sub5.anInt8770 == 1 && Class73.anInt4776 > 2) || method2485(-100))) i_14_ = 2
                 if (i_14_ == 2 && Class73.anInt4776 > 0 && class348_sub45 != null) {
-                    if (Class289.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) Class304.method2291((-124).toByte(), class348_sub45.method3308((-127).toByte()), class348_sub45.method3311(-104))
+                    if (RegionSceneLoader.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) Class304.method2291((-124).toByte(), class348_sub45.method3308((-127).toByte()), class348_sub45.method3311(-104))
                     else NpcEntityUpdater.anInt3655 = 2
                 }
                 if (i_14_ == 0) {
                     if (Class316.aClass348_Sub42_Sub12_3963 != null) method1731(1)
                     else if (RenderNode.aBoolean9722) Class341.method2678(-2049)
                 }
-                if (Class289.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) {
+                if (RegionSceneLoader.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) {
                     RectangleRegion.aClass348_Sub42_Sub12_1946 = null
                     NpcEntityUpdater.anInt3655 = 0
                 }

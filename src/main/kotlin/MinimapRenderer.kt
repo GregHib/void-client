@@ -105,8 +105,8 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         fun method887(class46: Class46?, i: Int, i_5_: Int, i_6_: Int) {
             if (i_6_ == 2147483647) {
                 anInt1589++
-                if (Class289.aClass46_3701 == null && !Class5_Sub1.aBoolean8335 && (class46 != null && (method141(class46, ((-79).toByte()).toByte()) != null))) {
-                    Class289.aClass46_3701 = class46
+                if (RegionSceneLoader.aClass46_3701 == null && !Class5_Sub1.aBoolean8335 && (class46 != null && (method141(class46, ((-79).toByte()).toByte()) != null))) {
+                    RegionSceneLoader.aClass46_3701 = class46
                     Class331.aClass46_4130 = method141(class46, ((-117).toByte()).toByte())
                     Class318_Sub1.anInt6392 = 0
                     ModelDefinitionCache.anInt2872 = i_5_
