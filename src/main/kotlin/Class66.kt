@@ -19,8 +19,8 @@ import SimpleToggleOptionState.Companion.method1742
 import BrightnessOptionState.Companion.method1745
 import FlickeringEffectsOptionState.Companion.method1754
 import ModelDataCache.method298
-import Class27.method312
-import Class27.method317
+import ProjectileConfigUtil.method312
+import ProjectileConfigUtil.method317
 import Class272.Companion.method2051
 import Class286_Sub3.Companion.method2148
 import Class286_Sub3.Companion.method2153
@@ -806,7 +806,7 @@ object Class66 {
             }
             if (i == 5230) {
                 val i_85_ = anIntArray1149!![--anInt1173]
-                Class27.method314((-74).toByte(), i_85_)
+                ProjectileConfigUtil.method314((-74).toByte(), i_85_)
                 return
             }
             if (i == 5231) {

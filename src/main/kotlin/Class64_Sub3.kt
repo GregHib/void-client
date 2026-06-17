@@ -3617,7 +3617,7 @@ class Class64_Sub3 : Class64 {
         @JvmStatic
         fun method690(i: Byte, i_378_: Int) {
             anInt5565++
-            val class348_sub15 = (Class27.aClass356_389!!.method3480(i_378_.toLong(), -6008) as Class348_Sub15?)
+            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i_378_.toLong(), -6008) as Class348_Sub15?)
             val i_379_ = -8 % ((i - -49) / 44)
             if (class348_sub15 != null) {
                 class348_sub15.aClass55_Sub1_6768!!.method508(1)

@@ -6,7 +6,7 @@ import Class59.Companion.method544
 /* Class27 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class27 {
+object ProjectileConfigUtil {
     var anInt387: Int = 0
     @JvmField
     var anInt388: Int = 0

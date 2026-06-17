@@ -563,7 +563,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class51.anInt938 = 0
             Class55.anInt1005 = 0
             Renderer.anInt4561 = 0
-            Class27.anInt393 = 0
+            ProjectileConfigUtil.anInt393 = 0
             Class318_Sub1_Sub4.anInt8761 = 0
             Class318_Sub1_Sub3_Sub3.anInt10272 = 0
             Class64_Sub2.anInt5440 = 0
@@ -2115,7 +2115,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RuntimeException_Sub1.anInt4605 = 0
             CacheArchiveIndex.anInt1775 = 0
             Class348_Sub49.anInt7169 = 0
-            Class27.anInt390 = 0
+            ProjectileConfigUtil.anInt390 = 0
             Class348_Sub42_Sub16_Sub1.anInt10455 = 0
             Class330.anInt4120 = 0
             Class373_Sub2.anInt7449 = 0
@@ -3327,7 +3327,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub1_Sub1.anInt8802 = 0
             GlTexture.anInt4862 = 0
             Class348_Sub5_Sub1.anInt8831 = 0
-            Class27.anInt391 = 0
+            ProjectileConfigUtil.anInt391 = 0
             CacheArchiveIndex.anInt1771 = 0
             RangedGraphicsOptionState.anInt5942 = 0
             DelegatingRenderCanvas.anInt62 = 0
@@ -3700,7 +3700,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub5.anInt8771 = 0
             NativeRenderer.anInt7916 = 0
             Class348_Sub40_Sub9.anInt9168 = 0
-            Class27.anInt397 = 0
+            ProjectileConfigUtil.anInt397 = 0
             Class64_Sub2.anInt5489 = 0
             Class294.anInt5028 = 0
             Class367_Sub4.anInt7321 = 0
@@ -3841,7 +3841,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ShadowQualityOptionState.anInt6009 = 0
             Class348_Sub40_Sub7.anInt9141 = 0
             Class348_Sub45_Sub2.anInt9737 = 0
-            Class27.anInt392 = 0
+            ProjectileConfigUtil.anInt392 = 0
             Class348_Sub49.anInt7193 = 0
             Class326.anInt4083 = 0
             WorldMapScene.anInt3111 = 0

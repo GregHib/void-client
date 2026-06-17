@@ -158,7 +158,7 @@ class Class348_Sub9 : Class348() {
             }
             for (i_5_ in i_1_..i_2_) {
                 for (i_6_ in i_3_..i_4_) {
-                    if ((class318_sub1.aByte6376 < MapAreaDefinition.anInt2524) && i_5_ >= Class37.anInt492 && i_5_ < Class27.anInt387 && i_6_ >= Class348_Sub34.anInt6974 && i_6_ < Class59_Sub1.anInt5293) {
+                    if ((class318_sub1.aByte6376 < MapAreaDefinition.anInt2524) && i_5_ >= Class37.anInt492 && i_5_ < ProjectileConfigUtil.anInt387 && i_6_ >= Class348_Sub34.anInt6974 && i_6_ < Class59_Sub1.anInt5293) {
                         if ((`is` != null && class318_sub1.plane >= i && (`is`[class318_sub1.plane.toInt()]!![i_5_]!![i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((-79).toByte())) {
                             if (!bool && i_5_ >= DisplayModeOptionState.anInt6111 - 16 && i_5_ <= DisplayModeOptionState.anInt6111 + 16 && i_6_ >= Class285_Sub2.anInt8502 - 16 && i_6_ <= Class285_Sub2.anInt8502 + 16) {
                                 if (Class348_Sub40_Sub5.aBoolean9121) {
@@ -203,7 +203,7 @@ class Class348_Sub9 : Class348() {
                         if (WorldMapRenderer.anInt4674 == 10 && Client.method105(class46)!!.method3301(-1 + i_8_, false)) {
                             if (i_8_ == 1) {
                                 ScrollingWidgetComponentNode.anInt8380++
-                                val class348_sub47 = method2148((Class27.aClass351_398), (Class348_Sub23_Sub2.aClass77_9029), -93)
+                                val class348_sub47 = method2148((ProjectileConfigUtil.aClass351_398), (Class348_Sub23_Sub2.aClass77_9029), -93)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 Class348_Sub42_Sub14.method3243(118, class348_sub47)
                             }

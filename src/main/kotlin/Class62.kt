@@ -25,7 +25,7 @@ object Class62 {
     fun method596(i: Int): Array<Class341?> {
         if (i != 20000) anIntArrayArrayArray1116 = null
         anInt1112++
-        return (arrayOf<Class341?>(PerlinTextureProvider.aClass341_5808, Class27.aClass341_399, WorldMapSceneSoftware.aClass341_5821))
+        return (arrayOf<Class341?>(PerlinTextureProvider.aClass341_5808, ProjectileConfigUtil.aClass341_399, WorldMapSceneSoftware.aClass341_5821))
     }
 
     @JvmStatic
@@ -39,11 +39,11 @@ object Class62 {
     fun method598(i: Int) {
         anInt1111++
         if (i != 9013) method597(86.toByte())
-        var class348_sub15 = Class27.aClass356_389!!.method3484(0) as? Class348_Sub15?
+        var class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3484(0) as? Class348_Sub15?
         while (class348_sub15 != null) {
             if (!class348_sub15.aBoolean6772) Class64_Sub3.method690((-94).toByte(), (class348_sub15.anInt6773))
             else class348_sub15.aBoolean6772 = false
-            class348_sub15 = Class27.aClass356_389!!.method3482(0) as? Class348_Sub15?
+            class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3482(0) as? Class348_Sub15?
         }
     }
 

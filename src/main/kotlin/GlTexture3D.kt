@@ -88,8 +88,8 @@ class GlTexture3D : GlTexture {
                 WorldMapRenderer.anInt4686 = -Class348_Sub34.anInt6974
                 Class348_Sub34.anInt6974 = 0
             } else WorldMapRenderer.anInt4686 = 0
-            Class27.anInt387 = DisplayModeOptionState.anInt6111 + Class318_Sub1_Sub4_Sub1.anInt10084
-            if (Class27.anInt387 > Class318_Sub7.anInt6451) Class27.anInt387 = Class318_Sub7.anInt6451
+            ProjectileConfigUtil.anInt387 = DisplayModeOptionState.anInt6111 + Class318_Sub1_Sub4_Sub1.anInt10084
+            if (ProjectileConfigUtil.anInt387 > Class318_Sub7.anInt6451) ProjectileConfigUtil.anInt387 = Class318_Sub7.anInt6451
             Class59_Sub1.anInt5293 = Class285_Sub2.anInt8502 + Class318_Sub1_Sub4_Sub1.anInt10084
             if (Class59_Sub1.anInt5293 > Class348_Sub41.anInt7054) Class59_Sub1.anInt5293 = Class348_Sub41.anInt7054
             val bools = Class99.aBooleanArrayArray1572
@@ -140,7 +140,7 @@ class GlTexture3D : GlTexture {
                 Class99.aBooleanArrayArray1572 = Class369_Sub3.aBooleanArrayArray8596!!
                 Class37.anInt492 = 0
                 Class348_Sub34.anInt6974 = 0
-                Class27.anInt387 = Class318_Sub7.anInt6451
+                ProjectileConfigUtil.anInt387 = Class318_Sub7.anInt6451
                 Class59_Sub1.anInt5293 = Class348_Sub41.anInt7054
                 SkeletalAnimFrameData.aBoolean351 = false
             }

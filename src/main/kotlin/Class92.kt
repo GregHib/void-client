@@ -29,15 +29,15 @@ object Class92 {
             while (i_0_ > i_1_) {
                 if (Class348_Sub50.aByteArrayArray7212!![i_1_] != null) {
                     var i_2_ = -1
-                    for (i_3_ in 0..<Class27.anInt388) {
+                    for (i_3_ in 0..<ProjectileConfigUtil.anInt388) {
                         if (Class342.anIntArray4250!![i_3_] == Class348_Sub23_Sub3.anIntArray9042!![i_1_]) {
                             i_2_ = i_3_
                             break
                         }
                     }
                     if (i_2_ == -1) {
-                        Class342.anIntArray4250!![Class27.anInt388] = Class348_Sub23_Sub3.anIntArray9042!![i_1_]
-                        i_2_ = Class27.anInt388++
+                        Class342.anIntArray4250!![ProjectileConfigUtil.anInt388] = Class348_Sub23_Sub3.anIntArray9042!![i_1_]
+                        i_2_ = ProjectileConfigUtil.anInt388++
                     }
                     val class348_sub49 = Class348_Sub49(Class348_Sub50.aByteArrayArray7212!![i_1_])
                     var i_4_ = 0

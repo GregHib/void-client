@@ -142,7 +142,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         if (class348_sub45.method3310(i xor 0x2cee) == 2) i_11_ = 1
                         val i_12_ = l.toInt()
                         ParticleEmitterNode.anInt182++
-                        val class348_sub47 = method2148(Class27.aClass351_395, (Class348_Sub23_Sub2.aClass77_9029), i + -11525)
+                        val class348_sub47 = method2148(ProjectileConfigUtil.aClass351_395, (Class348_Sub23_Sub2.aClass77_9029), i + -11525)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_12_ or (i_11_ shl 15))
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(121.toByte(), i_9_ shl 16 or i_10_)
                         Class348_Sub42_Sub14.method3243(25, class348_sub47)

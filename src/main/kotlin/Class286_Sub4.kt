@@ -171,7 +171,7 @@ class Class286_Sub4 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
         fun method2157(i: Int, i_15_: Int): String? {
             anInt6238++
             if (i_15_ != -1431655765) method2157(-27, 75)
-            val class348_sub15 = (Class27.aClass356_389!!.method3480(i.toLong(), -6008) as Class348_Sub15?)
+            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i.toLong(), -6008) as Class348_Sub15?)
             if (class348_sub15 != null) {
                 val class348_sub23_sub4 = class348_sub15.aClass55_Sub1_6768!!.method513(i_15_ + 1431655815)
                 if (class348_sub23_sub4 != null) {

@@ -1742,7 +1742,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 var bool_233_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 if (bool_233_) Class299.aClass348_Sub49_Sub2_3813!!.readString(108.toByte())
                 val l = Class299.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
-                Class50.aString863 = Class27.method313(l, -104)
+                Class50.aString863 = ProjectileConfigUtil.method313(l, -104)
                 ModelDefinitionCache.aByte2871 = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-90)
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if (i == 255) {

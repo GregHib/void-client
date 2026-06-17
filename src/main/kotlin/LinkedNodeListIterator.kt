@@ -310,7 +310,7 @@ class LinkedNodeListIterator {
             val `is` = CameraRotationStub.aRenderer326!!.Y()
             Gl3dTexture.anInt8630 = `is`[2]
             MediaStreamClient.anInt3202 = `is`[0]
-            Class27.anInt394 = `is`[3]
+            ProjectileConfigUtil.anInt394 = `is`[3]
             SimpleToggleOptionState.anInt5886 = `is`[1]
             if (bool_42_) {
                 CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)

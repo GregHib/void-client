@@ -58,7 +58,7 @@ object MinimapFlagRenderer {
         LocalPlayerState.anIntArray1909 = null
         Class92.anInterface4Array1525 = null
         method828(38.toByte(), i_3_, i_5_)
-        Class27.anInt396 = -1
+        ProjectileConfigUtil.anInt396 = -1
         Class295.anInt3760 = -1
         Class369_Sub1.anInt8583 = -1
         val i_6_ = 90 % ((70 - i_2_) / 33)

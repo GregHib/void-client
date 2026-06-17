@@ -182,7 +182,7 @@ import CompassSmoother.Companion.method2018
 import SlotBinding.Companion.method2026
 import SlotBinding.Companion.method2029
 import LocDefinitionCache.Companion.method2036
-import Class27.method315
+import ProjectileConfigUtil.method315
 import Class270.Companion.method2043
 import Class271.Companion.method2045
 import Class272.Companion.method2048
@@ -896,7 +896,7 @@ class Client : GameAppletFrame() {
         method2018(0)
         method2527()
         method1619(108.toByte())
-        Class27.method316((-94).toByte())
+        ProjectileConfigUtil.method316((-94).toByte())
         method2199(63.toByte())
         GzipDecompressor.method1216((-97).toByte())
         method2286(114)

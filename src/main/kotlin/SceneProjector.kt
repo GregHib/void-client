@@ -265,7 +265,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             CameraRotationStub.aRenderer326!!.la()
                             CameraRotationStub.aRenderer326!!.ya()
                             CameraRotationStub.aRenderer326!!.GA(Class77.anInt1290)
-                            Class51.aAbstractCameraTransform_905!!.method903(AnimatedModelRenderer.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396)
+                            Class51.aAbstractCameraTransform_905!!.method903(AnimatedModelRenderer.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, ProjectileConfigUtil.anInt396)
                             CameraRotationStub.aRenderer326!!.method3638(Class51.aAbstractCameraTransform_905)
                             if (Class348_Sub49.anInt7207 == 1) {
                                 Class328_Sub1_Sub1.anInt8799 = i_17_

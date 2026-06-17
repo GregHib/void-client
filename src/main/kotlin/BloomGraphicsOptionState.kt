@@ -77,11 +77,11 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1772(i: Int) {
             anInt5968++
-            var class348_sub15 = Class27.aClass356_389!!.method3484(0) as Class348_Sub15?
+            var class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3484(0) as Class348_Sub15?
             if (i <= 4) aString5966 = null
             while ( /**/class348_sub15 != null) {
                 Class64_Sub3.method690(108.toByte(), (class348_sub15.anInt6773))
-                class348_sub15 = Class27.aClass356_389!!.method3482(0) as Class348_Sub15?
+                class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3482(0) as Class348_Sub15?
             }
         }
 

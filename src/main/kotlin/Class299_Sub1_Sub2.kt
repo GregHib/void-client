@@ -207,7 +207,7 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer, i: In
         @JvmStatic
         fun method2263(var_renderer: Renderer?, i: Int, i_4_: Int): AbstractModelRenderer? {
             anInt8705++
-            val class348_sub15 = (Class27.aClass356_389!!.method3480(i_4_.toLong(), -6008) as Class348_Sub15?)
+            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i_4_.toLong(), -6008) as Class348_Sub15?)
             if (class348_sub15 != null) {
                 val class348_sub23_sub2 = class348_sub15.aClass55_Sub1_6768!!.method506(false)
                 class348_sub15.aBoolean6772 = true

@@ -1,4 +1,4 @@
-import Class27.method313
+import ProjectileConfigUtil.method313
 import Class98.Companion.method878
 
 /* Class135_Sub2 - Decompiled by JODE

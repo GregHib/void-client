@@ -20,7 +20,7 @@ object Class3 {
         Class44.aAbstractCameraTransform_624 = null
         anInt124++
         val i_0_ = 9 / ((62 - i) / 47)
-        Class27.anInt396 = -1
+        ProjectileConfigUtil.anInt396 = -1
         Class51.aAbstractCameraTransform_905 = null
         Class348_Sub49.anInt7207 = -1
         Class369_Sub1.anInt8583 = -1

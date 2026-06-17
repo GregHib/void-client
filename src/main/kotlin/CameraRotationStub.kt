@@ -37,10 +37,10 @@ class CameraRotationStub {
 
         fun method289(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
             anInt324++
-            if (Class369_Sub1.anInt8583 != i_2_ || Class295.anInt3760 != i_0_ || i_1_ != Class27.anInt396) {
+            if (Class369_Sub1.anInt8583 != i_2_ || Class295.anInt3760 != i_0_ || i_1_ != ProjectileConfigUtil.anInt396) {
                 Class369_Sub1.anInt8583 = i_2_
                 Class348_Sub16_Sub2.aBoolean8870 = true
-                Class27.anInt396 = i_1_
+                ProjectileConfigUtil.anInt396 = i_1_
                 Class295.anInt3760 = i_0_
                 val d = -((i_2_ * 2).toDouble() * 3.141592653589793) / 16384.0
                 val d_3_ = -(3.141592653589793 * (2 * i_0_).toDouble()) / 16384.0
