@@ -6,13 +6,13 @@ abstract class Sprite {
         @JvmField
         var anInt113: Int = 0
         @JvmField
-        var aClass144_114: Class144? = null
+        var aLinkedQueueNode_114: LinkedQueueNode? = null
         @JvmField
         var anInt115: Int = 0
 
         @JvmStatic
         fun method158(i: Byte) {
-            aClass144_114 = null
+            aLinkedQueueNode_114 = null
             val i_0_ = -87 % ((-25 - i) / 41)
         }
 
@@ -29,7 +29,7 @@ abstract class Sprite {
                     i_2_++
                 }
             } else Class363.aString4461 = ""
-            if (i != -615751774) aClass144_114 = null
+            if (i != -615751774) aLinkedQueueNode_114 = null
             anInt115++
         }
 

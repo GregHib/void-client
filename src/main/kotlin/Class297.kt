@@ -32,28 +32,28 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     var aBoolean3794: Boolean = false
     @JvmField
     var aClass234Array3795: Array<Class234?>? = null
-    private var aClass144_3797: Class144? = null
-    private var aClass144_3798: Class144? = null
+    private var aLinkedQueueNode_3797: LinkedQueueNode? = null
+    private var aLinkedQueueNode_3798: LinkedQueueNode? = null
     var anEventQueue3799: EventQueue? = null
     private var aBoolean3801 = false
     private var aDirectDrawDisplayMode_3802: DirectDrawDisplayMode? = null
 
-    fun method2229(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte): Class144 {
+    fun method2229(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte): LinkedQueueNode {
         if (i_3_.toInt() != -11) aLong3781 = 34L
         return method2246(8, (i_1_ shl 16) - -i, 6, i_0_ + (i_2_ shl 16), null)
     }
 
-    fun method2230(var_classes: Array<Class<*>?>?, i: Int, var_class: Class<*>?, string: String?): Class144? {
+    fun method2230(var_classes: Array<Class<*>?>?, i: Int, var_class: Class<*>?, string: String?): LinkedQueueNode? {
         if (i < 49) return null
         return method2246(8, 0, 8, 0, arrayOf<Any?>(var_class, string, var_classes))
     }
 
-    fun method2232(i: Int, i_4_: Int): Class144 {
+    fun method2232(i: Int, i_4_: Int): LinkedQueueNode {
         if (i <= 20) method2236(null, -123, -128)
         return method2246(8, 0, 3, i_4_, null)
     }
 
-    fun method2233(i: Byte, string: String?, bool: Boolean): Class144? {
+    fun method2233(i: Byte, string: String?, bool: Boolean): LinkedQueueNode? {
         if (i.toInt() != -46) return null
         if (!bool) return method2246(8, 0, 13, 0, string)
         return method2246(8, 0, 12, 0, string)
@@ -61,14 +61,14 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
 
     override fun run() {
         while (true) {
-            val class144: Class144?
+            val linkedQueueNode: LinkedQueueNode?
             synchronized(this) {
                 while (true) {
                     if (aBoolean3801) return
-                    if (aClass144_3797 != null) {
-                        class144 = aClass144_3797
-                        aClass144_3797 = aClass144_3797!!.aClass144_1995
-                        if (aClass144_3797 == null) aClass144_3798 = null
+                    if (aLinkedQueueNode_3797 != null) {
+                        linkedQueueNode = aLinkedQueueNode_3797
+                        aLinkedQueueNode_3797 = aLinkedQueueNode_3797!!.aLinkedQueueNode_1995
+                        if (aLinkedQueueNode_3797 == null) aLinkedQueueNode_3798 = null
                         break
                     }
                     try {
@@ -79,86 +79,86 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                 }
             }
             try {
-                val i = class144!!.anInt1994
+                val i = linkedQueueNode!!.anInt1994
                 if (i == 1) {
                     if (aLong3781 > method599(-53)) throw IOException()
                     if (Loader.debug) {
-                        println("Connect: " + class144.anObject1996 + " " + class144.anInt2000)
+                        println("Connect: " + linkedQueueNode.anObject1996 + " " + linkedQueueNode.anInt2000)
                     }
-                    class144.anObject1998 = Socket(InetAddress.getByName((class144.anObject1996) as String?), class144.anInt2000)
+                    linkedQueueNode.anObject1998 = Socket(InetAddress.getByName((linkedQueueNode.anObject1996) as String?), linkedQueueNode.anInt2000)
                 } else if (i == 22) {
                     if (aLong3781 > method599(-92)) throw IOException()
                     try {
-                        class144.anObject1998 = Class61.method593(class144.anInt2000, (-90).toByte(), (class144.anObject1996 as String?))!!.method2050(-112)
+                        linkedQueueNode.anObject1998 = Class61.method593(linkedQueueNode.anInt2000, (-90).toByte(), (linkedQueueNode.anObject1996 as String?))!!.method2050(-112)
                     } catch (ioexception_sub1: IOException_Sub1) {
-                        class144.anObject1998 = ioexception_sub1.message
+                        linkedQueueNode.anObject1998 = ioexception_sub1.message
                         throw ioexception_sub1
                     }
                 } else if (i == 2) {
-                    val thread = Thread((class144.anObject1996) as Runnable?)
+                    val thread = Thread((linkedQueueNode.anObject1996) as Runnable?)
                     thread.setDaemon(true)
                     thread.start()
-                    thread.setPriority(class144.anInt2000)
-                    class144.anObject1998 = thread
+                    thread.setPriority(linkedQueueNode.anInt2000)
+                    linkedQueueNode.anObject1998 = thread
                 } else if (i == 4) {
                     if (method599(-73) < aLong3781) throw IOException()
-                    class144.anObject1998 = DataInputStream(((class144.anObject1996) as URL).openStream())
+                    linkedQueueNode.anObject1998 = DataInputStream(((linkedQueueNode.anObject1996) as URL).openStream())
                 } else if (i == 8) {
-                    val objects = (class144.anObject1996 as Array<Any?>?)
+                    val objects = (linkedQueueNode.anObject1996 as Array<Any?>?)
                     if (this.aBoolean3777 && ((objects!![0] as Class<*>).getClassLoader() == null)) throw SecurityException()
-                    class144.anObject1998 = ((objects!![0] as Class<*>).getDeclaredMethod(objects[1] as String?, *(objects[2] as Array<Class<*>?>)))
+                    linkedQueueNode.anObject1998 = ((objects!![0] as Class<*>).getDeclaredMethod(objects[1] as String?, *(objects[2] as Array<Class<*>?>)))
                 } else if (i == 9) {
-                    val objects = (class144.anObject1996 as Array<Any?>?)
+                    val objects = (linkedQueueNode.anObject1996 as Array<Any?>?)
                     if (this.aBoolean3777 && ((objects!![0] as Class<*>).getClassLoader() == null)) throw SecurityException()
-                    class144.anObject1998 = ((objects!![0] as Class<*>).getDeclaredField(objects[1] as String?))
+                    linkedQueueNode.anObject1998 = ((objects!![0] as Class<*>).getDeclaredField(objects[1] as String?))
                 } else if (i == 18) {
                     val clipboard = Toolkit.getDefaultToolkit().getSystemClipboard()
-                    class144.anObject1998 = clipboard.getContents(null)
+                    linkedQueueNode.anObject1998 = clipboard.getContents(null)
                 } else if (i == 19) {
-                    val transferable = ((class144.anObject1996) as Transferable?)
+                    val transferable = ((linkedQueueNode.anObject1996) as Transferable?)
                     val clipboard = Toolkit.getDefaultToolkit().getSystemClipboard()
                     clipboard.setContents(transferable, null)
                 } else if (this.aBoolean3777) {
                     if (i == 3) {
                         if (aLong3781 > method599(-123)) throw IOException()
-                        val string = (((0xff and (class144.anInt2000 shr 24))).toString() + "." + (0xff and (class144.anInt2000 shr 16)) + "." + ((class144.anInt2000 shr 8) and 0xff) + "." + (0xff and class144.anInt2000))
-                        class144.anObject1998 = InetAddress.getByName(string).getHostName()
+                        val string = (((0xff and (linkedQueueNode.anInt2000 shr 24))).toString() + "." + (0xff and (linkedQueueNode.anInt2000 shr 16)) + "." + ((linkedQueueNode.anInt2000 shr 8) and 0xff) + "." + (0xff and linkedQueueNode.anInt2000))
+                        linkedQueueNode.anObject1998 = InetAddress.getByName(string).getHostName()
                     } else if (i == 21) {
                         if (method599(-82) < aLong3781) throw IOException()
-                        class144.anObject1998 = InetAddress.getByName((class144.anObject1996) as String?).getAddress()
+                        linkedQueueNode.anObject1998 = InetAddress.getByName((linkedQueueNode.anObject1996) as String?).getAddress()
                     } else if (i != 5) {
                         if (i == 6) {
                             val frame = (Frame("Jagex Full Screen"))
-                            class144.anObject1998 = frame
+                            linkedQueueNode.anObject1998 = frame
                             frame.setResizable(false)
-                            if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1146((class144.anInt2000 and 0xffff), (class144.anInt1999 shr 16), (class144.anInt2000 ushr 16), -43, 0xffff and (class144.anInt1999), frame)
-                            else (anObject3793 as Class7).method209(frame, ((class144.anInt2000) ushr 16), (0xffff and (class144.anInt2000)), ((class144.anInt1999) shr 16), ((class144.anInt1999) and 0xffff))
+                            if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1146((linkedQueueNode.anInt2000 and 0xffff), (linkedQueueNode.anInt1999 shr 16), (linkedQueueNode.anInt2000 ushr 16), -43, 0xffff and (linkedQueueNode.anInt1999), frame)
+                            else (anObject3793 as Class7).method209(frame, ((linkedQueueNode.anInt2000) ushr 16), (0xffff and (linkedQueueNode.anInt2000)), ((linkedQueueNode.anInt1999) shr 16), ((linkedQueueNode.anInt1999) and 0xffff))
                         } else if (i == 7) {
-                            if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1147(((class144.anObject1996) as Frame?), 8)
+                            if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1147(((linkedQueueNode.anObject1996) as Frame?), 8)
                             else (anObject3793 as Class7).method211()
                         } else if (i == 12) {
-                            val class234: Class234? = (method2241(((class144.anObject1996) as String?), 12606, Companion.aString3789, anInt3792))
-                            class144.anObject1998 = class234
+                            val class234: Class234? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, Companion.aString3789, anInt3792))
+                            linkedQueueNode.anObject1998 = class234
                         } else if (i == 13) {
-                            val class234: Class234? = (method2241(((class144.anObject1996) as String?), 12606, "", anInt3792))
-                            class144.anObject1998 = class234
+                            val class234: Class234? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, "", anInt3792))
+                            linkedQueueNode.anObject1998 = class234
                         } else if ((this.aBoolean3777) && i == 14) {
-                            val i_5_ = (class144.anInt2000)
-                            val i_6_ = (class144.anInt1999)
+                            val i_5_ = (linkedQueueNode.anInt2000)
+                            val i_6_ = (linkedQueueNode.anInt1999)
                             if (this.aBoolean3794) aNativeCursorCallback__3776!!.method3621(i_5_, 115.toByte(), i_6_)
                             else (anObject3791 as Class165).method1280((i_5_), (i_6_))
                         } else if ((this.aBoolean3777) && (i == 15)) {
-                            val bool = ((class144.anInt2000) != 0)
-                            val component = ((class144.anObject1996) as Component?)
+                            val bool = ((linkedQueueNode.anInt2000) != 0)
+                            val component = ((linkedQueueNode.anObject1996) as Component?)
                             if (this.aBoolean3794) aNativeCursorCallback__3776!!.method3622(bool, 13259, component!!)
                             else (anObject3791 as Class165).method1281(component, (bool))
                         } else if (!(this.aBoolean3794) && (i == 17)) {
-                            val objects = ((class144.anObject1996) as Array<Any?>?)
-                            (anObject3791 as Class165).method1282((objects!![0] as java.awt.Component?)!!, objects[1] as IntArray?, (class144.anInt2000), (class144.anInt1999), objects[2] as Point?)
+                            val objects = ((linkedQueueNode.anObject1996) as Array<Any?>?)
+                            (anObject3791 as Class165).method1282((objects!![0] as java.awt.Component?)!!, objects[1] as IntArray?, (linkedQueueNode.anInt2000), (linkedQueueNode.anInt1999), objects[2] as Point?)
                         } else if (i == 16) {
                             try {
                                 if (!aString3803.startsWith("win")) throw Exception()
-                                val string = ((class144.anObject1996) as String?)
+                                val string = ((linkedQueueNode.anObject1996) as String?)
                                 if (!(string!!.startsWith("http://")) && !(string.startsWith("https://"))) throw Exception()
                                 val string_7_ = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?&=,.%+-_#:/*"
                                 var i_8_ = 0
@@ -167,24 +167,24 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                                     i_8_++
                                 }
                                 Runtime.getRuntime().exec("cmd /c start \"j\" \"" + string + "\"")
-                                class144.anObject1998 = null
+                                linkedQueueNode.anObject1998 = null
                             } catch (exception: Exception) {
-                                class144.anObject1998 = exception
+                                linkedQueueNode.anObject1998 = exception
                                 throw exception
                             }
                         } else throw Exception("")
-                    } else if (!this.aBoolean3794) class144.anObject1998 = (anObject3793 as Class7).method210()
-                    else class144.anObject1998 = aDirectDrawDisplayMode_3802!!.method1145(true)
+                    } else if (!this.aBoolean3794) linkedQueueNode.anObject1998 = (anObject3793 as Class7).method210()
+                    else linkedQueueNode.anObject1998 = aDirectDrawDisplayMode_3802!!.method1145(true)
                 } else throw Exception("")
-                class144.anInt1997 = 1
+                linkedQueueNode.anInt1997 = 1
             } catch (throwable: Throwable) {
                 if (Loader.trace) {
                     throwable.printStackTrace()
                 }
-                class144!!.anInt1997 = 2
+                linkedQueueNode!!.anInt1997 = 2
             }
-            synchronized(class144) {
-                (class144 as Object).notify()
+            synchronized(linkedQueueNode) {
+                (linkedQueueNode as Object).notify()
             }
         }
     }
@@ -237,21 +237,21 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         } while (false)
     }
 
-    fun method2235(bool: Boolean, i: Int, string: String?, i_10_: Int): Class144? {
+    fun method2235(bool: Boolean, i: Int, string: String?, i_10_: Int): LinkedQueueNode? {
         if (i_10_ != 28225) return null
         return method2246(i_10_ xor 0x6e49, 0, if (bool) 22 else 1, i, string)
     }
 
-    fun method2236(runnable: Runnable?, i: Int, i_11_: Int): Class144 {
+    fun method2236(runnable: Runnable?, i: Int, i_11_: Int): LinkedQueueNode {
         return method2246(8, 0, 2, i_11_, runnable)
     }
 
-    fun method2237(url: URL?, i: Int): Class144? {
+    fun method2237(url: URL?, i: Int): LinkedQueueNode? {
         if (i != 8362) return null
         return method2246(8, 0, 4, 0, url)
     }
 
-    fun method2238(i: Int, `is`: IntArray?, i_12_: Int, point: Point?, component: Component?, i_13_: Int): Class144 {
+    fun method2238(i: Int, `is`: IntArray?, i_12_: Int, point: Point?, component: Component?, i_13_: Int): LinkedQueueNode {
         if (i_12_ != 17) method2240(-75)
         return method2246(i_12_ + -9, i, 17, i_13_, arrayOf<Any?>(component, `is`, point))
     }
@@ -261,7 +261,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         aLong3781 = 5000L + method599(-107)
     }
 
-    fun method2240(i: Int): Class144? {
+    fun method2240(i: Int): LinkedQueueNode? {
         if (i != 972476528) return null
         return method2246(8, 0, 5, 0, null)
     }
@@ -278,7 +278,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         }
     }
 
-    fun method2243(i: Int, string: String?, var_class: Class<*>?): Class144 {
+    fun method2243(i: Int, string: String?, var_class: Class<*>?): LinkedQueueNode {
         if (i != 0) method2239(-13)
         return method2246(8, 0, 9, 0, arrayOf<Any?>(var_class, string))
     }
@@ -288,29 +288,29 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         return anObject3787
     }
 
-    fun method2245(string: String?, i: Int): Class144? {
+    fun method2245(string: String?, i: Int): LinkedQueueNode? {
         if (i != 16) return null
         return method2246(i + -8, 0, 16, 0, string)
     }
 
-    private fun method2246(i: Int, i_19_: Int, i_20_: Int, i_21_: Int, `object`: Any?): Class144 {
-        val class144 = Class144()
-        class144.anObject1996 = `object`
-        class144.anInt1999 = i_19_
-        class144.anInt1994 = i_20_
-        class144.anInt2000 = i_21_
+    private fun method2246(i: Int, i_19_: Int, i_20_: Int, i_21_: Int, `object`: Any?): LinkedQueueNode {
+        val linkedQueueNode = LinkedQueueNode()
+        linkedQueueNode.anObject1996 = `object`
+        linkedQueueNode.anInt1999 = i_19_
+        linkedQueueNode.anInt1994 = i_20_
+        linkedQueueNode.anInt2000 = i_21_
         synchronized(this) {
-            if (aClass144_3798 == null) {
-                aClass144_3797 = class144
-                aClass144_3798 = aClass144_3797
+            if (aLinkedQueueNode_3798 == null) {
+                aLinkedQueueNode_3797 = linkedQueueNode
+                aLinkedQueueNode_3798 = aLinkedQueueNode_3797
             } else {
-                aClass144_3798!!.aClass144_1995 = class144
-                aClass144_3798 = class144
+                aLinkedQueueNode_3798!!.aLinkedQueueNode_1995 = linkedQueueNode
+                aLinkedQueueNode_3798 = linkedQueueNode
             }
             (this as Object).notify()
             if (i != 8) method2235(false, 76, null, 37)
         }
-        return class144
+        return linkedQueueNode
     }
 
     fun method2247(i: Int): Boolean {
@@ -322,7 +322,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         return anObject3793 != null
     }
 
-    fun method2248(i: Byte, frame: Frame?): Class144? {
+    fun method2248(i: Byte, frame: Frame?): LinkedQueueNode? {
         if (i.toInt() != 89) return null
         return method2246(i.toInt() xor 0x51, 0, 7, 0, frame)
     }

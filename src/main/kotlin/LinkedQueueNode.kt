@@ -3,11 +3,11 @@ import kotlin.concurrent.Volatile
 /* Class144 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class144 {
+class LinkedQueueNode {
     @JvmField
     var anInt1994: Int = 0
     @JvmField
-    var aClass144_1995: Class144? = null
+    var aLinkedQueueNode_1995: LinkedQueueNode? = null
     @JvmField
     var anObject1996: Any? = null
 

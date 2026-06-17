@@ -13,7 +13,7 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
     private var aBoolean2654 = false
     private var anInt2656 = 0
     private var anOutputStream2657: OutputStream? = null
-    private var aClass144_2658: Class144? = null
+    private var aLinkedQueueNode_2658: LinkedQueueNode? = null
     private var aBoolean2659 = false
     private var aByteArray2663: ByteArray? = null
     private val aSocket2668: Socket?
@@ -52,7 +52,7 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
                         anInt2648 = (anInt2648 - -1) % anInt2669
                         if (anInt2648 == (anInt2656 - (-anInt2669 - -100)) % anInt2669) throw IOException()
                     }
-                    if (aClass144_2658 == null) aClass144_2658 = aClass297_2649!!.method2236(this, -10240, 3)
+                    if (aLinkedQueueNode_2658 == null) aLinkedQueueNode_2658 = aClass297_2649!!.method2236(this, -10240, 3)
                     (this as Object).notifyAll()
                 } else {
                     /* empty */
@@ -158,17 +158,17 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
                 if (i > -120) method1476((-105).toByte())
                 (this as Object).notifyAll()
             }
-            if (aClass144_2658 != null) {
-                while (aClass144_2658!!.anInt1997 == 0) method2161(105.toByte(), 1L)
-                if (aClass144_2658!!.anInt1997 == 1) {
+            if (aLinkedQueueNode_2658 != null) {
+                while (aLinkedQueueNode_2658!!.anInt1997 == 0) method2161(105.toByte(), 1L)
+                if (aLinkedQueueNode_2658!!.anInt1997 == 1) {
                     try {
-                        (aClass144_2658!!.anObject1998 as Thread).join()
+                        (aLinkedQueueNode_2658!!.anObject1998 as Thread).join()
                     } catch (interruptedexception: InterruptedException) {
                         /* empty */
                     }
                 }
             }
-            aClass144_2658 = null
+            aLinkedQueueNode_2658 = null
         }
     }
 

@@ -812,7 +812,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub3.aIntRange_6584 == Class228.aIntRange_2972) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                Class348_Sub42_Sub6.aClass144_9536 = Class348_Sub23_Sub1.aClass297_8992!!.method2232(80, i)
+                Class348_Sub42_Sub6.aLinkedQueueNode_9536 = Class348_Sub23_Sub1.aClass297_8992!!.method2232(80, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

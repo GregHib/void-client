@@ -29,13 +29,13 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
         @JvmStatic
         fun method1133(i: Int) {
             if (i <= 38) anInt5799 = 61
-            aClass144_5800 = null
+            aLinkedQueueNode_5800 = null
         }
 
         fun method1134(i: Int) {
             Class348_Sub49.method3379(2, 11)
             anInt5802++
-            if (i < 28) aClass144_5800 = null
+            if (i < 28) aLinkedQueueNode_5800 = null
             Class301.method2282(-12648)
             System.gc()
         }
@@ -4197,7 +4197,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
         var anInt5798: Int = 0
         @JvmField
         var anInt5799: Int = 0
-        var aClass144_5800: Class144? = null
+        var aLinkedQueueNode_5800: LinkedQueueNode? = null
         var anInt5802: Int = 0
     }
 }

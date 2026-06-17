@@ -27,7 +27,7 @@ class Class161 {
         else aBoolean2139 = false
     }
 
-    fun method1262(class297: Class297, i: Byte): Class144? {
+    fun method1262(class297: Class297, i: Byte): LinkedQueueNode? {
         if (i.toInt() != 36) method1258(-105, -70, -80)
         anInt2144++
         return class297.method2235(aBoolean2139, (if (aBoolean2146) this.anInt2138 else this.anInt2148), this.aString2147, i.toInt() xor 0x6e65)

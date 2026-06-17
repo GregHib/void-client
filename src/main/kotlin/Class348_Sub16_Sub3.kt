@@ -991,7 +991,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         }
 
         @JvmStatic
-        fun method2862(class297: Class297?, string: String?, i: Int, i_71_: Int): Class144? {
+        fun method2862(class297: Class297?, string: String?, i: Int, i_71_: Int): LinkedQueueNode? {
             try {
                 val i_72_ = 16 % ((-37 - i) / 51)
                 anInt8911++
@@ -999,25 +999,25 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 if (i_71_ == 1) {
                     try {
                         Class224.method1616("openjs", (arrayOf<Any?>(URL(Class93.anApplet1530!!.getCodeBase(), string).toString())), Class93.anApplet1530, 38.toByte())
-                        val class144 = Class144()
-                        class144.anInt1997 = 1
-                        return class144
+                        val linkedQueueNode = LinkedQueueNode()
+                        linkedQueueNode.anInt1997 = 1
+                        return linkedQueueNode
                     } catch (throwable: Throwable) {
-                        val class144 = Class144()
-                        class144.anInt1997 = 2
-                        return class144
+                        val linkedQueueNode = LinkedQueueNode()
+                        linkedQueueNode.anInt1997 = 2
+                        return linkedQueueNode
                     }
                 }
                 if (i_71_ == 2) {
                     try {
                         Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), string), "_blank")
-                        val class144 = Class144()
-                        class144.anInt1997 = 1
-                        return class144
+                        val linkedQueueNode = LinkedQueueNode()
+                        linkedQueueNode.anInt1997 = 1
+                        return linkedQueueNode
                     } catch (exception: Exception) {
-                        val class144 = Class144()
-                        class144.anInt1997 = 2
-                        return class144
+                        val linkedQueueNode = LinkedQueueNode()
+                        linkedQueueNode.anInt1997 = 2
+                        return linkedQueueNode
                     }
                 }
                 if (i_71_ == 3) {
@@ -1028,13 +1028,13 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     }
                     try {
                         Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), string), "_top")
-                        val class144 = Class144()
-                        class144.anInt1997 = 1
-                        return class144
+                        val linkedQueueNode = LinkedQueueNode()
+                        linkedQueueNode.anInt1997 = 1
+                        return linkedQueueNode
                     } catch (exception: Exception) {
-                        val class144 = Class144()
-                        class144.anInt1997 = 2
-                        return class144
+                        val linkedQueueNode = LinkedQueueNode()
+                        linkedQueueNode.anInt1997 = 2
+                        return linkedQueueNode
                     }
                 }
                 throw IllegalArgumentException()

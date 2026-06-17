@@ -8,7 +8,7 @@ import Class62.method599
 class Class348_Sub42_Sub6 internal constructor(var aClass318_Sub1_Sub3_Sub4_9538: Class318_Sub1_Sub3_Sub4?) : Class348_Sub42() {
     companion object {
         var aBoolean9535: Boolean = false
-        var aClass144_9536: Class144? = null
+        var aLinkedQueueNode_9536: LinkedQueueNode? = null
         var anInt9537: Int = 0
         var anInt9539: Int = 0
 
@@ -54,7 +54,7 @@ class Class348_Sub42_Sub6 internal constructor(var aClass318_Sub1_Sub3_Sub4_9538
         @JvmStatic
         fun method3190(bool: Boolean) {
             if (bool != false) aBoolean9535 = true
-            aClass144_9536 = null
+            aLinkedQueueNode_9536 = null
         }
     }
 }

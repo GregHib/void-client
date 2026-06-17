@@ -60,7 +60,7 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
 
     companion object {
         @JvmField
-        var aClass144_8766: Class144? = null
+        var aLinkedQueueNode_8766: LinkedQueueNode? = null
         @JvmField
         var anInt8767: Int = 0
         @JvmField
@@ -96,7 +96,7 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
         @JvmStatic
         fun method2484(i: Int) {
             if (i != 0) method2487(-24)
-            aClass144_8766 = null
+            aLinkedQueueNode_8766 = null
         }
 
         @JvmStatic

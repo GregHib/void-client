@@ -155,15 +155,15 @@ class Class88 {
                         SceneRegionState.anInt197 = 0
                     }
                     if (Class225.anInt2955 == 1) {
-                        if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aClass144_5800 = (Class3.aClass161_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
-                        else FrameStatsReset.aClass144_5800 = (Class255.aClass161_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (Class3.aClass161_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        else FrameStatsReset.aLinkedQueueNode_5800 = (Class255.aClass161_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
                         Class225.anInt2955 = 2
                     }
                     if (Class225.anInt2955 == 2) {
-                        if (FrameStatsReset.aClass144_5800!!.anInt1997 == 2) throw IOException()
-                        if (FrameStatsReset.aClass144_5800!!.anInt1997 != 1) return
-                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982((((FrameStatsReset.aClass144_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
-                        FrameStatsReset.aClass144_5800 = null
+                        if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 == 2) throw IOException()
+                        if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 != 1) return
+                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982((((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
+                        FrameStatsReset.aLinkedQueueNode_5800 = null
                         method2739(0)
                         val class348_sub47 = Class203.method1478(true)
                         class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeByte(false, Class178.aClass29_2339!!.anInt400)
@@ -366,7 +366,7 @@ class Class88 {
                                 Class322.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class206.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class170.anInt5065 = class348_sub49_sub2.readInt((-126).toByte())
-                                Class348_Sub42_Sub6.aClass144_9536 = Class348_Sub23_Sub1.aClass297_8992!!.method2232(116, Class170.anInt5065)
+                                Class348_Sub42_Sub6.aLinkedQueueNode_9536 = Class348_Sub23_Sub1.aClass297_8992!!.method2232(116, Class170.anInt5065)
                                 Class216.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
                                 FrameStatsReset.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class348_Sub6.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944)

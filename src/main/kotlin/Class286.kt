@@ -34,8 +34,8 @@ abstract class Class286 internal constructor(var aHa_Sub2_3684: OpenGlRenderer) 
             val i_3_ = 118 % ((-40 - i) / 50)
             var i_4_ = 0
             while ((class348_sub48.anInt7126 > i_4_)) {
-                if ((class348_sub48.aClass144Array7135!![i_4_] != null) && (class348_sub48.aClass144Array7135!![i_4_]!!.anInt1997) == 0) return false
-                if ((class348_sub48.aClass144Array7127!![i_4_] != null) && (class348_sub48.aClass144Array7127!![i_4_]!!.anInt1997) == 0) return false
+                if ((class348_sub48.aLinkedQueueNodeArray7135!![i_4_] != null) && (class348_sub48.aLinkedQueueNodeArray7135!![i_4_]!!.anInt1997) == 0) return false
+                if ((class348_sub48.aLinkedQueueNodeArray7127!![i_4_] != null) && (class348_sub48.aLinkedQueueNodeArray7127!![i_4_]!!.anInt1997) == 0) return false
                 i_4_++
             }
             return true

@@ -93,9 +93,9 @@ abstract class AbstractMenuEntry {
                 class348_sub48.anInt7130 = class348_sub49.readInt((-126).toByte())
                 class348_sub48.anIntArray7132 = IntArray(class348_sub48.anInt7126)
                 class348_sub48.aByteArrayArrayArray7128 = arrayOfNulls<Array<ByteArray?>>(class348_sub48.anInt7126)
-                class348_sub48.aClass144Array7127 = arrayOfNulls<Class144>(class348_sub48.anInt7126)
+                class348_sub48.aLinkedQueueNodeArray7127 = arrayOfNulls<LinkedQueueNode>(class348_sub48.anInt7126)
                 if (i_5_ > 90) {
-                    class348_sub48.aClass144Array7135 = (arrayOfNulls<Class144>(class348_sub48.anInt7126))
+                    class348_sub48.aLinkedQueueNodeArray7135 = (arrayOfNulls<LinkedQueueNode>(class348_sub48.anInt7126))
                     class348_sub48.anIntArray7131 = IntArray(class348_sub48.anInt7126)
                     class348_sub48.anIntArray7136 = IntArray(class348_sub48.anInt7126)
                     for (i_6_ in 0..<class348_sub48.anInt7126) {
@@ -127,7 +127,7 @@ abstract class AbstractMenuEntry {
                                         var_classes[i_13_] = (Class348_Sub40_Sub1.method3052(11012, strings[i_13_]))
                                         i_13_++
                                     }
-                                    class348_sub48.aClass144Array7127!![i_6_] = (class297!!.method2230(var_classes, 76, Class348_Sub40_Sub1.method3052(11012, string), string_8_))
+                                    class348_sub48.aLinkedQueueNodeArray7127!![i_6_] = (class297!!.method2230(var_classes, 76, Class348_Sub40_Sub1.method3052(11012, string), string_8_))
                                     class348_sub48.aByteArrayArrayArray7128!![i_6_] = `is`
                                 }
                             } else {
@@ -137,7 +137,7 @@ abstract class AbstractMenuEntry {
                                 if (i_7_ == 1) i_15_ = class348_sub49.readInt((-126).toByte())
                                 class348_sub48.anIntArray7132!![i_6_] = i_7_
                                 class348_sub48.anIntArray7136!![i_6_] = i_15_
-                                class348_sub48.aClass144Array7135!![i_6_] = (class297!!.method2243(0, string_14_, Class348_Sub40_Sub1.method3052(11012, string)))
+                                class348_sub48.aLinkedQueueNodeArray7135!![i_6_] = (class297!!.method2243(0, string_14_, Class348_Sub40_Sub1.method3052(11012, string)))
                             }
                         } catch (classnotfoundexception: ClassNotFoundException) {
                             class348_sub48.anIntArray7131!![i_6_] = -1

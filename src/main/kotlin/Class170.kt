@@ -185,14 +185,14 @@ class Class170 : Interface17 {
         @JvmStatic
         fun method1315(i: Int) {
             anInt5077++
-            if (Class318_Sub1_Sub5.aClass144_8766 != null) {
-                if (Class318_Sub1_Sub5.aClass144_8766!!.anInt1997 == 1) {
-                    Class318_Sub1_Sub5.aClass144_8766 = null
+            if (Class318_Sub1_Sub5.aLinkedQueueNode_8766 != null) {
+                if (Class318_Sub1_Sub5.aLinkedQueueNode_8766!!.anInt1997 == 1) {
+                    Class318_Sub1_Sub5.aLinkedQueueNode_8766 = null
                     return
                 }
-                if (Class318_Sub1_Sub5.aClass144_8766!!.anInt1997 == 2) {
+                if (Class318_Sub1_Sub5.aLinkedQueueNode_8766!!.anInt1997 == 2) {
                     method2862(Class195.aClass297_5017, Class348_Sub42_Sub8.aString9554, -120, 2)
-                    Class318_Sub1_Sub5.aClass144_8766 = null
+                    Class318_Sub1_Sub5.aLinkedQueueNode_8766 = null
                     return
                 }
             }

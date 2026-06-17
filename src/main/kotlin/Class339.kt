@@ -12,7 +12,7 @@ import java.net.URL
 import kotlin.concurrent.Volatile
 
 class Class339 : Runnable {
-    private var aClass144_4201: Class144? = null
+    private var aLinkedQueueNode_4201: LinkedQueueNode? = null
     private var aClass295Array4204: Array<Class295?>? = null
 
     @Volatile
@@ -21,7 +21,7 @@ class Class339 : Runnable {
     override fun run() {
         anInt4203++
         try {
-            val bufferedreader = BufferedReader(InputStreamReader((aClass144_4201!!.anObject1998) as DataInputStream?))
+            val bufferedreader = BufferedReader(InputStreamReader((aLinkedQueueNode_4201!!.anObject1998) as DataInputStream?))
             var string = bufferedreader.readLine()
             val class179 = method381(68.toByte())
             while ( /**/string != null) {
@@ -52,17 +52,17 @@ class Class339 : Runnable {
     fun method2668(i: Int): Boolean {
         anInt4208++
         if (aBoolean4205) return true
-        if (aClass144_4201 == null) {
+        if (aLinkedQueueNode_4201 == null) {
             try {
                 val i_15_ = (if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) 80 else 7000 - -(GlElementArrayBuffer.aClass161_4839!!.anInt2143))
-                aClass144_4201 = (Class348_Sub23_Sub1.aClass297_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aClass161_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987), 8362))
+                aLinkedQueueNode_4201 = (Class348_Sub23_Sub1.aClass297_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aClass161_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987), 8362))
             } catch (malformedurlexception: MalformedURLException) {
                 return true
             }
         }
-        if (aClass144_4201 == null || aClass144_4201!!.anInt1997 == 2) return true
+        if (aLinkedQueueNode_4201 == null || aLinkedQueueNode_4201!!.anInt1997 == 2) return true
         if (i != -21913) return false
-        if (aClass144_4201!!.anInt1997 != 1) return false
+        if (aLinkedQueueNode_4201!!.anInt1997 != 1) return false
         if (aThread4206 == null) {
             aThread4206 = Thread(this)
             aThread4206!!.start()
