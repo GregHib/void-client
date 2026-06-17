@@ -19,19 +19,19 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     @JvmField
     var aBoolean3777: Boolean = false
     @JvmField
-    var aClass234_3779: Class234? = null
+    var aRandomAccessFileOnDisk_3779: RandomAccessFileOnDisk? = null
     @JvmField
-    var aClass234_3785: Class234? = null
+    var aRandomAccessFileOnDisk_3785: RandomAccessFileOnDisk? = null
     private var anObject3787: Any? = null
     @JvmField
-    var aClass234_3788: Class234? = null
+    var aRandomAccessFileOnDisk_3788: RandomAccessFileOnDisk? = null
     private val aThread3790: Thread
     private var anObject3791: Any? = null
     private var anObject3793: Any? = null
     @JvmField
     var aBoolean3794: Boolean = false
     @JvmField
-    var aClass234Array3795: Array<Class234?>? = null
+    var aRandomAccessFileOnDiskArray3795: Array<RandomAccessFileOnDisk?>? = null
     private var aLinkedQueueNode_3797: LinkedQueueNode? = null
     private var aLinkedQueueNode_3798: LinkedQueueNode? = null
     var anEventQueue3799: EventQueue? = null
@@ -137,11 +137,11 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                             if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1147(((linkedQueueNode.anObject1996) as Frame?), 8)
                             else (anObject3793 as Class7).method211()
                         } else if (i == 12) {
-                            val class234: Class234? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, Companion.aString3789, anInt3792))
-                            linkedQueueNode.anObject1998 = class234
+                            val randomAccessFileOnDisk: RandomAccessFileOnDisk? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, Companion.aString3789, anInt3792))
+                            linkedQueueNode.anObject1998 = randomAccessFileOnDisk
                         } else if (i == 13) {
-                            val class234: Class234? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, "", anInt3792))
-                            linkedQueueNode.anObject1998 = class234
+                            val randomAccessFileOnDisk: RandomAccessFileOnDisk? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, "", anInt3792))
+                            linkedQueueNode.anObject1998 = randomAccessFileOnDisk
                         } else if ((this.aBoolean3777) && i == 14) {
                             val i_5_ = (linkedQueueNode.anInt2000)
                             val i_6_ = (linkedQueueNode.anInt1999)
@@ -196,29 +196,29 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         }
         try {
             aThread3790.join()
-            if (i.toInt() != 103) this.aClass234_3788 = null
+            if (i.toInt() != 103) this.aRandomAccessFileOnDisk_3788 = null
         } catch (interruptedexception: InterruptedException) {
             /* empty */
         }
-        if (this.aClass234_3785 != null) {
+        if (this.aRandomAccessFileOnDisk_3785 != null) {
             try {
-                this.aClass234_3785!!.method1657(false)
+                this.aRandomAccessFileOnDisk_3785!!.method1657(false)
             } catch (ioexception: IOException) {
                 /* empty */
             }
         }
-        if (this.aClass234_3779 != null) {
+        if (this.aRandomAccessFileOnDisk_3779 != null) {
             try {
-                this.aClass234_3779!!.method1657(false)
+                this.aRandomAccessFileOnDisk_3779!!.method1657(false)
             } catch (ioexception: IOException) {
                 /* empty */
             }
         }
-        if (this.aClass234Array3795 != null) {
-            for (i_9_ in this.aClass234Array3795!!.indices) {
-                if (this.aClass234Array3795!![i_9_] != null) {
+        if (this.aRandomAccessFileOnDiskArray3795 != null) {
+            for (i_9_ in this.aRandomAccessFileOnDiskArray3795!!.indices) {
+                if (this.aRandomAccessFileOnDiskArray3795!![i_9_] != null) {
                     try {
-                        this.aClass234Array3795!![i_9_]!!.method1657(false)
+                        this.aRandomAccessFileOnDiskArray3795!![i_9_]!!.method1657(false)
                     } catch (ioexception: IOException) {
                         /* empty */
                     }
@@ -226,9 +226,9 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
             }
         }
         do {
-            if (this.aClass234_3788 != null) {
+            if (this.aRandomAccessFileOnDisk_3788 != null) {
                 try {
-                    this.aClass234_3788!!.method1657(false)
+                    this.aRandomAccessFileOnDisk_3788!!.method1657(false)
                 } catch (ioexception: IOException) {
                     break
                 }
@@ -257,7 +257,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     }
 
     fun method2239(i: Int) {
-        if (i > -90) this.aClass234_3779 = null
+        if (i > -90) this.aRandomAccessFileOnDisk_3779 = null
         aLong3781 = 5000L + method599(-107)
     }
 
@@ -382,13 +382,13 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         }
         FileStoreLocator.method1465((-121).toByte(), Companion.aString3789, anInt3792)
         if (this.aBoolean3777) {
-            this.aClass234_3788 = Class234(method1464(0, anInt3792, "random.dat", null), "rw", 25L)
-            this.aClass234_3785 = Class234(method1466(-2, "main_file_cache.dat2"), "rw", 209715200L)
-            this.aClass234_3779 = Class234(method1466(-2, "main_file_cache.idx255"), "rw", 1048576L)
-            this.aClass234Array3795 = arrayOfNulls<Class234>(i_22_)
+            this.aRandomAccessFileOnDisk_3788 = RandomAccessFileOnDisk(method1464(0, anInt3792, "random.dat", null), "rw", 25L)
+            this.aRandomAccessFileOnDisk_3785 = RandomAccessFileOnDisk(method1466(-2, "main_file_cache.dat2"), "rw", 209715200L)
+            this.aRandomAccessFileOnDisk_3779 = RandomAccessFileOnDisk(method1466(-2, "main_file_cache.idx255"), "rw", 1048576L)
+            this.aRandomAccessFileOnDiskArray3795 = arrayOfNulls<RandomAccessFileOnDisk>(i_22_)
             var i_23_ = 0
             while (i_22_ > i_23_) {
-                this.aClass234Array3795!![i_23_] = Class234(method1466(-2, ("main_file_cache.idx" + i_23_)), "rw", 1048576L)
+                this.aRandomAccessFileOnDiskArray3795!![i_23_] = RandomAccessFileOnDisk(method1466(-2, ("main_file_cache.idx" + i_23_)), "rw", 1048576L)
                 i_23_++
             }
             if (this.aBoolean3794) {
@@ -464,12 +464,12 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         /*synthetic*/
         var aClass3807: Class<*>? = null
 
-        fun method2231(string: String?, i: Int): Class234? {
+        fun method2231(string: String?, i: Int): RandomAccessFileOnDisk? {
             if (i != -1141472112) return null
             return method2241(string, 12606, Companion.aString3789, anInt3792)
         }
 
-        private fun method2241(string: String?, i: Int, string_14_: String?, i_15_: Int): Class234? {
+        private fun method2241(string: String?, i: Int, string_14_: String?, i_15_: Int): RandomAccessFileOnDisk? {
             val string_16_: String?
             if (i_15_ == 33) string_16_ = "jagex_" + string_14_ + "_preferences" + string + "_rc.dat"
             else if (i_15_ != 34) string_16_ = "jagex_" + string_14_ + "_preferences" + string + ".dat"
@@ -481,8 +481,8 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                 val string_18_ = strings[i_17_]
                 if (string_18_.length <= 0 || File(string_18_).exists()) {
                     try {
-                        val class234 = Class234(File(string_18_, string_16_), "rw", 10000L)
-                        return class234
+                        val randomAccessFileOnDisk = RandomAccessFileOnDisk(File(string_18_, string_16_), "rw", 10000L)
+                        return randomAccessFileOnDisk
                     } catch (exception: Exception) {
                         /* empty */
                     }

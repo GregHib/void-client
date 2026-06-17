@@ -3,7 +3,10 @@ import java.io.File
 import java.io.IOException
 import java.io.RandomAccessFile
 
-class Class234 internal constructor(file: File?, string: String?, l: Long) {
+/*
+ * Class234
+ */
+class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, l: Long) {
     private var aRandomAccessFile3036: RandomAccessFile? = null
     private val aLong3037: Long
     private var aLong3039: Long = 0

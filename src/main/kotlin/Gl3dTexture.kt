@@ -40,18 +40,18 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
         @JvmStatic
         fun method247(i: Int): Class348_Sub51? {
             anInt8632++
-            var class234: Class234? = null
+            var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
             var class348_sub51 = Class348_Sub51(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, 0)
             try {
                 val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233((-46).toByte(), "", true)
                 while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-85).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
-                    class234 = class144.anObject1998 as Class234?
-                    val `is` = ByteArray(class234!!.method1662((-46).toByte()).toInt())
+                    randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk?
+                    val `is` = ByteArray(randomAccessFileOnDisk!!.method1662((-46).toByte()).toInt())
                     var i_2_: Int
                     var i_3_ = 0
                     while (`is`.size > i_3_) {
-                        i_2_ = class234.method1656(`is`, i_3_, (-49).toByte(), -i_3_ + `is`.size)
+                        i_2_ = randomAccessFileOnDisk.method1656(`is`, i_3_, (-49).toByte(), -i_3_ + `is`.size)
                         if (i_2_ == -1) throw IOException("EOF")
                         i_3_ += i_2_
                     }
@@ -62,7 +62,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
             }
             if (i != 24916) return null
             try {
-                if (class234 != null) class234.method1657(false)
+                if (randomAccessFileOnDisk != null) randomAccessFileOnDisk.method1657(false)
             } catch (exception: Exception) {
                 /* empty */
             }

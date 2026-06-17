@@ -55,8 +55,8 @@ class IndexedSprite : Sprite {
             if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             val i_3_ = Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
-            if (i_3_ == -Class234.anInt3049) return false
-            if (Class234.anInt3049 == i_3_) return true
+            if (i_3_ == -RandomAccessFileOnDisk.anInt3049) return false
+            if (RandomAccessFileOnDisk.anInt3049 == i_3_) return true
             if (Class332.aTerrainTileArray4142 == NativeSprite.Companion.aTerrainTileArray5191) return false
             val i_4_ = i_0_ shl Class362.anInt4459
             val i_5_ = i_2_ shl Class362.anInt4459
@@ -75,10 +75,10 @@ class IndexedSprite : Sprite {
                 ))
             ) {
                 Class348_Sub23_Sub2.anInt9039++
-                Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = Class234.anInt3049
+                Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = RandomAccessFileOnDisk.anInt3049
                 return true
             }
-            Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = -Class234.anInt3049
+            Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = -RandomAccessFileOnDisk.anInt3049
             return false
         }
 

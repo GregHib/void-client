@@ -2,7 +2,7 @@ import java.io.EOFException
 import java.io.File
 import java.io.IOException
 
-class Class78 internal constructor(private val aClass234_1312: Class234, i: Int, i_22_: Int) {
+class Class78 internal constructor(private val aRandomAccessFileOnDisk_1312: RandomAccessFileOnDisk, i: Int, i_22_: Int) {
     private val aByteArray1305: ByteArray
     private val aByteArray1311: ByteArray
     private var anInt1314 = 0
@@ -33,10 +33,10 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
             }
             if (aByteArray1305.size < i_0_) {
                 if (aLong1315 != aLong1324) {
-                    aClass234_1312.method1661(-18968, aLong1324)
+                    aRandomAccessFileOnDisk_1312.method1661(-18968, aLong1324)
                     aLong1315 = aLong1324
                 }
-                aClass234_1312.method1658(115.toByte(), i, i_0_, `is`)
+                aRandomAccessFileOnDisk_1312.method1658(115.toByte(), i, i_0_, `is`)
                 aLong1315 += i_0_.toLong()
                 if (aLong1317 < aLong1315) aLong1317 = aLong1315
                 var l = -1L
@@ -76,7 +76,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
     private fun method785(i: Int): File? {
         anInt1316++
         if (i != -8659) method785(-88)
-        return aClass234_1312.method1660(i xor 0x2198.inv())
+        return aRandomAccessFileOnDisk_1312.method1660(i xor 0x2198.inv())
     }
 
     fun method787(i: Int): Long {
@@ -110,11 +110,11 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
                 i += i_9_
             }
             if (i_5_ > aByteArray1311.size) {
-                aClass234_1312.method1661(i_6_ + -2251, aLong1324)
+                aRandomAccessFileOnDisk_1312.method1661(i_6_ + -2251, aLong1324)
                 aLong1315 = aLong1324
                 var i_10_: Int
                 while ( /**/i_5_ > 0) {
-                    i_10_ = aClass234_1312.method1656(`is`, i, 8.toByte(), i_5_)
+                    i_10_ = aRandomAccessFileOnDisk_1312.method1656(`is`, i, 8.toByte(), i_5_)
                     if (i_10_ == -1) break
                     i += i_10_
                     aLong1315 += i_10_.toLong()
@@ -180,7 +180,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
     fun method790(i: Byte) {
         anInt1304++
         method791(-1)
-        aClass234_1312.method1657(false)
+        aRandomAccessFileOnDisk_1312.method1657(false)
         val i_17_ = -26 % ((i - -7) / 51)
     }
 
@@ -189,10 +189,10 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
         if (i != -1) aLong1321 = 47L
         if (aLong1321 != -1L) {
             if (aLong1315 != aLong1321) {
-                aClass234_1312.method1661(-18968, aLong1321)
+                aRandomAccessFileOnDisk_1312.method1661(-18968, aLong1321)
                 aLong1315 = aLong1321
             }
-            aClass234_1312.method1658(120.toByte(), 0, anInt1314, aByteArray1305)
+            aRandomAccessFileOnDisk_1312.method1658(120.toByte(), 0, anInt1314, aByteArray1305)
             aLong1315 += anInt1314.toLong()
             if (aLong1317 < aLong1315) aLong1317 = aLong1315
             var l = -1L
@@ -217,14 +217,14 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
         anInt1306++
         if (i.toInt() != -46) method785(111)
         if (aLong1315 != aLong1324) {
-            aClass234_1312.method1661(-18968, aLong1324)
+            aRandomAccessFileOnDisk_1312.method1661(-18968, aLong1324)
             aLong1315 = aLong1324
         }
         aLong1319 = aLong1324
         while (anInt1320 < aByteArray1311.size) {
             var i_20_ = -anInt1320 + aByteArray1311.size
             if (i_20_ > 200000000) i_20_ = 200000000
-            val i_21_ = aClass234_1312.method1656(aByteArray1311, anInt1320, 125.toByte(), i_20_)
+            val i_21_ = aRandomAccessFileOnDisk_1312.method1656(aByteArray1311, anInt1320, 125.toByte(), i_20_)
             if (i_21_ == -1) break
             anInt1320 += i_21_
             aLong1315 += i_21_.toLong()
@@ -232,7 +232,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
     }
 
     init {
-        aLong1317 = aClass234_1312.method1662((-46).toByte())
+        aLong1317 = aRandomAccessFileOnDisk_1312.method1662((-46).toByte())
         aLong1323 = aLong1317
         aByteArray1305 = ByteArray(i_22_)
         aByteArray1311 = ByteArray(i)

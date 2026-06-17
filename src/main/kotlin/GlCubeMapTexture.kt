@@ -34,14 +34,14 @@ class GlCubeMapTexture internal constructor(class377: Class377?, i: Int, bool: B
         @JvmStatic
         fun method243(i: Int) {
             anInt8620++
-            var class234: Class234? = null
+            var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
             try {
                 val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233((-46).toByte(), "", true)
                 while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-122).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
-                    class234 = class144.anObject1998 as Class234?
+                    randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk?
                     val class348_sub49 = Class316.aClass348_Sub51_3959!!.method3427(24)
-                    class234!!.method1658(114.toByte(), 0, (class348_sub49.anInt7197), (class348_sub49.aByteArray7154))
+                    randomAccessFileOnDisk!!.method1658(114.toByte(), 0, (class348_sub49.anInt7197), (class348_sub49.aByteArray7154))
                 }
             } catch (exception: Exception) {
                 /* empty */
@@ -49,8 +49,8 @@ class GlCubeMapTexture internal constructor(class377: Class377?, i: Int, bool: B
             do {
                 try {
                     if (i != 37) aDouble8621 = -0.46512114956219314
-                    if (class234 == null) break
-                    class234.method1657(false)
+                    if (randomAccessFileOnDisk == null) break
+                    randomAccessFileOnDisk.method1657(false)
                 } catch (exception: Exception) {
                     break
                 }

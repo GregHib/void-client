@@ -77,9 +77,9 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
         @JvmStatic
         fun method2405(i: Int) {
             anInt8729++
-            var class234: Class234? = null
+            var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
             try {
-                class234 = Class297.method2231("2", -1141472112)!!
+                randomAccessFileOnDisk = Class297.method2231("2", -1141472112)!!
                 val class348_sub49 = Class348_Sub49(3 + 6 * Class335.anInt4168)
                 class348_sub49.writeByte(false, 1)
                 class348_sub49.writeShort(107.toByte(), Class335.anInt4168)
@@ -92,12 +92,12 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
                     }
                     i_1_++
                 }
-                class234.method1658(117.toByte(), 0, class348_sub49.anInt7197, (class348_sub49.aByteArray7154))
+                randomAccessFileOnDisk.method1658(117.toByte(), 0, class348_sub49.anInt7197, (class348_sub49.aByteArray7154))
             } catch (exception: Exception) {
                 /* empty */
             }
             try {
-                if (class234 != null) class234.method1657(false)
+                if (randomAccessFileOnDisk != null) randomAccessFileOnDisk.method1657(false)
             } catch (exception: Exception) {
                 /* empty */
             }

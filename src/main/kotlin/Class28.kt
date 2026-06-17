@@ -5,7 +5,7 @@ class Class28 : Interface15 {
     override fun method54(i: Int, l: Long, rectangleRegion: RectangleRegion?, `is`: IntArray?): String? {
         try {
             anInt4996++
-            if (Class234.aRectangleRegion_3044 == rectangleRegion) {
+            if (RandomAccessFileOnDisk.aRectangleRegion_3044 == rectangleRegion) {
                 val class117 = Class348_Sub7.aClass33_6653!!.method337(true, `is`!![0])
                 return class117.method1074(l.toInt(), 91)
             }

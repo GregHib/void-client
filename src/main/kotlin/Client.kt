@@ -689,16 +689,16 @@ class Client : GameAppletFrame() {
         LoadProgressCounters.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (-124).toByte())
         Class258_Sub4.aClass373_8552 = method2941(Class305.aCanvas3869, 0, true)
         //        try {
-        if (Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785 != null) {
-            Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785!!), 5200, 0)
-            for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234Array3795!![i_3_]!!), 6000, 0)
-            Class235.aClass78_3075 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3779!!), 6000, 0)
+        if (Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785 != null) {
+            Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
+            for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
+            Class235.aClass78_3075 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
             Class277.aIndexedFileCache_3568 = IndexedFileCache(255, Class299_Sub2.aClass78_6328, Class235.aClass78_3075, 500000)
-            Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3788!!), 24, 0)
-            Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3779 = null
-            Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785 = null
-            Class348_Sub23_Sub1.aClass297_8992!!.aClass234Array3795 = null
-            Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3788 = null
+            Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
+            Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3779 = null
+            Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785 = null
+            Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDiskArray3795 = null
+            Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3788 = null
         }
         //        } catch (java.io.IOException ioexception) {
 //            Class299_Sub2.aClass78_6328 = null;
@@ -822,7 +822,7 @@ class Client : GameAppletFrame() {
         method804(-3752)
         method1564(104)
         method2572(23.toByte())
-        Class234.method1659((-71).toByte())
+        RandomAccessFileOnDisk.method1659((-71).toByte())
         method1461(112.toByte())
         Class239_Sub20.method1807((-121).toByte())
         method1773(120.toByte())
