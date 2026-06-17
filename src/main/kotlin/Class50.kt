@@ -22,7 +22,7 @@ abstract class Class50(@JvmField var anInt864: Int, @JvmField var anInt865: Int,
         }
 
         @JvmStatic
-        fun method459(i: Int, var_ha_Sub2: OpenGlRenderer?, string: String?, bool: Boolean): Class171? {
+        fun method459(i: Int, var_ha_Sub2: OpenGlRenderer?, string: String?, bool: Boolean): RefCountedHandle? {
             try {
                 anInt861++
                 val i_6_ = glGenProgramARB()
@@ -35,7 +35,7 @@ abstract class Class50(@JvmField var anInt864: Int, @JvmField var anInt865: Int,
                     return null
                 }
                 glBindProgramARB(i, 0)
-                return Class171(var_ha_Sub2!!, i, i_6_)
+                return RefCountedHandle(var_ha_Sub2!!, i, i_6_)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("iu.I(" + i + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ')'))
             }

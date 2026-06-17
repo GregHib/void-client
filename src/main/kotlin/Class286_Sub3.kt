@@ -13,7 +13,7 @@ import java.util.*
 class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : Class286(var_ha_Sub2) {
     private var aFloatArray6218: FloatArray? = null
     private var anInt6219 = 0
-    private var aClass171_6220: Class171? = null
+    private var aRefCountedHandle_6220: RefCountedHandle? = null
     private var aClass61_6222: Class61? = null
     private var aFloat6225 = 0f
     private val aClass83_6227: Class83?
@@ -62,13 +62,13 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             try {
                 aClass83_6227 = class83
                 if (!this.aHa_Sub2_3684.aBoolean7841 || (this.aHa_Sub2_3684.anInt7795 < 2)) break
-                aClass171_6220 = (method459(
+                aRefCountedHandle_6220 = (method459(
                     34336,
                     this.aHa_Sub2_3684,
                     "!!ARBvp1.0\nOPTION  ARB_position_invariant;\nATTRIB  iPos         = vertex.position;\nATTRIB  iColour      = vertex.color;\nATTRIB  iTexCoord    = vertex.texcoord[0];\nOUTPUT  oColour      = result.color;\nOUTPUT  oTexCoord0   = result.texcoord[0];\nOUTPUT  oTexCoord1   = result.texcoord[1];\nOUTPUT  oFogCoord    = result.fogcoord;\nPARAM   time         = program.local[65];\nPARAM   turbulence   = program.local[64];\nPARAM   lightAmbient = program.local[66]; \nPARAM   pMatrix[4]   = { state.matrix.projection };\nPARAM   mvMatrix[4]  = { state.matrix.modelview };\nPARAM   ivMatrix[4]  = { state.matrix.texture[1] };\nPARAM   texMatrix[4]  = { state.matrix.texture[0] };\nPARAM   fNoise[64]   = { program.local[0..63] };\nTEMP    noise, viewPos, worldPos, texCoord;\nADDRESS noiseAddr;\nDP4   viewPos.x, mvMatrix[0], iPos;\nDP4   viewPos.y, mvMatrix[1], iPos;\nDP4   viewPos.z, mvMatrix[2], iPos;\nDP4   viewPos.w, mvMatrix[3], iPos;\nMOV   oFogCoord.x, -viewPos.z;\nDP4   worldPos.x, ivMatrix[0], viewPos;\nDP4   worldPos.y, ivMatrix[1], viewPos;\nDP4   worldPos.z, ivMatrix[2], viewPos;\nDP4   worldPos.w, ivMatrix[3], viewPos;\nADD   noise.x, worldPos.x, worldPos.z;SUB   noise.y, worldPos.z, worldPos.x;MUL   noise, noise, 0.0001220703125;\nFRC   noise, noise;\nMUL   noise, noise, 64;\nARL   noiseAddr.x, noise.x;\nMOV   noise.x, fNoise[noiseAddr.x].x;\nARL   noiseAddr.x, noise.y;\nMOV   noise.y, fNoise[noiseAddr.x].y;\nMUL   noise, noise, turbulence.x;\nDP4   texCoord.x, texMatrix[0], iTexCoord;\nDP4   texCoord.y, texMatrix[1], iTexCoord;\nADD   oTexCoord0.xy, texCoord, noise;\nMOV   oTexCoord0.z, 0;\nMOV   oTexCoord0.w, 1;\nMUL   oTexCoord1.xy, texCoord, 0.125;\nMOV   oTexCoord1.zw, time.xxxw;\nMUL   oColour.xyz, iColour, lightAmbient;\nMOV   oColour.w, iColour.w;\nEND",
                     false
                 ))
-                if (aClass171_6220 != null) {
+                if (aRefCountedHandle_6220 != null) {
                     val `is` = Class348_Sub49_Sub2.method3413(4, 3, 64, 4, 256, true, 0, 0.4f, false)
                     val is_5_ = Class348_Sub49_Sub2.method3413(4, 3, 64, 4, 256, true, 8, 0.4f, false)
                     aFloatArray6218 = FloatArray(32768)
@@ -99,7 +99,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
         this.aHa_Sub2_3684.method3729(260, 114.toByte(), 7681)
         this.aHa_Sub2_3684.method3775(false, 0, 770, 34166)
         this.aHa_Sub2_3684.method3738(-15039, 0)
-        glBindProgramARB(34336, aClass171_6220!!.anInt2270)
+        glBindProgramARB(34336, aRefCountedHandle_6220!!.anInt2270)
         glEnable(34336)
         aClass61_6222!!.method591(-1)
         aClass61_6222!!.method595(127.toByte(), 1)

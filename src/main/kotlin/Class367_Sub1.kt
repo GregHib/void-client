@@ -102,7 +102,7 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
 
         @JvmStatic
         fun method3535(i: Int, i_11_: Int) {
-            Class171.anInt2275 = i
+            RefCountedHandle.anInt2275 = i
             anInt7282++
             CharCountUtil.aClass60_225!!.method590(i_11_)
         }

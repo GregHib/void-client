@@ -1847,10 +1847,10 @@ object Class66 {
                 else if (Class48.aShort851 < Class348_Sub42_Sub8.aShort9555) Class48.aShort851 = Class348_Sub42_Sub8.aShort9555
                 Class367_Sub8.aShort7355 = anIntArray1149!![anInt1173 + 2].toShort()
                 if (Class367_Sub8.aShort7355 <= 0) Class367_Sub8.aShort7355 = 1.toShort()
-                Class171.aShort2269 = anIntArray1149!![anInt1173 + 3].toShort()
-                if (Class171.aShort2269 <= 0) Class171.aShort2269 = 32767.toShort()
+                RefCountedHandle.aShort2269 = anIntArray1149!![anInt1173 + 3].toShort()
+                if (RefCountedHandle.aShort2269 <= 0) RefCountedHandle.aShort2269 = 32767.toShort()
                 else {
-                    if (Class171.aShort2269 < Class367_Sub8.aShort7355) Class171.aShort2269 = Class367_Sub8.aShort7355
+                    if (RefCountedHandle.aShort2269 < Class367_Sub8.aShort7355) RefCountedHandle.aShort2269 = Class367_Sub8.aShort7355
                     return
                 }
                 return

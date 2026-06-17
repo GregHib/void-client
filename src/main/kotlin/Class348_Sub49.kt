@@ -129,7 +129,7 @@ open class Class348_Sub49 : Class348 {
     fun method3344(i: Int, bool: Boolean): Int {
         anInt7165++
         if (bool != false) this.aByteArray7154 = null
-        val i_17_ = Class171.method1319(this.anInt7197, true, this.aByteArray7154!!, i)
+        val i_17_ = RefCountedHandle.method1319(this.anInt7197, true, this.aByteArray7154!!, i)
         writeInt(93.toByte(), i_17_)
         return i_17_
     }
@@ -207,7 +207,7 @@ open class Class348_Sub49 : Class348 {
         anInt7168++
         this.anInt7197 -= 4
         if (i != -25541) method3369(56.toByte())
-        val i_34_ = Class171.method1319(this.anInt7197, true, this.aByteArray7154!!, 0)
+        val i_34_ = RefCountedHandle.method1319(this.anInt7197, true, this.aByteArray7154!!, 0)
         val i_35_ = readInt((-126).toByte())
         return i_35_ == i_34_
     }

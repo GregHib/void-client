@@ -99,7 +99,7 @@ class Class258_Sub1 : Class258 {
                     var i_30_ = 0
                     var i_31_ = 0
                     for (i_32_ in 0..<(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2)) {
-                        if (i_32_ > 1) Class171.anIntArray2272!![i_32_ - 2] = i_30_
+                        if (i_32_ > 1) RefCountedHandle.anIntArray2272!![i_32_ - 2] = i_30_
                         i_30_ = i_31_
                         val i_33_ = (Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_29_)
                         val i_34_ = (Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_32_)
@@ -115,12 +115,12 @@ class Class258_Sub1 : Class258 {
                             Class348_Sub8.aBooleanArrayArray6656!![i_29_]!![i_32_] = false
                         }
                         if (i_29_ > 0 && i_32_ > 0) {
-                            val i_39_ = (Class171.anIntArray2272!![i_32_ - 1] and Class171.anIntArray2272!![i_32_] and i_30_ and i_31_)
+                            val i_39_ = (RefCountedHandle.anIntArray2272!![i_32_ - 1] and RefCountedHandle.anIntArray2272!![i_32_] and i_30_ and i_31_)
                             Class99.aBooleanArrayArray1572!![i_29_ - 1]!![i_32_ - 1] = i_39_ == 0
                         }
                     }
-                    Class171.anIntArray2272!![(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084)] = i_30_
-                    Class171.anIntArray2272!![(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)] = i_31_
+                    RefCountedHandle.anIntArray2272!![(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084)] = i_30_
+                    RefCountedHandle.anIntArray2272!![(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)] = i_31_
                 }
                 if (i_25_ >= 0) Class23.aBoolean351 = false
                 else {

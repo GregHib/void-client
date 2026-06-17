@@ -255,23 +255,23 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         val i_24_ = -i_16_ / 2
         val i_25_ = i_23_ * i_22_ + i_24_ * i_21_ shr 14
         val i_26_ = -(i_21_ * i_23_) + i_24_ * i_22_ shr 14
-        val i_27_ = Class171.method1321((-125).toByte(), i_25_ + this.x, i_26_ + this.y, i_19_, this.plane.toInt(), i_20_)
+        val i_27_ = RefCountedHandle.method1321((-125).toByte(), i_25_ + this.x, i_26_ + this.y, i_19_, this.plane.toInt(), i_20_)
         val i_28_ = i_14_ / 2
         val i_29_ = -i_16_ / 2
         val i_30_ = i_28_ * i_22_ + i_21_ * i_29_ shr 14
         val i_31_ = -(i_21_ * i_28_) + i_29_ * i_22_ shr 14
-        val i_32_ = Class171.method1321((-119).toByte(), i_30_ + this.x, this.y + i_31_, i_19_, this.plane.toInt(), i_20_)
+        val i_32_ = RefCountedHandle.method1321((-119).toByte(), i_30_ + this.x, this.y + i_31_, i_19_, this.plane.toInt(), i_20_)
         val i_33_ = -i_14_ / 2
         val i_34_ = i_16_ / 2
         val i_35_ = i_34_ * i_21_ - -(i_33_ * i_22_) shr 14
         val i_36_ = -(i_33_ * i_21_) + i_34_ * i_22_ shr 14
-        val i_37_ = Class171.method1321(101.toByte(), i_35_ + this.x, this.y + i_36_, i_19_, this.plane.toInt(), i_20_)
+        val i_37_ = RefCountedHandle.method1321(101.toByte(), i_35_ + this.x, this.y + i_36_, i_19_, this.plane.toInt(), i_20_)
         if (i_17_ <= 63) this.anInt10243 = -62
         val i_38_ = i_14_ / 2
         val i_39_ = i_16_ / 2
         val i_40_ = i_22_ * i_38_ + i_39_ * i_21_ shr 14
         val i_41_ = i_22_ * i_39_ + -(i_21_ * i_38_) shr 14
-        val i_42_ = Class171.method1321((-114).toByte(), i_40_ + this.x, this.y + i_41_, i_19_, this.plane.toInt(), i_20_)
+        val i_42_ = RefCountedHandle.method1321((-114).toByte(), i_40_ + this.x, this.y + i_41_, i_19_, this.plane.toInt(), i_20_)
         val i_43_ = min(i_32_, i_27_)
         val i_44_ = min(i_37_, i_42_)
         val i_45_ = min(i_42_, i_32_)
@@ -851,7 +851,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             NativeSprite.aTerrainTileArray5191 = null
             Class99.aBooleanArrayArray1572 = null
             Class348_Sub8.aBooleanArrayArray6656 = null
-            Class171.anIntArray2272 = null
+            RefCountedHandle.anIntArray2272 = null
             OverlayColorTable.aBooleanArrayArrayArray1751 = null
             Class5_Sub2.aBooleanArrayArrayArray8361 = null
             Class274.method2062(89.toByte())

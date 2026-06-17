@@ -133,7 +133,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                 val class124 = Class300.method2277(0, RasterSprite.aClass45_5207!!, i_16_, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 105)
-                class64 = var_renderer.method3625(class124, i_18_, Class171.anInt2275, 64, 768)
+                class64 = var_renderer.method3625(class124, i_18_, RefCountedHandle.anInt2275, 64, 768)
                 CharCountUtil.aClass60_225!!.method582(class64, l, (-122).toByte())
             }
             class64 = class64.method614(2.toByte(), i_18_, true)

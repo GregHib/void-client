@@ -1148,7 +1148,7 @@ class Client : GameAppletFrame() {
         method3441(1)
         method161(114)
         method2950(71)
-        Class171.method1322((-28).toByte())
+        RefCountedHandle.method1322((-28).toByte())
         method2728(9.toByte())
         method2265(-10794)
         GlElementArrayBuffer.method1155((-125).toByte())
