@@ -235,7 +235,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                     if (RenderNode.aBoolean9722 && !bool) {
                         val class254 = (if (ParticleEmitterFactory.anInt3176 == -1) null else ProjectionCameraTransform.aClass326_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364))
                         if ((Class38.anInt500 and 0x2) != 0 && (class254 == null || (class79.method805((class254.anInt3256), ParticleEmitterFactory.anInt3176, 61) != class254.anInt3256))) {
-                            Class50_Sub3.method466(false, Class28.aString5000 + " -> <col=ffff00>" + string, 0, (-81).toByte(), false, 0, -1, true, 30, npc.anInt10290.toLong(), Class28.aString5001, npc.anInt10290.toLong(), Class348_Sub49_Sub1.anInt9747)
+                            Class50_Sub3.method466(false, ItemNameResolver.aString5000 + " -> <col=ffff00>" + string, 0, (-81).toByte(), false, 0, -1, true, 30, npc.anInt10290.toLong(), ItemNameResolver.aString5001, npc.anInt10290.toLong(), Class348_Sub49_Sub1.anInt9747)
                             TextureHandle.anInt2586++
                         }
                     }

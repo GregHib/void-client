@@ -427,9 +427,9 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     }
                                     class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878((-105).toByte()) as? Class318_Sub9_Sub1?)
                                 }
-                                Class28.anInt4999++
-                                if (Class28.anInt4999 > 500) {
-                                    Class28.anInt4999 = 0
+                                ItemNameResolver.anInt4999++
+                                if (ItemNameResolver.anInt4999 > 500) {
+                                    ItemNameResolver.anInt4999 = 0
                                     val i_32_ = (8.0 * Math.random()).toInt()
                                     if ((0x4 and i_32_) == 4) RenderableGroup.anInt5016 += Class303.anInt3844
                                     if ((i_32_ and 0x1) == 1) ConnectionStateRefs.anInt319 += Class318_Sub1_Sub5.anInt8775

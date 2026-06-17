@@ -1651,7 +1651,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class28.aIntRange_4998 == Class348_Sub3.aIntRange_6584) {
+            if (ItemNameResolver.aIntRange_4998 == Class348_Sub3.aIntRange_6584) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
                 val i_218_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(70.toByte())
                 val bool_219_ = (0x1 and i_218_) == 1

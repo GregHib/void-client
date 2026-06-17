@@ -376,7 +376,7 @@ class Class79 {
                             bool_48_ = bool_48_ or Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3267((-92).toByte(), i_54_)
                             bool_47_ = bool_47_ or class17_51_.aBoolean242
                         }
-                        if ((class17_51_.aBoolean241 || Class28.aBoolean5002) && i_53_ != -1 && i_53_ < (class17_51_.anIntArray237).size) {
+                        if ((class17_51_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_53_ != -1 && i_53_ < (class17_51_.anIntArray237).size) {
                             Class348_Sub23_Sub4.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
                             Class67.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
                             var i_55_ = class17_51_.anIntArray237[i_53_]
@@ -420,7 +420,7 @@ class Class79 {
                         bool_48_ = bool_48_ or class348_sub42_sub17.method3267((-125).toByte(), i_56_)
                         bool_47_ = bool_47_ or widgetDefinition_36_.aBoolean242
                     }
-                    if ((widgetDefinition_36_.aBoolean241 || Class28.aBoolean5002) && i_38_ != -1 && (widgetDefinition_36_.anIntArray237.size > i_38_)) {
+                    if ((widgetDefinition_36_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_38_ != -1 && (widgetDefinition_36_.anIntArray237.size > i_38_)) {
                         i_57_ = widgetDefinition_36_.anIntArray237[i_38_]
                         i_58_ = widgetDefinition_36_.anIntArray267!![i_35_]
                         val i_66_ = i_57_ ushr 16
@@ -445,7 +445,7 @@ class Class79 {
                         bool_48_ = bool_48_ or class348_sub42_sub17_63_.method3267((-102).toByte(), i_60_)
                         bool_47_ = bool_47_ or widgetDefinition.aBoolean242
                     }
-                    if ((widgetDefinition.aBoolean241 || Class28.aBoolean5002) && i_37_ != -1 && widgetDefinition.anIntArray237.size > i_37_) {
+                    if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_37_ != -1 && widgetDefinition.anIntArray237.size > i_37_) {
                         i_62_ = widgetDefinition.anIntArray267!![i_39_]
                         i_61_ = widgetDefinition.anIntArray237[i_37_]
                         val i_68_ = i_61_ ushr 16

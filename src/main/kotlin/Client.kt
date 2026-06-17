@@ -193,7 +193,7 @@ import CollisionMapAccessor.method2065
 import CollisionMapAccessor.method2066
 import LocTypeConfig.Companion.method2071
 import NativeSoundOutput.Companion.method2097
-import Class28.Companion.method318
+import ItemNameResolver.Companion.method318
 import Class280.Companion.method2104
 import Class281.method2107
 import Class282.method2111
@@ -2114,9 +2114,9 @@ class Client : GameAppletFrame() {
                                                 method2678(-2049)
                                                 val class348_sub44: Class348_Sub44? = method105(class46)
                                                 method2666(class348_sub44!!.anInt7093, class348_sub44.method3307(110), class46, 21.toByte())
-                                                Class28.aString5001 = method1753(0, class46)
-                                                if (Class28.aString5001 == null) Class28.aString5001 = "Null"
-                                                Class28.aString5000 = ((class46.aString752) + "<col=ffffff>")
+                                                ItemNameResolver.aString5001 = method1753(0, class46)
+                                                if (ItemNameResolver.aString5001 == null) ItemNameResolver.aString5001 = "Null"
+                                                ItemNameResolver.aString5000 = ((class46.aString752) + "<col=ffffff>")
                                             }
                                             val i_57_ = (class46.anIntArray707[i_55_])
                                             if (class46.anIntArray801 == null) class46.anIntArray801 = (IntArray((class46.aByteArray746).size))
@@ -2198,7 +2198,7 @@ class Client : GameAppletFrame() {
                                                 }
                                                 if (RenderNode.aBoolean9722 && ((Class38.anInt500 and 0x40) != 0)) {
                                                     val class46_69_ = (Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046))
-                                                    if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), Class28.aString5001, 1L, (Class348_Sub49_Sub1.anInt9747))
+                                                    if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), ItemNameResolver.aString5001, 1L, (Class348_Sub49_Sub1.anInt9747))
                                                     else method2678(-2049)
                                                 } else {
                                                     if ((Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) Class50_Sub3.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (LocalizedText.aLocalizedText_3510!!.method2063((Class348_Sub33.anInt6967), 544)), 1L, -1)

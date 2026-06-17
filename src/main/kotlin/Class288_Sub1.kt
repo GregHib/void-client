@@ -18,7 +18,7 @@ class Class288_Sub1 internal constructor(i: Int, screenAnchorAlignment: ScreenAn
     override fun method51(i: Byte): ProjectileFactory? {
         anInt8574++
         if (i <= 116) method2190(false)
-        return Class28.aProjectileFactory_4997
+        return ItemNameResolver.aProjectileFactory_4997
     }
 
     companion object {

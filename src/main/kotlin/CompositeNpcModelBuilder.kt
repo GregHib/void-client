@@ -63,7 +63,7 @@ class CompositeNpcModelBuilder {
                             bool_12_ = bool_12_ or Class95.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3271(i_21_, 14)
                             bool_14_ = bool_14_ or Class95.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3267((-109).toByte(), i_21_)
                         }
-                        if ((class17_18_.aBoolean241 || Class28.aBoolean5002) && i_20_ != -1 && (class17_18_.anIntArray237.size > i_20_)) {
+                        if ((class17_18_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_20_ != -1 && (class17_18_.anIntArray237.size > i_20_)) {
                             MinimapRenderer.anIntArray1583!![i_17_] = class17_18_.anIntArray267!![i_19_]
                             Class50_Sub3.anIntArray5241!![i_17_] = loadProgressCounters[i_17_]!!.anInt2456
                             var i_22_ = class17_18_.anIntArray237[i_20_]
@@ -106,7 +106,7 @@ class CompositeNpcModelBuilder {
                         bool_12_ = bool_12_ or class348_sub42_sub17.method3271(i_23_, 14)
                         bool_14_ = bool_14_ or class348_sub42_sub17.method3267((-110).toByte(), i_23_)
                     }
-                    if ((widgetDefinition_0_.aBoolean241 || Class28.aBoolean5002) && i_1_ != -1 && i_1_ < widgetDefinition_0_.anIntArray237.size) {
+                    if ((widgetDefinition_0_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_1_ != -1 && i_1_ < widgetDefinition_0_.anIntArray237.size) {
                         i_24_ = widgetDefinition_0_.anIntArray237[i_1_]
                         i_25_ = widgetDefinition_0_.anIntArray267!![i_7_]
                         val i_33_ = i_24_ ushr 16
@@ -130,7 +130,7 @@ class CompositeNpcModelBuilder {
                         bool_12_ = bool_12_ or class348_sub42_sub17_30_.method3271(i_27_, 14)
                         bool_14_ = bool_14_ or class348_sub42_sub17_30_.method3267((-123).toByte(), i_27_)
                     }
-                    if ((widgetDefinition.aBoolean241 || Class28.aBoolean5002) && i_3_ != -1 && i_3_ < widgetDefinition.anIntArray237.size) {
+                    if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_3_ != -1 && i_3_ < widgetDefinition.anIntArray237.size) {
                         i_28_ = widgetDefinition.anIntArray237[i_3_]
                         i_29_ = widgetDefinition.anIntArray267!![i_6_]
                         val i_35_ = i_28_ ushr 16
@@ -346,7 +346,7 @@ class CompositeNpcModelBuilder {
                     bool_73_ = bool_73_ or class348_sub42_sub17.method3267((-125).toByte(), i_74_)
                     bool_72_ = bool_72_ or widgetDefinition.aBoolean242
                 }
-                if ((widgetDefinition.aBoolean241 || Class28.aBoolean5002) && i_67_ != -1 && i_67_ < widgetDefinition.anIntArray237.size) {
+                if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_67_ != -1 && i_67_ < widgetDefinition.anIntArray237.size) {
                     i_75_ = widgetDefinition.anIntArray237[i_67_]
                     val i_78_ = i_75_ ushr 16
                     val class348_sub42_sub17_79_ = (if (i_78_ != i_77_) class87.method839(i_78_, i xor 0x17f6eb54.inv()) else class348_sub42_sub17)
@@ -451,7 +451,7 @@ class CompositeNpcModelBuilder {
                     bool_101_ = bool_101_ or class348_sub42_sub17.method3267((-125).toByte(), i_102_)
                     bool_100_ = bool_100_ or widgetDefinition.aBoolean242
                 }
-                if ((widgetDefinition.aBoolean241 || Class28.aBoolean5002) && i != -1 && i < widgetDefinition.anIntArray237.size) {
+                if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && i < widgetDefinition.anIntArray237.size) {
                     i_103_ = widgetDefinition.anIntArray237[i]
                     val i_106_ = i_103_ ushr 16
                     i_103_ = i_103_ and 0xffff

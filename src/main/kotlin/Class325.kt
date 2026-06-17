@@ -909,9 +909,9 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     Class341.method2678(-2049)
                                     val class348_sub44 = Client.method105(class46)!!
                                     Class339.method2666(class348_sub44.anInt7093, class348_sub44.method3307(14), class46, 21.toByte())
-                                    Class28.aString5001 = method1753(0, class46)
-                                    Class28.aString5000 = (class46.aString752 + "<col=ffffff>")
-                                    if (Class28.aString5001 == null) Class28.aString5001 = "Null"
+                                    ItemNameResolver.aString5001 = method1753(0, class46)
+                                    ItemNameResolver.aString5000 = (class46.aString752 + "<col=ffffff>")
+                                    if (ItemNameResolver.aString5001 == null) ItemNameResolver.aString5001 = "Null"
                                 }
                             } else {
                                 if (i_76_ == 1009 || i_76_ == 1012 || i_76_ == 1002 || i_76_ == 1003 || i_76_ == 1006) method696(i_76_, i_74_, i_77_, -1007)

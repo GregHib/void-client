@@ -341,12 +341,12 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("tween", ignoreCase = true)) {
-                            if (Class28.aBoolean5002) {
-                                Class28.aBoolean5002 = false
+                            if (ItemNameResolver.aBoolean5002) {
+                                ItemNameResolver.aBoolean5002 = false
                                 method94("Forced tweening disabled.", i.toInt() xor 0x71.inv())
                                 return
                             } else {
-                                Class28.aBoolean5002 = true
+                                ItemNameResolver.aBoolean5002 = true
                                 method94("Forced tweening ENABLED!", -89)
                             }
                             return

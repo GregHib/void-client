@@ -55,7 +55,7 @@ class WidgetDefinition {
         val class348_sub42_sub17_5_ = this.aClass87_251!!.method839(i_4_ shr 16, 3)
         i_4_ = i_4_ and 0xffff
         if (class348_sub42_sub17_5_ == null) return i_2_
-        if ((this.aBoolean241 || Class28.aBoolean5002) && i != -1 && i < this.anIntArray237.size) {
+        if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && i < this.anIntArray237.size) {
             i_3_ = this.anIntArray237[i]
             class348_sub42_sub17 = this.aClass87_251!!.method839(i_3_ shr 16, 3)
             i_3_ = i_3_ and 0xffff
@@ -83,7 +83,7 @@ class WidgetDefinition {
                     }
                 }
             }
-            if ((this.aBoolean241 || Class28.aBoolean5002) && i != -1 && anIntArray260!!.size > i) {
+            if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && anIntArray260!!.size > i) {
                 var i_8_ = anIntArray260!![i]
                 if (i_8_ != 65535) {
                     val class348_sub42_sub17_9_ = this.aClass87_251!!.method839(i_8_ shr 16, 3)
@@ -201,7 +201,7 @@ class WidgetDefinition {
         i_29_ = i_29_ and 0xffff
         if (class348_sub42_sub17 == null) return class64.method614(i_28_, i_32_, true)
         var class348_sub42_sub17_34_: Class348_Sub42_Sub17? = null
-        if ((this.aBoolean241 || Class28.aBoolean5002) && i_27_ != -1 && this.anIntArray237.size > i_27_) {
+        if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_27_ != -1 && this.anIntArray237.size > i_27_) {
             i_27_ = this.anIntArray237[i_27_]
             class348_sub42_sub17_34_ = this.aClass87_251!!.method839(i_27_ shr 16, 3)
             i_27_ = i_27_ and 0xffff
@@ -242,7 +242,7 @@ class WidgetDefinition {
         i_55_ = i_55_ and 0xffff
         if (class348_sub42_sub17 == null) return class64.method614(1.toByte(), i_52_, true)
         var class348_sub42_sub17_56_: Class348_Sub42_Sub17? = null
-        if ((this.aBoolean241 || Class28.aBoolean5002) && i_50_ != -1 && this.anIntArray237.size > i_50_) {
+        if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_50_ != -1 && this.anIntArray237.size > i_50_) {
             i_50_ = this.anIntArray237[i_50_]
             class348_sub42_sub17_56_ = this.aClass87_251!!.method839(i_50_ shr 16, 3)
             i_50_ = i_50_ and 0xffff
@@ -259,7 +259,7 @@ class WidgetDefinition {
                     i_59_ = i_59_ and 0xffff
                 }
             }
-            if ((this.aBoolean241 || Class28.aBoolean5002) && i_50_ != -1 && i_50_ < anIntArray260!!.size) {
+            if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_50_ != -1 && i_50_ < anIntArray260!!.size) {
                 i_60_ = anIntArray260!![i_50_]
                 if (i_60_ != 65535) {
                     class348_sub42_sub17_58_ = this.aClass87_251!!.method839(i_60_ shr 16, 3)

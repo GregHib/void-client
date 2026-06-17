@@ -1415,7 +1415,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7178 = 0
             Class333.anInt4149 = 0
             Client.anInt5173 = 0
-            Class28.anInt4996 = 0
+            ItemNameResolver.anInt4996 = 0
             NpcSummaryDefinition.anInt1955 = 0
             RandomAccessFileOnDisk.anInt3048 = 0
             BufferedMessageQueue.anInt3580 = 0

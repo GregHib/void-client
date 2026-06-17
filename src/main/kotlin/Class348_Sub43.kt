@@ -49,7 +49,7 @@ class Class348_Sub43 : Class348() {
                 if (LocalPlayerState.aPlayer_1907 == player) {
                     if (RenderNode.aBoolean9722 && (Class38.anInt500 and 0x10) != 0) {
                         Class32.anInt450++
-                        Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=ffffff>" + LocalizedText.aLocalizedText_3520!!.method2063(Class348_Sub33.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), Class28.aString5001, 0L, Class348_Sub49_Sub1.Companion.anInt9747)
+                        Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> <col=ffffff>" + LocalizedText.aLocalizedText_3520!!.method2063(Class348_Sub33.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), ItemNameResolver.aString5001, 0L, Class348_Sub49_Sub1.Companion.anInt9747)
                     }
                 } else {
                     val string: String?
@@ -69,7 +69,7 @@ class Class348_Sub43 : Class348() {
                     } else if (player.anInt10564 == -1) string = player.method2456(true, 255)
                     else string = (player.method2456(true, 255) + " (" + LocalizedText.aLocalizedText_3512!!.method2063(Class348_Sub33.anInt6967, 544) + player.anInt10564 + ")")
                     if (RenderNode.aBoolean9722 && !bool && (0x8 and Class38.anInt500) != 0) {
-                        Class50_Sub3.method466(false, Class28.aString5000 + " -> <col=ffffff>" + string, 0, (-109).toByte(), false, 0, -1, true, 51, player.anInt10290.toLong(), Class28.aString5001, player.anInt10290.toLong(), Class348_Sub49_Sub1.Companion.anInt9747)
+                        Class50_Sub3.method466(false, ItemNameResolver.aString5000 + " -> <col=ffffff>" + string, 0, (-109).toByte(), false, 0, -1, true, 51, player.anInt10290.toLong(), ItemNameResolver.aString5001, player.anInt10290.toLong(), Class348_Sub49_Sub1.Companion.anInt9747)
                         Class341.anInt4228++
                     }
                     if (i <= 89) anInt7068 = -113

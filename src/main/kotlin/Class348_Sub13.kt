@@ -71,7 +71,7 @@ class Class348_Sub13 : Class348() {
                     bool_21_ = bool_21_ or class348_sub42_sub17.method3267((-112).toByte(), i_22_)
                     bool_20_ = bool_20_ or widgetDefinition.aBoolean242
                 }
-                if ((widgetDefinition.aBoolean241 || Class28.aBoolean5002) && i_12_ != -1 && widgetDefinition.anIntArray237.size > i_12_) {
+                if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_12_ != -1 && widgetDefinition.anIntArray237.size > i_12_) {
                     i_23_ = widgetDefinition.anIntArray237[i_12_]
                     i_24_ = widgetDefinition.anIntArray267!![i_10_]
                     val i_27_ = i_23_ ushr 16
