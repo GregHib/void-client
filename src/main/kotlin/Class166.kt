@@ -59,7 +59,7 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
         }
         synchronized(this.aClass60_2190!!) {
             this.aClass60_2190!!.method590(0)
-            if (i != -8) aClass114_2183 = null
+            if (i != -8) aIntRange_2183 = null
         }
     }
 
@@ -78,7 +78,7 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt2179: Int = 0
         var anInt2181: Int = 0
         var anInt2182: Int = 0
-        var aClass114_2183: Class114? = Class114(0, -1)
+        var aIntRange_2183: IntRange? = IntRange(0, -1)
         var anInt2184: Int = 0
         var anInt2186: Int = 0
         @JvmField
@@ -86,7 +86,7 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt2189: Int = 0
         @JvmStatic
         fun method1284(i: Int) {
-            aClass114_2183 = null
+            aIntRange_2183 = null
             if (i == -21165) aClass262_2187 = null
         }
 
@@ -96,7 +96,7 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
                     anInt2181++
                     Class275.aHashtable3548!!.put(string, file)
                     if (i == 64) break
-                    aClass114_2183 = null
+                    aIntRange_2183 = null
                 } catch (runtimeexception: RuntimeException) {
                     throw Class348_Sub17.method2929(runtimeexception, ("pg.F(" + (if (file != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
                 }

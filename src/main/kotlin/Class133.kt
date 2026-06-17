@@ -5,10 +5,10 @@ import Class76.Companion.method773
 object Class133 {
     var anInt1912: Int = 0
     var anInt1913: Int = 0
-    var aClass114_1914: Class114? = Class114(84, 7)
+    var aIntRange_1914: IntRange? = IntRange(84, 7)
     var aBoolean1915: Boolean = false
     var anInt1916: Int = 0
-    var aClass114_1917: Class114? = Class114(20, -2)
+    var aIntRange_1917: IntRange? = IntRange(20, -2)
     var aByteArrayArray1918: Array<ByteArray?>? = arrayOfNulls<ByteArray>(250)
 
     /*synthetic*/
@@ -21,8 +21,8 @@ object Class133 {
     fun method1139(i: Int) {
         if (i == 2767) {
             aByteArrayArray1918 = null
-            aClass114_1917 = null
-            aClass114_1914 = null
+            aIntRange_1917 = null
+            aIntRange_1914 = null
         }
     }
 

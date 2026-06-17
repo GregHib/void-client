@@ -30,7 +30,7 @@ class Class348_Sub1_Sub2 internal constructor(i: Int, i_9_: Int, i_10_: Int, i_1
         @JvmField
         var aByteArrayArray8816: Array<ByteArray?>? = null
         @JvmField
-        var aClass114_8817: Class114? = Class114(83, 2)
+        var aIntRange_8817: IntRange? = IntRange(83, 2)
 
         @JvmStatic
         fun method2729(i: Int, i_3_: Int): Int {
@@ -64,7 +64,7 @@ class Class348_Sub1_Sub2 internal constructor(i: Int, i_9_: Int, i_10_: Int, i_1
             aByteArrayArray8816 = null
             aClass262_8810 = null
             aClass308_8815 = null
-            aClass114_8817 = null
+            aIntRange_8817 = null
         }
     }
 }

@@ -6,7 +6,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
         Class348_Sub8.aRenderer6654!!.method3628(-2 + i, i_17_, 4 + this.aClass369_4635!!.anInt4971, 2 + this.aClass369_4635!!.anInt4963, ((this.aClass369_4635 as Class369_Sub2).anInt8585), 0)
         anInt8360++
         Class348_Sub8.aRenderer6654!!.method3628(i - 1, 1 + i_17_, this.aClass369_4635!!.anInt4971 - -2, this.aClass369_4635!!.anInt4963, 0, 0)
-        if (i_16_ > -6) aClass114_8365 = null
+        if (i_16_ > -6) aIntRange_8365 = null
     }
 
     public override fun method182(i: Int, i_18_: Int, i_19_: Int, bool: Boolean) {
@@ -43,7 +43,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
         @JvmField
         var anInt8364: Int = 0
         @JvmField
-        var aClass114_8365: Class114? = Class114(30, -1)
+        var aIntRange_8365: IntRange? = IntRange(30, -1)
 
         @JvmStatic
         fun method191(bool: Boolean, i: Int, i_0_: Int) {
@@ -71,7 +71,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             if (i == 30) {
                 aClass273_8356 = null
                 aBooleanArrayArrayArray8361 = null
-                aClass114_8365 = null
+                aIntRange_8365 = null
             }
         }
 

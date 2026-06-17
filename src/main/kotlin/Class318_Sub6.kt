@@ -14,7 +14,7 @@ class Class318_Sub6 : Class318() {
     var aClass318_Sub1_Sub3_Sub3_6431: Class318_Sub1_Sub3_Sub3? = null
 
     companion object {
-        var aClass114_6424: Class114? = Class114(82, 4)
+        var aIntRange_6424: IntRange? = IntRange(82, 4)
         @JvmField
         var aShortArray6428: ShortArray? = null
         var aFloat6430: Float = 0f
@@ -25,7 +25,7 @@ class Class318_Sub6 : Class318() {
             aShortArray6428 = null
             anIntArray6432 = null
             if (i.toInt() != -46) Companion.method2506((-93).toByte())
-            aClass114_6424 = null
+            aIntRange_6424 = null
         }
     }
 }

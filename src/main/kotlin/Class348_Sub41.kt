@@ -26,7 +26,7 @@ class Class348_Sub41 : Class348() {
         var aString7048: String? = null
         var anInt7049: Int = 0
         var anInt7051: Int = 0
-        var aClass114_7052: Class114? = Class114(86, 6)
+        var aIntRange_7052: IntRange? = IntRange(86, 6)
         @JvmField
         var anInt7054: Int = 0
         var anInt7055: Int = 0
@@ -36,7 +36,7 @@ class Class348_Sub41 : Class348() {
 
         fun method3154(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, `is`: ByteArray?, i_3_: Byte): Boolean {
             anInt7047++
-            if (i_3_.toInt() != 39) aClass114_7052 = null
+            if (i_3_.toInt() != 39) aIntRange_7052 = null
             var bool = true
             val class348_sub49 = Class348_Sub49(`is`)
             var i_4_ = -1
@@ -79,13 +79,13 @@ class Class348_Sub41 : Class348() {
         @JvmStatic
         fun method3155(i: Int) {
             aString7048 = null
-            aClass114_7052 = null
+            aIntRange_7052 = null
             if (i != -5) anInt7054 = 110
         }
 
         fun method3156(bool: Boolean, string: String): Int {
             anInt7055++
-            if (bool != true) aClass114_7052 = null
+            if (bool != true) aIntRange_7052 = null
             return method1836(-123, 10, true, string)
         }
 

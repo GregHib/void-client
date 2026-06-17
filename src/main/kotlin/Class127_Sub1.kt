@@ -22,8 +22,8 @@ class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class
         var anInt8381: Int = 0
         @JvmField
         var anInt8382: Int = 0
-        var aClass114_8384: Class114? = Class114(18, 0)
-        var aClass114_8385: Class114?
+        var aIntRange_8384: IntRange? = IntRange(18, 0)
+        var aIntRange_8385: IntRange?
         @JvmField
         var aBoolean8386: Boolean = false
         @JvmField
@@ -80,14 +80,14 @@ class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class
 
         @JvmStatic
         fun method1120(i: Int) {
-            aClass114_8384 = null
+            aIntRange_8384 = null
             aClass271_8378 = null
-            aClass114_8385 = null
+            aIntRange_8385 = null
             if (i != 1) method1119(true)
         }
 
         init {
-            aClass114_8385 = Class114(10, -2)
+            aIntRange_8385 = IntRange(10, -2)
             anInt8388 = 0
         }
     }

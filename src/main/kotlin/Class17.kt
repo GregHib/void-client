@@ -326,7 +326,7 @@ class Class17 {
         var anInt246: Int = 0
         @JvmField
         var aBoolean247: Boolean = false
-        var aClass114_250: Class114? = Class114(4, 1)
+        var aIntRange_250: IntRange? = IntRange(4, 1)
         @JvmField
         var anInterface4_252: Interface4? = null
         @JvmField
@@ -344,7 +344,7 @@ class Class17 {
         @JvmStatic
         fun method265(bool: Boolean) {
             anIntArray256 = null
-            aClass114_250 = null
+            aIntRange_250 = null
             anIntArrayArray255 = null
             if (bool != false) method268(-22, -54, -101, -115, -107, 90, 13, -47)
             anInterface4_252 = null

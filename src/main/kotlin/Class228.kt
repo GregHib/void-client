@@ -3,7 +3,7 @@ import java.util.*
 
 object Class228 {
     var anInt2971: Int = 0
-    var aClass114_2972: Class114? = Class114(49, 4)
+    var aIntRange_2972: IntRange? = IntRange(49, 4)
     var anInt2973: Int = 0
     @JvmField
     var aClass57Array2974: Array<Class57?>? = null
@@ -14,7 +14,7 @@ object Class228 {
     fun method1628(i: Byte) {
         aClass57Array2974 = null
         if (i <= 47) aClass57Array2974 = null
-        aClass114_2972 = null
+        aIntRange_2972 = null
     }
 
     fun method1629(bool: Boolean): Boolean {

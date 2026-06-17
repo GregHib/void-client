@@ -62,7 +62,7 @@ class Class239_Sub24 : Class239 {
         @JvmField
         var anInt6088: Int = 0
         @JvmField
-        var aClass114_6089: Class114? = Class114(41, 3)
+        var aIntRange_6089: IntRange? = IntRange(41, 3)
         @JvmField
         var anInt6090: Int = 0
         @JvmField
@@ -91,7 +91,7 @@ class Class239_Sub24 : Class239 {
 
         @JvmStatic
         fun method1822(i: Byte) {
-            aClass114_6089 = null
+            aIntRange_6089 = null
             aClass60_6096 = null
             aAbstractModelRenderer_6097 = null
             aStringArrayArray6093 = null

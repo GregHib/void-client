@@ -19,7 +19,7 @@ class Class348_Sub46 : Class348 {
         var anInt7109: Int = 0
         var anInt7110: Int = 0
         var anInt7112: Int = 0
-        var aClass114_7113: Class114? = Class114(97, 0)
+        var aIntRange_7113: IntRange? = IntRange(97, 0)
         var anInt7114: Int = 0
         @JvmField
         var anInt7115: Int = 1
@@ -40,7 +40,7 @@ class Class348_Sub46 : Class348 {
 
         @JvmStatic
         fun method3318(i: Byte) {
-            aClass114_7113 = null
+            aIntRange_7113 = null
         }
 
         fun method3319(var_renderer: Renderer?, i: Byte) {
@@ -88,7 +88,7 @@ class Class348_Sub46 : Class348 {
             val class369 = Class348_Sub16_Sub2.method2834((-125).toByte(), class348_sub49)
             val i_4_ = class348_sub49.readUnsignedShort(i xor 0x3235f8f8)
             val i_5_ = class348_sub49.readUnsignedShort(842397944)
-            if (i != 0) aClass114_7113 = null
+            if (i != 0) aIntRange_7113 = null
             val i_6_ = class348_sub49.readUnsignedShort(842397944)
             val i_7_ = class348_sub49.readUnsignedShort(i + 842397944)
             val i_8_ = class348_sub49.readUnsignedShort(842397944)

@@ -702,7 +702,7 @@ class FloatCameraTransform : AbstractCameraTransform() {
         var anInt5740: Int = 0
         @JvmField
         var anInt5741: Int = 0
-        var aClass114_5742: Class114?
+        var aIntRange_5742: IntRange?
         @JvmField
         var anInt5743: Int = 0
         var anInt5744: Int = 0
@@ -754,13 +754,13 @@ class FloatCameraTransform : AbstractCameraTransform() {
         fun method925(i: Int) {
             if (i == -5997) {
                 aClass351_5699 = null
-                aClass114_5742 = null
+                aIntRange_5742 = null
             }
         }
 
         init {
             aClass351_5699 = Class351(53, -1)
-            aClass114_5742 = Class114(119, 6)
+            aIntRange_5742 = IntRange(119, 6)
         }
     }
 }

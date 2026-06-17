@@ -89,7 +89,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
         var anInt4019: Int = 0
         var anInt4023: Int = 0
         var anInt4026: Int = 0
-        var aClass114_4027: Class114?
+        var aIntRange_4027: IntRange?
         var anInt4028: Int = 0
         var anInt4030: Int = 0
         var anIntArray4031: IntArray? = null
@@ -123,7 +123,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
         fun method2555(i: Byte) {
             if (i.toInt() != 28) method2554(21.toByte())
             anIntArray4031 = null
-            aClass114_4027 = null
+            aIntRange_4027 = null
             aClass308_4036 = null
         }
 
@@ -138,7 +138,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
                 i_3_ = Class235.anInt3062
                 i_4_ = Class127_Sub1.anInt8387
             }
-            if (bool != false) aClass114_4027 = null
+            if (bool != false) aIntRange_4027 = null
             if ((class318_sub1_sub3_sub3.x < 512) || class318_sub1_sub3_sub3.y < 512 || (-512 + Class367_Sub4.anInt7319 * 512 <= class318_sub1_sub3_sub3.x) || (-512 + Class348_Sub40_Sub3.anInt9109 * 512 <= class318_sub1_sub3_sub3.y)) {
                 class318_sub1_sub3_sub3.anInt10291 = -1
                 class318_sub1_sub3_sub3.anInt10300 = 0
@@ -173,7 +173,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
         }
 
         init {
-            aClass114_4027 = Class114(90, 10)
+            aIntRange_4027 = IntRange(90, 10)
             aClass308_4036 = Class308(128)
         }
     }

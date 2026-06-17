@@ -13,7 +13,7 @@ class InputStream_Sub2 : InputStream() {
         @JvmField
         var anInt81: Int = 0
         @JvmField
-        var aClass114_82: Class114? = Class114(71, 7)
+        var aIntRange_82: IntRange? = IntRange(71, 7)
         @JvmField
         var aClass243_83: Class243? = Class243()
         var aFloatArray84: FloatArray? = FloatArray(4)
@@ -25,7 +25,7 @@ class InputStream_Sub2 : InputStream() {
             if (i.toInt() != 118) Companion.method128(null, (-48).toByte())
             aFloatArray84 = null
             aClass243_83 = null
-            aClass114_82 = null
+            aIntRange_82 = null
         }
 
         @JvmStatic
@@ -208,7 +208,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_88_ = Class73.anInt4786 - -(0x7 and i_86_)
                     if (Class282.method2112(i.toInt() xor 0x73, Class312.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367_Sub4.anInt7319 > i_87_ && (i_88_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
-                    if (i.toInt() != 8) aClass114_82 = null
+                    if (i.toInt() != 8) aIntRange_82 = null
                     if (Class39.aClass74_515 == class74) {
                         val i_89_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_90_ = Class73.anInt4786 + (0x7 and i_89_)

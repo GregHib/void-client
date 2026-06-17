@@ -21,7 +21,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
         var anInt9501: Int
         @JvmField
         var aShortArray9502: ShortArray?
-        var aClass114_9503: Class114?
+        var aIntRange_9503: IntRange?
         @JvmField
         var anInt9504: Int = 0
         var anIntArray9505: IntArray? = IntArray(3)
@@ -106,7 +106,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             anIntArray9505 = null
             aShortArray9502 = null
             if (bool != true) aShortArray9502 = null
-            aClass114_9503 = null
+            aIntRange_9503 = null
         }
 
         @JvmStatic
@@ -175,7 +175,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
         init {
             anInt9501 = 0
             aShortArray9502 = ShortArray(256)
-            aClass114_9503 = Class114(9, -1)
+            aIntRange_9503 = IntRange(9, -1)
         }
     }
 }

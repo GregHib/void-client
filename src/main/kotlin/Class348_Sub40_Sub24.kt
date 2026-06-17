@@ -103,7 +103,7 @@ class Class348_Sub40_Sub24 : Class348_Sub40(0, true) {
 
     companion object {
         @JvmField
-        var aClass114_9324: Class114? = Class114(85, 4)
+        var aIntRange_9324: IntRange? = IntRange(85, 4)
         @JvmField
         var anInt9326: Int = 0
         var anInt9327: Int = 0
@@ -115,7 +115,7 @@ class Class348_Sub40_Sub24 : Class348_Sub40(0, true) {
         var anInt9331: Int = 0
         @JvmStatic
         fun method3115(i: Int) {
-            if (i <= -72) aClass114_9324 = null
+            if (i <= -72) aIntRange_9324 = null
         }
     }
 }

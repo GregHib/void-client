@@ -418,7 +418,7 @@ class Class88 {
                                 Class14_Sub4.method254(2, (-92).toByte())
                                 method1804(8839)
                                 Class348_Sub49.method3379(2, 7)
-                                Class348_Sub3.aClass114_6584 = null
+                                Class348_Sub3.aIntRange_6584 = null
                                 return
                             }
                         }
@@ -434,7 +434,7 @@ class Class88 {
                                 if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 110)) return
                                 Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 3, (-127).toByte(), (class348_sub49_sub2.aByteArray7154!!))
                             }
-                            Class348_Sub3.aClass114_6584 = (method248(-11271)[class348_sub49_sub2.method3407(15295)])
+                            Class348_Sub3.aIntRange_6584 = (method248(-11271)[class348_sub49_sub2.method3407(15295)])
                             Class348_Sub40_Sub25.anInt9341 = class348_sub49_sub2.readUnsignedShort(842397944)
                             Class225.anInt2955 = 10
                         }
@@ -448,10 +448,10 @@ class Class88 {
                                 Class130_Sub1.method1135(0)
                                 Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 Renderer.anInt4581 = -1
-                                if (Class348_Sub3.aClass114_6584 != Class19.aClass114_304) method3120(-92)
+                                if (Class348_Sub3.aIntRange_6584 != Class19.aIntRange_304) method3120(-92)
                                 else Class90.method853(99.toByte())
                                 if (i_13_ != Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("lswp pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_13_)
-                                Class348_Sub3.aClass114_6584 = null
+                                Class348_Sub3.aIntRange_6584 = null
                             }
                         } else {
                             val i_14_ = -128 / (-i / 53)
@@ -471,7 +471,7 @@ class Class88 {
                                     Class312.method2330(86.toByte())
                                     Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                     if (i_15_ != (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
-                                    Class348_Sub3.aClass114_6584 = null
+                                    Class348_Sub3.aIntRange_6584 = null
                                 }
                             }
                         }

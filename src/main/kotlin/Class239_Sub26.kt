@@ -50,7 +50,7 @@ class Class239_Sub26 : Class239 {
         @JvmField
         var aFloat6120: Float = 1.0f
         @JvmField
-        var aClass114_6121: Class114?
+        var aIntRange_6121: IntRange?
         @JvmField
         var anInt6122: Int = 0
         @JvmField
@@ -88,7 +88,7 @@ class Class239_Sub26 : Class239 {
         @JvmStatic
         fun method1835(i: Int) {
             aClass54Array6114 = null
-            aClass114_6121 = null
+            aIntRange_6121 = null
             if (i != -28594) anInt6115 = -7
         }
 
@@ -127,14 +127,14 @@ class Class239_Sub26 : Class239 {
 
         @JvmStatic
         fun method1837(i: Int, i_14_: Int, i_15_: Int): Boolean {
-            if (i_14_ < 41) aClass114_6121 = null
+            if (i_14_ < 41) aIntRange_6121 = null
             anInt6122++
             return (i_15_ and 0x800) != 0
         }
 
         init {
             aClass54Array6114 = arrayOfNulls<Class54>(6)
-            aClass114_6121 = Class114(32, 6)
+            aIntRange_6121 = IntRange(32, 6)
         }
     }
 }

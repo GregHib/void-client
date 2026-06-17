@@ -165,7 +165,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
 
     companion object {
         @JvmField
-        var aClass114_9285: Class114? = Class114(104, 1)
+        var aIntRange_9285: IntRange? = IntRange(104, 1)
         @JvmField
         var anInt9289: Int = 0
         @JvmField
@@ -184,7 +184,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
             aClass351_9304 = null
             aClass304_9303 = null
             if (i != -1633784916) aClass304_9303 = null
-            aClass114_9285 = null
+            aIntRange_9285 = null
         }
 
         @JvmStatic

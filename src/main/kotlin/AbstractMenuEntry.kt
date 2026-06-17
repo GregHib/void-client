@@ -39,7 +39,7 @@ abstract class AbstractMenuEntry {
         @JvmField
         var anInt1701: Int = 0
         @JvmField
-        var aClass114_1702: Class114?
+        var aIntRange_1702: IntRange?
         @JvmField
         var anInt1703: Int = 0
         @JvmField
@@ -63,7 +63,7 @@ abstract class AbstractMenuEntry {
 
         @JvmStatic
         fun method1030(i: Int) {
-            aClass114_1702 = null
+            aIntRange_1702 = null
             aAbstractModelRenderer_1706 = null
             if (i > -19) method1034(-89, null, null, -72)
         }
@@ -173,7 +173,7 @@ abstract class AbstractMenuEntry {
         }
 
         init {
-            aClass114_1702 = Class114(24, 6)
+            aIntRange_1702 = IntRange(24, 6)
         }
     }
 }

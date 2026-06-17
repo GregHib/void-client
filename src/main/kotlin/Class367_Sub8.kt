@@ -117,7 +117,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: 
         @JvmField
         var aClass45_7362: Class45? = null
         @JvmField
-        var aClass114_7363: Class114?
+        var aIntRange_7363: IntRange?
         @JvmField
         var anInt7364: Int = 0
         var anInt7365: Int = 0
@@ -215,14 +215,14 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: 
 
         @JvmStatic
         fun method3550(i: Byte) {
-            aClass114_7363 = null
+            aIntRange_7363 = null
             aClass45_7362 = null
             val i_20_ = -90 % ((-54 - i) / 60)
             aClass364_7361 = null
         }
 
         init {
-            aClass114_7363 = Class114(103, 8)
+            aIntRange_7363 = IntRange(103, 8)
         }
     }
 }

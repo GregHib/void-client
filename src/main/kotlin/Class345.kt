@@ -8,22 +8,22 @@ abstract class Class345 {
         @JvmField
         var aFloat4268: Float = 0f
         @JvmField
-        var aClass114_4269: Class114? = Class114(87, 1)
+        var aIntRange_4269: IntRange? = IntRange(87, 1)
         @JvmField
         var anInt4270: Int = -1
         @JvmField
         var anIntArray4271: IntArray? = null
         @JvmField
-        var aClass114_4272: Class114? = Class114(67, 3)
+        var aIntRange_4272: IntRange? = IntRange(67, 3)
         @JvmField
         var aClass60_4273: Class60? = Class60(128, 4)
 
         @JvmStatic
         fun method2693(i: Int) {
-            if (i != 3) aClass114_4269 = null
-            aClass114_4272 = null
+            if (i != 3) aIntRange_4269 = null
+            aIntRange_4272 = null
             anIntArray4271 = null
-            aClass114_4269 = null
+            aIntRange_4269 = null
             aClass60_4273 = null
         }
     }

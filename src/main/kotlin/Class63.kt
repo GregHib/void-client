@@ -12,15 +12,15 @@ class Class63 {
     companion object {
         @JvmField
         var anInt1117: Int = 0
-        var aClass114_1120: Class114? = Class114(53, -2)
+        var aIntRange_1120: IntRange? = IntRange(53, -2)
         @JvmField
         var anInt1121: Int = 0
-        var aClass114_1123: Class114? = Class114(78, -1)
+        var aIntRange_1123: IntRange? = IntRange(78, -1)
 
         @JvmStatic
         fun method601(i: Byte) {
-            aClass114_1120 = null
-            aClass114_1123 = null
+            aIntRange_1120 = null
+            aIntRange_1123 = null
             if (i.toInt() != -85) Companion.method601((-70).toByte())
         }
     }

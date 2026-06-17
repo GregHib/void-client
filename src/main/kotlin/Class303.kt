@@ -8,7 +8,7 @@ import Class62.method596
 * Visit http://jode.sourceforge.net/
 */
 object Class303 {
-    var aClass114_3842: Class114?
+    var aIntRange_3842: IntRange?
     var anInt3843: Int = 0
     @JvmField
     var anInt3844: Int = 1
@@ -16,7 +16,7 @@ object Class303 {
     var anInt3846: Int = 0
 
     fun method2285(bool: Boolean, i: Byte, i_0_: Int) {
-        if (i > -61) aClass114_3842 = null
+        if (i > -61) aIntRange_3842 = null
         anInt3843++
         if (bool) {
             val class348_sub47 = method2148(Class241.aClass351_3150, Class348_Sub23_Sub2.aClass77_9029, -126)
@@ -27,7 +27,7 @@ object Class303 {
 
     @JvmStatic
     fun method2286(i: Int) {
-        aClass114_3842 = null
+        aIntRange_3842 = null
         if (i != 114) anInt3844 = 87
     }
 
@@ -57,6 +57,6 @@ object Class303 {
     }
 
     init {
-        aClass114_3842 = Class114(114, 4)
+        aIntRange_3842 = IntRange(114, 4)
     }
 }

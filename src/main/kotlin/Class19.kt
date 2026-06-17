@@ -16,7 +16,7 @@ class Class19 {
 
     companion object {
         @JvmField
-        var aClass114_304: Class114?
+        var aIntRange_304: IntRange?
         @JvmField
         var anInt305: Int = 0
         @JvmField
@@ -25,7 +25,7 @@ class Class19 {
         var anInt309: Int = 0
         @JvmField
         var aClass174Array311: Array<Class174?>? = arrayOfNulls<Class174>(16)
-        var aClass114_315: Class114?
+        var aIntRange_315: IntRange?
 
         fun method283(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             var class318_sub5 = Class225.aClass243_2957!!.method1872(8) as Class318_Sub5?
@@ -38,13 +38,13 @@ class Class19 {
                 class318_sub5 = (Class225.aClass243_2957!!.method1878(0.toByte()) as Class318_Sub5?)
             }
             anInt305++
-            if (i >= -108) aClass114_304 = null
+            if (i >= -108) aIntRange_304 = null
         }
 
         @JvmStatic
         fun method284(i: Byte) {
-            aClass114_315 = null
-            aClass114_304 = null
+            aIntRange_315 = null
+            aIntRange_304 = null
             if (i.toInt() == 51) aClass174Array311 = null
         }
 
@@ -78,8 +78,8 @@ class Class19 {
         }
 
         init {
-            aClass114_304 = Class114(70, -2)
-            aClass114_315 = Class114(15, 16)
+            aIntRange_304 = IntRange(70, -2)
+            aIntRange_315 = IntRange(15, 16)
         }
     }
 }

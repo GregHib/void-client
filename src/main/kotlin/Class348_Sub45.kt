@@ -20,9 +20,9 @@ abstract class Class348_Sub45 : Class348() {
         @JvmField
         var anInt7104: Int = 0
         @JvmField
-        var aClass114_7105: Class114? = Class114(101, 20)
+        var aIntRange_7105: IntRange? = IntRange(101, 20)
         @JvmField
-        var aClass114_7106: Class114? = Class114(36, -2)
+        var aIntRange_7106: IntRange? = IntRange(36, -2)
         @JvmField
         var aAbstractModelRendererArray7107: Array<AbstractModelRenderer?>? = null
         @JvmField
@@ -54,9 +54,9 @@ abstract class Class348_Sub45 : Class348() {
 
         @JvmStatic
         fun method3314(i: Int) {
-            aClass114_7106 = null
+            aIntRange_7106 = null
             if (i != 5) method3313(-103, null)
-            aClass114_7105 = null
+            aIntRange_7105 = null
             aClass361Array7108 = null
             aAbstractModelRendererArray7107 = null
             aClass304_7103 = null

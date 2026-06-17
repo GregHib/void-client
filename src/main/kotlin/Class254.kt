@@ -39,12 +39,12 @@ class Class254 {
         var anInt3260: Int = 0
         var anInt3262: Int = 0
         var anInt3263: Int = 0
-        var aClass114_3264: Class114? = Class114(6, 2)
+        var aIntRange_3264: IntRange? = IntRange(6, 2)
 
         @JvmStatic
         fun method1926(i: Int) {
-            if (i >= -125) aClass114_3264 = null
-            aClass114_3264 = null
+            if (i >= -125) aIntRange_3264 = null
+            aIntRange_3264 = null
         }
 
         @JvmStatic

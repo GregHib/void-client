@@ -83,7 +83,7 @@ class Class174 {
         var anInt2293: Int = 0
         var anInt2295: Int = 0
         var anInt2300: Int = 0
-        var aClass114_2305: Class114? = Class114(57, 10)
+        var aIntRange_2305: IntRange? = IntRange(57, 10)
         @JvmField
         var aClass45_2306: Class45? = null
         @JvmField
@@ -138,7 +138,7 @@ class Class174 {
         fun method1334(i: Byte) {
             aClass223_2307 = null
             if (i.toInt() != -110) method1333(null, -51, null)
-            aClass114_2305 = null
+            aIntRange_2305 = null
             aAbstractModelRenderer_2309 = null
             aClass45_2306 = null
         }

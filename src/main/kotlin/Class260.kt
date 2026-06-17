@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class260 {
-    var aClass114_3307: Class114? = Class114(56, 2)
+    var aIntRange_3307: IntRange? = IntRange(56, 2)
     var anInt3308: Int = 0
     @JvmField
     var aClass45_3309: Class45? = null
@@ -29,7 +29,7 @@ object Class260 {
         aClass45_3309 = null
         anIntArray3311 = null
         if (i < 105) method1978()
-        aClass114_3307 = null
+        aIntRange_3307 = null
     }
 
     init {

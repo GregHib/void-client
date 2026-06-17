@@ -88,7 +88,7 @@ class Class22 {
         var anInt328: Int = 0
         @JvmField
         var anInt329: Int = 0
-        var aClass114_330: Class114? = Class114(65, -1)
+        var aIntRange_330: IntRange? = IntRange(65, -1)
         @JvmField
         var anInt333: Int = 0
         @JvmField
@@ -99,7 +99,7 @@ class Class22 {
         var anInt340: Int = 0
         @JvmStatic
         fun method293(i: Byte) {
-            aClass114_330 = null
+            aIntRange_330 = null
         }
 
         @JvmStatic

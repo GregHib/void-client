@@ -33,7 +33,7 @@ class Class369_Sub2(class221: Class221?, class341: Class341?, i: Int, i_2_: Int,
         @JvmField
         var aClass45_8589: Class45? = null
         @JvmField
-        var aClass114_8590: Class114? = Class114(58, 2)
+        var aIntRange_8590: IntRange? = IntRange(58, 2)
         @JvmField
         var anObject8592: Any? = null
         @JvmField
@@ -52,7 +52,7 @@ class Class369_Sub2(class221: Class221?, class341: Class341?, i: Int, i_2_: Int,
 
         @JvmStatic
         fun method3572(i: Int) {
-            aClass114_8590 = null
+            aIntRange_8590 = null
             aClass45_8589 = null
             if (i != 1000000) method3571(false, -66, 13.toByte(), 13)
             aClass46ArrayArray8584 = null

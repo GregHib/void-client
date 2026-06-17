@@ -26,18 +26,18 @@ class Class365 internal constructor(i: Int, string: String?, i_0_: Int, string_1
         @JvmField
         var aClass262_4473: Class262?
         var anInt4474: Int = 0
-        var aClass114_4477: Class114?
+        var aIntRange_4477: IntRange?
 
         @JvmStatic
         fun method3518(i: Int) {
             aClass262_4473 = null
             if (i != 88) method3518(-49)
-            aClass114_4477 = null
+            aIntRange_4477 = null
         }
 
         init {
             aClass262_4473 = Class262()
-            aClass114_4477 = Class114(88, 10)
+            aIntRange_4477 = IntRange(88, 10)
         }
     }
 }

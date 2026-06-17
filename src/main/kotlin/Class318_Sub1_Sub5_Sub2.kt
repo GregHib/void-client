@@ -142,7 +142,7 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
     }
 
     companion object {
-        var aClass114_10149: Class114? = Class114(23, 6)
+        var aIntRange_10149: IntRange? = IntRange(23, 6)
         var anInt10151: Int = 0
         var anInt10152: Int = 0
         var anInt10154: Int = 0
@@ -160,7 +160,7 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
         var anInt10165: Int = 0
         var anInt10166: Int = 0
         var anInt10167: Int = 0
-        var aClass114_10168: Class114?
+        var aIntRange_10168: IntRange?
         var anInt10169: Int = 0
         var anInt10170: Int = 0
         var anInt10171: Int = 0
@@ -170,8 +170,8 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
         @JvmStatic
         fun method2492(i: Int) {
             if (i != 1) anInt10163 = -36
-            aClass114_10149 = null
-            aClass114_10168 = null
+            aIntRange_10149 = null
+            aIntRange_10168 = null
             anIntArray10172 = null
         }
 
@@ -214,7 +214,7 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
         }
 
         init {
-            aClass114_10168 = Class114(2, 6)
+            aIntRange_10168 = IntRange(2, 6)
         }
     }
 }

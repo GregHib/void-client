@@ -26,7 +26,7 @@ class Class28 : Interface15 {
         var anInt4996: Int = 0
         @JvmField
         var aClass223_4997: Class223? = Class223(6, 1)
-        var aClass114_4998: Class114?
+        var aIntRange_4998: IntRange?
         @JvmField
         var anInt4999: Int = 0
         @JvmField
@@ -42,11 +42,11 @@ class Class28 : Interface15 {
             aString5000 = null
             val i_0_ = 74 / ((i - 58) / 49)
             aClass223_4997 = null
-            aClass114_4998 = null
+            aIntRange_4998 = null
         }
 
         init {
-            aClass114_4998 = Class114(59, 3)
+            aIntRange_4998 = IntRange(59, 3)
         }
     }
 }

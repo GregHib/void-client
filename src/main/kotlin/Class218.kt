@@ -32,7 +32,7 @@ class Class218 {
 
     fun method1596(i: Int, bool: Boolean, i_18_: Int, var_renderer: Renderer): AbstractModelRenderer? {
         anInt2857++
-        if (i_18_ < 51) aClass114_2860 = null
+        if (i_18_ < 51) aIntRange_2860 = null
         val l = (var_renderer.anInt4567 shl 19 or (this.anInt2853 or (i shl 16) or (if (!bool) 0 else 262144))).toLong()
         var abstractModelRenderer = this.aClass141_2851!!.aClass60_1976.method583(l, -87) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
@@ -70,7 +70,7 @@ class Class218 {
         var anInt2858: Int = 0
         @JvmField
         var aClass262_2859: Class262? = Class262()
-        var aClass114_2860: Class114?
+        var aIntRange_2860: IntRange?
         @JvmField
         var anInt2861: Int = 1401
 
@@ -110,11 +110,11 @@ class Class218 {
         fun method1594(i: Int) {
             aClass262_2859 = null
             if (i != -1966608624) aClass262_2859 = null
-            aClass114_2860 = null
+            aIntRange_2860 = null
         }
 
         init {
-            aClass114_2860 = Class114(106, 8)
+            aIntRange_2860 = IntRange(106, 8)
         }
     }
 }

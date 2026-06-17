@@ -51,7 +51,7 @@ class Class239_Sub21 : Class239 {
         @JvmField
         var anInt6057: Int = 0
         @JvmField
-        var aClass114_6058: Class114?
+        var aIntRange_6058: IntRange?
         @JvmField
         var anInt6059: Int = 0
         @JvmField
@@ -195,12 +195,12 @@ class Class239_Sub21 : Class239 {
             anIntArray6062 = null
             val i_39_ = 41 % ((i - -32) / 32)
             anIntArray6061 = null
-            aClass114_6058 = null
+            aIntRange_6058 = null
         }
 
         init {
             anIntArray6061 = IntArray(32)
-            aClass114_6058 = Class114(46, -1)
+            aIntRange_6058 = IntRange(46, -1)
         }
     }
 }

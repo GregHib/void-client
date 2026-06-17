@@ -54,7 +54,7 @@ class Class239_Sub15 : Class239 {
         @JvmField
         var anInt5996: Int = 0
         @JvmField
-        var aClass114_5997: Class114? = Class114(115, 11)
+        var aIntRange_5997: IntRange? = IntRange(115, 11)
         @JvmField
         var anInt5998: Int = 0
         @JvmField
@@ -163,8 +163,8 @@ class Class239_Sub15 : Class239 {
 
         @JvmStatic
         fun method1785(i: Int) {
-            aClass114_5997 = null
-            if (i != 8) aClass114_5997 = null
+            aIntRange_5997 = null
+            if (i != 8) aIntRange_5997 = null
         }
 
         @JvmStatic

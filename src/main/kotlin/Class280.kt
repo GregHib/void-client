@@ -352,7 +352,7 @@ class Class280 internal constructor(var_ha_Sub3: NativeRenderer) {
     }
 
     fun method2105(i: Int) {
-        if (i > -118) aClass114_3641 = null
+        if (i > -118) aIntRange_3641 = null
         anInt3634++
         anInterface5_Impl1_3638.method21(23315)
     }
@@ -442,13 +442,13 @@ class Class280 internal constructor(var_ha_Sub3: NativeRenderer) {
         var anInt3634: Int = 0
         var anInt3639: Int = 0
         var anInt3640: Int = 0
-        var aClass114_3641: Class114? = Class114(79, 3)
+        var aIntRange_3641: IntRange? = IntRange(79, 3)
         @JvmField
         var anInt3643: Int = 0
 
         @JvmStatic
         fun method2104(i: Int) {
-            aClass114_3641 = null
+            aIntRange_3641 = null
             if (i < 66) method2104(127)
         }
     }

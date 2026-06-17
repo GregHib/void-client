@@ -4,14 +4,14 @@
 object Class172 {
     var anInt2277: Int = 0
     var anInt2278: Int = 0
-    var aClass114_2279: Class114? = Class114(60, 0)
+    var aIntRange_2279: IntRange? = IntRange(60, 0)
     var anIntArray2280: IntArray? = IntArray(200)
     var anInt2281: Int = 0
 
     @JvmStatic
     fun method1325(i: Int) {
         anIntArray2280 = null
-        if (i <= -123) aClass114_2279 = null
+        if (i <= -123) aIntRange_2279 = null
     }
 
     fun method1326(class348_sub16_sub3: Class348_Sub16_Sub3?, i: Int): Class348_Sub16_Sub3 {

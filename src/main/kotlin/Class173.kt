@@ -13,13 +13,13 @@ class Class173 {
         var anInt2282: Int = 0
         var anInt2283: Int = 0
         var anInt2284: Int = 0
-        var aClass114_2285: Class114? = Class114(77, 4)
+        var aIntRange_2285: IntRange? = IntRange(77, 4)
         var aLong2286: Long = 0L
 
         @JvmStatic
         fun method1329(i: Int) {
             if (i != 4) method1329(95)
-            aClass114_2285 = null
+            aIntRange_2285 = null
         }
 
         fun method1330(i: Int, i_0_: Int, i_1_: Int) {
@@ -38,7 +38,7 @@ class Class173 {
                 val `is` = `object`
                 return method864(i_2_, `is`, i_3_, -104)
             }
-            if (i < 89) aClass114_2285 = null
+            if (i < 89) aIntRange_2285 = null
             if (`object` is Class344) {
                 val class344 = `object`
                 return class344.method2689(2, i_3_, i_2_)

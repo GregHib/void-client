@@ -25,7 +25,7 @@ class InputStream_Sub1 : InputStream() {
         @JvmField
         var anInt78: Int
         @JvmField
-        var aClass114_79: Class114?
+        var aIntRange_79: IntRange?
 
         @JvmStatic
         fun method124(i: Int) {
@@ -33,7 +33,7 @@ class InputStream_Sub1 : InputStream() {
             if (i == 2) {
                 aClass351_77 = null
                 aLongArray76 = null
-                aClass114_79 = null
+                aIntRange_79 = null
             }
         }
 
@@ -147,7 +147,7 @@ class InputStream_Sub1 : InputStream() {
             }
             aClass351_77 = Class351(8, 1)
             anInt78 = 0
-            aClass114_79 = Class114(75, 6)
+            aIntRange_79 = IntRange(75, 6)
         }
     }
 }

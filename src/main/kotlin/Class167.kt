@@ -111,7 +111,7 @@ class Class167 internal constructor(var_ha_Sub1: SoftwareRenderer) {
     companion object {
         var anInt2193: Int = 0
         var anInt2194: Int = 0
-        var aClass114_2196: Class114? = Class114(111, -1)
+        var aIntRange_2196: IntRange? = IntRange(111, -1)
         var anInt2199: Int = 0
         var anInt2200: Int = 0
         var aFloat2203: Float = 0f
@@ -123,7 +123,7 @@ class Class167 internal constructor(var_ha_Sub1: SoftwareRenderer) {
         var aClass45_2208: Class45? = null
         @JvmStatic
         fun method1293(i: Int) {
-            aClass114_2196 = null
+            aIntRange_2196 = null
             aClass45_2208 = null
             aClass229_2207 = null
         }

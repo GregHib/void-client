@@ -7,7 +7,7 @@ object Class140 {
     var anInt1956: Int = 0
     var anInt1957: Int = 0
     var anInt1958: Int = 0
-    var aClass114_1959: Class114? = Class114(81, 6)
+    var aIntRange_1959: IntRange? = IntRange(81, 6)
     var anInt1960: Int = 0
     @JvmField
     var aClass351_1961: Class351? = Class351(77, -1)
@@ -26,7 +26,7 @@ object Class140 {
     @JvmStatic
     fun method1169(bool: Boolean) {
         aClass351_1961 = null
-        aClass114_1959 = null
+        aIntRange_1959 = null
         if (bool != false) aClass351_1961 = null
     }
 

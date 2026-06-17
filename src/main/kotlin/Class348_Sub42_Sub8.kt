@@ -18,11 +18,11 @@ abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545:
         @JvmField
         var anInt9549: Int = 0
         @JvmField
-        var aClass114_9550: Class114? = Class114(109, 7)
+        var aIntRange_9550: IntRange? = IntRange(109, 7)
         @JvmField
         var anInt9551: Int = 0
         @JvmField
-        var aClass114_9552: Class114? = Class114(72, 0)
+        var aIntRange_9552: IntRange? = IntRange(72, 0)
         @JvmField
         var aClass351_9553: Class351? = Class351(36, 7)
         @JvmField
@@ -47,7 +47,7 @@ abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545:
         @JvmStatic
         fun method3197(i: Int, i_3_: Byte): Boolean {
             anInt9549++
-            if (i_3_.toInt() != 56) aClass114_9552 = null
+            if (i_3_.toInt() != 56) aIntRange_9552 = null
             return i == 7 || i == 9
         }
 
@@ -96,9 +96,9 @@ abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545:
 
         @JvmStatic
         fun method3199(i: Int) {
-            aClass114_9550 = null
+            aIntRange_9550 = null
             if (i < 17) method3196(60, -85)
-            aClass114_9552 = null
+            aIntRange_9552 = null
             aClass351_9553 = null
             aString9554 = null
         }

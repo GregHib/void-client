@@ -300,14 +300,14 @@ class Class330 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: Na
         var anInt4119: Int = 0
         var anInt4120: Int = 0
         var anInt4125: Int = 0
-        var aClass114_4126: Class114? = Class114(5, 8)
+        var aIntRange_4126: IntRange? = IntRange(5, 8)
         @JvmField
         var aBoolean4127: Boolean = false
 
         @JvmStatic
         fun method2631(i: Int) {
             val i_47_ = -46 / ((65 - i) / 61)
-            aClass114_4126 = null
+            aIntRange_4126 = null
         }
     }
 }

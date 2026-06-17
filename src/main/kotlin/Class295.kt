@@ -17,7 +17,7 @@ class Class295 internal constructor(string: String?, string_4_: String?, string_
     }
 
     companion object {
-        var aClass114_3751: Class114?
+        var aIntRange_3751: IntRange?
         var anInt3752: Int = 0
         var aClass348_Sub42_Sub17Array3753: Array<Class348_Sub42_Sub17?>? = arrayOfNulls<Class348_Sub42_Sub17>(14)
         var anInt3755: Int = 0
@@ -66,12 +66,12 @@ class Class295 internal constructor(string: String?, string_4_: String?, string_
         fun method2223(i: Int) {
             aClass348_Sub42_Sub17Array3753 = null
             anIntArray3759 = null
-            aClass114_3751 = null
+            aIntRange_3751 = null
             if (i < 100) aBoolean3763 = false
         }
 
         init {
-            aClass114_3751 = Class114(1, 2)
+            aIntRange_3751 = IntRange(1, 2)
             anInt3760 = -1
             anInt3764 = 0
         }

@@ -8,7 +8,7 @@ object Class178 {
     @JvmField
     var anInt2336: Int = 0
     var anInt2337: Int = 0
-    var aClass114_2338: Class114? = Class114(92, -1)
+    var aIntRange_2338: IntRange? = IntRange(92, -1)
     var aClass29_2339: Class29? = Class29(14, 0)
     var anInt2340: Int = 0
     @JvmField
@@ -34,7 +34,7 @@ object Class178 {
         aClass29_2349 = null
         aClass29_2344 = null
         aClass29_2352 = null
-        aClass114_2338 = null
+        aIntRange_2338 = null
         if (i > -74) method1356(true, null, -116, -47, true, null, true)
         aClass29_2350 = null
         aClass29Array2354 = null

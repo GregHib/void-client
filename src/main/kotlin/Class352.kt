@@ -25,7 +25,7 @@ class Class352 {
 
     companion object {
         var anInt4330: Int = 0
-        var aClass114_4331: Class114? = Class114(31, -1)
+        var aIntRange_4331: IntRange? = IntRange(31, -1)
         var anInt4334: Int = 0
         var anInt4335: Int = 0
         var anInt4336: Int = 0
@@ -33,7 +33,7 @@ class Class352 {
 
         @JvmStatic
         fun method3458(i: Int) {
-            aClass114_4331 = null
+            aIntRange_4331 = null
         }
 
         fun method3459(class348_sub34: Class348_Sub34, i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {

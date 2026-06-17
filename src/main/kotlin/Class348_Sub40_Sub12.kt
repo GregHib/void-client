@@ -339,7 +339,7 @@ class Class348_Sub40_Sub12 : Class348_Sub40(1, false) {
         @JvmField
         var anInt9196: Int = 0
         @JvmField
-        var aClass114_9197: Class114? = Class114(61, -1)
+        var aIntRange_9197: IntRange? = IntRange(61, -1)
         @JvmField
         var anInt9198: Int = 0
         var anInt9200: Int = 0
@@ -377,7 +377,7 @@ class Class348_Sub40_Sub12 : Class348_Sub40(1, false) {
         @JvmStatic
         fun method3077(i: Byte) {
             aClass351_9189 = null
-            aClass114_9197 = null
+            aIntRange_9197 = null
             if (i.toInt() != -98) method3077(27.toByte())
             aClass263_9195 = null
         }

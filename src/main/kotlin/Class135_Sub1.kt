@@ -48,14 +48,14 @@ class Class135_Sub1 : Class135, Interface2 {
     }
 
     override fun method12(i: Byte): Long {
-        if (i.toInt() != 42) aClass114_4707 = null
+        if (i.toInt() != 42) aIntRange_4707 = null
         anInt4712++
         return 0L
     }
 
     companion object {
         var anInt4706: Int = 0
-        var aClass114_4707: Class114?
+        var aIntRange_4707: IntRange?
         var anIntArray4709: IntArray? = IntArray(2048)
         var anInt4710: Int = 0
         var anInt4711: Int = 0
@@ -157,11 +157,11 @@ class Class135_Sub1 : Class135, Interface2 {
         fun method1154(i: Byte) {
             val i_23_ = -93 / ((i - -75) / 36)
             anIntArray4709 = null
-            aClass114_4707 = null
+            aIntRange_4707 = null
         }
 
         init {
-            aClass114_4707 = Class114(39, 8)
+            aIntRange_4707 = IntRange(39, 8)
             anInt4718 = 0
         }
     }

@@ -38,7 +38,7 @@ class Class43 {
         fun method381(i: Byte): Class179 {
             anInt616++
             if (i.toInt() != 68) Companion.method381((-42).toByte())
-            return Class114.method1059(95.toByte(), 1)
+            return IntRange.method1059(95.toByte(), 1)
         }
 
         fun method382(string: String, bool: Boolean) {

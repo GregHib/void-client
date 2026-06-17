@@ -27,7 +27,7 @@ class Class348_Sub40_Sub15 internal constructor(i: Int) : Class348_Sub40(0, true
 
     companion object {
         @JvmField
-        var aClass114_9216: Class114? = Class114(91, 2)
+        var aIntRange_9216: IntRange? = IntRange(91, 2)
         @JvmField
         var anInt9217: Int = 0
         @JvmField
@@ -47,15 +47,15 @@ class Class348_Sub40_Sub15 internal constructor(i: Int) : Class348_Sub40(0, true
 
         @JvmStatic
         fun method3085(i: Int) {
-            aClass114_9216 = null
-            if (i != 0) aClass114_9216 = null
+            aIntRange_9216 = null
+            if (i != 0) aIntRange_9216 = null
         }
 
         @JvmStatic
         fun method3086(i: Int, class348_sub16_sub3: Class348_Sub16_Sub3?, i_5_: Int, class45: Class45?, bool: Boolean, i_6_: Int, i_7_: Int) {
             try {
                 anInt9219++
-                if (i != 2) aClass114_9216 = null
+                if (i != 2) aIntRange_9216 = null
                 method2732(i_6_, i_7_, bool, 96, class45, i_5_)
                 Class285.aClass348_Sub16_Sub3_4743 = class348_sub16_sub3
             } catch (runtimeexception: RuntimeException) {

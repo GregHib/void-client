@@ -134,7 +134,7 @@ class CollisionMapRegion internal constructor(class230: Class230?, i: Int, class
         var anInt1720: Int = -1
         @JvmField
         var anInt1721: Int = 0
-        var aClass114_1722: Class114? = Class114(8, -2)
+        var aIntRange_1722: IntRange? = IntRange(8, -2)
         @JvmField
         var anInt1723: Int = 0
         @JvmStatic
@@ -159,7 +159,7 @@ class CollisionMapRegion internal constructor(class230: Class230?, i: Int, class
         @JvmStatic
         fun method1047(i: Int) {
             if (i != 1) anInt1720 = 93
-            aClass114_1722 = null
+            aIntRange_1722 = null
         }
 
         fun method1048(class46: Class46, i: Int) {

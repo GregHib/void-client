@@ -34,7 +34,7 @@ abstract class Class239 {
         @JvmField
         var anInt3134: Int = 0
         @JvmField
-        var aClass114_3135: Class114? = Class114(108, 5)
+        var aIntRange_3135: IntRange? = IntRange(108, 5)
         @JvmField
         var anInt3137: Int = 0
         @JvmField
@@ -46,11 +46,11 @@ abstract class Class239 {
         @JvmField
         var anInt3142: Int = 0
         @JvmField
-        var aClass114_3143: Class114?
+        var aIntRange_3143: IntRange?
         @JvmField
         var aByteArray3144: ByteArray? = ByteArray(520)
         @JvmField
-        var aClass114_3145: Class114? = null
+        var aIntRange_3145: IntRange? = null
         @JvmField
         var aClass45_3146: Class45? = null
         @JvmField
@@ -83,10 +83,10 @@ abstract class Class239 {
 
         @JvmStatic
         fun method1715(i: Int) {
-            aClass114_3145 = null
-            aClass114_3143 = null
+            aIntRange_3145 = null
+            aIntRange_3143 = null
             aClass45_3146 = null
-            aClass114_3135 = null
+            aIntRange_3135 = null
             aByteArray3144 = null
             aClass166_3147 = null
             if (i < 13) method1709(-99)
@@ -100,7 +100,7 @@ abstract class Class239 {
         }
 
         init {
-            aClass114_3143 = Class114(7, 3)
+            aIntRange_3143 = IntRange(7, 3)
         }
     }
 }

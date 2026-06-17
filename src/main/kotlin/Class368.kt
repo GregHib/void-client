@@ -203,7 +203,7 @@ class Class368 {
         @JvmField
         var anInt4497: Int = 0
         @JvmField
-        var aClass114_4500: Class114? = Class114(117, 1)
+        var aIntRange_4500: IntRange? = IntRange(117, 1)
         @JvmField
         var anInt4505: Int = 0
         @JvmField
@@ -215,7 +215,7 @@ class Class368 {
         @JvmStatic
         fun method3560(i: Int) {
             if (i != -13) method3563(-34, 21.toByte(), -111)
-            aClass114_4500 = null
+            aIntRange_4500 = null
         }
 
         @JvmStatic

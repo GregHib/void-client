@@ -21,14 +21,14 @@ class Class348_Sub47 : Class348() {
         var anInt7120: Int = 0
         var anInt7121: Int = 0
         var anInt7123: Int = 0
-        var aClass114_7124: Class114? = Class114(62, 4)
+        var aIntRange_7124: IntRange? = IntRange(62, 4)
         @JvmField
         var anInt7125: Int = 1406
 
         @JvmStatic
         fun method3323(i: Int) {
             val i_0_ = -14 / ((73 - i) / 51)
-            aClass114_7124 = null
+            aIntRange_7124 = null
         }
 
         fun method3324(var_renderer: Renderer?, i: Byte, l: Long) {

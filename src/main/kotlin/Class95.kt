@@ -4,7 +4,7 @@
 object Class95 {
     @JvmField
     var anInt1539: Int = 0
-    var aClass114_1540: Class114? = Class114(113, 1)
+    var aIntRange_1540: IntRange? = IntRange(113, 1)
     @JvmField
     var aClass45_1541: Class45? = null
     @JvmField
@@ -23,7 +23,7 @@ object Class95 {
     @JvmStatic
     fun method869(i: Int) {
         aClass45_1541 = null
-        aClass114_1540 = null
+        aIntRange_1540 = null
         aClass348_Sub42_Sub17Array1543 = null
         aClass221_1542 = null
         if (i != 3) method869(55)

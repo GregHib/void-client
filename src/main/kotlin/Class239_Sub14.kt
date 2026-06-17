@@ -54,7 +54,7 @@ class Class239_Sub14 : Class239 {
         @JvmField
         var anIntArrayArray5991: Array<IntArray?>? = arrayOfNulls<IntArray>(6)
         @JvmField
-        var aClass114_5992: Class114? = Class114(17, 4)
+        var aIntRange_5992: IntRange? = IntRange(17, 4)
         @JvmField
         var aClass211Array5993: Array<Class211?>? = null
         @JvmField
@@ -76,7 +76,7 @@ class Class239_Sub14 : Class239 {
 
         @JvmStatic
         fun method1780(i: Int) {
-            aClass114_5992 = null
+            aIntRange_5992 = null
             val i_0_ = 108 % ((-24 - i) / 54)
             aClass251_5989 = null
             anIntArrayArray5991 = null

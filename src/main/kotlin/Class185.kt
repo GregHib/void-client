@@ -60,7 +60,7 @@ class Class185 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt2481: Int = 0
         @JvmField
         var anInt2482: Int = 0
-        var aClass114_2483: Class114?
+        var aIntRange_2483: IntRange?
         var anInt2484: Int = 0
         var anInt2485: Int = 0
         var anInt2486: Int = 0
@@ -136,14 +136,14 @@ class Class185 internal constructor(class230: Class230?, i: Int, class45: Class4
 
         @JvmStatic
         fun method1395(i: Byte) {
-            aClass114_2483 = null
+            aIntRange_2483 = null
             aCharArray2488 = null
             aClass223_2489 = null
             if (i.toInt() != 82) method1394(120, -36, -100)
         }
 
         init {
-            aClass114_2483 = Class114(47, 6)
+            aIntRange_2483 = IntRange(47, 6)
             aClass223_2489 = Class223(3, 2)
         }
     }

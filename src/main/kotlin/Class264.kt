@@ -77,9 +77,9 @@ class Class264 {
         var anInt3364: Int = 0
         var anInt3366: Int = 0
         var anInt3367: Int = 0
-        var aClass114_3368: Class114? = Class114(112, 4)
+        var aIntRange_3368: IntRange? = IntRange(112, 4)
         var anInt3369: Int = 0
-        var aClass114_3371: Class114? = Class114(63, 5)
+        var aIntRange_3371: IntRange? = IntRange(63, 5)
         @JvmField
         var anInt3372: Int = 0
         @JvmField
@@ -119,8 +119,8 @@ class Class264 {
         @JvmStatic
         fun method2018(i: Int) {
             aAbstractModelRendererArray3378 = null
-            aClass114_3371 = null
-            aClass114_3368 = null
+            aIntRange_3371 = null
+            aIntRange_3368 = null
             if (i != 0) method2015(30, 1, -62)
         }
     }

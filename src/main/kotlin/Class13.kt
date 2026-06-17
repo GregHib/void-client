@@ -4,7 +4,7 @@ object Class13 {
     @JvmField
     var anInt219: Int = 0
     @JvmField
-    var aClass114_220: Class114? = Class114(40, -1)
+    var aIntRange_220: IntRange? = IntRange(40, -1)
     @JvmField
     var anInt221: Int = 0
     @JvmField
@@ -17,7 +17,7 @@ object Class13 {
     @JvmStatic
     fun method225(i: Byte) {
         if (i > 54) {
-            aClass114_220 = null
+            aIntRange_220 = null
             anIntArray224 = null
             anIntArray222 = null
             aClass314_Sub1Array223 = null

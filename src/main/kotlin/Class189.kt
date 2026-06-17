@@ -50,7 +50,7 @@ class Class189 {
         var anInt2523: Int = 0
         @JvmField
         var anInt2524: Int = 0
-        var aClass114_2527: Class114? = Class114(98, -2)
+        var aIntRange_2527: IntRange? = IntRange(98, -2)
         var anInt2528: Int = 0
         @JvmField
         var aClass278_2529: Class278? = null
@@ -253,7 +253,7 @@ class Class189 {
         fun method1421(i: Byte) {
             aClass278_2529 = null
             if (i.toInt() != -85) method1421(39.toByte())
-            aClass114_2527 = null
+            aIntRange_2527 = null
         }
     }
 }

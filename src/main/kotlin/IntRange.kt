@@ -1,7 +1,7 @@
 /* Class114 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class114 internal constructor(private var anInt1747: Int, var anInt1749: Int) {
+class IntRange internal constructor(private var anInt1747: Int, var anInt1749: Int) {
     fun method1058(i: Byte): Int {
         if (i <= 108) anInt1747 = 110
         anInt1746++

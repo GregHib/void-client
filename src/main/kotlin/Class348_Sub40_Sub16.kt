@@ -373,7 +373,7 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
         @JvmField
         var anInt9224: Int = 0
         @JvmField
-        var aClass114_9225: Class114?
+        var aIntRange_9225: IntRange?
         @JvmField
         var anInt9227: Int = 0
         @JvmField
@@ -389,7 +389,7 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
         @JvmStatic
         fun method3087(bool: Boolean) {
             anIntArray9230 = null
-            aClass114_9225 = null
+            aIntRange_9225 = null
             if (bool != false) method3089(-42)
         }
 
@@ -416,7 +416,7 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
         }
 
         init {
-            aClass114_9225 = Class114(28, -2)
+            aIntRange_9225 = IntRange(28, -2)
         }
     }
 }

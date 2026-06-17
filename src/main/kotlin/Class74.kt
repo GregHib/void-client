@@ -10,7 +10,7 @@ class Class74 internal constructor(i: Int, i_0_: Int) {
     companion object {
         @JvmField
         var anIntArray1233: IntArray? = IntArray(1024)
-        var aClass114_1234: Class114? = Class114(54, 4)
+        var aIntRange_1234: IntRange? = IntRange(54, 4)
         @JvmField
         var anInt1235: Int = 0
         @JvmField
@@ -18,7 +18,7 @@ class Class74 internal constructor(i: Int, i_0_: Int) {
 
         @JvmStatic
         fun method744(i: Byte) {
-            aClass114_1234 = null
+            aIntRange_1234 = null
             anIntArray1233 = null
             if (i < 87) Companion.method744((-102).toByte())
         }

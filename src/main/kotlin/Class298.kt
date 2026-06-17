@@ -6,7 +6,7 @@ import Class59_Sub2_Sub2.Companion.method574
 */
 object Class298 {
     var anInt3808: Int = 0
-    var aClass114_3809: Class114? = Class114(44, 6)
+    var aIntRange_3809: IntRange? = IntRange(44, 6)
     var anInt3810: Int = 0
     @JvmField
     var aBoolean3811: Boolean = false
@@ -22,8 +22,8 @@ object Class298 {
 
     @JvmStatic
     fun method2251(i: Int) {
-        if (i != 16711680) aClass114_3809 = null
-        aClass114_3809 = null
+        if (i != 16711680) aIntRange_3809 = null
+        aIntRange_3809 = null
     }
 
     @JvmStatic

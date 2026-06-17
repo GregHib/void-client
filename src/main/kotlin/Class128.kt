@@ -4,7 +4,7 @@
 object Class128 {
     @JvmField
     var anInt1870: Int = 0
-    var aClass114_1871: Class114? = Class114(52, -1)
+    var aIntRange_1871: IntRange? = IntRange(52, -1)
     var anInt1872: Int = 0
 
     fun method1122(i: Int) {
@@ -21,7 +21,7 @@ object Class128 {
 
     @JvmStatic
     fun method1123(i: Int) {
-        aClass114_1871 = null
+        aIntRange_1871 = null
         if (i != -1) method1122(-78)
     }
 }

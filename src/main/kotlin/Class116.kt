@@ -10,12 +10,12 @@ object Class116 {
     var anInt1760: Int = 0
     @JvmField
     var aString1761: String? = null
-    var aClass114_1762: Class114? = null
+    var aIntRange_1762: IntRange? = null
 
     @JvmStatic
     fun method1062(i: Byte) {
         if (i.toInt() == 35) {
-            aClass114_1762 = null
+            aIntRange_1762 = null
             aString1761 = null
         }
     }
@@ -55,6 +55,6 @@ object Class116 {
     }
 
     init {
-        aClass114_1762 = Class114(50, -1)
+        aIntRange_1762 = IntRange(50, -1)
     }
 }

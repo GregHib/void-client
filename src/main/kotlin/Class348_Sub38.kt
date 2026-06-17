@@ -309,10 +309,10 @@ class Class348_Sub38 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Su
         var anInt7008: Int = 0
         var anInt7009: Int = 0
         var anInt7012: Int = 0
-        var aClass114_7015: Class114? = Class114(33, 3)
+        var aIntRange_7015: IntRange? = IntRange(33, 3)
         @JvmStatic
         fun method3035(i: Int) {
-            aClass114_7015 = null
+            aIntRange_7015 = null
             if (i != 1) method3035(-34)
         }
     }

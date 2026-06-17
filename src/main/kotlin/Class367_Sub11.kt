@@ -150,7 +150,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         @JvmField
         var anIntArray7397: IntArray? = IntArray(4096)
         @JvmField
-        var aClass114_7398: Class114? = Class114(16, 6)
+        var aIntRange_7398: IntRange? = IntRange(16, 6)
         @JvmField
         var anInt7400: Int = 0
         @JvmField
@@ -236,7 +236,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
             anIntArray7397 = null
             aClass32_7415 = null
             if (bool == true) {
-                aClass114_7398 = null
+                aIntRange_7398 = null
                 aByteArray7394 = null
             }
         }

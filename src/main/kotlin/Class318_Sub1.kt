@@ -78,7 +78,7 @@ abstract class Class318_Sub1 : Class318() {
         @JvmField
         var anInt6378: Int = 0
         @JvmField
-        var aClass114_6383: Class114? = Class114(11, 6)
+        var aIntRange_6383: IntRange? = IntRange(11, 6)
         @JvmField
         var anInt6384: Int = 0
         @JvmField
@@ -210,8 +210,8 @@ abstract class Class318_Sub1 : Class318() {
 
         @JvmStatic
         fun method2389(i: Int) {
-            aClass114_6383 = null
-            if (i != 1) aClass114_6383 = null
+            aIntRange_6383 = null
+            if (i != 1) aIntRange_6383 = null
         }
     }
 }

@@ -146,14 +146,14 @@ class Class321 {
         @JvmField
         var anInt4005: Int = -1
         var anInt4013: Int = 0
-        var aClass114_4015: Class114? = Class114(116, 6)
+        var aIntRange_4015: IntRange? = IntRange(116, 6)
         @JvmField
         var anInt4017: Int = 0
 
         @JvmStatic
         fun method2549(i: Byte) {
             if (i > -74) method2549(75.toByte())
-            aClass114_4015 = null
+            aIntRange_4015 = null
         }
     }
 }

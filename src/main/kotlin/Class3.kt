@@ -3,7 +3,7 @@
 */
 object Class3 {
     @JvmField
-    var aClass114_123: Class114? = Class114(110, 10)
+    var aIntRange_123: IntRange? = IntRange(110, 10)
     @JvmField
     var anInt124: Int = 0
     @JvmField
@@ -29,7 +29,7 @@ object Class3 {
 
     @JvmStatic
     fun method176(i: Int) {
-        aClass114_123 = null
+        aIntRange_123 = null
         aClass161_125 = null
         if (i != -1) method176(-19)
     }

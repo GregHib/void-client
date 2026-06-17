@@ -750,7 +750,7 @@ class Class361 {
     companion object {
         var anInt4431: Int = 0
         var anInt4432: Int = 0
-        var aClass114_4433: Class114? = Class114(22, 0)
+        var aIntRange_4433: IntRange? = IntRange(22, 0)
         var anInt4434: Int = 0
         var anInt4435: Int = 0
         var anInt4436: Int = 0
@@ -838,7 +838,7 @@ class Class361 {
 
         @JvmStatic
         fun method3508(i: Int) {
-            aClass114_4433 = null
+            aIntRange_4433 = null
             if (i != 2) aFloat4455 = 0.7198636f
         }
     }

@@ -22,7 +22,7 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
     @Throws(IOException::class)
     fun method1467(i: Byte): Int {
         anInt2651++
-        if (i.toInt() != 83) aClass114_2665 = null
+        if (i.toInt() != 83) aIntRange_2665 = null
         if (aBoolean2654) return 0
         return anInputStream2652!!.available()
     }
@@ -198,7 +198,7 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
         var aClass351_2661: Class351? = Class351(24, 7)
         var anInt2662: Int = 0
         var anInt2664: Int = 0
-        var aClass114_2665: Class114? = Class114(12, 0)
+        var aIntRange_2665: IntRange? = IntRange(12, 0)
         var anInt2666: Int = 0
         var anInt2667: Int = 0
         @JvmField
@@ -227,7 +227,7 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
         fun method1471(i: Byte) {
             if (i >= 80) {
                 aClass60_2671 = null
-                aClass114_2665 = null
+                aIntRange_2665 = null
                 aClass351_2661 = null
             }
         }

@@ -18,7 +18,7 @@ abstract class Class238 {
         @JvmField
         var anInt3132: Int = 0
         @JvmField
-        var aClass114_3133: Class114? = null
+        var aIntRange_3133: IntRange? = null
 
         @JvmStatic
         fun method1703(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
@@ -32,8 +32,8 @@ abstract class Class238 {
 
         @JvmStatic
         fun method1704(i: Byte) {
-            if (i >= -90) aClass114_3133 = null
-            aClass114_3133 = null
+            if (i >= -90) aIntRange_3133 = null
+            aIntRange_3133 = null
         }
     }
 }

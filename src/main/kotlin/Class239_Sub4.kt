@@ -29,7 +29,7 @@ class Class239_Sub4 : Class239 {
     internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     override fun method1710(i: Int): Int {
-        if (i != 20014) aClass114_5883 = null
+        if (i != 20014) aIntRange_5883 = null
         anInt5877++
         return 1
     }
@@ -74,7 +74,7 @@ class Class239_Sub4 : Class239 {
         @JvmField
         var aString5882: String? = null
         @JvmField
-        var aClass114_5883: Class114? = Class114(34, 12)
+        var aIntRange_5883: IntRange? = IntRange(34, 12)
 
         @JvmStatic
         fun method1738(i: Int) {
@@ -84,7 +84,7 @@ class Class239_Sub4 : Class239 {
             if (i != 21921) method1738(11)
             aFloatArray5876 = null
             aClass348_Sub26_5881 = null
-            aClass114_5883 = null
+            aIntRange_5883 = null
         }
 
         init {

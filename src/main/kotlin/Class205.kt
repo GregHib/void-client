@@ -17,7 +17,7 @@ object Class205 {
     @JvmField
     var aClass351_2691: Class351?
     var aClass348_Sub44_2692: Class348_Sub44?
-    var aClass114_2693: Class114?
+    var aIntRange_2693: IntRange?
     @JvmField
     var anIntArray2694: IntArray?
 
@@ -126,7 +126,7 @@ object Class205 {
         anIntArray2694 = null
         aClass348_Sub44_2692 = null
         aClass351_2691 = null
-        aClass114_2693 = null
+        aIntRange_2693 = null
         if (i != 16384) method1496(-23, 118, -17, -52, 33, 108, 2)
         aClass351_2686 = null
     }
@@ -136,6 +136,6 @@ object Class205 {
         aClass351_2691 = Class351(46, 2)
         aClass348_Sub44_2692 = Class348_Sub44(0, -1)
         anIntArray2694 = IntArray(4096)
-        aClass114_2693 = Class114(94, -1)
+        aIntRange_2693 = IntRange(94, -1)
     }
 }

@@ -5,7 +5,7 @@ import kotlin.concurrent.Volatile
 * Visit http://jode.sourceforge.net/
 */
 object Class168 {
-    var aClass114_2248: Class114?
+    var aIntRange_2248: IntRange?
     @JvmField
     var aClass46_2249: Class46? = null
     @JvmField
@@ -16,7 +16,7 @@ object Class168 {
     var anInt2253: Int = 0
     @JvmField
     var anInt2254: Int = 0
-    var aClass114_2255: Class114?
+    var aIntRange_2255: IntRange?
 
     @Volatile
     var anObject2256: Any?
@@ -25,9 +25,9 @@ object Class168 {
     fun method1298(i: Int) {
         if (i != -1) aClass46_2249 = null
         anObject2256 = null
-        aClass114_2255 = null
+        aIntRange_2255 = null
         aClass46_2249 = null
-        aClass114_2248 = null
+        aIntRange_2248 = null
         aClass323_2252 = null
     }
 
@@ -38,8 +38,8 @@ object Class168 {
     }
 
     init {
-        aClass114_2248 = Class114(25, 6)
-        aClass114_2255 = Class114(99, -1)
+        aIntRange_2248 = IntRange(25, 6)
+        aIntRange_2255 = IntRange(99, -1)
         anObject2256 = null
     }
 }

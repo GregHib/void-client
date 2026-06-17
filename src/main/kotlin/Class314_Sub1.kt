@@ -376,7 +376,7 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
 
     companion object {
         @JvmField
-        var aClass114_6340: Class114? = Class114(74, 28)
+        var aIntRange_6340: IntRange? = IntRange(74, 28)
         @JvmField
         var anInt6341: Int = 0
         @JvmField
@@ -409,7 +409,7 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
         var anInt6370: Int = 0
         @JvmStatic
         fun method2344(i: Int) {
-            if (i == 0) aClass114_6340 = null
+            if (i == 0) aIntRange_6340 = null
         }
 
         @JvmStatic

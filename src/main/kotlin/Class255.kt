@@ -212,7 +212,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     }
 
     companion object {
-        var aClass114_3265: Class114?
+        var aIntRange_3265: IntRange?
         var anInt3266: Int = 0
         var anInt3270: Int = 0
         var anInt3272: Int = 0
@@ -239,8 +239,8 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         @JvmStatic
         fun method1931(bool: Boolean) {
             anIntArray3273 = null
-            if (bool != true) aClass114_3265 = null
-            aClass114_3265 = null
+            if (bool != true) aIntRange_3265 = null
+            aIntRange_3265 = null
             aClass161_3285 = null
         }
 
@@ -361,7 +361,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         }
 
         init {
-            aClass114_3265 = Class114(48, -2)
+            aIntRange_3265 = IntRange(48, -2)
         }
     }
 }

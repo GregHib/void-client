@@ -170,16 +170,16 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
         @JvmField
         var anInt7322: Int = 0
         @JvmField
-        var aClass114_7323: Class114? = Class114(105, -2)
+        var aIntRange_7323: IntRange? = IntRange(105, -2)
         @JvmField
-        var aClass114_7324: Class114? = Class114(96, 8)
+        var aIntRange_7324: IntRange? = IntRange(96, 8)
         @JvmField
         var aLinkedNodeListIterator_7325: LinkedNodeListIterator? = LinkedNodeListIterator()
 
         @JvmStatic
         fun method3541(i: Byte) {
-            aClass114_7323 = null
-            aClass114_7324 = null
+            aIntRange_7323 = null
+            aIntRange_7324 = null
             aLinkedNodeListIterator_7325 = null
             if (i.toInt() == 23) aClass351_7318 = null
         }

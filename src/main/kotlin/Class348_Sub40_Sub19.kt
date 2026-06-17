@@ -6,7 +6,7 @@ import Class348_Sub6.Companion.method2769
 */
 class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
     override fun method3042(i: Int, i_3_: Int): IntArray? {
-        if (i_3_ != 255) aClass114_9254 = null
+        if (i_3_ != 255) aIntRange_9254 = null
         anInt9256++
         return Class318_Sub6.anIntArray6432
     }
@@ -15,13 +15,13 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
         @JvmField
         var anInt9253: Int = 0
         @JvmField
-        var aClass114_9254: Class114? = Class114(73, 3)
+        var aIntRange_9254: IntRange? = IntRange(73, 3)
         @JvmField
         var anInt9255: Int = 0
         @JvmField
         var anInt9256: Int = 0
         @JvmField
-        var aClass114_9257: Class114?
+        var aIntRange_9257: IntRange?
         @JvmField
         var anInt9258: Int = 0
         @JvmField
@@ -79,8 +79,8 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
 
         @JvmStatic
         fun method3099(i: Byte) {
-            aClass114_9254 = null
-            aClass114_9257 = null
+            aIntRange_9254 = null
+            aIntRange_9257 = null
             anIntArray9259 = null
             if (i >= -63) anIntArray9259 = null
         }
@@ -93,7 +93,7 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
         }
 
         init {
-            aClass114_9257 = Class114(102, 3)
+            aIntRange_9257 = IntRange(102, 3)
         }
     }
 }

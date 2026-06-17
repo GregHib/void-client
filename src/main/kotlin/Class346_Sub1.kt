@@ -187,7 +187,7 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
         @JvmField
         var anInt6527: Int = 0
         @JvmField
-        var aClass114_6528: Class114? = Class114(14, 2)
+        var aIntRange_6528: IntRange? = IntRange(14, 2)
         @JvmField
         var anInt6529: Int = 0
         @JvmField
@@ -221,7 +221,7 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
 
         @JvmStatic
         fun method2705(i: Int) {
-            aClass114_6528 = null
+            aIntRange_6528 = null
             if (i != 14645) method2705(1)
         }
     }

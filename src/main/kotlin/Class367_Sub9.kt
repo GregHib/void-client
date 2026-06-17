@@ -99,7 +99,7 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
         @JvmField
         var anInt7366: Int = 0
         @JvmField
-        var aClass114_7367: Class114? = Class114(37, 7)
+        var aIntRange_7367: IntRange? = IntRange(37, 7)
         @JvmField
         var anInt7368: Int = 0
         @JvmField
@@ -149,7 +149,7 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
         @JvmStatic
         fun method3552(i: Int) {
             aClass45_7371 = null
-            aClass114_7367 = null
+            aIntRange_7367 = null
             aStringArray7378 = null
             if (i != 87) anInt7379 = 80
         }

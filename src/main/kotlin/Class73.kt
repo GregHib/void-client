@@ -38,7 +38,7 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
         var anInt4776: Int
         @JvmField
         var anInt4777: Int = 0
-        var aClass114_4779: Class114?
+        var aIntRange_4779: IntRange?
         var anIntArray4780: IntArray?
         @JvmField
         var anInt4781: Int = 0
@@ -54,7 +54,7 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
             aFloatArray4772 = null
             anIntArray4780 = null
             if (i.toInt() != -128) method743(113, -98)
-            aClass114_4779 = null
+            aIntRange_4779 = null
             aClass219_4782 = null
         }
 
@@ -80,7 +80,7 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
             anInt4776 = 0
             aFloatArray4772 = FloatArray(16)
             anIntArray4780 = intArrayOf(104, 120, 136, 168)
-            aClass114_4779 = Class114(76, 6)
+            aIntRange_4779 = IntRange(76, 6)
         }
     }
 }

@@ -48,14 +48,14 @@ class Class239_Sub22 : Class239 {
         @JvmField
         var anInt6074: Int = 0
         @JvmField
-        var aClass114_6075: Class114? = Class114(89, 0)
+        var aIntRange_6075: IntRange? = IntRange(89, 0)
         @JvmField
         var anInt6076: Int = 0
 
         @JvmStatic
         fun method1816(i: Int) {
-            aClass114_6075 = null
-            if (i != 1) aClass114_6075 = null
+            aIntRange_6075 = null
+            if (i != 1) aIntRange_6075 = null
         }
     }
 }

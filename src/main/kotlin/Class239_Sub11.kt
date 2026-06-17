@@ -38,9 +38,9 @@ class Class239_Sub11 : Class239 {
 
     companion object {
         @JvmField
-        var aClass114_5949: Class114? = Class114(69, 12)
+        var aIntRange_5949: IntRange? = IntRange(69, 12)
         @JvmField
-        var aClass114_5950: Class114?
+        var aIntRange_5950: IntRange?
         @JvmField
         var anInt5951: Int = 1339
         @JvmField
@@ -75,9 +75,9 @@ class Class239_Sub11 : Class239 {
 
         @JvmStatic
         fun method1769(i: Int) {
-            aClass114_5950 = null
+            aIntRange_5950 = null
             if (i != 100) method1769(-25)
-            aClass114_5949 = null
+            aIntRange_5949 = null
         }
 
         @JvmStatic
@@ -160,7 +160,7 @@ class Class239_Sub11 : Class239 {
         }
 
         init {
-            aClass114_5950 = Class114(64, 2)
+            aIntRange_5950 = IntRange(64, 2)
             anInt5959 = 0
         }
     }

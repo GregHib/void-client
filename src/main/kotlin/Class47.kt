@@ -6,7 +6,7 @@ abstract class Class47 {
 
     companion object {
         @JvmField
-        var aClass114_843: Class114?
+        var aIntRange_843: IntRange?
         @JvmField
         var anInt844: Int = 0
         @JvmField
@@ -16,7 +16,7 @@ abstract class Class47 {
 
         @JvmStatic
         fun method445(i: Int) {
-            if (i == 2) aClass114_843 = null
+            if (i == 2) aIntRange_843 = null
         }
 
         @JvmStatic
@@ -52,7 +52,7 @@ abstract class Class47 {
         }
 
         init {
-            aClass114_843 = Class114(66, 8)
+            aIntRange_843 = IntRange(66, 8)
         }
     }
 }

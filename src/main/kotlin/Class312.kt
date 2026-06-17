@@ -47,7 +47,7 @@ class Class312 {
 
     companion object {
         var anInt3924: Int = 0
-        var aClass114_3925: Class114?
+        var aIntRange_3925: IntRange?
         var anInt3926: Int = 0
         var anInt3927: Int = 0
         var anInt3928: Int = 0
@@ -63,12 +63,12 @@ class Class312 {
             anInt3924++
             if (i.toInt() == 86) {
                 Class348_Sub40_Sub25.anInt9341 = 0
-                Class348_Sub40_Sub36.aClass114_9456 = null
+                Class348_Sub40_Sub36.aIntRange_9456 = null
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                Class238.aClass114_3133 = null
-                Class239.aClass114_3145 = null
+                Class238.aIntRange_3133 = null
+                Class239.aIntRange_3145 = null
                 Class348_Sub50.anInt7213 = 0
-                Class348_Sub3.aClass114_6584 = null
+                Class348_Sub3.aIntRange_6584 = null
                 Class289.anInt3699 = 0
                 method3153(0)
                 method3147(27.toByte())
@@ -94,7 +94,7 @@ class Class312 {
 
         @JvmStatic
         fun method2331(bool: Boolean) {
-            aClass114_3925 = null
+            aIntRange_3925 = null
             if (bool != true) anInt3930 = -53
         }
 
@@ -105,7 +105,7 @@ class Class312 {
         }
 
         init {
-            aClass114_3925 = Class114(27, 3)
+            aIntRange_3925 = IntRange(27, 3)
             anInt3931 = 0
             anInt3932 = 1403
         }

@@ -170,7 +170,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         @JvmField
         var aClass45_8755: Class45? = null
         @JvmField
-        var aClass114_8756: Class114? = Class114(107, 6)
+        var aIntRange_8756: IntRange? = IntRange(107, 6)
 
         @JvmStatic
         fun method2408(i: Byte): Int {
@@ -221,7 +221,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         @JvmStatic
         fun method2412(bool: Boolean) {
             aClass45_8755 = null
-            aClass114_8756 = null
+            aIntRange_8756 = null
             aClass262_8744 = null
             if (bool != true) Companion.method2408((-121).toByte())
         }
