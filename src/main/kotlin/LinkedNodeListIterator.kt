@@ -194,7 +194,7 @@ class LinkedNodeListIterator {
                         var class348_sub37 = ModelBatchBase.aClass356_1895!!.method3484(i_2_ xor 0x59b0) as? Class348_Sub37
                         while (class348_sub37 != null) {
                             val i_17_ = (0x3L and ((class348_sub37.aLong4291) shr 28)).toInt()
-                            if (Class334.anInt4155 == i_17_) {
+                            if (CameraOrModelTransform.anInt4155 == i_17_) {
                                 val i_18_ = (-ArbVertexProgram.regionTileX + ((class348_sub37.aLong4291) and 0x3fffL).toInt())
                                 val i_19_ = (-Class90.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
                                 val i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4)

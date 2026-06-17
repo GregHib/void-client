@@ -46,8 +46,8 @@ class Class348_Sub46 : Class348 {
         fun method3319(var_renderer: Renderer?, i: Byte) {
             if (i > -108) method3321(19, 60, 108)
             anInt7114++
-            if (((LocalPlayerState.aPlayer_1907!!.plane).toInt() != Class334.anInt4155) && HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
-                if (method2808((LocalPlayerState.aPlayer_1907!!.plane).toInt(), var_renderer, true)) Class334.anInt4155 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
+            if (((LocalPlayerState.aPlayer_1907!!.plane).toInt() != CameraOrModelTransform.anInt4155) && HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
+                if (method2808((LocalPlayerState.aPlayer_1907!!.plane).toInt(), var_renderer, true)) CameraOrModelTransform.anInt4155 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
             }
         }
 

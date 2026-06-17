@@ -1517,7 +1517,7 @@ object Class66 {
                 val i_149_ = anIntArray1149!![--anInt1173]
                 val i_150_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!!!.method1838(-32350)
                 if (i_149_ != i_150_) {
-                    if (Class334.method2653(true, WorldMapRenderer.anInt4674)) {
+                    if (CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_150_ == 0 && SlotBinding.anInt3428 != -1) {
                             method2732(0, SlotBinding.anInt3428, false, 94, (Class59_Sub2_Sub1.aClass45_8667), i_149_)
                             method3093(87)
@@ -1636,7 +1636,7 @@ object Class66 {
                 val i_158_ = anIntArray1149!![--anInt1173]
                 val i_159_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
                 if (i_158_ != i_159_ && SlotBinding.anInt3428 == Class345.anInt4270) {
-                    if (!Class334.method2653(true, WorldMapRenderer.anInt4674)) {
+                    if (!CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_159_ == 0) {
                             method2732(0, SlotBinding.anInt3428, false, 127, (Class59_Sub2_Sub1.aClass45_8667), i_158_)
                             method3093(118)
@@ -4734,7 +4734,7 @@ object Class66 {
                 }
                 if (i == 4116) {
                     val i_442_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = if (Class334.method2647(true, i_442_.toChar())) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (CameraOrModelTransform.method2647(true, i_442_.toChar())) 1 else 0
                     return
                 }
                 if (i == 4117) {

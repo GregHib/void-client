@@ -50,7 +50,7 @@ class Class50_Sub2 internal constructor(private var anInt5231: Int, private val 
         @JvmStatic
         fun method464(i: Int) {
             anInt5229++
-            Class334.anInt4155 = i
+            CameraOrModelTransform.anInt4155 = i
             GroundItemRenderState.aAbstractModelRenderer_1664 = null
         }
     }

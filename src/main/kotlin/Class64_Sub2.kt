@@ -42,7 +42,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var aShortArray5436: ShortArray? = null
     private var aShortArray5438: ShortArray? = null
     private var aShortArray5439: ShortArray? = null
-    private var aClass334Array5442: Array<Class334?>? = null
+    private var aCameraOrModelTransformArray5442: Array<CameraOrModelTransform?>? = null
     private var anInt5443 = 0
     private var aShort5452: Short = 0
     private var anIntArray5455: IntArray? = null
@@ -92,7 +92,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             var i_0_ = 0
             while (anInt5406 > i_0_) {
                 val class353 = aClass353Array5524!![i_0_]!!
-                val class334 = aClass334Array5442!![i_0_]!!
+                val class334 = aCameraOrModelTransformArray5442!![i_0_]!!
                 if (!class353.aBoolean4350 || !aHa_Sub3_5419!!.method3666()) {
                     val f = (0.3333333f * ((anIntArray5511!![class353.anInt4349]) - -(anIntArray5511!![class353.anInt4344]) + (anIntArray5511!![class353.anInt4339])).toFloat())
                     val f_1_ = (0.3333333f * ((anIntArray5519!![class353.anInt4344]) + (anIntArray5519!![class353.anInt4349]) + (anIntArray5519!![class353.anInt4339])).toFloat())
@@ -707,7 +707,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 var i_110_ = 0
                 while (anInt5406 > i_110_) {
                     val class353 = aClass353Array5524!![i_110_]!!
-                    val class334 = aClass334Array5442!![i_110_]!!
+                    val class334 = aCameraOrModelTransformArray5442!![i_110_]!!
                     class334.anInt4156 = (class334.anInt4156 and 0xffffff or (255 - ((aByteArray5515!![class353.anInt4342]).toInt() and 0xff) shl 24))
                     i_110_++
                 }
@@ -732,7 +732,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             if (aClass353Array5524 != null) {
                 for (i_116_ in 0..<anInt5406) {
                     val class353 = aClass353Array5524!![i_116_]!!
-                    val class334 = aClass334Array5442!![i_116_]!!
+                    val class334 = aCameraOrModelTransformArray5442!![i_116_]!!
                     class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class334.anInt4156))
                 }
             }
@@ -740,7 +740,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         } else if (i == 8) {
             var i_117_ = 0
             while (anInt5406 > i_117_) {
-                val class334 = aClass334Array5442!![i_117_]!!
+                val class334 = aCameraOrModelTransformArray5442!![i_117_]!!
                 class334.anInt4154 += i_92_
                 class334.anInt4158 += i_91_
                 i_117_++
@@ -748,7 +748,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         } else if (i == 10) {
             var i_118_ = 0
             while (anInt5406 > i_118_) {
-                val class334 = aClass334Array5442!![i_118_]!!
+                val class334 = aCameraOrModelTransformArray5442!![i_118_]!!
                 class334.anInt4162 = class334.anInt4162 * i_92_ shr 7
                 class334.anInt4165 = class334.anInt4165 * i_91_ shr 7
                 i_118_++
@@ -756,7 +756,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         } else if (i == 9) {
             var i_119_ = 0
             while (anInt5406 > i_119_) {
-                val class334 = aClass334Array5442!![i_119_]!!
+                val class334 = aCameraOrModelTransformArray5442!![i_119_]!!
                 class334.anInt4151 = class334.anInt4151 + i_91_ and 0x3fff
                 i_119_++
             }
@@ -1132,20 +1132,20 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             } else class64_sub2_154_.aShortArray5423 = aShortArray5423
             if (method3119(i, i_156_ xor 0x6897, anInt5472)) {
-                if (class64_sub2_153_!!.aClass334Array5442 != null && (anInt5406 <= class64_sub2_153_.aClass334Array5442!!.size)) {
-                    class64_sub2_154_.aClass334Array5442 = class64_sub2_153_!!.aClass334Array5442
+                if (class64_sub2_153_!!.aCameraOrModelTransformArray5442 != null && (anInt5406 <= class64_sub2_153_.aCameraOrModelTransformArray5442!!.size)) {
+                    class64_sub2_154_.aCameraOrModelTransformArray5442 = class64_sub2_153_!!.aCameraOrModelTransformArray5442
                     var i_174_ = 0
                     while (anInt5406 > i_174_) {
-                        class64_sub2_154_!!.aClass334Array5442!![i_174_]!!.method2648(aClass334Array5442!![i_174_]!!, 118.toByte())
+                        class64_sub2_154_!!.aCameraOrModelTransformArray5442!![i_174_]!!.method2648(aCameraOrModelTransformArray5442!![i_174_]!!, 118.toByte())
                         i_174_++
                     }
                 } else {
                     val i_175_ = anInt5406
-                    class64_sub2_153_.aClass334Array5442 = arrayOfNulls<Class334>(i_175_)
-                    class64_sub2_154_.aClass334Array5442 = class64_sub2_153_.aClass334Array5442
-                    for (i_176_ in 0..<anInt5406) class64_sub2_154_.aClass334Array5442!![i_176_] = (aClass334Array5442!![i_176_]!!.method2649(Class348_Sub21.method2955(i_156_, 26792)))
+                    class64_sub2_153_.aCameraOrModelTransformArray5442 = arrayOfNulls<CameraOrModelTransform>(i_175_)
+                    class64_sub2_154_.aCameraOrModelTransformArray5442 = class64_sub2_153_.aCameraOrModelTransformArray5442
+                    for (i_176_ in 0..<anInt5406) class64_sub2_154_.aCameraOrModelTransformArray5442!![i_176_] = (aCameraOrModelTransformArray5442!![i_176_]!!.method2649(Class348_Sub21.method2955(i_156_, 26792)))
                 }
-            } else class64_sub2_154_.aClass334Array5442 = aClass334Array5442
+            } else class64_sub2_154_.aCameraOrModelTransformArray5442 = aCameraOrModelTransformArray5442
             if (aBoolean5477) {
                 class64_sub2_154_.anInt5418 = anInt5418
                 class64_sub2_154_.anInt5510 = anInt5510
@@ -1607,7 +1607,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             var i_283_ = 0
                             while (anInt5406 > i_283_) {
                                 val class353 = aClass353Array5524!![i_283_]!!
-                                val class334 = aClass334Array5442!![i_283_]!!
+                                val class334 = aCameraOrModelTransformArray5442!![i_283_]!!
                                 class334.anInt4156 = ((0xffffff and class334.anInt4156) or (255 + -(0xff and (aByteArray5515!![(class353.anInt4342)]).toInt()) shl 24))
                                 i_283_++
                             }
@@ -1649,7 +1649,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             var i_294_ = 0
                             while (anInt5406 > i_294_) {
                                 val class353 = aClass353Array5524!![i_294_]!!
-                                val class334 = aClass334Array5442!![i_294_]!!
+                                val class334 = aCameraOrModelTransformArray5442!![i_294_]!!
                                 class334.anInt4156 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5486!![(class353.anInt4342)]).toInt() and 0xffff]) or (0xffffff.inv() and class334.anInt4156))
                                 i_294_++
                             }
@@ -1666,7 +1666,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             val is_297_ = anIntArrayArray5412!![i_296_]!!
                             var i_298_ = 0
                             while ((is_297_.size > i_298_)) {
-                                val class334 = aClass334Array5442!![is_297_[i_298_]]!!
+                                val class334 = aCameraOrModelTransformArray5442!![is_297_[i_298_]]!!
                                 class334.anInt4158 += i_212_
                                 class334.anInt4154 += i_213_
                                 i_298_++
@@ -1684,7 +1684,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             val is_301_ = anIntArrayArray5412!![i_300_]!!
                             var i_302_ = 0
                             while (is_301_.size > i_302_) {
-                                val class334 = aClass334Array5442!![is_301_[i_302_]]!!
+                                val class334 = aCameraOrModelTransformArray5442!![is_301_[i_302_]]!!
                                 class334.anInt4165 = (i_212_ * class334.anInt4165 shr 7)
                                 class334.anInt4162 = (i_213_ * class334.anInt4162 shr 7)
                                 i_302_++
@@ -1701,7 +1701,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             val is_305_ = anIntArrayArray5412!![i_304_]!!
                             var i_306_ = 0
                             while ((i_306_ < is_305_.size)) {
-                                val class334 = aClass334Array5442!![is_305_[i_306_]]!!
+                                val class334 = aCameraOrModelTransformArray5442!![is_305_[i_306_]]!!
                                 class334.anInt4151 = 0x3fff and i_212_ + (class334.anInt4151)
                                 i_306_++
                             }
@@ -1948,7 +1948,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 if (modelDefinition.aRectangleBoundsArray1832 != null) {
                     anInt5406 = modelDefinition.aRectangleBoundsArray1832!!.size
                     aClass353Array5524 = arrayOfNulls<Class353>(anInt5406)
-                    aClass334Array5442 = arrayOfNulls<Class334>(anInt5406)
+                    aCameraOrModelTransformArray5442 = arrayOfNulls<CameraOrModelTransform>(anInt5406)
                     var i_350_ = 0
                     while (anInt5406 > i_350_) {
                         val class162 = modelDefinition.aRectangleBoundsArray1832!![i_350_]!!
@@ -1964,7 +1964,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         var i_353_ = (0xffffff and (ParticleEmitterNode.anIntArray179!![((modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff)]))
                         i_353_ = (i_353_ or (-(if (modelDefinition.aByteArray1834 == null) 0 else (modelDefinition.aByteArray1834!![(class162.anInt2155)])) + 255 shl 24))
                         aClass353Array5524!![i_350_] = Class353(i_351_, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
-                        aClass334Array5442!![i_350_] = Class334(i_353_)
+                        aCameraOrModelTransformArray5442!![i_350_] = CameraOrModelTransform(i_353_)
                         i_350_++
                     }
                 }
@@ -2608,7 +2608,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         if (aClass353Array5524 != null) {
             for (i_530_ in 0..<anInt5406) {
                 val class353 = aClass353Array5524!![i_530_]!!
-                val class334 = aClass334Array5442!![i_530_]!!
+                val class334 = aCameraOrModelTransformArray5442!![i_530_]!!
                 class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![0xffff and aShortArray5486!![(class353.anInt4342)].toInt()]) and 0xffffff or (class334.anInt4156 and 0xffffff.inv()))
             }
         }
@@ -2734,7 +2734,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             var i_568_ = 0
             while (anInt5406 > i_568_) {
                 val class353 = aClass353Array5524!![i_568_]!!
-                val class334 = aClass334Array5442!![i_568_]!!
+                val class334 = aCameraOrModelTransformArray5442!![i_568_]!!
                 class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff))
                 i_568_++
             }
@@ -2792,7 +2792,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             if (aClass353Array5524 != null) {
                 for (i_576_ in 0..<anInt5406) {
                     val class353 = aClass353Array5524!![i_576_]!!
-                    val class334 = aClass334Array5442!![i_576_]!!
+                    val class334 = aCameraOrModelTransformArray5442!![i_576_]!!
                     class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342]).toInt() and 0xffff]) and 0xffffff))
                 }
             }
@@ -3229,7 +3229,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         if (aClass353Array5524 != null) {
                             for (i_740_ in 0..<anInt5406) {
                                 val class353 = aClass353Array5524!![i_740_]!!
-                                val class334 = aClass334Array5442!![i_740_]!!
+                                val class334 = aCameraOrModelTransformArray5442!![i_740_]!!
                                 class334.anInt4156 = ((-(0xff and (aByteArray5515!![(class353.anInt4342)]).toInt()) + 255 shl 24) or (class334.anInt4156 and 0xffffff))
                             }
                         }
@@ -3274,7 +3274,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             var i_751_ = 0
                             while (anInt5406 > i_751_) {
                                 val class353 = aClass353Array5524!![i_751_]!!
-                                val class334 = aClass334Array5442!![i_751_]!!
+                                val class334 = aCameraOrModelTransformArray5442!![i_751_]!!
                                 class334.anInt4156 = ((class334.anInt4156 and 0xffffff.inv()) or (0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5486!![(class353.anInt4342)]).toInt()])))
                                 i_751_++
                             }
@@ -3291,7 +3291,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             val is_754_ = anIntArrayArray5412!![i_753_]!!
                             var i_755_ = 0
                             while ((i_755_ < is_754_.size)) {
-                                val class334 = aClass334Array5442!![is_754_[i_755_]]!!
+                                val class334 = aCameraOrModelTransformArray5442!![is_754_[i_755_]]!!
                                 class334.anInt4158 += i_590_
                                 class334.anInt4154 += i_591_
                                 i_755_++
@@ -3309,7 +3309,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             val is_758_ = anIntArrayArray5412!![i_757_]!!
                             var i_759_ = 0
                             while ((i_759_ < is_758_.size)) {
-                                val class334 = aClass334Array5442!![is_758_[i_759_]]!!
+                                val class334 = aCameraOrModelTransformArray5442!![is_758_[i_759_]]!!
                                 class334.anInt4162 = (i_591_ * class334.anInt4162 shr 7)
                                 class334.anInt4165 = (i_590_ * class334.anInt4165 shr 7)
                                 i_759_++
@@ -3326,7 +3326,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             val is_762_ = anIntArrayArray5412!![i_761_]!!
                             var i_763_ = 0
                             while ((is_762_.size > i_763_)) {
-                                val class334 = aClass334Array5442!![is_762_[i_763_]]!!
+                                val class334 = aCameraOrModelTransformArray5442!![is_762_[i_763_]]!!
                                 class334.anInt4151 = 0x3fff and i_590_ + (class334.anInt4151)
                                 i_763_++
                             }

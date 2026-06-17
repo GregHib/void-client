@@ -183,7 +183,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             anInt1076++
             if (!Class59_Sub1.aPrivilegedOperationWorker_5297!!.aBoolean3777) return -1
             if (CollisionMapAccessor.aHashtable3548!!.containsKey(string)) return 100
-            val string_52_ = Class334.method2651(string, 3)
+            val string_52_ = CameraOrModelTransform.method2651(string, 3)
             if (string_52_ == null) return -1
             val string_53_ = Class348_Sub41.aString7048 + string_52_
             if (!ParticleSystemState.aClass45_2208!!.method422("", string_53_, -88)) return -1

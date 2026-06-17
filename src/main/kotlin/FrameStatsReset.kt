@@ -463,7 +463,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlTerrainTile.anInt8238 = 0
             CacheIndexManager.anInt3951 = 0
             FloatCameraTransform.anInt5738 = 0
-            Class334.anInt4157 = 0
+            CameraOrModelTransform.anInt4157 = 0
             GraphicsOptionState.anInt3137 = 0
             Class348_Sub40_Sub30.anInt9395 = 0
             Class59.anInt1080 = 0
@@ -536,7 +536,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WidgetDefinition.anInt259 = 0
             FrameBufferObject.anInt4877 = 0
             Class64_Sub3.anInt5618 = 0
-            Class334.anInt4161 = 0
+            CameraOrModelTransform.anInt4161 = 0
             Class348_Sub16_Sub3.anInt8911 = 0
             RectangleRegion.anInt1947 = 0
             Class5_Sub3.anInt8376 = 0
@@ -1488,7 +1488,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             AnimatedModelRenderer.anInt8402 = 0
             CubemapTextureImplSource.anInt8720 = 0
             Class85.anInt1467 = 0
-            Class334.anInt4153 = 0
+            CameraOrModelTransform.anInt4153 = 0
             Class348_Sub38.anInt7012 = 0
             DelegatingRenderCanvas.anInt63 = 0
             Crc64Hashable.anInt4988 = 0
@@ -2572,7 +2572,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ModelWallEntity.anInt10139 = 0
             NodeDeque.anInt3339 = 0
             TrackedGroundDecor.anInt10372 = 0
-            Class334.anInt4163 = 0
+            CameraOrModelTransform.anInt4163 = 0
             OpenGlRenderer.anInt7570 = 0
             Class348_Sub1_Sub3.anInt8820 = 0
             NpcDefinitionCache.anInt3322 = 0
@@ -2670,7 +2670,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MatrixCameraTransform.anInt5674 = 0
             Class348_Sub40_Sub12.anInt9193 = 0
             NativeRenderer.anInt7890 = 0
-            Class334.anInt4164 = 0
+            CameraOrModelTransform.anInt4164 = 0
             ProjectileSpawner.anInt2675 = 0
             OpenGlRenderer.anInt7631 = 0
             NpcActorEntity.anInt10086 = 0
@@ -3119,7 +3119,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WallEntity.anInt8777 = 0
             Class348_Sub23_Sub1.anInt9004 = 0
             Class346_Sub1.anInt6533 = 0
-            Class334.anInt4159 = 0
+            CameraOrModelTransform.anInt4159 = 0
             ScrollTexMaterialPass.anInt6287 = 0
             FlickeringEffectsOptionState.anInt5924 = 0
             Class348_Sub40_Sub25.anInt9337 = 0
@@ -4091,7 +4091,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub10.anInt9174 = 0
             OpenGlRenderer.anInt7687 = 0
             Class346_Sub1.anInt6537 = 0
-            Class334.anInt4160 = 0
+            CameraOrModelTransform.anInt4160 = 0
             NativeRenderer.anInt7894 = 0
             TextureQualityOptionState.anInt5999 = 0
             Class377.anInt9895 = 0

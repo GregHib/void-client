@@ -3,7 +3,7 @@ import kotlin.math.max
 /* Class334 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class334 {
+class CameraOrModelTransform {
     var anInt4151: Int = 0
     var anInt4154: Int = 0
     var anInt4156: Int
@@ -11,20 +11,20 @@ class Class334 {
     var anInt4162: Int = 128
     var anInt4165: Int = 128
 
-    fun method2648(class334_0_: Class334, i: Byte) {
-        this.anInt4158 = class334_0_.anInt4158
-        this.anInt4151 = class334_0_.anInt4151
+    fun method2648(cameraOrModelTransform_0_: CameraOrModelTransform, i: Byte) {
+        this.anInt4158 = cameraOrModelTransform_0_.anInt4158
+        this.anInt4151 = cameraOrModelTransform_0_.anInt4151
         if (i.toInt() != 118) method2647(true, '\uffe5')
         anInt4159++
-        this.anInt4156 = class334_0_.anInt4156
-        this.anInt4165 = class334_0_.anInt4165
-        this.anInt4154 = class334_0_.anInt4154
-        this.anInt4162 = class334_0_.anInt4162
+        this.anInt4156 = cameraOrModelTransform_0_.anInt4156
+        this.anInt4165 = cameraOrModelTransform_0_.anInt4165
+        this.anInt4154 = cameraOrModelTransform_0_.anInt4154
+        this.anInt4162 = cameraOrModelTransform_0_.anInt4162
     }
 
-    fun method2649(i: Int): Class334 {
+    fun method2649(i: Int): CameraOrModelTransform {
         anInt4163++
-        return Class334(this.anInt4156, this.anInt4165, this.anInt4162, this.anInt4158, this.anInt4154, this.anInt4151)
+        return CameraOrModelTransform(this.anInt4156, this.anInt4165, this.anInt4162, this.anInt4158, this.anInt4154, this.anInt4151)
     }
 
     internal constructor(i: Int) {

@@ -277,8 +277,8 @@ import VideoStreamDecoder.Companion.method2631
 import CalendarUtil.method2637
 import SoundCacheState.method2640
 import MapElementLookup.Companion.method2645
-import Class334.Companion.method2653
-import Class334.Companion.method2654
+import CameraOrModelTransform.Companion.method2653
+import CameraOrModelTransform.Companion.method2654
 import Class336.method2657
 import Class337.Companion.method2658
 import Class338.Companion.method2662
