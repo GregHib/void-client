@@ -159,7 +159,7 @@ import WorldMapRenderer.Companion.method1853
 import ManagedGlResource.Companion.method1866
 import TextureMetadataProvider.Companion.method1880
 import DebugOverlayRenderer.method1882
-import Class246.Companion.method1886
+import ParticleEmitterFactory.Companion.method1886
 import Class247.method1889
 import Class248.Companion.method1897
 import Class249.method1907
@@ -1705,14 +1705,14 @@ class Client : GameAppletFrame() {
                         if (Class36.anInt489 == 1) {
                             if (Class268.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = Class268.anInt3441
                             val i = ((-Class268.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115)
-                            method3511(true, aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
+                            method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
                         } else if (Class36.anInt489 == 2) {
                             if (Class31.anInt443 < CompositeNpcModelBuilder.anInt2101) Class31.anInt443 = CompositeNpcModelBuilder.anInt2101
                             val i = (((Class31.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / Class31.anInt443) + 50)
-                            method3511(true, aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
-                        } else method3511(true, aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
+                            method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
+                        } else method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
                     } else if (WorldMapRenderer.anInt4674 != 10) {
-                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aClass324_20, Class246.aFontDefinition_3179, ((Class274.aClass274_3497!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498!!.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aRenderer6654)
+                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, ((Class274.aClass274_3497!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498!!.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aRenderer6654)
                     } else Class302.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)
@@ -2081,7 +2081,7 @@ class Client : GameAppletFrame() {
                                     Class331.aClass46_4130 = null
                                 }
                                 Class348_Sub42.anInt7059 = 0
-                                Class246.aBoolean3174 = false
+                                ParticleEmitterFactory.aBoolean3174 = false
                                 WorldMapScene.aBoolean3103 = false
                                 if (!Class5_Sub1.aBoolean8335) method661(111.toByte())
                             }
@@ -2210,7 +2210,7 @@ class Client : GameAppletFrame() {
                                     }
                                     if (class46.anInt765 == Class348_Sub45.anInt7102) {
                                         HeapDiagnosticsHolder.aClass46_2249 = class46
-                                        if (bool) Class246.aBoolean3174 = true
+                                        if (bool) ParticleEmitterFactory.aBoolean3174 = true
                                         if (bool_54_) {
                                             val i_70_ = ((i_51_ + (class348_sub45!!.method3308((-127).toByte())) - i_43_ - ((class46.anInt709) / 2)).toDouble() * 2.0 / (Class75.aFloat1247).toDouble()).toInt()
                                             val i_71_ = -((i_52_ + (class348_sub45.method3311(-111)) - i_44_ - ((class46.anInt789) / 2)).toDouble() * 2.0 / (Class75.aFloat1247).toDouble()).toInt()

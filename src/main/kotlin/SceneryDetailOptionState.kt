@@ -310,8 +310,8 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     while (class348_sub34 != null) {
                                         val class213 = (Exception_Sub1.aClass255_112!!.method1940(79, (class348_sub34.anInt6973)))
                                         if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
-                                            val class254 = (if (Class246.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
-                                            if ((Class38.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, Class246.anInt3176))))) {
+                                            val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364)) else null)
+                                            if ((Class38.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, ParticleEmitterFactory.anInt3176))))) {
                                                 Class97.anInt1555++
                                                 Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=ff9040>" + (class213.aString2795)), i_32_, (-76).toByte(), false, i_33_, -1, true, 49, i_57_.toLong(), Class28.aString5001, class348_sub34.anInt6973.toLong(), (Class348_Sub49_Sub1.anInt9747))
                                             }
@@ -347,8 +347,8 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                 if (class51!!.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte()))
                                 if (class51 != null) {
                                     if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
-                                        val class254 = (if (Class246.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
-                                        if (((0x4 and Class38.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (class51.method487(Class246.anInt3176, (class254.anInt3256), 54))))) {
+                                        val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364)) else null)
+                                        if (((0x4 and Class38.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (class51.method487(ParticleEmitterFactory.anInt3176, (class254.anInt3256), 54))))) {
                                             TrigLookupInit.anInt2877++
                                             Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=00ffff>" + (class51.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), Class28.aString5001, (Class348_Sub40_Sub21.method3107(95.toByte(), interface10, i_32_, i_33_)), Class348_Sub49_Sub1.anInt9747)
                                         }

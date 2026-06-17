@@ -193,7 +193,7 @@ abstract class Class318_Sub1 : Class318() {
                         var class143 = Class258_Sub1.aFontDefinition_8527
                         if (class42.anInt576 == 1) {
                             class324 = GameAppletFrame.aClass324_20
-                            class143 = Class246.aFontDefinition_3179
+                            class143 = ParticleEmitterFactory.aFontDefinition_3179
                         }
                         if (class42.anInt576 == 2) {
                             class143 = Class369.aFontDefinition_4962

@@ -281,7 +281,7 @@ class MatrixCameraTransform : AbstractCameraTransform() {
         var anInt5671: Int = 0
         @JvmField
         var anInt5674: Int = 0
-        var aClass246_5675: Class246? = Class284.method2118(((-42).toByte()).toByte())
+        var aParticleEmitterFactory_5675: ParticleEmitterFactory? = Class284.method2118(((-42).toByte()).toByte())
         @JvmField
         var anInt5676: Int = 0
         @JvmField
@@ -306,7 +306,7 @@ class MatrixCameraTransform : AbstractCameraTransform() {
             if (i != 0) method911(-121)
             aProjectileFactory_5689 = null
             aRenderConfig5684 = null
-            aClass246_5675 = null
+            aParticleEmitterFactory_5675 = null
             aClass351_5677 = null
         }
 

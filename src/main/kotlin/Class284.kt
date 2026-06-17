@@ -64,11 +64,11 @@ class Class284 {
             if (i == 0) anIntArrayArray3677 = null
         }
 
-        fun method2118(i: Byte): Class246? {
+        fun method2118(i: Byte): ParticleEmitterFactory? {
             anInt3674++
             try {
                 if (i.toInt() != -42) anInt3676 = -23
-                return Class246_Sub1()
+                return ScaledParticleEmitter()
             } catch (throwable: Throwable) {
                 return null
             }

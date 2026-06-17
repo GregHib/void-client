@@ -85,7 +85,7 @@ class ServerConnectionInfo {
                     DebugOverlayRenderer.aFloat3172 = Class269.aFloat3462
                     Class45.aFloat670 = Class348_Sub3.aFloat6586
                     Class258_Sub4.aFloat8560 = RangedGraphicsOptionState.aFloat5945
-                    Class246.aFloat3177 = Class361.aFloat4455
+                    ParticleEmitterFactory.aFloat3177 = Class361.aFloat4455
                     Class318_Sub1_Sub3.anInt8739 = NativeIndexBuffer.anInt4703
                     NoOpGraphicsOptionState.anInt6042 = Class36.anInt486
                 }

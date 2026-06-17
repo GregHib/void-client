@@ -157,7 +157,7 @@ class Class339 : Runnable {
                     method705(class348_sub36)
                 }
                 Class362.anInt4458 = class46.anInt695
-                Class246.anInt3176 = i
+                ParticleEmitterFactory.anInt3176 = i
                 Class38.anInt500 = i_13_
                 Class301.anInt3829 = class46.anInt812
                 RenderNode.aBoolean9722 = true

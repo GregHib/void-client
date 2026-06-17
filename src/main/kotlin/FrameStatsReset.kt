@@ -48,7 +48,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NpcDefinition.anInt2933 = 0
             OpenGlRenderer.anInt7661 = 0
             FontDefinition.anInt1991 = 0
-            Class246.anInt3175 = 0
+            ParticleEmitterFactory.anInt3175 = 0
             Class348_Sub51.anInt7266 = 0
             GameAppletFrame.anInt6 = 0
             Class348.anInt4289 = 0
@@ -3347,7 +3347,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class252.anInt3243 = 0
             WorldMapSceneSoftware.anInt5825 = 0
             Class318_Sub1_Sub1_Sub1.anInt9953 = 0
-            Class246.anInt3178 = 0
+            ParticleEmitterFactory.anInt3178 = 0
             Class38.anInt509 = 0
             Class318_Sub1_Sub4_Sub2.anInt10110 = 0
             Class348_Sub50.anInt7210 = 0

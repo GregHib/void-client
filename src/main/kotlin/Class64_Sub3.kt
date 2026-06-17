@@ -1,5 +1,5 @@
 import TwoStateOptionState.Companion.method1846
-import Class246.Companion.method1885
+import ParticleEmitterFactory.Companion.method1885
 import Class286_Sub9.Companion.method2174
 import Class299_Sub1.Companion.method2259
 import Class314_Sub1.Companion.method2352

@@ -27,12 +27,12 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
     fun method578(i: Int, i_2_: Int) {
         if (i == 2) {
             anInt1093++
-            if (MatrixCameraTransform.aClass246_5675 != null) {
+            if (MatrixCameraTransform.aParticleEmitterFactory_5675 != null) {
                 var class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1011(-59) as Class348_Sub42_Sub8?)
                 while (class348_sub42_sub8 != null) {
                     if (!class348_sub42_sub8.method3195(-4)) {
                         if (i_2_.toLong() < ++class348_sub42_sub8.aLong7057) {
-                            val class348_sub42_sub8_3_ = MatrixCameraTransform.aClass246_5675!!.method1888(3, class348_sub42_sub8)
+                            val class348_sub42_sub8_3_ = MatrixCameraTransform.aParticleEmitterFactory_5675!!.method1888(3, class348_sub42_sub8)
                             aClass356_1100.method3483(86.toByte(), (class348_sub42_sub8.aLong4291), class348_sub42_sub8_3_)
                             method573(class348_sub42_sub8_3_, class348_sub42_sub8, 63.toByte())
                             class348_sub42_sub8.method2715(116.toByte())

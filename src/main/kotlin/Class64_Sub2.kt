@@ -1,8 +1,8 @@
 import ParticleEmitterNode.Companion.method219
 import DetailLevelOptionState.Companion.method1837
 import SimpleToggleOptionState.Companion.method1740
-import Class246.Companion.method1885
-import Class246.Companion.method1887
+import ParticleEmitterFactory.Companion.method1885
+import ParticleEmitterFactory.Companion.method1887
 import Class348_Sub16_Sub2.Companion.method2832
 import Class348_Sub23_Sub4.Companion.method2985
 import Class348_Sub40_Sub26.Companion.method3119
