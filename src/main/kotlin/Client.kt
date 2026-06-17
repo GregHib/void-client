@@ -235,7 +235,7 @@ import ParticleSystemRenderer.Companion.method2294
 import ConfigVarProgress.Companion.method2310
 import ItemModelDefinition.Companion.method328
 import ResourceLoaderThread.Companion.method2317
-import Class312.Companion.method2331
+import WidgetRedrawTracker.Companion.method2331
 import Class313.method2333
 import Class314_Sub1.Companion.method2344
 import Class315.Companion.method2354
@@ -2149,7 +2149,7 @@ class Client : GameAppletFrame() {
                                     bool = false
                                 }
                                 if (class46.anInt765 != 0) {
-                                    if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == Class312.anInt3932)) {
+                                    if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == WidgetRedrawTracker.anInt3932)) {
                                         Class348_Sub1.aClass46_6561 = class46
                                         if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2292(123, Class348_Sub8.aRenderer6654!!, class46.anInt789)
                                         if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {

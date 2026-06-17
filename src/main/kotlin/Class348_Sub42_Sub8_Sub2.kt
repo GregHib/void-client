@@ -805,7 +805,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class312.aIntRange_3925 == Class348_Sub3.aIntRange_6584) {
+            if (WidgetRedrawTracker.aIntRange_3925 == Class348_Sub3.aIntRange_6584) {
                 method128(aClass74_10437, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true

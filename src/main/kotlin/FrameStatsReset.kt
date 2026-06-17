@@ -1135,7 +1135,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TextureFormatInfo.anInt3848 = 0
             WaterMaterialPass.anInt6215 = 0
             MinimapFlagRenderer.anInt1798 = 0
-            Class312.anInt3926 = 0
+            WidgetRedrawTracker.anInt3926 = 0
             SizeBoundedSoftCache.anInt2321 = 0
             ParticleEmitterDef.anInt4956 = 0
             OpenGlRenderer.anInt7556 = 0
@@ -1269,7 +1269,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GameDisplayManager.anInt2837 = 0
             NativeRenderer.anInt8031 = 0
             Class348_Sub16_Sub2.anInt8871 = 0
-            Class312.anInt3928 = 0
+            WidgetRedrawTracker.anInt3928 = 0
             NativeRenderer.anInt8003 = 0
             Class50_Sub4.anInt5257 = 0
             GrowableStringList.anInt2363 = 0
@@ -1525,7 +1525,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlIndexBufferArb.anInt8501 = 0
             GlslEnvMaterialPass.anInt6264 = 0
             Class316.anInt3966 = 0
-            Class312.anInt3929 = 0
+            WidgetRedrawTracker.anInt3929 = 0
             WidgetDefinition.anInt258 = 0
             OpenGlRenderer.anInt7522 = 0
             Class341.anInt4228 = 0
@@ -2008,7 +2008,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5628 = 0
             Class348_Sub49.anInt7167 = 0
             ItemDefinition.anInt2780 = 0
-            Class312.anInt3927 = 0
+            WidgetRedrawTracker.anInt3927 = 0
             Class348_Sub40_Sub16.anInt9223 = 0
             CacheArchiveIndex.anInt1772 = 0
             Class318_Sub1_Sub1_Sub2.anInt9990 = 0
@@ -3718,7 +3718,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub23_Sub2.anInt9013 = 0
             MapSceneIconDef.anInt2849 = 0
             GlIndexBufferArb.anInt8497 = 0
-            Class312.anInt3924 = 0
+            WidgetRedrawTracker.anInt3924 = 0
             Class348_Sub40_Sub31.anInt9413 = 0
             Class318_Sub1_Sub4_Sub2.anInt10106 = 0
             Class5_Sub3.anInt8371 = 0

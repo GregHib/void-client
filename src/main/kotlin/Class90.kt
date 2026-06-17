@@ -30,7 +30,7 @@ object Class90 {
         val i_1_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
         val bool = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 156) == 1
         val i_2_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(i + -172)
-        Class312.anInt3931 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-112).toByte())
+        WidgetRedrawTracker.anInt3931 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-112).toByte())
         Class322.method2554((-45).toByte())
         method3111(125, i_0_)
         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.startBitAccess(-122)

@@ -206,7 +206,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (`is` != null) {
                         var i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - ArbVertexProgram.regionTileX
                         var i_22_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] and 0xff) - Class90.regionTileY
-                        if (Class312.anInt3931 != 0) {
+                        if (WidgetRedrawTracker.anInt3931 != 0) {
                             i_22_ = 10
                             i_21_ = 10
                         }
@@ -216,7 +216,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (`is` != null) {
                         var i_23_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - ArbVertexProgram.regionTileX
                         var i_24_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] and 0xff) + -Class90.regionTileY
-                        if (Class312.anInt3931 != 0) {
+                        if (WidgetRedrawTracker.anInt3931 != 0) {
                             i_24_ = 10
                             i_23_ = 10
                         }
@@ -265,14 +265,14 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     IOException_Sub1.aBoolean86 = Class316.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
                     Class47.aBoolean845 = Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
                     Class338.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, false)
-                    if (Class312.anInt3931 != 0) Class44.method385(false, Class338.aClass237_Sub1_4197, Class347.aByteArrayArray4281)
+                    if (WidgetRedrawTracker.anInt3931 != 0) Class44.method385(false, Class338.aClass237_Sub1_4197, Class347.aByteArrayArray4281)
                     else Class348_Sub1_Sub1.method2727((-65).toByte(), Class338.aClass237_Sub1_4197, (Class347.aByteArrayArray4281))
                     GroundItemRenderState.method1015(Class367_Sub4.anInt7319 shr 4, (Class348_Sub40_Sub3.anInt9109 shr 4), true)
                     Class348_Sub42_Sub3.method3175((-77).toByte())
                     if (bool_25_) {
                         DoublyLinkedNodeList.method1879(true)
                         VarpStore.aClass237_Sub1_5067 = WorldMapSceneSoftware(1, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, true)
-                        if (Class312.anInt3931 == 0) {
+                        if (WidgetRedrawTracker.anInt3931 == 0) {
                             Class348_Sub1_Sub1.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (ModelFacePriorityNode.aByteArrayArray1887))
                             RegionSceneLoader.method2193(true, (-119).toByte())
                         } else {
@@ -284,7 +284,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         DoublyLinkedNodeList.method1879(false)
                     }
                     Class338.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aRenderer6654, (if (!bool_25_) null else (VarpStore.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108)
-                    if (Class312.anInt3931 == 0) {
+                    if (WidgetRedrawTracker.anInt3931 == 0) {
                         RegionSceneLoader.method2193(true, (-128).toByte())
                         ObjectSpawnDecoder.method1090(GlRectangleTexture.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)
                         if (Class348_Sub50.aByteArrayArray7212 != null) Class92.method859(i xor 0x7e.inv())
@@ -301,7 +301,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (bool_25_) {
                         DoublyLinkedNodeList.method1879(true)
                         RegionSceneLoader.method2193(true, (-124).toByte())
-                        if (Class312.anInt3931 != 0) ProjectionCameraTransform.method944(-8212, (Class348_Sub23_Sub1.aByteArrayArray8996), VarpStore.aClass237_Sub1_5067)
+                        if (WidgetRedrawTracker.anInt3931 != 0) ProjectionCameraTransform.method944(-8212, (Class348_Sub23_Sub1.aByteArrayArray8996), VarpStore.aClass237_Sub1_5067)
                         else ObjectSpawnDecoder.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, VarpStore.aClass237_Sub1_5067)
                         Class348_Sub18.method2938(73.toByte())
                         RegionSceneLoader.method2193(true, (-121).toByte())
@@ -338,7 +338,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), 1057001181)
                         Class348_Sub42_Sub14.method3243(-122, class348_sub47)
                     }
-                    if (Class312.anInt3931 == 0) {
+                    if (WidgetRedrawTracker.anInt3931 == 0) {
                         val i_33_ = ((Renderer.anInt4581 + -(Class367_Sub4.anInt7319 shr 4)) / 8)
                         val i_34_ = ((Renderer.anInt4581 - -(Class367_Sub4.anInt7319 shr 4)) / 8)
                         val i_35_ = ((Class327.anInt4095 + -(Class348_Sub40_Sub3.anInt9109 shr 4)) / 8)

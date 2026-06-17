@@ -6,7 +6,7 @@ import Class348_Sub40_Sub39.Companion.method3153
 /* Class312 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class312 {
+class WidgetRedrawTracker {
     private var aClass348_3922: Class348? = null
     private var aNodeDeque_3923: NodeDeque? = null
     fun method2327(i: Byte): Class348? {

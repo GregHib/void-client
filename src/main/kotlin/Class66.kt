@@ -3229,7 +3229,7 @@ object Class66 {
             }
             if (i == 1302) {
                 val i_284_ = anIntArray1149!![--anInt1173]
-                if (i_284_ == InputStream_Sub1.anInt78 || i_284_ == GrowableStringList.anInt2361 || i_284_ == Class312.anInt3930) {
+                if (i_284_ == InputStream_Sub1.anInt78 || i_284_ == GrowableStringList.anInt2361 || i_284_ == WidgetRedrawTracker.anInt3930) {
                     class46!!.anInt797 = i_284_
                     return
                 }

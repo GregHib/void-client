@@ -1789,7 +1789,7 @@ class Class64_Sub3 : Class64 {
                 aShortArray5573 = null
                 anIntArrayArray5553 = null
             }
-            if (anIntArrayArray5539 != null && !Class312.method2332(anInt5556, 124.toByte(), anInt5648)) {
+            if (anIntArrayArray5539 != null && !WidgetRedrawTracker.method2332(anInt5556, 124.toByte(), anInt5648)) {
                 anIntArrayArray5539 = null
                 aShortArray5608 = null
             }
@@ -3426,7 +3426,7 @@ class Class64_Sub3 : Class64 {
                 aByteArray5594 = Class93.method863(anInt5529, 113.toByte(), aByteArray5594)
                 aFloatArray5552 = HudTabPanel.method1638(anInt5529, aFloatArray5552!!, -1)
                 aFloatArray5571 = HudTabPanel.method1638(anInt5529, aFloatArray5571!!, -1)
-                if (modelDefinition.anIntArray1868 != null && Class312.method2332(anInt5556, 125.toByte(), i)) anIntArrayArray5539 = modelDefinition.method1100(false, -42)
+                if (modelDefinition.anIntArray1868 != null && WidgetRedrawTracker.method2332(anInt5556, 125.toByte(), i)) anIntArrayArray5539 = modelDefinition.method1100(false, -42)
                 if (modelDefinition.aRectangleBoundsArray1832 != null && RenderConfigFactory.method1633(false, i, anInt5556)) anIntArrayArray5627 = modelDefinition.method1093((-69).toByte())
                 if (modelDefinition.anIntArray1824 == null || !method371(i, 256, anInt5556)) break
                 var i_817_ = 0

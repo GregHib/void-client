@@ -216,11 +216,11 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                     }
                     if (i_14_ != -1) {
                         var i_18_ = 0
-                        val class312 = Class312(Class348_Sub40_Sub4.aNodeDeque_9111!!)
-                        var class348_sub42_sub12 = (class312.method2327(((-53).toByte()).toByte()) as? Class348_Sub42_Sub12)
+                        val widgetRedrawTracker = WidgetRedrawTracker(Class348_Sub40_Sub4.aNodeDeque_9111!!)
+                        var class348_sub42_sub12 = (widgetRedrawTracker.method2327(((-53).toByte()).toByte()) as? Class348_Sub42_Sub12)
                         while (class348_sub42_sub12 != null) {
                             if (i_14_ == i_18_++) return (class348_sub42_sub12.anInt9609)
-                            class348_sub42_sub12 = (class312.method2329(i + -3102) as? Class348_Sub42_Sub12)
+                            class348_sub42_sub12 = (widgetRedrawTracker.method2329(i + -3102) as? Class348_Sub42_Sub12)
                         }
                     }
                 }

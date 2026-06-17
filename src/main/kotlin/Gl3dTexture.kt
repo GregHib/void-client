@@ -101,7 +101,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 AbstractMenuEntry.aIntRange_1702,
                 HeapDiagnosticsHolder.aIntRange_2248,
                 FogOptionState.aIntRange_6056,
-                Class312.aIntRange_3925,
+                WidgetRedrawTracker.aIntRange_3925,
                 Class348_Sub40_Sub16.aIntRange_9225,
                 MapArchiveSource.aIntRange_4798,
                 Class5_Sub2.aIntRange_8365,

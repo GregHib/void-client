@@ -100,7 +100,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
 
         @JvmStatic
         fun method3120(i: Int) {
-            Class312.anInt3931 = 0
+            WidgetRedrawTracker.anInt3931 = 0
             anInt9345++
             val i_15_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-118).toByte())
             val i_16_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)

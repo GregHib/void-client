@@ -468,7 +468,7 @@ class Class88 {
                                     val i_15_ = Class348_Sub40_Sub25.anInt9341
                                     NpcDefinition.anInt2955 = 0
                                     GlRectangleTexture.method254(15, (-120).toByte())
-                                    Class312.method2330(86.toByte())
+                                    WidgetRedrawTracker.method2330(86.toByte())
                                     SimpleToggleOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                     if (i_15_ != (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
                                     Class348_Sub3.aIntRange_6584 = null

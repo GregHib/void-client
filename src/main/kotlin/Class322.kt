@@ -111,12 +111,12 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
         fun method2554(i: Byte) {
             if (i.toInt() != -45) anInt4032 = 61
             anInt4030++
-            if (Class312.anInt3931 == 1 || Class312.anInt3931 == 3 || (Class312.anInt3931 != Class83.anInt1447 && (Class312.anInt3931 == 0 || Class83.anInt1447 == 0))) {
+            if (WidgetRedrawTracker.anInt3931 == 1 || WidgetRedrawTracker.anInt3931 == 3 || (WidgetRedrawTracker.anInt3931 != Class83.anInt1447 && (WidgetRedrawTracker.anInt3931 == 0 || Class83.anInt1447 == 0))) {
                 Class348_Sub32.anInt6930 = 0
                 ModelDefinitionLoader.anInt2057 = 0
                 NpcEntityUpdater.aClass356_3654!!.method3481(0)
             }
-            Class83.anInt1447 = Class312.anInt3931
+            Class83.anInt1447 = WidgetRedrawTracker.anInt3931
         }
 
         @JvmStatic

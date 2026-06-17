@@ -277,15 +277,15 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                             }
                             if (i_35_ != -1) {
                                 var i_39_ = 0
-                                val class312 = Class312(Class348_Sub40_Sub4.aNodeDeque_9111!!)
-                                var class348_sub42_sub12 = (class312.method2327((-53).toByte()) as Class348_Sub42_Sub12?)
+                                val widgetRedrawTracker = WidgetRedrawTracker(Class348_Sub40_Sub4.aNodeDeque_9111!!)
+                                var class348_sub42_sub12 = (widgetRedrawTracker.method2327((-53).toByte()) as Class348_Sub42_Sub12?)
                                 while (class348_sub42_sub12 != null) {
                                     if (i_35_ == i_39_) {
                                         Class325.method2599(107.toByte(), class348_sub42_sub12, i_24_, i_23_)
                                         break
                                     }
                                     i_39_++
-                                    class348_sub42_sub12 = (class312.method2329(10) as Class348_Sub42_Sub12?)
+                                    class348_sub42_sub12 = (widgetRedrawTracker.method2329(10) as Class348_Sub42_Sub12?)
                                 }
                             }
                             FixedFunctionMaterialPass.method2146((-46).toByte())

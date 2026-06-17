@@ -6,7 +6,7 @@ import kotlin.concurrent.Volatile
 abstract class RenderNode : Class348_Sub42() {
     companion object {
         @JvmField
-        var aClass312_9716: Class312? = Class312()
+        var aWidgetRedrawTracker_9716: WidgetRedrawTracker? = WidgetRedrawTracker()
         @JvmField
         var anInt9717: Int = 0
         @JvmField
@@ -40,7 +40,7 @@ abstract class RenderNode : Class348_Sub42() {
             aAbstractCameraTransform_9720 = null
             anIntArray9724 = null
             aBooleanArray9718 = null
-            aClass312_9716 = null
+            aWidgetRedrawTracker_9716 = null
             anIntArrayArray9723 = null
         }
 
