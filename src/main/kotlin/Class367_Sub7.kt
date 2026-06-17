@@ -2,7 +2,7 @@ import jagdx.IDirect3DPixelShader
 import jagdx.IDirect3DVertexShader
 import kotlin.math.abs
 
-class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, class45: Class45?, private val aClass269_7348: Class269) : Class367(aClass378_7346) {
+class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, class45: Class45?, private val aNormalMapGenerator_7348: NormalMapGenerator) : Class367(aClass378_7346) {
     private var anIDirect3DPixelShader7343: IDirect3DPixelShader? = null
     private var aBoolean7344 = false
     private var anIDirect3DVertexShader7345: IDirect3DVertexShader? = null
@@ -61,7 +61,7 @@ class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, c
         } else {
             anIDirect3DVertexShader7345 = (aClass378_7346!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "environment_mapped_water_v", -29832)))
             anIDirect3DPixelShader7343 = (aClass378_7346!!.anIDirect3DDevice9810!!.a(class45.method391("dx", "environment_mapped_water_f", -29832)))
-            aBoolean7347 = (anIDirect3DVertexShader7345 != null && null != anIDirect3DPixelShader7343 && aClass269_7348.method2041(49.toByte()))
+            aBoolean7347 = (anIDirect3DVertexShader7345 != null && null != anIDirect3DPixelShader7343 && aNormalMapGenerator_7348.method2041(49.toByte()))
         }
     }
 
@@ -75,7 +75,7 @@ class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, c
                 this.aHa_Sub3_4479.method3897(1, -4382)
                 this.aHa_Sub3_4479.method3850(63.toByte(), interface18_impl2)
                 this.aHa_Sub3_4479.method3897(0, -4382)
-                this.aHa_Sub3_4479.method3850((-127).toByte(), aClass269_7348.anInterface18_Impl1_3455)
+                this.aHa_Sub3_4479.method3850((-127).toByte(), aNormalMapGenerator_7348.anInterface18_Impl1_3455)
                 aBoolean7344 = true
                 method3531(false)
                 method3532(10425)

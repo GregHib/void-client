@@ -952,7 +952,7 @@ class Class46 {
             ParticleEmitterNode.aClass87_191!!.method838(7)
             Class348_Sub40_Sub18.aClass319_9245!!.method2542(-101)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
-            Class269.aParticleAmountCache_3453!!.method1590(0)
+            NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
             Class64_Sub3.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1222(true)

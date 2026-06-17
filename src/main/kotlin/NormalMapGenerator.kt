@@ -7,7 +7,7 @@ import kotlin.math.sqrt
 /* Class269 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class269 internal constructor(private val aHa_Sub3_3457: NativeRenderer) {
+class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeRenderer) {
     var anInterface18_Impl1_3452: Interface18_Impl1? = null
     private var anInterface18_Impl3Array3454: Array<Interface18_Impl3?>? = null
     var anInterface18_Impl1_3455: Interface18_Impl1? = null

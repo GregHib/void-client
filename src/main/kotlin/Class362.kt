@@ -34,7 +34,7 @@ object Class362 {
                     val i_4_ = i_3_ + 4
                     i_2_ += 2 * i_4_
                     i_1_ += 2 * i_4_
-                    if (i_2_ < Class269.anInt3451) i_2_ = Class269.anInt3451
+                    if (i_2_ < NormalMapGenerator.anInt3451) i_2_ = NormalMapGenerator.anInt3451
                     if (i_1_ < Class289.anInt3704) i_1_ = Class289.anInt3704
                     var i_5_ = (Class95.aScreenAnchorAlignment_1542!!.method1607(Class92.anInt1524, i_1_, (-107).toByte()) - -Class290.anInt3712)
                     var i_6_ = (DefaultGraphicsOptionState.aClass341_6128!!.method2679(OpenGlRenderer.anInt7666, i_2_, 1595) + ChatEffectsOptionState.anInt5871)

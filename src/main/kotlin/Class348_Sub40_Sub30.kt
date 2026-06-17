@@ -204,7 +204,7 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
         @JvmStatic
         fun method3126(i: Byte) {
             if (i.toInt() != 98) anInt9388 = 46
-            Class60.aRenderer1098!!.method3700(RangedGraphicsOptionState.aFloat5945, Class348_Sub3.aFloat6586, Class269.aFloat3462)
+            Class60.aRenderer1098!!.method3700(RangedGraphicsOptionState.aFloat5945, Class348_Sub3.aFloat6586, NormalMapGenerator.aFloat3462)
             anInt9387++
         }
 

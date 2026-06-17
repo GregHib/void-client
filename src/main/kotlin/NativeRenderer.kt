@@ -24,7 +24,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aCanvas7925: Canvas? = null
     private var aNodeDeque_7927: NodeDeque? = NodeDeque()
     var anInt7931: Int = 0
-    var aClass269_7937: Class269? = null
+    var aNormalMapGenerator_7937: NormalMapGenerator? = null
     private var anInt7958 = 0
     var anInt7962: Int = 0
     var aNativeHeapBuffer7974: NativeHeapBuffer? = null
@@ -657,7 +657,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     } else return Class367_Sub3(this)
                     return Class367_Sub4(this)
                 } while (false)
-                return Class367_Sub8(this, this.aClass269_7937)
+                return Class367_Sub8(this, this.aNormalMapGenerator_7937)
             } while (false)
             return Class367_Sub10(this)
         } while (false)
@@ -2187,7 +2187,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aClass280_8136 = Class280(this)
         anInterface5_Impl2_8195 = method3840(-28633, true)
         method3902((-42).toByte())
-        this.aClass269_7937 = Class269(this)
+        this.aNormalMapGenerator_7937 = NormalMapGenerator(this)
         aClass367Array8139[1] = method3832(1, (-103).toByte())
         aClass367Array8139[2] = method3832(2, (-65).toByte())
         aClass367Array8139[4] = method3832(4, (-73).toByte())

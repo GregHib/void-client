@@ -204,7 +204,7 @@ object ClientLoadStateMachine {
             Class91.aClass82_1523 = Class82(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
-            Class269.aParticleAmountCache_3453 = ParticleAmountCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            NormalMapGenerator.aParticleAmountCache_3453 = ParticleAmountCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class65.method699(SoftwareSpriteRaster.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, CameraRotationStub.aClass45_322, RasterSprite.aClass45_5207)
             method85(0, NodeDeque.aClass45_3323)
             ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434)

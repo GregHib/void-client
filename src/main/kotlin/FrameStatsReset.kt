@@ -2368,7 +2368,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5633 = 0
             OpenGlRenderer.anInt7563 = 0
             OpenGlRenderer.anInt7520 = 0
-            Class269.anInt3450 = 0
+            NormalMapGenerator.anInt3450 = 0
             Class348_Sub16_Sub3.anInt8924 = 0
             Class286_Sub2.anInt6210 = 0
             Class278.anInt3591 = 0
@@ -2865,7 +2865,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub45_Sub2.anInt9735 = 0
             ConfigDefinitionLoader.anInt2082 = 0
             SceneObjectAnimator.anInt3086 = 0
-            Class269.anInt3456 = 0
+            NormalMapGenerator.anInt3456 = 0
             Class377.anInt9821 = 0
             Class318_Sub7.anInt6445 = 0
             Class285_Sub1.anInt8494 = 0
@@ -3223,7 +3223,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub3.anInt10214 = 0
             Player.anInt10543 = 0
             Class285.anInt4740 = 0
-            Class269.anInt3461 = 0
+            NormalMapGenerator.anInt3461 = 0
             Class348_Sub49.anInt7158 = 0
             BloomGraphicsOptionState.anInt5960 = 0
             SpriteStore.anInt365 = 0
@@ -3533,7 +3533,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub27.anInt9356 = 0
             Class346_Sub1.anInt6539 = 0
             GlCubeMapTexture.anInt8620 = 0
-            Class269.anInt3460 = 0
+            NormalMapGenerator.anInt3460 = 0
             Class64_Sub3.anInt5578 = 0
             Class280.anInt3640 = 0
             GlTexture2D.anInt8548 = 0

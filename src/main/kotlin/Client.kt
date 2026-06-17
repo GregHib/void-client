@@ -1080,7 +1080,7 @@ class Client : GameAppletFrame() {
         method3870(113)
         method2597(-27327)
         method719(72.toByte())
-        Class269.method2042((-67).toByte())
+        NormalMapGenerator.method2042((-67).toByte())
         method925(i + -6105)
         method1912(8549)
         method1632(-11)

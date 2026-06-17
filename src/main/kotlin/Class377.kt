@@ -862,9 +862,9 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                         break@while_237_
                     }
                 } else return Class367_Sub11(this, this.aClass45_8039)
-                return Class367_Sub2(this, this.aClass45_8039, this.aClass269_7937)
+                return Class367_Sub2(this, this.aClass45_8039, this.aNormalMapGenerator_7937)
             } while (false)
-            return Class367_Sub9(this, this.aClass45_8039, this.aClass269_7937)
+            return Class367_Sub9(this, this.aClass45_8039, this.aNormalMapGenerator_7937)
         } while (false)
         return super.method3832(i, (-73).toByte())
     }

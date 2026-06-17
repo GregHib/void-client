@@ -82,7 +82,7 @@ class ServerConnectionInfo {
                     DelegatingRenderCanvas.anInt70 = LocTypeDefLoader.anInt2500
                     SceneryDetailOptionState.aClass299_6098 = HeapInfoRecord.aClass299_4938
                     Class64.aFloat1136 = TextureMetadataProvider.aFloat4626
-                    DebugOverlayRenderer.aFloat3172 = Class269.aFloat3462
+                    DebugOverlayRenderer.aFloat3172 = NormalMapGenerator.aFloat3462
                     Class45.aFloat670 = Class348_Sub3.aFloat6586
                     GlTexture1D.aFloat8560 = RangedGraphicsOptionState.aFloat5945
                     ParticleEmitterFactory.aFloat3177 = Class361.aFloat4455

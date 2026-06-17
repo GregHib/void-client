@@ -7,9 +7,9 @@ import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 
-class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, class269: Class269?) : Class367(class377) {
+class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, normalMapGenerator: NormalMapGenerator?) : Class367(class377) {
     private val aTextureHandle_7293: TextureHandle?
-    private val aClass269_7294: Class269?
+    private val aNormalMapGenerator_7294: NormalMapGenerator?
     private var aClass377_7296: Class377? = null
     override fun method3527(i: Int, interface18: Interface18?, i_4_: Int) {
         anInt7288++
@@ -28,11 +28,11 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
     init {
         try {
             aClass377_7296 = class377
-            aClass269_7294 = class269
-            if (class45 == null || !aClass269_7294!!.method2039(100) || !aClass377_7296!!.aBoolean9923) aTextureHandle_7293 = null
+            aNormalMapGenerator_7294 = normalMapGenerator
+            if (class45 == null || !aNormalMapGenerator_7294!!.method2039(100) || !aClass377_7296!!.aBoolean9923) aTextureHandle_7293 = null
             else aTextureHandle_7293 = method3442(34336, class45.method391("gl", "transparent_water", -29832), aClass377_7296, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ov.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class269 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ov.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -55,13 +55,13 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
     override fun method3526(i: Int, i_5_: Int, i_6_: Int) {
         anInt7286++
         if (i == 10756) {
-            if (aClass269_7294!!.aBoolean3458) {
+            if (aNormalMapGenerator_7294!!.aBoolean3458) {
                 val f = ((this.aHa_Sub3_4479.anInt8146) % 4000).toFloat() / 4000.0f
-                this.aHa_Sub3_4479.method3850(79.toByte(), aClass269_7294.anInterface18_Impl1_3452)
+                this.aHa_Sub3_4479.method3850(79.toByte(), aNormalMapGenerator_7294.anInterface18_Impl1_3452)
                 glProgramLocalParameter4fARB(34336, 0, f, 0.0f, 0.0f, 1.0f)
             } else {
                 val i_7_ = (16 * (this.aHa_Sub3_4479.anInt8146 % 4000) / 4000)
-                this.aHa_Sub3_4479.method3850((-118).toByte(), (aClass269_7294.anInterface18_Impl3Array3459!![i_7_]))
+                this.aHa_Sub3_4479.method3850((-118).toByte(), (aNormalMapGenerator_7294.anInterface18_Impl3Array3459!![i_7_]))
                 glProgramLocalParameter4fARB(34336, 0, 0.0f, 0.0f, 0.0f, 1.0f)
             }
         }

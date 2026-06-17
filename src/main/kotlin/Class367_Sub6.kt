@@ -1,6 +1,6 @@
 import jagdx.IDirect3DVertexShader
 
-class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, class45: Class45?, private var aClass269_7339: Class269?) : Class367(aClass378_7340) {
+class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, class45: Class45?, private var aNormalMapGenerator_7339: NormalMapGenerator?) : Class367(aClass378_7340) {
     private val anIDirect3DVertexShader7341: IDirect3DVertexShader?
 
     override fun method3527(i: Int, interface18: Interface18?, i_0_: Int) {
@@ -14,20 +14,20 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
 
     override fun method3526(i: Int, i_1_: Int, i_2_: Int) {
         val idirect3ddevice = aClass378_7340!!.anIDirect3DDevice9810
-        if (aClass269_7339!!.aBoolean3458) {
+        if (aNormalMapGenerator_7339!!.aBoolean3458) {
             val f = (((this.aHa_Sub3_4479.anInt8146) % 4000).toFloat() / 4000.0f)
-            this.aHa_Sub3_4479.method3850((-52).toByte(), aClass269_7339!!.anInterface18_Impl1_3452)
+            this.aHa_Sub3_4479.method3850((-52).toByte(), aNormalMapGenerator_7339!!.anInterface18_Impl1_3452)
             idirect3ddevice!!.a(11, f, 0.0f, 0.0f, 0.0f)
         } else {
             val i_3_ = 16 * ((this.aHa_Sub3_4479.anInt8146) % 4000) / 4000
-            this.aHa_Sub3_4479.method3850(122.toByte(), (aClass269_7339!!.anInterface18_Impl3Array3459!![i_3_]))
+            this.aHa_Sub3_4479.method3850(122.toByte(), (aNormalMapGenerator_7339!!.anInterface18_Impl3Array3459!![i_3_]))
             idirect3ddevice!!.a(11, 0.0f, 0.0f, 0.0f, 0.0f)
         }
-        if (i != 10756) aClass269_7339 = null
+        if (i != 10756) aNormalMapGenerator_7339 = null
     }
 
     init {
-        if (null == class45 || !aClass269_7339!!.method2039(123) || (257 > (aClass378_7340!!.aD3DCAPS9791!!.VertexShaderVersion and 0xffff))) anIDirect3DVertexShader7341 = null
+        if (null == class45 || !aNormalMapGenerator_7339!!.method2039(123) || (257 > (aClass378_7340!!.aD3DCAPS9791!!.VertexShaderVersion and 0xffff))) anIDirect3DVertexShader7341 = null
         else anIDirect3DVertexShader7341 = aClass378_7340!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "transparent_water", -29832))
     }
 

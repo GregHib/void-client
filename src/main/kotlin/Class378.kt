@@ -614,9 +614,9 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
                         break@while_234_
                     }
                 } else return Class367_Sub5(this, this.aClass45_8039)
-                return Class367_Sub6(this, this.aClass45_8039, this.aClass269_7937)
+                return Class367_Sub6(this, this.aClass45_8039, this.aNormalMapGenerator_7937)
             } while (false)
-            return Class367_Sub7(this, this.aClass45_8039, this.aClass269_7937!!)
+            return Class367_Sub7(this, this.aClass45_8039, this.aNormalMapGenerator_7937!!)
         } while (false)
         return super.method3832(i, (-74).toByte())
     }

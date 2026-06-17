@@ -7,10 +7,10 @@ import jaggl.OpenGL.Companion.glUniform4fARB
 import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import kotlin.math.abs
 
-class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, class269: Class269?) : Class367(class377) {
+class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, normalMapGenerator: NormalMapGenerator?) : Class367(class377) {
     private var aClass89_7369: Class89? = null
     private var aBoolean7373 = false
-    private var aClass269_7375: Class269? = null
+    private var aNormalMapGenerator_7375: NormalMapGenerator? = null
     private var aBoolean7376 = false
     override fun method3526(i: Int, i_0_: Int, i_1_: Int) {
         anInt7372++
@@ -25,7 +25,7 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
             glUniform1fARB(glGetUniformLocationARB(l, "breakWaterDepth"), i_3_.toFloat())
             glUniform1fARB(glGetUniformLocationARB(l, "breakWaterOffset"), f_4_)
         }
-        if (i != 10756) aClass269_7375 = null
+        if (i != 10756) aNormalMapGenerator_7375 = null
     }
 
     override fun method3520(i: Byte) {
@@ -63,15 +63,15 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
 
     init {
         try {
-            aClass269_7375 = class269
+            aNormalMapGenerator_7375 = normalMapGenerator
             if (class45 != null && class377!!.aBoolean9921 && class377.aBoolean9922) {
                 val class39 = (Class328.method2608(class377, class45.method391("gl", "environment_mapped_water_v", -29832), -108, 35633))
                 val class39_13_ = (Class328.method2608(class377, class45.method391("gl", "environment_mapped_water_f", -29832), -122, 35632))
                 aClass89_7369 = method2582(class377, arrayOf<Class39?>(class39, class39_13_), -2113)
-                aBoolean7376 = (aClass89_7369 != null && aClass269_7375!!.method2041(120.toByte()))
+                aBoolean7376 = (aClass89_7369 != null && aNormalMapGenerator_7375!!.method2041(120.toByte()))
             } else aBoolean7376 = false
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ko.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class269 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ko.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -83,7 +83,7 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
             this.aHa_Sub3_4479.method3897(1, i + -19574)
             this.aHa_Sub3_4479.method3850((-63).toByte(), interface18_impl2)
             this.aHa_Sub3_4479.method3897(0, -4382)
-            this.aHa_Sub3_4479.method3850((-107).toByte(), aClass269_7375!!.anInterface18_Impl1_3455)
+            this.aHa_Sub3_4479.method3850((-107).toByte(), aNormalMapGenerator_7375!!.anInterface18_Impl1_3455)
             val l = aClass89_7369!!.aLong1510
             glUseProgramObjectARB(l)
             glUniform1iARB(glGetUniformLocationARB(l, "normalSampler"), 0)

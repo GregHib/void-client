@@ -174,7 +174,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         Class348_Sub42_Sub14.method3243(-31, class348_sub47)
                     }
                     if (Class347.aBoolean4278 != SizeBoundedSoftCache.aBoolean2329) {
-                        Class269.anInt3460++
+                        NormalMapGenerator.anInt3460++
                         Class347.aBoolean4278 = SizeBoundedSoftCache.aBoolean2329
                         val class348_sub47 = method2148((InputStream_Sub1.aClass351_77), (Class348_Sub23_Sub2.aClass77_9029), i xor 0x2cc8.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!SizeBoundedSoftCache.aBoolean2329) 0 else 1)

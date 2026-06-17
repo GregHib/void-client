@@ -60,7 +60,7 @@ abstract class Class272 {
                 Class289.anInt3704 = i_3_
                 ConnectionStateRefs.anInt317 = i_5_
                 anInt3471++
-                Class269.anInt3451 = i_0_
+                NormalMapGenerator.anInt3451 = i_0_
                 OutputStream_Sub1.anInt98 = i_2_
                 Class290.anInt3712 = i_6_
                 ScriptCompilerThread.aSpriteImage_1727 = null
