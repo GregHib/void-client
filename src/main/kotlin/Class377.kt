@@ -293,7 +293,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             if (bool != true) aString9916 = null
             anInt9832++
-            return Class14_Sub3(this, class304, i_6_, i_7_, i, `is`)
+            return Gl3dTexture(this, class304, i_6_, i_7_, i, `is`)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.ND(" + i + ',' + i_6_ + ',' + (if (class304 != null) "{...}" else "null") + ',' + bool + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
@@ -327,12 +327,12 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9846++
             if (i_14_ != 32) anOpenGL9856 = null
             if (!aBoolean9926 && (!Class192.method1436(i_14_ xor 0x46, i_12_) || !Class192.method1436(i_14_ + 83, i))) {
-                if (aBoolean9919) return Class14_Sub4(this, class304, i_12_, i, `is`, i_11_, i_13_)
-                val class14_sub1 = Class14_Sub1(this, class304, Class68.aClass68_1183, Class33.method340(i_12_, 108.toByte()), Class33.method340(i, 108.toByte()))
+                if (aBoolean9919) return GlRectangleTexture(this, class304, i_12_, i, `is`, i_11_, i_13_)
+                val class14_sub1 = Gl2dTexture(this, class304, Class68.aClass68_1183, Class33.method340(i_12_, 108.toByte()), Class33.method340(i, 108.toByte()))
                 class14_sub1.method70(0, i_11_, (-45).toByte(), i_13_, i, i_12_, 0, `is`, class304)
                 return class14_sub1
             }
-            return Class14_Sub1(this, class304, i_12_, i, bool, `is`, i_11_, i_13_)
+            return Gl2dTexture(this, class304, i_12_, i, bool, `is`, i_11_, i_13_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.B(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ',' + i_14_ + ',' + bool + ')'))
         }
@@ -824,7 +824,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             if (i <= 1) aClass262_9902 = null
             anInt9883++
-            return Class14_Sub2(this, i_53_, bool, `is`)
+            return GlCubeMapTexture(this, i_53_, bool, `is`)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.HB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_53_ + ')'))
         }
@@ -834,12 +834,12 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             anInt9890++
             if (!aBoolean9926 && (!Class192.method1436(60, i) || !Class192.method1436(-73, i_57_))) {
-                if (aBoolean9919) return Class14_Sub4(this, class304, i, i_57_, fs, i_54_, i_55_)
-                val class14_sub1 = Class14_Sub1(this, class304, Class68.aClass68_1187, Class33.method340(i, 108.toByte()), Class33.method340(i_57_, 108.toByte()))
+                if (aBoolean9919) return GlRectangleTexture(this, class304, i, i_57_, fs, i_54_, i_55_)
+                val class14_sub1 = Gl2dTexture(this, class304, Class68.aClass68_1187, Class33.method340(i, 108.toByte()), Class33.method340(i_57_, 108.toByte()))
                 class14_sub1.method240(i_55_, (-126).toByte(), fs, class304, 0, i_54_, 0, i, i_57_)
                 return class14_sub1
             }
-            return Class14_Sub1(this, class304, i, i_57_, bool, fs, i_54_, i_55_)
+            return Gl2dTexture(this, class304, i, i_57_, bool, fs, i_54_, i_55_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.WC(" + (if (class304 != null) "{...}" else "null") + ',' + i + ',' + i_54_ + ',' + (if (fs != null) "{...}" else "null") + ',' + bool + ',' + i_55_ + ',' + i_56_ + ',' + i_57_ + ')'))
         }
@@ -873,13 +873,13 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             val i_64_ = 101 / ((i_60_ - -21) / 46)
             anInt9830++
-            if (aBoolean9926 || Class192.method1436(103, i) && Class192.method1436(-53, i_63_)) return Class14_Sub1(this, i, i_63_, bool, `is`, i_61_, i_62_)
+            if (aBoolean9926 || Class192.method1436(103, i) && Class192.method1436(-53, i_63_)) return Gl2dTexture(this, i, i_63_, bool, `is`, i_61_, i_62_)
             if (!aBoolean9919) {
-                val class14_sub1 = Class14_Sub1(this, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, Class33.method340(i, 108.toByte()), Class33.method340(i_63_, 108.toByte()))
+                val class14_sub1 = Gl2dTexture(this, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, Class33.method340(i, 108.toByte()), Class33.method340(i_63_, 108.toByte()))
                 class14_sub1.method68(i_62_, 22809, `is`, 0, i_61_, i, 0, i_63_)
                 return class14_sub1
             }
-            return Class14_Sub4(this, i, i_63_, `is`, i_61_, i_62_)
+            return GlRectangleTexture(this, i, i_63_, `is`, i_61_, i_62_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.R(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_60_ + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ')'))
         }
@@ -1137,9 +1137,9 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             if (i_88_.toInt() != -84) method3842(false)
             anInt9882++
-            if (aBoolean9926 || (Class192.method1436(i_88_ + 15, i_89_) && Class192.method1436(65, i))) return Class14_Sub1(this, class304, class68, i_89_, i)
-            if (!aBoolean9919) return Class14_Sub1(this, class304, class68, Class33.method340(i_89_, 108.toByte()), Class33.method340(i, 108.toByte()))
-            return Class14_Sub4(this, class304, class68, i_89_, i)
+            if (aBoolean9926 || (Class192.method1436(i_88_ + 15, i_89_) && Class192.method1436(65, i))) return Gl2dTexture(this, class304, class68, i_89_, i)
+            if (!aBoolean9919) return Gl2dTexture(this, class304, class68, Class33.method340(i_89_, 108.toByte()), Class33.method340(i, 108.toByte()))
+            return GlRectangleTexture(this, class304, class68, i_89_, i)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.NC(" + i + ',' + i_88_ + ',' + i_89_ + ',' + (if (class68 != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ')'))
         }

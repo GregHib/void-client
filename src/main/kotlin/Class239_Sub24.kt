@@ -129,7 +129,7 @@ class Class239_Sub24 : Class239 {
                     i_10_ = Class18.anInt282
                     var_renderer.KA(ConfigValueProvider.anInt4911, Class238_Sub1.anInt5832, Class18.anInt282, Class305.anInt3861)
                     abstractCameraTransform = var_renderer.method3654()
-                    abstractCameraTransform.method903(Class14_Sub4.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, Class348_Sub51.anInt7244)
+                    abstractCameraTransform.method903(GlRectangleTexture.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, Class348_Sub51.anInt7244)
                     var_renderer.method3638(abstractCameraTransform)
                     i_12_ = i_4_
                     i_11_ = i

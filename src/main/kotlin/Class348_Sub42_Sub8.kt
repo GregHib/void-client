@@ -56,7 +56,7 @@ abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545:
             anInt9547++
             if (i.toInt() != -45) aShort9555 = (-74).toShort()
             if (bool) {
-                if (RenderNode.anInt9721 != -1) Class14.method235(RenderNode.anInt9721, (-113).toByte())
+                if (RenderNode.anInt9721 != -1) GlTextureBase.method235(RenderNode.anInt9721, (-113).toByte())
                 var class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as Class348_Sub41?
                 while (class348_sub41 != null) {
                     if (!class348_sub41.method2712(4.toByte())) {

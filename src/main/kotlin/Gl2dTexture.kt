@@ -12,7 +12,7 @@ import jaggl.OpenGL.Companion.glTexSubImage2Dub
 import kotlin.math.atan2
 import kotlin.math.sqrt
 
-class Class14_Sub1 : Class14, Interface18_Impl3 {
+class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
     private var anInt8604 = 0
     private var anInt8612 = 0
     override fun method71(i: Byte, f: Float): Float {

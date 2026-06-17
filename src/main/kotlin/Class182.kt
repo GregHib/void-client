@@ -34,7 +34,7 @@ class Class182 {
             anInt2452++
             var l = 0L
             if (Class348_Sub23_Sub3.aString9043 == null) {
-                Class14_Sub4.method254(35, (-101).toByte())
+                GlRectangleTexture.method254(35, (-101).toByte())
                 return
             } else {
                 val class348_sub49 = Class348_Sub49(method878((MapLabelMenuEntry.method1039((Class348_Sub23_Sub3.aString9043!!), true)), -125))

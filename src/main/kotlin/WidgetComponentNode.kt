@@ -1,4 +1,4 @@
-import Class14_Sub4.Companion.method253
+import GlRectangleTexture.Companion.method253
 import Class6.Companion.method203
 
 /* Class127 - Decompiled by JODE

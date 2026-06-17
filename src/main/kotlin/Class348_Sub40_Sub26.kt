@@ -117,7 +117,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
             ModelFacePriorityNode.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)
             NativeSprite.anIntArray5192 = IntArray(i_18_)
-            Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
+            GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
             GameAppletFrame.anIntArray38 = IntArray(i_18_)
             Class348_Sub50.aByteArrayArray7212 = null
             RenderNode.anIntArray9724 = IntArray(i_18_)

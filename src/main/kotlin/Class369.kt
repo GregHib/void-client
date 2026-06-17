@@ -65,12 +65,12 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
         @JvmStatic
         fun method3568(var_renderer: Renderer?, i: Int) {
             anInt4964++
-            Class240.aClass324_4684 = Class14.method232(var_renderer, (-53).toByte(), true, Class56.anInt1044)
+            Class240.aClass324_4684 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class56.anInt1044)
             Class258_Sub1.aClass143_8527 = GlVertexBufferBase.method1151(-25411, var_renderer, Class56.anInt1044)
             if (i != 4) aClass143_4962 = null
-            GameAppletFrame.aClass324_20 = Class14.method232(var_renderer, (-53).toByte(), true, Class17.anInt235)
+            GameAppletFrame.aClass324_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class17.anInt235)
             Class246.aClass143_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, Class17.anInt235)
-            Class262.aClass324_3326 = Class14.method232(var_renderer, (-53).toByte(), true, Class291.anInt3736)
+            Class262.aClass324_3326 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class291.anInt3736)
             aClass143_4962 = GlVertexBufferBase.method1151(-25411, var_renderer, Class291.anInt3736)
         }
 

@@ -28,7 +28,7 @@ class Class348_Sub42_Sub18 internal constructor(var aClass318_Sub1_Sub3_Sub5_968
         fun method3275(i: Int, i_0_: Int, i_1_: Int) {
             anInt9683++
             if (i != 1) aClass351_9684 = null
-            if (Class348_Sub42_Sub8_Sub2.aClass230_10434 != Class14_Sub4.aClass230_8638) {
+            if (Class348_Sub42_Sub8_Sub2.aClass230_10434 != GlRectangleTexture.aClass230_8638) {
                 if (!Class298.method2252(false, i_1_, i_0_, (-108).toByte(), 1, 0, 1, -3, 0)) Class298.method2252(false, i_1_, i_0_, (-99).toByte(), 1, 0, 1, -2, 0)
             } else if (!Class298.method2252(false, i_1_, i_0_, (-128).toByte(), 1, 0, 1, -2, 0)) Class298.method2252(false, i_1_, i_0_, (-115).toByte(), 1, 0, 1, -3, 0)
         }

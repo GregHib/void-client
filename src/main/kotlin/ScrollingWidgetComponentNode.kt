@@ -41,7 +41,7 @@ class ScrollingWidgetComponentNode internal constructor(class45: Class45?, class
             val i_4_ = class348_sub41.aLong4291.toInt()
             if (i == 2533) {
                 class348_sub41.method2715(35.toByte())
-                if (bool) Class14.method235(i_3_, (-116).toByte())
+                if (bool) GlTextureBase.method235(i_3_, (-116).toByte())
                 Class166.method1288(i xor 0x9e2.inv(), i_3_)
                 val class46 = method2570(1512932720, i_4_)
                 if (class46 != null) Class251.method1916(-9343, class46)

@@ -65,7 +65,7 @@ public abstract class AbstractCameraTransform {
             Class348_Sub50.aByteArrayArray7212 = arrayOfNulls<ByteArray>(i_6_)
             Class239_Sub6.anIntArrayArray5894 = Array<IntArray?>(i_6_) { IntArray(4) }
             NativeSprite.anIntArray5192 = IntArray(i_6_)
-            Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)
+            GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)
             Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_6_)
             RenderNode.anIntArray9724 = IntArray(i_6_)
             Class295.anIntArray3759 = IntArray(i_6_)

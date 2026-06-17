@@ -1,5 +1,5 @@
 import GameAppletFrame.Companion.method94
-import Class14_Sub2.Companion.method243
+import GlCubeMapTexture.Companion.method243
 import Class239_Sub14.Companion.method1781
 import Class239_Sub17.Companion.method1795
 import Class239_Sub2.Companion.method1725

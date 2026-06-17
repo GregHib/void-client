@@ -8,7 +8,10 @@ import jaggl.OpenGL.Companion.glTexImage2Dub
 import jaggl.OpenGL.Companion.glTexParameteri
 import kotlin.math.min
 
-abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68: Class68?, i_66_: Int, bool: Boolean) : Interface18 {
+/*
+ * Class14
+ */
+abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, class68: Class68?, i_66_: Int, bool: Boolean) : Interface18 {
     @JvmField
     var aClass377_5082: Class377? = null
     @JvmField

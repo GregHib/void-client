@@ -1,5 +1,5 @@
 import NpcSummaryDefinition.Companion.method1166
-import Class14_Sub1.Companion.method241
+import Gl2dTexture.Companion.method241
 import Class175.Companion.method1343
 import Class186.Companion.method1397
 import Class206.Companion.method1501
@@ -128,8 +128,8 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         }
                     }
                     if (class348_sub45 != null) {
-                        var l = ((class348_sub45.method3312((-110).toByte()) + -Class14.aLong5089) / 50L)
-                        Class14.aLong5089 = class348_sub45.method3312((-87).toByte())
+                        var l = ((class348_sub45.method3312((-110).toByte()) + -GlTextureBase.aLong5089) / 50L)
+                        GlTextureBase.aLong5089 = class348_sub45.method3312((-87).toByte())
                         if (l > 32767) l = 32767L
                         var i_9_ = class348_sub45.method3311(20)
                         if (i_9_ >= 0) {

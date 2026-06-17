@@ -3,8 +3,8 @@ import ParticleEmitterNode.Companion.method217
 import SceneRegionState.method222
 import ModelBatchBase.Companion.method1129
 import GlVertexBufferBase.Companion.method1148
-import Class14_Sub2.Companion.method243
-import Class14_Sub2.Companion.method244
+import GlCubeMapTexture.Companion.method243
+import GlCubeMapTexture.Companion.method244
 import Class16.method259
 import Class16.method262
 import Class2.Companion.method170

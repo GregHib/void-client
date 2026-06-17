@@ -89,7 +89,7 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                     val class46 = class46s[i_8_]
                     if (class46 != null && i == class46.anInt834) {
                         method1843(i_5_, -326, class46, bool_6_, i_7_)
-                        Class14_Sub1.method239(115.toByte(), i_5_, i_7_, class46)
+                        Gl2dTexture.method239(115.toByte(), i_5_, i_7_, class46)
                         if ((-class46.anInt709 + class46.anInt698) < class46.anInt747) class46.anInt747 = (class46.anInt698 - class46.anInt709)
                         if (class46.anInt747 < 0) class46.anInt747 = 0
                         if ((class46.anInt791 - class46.anInt789) < class46.anInt755) class46.anInt755 = (class46.anInt791 - class46.anInt789)

@@ -80,7 +80,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class348_Sub50.anInt7213 = 0
                 }
                 GroundItemRenderState.aBoolean1661 = true
-                val class114s = Class14_Sub3.method248(-11271)
+                val class114s = Gl3dTexture.method248(-11271)
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.method3407(15295)
                 if (i < 0 || i >= class114s.size) throw IOException("invo:" + i + " ip:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197))
                 Class348_Sub3.aIntRange_6584 = class114s[i]

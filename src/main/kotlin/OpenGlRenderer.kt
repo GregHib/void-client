@@ -3856,7 +3856,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var i_388_ = class31.anInt435
                                         var class143_389_ = Class258_Sub1.aClass143_8527
                                         if (i_388_ >= 0) {
-                                            val class324_390_ = Class14.method232((Class348_Sub8.aRenderer6654), (-53).toByte(), true, i_388_)
+                                            val class324_390_ = GlTextureBase.method232((Class348_Sub8.aRenderer6654), (-53).toByte(), true, i_388_)
                                             val class143_391_ = (GlVertexBufferBase.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
                                             if (class324_390_ != null && class143_391_ != null) {
                                                 class324 = class324_390_
@@ -3866,7 +3866,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         if (class31_349_ != null) {
                                             i_388_ = (class31_349_.anInt435)
                                             if (i_388_ >= 0) {
-                                                val class324_392_ = (Class14.method232(Class348_Sub8.aRenderer6654, (-53).toByte(), true, i_388_))
+                                                val class324_392_ = (GlTextureBase.method232(Class348_Sub8.aRenderer6654, (-53).toByte(), true, i_388_))
                                                 val class143_393_ = (GlVertexBufferBase.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
                                                 if (class324_392_ != null && class143_393_ != null) {
                                                     class143_389_ = class143_393_

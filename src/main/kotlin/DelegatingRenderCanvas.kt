@@ -159,9 +159,9 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         Class268.anInt3441++
                     }
                 }
-                if (GameAppletFrame.anIntArray38!![i_19_] != -1 && Class14_Sub4.aByteArrayArray8642!![i_19_] == null) {
-                    Class14_Sub4.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
-                    if (Class14_Sub4.aByteArrayArray8642!![i_19_] == null) {
+                if (GameAppletFrame.anIntArray38!![i_19_] != -1 && GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
+                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
+                    if (GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
                         Class268.anInt3441++
                         bool = false
                     }
@@ -202,7 +202,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                 bool = true
                 Class154.anInt2101 = 0
                 for (i_20_ in Class347.aByteArrayArray4281!!.indices) {
-                    var `is` = Class14_Sub4.aByteArrayArray8642!![i_20_]
+                    var `is` = GlRectangleTexture.aByteArrayArray8642!![i_20_]
                     if (`is` != null) {
                         var i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - ArbVertexProgram.regionTileX
                         var i_22_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] and 0xff) - Class90.regionTileY
@@ -286,11 +286,11 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class338.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aRenderer6654, (if (!bool_25_) null else (Class170.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108)
                     if (Class312.anInt3931 == 0) {
                         Class289.method2193(true, (-128).toByte())
-                        ObjectSpawnDecoder.method1090(Class14_Sub4.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)
+                        ObjectSpawnDecoder.method1090(GlRectangleTexture.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)
                         if (Class348_Sub50.aByteArrayArray7212 != null) Class92.method859(i xor 0x7e.inv())
                     } else {
                         Class289.method2193(true, (-121).toByte())
-                        ProjectionCameraTransform.method944(i + -8212, Class14_Sub4.aByteArrayArray8642, Class338.aClass237_Sub1_4197)
+                        ProjectionCameraTransform.method944(i + -8212, GlRectangleTexture.aByteArrayArray8642, Class338.aClass237_Sub1_4197)
                     }
                     Class348_Sub18.method2938(66.toByte())
                     if (Class226.anInt2964 < 96) method2271(31268)

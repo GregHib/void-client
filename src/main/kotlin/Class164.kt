@@ -2,7 +2,7 @@ import GameAppletFrame.Companion.method85
 import AbstractCameraTransform.Companion.method901
 import AnimatedModelRenderer.Companion.method988
 import InputSettingsState.method1063
-import Class14_Sub2.Companion.method243
+import GlCubeMapTexture.Companion.method243
 import Class150.Companion.method1202
 import Class30.Companion.method323
 import Class348_Sub23.Companion.method2965

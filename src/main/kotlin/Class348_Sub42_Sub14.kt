@@ -599,7 +599,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                     Class86.anInt1480 = (Class348_Sub40_Sub34.anIntArray9436!![1].toFloat() / 3.0f).toInt()
                     Class306.anInt3872 = (Class348_Sub40_Sub34.anIntArray9436!![0].toFloat() / 3.0f).toInt()
                     Class348_Sub49_Sub2.anInt9759 = Class86.anInt1480 shr 1
-                    Class14.anIntArray5091 = IntArray(Class86.anInt1480 * Class306.anInt3872)
+                    GlTextureBase.anIntArray5091 = IntArray(Class86.anInt1480 * Class306.anInt3872)
                     Class69.anInt1202 = Class306.anInt3872 shr 1
                 }
                 Class348_Sub40_Sub4.aAbstractCameraTransform_9114 = var_renderer.method3640()
@@ -613,20 +613,20 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                 for (i_10_ in 0..<Class348_Sub44.anInt7101) Class318_Sub2.method2498(Class294.aClass338Array5060!![i_10_], var_renderer, (-128).toByte(), i)
                 Class225.anInt2946 = 0
                 if (Class348_Sub42_Sub10.Companion.anInt9577 > 0) {
-                    val i_11_ = Class14.anIntArray5091!!.size
+                    val i_11_ = GlTextureBase.anIntArray5091!!.size
                     val i_12_ = i_11_ + -i_11_ and 0x7
                     var i_13_ = 0
                     while (i_13_ < i_12_) {
-                        Class14.anIntArray5091!![i_13_++] = 2147483647
-                        Class14.anIntArray5091!![i_13_++] = 2147483647
-                        Class14.anIntArray5091!![i_13_++] = 2147483647
-                        Class14.anIntArray5091!![i_13_++] = 2147483647
-                        Class14.anIntArray5091!![i_13_++] = 2147483647
-                        Class14.anIntArray5091!![i_13_++] = 2147483647
-                        Class14.anIntArray5091!![i_13_++] = 2147483647
-                        Class14.anIntArray5091!![i_13_++] = 2147483647
+                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
+                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
+                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
+                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
+                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
+                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
+                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
+                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
                     }
-                    while (i_11_ > i_13_) Class14.anIntArray5091!![i_13_++] = 2147483647
+                    while (i_11_ > i_13_) GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
                     Class350.anInt4319 = 1
                     var i_14_ = 0
                     while ((i_14_ < Class348_Sub42_Sub10.Companion.anInt9577)) {

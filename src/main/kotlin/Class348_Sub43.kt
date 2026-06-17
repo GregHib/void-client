@@ -1,4 +1,4 @@
-import Class14_Sub4.Companion.method250
+import GlRectangleTexture.Companion.method250
 import kotlin.math.max
 import kotlin.math.min
 
@@ -63,7 +63,7 @@ class Class348_Sub43 : Class348() {
                             if (i_4_ < 0) i_4_ = -i_4_
                             if (i_3_ < i_4_) bool_0_ = false
                         }
-                        val string_5_ = (if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) Class274.aClass274_3513!!.method2063(Class348_Sub33.anInt6967, 544) else Class274.aClass274_3511!!.method2063(Class348_Sub33.anInt6967, 544))
+                        val string_5_ = (if (GlRectangleTexture.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) Class274.aClass274_3513!!.method2063(Class348_Sub33.anInt6967, 544) else Class274.aClass274_3511!!.method2063(Class348_Sub33.anInt6967, 544))
                         if (player.anInt10516 >= player.anInt10557) string = (player.method2456(true, 255) + (if (!bool_0_) "<col=ffffff>" else (method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, (player.anInt10516)))) + " (" + string_5_ + player.anInt10516 + ")")
                         else string = (player.method2456(true, 255) + (if (bool_0_) (method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, (player.anInt10516))) else "<col=ffffff>") + " (" + string_5_ + player.anInt10516 + "+" + (-player.anInt10516 + player.anInt10557) + ")")
                     } else if (player.anInt10564 == -1) string = player.method2456(true, 255)

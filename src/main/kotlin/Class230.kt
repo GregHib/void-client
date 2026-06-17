@@ -196,7 +196,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                                     Class21.aRenderer326!!.F(-i_33_, -i_34_)
                                     Class21.aRenderer326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
                                     method3284(true, (Class348_Sub42_Sub4.aDouble9517 + d_37_))
-                                    Class14_Sub2.aDouble8621 = d_37_ + Class348_Sub42_Sub4.aDouble9517
+                                    GlCubeMapTexture.aDouble8621 = d_37_ + Class348_Sub42_Sub4.aDouble9517
                                     if (Class348_Sub49.anInt7207 == 1) {
                                         Class328_Sub1_Sub1.anInt8799 = (i_17_ + -Class348_Sub3.anInt6568 - i_34_)
                                         OutputStream_Sub1.anInt95 = i_21_
@@ -280,7 +280,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                                 OutputStream_Sub1.anInt95 = i_21_
                                 Class21.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
                             }
-                            Class14_Sub2.aDouble8621 = 0.0
+                            GlCubeMapTexture.aDouble8621 = 0.0
                             Class348_Sub42_Sub8_Sub2.aClass76_10436!!.method775(69.toByte())
                             method1274(Class348_Sub42_Sub8_Sub2.aClass76_10436)
                             method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)

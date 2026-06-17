@@ -410,7 +410,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             Class289.method2193(true, (-123).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 73) {
-                            Class14_Sub4.aClass323_8644 = Class323(var_renderer!!, 12, true, Class305.aCanvas3869!!)
+                            GlRectangleTexture.aClass323_8644 = Class323(var_renderer!!, 12, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 76
                             Class289.method2193(true, (-125).toByte())
                             method867(true)

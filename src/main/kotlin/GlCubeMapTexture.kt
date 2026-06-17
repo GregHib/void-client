@@ -4,7 +4,7 @@ import Class55.Companion.method520
 import jaggl.OpenGL.Companion.glTexImage2Di
 import OpenGlRenderNode.Companion.method3297
 
-class Class14_Sub2 internal constructor(class377: Class377?, i: Int, bool: Boolean, `is`: Array<IntArray?>?) : Class14(class377, 34067, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, 6 * (i * i), bool), Interface18_Impl2 {
+class GlCubeMapTexture internal constructor(class377: Class377?, i: Int, bool: Boolean, `is`: Array<IntArray?>?) : GlTextureBase(class377, 34067, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, 6 * (i * i), bool), Interface18_Impl2 {
     init {
         try {
             this.aClass377_5082!!.method3850((-109).toByte(), this)

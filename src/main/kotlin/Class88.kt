@@ -1,4 +1,4 @@
-import Class14_Sub3.Companion.method248
+import Gl3dTexture.Companion.method248
 import Class16.method260
 import Class239_Sub18.Companion.method1802
 import Class239_Sub19.Companion.method1804
@@ -145,7 +145,7 @@ class Class88 {
                         }
                         if (Class318_Sub1_Sub1_Sub2.anInt9971 >= 3) {
                             Class225.anInt2955 = 0
-                            Class14_Sub4.method254(-5, (-111).toByte())
+                            GlRectangleTexture.method254(-5, (-111).toByte())
                             return
                         }
                         if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285!!.method1259(0)
@@ -177,7 +177,7 @@ class Class88 {
                         val i_3_ = ((Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
                         if (i_3_ != 0) {
                             Class225.anInt2955 = 0
-                            Class14_Sub4.method254(i_3_, (-113).toByte())
+                            GlRectangleTexture.method254(i_3_, (-113).toByte())
                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                             Class348_Sub40_Sub8.aClass238_9165 = null
                             Class152.method1215(3.toByte())
@@ -229,8 +229,8 @@ class Class88 {
                             class348_sub49_sub2.writeBytes((class348_sub49_9_.aByteArray7154!!).size, 0, (class348_sub49_9_.aByteArray7154!!), -73)
                             class348_sub49_sub2.writeShort(107.toByte(), GlArrayBufferObject.anInt4718)
                             class348_sub49_sub2.writeLong(TextureMetadataProvider.aLong4615, (-63).toByte())
-                            class348_sub49_sub2.writeByte(false, if (Class14_Sub1.aString8605 == null) 0 else 1)
-                            if (Class14_Sub1.aString8605 != null) class348_sub49_sub2.writeString((-5).toByte(), (Class14_Sub1.aString8605!!))
+                            class348_sub49_sub2.writeByte(false, if (Gl2dTexture.aString8605 == null) 0 else 1)
+                            if (Gl2dTexture.aString8605 != null) class348_sub49_sub2.writeString((-5).toByte(), (Gl2dTexture.aString8605!!))
                             class348_sub49_sub2.writeByte(false, (if (!method3131(50.toByte(), "jagtheora")) 0 else 1))
                             Class157.method1244(64, class348_sub49_sub2)
                             class348_sub49_sub2.method3350(i_7_, true, `is`, (class348_sub49_sub2.anInt7197))
@@ -268,7 +268,7 @@ class Class88 {
                             else {
                                 if (i_11_ == 1) {
                                     Class225.anInt2955 = 5
-                                    Class14_Sub4.method254(i_11_, (-125).toByte())
+                                    GlRectangleTexture.method254(i_11_, (-125).toByte())
                                     return
                                 }
                                 if (i_11_ != 2) {
@@ -281,7 +281,7 @@ class Class88 {
                                             Class348_Sub40_Sub8.aClass238_9165 = null
                                         } else {
                                             Class225.anInt2955 = 0
-                                            Class14_Sub4.method254(i_11_, (-87).toByte())
+                                            GlRectangleTexture.method254(i_11_, (-87).toByte())
                                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                                             Class348_Sub40_Sub8.aClass238_9165 = null
                                             Class152.method1215(3.toByte())
@@ -310,7 +310,7 @@ class Class88 {
                             val i_12_ = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             Class225.anInt2955 = 0
                             Class63.anInt1121 = (3 + i_12_) * 60
-                            Class14_Sub4.method254(21, (-95).toByte())
+                            GlRectangleTexture.method254(21, (-95).toByte())
                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                             Class348_Sub40_Sub8.aClass238_9165 = null
                             Class152.method1215(3.toByte())
@@ -320,7 +320,7 @@ class Class88 {
                             Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-128).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             Class225.anInt2955 = 0
                             Class348_Sub42_Sub7.anInt9541 = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
-                            Class14_Sub4.method254(29, (-97).toByte())
+                            GlRectangleTexture.method254(29, (-97).toByte())
                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                             Class348_Sub40_Sub8.aClass238_9165 = null
                             Class152.method1215(3.toByte())
@@ -415,7 +415,7 @@ class Class88 {
                             if (Class239_Sub12.anInt5969 == 2) Class225.anInt2955 = 11
                             else {
                                 Class225.anInt2955 = 0
-                                Class14_Sub4.method254(2, (-92).toByte())
+                                GlRectangleTexture.method254(2, (-92).toByte())
                                 method1804(8839)
                                 Class348_Sub49.method3379(2, 7)
                                 Class348_Sub3.aIntRange_6584 = null
@@ -444,7 +444,7 @@ class Class88 {
                                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                 Class225.anInt2955 = 0
                                 val i_13_ = Class348_Sub40_Sub25.anInt9341
-                                Class14_Sub4.method254(2, (-124).toByte())
+                                GlRectangleTexture.method254(2, (-124).toByte())
                                 FrameStatsReset.method1135(0)
                                 Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 Renderer.anInt4581 = -1
@@ -467,7 +467,7 @@ class Class88 {
                                     Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                     val i_15_ = Class348_Sub40_Sub25.anInt9341
                                     Class225.anInt2955 = 0
-                                    Class14_Sub4.method254(15, (-120).toByte())
+                                    GlRectangleTexture.method254(15, (-120).toByte())
                                     Class312.method2330(86.toByte())
                                     Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                     if (i_15_ != (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
@@ -483,7 +483,7 @@ class Class88 {
                     }
                     if (Class318_Sub1_Sub1_Sub2.anInt9971 >= 3) {
                         Class225.anInt2955 = 0
-                        Class14_Sub4.method254(-4, (-87).toByte())
+                        GlRectangleTexture.method254(-4, (-87).toByte())
                         Class152.method1215(3.toByte())
                     } else {
                         if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285!!.method1259(0)

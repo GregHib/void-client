@@ -4,7 +4,7 @@ import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage3Dub
 import java.io.IOException
 
-class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?, i: Int, i_0_: Int, i_1_: Int, `is`: ByteArray?) : Class14(class377, 32879, class304, Class68.aClass68_1183, i_0_ * (i * i_1_), false), Interface18_Impl1 {
+class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?, i: Int, i_0_: Int, i_1_: Int, `is`: ByteArray?) : GlTextureBase(class377, 32879, class304, Class68.aClass68_1183, i_0_ * (i * i_1_), false), Interface18_Impl1 {
     private val anInt8626: Int
     private val anInt8629: Int
     private val anInt8631: Int

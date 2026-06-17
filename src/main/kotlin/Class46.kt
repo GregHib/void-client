@@ -343,7 +343,7 @@ class Class46 {
 
     fun method426(var_renderer: Renderer?, i: Byte): Class324? {
         anInt827++
-        val class324 = Class14.method232(var_renderer, (-53).toByte(), false, this.anInt702)
+        val class324 = GlTextureBase.method232(var_renderer, (-53).toByte(), false, this.anInt702)
         if (i.toInt() != 68) method436(-71, -56, -125)
         Class348_Sub42_Sub13.aBoolean9616 = class324 == null
         return class324
@@ -387,7 +387,7 @@ class Class46 {
                         return null
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
-                    class64 = var_renderer.method3625(class124, i, Class14_Sub3.anInt8628, 64, 768)
+                    class64 = var_renderer.method3625(class124, i, Gl3dTexture.anInt8628, 64, 768)
                     Class358.aClass60_4417!!.method582(class64, l, (-125).toByte())
                 }
                 if (class17 != null) class64 = class17.method269(-101, class64, i_24_, i_22_, i, i_21_)

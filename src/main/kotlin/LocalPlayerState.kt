@@ -28,7 +28,7 @@ object LocalPlayerState {
             Class64_Sub3.aString5600 = string
             Class186.aString2496 = string_0_
             Class318_Sub1_Sub3_Sub3.aBoolean10238 = bool
-            if (!Class318_Sub1_Sub3_Sub3.aBoolean10238 && (Class64_Sub3.aString5600 == "" || Class186.aString2496 == "")) Class14_Sub4.method254(3, (-100).toByte())
+            if (!Class318_Sub1_Sub3_Sub3.aBoolean10238 && (Class64_Sub3.aString5600 == "" || Class186.aString2496 == "")) GlRectangleTexture.method254(3, (-100).toByte())
             else {
                 val i_1_ = 34 % ((16 - i) / 55)
                 if (Class239_Sub12.anInt5969 != 1) {
@@ -36,7 +36,7 @@ object LocalPlayerState {
                     Class348_Sub42_Sub7.anInt9541 = -1
                 }
                 AbstractMenuEntry.aBoolean1712 = false
-                Class14_Sub4.method254(-3, (-94).toByte())
+                GlRectangleTexture.method254(-3, (-94).toByte())
                 Class225.anInt2955 = 1
                 SceneRegionState.anInt197 = 0
                 Class318_Sub1_Sub1_Sub2.anInt9971 = 0

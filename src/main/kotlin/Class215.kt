@@ -1,4 +1,4 @@
-import Class14_Sub2.Companion.method243
+import GlCubeMapTexture.Companion.method243
 import Class239.Companion.method1713
 import Class286_Sub2.Companion.method2145
 import Class286_Sub5.Companion.method2158

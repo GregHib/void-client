@@ -128,7 +128,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             Class348_Sub3.aClass323_6581 = null
             Class39.aClass323_521 = null
             Class75.aClass252_1246 = null
-            Class14_Sub4.aClass323_8644 = null
+            GlRectangleTexture.aClass323_8644 = null
             Class48.anInt859 = -1
             if (i <= -44) {
                 TextureMetadataProvider.anInt4609 = -1

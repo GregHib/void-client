@@ -809,7 +809,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (player != null) {
                                 Class239_Sub20.anInt6048 = 2
                                 Class93.anInt1534 = i_72_
-                                Class14_Sub3.anInt8625++
+                                Gl3dTexture.anInt8625++
                                 Class26.anInt385 = i_73_
                                 Class348.anInt4292 = 0
                                 val class348_sub47 = method2148((Class25.aClass351_364), (Class348_Sub23_Sub2.aClass77_9029), -113)

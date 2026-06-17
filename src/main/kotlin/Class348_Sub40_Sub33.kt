@@ -117,7 +117,7 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
             else if (!Class348_Sub8.aRenderer6654!!.method3671()) bool = false
             if (bool_0_ == bool) return false
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243), if (bool) 1 else 0)
-            Class14_Sub2.method243(37)
+            GlCubeMapTexture.method243(37)
             return true
         }
 

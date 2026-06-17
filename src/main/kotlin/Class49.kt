@@ -1,4 +1,4 @@
-import Class14_Sub2.Companion.method243
+import GlCubeMapTexture.Companion.method243
 import Class348_Sub40_Sub12.Companion.method3076
 import Class367_Sub10.Companion.method3553
 import kotlin.concurrent.Volatile

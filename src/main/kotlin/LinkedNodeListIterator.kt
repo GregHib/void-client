@@ -1,4 +1,4 @@
-import Class14.Companion.method235
+import GlTextureBase.Companion.method235
 import Class239.Companion.method1713
 import Class318_Sub1.Companion.method2385
 import Class66.method703
@@ -308,7 +308,7 @@ class LinkedNodeListIterator {
             RenderNode.aAbstractCameraTransform_9720!!.method898(Class21.aRenderer326!!.method3640())
             anInt1642++
             val `is` = Class21.aRenderer326!!.Y()
-            Class14_Sub3.anInt8630 = `is`[2]
+            Gl3dTexture.anInt8630 = `is`[2]
             Class248.anInt3202 = `is`[0]
             Class27.anInt394 = `is`[3]
             Class239_Sub5.anInt5886 = `is`[1]
@@ -317,7 +317,7 @@ class LinkedNodeListIterator {
                 method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120)
             } else {
                 Class21.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
-                method3284(true, Class14_Sub2.aDouble8621)
+                method3284(true, GlCubeMapTexture.aDouble8621)
             }
             if (bool != false) method1010(true, true)
         }

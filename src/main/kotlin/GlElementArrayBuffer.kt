@@ -104,7 +104,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
                 RuntimeException_Sub1.anInt4596 = i
                 var l = 0L
                 if (Class348_Sub23_Sub3.aString9043 == null) {
-                    Class14_Sub4.method254(35, (-87).toByte())
+                    GlRectangleTexture.method254(35, (-87).toByte())
                     return
                 } else {
                     val class348_sub49 = (Class348_Sub49(method878((MapLabelMenuEntry.method1039(Class348_Sub23_Sub3.aString9043!!, true)), -126)))

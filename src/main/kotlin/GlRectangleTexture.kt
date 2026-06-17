@@ -8,7 +8,7 @@ import jaggl.OpenGL.Companion.glTexImage2Dub
 import jaggl.OpenGL.Companion.glTexSubImage2Di
 import jaggl.OpenGL.Companion.glTexSubImage2Dub
 
-class Class14_Sub4 : Class14, Interface18_Impl3 {
+class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
     private var anInt8634 = 0
     private var anInt8640 = 0
     override fun method72(i: Int): Int {

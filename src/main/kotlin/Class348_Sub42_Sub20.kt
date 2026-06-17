@@ -59,7 +59,7 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
 
         fun method3282(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             Class348_Sub51.anInt7244 = i_6_
-            Class14_Sub4.anInt8633 = i_5_
+            GlRectangleTexture.anInt8633 = i_5_
             Class59_Sub2_Sub1.anInt8668 = i_2_
             Class348_Sub44.anInt7092 = i
             Class281.anInt3650 = i_4_
