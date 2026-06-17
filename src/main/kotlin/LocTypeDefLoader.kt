@@ -3,7 +3,7 @@ import Class258_Sub4.Companion.method1974
 /* Class187 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class187 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class LocTypeDefLoader internal constructor(class230: Class230?, i: Int, class45: Class45?) {
     private var aClass45_2498: Class45? = null
     private var aClass60_2501: Class60? = Class60(64)
     fun method1404(i: Byte) {

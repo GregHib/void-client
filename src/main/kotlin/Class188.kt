@@ -137,7 +137,7 @@ class Class188 internal constructor(private val aHa_Sub2_2511: OpenGlRenderer) {
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
             Class2.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
             ProjectionCameraTransform.aClass326_5764!!.method2603(5, 11)
-            Class348_Sub23_Sub2.aClass187_9036!!.method1409(5, -20721)
+            Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1409(5, -20721)
             Class30.aClass84_413!!.method819(74.toByte(), 5)
             HoverActionEntry.aClass25_1813!!.method299(5, 16)
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1392(88, 5)

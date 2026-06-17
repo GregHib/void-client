@@ -182,7 +182,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             CameraNodeList.anInt1742 = class45.method417("mapdots", 0)
             Class364.anInt4469 = class45.method417("scrollbar", 0)
             Class348_Sub40_Sub38.anInt9473 = class45.method417("name_icons", 0)
-            Class187.anInt2510 = class45.method417("floorshadows", 0)
+            LocTypeDefLoader.anInt2510 = class45.method417("floorshadows", 0)
             Class52.anInt4895 = class45.method417("compass", 0)
             if (i > -72) method2161(106.toByte(), 125L)
             PerlinTextureProvider.anInt5814 = class45.method417("otherlevel", 0)

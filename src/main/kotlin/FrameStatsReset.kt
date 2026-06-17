@@ -17,7 +17,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
         fun method1131(i: Int) {
             val j = 64 / ((11 - i) / 54)
             anInt5795++
-            Class60.aRenderer1098!!.L(Class187.anInt2500, if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) -1 else Class36.anInt486 - -256 shl 2, 0)
+            Class60.aRenderer1098!!.L(LocTypeDefLoader.anInt2500, if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) -1 else Class36.anInt486 - -256 shl 2, 0)
         }
 
         fun method1132(i: Int, j: Int, k: Int): Boolean {
@@ -700,7 +700,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class18.anInt278 = 0
             OpenGlRenderer.anInt7545 = 0
             Class348_Sub40_Sub37.anInt9464 = 0
-            Class187.anInt2506 = 0
+            LocTypeDefLoader.anInt2506 = 0
             Class361.anInt4436 = 0
             Class285.anInt4745 = 0
             Class348_Sub1_Sub3.anInt8819 = 0
@@ -1156,7 +1156,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7679 = 0
             Class17.anInt240 = 0
             Class318_Sub1_Sub1_Sub1.anInt9965 = 0
-            Class187.anInt2503 = 0
+            LocTypeDefLoader.anInt2503 = 0
             Class348_Sub40_Sub32.anInt9416 = 0
             Class348_Sub16_Sub2.anInt8877 = 0
             Class318_Sub1_Sub1_Sub2.anInt9998 = 0
@@ -1290,7 +1290,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub2.anInt6395 = 0
             Class78.anInt1316 = 0
             CompositeNpcModelBuilder.anInt2091 = 0
-            Class187.anInt2505 = 0
+            LocTypeDefLoader.anInt2505 = 0
             CharCountUtil.anInt226 = 0
             PlayerUpdateDecoder.anInt1916 = 0
             ModelDefinitionLoader.anInt2051 = 0
@@ -1645,7 +1645,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class248.anInt3195 = 0
             Class377.anInt9826 = 0
             Class64_Sub3.anInt5546 = 0
-            Class187.anInt2502 = 0
+            LocTypeDefLoader.anInt2502 = 0
             OpenGlRenderer.anInt7606 = 0
             Class348_Sub49_Sub2.anInt9766 = 0
             HitsplatDefinition.anInt2017 = 0
@@ -2506,7 +2506,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8908 = 0
             GlRectangleTexture.anInt8646 = 0
             Class318_Sub1_Sub3_Sub3.anInt10216 = 0
-            Class187.anInt2508 = 0
+            LocTypeDefLoader.anInt2508 = 0
             Class348_Sub41.anInt7046 = 0
             Class59.anInt1077 = 0
             Class348_Sub1_Sub1.anInt8809 = 0
@@ -3784,7 +3784,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class361.anInt4445 = 0
             Class348_Sub31_Sub2.anInt9071 = 0
             Class272.anInt3472 = 0
-            Class187.anInt2504 = 0
+            LocTypeDefLoader.anInt2504 = 0
             Class322.anInt4023 = 0
             Class377.anInt9867 = 0
             AudioResampler.anInt2168 = 0
@@ -4014,7 +4014,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FontDefinition.anInt1985 = 0
             Class54.anInt968 = 0
             Class239_Sub5.anInt5884 = 0
-            Class187.anInt2499 = 0
+            LocTypeDefLoader.anInt2499 = 0
             Class348_Sub49.anInt7141 = 0
             ConfigDefinitionLoader.anInt2081 = 0
             Class258_Sub3.anInt8546 = 0

@@ -341,7 +341,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_30_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_31_ = (0x1 and i_30_) == 1
-                Class187.method1405(i, bool_31_, true)
+                LocTypeDefLoader.method1405(i, bool_31_, true)
                 val i_32_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 for (i_33_ in 0..<i_32_) {
                     var i_34_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-127).toByte())

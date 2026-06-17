@@ -98,12 +98,12 @@ class OutputStream_Sub1 : OutputStream() {
                 Class348_Sub8.aRenderer6654!!.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_)
                 Class226.method1626(1, true)
                 if (Class59_Sub1.aBoolean5300) {
-                    ProjectionCameraTransform.method941(124, Class187.anInt2500)
+                    ProjectionCameraTransform.method941(124, LocTypeDefLoader.anInt2500)
                     if (LocalPlayerState.anInt1906 != Class375.anInt4545) Class348_Sub16_Sub2.aBoolean8870 = true
                     Class375.anInt4545 = LocalPlayerState.anInt1906
                 } else {
                     Class348_Sub8.aRenderer6654!!.ya()
-                    val i_15_ = Class187.anInt2500
+                    val i_15_ = LocTypeDefLoader.anInt2500
                     if (Class259.aClass305_3304 != null) Class259.aClass305_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, Class348_Sub8.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, Class5.anInt4638, Class348_Sub42_Sub19.anInt9701, i_15_, i_2_)
                     else Class348_Sub8.aRenderer6654!!.GA(i_15_)
                 }

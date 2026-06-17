@@ -6,7 +6,7 @@ class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_
     override fun method51(i: Byte): Class223? {
         anInt10175++
         if (i < 116) this.anInt10177 = -10
-        return Class187.aClass223_2507
+        return LocTypeDefLoader.aClass223_2507
     }
 
     init {

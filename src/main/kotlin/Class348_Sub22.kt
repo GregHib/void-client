@@ -36,7 +36,7 @@ class Class348_Sub22 internal constructor(@JvmField var aNpc_6859: Npc?) : Class
             if (class45.method421(false, Class364.anInt4469)) i_2_++
             if (i != 22388) return 8
             if (class45.method421(false, Class348_Sub40_Sub38.anInt9473)) i_2_++
-            if (class45.method421(false, Class187.anInt2510)) i_2_++
+            if (class45.method421(false, LocTypeDefLoader.anInt2510)) i_2_++
             if (class45.method421(false, Class52.anInt4895)) i_2_++
             if (class45.method421(false, PerlinTextureProvider.anInt5814)) i_2_++
             if (class45.method421(false, Class5_Sub3.anInt8370)) i_2_++

@@ -561,7 +561,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 Class348.anInt4292 = 0
-                                Class187.anInt2499++
+                                LocTypeDefLoader.anInt2499++
                                 Class26.anInt385 = i_73_
                                 Class239_Sub20.anInt6048 = 2
                                 Class93.anInt1534 = i_72_

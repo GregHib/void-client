@@ -61,7 +61,7 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
         @JvmStatic
         fun method2965(string: String?, i: Int, bool: Boolean, i_1_: Int) {
             anInt6866++
-            Class187.method1406(true)
+            LocTypeDefLoader.method1406(true)
             if (i == 0) {
                 Class348_Sub8.aRenderer6654 = SoftwareSpriteRaster.method958(true, 0, Class348_Sub40_Sub4.aRenderConfig9113, Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350) * 2, Class305.aCanvas3869, SpriteLoadValidator.aClass45_4796)
                 if (string != null) {

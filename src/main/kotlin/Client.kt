@@ -90,7 +90,7 @@ import ScanlineRasterFiller.Companion.method1386
 import MapSceneDefLoader.Companion.method1395
 import TextureGenerator.Companion.method1396
 import PerlinTextureProvider.Companion.method1400
-import Class187.Companion.method1407
+import LocTypeDefLoader.Companion.method1407
 import Class188.Companion.method1411
 import Class188.Companion.method1416
 import Class19.Companion.method284

@@ -153,7 +153,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
             var i = Class239_Sub1.anInt5850
             var i_24_ = 0
             while (`is`.size > i_24_) {
-                val class321 = Class348_Sub23_Sub2.aClass187_9036!!.method1408(-12637, `is`[i_24_])
+                val class321 = Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1408(-12637, `is`[i_24_])
                 if (class321.anInt4000 != -1) {
                     var abstractModelRenderer = (Class34.aClass60_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {

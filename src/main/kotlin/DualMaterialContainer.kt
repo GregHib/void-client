@@ -26,7 +26,7 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
         if (class223 == SpotAnimVector.aClass223_2307) return Class67(aClass45_1637, aClass45_1641, interface12 as HeapInfoRecord)
         if (bool != true) anIntArray1636 = null
         if (OrientationRotator.aClass223_2045 == class223) return Class265(aClass45_1637, interface12 as ConfigValueProvider)
-        if (Class187.aClass223_2507 == class223) return Class5_Sub1_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3_Sub1)
+        if (LocTypeDefLoader.aClass223_2507 == class223) return Class5_Sub1_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3_Sub1)
         return null
     }
 
