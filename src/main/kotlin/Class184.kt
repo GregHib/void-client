@@ -1,5 +1,5 @@
 import GlElementArrayBuffer.Companion.method1156
-import Class177.Companion.method1353
+import ClickFeedbackTask.Companion.method1353
 import Class239_Sub5.Companion.method1742
 import Class348_Sub16_Sub3.Companion.method2878
 import Class348_Sub40_Sub32.Companion.method3135

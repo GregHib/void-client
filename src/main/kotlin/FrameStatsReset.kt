@@ -110,7 +110,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             VarpStore.anInt5080 = 0
             GameAppletFrame.anInt19 = 0
             Class60.anInt1093 = 0
-            Class177.anInt4667 = 0
+            ClickFeedbackTask.anInt4667 = 0
             GlRectangleTexture.anInt8641 = 0
             Class206.anInt4880 = 0
             Class288.anInt4957 = 0
@@ -1663,7 +1663,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8049 = 0
             Class299_Sub1.anInt6322 = 0
             AnimatedModelRenderer.anInt8413 = 0
-            Class177.anInt4664 = 0
+            ClickFeedbackTask.anInt4664 = 0
             Class206.anInt4864 = 0
             Class348_Sub40_Sub6.anInt9132 = 0
             Class64_Sub3.anInt5613 = 0
@@ -3501,7 +3501,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5504 = 0
             FloatCameraTransform.anInt5706 = 0
             Class348_Sub17.anInt6789 = 0
-            Class177.anInt4668 = 0
+            ClickFeedbackTask.anInt4668 = 0
             OpenGlRenderer.anInt7579 = 0
             Class348_Sub40_Sub23.anInt9308 = 0
             FloatCameraTransform.anInt5737 = 0
@@ -3845,7 +3845,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7193 = 0
             Class326.anInt4083 = 0
             Class237.anInt3111 = 0
-            Class177.anInt4665 = 0
+            ClickFeedbackTask.anInt4665 = 0
             Class292.anInt4801 = 0
             Class235.anInt3078 = 0
             Class59_Sub1_Sub1.anInt8652 = 0
@@ -4028,7 +4028,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ParticleEmitterNode.anInt190 = 0
             NativeRenderer.anInt8047 = 0
             OpenGlRenderer.anInt7684 = 0
-            Class177.anInt4663 = 0
+            ClickFeedbackTask.anInt4663 = 0
             Class286_Sub3.anInt6231 = 0
             OpenGlRenderer.anInt7643 = 0
             Class373_Sub2.anInt7430 = 0

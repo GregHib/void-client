@@ -1028,7 +1028,7 @@ class Client : GameAppletFrame() {
         method2202(-17902)
         Class73.method741((-128).toByte())
         method1159(112.toByte())
-        Class177.method1354((-22).toByte())
+        ClickFeedbackTask.method1354((-22).toByte())
         method1853(48.toByte())
         method1117(105)
         method1120(1)

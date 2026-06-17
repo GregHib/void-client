@@ -98,7 +98,7 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                 }
                 if (Class242.aClass348_Sub42_Sub13_3152 != null) {
                     i_15_ = 0
-                    method2270(Class348_Sub1_Sub1.anInt8806, Class50_Sub3.anInt5252, var_renderer, (Class242.aClass348_Sub42_Sub13_3152!!.aString9617), false, Class373.anInt4534, Class177.anInt4669, i_10_)
+                    method2270(Class348_Sub1_Sub1.anInt8806, Class50_Sub3.anInt5252, var_renderer, (Class242.aClass348_Sub42_Sub13_3152!!.aString9617), false, Class373.anInt4534, ClickFeedbackTask.anInt4669, i_10_)
                     var class348_sub42_sub12 = (Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1011(-44) as? Class348_Sub42_Sub12?)
                     while (class348_sub42_sub12 != null) {
                         val i_17_ = i_15_ * 16 + (Class373.anInt4534 + i_10_ - -13)
@@ -106,7 +106,7 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                         i_15_++
                         class348_sub42_sub12 = (Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(71.toByte()) as? Class348_Sub42_Sub12?)
                     }
-                    method826(i_10_, Class50_Sub3.anInt5252, Class348_Sub1_Sub1.anInt8806, Class177.anInt4669, 125, Class373.anInt4534, var_renderer)
+                    method826(i_10_, Class50_Sub3.anInt5252, Class348_Sub1_Sub1.anInt8806, ClickFeedbackTask.anInt4669, 125, Class373.anInt4534, var_renderer)
                 }
             } else {
                 var i_13_ = 0
@@ -135,10 +135,10 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                     while (class348_sub42_sub12 != null) {
                         val i_22_ = i_20_ * 16 + 13 + (Class373.anInt4534 + i_10_)
                         i_20_++
-                        Class318_Sub2.method2494(Class373.anInt4534, Class5_Sub2.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, Class348_Sub1_Sub1.anInt8806, i_12_, (Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv()), 127.toByte(), Class177.anInt4669, Class50_Sub3.anInt5252, i_11_)
+                        Class318_Sub2.method2494(Class373.anInt4534, Class5_Sub2.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, Class348_Sub1_Sub1.anInt8806, i_12_, (Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, Class50_Sub3.anInt5252, i_11_)
                         class348_sub42_sub12 = (Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(111.toByte()) as? Class348_Sub42_Sub12?)
                     }
-                    Class332.method2642(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, true, Class50_Sub3.anInt5252, Class177.anInt4669)
+                    Class332.method2642(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, true, Class50_Sub3.anInt5252, ClickFeedbackTask.anInt4669)
                 }
             } else {
                 var i_18_ = 0

@@ -1,5 +1,5 @@
 import GlCubeMapTexture.Companion.method245
-import Class177.Companion.method1353
+import ClickFeedbackTask.Companion.method1353
 import Class258_Sub3.Companion.method1969
 import Class286_Sub3.Companion.method2148
 import Class299_Sub1_Sub2.Companion.method2264
@@ -71,7 +71,7 @@ class Class348_Sub14 : Class348 {
             }
             if (i_4_ == 1) {
                 class348_sub47 = method2148(Class301.aClass351_3825, Class348_Sub23_Sub2.aClass77_9029, -93)
-                Class177.anInt4665++
+                ClickFeedbackTask.anInt4665++
             }
             class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i + Class90.regionTileY, 3.toByte())
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(78.toByte(), if (!Class182.aClass346_2449!!.method2696(82, -124)) 0 else 1)

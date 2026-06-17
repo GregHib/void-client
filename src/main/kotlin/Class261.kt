@@ -158,7 +158,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                     val i_16_ = Class258_Sub4.aClass373_8552!!.method3594(116.toByte())
                     var bool = false
                     if (Class242.aClass348_Sub42_Sub13_3152 != null) {
-                        if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -Class348_Sub1_Sub1.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (Class177.anInt4669 + Class373.anInt4534 + 10 < i_16_)) Class348_Sub42_Sub19.method3277((-48).toByte())
+                        if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -Class348_Sub1_Sub1.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + Class373.anInt4534 + 10 < i_16_)) Class348_Sub42_Sub19.method3277((-48).toByte())
                         else bool = true
                     }
                     if (!bool) {
@@ -203,7 +203,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                 if (i_14_ == 0) {
                     val i_23_ = class348_sub45!!.method3308((-128).toByte())
                     val i_24_ = class348_sub45.method3311(33)
-                    if (Class242.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 <= i_23_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252 >= i_23_) && i_24_ >= Class373.anInt4534 && Class373.anInt4534 + Class177.anInt4669 >= i_24_) {
+                    if (Class242.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 <= i_23_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252 >= i_23_) && i_24_ >= Class373.anInt4534 && Class373.anInt4534 + ClickFeedbackTask.anInt4669 >= i_24_) {
                         var i_25_ = -1
                         var i_26_ = 0
                         while ((Class242.aClass348_Sub42_Sub13_3152!!.anInt9615 > i_26_)) {

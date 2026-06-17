@@ -103,7 +103,7 @@ class MapLabelMenuEntry : AbstractMenuEntry() {
             NativeShaderProgram.anInt9776 = 0
             Class227.anInt2968 = NativeShaderProgram.anInt9776
             Class86.anInt1482 = Class227.anInt2968
-            Class177.anInt4666 = Class86.anInt1482
+            ClickFeedbackTask.anInt4666 = Class86.anInt1482
             val i_10_ = 58 % ((i - -66) / 39)
         }
     }

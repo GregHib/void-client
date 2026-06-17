@@ -1498,7 +1498,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 var i_196_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-124)
                 if (i_196_ == 65535) i_196_ = -1
                 val i_197_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
-                Class177.method1352(i_196_, i_197_, i, (-98).toByte())
+                ClickFeedbackTask.method1352(i_196_, i_197_, i, (-98).toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

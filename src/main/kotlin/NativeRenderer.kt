@@ -2922,7 +2922,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                         }
                     }
                 } else if (i_41_ == 2) {
-                    val interface10 = ((Class177.method1353(i_40_, i_37_, i, (if (aClass8211 != null) aClass8211 else (Interface10::class.java.also { aClass8211 = it })))) as Interface10?)
+                    val interface10 = ((ClickFeedbackTask.method1353(i_40_, i_37_, i, (if (aClass8211 != null) aClass8211 else (Interface10::class.java.also { aClass8211 = it })))) as Interface10?)
                     if (interface10 != null) {
                         if (i_36_ == 11) i_36_ = 10
                         if (interface10 !is Class318_Sub1_Sub3_Sub2) Class218.method1591(i_37_, 43, i_41_, i_35_, interface10.method42(-107), i_36_, i, i_38_, i_40_)

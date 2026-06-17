@@ -3839,7 +3839,7 @@ object Class66 {
                 }
                 if (i == 3202) {
                     anInt1173 -= 2
-                    Class177.method1352(anIntArray1149!![anInt1173], 255, anIntArray1149!![anInt1173 + 1], (-98).toByte())
+                    ClickFeedbackTask.method1352(anIntArray1149!![anInt1173], 255, anIntArray1149!![anInt1173 + 1], (-98).toByte())
                     return
                 }
                 if (i == 3203) {
@@ -3854,7 +3854,7 @@ object Class66 {
                 }
                 if (i == 3205) {
                     anInt1173 -= 3
-                    Class177.method1352(anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173 + 1], (-98).toByte())
+                    ClickFeedbackTask.method1352(anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173 + 1], (-98).toByte())
                     return
                 }
                 if (i == 3206) {

@@ -76,7 +76,7 @@ class GlCubeMapTexture internal constructor(class377: Class377?, i: Int, bool: B
             var interface10 = method3297(i, i_2_, i_3_) as Interface10?
             var bool = true
             if (interface10 != null) bool = bool and method520(interface10, -1)
-            interface10 = (Class177.method1353(i, i_2_, i_3_, (if (aClass8623 != null) aClass8623 else (Interface10::class.java.also { aClass8623 = it }))) as Interface10?)
+            interface10 = (ClickFeedbackTask.method1353(i, i_2_, i_3_, (if (aClass8623 != null) aClass8623 else (Interface10::class.java.also { aClass8623 = it }))) as Interface10?)
             if (interface10 != null) bool = bool and method520(interface10, -1)
             interface10 = method2878(i, i_2_, i_3_) as Interface10?
             if (interface10 != null) bool = bool and method520(interface10, -1)

@@ -6,7 +6,7 @@ import Class348_Sub5.Companion.method2755
 /* Class177 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class177 internal constructor(private val aClass52_4671: Class52) : Interface1 {
+class ClickFeedbackTask internal constructor(private val aClass52_4671: Class52) : Interface1 {
     override fun method9(i: Byte, bool: Boolean) {
         if (bool) Class348_Sub8.aRenderer6654!!.aa(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, aClass52_4671.anInt4899, 0)
         anInt4668++
