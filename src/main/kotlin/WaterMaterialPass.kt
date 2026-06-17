@@ -233,7 +233,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                         string += ((GlRectangleTexture.method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, class79.anInt1361)) + " (" + string_15_ + class79.anInt1361 + ")")
                     }
                     if (RenderNode.aBoolean9722 && !bool) {
-                        val class254 = (if (ParticleEmitterFactory.anInt3176 == -1) null else ProjectionCameraTransform.aClass326_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364))
+                        val class254 = (if (ParticleEmitterFactory.anInt3176 == -1) null else ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364))
                         if ((Class38.anInt500 and 0x2) != 0 && (class254 == null || (class79.method805((class254.anInt3256), ParticleEmitterFactory.anInt3176, 61) != class254.anInt3256))) {
                             Class50_Sub3.method466(false, ItemNameResolver.aString5000 + " -> <col=ffff00>" + string, 0, (-81).toByte(), false, 0, -1, true, 30, npc.anInt10290.toLong(), ItemNameResolver.aString5001, npc.anInt10290.toLong(), Class348_Sub49_Sub1.anInt9747)
                             TextureHandle.anInt2586++

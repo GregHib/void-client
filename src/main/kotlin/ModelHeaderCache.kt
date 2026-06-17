@@ -3,7 +3,7 @@ import Class54.Companion.method500
 /* Class255 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class326: Class326?, class45: Class45?, class45_22_: Class45?) {
+class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, emoteDefCache: EmoteDefCache?, class45: Class45?, class45_22_: Class45?) {
     private val aClass45_3267: Class45?
     var aClass45_3268: Class45? = null
     private var aBoolean3269 = false
@@ -15,7 +15,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     private var aCrc64Hashable_3289: Crc64Hashable? = Crc64Hashable()
     private val aStringArray3290: Array<String?>
     var anInt3291: Int = 0
-    private var aClass326_3292: Class326? = null
+    private var aEmoteDefCache_3292: EmoteDefCache? = null
     private val aStringArray3293: Array<String?>
 
     fun method1930(i: Int) {
@@ -109,7 +109,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
 
     fun method1939(i: Int) {
         synchronized(aClass60_3278) {
-            if (i > -28) aClass326_3292 = null
+            if (i > -28) aEmoteDefCache_3292 = null
             aClass60_3278.method590(0)
         }
         anInt3277++
@@ -153,7 +153,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 var bool = false
                 var class348 = itemDefinition.aClass356_2757!!.method3484(0)
                 while (class348 != null) {
-                    val class254 = aClass326_3292!!.method2600(class348.aLong4291.toInt(), 28364)
+                    val class254 = aEmoteDefCache_3292!!.method2600(class348.aLong4291.toInt(), 28364)
                     if (class254.aBoolean3261) class348.method2715(60.toByte())
                     else bool = true
                     class348 = itemDefinition.aClass356_2757!!.method3482(0)
@@ -196,7 +196,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     init {
         try {
             aBoolean3269 = bool
-            aClass326_3292 = class326
+            aEmoteDefCache_3292 = emoteDefCache
             this.aClass45_3268 = class45_22_
             this.anInt3286 = i
             aClass45_3267 = class45
@@ -207,7 +207,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             aStringArray3290 = (arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null))
             aStringArray3293 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class326 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_22_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_22_ != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -1943,7 +1943,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub17.anInt9675 = 0
             Gl2dTexture.anInt8607 = 0
             GroundDecorRenderer.anInt3639 = 0
-            Class326.anInt4084 = 0
+            EmoteDefCache.anInt4084 = 0
             NpcDefinitionCache.anInt3315 = 0
             ModelDefinition.anInt1860 = 0
             ModelGroundDecor.anInt10022 = 0
@@ -2089,7 +2089,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlFramebufferBlitter.anInt271 = 0
             CubeMapMaterialPass.anInt6294 = 0
             NativeRenderer.anInt7983 = 0
-            Class326.anInt4088 = 0
+            EmoteDefCache.anInt4088 = 0
             OpenGlRenderer.anInt7614 = 0
             Renderer.anInt4577 = 0
             Class352.anInt4335 = 0
@@ -3843,7 +3843,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub45_Sub2.anInt9737 = 0
             ProjectileConfigUtil.anInt392 = 0
             Class348_Sub49.anInt7193 = 0
-            Class326.anInt4083 = 0
+            EmoteDefCache.anInt4083 = 0
             WorldMapScene.anInt3111 = 0
             ClickFeedbackTask.anInt4665 = 0
             MapArchiveSource.anInt4801 = 0
@@ -3888,7 +3888,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7607 = 0
             OpenGlRenderer.anInt7525 = 0
             Class348_Sub42_Sub8_Sub2.anInt10435 = 0
-            Class326.anInt4089 = 0
+            EmoteDefCache.anInt4089 = 0
             Class5_Sub1.anInt8348 = 0
             NpcDefinitionCache.anInt3318 = 0
             Class331.anInt4136 = 0

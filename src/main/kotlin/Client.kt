@@ -2435,14 +2435,14 @@ class Client : GameAppletFrame() {
                                     }
                                     class46.anInt723 = DualMaterialContainer.anInt1631
                                 }
-                                if (class46.anObjectArray671 != null && (Class326.anInt4086 > class46.anInt715)) {
-                                    if (class46.anIntArray731 == null || (Class326.anInt4086 - class46.anInt715) > 32) {
+                                if (class46.anObjectArray671 != null && (EmoteDefCache.anInt4086 > class46.anInt715)) {
+                                    if (class46.anIntArray731 == null || (EmoteDefCache.anInt4086 - class46.anInt715) > 32) {
                                         val class348_sub36 = Class348_Sub36()
                                         class348_sub36.aClass46_6989 = class46
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray671
                                         Class348_Sub1_Sub2.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
-                                        while_228_@ for (i_86_ in class46.anInt715..<Class326.anInt4086) {
+                                        while_228_@ for (i_86_ in class46.anInt715..<EmoteDefCache.anInt4086) {
                                             val i_87_ = (LoadingScreenState.anIntArray2632!![i_86_ and 0x1f])
                                             for (i_88_ in (class46.anIntArray731!!).indices) {
                                                 if ((class46.anIntArray731!![i_88_]) == i_87_) {
@@ -2455,7 +2455,7 @@ class Client : GameAppletFrame() {
                                             }
                                         }
                                     }
-                                    class46.anInt715 = Class326.anInt4086
+                                    class46.anInt715 = EmoteDefCache.anInt4086
                                 }
                                 if ((Class348_Sub42_Sub3.anInt9501 > class46.anInt726) && (class46.anObjectArray820 != null)) {
                                     val class348_sub36 = Class348_Sub36()

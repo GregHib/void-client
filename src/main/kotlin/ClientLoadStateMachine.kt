@@ -180,7 +180,7 @@ object ClientLoadStateMachine {
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1035) {
             if (Class348_Sub31.anInt6923 != -1 && !RasterSprite.aClass45_5207!!.method420(-10499, Class348_Sub31.anInt6923, 0)) return 99
             Class348_Sub40_Sub4.aRenderConfig9113 = TextureMetadataProvider(Class348_Sub11.aClass45_4770, Class369_Sub2.aClass45_8589, CameraRotationStub.aClass45_322)
-            ProjectionCameraTransform.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aNpcDefinitionCache_5558 = NpcDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, VideoAdChecker.aClass45_3183)
@@ -194,7 +194,7 @@ object ClientLoadStateMachine {
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, true, FloatGrid.aClass45_4975, RasterSprite.aClass45_5207)
-            Exception_Sub1.aModelHeaderCache_112 = ModelHeaderCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, true, ProjectionCameraTransform.aClass326_5764, SpotAnimVector.aClass45_2306, RasterSprite.aClass45_5207)
+            Exception_Sub1.aModelHeaderCache_112 = ModelHeaderCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, true, ProjectionCameraTransform.aEmoteDefCache_5764, SpotAnimVector.aClass45_2306, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036 = LocTypeDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             ParticleEmitterNode.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, OpenGlRenderNode.aClass45_10480, Class348_Sub29.aClass45_6909, TextureGenerator.aClass45_2490)
             CircleHitbox.aClass84_413 = Class84(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)

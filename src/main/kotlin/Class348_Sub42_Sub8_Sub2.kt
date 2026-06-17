@@ -1642,7 +1642,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     if (Class59_Sub1_Sub2.anIntArray8663!![i_217_] <= i_215_) SpotAnimDefCache.anIntArray3295!![i_214_] = i_217_ - -2
                     i_217_++
                 }
-                LoadingScreenState.anIntArray2632!![NpcSummaryDefinition.method1166(31, Class326.anInt4086++)] = i_214_
+                LoadingScreenState.anIntArray2632!![NpcSummaryDefinition.method1166(31, EmoteDefCache.anInt4086++)] = i_214_
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

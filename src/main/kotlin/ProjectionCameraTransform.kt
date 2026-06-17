@@ -411,7 +411,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
         @JvmField
         var anInt5763: Int = 0
         @JvmField
-        var aClass326_5764: Class326? = null
+        var aEmoteDefCache_5764: EmoteDefCache? = null
         @JvmField
         var anInt5765: Int = 0
         @JvmField
@@ -447,14 +447,14 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
         @JvmStatic
         fun method938(i: Int) {
-            aClass326_5764 = null
-            if (i <= 8) aClass326_5764 = null
+            aEmoteDefCache_5764 = null
+            if (i <= 8) aEmoteDefCache_5764 = null
         }
 
         fun method941(i: Int, i_48_: Int) {
             Class77.anInt1290 = i_48_
             anInt5755++
-            if (i <= 113) aClass326_5764 = null
+            if (i <= 113) aEmoteDefCache_5764 = null
         }
 
         @JvmStatic

@@ -139,7 +139,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             Class64_Sub3.aNpcDefinitionCache_5558!!.method1984(119.toByte(), 5)
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
-            ProjectionCameraTransform.aClass326_5764!!.method2603(5, 11)
+            ProjectionCameraTransform.aEmoteDefCache_5764!!.method2603(5, 11)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1409(5, -20721)
             CircleHitbox.aClass84_413!!.method819(74.toByte(), 5)
             HoverActionEntry.aSpriteStore_1813!!.method299(5, 16)

@@ -1,7 +1,7 @@
 /* Class326 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class326 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_4085: Class45?
     private var aClass60_4087: Class60? = Class60(64)
     fun method2600(i: Int, i_0_: Int): EmoteDefinition {

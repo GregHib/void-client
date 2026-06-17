@@ -957,7 +957,7 @@ class Class46 {
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1222(true)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1410(-27995)
-            ProjectionCameraTransform.aClass326_5764!!.method2602(0)
+            ProjectionCameraTransform.aEmoteDefCache_5764!!.method2602(0)
             CircleHitbox.aClass84_413!!.method816(false)
             HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1390(23)
