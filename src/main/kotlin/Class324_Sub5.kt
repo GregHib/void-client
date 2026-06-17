@@ -11,7 +11,7 @@ import jaggl.OpenGL.Companion.glTexGeni
 import jaggl.OpenGL.Companion.glTranslatef
 import jaggl.OpenGL.Companion.glVertex2i
 
-class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: OpenGlRenderer, fontDefinition: FontDefinition?, class207s: Array<Class207>, bool: Boolean) : Class324(aHa_Sub2_6509, fontDefinition) {
+class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: OpenGlRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : Class324(aHa_Sub2_6509, fontDefinition) {
     private val aClass61_6510: Class61
     private val aClass258_Sub3_Sub1_6511: Class258_Sub3_Sub1?
     private val aBoolean6512: Boolean
@@ -19,7 +19,7 @@ class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: OpenGlRender
     init {
         var i = 0
         for (i_0_ in 0..255) {
-            val class207 = class207s[i_0_]!!
+            val class207 = spriteImages[i_0_]!!
             if (class207.anInt2696 > i) i = class207.anInt2696
             if (class207.anInt2702 > i) i = class207.anInt2702
         }
@@ -27,7 +27,7 @@ class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: OpenGlRender
         if (bool) {
             val `is` = ByteArray(i_1_ * i_1_)
             for (i_2_ in 0..255) {
-                val class207 = class207s[i_2_]!!
+                val class207 = spriteImages[i_2_]!!
                 val i_3_ = class207.anInt2696
                 val i_4_ = class207.anInt2702
                 val i_5_ = i_2_ % 16 * i
@@ -53,7 +53,7 @@ class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: OpenGlRender
         } else {
             val `is` = IntArray(i_1_ * i_1_)
             for (i_15_ in 0..255) {
-                val class207 = class207s[i_15_]!!
+                val class207 = spriteImages[i_15_]!!
                 val is_16_ = class207.anIntArray2697
                 val is_17_ = class207.aByteArray2695
                 val is_18_ = class207.aByteArray2699
@@ -90,7 +90,7 @@ class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: OpenGlRender
         val f = (aClass258_Sub3_Sub1_6511.aFloat9937 / (aClass258_Sub3_Sub1_6511.anInt9940).toFloat())
         val f_30_ = (aClass258_Sub3_Sub1_6511.aFloat9938 / (aClass258_Sub3_Sub1_6511.anInt9939).toFloat())
         for (i_31_ in 0..255) {
-            val class207 = class207s[i_31_]!!
+            val class207 = spriteImages[i_31_]!!
             val i_32_ = class207.anInt2696
             val i_33_ = class207.anInt2702
             val i_34_ = class207.anInt2700

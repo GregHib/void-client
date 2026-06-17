@@ -46,11 +46,11 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: NativeR
             try {
                 if (OutputStream_Sub2.aAbstractModelRenderer_106 == null || MinimapFlagRenderer.aAbstractModelRenderer_1800 == null) {
                     if (Class21.aClass45_322!!.method421(false, Class231.anInt2996) && Class21.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)) {
-                        OutputStream_Sub2.aAbstractModelRenderer_106 = (var_renderer!!.method3691(Class207.method1521(Class21.aClass45_322!!, Class231.anInt2996, 0), true))
-                        val class207 = Class207.method1521(Class21.aClass45_322!!, Class348_Sub40_Sub16.anInt9231, 0)
-                        MinimapFlagRenderer.aAbstractModelRenderer_1800 = var_renderer.method3691(class207, true)
-                        class207!!.method1518()
-                        Class348_Sub5.aAbstractModelRenderer_6627 = var_renderer.method3691(class207, true)
+                        OutputStream_Sub2.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(Class21.aClass45_322!!, Class231.anInt2996, 0), true))
+                        val spriteImage = SpriteImage.method1521(Class21.aClass45_322!!, Class348_Sub40_Sub16.anInt9231, 0)
+                        MinimapFlagRenderer.aAbstractModelRenderer_1800 = var_renderer.method3691(spriteImage, true)
+                        spriteImage!!.method1518()
+                        Class348_Sub5.aAbstractModelRenderer_6627 = var_renderer.method3691(spriteImage, true)
                     } else var_renderer!!.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 shl 24 or Class264.anInt3376), 1)
                 }
                 anInt8709++

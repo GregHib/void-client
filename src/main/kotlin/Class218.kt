@@ -37,16 +37,16 @@ class Class218 {
         var abstractModelRenderer = this.aTextureDefinitionLoader_2851!!.aClass60_1976.method583(l, -87) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
         if (!this.aTextureDefinitionLoader_2851!!.aClass45_1965!!.method421(false, this.anInt2853)) return null
-        val class207 = Class207.method1521(this.aTextureDefinitionLoader_2851!!.aClass45_1965!!, this.anInt2853, 0)
-        if (class207 != null) {
-            class207.anInt2700 = 0
-            class207.anInt2698 = class207.anInt2700
-            class207.anInt2703 = class207.anInt2698
-            class207.anInt2701 = class207.anInt2703
-            if (bool) class207.method1514()
-            for (i_19_ in 0..<i) class207.method1520()
+        val spriteImage = SpriteImage.method1521(this.aTextureDefinitionLoader_2851!!.aClass45_1965!!, this.anInt2853, 0)
+        if (spriteImage != null) {
+            spriteImage.anInt2700 = 0
+            spriteImage.anInt2698 = spriteImage.anInt2700
+            spriteImage.anInt2703 = spriteImage.anInt2698
+            spriteImage.anInt2701 = spriteImage.anInt2703
+            if (bool) spriteImage.method1514()
+            for (i_19_ in 0..<i) spriteImage.method1520()
         }
-        abstractModelRenderer = var_renderer.method3691(class207, true)
+        abstractModelRenderer = var_renderer.method3691(spriteImage, true)
         if (abstractModelRenderer != null) this.aTextureDefinitionLoader_2851!!.aClass60_1976.method582(abstractModelRenderer, l, (-101).toByte())
         return abstractModelRenderer
     }

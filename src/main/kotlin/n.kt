@@ -2,25 +2,25 @@
 * Visit http://jode.sourceforge.net/
 * NativeFontRendererAlt
 */
-class n(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, class207s: Array<Class207>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : Class324(var_oa, fontDefinition), Interface19 {
+class n(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : Class324(var_oa, fontDefinition), Interface19 {
     var nativeid: Long = 0
 
     private external fun S(var_oa: oa?, var_ya: ya?, `is`: Array<ByteArray?>?, is_0_: IntArray?, is_1_: IntArray?, is_2_: IntArray?, is_3_: IntArray?, is_4_: IntArray?)
 
     init {
-        val `is` = arrayOfNulls<ByteArray>(class207s.size)
-        val is_5_ = IntArray(class207s.size)
-        val is_6_ = IntArray(class207s.size)
-        val is_7_ = IntArray(class207s.size)
-        val is_8_ = IntArray(class207s.size)
-        for (i in class207s.indices) {
-            `is`[i] = class207s[i]!!.aByteArray2699
-            is_5_[i] = class207s[i]!!.anInt2702
-            is_6_[i] = class207s[i]!!.anInt2696
-            is_7_[i] = class207s[i]!!.anInt2703
-            is_8_[i] = class207s[i]!!.anInt2700
+        val `is` = arrayOfNulls<ByteArray>(spriteImages.size)
+        val is_5_ = IntArray(spriteImages.size)
+        val is_6_ = IntArray(spriteImages.size)
+        val is_7_ = IntArray(spriteImages.size)
+        val is_8_ = IntArray(spriteImages.size)
+        for (i in spriteImages.indices) {
+            `is`[i] = spriteImages[i]!!.aByteArray2699
+            is_5_[i] = spriteImages[i]!!.anInt2702
+            is_6_[i] = spriteImages[i]!!.anInt2696
+            is_7_[i] = spriteImages[i]!!.anInt2703
+            is_8_[i] = spriteImages[i]!!.anInt2700
         }
-        S(var_oa, var_ya, `is`, class207s[0]!!.anIntArray2697, is_5_, is_6_, is_7_, is_8_)
+        S(var_oa, var_ya, `is`, spriteImages[0]!!.anIntArray2697, is_5_, is_6_, is_7_, is_8_)
     }
 
     external override fun w(bool: Boolean)

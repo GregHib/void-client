@@ -3,7 +3,7 @@ import kotlin.math.min
 /* Class324_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class324_Sub3 internal constructor(private var aHa_Sub1_6499: SoftwareRenderer, fontDefinition: FontDefinition?, class207s: Array<Class207>, `is`: IntArray, is_49_: IntArray) : Class324(aHa_Sub1_6499, fontDefinition) {
+class Class324_Sub3 internal constructor(private var aHa_Sub1_6499: SoftwareRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, `is`: IntArray, is_49_: IntArray) : Class324(aHa_Sub1_6499, fontDefinition) {
     private val anIntArray6496: IntArray
     private val anIntArray6497: IntArray
     private val anIntArray6498: IntArray
@@ -119,15 +119,15 @@ class Class324_Sub3 internal constructor(private var aHa_Sub1_6499: SoftwareRend
         aHa_Sub1_6499 = aHa_Sub1_6499
         anIntArray6500 = `is`
         anIntArray6497 = is_49_
-        aByteArrayArray6502 = arrayOfNulls<ByteArray>(class207s.size)
-        anIntArray6501 = IntArray(class207s.size)
-        anIntArray6498 = IntArray(class207s.size)
-        for (i in class207s.indices) {
-            aByteArrayArray6502[i] = class207s[i]!!.aByteArray2699
-            anIntArray6501[i] = class207s[i]!!.anInt2700
-            anIntArray6498[i] = class207s[i]!!.anInt2703
+        aByteArrayArray6502 = arrayOfNulls<ByteArray>(spriteImages.size)
+        anIntArray6501 = IntArray(spriteImages.size)
+        anIntArray6498 = IntArray(spriteImages.size)
+        for (i in spriteImages.indices) {
+            aByteArrayArray6502[i] = spriteImages[i]!!.aByteArray2699
+            anIntArray6501[i] = spriteImages[i]!!.anInt2700
+            anIntArray6498[i] = spriteImages[i]!!.anInt2703
         }
-        anIntArray6496 = class207s[0]!!.anIntArray2697
+        anIntArray6496 = spriteImages[0]!!.anIntArray2697
     }
 
     override fun method2578(c: Char, i: Int, i_50_: Int, i_51_: Int, bool: Boolean, var_sprite: Sprite?, i_52_: Int, i_53_: Int) {

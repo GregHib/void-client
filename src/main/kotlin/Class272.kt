@@ -54,16 +54,16 @@ abstract class Class272 {
                 Class239_Sub3.anInt5871 = i_7_
                 Class239_Sub27.aClass341_6128 = class341
                 Class86.anInt1479 = i
-                Class348_Sub7.aClass207_6643 = null
+                Class348_Sub7.aSpriteImage_6643 = null
                 Class295.anInt3762 = i_8_
-                Class348_Sub40_Sub1.aClass207_9090 = null
+                Class348_Sub40_Sub1.aSpriteImage_9090 = null
                 Class289.anInt3704 = i_3_
                 ConnectionStateRefs.anInt317 = i_5_
                 anInt3471++
                 Class269.anInt3451 = i_0_
                 OutputStream_Sub1.anInt98 = i_2_
                 Class290.anInt3712 = i_6_
-                ScriptCompilerThread.aClass207_1727 = null
+                ScriptCompilerThread.aSpriteImage_1727 = null
                 Class348_Sub32.anInt6938 = i_1_
                 Class359.method3490(true)
                 val i_9_ = -77 % ((i_4_ - 29) / 34)

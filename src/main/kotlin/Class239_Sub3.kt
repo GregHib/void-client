@@ -164,12 +164,12 @@ class Class239_Sub3 : Class239 {
                     return class352
                 }
                 val i_27_ = -118 / ((-33 - i_25_) / 44)
-                val class207s = Class207.method1523(Class39.aClass45_518!!, i)
-                if (class207s == null) return null
+                val spriteImages = SpriteImage.method1523(Class39.aClass45_518!!, i)
+                if (spriteImages == null) return null
                 val class143 = Class239_Sub10.method1766((-39).toByte(), i, TerrainTile.aClass45_4585!!)
                 if (class143 == null) return null
-                if (!bool) class352 = Class352(var_renderer!!.method3686(class143, class207s, true))
-                else class352 = Class352(var_renderer!!.method3686(class143, class207s, true), class143)
+                if (!bool) class352 = Class352(var_renderer!!.method3686(class143, spriteImages, true))
+                else class352 = Class352(var_renderer!!.method3686(class143, spriteImages, true), class143)
                 Class332.aClass60_4139!!.method582(class352, i.toLong(), (-109).toByte())
                 return class352
             } catch (runtimeexception: RuntimeException) {

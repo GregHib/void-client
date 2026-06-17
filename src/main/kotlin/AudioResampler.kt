@@ -157,9 +157,9 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
                 if (class321.anInt4000 != -1) {
                     var abstractModelRenderer = (Class34.aClass60_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
-                        val class207 = Class207.method1521(Class21.aClass45_322!!, class321.anInt4000, 0)
-                        if (class207 != null) {
-                            abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(class207, true)
+                        val spriteImage = SpriteImage.method1521(Class21.aClass45_322!!, class321.anInt4000, 0)
+                        if (spriteImage != null) {
+                            abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(spriteImage, true)
                             Class34.aClass60_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
                         }
                     }

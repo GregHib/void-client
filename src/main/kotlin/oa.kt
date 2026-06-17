@@ -73,9 +73,9 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    override fun method3691(class207: Class207?, bool: Boolean): AbstractModelRenderer {
-        val var_j = j(this, class207!!.anIntArray2697, class207.aByteArray2699, class207.aByteArray2695, 0, class207.anInt2702, class207.anInt2702, class207.anInt2696)
-        var_j.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
+    override fun method3691(spriteImage: SpriteImage?, bool: Boolean): AbstractModelRenderer {
+        val var_j = j(this, spriteImage!!.anIntArray2697, spriteImage.aByteArray2699, spriteImage.aByteArray2695, 0, spriteImage.anInt2702, spriteImage.anInt2702, spriteImage.anInt2696)
+        var_j.method985(spriteImage.anInt2703, spriteImage.anInt2700, spriteImage.anInt2698, spriteImage.anInt2701)
         return var_j
     }
 
@@ -105,21 +105,21 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    override fun method3686(fontDefinition: FontDefinition?, class207s: Array<Class207>?, bool: Boolean): Class324 {
-        val `is` = IntArray(class207s!!.size)
-        val is_60_ = IntArray(class207s.size)
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Class324 {
+        val `is` = IntArray(spriteImages!!.size)
+        val is_60_ = IntArray(spriteImages.size)
         var bool_61_ = false
-        for (i in class207s.indices) {
-            `is`[i] = class207s[i]!!.anInt2702
-            is_60_[i] = class207s[i]!!.anInt2696
-            if (class207s[i]!!.aByteArray2695 != null) bool_61_ = true
+        for (i in spriteImages.indices) {
+            `is`[i] = spriteImages[i]!!.anInt2702
+            is_60_[i] = spriteImages[i]!!.anInt2696
+            if (spriteImages[i]!!.aByteArray2695 != null) bool_61_ = true
         }
         if (bool) {
             require(!bool_61_) { "Cannot specify alpha with non-mono font unless someone writes it" }
-            return h(this, aYa5121, fontDefinition, class207s, null)
+            return h(this, aYa5121, fontDefinition, spriteImages, null)
         }
         require(!bool_61_) { "Cannot specify alpha with non-mono font unless someone writes it" }
-        return n(this, aYa5121, fontDefinition, class207s, null)
+        return n(this, aYa5121, fontDefinition, spriteImages, null)
     }
 
     private external fun wa(i: Int, i_62_: Int, i_63_: Int, i_64_: Int, i_65_: Int, i_66_: Int)

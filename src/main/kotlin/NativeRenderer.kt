@@ -1738,40 +1738,40 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3691(class207: Class207?, bool: Boolean): AbstractModelRenderer {
+    override fun method3691(spriteImage: SpriteImage?, bool: Boolean): AbstractModelRenderer {
         try {
             anInt7978++
             val abstractModelRenderer: AbstractModelRenderer
-            if (class207!!.anInt2702 == 0 || class207.anInt2696 == 0) abstractModelRenderer = this.method3662(1, IntArray(1), 94.toByte(), 0, 1, 1)!!
+            if (spriteImage!!.anInt2702 == 0 || spriteImage.anInt2696 == 0) abstractModelRenderer = this.method3662(1, IntArray(1), 94.toByte(), 0, 1, 1)!!
             else {
-                val `is` = IntArray((class207.anInt2702 * class207.anInt2696))
+                val `is` = IntArray((spriteImage.anInt2702 * spriteImage.anInt2696))
                 var i = 0
                 var i_211_ = 0
-                if (class207.aByteArray2695 == null) {
+                if (spriteImage.aByteArray2695 == null) {
                     var i_212_ = 0
-                    while ((i_212_ < class207.anInt2696)) {
-                        for (i_213_ in 0..<class207.anInt2702) {
-                            val i_214_ = (class207.anIntArray2697[0xff and (class207.aByteArray2699[i++]).toInt()])
+                    while ((i_212_ < spriteImage.anInt2696)) {
+                        for (i_213_ in 0..<spriteImage.anInt2702) {
+                            val i_214_ = (spriteImage.anIntArray2697[0xff and (spriteImage.aByteArray2699[i++]).toInt()])
                             `is`[i_211_++] = (if (i_214_ != 0) Class273.method2057(i_214_, -16777216) else 0)
                         }
                         i_212_++
                     }
                 } else {
-                    for (i_215_ in 0..<class207.anInt2696) {
+                    for (i_215_ in 0..<spriteImage.anInt2696) {
                         var i_216_ = 0
-                        while (class207.anInt2702 > i_216_) {
-                            `is`[i_211_++] = (Class273.method2057((class207.anIntArray2697[NpcSummaryDefinition.method1166((class207.aByteArray2699[i]).toInt(), 255)]), (class207.aByteArray2695!![i].toInt() shl 24)))
+                        while (spriteImage.anInt2702 > i_216_) {
+                            `is`[i_211_++] = (Class273.method2057((spriteImage.anIntArray2697[NpcSummaryDefinition.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)]), (spriteImage.aByteArray2695!![i].toInt() shl 24)))
                             i++
                             i_216_++
                         }
                     }
                 }
-                abstractModelRenderer = this.method3662(class207.anInt2702, `is`, 94.toByte(), 0, class207.anInt2702, class207.anInt2696)!!
+                abstractModelRenderer = this.method3662(spriteImage.anInt2702, `is`, 94.toByte(), 0, spriteImage.anInt2702, spriteImage.anInt2696)!!
             }
-            abstractModelRenderer.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
+            abstractModelRenderer.method985(spriteImage.anInt2703, spriteImage.anInt2700, spriteImage.anInt2698, spriteImage.anInt2701)
             return abstractModelRenderer
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.GF(" + (if (class207 != null) "{...}" else "null") + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -2294,12 +2294,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3939(i: Byte)
 
-    override fun method3686(fontDefinition: FontDefinition?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Class324 {
         try {
             anInt7952++
-            return Class324_Sub2(this, fontDefinition, class207s as Array<Class207>, bool)
+            return Class324_Sub2(this, fontDefinition, spriteImages as Array<SpriteImage>, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (class207s != null) "{...}" else "null") + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 

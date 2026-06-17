@@ -107,9 +107,9 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
                     val `object`: Any? = null
                     var abstractModelRenderer = (Class348_Sub1_Sub1.aClass60_8807!!.method583(i_9_.toLong(), 118) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
-                        val class207s = Class207.method1519(Class21.aClass45_322!!, i_9_, 0)
-                        if (class207s == null) return
-                        abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(class207s[0], true)
+                        val spriteImages = SpriteImage.method1519(Class21.aClass45_322!!, i_9_, 0)
+                        if (spriteImages == null) return
+                        abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(spriteImages[0], true)
                         Class348_Sub1_Sub1.aClass60_8807!!.method582(abstractModelRenderer, i_9_.toLong(), (-115).toByte())
                     }
                     method165(class318_sub1_sub3_sub3_8_!!.plane.toInt(), i_5_, 0, i_3_ shr 1, class318_sub1_sub3_sub3_8_.x, class318_sub1_sub3_sub3_8_.method2436(126.toByte()) * 256, class318_sub1_sub3_sub3_8_.y, 92.toByte(), i_6_ shr 1, i_2_)

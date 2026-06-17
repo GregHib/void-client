@@ -83,21 +83,21 @@ class Class31 {
         anInt446++
         val class45 = this.aClass219_438!!.aClass45_2873!!
         if (anInt421 >= 0 && this.aClass219_438!!.aClass60_2862.method583(anInt421.toLong(), 121) == null && class45.method421(false, anInt421)) {
-            val class207 = Class207.method1512(class45, anInt421)
-            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(class207, true), anInt421.toLong(), (-112).toByte())
+            val spriteImage = SpriteImage.method1512(class45, anInt421)
+            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(spriteImage, true), anInt421.toLong(), (-112).toByte())
         }
         if (anInt433 >= 0 && this.aClass219_438!!.aClass60_2862.method583(anInt433.toLong(), -99) == null && class45.method421(false, anInt433)) {
-            val class207 = Class207.method1512(class45, anInt433)
-            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(class207, true), anInt433.toLong(), (-128).toByte())
+            val spriteImage = SpriteImage.method1512(class45, anInt433)
+            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(spriteImage, true), anInt433.toLong(), (-128).toByte())
         }
         if (anInt429 >= 0 && this.aClass219_438!!.aClass60_2862.method583(anInt429.toLong(), 86) == null && class45.method421(false, anInt429)) {
-            val class207 = Class207.method1512(class45, anInt429)
-            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(class207, true), anInt429.toLong(), (-108).toByte())
+            val spriteImage = SpriteImage.method1512(class45, anInt429)
+            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(spriteImage, true), anInt429.toLong(), (-108).toByte())
         }
         if (i > -7) this.anInt434 = -14
         if (anInt439 >= 0 && this.aClass219_438!!.aClass60_2862.method583(anInt439.toLong(), -83) == null && class45.method421(false, anInt439)) {
-            val class207 = Class207.method1512(class45, anInt439)
-            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(class207, true), anInt439.toLong(), (-101).toByte())
+            val spriteImage = SpriteImage.method1512(class45, anInt439)
+            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(spriteImage, true), anInt439.toLong(), (-101).toByte())
         }
     }
 

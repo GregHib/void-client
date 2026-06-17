@@ -1,7 +1,7 @@
 /* Class207 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class207 {
+class SpriteImage {
     var aByteArray2695: ByteArray? = null
     @JvmField
     var anInt2696: Int = 0
@@ -334,27 +334,27 @@ class Class207 {
 
     companion object {
         @JvmStatic
-        fun method1512(class45: Class45, i: Int): Class207? {
+        fun method1512(class45: Class45, i: Int): SpriteImage? {
             val `is` = class45.method415(73.toByte(), i)
             if (`is` == null) return null
             return method1517(`is`)[0]
         }
 
-        private fun method1517(`is`: ByteArray): Array<Class207> {
+        private fun method1517(`is`: ByteArray): Array<SpriteImage> {
             val class348_sub49 = Class348_Sub49(`is`)
             class348_sub49.anInt7197 = `is`.size - 2
             val i = class348_sub49.readUnsignedShort(842397944)
-            val class207s: Array<Class207> = Array<Class207>(i) { Class207() }
+            val spriteImages: Array<SpriteImage> = Array<SpriteImage>(i) { SpriteImage() }
             class348_sub49.anInt7197 = `is`.size - 7 - i * 8
             val i_73_ = class348_sub49.readUnsignedShort(842397944)
             val i_74_ = class348_sub49.readUnsignedShort(842397944)
             val i_75_ = (class348_sub49.readUnsignedByte(255) and 0xff) + 1
-            for (i_76_ in 0..<i) class207s[i_76_].anInt2703 = class348_sub49.readUnsignedShort(842397944)
-            for (i_77_ in 0..<i) class207s[i_77_].anInt2700 = class348_sub49.readUnsignedShort(842397944)
-            for (i_78_ in 0..<i) class207s[i_78_].anInt2702 = class348_sub49.readUnsignedShort(842397944)
-            for (i_79_ in 0..<i) class207s[i_79_].anInt2696 = class348_sub49.readUnsignedShort(842397944)
+            for (i_76_ in 0..<i) spriteImages[i_76_].anInt2703 = class348_sub49.readUnsignedShort(842397944)
+            for (i_77_ in 0..<i) spriteImages[i_77_].anInt2700 = class348_sub49.readUnsignedShort(842397944)
+            for (i_78_ in 0..<i) spriteImages[i_78_].anInt2702 = class348_sub49.readUnsignedShort(842397944)
+            for (i_79_ in 0..<i) spriteImages[i_79_].anInt2696 = class348_sub49.readUnsignedShort(842397944)
             for (i_80_ in 0..<i) {
-                val class207 = class207s[i_80_]
+                val class207 = spriteImages[i_80_]
                 class207.anInt2698 = (i_73_ - class207.anInt2702 - class207.anInt2703)
                 class207.anInt2701 = (i_74_ - class207.anInt2696 - class207.anInt2700)
             }
@@ -364,10 +364,10 @@ class Class207 {
                 is_81_[i_82_] = class348_sub49.readMedium(-1)
                 if (is_81_[i_82_] == 0) is_81_[i_82_] = 1
             }
-            for (i_83_ in 0..<i) class207s[i_83_].anIntArray2697 = is_81_
+            for (i_83_ in 0..<i) spriteImages[i_83_].anIntArray2697 = is_81_
             class348_sub49.anInt7197 = 0
             for (i_84_ in 0..<i) {
-                val class207 = class207s[i_84_]
+                val class207 = spriteImages[i_84_]
                 val i_85_ = (class207.anInt2702 * class207.anInt2696)
                 class207.aByteArray2699 = ByteArray(i_85_)
                 val i_86_ = class348_sub49.readUnsignedByte(255)
@@ -402,25 +402,25 @@ class Class207 {
                     if (!bool) class207.aByteArray2695 = null
                 }
             }
-            return class207s
+            return spriteImages
         }
 
         @JvmStatic
-        fun method1519(class45: Class45, i: Int, i_105_: Int): Array<Class207>? {
+        fun method1519(class45: Class45, i: Int, i_105_: Int): Array<SpriteImage>? {
             val `is` = class45.method410(-1860, i, i_105_)
             if (`is` == null) return null
             return method1517(`is`)
         }
 
         @JvmStatic
-        fun method1521(class45: Class45, i: Int, i_112_: Int): Class207? {
+        fun method1521(class45: Class45, i: Int, i_112_: Int): SpriteImage? {
             val `is` = class45.method410(-1860, i, i_112_)
             if (`is` == null) return null
             return method1517(`is`)[0]
         }
 
         @JvmStatic
-        fun method1523(class45: Class45, i: Int): Array<Class207>? {
+        fun method1523(class45: Class45, i: Int): Array<SpriteImage>? {
             val `is` = class45.method415(73.toByte(), i)
             if (`is` == null) return null
             return method1517(`is`)

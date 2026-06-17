@@ -162,15 +162,15 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
         @JvmStatic
         fun method826(i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, var_renderer: Renderer) {
             if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9658 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9659 == null) && Class21.aClass45_322!!.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257) && Class21.aClass45_322!!.method421(false, Class313.anInt3937) && Class21.aClass45_322!!.method421(false, Class79.Companion.anInt1387)) {
-                val class207 = Class207.method1521(Class21.aClass45_322!!, Class313.anInt3937, 0)
-                Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = var_renderer.method3691(class207, true)
-                class207!!.method1518()
-                Class309.aAbstractModelRenderer_4808 = var_renderer.method3691(class207, true)
-                SpotAnimVector.aAbstractModelRenderer_2309 = (var_renderer.method3691(Class207.method1521(Class21.aClass45_322!!, Class318_Sub1_Sub3_Sub3.anInt10257, 0), true))
-                val class207_29_ = Class207.method1521(Class21.aClass45_322!!, Class79.Companion.anInt1387, 0)
-                Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = var_renderer.method3691(class207_29_, true)
-                class207_29_!!.method1518()
-                AbstractMenuEntry.aAbstractModelRenderer_1706 = var_renderer.method3691(class207_29_, true)
+                val spriteImage = SpriteImage.method1521(Class21.aClass45_322!!, Class313.anInt3937, 0)
+                Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = var_renderer.method3691(spriteImage, true)
+                spriteImage!!.method1518()
+                Class309.aAbstractModelRenderer_4808 = var_renderer.method3691(spriteImage, true)
+                SpotAnimVector.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(Class21.aClass45_322!!, Class318_Sub1_Sub3_Sub3.anInt10257, 0), true))
+                val spriteImage_29_ = SpriteImage.method1521(Class21.aClass45_322!!, Class79.Companion.anInt1387, 0)
+                Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = var_renderer.method3691(spriteImage_29_, true)
+                spriteImage_29_!!.method1518()
+                AbstractMenuEntry.aAbstractModelRenderer_1706 = var_renderer.method3691(spriteImage_29_, true)
             }
             anInt1454++
             if (SpotAnimVector.aAbstractModelRenderer_2309 != null && Class348_Sub42_Sub15.aAbstractModelRenderer_9658 != null && Class348_Sub42_Sub15.aAbstractModelRenderer_9659 != null) {

@@ -31,7 +31,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
         synchronized(aLinkedNodeListIterator_1730) {
             aLinkedNodeListIterator_1730.method1005(true, class348_sub42_sub16_sub2)
             anInt1734++
-            if (i > -100) aClass207_1727 = null
+            if (i > -100) aSpriteImage_1727 = null
             (aLinkedNodeListIterator_1730 as Object).notifyAll()
         }
     }
@@ -126,7 +126,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
         @JvmField
         var anInt1726: Int = 0
         @JvmField
-        var aClass207_1727: Class207? = null
+        var aSpriteImage_1727: SpriteImage? = null
         @JvmField
         var anInt1728: Int = 0
         @JvmField
@@ -143,7 +143,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
         var anInt1737: Int = 0
         @JvmStatic
         fun method1052(i: Byte) {
-            aClass207_1727 = null
+            aSpriteImage_1727 = null
             val i_1_ = 107 % ((i - -20) / 50)
         }
 

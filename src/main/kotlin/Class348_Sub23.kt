@@ -67,7 +67,7 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
                 if (string != null) {
                     Class348_Sub8.aRenderer6654!!.GA(0)
                     val class143 = method1819(WidgetDefinition.anInt235, 0, -117, SoftwareSpriteRaster.aClass45_1627!!)
-                    val class324 = (Class348_Sub8.aRenderer6654!!.method3686(class143, Class207.method1519(Class21.aClass45_322!!, WidgetDefinition.anInt235, 0), true))
+                    val class324 = (Class348_Sub8.aRenderer6654!!.method3686(class143, SpriteImage.method1519(Class21.aClass45_322!!, WidgetDefinition.anInt235, 0), true))
                     ScreenBorderFiller.method1170((-89).toByte())
                     Class362.method3511(true, class324, class143, string, 2, Class348_Sub8.aRenderer6654)
                 }
@@ -77,7 +77,7 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
                     var_renderer = SoftwareSpriteRaster.method958(true, 0, Class348_Sub40_Sub4.aRenderConfig9113, 0, Class305.aCanvas3869, SpriteLoadValidator.aClass45_4796)!!
                     var_renderer.GA(0)
                     val class143 = method1819(WidgetDefinition.anInt235, 0, -115, SoftwareSpriteRaster.aClass45_1627!!)
-                    val class324 = var_renderer.method3686(class143, Class207.method1519((Class21.aClass45_322!!), WidgetDefinition.anInt235, 0), true)
+                    val class324 = var_renderer.method3686(class143, SpriteImage.method1519((Class21.aClass45_322!!), WidgetDefinition.anInt235, 0), true)
                     ScreenBorderFiller.method1170((-107).toByte())
                     Class362.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
                 }
@@ -86,7 +86,7 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
                     if (string != null) {
                         var_renderer!!.GA(0)
                         val class143 = method1819(WidgetDefinition.anInt235, 0, -51, SoftwareSpriteRaster.aClass45_1627!!)
-                        val class324 = (var_renderer.method3686(class143, Class207.method1519(Class21.aClass45_322!!, WidgetDefinition.anInt235, 0), true))
+                        val class324 = (var_renderer.method3686(class143, SpriteImage.method1519(Class21.aClass45_322!!, WidgetDefinition.anInt235, 0), true))
                         ScreenBorderFiller.method1170((-26).toByte())
                         Class362.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
                     }

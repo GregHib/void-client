@@ -12,11 +12,11 @@ open class Class348_Sub40_Sub17 : Class348_Sub40(0, false) {
         if (bool != true) return true
         if (this.anIntArray9232 != null) return true
         if (anInt9243 >= 0) {
-            val class207 = (if (FloatCameraTransform.anInt5713 >= 0) Class207.method1521(aClass45_4286!!, FloatCameraTransform.anInt5713, anInt9243) else Class207.method1512(aClass45_4286!!, anInt9243))
-            class207!!.method1524()
-            this.anIntArray9232 = class207.method1516()
-            this.anInt9237 = class207.anInt2702
-            this.anInt9241 = class207.anInt2696
+            val spriteImage = (if (FloatCameraTransform.anInt5713 >= 0) SpriteImage.method1521(aClass45_4286!!, FloatCameraTransform.anInt5713, anInt9243) else SpriteImage.method1512(aClass45_4286!!, anInt9243))
+            spriteImage!!.method1524()
+            this.anIntArray9232 = spriteImage.method1516()
+            this.anInt9237 = spriteImage.anInt2702
+            this.anInt9241 = spriteImage.anInt2696
             return true
         }
         return false

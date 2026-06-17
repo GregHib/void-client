@@ -306,18 +306,18 @@ class Class46 {
         anInt767++
         var var_sprite = Class239_Sub24.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
         if (var_sprite != null) return var_sprite
-        val class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
-        if (class207 == null) return null
-        val i_10_ = (class207.anInt2703 + (class207.anInt2702 + class207.anInt2698))
-        val i_11_ = (class207.anInt2700 + (class207.anInt2696 + class207.anInt2701))
+        val spriteImage = SpriteImage.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
+        if (spriteImage == null) return null
+        val i_10_ = (spriteImage.anInt2703 + (spriteImage.anInt2702 + spriteImage.anInt2698))
+        val i_11_ = (spriteImage.anInt2700 + (spriteImage.anInt2696 + spriteImage.anInt2701))
         this.anIntArray772 = IntArray(i_11_)
         this.anIntArray677 = IntArray(i_11_)
         var i_12_ = 0
-        while ((i_12_ < class207.anInt2696)) {
+        while ((i_12_ < spriteImage.anInt2696)) {
             var i_13_ = 0
             var i_14_ = 0
-            while ((i_14_ < class207.anInt2702)) {
-                if ((class207.aByteArray2699[class207.anInt2702 * i_12_ + i_14_]).toInt() != 0) {
+            while ((i_14_ < spriteImage.anInt2702)) {
+                if ((spriteImage.aByteArray2699[spriteImage.anInt2702 * i_12_ + i_14_]).toInt() != 0) {
                     i_13_ = i_14_
                     break
                 }
@@ -325,15 +325,15 @@ class Class46 {
             }
             var i_15_ = i_10_
             var i_16_ = i_13_
-            while ((i_16_ < class207.anInt2702)) {
-                if ((class207.aByteArray2699[class207.anInt2702 * i_12_ + i_16_]).toInt() == 0) {
+            while ((i_16_ < spriteImage.anInt2702)) {
+                if ((spriteImage.aByteArray2699[spriteImage.anInt2702 * i_12_ + i_16_]).toInt() == 0) {
                     i_15_ = i_16_
                     break
                 }
                 i_16_++
             }
-            this.anIntArray677!![(class207.anInt2700 + i_12_)] = class207.anInt2703 + i_13_
-            this.anIntArray772!![(i_12_ + class207.anInt2700)] = i_15_ + -i_13_
+            this.anIntArray677!![(spriteImage.anInt2700 + i_12_)] = spriteImage.anInt2703 + i_13_
+            this.anIntArray772!![(i_12_ + spriteImage.anInt2700)] = i_15_ + -i_13_
             i_12_++
         }
         var_sprite = var_renderer.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772)
@@ -810,19 +810,19 @@ class Class46 {
         var abstractModelRenderer = Class351.aClass60_4327!!.method583(l, -71) as AbstractModelRenderer?
         if (i > -27) method434(true)
         if (abstractModelRenderer != null) return abstractModelRenderer
-        val class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
-        if (class207 == null) {
+        val spriteImage = SpriteImage.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
+        if (spriteImage == null) {
             Class348_Sub42_Sub13.aBoolean9616 = true
             return null
         }
-        if (this.aBoolean790) class207.method1514()
-        if (this.aBoolean735) class207.method1518()
-        if (this.anInt672 > 0) class207.method1513(this.anInt672)
-        else if (this.anInt809 != 0) class207.method1513(1)
-        if (this.anInt672 >= 1) class207.method1515(1)
-        if (this.anInt672 >= 2) class207.method1515(16777215)
-        if (this.anInt809 != 0) class207.method1511(0xffffff.inv() or this.anInt809)
-        abstractModelRenderer = var_renderer.method3691(class207, true)
+        if (this.aBoolean790) spriteImage.method1514()
+        if (this.aBoolean735) spriteImage.method1518()
+        if (this.anInt672 > 0) spriteImage.method1513(this.anInt672)
+        else if (this.anInt809 != 0) spriteImage.method1513(1)
+        if (this.anInt672 >= 1) spriteImage.method1515(1)
+        if (this.anInt672 >= 2) spriteImage.method1515(16777215)
+        if (this.anInt809 != 0) spriteImage.method1511(0xffffff.inv() or this.anInt809)
+        abstractModelRenderer = var_renderer.method3691(spriteImage, true)
         Class351.aClass60_4327!!.method580(31902, abstractModelRenderer, l, (abstractModelRenderer!!.method971() * abstractModelRenderer.method969() * 4))
         return abstractModelRenderer
     }

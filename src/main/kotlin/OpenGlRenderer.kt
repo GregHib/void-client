@@ -870,12 +870,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7726++
     }
 
-    override fun method3686(fontDefinition: FontDefinition?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Class324 {
         try {
             anInt7574++
-            return Class324_Sub5(this, fontDefinition, class207s!!, bool)
+            return Class324_Sub5(this, fontDefinition, spriteImages!!, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (class207s != null) "{...}" else "null") + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -2837,18 +2837,18 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         glFinish()
     }
 
-    override fun method3691(class207: Class207?, bool: Boolean): AbstractModelRenderer {
+    override fun method3691(spriteImage: SpriteImage?, bool: Boolean): AbstractModelRenderer {
         try {
             anInt7657++
-            val `is` = IntArray((class207!!.anInt2702 * class207.anInt2696))
+            val `is` = IntArray((spriteImage!!.anInt2702 * spriteImage.anInt2696))
             var i = 0
             var i_467_ = 0
-            if (class207.aByteArray2695 == null) {
+            if (spriteImage.aByteArray2695 == null) {
                 var i_470_ = 0
-                while (class207.anInt2696 > i_470_) {
+                while (spriteImage.anInt2696 > i_470_) {
                     var i_471_ = 0
-                    while ((class207.anInt2702 > i_471_)) {
-                        val i_472_ = (class207.anIntArray2697[0xff and (class207.aByteArray2699[i++]).toInt()])
+                    while ((spriteImage.anInt2702 > i_471_)) {
+                        val i_472_ = (spriteImage.anIntArray2697[0xff and (spriteImage.aByteArray2699[i++]).toInt()])
                         `is`[i_467_++] = if (i_472_ == 0) 0 else Class273.method2057(-16777216, i_472_)
                         i_471_++
                     }
@@ -2856,21 +2856,21 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 }
             } else {
                 var i_468_ = 0
-                while (class207.anInt2696 > i_468_) {
+                while (spriteImage.anInt2696 > i_468_) {
                     var i_469_ = 0
-                    while ((i_469_ < class207.anInt2702)) {
-                        `is`[i_467_++] = (Class273.method2057((class207.aByteArray2695!![i].toInt() shl 24), (class207.anIntArray2697[NpcSummaryDefinition.method1166((class207.aByteArray2699[i]).toInt(), 255)])))
+                    while ((i_469_ < spriteImage.anInt2702)) {
+                        `is`[i_467_++] = (Class273.method2057((spriteImage.aByteArray2695!![i].toInt() shl 24), (spriteImage.anIntArray2697[NpcSummaryDefinition.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)])))
                         i++
                         i_469_++
                     }
                     i_468_++
                 }
             }
-            val class105 = this.method3662(class207.anInt2702, `is`, 94.toByte(), 0, class207.anInt2702, class207.anInt2696)
-            class105.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
+            val class105 = this.method3662(spriteImage.anInt2702, `is`, 94.toByte(), 0, spriteImage.anInt2702, spriteImage.anInt2696)
+            class105.method985(spriteImage.anInt2703, spriteImage.anInt2700, spriteImage.anInt2698, spriteImage.anInt2701)
             return class105
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.GF(" + (if (class207 != null) "{...}" else "null") + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -3593,12 +3593,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             if (i_324_ != -1) {
                                 var abstractModelRendererS_326_ = ((Class353.aClass60_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
                                 if (abstractModelRendererS_326_ == null) {
-                                    val class207s = Class207.method1519(Class21.aClass45_322!!, i_324_, 0)
-                                    if (class207s != null) {
-                                        abstractModelRendererS_326_ = arrayOfNulls<AbstractModelRenderer>(class207s.size)
+                                    val spriteImages = SpriteImage.method1519(Class21.aClass45_322!!, i_324_, 0)
+                                    if (spriteImages != null) {
+                                        abstractModelRendererS_326_ = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                         var i_327_ = 0
-                                        while (class207s.size > i_327_) {
-                                            abstractModelRendererS_326_[i_327_] = (Class348_Sub8.aRenderer6654!!.method3691(class207s[i_327_], true))
+                                        while (spriteImages.size > i_327_) {
+                                            abstractModelRendererS_326_[i_327_] = (Class348_Sub8.aRenderer6654!!.method3691(spriteImages[i_327_], true))
                                             i_327_++
                                         }
                                         Class353.aClass60_4346!!.method582(abstractModelRendererS_326_, i_324_.toLong(), (-94).toByte())
@@ -3633,12 +3633,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 if (i_333_ != -1) {
                                     var abstractModelRenderers = (Class328_Sub2.aClass60_6517!!.method583(i_333_.toLong(), -45) as? Array<AbstractModelRenderer?>)
                                     if (abstractModelRenderers == null) {
-                                        val class207s = Class207.method1519((Class21.aClass45_322!!), i_333_, 0)
-                                        if (class207s != null) {
-                                            abstractModelRenderers = arrayOfNulls<AbstractModelRenderer>(class207s.size)
+                                        val spriteImages = SpriteImage.method1519((Class21.aClass45_322!!), i_333_, 0)
+                                        if (spriteImages != null) {
+                                            abstractModelRenderers = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                             var i_334_ = 0
-                                            while ((class207s.size > i_334_)) {
-                                                abstractModelRenderers[i_334_] = (Class348_Sub8.aRenderer6654!!.method3691(class207s[i_334_], true))
+                                            while ((spriteImages.size > i_334_)) {
+                                                abstractModelRenderers[i_334_] = (Class348_Sub8.aRenderer6654!!.method3691(spriteImages[i_334_], true))
                                                 i_334_++
                                             }
                                             Class328_Sub2.aClass60_6517!!.method582(abstractModelRenderers, i_333_.toLong(), (-101).toByte())

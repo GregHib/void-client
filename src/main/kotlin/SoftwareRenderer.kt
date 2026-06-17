@@ -1027,21 +1027,21 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         class109.aBoolean1669 = true
     }
 
-    override fun method3686(fontDefinition: FontDefinition?, class207s: Array<Class207>?, bool: Boolean): Class324 {
-        val `is` = IntArray(class207s!!.size)
-        val is_283_ = IntArray(class207s.size)
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Class324 {
+        val `is` = IntArray(spriteImages!!.size)
+        val is_283_ = IntArray(spriteImages.size)
         var bool_284_ = false
-        for (i in class207s.indices) {
-            `is`[i] = class207s[i]!!.anInt2702
-            is_283_[i] = class207s[i]!!.anInt2696
-            if (class207s[i]!!.aByteArray2695 != null) bool_284_ = true
+        for (i in spriteImages.indices) {
+            `is`[i] = spriteImages[i]!!.anInt2702
+            is_283_[i] = spriteImages[i]!!.anInt2696
+            if (spriteImages[i]!!.aByteArray2695 != null) bool_284_ = true
         }
         if (bool) {
-            if (bool_284_) return Class324_Sub4(this, fontDefinition, class207s, `is`, is_283_)
-            return Class324_Sub1(this, fontDefinition, class207s, `is`, is_283_)
+            if (bool_284_) return Class324_Sub4(this, fontDefinition, spriteImages, `is`, is_283_)
+            return Class324_Sub1(this, fontDefinition, spriteImages, `is`, is_283_)
         }
         require(!bool_284_) { "" }
-        return Class324_Sub3(this, fontDefinition, class207s, `is`, is_283_)
+        return Class324_Sub3(this, fontDefinition, spriteImages, `is`, is_283_)
     }
 
     override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {
@@ -1601,13 +1601,13 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return SoftwareRgbSpriteRenderer(this, `is`!!, i, i_422_, i_423_, i_424_, bool)
     }
 
-    override fun method3691(class207: Class207?, bool: Boolean): AbstractModelRenderer {
-        val `is` = class207!!.anIntArray2697
-        val is_430_ = class207.aByteArray2699
-        val i = class207.anInt2702
-        val i_431_ = class207.anInt2696
+    override fun method3691(spriteImage: SpriteImage?, bool: Boolean): AbstractModelRenderer {
+        val `is` = spriteImage!!.anIntArray2697
+        val is_430_ = spriteImage.aByteArray2699
+        val i = spriteImage.anInt2702
+        val i_431_ = spriteImage.anInt2696
         val class105_sub3: SoftwareModelRenderer
-        if (bool && class207.aByteArray2695 == null) {
+        if (bool && spriteImage.aByteArray2695 == null) {
             val is_432_ = IntArray(`is`.size)
             val is_433_ = ByteArray(i * i_431_)
             for (i_434_ in 0..<i_431_) {
@@ -1618,7 +1618,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             class105_sub3 = SoftwarePalettedSpriteRenderer(this, is_433_, is_432_, i, i_431_)
         } else {
             val is_438_ = IntArray(i * i_431_)
-            val is_439_ = class207.aByteArray2695
+            val is_439_ = spriteImage.aByteArray2695
             if (is_439_ == null) {
                 for (i_443_ in 0..<i_431_) {
                     val i_444_ = i_443_ * i
@@ -1636,7 +1636,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
                 class105_sub3 = SoftwareAlphaSpriteRenderer(this, is_438_, i, i_431_)
             }
         }
-        class105_sub3.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
+        class105_sub3.method985(spriteImage.anInt2703, spriteImage.anInt2700, spriteImage.anInt2698, spriteImage.anInt2701)
         return class105_sub3
     }
 

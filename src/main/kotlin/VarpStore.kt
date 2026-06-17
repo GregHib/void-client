@@ -168,7 +168,7 @@ class VarpStore : Interface17 {
             while ((i_21_ < Class348_Sub1.anIntArray6547!!.size)) {
                 val i_22_ = Class348_Sub1.anIntArray6547!![i_21_]
                 val class143 = Class239_Sub10.method1766((-86).toByte(), i_22_, TerrainTile.aClass45_4585!!)
-                val class324 = var_renderer.method3686(class143, Class207.method1523(Class39.aClass45_518!!, i_22_), true)
+                val class324 = var_renderer.method3686(class143, SpriteImage.method1523(Class39.aClass45_518!!, i_22_), true)
                 LoadingScreenState.aClass352Array2636!![i_21_] = Class352(class324, class143)
                 i_21_++
             }

@@ -247,101 +247,101 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         fun method1933(class45: Class45?, var_renderer: Renderer?, bool: Boolean) {
             try {
                 anInt3279++
-                var class207s: Array<Class207>? = Class207.method1519(class45!!, Class348_Sub22.anInt6862, 0)
-                HostPingThread.aAbstractModelRendererArray2260 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                var spriteImages: Array<SpriteImage>? = SpriteImage.method1519(class45!!, Class348_Sub22.anInt6862, 0)
+                HostPingThread.aAbstractModelRendererArray2260 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
-                    while (class207s.size > i) {
-                        HostPingThread.aAbstractModelRendererArray2260!![i] = var_renderer!!.method3691(class207s[i], true)
+                    while (spriteImages.size > i) {
+                        HostPingThread.aAbstractModelRendererArray2260!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, DualMaterialContainer.anInt1639, 0)
-                Class348_Sub45.aAbstractModelRendererArray7107 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                spriteImages = SpriteImage.method1519(class45, DualMaterialContainer.anInt1639, 0)
+                Class348_Sub45.aAbstractModelRendererArray7107 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
-                    while (class207s.size > i) {
-                        Class348_Sub45.aAbstractModelRendererArray7107!![i] = var_renderer!!.method3691(class207s[i], true)
+                    while (spriteImages.size > i) {
+                        Class348_Sub45.aAbstractModelRendererArray7107!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, Class373_Sub2.anInt7429, 0)
-                Class239_Sub2.aAbstractModelRendererArray5857 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                spriteImages = SpriteImage.method1519(class45, Class373_Sub2.anInt7429, 0)
+                Class239_Sub2.aAbstractModelRendererArray5857 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
-                    while (class207s.size > i) {
-                        Class239_Sub2.aAbstractModelRendererArray5857!![i] = var_renderer!!.method3691(class207s[i], true)
+                    while (spriteImages.size > i) {
+                        Class239_Sub2.aAbstractModelRendererArray5857!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, Renderer.anInt4562, 0)
-                Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                spriteImages = SpriteImage.method1519(class45, Renderer.anInt4562, 0)
+                Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
-                    while (class207s.size > i) {
-                        Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959!![i] = var_renderer!!.method3691(class207s[i], true)
+                    while (spriteImages.size > i) {
+                        Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, Class82.anInt1435, 0)
-                Class264.aAbstractModelRendererArray3378 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                spriteImages = SpriteImage.method1519(class45, Class82.anInt1435, 0)
+                Class264.aAbstractModelRendererArray3378 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
-                    while (class207s.size > i) {
-                        Class264.aAbstractModelRendererArray3378!![i] = var_renderer!!.method3691(class207s[i], true)
+                    while (spriteImages.size > i) {
+                        Class264.aAbstractModelRendererArray3378!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, OverlayColorTable.anInt1756, 0)
-                Class239_Sub9.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
-                for (i in class207s.indices) Class239_Sub9.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(class207s[i], true)
-                class207s = Class207.method1519(class45, Class291.anInt3739, 0)
-                Class59_Sub1.aAbstractModelRendererArray5294 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                spriteImages = SpriteImage.method1519(class45, OverlayColorTable.anInt1756, 0)
+                Class239_Sub9.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                for (i in spriteImages.indices) Class239_Sub9.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                spriteImages = SpriteImage.method1519(class45, Class291.anInt3739, 0)
+                Class59_Sub1.aAbstractModelRendererArray5294 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
-                    while (class207s.size > i) {
-                        Class59_Sub1.aAbstractModelRendererArray5294!![i] = var_renderer!!.method3691(class207s[i], true)
+                    while (spriteImages.size > i) {
+                        Class59_Sub1.aAbstractModelRendererArray5294!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, Class86.anInt1481, 0)
-                Class25.aAbstractModelRendererArray367 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                spriteImages = SpriteImage.method1519(class45, Class86.anInt1481, 0)
+                Class25.aAbstractModelRendererArray367 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
-                    while (class207s.size > i) {
-                        Class25.aAbstractModelRendererArray367!![i] = var_renderer!!.method3691(class207s[i], true)
+                    while (spriteImages.size > i) {
+                        Class25.aAbstractModelRendererArray367!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, Class239_Sub10.anInt5948, 0)
-                Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
-                for (i in class207s.indices) Class348_Sub40_Sub37.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(class207s[i], true)
-                class207s = Class207.method1519(class45, CameraNodeList.anInt1742, 0)
-                Class348_Sub12.aAbstractModelRendererArray6742 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                spriteImages = SpriteImage.method1519(class45, Class239_Sub10.anInt5948, 0)
+                Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                for (i in spriteImages.indices) Class348_Sub40_Sub37.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                spriteImages = SpriteImage.method1519(class45, CameraNodeList.anInt1742, 0)
+                Class348_Sub12.aAbstractModelRendererArray6742 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
-                    while (class207s.size > i) {
-                        Class348_Sub12.aAbstractModelRendererArray6742!![i] = var_renderer!!.method3691(class207s[i], true)
+                    while (spriteImages.size > i) {
+                        Class348_Sub12.aAbstractModelRendererArray6742!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, Class364.anInt4469, 0)
-                Class240.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
-                for (i in class207s.indices) Class240.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(class207s[i], true)
-                class207s = Class207.method1519(class45, Class348_Sub40_Sub38.anInt9473, 0)
-                CameraNodeList.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                spriteImages = SpriteImage.method1519(class45, Class364.anInt4469, 0)
+                Class240.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                for (i in spriteImages.indices) Class240.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                spriteImages = SpriteImage.method1519(class45, Class348_Sub40_Sub38.anInt9473, 0)
+                CameraNodeList.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
-                    while (class207s.size > i) {
-                        CameraNodeList.aAbstractModelRendererArray1744!![i] = var_renderer!!.method3691(class207s[i], true)
+                    while (spriteImages.size > i) {
+                        CameraNodeList.aAbstractModelRendererArray1744!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
-                Class79.aAbstractModelRenderer_1365 = var_renderer!!.method3691(Class207.method1521(class45, Class52.anInt4895, 0), bool)
-                Class239_Sub24.aAbstractModelRenderer_6097 = var_renderer.method3691(Class207.method1521(class45, (PerlinTextureProvider.anInt5814), 0), true)
-                class207s = Class207.method1519(class45, Class5_Sub3.anInt8370, 0)
-                ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
-                for (i in class207s.indices) ScriptResources.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(class207s[i], true)
+                Class79.aAbstractModelRenderer_1365 = var_renderer!!.method3691(SpriteImage.method1521(class45, Class52.anInt4895, 0), bool)
+                Class239_Sub24.aAbstractModelRenderer_6097 = var_renderer.method3691(SpriteImage.method1521(class45, (PerlinTextureProvider.anInt5814), 0), true)
+                spriteImages = SpriteImage.method1519(class45, Class5_Sub3.anInt8370, 0)
+                ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                for (i in spriteImages.indices) ScriptResources.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(spriteImages[i], true)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ub.N(" + (if (class45 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
             }

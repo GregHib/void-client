@@ -2,21 +2,21 @@
 * Visit http://jode.sourceforge.net/
 * NativeFontRenderer
 */
-class h(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, class207s: Array<Class207>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : Class324(var_oa, fontDefinition), Interface19 {
+class h(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : Class324(var_oa, fontDefinition), Interface19 {
     var nativeid: Long = 0
 
     init {
-        val `is` = arrayOfNulls<ByteArray>(class207s.size)
-        val is_0_ = IntArray(class207s.size)
-        val is_1_ = IntArray(class207s.size)
-        val is_2_ = IntArray(class207s.size)
-        val is_3_ = IntArray(class207s.size)
-        for (i in class207s.indices) {
-            `is`[i] = class207s[i]!!.aByteArray2699
-            is_0_[i] = class207s[i]!!.anInt2702
-            is_1_[i] = class207s[i]!!.anInt2696
-            is_2_[i] = class207s[i]!!.anInt2703
-            is_3_[i] = class207s[i]!!.anInt2700
+        val `is` = arrayOfNulls<ByteArray>(spriteImages.size)
+        val is_0_ = IntArray(spriteImages.size)
+        val is_1_ = IntArray(spriteImages.size)
+        val is_2_ = IntArray(spriteImages.size)
+        val is_3_ = IntArray(spriteImages.size)
+        for (i in spriteImages.indices) {
+            `is`[i] = spriteImages[i]!!.aByteArray2699
+            is_0_[i] = spriteImages[i]!!.anInt2702
+            is_1_[i] = spriteImages[i]!!.anInt2696
+            is_2_[i] = spriteImages[i]!!.anInt2703
+            is_3_[i] = spriteImages[i]!!.anInt2700
         }
         JA(var_oa, var_ya, `is`, is_0_, is_1_, is_2_, is_3_)
     }

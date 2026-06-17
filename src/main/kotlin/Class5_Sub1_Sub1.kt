@@ -5,7 +5,7 @@ import IndexedSprite.Companion.method163
 */
 class Class5_Sub1_Sub1 internal constructor(class45: Class45, class45_0_: Class45, class369_sub3_sub1: Class369_Sub3_Sub1) : Class5_Sub1(class45, class45_0_, class369_sub3_sub1) {
     override fun method186(i: Int, i_1_: Int, i_2_: Byte, i_3_: Int, i_4_: Int) {
-        if (i_2_ <= 21) aClass207Array9929 = null
+        if (i_2_ <= 21) aSpriteImageArray9929 = null
         anInt9928++
         val i_5_ = this.aAbstractModelRenderer_8350!!.method966()
         val i_6_ = ((this.aClass369_4635 as Class369_Sub3_Sub1).anInt10177 * method163(512) / 10 % i_5_)
@@ -16,7 +16,7 @@ class Class5_Sub1_Sub1 internal constructor(class45: Class45, class45_0_: Class4
         @JvmField
         var anInt9928: Int = 0
         @JvmField
-        var aClass207Array9929: Array<Class207>? = null
+        var aSpriteImageArray9929: Array<SpriteImage>? = null
         @JvmField
         var anInt9930: Int = 0
         @JvmField
@@ -27,7 +27,7 @@ class Class5_Sub1_Sub1 internal constructor(class45: Class45, class45_0_: Class4
         @JvmStatic
         fun method190(i: Byte) {
             if (i < 23) anIntArray9932 = null
-            aClass207Array9929 = null
+            aSpriteImageArray9929 = null
             aClass262_9931 = null
             anIntArray9932 = null
         }

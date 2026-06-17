@@ -1,6 +1,6 @@
 import jaclib.memory.Stream.Companion.c
 
-class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRenderer, fontDefinition: FontDefinition?, class207s: Array<Class207>, bool: Boolean) : Class324(aHa_Sub3_6494, fontDefinition) {
+class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : Class324(aHa_Sub3_6494, fontDefinition) {
     private val anInterface18_Impl3_6492: Interface18_Impl3?
     private val aBoolean6493: Boolean
     private val anInterface5_Impl1_6495: Interface5_Impl1
@@ -12,7 +12,7 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRender
     init {
         var i = 0
         for (i_4_ in 0..255) {
-            val class207 = class207s[i_4_]
+            val class207 = spriteImages[i_4_]
             if (class207.anInt2696 > i) i = class207.anInt2696
             if (class207.anInt2702 > i) i = class207.anInt2702
         }
@@ -20,7 +20,7 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRender
         if (bool) {
             val `is` = ByteArray(i_5_ * i_5_)
             for (i_6_ in 0..255) {
-                val class207 = class207s[i_6_]
+                val class207 = spriteImages[i_6_]
                 val i_7_ = class207.anInt2696
                 val i_8_ = class207.anInt2702
                 val i_9_ = i_6_ % 16 * i
@@ -50,7 +50,7 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRender
         } else {
             val `is` = IntArray(i_5_ * i_5_)
             for (i_21_ in 0..255) {
-                val class207 = class207s[i_21_]
+                val class207 = spriteImages[i_21_]
                 val is_22_ = class207.anIntArray2697
                 val is_23_ = class207.aByteArray2695
                 val is_24_ = class207.aByteArray2699
@@ -92,7 +92,7 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRender
                 val f = (anInterface18_Impl3_6492.method67(i_5_.toFloat(), 96) / i_5_.toFloat())
                 val f_37_ = (anInterface18_Impl3_6492.method71((-45).toByte(), i_5_.toFloat()) / i_5_.toFloat())
                 for (i_38_ in 0..255) {
-                    val class207 = class207s[i_38_]
+                    val class207 = spriteImages[i_38_]
                     val i_39_ = class207.anInt2696
                     val i_40_ = class207.anInt2702
                     val i_41_ = class207.anInt2700
