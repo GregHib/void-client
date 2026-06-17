@@ -1,4 +1,4 @@
-import Class367.Companion.method3529
+import AbstractRenderPass.Companion.method3529
 import IndexedSprite.Companion.method165
 
 /* Class191 - Decompiled by JODE

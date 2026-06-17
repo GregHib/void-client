@@ -1,6 +1,6 @@
 import jagdx.IDirect3DVertexShader
 
-class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, class45: Class45?) : Class367(aClass378_7328) {
+class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, class45: Class45?) : AbstractRenderPass(aClass378_7328) {
     private var aBoolean7326 = false
     private val aBoolean7329: Boolean
     private var anIDirect3DVertexShader7330: IDirect3DVertexShader? = null

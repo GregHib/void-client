@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 
-class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, normalMapGenerator: NormalMapGenerator?) : Class367(class377) {
+class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(class377) {
     private val aTextureHandle_7293: TextureHandle?
     private val aNormalMapGenerator_7294: NormalMapGenerator?
     private var aClass377_7296: Class377? = null

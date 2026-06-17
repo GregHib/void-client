@@ -603,7 +603,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         /* empty */
     }
 
-    override fun method3832(i: Int, i_64_: Byte): Class367? {
+    override fun method3832(i: Int, i_64_: Byte): AbstractRenderPass? {
         if (i_64_ >= -57) aClass209Array9795 = null
         val i_65_ = i
         while_234_@ do {

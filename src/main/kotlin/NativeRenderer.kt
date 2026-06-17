@@ -110,11 +110,11 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private var aGroundDecorRenderer_8136: GroundDecorRenderer? = null
     private val aClass372_8137: Class372?
     var anInt8138: Int = 0
-    private val aClass367Array8139: Array<Class367?>
+    private val aAbstractRenderPassArray8139: Array<AbstractRenderPass?>
     private var aFloatArray8140: FloatArray?
     var aBoolean8141: Boolean = true
     private var aFloatArray8142: FloatArray?
-    private var aClass367_8143: Class367? = null
+    private var aAbstractRenderPass_8143: AbstractRenderPass? = null
     var anInt8144: Int
     var aBoolean8145: Boolean = false
     var anInt8146: Int = 0
@@ -323,10 +323,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     }
                 } else method3879(-8629)
                 method3875(i_23_.toInt(), bool_20_, bool, i_25_.toInt(), i_24_, -103)
-                if (aClass367_8143 == null) {
+                if (aAbstractRenderPass_8143 == null) {
                     method3850((-86).toByte(), interface18_impl3)
                     method3923(true, i_22_)
-                } else aClass367_8143!!.method3527(i_22_, interface18_impl3, -16776)
+                } else aAbstractRenderPass_8143!!.method3527(i_22_, interface18_impl3, -16776)
                 aBoolean8153 = this.aBoolean8160
                 anInt8104 = i
             }
@@ -640,7 +640,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         if (HintIconState.aSingletonMarker_2372 == this.aSingletonMarker_8184) method3929(true)
     }
 
-    open fun method3832(i: Int, i_61_: Byte): Class367? {
+    open fun method3832(i: Int, i_61_: Byte): AbstractRenderPass? {
         if (i_61_ > -57) method3817(22, -65)
         anInt7969++
         val i_62_ = i
@@ -712,7 +712,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aBoolean8121 = false
         method3901((-48).toByte())
         if (i == 1) {
-            if (aClass367_8143 != null) aClass367_8143!!.method3523(12.toByte())
+            if (aAbstractRenderPass_8143 != null) aAbstractRenderPass_8143!!.method3523(12.toByte())
         }
     }
 
@@ -968,7 +968,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     private fun method3856(i: Byte) {
         anInt8044++
-        if (aClass367_8143 != null) aClass367_8143!!.method3522(-16252)
+        if (aAbstractRenderPass_8143 != null) aAbstractRenderPass_8143!!.method3522(-16252)
         method3851(25644)
         if (i <= 56) aBoolean8176 = false
     }
@@ -1081,7 +1081,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     override fun method3639(): Boolean {
         anInt8073++
-        return aClass367Array8139[3]!!.method3530(-78)
+        return aAbstractRenderPassArray8139[3]!!.method3530(-78)
     }
 
     fun method3867(f: Float, i: Int) {
@@ -1191,20 +1191,20 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
         if (i_131_ != 0 && bool) i_131_ = i_131_ or 0x7fffffff.inv()
         if (anInt8156 != i_131_) {
-            if (anInt8156 != 0) aClass367Array8139[0x7fffffff and anInt8156]!!.method3520(87.toByte())
+            if (anInt8156 != 0) aAbstractRenderPassArray8139[0x7fffffff and anInt8156]!!.method3520(87.toByte())
             if (i_131_ != 0) {
-                aClass367_8143 = aClass367Array8139[0x7fffffff and i_131_]
-                aClass367_8143!!.method3525(15192, bool)
-                aClass367_8143!!.method3521(bool, (-103).toByte())
-                aClass367_8143!!.method3526(10756, i, i_132_)
-            } else aClass367_8143 = null
+                aAbstractRenderPass_8143 = aAbstractRenderPassArray8139[0x7fffffff and i_131_]
+                aAbstractRenderPass_8143!!.method3525(15192, bool)
+                aAbstractRenderPass_8143!!.method3521(bool, (-103).toByte())
+                aAbstractRenderPass_8143!!.method3526(10756, i, i_132_)
+            } else aAbstractRenderPass_8143 = null
             anInt8156 = i_131_
             anInt8161 = i
             anInt8108 = i_132_
         } else if (anInt8156 != 0) {
-            aClass367Array8139[0x7fffffff and anInt8156]!!.method3521(bool, (-103).toByte())
+            aAbstractRenderPassArray8139[0x7fffffff and anInt8156]!!.method3521(bool, (-103).toByte())
             if (i != anInt8161 || anInt8108 != i_132_) {
-                aClass367Array8139[anInt8156 and 0x7fffffff]!!.method3526(10756, i, i_132_)
+                aAbstractRenderPassArray8139[anInt8156 and 0x7fffffff]!!.method3526(10756, i, i_132_)
                 anInt8108 = i_132_
                 anInt8161 = i
             }
@@ -1456,8 +1456,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8177 = i_173_
         anInt8099 = i_171_
         if (aBoolean8153) {
-            aClass367Array8139[3]!!.method3528(102)
-            aClass367Array8139[3]!!.method3522(-16252)
+            aAbstractRenderPassArray8139[3]!!.method3528(102)
+            aAbstractRenderPassArray8139[3]!!.method3522(-16252)
         }
     }
 
@@ -1614,7 +1614,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3940(1)
         if (i < 80) aNodeDeque_7927 = null
         anInt8047++
-        if (aClass367_8143 != null) aClass367_8143!!.method3532(10425)
+        if (aAbstractRenderPass_8143 != null) aAbstractRenderPass_8143!!.method3532(10425)
     }
 
     override fun method3643(canvas: Canvas?, i: Int, i_195_: Int) {
@@ -1808,7 +1808,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         val i_224_ = -106 / ((-8 - i) / 33)
         anInt8058++
         aBoolean8121 = false
-        if (aClass367_8143 != null) aClass367_8143!!.method3531(false)
+        if (aAbstractRenderPass_8143 != null) aAbstractRenderPass_8143!!.method3531(false)
         method3898(12)
     }
 
@@ -2149,7 +2149,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private fun method3929(bool: Boolean) {
         method3813(bool)
         anInt7949++
-        if (aClass367_8143 != null) aClass367_8143!!.method3524(-14775)
+        if (aAbstractRenderPass_8143 != null) aAbstractRenderPass_8143!!.method3524(-14775)
     }
 
     fun method3930(i: Byte) {
@@ -2188,20 +2188,20 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInterface5_Impl2_8195 = method3840(-28633, true)
         method3902((-42).toByte())
         this.aNormalMapGenerator_7937 = NormalMapGenerator(this)
-        aClass367Array8139[1] = method3832(1, (-103).toByte())
-        aClass367Array8139[2] = method3832(2, (-65).toByte())
-        aClass367Array8139[4] = method3832(4, (-73).toByte())
-        aClass367Array8139[5] = method3832(5, (-101).toByte())
+        aAbstractRenderPassArray8139[1] = method3832(1, (-103).toByte())
+        aAbstractRenderPassArray8139[2] = method3832(2, (-65).toByte())
+        aAbstractRenderPassArray8139[4] = method3832(4, (-73).toByte())
+        aAbstractRenderPassArray8139[5] = method3832(5, (-101).toByte())
         if (i.toInt() != 26) this.aModelBatchBase_8204 = null
-        aClass367Array8139[6] = method3832(6, (-60).toByte())
-        aClass367Array8139[7] = method3832(7, (-100).toByte())
-        aClass367Array8139[3] = method3832(3, (-63).toByte())
-        aClass367Array8139[8] = method3832(8, (-60).toByte())
-        aClass367Array8139[9] = method3832(9, (-78).toByte())
-        if (!aClass367Array8139[2]!!.method3530(-58)) aClass367Array8139[2] = method3832(0, (-74).toByte())
-        if (!aClass367Array8139[4]!!.method3530(-74)) aClass367Array8139[4] = aClass367Array8139[2]
-        if (!aClass367Array8139[8]!!.method3530(-116)) aClass367Array8139[8] = aClass367Array8139[4]
-        if (!aClass367Array8139[9]!!.method3530(-104)) aClass367Array8139[9] = aClass367Array8139[8]
+        aAbstractRenderPassArray8139[6] = method3832(6, (-60).toByte())
+        aAbstractRenderPassArray8139[7] = method3832(7, (-100).toByte())
+        aAbstractRenderPassArray8139[3] = method3832(3, (-63).toByte())
+        aAbstractRenderPassArray8139[8] = method3832(8, (-60).toByte())
+        aAbstractRenderPassArray8139[9] = method3832(9, (-78).toByte())
+        if (!aAbstractRenderPassArray8139[2]!!.method3530(-58)) aAbstractRenderPassArray8139[2] = method3832(0, (-74).toByte())
+        if (!aAbstractRenderPassArray8139[4]!!.method3530(-74)) aAbstractRenderPassArray8139[4] = aAbstractRenderPassArray8139[2]
+        if (!aAbstractRenderPassArray8139[8]!!.method3530(-116)) aAbstractRenderPassArray8139[8] = aAbstractRenderPassArray8139[4]
+        if (!aAbstractRenderPassArray8139[9]!!.method3530(-104)) aAbstractRenderPassArray8139[9] = aAbstractRenderPassArray8139[8]
         method3882(52.toByte())
         la()
         this.method3673()
@@ -2473,7 +2473,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aFloatArray8120 = FloatArray(16)
         anInt8104 = -1
         this.anInt8144 = -1
-        aClass367Array8139 = arrayOfNulls<Class367>(10)
+        aAbstractRenderPassArray8139 = arrayOfNulls<AbstractRenderPass>(10)
         aFloatArray8140 = floatArrayOf(0.0f, 0.0f, 1.0f, 0.0f)
         this.aObjectByteSerializerHolder_8163 = ClientMachineInfo.aObjectByteSerializerHolder_6602
         aFloatArray8152 = FloatArray(16)

@@ -1,7 +1,7 @@
 /* Class367_Sub8 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapGenerator: NormalMapGenerator?) : Class367(var_ha_Sub3) {
+class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(var_ha_Sub3) {
     private var aFloat7350 = 0.0f
     private val aNormalMapGenerator_7353: NormalMapGenerator?
     override fun method3520(i: Byte) {

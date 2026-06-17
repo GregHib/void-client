@@ -4,7 +4,7 @@ import kotlin.math.sqrt
 /* Class367_Sub4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367(var_ha_Sub3) {
+class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : AbstractRenderPass(var_ha_Sub3) {
     private var aBoolean7311 = false
     private var anInterface18_Impl2Array7315: Array<Interface18_Impl2?>? = null
     private var aBoolean7317 = false

@@ -8,7 +8,7 @@ import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 import java.awt.Container
 
-class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?) : Class367(class377) {
+class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?) : AbstractRenderPass(class377) {
     private var anInterface18_Impl3_7390: Interface18_Impl3? = null
     private val aBoolean7391: Boolean
     private var aTextureHandle_7392: TextureHandle? = null

@@ -2,7 +2,7 @@ import jagdx.IDirect3DPixelShader
 import jagdx.IDirect3DVertexShader
 import kotlin.math.abs
 
-class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, class45: Class45?, private val aNormalMapGenerator_7348: NormalMapGenerator) : Class367(aClass378_7346) {
+class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, class45: Class45?, private val aNormalMapGenerator_7348: NormalMapGenerator) : AbstractRenderPass(aClass378_7346) {
     private var anIDirect3DPixelShader7343: IDirect3DPixelShader? = null
     private var aBoolean7344 = false
     private var anIDirect3DVertexShader7345: IDirect3DVertexShader? = null

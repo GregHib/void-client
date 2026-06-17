@@ -1,6 +1,6 @@
 import jagdx.IDirect3DVertexShader
 
-class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, class45: Class45?, private var aNormalMapGenerator_7339: NormalMapGenerator?) : Class367(aClass378_7340) {
+class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, class45: Class45?, private var aNormalMapGenerator_7339: NormalMapGenerator?) : AbstractRenderPass(aClass378_7340) {
     private val anIDirect3DVertexShader7341: IDirect3DVertexShader?
 
     override fun method3527(i: Int, interface18: Interface18?, i_0_: Int) {

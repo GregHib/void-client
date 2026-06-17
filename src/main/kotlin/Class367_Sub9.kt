@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glUniform4fARB
 import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import kotlin.math.abs
 
-class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, normalMapGenerator: NormalMapGenerator?) : Class367(class377) {
+class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(class377) {
     private var aClass89_7369: Class89? = null
     private var aBoolean7373 = false
     private var aNormalMapGenerator_7375: NormalMapGenerator? = null

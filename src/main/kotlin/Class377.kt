@@ -850,7 +850,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         return false
     }
 
-    override fun method3832(i: Int, i_58_: Byte): Class367? {
+    override fun method3832(i: Int, i_58_: Byte): AbstractRenderPass? {
         anInt9900++
         if (i_58_ >= -57) method3832(-96, 20.toByte())
         val i_59_ = i
