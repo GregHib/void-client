@@ -1,4 +1,4 @@
-import Class130.Companion.method1130
+import ModelBatchBase.Companion.method1130
 import Class169.Companion.method1301
 
 /* Class235 - Decompiled by JODE

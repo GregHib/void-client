@@ -1448,7 +1448,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub40_Sub12.anInt9200 = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(126.toByte())
                 Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 Class278.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
-                var class348_sub37 = Class130.aClass356_1895!!.method3484(0) as? Class348_Sub37?
+                var class348_sub37 = ModelBatchBase.aClass356_1895!!.method3484(0) as? Class348_Sub37?
                 while (class348_sub37 != null) {
                     val i = ((class348_sub37.aLong4291 shr 28) and 0x3L).toInt()
                     val i_188_ = (class348_sub37.aLong4291 and 0x3fffL).toInt()
@@ -1459,7 +1459,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         class348_sub37.method2715(89.toByte())
                         if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.anInt7319 && (i_191_ < Class348_Sub40_Sub3.anInt9109)) Class203.method1479(i_191_, (-118).toByte(), i_189_, Class348_Sub40_Sub12.anInt9200)
                     }
-                    class348_sub37 = (Class130.aClass356_1895!!.method3482(0) as? Class348_Sub37?)
+                    class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3482(0) as? Class348_Sub37?)
                 }
                 var class348_sub27 = (Class348_Sub42_Sub20.aClass262_9711!!.method1995(4) as? Class348_Sub27?)
                 while (class348_sub27 != null) {
@@ -1548,7 +1548,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_202_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
-                if (i == 2) Class130_Sub1.method1134(92)
+                if (i == 2) FrameStatsReset.method1134(92)
                 RenderNode.anInt9721 = i_202_
                 Class348_Sub7.method2772(i_202_, 123.toByte())
                 method1713(false, 520)

@@ -132,7 +132,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             Class150.anInt2057 = 0
             Class282.aClass356_3654!!.method3481(i.toInt() xor 0xb)
             Class348_Sub32.anInt6930 = 0
-            Class130.aClass356_1895!!.method3481(0)
+            ModelBatchBase.aClass356_1895!!.method3481(0)
             MinimapStateReset.method1122(0)
             Class135_Sub1.anInt4718 = 0
             Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1314((-107).toByte())

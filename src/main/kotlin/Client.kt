@@ -34,8 +34,8 @@ import ScrollingWidgetComponentNode.Companion.method1120
 import MinimapStateReset.method1123
 import ModelFacePriorityNode.Companion.method1126
 import MinimapRectClipper.method225
-import Class130.Companion.method1127
-import Class130_Sub1.Companion.method1133
+import ModelBatchBase.Companion.method1127
+import FrameStatsReset.Companion.method1133
 import Class132.method1137
 import Class133.method1139
 import Class135.Companion.method1149

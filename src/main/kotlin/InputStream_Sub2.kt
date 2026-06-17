@@ -172,7 +172,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_72_ = Class90.regionTileY + i_71_
                     val i_73_ = Class278.anInt3581 + (i_70_ shr 4 and 0x7)
                     val i_74_ = ArbVertexProgram.regionTileX + i_73_
-                    val class348_sub37 = ((Class130.aClass356_1895!!.method3480((i_72_ shl 14 or (Class348_Sub40_Sub12.anInt9200 shl 28) or i_74_).toLong(), -6008)) as Class348_Sub37?)
+                    val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480((i_72_ shl 14 or (Class348_Sub40_Sub12.anInt9200 shl 28) or i_74_).toLong(), -6008)) as Class348_Sub37?)
                     if (class348_sub37 != null) {
                         var class348_sub34 = (class348_sub37.aClass262_6998.method1995(4) as Class348_Sub34?)
                         while (class348_sub34 != null) {
@@ -218,8 +218,8 @@ class InputStream_Sub2 : InputStream() {
                         val i_94_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         val i_95_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
                         val i_96_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                        if (Class130.aClass356_1895 != null) {
-                            val class348_sub37 = ((Class130.aClass356_1895!!.method3480((i_93_ or ((Class348_Sub40_Sub12.anInt9200 shl 28) or (i_91_ shl 14))).toLong(), -6008)) as Class348_Sub37?)
+                        if (ModelBatchBase.aClass356_1895 != null) {
+                            val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480((i_93_ or ((Class348_Sub40_Sub12.anInt9200 shl 28) or (i_91_ shl 14))).toLong(), -6008)) as Class348_Sub37?)
                             if (class348_sub37 != null) {
                                 var class348_sub34 = (class348_sub37.aClass262_6998.method1995(4) as Class348_Sub34?)
                                 while (class348_sub34 != null) {

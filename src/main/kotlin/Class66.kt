@@ -1,7 +1,7 @@
 import GameAppletFrame.Companion.method94
 import ParticleEmitterNode.Companion.method217
 import SceneRegionState.method222
-import Class130.Companion.method1129
+import ModelBatchBase.Companion.method1129
 import Class135.Companion.method1148
 import Class14_Sub2.Companion.method243
 import Class14_Sub2.Companion.method244
@@ -878,7 +878,7 @@ object Class66 {
                 return
             }
             if (i == 5237) {
-                Class130_Sub1.method1134(86)
+                FrameStatsReset.method1134(86)
                 return
             }
         } else if (i < 5400) {
@@ -1923,11 +1923,11 @@ object Class66 {
             if (i == 6500) {
                 if (Class240.anInt4674 != 7 || Class225.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
                 else {
-                    if (Class130.aBoolean1899) anIntArray1149!![anInt1173++] = 0
+                    if (ModelBatchBase.aBoolean1899) anIntArray1149!![anInt1173++] = 0
                     else {
                         if (Class240.aLong4683 > method599(-126) - 1000L) anIntArray1149!![anInt1173++] = 1
                         else {
-                            Class130.aBoolean1899 = true
+                            ModelBatchBase.aBoolean1899 = true
                             val class348_sub47 = method2148((Class348_Sub23_Sub2.aClass351_9034), (Class348_Sub23_Sub2.aClass77_9029), -115)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), Class5_Sub1.anInt8349)
                             Class348_Sub42_Sub14.method3243(118, class348_sub47)
@@ -2288,7 +2288,7 @@ object Class66 {
                     return
                 }
                 if (i == 6907) {
-                    anIntArray1149!![anInt1173++] = Class130_Sub1.anInt5797
+                    anIntArray1149!![anInt1173++] = FrameStatsReset.anInt5797
                     return
                 }
                 if (i == 6908) {
@@ -3946,7 +3946,7 @@ object Class66 {
                     return
                 }
                 if (i == 3312) {
-                    anIntArray1149!![anInt1173++] = if (Class130.aBoolean1900) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (ModelBatchBase.aBoolean1900) 1 else 0
                     return
                 }
                 if (i == 3313) {

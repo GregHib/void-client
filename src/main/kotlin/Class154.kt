@@ -364,8 +364,8 @@ class Class154 {
             }
             if (i != -402058072) aLong2094 = -101L
             var class64: Class64?
-            synchronized(Class130.aClass60_1894!!) {
-                class64 = Class130.aClass60_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as Class64?
+            synchronized(ModelBatchBase.aClass60_1894!!) {
+                class64 = ModelBatchBase.aClass60_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as Class64?
             }
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_70_) != 0) {
                 if (class64 != null) i_70_ = var_renderer!!.method3679(i_70_, class64.ua())
@@ -403,8 +403,8 @@ class Class154 {
                     }
                 }
                 class64.s(i_70_)
-                synchronized(Class130.aClass60_1894!!) {
-                    Class130.aClass60_1894!!.method582(class64, aLong2102, (-97).toByte())
+                synchronized(ModelBatchBase.aClass60_1894!!) {
+                    ModelBatchBase.aClass60_1894!!.method582(class64, aLong2102, (-97).toByte())
                 }
             }
             if (class17 == null) return class64
@@ -471,8 +471,8 @@ class Class154 {
             }
             val l = i_95_.toLong() or ((i_93_ shl 16).toLong() or (i_92_.toLong() shl 32))
             var class64: Class64?
-            synchronized(Class130.aClass60_1894!!) {
-                class64 = Class130.aClass60_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as Class64?
+            synchronized(ModelBatchBase.aClass60_1894!!) {
+                class64 = ModelBatchBase.aClass60_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as Class64?
             }
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_98_) != 0) {
                 if (class64 != null) i_98_ = var_renderer!!.method3679(i_98_, class64.ua())
@@ -497,8 +497,8 @@ class Class154 {
                     }
                 }
                 class64.s(i_98_)
-                synchronized(Class130.aClass60_1894!!) {
-                    Class130.aClass60_1894!!.method582(class64, l, (-109).toByte())
+                synchronized(ModelBatchBase.aClass60_1894!!) {
+                    ModelBatchBase.aClass60_1894!!.method582(class64, l, (-109).toByte())
                 }
             }
             if (class17 == null) return class64

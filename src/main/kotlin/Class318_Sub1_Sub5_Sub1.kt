@@ -1,4 +1,4 @@
-import Class130.Companion.method1130
+import ModelBatchBase.Companion.method1130
 import Class148.Companion.method1197
 import Class169.Companion.method1301
 import Class239_Sub17.Companion.method1796

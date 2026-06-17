@@ -191,10 +191,10 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         }
     }
 
-    override fun method3812(i: Int, class58s: Array<Class58>): Class130 {
+    override fun method3812(i: Int, class58s: Array<Class58>): ModelBatchBase {
         try {
             anInt9875++
-            return Class130_Sub1(class58s)
+            return FrameStatsReset(class58s)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (class58s != null) "{...}" else "null") + ')'))
         }
@@ -725,7 +725,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             val class68 = interface5_impl2!!.method25(51.toByte())
             val class285_sub2 = interface5_impl2 as Class285_Sub2
             class285_sub2.method2125(0)
-            glDrawElements(i_44_, i_45_, Class130.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
+            glDrawElements(i_44_, i_45_, ModelBatchBase.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.JC(" + (if (class21 != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
         }
@@ -973,10 +973,10 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         }
     }
 
-    override fun method3862(i: Int, class130: Class130?) {
+    override fun method3862(i: Int, modelBatchBase: ModelBatchBase?) {
         try {
             anInt9866++
-            val class58s = (class130 as Class130_Sub1).aClass58Array5801
+            val class58s = (modelBatchBase as FrameStatsReset).aClass58Array5801
             var i_74_ = 0
             var bool = false
             var bool_75_ = false
@@ -1050,7 +1050,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 anInt9909 = i_74_
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.KC(" + i + ',' + (if (class130 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.KC(" + i + ',' + (if (modelBatchBase != null) "{...}" else "null") + ')'))
         }
     }
 

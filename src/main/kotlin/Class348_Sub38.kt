@@ -35,7 +35,7 @@ class Class348_Sub38 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Su
                         if (-i_0_ < i_4_ && i_4_ < i_0_ && i_5_ > -i_0_ && i_0_ > i_5_ && bools[i_4_ - -i_0_]!![i_0_ + i_5_]) {
                             aHa_Sub3_7007!!.method3909((255.0f * aClass348_Sub1_7004!!.method2721(-37)).toInt().toByte(), -112)
                             aHa_Sub3_7007.method3925(-123, anInterface5_Impl1_7020, 0)
-                            aHa_Sub3_7007.method3862(0, (aHa_Sub3_7007.aClass130_8202))
+                            aHa_Sub3_7007.method3862(0, (aHa_Sub3_7007.aModelBatchBase_8202))
                             aHa_Sub3_7007.method3938(Class247.aClass21_3181, anInt7018 / 3, anInterface5_Impl2_7002, 0, 0, anInt7013, 116)
                             return
                         }

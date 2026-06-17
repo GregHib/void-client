@@ -1,7 +1,7 @@
 /* Class130 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-abstract class Class130 {
+abstract class ModelBatchBase {
     companion object {
         @JvmField
         var aClass60_1894: Class60? = Class60(5)

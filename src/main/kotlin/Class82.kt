@@ -714,8 +714,8 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                 anInt1438++
                 val i_27_ = Class348_Sub6.anInt6633
                 if (i > 106) {
-                    if (Class130_Sub1.anInt5799 != i_27_) {
-                        val i_28_ = i_27_ - Class130_Sub1.anInt5799
+                    if (FrameStatsReset.anInt5799 != i_27_) {
+                        val i_28_ = i_27_ - FrameStatsReset.anInt5799
                         var i_29_ = (i_28_.toLong() * l / 320L).toInt()
                         if (i_28_ <= 0) {
                             if (i_29_ != 0) {
@@ -723,7 +723,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             } else i_29_ = -1
                         } else if (i_29_ == 0) i_29_ = 1
                         else if (i_28_ < i_29_) i_29_ = i_28_
-                        Class130_Sub1.anInt5799 += i_29_
+                        FrameStatsReset.anInt5799 += i_29_
                     }
                     val i_30_ = Class348_Sub7.anInt6652
                     Class76.Companion.aFloat1287 += Class348_Sub27.aFloat6898 * l.toFloat() / 40.0f * 8.0f

@@ -165,7 +165,7 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRender
         class101_sub2!!.method894(i, i_49_, 0)
         aHa_Sub3_6494.method3915(0)
         aHa_Sub3_6494.method3925(54, anInterface5_Impl1_6495, 0)
-        aHa_Sub3_6494.method3862(0, aHa_Sub3_6494.aClass130_8204)
+        aHa_Sub3_6494.method3862(0, aHa_Sub3_6494.aModelBatchBase_8204)
         aHa_Sub3_6494.method3899(2, c.code * '\u0004'.code, Class348_Sub42_Sub16.aClass21_9661, true)
         if (aBoolean6493 || bool) aHa_Sub3_6494.method3849(47.toByte(), 0, Class342.aClass70_4247)
     }

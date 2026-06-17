@@ -37,7 +37,7 @@ object Class203 {
         val i_5_ = Class90.regionTileY + i
         if (Class147.aClass357ArrayArrayArray2029 != null && i_2_ >= 0 && i >= 0 && Class367_Sub4.anInt7319 > i_2_ && Class348_Sub40_Sub3.anInt9109 > i && (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 0 || i_3_ == (Class132.aPlayer_1907!!.plane).toInt())) {
             val l = (i_5_ shl 14 or (i_3_ shl 28) or i_4_).toLong()
-            val class348_sub37 = (Class130.aClass356_1895!!.method3480(l, -6008) as? Class348_Sub37?)
+            val class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3480(l, -6008) as? Class348_Sub37?)
             if (class348_sub37 == null) Class282.method2110(i_3_, i_2_, i)
             else {
                 val class348_sub34 = class348_sub37.aClass262_6998.method1995(4) as? Class348_Sub34?

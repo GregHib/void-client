@@ -90,8 +90,8 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (bool) method3832(-4, (-39).toByte())
     }
 
-    override fun method3862(i: Int, class130: Class130?) {
-        val var_dxVertexLayout = class130 as dxVertexLayout
+    override fun method3862(i: Int, modelBatchBase: ModelBatchBase?) {
+        val var_dxVertexLayout = modelBatchBase as dxVertexLayout
         this.anIDirect3DDevice9810!!.SetVertexDeclaration(var_dxVertexLayout.anIDirect3DVertexDeclaration5803)
         if (i != 0) method3910((-110).toByte(), 113)
     }
@@ -576,7 +576,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i.toInt() != 100) anIntArray9805 = null
     }
 
-    override fun method3812(i: Int, class58s: Array<Class58>): Class130 {
+    override fun method3812(i: Int, class58s: Array<Class58>): ModelBatchBase {
         if (i != 0) anInt9807 = 29
         return dxVertexLayout(this, class58s)
     }

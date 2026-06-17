@@ -52,19 +52,19 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                 anInt66++
                 val i_0_ = (Class20.anInt319 + Class132.aPlayer_1907!!.x)
                 val i_1_ = (Class260.anInt3310 + Class132.aPlayer_1907!!.y)
-                if (-i_0_ + Class130_Sub1.anInt5799 < -2000 || -i_0_ + Class130_Sub1.anInt5799 > 2000 || Class192.anInt2578 - i_1_ < -2000 || -i_1_ + Class192.anInt2578 > 2000) {
+                if (-i_0_ + FrameStatsReset.anInt5799 < -2000 || -i_0_ + FrameStatsReset.anInt5799 > 2000 || Class192.anInt2578 - i_1_ < -2000 || -i_1_ + Class192.anInt2578 > 2000) {
                     Class192.anInt2578 = i_1_
-                    Class130_Sub1.anInt5799 = i_0_
+                    FrameStatsReset.anInt5799 = i_0_
                 }
-                if (Class130_Sub1.anInt5799 != i_0_) {
-                    val i_2_ = i_0_ - Class130_Sub1.anInt5799
+                if (FrameStatsReset.anInt5799 != i_0_) {
+                    val i_2_ = i_0_ - FrameStatsReset.anInt5799
                     var i_3_ = (i_2_.toLong() * l / 320L).toInt()
                     if (i_2_ <= 0) {
                         if (i_3_ == 0) i_3_ = -1
                         else if (i_3_ < i_2_) i_3_ = i_2_
                     } else if (i_3_ == 0) i_3_ = 1
                     else if (i_3_ > i_2_) i_3_ = i_2_
-                    Class130_Sub1.anInt5799 += i_3_
+                    FrameStatsReset.anInt5799 += i_3_
                 }
                 if (i == -1) {
                     Class314.aFloat3938 += Class205.aFloat2687 * l.toFloat() / 6.0f
@@ -191,7 +191,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             }
             if (OpenGlRenderNode.aClass252_10488 == null) {
                 if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.aClass45_6950!!.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"))) {
-                    if (Class348_Sub32.aClass45_6950!!.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aClass252_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), Class130.aBoolean1900, (-91).toByte())
+                    if (Class348_Sub32.aClass45_6950!!.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aClass252_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBase.aBoolean1900, (-91).toByte())
                     else {
                         bool = false
                         Class268.anInt3441++
@@ -331,7 +331,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     method3570(false)
                     Class363.method3514((-105).toByte())
                     Class348_Sub18.method2938(62.toByte())
-                    Class130_Sub1.method1131(99)
+                    FrameStatsReset.method1131(99)
                     if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aClass238_9165 != null && Class240.anInt4674 == 11) {
                         Class352.anInt4335++
                         val class348_sub47 = method2148(Class327.aClass351_4094, (Class348_Sub23_Sub2.aClass77_9029), i xor 0x55.inv())

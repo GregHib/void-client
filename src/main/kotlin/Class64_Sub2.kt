@@ -524,7 +524,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 if (aClass290_5482 == null || aClass290_5482!!.method2197((-20).toByte())) aByteArray5515 = null
                 else aBoolean5402 = true
             }
-            if (aFloatArray5476 != null && !Class130_Sub1.method1132(1673, anInt5472, anInt5463)) {
+            if (aFloatArray5476 != null && !FrameStatsReset.method1132(1673, anInt5472, anInt5463)) {
                 if (aClass290_5460 == null || aClass290_5460!!.method2197((-66).toByte())) {
                     aFloatArray5506 = null
                     aFloatArray5476 = aFloatArray5506
@@ -2396,12 +2396,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 if ((anInt5472 and 0x37) == 0) {
                     bool = false
                     aHa_Sub3_5419!!.method3866(false, true)
-                    aHa_Sub3_5419!!.method3862(0, (aHa_Sub3_5419!!.aClass130_8191))
+                    aHa_Sub3_5419!!.method3862(0, (aHa_Sub3_5419!!.aModelBatchBase_8191))
                 } else {
                     bool = true
                     aHa_Sub3_5419!!.method3866(true, true)
                     aHa_Sub3_5419!!.method3925(i xor 0x18d7806c.inv(), (aClass290_5424!!.anInterface5_Impl1_3711), 3)
-                    aHa_Sub3_5419!!.method3862(0, (aHa_Sub3_5419!!.aClass130_8208))
+                    aHa_Sub3_5419!!.method3862(0, (aHa_Sub3_5419!!.aModelBatchBase_8208))
                 }
                 var i_474_ = 0
                 while (anIntArray5415!!.size > i_474_) {

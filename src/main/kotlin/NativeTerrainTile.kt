@@ -30,7 +30,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
     var aHa_Sub3_8322: NativeRenderer? = null
     private var aFloatArrayArray8323: Array<FloatArray?>?
     @JvmField
-    var aClass130_8324: Class130? = null
+    var aModelBatchBase_8324: ModelBatchBase? = null
     private var aClass356_8325: Class356? = null
     private var anInterface5_Impl1_8326: Interface5_Impl1? = null
     private var anInterface5_Impl1_8327: Interface5_Impl1? = null
@@ -362,10 +362,10 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             anInterface5_Impl1_8327 = this.aHa_Sub3_8322!!.method3889(false, 16711680)
             anInterface5_Impl1_8327!!.method17(nativeheapbuffer_45_, i, i * anInt8303, (-59).toByte())
             if ((0x7 and this.anInt8294) == 0) {
-                if (anIntArrayArrayArray8314 == null) this.aClass130_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078)), Class58(Class325.aClass325_4076!!)))))
-                else this.aClass130_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4077)), Class58(Class325.aClass325_4076!!)))))
-            } else if (anIntArrayArrayArray8314 != null) this.aClass130_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4077, Class325.aClass325_4075)), Class58(Class325.aClass325_4076!!)))))
-            else this.aClass130_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4075)), Class58(Class325.aClass325_4076!!)))))
+                if (anIntArrayArrayArray8314 == null) this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078)), Class58(Class325.aClass325_4076!!)))))
+                else this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4077)), Class58(Class325.aClass325_4076!!)))))
+            } else if (anIntArrayArrayArray8314 != null) this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4077, Class325.aClass325_4075)), Class58(Class325.aClass325_4076!!)))))
+            else this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4075)), Class58(Class325.aClass325_4076!!)))))
             var i_125_ = 0
             for (i_126_ in class348_sub3s.indices) {
                 if (class348_sub3s[i_126_]!!.anInt6589 > 0) class348_sub3s[i_125_++] = class348_sub3s[i_126_]
@@ -531,7 +531,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 if (aClass330_8307 != null) {
                     this.aHa_Sub3_8322!!.method3925(-91, anInterface5_Impl1_8327, 0)
                     this.aHa_Sub3_8322!!.method3925(-71, anInterface5_Impl1_8326, 1)
-                    this.aHa_Sub3_8322!!.method3862(0, this.aClass130_8324)
+                    this.aHa_Sub3_8322!!.method3862(0, this.aModelBatchBase_8324)
                     aClass330_8307!!.method2630(128, i_153_, i, bool, bools, i_149_)
                 }
             }
@@ -751,7 +751,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 this.aHa_Sub3_8322!!.method3926(59.toByte(), false)
                 this.aHa_Sub3_8322!!.method3925(63, anInterface5_Impl1_8327, 0)
                 this.aHa_Sub3_8322!!.method3925(-90, anInterface5_Impl1_8326, 1)
-                this.aHa_Sub3_8322!!.method3862(0, this.aClass130_8324)
+                this.aHa_Sub3_8322!!.method3862(0, this.aModelBatchBase_8324)
                 this.aHa_Sub3_8322!!.method3938(Class247.aClass21_3181, i_218_ / 3, interface5_impl2, i_219_, 0, -i_219_ + i_220_ - -1, 114)
                 this.aHa_Sub3_8322!!.method3926(82.toByte(), true)
             }

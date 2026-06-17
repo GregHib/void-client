@@ -39,10 +39,10 @@ class Class352 {
         fun method3459(class348_sub34: Class348_Sub34, i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
             anInt4330++
             val l = (i_0_ shl 14 or (i shl 28) or i_1_).toLong()
-            var class348_sub37 = Class130.aClass356_1895!!.method3480(l, -6008) as Class348_Sub37?
+            var class348_sub37 = ModelBatchBase.aClass356_1895!!.method3480(l, -6008) as Class348_Sub37?
             if (class348_sub37 == null) {
                 class348_sub37 = Class348_Sub37()
-                Class130.aClass356_1895!!.method3483(50.toByte(), l, class348_sub37)
+                ModelBatchBase.aClass356_1895!!.method3483(50.toByte(), l, class348_sub37)
                 class348_sub37.aClass262_6998.method1999(class348_sub34, -20180)
             } else {
                 var class213 = Exception_Sub1.aClass255_112!!.method1940(i_2_ xor 0x72.inv(), (class348_sub34.anInt6973))

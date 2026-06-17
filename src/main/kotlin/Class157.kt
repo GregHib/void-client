@@ -37,7 +37,7 @@ object Class157 {
         class348_sub49_sub2.writeInt(123.toByte(), Class78.aClass45_1322!!.method389(-104))
         class348_sub49_sub2.writeInt(97.toByte(), Class348_Sub16_Sub3.aClass45_8926!!.method389(-96))
         class348_sub49_sub2.writeInt(111.toByte(), Class348_Sub32.aClass45_6950!!.method389(109))
-        class348_sub49_sub2.writeInt(108.toByte(), Class130.aClass45_1897!!.method389(-106))
+        class348_sub49_sub2.writeInt(108.toByte(), ModelBatchBase.aClass45_1897!!.method389(-106))
         class348_sub49_sub2.writeInt(102.toByte(), Class82.aClass45_1434!!.method389(102))
         class348_sub49_sub2.writeInt(113.toByte(), Class348_Sub11.aClass45_4770!!.method389(-122))
         class348_sub49_sub2.writeInt(86.toByte(), Class239.aClass45_3146!!.method389(97))

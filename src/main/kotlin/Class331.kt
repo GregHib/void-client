@@ -58,8 +58,8 @@ object Class331 {
             Class24.aClass60_355!!.method587(-98)
         }
         anInt4136++
-        synchronized(Class130.aClass60_1894!!) {
-            Class130.aClass60_1894!!.method587(i + 4530)
+        synchronized(ModelBatchBase.aClass60_1894!!) {
+            ModelBatchBase.aClass60_1894!!.method587(i + 4530)
         }
         if (i != -4631) anInt4135 = 37
     }

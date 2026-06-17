@@ -11,7 +11,7 @@ import Class99.method882
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 // Source File Name:   Class130_Sub1.java
-class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) : Class130() {
+class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>) : ModelBatchBase() {
     companion object {
         @JvmStatic
         fun method1131(i: Int) {

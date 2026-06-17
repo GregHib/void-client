@@ -10,7 +10,7 @@ class Class280 internal constructor(var_ha_Sub3: NativeRenderer) {
     private val aClass318_Sub9_Sub2ArrayArray3632: Array<Array<Class318_Sub9_Sub2?>?>
     private val anInterface5_Impl2_3635: Interface5_Impl2?
     private val anIntArray3636: IntArray
-    private val aClass130_3637: Class130
+    private val aModelBatchBase_3637: ModelBatchBase
     private val anInterface5_Impl1_3638: Interface5_Impl1
     private var aClass318_Sub9_Sub2ArrayArray3642: Array<Array<Class318_Sub9_Sub2?>?>?
     private fun method2098(var_ha_Sub3: NativeRenderer, i: Int, i_0_: Int) {
@@ -335,7 +335,7 @@ class Class280 internal constructor(var_ha_Sub3: NativeRenderer) {
             if (anInterface5_Impl1_3638.method18(6331)) {
                 var_ha_Sub3.method3925(66, anInterface5_Impl1_3638, 0)
                 var_ha_Sub3.method3925(68, anInterface5_Impl1_3630, 1)
-                var_ha_Sub3.method3862(0, aClass130_3637)
+                var_ha_Sub3.method3862(0, aModelBatchBase_3637)
                 var_ha_Sub3.method3938(Class247.aClass21_3181, 2 * i_20_, anInterface5_Impl2_3635, 0, 0, i_20_ * 4, 118)
             }
         }
@@ -362,7 +362,7 @@ class Class280 internal constructor(var_ha_Sub3: NativeRenderer) {
         anIntArray3631 = IntArray(8191)
         aClass318_Sub9_Sub2ArrayArray3642 = Array<Array<Class318_Sub9_Sub2?>?>(64) { arrayOfNulls<Class318_Sub9_Sub2>(768) }
         anIntArray3636 = IntArray(1600)
-        aClass130_3637 = (var_ha_Sub3.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076, Class325.aClass325_4078)), Class58(Class325.aClass325_4075!!)))))
+        aModelBatchBase_3637 = (var_ha_Sub3.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076, Class325.aClass325_4078)), Class58(Class325.aClass325_4075!!)))))
         anInterface5_Impl1_3638 = var_ha_Sub3.method3889(true, 16711680)
         anInterface5_Impl1_3630 = var_ha_Sub3.method3889(false, 16711680)
         anInterface5_Impl1_3630.method20(393168, 124.toByte(), 12)

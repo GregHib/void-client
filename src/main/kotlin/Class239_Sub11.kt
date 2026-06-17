@@ -108,7 +108,7 @@ class Class239_Sub11 : Class239 {
                 Class267.aClass267_3415!!.method2025(Class292(OpenGlRenderNode.aClass45_10480!!), false)
                 Class267.aClass267_3416!!.method2025(Class292(Class78.aClass45_1322!!), false)
                 Class267.aClass267_3417!!.method2025(Class292(Class348_Sub16_Sub3.aClass45_8926!!), false)
-                Class267.aClass267_3418!!.method2025(Class292(Class130.aClass45_1897!!), false)
+                Class267.aClass267_3418!!.method2025(Class292(ModelBatchBase.aClass45_1897!!), false)
                 Class267.aClass267_3419!!.method2025(Class292(Class82.aClass45_1434!!), false)
                 Class267.aClass267_3420!!.method2025(Class292(aClass45_3146!!), false)
                 Class267.aClass267_3421!!.method2025(Class292(Class262.aClass45_3323!!), false)

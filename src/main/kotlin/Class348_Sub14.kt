@@ -205,7 +205,7 @@ class Class348_Sub14 : Class348 {
                                     if (interface10 == null) interface10 = ((method3135(i_39_, i_37_, i_38_)) as Interface10?)
                                     if (interface10 != null) {
                                         val class51 = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-99)))
-                                        if (!class51.aBoolean942 || Class130.aBoolean1900) {
+                                        if (!class51.aBoolean942 || ModelBatchBase.aBoolean1900) {
                                             var i_40_ = class51.anInt921
                                             if (class51.anIntArray945 != null) {
                                                 var i_41_ = 0

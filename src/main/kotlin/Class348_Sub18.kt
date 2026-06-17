@@ -136,7 +136,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class78.aClass45_1322!!.method412(36.toByte())
                 Class348_Sub16_Sub3.aClass45_8926!!.method412((-114).toByte())
                 Class348_Sub32.Companion.aClass45_6950!!.method412(36.toByte())
-                Class130.aClass45_1897!!.method412((-114).toByte())
+                ModelBatchBase.aClass45_1897!!.method412((-114).toByte())
                 Class82.aClass45_1434!!.method412((-117).toByte())
                 Class348_Sub11.Companion.aClass45_4770!!.method412(78.toByte())
                 Class239.aClass45_3146!!.method412(88.toByte())

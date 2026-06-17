@@ -52,7 +52,7 @@ class Class184 {
                     if (class110_sub1 != null) Class65.aClass110_Sub1Array1146!![i_2_++] = class110_sub1
                     i_3_++
                 }
-                Class130.aBoolean1899 = false
+                ModelBatchBase.aBoolean1899 = false
                 Class240.aLong4683 = method599(-92)
                 Class299_Sub1_Sub2.aClass348_Sub49_8698 = null
             }

@@ -231,8 +231,8 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
             synchronized(Class24.aClass60_355!!) {
                 Class24.aClass60_355!!.method578(2, i)
             }
-            synchronized(Class130.aClass60_1894!!) {
-                Class130.aClass60_1894!!.method578(2, i)
+            synchronized(ModelBatchBase.aClass60_1894!!) {
+                ModelBatchBase.aClass60_1894!!.method578(2, i)
                 if (i_23_ != 0) method876(51, 108)
             }
         }

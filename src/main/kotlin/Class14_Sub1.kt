@@ -1,4 +1,4 @@
-import Class130.Companion.method1128
+import ModelBatchBase.Companion.method1128
 import Class348_Sub40_Sub3.Companion.method3055
 import jaggl.OpenGL.Companion.glGetTexImagei
 import jaggl.OpenGL.Companion.glPixelStorei

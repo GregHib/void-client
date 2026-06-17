@@ -169,9 +169,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aClass64_Sub2_8188: Class64_Sub2? = null
     @JvmField
     var aClass64_Sub2_8189: Class64_Sub2? = null
-    private var aClass130_8190: Class130? = null
+    private var aModelBatchBase_8190: ModelBatchBase? = null
     @JvmField
-    var aClass130_8191: Class130? = null
+    var aModelBatchBase_8191: ModelBatchBase? = null
     @JvmField
     var aClass64_Sub2_8192: Class64_Sub2? = null
     private var anInterface5_Impl1_8193: Interface5_Impl1? = null
@@ -179,7 +179,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aClass64_Sub2_8194: Class64_Sub2? = null
     private var anInterface5_Impl2_8195: Interface5_Impl2? = null
     private val aClass101_Sub2_8196: FloatCameraTransform
-    private var aClass130_8197: Class130? = null
+    private var aModelBatchBase_8197: ModelBatchBase? = null
     @JvmField
     var aClass64_Sub2_8198: Class64_Sub2? = null
     @JvmField
@@ -188,16 +188,16 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aClass64_Sub2_8200: Class64_Sub2? = null
     private var anInterface5_Impl1_8201: Interface5_Impl1? = null
     @JvmField
-    var aClass130_8202: Class130? = null
+    var aModelBatchBase_8202: ModelBatchBase? = null
     private var anInterface5_Impl1_8203: Interface5_Impl1? = null
-    var aClass130_8204: Class130? = null
-    private var aClass130_8205: Class130? = null
+    var aModelBatchBase_8204: ModelBatchBase? = null
+    private var aModelBatchBase_8205: ModelBatchBase? = null
     @JvmField
     var aClass64_Sub2_8206: Class64_Sub2? = null
     @JvmField
     var aClass64_Sub2_8207: Class64_Sub2? = null
     @JvmField
-    var aClass130_8208: Class130? = null
+    var aModelBatchBase_8208: ModelBatchBase? = null
     var aBoolean8209: Boolean = false
     private val anInt8210 = 0
     override fun da(i: Int, i_0_: Int, i_1_: Int, `is`: IntArray?) {
@@ -253,7 +253,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         return i_9_
     }
 
-    abstract fun method3812(i: Int, class58s: Array<Class58>): Class130
+    abstract fun method3812(i: Int, class58s: Array<Class58>): ModelBatchBase
 
     override fun ZA(i: Int, f: Float, f_15_: Float, f_16_: Float, f_17_: Float, f_18_: Float) {
         anInt7912++
@@ -351,7 +351,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         val i_28_ = -85 / ((41 - i) / 54)
         anInt7948++
         anInterface5_Impl1_8203!!.method20(24, 125.toByte(), 12)
-        aClass130_8205 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!))))
+        aModelBatchBase_8205 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!))))
     }
 
     fun method3817(i: Int, i_29_: Int) {
@@ -620,7 +620,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (anInterface5_Impl1_8193!!.method18(6331)) break
             }
         }
-        aClass130_8197 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4078)))))
+        aModelBatchBase_8197 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4078)))))
     }
 
     abstract fun method3829(class70: Class70?, i: Int, i_56_: Byte, bool: Boolean)
@@ -999,7 +999,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         try {
             method3925(-96, anInterface5_Impl1_8193, 0)
             anInt8067++
-            method3862(0, aClass130_8197)
+            method3862(0, aModelBatchBase_8197)
             method3899(i, 0, class21, true)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.QI(" + (if (class21 != null) "{...}" else "null") + ',' + i + ',' + i_98_ + ')'))
@@ -1008,7 +1008,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3861(i: Int, i_99_: Byte, i_100_: Int, class68: Class68?, class304: Class304?): Interface18_Impl3?
 
-    abstract fun method3862(i: Int, class130: Class130?)
+    abstract fun method3862(i: Int, modelBatchBase: ModelBatchBase?)
 
     fun method3863(i: Int): Int {
         val i_101_ = -95 / ((i - 7) / 57)
@@ -1181,7 +1181,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         var bool_130_ = bool_130_
         var i_131_ = i_131_
         var i_132_ = i_132_
-        if (i_133_ >= -26) this.aClass130_8204 = null
+        if (i_133_ >= -26) this.aModelBatchBase_8204 = null
         anInt7932++
         bool_130_ = bool_130_ and method3639()
         if (!bool_130_ && (i_131_ == 4 || i_131_ == 8 || i_131_ == 9)) {
@@ -1223,7 +1223,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3915(0)
         method3926(75.toByte(), false)
         method3925(23, anInterface5_Impl1_8201, 0)
-        method3862(0, aClass130_8190)
+        method3862(0, aModelBatchBase_8190)
         method3899(256, 0, Class348_Sub42_Sub16.aClass21_9661, true)
         method3926(41.toByte(), true)
         method3885(0, true, Class342.aClass70_4247)
@@ -1695,7 +1695,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private fun method3907(bool: Boolean) {
         anInt7888++
         method3925(-128, anInterface5_Impl1_8203, 0)
-        method3862(0, aClass130_8205)
+        method3862(0, aModelBatchBase_8205)
         method3899(1, 0, Class249.aClass21_3217, bool)
     }
 
@@ -1842,7 +1842,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     if (anInterface5_Impl1_8201!!.method18(6331)) break
                 }
             }
-            aClass130_8190 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!))))
+            aModelBatchBase_8190 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!))))
         }
     }
 
@@ -2170,10 +2170,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aClass348_Sub1Array8132 = arrayOfNulls<Class348_Sub1>(-2 + this.anInt8138)
         this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, Class68.aClass68_1183, GroundItemRenderState.aClass304_1662)
         method3651(ArbVertexProgram(262144))
-        this.aClass130_8204 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078)))))
-        this.aClass130_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076)))))
-        this.aClass130_8208 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!), Class58(Class325.aClass325_4076!!), Class58(Class325.aClass325_4078!!), Class58(Class325.aClass325_4075!!))))
-        this.aClass130_8191 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!), Class58(Class325.aClass325_4076!!), Class58(Class325.aClass325_4078!!))))
+        this.aModelBatchBase_8204 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078)))))
+        this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076)))))
+        this.aModelBatchBase_8208 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!), Class58(Class325.aClass325_4076!!), Class58(Class325.aClass325_4078!!), Class58(Class325.aClass325_4075!!))))
+        this.aModelBatchBase_8191 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!), Class58(Class325.aClass325_4076!!), Class58(Class325.aClass325_4078!!))))
         this.aClass64_Sub2_8206 = Class64_Sub2(this, 0, 0, false, false)
         this.aClass64_Sub2_8198 = Class64_Sub2(this, 0, 0, true, true)
         this.aClass64_Sub2_8192 = Class64_Sub2(this, 0, 0, false, false)
@@ -2192,7 +2192,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aClass367Array8139[2] = method3832(2, (-65).toByte())
         aClass367Array8139[4] = method3832(4, (-73).toByte())
         aClass367Array8139[5] = method3832(5, (-101).toByte())
-        if (i.toInt() != 26) this.aClass130_8204 = null
+        if (i.toInt() != 26) this.aModelBatchBase_8204 = null
         aClass367Array8139[6] = method3832(6, (-60).toByte())
         aClass367Array8139[7] = method3832(7, (-100).toByte())
         aClass367Array8139[3] = method3832(3, (-63).toByte())

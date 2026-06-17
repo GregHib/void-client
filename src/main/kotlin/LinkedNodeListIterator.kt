@@ -191,7 +191,7 @@ class LinkedNodeListIterator {
                             method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, ((-113).toByte()).toByte(), i_16_, var_renderer)
                             i_14_++
                         }
-                        var class348_sub37 = Class130.aClass356_1895!!.method3484(i_2_ xor 0x59b0) as? Class348_Sub37
+                        var class348_sub37 = ModelBatchBase.aClass356_1895!!.method3484(i_2_ xor 0x59b0) as? Class348_Sub37
                         while (class348_sub37 != null) {
                             val i_17_ = (0x3L and ((class348_sub37.aLong4291) shr 28)).toInt()
                             if (Class334.anInt4155 == i_17_) {
@@ -201,7 +201,7 @@ class LinkedNodeListIterator {
                                 val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)
                                 Class151.method1211(i_1_, (Class348_Sub12.aAbstractModelRendererArray6742!![0]), i, class46, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
                             }
-                            class348_sub37 = (Class130.aClass356_1895!!.method3482(0) as? Class348_Sub37)
+                            class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3482(0) as? Class348_Sub37)
                         }
                         var i_22_ = 0
                         while ((i_22_ < Class150.anInt2057)) {

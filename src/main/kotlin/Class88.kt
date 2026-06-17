@@ -155,15 +155,15 @@ class Class88 {
                         SceneRegionState.anInt197 = 0
                     }
                     if (Class225.anInt2955 == 1) {
-                        if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) Class130_Sub1.aClass144_5800 = (Class3.aClass161_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
-                        else Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aClass144_5800 = (Class3.aClass161_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        else FrameStatsReset.aClass144_5800 = (Class255.aClass161_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
                         Class225.anInt2955 = 2
                     }
                     if (Class225.anInt2955 == 2) {
-                        if (Class130_Sub1.aClass144_5800!!.anInt1997 == 2) throw IOException()
-                        if (Class130_Sub1.aClass144_5800!!.anInt1997 != 1) return
-                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982((((Class130_Sub1.aClass144_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
-                        Class130_Sub1.aClass144_5800 = null
+                        if (FrameStatsReset.aClass144_5800!!.anInt1997 == 2) throw IOException()
+                        if (FrameStatsReset.aClass144_5800!!.anInt1997 != 1) return
+                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982((((FrameStatsReset.aClass144_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
+                        FrameStatsReset.aClass144_5800 = null
                         method2739(0)
                         val class348_sub47 = Class203.method1478(true)
                         class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeByte(false, Class178.aClass29_2339!!.anInt400)
@@ -347,10 +347,10 @@ class Class88 {
                                 Class348_Sub42_Sub11.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class206.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class24.anInt359 = class348_sub49_sub2.method3369(125.toByte())
-                                Class130.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                Class348_Sub40_Sub12.aClass263_9195!!.method2004(Class130.aBoolean1900, 25.toByte())
-                                Exception_Sub1.aClass255_112!!.method1934(11.toByte(), Class130.aBoolean1900)
-                                Class189.aClass278_2529!!.method2072(88.toByte(), Class130.aBoolean1900)
+                                ModelBatchBase.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
+                                Class348_Sub40_Sub12.aClass263_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
+                                Exception_Sub1.aClass255_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
+                                Class189.aClass278_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
                             } else {
                                 if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class76.Companion.anInt1288, 107)) return
                                 Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class76.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
@@ -368,7 +368,7 @@ class Class88 {
                                 Class170.anInt5065 = class348_sub49_sub2.readInt((-126).toByte())
                                 Class348_Sub42_Sub6.aClass144_9536 = Class348_Sub23_Sub1.aClass297_8992!!.method2232(116, Class170.anInt5065)
                                 Class216.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
-                                Class130_Sub1.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944)
+                                FrameStatsReset.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class348_Sub6.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class290.aBoolean3706 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 OpenGlTerrainTile.aString8265 = class348_sub49_sub2.method3371(-13487)
@@ -445,7 +445,7 @@ class Class88 {
                                 Class225.anInt2955 = 0
                                 val i_13_ = Class348_Sub40_Sub25.anInt9341
                                 Class14_Sub4.method254(2, (-124).toByte())
-                                Class130_Sub1.method1135(0)
+                                FrameStatsReset.method1135(0)
                                 Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 Renderer.anInt4581 = -1
                                 if (Class348_Sub3.aIntRange_6584 != Class19.aIntRange_304) method3120(-92)
