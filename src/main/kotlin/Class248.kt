@@ -9,7 +9,7 @@ class Class248 {
     private val aLinkedNodeListIterator_3206 = LinkedNodeListIterator()
     private var aLong3207: Long = 0
     private val aClass348_Sub49_3208 = Class348_Sub49(4)
-    private var aClass202_3209: Class202? = null
+    private var aSocketStreamWorker_3209: SocketStreamWorker? = null
     private var anInt3210 = 0
     private val aClass348_Sub49_3211: Class348_Sub49
     private var aByte3212: Byte = 0
@@ -25,27 +25,27 @@ class Class248 {
 
     fun method1892(i: Int, bool: Boolean) {
         anInt3194++
-        if (aClass202_3209 != null) {
+        if (aSocketStreamWorker_3209 != null) {
             try {
                 aClass348_Sub49_3208.anInt7197 = 0
                 aClass348_Sub49_3208.writeByte(false, if (bool) 2 else 3)
                 aClass348_Sub49_3208.method3340(-9912, 0)
-                if (i < -66) aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
+                if (i < -66) aSocketStreamWorker_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
             } catch (ioexception: IOException) {
                 try {
-                    aClass202_3209!!.method1476((-121).toByte())
+                    aSocketStreamWorker_3209!!.method1476((-121).toByte())
                 } catch (exception: Exception) {
                     /* empty */
                 }
                 this.anInt3213++
-                aClass202_3209 = null
+                aSocketStreamWorker_3209 = null
                 this.anInt3214 = -2
             }
         }
     }
 
     fun method1893(i: Byte): Boolean {
-        if (aClass202_3209 != null) {
+        if (aSocketStreamWorker_3209 != null) {
             val l = method599(-106)
             var i_0_ = (-aLong3207 + l).toInt()
             if (i_0_ > 200) i_0_ = 200
@@ -53,26 +53,26 @@ class Class248 {
             anInt3210 += i_0_
             if (anInt3210 > 30000) {
                 try {
-                    aClass202_3209!!.method1476((-121).toByte())
+                    aSocketStreamWorker_3209!!.method1476((-121).toByte())
                 } catch (exception: Exception) {
                     /* empty */
                 }
-                aClass202_3209 = null
+                aSocketStreamWorker_3209 = null
             }
         }
         anInt3190++
-        if (aClass202_3209 == null) {
+        if (aSocketStreamWorker_3209 == null) {
             return method1902(4) == 0 && method1894(4350) == 0
         }
         try {
-            aClass202_3209!!.method1472(true)
+            aSocketStreamWorker_3209!!.method1472(true)
             run {
                 var class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3197.method1011(-30) as Class348_Sub42_Sub16_Sub1?)
                 while (class348_sub42_sub16_sub1 != null) {
                     aClass348_Sub49_3208.anInt7197 = 0
                     aClass348_Sub49_3208.writeByte(false, 1)
                     aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
-                    aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
+                    aSocketStreamWorker_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
                     aLinkedNodeListIterator_3204.method1005(true, class348_sub42_sub16_sub1)
                     class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3197.method1003(65.toByte()) as Class348_Sub42_Sub16_Sub1?)
                 }
@@ -83,12 +83,12 @@ class Class248 {
                 aClass348_Sub49_3208.anInt7197 = 0
                 aClass348_Sub49_3208.writeByte(false, 0)
                 aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
-                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
+                aSocketStreamWorker_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
                 aLinkedNodeListIterator_3206.method1005(true, class348_sub42_sub16_sub1)
                 class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3205.method1003(102.toByte()) as Class348_Sub42_Sub16_Sub1?)
             }
             for (i_1_ in 0..99) {
-                val i_2_ = aClass202_3209!!.method1467(83.toByte())
+                val i_2_ = aSocketStreamWorker_3209!!.method1467(83.toByte())
                 if (i_2_ < 0) throw IOException()
                 if (i_2_ == 0) break
                 anInt3210 = 0
@@ -100,7 +100,7 @@ class Class248 {
                     var i_5_ = (-aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 + 512)
                     if (i_5_ > -(aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197) + i_4_) i_5_ = i_4_ - aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197
                     if (i_2_ < i_5_) i_5_ = i_2_
-                    aClass202_3209!!.method1474((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!!), aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197, (-72).toByte(), i_5_)
+                    aSocketStreamWorker_3209!!.method1474((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!!), aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197, (-72).toByte(), i_5_)
                     if (aByte3212.toInt() != 0) {
                         var i_6_ = 0
                         while (i_5_ > i_6_) {
@@ -118,7 +118,7 @@ class Class248 {
                 } else {
                     var i_7_ = i_3_ + -(aClass348_Sub49_3211.anInt7197)
                     if (i_2_ < i_7_) i_7_ = i_2_
-                    aClass202_3209!!.method1474((aClass348_Sub49_3211.aByteArray7154!!), aClass348_Sub49_3211.anInt7197, (-72).toByte(), i_7_)
+                    aSocketStreamWorker_3209!!.method1474((aClass348_Sub49_3211.aByteArray7154!!), aClass348_Sub49_3211.anInt7197, (-72).toByte(), i_7_)
                     if (aByte3212.toInt() != 0) {
                         for (i_8_ in 0..<i_7_) aClass348_Sub49_3211.aByteArray7154!![i_8_ + aClass348_Sub49_3211.anInt7197] = (Class348_Sub21.method2955((aClass348_Sub49_3211.aByteArray7154!![i_8_ + (aClass348_Sub49_3211.anInt7197)]).toInt(), aByte3212.toInt())).toByte()
                     }
@@ -168,13 +168,13 @@ class Class248 {
             return true
         } catch (ioexception: IOException) {
             try {
-                aClass202_3209!!.method1476((-122).toByte())
+                aSocketStreamWorker_3209!!.method1476((-122).toByte())
             } catch (exception: Exception) {
                 /* empty */
             }
             this.anInt3214 = -2
             this.anInt3213++
-            aClass202_3209 = null
+            aSocketStreamWorker_3209 = null
             return method1902(4) == 0 && method1894(4350) == 0
         }
     }
@@ -188,20 +188,20 @@ class Class248 {
     private fun method1896(i: Int) {
         if (i <= -58) {
             anInt3191++
-            if (aClass202_3209 != null) {
+            if (aSocketStreamWorker_3209 != null) {
                 try {
                     aClass348_Sub49_3208.anInt7197 = 0
                     aClass348_Sub49_3208.writeByte(false, 6)
                     aClass348_Sub49_3208.method3340(-9912, 3)
-                    aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
+                    aSocketStreamWorker_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
                 } catch (ioexception: IOException) {
                     try {
-                        aClass202_3209!!.method1476((-123).toByte())
+                        aSocketStreamWorker_3209!!.method1476((-123).toByte())
                     } catch (exception: Exception) {
                         /* empty */
                     }
                     this.anInt3214 = -2
-                    aClass202_3209 = null
+                    aSocketStreamWorker_3209 = null
                     this.anInt3213++
                 }
             }
@@ -209,7 +209,7 @@ class Class248 {
     }
 
     fun method1898(bool: Boolean) {
-        if (aClass202_3209 != null) aClass202_3209!!.method1468(72)
+        if (aSocketStreamWorker_3209 != null) aSocketStreamWorker_3209!!.method1468(72)
         if (bool != true) method1904(99)
         anInt3185++
     }
@@ -228,7 +228,7 @@ class Class248 {
 
     fun method1901(i: Int) {
         if (i > -27) method1901(21)
-        if (aClass202_3209 != null) aClass202_3209!!.method1476((-122).toByte())
+        if (aSocketStreamWorker_3209 != null) aSocketStreamWorker_3209!!.method1476((-122).toByte())
         anInt3200++
     }
 
@@ -238,17 +238,17 @@ class Class248 {
         return aLinkedNodeListIterator_3197.method1002(0) + aLinkedNodeListIterator_3204.method1002(0)
     }
 
-    fun method1903(bool: Boolean, bool_28_: Boolean, class202: Class202?) {
-        if (aClass202_3209 != null) {
+    fun method1903(bool: Boolean, bool_28_: Boolean, socketStreamWorker: SocketStreamWorker?) {
+        if (aSocketStreamWorker_3209 != null) {
             try {
-                aClass202_3209!!.method1476((-124).toByte())
+                aSocketStreamWorker_3209!!.method1476((-124).toByte())
             } catch (exception: Exception) {
                 /* empty */
             }
-            aClass202_3209 = null
+            aSocketStreamWorker_3209 = null
         }
         anInt3193++
-        aClass202_3209 = class202
+        aSocketStreamWorker_3209 = socketStreamWorker
         method1896(-92)
         method1892(-92, bool_28_)
         aClass348_Sub49_3211.anInt7197 = 0
@@ -270,16 +270,16 @@ class Class248 {
                 aClass348_Sub49_3208.writeByte(bool, 4)
                 aClass348_Sub49_3208.writeByte(bool, aByte3212.toInt())
                 aClass348_Sub49_3208.writeShort(107.toByte(), 0)
-                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
+                aSocketStreamWorker_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
             } catch (ioexception: IOException) {
                 try {
-                    aClass202_3209!!.method1476((-126).toByte())
+                    aSocketStreamWorker_3209!!.method1476((-126).toByte())
                 } catch (exception: Exception) {
                     /* empty */
                 }
                 this.anInt3214 = -2
                 this.anInt3213++
-                aClass202_3209 = null
+                aSocketStreamWorker_3209 = null
             }
         }
         anInt3210 = 0
@@ -288,12 +288,12 @@ class Class248 {
 
     fun method1904(i: Int) {
         try {
-            aClass202_3209!!.method1476((-123).toByte())
+            aSocketStreamWorker_3209!!.method1476((-123).toByte())
         } catch (exception: Exception) {
             /* empty */
         }
         anInt3189++
-        aClass202_3209 = null
+        aSocketStreamWorker_3209 = null
         this.anInt3213++
         aByte3212 = (Math.random() * 255.0 + 1.0).toInt().toByte()
         this.anInt3214 = i
@@ -301,21 +301,21 @@ class Class248 {
 
     fun method1905(i: Int) {
         anInt3188++
-        if (aClass202_3209 != null) {
+        if (aSocketStreamWorker_3209 != null) {
             try {
                 aClass348_Sub49_3208.anInt7197 = i
                 aClass348_Sub49_3208.writeByte(false, 7)
                 aClass348_Sub49_3208.method3340(-9912, 0)
-                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, i.inv())
+                aSocketStreamWorker_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, i.inv())
             } catch (ioexception: IOException) {
                 try {
-                    aClass202_3209!!.method1476((-125).toByte())
+                    aSocketStreamWorker_3209!!.method1476((-125).toByte())
                 } catch (exception: Exception) {
                     /* empty */
                 }
                 this.anInt3214 = -2
                 this.anInt3213++
-                aClass202_3209 = null
+                aSocketStreamWorker_3209 = null
             }
         }
     }

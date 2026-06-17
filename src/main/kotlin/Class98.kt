@@ -27,7 +27,7 @@ class Class98 {
         fun method877(i: Int, i_0_: Int, i_1_: Byte): Boolean {
             if (i_1_.toInt() != -127) anIntArrayArray1566 = null
             anInt1567++
-            return method2174(126.toByte(), i, i_0_) || Class202.method1475(((-107).toByte()).toByte(), i_0_, i)
+            return method2174(126.toByte(), i, i_0_) || SocketStreamWorker.method1475(((-107).toByte()).toByte(), i_0_, i)
         }
 
         @JvmStatic

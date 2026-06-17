@@ -18,7 +18,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
         var aClass351_2587: Class351? = Class351(38, 7)
         var anInt2588: Int = 0
         @JvmField
-        var aClass202_2589: Class202? = null
+        var aSocketStreamWorker_2589: SocketStreamWorker? = null
         @JvmField
         var anInt2590: Int = 0
 
@@ -77,7 +77,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
 
         @JvmStatic
         fun method1440(i: Int) {
-            aClass202_2589 = null
+            aSocketStreamWorker_2589 = null
             val i_4_ = -79 / ((i - -45) / 46)
             aClass351_2587 = null
         }

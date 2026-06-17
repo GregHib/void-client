@@ -4066,7 +4066,7 @@ object Class66 {
                     return
                 }
                 if (i == 3337) {
-                    anIntArray1149!![anInt1173++] = Class202.anInt2670
+                    anIntArray1149!![anInt1173++] = SocketStreamWorker.anInt2670
                     return
                 }
                 if (i == 3338) {

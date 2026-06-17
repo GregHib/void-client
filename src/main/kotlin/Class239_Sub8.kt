@@ -147,7 +147,7 @@ class Class239_Sub8 : Class239 {
         fun method1750(i: Int, i_6_: Int) {
             anInt5912++
             Class348_Sub42_Sub1.anInt9488 = i_6_
-            Class202.aClass60_2671!!.method590(0)
+            SocketStreamWorker.aClass60_2671!!.method590(0)
         }
 
         @JvmStatic

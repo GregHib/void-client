@@ -880,7 +880,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
                                 Class348_Sub42_Sub13.anInt9620++
-                                val class348_sub47 = method2148((Class202.aClass351_2661), (Class348_Sub23_Sub2.aClass77_9029), -117)
+                                val class348_sub47 = method2148((SocketStreamWorker.aClass351_2661), (Class348_Sub23_Sub2.aClass77_9029), -117)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-101).toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -125)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-69, ArbVertexProgram.regionTileX + i_74_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class90.regionTileY + i_75_, 3.toByte())

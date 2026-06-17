@@ -6,7 +6,10 @@ import java.io.InputStream
 import java.io.OutputStream
 import java.net.Socket
 
-class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int) : Runnable {
+/*
+ * Class202
+ */
+class SocketStreamWorker internal constructor(socket: Socket?, class297: Class297?, i: Int) : Runnable {
     private var anInt2648 = 0
     private val aClass297_2649: Class297?
     private var anInputStream2652: InputStream? = null

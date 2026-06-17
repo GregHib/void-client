@@ -1067,7 +1067,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class202.aIntRange_2665 == Class348_Sub3.aIntRange_6584) {
+            if (SocketStreamWorker.aIntRange_2665 == Class348_Sub3.aIntRange_6584) {
                 for (i in Class294.aPlayerArray5058!!.indices) {
                     if (Class294.aPlayerArray5058!![i] != null) {
                         Class294.aPlayerArray5058!![i]!!.anIntArray10236 = null

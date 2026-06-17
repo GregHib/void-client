@@ -979,7 +979,7 @@ class Class64_Sub3 : Class64 {
                 class64_sub3_211_.aFloatArray5571 = aFloatArray5571
                 class64_sub3_211_.aFloatArray5552 = aFloatArray5552
             }
-            if (Class202.method1475((-96).toByte(), anInt5556, i)) {
+            if (SocketStreamWorker.method1475((-96).toByte(), anInt5556, i)) {
                 class64_sub3_211_.aHoverActionEntry_5620 = class64_sub3_213_!!.aHoverActionEntry_5620
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x8).toByte()
                 class64_sub3_211_.aHoverActionEntry_5620!!.anInterface2_1811 = aHoverActionEntry_5620!!.anInterface2_1811

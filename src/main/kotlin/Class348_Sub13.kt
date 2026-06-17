@@ -90,7 +90,7 @@ class Class348_Sub13 : Class348() {
                 if (bool_21_) i_15_ = i_15_ or 0x400
             }
             val l = method2802((if (compositeNpcModelBuilder != null) compositeNpcModelBuilder.anIntArray2095 else null), i, bool, `is`, (-74).toByte())
-            if (Class202.aClass60_2671 != null) class64 = Class202.aClass60_2671!!.method583(l, i_14_ xor 0x56) as Class64?
+            if (SocketStreamWorker.aClass60_2671 != null) class64 = SocketStreamWorker.aClass60_2671!!.method583(l, i_14_ xor 0x56) as Class64?
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_15_) != 0) {
                 if (class64 != null) i_15_ = var_renderer!!.method3679(i_15_, class64.ua())
                 var i_28_ = i_15_
@@ -131,9 +131,9 @@ class Class348_Sub13 : Class348() {
                         }
                     }
                 }
-                if (Class202.aClass60_2671 != null) {
+                if (SocketStreamWorker.aClass60_2671 != null) {
                     class64.s(i_15_)
-                    Class202.aClass60_2671!!.method582(class64, l, (-128).toByte())
+                    SocketStreamWorker.aClass60_2671!!.method582(class64, l, (-128).toByte())
                 }
             }
             if (widgetDefinition == null || class348_sub42_sub17 == null) return class64

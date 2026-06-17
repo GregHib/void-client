@@ -123,7 +123,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Npc.anInt10504 = 0
             Player.anInt10547 = 0
             Class239_Sub21.anInt6059 = 0
-            Class202.anInt2646 = 0
+            SocketStreamWorker.anInt2646 = 0
             Class64_Sub2.anInt5480 = 0
             Class367_Sub10.anInt7384 = 0
             Class265.anInt4690 = 0
@@ -316,7 +316,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class243.anInt3157 = 0
             Class348_Sub49.anInt7161 = 0
             Class239_Sub17.anInt6025 = 0
-            Class202.anInt2666 = 0
+            SocketStreamWorker.anInt2666 = 0
             Class318_Sub1_Sub4_Sub1.anInt10065 = 0
             Class377.anInt9812 = 0
             Class46.anInt783 = 0
@@ -412,7 +412,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5702 = 0
             Class348_Sub42_Sub13.anInt9618 = 0
             Class239_Sub28.anInt6141 = 0
-            Class202.anInt2655 = 0
+            SocketStreamWorker.anInt2655 = 0
             Class348_Sub40.anInt7037 = 0
             Class348_Sub16_Sub1.anInt8847 = 0
             Class64_Sub2.anInt5481 = 0
@@ -1335,7 +1335,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub29.anInt6149 = 0
             Class377.anInt9820 = 0
             Class239_Sub18.anInt6031 = 0
-            Class202.anInt2650 = 0
+            SocketStreamWorker.anInt2650 = 0
             Class239_Sub10.anInt5940 = 0
             Class239_Sub15.anInt6001 = 0
             Class45.anInt652 = 0
@@ -1740,7 +1740,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7515 = 0
             Class373_Sub2.anInt7431 = 0
             SpriteSheetCache.anInt2560 = 0
-            Class202.anInt2664 = 0
+            SocketStreamWorker.anInt2664 = 0
             Class290.anInt3707 = 0
             Class255.anInt3274 = 0
             GlRectangleTexture.anInt8650 = 0
@@ -2056,7 +2056,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub20.anInt9708 = 0
             Class316.anInt3958 = 0
             Class64_Sub2.anInt5425 = 0
-            Class202.anInt2667 = 0
+            SocketStreamWorker.anInt2667 = 0
             NativeRenderer.anInt7923 = 0
             Class348_Sub40_Sub38.anInt9472 = 0
             Class288_Sub1.anInt8574 = 0
@@ -2354,7 +2354,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class258.anInt4861 = 0
             GameAppletFrame.anInt36 = 0
             Class59_Sub1.anInt5292 = 0
-            Class202.anInt2651 = 0
+            SocketStreamWorker.anInt2651 = 0
             Class348_Sub40_Sub26.anInt9348 = 0
             Class279.anInt3595 = 0
             Class348_Sub5.anInt6626 = 0
@@ -2461,7 +2461,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class357.anInt4393 = 0
             Class318_Sub1_Sub3.anInt8748 = 0
             Class285_Sub1.anInt8489 = 0
-            Class202.anInt2653 = 0
+            SocketStreamWorker.anInt2653 = 0
             Class308.anInt3880 = 0
             Class43.anInt613 = 0
             TerrainTile.anInt4593 = 0
@@ -3188,7 +3188,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GameAppletFrame.anInt32 = 0
             ScriptCompilerThread.anInt1726 = 0
             SingletonMarker.anInt2600 = 0
-            Class202.anInt2662 = 0
+            SocketStreamWorker.anInt2662 = 0
             Class66.anInt1157 = 0
             Class251.anInt3235 = 0
             Class319.anInt3984 = 0
@@ -3288,7 +3288,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8030 = 0
             Class5.anInt4641 = 0
             Class307.anInt3877 = 0
-            Class202.anInt2647 = 0
+            SocketStreamWorker.anInt2647 = 0
             Class237.anInt3112 = 0
             Class318_Sub1_Sub4_Sub1.anInt10067 = 0
             Class348_Sub16_Sub1.anInt8851 = 0
@@ -3451,7 +3451,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             DelegatingRenderCanvas.anInt68 = 0
             Class45.anInt631 = 0
             AnimatedModelRenderer.anInt8401 = 0
-            Class202.anInt2660 = 0
+            SocketStreamWorker.anInt2660 = 0
             NativeRenderer.anInt7889 = 0
             GzipDecompressor.anInt2070 = 0
             Class348_Sub49.anInt7148 = 0

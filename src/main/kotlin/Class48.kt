@@ -87,7 +87,7 @@ class Class48 {
                     val `is`: IntArray = Class50_Sub1.Companion.method463(class348_sub47, false)
                     val i_4_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string_1_!!)
-                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class202.anInt2670)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), SocketStreamWorker.anInt2670)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeLong(TextureMetadataProvider.aLong4615, 104.toByte())
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, Class348_Sub33.anInt6967)
