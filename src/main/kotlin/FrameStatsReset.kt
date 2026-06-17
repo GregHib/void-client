@@ -677,7 +677,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class71.anInt1209 = 0
             Class367_Sub1.anInt7280 = 0
             Class280.anInt3629 = 0
-            Class154.anInt2104 = 0
+            CompositeNpcModelBuilder.anInt2104 = 0
             Class348_Sub49.anInt7156 = 0
             Class318_Sub1_Sub4_Sub2.anInt10101 = 0
             OpenGlRenderer.anInt7600 = 0
@@ -1036,7 +1036,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7586 = 0
             Class367_Sub3.anInt7305 = 0
             MatrixCameraTransform.anInt5676 = 0
-            Class154.anInt2098 = 0
+            CompositeNpcModelBuilder.anInt2098 = 0
             Class373.anInt4533 = 0
             Class348_Sub16_Sub3.anInt8935 = 0
             Class377.anInt9893 = 0
@@ -1289,7 +1289,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub4.anInt6408 = 0
             Class318_Sub2.anInt6395 = 0
             Class78.anInt1316 = 0
-            Class154.anInt2091 = 0
+            CompositeNpcModelBuilder.anInt2091 = 0
             Class187.anInt2505 = 0
             CharCountUtil.anInt226 = 0
             PlayerUpdateDecoder.anInt1916 = 0
@@ -1312,7 +1312,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class155.anInt2108 = 0
             OrientationRotator.anInt2044 = 0
             Class348_Sub42_Sub16_Sub1.anInt10454 = 0
-            Class154.anInt2090 = 0
+            CompositeNpcModelBuilder.anInt2090 = 0
             Class367_Sub11.anInt7393 = 0
             NativeRenderer.anInt8027 = 0
             Class33.anInt456 = 0
@@ -2418,7 +2418,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7202 = 0
             OpenGlRenderer.anInt7547 = 0
             Class157.anInt2121 = 0
-            Class154.anInt2096 = 0
+            CompositeNpcModelBuilder.anInt2096 = 0
             Class346_Sub1.anInt6525 = 0
             Class58.anInt1062 = 0
             Class35.anInt485 = 0
@@ -2597,7 +2597,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class307.anInt3878 = 0
             anInt5795 = 0
             Class64_Sub2.anInt5446 = 0
-            Class154.anInt2097 = 0
+            CompositeNpcModelBuilder.anInt2097 = 0
             Class34.anInt462 = 0
             Class318_Sub1_Sub3_Sub5.anInt10402 = 0
             Class339.anInt4209 = 0
@@ -3129,7 +3129,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeTerrainTile.anInt8297 = 0
             Class288_Sub1.anInt8576 = 0
             Class243.anInt3159 = 0
-            Class154.anInt2099 = 0
+            CompositeNpcModelBuilder.anInt2099 = 0
             Class286_Sub9.anInt6318 = 0
             Class318_Sub1_Sub1.anInt8726 = 0
             Class348_Sub14.anInt6760 = 0
@@ -3998,7 +3998,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeTerrainTile.anInt8316 = 0
             Class294.anInt5044 = 0
             Class196.anInt2599 = 0
-            Class154.anInt2107 = 0
+            CompositeNpcModelBuilder.anInt2107 = 0
             Class348_Sub16_Sub3.anInt8890 = 0
             Class55.anInt986 = 0
             Class239_Sub16.anInt6015 = 0
@@ -4097,7 +4097,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9895 = 0
             Class239_Sub13.anInt5974 = 0
             Class373_Sub2.anInt7457 = 0
-            Class154.anInt2106 = 0
+            CompositeNpcModelBuilder.anInt2106 = 0
             Class348_Sub40_Sub6.anInt9138 = 0
             Class347.aBoolean4278 = true
             Class175.aBoolean2329 = true

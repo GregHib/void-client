@@ -218,7 +218,7 @@ object PlayerUpdateDecoder {
                         val `is` = ByteArray(i_35_)
                         val class348_sub49 = Class348_Sub49(`is`)
                         class348_sub49_sub2.method3347(`is`, 0, i_35_, (-124).toByte())
-                        Class154.aClass348_Sub49Array2105!![i] = class348_sub49
+                        CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i] = class348_sub49
                         player!!.method2452(84.toByte(), class348_sub49)
                     }
                     if ((0x800 and i_0_) != 0) i_2_ = class348_sub49_sub2!!.readByteInverse(-622951480)

@@ -292,7 +292,7 @@ class Class211 {
                 val class359 = Class348_Sub17.aClass359Array6802!![i]!!
                 val player = (Player().also { Class294.aPlayerArray5058!![i] = it })
                 player.anInt10290 = i
-                if (Class154.aClass348_Sub49Array2105!![i] != null) player.method2452(84.toByte(), Class154.aClass348_Sub49Array2105!![i]!!)
+                if (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i] != null) player.method2452(84.toByte(), CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i]!!)
                 player.method2435((-108).toByte(), (class359.anInt4423), true)
                 player.anInt10275 = class359.anInt4425
                 val i_4_ = class359.anInt4420

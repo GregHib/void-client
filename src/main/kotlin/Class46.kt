@@ -367,7 +367,7 @@ class Class46 {
         return class348_sub50.aString7211
     }
 
-    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, class255: Class255?, interface17: Interface17?, i_23_: Int, class154: Class154?, class17: Class17?, class261: Class261?, class278: Class278?, i_24_: Int): Class64? {
+    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, class255: Class255?, interface17: Interface17?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, class17: Class17?, class261: Class261?, class278: Class278?, i_24_: Int): Class64? {
         var i = i
         try {
             anInt684++
@@ -403,8 +403,8 @@ class Class46 {
                 return class64
             }
             if (this.anInt770 == 3) {
-                if (class154 == null) return null
-                val class64 = class154.method1230(class255, -402058072, class87, modelDefinitionLoader, interface17, class278, i_21_, i_24_, i, class17, i_22_, var_renderer)
+                if (compositeNpcModelBuilder == null) return null
+                val class64 = compositeNpcModelBuilder.method1230(class255, -402058072, class87, modelDefinitionLoader, interface17, class278, i_21_, i_24_, i, class17, i_22_, var_renderer)
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -413,7 +413,7 @@ class Class46 {
             }
             if (this.anInt770 == 4) {
                 val class213 = class255!!.method1940(i_23_ + -365, this.anInt753)
-                val class64 = class213.method1559(class154, class17, var_renderer, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
+                val class64 = class213.method1559(compositeNpcModelBuilder, class17, var_renderer, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -429,11 +429,11 @@ class Class46 {
                 return class64
             }
             if (this.anInt770 == 7) {
-                if (class154 == null) return null
+                if (compositeNpcModelBuilder == null) return null
                 val i_26_ = this.anInt753 ushr 16
                 val i_27_ = 0xffff and this.anInt753
                 val i_28_ = this.anInt779
-                val class64 = class154.method1232(i_24_, i, i_28_, i_27_, class87, modelDefinitionLoader, -15331, i_26_, i_22_, var_renderer, i_21_, class17)
+                val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, class87, modelDefinitionLoader, -15331, i_26_, i_22_, var_renderer, i_21_, class17)
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -444,7 +444,7 @@ class Class46 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (class255 != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (class154 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class261 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_24_ + ')')
+                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (class255 != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class261 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
         }
     }

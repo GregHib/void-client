@@ -200,7 +200,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             }
             if (bool) {
                 bool = true
-                Class154.anInt2101 = 0
+                CompositeNpcModelBuilder.anInt2101 = 0
                 for (i_20_ in Class347.aByteArrayArray4281!!.indices) {
                     var `is` = GlRectangleTexture.aByteArrayArray8642!![i_20_]
                     if (`is` != null) {

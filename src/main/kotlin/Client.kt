@@ -56,7 +56,7 @@ import GlRectangleTexture.Companion.method251
 import CharCountUtil.method255
 import ModelDefinitionLoader.Companion.method1208
 import HeadIconRenderer.Companion.method1209
-import Class154.Companion.method1235
+import CompositeNpcModelBuilder.Companion.method1235
 import Class156.Companion.method1239
 import Class156.Companion.method1242
 import Class157.method1246
@@ -1707,8 +1707,8 @@ class Client : GameAppletFrame() {
                             val i = ((-Class268.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115)
                             method3511(true, aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
                         } else if (Class36.anInt489 == 2) {
-                            if (Class31.anInt443 < Class154.anInt2101) Class31.anInt443 = Class154.anInt2101
-                            val i = (((Class31.anInt443 - Class154.anInt2101) * 50 / Class31.anInt443) + 50)
+                            if (Class31.anInt443 < CompositeNpcModelBuilder.anInt2101) Class31.anInt443 = CompositeNpcModelBuilder.anInt2101
+                            val i = (((Class31.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / Class31.anInt443) + 50)
                             method3511(true, aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
                         } else method3511(true, aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
                     } else if (Class240.anInt4674 != 10) {

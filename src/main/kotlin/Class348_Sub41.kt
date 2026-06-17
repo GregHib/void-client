@@ -65,7 +65,7 @@ class Class348_Sub41 : Class348() {
                             if (i_12_ != 22 || Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 bool_7_ = true
                                 if (!class51.method485(9773)) {
-                                    Class154.anInt2101++
+                                    CompositeNpcModelBuilder.anInt2101++
                                     bool = false
                                 }
                             }

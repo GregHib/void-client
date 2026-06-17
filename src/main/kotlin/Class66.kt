@@ -2776,16 +2776,16 @@ object Class66 {
                 anInt1173 -= 2
                 val i_258_ = anIntArray1149!![anInt1173]
                 val i_259_ = anIntArray1149!![anInt1173 + 1]
-                if ((LocalPlayerState.aPlayer_1907!!.aClass154_10536) != null) {
+                if ((LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) != null) {
                     for (i_260_ in TextureDefinitionLoader.anIntArray1973!!.indices) {
                         if (TextureDefinitionLoader.anIntArray1973!![i_260_] == i_258_) {
-                            LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aModelDefinitionLoader_9342, i_259_, -1, i_260_)
+                            LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1233(Class348_Sub40_Sub25.aModelDefinitionLoader_9342, i_259_, -1, i_260_)
                             return
                         }
                     }
                     for (i_261_ in Class91.anIntArray1521!!.indices) {
                         if (Class91.anIntArray1521!![i_261_] == i_258_) {
-                            LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aModelDefinitionLoader_9342, i_259_, -1, i_261_)
+                            LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1233(Class348_Sub40_Sub25.aModelDefinitionLoader_9342, i_259_, -1, i_261_)
                             break
                         }
                     }
@@ -2797,16 +2797,16 @@ object Class66 {
                 anInt1173 -= 2
                 val i_262_ = anIntArray1149!![anInt1173]
                 val i_263_ = anIntArray1149!![anInt1173 + 1]
-                if ((LocalPlayerState.aPlayer_1907!!.aClass154_10536) != null) {
-                    LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1231(i_262_, 0, i_263_)
+                if ((LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) != null) {
+                    LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1231(i_262_, 0, i_263_)
                     return
                 }
                 return
             }
             if (i == 410) {
                 val bool_264_ = anIntArray1149!![--anInt1173] != 0
-                if ((LocalPlayerState.aPlayer_1907!!.aClass154_10536) != null) {
-                    LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1229((-17).toByte(), bool_264_)
+                if ((LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) != null) {
+                    LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1229((-17).toByte(), bool_264_)
                     return
                 }
                 return
@@ -2815,8 +2815,8 @@ object Class66 {
                 anInt1173 -= 2
                 val i_265_ = anIntArray1149!![anInt1173]
                 val i_266_ = anIntArray1149!![anInt1173 + 1]
-                if ((LocalPlayerState.aPlayer_1907!!.aClass154_10536) != null) {
-                    LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1227(42.toByte(), i_265_, i_266_, Exception_Sub1.aClass255_112)
+                if ((LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) != null) {
+                    LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1227(42.toByte(), i_265_, i_266_, Exception_Sub1.aClass255_112)
                     return
                 }
                 return
@@ -4019,7 +4019,7 @@ object Class66 {
                     return
                 }
                 if (i == 3327) {
-                    anIntArray1149!![anInt1173++] = if ((LocalPlayerState.aPlayer_1907!!.aClass154_10536) != null && LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.aBoolean2100) 1 else 0
+                    anIntArray1149!![anInt1173++] = if ((LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) != null && LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.aBoolean2100) 1 else 0
                     return
                 }
                 if (i == 3329) {
@@ -4659,7 +4659,7 @@ object Class66 {
                     anInt1170 -= 2
                     val string = aStringArray1152!![anInt1170]
                     val string_431_ = aStringArray1152!![anInt1170 + 1]
-                    if ((LocalPlayerState.aPlayer_1907!!.aClass154_10536) != null && LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.aBoolean2100) aStringArray1152!![anInt1170++] = string_431_
+                    if ((LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) != null && LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.aBoolean2100) aStringArray1152!![anInt1170++] = string_431_
                     else {
                         aStringArray1152!![anInt1170++] = string
                         return

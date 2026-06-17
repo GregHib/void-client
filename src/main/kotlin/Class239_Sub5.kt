@@ -85,7 +85,7 @@ class Class239_Sub5 : Class239 {
             player.plane = player.aByte6376
             Class355.anInt4372 = player.plane.toInt()
             if (Class79.method802((player.anIntArray10317!![0]), (player.anIntArray10320!![0]), true)) player.aByte6376++
-            if (Class154.aClass348_Sub49Array2105!![i_3_] != null) player.method2452(84.toByte(), (Class154.aClass348_Sub49Array2105!![i_3_]!!))
+            if (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_] != null) player.method2452(84.toByte(), (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_]!!))
             Class328_Sub1.anInt6513 = 0
             Class286_Sub7.anIntArray6290!![Class328_Sub1.anInt6513++] = i_3_
             Class348_Sub5.aByteArray6624!![i_3_] = 0.toByte()

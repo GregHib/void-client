@@ -1,7 +1,7 @@
 /* Class154 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class154 {
+class CompositeNpcModelBuilder {
     private var anIntArray2092: IntArray? = null
     var anInt2093: Int = -1
     private var aLong2094: Long = 0

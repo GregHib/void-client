@@ -22,7 +22,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     @JvmField
     var anInt10535: Int
     @JvmField
-    var aClass154_10536: Class154? = null
+    var aCompositeNpcModelBuilder_10536: CompositeNpcModelBuilder? = null
     @JvmField
     var aString10537: String? = null
     private var aByte10538: Byte
@@ -56,7 +56,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     var anInt10564: Int = 0
     override fun method2387(var_renderer: Renderer?, i: Int) {
         anInt10533++
-        if (this.aClass154_10536 != null && (this.aBoolean10318 || method2459(0, var_renderer, -123))) {
+        if (this.aCompositeNpcModelBuilder_10536 != null && (this.aBoolean10318 || method2459(0, var_renderer, -123))) {
             val class101 = var_renderer!!.method3705()!!
             if (i >= -125) method2457((-106).toByte())
             class101.method895(this.aClass264_10217.method2019((-116).toByte()))
@@ -106,7 +106,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
 
     override fun method2391(var_renderer: Renderer?, i: Int, i_7_: Int, i_8_: Int): Boolean {
         anInt10562++
-        if (this.aClass154_10536 == null || !method2459(131072, var_renderer, 113)) return false
+        if (this.aCompositeNpcModelBuilder_10536 == null || !method2459(131072, var_renderer, 113)) return false
         val class101 = var_renderer!!.method3705()
         val i_9_ = this.aClass264_10217.method2019((-31).toByte())
         class101.method895(i_9_)
@@ -205,10 +205,10 @@ class Player : Class318_Sub1_Sub3_Sub3() {
             this.anInt10558 = class348_sub49.readUnsignedByte(i.toInt() xor 0xab)
             if (!this.aBoolean10517 != !bool || this.anInt10553 != i_23_ || i_24_ != this.anInt10535 || i_25_ != this.anInt10526 || (this.anInt10560 != i_26_) || this.anInt10519 != i_27_ || i_28_ != this.anInt10558) Class92.method858(true, this)
         }
-        if (this.aClass154_10536 == null) this.aClass154_10536 = Class154()
-        val i_29_ = (this.aClass154_10536!!.anInt2093)
-        val is_30_ = (this.aClass154_10536!!.anIntArray2095)
-        this.aClass154_10536!!.method1228(i_14_, 105, method2421(121.toByte()), `is`, aByte10538.toInt() == 1, is_20_)
+        if (this.aCompositeNpcModelBuilder_10536 == null) this.aCompositeNpcModelBuilder_10536 = CompositeNpcModelBuilder()
+        val i_29_ = (this.aCompositeNpcModelBuilder_10536!!.anInt2093)
+        val is_30_ = (this.aCompositeNpcModelBuilder_10536!!.anIntArray2095)
+        this.aCompositeNpcModelBuilder_10536!!.method1228(i_14_, 105, method2421(121.toByte()), `is`, aByte10538.toInt() == 1, is_20_)
         if (i_14_ != i_29_) {
             this.x = (this.anIntArray10320!![0] shl 9) - -(method2436(89.toByte()) shl 8)
             this.y = (this.anIntArray10317!![0] shl 9) - -(method2436(98.toByte()) shl 8)
@@ -322,7 +322,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
 
     override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
         anInt10527++
-        if (this.aClass154_10536 == null || !method2459(2048, var_renderer, -95)) return null
+        if (this.aCompositeNpcModelBuilder_10536 == null || !method2459(2048, var_renderer, -95)) return null
         val class101 = var_renderer!!.method3705()
         val i_53_ = this.aClass264_10217.method2019((-126).toByte())
         class101.method895(i_53_)
@@ -337,7 +337,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         this.aBoolean10324 = false
         if (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) {
             val class225 = this.method2422(72.toByte())
-            if (class225.aBoolean2913 && (this.aClass154_10536!!.anInt2093 == -1 || Class189.aClass278_2529!!.method2079(this.aClass154_10536!!.anInt2093, i + -2).aBoolean1369)) {
+            if (class225.aBoolean2913 && (this.aCompositeNpcModelBuilder_10536!!.anInt2093 == -1 || Class189.aClass278_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, i + -2).aBoolean1369)) {
                 val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7)) else null)
                 val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (ParticleEmitterNode.aClass87_191!!.method835(this.anInt10268, 7)))
                 val class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
@@ -448,7 +448,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     fun method2457(i: Byte): Boolean {
         anInt10530++
         val i_68_ = 86 / ((-44 - i) / 38)
-        return this.aClass154_10536 != null
+        return this.aCompositeNpcModelBuilder_10536 != null
     }
 
     override fun method2388(i: Int): Boolean {
@@ -460,7 +460,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     public override fun method2436(i: Byte): Int {
         if (i <= 39) method2455(-97, -62, 0.toByte(), 103)
         anInt10546++
-        if (this.aClass154_10536 != null && this.aClass154_10536!!.anInt2093 != -1) return (Class189.aClass278_2529!!.method2079(this.aClass154_10536!!.anInt2093, -1).anInt1399)
+        if (this.aCompositeNpcModelBuilder_10536 != null && this.aCompositeNpcModelBuilder_10536!!.anInt2093 != -1) return (Class189.aClass278_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, -1).anInt1399)
         return super.method2436(72.toByte())
     }
 
@@ -478,7 +478,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =
-            (this.aClass154_10536!!.method1226(aClass170_10209, class17_71_, this.aClass182Array10308, true, Exception_Sub1.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, Class189.aClass278_2529, ParticleEmitterNode.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558).also { this.aClass64Array10323[0] = it })
+            (this.aCompositeNpcModelBuilder_10536!!.method1226(aClass170_10209, class17_71_, this.aClass182Array10308, true, Exception_Sub1.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, Class189.aClass278_2529, ParticleEmitterNode.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558).also { this.aClass64Array10323[0] = it })
         val i_75_ = Class292.method2201(2121)
         if (Class226.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)

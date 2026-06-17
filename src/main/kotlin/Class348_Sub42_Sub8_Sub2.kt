@@ -828,7 +828,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 var i_91_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_92_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_93_ = (0x8000 and i_91_) != 0
-                if ((player.aString10544) != null && player.aClass154_10536 != null) {
+                if ((player.aString10544) != null && player.aCompositeNpcModelBuilder_10536 != null) {
                     var bool_94_ = false
                     if (i_92_ <= 1) {
                         if (!bool_93_ && ((Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233)) bool_94_ = true

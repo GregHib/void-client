@@ -231,7 +231,7 @@ class Class213 {
         return class124
     }
 
-    fun method1559(class154: Class154?, class17: Class17?, var_renderer: Renderer?, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Byte, i_24_: Int): Class64? {
+    fun method1559(compositeNpcModelBuilder: CompositeNpcModelBuilder?, class17: Class17?, var_renderer: Renderer?, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Byte, i_24_: Int): Class64? {
         try {
             anInt2813++
             if (this.anIntArray2762 != null && i_21_ > 1) {
@@ -239,7 +239,7 @@ class Class213 {
                 for (i_26_ in 0..9) {
                     if (i_21_ >= this.anIntArray2831[i_26_] && this.anIntArray2831[i_26_] != 0) i_25_ = this.anIntArray2762!![i_26_]
                 }
-                if (i_25_ != -1) return (this.aClass255_2761!!.method1940(103, i_25_).method1559(class154, class17, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
+                if (i_25_ != -1) return (this.aClass255_2761!!.method1940(103, i_25_).method1559(compositeNpcModelBuilder, class17, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
             }
             if (i_23_.toInt() != 88) this.aString2795 = null
             var i_27_ = i
@@ -252,7 +252,7 @@ class Class213 {
                 if (class64 != null) i_27_ = var_renderer!!.method3679(i_27_, class64.ua())
                 var i_28_ = i_27_
                 if (aShortArray2785 != null) i_28_ = i_28_ or 0x8000
-                if (aShortArray2777 != null || class154 != null) i_28_ = i_28_ or 0x4000
+                if (aShortArray2777 != null || compositeNpcModelBuilder != null) i_28_ = i_28_ or 0x4000
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x1
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x2
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x4
@@ -276,11 +276,11 @@ class Class213 {
                         i_30_++
                     }
                 }
-                if (class154 != null) {
+                if (compositeNpcModelBuilder != null) {
                     for (i_31_ in 0..4) {
                         var i_32_ = 0
                         while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_32_)) {
-                            if (class154.anIntArray2095!![i_31_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) class64.ia((SpriteLoadValidator.aShortArrayArray4791!![i_32_]!![i_31_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(class154.anIntArray2095!![i_31_])]))
+                            if (compositeNpcModelBuilder.anIntArray2095!![i_31_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) class64.ia((SpriteLoadValidator.aShortArrayArray4791!![i_32_]!![i_31_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(compositeNpcModelBuilder.anIntArray2095!![i_31_])]))
                             i_32_++
                         }
                     }
@@ -294,7 +294,7 @@ class Class213 {
             class64!!.s(i)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (if (class154 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
         }
     }
 
@@ -324,7 +324,7 @@ class Class213 {
         }
     }
 
-    fun method1562(i: Int, bool: Boolean, i_37_: Int, var_renderer: Renderer?, var_renderer_38_: Renderer?, class324: Class324?, class154: Class154?, i_39_: Int, i_40_: Byte, i_41_: Int): IntArray? {
+    fun method1562(i: Int, bool: Boolean, i_37_: Int, var_renderer: Renderer?, var_renderer_38_: Renderer?, class324: Class324?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_39_: Int, i_40_: Byte, i_41_: Int): IntArray? {
         try {
             anInt2806++
             val class124 = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), anInt2756, i_40_.toInt() xor 0x65)
@@ -345,11 +345,11 @@ class Class213 {
                     i_43_++
                 }
             }
-            if (class154 != null) {
+            if (compositeNpcModelBuilder != null) {
                 for (i_44_ in 0..4) {
                     var i_45_ = 0
                     while ((i_45_ < Class367_Sub2.aShortArrayArrayArray7290!!.size)) {
-                        if ((Class367_Sub2.aShortArrayArrayArray7290!![i_45_]!![i_44_])!!.size > class154.anIntArray2095!![i_44_]) class124.method1098((SpriteLoadValidator.aShortArrayArray4791!![i_45_]!![i_44_]), 126.toByte(), (Class367_Sub2.aShortArrayArrayArray7290!![i_45_]!![i_44_]!![(class154.anIntArray2095!![i_44_])]))
+                        if ((Class367_Sub2.aShortArrayArrayArray7290!![i_45_]!![i_44_])!!.size > compositeNpcModelBuilder.anIntArray2095!![i_44_]) class124.method1098((SpriteLoadValidator.aShortArrayArray4791!![i_45_]!![i_44_]), 126.toByte(), (Class367_Sub2.aShortArrayArrayArray7290!![i_45_]!![i_44_]!![(compositeNpcModelBuilder.anIntArray2095!![i_44_])]))
                         i_45_++
                     }
                 }
@@ -366,11 +366,11 @@ class Class213 {
             var abstractModelRenderer: AbstractModelRenderer? = null
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
-                    abstractModelRenderer = (this.aClass255_2761!!.method1932(var_renderer_38_, i_37_, i, class324, class154, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
+                    abstractModelRenderer = (this.aClass255_2761!!.method1932(var_renderer_38_, i_37_, i, class324, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
                     if (abstractModelRenderer == null) return null
                 }
             } else {
-                abstractModelRenderer = (this.aClass255_2761!!.method1932(var_renderer_38_, 0, 10, class324, class154, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
+                abstractModelRenderer = (this.aClass255_2761!!.method1932(var_renderer_38_, 0, 10, class324, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
                 if (abstractModelRenderer == null) return null
             }
             val i_48_: Int
@@ -416,7 +416,7 @@ class Class213 {
             }
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
         }
     }
 

@@ -26,10 +26,10 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         anInt3275++
     }
 
-    fun method1932(var_renderer: Renderer?, i: Int, i_0_: Int, class324: Class324?, class154: Class154?, i_1_: Int, bool: Boolean, i_2_: Byte, var_renderer_3_: Renderer?, i_4_: Int, bool_5_: Boolean, i_6_: Int): AbstractModelRenderer? {
+    fun method1932(var_renderer: Renderer?, i: Int, i_0_: Int, class324: Class324?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_1_: Int, bool: Boolean, i_2_: Byte, var_renderer_3_: Renderer?, i_4_: Int, bool_5_: Boolean, i_6_: Int): AbstractModelRenderer? {
         try {
             anInt3266++
-            val class105 = method1941(i_6_, (-74).toByte(), i_4_, i_0_, i, i_1_, var_renderer_3_, class154)
+            val class105 = method1941(i_6_, (-74).toByte(), i_4_, i_0_, i, i_1_, var_renderer_3_, compositeNpcModelBuilder)
             if (class105 != null) return class105
             var class213 = method1940(90, i_4_)
             if (i_0_ > 1 && class213.anIntArray2762 != null) {
@@ -40,7 +40,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 if (i_7_ != -1) class213 = method1940(127, i_7_)
             }
             if (i_2_.toInt() != 83) method1935(-83, -37, null, null, false, -49)
-            val `is` = class213.method1562(i_0_, bool_5_, i, var_renderer_3_, var_renderer, class324, class154, i_1_, (-102).toByte(), i_6_)
+            val `is` = class213.method1562(i_0_, bool_5_, i, var_renderer_3_, var_renderer, class324, compositeNpcModelBuilder, i_1_, (-102).toByte(), i_6_)
             if (`is` == null) return null
             val abstractModelRenderer_9_: AbstractModelRenderer?
             if (bool) abstractModelRenderer_9_ = var_renderer!!.method3662(36, `is`, 94.toByte(), 0, 36, 32)
@@ -48,7 +48,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             if (!bool) {
                 val crc64Hashable = Crc64Hashable()
                 crc64Hashable.anInt4982 = i
-                crc64Hashable.aBoolean4990 = class154 != null
+                crc64Hashable.aBoolean4990 = compositeNpcModelBuilder != null
                 crc64Hashable.anInt4989 = i_0_
                 crc64Hashable.anInt4992 = i_4_
                 crc64Hashable.anInt4981 = i_1_
@@ -58,7 +58,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             }
             return abstractModelRenderer_9_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -167,20 +167,20 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         return class213
     }
 
-    fun method1941(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, var_renderer: Renderer?, class154: Class154?): AbstractModelRenderer? {
+    fun method1941(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, var_renderer: Renderer?, compositeNpcModelBuilder: CompositeNpcModelBuilder?): AbstractModelRenderer? {
         try {
             aCrc64Hashable_3289!!.anInt4992 = i_16_
             aCrc64Hashable_3289!!.anInt4989 = i_17_
             aCrc64Hashable_3289!!.anInt4991 = var_renderer!!.anInt4567
             aCrc64Hashable_3289!!.anInt4981 = i_19_
             if (i_15_.toInt() != -74) aCrc64Hashable_3289 = null
-            aCrc64Hashable_3289!!.aBoolean4990 = class154 != null
+            aCrc64Hashable_3289!!.aBoolean4990 = compositeNpcModelBuilder != null
             aCrc64Hashable_3289!!.anInt4982 = i_18_
             anInt3282++
             aCrc64Hashable_3289!!.anInt4993 = i
             return this.aClass175_3288.method1340(123, aCrc64Hashable_3289!!) as AbstractModelRenderer?
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ')'))
         }
     }
 
