@@ -61,7 +61,7 @@ class Class348_Sub41 : Class348() {
                         val i_13_ = i_11_ - -i_0_
                         val i_14_ = i_2_ + i_10_
                         if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
-                            val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_4_)
+                            val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_4_)
                             if (i_12_ != 22 || Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 bool_7_ = true
                                 if (!class51.method485(9773)) {
@@ -262,7 +262,7 @@ class Class348_Sub41 : Class348() {
             anInt7051++
             var interface10 = method3297(i_43_, i_45_, i_44_) as Interface10?
             if (interface10 != null) {
-                val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-124))
+                val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-124))
                 val i_48_ = 0x3 and interface10.method41(-32228)
                 val i_49_ = interface10.method39(35)
                 if (class51.anInt875 == -1) {
@@ -296,7 +296,7 @@ class Class348_Sub41 : Class348() {
             if (bool != false) anInt7054 = 122
             interface10 = (method1353(i_43_, i_45_, i_44_, (if (aClass7056 != null) aClass7056 else (Interface10::class.java.also { aClass7056 = it }))) as Interface10?)
             if (interface10 != null) {
-                val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-88))
+                val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-88))
                 val i_51_ = interface10.method41(-32228) and 0x3
                 val i_52_ = interface10.method39(-126)
                 if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_renderer, i_51_, -86)
@@ -309,7 +309,7 @@ class Class348_Sub41 : Class348() {
             }
             interface10 = method2878(i_43_, i_45_, i_44_) as Interface10?
             if (interface10 != null) {
-                val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-118))
+                val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-118))
                 val i_54_ = interface10.method41(-32228) and 0x3
                 if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_renderer, i_54_, -5)
             }

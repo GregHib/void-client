@@ -22,7 +22,7 @@ open class Class75 {
         @JvmField
         var anInterface17_1244: Interface17? = null
         @JvmField
-        var aClass263_1245: Class263? = null
+        var aSeqDefinitionCache_1245: SeqDefinitionCache? = null
         @JvmField
         var aSmoothingBuffer_1246: SmoothingBuffer? = null
         @JvmField
@@ -135,7 +135,7 @@ open class Class75 {
         fun method746() {
             aClass268_1239 = null
             aParticleDefLoader_1240 = null
-            aClass263_1245 = null
+            aSeqDefinitionCache_1245 = null
             aConfigDefinitionLoader_1238 = null
             aTextureDefinitionLoader_1242 = null
             anInterface17_1244 = null
@@ -268,11 +268,11 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method752(class45: Class45?, class268: Class268?, particleDefLoader: ParticleDefLoader?, class263: Class263?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
+        fun method752(class45: Class45?, class268: Class268?, particleDefLoader: ParticleDefLoader?, seqDefinitionCache: SeqDefinitionCache?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
             aClass45_1237 = class45
             aClass268_1239 = class268
             aParticleDefLoader_1240 = particleDefLoader
-            aClass263_1245 = class263
+            aSeqDefinitionCache_1245 = seqDefinitionCache
             aConfigDefinitionLoader_1238 = configDefinitionLoader
             aTextureDefinitionLoader_1242 = textureDefinitionLoader
             anInterface17_1244 = interface17
@@ -297,7 +297,7 @@ open class Class75 {
                             val class348_sub39 = (aClass356_1271!!.method3480((i shl 16 or i_48_).toLong(), -6008) as Class348_Sub39?)
                             if (class348_sub39 != null) {
                                 for (i_50_ in (class348_sub39.aShortArray7024)!!.indices) {
-                                    var class51: Class51? = (aClass263_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
+                                    var class51: Class51? = (aSeqDefinitionCache_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
                                     var i_51_ = class51!!.anInt921
                                     if (class51.anIntArray945 != null) {
                                         class51 = class51.method480(anInterface17_1244!!, 47.toByte())
@@ -312,7 +312,7 @@ open class Class75 {
                                 }
                             }
                         } else {
-                            var class51: Class51? = aClass263_1245!!.method2005(0, i_49_ - 1)
+                            var class51: Class51? = aSeqDefinitionCache_1245!!.method2005(0, i_49_ - 1)
                             var i_52_ = class51!!.anInt921
                             if (class51.anIntArray945 != null) {
                                 class51 = class51.method480(anInterface17_1244!!, 47.toByte())
@@ -337,7 +337,7 @@ open class Class75 {
                             while (class318_sub8 != null) {
                                 if (class318_sub8.aShortArray6461 != null) {
                                     for (i_55_ in (class318_sub8.aShortArray6461!!).indices) {
-                                        var class51: Class51? = (aClass263_1245!!.method2005(0, (class318_sub8.aShortArray6461!![i_55_]).toInt() and 0xffff))
+                                        var class51: Class51? = (aSeqDefinitionCache_1245!!.method2005(0, (class318_sub8.aShortArray6461!![i_55_]).toInt() and 0xffff))
                                         var i_56_ = class51!!.anInt921
                                         if (class51.anIntArray945 != null) {
                                             class51 = (class51.method480(anInterface17_1244!!, 47.toByte()))
@@ -387,7 +387,7 @@ open class Class75 {
                 for (i_69_ in `is`.indices) {
                     val i_70_ = is_63_!![i_69_].toInt() and 0x3f
                     if (i_70_ == 0 || i_70_ == 2 || i_70_ == 3 || i_70_ == 9) {
-                        val class51: Class51 = aClass263_1245!!.method2005(0, `is`[i_69_].toInt() and 0xffff)
+                        val class51: Class51 = aSeqDefinitionCache_1245!!.method2005(0, `is`[i_69_].toInt() and 0xffff)
                         if (class51.anInt875 == -1) {
                             var i_71_ = -3355444
                             if (class51.anInt874 == 1) i_71_ = -3407872
@@ -578,7 +578,7 @@ open class Class75 {
         private fun method763(var_renderer: Renderer?, i: Int, i_118_: Int, i_119_: Int, i_120_: Int, `is`: ShortArray?, is_121_: ByteArray?) {
             if (`is` != null) {
                 for (i_122_ in `is`.indices) {
-                    val class51: Class51 = aClass263_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
+                    val class51: Class51 = aSeqDefinitionCache_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
                     val i_123_ = class51.anInt875
                     if (i_123_ != -1) {
                         val mapSceneIconDef: MapSceneIconDef? = aTextureDefinitionLoader_1242!!.method1173(31.toByte(), i_123_)

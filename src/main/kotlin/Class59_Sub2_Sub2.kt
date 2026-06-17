@@ -131,7 +131,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 anInt8676++
                 val bool_29_: Boolean
                 if (i_16_ != 1) {
-                    if (i_16_ == 2) bool_29_ = Class263.method2007(i_19_, -125, i_23_, class361!!, i, i_21_, i_24_, i_17_, i_25_, i_20_, i_26_)
+                    if (i_16_ == 2) bool_29_ = SeqDefinitionCache.method2007(i_19_, -125, i_23_, class361!!, i, i_21_, i_24_, i_17_, i_25_, i_20_, i_26_)
                     else bool_29_ = MapAreaDefinition.method1420(i_24_, i_26_, -73, i_21_, i_17_, i, i_20_, i_25_, i_16_, class361!!, i_19_, i_23_)
                 } else bool_29_ = Class5_Sub1.method187(i, i_23_, i_21_, i_26_, i_25_, i_24_, class361!!, i_19_, i_17_, i_20_, 1109655552)
                 val i_30_ = i_20_ - 64

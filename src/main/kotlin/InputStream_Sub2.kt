@@ -86,7 +86,7 @@ class InputStream_Sub2 : InputStream() {
                 } else if (class74 == Class348_Sub35.aClass74_6977) {
                     val i_29_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_30_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                    Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_29_).method478(i_30_, -31076)
+                    Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_29_).method478(i_30_, -31076)
                 } else if (Class348_Sub16_Sub1.aClass74_8853 == class74) {
                     val i_31_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_32_ = Class278.anInt3581 + ((i_31_ and 0x7b) shr 4)

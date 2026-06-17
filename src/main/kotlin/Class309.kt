@@ -58,7 +58,7 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
                 val i_4_ = 0x7fffffff and (l ushr 32).toInt()
                 if (i_2_ != 10 && i_2_ != 11 && i_2_ != 22) Class298.method2252(true, i_0_, i, (-119).toByte(), 0, 0, 0, i_2_, i_3_)
                 else {
-                    val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_4_)
+                    val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_4_)
                     val i_5_: Int
                     val i_6_: Int
                     if (i_3_ == 0 || i_3_ == 2) {

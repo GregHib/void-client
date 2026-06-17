@@ -4962,9 +4962,9 @@ object Class66 {
                     val i_480_ = anIntArray1149!![anInt1173]
                     val i_481_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_481_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16)!!)
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16)!!)
                     else {
-                        anIntArray1149!![anInt1173++] = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81))
+                        anIntArray1149!![anInt1173++] = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81))
                         return
                     }
                     return

@@ -88,7 +88,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
         fun method195(i: Int, bool: Boolean, i_11_: Int): Boolean {
             var i = i
             anInt8364++
-            val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_11_)
+            val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_11_)
             if (i == 11) i = 10
             if (bool != false) return false
             if (i >= 5 && i <= 8) i = 4

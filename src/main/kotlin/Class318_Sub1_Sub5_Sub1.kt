@@ -137,7 +137,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
     private fun method2491(i: Byte, bool: Boolean, i_5_: Int, var_renderer: Renderer?): ModelOrSpriteHolder? {
         if (i.toInt() != -51) aNodeDeque_10125 = null
         anInt10142++
-        val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, 0xffff and aShort10129.toInt())
+        val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, 0xffff and aShort10129.toInt())
         val var_terrainTile: TerrainTile?
         val var_terrainTile_6_: TerrainTile?
         if (aBoolean10138) {

@@ -204,14 +204,14 @@ class Class348_Sub14 : Class348 {
                                     if (interface10 == null) interface10 = (method3297(i_39_, i_37_, i_38_) as Interface10?)
                                     if (interface10 == null) interface10 = ((method3135(i_39_, i_37_, i_38_)) as Interface10?)
                                     if (interface10 != null) {
-                                        val class51 = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-99)))
+                                        val class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-99)))
                                         if (!class51.aBoolean942 || ModelBatchBase.aBoolean1900) {
                                             var i_40_ = class51.anInt921
                                             if (class51.anIntArray945 != null) {
                                                 var i_41_ = 0
                                                 while (((class51.anIntArray945!!).size > i_41_)) {
                                                     if ((class51.anIntArray945!![i_41_]) != -1) {
-                                                        val class51_42_ = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, (class51.anIntArray945!![i_41_])))
+                                                        val class51_42_ = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (class51.anIntArray945!![i_41_])))
                                                         if (class51_42_.anInt921 >= 0) i_40_ = (class51_42_.anInt921)
                                                     }
                                                     i_41_++
@@ -237,7 +237,7 @@ class Class348_Sub14 : Class348 {
                                                         if (i_50_ == 3 && (104 + i_6_ - 1 > i_45_) && 3 + i_38_ > i_45_ && ((0x2c0120 and (is_46_[i_44_ - i_47_]!![(-i_48_ + 1 + i_45_)])) == 0)) i_45_++
                                                     }
                                                 }
-                                                Class263.anIntArray3347!![(Class348_Sub40_Sub38.anInt9479)] = class51.anInt941
+                                                SeqDefinitionCache.anIntArray3347!![(Class348_Sub40_Sub38.anInt9479)] = class51.anInt941
                                                 Class348_Sub15.Companion.anIntArray6770!![(Class348_Sub40_Sub38.anInt9479)] = i_44_
                                                 Class348_Sub40_Sub37.anIntArray9458!![(Class348_Sub40_Sub38.anInt9479)] = i_45_
                                                 Class348_Sub40_Sub38.anInt9479++

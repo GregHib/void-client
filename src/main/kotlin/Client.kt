@@ -751,7 +751,7 @@ class Client : GameAppletFrame() {
         method1208(55)
         method2045(62.toByte())
         method1395(82.toByte())
-        Class263.method2011((-71).toByte())
+        SeqDefinitionCache.method2011((-71).toByte())
         TextureDefinitionLoader.method1179((-124).toByte())
         method1931(true)
         method1407(124.toByte())

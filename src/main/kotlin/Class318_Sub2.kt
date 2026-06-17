@@ -41,8 +41,8 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                             } else if (method1813(8806, (class348_sub42_sub12.anInt9608))) {
                                 val `object`: Any? = null
                                 var class51: Class51?
-                                if (class348_sub42_sub12.anInt9608 != 1001) class51 = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
-                                else class51 = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
+                                if (class348_sub42_sub12.anInt9608 != 1001) class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
+                                else class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
                                 if (class51.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte()))
                                 if (class51 != null) `is` = class51.anIntArray917
                             }

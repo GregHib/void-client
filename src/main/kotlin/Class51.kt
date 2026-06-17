@@ -91,7 +91,7 @@ class Class51 {
     @JvmField
     var aBoolean931: Boolean = false
     @JvmField
-    var aClass263_933: Class263? = null
+    var aSeqDefinitionCache_933: SeqDefinitionCache? = null
     private var anInt934: Int
     private var anInt935 = 128
     @JvmField
@@ -134,7 +134,7 @@ class Class51 {
         }
         for (i_0_ in this.anIntArray945!!.indices) {
             if (this.anIntArray945!![i_0_] != -1) {
-                val class51_1_ = this.aClass263_933!!.method2005(0, this.anIntArray945!![i_0_])
+                val class51_1_ = this.aSeqDefinitionCache_933!!.method2005(0, this.anIntArray945!![i_0_])
                 if (class51_1_.anInt887 != -1 || class51_1_.anIntArray904 != null) return true
             }
         }
@@ -167,8 +167,8 @@ class Class51 {
             }
             if (bool) i_11_ = i_11_ or 0x40000
             var modelOrSpriteHolder: ModelOrSpriteHolder?
-            synchronized(this.aClass263_933!!.aClass60_3361!!) {
-                modelOrSpriteHolder = this.aClass263_933!!.aClass60_3361!!.method583(l, i_10_ + -25) as ModelOrSpriteHolder?
+            synchronized(this.aSeqDefinitionCache_933!!.aClass60_3361!!) {
+                modelOrSpriteHolder = this.aSeqDefinitionCache_933!!.aClass60_3361!!.method583(l, i_10_ + -25) as ModelOrSpriteHolder?
             }
             var class64 = if (modelOrSpriteHolder == null) null else modelOrSpriteHolder.aClass64_119
             var var_renderNode: RenderNode? = null
@@ -184,8 +184,8 @@ class Class51 {
                 modelOrSpriteHolder = ModelOrSpriteHolder()
                 modelOrSpriteHolder.aClass64_119 = class64
                 modelOrSpriteHolder.aRenderNode118 = var_renderNode
-                synchronized(this.aClass263_933!!.aClass60_3361!!) {
-                    this.aClass263_933!!.aClass60_3361!!.method582(modelOrSpriteHolder, l, (-120).toByte())
+                synchronized(this.aSeqDefinitionCache_933!!.aClass60_3361!!) {
+                    this.aSeqDefinitionCache_933!!.aClass60_3361!!.method582(modelOrSpriteHolder, l, (-120).toByte())
                 }
             } else {
                 class64 = modelOrSpriteHolder!!.aClass64_119
@@ -250,8 +250,8 @@ class Class51 {
                 l = l * 67783L + anIntArrayArray907!![i_21_]!![i_24_].toLong()
                 i_24_++
             }
-            synchronized(this.aClass263_933!!.aClass60_3360) {
-                class64 = this.aClass263_933!!.aClass60_3360.method583(l, 78) as Class64?
+            synchronized(this.aSeqDefinitionCache_933!!.aClass60_3360) {
+                class64 = this.aSeqDefinitionCache_933!!.aClass60_3360.method583(l, 78) as Class64?
             }
             if (class64 != null) {
                 if (i_18_ != class64.WA()) i_17_ = i_17_ or 0x1000
@@ -263,8 +263,8 @@ class Class51 {
                 var modelDefinition: ModelDefinition? = null
                 synchronized(Class341.aModelDefinitionArray4236s!!) {
                     for (i_26_ in 0..<i_23_) {
-                        synchronized(this.aClass263_933!!.aClass45_3345!!) {
-                            modelDefinition = Class300.method2277(0, (this.aClass263_933!!.aClass45_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
+                        synchronized(this.aSeqDefinitionCache_933!!.aClass45_3345!!) {
+                            modelDefinition = Class300.method2277(0, (this.aSeqDefinitionCache_933!!.aClass45_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (modelDefinition == null) return null
                         if (modelDefinition.anInt1830 < 13) modelDefinition.method1092(2, 96)
@@ -272,9 +272,9 @@ class Class51 {
                     }
                     if (i_23_ > 1) modelDefinition = ModelDefinition(Class341.aModelDefinitionArray4236s!!, i_23_)
                 }
-                class64 = var_renderer.method3625(modelDefinition, i_25_, (this.aClass263_933!!.anInt3363), i_18_, i_19_)
-                synchronized(this.aClass263_933!!.aClass60_3360) {
-                    this.aClass263_933!!.aClass60_3360.method582(class64, l, (-95).toByte())
+                class64 = var_renderer.method3625(modelDefinition, i_25_, (this.aSeqDefinitionCache_933!!.anInt3363), i_18_, i_19_)
+                synchronized(this.aSeqDefinitionCache_933!!.aClass60_3360) {
+                    this.aSeqDefinitionCache_933!!.aClass60_3360.method582(class64, l, (-95).toByte())
                 }
             }
         }
@@ -313,13 +313,13 @@ class Class51 {
         if (i_30_ != -31076) return false
         anInt901++
         if (anIntArrayArray907 == null) return true
-        synchronized(this.aClass263_933!!.aClass45_3345!!) {
+        synchronized(this.aSeqDefinitionCache_933!!.aClass45_3345!!) {
             var i_31_ = 0
             while (aByteArray885!!.size > i_31_) {
                 if (aByteArray885!![i_31_].toInt() == i) {
                     var i_32_ = 0
                     while ((anIntArrayArray907!![i_31_]!!.size > i_32_)) {
-                        if (!this.aClass263_933!!.aClass45_3345!!.method420(i_30_ xor 0x5061, anIntArrayArray907!![i_31_]!![i_32_], 0)) return false
+                        if (!this.aSeqDefinitionCache_933!!.aClass45_3345!!.method420(i_30_ xor 0x5061, anIntArrayArray907!![i_31_]!![i_32_], 0)) return false
                         i_32_++
                     }
                     return true
@@ -350,9 +350,9 @@ class Class51 {
         if (i_34_ < 0 || -1 + this.anIntArray945!!.size <= i_34_ || this.anIntArray945!![i_34_] == -1) {
             val i_35_ = (this.anIntArray945!![-1 + this.anIntArray945!!.size])
             if (i_35_ == -1) return null
-            return this.aClass263_933!!.method2005(0, i_35_)
+            return this.aSeqDefinitionCache_933!!.method2005(0, i_35_)
         }
-        return this.aClass263_933!!.method2005(i + -47, this.anIntArray945!![i_34_])
+        return this.aSeqDefinitionCache_933!!.method2005(i + -47, this.anIntArray945!![i_34_])
     }
 
     fun method481(i: Byte, i_36_: Int): Boolean {
@@ -371,7 +371,7 @@ class Class51 {
     private fun method482(class348_sub49: Class348_Sub49, i: Int, i_38_: Byte) {
         anInt960++
         if (i == 1 || i == 5) {
-            if (i == 5 && this.aClass263_933!!.aBoolean3355) method484(class348_sub49, -528)
+            if (i == 5 && this.aSeqDefinitionCache_933!!.aBoolean3355) method484(class348_sub49, -528)
             val i_59_ = class348_sub49.readUnsignedByte(255)
             anIntArrayArray907 = arrayOfNulls<IntArray>(i_59_)
             aByteArray885 = ByteArray(i_59_)
@@ -381,7 +381,7 @@ class Class51 {
                 anIntArrayArray907!![i_60_] = IntArray(i_61_)
                 for (i_62_ in 0..<i_61_) anIntArrayArray907!![i_60_]!![i_62_] = class348_sub49.readUnsignedShort(842397944)
             }
-            if (i == 5 && !this.aClass263_933!!.aBoolean3355) method484(class348_sub49, -528)
+            if (i == 5 && !this.aSeqDefinitionCache_933!!.aBoolean3355) method484(class348_sub49, -528)
         } else if (i == 2) this.aString884 = class348_sub49.readString(121.toByte())
         else if (i == 14) this.anInt961 = class348_sub49.readUnsignedByte(255)
         else if (i != 15) {
@@ -494,7 +494,7 @@ class Class51 {
                                                                                     } else if (i != 107) {
                                                                                         if (i >= 150 && i < 155) {
                                                                                             this.aStringArray913!![i + -150] = class348_sub49.readString((-41).toByte())
-                                                                                            if (!this.aClass263_933!!.aBoolean3359) this.aStringArray913!![-150 + i] = null
+                                                                                            if (!this.aSeqDefinitionCache_933!!.aBoolean3359) this.aStringArray913!![-150 + i] = null
                                                                                         } else if (i == 160) {
                                                                                             val i_46_ = class348_sub49.readUnsignedByte(255)
                                                                                             this.anIntArray917 = IntArray(i_46_)
@@ -602,15 +602,15 @@ class Class51 {
             } else i_67_ = i_67_ or 0x7
             if (i_64_ == 10 && i_66_ > 3) i_67_ = i_67_ or 0x5
             var class64: Class64?
-            synchronized(this.aClass263_933!!.aClass60_3362!!) {
-                class64 = this.aClass263_933!!.aClass60_3362!!.method583(l, 100) as Class64?
+            synchronized(this.aSeqDefinitionCache_933!!.aClass60_3362!!) {
+                class64 = this.aSeqDefinitionCache_933!!.aClass60_3362!!.method583(l, 100) as Class64?
             }
             if (class64 == null || var_renderer.method3667(class64.ua(), i_67_) != 0) {
                 if (class64 != null) i_67_ = var_renderer.method3679(i_67_, class64.ua())
                 class64 = method477(i_66_, var_renderer, i_64_, -125, i_67_)
                 if (class64 == null) return null
-                synchronized(this.aClass263_933!!.aClass60_3362!!) {
-                    this.aClass263_933!!.aClass60_3362!!.method582(class64, l, (-127).toByte())
+                synchronized(this.aSeqDefinitionCache_933!!.aClass60_3362!!) {
+                    this.aSeqDefinitionCache_933!!.aClass60_3362!!.method582(class64, l, (-127).toByte())
                 }
             }
             var bool = false
@@ -663,11 +663,11 @@ class Class51 {
         if (i != 9773) method485(-109)
         if (anIntArrayArray907 == null) return true
         var bool = true
-        synchronized(this.aClass263_933!!.aClass45_3345!!) {
+        synchronized(this.aSeqDefinitionCache_933!!.aClass45_3345!!) {
             for (i_77_ in anIntArrayArray907!!.indices) {
                 var i_78_ = 0
                 while ((anIntArrayArray907!![i_77_]!!.size > i_78_)) {
-                    bool = bool and (this.aClass263_933!!.aClass45_3345!!.method420(-10499, anIntArrayArray907!![i_77_]!![i_78_], 0))
+                    bool = bool and (this.aSeqDefinitionCache_933!!.aClass45_3345!!.method420(-10499, anIntArrayArray907!![i_77_]!![i_78_], 0))
                     i_78_++
                 }
             }

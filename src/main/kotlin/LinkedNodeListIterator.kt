@@ -180,7 +180,7 @@ class LinkedNodeListIterator {
                         while ((Class348_Sub40_Sub38.anInt9479 > i_14_)) {
                             val i_15_ = (Class348_Sub15.anIntArray6770!![i_14_] * 4 - -2 - i_4_ / 128)
                             val i_16_ = (-(i_3_ / 128) + Class348_Sub40_Sub37.anIntArray9458!![i_14_] * 4 - -2)
-                            var class51: Class51? = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, Class263.anIntArray3347!![i_14_]))
+                            var class51: Class51? = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, SeqDefinitionCache.anIntArray3347!![i_14_]))
                             if (class51!!.anIntArray945 != null) {
                                 class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte())
                                 if (class51 == null || (class51.anInt921 == -1)) {

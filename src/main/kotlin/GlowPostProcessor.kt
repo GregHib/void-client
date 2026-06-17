@@ -129,7 +129,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             anInt2515++
             Class362.aParticleDefLoader_4460!!.method1383(i xor 0x804c, 5)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342!!.method1207(-17452, 5)
-            Class348_Sub40_Sub12.aClass263_9195!!.method2010(5, i + -6)
+            Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2010(5, i + -6)
             MapAreaDefinition.Companion.aClass278_2529!!.method2076(5, true)
             Exception_Sub1.aModelHeaderCache_112!!.method1937(5, false)
             ParticleEmitterNode.aClass87_191!!.method836(5, 93)

@@ -4,7 +4,7 @@ import MultiLevelOptionState.Companion.method1850
 /* Class263 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class263 internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class45: Class45?, class45_29_: Class45?) {
+class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class45: Class45?, class45_29_: Class45?) {
     private val aClass45_3343: Class45?
     var aClass45_3345: Class45? = null
     private var aClass60_3350: Class60?
@@ -37,7 +37,7 @@ class Class263 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
         }
         class51 = Class51()
         class51.anInt941 = i_0_
-        class51.aClass263_933 = this
+        class51.aSeqDefinitionCache_933 = this
         if (`is` != null) class51.method479(0.toByte(), Class348_Sub49(`is`))
         class51.method488(-105)
         if (i != 0) this.aClass60_3361 = null

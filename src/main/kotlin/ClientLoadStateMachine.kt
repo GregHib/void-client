@@ -173,7 +173,7 @@ object ClientLoadStateMachine {
         if (Class56.aClass56_1034 == Class348_Sub42_Sub15.aClass56_9660) {
             val i_10_ = BinaryGraphicsOptionState.method1770((-25).toByte())
             if (i_10_ < 100) return i_10_
-            Class263.method2013(Class367_Sub8.aClass45_7362!!.method415(73.toByte(), 1), 112.toByte())
+            SeqDefinitionCache.method2013(Class367_Sub8.aClass45_7362!!.method415(73.toByte(), 1), 112.toByte())
             RuntimeException_Sub1.method4012(Class367_Sub8.aClass45_7362!!.method415(73.toByte(), 3), (-111).toByte())
         }
         if (i != -28660) return 2
@@ -190,7 +190,7 @@ object ClientLoadStateMachine {
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, RasterSprite.aClass45_5207)
             ScrollingWidgetComponentNode.aClass271_8378 = Class271(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub1.aMapSceneDefLoader_6559 = MapSceneDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class348_Sub40_Sub12.aClass263_9195 = Class263(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, true, Class94.aClass45_1538, RasterSprite.aClass45_5207)
+            Class348_Sub40_Sub12.aSeqDefinitionCache_9195 = SeqDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, true, Class94.aClass45_1538, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             MapAreaDefinition.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, true, FloatGrid.aClass45_4975, RasterSprite.aClass45_5207)
@@ -210,7 +210,7 @@ object ClientLoadStateMachine {
             ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434)
             BrightnessOptionState.aClass355_5900 = Class355(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, Class28())
             method1202(0)
-            Class348_Sub40_Sub12.aClass263_9195!!.method2008(i + 28539, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
+            Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2008(i + 28539, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
             Class318_Sub1_Sub3_Sub3.aVarpStore_10209 = VarpStore()
             method3038(-1)
             method4011(i + 29684, GraphicsOptionState.aClass45_3146)
@@ -230,7 +230,7 @@ object ClientLoadStateMachine {
             val i_12_ = (Class288_Sub1.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, RenderConfigFactory.aClass268_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
+        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, RenderConfigFactory.aClass268_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aSeqDefinitionCache_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))

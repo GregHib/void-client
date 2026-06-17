@@ -348,7 +348,7 @@ class Class88 {
                                 FrameBufferObject.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 ModelDataCache.anInt359 = class348_sub49_sub2.method3369(125.toByte())
                                 ModelBatchBase.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                Class348_Sub40_Sub12.aClass263_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
+                                Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
                                 Exception_Sub1.aModelHeaderCache_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
                                 MapAreaDefinition.aClass278_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
                             } else {

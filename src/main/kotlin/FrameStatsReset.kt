@@ -595,7 +595,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MapSceneIconDef.anInt2850 = 0
             Class377.anInt9864 = 0
             IntRange.anInt1746 = 0
-            Class263.anInt3348 = 0
+            SeqDefinitionCache.anInt3348 = 0
             Class324.anInt4050 = 0
             NativeRenderer.anInt8006 = 0
             Class318_Sub1_Sub1.anInt8722 = 0
@@ -706,7 +706,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub1_Sub3.anInt8819 = 0
             Class348_Sub40_Sub15.anInt9219 = 0
             GlElementArrayBuffer.anInt4844 = 0
-            Class263.anInt3349 = 0
+            SeqDefinitionCache.anInt3349 = 0
             ParticleDetailOptionState.anInt6027 = 0
             BufferedOutputStreamWorker.anInt2709 = 0
             Class348_Sub40_Sub38.anInt9469 = 0
@@ -769,7 +769,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub4.anInt6407 = 0
             ScrollingWidgetComponentNode.anInt8382 = 0
             Class348_Sub1_Sub1.anInt8803 = 0
-            Class263.anInt3346 = 0
+            SeqDefinitionCache.anInt3346 = 0
             Class5.anInt4628 = 0
             Gl2dTexture.anInt8610 = 0
             Class279.anInt3600 = 0
@@ -847,7 +847,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class286_Sub9.anInt6319 = 0
             ProjectileFactory.anInt2898 = 0
             Class348_Sub49.anInt7201 = 0
-            Class263.anInt3358 = 0
+            SeqDefinitionCache.anInt3358 = 0
             Class279.anInt3597 = 0
             Class286_Sub6.anInt6267 = 0
             DetailLevelOptionState.anInt6124 = 0
@@ -1380,7 +1380,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub5.anInt10380 = 0
             ScrollingWidgetComponentNode.anInt8380 = 0
             Class367_Sub4.anInt7314 = 0
-            Class263.anInt3354 = 0
+            SeqDefinitionCache.anInt3354 = 0
             PlayerUpdateDecoder.anInt1913 = 0
             Class337.anInt4175 = 0
             SpotAnimVector.anInt2293 = 0
@@ -1557,7 +1557,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class51.anInt960 = 0
             ParticleDefLoader.anInt2467 = 0
             Class348_Sub49.anInt7190 = 0
-            Class263.anInt3357 = 0
+            SeqDefinitionCache.anInt3357 = 0
             Class50_Sub4.anInt5260 = 0
             OpenGlTerrainTile.anInt8250 = 0
             ParticleSystemState.anInt2200 = 0
@@ -2029,7 +2029,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub11.anInt9188 = 0
             Class64_Sub3.anInt5630 = 0
             LightingOptionState.anInt5873 = 0
-            Class263.anInt3344 = 0
+            SeqDefinitionCache.anInt3344 = 0
             OpenGlRenderer.anInt7710 = 0
             ScreenBorderFiller.anInt1960 = 0
             ProjectionCameraTransform.anInt5763 = 0
@@ -2652,7 +2652,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class60.anInt1090 = 0
             WidgetComponentNode.anInt4652 = 0
             Class328_Sub3.anInt6521 = 0
-            Class263.anInt3353 = 0
+            SeqDefinitionCache.anInt3353 = 0
             Class348_Sub40_Sub9.anInt9172 = 0
             LightDetailOptionState.anInt6036 = 0
             Class301.anInt3827 = 0
@@ -2974,7 +2974,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class356.anInt4380 = 0
             ModelHeaderCache.anInt3277 = 0
             SceneObjectAnimator.anInt3080 = 0
-            Class263.anInt3356 = 0
+            SeqDefinitionCache.anInt3356 = 0
             Class31.anInt446 = 0
             Class287.anInt3686 = 0
             MediaStreamClient.anInt3191 = 0
@@ -3769,7 +3769,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlTerrainTile.anInt8261 = 0
             Class51.anInt956 = 0
             Class318_Sub1_Sub1_Sub1.anInt9957 = 0
-            Class263.anInt3351 = 0
+            SeqDefinitionCache.anInt3351 = 0
             Class348_Sub23_Sub4.anInt9059 = 0
             Class367_Sub1.anInt7283 = 0
             Class286_Sub6.anInt6263 = 0

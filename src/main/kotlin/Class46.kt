@@ -946,7 +946,7 @@ class Class46 {
             RenderConfigFactory.aClass268_2979!!.method2033(46.toByte())
             Class362.aParticleDefLoader_4460!!.method1377(2)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342!!.method1204(0)
-            Class348_Sub40_Sub12.aClass263_9195!!.method2006(88)
+            Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2006(88)
             MapAreaDefinition.aClass278_2529!!.method2080(127)
             Exception_Sub1.aModelHeaderCache_112!!.method1938(126)
             ParticleEmitterNode.aClass87_191!!.method838(7)

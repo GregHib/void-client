@@ -335,7 +335,7 @@ class Class348_Sub40_Sub12 : Class348_Sub40(1, false) {
         @JvmField
         var anInt9193: Int = 0
         @JvmField
-        var aClass263_9195: Class263? = null
+        var aSeqDefinitionCache_9195: SeqDefinitionCache? = null
         @JvmField
         var anInt9196: Int = 0
         @JvmField
@@ -379,7 +379,7 @@ class Class348_Sub40_Sub12 : Class348_Sub40(1, false) {
             aClass351_9189 = null
             aIntRange_9197 = null
             if (i.toInt() != -98) method3077(27.toByte())
-            aClass263_9195 = null
+            aSeqDefinitionCache_9195 = null
         }
     }
 }
