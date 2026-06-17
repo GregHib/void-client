@@ -715,7 +715,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             } else if (Class348_Sub42_Sub16.aClass21_9661 == class21) {
                 i_44_ = 6
                 i_45_ = 2 + i
-            } else if (class21 == s_Sub3.aClass21_8320) {
+            } else if (class21 == NativeTerrainTile.aClass21_8320) {
                 i_45_ = 2 + i
                 i_44_ = 5
             } else {
@@ -807,7 +807,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             } else if (class21 == Class348_Sub42_Sub16.aClass21_9661) {
                 i_52_ = 6
                 i_51_ = 2 + i
-            } else if (s_Sub3.aClass21_8320 == class21) {
+            } else if (NativeTerrainTile.aClass21_8320 == class21) {
                 i_51_ = 2 + i
                 i_52_ = 5
             } else {

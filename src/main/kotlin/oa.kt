@@ -543,7 +543,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         method3677(aP5137!!.aCanvas5147)
     }
 
-    override fun method3648(i: Int, i_222_: Int, `is`: Array<IntArray?>, is_223_: Array<IntArray?>?, i_224_: Int, i_225_: Int, i_226_: Int): s {
+    override fun method3648(i: Int, i_222_: Int, `is`: Array<IntArray?>, is_223_: Array<IntArray?>?, i_224_: Int, i_225_: Int, i_226_: Int): TerrainTile {
         return t(this, aYa5121, i, i_222_, `is`, is_223_, i_224_, i_225_, i_226_)
     }
 

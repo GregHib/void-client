@@ -21,7 +21,7 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
 
     companion object {
         @JvmField
-        var aSArray8801: Array<s?>? = null
+        var aTerrainTileArray8801: Array<TerrainTile?>? = null
         @JvmField
         var anInt8802: Int = 0
         @JvmField
@@ -103,7 +103,7 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
         fun method2728(i: Byte) {
             if (i.toInt() != 9) aClass60_8807 = null
             aClass60_8807 = null
-            aSArray8801 = null
+            aTerrainTileArray8801 = null
         }
 
         init {

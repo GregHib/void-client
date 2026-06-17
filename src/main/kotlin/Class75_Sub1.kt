@@ -19,7 +19,7 @@ object Class75_Sub1 : Class75() {
         val class357 = Class348_Sub46.method3321(i, i_1_, i_2_)
         if (class357 != null) {
             class357.aClass318_Sub1_Sub1_4402 = class318_sub1_sub1
-            val i_3_ = if (NativeSprite.aSArray5191 == Class332.aSArray4142) 1 else 0
+            val i_3_ = if (NativeSprite.aTerrainTileArray5191 == Class332.aTerrainTileArray4142) 1 else 0
             if (class318_sub1_sub1.method2376(-93)) {
                 if (class318_sub1_sub1.method2377(122.toByte())) {
                     class318_sub1_sub1.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_3_]

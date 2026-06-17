@@ -3,7 +3,7 @@ import jaclib.memory.Stream.Companion.c
 import jaclib.memory.heap.NativeHeapBuffer
 import java.awt.Component
 
-class Class348_Sub3 internal constructor(private val aS_Sub3_6566: s_Sub3, var anInt6567: Int, i_43_: Int, var anInt6571: Int, var anInt6575: Int, var anInt6569: Int) : Class348() {
+class Class348_Sub3 internal constructor(private val aS_Sub3_6566: NativeTerrainTile, var anInt6567: Int, i_43_: Int, var anInt6571: Int, var anInt6575: Int, var anInt6569: Int) : Class348() {
     private var aNativeHeapBuffer6572: NativeHeapBuffer? = null
     private val anIntArray6573: IntArray
     private var aStream6574: Stream? = null

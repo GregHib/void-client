@@ -75,7 +75,7 @@ class Class135_Sub1 : Class135, Interface2 {
             var i_4_ = 0
             var i_5_ = 0
             if (Class59_Sub1.aBoolean5300) {
-                i_4_ = s_Sub3.method4008((-122).toByte())
+                i_4_ = NativeTerrainTile.method4008((-122).toByte())
                 i_5_ = method260(false)
             }
             val i_6_: Int = i_4_ + anInt4717

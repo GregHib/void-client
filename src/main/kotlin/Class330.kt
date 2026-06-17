@@ -2,11 +2,11 @@ import Class318_Sub4.Companion.method2503
 import Class99.method880
 import jaclib.memory.Stream.Companion.c
 
-class Class330 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: s_Sub3?) {
+class Class330 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: NativeTerrainTile?) {
     private val aHa_Sub3_4111: NativeRenderer?
     var aByteArray4112: ByteArray
     var anInt4113: Int = 0
-    private val aS_Sub3_4116: s_Sub3?
+    private val aS_Sub3_4116: NativeTerrainTile?
     private val anInt4118: Int
     private val anInt4121: Int
     private var aClass97ArrayArray4122: Array<Array<Class97?>?>? = null

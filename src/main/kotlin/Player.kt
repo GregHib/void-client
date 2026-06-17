@@ -175,7 +175,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         anInt10520 = class348_sub49.readUnsignedShort(842397944)
         this.aString10537 = class348_sub49.readString((-47).toByte())
         this.aString10544 = this.aString10537
-        if (this == Class132.aPlayer_1907) s_Sub2.aString8265 = this.aString10537
+        if (this == Class132.aPlayer_1907) OpenGlTerrainTile.aString8265 = this.aString10537
         this.anInt10516 = class348_sub49.readUnsignedByte(i.toInt() xor 0xab)
         if (i.toInt() != 84) anInt10520 = 87
         if (bool_12_) {

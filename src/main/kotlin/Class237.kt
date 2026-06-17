@@ -266,7 +266,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
         } while (false)
     }
 
-    private fun method1676(var_s: s?, var_s_64_: s?, i: Int, var_s_65_: s?, `is`: Array<IntArray?>?, var_renderer: Renderer?, i_66_: Int) {
+    private fun method1676(var_terrainTile: TerrainTile?, var_terrainTile_64_: TerrainTile?, i: Int, var_terrainTile_65_: TerrainTile?, `is`: Array<IntArray?>?, var_renderer: Renderer?, i_66_: Int) {
         try {
             anInt3102++
             val is_67_ = aByteArrayArrayArray3126[i_66_]!!
@@ -345,9 +345,9 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 var i_89_ = -i_87_ + i_85_
                                 if (i_89_ < 0) i_89_ = -i_89_
                                 if (i_89_ == i_88_) {
-                                    i_88_ = (var_s_64_!!.method3982((-86).toByte(), i_73_, i_71_) + -var_s_64_.method3982((-86).toByte(), i_74_, i_72_))
+                                    i_88_ = (var_terrainTile_64_!!.method3982((-86).toByte(), i_73_, i_71_) + -var_terrainTile_64_.method3982((-86).toByte(), i_74_, i_72_))
                                     if (i_88_ < 0) i_88_ = -i_88_
-                                    i_89_ = (var_s_64_.method3982((-86).toByte(), i_73_, i_72_) - var_s_64_.method3982((-86).toByte(), i_74_, i_71_))
+                                    i_89_ = (var_terrainTile_64_.method3982((-86).toByte(), i_73_, i_72_) - var_terrainTile_64_.method3982((-86).toByte(), i_74_, i_71_))
                                     if (i_89_ < 0) i_89_ = -i_89_
                                 }
                                 i_77_ = (if (i_89_ <= i_88_) 0 else 1)
@@ -442,8 +442,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 val is_108_ = IntArray(i_104_)
                                 val is_109_ = IntArray(i_104_)
                                 val is_110_ = IntArray(i_104_)
-                                val is_111_ = if (var_s == null) null else IntArray(i_104_)
-                                val is_112_ = (if (var_s == null && var_s_65_ == null) null else IntArray(i_104_))
+                                val is_111_ = if (var_terrainTile == null) null else IntArray(i_104_)
+                                val is_112_ = (if (var_terrainTile == null && var_terrainTile_65_ == null) null else IntArray(i_104_))
                                 var i_113_ = -1
                                 var i_114_ = -1
                                 var i_115_ = 256
@@ -525,19 +525,19 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                             if (is_111_ != null && (Class160.aBooleanArrayArray2133!![i_76_.toInt()]!![i_121_])) {
                                                 val i_127_ = (i_126_ + (i_71_ shl 9))
                                                 val i_128_ = i_125_ + (i_73_ shl 9)
-                                                is_111_[i_103_] = ((var_s!!.method3986(i_127_, i_128_, 124.toByte())) + -(var_s_64_!!.method3986(i_127_, i_128_, (-118).toByte())))
+                                                is_111_[i_103_] = ((var_terrainTile!!.method3986(i_127_, i_128_, 124.toByte())) + -(var_terrainTile_64_!!.method3986(i_127_, i_128_, (-118).toByte())))
                                             }
                                             if (is_112_ != null) {
-                                                if (var_s == null || (Class160.aBooleanArrayArray2133!![i_76_.toInt()]!![i_121_])) {
-                                                    if (var_s_65_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495!![i_76_.toInt()]!![i_121_])) {
+                                                if (var_terrainTile == null || (Class160.aBooleanArrayArray2133!![i_76_.toInt()]!![i_121_])) {
+                                                    if (var_terrainTile_65_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495!![i_76_.toInt()]!![i_121_])) {
                                                         val i_129_ = ((i_71_ shl 9) - -i_126_)
                                                         val i_130_ = ((i_73_ shl 9) + i_125_)
-                                                        is_112_[i_103_] = ((var_s_65_.method3986(i_129_, i_130_, (-105).toByte())) + -(var_s_64_!!.method3986(i_129_, i_130_, (-109).toByte())))
+                                                        is_112_[i_103_] = ((var_terrainTile_65_.method3986(i_129_, i_130_, (-105).toByte())) + -(var_terrainTile_64_!!.method3986(i_129_, i_130_, (-109).toByte())))
                                                     }
                                                 } else {
                                                     val i_131_ = ((i_71_ shl 9) + i_126_)
                                                     val i_132_ = (i_125_ + (i_73_ shl 9))
-                                                    is_112_[i_103_] = ((var_s_64_!!.method3986(i_131_, i_132_, (-4).toByte())) - (var_s.method3986(i_131_, i_132_, 73.toByte())))
+                                                    is_112_[i_103_] = ((var_terrainTile_64_!!.method3986(i_131_, i_132_, (-4).toByte())) - (var_terrainTile.method3986(i_131_, i_132_, 73.toByte())))
                                                 }
                                             }
                                             if (i_121_ < 8 && ((Class306.anIntArray3873!![i_122_]) > (class277.anInt3564))) {
@@ -642,19 +642,19 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                             if (is_111_ != null && (Class160.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
                                                 val i_147_ = (i_146_ + (i_71_ shl 9))
                                                 val i_148_ = ((i_73_ shl 9) - -i_145_)
-                                                is_111_[i_103_] = ((var_s!!.method3986(i_147_, i_148_, (-95).toByte())) - (var_s_64_!!.method3986(i_147_, i_148_, 69.toByte())))
+                                                is_111_[i_103_] = ((var_terrainTile!!.method3986(i_147_, i_148_, (-95).toByte())) - (var_terrainTile_64_!!.method3986(i_147_, i_148_, 69.toByte())))
                                             }
                                             if (is_112_ != null) {
-                                                if (var_s == null || (Class160.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
-                                                    if (var_s_65_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495!![i_76_.toInt()]!![i_141_])) {
+                                                if (var_terrainTile == null || (Class160.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
+                                                    if (var_terrainTile_65_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495!![i_76_.toInt()]!![i_141_])) {
                                                         val i_149_ = ((i_71_ shl 9) - -i_146_)
                                                         val i_150_ = (i_145_ + (i_73_ shl 9))
-                                                        is_112_[i_103_] = ((var_s_65_.method3986(i_149_, i_150_, 92.toByte())) + -(var_s_64_!!.method3986(i_149_, i_150_, 127.toByte())))
+                                                        is_112_[i_103_] = ((var_terrainTile_65_.method3986(i_149_, i_150_, 92.toByte())) + -(var_terrainTile_64_!!.method3986(i_149_, i_150_, 127.toByte())))
                                                     }
                                                 } else {
                                                     val i_151_ = ((i_71_ shl 9) + i_146_)
                                                     val i_152_ = (i_145_ + (i_73_ shl 9))
-                                                    is_112_[i_103_] = ((var_s_64_!!.method3986(i_151_, i_152_, (-102).toByte())) - (var_s.method3986(i_151_, i_152_, 106.toByte())))
+                                                    is_112_[i_103_] = ((var_terrainTile_64_!!.method3986(i_151_, i_152_, (-102).toByte())) - (var_terrainTile.method3986(i_151_, i_152_, 106.toByte())))
                                                 }
                                             }
                                             if (i_141_ < 8 && (Class306.anIntArray3873!![i_142_]) >= 0) {
@@ -716,10 +716,10 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     }
                                     if (i_76_.toInt() != 0 && class22.aBoolean342) bool = true
                                 }
-                                val i_155_ = var_s_64_!!.method3982((-86).toByte(), i_73_, i_71_)
-                                val i_156_ = var_s_64_.method3982((-86).toByte(), i_73_, i_72_)
-                                val i_157_ = var_s_64_.method3982((-86).toByte(), i_74_, i_72_)
-                                val i_158_ = var_s_64_.method3982((-86).toByte(), i_74_, i_71_)
+                                val i_155_ = var_terrainTile_64_!!.method3982((-86).toByte(), i_73_, i_71_)
+                                val i_156_ = var_terrainTile_64_.method3982((-86).toByte(), i_73_, i_72_)
+                                val i_157_ = var_terrainTile_64_.method3982((-86).toByte(), i_74_, i_72_)
+                                val i_158_ = var_terrainTile_64_.method3982((-86).toByte(), i_74_, i_71_)
                                 val bool_159_ = method802(i_73_, i_71_, true)
                                 if (bool_159_ && i_66_ > 1 || (!bool_159_ && i_66_ > 0)) {
                                     var bool_160_ = true
@@ -736,7 +736,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     i_162_ = method2483(i_71_, i_73_)
                                     i_163_ = method1457(i_71_, i_73_)
                                 }
-                                var_s_64_.U(i_71_, i_73_, is_106_, is_111_, is_107_, is_112_, is_108_, is_105_, is_109_, is_110_, i_161_, i_162_, i_163_, bool)
+                                var_terrainTile_64_.U(i_71_, i_73_, is_106_, is_111_, is_107_, is_112_, is_108_, is_105_, is_109_, is_110_, i_161_, i_162_, i_163_, bool)
                                 method1394(i_66_, i_71_, i_73_)
                             }
                         }
@@ -745,7 +745,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                 i_71_++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sr.B(" + (if (var_s != null) "{...}" else "null") + ',' + (if (var_s_64_ != null) "{...}" else "null") + ',' + i + ',' + (if (var_s_65_ != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("sr.B(" + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_64_ != null) "{...}" else "null") + ',' + i + ',' + (if (var_terrainTile_65_ != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ')'))
         }
     }
 
@@ -799,7 +799,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
         }
     }
 
-    fun method1680(var_s: s?, i: Byte, var_s_179_: s?, var_renderer: Renderer?) {
+    fun method1680(var_terrainTile: TerrainTile?, i: Byte, var_terrainTile_179_: TerrainTile?, var_renderer: Renderer?) {
         try {
             anInt3131++
             val `is` = (Array<IntArray?>(this.anInt3117) { IntArray(this.anInt3114) })
@@ -880,8 +880,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             }
                         }
                     }
-                    if (!IOException_Sub1.aBoolean86) method1683(var_renderer, if (i_180_ != 0) null else var_s, i_180_, 127.toByte(), `is`, NativeSprite.aSArray5191!![i_180_], if (i_180_ != 0) null else var_s_179_)
-                    else method1676(if (i_180_ != 0) null else var_s, NativeSprite.aSArray5191!![i_180_], -26833, if (i_180_ == 0) var_s_179_ else null, `is`, var_renderer, i_180_)
+                    if (!IOException_Sub1.aBoolean86) method1683(var_renderer, if (i_180_ != 0) null else var_terrainTile, i_180_, 127.toByte(), `is`, NativeSprite.aTerrainTileArray5191!![i_180_], if (i_180_ != 0) null else var_terrainTile_179_)
+                    else method1676(if (i_180_ != 0) null else var_terrainTile, NativeSprite.aTerrainTileArray5191!![i_180_], -26833, if (i_180_ == 0) var_terrainTile_179_ else null, `is`, var_renderer, i_180_)
                     aByteArrayArrayArray3113[i_180_] = null
                     aByteArrayArrayArray3123[i_180_] = null
                     aByteArrayArrayArray3126[i_180_] = null
@@ -894,12 +894,12 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                 }
                 var i_196_ = 0
                 while ((this.anInt3130 > i_196_)) {
-                    NativeSprite.aSArray5191!![i_196_]!!.YA()
+                    NativeSprite.aTerrainTileArray5191!![i_196_]!!.YA()
                     i_196_++
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sr.L(" + (if (var_s != null) "{...}" else "null") + ',' + i + ',' + (if (var_s_179_ != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("sr.L(" + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + (if (var_terrainTile_179_ != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -988,7 +988,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
         if (i_215_ != 1115212770) this.aByteArrayArrayArray3104 = null
     }
 
-    private fun method1683(var_renderer: Renderer?, var_s: s?, i: Int, i_223_: Byte, `is`: Array<IntArray?>?, var_s_224_: s?, var_s_225_: s?) {
+    private fun method1683(var_renderer: Renderer?, var_terrainTile: TerrainTile?, i: Int, i_223_: Byte, `is`: Array<IntArray?>?, var_terrainTile_224_: TerrainTile?, var_terrainTile_225_: TerrainTile?) {
         do {
             try {
                 anInt3111++
@@ -1068,8 +1068,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 val i_247_ = anIntArray3124.size
                                 val is_248_ = IntArray(i_247_)
                                 val is_249_ = IntArray(i_247_)
-                                val is_250_ = if (var_s == null) null else IntArray(i_247_)
-                                val is_251_ = (if (var_s != null || var_s_225_ != null) IntArray(i_247_) else null)
+                                val is_250_ = if (var_terrainTile == null) null else IntArray(i_247_)
+                                val is_251_ = (if (var_terrainTile != null || var_terrainTile_225_ != null) IntArray(i_247_) else null)
                                 var i_252_ = 0
                                 while (i_247_ > i_252_) {
                                     val i_253_ = anIntArray3124[i_252_]
@@ -1092,25 +1092,25 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     if (is_250_ != null && (Class160.aBooleanArrayArray2133!![i_228_.toInt()]!![i_252_])) {
                                         val i_257_ = (is_248_[i_252_] + (i_226_ shl 9))
                                         val i_258_ = ((i_227_ shl 9) - -is_249_[i_252_])
-                                        is_250_[i_252_] = (var_s!!.method3986(i_257_, i_258_, (-101).toByte()) + -(var_s_224_!!.method3986(i_257_, i_258_, (-12).toByte())))
+                                        is_250_[i_252_] = (var_terrainTile!!.method3986(i_257_, i_258_, (-101).toByte()) + -(var_terrainTile_224_!!.method3986(i_257_, i_258_, (-12).toByte())))
                                     }
                                     if (is_251_ != null) {
-                                        if (var_s != null && !(Class160.aBooleanArrayArray2133!![i_228_.toInt()]!![i_252_])) {
+                                        if (var_terrainTile != null && !(Class160.aBooleanArrayArray2133!![i_228_.toInt()]!![i_252_])) {
                                             val i_259_ = (is_248_[i_252_] + (i_226_ shl 9))
                                             val i_260_ = ((i_227_ shl 9) + is_249_[i_252_])
-                                            is_251_[i_252_] = ((var_s_224_!!.method3986(i_259_, i_260_, 87.toByte())) - (var_s.method3986(i_259_, i_260_, (-90).toByte())))
-                                        } else if (var_s_225_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495!![i_228_.toInt()]!![i_252_])) {
+                                            is_251_[i_252_] = ((var_terrainTile_224_!!.method3986(i_259_, i_260_, 87.toByte())) - (var_terrainTile.method3986(i_259_, i_260_, (-90).toByte())))
+                                        } else if (var_terrainTile_225_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495!![i_228_.toInt()]!![i_252_])) {
                                             val i_261_ = (is_248_[i_252_] + (i_226_ shl 9))
                                             val i_262_ = (is_249_[i_252_] + (i_227_ shl 9))
-                                            is_251_[i_252_] = ((var_s_225_.method3986(i_261_, i_262_, (-128).toByte())) + -(var_s_224_!!.method3986(i_261_, i_262_, (-1).toByte())))
+                                            is_251_[i_252_] = ((var_terrainTile_225_.method3986(i_261_, i_262_, (-128).toByte())) + -(var_terrainTile_224_!!.method3986(i_261_, i_262_, (-1).toByte())))
                                         }
                                     }
                                     i_252_++
                                 }
-                                val i_263_ = var_s_224_!!.method3982((-86).toByte(), i_227_, i_226_)
-                                val i_264_ = var_s_224_.method3982((-86).toByte(), i_227_, 1 + i_226_)
-                                val i_265_ = var_s_224_.method3982((-86).toByte(), 1 + i_227_, i_226_ - -1)
-                                val i_266_ = var_s_224_.method3982((-86).toByte(), i_227_ + 1, i_226_)
+                                val i_263_ = var_terrainTile_224_!!.method3982((-86).toByte(), i_227_, i_226_)
+                                val i_264_ = var_terrainTile_224_.method3982((-86).toByte(), i_227_, 1 + i_226_)
+                                val i_265_ = var_terrainTile_224_.method3982((-86).toByte(), 1 + i_227_, i_226_ - -1)
+                                val i_266_ = var_terrainTile_224_.method3982((-86).toByte(), i_227_ + 1, i_226_)
                                 val bool_267_ = method802(i_227_, i_226_, true)
                                 if (bool_267_ && i > 1 || !bool_267_ && i > 0) {
                                     var bool_268_ = true
@@ -1127,7 +1127,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     i_270_ = method2483(i_226_, i_227_)
                                     i_271_ = method1457(i_226_, i_227_)
                                 }
-                                var_s_224_.method3978(i_226_, i_227_, is_248_, is_250_!!, is_249_, is_251_!!, Class10.anIntArrayArray174!![i_228_.toInt()]!!, Class68.anIntArrayArray1190!![i_228_.toInt()]!!, (Class348_Sub12.anIntArrayArray6740!![i_228_.toInt()]!!), is_238_, is_239_!!, is_240_, is_241_, i_269_, i_270_, i_271_, false)
+                                var_terrainTile_224_.method3978(i_226_, i_227_, is_248_, is_250_!!, is_249_, is_251_!!, Class10.anIntArrayArray174!![i_228_.toInt()]!!, Class68.anIntArrayArray1190!![i_228_.toInt()]!!, (Class348_Sub12.anIntArrayArray6740!![i_228_.toInt()]!!), is_238_, is_239_!!, is_240_, is_241_, i_269_, i_270_, i_271_, false)
                                 method1394(i, i_226_, i_227_)
                             }
                         }
@@ -1137,7 +1137,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                 if (i_223_ >= 115) break
                 this.anInt3117 = 57
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("sr.H(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_s != null) "{...}" else "null") + ',' + i + ',' + i_223_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_s_224_ != null) "{...}" else "null") + ',' + (if (var_s_225_ != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("sr.H(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_223_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_terrainTile_224_ != null) "{...}" else "null") + ',' + (if (var_terrainTile_225_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

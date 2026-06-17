@@ -377,33 +377,33 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             val i_52_ = -(i_46_ shl i_30_) + i_49_
             val i_53_ = (i_44_ shl i_30_) + i_47_
             val i_54_ = i_48_ + (i_45_ shl i_30_)
-            s_Sub2.anIntArray8269!![0] = i_50_
+            OpenGlTerrainTile.anIntArray8269!![0] = i_50_
             val i_55_ = (i_46_ shl i_30_) + i_49_
             Class348_Sub42_Sub12.anIntArray9612!![0] = i_51_
-            s_Sub2.anIntArray8269!![1] = i_53_
+            OpenGlTerrainTile.anIntArray8269!![1] = i_53_
             Class363.anIntArray4463!![0] = i_52_
             Class348_Sub42_Sub12.anIntArray9612!![1] = i_51_
             Class363.anIntArray4463!![1] = i_52_
-            s_Sub2.anIntArray8269!![2] = i_50_
+            OpenGlTerrainTile.anIntArray8269!![2] = i_50_
             Class348_Sub42_Sub12.anIntArray9612!![2] = i_54_
             Class363.anIntArray4463!![2] = i_52_
-            s_Sub2.anIntArray8269!![3] = i_53_
+            OpenGlTerrainTile.anIntArray8269!![3] = i_53_
             Class348_Sub42_Sub12.anIntArray9612!![3] = i_54_
             Class363.anIntArray4463!![3] = i_52_
-            s_Sub2.anIntArray8269!![4] = i_50_
+            OpenGlTerrainTile.anIntArray8269!![4] = i_50_
             Class348_Sub42_Sub12.anIntArray9612!![4] = i_51_
             Class363.anIntArray4463!![4] = i_55_
-            s_Sub2.anIntArray8269!![5] = i_53_
+            OpenGlTerrainTile.anIntArray8269!![5] = i_53_
             Class348_Sub42_Sub12.anIntArray9612!![5] = i_51_
             Class363.anIntArray4463!![5] = i_55_
-            s_Sub2.anIntArray8269!![6] = i_50_
+            OpenGlTerrainTile.anIntArray8269!![6] = i_50_
             Class348_Sub42_Sub12.anIntArray9612!![6] = i_54_
-            s_Sub2.anIntArray8269!![7] = i_53_
+            OpenGlTerrainTile.anIntArray8269!![7] = i_53_
             Class363.anIntArray4463!![6] = i_55_
             Class348_Sub42_Sub12.anIntArray9612!![7] = i_54_
             Class363.anIntArray4463!![7] = i_55_
             for (i_56_ in 0..7) {
-                val f_57_ = s_Sub2.anIntArray8269!![i_56_].toFloat()
+                val f_57_ = OpenGlTerrainTile.anIntArray8269!![i_56_].toFloat()
                 val f_58_ = Class363.anIntArray4463!![i_56_].toFloat()
                 val f_59_ = Class348_Sub42_Sub12.anIntArray9612!![i_56_].toFloat()
                 val f_60_ = (f_57_ * Class348_Sub20.aFloat6835 + f_59_ * Class290.aFloat3710 + Class318_Sub6.aFloat6430 * f_58_ + f_35_)
@@ -2641,7 +2641,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         return method668(i.toInt() != 0, class64_sub2_532_, class64_sub2_533_, i_531_, bool, 26794)
     }
 
-    public override fun p(i: Int, i_534_: Int, var_s: s?, var_s_535_: s?, i_536_: Int, i_537_: Int, i_538_: Int) {
+    public override fun p(i: Int, i_534_: Int, var_terrainTile: TerrainTile?, var_terrainTile_535_: TerrainTile?, i_536_: Int, i_537_: Int, i_538_: Int) {
         try {
             anInt5501++
             if (!aBoolean5477) method675(0)
@@ -2649,18 +2649,18 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             var i_540_ = anInt5467 + i_536_
             var i_541_ = anInt5418 + i_538_
             var i_542_ = i_538_ - -anInt5443
-            if ((i != 1 && i != 2 && i != 3 && i != 5) || (i_539_ >= 0 && var_s!!.anInt4587 > (i_540_ + var_s.anInt4592 shr var_s.anInt4588) && i_541_ >= 0 && var_s.anInt4590 > (var_s.anInt4592 + i_542_ shr var_s.anInt4588))) {
+            if ((i != 1 && i != 2 && i != 3 && i != 5) || (i_539_ >= 0 && var_terrainTile!!.anInt4587 > (i_540_ + var_terrainTile.anInt4592 shr var_terrainTile.anInt4588) && i_541_ >= 0 && var_terrainTile.anInt4590 > (var_terrainTile.anInt4592 + i_542_ shr var_terrainTile.anInt4588))) {
                 if (i != 4 && i != 5) {
-                    i_539_ = i_539_ shr var_s!!.anInt4588
-                    i_540_ = (var_s.anInt4592 + -1 + i_540_ shr var_s.anInt4588)
-                    i_541_ = i_541_ shr var_s.anInt4588
-                    i_542_ = (var_s.anInt4592 - (1 - i_542_) shr var_s.anInt4588)
-                    if ((var_s.method3982((-86).toByte(), i_541_, i_539_) == i_537_) && i_537_ == var_s.method3982((-86).toByte(), i_541_, i_540_) && (var_s.method3982((-86).toByte(), i_542_, i_539_) == i_537_) && i_537_ == var_s.method3982((-86).toByte(), i_542_, i_540_)) return
-                } else if (var_s_535_ == null || (i_539_ < 0 || (var_s_535_.anInt4587 <= (var_s_535_.anInt4592 + i_540_ shr var_s_535_.anInt4588)) || i_541_ < 0 || (var_s_535_.anInt4590 <= (i_542_ - -var_s_535_.anInt4592 shr var_s_535_.anInt4588)))) return
+                    i_539_ = i_539_ shr var_terrainTile!!.anInt4588
+                    i_540_ = (var_terrainTile.anInt4592 + -1 + i_540_ shr var_terrainTile.anInt4588)
+                    i_541_ = i_541_ shr var_terrainTile.anInt4588
+                    i_542_ = (var_terrainTile.anInt4592 - (1 - i_542_) shr var_terrainTile.anInt4588)
+                    if ((var_terrainTile.method3982((-86).toByte(), i_541_, i_539_) == i_537_) && i_537_ == var_terrainTile.method3982((-86).toByte(), i_541_, i_540_) && (var_terrainTile.method3982((-86).toByte(), i_542_, i_539_) == i_537_) && i_537_ == var_terrainTile.method3982((-86).toByte(), i_542_, i_540_)) return
+                } else if (var_terrainTile_535_ == null || (i_539_ < 0 || (var_terrainTile_535_.anInt4587 <= (var_terrainTile_535_.anInt4592 + i_540_ shr var_terrainTile_535_.anInt4588)) || i_541_ < 0 || (var_terrainTile_535_.anInt4590 <= (i_542_ - -var_terrainTile_535_.anInt4592 shr var_terrainTile_535_.anInt4588)))) return
                 if (i == 1) {
                     var i_559_ = 0
                     while (anInt5433 > i_559_) {
-                        anIntArray5519!![i_559_] = (anIntArray5519!![i_559_] + (var_s!!.method3986((anIntArray5511!![i_559_] + i_536_), (anIntArray5429!![i_559_] + i_538_), (-93).toByte()) - i_537_))
+                        anIntArray5519!![i_559_] = (anIntArray5519!![i_559_] + (var_terrainTile!!.method3986((anIntArray5511!![i_559_] + i_536_), (anIntArray5429!![i_559_] + i_538_), (-93).toByte()) - i_537_))
                         i_559_++
                     }
                 } else if (i == 2) {
@@ -2669,7 +2669,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     var i_544_ = 0
                     while (anInt5433 > i_544_) {
                         val i_545_ = ((anIntArray5519!![i_544_] shl 16) / i_543_)
-                        if (i_545_ < i_534_) anIntArray5519!![i_544_] = (anIntArray5519!![i_544_] - -((i_534_ + -i_545_) * (-i_537_ + (var_s!!.method3986((i_536_ + anIntArray5511!![i_544_]), (anIntArray5429!![i_544_] - -i_538_), (-92).toByte()))) / i_534_))
+                        if (i_545_ < i_534_) anIntArray5519!![i_544_] = (anIntArray5519!![i_544_] - -((i_534_ + -i_545_) * (-i_537_ + (var_terrainTile!!.method3986((i_536_ + anIntArray5511!![i_544_]), (anIntArray5429!![i_544_] - -i_538_), (-92).toByte()))) / i_534_))
                         i_544_++
                     }
                 } else if (i == 3) {
@@ -2677,13 +2677,13 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val i_556_ = (i_534_ shr 8 and 0xff) * 4
                     val i_557_ = 0x3fc0 and (i_534_ shr 16 shl 6)
                     val i_558_ = 0x3fc0 and (i_534_ shr 24 shl 6)
-                    if ((i_536_ - (i_555_ shr 1) < 0) || ((var_s!!.anInt4592 + (i_555_ shr 1) + i_536_) >= var_s.anInt4587 shl var_s.anInt4588) || -(i_556_ shr 1) + i_538_ < 0 || ((var_s.anInt4592 + ((i_556_ shr 1) + i_538_)) >= var_s.anInt4590 shl var_s.anInt4588)) return
-                    this.method626(i_555_, 10947, i_558_, i_536_, i_556_, i_537_, i_557_, var_s, i_538_)
+                    if ((i_536_ - (i_555_ shr 1) < 0) || ((var_terrainTile!!.anInt4592 + (i_555_ shr 1) + i_536_) >= var_terrainTile.anInt4587 shl var_terrainTile.anInt4588) || -(i_556_ shr 1) + i_538_ < 0 || ((var_terrainTile.anInt4592 + ((i_556_ shr 1) + i_538_)) >= var_terrainTile.anInt4590 shl var_terrainTile.anInt4588)) return
+                    this.method626(i_555_, 10947, i_558_, i_536_, i_556_, i_537_, i_557_, var_terrainTile, i_538_)
                 } else if (i == 4) {
                     val i_553_ = -anInt5461 + anInt5509
                     var i_554_ = 0
                     while ((i_554_ < anInt5433)) {
-                        anIntArray5519!![i_554_] = (i_553_ + anIntArray5519!![i_554_] - (-(var_s_535_!!.method3986(anIntArray5511!![i_554_] + i_536_, anIntArray5429!![i_554_] - -i_538_, 92.toByte())) + i_537_))
+                        anIntArray5519!![i_554_] = (i_553_ + anIntArray5519!![i_554_] - (-(var_terrainTile_535_!!.method3986(anIntArray5511!![i_554_] + i_536_, anIntArray5429!![i_554_] - -i_538_, 92.toByte())) + i_537_))
                         i_554_++
                     }
                 } else if (i == 5) {
@@ -2692,8 +2692,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     while (anInt5433 > i_547_) {
                         val i_548_ = i_536_ + anIntArray5511!![i_547_]
                         val i_549_ = i_538_ + anIntArray5429!![i_547_]
-                        val i_550_ = var_s!!.method3986(i_548_, i_549_, 57.toByte())
-                        val i_551_ = var_s_535_!!.method3986(i_548_, i_549_, (-111).toByte())
+                        val i_550_ = var_terrainTile!!.method3986(i_548_, i_549_, 57.toByte())
+                        val i_551_ = var_terrainTile_535_!!.method3986(i_548_, i_549_, (-111).toByte())
                         val i_552_ = i_550_ - (i_551_ - -i_534_)
                         anIntArray5519!![i_547_] = ((i_552_ * ((anIntArray5519!![i_547_] shl 8) / i_546_) shr 8) + (i_550_ + -i_537_))
                         i_547_++
@@ -2703,7 +2703,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 aBoolean5477 = false
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.p(" + i + ',' + i_534_ + ',' + (if (var_s != null) "{...}" else "null") + ',' + (if (var_s_535_ != null) "{...}" else "null") + ',' + i_536_ + ',' + i_537_ + ',' + i_538_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.p(" + i + ',' + i_534_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_535_ != null) "{...}" else "null") + ',' + i_536_ + ',' + i_537_ + ',' + i_538_ + ')'))
         }
     }
 

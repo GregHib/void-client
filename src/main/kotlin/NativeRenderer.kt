@@ -1127,10 +1127,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3648(i: Int, i_122_: Int, `is`: Array<IntArray?>, is_123_: Array<IntArray?>?, i_124_: Int, i_125_: Int, i_126_: Int): s {
+    override fun method3648(i: Int, i_122_: Int, `is`: Array<IntArray?>, is_123_: Array<IntArray?>?, i_124_: Int, i_125_: Int, i_126_: Int): TerrainTile {
         try {
             anInt8011++
-            return s_Sub3(this, i_125_, i_126_, i, i_122_, `is`, is_123_, i_124_)
+            return NativeTerrainTile(this, i_125_, i_126_, i, i_122_, `is`, is_123_, i_124_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.VE(" + i + ',' + i_122_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_123_ != null) "{...}" else "null") + ',' + i_124_ + ',' + i_125_ + ',' + i_126_ + ')'))
         }

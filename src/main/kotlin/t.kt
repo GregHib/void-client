@@ -1,7 +1,7 @@
 /* t - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArray?>, is_51_: Array<IntArray?>?, i_52_: Int, i_53_: Int, i_54_: Int) : s(i, i_50_, i_52_, `is`), Interface19 {
+class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArray?>, is_51_: Array<IntArray?>?, i_52_: Int, i_53_: Int, i_54_: Int) : TerrainTile(i, i_50_, i_52_, `is`), Interface19 {
     @JvmField
     var nativeid: Long = 0
     private val aClass262_5149 = Class262()

@@ -151,7 +151,7 @@ class Class51 {
         return class348_sub50.aString7211
     }
 
-    fun method476(var_renderer: Renderer?, var_s: s?, i: Int, i_4_: Int, i_5_: Int, bool: Boolean, var_s_6_: s?, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): Class2? {
+    fun method476(var_renderer: Renderer?, var_terrainTile: TerrainTile?, i: Int, i_4_: Int, i_5_: Int, bool: Boolean, var_terrainTile_6_: TerrainTile?, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): Class2? {
         var i = i
         try {
             if (Class104.method955(22311, i)) i = 4
@@ -195,11 +195,11 @@ class Class51 {
                     var_renderNode = class2.aRenderNode118
                 }
             }
-            val bool_13_ = (aByte886.toInt() != 0 && (var_s_6_ != null || var_s != null))
+            val bool_13_ = (aByte886.toInt() != 0 && (var_terrainTile_6_ != null || var_terrainTile != null))
             val bool_14_ = (anInt893 != 0 || anInt954 != 0 || anInt890 != 0)
             if (bool_13_ || bool_14_) {
                 class64 = class64!!.method614(0.toByte(), i_11_, true)
-                if (bool_13_) class64!!.p(aByte886.toInt(), anInt915, var_s_6_, var_s, i_5_, i_7_, i_8_)
+                if (bool_13_) class64!!.p(aByte886.toInt(), anInt915, var_terrainTile_6_, var_terrainTile, i_5_, i_7_, i_8_)
                 if (bool_14_) class64!!.H(anInt893, anInt954, anInt890)
                 class64!!.s(i_4_)
             } else class64 = class64!!.method614(0.toByte(), i_4_, true)
@@ -208,7 +208,7 @@ class Class51 {
             return Class348_Sub42.aClass2_7058
         } catch (runtimeexception: RuntimeException) {
             runtimeexception.printStackTrace()
-            throw Class348_Sub17.method2929(runtimeexception, ("iv.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_s != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (if (var_s_6_ != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("iv.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (if (var_terrainTile_6_ != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
         }
     }
 
@@ -585,7 +585,7 @@ class Class51 {
         if (i_38_ >= -93) aByteArray885 = null
     }
 
-    fun method483(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, var_renderer: Renderer?, i_66_: Int, i_67_: Int, i_68_: Byte, var_s: s?, i_69_: Int, i_70_: Int, i_71_: Int, class17: Class17?, var_s_72_: s?): Class64? {
+    fun method483(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, var_renderer: Renderer?, i_66_: Int, i_67_: Int, i_68_: Byte, var_terrainTile: TerrainTile?, i_69_: Int, i_70_: Int, i_71_: Int, class17: Class17?, var_terrainTile_72_: TerrainTile?): Class64? {
         var i_64_ = i_64_
         var i_67_ = i_67_
         try {
@@ -631,7 +631,7 @@ class Class51 {
                     bool = true
                     class64 = class64!!.method614(3.toByte(), i_67_, true)
                 }
-                class64!!.p(aByte886.toInt(), anInt915, var_s_72_, var_s, i_71_, i_65_, i_69_)
+                class64!!.p(aByte886.toInt(), anInt915, var_terrainTile_72_, var_terrainTile, i_71_, i_65_, i_69_)
             }
             if (anInt893 != 0 || anInt954 != 0 || anInt890 != 0) {
                 if (!bool) {
@@ -643,7 +643,7 @@ class Class51 {
             if (bool) class64!!.s(i_73_)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_s != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (var_s_72_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
         }
     }
 

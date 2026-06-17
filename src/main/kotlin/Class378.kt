@@ -774,7 +774,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             if (Class277.aClass21_3572 == class21) return 1
             if (class21 == Class247.aClass21_3181) return 4
             if (Class348_Sub42_Sub16.aClass21_9661 == class21) return 6
-            if (class21 == s_Sub3.aClass21_8320) return 5
+            if (class21 == NativeTerrainTile.aClass21_8320) return 5
             throw IllegalArgumentException("")
         }
 

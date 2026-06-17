@@ -150,17 +150,17 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
         if (i_15_ != -4) aClass30_10082 = null
         anInt10086++
         val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, aShort10081.toInt() and 0xffff)
-        val var_s: s?
-        val var_s_16_: s?
+        val var_terrainTile: TerrainTile?
+        val var_terrainTile_16_: TerrainTile?
         if (aBoolean10066) {
-            var_s = Class348_Sub1_Sub1.aSArray8801!![0]
-            var_s_16_ = Class332.aSArray4142!![this.aByte6376.toInt()]
+            var_terrainTile = Class348_Sub1_Sub1.aTerrainTileArray8801!![0]
+            var_terrainTile_16_ = Class332.aTerrainTileArray4142!![this.aByte6376.toInt()]
         } else {
-            var_s_16_ = (Class348_Sub1_Sub1.aSArray8801!![this.aByte6376.toInt()])
-            if (this.aByte6376 < 3) var_s = (Class348_Sub1_Sub1.aSArray8801!![1 + this.aByte6376])
-            else var_s = null
+            var_terrainTile_16_ = (Class348_Sub1_Sub1.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            if (this.aByte6376 < 3) var_terrainTile = (Class348_Sub1_Sub1.aTerrainTileArray8801!![1 + this.aByte6376])
+            else var_terrainTile = null
         }
-        return class51.method476(var_renderer, var_s, aByte10079.toInt(), i, this.x, bool, var_s_16_, this.anInt6382, this.y, aByte10062.toInt(), i_15_ + 132)
+        return class51.method476(var_renderer, var_terrainTile, aByte10079.toInt(), i, this.x, bool, var_terrainTile_16_, this.anInt6382, this.y, aByte10062.toInt(), i_15_ + 132)
     }
 
     public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {

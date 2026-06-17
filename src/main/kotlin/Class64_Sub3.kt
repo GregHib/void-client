@@ -11,7 +11,7 @@ import Class59_Sub2_Sub1.Companion.method565
 import RasterSprite.Companion.method166
 import jaclib.memory.Stream.Companion.floatToRawIntBits
 import jaggl.OpenGL.Companion.glColor4ub
-import s_Sub2.Companion.method3999
+import OpenGlTerrainTile.Companion.method3999
 import kotlin.math.sqrt
 
 class Class64_Sub3 : Class64 {
@@ -1212,7 +1212,7 @@ class Class64_Sub3 : Class64 {
         return aShort5646.toInt()
     }
 
-    public override fun p(i: Int, i_256_: Int, var_s: s?, var_s_257_: s?, i_258_: Int, i_259_: Int, i_260_: Int) {
+    public override fun p(i: Int, i_256_: Int, var_terrainTile: TerrainTile?, var_terrainTile_257_: TerrainTile?, i_258_: Int, i_259_: Int, i_260_: Int) {
         do {
             try {
                 anInt5532++
@@ -1221,23 +1221,23 @@ class Class64_Sub3 : Class64 {
                 var i_262_ = i_258_ - -aShort5586
                 var i_263_ = i_260_ - -aShort5617
                 var i_264_ = aShort5646 + i_260_
-                if ((i != 1 && i != 2 && i != 3 && i != 5) || (i_261_ >= 0 && (var_s!!.anInt4587 > (var_s.anInt4592 + i_262_ shr var_s.anInt4588)) && i_263_ >= 0 && (var_s.anInt4590 > (i_264_ - -var_s.anInt4592 shr var_s.anInt4588)))) {
+                if ((i != 1 && i != 2 && i != 3 && i != 5) || (i_261_ >= 0 && (var_terrainTile!!.anInt4587 > (var_terrainTile.anInt4592 + i_262_ shr var_terrainTile.anInt4588)) && i_263_ >= 0 && (var_terrainTile.anInt4590 > (i_264_ - -var_terrainTile.anInt4592 shr var_terrainTile.anInt4588)))) {
                     if (i != 4 && i != 5) {
-                        i_261_ = i_261_ shr var_s!!.anInt4588
-                        i_262_ = (i_262_ - -var_s.anInt4592 - 1 shr var_s.anInt4588)
-                        i_263_ = i_263_ shr var_s.anInt4588
-                        i_264_ = (i_264_ + var_s.anInt4592 + -1 shr var_s.anInt4588)
-                        if (i_259_ == var_s.method3982((-86).toByte(), i_263_, i_261_) && i_259_ == var_s.method3982((-86).toByte(), i_263_, i_262_) && i_259_ == var_s.method3982((-86).toByte(), i_264_, i_261_) && (var_s.method3982((-86).toByte(), i_264_, i_262_) == i_259_)) break
-                    } else if (var_s_257_ == null || (i_261_ < 0 || (((i_262_ - -var_s_257_.anInt4592) shr var_s_257_.anInt4588) >= var_s_257_.anInt4587) || i_263_ < 0 || (var_s_257_.anInt4590 <= (var_s_257_.anInt4592 + i_264_ shr var_s_257_.anInt4588)))) break
+                        i_261_ = i_261_ shr var_terrainTile!!.anInt4588
+                        i_262_ = (i_262_ - -var_terrainTile.anInt4592 - 1 shr var_terrainTile.anInt4588)
+                        i_263_ = i_263_ shr var_terrainTile.anInt4588
+                        i_264_ = (i_264_ + var_terrainTile.anInt4592 + -1 shr var_terrainTile.anInt4588)
+                        if (i_259_ == var_terrainTile.method3982((-86).toByte(), i_263_, i_261_) && i_259_ == var_terrainTile.method3982((-86).toByte(), i_263_, i_262_) && i_259_ == var_terrainTile.method3982((-86).toByte(), i_264_, i_261_) && (var_terrainTile.method3982((-86).toByte(), i_264_, i_262_) == i_259_)) break
+                    } else if (var_terrainTile_257_ == null || (i_261_ < 0 || (((i_262_ - -var_terrainTile_257_.anInt4592) shr var_terrainTile_257_.anInt4588) >= var_terrainTile_257_.anInt4587) || i_263_ < 0 || (var_terrainTile_257_.anInt4590 <= (var_terrainTile_257_.anInt4592 + i_264_ shr var_terrainTile_257_.anInt4588)))) break
                     if (i == 1) {
-                        for (i_265_ in 0..<anInt5557) anIntArray5593!![i_265_] = (-i_259_ + anIntArray5593!![i_265_] + var_s!!.method3986((anIntArray5543!![i_265_] + i_258_), i_260_ + (anIntArray5644!![i_265_]), (-93).toByte()))
+                        for (i_265_ in 0..<anInt5557) anIntArray5593!![i_265_] = (-i_259_ + anIntArray5593!![i_265_] + var_terrainTile!!.method3986((anIntArray5543!![i_265_] + i_258_), i_260_ + (anIntArray5644!![i_265_]), (-93).toByte()))
                     } else if (i == 2) {
                         val i_279_ = aShort5591.toInt()
                         if (i_279_ == 0) break
                         var i_280_ = 0
                         while (anInt5557 > i_280_) {
                             val i_281_ = ((anIntArray5593!![i_280_] shl 16) / i_279_)
-                            if (i_281_ < i_256_) anIntArray5593!![i_280_] = (anIntArray5593!![i_280_] - -((-i_259_ + (var_s!!.method3986((anIntArray5543!![i_280_] - -i_258_), (i_260_ + anIntArray5644!![i_280_]), (-94).toByte()))) * (-i_281_ + i_256_) / i_256_))
+                            if (i_281_ < i_256_) anIntArray5593!![i_280_] = (anIntArray5593!![i_280_] - -((-i_259_ + (var_terrainTile!!.method3986((anIntArray5543!![i_280_] - -i_258_), (i_260_ + anIntArray5644!![i_280_]), (-94).toByte()))) * (-i_281_ + i_256_) / i_256_))
                             i_280_++
                         }
                     } else if (i == 3) {
@@ -1245,13 +1245,13 @@ class Class64_Sub3 : Class64 {
                         val i_267_ = 4 * ((0xff0e and i_256_) shr 8)
                         val i_268_ = 0x3fc0 and (i_256_ shr 16 shl 6)
                         val i_269_ = (0xff and (i_256_ shr 24)) shl 6
-                        if (i_258_ + -(i_266_ shr 1) < 0 || (((i_266_ shr 1) + (i_258_ - -var_s!!.anInt4592)) >= (var_s.anInt4587 shl var_s.anInt4588)) || -(i_267_ shr 1) + i_260_ < 0 || ((var_s.anInt4590 shl var_s.anInt4588) <= ((i_267_ shr 1) + i_260_ + var_s.anInt4592))) break
-                        this.method626(i_266_, 10947, i_269_, i_258_, i_267_, i_259_, i_268_, var_s, i_260_)
+                        if (i_258_ + -(i_266_ shr 1) < 0 || (((i_266_ shr 1) + (i_258_ - -var_terrainTile!!.anInt4592)) >= (var_terrainTile.anInt4587 shl var_terrainTile.anInt4588)) || -(i_267_ shr 1) + i_260_ < 0 || ((var_terrainTile.anInt4590 shl var_terrainTile.anInt4588) <= ((i_267_ shr 1) + i_260_ + var_terrainTile.anInt4592))) break
+                        this.method626(i_266_, 10947, i_269_, i_258_, i_267_, i_259_, i_268_, var_terrainTile, i_260_)
                     } else if (i == 4) {
                         val i_277_ = aShort5629 - aShort5591
                         var i_278_ = 0
                         while (anInt5557 > i_278_) {
-                            anIntArray5593!![i_278_] = (anIntArray5593!![i_278_] - (-(var_s_257_!!.method3986(anIntArray5543!![i_278_] + i_258_, anIntArray5644!![i_278_] + i_260_, 71.toByte())) - -i_259_ - i_277_))
+                            anIntArray5593!![i_278_] = (anIntArray5593!![i_278_] - (-(var_terrainTile_257_!!.method3986(anIntArray5543!![i_278_] + i_258_, anIntArray5644!![i_278_] + i_260_, 71.toByte())) - -i_259_ - i_277_))
                             i_278_++
                         }
                     } else if (i == 5) {
@@ -1260,8 +1260,8 @@ class Class64_Sub3 : Class64 {
                         while (anInt5557 > i_271_) {
                             val i_272_ = anIntArray5543!![i_271_] + i_258_
                             val i_273_ = anIntArray5644!![i_271_] + i_260_
-                            val i_274_ = var_s!!.method3986(i_272_, i_273_, (-100).toByte())
-                            val i_275_ = var_s_257_!!.method3986(i_272_, i_273_, 93.toByte())
+                            val i_274_ = var_terrainTile!!.method3986(i_272_, i_273_, (-100).toByte())
+                            val i_275_ = var_terrainTile_257_!!.method3986(i_272_, i_273_, 93.toByte())
                             val i_276_ = -i_256_ + i_274_ + -i_275_
                             anIntArray5593!![i_271_] = i_274_ + (-i_259_ + (((anIntArray5593!![i_271_] shl 8) / i_270_ * i_276_) shr 8))
                             i_271_++
@@ -1272,7 +1272,7 @@ class Class64_Sub3 : Class64 {
                     aClass123_5605!!.anInterface2_1811 = null
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_s != null) "{...}" else "null") + ',' + (if (var_s_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
             }
             break
         } while (false)

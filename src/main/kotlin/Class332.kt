@@ -4,13 +4,13 @@ object Class332 {
     var anInt4140: Int = 0
     var anInt4141: Int = -1
     @JvmField
-    var aSArray4142: Array<s?>? = null
+    var aTerrainTileArray4142: Array<TerrainTile?>? = null
     var anInt4143: Int
 
     @JvmStatic
     fun method2640(bool: Boolean) {
         aClass60_4139 = null
-        aSArray4142 = null
+        aTerrainTileArray4142 = null
         if (bool != true) anInt4143 = 110
     }
 

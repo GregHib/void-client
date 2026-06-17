@@ -16,13 +16,13 @@ class NativeSprite(var_ha_Sub2: OpenGlRenderer?, i: Int, i_1_: Int, `is`: ByteAr
 
     companion object {
         @JvmField
-        var aSArray5191: Array<s?>? = null
+        var aTerrainTileArray5191: Array<TerrainTile?>? = null
         @JvmField
         var anIntArray5192: IntArray? = null
         @JvmStatic
         fun method161(i: Int) {
             val i_0_ = -70 / ((i - 42) / 48)
-            aSArray5191 = null
+            aTerrainTileArray5191 = null
             anIntArray5192 = null
         }
     }

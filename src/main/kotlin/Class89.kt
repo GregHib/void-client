@@ -54,7 +54,7 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
 
         @JvmStatic
         fun method850(class318_sub1_sub3: Class318_Sub1_Sub3, bool: Boolean): Boolean {
-            val bool_13_ = NativeSprite.aSArray5191 == Class332.aSArray4142
+            val bool_13_ = NativeSprite.aTerrainTileArray5191 == Class332.aTerrainTileArray4142
             var i = 0
             var i_14_: Short = 0
             var i_15_: Byte = 0
@@ -98,7 +98,7 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
             }
             if (bool) Class24.aClass318_Sub1_Sub3Array357!![Class86.anInt1477++] = class318_sub1_sub3
             else {
-                val i_22_ = if (NativeSprite.aSArray5191 == Class332.aSArray4142) 1 else 0
+                val i_22_ = if (NativeSprite.aTerrainTileArray5191 == Class332.aTerrainTileArray4142) 1 else 0
                 if (class318_sub1_sub3.method2376(-118)) {
                     if (class318_sub1_sub3.method2377(122.toByte())) {
                         class318_sub1_sub3.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_22_]

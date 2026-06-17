@@ -111,7 +111,7 @@ class Class348_Sub49_Sub2 internal constructor(i: Int) : Class348_Sub49(i) {
             while (Class348_Sub1.anIntArray6547!!.size > i_2_) {
                 val i_3_ = Class348_Sub1.anIntArray6547!![i_2_]
                 if (Class39.aClass45_518!!.method421(false, i_3_)) i_1_++
-                if (s.aClass45_4585!!.method421(false, i_3_)) i_1_++
+                if (TerrainTile.aClass45_4585!!.method421(false, i_3_)) i_1_++
                 i_2_++
             }
             return i_1_

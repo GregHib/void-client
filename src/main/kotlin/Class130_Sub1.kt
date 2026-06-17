@@ -71,7 +71,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class52.anInt4902 = 0
             Class330.anInt4110 = 0
             Class348_Sub5_Sub1.anInt8828 = 0
-            s_Sub2.anInt8262 = 0
+            OpenGlTerrainTile.anInt8262 = 0
             Class318_Sub1_Sub3_Sub1.anInt10004 = 0
             Class322.anInt4018 = 0
             Class253.anInt3247 = 0
@@ -173,7 +173,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub16_Sub2.anInt8865 = 0
             Class367_Sub11.anInt7410 = 0
             Class286_Sub9.anInt6307 = 0
-            s_Sub3.anInt8304 = 0
+            NativeTerrainTile.anInt8304 = 0
             Class14_Sub3.anInt8625 = 0
             Class348_Sub22.anInt6858 = 0
             Class5_Sub3.anInt8367 = 0
@@ -235,14 +235,14 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             OpenGlRenderer.anInt7625 = 0
             Class348_Sub40_Sub1.anInt9087 = 0
             Class5_Sub1.anInt8334 = 0
-            s_Sub2.anInt8244 = 0
+            OpenGlTerrainTile.anInt8244 = 0
             Class14_Sub1.anInt8617 = 0
             Class124.anInt1861 = 0
             Class348_Sub18.anInt6822 = 0
             Class219.anInt2865 = 0
             Class13.anInt219 = 0
             Class55.anInt994 = 0
-            s_Sub3.anInt8290 = 0
+            NativeTerrainTile.anInt8290 = 0
             Class64_Sub3.anInt5577 = 0
             OpenGlRenderer.anInt7647 = 0
             Class286_Sub2.anInt6209 = 0
@@ -460,7 +460,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class170.anInt5073 = 0
             Class279.anInt3608 = 0
             Class346_Sub1.anInt6532 = 0
-            s_Sub2.anInt8238 = 0
+            OpenGlTerrainTile.anInt8238 = 0
             Class315.anInt3951 = 0
             Class101_Sub2.anInt5738 = 0
             Class334.anInt4157 = 0
@@ -508,7 +508,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub16_Sub1.anInt8846 = 0
             Class12.anInt210 = 0
             Class239_Sub27.anInt6129 = 0
-            s_Sub3.anInt8292 = 0
+            NativeTerrainTile.anInt8292 = 0
             Class285_Sub1.anInt8487 = 0
             Class239_Sub14.anInt5982 = 0
             OpenGlRenderer.anInt7659 = 0
@@ -750,7 +750,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub24.anInt6094 = 0
             Class348_Sub13.anInt6756 = 0
             Class348_Sub40_Sub39.anInt9484 = 0
-            s_Sub3.anInt8287 = 0
+            NativeTerrainTile.anInt8287 = 0
             Class335.anInt4169 = 0
             Class286_Sub5.anInt6257 = 0
             Class286_Sub1.anInt6185 = 0
@@ -775,7 +775,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class279.anInt3600 = 0
             Class286_Sub3.anInt6230 = 0
             Class314_Sub1.anInt6359 = 0
-            s_Sub3.anInt8289 = 0
+            NativeTerrainTile.anInt8289 = 0
             Class245.anInt3171 = 0
             Class268.anInt3436 = 0
             NativeRenderer.anInt7935 = 0
@@ -857,7 +857,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub4_Sub2.anInt10117 = 0
             Class101_Sub3.anInt5753 = 0
             Class170.anInt5066 = 0
-            s.anInt4589 = 0
+            TerrainTile.anInt4589 = 0
             Class179.anInt2358 = 0
             Class348_Sub23_Sub4.anInt9061 = 0
             OpenGlRenderer.anInt7668 = 0
@@ -885,7 +885,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class330.anInt4114 = 0
             Class258.anInt4855 = 0
             Class348_Sub49_Sub2.anInt9764 = 0
-            s.anInt4591 = 0
+            TerrainTile.anInt4591 = 0
             Class286_Sub2.anInt6204 = 0
             Class361.anInt4442 = 0
             Class264.anInt3366 = 0
@@ -916,7 +916,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class287.anInt3689 = 0
             OpenGlRenderer.anInt7728 = 0
             Class104.anInt1621 = 0
-            s_Sub3.anInt8315 = 0
+            NativeTerrainTile.anInt8315 = 0
             Class369.anInt4969 = 0
             Class348_Sub40_Sub15.anInt9217 = 0
             Class78.anInt1308 = 0
@@ -1084,13 +1084,13 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class286_Sub6.anInt6269 = 0
             Class371.anInt4521 = 0
             Class64_Sub3.anInt5550 = 0
-            s_Sub3.anInt8319 = 0
+            NativeTerrainTile.anInt8319 = 0
             NativeRenderer.anInt7985 = 0
             Class67.anInt4647 = 0
             Class183.anInt2457 = 0
             Class348_Sub40_Sub32.anInt9420 = 0
             Class354.anInt4358 = 0
-            s_Sub2.anInt8259 = 0
+            OpenGlTerrainTile.anInt8259 = 0
             Class34.anInt466 = 0
             Class348_Sub42_Sub14.anInt9624 = 0
             Class327.anInt4090 = 0
@@ -1330,7 +1330,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class107.anInt1655 = 0
             Class309.anInt4809 = 0
             Class84.anInt1454 = 0
-            s_Sub3.anInt8293 = 0
+            NativeTerrainTile.anInt8293 = 0
             Class299_Sub1_Sub1.anInt8687 = 0
             Class239_Sub29.anInt6149 = 0
             Class377.anInt9820 = 0
@@ -1536,7 +1536,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class234.anInt3043 = 0
             Class279.anInt3594 = 0
             Class348_Sub40_Sub33.anInt9426 = 0
-            s_Sub3.anInt8288 = 0
+            NativeTerrainTile.anInt8288 = 0
             OpenGlRenderNode.anInt10491 = 0
             Class348_Sub42_Sub17.anInt9670 = 0
             Class348_Sub42_Sub15.anInt9646 = 0
@@ -1559,7 +1559,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub49.anInt7190 = 0
             Class263.anInt3357 = 0
             Class50_Sub4.anInt5260 = 0
-            s_Sub2.anInt8250 = 0
+            OpenGlTerrainTile.anInt8250 = 0
             Class167.anInt2200 = 0
             Class318_Sub1_Sub1_Sub1.anInt9967 = 0
             Class156.anInt2114 = 0
@@ -1925,7 +1925,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class44.anInt621 = 0
             Class232.anInt3012 = 0
             Class369_Sub3_Sub1.anInt10178 = 0
-            s_Sub3.anInt8300 = 0
+            NativeTerrainTile.anInt8300 = 0
             Class286_Sub8.anInt6298 = 0
             Class374.anInt4536 = 0
             Class239_Sub3.anInt5863 = 0
@@ -1966,7 +1966,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class16.anInt234 = 0
             Class299_Sub1.anInt6320 = 0
             Class348_Sub49.anInt7155 = 0
-            s_Sub2.anInt8263 = 0
+            OpenGlTerrainTile.anInt8263 = 0
             Class348_Sub49.anInt7189 = 0
             Class107.anInt1649 = 0
             Class5_Sub3.anInt8373 = 0
@@ -2050,7 +2050,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class14_Sub4.anInt8636 = 0
             OpenGlRenderer.anInt7634 = 0
             Class348_Sub16_Sub3.anInt8927 = 0
-            s_Sub3.anInt8318 = 0
+            NativeTerrainTile.anInt8318 = 0
             Class348_Sub49.anInt7171 = 0
             Class188.anInt2517 = 0
             Class348_Sub42_Sub20.anInt9708 = 0
@@ -2082,7 +2082,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class46.anInt829 = 0
             Class348_Sub42_Sub14.anInt9638 = 0
             Class179.anInt2357 = 0
-            s_Sub2.anInt8239 = 0
+            OpenGlTerrainTile.anInt8239 = 0
             Class348_Sub16_Sub3.anInt8930 = 0
             Class377.anInt9859 = 0
             Class286_Sub3.anInt6229 = 0
@@ -2145,7 +2145,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class367_Sub10.anInt7387 = 0
             Class348_Sub44.anInt7100 = 0
             Class239_Sub4.anInt5872 = 0
-            s_Sub2.anInt8251 = 0
+            OpenGlTerrainTile.anInt8251 = 0
             Class309.anInt4825 = 0
             Class45.anInt645 = 0
             Class268.anInt3448 = 0
@@ -2464,7 +2464,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class202.anInt2653 = 0
             Class308.anInt3880 = 0
             Class43.anInt613 = 0
-            s.anInt4593 = 0
+            TerrainTile.anInt4593 = 0
             Class324.anInt4049 = 0
             Class59_Sub2_Sub2.anInt8676 = 0
             Class59_Sub1.anInt5295 = 0
@@ -2495,7 +2495,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class99.anInt1576 = 0
             Class348_Sub42_Sub14.anInt9623 = 0
             Class219.anInt2869 = 0
-            s_Sub2.anInt8236 = 0
+            OpenGlTerrainTile.anInt8236 = 0
             Class48.anInt848 = 0
             OpenGlRenderer.anInt7589 = 0
             Class348_Sub13.anInt6754 = 0
@@ -2639,7 +2639,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class105_Sub2.anInt8437 = 0
             Class239_Sub5.anInt5892 = 0
             Class34.anInt478 = 0
-            s.anInt4586 = 0
+            TerrainTile.anInt4586 = 0
             Class286_Sub1.anInt6186 = 0
             Class361.anInt4451 = 0
             Class318_Sub1_Sub3_Sub4.anInt10340 = 0
@@ -2662,7 +2662,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub2.anInt6397 = 0
             Class377.anInt9814 = 0
             Class18.anInt274 = 0
-            s_Sub2.anInt8255 = 0
+            OpenGlTerrainTile.anInt8255 = 0
             Class348_Sub40_Sub19.anInt9253 = 0
             Npc.anInt10494 = 0
             OpenGlRenderer.anInt7590 = 0
@@ -2713,10 +2713,10 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class213.anInt2754 = 0
             Class110_Sub1.anInt5792 = 0
             OpenGlRenderer.anInt7591 = 0
-            s_Sub2.anInt8247 = 0
+            OpenGlTerrainTile.anInt8247 = 0
             Class299_Sub1_Sub2.anInt8699 = 0
             Class239_Sub17.anInt6019 = 0
-            s_Sub2.anInt8242 = 0
+            OpenGlTerrainTile.anInt8242 = 0
             Class348_Sub42_Sub11.anInt9589 = 0
             Class377.anInt9855 = 0
             Class348_Sub16_Sub3.anInt8892 = 0
@@ -2894,7 +2894,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class235.anInt3061 = 0
             Class299_Sub2_Sub1.anInt8710 = 0
             Class62.anInt1113 = 0
-            s_Sub3.anInt8298 = 0
+            NativeTerrainTile.anInt8298 = 0
             Class162.anInt2154 = 0
             Class348.anInt4298 = 0
             Class322.anInt4019 = 0
@@ -2951,7 +2951,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class278.anInt3579 = 0
             Class348_Sub49.anInt7195 = 0
             Class359.anInt4422 = 0
-            s_Sub2.anInt8254 = 0
+            OpenGlTerrainTile.anInt8254 = 0
             Class348_Sub23.anInt6863 = 0
             Class248.anInt3188 = 0
             OpenGlRenderer.anInt7704 = 0
@@ -3126,7 +3126,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub23.anInt9321 = 0
             Class217.anInt2840 = 0
             Class216.anInt4979 = 0
-            s_Sub3.anInt8297 = 0
+            NativeTerrainTile.anInt8297 = 0
             Class288_Sub1.anInt8576 = 0
             Class243.anInt3159 = 0
             Class154.anInt2099 = 0
@@ -3218,7 +3218,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub21.anInt6068 = 0
             Class52.anInt4898 = 0
             Class64_Sub3.anInt5599 = 0
-            s_Sub2.anInt8248 = 0
+            OpenGlTerrainTile.anInt8248 = 0
             Class318_Sub1_Sub4_Sub1.anInt10088 = 0
             Class318_Sub1_Sub3_Sub3.anInt10214 = 0
             Player.anInt10543 = 0
@@ -3252,7 +3252,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub3_Sub3.anInt10249 = 0
             Class100.anInt1587 = 0
             Class113.anInt1741 = 0
-            s_Sub2.anInt8271 = 0
+            OpenGlTerrainTile.anInt8271 = 0
             Class124.anInt1858 = 0
             Class348_Sub49.anInt7199 = 0
             Class377.anInt9868 = 0
@@ -3364,7 +3364,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class50_Sub3.anInt5251 = 0
             Class239.anInt3134 = 0
             Class318_Sub1_Sub3.anInt8749 = 0
-            s_Sub3.anInt8310 = 0
+            NativeTerrainTile.anInt8310 = 0
             Class213.anInt2800 = 0
             Class348_Sub40_Sub32.anInt9418 = 0
             Class239_Sub14.anInt5988 = 0
@@ -3633,7 +3633,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub42_Sub8.anInt9551 = 0
             Class5.anInt4633 = 0
             Class367_Sub8.anInt7364 = 0
-            s_Sub2.anInt8249 = 0
+            OpenGlTerrainTile.anInt8249 = 0
             Class137.anInt1931 = 0
             Class377.anInt9819 = 0
             Class105_Sub2.anInt8424 = 0
@@ -3766,7 +3766,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class268.anInt3446 = 0
             Class376.anInt4549 = 0
             Class377.anInt9876 = 0
-            s_Sub2.anInt8261 = 0
+            OpenGlTerrainTile.anInt8261 = 0
             Class51.anInt956 = 0
             Class318_Sub1_Sub1_Sub1.anInt9957 = 0
             Class263.anInt3351 = 0
@@ -3899,7 +3899,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub28.anInt9366 = 0
             Applet_Sub1.anInt14 = 0
             Class239_Sub4.anInt5880 = 0
-            s_Sub3.anInt8309 = 0
+            NativeTerrainTile.anInt8309 = 0
             Class135_Sub1.anInt4713 = 0
             OpenGlRenderer.anInt7630 = 0
             Class340.anInt4224 = 0
@@ -3995,7 +3995,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class137.anInt1936 = 0
             Class348_Sub40_Sub5.anInt9127 = 0
             Class369_Sub3_Sub1.anInt10176 = 0
-            s_Sub3.anInt8316 = 0
+            NativeTerrainTile.anInt8316 = 0
             Class294.anInt5044 = 0
             Class196.anInt2599 = 0
             Class154.anInt2107 = 0
@@ -4076,7 +4076,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class105_Sub1.anInt8421 = 0
             Class373_Sub2.anInt7437 = 0
             Class239_Sub1.anInt5845 = 0
-            s_Sub3.anInt8295 = 0
+            NativeTerrainTile.anInt8295 = 0
             Class318_Sub1_Sub3_Sub3.anInt10254 = 0
             Class46.anInt684 = 0
             Class318_Sub1_Sub3_Sub3.anInt10281 = 0

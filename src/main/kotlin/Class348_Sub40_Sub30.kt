@@ -219,7 +219,7 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
                 return class348_sub42_sub15
             }
             do {
-                class348_sub42_sub15 = s_Sub2.aClass107_8241!!.method1011(-87) as Class348_Sub42_Sub15?
+                class348_sub42_sub15 = OpenGlTerrainTile.aClass107_8241!!.method1011(-87) as Class348_Sub42_Sub15?
                 if (class348_sub42_sub15 == null) return null
                 if (Class62.method599(-59) < class348_sub42_sub15.method3250((-51).toByte())) return null
                 class348_sub42_sub15.method2715(113.toByte())

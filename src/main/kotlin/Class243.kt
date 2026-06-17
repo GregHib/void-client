@@ -125,10 +125,10 @@ class Class243 {
         fun method1879(bool: Boolean) {
             if (bool) {
                 Class147.aClass357ArrayArrayArray2029 = Class348_Sub31_Sub2.aClass357ArrayArrayArray9082
-                NativeSprite.aSArray5191 = Class332.aSArray4142
+                NativeSprite.aTerrainTileArray5191 = Class332.aTerrainTileArray4142
             } else {
                 Class147.aClass357ArrayArrayArray2029 = Class65.aClass357ArrayArrayArray1148
-                NativeSprite.aSArray5191 = Class348_Sub1_Sub1.aSArray8801
+                NativeSprite.aTerrainTileArray5191 = Class348_Sub1_Sub1.aTerrainTileArray8801
             }
             Class189.anInt2524 = Class147.aClass357ArrayArrayArray2029!!.size
         }

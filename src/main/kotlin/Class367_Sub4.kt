@@ -277,7 +277,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                     }
                 }
                 if (bool_25_) {
-                    val i_35_ = NativeSprite.aSArray5191!![1 + Class355.anInt4372]!!.method3982((-86).toByte(), i_22_, i_19_)
+                    val i_35_ = NativeSprite.aTerrainTileArray5191!![1 + Class355.anInt4372]!!.method3982((-86).toByte(), i_22_, i_19_)
                     if (i_35_ > Class327.anIntArray4097!![i_15_]) Class327.anIntArray4097!![i_15_] = i_35_
                     val i_36_ = i_19_ shl 9
                     if (i_36_ < Class156.anIntArray2117!![i_15_]) Class156.anIntArray2117!![i_15_] = i_36_

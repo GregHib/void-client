@@ -66,7 +66,7 @@ import Class62.method599
 import Class64.Companion.method606
 import Class64_Sub3.Companion.method690
 import Sprite.Companion.method160
-import s.Companion.method3985
+import TerrainTile.Companion.method3985
 import java.awt.datatransfer.DataFlavor
 import java.util.*
 import kotlin.math.max

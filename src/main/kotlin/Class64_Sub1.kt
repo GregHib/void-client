@@ -1625,7 +1625,7 @@ class Class64_Sub1 : Class64 {
         return null
     }
 
-    public override fun p(i: Int, i_367_: Int, var_s: s?, var_s_368_: s?, i_369_: Int, i_370_: Int, i_371_: Int) {
+    public override fun p(i: Int, i_367_: Int, var_terrainTile: TerrainTile?, var_terrainTile_368_: TerrainTile?, i_369_: Int, i_370_: Int, i_371_: Int) {
         if (i == 3) {
             check((anInt5316 and 0x7) == 7)
         } else check((anInt5316 and 0x2) == 2)
@@ -1634,32 +1634,32 @@ class Class64_Sub1 : Class64 {
         var i_373_ = i_369_ + aShort5393
         var i_374_ = i_371_ + aShort5352
         var i_375_ = i_371_ + aShort5331
-        if (i == 4 || (i_372_ >= 0 && (i_373_ + var_s!!.anInt4592 shr var_s.anInt4588 < var_s.anInt4587) && i_374_ >= 0 && (i_375_ + var_s.anInt4592 shr var_s.anInt4588 < var_s.anInt4590))) {
-            val `is` = var_s!!.anIntArrayArray4584
+        if (i == 4 || (i_372_ >= 0 && (i_373_ + var_terrainTile!!.anInt4592 shr var_terrainTile.anInt4588 < var_terrainTile.anInt4587) && i_374_ >= 0 && (i_375_ + var_terrainTile.anInt4592 shr var_terrainTile.anInt4588 < var_terrainTile.anInt4590))) {
+            val `is` = var_terrainTile!!.anIntArrayArray4584
             var is_376_: Array<IntArray?>? = null
-            if (var_s_368_ != null) is_376_ = var_s_368_.anIntArrayArray4584
+            if (var_terrainTile_368_ != null) is_376_ = var_terrainTile_368_.anIntArrayArray4584
             if (i == 4 || i == 5) {
-                if (var_s_368_ == null || (i_372_ < 0 || ((i_373_ + var_s_368_.anInt4592 shr var_s_368_.anInt4588) >= var_s_368_.anInt4587) || i_374_ < 0 || ((i_375_ + var_s_368_.anInt4592 shr var_s_368_.anInt4588) >= var_s_368_.anInt4590))) return
+                if (var_terrainTile_368_ == null || (i_372_ < 0 || ((i_373_ + var_terrainTile_368_.anInt4592 shr var_terrainTile_368_.anInt4588) >= var_terrainTile_368_.anInt4587) || i_374_ < 0 || ((i_375_ + var_terrainTile_368_.anInt4592 shr var_terrainTile_368_.anInt4588) >= var_terrainTile_368_.anInt4590))) return
             } else {
-                i_372_ = i_372_ shr var_s.anInt4588
-                i_373_ = (i_373_ + (var_s.anInt4592 - 1) shr var_s.anInt4588)
-                i_374_ = i_374_ shr var_s.anInt4588
-                i_375_ = (i_375_ + (var_s.anInt4592 - 1) shr var_s.anInt4588)
+                i_372_ = i_372_ shr var_terrainTile.anInt4588
+                i_373_ = (i_373_ + (var_terrainTile.anInt4592 - 1) shr var_terrainTile.anInt4588)
+                i_374_ = i_374_ shr var_terrainTile.anInt4588
+                i_375_ = (i_375_ + (var_terrainTile.anInt4592 - 1) shr var_terrainTile.anInt4588)
                 if (`is`[i_372_]!![i_374_] == i_370_ && `is`[i_373_]!![i_374_] == i_370_ && `is`[i_372_]!![i_375_] == i_370_ && `is`[i_373_]!![i_375_] == i_370_) return
             }
             synchronized(this) {
                 if (i == 1) {
-                    val i_377_ = var_s.anInt4592 - 1
+                    val i_377_ = var_terrainTile.anInt4592 - 1
                     for (i_378_ in 0..<anInt5387) {
                         val i_379_ = anIntArray5356!![i_378_] + i_369_
                         val i_380_ = anIntArray5312!![i_378_] + i_371_
                         val i_381_ = i_379_ and i_377_
                         val i_382_ = i_380_ and i_377_
-                        val i_383_ = i_379_ shr var_s.anInt4588
-                        val i_384_ = i_380_ shr var_s.anInt4588
-                        val i_385_ = ((`is`[i_383_]!![i_384_] * (var_s.anInt4592 - i_381_) + `is`[i_383_ + 1]!![i_384_] * i_381_) shr var_s.anInt4588)
-                        val i_386_ = ((`is`[i_383_]!![i_384_ + 1] * (var_s.anInt4592 - i_381_) + `is`[i_383_ + 1]!![i_384_ + 1] * i_381_) shr var_s.anInt4588)
-                        val i_387_ = (i_385_ * (var_s.anInt4592 - i_382_) + i_386_ * i_382_ shr var_s.anInt4588)
+                        val i_383_ = i_379_ shr var_terrainTile.anInt4588
+                        val i_384_ = i_380_ shr var_terrainTile.anInt4588
+                        val i_385_ = ((`is`[i_383_]!![i_384_] * (var_terrainTile.anInt4592 - i_381_) + `is`[i_383_ + 1]!![i_384_] * i_381_) shr var_terrainTile.anInt4588)
+                        val i_386_ = ((`is`[i_383_]!![i_384_ + 1] * (var_terrainTile.anInt4592 - i_381_) + `is`[i_383_ + 1]!![i_384_ + 1] * i_381_) shr var_terrainTile.anInt4588)
+                        val i_387_ = (i_385_ * (var_terrainTile.anInt4592 - i_382_) + i_386_ * i_382_ shr var_terrainTile.anInt4588)
                         anIntArray5332!![i_378_] = anIntArray5332!![i_378_] + i_387_ - i_370_
                     }
                     for (i_388_ in anInt5387..<anInt5340) {
@@ -1667,17 +1667,17 @@ class Class64_Sub1 : Class64 {
                         val i_390_ = anIntArray5312!![i_388_] + i_371_
                         val i_391_ = i_389_ and i_377_
                         val i_392_ = i_390_ and i_377_
-                        val i_393_ = i_389_ shr var_s.anInt4588
-                        val i_394_ = i_390_ shr var_s.anInt4588
+                        val i_393_ = i_389_ shr var_terrainTile.anInt4588
+                        val i_394_ = i_390_ shr var_terrainTile.anInt4588
                         if (i_393_ >= 0 && i_393_ < `is`.size - 1 && i_394_ >= 0 && i_394_ < `is`[0]!!.size - 1) {
-                            val i_395_ = ((`is`[i_393_]!![i_394_] * (var_s.anInt4592 - i_391_) + `is`[i_393_ + 1]!![i_394_] * i_391_) shr var_s.anInt4588)
-                            val i_396_ = (((`is`[i_393_]!![i_394_ + 1] * (var_s.anInt4592 - i_391_)) + `is`[i_393_ + 1]!![i_394_ + 1] * i_391_) shr var_s.anInt4588)
-                            val i_397_ = (i_395_ * (var_s.anInt4592 - i_392_) + i_396_ * i_392_ shr var_s.anInt4588)
+                            val i_395_ = ((`is`[i_393_]!![i_394_] * (var_terrainTile.anInt4592 - i_391_) + `is`[i_393_ + 1]!![i_394_] * i_391_) shr var_terrainTile.anInt4588)
+                            val i_396_ = (((`is`[i_393_]!![i_394_ + 1] * (var_terrainTile.anInt4592 - i_391_)) + `is`[i_393_ + 1]!![i_394_ + 1] * i_391_) shr var_terrainTile.anInt4588)
+                            val i_397_ = (i_395_ * (var_terrainTile.anInt4592 - i_392_) + i_396_ * i_392_ shr var_terrainTile.anInt4588)
                             anIntArray5332!![i_388_] = anIntArray5332!![i_388_] + i_397_ - i_370_
                         }
                     }
                 } else if (i == 2) {
-                    val i_398_ = var_s.anInt4592 - 1
+                    val i_398_ = var_terrainTile.anInt4592 - 1
                     for (i_399_ in 0..<anInt5387) {
                         val i_400_ = (anIntArray5332!![i_399_] shl 16) / aShort5329
                         if (i_400_ < i_367_) {
@@ -1685,11 +1685,11 @@ class Class64_Sub1 : Class64 {
                             val i_402_ = anIntArray5312!![i_399_] + i_371_
                             val i_403_ = i_401_ and i_398_
                             val i_404_ = i_402_ and i_398_
-                            val i_405_ = i_401_ shr var_s.anInt4588
-                            val i_406_ = i_402_ shr var_s.anInt4588
-                            val i_407_ = ((`is`[i_405_]!![i_406_] * (var_s.anInt4592 - i_403_) + `is`[i_405_ + 1]!![i_406_] * i_403_) shr var_s.anInt4588)
-                            val i_408_ = (((`is`[i_405_]!![i_406_ + 1] * (var_s.anInt4592 - i_403_)) + `is`[i_405_ + 1]!![i_406_ + 1] * i_403_) shr var_s.anInt4588)
-                            val i_409_ = (i_407_ * (var_s.anInt4592 - i_404_) + i_408_ * i_404_ shr var_s.anInt4588)
+                            val i_405_ = i_401_ shr var_terrainTile.anInt4588
+                            val i_406_ = i_402_ shr var_terrainTile.anInt4588
+                            val i_407_ = ((`is`[i_405_]!![i_406_] * (var_terrainTile.anInt4592 - i_403_) + `is`[i_405_ + 1]!![i_406_] * i_403_) shr var_terrainTile.anInt4588)
+                            val i_408_ = (((`is`[i_405_]!![i_406_ + 1] * (var_terrainTile.anInt4592 - i_403_)) + `is`[i_405_ + 1]!![i_406_ + 1] * i_403_) shr var_terrainTile.anInt4588)
+                            val i_409_ = (i_407_ * (var_terrainTile.anInt4592 - i_404_) + i_408_ * i_404_ shr var_terrainTile.anInt4588)
                             anIntArray5332!![i_399_] = anIntArray5332!![i_399_] + ((i_409_ - i_370_) * (i_367_ - i_400_) / i_367_)
                         } else anIntArray5332!![i_399_] = anIntArray5332!![i_399_]
                     }
@@ -1700,12 +1700,12 @@ class Class64_Sub1 : Class64 {
                             val i_413_ = anIntArray5312!![i_410_] + i_371_
                             val i_414_ = i_412_ and i_398_
                             val i_415_ = i_413_ and i_398_
-                            val i_416_ = i_412_ shr var_s.anInt4588
-                            val i_417_ = i_413_ shr var_s.anInt4588
-                            if (i_416_ >= 0 && i_416_ < var_s.anInt4587 - 1 && i_417_ >= 0 && i_417_ < var_s.anInt4590 - 1) {
-                                val i_418_ = (((`is`[i_416_]!![i_417_] * (var_s.anInt4592 - i_414_)) + `is`[i_416_ + 1]!![i_417_] * i_414_) shr var_s.anInt4588)
-                                val i_419_ = (((`is`[i_416_]!![i_417_ + 1] * (var_s.anInt4592 - i_414_)) + `is`[i_416_ + 1]!![i_417_ + 1] * i_414_) shr var_s.anInt4588)
-                                val i_420_ = (i_418_ * (var_s.anInt4592 - i_415_) + i_419_ * i_415_ shr var_s.anInt4588)
+                            val i_416_ = i_412_ shr var_terrainTile.anInt4588
+                            val i_417_ = i_413_ shr var_terrainTile.anInt4588
+                            if (i_416_ >= 0 && i_416_ < var_terrainTile.anInt4587 - 1 && i_417_ >= 0 && i_417_ < var_terrainTile.anInt4590 - 1) {
+                                val i_418_ = (((`is`[i_416_]!![i_417_] * (var_terrainTile.anInt4592 - i_414_)) + `is`[i_416_ + 1]!![i_417_] * i_414_) shr var_terrainTile.anInt4588)
+                                val i_419_ = (((`is`[i_416_]!![i_417_ + 1] * (var_terrainTile.anInt4592 - i_414_)) + `is`[i_416_ + 1]!![i_417_ + 1] * i_414_) shr var_terrainTile.anInt4588)
+                                val i_420_ = (i_418_ * (var_terrainTile.anInt4592 - i_415_) + i_419_ * i_415_ shr var_terrainTile.anInt4588)
                                 anIntArray5332!![i_410_] = (anIntArray5332!![i_410_] + ((i_420_ - i_370_) * (i_367_ - i_411_) / i_367_))
                             }
                         } else anIntArray5332!![i_410_] = anIntArray5332!![i_410_]
@@ -1715,21 +1715,21 @@ class Class64_Sub1 : Class64 {
                     val i_422_ = (i_367_ shr 8 and 0xff) * 4
                     val i_423_ = (i_367_ shr 16 and 0xff) shl 6
                     val i_424_ = (i_367_ shr 24 and 0xff) shl 6
-                    if (i_369_ - (i_421_ shr 1) < 0 || (i_369_ + (i_421_ shr 1) + var_s.anInt4592 >= var_s.anInt4587 shl var_s.anInt4588) || i_371_ - (i_422_ shr 1) < 0 || (i_371_ + (i_422_ shr 1) + var_s.anInt4592 >= var_s.anInt4590 shl var_s.anInt4588)) return
-                    this.method626(i_421_, 10947, i_424_, i_369_, i_422_, i_370_, i_423_, var_s, i_371_)
+                    if (i_369_ - (i_421_ shr 1) < 0 || (i_369_ + (i_421_ shr 1) + var_terrainTile.anInt4592 >= var_terrainTile.anInt4587 shl var_terrainTile.anInt4588) || i_371_ - (i_422_ shr 1) < 0 || (i_371_ + (i_422_ shr 1) + var_terrainTile.anInt4592 >= var_terrainTile.anInt4590 shl var_terrainTile.anInt4588)) return
+                    this.method626(i_421_, 10947, i_424_, i_369_, i_422_, i_370_, i_423_, var_terrainTile, i_371_)
                 } else if (i == 4) {
-                    val i_425_ = var_s_368_!!.anInt4592 - 1
+                    val i_425_ = var_terrainTile_368_!!.anInt4592 - 1
                     val i_426_ = aShort5365 - aShort5329
                     for (i_427_ in 0..<anInt5387) {
                         val i_428_ = anIntArray5356!![i_427_] + i_369_
                         val i_429_ = anIntArray5312!![i_427_] + i_371_
                         val i_430_ = i_428_ and i_425_
                         val i_431_ = i_429_ and i_425_
-                        val i_432_ = i_428_ shr var_s_368_.anInt4588
-                        val i_433_ = i_429_ shr var_s_368_.anInt4588
-                        val i_434_ = (((is_376_!![i_432_]!![i_433_] * (var_s_368_.anInt4592 - i_430_)) + is_376_[i_432_ + 1]!![i_433_] * i_430_) shr var_s_368_.anInt4588)
-                        val i_435_ = (((is_376_[i_432_]!![i_433_ + 1] * (var_s_368_.anInt4592 - i_430_)) + is_376_[i_432_ + 1]!![i_433_ + 1] * i_430_) shr var_s_368_.anInt4588)
-                        val i_436_ = (i_434_ * (var_s_368_.anInt4592 - i_431_) + i_435_ * i_431_ shr var_s_368_.anInt4588)
+                        val i_432_ = i_428_ shr var_terrainTile_368_.anInt4588
+                        val i_433_ = i_429_ shr var_terrainTile_368_.anInt4588
+                        val i_434_ = (((is_376_!![i_432_]!![i_433_] * (var_terrainTile_368_.anInt4592 - i_430_)) + is_376_[i_432_ + 1]!![i_433_] * i_430_) shr var_terrainTile_368_.anInt4588)
+                        val i_435_ = (((is_376_[i_432_]!![i_433_ + 1] * (var_terrainTile_368_.anInt4592 - i_430_)) + is_376_[i_432_ + 1]!![i_433_ + 1] * i_430_) shr var_terrainTile_368_.anInt4588)
+                        val i_436_ = (i_434_ * (var_terrainTile_368_.anInt4592 - i_431_) + i_435_ * i_431_ shr var_terrainTile_368_.anInt4588)
                         anIntArray5332!![i_427_] = (anIntArray5332!![i_427_] + (i_436_ - i_370_) + i_426_)
                     }
                     for (i_437_ in anInt5387..<anInt5340) {
@@ -1737,31 +1737,31 @@ class Class64_Sub1 : Class64 {
                         val i_439_ = anIntArray5312!![i_437_] + i_371_
                         val i_440_ = i_438_ and i_425_
                         val i_441_ = i_439_ and i_425_
-                        val i_442_ = i_438_ shr var_s_368_.anInt4588
-                        val i_443_ = i_439_ shr var_s_368_.anInt4588
-                        if (i_442_ >= 0 && i_442_ < var_s_368_.anInt4587 - 1 && i_443_ >= 0 && i_443_ < var_s_368_.anInt4590 - 1) {
-                            val i_444_ = (((is_376_!![i_442_]!![i_443_] * (var_s_368_.anInt4592 - i_440_)) + is_376_[i_442_ + 1]!![i_443_] * i_440_) shr var_s_368_.anInt4588)
-                            val i_445_ = (((is_376_[i_442_]!![i_443_ + 1] * (var_s_368_.anInt4592 - i_440_)) + is_376_[i_442_ + 1]!![i_443_ + 1] * i_440_) shr var_s_368_.anInt4588)
-                            val i_446_ = (i_444_ * (var_s_368_.anInt4592 - i_441_) + i_445_ * i_441_ shr var_s_368_.anInt4588)
+                        val i_442_ = i_438_ shr var_terrainTile_368_.anInt4588
+                        val i_443_ = i_439_ shr var_terrainTile_368_.anInt4588
+                        if (i_442_ >= 0 && i_442_ < var_terrainTile_368_.anInt4587 - 1 && i_443_ >= 0 && i_443_ < var_terrainTile_368_.anInt4590 - 1) {
+                            val i_444_ = (((is_376_!![i_442_]!![i_443_] * (var_terrainTile_368_.anInt4592 - i_440_)) + is_376_[i_442_ + 1]!![i_443_] * i_440_) shr var_terrainTile_368_.anInt4588)
+                            val i_445_ = (((is_376_[i_442_]!![i_443_ + 1] * (var_terrainTile_368_.anInt4592 - i_440_)) + is_376_[i_442_ + 1]!![i_443_ + 1] * i_440_) shr var_terrainTile_368_.anInt4588)
+                            val i_446_ = (i_444_ * (var_terrainTile_368_.anInt4592 - i_441_) + i_445_ * i_441_ shr var_terrainTile_368_.anInt4588)
                             anIntArray5332!![i_437_] = (anIntArray5332!![i_437_] + (i_446_ - i_370_) + i_426_)
                         }
                     }
                 } else if (i == 5) {
-                    val i_447_ = var_s_368_!!.anInt4592 - 1
+                    val i_447_ = var_terrainTile_368_!!.anInt4592 - 1
                     val i_448_ = aShort5365 - aShort5329
                     for (i_449_ in 0..<anInt5387) {
                         val i_450_ = anIntArray5356!![i_449_] + i_369_
                         val i_451_ = anIntArray5312!![i_449_] + i_371_
                         val i_452_ = i_450_ and i_447_
                         val i_453_ = i_451_ and i_447_
-                        val i_454_ = i_450_ shr var_s.anInt4588
-                        val i_455_ = i_451_ shr var_s.anInt4588
-                        var i_456_ = ((`is`[i_454_]!![i_455_] * (var_s.anInt4592 - i_452_) + `is`[i_454_ + 1]!![i_455_] * i_452_) shr var_s.anInt4588)
-                        var i_457_ = ((`is`[i_454_]!![i_455_ + 1] * (var_s.anInt4592 - i_452_) + `is`[i_454_ + 1]!![i_455_ + 1] * i_452_) shr var_s.anInt4588)
-                        val i_458_ = (i_456_ * (var_s.anInt4592 - i_453_) + i_457_ * i_453_ shr var_s.anInt4588)
-                        i_456_ = (((is_376_!![i_454_]!![i_455_] * (var_s_368_.anInt4592 - i_452_)) + is_376_[i_454_ + 1]!![i_455_] * i_452_) shr var_s_368_.anInt4588)
-                        i_457_ = (((is_376_[i_454_]!![i_455_ + 1] * (var_s_368_.anInt4592 - i_452_)) + is_376_[i_454_ + 1]!![i_455_ + 1] * i_452_) shr var_s_368_.anInt4588)
-                        val i_459_ = (i_456_ * (var_s_368_.anInt4592 - i_453_) + i_457_ * i_453_ shr var_s_368_.anInt4588)
+                        val i_454_ = i_450_ shr var_terrainTile.anInt4588
+                        val i_455_ = i_451_ shr var_terrainTile.anInt4588
+                        var i_456_ = ((`is`[i_454_]!![i_455_] * (var_terrainTile.anInt4592 - i_452_) + `is`[i_454_ + 1]!![i_455_] * i_452_) shr var_terrainTile.anInt4588)
+                        var i_457_ = ((`is`[i_454_]!![i_455_ + 1] * (var_terrainTile.anInt4592 - i_452_) + `is`[i_454_ + 1]!![i_455_ + 1] * i_452_) shr var_terrainTile.anInt4588)
+                        val i_458_ = (i_456_ * (var_terrainTile.anInt4592 - i_453_) + i_457_ * i_453_ shr var_terrainTile.anInt4588)
+                        i_456_ = (((is_376_!![i_454_]!![i_455_] * (var_terrainTile_368_.anInt4592 - i_452_)) + is_376_[i_454_ + 1]!![i_455_] * i_452_) shr var_terrainTile_368_.anInt4588)
+                        i_457_ = (((is_376_[i_454_]!![i_455_ + 1] * (var_terrainTile_368_.anInt4592 - i_452_)) + is_376_[i_454_ + 1]!![i_455_ + 1] * i_452_) shr var_terrainTile_368_.anInt4588)
+                        val i_459_ = (i_456_ * (var_terrainTile_368_.anInt4592 - i_453_) + i_457_ * i_453_ shr var_terrainTile_368_.anInt4588)
                         val i_460_ = i_458_ - i_459_ - i_367_
                         anIntArray5332!![i_449_] = ((anIntArray5332!![i_449_] shl 8) / i_448_ * i_460_ shr 8) - (i_370_ - i_458_)
                     }
@@ -1770,15 +1770,15 @@ class Class64_Sub1 : Class64 {
                         val i_463_ = anIntArray5312!![i_461_] + i_371_
                         val i_464_ = i_462_ and i_447_
                         val i_465_ = i_463_ and i_447_
-                        val i_466_ = i_462_ shr var_s.anInt4588
-                        val i_467_ = i_463_ shr var_s.anInt4588
-                        if (i_466_ >= 0 && i_466_ < var_s.anInt4587 - 1 && i_466_ < var_s_368_.anInt4587 - 1 && i_467_ >= 0 && i_467_ < var_s.anInt4590 - 1 && i_467_ < var_s_368_.anInt4590 - 1) {
-                            var i_468_ = ((`is`[i_466_]!![i_467_] * (var_s.anInt4592 - i_464_) + `is`[i_466_ + 1]!![i_467_] * i_464_) shr var_s.anInt4588)
-                            var i_469_ = (((`is`[i_466_]!![i_467_ + 1] * (var_s.anInt4592 - i_464_)) + `is`[i_466_ + 1]!![i_467_ + 1] * i_464_) shr var_s.anInt4588)
-                            val i_470_ = (i_468_ * (var_s.anInt4592 - i_465_) + i_469_ * i_465_ shr var_s.anInt4588)
-                            i_468_ = (((is_376_!![i_466_]!![i_467_] * (var_s_368_.anInt4592 - i_464_)) + is_376_[i_466_ + 1]!![i_467_] * i_464_) shr var_s_368_.anInt4588)
-                            i_469_ = (((is_376_[i_466_]!![i_467_ + 1] * (var_s_368_.anInt4592 - i_464_)) + is_376_[i_466_ + 1]!![i_467_ + 1] * i_464_) shr var_s_368_.anInt4588)
-                            val i_471_ = (i_468_ * (var_s_368_.anInt4592 - i_465_) + i_469_ * i_465_ shr var_s_368_.anInt4588)
+                        val i_466_ = i_462_ shr var_terrainTile.anInt4588
+                        val i_467_ = i_463_ shr var_terrainTile.anInt4588
+                        if (i_466_ >= 0 && i_466_ < var_terrainTile.anInt4587 - 1 && i_466_ < var_terrainTile_368_.anInt4587 - 1 && i_467_ >= 0 && i_467_ < var_terrainTile.anInt4590 - 1 && i_467_ < var_terrainTile_368_.anInt4590 - 1) {
+                            var i_468_ = ((`is`[i_466_]!![i_467_] * (var_terrainTile.anInt4592 - i_464_) + `is`[i_466_ + 1]!![i_467_] * i_464_) shr var_terrainTile.anInt4588)
+                            var i_469_ = (((`is`[i_466_]!![i_467_ + 1] * (var_terrainTile.anInt4592 - i_464_)) + `is`[i_466_ + 1]!![i_467_ + 1] * i_464_) shr var_terrainTile.anInt4588)
+                            val i_470_ = (i_468_ * (var_terrainTile.anInt4592 - i_465_) + i_469_ * i_465_ shr var_terrainTile.anInt4588)
+                            i_468_ = (((is_376_!![i_466_]!![i_467_] * (var_terrainTile_368_.anInt4592 - i_464_)) + is_376_[i_466_ + 1]!![i_467_] * i_464_) shr var_terrainTile_368_.anInt4588)
+                            i_469_ = (((is_376_[i_466_]!![i_467_ + 1] * (var_terrainTile_368_.anInt4592 - i_464_)) + is_376_[i_466_ + 1]!![i_467_ + 1] * i_464_) shr var_terrainTile_368_.anInt4588)
+                            val i_471_ = (i_468_ * (var_terrainTile_368_.anInt4592 - i_465_) + i_469_ * i_465_ shr var_terrainTile_368_.anInt4588)
                             val i_472_ = i_470_ - i_471_ - i_367_
                             anIntArray5332!![i_461_] = (((anIntArray5332!![i_461_] shl 8) / i_448_ * i_472_) shr 8) - (i_370_ - i_470_)
                         }

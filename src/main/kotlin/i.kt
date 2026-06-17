@@ -101,7 +101,7 @@ class i : Class64, Interface19 {
         /* empty */
     }
 
-    public external override fun p(i: Int, i_22_: Int, var_s: s?, var_s_23_: s?, i_24_: Int, i_25_: Int, i_26_: Int)
+    public external override fun p(i: Int, i_22_: Int, var_terrainTile: TerrainTile?, var_terrainTile_23_: TerrainTile?, i_24_: Int, i_25_: Int, i_26_: Int)
 
     public external override fun V(): Int
 

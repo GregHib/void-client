@@ -137,7 +137,7 @@ class Class239_Sub24 : Class239 {
                 Class226.method1626(1, true)
                 if (i_10_ == 0) i_10_ = 1
                 if (i_9_ == 0) i_9_ = 1
-                if (Class348_Sub1_Sub1.aSArray8801 != null && (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) != 0)) {
+                if (Class348_Sub1_Sub1.aTerrainTileArray8801 != null && (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) != 0)) {
                     var i_13_ = -1
                     var i_14_ = -1
                     val i_15_ = var_renderer.i()

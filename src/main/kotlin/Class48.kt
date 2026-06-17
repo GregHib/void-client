@@ -1,6 +1,6 @@
 import Class239_Sub26.Companion.method1836
 import Class286_Sub8.Companion.method2172
-import s_Sub2.Companion.method4002
+import OpenGlTerrainTile.Companion.method4002
 
 /* Class48 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

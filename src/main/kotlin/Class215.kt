@@ -3,7 +3,7 @@ import Class239.Companion.method1713
 import Class286_Sub2.Companion.method2145
 import Class286_Sub5.Companion.method2158
 import Class56.Companion.method527
-import s.Companion.method3980
+import TerrainTile.Companion.method3980
 import java.awt.Container
 
 object Class215 {

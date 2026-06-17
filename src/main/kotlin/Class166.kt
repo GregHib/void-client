@@ -119,7 +119,7 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
             if (i_5_ != 8) method1284(-59)
             var i_8_ = Class93.anInt1534
             if (Class59_Sub1.aBoolean5300) {
-                i_7_ += s_Sub3.method4008((-126).toByte())
+                i_7_ += NativeTerrainTile.method4008((-126).toByte())
                 i_8_ += method260(false)
             }
             if (Class239_Sub20.anInt6048 == 1) {

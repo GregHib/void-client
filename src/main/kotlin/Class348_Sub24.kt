@@ -86,15 +86,15 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             if (i_5_ >= -1) {
                                 if (i_5_ > 65534) i_5_ = 65534
                             } else i_5_ = -1
-                            if (s_Sub2.anInt8270 != i_5_ || i_4_ != Class322.anInt4032) {
+                            if (OpenGlTerrainTile.anInt8270 != i_5_ || i_4_ != Class322.anInt4032) {
                                 if (class348_sub47 == null) {
                                     Class361.anInt4450++
                                     class348_sub47 = (method2148(Class348_Sub42_Sub11.aClass351_9590, Class348_Sub23_Sub2.aClass77_9029, -94))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     i_2_ = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
                                 }
-                                var i_6_ = -s_Sub2.anInt8270 + i_5_
-                                s_Sub2.anInt8270 = i_5_
+                                var i_6_ = -OpenGlTerrainTile.anInt8270 + i_5_
+                                OpenGlTerrainTile.anInt8270 = i_5_
                                 var i_7_ = i_4_ - Class322.anInt4032
                                 Class322.anInt4032 = i_4_
                                 val i_8_ = ((class348_sub45_3_.method3312((-107).toByte()) + -Class355.aLong4367) / 20L).toInt()

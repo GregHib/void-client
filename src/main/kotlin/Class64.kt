@@ -10,7 +10,7 @@ public abstract class Class64 {
     var aBoolean1124: Boolean = false
     abstract fun FA(i: Int)
 
-    abstract fun p(i: Int, i_0_: Int, var_s: s?, var_s_1_: s?, i_2_: Int, i_3_: Int, i_4_: Int)
+    abstract fun p(i: Int, i_0_: Int, var_terrainTile: TerrainTile?, var_terrainTile_1_: TerrainTile?, i_2_: Int, i_3_: Int, i_4_: Int)
 
     private fun method602(i: Int, class348_sub33: Class348_Sub33?, i_5_: Int, bool: Boolean, i_6_: Int, class4: Class4?, i_7_: Int, `is`: IntArray?, bools: BooleanArray?, class4_8_: Class4?, i_9_: Int, bool_10_: Boolean) {
         try {
@@ -321,24 +321,24 @@ public abstract class Class64 {
 
     abstract fun ia(i: Short, i_115_: Short)
 
-    fun method626(i: Int, i_116_: Int, i_117_: Int, i_118_: Int, i_119_: Int, i_120_: Int, i_121_: Int, var_s: s, i_122_: Int) {
+    fun method626(i: Int, i_116_: Int, i_117_: Int, i_118_: Int, i_119_: Int, i_120_: Int, i_121_: Int, var_terrainTile: TerrainTile, i_122_: Int) {
         anInt1137++
         val bool = false
         val bool_123_ = false
         val bool_124_ = false
         val i_125_ = -i / 2
         val i_126_ = -i_119_ / 2
-        val i_127_ = var_s.method3986(i_118_ + i_125_, i_126_ + i_122_, 10.toByte())
+        val i_127_ = var_terrainTile.method3986(i_118_ + i_125_, i_126_ + i_122_, 10.toByte())
         val i_128_ = i / 2
         val i_129_ = -i_119_ / 2
-        val i_130_ = var_s.method3986(i_128_ + i_118_, i_122_ - -i_129_, (-116).toByte())
+        val i_130_ = var_terrainTile.method3986(i_128_ + i_118_, i_122_ - -i_129_, (-116).toByte())
         val i_131_ = -i / 2
         val i_132_ = i_119_ / 2
-        val i_133_ = var_s.method3986(i_118_ + i_131_, i_122_ - -i_132_, (-111).toByte())
+        val i_133_ = var_terrainTile.method3986(i_118_ + i_131_, i_122_ - -i_132_, (-111).toByte())
         val i_134_ = i / 2
         if (i_116_ != 10947) EA()
         val i_135_ = i_119_ / 2
-        val i_136_ = var_s.method3986(i_118_ + i_134_, i_135_ + i_122_, 50.toByte())
+        val i_136_ = var_terrainTile.method3986(i_118_ + i_134_, i_135_ + i_122_, 50.toByte())
         val i_137_ = min(i_130_, i_127_)
         val i_138_ = min(i_136_, i_133_)
         val i_139_ = min(i_136_, i_130_)

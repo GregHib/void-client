@@ -7,14 +7,14 @@ import jaggl.OpenGL.Companion.glScalef
 import jaggl.OpenGL.Companion.glTranslatef
 import java.awt.Canvas
 
-class Class104 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: s_Sub2?) {
+class Class104 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: OpenGlTerrainTile?) {
     private val anInt1612: Int
     private val anInt1613: Int
     private val aHa_Sub2_1616: OpenGlRenderer?
     @JvmField
     var aByteArray1617: ByteArray
     private val anInt1618: Int
-    private val aS_Sub2_1622: s_Sub2?
+    private val aS_Sub2_1622: OpenGlTerrainTile?
     private var aClass232ArrayArray1623: Array<Array<Class232?>>? = null
     @JvmField
     var anInt1624: Int = 0

@@ -57,11 +57,11 @@ abstract class Class130 {
         @JvmStatic
         fun method1130(var_renderNode: RenderNode?, i: Int, i_1_: Int, i_2_: Int, bools: BooleanArray?): Boolean {
             var bool = false
-            if (NativeSprite.aSArray5191 != Class332.aSArray4142) {
-                val i_3_ = Class348_Sub1_Sub1.aSArray8801!![i]!!.method3986(i_1_, i_2_, (-109).toByte())
+            if (NativeSprite.aTerrainTileArray5191 != Class332.aTerrainTileArray4142) {
+                val i_3_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3986(i_1_, i_2_, (-109).toByte())
                 var i_4_ = 0
                 while ( /**/i_4_ <= i) {
-                    val var_s = Class348_Sub1_Sub1.aSArray8801!![i_4_]
+                    val var_s = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]
                     if (var_s != null) {
                         val i_5_ = i_3_ - var_s.method3986(i_1_, i_2_, 72.toByte())
                         if (bools != null) {

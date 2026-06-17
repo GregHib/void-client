@@ -38,7 +38,7 @@ class Class347 {
                 var i_0_ = 0
                 var i_1_ = 0
                 if (Class59_Sub1.aBoolean5300) {
-                    i_0_ = s_Sub3.method4008((-124).toByte())
+                    i_0_ = NativeTerrainTile.method4008((-124).toByte())
                     i_1_ = method260(false)
                 }
                 var i_2_ = i_0_ + Class258_Sub4.aClass373_8552!!.method3597(true)

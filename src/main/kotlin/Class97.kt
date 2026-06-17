@@ -4,7 +4,7 @@ import Class89.Companion.method849
 import NativeRenderer.Companion.method3936
 import jaclib.memory.Stream.Companion.c
 
-class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class330?, var_s_Sub3: s_Sub3?, i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
+class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class330?, var_s_Sub3: NativeTerrainTile?, i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
     private val anInt1544: Int
     private var anInt1546 = 0
     private var anInt1547 = 0

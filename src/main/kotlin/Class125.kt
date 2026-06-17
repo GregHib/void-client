@@ -80,7 +80,7 @@ class Class125 internal constructor(i: Int, class221: Class221?, class341: Class
             val i_4_ = i_3_ shl Class362.anInt4459
             val i_5_ = i shl Class362.anInt4459
             if (i_2_.toInt() != -79) anInt4919 = 64
-            if (method1084(i_0_, Class270.anInt3465, i_5_, i_4_, NativeSprite.aSArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_3_), Class270.anInt3465, 18507)) {
+            if (method1084(i_0_, Class270.anInt3465, i_5_, i_4_, NativeSprite.aTerrainTileArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_3_), Class270.anInt3465, 18507)) {
                 Class348_Sub40_Sub4.anInt9112++
                 return true
             }

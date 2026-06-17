@@ -220,7 +220,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                 if (!IndexedSprite.method164(i, i_38_, (-97).toByte(), i_36_)) return false
                 val i_41_ = i_38_ shl Class362.anInt4459
                 val i_42_ = i_36_ shl Class362.anInt4459
-                if (method1084(i_37_, Class270.anInt3465, i_42_, i_41_, NativeSprite.aSArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), Class270.anInt3465, 18507)) {
+                if (method1084(i_37_, Class270.anInt3465, i_42_, i_41_, NativeSprite.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), Class270.anInt3465, 18507)) {
                     Class348_Sub40_Sub4.anInt9112++
                     return true
                 }
@@ -234,7 +234,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
             }
             val i_45_ = (i_38_ shl Class362.anInt4459) + 1
             val i_46_ = (i_36_ shl Class362.anInt4459) + 2
-            if (!method1084(i_37_, (1 + -i_38_ + i_40_) * Class270.anInt3465, i_46_, i_45_, NativeSprite.aSArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), Class270.anInt3465 * (i_35_ + -i_36_ + 1), 18507)) return false
+            if (!method1084(i_37_, (1 + -i_38_ + i_40_) * Class270.anInt3465, i_46_, i_45_, NativeSprite.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), Class270.anInt3465 * (i_35_ + -i_36_ + 1), 18507)) return false
             Class348_Sub40_Sub4.anInt9112++
             return true
         }

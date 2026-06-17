@@ -834,7 +834,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 }
             }
             Class65.aClass357ArrayArrayArray1148 = null
-            Class348_Sub1_Sub1.aSArray8801 = null
+            Class348_Sub1_Sub1.aTerrainTileArray8801 = null
             if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
                 for (i in Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!!.indices) {
                     for (i_82_ in 0..<Class318_Sub7.anInt6451) {
@@ -846,9 +846,9 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 }
             }
             Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null
-            Class332.aSArray4142 = null
+            Class332.aTerrainTileArray4142 = null
             Class147.aClass357ArrayArrayArray2029 = null
-            NativeSprite.aSArray5191 = null
+            NativeSprite.aTerrainTileArray5191 = null
             Class99.aBooleanArrayArray1572 = null
             Class348_Sub8.aBooleanArrayArray6656 = null
             Class171.anIntArray2272 = null

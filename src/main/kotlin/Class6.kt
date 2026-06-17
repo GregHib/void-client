@@ -149,7 +149,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     var i_36_ = 0
                     if (i < 113) aClass227_151 = null
                     if (Class59_Sub1.aBoolean5300) {
-                        i_35_ = s_Sub3.method4008((-127).toByte())
+                        i_35_ = NativeTerrainTile.method4008((-127).toByte())
                         i_36_ = Class16.method260(false)
                     }
                     var_renderer!!.KA(i_35_, i_36_, Class321.anInt4017 + i_35_, i_36_ + 350)

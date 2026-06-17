@@ -39,7 +39,7 @@ object Class362 {
                     var i_5_ = (Class95.aClass221_1542!!.method1607(Class92.anInt1524, i_1_, (-107).toByte()) - -Class290.anInt3712)
                     var i_6_ = (Class239_Sub27.aClass341_6128!!.method2679(OpenGlRenderer.anInt7666, i_2_, 1595) + Class239_Sub3.anInt5871)
                     if (Class59_Sub1.aBoolean5300) {
-                        i_5_ += s_Sub3.method4008((-124).toByte())
+                        i_5_ += NativeTerrainTile.method4008((-124).toByte())
                         i_6_ += method260(false)
                     }
                     var_renderer.method3691(Class112.aClass207_1727, false)!!.method965((Class348_Sub40_Sub1.aClass207_9090!!.anInt2702) + i_5_, (Class348_Sub40_Sub1.aClass207_9090!!.anInt2696) + i_6_, -(2 * (Class348_Sub40_Sub1.aClass207_9090!!.anInt2702)) + i_1_, -((Class348_Sub40_Sub1.aClass207_9090!!.anInt2696) * 2) + i_2_, 1, 0, 0)

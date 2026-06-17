@@ -68,7 +68,7 @@ class Class293 internal constructor(private val anInt3749: Int, private val aRen
                 } else {
                     val i = (class318 as Class318_Sub2).anInt6394
                     if (i >= 1 && i <= 4) {
-                        val var_s = NativeSprite.aSArray5191!![i - 1]
+                        val var_s = NativeSprite.aTerrainTileArray5191!![i - 1]
                         for (i_0_ in 0..<(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084)) {
                             for (i_1_ in 0..<(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084)) {
                                 if (Class115.aBooleanArrayArrayArray1751!![i - 1]!![i_0_]!![i_1_]) {

@@ -1336,8 +1336,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return class348_sub25!!.method2997()
     }
 
-    override fun method3648(i: Int, i_357_: Int, `is`: Array<IntArray?>, is_358_: Array<IntArray?>?, i_359_: Int, i_360_: Int, i_361_: Int): s {
-        return s_Sub1(this, i_360_, i_361_, i, i_357_, `is`, is_358_!!, i_359_)
+    override fun method3648(i: Int, i_357_: Int, `is`: Array<IntArray?>, is_358_: Array<IntArray?>?, i_359_: Int, i_360_: Int, i_361_: Int): TerrainTile {
+        return SoftwareTerrainTile(this, i_360_, i_361_, i, i_357_, `is`, is_358_!!, i_359_)
     }
 
     override fun H(i: Int, i_362_: Int, i_363_: Int, `is`: IntArray?) {

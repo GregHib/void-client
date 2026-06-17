@@ -13,7 +13,7 @@ abstract class za : Class348() {
         fun method3437(i: Int, i_0_: Int) {
             var var_renderNode: RenderNode? = null
             for (i_1_ in i..<i_0_) {
-                val var_s = Class348_Sub1_Sub1.aSArray8801!![i_1_]
+                val var_s = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_1_]
                 if (var_s != null) {
                     for (i_2_ in 0..<Class348_Sub41.anInt7054) {
                         for (i_3_ in 0..<Class318_Sub7.anInt6451) {
@@ -22,7 +22,7 @@ abstract class za : Class348() {
                                 val i_4_ = i_3_ shl Class362.anInt4459
                                 val i_5_ = i_2_ shl Class362.anInt4459
                                 for (i_6_ in i_1_ - 1 downTo 0) {
-                                    val var_s_7_ = Class348_Sub1_Sub1.aSArray8801!![i_6_]
+                                    val var_s_7_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_6_]
                                     if (var_s_7_ != null) {
                                         val i_8_ = (var_s.method3982((-86).toByte(), i_2_, i_3_) - var_s_7_.method3982((-86).toByte(), i_2_, i_3_))
                                         val i_9_ = (var_s.method3982((-86).toByte(), i_2_, i_3_ + 1) - var_s_7_.method3982((-86).toByte(), i_2_, i_3_ + 1))

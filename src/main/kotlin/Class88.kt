@@ -7,7 +7,7 @@ import Class348_Sub40_Sub26.Companion.method3120
 import Class348_Sub40_Sub31.Companion.method3131
 import Class348_Sub40_Sub7.Companion.method3064
 import OutputStream_Sub1.Companion.method132
-import s_Sub2.Companion.method4002
+import OpenGlTerrainTile.Companion.method4002
 import za_Sub1.Companion.method3439
 import java.io.IOException
 import java.net.Socket
@@ -120,7 +120,7 @@ class Class88 {
             var i = 0
             var i_1_ = 0
             if (Class59_Sub1.aBoolean5300) {
-                i = s_Sub3.method4008((-124).toByte())
+                i = NativeTerrainTile.method4008((-124).toByte())
                 i_1_ = method260(false)
             }
             Class159.method1252(i_1_, RenderNode.anInt9721, i_1_, -1, i, i + Class321.anInt4017, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432, 116.toByte(), i)
@@ -371,8 +371,8 @@ class Class88 {
                                 Class130_Sub1.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class348_Sub6.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class290.aBoolean3706 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                s_Sub2.aString8265 = class348_sub49_sub2.method3371(-13487)
-                                Class132.aPlayer_1907!!.aString10537 = s_Sub2.aString8265
+                                OpenGlTerrainTile.aString8265 = class348_sub49_sub2.method3371(-13487)
+                                Class132.aPlayer_1907!!.aString10537 = OpenGlTerrainTile.aString8265
                                 Class132.aPlayer_1907!!.aString10544 = Class132.aPlayer_1907!!.aString10537
                                 Applet_Sub1.anInt37 = class348_sub49_sub2.readUnsignedByte(255)
                                 Class348_Sub1.anInt6551 = class348_sub49_sub2.readInt((-126).toByte())

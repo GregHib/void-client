@@ -41,7 +41,7 @@ object Class331 {
         val i_5_ = -114 % ((i - 22) / 33)
         anInt4137++
         Class100.aClass356_1585!!.method3481(0)
-        s_Sub2.aClass107_8241!!.method1009(2110355138)
+        OpenGlTerrainTile.aClass107_8241!!.method1009(2110355138)
         Class367_Sub4.aClass107_7325!!.method1009(2110355138)
     }
 

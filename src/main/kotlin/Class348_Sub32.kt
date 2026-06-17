@@ -4,10 +4,10 @@ import kotlin.math.sqrt
 /* Class348_Sub32 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class348_Sub32 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: s_Sub2?, class348_sub1: Class348_Sub1?, `is`: IntArray?) : Class348() {
+class Class348_Sub32 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: OpenGlTerrainTile?, class348_sub1: Class348_Sub1?, `is`: IntArray?) : Class348() {
     private val aClass123_6927: Class123?
     private var aFloatArrayArray6928: Array<FloatArray?>?
-    private val aS_Sub2_6929: s_Sub2?
+    private val aS_Sub2_6929: OpenGlTerrainTile?
     private var aClass356_6932: Class356? = null
     private var anInt6934 = 0
     private val anInt6935: Int

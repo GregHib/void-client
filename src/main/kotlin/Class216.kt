@@ -33,7 +33,7 @@ class Class216 internal constructor(var anInt4974: Int, var anInt4978: Int) : In
                 if (i.toInt() != -73) anInt4976 = 105
                 var i_3_ = 0
                 if (Class59_Sub1.aBoolean5300) {
-                    i_2_ = s_Sub3.method4008((-128).toByte())
+                    i_2_ = NativeTerrainTile.method4008((-128).toByte())
                     i_3_ = method260(false)
                 }
                 method1373(RenderNode.anInt9721, i_2_, i_2_, Class321.anInt4017 + i_2_, i_1_, i_0_, -1391, i_0_ + i_2_, Class348_Sub42_Sub8_Sub2.anInt10432 + i_3_, i_3_, i_3_ + i_1_, i_3_)

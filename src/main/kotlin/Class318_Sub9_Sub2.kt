@@ -34,11 +34,11 @@ open class Class318_Sub9_Sub2 : Class318_Sub9() {
                                 if (i_10_ >= 0 && i_10_ < Class348_Sub41.anInt7054 && (!bool || i_9_ >= i_5_ || i_10_ >= i_7_ || i_10_ < i_1_ && i_9_ != i_0_)) {
                                     val class357 = (Class147.aClass357ArrayArrayArray2029!![i_8_]!![i_9_]!![i_10_])
                                     if (class357 != null) {
-                                        val i_11_ = (((NativeSprite.aSArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_, i_9_)) + (NativeSprite.aSArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_, i_9_ + 1)) + (NativeSprite.aSArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_ + 1, i_9_)) + (NativeSprite.aSArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_ + 1, i_9_ + 1))) / 4 - ((NativeSprite.aSArray5191!![i]!!.method3982(
+                                        val i_11_ = (((NativeSprite.aTerrainTileArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_, i_9_)) + (NativeSprite.aTerrainTileArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_, i_9_ + 1)) + (NativeSprite.aTerrainTileArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_ + 1, i_9_)) + (NativeSprite.aTerrainTileArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_ + 1, i_9_ + 1))) / 4 - ((NativeSprite.aTerrainTileArray5191!![i]!!.method3982(
                                             (-86).toByte(),
                                             i_1_,
                                             i_0_
-                                        )) + (NativeSprite.aSArray5191!![i]!!.method3982((-86).toByte(), i_1_, i_0_ + 1)) + (NativeSprite.aSArray5191!![i]!!.method3982((-86).toByte(), i_1_ + 1, i_0_)) + (NativeSprite.aSArray5191!![i]!!.method3982((-86).toByte(), i_1_ + 1, i_0_ + 1))) / 4)
+                                        )) + (NativeSprite.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_1_, i_0_ + 1)) + (NativeSprite.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_1_ + 1, i_0_)) + (NativeSprite.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_1_ + 1, i_0_ + 1))) / 4)
                                         val class318_sub1_sub4 = (class357.aClass318_Sub1_Sub4_4406)
                                         val class318_sub1_sub4_12_ = (class357.aClass318_Sub1_Sub4_4403)
                                         if (class318_sub1_sub4 != null && class318_sub1_sub4.method2388(-127)) class318_sub1.method2380(Class9.aRenderer171, i_11_, bool, class318_sub1_sub4, (((i_10_ - i_1_) * Class270.anInt3465) + ((1 - i_3_) * (Class348_Sub23_Sub2.anInt9037))), (-112).toByte(), (((i_9_ - i_0_) * Class270.anInt3465) + ((1 - i_2_) * (Class348_Sub23_Sub2.anInt9037))))

@@ -1608,10 +1608,10 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return var_za_Sub1
     }
 
-    override fun method3648(i: Int, i_178_: Int, `is`: Array<IntArray?>, is_179_: Array<IntArray?>?, i_180_: Int, i_181_: Int, i_182_: Int): s {
+    override fun method3648(i: Int, i_178_: Int, `is`: Array<IntArray?>, is_179_: Array<IntArray?>?, i_180_: Int, i_181_: Int, i_182_: Int): TerrainTile {
         try {
             anInt7600++
-            return s_Sub2(this, i_181_, i_182_, i, i_178_, `is`, is_179_, i_180_)
+            return OpenGlTerrainTile(this, i_181_, i_182_, i, i_178_, `is`, is_179_, i_180_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.VE(" + i + ',' + i_178_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_179_ != null) "{...}" else "null") + ',' + i_180_ + ',' + i_181_ + ',' + i_182_ + ')'))
         }

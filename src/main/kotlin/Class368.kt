@@ -112,13 +112,13 @@ class Class368 {
         }
     }
 
-    fun method3565(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, var_renderer: Renderer?, i_19_: Int, i_20_: Int, i_21_: Int, class87: Class87?, var_s: s?, i_22_: Int, var_s_23_: s?): Class64? {
+    fun method3565(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, var_renderer: Renderer?, i_19_: Int, i_20_: Int, i_21_: Int, class87: Class87?, var_terrainTile: TerrainTile?, i_22_: Int, var_terrainTile_23_: TerrainTile?): Class64? {
         try {
             anInt4496++
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, 54.toByte(), null, -17, true, -42, 95.toByte(), -81)
-            return method3566(var_renderer, i_16_, i_18_, var_s, i_22_, class87, i, 2.toByte(), var_s_23_, i_17_, bool, i_20_, (-68).toByte(), i_19_)
+            return method3566(var_renderer, i_16_, i_18_, var_terrainTile, i_22_, class87, i, 2.toByte(), var_terrainTile_23_, i_17_, bool, i_20_, (-68).toByte(), i_19_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (var_s != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_s_23_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -127,7 +127,7 @@ class Class368 {
         anInt4507 = -1
     }
 
-    private fun method3566(var_renderer: Renderer?, i: Int, i_24_: Int, var_s: s?, i_25_: Int, class87: Class87?, i_26_: Int, i_27_: Byte, var_s_28_: s?, i_29_: Int, bool: Boolean, i_30_: Int, i_31_: Byte, i_32_: Int): Class64? {
+    private fun method3566(var_renderer: Renderer?, i: Int, i_24_: Int, var_terrainTile: TerrainTile?, i_25_: Int, class87: Class87?, i_26_: Int, i_27_: Byte, var_terrainTile_28_: TerrainTile?, i_29_: Int, bool: Boolean, i_30_: Int, i_31_: Byte, i_32_: Int): Class64? {
         var bool = bool
         try {
             anInt4491++
@@ -179,11 +179,11 @@ class Class368 {
                 if (anInt4508 == 180) class64_37_!!.a(8192)
                 if (anInt4508 == 270) class64_37_!!.a(12288)
             }
-            if (bool) class64_37_!!.p(this.aByte4488.toInt(), anInt4507, var_s_28_, var_s, i_30_, i_29_, i_25_)
+            if (bool) class64_37_!!.p(this.aByte4488.toInt(), anInt4507, var_terrainTile_28_, var_terrainTile, i_30_, i_29_, i_25_)
             class64_37_!!.s(i_24_)
             return class64_37_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_s != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_s_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
         }
     }
 

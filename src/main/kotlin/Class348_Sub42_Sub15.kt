@@ -46,7 +46,7 @@ class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Su
     fun method3251(i: Int) {
         anInt9648++
         this.aLong7057 = (0x7fffffffffffffffL.inv() and this.aLong7057 or method599(-120) + 500L)
-        s_Sub2.aClass107_8241!!.method1005(true, this)
+        OpenGlTerrainTile.aClass107_8241!!.method1005(true, this)
         if (i != -16058) aClass105_9658 = null
     }
 

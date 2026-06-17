@@ -106,19 +106,19 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             Class50_Sub4.aClass47_5262 = method2826(15)
             method3309(-124)
             Class65.aClass357ArrayArrayArray1148 = (Array<Array<Array<Class357?>?>?>(i_1_) { Array<Array<Class357?>?>(Class318_Sub7.anInt6451) { arrayOfNulls<Class357>(Class348_Sub41.anInt7054) } })
-            Class348_Sub1_Sub1.aSArray8801 = arrayOfNulls<s>(i_1_)
+            Class348_Sub1_Sub1.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
             if (bool) {
                 Class342.anIntArrayArray4253 = Array<IntArray?>(Class318_Sub7.anInt6451) { IntArray(Class348_Sub41.anInt7054) }
                 Class348_Sub1_Sub2.aByteArrayArray8816 = Array<ByteArray?>(Class318_Sub7.anInt6451) { ByteArray(Class348_Sub41.anInt7054) }
                 Class239_Sub1.aShortArrayArray5847 = Array<ShortArray?>(Class318_Sub7.anInt6451) { ShortArray(Class348_Sub41.anInt7054) }
                 Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = (Array<Array<Array<Class357?>?>?>(1) { Array<Array<Class357?>?>(Class318_Sub7.anInt6451) { arrayOfNulls<Class357>(Class348_Sub41.anInt7054) } })
-                Class332.aSArray4142 = arrayOfNulls<s>(1)
+                Class332.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
             } else {
                 Class342.anIntArrayArray4253 = null
                 Class348_Sub1_Sub2.aByteArrayArray8816 = null
                 Class239_Sub1.aShortArrayArray5847 = null
                 Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null
-                Class332.aSArray4142 = null
+                Class332.aTerrainTileArray4142 = null
             }
             if (bool_5_) {
                 Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = Array<Array<LongArray?>?>(i_1_) { Array<LongArray?>(i_2_) { LongArray(i_3_) } }

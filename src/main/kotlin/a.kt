@@ -15,8 +15,8 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
     private val anI5114: i
     private val anI5116: i
 
-    fun method142(var_s: s, i: Int, i_0_: Int) {
-        H(this.nativeid, (var_s as t).nativeid, i, i_0_)
+    fun method142(var_terrainTile: TerrainTile, i: Int, i_0_: Int) {
+        H(this.nativeid, (var_terrainTile as t).nativeid, i, i_0_)
     }
 
     private external fun R(l: Long, l_1_: Long, i: Int, i_2_: Int, l_3_: Long, bool: Boolean): Boolean
@@ -49,16 +49,16 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
         return R(this.nativeid, (class64 as i).nativeid, i, i_15_, (class101 as ja).nativeid, bool)
     }
 
-    fun method147(var_s: s, i: Int, i_16_: Int, i_17_: Int) {
-        Z(this.nativeid, (var_s as t).nativeid, i, i_16_, i_17_)
+    fun method147(var_terrainTile: TerrainTile, i: Int, i_16_: Int, i_17_: Int) {
+        Z(this.nativeid, (var_terrainTile as t).nativeid, i, i_16_, i_17_)
     }
 
     override fun w(bool: Boolean) {
         E(this.nativeid, bool)
     }
 
-    fun method148(var_s: s, i: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bools: Array<BooleanArray?>?) {
-        ta(this.nativeid, (var_s as t).nativeid, i, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, bools)
+    fun method148(var_terrainTile: TerrainTile, i: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bools: Array<BooleanArray?>?) {
+        ta(this.nativeid, (var_terrainTile as t).nativeid, i, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, bools)
     }
 
     fun method149(class64: Class64, class101: Class101?, `is`: IntArray?, i: Int, i_24_: Int) {

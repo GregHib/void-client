@@ -44,7 +44,7 @@ object Class203 {
                 if (class348_sub34 == null) Class282.method2110(i_3_, i_2_, i)
                 else {
                     var class318_sub1_sub2_sub1 = (Class282.method2110(i_3_, i_2_, i) as? Class318_Sub1_Sub2_Sub1?)
-                    if (class318_sub1_sub2_sub1 == null) class318_sub1_sub2_sub1 = (Class318_Sub1_Sub2_Sub1(i_2_ shl 9, NativeSprite.aSArray5191!![i_3_]!!.method3982((-86).toByte(), i, i_2_), i shl 9, i_3_, i_3_))
+                    if (class318_sub1_sub2_sub1 == null) class318_sub1_sub2_sub1 = (Class318_Sub1_Sub2_Sub1(i_2_ shl 9, NativeSprite.aTerrainTileArray5191!![i_3_]!!.method3982((-86).toByte(), i, i_2_), i shl 9, i_3_, i_3_))
                     else {
                         class318_sub1_sub2_sub1.anInt10180 = -1
                         class318_sub1_sub2_sub1.anInt10189 = class318_sub1_sub2_sub1.anInt10180

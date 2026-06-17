@@ -147,7 +147,7 @@ class Class348_Sub14 : Class348 {
                                     i_26_++
                                 }
                             }
-                            Class348_Sub1_Sub1.aSArray8801!![i_24_]!!.method3987(0, 0, 1024, i_20_, i_21_, i_22_, i_23_, bools)
+                            Class348_Sub1_Sub1.aTerrainTileArray8801!![i_24_]!!.method3987(0, 0, 1024, i_20_, i_21_, i_22_, i_23_, bools)
                             if (!Class375.aBoolean4542) {
                                 for (i_27_ in -4..<RuntimeException_Sub1.anInt4600) {
                                     for (i_28_ in -4..<RuntimeException_Sub1.anInt4600) {

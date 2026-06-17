@@ -48,8 +48,8 @@ abstract class Class348_Sub45 : Class348() {
         }
 
         @JvmStatic
-        fun method3313(i: Int, var_s: s?) {
-            NativeSprite.aSArray5191!![i] = var_s
+        fun method3313(i: Int, var_terrainTile: TerrainTile?) {
+            NativeSprite.aTerrainTileArray5191!![i] = var_terrainTile
         }
 
         @JvmStatic

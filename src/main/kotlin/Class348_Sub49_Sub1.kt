@@ -1,6 +1,6 @@
 import Class348_Sub9.Companion.method2778
 import jaclib.memory.Stream.Companion.floatToRawIntBits
-import s_Sub2.Companion.method4001
+import OpenGlTerrainTile.Companion.method4001
 import java.util.*
 
 class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
@@ -81,7 +81,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                 if (!bool) {
                     for (i_5_ in 0..<Class86.anInt1477) {
                         if (!Class348_Sub9.method2778((Class24.aClass318_Sub1_Sub3Array357!![i_5_]!!), bool, `is`, i, i_0_)) {
-                            s_Sub2.method4001(Class24.aClass318_Sub1_Sub3Array357!![i_5_]!!)
+                            OpenGlTerrainTile.method4001(Class24.aClass318_Sub1_Sub3Array357!![i_5_]!!)
                             if ((Class24.aClass318_Sub1_Sub3Array357!![i_5_]!!.anInt6389) != -1) {
                                 if (Class24.aClass318_Sub1_Sub3Array357!![i_5_]!!.method2377(122.toByte())) Class291.aClass318_Sub1Array3737!![Class348_Sub42_Sub3.anInt9504++] = (Class24.aClass318_Sub1_Sub3Array357!![i_5_])
                                 else Class239_Sub21.aClass318_Sub1Array6066!![Class5_Sub1_Sub1.anInt9930++] = (Class24.aClass318_Sub1_Sub3Array357!![i_5_])
@@ -122,11 +122,11 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                             }
                         }
                         if (Class348_Sub40_Sub5.aBoolean9121) {
-                            if (i_1_ >= 0) NativeSprite.aSArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
-                            else NativeSprite.aSArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
+                            if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
+                            else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_15_ in 0..<Npc.anInt10503) Class319.aClass315Array3982!![i_15_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) NativeSprite.aSArray5191!![i_7_]!!.method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_1_, i_2_)
-                        else NativeSprite.aSArray5191!![i_7_]!!.method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_2_)
+                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_1_, i_2_)
+                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_2_)
                     } else {
                         var i_16_ = Class99.aBooleanArrayArray1572!!.size
                         if ((Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size) > Class318_Sub7.anInt6451) i_16_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size - Class318_Sub7.anInt6451)
@@ -143,11 +143,11 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                             }
                         }
                         if (Class348_Sub40_Sub5.aBoolean9121) {
-                            if (i_1_ >= 0) NativeSprite.aSArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
-                            else NativeSprite.aSArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
+                            if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
+                            else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_21_ in 0..<Npc.anInt10503) Class319.aClass315Array3982!![i_21_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) NativeSprite.aSArray5191!![i_7_]!!.method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_1_, i_2_)
-                        else NativeSprite.aSArray5191!![i_7_]!!.method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_2_)
+                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_1_, i_2_)
+                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_2_)
                     }
                 }
             }

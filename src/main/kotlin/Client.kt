@@ -529,9 +529,9 @@ import NativeRenderer.Companion.method3870
 import RenderNode.Companion.method3285
 import NativeRenderNode.Companion.method3288
 import OpenGlRenderNode.Companion.method3295
-import s.Companion.method3988
-import s_Sub2.Companion.method4000
-import s_Sub3.Companion.method4006
+import TerrainTile.Companion.method3988
+import OpenGlTerrainTile.Companion.method4000
+import NativeTerrainTile.Companion.method4006
 import za.Companion.method3438
 import za_Sub1.Companion.method3441
 import za_Sub2.Companion.method3443
@@ -2058,7 +2058,7 @@ class Client : Applet_Sub1() {
                         var i_51_ = 0
                         var i_52_ = 0
                         if (Class59_Sub1.aBoolean5300) {
-                            i_51_ = s_Sub3.method4008((-128).toByte())
+                            i_51_ = NativeTerrainTile.method4008((-128).toByte())
                             i_52_ = method260(false)
                         }
                         if (class46 == Class289.aClass46_3701 && Exception_Sub1.method141(Class289.aClass46_3701!!, 125.toByte()) != null) {
@@ -2238,13 +2238,13 @@ class Client : Applet_Sub1() {
                                         } else if (bool_53_ && (Class348_Sub42.anInt7059 > 0)) {
                                             if (Class348_Sub42.anInt7059 == 1 && ((Class318_Sub4.anInt6411 != Class258_Sub4.aClass373_8552!!.method3597(true)) || (Class219.anInt2872 != (Class258_Sub4.aClass373_8552!!.method3594(117.toByte()))))) {
                                                 Class183.anInt2464 = Class348_Sub36.anInt6992
-                                                s_Sub2.anInt8237 = Class245.anInt3170
+                                                OpenGlTerrainTile.anInt8237 = Class245.anInt3170
                                                 Class348_Sub42.anInt7059 = 2
                                             }
                                             if (Class348_Sub42.anInt7059 == 2) {
                                                 Class348_Sub17.aBoolean6788 = true
                                                 Class64_Sub3.method689((-59).toByte(), (Class183.anInt2464 + (((Class318_Sub4.anInt6411) - (Class258_Sub4.aClass373_8552!!.method3597(true))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()))
-                                                method2170((s_Sub2.anInt8237 - (((Class219.anInt2872) - (Class258_Sub4.aClass373_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()), 3.toByte())
+                                                method2170((OpenGlTerrainTile.anInt8237 - (((Class219.anInt2872) - (Class258_Sub4.aClass373_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()), 3.toByte())
                                             }
                                         } else {
                                             if (Class348_Sub42.anInt7059 > 0 && !Class348_Sub17.aBoolean6788) {

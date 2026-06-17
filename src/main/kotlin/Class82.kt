@@ -367,7 +367,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string.equals("getheight", ignoreCase = true)) {
-                            method94(("Height: " + (NativeSprite.aSArray5191!![(Class132.aPlayer_1907!!.plane).toInt()]!!.method3982((-86).toByte(), (Class132.aPlayer_1907!!.y) shr 9, (Class132.aPlayer_1907!!.x) shr 9))), i.toInt() xor 0x1)
+                            method94(("Height: " + (NativeSprite.aTerrainTileArray5191!![(Class132.aPlayer_1907!!.plane).toInt()]!!.method3982((-86).toByte(), (Class132.aPlayer_1907!!.y) shr 9, (Class132.aPlayer_1907!!.x) shr 9))), i.toInt() xor 0x1)
                             return
                         }
                         if (string.equals("resetminimap", ignoreCase = true)) {

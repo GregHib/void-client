@@ -141,15 +141,15 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
             anInt3073 = -1
         }
         if (i > -126) return null
-        val var_s = NativeSprite.aSArray5191!![aByte3067.toInt()]
-        val var_s_5_: s?
-        if (!aBoolean3069) var_s_5_ = if (aByte3067 >= 3) null else NativeSprite.aSArray5191!![1 + aByte3067]
-        else var_s_5_ = Class348_Sub1_Sub1.aSArray8801!![0]
+        val var_s = NativeSprite.aTerrainTileArray5191!![aByte3067.toInt()]
+        val var_terrainTile_5_: TerrainTile?
+        if (!aBoolean3069) var_terrainTile_5_ = if (aByte3067 >= 3) null else NativeSprite.aTerrainTileArray5191!![1 + aByte3067]
+        else var_terrainTile_5_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![0]
         var class64: Class64? = null
         if (aClass17_3057 == null) {
             if (aClass64_3059 == null || i_4_ != (i_4_ and aClass64_3059!!.ua()) || (anInt3053 != class51.anInt941)) {
                 if (aClass64_3059 != null) i_4_ = i_4_ or aClass64_3059!!.ua()
-                val class2 = (class51.method476(var_renderer, var_s_5_, (if (this.anInt3079 != 11) this.anInt3079 else 10), i_4_, aClass318_Sub1_3051!!.x, bool_3_, var_s, var_s!!.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (-114).toByte()), aClass318_Sub1_3051.y, (if (this.anInt3079 == 11) 4 + this.anInt3052 else this.anInt3052), 128))
+                val class2 = (class51.method476(var_renderer, var_terrainTile_5_, (if (this.anInt3079 != 11) this.anInt3079 else 10), i_4_, aClass318_Sub1_3051!!.x, bool_3_, var_s, var_s!!.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (-114).toByte()), aClass318_Sub1_3051.y, (if (this.anInt3079 == 11) 4 + this.anInt3052 else this.anInt3052), 128))
                 if (class2 == null) {
                     anInt3055 = 0
                     aBooleanArray3072 = null
@@ -172,7 +172,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
             } else class64 = aClass64_3059
         } else {
             if (bool_3_) i_4_ = i_4_ or 0x40000
-            class64 = (class51.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_renderer, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_s_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aClass17_3057, var_s))
+            class64 = (class51.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_renderer, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_terrainTile_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aClass17_3057, var_s))
             if (class64 == null) {
                 anInt3055 = 0
                 aBooleanArray3072 = null
