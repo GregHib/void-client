@@ -77,13 +77,13 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
         }
 
         @JvmStatic
-        fun method2753(bool: Boolean, i: Int, i_4_: Int, canvas: Canvas?, var_d: d?): ha {
+        fun method2753(bool: Boolean, i: Int, i_4_: Int, canvas: Canvas?, var_renderConfig: RenderConfig?): ha {
             try {
                 anInt6628++
                 if (bool != true) aByteArray6624 = null
-                return ha_Sub1(canvas!!, var_d, i_4_, i)
+                return ha_Sub1(canvas!!, var_renderConfig, i_4_, i)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("fba.M(" + bool + ',' + i + ',' + i_4_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (var_d != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("fba.M(" + bool + ',' + i + ',' + i_4_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
             }
         }
 

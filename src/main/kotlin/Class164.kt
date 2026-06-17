@@ -176,7 +176,7 @@ object Class164 {
         if (i != -28660) return 2
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1035) {
             if (Class348_Sub31.anInt6923 != -1 && !RasterSprite.aClass45_5207!!.method420(-10499, Class348_Sub31.anInt6923, 0)) return 99
-            Class348_Sub40_Sub4.aD9113 = Class244(Class348_Sub11.aClass45_4770, Class369_Sub2.aClass45_8589, Class21.aClass45_322)
+            Class348_Sub40_Sub4.aRenderConfig9113 = TextureMetadataProvider(Class348_Sub11.aClass45_4770, Class369_Sub2.aClass45_8589, Class21.aClass45_322)
             Class101_Sub3.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class239.aClass166_3147 = Class166(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
@@ -211,7 +211,7 @@ object Class164 {
             Class318_Sub1_Sub3_Sub3.aClass170_10209 = Class170()
             method3038(-1)
             method4011(i + 29684, Class239.aClass45_3146)
-            Class348_Sub29.method3004(RasterSprite.aClass45_5207, false, Class348_Sub40_Sub4.aD9113)
+            Class348_Sub29.method3004(RasterSprite.aClass45_5207, false, Class348_Sub40_Sub4.aRenderConfig9113)
             val class296 = Class296(Class16.aClass45_233!!.method391("huffman", "", -29832)!!)
             method3896(class296, 13.toByte())
             try {

@@ -157,7 +157,7 @@ import Class239_Sub8.Companion.method1755
 import Class239_Sub9.Companion.method1758
 import Class240.Companion.method1853
 import Class242.Companion.method1866
-import Class244.Companion.method1880
+import TextureMetadataProvider.Companion.method1880
 import Class245.method1882
 import Class246.Companion.method1886
 import Class247.method1889
@@ -1383,7 +1383,7 @@ class Client : Applet_Sub1() {
             val string_31_ = this.getParameter("userFlow")
             if (string_31_ != null) {
                 try {
-                    Class244.aLong4615 = string_31_.toLong()
+                    TextureMetadataProvider.aLong4615 = string_31_.toLong()
                 } catch (numberformatexception: NumberFormatException) {
                     /* empty */
                 }
@@ -2002,7 +2002,7 @@ class Client : Applet_Sub1() {
                     } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class10.aClass230_186
                     Class161.aBoolean2151 = false
                     Class239_Sub12.aString5966 = ""
-                    Class244.aLong4615 = 0L
+                    TextureMetadataProvider.aLong4615 = 0L
                     Class348_Sub23_Sub3.aString9043 = null
                     Class202.anInt2670 = 0
                     Class155.aBoolean2110 = true

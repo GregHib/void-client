@@ -985,7 +985,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         @JvmStatic
         fun method2839(i: Int, i_0_: Int, i_1_: Int) {
             anInt8890++
-            Class244.anInt4609 = i - Class75.anInt1266
+            TextureMetadataProvider.anInt4609 = i - Class75.anInt1266
             Class48.anInt859 = i_1_ + -Class75.anInt1263
             if (i_0_ != -17) method2839(-112, -58, -95)
         }

@@ -5,7 +5,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
+class ha_Sub1 private constructor(var_renderConfig: RenderConfig?) : ha(var_renderConfig) {
     private var anInt7465 = 0
     private var anInt7466 = 0
     private var aClass356_7467: Class356?
@@ -421,7 +421,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     fun method3714(i: Int): Boolean {
-        return this.aD4579!!.method3(i, -6662)!!.aBoolean217 || this.aD4579!!.method3(i, -6662)!!.aBoolean215
+        return this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean217 || this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean215
     }
 
     override fun Q(i: Int, i_99_: Int, i_100_: Int, i_101_: Int, i_102_: Int, i_103_: Int, `is`: ByteArray?, i_104_: Int, i_105_: Int) {
@@ -1281,10 +1281,10 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         synchronized(aClass60_7498) {
             class348_sub25 = aClass60_7498.method583(i.toLong(), 77) as Class348_Sub25?
             if (class348_sub25 == null) {
-                if (!this.aD4579!!.method4(-7953, i)) return null
-                val class12 = this.aD4579!!.method3(i, -6662)
+                if (!this.aRenderConfig4579!!.method4(-7953, i)) return null
+                val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                 val i_354_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
-                class348_sub25 = Class348_Sub25(i, i_354_, this.aD4579!!.method5(true, i, 0.7f, i_354_, i_354_, 71), class12.anInt200 != 1)
+                class348_sub25 = Class348_Sub25(i, i_354_, this.aRenderConfig4579!!.method5(true, i, 0.7f, i_354_, i_354_, 71), class12.anInt200 != 1)
                 aClass60_7498.method582(class348_sub25, i.toLong(), (-122).toByte())
             }
         }
@@ -1309,7 +1309,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return this.aClass101_Sub1_7492!!
     }
 
-    constructor(canvas: Canvas, var_d: d?, i: Int, i_355_: Int) : this(var_d) {
+    constructor(canvas: Canvas, var_renderConfig: RenderConfig?, i: Int, i_355_: Int) : this(var_renderConfig) {
         try {
             method3643(canvas, i, i_355_)
             method3677(canvas)
@@ -1325,10 +1325,10 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         synchronized(aClass60_7498) {
             class348_sub25 = (aClass60_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as Class348_Sub25?)
             if (class348_sub25 == null) {
-                if (!this.aD4579!!.method4(-7953, i)) return null
-                val class12 = this.aD4579!!.method3(i, -6662)
+                if (!this.aRenderConfig4579!!.method4(-7953, i)) return null
+                val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                 val i_356_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
-                class348_sub25 = Class348_Sub25(i, i_356_, this.aD4579!!.method6(-21540, i_356_, 0.7f, i, true, i_356_), class12.anInt200 != 1)
+                class348_sub25 = Class348_Sub25(i, i_356_, this.aRenderConfig4579!!.method6(-21540, i_356_, 0.7f, i, true, i_356_), class12.anInt200 != 1)
                 aClass60_7498.method582(class348_sub25, i.toLong() or 0x7fffffffffffffffL.inv(), (-126).toByte())
             }
         }
@@ -1417,7 +1417,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
 
     fun method3720(i: Int, i_377_: Int, i_378_: Int, i_379_: Int, i_380_: Int, i_381_: Int, i_382_: Int, i_383_: Int, i_384_: Int, i_385_: Int) {
         if (i_379_ != 0 && i_380_ != 0) {
-            if (i_382_ != 65535 && !(this.aD4579!!.method3(i_382_, -6662)!!.aBoolean209)) {
+            if (i_382_ != 65535 && !(this.aRenderConfig4579!!.method3(i_382_, -6662)!!.aBoolean209)) {
                 if (anInt7512 != i_382_) {
                     var class105 = (aClass60_7499.method583(i_382_.toLong(), 97) as Class105?)
                     if (class105 == null) {
@@ -1574,7 +1574,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     fun method3722(i: Int): Int {
-        return (this.aD4579!!.method3(i, -6662)!!.aShort208.toInt() and 0xffff)
+        return (this.aRenderConfig4579!!.method3(i, -6662)!!.aShort208.toInt() and 0xffff)
     }
 
     override fun method3699(): Boolean {
@@ -2113,7 +2113,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     fun method3725(i: Int): Boolean {
-        return this.aD4579!!.method4(-7953, i)
+        return this.aRenderConfig4579!!.method4(-7953, i)
     }
 
     init {
@@ -2359,7 +2359,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     fun method3726(i: Int): Int {
-        return this.aD4579!!.method3(i, -6662)!!.anInt200
+        return this.aRenderConfig4579!!.method3(i, -6662)!!.anInt200
     }
 
     override fun I(): Int {
@@ -2381,7 +2381,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
                 class348_sub25.anInt6879 += i_634_
                 val i_635_ = class348_sub25.anInt6879 / 20
                 if (i_635_ > 0) {
-                    val class12 = this.aD4579!!.method3((class348_sub25.anInt6883), -6662)
+                    val class12 = this.aRenderConfig4579!!.method3((class348_sub25.anInt6883), -6662)
                     class348_sub25.method2995((class12!!.aByte198 * i_634_ * 50 / 1000), (class12.aByte211 * i_634_ * 50 / 1000))
                     class348_sub25.anInt6879 -= i_635_ * 20
                 }
@@ -2437,6 +2437,6 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     fun method3727(i: Int): Boolean {
-        return aBoolean7489 || this.aD4579!!.method3(i, -6662)!!.aBoolean199
+        return aBoolean7489 || this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean199
     }
 }

@@ -207,7 +207,7 @@ class Class64_Sub3 : Class64 {
         anInt5582++
         var i_33_ = (Class10.anIntArray179!![Class184.method1384(i_32_, i xor 0x54b313bc, i_29_)])
         if (i_31_.toInt() != -1) {
-            val class12 = aHa_Sub2_5598!!.aD4579!!.method3(i_31_.toInt() and 0xffff, -6662)
+            val class12 = aHa_Sub2_5598!!.aRenderConfig4579!!.method3(i_31_.toInt() and 0xffff, -6662)
             val i_34_ = 0xff and class12!!.aByte201.toInt()
             if (i_34_ != 0) {
                 val i_35_: Int
@@ -240,7 +240,7 @@ class Class64_Sub3 : Class64 {
         anInt5551++
         if (aShortArray5601 == null) return true
         for (i in aShortArray5601!!.indices) {
-            if (aShortArray5601!![i].toInt() != -1 && !aHa_Sub2_5598!!.aD4579!!.method4(-7953, aShortArray5601!![i].toInt())) return false
+            if (aShortArray5601!![i].toInt() != -1 && !aHa_Sub2_5598!!.aRenderConfig4579!!.method4(-7953, aShortArray5601!![i].toInt())) return false
         }
         return true
     }
@@ -523,30 +523,30 @@ class Class64_Sub3 : Class64 {
             Class318_Sub2.anIntArray6393!![0] = i_128_
             IOException_Sub1.anIntArray91!![0] = i_129_
             Class318_Sub2.anIntArray6393!![1] = i_131_
-            Class244.anIntArray4623!![0] = i_130_
+            TextureMetadataProvider.anIntArray4623!![0] = i_130_
             IOException_Sub1.anIntArray91!![1] = i_129_
             Class318_Sub2.anIntArray6393!![2] = i_128_
             if (i != 1566382404) method621()
-            Class244.anIntArray4623!![1] = i_130_
+            TextureMetadataProvider.anIntArray4623!![1] = i_130_
             IOException_Sub1.anIntArray91!![2] = i_132_
-            Class244.anIntArray4623!![2] = i_130_
+            TextureMetadataProvider.anIntArray4623!![2] = i_130_
             Class318_Sub2.anIntArray6393!![3] = i_131_
             IOException_Sub1.anIntArray91!![3] = i_132_
             Class318_Sub2.anIntArray6393!![4] = i_128_
-            Class244.anIntArray4623!![3] = i_130_
+            TextureMetadataProvider.anIntArray4623!![3] = i_130_
             IOException_Sub1.anIntArray91!![4] = i_129_
-            Class244.anIntArray4623!![4] = i_133_
+            TextureMetadataProvider.anIntArray4623!![4] = i_133_
             Class318_Sub2.anIntArray6393!![5] = i_131_
             IOException_Sub1.anIntArray91!![5] = i_129_
-            Class244.anIntArray4623!![5] = i_133_
+            TextureMetadataProvider.anIntArray4623!![5] = i_133_
             Class318_Sub2.anIntArray6393!![6] = i_128_
             IOException_Sub1.anIntArray91!![6] = i_132_
             Class318_Sub2.anIntArray6393!![7] = i_131_
-            Class244.anIntArray4623!![6] = i_133_
+            TextureMetadataProvider.anIntArray4623!![6] = i_133_
             IOException_Sub1.anIntArray91!![7] = i_132_
-            Class244.anIntArray4623!![7] = i_133_
+            TextureMetadataProvider.anIntArray4623!![7] = i_133_
             for (i_134_ in 0..7) {
-                val f_135_ = Class244.anIntArray4623!![i_134_].toFloat()
+                val f_135_ = TextureMetadataProvider.anIntArray4623!![i_134_].toFloat()
                 val f_136_ = IOException_Sub1.anIntArray91!![i_134_].toFloat()
                 val f_137_ = Class318_Sub2.anIntArray6393!![i_134_].toFloat()
                 var f_138_ = (Class286_Sub8.aFloat6304 * f_135_ + (f_137_ * Class318_Sub9_Sub1.aFloat8784 + Class320.aFloat3994 * f_136_) + f_114_)
@@ -1280,7 +1280,7 @@ class Class64_Sub3 : Class64 {
 
     public override fun aa(i: Short, i_284_: Short) {
         anInt5590++
-        val var_d = aHa_Sub2_5598!!.aD4579
+        val var_d = aHa_Sub2_5598!!.aRenderConfig4579
         for (i_285_ in 0..<anInt5632) {
             if (aShortArray5601!![i_285_] == i) aShortArray5601!![i_285_] = i_284_
         }
@@ -2972,14 +2972,14 @@ class Class64_Sub3 : Class64 {
                 if (method166(69.toByte(), i_697_, i)) aClass123_5563 = Class123(null, 5126, 3, 0)
                 if (Class146.method1193(i_697_, i, true)) aClass123_5610 = Class123(null, 5121, 4, 0)
                 if (Class156.method1238(i, i_697_, -31)) aClass270_5575 = Class270()
-                val var_d: d = var_ha_Sub2!!.aD4579!!
+                val var_renderConfig: RenderConfig = var_ha_Sub2!!.aRenderConfig4579!!
                 anIntArray5528 = IntArray(class124!!.anInt1821 + 1)
                 val `is` = IntArray(class124.anInt1817)
                 var i_698_ = 0
                 while ((i_698_ < class124.anInt1817)) {
                     if (class124.aByteArray1843 == null || class124.aByteArray1843!![i_698_].toInt() != 2) {
                         if (class124.aShortArray1822 != null && (class124.aShortArray1822!![i_698_].toInt() != -1)) {
-                            val class12 = var_d.method3(((class124.aShortArray1822!![i_698_]).toInt() and 0xffff), -6662)
+                            val class12 = var_renderConfig.method3(((class124.aShortArray1822!![i_698_]).toInt() and 0xffff), -6662)
                             if (((anInt5556 and 0x40) == 0 || !class12!!.aBoolean209) && class12!!.aBoolean204) {
                                 i_698_++
                                 continue
@@ -3012,7 +3012,7 @@ class Class64_Sub3 : Class64 {
                                 val class189 = Class73.method742(104, (class162.anInt2153))
                                 if (class189.aBoolean2531) bool_705_ = true
                                 if (class189.anInt2525 != -1) {
-                                    val class12_707_ = var_d.method3((class189.anInt2525), -6662)
+                                    val class12_707_ = var_renderConfig.method3((class189.anInt2525), -6662)
                                     if (class12_707_!!.anInt200 == 2) aBoolean5595 = true
                                 }
                             }
@@ -3029,7 +3029,7 @@ class Class64_Sub3 : Class64 {
                     if (class124.aShortArray1822 != null) {
                         i_708_ = class124.aShortArray1822!![i_700_].toInt()
                         if (i_708_ != -1) {
-                            class12 = var_d.method3(i_708_ and 0xffff, -6662)
+                            class12 = var_renderConfig.method3(i_708_ and 0xffff, -6662)
                             if ((anInt5556 and 0x40) != 0 && class12!!.aBoolean209) {
                                 i_708_ = -1
                                 class12 = null
@@ -3177,7 +3177,7 @@ class Class64_Sub3 : Class64 {
                     else i_738_ = 0
                     var i_739_: Short = (if (class124.aShortArray1822 == null) (-1).toShort() else class124.aShortArray1822!![i_735_])
                     if (i_739_.toInt() != -1 && (0x40 and anInt5556) != 0) {
-                        val class12 = var_d.method3(i_739_.toInt() and 0xffff, -6662)
+                        val class12 = var_renderConfig.method3(i_739_.toInt() and 0xffff, -6662)
                         if (class12!!.aBoolean209) i_739_ = (-1).toShort()
                     }
                     var f = 0.0f
@@ -3607,7 +3607,7 @@ class Class64_Sub3 : Class64 {
         @JvmStatic
         fun method689(i: Byte, i_377_: Int) {
             Class48.anInt859 = -1
-            Class244.anInt4609 = -1
+            TextureMetadataProvider.anInt4609 = -1
             if (i.toInt() != -59) anInt5584 = 77
             anInt5577++
             Class348_Sub36.anInt6992 = i_377_

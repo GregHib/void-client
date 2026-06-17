@@ -1403,7 +1403,7 @@ class Class64_Sub1 : Class64 {
 
     private fun method642(i: Int, i_305_: Short, i_306_: Int): Int {
         var i_307_ = Class10.anIntArray179!![method637(i, i_306_)]
-        val class12 = aHa_Sub1_5353.aD4579!!.method3(i_305_.toInt() and 0xffff, -6662)
+        val class12 = aHa_Sub1_5353.aRenderConfig4579!!.method3(i_305_.toInt() and 0xffff, -6662)
         val i_308_ = class12!!.aByte201.toInt() and 0xff
         if (i_308_ != 0) {
             val i_309_ = 131586 * i_306_
@@ -2331,7 +2331,7 @@ class Class64_Sub1 : Class64 {
     public override fun aa(i: Short, i_582_: Short) {
         if (aShortArray5388 != null) {
             if (!aBoolean5391 && i_582_ >= 0) {
-                val class12 = aHa_Sub1_5353.aD4579!!.method3(i_582_.toInt() and 0xffff, -6662)
+                val class12 = aHa_Sub1_5353.aRenderConfig4579!!.method3(i_582_.toInt() and 0xffff, -6662)
                 if (class12!!.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) aBoolean5391 = true
             }
             for (i_583_ in 0..<anInt5351) {
@@ -3340,7 +3340,7 @@ class Class64_Sub1 : Class64 {
         anInt5316 = i
         anInt5344 = i_785_
         anInt5349 = i_786_
-        val var_d = aHa_Sub1_5353.aD4579
+        val var_d = aHa_Sub1_5353.aRenderConfig4579
         anInt5340 = class124.anInt1836
         anInt5387 = class124.anInt1821
         anIntArray5356 = class124.anIntArray1841
@@ -3594,7 +3594,7 @@ class Class64_Sub1 : Class64 {
             for (i_870_ in 0..<anInt5351) {
                 val i_871_ = class124.aShortArray1822!![i_870_]
                 if (i_871_.toInt() != -1) {
-                    val class12 = aHa_Sub1_5353.aD4579!!.method3(i_871_.toInt(), -6662)
+                    val class12 = aHa_Sub1_5353.aRenderConfig4579!!.method3(i_871_.toInt(), -6662)
                     if ((i_787_ and 0x40) == 0 || !class12!!.aBoolean209) {
                         aShortArray5388!![i_870_] = i_871_
                         bool_869_ = true

@@ -8,7 +8,7 @@ class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: ha_Sub2
         anInt8692++
         if (i.toInt() != -121) method2256(33.toByte())
         if (aClass258_Sub2_8688 == null) {
-            val var_d = aHa_Sub2_8693.aD4579!!
+            val var_d = aHa_Sub2_8693.aRenderConfig4579!!
             Class308.anIntArray3883!![3] = anInt8690
             Class308.anIntArray3883!![4] = anInt8686
             Class308.anIntArray3883!![2] = anInt8691

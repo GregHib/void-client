@@ -65,7 +65,7 @@ import java.awt.Canvas
 import java.awt.Rectangle
 import java.util.*
 
-class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Class45?, i: Int) : ha_Sub3(canvas, l, var_d, class45, i, 1) {
+class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: RenderConfig?, class45: Class45?, i: Int) : ha_Sub3(canvas, l, var_renderConfig, class45, i, 1) {
     private var anOpenGL9856: OpenGL? = null
     private val aClass262_9869 = Class262()
     private var aClass262_9899: Class262? = Class262()
@@ -693,7 +693,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_d != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

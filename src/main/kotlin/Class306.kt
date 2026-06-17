@@ -11,13 +11,13 @@ object Class306 {
     var anInt3875: Int = 0
     var anInt3876: Int = 0
 
-    fun method2297(i: Int, i_0_: Int, var_d: d?, canvas: Canvas?, i_1_: Int): ha {
+    fun method2297(i: Int, i_0_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_1_: Int): ha {
         try {
             if (i != -6) method2297(23, -44, null, null, -57)
             anInt3875++
-            return oa(canvas, var_d, i_1_, i_0_)
+            return oa(canvas, var_renderConfig, i_1_, i_0_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (if (var_d != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_1_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }
     }
 

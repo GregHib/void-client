@@ -166,7 +166,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
 
         fun method2942(class46: Class46, i: Byte) {
             anInt6805++
-            if (class46.anInt765 == Class244.anInt4610) {
+            if (class46.anInt765 == TextureMetadataProvider.anInt4610) {
                 if (Class132.aPlayer_1907!!.aString10544 == null) {
                     class46.anInt779 = 0
                     class46.anInt753 = 0

@@ -1399,8 +1399,8 @@ object Class66 {
                 return
             }
             if (i == 5624) {
-                anIntArray1149!![anInt1173++] = (Class244.aLong4615 shr 32).toInt()
-                anIntArray1149!![anInt1173++] = (Class244.aLong4615 and 0xffffL).toInt()
+                anIntArray1149!![anInt1173++] = (TextureMetadataProvider.aLong4615 shr 32).toInt()
+                anIntArray1149!![anInt1173++] = (TextureMetadataProvider.aLong4615 and 0xffffL).toInt()
                 return
             }
             if (i == 5625) {

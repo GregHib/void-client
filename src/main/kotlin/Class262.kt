@@ -249,12 +249,12 @@ class Class262 {
             aClass324_3326 = null
         }
 
-        fun method2000(i: Int, i_23_: Int, canvas: Canvas?, var_d: d?): ha {
+        fun method2000(i: Int, i_23_: Int, canvas: Canvas?, var_renderConfig: RenderConfig?): ha {
             try {
                 anInt3324++
-                return ha_Sub2(canvas, var_d, i_23_)
+                return ha_Sub2(canvas, var_renderConfig, i_23_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uh.D(" + i + ',' + i_23_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (var_d != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("uh.D(" + i + ',' + i_23_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
             }
         }
     }

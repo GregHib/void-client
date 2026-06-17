@@ -131,7 +131,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             Class14_Sub4.aClass323_8644 = null
             Class48.anInt859 = -1
             if (i <= -44) {
-                Class244.anInt4609 = -1
+                TextureMetadataProvider.anInt4609 = -1
                 Class240.aClass323_4672 = null
                 if (Class75.aClass153_1238 != null) {
                     Class75.aClass153_1238!!.method1219(7851)

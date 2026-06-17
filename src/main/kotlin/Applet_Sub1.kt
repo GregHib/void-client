@@ -72,9 +72,9 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
     private fun method84(i: Int) {
         anInt8++
         val l = Class62.method599(i + -88)
-        val l_1_ = Class328_Sub2_Sub1.aLongArray8800!![Class244.anInt4613]
-        Class328_Sub2_Sub1.aLongArray8800!![Class244.anInt4613] = l
-        Class244.anInt4613 = 0x1f and 1 + Class244.anInt4613
+        val l_1_ = Class328_Sub2_Sub1.aLongArray8800!![TextureMetadataProvider.anInt4613]
+        Class328_Sub2_Sub1.aLongArray8800!![TextureMetadataProvider.anInt4613] = l
+        TextureMetadataProvider.anInt4613 = 0x1f and 1 + TextureMetadataProvider.anInt4613
         if (l_1_ != 0L && l > l_1_) {
             /* empty */
         }

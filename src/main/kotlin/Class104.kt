@@ -333,7 +333,7 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
         }
 
         @JvmStatic
-        fun method958(bool: Boolean, i: Int, var_d: d?, i_61_: Int, canvas: Canvas?, class45: Class45?): ha? {
+        fun method958(bool: Boolean, i: Int, var_renderConfig: RenderConfig?, i_61_: Int, canvas: Canvas?, class45: Class45?): ha? {
             try {
                 if (bool != true) aClass221_1620 = null
                 anInt1610++
@@ -344,9 +344,9 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
                     i_63_ = dimension.height
                     i_62_ = dimension.width
                 }
-                return method3692(i_61_, i_63_, i_62_, class45, 0, var_d, canvas, i)
+                return method3692(i_61_, i_63_, i_62_, class45, 0, var_renderConfig, canvas, i)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (if (var_d != null) "{...}" else "null") + ',' + i_61_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_61_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
             }
         }
 

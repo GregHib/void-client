@@ -117,7 +117,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class45.anInt657 = 0
             Applet_Sub1.anInt12 = 0
             Class318_Sub1_Sub5_Sub1.anInt10123 = 0
-            Class244.anInt4618 = 0
+            TextureMetadataProvider.anInt4618 = 0
             Class348_Sub49.anInt7166 = 0
             Class281.anInt3646 = 0
             Npc.anInt10504 = 0
@@ -486,7 +486,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub51.anInt7242 = 0
             Class238_Sub1.anInt5835 = 0
             Class225.anInt2903 = 0
-            Class244.anInt4616 = 0
+            TextureMetadataProvider.anInt4616 = 0
             Class286_Sub5.anInt6250 = 0
             ha_Sub2.anInt7527 = 0
             Class206.anInt4878 = 0
@@ -717,7 +717,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class70.anInt1205 = 0
             Class14_Sub1.anInt8613 = 0
             Class325.anInt4074 = 0
-            Class244.anInt4614 = 0
+            TextureMetadataProvider.anInt4614 = 0
             Class311.anInt3897 = 0
             Class101_Sub1.anInt5670 = 0
             Class239_Sub10.anInt5941 = 0
@@ -1427,7 +1427,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub13.anInt5981 = 0
             Class377.anInt9817 = 0
             Class248.anInt3200 = 0
-            Class244.anInt4617 = 0
+            TextureMetadataProvider.anInt4617 = 0
             Class286_Sub9.anInt6312 = 0
             Class146.anInt2018 = 0
             ha_Sub2.anInt7538 = 0
@@ -3204,7 +3204,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             ha_Sub3.anInt7926 = 0
             ha_Sub3.anInt7989 = 0
             Class240.anInt4678 = 0
-            Class244.anInt4620 = 0
+            TextureMetadataProvider.anInt4620 = 0
             Class239_Sub10.anInt5935 = 0
             Class262.anInt3333 = 0
             Class220.anInt2878 = 0
@@ -3268,7 +3268,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub1_Sub1.anInt9956 = 0
             Class239_Sub26.anInt6119 = 0
             ha_Sub3.anInt7949 = 0
-            Class244.anInt4612 = 0
+            TextureMetadataProvider.anInt4612 = 0
             Class361.anInt4446 = 0
             Class85.anInt1464 = 0
             Class101_Sub1.anInt5657 = 0
@@ -4080,7 +4080,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub3_Sub3.anInt10254 = 0
             Class46.anInt684 = 0
             Class318_Sub1_Sub3_Sub3.anInt10281 = 0
-            Class244.anInt4621 = 0
+            TextureMetadataProvider.anInt4621 = 0
             Class298.anInt3808 = 0
             Class153.anInt2079 = 0
             Class14_Sub2.anInt8622 = 0

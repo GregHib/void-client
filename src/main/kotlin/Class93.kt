@@ -23,7 +23,7 @@ object Class93 {
         anApplet1530 = null
     }
 
-    fun method862(canvas: Canvas?, var_d: d?, class45: Class45?, i: Int, i_1_: Int): ha? {
+    fun method862(canvas: Canvas?, var_renderConfig: RenderConfig?, class45: Class45?, i: Int, i_1_: Int): ha? {
         try {
             anInt1532++
             if (!method215(27165)) throw RuntimeException("")
@@ -32,11 +32,11 @@ object Class93 {
             val l = opengl.init(canvas, 8, 8, 8, 24, 0, i_1_)
             if (l == 0L) throw RuntimeException("")
             if (i != 25542) return null
-            val class377 = Class377(opengl, canvas, l, var_d, class45, i_1_)
+            val class377 = Class377(opengl, canvas, l, var_renderConfig, class45, i_1_)
             class377.method3930(26.toByte())
             return class377
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lt.D(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_d != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("lt.D(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
         }
     }
 

@@ -105,7 +105,7 @@ class Class348_Sub3 internal constructor(private val aS_Sub3_6566: s_Sub3, var a
     fun method2741(i: Int, f: Float, i_24_: Int, i_25_: Int, i_26_: Int) {
         var i_26_ = i_26_
         if (this.anInt6567 != -1) {
-            val class12 = aHa_Sub3_6590!!.aD4579!!.method3(this.anInt6567, -6662)
+            val class12 = aHa_Sub3_6590!!.aRenderConfig4579!!.method3(this.anInt6567, -6662)
             val i_27_ = class12!!.aByte201.toInt() and 0xff
             if (i_27_ != 0 && class12.aByte213.toInt() != 4) {
                 val i_28_: Int

@@ -12,10 +12,10 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
     private val anIntArray9524: IntArray
     private val aClass348_Sub40_9527: Class348_Sub40
     private val aClass348_Sub40_9528: Class348_Sub40
-    fun method3183(var_d: d?, i: Int, i_0_: Int, bool: Boolean, d: Double, class45: Class45?, i_1_: Byte): IntArray {
+    fun method3183(var_renderConfig: RenderConfig?, i: Int, i_0_: Int, bool: Boolean, d: Double, class45: Class45?, i_1_: Byte): IntArray {
         try {
             anInt9522++
-            Class286_Sub5.aD6247 = var_d
+            Class286_Sub5.aRenderConfig6247 = var_renderConfig
             aClass45_4286 = class45
             var i_2_ = 0
             while (aClass348_Sub40Array9520.size > i_2_) {
@@ -79,11 +79,11 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
             if (i_1_.toInt() != 11) anInt9532 = 97
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.D(" + (if (var_d != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + d + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_1_ + ')'))
+            throw method2929(runtimeexception, ("lr.D(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + d + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }
     }
 
-    fun method3184(var_d: d?, class45: Class45?, i: Int): Boolean {
+    fun method3184(var_renderConfig: RenderConfig?, class45: Class45?, i: Int): Boolean {
         try {
             anInt9529++
             if (Class101_Sub2.anInt5713 < 0) {
@@ -102,18 +102,18 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
             var i_19_ = 0
             val i_20_ = -109 / ((10 - i) / 60)
             while ( /**/i_19_ < anIntArray9523.size) {
-                if (!var_d!!.method4(-7953, anIntArray9523[i_19_])) return false
+                if (!var_renderConfig!!.method4(-7953, anIntArray9523[i_19_])) return false
                 i_19_++
             }
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.B(" + (if (var_d != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ')'))
+            throw method2929(runtimeexception, ("lr.B(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
-    fun method3185(i: Int, var_d: d?, i_21_: Int, bool: Boolean, d: Double, bool_22_: Boolean, class45: Class45?, i_23_: Int): IntArray {
+    fun method3185(i: Int, var_renderConfig: RenderConfig?, i_21_: Int, bool: Boolean, d: Double, bool_22_: Boolean, class45: Class45?, i_23_: Int): IntArray {
         try {
-            Class286_Sub5.aD6247 = var_d
+            Class286_Sub5.aRenderConfig6247 = var_renderConfig
             aClass45_4286 = class45
             anInt9526++
             var i_24_ = 0
@@ -183,15 +183,15 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
             }
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.C(" + i + ',' + (if (var_d != null) "{...}" else "null") + ',' + i_21_ + ',' + bool + ',' + d + ',' + bool_22_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_23_ + ')'))
+            throw method2929(runtimeexception, ("lr.C(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_21_ + ',' + bool + ',' + d + ',' + bool_22_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_23_ + ')'))
         }
     }
 
-    fun method3186(i: Int, var_d: d?, bool: Boolean, i_41_: Int, class45: Class45?, i_42_: Int): FloatArray {
+    fun method3186(i: Int, var_renderConfig: RenderConfig?, bool: Boolean, i_41_: Int, class45: Class45?, i_42_: Int): FloatArray {
         try {
             anInt9525++
             aClass45_4286 = class45
-            Class286_Sub5.aD6247 = var_d
+            Class286_Sub5.aRenderConfig6247 = var_renderConfig
             if (i_42_ >= -1) method3183(null, -60, 98, false, -0.11623531533038078, null, (-72).toByte())
             var i_43_ = 0
             while (aClass348_Sub40Array9520.size > i_43_) {
@@ -245,7 +245,7 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
             }
             return fs
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.A(" + i + ',' + (if (var_d != null) "{...}" else "null") + ',' + bool + ',' + i_41_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_42_ + ')'))
+            throw method2929(runtimeexception, ("lr.A(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + bool + ',' + i_41_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_42_ + ')'))
         }
     }
 

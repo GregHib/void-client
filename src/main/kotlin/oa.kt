@@ -2,7 +2,7 @@ import java.awt.Canvas
 import java.awt.Rectangle
 import kotlin.math.max
 
-class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface19 {
+class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : ha(var_renderConfig), Interface19 {
     private var aYa5121: ya? = null
     var nativeid: Long = 0L
     private val aClass262_5123: Class262
@@ -17,7 +17,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
     private var aBoolean5142: Boolean
     private var anAArray5143: Array<a?>? = null
 
-    private external fun MA(var_d: d?, i: Int, i_0_: Int)
+    private external fun MA(var_renderConfig: RenderConfig?, i: Int, i_0_: Int)
 
     override fun method3628(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
         U(i, i_1_, i_2_, i_4_, i_5_)
@@ -139,13 +139,13 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
     }
 
     private fun WA(i: Short): Boolean { //
-        synchronized(this.aD4579!!) {
-            if (!this.aD4579!!.method4(-7953, i.toInt())) return false
-            val class12 = this.aD4579!!.method3(i.toInt(), -6662)
+        synchronized(this.aRenderConfig4579!!) {
+            if (!this.aRenderConfig4579!!.method4(-7953, i.toInt())) return false
+            val class12 = this.aRenderConfig4579!!.method3(i.toInt(), -6662)
             if (class12 == null) return false
             val `is`: IntArray?
-            if (class12.anInt200 != 2) `is` = this.aD4579!!.method5(true, i.toInt(), 0.7f, 128, 128, -128)
-            else `is` = this.aD4579!!.method6(-21540, 128, 0.7f, i.toInt(), true, 128)
+            if (class12.anInt200 != 2) `is` = this.aRenderConfig4579!!.method5(true, i.toInt(), 0.7f, 128, 128, -128)
+            else `is` = this.aRenderConfig4579!!.method6(-21540, 128, 0.7f, i.toInt(), true, 128)
             CA(i, `is`, class12.aShort208, class12.anInt200, class12.aByte213, class12.aByte202, class12.anInt206, class12.aBoolean199, class12.aByte201, class12.aByte216, class12.aByte198, class12.aByte211, class12.aBoolean209, class12.aBoolean204, class12.aBoolean212, class12.aBoolean217, class12.aBoolean215, class12.aByte205, class12.aBoolean218, class12.aBoolean207, class12.anInt203)
         }
         return true
@@ -276,7 +276,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     private fun c(i: Short): Boolean { //
         synchronized(this) {
-            val class12 = this.aD4579!!.method3(i.toInt(), -6662)
+            val class12 = this.aRenderConfig4579!!.method3(i.toInt(), -6662)
             if (class12 == null) return false
             AA(i, class12.aShort208, class12.anInt200, class12.aByte213, class12.aByte202, class12.anInt206, class12.aBoolean199, class12.aByte201, class12.aByte216, class12.aByte198, class12.aByte211, class12.aBoolean209, class12.aBoolean204, class12.aBoolean212, class12.aBoolean217, class12.aBoolean215, class12.aByte205, class12.aBoolean218, class12.aBoolean207, class12.anInt203)
         }
@@ -576,7 +576,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
             try {
                 if (!Class348_Sub40_Sub19.method3098(-30282, "sw3d")) throw RuntimeException("")
                 Class257.method1949((-128).toByte())
-                MA(aD4579, 0, 0)
+                MA(aRenderConfig4579, 0, 0)
                 Class59_Sub2_Sub1.method566(false, true, 23.toByte())
                 aBoolean5142 = true
                 aClass101_5131 = ja()

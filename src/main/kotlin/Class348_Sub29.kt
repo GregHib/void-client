@@ -19,16 +19,16 @@ class Class348_Sub29 : Class348 {
             if (i != -4587) method3003(-101)
         }
 
-        fun method3004(class45: Class45?, bool: Boolean, var_d: d?) {
+        fun method3004(class45: Class45?, bool: Boolean, var_renderConfig: RenderConfig?) {
             do {
                 try {
                     Class260.aClass45_3309 = class45
                     anInt6910++
-                    Class101_Sub1.aD5684 = var_d
+                    Class101_Sub1.aRenderConfig5684 = var_renderConfig
                     if (bool == false) break
                     method3004(null, false, null)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.Companion.method2929(runtimeexception, ("oia.B(" + (if (class45 != null) "{...}" else "null") + ',' + bool + ',' + (if (var_d != null) "{...}" else "null") + ')'))
+                    throw Class348_Sub17.Companion.method2929(runtimeexception, ("oia.B(" + (if (class45 != null) "{...}" else "null") + ',' + bool + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

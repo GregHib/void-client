@@ -301,7 +301,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
             }
         }
 
-        fun method2512(var_d: d?, var_ha: ha?, i: Int) {
+        fun method2512(var_renderConfig: RenderConfig?, var_ha: ha?, i: Int) {
             try {
                 anInt6440++
                 if (Class75.aClass348_Sub42_Sub14_1243 != null) {
@@ -382,7 +382,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                         Class75.anInt1253 += -2 + (5.0 * Math.random()).toInt()
                         if (Class75.anInt1253 < -16) Class75.anInt1253 = -16
                         if (Class75.anInt1253 > 16) Class75.anInt1253 = 16
-                        Class75.method764(var_d!!, (Class75.anInt1250 shr 2 shl 10), Class75.anInt1253 shr 1)
+                        Class75.method764(var_renderConfig!!, (Class75.anInt1250 shr 2 shl 10), Class75.anInt1253 shr 1)
                         Class75.aClass153_1238!!.method1220(73.toByte(), 256, 1024)
                         Class75.aClass141_1242!!.method1178(256, 1, 256)
                         Class75.aClass263_1245!!.method2014(4096, true)
@@ -449,7 +449,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rba.A(" + (if (var_d != null) "{...}" else "null") + ',' + (if (var_ha!! != null) "{...}" else "null") + ',' + i + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("rba.A(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (var_ha!! != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

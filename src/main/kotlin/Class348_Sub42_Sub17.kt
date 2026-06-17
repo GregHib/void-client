@@ -99,7 +99,7 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
                 anInt9674++
                 if (class277!!.anInt3569 == -1) {
                     if (class277.anInt3575 != -1) {
-                        val class12 = var_ha!!.aD4579!!.method3(class277.anInt3575, -6662)
+                        val class12 = var_ha!!.aRenderConfig4579!!.method3(class277.anInt3575, -6662)
                         if (!class12!!.aBoolean209) return class12.aShort208.toInt()
                     }
                 } else return class277.anInt3569

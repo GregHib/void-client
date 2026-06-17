@@ -80,7 +80,7 @@ import java.util.*
 import kotlin.math.max
 import kotlin.math.sqrt
 
-public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
+public class ha_Sub2(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int) : ha(var_renderConfig) {
     private var anInt7523 = 0
     private val aLong7553: Long
     private var aCanvas7575: Canvas? = null
@@ -650,7 +650,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             var i_51_ = if (!this.aBoolean7846) 0.toByte() else 3.toByte()
             if (i >= 0) {
                 class258_sub3 = aClass354_7723.method3467(i, 256)
-                val class12 = this.aD4579!!.method3(i, -6662)
+                val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                 if (class12!!.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) {
                     val i_52_ = if (class12.aBoolean199) 64 else 128
                     val i_53_ = i_52_ * 50
@@ -3076,7 +3076,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 }
                 Class59_Sub2_Sub1.method566(false, true, (-128).toByte())
                 aBoolean7734 = true
-                aClass354_7723 = Class354(this, this.aD4579)
+                aClass354_7723 = Class354(this, this.aRenderConfig4579)
                 method3786(false)
                 this.aClass188_7736 = Class188(this)
                 aClass18_7720 = Class18(this)
@@ -3097,7 +3097,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_d != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

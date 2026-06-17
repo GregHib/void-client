@@ -1,7 +1,7 @@
 /* Class244 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class244 internal constructor(class45: Class45?, class45_12_: Class45?, class45_13_: Class45?) : d {
+class TextureMetadataProvider internal constructor(class45: Class45?, class45_12_: Class45?, class45_13_: Class45?) : RenderConfig {
     private val aClass12Array4611: Array<Class12?>
     private val aClass45_4619: Class45?
     private val aClass308_4622 = Class308(256)

@@ -5,7 +5,7 @@ import jagdx.ue.a
 import java.awt.Canvas
 import java.awt.Rectangle
 
-class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, class53: Class53?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_d: d?, class45: Class45?, i_39_: Int) : ha_Sub3(canvas, class53, var_d, class45, i_39_, 0) {
+class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, class53: Class53?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_renderConfig: RenderConfig?, class45: Class45?, i_39_: Int) : ha_Sub3(canvas, class53, var_renderConfig, class45, i_39_, 0) {
     private val aBooleanArray9784: BooleanArray
     private var anInt9785 = 0
     private var aBooleanArray9786: BooleanArray?
@@ -791,7 +791,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         }
 
         @JvmStatic
-        fun createToolkit(canvas: Canvas?, var_d: d?, class45: Class45?, integer: Int): ha {
+        fun createToolkit(canvas: Canvas?, var_renderConfig: RenderConfig?, class45: Class45?, integer: Int): ha {
             var class378: Class378? = null
             val class378_19_: Class378?
             try {
@@ -827,7 +827,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
                     idirect3ddevice = idirect3d.a(i, i_20_, canvas, i_21_ or 0x20, d3dpresent_parameters)
                 }
                 val class53 = Class53(idirect3ddevice.b(0), idirect3ddevice.c())
-                class378 = Class378(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, class53, d3dpresent_parameters, d3dcaps, var_d, class45, integer)
+                class378 = Class378(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, class53, d3dpresent_parameters, d3dcaps, var_renderConfig, class45, integer)
                 class378.method3930(26.toByte())
                 class378_19_ = class378
             } catch (runtimeexception: RuntimeException) {

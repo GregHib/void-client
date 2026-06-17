@@ -265,11 +265,11 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             return frame
         }
 
-        fun method2464(i: Byte, i_11_: Int, i_12_: Int, i_13_: Int, var_ha: ha?, i_14_: Int, var_d: d?) {
+        fun method2464(i: Byte, i_11_: Int, i_12_: Int, i_13_: Int, var_ha: ha?, i_14_: Int, var_renderConfig: RenderConfig?) {
             do {
                 try {
                     anInt10357++
-                    if (Class348.anInt4290 < 100) Class318_Sub7.Companion.method2512(var_d, var_ha, i.toInt() xor 0x74)
+                    if (Class348.anInt4290 < 100) Class318_Sub7.Companion.method2512(var_renderConfig, var_ha, i.toInt() xor 0x74)
                     var_ha!!.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_)
                     if (Class348.anInt4290 < 100) {
                         val i_15_ = 20
@@ -313,7 +313,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                         i_23_ -= 15
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_14_ + ',' + (if (var_d != null) "{...}" else "null") + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_14_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

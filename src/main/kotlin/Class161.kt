@@ -81,7 +81,7 @@ class Class161 {
                     Class318_Sub1_Sub1.aFloat8725 = Class160.Companion.aFloat2137
                     Canvas_Sub1.anInt70 = Class187.anInt2500
                     Class239_Sub24.aClass299_6098 = Class158.aClass299_4938
-                    Class64.aFloat1136 = Class244.aFloat4626
+                    Class64.aFloat1136 = TextureMetadataProvider.aFloat4626
                     Class245.aFloat3172 = Class269.aFloat3462
                     Class45.aFloat670 = Class348_Sub3.aFloat6586
                     Class258_Sub4.aFloat8560 = Class239_Sub10.aFloat5945

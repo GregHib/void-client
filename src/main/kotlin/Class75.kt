@@ -514,11 +514,11 @@ open class Class75 {
             return method762(var_ha, i_103_, i_104_, 0, 0)
         }
 
-        private fun method759(var_d: d, i: Int, i_105_: Int, i_106_: Int): Int {
+        private fun method759(var_renderConfig: RenderConfig, i: Int, i_105_: Int, i_106_: Int): Int {
             val class277: Class277 = aClass268_1239!!.method2034(i, false)
             if (class277 == null) return 0
             var i_107_ = class277.anInt3575
-            if (i_107_ >= 0 && var_d.method3(i_107_, -6662)!!.aBoolean209) i_107_ = -1
+            if (i_107_ >= 0 && var_renderConfig.method3(i_107_, -6662)!!.aBoolean209) i_107_ = -1
             val i_108_: Int
             if (class277.anInt3569 >= 0) {
                 val i_109_ = class277.anInt3569
@@ -527,7 +527,7 @@ open class Class75 {
                 else if (i_110_ > 127) i_110_ = 127
                 val i_111_ = (i_109_ + i_105_ and 0xfc00) + (i_109_ and 0x380) + i_110_
                 i_108_ = 0xffffff.inv() or (Class126.anIntArray4983!![method303(method353(96, -119, i_111_), 30).toInt() and 0xffff])
-            } else if (i_107_ >= 0) i_108_ = (0xffffff.inv() or (Class126.anIntArray4983!![(method303(method353(96, -85, (var_d.method3(i_107_, -6662)!!.aShort208).toInt()), 30)).toInt() and 0xffff]))
+            } else if (i_107_ >= 0) i_108_ = (0xffffff.inv() or (Class126.anIntArray4983!![(method303(method353(96, -85, (var_renderConfig.method3(i_107_, -6662)!!.aShort208).toInt()), 30)).toInt() and 0xffff]))
             else if (class277.anInt3563 == -1) i_108_ = 0
             else {
                 val i_112_ = class277.anInt3563
@@ -608,8 +608,8 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method764(var_d: d, i: Int, i_129_: Int) {
-            for (i_130_ in 0..<aClass268_1239!!.anInt3429) anIntArray1260!![i_130_ + 1] = method759(var_d, i_130_, i, i_129_)
+        fun method764(var_renderConfig: RenderConfig, i: Int, i_129_: Int) {
+            for (i_130_ in 0..<aClass268_1239!!.anInt3429) anIntArray1260!![i_130_ + 1] = method759(var_renderConfig, i_130_, i, i_129_)
         }
 
         private fun method765(var_ha: ha, i: Int, i_131_: Int, i_132_: Int, i_133_: Int) {

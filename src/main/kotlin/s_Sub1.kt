@@ -93,7 +93,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                             }
                         }
                         var i_25_ = -16777216
-                        if (is_6_[i_14_] != -1 && method3997(aHa_Sub1_8217.aD4579!!.method3(is_6_[i_14_], -6662)!!.aByte213.toInt())) i_25_ = -1694498816
+                        if (is_6_[i_14_] != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(is_6_[i_14_], -6662)!!.aByte213.toInt())) i_25_ = -1694498816
                         class198.anIntArray2623!![i_14_] = (i_25_ or Class298.method2250(method3991((is_4_[i_14_] shr 8), i_18_), 118, i_23_, i_8_))
                         if (is_5_ != null) class198.aByteArray2617!![i_14_] = i_18_.toByte()
                     }
@@ -173,7 +173,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         if (i_36_ == 0) class266.aByte3386 = (class266.aByte3386.toInt() or 0x2).toByte()
                     } else if (i_36_ == 0) return
                     if ((this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i + 1]!![i_0_]) && (this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i + 1]!![i_0_ + 1]) && (this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i]!![i_0_ + 1])) class266.aByte3386 = (class266.aByte3386.toInt() or 0x1).toByte()
-                    if (i_37_ != -1 && (class266.aByte3386.toInt() and 0x2) == 0 && !(aHa_Sub1_8217.aD4579!!.method3(i_37_, -6662)!!.aBoolean209)) {
+                    if (i_37_ != -1 && (class266.aByte3386.toInt() and 0x2) == 0 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_37_, -6662)!!.aBoolean209)) {
                         var i_38_: Int
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_29_] / i_9_
@@ -290,7 +290,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                     }
                     var bool_51_ = false
                     for (i_52_ in 0..<class145.aShort2010) {
-                        if (is_6_[i_52_ * 3] != -1 && !(aHa_Sub1_8217.aD4579!!.method3(is_6_[i_52_ * 3], -6662)!!.aBoolean209)) bool_51_ = true
+                        if (is_6_[i_52_ * 3] != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(is_6_[i_52_ * 3], -6662)!!.aBoolean209)) bool_51_ = true
                     }
                     if (is_5_ != null) class145.anIntArray2011 = IntArray(class145.aShort2010.toInt())
                     if (bool_51_) {
@@ -306,13 +306,13 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                             var bool_57_ = false
                             var bool_58_ = true
                             var i_59_ = is_6_[i_54_]
-                            if (i_59_ == -1 || (aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) bool_58_ = false
+                            if (i_59_ == -1 || (aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) bool_58_ = false
                             else bool_57_ = true
                             i_59_ = is_6_[i_55_]
-                            if (i_59_ == -1 || (aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) bool_58_ = false
+                            if (i_59_ == -1 || (aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) bool_58_ = false
                             else bool_57_ = true
                             i_59_ = is_6_[i_56_]
-                            if (i_59_ == -1 || (aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) bool_58_ = false
+                            if (i_59_ == -1 || (aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) bool_58_ = false
                             else bool_57_ = true
                             if (bool_58_) {
                                 class145.aShortArray2008!![i_53_] = i_59_.toShort()
@@ -320,11 +320,11 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                             } else {
                                 if (bool_57_) {
                                     i_59_ = is_6_[i_54_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_54_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_54_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_55_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_55_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_55_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_56_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_56_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_56_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                 }
                                 class145.aShortArray2008!![i_53_] = (-1).toShort()
                             }
@@ -387,7 +387,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                 if (is_67_[i_89_] >= 0 || is_68_ != null && is_68_[i_89_] >= 0) i_88_++
                 val i_90_ = is_69_[i_89_]
                 if (i_90_ != -1) {
-                    val class12 = aHa_Sub1_8217.aD4579!!.method3(i_90_, -6662)
+                    val class12 = aHa_Sub1_8217.aRenderConfig4579!!.method3(i_90_, -6662)
                     if (!class12!!.aBoolean209) {
                         bool_87_ = true
                         if (method3997(class12.aByte213.toInt()) || class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) class236.aByte3100 = (class236.aByte3100.toInt() or 0x4).toByte()
@@ -415,7 +415,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                     class236.aShortArray3090!![class236.aShort3099.toInt()] = is_65_[i_91_].toShort()
                     class236.aShortArray3101!![class236.aShort3099.toInt()] = is_66_[i_91_].toShort()
                     if (bool_87_) {
-                        if (is_69_[i_91_] != -1 && !(aHa_Sub1_8217.aD4579!!.method3(is_69_[i_91_], -6662)!!.aBoolean209)) {
+                        if (is_69_[i_91_] != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(is_69_[i_91_], -6662)!!.aBoolean209)) {
                             class236.aShortArray3095!![class236.aShort3099.toInt()] = is_69_[i_91_].toShort()
                             class236.aShortArray3098!![class236.aShort3099.toInt()] = is_70_[i_91_].toShort()
                         } else class236.aShortArray3095!![class236.aShort3099.toInt()] = (-1).toShort()
@@ -434,7 +434,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
             }
             if ((this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_ + 1]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i]!![i_60_ + 1])) class102.aByte1606 = (class102.aByte1606.toInt() or 0x1).toByte()
             var class12: Class12? = null
-            if (i_93_ != -1) class12 = aHa_Sub1_8217.aD4579!!.method3(i_93_, -6662)
+            if (i_93_ != -1) class12 = aHa_Sub1_8217.aRenderConfig4579!!.method3(i_93_, -6662)
             if (class12 != null && (class102.aByte1606.toInt() and 0x2) == 0 && !class12.aBoolean209) {
                 class102.aShort1601 = (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]).toShort()
                 class102.aShort1603 = (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]).toShort()
@@ -605,7 +605,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                 if (i_215_ > 0) {
                                     if (i_216_.toInt() != -1) {
                                         var i_217_ = -16777216
-                                        if (i_216_.toInt() != -1 && method3997(aHa_Sub1_8217.aD4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt())) i_217_ = -1694498816
+                                        if (i_216_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt())) i_217_ = -1694498816
                                         class109.method1024(
                                             i_212_.toFloat(),
                                             i_213_.toFloat(),
@@ -632,7 +632,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                             i_216_.toInt()
                                         )
                                     } else if (((class145.anIntArray2001!![i_206_]) and 0xffffff) != 0) {
-                                        if (i_216_.toInt() != -1 && method3997(aHa_Sub1_8217.aD4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt())) class109.anInt1674 = -1694498816
+                                        if (i_216_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt())) class109.anInt1674 = -1694498816
                                         class109.method1027(
                                             i_212_.toFloat(),
                                             i_213_.toFloat(),
@@ -651,7 +651,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     }
                                 } else if (i_216_.toInt() != -1) {
                                     var i_218_ = -16777216
-                                    if (i_216_.toInt() != -1 && (method3997(aHa_Sub1_8217.aD4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt()))) i_218_ = -1694498816
+                                    if (i_216_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt()))) i_218_ = -1694498816
                                     class109.method1024(
                                         i_212_.toFloat(),
                                         i_213_.toFloat(),
@@ -678,7 +678,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                         i_216_.toInt()
                                     )
                                 } else if (((class145.anIntArray2001!![i_206_]) and 0xffffff) != 0) {
-                                    if (i_216_.toInt() != -1 && (method3997(aHa_Sub1_8217.aD4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt()))) class109.anInt1674 = -1694498816
+                                    if (i_216_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt()))) class109.anInt1674 = -1694498816
                                     class109.method1027(i_212_.toFloat(), i_213_.toFloat(), i_214_.toFloat(), i_209_.toFloat(), i_210_.toFloat(), i_211_.toFloat(), is_107_[i_206_].toFloat(), is_107_[i_207_].toFloat(), is_107_[i_208_].toFloat(), (class145.anIntArray2001!![i_206_]), (class145.anIntArray2001!![i_207_]), (class145.anIntArray2001!![i_208_]))
                                     class109.anInt1674 = 0
                                 }
@@ -701,11 +701,11 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                             class109.aBoolean1671 = (i_223_ < 0 || i_224_ < 0 || i_225_ < 0 || (i_223_ > class109.anInt1679) || (i_224_ > class109.anInt1679) || (i_225_ > class109.anInt1679))
                             val i_230_ = (class145.aShortArray2008!![i_219_])
                             if (i_229_ < 765) {
-                                if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aD4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) class109.anInt1674 = -1694498816
+                                if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) class109.anInt1674 = -1694498816
                                 if (i_229_ > 0) {
                                     if (i_230_.toInt() != -1) {
                                         var i_231_ = -16777216
-                                        if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aD4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) i_231_ = -1694498816
+                                        if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) i_231_ = -1694498816
                                         class109.method1024(
                                             i_226_.toFloat(),
                                             i_227_.toFloat(),
@@ -732,7 +732,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                             i_230_.toInt()
                                         )
                                     } else if (((class145.anIntArray2001!![i_220_]) and 0xffffff) != 0) {
-                                        if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aD4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) class109.anInt1674 = -1694498816
+                                        if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) class109.anInt1674 = -1694498816
                                         class109.method1027(
                                             i_226_.toFloat(),
                                             i_227_.toFloat(),
@@ -751,7 +751,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     }
                                 } else if (i_230_.toInt() != -1) {
                                     var i_232_ = -16777216
-                                    if (i_230_.toInt() != -1 && (method3997(aHa_Sub1_8217.aD4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt()))) i_232_ = -1694498816
+                                    if (i_230_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt()))) i_232_ = -1694498816
                                     class109.method1024(
                                         i_226_.toFloat(),
                                         i_227_.toFloat(),
@@ -778,7 +778,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                         i_230_.toInt()
                                     )
                                 } else if (((class145.anIntArray2001!![i_220_]) and 0xffffff) != 0) {
-                                    if (i_230_.toInt() != -1 && (method3997(aHa_Sub1_8217.aD4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt()))) class109.anInt1674 = -1694498816
+                                    if (i_230_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt()))) class109.anInt1674 = -1694498816
                                     class109.method1027(i_226_.toFloat(), i_227_.toFloat(), i_228_.toFloat(), i_223_.toFloat(), i_224_.toFloat(), i_225_.toFloat(), is_107_[i_220_].toFloat(), is_107_[i_221_].toFloat(), is_107_[i_222_].toFloat(), (class145.anIntArray2001!![i_220_]), (class145.anIntArray2001!![i_221_]), (class145.anIntArray2001!![i_222_]))
                                     class109.anInt1674 = 0
                                 }
@@ -998,7 +998,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                     i_128_ = (class109.anInt1668 + (f_149_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                 }
             }
-            val bool_176_ = (class266.aShort3379.toInt() != -1 && method3997(aHa_Sub1_8217.aD4579!!.method3(class266.aShort3379.toInt(), -6662)!!.aByte213.toInt()))
+            val bool_176_ = (class266.aShort3379.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(class266.aShort3379.toInt(), -6662)!!.aByte213.toInt()))
             if (anInt8228 == -1) {
                 var i_177_ = i_115_ + i_116_ + i_117_
                 if (((i_125_ - i_127_) * (i_124_ - i_128_) - (i_126_ - i_128_) * (i_123_ - i_127_)) > 0) {

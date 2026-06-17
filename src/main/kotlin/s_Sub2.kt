@@ -598,7 +598,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         try {
             anInt8261++
             if (is_177_ != null && anIntArrayArrayArray8258 == null) anIntArrayArrayArray8258 = Array<Array<IntArray?>?>(this.anInt4587) { arrayOfNulls<IntArray>(this.anInt4590) }
-            val var_d = this.aHa_Sub2_8272!!.aD4579!!
+            val var_d = this.aHa_Sub2_8272!!.aRenderConfig4579!!
             if (is_179_ != null && anIntArrayArrayArray8252 == null) anIntArrayArrayArray8252 = Array<Array<IntArray?>?>(this.anInt4587) { arrayOfNulls<IntArray>(this.anInt4590) }
             this.anIntArrayArrayArray8268!![i]!![i_176_] = `is`!!
             this.anIntArrayArrayArray8234!![i]!![i_176_] = is_178_!!

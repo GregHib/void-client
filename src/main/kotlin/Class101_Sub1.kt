@@ -293,7 +293,7 @@ class Class101_Sub1 : Class101() {
         @JvmField
         var anInt5683: Int = 0
         @JvmField
-        var aD5684: d? = null
+        var aRenderConfig5684: RenderConfig? = null
         @JvmField
         var anInt5687: Int = 0
         @JvmField
@@ -305,7 +305,7 @@ class Class101_Sub1 : Class101() {
         fun method911(i: Int) {
             if (i != 0) method911(-121)
             aClass223_5689 = null
-            aD5684 = null
+            aRenderConfig5684 = null
             aClass246_5675 = null
             aClass351_5677 = null
         }

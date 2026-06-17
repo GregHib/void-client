@@ -1,5 +1,6 @@
 /* ba - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
+* NativeRenderTarget
 */
 class ba internal constructor(var_oa: oa?) : r(), Interface19 {
     var nativeid: Long = 0

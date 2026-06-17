@@ -20,8 +20,8 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
     private fun method730(var_ha: ha, class72_0_: Class72?): Boolean {
         if (aClass105_1221 == null) {
             if (anInt1230 == 0) {
-                if (Class101_Sub1.aD5684!!.method4(-7953, anInt1224)) {
-                    val `is` = Class101_Sub1.aD5684!!.method6(-21540, anInt1220, 0.7f, anInt1224, false, anInt1220)
+                if (Class101_Sub1.aRenderConfig5684!!.method4(-7953, anInt1224)) {
+                    val `is` = Class101_Sub1.aRenderConfig5684!!.method6(-21540, anInt1220, 0.7f, anInt1224, false, anInt1220)
                     aClass105_1221 = var_ha.method3662(anInt1220, `is`, 94.toByte(), 0, anInt1220, anInt1220)
                 }
             } else if (anInt1230 == 2) method740(var_ha, class72_0_)

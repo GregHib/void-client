@@ -42,9 +42,9 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
     override fun method3045(i: Int, i_10_: Int, i_11_: Int) {
         super.method3045(i, i_10_, i_11_)
         anInt9382++
-        if (anInt9380 >= 0 && Class286_Sub5.aD6247 != null) {
-            val i_12_ = (if (!(Class286_Sub5.aD6247!!.method3(anInt9380, -6662)!!.aBoolean199)) 128 else 64)
-            anIntArray9375 = Class286_Sub5.aD6247!!.method5(false, anInt9380, 1.0f, i_12_, i_12_, -123)
+        if (anInt9380 >= 0 && Class286_Sub5.aRenderConfig6247 != null) {
+            val i_12_ = (if (!(Class286_Sub5.aRenderConfig6247!!.method3(anInt9380, -6662)!!.aBoolean199)) 128 else 64)
+            anIntArray9375 = Class286_Sub5.aRenderConfig6247!!.method5(false, anInt9380, 1.0f, i_12_, i_12_, -123)
             anInt9379 = i_12_
             anInt9374 = i_12_
         }

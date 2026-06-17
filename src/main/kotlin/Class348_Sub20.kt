@@ -102,7 +102,7 @@ class Class348_Sub20 internal constructor(private val aS_Sub2_6839: s_Sub2, var 
         var i_24_ = i_24_
         if (i.toInt() == 97) {
             if (this.anInt6841 != -1) {
-                val class12 = aHa_Sub2_6831!!.aD4579!!.method3(this.anInt6841, -6662)
+                val class12 = aHa_Sub2_6831!!.aRenderConfig4579!!.method3(this.anInt6841, -6662)
                 val i_25_ = 0xff and class12!!.aByte201.toInt()
                 if (i_25_ != 0 && class12.aByte213.toInt() != 4) {
                     val i_26_: Int

@@ -228,7 +228,7 @@ class Class88 {
                             Class348_Sub40_Sub20.aClass348_Sub4_9264!!.method2747(1, class348_sub49_9_)
                             class348_sub49_sub2.writeBytes((class348_sub49_9_.aByteArray7154!!).size, 0, (class348_sub49_9_.aByteArray7154!!), -73)
                             class348_sub49_sub2.writeShort(107.toByte(), Class135_Sub1.anInt4718)
-                            class348_sub49_sub2.writeLong(Class244.aLong4615, (-63).toByte())
+                            class348_sub49_sub2.writeLong(TextureMetadataProvider.aLong4615, (-63).toByte())
                             class348_sub49_sub2.writeByte(false, if (Class14_Sub1.aString8605 == null) 0 else 1)
                             if (Class14_Sub1.aString8605 != null) class348_sub49_sub2.writeString((-5).toByte(), (Class14_Sub1.aString8605!!))
                             class348_sub49_sub2.writeByte(false, (if (!method3131(50.toByte(), "jagtheora")) 0 else 1))

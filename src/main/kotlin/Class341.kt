@@ -60,7 +60,7 @@ class Class341 {
             Class48.anInt859 = -1
             Class245.anInt3170 = -(Class75.anInt1267 * i_3_ / i_5_) + Class75.anInt1267
             Class348_Sub36.anInt6992 = Class75.anInt1259 * i_1_ / i_4_
-            Class244.anInt4609 = -1
+            TextureMetadataProvider.anInt4609 = -1
             val i_6_ = 50 / ((-12 - i_2_) / 40)
             Class348_Sub15.method2811(false)
         }

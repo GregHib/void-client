@@ -4,9 +4,9 @@ import Class348_Sub17.Companion.method2929
 /* Class354 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class354 internal constructor(var_ha_Sub2: ha_Sub2?, var_d: d?) {
+class Class354 internal constructor(var_ha_Sub2: ha_Sub2?, var_renderConfig: RenderConfig?) {
     private val aHa_Sub2_4355: ha_Sub2?
-    private val aD4359: d?
+    private val aRenderConfig4359: RenderConfig?
     private var aClass60_4361: Class60? = Class60(256)
 
     fun method3463(i: Byte) {
@@ -19,17 +19,17 @@ class Class354 internal constructor(var_ha_Sub2: ha_Sub2?, var_d: d?) {
         anInt4357++
         val `object` = aClass60_4361!!.method583(i.toLong(), -127)
         if (`object` != null) return `object` as Class258_Sub3
-        if (!aD4359!!.method4(-7953, i)) return null
-        val class12 = aD4359.method3(i, -6662)
+        if (!aRenderConfig4359!!.method4(-7953, i)) return null
+        val class12 = aRenderConfig4359.method3(i, -6662)
         val i_5_ = (if (!class12!!.aBoolean199) aHa_Sub2_4355!!.anInt7712 else 64)
         val class258_sub3: Class258_Sub3?
         if (class12.aBoolean218 && aHa_Sub2_4355!!.method3666()) {
-            val fs = aD4359.method1(i_5_, 0.7f, false, -30824, i_5_, i)
+            val fs = aRenderConfig4359.method1(i_5_, 0.7f, false, -30824, i_5_, i)
             class258_sub3 = Class258_Sub3(aHa_Sub2_4355, 3553, 34842, i_5_, i_5_, class12.aByte205.toInt() != 0, fs!!, 6408)
         } else {
             val `is`: IntArray?
-            if (class12.anInt200 == 2 || !method1915(4.toByte(), class12.aByte213.toInt())) `is` = aD4359.method6(-21540, i_5_, 0.7f, i, false, i_5_)
-            else `is` = aD4359.method5(true, i, 0.7f, i_5_, i_5_, i_4_ + -196)
+            if (class12.anInt200 == 2 || !method1915(4.toByte(), class12.aByte213.toInt())) `is` = aRenderConfig4359.method6(-21540, i_5_, 0.7f, i, false, i_5_)
+            else `is` = aRenderConfig4359.method5(true, i, 0.7f, i_5_, i_5_, i_4_ + -196)
             class258_sub3 = Class258_Sub3(aHa_Sub2_4355!!, 3553, 6408, i_5_, i_5_, class12.aByte205.toInt() != 0, `is`, 0, 0, false)
         }
         class258_sub3.method1965(class12.aBoolean215, class12.aBoolean217, 10243)
@@ -48,9 +48,9 @@ class Class354 internal constructor(var_ha_Sub2: ha_Sub2?, var_d: d?) {
     init {
         try {
             aHa_Sub2_4355 = var_ha_Sub2
-            aD4359 = var_d
+            aRenderConfig4359 = var_renderConfig
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("eo.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_d != null) "{...}" else "null") + ')'))
+            throw method2929(runtimeexception, ("eo.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
         }
     }
 

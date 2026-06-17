@@ -14,7 +14,7 @@ import kotlin.math.max
 import kotlin.math.sin
 import kotlin.math.sqrt
 
-abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Class45?, i: Int, i_289_: Int) : ha(var_d) {
+abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_renderConfig: RenderConfig?, class45: Class45?, i: Int, i_289_: Int) : ha(var_renderConfig) {
     var aNativeHeap7891: NativeHeap? = null
     var aLong7905: Long = 0
     private var aCanvas7910: Canvas? = null
@@ -306,7 +306,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
                 var i_25_ = if (this.aBoolean8160) 3.toByte() else 0.toByte()
                 if (i >= 0) {
                     interface18_impl3 = aClass372_8137!!.method3587((-97).toByte(), i)
-                    val class12 = this.aD4579!!.method3(i, -6662)
+                    val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                     if (class12!!.aByte198.toInt() == 0 && class12.aByte211.toInt() == 0) method3879(-8629)
                     else {
                         val i_26_ = if (!class12.aBoolean199) 128 else 64
@@ -2508,15 +2508,15 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
                 this.anInt7931 = anInt7958
                 this.anInt8178 = i_289_
                 Class59_Sub2_Sub1.method566(false, true, (-127).toByte())
-                if (this.aD4579 == null) {
+                if (this.aRenderConfig4579 == null) {
                     this.aNativeInterface7924 = NativeInterface(0, this.anInt8178)
                     aClass372_8137 = null
                 } else {
-                    aClass372_8137 = Class372(this, this.aD4579)
-                    this.aNativeInterface7924 = NativeInterface(this.aD4579!!.method2(true), this.anInt8178)
+                    aClass372_8137 = Class372(this, this.aRenderConfig4579)
+                    this.aNativeInterface7924 = NativeInterface(this.aRenderConfig4579!!.method2(true), this.anInt8178)
                     var i_290_ = 0
-                    while (this.aD4579!!.method2(true) > i_290_) {
-                        val class12 = this.aD4579!!.method3(i_290_, -6662)
+                    while (this.aRenderConfig4579!!.method2(true) > i_290_) {
+                        val class12 = this.aRenderConfig4579!!.method3(i_290_, -6662)
                         if (class12 != null) this.aNativeInterface7924!!.initTextureMetrics(i_290_, class12.aByte201, class12.aByte216)
                         i_290_++
                     }
@@ -2527,7 +2527,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (var_d != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + i_289_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + i_289_ + ')'))
         }
     }
 

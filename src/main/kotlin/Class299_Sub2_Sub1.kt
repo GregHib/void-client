@@ -10,7 +10,7 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3
             Class270.anIntArray3464!![3] = anInt8711
             Class270.anIntArray3464!![1] = anInt8717
             Class270.anIntArray3464!![4] = anInt8708
-            val var_d = aHa_Sub3_8718.aD4579!!
+            val var_d = aHa_Sub3_8718.aRenderConfig4579!!
             Class270.anIntArray3464!![5] = anInt8714
             Class270.anIntArray3464!![2] = anInt8715
             Class270.anIntArray3464!![0] = anInt8716

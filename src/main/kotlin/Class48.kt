@@ -89,7 +89,7 @@ class Class48 {
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string_1_!!)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class202.anInt2670)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
-                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeLong(Class244.aLong4615, 104.toByte())
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeLong(TextureMetadataProvider.aLong4615, 104.toByte())
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, Class348_Sub33.anInt6967)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987))
                     method4002((class348_sub47.aClass348_Sub49_Sub2_7116!!), 55.toByte())

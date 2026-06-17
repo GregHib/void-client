@@ -1,7 +1,7 @@
 /* d - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-interface d {
+interface RenderConfig {
     fun method1(i: Int, f: Float, bool: Boolean, i_0_: Int, i_1_: Int, i_2_: Int): FloatArray?
 
     fun method2(bool: Boolean): Int

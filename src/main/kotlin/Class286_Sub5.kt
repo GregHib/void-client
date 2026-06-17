@@ -113,7 +113,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
 
     companion object {
         @JvmField
-        var aD6247: d? = null
+        var aRenderConfig6247: RenderConfig? = null
         @JvmField
         var anInt6248: Int = -1
         @JvmField
@@ -192,7 +192,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         @JvmStatic
         fun method2160(i: Int) {
             if (i == 0) {
-                aD6247 = null
+                aRenderConfig6247 = null
                 anIntArray6260 = null
             }
         }

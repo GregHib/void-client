@@ -1857,7 +1857,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
         anInt5410++
         if (aShortArray5423 == null) return true
         for (i in aShortArray5423!!.indices) {
-            if (aShortArray5423!![i].toInt() != -1 && !aHa_Sub3_5419!!.aD4579!!.method4(-7953, aShortArray5423!![i].toInt())) return false
+            if (aShortArray5423!![i].toInt() != -1 && !aHa_Sub3_5419!!.aRenderConfig4579!!.method4(-7953, aShortArray5423!![i].toInt())) return false
         }
         return true
     }
@@ -1865,13 +1865,13 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
     internal constructor(var_ha_Sub3: ha_Sub3?, class124: Class124?, i: Int, i_334_: Int, i_335_: Int, i_336_: Int) : this(var_ha_Sub3, i, i_336_, true, false) {
         do {
             try {
-                val var_d: d = var_ha_Sub3!!.aD4579!!
+                val var_renderConfig: RenderConfig = var_ha_Sub3!!.aRenderConfig4579!!
                 val `is` = IntArray(class124!!.anInt1817)
                 anIntArray5455 = IntArray(1 + class124.anInt1821)
                 for (i_337_ in 0..<class124.anInt1817) {
                     if (class124.aByteArray1843 == null || class124.aByteArray1843!![i_337_].toInt() != 2) {
                         if (class124.aShortArray1822 != null && (class124.aShortArray1822!![i_337_].toInt() != -1)) {
-                            val class12 = var_d.method3(((class124.aShortArray1822!![i_337_]).toInt() and 0xffff), -6662)
+                            val class12 = var_renderConfig.method3(((class124.aShortArray1822!![i_337_]).toInt() and 0xffff), -6662)
                             if (((anInt5472 and 0x40) == 0 || !class12!!.aBoolean209) && class12!!.aBoolean204) continue
                         }
                         `is`[anInt5478++] = i_337_
@@ -1898,7 +1898,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                 val class189 = Class73.method742(104, (class162.anInt2153))
                                 if (class189.aBoolean2531) bool_344_ = true
                                 if (class189.anInt2525 != -1) {
-                                    val class12_346_ = var_d.method3((class189.anInt2525), -6662)
+                                    val class12_346_ = var_renderConfig.method3((class189.anInt2525), -6662)
                                     if (class12_346_!!.anInt200 == 2) aBoolean5428 = true
                                 }
                             }
@@ -1913,7 +1913,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     if (class124.aShortArray1822 != null) {
                         i_347_ = class124.aShortArray1822!![i_339_].toInt()
                         if (i_347_ != -1) {
-                            class12 = var_d.method3(0xffff and i_347_, -6662)
+                            class12 = var_renderConfig.method3(0xffff and i_347_, -6662)
                             if ((0x40 and anInt5472) != 0 && class12!!.aBoolean209) {
                                 i_347_ = -1
                                 class12 = null
@@ -2062,7 +2062,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     else i_377_ = 0xff and (class124.aByteArray1834!![i_374_]).toInt()
                     var i_378_: Short = (if (class124.aShortArray1822 != null) class124.aShortArray1822!![i_374_] else (-1).toShort())
                     if (i_378_.toInt() != -1 && (anInt5472 and 0x40) != 0) {
-                        val class12 = var_d.method3(0xffff and i_378_.toInt(), -6662)
+                        val class12 = var_renderConfig.method3(0xffff and i_378_.toInt(), -6662)
                         if (class12!!.aBoolean209) i_378_ = (-1).toShort()
                     }
                     var f = 0.0f
@@ -2767,7 +2767,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
 
     public override fun aa(i: Short, i_570_: Short) {
         anInt5403++
-        val var_d = aHa_Sub3_5419!!.aD4579
+        val var_d = aHa_Sub3_5419!!.aRenderConfig4579
         var i_571_ = 0
         while (anInt5478 > i_571_) {
             if (i == aShortArray5423!![i_571_]) aShortArray5423!![i_571_] = i_570_

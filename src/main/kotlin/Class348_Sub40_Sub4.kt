@@ -16,7 +16,7 @@ class Class348_Sub40_Sub4 : Class348_Sub40(0, true) {
         @JvmField
         var anInt9112: Int = 0
         @JvmField
-        var aD9113: d? = null
+        var aRenderConfig9113: RenderConfig? = null
         @JvmField
         var aClass101_9114: Class101? = null
         @JvmField
@@ -27,7 +27,7 @@ class Class348_Sub40_Sub4 : Class348_Sub40(0, true) {
             if (i > -32) method3058(-76, 25, -12)
             aClass101_9114 = null
             aClass262_9111 = null
-            aD9113 = null
+            aRenderConfig9113 = null
         }
 
         @JvmStatic
