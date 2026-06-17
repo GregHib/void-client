@@ -5,7 +5,7 @@ import Class44.method384
 /* Class301 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class301 {
+object HeightMapNoise {
     @JvmField
     var aClass351_3825: Class351?
     var anInt3826: Int = 0
@@ -61,7 +61,7 @@ object Class301 {
     @JvmStatic
     fun method2281(i: Int) {
         aClass351_3825 = null
-        if (i != 1) Class301.method2278(-115, 106, (-74).toByte(), -75)
+        if (i != 1) HeightMapNoise.method2278(-115, 106, (-74).toByte(), -75)
     }
 
     fun method2282(i: Int) {
