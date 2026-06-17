@@ -154,7 +154,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
                 ObjectByteSerializerHolder.aIntRange_2285,
                 Class63.aIntRange_1123,
                 Class280.aIntRange_3641,
-                Class176.aIntRange_2335,
+                PingHostListHolder.aIntRange_2335,
                 ScreenBorderFiller.aIntRange_1959,
                 Class318_Sub6.aIntRange_6424,
                 Class348_Sub1_Sub2.aIntRange_8817,
@@ -194,7 +194,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
                 Class368.aIntRange_4500,
                 Class209.aIntRange_2717,
                 FloatCameraTransform.aIntRange_5742,
-                Class176.aIntRange_2331
+                PingHostListHolder.aIntRange_2331
             ))
         }
 

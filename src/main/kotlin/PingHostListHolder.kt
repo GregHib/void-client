@@ -1,7 +1,7 @@
 /* Class176 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class176 {
+object PingHostListHolder {
     var aIntRange_2331: IntRange? = IntRange(120, -2)
     @JvmField
     var aClass348_Sub26_2332: Class348_Sub26?

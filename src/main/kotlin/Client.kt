@@ -78,7 +78,7 @@ import VarpStore.Companion.method1315
 import NpcCountAccessor.method1325
 import ObjectByteSerializerHolder.Companion.method1329
 import SizeBoundedSoftCache.Companion.method1343
-import Class176.method1351
+import PingHostListHolder.method1351
 import Class178.method1355
 import Class18.Companion.method273
 import Class18.Companion.method277

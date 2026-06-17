@@ -425,7 +425,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             Class289.method2193(true, (-124).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 82) {
-                            Class176.aClass323_2333 = Class323(var_renderer!!, 19, true, Class305.aCanvas3869!!)
+                            PingHostListHolder.aClass323_2333 = Class323(var_renderer!!, 19, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 85
                             Class289.method2193(true, (-128).toByte())
                             method867(true)

@@ -13,7 +13,7 @@ class Class348_Sub47 : Class348() {
     var anInt7122: Int = 0
     fun method3326(i: Byte) {
         anInt7117++
-        if (Class176.aClass348_Sub47Array2334!!.size > Class239_Sub13.anInt5980 && i.toInt() == -45) Class176.aClass348_Sub47Array2334!![Class239_Sub13.anInt5980++] = this
+        if (PingHostListHolder.aClass348_Sub47Array2334!!.size > Class239_Sub13.anInt5980 && i.toInt() == -45) PingHostListHolder.aClass348_Sub47Array2334!![Class239_Sub13.anInt5980++] = this
     }
 
     companion object {

@@ -1103,7 +1103,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class176.aIntRange_2331 == Class348_Sub3.aIntRange_6584) {
+            if (PingHostListHolder.aIntRange_2331 == Class348_Sub3.aIntRange_6584) {
                 Class348_Sub42_Sub12.anInt9604 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var i = 0
                 while (Class348_Sub42_Sub12.anInt9604 > i) {
@@ -1417,7 +1417,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Crc64Hashable.anInt4985 = Class311.anInt3918
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class176.aIntRange_2335) {
+            if (Class348_Sub3.aIntRange_6584 == PingHostListHolder.aIntRange_2335) {
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 MinimapStateReset.method1122(0)
                 Class348_Sub3.aIntRange_6584 = null

@@ -37,7 +37,7 @@ class Class302 {
             method950(i_0_, 0, Class65.aClass110_Sub1Array1146!!.size + -1, bool, 56.toByte(), i_1_, bool_2_)
             anInt3836++
             Class215.anInt2834 = i
-            Class176.aClass348_Sub26_2332 = null
+            PingHostListHolder.aClass348_Sub26_2332 = null
         }
 
         @JvmStatic
