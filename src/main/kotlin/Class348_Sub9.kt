@@ -209,7 +209,7 @@ class Class348_Sub9 : Class348() {
                             }
                             if (i_8_ == 2) {
                                 InputStream_Sub1.anInt71++
-                                val class348_sub47 = method2148((Class200.aClass351_2638), (Class348_Sub23_Sub2.aClass77_9029), -98)
+                                val class348_sub47 = method2148((ScriptResources.aClass351_2638), (Class348_Sub23_Sub2.aClass77_9029), -98)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 Class348_Sub42_Sub14.method3243(126, class348_sub47)
                             }

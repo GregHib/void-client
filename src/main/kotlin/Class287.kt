@@ -127,7 +127,7 @@ class Class287 {
                         val d = atan2(i_23_.toDouble(), i_24_.toDouble())
                         val i_25_ = (i_19_.toDouble() * sin(d)).toInt()
                         val i_26_ = (cos(d) * i_19_.toDouble()).toInt()
-                        Class200.aAbstractModelRendererArray2640!![i_17_]!!.method981((class46.anInt709.toFloat() / 2.0f + i_15_.toFloat() + i_25_.toFloat()), (i.toFloat() + class46.anInt789.toFloat() / 2.0f - i_26_.toFloat()), 4096, (65535.0 * (-d / 6.283185307179586)).toInt())
+                        ScriptResources.aAbstractModelRendererArray2640!![i_17_]!!.method981((class46.anInt709.toFloat() / 2.0f + i_15_.toFloat() + i_25_.toFloat()), (i.toFloat() + class46.anInt789.toFloat() / 2.0f - i_26_.toFloat()), 4096, (65535.0 * (-d / 6.283185307179586)).toInt())
                     } else method1211(i, Class59_Sub1.aAbstractModelRendererArray5294!![i_17_], i_15_, class46, var_sprite, i_14_, 2, i_16_)
                 }
             } catch (runtimeexception: RuntimeException) {

@@ -103,7 +103,7 @@ import RenderableGroup.Companion.method1447
 import LoadingScreenState.Companion.method1461
 import ModelOrSpriteHolder.Companion.method171
 import ConnectionStateRefs.method287
-import Class200.method1463
+import ScriptResources.method1463
 import Class202.Companion.method1471
 import Class204.Companion.method1493
 import Class205.method1497

@@ -123,7 +123,7 @@ class Class40 internal constructor() {
             Class79.aAbstractModelRenderer_1365 = null
             Class25.aAbstractModelRendererArray367 = null
             Class239_Sub9.aAbstractModelRendererArray5933 = null
-            Class200.aAbstractModelRendererArray2640 = null
+            ScriptResources.aAbstractModelRendererArray2640 = null
             Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = null
             Class262.aClass324_3326 = null
             Class239_Sub24.aAbstractModelRenderer_6097 = null

@@ -1,7 +1,7 @@
 /* Class200 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class200 {
+object ScriptResources {
     var aClass351_2638: Class351? = Class351(59, 8)
     var aClass226_2639: Class226? = null
     @JvmField

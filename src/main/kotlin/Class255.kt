@@ -340,8 +340,8 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 Class79.aAbstractModelRenderer_1365 = var_renderer!!.method3691(Class207.method1521(class45, Class52.anInt4895, 0), bool)
                 Class239_Sub24.aAbstractModelRenderer_6097 = var_renderer.method3691(Class207.method1521(class45, (PerlinTextureProvider.anInt5814), 0), true)
                 class207s = Class207.method1519(class45, Class5_Sub3.anInt8370, 0)
-                Class200.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
-                for (i in class207s.indices) Class200.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(class207s[i], true)
+                ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                for (i in class207s.indices) ScriptResources.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(class207s[i], true)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ub.N(" + (if (class45 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
             }
