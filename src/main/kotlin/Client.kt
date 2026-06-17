@@ -11,7 +11,7 @@ import FloatCameraTransform.Companion.method925
 import ProjectionCameraTransform.Companion.method938
 import MinimapDrawController.method948
 import MinimapDrawController.method949
-import Class104.Companion.method953
+import SoftwareSpriteRaster.Companion.method953
 import Class106.Companion.method999
 import Class107.Companion.method1004
 import Class108.method1013

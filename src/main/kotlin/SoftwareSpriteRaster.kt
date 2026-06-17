@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glScalef
 import jaggl.OpenGL.Companion.glTranslatef
 import java.awt.Canvas
 
-class Class104 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: OpenGlTerrainTile?) {
+class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: OpenGlTerrainTile?) {
     private val anInt1612: Int
     private val anInt1613: Int
     private val aHa_Sub2_1616: OpenGlRenderer?

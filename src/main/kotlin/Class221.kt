@@ -10,7 +10,7 @@ class Class221 {
         if (Class5_Sub1.aClass221_8344 == this) return 0
         if (i_1_ >= -103) aBoolean2881 = true
         if (this == Class223.Companion.aClass221_2893) return i_2_ - i_0_
-        if (Class104.aClass221_1620 == this) return (-i_0_ + i_2_) / 2
+        if (SoftwareSpriteRaster.aClass221_1620 == this) return (-i_0_ + i_2_) / 2
         return 0
     }
 

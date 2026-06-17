@@ -915,7 +915,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             OpenGlRenderer.anInt7569 = 0
             Class287.anInt3689 = 0
             OpenGlRenderer.anInt7728 = 0
-            Class104.anInt1621 = 0
+            SoftwareSpriteRaster.anInt1621 = 0
             NativeTerrainTile.anInt8315 = 0
             Class369.anInt4969 = 0
             Class348_Sub40_Sub15.anInt9217 = 0
@@ -1181,7 +1181,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class285_Sub1.anInt8488 = 0
             Class377.anInt9858 = 0
             Class219.anInt2863 = 0
-            Class104.anInt1615 = 0
+            SoftwareSpriteRaster.anInt1615 = 0
             Class348_Sub42_Sub18.anInt9681 = 0
             Class171.anInt2271 = 0
             Class105_Sub2.anInt8438 = 0
@@ -1407,7 +1407,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class211.anInt2736 = 0
             OutputStream_Sub1.anInt92 = 0
             Class59_Sub2_Sub2.anInt8678 = 0
-            Class104.anInt1628 = 0
+            SoftwareSpriteRaster.anInt1628 = 0
             Class367_Sub4.anInt7316 = 0
             OpenGlRenderer.anInt7615 = 0
             Class287.anInt3692 = 0
@@ -1544,7 +1544,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class39.anInt516 = 0
             Class25.anInt362 = 0
             Class361.anInt4431 = 0
-            Class104.anInt1610 = 0
+            SoftwareSpriteRaster.anInt1610 = 0
             NativeRenderer.anInt8075 = 0
             Class34.anInt473 = 0
             Class377.anInt9857 = 0
@@ -2153,7 +2153,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class105_Sub2.anInt8435 = 0
             Class45.anInt630 = 0
             Class120.anInt4909 = 0
-            Class104.anInt1630 = 0
+            SoftwareSpriteRaster.anInt1630 = 0
             Class348_Sub16_Sub3.anInt8913 = 0
             Class339.anInt4210 = 0
             Class64_Sub2.anInt5441 = 0
@@ -2199,7 +2199,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub34.anInt9434 = 0
             Class59_Sub1_Sub1.anInt8655 = 0
             Class348_Sub49_Sub2.anInt9763 = 0
-            Class104.anInt1619 = 0
+            SoftwareSpriteRaster.anInt1619 = 0
             Class348_Sub16_Sub1.anInt8845 = 0
             Class286_Sub9.anInt6309 = 0
             Class171.anInt2267 = 0
@@ -3013,7 +3013,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class124.anInt1826 = 0
             Class127_Sub1.anInt8381 = 0
             Class348_Sub40_Sub39.anInt9483 = 0
-            Class104.anInt1611 = 0
+            SoftwareSpriteRaster.anInt1611 = 0
             Class348_Sub5_Sub1.anInt8839 = 0
             Class254.anInt3257 = 0
             Class46.anInt743 = 0
@@ -3823,7 +3823,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class83.anInt1445 = 0
             OpenGlRenderer.anInt7521 = 0
             Class239_Sub2.anInt5856 = 0
-            Class104.anInt1629 = 0
+            SoftwareSpriteRaster.anInt1629 = 0
             OpenGlRenderer.anInt7616 = 0
             Class239_Sub19.anInt6047 = 0
             Class239_Sub26.anInt6118 = 0
@@ -4009,7 +4009,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class340.anInt4222 = 0
             NativeRenderer.anInt7969 = 0
             NativeRenderer.anInt7948 = 0
-            Class104.anInt1614 = 0
+            SoftwareSpriteRaster.anInt1614 = 0
             Class318_Sub9.anInt6467 = 0
             Class143.anInt1985 = 0
             Class54.anInt968 = 0

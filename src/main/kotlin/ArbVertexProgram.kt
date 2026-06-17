@@ -40,8 +40,8 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
                 val i_1_ = glGenProgramARB()
                 glBindProgramARB(i, i_1_)
                 glProgramRawARB(i, 34933, `is`)
-                glGetIntegerv(34379, Class104.anIntArray1626, 0)
-                if (Class104.anIntArray1626!![0] != -1) {
+                glGetIntegerv(34379, SoftwareSpriteRaster.anIntArray1626, 0)
+                if (SoftwareSpriteRaster.anIntArray1626!![0] != -1) {
                     glBindProgramARB(i, 0)
                     return null
                 }

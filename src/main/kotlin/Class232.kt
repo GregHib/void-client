@@ -1,9 +1,9 @@
 /* Class232 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, class104: Class104?, var_s_Sub2: OpenGlTerrainTile?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
+class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, softwareSpriteRaster: SoftwareSpriteRaster?, var_s_Sub2: OpenGlTerrainTile?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
     private var aClass258_Sub3_2998: Class258_Sub3? = null
-    private val aClass104_2999: Class104?
+    private val aSoftwareSpriteRaster_2999: SoftwareSpriteRaster?
     private val aHa_Sub2_3000: OpenGlRenderer?
     private var anInterface8_3001: Interface8? = null
     private val anInt3002: Int
@@ -38,7 +38,7 @@ class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, class104: Clas
     init {
         try {
             aHa_Sub2_3000 = var_ha_Sub2
-            aClass104_2999 = class104
+            aSoftwareSpriteRaster_2999 = softwareSpriteRaster
             anInt3003 = i_6_
             anInt3002 = i_7_
             val i_8_ = 1 shl i_5_
@@ -99,7 +99,7 @@ class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, class104: Clas
                 aClass119_Sub2_3011 = Class119_Sub2(aHa_Sub2_3000, 5123, null, 1)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sm.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class104 != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("sm.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (softwareSpriteRaster != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
         }
     }
 
@@ -107,12 +107,12 @@ class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, class104: Clas
         anInt3004++
         if (this.aBoolean3009) {
             this.aBoolean3009 = false
-            val `is` = aClass104_2999!!.aByteArray1617
+            val `is` = aSoftwareSpriteRaster_2999!!.aByteArray1617
             val is_23_ = aHa_Sub2_3000!!.aByteArray7879
             if (i > 115) {
                 var i_24_ = 0
-                val i_25_ = aClass104_2999.anInt1624
-                var i_26_ = (anInt3003 - -(anInt3002 * aClass104_2999.anInt1624))
+                val i_25_ = aSoftwareSpriteRaster_2999.anInt1624
+                var i_26_ = (anInt3003 - -(anInt3002 * aSoftwareSpriteRaster_2999.anInt1624))
                 for (i_27_ in -128..-1) {
                     i_24_ = (i_24_ shl 8) + -i_24_
                     for (i_28_ in -128..-1) {
@@ -137,7 +137,7 @@ class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, class104: Clas
                             } else is_23_!![i_29_++] = 68.toByte()
                             i_26_++
                         }
-                        i_26_ += aClass104_2999.anInt1624 - 128
+                        i_26_ += aSoftwareSpriteRaster_2999.anInt1624 - 128
                     }
                     if (aClass258_Sub3_2998 == null) {
                         aClass258_Sub3_2998 = Class258_Sub3(aHa_Sub2_3000, 3553, 6406, 128, 128, false, (aHa_Sub2_3000.aByteArray7879), 6406, false)

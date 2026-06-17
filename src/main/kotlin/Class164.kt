@@ -71,7 +71,7 @@ object Class164 {
             Class286_Sub7.aBoolean6289 = !Class348_Sub14.method2804((-63).toByte())
             Class286_Sub7.aClass45_6277 = Class369_Sub2.method3571(false, (if (Class286_Sub7.aBoolean6289) 34 else 32), (-23).toByte(), 1)
             Class348_Sub40_Sub17_Sub1.aClass45_10426 = Class369_Sub2.method3571(false, 33, (-23).toByte(), 1)
-            Class104.aClass45_1627 = Class369_Sub2.method3571(false, 13, (-23).toByte(), 1)
+            SoftwareSpriteRaster.aClass45_1627 = Class369_Sub2.method3571(false, 13, (-23).toByte(), 1)
         }
         if (Class56.aClass56_1024 == Class348_Sub42_Sub15.aClass56_9660) {
             val bool = Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method401(89)
@@ -87,7 +87,7 @@ object Class164 {
             Class186_Sub1.aClass111_5813 = Class111(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub40_Sub17_Sub1.aClass45_10426)
             var `is` = Class186_Sub1.aClass111_5813!!.method1046(i_3_, 0)
             if (`is`!!.size == 0) `is` = Class186_Sub1.aClass111_5813!!.method1046(0, 0)
-            val class106 = Class106(Class286_Sub7.aClass45_6277, Class104.aClass45_1627)
+            val class106 = Class106(Class286_Sub7.aClass45_6277, SoftwareSpriteRaster.aClass45_1627)
             if (`is`!!.size > 0) {
                 Class182.anInterface16Array2447 = arrayOfNulls<Interface16>(`is`.size)
                 var i_4_ = 0
@@ -97,7 +97,7 @@ object Class164 {
                 }
             }
         }
-        if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1026) Class348_Sub42_Sub3.method3178(Class104.aClass45_1627, -81, method184(1084489728), Class286_Sub7.aClass45_6277)
+        if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1026) Class348_Sub42_Sub3.method3178(SoftwareSpriteRaster.aClass45_1627, -81, method184(1084489728), Class286_Sub7.aClass45_6277)
         if (Class56.aClass56_1027 == Class348_Sub42_Sub15.aClass56_9660) {
             val i_5_ = Class348_Sub50.method3420(0)
             val i_6_ = method3256(2)
@@ -159,7 +159,7 @@ object Class164 {
                 return ((i_8_ + -Class268.anInt3435) * 100 / (-Class268.anInt3435 + 100))
             }
             Class286_Sub5.method2159((-109).toByte(), Class21.aClass45_322!!)
-            Class348_Sub42_Sub3.method3178(Class104.aClass45_1627, -124, method184(i xor 0x40a46ff3.inv()), Class21.aClass45_322)
+            Class348_Sub42_Sub3.method3178(SoftwareSpriteRaster.aClass45_1627, -124, method184(i xor 0x40a46ff3.inv()), Class21.aClass45_322)
         }
         if (Class56.aClass56_1032 == Class348_Sub42_Sub15.aClass56_9660) {
             if (Class345.anInt4270 == -1) Class345.anInt4270 = Class59_Sub2_Sub1.aClass45_8667!!.method417("scape main", 0)
@@ -202,7 +202,7 @@ object Class164 {
             Class239_Sub14.aClass259_5995 = Class259(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class229.aClass194_2981 = Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
             Class269.aClass217_3453 = Class217(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class65.method699(Class104.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, Class21.aClass45_322, RasterSprite.aClass45_5207)
+            Class65.method699(SoftwareSpriteRaster.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, Class21.aClass45_322, RasterSprite.aClass45_5207)
             method85(0, Class262.aClass45_3323)
             Class200.aClass226_2639 = Class226(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434)
             Class239_Sub6.aClass355_5900 = Class355(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434, Class28())
@@ -248,7 +248,7 @@ object Class164 {
             Class367_Sub10.aClass45_7382!!.method404(0, true, false)
             Class59_Sub2_Sub1.aClass45_8667!!.method404(0, true, true)
             Class21.aClass45_322!!.method404(i + 28660, true, true)
-            Class104.aClass45_1627!!.method404(0, true, true)
+            SoftwareSpriteRaster.aClass45_1627!!.method404(0, true, true)
             Class16.aClass45_233!!.method404(0, true, true)
             Class348_Sub35.aClass45_6980!!.method404(0, true, true)
             Class95.aClass45_1541!!.anInt634 = 2

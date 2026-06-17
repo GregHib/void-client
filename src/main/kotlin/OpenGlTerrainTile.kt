@@ -24,7 +24,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     private var anIntArrayArrayArray8258: Array<Array<IntArray?>?>?
     private val anInt8260: Int
     private val anInt8264: Int
-    private var aClass104_8266: Class104? = null
+    private var aSoftwareSpriteRaster_8266: SoftwareSpriteRaster? = null
     @JvmField
     var aShortArrayArray8267: Array<ShortArray?>
     @JvmField
@@ -50,10 +50,10 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
 
     override fun wa(var_renderNode: RenderNode?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, bool: Boolean) {
         anInt8251++
-        if (aClass104_8266 != null && var_renderNode != null) {
+        if (aSoftwareSpriteRaster_8266 != null && var_renderNode != null) {
             val i_3_ = (i - ((this.aHa_Sub2_8272!!.anInt7772 * i_0_) shr 8) shr this.aHa_Sub2_8272!!.anInt7731)
             val i_4_ = (-(i_0_ * this.aHa_Sub2_8272!!.anInt7777 shr 8) + i_1_ shr this.aHa_Sub2_8272!!.anInt7731)
-            aClass104_8266!!.method951(var_renderNode, i_3_, i_4_, 70)
+            aSoftwareSpriteRaster_8266!!.method951(var_renderNode, i_3_, i_4_, 70)
         }
     }
 
@@ -112,7 +112,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     }
 
     override fun YA() {
-        if (anInt8284 <= 0) aClass104_8266 = null
+        if (anInt8284 <= 0) aSoftwareSpriteRaster_8266 = null
         else {
             val `is` = Array<ByteArray?>(1 + this.anInt4587) { ByteArray(this.anInt4590 + 1) }
             for (i in 1..<this.anInt4587) {
@@ -393,7 +393,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 class348_sub20.method2952(17795, anInt8246)
             }
             Class339.method2669(aClass348_Sub20Array8282 as? Array<Any?>, ls, -21)
-            if (aClass104_8266 != null) aClass104_8266!!.method957(0)
+            if (aSoftwareSpriteRaster_8266 != null) aSoftwareSpriteRaster_8266!!.method957(0)
         }
         anInt8247++
         anIntArrayArrayArray8258 = null
@@ -443,19 +443,19 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
 
     override fun CA(var_renderNode: RenderNode?, i: Int, i_128_: Int, i_129_: Int, i_130_: Int, bool: Boolean) {
         anInt8236++
-        if (aClass104_8266 != null && var_renderNode != null) {
+        if (aSoftwareSpriteRaster_8266 != null && var_renderNode != null) {
             val i_131_ = (i - ((i_128_ * this.aHa_Sub2_8272!!.anInt7772) shr 8) shr this.aHa_Sub2_8272!!.anInt7731)
             val i_132_ = (-((this.aHa_Sub2_8272!!.anInt7777 * i_128_) shr 8) + i_129_ shr this.aHa_Sub2_8272!!.anInt7731)
-            aClass104_8266!!.method959(i_131_, i_132_, 107.toByte(), var_renderNode)
+            aSoftwareSpriteRaster_8266!!.method959(i_131_, i_132_, 107.toByte(), var_renderNode)
         }
     }
 
     override fun method3989(var_renderNode: RenderNode?, i: Int, i_142_: Int, i_143_: Int, i_144_: Int, bool: Boolean): Boolean {
         anInt8244++
-        if (aClass104_8266 == null || var_renderNode == null) return false
+        if (aSoftwareSpriteRaster_8266 == null || var_renderNode == null) return false
         val i_145_ = (-(i_142_ * this.aHa_Sub2_8272!!.anInt7772 shr 8) + i shr this.aHa_Sub2_8272!!.anInt7731)
         val i_146_ = (i_143_ + -((this.aHa_Sub2_8272!!.anInt7777 * i_142_) shr 8) shr this.aHa_Sub2_8272!!.anInt7731)
-        return aClass104_8266!!.method954(i_145_, 88.toByte(), i_146_, var_renderNode)
+        return aSoftwareSpriteRaster_8266!!.method954(i_145_, 88.toByte(), i_146_, var_renderNode)
     }
 
     override fun method3983(i: Int, i_149_: Int, i_150_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_151_: Int) {
@@ -706,11 +706,11 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 this.aHa_Sub2_8272!!.method3771((-96).toByte(), null)
                 this.aHa_Sub2_8272!!.L(i_209_, i_210_, (this.aHa_Sub2_8272!!.anInt7813))
             }
-            if (aClass104_8266 != null) {
+            if (aSoftwareSpriteRaster_8266 != null) {
                 glPushMatrix()
                 glTranslatef(0.0f, -1.0f, 0.0f)
                 this.aHa_Sub2_8272!!.method3794(this.aClass123_8276, null, -26411, this.aClass123_8277, null)
-                aClass104_8266!!.method956(bool, 112, bools, i_192_, i_196_, i_194_)
+                aSoftwareSpriteRaster_8266!!.method956(bool, 112, bools, i_192_, i_196_, i_194_)
                 glPopMatrix()
             }
         }
@@ -751,7 +751,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 }
                 aClass356_8278 = Class356(128)
                 if ((0x10 and this.anInt8235) == 0) break
-                aClass104_8266 = Class104(this.aHa_Sub2_8272, this)
+                aSoftwareSpriteRaster_8266 = SoftwareSpriteRaster(this.aHa_Sub2_8272, this)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ed.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_133_ + ',' + i_134_ + ',' + i_135_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_136_ != null) "{...}" else "null") + ',' + i_137_ + ')'))
             }

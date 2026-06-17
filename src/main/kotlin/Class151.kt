@@ -1,4 +1,4 @@
-import Class104.Companion.method960
+import SoftwareSpriteRaster.Companion.method960
 import Class348_Sub40_Sub17_Sub1.Companion.method3093
 import Class40.Companion.method368
 import kotlin.math.max

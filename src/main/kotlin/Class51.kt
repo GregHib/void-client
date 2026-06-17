@@ -154,7 +154,7 @@ class Class51 {
     fun method476(var_renderer: Renderer?, var_terrainTile: TerrainTile?, i: Int, i_4_: Int, i_5_: Int, bool: Boolean, var_terrainTile_6_: TerrainTile?, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): Class2? {
         var i = i
         try {
-            if (Class104.method955(22311, i)) i = 4
+            if (SoftwareSpriteRaster.method955(22311, i)) i = 4
             anInt938++
             var l = (i_9_ + (i shl 3) + (this.anInt941 shl 10)).toLong()
             l = l or (var_renderer!!.anInt4567 shl 29).toLong()
@@ -589,7 +589,7 @@ class Class51 {
         var i_64_ = i_64_
         var i_67_ = i_67_
         try {
-            if (Class104.method955(22311, i_64_)) i_64_ = 4
+            if (SoftwareSpriteRaster.method955(22311, i_64_)) i_64_ = 4
             anInt910++
             var l = ((this.anInt941 shl 10) + ((i_64_ shl 3) - -i_66_)).toLong()
             val i_73_ = i_67_

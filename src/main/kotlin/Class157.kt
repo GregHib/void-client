@@ -26,7 +26,7 @@ object Class157 {
         class348_sub49_sub2.writeInt(115.toByte(), Class16.aClass45_233!!.method389(-113))
         class348_sub49_sub2.writeInt(94.toByte(), Class348_Sub23_Sub2.aClass45_9033!!.method389(-113))
         class348_sub49_sub2.writeInt(121.toByte(), Class113.aClass45_1743!!.method389(-110))
-        class348_sub49_sub2.writeInt(123.toByte(), Class104.aClass45_1627!!.method389(72))
+        class348_sub49_sub2.writeInt(123.toByte(), SoftwareSpriteRaster.aClass45_1627!!.method389(72))
         class348_sub49_sub2.writeInt(120.toByte(), Class239_Sub4.aClass45_5878!!.method389(37))
         class348_sub49_sub2.writeInt(115.toByte(), Class123.aClass45_1815!!.method389(-115))
         class348_sub49_sub2.writeInt(126.toByte(), Class94.aClass45_1538!!.method389(104))

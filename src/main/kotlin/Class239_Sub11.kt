@@ -115,7 +115,7 @@ class Class239_Sub11 : Class239 {
                 Class267.aClass267_3422!!.method2025(Class73((Class16.aClass45_233), "huffman"), false)
                 Class267.aClass267_3423!!.method2025(Class292(Class348_Sub35.aClass45_6980!!), false)
                 Class267.aClass267_3424!!.method2025(Class292(Class113.aClass45_1743!!), false)
-                Class267.aClass267_3425!!.method2025(Class292(Class104.aClass45_1627!!), false)
+                Class267.aClass267_3425!!.method2025(Class292(SoftwareSpriteRaster.aClass45_1627!!), false)
                 Class267.aClass267_3426!!.method2025(Class136((Class348_Sub32.aClass45_6950), "details"), false)
                 for (i_4_ in Class126.aClass267Array4987!!.indices) {
                     if (Class126.aClass267Array4987!![i_4_]!!.method2027(78) == null) throw RuntimeException()
