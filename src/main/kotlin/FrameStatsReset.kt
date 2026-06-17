@@ -271,7 +271,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class294.anInt5049 = 0
             Class239_Sub19.anInt6045 = 0
             Class377.anInt9854 = 0
-            Class163.anInt2160 = 0
+            AudioResampler.anInt2160 = 0
             Class64_Sub2.anInt5447 = 0
             Class64_Sub2.anInt5496 = 0
             Class318_Sub1_Sub4.anInt8758 = 0
@@ -2656,7 +2656,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub9.anInt9172 = 0
             Class239_Sub18.anInt6036 = 0
             Class301.anInt3827 = 0
-            Class163.anInt2166 = 0
+            AudioResampler.anInt2166 = 0
             Class348_Sub42_Sub16_Sub1.anInt10448 = 0
             Class191.anInt2566 = 0
             Class318_Sub2.anInt6397 = 0
@@ -2830,7 +2830,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7638 = 0
             OutputStream_Sub2.anInt107 = 0
             Class348_Sub32.anInt6939 = 0
-            Class163.anInt2171 = 0
+            AudioResampler.anInt2171 = 0
             Class40.anInt542 = 0
             Class316.anInt3964 = 0
             Class348_Sub23_Sub4.anInt9060 = 0
@@ -3238,7 +3238,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub2_Sub1.anInt10187 = 0
             Class64_Sub3.anInt5611 = 0
             Class286_Sub4.anInt6240 = 0
-            Class163.anInt2161 = 0
+            AudioResampler.anInt2161 = 0
             Class239_Sub29.anInt6150 = 0
             OpenGlRenderer.anInt7573 = 0
             Class188.anInt2516 = 0
@@ -3680,7 +3680,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub23_Sub2.anInt9012 = 0
             Class239_Sub6.anInt5903 = 0
             OpenGlRenderer.anInt7612 = 0
-            Class163.anInt2167 = 0
+            AudioResampler.anInt2167 = 0
             Class367_Sub2.anInt7287 = 0
             Class76.anInt1280 = 0
             Class5.anInt4639 = 0
@@ -3787,7 +3787,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class187.anInt2504 = 0
             Class322.anInt4023 = 0
             Class377.anInt9867 = 0
-            Class163.anInt2168 = 0
+            AudioResampler.anInt2168 = 0
             GroundItemRenderState.anInt1659 = 0
             Class26.anInt376 = 0
             Class348_Sub18.anInt6816 = 0
@@ -4019,7 +4019,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ConfigDefinitionLoader.anInt2081 = 0
             Class258_Sub3.anInt8546 = 0
             Class348_Sub18.anInt6821 = 0
-            Class163.anInt2170 = 0
+            AudioResampler.anInt2170 = 0
             Class318_Sub1_Sub5_Sub2.anInt10157 = 0
             FloatCameraTransform.anInt5694 = 0
             Class206.anInt4879 = 0

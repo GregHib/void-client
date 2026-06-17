@@ -363,7 +363,7 @@ class Class79 {
                     val class17_51_ = class87!!.method835((class182s[i_50_]!!.anInt2454), 7)
                     if (class17_51_.anIntArray237 != null) {
                         bool_44_ = true
-                        Class163.aClass17Array2169!![i_50_] = class17_51_
+                        AudioResampler.aClass17Array2169!![i_50_] = class17_51_
                         val i_52_ = class182s[i_50_]!!.anInt2451
                         val i_53_ = class182s[i_50_]!!.anInt2455
                         var i_54_ = class17_51_.anIntArray237[i_52_]
@@ -575,7 +575,7 @@ class Class79 {
                     (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
                     (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_86_]),
-                    (Class163.aClass17Array2169!![i_86_]!!.aBoolean242),
+                    (AudioResampler.aClass17Array2169!![i_86_]!!.aBoolean242),
                     Class348_Sub23_Sub4.anIntArray9050!![i_86_]
                 )
                 i_86_++
@@ -604,7 +604,7 @@ class Class79 {
             while (i_49_ > i_91_) {
                 Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_91_] = null
                 Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_91_] = null
-                Class163.aClass17Array2169!![i_91_] = null
+                AudioResampler.aClass17Array2169!![i_91_] = null
                 i_91_++
             }
             if (anInt1346 != 128 || anInt1358 != 128) class64_82_!!.O(anInt1346, anInt1358, anInt1346)

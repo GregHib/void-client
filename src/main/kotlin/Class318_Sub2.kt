@@ -1,7 +1,7 @@
 import MinimapFlagRenderer.method1084
 import NpcSummaryDefinition.Companion.method1166
 import WidgetNodeLink.Companion.method1197
-import Class163.Companion.method1273
+import AudioResampler.Companion.method1273
 import Class186_Sub1.Companion.method1399
 import Class239_Sub21.Companion.method1813
 import Class273.Companion.method2057

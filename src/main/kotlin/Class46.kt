@@ -968,7 +968,7 @@ class Class46 {
             Class172.method1328(-26162)
             method3102(22385)
             Class44.method386((-106).toByte())
-            Class163.method1271(0)
+            AudioResampler.method1271(0)
             Class353.aClass60_4346!!.method587(-108)
             Class328_Sub2.aClass60_6517!!.method587(-109)
             Class348_Sub1_Sub1.aClass60_8807!!.method587(-113)

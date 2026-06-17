@@ -7,7 +7,7 @@ import kotlin.math.sin
 /* Class163 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class163 internal constructor(i: Int, i_27_: Int) {
+class AudioResampler internal constructor(i: Int, i_27_: Int) {
     private var anInt2159 = 0
     private var anIntArrayArray2163: Array<IntArray>? = null
     private var anInt2164 = 0

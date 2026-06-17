@@ -391,7 +391,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
             Class194.aClass279_2596 = Class193.method1439(2048, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 1, 7)
             Class348_Sub43.aClass348_Sub16_Sub4_7065 = Class348_Sub16_Sub4()
             Class194.aClass279_2596!!.method2088(false, Class348_Sub43.aClass348_Sub16_Sub4_7065)
-            Class57.aClass163_1050 = Class163(22050, Class22.anInt339)
+            Class57.aAudioResampler_1050 = AudioResampler(22050, Class22.anInt339)
             Class348_Sub40_Sub17_Sub1.method3093(110)
         }
 

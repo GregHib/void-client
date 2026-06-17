@@ -66,8 +66,8 @@ import KeyboardLayoutConfig.Companion.method1254
 import ServerConnectionInfo.Companion.method1261
 import RectangleBounds.Companion.method1265
 import RectangleBounds.Companion.method1267
-import Class163.Companion.method1269
-import Class163.Companion.method1276
+import AudioResampler.Companion.method1269
+import AudioResampler.Companion.method1276
 import Class166.Companion.method1284
 import Class167.Companion.method1293
 import Class168.method1298

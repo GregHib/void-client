@@ -17,7 +17,7 @@ class Class57 {
         @JvmField
         var anInt1049: Int = 0
         @JvmField
-        var aClass163_1050: Class163? = null
+        var aAudioResampler_1050: AudioResampler? = null
         var aClass251_1051: Class251? = Class251()
         @JvmField
         var anInt1053: Int = 0
@@ -36,7 +36,7 @@ class Class57 {
         fun method530(i: Int) {
             aClass17Array1048 = null
             aClass227_1055 = null
-            aClass163_1050 = null
+            aAudioResampler_1050 = null
             aClass251_1051 = null
             if (i != 14) aClass251_1051 = null
         }

@@ -77,7 +77,7 @@ object Class99 {
         Class348_Sub40_Sub33.aClass46ArrayArray9427 = arrayOfNulls(Class229.aClass45_2978!!.method414(-1))
         anInt1573++
         Class369_Sub2.aClass46ArrayArray8584 = arrayOfNulls(Class229.aClass45_2978!!.method414(-1))
-        Class163.aBooleanArray2162 = BooleanArray(Class229.aClass45_2978!!.method414(-1))
+        AudioResampler.aBooleanArray2162 = BooleanArray(Class229.aClass45_2978!!.method414(-1))
     }
 
     @JvmStatic

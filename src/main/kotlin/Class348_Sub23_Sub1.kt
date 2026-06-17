@@ -9,7 +9,7 @@ import java.net.URL
 
 class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) : Class348_Sub23(oggstreamstate) {
     private var aDSPState8993: DSPState? = null
-    private var aClass163_8994: Class163? = null
+    private var aAudioResampler_8994: AudioResampler? = null
     private var aClass348_Sub16_Sub2_8995: Class348_Sub16_Sub2? = null
     private var aVorbisBlock9000: VorbisBlock? = null
     private var anInt9001 = 0
@@ -64,7 +64,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
                 if (aVorbisInfo9006.channels > 2 || aVorbisInfo9006.channels < 1) throw RuntimeException(aVorbisInfo9006.channels.toString())
                 aDSPState8993 = DSPState(aVorbisInfo9006)
                 aVorbisBlock9000 = VorbisBlock(aDSPState8993)
-                aClass163_8994 = Class163(aVorbisInfo9006.rate, Class22.anInt339)
+                aAudioResampler_8994 = AudioResampler(aVorbisInfo9006.rate, Class22.anInt339)
                 aClass348_Sub16_Sub2_8995 = Class348_Sub16_Sub2(aVorbisInfo9006.channels)
             }
         } else {
@@ -76,7 +76,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
             anInt9001 += fs[0]!!.size
             val class348_sub42_sub4 = aClass348_Sub16_Sub2_8995!!.method2838(fs[0]!!.size, aDouble9005, 1401320384)
             method2699(16383, (class348_sub42_sub4!!.aShortArrayArray9518), fs)
-            for (i_8_ in 0..<aVorbisInfo9006.channels) class348_sub42_sub4.aShortArrayArray9518[i_8_] = aClass163_8994!!.method1268(-56, (class348_sub42_sub4.aShortArrayArray9518[i_8_]!!))
+            for (i_8_ in 0..<aVorbisInfo9006.channels) class348_sub42_sub4.aShortArrayArray9518[i_8_] = aAudioResampler_8994!!.method1268(-56, (class348_sub42_sub4.aShortArrayArray9518[i_8_]!!))
             aClass348_Sub16_Sub2_8995!!.method2835(class348_sub42_sub4, 30700)
         }
         if (i > -91) method2961((-106).toByte())

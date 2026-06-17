@@ -8,11 +8,11 @@ object Class320 {
 
     fun method2547(i: Int, i_0_: Byte): Boolean {
         anInt3993++
-        if (Class163.aBooleanArray2162!![i]) return true
+        if (AudioResampler.aBooleanArray2162!![i]) return true
         if (!Class229.aClass45_2978!!.method408((-124).toByte(), i)) return false
         val i_1_ = Class229.aClass45_2978!!.method407(0, i)
         if (i_1_ == 0) {
-            Class163.aBooleanArray2162!![i] = true
+            AudioResampler.aBooleanArray2162!![i] = true
             return true
         }
         if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] == null) Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] = arrayOfNulls<Class46>(i_1_)
@@ -30,7 +30,7 @@ object Class320 {
             i_2_++
         }
         if (i_0_.toInt() != 84) aFloat3994 = -0.8522395f
-        Class163.aBooleanArray2162!![i] = true
+        AudioResampler.aBooleanArray2162!![i] = true
         return true
     }
 }
