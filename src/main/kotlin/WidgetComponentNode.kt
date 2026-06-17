@@ -17,7 +17,7 @@ open class WidgetComponentNode(class45: Class45?, class288: Class288?) : Interfa
     override fun method9(i: Byte, bool: Boolean) {
         anInt4653++
         if (bool) {
-            val i_1_ = ((this.aClass288_4659!!.aClass221_4955!!.method1607(Class92.anInt1524, this.aAbstractModelRenderer_4655!!.method966(), (-117).toByte())) + this.aClass288_4659!!.anInt4950)
+            val i_1_ = ((this.aClass288_4659!!.aScreenAnchorAlignment_4955!!.method1607(Class92.anInt1524, this.aAbstractModelRenderer_4655!!.method966(), (-117).toByte())) + this.aClass288_4659!!.anInt4950)
             val i_2_ = ((this.aClass288_4659!!.aClass341_4952!!.method2679(OpenGlRenderer.anInt7666, this.aAbstractModelRenderer_4655!!.method980(), 1595)) - -this.aClass288_4659!!.anInt4951)
             this.aAbstractModelRenderer_4655!!.method974(i_1_, i_2_)
         }

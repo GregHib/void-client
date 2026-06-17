@@ -1,7 +1,7 @@
 /* Class369 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) : Interface12 {
+public open class Class369(screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) : Interface12 {
     @JvmField
     var anInt4959: Int = 0
     @JvmField
@@ -13,7 +13,7 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
     @JvmField
     var anInt4966: Int = 0
     @JvmField
-    var aClass221_4968: Class221? = null
+    var aScreenAnchorAlignment_4968: ScreenAnchorAlignment? = null
     @JvmField
     var anInt4970: Int = 0
     @JvmField
@@ -36,10 +36,10 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
             this.anInt4959 = i_3_
             this.aClass341_4973 = class341
             this.anInt4970 = i
-            this.aClass221_4968 = class221
+            this.aScreenAnchorAlignment_4968 = screenAnchorAlignment
             this.anInt4963 = i_5_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fn.<init>(" + (if (class221 != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("fn.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 

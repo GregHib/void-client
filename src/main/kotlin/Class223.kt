@@ -10,7 +10,7 @@ class Class223 internal constructor(i: Int, var anInt2896: Int) {
     }
 
     companion object {
-        var aClass221_2893: Class221?
+        var aScreenAnchorAlignment_2893: ScreenAnchorAlignment?
         var anInt2894: Int = 0
         var aBoolean2895: Boolean = false
         var anInt2897: Int = 0
@@ -25,7 +25,7 @@ class Class223 internal constructor(i: Int, var anInt2896: Int) {
             anIntArray2899 = null
             if (i.toInt() != -9) method1614(-47, null, -126, -99, 117, null, null, 90)
             anIntArrayArray2900 = null
-            aClass221_2893 = null
+            aScreenAnchorAlignment_2893 = null
         }
 
         @JvmStatic
@@ -108,7 +108,7 @@ class Class223 internal constructor(i: Int, var anInt2896: Int) {
         }
 
         init {
-            aClass221_2893 = Class221()
+            aScreenAnchorAlignment_2893 = ScreenAnchorAlignment()
             anIntArray2899 = IntArray(13)
             anIntArrayArray2900 = Array<IntArray?>(128) { IntArray(128) }
         }

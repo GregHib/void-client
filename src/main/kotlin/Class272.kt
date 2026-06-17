@@ -48,9 +48,9 @@ abstract class Class272 {
         }
 
         @JvmStatic
-        fun method2051(i: Int, i_0_: Int, class221: Class221?, class341: Class341?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
+        fun method2051(i: Int, i_0_: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
             try {
-                Class95.aClass221_1542 = class221
+                Class95.aScreenAnchorAlignment_1542 = screenAnchorAlignment
                 Class239_Sub3.anInt5871 = i_7_
                 Class239_Sub27.aClass341_6128 = class341
                 Class86.anInt1479 = i
@@ -69,7 +69,7 @@ abstract class Class272 {
                 val i_9_ = -77 % ((i_4_ - 29) / 34)
                 Class295.aBoolean3763 = true
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uu.E(" + i + ',' + i_0_ + ',' + (if (class221 != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("uu.E(" + i + ',' + i_0_ + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
             }
         }
     }

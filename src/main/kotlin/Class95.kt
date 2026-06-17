@@ -8,7 +8,7 @@ object Class95 {
     @JvmField
     var aClass45_1541: Class45? = null
     @JvmField
-    var aClass221_1542: Class221? = null
+    var aScreenAnchorAlignment_1542: ScreenAnchorAlignment? = null
     @JvmField
     var aClass348_Sub42_Sub17Array1543: Array<Class348_Sub42_Sub17?>? = arrayOfNulls(14)
 
@@ -25,7 +25,7 @@ object Class95 {
         aClass45_1541 = null
         aIntRange_1540 = null
         aClass348_Sub42_Sub17Array1543 = null
-        aClass221_1542 = null
+        aScreenAnchorAlignment_1542 = null
         if (i != 3) method869(55)
     }
 }

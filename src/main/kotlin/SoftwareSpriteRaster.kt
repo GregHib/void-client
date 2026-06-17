@@ -305,7 +305,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         @JvmField
         var anInt1619: Int = 0
         @JvmField
-        var aClass221_1620: Class221? = Class221()
+        var aScreenAnchorAlignment_1620: ScreenAnchorAlignment? = ScreenAnchorAlignment()
         @JvmField
         var anInt1621: Int = 0
         var anIntArray1626: IntArray? = IntArray(1)
@@ -322,12 +322,12 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         fun method953(i: Byte) {
             anIntArray1626 = null
             aClass45_1627 = null
-            aClass221_1620 = null
-            if (i.toInt() != 9) aClass221_1620 = null
+            aScreenAnchorAlignment_1620 = null
+            if (i.toInt() != 9) aScreenAnchorAlignment_1620 = null
         }
 
         fun method955(i: Int, i_34_: Int): Boolean {
-            if (i != 22311) aClass221_1620 = null
+            if (i != 22311) aScreenAnchorAlignment_1620 = null
             anInt1615++
             return i_34_ >= 4 && i_34_ <= 8
         }
@@ -335,7 +335,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         @JvmStatic
         fun method958(bool: Boolean, i: Int, var_renderConfig: RenderConfig?, i_61_: Int, canvas: Canvas?, class45: Class45?): Renderer? {
             try {
-                if (bool != true) aClass221_1620 = null
+                if (bool != true) aScreenAnchorAlignment_1620 = null
                 anInt1610++
                 var i_62_ = 0
                 var i_63_ = 0

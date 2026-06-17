@@ -20,7 +20,7 @@ class Class240 internal constructor(class339: Class339?, minimapSpriteRenderer: 
         anInt4676++
         val class295 = aClass339_4682!!.method2667(false, aMinimapSpriteRenderer_4685!!.anInt4918)
         if (class295 != null) {
-            val i_7_ = ((aMinimapSpriteRenderer_4685.aClass221_4922!!.method1607(Class92.anInt1524, aMinimapSpriteRenderer_4685.anInt4929, (-118).toByte())) - -aMinimapSpriteRenderer_4685.anInt4924)
+            val i_7_ = ((aMinimapSpriteRenderer_4685.aScreenAnchorAlignment_4922!!.method1607(Class92.anInt1524, aMinimapSpriteRenderer_4685.anInt4929, (-118).toByte())) - -aMinimapSpriteRenderer_4685.anInt4924)
             var i_8_ = ((aMinimapSpriteRenderer_4685.aClass341_4925!!.method2679(OpenGlRenderer.anInt7666, aMinimapSpriteRenderer_4685.anInt4923, i.toInt() xor 0x60b.inv())) - -aMinimapSpriteRenderer_4685.anInt4920)
             if (aMinimapSpriteRenderer_4685.aBoolean4914) Class348_Sub8.aRenderer6654!!.method3628(i_7_, i_8_, aMinimapSpriteRenderer_4685.anInt4929, aMinimapSpriteRenderer_4685.anInt4923, aMinimapSpriteRenderer_4685.anInt4917, 0)
             i_8_ += method1855(5, class295.aString3756, true, Class262.aClass324_3326, i_7_, i_8_) * 12

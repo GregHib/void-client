@@ -4,14 +4,14 @@ import Class62.method596
 /* Class288_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class288_Sub1 internal constructor(i: Int, class221: Class221?, class341: Class341?, i_0_: Int, i_1_: Int, i_2_: Int) : Class288(i, class221, class341, i_0_, i_1_) {
+class Class288_Sub1 internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_0_: Int, i_1_: Int, i_2_: Int) : Class288(i, screenAnchorAlignment, class341, i_0_, i_1_) {
     var anInt8577: Int = 0
 
     init {
         try {
             this.anInt8577 = i_2_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wg.<init>(" + i + ',' + (if (class221 != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wg.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
         }
     }
 

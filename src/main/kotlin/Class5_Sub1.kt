@@ -96,7 +96,7 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
         @JvmField
         var anInt8341: Int = 0
         @JvmField
-        var aClass221_8344: Class221?
+        var aScreenAnchorAlignment_8344: ScreenAnchorAlignment?
         @JvmField
         var anInt8345: Int = 0
         @JvmField
@@ -278,11 +278,11 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
         @JvmStatic
         fun method189(i: Byte) {
             if (i < 112) anInt8352 = -87
-            aClass221_8344 = null
+            aScreenAnchorAlignment_8344 = null
         }
 
         init {
-            aClass221_8344 = Class221()
+            aScreenAnchorAlignment_8344 = ScreenAnchorAlignment()
         }
     }
 }

@@ -3,7 +3,7 @@ import MinimapFlagRenderer.method1084
 /* Class125 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MinimapSpriteRenderer internal constructor(i: Int, class221: Class221?, class341: Class341?, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) : Interface12 {
+class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) : Interface12 {
     @JvmField
     var anInt4913: Int = 0
     @JvmField
@@ -15,7 +15,7 @@ class MinimapSpriteRenderer internal constructor(i: Int, class221: Class221?, cl
     @JvmField
     var anInt4920: Int = 0
     @JvmField
-    var aClass221_4922: Class221? = null
+    var aScreenAnchorAlignment_4922: ScreenAnchorAlignment? = null
     @JvmField
     var anInt4923: Int = 0
     @JvmField
@@ -44,9 +44,9 @@ class MinimapSpriteRenderer internal constructor(i: Int, class221: Class221?, cl
             this.anInt4917 = i_18_
             this.aClass341_4925 = class341
             this.anInt4928 = i_17_
-            this.aClass221_4922 = class221
+            this.aScreenAnchorAlignment_4922 = screenAnchorAlignment
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nha.<init>(" + i + ',' + (if (class221 != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nha.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ')'))
         }
     }
 

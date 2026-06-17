@@ -2357,7 +2357,7 @@ object Class66 {
                     return
                 }
                 if (i == 7006) {
-                    if (Class64_Sub3.anInt5584 == 2) Class221.aBoolean2881 = true
+                    if (Class64_Sub3.anInt5584 == 2) ScreenAnchorAlignment.aBoolean2881 = true
                     else {
                         if (Class64_Sub3.anInt5584 == 1) Class330.aBoolean4117 = true
                         else {
