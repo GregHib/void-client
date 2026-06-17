@@ -335,7 +335,7 @@ class Class64_Sub3 : Class64 {
                                                     is_53_ = aNpcSummaryDefinition_5572!!.aShortArray1951
                                                     aNpcSummaryDefinition_5572!!.aShortArray1953 = (Class50_Sub3.method470(aShortArray5576, (-107).toByte()))
                                                     is_52_ = aNpcSummaryDefinition_5572!!.aShortArray1953
-                                                    aNpcSummaryDefinition_5572!!.aByteArray1948 = (Class309.method2309(-37, aByteArray5594))
+                                                    aNpcSummaryDefinition_5572!!.aByteArray1948 = (ConfigVarProgress.method2309(-37, aByteArray5594))
                                                     is_54_ = aNpcSummaryDefinition_5572!!.aByteArray1948
                                                 }
                                                 if (is_58_ == null) {
@@ -346,7 +346,7 @@ class Class64_Sub3 : Class64 {
                                                     is_57_ = npcSummaryDefinition.aShortArray1951
                                                     npcSummaryDefinition.aShortArray1953 = (Class50_Sub3.method470(is_50_, (-120).toByte()))
                                                     is_59_ = npcSummaryDefinition.aShortArray1953
-                                                    npcSummaryDefinition.aByteArray1948 = (Class309.method2309(-91, is_51_))
+                                                    npcSummaryDefinition.aByteArray1948 = (ConfigVarProgress.method2309(-91, is_51_))
                                                     is_56_ = npcSummaryDefinition.aByteArray1948
                                                 }
                                                 var i_79_ = aShortArray5564!![i_72_]

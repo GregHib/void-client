@@ -2,7 +2,7 @@ import ItemActionPacketSender.method1237
 import FlickeringEffectsOptionState.Companion.method1753
 import WaterMaterialPass.Companion.method2148
 import CircleRasterizer.Companion.method2253
-import Class309.Companion.method2307
+import ConfigVarProgress.Companion.method2307
 import Class348_Sub40_Sub7.Companion.method3065
 import Class348_Sub9.Companion.method2780
 import Class65.Companion.method696

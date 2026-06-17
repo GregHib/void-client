@@ -2530,7 +2530,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                                     is_493_ = aHeadIconRenderer_5503!!.aShortArray2060
                                                     aHeadIconRenderer_5503!!.aShortArray2058 = (Class50_Sub3.method470(aShortArray5436, (-111).toByte()))
                                                     is_496_ = aHeadIconRenderer_5503!!.aShortArray2058
-                                                    aHeadIconRenderer_5503!!.aByteArray2069 = (Class309.method2309(-106, aByteArray5499))
+                                                    aHeadIconRenderer_5503!!.aByteArray2069 = (ConfigVarProgress.method2309(-106, aByteArray5499))
                                                     is_495_ = aHeadIconRenderer_5503!!.aByteArray2069
                                                 }
                                                 if (is_500_ == null) {
@@ -2541,7 +2541,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                                     is_497_ = headIconRenderer.aShortArray2060
                                                     headIconRenderer.aShortArray2058 = (Class50_Sub3.method470(is_491_, (-118).toByte()))
                                                     is_499_ = headIconRenderer.aShortArray2058
-                                                    headIconRenderer.aByteArray2069 = (Class309.method2309(-114, is_492_))
+                                                    headIconRenderer.aByteArray2069 = (ConfigVarProgress.method2309(-114, is_492_))
                                                     is_498_ = headIconRenderer.aByteArray2069
                                                 }
                                                 var i_520_ = aShortArray5493!![i_513_]

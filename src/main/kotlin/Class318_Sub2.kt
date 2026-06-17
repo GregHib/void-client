@@ -5,7 +5,7 @@ import AudioResampler.Companion.method1273
 import PerlinTextureProvider.Companion.method1399
 import RemoveRoofsOptionState.Companion.method1813
 import BoundsConstraintEntry.Companion.method2057
-import Class309.Companion.method2308
+import ConfigVarProgress.Companion.method2308
 
 /* Class318_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

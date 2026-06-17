@@ -232,7 +232,7 @@ import CircleHitbox.Companion.method322
 import HeightMapNoise.method2281
 import ProjectileDefinition.method2286
 import ParticleSystemRenderer.Companion.method2294
-import Class309.Companion.method2310
+import ConfigVarProgress.Companion.method2310
 import Class31.Companion.method328
 import Class311.Companion.method2317
 import Class312.Companion.method2331

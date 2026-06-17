@@ -5,7 +5,7 @@ import Class60.Companion.method589
 /* Class309 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class309 internal constructor(private val aString4807: String?) : Interface7 {
+class ConfigVarProgress internal constructor(private val aString4807: String?) : Interface7 {
     private var aBoolean4824 = false
     override fun method31(i: Int): Int {
         val i_9_ = 88 % ((-43 - i) / 62)

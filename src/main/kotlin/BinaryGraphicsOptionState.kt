@@ -84,20 +84,20 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
         fun method1770(i: Byte): Int {
             anInt5957++
             if (Class367_Sub8.anInt7365 == 0) {
-                SlotBinding.aSlotBinding_3401!!.method2025(Class309("jaclib"), false)
+                SlotBinding.aSlotBinding_3401!!.method2025(ConfigVarProgress("jaclib"), false)
                 if (SlotBinding.aSlotBinding_3401!!.method2027(119)!!.method31(28) != 100) return 1
-                if (!(SlotBinding.aSlotBinding_3401!!.method2027(71) as Class309).method2313(124)) Class79.aClient1367!!.method97(i + 24)
+                if (!(SlotBinding.aSlotBinding_3401!!.method2027(71) as ConfigVarProgress).method2313(124)) Class79.aClient1367!!.method97(i + 24)
                 Class367_Sub8.anInt7365 = 1
             }
             if (Class367_Sub8.anInt7365 == 1) {
                 Crc64Hashable.aSlotBindingArray4987 = SlotBinding.method2029(110)
                 SlotBinding.aSlotBinding_3396!!.method2025(MapArchiveSource(Class367_Sub8.aClass45_7362!!), false)
-                SlotBinding.aSlotBinding_3402!!.method2025(Class309("jaggl"), false)
-                SlotBinding.aSlotBinding_3403!!.method2025(Class309("jagdx"), false)
-                SlotBinding.aSlotBinding_3404!!.method2025(Class309("jagmisc"), false)
-                SlotBinding.aSlotBinding_3405!!.method2025(Class309("sw3d"), false)
-                SlotBinding.aSlotBinding_3406!!.method2025(Class309("hw3d"), false)
-                SlotBinding.aSlotBinding_3407!!.method2025(Class309("jagtheora"), false)
+                SlotBinding.aSlotBinding_3402!!.method2025(ConfigVarProgress("jaggl"), false)
+                SlotBinding.aSlotBinding_3403!!.method2025(ConfigVarProgress("jagdx"), false)
+                SlotBinding.aSlotBinding_3404!!.method2025(ConfigVarProgress("jagmisc"), false)
+                SlotBinding.aSlotBinding_3405!!.method2025(ConfigVarProgress("sw3d"), false)
+                SlotBinding.aSlotBinding_3406!!.method2025(ConfigVarProgress("hw3d"), false)
+                SlotBinding.aSlotBinding_3407!!.method2025(ConfigVarProgress("jagtheora"), false)
                 SlotBinding.aSlotBinding_3408!!.method2025(MapArchiveSource(SpriteLoadValidator.aClass45_4796!!), false)
                 SlotBinding.aSlotBinding_3409!!.method2025(MapArchiveSource(Class348_Sub11.aClass45_4770!!), false)
                 SlotBinding.aSlotBinding_3410!!.method2025(MapArchiveSource(Class95.aClass45_1541!!), false)
@@ -148,8 +148,8 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 i_11_++
             }
             if (bool) {
-                if (!(SlotBinding.aSlotBinding_3404!!.method2027(92) as Class309).method2313(102)) Class79.aClient1367!!.method83(true)
-                if (!(SlotBinding.aSlotBinding_3407!!.method2027(i.toInt() xor 0x64.inv()) as Class309).method2313(103)) Class38.aBoolean510 = Class79.aClient1367!!.method100(i.toInt() xor 0x12.inv())
+                if (!(SlotBinding.aSlotBinding_3404!!.method2027(92) as ConfigVarProgress).method2313(102)) Class79.aClient1367!!.method83(true)
+                if (!(SlotBinding.aSlotBinding_3407!!.method2027(i.toInt() xor 0x64.inv()) as ConfigVarProgress).method2313(103)) Class38.aBoolean510 = Class79.aClient1367!!.method100(i.toInt() xor 0x12.inv())
                 Crc64Hashable.aSlotBindingArray4987 = null
             }
             i_9_ -= Class348_Sub40_Sub24.anInt9327

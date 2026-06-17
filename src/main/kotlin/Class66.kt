@@ -1074,8 +1074,8 @@ object Class66 {
                 Class348_Sub5.aAbstractModelRenderer_6627 = null
                 MinimapFlagRenderer.aAbstractModelRenderer_1800 = Class348_Sub5.aAbstractModelRenderer_6627
                 OutputStream_Sub2.aAbstractModelRenderer_106 = MinimapFlagRenderer.aAbstractModelRenderer_1800
-                Class309.aAbstractModelRenderer_4808 = null
-                Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = Class309.aAbstractModelRenderer_4808
+                ConfigVarProgress.aAbstractModelRenderer_4808 = null
+                Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = ConfigVarProgress.aAbstractModelRenderer_4808
                 Class71.aBoolean1211 = true
                 return
             }
@@ -2996,7 +2996,7 @@ object Class66 {
             if (i == 1113) {
                 class46!!.anInt702 = anIntArray1149!![--anInt1173]
                 ConfigFlagUtil.method1916(-9343, class46)
-                if (class46.anInt704 == -1) Class309.method2311((-109).toByte(), class46.anInt830)
+                if (class46.anInt704 == -1) ConfigVarProgress.method2311((-109).toByte(), class46.anInt830)
                 return
             }
             if (i == 1114) {
@@ -3987,7 +3987,7 @@ object Class66 {
                     return
                 }
                 if (i == 3321) {
-                    anIntArray1149!![anInt1173++] = Class309.anInt4816
+                    anIntArray1149!![anInt1173++] = ConfigVarProgress.anInt4816
                     return
                 }
                 if (i == 3322) {

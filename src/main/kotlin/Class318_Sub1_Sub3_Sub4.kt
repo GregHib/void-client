@@ -1,7 +1,7 @@
 import TexGenMaterialPass.Companion.method2161
 import TypedRecordTable.Companion.method2178
 import HeightMapNoise.method2278
-import Class309.Companion.method2312
+import ConfigVarProgress.Companion.method2312
 import Class56.Companion.method527
 import Class75.Companion.method751
 import Class75.Companion.method758

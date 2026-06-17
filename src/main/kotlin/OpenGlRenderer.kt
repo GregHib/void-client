@@ -3567,14 +3567,14 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == TextureQualityOptionState.anInt6006) || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub1_sub3_sub3.plane))) {
                     Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, 100.toByte())
                     if (RemoveRoofsOptionState.anIntArray6062!![0] >= 0) {
-                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (Class348_Sub11.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < Class309.anInt4814) {
-                            Class309.anIntArray4819!![Class88.anInt1497] = ((Class369.aFontDefinition_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
-                            Class309.anIntArray4822!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![0]
-                            Class309.anIntArray4813!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![1]
-                            Class309.anIntArray4817!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10201
-                            Class309.anIntArray4806!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10234
-                            Class309.anIntArray4812!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10264
-                            Class309.aStringArray4818!![Class88.anInt1497] = class318_sub1_sub3_sub3.aString10292
+                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (Class348_Sub11.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < ConfigVarProgress.anInt4814) {
+                            ConfigVarProgress.anIntArray4819!![Class88.anInt1497] = ((Class369.aFontDefinition_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
+                            ConfigVarProgress.anIntArray4822!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![0]
+                            ConfigVarProgress.anIntArray4813!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![1]
+                            ConfigVarProgress.anIntArray4817!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10201
+                            ConfigVarProgress.anIntArray4806!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10234
+                            ConfigVarProgress.anIntArray4812!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10264
+                            ConfigVarProgress.aStringArray4818!![Class88.anInt1497] = class318_sub1_sub3_sub3.aString10292
                             Class88.anInt1497++
                         }
                         var i_323_ = RemoveRoofsOptionState.anIntArray6062!![1] + i
@@ -4016,23 +4016,23 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             }
             val i_437_ = i_316_ + (Class369.aFontDefinition_4962!!.anInt1993 + Class369.aFontDefinition_4962!!.anInt1988)
             for (i_438_ in 0..<Class88.anInt1497) {
-                val i_439_ = Class309.anIntArray4822!![i_438_]
-                var i_440_ = Class309.anIntArray4813!![i_438_]
-                val i_441_ = Class309.anIntArray4819!![i_438_]
+                val i_439_ = ConfigVarProgress.anIntArray4822!![i_438_]
+                var i_440_ = ConfigVarProgress.anIntArray4813!![i_438_]
+                val i_441_ = ConfigVarProgress.anIntArray4819!![i_438_]
                 var bool = true
                 while (bool) {
                     bool = false
                     var i_442_ = 0
                     while (i_438_ > i_442_) {
-                        if (i_440_ - -2 > Class309.anIntArray4813!![i_442_] + -i_437_ && (-i_437_ + i_440_ < 2 + Class309.anIntArray4813!![i_442_]) && ((Class309.anIntArray4822!![i_442_] - -Class309.anIntArray4819!![i_442_]) > i_439_ + -i_441_) && ((-Class309.anIntArray4819!![i_442_] + Class309.anIntArray4822!![i_442_]) < i_439_ + i_441_) && (-i_437_ + Class309.anIntArray4813!![i_442_] < i_440_)) {
-                            i_440_ = -i_437_ + Class309.anIntArray4813!![i_442_]
+                        if (i_440_ - -2 > ConfigVarProgress.anIntArray4813!![i_442_] + -i_437_ && (-i_437_ + i_440_ < 2 + ConfigVarProgress.anIntArray4813!![i_442_]) && ((ConfigVarProgress.anIntArray4822!![i_442_] - -ConfigVarProgress.anIntArray4819!![i_442_]) > i_439_ + -i_441_) && ((-ConfigVarProgress.anIntArray4819!![i_442_] + ConfigVarProgress.anIntArray4822!![i_442_]) < i_439_ + i_441_) && (-i_437_ + ConfigVarProgress.anIntArray4813!![i_442_] < i_440_)) {
+                            i_440_ = -i_437_ + ConfigVarProgress.anIntArray4813!![i_442_]
                             bool = true
                         }
                         i_442_++
                     }
                 }
-                Class309.anIntArray4813!![i_438_] = i_440_
-                val string = Class309.aStringArray4818!![i_438_]
+                ConfigVarProgress.anIntArray4813!![i_438_] = i_440_
+                val string = ConfigVarProgress.aStringArray4818!![i_438_]
                 val i_443_ = Class369.aFontDefinition_4962!!.method1183(true, string)
                 var i_444_ = i_439_ + i_317_
                 var i_445_ = -Class369.aFontDefinition_4962!!.anInt1988 + i_440_ + i
@@ -4040,68 +4040,68 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 var i_447_ = i_440_ + i - -Class369.aFontDefinition_4962!!.anInt1993
                 if (Class348_Sub40_Sub31.anInt9408 == 0) {
                     var i_448_ = 16776960
-                    if (Class309.anIntArray4817!![i_438_] < 6) i_448_ = (OverlayColorTable.anIntArray1757!![Class309.anIntArray4817!![i_438_]])
-                    if (Class309.anIntArray4817!![i_438_] == 6) i_448_ = (if (TextureQualityOptionState.anInt6006 % 20 >= 10) 16776960 else 16711680)
-                    if (Class309.anIntArray4817!![i_438_] == 7) i_448_ = if (TextureQualityOptionState.anInt6006 % 20 < 10) 255 else 65535
-                    if (Class309.anIntArray4817!![i_438_] == 8) i_448_ = (if (TextureQualityOptionState.anInt6006 % 20 >= 10) 8454016 else 45056)
-                    if (Class309.anIntArray4817!![i_438_] == 9) {
-                        val i_449_ = -Class309.anIntArray4812!![i_438_] + 150
+                    if (ConfigVarProgress.anIntArray4817!![i_438_] < 6) i_448_ = (OverlayColorTable.anIntArray1757!![ConfigVarProgress.anIntArray4817!![i_438_]])
+                    if (ConfigVarProgress.anIntArray4817!![i_438_] == 6) i_448_ = (if (TextureQualityOptionState.anInt6006 % 20 >= 10) 16776960 else 16711680)
+                    if (ConfigVarProgress.anIntArray4817!![i_438_] == 7) i_448_ = if (TextureQualityOptionState.anInt6006 % 20 < 10) 255 else 65535
+                    if (ConfigVarProgress.anIntArray4817!![i_438_] == 8) i_448_ = (if (TextureQualityOptionState.anInt6006 % 20 >= 10) 8454016 else 45056)
+                    if (ConfigVarProgress.anIntArray4817!![i_438_] == 9) {
+                        val i_449_ = -ConfigVarProgress.anIntArray4812!![i_438_] + 150
                         if (i_449_ < 50) i_448_ = 1280 * i_449_ + 16711680
                         else if (i_449_ < 100) i_448_ = -(327680 * i_449_) + 16384000 + 16776960
                         else if (i_449_ < 150) i_448_ = 5 * (-100 + i_449_) + 65280
                     }
-                    if (Class309.anIntArray4817!![i_438_] == 10) {
-                        val i_450_ = 150 - Class309.anIntArray4812!![i_438_]
+                    if (ConfigVarProgress.anIntArray4817!![i_438_] == 10) {
+                        val i_450_ = 150 - ConfigVarProgress.anIntArray4812!![i_438_]
                         if (i_450_ >= 50) {
                             if (i_450_ >= 100) {
                                 if (i_450_ < 150) i_448_ = (-(5 * i_450_) - -500 + 327680 * i_450_ - 32767745)
                             } else i_448_ = 33095935 + -(327680 * i_450_)
                         } else i_448_ = 16711680 + 5 * i_450_
                     }
-                    if (Class309.anIntArray4817!![i_438_] == 11) {
-                        val i_451_ = 150 - Class309.anIntArray4812!![i_438_]
+                    if (ConfigVarProgress.anIntArray4817!![i_438_] == 11) {
+                        val i_451_ = 150 - ConfigVarProgress.anIntArray4812!![i_438_]
                         if (i_451_ >= 50) {
                             if (i_451_ < 100) i_448_ = 327685 * (-50 + i_451_) + 65280
                             else if (i_451_ < 150) i_448_ = 16777215 + -(327680 * (i_451_ - 100))
                         } else i_448_ = 16777215 + -(i_451_ * 327685)
                     }
                     val i_452_ = 0xffffff.inv() or i_448_
-                    if (Class309.anIntArray4806!![i_438_] == 0) {
+                    if (ConfigVarProgress.anIntArray4806!![i_438_] == 0) {
                         NodeDeque.aClass324_3326!!.method2575(115.toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_446_ -= i_443_ shr 1
                     }
-                    if (Class309.anIntArray4806!![i_438_] == 1) {
+                    if (ConfigVarProgress.anIntArray4806!![i_438_] == 1) {
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
                         NodeDeque.aClass324_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, TextureQualityOptionState.anInt6006, false)
                         i_447_ += 5
                         i_445_ -= 5
                     }
-                    if (Class309.anIntArray4806!![i_438_] == 2) {
+                    if (ConfigVarProgress.anIntArray4806!![i_438_] == 2) {
                         i_447_ += 5
                         i_446_ -= -5 + (i_443_ shr 1)
                         NodeDeque.aClass324_3326!!.method2581(string, i_452_, (TextureQualityOptionState.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
                         i_445_ -= 5
                         i_444_ -= (i_443_ shr 1) - -5
                     }
-                    if (Class309.anIntArray4806!![i_438_] == 3) {
+                    if (ConfigVarProgress.anIntArray4806!![i_438_] == 3) {
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
                         i_447_ += 7
-                        NodeDeque.aClass324_3326!!.method2577(TextureQualityOptionState.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
+                        NodeDeque.aClass324_3326!!.method2577(TextureQualityOptionState.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -ConfigVarProgress.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
                         i_445_ -= 7
                     }
-                    if (Class309.anIntArray4806!![i_438_] == 4) {
-                        val i_453_ = ((150 + -Class309.anIntArray4812!![i_438_]) * (Class369.aFontDefinition_4962!!.method1183(true, string) + 100) / 150)
+                    if (ConfigVarProgress.anIntArray4806!![i_438_] == 4) {
+                        val i_453_ = ((150 + -ConfigVarProgress.anIntArray4812!![i_438_]) * (Class369.aFontDefinition_4962!!.method1183(true, string) + 100) / 150)
                         Class348_Sub8.aRenderer6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
                         i_444_ += 50 - i_453_
                         i_446_ += -i_453_ + 50
                         NodeDeque.aClass324_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
                         Class348_Sub8.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i + i_315_)
                     }
-                    if (Class309.anIntArray4806!![i_438_] == 5) {
-                        val i_454_ = 150 + -Class309.anIntArray4812!![i_438_]
+                    if (ConfigVarProgress.anIntArray4806!![i_438_] == 5) {
+                        val i_454_ = 150 + -ConfigVarProgress.anIntArray4812!![i_438_]
                         var i_455_ = 0
                         if (i_454_ >= 25) {
                             if (i_454_ > 125) i_455_ = i_454_ + -125
