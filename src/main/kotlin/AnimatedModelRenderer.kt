@@ -1,4 +1,4 @@
-import Class348_Sub16_Sub2.Companion.method2834
+import PcmStreamBuffer.Companion.method2834
 
 /* Class105_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -61,8 +61,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3850(78.toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(81, i_18_)
         aHa_Sub3_8407.method3923(true, i)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, Class348_Sub40_Sub39.aClass70_9485)
-        aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
+        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aClass70_9485)
         aHa_Sub3_8407.method3894(-28186, i_17_)
         if (aBoolean8418) {
             val f_21_ = method966().toFloat()
@@ -106,8 +106,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3850(((-46).toByte()).toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(98, i_40_)
         aHa_Sub3_8407.method3923(true, i_38_)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, Class348_Sub40_Sub39.aClass70_9485)
-        aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
+        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aClass70_9485)
         aHa_Sub3_8407.method3894(-28186, i_39_)
         val bool = aBoolean8391 && anInt8419 == 0 && anInt8397 == 0
         val bool_42_ = (aBoolean8396 && anInt8400 == 0 && anInt8416 == 0)
@@ -323,8 +323,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3850(65.toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(58, i_99_)
         aHa_Sub3_8407.method3923(true, i_97_)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, Class348_Sub40_Sub39.aClass70_9485)
-        aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
+        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aClass70_9485)
         aHa_Sub3_8407.method3894(-28186, i_98_)
         class101_sub2_101_.method932(1.0f, anInterface18_Impl3_8403.method71(((-44).toByte()).toByte(), anInt8417.toFloat()), anInterface18_Impl3_8403.method67(anInt8411.toFloat(), 101), ((-30).toByte()).toByte())
         if (aBoolean8418) {
@@ -364,8 +364,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3850(((-67).toByte()).toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(96, i_105_)
         aHa_Sub3_8407.method3923(true, i_103_)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, Class348_Sub40_Sub39.aClass70_9485)
-        aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
+        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aClass70_9485)
         aHa_Sub3_8407.method3894(-28186, i_104_)
         class101_sub2.method932(0.0f, anInt8417.toFloat(), anInt8411.toFloat(), ((-44).toByte()).toByte())
         class101_sub2.method891(i, i_102_, 0)
@@ -435,7 +435,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         anInt8417 = i_118_
         anInt8411 = i
         aHa_Sub3_8407 = var_ha_Sub3
-        anInterface18_Impl3_8403 = var_ha_Sub3.method3861(i_118_, ((-84).toByte()).toByte(), i, Class68.aClass68_1183, (if (bool) GroundItemRenderState.aTextureFormatInfo_1662 else Class348_Sub45.aTextureFormatInfo_7103))
+        anInterface18_Impl3_8403 = var_ha_Sub3.method3861(i_118_, ((-84).toByte()).toByte(), i, Class68.aClass68_1183, (if (bool) GroundItemRenderState.aTextureFormatInfo_1662 else TimedRecordAccessor.aTextureFormatInfo_7103))
         anInterface18_Impl3_8403!!.method66(true, true, 25688)
         aBoolean8410 = (i != anInterface18_Impl3_8403.method69(false))
         aBoolean8408 = (i_118_ != anInterface18_Impl3_8403.method72(-39))
@@ -457,7 +457,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             aBoolean8396 = !aBoolean8410 && anInterface18_Impl3_8403.method73(91)
             aBoolean8391 = !aBoolean8408 && anInterface18_Impl3_8403.method73(101)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jd.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_119_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_120_ + ',' + i_121_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("jd.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_119_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_120_ + ',' + i_121_ + ')'))
         }
     }
 
@@ -506,7 +506,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         var anInt8423: Int = 0
 
         @JvmStatic
-        fun method987(i: Int, class348_sub49: Class348_Sub49): Class369_Sub2 {
+        fun method987(i: Int, class348_sub49: Buffer): Class369_Sub2 {
             anInt8405++
             val class369 = method2834(((-118).toByte()).toByte(), class348_sub49)
             if (i != 743571200) method989(-21, 36, 81)
@@ -531,7 +531,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
 
         fun method989(i: Int, i_92_: Int, i_93_: Int): Boolean {
             anInt8401++
-            if (LinkedListIterator.method1241(i_93_, i, i_92_ xor 0x1fe) or ((0x10000 and i) != 0) || Class348_Sub47.method3325(i, i_93_, true)) return true
+            if (LinkedListIterator.method1241(i_93_, i, i_92_ xor 0x1fe) or ((0x10000 and i) != 0) || OutgoingPacketNode.method3325(i, i_93_, true)) return true
             if (i_92_ != -385) return false
             return (i_93_ and 0x37) == 0 && BoundsConstraintEntry.method2056(i, 120, i_93_)
         }

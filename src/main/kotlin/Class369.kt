@@ -39,7 +39,7 @@ public open class Class369(screenAnchorAlignment: ScreenAnchorAlignment?, tileRe
             this.aScreenAnchorAlignment_4968 = screenAnchorAlignment
             this.anInt4963 = i_5_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fn.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fn.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 

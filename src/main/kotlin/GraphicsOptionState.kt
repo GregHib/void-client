@@ -4,7 +4,7 @@ import ChatEffectsOptionState.Companion.method1728
 * Visit http://jode.sourceforge.net/
 */
 abstract class GraphicsOptionState {
-    var aClass348_Sub51_3136: Class348_Sub51
+    var aClass348_Sub51_3136: DisplaySettingsConfig
     var anInt3138: Int
     abstract fun method1710(i: Int): Int
 
@@ -14,12 +14,12 @@ abstract class GraphicsOptionState {
 
     abstract fun method1716(bool: Boolean)
 
-    internal constructor(class348_sub51: Class348_Sub51) {
+    internal constructor(class348_sub51: DisplaySettingsConfig) {
         this.aClass348_Sub51_3136 = class348_sub51
         this.anInt3138 = method1710(20014)
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) {
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) {
         this.aClass348_Sub51_3136 = class348_sub51
         this.anInt3138 = i
     }
@@ -60,7 +60,7 @@ abstract class GraphicsOptionState {
         fun method1709(i: Int): Array<HudTabPanel?> {
             if (i > -110) method1715(97)
             anInt3141++
-            return (arrayOf<HudTabPanel?>(Class68.aHudTabPanel_1189, Class348_Sub40_Sub20.aHudTabPanel_9263, ParticleEmitterDef.aHudTabPanel_4953))
+            return (arrayOf<HudTabPanel?>(Class68.aHudTabPanel_1189, NoiseTextureNode.aHudTabPanel_9263, ParticleEmitterDef.aHudTabPanel_4953))
         }
 
         @JvmStatic
@@ -71,13 +71,13 @@ abstract class GraphicsOptionState {
                 if (i != 7) aClass45_3146 = null
                 RectangleRegion.aClass45_1940 = class45
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("su.Q(" + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (class45_1_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("su.Q(" + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (class45_1_ != null) "{...}" else "null") + ')'))
             }
         }
 
         @JvmStatic
         fun method1713(bool: Boolean, i: Int) {
-            method1728(Class348_Sub42_Sub8_Sub2.anInt10432, -1, RenderNode.anInt9721, bool, LocTypeDefinition.anInt4017)
+            method1728(HardCacheEntryReference.anInt10432, -1, RenderNode.anInt9721, bool, LocTypeDefinition.anInt4017)
             if (i == 520) anInt3137++
         }
 
@@ -94,7 +94,7 @@ abstract class GraphicsOptionState {
 
         @JvmStatic
         fun method1717(i: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
-            Class348_Sub33.aByteArrayArrayArray6962 = Array<Array<ByteArray?>?>(i_6_) { Array<ByteArray?>(i_5_) { ByteArray(i_4_) } }
+            AnimationFrameDefinition.aByteArrayArrayArray6962 = Array<Array<ByteArray?>?>(i_6_) { Array<ByteArray?>(i_5_) { ByteArray(i_4_) } }
             if (i != 19278) method1717(35, 126, -83, 85)
             anInt3134++
         }

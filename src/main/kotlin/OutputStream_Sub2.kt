@@ -63,18 +63,18 @@ class OutputStream_Sub2 : OutputStream() {
         fun method137(i: Int, i_4_: Int, i_5_: Int): Boolean {
             anInt102++
             val i_6_ = -114 / ((i_4_ - 36) / 55)
-            return ((0x70000 and i_5_) != 0) or Class348_Sub40_Sub9.method3073(i, i_5_, 50.toByte()) || CompassSmoother.method2015(i_5_, i, 7)
+            return ((0x70000 and i_5_) != 0) or EdgeDetectTextureNode.method3073(i, i_5_, 50.toByte()) || CompassSmoother.method2015(i_5_, i, 7)
         }
 
         @JvmStatic
-        fun method138(class348_sub42_sub12: Class348_Sub42_Sub12, bool: Boolean): Int {
+        fun method138(class348_sub42_sub12: ContactEntry, bool: Boolean): Int {
             anInt107++
             var string = IntHashSet.method2367((-126).toByte(), class348_sub42_sub12)
             var `is`: IntArray? = null
             if (!WidgetNodeLink.method1197(-12081, (class348_sub42_sub12.anInt9608))) {
                 if (class348_sub42_sub12.anInt9599 == -1) {
                     if (Class367_Sub8.method3549(class348_sub42_sub12.anInt9608, (-44).toByte())) {
-                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as? Class348_Sub22?)
+                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as? NpcReference?)
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)!!
                             var class79 = (npc.aClass79_10505)
@@ -84,8 +84,8 @@ class OutputStream_Sub2 : OutputStream() {
                     } else if (RemoveRoofsOptionState.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                         val `object`: Any? = null
                         var class51: Class51?
-                        if ((class348_sub42_sub12.anInt9608) == 1001) class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
-                        else class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
+                        if ((class348_sub42_sub12.anInt9608) == 1001) class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
+                        else class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
                         if (class51.anIntArray945 != null) class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
                         if (class51 != null) `is` = class51.anIntArray917
                     }

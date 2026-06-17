@@ -76,22 +76,22 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
         @JvmStatic
         fun method204(i: Int) {
             anInt155++
-            while (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3415(-62, Class348_Sub40_Sub25.anInt9341) >= 15) {
+            while (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3415(-62, RadialTextureNode.anInt9341) >= 15) {
                 val i_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 15)
                 if (i_18_ == 32767) break
                 var bool = false
-                var class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_18_.toLong(), -6008) as Class348_Sub22?)
+                var class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_18_.toLong(), -6008) as NpcReference?)
                 if (class348_sub22 == null) {
                     val npc = Npc()
                     npc.anInt10290 = i_18_
-                    class348_sub22 = Class348_Sub22(npc)
+                    class348_sub22 = NpcReference(npc)
                     NpcEntityUpdater.aClass356_3654!!.method3483(57.toByte(), i_18_.toLong(), class348_sub22)
                     bool = true
-                    Class348_Sub40_Sub23.aClass348_Sub22Array9319!![Class348_Sub32.anInt6930++] = class348_sub22
+                    TurbulenceTextureNode.aClass348_Sub22Array9319!![TerrainShadowBuilderGl2.anInt6930++] = class348_sub22
                 }
                 val npc = (class348_sub22.aNpc_6859)!!
                 Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_18_
-                npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
+                npc.anInt10306 = NullOggStream.anInt9041
                 if ((npc.aClass79_10505) != null && npc.aClass79_10505!!.method793(0)) method181(true, npc)
                 val i_19_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 2)
                 val i_20_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
@@ -126,7 +126,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 class318_sub5.anInt6420 = i_27_
                 NpcDefinition.aDoublyLinkedNodeList_2957!!.method1869(-103, class318_sub5)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("go.F(" + i + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("go.F(" + i + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ')'))
             }
         }
 
@@ -164,26 +164,26 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                         var_renderer.aa(-16 + (LocTypeDefinition.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 2)
                         var i_41_ = ViewportTransform.anInt3676
                         while (((i_41_ < i_37_ + ViewportTransform.anInt3676) && Class369_Sub2.anInt8587 > i_41_)) {
-                            val strings = (Class348_Sub40_Sub23.method3113('\u0008', true, ArbFogMaterialPass.aStringArray6200!![i_41_]!!))
+                            val strings = (TurbulenceTextureNode.method3113('\u0008', true, ArbFogMaterialPass.aStringArray6200!![i_41_]!!))
                             val i_42_ = (-16 + LocTypeDefinition.anInt4017 + -8) / strings.size
                             for (i_43_ in strings.indices) {
                                 val i_44_ = i_42_ * i_43_ + 8
                                 var_renderer.KA(i_35_ + i_44_, i_36_, i_42_ + i_35_ - (-i_44_ - -8), i_36_ + 350)
-                                GameAppletFrame.aFont_20!!.method2576(BackgroundWorkerThread.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-ViewportTransform.anInt3676 + i_41_) * Class68.anInt1188) + (-Class348_Sub31_Sub2.anInt9077 + i_36_ - (-350 - (-2 + -(ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
+                                GameAppletFrame.aFont_20!!.method2576(BackgroundWorkerThread.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-ViewportTransform.anInt3676 + i_41_) * Class68.anInt1188) + (-ProducerImageSurface.anInt9077 + i_36_ - (-350 - (-2 + -(ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
                             }
                             i_41_++
                         }
                     }
                     WorldMapRenderer.aFont_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (LocTypeDefinition.anInt4017 + i_35_ + -25), -121, -16777216)
                     var_renderer.KA(i_35_, i_36_, i_35_ - -LocTypeDefinition.anInt4017, i_36_ - -350)
-                    var_renderer.method3649((-80).toByte(), LocTypeDefinition.anInt4017, -Class348_Sub31_Sub2.anInt9077 + (350 + i_36_), -1, i_35_)
+                    var_renderer.method3649((-80).toByte(), LocTypeDefinition.anInt4017, -ProducerImageSurface.anInt9077 + (350 + i_36_), -1, i_35_)
                     NodeDeque.aFont_3326!!.method2576("--> " + BackgroundWorkerThread.method1909(31.toByte(), Class363.aString4461!!), -1, (i_36_ - (-350 + Class369.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
                     if (!SizeBoundedSoftCache.aBoolean2329) break
                     var i_45_ = -1
                     if (Class367_Sub11.anInt7396 % 30 > 15) i_45_ = 16777215
-                    var_renderer.method3660(10 + (i_35_ - -(Class369.aFontDefinition_4962!!.method1183(true, "--> " + (BackgroundWorkerThread.method1909(31.toByte(), Class363.aString4461!!).substring(0, Class348_Sub38.anInt7006))))), i_45_, 12, 350 + (i_36_ + -Class369.aFontDefinition_4962!!.anInt1993 - 11), true)
+                    var_renderer.method3660(10 + (i_35_ - -(Class369.aFontDefinition_4962!!.method1183(true, "--> " + (BackgroundWorkerThread.method1909(31.toByte(), Class363.aString4461!!).substring(0, TerrainShadowBuilderGl3.anInt7006))))), i_45_, 12, 350 + (i_36_ + -Class369.aFontDefinition_4962!!.anInt1993 - 11), true)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("go.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("go.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
                 }
                 break
             } while (false)

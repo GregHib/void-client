@@ -8,9 +8,9 @@ class NoOpGraphicsOptionState : GraphicsOptionState {
         return 0
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1716(bool: Boolean) {
         anInt6045++
@@ -66,7 +66,7 @@ class NoOpGraphicsOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1804(i: Int) {
-            Class348_Sub42_Sub10.method3211(60.toByte())
+            ParameterizedText.method3211(60.toByte())
             if (i != 8839) anInt6042 = 63
             anInt6040++
         }

@@ -1,6 +1,6 @@
 import ParticleEmitterFactory.Companion.method1885
 import SpriteStore.Companion.method303
-import Class348_Sub16_Sub2.Companion.method2832
+import PcmStreamBuffer.Companion.method2832
 import Class59_Sub2_Sub1.Companion.method565
 import Class6.Companion.method206
 import kotlin.math.sqrt

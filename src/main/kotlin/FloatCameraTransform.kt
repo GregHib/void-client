@@ -385,7 +385,7 @@ class FloatCameraTransform : AbstractCameraTransform() {
             this.aFloat5710 = (class101_sub2_53_.aFloat5710 + ((class101_sub2_53_.aFloat5732 * class101_sub2_54_.aFloat5724) + ((class101_sub2_54_.aFloat5710 * class101_sub2_53_.aFloat5722) + (class101_sub2_53_.aFloat5708 * (class101_sub2_54_.aFloat5729)))))
             this.aFloat5724 = ((class101_sub2_53_.aFloat5691 * class101_sub2_54_.aFloat5710) + (class101_sub2_53_.aFloat5736 * class101_sub2_54_.aFloat5729) + (class101_sub2_54_.aFloat5724 * class101_sub2_53_.aFloat5716) + class101_sub2_53_.aFloat5724)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("haa.HA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (abstractCameraTransform_52_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("haa.HA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (abstractCameraTransform_52_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -711,40 +711,40 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
         fun method921(i: Byte, bool: Boolean) {
             if (i.toInt() == 99) {
-                var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? Class348_Sub9
+                var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState
                 while (class348_sub9 != null) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null
                     }
                     if (class348_sub9.aClass348_Sub16_Sub5_6673 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6673!!)
+                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6673!!)
                         class348_sub9.aClass348_Sub16_Sub5_6673 = null
                     }
                     class348_sub9.method2715(94.toByte())
-                    class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(120.toByte()) as? Class348_Sub9
+                    class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(120.toByte()) as? CharacterRenderState
                 }
                 anInt5739++
                 if (bool) {
                     run {
-                        var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? Class348_Sub9
+                        var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? CharacterRenderState
                         while (class348_sub9 != null) {
                             if ((class348_sub9!!.aClass348_Sub16_Sub5_6676) != null) {
-                                Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9!!.aClass348_Sub16_Sub5_6676!!)
+                                SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9!!.aClass348_Sub16_Sub5_6676!!)
                                 class348_sub9!!.aClass348_Sub16_Sub5_6676 = null
                             }
                             class348_sub9!!.method2715(66.toByte())
-                            class348_sub9 = (Client.aNodeDeque_5185!!.method1990(69.toByte()) as? Class348_Sub9)
+                            class348_sub9 = (Client.aNodeDeque_5185!!.method1990(69.toByte()) as? CharacterRenderState)
                         }
                     }
-                    var class348_sub9 = Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3484(0) as? Class348_Sub9
+                    var class348_sub9 = CompletedResourceRequest.aClass356_10465!!.method3484(0) as? CharacterRenderState
                     while (class348_sub9 != null) {
                         if ((class348_sub9!!.aClass348_Sub16_Sub5_6676) != null) {
-                            Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9!!.aClass348_Sub16_Sub5_6676!!)
+                            SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9!!.aClass348_Sub16_Sub5_6676!!)
                             class348_sub9!!.aClass348_Sub16_Sub5_6676 = null
                         }
                         class348_sub9!!.method2715(112.toByte())
-                        class348_sub9 = Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3482(0) as? Class348_Sub9
+                        class348_sub9 = CompletedResourceRequest.aClass356_10465!!.method3482(0) as? CharacterRenderState
                     }
                 }
             }

@@ -1,4 +1,4 @@
-import Class348_Sub1_Sub1.Companion.method2726
+import TerrainTileShape.Companion.method2726
 import kotlin.math.ceil
 import kotlin.math.cos
 import kotlin.math.floor
@@ -132,7 +132,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
         var anInt2171: Int = 0
 
         @JvmStatic
-        fun method1269(i: Int): Class348_Sub42_Sub14? {
+        fun method1269(i: Int): InterfaceComponentGroup? {
             if (i != -17096) return null
             anInt2168++
             return Class75.aClass348_Sub42_Sub14_1243
@@ -153,13 +153,13 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
             var i = BooleanGraphicsOptionState.anInt5850
             var i_24_ = 0
             while (`is`.size > i_24_) {
-                val class321 = Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1408(-12637, `is`[i_24_])
+                val class321 = TheoraVideoStream.aLocTypeDefLoader_9036!!.method1408(-12637, `is`[i_24_])
                 if (class321.anInt4000 != -1) {
                     var abstractModelRenderer = (SkeletalAnimFrameLoader.aClass60_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
                         val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, class321.anInt4000, 0)
                         if (spriteImage != null) {
-                            abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(spriteImage, true)
+                            abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(spriteImage, true)
                             SkeletalAnimFrameLoader.aClass60_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
                         }
                     }

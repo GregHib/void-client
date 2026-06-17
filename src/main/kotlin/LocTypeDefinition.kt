@@ -26,7 +26,7 @@ class LocTypeDefinition {
         if (aString4010 == null) aString4010 = aString4012
     }
 
-    private fun method2550(class348_sub49: Class348_Sub49, i: Int, i_0_: Byte) {
+    private fun method2550(class348_sub49: Buffer, i: Int, i_0_: Byte) {
         if (i_0_.toInt() != 52) anIntArray4014 = null
         anInt4013++
         if (i != 1) {
@@ -74,7 +74,7 @@ class LocTypeDefinition {
                                 anIntArrayArray4002 = Array<IntArray?>(i_13_) { IntArray(2) }
                                 for (i_14_ in 0..<i_13_) {
                                     anIntArrayArray4002[i_14_]!![0] = class348_sub49.readUnsignedByte(255)
-                                    anIntArrayArray4002[i_14_]!![1] = (class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i_0_.toInt(), 203)))
+                                    anIntArrayArray4002[i_14_]!![1] = (class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i_0_.toInt(), 203)))
                                 }
                             } else if (i == 15) class348_sub49.readUnsignedShort(842397944)
                             else if (i == 17) this.anInt4000 = class348_sub49.readUnsignedShort(842397944)
@@ -116,10 +116,10 @@ class LocTypeDefinition {
                                 while (i_9_ > i_11_) {
                                     val bool = (class348_sub49.readUnsignedByte(255) == 1)
                                     val i_12_ = class348_sub49.readMedium(-1)
-                                    val class348: Class348?
-                                    if (!bool) class348 = (Class348_Sub35(class348_sub49.readInt((-126).toByte())))
-                                    else class348 = (Class348_Sub50(class348_sub49.readString((-98).toByte())))
-                                    aClass356_4006!!.method3483(123.toByte(), i_12_.toLong(), class348)
+                                    val linkedListNode: LinkedListNode?
+                                    if (!bool) linkedListNode = (IntKeyNode(class348_sub49.readInt((-126).toByte())))
+                                    else linkedListNode = (StringCacheNode(class348_sub49.readString((-98).toByte())))
+                                    aClass356_4006!!.method3483(123.toByte(), i_12_.toLong(), linkedListNode)
                                     i_11_++
                                 }
                             }
@@ -130,7 +130,7 @@ class LocTypeDefinition {
         } else aString4012 = class348_sub49.method3371(-13487)
     }
 
-    fun method2551(i: Int, class348_sub49: Class348_Sub49) {
+    fun method2551(i: Int, class348_sub49: Buffer) {
         val i_19_ = -14 / ((i - -56) / 61)
         anInt3995++
         while (true) {

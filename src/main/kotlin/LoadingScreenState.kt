@@ -58,12 +58,12 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                     if (color_0_ == null) color_0_ = Color(140, 17, 17)
                     if (color_2_ == null) color_2_ = Color(255, 255, 255)
                     try {
-                        if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
+                        if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432))
                         val graphics_3_ = WidgetRedrawRegion.anImage4249!!.getGraphics()
                         graphics_3_.setColor(Color.black)
-                        graphics_3_.fillRect(0, 0, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+                        graphics_3_.fillRect(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
                         val i_4_ = -152 + LocTypeDefinition.anInt4017 / 2
-                        val i_5_ = -18 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2
+                        val i_5_ = -18 + HardCacheEntryReference.anInt10432 / 2
                         graphics_3_.setColor(color_0_)
                         graphics_3_.drawRect(i_4_, i_5_, 303, 33)
                         graphics_3_.setColor(color)
@@ -75,17 +75,17 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics_3_.setColor(color_2_)
                         if (i_1_ > -42) anIntArray2631 = null
                         graphics_3_.drawString(string, (i_4_ + (304 - string!!.length * 6) / 2), i_5_ + 22)
-                        if (Class348_Sub42_Sub16.aString9665 != null) {
+                        if (AsyncResourceRequest.aString9665 != null) {
                             graphics_3_.setFont(Class351.aFont4329)
                             graphics_3_.setColor(color_2_)
-                            graphics_3_.drawString(Class348_Sub42_Sub16.aString9665, (LocTypeDefinition.anInt4017 / 2 - (Class348_Sub42_Sub16.aString9665!!.length * 6 / 2)), -26 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2)
+                            graphics_3_.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 - (AsyncResourceRequest.aString9665!!.length * 6 / 2)), -26 + HardCacheEntryReference.anInt10432 / 2)
                         }
                         graphics.drawImage(WidgetRedrawRegion.anImage4249, 0, 0, null)
                     } catch (exception: Exception) {
                         graphics.setColor(Color.black)
-                        graphics.fillRect(0, 0, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+                        graphics.fillRect(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
                         val i_6_ = -152 + LocTypeDefinition.anInt4017 / 2
-                        val i_7_ = Class348_Sub42_Sub8_Sub2.anInt10432 / 2 + -18
+                        val i_7_ = HardCacheEntryReference.anInt10432 / 2 + -18
                         graphics.setColor(color_0_)
                         graphics.drawRect(i_6_, i_7_, 303, 33)
                         graphics.setColor(color)
@@ -95,10 +95,10 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics.fillRect(3 * i + 2 + i_6_, 2 + i_7_, -(i * 3) + 300, 30)
                         graphics.setFont(Class351.aFont4329)
                         graphics.setColor(color_2_)
-                        if (Class348_Sub42_Sub16.aString9665 != null) {
+                        if (AsyncResourceRequest.aString9665 != null) {
                             graphics.setFont(Class351.aFont4329)
                             graphics.setColor(color_2_)
-                            graphics.drawString(Class348_Sub42_Sub16.aString9665, (LocTypeDefinition.anInt4017 / 2 + -(6 * Class348_Sub42_Sub16.aString9665!!.length / 2)), Class348_Sub42_Sub8_Sub2.anInt10432 / 2 - 26)
+                            graphics.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 + -(6 * AsyncResourceRequest.aString9665!!.length / 2)), HardCacheEntryReference.anInt10432 / 2 - 26)
                         }
                         graphics.drawString(string, i_6_ - -((304 + -(string!!.length * 6)) / 2), 22 + i_7_)
                     }
@@ -106,13 +106,13 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                     ParticleSystemRenderer.aCanvas3869!!.repaint()
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rc.A(" + i + ',' + (if (color != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (color_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (color_2_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("rc.A(" + i + ',' + (if (color != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (color_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (color_2_ != null) "{...}" else "null") + ')'))
             }
         }
 
         @JvmStatic
         fun method1457(i: Int, i_8_: Int): Int {
-            if (Class348_Sub1_Sub2.aByteArrayArray8816 != null) return Class348_Sub1_Sub2.aByteArrayArray8816!![i]!![i_8_].toInt() and 0xff
+            if (HashTileShape.aByteArrayArray8816 != null) return HashTileShape.aByteArrayArray8816!![i]!![i_8_].toInt() and 0xff
             return 0
         }
 

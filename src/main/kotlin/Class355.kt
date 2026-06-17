@@ -1,4 +1,4 @@
-import Class348_Sub17.Companion.method2929
+import SoundBankPatch.Companion.method2929
 
 /* Class355 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -11,16 +11,16 @@ class Class355 internal constructor(i: Int, class45: Class45?, class45_1_: Class
     private val aClass45_4369: Class45?
     private var anInterface15_4373: Interface15?
 
-    fun method3471(i: Int, i_0_: Byte): Class348_Sub42_Sub10 {
+    fun method3471(i: Int, i_0_: Byte): ParameterizedText {
         anInt4363++
-        var class348_sub42_sub10 = aClass60_4362.method583(i.toLong(), 70) as Class348_Sub42_Sub10?
+        var class348_sub42_sub10 = aClass60_4362.method583(i.toLong(), 70) as ParameterizedText?
         if (class348_sub42_sub10 != null) return class348_sub42_sub10
         val `is`: ByteArray?
         if (i >= 32768) `is` = aClass45_4369!!.method410(-1860, 1, 0x7fff and i)
         else `is` = aClass45_4368!!.method410(-1860, 1, i)
-        class348_sub42_sub10 = Class348_Sub42_Sub10()
+        class348_sub42_sub10 = ParameterizedText()
         class348_sub42_sub10.aClass355_9567 = this
-        if (`is` != null) class348_sub42_sub10.method3218(Class348_Sub49(`is`), 0)
+        if (`is` != null) class348_sub42_sub10.method3218(Buffer(`is`), 0)
         if (i_0_ >= -86) method3473(-12)
         if (i >= 32768) class348_sub42_sub10.method3209(false)
         aClass60_4362.method582(class348_sub42_sub10, i.toLong(), (-125).toByte())
@@ -73,7 +73,7 @@ class Class355 internal constructor(i: Int, class45: Class45?, class45_1_: Class
                 if (!Class50_Sub1.aBoolean5224) {
                     Class50_Sub1.aBoolean5224 = true
                     Class369_Sub3_Sub1.aBoolean10174 = true
-                    Class348_Sub27.aFloat6898 += (-12.0f - Class348_Sub27.aFloat6898) / 2.0f
+                    MultiFieldRecord.aFloat6898 += (-12.0f - MultiFieldRecord.aFloat6898) / 2.0f
                 }
             }
         }

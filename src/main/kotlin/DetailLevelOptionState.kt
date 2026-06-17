@@ -19,7 +19,7 @@ class DetailLevelOptionState : GraphicsOptionState {
         return 1
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1712(i: Int, i_16_: Int) {
         val i_17_ = 63 % ((i - 82) / 35)
@@ -27,7 +27,7 @@ class DetailLevelOptionState : GraphicsOptionState {
         this.anInt3138 = i_16_
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     fun method1838(i: Int): Int {
         anInt6123++

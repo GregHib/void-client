@@ -1,4 +1,4 @@
-import Class348_Sub42_Sub8_Sub2.Companion.method3200
+import HardCacheEntryReference.Companion.method3200
 
 /* Class77 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

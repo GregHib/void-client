@@ -205,11 +205,11 @@ class ModelDefinition {
         anInt1831++
         var bool = false
         var bool_52_ = false
-        val class348_sub49 = Class348_Sub49(`is`)
-        val class348_sub49_53_ = Class348_Sub49(`is`)
-        val class348_sub49_54_ = Class348_Sub49(`is`)
-        val class348_sub49_55_ = Class348_Sub49(`is`)
-        val class348_sub49_56_ = Class348_Sub49(`is`)
+        val class348_sub49 = Buffer(`is`)
+        val class348_sub49_53_ = Buffer(`is`)
+        val class348_sub49_54_ = Buffer(`is`)
+        val class348_sub49_55_ = Buffer(`is`)
+        val class348_sub49_56_ = Buffer(`is`)
         class348_sub49.anInt7197 = -18 + `is`.size
         this.anInt1836 = class348_sub49.readUnsignedShort(i xor 0x3235f8f9)
         this.anInt1817 = class348_sub49.readUnsignedShort(842397944)
@@ -295,7 +295,7 @@ class ModelDefinition {
             i_82_ = this.anIntArray1852[i_83_]
             i_81_ = this.anIntArray1847[i_83_]
             i_80_ = this.anIntArray1841[i_83_]
-            if (i_61_ == 1) this.anIntArray1868!![i_83_] = class348_sub49_56_.readUnsignedByte(Class348_Sub21.method2955(i, 254))
+            if (i_61_ == 1) this.anIntArray1868!![i_83_] = class348_sub49_56_.readUnsignedByte(CameraSplineNode.method2955(i, 254))
         }
         class348_sub49.anInt7197 = i_75_
         class348_sub49_53_.anInt7197 = i_71_
@@ -321,7 +321,7 @@ class ModelDefinition {
                 }
             }
             if (i_58_ == 255) this.aByteArray1839!![i_88_] = class348_sub49_54_.readByte(-108)
-            if (i_59_ == 1) this.aByteArray1834!![i_88_] = class348_sub49_55_.readByte(Class348_Sub21.method2955(i, -120))
+            if (i_59_ == 1) this.aByteArray1834!![i_88_] = class348_sub49_55_.readByte(CameraSplineNode.method2955(i, -120))
             if (i_60_ == 1) this.anIntArray1824!![i_88_] = class348_sub49_56_.readUnsignedByte(255)
         }
         class348_sub49.anInt7197 = i_74_
@@ -438,13 +438,13 @@ class ModelDefinition {
 
     private fun method1106(`is`: ByteArray, i: Byte) {
         anInt1828++
-        val class348_sub49 = Class348_Sub49(`is`)
-        val class348_sub49_118_ = Class348_Sub49(`is`)
-        val class348_sub49_119_ = Class348_Sub49(`is`)
-        val class348_sub49_120_ = Class348_Sub49(`is`)
-        val class348_sub49_121_ = Class348_Sub49(`is`)
-        val class348_sub49_122_ = Class348_Sub49(`is`)
-        val class348_sub49_123_ = Class348_Sub49(`is`)
+        val class348_sub49 = Buffer(`is`)
+        val class348_sub49_118_ = Buffer(`is`)
+        val class348_sub49_119_ = Buffer(`is`)
+        val class348_sub49_120_ = Buffer(`is`)
+        val class348_sub49_121_ = Buffer(`is`)
+        val class348_sub49_122_ = Buffer(`is`)
+        val class348_sub49_123_ = Buffer(`is`)
         class348_sub49.anInt7197 = -23 + `is`.size
         this.anInt1836 = class348_sub49.readUnsignedShort(842397944)
         this.anInt1817 = class348_sub49.readUnsignedShort(842397944)
@@ -1107,8 +1107,8 @@ class ModelDefinition {
             val dimension = canvas.getSize()
             if (i.toInt() != -99) method1096(57)
             method828(38.toByte(), dimension.height, dimension.width)
-            if (Class348_Sub49.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651)
-            else CameraRotationStub.aRenderer326!!.method3643(canvas, Class348_Sub16_Sub1.anInt8854, ShadowQualityOptionState.anInt6008)
+            if (Buffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651)
+            else CameraRotationStub.aRenderer326!!.method3643(canvas, SynthVoiceGroup.anInt8854, ShadowQualityOptionState.anInt6008)
         }
     }
 }

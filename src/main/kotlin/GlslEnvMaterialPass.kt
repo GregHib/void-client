@@ -72,13 +72,13 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
             try {
                 aClass83_6268 = class83
                 if (aClass83_6268!!.aClass258_Sub1_1443 == null || !(this.aHa_Sub2_3684.aBoolean7791) || !(this.aHa_Sub2_3684.aBoolean7783)) break
-                val class242 = (Class348_Sub42_Sub15.method3249(
+                val class242 = (TimedTileQueueEntry.method3249(
                     35633,
                     -110,
                     this.aHa_Sub2_3684,
                     "uniform float time;\nuniform float scale;\nvarying vec3 wvVertex;\nvarying float waterDepth;\nvoid main() {\nwaterDepth = gl_MultiTexCoord0.z;\nvec4 ecVertex = gl_ModelViewMatrix*gl_Vertex;\nwvVertex.x = dot(gl_NormalMatrix[0], ecVertex.xyz);\nwvVertex.y = dot(gl_NormalMatrix[1], ecVertex.xyz);\nwvVertex.z = dot(gl_NormalMatrix[2], ecVertex.xyz);\ngl_TexCoord[0].x = dot(gl_TextureMatrix[0][0], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].y = dot(gl_TextureMatrix[0][1], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].z = time;\ngl_TexCoord[0].w = 1.0;\ngl_FogFragCoord = 1.0-clamp((gl_Fog.end+ecVertex.z)*gl_Fog.scale, 0.0, 1.0);\ngl_Position = ftransform();\n}\n"
                 ))
-                val class242_4_ = (Class348_Sub42_Sub15.method3249(
+                val class242_4_ = (TimedTileQueueEntry.method3249(
                     35632,
                     -38,
                     this.aHa_Sub2_3684,
@@ -87,7 +87,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
                 aGlShaderProgramHandle_6274 = SequencedWallEntity.method2493((this.aHa_Sub2_3684), -1, (arrayOf<ManagedGlResource?>(class242, class242_4_)))
                 aBoolean6272 = aGlShaderProgramHandle_6274 != null
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("tia.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("tia.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -145,16 +145,16 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
             } else string = "www-wtrc"
             var string_2_ = ""
             if (BloomGraphicsOptionState.aString5966 != null) string_2_ = "/p=" + BloomGraphicsOptionState.aString5966
-            return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434?.aString2985) + ".com/l=" + Class348_Sub33.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
+            return ("http://" + string + "." + (HardCacheEntryReference.aSceneProjector_10434?.aString2985) + ".com/l=" + AnimationFrameDefinition.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
         }
 
         @JvmStatic
         fun method2163(bool: Boolean): Boolean {
             anInt6273++
             try {
-                if (Class348_Sub43.anInt7068 == 2) {
+                if (SpriteDefinition.anInt7068 == 2) {
                     if (MaterialPass.Companion.aClass348_Sub2_3683 == null) {
-                        MaterialPass.Companion.aClass348_Sub2_3683 = Class348_Sub2.method2734(ModelDefinition.aClass45_1848!!, (NpcActorEntity.anInt10074), SceneLinkedListNode.anInt3971)
+                        MaterialPass.Companion.aClass348_Sub2_3683 = MidiFileBuilder.method2734(ModelDefinition.aClass45_1848!!, (NpcActorEntity.anInt10074), SceneLinkedListNode.anInt3971)
                         if (MaterialPass.Companion.aClass348_Sub2_3683 == null) return false
                     }
                     if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(Class43.aClass45_611, MapElementLookup.aClass45_4147)
@@ -163,16 +163,16 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
                     if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, Class367_Sub9.aClass45_7371, -35)) {
                         Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                         Class98.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
-                        if (Class348_Sub40_Sub35.anInt9444 <= 0) {
-                            Class348_Sub43.anInt7068 = 0
+                        if (DirectionalLightTextureNode.anInt9444 <= 0) {
+                            SpriteDefinition.anInt7068 = 0
                             Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, Class58.anInt1059)
                             for (i in Class367_Sub3.anIntArray7299!!.indices) {
                                 Class98.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
                                 Class367_Sub3.anIntArray7299!![i] = 255
                             }
                         } else {
-                            Class348_Sub43.anInt7068 = 3
-                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, (min(Class58.anInt1059, Class348_Sub40_Sub35.anInt9444)))
+                            SpriteDefinition.anInt7068 = 3
+                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, (min(Class58.anInt1059, DirectionalLightTextureNode.anInt9444)))
                             var i = 0
                             while ((Class367_Sub3.anIntArray7299!!.size > i)) {
                                 Class98.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
@@ -201,7 +201,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
                 TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                 MaterialPass.Companion.aClass348_Sub2_3683 = null
                 ModelDefinition.aClass45_1848 = null
-                Class348_Sub43.anInt7068 = 0
+                SpriteDefinition.anInt7068 = 0
             }
             return false
         }

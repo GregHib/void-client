@@ -57,14 +57,14 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         this.aByte6376 = i_10_.toByte()
     }
 
-    override fun method2384(class348_sub1s: Array<Class348_Sub1?>?, i: Int): Int {
+    override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8753++
         var i_19_ = 0
         var i_20_ = this.aShort8743.toInt()
         while_104_@ while ((i_20_ <= this.aShort8751)) {
             var i_21_ = this.aShort8750.toInt()
             while (this.aShort8747 >= i_21_) {
-                val l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_20_]!![i_21_])
+                val l = (HardCacheEntryReference.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_20_]!![i_21_])
                 var l_22_ = 0L
                 while_103_@ while (l_22_ <= 48L) {
                     val i_23_ = (l ushr l_22_.toInt() and 0xffffL).toInt()
@@ -120,7 +120,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
             }
             var i_33_ = 0
             while_106_@ while ( /**/i_19_ > i_33_) {
-                var l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_32_.toInt()]!![i_31_])
+                var l = (HardCacheEntryReference.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_32_.toInt()]!![i_31_])
                 while (l != 0L) {
                     val class211 = (WaterDetailOptionState.aSoundEnvelopeArray5993!![(-1L + (l and 0xffffL)).toInt()])
                     l = l ushr 16
@@ -129,7 +129,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
                         continue@while_106_
                     }
                 }
-                l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_29_]!![i_30_.toInt()])
+                l = (HardCacheEntryReference.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_29_]!![i_30_.toInt()])
                 while (l != 0L) {
                     val class211 = (WaterDetailOptionState.aSoundEnvelopeArray5993!![(-1L + (0xffffL and l)).toInt()])
                     l = l ushr 16
@@ -176,7 +176,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         fun method2408(i: Byte): Int {
             anInt8754++
             val i_4_ = -71 % ((-2 - i) / 44)
-            return Class348_Sub40_Sub31.anInt9411++
+            return TileTextureNode.anInt9411++
         }
 
         @JvmStatic
@@ -186,10 +186,10 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
             if (!Class5_Sub1.aBoolean8335) return false
             val i_7_ = i_6_ shr 16
             val i_8_ = i_6_ and 0xffff
-            if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_7_] == null || Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_7_]!![i_8_] == null) return false
-            val class46 = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_7_]!![i_8_]
+            if (WarpTextureNode.aClass46ArrayArray9427!![i_7_] == null || WarpTextureNode.aClass46ArrayArray9427!![i_7_]!![i_8_] == null) return false
+            val class46 = WarpTextureNode.aClass46ArrayArray9427!![i_7_]!![i_8_]
             if (i_5_ == -1 && class46!!.anInt774 == 0) {
-                var class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
+                var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
                 while (class348_sub42_sub12 != null) {
                     if (class348_sub42_sub12.anInt9608 == 6 || class348_sub42_sub12.anInt9608 == 1011 || (class348_sub42_sub12.anInt9608 == 13) || (class348_sub42_sub12.anInt9608 == 18) || (class348_sub42_sub12.anInt9608 == 16)) {
                         var class46_9_ = method2570(1512932720, (class348_sub42_sub12.anInt9607))
@@ -198,13 +198,13 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
                             class46_9_ = WorldMapScene.method1687(class46_9_, 3)
                         }
                     }
-                    class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(56.toByte()) as? Class348_Sub42_Sub12?
+                    class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(56.toByte()) as? ContactEntry?
                 }
             } else {
-                var class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
+                var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
                 while (class348_sub42_sub12 != null) {
                     if ((class348_sub42_sub12.anInt9602 == i_5_) && (class348_sub42_sub12.anInt9607 == class46!!.anInt830) && ((class348_sub42_sub12.anInt9608) == 6 || (class348_sub42_sub12.anInt9608) == 1011 || (class348_sub42_sub12.anInt9608) == 13 || (class348_sub42_sub12.anInt9608) == 18 || (class348_sub42_sub12.anInt9608) == 16)) return true
-                    class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(93.toByte()) as? Class348_Sub42_Sub12?
+                    class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(93.toByte()) as? ContactEntry?
                 }
             }
             return false
@@ -227,7 +227,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         }
 
         @JvmStatic
-        fun method2413(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2): Int {
+        fun method2413(i: Int, class348_sub49_sub2: CipheredPacketBuffer): Int {
             anInt8749++
             val i_35_ = class348_sub49_sub2.readBits((-24).toByte(), 2)
             if (i != 1) aNodeDeque_8744 = null

@@ -41,11 +41,11 @@ abstract class SocketFactory {
         fun method2049(i: Int) {
             anInt3474++
             if (i > 49) {
-                if (WorldMapRenderer.anInt4674 == 7) Class348_Sub40_Sub34.method3141(false, 11.toByte())
+                if (WorldMapRenderer.anInt4674 == 7) NormalMapTextureNode.method3141(false, 11.toByte())
                 else {
-                    ItemDefinition.aAbstractGameSocket_2773 = Class348_Sub40_Sub8.aAbstractGameSocket_9165
-                    Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
-                    Class348_Sub49.method3379(2, 13)
+                    ItemDefinition.aAbstractGameSocket_2773 = PerlinNoiseTextureNode.aAbstractGameSocket_9165
+                    PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                    Buffer.method3379(2, 13)
                 }
             }
         }
@@ -57,9 +57,9 @@ abstract class SocketFactory {
                 ChatEffectsOptionState.anInt5871 = i_7_
                 DefaultGraphicsOptionState.aTileRenderState_6128 = tileRenderState
                 Class86.anInt1479 = i
-                Class348_Sub7.aSpriteImage_6643 = null
+                RegionTileNode.aSpriteImage_6643 = null
                 LocalizedTextTriple.anInt3762 = i_8_
-                Class348_Sub40_Sub1.aSpriteImage_9090 = null
+                ColorThresholdEffect.aSpriteImage_9090 = null
                 RegionSceneLoader.anInt3704 = i_3_
                 ConnectionStateRefs.anInt317 = i_5_
                 anInt3471++
@@ -67,12 +67,12 @@ abstract class SocketFactory {
                 OutputStream_Sub1.anInt98 = i_2_
                 BufferToggleState.anInt3712 = i_6_
                 ScriptCompilerThread.aSpriteImage_1727 = null
-                Class348_Sub32.anInt6938 = i_1_
+                TerrainShadowBuilderGl2.anInt6938 = i_1_
                 Class359.method3490(true)
                 val i_9_ = -77 % ((i_4_ - 29) / 34)
                 LocalizedTextTriple.aBoolean3763 = true
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uu.E(" + i + ',' + i_0_ + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("uu.E(" + i + ',' + i_0_ + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
             }
         }
     }

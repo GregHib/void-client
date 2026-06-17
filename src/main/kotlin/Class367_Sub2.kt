@@ -32,13 +32,13 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
             if (class45 == null || !aNormalMapGenerator_7294!!.method2039(100) || !aClass377_7296!!.aBoolean9923) aTextureHandle_7293 = null
             else aTextureHandle_7293 = method3442(34336, class45.method391("gl", "transparent_water", -29832), aClass377_7296, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ov.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ov.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 
     override fun method3521(bool: Boolean, i: Byte) {
         if (i.toInt() != -103) aShortArrayArrayArray7290 = null
-        this.aHa_Sub3_4479.method3874((Class348_Sub23_Sub2.aRenderConfigFactory_9011), 106, (RenderQueueState.aRenderConfigFactory_6519))
+        this.aHa_Sub3_4479.method3874((TheoraVideoStream.aRenderConfigFactory_9011), 106, (RenderQueueState.aRenderConfigFactory_6519))
         anInt7292++
     }
 
@@ -95,11 +95,11 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
 
         @JvmStatic
         fun method3536(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, class318_sub1_sub2: SceneObjectEntity) {
-            val class357 = Class348_Sub46.method3321(i, i_0_, i_1_)
+            val class357 = StringValueNode.method3321(i, i_0_, i_1_)
             if (class357 != null) {
-                class318_sub1_sub2.x = (i_0_ shl Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037
+                class318_sub1_sub2.x = (i_0_ shl Class362.anInt4459) + TheoraVideoStream.anInt9037
                 class318_sub1_sub2.anInt6382 = i_2_
-                class318_sub1_sub2.y = (i_1_ shl Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037
+                class318_sub1_sub2.y = (i_1_ shl Class362.anInt4459) + TheoraVideoStream.anInt9037
                 class357.aClass318_Sub1_Sub2_4408 = class318_sub1_sub2
                 val i_3_ = if (NativeSprite.aTerrainTileArray5191 == SoundCacheState.aTerrainTileArray4142) 1 else 0
                 if (class318_sub1_sub2.method2376(-52)) {
@@ -107,9 +107,9 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                         class318_sub1_sub2.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_]
                         BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_] = class318_sub1_sub2
                     } else {
-                        class318_sub1_sub2.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_3_]
-                        Class348.aClass318_Sub1Array4293!![i_3_] = class318_sub1_sub2
-                        Class348_Sub16_Sub2.aBoolean8870 = true
+                        class318_sub1_sub2.aClass318_Sub1_6379 = LinkedListNode.aClass318_Sub1Array4293!![i_3_]
+                        LinkedListNode.aClass318_Sub1Array4293!![i_3_] = class318_sub1_sub2
+                        PcmStreamBuffer.aBoolean8870 = true
                     }
                 } else {
                     class318_sub1_sub2.aClass318_Sub1_6379 = OverlayColorTable.aClass318_Sub1Array1754!![i_3_]
@@ -133,27 +133,27 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                 val string_8_ = method2127(2, string)
                 if (string_8_ != null) {
                     var i = 0
-                    while ((Class348_Sub42_Sub12.anInt9604 > i)) {
+                    while ((ContactEntry.anInt9604 > i)) {
                         var string_9_ = Class51.aStringArray932!![i]
                         if (string_9_!!.startsWith("*")) string_9_ = string_9_.substring(1)
                         string_9_ = method2127(2, string_9_)
                         if (string_9_ != null && string_9_ == string_8_) {
-                            Class348_Sub42_Sub12.anInt9604--
+                            ContactEntry.anInt9604--
                             var i_10_ = i
-                            while (Class348_Sub42_Sub12.anInt9604 > i_10_) {
+                            while (ContactEntry.anInt9604 > i_10_) {
                                 Class51.aStringArray932!![i_10_] = Class51.aStringArray932!![i_10_ + 1]
                                 ObjectSpawnDecoder.aStringArray1808!![i_10_] = ObjectSpawnDecoder.aStringArray1808!![1 + i_10_]
-                                Class348_Sub40_Sub21.aStringArray9275!![i_10_] = (Class348_Sub40_Sub21.aStringArray9275!![1 + i_10_])
+                                WeaveTextureNode.aStringArray9275!![i_10_] = (WeaveTextureNode.aStringArray9275!![1 + i_10_])
                                 IndexedSprite.aStringArray5197!![i_10_] = IndexedSprite.aStringArray5197!![1 + i_10_]
                                 Class367_Sub3.Companion.aBooleanArray7304!![i_10_] = Class367_Sub3.Companion.aBooleanArray7304!![i_10_ - -1]
                                 i_10_++
                             }
                             GlVertexBufferArb.anInt8493++
                             Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
-                            val class348_sub47 = method2148(Renderer.aClass351_4571, (Class348_Sub23_Sub2.aClass77_9029), -123)
+                            val class348_sub47 = method2148(Renderer.aClass351_4571, (TheoraVideoStream.aClass77_9029), -123)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
-                            Class348_Sub42_Sub14.method3243(118, class348_sub47)
+                            InterfaceComponentGroup.method3243(118, class348_sub47)
                             break
                         }
                         i++

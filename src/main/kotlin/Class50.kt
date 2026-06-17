@@ -29,15 +29,15 @@ abstract class Class50(@JvmField var anInt864: Int, @JvmField var anInt865: Int,
                 glBindProgramARB(i, i_6_)
                 if (bool != false) return null
                 glProgramStringARB(i, 34933, string)
-                glGetIntegerv(34379, Class348_Sub31_Sub2.anIntArray9069, 0)
-                if (Class348_Sub31_Sub2.anIntArray9069!![0] != -1) {
+                glGetIntegerv(34379, ProducerImageSurface.anIntArray9069, 0)
+                if (ProducerImageSurface.anIntArray9069!![0] != -1) {
                     glBindProgramARB(i, 0)
                     return null
                 }
                 glBindProgramARB(i, 0)
                 return RefCountedHandle(var_ha_Sub2!!, i, i_6_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("iu.I(" + i + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("iu.I(" + i + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
     }

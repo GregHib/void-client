@@ -25,7 +25,7 @@ class ModelOrSpriteHolder {
         fun method170(bool: Boolean): MapLabelMenuEntry? {
             if (bool != true) method174(-106, -36)
             anInt122++
-            if (Class348_Sub36.anInt6985 < Class65.aClass110_Sub1Array1146!!.size) return Class65.aClass110_Sub1Array1146!![Class348_Sub36.anInt6985++]
+            if (WidgetActionEntry.anInt6985 < Class65.aClass110_Sub1Array1146!!.size) return Class65.aClass110_Sub1Array1146!![WidgetActionEntry.anInt6985++]
             return null
         }
 
@@ -45,8 +45,8 @@ class ModelOrSpriteHolder {
         fun method173(i: Int, class46: Class46?, class46_0_: Class46?) {
             try {
                 anInt120++
-                Class348_Sub38.anInt7009++
-                val class348_sub47 = method2148(CustomCursorsOptionState.aClass351_5934, Class348_Sub23_Sub2.aClass77_9029, -104)
+                TerrainShadowBuilderGl3.anInt7009++
+                val class348_sub47 = method2148(CustomCursorsOptionState.aClass351_5934, TheoraVideoStream.aClass77_9029, -104)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(112.toByte(), class46!!.anInt830)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(class46_0_!!.anInt704, 3.toByte())
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntMiddle(class46_0_.anInt830, 44.toByte())
@@ -54,9 +54,9 @@ class ModelOrSpriteHolder {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, class46.anInt704)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, class46.anInt812)
                 if (i > -50) aTextureDefinitionLoader_117 = null
-                Class348_Sub42_Sub14.method3243(-100, class348_sub47)
+                InterfaceComponentGroup.method3243(-100, class348_sub47)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ak.E(" + i + ',' + (if (class46 != null) "{...}" else "null") + ',' + (if (class46_0_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ak.E(" + i + ',' + (if (class46 != null) "{...}" else "null") + ',' + (if (class46_0_ != null) "{...}" else "null") + ')'))
             }
         }
 

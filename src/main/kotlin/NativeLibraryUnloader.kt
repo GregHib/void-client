@@ -107,29 +107,29 @@ object NativeLibraryUnloader {
         if (Class75.aFloat1249 > Class75.aFloat1247) {
             Class75.aFloat1247 += (Class75.aFloat1247.toDouble() / 30.0).toFloat()
             if (Class75.aFloat1249 < Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249
-            Class348_Sub15.method2811(false)
+            MenuActionNode.method2811(false)
             Class75.anInt1255 = Class75.aFloat1247.toInt() shr 1
             Class75.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(Class75.anInt1255, 12871)
         } else if (Class75.aFloat1247 > Class75.aFloat1249) {
             Class75.aFloat1247 -= (Class75.aFloat1247.toDouble() / 30.0).toFloat()
             if (Class75.aFloat1249 > Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249
-            Class348_Sub15.method2811(false)
+            MenuActionNode.method2811(false)
             Class75.anInt1255 = Class75.aFloat1247.toInt() shr 1
             Class75.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(Class75.anInt1255, i + 12871)
         }
         anInt2971++
         if (i != (TextureMetadataProvider.anInt4609.inv()) && Class48.anInt859 != -1) {
-            var i_8_ = TextureMetadataProvider.anInt4609 - Class348_Sub36.anInt6992
+            var i_8_ = TextureMetadataProvider.anInt4609 - WidgetActionEntry.anInt6992
             if (i_8_ < 2 || i_8_ > 2) i_8_ /= 8
             var i_9_ = -DebugOverlayRenderer.anInt3170 + Class48.anInt859
-            Class348_Sub36.anInt6992 = i_8_ + Class348_Sub36.anInt6992
+            WidgetActionEntry.anInt6992 = i_8_ + WidgetActionEntry.anInt6992
             if (i_9_ < 2 || i_9_ > 2) i_9_ /= 8
             DebugOverlayRenderer.anInt3170 -= -i_9_
             if (i_8_ == 0 && i_9_ == 0) {
                 TextureMetadataProvider.anInt4609 = -1
                 Class48.anInt859 = -1
             }
-            Class348_Sub15.method2811(false)
+            MenuActionNode.method2811(false)
         }
         if (Class367_Sub9.anInt7379 > 0) {
             ClientLoadStateMachine.anInt2173--
@@ -139,10 +139,10 @@ object NativeLibraryUnloader {
             }
         } else {
             SkeletalAnimFrameLoader.anInt481 = -1
-            Class348_Sub40_Sub30.anInt9399 = -1
+            HslAdjustTextureNode.anInt9399 = -1
         }
         if (ParticleEmitterFactory.aBoolean3174 && RegionSceneLoader.aNodeDeque_3705 != null) {
-            var class348_sub12 = RegionSceneLoader.aNodeDeque_3705!!.method1995(4) as Class348_Sub12?
+            var class348_sub12 = RegionSceneLoader.aNodeDeque_3705!!.method1995(4) as BoundingBoxNode?
             while (class348_sub12 != null) {
                 val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub12.aClass348_Sub21_6751!!.anInt6847, 125.toByte()))
                 if (class348_sub12.method2799(i_6_, i_7_, 95)) {
@@ -162,7 +162,7 @@ object NativeLibraryUnloader {
                     class348_sub12.aClass348_Sub21_6751!!.aBoolean6848 = false
                     Class66.method701(Class77.aBoundsConstraintEntry_1298!!, class348_sub12.aClass348_Sub21_6751!!.anInt6847, class42!!.anInt596)
                 }
-                class348_sub12 = (RegionSceneLoader.aNodeDeque_3705!!.method1990(116.toByte()) as Class348_Sub12?)
+                class348_sub12 = (RegionSceneLoader.aNodeDeque_3705!!.method1990(116.toByte()) as BoundingBoxNode?)
             }
         }
     }

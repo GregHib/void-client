@@ -78,7 +78,7 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
             anInt10415++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("to.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("to.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 
@@ -114,7 +114,7 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
                 if (i == -2393) break
                 finalize()
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("to.L(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("to.L(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
             }
             break
         } while (false)
@@ -139,11 +139,11 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
                 var class318_sub1_sub3_sub3: ProjectedGroundDecor? = null
                 if (anInt10387 < 0) {
                     val i_9_ = -1 + -anInt10387
-                    if (i_9_ == Class348_Sub42_Sub11.anInt9591) class318_sub1_sub3_sub3 = LocalPlayerState.aPlayer_1907
+                    if (i_9_ == CharCodeMap.anInt9591) class318_sub1_sub3_sub3 = LocalPlayerState.aPlayer_1907
                     else class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_9_])
                 } else {
                     val i_10_ = -1 + anInt10387
-                    val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_10_.toLong(), -6008) as Class348_Sub22?)
+                    val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_10_.toLong(), -6008) as NpcReference?)
                     if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aNpc_6859)
                 }
                 if (class318_sub1_sub3_sub3 != null) {
@@ -263,7 +263,7 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
         anInt10381 = i_29_
         this.anInt10411 = i_27_
         anInt10387 = i_31_
-        val i_35_ = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(72.toByte(), anInt10391).anInt4503)
+        val i_35_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(72.toByte(), anInt10391).anInt4503)
         if (i_35_ != -1) aWidgetDefinition_10375 = ParticleEmitterNode.aClass87_191!!.method835(i_35_, 7)
         else aWidgetDefinition_10375 = null
     }
@@ -285,7 +285,7 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
 
     private fun method2476(i: Int, var_renderer: Renderer?, i_36_: Byte): Class64? {
         anInt10377++
-        val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(75.toByte(), anInt10391)
+        val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(75.toByte(), anInt10391)
         if (i_36_ < 126) aClass318_Sub10_10378 = null
         return class368.method3562(anInt10365, var_renderer, anInt10403, i, anInt10369, ParticleEmitterNode.aClass87_191, 121.toByte())
     }
@@ -328,10 +328,10 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
                 if (hintArrowOrMessage == null) hintArrowOrMessage = HintArrowOrMessage(i_41_, i_42_, string_39_, string, string_43_, string_40_, i_38_, string_37_)
                 else hintArrowOrMessage.method1196(i_41_, i_42_, string_43_, string, string_40_, -18691, i_38_, string_39_, string_37_)
                 SceneModelBuilder.Companion.aHintArrowOrMessageArray6400s!![0] = hintArrowOrMessage
-                Class348_Sub42_Sub3.anInt9501 = ResourceLoaderThread.anInt3918
+                LoadingScreenImageNode.anInt9501 = ResourceLoaderThread.anInt3918
                 if (i <= -109) NativeShaderProgram.anInt9774++
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("to.K(" + (if (string != null) "{...}" else "null") + ',' + (if (string_37_ != null) "{...}" else "null") + ',' + i + ',' + i_38_ + ',' + (if (string_39_ != null) "{...}" else "null") + ',' + (if (string_40_ != null) "{...}" else "null") + ',' + i_41_ + ',' + i_42_ + ',' + (if (string_43_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("to.K(" + (if (string != null) "{...}" else "null") + ',' + (if (string_37_ != null) "{...}" else "null") + ',' + i + ',' + i_38_ + ',' + (if (string_39_ != null) "{...}" else "null") + ',' + (if (string_40_ != null) "{...}" else "null") + ',' + i_41_ + ',' + i_42_ + ',' + (if (string_43_ != null) "{...}" else "null") + ')'))
             }
         }
     }

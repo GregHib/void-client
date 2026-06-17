@@ -5,7 +5,7 @@ class ParticleConfigParser {
     var anInt3817: Int
     var anIntArray3821: IntArray? = null
     var anInt3823: Int = -1
-    fun method2275(class348_sub49: Class348_Sub49, i: Byte) {
+    fun method2275(class348_sub49: Buffer, i: Byte) {
         anInt3818++
         while (true) {
             val i_1_ = class348_sub49.readUnsignedByte(255)
@@ -15,7 +15,7 @@ class ParticleConfigParser {
         val i_2_ = -63 / ((72 - i) / 37)
     }
 
-    private fun method2276(i: Int, class348_sub49: Class348_Sub49, i_3_: Int) {
+    private fun method2276(i: Int, class348_sub49: Buffer, i_3_: Int) {
         if (i_3_ == 1) this.anInt3817 = class348_sub49.readUnsignedShort(842397944)
         else if (i_3_ == 2) {
             this.anIntArray3821 = IntArray(class348_sub49.readUnsignedByte(255))
@@ -44,10 +44,10 @@ class ParticleConfigParser {
         var anInt3822: Int = 0
         var anInt3824: Int = 0
 
-        fun method2273(i: Byte): Class348_Sub47? {
+        fun method2273(i: Byte): OutgoingPacketNode? {
             anInt3824++
             if (i.toInt() != -103) return null
-            if (GroundDecorOptionState.anInt5980 == 0) return Class348_Sub47()
+            if (GroundDecorOptionState.anInt5980 == 0) return OutgoingPacketNode()
             return PingHostListHolder.aClass348_Sub47Array2334!![--GroundDecorOptionState.anInt5980]
         }
 
@@ -56,7 +56,7 @@ class ParticleConfigParser {
             if (string == null) return -1
             if (i >= -41) return 97
             var i_0_ = 0
-            while ((i_0_ < Class348_Sub40_Sub30.anInt9383)) {
+            while ((i_0_ < HslAdjustTextureNode.anInt9383)) {
                 if (string.equals(Class83.aStringArray1441!![i_0_], ignoreCase = true)) return i_0_
                 i_0_++
             }

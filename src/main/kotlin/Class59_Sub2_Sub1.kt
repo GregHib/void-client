@@ -1,5 +1,5 @@
 import DisplayModeOptionState.Companion.method1827
-import Class348_Sub6.Companion.method2770
+import HslColorTableNode.Companion.method2770
 
 /* Class59_Sub2_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -131,7 +131,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 }
                 return Class358(is_1_, is_2_, is_3_, fs)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -140,7 +140,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             anInt8671++
             val i_26_ = -94 / ((-67 - i) / 59)
             if (bool) {
-                Class348_Sub40_Sub26.anInt9346++
+                ColourKeyTextureNode.anInt9346++
                 method1827(1415665776)
             }
             if (bool_25_) {

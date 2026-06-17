@@ -12,14 +12,14 @@ class LocalizedTextTriple internal constructor(string: String?, string_4_: Strin
             this.aString3758 = string_5_
             this.aString3756 = string
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wc.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_4_ != null) "{...}" else "null") + ',' + (if (string_5_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wc.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_4_ != null) "{...}" else "null") + ',' + (if (string_5_ != null) "{...}" else "null") + ')'))
         }
     }
 
     companion object {
         var aIntRange_3751: IntRange?
         var anInt3752: Int = 0
-        var aClass348_Sub42_Sub17Array3753: Array<Class348_Sub42_Sub17?>? = arrayOfNulls<Class348_Sub42_Sub17>(14)
+        var aClass348_Sub42_Sub17Array3753: Array<TextureMaterialGroup?>? = arrayOfNulls<TextureMaterialGroup>(14)
         var anInt3755: Int = 0
         var anInt3757: Int = 0
         var anIntArray3759: IntArray? = null
@@ -46,10 +46,10 @@ class LocalizedTextTriple internal constructor(string: String?, string_4_: Strin
         fun method2221(player: Player, i: Int) {
             anInt3752++
             if (i != -28482) aClass348_Sub42_Sub17Array3753 = null
-            val class348_sub9 = ((Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3480(player.anInt10290.toLong(), -6008)) as Class348_Sub9?)
+            val class348_sub9 = ((CompletedResourceRequest.aClass356_10465!!.method3480(player.anInt10290.toLong(), -6008)) as CharacterRenderState?)
             if (class348_sub9 != null) {
                 if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
-                    Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                    SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                     class348_sub9.aClass348_Sub16_Sub5_6676 = null
                 }
                 class348_sub9.method2715(82.toByte())

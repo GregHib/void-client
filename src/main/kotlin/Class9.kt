@@ -1,4 +1,4 @@
-import Class348_Sub40_Sub19.Companion.method3098
+import BlankTextureNode.Companion.method3098
 
 /* Class9 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

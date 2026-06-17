@@ -11,10 +11,10 @@ class MediaStreamClient {
     private val aLinkedNodeListIterator_3205 = LinkedNodeListIterator()
     private val aLinkedNodeListIterator_3206 = LinkedNodeListIterator()
     private var aLong3207: Long = 0
-    private val aClass348_Sub49_3208 = Class348_Sub49(4)
+    private val aClass348_Sub49_3208 = Buffer(4)
     private var aSocketStreamWorker_3209: SocketStreamWorker? = null
     private var anInt3210 = 0
-    private val aClass348_Sub49_3211: Class348_Sub49
+    private val aClass348_Sub49_3211: Buffer
     private var aByte3212: Byte = 0
 
     @JvmField
@@ -24,7 +24,7 @@ class MediaStreamClient {
     @JvmField
     @Volatile
     var anInt3214: Int = 0
-    private var aClass348_Sub42_Sub16_Sub1_3215: Class348_Sub42_Sub16_Sub1? = null
+    private var aClass348_Sub42_Sub16_Sub1_3215: StreamingResourceRequest? = null
 
     fun method1892(i: Int, bool: Boolean) {
         anInt3194++
@@ -70,17 +70,17 @@ class MediaStreamClient {
         try {
             aSocketStreamWorker_3209!!.method1472(true)
             run {
-                var class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3197.method1011(-30) as Class348_Sub42_Sub16_Sub1?)
+                var class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3197.method1011(-30) as StreamingResourceRequest?)
                 while (class348_sub42_sub16_sub1 != null) {
                     aClass348_Sub49_3208.anInt7197 = 0
                     aClass348_Sub49_3208.writeByte(false, 1)
                     aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
                     aSocketStreamWorker_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
                     aLinkedNodeListIterator_3204.method1005(true, class348_sub42_sub16_sub1)
-                    class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3197.method1003(65.toByte()) as Class348_Sub42_Sub16_Sub1?)
+                    class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3197.method1003(65.toByte()) as StreamingResourceRequest?)
                 }
             }
-            var class348_sub42_sub16_sub1 = aLinkedNodeListIterator_3205.method1011(-75) as Class348_Sub42_Sub16_Sub1?
+            var class348_sub42_sub16_sub1 = aLinkedNodeListIterator_3205.method1011(-75) as StreamingResourceRequest?
             if (i <= 72) return false
             while ( /**/class348_sub42_sub16_sub1 != null) {
                 aClass348_Sub49_3208.anInt7197 = 0
@@ -88,7 +88,7 @@ class MediaStreamClient {
                 aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
                 aSocketStreamWorker_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
                 aLinkedNodeListIterator_3206.method1005(true, class348_sub42_sub16_sub1)
-                class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3205.method1003(102.toByte()) as Class348_Sub42_Sub16_Sub1?)
+                class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3205.method1003(102.toByte()) as StreamingResourceRequest?)
             }
             for (i_1_ in 0..99) {
                 val i_2_ = aSocketStreamWorker_3209!!.method1467(83.toByte())
@@ -107,7 +107,7 @@ class MediaStreamClient {
                     if (aByte3212.toInt() != 0) {
                         var i_6_ = 0
                         while (i_5_ > i_6_) {
-                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![i_6_ + aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197] = (Class348_Sub21.method2955((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![(i_6_ + (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197))]).toInt(), aByte3212.toInt())).toByte()
+                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![i_6_ + aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197] = (CameraSplineNode.method2955((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![(i_6_ + (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197))]).toInt(), aByte3212.toInt())).toByte()
                             i_6_++
                         }
                     }
@@ -123,7 +123,7 @@ class MediaStreamClient {
                     if (i_2_ < i_7_) i_7_ = i_2_
                     aSocketStreamWorker_3209!!.method1474((aClass348_Sub49_3211.aByteArray7154!!), aClass348_Sub49_3211.anInt7197, (-72).toByte(), i_7_)
                     if (aByte3212.toInt() != 0) {
-                        for (i_8_ in 0..<i_7_) aClass348_Sub49_3211.aByteArray7154!![i_8_ + aClass348_Sub49_3211.anInt7197] = (Class348_Sub21.method2955((aClass348_Sub49_3211.aByteArray7154!![i_8_ + (aClass348_Sub49_3211.anInt7197)]).toInt(), aByte3212.toInt())).toByte()
+                        for (i_8_ in 0..<i_7_) aClass348_Sub49_3211.aByteArray7154!![i_8_ + aClass348_Sub49_3211.anInt7197] = (CameraSplineNode.method2955((aClass348_Sub49_3211.aByteArray7154!![i_8_ + (aClass348_Sub49_3211.anInt7197)]).toInt(), aByte3212.toInt())).toByte()
                     }
                     aClass348_Sub49_3211.anInt7197 += i_7_
                     if (aClass348_Sub49_3211.anInt7197 >= i_3_) {
@@ -137,24 +137,24 @@ class MediaStreamClient {
                             val bool = (0x80 and i_11_) != 0
                             val l = ((i_9_ shl 16) + i_10_).toLong()
                             val `object`: Any? = null
-                            var class348_sub42_sub16_sub1_14_: Class348_Sub42_Sub16_Sub1?
+                            var class348_sub42_sub16_sub1_14_: StreamingResourceRequest?
                             if (bool) {
-                                class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3206.method1011(-89) as Class348_Sub42_Sub16_Sub1?)
+                                class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3206.method1011(-89) as StreamingResourceRequest?)
                                 while (class348_sub42_sub16_sub1_14_ != null) {
                                     if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break
-                                    class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3206.method1003(98.toByte()) as Class348_Sub42_Sub16_Sub1?)
+                                    class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3206.method1003(98.toByte()) as StreamingResourceRequest?)
                                 }
                             } else {
-                                class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3204.method1011(-108) as Class348_Sub42_Sub16_Sub1?)
+                                class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3204.method1011(-108) as StreamingResourceRequest?)
                                 while (class348_sub42_sub16_sub1_14_ != null) {
                                     if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break
-                                    class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3204.method1003(90.toByte()) as Class348_Sub42_Sub16_Sub1?)
+                                    class348_sub42_sub16_sub1_14_ = (aLinkedNodeListIterator_3204.method1003(90.toByte()) as StreamingResourceRequest?)
                                 }
                             }
                             if (class348_sub42_sub16_sub1_14_ == null) throw IOException()
                             val i_15_ = if (i_13_ == 0) 5 else 9
                             aClass348_Sub42_Sub16_Sub1_3215 = class348_sub42_sub16_sub1_14_
-                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453 = (Class348_Sub49((aClass348_Sub42_Sub16_Sub1_3215!!.aByte10449) + i_15_ + i_12_))
+                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453 = (Buffer((aClass348_Sub42_Sub16_Sub1_3215!!.aByte10449) + i_15_ + i_12_))
                             aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.writeByte(false, i_13_)
                             aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.writeInt(97.toByte(), i_12_)
                             aClass348_Sub49_3211.anInt7197 = 0
@@ -258,12 +258,12 @@ class MediaStreamClient {
         aClass348_Sub42_Sub16_Sub1_3215 = null
         if (bool != false) aLong3207 = -35L
         while (true) {
-            val class348_sub42_sub16_sub1 = aLinkedNodeListIterator_3204.method1008(20) as? Class348_Sub42_Sub16_Sub1?
+            val class348_sub42_sub16_sub1 = aLinkedNodeListIterator_3204.method1008(20) as? StreamingResourceRequest?
             if (class348_sub42_sub16_sub1 == null) break
             aLinkedNodeListIterator_3197.method1005(true, class348_sub42_sub16_sub1)
         }
         while (true) {
-            val class348_sub42_sub16_sub1 = aLinkedNodeListIterator_3206.method1008(20) as? Class348_Sub42_Sub16_Sub1?
+            val class348_sub42_sub16_sub1 = aLinkedNodeListIterator_3206.method1008(20) as? StreamingResourceRequest?
             if (class348_sub42_sub16_sub1 == null) break
             aLinkedNodeListIterator_3205.method1005(!bool, class348_sub42_sub16_sub1)
         }
@@ -323,11 +323,11 @@ class MediaStreamClient {
         }
     }
 
-    fun method1906(i: Byte, i_29_: Byte, bool: Boolean, i_30_: Int, i_31_: Int): Class348_Sub42_Sub16_Sub1 {
+    fun method1906(i: Byte, i_29_: Byte, bool: Boolean, i_30_: Int, i_31_: Int): StreamingResourceRequest {
         anInt3187++
         val i_32_ = -118 % ((i - -15) / 61)
         val l = ((i_31_ shl 16) - -i_30_).toLong()
-        val class348_sub42_sub16_sub1 = Class348_Sub42_Sub16_Sub1()
+        val class348_sub42_sub16_sub1 = StreamingResourceRequest()
         class348_sub42_sub16_sub1.aBoolean9663 = bool
         class348_sub42_sub16_sub1.aLong7057 = l
         class348_sub42_sub16_sub1.aByte10449 = i_29_
@@ -342,7 +342,7 @@ class MediaStreamClient {
     }
 
     init {
-        aClass348_Sub49_3211 = Class348_Sub49(8)
+        aClass348_Sub49_3211 = Buffer(8)
     }
 
     companion object {
@@ -387,7 +387,7 @@ class MediaStreamClient {
                     i += i_19_
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("tha.M(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (is_20_ != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("tha.M(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (is_20_ != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ')'))
             }
         }
 

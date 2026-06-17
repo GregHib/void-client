@@ -15,16 +15,16 @@ object TextureLoaderUtil {
             AudioResampler.aBooleanArray2162!![i] = true
             return true
         }
-        if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] == null) Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] = arrayOfNulls<Class46>(i_1_)
+        if (WarpTextureNode.aClass46ArrayArray9427!![i] == null) WarpTextureNode.aClass46ArrayArray9427!![i] = arrayOfNulls<Class46>(i_1_)
         var i_2_ = 0
         while (i_1_ > i_2_) {
-            if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!![i_2_] == null) {
+            if (WarpTextureNode.aClass46ArrayArray9427!![i]!![i_2_] == null) {
                 val `is` = RenderConfigFactory.aClass45_2978!!.method410(i_0_.toInt() xor 0x717.inv(), i, i_2_)
                 if (`is` != null) {
-                    val class46 = (Class46().also { Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!![i_2_] = it })
+                    val class46 = (Class46().also { WarpTextureNode.aClass46ArrayArray9427!![i]!![i_2_] = it })
                     class46.anInt830 = i_2_ + (i shl 16)
                     check(`is`[0].toInt() == -1) { "if1" }
-                    class46.method433(Class348_Sub49(`is`), true)
+                    class46.method433(Buffer(`is`), true)
                 }
             }
             i_2_++

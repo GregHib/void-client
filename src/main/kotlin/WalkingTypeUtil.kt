@@ -20,8 +20,8 @@ object WalkingTypeUtil {
 
     @JvmStatic
     fun method1978() {
-        for (i in Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.indices) Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i]!!.method2205()
-        Class348_Sub40_Sub34.aSceneLoaderThreadArray9432 = null
+        for (i in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2205()
+        NormalMapTextureNode.aSceneLoaderThreadArray9432 = null
     }
 
     @JvmStatic

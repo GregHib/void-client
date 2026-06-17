@@ -22,7 +22,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     fun stop() {
         anInt24++
-        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = Class62.method599(-73) - -4000L
+        if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = Class62.method599(-73) - -4000L
     }
 
     override fun getParameter(string: String?): String? {
@@ -64,12 +64,12 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     fun method83(bool: Boolean): Boolean {
         if (bool != true) getDocumentBase()
         anInt5++
-        return Class348_Sub40_Sub19.method3098(-30282, "jagmisc")
+        return BlankTextureNode.method3098(-30282, "jagmisc")
     }
 
     override fun focusLost(focusevent: FocusEvent?) {
         anInt9++
-        Class348_Sub40_Sub16.aBoolean9229 = false
+        CombineTextureNode.aBoolean9229 = false
     }
 
     private fun method84(i: Int) {
@@ -82,7 +82,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             /* empty */
         }
         synchronized(this) {
-            SizeBoundedSoftCache.aBoolean2329 = Class348_Sub40_Sub16.aBoolean9229
+            SizeBoundedSoftCache.aBoolean2329 = CombineTextureNode.aBoolean9229
         }
         method99(93.toByte())
         if (i != -1) aBoolean27 = true
@@ -121,26 +121,26 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         val container: Container
         if (SkeletalAnimFrameLoader.aFrame476 == null) {
             if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169!!
+                if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
                 else container = Class93.anApplet1530!!.getPulseComponent() as Container
             } else container = Class52.aFrame4904 as Container
         } else container = SkeletalAnimFrameLoader.aFrame476 as Container
         container.setLayout(null)
         ParticleSystemRenderer.aCanvas3869 = DelegatingRenderCanvas(this)
         container.add(ParticleSystemRenderer.aCanvas3869)
-        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
         ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
         if (container === Class52.aFrame4904) {
             val insets = (Class52.aFrame4904 as Container).getInsets()
-            ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -TimingCounters.anInt4167)
-        } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, TimingCounters.anInt4167)
+            ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left + ModelResourceBundle.anInt7129), insets.top - -TimingCounters.anInt4167)
+        } else ParticleSystemRenderer.aCanvas3869!!.setLocation(ModelResourceBundle.anInt7129, TimingCounters.anInt4167)
         ParticleSystemRenderer.aCanvas3869!!.addFocusListener(this)
         ParticleSystemRenderer.aCanvas3869!!.requestFocus()
-        Class348_Sub40_Sub16.aBoolean9229 = true
+        CombineTextureNode.aBoolean9229 = true
         SizeBoundedSoftCache.aBoolean2329 = true
         Class49.aBoolean4726 = true
         ProjectileSpawner.aBoolean2674 = false
-        Class348_Sub12.aLong6748 = Class62.method599(-106)
+        BoundingBoxNode.aLong6748 = Class62.method599(-106)
     }
 
     override fun windowOpened(windowevent: WindowEvent?) {
@@ -150,11 +150,11 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     @Synchronized
     override fun paint(graphics: Graphics?) {
         anInt18++
-        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) {
+        if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) {
             Class49.aBoolean4726 = true
-            if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
+            if (Class367_Sub4.aBoolean7320 && -BoundingBoxNode.aLong6748 + Class62.method599(-57) > 1000) {
                 val rectangle = graphics?.getClipBounds()
-                if (rectangle == null || (rectangle.width >= SocketFactory.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) ProjectileSpawner.aBoolean2674 = true
+                if (rectangle == null || (rectangle.width >= SocketFactory.anInt3473 && (NpcReference.anInt6857 <= rectangle.height))) ProjectileSpawner.aBoolean2674 = true
             }
         }
     }
@@ -162,8 +162,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     private fun method88(i: Int) {
         anInt2++
         val l = Class62.method599(-119)
-        val l_2_ = Class348_Sub49.aLongArray7206!![GzipDecompressor.anInt2071]
-        Class348_Sub49.aLongArray7206!![GzipDecompressor.anInt2071] = l
+        val l_2_ = Buffer.aLongArray7206!![GzipDecompressor.anInt2071]
+        Buffer.aLongArray7206!![GzipDecompressor.anInt2071] = l
         if (l_2_ != 0L && l_2_ < l) {
             val i_3_ = (l - l_2_).toInt()
             SimpleToggleOptionState.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
@@ -172,12 +172,12 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (ParticleAmountConfig.anInt2127++ > 50) {
             ParticleAmountConfig.anInt2127 -= 50
             Class49.aBoolean4726 = true
-            ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+            ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
             ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
             if (Class52.aFrame4904 != null && SkeletalAnimFrameLoader.aFrame476 == null) {
                 val insets = Class52.aFrame4904!!.getInsets()
-                ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + TimingCounters.anInt4167))
-            } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, TimingCounters.anInt4167)
+                ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left - -ModelResourceBundle.anInt7129), (insets.top + TimingCounters.anInt4167))
+            } else ParticleSystemRenderer.aCanvas3869!!.setLocation(ModelResourceBundle.anInt7129, TimingCounters.anInt4167)
         }
         method93(-11018)
         if (i > -107) method90(true, true)
@@ -189,7 +189,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     override fun focusGained(focusevent: FocusEvent?) {
         anInt23++
-        Class348_Sub40_Sub16.aBoolean9229 = true
+        CombineTextureNode.aBoolean9229 = true
         Class49.aBoolean4726 = true
     }
 
@@ -249,9 +249,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 /* empty */
             }
         }
-        if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992 != null) {
+        if (VorbisOggDecoder.aPrivilegedOperationWorker_8992 != null) {
             try {
-                Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2234(103.toByte())
+                VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2234(103.toByte())
             } catch (exception: Exception) {
                 /* empty */
             }
@@ -278,7 +278,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     override fun destroy() {
         anInt21++
-        if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 === this && !SpriteArchiveLoader.aBoolean384) {
+        if (EdgeDetectTextureNode.anGameApplet_Frame_9169 === this && !SpriteArchiveLoader.aBoolean384) {
             CameraNodeList.aLong1739 = Class62.method599(-108)
             TexGenMaterialPass.method2161(77.toByte(), 5000L)
             HudTabPanel.aPrivilegedOperationWorker_2993 = null
@@ -314,7 +314,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                     }
                     if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true
                 }
-                var applet: Panel? = Class348_Sub40_Sub9.anGameApplet_Frame_9169
+                var applet: Panel? = EdgeDetectTextureNode.anGameApplet_Frame_9169
                 if (Class93.anApplet1530 != null) {
                     val container = Class93.anApplet1530!!.getPulseComponent() as? Container
                     if (container != null) {
@@ -333,16 +333,16 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 ScrollingWidgetComponentNode.method1119(false)
                 method87((-97).toByte())
                 method92(28740)
-                Class348_Sub8.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
+                FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
                 while (CameraNodeList.aLong1739 == 0L || (Class62.method599(-124) < CameraNodeList.aLong1739)) {
-                    FloatCameraTransform.anInt5744 = Class348_Sub8.aBufferPositionTracker_6660!!.method1861(0, Class73.aLong4783)
+                    FloatCameraTransform.anInt5744 = FacingDirectionNode.aBufferPositionTracker_6660!!.method1861(0, Class73.aLong4783)
                     var i = 0
                     while (FloatCameraTransform.anInt5744 > i) {
                         method84(-1)
                         i++
                     }
                     method88(-119)
-                    Class369_Sub3_Sub1.method3578((-42).toByte(), ParticleSystemRenderer.aCanvas3869, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992))
+                    Class369_Sub3_Sub1.method3578((-42).toByte(), ParticleSystemRenderer.aCanvas3869, (VorbisOggDecoder.aPrivilegedOperationWorker_8992))
                 }
             } catch (throwable: Throwable) {
                 LinkedListIterator.method1242(method81(109.toByte()), throwable, 15004)
@@ -360,24 +360,24 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     fun method95(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, string: String?, i_19_: Int) {
         anInt25++
         try {
-            if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 == null) {
-                Class348_Sub48.anInt7129 = 0
-                Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_
-                Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
+            if (EdgeDetectTextureNode.anGameApplet_Frame_9169 == null) {
+                ModelResourceBundle.anInt7129 = 0
+                HardCacheEntryReference.anInt10432 = i_16_
+                NpcReference.anInt6857 = HardCacheEntryReference.anInt10432
                 LocTypeDefinition.anInt4017 = i
                 SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
                 TimingCounters.anInt4167 = 0
-                Class348_Sub1_Sub3.anInt8818 = i_15_
-                Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
-                Class348_Sub8.anApplet6662 = Class93.anApplet1530
-                Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i_17_, string, i_18_, Class93.anApplet1530 != null)
-                HudTabPanel.aPrivilegedOperationWorker_2993 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992
-                val class144 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2236(this, -10240, 1)
+                ParticleTileShape.anInt8818 = i_15_
+                EdgeDetectTextureNode.anGameApplet_Frame_9169 = this
+                FacingDirectionNode.anApplet6662 = Class93.anApplet1530
+                VorbisOggDecoder.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i_17_, string, i_18_, Class93.anApplet1530 != null)
+                HudTabPanel.aPrivilegedOperationWorker_2993 = VorbisOggDecoder.aPrivilegedOperationWorker_8992
+                val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2236(this, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
                 while (class144.anInt1997 == 0) TexGenMaterialPass.method2161((-126).toByte(), 10L)
             } else {
-                Class348_Sub51.anInt7252++
-                if (Class348_Sub51.anInt7252 >= 3) method82(112, "alreadyloaded")
+                DisplaySettingsConfig.anInt7252++
+                if (DisplaySettingsConfig.anInt7252 >= 3) method82(112, "alreadyloaded")
                 else showDocument(getDocumentBase(), "_self")
             }
         } catch (throwable: Throwable) {
@@ -391,13 +391,13 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             if (i_23_ != 23499) return
             LocTypeDefinition.anInt4017 = i_20_
             SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
-            Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_
-            Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
-            Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
+            HardCacheEntryReference.anInt10432 = i_24_
+            NpcReference.anInt6857 = HardCacheEntryReference.anInt10432
+            EdgeDetectTextureNode.anGameApplet_Frame_9169 = this
             TimingCounters.anInt4167 = 0
-            Class348_Sub48.anInt7129 = 0
-            Class348_Sub1_Sub3.anInt8818 = i_21_
-            Class348_Sub8.anApplet6662 = null
+            ModelResourceBundle.anInt7129 = 0
+            ParticleTileShape.anInt8818 = i_21_
+            FacingDirectionNode.anApplet6662 = null
             Class52.aFrame4904 = Frame()
             Class52.aFrame4904!!.setTitle("Jagex")
             Class52.aFrame4904!!.setResizable(true)
@@ -405,10 +405,10 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             Class52.aFrame4904!!.setVisible(true)
             Class52.aFrame4904!!.toFront()
             val insets = Class52.aFrame4904!!.getInsets()
-            Class52.aFrame4904!!.setSize(insets.right + (insets.left + SocketFactory.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)))
-            Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i, string, i_22_, true)
-            HudTabPanel.aPrivilegedOperationWorker_2993 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992
-            val class144 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2236(this, i_23_ + -33739, 1)
+            Class52.aFrame4904!!.setSize(insets.right + (insets.left + SocketFactory.anInt3473), (insets.bottom + (NpcReference.anInt6857 + insets.top)))
+            VorbisOggDecoder.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i, string, i_22_, true)
+            HudTabPanel.aPrivilegedOperationWorker_2993 = VorbisOggDecoder.aPrivilegedOperationWorker_8992
+            val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2236(this, i_23_ + -33739, 1)
             while (class144.anInt1997 == 0) TexGenMaterialPass.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {
             LinkedListIterator.method1242(null, exception, i_23_ + -8495)
@@ -423,12 +423,12 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     fun method97(i: Int): Boolean {
         if (i != -1) method88(-104)
         anInt4++
-        return Class348_Sub40_Sub19.method3098(-30282, "jaclib")
+        return BlankTextureNode.method3098(-30282, "jaclib")
     }
 
     fun start() {
         anInt36++
-        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = 0L
+        if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = 0L
     }
 
     abstract fun method99(i: Byte)
@@ -436,7 +436,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     fun method100(i: Int): Boolean {
         anInt10++
         if (i != 10) return true
-        return Class348_Sub40_Sub19.method3098(-30282, "jagtheora")
+        return BlankTextureNode.method3098(-30282, "jagtheora")
     }
 
     companion object {
@@ -542,7 +542,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         @JvmStatic
         fun set(string: String) {
             Class363.aString4461 = string
-            Class348_Sub38.anInt7006 = string.length
+            TerrainShadowBuilderGl3.anInt7006 = string.length
         }
 
         @JvmStatic
@@ -554,13 +554,13 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             val i_9_ = WaterMaterialPass.aCalendar6221!!.get(12)
             val i_10_ = WaterMaterialPass.aCalendar6221!!.get(13)
             val string_11_ = ((i_8_ / 10).toString() + i_8_ % 10 + ":" + i_9_ / 10 + i_9_ % 10 + ":" + i_10_ / 10 + i_10_ % 10)
-            val strings = Class348_Sub40_Sub23.method3113('\n', true, string)
+            val strings = TurbulenceTextureNode.method3113('\n', true, string)
             for (i_12_ in strings.indices) {
                 for (i_13_ in Class369_Sub2.anInt8587 downTo 1) ArbFogMaterialPass.aStringArray6200!![i_13_] = ArbFogMaterialPass.aStringArray6200!![-1 + i_13_]
                 ArbFogMaterialPass.aStringArray6200!![0] = string_11_ + ": " + strings[i_12_]
                 if (Texture2DProvider.aFileOutputStream6323 != null) {
                     try {
-                        Texture2DProvider.aFileOutputStream6323!!.write(Class348_Sub24.method2992(((ArbFogMaterialPass.aStringArray6200!![0]) + "\n"), (-20).toByte()))
+                        Texture2DProvider.aFileOutputStream6323!!.write(ClientGameLoopNode.method2992(((ArbFogMaterialPass.aStringArray6200!![0]) + "\n"), (-20).toByte()))
                     } catch (ioexception: IOException) {
                         /* empty */
                     }

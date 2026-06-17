@@ -13,13 +13,13 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
     private fun method1338(i: Int, interface14: Interface14) {
         anInt2321++
         val l = interface14.method52(117.toByte())
-        var class348_sub42_sub9 = aClass356_2312.method3480(l, -6008) as Class348_Sub42_Sub9?
+        var class348_sub42_sub9 = aClass356_2312.method3480(l, -6008) as KeyedCacheEntryReference?
         while (class348_sub42_sub9 != null) {
             if (class348_sub42_sub9.anInterface14_9559!!.method53(78, interface14)) {
                 method1342(class348_sub42_sub9, 79.toByte())
                 break
             }
-            class348_sub42_sub9 = aClass356_2312.method3476(true) as Class348_Sub42_Sub9?
+            class348_sub42_sub9 = aClass356_2312.method3476(true) as KeyedCacheEntryReference?
         }
     }
 
@@ -32,7 +32,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
     fun method1340(i: Int, interface14: Interface14): Any? {
         anInt2313++
         val l = interface14.method52(64.toByte())
-        var class348_sub42_sub9 = aClass356_2312.method3480(l, -6008) as Class348_Sub42_Sub9?
+        var class348_sub42_sub9 = aClass356_2312.method3480(l, -6008) as KeyedCacheEntryReference?
         while (class348_sub42_sub9 != null) {
             if (class348_sub42_sub9.anInterface14_9559!!.method53(94, interface14)) {
                 val `object` = class348_sub42_sub9.method3205(65536)
@@ -42,7 +42,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                     anInt2311 += (class348_sub42_sub9.anInt9556)
                 } else {
                     if (class348_sub42_sub9.method3206((-128).toByte())) {
-                        val class348_sub42_sub9_sub1 = (Class348_Sub42_Sub9_Sub1(interface14, `object`, (class348_sub42_sub9.anInt9556)))
+                        val class348_sub42_sub9_sub1 = (HardKeyedCacheEntryReference(interface14, `object`, (class348_sub42_sub9.anInt9556)))
                         aClass356_2312.method3483(125.toByte(), (class348_sub42_sub9.aLong4291), class348_sub42_sub9_sub1)
                         aLinkedNodeListIterator_2316!!.method1005(true, class348_sub42_sub9_sub1)
                         class348_sub42_sub9_sub1.aLong7057 = 0L
@@ -55,7 +55,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                     return `object`
                 }
             }
-            class348_sub42_sub9 = aClass356_2312.method3476(true) as Class348_Sub42_Sub9?
+            class348_sub42_sub9 = aClass356_2312.method3476(true) as KeyedCacheEntryReference?
         }
         if (i < 66) return null
         return null
@@ -69,20 +69,20 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                 method1338(7, interface14!!)
                 anInt2311 -= i_0_
                 while (anInt2311 < 0) {
-                    val class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1008(20) as Class348_Sub42_Sub9?
+                    val class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1008(20) as KeyedCacheEntryReference?
                     method1342(class348_sub42_sub9, 60.toByte())
                 }
-                val class348_sub42_sub9_sub1 = Class348_Sub42_Sub9_Sub1(interface14, `object`, i_0_)
+                val class348_sub42_sub9_sub1 = HardKeyedCacheEntryReference(interface14, `object`, i_0_)
                 aClass356_2312.method3483(120.toByte(), interface14.method52(120.toByte()), class348_sub42_sub9_sub1)
                 aLinkedNodeListIterator_2316!!.method1005(true, class348_sub42_sub9_sub1)
                 class348_sub42_sub9_sub1.aLong7057 = 0L
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pq.L(" + (if (`object` != null) "{...}" else "null") + ',' + (if (interface14 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("pq.L(" + (if (`object` != null) "{...}" else "null") + ',' + (if (interface14 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
         }
     }
 
-    private fun method1342(class348_sub42_sub9: Class348_Sub42_Sub9?, i: Byte) {
+    private fun method1342(class348_sub42_sub9: KeyedCacheEntryReference?, i: Byte) {
         anInt2317++
         if (i < 51) method1341(null, null, -110, 119)
         if (class348_sub42_sub9 != null) {
@@ -94,14 +94,14 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
 
     fun method1344(i: Byte) {
         anInt2319++
-        var class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1011(-87) as Class348_Sub42_Sub9?
+        var class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1011(-87) as KeyedCacheEntryReference?
         while (class348_sub42_sub9 != null) {
             if (class348_sub42_sub9.method3206(5.toByte())) {
                 class348_sub42_sub9.method2715(127.toByte())
                 class348_sub42_sub9.method3162(true)
                 anInt2311 += class348_sub42_sub9.anInt9556
             }
-            class348_sub42_sub9 = (aLinkedNodeListIterator_2316!!.method1003(69.toByte()) as Class348_Sub42_Sub9?)
+            class348_sub42_sub9 = (aLinkedNodeListIterator_2316!!.method1003(69.toByte()) as KeyedCacheEntryReference?)
         }
         if (i > -34) aBooleanArray2326 = null
     }
@@ -117,7 +117,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
     fun method1346(i: Int, i_4_: Int) {
         anInt2322++
         if (MinimapDrawController.aParticleProcessor_1607 != null) {
-            var class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1011(-72) as Class348_Sub42_Sub9?
+            var class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1011(-72) as KeyedCacheEntryReference?
             while (class348_sub42_sub9 != null) {
                 if (class348_sub42_sub9.method3206((-124).toByte())) {
                     if (class348_sub42_sub9.method3205(i + 67027) == null) {
@@ -132,7 +132,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                     class348_sub42_sub9.method2715(70.toByte())
                     class348_sub42_sub9.method3162(true)
                 }
-                class348_sub42_sub9 = (aLinkedNodeListIterator_2316!!.method1003(59.toByte()) as Class348_Sub42_Sub9?)
+                class348_sub42_sub9 = (aLinkedNodeListIterator_2316!!.method1003(59.toByte()) as KeyedCacheEntryReference?)
             }
         }
         if (i != -1491) method1342(null, 51.toByte())
@@ -146,7 +146,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                 if (i > 62) break
                 aLinkedNodeListIterator_2316 = null
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("pq.K(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (interface14 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("pq.K(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (interface14 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -195,7 +195,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
         @JvmStatic
         fun method1343(i: Int, class46: Class46?, i_1_: Int, i_2_: Int) {
             LongHashTable.anInt451 = i
-            Class348_Sub36.aClass46_6990 = class46
+            WidgetActionEntry.aClass46_6990 = class46
             SoundCacheState.anInt4141 = i_2_
             anInt2328++
             if (i_1_ != 1) method1349(119.toByte())

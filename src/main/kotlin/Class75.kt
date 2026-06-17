@@ -18,7 +18,7 @@ open class Class75 {
         @JvmField
         var aTextureDefinitionLoader_1242: TextureDefinitionLoader? = null
         @JvmField
-        var aClass348_Sub42_Sub14_1243: Class348_Sub42_Sub14? = null
+        var aClass348_Sub42_Sub14_1243: InterfaceComponentGroup? = null
         @JvmField
         var anInterface17_1244: Interface17? = null
         @JvmField
@@ -77,7 +77,7 @@ open class Class75 {
         var anInt1277: Int = 0
 
         @JvmStatic
-        fun method745(var_renderer: Renderer, class348_sub21: Class348_Sub21, class42: Class42) {
+        fun method745(var_renderer: Renderer, class348_sub21: CameraSplineNode, class42: Class42) {
             if (class42.anIntArray591 != null) {
                 val `is` = IntArray(class42.anIntArray591!!.size)
                 for (i in 0..<`is`.size / 2) {
@@ -159,7 +159,7 @@ open class Class75 {
             aDoublyLinkedNodeListArrayArrayArray1269 = null
         }
 
-        private fun method747(var_renderer: Renderer?, class348_sub21: Class348_Sub21, i: Int, i_15_: Int, i_16_: Int, i_17_: Int) {
+        private fun method747(var_renderer: Renderer?, class348_sub21: CameraSplineNode, i: Int, i_15_: Int, i_16_: Int, i_17_: Int) {
             class348_sub21.anInt6853 = (anInt1272 + (i_16_ + i * (class348_sub21.anInt6852 - anInt1274) shr 16))
             class348_sub21.anInt6855 = (anInt1268 - (i_17_ + i_15_ * (class348_sub21.anInt6851 - anInt1257) shr 16))
         }
@@ -187,7 +187,7 @@ open class Class75 {
             anIntArray1260 = null
         }
 
-        private fun method750(var_renderer: Renderer?, class348_sub49: Class348_Sub49, i: Int, i_21_: Int, i_22_: Int, i_23_: Int, `is`: IntArray, is_24_: IntArray) {
+        private fun method750(var_renderer: Renderer?, class348_sub49: Buffer, i: Int, i_21_: Int, i_22_: Int, i_23_: Int, `is`: IntArray, is_24_: IntArray) {
             val i_25_ = class348_sub49.readUnsignedByte(255)
             if ((i_25_ and 0x1) == 0) {
                 val bool = (i_25_ and 0x2) == 0
@@ -234,7 +234,7 @@ open class Class75 {
                                 is_34_[i_36_] = class348_sub49.readUnsignedShort(842397944).toShort()
                                 is_35_[i_36_] = class348_sub49.readByte(-120)
                             }
-                            aClass356_1271!!.method3483(33.toByte(), (i_22_ shl 16 or i_23_).toLong(), Class348_Sub39(is_34_, is_35_))
+                            aClass356_1271!!.method3483(33.toByte(), (i_22_ shl 16 or i_23_).toLong(), ShortByteArrayPair(is_34_, is_35_))
                         }
                     } else {
                         var is_37_: ShortArray? = null
@@ -294,7 +294,7 @@ open class Class75 {
                     val i_49_: Int = aShortArray1261!![i + i_48_ * anInt1259].toInt() and 0xffff
                     if (i_49_ != 0) {
                         if (i_49_ == 65535) {
-                            val class348_sub39 = (aClass356_1271!!.method3480((i shl 16 or i_48_).toLong(), -6008) as Class348_Sub39?)
+                            val class348_sub39 = (aClass356_1271!!.method3480((i shl 16 or i_48_).toLong(), -6008) as ShortByteArrayPair?)
                             if (class348_sub39 != null) {
                                 for (i_50_ in (class348_sub39.aShortArray7024)!!.indices) {
                                     var class51: Class51? = (aSeqDefinitionCache_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
@@ -304,7 +304,7 @@ open class Class75 {
                                         if (class51 != null) i_51_ = class51.anInt921
                                     }
                                     if (i_51_ != -1) {
-                                        val class348_sub21 = Class348_Sub21(i_51_)
+                                        val class348_sub21 = CameraSplineNode(i_51_)
                                         class348_sub21.anInt6852 = i
                                         class348_sub21.anInt6851 = i_48_
                                         aNodeDeque_1254!!.method1999(class348_sub21, -20180)
@@ -319,7 +319,7 @@ open class Class75 {
                                 if (class51 != null) i_52_ = class51.anInt921
                             }
                             if (i_52_ != -1) {
-                                val class348_sub21 = Class348_Sub21(i_52_)
+                                val class348_sub21 = CameraSplineNode(i_52_)
                                 class348_sub21.anInt6852 = i
                                 class348_sub21.anInt6851 = i_48_
                                 aNodeDeque_1254!!.method1999(class348_sub21, -20180)
@@ -344,7 +344,7 @@ open class Class75 {
                                             if (class51 != null) i_56_ = class51.anInt921
                                         }
                                         if (i_56_ != -1) {
-                                            val class348_sub21 = Class348_Sub21(i_56_)
+                                            val class348_sub21 = CameraSplineNode(i_56_)
                                             class348_sub21.anInt6852 = ((i_53_ + (anInt1266 shr 6)) * 64 + class318_sub8.aByte6466 - anInt1266)
                                             class348_sub21.anInt6851 = ((i_54_ + (anInt1263 shr 6)) * 64 + class318_sub8.aByte6464 - anInt1263)
                                             aNodeDeque_1254!!.method1999(class348_sub21, -20180)
@@ -360,7 +360,7 @@ open class Class75 {
         }
 
         fun method754(i: Int) {
-            aClass348_Sub42_Sub14_1243 = aClass356_1241!!.method3480(i.toLong(), -6008) as Class348_Sub42_Sub14?
+            aClass348_Sub42_Sub14_1243 = aClass356_1241!!.method3480(i.toLong(), -6008) as InterfaceComponentGroup?
         }
 
         private fun method755(var_renderer: Renderer, i: Int, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, i_61_: Int, i_62_: Int, `is`: ShortArray?, is_63_: ByteArray?, bool: Boolean) {
@@ -431,7 +431,7 @@ open class Class75 {
 
         @JvmStatic
         fun method756(var_renderer: Renderer?, i: Int, i_75_: Int) {
-            val class348_sub49: Class348_Sub49 = (Class348_Sub49(aClass45_1237!!.method391((aClass348_Sub42_Sub14_1243!!.aString9625), "area", -29832)))
+            val class348_sub49: Buffer = (Buffer(aClass45_1237!!.method391((aClass348_Sub42_Sub14_1243!!.aString9625), "area", -29832)))
             val i_76_ = class348_sub49.readUnsignedByte(255)
             val `is` = IntArray(i_76_)
             for (i_77_ in 0..<i_76_) `is`[i_77_] = class348_sub49.readUnsignedByte(255)
@@ -501,8 +501,8 @@ open class Class75 {
             method753()
         }
 
-        fun method757(i: Int): Class348_Sub42_Sub14? {
-            return (aClass356_1241!!.method3480(i.toLong(), -6008) as Class348_Sub42_Sub14?)
+        fun method757(i: Int): InterfaceComponentGroup? {
+            return (aClass356_1241!!.method3480(i.toLong(), -6008) as InterfaceComponentGroup?)
         }
 
         @JvmStatic
@@ -558,7 +558,7 @@ open class Class75 {
             for (i in 0..<aSmoothingBuffer_1246!!.anInt3241) {
                 val bool: Boolean = (aClass348_Sub42_Sub14_1243!!.method3236(`is`, (aSmoothingBuffer_1246!!.anIntArray3238!![i] shr 14 and 0x3fff), aSmoothingBuffer_1246!!.anIntArray3238!![i] and 0x3fff, aSmoothingBuffer_1246!!.anIntArray3238!![i] shr 28 and 0x3, (-28).toByte()))
                 if (bool) {
-                    val class348_sub21 = Class348_Sub21(aSmoothingBuffer_1246!!.anIntArray3239!![i])
+                    val class348_sub21 = CameraSplineNode(aSmoothingBuffer_1246!!.anIntArray3239!![i])
                     class348_sub21.anInt6852 = `is`[1] - anInt1266
                     class348_sub21.anInt6851 = `is`[2] - anInt1263
                     aNodeDeque_1254!!.method1999(class348_sub21, -20180)
@@ -567,10 +567,10 @@ open class Class75 {
         }
 
         private fun method762(var_renderer: Renderer?, i: Int, i_115_: Int, i_116_: Int, i_117_: Int): NodeDeque? {
-            var class348_sub21 = aNodeDeque_1254!!.method1995(4) as Class348_Sub21?
+            var class348_sub21 = aNodeDeque_1254!!.method1995(4) as CameraSplineNode?
             while (class348_sub21 != null) {
                 method747(var_renderer, class348_sub21, i, i_115_, i_116_, i_117_)
-                class348_sub21 = aNodeDeque_1254!!.method1990(74.toByte()) as Class348_Sub21?
+                class348_sub21 = aNodeDeque_1254!!.method1990(74.toByte()) as CameraSplineNode?
             }
             return aNodeDeque_1254
         }
@@ -648,7 +648,7 @@ open class Class75 {
                                     var_renderer.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0)
                                 } else if (i_154_ > 0) {
                                     if (i_154_ == 65535) {
-                                        val class348_sub39 = ((aClass356_1271!!.method3480((i_140_ shl 16 or i_150_).toLong(), -6008)) as Class348_Sub39?)
+                                        val class348_sub39 = ((aClass356_1271!!.method3480((i_140_ shl 16 or i_150_).toLong(), -6008)) as ShortByteArrayPair?)
                                         if (class348_sub39 != null) method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025), true)
                                     } else {
                                         aShortArray1252!![0] = (i_154_ - 1).toShort()
@@ -690,7 +690,7 @@ open class Class75 {
                                     val i_165_: Int = ((aShortArray1261!![i_159_ + i_164_ * anInt1259]).toInt() and 0xffff)
                                     if (i_165_ > 0) {
                                         if (i_165_ == 65535) {
-                                            val class348_sub39 = ((aClass356_1271!!.method3480((i_159_ shl 16 or i_164_).toLong(), -6008)) as Class348_Sub39?)
+                                            val class348_sub39 = ((aClass356_1271!!.method3480((i_159_ shl 16 or i_164_).toLong(), -6008)) as ShortByteArrayPair?)
                                             if (class348_sub39 != null) method763(var_renderer, i_156_, i_161_, i_158_, i_163_, (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025))
                                         } else {
                                             aShortArray1252!![0] = (i_165_ - 1).toShort()
@@ -757,21 +757,21 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method766(i: Int, i_191_: Int): Class348_Sub42_Sub14? {
-            var class348_sub42_sub14 = aClass356_1241!!.method3484(0) as Class348_Sub42_Sub14?
+        fun method766(i: Int, i_191_: Int): InterfaceComponentGroup? {
+            var class348_sub42_sub14 = aClass356_1241!!.method3484(0) as InterfaceComponentGroup?
             while (class348_sub42_sub14 != null) {
                 if (class348_sub42_sub14.aBoolean9639 && class348_sub42_sub14.method3238((-120).toByte(), i, i_191_)) return class348_sub42_sub14
-                class348_sub42_sub14 = aClass356_1241!!.method3482(0) as Class348_Sub42_Sub14?
+                class348_sub42_sub14 = aClass356_1241!!.method3482(0) as InterfaceComponentGroup?
             }
             return null
         }
 
         fun method767(i: Int, i_192_: Int): LinkedNodeListIterator {
             val linkedNodeListIterator = LinkedNodeListIterator()
-            var class348_sub42_sub14 = aClass356_1241!!.method3484(0) as Class348_Sub42_Sub14?
+            var class348_sub42_sub14 = aClass356_1241!!.method3484(0) as InterfaceComponentGroup?
             while (class348_sub42_sub14 != null) {
                 if (class348_sub42_sub14.aBoolean9639 && class348_sub42_sub14.method3238(29.toByte(), i, i_192_)) linkedNodeListIterator.method1005(true, class348_sub42_sub14)
-                class348_sub42_sub14 = aClass356_1241!!.method3482(0) as Class348_Sub42_Sub14?
+                class348_sub42_sub14 = aClass356_1241!!.method3482(0) as InterfaceComponentGroup?
             }
             return linkedNodeListIterator
         }
@@ -844,7 +844,7 @@ open class Class75 {
                                 else if (i_217_ > 127) i_217_ = 127
                                 val i_218_ = ((i_216_ + i and 0xfc00) + (i_216_ and 0x380) + i_217_)
                                 val i_219_: Int = i_201_ + i_212_ * anInt1259
-                                val i_220_ = (Crc64Hashable.anIntArray4983!![(method303(Class348_Sub49_Sub1.method3401(i_218_, 96, 76.toByte()), 30)).toInt() and 0xffff])
+                                val i_220_ = (Crc64Hashable.anIntArray4983!![(method303(FloatBuffer.method3401(i_218_, 96, 76.toByte()), 30)).toInt() and 0xffff])
                                 is_193_[i_219_] = (i_220_ shr 16 and 0xff).toByte()
                                 is_194_[i_219_] = (i_220_ and 0xffff).toShort()
                             }

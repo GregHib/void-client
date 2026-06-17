@@ -29,7 +29,7 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
             if (i >= -17) aClass60_2848 = null
         }
         particleAmountConfig = ParticleAmountConfig()
-        if (`is` != null) particleAmountConfig.method1253(Class348_Sub49(`is`), true)
+        if (`is` != null) particleAmountConfig.method1253(Buffer(`is`), true)
         synchronized(aClass60_2848!!) {
             aClass60_2848!!.method582(particleAmountConfig, i_1_.toLong(), (-124).toByte())
         }
@@ -58,7 +58,7 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
             if (aClass45_2842 != null) this.anInt2845 = aClass45_2842.method407(0, 16)
             else this.anInt2845 = 0
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rv.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rv.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

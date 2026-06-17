@@ -11,7 +11,7 @@ open class SoundChannelMixer {
     private val anInt3601 = 32
     private var aLong3602: Long
     var anIntArray3603: IntArray? = null
-    private var aClass348_Sub16_3604: Class348_Sub16? = null
+    private var aClass348_Sub16_3604: AudioStreamNode? = null
     private var aBoolean3610 = false
     var anInt3613: Int = 0
     private var aLong3614 = 0L
@@ -19,9 +19,9 @@ open class SoundChannelMixer {
     private var anInt3616 = 0
     private var anInt3617 = 0
     private var aLong3618 = 0L
-    private val aClass348_Sub16Array3619: Array<Class348_Sub16?>
+    private val aClass348_Sub16Array3619: Array<AudioStreamNode?>
     var anInt3620: Int = 0
-    private val aClass348_Sub16Array3621: Array<Class348_Sub16?>
+    private val aClass348_Sub16Array3621: Array<AudioStreamNode?>
     private var anInt3622 = 0
     private var aBoolean3623 = true
     private var anInt3624 = 0
@@ -109,7 +109,7 @@ open class SoundChannelMixer {
         }
     }
 
-    private fun method2085(i: Int, class348_sub16: Class348_Sub16, i_2_: Int) {
+    private fun method2085(i: Int, class348_sub16: AudioStreamNode, i_2_: Int) {
         anInt3597++
         val i_3_ = i_2_ shr 5
         if (i != -1846918107) method2088(true, null)
@@ -127,7 +127,7 @@ open class SoundChannelMixer {
         anInt3615 -= i
         if (aClass348_Sub16_3604 != null && anInt3615 <= 0) {
             anInt3615 += HslColorConfig.anInt339 shr 4
-            Class348_Sub15.method2814(aClass348_Sub16_3604!!, 112)
+            MenuActionNode.method2814(aClass348_Sub16_3604!!, 112)
             method2085(-1846918107, aClass348_Sub16_3604!!, aClass348_Sub16_3604!!.method2820())
             var i_6_ = 0
             var i_7_ = 255
@@ -146,7 +146,7 @@ open class SoundChannelMixer {
                 while (i_11_ != 0) {
                     if ((i_11_ and 0x1) != 0) {
                         i_7_ = i_7_ and (1 shl i_9_).inv()
-                        var class348_sub16: Class348_Sub16? = null
+                        var class348_sub16: AudioStreamNode? = null
                         var class348_sub16_12_ = aClass348_Sub16Array3619[i_9_]
                         while (class348_sub16_12_ != null) {
                             val class348_sub19 = (class348_sub16_12_.aClass348_Sub19_6787)
@@ -187,7 +187,7 @@ open class SoundChannelMixer {
                 var class348_sub16 = aClass348_Sub16Array3619[i_17_]
                 aClass348_Sub16Array3621[i_17_] = null
                 aClass348_Sub16Array3619[i_17_] = aClass348_Sub16Array3621[i_17_]
-                var class348_sub16_18_: Class348_Sub16?
+                var class348_sub16_18_: AudioStreamNode?
                 while ( /**/class348_sub16 != null) {
                     class348_sub16_18_ = (class348_sub16.aClass348_Sub16_6785)
                     class348_sub16.aClass348_Sub16_6785 = null
@@ -214,7 +214,7 @@ open class SoundChannelMixer {
     }
 
     @Synchronized
-    fun method2088(bool: Boolean, class348_sub16: Class348_Sub16?) {
+    fun method2088(bool: Boolean, class348_sub16: AudioStreamNode?) {
         aClass348_Sub16_3604 = class348_sub16
         anInt3600++
     }
@@ -263,8 +263,8 @@ open class SoundChannelMixer {
 
     init {
         aLong3602 = method599(-99)
-        aClass348_Sub16Array3621 = arrayOfNulls<Class348_Sub16>(8)
-        aClass348_Sub16Array3619 = arrayOfNulls<Class348_Sub16>(8)
+        aClass348_Sub16Array3621 = arrayOfNulls<AudioStreamNode>(8)
+        aClass348_Sub16Array3619 = arrayOfNulls<AudioStreamNode>(8)
     }
 
     companion object {
@@ -321,7 +321,7 @@ open class SoundChannelMixer {
                 }
                 anInt3594++
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("cba.K(" + i + ',' + i_25_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_26_ + ',' + (if (objects != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("cba.K(" + i + ',' + i_25_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_26_ + ',' + (if (objects != null) "{...}" else "null") + ')'))
             }
         }
     }

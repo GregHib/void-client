@@ -19,7 +19,7 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
             this.aLong1510 = l
             aClass377_1506 = class377
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lha.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + l + ',' + (if (class39s != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lha.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + l + ',' + (if (class39s != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -59,11 +59,11 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
             var i_14_: Short = 0
             var i_15_: Byte = 0
             class318_sub1_sub3.method2409((-116).toByte())
-            if (class318_sub1_sub3.aShort8743 < 0 || class318_sub1_sub3.aShort8750 < 0 || (class318_sub1_sub3.aShort8751 >= SpotAnimEntity.anInt6451) || (class318_sub1_sub3.aShort8747 >= Class348_Sub41.anInt7054)) return false
+            if (class318_sub1_sub3.aShort8743 < 0 || class318_sub1_sub3.aShort8750 < 0 || (class318_sub1_sub3.aShort8751 >= SpotAnimEntity.anInt6451) || (class318_sub1_sub3.aShort8747 >= RegionSceneShifter.anInt7054)) return false
             var i_16_: Short = 0
             for (i_17_ in class318_sub1_sub3.aShort8743..class318_sub1_sub3.aShort8751) {
                 for (i_18_ in class318_sub1_sub3.aShort8750..class318_sub1_sub3.aShort8747) {
-                    val class357 = Class348_Sub46.method3321(class318_sub1_sub3.plane.toInt(), i_17_, i_18_)
+                    val class357 = StringValueNode.method3321(class318_sub1_sub3.plane.toInt(), i_17_, i_18_)
                     if (class357 != null) {
                         val class148 = method3620(class318_sub1_sub3, 118)
                         var class148_19_ = class357.aWidgetNodeLink_4396
@@ -77,7 +77,7 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                         if (bool_13_ && (WidgetRedrawRegion.anIntArrayArray4253!![i_17_]!![i_18_] and 0xffffff.inv()) != 0) {
                             i = WidgetRedrawRegion.anIntArrayArray4253!![i_17_]!![i_18_]
                             i_14_ = BooleanGraphicsOptionState.aShortArrayArray5847!![i_17_]!![i_18_]
-                            i_15_ = (Class348_Sub1_Sub2.aByteArrayArray8816!![i_17_]!![i_18_])
+                            i_15_ = (HashTileShape.aByteArrayArray8816!![i_17_]!![i_18_])
                         }
                         if (!bool && (class357.aClass318_Sub1_Sub1_4402 != null) && (class357.aClass318_Sub1_Sub1_4402!!.aShort8727) > i_16_) i_16_ = (class357.aClass318_Sub1_Sub1_4402!!.aShort8727)
                     }
@@ -90,7 +90,7 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                         if ((WidgetRedrawRegion.anIntArrayArray4253!![i_20_]!![i_21_] and 0xffffff.inv()) == 0) {
                             WidgetRedrawRegion.anIntArrayArray4253!![i_20_]!![i_21_] = i
                             BooleanGraphicsOptionState.aShortArrayArray5847!![i_20_]!![i_21_] = i_14_
-                            Class348_Sub1_Sub2.aByteArrayArray8816!![i_20_]!![i_21_] = i_15_
+                            HashTileShape.aByteArrayArray8816!![i_20_]!![i_21_] = i_15_
                         }
                         i_21_++
                     }
@@ -104,9 +104,9 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                         class318_sub1_sub3.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_22_]
                         BackgroundWorkerThread.aClass318_Sub1Array3226!![i_22_] = class318_sub1_sub3
                     } else {
-                        class318_sub1_sub3.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_22_]
-                        Class348.aClass318_Sub1Array4293!![i_22_] = class318_sub1_sub3
-                        Class348_Sub16_Sub2.aBoolean8870 = true
+                        class318_sub1_sub3.aClass318_Sub1_6379 = LinkedListNode.aClass318_Sub1Array4293!![i_22_]
+                        LinkedListNode.aClass318_Sub1Array4293!![i_22_] = class318_sub1_sub3
+                        PcmStreamBuffer.aBoolean8870 = true
                     }
                 } else {
                     class318_sub1_sub3.aClass318_Sub1_6379 = OverlayColorTable.aClass318_Sub1Array1754!![i_22_]

@@ -37,20 +37,20 @@ object Class99 {
                 i_1_ += i_6_
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("me.D(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("me.D(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
         }
     }
 
     @JvmStatic
-    fun method881(class348_sub42_sub13: Class348_Sub42_Sub13, i: Int, bool: Boolean, i_11_: Int) {
+    fun method881(class348_sub42_sub13: ContactList, i: Int, bool: Boolean, i_11_: Int) {
         anInt1576++
         if (Class5_Sub1.aBoolean8335) {
             var i_12_ = 0
-            var class348_sub42_sub12 = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1011(-59) as? Class348_Sub42_Sub12)
+            var class348_sub42_sub12 = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1011(-59) as? ContactEntry)
             while (class348_sub42_sub12 != null) {
                 val i_13_ = method138(class348_sub42_sub12, false)
                 if (i_13_ > i_12_) i_12_ = i_13_
-                class348_sub42_sub12 = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1003(108.toByte()) as? Class348_Sub42_Sub12)
+                class348_sub42_sub12 = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1003(108.toByte()) as? ContactEntry)
             }
             i_12_ += 8
             if (bool == true) {
@@ -61,11 +61,11 @@ object Class99 {
                 if (i_15_ < 0) i_15_ = 0
                 val i_16_ = if (!Class71.aBoolean1211) 31 else 33
                 var i_17_ = 13 + i_11_ + -i_16_
-                if (i_17_ + i_14_ > Class348_Sub42_Sub8_Sub2.anInt10432) i_17_ = Class348_Sub42_Sub8_Sub2.anInt10432 - i_14_
+                if (i_17_ + i_14_ > HardCacheEntryReference.anInt10432) i_17_ = HardCacheEntryReference.anInt10432 - i_14_
                 Class50_Sub3.anInt5252 = i_15_
                 if (i_17_ < 0) i_17_ = 0
                 ManagedGlResource.aClass348_Sub42_Sub13_3152 = class348_sub42_sub13
-                Class348_Sub1_Sub1.anInt8806 = i_12_
+                TerrainTileShape.anInt8806 = i_12_
                 Class373.anInt4534 = i_17_
             }
         }
@@ -74,7 +74,7 @@ object Class99 {
     @JvmStatic
     fun method882(i: Byte) {
         if (i.toInt() != 11) method882(((-62).toByte()).toByte())
-        Class348_Sub40_Sub33.aClass46ArrayArray9427 = arrayOfNulls(RenderConfigFactory.aClass45_2978!!.method414(-1))
+        WarpTextureNode.aClass46ArrayArray9427 = arrayOfNulls(RenderConfigFactory.aClass45_2978!!.method414(-1))
         anInt1573++
         Class369_Sub2.aClass46ArrayArray8584 = arrayOfNulls(RenderConfigFactory.aClass45_2978!!.method414(-1))
         AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aClass45_2978!!.method414(-1))

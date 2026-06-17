@@ -1,4 +1,4 @@
-import Class348_Sub16_Sub3.Companion.method2862
+import MidiSequencePlayer.Companion.method2862
 import NativeRenderer.Companion.method3873
 
 /* Class179 - Decompiled by JODE
@@ -117,7 +117,7 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
                             val class144 = method2862(privilegedOperationWorker, string, -117, 0)
                             WallEntity.aLinkedQueueNode_8766 = class144
                             RenderableGroup.aPrivilegedOperationWorker_5017 = privilegedOperationWorker
-                            Class348_Sub42_Sub8.aString9554 = string
+                            CacheEntryReference.aString9554 = string
                             return
                         }
                     }
@@ -133,11 +133,11 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
                 } else method2862(privilegedOperationWorker, string, -96, 3)
                 val i_6_ = -6 / ((i - 20) / 44)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bo.C(" + (if (string != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ',' + bool_3_ + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("bo.C(" + (if (string != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ',' + bool_3_ + ',' + i + ')'))
             }
         }
 
-        fun method1365(i: Int, i_11_: Byte, class348_sub49: Class348_Sub49) {
+        fun method1365(i: Int, i_11_: Byte, class348_sub49: Buffer) {
             if (i_11_ > -113) anInt2361 = -64
             if (Class374.aClass78_4538 != null) {
                 try {

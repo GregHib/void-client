@@ -58,7 +58,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             }
             return abstractModelRenderer_9_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -137,7 +137,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         itemDefinition.anInt2769 = i_13_
         itemDefinition.aStringArray2811 = arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null)
         itemDefinition.aStringArray2763 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
-        if (`is` != null) itemDefinition.method1569(768, Class348_Sub49(`is`))
+        if (`is` != null) itemDefinition.method1569(768, Buffer(`is`))
         itemDefinition.method1563(92.toByte())
         val i_14_ = 4 / ((i - 13) / 59)
         if (itemDefinition.anInt2833 != -1) itemDefinition.method1570(1, method1940(90, itemDefinition.anInt2758), method1940(101, itemDefinition.anInt2833))
@@ -180,7 +180,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             aCrc64Hashable_3289!!.anInt4993 = i
             return this.aSizeBoundedSoftCache_3288.method1340(123, aCrc64Hashable_3289!!) as AbstractModelRenderer?
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -207,7 +207,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             aStringArray3290 = (arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null))
             aStringArray3293 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_22_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_22_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -233,7 +233,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         fun method1929(i: Byte): Array<Class74?> {
             if (i.toInt() != -19) method1933(null, null, false)
             anInt3280++
-            return (arrayOf<Class74?>(Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, SplashImageLoadable.aClass74_4689, Class374.aClass74_4537, FileIoUtil.aClass74_4098, RectangleBounds.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, ArbFogMaterialPass.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, Class348_Sub40_Sub38.aClass74_9475, TextureGenerator.aClass74_2491))
+            return (arrayOf<Class74?>(HardCacheEntryReference.aClass74_10437, NamedIdEntry.aClass74_6891, SplashImageLoadable.aClass74_4689, Class374.aClass74_4537, FileIoUtil.aClass74_4098, RectangleBounds.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, IntKeyNode.aClass74_6977, ArbFogMaterialPass.aClass74_6201, Class91.aClass74_1519, SynthVoiceGroup.aClass74_8853, ClampTextureNode.aClass74_9475, TextureGenerator.aClass74_2491))
         }
 
         @JvmStatic
@@ -247,7 +247,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         fun method1933(class45: Class45?, var_renderer: Renderer?, bool: Boolean) {
             try {
                 anInt3279++
-                var spriteImages: Array<SpriteImage>? = SpriteImage.method1519(class45!!, Class348_Sub22.anInt6862, 0)
+                var spriteImages: Array<SpriteImage>? = SpriteImage.method1519(class45!!, NpcReference.anInt6862, 0)
                 HostPingThread.aAbstractModelRendererArray2260 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -257,11 +257,11 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                     }
                 }
                 spriteImages = SpriteImage.method1519(class45, DualMaterialContainer.anInt1639, 0)
-                Class348_Sub45.aAbstractModelRendererArray7107 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                TimedRecordAccessor.aAbstractModelRendererArray7107 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
                     while (spriteImages.size > i) {
-                        Class348_Sub45.aAbstractModelRendererArray7107!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                        TimedRecordAccessor.aAbstractModelRendererArray7107!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
@@ -314,21 +314,21 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                     }
                 }
                 spriteImages = SpriteImage.method1519(class45, RangedGraphicsOptionState.anInt5948, 0)
-                Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                for (i in spriteImages.indices) Class348_Sub40_Sub37.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                BoxBlurTextureNode.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                for (i in spriteImages.indices) BoxBlurTextureNode.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(spriteImages[i], true)
                 spriteImages = SpriteImage.method1519(class45, CameraNodeList.anInt1742, 0)
-                Class348_Sub12.aAbstractModelRendererArray6742 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                BoundingBoxNode.aAbstractModelRendererArray6742 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
                     while (spriteImages.size > i) {
-                        Class348_Sub12.aAbstractModelRendererArray6742!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                        BoundingBoxNode.aAbstractModelRendererArray6742!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
                 spriteImages = SpriteImage.method1519(class45, Class364.anInt4469, 0)
                 WorldMapRenderer.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) WorldMapRenderer.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(class45, Class348_Sub40_Sub38.anInt9473, 0)
+                spriteImages = SpriteImage.method1519(class45, ClampTextureNode.anInt9473, 0)
                 CameraNodeList.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -343,7 +343,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) ScriptResources.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(spriteImages[i], true)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ub.N(" + (if (class45 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ub.N(" + (if (class45 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
 
@@ -356,7 +356,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                     circleHitbox!!.method320(class64.EA(), class64.fa(), (-4).toByte(), i_11_, class64.na(), i, class64.V(), class64.G(), class64.HA(), i_10_, class64.RA())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (if (circleHitbox != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_11_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (if (circleHitbox != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_11_ + ')'))
             }
         }
 

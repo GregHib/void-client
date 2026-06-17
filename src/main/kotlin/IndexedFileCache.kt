@@ -145,7 +145,7 @@ class IndexedFileCache internal constructor(i: Int, class78: Class78?, class78_2
             aClass78_1938 = class78_26_
             anInt1939 = i_27_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nw.<init>(" + i + ',' + (if (class78 != null) "{...}" else "null") + ',' + (if (class78_26_ != null) "{...}" else "null") + ',' + i_27_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nw.<init>(" + i + ',' + (if (class78 != null) "{...}" else "null") + ',' + (if (class78_26_ != null) "{...}" else "null") + ',' + i_27_ + ')'))
         }
     }
 

@@ -39,7 +39,7 @@ class CameraRotationStub {
             anInt324++
             if (Class369_Sub1.anInt8583 != i_2_ || LocalizedTextTriple.anInt3760 != i_0_ || i_1_ != ProjectileConfigUtil.anInt396) {
                 Class369_Sub1.anInt8583 = i_2_
-                Class348_Sub16_Sub2.aBoolean8870 = true
+                PcmStreamBuffer.aBoolean8870 = true
                 ProjectileConfigUtil.anInt396 = i_1_
                 LocalizedTextTriple.anInt3760 = i_0_
                 val d = -((i_2_ * 2).toDouble() * 3.141592653589793) / 16384.0
@@ -49,15 +49,15 @@ class CameraRotationStub {
                 val d_6_ = cos(d)
                 val d_7_ = sin(d)
                 VideoAdChecker.aDouble3182 = d_4_
-                Class348_Sub15.aDouble6774 = d_7_
+                MenuActionNode.aDouble6774 = d_7_
                 LocalizedTextTriple.aDouble3761 = d_6_
-                Class348_Sub16_Sub2.aDouble8869 = d_4_ * d_6_
+                PcmStreamBuffer.aDouble8869 = d_4_ * d_6_
                 if (i != -15902) Companion.method288((-120).toByte())
-                Class348_Sub42_Sub5.aDouble9531 = d_7_ * -d_4_
+                ProceduralTextureGraph.aDouble9531 = d_7_ * -d_4_
                 Class357.aDouble4404 = d_5_
                 MapElementDefinitionCache.aDouble3980 = 0.0
                 Class59.aDouble1083 = d_6_ * -d_5_
-                Class348_Sub23_Sub2.aDouble9023 = d_5_ * d_7_
+                TheoraVideoStream.aDouble9023 = d_5_ * d_7_
             }
         }
     }

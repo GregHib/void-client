@@ -23,9 +23,9 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
     override fun method902(i: Int) {
         anInt5779++
         this.aFloat5784 = 1.0f
-        this.aFloat5769 = Class348_Sub23.aFloatArray6867!![0x3fff and i]
+        this.aFloat5769 = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i]
         this.aFloat5770 = this.aFloat5769
-        this.aFloat5761 = Class348_Sub23.aFloatArray6865!![0x3fff and i]
+        this.aFloat5761 = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i]
         this.aFloat5751 = 0.0f
         this.aFloat5754 = this.aFloat5751
         this.aFloat5756 = this.aFloat5754
@@ -73,8 +73,8 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     override fun method900(i: Int) {
         anInt5763++
-        val f = Class348_Sub23.aFloatArray6867!![0x3fff and i]
-        val f_11_ = Class348_Sub23.aFloatArray6865!![0x3fff and i]
+        val f = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i]
+        val f_11_ = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i]
         val f_12_ = this.aFloat5761
         val f_13_ = this.aFloat5769
         val f_14_ = this.aFloat5762
@@ -101,8 +101,8 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
             this.aFloat5784 = 1.0f
             this.aFloat5769 = i_17_.toFloat()
         } else {
-            val f_21_ = Class348_Sub23.aFloatArray6867!![0x3fff and i_18_]
-            val f_22_ = Class348_Sub23.aFloatArray6865!![i_18_ and 0x3fff]
+            val f_21_ = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i_18_]
+            val f_22_ = OggBitstreamDecoder.aFloatArray6865!![i_18_ and 0x3fff]
             this.aFloat5761 = i.toFloat() * f_22_
             this.aFloat5769 = i_17_.toFloat() * f_21_
             this.aFloat5762 = 0.0f
@@ -155,12 +155,12 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     override fun method903(i: Int, i_30_: Int, i_31_: Int, i_32_: Int, i_33_: Int, i_34_: Int) {
         anInt5782++
-        val f = Class348_Sub23.aFloatArray6867!![i_32_ and 0x3fff]
-        val f_35_ = Class348_Sub23.aFloatArray6865!![i_32_ and 0x3fff]
-        val f_36_ = Class348_Sub23.aFloatArray6867!![0x3fff and i_33_]
-        val f_37_ = Class348_Sub23.aFloatArray6865!![0x3fff and i_33_]
-        val f_38_ = Class348_Sub23.aFloatArray6867!![0x3fff and i_34_]
-        val f_39_ = Class348_Sub23.aFloatArray6865!![0x3fff and i_34_]
+        val f = OggBitstreamDecoder.aFloatArray6867!![i_32_ and 0x3fff]
+        val f_35_ = OggBitstreamDecoder.aFloatArray6865!![i_32_ and 0x3fff]
+        val f_36_ = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i_33_]
+        val f_37_ = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i_33_]
+        val f_38_ = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i_34_]
+        val f_39_ = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i_34_]
         val f_40_ = f_35_ * f_38_
         val f_41_ = f_39_ * f_35_
         this.aFloat5762 = f_40_ * f_36_ + f_37_ * f_39_
@@ -179,8 +179,8 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     override fun method908(i: Int) {
         anInt5774++
-        val f = Class348_Sub23.aFloatArray6867!![i and 0x3fff]
-        val f_42_ = Class348_Sub23.aFloatArray6865!![i and 0x3fff]
+        val f = OggBitstreamDecoder.aFloatArray6867!![i and 0x3fff]
+        val f_42_ = OggBitstreamDecoder.aFloatArray6865!![i and 0x3fff]
         val f_43_ = this.aFloat5770
         val f_44_ = this.aFloat5750
         val f_45_ = this.aFloat5781
@@ -277,9 +277,9 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
     override fun method895(i: Int) {
         anInt5780++
         this.aFloat5769 = 1.0f
-        this.aFloat5784 = Class348_Sub23.aFloatArray6867!![0x3fff and i]
+        this.aFloat5784 = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i]
         this.aFloat5770 = this.aFloat5784
-        this.aFloat5781 = Class348_Sub23.aFloatArray6865!![0x3fff and i]
+        this.aFloat5781 = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i]
         this.aFloat5756 = -this.aFloat5781
         this.aFloat5751 = 0.0f
         this.aFloat5754 = this.aFloat5751
@@ -293,9 +293,9 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
     override fun method899(i: Int) {
         anInt5757++
         this.aFloat5770 = 1.0f
-        this.aFloat5784 = Class348_Sub23.aFloatArray6867!![0x3fff and i]
+        this.aFloat5784 = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i]
         this.aFloat5769 = this.aFloat5784
-        this.aFloat5754 = Class348_Sub23.aFloatArray6865!![0x3fff and i]
+        this.aFloat5754 = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i]
         this.aFloat5762 = -this.aFloat5754
         this.aFloat5751 = 0.0f
         this.aFloat5756 = this.aFloat5751
@@ -324,8 +324,8 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     override fun method896(i: Int) {
         anInt5766++
-        val f = Class348_Sub23.aFloatArray6867!![i and 0x3fff]
-        val f_62_ = Class348_Sub23.aFloatArray6865!![i and 0x3fff]
+        val f = OggBitstreamDecoder.aFloatArray6867!![i and 0x3fff]
+        val f_62_ = OggBitstreamDecoder.aFloatArray6865!![i and 0x3fff]
         val f_63_ = this.aFloat5770
         val f_64_ = this.aFloat5750
         val f_65_ = this.aFloat5781
@@ -458,7 +458,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
         }
 
         @JvmStatic
-        fun method943(bool: Boolean): Class348_Sub16_Sub3? {
+        fun method943(bool: Boolean): MidiSequencePlayer? {
             anInt5776++
             if (bool != false) method943(true)
             return Class98.aClass348_Sub16_Sub3_1564
@@ -473,7 +473,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
                     var i_53_ = 0
                     while ((i_53_ < Class367_Sub4.anInt7319 shr 3)) {
                         var i_54_ = 0
-                        while ((Class348_Sub40_Sub3.anInt9109 shr 3 > i_54_)) {
+                        while ((RangeThresholdTextureNode.anInt9109 shr 3 > i_54_)) {
                             val i_55_ = (Class62.anIntArrayArrayArray1116!![i_52_]!![i_53_]!![i_54_])
                             if (i_55_ != -1) {
                                 val i_56_ = 0x3 and (i_55_ shr 24)
@@ -482,9 +482,9 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
                                     val i_58_ = i_55_ shr 14 and 0x3ff
                                     val i_59_ = (0x3ff9 and i_55_) shr 3
                                     val i_60_ = i_59_ / 8 + (i_58_ / 8 shl 8)
-                                    for (i_61_ in Class348_Sub23_Sub3.anIntArray9042!!.indices) {
-                                        if (i_60_ == (Class348_Sub23_Sub3.anIntArray9042!![i_61_]) && `is`!![i_61_] != null) {
-                                            class237_sub1.method1692((i_58_ and 0x7) * 8, i_57_, `is`[i_61_], i_56_, (i_59_ and 0x7) * 8, Class348_Sub8.aRenderer6654, 8 * i_54_, 8 * i_53_, i + 8219, Class348_Sub45.aClass361Array7108, i_52_)
+                                    for (i_61_ in NullOggStream.anIntArray9042!!.indices) {
+                                        if (i_60_ == (NullOggStream.anIntArray9042!![i_61_]) && `is`!![i_61_] != null) {
+                                            class237_sub1.method1692((i_58_ and 0x7) * 8, i_57_, `is`[i_61_], i_56_, (i_59_ and 0x7) * 8, FacingDirectionNode.aRenderer6654, 8 * i_54_, 8 * i_53_, i + 8219, TimedRecordAccessor.aClass361Array7108, i_52_)
                                             break
                                         }
                                     }
@@ -496,7 +496,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("iaa.W(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("iaa.W(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -504,16 +504,16 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
             anInt5783++
             if (i.toInt() != 41) anInt5768 = 38
             run {
-                var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? Class348_Sub9
+                var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState
                 while (class348_sub9 != null) {
                     if (class348_sub9!!.aBoolean6684) class348_sub9!!.method2781(21.toByte())
-                    class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(117.toByte()) as? Class348_Sub9
+                    class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(117.toByte()) as? CharacterRenderState
                 }
             }
-            var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? Class348_Sub9
+            var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? CharacterRenderState
             while (class348_sub9 != null) {
                 if (class348_sub9!!.aBoolean6684) class348_sub9!!.method2781(21.toByte())
-                class348_sub9 = (Client.aNodeDeque_5185!!.method1990(39.toByte()) as? Class348_Sub9)
+                class348_sub9 = (Client.aNodeDeque_5185!!.method1990(39.toByte()) as? CharacterRenderState)
             }
         }
     }

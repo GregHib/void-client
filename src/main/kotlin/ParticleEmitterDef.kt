@@ -1,6 +1,6 @@
 import ProjectileFactory.Companion.method1613
 import Texture2DProvider.Companion.method2259
-import Class348.Companion.method2709
+import LinkedListNode.Companion.method2709
 import Class64.Companion.method616
 
 /* Class288 - Decompiled by JODE
@@ -20,7 +20,7 @@ open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment
 
     override fun method51(i: Byte): ProjectileFactory? {
         anInt4957++
-        return Class348_Sub40_Sub21.aProjectileFactory_9274
+        return WeaveTextureNode.aProjectileFactory_9274
     }
 
     init {
@@ -31,7 +31,7 @@ open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment
             this.aScreenAnchorAlignment_4955 = screenAnchorAlignment
             this.aTileRenderState_4952 = tileRenderState
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vr.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("vr.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ')'))
         }
     }
 

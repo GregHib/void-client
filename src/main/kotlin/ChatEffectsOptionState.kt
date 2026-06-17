@@ -14,7 +14,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         return this.anInt3138
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1710(i: Int): Int {
         if (i != 20014) anInt5871 = -72
@@ -22,7 +22,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         return 0
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     fun method1729(i: Int): Boolean {
         if (i <= 85) return true
@@ -91,7 +91,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1728(i: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int) {
             anInt5860++
-            if (TextureLoaderUtil.method2547(i_3_, 84.toByte())) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_3_]!!))
+            if (TextureLoaderUtil.method2547(i_3_, 84.toByte())) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (WarpTextureNode.aClass46ArrayArray9427!![i_3_]!!))
         }
 
         @JvmStatic
@@ -119,8 +119,8 @@ class ChatEffectsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1731(i: Int) {
             anInt5863++
-            val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(i xor 0x5) as Class348_Sub45?)
-            val bool = (RegionSceneLoader.aClass46_3701 != null || Class348_Sub42.anInt7059 > 0)
+            val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(i xor 0x5) as TimedRecordAccessor?)
+            val bool = (RegionSceneLoader.aClass46_3701 != null || HashLinkedListNode.anInt7059 > 0)
             val i_19_ = class348_sub45!!.method3308((-128).toByte())
             val i_20_ = class348_sub45.method3311(119)
             if (bool) NpcEntityUpdater.anInt3655 = 1
@@ -149,9 +149,9 @@ class ChatEffectsOptionState : GraphicsOptionState {
             try {
                 anInt5859++
                 if (i == -1) return null
-                if (Class348_Sub1.anIntArray6547 != null) {
-                    for (i_26_ in Class348_Sub1.anIntArray6547!!.indices) {
-                        if (Class348_Sub1.anIntArray6547!![i_26_] == i) return LoadingScreenState.aClass352Array2636!![i_26_]
+                if (AbstractTileShape.anIntArray6547 != null) {
+                    for (i_26_ in AbstractTileShape.anIntArray6547!!.indices) {
+                        if (AbstractTileShape.anIntArray6547!![i_26_] == i) return LoadingScreenState.aClass352Array2636!![i_26_]
                     }
                 }
                 var class352 = SoundCacheState.aClass60_4139!!.method583(i.toLong(), -92) as? Class352?
@@ -173,7 +173,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                 SoundCacheState.aClass60_4139!!.method582(class352, i.toLong(), (-109).toByte())
                 return class352
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("jaa.K(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("jaa.K(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
             }
         }
     }

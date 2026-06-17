@@ -27,17 +27,17 @@ object Class91 {
         Class358.anInt4411 = 0
         AbstractCameraTransform.anInt1597 = 0
         anInt1522++
-        Class348_Sub23_Sub3.anInt9041++
+        NullOggStream.anInt9041++
         NpcSummaryDefinition.method1165(1)
         method204(-724138005)
         VarpStore.method1318(-65536)
         var bool = false
         for (i_2_ in 0..<Class358.anInt4411) {
             val i_3_ = Class5_Sub1_Sub1.anIntArray9932!![i_2_]
-            val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as Class348_Sub22)
+            val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as NpcReference)
             val npc = (class348_sub22.aNpc_6859)!!
-            if (Class5_Sub1.aBoolean8335 && Class348_Sub42_Sub1.method3169(i_3_, 0)) method2146(84.toByte())
-            if (Class348_Sub23_Sub3.anInt9041 != (npc.anInt10306)) {
+            if (Class5_Sub1.aBoolean8335 && ParamMap.method3169(i_3_, 0)) method2146(84.toByte())
+            if (NullOggStream.anInt9041 != (npc.anInt10306)) {
                 if (npc.aClass79_10505!!.method793(0)) method181(true, npc)
                 npc.method2448(null, -2)
                 class348_sub22.method2715(52.toByte())
@@ -45,19 +45,19 @@ object Class91 {
             }
         }
         if (bool) {
-            Class348_Sub32.anInt6930 = NpcEntityUpdater.aClass356_3654!!.method3474(1)
-            NpcEntityUpdater.aClass356_3654!!.method3477(3, Class348_Sub40_Sub23.aClass348_Sub22Array9319!! as Array<Class348?>)
+            TerrainShadowBuilderGl2.anInt6930 = NpcEntityUpdater.aClass356_3654!!.method3474(1)
+            NpcEntityUpdater.aClass356_3654!!.method3477(3, TurbulenceTextureNode.aClass348_Sub22Array9319!! as Array<LinkedListNode?>)
         }
-        if (Class348_Sub40_Sub25.anInt9341 != CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + Class348_Sub40_Sub25.anInt9341)
+        if (RadialTextureNode.anInt9341 != CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + RadialTextureNode.anInt9341)
         if (i <= 47) aClass74_1519 = null
         var i_4_ = 0
         while (ModelDefinitionLoader.anInt2057 > i_4_) {
             if (NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + ModelDefinitionLoader.anInt2057)
             i_4_++
         }
-        if (Class348_Sub32.anInt6930 - ModelDefinitionLoader.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930 - ModelDefinitionLoader.anInt2057))
-        for (i_5_ in 0..<Class348_Sub32.anInt6930) {
-            if (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10306 != Class348_Sub23_Sub3.anInt9041) throw RuntimeException("gnp4 uk:" + (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10290))
+        if (TerrainShadowBuilderGl2.anInt6930 - ModelDefinitionLoader.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (TerrainShadowBuilderGl2.anInt6930 - ModelDefinitionLoader.anInt2057))
+        for (i_5_ in 0..<TerrainShadowBuilderGl2.anInt6930) {
+            if (TurbulenceTextureNode.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10306 != NullOggStream.anInt9041) throw RuntimeException("gnp4 uk:" + (TurbulenceTextureNode.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10290))
         }
     }
 

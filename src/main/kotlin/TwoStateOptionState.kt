@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class TwoStateOptionState : GraphicsOptionState {
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1714(i: Int, i_17_: Int): Int {
         if (i != 3) method1712(-55, 59)
@@ -10,7 +10,7 @@ class TwoStateOptionState : GraphicsOptionState {
         return 1
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1716(bool: Boolean) {
         if (bool != false) method1847(null, 64)
@@ -92,30 +92,30 @@ class TwoStateOptionState : GraphicsOptionState {
                     if (class46.anInt709 <= 0) class46.anInt709 = 5
                 }
             }
-            if (RangedGraphicsOptionState.anInt5943 == class46.anInt765) Class348_Sub1.aClass46_6561 = class46
+            if (RangedGraphicsOptionState.anInt5943 == class46.anInt765) AbstractTileShape.aClass46_6561 = class46
             if (bool && class46.anObjectArray727 != null && (i_10_ != class46.anInt709 || (i_11_ != class46.anInt789))) {
-                val class348_sub36 = Class348_Sub36()
+                val class348_sub36 = WidgetActionEntry()
                 class348_sub36.aClass46_6989 = class46
                 class348_sub36.anObjectArray6987 = class46.anObjectArray727
-                Class348_Sub1_Sub2.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
             }
         }
 
         @JvmStatic
         fun method1844(i: Int, i_12_: Int, bool: Boolean, i_13_: Int, bool_14_: Boolean, i_15_: Int, i_16_: Int) {
-            Class348_Sub42_Sub4.anInt9515 = i_13_
+            ShortMatrixNode.anInt9515 = i_13_
             CollisionMapAccessor.anInt3550 = i_16_
             if (bool_14_ == false) {
-                Class348_Sub40_Sub31.anInt9406 = i
+                TileTextureNode.anInt9406 = i
                 anInt6136++
-                Class348_Sub35.anInt6981 = i_12_
+                IntKeyNode.anInt6981 = i_12_
                 GlTextureCubeMap.anInt8537 = i_15_
                 if (bool && GlTextureCubeMap.anInt8537 >= 100) {
                     Class59_Sub2_Sub2.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
-                    GlslMaterialPass.anInt6246 = 256 + Class348_Sub35.anInt6981 * 512
-                    ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
+                    GlslMaterialPass.anInt6246 = 256 + IntKeyNode.anInt6981 * 512
+                    ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -ShortMatrixNode.anInt9515)
                 }
-                Class348_Sub40_Sub21.anInt9282 = 2
+                WeaveTextureNode.anInt9282 = 2
                 SequencedWallEntity.anInt10163 = -1
                 Class9.anInt167 = SequencedWallEntity.anInt10163
             }

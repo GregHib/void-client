@@ -85,7 +85,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
             this.aHa_Sub2_3684.method3738(-15039, 0)
             aClass61_6254.method591(-1)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("gn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("gn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -147,21 +147,21 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
                 if (i_0_ == 2) {
                     val i_1_ = (min(SocketFactory.anInt3473, 800))
                     LocTypeDefinition.anInt4017 = i_1_
-                    Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 + -i_1_) / 2
-                    val i_2_ = (min(Class348_Sub22.anInt6857, 600))
-                    Class348_Sub42_Sub8_Sub2.anInt10432 = i_2_
+                    ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -i_1_) / 2
+                    val i_2_ = (min(NpcReference.anInt6857, 600))
+                    HardCacheEntryReference.anInt10432 = i_2_
                     TimingCounters.anInt4167 = 0
                 } else if (i_0_ == 1) {
                     val i_3_ = min(SocketFactory.anInt3473, 1024)
-                    Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 + -i_3_) / 2
-                    val i_4_ = (min(Class348_Sub22.anInt6857, 768))
+                    ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -i_3_) / 2
+                    val i_4_ = (min(NpcReference.anInt6857, 768))
                     LocTypeDefinition.anInt4017 = i_3_
                     TimingCounters.anInt4167 = 0
-                    Class348_Sub42_Sub8_Sub2.anInt10432 = i_4_
+                    HardCacheEntryReference.anInt10432 = i_4_
                 } else {
                     TimingCounters.anInt4167 = 0
-                    Class348_Sub42_Sub8_Sub2.anInt10432 = Class348_Sub22.anInt6857
-                    Class348_Sub48.anInt7129 = 0
+                    HardCacheEntryReference.anInt10432 = NpcReference.anInt6857
+                    ModelResourceBundle.anInt7129 = 0
                     LocTypeDefinition.anInt4017 = SocketFactory.anInt3473
                 }
             }
@@ -169,7 +169,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
 
         @JvmStatic
         fun method2159(i: Byte, class45: Class45) {
-            Class348_Sub22.anInt6862 = class45.method417("hitmarks", 0)
+            NpcReference.anInt6862 = class45.method417("hitmarks", 0)
             anInt6258++
             DualMaterialContainer.anInt1639 = class45.method417("hitbar_default", 0)
             Class373_Sub2.anInt7429 = class45.method417("timerbar_default", 0)
@@ -181,7 +181,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
             RangedGraphicsOptionState.anInt5948 = class45.method417("cross", 0)
             CameraNodeList.anInt1742 = class45.method417("mapdots", 0)
             Class364.anInt4469 = class45.method417("scrollbar", 0)
-            Class348_Sub40_Sub38.anInt9473 = class45.method417("name_icons", 0)
+            ClampTextureNode.anInt9473 = class45.method417("name_icons", 0)
             LocTypeDefLoader.anInt2510 = class45.method417("floorshadows", 0)
             Class52.anInt4895 = class45.method417("compass", 0)
             if (i > -72) method2161(106.toByte(), 125L)
@@ -209,7 +209,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
                     val i_13_ = 70 % ((i - -52) / 32)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "gn.D(" + i + ',' + l + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "gn.D(" + i + ',' + l + ')')
             }
         }
     }

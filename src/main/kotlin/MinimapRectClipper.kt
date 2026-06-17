@@ -30,7 +30,7 @@ object MinimapRectClipper {
     @JvmStatic
     fun method226(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         var i_4_ = i_2_
-        while (Class348_Sub38.anInt7008 > i_4_) {
+        while (TerrainShadowBuilderGl3.anInt7008 > i_4_) {
             val rectangle = HintIconState.aRectangleArray2371!![i_4_]!!
             if (i < rectangle.width + rectangle.x && i_0_ + i > rectangle.x && (i_1_ < rectangle.y - -rectangle.height) && rectangle.y < i_1_ + i_3_) GzipDecompressor.aBooleanArray2076!![i_4_] = true
             i_4_++
@@ -42,7 +42,7 @@ object MinimapRectClipper {
     @JvmStatic
     fun method227(class318_sub1: SceneEntity, bool: Boolean, bool_5_: Boolean) {
         class318_sub1.aBoolean6391 = bool_5_
-        if (Class348_Sub40_Sub5.aBoolean9121) {
+        if (VoronoiNoiseTextureNode.aBoolean9121) {
             if (bool) MapElementDefinitionCache.aCacheIndexManagerArray3982!![MapElementDefinitionCache.aCacheIndexManagerArray3982!!.size - 1]!!.method2353(class318_sub1, false)
             else {
                 val i = method2154(class318_sub1.anInt6386)

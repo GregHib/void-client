@@ -1,7 +1,7 @@
 import LinkedListIterator.Companion.method1242
 import SocketFactory.Companion.method2049
-import Class348_Sub40_Sub34.Companion.method3141
-import Class348_Sub42_Sub8_Sub2.Companion.method3201
+import NormalMapTextureNode.Companion.method3141
+import HardCacheEntryReference.Companion.method3201
 import java.io.IOException
 
 /* Class292 - Decompiled by JODE
@@ -58,9 +58,9 @@ class MapArchiveSource internal constructor(private val aClass45_4804: Class45) 
                 return true
             } catch (exception: Exception) {
                 var string =
-                    ("T2 - " + (if (Class348_Sub3.aIntRange_6584 != null) Class348_Sub3.aIntRange_6584!!.method1058(119.toByte()) else -1) + "," + (if (GraphicsOptionState.aIntRange_3145 != null) GraphicsOptionState.aIntRange_3145!!.method1058(119.toByte()) else -1) + "," + (if (Class348_Sub40_Sub36.aIntRange_9456 == null) -1 else Class348_Sub40_Sub36.aIntRange_9456!!.method1058(113.toByte())) + " - " + Class348_Sub40_Sub25.anInt9341 + "," + ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX) + "," + (Class90.regionTileY - -(LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + " - ")
+                    ("T2 - " + (if (ModelVertexColorBuffer.aIntRange_6584 != null) ModelVertexColorBuffer.aIntRange_6584!!.method1058(119.toByte()) else -1) + "," + (if (GraphicsOptionState.aIntRange_3145 != null) GraphicsOptionState.aIntRange_3145!!.method1058(119.toByte()) else -1) + "," + (if (SineWaveTextureNode.aIntRange_9456 == null) -1 else SineWaveTextureNode.aIntRange_9456!!.method1058(113.toByte())) + " - " + RadialTextureNode.anInt9341 + "," + ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX) + "," + (Class90.regionTileY - -(LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + " - ")
                 var i_2_ = 0
-                while (Class348_Sub40_Sub25.anInt9341 > i_2_ && i_2_ < 50) {
+                while (RadialTextureNode.anInt9341 > i_2_ && i_2_ < 50) {
                     string += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![i_2_]).toString() + ","
                     i_2_++
                 }

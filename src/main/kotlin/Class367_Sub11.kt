@@ -45,7 +45,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         this.aHa_Sub3_4479.method3850((-128).toByte(), null)
         this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 116, ParticleSystemState.aRenderConfigFactory_2207)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNode.aClass70_9485)
         this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
         this.aHa_Sub3_4479.method3897(0, -4382)
         if (aBoolean7399) {
@@ -116,7 +116,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                 } else aBoolean7391 = false
             } else aBoolean7391 = false
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("or.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("or.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -126,7 +126,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         this.aHa_Sub3_4479.method3897(1, i xor 0x2a45.inv())
         this.aHa_Sub3_4479.method3850((-32).toByte(), anInterface18_Impl3_7390)
         this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 109, MediaStreamClient.aRenderConfigFactory_3196)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
         if (i == 15192) {
             this.aHa_Sub3_4479.method3924(true, false, 2, WidgetRedrawRegion.aClass70_4247, false)
             this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
@@ -181,7 +181,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                 method2260(i_9_, i_8_, l, 0, bool, class45, 126.toByte(), i_7_)
                 val i_10_ = -35 / ((-41 - i) / 38)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("or.Q(" + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + l + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("or.Q(" + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + l + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
             }
         }
 
@@ -193,35 +193,35 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                     if (SkeletalAnimFrameLoader.aFrame476 == null) {
                         val container: Container
                         if (Class52.aFrame4904 != null) container = Class52.aFrame4904!!
-                        else if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169!!
+                        else if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
                         else container = Class93.anApplet1530!! as Container
                         SocketFactory.anInt3473 = container.getSize().width
-                        Class348_Sub22.anInt6857 = container.getSize().height
+                        NpcReference.anInt6857 = container.getSize().height
                         if (Class52.aFrame4904 === container) {
                             val insets = Class52.aFrame4904!!.getInsets()
                             SocketFactory.anInt3473 -= insets.left - -insets.right
-                            Class348_Sub22.anInt6857 -= insets.bottom + insets.top
+                            NpcReference.anInt6857 -= insets.bottom + insets.top
                         }
-                        if (Class348_Sub42_Sub12.method3229(-86) == 1) {
+                        if (ContactEntry.method3229(-86) == 1) {
                             LocTypeDefinition.anInt4017 = Class92.anInt1524
                             TimingCounters.anInt4167 = 0
-                            Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 - Class92.anInt1524) / 2
-                            Class348_Sub42_Sub8_Sub2.anInt10432 = OpenGlRenderer.anInt7666
+                            ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 - Class92.anInt1524) / 2
+                            HardCacheEntryReference.anInt10432 = OpenGlRenderer.anInt7666
                         } else method2158(56.toByte())
                         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-                            if (LocTypeDefinition.anInt4017 < 1024 && Class348_Sub42_Sub8_Sub2.anInt10432 < 768) {
+                            if (LocTypeDefinition.anInt4017 < 1024 && HardCacheEntryReference.anInt10432 < 768) {
                                 /* empty */
                             }
                         }
-                        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432))
-                        if (Class348_Sub8.aRenderer6654 != null) {
+                        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
+                        if (FacingDirectionNode.aRenderer6654 != null) {
                             if (Class59_Sub1.aBoolean5300) TerrainTile.method3980(120, ParticleSystemRenderer.aCanvas3869!!)
-                            else Class348_Sub8.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+                            else FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
                         }
                         if (Class52.aFrame4904 === container) {
                             val insets = Class52.aFrame4904!!.getInsets()
-                            ParticleSystemRenderer.aCanvas3869!!.setLocation(insets.left - -Class348_Sub48.anInt7129, TimingCounters.anInt4167 + insets.top)
-                        } else ParticleSystemRenderer.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129), TimingCounters.anInt4167)
+                            ParticleSystemRenderer.aCanvas3869!!.setLocation(insets.left - -ModelResourceBundle.anInt7129, TimingCounters.anInt4167 + insets.top)
+                        } else ParticleSystemRenderer.aCanvas3869!!.setLocation((ModelResourceBundle.anInt7129), TimingCounters.anInt4167)
                         if (RenderNode.anInt9721 != -1) method1713(true, 520)
                         ScreenBorderFiller.method1170((-78).toByte())
                     } else {

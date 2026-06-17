@@ -22,9 +22,9 @@ object CacheStateResetter {
         val i_0_ = 9 / ((62 - i) / 47)
         ProjectileConfigUtil.anInt396 = -1
         Class51.aAbstractCameraTransform_905 = null
-        Class348_Sub49.anInt7207 = -1
+        Buffer.anInt7207 = -1
         Class369_Sub1.anInt8583 = -1
-        Class348_Sub42_Sub8_Sub2.aClass76_10436!!.method775(69.toByte())
+        HardCacheEntryReference.aClass76_10436!!.method775(69.toByte())
     }
 
     @JvmStatic

@@ -43,7 +43,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         var anInt8685: Int = 0
 
         @JvmStatic
-        fun method569(i: Byte, class348_sub49: Class348_Sub49) {
+        fun method569(i: Byte, class348_sub49: Buffer) {
             anInt8675++
             val i_0_ = class348_sub49.readSmart(-128)
             Class373_Sub2.aDataHolderArray7446 = arrayOfNulls<DataHolder>(i_0_)
@@ -105,7 +105,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         }
 
         @JvmStatic
-        fun method573(class348_sub42: Class348_Sub42?, class348_sub42_15_: Class348_Sub42?, i: Byte) {
+        fun method573(class348_sub42: HashLinkedListNode?, class348_sub42_15_: HashLinkedListNode?, i: Byte) {
             try {
                 if (class348_sub42!!.aClass348_Sub42_7060 != null) class348_sub42.method3162(true)
                 anInt8680++
@@ -115,7 +115,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 class348_sub42.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42
                 class348_sub42.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("wd.F(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_15_ != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("wd.F(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_15_ != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
 
@@ -136,7 +136,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 } else bool_29_ = Class5_Sub1.method187(i, i_23_, i_21_, i_26_, i_25_, i_24_, class361!!, i_19_, i_17_, i_20_, 1109655552)
                 val i_30_ = i_20_ - 64
                 val i_31_ = i_21_ + -64
-                var i_32_ = Class348_Sub40_Sub30.anInt9388
+                var i_32_ = HslAdjustTextureNode.anInt9388
                 var i_33_ = OverlayColorTable.anInt1753
                 if (!bool_29_) {
                     if (!bool) return -1
@@ -199,7 +199,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 }
                 return i_47_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("wd.B(" + i + ',' + i_16_ + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (is_22_ != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (class361 != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("wd.B(" + i + ',' + i_16_ + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (is_22_ != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (class361 != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'))
             }
         }
     }

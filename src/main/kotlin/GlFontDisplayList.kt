@@ -82,7 +82,7 @@ class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRe
                     }
                 }
             }
-            aClass258_Sub3_Sub1_6511 = Class348_Sub40_Sub32.method3132(`is`, 0, 0, i_1_, i_1_, aHa_Sub2_6509, false, 12.toByte())
+            aClass258_Sub3_Sub1_6511 = InvertTextureNode.method3132(`is`, 0, 0, i_1_, i_1_, aHa_Sub2_6509, false, 12.toByte())
             aBoolean6512 = false
         }
         aClass258_Sub3_Sub1_6511!!.method1957(9728, false)

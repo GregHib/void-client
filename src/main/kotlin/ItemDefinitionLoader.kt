@@ -48,7 +48,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
         }
         underlayDefinition = UnderlayDefinition()
         underlayDefinition.aItemDefinitionLoader_2886 = this
-        if (`is` != null) underlayDefinition.method1611(Class348_Sub49(`is`), false)
+        if (`is` != null) underlayDefinition.method1611(Buffer(`is`), false)
         synchronized(aClass60_2185) {
             aClass60_2185.method582(underlayDefinition, i_1_.toLong(), (-116).toByte())
         }
@@ -72,7 +72,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
             this.aClass45_2180 = class45_9_
             aClass45_2188!!.method407(0, 33)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pg.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("pg.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -101,7 +101,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
                     if (i == 64) break
                     aIntRange_2183 = null
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("pg.F(" + (if (file != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("pg.F(" + (if (file != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)
@@ -126,12 +126,12 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
                 i_8_ += method260(false)
             }
             if (FogOptionState.anInt6048 == 1) {
-                val class105 = (Class348_Sub40_Sub37.aAbstractModelRendererArray9467!![Class348.anInt4292 / 100])
+                val class105 = (BoxBlurTextureNode.aAbstractModelRendererArray9467!![LinkedListNode.anInt4292 / 100])
                 class105!!.method974(i_7_ - 8, i_8_ + -8)
                 MapTileShape.method2663(-5590, -8 + i_7_, -8 + (i_7_ - -class105.method966()), -8 + i_8_, class105.method980() + -8 + i_8_)
             }
             if (FogOptionState.anInt6048 == 2) {
-                val class105 = (Class348_Sub40_Sub37.aAbstractModelRendererArray9467!![Class348.anInt4292 / 100 + 4])
+                val class105 = (BoxBlurTextureNode.aAbstractModelRendererArray9467!![LinkedListNode.anInt4292 / 100 + 4])
                 class105!!.method974(i_7_ + -8, -8 + i_8_)
                 MapTileShape.method2663(-5590, i_7_ - 8, class105.method966() + i_7_ + -8, -8 + i_8_, class105.method980() + -8 + i_8_)
             }

@@ -73,16 +73,16 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             this.aHa_Sub3_4479.method3871(ItemModelDefinition.aCameraNodeList_430, 0)
             val class101_sub2 = this.aHa_Sub3_4479.method3820(false)
             class101_sub2.method899(1024)
-            this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aConfigFlagUtil_9477)
+            this.aHa_Sub3_4479.method3853(-32, ClampTextureNode.aConfigFlagUtil_9477)
             if (aBoolean7311) {
-                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 113, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
+                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 113, (TheoraVideoStream.aRenderConfigFactory_9011))
                 this.aHa_Sub3_4479.method3924(true, false, 0, WidgetRedrawRegion.aClass70_4247, false)
                 this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
             } else {
                 this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), 117, (RenderQueueState.aRenderConfigFactory_6519))
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntity.aClass70_8737))
                 this.aHa_Sub3_4479.method3897(2, -4382)
-                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 122, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
+                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 122, (TheoraVideoStream.aRenderConfigFactory_9011))
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntity.aClass70_8737))
                 this.aHa_Sub3_4479.method3924(true, false, 1, (SceneObjectEntity.aClass70_8737), false)
                 this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
@@ -189,26 +189,26 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             anInt7310++
             val i_16_ = if (bool) 1.toByte() else (TextureQualityOptionState.anInt6006 and 0xff).toByte()
             if (i_16_ == RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_13_]!![i]) return false
-            if (((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_13_]!![i]).toInt() and 0x4) == 0) return false
+            if (((AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_13_]!![i]).toInt() and 0x4) == 0) return false
             var i_17_ = i_14_
             var i_18_ = 0
-            Class348_Sub16_Sub2.anIntArray8862!![i_17_] = i_13_
+            PcmStreamBuffer.anIntArray8862!![i_17_] = i_13_
             Exception_Sub1.anIntArray110!![i_17_++] = i
             RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_13_]!![i] = i_16_
             while (i_17_ != i_18_) {
-                val i_19_ = 0xffff and Class348_Sub16_Sub2.anIntArray8862!![i_18_]
-                val i_20_ = ((Class348_Sub16_Sub2.anIntArray8862!![i_18_] and 0xff3677) shr 16)
-                val i_21_ = (0xff and (Class348_Sub16_Sub2.anIntArray8862!![i_18_] shr 24))
+                val i_19_ = 0xffff and PcmStreamBuffer.anIntArray8862!![i_18_]
+                val i_20_ = ((PcmStreamBuffer.anIntArray8862!![i_18_] and 0xff3677) shr 16)
+                val i_21_ = (0xff and (PcmStreamBuffer.anIntArray8862!![i_18_] shr 24))
                 var i_22_ = 0xffff and Exception_Sub1.anIntArray110!![i_18_]
                 val i_23_ = ((0xff5347 and Exception_Sub1.anIntArray110!![i_18_]) shr 16)
                 i_18_ = i_18_ + 1 and 0xfff
                 var bool_24_ = false
-                if ((0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0) bool_24_ = true
+                if ((0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0) bool_24_ = true
                 var bool_25_ = false
                 if (class357s != null) {
                     var i_26_ = Class355.anInt4372 + 1
                     while_223_@ while ( /**/i_26_ <= 3) {
-                        if (class357s[i_26_] != null && (0x8 and (Class348_Sub33.aByteArrayArrayArray6962!![i_26_]!![i_19_]!![i_22_]).toInt()) == 0) {
+                        if (class357s[i_26_] != null && (0x8 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![i_26_]!![i_19_]!![i_22_]).toInt()) == 0) {
                             if (bool_24_ && class357s[i_26_]!![i_19_]!![i_22_] != null) {
                                 if ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406) != null) {
                                     val i_27_ = Class359.method3492(i_20_, 226)
@@ -281,7 +281,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                     if (i_35_ > FileIoUtil.anIntArray4097!![i_15_]) FileIoUtil.anIntArray4097!![i_15_] = i_35_
                     val i_36_ = i_19_ shl 9
                     if (i_36_ < LinkedListIterator.anIntArray2117!![i_15_]) LinkedListIterator.anIntArray2117!![i_15_] = i_36_
-                    else if (i_36_ > Class348_Sub40_Sub19.anIntArray9259!![i_15_]) Class348_Sub40_Sub19.anIntArray9259!![i_15_] = i_36_
+                    else if (i_36_ > BlankTextureNode.anIntArray9259!![i_15_]) BlankTextureNode.anIntArray9259!![i_15_] = i_36_
                     val i_37_ = i_22_ shl 9
                     if (i_37_ >= Class64.anIntArray1127!![i_15_]) {
                         if (Class56.anIntArray1045!![i_15_] < i_37_) Class56.anIntArray1045!![i_15_] = i_37_
@@ -289,26 +289,26 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                 }
                 if (!bool_24_) {
                     if (i_19_ >= 1 && (RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - 1]!![i_22_]) != i_16_) {
-                        Class348_Sub16_Sub2.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(1179648, i_19_ + -1), -754974720)
+                        PcmStreamBuffer.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(1179648, i_19_ + -1), -754974720)
                         Exception_Sub1.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 1245184)
                         i_17_ = 0xfff and 1 + i_17_
                         RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
                     }
-                    if (++i_22_ < Class348_Sub40_Sub3.anInt9109) {
-                        if (i_19_ - 1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![-1 + i_19_]!![i_22_]) && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && (0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![-1 + i_19_]!![-1 + i_22_]).toInt()) == 0) {
-                            Class348_Sub16_Sub2.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(1375731712, BoundsConstraintEntry.method2057(i_19_ + -1, 1179648)))
+                    if (++i_22_ < RangeThresholdTextureNode.anInt9109) {
+                        if (i_19_ - 1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![-1 + i_19_]!![i_22_]) && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![-1 + i_19_]!![-1 + i_22_]).toInt()) == 0) {
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(1375731712, BoundsConstraintEntry.method2057(i_19_ + -1, 1179648)))
                             Exception_Sub1.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 1245184)
                             RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![-1 + i_19_]!![i_22_] = i_16_
                             i_17_ = 0xfff and 1 + i_17_
                         }
                         if ((RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
-                            Class348_Sub16_Sub2.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(318767104, BoundsConstraintEntry.method2057(i_19_, 5373952)))
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(318767104, BoundsConstraintEntry.method2057(i_19_, 5373952)))
                             Exception_Sub1.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 5439488)
                             RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = i_17_ + 1 and 0xfff
                         }
-                        if (1 + i_19_ < anInt7319 && ((RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
-                            Class348_Sub16_Sub2.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-1845493760, BoundsConstraintEntry.method2057(1 + i_19_, 5373952)))
+                        if (1 + i_19_ < anInt7319 && ((RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-1845493760, BoundsConstraintEntry.method2057(1 + i_19_, 5373952)))
                             Exception_Sub1.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(5439488, i_22_)
                             i_17_ = 1 + i_17_ and 0xfff
                             RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
@@ -316,26 +316,26 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                     }
                     i_22_--
                     if (i_19_ - -1 < anInt7319 && (RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - -1]!![i_22_]) != i_16_) {
-                        Class348_Sub16_Sub2.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(1392508928, BoundsConstraintEntry.method2057(9568256, 1 + i_19_))
+                        PcmStreamBuffer.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(1392508928, BoundsConstraintEntry.method2057(9568256, 1 + i_19_))
                         Exception_Sub1.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 9633792)
                         i_17_ = 1 + i_17_ and 0xfff
                         RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
                     }
                     if (--i_22_ >= 0) {
-                        if (i_19_ + -1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - 1]!![i_22_]) && (0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![-1 + i_19_]!![1 + i_22_]).toInt()) == 0) {
-                            Class348_Sub16_Sub2.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(301989888, BoundsConstraintEntry.method2057(13762560, -1 + i_19_)))
+                        if (i_19_ + -1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - 1]!![i_22_]) && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![-1 + i_19_]!![1 + i_22_]).toInt()) == 0) {
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(301989888, BoundsConstraintEntry.method2057(13762560, -1 + i_19_)))
                             Exception_Sub1.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 13828096)
                             RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
                             i_17_ = i_17_ - -1 and 0xfff
                         }
                         if ((RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
-                            Class348_Sub16_Sub2.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(13762560, i_19_), -1828716544)
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(13762560, i_19_), -1828716544)
                             Exception_Sub1.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(13828096, i_22_)
                             RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = 0xfff and i_17_ - -1
                         }
-                        if (anInt7319 > 1 + i_19_ && (RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
-                            Class348_Sub16_Sub2.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-771751936, BoundsConstraintEntry.method2057(i_19_ - -1, 9568256)))
+                        if (anInt7319 > 1 + i_19_ && (RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-771751936, BoundsConstraintEntry.method2057(i_19_ - -1, 9568256)))
                             Exception_Sub1.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 9633792)
                             RegionSceneLoader.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
                             i_17_ = 0xfff and i_17_ - -1
@@ -346,7 +346,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             if (FileIoUtil.anIntArray4097!![i_15_] != -1000000) {
                 FileIoUtil.anIntArray4097!![i_15_] += 40
                 LinkedListIterator.anIntArray2117!![i_15_] -= 512
-                Class348_Sub40_Sub19.anIntArray9259!![i_15_] += 512
+                BlankTextureNode.anIntArray9259!![i_15_] += 512
                 Class56.anIntArray1045!![i_15_] += 512
                 Class64.anIntArray1127!![i_15_] -= 512
             }
@@ -363,17 +363,17 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
         }
 
         @JvmStatic
-        fun method3544(class348_sub49: Class348_Sub49?, i: Int, string: String?): Int {
+        fun method3544(class348_sub49: Buffer?, i: Int, string: String?): Int {
             try {
                 anInt7321++
                 val i_38_ = class348_sub49!!.anInt7197
-                val `is` = Class348_Sub24.method2992(string, (-20).toByte())
+                val `is` = ClientGameLoopNode.method2992(string, (-20).toByte())
                 val i_39_ = 1 % ((-6 - i) / 63)
                 class348_sub49.method3381(5537, `is`.size)
                 class348_sub49.anInt7197 += (Class64.aHuffmanCodec_1131!!.method2227(`is`.size, 0, class348_sub49.anInt7197, `is`, 103, class348_sub49.aByteArray7154))
                 return class348_sub49.anInt7197 + -i_38_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bk.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("bk.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
             }
         }
     }

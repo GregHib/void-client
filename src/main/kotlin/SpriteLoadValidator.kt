@@ -10,7 +10,7 @@ class SpriteLoadValidator internal constructor(class45: Class45?, string: String
             aString4788 = string
             aClass45_4789 = class45
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nv.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nv.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 

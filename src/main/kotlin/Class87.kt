@@ -36,7 +36,7 @@ class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         widgetDefinition = WidgetDefinition()
         widgetDefinition.anInt269 = i
         widgetDefinition.aClass87_251 = this
-        if (`is` != null) widgetDefinition.method267(Class348_Sub49(`is`), false)
+        if (`is` != null) widgetDefinition.method267(Buffer(`is`), false)
         widgetDefinition.method270(124.toByte())
         synchronized(aClass60_1487!!) {
             aClass60_1487!!.method582(widgetDefinition, i.toLong(), (-126).toByte())
@@ -66,14 +66,14 @@ class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         }
     }
 
-    fun method839(i: Int, i_5_: Int): Class348_Sub42_Sub17? {
+    fun method839(i: Int, i_5_: Int): TextureMaterialGroup? {
         anInt1484++
-        var class348_sub42_sub17: Class348_Sub42_Sub17?
+        var class348_sub42_sub17: TextureMaterialGroup?
         synchronized(aClass60_1491!!) {
             if (i_5_ != 3) aClass60_1487 = null
-            class348_sub42_sub17 = aClass60_1491!!.method583(i.toLong(), -60) as Class348_Sub42_Sub17?
+            class348_sub42_sub17 = aClass60_1491!!.method583(i.toLong(), -60) as TextureMaterialGroup?
             if (class348_sub42_sub17 == null) {
-                class348_sub42_sub17 = Class348_Sub42_Sub17(i)
+                class348_sub42_sub17 = TextureMaterialGroup(i)
                 aClass60_1491!!.method582(class348_sub42_sub17, i.toLong(), (-127).toByte())
             }
             if (!class348_sub42_sub17.method3268(-122)) return null
@@ -90,7 +90,7 @@ class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
             }
             method1711(7, class45_6_, 2, class45_7_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lfa.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lfa.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
         }
     }
 

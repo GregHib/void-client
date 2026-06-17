@@ -96,15 +96,15 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
         return anInt7448
     }
 
-    override fun method3596(i: Int): Class348_Sub45? {
+    override fun method3596(i: Int): TimedRecordAccessor? {
         if (i != 0) mouseReleased(null)
         anInt7437++
-        return aNodeDeque_7441!!.method1997(i + 8) as Class348_Sub45?
+        return aNodeDeque_7441!!.method1997(i + 8) as TimedRecordAccessor?
     }
 
     private fun method3606(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
         anInt7439++
-        val class348_sub45_sub2 = Class348_Sub45_Sub2()
+        val class348_sub45_sub2 = TimedRecordAccessorB()
         class348_sub45_sub2.anInt9739 = i_6_
         class348_sub45_sub2.anInt9733 = i_5_
         class348_sub45_sub2.anInt9730 = i_7_
@@ -241,7 +241,7 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
         @JvmField
         var anInt7457: Int = 0
         @JvmStatic
-        fun method3607(i: Int, class348_sub49: Class348_Sub49?, i_10_: Int): String {
+        fun method3607(i: Int, class348_sub49: Buffer?, i_10_: Int): String {
             val i_11_ = 17 % ((9 - i_10_) / 59)
             anInt7451++
             try {

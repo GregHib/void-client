@@ -9,7 +9,7 @@ open class MaterialTypeMarker : ShaderObject() {
         var aClass60_6517: Class60? = Class60(4)
         var anInt6518: Int = 0
 
-        fun method2612(class348_sub49: Class348_Sub49, bool: Boolean): ConfigValueProvider {
+        fun method2612(class348_sub49: Buffer, bool: Boolean): ConfigValueProvider {
             anInt6518++
             val i = class348_sub49.readUnsignedShort(842397944)
             if (bool != true) method2613(-27)

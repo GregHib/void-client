@@ -20,7 +20,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
         if (this.anInt3138 != 1 && this.anInt3138 != 0) this.anInt3138 = method1710(20014)
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1712(i: Int, i_2_: Int) {
         anInt5952++
@@ -28,7 +28,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
         val i_3_ = 98 / ((82 - i) / 35)
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1714(i: Int, i_15_: Int): Int {
         if (i != 3) return 94
@@ -69,7 +69,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 if (bool != true) method1769(-43)
                 val i_1_ = (ProjectedGroundDecor.aVarpStore_10209!!.anIntArray5063[i])
                 if (i_0_ == 5) WallEntity.anInt8770 = i_1_
-                if (i_0_ == 6) Class348_Sub40_Sub31.anInt9408 = i_1_
+                if (i_0_ == 6) TileTextureNode.anInt9408 = i_1_
             }
         }
 
@@ -99,7 +99,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 SlotBinding.aSlotBinding_3406!!.method2025(ConfigVarProgress("hw3d"), false)
                 SlotBinding.aSlotBinding_3407!!.method2025(ConfigVarProgress("jagtheora"), false)
                 SlotBinding.aSlotBinding_3408!!.method2025(MapArchiveSource(SpriteLoadValidator.aClass45_4796!!), false)
-                SlotBinding.aSlotBinding_3409!!.method2025(MapArchiveSource(Class348_Sub11.aClass45_4770!!), false)
+                SlotBinding.aSlotBinding_3409!!.method2025(MapArchiveSource(KeyEventNode.aClass45_4770!!), false)
                 SlotBinding.aSlotBinding_3410!!.method2025(MapArchiveSource(Class95.aClass45_1541!!), false)
                 SlotBinding.aSlotBinding_3411!!.method2025(MapArchiveSource(Class94.aClass45_1538!!), false)
                 SlotBinding.aSlotBinding_3412!!.method2025(MapArchiveSource(VideoAdChecker.aClass45_3183!!), false)
@@ -107,16 +107,16 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 SlotBinding.aSlotBinding_3414!!.method2025(MapArchiveSource(SpotAnimVector.aClass45_2306!!), false)
                 SlotBinding.aSlotBinding_3415!!.method2025(MapArchiveSource(OpenGlRenderNode.aClass45_10480!!), false)
                 SlotBinding.aSlotBinding_3416!!.method2025(MapArchiveSource(Class78.aClass45_1322!!), false)
-                SlotBinding.aSlotBinding_3417!!.method2025(MapArchiveSource(Class348_Sub16_Sub3.aClass45_8926!!), false)
+                SlotBinding.aSlotBinding_3417!!.method2025(MapArchiveSource(MidiSequencePlayer.aClass45_8926!!), false)
                 SlotBinding.aSlotBinding_3418!!.method2025(MapArchiveSource(ModelBatchBase.aClass45_1897!!), false)
                 SlotBinding.aSlotBinding_3419!!.method2025(MapArchiveSource(Class82.aClass45_1434!!), false)
                 SlotBinding.aSlotBinding_3420!!.method2025(MapArchiveSource(aClass45_3146!!), false)
                 SlotBinding.aSlotBinding_3421!!.method2025(MapArchiveSource(NodeDeque.aClass45_3323!!), false)
                 SlotBinding.aSlotBinding_3422!!.method2025(Class73((SceneTilePlaneManager.aClass45_233), "huffman"), false)
-                SlotBinding.aSlotBinding_3423!!.method2025(MapArchiveSource(Class348_Sub35.aClass45_6980!!), false)
+                SlotBinding.aSlotBinding_3423!!.method2025(MapArchiveSource(IntKeyNode.aClass45_6980!!), false)
                 SlotBinding.aSlotBinding_3424!!.method2025(MapArchiveSource(CameraNodeList.aClass45_1743!!), false)
                 SlotBinding.aSlotBinding_3425!!.method2025(MapArchiveSource(SoftwareSpriteRaster.aClass45_1627!!), false)
-                SlotBinding.aSlotBinding_3426!!.method2025(SpriteLoadValidator((Class348_Sub32.aClass45_6950), "details"), false)
+                SlotBinding.aSlotBinding_3426!!.method2025(SpriteLoadValidator((TerrainShadowBuilderGl2.aClass45_6950), "details"), false)
                 for (i_4_ in Crc64Hashable.aSlotBindingArray4987!!.indices) {
                     if (Crc64Hashable.aSlotBindingArray4987!![i_4_]!!.method2027(78) == null) throw RuntimeException()
                 }
@@ -128,7 +128,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                     val i_8_ = class267.method2027(80)!!.method31(87)
                     i_5_ += i_8_ * i_7_ / 100
                 }
-                Class348_Sub40_Sub24.anInt9327 = i_5_
+                GradientMapTextureNode.anInt9327 = i_5_
                 Class367_Sub8.anInt7365 = 2
             }
             if (Crc64Hashable.aSlotBindingArray4987 == null) return 100
@@ -152,8 +152,8 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 if (!(SlotBinding.aSlotBinding_3407!!.method2027(i.toInt() xor 0x64.inv()) as ConfigVarProgress).method2313(103)) Class38.aBoolean510 = Class79.aClient1367!!.method100(i.toInt() xor 0x12.inv())
                 Crc64Hashable.aSlotBindingArray4987 = null
             }
-            i_9_ -= Class348_Sub40_Sub24.anInt9327
-            i_10_ -= Class348_Sub40_Sub24.anInt9327
+            i_9_ -= GradientMapTextureNode.anInt9327
+            i_10_ -= GradientMapTextureNode.anInt9327
             var i_14_ = if (i_9_ <= 0) 100 else 100 * i_10_ / i_9_
             if (!bool && i_14_ > 99) i_14_ = 99
             return i_14_

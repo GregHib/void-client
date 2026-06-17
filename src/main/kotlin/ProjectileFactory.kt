@@ -40,7 +40,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
             try {
                 anInt2898++
                 if (i != 979190089) aBoolean2895 = false
-                val class348_sub9 = Class348_Sub9()
+                val class348_sub9 = CharacterRenderState()
                 class348_sub9.anInt6678 = i_4_ shl 9
                 class348_sub9.anInt6693 = i_2_
                 class348_sub9.anInt6689 = i_3_ shl 9
@@ -73,7 +73,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
                         class348_sub9.anInt6677 = player.anInt10558
                         class348_sub9.anInt6696 = 256
                         class348_sub9.aBoolean6674 = player.aBoolean10517
-                        Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3483(65.toByte(), player.anInt10290.toLong(), class348_sub9)
+                        CompletedResourceRequest.aClass356_10465!!.method3483(65.toByte(), player.anInt10290.toLong(), class348_sub9)
                     }
                 } else {
                     class348_sub9.aClass51_6695 = class51
@@ -103,7 +103,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
                     MapSceneIconDef.aNodeDeque_2859!!.method1999(class348_sub9, -20180)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ad.B(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (player != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i_5_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ad.B(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (player != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i_5_ + ')'))
             }
         }
 

@@ -141,12 +141,12 @@ class Class42 {
         anInt589++
         val i_6_ = -100 / ((63 - i_5_) / 58)
         if (aClass356_588 == null) return string
-        val class348_sub50 = aClass356_588!!.method3480(i.toLong(), -6008) as Class348_Sub50?
+        val class348_sub50 = aClass356_588!!.method3480(i.toLong(), -6008) as StringCacheNode?
         if (class348_sub50 == null) return string
         return class348_sub50.aString7211
     }
 
-    private fun method377(i: Int, class348_sub49: Class348_Sub49, i_7_: Int) {
+    private fun method377(i: Int, class348_sub49: Buffer, i_7_: Int) {
         anInt571++
         if (i != 1) {
             if (i == 2) this.anInt605 = class348_sub49.readUnsignedShort(842397944)
@@ -215,10 +215,10 @@ class Class42 {
                             while ((i_16_ < i_14_)) {
                                 val bool = (class348_sub49.readUnsignedByte(255) == 1)
                                 val i_17_ = class348_sub49.readMedium(-1)
-                                val class348: Class348?
-                                if (!bool) class348 = (Class348_Sub35(class348_sub49.readInt((-126).toByte())))
-                                else class348 = (Class348_Sub50(class348_sub49.readString((-41).toByte())))
-                                aClass356_588!!.method3483(60.toByte(), i_17_.toLong(), class348)
+                                val linkedListNode: LinkedListNode?
+                                if (!bool) linkedListNode = (IntKeyNode(class348_sub49.readInt((-126).toByte())))
+                                else linkedListNode = (StringCacheNode(class348_sub49.readString((-41).toByte())))
+                                aClass356_588!!.method3483(60.toByte(), i_17_.toLong(), linkedListNode)
                                 i_16_++
                             }
                         }
@@ -232,12 +232,12 @@ class Class42 {
         anInt600++
         if (aClass356_588 == null) return i
         if (bool != false) return -1
-        val class348_sub35 = aClass356_588!!.method3480(i_18_.toLong(), -6008) as Class348_Sub35?
+        val class348_sub35 = aClass356_588!!.method3480(i_18_.toLong(), -6008) as IntKeyNode?
         if (class348_sub35 == null) return i
         return class348_sub35.anInt6976
     }
 
-    fun method379(class348_sub49: Class348_Sub49, i: Int) {
+    fun method379(class348_sub49: Buffer, i: Int) {
         if (i < 81) anInt590 = 17
         anInt610++
         while (true) {

@@ -32,7 +32,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             if (!method1414(35632)) return false
             val class206 = aHa_Sub2_2511.aFrameBufferObject_7778
             val i_3_ = 30 % ((-55 - i) / 59)
-            val class348_sub42_sub2 = Class348_Sub42_Sub2(aHa_Sub2_2511, 6408, (class258_sub1!!.anInt8523), (class258_sub1.anInt8529))
+            val class348_sub42_sub2 = RenderbufferObject(aHa_Sub2_2511, 6408, (class258_sub1!!.anInt8523), (class258_sub1.anInt8529))
             aHa_Sub2_2511.method3773(-1, class206)
             var bool = false
             class206!!.method1508(0, class348_sub42_sub2, -12)
@@ -75,13 +75,13 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             aHa_Sub2_2511.method3770(-422613672, class206)
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qi.D(" + (if (class258_sub1 != null) "{...}" else "null") + ',' + (if (class258_sub1_2_ != null) "{...}" else "null") + ',' + i + ',' + f + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qi.D(" + (if (class258_sub1 != null) "{...}" else "null") + ',' + (if (class258_sub1_2_ != null) "{...}" else "null") + ',' + i + ',' + f + ')'))
         }
     }
 
     fun method1414(i: Int): Boolean {
         if (aHa_Sub2_2511.aBoolean7820 && aHa_Sub2_2511.aBoolean7783 && aGlShaderProgramHandle_2513 == null) {
-            val class242 = (Class348_Sub42_Sub15.method3249(
+            val class242 = (TimedTileQueueEntry.method3249(
                 35632,
                 121,
                 aHa_Sub2_2511,
@@ -128,22 +128,22 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             RenderConfigFactory.aLocDefinitionCache_2979!!.method2032(5, -101)
             anInt2515++
             Class362.aParticleDefLoader_4460!!.method1383(i xor 0x804c, 5)
-            Class348_Sub40_Sub25.aModelDefinitionLoader_9342!!.method1207(-17452, 5)
-            Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2010(5, i + -6)
+            RadialTextureNode.aModelDefinitionLoader_9342!!.method1207(-17452, 5)
+            GradientLookupEffect.aSeqDefinitionCache_9195!!.method2010(5, i + -6)
             MapAreaDefinition.Companion.aBufferedMessageQueue_2529!!.method2076(5, true)
             Exception_Sub1.aModelHeaderCache_112!!.method1937(5, false)
             ParticleEmitterNode.aClass87_191!!.method836(5, 93)
-            Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2544(5, (-41).toByte())
+            ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2544(5, (-41).toByte())
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1442(5, 1.toByte())
             NormalMapGenerator.aParticleAmountCache_3453!!.method1587(5, i xor 0xeab)
             Class64_Sub3.aNpcDefinitionCache_5558!!.method1984(119.toByte(), 5)
-            Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
+            TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
             ProjectionCameraTransform.aEmoteDefCache_5764!!.method2603(5, 11)
-            Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1409(5, -20721)
+            TheoraVideoStream.aLocTypeDefLoader_9036!!.method1409(5, -20721)
             CircleHitbox.aClass84_413!!.method819(74.toByte(), 5)
             HoverActionEntry.aSpriteStore_1813!!.method299(5, 16)
-            Class348_Sub1.aMapSceneDefLoader_6559!!.method1392(88, 5)
+            AbstractTileShape.aMapSceneDefLoader_6559!!.method1392(88, 5)
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1285(i, 8)
             SpriteLoadValidator.aClass65_4787!!.method697(5, 26)
             Class73.aModelDefinitionCache_4782!!.method1603(5, -66)
@@ -154,17 +154,17 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             method1323(5, 26603)
             Class353.aClass60_4346!!.method578(i + -3, 5)
             MaterialTypeMarker.aClass60_6517!!.method578(2, 5)
-            Class348_Sub1_Sub1.aClass60_8807!!.method578(i xor 0x7, 5)
+            TerrainTileShape.aClass60_8807!!.method578(i xor 0x7, 5)
             SkeletalAnimFrameLoader.aClass60_463!!.method578(2, 5)
             Class66.aClass60_1174!!.method578(2, 5)
         }
 
-        fun method1417(i: Int, class45: Class45, i_7_: Int): Class348_Sub17? {
+        fun method1417(i: Int, class45: Class45, i_7_: Int): SoundBankPatch? {
             anInt2516++
             if (i != 0) aBoolean2514 = true
             val `is` = class45.method415(73.toByte(), i_7_)
             if (`is` == null) return null
-            return Class348_Sub17(`is`)
+            return SoundBankPatch(`is`)
         }
 
         init {

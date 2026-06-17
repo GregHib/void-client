@@ -33,7 +33,7 @@ object Class44 {
                     method3570(false)
                     var i_6_ = 0
                     while ((Class367_Sub4.anInt7319 shr 3 > i_6_)) {
-                        for (i_7_ in 0..<(Class348_Sub40_Sub3.anInt9109 shr 3)) {
+                        for (i_7_ in 0..<(RangeThresholdTextureNode.anInt9109 shr 3)) {
                             val i_8_ = (Class62.anIntArrayArrayArray1116!![i]!![i_6_]!![i_7_])
                             if (i_8_ != -1) {
                                 val i_9_ = i_8_ shr 24 and 0x3
@@ -42,11 +42,11 @@ object Class44 {
                                     val i_11_ = (i_8_ and 0xffd064) shr 14
                                     val i_12_ = i_8_ shr 3 and 0x7ff
                                     val i_13_ = ((i_11_ / 8 shl 8) - -(i_12_ / 8))
-                                    for (i_14_ in (Class348_Sub23_Sub3.anIntArray9042)!!.indices) {
-                                        if ((i_13_ == (Class348_Sub23_Sub3.anIntArray9042!![i_14_])) && `is`!![i_14_] != null) {
-                                            val class348_sub49 = Class348_Sub49(`is`[i_14_])
-                                            class237_sub1.method1684(i_6_ * 8, i, -1, class348_sub49, i_12_, 8 * i_7_, i_11_, (Class348_Sub45.aClass361Array7108), i_10_, i_9_)
-                                            class237_sub1.method1696(class348_sub49, false, i_12_, i_11_, 8 * i_6_, i, i_10_, 8 * i_7_, Class348_Sub8.aRenderer6654, if (is_5_[0] != -1) null else is_5_, i_9_)
+                                    for (i_14_ in (NullOggStream.anIntArray9042)!!.indices) {
+                                        if ((i_13_ == (NullOggStream.anIntArray9042!![i_14_])) && `is`!![i_14_] != null) {
+                                            val class348_sub49 = Buffer(`is`[i_14_])
+                                            class237_sub1.method1684(i_6_ * 8, i, -1, class348_sub49, i_12_, 8 * i_7_, i_11_, (TimedRecordAccessor.aClass361Array7108), i_10_, i_9_)
+                                            class237_sub1.method1696(class348_sub49, false, i_12_, i_11_, 8 * i_6_, i, i_10_, 8 * i_7_, FacingDirectionNode.aRenderer6654, if (is_5_[0] != -1) null else is_5_, i_9_)
                                             break
                                         }
                                     }
@@ -62,7 +62,7 @@ object Class44 {
                     var i_15_ = 0
                     while ((i_15_ < Class367_Sub4.anInt7319 shr 3)) {
                         var i_16_ = 0
-                        while ((i_16_ < Class348_Sub40_Sub3.anInt9109 shr 3)) {
+                        while ((i_16_ < RangeThresholdTextureNode.anInt9109 shr 3)) {
                             val i_17_ = (Class62.anIntArrayArrayArray1116!![i]!![i_15_]!![i_16_])
                             if (i_17_ == -1) class237_sub1.method1678(i_15_ * 8, 8, i_16_ * 8, -100, 8, i)
                             i_16_++
@@ -78,7 +78,7 @@ object Class44 {
                 if (bool == false) break
                 method387(26)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ik.D(" + bool + ',' + (if (class237_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ik.D(" + bool + ',' + (if (class237_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -100,7 +100,7 @@ object Class44 {
 
     @JvmStatic
     fun method388(i: Int, i_18_: Int, i_19_: Int, class318_sub1_sub5: WallEntity, class318_sub1_sub5_20_: WallEntity?) {
-        val class357 = Class348_Sub46.method3321(i, i_18_, i_19_)
+        val class357 = StringValueNode.method3321(i, i_18_, i_19_)
         if (class357 != null) {
             class357.aClass318_Sub1_Sub5_4395 = class318_sub1_sub5
             class357.aClass318_Sub1_Sub5_4407 = class318_sub1_sub5_20_
@@ -110,9 +110,9 @@ object Class44 {
                     class318_sub1_sub5.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_21_]
                     BackgroundWorkerThread.aClass318_Sub1Array3226!![i_21_] = class318_sub1_sub5
                 } else {
-                    class318_sub1_sub5.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_21_]
-                    Class348.aClass318_Sub1Array4293!![i_21_] = class318_sub1_sub5
-                    Class348_Sub16_Sub2.aBoolean8870 = true
+                    class318_sub1_sub5.aClass318_Sub1_6379 = LinkedListNode.aClass318_Sub1Array4293!![i_21_]
+                    LinkedListNode.aClass318_Sub1Array4293!![i_21_] = class318_sub1_sub5
+                    PcmStreamBuffer.aBoolean8870 = true
                 }
             } else {
                 class318_sub1_sub5.aClass318_Sub1_6379 = OverlayColorTable.aClass318_Sub1Array1754!![i_21_]
@@ -124,9 +124,9 @@ object Class44 {
                         class318_sub1_sub5_20_.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_21_]
                         BackgroundWorkerThread.aClass318_Sub1Array3226!![i_21_] = class318_sub1_sub5_20_
                     } else {
-                        class318_sub1_sub5_20_.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_21_]
-                        Class348.aClass318_Sub1Array4293!![i_21_] = class318_sub1_sub5_20_
-                        Class348_Sub16_Sub2.aBoolean8870 = true
+                        class318_sub1_sub5_20_.aClass318_Sub1_6379 = LinkedListNode.aClass318_Sub1Array4293!![i_21_]
+                        LinkedListNode.aClass318_Sub1Array4293!![i_21_] = class318_sub1_sub5_20_
+                        PcmStreamBuffer.aBoolean8870 = true
                     }
                 } else {
                     class318_sub1_sub5_20_.aClass318_Sub1_6379 = OverlayColorTable.aClass318_Sub1Array1754!![i_21_]

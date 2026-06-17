@@ -19,7 +19,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
             anInt8703++
             var bool = true
             val class206 = aHa_Sub2_8707.aFrameBufferObject_7778
-            aHa_Sub2_8707.K(Class348_Sub6.anIntArray6635)
+            aHa_Sub2_8707.K(HslColorTableNode.anIntArray6635)
             aHa_Sub2_8707.la()
             aHa_Sub2_8707.method3755(-32)
             glMatrixMode(5889)
@@ -163,11 +163,11 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
             aHa_Sub2_8707.method3738(-15039, 0)
             aHa_Sub2_8707.method3771((-88).toByte(), null)
             glPopAttrib()
-            aHa_Sub2_8707.KA(Class348_Sub6.anIntArray6635!![0], Class348_Sub6.anIntArray6635!![1], Class348_Sub6.anIntArray6635!![2], Class348_Sub6.anIntArray6635!![3])
+            aHa_Sub2_8707.KA(HslColorTableNode.anIntArray6635!![0], HslColorTableNode.anIntArray6635!![1], HslColorTableNode.anIntArray6635!![2], HslColorTableNode.anIntArray6635!![3])
             if (bool && !aHa_Sub2_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69)
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qda.L(" + (if (class258_sub2 != null) "{...}" else "null") + ',' + f + ',' + i + ',' + (if (class258_sub2_0_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qda.L(" + (if (class258_sub2 != null) "{...}" else "null") + ',' + f + ',' + i + ',' + (if (class258_sub2_0_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -189,7 +189,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
 
     companion object {
         @JvmField
-        var aClass348_Sub49_8698: Class348_Sub49? = null
+        var aClass348_Sub49_8698: Buffer? = null
         @JvmField
         var anInt8699: Int = 0
         @JvmField
@@ -207,7 +207,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
         @JvmStatic
         fun method2263(var_renderer: Renderer?, i: Int, i_4_: Int): AbstractModelRenderer? {
             anInt8705++
-            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i_4_.toLong(), -6008) as Class348_Sub15?)
+            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i_4_.toLong(), -6008) as MenuActionNode?)
             if (class348_sub15 != null) {
                 val class348_sub23_sub2 = class348_sub15.aClass55_Sub1_6768!!.method506(false)
                 class348_sub15.aBoolean6772 = true

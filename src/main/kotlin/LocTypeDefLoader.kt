@@ -26,7 +26,7 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
             `is` = aClass45_2498!!.method410(-1860, 35, i_3_)
         }
         locTypeDefinition = LocTypeDefinition()
-        if (`is` != null) locTypeDefinition.method2551(-125, Class348_Sub49(`is`))
+        if (`is` != null) locTypeDefinition.method2551(-125, Buffer(`is`))
         if (i != -12637) aClass60_2501 = null
         locTypeDefinition.method2548(127.toByte())
         synchronized(aClass60_2501!!) {
@@ -58,7 +58,7 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
                 if (aClass45_2498 == null) break
                 aClass45_2498!!.method407(0, 35)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

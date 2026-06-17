@@ -4,20 +4,20 @@
 class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass60_3466 = Class60(64)
     private val aClass45_3468: Class45?
-    fun method2044(i: Int, i_0_: Int): Class348_Sub42_Sub7 {
+    fun method2044(i: Int, i_0_: Int): ConfigShortValueNode {
         anInt3469++
-        var class348_sub42_sub7: Class348_Sub42_Sub7?
+        var class348_sub42_sub7: ConfigShortValueNode?
         synchronized(aClass60_3466) {
-            class348_sub42_sub7 = aClass60_3466.method583(i_0_.toLong(), -85) as Class348_Sub42_Sub7?
+            class348_sub42_sub7 = aClass60_3466.method583(i_0_.toLong(), -85) as ConfigShortValueNode?
         }
         if (class348_sub42_sub7 != null) return class348_sub42_sub7
         val `is`: ByteArray?
         synchronized(aClass45_3468!!) {
             `is` = aClass45_3468.method410(-1860, 5, i_0_)
         }
-        class348_sub42_sub7 = Class348_Sub42_Sub7()
+        class348_sub42_sub7 = ConfigShortValueNode()
         if (i < 78) method2046()
-        if (`is` != null) class348_sub42_sub7.method3192(16.toByte(), Class348_Sub49(`is`))
+        if (`is` != null) class348_sub42_sub7.method3192(16.toByte(), Buffer(`is`))
         synchronized(aClass60_3466) {
             aClass60_3466.method582(class348_sub42_sub7, i_0_.toLong(), (-93).toByte())
         }
@@ -29,7 +29,7 @@ class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, 
             aClass45_3468 = class45
             aClass45_3468!!.method407(0, 5)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ut.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ut.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

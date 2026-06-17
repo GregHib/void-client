@@ -4,7 +4,7 @@
 object OverlayColorTable {
     @JvmField
     var aBooleanArrayArrayArray1751: Array<Array<BooleanArray?>?>? = null
-    var aClass348_Sub1Array1752: Array<Class348_Sub1?>? = arrayOfNulls(8)
+    var aClass348_Sub1Array1752: Array<AbstractTileShape?>? = arrayOfNulls(8)
     @JvmField
     var anInt1753: Int = 0
     @JvmField

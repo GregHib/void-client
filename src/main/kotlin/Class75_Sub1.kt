@@ -11,12 +11,12 @@ object Class75_Sub1 : Class75() {
     @JvmStatic
     fun method769(i: Int, i_0_: Byte) {
         anInt5653++
-        if (i_0_ > 109 && TextureLoaderUtil.method2547(i, 84.toByte())) Class348_Sub42_Sub4.method3180(-1, (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!!), 24235)
+        if (i_0_ > 109 && TextureLoaderUtil.method2547(i, 84.toByte())) ShortMatrixNode.method3180(-1, (WarpTextureNode.aClass46ArrayArray9427!![i]!!), 24235)
     }
 
     @JvmStatic
     fun method770(i: Int, i_1_: Int, i_2_: Int, class318_sub1_sub1: TileSceneEntity) {
-        val class357 = Class348_Sub46.method3321(i, i_1_, i_2_)
+        val class357 = StringValueNode.method3321(i, i_1_, i_2_)
         if (class357 != null) {
             class357.aClass318_Sub1_Sub1_4402 = class318_sub1_sub1
             val i_3_ = if (NativeSprite.aTerrainTileArray5191 == SoundCacheState.aTerrainTileArray4142) 1 else 0
@@ -25,9 +25,9 @@ object Class75_Sub1 : Class75() {
                     class318_sub1_sub1.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_]
                     BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_] = class318_sub1_sub1
                 } else {
-                    class318_sub1_sub1.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_3_]
-                    Class348.aClass318_Sub1Array4293!![i_3_] = class318_sub1_sub1
-                    Class348_Sub16_Sub2.aBoolean8870 = true
+                    class318_sub1_sub1.aClass318_Sub1_6379 = LinkedListNode.aClass318_Sub1Array4293!![i_3_]
+                    LinkedListNode.aClass318_Sub1Array4293!![i_3_] = class318_sub1_sub1
+                    PcmStreamBuffer.aBoolean8870 = true
                 }
             } else {
                 class318_sub1_sub1.aClass318_Sub1_6379 = OverlayColorTable.aClass318_Sub1Array1754!![i_3_]

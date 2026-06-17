@@ -95,7 +95,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
             i_20_ += i_23_
         }
         if (i_17_ > 0 && i_16_ > 0) {
-            Class348_Sub40_Sub37.method3146(i_18_, i_17_, (-116).toByte(), i_20_, i_16_, i_14_, this.aByteArray4112, (var_r_Sub1.aByteArray10471), i_15_)
+            BoxBlurTextureNode.method3146(i_18_, i_17_, (-116).toByte(), i_20_, i_16_, i_14_, this.aByteArray4112, (var_r_Sub1.aByteArray10471), i_15_)
             method2634(i, -1, i_13_, i_16_, i_17_)
         }
     }
@@ -291,7 +291,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
             anInt4121 = aS_Sub3_4116.anInt4587 shr anInt4124
             anInt4118 = aS_Sub3_4116.anInt4590 shr anInt4124
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dg.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("dg.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ')'))
         }
     }
 

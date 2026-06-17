@@ -33,19 +33,19 @@ import SceneObjectEntity.Companion.method2405
 import ActorEntity.Companion.method2478
 import WallEntity.Companion.method2487
 import Font.Companion.method2570
-import Class348_Sub16_Sub3.Companion.method2839
-import Class348_Sub1_Sub3.Companion.method2732
-import Class348_Sub23_Sub1.Companion.method2972
-import Class348_Sub4.Companion.method2749
-import Class348_Sub40.Companion.method3038
-import Class348_Sub40_Sub12.Companion.method3076
-import Class348_Sub40_Sub17_Sub1.Companion.method3093
-import Class348_Sub40_Sub30.Companion.method3128
-import Class348_Sub40_Sub31.Companion.method3131
-import Class348_Sub40_Sub34.Companion.method3141
-import Class348_Sub40_Sub9.Companion.method3072
-import Class348_Sub45_Sub2.Companion.method3316
-import Class348_Sub9.Companion.method2780
+import MidiSequencePlayer.Companion.method2839
+import ParticleTileShape.Companion.method2732
+import VorbisOggDecoder.Companion.method2972
+import ClientMachineInfo.Companion.method2749
+import AbstractProceduralTextureNode.Companion.method3038
+import GradientLookupEffect.Companion.method3076
+import SpriteRgbTextureNode.Companion.method3093
+import HslAdjustTextureNode.Companion.method3128
+import TileTextureNode.Companion.method3131
+import NormalMapTextureNode.Companion.method3141
+import EdgeDetectTextureNode.Companion.method3072
+import TimedRecordAccessorB.Companion.method3316
+import CharacterRenderState.Companion.method2780
 import Class35.method352
 import Class367_Sub10.Companion.method3553
 import Class367_Sub2.Companion.method3538
@@ -142,7 +142,7 @@ object Class66 {
             val i_3_ = i ushr 16
             var class46s = Class369_Sub2.aClass46ArrayArray8584!![i_3_]
             if (class46s == null) {
-                val class46s_4_: Array<Class46?> = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_3_]!!
+                val class46s_4_: Array<Class46?> = WarpTextureNode.aClass46ArrayArray9427!![i_3_]!!
                 val i_5_ = class46s_4_.size
                 Class369_Sub2.aClass46ArrayArray8584!![i_3_] = arrayOfNulls<Class46>(i_5_)
                 class46s = Class369_Sub2.aClass46ArrayArray8584!![i_3_]!!
@@ -164,11 +164,11 @@ object Class66 {
     @JvmStatic
     fun method703(i: Int) {
         if (i != -1 && TextureLoaderUtil.method2547(i, 84.toByte())) {
-            val class46s: Array<Class46?> = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!!
+            val class46s: Array<Class46?> = WarpTextureNode.aClass46ArrayArray9427!![i]!!
             for (i_7_ in class46s.indices) {
                 val class46 = class46s[i_7_]!!
                 if (class46.anObjectArray815 != null) {
-                    val class348_sub36 = Class348_Sub36()
+                    val class348_sub36 = WidgetActionEntry()
                     class348_sub36.aClass46_6989 = class46
                     class348_sub36.anObjectArray6987 = class46.anObjectArray815
                     method712(class348_sub36, 2000000)
@@ -190,11 +190,11 @@ object Class66 {
                 if (Class57.aBoxedIntHolder_1055 == null) Class57.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
                 BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
-                val class348_sub47 = method2148(Class348_Sub14.aClass351_6766, (Class348_Sub23_Sub2.aClass77_9029), -111)
+                val class348_sub47 = method2148(LongKeyNode.aClass351_6766, (TheoraVideoStream.aClass77_9029), -111)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, ShaderProgram.anInt7276)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, Class57.aBoxedIntHolder_1055!!.anInt2970)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, BufferToggleState.anInt3713)
-                Class348_Sub42_Sub14.method3243(-77, class348_sub47)
+                InterfaceComponentGroup.method3243(-77, class348_sub47)
                 return
             }
             if (i == 5002) {
@@ -207,13 +207,13 @@ object Class66 {
                 if (string_8_ == null) string_8_ = ""
                 if (string_8_.length > 80) string_8_ = string_8_.substring(0, 80)
                 anInt1157++
-                val class348_sub47 = method2148(FontDefinition.aClass351_1987, (Class348_Sub23_Sub2.aClass77_9029), -117)
+                val class348_sub47 = method2148(FontDefinition.aClass351_1987, (TheoraVideoStream.aClass77_9029), -117)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, (method1745(string, -65) + 2 + method1745(string_8_, -65)))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeString((-5).toByte(), string)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, i_9_ - 1)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, i_10_)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeString((-5).toByte(), string_8_)
-                Class348_Sub42_Sub14.method3243(-85, class348_sub47)
+                InterfaceComponentGroup.method3243(-85, class348_sub47)
                 return
             }
             if (i == 5003) {
@@ -242,9 +242,9 @@ object Class66 {
             }
             if (i == 5006) {
                 val i_14_ = anIntArray1149!![--anInt1173]
-                val class348_sub47 = method2148(Class348_Sub31.aClass351_6925, (Class348_Sub23_Sub2.aClass77_9029), -100)
+                val class348_sub47 = method2148(AbstractFrameBufferSurface.aClass351_6925, (TheoraVideoStream.aClass77_9029), -100)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_14_)
-                Class348_Sub42_Sub14.method3243(-70, class348_sub47)
+                InterfaceComponentGroup.method3243(-70, class348_sub47)
                 return
             }
             if (i == 5008) {
@@ -256,15 +256,15 @@ object Class66 {
                 anInt1170 -= 2
                 val string = aStringArray1152!![anInt1170]
                 val string_15_ = aStringArray1152!![anInt1170 + 1]
-                if (AsyncTaskHandle.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+                if (AsyncTaskHandle.anInt2581 != 0 || ((!RangeThresholdTextureNode.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
                     anInt1159++
-                    val class348_sub47 = method2148((Class348_Sub40_Sub22.aClass351_9304), (Class348_Sub23_Sub2.aClass77_9029), -116)
+                    val class348_sub47 = method2148((CellNoiseTextureNode.aClass351_9304), (TheoraVideoStream.aClass77_9029), -116)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                     val i_16_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
                     method3544((class348_sub47.aClass348_Sub49_Sub2_7116!!), -70, string_15_)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(109, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_16_)
-                    Class348_Sub42_Sub14.method3243(2, class348_sub47)
+                    InterfaceComponentGroup.method3243(2, class348_sub47)
                     return
                 }
                 return
@@ -427,39 +427,39 @@ object Class66 {
             }
             if (i == 5059) {
                 anInt1165++
-                val class348_sub47 = method2148(Class45.aClass351_643, (Class348_Sub23_Sub2.aClass77_9029), -93)
+                val class348_sub47 = method2148(Class45.aClass351_643, (TheoraVideoStream.aClass77_9029), -93)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_41_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aClass43_1151!!.anInt615)
                 aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210(12.toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(115, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_41_)
-                Class348_Sub42_Sub14.method3243(127, class348_sub47)
+                InterfaceComponentGroup.method3243(127, class348_sub47)
                 return
             }
             if (i == 5060) {
                 val string = aStringArray1152!![--anInt1170]
                 anInt1166++
-                val class348_sub47 = method2148(ItemActionPacketSender.aClass351_2109, (Class348_Sub23_Sub2.aClass77_9029), -89)
+                val class348_sub47 = method2148(ItemActionPacketSender.aClass351_2109, (TheoraVideoStream.aClass77_9029), -89)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_42_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aClass43_1151!!.anInt615)
                 aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-125).toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(102, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_42_)
-                Class348_Sub42_Sub14.method3243(127, class348_sub47)
+                InterfaceComponentGroup.method3243(127, class348_sub47)
                 return
             }
             if (i == 5061) {
                 anInt1165++
-                val class348_sub47 = method2148(Class45.aClass351_643, (Class348_Sub23_Sub2.aClass77_9029), -104)
+                val class348_sub47 = method2148(Class45.aClass351_643, (TheoraVideoStream.aClass77_9029), -104)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_43_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aClass43_1151!!.anInt615)
                 aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-126).toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(92, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_43_)
-                Class348_Sub42_Sub14.method3243(-111, class348_sub47)
+                InterfaceComponentGroup.method3243(-111, class348_sub47)
                 return
             }
             if (i == 5062) {
@@ -617,7 +617,7 @@ object Class66 {
                 return
             }
             if (i == 5209) {
-                anIntArray1149!![anInt1173++] = Class348_Sub36.anInt6992 + Class75.anInt1266
+                anIntArray1149!![anInt1173++] = WidgetActionEntry.anInt6992 + Class75.anInt1266
                 anIntArray1149!![anInt1173++] = DebugOverlayRenderer.anInt3170 + Class75.anInt1263
                 return
             }
@@ -688,13 +688,13 @@ object Class66 {
                 val i_72_ = anIntArray1149!![anInt1173 + 1]
                 val class107 = Class75.method767(i_71_ shr 14 and 0x3fff, i_71_ and 0x3fff)
                 var bool_73_ = false
-                var class348_sub42_sub14 = class107.method1011(-48) as? Class348_Sub42_Sub14?
+                var class348_sub42_sub14 = class107.method1011(-48) as? InterfaceComponentGroup?
                 while (class348_sub42_sub14 != null) {
                     if (class348_sub42_sub14.anInt9628 == i_72_) {
                         bool_73_ = true
                         break
                     }
-                    class348_sub42_sub14 = (class107.method1003(113.toByte()) as? Class348_Sub42_Sub14?)
+                    class348_sub42_sub14 = (class107.method1003(113.toByte()) as? InterfaceComponentGroup?)
                 }
                 if (bool_73_) anIntArray1149!![anInt1173++] = 1
                 else {
@@ -714,7 +714,7 @@ object Class66 {
                 return
             }
             if (i == 5220) {
-                anIntArray1149!![anInt1173++] = if (Class348.anInt4290 == 100) 1 else 0
+                anIntArray1149!![anInt1173++] = if (LinkedListNode.anInt4290 == 100) 1 else 0
                 return
             }
             if (i == 5221) {
@@ -729,7 +729,7 @@ object Class66 {
                     anIntArray1149!![anInt1173++] = -1
                     return
                 } else {
-                    val bool_76_ = (class348_sub42_sub14.method3239(true, DebugOverlayRenderer.anInt3170 + Class75.anInt1263, Class348_Sub36.anInt6992 + Class75.anInt1266, anIntArray1175!!))
+                    val bool_76_ = (class348_sub42_sub14.method3239(true, DebugOverlayRenderer.anInt3170 + Class75.anInt1263, WidgetActionEntry.anInt6992 + Class75.anInt1266, anIntArray1175!!))
                     if (bool_76_) {
                         anIntArray1149!![anInt1173++] = anIntArray1175!![1]
                         anIntArray1149!![anInt1173++] = anIntArray1175!![2]
@@ -797,11 +797,11 @@ object Class66 {
                 return
             }
             if (i == 5228) {
-                Class348_Sub1_Sub1.aBoolean8805 = anIntArray1149!![--anInt1173] == 1
+                TerrainTileShape.aBoolean8805 = anIntArray1149!![--anInt1173] == 1
                 return
             }
             if (i == 5229) {
-                anIntArray1149!![anInt1173++] = if (Class348_Sub1_Sub1.aBoolean8805) 1 else 0
+                anIntArray1149!![anInt1173++] = if (TerrainTileShape.aBoolean8805) 1 else 0
                 return
             }
             if (i == 5230) {
@@ -813,23 +813,23 @@ object Class66 {
                 anInt1173 -= 2
                 val i_86_ = anIntArray1149!![anInt1173]
                 val bool_87_ = anIntArray1149!![anInt1173 + 1] == 1
-                if (Class348_Sub42_Sub9_Sub1.aClass356_10442 != null) {
-                    var class348 = Class348_Sub42_Sub9_Sub1.aClass356_10442!!.method3480(i_86_.toLong(), -6008)
+                if (HardKeyedCacheEntryReference.aClass356_10442 != null) {
+                    var class348 = HardKeyedCacheEntryReference.aClass356_10442!!.method3480(i_86_.toLong(), -6008)
                     if (class348 != null && !bool_87_) class348.method2715(48.toByte())
                     else if (class348 == null && bool_87_) {
-                        class348 = Class348()
-                        Class348_Sub42_Sub9_Sub1.aClass356_10442!!.method3483(29.toByte(), i_86_.toLong(), class348)
+                        class348 = LinkedListNode()
+                        HardKeyedCacheEntryReference.aClass356_10442!!.method3483(29.toByte(), i_86_.toLong(), class348)
                     }
                 }
                 return
             }
             if (i == 5232) {
                 val i_88_ = anIntArray1149!![--anInt1173]
-                if (Class348_Sub42_Sub9_Sub1.aClass356_10442 == null) {
+                if (HardKeyedCacheEntryReference.aClass356_10442 == null) {
                     anIntArray1149!![anInt1173++] = 0
                     return
                 } else {
-                    val class348 = Class348_Sub42_Sub9_Sub1.aClass356_10442!!.method3480(i_88_.toLong(), -6008)
+                    val class348 = HardKeyedCacheEntryReference.aClass356_10442!!.method3480(i_88_.toLong(), -6008)
                     anIntArray1149!![anInt1173++] = if (class348 != null) 1 else 0
                 }
                 return
@@ -842,7 +842,7 @@ object Class66 {
                     var class348 = HeapInfoRecord.aClass356_4934!!.method3480(i_89_.toLong(), -6008)
                     if (class348 != null && !bool_90_) class348.method2715(83.toByte())
                     else if (class348 == null && bool_90_) {
-                        class348 = Class348()
+                        class348 = LinkedListNode()
                         HeapInfoRecord.aClass356_4934!!.method3483(112.toByte(), i_89_.toLong(), class348)
                     }
                 }
@@ -922,7 +922,7 @@ object Class66 {
                 return
             }
             if (i == 5306) {
-                anIntArray1149!![anInt1173++] = Class348_Sub42_Sub12.method3229(-126)
+                anIntArray1149!![anInt1173++] = ContactEntry.method3229(-126)
                 return
             }
             if (i == 5307) {
@@ -954,12 +954,12 @@ object Class66 {
                 val string_106_ = aStringArray1152!![anInt1170 + 1]!!
                 val i_107_ = anIntArray1149!![--anInt1173]
                 anInt1171++
-                val class348_sub47 = method2148((Class348_Sub40_Sub17.aClass351_9234), (Class348_Sub23_Sub2.aClass77_9029), -101)
+                val class348_sub47 = method2148((SpriteTextureNode.aClass351_9234), (TheoraVideoStream.aClass77_9029), -101)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (method1745(string, -65) + method1745(string_106_, -65) + 1))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string_106_)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_107_)
-                Class348_Sub42_Sub14.method3243(-66, class348_sub47)
+                InterfaceComponentGroup.method3243(-66, class348_sub47)
                 return
             }
             if (i == 5401) {
@@ -975,7 +975,7 @@ object Class66 {
                 anInt1173 -= 2
                 val i_108_ = anIntArray1149!![anInt1173]
                 val i_109_ = anIntArray1149!![anInt1173 + 1]
-                if (i_108_ >= 0 && i_108_ < 2) Class348_Sub43.anIntArrayArrayArray7079!![i_108_] = Array<IntArray?>(i_109_ shl 1) { IntArray(4) }
+                if (i_108_ >= 0 && i_108_ < 2) SpriteDefinition.anIntArrayArrayArray7079!![i_108_] = Array<IntArray?>(i_109_ shl 1) { IntArray(4) }
                 return
             }
             if (i == 5406) {
@@ -987,14 +987,14 @@ object Class66 {
                 val i_114_ = anIntArray1149!![anInt1173 + 4]
                 val i_115_ = anIntArray1149!![anInt1173 + 5]
                 val i_116_ = anIntArray1149!![anInt1173 + 6]
-                if (i_110_ >= 0 && i_110_ < 2 && Class348_Sub43.anIntArrayArrayArray7079!![i_110_] != null && i_111_ >= 0 && i_111_ < (Class348_Sub43.anIntArrayArrayArray7079!![i_110_]!!).size) {
-                    Class348_Sub43.anIntArrayArrayArray7079!![i_110_]!![i_111_] = intArrayOf((i_112_ shr 14 and 0x3fff) shl 9, i_113_ shl 2, (i_112_ and 0x3fff) shl 9, i_116_)
-                    Class348_Sub43.anIntArrayArrayArray7079!![i_110_]!![i_111_ + 1] = intArrayOf((i_114_ shr 14 and 0x3fff) shl 9, i_115_ shl 2, (i_114_ and 0x3fff) shl 9)
+                if (i_110_ >= 0 && i_110_ < 2 && SpriteDefinition.anIntArrayArrayArray7079!![i_110_] != null && i_111_ >= 0 && i_111_ < (SpriteDefinition.anIntArrayArrayArray7079!![i_110_]!!).size) {
+                    SpriteDefinition.anIntArrayArrayArray7079!![i_110_]!![i_111_] = intArrayOf((i_112_ shr 14 and 0x3fff) shl 9, i_113_ shl 2, (i_112_ and 0x3fff) shl 9, i_116_)
+                    SpriteDefinition.anIntArrayArrayArray7079!![i_110_]!![i_111_ + 1] = intArrayOf((i_114_ shr 14 and 0x3fff) shl 9, i_115_ shl 2, (i_114_ and 0x3fff) shl 9)
                 }
                 return
             }
             if (i == 5407) {
-                val i_117_ = ((Class348_Sub43.anIntArrayArrayArray7079!![anIntArray1149!![--anInt1173]]!!).size shr 1)
+                val i_117_ = ((SpriteDefinition.anIntArrayArrayArray7079!![anIntArray1149!![--anInt1173]]!!).size shr 1)
                 anIntArray1149!![anInt1173++] = i_117_
                 return
             }
@@ -1002,7 +1002,7 @@ object Class66 {
                 if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 if (Class52.aFrame4904 == null) {
                     val string = (if (InputSettingsState.aString1761 != null) InputSettingsState.aString1761 else method2162(false))
-                    GrowableStringList.method1360(string, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
+                    GrowableStringList.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
                     return
                 } else {
                     method2405(97)
@@ -1012,15 +1012,15 @@ object Class66 {
             }
             if (i == 5419) {
                 var string: String? = ""
-                if (Class348_Sub42_Sub6.aLinkedQueueNode_9536 != null) {
-                    if (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anObject1998 != null) string = (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anObject1998) as String?
-                    else string = SceneObjectAnimator.method1669(-19918, (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anInt2000))
+                if (ChatScriptListNode.aLinkedQueueNode_9536 != null) {
+                    if (ChatScriptListNode.aLinkedQueueNode_9536!!.anObject1998 != null) string = (ChatScriptListNode.aLinkedQueueNode_9536!!.anObject1998) as String?
+                    else string = SceneObjectAnimator.method1669(-19918, (ChatScriptListNode.aLinkedQueueNode_9536!!.anInt2000))
                 }
                 aStringArray1152!![anInt1170++] = string!!
                 return
             }
             if (i == 5420) {
-                anIntArray1149!![anInt1173++] = if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3777) 0 else 1
+                anIntArray1149!![anInt1173++] = if (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3777) 0 else 1
                 return
             }
             if (i == 5421) {
@@ -1028,7 +1028,7 @@ object Class66 {
                 val string = aStringArray1152!![--anInt1170]
                 val bool_118_ = anIntArray1149!![--anInt1173] == 1
                 val string_119_ = method2162(false) + string
-                GrowableStringList.method1360(string_119_, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, bool_118_, 104)
+                GrowableStringList.method1360(string_119_, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, bool_118_, 104)
                 return
             }
             if (i == 5422) {
@@ -1037,11 +1037,11 @@ object Class66 {
                 val string_120_ = aStringArray1152!![anInt1170 + 1]!!
                 val i_121_ = anIntArray1149!![--anInt1173]
                 if (string.length > 0) {
-                    if (Class367_Sub9.aStringArray7378 == null) Class367_Sub9.aStringArray7378 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987]))
+                    if (Class367_Sub9.aStringArray7378 == null) Class367_Sub9.aStringArray7378 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![HardCacheEntryReference.aSceneProjector_10434!!.anInt2987]))
                     Class367_Sub9.aStringArray7378!![i_121_] = string
                 }
                 if (string_120_.length > 0) {
-                    if (Class54.aStringArray974 == null) Class54.aStringArray974 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987]))
+                    if (Class54.aStringArray974 == null) Class54.aStringArray974 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![HardCacheEntryReference.aSceneProjector_10434!!.anInt2987]))
                     Class54.aStringArray974!![i_121_] = string_120_
                 }
                 return
@@ -1055,27 +1055,27 @@ object Class66 {
                 CompassSmoother.anInt3376 = anIntArray1149!![anInt1173]
                 Class51.anInt948 = anIntArray1149!![anInt1173 + 1]
                 CompassSmoother.anInt3374 = anIntArray1149!![anInt1173 + 2]
-                Class348_Sub42_Sub4.anInt9511 = anIntArray1149!![anInt1173 + 3]
+                ShortMatrixNode.anInt9511 = anIntArray1149!![anInt1173 + 3]
                 HudTabPanel.anInt2996 = anIntArray1149!![anInt1173 + 4]
-                Class348_Sub40_Sub16.anInt9231 = anIntArray1149!![anInt1173 + 5]
+                CombineTextureNode.anInt9231 = anIntArray1149!![anInt1173 + 5]
                 ProjectedGroundDecor.anInt10257 = anIntArray1149!![anInt1173 + 6]
                 SkyboxGradient.anInt3937 = anIntArray1149!![anInt1173 + 7]
                 Class79.anInt1387 = anIntArray1149!![anInt1173 + 8]
-                Class348_Sub42_Sub11.anInt9586 = anIntArray1149!![anInt1173 + 9]
+                CharCodeMap.anInt9586 = anIntArray1149!![anInt1173 + 9]
                 Class5_Sub2.anInt8363 = anIntArray1149!![anInt1173 + 10]
                 CameraRotationStub.aClass45_322!!.method421(false, HudTabPanel.anInt2996)
-                CameraRotationStub.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)
+                CameraRotationStub.aClass45_322!!.method421(false, CombineTextureNode.anInt9231)
                 CameraRotationStub.aClass45_322!!.method421(false, ProjectedGroundDecor.anInt10257)
                 CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937)
                 CameraRotationStub.aClass45_322!!.method421(false, Class79.anInt1387)
                 SpotAnimVector.aAbstractModelRenderer_2309 = null
                 AbstractMenuEntry.aAbstractModelRenderer_1706 = SpotAnimVector.aAbstractModelRenderer_2309
-                Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = AbstractMenuEntry.aAbstractModelRenderer_1706
-                Class348_Sub5.aAbstractModelRenderer_6627 = null
-                MinimapFlagRenderer.aAbstractModelRenderer_1800 = Class348_Sub5.aAbstractModelRenderer_6627
+                TimedTileQueueEntry.aAbstractModelRenderer_9659 = AbstractMenuEntry.aAbstractModelRenderer_1706
+                AbstractBloomEffect.aAbstractModelRenderer_6627 = null
+                MinimapFlagRenderer.aAbstractModelRenderer_1800 = AbstractBloomEffect.aAbstractModelRenderer_6627
                 OutputStream_Sub2.aAbstractModelRenderer_106 = MinimapFlagRenderer.aAbstractModelRenderer_1800
                 ConfigVarProgress.aAbstractModelRenderer_4808 = null
-                Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = ConfigVarProgress.aAbstractModelRenderer_4808
+                TimedTileQueueEntry.aAbstractModelRenderer_9658 = ConfigVarProgress.aAbstractModelRenderer_4808
                 Class71.aBoolean1211 = true
                 return
             }
@@ -1086,7 +1086,7 @@ object Class66 {
             }
             if (i == 5426) {
                 anInt1173 -= 2
-                Class348_Sub42_Sub16_Sub1.anInt10447 = anIntArray1149!![anInt1173]
+                StreamingResourceRequest.anInt10447 = anIntArray1149!![anInt1173]
                 Class38.anInt506 = anIntArray1149!![anInt1173 + 1]
                 return
             }
@@ -1124,8 +1124,8 @@ object Class66 {
             }
             if (i == 5432) {
                 var string = ""
-                if (Class348_Sub40_Sub27.aClipboard9357 != null) {
-                    val transferable = Class348_Sub40_Sub27.aClipboard9357!!.getContents(null)
+                if (BlendTextureNode.aClipboard9357 != null) {
+                    val transferable = BlendTextureNode.aClipboard9357!!.getContents(null)
                     if (transferable != null) {
                         try {
                             string = (transferable.getTransferData(DataFlavor.stringFlavor)) as String
@@ -1158,7 +1158,7 @@ object Class66 {
                 val i_129_ = anIntArray1149!![anInt1173 + 1]
                 val i_130_ = anIntArray1149!![anInt1173 + 2]
                 val i_131_ = anIntArray1149!![anInt1173 + 3]
-                Class348_Sub42_Sub12.method3231(((i_128_ and 0x3fff) - Class90.regionTileY), ((i_128_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), i_129_ shl 2, i_131_, i_130_, -128)
+                ContactEntry.method3231(((i_128_ and 0x3fff) - Class90.regionTileY), ((i_128_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), i_129_ shl 2, i_131_, i_130_, -128)
                 return
             }
             if (i == 5502) {
@@ -1167,7 +1167,7 @@ object Class66 {
                 if (i_132_ >= 2) throw RuntimeException()
                 NativeShaderProgram.anInt9775 = i_132_
                 val i_133_ = anIntArray1149!![anInt1173 + 1]
-                if (i_133_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775])!!.size shr 1) throw RuntimeException()
+                if (i_133_ + 1 >= (SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775])!!.size shr 1) throw RuntimeException()
                 ItemDefinition.anInt2798 = i_133_
                 CacheArchiveIndex.anInt1780 = 0
                 RenderableGroup.anInt5019 = anIntArray1149!![anInt1173 + 2]
@@ -1176,9 +1176,9 @@ object Class66 {
                 if (i_134_ >= 2) throw RuntimeException()
                 MapArchiveSource.anInt4803 = i_134_
                 val i_135_ = anIntArray1149!![anInt1173 + 5]
-                if (i_135_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![MapArchiveSource.anInt4803]!!).size shr 1) throw RuntimeException()
+                if (i_135_ + 1 >= (SpriteDefinition.anIntArrayArrayArray7079!![MapArchiveSource.anInt4803]!!).size shr 1) throw RuntimeException()
                 CompassSmoother.anInt3373 = i_135_
-                Class348_Sub40_Sub21.anInt9282 = 3
+                WeaveTextureNode.anInt9282 = 3
                 SequencedWallEntity.anInt10163 = -1
                 Class9.anInt167 = SequencedWallEntity.anInt10163
                 return
@@ -1225,10 +1225,10 @@ object Class66 {
                 else if (i_137_ >= Class367_Sub4.anInt7319) i_137_ = Class367_Sub4.anInt7319
                 i_138_ -= Class90.regionTileY
                 if (i_138_ < 0) i_138_ = 0
-                else if (i_138_ >= Class348_Sub40_Sub3.anInt9109) i_138_ = Class348_Sub40_Sub3.anInt9109
-                Class348_Sub6.anInt6633 = (i_137_ shl 9) + 256
-                Class348_Sub7.anInt6652 = (i_138_ shl 9) + 256
-                Class348_Sub40_Sub21.anInt9282 = 4
+                else if (i_138_ >= RangeThresholdTextureNode.anInt9109) i_138_ = RangeThresholdTextureNode.anInt9109
+                HslColorTableNode.anInt6633 = (i_137_ shl 9) + 256
+                RegionTileNode.anInt6652 = (i_138_ shl 9) + 256
+                WeaveTextureNode.anInt9282 = 4
                 SequencedWallEntity.anInt10163 = -1
                 Class9.anInt167 = SequencedWallEntity.anInt10163
                 return
@@ -1255,7 +1255,7 @@ object Class66 {
                     else if (i_140_ >= Class367_Sub4.anInt7319) i_140_ = Class367_Sub4.anInt7319
                     i_141_ -= Class90.regionTileY
                     if (i_141_ < 0) i_141_ = 0
-                    else if (i_141_ >= Class348_Sub40_Sub3.anInt9109) i_141_ = Class348_Sub40_Sub3.anInt9109
+                    else if (i_141_ >= RangeThresholdTextureNode.anInt9109) i_141_ = RangeThresholdTextureNode.anInt9109
                     Class9.anInt167 = (i_140_ shl 9) + 256
                     SequencedWallEntity.anInt10163 = (i_141_ shl 9) + 256
                 } else {
@@ -1266,7 +1266,7 @@ object Class66 {
                 return
             }
             if (i == 5547) {
-                anIntArray1149!![anInt1173++] = if (Class348_Sub40_Sub21.anInt9282 == 1) 1 else 0
+                anIntArray1149!![anInt1173++] = if (WeaveTextureNode.anInt9282 == 1) 1 else 0
                 return
             }
         } else if (i < 5700) {
@@ -1279,7 +1279,7 @@ object Class66 {
                     Class64_Sub3.aString5600 = string
                     TextureGenerator.aString2496 = string_142_
                     RuntimeException_Sub1.anInt4596 = i_143_
-                    Class348_Sub49.method3379(2, 6)
+                    Buffer.method3379(2, 6)
                     return
                 }
                 return
@@ -1291,7 +1291,7 @@ object Class66 {
             if (i == 5602) {
                 if (NpcDefinition.anInt2955 == 0) {
                     LinkedNodeListIterator.anInt1645 = -2
-                    Class348_Sub6.anInt6634 = -2
+                    HslColorTableNode.anInt6634 = -2
                 }
                 return
             }
@@ -1317,7 +1317,7 @@ object Class66 {
                 return
             }
             if (i == 5607) {
-                anIntArray1149!![anInt1173++] = Class348_Sub6.anInt6634
+                anIntArray1149!![anInt1173++] = HslColorTableNode.anInt6634
                 return
             }
             if (i == 5608) {
@@ -1329,24 +1329,24 @@ object Class66 {
                 return
             }
             if (i == 5611) {
-                anIntArray1149!![anInt1173++] = Class348_Sub42_Sub7.anInt9541
+                anIntArray1149!![anInt1173++] = ConfigShortValueNode.anInt9541
                 return
             }
             if (i == 5612) {
                 val i_144_ = anIntArray1149!![--anInt1173]
                 if (WorldMapRenderer.anInt4674 == 7 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
-                    if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
-                        Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                        Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
+                    if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
+                        PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                        PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
                     }
                     RuntimeException_Sub1.anInt4596 = i_144_
-                    Class348_Sub49.method3379(2, 9)
+                    Buffer.method3379(2, 9)
                     return
                 }
                 return
             }
             if (i == 5613) {
-                anIntArray1149!![anInt1173++] = Class348_Sub6.anInt6634
+                anIntArray1149!![anInt1173++] = HslColorTableNode.anInt6634
                 return
             }
             if (i == 5615) {
@@ -1354,13 +1354,13 @@ object Class66 {
                 val string = aStringArray1152!![anInt1170]!!
                 val string_145_ = aStringArray1152!![anInt1170 + 1]
                 if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
-                    if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
-                        Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                        Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
+                    if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
+                        PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                        PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
                     }
                     Class64_Sub3.aString5600 = string
                     TextureGenerator.aString2496 = string_145_
-                    Class348_Sub49.method3379(2, 5)
+                    Buffer.method3379(2, 5)
                     return
                 }
                 return
@@ -1392,7 +1392,7 @@ object Class66 {
             }
             if (i == 5622) return
             if (i == 5623) {
-                if (Class348_Sub23_Sub3.aString9043 == null) {
+                if (NullOggStream.aString9043 == null) {
                     anIntArray1149!![anInt1173++] = 0
                     return
                 } else anIntArray1149!![anInt1173++] = 1
@@ -1416,7 +1416,7 @@ object Class66 {
             if (i == 6001) {
                 val i_146_ = anIntArray1149!![--anInt1173]
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!), i_146_)
-                Class348_Sub20.method2953((-126).toByte())
+                TextureTileRenderer.method2953((-126).toByte())
                 method243(37)
                 RenderNode.aBoolean9719 = false
                 return
@@ -1425,7 +1425,7 @@ object Class66 {
                 val bool_147_ = anIntArray1149!![--anInt1173] == 1
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7255), if (bool_147_) 1 else 0)
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261), if (bool_147_) 1 else 0)
-                Class348_Sub20.method2953((-122).toByte())
+                TextureTileRenderer.method2953((-122).toByte())
                 method3072(32.toByte())
                 method243(37)
                 RenderNode.aBoolean9719 = false
@@ -1435,14 +1435,14 @@ object Class66 {
                 val bool_148_ = anIntArray1149!![--anInt1173] == 1
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7250), if (bool_148_) 2 else 1)
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264), if (bool_148_) 2 else 1)
-                Class348_Sub40_Sub9.method3072((-106).toByte())
+                EdgeDetectTextureNode.method3072((-106).toByte())
                 method243(37)
                 RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6005) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
-                Class348_Sub20.method2953((-111).toByte())
+                TextureTileRenderer.method2953((-111).toByte())
                 method243(37)
                 RenderNode.aBoolean9719 = false
                 return
@@ -1467,7 +1467,7 @@ object Class66 {
             }
             if (i == 6011) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238), anIntArray1149!![--anInt1173])
-                Class348_Sub20.method2953((-116).toByte())
+                TextureTileRenderer.method2953((-116).toByte())
                 method243(37)
                 RenderNode.aBoolean9719 = false
                 return
@@ -1482,14 +1482,14 @@ object Class66 {
             }
             if (i == 6014) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259), if (anIntArray1149!![--anInt1173] == 1) 2 else 0)
-                Class348_Sub20.method2953((-112).toByte())
+                TextureTileRenderer.method2953((-112).toByte())
                 method243(37)
                 RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6015) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
-                Class348_Sub20.method2953((-127).toByte())
+                TextureTileRenderer.method2953((-127).toByte())
                 method243(37)
                 RenderNode.aBoolean9719 = false
                 return
@@ -1542,7 +1542,7 @@ object Class66 {
             if (i == 6021) {
                 val i_151_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(-32350)
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264), if (anIntArray1149!![--anInt1173] == 1) 0 else i_151_)
-                Class348_Sub40_Sub9.method3072((-118).toByte())
+                EdgeDetectTextureNode.method3072((-118).toByte())
                 return
             }
             if (i == 6023) {
@@ -1566,7 +1566,7 @@ object Class66 {
             if (i == 6027) {
                 var i_153_ = anIntArray1149!![--anInt1173]
                 if (i_153_ < 0 || i_153_ > 1) i_153_ = 0
-                Class348_Sub40_Sub33.method3137(i_153_ == 1, (-24).toByte())
+                WarpTextureNode.method3137(i_153_ == 1, (-24).toByte())
                 return
             }
             if (i == 6028) {
@@ -1582,7 +1582,7 @@ object Class66 {
             if (i == 6030) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256), if (anIntArray1149!![--anInt1173] != 0) 1 else 0)
                 method243(37)
-                Class348_Sub20.method2953((-116).toByte())
+                TextureTileRenderer.method2953((-116).toByte())
                 return
             }
             if (i == 6031) {
@@ -1616,7 +1616,7 @@ object Class66 {
             if (i == 6035) {
                 val i_157_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350)
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261), if (anIntArray1149!![--anInt1173] == 1) 1 else i_157_)
-                Class348_Sub20.method2953((-110).toByte())
+                TextureTileRenderer.method2953((-110).toByte())
                 method3072(125.toByte())
                 return
             }
@@ -1668,7 +1668,7 @@ object Class66 {
                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_161_)
                     method243(37)
                     RenderNode.aBoolean9719 = false
-                    Class348_Sub42_Sub3.method3179(0)
+                    LoadingScreenImageNode.method3179(0)
                 }
                 return
             }
@@ -1774,7 +1774,7 @@ object Class66 {
                 return
             }
             if (i == 6133) {
-                anIntArray1149!![anInt1173++] = if ((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3777) && !(Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3794)) 1 else 0
+                anIntArray1149!![anInt1173++] = if ((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3777) && !(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3794)) 1 else 0
                 return
             }
             if (i == 6135) {
@@ -1802,7 +1802,7 @@ object Class66 {
                 return
             }
             if (i == 6144) {
-                anIntArray1149!![anInt1173++] = if (Class348_Sub23_Sub2.aBoolean9038) 1 else 0
+                anIntArray1149!![anInt1173++] = if (TheoraVideoStream.aBoolean9038) 1 else 0
                 return
             }
             if (i == 6145) {
@@ -1814,7 +1814,7 @@ object Class66 {
                 return
             }
             if (i == 6147) {
-                anIntArray1149!![anInt1173++] = if (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609 < 512 || Class348_Sub23_Sub2.aBoolean9038 || NpcSummaryDefinition.aBoolean1952) 1 else 0
+                anIntArray1149!![anInt1173++] = if (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609 < 512 || TheoraVideoStream.aBoolean9038 || NpcSummaryDefinition.aBoolean1952) 1 else 0
                 return
             }
             if (i == 6148) {
@@ -1832,19 +1832,19 @@ object Class66 {
             }
             if (i == 6201) {
                 anInt1173 -= 2
-                Class348_Sub23_Sub3.aShort9044 = anIntArray1149!![anInt1173].toShort()
-                if (Class348_Sub23_Sub3.aShort9044 <= 0) Class348_Sub23_Sub3.aShort9044 = 256.toShort()
+                NullOggStream.aShort9044 = anIntArray1149!![anInt1173].toShort()
+                if (NullOggStream.aShort9044 <= 0) NullOggStream.aShort9044 = 256.toShort()
                 TextureLoaderUtil.aShort3992 = anIntArray1149!![anInt1173 + 1].toShort()
                 if (TextureLoaderUtil.aShort3992 <= 0) TextureLoaderUtil.aShort3992 = 320.toShort()
                 return
             }
             if (i == 6202) {
                 anInt1173 -= 4
-                Class348_Sub42_Sub8.aShort9555 = anIntArray1149!![anInt1173].toShort()
-                if (Class348_Sub42_Sub8.aShort9555 <= 0) Class348_Sub42_Sub8.aShort9555 = 1.toShort()
+                CacheEntryReference.aShort9555 = anIntArray1149!![anInt1173].toShort()
+                if (CacheEntryReference.aShort9555 <= 0) CacheEntryReference.aShort9555 = 1.toShort()
                 Class48.aShort851 = anIntArray1149!![anInt1173 + 1].toShort()
                 if (Class48.aShort851 <= 0) Class48.aShort851 = 32767.toShort()
-                else if (Class48.aShort851 < Class348_Sub42_Sub8.aShort9555) Class48.aShort851 = Class348_Sub42_Sub8.aShort9555
+                else if (Class48.aShort851 < CacheEntryReference.aShort9555) Class48.aShort851 = CacheEntryReference.aShort9555
                 Class367_Sub8.aShort7355 = anIntArray1149!![anInt1173 + 2].toShort()
                 if (Class367_Sub8.aShort7355 <= 0) Class367_Sub8.aShort7355 = 1.toShort()
                 RefCountedHandle.aShort2269 = anIntArray1149!![anInt1173 + 3].toShort()
@@ -1856,13 +1856,13 @@ object Class66 {
                 return
             }
             if (i == 6203) {
-                Class348_Sub42_Sub3.method3174(0, 0, Class348_Sub1.aClass46_6561!!.anInt709, false, 74.toByte(), Class348_Sub1.aClass46_6561!!.anInt789)
+                LoadingScreenImageNode.method3174(0, 0, AbstractTileShape.aClass46_6561!!.anInt709, false, 74.toByte(), AbstractTileShape.aClass46_6561!!.anInt789)
                 anIntArray1149!![anInt1173++] = WidgetComponentNode.anInt4656
                 anIntArray1149!![anInt1173++] = GroundDecorRenderer.anInt3643
                 return
             }
             if (i == 6204) {
-                anIntArray1149!![anInt1173++] = Class348_Sub23_Sub3.aShort9044.toInt()
+                anIntArray1149!![anInt1173++] = NullOggStream.aShort9044.toInt()
                 anIntArray1149!![anInt1173++] = TextureLoaderUtil.aShort3992.toInt()
                 return
             }
@@ -1928,9 +1928,9 @@ object Class66 {
                         if (WorldMapRenderer.aLong4683 > method599(-126) - 1000L) anIntArray1149!![anInt1173++] = 1
                         else {
                             ModelBatchBase.aBoolean1899 = true
-                            val class348_sub47 = method2148((Class348_Sub23_Sub2.aClass351_9034), (Class348_Sub23_Sub2.aClass77_9029), -115)
+                            val class348_sub47 = method2148((TheoraVideoStream.aClass351_9034), (TheoraVideoStream.aClass77_9029), -115)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), Class5_Sub1.anInt8349)
-                            Class348_Sub42_Sub14.method3243(118, class348_sub47)
+                            InterfaceComponentGroup.method3243(118, class348_sub47)
                             anIntArray1149!![anInt1173++] = 0
                             return
                         }
@@ -2034,12 +2034,12 @@ object Class66 {
                 return
             }
             if (i == 6508) {
-                Class348_Sub42_Sub20.method3283(-47)
+                SpriteRenderEntry.method3283(-47)
                 return
             }
             if (i == 6509) {
                 if (WorldMapRenderer.anInt4674 == 7) {
-                    Class348_Sub40_Sub30.aBoolean9403 = anIntArray1149!![--anInt1173] == 1
+                    HslAdjustTextureNode.aBoolean9403 = anIntArray1149!![--anInt1173] == 1
                     return
                 }
                 return
@@ -2065,16 +2065,16 @@ object Class66 {
                         }
                         i_175_--
                     }
-                    var class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as Class348_Sub41?)
-                    while (i_175_-- > 0) class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as Class348_Sub41?)
+                    var class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as RegionSceneShifter?)
+                    while (i_175_-- > 0) class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as RegionSceneShifter?)
                     anIntArray1149!![anInt1173++] = class348_sub41!!.anInt7050
                     return
                 }
                 if (i == 6702) {
                     val i_176_ = anIntArray1149!![--anInt1173]
-                    if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_176_] == null) aStringArray1152!![anInt1170++] = ""
+                    if (WarpTextureNode.aClass46ArrayArray9427!![i_176_] == null) aStringArray1152!![anInt1170++] = ""
                     else {
-                        val string = (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_176_]!![0]!!.aString721)
+                        val string = (WarpTextureNode.aClass46ArrayArray9427!![i_176_]!![0]!!.aString721)
                         if (string == null) aStringArray1152!![anInt1170++] = ""
                         else {
                             aStringArray1152!![anInt1170++] = string.substring(0, string.indexOf(':'))
@@ -2086,9 +2086,9 @@ object Class66 {
                 }
                 if (i == 6703) {
                     val i_177_ = anIntArray1149!![--anInt1173]
-                    if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_177_] == null) anIntArray1149!![anInt1173++] = 0
+                    if (WarpTextureNode.aClass46ArrayArray9427!![i_177_] == null) anIntArray1149!![anInt1173++] = 0
                     else {
-                        anIntArray1149!![anInt1173++] = (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_177_])!!.size
+                        anIntArray1149!![anInt1173++] = (WarpTextureNode.aClass46ArrayArray9427!![i_177_])!!.size
                         return
                     }
                     return
@@ -2097,9 +2097,9 @@ object Class66 {
                     anInt1173 -= 2
                     val i_178_ = anIntArray1149!![anInt1173]
                     val i_179_ = anIntArray1149!![anInt1173 + 1]
-                    if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_178_] == null) aStringArray1152!![anInt1170++] = ""
+                    if (WarpTextureNode.aClass46ArrayArray9427!![i_178_] == null) aStringArray1152!![anInt1170++] = ""
                     else {
-                        val string = (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_178_]!![i_179_]!!.aString721)
+                        val string = (WarpTextureNode.aClass46ArrayArray9427!![i_178_]!![i_179_]!!.aString721)
                         if (string == null) aStringArray1152!![anInt1170++] = ""
                         else {
                             aStringArray1152!![anInt1170++] = string
@@ -2113,9 +2113,9 @@ object Class66 {
                     anInt1173 -= 2
                     val i_180_ = anIntArray1149!![anInt1173]
                     val i_181_ = anIntArray1149!![anInt1173 + 1]
-                    if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_180_] == null) anIntArray1149!![anInt1173++] = 0
+                    if (WarpTextureNode.aClass46ArrayArray9427!![i_180_] == null) anIntArray1149!![anInt1173++] = 0
                     else {
-                        anIntArray1149!![anInt1173++] = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_180_]!![i_181_]!!.anInt732
+                        anIntArray1149!![anInt1173++] = WarpTextureNode.aClass46ArrayArray9427!![i_180_]!![i_181_]!!.anInt732
                         return
                     }
                     return
@@ -2174,7 +2174,7 @@ object Class66 {
                     val i_200_ = anIntArray1149!![anInt1173]
                     val i_201_ = anIntArray1149!![anInt1173 + 1]
                     val i_202_ = anIntArray1149!![anInt1173 + 2]
-                    Class348_Sub9.method2780(i_202_, "", (-106).toByte(), 7, i_200_ shl 16 or i_201_)
+                    CharacterRenderState.method2780(i_202_, "", (-106).toByte(), 7, i_200_ shl 16 or i_201_)
                     return
                 }
                 if (i == 6714) {
@@ -2190,7 +2190,7 @@ object Class66 {
                     val i_206_ = anIntArray1149!![anInt1173]
                     val i_207_ = anIntArray1149!![anInt1173 + 1]
                     val i_208_ = anIntArray1149!![anInt1173 + 2]
-                    Class348_Sub9.method2780(i_208_, "", (-35).toByte(), 9, i_206_ shl 16 or i_207_)
+                    CharacterRenderState.method2780(i_208_, "", (-35).toByte(), 9, i_206_ shl 16 or i_207_)
                     return
                 }
                 if (i == 6716) {
@@ -2206,7 +2206,7 @@ object Class66 {
                     val i_212_ = anIntArray1149!![anInt1173]
                     val i_213_ = anIntArray1149!![anInt1173 + 1]
                     val i_214_ = anIntArray1149!![anInt1173 + 2]
-                    val class46 = Class348_Sub22.method2957(i_214_, (-54).toByte(), i_212_ shl 16 or i_213_)
+                    val class46 = NpcReference.method2957(i_214_, (-54).toByte(), i_212_ shl 16 or i_213_)
                     TileRenderState.method2678(-2049)
                     val class348_sub44 = Client.method105(class46!!)!!
                     MapRegionLoaderThread.method2666((class348_sub44.anInt7093), class348_sub44.method3307(100), class46, 21.toByte())
@@ -2215,7 +2215,7 @@ object Class66 {
             } else if (i < 6900) {
                 if (i == 6800) {
                     val i_215_ = anIntArray1149!![--anInt1173]
-                    val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_215_, 96.toByte())
+                    val class42 = TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225(i_215_, 96.toByte())
                     if (class42!!.aString597 == null) aStringArray1152!![anInt1170++] = ""
                     else {
                         aStringArray1152!![anInt1170++] = class42.aString597!!
@@ -2225,19 +2225,19 @@ object Class66 {
                 }
                 if (i == 6801) {
                     val i_216_ = anIntArray1149!![--anInt1173]
-                    val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_216_, 111.toByte())
+                    val class42 = TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225(i_216_, 111.toByte())
                     anIntArray1149!![anInt1173++] = class42!!.anInt578
                     return
                 }
                 if (i == 6802) {
                     val i_217_ = anIntArray1149!![--anInt1173]
-                    val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_217_, 91.toByte())
+                    val class42 = TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225(i_217_, 91.toByte())
                     anIntArray1149!![anInt1173++] = class42!!.anInt576
                     return
                 }
                 if (i == 6803) {
                     val i_218_ = anIntArray1149!![--anInt1173]
-                    val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_218_, 44.toByte())
+                    val class42 = TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225(i_218_, 44.toByte())
                     anIntArray1149!![anInt1173++] = class42!!.anInt596
                     return
                 }
@@ -2246,16 +2246,16 @@ object Class66 {
                     val i_219_ = anIntArray1149!![anInt1173]
                     val i_220_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(i_220_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_219_, 79.toByte())!!.method376(class254.aString3258, i_220_, 126.toByte())!!)
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225(i_219_, 79.toByte())!!.method376(class254.aString3258, i_220_, 126.toByte())!!)
                     else {
-                        anIntArray1149!![anInt1173++] = (Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_219_, 50.toByte())!!.method378(class254.anInt3256, i_220_, false))
+                        anIntArray1149!![anInt1173++] = (TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225(i_219_, 50.toByte())!!.method378(class254.anInt3256, i_220_, false))
                         return
                     }
                     return
                 }
             } else if (i < 7000) {
                 if (i == 6900) {
-                    anIntArray1149!![anInt1173++] = if (Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) 1 else 0
                     return
                 }
                 if (i == 6901) {
@@ -2276,9 +2276,9 @@ object Class66 {
                 }
                 if (i == 6905) {
                     var string: String? = ""
-                    if (Class348_Sub42_Sub6.aLinkedQueueNode_9536 != null) {
-                        if (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anObject1998 != null) string = (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anObject1998) as String?
-                        else string = SceneObjectAnimator.method1669(-19918, (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anInt2000))
+                    if (ChatScriptListNode.aLinkedQueueNode_9536 != null) {
+                        if (ChatScriptListNode.aLinkedQueueNode_9536!!.anObject1998 != null) string = (ChatScriptListNode.aLinkedQueueNode_9536!!.anObject1998) as String?
+                        else string = SceneObjectAnimator.method1669(-19918, (ChatScriptListNode.aLinkedQueueNode_9536!!.anInt2000))
                     }
                     aStringArray1152!![anInt1170++] = string!!
                     return
@@ -2292,7 +2292,7 @@ object Class66 {
                     return
                 }
                 if (i == 6908) {
-                    anIntArray1149!![anInt1173++] = Class348_Sub6.anInt6632
+                    anIntArray1149!![anInt1173++] = HslColorTableNode.anInt6632
                     return
                 }
                 if (i == 6909) {
@@ -2308,7 +2308,7 @@ object Class66 {
                     return
                 }
                 if (i == 6912) {
-                    anIntArray1149!![anInt1173++] = Class348_Sub1.anInt6551
+                    anIntArray1149!![anInt1173++] = AbstractTileShape.anInt6551
                     return
                 }
             } else if (i < 7100) {
@@ -2317,35 +2317,35 @@ object Class66 {
                     Class64_Sub3.anInt5584 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
                     anIntArray1149!![anInt1173++] = Class64_Sub3.anInt5584
                     anIntArray1149!![anInt1173++] = i_221_
-                    Class348_Sub20.method2953((-113).toByte())
+                    TextureTileRenderer.method2953((-113).toByte())
                     method243(37)
                     RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7001) {
                     PlayerUpdateDecoder.method1140(47)
-                    Class348_Sub20.method2953((-126).toByte())
+                    TextureTileRenderer.method2953((-126).toByte())
                     method243(37)
                     RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7002) {
                     Class47.method447((-59).toByte())
-                    Class348_Sub20.method2953((-124).toByte())
+                    TextureTileRenderer.method2953((-124).toByte())
                     method243(37)
                     RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7003) {
                     ServerConnectionInfo.method1263(true)
-                    Class348_Sub20.method2953((-106).toByte())
+                    TextureTileRenderer.method2953((-106).toByte())
                     method243(37)
                     RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7004) {
                     method3076(0, true)
-                    Class348_Sub20.method2953((-107).toByte())
+                    TextureTileRenderer.method2953((-107).toByte())
                     method243(37)
                     RenderNode.aBoolean9719 = false
                     return
@@ -2361,7 +2361,7 @@ object Class66 {
                     else {
                         if (Class64_Sub3.anInt5584 == 1) VideoStreamDecoder.aBoolean4117 = true
                         else {
-                            if (Class64_Sub3.anInt5584 == 3) Class348_Sub1.aBoolean6558 = true
+                            if (Class64_Sub3.anInt5584 == 3) AbstractTileShape.aBoolean6558 = true
                             return
                         }
                         return
@@ -2416,7 +2416,7 @@ object Class66 {
                     return
                 }
                 if (i == 7205) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1806(108) && Class348_Sub8.aRenderer6654!!.method3699()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1806(108) && FacingDirectionNode.aRenderer6654!!.method3699()) 1 else 0
                     return
                 }
                 if (i == 7206) {
@@ -2428,7 +2428,7 @@ object Class66 {
                     return
                 }
                 if (i == 7208) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1774(120) && Class348_Sub8.aRenderer6654!!.method3627()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1774(120) && FacingDirectionNode.aRenderer6654!!.method3627()) 1 else 0
                     return
                 }
                 if (i == 7209) {
@@ -2478,7 +2478,7 @@ object Class66 {
                 }
                 if (i == 7305) {
                     val i_230_ = anIntArray1149!![--anInt1173]
-                    if (Class348_Sub8.aRenderer6654!!.method3699()) {
+                    if (FacingDirectionNode.aRenderer6654!!.method3699()) {
                         anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1714(3, i_230_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
@@ -2496,7 +2496,7 @@ object Class66 {
                 }
                 if (i == 7308) {
                     val i_233_ = anIntArray1149!![--anInt1173]
-                    if (Class348_Sub8.aRenderer6654!!.method3627()) {
+                    if (FacingDirectionNode.aRenderer6654!!.method3627()) {
                         anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1714(3, i_233_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
@@ -2538,7 +2538,7 @@ object Class66 {
     }
 
     @JvmStatic
-    fun method705(class348_sub36: Class348_Sub36) {
+    fun method705(class348_sub36: WidgetActionEntry) {
         method712(class348_sub36, 200000)
     }
 
@@ -2549,7 +2549,7 @@ object Class66 {
 
     private fun method707(string: String, i: Int) {
         var string = string
-        if (AsyncTaskHandle.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+        if (AsyncTaskHandle.anInt2581 != 0 || ((!RangeThresholdTextureNode.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
             var string_240_ = string.lowercase(Locale.getDefault())
             var i_241_ = 0
             if (string_240_.startsWith(LocalizedText.aLocalizedText_3530!!.method2063(0, 544)!!)) {
@@ -2588,43 +2588,43 @@ object Class66 {
             } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3541!!.method2063(0, 544)!!)) {
                 i_241_ = 11
                 string = string.substring(LocalizedText.aLocalizedText_3541!!.method2063(0, 544)!!.length)
-            } else if (Class348_Sub33.anInt6967 != 0) {
-                if (string_240_.startsWith(LocalizedText.aLocalizedText_3530!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+            } else if (AnimationFrameDefinition.anInt6967 != 0) {
+                if (string_240_.startsWith(LocalizedText.aLocalizedText_3530!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 0
-                    string = string.substring(LocalizedText.aLocalizedText_3530!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3531!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3530!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3531!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 1
-                    string = string.substring(LocalizedText.aLocalizedText_3531!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3532!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3531!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3532!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 2
-                    string = string.substring(LocalizedText.aLocalizedText_3532!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3533!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3532!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3533!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 3
-                    string = string.substring(LocalizedText.aLocalizedText_3533!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3534!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3533!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3534!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 4
-                    string = string.substring(LocalizedText.aLocalizedText_3534!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3535!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3534!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3535!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 5
-                    string = string.substring(LocalizedText.aLocalizedText_3535!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3536!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3535!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3536!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 6
-                    string = string.substring(LocalizedText.aLocalizedText_3536!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3537!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3536!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3537!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 7
-                    string = string.substring(LocalizedText.aLocalizedText_3537!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3538!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3537!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3538!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 8
-                    string = string.substring(LocalizedText.aLocalizedText_3538!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3539!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3538!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3539!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 9
-                    string = string.substring(LocalizedText.aLocalizedText_3539!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3540!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3539!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3540!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 10
-                    string = string.substring(LocalizedText.aLocalizedText_3540!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3541!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3540!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3541!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_241_ = 11
-                    string = string.substring(LocalizedText.aLocalizedText_3541!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                    string = string.substring(LocalizedText.aLocalizedText_3541!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
                 }
             }
             string_240_ = string.lowercase(Locale.getDefault())
@@ -2644,33 +2644,33 @@ object Class66 {
             } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3546!!.method2063(0, 544)!!)) {
                 i_242_ = 5
                 string = string.substring(LocalizedText.aLocalizedText_3546!!.method2063(0, 544)!!.length)
-            } else if (Class348_Sub33.anInt6967 != 0) {
-                if (string_240_.startsWith(LocalizedText.aLocalizedText_3542!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+            } else if (AnimationFrameDefinition.anInt6967 != 0) {
+                if (string_240_.startsWith(LocalizedText.aLocalizedText_3542!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_242_ = 1
-                    string = string.substring(LocalizedText.aLocalizedText_3542!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3543!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3542!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3543!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_242_ = 2
-                    string = string.substring(LocalizedText.aLocalizedText_3543!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3544!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3543!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3544!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_242_ = 3
-                    string = string.substring(LocalizedText.aLocalizedText_3544!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3545!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3544!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3545!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_242_ = 4
-                    string = string.substring(LocalizedText.aLocalizedText_3545!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3546!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3545!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3546!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
                     i_242_ = 5
-                    string = string.substring(LocalizedText.aLocalizedText_3546!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                    string = string.substring(LocalizedText.aLocalizedText_3546!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
                 }
             }
             anInt1158++
-            val class348_sub47 = method2148(CircleDrawer.aClass351_2686, Class348_Sub23_Sub2.aClass77_9029, -88)
+            val class348_sub47 = method2148(CircleDrawer.aClass351_2686, TheoraVideoStream.aClass77_9029, -88)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
             val i_243_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_241_)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_242_)
             method3544((class348_sub47.aClass348_Sub49_Sub2_7116!!), -101, string)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(119, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_243_)
-            Class348_Sub42_Sub14.method3243(124, class348_sub47)
+            InterfaceComponentGroup.method3243(124, class348_sub47)
         }
     }
 
@@ -2737,7 +2737,7 @@ object Class66 {
                 anInt1173 -= 2
                 val i_253_ = anIntArray1149!![anInt1173]
                 val i_254_ = anIntArray1149!![anInt1173 + 1]
-                val class46 = Class348_Sub22.method2957(i_254_, (-54).toByte(), i_253_)
+                val class46 = NpcReference.method2957(i_254_, (-54).toByte(), i_253_)
                 if (class46 == null || i_254_ == -1) {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -2779,13 +2779,13 @@ object Class66 {
                 if ((LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) != null) {
                     for (i_260_ in TextureDefinitionLoader.anIntArray1973!!.indices) {
                         if (TextureDefinitionLoader.anIntArray1973!![i_260_] == i_258_) {
-                            LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1233(Class348_Sub40_Sub25.aModelDefinitionLoader_9342, i_259_, -1, i_260_)
+                            LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1233(RadialTextureNode.aModelDefinitionLoader_9342, i_259_, -1, i_260_)
                             return
                         }
                     }
                     for (i_261_ in Class91.anIntArray1521!!.indices) {
                         if (Class91.anIntArray1521!![i_261_] == i_258_) {
-                            LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1233(Class348_Sub40_Sub25.aModelDefinitionLoader_9342, i_259_, -1, i_261_)
+                            LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1233(RadialTextureNode.aModelDefinitionLoader_9342, i_259_, -1, i_261_)
                             break
                         }
                     }
@@ -2869,7 +2869,7 @@ object Class66 {
                     class46.aBoolean813 = bool_271_
                     ConfigFlagUtil.method1916(-9343, class46)
                 }
-                if (class46.anInt704 == -1) Class348_Sub26.method2999(90.toByte(), class46.anInt830)
+                if (class46.anInt704 == -1) NamedIdEntry.method2999(90.toByte(), class46.anInt830)
                 return
             }
             if (i == 1004) {
@@ -3197,7 +3197,7 @@ object Class66 {
             }
             if (i == 1211) {
                 class46!!.anInt770 = 5
-                class46.anInt753 = Class348_Sub42_Sub11.anInt9591
+                class46.anInt753 = CharCodeMap.anInt9591
                 class46.anInt779 = 0
                 if (class46.anInt704 == -1) method3569(class46.anInt830, 66)
                 return
@@ -3222,7 +3222,7 @@ object Class66 {
                 val i_283_ = anIntArray1149!![anInt1173 + 1]
                 if (i_282_ == -1 && i_283_ == -1) class46!!.aClass46_782 = null
                 else {
-                    class46!!.aClass46_782 = Class348_Sub22.method2957(i_283_, (-54).toByte(), i_282_)
+                    class46!!.aClass46_782 = NpcReference.method2957(i_283_, (-54).toByte(), i_282_)
                     return
                 }
                 return
@@ -3539,11 +3539,11 @@ object Class66 {
                 if (anInt1177 >= 10) throw RuntimeException("C29xx-1")
                 if (i == 1927) {
                     if (class46!!.anObjectArray727 != null) {
-                        val class348_sub36 = Class348_Sub36()
+                        val class348_sub36 = WidgetActionEntry()
                         class348_sub36.aClass46_6989 = class46
                         class348_sub36.anObjectArray6987 = class46.anObjectArray727
                         class348_sub36.anInt6988 = anInt1177 + 1
-                        Class348_Sub1_Sub2.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                         return
                     }
                     return
@@ -3657,7 +3657,7 @@ object Class66 {
                 }
                 if (i == 2702) {
                     val i_298_ = anIntArray1149!![--anInt1173]
-                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_298_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_298_.toLong(), -6008) as RegionSceneShifter?)
                     if (class348_sub41 == null) {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -3686,7 +3686,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_301_ = anIntArray1149!![anInt1173]
                     val i_302_ = anIntArray1149!![anInt1173 + 1]
-                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_301_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_301_.toLong(), -6008) as RegionSceneShifter?)
                     if (class348_sub41 != null && (class348_sub41.anInt7050 == i_302_)) anIntArray1149!![anInt1173++] = 1
                     else {
                         anIntArray1149!![anInt1173++] = 0
@@ -3736,29 +3736,29 @@ object Class66 {
                 if (i == 3104) {
                     val string = aStringArray1152!![--anInt1170]!!
                     var i_304_ = 0
-                    if (method468(string, 73)) i_304_ = Class348_Sub41.method3156(true, string)
+                    if (method468(string, 73)) i_304_ = RegionSceneShifter.method3156(true, string)
                     anInt1163++
-                    val class348_sub47 = method2148((Class348_Sub14.aClass351_6764), (Class348_Sub23_Sub2.aClass77_9029), -112)
+                    val class348_sub47 = method2148((LongKeyNode.aClass351_6764), (TheoraVideoStream.aClass77_9029), -112)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(102.toByte(), i_304_)
-                    Class348_Sub42_Sub14.method3243(116, class348_sub47)
+                    InterfaceComponentGroup.method3243(116, class348_sub47)
                     return
                 }
                 if (i == 3105) {
                     val string = aStringArray1152!![--anInt1170]!!
                     anInt1162++
-                    val class348_sub47 = method2148(RsaPacketDecoder.aClass351_4225, (Class348_Sub23_Sub2.aClass77_9029), -96)
+                    val class348_sub47 = method2148(RsaPacketDecoder.aClass351_4225, (TheoraVideoStream.aClass77_9029), -96)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string.length + 1)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
-                    Class348_Sub42_Sub14.method3243(-81, class348_sub47)
+                    InterfaceComponentGroup.method3243(-81, class348_sub47)
                     return
                 }
                 if (i == 3106) {
                     val string = aStringArray1152!![--anInt1170]!!
                     anInt1153++
-                    val class348_sub47 = method2148((Class348_Sub40_Sub5.aClass351_9130), (Class348_Sub23_Sub2.aClass77_9029), -93)
+                    val class348_sub47 = method2148((VoronoiNoiseTextureNode.aClass351_9130), (TheoraVideoStream.aClass77_9029), -93)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string.length + 1)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
-                    Class348_Sub42_Sub14.method3243(35, class348_sub47)
+                    InterfaceComponentGroup.method3243(35, class348_sub47)
                     return
                 }
                 if (i == 3107) {
@@ -3787,16 +3787,16 @@ object Class66 {
                 if (i == 3110) {
                     val i_311_ = anIntArray1149!![--anInt1173]
                     anInt1167++
-                    val class348_sub47 = method2148((Class348_Sub40_Sub12.aClass351_9189), (Class348_Sub23_Sub2.aClass77_9029), -121)
+                    val class348_sub47 = method2148((GradientLookupEffect.aClass351_9189), (TheoraVideoStream.aClass77_9029), -121)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_311_)
-                    Class348_Sub42_Sub14.method3243(122, class348_sub47)
+                    InterfaceComponentGroup.method3243(122, class348_sub47)
                     return
                 }
                 if (i == 3111) {
                     anInt1173 -= 2
                     val i_312_ = anIntArray1149!![anInt1173]
                     val i_313_ = anIntArray1149!![anInt1173 + 1]
-                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_312_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_312_.toLong(), -6008) as RegionSceneShifter?)
                     if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118((class348_sub41.anInt7050 != i_313_), true, class348_sub41, 2533)
                     MapTileShape.method2661(i_313_, i_312_, 3, true, 2)
                     return
@@ -3804,7 +3804,7 @@ object Class66 {
                 if (i == 3112) {
                     anInt1173--
                     val i_314_ = anIntArray1149!![anInt1173]
-                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_314_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_314_.toLong(), -6008) as RegionSceneShifter?)
                     if (class348_sub41 != null && class348_sub41.anInt7053 == 3) ScrollingWidgetComponentNode.method1118(true, true, class348_sub41, 2533)
                     return
                 }
@@ -3830,7 +3830,7 @@ object Class66 {
             } else if (i < 3300) {
                 if (i == 3200) {
                     anInt1173 -= 3
-                    Class348_Sub20.method2947(true, 255, anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173 + 2], 256)
+                    TextureTileRenderer.method2947(true, 255, anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173 + 2], 256)
                     return
                 }
                 if (i == 3201) {
@@ -3844,7 +3844,7 @@ object Class66 {
                 }
                 if (i == 3203) {
                     anInt1173 -= 4
-                    Class348_Sub20.method2947(true, anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173 + 2], 256)
+                    TextureTileRenderer.method2947(true, anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173 + 2], 256)
                     return
                 }
                 if (i == 3204) {
@@ -3869,7 +3869,7 @@ object Class66 {
                 }
                 if (i == 3208) {
                     anInt1173 -= 5
-                    Class348_Sub20.method2947(true, anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173 + 4])
+                    TextureTileRenderer.method2947(true, anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173 + 4])
                     return
                 }
                 if (i == 3209) {
@@ -4050,7 +4050,7 @@ object Class66 {
                     return
                 }
                 if (i == 3335) {
-                    anIntArray1149!![anInt1173++] = Class348_Sub33.anInt6967
+                    anIntArray1149!![anInt1173++] = AnimationFrameDefinition.anInt6967
                     return
                 }
                 if (i == 3336) {
@@ -4124,7 +4124,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_348_ = anIntArray1149!![anInt1173]
                     val i_349_ = anIntArray1149!![anInt1173 + 1]
-                    val class117 = Class348_Sub7.aCacheArchiveIndexLoader_6653!!.method337(true, i_348_)
+                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_348_)
                     aStringArray1152!![anInt1170++] = class117.method1074(i_349_, 124)
                     return
                 }
@@ -4134,7 +4134,7 @@ object Class66 {
                     val i_351_ = anIntArray1149!![anInt1173 + 1]
                     val i_352_ = anIntArray1149!![anInt1173 + 2]
                     val i_353_ = anIntArray1149!![anInt1173 + 3]
-                    val class117 = Class348_Sub7.aCacheArchiveIndexLoader_6653!!.method337(true, i_352_)
+                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_352_)
                     if (class117.aChar1778.code != i_350_ || class117.aChar1779.code != i_351_) throw RuntimeException("C3408-1 " + i_352_ + "-" + i_353_)
                     if (i_351_ == 115) aStringArray1152!![anInt1170++] = class117.method1074(i_353_, 119)
                     else {
@@ -4149,7 +4149,7 @@ object Class66 {
                     val i_355_ = anIntArray1149!![anInt1173 + 1]
                     val i_356_ = anIntArray1149!![anInt1173 + 2]
                     if (i_355_ == -1) throw RuntimeException("C3409-2")
-                    val class117 = Class348_Sub7.aCacheArchiveIndexLoader_6653!!.method337(true, i_355_)
+                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_355_)
                     if (class117.aChar1779.code != i_354_) throw RuntimeException("C3409-1")
                     anIntArray1149!![anInt1173++] = if (class117.method1067(true, i_356_)) 1 else 0
                     return
@@ -4158,14 +4158,14 @@ object Class66 {
                     val i_357_ = anIntArray1149!![--anInt1173]
                     val string = aStringArray1152!![--anInt1170]!!
                     if (i_357_ == -1) throw RuntimeException("C3410-2")
-                    val class117 = Class348_Sub7.aCacheArchiveIndexLoader_6653!!.method337(true, i_357_)
+                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_357_)
                     if (class117.aChar1779 != 's') throw RuntimeException("C3410-1")
                     anIntArray1149!![anInt1173++] = if (class117.method1066(false, string)) 1 else 0
                     return
                 }
                 if (i == 3411) {
                     val i_358_ = anIntArray1149!![--anInt1173]
-                    val class117 = Class348_Sub7.aCacheArchiveIndexLoader_6653!!.method337(true, i_358_)
+                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_358_)
                     anIntArray1149!![anInt1173++] = class117.aClass356_1767!!.method3474(1)
                     return
                 }
@@ -4175,7 +4175,7 @@ object Class66 {
                     else {
                         if (MinimapSpriteRenderer.anInt4930 == 1) anIntArray1149!![anInt1173++] = -1
                         else {
-                            anIntArray1149!![anInt1173++] = Class348_Sub40_Sub30.anInt9383
+                            anIntArray1149!![anInt1173++] = HslAdjustTextureNode.anInt9383
                             return
                         }
                         return
@@ -4184,7 +4184,7 @@ object Class66 {
                 }
                 if (i == 3601) {
                     val i_359_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_359_ < Class348_Sub40_Sub30.anInt9383) {
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_359_ < HslAdjustTextureNode.anInt9383) {
                         aStringArray1152!![anInt1170++] = Class83.aStringArray1441!![i_359_]
                         if (FixedFunctionMaterialPass.aStringArray6205!![i_359_] != null) aStringArray1152!![anInt1170++] = FixedFunctionMaterialPass.aStringArray6205!![i_359_]!!
                         else aStringArray1152!![anInt1170++] = ""
@@ -4197,7 +4197,7 @@ object Class66 {
                 }
                 if (i == 3602) {
                     val i_360_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_360_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = Renderer.anIntArray4578!![i_360_]
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_360_ < HslAdjustTextureNode.anInt9383) anIntArray1149!![anInt1173++] = Renderer.anIntArray4578!![i_360_]
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4206,7 +4206,7 @@ object Class66 {
                 }
                 if (i == 3603) {
                     val i_361_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_361_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = NpcCountAccessor.anIntArray2280!![i_361_]
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_361_ < HslAdjustTextureNode.anInt9383) anIntArray1149!![anInt1173++] = NpcCountAccessor.anIntArray2280!![i_361_]
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4242,12 +4242,12 @@ object Class66 {
                 if (i == 3609) {
                     var string = aStringArray1152!![--anInt1170]!!
                     if (string.startsWith("<img=0>") || string.startsWith("<img=1>")) string = string.substring(7)
-                    anIntArray1149!![anInt1173++] = (if (Class348_Sub11.method2797(string, (-63).toByte())) 1 else 0)
+                    anIntArray1149!![anInt1173++] = (if (KeyEventNode.method2797(string, (-63).toByte())) 1 else 0)
                     return
                 }
                 if (i == 3610) {
                     val i_363_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_363_ < Class348_Sub40_Sub30.anInt9383) aStringArray1152!![anInt1170++] = GlBufferObject.aStringArray4744!![i_363_]!!
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_363_ < HslAdjustTextureNode.anInt9383) aStringArray1152!![anInt1170++] = GlBufferObject.aStringArray4744!![i_363_]!!
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4320,16 +4320,16 @@ object Class66 {
                 if (i == 3621) {
                     if (MinimapSpriteRenderer.anInt4930 == 0) anIntArray1149!![anInt1173++] = -1
                     else {
-                        anIntArray1149!![anInt1173++] = Class348_Sub42_Sub12.anInt9604
+                        anIntArray1149!![anInt1173++] = ContactEntry.anInt9604
                         return
                     }
                     return
                 }
                 if (i == 3622) {
                     val i_367_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_367_ < Class348_Sub42_Sub12.anInt9604) {
+                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_367_ < ContactEntry.anInt9604) {
                         aStringArray1152!![anInt1170++] = Class51.aStringArray932!![i_367_]!!
-                        if (Class348_Sub40_Sub21.aStringArray9275!![i_367_] != null) aStringArray1152!![anInt1170++] = (Class348_Sub40_Sub21.aStringArray9275!![i_367_]!!)
+                        if (WeaveTextureNode.aStringArray9275!![i_367_] != null) aStringArray1152!![anInt1170++] = (WeaveTextureNode.aStringArray9275!![i_367_]!!)
                         else aStringArray1152!![anInt1170++] = ""
                     } else {
                         aStringArray1152!![anInt1170++] = ""
@@ -4354,10 +4354,10 @@ object Class66 {
                     return
                 }
                 if (i == 3625) {
-                    if (Class348_Sub21.aString6854 == null) {
+                    if (CameraSplineNode.aString6854 == null) {
                         aStringArray1152!![anInt1170++] = ""
                         return
-                    } else aStringArray1152!![anInt1170++] = Class348_Sub21.aString6854
+                    } else aStringArray1152!![anInt1170++] = CameraSplineNode.aString6854
                     return
                 }
                 if (i == 3626) {
@@ -4371,7 +4371,7 @@ object Class66 {
                 }
                 if (i == 3627) {
                     val i_370_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_370_ >= 0 && i_370_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = if (ObjectSpawnDecoder.aBooleanArray1806!![i_370_]) 1 else 0
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_370_ >= 0 && i_370_ < HslAdjustTextureNode.anInt9383) anIntArray1149!![anInt1173++] = if (ObjectSpawnDecoder.aBooleanArray1806!![i_370_]) 1 else 0
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4409,7 +4409,7 @@ object Class66 {
                 }
                 if (i == 3633) {
                     val i_373_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_373_ < Class348_Sub42_Sub12.anInt9604) aStringArray1152!![anInt1170++] = ObjectSpawnDecoder.aStringArray1808!![i_373_]
+                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_373_ < ContactEntry.anInt9604) aStringArray1152!![anInt1170++] = ObjectSpawnDecoder.aStringArray1808!![i_373_]
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4673,7 +4673,7 @@ object Class66 {
                 }
                 if (i == 4107) {
                     anInt1170 -= 2
-                    anIntArray1149!![anInt1173++] = method1811(9152, (aStringArray1152!![anInt1170 + 1]), Class348_Sub33.anInt6967, (aStringArray1152!![anInt1170]))
+                    anIntArray1149!![anInt1173++] = method1811(9152, (aStringArray1152!![anInt1170 + 1]), AnimationFrameDefinition.anInt6967, (aStringArray1152!![anInt1170]))
                     return
                 }
                 if (i == 4108) {
@@ -4795,7 +4795,7 @@ object Class66 {
                 if (i == 4124) {
                     val bool_453_ = anIntArray1149!![--anInt1173] != 0
                     val i_454_ = anIntArray1149!![--anInt1173]
-                    aStringArray1152!![anInt1170++] = Class357.method3486(0, bool_453_, Class348_Sub33.anInt6967, i_454_.toLong(), 16980)
+                    aStringArray1152!![anInt1170++] = Class357.method3486(0, bool_453_, AnimationFrameDefinition.anInt6967, i_454_.toLong(), 16980)
                     return
                 }
                 if (i == 4125) {
@@ -4962,9 +4962,9 @@ object Class66 {
                     val i_480_ = anIntArray1149!![anInt1173]
                     val i_481_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(i_481_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16)!!)
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16)!!)
                     else {
-                        anIntArray1149!![anInt1173++] = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81))
+                        anIntArray1149!![anInt1173++] = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81))
                         return
                     }
                     return
@@ -5005,7 +5005,7 @@ object Class66 {
         throw IllegalStateException(i.toString())
     }
 
-    private fun method711(class348_sub42_sub19: Class348_Sub42_Sub19, i: Int) {
+    private fun method711(class348_sub42_sub19: MinimapAreaMarkerNode, i: Int) {
         var class348_sub42_sub19 = class348_sub42_sub19
         anInt1173 = 0
         anInt1170 = 0
@@ -5132,7 +5132,7 @@ object Class66 {
                         method529(i_512_, true)
                     } else if (i_490_ == 51) {
                         val class356 = (class348_sub42_sub19.aClass356Array9693!![is_489_[i_488_]]!!)
-                        val class348_sub35 = (class356.method3480(anIntArray1149!![--anInt1173].toLong(), -6008) as Class348_Sub35?)
+                        val class348_sub35 = (class356.method3480(anIntArray1149!![--anInt1173].toLong(), -6008) as IntKeyNode?)
                         if (class348_sub35 != null) i_488_ += class348_sub35.anInt6976
                     } else if (i_490_ == 86) {
                         if (anIntArray1149!![--anInt1173] == 1) {
@@ -5179,7 +5179,7 @@ object Class66 {
         }
     }
 
-    private fun method712(class348_sub36: Class348_Sub36, i: Int) {
+    private fun method712(class348_sub36: WidgetActionEntry, i: Int) {
         val objects = class348_sub36.anObjectArray6987!!
         val i_515_ = (objects[0] as Int)
         val class348_sub42_sub19 = ShaderObject.method2609(-122, i_515_)
@@ -5236,7 +5236,7 @@ object Class66 {
             val i_520_ = i ushr 16
             var class46s = Class369_Sub2.aClass46ArrayArray8584!![i_520_]
             if (class46s == null) {
-                val class46s_521_: Array<Class46?> = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_520_]!!
+                val class46s_521_: Array<Class46?> = WarpTextureNode.aClass46ArrayArray9427!![i_520_]!!
                 val i_522_ = class46s_521_.size
                 Class369_Sub2.aClass46ArrayArray8584!![i_520_] = arrayOfNulls<Class46>(i_522_)
                 class46s = Class369_Sub2.aClass46ArrayArray8584!![i_520_]!!

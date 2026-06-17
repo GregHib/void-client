@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class MidiTrackReader {
-    private val aClass348_Sub49_2677: Class348_Sub49
+    private val aClass348_Sub49_2677: Buffer
     private var anIntArray2678: IntArray? = null
     private var anIntArray2679: IntArray? = null
     private var aLong2680: Long = 0
@@ -161,11 +161,11 @@ class MidiTrackReader {
     }
 
     constructor() {
-        aClass348_Sub49_2677 = Class348_Sub49(null)
+        aClass348_Sub49_2677 = Buffer(null)
     }
 
     internal constructor(`is`: ByteArray?) {
-        aClass348_Sub49_2677 = Class348_Sub49(null)
+        aClass348_Sub49_2677 = Buffer(null)
         method1482(`is`)
     }
 

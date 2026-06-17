@@ -24,7 +24,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
         mapSceneIconDef = MapSceneIconDef()
         if (i.toInt() != 31) return null
         mapSceneIconDef.aTextureDefinitionLoader_2851 = this
-        if (`is` != null) mapSceneIconDef.method1597((-114).toByte(), Class348_Sub49(`is`))
+        if (`is` != null) mapSceneIconDef.method1597((-114).toByte(), Buffer(`is`))
         synchronized(aClass60_1963) {
             aClass60_1963.method582(mapSceneIconDef, i_0_.toLong(), (-108).toByte())
         }
@@ -79,7 +79,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
             aClass45_1971 = class45
             aClass45_1971!!.method407(0, 34)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_4_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_4_ != null) "{...}" else "null") + ')'))
         }
     }
 

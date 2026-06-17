@@ -21,14 +21,14 @@ class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Lo
             aHa_Sub2_3153 = var_ha_Sub2
             this.aLong3156 = l
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("tba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
         }
     }
 
     companion object {
         var anInt3151: Int = 0
         @JvmField
-        var aClass348_Sub42_Sub13_3152: Class348_Sub42_Sub13? = null
+        var aClass348_Sub42_Sub13_3152: ContactList? = null
         var anInt3154: Int = 0
         var anInt3155: Int = 0
         @JvmStatic
@@ -40,24 +40,24 @@ class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Lo
         fun method1867(i: Int) {
             anInt3155++
             Class88.anInt1498++
-            val class348_sub47 = method2148(TileSceneEntity.aClass351_8724, Class348_Sub23_Sub2.aClass77_9029, -99)
+            val class348_sub47 = method2148(TileSceneEntity.aClass351_8724, TheoraVideoStream.aClass77_9029, -99)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
-            Class348_Sub42_Sub14.method3243(118, class348_sub47)
+            InterfaceComponentGroup.method3243(118, class348_sub47)
         }
 
-        fun method1868(i: Byte, class348_sub42_sub13: Class348_Sub42_Sub13) {
+        fun method1868(i: Byte, class348_sub42_sub13: ContactList) {
             val i_0_ = -104 / ((i - 38) / 54)
             anInt3154++
             class348_sub42_sub13.method3162(true)
             var bool = false
-            var class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-85) as Class348_Sub42_Sub13?)
+            var class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-85) as ContactList?)
             while (class348_sub42_sub13_1_ != null) {
                 if (SceneModelBuilder.method2496(class348_sub42_sub13_1_.method3235(-17937), class348_sub42_sub13.method3235(-17937), true)) {
                     method721(class348_sub42_sub13_1_, class348_sub42_sub13, -1)
                     bool = true
                     break
                 }
-                class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(84.toByte()) as Class348_Sub42_Sub13?)
+                class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(84.toByte()) as ContactList?)
             }
             if (!bool) ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1005(true, class348_sub42_sub13)
         }

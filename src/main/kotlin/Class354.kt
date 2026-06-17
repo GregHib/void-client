@@ -1,5 +1,5 @@
 import ConfigFlagUtil.Companion.method1915
-import Class348_Sub17.Companion.method2929
+import SoundBankPatch.Companion.method2929
 
 /* Class354 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -112,11 +112,11 @@ class Class354 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_renderConf
 
         fun method3465(i: Int, i_0_: Int, mapTileShape: MapTileShape): Boolean {
             anInt4358++
-            Class348_Sub40_Sub4.aAbstractCameraTransform_9114!!.method897(mapTileShape.anIntArray4187!![i], mapTileShape.anIntArray4191[i], mapTileShape.anIntArray4184[i], SequencedWallEntity.anIntArray10172!!)
+            SourceRowTextureNode.aAbstractCameraTransform_9114!!.method897(mapTileShape.anIntArray4187!![i], mapTileShape.anIntArray4191[i], mapTileShape.anIntArray4184[i], SequencedWallEntity.anIntArray10172!!)
             val i_1_ = SequencedWallEntity.anIntArray10172!![2]
             if (i_1_ < 50) return false
             mapTileShape.aShortArray4194!![i] = (Class69.anInt1202 + (SequencedWallEntity.anIntArray10172!![0] * ScreenBorderFiller.anInt1962 / i_1_)).toShort()
-            mapTileShape.aShortArray4183!![i] = ((GlIndexBufferArb.anInt8498 * SequencedWallEntity.anIntArray10172!![i_0_] / i_1_) + Class348_Sub49_Sub2.anInt9759).toShort()
+            mapTileShape.aShortArray4183!![i] = ((GlIndexBufferArb.anInt8498 * SequencedWallEntity.anIntArray10172!![i_0_] / i_1_) + CipheredPacketBuffer.anInt9759).toShort()
             mapTileShape.aShortArray4188!![i] = i_1_.toShort()
             return true
         }

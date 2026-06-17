@@ -16,12 +16,12 @@ class Class359 {
         fun method3490(bool: Boolean): Boolean {
             anInt4419++
             var bool_0_ = bool
-            if (Class348_Sub40_Sub1.aSpriteImage_9090 == null) {
+            if (ColorThresholdEffect.aSpriteImage_9090 == null) {
                 if (!CameraRotationStub.aClass45_322!!.method421(false, OutputStream_Sub1.anInt98)) bool_0_ = false
-                else Class348_Sub40_Sub1.aSpriteImage_9090 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, OutputStream_Sub1.anInt98)
+                else ColorThresholdEffect.aSpriteImage_9090 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, OutputStream_Sub1.anInt98)
             }
-            if (Class348_Sub7.aSpriteImage_6643 == null) {
-                if (CameraRotationStub.aClass45_322!!.method421(!bool, Class348_Sub32.anInt6938)) Class348_Sub7.aSpriteImage_6643 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, Class348_Sub32.anInt6938)
+            if (RegionTileNode.aSpriteImage_6643 == null) {
+                if (CameraRotationStub.aClass45_322!!.method421(!bool, TerrainShadowBuilderGl2.anInt6938)) RegionTileNode.aSpriteImage_6643 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, TerrainShadowBuilderGl2.anInt6938)
                 else bool_0_ = false
             }
             if (ScriptCompilerThread.aSpriteImage_1727 == null) {

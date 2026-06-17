@@ -1,4 +1,4 @@
-import Class348_Sub1_Sub2.Companion.method2730
+import HashTileShape.Companion.method2730
 import java.math.BigInteger
 
 /*
@@ -7,11 +7,11 @@ import java.math.BigInteger
 class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, biginteger: BigInteger?, biginteger_14_: BigInteger?) {
     private val aMediaStreamClient_4212: MediaStreamClient?
     private val aBigInteger4213: BigInteger?
-    private var aClass348_Sub49_4215: Class348_Sub49? = null
+    private var aClass348_Sub49_4215: Buffer? = null
     private var aClass314_Sub1Array4216: Array<ArchiveResourceProvider?>? = null
     private var aScriptCompilerThread_4217: ScriptCompilerThread? = null
     private val aBigInteger4218: BigInteger?
-    private var aClass348_Sub42_Sub16_Sub1_4220: Class348_Sub42_Sub16_Sub1? = null
+    private var aClass348_Sub42_Sub16_Sub1_4220: StreamingResourceRequest? = null
     fun method2670(i: Int) {
         anInt4222++
         if (aClass314_Sub1Array4216 != null) {
@@ -32,7 +32,7 @@ class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient
             if (i_4_ != 255) method2671(-43)
             return method2675((-123).toByte(), true, i, indexedFileCache, indexedFileCache_3_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eb.D(" + (if (indexedFileCache != null) "{...}" else "null") + ',' + i + ',' + (if (indexedFileCache_3_ != null) "{...}" else "null") + ',' + i_4_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("eb.D(" + (if (indexedFileCache != null) "{...}" else "null") + ',' + i + ',' + (if (indexedFileCache_3_ != null) "{...}" else "null") + ',' + i_4_ + ')'))
         }
     }
 
@@ -50,7 +50,7 @@ class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient
         if (aClass348_Sub42_Sub16_Sub1_4220!!.aBoolean9664) {
             return false
         }
-        val class348_sub49 = Class348_Sub49(aClass348_Sub42_Sub16_Sub1_4220!!.method3259(i xor 0x17))
+        val class348_sub49 = Buffer(aClass348_Sub42_Sub16_Sub1_4220!!.method3259(i xor 0x17))
         class348_sub49.anInt7197 = 5
         val idxCount = class348_sub49.readUnsignedByte(i xor 0xf8)
         class348_sub49.anInt7197 += idxCount * 72
@@ -94,7 +94,7 @@ class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient
             aClass314_Sub1Array4216!![i_10_] = class314_sub1
             return class314_sub1
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eb.E(" + i + ',' + bool + ',' + i_10_ + ',' + (if (indexedFileCache != null) "{...}" else "null") + ',' + (if (indexedFileCache_11_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("eb.E(" + i + ',' + bool + ',' + i_10_ + ',' + (if (indexedFileCache != null) "{...}" else "null") + ',' + (if (indexedFileCache_11_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -108,7 +108,7 @@ class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient
                 if (aMediaStreamClient_4212!!.method1900(-31)) break
                 aClass348_Sub42_Sub16_Sub1_4220 = aMediaStreamClient_4212.method1906((-80).toByte(), 0.toByte(), true, 255, 255)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("eb.<init>(" + (if (mediaStreamClient != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + (if (biginteger != null) "{...}" else "null") + ',' + (if (biginteger_14_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("eb.<init>(" + (if (mediaStreamClient != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + (if (biginteger != null) "{...}" else "null") + ',' + (if (biginteger_14_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

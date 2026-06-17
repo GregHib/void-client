@@ -17,7 +17,7 @@ class SplashImageLoadable internal constructor(class45: Class45?, configValuePro
         anInt4696++
         if (bool) {
             val i_0_ = (max(LocTypeDefinition.anInt4017, Class92.anInt1524))
-            val i_1_ = (max(Class348_Sub42_Sub8_Sub2.anInt10432, OpenGlRenderer.anInt7666))
+            val i_1_ = (max(HardCacheEntryReference.anInt10432, OpenGlRenderer.anInt7666))
             val i_2_ = aAbstractModelRenderer_4688!!.method966()
             val i_3_ = aAbstractModelRenderer_4688!!.method980()
             var i_4_ = 0
@@ -39,7 +39,7 @@ class SplashImageLoadable internal constructor(class45: Class45?, configValuePro
             aClass45_4694 = class45
             aConfigValueProvider_4687 = configValueProvider
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uk.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (configValueProvider != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("uk.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (configValueProvider != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -60,7 +60,7 @@ class SplashImageLoadable internal constructor(class45: Class45?, configValuePro
         var anInt4695: Int = 0
         var anInt4696: Int = 0
 
-        fun method2022(class348_sub49: Class348_Sub49, i: Int): Class50_Sub1? {
+        fun method2022(class348_sub49: Buffer, i: Int): Class50_Sub1? {
             if (i != 0) return null
             anInt4691++
             return Class50_Sub1(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))

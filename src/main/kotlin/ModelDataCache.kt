@@ -35,7 +35,7 @@ object ModelDataCache {
     @JvmStatic
     fun method298(bool: Boolean, i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
         anInt354++
-        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) Class348_Sub42_Sub3.method3177(-98, false)
+        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) LoadingScreenImageNode.method3177(-98, false)
         else {
             CollisionMapRegion.anInt1720 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
             method3553(true, 103.toByte(), 0)

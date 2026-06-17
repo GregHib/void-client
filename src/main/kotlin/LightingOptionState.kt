@@ -26,7 +26,7 @@ class LightingOptionState : GraphicsOptionState {
         return this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1710(i: Int): Int {
         if (i != 20014) aIntRange_5883 = null
@@ -48,7 +48,7 @@ class LightingOptionState : GraphicsOptionState {
         return 3
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     companion object {
         @JvmField
@@ -70,7 +70,7 @@ class LightingOptionState : GraphicsOptionState {
         @JvmField
         var anInt5880: Int = 0
         @JvmField
-        var aClass348_Sub26_5881: Class348_Sub26? = null
+        var aClass348_Sub26_5881: NamedIdEntry? = null
         @JvmField
         var aString5882: String? = null
         @JvmField

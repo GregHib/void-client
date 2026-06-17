@@ -9,7 +9,7 @@ import kotlin.math.min
  * Class233
  */
 class ParticleSortRenderer internal constructor() {
-    private val aClass348_Sub49_Sub1_3020: Class348_Sub49_Sub1
+    private val aClass348_Sub49_Sub1_3020: FloatBuffer
     private val aFloatArray3024 = FloatArray(16)
     private var aHoverActionEntry_3025: HoverActionEntry? = null
     private val anInt3026: Int
@@ -130,7 +130,7 @@ class ParticleSortRenderer internal constructor() {
                 method1650(var_ha_Sub2, (-5).toByte())
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sn.G(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + (if (class98 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("sn.G(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + (if (class98 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -394,7 +394,7 @@ class ParticleSortRenderer internal constructor() {
     }
 
     init {
-        aClass348_Sub49_Sub1_3020 = Class348_Sub49_Sub1(786336)
+        aClass348_Sub49_Sub1_3020 = FloatBuffer(786336)
         anInt3026 = method2253(1600, 124)
         anIntArray3032 = IntArray(8191)
         aClass318_Sub9_Sub2ArrayArray3031 = Array<Array<PositionedSceneNode?>?>(1600) { arrayOfNulls<PositionedSceneNode>(64) }

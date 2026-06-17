@@ -1,4 +1,4 @@
-import Class348_Sub40_Sub7.Companion.method3064
+import FlipTextureNode.Companion.method3064
 
 /* Class159 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -6,13 +6,13 @@ import Class348_Sub40_Sub7.Companion.method3064
 class ParticleAmountConfig {
     @JvmField
     var anInt2125: Int = 0
-    private fun method1251(class348_sub49: Class348_Sub49, i: Int, i_0_: Int) {
+    private fun method1251(class348_sub49: Buffer, i: Int, i_0_: Int) {
         if (i == 5) this.anInt2125 = class348_sub49.readUnsignedShort(842397944)
         anInt2126++
         val i_1_ = 60 % ((i_0_ - 33) / 57)
     }
 
-    fun method1253(class348_sub49: Class348_Sub49, bool: Boolean) {
+    fun method1253(class348_sub49: Buffer, bool: Boolean) {
         while (true) {
             val i = class348_sub49.readUnsignedByte(255)
             if (i == 0) break
@@ -38,21 +38,21 @@ class ParticleAmountConfig {
                 var i_15_ = 0
                 if (Class59_Sub1.aBoolean5300) {
                     i_11_ = ResourceProvider.anInt3941
-                    i_15_ = Class348_Sub42_Sub16_Sub2.anInt10463
+                    i_15_ = CompletedResourceRequest.anInt10463
                     i_13_ = ResourceProvider.anInt3939
                     i_12_ = GraphicsOptionState.anInt3142
-                    i_14_ = Class348_Sub3.anInt6585
-                    Class348_Sub42_Sub16_Sub2.anInt10463 = 1
+                    i_14_ = ModelVertexColorBuffer.anInt6585
+                    CompletedResourceRequest.anInt10463 = 1
                 }
-                if (Class369_Sub2.aClass46ArrayArray8584!![i_2_] == null) method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_2_]), -1, i_7_)
+                if (Class369_Sub2.aClass46ArrayArray8584!![i_2_] == null) method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (WarpTextureNode.aClass46ArrayArray9427!![i_2_]), -1, i_7_)
                 else method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (Class369_Sub2.aClass46ArrayArray8584!![i_2_]), -1, i_7_)
                 if (i_8_ <= 58) anInt2127 = -84
                 if (Class59_Sub1.aBoolean5300) {
-                    if (i_4_ >= 0 && Class348_Sub42_Sub16_Sub2.anInt10463 == 2) MapTileShape.method2663(-5590, ResourceProvider.anInt3941, ResourceProvider.anInt3939, GraphicsOptionState.anInt3142, Class348_Sub3.anInt6585)
-                    Class348_Sub42_Sub16_Sub2.anInt10463 = i_15_
+                    if (i_4_ >= 0 && CompletedResourceRequest.anInt10463 == 2) MapTileShape.method2663(-5590, ResourceProvider.anInt3941, ResourceProvider.anInt3939, GraphicsOptionState.anInt3142, ModelVertexColorBuffer.anInt6585)
+                    CompletedResourceRequest.anInt10463 = i_15_
                     ResourceProvider.anInt3939 = i_13_
                     GraphicsOptionState.anInt3142 = i_12_
-                    Class348_Sub3.anInt6585 = i_14_
+                    ModelVertexColorBuffer.anInt6585 = i_14_
                     ResourceProvider.anInt3941 = i_11_
                 }
             } else if (i_4_ == -1) {

@@ -111,7 +111,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         var i_0_ = 0
         i = i and 0x7fffffff
         while (!aNodeDeque_9899!!.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_9899!!.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_9899!!.method1997(8) as IntKeyNode?
             LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8063 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
@@ -124,7 +124,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             i_0_ = 0
         }
         while (!aNodeDeque_9901.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_9901.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_9901.method1997(8) as IntKeyNode?
             LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8062 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
@@ -137,7 +137,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             i_0_ = 0
         }
         while (!aNodeDeque_9902!!.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_9902!!.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_9902!!.method1997(8) as IntKeyNode?
             LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.anInt6976
             if (i_0_ == 1000) {
                 glDeleteFramebuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
@@ -149,7 +149,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             i_0_ = 0
         }
         while (!aNodeDeque_9903!!.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_9903!!.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_9903!!.method1997(8) as IntKeyNode?
             LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8079 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
@@ -162,7 +162,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             val bool = false
         }
         while (!aNodeDeque_9869.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_9869.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_9869.method1997(8) as IntKeyNode?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
         while (!aNodeDeque_9904.method2002(18.toByte())) {
@@ -174,7 +174,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             glDeleteObjectARB(class348!!.aLong4291)
         }
         while (!aNodeDeque_9869.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_9869.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_9869.method1997(8) as IntKeyNode?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
         if (this.E() > 100663296 && (Class62.method599(-82) > 60000L + aLong9906)) {
@@ -196,7 +196,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9875++
             return FrameStatsReset(class58s)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (class58s != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (class58s != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -220,7 +220,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 if (!anOpenGL9856!!.setSurface(var_long)) throw RuntimeException()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.UB(" + (if (`object` != null) "{...}" else "null") + ',' + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.UB(" + (if (`object` != null) "{...}" else "null") + ',' + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -238,7 +238,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 else glTexEnvi(8960, i + 34192, if (!bool_3_) 768 else 769)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.DD(" + bool + ',' + bool_2_ + ',' + i + ',' + (if (class70 != null) "{...}" else "null") + ',' + bool_3_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.DD(" + bool + ',' + bool_2_ + ',' + i + ',' + (if (class70 != null) "{...}" else "null") + ',' + bool_3_ + ')'))
         }
     }
 
@@ -248,7 +248,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             val i_4_ = -21 / ((85 - i) / 37)
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.FB(" + (if (class68 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.FB(" + (if (class68 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -270,11 +270,11 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     fun method3966(l: Long, i: Int) {
         try {
             anInt9853++
-            val class348 = Class348()
-            class348.aLong4291 = l
-            if (i == 34192) aNodeDeque_9905!!.method1999(class348, i xor 0xcb43.inv())
+            val linkedListNode = LinkedListNode()
+            linkedListNode.aLong4291 = l
+            if (i == 34192) aNodeDeque_9905!!.method1999(linkedListNode, i xor 0xcb43.inv())
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "bga.N(" + l + ',' + i + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "bga.N(" + l + ',' + i + ')')
         }
     }
 
@@ -285,7 +285,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
 
     override fun method3935(i: Int) {
         anInt9861++
-        glTexEnvi(8960, 34162, Class348_Sub32.method3021(32.toByte(), (this.aRenderConfigFactoryArray8092[(this.anInt8175)])))
+        glTexEnvi(8960, 34162, TerrainShadowBuilderGl2.method3021(32.toByte(), (this.aRenderConfigFactoryArray8092[(this.anInt8175)])))
         if (i >= -99) method3658(-123, -102, -33, -112)
     }
 
@@ -295,14 +295,14 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9832++
             return Gl3dTexture(this, textureFormatInfo, i_6_, i_7_, i, `is`)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.ND(" + i + ',' + i_6_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + bool + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.ND(" + i + ',' + i_6_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + bool + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
     @Synchronized
     fun method3967(i: Int, i_8_: Byte, i_9_: Int) {
         anInt9898++
-        val class348_sub35 = Class348_Sub35(i)
+        val class348_sub35 = IntKeyNode(i)
         if (i_8_.toInt() != 59) method3818(false)
         class348_sub35.aLong4291 = i_9_.toLong()
         aNodeDeque_9901.method1999(class348_sub35, -20180)
@@ -334,7 +334,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             }
             return Gl2dTexture(this, textureFormatInfo, i_12_, i, bool, `is`, i_11_, i_13_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.B(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_14_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.B(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_14_ + ',' + bool + ')'))
         }
     }
 
@@ -361,7 +361,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.CD(" + (if (cameraNodeList != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.CD(" + (if (cameraNodeList != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -375,7 +375,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     override fun method3940(i: Int) {
         glMatrixMode(5890)
         anInt9888++
-        if (Class348_Sub42_Sub18.aConfigFlagUtil_9685 != this.aConfigFlagUtilArray8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
+        if (ParticleEmitterListNode.aConfigFlagUtil_9685 != this.aConfigFlagUtilArray8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
         else glLoadIdentity()
         if (i != 1) method3862(37, null)
         glMatrixMode(5888)
@@ -387,14 +387,14 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             val i_18_ = 86 / ((i - -26) / 39)
             aClass285_Sub1Array9907!![i_17_] = (interface5_impl1 as GlVertexBufferArb?)!!
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.WB(" + i + ',' + (if (interface5_impl1 != null) "{...}" else "null") + ',' + i_17_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.WB(" + i + ',' + (if (interface5_impl1 != null) "{...}" else "null") + ',' + i_17_ + ')'))
         }
     }
 
     override fun method3920(i: Int) {
         anInt9862++
         if (i != 10) method3911(null, 34, null)
-        glTexEnvi(8960, 34161, Class348_Sub32.method3021(32.toByte(), (this.aRenderConfigFactoryArray8086[(this.anInt8175)])))
+        glTexEnvi(8960, 34161, TerrainShadowBuilderGl2.method3021(32.toByte(), (this.aRenderConfigFactoryArray8086[(this.anInt8175)])))
     }
 
     override fun method3665(i: Int, i_19_: Int): Interface3? {
@@ -464,7 +464,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9897++
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (interface13 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (interface13 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -476,7 +476,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             if (l == -1L) throw RuntimeException()
             return l
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.MC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.MC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -495,7 +495,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             if (f < 0.5f) return circleRasterizer
             return circleRasterizer_24_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_24_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_25_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_24_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_25_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -503,7 +503,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     fun method3969(i: Int, i_26_: Int, i_27_: Int) {
         if (i_27_ != 3089) this.anIntArray9927 = null
         anInt9850++
-        val class348_sub35 = Class348_Sub35(i)
+        val class348_sub35 = IntKeyNode(i)
         class348_sub35.aLong4291 = i_26_.toLong()
         aNodeDeque_9899!!.method1999(class348_sub35, i_27_ xor 0x42c2.inv())
     }
@@ -612,11 +612,11 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 aString9916 = glGetString(7937).lowercase(Locale.getDefault())
                 if (aString9917.indexOf("microsoft") != -1 || aString9917.indexOf("brian paul") != -1 || aString9917.indexOf("mesa") != -1) throw RuntimeException("")
                 val string = glGetString(7938)
-                val strings = Class348_Sub40_Sub23.method3113(' ', true, string.replace('.', ' '))
+                val strings = TurbulenceTextureNode.method3113(' ', true, string.replace('.', ' '))
                 if (strings.size < 2) throw RuntimeException("")
                 try {
-                    val i_32_ = Class348_Sub41.method3156(true, strings!![0]!!)
-                    val i_33_ = Class348_Sub41.method3156(true, strings!![1]!!)
+                    val i_32_ = RegionSceneShifter.method3156(true, strings!![0]!!)
+                    val i_33_ = RegionSceneShifter.method3156(true, strings!![1]!!)
                     anInt9924 = i_32_ * 10 - -i_33_
                 } catch (numberformatexception: NumberFormatException) {
                     throw RuntimeException("")
@@ -645,7 +645,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                     var i_34_ = 0
                     var bool = false
                     var bool_35_ = false
-                    val strings_36_ = (Class348_Sub40_Sub23.method3113(' ', true, aString9916!!.replace('/', ' ')))
+                    val strings_36_ = (TurbulenceTextureNode.method3113(' ', true, aString9916!!.replace('/', ' ')))
                     var i_37_ = 0
                     while ((i_37_ < strings_36_.size)) {
                         var string_38_ = strings_36_[i_37_]!!
@@ -662,7 +662,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                                         string_38_ = string_38_.substring(2)
                                     }
                                     if (string_38_.length >= 4 && (Class50_Sub3.method468(string_38_.substring(0, 4), 92))) {
-                                        i_34_ = (Class348_Sub41.method3156(true, string_38_.substring(0, 4)))
+                                        i_34_ = (RegionSceneShifter.method3156(true, string_38_.substring(0, 4)))
                                         break
                                     }
                                 }
@@ -693,7 +693,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -706,13 +706,13 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             if (TileTransform.aCameraRotationStub_3217 == cameraRotationStub) {
                 i_44_ = 1
                 i_45_ = i * 2
-            } else if (cameraRotationStub == Class348_Sub5_Sub1.aCameraRotationStub_8832) {
+            } else if (cameraRotationStub == GlBloomEffect.aCameraRotationStub_8832) {
                 i_45_ = 1 + i
                 i_44_ = 3
             } else if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) {
                 i_44_ = 4
                 i_45_ = i * 3
-            } else if (Class348_Sub42_Sub16.aCameraRotationStub_9661 == cameraRotationStub) {
+            } else if (AsyncResourceRequest.aCameraRotationStub_9661 == cameraRotationStub) {
                 i_44_ = 6
                 i_45_ = 2 + i
             } else if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) {
@@ -727,7 +727,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             class285_sub2.method2125(0)
             glDrawElements(i_44_, i_45_, ModelBatchBase.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.JC(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.JC(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
         }
     }
 
@@ -770,7 +770,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             val var_long = `object` as Long
             anOpenGL9856!!.surfaceResized(var_long)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.FC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.FC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -785,7 +785,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9855++
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.RA(" + bool + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.RA(" + bool + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -798,13 +798,13 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             if (cameraRotationStub == TileTransform.aCameraRotationStub_3217) {
                 i_51_ = 2 * i
                 i_52_ = 1
-            } else if (Class348_Sub5_Sub1.aCameraRotationStub_8832 == cameraRotationStub) {
+            } else if (GlBloomEffect.aCameraRotationStub_8832 == cameraRotationStub) {
                 i_51_ = i - -1
                 i_52_ = 3
             } else if (VideoAdChecker.aCameraRotationStub_3181 == cameraRotationStub) {
                 i_52_ = 4
                 i_51_ = i * 3
-            } else if (cameraRotationStub == Class348_Sub42_Sub16.aCameraRotationStub_9661) {
+            } else if (cameraRotationStub == AsyncResourceRequest.aCameraRotationStub_9661) {
                 i_52_ = 6
                 i_51_ = 2 + i
             } else if (NativeTerrainTile.aCameraRotationStub_8320 == cameraRotationStub) {
@@ -816,7 +816,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             }
             glDrawArrays(i_52_, i_50_, i_51_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.V(" + i + ',' + i_50_ + ',' + (if (cameraRotationStub != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.V(" + i + ',' + i_50_ + ',' + (if (cameraRotationStub != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -826,7 +826,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9883++
             return GlCubeMapTexture(this, i_53_, bool, `is`)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.HB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_53_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.HB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_53_ + ')'))
         }
     }
 
@@ -841,7 +841,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             }
             return Gl2dTexture(this, textureFormatInfo, i, i_57_, bool, fs, i_54_, i_55_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.WC(" + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_54_ + ',' + (if (fs != null) "{...}" else "null") + ',' + bool + ',' + i_55_ + ',' + i_56_ + ',' + i_57_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.WC(" + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_54_ + ',' + (if (fs != null) "{...}" else "null") + ',' + bool + ',' + i_55_ + ',' + i_56_ + ',' + i_57_ + ')'))
         }
     }
 
@@ -881,7 +881,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             }
             return GlRectangleTexture(this, i, i_63_, `is`, i_61_, i_62_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.R(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_60_ + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.R(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_60_ + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ')'))
         }
     }
 
@@ -938,9 +938,9 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     @Synchronized
     fun method3971(i: Int, i_70_: Int) {
         anInt9819++
-        val class348 = Class348()
-        class348.aLong4291 = i_70_.toLong()
-        aNodeDeque_9904.method1999(class348, -20180)
+        val linkedListNode = LinkedListNode()
+        linkedListNode.aLong4291 = i_70_.toLong()
+        aNodeDeque_9904.method1999(linkedListNode, -20180)
         if (i != 16386) method3928(-86)
     }
 
@@ -959,7 +959,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 glTexEnvi(8960, 34200 + i, if (bool) 771 else 770)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.AD(" + (if (class70 != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.AD(" + (if (class70 != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ',' + bool + ')'))
         }
     }
 
@@ -969,7 +969,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9823++
             method3626(i_72_, i_73_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_72_ + ',' + i_73_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_72_ + ',' + i_73_ + ')'))
         }
     }
 
@@ -1050,7 +1050,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 anInt9909 = i_74_
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.KC(" + i + ',' + (if (modelBatchBase != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.KC(" + i + ',' + (if (modelBatchBase != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1093,7 +1093,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             if (i != 1) this.anInt9918 = -120
             anOpenGL9856!!.releaseSurface(canvas, var_long)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.QD(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + (if (`object` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.QD(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + (if (`object` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1141,7 +1141,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             if (!aBoolean9919) return Gl2dTexture(this, textureFormatInfo, class68, CacheArchiveIndexLoader.method340(i_89_, 108.toByte()), CacheArchiveIndexLoader.method340(i, 108.toByte()))
             return GlRectangleTexture(this, textureFormatInfo, class68, i_89_, i)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.NC(" + i + ',' + i_88_ + ',' + i_89_ + ',' + (if (class68 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.NC(" + i + ',' + i_88_ + ',' + i_89_ + ',' + (if (class68 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1161,7 +1161,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
 
     override fun method3950(i: Int) {
         anInt9886++
-        if (Class348_Sub4.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) glBlendFunc(770, 771)
+        if (ClientMachineInfo.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) glBlendFunc(770, 771)
         else if (Class69.aObjectByteSerializerHolder_1201 == this.aObjectByteSerializerHolder_8163) glBlendFunc(1, 1)
         else if (BoundsConstraintEntry.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) glBlendFunc(774, 1)
         if (i != 0) this.anInt9918 = 74
@@ -1189,7 +1189,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             anInt9816++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "bga.IA(" + (if (interface4 != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "bga.IA(" + (if (interface4 != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1374,7 +1374,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 class348_sub42_sub15.method3246(-25490)
                 class348_sub42_sub15.aString9654 = string
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bga.AA(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("bga.AA(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
             }
         }
 

@@ -126,7 +126,7 @@ class Player : ProjectedGroundDecor() {
         return bool
     }
 
-    fun method2452(i: Byte, class348_sub49: Class348_Sub49) {
+    fun method2452(i: Byte, class348_sub49: Buffer) {
         anInt10547++
         class348_sub49.anInt7197 = 0
         val i_11_ = class348_sub49.readUnsignedByte(255)
@@ -213,7 +213,7 @@ class Player : ProjectedGroundDecor() {
             this.x = (this.anIntArray10320!![0] shl 9) - -(method2436(89.toByte()) shl 8)
             this.y = (this.anIntArray10317!![0] shl 9) - -(method2436(98.toByte()) shl 8)
         }
-        if ((Class348_Sub42_Sub11.anInt9591 == this.anInt10290) && is_30_ != null) {
+        if ((CharCodeMap.anInt9591 == this.anInt10290) && is_30_ != null) {
             for (i_31_ in is_20_.indices) {
                 if (is_20_[i_31_] != is_30_[i_31_]) {
                     Exception_Sub1.aModelHeaderCache_112!!.method1936(72)
@@ -247,7 +247,7 @@ class Player : ProjectedGroundDecor() {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_35_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_35_ + ')'))
             }
             break
         } while (false)
@@ -268,7 +268,7 @@ class Player : ProjectedGroundDecor() {
                     var_renderer.C(true)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
             }
             break
         } while (false)
@@ -292,7 +292,7 @@ class Player : ProjectedGroundDecor() {
             anInt10545++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ke.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ke.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'))
         }
     }
 
@@ -304,16 +304,16 @@ class Player : ProjectedGroundDecor() {
             this.anIntArray10236 = null
         }
         if (this.anInt10269 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(59.toByte(), this.anInt10269))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(59.toByte(), this.anInt10269))
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && ParticleEmitterNode.aClass87_191!!.method835((class368.anInt4503), i_50_ xor 0x674d.inv()).anInt245 == 1) this.anInt10269 = -1
         }
         if (this.anInt10291 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(124.toByte(), this.anInt10291))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(124.toByte(), this.anInt10291))
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         this.anInt10524 = -1
-        if (i_52_ >= 0 && Class367_Sub4.anInt7319 > i_52_ && i >= 0 && Class348_Sub40_Sub3.anInt9109 > i) {
-            if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < Class367_Sub4.anInt7319) && this.anIntArray10317!![0] >= 0 && (Class348_Sub40_Sub3.anInt9109 > this.anIntArray10317!![0])) {
+        if (i_52_ >= 0 && Class367_Sub4.anInt7319 > i_52_ && i >= 0 && RangeThresholdTextureNode.anInt9109 > i) {
+            if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < Class367_Sub4.anInt7319) && this.anIntArray10317!![0] >= 0 && (RangeThresholdTextureNode.anInt9109 > this.anIntArray10317!![0])) {
                 if (i_51_.toInt() == 2) MapSceneIconDef.method1592(2.toByte(), i, 4, i_52_, this)
                 method2451(i_51_, i_52_, -29034, i)
             } else method2449(i, i_52_, 111.toByte())
@@ -340,7 +340,7 @@ class Player : ProjectedGroundDecor() {
             if (class225.aBoolean2913 && (this.aCompositeNpcModelBuilder_10536!!.anInt2093 == -1 || MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, i + -2).aBoolean1369)) {
                 val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7)) else null)
                 val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (ParticleEmitterNode.aClass87_191!!.method835(this.anInt10268, 7)))
-                val class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
+                val class64 = (LinkedListNode.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
                 if (class64 != null) {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).size, true, false))
                     this.aBoolean10324 = true
@@ -353,11 +353,11 @@ class Player : ProjectedGroundDecor() {
         }
         if (this == LocalPlayerState.aPlayer_1907) {
             class101.method894(this.x, this.anInt6382, this.y)
-            for (i_56_ in -1 + Class348_Sub27.aMinimapPositionStateArray6897s!!.size downTo 0) {
-                val class302 = Class348_Sub27.aMinimapPositionStateArray6897s!![i_56_]
+            for (i_56_ in -1 + MultiFieldRecord.aMinimapPositionStateArray6897s!!.size downTo 0) {
+                val class302 = MultiFieldRecord.aMinimapPositionStateArray6897s!![i_56_]
                 if (class302 != null && class302.anInt3834 != -1) {
                     if (class302.anInt3840 == 1) {
-                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? Class348_Sub22?)
+                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? NpcReference?)
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)!!
                             val i_57_ = (-(LocalPlayerState.aPlayer_1907!!.x) + npc.x)
@@ -427,7 +427,7 @@ class Player : ProjectedGroundDecor() {
         else `is` = ParticleDetailOptionState.anIntArray6021
         if (i != 255) anInt10567 = 81
         if (`is` != null && `is`[aByte10552.toInt()] != -1) {
-            val class117 = Class348_Sub7.aCacheArchiveIndexLoader_6653!!.method337(true, `is`[aByte10552.toInt()])
+            val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, `is`[aByte10552.toInt()])
             if (class117.aChar1779.code != 115) {
                 LinkedListIterator.method1242("gdn1", Throwable(), 15004)
                 `is`[aByte10552.toInt()] = -1
@@ -478,7 +478,7 @@ class Player : ProjectedGroundDecor() {
         val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =
-            (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, Exception_Sub1.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aBufferedMessageQueue_2529, ParticleEmitterNode.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aNpcDefinitionCache_5558).also { this.aClass64Array10323[0] = it })
+            (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, Exception_Sub1.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, RadialTextureNode.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aBufferedMessageQueue_2529, ParticleEmitterNode.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aNpcDefinitionCache_5558).also { this.aClass64Array10323[0] = it })
         val i_75_ = MapArchiveSource.method2201(2121)
         if (TextureDefinitionCache.anInt2964 < 96 && i_75_ > 50) CubemapTextureImplSource.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)
@@ -509,7 +509,7 @@ class Player : ProjectedGroundDecor() {
         } else this.method2424(i_74_, method2436(124.toByte()) shl 9, 0, method2436(58.toByte()) shl 9, 65.toByte(), 0)
         if (bool) class64.method624(this.aByte10255.toInt(), this.aByte10206.toInt(), this.aByte10270.toInt(), (this.aByte10279.toInt() and 0xff))
         if (!this.aBoolean10521 && this.anInt10269 != -1 && this.anInt10240 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10269))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10269))
             val bool_78_ = (class368.aByte4488.toInt() == 3 && (i_72_ != 0 || i_73_ != 0))
             var i_79_ = i_70_
             if (!bool_78_) {
@@ -556,7 +556,7 @@ class Player : ProjectedGroundDecor() {
         } else this.aClass64Array10323[1] = null
         if (this.aBoolean10521 || this.anInt10291 == -1 || this.anInt10224 == -1) this.aClass64Array10323[2] = null
         else {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10291))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10291))
             val bool_89_ = (class368.aByte4488.toInt() == 3 && (i_72_ != 0 || i_73_ != 0))
             var i_90_ = i_70_
             if (bool_89_) i_90_ = i_90_ or 0x7
@@ -719,7 +719,7 @@ class Player : ProjectedGroundDecor() {
                     if (i_105_.toInt() == 30) break
                     aHashtable10565 = null
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("ke.LB(" + f + ',' + i + ',' + f_100_ + ',' + i_101_ + ',' + i_102_ + ',' + f_103_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + f_107_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_108_ + ',' + f_109_ + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("ke.LB(" + f + ',' + i + ',' + f_100_ + ',' + i_101_ + ',' + i_102_ + ',' + f_103_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + f_107_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_108_ + ',' + f_109_ + ')'))
                 }
                 break
             } while (false)

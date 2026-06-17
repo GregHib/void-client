@@ -213,12 +213,12 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
         fun method2175(i: Int, i_3_: Byte, i_4_: Int): Int {
             anInt6319++
             if (i_3_ >= -14) return 64
-            if (i_4_ == 1 || i_4_ == 3) return Class348_Sub20.anIntArray6830!![i and 0x3]
+            if (i_4_ == 1 || i_4_ == 3) return TextureTileRenderer.anIntArray6830!![i and 0x3]
             return Class84.anIntArray1450!![0x3 and i]
         }
 
         @JvmStatic
-        fun method2177(i: Int, i_22_: Int, class348_sub49_sub2: Class348_Sub49_Sub2) {
+        fun method2177(i: Int, i_22_: Int, class348_sub49_sub2: CipheredPacketBuffer) {
             anInt6311++
             val bool = (class348_sub49_sub2.readBits((-24).toByte(), i) == 1)
             if (bool) GlFramebufferBlitter.anIntArray279!![ProjectionCameraTransform.anInt5768++] = i_22_
@@ -227,8 +227,8 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
             if (i_23_ == 0) {
                 if (bool) player.aBoolean10539 = false
                 else {
-                    if (Class348_Sub42_Sub11.anInt9591 == i_22_) throw RuntimeException("s:lr")
-                    val class359 = (Class359().also { Class348_Sub17.aClass359Array6802!![i_22_] = it })
+                    if (CharCodeMap.anInt9591 == i_22_) throw RuntimeException("s:lr")
+                    val class359 = (Class359().also { SoundBankPatch.aClass359Array6802!![i_22_] = it })
                     class359.anInt4420 = ((Class90.regionTileY - -(player.anIntArray10317!![0]) shr 6) + ((player.anIntArray10320!![0] + ArbVertexProgram.regionTileX) shr 6 shl 14) + ((player.plane).toInt() shl 28))
                     if (player.anInt10524 != -1) class359.anInt4423 = player.anInt10524
                     else class359.anInt4423 = player.aCompassSmoother_10217.method2019((-91).toByte())
@@ -338,8 +338,8 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     player.aByte6376 = (0x3 and (player.plane) + i_32_).toByte()
                     player.plane = player.aByte6376
                     if (Class79.method802(i_36_, i_35_, true)) player.aByte6376++
-                    if (Class348_Sub42_Sub11.anInt9591 == i_22_) {
-                        if ((player.plane).toInt() != Class355.anInt4372) Class348_Sub16_Sub2.aBoolean8870 = true
+                    if (CharCodeMap.anInt9591 == i_22_) {
+                        if ((player.plane).toInt() != Class355.anInt4372) PcmStreamBuffer.aBoolean8870 = true
                         Class355.anInt4372 = (player.plane).toInt()
                     }
                 } else {
@@ -357,7 +357,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     player.aByte6376 = ((player.plane) + i_38_ and 0x3).toByte()
                     player.plane = player.aByte6376
                     if (Class79.method802(i_42_, i_41_, true)) player.aByte6376++
-                    if (Class348_Sub42_Sub11.anInt9591 == i_22_) Class355.anInt4372 = (player.plane).toInt()
+                    if (CharCodeMap.anInt9591 == i_22_) Class355.anInt4372 = (player.plane).toInt()
                 }
             }
         }

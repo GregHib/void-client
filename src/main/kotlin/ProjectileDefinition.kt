@@ -19,9 +19,9 @@ object ProjectileDefinition {
         if (i > -61) aIntRange_3842 = null
         anInt3843++
         if (bool) {
-            val class348_sub47 = method2148(BufferPositionTracker.aClass351_3150, Class348_Sub23_Sub2.aClass77_9029, -126)
+            val class348_sub47 = method2148(BufferPositionTracker.aClass351_3150, TheoraVideoStream.aClass77_9029, -126)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_0_)
-            Class348_Sub42_Sub14.method3243(42, class348_sub47)
+            InterfaceComponentGroup.method3243(42, class348_sub47)
         } else Class66.method701(TextureDefinitionLoader.aBoundsConstraintEntry_1966!!, i_0_, -1)
     }
 
@@ -31,7 +31,7 @@ object ProjectileDefinition {
         if (i != 114) anInt3844 = 87
     }
 
-    fun method2287(class348_sub49: Class348_Sub49, i: Byte): MinimapSpriteRenderer {
+    fun method2287(class348_sub49: Buffer, i: Byte): MinimapSpriteRenderer {
         anInt3846++
         val i_1_ = class348_sub49.readUnsignedByte(255)
         val class221 = method1248(87)[class348_sub49.readUnsignedByte(255)]

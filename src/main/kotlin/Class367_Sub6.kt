@@ -8,7 +8,7 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
     }
 
     override fun method3521(bool: Boolean, i: Byte) {
-        this.aHa_Sub3_4479.method3874(Class348_Sub23_Sub2.aRenderConfigFactory_9011, 127, MediaStreamClient.aRenderConfigFactory_3196)
+        this.aHa_Sub3_4479.method3874(TheoraVideoStream.aRenderConfigFactory_9011, 127, MediaStreamClient.aRenderConfigFactory_3196)
         if (i.toInt() != -103) method3524(55)
     }
 
@@ -44,7 +44,7 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
             aClass378_7340!!.method3957(null, (-89).toByte())
             this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
             this.aHa_Sub3_4479.method3849(47.toByte(), 1, GlIndexBufferArb.aClass70_8503)
-            this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNode.aClass70_9485)
             this.aHa_Sub3_4479.method3852(9, true)
         }
     }
@@ -104,7 +104,7 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
     override fun method3525(i: Int, bool: Boolean) {
         if (i != 15192) method3531(true)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 1, Class348_Sub40_Sub39.aClass70_9485)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
         this.aHa_Sub3_4479.method3924(false, false, 2, GlIndexBufferArb.aClass70_8503, true)
         this.aHa_Sub3_4479.method3852(9, false)
         aClass378_7340!!.method3957(anIDirect3DVertexShader7341, (-89).toByte())

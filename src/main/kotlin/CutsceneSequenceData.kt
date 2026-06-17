@@ -23,7 +23,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
 
     private fun method2200(i: Byte, `is`: ByteArray?) {
         anInt3731++
-        val class348_sub49 = Class348_Sub49(Class348_Sub41.method3158(`is`, -105))
+        val class348_sub49 = Buffer(RegionSceneShifter.method3158(`is`, -105))
         val i_2_ = class348_sub49.readUnsignedByte(255)
         if (i_2_ < 5 || i_2_ > 6) throw RuntimeException()
         if (i_2_ < 6) this.anInt3732 = 0
@@ -120,14 +120,14 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
             if (i != this.anInt3719) throw RuntimeException()
             if (is_27_ != null) {
                 if (is_27_.size != 64) throw RuntimeException()
-                aByteArray3740 = Class348_Sub1_Sub2.method2730(4567, 0, `is`, `is`.size)
+                aByteArray3740 = HashTileShape.method2730(4567, 0, `is`, `is`.size)
                 for (i_28_ in 0..63) {
                     if (aByteArray3740!![i_28_] != is_27_[i_28_]) throw RuntimeException()
                 }
             }
             method2200((-120).toByte(), `is`)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vw.<init>(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_27_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("vw.<init>(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_27_ != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -185,7 +185,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
             anOutputStream2657 = aSocket2668.getOutputStream()
             anInt2669 = i
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("re.<init>(" + (if (socket != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("re.<init>(" + (if (socket != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

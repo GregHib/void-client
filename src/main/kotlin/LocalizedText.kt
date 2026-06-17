@@ -21,7 +21,7 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
         try {
             aStringArray3481 = arrayOf<String?>(string, string_7_, string_8_, string_9_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("va.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_7_ != null) "{...}" else "null") + ',' + (if (string_8_ != null) "{...}" else "null") + ',' + (if (string_9_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("va.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_7_ != null) "{...}" else "null") + ',' + (if (string_8_ != null) "{...}" else "null") + ',' + (if (string_9_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -191,16 +191,16 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
             if (i > -4) method2059(-6)
             anInt3484++
             Class5_Sub3.anInt8374++
-            val class348_sub47 = method2148(Class348_Sub34.aClass351_6970, Class348_Sub23_Sub2.aClass77_9029, -109)
-            Class348_Sub42_Sub14.method3243(37, class348_sub47)
-            var class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as Class348_Sub41?
+            val class348_sub47 = method2148(IntPair.aClass351_6970, TheoraVideoStream.aClass77_9029, -109)
+            InterfaceComponentGroup.method3243(37, class348_sub47)
+            var class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as RegionSceneShifter?
             while (class348_sub41 != null) {
                 if (!class348_sub41.method2712(4.toByte())) {
-                    class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as Class348_Sub41?
+                    class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as RegionSceneShifter?
                     if (class348_sub41 == null) break
                 }
                 if (class348_sub41.anInt7053 == 0) method1118(true, bool, class348_sub41, 2533)
-                class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as Class348_Sub41?
+                class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as RegionSceneShifter?
             }
             if (Class49.aClass46_4730 != null) {
                 ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
@@ -210,14 +210,14 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
 
         @JvmStatic
         fun method2061(i: Int) {
-            Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = null
-            Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = null
+            TimedTileQueueEntry.aAbstractModelRenderer_9658 = null
+            TimedTileQueueEntry.aAbstractModelRenderer_9659 = null
             SpotAnimVector.aAbstractModelRenderer_2309 = null
             TileRenderState.aAbstractModelRendererArray4234 = null
             MinimapFlagRenderer.aAbstractModelRenderer_1800 = null
             anInt3477++
             val i_2_ = 89 / ((-74 - i) / 42)
-            Class348_Sub5.aAbstractModelRenderer_6627 = null
+            AbstractBloomEffect.aAbstractModelRenderer_6627 = null
             OutputStream_Sub2.aAbstractModelRenderer_106 = null
             ConfigVarProgress.aAbstractModelRenderer_4808 = null
             AbstractMenuEntry.aAbstractModelRenderer_1706 = null
@@ -234,13 +234,13 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
                 MapElementDecor.aMapTileShapeArray10330 = null
             }
             if (LoadingBarRenderer.aMapTileShapeArray5060 != null) {
-                for (i_5_ in 0..<Class348_Sub44.anInt7101) LoadingBarRenderer.aMapTileShapeArray5060!![i_5_] = null
+                for (i_5_ in 0..<PackedFlagsAccessor.anInt7101) LoadingBarRenderer.aMapTileShapeArray5060!![i_5_] = null
                 LoadingBarRenderer.aMapTileShapeArray5060 = null
             }
             Class354.anIntArrayArrayArray4356 = null
             val i_6_ = 36 % ((-81 - i) / 38)
             GlTextureBase.anIntArray5091 = null
-            Class348_Sub42_Sub19.aMapTileShapeArray9700 = null
+            MinimapAreaMarkerNode.aMapTileShapeArray9700 = null
             Class86.anInt1480 = -1
             WorldMapToggle.anInt3872 = Class86.anInt1480
         }

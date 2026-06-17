@@ -10,8 +10,8 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
     private val anInterface1Array5012: Array<Interface1?>
     override fun method57(i: Int) {
         anInt5004++
-        if (aRenderer5010 !== Class348_Sub8.aRenderer6654) {
-            aRenderer5010 = Class348_Sub8.aRenderer6654
+        if (aRenderer5010 !== FacingDirectionNode.aRenderer6654) {
+            aRenderer5010 = FacingDirectionNode.aRenderer6654
             aBoolean5011 = true
         }
         aRenderer5010!!.GA(0)
@@ -57,7 +57,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
             if (i < 30) method1449(-81, 10, -115)
             return l - -aTypedRecordTable_5006!!.anInt3690.toLong() <= method599(-97)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qt.I(" + i + ',' + l + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qt.I(" + i + ',' + l + ')')
         }
     }
 
@@ -85,7 +85,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
                 i++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qt.<init>(" + (if (typedRecordTable != null) "{...}" else "null") + ',' + (if (dualMaterialContainer != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qt.<init>(" + (if (typedRecordTable != null) "{...}" else "null") + ',' + (if (dualMaterialContainer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -118,7 +118,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
 
         fun method1448(i: Int) {
             anInt5003++
-            if (i <= -55) Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144 = Class348_Sub42_Sub12((LocalizedText.aLocalizedText_3487!!.method2063(Class348_Sub33.anInt6967, 544)), "", Class362.anInt4458, 1004, -1, 0L, 0, 0, true, false, 0L, true)
+            if (i <= -55) FlipTextureNode.aClass348_Sub42_Sub12_9144 = ContactEntry((LocalizedText.aLocalizedText_3487!!.method2063(AnimationFrameDefinition.anInt6967, 544)), "", Class362.anInt4458, 1004, -1, 0L, 0, 0, true, false, 0L, true)
         }
 
         @JvmStatic

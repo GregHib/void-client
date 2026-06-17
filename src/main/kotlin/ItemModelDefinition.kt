@@ -53,7 +53,7 @@ class ItemModelDefinition {
         return abstractModelRenderer
     }
 
-    private fun method329(class348_sub49: Class348_Sub49, i: Int, i_1_: Int) {
+    private fun method329(class348_sub49: Buffer, i: Int, i_1_: Int) {
         if (i_1_ != 1) {
             if (i_1_ != 2) {
                 if (i_1_ == 3) anInt421 = class348_sub49.readUnsignedShort(842397944)
@@ -113,7 +113,7 @@ class ItemModelDefinition {
         return abstractModelRenderer
     }
 
-    fun method332(i: Int, class348_sub49: Class348_Sub49) {
+    fun method332(i: Int, class348_sub49: Buffer) {
         if (i > -119) method333(119, -71)
         while (true) {
             val i_3_ = class348_sub49.readUnsignedByte(255)
@@ -175,7 +175,7 @@ class ItemModelDefinition {
             anInt442++
             if (!Class50_Sub1.aBoolean5224) {
                 Class369_Sub3_Sub1.aBoolean10174 = true
-                Class348_Sub27.aFloat6898 += (12.0f - Class348_Sub27.aFloat6898) / 2.0f
+                MultiFieldRecord.aFloat6898 += (12.0f - MultiFieldRecord.aFloat6898) / 2.0f
                 Class50_Sub1.aBoolean5224 = true
                 if (i.toInt() != 68) aCameraNodeList_430 = null
             }

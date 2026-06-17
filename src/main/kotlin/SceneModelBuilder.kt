@@ -20,7 +20,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
         var anInt6399: Int = 0
         var aHintArrowOrMessageArray6400s: Array<HintArrowOrMessage?>? = arrayOfNulls<HintArrowOrMessage>(100)
 
-        fun method2494(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, class348_sub42_sub12: Class348_Sub42_Sub12?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Byte, i_6_: Int, i_7_: Int, i_8_: Int) {
+        fun method2494(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, class348_sub42_sub12: ContactEntry?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Byte, i_6_: Int, i_7_: Int, i_8_: Int) {
             var i_4_ = i_4_
             do {
                 try {
@@ -31,7 +31,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                     if (!method1197(-12081, class348_sub42_sub12!!.anInt9608)) {
                         if ((class348_sub42_sub12.anInt9599) == -1) {
                             if (Class367_Sub8.method3549((class348_sub42_sub12.anInt9608), (-119).toByte())) {
-                                val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480((class348_sub42_sub12.aLong9605).toInt().toLong(), -6008)) as Class348_Sub22?)
+                                val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480((class348_sub42_sub12.aLong9605).toInt().toLong(), -6008)) as NpcReference?)
                                 if (class348_sub22 != null) {
                                     val npc = (class348_sub22.aNpc_6859)!!
                                     var class79 = (npc.aClass79_10505)
@@ -41,8 +41,8 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                             } else if (method1813(8806, (class348_sub42_sub12.anInt9608))) {
                                 val `object`: Any? = null
                                 var class51: Class51?
-                                if (class348_sub42_sub12.anInt9608 != 1001) class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
-                                else class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
+                                if (class348_sub42_sub12.anInt9608 != 1001) class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
+                                else class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
                                 if (class51.anIntArray945 != null) class51 = (class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
                                 if (class51 != null) `is` = class51.anIntArray917
                             }
@@ -54,7 +54,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                     if (!class348_sub42_sub12.aBoolean9597) break
                     SceneryDetailOptionState.aAbstractModelRenderer_6097!!.method974(Class369.aFontDefinition_4962!!.method1183(true, string) + (i_7_ - -5), -12 + i_1_)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
                 }
                 break
             } while (false)
@@ -101,7 +101,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                 }
                 return -i_11_ + i_10_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vo.B(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_10_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vo.B(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_10_ + ')'))
             }
         }
 
@@ -137,7 +137,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                         if (bool) {
                             var f = (TextureDefinitionLoader.anInt1974 - (mapTileShape.anIntArray4187!![0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
-                            if (!(f < SceneRegionState.anInt194.toFloat()) && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) Class348_Sub42_Sub19.aMapTileShapeArray9700!![Class348_Sub42_Sub10.anInt9577++] = mapTileShape
+                            if (!(f < SceneRegionState.anInt194.toFloat()) && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                         }
                     }
                 } else if (mapTileShape.aByte4192.toInt() == 2) {
@@ -159,9 +159,9 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                             }
                         }
                         if (bool) {
-                            var f = (Class348_Sub40_Sub27.anInt9360 - (mapTileShape.anIntArray4184[0])).toFloat()
+                            var f = (BlendTextureNode.anInt9360 - (mapTileShape.anIntArray4184[0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
-                            if (!(f < SceneRegionState.anInt194.toFloat()) && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) Class348_Sub42_Sub19.aMapTileShapeArray9700!![Class348_Sub42_Sub10.anInt9577++] = mapTileShape
+                            if (!(f < SceneRegionState.anInt194.toFloat()) && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                         }
                     }
                 } else if (mapTileShape.aByte4192.toInt() == 16 || mapTileShape.aByte4192.toInt() == 8) {
@@ -171,9 +171,9 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                         if (i_27_ >= 0 && ((NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084) >= i_27_) && Class99.aBooleanArrayArray1572!![i_26_]!![i_27_]) {
                             var f = (TextureDefinitionLoader.anInt1974 - (mapTileShape.anIntArray4187!![0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
-                            var f_28_ = (Class348_Sub40_Sub27.anInt9360 + -(mapTileShape.anIntArray4184[0])).toFloat()
+                            var f_28_ = (BlendTextureNode.anInt9360 + -(mapTileShape.anIntArray4184[0])).toFloat()
                             if (f_28_ < 0.0f) f_28_ *= -1.0f
-                            if ((!(f < SceneRegionState.anInt194.toFloat()) || !(SceneRegionState.anInt194.toFloat() > f_28_)) && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) Class348_Sub42_Sub19.aMapTileShapeArray9700!![Class348_Sub42_Sub10.anInt9577++] = mapTileShape
+                            if ((!(f < SceneRegionState.anInt194.toFloat()) || !(SceneRegionState.anInt194.toFloat() > f_28_)) && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                         }
                     }
                 } else if (mapTileShape.aByte4192.toInt() == 4) {
@@ -204,24 +204,24 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                                 i_34_++
                             }
                         }
-                        if (bool && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) Class348_Sub42_Sub19.aMapTileShapeArray9700!![Class348_Sub42_Sub10.anInt9577++] = mapTileShape
+                        if (bool && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vo.A(" + (if (mapTileShape != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_18_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vo.A(" + (if (mapTileShape != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_18_ + ')'))
             }
         }
 
         fun method2499(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Byte, i_40_: Int): Boolean {
             anInt6398++
-            if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
+            if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             if (i_38_ == i_40_ && i_36_ == i_35_) {
                 if (!IndexedSprite.method164(i, i_38_, (-97).toByte(), i_36_)) return false
                 val i_41_ = i_38_ shl Class362.anInt4459
                 val i_42_ = i_36_ shl Class362.anInt4459
                 if (method1084(i_37_, ArchiveFileConditionWrapper.anInt3465, i_42_, i_41_, NativeSprite.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), ArchiveFileConditionWrapper.anInt3465, 18507)) {
-                    Class348_Sub40_Sub4.anInt9112++
+                    SourceRowTextureNode.anInt9112++
                     return true
                 }
                 return false
@@ -235,7 +235,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
             val i_45_ = (i_38_ shl Class362.anInt4459) + 1
             val i_46_ = (i_36_ shl Class362.anInt4459) + 2
             if (!method1084(i_37_, (1 + -i_38_ + i_40_) * ArchiveFileConditionWrapper.anInt3465, i_46_, i_45_, NativeSprite.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), ArchiveFileConditionWrapper.anInt3465 * (i_35_ + -i_36_ + 1), 18507)) return false
-            Class348_Sub40_Sub4.anInt9112++
+            SourceRowTextureNode.anInt9112++
             return true
         }
     }

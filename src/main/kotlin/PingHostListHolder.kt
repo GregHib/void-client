@@ -4,11 +4,11 @@
 object PingHostListHolder {
     var aIntRange_2331: IntRange? = IntRange(120, -2)
     @JvmField
-    var aClass348_Sub26_2332: Class348_Sub26?
+    var aClass348_Sub26_2332: NamedIdEntry?
     @JvmField
     var aSystemFontGlyphs_2333: SystemFontGlyphs? = null
     @JvmField
-    var aClass348_Sub47Array2334: Array<Class348_Sub47?>? = arrayOfNulls<Class348_Sub47>(300)
+    var aClass348_Sub47Array2334: Array<OutgoingPacketNode?>? = arrayOfNulls<OutgoingPacketNode>(300)
     var aIntRange_2335: IntRange?
 
     @JvmStatic

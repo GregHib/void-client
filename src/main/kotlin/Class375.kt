@@ -17,7 +17,7 @@ internal object Class375 {
     var anInt4545: Int = -1
 
     @JvmStatic
-    fun method3612(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2?) {
+    fun method3612(i: Int, class348_sub49_sub2: CipheredPacketBuffer?) {
         if (i < 59) Class375.method3614(-51, 64, -115, null, -96)
         for (i_0_ in 0..<ProjectionCameraTransform.anInt5768) {
             val i_1_ = GlFramebufferBlitter.anIntArray279!![i_0_]
@@ -37,7 +37,7 @@ internal object Class375 {
     }
 
     @JvmStatic
-    fun method3614(i: Int, i_3_: Int, i_4_: Int, class348_sub47: Class348_Sub47?, i_5_: Int) {
+    fun method3614(i: Int, i_3_: Int, i_4_: Int, class348_sub47: OutgoingPacketNode?, i_5_: Int) {
         anInt4539++
         if (i_5_ != -19692) method3613(10)
         class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeInt(124.toByte(), i)

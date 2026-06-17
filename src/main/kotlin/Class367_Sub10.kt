@@ -26,7 +26,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
             this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
             val class101_sub2 = this.aHa_Sub3_4479.method3820(false)
             class101_sub2.method926(i + -30891, this.aHa_Sub3_4479.method3854((-44).toByte()))
-            this.aHa_Sub3_4479.method3853(i xor 0x3b47.inv(), Class348_Sub40_Sub38.aConfigFlagUtil_9477)
+            this.aHa_Sub3_4479.method3853(i xor 0x3b47.inv(), ClampTextureNode.aConfigFlagUtil_9477)
             this.aHa_Sub3_4479.method3897(0, -4382)
             aBoolean7385 = true
         } else this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
@@ -39,7 +39,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
             this.aHa_Sub3_4479.method3897(1, -4382)
             this.aHa_Sub3_4479.method3871(ModelDefinitionLoader.aCameraNodeList_2047, i.toInt() xor 0x57)
             this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 103, (ParticleSystemState.aRenderConfigFactory_2207))
-            this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNode.aClass70_9485)
             this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
             this.aHa_Sub3_4479.method3879(-8629)
             this.aHa_Sub3_4479.method3850((-111).toByte(), null)
@@ -88,7 +88,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
         @JvmStatic
         fun method3553(bool: Boolean, i: Byte, i_1_: Int) {
             if (i <= 98) method3553(true, 34.toByte(), 120)
-            method1971(-2, LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544), bool, i_1_)
+            method1971(-2, LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544), bool, i_1_)
             anInt7388++
         }
 

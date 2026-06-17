@@ -90,7 +90,7 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
         class79 = Class79()
         class79.anInt1344 = i
         class79.aBufferedMessageQueue_1348 = this
-        if (`is` != null) class79.method798(111, Class348_Sub49(`is`))
+        if (`is` != null) class79.method798(111, Buffer(`is`))
         class79.method799(-117)
         synchronized(aClass60_3577!!) {
             aClass60_3577!!.method582(class79, i.toLong(), (-102).toByte())
@@ -124,7 +124,7 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
                 val i_8_ = aClass45_3585.method414(-1) + -1
                 aClass45_3585.method407(0, i_8_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

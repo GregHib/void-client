@@ -11,7 +11,7 @@ class HostPingThread : Runnable {
     override fun run() {
         anInt2263++
         while (true) {
-            val class348_sub26: Class348_Sub26 = runClass348() ?: break
+            val class348_sub26: NamedIdEntry = runClass348() ?: break
             var i: Int
             try {
                 val `is` = InetAddress.getByName(class348_sub26!!.aString6888).getAddress()
@@ -23,21 +23,21 @@ class HostPingThread : Runnable {
         }
     }
 
-    fun runClass348(): Class348_Sub26? {
-        val class348_sub26: Class348_Sub26?
+    fun runClass348(): NamedIdEntry? {
+        val class348_sub26: NamedIdEntry?
         synchronized(aNodeDeque_2258!!) {
-            var class348: Class348?
-            class348 = aNodeDeque_2258!!.method1997(8)
-            while (class348 == null) {
+            var linkedListNode: LinkedListNode?
+            linkedListNode = aNodeDeque_2258!!.method1997(8)
+            while (linkedListNode == null) {
                 try {
                     (aNodeDeque_2258 as Object).wait()
                 } catch (interruptedexception: InterruptedException) {
                     /* empty */
                 }
-                class348 = aNodeDeque_2258!!.method1997(8)
+                linkedListNode = aNodeDeque_2258!!.method1997(8)
             }
-            if (class348 !is Class348_Sub26) return null
-            class348_sub26 = class348
+            if (linkedListNode !is NamedIdEntry) return null
+            class348_sub26 = linkedListNode
         }
         return class348_sub26
     }
@@ -47,12 +47,12 @@ class HostPingThread : Runnable {
         aThread2259!!.start()
     }
 
-    fun method1302(i: Int, string: String): Class348_Sub26 {
+    fun method1302(i: Int, string: String): NamedIdEntry {
         anInt2266++
         checkNotNull(aThread2259) { "" }
         requireNotNull(string) { "" }
         if (i != -5255) aNodeDeque_2258 = null
-        val class348_sub26 = Class348_Sub26(string)
+        val class348_sub26 = NamedIdEntry(string)
         method1304(1000, class348_sub26)
         return class348_sub26
     }
@@ -60,7 +60,7 @@ class HostPingThread : Runnable {
     fun method1303(i: Byte) {
         anInt2257++
         if (aThread2259 != null) {
-            method1304(1000, Class348())
+            method1304(1000, LinkedListNode())
             try {
                 aThread2259!!.join()
             } catch (interruptedexception: InterruptedException) {
@@ -71,10 +71,10 @@ class HostPingThread : Runnable {
         }
     }
 
-    private fun method1304(i: Int, class348: Class348) {
+    private fun method1304(i: Int, linkedListNode: LinkedListNode) {
         if (i != 1000) method1303(95.toByte())
         synchronized(aNodeDeque_2258!!) {
-            aNodeDeque_2258!!.method1999(class348, -20180)
+            aNodeDeque_2258!!.method1999(linkedListNode, -20180)
             (aNodeDeque_2258 as Object).notify()
         }
         anInt2262++
@@ -105,10 +105,10 @@ class HostPingThread : Runnable {
         @JvmStatic
         fun method1301(var_renderNode: RenderNode?, i: Int, i_0_: Int, i_1_: Int, bools: BooleanArray?) {
             if (NativeSprite.aTerrainTileArray5191 != SoundCacheState.aTerrainTileArray4142) {
-                val i_2_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3986(i_0_, i_1_, (-93).toByte())
+                val i_2_ = TerrainTileShape.aTerrainTileArray8801!![i]!!.method3986(i_0_, i_1_, (-93).toByte())
                 for (i_3_ in 0..i) {
                     if (bools == null || bools[i_3_]) {
-                        val var_s = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_3_]
+                        val var_s = TerrainTileShape.aTerrainTileArray8801!![i_3_]
                         if (var_s != null) var_s.wa(var_renderNode, i_0_, i_2_ - var_s.method3986(i_0_, i_1_, (-103).toByte()), i_1_, 0, false)
                     }
                 }

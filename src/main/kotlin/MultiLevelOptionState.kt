@@ -8,7 +8,7 @@ class MultiLevelOptionState : GraphicsOptionState {
         return this.anInt3138
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1710(i: Int): Int {
         anInt6153++
@@ -16,7 +16,7 @@ class MultiLevelOptionState : GraphicsOptionState {
         return 0
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1712(i: Int, i_0_: Int) {
         val i_1_ = -10 / ((i - 82) / 35)
@@ -93,9 +93,9 @@ class MultiLevelOptionState : GraphicsOptionState {
             anInt6152++
             for (i_11_ in 0..4) SpotAnimDefinition.aBooleanArray2374!![i_11_] = false
             Class359.anInt4424 = Class59_Sub2_Sub2.anInt8685
-            DataHolder.anInt3662 = Class348_Sub42_Sub19.anInt9701
+            DataHolder.anInt3662 = MinimapAreaMarkerNode.anInt9701
             Class5_Sub3.anInt8368 = ParticleSystemRenderer.anInt3855
-            Class348_Sub49_Sub1.anInt9751 = Class367_Sub11.anInt7396
+            FloatBuffer.anInt9751 = Class367_Sub11.anInt7396
             SequencedWallEntity.anInt10163 = -1
             Class9.anInt167 = SequencedWallEntity.anInt10163
             SequencedGroundDecor.anInt10047 = GlslMaterialPass.anInt6246
@@ -103,7 +103,7 @@ class MultiLevelOptionState : GraphicsOptionState {
             BloomGraphicsOptionState.anInt5973 = 0
             CameraConfigDefinition.anInt3253 = Class5.anInt4638
             Class367_Sub11.anInt7403 = 0
-            Class348_Sub40_Sub21.anInt9282 = 5
+            WeaveTextureNode.anInt9282 = 5
             NativeShaderProgram.anInt9775 = -1
             MapArchiveSource.anInt4803 = -1
         }

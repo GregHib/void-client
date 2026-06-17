@@ -11,7 +11,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     private var aClass356_7467: Class356?
     private var aCanvas7468: Canvas? = null
     @JvmField
-    var aClass348_Sub31_7469: Class348_Sub31? = null
+    var aClass348_Sub31_7469: AbstractFrameBufferSurface? = null
     private var aBoolean7470 = false
     private var aBoolean7471 = false
     private var anInt7472 = 0
@@ -297,7 +297,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
     }
 
-    override fun method3642(i: Int, class348_sub1s: Array<Class348_Sub1?>?) {
+    override fun method3642(i: Int, class348_sub1s: Array<AbstractTileShape?>?) {
         /* empty */
     }
 
@@ -808,7 +808,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     override fun method3701(canvas: Canvas?) {
         if (aCanvas7468 === canvas) method3677(null)
-        val class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
+        val class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
         if (class348_sub31 != null) class348_sub31.method2715(100.toByte())
     }
 
@@ -832,7 +832,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3643(canvas: Canvas?, i: Int, i_232_: Int) {
-        var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
+        var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
         if (class348_sub31 == null) {
             class348_sub31 = AbstractMenuEntry.method1035(9029, i_232_, canvas, i)
             aClass356_7467!!.method3483(21.toByte(), canvas.hashCode().toLong(), class348_sub31)
@@ -1277,14 +1277,14 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     fun method3718(i: Int): IntArray? {
-        var class348_sub25: Class348_Sub25?
+        var class348_sub25: ImageBoxBlurScroller?
         synchronized(aClass60_7498) {
-            class348_sub25 = aClass60_7498.method583(i.toLong(), 77) as Class348_Sub25?
+            class348_sub25 = aClass60_7498.method583(i.toLong(), 77) as ImageBoxBlurScroller?
             if (class348_sub25 == null) {
                 if (!this.aRenderConfig4579!!.method4(-7953, i)) return null
                 val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                 val i_354_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
-                class348_sub25 = Class348_Sub25(i, i_354_, this.aRenderConfig4579!!.method5(true, i, 0.7f, i_354_, i_354_, 71), class12.anInt200 != 1)
+                class348_sub25 = ImageBoxBlurScroller(i, i_354_, this.aRenderConfig4579!!.method5(true, i, 0.7f, i_354_, i_354_, 71), class12.anInt200 != 1)
                 aClass60_7498.method582(class348_sub25, i.toLong(), (-122).toByte())
             }
         }
@@ -1321,14 +1321,14 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     fun method3719(i: Int): IntArray? {
-        var class348_sub25: Class348_Sub25?
+        var class348_sub25: ImageBoxBlurScroller?
         synchronized(aClass60_7498) {
-            class348_sub25 = (aClass60_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as Class348_Sub25?)
+            class348_sub25 = (aClass60_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as ImageBoxBlurScroller?)
             if (class348_sub25 == null) {
                 if (!this.aRenderConfig4579!!.method4(-7953, i)) return null
                 val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                 val i_356_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
-                class348_sub25 = Class348_Sub25(i, i_356_, this.aRenderConfig4579!!.method6(-21540, i_356_, 0.7f, i, true, i_356_), class12.anInt200 != 1)
+                class348_sub25 = ImageBoxBlurScroller(i, i_356_, this.aRenderConfig4579!!.method6(-21540, i_356_, 0.7f, i, true, i_356_), class12.anInt200 != 1)
                 aClass60_7498.method582(class348_sub25, i.toLong() or 0x7fffffffffffffffL.inv(), (-126).toByte())
             }
         }
@@ -1505,7 +1505,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
                 method3717()
             }
         } else {
-            val class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
+            val class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
             if (class348_sub31 != null) {
                 aCanvas7468 = canvas
                 val dimension = canvas.getSize()
@@ -1870,7 +1870,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         method3659(0)
     }
 
-    override fun method3690(i: Int, i_520_: Int, i_521_: Int, i_522_: Int, i_523_: Int, f: Float): Class348_Sub1? {
+    override fun method3690(i: Int, i_520_: Int, i_521_: Int, i_522_: Int, i_523_: Int, f: Float): AbstractTileShape? {
         return null
     }
 
@@ -2069,7 +2069,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3669(canvas: Canvas?, i: Int, i_578_: Int) {
-        var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
+        var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
         if (class348_sub31 != null) {
             class348_sub31.method2715(95.toByte())
             class348_sub31 = AbstractMenuEntry.method1035(9029, i_578_, canvas, i)!!
@@ -2376,7 +2376,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         val i_634_ = i - anInt7466
         var `object` = aClass60_7498.method588(-5052)
         while (`object` != null) {
-            val class348_sub25 = `object` as Class348_Sub25
+            val class348_sub25 = `object` as ImageBoxBlurScroller
             if (class348_sub25.aBoolean6882) {
                 class348_sub25.anInt6879 += i_634_
                 val i_635_ = class348_sub25.anInt6879 / 20

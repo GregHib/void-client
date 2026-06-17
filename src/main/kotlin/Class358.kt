@@ -1,4 +1,4 @@
-import Class348_Sub17.Companion.method2929
+import SoundBankPatch.Companion.method2929
 
 /* Class358 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -39,7 +39,7 @@ class Class358 internal constructor(`is`: IntArray?, is_1_: IntArray?, is_2_: In
             Class60.aRenderer1098!!.ZA(LocDefinitionCache.anInt3439, 0.69921875f, 1.2f, -200.0f, -240.0f, -200.0f)
             Class60.aRenderer1098!!.L(LocDefinitionCache.anInt3444, -1, 0)
             val i_0_ = -35 / ((45 - i) / 44)
-            Class60.aRenderer1098!!.method3653(Class348_Sub42_Sub10.aCircleRasterizer_9571)
+            Class60.aRenderer1098!!.method3653(ParameterizedText.aCircleRasterizer_9571)
         }
     }
 }

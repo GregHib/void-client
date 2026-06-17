@@ -20,13 +20,13 @@ object GameDisplayManager {
 
     fun method1580(i: Byte, bool: Boolean, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         if (SkeletalAnimFrameLoader.aFrame476 != null && (i_2_ != 3 || i_0_ != KeyboardInputSource.anInt4276 || i_3_ != FlickeringEffectsOptionState.anInt5911)) {
-            method527(SkeletalAnimFrameLoader.aFrame476, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, false)
+            method527(SkeletalAnimFrameLoader.aFrame476, VorbisOggDecoder.aPrivilegedOperationWorker_8992, false)
             SkeletalAnimFrameLoader.aFrame476 = null
         }
         anInt2839++
         val i_4_ = -33 / ((-74 - i) / 51)
         if (i_2_ == 3 && SkeletalAnimFrameLoader.aFrame476 == null) {
-            SkeletalAnimFrameLoader.aFrame476 = MapElementDecor.method2463(i_3_, i_0_, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!), 0, 14199, 0)
+            SkeletalAnimFrameLoader.aFrame476 = MapElementDecor.method2463(i_3_, i_0_, (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!), 0, 14199, 0)
             if (SkeletalAnimFrameLoader.aFrame476 != null) {
                 KeyboardInputSource.anInt4276 = i_0_
                 FlickeringEffectsOptionState.anInt5911 = i_3_
@@ -37,44 +37,44 @@ object GameDisplayManager {
         else {
             val container: Container?
             if (SkeletalAnimFrameLoader.aFrame476 != null) {
-                Class348_Sub22.anInt6857 = i_3_
+                NpcReference.anInt6857 = i_3_
                 SocketFactory.anInt3473 = i_0_
                 container = SkeletalAnimFrameLoader.aFrame476
             } else if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169
+                if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                 else container = Class93.anApplet1530 as? Container
                 SocketFactory.anInt3473 = container!!.getSize().width
-                Class348_Sub22.anInt6857 = container.getSize().height
+                NpcReference.anInt6857 = container.getSize().height
             } else {
                 val insets = Class52.aFrame4904!!.getInsets()
                 SocketFactory.anInt3473 = Class52.aFrame4904!!.getSize().width + (-insets.left + -insets.right)
-                Class348_Sub22.anInt6857 = Class52.aFrame4904!!.getSize().height - (insets.top - -insets.bottom)
+                NpcReference.anInt6857 = Class52.aFrame4904!!.getSize().height - (insets.top - -insets.bottom)
                 container = Class52.aFrame4904
             }
             if (i_2_ == 1) {
                 LocTypeDefinition.anInt4017 = Class92.anInt1524
-                Class348_Sub42_Sub8_Sub2.anInt10432 = OpenGlRenderer.anInt7666
-                Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 + -Class92.anInt1524) / 2
+                HardCacheEntryReference.anInt10432 = OpenGlRenderer.anInt7666
+                ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -Class92.anInt1524) / 2
                 TimingCounters.anInt4167 = 0
             } else method2158(56.toByte())
             if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-                if (LocTypeDefinition.anInt4017 < 1024 && (Class348_Sub42_Sub8_Sub2.anInt10432 < 768)) {
+                if (LocTypeDefinition.anInt4017 < 1024 && (HardCacheEntryReference.anInt10432 < 768)) {
                     /* empty */
                 }
             }
-            if (bool) Class348_Sub47.method3327(1406)
+            if (bool) OutgoingPacketNode.method3327(1406)
             else {
-                ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432))
-                if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432))
+                ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
+                if (!Class59_Sub1.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
                 else method3980(86, ParticleSystemRenderer.aCanvas3869!!)
                 if (Class52.aFrame4904 === container) {
                     val insets = Class52.aFrame4904!!.getInsets()
-                    ParticleSystemRenderer.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129 + insets.left), (insets.top - -TimingCounters.anInt4167))
-                } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, TimingCounters.anInt4167)
+                    ParticleSystemRenderer.aCanvas3869!!.setLocation((ModelResourceBundle.anInt7129 + insets.left), (insets.top - -TimingCounters.anInt4167))
+                } else ParticleSystemRenderer.aCanvas3869!!.setLocation(ModelResourceBundle.anInt7129, TimingCounters.anInt4167)
             }
             Class50_Sub1.aBoolean5219 = i_2_ >= 2
             if (RenderNode.anInt9721 != -1) method1713(true, 520)
-            if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null && CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) method2145(-24498)
+            if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) method2145(-24498)
             for (i_5_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_5_] = true
             Class49.aBoolean4726 = true
         }
@@ -92,7 +92,7 @@ object GameDisplayManager {
         if (i == 7851) {
             do {
                 try {
-                    if (Class348_Sub43.anInt7068 == 1) {
+                    if (SpriteDefinition.anInt7068 == 1) {
                         var i_6_ = Class98.aClass348_Sub16_Sub3_1564!!.method2844(123.toByte())
                         if (i_6_ > 0 && Class98.aClass348_Sub16_Sub3_1564!!.method2860(124)) {
                             i_6_ -= WaterDetailOptionState.anInt5994
@@ -103,19 +103,19 @@ object GameDisplayManager {
                         Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                         Class98.aClass348_Sub16_Sub3_1564!!.method2867(i xor 0x1eaf)
                         TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
-                        if (ModelDefinition.aClass45_1848 != null) Class348_Sub43.anInt7068 = 2
-                        else Class348_Sub43.anInt7068 = 0
+                        if (ModelDefinition.aClass45_1848 != null) SpriteDefinition.anInt7068 = 2
+                        else SpriteDefinition.anInt7068 = 0
                         MaterialPass.aClass348_Sub2_3683 = null
                     }
-                    if (Class348_Sub43.anInt7068 != 3) break
+                    if (SpriteDefinition.anInt7068 != 3) break
                     var i_7_ = Class98.aClass348_Sub16_Sub3_1564!!.method2844((-87).toByte())
                     if (i_7_ < Class58.anInt1059 && Class98.aClass348_Sub16_Sub3_1564!!.method2860(95)) {
-                        i_7_ += Class348_Sub40_Sub35.anInt9444
+                        i_7_ += DirectionalLightTextureNode.anInt9444
                         if (Class58.anInt1059 < i_7_) i_7_ = Class58.anInt1059
                         Class98.aClass348_Sub16_Sub3_1564!!.method2861(i xor 0x1eab, i_7_)
                     } else {
-                        Class348_Sub40_Sub35.anInt9444 = 0
-                        Class348_Sub43.anInt7068 = 0
+                        DirectionalLightTextureNode.anInt9444 = 0
+                        SpriteDefinition.anInt7068 = 0
                     }
                 } catch (exception: Exception) {
                     exception.printStackTrace()
@@ -124,7 +124,7 @@ object GameDisplayManager {
                     MaterialPass.aClass348_Sub2_3683 = null
                     GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                     TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
-                    Class348_Sub43.anInt7068 = 0
+                    SpriteDefinition.anInt7068 = 0
                     break
                 }
                 break

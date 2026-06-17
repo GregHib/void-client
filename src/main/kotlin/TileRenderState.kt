@@ -22,7 +22,7 @@ class TileRenderState {
     fun method2679(i: Int, i_7_: Int, i_8_: Int): Int {
         anInt4232++
         if (i_8_ != 1595) return 38
-        val i_9_ = (max(Class348_Sub42_Sub8_Sub2.anInt10432, i))
+        val i_9_ = (max(HardCacheEntryReference.anInt10432, i))
         if (PerlinTextureProvider.aTileRenderState_5808 == this) return 0
         if (this == WorldMapSceneSoftware.aTileRenderState_5821) return i_9_ - i_7_
         if (ProjectileConfigUtil.aTileRenderState_399 == this) return (i_9_ - i_7_) / 2
@@ -30,7 +30,7 @@ class TileRenderState {
     }
 
     companion object {
-        var aClass348_Sub24_4226: Class348_Sub24? = Class348_Sub24(0, 0)
+        var aClass348_Sub24_4226: ClientGameLoopNode? = ClientGameLoopNode(0, 0)
         var anInt4227: Int = 0
         @JvmField
         var anInt4228: Int = 0
@@ -59,10 +59,10 @@ class TileRenderState {
             i_3_ -= (i_0_ + -i_5_) / 2
             Class48.anInt859 = -1
             DebugOverlayRenderer.anInt3170 = -(Class75.anInt1267 * i_3_ / i_5_) + Class75.anInt1267
-            Class348_Sub36.anInt6992 = Class75.anInt1259 * i_1_ / i_4_
+            WidgetActionEntry.anInt6992 = Class75.anInt1259 * i_1_ / i_4_
             TextureMetadataProvider.anInt4609 = -1
             val i_6_ = 50 / ((-12 - i_2_) / 40)
-            Class348_Sub15.method2811(false)
+            MenuActionNode.method2811(false)
         }
 
         @JvmStatic
@@ -80,9 +80,9 @@ class TileRenderState {
             if (i != -2049) anIntArrayArray4233 = null
             anInt4229++
             if (RenderNode.aBoolean9722) {
-                val class46 = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
+                val class46 = NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                 if (class46 != null && class46.anObjectArray680 != null) {
-                    val class348_sub36 = Class348_Sub36()
+                    val class348_sub36 = WidgetActionEntry()
                     class348_sub36.aClass46_6989 = class46
                     class348_sub36.anObjectArray6987 = class46.anObjectArray680
                     method705(class348_sub36)
@@ -109,7 +109,7 @@ class TileRenderState {
         fun method2681(i: Int) {
             if (i == 9864) {
                 anInt4230++
-                if (Class348_Sub8.aRenderer6654 != null) {
+                if (FacingDirectionNode.aRenderer6654 != null) {
                     if (Class59_Sub1.aBoolean5300) method1406(true)
                     Class71.aClass76_1208!!.method775(69.toByte())
                     method2433()
@@ -119,10 +119,10 @@ class TileRenderState {
                     method1779(124.toByte())
                     if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2295(96.toByte())
                     method2269(true)
-                    Class348_Sub18.method2938(127.toByte())
+                    InterfaceBounds.method2938(127.toByte())
                     method369(-29776)
                     method3616(12639)
-                    Class348_Sub42_Sub3.method3177(-78, false)
+                    LoadingScreenImageNode.method3177(-78, false)
                     for (i_12_ in 0..2047) {
                         val player = (LoadingBarRenderer.aPlayerArray5058!![i_12_])
                         if (player != null) {
@@ -133,16 +133,16 @@ class TileRenderState {
                             }
                         }
                     }
-                    for (i_14_ in 0..<Class348_Sub32.anInt6930) {
-                        val npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_14_]!!.aNpc_6859)
+                    for (i_14_ in 0..<TerrainShadowBuilderGl2.anInt6930) {
+                        val npc = (TurbulenceTextureNode.aClass348_Sub22Array9319!![i_14_]!!.aNpc_6859)
                         if (npc != null) {
                             for (i_15_ in (npc.aClass64Array10323).indices) npc.aClass64Array10323[i_15_] = null
                         }
                     }
                     Class50_Sub1.aAbstractCameraTransform_5209 = null
                     SettingsCrcWriter.aAbstractCameraTransform_2123 = null
-                    Class348_Sub8.aRenderer6654!!.method3635(64.toByte())
-                    Class348_Sub8.aRenderer6654 = null
+                    FacingDirectionNode.aRenderer6654!!.method3635(64.toByte())
+                    FacingDirectionNode.aRenderer6654 = null
                 }
             }
         }

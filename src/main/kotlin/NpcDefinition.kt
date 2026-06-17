@@ -102,7 +102,7 @@ class NpcDefinition {
         return aAbstractCameraTransformArray2925
     }
 
-    fun method1620(class348_sub49: Class348_Sub49, i: Int) {
+    fun method1620(class348_sub49: Buffer, i: Int) {
         while (true) {
             val i_8_ = class348_sub49.readUnsignedByte(255)
             if (i_8_ == 0) break
@@ -129,7 +129,7 @@ class NpcDefinition {
         return -1
     }
 
-    private fun method1622(class348_sub49: Class348_Sub49, i: Int, i_12_: Int) {
+    private fun method1622(class348_sub49: Buffer, i: Int, i_12_: Int) {
         anInt2903++
         if (i_12_ == 1) {
             this.anInt2918 = class348_sub49.readUnsignedShort(i xor 0x3235f8c8)

@@ -12,7 +12,7 @@ object MinimapStateReset {
         anInt1870++
         SequencedWallEntity.anInt10163 = -1
         Class9.anInt167 = SequencedWallEntity.anInt10163
-        Class348_Sub40_Sub21.anInt9282 = 1
+        WeaveTextureNode.anInt9282 = 1
         NativeShaderProgram.anInt9775 = -1
         BloomGraphicsOptionState.anInt5973 = 0
         MapArchiveSource.anInt4803 = -1

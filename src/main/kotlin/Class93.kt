@@ -1,4 +1,4 @@
-import Class348_Sub40_Sub19.Companion.method3098
+import BlankTextureNode.Companion.method3098
 import Class9.method215
 import jaggl.OpenGL
 import java.awt.Canvas
@@ -36,7 +36,7 @@ object Class93 {
             class377.method3930(26.toByte())
             return class377
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lt.D(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lt.D(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
         }
     }
 

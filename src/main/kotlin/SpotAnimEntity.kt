@@ -69,7 +69,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1878(126.toByte()) as ProjectileNode?
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + l + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 
@@ -78,8 +78,8 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         do {
             try {
                 if (!this.aBoolean6446) {
-                    if (Class348_Sub6.anInt6637 < (this.aSpotAnimDefinition_6441!!.anInt2379)) bool = false
-                    else if (MapArchiveSource.anInt4797 <= (CollisionMapAccessor.anIntArray3551!![Class348_Sub6.anInt6637])) {
+                    if (HslColorTableNode.anInt6637 < (this.aSpotAnimDefinition_6441!!.anInt2379)) bool = false
+                    else if (MapArchiveSource.anInt4797 <= (CollisionMapAccessor.anIntArray3551!![HslColorTableNode.anInt6637])) {
                         if (!aBoolean6453) {
                             if (this.aSpotAnimDefinition_6441!!.anInt2425 != -1) {
                                 var i_10_ = (-aLong6435 + l).toInt()
@@ -186,11 +186,11 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                                 (((((this.aSpotAnimDefinition_6441!!.anInt2410).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2413).toDouble()).toInt() shl 24) or ((((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2433).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2403).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2390).toDouble()).toInt() shl 8) or (((this.aSpotAnimDefinition_6441!!.anInt2408).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2399).toDouble()).toInt()))
                             var i_53_ = (this.aSpotAnimDefinition_6441!!.anInt2414)
                             if (!var_renderer!!.method3644() && !(this.aSpotAnimDefinition_6441!!.aBoolean2382)) i_53_ = -1
-                            if (Client.anInt5171 == Class348_Sub1_Sub1.anInt8808) {
+                            if (Client.anInt5171 == TerrainTileShape.anInt8808) {
                                 val class318_sub9_sub2_sub1 = (ProjectileNode(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430)))
                             } else {
-                                val class318_sub9_sub2_sub1 = (DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103!![Class348_Sub1_Sub1.anInt8808])
-                                Class348_Sub1_Sub1.anInt8808 = 0x3ff and 1 + Class348_Sub1_Sub1.anInt8808
+                                val class318_sub9_sub2_sub1 = (DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103!![TerrainTileShape.anInt8808])
+                                TerrainTileShape.anInt8808 = 0x3ff and 1 + TerrainTileShape.anInt8808
                                 class318_sub9_sub2_sub1!!.method2523(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430))
                             }
                         }
@@ -224,7 +224,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 if (i_9_ == 3) break
                 method2508(124)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rba.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("rba.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'))
             }
             break
         } while (false)
@@ -253,7 +253,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
             aViewportTransform_6449.anInt3672 = this.aViewportTransform_6444.anInt3672
             aViewportTransform_6449.anInt3679 = this.aViewportTransform_6444.anInt3679
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (modelFacePriorityNode != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (modelFacePriorityNode != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 
@@ -284,7 +284,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         }
 
         @JvmStatic
-        fun method2510(class45: Class45?, class348_sub16_sub3: Class348_Sub16_Sub3?, class45_5_: Class45?, bool: Boolean, soundChannelMixer: SoundChannelMixer?, class45_6_: Class45?): Boolean {
+        fun method2510(class45: Class45?, class348_sub16_sub3: MidiSequencePlayer?, class45_5_: Class45?, bool: Boolean, soundChannelMixer: SoundChannelMixer?, class45_6_: Class45?): Boolean {
             try {
                 ActorEntity.aSoundChannelMixer_8764 = soundChannelMixer
                 Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
@@ -297,7 +297,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 for (i in 0..15) Class367_Sub3.anIntArray7299!![i] = 255
                 return true
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rba.G(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (class45_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (soundChannelMixer != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("rba.G(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (class45_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (soundChannelMixer != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -305,15 +305,15 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
             try {
                 anInt6440++
                 if (Class75.aClass348_Sub42_Sub14_1243 != null) {
-                    if (Class348.anInt4290 < 10) {
+                    if (LinkedListNode.anInt4290 < 10) {
                         if (!Class75.aClass45_1237!!.method413(100, Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!)) {
-                            Class348.anInt4290 = (Class348_Sub32.aClass45_6950!!.method397((Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
+                            LinkedListNode.anInt4290 = (TerrainShadowBuilderGl2.aClass45_6950!!.method397((Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
                             return
                         }
                         method126(-16203)
-                        Class348.anInt4290 = 10
+                        LinkedListNode.anInt4290 = 10
                     }
-                    if (Class348.anInt4290 == 10) {
+                    if (LinkedListNode.anInt4290 == 10) {
                         Class75.anInt1266 = (Class75.aClass348_Sub42_Sub14_1243!!.anInt9644 shr 6 shl 6)
                         Class75.anInt1263 = (Class75.aClass348_Sub42_Sub14_1243!!.anInt9643 shr 6 shl 6)
                         Class75.anInt1259 = 64 + ((Class75.aClass348_Sub42_Sub14_1243!!.anInt9635 shr 6 shl 6) - Class75.anInt1266)
@@ -329,13 +329,13 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             if (IdleAnimationsOptionState.anInt5909 == -1 || MapRegionLoaderThread.anInt4202 == -1) {
                                 Class75.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 123, 0x3fff and (Class75.aClass348_Sub42_Sub14_1243!!.anInt9640), (Class75.aClass348_Sub42_Sub14_1243!!.anInt9640) shr 14 and 0x3fff)
                                 DebugOverlayRenderer.anInt3170 = `is`[2] - Class75.anInt1263
-                                Class348_Sub36.anInt6992 = `is`[1] - Class75.anInt1266
+                                WidgetActionEntry.anInt6992 = `is`[1] - Class75.anInt1266
                             } else {
                                 Class75.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 88, MapRegionLoaderThread.anInt4202, IdleAnimationsOptionState.anInt5909)
                                 MapRegionLoaderThread.anInt4202 = -1
                                 IdleAnimationsOptionState.anInt5909 = MapRegionLoaderThread.anInt4202
                                 if (`is` != null) {
-                                    Class348_Sub36.anInt6992 = -Class75.anInt1266 + `is`[1]
+                                    WidgetActionEntry.anInt6992 = -Class75.anInt1266 + `is`[1]
                                     DebugOverlayRenderer.anInt3170 = -Class75.anInt1263 + `is`[2]
                                 }
                                 Class88.aBoolean1500 = false
@@ -343,7 +343,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         } else {
                             i_7_ += (10.0 * Math.random()).toInt() + -5
                             i_8_ += (Math.random() * 10.0).toInt() + -5
-                            Class348_Sub36.anInt6992 = i_7_
+                            WidgetActionEntry.anInt6992 = i_7_
                             DebugOverlayRenderer.anInt3170 = i_8_
                         }
                         if (Class75.aClass348_Sub42_Sub14_1243!!.anInt9631 != 37) {
@@ -373,7 +373,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         }
                         Class75.anInt1255 = Class75.aFloat1247.toInt() shr 1
                         Class75.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(Class75.anInt1255, 12871)
-                        Class348_Sub15.method2811(false)
+                        MenuActionNode.method2811(false)
                         method760()
                         RegionSceneLoader.aNodeDeque_3705 = NodeDeque()
                         Class75.anInt1250 += (Math.random() * 5.0).toInt() + -2
@@ -387,61 +387,61 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         Class75.aTextureDefinitionLoader_1242!!.method1178(256, 1, 256)
                         Class75.aSeqDefinitionCache_1245!!.method2014(4096, true)
                         RenderConfigFactory.aVarbitDefLoader_2981!!.method1444(256, 123)
-                        Class348.anInt4290 = 20
-                    } else if (Class348.anInt4290 == 20) {
+                        LinkedListNode.anInt4290 = 20
+                    } else if (LinkedListNode.anInt4290 == 20) {
                         RegionSceneLoader.method2193(true, (-123).toByte())
                         method756(var_renderer, Class75.anInt1250, Class75.anInt1253)
-                        Class348.anInt4290 = 60
+                        LinkedListNode.anInt4290 = 60
                         RegionSceneLoader.method2193(true, (-122).toByte())
                         method867(true)
                     } else if (i <= -43) {
-                        if (Class348.anInt4290 == 60) {
+                        if (LinkedListNode.anInt4290 == 60) {
                             if (Class75.aClass45_1237!!.method400(-18308, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) {
                                 if (!Class75.aClass45_1237!!.method413(100, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) return
                                 Class75.aSmoothingBuffer_1246 = (SkeletonSequenceLoader.method2300(Class75.aClass45_1237, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", ModelBatchBase.aBoolean1900, (-91).toByte()))
                             } else Class75.aSmoothingBuffer_1246 = SmoothingBuffer(0)
                             method761()
-                            Class348.anInt4290 = 70
+                            LinkedListNode.anInt4290 = 70
                             RegionSceneLoader.method2193(true, (-127).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 70) {
+                        } else if (LinkedListNode.anInt4290 == 70) {
                             MinimapSpriteRenderer.aSystemFontGlyphs_4921 = SystemFontGlyphs(var_renderer!!, 11, true, ParticleSystemRenderer.aCanvas3869!!)
-                            Class348.anInt4290 = 73
+                            LinkedListNode.anInt4290 = 73
                             RegionSceneLoader.method2193(true, (-123).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 73) {
+                        } else if (LinkedListNode.anInt4290 == 73) {
                             GlRectangleTexture.aSystemFontGlyphs_8644 = SystemFontGlyphs(var_renderer!!, 12, true, ParticleSystemRenderer.aCanvas3869!!)
-                            Class348.anInt4290 = 76
+                            LinkedListNode.anInt4290 = 76
                             RegionSceneLoader.method2193(true, (-125).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 76) {
+                        } else if (LinkedListNode.anInt4290 == 76) {
                             Class39.aSystemFontGlyphs_521 = SystemFontGlyphs(var_renderer!!, 14, true, ParticleSystemRenderer.aCanvas3869!!)
-                            Class348.anInt4290 = 79
+                            LinkedListNode.anInt4290 = 79
                             RegionSceneLoader.method2193(true, (-123).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 79) {
+                        } else if (LinkedListNode.anInt4290 == 79) {
                             HeapDiagnosticsHolder.aSystemFontGlyphs_2252 = SystemFontGlyphs(var_renderer!!, 17, true, ParticleSystemRenderer.aCanvas3869!!)
-                            Class348.anInt4290 = 82
+                            LinkedListNode.anInt4290 = 82
                             RegionSceneLoader.method2193(true, (-124).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 82) {
+                        } else if (LinkedListNode.anInt4290 == 82) {
                             PingHostListHolder.aSystemFontGlyphs_2333 = SystemFontGlyphs(var_renderer!!, 19, true, ParticleSystemRenderer.aCanvas3869!!)
-                            Class348.anInt4290 = 85
+                            LinkedListNode.anInt4290 = 85
                             RegionSceneLoader.method2193(true, (-128).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 85) {
+                        } else if (LinkedListNode.anInt4290 == 85) {
                             GlBufferObject.aSystemFontGlyphs_4754 = SystemFontGlyphs(var_renderer!!, 22, true, ParticleSystemRenderer.aCanvas3869!!)
-                            Class348.anInt4290 = 88
+                            LinkedListNode.anInt4290 = 88
                             RegionSceneLoader.method2193(true, (-124).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 88) {
-                            Class348_Sub3.aSystemFontGlyphs_6581 = SystemFontGlyphs(var_renderer!!, 26, true, ParticleSystemRenderer.aCanvas3869!!)
-                            Class348.anInt4290 = 91
+                        } else if (LinkedListNode.anInt4290 == 88) {
+                            ModelVertexColorBuffer.aSystemFontGlyphs_6581 = SystemFontGlyphs(var_renderer!!, 26, true, ParticleSystemRenderer.aCanvas3869!!)
+                            LinkedListNode.anInt4290 = 91
                             RegionSceneLoader.method2193(true, (-125).toByte())
                             method867(true)
                         } else {
                             WorldMapRenderer.aSystemFontGlyphs_4672 = SystemFontGlyphs(var_renderer!!, 30, true, ParticleSystemRenderer.aCanvas3869!!)
-                            Class348.anInt4290 = 100
+                            LinkedListNode.anInt4290 = 100
                             RegionSceneLoader.method2193(true, (-119).toByte())
                             method867(true)
                             System.gc()
@@ -449,7 +449,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rba.A(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (var_renderer!! != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("rba.A(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (var_renderer!! != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

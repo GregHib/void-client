@@ -1,5 +1,5 @@
 import ModelGroundDecor.Companion.method2419
-import Class348_Sub1_Sub2.Companion.method2729
+import HashTileShape.Companion.method2729
 
 /* Class319 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -46,7 +46,7 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
         class368 = Class368()
         class368.aMapElementDefinitionCache_4513 = this
         class368.anInt4501 = i_1_
-        if (`is` != null) class368.method3559(28105, Class348_Sub49(`is`))
+        if (`is` != null) class368.method3559(28105, Buffer(`is`))
         synchronized(aClass60_3989) {
             aClass60_3989.method582(class368, i_1_.toLong(), (-127).toByte())
         }
@@ -81,7 +81,7 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
             val i_4_ = -1 + aClass45_3979!!.method414(-1)
             aClass45_3979.method407(0, i_4_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cn.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("cn.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ')'))
         }
     }
 

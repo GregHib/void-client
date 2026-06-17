@@ -58,7 +58,7 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
             aRandomAccessFile3036!!.seek(l)
             aLong3039 = l
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "so.B(" + i + ',' + l + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "so.B(" + i + ',' + l + ')')
         }
     }
 
@@ -94,7 +94,7 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
             }
             aRandomAccessFile3036!!.seek(0L)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("so.<init>(" + (if (file != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + l + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("so.<init>(" + (if (file != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 

@@ -29,7 +29,7 @@ class Class54 {
 
     constructor()
 
-    internal constructor(class348_sub49: Class348_Sub49) {
+    internal constructor(class348_sub49: Buffer) {
         aByte966 = class348_sub49.readByte(-113)
         this.anInt969 = class348_sub49.readUnsignedShort(842397944)
         this.anInt976 = class348_sub49.readInt((-126).toByte())
@@ -66,7 +66,7 @@ class Class54 {
 
         fun method503(i: Int, i_2_: Int, i_3_: Byte, i_4_: Int, i_5_: Int) {
             anInt968++
-            val i_6_ = Class348_Sub42_Sub16_Sub2.anInt10463
+            val i_6_ = CompletedResourceRequest.anInt10463
             while_4_@ do {
                 do {
                     if (i_6_ != 0) {
@@ -75,17 +75,17 @@ class Class54 {
                             break@while_4_
                         }
                     } else return
-                    Class348_Sub3.anInt6585 = i
+                    ModelVertexColorBuffer.anInt6585 = i
                     ResourceProvider.anInt3941 = i_2_
                     GraphicsOptionState.anInt3142 = i_5_
-                    Class348_Sub42_Sub16_Sub2.anInt10463 = 2
+                    CompletedResourceRequest.anInt10463 = 2
                     ResourceProvider.anInt3939 = i_4_
                     return
                 } while (false)
                 if (ResourceProvider.anInt3939 < i_4_) ResourceProvider.anInt3939 = i_4_
                 if (ResourceProvider.anInt3941 > i_2_) ResourceProvider.anInt3941 = i_2_
                 if (GraphicsOptionState.anInt3142 > i_5_) GraphicsOptionState.anInt3142 = i_5_
-                if (i > Class348_Sub3.anInt6585) Class348_Sub3.anInt6585 = i
+                if (i > ModelVertexColorBuffer.anInt6585) ModelVertexColorBuffer.anInt6585 = i
                 return
             } while (false)
             if (i_3_.toInt() != -74) method501(46)

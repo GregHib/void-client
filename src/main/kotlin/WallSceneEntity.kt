@@ -1,7 +1,7 @@
 import BrightnessOptionState.Companion.method1745
 import ModelHeaderCache.Companion.method1935
 import WaterMaterialPass.Companion.method2148
-import Class348_Sub23_Sub1.Companion.method2967
+import VorbisOggDecoder.Companion.method2967
 import OutputStream_Sub2.Companion.method136
 
 /* Class318_Sub1_Sub1_Sub1 - Decompiled by JODE
@@ -75,7 +75,7 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, class51: Cla
             if (i_5_ > -106) this.aSceneObjectAnimator_9955 = null
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("saa.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("saa.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -84,7 +84,7 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, class51: Cla
             this.aSceneObjectAnimator_9955 = SceneObjectAnimator(var_renderer, class51, 22, i_11_, i, i_7_, this, bool, i_12_)
             aBoolean9966 = class51.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("saa.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("saa.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ')'))
         }
     }
 
@@ -203,10 +203,10 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, class51: Cla
             anInt9958++
             if (string != "") {
                 Class88.anInt1498++
-                val class348_sub47 = method2148(aClass351_8724, Class348_Sub23_Sub2.aClass77_9029, -124)
+                val class348_sub47 = method2148(aClass351_8724, TheoraVideoStream.aClass77_9029, -124)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
-                Class348_Sub42_Sub14.method3243(121, class348_sub47)
+                InterfaceComponentGroup.method3243(121, class348_sub47)
             }
         }
     }

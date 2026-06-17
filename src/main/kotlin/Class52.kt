@@ -35,7 +35,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
         @JvmField
         var aClass351_4907: Class351?
 
-        fun method490(i: Byte, class348_sub49: Class348_Sub49): Class43 {
+        fun method490(i: Byte, class348_sub49: Buffer): Class43 {
             anInt4897++
             val class43 = Class43()
             class43.anInt615 = class348_sub49.readUnsignedShort(842397944)
@@ -46,11 +46,11 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
 
         fun method491(i: Byte) {
             var i_1_ = 0
-            while ((Class348_Sub33.aByteArrayArrayArray6962!!.size > i_1_)) {
-                for (i_2_ in Class348_Sub33.aByteArrayArrayArray6962!![0]!!.indices) {
+            while ((AnimationFrameDefinition.aByteArrayArrayArray6962!!.size > i_1_)) {
+                for (i_2_ in AnimationFrameDefinition.aByteArrayArrayArray6962!![0]!!.indices) {
                     var i_3_ = 0
-                    while ((Class348_Sub33.aByteArrayArrayArray6962!![0]!![0]!!.size > i_3_)) {
-                        Class348_Sub33.aByteArrayArrayArray6962!![i_1_]!![i_2_]!![i_3_] = 0.toByte()
+                    while ((AnimationFrameDefinition.aByteArrayArrayArray6962!![0]!![0]!!.size > i_3_)) {
+                        AnimationFrameDefinition.aByteArrayArrayArray6962!![i_1_]!![i_2_]!![i_3_] = 0.toByte()
                         i_3_++
                     }
                 }
@@ -76,29 +76,29 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
         fun method493(bool: Boolean) {
             if (MaterialTypeMarker.aClass56Array6515 == null) {
                 MaterialTypeMarker.aClass56Array6515 = Class56.Companion.method528(-91)
-                Class348_Sub42_Sub15.aClass56_9660 = MaterialTypeMarker.aClass56Array6515!![0]
+                TimedTileQueueEntry.aClass56_9660 = MaterialTypeMarker.aClass56Array6515!![0]
                 DataHolder.aLong3660 = Class62.method599(-119)
             }
             anInt4900++
             if (Class51.Companion.aResourceLoaderThread_897 == null) Class70.method726(116)
-            val class56 = Class348_Sub42_Sub15.aClass56_9660!!
+            val class56 = TimedTileQueueEntry.aClass56_9660!!
             val i = ClientLoadStateMachine.method1278(-28660)
-            if (class56 == Class348_Sub42_Sub15.aClass56_9660) {
-                Class64_Sub2.aString5420 = Class348_Sub42_Sub15.aClass56_9660!!.aLocalizedText_1012!!.method2063(Class348_Sub33.anInt6967, 544)
-                if (Class348_Sub42_Sub15.aClass56_9660!!.aBoolean1016) ConfigFlagUtil.anInt3236 = (i * ((Class348_Sub42_Sub15.aClass56_9660!!.anInt1021) + -(Class348_Sub42_Sub15.aClass56_9660!!.anInt1025)) / 100 + (Class348_Sub42_Sub15.aClass56_9660!!.anInt1025))
-                if (Class348_Sub42_Sub15.aClass56_9660!!.aBoolean1013) Class64_Sub2.aString5420 += ConfigFlagUtil.anInt3236.toString() + "%"
-            } else if (Class348_Sub42_Sub15.aClass56_9660 == Class56.Companion.aClass56_1043) {
+            if (class56 == TimedTileQueueEntry.aClass56_9660) {
+                Class64_Sub2.aString5420 = TimedTileQueueEntry.aClass56_9660!!.aLocalizedText_1012!!.method2063(AnimationFrameDefinition.anInt6967, 544)
+                if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1016) ConfigFlagUtil.anInt3236 = (i * ((TimedTileQueueEntry.aClass56_9660!!.anInt1021) + -(TimedTileQueueEntry.aClass56_9660!!.anInt1025)) / 100 + (TimedTileQueueEntry.aClass56_9660!!.anInt1025))
+                if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1013) Class64_Sub2.aString5420 += ConfigFlagUtil.anInt3236.toString() + "%"
+            } else if (TimedTileQueueEntry.aClass56_9660 == Class56.Companion.aClass56_1043) {
                 Class51.Companion.aResourceLoaderThread_897 = null
-                Class348_Sub49.method3379(2, 3)
+                Buffer.method3379(2, 3)
             } else {
-                Class64_Sub2.aString5420 = class56.aLocalizedText_1015!!.method2063(Class348_Sub33.anInt6967, 544)
-                if (Class348_Sub42_Sub15.aClass56_9660!!.aBoolean1013) Class64_Sub2.aString5420 += class56.anInt1021.toString() + "%"
+                Class64_Sub2.aString5420 = class56.aLocalizedText_1015!!.method2063(AnimationFrameDefinition.anInt6967, 544)
+                if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1013) Class64_Sub2.aString5420 += class56.anInt1021.toString() + "%"
                 ConfigFlagUtil.anInt3236 = class56.anInt1021
-                if (Class348_Sub42_Sub15.aClass56_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = Class62.method599(-128)
+                if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = Class62.method599(-128)
             }
             if (bool == true) {
                 if (Class51.Companion.aResourceLoaderThread_897 != null) {
-                    Class51.Companion.aResourceLoaderThread_897!!.method2316((Class348_Sub42_Sub15.aClass56_9660), Class64_Sub2.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
+                    Class51.Companion.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aClass56_9660), Class64_Sub2.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
                     if (LoadProgressCounters.anInterface16Array2447 != null) {
                         var i_5_ = Class375.anInt4544 - -1
                         while ((LoadProgressCounters.anInterface16Array2447!!.size > i_5_)) {

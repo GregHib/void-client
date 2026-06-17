@@ -108,7 +108,7 @@ object ScriptOpcodeHolder {
             SpotAnimVector.Companion.aClass45_2306!!.method412(116.toByte())
             SpotAnimVector.Companion.aClass45_2306!!.anInt634 = 2
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qa.A(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + bool_3_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qa.A(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + bool_3_ + ')'))
         }
     }
 

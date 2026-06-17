@@ -5,7 +5,7 @@ import java.math.BigInteger
 
 abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) : SceneEntity() {
     var aShort8759: Short
-    override fun method2384(class348_sub1s: Array<Class348_Sub1?>?, i: Int): Int {
+    override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8758++
         val i_0_ = this.x shr Class362.anInt4459
         val i_1_ = this.y shr Class362.anInt4459
@@ -20,9 +20,9 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
         if (this.aShort8759.toInt() == 1 && i_0_ > 0) return this.method2390(class348_sub1s!!, -1 + i_0_, -2, i_1_)
         if (this.aShort8759.toInt() == 4 && i_0_ <= SpotAnimEntity.anInt6451) return this.method2390(class348_sub1s!!, 1 + i_0_, -2, i_1_)
         if (this.aShort8759.toInt() == 8 && i_1_ > 0) return this.method2390(class348_sub1s!!, i_0_, -2, -1 + i_1_)
-        if (this.aShort8759.toInt() == 2 && i_1_ <= Class348_Sub41.anInt7054) return this.method2390(class348_sub1s!!, i_0_, -2, i_1_ + 1)
-        if (this.aShort8759.toInt() == 16 && i_0_ > 0 && i_1_ <= Class348_Sub41.anInt7054) return this.method2390(class348_sub1s!!, -1 + i_0_, -2, i_1_ + 1)
-        if (this.aShort8759.toInt() == 32 && SpotAnimEntity.anInt6451 >= i_0_ && Class348_Sub41.anInt7054 >= i_1_) return this.method2390(class348_sub1s!!, i_0_ + 1, -2, i_1_ + 1)
+        if (this.aShort8759.toInt() == 2 && i_1_ <= RegionSceneShifter.anInt7054) return this.method2390(class348_sub1s!!, i_0_, -2, i_1_ + 1)
+        if (this.aShort8759.toInt() == 16 && i_0_ > 0 && i_1_ <= RegionSceneShifter.anInt7054) return this.method2390(class348_sub1s!!, -1 + i_0_, -2, i_1_ + 1)
+        if (this.aShort8759.toInt() == 32 && SpotAnimEntity.anInt6451 >= i_0_ && RegionSceneShifter.anInt7054 >= i_1_) return this.method2390(class348_sub1s!!, i_0_ + 1, -2, i_1_ + 1)
         if (this.aShort8759.toInt() == 128 && i_0_ > 0 && i_1_ > 0) return this.method2390(class348_sub1s!!, i_0_ - 1, -2, i_1_ - 1)
         if (this.aShort8759.toInt() == 64 && i_0_ <= SpotAnimEntity.anInt6451 && i_1_ > 0) return this.method2390(class348_sub1s!!, 1 + i_0_, -2, -1 + i_1_)
         throw RuntimeException("")
@@ -74,8 +74,8 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
             var bool = false
             var bool_5_ = false
             var bool_6_ = false
-            if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3777 && !Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
-                bool = (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609) >= 512 || (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609) == 0
+            if (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3777 && !VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
+                bool = (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609) >= 512 || (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609) == 0
                 if (PrivilegedOperationWorker.aString3803.startsWith("win")) {
                     bool_6_ = true
                     bool_5_ = true
@@ -83,7 +83,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
             }
             if (ScreenAnchorAlignment.aBoolean2881) bool = false
             if (VideoStreamDecoder.aBoolean4117) bool_5_ = false
-            if (Class348_Sub1.aBoolean6558) bool_6_ = false
+            if (AbstractTileShape.aBoolean6558) bool_6_ = false
             if (!bool && !bool_5_ && !bool_6_) return method2348(-8454)
             var i_7_ = -1
             var i_8_ = -1
@@ -100,7 +100,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
                     try {
                         i_9_ = method1781(3, -70, 1000)
                         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -33350) == 3) {
-                            val class365 = Class348_Sub8.aRenderer6654!!.c()
+                            val class365 = FacingDirectionNode.aRenderer6654!!.c()
                             val l = (0xffffffffffffL and class365.aLong4471)
                             val i_10_ = class365.anInt4476
                             if (i_10_ == 4318) {
@@ -141,7 +141,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
         fun method2480(i: Int) {
             if (i == -1) {
                 anInt8761++
-                Class348_Sub35.aNodeDeque_6978 = NodeDeque()
+                IntKeyNode.aNodeDeque_6978 = NodeDeque()
             }
         }
     }

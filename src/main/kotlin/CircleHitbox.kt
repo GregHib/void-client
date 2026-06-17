@@ -77,26 +77,26 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
         @JvmStatic
         fun method323(class45: Class45?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Byte) {
             try {
-                Class348_Sub41.aString7048 = ""
+                RegionSceneShifter.aString7048 = ""
                 Class59_Sub1.aPrivilegedOperationWorker_5297 = privilegedOperationWorker
                 anInt410++
                 ParticleSystemState.aClass45_2208 = class45
-                if (!Class348_Sub24.aString6877!!.startsWith("win")) {
-                    if (!Class348_Sub24.aString6877!!.startsWith("linux")) {
-                        if (Class348_Sub24.aString6877!!.startsWith("mac")) Class348_Sub41.aString7048 += "macos/"
-                    } else Class348_Sub41.aString7048 += "linux/"
-                } else Class348_Sub41.aString7048 += "windows/"
+                if (!ClientGameLoopNode.aString6877!!.startsWith("win")) {
+                    if (!ClientGameLoopNode.aString6877!!.startsWith("linux")) {
+                        if (ClientGameLoopNode.aString6877!!.startsWith("mac")) RegionSceneShifter.aString7048 += "macos/"
+                    } else RegionSceneShifter.aString7048 += "linux/"
+                } else RegionSceneShifter.aString7048 += "windows/"
                 if (i.toInt() != 95) anIntArray407 = null
                 if (!Class59_Sub1.aPrivilegedOperationWorker_5297!!.aBoolean3794) {
-                    if (!Class348_Sub24.aString6876!!.startsWith("amd64") && !Class348_Sub24.aString6876!!.startsWith("x86_64")) {
-                        if (!Class348_Sub24.aString6876!!.startsWith("i386") && !Class348_Sub24.aString6876!!.startsWith("i486") && !Class348_Sub24.aString6876!!.startsWith("i586") && !Class348_Sub24.aString6876!!.startsWith("x86")) {
-                            if (!Class348_Sub24.aString6876!!.startsWith("ppc")) Class348_Sub41.aString7048 += "universal/"
-                            else Class348_Sub41.aString7048 += "ppc/"
-                        } else Class348_Sub41.aString7048 += "x86/"
-                    } else Class348_Sub41.aString7048 += "x86_64/"
-                } else Class348_Sub41.aString7048 += "msjava/"
+                    if (!ClientGameLoopNode.aString6876!!.startsWith("amd64") && !ClientGameLoopNode.aString6876!!.startsWith("x86_64")) {
+                        if (!ClientGameLoopNode.aString6876!!.startsWith("i386") && !ClientGameLoopNode.aString6876!!.startsWith("i486") && !ClientGameLoopNode.aString6876!!.startsWith("i586") && !ClientGameLoopNode.aString6876!!.startsWith("x86")) {
+                            if (!ClientGameLoopNode.aString6876!!.startsWith("ppc")) RegionSceneShifter.aString7048 += "universal/"
+                            else RegionSceneShifter.aString7048 += "ppc/"
+                        } else RegionSceneShifter.aString7048 += "x86/"
+                    } else RegionSceneShifter.aString7048 += "x86_64/"
+                } else RegionSceneShifter.aString7048 += "msjava/"
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("hw.A(" + (if (class45 != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("hw.A(" + (if (class45 != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

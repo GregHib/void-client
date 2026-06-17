@@ -1,4 +1,4 @@
-import Class348_Sub17.Companion.method2929
+import SoundBankPatch.Companion.method2929
 
 /* Class365 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

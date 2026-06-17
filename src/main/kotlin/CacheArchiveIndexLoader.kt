@@ -1,4 +1,4 @@
-import Class348_Sub31.Companion.method3013
+import AbstractFrameBufferSurface.Companion.method3013
 import Class5_Sub3.Companion.method200
 import java.awt.Point
 
@@ -17,7 +17,7 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
         if (cacheArchiveIndex != null) return cacheArchiveIndex
         val `is` = aClass45_458!!.method410(-1860, method200(-107, i), method3013(i, bool))
         cacheArchiveIndex = CacheArchiveIndex()
-        if (`is` != null) cacheArchiveIndex.method1069(0, Class348_Sub49(`is`))
+        if (`is` != null) cacheArchiveIndex.method1069(0, Buffer(`is`))
         synchronized(aClass60_460) {
             aClass60_460.method582(cacheArchiveIndex, i.toLong(), (-102).toByte())
         }
@@ -32,7 +32,7 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
                 val i_6_ = -1 + aClass45_458.method414(-1)
                 aClass45_458.method407(0, i_6_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("iba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("iba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -59,12 +59,12 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
                     val class207 = class222.method1610(71.toByte())
                     if (class207 == null) i_0_ = -1
                     else {
-                        Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2238(class207.method1522(), class207.method1516(), 17, Point(class222.anInt2883, class222.anInt2890), ParticleSystemRenderer.aCanvas3869, class207.method1510())
+                        VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2238(class207.method1522(), class207.method1516(), 17, Point(class222.anInt2883, class222.anInt2890), ParticleSystemRenderer.aCanvas3869, class207.method1510())
                         GlShaderProgramHandle.anInt4179 = i_0_
                     }
                 }
                 if (i_0_ == -1 && GlShaderProgramHandle.anInt4179 != -1) {
-                    Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2238(-1, null, i + 17, Point(), (ParticleSystemRenderer.aCanvas3869), -1)
+                    VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2238(-1, null, i + 17, Point(), (ParticleSystemRenderer.aCanvas3869), -1)
                     GlShaderProgramHandle.anInt4179 = -1
                 }
             }

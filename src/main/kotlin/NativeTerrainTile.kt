@@ -19,7 +19,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
     private var aVideoStreamDecoder_8307: VideoStreamDecoder? = null
     private var anIntArrayArrayArray8308: Array<Array<IntArray?>?>?
     private val anInt8311: Int
-    private var aClass348_Sub3ArrayArrayArray8312: Array<Array<Array<Class348_Sub3?>?>?>?
+    private var aClass348_Sub3ArrayArrayArray8312: Array<Array<Array<ModelVertexColorBuffer?>?>?>?
     @JvmField
     var anIntArrayArrayArray8313: Array<Array<IntArray?>?>?
     private var anIntArrayArrayArray8314: Array<Array<IntArray?>?>? = null
@@ -34,7 +34,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
     private var aClass356_8325: Class356? = null
     private var anInterface5_Impl1_8326: Interface5_Impl1? = null
     private var anInterface5_Impl1_8327: Interface5_Impl1? = null
-    private var aClass348_Sub3Array8328: Array<Class348_Sub3?>? = null
+    private var aClass348_Sub3Array8328: Array<ModelVertexColorBuffer?>? = null
     private var anInt8329 = 0
     private var aByteArrayArray8330: Array<ByteArray?>?
     private var anInt8331 = 0
@@ -115,8 +115,8 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     i++
                 }
             }
-            val class348_sub3s: Array<Class348_Sub3?> = arrayOfNulls<Class348_Sub3>(aClass356_8325!!.method3474(1))
-            aClass356_8325!!.method3477(3, class348_sub3s as Array<Class348?>)
+            val class348_sub3s: Array<ModelVertexColorBuffer?> = arrayOfNulls<ModelVertexColorBuffer>(aClass356_8325!!.method3474(1))
+            aClass356_8325!!.method3477(3, class348_sub3s as Array<LinkedListNode?>)
             for (i in class348_sub3s.indices) class348_sub3s[i]!!.method2736((-57).toByte(), anInt8329)
             var i = 20
             if (anIntArrayArrayArray8314 != null) i += 4
@@ -125,11 +125,11 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             val nativeheapbuffer_45_ = this.aHa_Sub3_8322!!.aNativeHeap7891!!.a(anInt8329 * i, false)
             val stream = Stream(nativeheapbuffer_45_)
             val stream_46_ = Stream(nativeheapbuffer)
-            val class348_sub3s_47_ = arrayOfNulls<Class348_Sub3>(anInt8329)
-            var i_48_ = Class348_Sub40_Sub1.method3051(anInt8329 / 4, 4096)
+            val class348_sub3s_47_ = arrayOfNulls<ModelVertexColorBuffer>(anInt8329)
+            var i_48_ = ColorThresholdEffect.method3051(anInt8329 / 4, 4096)
             if (i_48_ < 1) i_48_ = 1
             val class356 = Class356(i_48_)
-            val class348_sub3s_49_ = arrayOfNulls<Class348_Sub3>(anInt8331)
+            val class348_sub3s_49_ = arrayOfNulls<ModelVertexColorBuffer>(anInt8331)
             for (i_50_ in 0..<this.anInt4587) {
                 var i_51_ = 0
                 while ((i_51_ < this.anInt4590)) {
@@ -234,10 +234,10 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                                     f_103_ = ((f_103_ * (if (!(f_103_ > 0.0f)) (this.aHa_Sub3_8322!!.aFloat8186) else (this.aHa_Sub3_8322!!.aFloat8174))) + (this.aHa_Sub3_8322!!.aFloat8093))
                                 }
                             }
-                            var class348: Class348? = null
-                            if ((i_79_ and anInt8311 - 1) == 0 && (-1 + anInt8311 and i_80_) == 0) class348 = class356.method3480(l, -6008)
+                            var linkedListNode: LinkedListNode? = null
+                            if ((i_79_ and anInt8311 - 1) == 0 && (-1 + anInt8311 and i_80_) == 0) linkedListNode = class356.method3480(l, -6008)
                             val i_105_: Int
-                            if (class348 == null) {
+                            if (linkedListNode == null) {
                                 var i_106_: Int
                                 if (i_84_ != i_83_) {
                                     var i_107_ = (0x7f and i_84_) * i_88_ shr 7
@@ -295,9 +295,9 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                                 i_105_ = anInt8303++
                                 is_77_[i_78_] = i_105_.toShort()
                                 if (i_83_ != -1) class348_sub3s_47_[i_105_] = class348_sub3s_52_[i_78_]
-                                class356.method3483(108.toByte(), l, Class348_Sub29(is_77_[i_78_]))
+                                class356.method3483(108.toByte(), l, ShortKeyNode(is_77_[i_78_]))
                             } else {
-                                is_77_[i_78_] = (class348 as Class348_Sub29).aShort6911
+                                is_77_[i_78_] = (linkedListNode as ShortKeyNode).aShort6911
                                 i_105_ = 0xffff and is_77_[i_78_].toInt()
                                 if (i_83_ != -1 && (class348_sub3s_47_[i_105_]!!.aLong4291 > class348_sub3s_52_[i_78_]!!.aLong4291)) class348_sub3s_47_[i_105_] = class348_sub3s_52_[i_78_]
                             }
@@ -330,7 +330,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                             val class348_sub3 = class348_sub3s_47_[i_119_]
                             val class348_sub3_122_ = class348_sub3s_47_[i_120_]
                             val class348_sub3_123_ = class348_sub3s_47_[i_121_]
-                            var class348_sub3_124_: Class348_Sub3? = null
+                            var class348_sub3_124_: ModelVertexColorBuffer? = null
                             if (class348_sub3 != null) {
                                 class348_sub3_124_ = class348_sub3
                                 class348_sub3.method2742(i_117_, i_115_, i_114_, (-80).toByte())
@@ -370,7 +370,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             for (i_126_ in class348_sub3s.indices) {
                 if (class348_sub3s[i_126_]!!.anInt6589 > 0) class348_sub3s[i_125_++] = class348_sub3s[i_126_]
             }
-            aClass348_Sub3Array8328 = arrayOfNulls<Class348_Sub3>(i_125_)
+            aClass348_Sub3Array8328 = arrayOfNulls<ModelVertexColorBuffer>(i_125_)
             val ls = LongArray(i_125_)
             var i_127_ = 0
             while (i_125_ > i_127_) {
@@ -426,7 +426,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 anIntArrayArrayArray8291 = Array<Array<IntArray?>?>(i_140_) { arrayOfNulls<IntArray>(i_141_) }
                 this.anIntArrayArrayArray8296 = Array<Array<IntArray?>?>(i_140_) { arrayOfNulls<IntArray>(i_141_) }
                 aFloatArrayArray8333 = (Array<FloatArray?>(this.anInt4587 - -1) { FloatArray(this.anInt4590 - -1) })
-                aClass348_Sub3ArrayArrayArray8312 = Array<Array<Array<Class348_Sub3?>?>?>(i_140_) { arrayOfNulls<Array<Class348_Sub3?>>(i_141_) }
+                aClass348_Sub3ArrayArrayArray8312 = Array<Array<Array<ModelVertexColorBuffer?>?>?>(i_140_) { arrayOfNulls<Array<ModelVertexColorBuffer?>>(i_141_) }
                 aByteArrayArray8317 = Array<ByteArray?>(i_140_) { ByteArray(i_141_) }
                 anInt8311 = 1 shl anInt8302
                 this.aShortArrayArray8299 = arrayOfNulls<ShortArray>(i_140_ * i_141_)
@@ -461,7 +461,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 if ((this.anInt8294 and 0x10) == 0) break
                 aVideoStreamDecoder_8307 = VideoStreamDecoder(this.aHa_Sub3_8322, this)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qm.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_139_ + ',' + i_140_ + ',' + i_141_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_142_ != null) "{...}" else "null") + ',' + i_143_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qm.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_139_ + ',' + i_140_ + ',' + i_141_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_142_ != null) "{...}" else "null") + ',' + i_143_ + ')'))
             }
             break
         } while (false)
@@ -483,12 +483,12 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 if (this.anInt4587 - 1 < i_159_) i_159_ = this.anInt4587 - 1
                 var i_160_ = i_149_ + i_153_
                 if (i_160_ > this.anInt4590 - 1) i_160_ = this.anInt4590 - 1
-                Class348_Sub48.anInt7133 = 0
+                ModelResourceBundle.anInt7133 = 0
                 for (i_161_ in i_155_..i_159_) {
                     val bools_162_ = bools[i_161_ - i_156_]!!
                     var i_163_ = i_157_
                     while (i_160_ >= i_163_) {
-                        if (bools_162_[i_163_ - i_158_]) ArbFogMaterialPass.anIntArray6189!![Class348_Sub48.anInt7133++] = i_161_ + this.anInt4587 * i_163_
+                        if (bools_162_[i_163_ - i_158_]) ArbFogMaterialPass.anIntArray6189!![ModelResourceBundle.anInt7133++] = i_161_ + this.anInt4587 * i_163_
                         i_163_++
                     }
                 }
@@ -501,7 +501,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 this.aHa_Sub3_8322!!.method3866(((this.anInt8294) and 0x7) != 0, true)
                 this.aHa_Sub3_8322!!.method3814(false, false, -1, 101.toByte())
                 this.aHa_Sub3_8322!!.method3925(112, anInterface5_Impl1_8327, 0)
-                for (i_164_ in aClass348_Sub3Array8328!!.indices) aClass348_Sub3Array8328!![i_164_]!!.method2737((-30).toByte(), ArbFogMaterialPass.anIntArray6189!!, Class348_Sub48.anInt7133)
+                for (i_164_ in aClass348_Sub3Array8328!!.indices) aClass348_Sub3Array8328!![i_164_]!!.method2737((-30).toByte(), ArbFogMaterialPass.anIntArray6189!!, ModelResourceBundle.anInt7133)
                 val class101_sub2 = this.aHa_Sub3_8322!!.method3934(-97)
                 class101_sub2!!.method894(0, -1, 0)
                 this.aHa_Sub3_8322!!.method3915(0)
@@ -515,11 +515,11 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     this.aHa_Sub3_8322!!.method3814(false, false, -2, 100.toByte())
                     this.aHa_Sub3_8322!!.method3850(63.toByte(), (this.aHa_Sub3_8322!!.anInterface18_8147))
                     this.aHa_Sub3_8322!!.method3874(RenderQueueState.aRenderConfigFactory_6519, 116, ParticleSystemState.aRenderConfigFactory_2207)
-                    this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
+                    this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
                     this.aHa_Sub3_8322!!.method3885(0, true, GlIndexBufferArb.aClass70_8503)
                     var class348 = aNodeDeque_8286.method1995(i_151_ + 5)
                     while (class348 != null) {
-                        val class348_sub38 = class348 as Class348_Sub38
+                        val class348_sub38 = class348 as TerrainShadowBuilderGl3
                         class348_sub38.method3032(i_149_, i_153_, bools, false, i)
                         class348 = aNodeDeque_8286.method1990(106.toByte())
                     }
@@ -539,12 +539,12 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         }
     }
 
-    override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
+    override fun method3981(class348_sub1: AbstractTileShape, `is`: IntArray) {
         try {
-            aNodeDeque_8286.method1999(Class348_Sub38((this.aHa_Sub3_8322), this, class348_sub1, `is`), -20180)
+            aNodeDeque_8286.method1999(TerrainShadowBuilderGl3((this.aHa_Sub3_8322), this, class348_sub1, `is`), -20180)
             anInt8287++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qm.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qm.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -560,7 +560,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             anIntArrayArrayArray8291!![i]!![i_167_] = is_172_
             if (anIntArrayArrayArray8314 != null) anIntArrayArrayArray8314!![i]!![i_167_] = is_170_
             if (anIntArrayArrayArray8308 != null) anIntArrayArrayArray8308!![i]!![i_167_] = is_168_
-            val class348_sub3s = (arrayOfNulls<Class348_Sub3>(is_171_.size).also { aClass348_Sub3ArrayArrayArray8312!![i]!![i_167_] = it })
+            val class348_sub3s = (arrayOfNulls<ModelVertexColorBuffer>(is_171_.size).also { aClass348_Sub3ArrayArrayArray8312!![i]!![i_167_] = it })
             for (i_178_ in is_171_.indices) {
                 var i_179_ = is_173_!![i_178_]
                 var i_180_ = is_174_!![i_178_]
@@ -569,23 +569,23 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     i_179_ = -1
                 }
                 val l = i_179_.toLong() or ((i_180_ shl 14).toLong() or (i_176_.toLong() shl 42 or (i_177_.toLong() shl 48) or (i_175_.toLong() shl 28)))
-                var class348: Class348?
-                class348 = aClass356_8325!!.method3480(l, -6008)
-                while (class348 != null) {
-                    val class348_sub3 = class348 as Class348_Sub3
+                var linkedListNode: LinkedListNode?
+                linkedListNode = aClass356_8325!!.method3480(l, -6008)
+                while (linkedListNode != null) {
+                    val class348_sub3 = linkedListNode as ModelVertexColorBuffer
                     if (i_179_ == class348_sub3.anInt6567 && (class348_sub3.aFloat6582 == i_180_.toFloat()) && i_175_ == class348_sub3.anInt6571 && class348_sub3.anInt6575 == i_176_ && class348_sub3.anInt6569 == i_177_) break
-                    class348 = aClass356_8325!!.method3476(true)
+                    linkedListNode = aClass356_8325!!.method3476(true)
                 }
-                if (class348 == null) {
-                    class348_sub3s[i_178_] = Class348_Sub3(this, i_179_, i_180_, i_175_, i_176_, i_177_)
+                if (linkedListNode == null) {
+                    class348_sub3s[i_178_] = ModelVertexColorBuffer(this, i_179_, i_180_, i_175_, i_176_, i_177_)
                     aClass356_8325!!.method3483(27.toByte(), l, class348_sub3s[i_178_])
-                } else class348_sub3s[i_178_] = class348 as Class348_Sub3
+                } else class348_sub3s[i_178_] = linkedListNode as ModelVertexColorBuffer
             }
             if (bool) aByteArrayArray8317[i]!![i_167_] = BoundsConstraintEntry.method2057((aByteArrayArray8317[i]!![i_167_]).toInt(), 1).toByte()
             if (is_171_.size > anInt8331) anInt8331 = is_171_.size
             anInt8329 += is_171_.size
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(
+            throw SoundBankPatch.method2929(
                 runtimeexception,
                 ("qm.U(" + i + ',' + i_167_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_168_ != null) "{...}" else "null") + ',' + (if (is_169_ != null) "{...}" else "null") + ',' + (if (is_170_ != null) "{...}" else "null") + ',' + (if (is_171_ != null) "{...}" else "null") + ',' + (if (is_172_ != null) "{...}" else "null") + ',' + (if (is_173_ != null) "{...}" else "null") + ',' + (if (is_174_ != null) "{...}" else "null") + ',' + i_175_ + ',' + i_176_ + ',' + i_177_ + ',' + bool + ')')
             )
@@ -644,7 +644,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             }
             U(i, i_184_, is_199_, is_205_!!, is_200_, is_206_!!, is_201_, is_202_, is_203_, is_204_, i_195_, i_196_, i_197_, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(
+            throw SoundBankPatch.method2929(
                 runtimeexception,
                 ("qm.E(" + i + ',' + i_184_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_185_ != null) "{...}" else "null") + ',' + (if (is_186_ != null) "{...}" else "null") + ',' + (if (is_187_ != null) "{...}" else "null") + ',' + (if (is_188_ != null) "{...}" else "null") + ',' + (if (is_189_ != null) "{...}" else "null") + ',' + (if (is_190_ != null) "{...}" else "null") + ',' + (if (is_191_ != null) "{...}" else "null") + ',' + (if (is_192_ != null) "{...}" else "null") + ',' + (if (is_193_ != null) "{...}" else "null") + ',' + (if (is_194_ != null) "{...}" else "null") + ',' + i_195_ + ',' + i_196_ + ',' + i_197_ + ',' + bool + ')')
             )
@@ -828,7 +828,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         fun method4008(i: Byte): Int {
             anInt8289++
             if (i >= -121) aCameraRotationStub_8320 = null
-            if (Class348_Sub49.anInt7207 == 1) return MapRegionLoaderThread.anInt4211
+            if (Buffer.anInt7207 == 1) return MapRegionLoaderThread.anInt4211
             return 0
         }
     }

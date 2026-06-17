@@ -1,5 +1,5 @@
-import Class348_Sub10.Companion.method2788
-import Class348_Sub10.Companion.method2789
+import VorbisAudioDecoder.Companion.method2788
+import VorbisAudioDecoder.Companion.method2789
 
 /* Class343 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -16,7 +16,7 @@ class BinaryBitReader internal constructor() {
     fun method2688(fs: FloatArray, i: Int, bool: Boolean) {
         for (i_0_ in 0..<i) fs[i_0_] = 0.0f
         if (!bool) {
-            val i_1_ = (Class348_Sub10.aClass370Array6718!![anInt4261]!!.anInt4514)
+            val i_1_ = (VorbisAudioDecoder.aClass370Array6718!![anInt4261]!!.anInt4514)
             val i_2_ = anInt4259 - anInt4258
             val i_3_ = i_2_ / anInt4256
             val `is` = IntArray(i_3_)
@@ -24,7 +24,7 @@ class BinaryBitReader internal constructor() {
                 var i_5_ = 0
                 while (i_5_ < i_3_) {
                     if (i_4_ == 0) {
-                        var i_6_ = Class348_Sub10.aClass370Array6718!![anInt4261]!!.method3581()
+                        var i_6_ = VorbisAudioDecoder.aClass370Array6718!![anInt4261]!!.method3581()
                         for (i_7_ in i_1_ - 1 downTo 0) {
                             if (i_5_ + i_7_ < i_3_) `is`[i_5_ + i_7_] = i_6_ % anInt4255
                             i_6_ /= anInt4255
@@ -35,7 +35,7 @@ class BinaryBitReader internal constructor() {
                         val i_10_ = anIntArray4260[i_9_ * 8 + i_4_]
                         if (i_10_ >= 0) {
                             val i_11_ = anInt4258 + i_5_ * anInt4256
-                            val class370 = Class348_Sub10.aClass370Array6718!![i_10_]
+                            val class370 = VorbisAudioDecoder.aClass370Array6718!![i_10_]
                             if (anInt4257 == 0) {
                                 val i_12_ = (anInt4256 / class370!!.anInt4514)
                                 for (i_13_ in 0..<i_12_) {

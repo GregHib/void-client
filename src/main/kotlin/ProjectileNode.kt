@@ -35,7 +35,7 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
         val i = this.anInt8791 shr 12 + Class362.anInt4459
         val i_0_ = this.anInt8789 shr 12 + Class362.anInt4459
         val i_1_ = this.anInt8796 shr 12
-        if (i_1_ > 0 || i_1_ < -262144 || i < 0 || i >= SpotAnimEntity.Companion.anInt6451 || i_0_ < 0 || i_0_ >= Class348_Sub41.anInt7054) method2520()
+        if (i_1_ > 0 || i_1_ < -262144 || i < 0 || i >= SpotAnimEntity.Companion.anInt6451 || i_0_ < 0 || i_0_ >= RegionSceneShifter.anInt7054) method2520()
         else {
             val class318_sub10 = (this.aClass318_Sub7_10419.aClass318_Sub10_6439)!!
             val class181 = (this.aClass318_Sub7_10419.aSpotAnimDefinition_6441)!!
@@ -207,10 +207,10 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                 anInt10421 -= (anInt10421.toLong() * l_38_ shr 28).toInt()
             }
             if (class181.anIntArray2402 != null) {
-                val class348 = (class318_sub10.aNodeDeque_6479.aClass348_3334)
-                var class348_39_ = class348.aClass348_4294
+                val class348 = (class318_sub10.aNodeDeque_6479.aLinkedListNode_3334)
+                var class348_39_ = class348.aLinkedListNode_4294
                 while (class348_39_ !== class348) {
-                    val class348_sub42_sub20 = class348_39_ as Class348_Sub42_Sub20?
+                    val class348_sub42_sub20 = class348_39_ as SpriteRenderEntry?
                     val class174 = (class348_sub42_sub20!!.aSpotAnimVector_9704)!!
                     if (class174.anInt2296 != 1) {
                         var bool_40_ = false
@@ -265,24 +265,24 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                             }
                         }
                     }
-                    class348_39_ = class348_39_.aClass348_4294
+                    class348_39_ = class348_39_.aLinkedListNode_4294
                 }
             }
             if (class181.anIntArray2380 != null) {
                 for (i_52_ in class181.anIntArray2380.indices) {
-                    var class348_sub42_sub20 = ((Class367_Sub11.aLongHashTable_7415!!.method334(class181.anIntArray2380[i_52_].toLong(), 121.toByte())) as Class348_Sub42_Sub20?)
+                    var class348_sub42_sub20 = ((Class367_Sub11.aLongHashTable_7415!!.method334(class181.anIntArray2380[i_52_].toLong(), 121.toByte())) as SpriteRenderEntry?)
                     while (class348_sub42_sub20 != null) {
                         val class174 = (class348_sub42_sub20.aSpotAnimVector_9704)!!
                         val d_53_ = (i_20_ - class348_sub42_sub20.anInt9712).toDouble()
                         val d_54_ = (i_21_ - class348_sub42_sub20.anInt9706).toDouble()
                         val d_55_ = (i_22_ - class348_sub42_sub20.anInt9710).toDouble()
                         val d_56_ = d_53_ * d_53_ + d_54_ * d_54_ + d_55_ * d_55_
-                        if (d_56_ > class174.aLong2301.toDouble()) class348_sub42_sub20 = Class367_Sub11.aLongHashTable_7415!!.method336(true) as Class348_Sub42_Sub20?
+                        if (d_56_ > class174.aLong2301.toDouble()) class348_sub42_sub20 = Class367_Sub11.aLongHashTable_7415!!.method336(true) as SpriteRenderEntry?
                         else {
                             var d_57_ = sqrt(d_56_)
                             if (d_57_ == 0.0) d_57_ = 1.0
                             val d_58_ = ((d_53_ * (class348_sub42_sub20.anInt9705).toDouble() + d_54_ * (class174.anInt2290).toDouble() + d_55_ * (class348_sub42_sub20.anInt9707).toDouble()) * 65535.0 / (class174.anInt2299.toDouble() * d_57_))
-                            if (d_58_ < class174.anInt2298.toDouble()) class348_sub42_sub20 = (Class367_Sub11.aLongHashTable_7415!!.method336(true) as Class348_Sub42_Sub20?)
+                            if (d_58_ < class174.anInt2298.toDouble()) class348_sub42_sub20 = (Class367_Sub11.aLongHashTable_7415!!.method336(true) as SpriteRenderEntry?)
                             else {
                                 var d_59_ = 0.0
                                 if (class174.anInt2289 == 1) d_59_ = (d_57_ / 16.0 * (class174.anInt2304).toDouble())
@@ -313,7 +313,7 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                                         this.anInt8789 = (this.anInt8789 + d_62_ * i.toDouble()).toInt()
                                     }
                                 }
-                                class348_sub42_sub20 = (Class367_Sub11.aLongHashTable_7415!!.method336(true) as Class348_Sub42_Sub20?)
+                                class348_sub42_sub20 = (Class367_Sub11.aLongHashTable_7415!!.method336(true) as SpriteRenderEntry?)
                             }
                         }
                     }
@@ -324,7 +324,7 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                     class181.anIntArray2385 = IntArray(class181.anIntArray2395.size)
                     for (i_63_ in class181.anIntArray2395.indices) {
                         method1943(false, (class181.anIntArray2395[i_63_]))
-                        class181.anIntArray2385!![i_63_] = (Class59_Sub2_Sub2.aClass356_8679!!.method3480(class181.anIntArray2395[i_63_].toLong(), -6008) as Class348_Sub35).anInt6976
+                        class181.anIntArray2385!![i_63_] = (Class59_Sub2_Sub2.aClass356_8679!!.method3480(class181.anIntArray2395[i_63_].toLong(), -6008) as IntKeyNode).anInt6976
                     }
                 }
                 for (i_64_ in class181.anIntArray2385!!.indices) {

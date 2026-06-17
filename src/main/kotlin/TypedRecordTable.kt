@@ -13,27 +13,27 @@ class TypedRecordTable {
     var anInt3687: Int = 0
     var anInterface12Array3688: Array<Interface12?> = emptyArray()
     var anInt3690: Int = 0
-    private fun method2182(bool: Boolean, projectileFactory: ProjectileFactory?, class348_sub49: Class348_Sub49?): Interface12? {
+    private fun method2182(bool: Boolean, projectileFactory: ProjectileFactory?, class348_sub49: Buffer?): Interface12? {
         try {
             anInt3692++
             if (ModelDefinitionCache.aProjectileFactory_2868 == projectileFactory) return VarpStore.method1312(64.toByte(), class348_sub49!!)
-            if (Class348_Sub49.aProjectileFactory_7175 == projectileFactory) return AnimatedModelRenderer.method987(743571200, class348_sub49!!)
+            if (Buffer.aProjectileFactory_7175 == projectileFactory) return AnimatedModelRenderer.method987(743571200, class348_sub49!!)
             if (MatrixCameraTransform.aProjectileFactory_5689 == projectileFactory) return ProjectileDefinition.method2287(class348_sub49!!, (-112).toByte())
             if (projectileFactory == ItemNameResolver.aProjectileFactory_4997) return GlShaderProgramHandle.method2660(26.toByte(), class348_sub49!!)
             if (bool != true) Companion.method2180((-104).toByte())
-            if (projectileFactory == Class348_Sub40_Sub21.aProjectileFactory_9274) return ParticleEmitterDefExt.Companion.method2189(class348_sub49!!, 86)
+            if (projectileFactory == WeaveTextureNode.aProjectileFactory_9274) return ParticleEmitterDefExt.Companion.method2189(class348_sub49!!, 86)
             if (projectileFactory == SkyboxGradient.aProjectileFactory_3934) return Class5.method179(16533, class348_sub49!!)
-            if (MapSceneDefLoader.aProjectileFactory_2489 == projectileFactory) return Class348_Sub46.method3322(0, class348_sub49!!)
+            if (MapSceneDefLoader.aProjectileFactory_2489 == projectileFactory) return StringValueNode.method3322(0, class348_sub49!!)
             if (projectileFactory == SpotAnimVector.aProjectileFactory_2307) return Class50_Sub4.method472(-27794, class348_sub49!!)
             if (OrientationRotator.aProjectileFactory_2045 == projectileFactory) return MaterialTypeMarker.method2612(class348_sub49!!, true)
             if (LocTypeDefLoader.aProjectileFactory_2507 == projectileFactory) return GlVertexBufferArb.method2128(-1730, class348_sub49!!)
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vp.F(" + bool + ',' + (if (projectileFactory != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("vp.F(" + bool + ',' + (if (projectileFactory != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
-    fun method2183(class348_sub49: Class348_Sub49, i: Int) {
+    fun method2183(class348_sub49: Buffer, i: Int) {
         this.anInt3690 = class348_sub49.readMedium(-1)
         anInt3693++
         this.anInt3687 = class348_sub49.readUnsignedShort(842397944)
@@ -42,7 +42,7 @@ class TypedRecordTable {
         var i_27_ = 0
         if (i != 21890) method2180(25.toByte())
         while ( /**/this.anInterface12Array3688.size > i_27_) {
-            this.anInterface12Array3688[i_27_] = method2182(true, class223s[(class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i, 21885)))], class348_sub49)
+            this.anInterface12Array3688[i_27_] = method2182(true, class223s[(class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i, 21885)))], class348_sub49)
             i_27_++
         }
     }
@@ -77,7 +77,7 @@ class TypedRecordTable {
                     val i_7_ = (if (widgetDefinition.anIntArray253 == null) 255 else widgetDefinition.anIntArray253!![i])
                     if (i_5_ == 0) {
                         if (LocalPlayerState.aPlayer_1907 == class318_sub1) {
-                            if (!widgetDefinition.aBoolean268) Class348_Sub20.method2947(true, i_7_, i_2_, i_3_, 0, i_6_)
+                            if (!widgetDefinition.aBoolean268) TextureTileRenderer.method2947(true, i_7_, i_2_, i_3_, 0, i_6_)
                             else SoundChannelMixer.method2090(i_3_, i_6_, false, (-35).toByte(), i_7_, 0, i_2_)
                         }
                     } else if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) != 0) {
@@ -88,7 +88,7 @@ class TypedRecordTable {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vp.A(" + (if (class318_sub1 != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_0_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vp.A(" + (if (class318_sub1 != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_0_ + ')'))
             }
         }
 
@@ -117,13 +117,13 @@ class TypedRecordTable {
                     if (i_18_ > i_19_ * i_19_) {
                         i_19_ -= 10
                         val i_20_: Int
-                        if (Class348_Sub40_Sub21.anInt9282 == 4) i_20_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
+                        if (WeaveTextureNode.anInt9282 == 4) i_20_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
                         else i_20_ = 0x3fff and (ResourceProvider.aFloat3938.toInt() + OpenGlRenderNode.anInt10483)
                         var i_21_ = Class70.anIntArray1207!![i_20_]
                         var i_22_ = Class70.anIntArray1204!![i_20_]
-                        if (Class348_Sub40_Sub21.anInt9282 != 4) {
-                            i_22_ = i_22_ * 256 / (Class348_Sub49_Sub1.anInt9750 - -256)
-                            i_21_ = 256 * i_21_ / (Class348_Sub49_Sub1.anInt9750 - -256)
+                        if (WeaveTextureNode.anInt9282 != 4) {
+                            i_22_ = i_22_ * 256 / (FloatBuffer.anInt9750 - -256)
+                            i_21_ = 256 * i_21_ / (FloatBuffer.anInt9750 - -256)
                         }
                         val i_23_ = i_22_ * i_16_ + i_21_ * i_14_ shr 14
                         val i_24_ = i_22_ * i_14_ + -(i_21_ * i_16_) shr 14
@@ -134,7 +134,7 @@ class TypedRecordTable {
                     } else method1211(i, Class59_Sub1.aAbstractModelRendererArray5294!![i_17_], i_15_, class46, var_sprite, i_14_, 2, i_16_)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vp.D(" + l + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + (if (var_sprite != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vp.D(" + l + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + (if (var_sprite != null) "{...}" else "null") + ')'))
             }
         }
 

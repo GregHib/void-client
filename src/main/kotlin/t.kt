@@ -12,10 +12,10 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         anInt5151 = i_2_
         var i_4_ = 0
         val fs = FloatArray(aNodeDeque_5149.method1998(0))
-        var class348_sub1 = aNodeDeque_5149.method1995(4) as? Class348_Sub1?
+        var class348_sub1 = aNodeDeque_5149.method1995(4) as? AbstractTileShape?
         while (class348_sub1 != null) {
             fs[i_4_++] = class348_sub1.method2721(-37)
-            class348_sub1 = aNodeDeque_5149.method1990(34.toByte()) as? Class348_Sub1?
+            class348_sub1 = aNodeDeque_5149.method1990(34.toByte()) as? AbstractTileShape?
         }
         q(fs)
         for (i_5_ in 0..<i_1_ + i_1_) {
@@ -95,7 +95,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         if (bool_27_ || is_37_ != null) U(i, i_13_, is_32_, is_38_!!, is_33_, is_39_!!, is_34_, is_37_!!, is_35_, is_36_, i_24_, i_25_, i_26_, bool)
     }
 
-    override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
+    override fun method3981(class348_sub1: AbstractTileShape, `is`: IntArray) {
         aNodeDeque_5149.method1999(class348_sub1, -20180)
         V(class348_sub1.hashCode(), class348_sub1.method2724(-1), class348_sub1.method2722(124), class348_sub1.method2717(83.toByte()), class348_sub1.method2723(-1), class348_sub1.method2720(-1), `is`)
     }
@@ -122,10 +122,10 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         anInt5151 = -1
         var i_66_ = 0
         val fs = FloatArray(aNodeDeque_5149.method1998(0))
-        var class348_sub1 = aNodeDeque_5149.method1995(4) as? Class348_Sub1?
+        var class348_sub1 = aNodeDeque_5149.method1995(4) as? AbstractTileShape?
         while (class348_sub1 != null) {
             fs[i_66_++] = class348_sub1.method2721(-65)
-            class348_sub1 = aNodeDeque_5149.method1990(40.toByte()) as? Class348_Sub1?
+            class348_sub1 = aNodeDeque_5149.method1990(40.toByte()) as? AbstractTileShape?
         }
         q(fs)
         for (i_67_ in 0..<i_64_ + i_64_) {

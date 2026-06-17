@@ -393,7 +393,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         return method3629(i, i_157_, false)
     }
 
-    override fun method3642(i: Int, class348_sub1s: Array<Class348_Sub1?>?) {
+    override fun method3642(i: Int, class348_sub1s: Array<AbstractTileShape?>?) {
         var i_158_ = 0
         for (i_159_ in 0..<i) {
             anIntArray5130[i_158_++] = class348_sub1s!![i_159_]!!.method2724(-1)
@@ -414,8 +414,8 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    override fun method3690(i: Int, i_167_: Int, i_168_: Int, i_169_: Int, i_170_: Int, f: Float): Class348_Sub1 {
-        return Class348_Sub1_Sub2(i, i_167_, i_168_, i_169_, i_170_, f)
+    override fun method3690(i: Int, i_167_: Int, i_168_: Int, i_169_: Int, i_170_: Int, f: Float): AbstractTileShape {
+        return HashTileShape(i, i_167_, i_168_, i_169_, i_170_, f)
     }
 
     override fun method3677(canvas: Canvas?) {
@@ -577,7 +577,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         aBoolean5142 = false
         do {
             try {
-                if (!Class348_Sub40_Sub19.method3098(-30282, "sw3d")) throw RuntimeException("")
+                if (!BlankTextureNode.method3098(-30282, "sw3d")) throw RuntimeException("")
                 RequestGate.method1949((-128).toByte())
                 MA(aRenderConfig4579, 0, 0)
                 Class59_Sub2_Sub1.method566(false, true, 23.toByte())

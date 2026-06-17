@@ -47,7 +47,7 @@ class Class69 {
         }
 
         @JvmStatic
-        fun method721(class348_sub42: Class348_Sub42?, class348_sub42_1_: Class348_Sub42?, i: Int) {
+        fun method721(class348_sub42: HashLinkedListNode?, class348_sub42_1_: HashLinkedListNode?, i: Int) {
             do {
                 try {
                     if (class348_sub42_1_!!.aClass348_Sub42_7060 != null) class348_sub42_1_.method3162(true)
@@ -59,7 +59,7 @@ class Class69 {
                     if (i == -1) break
                     aClass69_1199 = null
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("kea.B(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_1_ != null) "{...}" else "null") + ',' + i + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("kea.B(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_1_ != null) "{...}" else "null") + ',' + i + ')'))
                 }
                 break
             } while (false)

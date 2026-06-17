@@ -3,7 +3,7 @@ import WidgetNodeLink.Companion.method1197
 import HostPingThread.Companion.method1301
 import ParticleDetailOptionState.Companion.method1796
 import RemoveRoofsOptionState.Companion.method1813
-import Class348_Sub23_Sub1.Companion.method2967
+import VorbisOggDecoder.Companion.method2967
 import Class367_Sub8.Companion.method3549
 import OutputStream_Sub2.Companion.method136
 
@@ -137,15 +137,15 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, class51: Cla
     private fun method2491(i: Byte, bool: Boolean, i_5_: Int, var_renderer: Renderer?): ModelOrSpriteHolder? {
         if (i.toInt() != -51) aNodeDeque_10125 = null
         anInt10142++
-        val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, 0xffff and aShort10129.toInt())
+        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, 0xffff and aShort10129.toInt())
         val var_terrainTile: TerrainTile?
         val var_terrainTile_6_: TerrainTile?
         if (aBoolean10138) {
             var_terrainTile = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
-            var_terrainTile_6_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![0]
+            var_terrainTile_6_ = TerrainTileShape.aTerrainTileArray8801!![0]
         } else {
-            var_terrainTile = (Class348_Sub1_Sub1.aTerrainTileArray8801!![this.aByte6376.toInt()])
-            if (this.aByte6376 < 3) var_terrainTile_6_ = (Class348_Sub1_Sub1.aTerrainTileArray8801!![this.aByte6376 - -1])
+            var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            if (this.aByte6376 < 3) var_terrainTile_6_ = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376 - -1])
             else var_terrainTile_6_ = null
         }
         return class51.method476(var_renderer, var_terrainTile_6_, aByte10145.toInt(), i_5_, this.x, bool, var_terrainTile, this.anInt6382, this.y, aByte10118.toInt(), 128)
@@ -174,7 +174,7 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, class51: Cla
                 aClass64_10124 = class2.aClass64_119
                 aRenderNode10128 = class2.aRenderNode118
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("co.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("co.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
             }
             break
         } while (false)

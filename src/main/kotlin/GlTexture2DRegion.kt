@@ -73,7 +73,7 @@ class GlTexture2DRegion : GlTexture2D {
             this.aBoolean9941 = false
             this.method1965(false, false, 10243)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_21_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_21_ + ')'))
         }
     }
 
@@ -91,7 +91,7 @@ class GlTexture2DRegion : GlTexture2D {
             this.anInt9939 = i_23_
             this.anInt9940 = i_22_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ')'))
         }
     }
 
@@ -105,7 +105,7 @@ class GlTexture2DRegion : GlTexture2D {
             this.aBoolean9941 = false
             this.method1965(false, false, 10243)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_26_ + ',' + i_27_ + ',' + i_28_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_26_ + ',' + i_27_ + ',' + i_28_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -123,7 +123,7 @@ class GlTexture2DRegion : GlTexture2D {
             }
             this.anInt9939 = i_31_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_32_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_32_ + ')'))
         }
     }
 
@@ -136,21 +136,21 @@ class GlTexture2DRegion : GlTexture2D {
             anInt9942++
             Class59_Sub1_Sub1.method556(false)
             TileRenderState.method2681(9864)
-            Class348_Sub22.method2959(-1)
-            Class348_Sub23.method2965(string, i_11_, bool, 0)
-            Class348_Sub24.method2994(2)
-            VarpStore.method1311(5139, Class348_Sub8.aRenderer6654!!)
-            method3568(Class348_Sub8.aRenderer6654, 4)
-            ModelHeaderCache.method1933(CameraRotationStub.aClass45_322, Class348_Sub8.aRenderer6654, true)
+            NpcReference.method2959(-1)
+            OggBitstreamDecoder.method2965(string, i_11_, bool, 0)
+            ClientGameLoopNode.method2994(2)
+            VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
+            method3568(FacingDirectionNode.aRenderer6654, 4)
+            ModelHeaderCache.method1933(CameraRotationStub.aClass45_322, FacingDirectionNode.aRenderer6654, true)
             LocalizedText.method2061(-128)
             method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
             Class354.method3466(i xor 0x4f.inv())
-            Class348_Sub40.method3038(-1)
-            if (WorldMapRenderer.anInt4674 == 3) Class348_Sub49.method3379(2, 4)
-            else if (WorldMapRenderer.anInt4674 == 7) Class348_Sub49.method3379(2, 8)
+            AbstractProceduralTextureNode.method3038(-1)
+            if (WorldMapRenderer.anInt4674 == 3) Buffer.method3379(2, 4)
+            else if (WorldMapRenderer.anInt4674 == 7) Buffer.method3379(2, 8)
             else if (WorldMapRenderer.anInt4674 != 10) {
                 if (WorldMapRenderer.anInt4674 == 1 || WorldMapRenderer.anInt4674 == 2) method3616(12639)
-            } else Class348_Sub49.method3379(2, 11)
+            } else Buffer.method3379(2, 11)
         }
     }
 }

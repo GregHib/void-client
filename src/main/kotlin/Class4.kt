@@ -1,7 +1,7 @@
 /* Class4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class4 internal constructor(`is`: ByteArray, class348_sub33: Class348_Sub33?) {
+class Class4 internal constructor(`is`: ByteArray, class348_sub33: AnimationFrameDefinition?) {
     var anInt126: Int = 0
     var aShortArray128: ShortArray? = null
     @JvmField
@@ -10,7 +10,7 @@ class Class4 internal constructor(`is`: ByteArray, class348_sub33: Class348_Sub3
     @JvmField
     var aBoolean131: Boolean = false
     var aByteArray132: ByteArray? = null
-    var aClass348_Sub33_134: Class348_Sub33? = null
+    var aClass348_Sub33_134: AnimationFrameDefinition? = null
     var aShortArray135: ShortArray? = null
     var aShortArray137: ShortArray? = null
     @JvmField
@@ -20,8 +20,8 @@ class Class4 internal constructor(`is`: ByteArray, class348_sub33: Class348_Sub3
     init {
         this.aClass348_Sub33_134 = class348_sub33
         try {
-            val class348_sub49 = Class348_Sub49(`is`)
-            val class348_sub49_0_ = Class348_Sub49(`is`)
+            val class348_sub49 = Buffer(`is`)
+            val class348_sub49_0_ = Buffer(`is`)
             class348_sub49.readUnsignedByte(255)
             class348_sub49.anInt7197 += 2
             val i = class348_sub49.readUnsignedByte(255) //byte

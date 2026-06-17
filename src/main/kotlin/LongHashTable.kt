@@ -2,10 +2,10 @@
 * Visit http://jode.sourceforge.net/
 */
 class LongHashTable internal constructor(private val anInt448: Int) {
-    private val aClass348_Sub42Array452: Array<Class348_Sub42?>
+    private val aClass348_Sub42Array452: Array<HashLinkedListNode?>
     private var aLong453: Long = 0
-    private var aClass348_Sub42_454: Class348_Sub42? = null
-    fun method334(l: Long, i: Byte): Class348_Sub42? {
+    private var aClass348_Sub42_454: HashLinkedListNode? = null
+    fun method334(l: Long, i: Byte): HashLinkedListNode? {
         try {
             aLong453 = l
             anInt449++
@@ -23,11 +23,11 @@ class LongHashTable internal constructor(private val anInt448: Int) {
             aClass348_Sub42_454 = null
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "ib.C(" + l + ',' + i + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "ib.C(" + l + ',' + i + ')')
         }
     }
 
-    fun method335(class348_sub42: Class348_Sub42?, i: Int, l: Long) {
+    fun method335(class348_sub42: HashLinkedListNode?, i: Int, l: Long) {
         try {
             anInt447++
             if (i != -8098) aClass348_Sub42_454 = null
@@ -39,21 +39,21 @@ class LongHashTable internal constructor(private val anInt448: Int) {
             class348_sub42.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42
             class348_sub42.aLong7057 = l
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ib.A(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ',' + l + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ib.A(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ',' + l + ')'))
         }
     }
 
     init {
-        aClass348_Sub42Array452 = arrayOfNulls<Class348_Sub42>(anInt448)
+        aClass348_Sub42Array452 = arrayOfNulls<HashLinkedListNode>(anInt448)
         for (i_2_ in 0..<anInt448) {
-            aClass348_Sub42Array452[i_2_] = Class348_Sub42()
+            aClass348_Sub42Array452[i_2_] = HashLinkedListNode()
             val class348_sub42 = aClass348_Sub42Array452[i_2_]!!
             class348_sub42.aClass348_Sub42_7063 = class348_sub42
             class348_sub42.aClass348_Sub42_7060 = class348_sub42
         }
     }
 
-    fun method336(bool: Boolean): Class348_Sub42? {
+    fun method336(bool: Boolean): HashLinkedListNode? {
         anInt455++
         if (aClass348_Sub42_454 == null) return null
         if (bool != true) return null

@@ -55,7 +55,7 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
             if (i != -1636518164) anInt5252 = -40
             HeapInfoRecord.aClass356_4934!!.method3481(0)
             anInt5251++
-            Class348_Sub42_Sub9_Sub1.aClass356_10442!!.method3481(0)
+            HardKeyedCacheEntryReference.aClass356_10442!!.method3481(0)
         }
 
         @JvmStatic
@@ -66,11 +66,11 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
                 if (!Class5_Sub1.aBoolean8335 && Class73.anInt4776 < 500) {
                     i_8_ = if (i_8_ != -1) i_8_ else Class362.anInt4458
                     if (i_0_ >= -65) method469(19.toByte())
-                    val class348_sub42_sub12 = Class348_Sub42_Sub12(string_6_, string, i_8_, i_5_, i_3_, l_7_, i_2_, i, bool_4_, bool, l, bool_1_)
+                    val class348_sub42_sub12 = ContactEntry(string_6_, string, i_8_, i_5_, i_3_, l_7_, i_2_, i, bool_4_, bool, l, bool_1_)
                     method3743(6.toByte(), class348_sub42_sub12)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("hc.B(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool_4_ + ',' + i_5_ + ',' + l + ',' + (if (string_6_ != null) "{...}" else "null") + ',' + l_7_ + ',' + i_8_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("hc.B(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool_4_ + ',' + i_5_ + ',' + l + ',' + (if (string_6_ != null) "{...}" else "null") + ',' + l_7_ + ',' + i_8_ + ')'))
             }
         }
 

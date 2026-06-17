@@ -1,4 +1,4 @@
-import Class348_Sub23_Sub4.Companion.method2988
+import KaraokeSubtitleStream.Companion.method2988
 import Class89.Companion.method850
 
 /* Class108 - Decompiled by JODE
@@ -39,10 +39,10 @@ object GroundItemRenderState {
             val f_15_ = f_1_ + f_9_ * f_6_
             val i_16_ = f_13_.toInt() shr 9
             val i_17_ = f_15_.toInt() shr 9
-            if (i_16_ > 0 && i_17_ > 0 && Class367_Sub4.anInt7319 > i_16_ && (i_17_ < Class348_Sub40_Sub3.anInt9109)) {
+            if (i_16_ > 0 && i_17_ > 0 && Class367_Sub4.anInt7319 > i_16_ && (i_17_ < RangeThresholdTextureNode.anInt9109)) {
                 var i_18_ = (LocalPlayerState.aPlayer_1907!!.plane).toInt()
-                if (i_18_ < 3 && ((Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_16_]!![i_17_]).toInt() and 0x2) != 0) i_18_++
-                val i_19_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_18_]!!.method3986(f_13_.toInt(), f_15_.toInt(), 109.toByte())
+                if (i_18_ < 3 && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_16_]!![i_17_]).toInt() and 0x2) != 0) i_18_++
+                val i_19_ = TerrainTileShape.aTerrainTileArray8801!![i_18_]!!.method3986(f_13_.toInt(), f_15_.toInt(), 109.toByte())
                 if (f_14_ > i_19_.toFloat()) {
                     if (i < 2) return f_6_
                     return (f_6_ - 0.1f + method1012(f_11_, f_13_, f_12_, f_15_, i - 1, f_10_, 122.toByte(), f_14_) * 0.1f)
@@ -66,18 +66,18 @@ object GroundItemRenderState {
 
     fun method1014(i: Int) {
         anInt1660++
-        var class348_sub42_sub6 = OpenGlRenderNode.aNodeDeque_10492!!.method1995(4) as? Class348_Sub42_Sub6
+        var class348_sub42_sub6 = OpenGlRenderNode.aNodeDeque_10492!!.method1995(4) as? ChatScriptListNode
         while (class348_sub42_sub6 != null) {
             val class318_sub1_sub3_sub4 = (class348_sub42_sub6.aClass318_Sub1_Sub3_Sub4_9538)!!
             if (class318_sub1_sub3_sub4.aBoolean10345) {
                 class348_sub42_sub6.method2715(76.toByte())
                 class318_sub1_sub3_sub4.method2466(false)
             } else if (Class367_Sub11.anInt7396 >= (class318_sub1_sub3_sub4.anInt10349)) {
-                class318_sub1_sub3_sub4.method2470(Class348_Sub51.anInt7267, ((-16).toByte()).toByte())
+                class318_sub1_sub3_sub4.method2470(DisplaySettingsConfig.anInt7267, ((-16).toByte()).toByte())
                 if (class318_sub1_sub3_sub4.aBoolean10345) class348_sub42_sub6.method2715(42.toByte())
                 else method850(class318_sub1_sub3_sub4, true)
             }
-            class348_sub42_sub6 = (OpenGlRenderNode.aNodeDeque_10492!!.method1990(55.toByte()) as? Class348_Sub42_Sub6)
+            class348_sub42_sub6 = (OpenGlRenderNode.aNodeDeque_10492!!.method1990(55.toByte()) as? ChatScriptListNode)
         }
         if (i != -4) aBoolean1661 = false
     }

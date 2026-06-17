@@ -33,11 +33,11 @@ class Class70 {
         fun method726(i: Int) {
             if (i <= 88) anIntArray1204 = null
             anInt1206++
-            if (Class348_Sub42_Sub15.aClass56_9660 != null) {
+            if (TimedTileQueueEntry.aClass56_9660 != null) {
                 Class51.aResourceLoaderThread_897 = ResourceLoaderThread()
-                Class51.aResourceLoaderThread_897!!.method2316(Class348_Sub42_Sub15.aClass56_9660, Class348_Sub42_Sub15.aClass56_9660!!.aLocalizedText_1012!!.method2063(Class348_Sub33.anInt6967, 544), Class348_Sub42_Sub15.aClass56_9660!!.anInt1025, DataHolder.aLong3660, false)
-                Class348_Sub32.aThread6946 = Thread(Class51.aResourceLoaderThread_897, "")
-                Class348_Sub32.aThread6946!!.start()
+                Class51.aResourceLoaderThread_897!!.method2316(TimedTileQueueEntry.aClass56_9660, TimedTileQueueEntry.aClass56_9660!!.aLocalizedText_1012!!.method2063(AnimationFrameDefinition.anInt6967, 544), TimedTileQueueEntry.aClass56_9660!!.anInt1025, DataHolder.aLong3660, false)
+                TerrainShadowBuilderGl2.aThread6946 = Thread(Class51.aResourceLoaderThread_897, "")
+                TerrainShadowBuilderGl2.aThread6946!!.start()
             }
         }
 

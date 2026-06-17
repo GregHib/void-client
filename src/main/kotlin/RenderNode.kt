@@ -3,7 +3,7 @@ import kotlin.concurrent.Volatile
 /* r - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class RenderNode : Class348_Sub42() {
+abstract class RenderNode : HashLinkedListNode() {
     companion object {
         @JvmField
         var aWidgetRedrawTracker_9716: WidgetRedrawTracker? = WidgetRedrawTracker()

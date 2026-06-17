@@ -47,7 +47,7 @@ abstract class GlVertexBufferBase {
             glBufferDataARBub(i, anInt1921, `is`, 0, if (aBoolean1923) 35040 else 35044)
             this.aHa_Sub2_1927!!.anInt7747 += anInt1921
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bi.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bi.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ')'))
         }
     }
 
@@ -63,7 +63,7 @@ abstract class GlVertexBufferBase {
             glBufferDataARBa(i, anInt1921, buffer!!.getAddress(), if (!aBoolean1923) 35044 else 35040)
             this.aHa_Sub2_1927!!.anInt7747 += anInt1921
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bi.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bi.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ')'))
         }
     }
 

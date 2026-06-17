@@ -40,7 +40,7 @@ class InputStream_Sub1 : InputStream() {
         @JvmStatic
         fun method125(i: Int, i_0_: Int, i_1_: Int, class318_sub1_sub4: ActorEntity?, i_2_: Byte): Boolean {
             anInt72++
-            if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
+            if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             if (!IndexedSprite.method164(i_1_, i_0_, (-97).toByte(), i)) return false
             val i_3_ = i_0_ shl Class362.anInt4459
@@ -73,22 +73,22 @@ class InputStream_Sub1 : InputStream() {
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 16) {
-                if (!MinimapFlagRenderer.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, Class348_Sub23_Sub2.anInt9037 + i_4_, i_3_, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
+                if (!MinimapFlagRenderer.method1084(i_6_, TheoraVideoStream.anInt9037, TheoraVideoStream.anInt9037 + i_4_, i_3_, i_5_, TheoraVideoStream.anInt9037, 18507)) return false
                 Class42.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 32) {
-                if (!MinimapFlagRenderer.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, Class348_Sub23_Sub2.anInt9037 + i_4_, i_3_ + Class348_Sub23_Sub2.anInt9037, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
+                if (!MinimapFlagRenderer.method1084(i_6_, TheoraVideoStream.anInt9037, TheoraVideoStream.anInt9037 + i_4_, i_3_ + TheoraVideoStream.anInt9037, i_5_, TheoraVideoStream.anInt9037, 18507)) return false
                 Class42.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 64) {
-                if (!MinimapFlagRenderer.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, i_4_, Class348_Sub23_Sub2.anInt9037 + i_3_, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
+                if (!MinimapFlagRenderer.method1084(i_6_, TheoraVideoStream.anInt9037, i_4_, TheoraVideoStream.anInt9037 + i_3_, i_5_, TheoraVideoStream.anInt9037, 18507)) return false
                 Class42.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 128) {
-                if (!MinimapFlagRenderer.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, i_4_, i_3_, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
+                if (!MinimapFlagRenderer.method1084(i_6_, TheoraVideoStream.anInt9037, i_4_, i_3_, i_5_, TheoraVideoStream.anInt9037, 18507)) return false
                 Class42.anInt562++
                 return true
             }
@@ -99,13 +99,13 @@ class InputStream_Sub1 : InputStream() {
         fun method126(i: Int) {
             ProjectedGroundDecor.method2433()
             anInt73++
-            for (i_7_ in 0..3) Class348_Sub45.aClass361Array7108!![i_7_]!!.method3500(700)
+            for (i_7_ in 0..3) TimedRecordAccessor.aClass361Array7108!![i_7_]!!.method3500(700)
             if (i != -16203) Companion.method125(125, -95, 109, null, (-52).toByte())
             Class50_Sub2.method464(-1)
-            Class348_Sub18.method2938(98.toByte())
+            InterfaceBounds.method2938(98.toByte())
             BloomGraphicsOptionState.method1772(28)
             System.gc()
-            Class348_Sub8.aRenderer6654!!.ya()
+            FacingDirectionNode.aRenderer6654!!.ya()
         }
 
         init {
@@ -132,17 +132,17 @@ class InputStream_Sub1 : InputStream() {
                 val i_15_ = -8 + i * 8
                 aLongArray76!![i] = (GlSpriteRenderer.method993(
                     (GlSpriteRenderer.method993(
-                        Class348_Sub8.method2777(aLongArrayArray75!![6]!![6 + i_15_], 65280L),
+                        FacingDirectionNode.method2777(aLongArrayArray75!![6]!![6 + i_15_], 65280L),
                         (GlSpriteRenderer.method993(
-                            Class348_Sub8.method2777((aLongArrayArray75!![5]!![5 + i_15_]), 16711680L),
+                            FacingDirectionNode.method2777((aLongArrayArray75!![5]!![5 + i_15_]), 16711680L),
                             (GlSpriteRenderer.method993(
                                 (GlSpriteRenderer.method993(
-                                    (GlSpriteRenderer.method993(Class348_Sub8.method2777((aLongArrayArray75!![2]!![i_15_ + 2]), 280375465082880L), (GlSpriteRenderer.method993(Class348_Sub8.method2777(71776119061217280L, (aLongArrayArray75!![1]!![1 + i_15_])), (Class348_Sub8.method2777(aLongArrayArray75!![0]!![i_15_], -72057594037927936L)))))),
-                                    Class348_Sub8.method2777(1095216660480L, (aLongArrayArray75!![3]!![3 + i_15_]))
-                                )), Class348_Sub8.method2777((aLongArrayArray75!![4]!![i_15_ - -4]), 4278190080L)
+                                    (GlSpriteRenderer.method993(FacingDirectionNode.method2777((aLongArrayArray75!![2]!![i_15_ + 2]), 280375465082880L), (GlSpriteRenderer.method993(FacingDirectionNode.method2777(71776119061217280L, (aLongArrayArray75!![1]!![1 + i_15_])), (FacingDirectionNode.method2777(aLongArrayArray75!![0]!![i_15_], -72057594037927936L)))))),
+                                    FacingDirectionNode.method2777(1095216660480L, (aLongArrayArray75!![3]!![3 + i_15_]))
+                                )), FacingDirectionNode.method2777((aLongArrayArray75!![4]!![i_15_ - -4]), 4278190080L)
                             ))
                         ))
-                    )), Class348_Sub8.method2777(aLongArrayArray75!![7]!![7 + i_15_], 255L)
+                    )), FacingDirectionNode.method2777(aLongArrayArray75!![7]!![7 + i_15_], 255L)
                 ))
             }
             aClass351_77 = Class351(8, 1)

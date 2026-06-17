@@ -1,5 +1,5 @@
 import ModelHeaderCache.Companion.method1935
-import Class348_Sub23_Sub1.Companion.method2967
+import VorbisOggDecoder.Companion.method2967
 import OutputStream_Sub2.Companion.method136
 import jaggl.OpenGL.Companion.glAttachObjectARB
 import jaggl.OpenGL.Companion.glCreateProgramObjectARB
@@ -137,7 +137,7 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, class51:
             this.aSceneObjectAnimator_10155 = SceneObjectAnimator(var_renderer, class51, i_11_, i_12_, this.plane.toInt(), i_5_, this, bool, i_13_)
             aBoolean10153 = class51!!.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pw.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("pw.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
         }
     }
 
@@ -209,7 +209,7 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, class51:
                 }
                 return GlShaderProgramHandle(var_ha_Sub2, l, managedGlResources)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("pw.D(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("pw.D(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
             }
         }
 

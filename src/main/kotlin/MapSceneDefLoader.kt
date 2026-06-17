@@ -25,7 +25,7 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         }
         cameraConfigDefinition = CameraConfigDefinition()
         val i_2_ = 50 / ((i - -63) / 56)
-        if (`is` != null) cameraConfigDefinition.method1921((-69).toByte(), Class348_Sub49(`is`))
+        if (`is` != null) cameraConfigDefinition.method1921((-69).toByte(), Buffer(`is`))
         synchronized(aClass60_2479) {
             aClass60_2479.method582(cameraConfigDefinition, i_1_.toLong(), (-108).toByte())
         }
@@ -52,7 +52,7 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
             aClass45_2480 = class45
             aClass45_2480!!.method407(0, 31)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qf.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qf.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

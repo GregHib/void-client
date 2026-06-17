@@ -13,7 +13,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     @JvmField
     var anInt8235: Int = 0
     private val aByteArrayArray8240: Array<ByteArray?>
-    private var aClass348_Sub20ArrayArrayArray8243: Array<Array<Array<Class348_Sub20?>?>?>?
+    private var aClass348_Sub20ArrayArrayArray8243: Array<Array<Array<TextureTileRenderer?>?>?>?
     private var anIntArrayArrayArray8245: Array<Array<IntArray?>?>?
     private var anInt8246 = 0
     private var anIntArrayArrayArray8252: Array<Array<IntArray?>?>? = null
@@ -43,7 +43,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     private var anInterface2_8279: Interface2? = null
     private var anInt8280 = 0
     private var aFloatArrayArray8281: Array<FloatArray?>?
-    private var aClass348_Sub20Array8282: Array<Class348_Sub20?>? = null
+    private var aClass348_Sub20Array8282: Array<TextureTileRenderer?>? = null
     private var aFloatArrayArray8283: Array<FloatArray?>?
     private var anInt8284 = 0
     private var aFloatArrayArray8285: Array<FloatArray?>?
@@ -104,7 +104,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             }
             U(i, i_5_, is_20_, is_26_, is_21_, is_27_, is_22_, is_23_, is_24_, is_25_, i_16_, i_17_, i_18_, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(
+            throw SoundBankPatch.method2929(
                 runtimeexception,
                 ("ed.E(" + i + ',' + i_5_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_6_ != null) "{...}" else "null") + ',' + (if (is_7_ != null) "{...}" else "null") + ',' + (if (is_8_ != null) "{...}" else "null") + ',' + (if (is_9_ != null) "{...}" else "null") + ',' + (if (is_10_ != null) "{...}" else "null") + ',' + (if (is_11_ != null) "{...}" else "null") + ',' + (if (is_12_ != null) "{...}" else "null") + ',' + (if (is_13_ != null) "{...}" else "null") + ',' + (if (is_14_ != null) "{...}" else "null") + ',' + (if (is_15_ != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ')')
             )
@@ -118,8 +118,8 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             for (i in 1..<this.anInt4587) {
                 for (i_33_ in 1..<this.anInt4590) `is`[i]!![i_33_] = ((aByteArrayArray8273!![i]!![1 + i_33_].toInt() shr 3) + (aByteArrayArray8273!![i]!![-1 + i_33_].toInt() shr 2) + ((aByteArrayArray8273!![i + 1]!![i_33_].toInt() shr 3) + ((aByteArrayArray8273!![i - 1]!![i_33_].toInt() shr 2) + (aByteArrayArray8273!![i]!![i_33_].toInt() shr 1)))).toByte()
             }
-            aClass348_Sub20Array8282 = arrayOfNulls<Class348_Sub20>(aClass356_8278!!.method3474(1))
-            aClass356_8278!!.method3477(3, aClass348_Sub20Array8282 as Array<Class348?>)
+            aClass348_Sub20Array8282 = arrayOfNulls<TextureTileRenderer>(aClass356_8278!!.method3474(1))
+            aClass356_8278!!.method3477(3, aClass348_Sub20Array8282 as Array<LinkedListNode?>)
             run {
                 var i = 0
                 while (aClass348_Sub20Array8282!!.size > i) {
@@ -132,11 +132,11 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             if ((0x7 and this.anInt8235) != 0) i += 12
             val nativeheapbuffer = this.aHa_Sub2_8272!!.aNativeHeap7730!!.a(anInt8284 * i, false)
             val stream = Stream(nativeheapbuffer)
-            val class348_sub20s = arrayOfNulls<Class348_Sub20>(anInt8284)
-            var i_34_ = Class348_Sub40_Sub1.method3051(anInt8284 / 4, 4096)
+            val class348_sub20s = arrayOfNulls<TextureTileRenderer>(anInt8284)
+            var i_34_ = ColorThresholdEffect.method3051(anInt8284 / 4, 4096)
             if (i_34_ < 1) i_34_ = 1
             val class356 = Class356(i_34_)
-            val class348_sub20s_35_ = arrayOfNulls<Class348_Sub20>(anInt8280)
+            val class348_sub20s_35_ = arrayOfNulls<TextureTileRenderer>(anInt8280)
             var i_36_ = 0
             while (this.anInt4587 > i_36_) {
                 var i_37_ = 0
@@ -248,10 +248,10 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                 }
                                 i_75_ = (ParticleEmitterNode.anIntArray179!![0xff80 and i_69_ or i_90_])
                             }
-                            var class348: Class348? = null
-                            if ((i_65_ and -1 + anInt8260) == 0 && (anInt8260 + -1 and i_66_) == 0) class348 = class356.method3480(l, -6008)
+                            var linkedListNode: LinkedListNode? = null
+                            if ((i_65_ and -1 + anInt8260) == 0 && (anInt8260 + -1 and i_66_) == 0) linkedListNode = class356.method3480(l, -6008)
                             val i_91_: Int
-                            if (class348 == null) {
+                            if (linkedListNode == null) {
                                 var i_92_: Int
                                 if (i_69_ != i_70_) {
                                     var i_93_ = (i_70_ and 0x7f) * i_74_ shr 7
@@ -313,9 +313,9 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                 i_91_ = anInt8246++
                                 is_63_[i_64_] = i_91_.toShort()
                                 if (i_69_ != -1) class348_sub20s[i_91_] = class348_sub20s_38_[i_64_]
-                                class356.method3483(114.toByte(), l, Class348_Sub29(is_63_[i_64_]))
+                                class356.method3483(114.toByte(), l, ShortKeyNode(is_63_[i_64_]))
                             } else {
-                                is_63_[i_64_] = (class348 as Class348_Sub29).aShort6911
+                                is_63_[i_64_] = (linkedListNode as ShortKeyNode).aShort6911
                                 i_91_ = 0xffff and is_63_[i_64_].toInt()
                                 if (i_69_ != -1 && ((class348_sub20s[i_91_]!!.aLong4291) > class348_sub20s_38_[i_64_]!!.aLong4291)) class348_sub20s[i_91_] = class348_sub20s_38_[i_64_]
                             }
@@ -348,7 +348,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                             val class348_sub20 = class348_sub20s[i_105_]
                             val class348_sub20_108_ = class348_sub20s[i_106_]
                             val class348_sub20_109_ = class348_sub20s[i_107_]
-                            var class348_sub20_110_: Class348_Sub20? = null
+                            var class348_sub20_110_: TextureTileRenderer? = null
                             if (class348_sub20 != null) {
                                 class348_sub20.method2945(i_100_, 18.toByte(), i_101_, i_103_)
                                 class348_sub20_110_ = class348_sub20
@@ -516,7 +516,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 this.aHa_Sub2_8272!!.method3796(16384)
             }
             this.aHa_Sub2_8272!!.method3794(this.aHoverActionEntry_8276, aHoverActionEntry_8274, -26411, this.aHoverActionEntry_8277, this.aHoverActionEntry_8275)
-            if (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154!!.size < anInt8257 * 2) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(anInt8257 * 2)
+            if (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154!!.size < anInt8257 * 2) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = FloatBuffer(anInt8257 * 2)
             else this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.anInt7197 = 0
             var i_158_ = 0
             val class348_sub49_sub1 = (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798)!!
@@ -585,12 +585,12 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
         method4003(i_174_, i_173_, bool, -62, i, i_175_, bools!!, i_172_)
     }
 
-    override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
+    override fun method3981(class348_sub1: AbstractTileShape, `is`: IntArray) {
         try {
             anInt8271++
-            aNodeDeque_8256.method1999(Class348_Sub32((this.aHa_Sub2_8272), this, class348_sub1, `is`), -20180)
+            aNodeDeque_8256.method1999(TerrainShadowBuilderGl2((this.aHa_Sub2_8272), this, class348_sub1, `is`), -20180)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ed.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ed.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -606,7 +606,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             anIntArrayArrayArray8245!![i]!![i_176_] = is_181_
             if (anIntArrayArrayArray8252 != null) anIntArrayArrayArray8252!![i]!![i_176_] = is_179_
             if (anIntArrayArrayArray8258 != null) anIntArrayArrayArray8258!![i]!![i_176_] = is_177_
-            val class348_sub20s = (arrayOfNulls<Class348_Sub20>(is_180_.size).also { aClass348_Sub20ArrayArrayArray8243!![i]!![i_176_] = it })
+            val class348_sub20s = (arrayOfNulls<TextureTileRenderer>(is_180_.size).also { aClass348_Sub20ArrayArrayArray8243!![i]!![i_176_] = it })
             for (i_187_ in is_180_.indices) {
                 var i_188_ = is_182_!![i_187_]
                 var i_189_ = is_183_!![i_187_]
@@ -615,23 +615,23 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                     i_189_ = 128
                 }
                 val l = (i_184_.toLong() shl 28 or (i_185_.toLong() shl 42 or (i_186_.toLong() shl 48)) or (i_189_ shl 14).toLong() or i_188_.toLong())
-                var class348: Class348?
-                class348 = aClass356_8278!!.method3480(l, -6008)
-                while (class348 != null) {
-                    val class348_sub20 = class348 as Class348_Sub20
+                var linkedListNode: LinkedListNode?
+                linkedListNode = aClass356_8278!!.method3480(l, -6008)
+                while (linkedListNode != null) {
+                    val class348_sub20 = linkedListNode as TextureTileRenderer
                     if (i_188_ == class348_sub20.anInt6841 && (class348_sub20.aFloat6832 == i_189_.toFloat()) && (class348_sub20.anInt6825 == i_184_) && (i_185_ == class348_sub20.anInt6833) && (class348_sub20.anInt6826 == i_186_)) break
-                    class348 = aClass356_8278!!.method3476(true)
+                    linkedListNode = aClass356_8278!!.method3476(true)
                 }
-                if (class348 == null) {
-                    class348_sub20s[i_187_] = Class348_Sub20(this, i_188_, i_189_, i_184_, i_185_, i_186_)
+                if (linkedListNode == null) {
+                    class348_sub20s[i_187_] = TextureTileRenderer(this, i_188_, i_189_, i_184_, i_185_, i_186_)
                     aClass356_8278!!.method3483(99.toByte(), l, class348_sub20s[i_187_])
-                } else class348_sub20s[i_187_] = class348 as Class348_Sub20
+                } else class348_sub20s[i_187_] = linkedListNode as TextureTileRenderer
             }
             if (bool) aByteArrayArray8240[i]!![i_176_] = BoundsConstraintEntry.method2057((aByteArrayArray8240[i]!![i_176_]).toInt(), 1).toByte()
             if (is_180_.size > anInt8280) anInt8280 = is_180_.size
             anInt8284 += is_180_.size
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(
+            throw SoundBankPatch.method2929(
                 runtimeexception,
                 ("ed.U(" + i + ',' + i_176_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_177_ != null) "{...}" else "null") + ',' + (if (is_178_ != null) "{...}" else "null") + ',' + (if (is_179_ != null) "{...}" else "null") + ',' + (if (is_180_ != null) "{...}" else "null") + ',' + (if (is_181_ != null) "{...}" else "null") + ',' + (if (is_182_ != null) "{...}" else "null") + ',' + (if (is_183_ != null) "{...}" else "null") + ',' + i_184_ + ',' + i_185_ + ',' + i_186_ + ',' + bool + ')')
             )
@@ -650,7 +650,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             var i_197_ = i_192_ + i_192_ - -1
             i_197_ *= i_197_
             if (this.aHa_Sub2_8272!!.anIntArray7882!!.size < i_197_) this.aHa_Sub2_8272!!.anIntArray7882 = IntArray(i_197_)
-            if (anInt8257 * 2 > (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154)!!.size) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(2 * anInt8257)
+            if (anInt8257 * 2 > (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154)!!.size) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = FloatBuffer(2 * anInt8257)
             var i_198_ = -i_192_ + i_194_
             val i_199_ = i_198_
             if (i_198_ < 0) i_198_ = 0
@@ -697,7 +697,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 this.aHa_Sub2_8272!!.method3775(false, 0, 770, 34167)
                 var class348 = aNodeDeque_8256.method1995(4)
                 while (class348 != null) {
-                    val class348_sub32 = class348 as Class348_Sub32
+                    val class348_sub32 = class348 as TerrainShadowBuilderGl2
                     class348_sub32.method3023(bools, 255, i_194_, i_196_, i_192_)
                     class348 = aNodeDeque_8256.method1990(92.toByte())
                 }
@@ -726,7 +726,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 this.anIntArrayArrayArray8268 = Array<Array<IntArray?>?>(i_134_) { arrayOfNulls<IntArray>(i_135_) }
                 this.anIntArrayArrayArray8253 = Array<Array<IntArray?>?>(i_134_) { arrayOfNulls<IntArray>(i_135_) }
                 aFloatArrayArray8285 = (Array<FloatArray?>(1 + this.anInt4587) { FloatArray(this.anInt4590 + 1) })
-                aClass348_Sub20ArrayArrayArray8243 = Array<Array<Array<Class348_Sub20?>?>?>(i_134_) { arrayOfNulls<Array<Class348_Sub20?>>(i_135_) }
+                aClass348_Sub20ArrayArrayArray8243 = Array<Array<Array<TextureTileRenderer?>?>?>(i_134_) { arrayOfNulls<Array<TextureTileRenderer?>>(i_135_) }
                 anIntArrayArrayArray8258 = Array<Array<IntArray?>?>(i_134_) { arrayOfNulls<IntArray>(i_135_) }
                 aFloatArrayArray8281 = (Array<FloatArray?>(1 + this.anInt4587) { FloatArray(1 + this.anInt4590) })
                 aByteArrayArray8273 = Array<ByteArray?>(1 + i_134_) { ByteArray(i_135_ - -1) }
@@ -753,7 +753,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 if ((0x10 and this.anInt8235) == 0) break
                 aSoftwareSpriteRaster_8266 = SoftwareSpriteRaster(this.aHa_Sub2_8272, this)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ed.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_133_ + ',' + i_134_ + ',' + i_135_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_136_ != null) "{...}" else "null") + ',' + i_137_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ed.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_133_ + ',' + i_134_ + ',' + i_135_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_136_ != null) "{...}" else "null") + ',' + i_137_ + ')'))
             }
             break
         } while (false)
@@ -821,14 +821,14 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
 
         @JvmStatic
         fun method4001(class318_sub1: SceneEntity) {
-            Class9.aRenderer171!!.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, Class348_Sub42_Sub3.anIntArray9505)
-            class318_sub1.anInt6386 = Class348_Sub42_Sub3.anIntArray9505!![0]
-            class318_sub1.anInt6380 = Class348_Sub42_Sub3.anIntArray9505!![1]
-            class318_sub1.anInt6389 = Class348_Sub42_Sub3.anIntArray9505!![2]
+            Class9.aRenderer171!!.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, LoadingScreenImageNode.anIntArray9505)
+            class318_sub1.anInt6386 = LoadingScreenImageNode.anIntArray9505!![0]
+            class318_sub1.anInt6380 = LoadingScreenImageNode.anIntArray9505!![1]
+            class318_sub1.anInt6389 = LoadingScreenImageNode.anIntArray9505!![2]
         }
 
         @JvmStatic
-        fun method4002(class348_sub49: Class348_Sub49, i: Byte) {
+        fun method4002(class348_sub49: Buffer, i: Byte) {
             anInt8248++
             val `is` = ByteArray(24)
             if (i.toInt() == 55) {

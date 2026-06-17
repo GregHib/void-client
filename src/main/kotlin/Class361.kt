@@ -1,7 +1,7 @@
 import NpcSummaryDefinition.Companion.method1166
 import TwoStateOptionState.Companion.method1842
 import BoundsConstraintEntry.Companion.method2057
-import Class348_Sub17.Companion.method2929
+import SoundBankPatch.Companion.method2929
 import Class60.Companion.method589
 import Class75.Companion.method751
 import kotlin.math.max
@@ -777,7 +777,7 @@ class Class361 {
                     anInt4442++
                     var_renderer!!.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i)
                     var_renderer.method3675(i_40_, (-125).toByte(), i_39_, i_41_, i, -16777216)
-                    if (Class348.anInt4290 >= 100) {
+                    if (LinkedListNode.anInt4290 >= 100) {
                         val f = (Class75.anInt1267.toFloat() / Class75.anInt1259.toFloat())
                         var i_42_ = i_40_
                         var i_43_ = i
@@ -797,18 +797,18 @@ class Class361 {
                         if (bool != true) method3498(44, null, -27, -91, true, -26)
                         val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * Class59_Sub1_Sub2.anInt8665 / Class75.anInt1267)))
                         var i_48_ = -1996554240
-                        if (GlRectangleTexture.aSceneProjector_8638 == Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) i_48_ = -1996488705
+                        if (GlRectangleTexture.aSceneProjector_8638 == HardCacheEntryReference.aSceneProjector_10434) i_48_ = -1996488705
                         var_renderer.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1)
                         var_renderer.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0)
                         if (Class367_Sub9.anInt7379 <= 0) break
                         val i_49_: Int
                         if (ClientLoadStateMachine.anInt2173 <= 50) i_49_ = ClientLoadStateMachine.anInt2173 * 5
                         else i_49_ = -(5 * ClientLoadStateMachine.anInt2173) + 500
-                        var class348_sub21 = (Class75.aNodeDeque_1254!!.method1995(4) as Class348_Sub21?)
+                        var class348_sub21 = (Class75.aNodeDeque_1254!!.method1995(4) as CameraSplineNode?)
                         while (class348_sub21 != null) {
                             val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
                             if (method589(class42, -4)) {
-                                if (Class348_Sub40_Sub30.anInt9399 == (class348_sub21.anInt6847)) {
+                                if (HslAdjustTextureNode.anInt9399 == (class348_sub21.anInt6847)) {
                                     val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259))
                                     val i_51_ = (((Class75.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / Class75.anInt1267) + i_41_)
                                     var_renderer.method3675(4, (-125).toByte(), i_50_ - 2, -2 + i_51_, 4, (i_49_ shl 24 or 0xffff00))
@@ -818,7 +818,7 @@ class Class361 {
                                     var_renderer.method3675(4, (-125).toByte(), i_52_ + -2, -2 + i_53_, 4, (i_49_ shl 24 or 0xffff00))
                                 }
                             }
-                            class348_sub21 = Class75.aNodeDeque_1254!!.method1990(126.toByte()) as Class348_Sub21?
+                            class348_sub21 = Class75.aNodeDeque_1254!!.method1990(126.toByte()) as CameraSplineNode?
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {

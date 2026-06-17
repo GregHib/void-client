@@ -1,6 +1,6 @@
 import ServerConnectionInfo.Companion.method1258
-import Class348_Sub40_Sub3.Companion.method3056
-import Class348_Sub40_Sub9.Companion.method3073
+import RangeThresholdTextureNode.Companion.method3056
+import EdgeDetectTextureNode.Companion.method3073
 
 /* Class264 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -111,7 +111,7 @@ class CompassSmoother {
                     var i_8_ = 256
                     if (widgetDefinition.anIntArray236 != null && widgetDefinition.anIntArray265 != null) i_8_ = Texture2DProvider.method2257((widgetDefinition.anIntArray265!![i]), (widgetDefinition.anIntArray236!![i]), (-125).toByte())
                     if (widgetDefinition.aBoolean268) SoundChannelMixer.method2090(i_7_, i_8_, false, (-35).toByte(), 255, 0, i_5_)
-                    else Class348_Sub20.method2947(true, 255, i_5_, i_7_, 0, i_8_)
+                    else TextureTileRenderer.method2947(true, 255, i_5_, i_7_, 0, i_8_)
                 }
             }
         }

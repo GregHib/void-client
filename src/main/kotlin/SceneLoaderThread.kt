@@ -15,7 +15,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
     @Volatile
     private var aBoolean3745 = true
     private val anIntArray3747: IntArray
-    private val aClass348_Sub1Array3748 = arrayOfNulls<Class348_Sub1>(8)
+    private val aClass348_Sub1Array3748 = arrayOfNulls<AbstractTileShape>(8)
 
     @Volatile
     private var aBoolean3750 = true

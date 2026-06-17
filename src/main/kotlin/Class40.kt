@@ -1,4 +1,4 @@
-import Class348_Sub1_Sub3.Companion.method2732
+import ParticleTileShape.Companion.method2732
 
 /* Class40 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -102,7 +102,7 @@ class Class40 internal constructor() {
             anInt551++
             if (i_3_ > 0) {
                 KeyboardInputSource.aBoolean4275 = bool
-                Class348_Sub43.anInt7068 = 1
+                SpriteDefinition.anInt7068 = 1
                 ModelDefinition.aClass45_1848 = class45
                 NpcActorEntity.anInt10074 = i_1_
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = null
@@ -115,16 +115,16 @@ class Class40 internal constructor() {
 
         @JvmStatic
         fun method369(i: Int) {
-            Class348_Sub45.aAbstractModelRendererArray7107 = null
+            TimedRecordAccessor.aAbstractModelRendererArray7107 = null
             CameraDistanceOptionState.aAbstractModelRendererArray5857 = null
-            Class348_Sub12.aAbstractModelRendererArray6742 = null
+            BoundingBoxNode.aAbstractModelRendererArray6742 = null
             WorldMapRenderer.aAbstractModelRendererArray4679 = null
             if (i != -29776) method370(true)
             Class79.aAbstractModelRenderer_1365 = null
             SpriteStore.aAbstractModelRendererArray367 = null
             CustomCursorsOptionState.aAbstractModelRendererArray5933 = null
             ScriptResources.aAbstractModelRendererArray2640 = null
-            Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = null
+            BoxBlurTextureNode.aAbstractModelRendererArray9467 = null
             NodeDeque.aFont_3326 = null
             SceneryDetailOptionState.aAbstractModelRenderer_6097 = null
             GameAppletFrame.aFont_20 = null

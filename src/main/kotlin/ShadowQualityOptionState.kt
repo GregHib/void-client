@@ -22,7 +22,7 @@ class ShadowQualityOptionState : GraphicsOptionState {
         return this.anInt3138
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1712(i: Int, i_6_: Int) {
         anInt6011++
@@ -36,7 +36,7 @@ class ShadowQualityOptionState : GraphicsOptionState {
         return true
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1710(i: Int): Int {
         if (i != 20014) method1789(40)
@@ -98,7 +98,7 @@ class ShadowQualityOptionState : GraphicsOptionState {
                 stringbuffer.setCharAt(0, stringbuffer.get(0).uppercaseChar())
                 return stringbuffer.toString()
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "sba.F(" + i + ',' + l + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "sba.F(" + i + ',' + l + ')')
             }
         }
 
@@ -147,7 +147,7 @@ class ShadowQualityOptionState : GraphicsOptionState {
                     player.anIntArray10236 = `is`
                     player.anInt10218 = i_8_
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("sba.E(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (player != null) "{...}" else "null") + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("sba.E(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (player != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

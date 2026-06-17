@@ -39,10 +39,10 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
             anInt8656++
             if (Class51.aResourceLoaderThread_897 != null) Class51.aResourceLoaderThread_897!!.method2319((-75).toByte())
             if (bool == false) {
-                if (Class348_Sub32.aThread6946 != null) {
+                if (TerrainShadowBuilderGl2.aThread6946 != null) {
                     while (true) {
                         try {
-                            Class348_Sub32.aThread6946!!.join()
+                            TerrainShadowBuilderGl2.aThread6946!!.join()
                             break
                         } catch (interruptedexception: InterruptedException) {
                             /* empty */
@@ -53,7 +53,7 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
         }
 
         @JvmStatic
-        fun method557(i: Int, i_0_: Byte): Class348_Sub40? {
+        fun method557(i: Int, i_0_: Byte): AbstractProceduralTextureNode? {
             val i_1_ = 22 / ((i_0_ - 37) / 63)
             anInt8653++
             val i_2_ = i
@@ -193,84 +193,84 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
                                                                                                                                                                                 } else break
                                                                                                                                                                                 break@while_5_
                                                                                                                                                                             }
-                                                                                                                                                                        } else return Class348_Sub40_Sub15()
-                                                                                                                                                                        return Class348_Sub40_Sub18()
+                                                                                                                                                                        } else return BrightnessTextureNode()
+                                                                                                                                                                        return ConstantColourTextureNode()
                                                                                                                                                                     } while (false)
-                                                                                                                                                                    return Class348_Sub40_Sub19()
+                                                                                                                                                                    return BlankTextureNode()
                                                                                                                                                                 } while (false)
-                                                                                                                                                                return Class348_Sub40_Sub4()
+                                                                                                                                                                return SourceRowTextureNode()
                                                                                                                                                             } while (false)
-                                                                                                                                                            return Class348_Sub40_Sub22()
+                                                                                                                                                            return CellNoiseTextureNode()
                                                                                                                                                         } while (false)
-                                                                                                                                                        return Class348_Sub40_Sub37()
+                                                                                                                                                        return BoxBlurTextureNode()
                                                                                                                                                     } while (false)
-                                                                                                                                                    return Class348_Sub40_Sub38()
+                                                                                                                                                    return ClampTextureNode()
                                                                                                                                                 } while (false)
-                                                                                                                                                return Class348_Sub40_Sub16()
+                                                                                                                                                return CombineTextureNode()
                                                                                                                                             } while (false)
-                                                                                                                                            return Class348_Sub40_Sub14()
+                                                                                                                                            return CurveTextureNode()
                                                                                                                                         } while (false)
-                                                                                                                                        return Class348_Sub40_Sub7()
+                                                                                                                                        return FlipTextureNode()
                                                                                                                                     } while (false)
-                                                                                                                                    return Class348_Sub40_Sub12()
+                                                                                                                                    return GradientLookupEffect()
                                                                                                                                 } while (false)
-                                                                                                                                return Class348_Sub40_Sub26()
+                                                                                                                                return ColourKeyTextureNode()
                                                                                                                             } while (false)
-                                                                                                                            return Class348_Sub40_Sub36()
+                                                                                                                            return SineWaveTextureNode()
                                                                                                                         } while (false)
-                                                                                                                        return Class348_Sub40_Sub20()
+                                                                                                                        return NoiseTextureNode()
                                                                                                                     } while (false)
-                                                                                                                    return Class348_Sub40_Sub11()
+                                                                                                                    return RadialGradientMaskEffect()
                                                                                                                 } while (false)
-                                                                                                                return Class348_Sub40_Sub5()
+                                                                                                                return VoronoiNoiseTextureNode()
                                                                                                             } while (false)
-                                                                                                            return Class348_Sub40_Sub2()
+                                                                                                            return DirectionalStripeTextureNode()
                                                                                                         } while (false)
-                                                                                                        return Class348_Sub40_Sub30()
+                                                                                                        return HslAdjustTextureNode()
                                                                                                     } while (false)
-                                                                                                    return Class348_Sub40_Sub17_Sub1()
+                                                                                                    return SpriteRgbTextureNode()
                                                                                                 } while (false)
-                                                                                                return Class348_Sub40_Sub6()
+                                                                                                return DisplaceTextureNode()
                                                                                             } while (false)
-                                                                                            return Class348_Sub40_Sub31()
+                                                                                            return TileTextureNode()
                                                                                         } while (false)
-                                                                                        return Class348_Sub40_Sub27()
+                                                                                        return BlendTextureNode()
                                                                                     } while (false)
-                                                                                    return Class348_Sub40_Sub32()
+                                                                                    return InvertTextureNode()
                                                                                 } while (false)
-                                                                                return Class348_Sub40_Sub33()
+                                                                                return WarpTextureNode()
                                                                             } while (false)
-                                                                            return Class348_Sub40_Sub13()
+                                                                            return GrayscaleEffect()
                                                                         } while (false)
-                                                                        return (Class348_Sub40_Sub1())
+                                                                        return (ColorThresholdEffect())
                                                                     } while (false)
-                                                                    return (Class348_Sub40_Sub3())
+                                                                    return (RangeThresholdTextureNode())
                                                                 } while (false)
-                                                                return (Class348_Sub40_Sub24())
+                                                                return (GradientMapTextureNode())
                                                             } while (false)
-                                                            return (Class348_Sub40_Sub23())
+                                                            return (TurbulenceTextureNode())
                                                         } while (false)
-                                                        return (Class348_Sub40_Sub39())
+                                                        return (RenderListTextureNode())
                                                     } while (false)
-                                                    return (Class348_Sub40_Sub10())
+                                                    return (BrightnessContrastEffect())
                                                 } while (false)
-                                                return Class348_Sub40_Sub25()
+                                                return RadialTextureNode()
                                             } while (false)
-                                            return Class348_Sub40_Sub35()
+                                            return DirectionalLightTextureNode()
                                         } while (false)
-                                        return Class348_Sub40_Sub34()
+                                        return NormalMapTextureNode()
                                     } while (false)
-                                    return Class348_Sub40_Sub8()
+                                    return PerlinNoiseTextureNode()
                                 } while (false)
-                                return Class348_Sub40_Sub9()
+                                return EdgeDetectTextureNode()
                             } while (false)
-                            return Class348_Sub40_Sub29()
+                            return TextureMapImageNode()
                         } while (false)
-                        return Class348_Sub40_Sub21()
+                        return WeaveTextureNode()
                     } while (false)
-                    return Class348_Sub40_Sub28()
+                    return ScatterTextureNode()
                 } while (false)
-                return Class348_Sub40_Sub17()
+                return SpriteTextureNode()
             } while (false)
             return null
         }
@@ -301,7 +301,7 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("hha.E(" + (if (class318_sub4 != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("hha.E(" + (if (class318_sub4 != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

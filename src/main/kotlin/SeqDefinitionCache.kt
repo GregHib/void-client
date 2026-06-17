@@ -38,7 +38,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         class51 = Class51()
         class51.anInt941 = i_0_
         class51.aSeqDefinitionCache_933 = this
-        if (`is` != null) class51.method479(0.toByte(), Class348_Sub49(`is`))
+        if (`is` != null) class51.method479(0.toByte(), Buffer(`is`))
         class51.method488(-105)
         if (i != 0) this.aClass60_3361 = null
         if (!this.aBoolean3359 && class51.aBoolean942) {
@@ -150,7 +150,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 val i_30_ = aClass45_3343.method414(-1) + -1
                 aClass45_3343.method407(0, i_30_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_29_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("uha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_29_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -202,7 +202,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                                 do {
                                     if (i_20_ == -4) {
                                         if (i_10_ == i_3_ && i_2_ == i_11_) {
-                                            Class348_Sub40_Sub30.anInt9388 = i_10_
+                                            HslAdjustTextureNode.anInt9388 = i_10_
                                             OverlayColorTable.anInt1753 = i_11_
                                             return true
                                         }
@@ -218,34 +218,34 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                                     }
                                     if (method1842(i_5_, i_2_, -1, 2, i_10_, i_11_, i_3_, 2, i_6_)) {
                                         OverlayColorTable.anInt1753 = i_11_
-                                        Class348_Sub40_Sub30.anInt9388 = i_10_
+                                        HslAdjustTextureNode.anInt9388 = i_10_
                                         return true
                                     }
                                     break@while_85_
                                 } while (false)
                                 if (class361.method3497(-28388, i_3_, i_7_, 2, i_6_, i_10_, 2, i_11_, i_2_, i_5_)) {
-                                    Class348_Sub40_Sub30.anInt9388 = i_10_
+                                    HslAdjustTextureNode.anInt9388 = i_10_
                                     OverlayColorTable.anInt1753 = i_11_
                                     return true
                                 }
                                 break@while_85_
                             } while (false)
                             if (class361.method3503(i_10_, (-82).toByte(), i_2_, 2, i_6_, i_5_, i_7_, i_11_, i_3_)) {
-                                Class348_Sub40_Sub30.anInt9388 = i_10_
+                                HslAdjustTextureNode.anInt9388 = i_10_
                                 OverlayColorTable.anInt1753 = i_11_
                                 return true
                             }
                             break@while_85_
                         } while (false)
                         if (class361.method3495(i_3_, i_11_, 2, i_9_, i_10_, i_2_, i, -53)) {
-                            Class348_Sub40_Sub30.anInt9388 = i_10_
+                            HslAdjustTextureNode.anInt9388 = i_10_
                             OverlayColorTable.anInt1753 = i_11_
                             return true
                         }
                         break@while_85_
                     } while (false)
                     if (class361.method3504(i_2_, i_11_, i_3_, i_10_, i, 1, i_9_, 2)) {
-                        Class348_Sub40_Sub30.anInt9388 = i_10_
+                        HslAdjustTextureNode.anInt9388 = i_10_
                         OverlayColorTable.anInt1753 = i_11_
                         return true
                     }
@@ -308,7 +308,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     ProjectileFactory.anIntArrayArray2900!![1 + i_12_]!![1 + i_13_] = i_20_
                 }
             }
-            Class348_Sub40_Sub30.anInt9388 = i_10_
+            HslAdjustTextureNode.anInt9388 = i_10_
             OverlayColorTable.anInt1753 = i_11_
             return false
         }
@@ -322,7 +322,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
         fun method2013(`is`: ByteArray?, i: Byte) {
             anInt3357++
-            val class348_sub49 = Class348_Sub49(`is`)
+            val class348_sub49 = Buffer(`is`)
             while (true) {
                 val i_23_ = class348_sub49.readUnsignedByte(255)
                 if (i_23_ == 0) break

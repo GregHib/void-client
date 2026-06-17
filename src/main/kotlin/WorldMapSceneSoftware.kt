@@ -10,12 +10,12 @@ import RemoveRoofsOptionState.Companion.method1810
 import GlTexture2D.Companion.method1966
 import ScrollTexMaterialPass.Companion.method2168
 import ResourceProvider.Companion.method2336
-import Class348_Sub16_Sub3.Companion.method2878
-import Class348_Sub16_Sub3.Companion.method2879
-import Class348_Sub23_Sub4.Companion.method2987
-import Class348_Sub40_Sub32.Companion.method3135
-import Class348_Sub40_Sub4.Companion.method3058
-import Class348_Sub42_Sub16.Companion.method3254
+import MidiSequencePlayer.Companion.method2878
+import MidiSequencePlayer.Companion.method2879
+import KaraokeSubtitleStream.Companion.method2987
+import InvertTextureNode.Companion.method3135
+import SourceRowTextureNode.Companion.method3058
+import AsyncResourceRequest.Companion.method3254
 import Class44.method388
 import Class58.Companion.method536
 import Class5_Sub2.Companion.method192
@@ -34,7 +34,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
             anInt5823++
             if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i_3_ xor 0x7e6f.inv()) != 0 || method536(i_5_, false, i, ParticleSystemState.anInt2204, i_2_)) {
                 if (this.anInt5824 > i_0_) this.anInt5824 = i_0_
-                val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_1_)
+                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_1_)
                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
                     val i_8_: Int
                     val i_9_: Int
@@ -68,7 +68,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val i_14_ = ((var_s!!.method3982((-86).toByte(), i_13_, i_10_) + var_s.method3982((-86).toByte(), i_13_, i_11_) - (-var_s.method3982((-86).toByte(), i_12_, i_10_) - var_s.method3982((-86).toByte(), i_12_, i_11_))) shr 2)
                     val i_15_ = (i shl 9) - -(i_9_ shl 8)
                     val i_16_ = (i_8_ shl 8) + (i_5_ shl 9)
-                    val bool = (Class348_Sub42_Sub3.aBoolean9498 && !this.aBoolean3109 && class51.aBoolean906)
+                    val bool = (LoadingScreenImageNode.aBoolean9498 && !this.aBoolean3109 && class51.aBoolean906)
                     if (class51.method474(82.toByte())) method1614(979190089, null, i_0_, i_5_, i, null, class51, i_7_)
                     val bool_17_ = (i_6_ == -1 && class51.anInt868 == -1 && class51.anIntArray943 == null && class51.anIntArray945 == null && !class51.aBoolean929)
                     if (!Class49.aBoolean4728 || ((!ScreenBorderFiller.method1172((-85).toByte(), i_4_) || class51.anInt955 == 1) && (!method1639(i_4_, i_3_ xor 0x3918) || class51.anInt955 != 0))) {
@@ -98,7 +98,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             }
                             if (method850(class318_sub1_sub3, false)) {
                                 if (class318_sub1_sub3_sub1 != null && class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(836, var_renderer)
-                                if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
+                                if (class51.aBoolean918 && LoadingScreenImageNode.aBoolean9498) {
                                     if (i_18_ > 30) i_18_ = 30
                                     var i_20_ = 0
                                     while ((i_20_ <= i_9_)) {
@@ -120,11 +120,11 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 if (class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(i_3_ + 786, var_renderer)
                             } else class318_sub1_sub3 = (SequencedGroundDecor(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i + (i_9_ - 1), i_5_, i_5_ - (-i_8_ - -1), i_4_, i_7_, i_6_))
                             method850(class318_sub1_sub3, false)
-                            if (Class348_Sub42_Sub3.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (BoundsConstraintEntry.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
+                            if (LoadingScreenImageNode.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (BoundsConstraintEntry.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_)
                         } else if (i_4_ == 0) {
                             var i_22_ = class51.anInt955
-                            if (Class348_Sub40_Sub10.aBoolean9184 && (class51.anInt955 == -1)) i_22_ = 1
+                            if (BrightnessContrastEffect.aBoolean9184 && (class51.anInt955 == -1)) i_22_ = 1
                             val class318_sub1_sub4: ActorEntity?
                             if (bool_17_) {
                                 val class318_sub1_sub4_sub1 = (NpcActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
@@ -133,25 +133,25 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             } else class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
                             if (i_7_ == 0) {
-                                if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
+                                if (LoadingScreenImageNode.aBoolean9498 && class51.aBoolean918) {
                                     var_s.ka(i, i_5_, 50)
                                     var_s.ka(i, i_5_ - -1, 50)
                                 }
                                 if (i_22_ == 1 && !this.aBoolean3109) method1810(i, class51.anInt953, class51.anInt909, i_5_, i_3_ + -51, i_0_, 1)
                             } else if (i_7_ == 1) {
-                                if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
+                                if (LoadingScreenImageNode.aBoolean9498 && class51.aBoolean918) {
                                     var_s.ka(i, 1 + i_5_, 50)
                                     var_s.ka(1 + i, 1 + i_5_, 50)
                                 }
                                 if (i_22_ == 1 && !this.aBoolean3109) method1810(i, -class51.anInt953, class51.anInt909, 1 + i_5_, -1, i_0_, 2)
                             } else if (i_7_ == 2) {
-                                if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
+                                if (LoadingScreenImageNode.aBoolean9498 && class51.aBoolean918) {
                                     var_s.ka(i - -1, i_5_, 50)
                                     var_s.ka(1 + i, 1 + i_5_, 50)
                                 }
                                 if (i_22_ == 1 && !this.aBoolean3109) method1810(1 + i, -class51.anInt953, class51.anInt909, i_5_, i_3_ + -51, i_0_, 1)
                             } else if (i_7_ == 3) {
-                                if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
+                                if (LoadingScreenImageNode.aBoolean9498 && class51.aBoolean918) {
                                     var_s.ka(i, i_5_, 50)
                                     var_s.ka(1 + i, i_5_, 50)
                                 }
@@ -167,7 +167,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
                             } else class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
-                            if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
+                            if (class51.aBoolean918 && LoadingScreenImageNode.aBoolean9498) {
                                 if (i_7_ == 0) var_s.ka(i, i_5_ + 1, 50)
                                 else if (i_7_ != 1) {
                                     if (i_7_ != 2) {
@@ -192,7 +192,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 class318_sub1_sub4_24_ = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_23_, i_6_))
                             }
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, class318_sub1_sub4_24_)
-                            if (((class51.anInt955 == 1) || (Class348_Sub40_Sub10.aBoolean9184 && class51.anInt955 == -1)) && !this.aBoolean3109) {
+                            if (((class51.anInt955 == 1) || (BrightnessContrastEffect.aBoolean9184 && class51.anInt955 == -1)) && !this.aBoolean3109) {
                                 if (i_7_ == 0) {
                                     method1810(i, class51.anInt953, class51.anInt909, i_5_, -1, i_0_, 1)
                                     method1810(i, class51.anInt953, class51.anInt909, 1 + i_5_, -1, i_0_, 2)
@@ -217,7 +217,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
                             } else class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
-                            if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
+                            if (class51.aBoolean918 && LoadingScreenImageNode.aBoolean9498) {
                                 if (i_7_ == 0) var_s.ka(i, 1 + i_5_, 50)
                                 else if (i_7_ == 1) var_s.ka(1 + i, 1 + i_5_, 50)
                                 else if (i_7_ != 2) {
@@ -252,21 +252,21 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                         } else if (i_4_ == 5) {
                             var i_27_ = 65
                             val interface10 = (method3297(i_0_, i, i_5_) as Interface10?)
-                            if (interface10 != null) i_27_ = 1 + (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-93)).anInt883)
+                            if (interface10 != null) i_27_ = 1 + (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-93)).anInt883)
                             val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * WidgetNodeLink.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
+                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * WidgetNodeLink.anIntArray2039!![i_7_], (CombineTextureNode.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, WidgetNodeLink.anIntArray2039!![i_7_] * i_27_, i_27_ * (Class348_Sub40_Sub16.anIntArray9230!![i_7_]), i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub5 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, WidgetNodeLink.anIntArray2039!![i_7_] * i_27_, i_27_ * (CombineTextureNode.anIntArray9230!![i_7_]), i_4_, i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 6) {
                             var i_28_ = 33
                             val interface10 = (method3297(i_0_, i, i_5_) as Interface10?)
-                            if (interface10 != null) i_28_ = 1 + (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-117)).anInt883) / 2
+                            if (interface10 != null) i_28_ = 1 + (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-117)).anInt883) / 2
                             val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * WidgetNodeLink.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
+                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * WidgetNodeLink.anIntArray2039!![i_7_], (CombineTextureNode.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
                             } else class318_sub1_sub5 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (OutputStream_Sub1.anIntArray99!![i_7_] * i_28_), i_28_ * BoundsConstraintEntry.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))
@@ -284,7 +284,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             val i_30_ = 2 + i_7_ and 0x3
                             var i_31_ = 33
                             val interface10 = (method3297(i_0_, i, i_5_) as Interface10?)
-                            if (interface10 != null) i_31_ = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1
+                            if (interface10 != null) i_31_ = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1
                             val class318_sub1_sub5: WallEntity?
                             val class318_sub1_sub5_32_: WallEntity?
                             if (bool_17_) {
@@ -306,7 +306,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vaa.W(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class361 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("vaa.W(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class361 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -321,7 +321,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         return interface10
     }
 
-    fun method1691(i: Int, var_renderer: Renderer?, class348_sub49: Class348_Sub49?, `is`: IntArray?, i_39_: Int, i_40_: Byte) {
+    fun method1691(i: Int, var_renderer: Renderer?, class348_sub49: Buffer?, `is`: IntArray?, i_39_: Int, i_40_: Byte) {
         do {
             try {
                 anInt5818++
@@ -340,7 +340,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 while (i_58_ > i_59_) {
                                     val soundEnvelope = SoundEnvelope(var_renderer, class348_sub49, 2)
                                     if (soundEnvelope.anInt2734 == 31) {
-                                        val class253 = (Class348_Sub1.aMapSceneDefLoader_6559!!.method1391((-1).toByte(), class348_sub49.readUnsignedShort(842397944)))
+                                        val class253 = (AbstractTileShape.aMapSceneDefLoader_6559!!.method1391((-1).toByte(), class348_sub49.readUnsignedShort(842397944)))
                                         soundEnvelope.method1539(class253.anInt3251, 115.toByte(), class253.anInt3249, class253.anInt3245, class253.anInt3244)
                                     }
                                     if (var_renderer!!.method3704() > 0) {
@@ -351,7 +351,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                         val i_63_ = i_61_ shr 9
                                         if (i_62_ >= 0 && i_63_ >= 0 && (this.anInt3117 > i_62_) && (this.anInt3114 > i_63_)) {
                                             class348_sub1.method2725(i_60_, 70.toByte(), i_61_, ((this.anIntArrayArrayArray3122!![(soundEnvelope.anInt2731)]!![i_62_]!![i_63_]) + -class348_sub1.method2722(120)))
-                                            Class348_Sub42_Sub19.method3276(soundEnvelope)
+                                            MinimapAreaMarkerNode.method3276(soundEnvelope)
                                         }
                                     }
                                     i_59_++
@@ -469,7 +469,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vaa.AA(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vaa.AA(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ')'))
             }
             break
         } while (false)
@@ -479,7 +479,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         try {
             anInt5826++
             if (i_78_ != 7) method1693('\uffb8', -54)
-            val class348_sub49 = Class348_Sub49(`is`)
+            val class348_sub49 = Buffer(`is`)
             var i_80_ = -1
             while (true) {
                 val i_81_ = class348_sub49.method3334(-85)
@@ -497,14 +497,14 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val i_88_ = i_87_ shr 2
                     val i_89_ = i_87_ and 0x3
                     if (i_74_ == i_86_ && i <= i_85_ && i - -8 > i_85_ && i_75_ <= i_84_ && i_75_ - -8 > i_84_) {
-                        val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_80_)
+                        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_80_)
                         val i_90_ = TileTransform.method1908(0x7 and i_84_, i_85_ and 0x7, i_73_, true, class51.anInt926, class51.anInt961, i_89_) + i_77_
                         val i_91_ = i_76_ + method1045(0x7 and i_85_, (class51.anInt926), i_89_, (class51.anInt961), i_84_ and 0x7, i_73_, 16.toByte())
                         if (i_90_ > 0 && i_91_ > 0 && i_90_ < -1 + this.anInt3117 && -1 + this.anInt3114 > i_91_) {
                             var class361: Class361? = null
                             if (!this.aBoolean3109) {
                                 var i_92_ = i_79_
-                                if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_90_]!![i_91_]).toInt()) == 2) i_92_--
+                                if ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_90_]!![i_91_]).toInt()) == 2) i_92_--
                                 if (i_92_ >= 0) class361 = class361s!![i_92_]
                             }
                             method1689(i_90_, i_79_, i_80_, var_renderer, i_79_, 50, i_88_, i_91_, -1, i_89_ - -i_73_ and 0x3, class361)
@@ -513,7 +513,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vaa.S(" + i + ',' + i_73_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_74_ + ',' + i_75_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + (if (class361s != null) "{...}" else "null") + ',' + i_79_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("vaa.S(" + i + ',' + i_73_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_74_ + ',' + i_75_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + (if (class361s != null) "{...}" else "null") + ',' + i_79_ + ')'))
         }
     }
 
@@ -525,7 +525,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val interface10 = method1690(i, i_95_, i_94_, i_93_, 30987)
                     if (i_96_ <= 66) anInt5819 = -107
                     if (interface10 == null) break@while_77_
-                    val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-89))
+                    val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-89))
                     val i_97_ = interface10.method39(-128)
                     val i_98_ = interface10.method41(-32228)
                     if (class51.method474((-50).toByte())) method2336(class51, i_94_, i_95_, i_93_, -128)
@@ -547,7 +547,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     } else {
                         if (i != 1) {
                             if (i == 2) {
-                                Class348_Sub42_Sub16.method3253(i_93_, i_94_, i_95_, ((if (WorldMapSceneSoftware.Companion.aClass5827 != null) WorldMapSceneSoftware.Companion.aClass5827 else (Interface10::class.java.also { WorldMapSceneSoftware.Companion.aClass5827 = it }))!!))
+                                AsyncResourceRequest.method3253(i_93_, i_94_, i_95_, ((if (WorldMapSceneSoftware.Companion.aClass5827 != null) WorldMapSceneSoftware.Companion.aClass5827 else (Interface10::class.java.also { WorldMapSceneSoftware.Companion.aClass5827 = it }))!!))
                                 if (class51.anInt920 != 0 && (class51.anInt961 + i_94_ < this.anInt3117) && (i_95_ - -class51.anInt961 < this.anInt3114) && (class51.anInt926 + i_94_ < this.anInt3117) && (this.anInt3114 > (i_95_ + class51.anInt926))) class361!!.method3509(i_98_, !class51.aBoolean876, class51.aBoolean896, i_94_, i_95_, class51.anInt926, 84, class51.anInt961)
                                 if (i_97_ != 9) break
                                 if ((0x1 and i_98_) != 0) method2987(i_93_, 16, i_95_, -3951, i_94_)
@@ -561,7 +561,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                         method2168(i_93_, i_94_, i_95_)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("vaa.U(" + (if (class361 != null) "{...}" else "null") + ',' + i + ',' + i_93_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("vaa.U(" + (if (class361 != null) "{...}" else "null") + ',' + i + ',' + i_93_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ')'))
                 }
             } while (false)
             break
@@ -572,7 +572,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         try {
             anInt5820++
             if (i_100_ == 1359) {
-                val class348_sub49 = Class348_Sub49(`is`)
+                val class348_sub49 = Buffer(`is`)
                 var i_101_ = -1
                 while (true) {
                     val i_102_ = class348_sub49.method3334(-57)
@@ -595,7 +595,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             var class361: Class361? = null
                             if (!this.aBoolean3109) {
                                 var i_113_ = i_107_
-                                if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_111_]!![i_112_]).toInt()) == 2) i_113_--
+                                if ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_111_]!![i_112_]).toInt()) == 2) i_113_--
                                 if (i_113_ >= 0) class361 = class361s!![i_113_]
                             }
                             method1689(i_111_, i_107_, i_101_, var_renderer, i_107_, i_100_ xor 0x57d, i_109_, i_112_, -1, i_110_, class361)
@@ -604,11 +604,11 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vaa.R(" + (if (`is` != null) "{...}" else "null") + ',' + (if (class361s != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_99_ + ',' + i_100_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("vaa.R(" + (if (`is` != null) "{...}" else "null") + ',' + (if (class361s != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_99_ + ',' + i_100_ + ')'))
         }
     }
 
-    fun method1696(class348_sub49: Class348_Sub49?, bool: Boolean, i: Int, i_116_: Int, i_117_: Int, i_118_: Int, i_119_: Int, i_120_: Int, var_renderer: Renderer?, `is`: IntArray?, i_121_: Int) {
+    fun method1696(class348_sub49: Buffer?, bool: Boolean, i: Int, i_116_: Int, i_117_: Int, i_118_: Int, i_119_: Int, i_120_: Int, var_renderer: Renderer?, `is`: IntArray?, i_121_: Int) {
         do {
             try {
                 anInt5825++
@@ -628,7 +628,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                     while ((i_126_ > i_127_)) {
                                         val soundEnvelope = SoundEnvelope(var_renderer, class348_sub49, 2)
                                         if (soundEnvelope.anInt2734 == 31) {
-                                            val class253 = (Class348_Sub1.aMapSceneDefLoader_6559!!.method1391(111.toByte(), (class348_sub49.readUnsignedShort(842397944))))
+                                            val class253 = (AbstractTileShape.aMapSceneDefLoader_6559!!.method1391(111.toByte(), (class348_sub49.readUnsignedShort(842397944))))
                                             soundEnvelope.method1539((class253.anInt3251), 124.toByte(), (class253.anInt3249), (class253.anInt3245), (class253.anInt3244))
                                         }
                                         if (var_renderer!!.method3704() > 0) {
@@ -642,7 +642,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                                 i_129_ = i_131_ shr 9
                                                 if (i_128_ >= 0 && (i_129_ >= 0) && (i_128_ < (this.anInt3117)) && ((this.anInt3114) > i_129_)) {
                                                     class348_sub1.method2725(i_130_, 70.toByte(), i_131_, ((this.anIntArrayArrayArray3122!![i_121_]!![i_128_]!![i_129_]) - (class348_sub1.method2722(124))))
-                                                    Class348_Sub42_Sub19.method3276(soundEnvelope)
+                                                    MinimapAreaMarkerNode.method3276(soundEnvelope)
                                                 }
                                             }
                                         }
@@ -730,7 +730,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vaa.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + i_119_ + ',' + i_120_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_121_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vaa.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + i_119_ + ',' + i_120_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_121_ + ')'))
             }
             break
         } while (false)
@@ -746,7 +746,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     while (this.anInt3117 > i_149_) {
                         var i_150_ = 0
                         while (this.anInt3114 > i_150_) {
-                            if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_149_]!![i_150_]).toInt()) == 2) method258(i_149_, i_150_)
+                            if ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_149_]!![i_150_]).toInt()) == 2) method258(i_149_, i_150_)
                             i_150_++
                         }
                         i_149_++
@@ -812,7 +812,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
             }
             if (i < -6) this.aByteArrayArrayArray3108 = null
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vaa.T(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("vaa.T(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

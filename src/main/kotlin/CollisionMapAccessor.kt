@@ -19,9 +19,9 @@ object CollisionMapAccessor {
         if (NativeSprite.aTerrainTileArray5191 == null) return 0
         val i_3_ = i shr 9
         val i_4_ = i_2_ shr 9
-        if (i_3_ < 0 || i_4_ < 0 || i_3_ > -1 + Class367_Sub4.anInt7319 || (i_4_ > Class348_Sub40_Sub3.anInt9109 + -1)) return 0
+        if (i_3_ < 0 || i_4_ < 0 || i_3_ > -1 + Class367_Sub4.anInt7319 || (i_4_ > RangeThresholdTextureNode.anInt9109 + -1)) return 0
         var i_5_ = i_0_
-        if (i_5_ < 3 && (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_3_]!![i_4_].toInt() and 0x2) != 0) i_5_++
+        if (i_5_ < 3 && (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_3_]!![i_4_].toInt() and 0x2) != 0) i_5_++
         if (i_1_ != 11219) aHashtable3548 = null
         return NativeSprite.aTerrainTileArray5191!![i_5_]!!.method3986(i, i_2_, (-113).toByte())
     }

@@ -28,7 +28,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heap
     override fun method7(i: Int) {
         anInt4647++
         val class143 = RangedGraphicsOptionState.method1766((-45).toByte(), aHeapInfoRecord_4646!!.anInt4944, aClass45_4651!!)
-        if (i == 10286) aFont_4649 = (Class348_Sub8.aRenderer6654!!.method3686(class143, SpriteImage.method1523(aClass45_4650!!, aHeapInfoRecord_4646.anInt4944), true))
+        if (i == 10286) aFont_4649 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(aClass45_4650!!, aHeapInfoRecord_4646.anInt4944), true))
     }
 
     init {
@@ -37,7 +37,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heap
             aHeapInfoRecord_4646 = heapInfoRecord
             aClass45_4650 = class45
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kd.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ',' + (if (heapInfoRecord != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("kd.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ',' + (if (heapInfoRecord != null) "{...}" else "null") + ')'))
         }
     }
 

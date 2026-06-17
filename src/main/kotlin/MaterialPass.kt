@@ -20,7 +20,7 @@ abstract class MaterialPass internal constructor(var aHa_Sub2_3684: OpenGlRender
         @JvmField
         var anInt3682: Int = 0
         @JvmField
-        var aClass348_Sub2_3683: Class348_Sub2? = null
+        var aClass348_Sub2_3683: MidiFileBuilder? = null
         @JvmStatic
         fun method2135(i: Int) {
             if (i == 0) aClass348_Sub2_3683 = null
@@ -29,7 +29,7 @@ abstract class MaterialPass internal constructor(var aHa_Sub2_3684: OpenGlRender
         @JvmStatic
         fun method2138(i: Int): Boolean {
             anInt3681++
-            val class348_sub48 = Class348_Sub35.aNodeDeque_6978!!.method1995(4) as Class348_Sub48?
+            val class348_sub48 = IntKeyNode.aNodeDeque_6978!!.method1995(4) as ModelResourceBundle?
             if (class348_sub48 == null) return false
             val i_3_ = 118 % ((-40 - i) / 50)
             var i_4_ = 0

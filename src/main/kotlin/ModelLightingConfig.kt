@@ -18,7 +18,7 @@ class ModelLightingConfig {
     var anInt2548: Int = 0
     var anInt2549: Int = 0
     var aFloat2551: Float = 1.0f
-    fun method1423(i: Int, class348_sub49: Class348_Sub49) {
+    fun method1423(i: Int, class348_sub49: Buffer) {
         anInt2553++
         this.aFloat2545 = (class348_sub49.readUnsignedByte(255) * 8).toFloat() / 255.0f
         this.aFloat2542 = (8 * class348_sub49.readUnsignedByte(i + 247)).toFloat() / 255.0f
@@ -34,7 +34,7 @@ class ModelLightingConfig {
     constructor() {
         this.anInt2535 = -50
         this.aFloat2536 = 1.2f
-        this.aCircleRasterizer_2541 = Class348_Sub42_Sub10.aCircleRasterizer_9571
+        this.aCircleRasterizer_2541 = ParameterizedText.aCircleRasterizer_9571
         this.anInt2546 = 0
         this.anInt2549 = LocDefinitionCache.anInt3444
         this.anInt2548 = -60
@@ -44,7 +44,7 @@ class ModelLightingConfig {
         this.aFloat2547 = 1.1523438f
     }
 
-    internal constructor(class348_sub49: Class348_Sub49) {
+    internal constructor(class348_sub49: Buffer) {
         val i = class348_sub49.readUnsignedByte(255)
         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) != 1 || Class60.aRenderer1098!!.method3704() <= 0) {
             if ((0x1 and i) != 0) class348_sub49.readInt((-126).toByte())
@@ -86,7 +86,7 @@ class ModelLightingConfig {
             val i_31_ = class348_sub49.readUnsignedShort(842397944)
             val i_32_ = class348_sub49.readUnsignedShort(842397944)
             this.aCircleRasterizer_2541 = SceneProjector.method1636(i_31_, i_30_, i_27_, i_32_, i_28_, -1, i_29_)
-        } else this.aCircleRasterizer_2541 = Class348_Sub42_Sub10.aCircleRasterizer_9571
+        } else this.aCircleRasterizer_2541 = ParameterizedText.aCircleRasterizer_9571
     }
 
     companion object {
@@ -104,18 +104,18 @@ class ModelLightingConfig {
 
         fun method1422(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Boolean {
             anInt2550++
-            Class348_Sub40_Sub4.aAbstractCameraTransform_9114!!.method897(i_1_, i, i_0_, SequencedWallEntity.anIntArray10172!!)
+            SourceRowTextureNode.aAbstractCameraTransform_9114!!.method897(i_1_, i, i_0_, SequencedWallEntity.anIntArray10172!!)
             val i_3_ = SequencedWallEntity.anIntArray10172!![2]
             if (i_3_ < 50) return false
             SequencedWallEntity.anIntArray10172!![2] = i_3_
             SequencedWallEntity.anIntArray10172!![0] = (ScreenBorderFiller.anInt1962 * SequencedWallEntity.anIntArray10172!![0] / i_3_) + Class69.anInt1202
-            SequencedWallEntity.anIntArray10172!![1] = (Class348_Sub49_Sub2.anInt9759 + (SequencedWallEntity.anIntArray10172!![1] * GlIndexBufferArb.anInt8498 / i_3_))
+            SequencedWallEntity.anIntArray10172!![1] = (CipheredPacketBuffer.anInt9759 + (SequencedWallEntity.anIntArray10172!![1] * GlIndexBufferArb.anInt8498 / i_3_))
             if (i_2_ != -7596) aRectangleArray2554 = null
             return true
         }
 
         @JvmStatic
-        fun method1425(i: Byte, class42: Class42?, class348_sub21: Class348_Sub21?, i_5_: Int, var_renderer: Renderer?, i_6_: Int): Boolean {
+        fun method1425(i: Byte, class42: Class42?, class348_sub21: CameraSplineNode?, i_5_: Int, var_renderer: Renderer?, i_6_: Int): Boolean {
             try {
                 anInt2537++
                 var i_7_ = 2147483647
@@ -186,7 +186,7 @@ class ModelLightingConfig {
                 if (Class75.anInt1272 > i_8_ || i_7_ > Class75.anInt1276 || i_10_ < Class75.anInt1262 || i_9_ > Class75.anInt1268) return true
                 Class75.method745(var_renderer!!, class348_sub21!!, class42)
                 if (abstractModelRenderer != null) {
-                    if (Class367_Sub9.anInt7379 > 0 && ((Class348_Sub40_Sub30.anInt9399 != -1 && (Class348_Sub40_Sub30.anInt9399 == class348_sub21.anInt6847)) || (SkeletalAnimFrameLoader.anInt481 != -1 && (class42.anInt596 == SkeletalAnimFrameLoader.anInt481)))) {
+                    if (Class367_Sub9.anInt7379 > 0 && ((HslAdjustTextureNode.anInt9399 != -1 && (HslAdjustTextureNode.anInt9399 == class348_sub21.anInt6847)) || (SkeletalAnimFrameLoader.anInt481 != -1 && (class42.anInt596 == SkeletalAnimFrameLoader.anInt481)))) {
                         val i_25_: Int
                         if (ClientLoadStateMachine.anInt2173 <= 50) i_25_ = 2 * ClientLoadStateMachine.anInt2173
                         else i_25_ = -(ClientLoadStateMachine.anInt2173 * 2) + 200
@@ -201,7 +201,7 @@ class ModelLightingConfig {
                 }
                 if (class42.aString597 != null && systemFontGlyphs != null) WidgetRedrawRegion.method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, class42)
                 if (class42.anInt578 != -1 || class42.aString597 != null) {
-                    val class348_sub12 = Class348_Sub12(class348_sub21)
+                    val class348_sub12 = BoundingBoxNode(class348_sub21)
                     class348_sub12.anInt6746 = i_13_
                     class348_sub12.anInt6753 = i_21_
                     class348_sub12.anInt6747 = i_11_
@@ -214,7 +214,7 @@ class ModelLightingConfig {
                 }
                 return false
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (class42 != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_6_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (class42 != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_6_ + ')'))
             }
         }
 

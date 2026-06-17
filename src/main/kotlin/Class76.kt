@@ -138,7 +138,7 @@ class Class76 internal constructor(bool: Boolean) {
 
         @JvmStatic
         fun method773(bool: Boolean) {
-            Class348_Sub40_Sub10.aBoolean9181 = bool
+            BrightnessContrastEffect.aBoolean9181 = bool
             anInt1284++
         }
 

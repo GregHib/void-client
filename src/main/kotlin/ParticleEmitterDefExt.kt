@@ -11,7 +11,7 @@ class ParticleEmitterDefExt internal constructor(i: Int, screenAnchorAlignment: 
         try {
             this.anInt8577 = i_2_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wg.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wg.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
         }
     }
 
@@ -34,7 +34,7 @@ class ParticleEmitterDefExt internal constructor(i: Int, screenAnchorAlignment: 
         }
 
         @JvmStatic
-        fun method2189(class348_sub49: Class348_Sub49, i: Int): ParticleEmitterDef {
+        fun method2189(class348_sub49: Buffer, i: Int): ParticleEmitterDef {
             anInt8576++
             val i_3_ = class348_sub49.readUnsignedShort(842397944)
             val class221 = method1248(48)[class348_sub49.readUnsignedByte(255)]

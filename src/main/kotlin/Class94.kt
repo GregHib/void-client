@@ -25,10 +25,10 @@ object Class94 {
 
     @JvmStatic
     fun method867(bool: Boolean) {
-        Class348_Sub8.aBufferPositionTracker_6660!!.method1856(106.toByte())
+        FacingDirectionNode.aBufferPositionTracker_6660!!.method1856(106.toByte())
         if (bool != true) aClass45_1538 = null
         anInt1535++
-        for (i in 0..31) Class348_Sub49.aLongArray7206!![i] = 0L
+        for (i in 0..31) Buffer.aLongArray7206!![i] = 0L
         for (i in 0..31) MaterialTypeVariant.aLongArray8800!![i] = 0L
         FloatCameraTransform.anInt5744 = 0
     }

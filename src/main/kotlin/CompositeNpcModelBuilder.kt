@@ -88,13 +88,13 @@ class CompositeNpcModelBuilder {
             var i_23_ = -1
             var i_24_ = -1
             var i_25_ = 0
-            var class348_sub42_sub17: Class348_Sub42_Sub17? = null
-            var class348_sub42_sub17_26_: Class348_Sub42_Sub17? = null
+            var class348_sub42_sub17: TextureMaterialGroup? = null
+            var class348_sub42_sub17_26_: TextureMaterialGroup? = null
             var i_27_ = -1
             var i_28_ = -1
             var i_29_ = 0
-            var class348_sub42_sub17_30_: Class348_Sub42_Sub17? = null
-            var class348_sub42_sub17_31_: Class348_Sub42_Sub17? = null
+            var class348_sub42_sub17_30_: TextureMaterialGroup? = null
+            var class348_sub42_sub17_31_: TextureMaterialGroup? = null
             if (bool_15_) {
                 if (widgetDefinition_0_ != null) {
                     i_23_ = widgetDefinition_0_.anIntArray237[i_7_]
@@ -277,7 +277,7 @@ class CompositeNpcModelBuilder {
             }
             return class64_51_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(
+            throw SoundBankPatch.method2929(
                 runtimeexception,
                 ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ')')
             )
@@ -295,7 +295,7 @@ class CompositeNpcModelBuilder {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -310,7 +310,7 @@ class CompositeNpcModelBuilder {
             this.aBoolean2100 = bool
             method1234(-25)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.F(" + i + ',' + i_63_ + ',' + i_64_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + (if (is_65_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oo.F(" + i + ',' + i_63_ + ',' + i_64_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + (if (is_65_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -412,7 +412,7 @@ class CompositeNpcModelBuilder {
             class64_88_ = widgetDefinition.method269(123, class64, i_67_, i_69_, i_68_, i_66_)
             return class64_88_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(
+            throw SoundBankPatch.method2929(
                 runtimeexception,
                 ("oo.J(" + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
             )
@@ -455,7 +455,7 @@ class CompositeNpcModelBuilder {
                     i_103_ = widgetDefinition.anIntArray237[i]
                     val i_106_ = i_103_ ushr 16
                     i_103_ = i_103_ and 0xffff
-                    val class348_sub42_sub17_107_: Class348_Sub42_Sub17?
+                    val class348_sub42_sub17_107_: TextureMaterialGroup?
                     if (i_105_ != i_106_) class348_sub42_sub17_107_ = class87.method839(i_103_ ushr 16, 3)
                     else class348_sub42_sub17_107_ = class348_sub42_sub17
                     if (class348_sub42_sub17_107_ != null) {
@@ -507,7 +507,7 @@ class CompositeNpcModelBuilder {
             class64 = widgetDefinition.method269(-32, class64!!, i, i_96_, i_91_, i_97_)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -521,14 +521,14 @@ class CompositeNpcModelBuilder {
                 method1234(-54)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.D(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oo.D(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'))
         }
     }
 
     private fun method1234(i: Int) {
         anInt2096++
         aLong2102 = -1L
-        val ls = Class348_Sub40_Sub21.aLongArray9283
+        val ls = WeaveTextureNode.aLongArray9283
         aLong2102 = ls!![(((anInt2103 shr 8).toLong() xor aLong2102) and 0xffL).toInt()] xor (aLong2102 ushr 8)
         if (i > -6) aLong2094 = 43L
         aLong2102 = aLong2102 ushr 8 xor ls[(0xffL and (anInt2103.toLong() xor aLong2102)).toInt()]
@@ -553,7 +553,7 @@ class CompositeNpcModelBuilder {
         var anInt2101: Int = 0
         var anInt2104: Int = 0
         @JvmField
-        var aClass348_Sub49Array2105: Array<Class348_Sub49?>? = arrayOfNulls<Class348_Sub49>(2048)
+        var aClass348_Sub49Array2105: Array<Buffer?>? = arrayOfNulls<Buffer>(2048)
         var anInt2106: Int = 0
         var anInt2107: Int = 0
 

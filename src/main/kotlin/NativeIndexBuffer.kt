@@ -10,7 +10,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
         try {
             anInt4697 = i
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("cw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ')'))
         }
     }
 
@@ -18,7 +18,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
         try {
             anInt4697 = i
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("cw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -70,7 +70,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
             if ((Class73.anInt4776 >= 2 || RenderNode.aBoolean9722) && RegionSceneLoader.aClass46_3701 == null) {
                 if (i >= -71) Companion.method1077(null, (-41).toByte())
                 var string: String?
-                if (RenderNode.aBoolean9722 && Class73.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(Class348_Sub33.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
+                if (RenderNode.aBoolean9722 && Class73.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(AnimationFrameDefinition.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
                 else if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) || Class73.anInt4776 <= 2) {
                     val class348_sub42_sub12 = IntHashSet.aClass348_Sub42_Sub12_3963
                     if (class348_sub42_sub12 == null) return
@@ -79,7 +79,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                     if (!WidgetNodeLink.method1197(-12081, class348_sub42_sub12.anInt9608)) {
                         if (class348_sub42_sub12.anInt9599 != -1) `is` = Exception_Sub1.aModelHeaderCache_112!!.method1940(98, (class348_sub42_sub12.anInt9599)).anIntArray2772
                         else if (method3549((class348_sub42_sub12.anInt9608), 107.toByte())) {
-                            val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as? Class348_Sub22?)
+                            val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as? NpcReference?)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 var class79 = (npc.aClass79_10505)
@@ -89,28 +89,28 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                         } else if (method1813(8806, (class348_sub42_sub12.anInt9608))) {
                             val `object`: Any? = null
                             var class51: Class51?
-                            if ((class348_sub42_sub12.anInt9608) != 1001) class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, ((class348_sub42_sub12.aLong9605) ushr 32 and 0x7fffffffL).toInt()))
-                            else class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
+                            if ((class348_sub42_sub12.anInt9608) != 1001) class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, ((class348_sub42_sub12.aLong9605) ushr 32 and 0x7fffffffL).toInt()))
+                            else class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
                             if (class51.anIntArray945 != null) class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
                             if (class51 != null) `is` = class51.anIntArray917
                         }
                     } else `is` = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-73, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     if (`is` != null) string += AudioResampler.method1273(`is`, true)
                 } else string = IntHashSet.method2367(125.toByte(), IntHashSet.aClass348_Sub42_Sub12_3963!!)
-                if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(Class348_Sub33.anInt6967, 544))
-                if (Class348_Sub36.aClass46_6990 != null) {
-                    var class324 = Class348_Sub36.aClass46_6990!!.method426(var_renderer, 68.toByte())
+                if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(AnimationFrameDefinition.anInt6967, 544))
+                if (WidgetActionEntry.aClass46_6990 != null) {
+                    var class324 = WidgetActionEntry.aClass46_6990!!.method426(var_renderer, 68.toByte())
                     if (class324 == null) class324 = NodeDeque.aFont_3326!!
                     class324.method2585(
                         SizeBoundedSoftCache.anIntArray2330,
-                        Class348_Sub36.aClass46_6990!!.anInt709,
+                        WidgetActionEntry.aClass46_6990!!.anInt709,
                         TileRenderState.aAbstractModelRendererArray4234!!,
-                        Class348_Sub36.aClass46_6990!!.anInt700,
-                        Class348_Sub36.aClass46_6990!!.anInt749,
-                        Class348_Sub36.aClass46_6990!!.anInt789,
-                        Class348_Sub36.aClass46_6990!!.anInt809,
+                        WidgetActionEntry.aClass46_6990!!.anInt700,
+                        WidgetActionEntry.aClass46_6990!!.anInt749,
+                        WidgetActionEntry.aClass46_6990!!.anInt789,
+                        WidgetActionEntry.aClass46_6990!!.anInt809,
                         OutputStream_Sub1.aRandom93,
-                        Class348_Sub36.aClass46_6990!!.anInt762,
+                        WidgetActionEntry.aClass46_6990!!.anInt762,
                         LongHashTable.anInt451,
                         Class356.anInt4383,
                         -33,
@@ -119,7 +119,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                         RenderableGroup.anIntArray5007
                     )
                     method226(RenderableGroup.anIntArray5007!![0], RenderableGroup.anIntArray5007!![2], RenderableGroup.anIntArray5007!![1], 0, RenderableGroup.anIntArray5007!![3])
-                } else if (CameraRotationStub.aClass46_323 != null && (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
+                } else if (CameraRotationStub.aClass46_323 != null && (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
                     val i_1_ = (NodeDeque.aFont_3326!!.method2571(-1, Class356.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, OutputStream_Sub1.aRandom93))
                     method226(ConfigValueProvider.Companion.anInt4911 - -4, (Class369.aFontDefinition_4962!!.method1183(true, string) + i_1_), SocketGameConnection.anInt5832, 0, 16)
                 }

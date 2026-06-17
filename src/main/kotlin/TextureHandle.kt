@@ -71,7 +71,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qr.A(" + i + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + (if (component != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qr.A(" + i + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + (if (component != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ')'))
             }
         }
 

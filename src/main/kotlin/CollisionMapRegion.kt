@@ -17,7 +17,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
         val `is` = aClass45_1718!!.method410(-1860, 1, i)
         if (i_0_ < 12) return null
         val typedRecordTable = TypedRecordTable()
-        typedRecordTable.method2183(Class348_Sub49(`is`), 21890)
+        typedRecordTable.method2183(Buffer(`is`), 21890)
         return typedRecordTable
     }
 
@@ -53,7 +53,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
         try {
             aClass45_1718 = class45
             aClass45_1718!!.method407(0, 1)
-            val class348_sub49 = Class348_Sub49(aClass45_1718.method410(-1860, 0, 0))
+            val class348_sub49 = Buffer(aClass45_1718.method410(-1860, 0, 0))
             val i_17_ = class348_sub49.readUnsignedByte(255)
             if (i_17_ > 3) {
                 anIntArrayArray1724 = arrayOfNulls(0)
@@ -119,7 +119,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mt.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("mt.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -169,7 +169,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
             val i_15_: Int
             val i_16_: Int
             if (class46_14_ == null) {
-                i_15_ = Class348_Sub42_Sub8_Sub2.anInt10432
+                i_15_ = HardCacheEntryReference.anInt10432
                 i_16_ = LocTypeDefinition.anInt4017
             } else {
                 i_15_ = class46_14_.anInt789

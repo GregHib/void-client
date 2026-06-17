@@ -1,5 +1,5 @@
 import GlCubeMapTexture.Companion.method243
-import Class348_Sub40_Sub12.Companion.method3076
+import GradientLookupEffect.Companion.method3076
 import Class367_Sub10.Companion.method3553
 
 /* Class62 - Decompiled by JODE
@@ -39,11 +39,11 @@ object Class62 {
     fun method598(i: Int) {
         anInt1111++
         if (i != 9013) method597(86.toByte())
-        var class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3484(0) as? Class348_Sub15?
+        var class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3484(0) as? MenuActionNode?
         while (class348_sub15 != null) {
             if (!class348_sub15.aBoolean6772) Class64_Sub3.method690((-94).toByte(), (class348_sub15.anInt6773))
             else class348_sub15.aBoolean6772 = false
-            class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3482(0) as? Class348_Sub15?
+            class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3482(0) as? MenuActionNode?
         }
     }
 

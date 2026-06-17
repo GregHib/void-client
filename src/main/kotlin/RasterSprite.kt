@@ -9,7 +9,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
             this.anIntArray5201 = `is`
             this.anIntArray5202 = is_4_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nba.<init>(" + i + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_4_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nba.<init>(" + i + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_4_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -23,7 +23,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
         @JvmField
         var anInt5205: Int = 0
         @JvmField
-        var aClass348_Sub6_5206: Class348_Sub6? = Class348_Sub6(0, 0)
+        var aClass348_Sub6_5206: HslColorTableNode? = HslColorTableNode(0, 0)
         @JvmField
         var aClass45_5207: Class45? = null
 
@@ -48,7 +48,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
 
         fun method168(i: Byte) {
             do {
-                if (!Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
+                if (!VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
                     try {
                         try {
                             val runtime = Runtime.getRuntime()

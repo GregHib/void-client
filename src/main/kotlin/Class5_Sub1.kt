@@ -32,20 +32,20 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
     public override fun method178(i: Int, bool: Boolean, i_27_: Byte, i_28_: Int) {
         if (bool) {
             val `is` = IntArray(4)
-            Class348_Sub8.aRenderer6654!!.K(`is`)
-            Class348_Sub8.aRenderer6654!!.KA(i, i_28_, i - -this.aClass369_4635!!.anInt4971, (i_28_ + this.aClass369_4635!!.anInt4963))
+            FacingDirectionNode.aRenderer6654!!.K(`is`)
+            FacingDirectionNode.aRenderer6654!!.KA(i, i_28_, i - -this.aClass369_4635!!.anInt4971, (i_28_ + this.aClass369_4635!!.anInt4963))
             val i_29_ = aAbstractModelRenderer_8342!!.method966()
             val i_30_ = aAbstractModelRenderer_8342!!.method980()
             val i_31_ = aAbstractModelRenderer_8339!!.method966()
             val i_32_ = aAbstractModelRenderer_8339!!.method980()
             aAbstractModelRenderer_8342!!.method974(i, i_28_ - -(((this.aClass369_4635!!.anInt4963) + -i_30_) / 2))
             aAbstractModelRenderer_8339!!.method974((this.aClass369_4635!!.anInt4971 + (i + -i_31_)), i_28_ + (this.aClass369_4635!!.anInt4963 + -i_32_) / 2)
-            Class348_Sub8.aRenderer6654!!.KA(i, i_28_, (this.aClass369_4635!!.anInt4971 + i), i_28_ - -aAbstractModelRenderer_8343!!.method980())
+            FacingDirectionNode.aRenderer6654!!.KA(i, i_28_, (this.aClass369_4635!!.anInt4971 + i), i_28_ - -aAbstractModelRenderer_8343!!.method980())
             aAbstractModelRenderer_8343!!.method972(i + i_29_, i_28_, -i_29_ + (this.aClass369_4635!!.anInt4971) - i_31_, this.aClass369_4635!!.anInt4963)
             val i_33_ = aAbstractModelRenderer_8338!!.method980()
-            Class348_Sub8.aRenderer6654!!.KA(i, (-i_33_ + i_28_ - -this.aClass369_4635!!.anInt4963), this.aClass369_4635!!.anInt4971 + i, (i_28_ + this.aClass369_4635!!.anInt4963))
+            FacingDirectionNode.aRenderer6654!!.KA(i, (-i_33_ + i_28_ - -this.aClass369_4635!!.anInt4963), this.aClass369_4635!!.anInt4971 + i, (i_28_ + this.aClass369_4635!!.anInt4963))
             aAbstractModelRenderer_8338!!.method972(i_29_ + i, (-i_33_ + i_28_ + this.aClass369_4635!!.anInt4963), (-i_29_ + this.aClass369_4635!!.anInt4971 + -i_31_), this.aClass369_4635!!.anInt4963)
-            Class348_Sub8.aRenderer6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
+            FacingDirectionNode.aRenderer6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
         }
         anInt8334++
         if (i_27_ > -6) aAbstractModelRenderer_8347 = null
@@ -62,12 +62,12 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
         val i_43_ = -i_40_ + i_41_
         val i_44_ = this.method183(124) * i_42_ / 10000
         val `is` = IntArray(4)
-        Class348_Sub8.aRenderer6654!!.K(`is`)
-        Class348_Sub8.aRenderer6654!!.KA(i_38_, i_40_, i_44_ + i_38_, i_41_)
+        FacingDirectionNode.aRenderer6654!!.K(`is`)
+        FacingDirectionNode.aRenderer6654!!.KA(i_38_, i_40_, i_44_ + i_38_, i_41_)
         method186(i_40_, i_43_, 33.toByte(), i_38_, i_42_)
-        Class348_Sub8.aRenderer6654!!.KA(i_44_ + i_38_, i_40_, i_39_, i_41_)
+        FacingDirectionNode.aRenderer6654!!.KA(i_44_ + i_38_, i_40_, i_39_, i_41_)
         aAbstractModelRenderer_8347!!.method972(i_38_, i_40_, i_42_, i_43_)
-        Class348_Sub8.aRenderer6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
+        FacingDirectionNode.aRenderer6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
     }
 
     public override fun method7(i: Int) {
@@ -156,7 +156,7 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
                                 do {
                                     if (i_26_ == -4) {
                                         if (i_16_ == i && (i_17_ == i_7_)) {
-                                            Class348_Sub40_Sub30.anInt9388 = i_16_
+                                            HslAdjustTextureNode.anInt9388 = i_16_
                                             OverlayColorTable.anInt1753 = i_17_
                                             return true
                                         }
@@ -172,20 +172,20 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
                                     }
                                     if (method1842(i_11_, i_7_, -1, 1, i_16_, i_17_, i, 1, i_13_)) {
                                         OverlayColorTable.anInt1753 = i_17_
-                                        Class348_Sub40_Sub30.anInt9388 = i_16_
+                                        HslAdjustTextureNode.anInt9388 = i_16_
                                         return true
                                     }
                                     break@while_3_
                                 } while (false)
                                 if (class361.method3497(-28388, i, i_10_, 1, i_13_, i_16_, 1, i_17_, i_7_, i_11_)) {
                                     OverlayColorTable.anInt1753 = i_17_
-                                    Class348_Sub40_Sub30.anInt9388 = i_16_
+                                    HslAdjustTextureNode.anInt9388 = i_16_
                                     return true
                                 }
                                 break@while_3_
                             } while (false)
                             if (class361.method3503(i_16_, 110.toByte(), i_7_, 1, i_13_, i_11_, i_10_, i_17_, i)) {
-                                Class348_Sub40_Sub30.anInt9388 = i_16_
+                                HslAdjustTextureNode.anInt9388 = i_16_
                                 OverlayColorTable.anInt1753 = i_17_
                                 return true
                             }
@@ -193,13 +193,13 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
                         } while (false)
                         if (class361.method3495(i, i_17_, 1, i_9_, i_16_, i_7_, i_12_, 91)) {
                             OverlayColorTable.anInt1753 = i_17_
-                            Class348_Sub40_Sub30.anInt9388 = i_16_
+                            HslAdjustTextureNode.anInt9388 = i_16_
                             return true
                         }
                         break@while_3_
                     } while (false)
                     if (class361.method3504(i_7_, i_17_, i, i_16_, i_12_, 1, i_9_, 1)) {
-                        Class348_Sub40_Sub30.anInt9388 = i_16_
+                        HslAdjustTextureNode.anInt9388 = i_16_
                         OverlayColorTable.anInt1753 = i_17_
                         return true
                     }
@@ -263,7 +263,7 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
                 }
             }
             if (i_15_ != 1109655552) aBoolean8335 = false
-            Class348_Sub40_Sub30.anInt9388 = i_16_
+            HslAdjustTextureNode.anInt9388 = i_16_
             OverlayColorTable.anInt1753 = i_17_
             return false
         }

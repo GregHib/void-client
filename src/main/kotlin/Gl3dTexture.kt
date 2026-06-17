@@ -1,5 +1,5 @@
 import GameAppletFrame.Companion.method94
-import Class348_Sub40_Sub3.Companion.method3055
+import RangeThresholdTextureNode.Companion.method3055
 import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage3Dub
 import java.io.IOException
@@ -19,7 +19,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
             glTexImage3Dub(this.anInt5093, 0, this.method228(105), anInt8631, anInt8629, anInt8626, 0, method3055(109, this.aTextureFormatInfo_5084), 5121, `is`, 0)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qba.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qba.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -38,12 +38,12 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
         var anInt8632: Int = 0
 
         @JvmStatic
-        fun method247(i: Int): Class348_Sub51? {
+        fun method247(i: Int): DisplaySettingsConfig? {
             anInt8632++
             var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
-            var class348_sub51 = Class348_Sub51(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, 0)
+            var class348_sub51 = DisplaySettingsConfig(HardCacheEntryReference.aSceneProjector_10434, 0)
             try {
-                val class144 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2233((-46).toByte(), "", true)
+                val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2233((-46).toByte(), "", true)
                 while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-85).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
                     randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk?
@@ -55,7 +55,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                         if (i_2_ == -1) throw IOException("EOF")
                         i_3_ += i_2_
                     }
-                    class348_sub51 = Class348_Sub51(Class348_Sub49(`is`), (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434), 0)
+                    class348_sub51 = DisplaySettingsConfig(Buffer(`is`), (HardCacheEntryReference.aSceneProjector_10434), 0)
                 }
             } catch (exception: Exception) {
                 /* empty */
@@ -83,7 +83,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 EmoteDefinition.aIntRange_3264,
                 GraphicsOptionState.aIntRange_3143,
                 CollisionMapRegion.aIntRange_1722,
-                Class348_Sub42_Sub3.aIntRange_9503,
+                LoadingScreenImageNode.aIntRange_9503,
                 ScrollingWidgetComponentNode.aIntRange_8385,
                 SceneEntity.aIntRange_6383,
                 SocketStreamWorker.aIntRange_2665,
@@ -102,15 +102,15 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 HeapDiagnosticsHolder.aIntRange_2248,
                 FogOptionState.aIntRange_6056,
                 WidgetRedrawTracker.aIntRange_3925,
-                Class348_Sub40_Sub16.aIntRange_9225,
+                CombineTextureNode.aIntRange_9225,
                 MapArchiveSource.aIntRange_4798,
                 Class5_Sub2.aIntRange_8365,
                 Class352.aIntRange_4331,
                 DetailLevelOptionState.aIntRange_6121,
-                Class348_Sub38.aIntRange_7015,
+                TerrainShadowBuilderGl3.aIntRange_7015,
                 LightingOptionState.aIntRange_5883,
                 Class59.aIntRange_1068,
-                Class348_Sub45.aIntRange_7106,
+                TimedRecordAccessor.aIntRange_7106,
                 Class367_Sub9.aIntRange_7367,
                 ParserSpecialCharsHolder.aIntRange_1901,
                 GlArrayBufferObject.aIntRange_4707,
@@ -135,8 +135,8 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 Class369_Sub2.aIntRange_8590,
                 ItemNameResolver.aIntRange_4998,
                 NpcCountAccessor.aIntRange_2279,
-                Class348_Sub40_Sub12.aIntRange_9197,
-                Class348_Sub47.aIntRange_7124,
+                GradientLookupEffect.aIntRange_9197,
+                OutgoingPacketNode.aIntRange_7124,
                 CompassSmoother.aIntRange_3371,
                 BinaryGraphicsOptionState.aIntRange_5950,
                 HslColorConfig.aIntRange_330,
@@ -146,8 +146,8 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 BinaryGraphicsOptionState.aIntRange_5949,
                 WorldListEntry.aIntRange_304,
                 InputStream_Sub2.aIntRange_82,
-                Class348_Sub42_Sub8.aIntRange_9552,
-                Class348_Sub40_Sub19.aIntRange_9254,
+                CacheEntryReference.aIntRange_9552,
+                BlankTextureNode.aIntRange_9254,
                 ArchiveResourceProvider.aIntRange_6340,
                 InputStream_Sub1.aIntRange_79,
                 Class73.aIntRange_4779,
@@ -157,33 +157,33 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 PingHostListHolder.aIntRange_2335,
                 ScreenBorderFiller.aIntRange_1959,
                 SceneEffectMarker.aIntRange_6424,
-                Class348_Sub1_Sub2.aIntRange_8817,
+                HashTileShape.aIntRange_8817,
                 PlayerUpdateDecoder.aIntRange_1914,
-                Class348_Sub40_Sub24.aIntRange_9324,
-                Class348_Sub41.aIntRange_7052,
+                GradientMapTextureNode.aIntRange_9324,
+                RegionSceneShifter.aIntRange_7052,
                 ParticleProcessor.aIntRange_4269,
                 Class365.aIntRange_4477,
                 SimpleBinaryOptionState.aIntRange_6075,
                 ImageFrameCache.aIntRange_4027,
-                Class348_Sub40_Sub15.aIntRange_9216,
+                BrightnessTextureNode.aIntRange_9216,
                 ScriptOpcodeHolder.aIntRange_2338,
                 SlotBinding.aIntRange_3427,
                 CircleDrawer.aIntRange_2693,
                 ConnectionStateRefs.aIntRange_316,
                 Class367_Sub4.aIntRange_7324,
-                Class348_Sub46.aIntRange_7113,
+                StringValueNode.aIntRange_7113,
                 MapAreaDefinition.aIntRange_2527,
                 HeapDiagnosticsHolder.aIntRange_2255,
                 Class59_Sub2_Sub2.aIntRange_8683,
-                Class348_Sub45.aIntRange_7105,
-                Class348_Sub40_Sub19.aIntRange_9257,
+                TimedRecordAccessor.aIntRange_7105,
+                BlankTextureNode.aIntRange_9257,
                 Class367_Sub8.aIntRange_7363,
-                Class348_Sub40_Sub22.aIntRange_9285,
+                CellNoiseTextureNode.aIntRange_9285,
                 Class367_Sub4.aIntRange_7323,
                 MapSceneIconDef.aIntRange_2860,
                 GroundDecorEntity.aIntRange_8756,
                 GraphicsOptionState.aIntRange_3135,
-                Class348_Sub42_Sub8.aIntRange_9550,
+                CacheEntryReference.aIntRange_9550,
                 CacheStateResetter.aIntRange_123,
                 ParticleSystemState.aIntRange_2196,
                 CompassSmoother.aIntRange_3368,
@@ -202,14 +202,14 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
         fun method249(i: Int) {
             anInt8627++
             ArbFogMaterialPass.aStringArray6200 = arrayOfNulls<String>(500)
-            Class348_Sub31_Sub2.anInt9077 = 2 + (Class369.aFontDefinition_4962!!.anInt1993 + Class369.aFontDefinition_4962!!.anInt1988)
+            ProducerImageSurface.anInt9077 = 2 + (Class369.aFontDefinition_4962!!.anInt1993 + Class369.aFontDefinition_4962!!.anInt1988)
             Class68.anInt1188 = (ParticleEmitterFactory.aFontDefinition_3179!!.anInt1988 - (-ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993 - i))
             var i_4_ = 0
             while ((i_4_ < ArbFogMaterialPass.aStringArray6200!!.size)) {
                 ArbFogMaterialPass.aStringArray6200!![i_4_] = ""
                 i_4_++
             }
-            method94(LocalizedText.aLocalizedText_3483!!.method2063(Class348_Sub33.anInt6967, 544)!!, 67)
+            method94(LocalizedText.aLocalizedText_3483!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!, 67)
         }
     }
 }

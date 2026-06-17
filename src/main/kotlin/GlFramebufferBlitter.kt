@@ -24,9 +24,9 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     private var aBoolean293: Boolean
     private var aBoolean294: Boolean
     private var aClass258_Sub3Array295: Array<GlTexture2D?>?
-    private var aClass348_Sub42_Sub2_296: Class348_Sub42_Sub2? = null
+    private var aClass348_Sub42_Sub2_296: RenderbufferObject? = null
     private var aBoolean297: Boolean
-    private var aClass348_Sub42_Sub2_298: Class348_Sub42_Sub2? = null
+    private var aClass348_Sub42_Sub2_298: RenderbufferObject? = null
     private var aBoolean299: Boolean
     private var aClass258_Sub3_300: GlTexture2D? = null
     private var anInt301: Int
@@ -54,10 +54,10 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             aHa_Sub2_290.la()
             var i_4_ = 0
             var i_5_ = 1
-            var class348_sub5: Class348_Sub5?
-            var class348_sub5_6_ = aNodeDeque_292.method1995(4) as Class348_Sub5?
+            var class348_sub5: AbstractBloomEffect?
+            var class348_sub5_6_ = aNodeDeque_292.method1995(4) as AbstractBloomEffect?
             while (class348_sub5_6_ != null) {
-                class348_sub5 = aNodeDeque_292.method1990(113.toByte()) as Class348_Sub5?
+                class348_sub5 = aNodeDeque_292.method1990(113.toByte()) as AbstractBloomEffect?
                 val i_7_ = class348_sub5_6_.method2764(1)
                 for (i_8_ in 0..<i_7_) {
                     class348_sub5_6_.method2750(aClass258_Sub3_300, aClass258_Sub3Array295!![i_4_], i_8_, 103.toByte())
@@ -105,7 +105,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         }
     }
 
-    fun method274(class348_sub5: Class348_Sub5, bool: Boolean): Boolean {
+    fun method274(class348_sub5: AbstractBloomEffect, bool: Boolean): Boolean {
         anInt273++
         if (aFrameBufferObject_284 != null) {
             if (class348_sub5.method2751(bool) || class348_sub5.method2758(85)) {
@@ -131,9 +131,9 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             anInt286 = i
             anInt275 = i_10_
             var class348 = aNodeDeque_292.method1995(i_12_ xor 0x4.inv())
-            while (aNodeDeque_292.aClass348_3334 !== class348) {
-                (class348 as Class348_Sub5).method2754(anInt275, 41.toByte(), anInt286)
-                class348 = class348.aClass348_4294
+            while (aNodeDeque_292.aLinkedListNode_3334 !== class348) {
+                (class348 as AbstractBloomEffect).method2754(anInt275, 41.toByte(), anInt286)
+                class348 = class348.aLinkedListNode_4294
             }
             aBoolean297 = true
             aBoolean293 = true
@@ -161,9 +161,9 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 aClass258_Sub3_300!!.method1952(-19948)
                 aClass258_Sub3_300 = null
             }
-            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_298 = Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
+            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_298 = RenderbufferObject(aHa_Sub2_290, 6402, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
             if (aBoolean303) aClass258_Sub3_300 = GlTexture2D(aHa_Sub2_290, 34037, 6402, anInt286, anInt275)
-            else if (aClass348_Sub42_Sub2_298 == null) aClass348_Sub42_Sub2_298 = Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286, anInt275)
+            else if (aClass348_Sub42_Sub2_298 == null) aClass348_Sub42_Sub2_298 = RenderbufferObject(aHa_Sub2_290, 6402, anInt286, anInt275)
             aBoolean293 = false
             aBoolean294 = true
             aBoolean299 = true
@@ -182,7 +182,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 aClass258_Sub3Array295!![1]!!.method1952(-19948)
                 aClass258_Sub3Array295!![1] = null
             }
-            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_296 = Class348_Sub42_Sub2(aHa_Sub2_290, anInt301, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
+            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_296 = RenderbufferObject(aHa_Sub2_290, anInt301, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
             aClass258_Sub3Array295!![0] = GlTexture2D(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275)
             aClass258_Sub3Array295!![1] = if (anInt302 > 1) GlTexture2D(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275) else null
             aBoolean294 = true
@@ -228,7 +228,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         return !aBoolean299
     }
 
-    fun method278(class348_sub5: Class348_Sub5, bool: Boolean) {
+    fun method278(class348_sub5: AbstractBloomEffect, bool: Boolean) {
         anInt280++
         if (bool == true) {
             class348_sub5.aBoolean6621 = false
@@ -250,9 +250,9 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         aClass258_Sub3Array295 = null
         if (!aNodeDeque_292.method2002(18.toByte())) {
             var class348 = aNodeDeque_292.method1995(4)
-            while (aNodeDeque_292.aClass348_3334 !== class348) {
-                (class348 as Class348_Sub5).method2763((-124).toByte())
-                class348 = class348.aClass348_4294
+            while (aNodeDeque_292.aLinkedListNode_3334 !== class348) {
+                (class348 as AbstractBloomEffect).method2763((-124).toByte())
+                class348 = class348.aLinkedListNode_4294
             }
         }
         anInt275 = 1
@@ -270,14 +270,14 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         var bool = false
         var i_14_ = 0
         var i_15_ = 0
-        var class348_sub5 = aNodeDeque_292.method1995(4) as Class348_Sub5?
+        var class348_sub5 = aNodeDeque_292.method1995(4) as AbstractBloomEffect?
         val i_16_ = 50 / ((-34 - i) / 45)
         while ( /**/class348_sub5 != null) {
             val i_17_ = class348_sub5.method2761(true)
             i_15_ += class348_sub5.method2764(1)
             if (i_14_ < i_17_) i_14_ = i_17_
             bool = bool or class348_sub5.method2759(1)
-            class348_sub5 = aNodeDeque_292.method1990(67.toByte()) as Class348_Sub5?
+            class348_sub5 = aNodeDeque_292.method1990(67.toByte()) as AbstractBloomEffect?
         }
         val i_18_: Int
         if (i_14_ != 2) {
@@ -351,10 +351,10 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         var anInt291: Int = 0
         fun method271(i: Int, class46: Class46, i_0_: Byte, i_1_: Int) {
             anInt278++
-            val var_aa = class46.method425(Class348_Sub8.aRenderer6654!!, 19.toByte())
+            val var_aa = class46.method425(FacingDirectionNode.aRenderer6654!!, 19.toByte())
             if (var_aa != null) {
-                Class348_Sub8.aRenderer6654!!.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789)
-                if (KeyboardLayoutCache.anInt3306 >= 3) Class348_Sub8.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
+                FacingDirectionNode.aRenderer6654!!.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789)
+                if (KeyboardLayoutCache.anInt3306 >= 3) FacingDirectionNode.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
                 else Class79.aAbstractModelRenderer_1365!!.method976((class46.anInt709.toFloat() / 2.0f + i_1_.toFloat()), i.toFloat() + class46.anInt789.toFloat() / 2.0f, 4096, (0x3fff and -ResourceProvider.aFloat3938.toInt()) shl 2, var_aa, i_1_, i)
             }
         }
@@ -362,7 +362,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         @JvmStatic
         fun method273(class46: Class46, i: Int) {
             anInt288++
-            if (class46.anInt774 == 5 && class46.anInt812 != -1) method2383(Class348_Sub8.aRenderer6654, -2, class46)
+            if (class46.anInt774 == 5 && class46.anInt812 != -1) method2383(FacingDirectionNode.aRenderer6654, -2, class46)
         }
 
         @JvmStatic
@@ -384,7 +384,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             MaterialPass.anInt3682 = 0
             Class58.anInt1067 = i_24_
             WidgetDefinition.Companion.anInterface4_252 = null
-            Class348_Sub49.anInt7207 = 1
+            Buffer.anInt7207 = 1
             BloomGraphicsOptionState.anInt5965 = i
             Class85.method828(38.toByte(), i_25_, i_21_)
         }

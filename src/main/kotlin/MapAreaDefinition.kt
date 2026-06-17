@@ -12,7 +12,7 @@ class MapAreaDefinition {
     var anInt2533: Int = 1
     var anInt2534: Int = 2
 
-    private fun method1418(i: Int, i_0_: Int, class348_sub49: Class348_Sub49, i_1_: Byte) {
+    private fun method1418(i: Int, i_0_: Int, class348_sub49: Buffer, i_1_: Byte) {
         if (i_1_.toInt() != 94) this.anInt2526 = -81
         anInt2532++
         if (i == 1) {
@@ -30,7 +30,7 @@ class MapAreaDefinition {
         } else class348_sub49.readByte(-106)
     }
 
-    fun method1419(i: Int, class348_sub49: Class348_Sub49, i_2_: Byte) {
+    fun method1419(i: Int, class348_sub49: Buffer, i_2_: Byte) {
         anInt2528++
         val i_3_ = 93 / ((i_2_ - -24) / 55)
         while (true) {
@@ -86,7 +86,7 @@ class MapAreaDefinition {
                                 do {
                                     if (i_25_ == -4) {
                                         if (i_15_ == i_9_ && (i_16_ == i_14_)) {
-                                            Class348_Sub40_Sub30.anInt9388 = i_15_
+                                            HslAdjustTextureNode.anInt9388 = i_15_
                                             OverlayColorTable.anInt1753 = i_16_
                                             return true
                                         }
@@ -102,27 +102,27 @@ class MapAreaDefinition {
                                     }
                                     if (method1842(i, i_14_, -1, i_12_, i_15_, i_16_, i_9_, i_12_, i_8_)) {
                                         OverlayColorTable.anInt1753 = i_16_
-                                        Class348_Sub40_Sub30.anInt9388 = i_15_
+                                        HslAdjustTextureNode.anInt9388 = i_15_
                                         return true
                                     }
                                     break@while_48_
                                 } while (false)
                                 if (class361.method3497(-28388, i_9_, i_11_, i_12_, i_8_, i_15_, i_12_, i_16_, i_14_, i)) {
-                                    Class348_Sub40_Sub30.anInt9388 = i_15_
+                                    HslAdjustTextureNode.anInt9388 = i_15_
                                     OverlayColorTable.anInt1753 = i_16_
                                     return true
                                 }
                                 break@while_48_
                             } while (false)
                             if (class361.method3503(i_15_, (-98).toByte(), i_14_, i_12_, i_8_, i, i_11_, i_16_, i_9_)) {
-                                Class348_Sub40_Sub30.anInt9388 = i_15_
+                                HslAdjustTextureNode.anInt9388 = i_15_
                                 OverlayColorTable.anInt1753 = i_16_
                                 return true
                             }
                             break@while_48_
                         } while (false)
                         if (class361.method3495(i_9_, i_16_, i_12_, i_5_, i_15_, i_14_, i_13_, -71)) {
-                            Class348_Sub40_Sub30.anInt9388 = i_15_
+                            HslAdjustTextureNode.anInt9388 = i_15_
                             OverlayColorTable.anInt1753 = i_16_
                             return true
                         }
@@ -130,7 +130,7 @@ class MapAreaDefinition {
                     } while (false)
                     if (class361.method3504(i_14_, i_16_, i_9_, i_15_, i_13_, 1, i_5_, i_12_)) {
                         OverlayColorTable.anInt1753 = i_16_
-                        Class348_Sub40_Sub30.anInt9388 = i_15_
+                        HslAdjustTextureNode.anInt9388 = i_15_
                         return true
                     }
                 } while (false)
@@ -245,7 +245,7 @@ class MapAreaDefinition {
                 }
             }
             OverlayColorTable.anInt1753 = i_16_
-            Class348_Sub40_Sub30.anInt9388 = i_15_
+            HslAdjustTextureNode.anInt9388 = i_15_
             return false
         }
 

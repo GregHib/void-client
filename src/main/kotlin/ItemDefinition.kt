@@ -172,7 +172,7 @@ class ItemDefinition {
             }
             this.aStringArray2763!![4] = LocalizedText.aLocalizedText_3489!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -294,7 +294,7 @@ class ItemDefinition {
             class64!!.s(i)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
         }
     }
 
@@ -316,11 +316,11 @@ class ItemDefinition {
             anInt2751++
             if (this.aClass356_2757 == null) return string
             if (i_36_ != -1511086397) method1569(25, null)
-            val class348_sub50 = (this.aClass356_2757!!.method3480(i.toLong(), i_36_ xor 0x5a114e4b) as Class348_Sub50?)
+            val class348_sub50 = (this.aClass356_2757!!.method3480(i.toLong(), i_36_ xor 0x5a114e4b) as StringCacheNode?)
             if (class348_sub50 == null) return string
             return class348_sub50.aString7211
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.N(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_36_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rq.N(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_36_ + ')'))
         }
     }
 
@@ -416,7 +416,7 @@ class ItemDefinition {
             }
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
         }
     }
 
@@ -443,7 +443,7 @@ class ItemDefinition {
         return bool_56_
     }
 
-    private fun method1566(i: Int, i_57_: Int, class348_sub49: Class348_Sub49?) {
+    private fun method1566(i: Int, i_57_: Int, class348_sub49: Buffer?) {
         try {
             if (i != 4) method1564(9)
             if (i_57_ != 1) {
@@ -553,10 +553,10 @@ class ItemDefinition {
                                                                     for (i_66_ in 0..<i_64_) {
                                                                         val bool = class348_sub49.readUnsignedByte(255) == 1
                                                                         val i_67_ = class348_sub49.readMedium(-1)
-                                                                        val class348: Class348?
-                                                                        if (bool) class348 = Class348_Sub50(class348_sub49.readString(107.toByte()))
-                                                                        else class348 = Class348_Sub35(class348_sub49.readInt((-126).toByte()))
-                                                                        this.aClass356_2757!!.method3483(76.toByte(), i_67_.toLong(), class348)
+                                                                        val linkedListNode: LinkedListNode?
+                                                                        if (bool) linkedListNode = StringCacheNode(class348_sub49.readString(107.toByte()))
+                                                                        else linkedListNode = IntKeyNode(class348_sub49.readInt((-126).toByte()))
+                                                                        this.aClass356_2757!!.method3483(76.toByte(), i_67_.toLong(), linkedListNode)
                                                                     }
                                                                 }
                                                             } else this.anInt2812 = class348_sub49!!.readUnsignedShort(i + 842397940)
@@ -574,20 +574,20 @@ class ItemDefinition {
             } else anInt2756 = class348_sub49!!.readUnsignedShort(i + 842397940)
             anInt2754++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.L(" + i + ',' + i_57_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rq.L(" + i + ',' + i_57_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
     fun method1567(i: Int, i_70_: Int, i_71_: Int): Int {
         anInt2793++
         if (this.aClass356_2757 == null) return i
-        val class348_sub35 = (this.aClass356_2757!!.method3480(i_71_.toLong(), -6008) as Class348_Sub35?)
+        val class348_sub35 = (this.aClass356_2757!!.method3480(i_71_.toLong(), -6008) as IntKeyNode?)
         if (class348_sub35 == null) return i
         val i_72_ = 56 % ((-32 - i_70_) / 50)
         return class348_sub35.anInt6976
     }
 
-    fun method1569(i: Int, class348_sub49: Class348_Sub49?) {
+    fun method1569(i: Int, class348_sub49: Buffer?) {
         try {
             if (i != 768) method1565(true, -71)
             while (true) {
@@ -597,7 +597,7 @@ class ItemDefinition {
             }
             anInt2800++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.I(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rq.I(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -621,7 +621,7 @@ class ItemDefinition {
             this.aString2795 = itemDefinition_94_.aString2795
             anInt2756 = itemDefinition_95_.anInt2756
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (itemDefinition_94_ != null) "{...}" else "null") + ',' + (if (itemDefinition_95_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (itemDefinition_94_ != null) "{...}" else "null") + ',' + (if (itemDefinition_95_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -636,7 +636,7 @@ class ItemDefinition {
             }
             anInt2790++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.M(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_96_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rq.M(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_96_ + ')'))
         }
     }
 
@@ -685,7 +685,7 @@ class ItemDefinition {
             }
             return is_101_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.K(" + i + ',' + i_100_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rq.K(" + i + ',' + i_100_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -758,7 +758,7 @@ class ItemDefinition {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rq.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_73_ + ',' + i_74_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (is_75_ != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + i_79_ + ',' + i_80_ + ',' + i_81_ + ',' + (if (fs_82_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("rq.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_73_ + ',' + i_74_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (is_75_ != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + i_79_ + ',' + i_80_ + ',' + i_81_ + ',' + (if (fs_82_ != null) "{...}" else "null") + ')'))
             }
         }
     }

@@ -82,7 +82,7 @@ class SkeletalAnimFrameLoader {
         return modelDefinition
     }
 
-    private fun method344(i: Int, class348_sub49: Class348_Sub49, i_10_: Byte) {
+    private fun method344(i: Int, class348_sub49: Buffer, i_10_: Byte) {
         if (i != 1) {
             if (i == 2) {
                 val i_11_ = class348_sub49.readUnsignedByte(i_10_ + 320)
@@ -114,7 +114,7 @@ class SkeletalAnimFrameLoader {
         if (i_10_.toInt() != -65) aLong482 = -90L
     }
 
-    fun method346(i: Int, class348_sub49: Class348_Sub49) {
+    fun method346(i: Int, class348_sub49: Buffer) {
         anInt467++
         while (true) {
             val i_18_ = class348_sub49.readUnsignedByte(255)
@@ -172,7 +172,7 @@ class SkeletalAnimFrameLoader {
         @JvmStatic
         fun method345(i: Int, i_17_: Byte) {
             anInt469++
-            if (Class348_Sub43.anInt7068 == 0) Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, i)
+            if (SpriteDefinition.anInt7068 == 0) Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, i)
             else Class58.anInt1059 = i
             if (i_17_ > -26) method349(-111)
         }
@@ -210,7 +210,7 @@ class SkeletalAnimFrameLoader {
                     method347(`is`, is_20_, i, -22222, -1 + i_24_)
                     method347(`is`, is_20_, i_24_ - -1, i_21_, i_22_)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("ic.K(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_20_ != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("ic.K(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_20_ != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ')'))
                 }
                 break
             } while (false)

@@ -1,6 +1,6 @@
 import CircleDrawer.method1496
-import Class348.Companion.method2711
-import Class348_Sub17.Companion.method2929
+import LinkedListNode.Companion.method2711
+import SoundBankPatch.Companion.method2929
 import Class79.Companion.method802
 import OutputStream_Sub2.Companion.method136
 
@@ -90,11 +90,11 @@ class Npc : ProjectedGroundDecor() {
             this.anIntArray10236 = null
         }
         if (this.anInt10269 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(118.toByte(), this.anInt10269))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(118.toByte(), this.anInt10269))
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10269 = -1
         }
         if (this.anInt10291 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(77.toByte(), this.anInt10291))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(77.toByte(), this.anInt10291))
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         if ((this.anInt10319.inv()) > i_16_) this.anInt10319++
@@ -213,11 +213,11 @@ class Npc : ProjectedGroundDecor() {
             this.anInt10286 = -1
         }
         if (this.anInt10269 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(117.toByte(), this.anInt10269))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(117.toByte(), this.anInt10269))
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10269 = -1
         }
         if (this.anInt10291 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(56.toByte(), this.anInt10291))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(56.toByte(), this.anInt10291))
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         if (!bool) {
@@ -329,7 +329,7 @@ class Npc : ProjectedGroundDecor() {
         if (bool) class64.method624(this.aByte10255.toInt(), this.aByte10206.toInt(), this.aByte10270.toInt(), (0xff and this.aByte10279.toInt()))
         if (this.anInt10269 == -1 || this.anInt10240 == -1) this.aClass64Array10323[1] = null
         else {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(56.toByte(), this.anInt10269))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(56.toByte(), this.anInt10269))
             val bool_40_ = (class368.aByte4488.toInt() == 3 && (i_37_ != 0 || i_38_ != 0))
             var i_41_ = i_35_
             if (!bool_40_) {
@@ -378,7 +378,7 @@ class Npc : ProjectedGroundDecor() {
         }
         if (this.anInt10291 == -1 || this.anInt10224 == -1) this.aClass64Array10323[2] = null
         else {
-            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), this.anInt10291))
+            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), this.anInt10291))
             val bool_51_ = (class368.aByte4488.toInt() == 3 && (i_37_ != 0 || i_38_ != 0))
             var i_52_ = i_35_
             if (!bool_51_) {

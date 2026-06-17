@@ -40,7 +40,7 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
                     val class211 = WaterDetailOptionState.aSoundEnvelopeArray5993!![i]
                     val class348_sub1 = class211!!.aClass348_Sub1_2745!!
                     val i_3_ = class211.anInt2731
-                    val i_4_ = (class348_sub1.method2723(-1) - Class348_Sub23_Sub2.anInt9037)
+                    val i_4_ = (class348_sub1.method2723(-1) - TheoraVideoStream.anInt9037)
                     val i_5_ = 1 + (2 * i_4_ shr Class362.anInt4459)
                     var i_6_ = 0
                     val `is` = IntArray(i_5_ * i_5_)
@@ -51,7 +51,7 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
                         i_6_ -= i_8_
                         i_8_ = 0
                     }
-                    if (i_9_ >= Class348_Sub41.anInt7054) i_9_ = Class348_Sub41.anInt7054 - 1
+                    if (i_9_ >= RegionSceneShifter.anInt7054) i_9_ = RegionSceneShifter.anInt7054 - 1
                     for (i_10_ in i_8_..i_9_) {
                         val i_11_ = class211.aShortArray2742!![i_6_].toInt()
                         val i_12_ = i_11_ ushr 8
@@ -121,18 +121,18 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
             if (i_35_ < 3) {
                 val i_38_ = i_32_ shr 9
                 val i_39_ = i_33_ shr 9
-                if (i_34_ < 0 || i_36_ < 0 || -1 + Class367_Sub4.anInt7319 < i_34_ || (i_36_ > Class348_Sub40_Sub3.anInt9109 - 1)) return 0
-                if (i_38_ < 1 || i_39_ < 1 || -1 + Class367_Sub4.anInt7319 < i_38_ || -1 + Class348_Sub40_Sub3.anInt9109 < i_39_) return 0
-                var bool = ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_32_ shr 9]!![i_33_ shr 9]).toInt()) != 0)
+                if (i_34_ < 0 || i_36_ < 0 || -1 + Class367_Sub4.anInt7319 < i_34_ || (i_36_ > RangeThresholdTextureNode.anInt9109 - 1)) return 0
+                if (i_38_ < 1 || i_39_ < 1 || -1 + Class367_Sub4.anInt7319 < i_38_ || -1 + RangeThresholdTextureNode.anInt9109 < i_39_) return 0
+                var bool = ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_32_ shr 9]!![i_33_ shr 9]).toInt()) != 0)
                 if ((i_32_ and 0x1ff) == 0) {
-                    val bool_40_ = ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![-1 + i_38_]!![i_33_ shr 9]).toInt()) != 0)
-                    val bool_41_ = ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_38_]!![i_33_ shr 9]).toInt()) != 0)
-                    if (bool_40_ == !bool_41_) bool = (0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_34_]!![i_36_]).toInt()) != 0
+                    val bool_40_ = ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![-1 + i_38_]!![i_33_ shr 9]).toInt()) != 0)
+                    val bool_41_ = ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_38_]!![i_33_ shr 9]).toInt()) != 0)
+                    if (bool_40_ == !bool_41_) bool = (0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_34_]!![i_36_]).toInt()) != 0
                 }
                 if ((i_33_ and 0x1ff) == 0) {
-                    val bool_42_ = ((Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_32_ shr 9]!![-1 + i_39_]).toInt() and 0x2) != 0
-                    val bool_43_ = ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_32_ shr 9]!![i_39_]).toInt()) != 0)
-                    if (bool_42_ == !bool_43_) bool = (0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_34_]!![i_36_]).toInt()) != 0
+                    val bool_42_ = ((AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_32_ shr 9]!![-1 + i_39_]).toInt() and 0x2) != 0
+                    val bool_43_ = ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_32_ shr 9]!![i_39_]).toInt()) != 0)
+                    if (bool_42_ == !bool_43_) bool = (0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_34_]!![i_36_]).toInt()) != 0
                 }
                 if (bool) i_35_++
             }

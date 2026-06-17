@@ -349,7 +349,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
         try {
             this.aByteArray10471 = ByteArray(i_19_ * i)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_19_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_19_ + ')'))
         }
     }
 
@@ -386,13 +386,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
             if (i < 30) aNodeDeque_10479 = null
             method131(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1, 2, true, 22050)
             anInt10470++
-            Class348_Sub40.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 0, 7)
-            Class348_Sub42_Sub18.method3273(true, -114, NpcCountAccessor.method1326(null, 9))
-            VarbitDefLoader.aSoundChannelMixer_2596 = TextureHandle.method1439(2048, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 1, 7)
-            Class348_Sub43.aClass348_Sub16_Sub4_7065 = Class348_Sub16_Sub4()
-            VarbitDefLoader.aSoundChannelMixer_2596!!.method2088(false, Class348_Sub43.aClass348_Sub16_Sub4_7065)
+            AbstractProceduralTextureNode.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 0, 7)
+            ParticleEmitterListNode.method3273(true, -114, NpcCountAccessor.method1326(null, 9))
+            VarbitDefLoader.aSoundChannelMixer_2596 = TextureHandle.method1439(2048, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 1, 7)
+            SpriteDefinition.aClass348_Sub16_Sub4_7065 = AudioMixerScheduler()
+            VarbitDefLoader.aSoundChannelMixer_2596!!.method2088(false, SpriteDefinition.aClass348_Sub16_Sub4_7065)
             Class57.aAudioResampler_1050 = AudioResampler(22050, HslColorConfig.anInt339)
-            Class348_Sub40_Sub17_Sub1.method3093(110)
+            SpriteRgbTextureNode.method3093(110)
         }
 
         init {

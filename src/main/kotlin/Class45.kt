@@ -32,7 +32,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
             val i_3_ = (aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_2_]!!.method2365(i xor 0x7486.inv(), ClanChatRequestSender.method2108(string_1_, -29286)))
             return method410(-1860, i_2_, i_3_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("in.EA(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("in.EA(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -91,14 +91,14 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = Class50_Sub1.method461(false, anObjectArray656!![i_9_], 53146732)!!
         else {
             is_14_ = Class50_Sub1.method461(true, anObjectArray656!![i_9_], 53146732)!!
-            val class348_sub49 = Class348_Sub49(is_14_)
+            val class348_sub49 = Buffer(is_14_)
             class348_sub49.method3367(607818341, `is`, 5, (class348_sub49.aByteArray7154)!!.size)
         }
         val is_15_: ByteArray?
         try {
-            is_15_ = Class348_Sub41.method3158(is_14_, -120)
+            is_15_ = RegionSceneShifter.method3158(is_14_, -120)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + Class59_Sub1.method554(5126, is_14_.size, is_14_) + "," + Class59_Sub1.method554(5126, -2 + is_14_.size, is_14_) + "," + aCutsceneSequenceData_629!!.anIntArray3729[i_9_] + "," + aCutsceneSequenceData_629!!.anInt3719))
+            throw SoundBankPatch.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + Class59_Sub1.method554(5126, is_14_.size, is_14_) + "," + Class59_Sub1.method554(5126, -2 + is_14_.size, is_14_) + "," + aCutsceneSequenceData_629!!.anIntArray3729[i_9_] + "," + aCutsceneSequenceData_629!!.anInt3719))
         }
         if (aBoolean655) anObjectArray656!![i_9_] = null
         if (i_8_ >= -17) method415(70.toByte(), -7)
@@ -107,7 +107,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
                 var i_30_ = is_15_.size
                 val i_31_ = 0xff and is_15_[--i_30_].toInt()
                 i_30_ -= 4 * (i_31_ * i_10_)
-                val class348_sub49 = Class348_Sub49(is_15_)
+                val class348_sub49 = Buffer(is_15_)
                 var i_32_ = 0
                 var i_33_ = 0
                 class348_sub49.anInt7197 = i_30_
@@ -148,7 +148,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
                 var i_16_ = is_15_.size
                 val i_17_ = 0xff and is_15_[--i_16_].toInt()
                 i_16_ -= 4 * (i_10_ * i_17_)
-                val class348_sub49 = Class348_Sub49(is_15_)
+                val class348_sub49 = Buffer(is_15_)
                 val is_18_ = IntArray(i_10_)
                 class348_sub49.anInt7197 = i_16_
                 for (i_19_ in 0..<i_17_) {
@@ -295,7 +295,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
             val i_58_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_57_]!!.method2365(1, ClanChatRequestSender.method2108(string_56_, -29286))
             return method420(i + -17694, i_57_, i_58_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("in.Q(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_56_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("in.Q(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_56_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -480,7 +480,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
             val i_80_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_79_]!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             return i_80_ >= 0
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("in.M(" + (if (string != null) "{...}" else "null") + ',' + (if (string_78_ != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("in.M(" + (if (string != null) "{...}" else "null") + ',' + (if (string_78_ != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -588,7 +588,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         @JvmStatic
         @Throws(Exception_Sub1::class)
         fun method395(i: Int) {
-            if (Class348_Sub49.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, Class348_Sub40_Sub8.anInt9157)
+            if (Buffer.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
             else CameraRotationStub.aRenderer326!!.method3626(0, 0)
             if (i >= 73) anInt642++
         }

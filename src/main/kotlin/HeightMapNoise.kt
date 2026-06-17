@@ -43,13 +43,13 @@ object HeightMapNoise {
 
     fun method2280(i: Byte, i_20_: Int) {
         anInt3826++
-        if (RegionSceneLoader.aByteArrayArrayArray3700 == null) RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(Class367_Sub4.anInt7319) { ByteArray(Class348_Sub40_Sub3.anInt9109) } })
+        if (RegionSceneLoader.aByteArrayArrayArray3700 == null) RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(Class367_Sub4.anInt7319) { ByteArray(RangeThresholdTextureNode.anInt9109) } })
         if (i_20_ != 28587) method2278(35, -47, 56.toByte(), -93)
         for (i_21_ in 0..3) {
             var i_22_ = 0
             while (Class367_Sub4.anInt7319 > i_22_) {
                 var i_23_ = 0
-                while ((Class348_Sub40_Sub3.anInt9109 > i_23_)) {
+                while ((RangeThresholdTextureNode.anInt9109 > i_23_)) {
                     RegionSceneLoader.aByteArrayArrayArray3700!![i_21_]!![i_22_]!![i_23_] = i
                     i_23_++
                 }
@@ -66,7 +66,7 @@ object HeightMapNoise {
 
     fun method2282(i: Int) {
         anInt3827++
-        Class348_Sub42_Sub3.method3177(i xor 0x315e, false)
+        LoadingScreenImageNode.method3177(i xor 0x315e, false)
         if (i == -12648) {
             if (CollisionMapRegion.anInt1720 >= 0 && CollisionMapRegion.anInt1720 != 0) {
                 method3553(false, 116.toByte(), CollisionMapRegion.anInt1720)

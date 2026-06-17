@@ -4,7 +4,7 @@ import kotlin.math.atan2
  * Visit http://jode.sourceforge.net/
  */
 abstract class ParticleEmitterFactory {
-    abstract fun method1888(i: Int, class348_sub42_sub8: Class348_Sub42_Sub8): Class348_Sub42_Sub8
+    abstract fun method1888(i: Int, class348_sub42_sub8: CacheEntryReference): CacheEntryReference
 
     companion object {
         @JvmField
@@ -53,7 +53,7 @@ abstract class ParticleEmitterFactory {
                 fs!![1] = f_13_
                 fs[0] = f_12_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ca.D(" + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + (if (fs != null) "{...}" else "null") + ',' + i_4_ + ',' + f + ',' + i_5_ + ',' + i_6_ + ',' + f_7_ + ',' + (if (fs_8_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ca.D(" + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + (if (fs != null) "{...}" else "null") + ',' + i_4_ + ',' + f + ',' + i_5_ + ',' + i_6_ + ',' + f_7_ + ',' + (if (fs_8_ != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -68,7 +68,7 @@ abstract class ParticleEmitterFactory {
         fun method1887(i: Int, i_16_: Int, i_17_: Int): Boolean {
             anInt3178++
             if (i != 0) return true
-            return Class348_Sub40_Sub3.method3056(63, i_17_, i_16_) or ((0x70000 and i_17_) != 0) || CompassSmoother.method2015(i_17_, i_16_, i + 7)
+            return RangeThresholdTextureNode.method3056(63, i_17_, i_16_) or ((0x70000 and i_17_) != 0) || CompassSmoother.method2015(i_17_, i_16_, i + 7)
         }
     }
 }

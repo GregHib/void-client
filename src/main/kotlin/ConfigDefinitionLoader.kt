@@ -65,7 +65,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
         class42 = Class42()
         class42.aConfigDefinitionLoader_593 = this
         class42.anInt581 = i
-        if (`is` != null) class42.method379(Class348_Sub49(`is`), 109)
+        if (`is` != null) class42.method379(Buffer(`is`), 109)
         class42.method372(-25359)
         synchronized(aClass60_2083) {
             aClass60_2083.method582(class42, i.toLong(), (-106).toByte())
@@ -79,7 +79,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             this.aClass45_2087 = class45_10_
             aClass45_2084!!.method407(0, 36)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("on.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_10_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("on.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_10_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -97,10 +97,10 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             return method2259(0, i_4_, i_3_) or ((i_3_ and 0x70000) != 0) || ParticleEmitterDef.method2187(i_3_, -79, i_4_)
         }
 
-        fun method1223(i: Int, i_5_: Int, i_6_: Int, boundsConstraintEntry: BoundsConstraintEntry): Class348_Sub42_Sub19? {
+        fun method1223(i: Int, i_5_: Int, i_6_: Int, boundsConstraintEntry: BoundsConstraintEntry): MinimapAreaMarkerNode? {
             anInt2086++
             var i_7_ = boundsConstraintEntry.anInt5167 or (i shl 10)
-            var class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-91).toByte()) as Class348_Sub42_Sub19?)
+            var class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-91).toByte()) as MinimapAreaMarkerNode?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
             var `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, (-90).toByte())))
             if (`is` != null) {
@@ -115,7 +115,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
                 return class348_sub42_sub19
             }
             i_7_ = boundsConstraintEntry.anInt5167 or (65536 + i_5_ shl 10)
-            class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-31).toByte()) as Class348_Sub42_Sub19?)
+            class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-31).toByte()) as MinimapAreaMarkerNode?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
             `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, (-107).toByte())))
             if (`is` != null) {
@@ -130,7 +130,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
                 return class348_sub42_sub19
             }
             i_7_ = boundsConstraintEntry.anInt5167 or 0x3fffc00
-            class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-107).toByte()) as Class348_Sub42_Sub19?)
+            class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-107).toByte()) as MinimapAreaMarkerNode?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
             `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, 104.toByte())))
             if (`is` != null) {

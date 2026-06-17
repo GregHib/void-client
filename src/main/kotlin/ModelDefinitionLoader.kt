@@ -19,7 +19,7 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
         }
         skeletalAnimFrameLoader = SkeletalAnimFrameLoader()
         skeletalAnimFrameLoader.aModelDefinitionLoader_475 = this
-        if (`is` != null) skeletalAnimFrameLoader.method346(i.toInt().inv(), Class348_Sub49(`is`))
+        if (`is` != null) skeletalAnimFrameLoader.method346(i.toInt().inv(), Buffer(`is`))
         synchronized(aClass60_2050) {
             aClass60_2050.method582(skeletalAnimFrameLoader, i_3_.toLong(), (-109).toByte())
         }
@@ -57,7 +57,7 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
             aClass45_2048 = class45
             aClass45_2048!!.method407(0, 3)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -87,14 +87,14 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
             for (i_2_ in 0..<i_0_) SpriteStore.anIntArray369!![i_2_] = `is`[i_2_]
         }
 
-        fun method1205(i: Int, bool: Boolean, class45: Class45, i_4_: Int): Class348_Sub42_Sub14 {
+        fun method1205(i: Int, bool: Boolean, class45: Class45, i_4_: Int): InterfaceComponentGroup {
             anInt2053++
-            val class348_sub49 = Class348_Sub49(class45.method410(-1860, i_4_, i))
+            val class348_sub49 = Buffer(class45.method410(-1860, i_4_, i))
             if (bool != true) method1208(102)
-            val class348_sub42_sub14 = Class348_Sub42_Sub14(i, class348_sub49.readString(88.toByte()), class348_sub49.readString(120.toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readUnsignedByte(255) == 1, class348_sub49.readUnsignedByte(255), class348_sub49.readUnsignedByte(255))
+            val class348_sub42_sub14 = InterfaceComponentGroup(i, class348_sub49.readString(88.toByte()), class348_sub49.readString(120.toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readUnsignedByte(255) == 1, class348_sub49.readUnsignedByte(255), class348_sub49.readUnsignedByte(255))
             val i_5_ = class348_sub49.readUnsignedByte(255)
             for (i_6_ in 0..<i_5_) class348_sub42_sub14.aNodeDeque_9629!!.method1999(
-                Class348_Sub18(
+                InterfaceBounds(
                     class348_sub49.readUnsignedByte(255),
                     class348_sub49.readUnsignedShort(842397944),
                     class348_sub49.readUnsignedShort(842397944),

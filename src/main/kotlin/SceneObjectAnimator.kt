@@ -56,7 +56,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
         var i_1_ = i_0_
         var bool = false
         if (i_1_ == -1) {
-            var class51: Class51? = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(i.toInt() xor 0x45, this.anInt3063)
+            var class51: Class51? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i.toInt() xor 0x45, this.anInt3063)
             var class51_2_ = class51
             if (class51!!.anIntArray945 != null) class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
             if (class51 == null) return
@@ -113,7 +113,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
         var bool_3_ = bool_3_
         var i_4_ = i_4_
         anInt3082++
-        var class51: Class51? = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
+        var class51: Class51? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
         if (class51!!.anIntArray945 != null) class51 = class51.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte())
         if (class51 == null) {
             method1674(-1, var_renderer)
@@ -144,7 +144,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
         val var_s = NativeSprite.aTerrainTileArray5191!![aByte3067.toInt()]
         val var_terrainTile_5_: TerrainTile?
         if (!aBoolean3069) var_terrainTile_5_ = if (aByte3067 >= 3) null else NativeSprite.aTerrainTileArray5191!![1 + aByte3067]
-        else var_terrainTile_5_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![0]
+        else var_terrainTile_5_ = TerrainTileShape.aTerrainTileArray8801!![0]
         var class64: Class64? = null
         if (aWidgetDefinition_3057 == null) {
             if (aClass64_3059 == null || i_4_ != (i_4_ and aClass64_3059!!.ua()) || (anInt3053 != class51.anInt941)) {
@@ -203,7 +203,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
                 val class129s = class64!!.method619()
                 val class342s = class64.method604()
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081!!.aBoolean6470) && (class129s != null || class342s != null)) {
-                    var class51: Class51? = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
+                    var class51: Class51? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
                     if (class51!!.anIntArray945 != null) class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
                     if (class51 != null) this.aClass318_Sub10_3081 = SceneGraphContainer.method2526(Class367_Sub11.anInt7396, true)
                 }
@@ -213,7 +213,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
                 else this.aClass318_Sub10_3081!!.method2540(Class367_Sub11.anInt7396.toLong())
                 this.aClass318_Sub10_3081!!.method2533(aByte3085.toInt(), i_8_, i, i_10_, i_7_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
             }
             break
         } while (false)
@@ -303,7 +303,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
             if (i_18_ != -1) aBoolean3064 = true
             method1666(69.toByte(), i_18_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bv.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bv.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
         }
     }
 

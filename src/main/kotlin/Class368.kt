@@ -30,11 +30,11 @@ class Class368 {
             anInt4505++
             return method3566(var_renderer, i_3_, i_1_, null, 0, class87, i, 5.toByte(), null, 0, false, 0, (-68).toByte(), i_0_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_3_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_3_ + ')'))
         }
     }
 
-    fun method3559(i: Int, class348_sub49: Class348_Sub49) {
+    fun method3559(i: Int, class348_sub49: Buffer) {
         anInt4497++
         if (i == 28105) {
             while (true) {
@@ -51,11 +51,11 @@ class Class368 {
             anInt4511++
             return method3566(var_renderer, i, i_6_, null, 0, class87, i_5_, 2.toByte(), null, 0, false, 0, (-68).toByte(), i_7_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_8_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_8_ + ')'))
         }
     }
 
-    private fun method3564(i: Int, class348_sub49: Class348_Sub49, i_11_: Int) {
+    private fun method3564(i: Int, class348_sub49: Buffer, i_11_: Int) {
         anInt4486++
         if (i < -119) {
             if (i_11_ == 1) anInt4506 = class348_sub49.readUnsignedShort(842397944)
@@ -118,7 +118,7 @@ class Class368 {
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, 54.toByte(), null, -17, true, -42, 95.toByte(), -81)
             return method3566(var_renderer, i_16_, i_18_, var_terrainTile, i_22_, class87, i, 2.toByte(), var_terrainTile_23_, i_17_, bool, i_20_, (-68).toByte(), i_19_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -183,7 +183,7 @@ class Class368 {
             class64_37_!!.s(i_24_)
             return class64_37_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
         }
     }
 

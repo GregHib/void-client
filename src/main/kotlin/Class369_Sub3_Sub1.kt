@@ -13,7 +13,7 @@ class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, tileRend
         try {
             this.anInt10177 = i_25_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fu.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fu.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ')'))
         }
     }
 
@@ -90,7 +90,7 @@ class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, tileRend
             var abstractModelRenderer = ParticleProcessor.aClass60_4273!!.method583(i.toLong(), -68) as AbstractModelRenderer?
             val i_11_ = -86 / ((55 - i_10_) / 51)
             if (abstractModelRenderer == null) {
-                if (ScrollTexMaterialPass.aBoolean6289) abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(SpriteImage.method1512(class45, i), true)
+                if (ScrollTexMaterialPass.aBoolean6289) abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(SpriteImage.method1512(class45, i), true)
                 else abstractModelRenderer = GlTexture2D.method1969(class45.method415(73.toByte(), i)!!, -5901)
                 ParticleProcessor.aClass60_4273!!.method582(abstractModelRenderer, i.toLong(), (-108).toByte())
             }
@@ -119,7 +119,7 @@ class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, tileRend
                     }
                     break
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("fu.F(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("fu.F(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ')'))
                 }
             } while (false)
         }

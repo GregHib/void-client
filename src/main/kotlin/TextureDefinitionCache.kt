@@ -6,15 +6,15 @@ class TextureDefinitionCache internal constructor(i: Int, class45: Class45?, cla
     private val aClass45_2961: Class45?
     private var aClass45_2965: Class45? = null
 
-    fun method1625(i: Int, i_0_: Int): Class348_Sub42_Sub11 {
+    fun method1625(i: Int, i_0_: Int): CharCodeMap {
         anInt2963++
-        var class348_sub42_sub11 = aClass60_2960.method583(i_0_.toLong(), -51) as Class348_Sub42_Sub11?
+        var class348_sub42_sub11 = aClass60_2960.method583(i_0_.toLong(), -51) as CharCodeMap?
         if (class348_sub42_sub11 != null) return class348_sub42_sub11
         val `is`: ByteArray?
         if (i_0_ < 32768) `is` = aClass45_2961!!.method410(-1860, 0, i_0_)
         else `is` = aClass45_2965!!.method410(-1860, 0, 0x7fff and i_0_)
-        class348_sub42_sub11 = Class348_Sub42_Sub11()
-        if (`is` != null) class348_sub42_sub11.method3221(117, Class348_Sub49(`is`))
+        class348_sub42_sub11 = CharCodeMap()
+        if (`is` != null) class348_sub42_sub11.method3221(117, Buffer(`is`))
         if (i_0_ >= 32768) class348_sub42_sub11.method3224(104.toByte())
         if (i != 0) aClass45_2965 = null
         aClass60_2960.method582(class348_sub42_sub11, i_0_.toLong(), (-123).toByte())
@@ -30,7 +30,7 @@ class TextureDefinitionCache internal constructor(i: Int, class45: Class45?, cla
                 if (aClass45_2965 == null) break
                 aClass45_2965!!.method407(0, 0)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("sga.<init>(" + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("sga.<init>(" + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -53,13 +53,13 @@ class TextureDefinitionCache internal constructor(i: Int, class45: Class45?, cla
         fun method1626(i: Int, bool: Boolean) {
             anInt2962++
             var i_1_ = NoOpGraphicsOptionState.anInt6043
-            var i_2_ = Class348_Sub33.anInt6964
+            var i_2_ = AnimationFrameDefinition.anInt6964
             if (i == 1) {
                 if (bool && ParticleSystemRenderer.aBoolean3870) {
                     i_1_ = i_1_ shl 1
                     i_2_ = -i_1_
                 }
-                Class348_Sub8.aRenderer6654!!.f(i_2_, i_1_)
+                FacingDirectionNode.aRenderer6654!!.f(i_2_, i_1_)
             }
         }
     }

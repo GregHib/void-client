@@ -6,7 +6,7 @@ import Class50_Sub1.Companion.method462
 class KeyboardLayoutConfig {
     var aChar2132: Char = 0.toChar()
     var anInt2135: Int = 1
-    fun method1255(class348_sub49: Class348_Sub49, i: Int) {
+    fun method1255(class348_sub49: Buffer, i: Int) {
         while (true) {
             val i_0_ = class348_sub49.readUnsignedByte(255)
             if (i_0_ == 0) break
@@ -16,7 +16,7 @@ class KeyboardLayoutConfig {
         anInt2129++
     }
 
-    private fun method1256(i: Int, i_1_: Int, class348_sub49: Class348_Sub49) {
+    private fun method1256(i: Int, i_1_: Int, class348_sub49: Buffer) {
         anInt2136++
         if (i_1_ != 1) {
             if (i_1_ == 2) this.anInt2135 = 0

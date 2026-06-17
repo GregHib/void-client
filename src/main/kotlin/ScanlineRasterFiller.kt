@@ -1,8 +1,8 @@
 import GlElementArrayBuffer.Companion.method1156
 import ClickFeedbackTask.Companion.method1353
 import SimpleToggleOptionState.Companion.method1742
-import Class348_Sub16_Sub3.Companion.method2878
-import Class348_Sub40_Sub32.Companion.method3135
+import MidiSequencePlayer.Companion.method2878
+import InvertTextureNode.Companion.method3135
 import Class62.method599
 import OpenGlRenderNode.Companion.method3297
 
@@ -12,7 +12,7 @@ import OpenGlRenderNode.Companion.method3297
 class ScanlineRasterFiller {
     var anIntArray2468: IntArray? = null
     var aStringArray2473: Array<String?>? = null
-    var aClass348_Sub42_Sub19_2474: Class348_Sub42_Sub19? = null
+    var aClass348_Sub42_Sub19_2474: MinimapAreaMarkerNode? = null
     var anInt2477: Int = -1
 
     companion object {
@@ -40,7 +40,7 @@ class ScanlineRasterFiller {
 
         fun method1385(bool: Boolean, `is`: ByteArray, i: Byte) {
             anInt2475++
-            if (CubemapTextureGlSource.aClass348_Sub49_8698 == null) CubemapTextureGlSource.aClass348_Sub49_8698 = Class348_Sub49(20000)
+            if (CubemapTextureGlSource.aClass348_Sub49_8698 == null) CubemapTextureGlSource.aClass348_Sub49_8698 = Buffer(20000)
             CubemapTextureGlSource.aClass348_Sub49_8698!!.writeBytes(`is`.size, 0, `is`, 97)
             if (bool) {
                 ParticleSystemState.method1294((-113).toByte(), (CubemapTextureGlSource.aClass348_Sub49_8698!!.aByteArray7154))
@@ -66,7 +66,7 @@ class ScanlineRasterFiller {
         }
 
         @JvmStatic
-        fun method1387(i: Int, class348_sub27: Class348_Sub27) {
+        fun method1387(i: Int, class348_sub27: MultiFieldRecord) {
             anInt2470++
             if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
                 if (i >= -38) method1384(-77, 22, 77)

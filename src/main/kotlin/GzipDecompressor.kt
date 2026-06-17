@@ -7,7 +7,7 @@ class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
     private var anInflater2072: Inflater? = null
     fun method1214(i: Int, `is`: ByteArray): ByteArray {
         anInt2074++
-        val class348_sub49 = Class348_Sub49(`is`)
+        val class348_sub49 = Buffer(`is`)
         class348_sub49.anInt7197 = `is`.size - 4
         val i_0_ = class348_sub49.method3359(-86)
         class348_sub49.anInt7197 = 0
@@ -19,7 +19,7 @@ class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
 
     constructor() : this(-1, 1000000, 1000000)
 
-    fun method1218(`is`: ByteArray?, i: Int, class348_sub49: Class348_Sub49?) {
+    fun method1218(`is`: ByteArray?, i: Int, class348_sub49: Buffer?) {
         try {
             anInt2073++
             if ((class348_sub49!!.aByteArray7154!![class348_sub49.anInt7197]).toInt() != 31 || (class348_sub49.aByteArray7154!![1 + class348_sub49.anInt7197]).toInt() != -117) throw RuntimeException("Invalid GZIP header!")
@@ -33,7 +33,7 @@ class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
             }
             anInflater2072!!.reset()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ol.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ol.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -52,9 +52,9 @@ class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
         fun method1215(i: Byte) {
             anInt2078++
             if (WorldMapRenderer.anInt4674 != 9) {
-                if (WorldMapRenderer.anInt4674 == 5 || WorldMapRenderer.anInt4674 == 6) Class348_Sub49.method3379(2, 3)
-                else if (WorldMapRenderer.anInt4674 == 12) Class348_Sub49.method3379(2, 3)
-            } else Class348_Sub49.method3379(2, 5)
+                if (WorldMapRenderer.anInt4674 == 5 || WorldMapRenderer.anInt4674 == 6) Buffer.method3379(2, 3)
+                else if (WorldMapRenderer.anInt4674 == 12) Buffer.method3379(2, 3)
+            } else Buffer.method3379(2, 5)
         }
 
         @JvmStatic

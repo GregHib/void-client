@@ -15,9 +15,9 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
         return this.anInt3138
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1712(i: Int, i_7_: Int) {
         val i_8_ = -87 / ((i - 82) / 35)
@@ -80,7 +80,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                     }
                     return -i_3_ + i_2_
                 }
-                if (i == 2) return (RemoveRoofsOptionState.method1811(9152, (class110_sub1_0_!!.method1038(false).aString3663), Class348_Sub33.anInt6967, (class110_sub1!!.method1038(false).aString3663)))
+                if (i == 2) return (RemoveRoofsOptionState.method1811(9152, (class110_sub1_0_!!.method1038(false).aString3663), AnimationFrameDefinition.anInt6967, (class110_sub1!!.method1038(false).aString3663)))
                 if (i == 3) {
                     if (class110_sub1!!.aString5787 == "-") {
                         if (class110_sub1_0_!!.aString5787 == "-") return 0
@@ -90,7 +90,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                         if (!bool) return -1
                         return 1
                     }
-                    return (RemoveRoofsOptionState.method1811(9152, class110_sub1_0_.aString5787, Class348_Sub33.anInt6967, class110_sub1.aString5787))
+                    return (RemoveRoofsOptionState.method1811(9152, class110_sub1_0_.aString5787, AnimationFrameDefinition.anInt6967, class110_sub1.aString5787))
                 }
                 if (i == 4) {
                     if (!class110_sub1!!.method1033(-85)) {
@@ -139,14 +139,14 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                 }
                 return (class110_sub1!!.anInt5786 + -class110_sub1_0_!!.anInt5786)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("mfa.L(" + (if (class110_sub1 != null) "{...}" else "null") + ',' + (if (class110_sub1_0_ != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_1_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("mfa.L(" + (if (class110_sub1 != null) "{...}" else "null") + ',' + (if (class110_sub1_0_ != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_1_ + ')'))
             }
         }
 
         @JvmStatic
         fun method1750(i: Int, i_6_: Int) {
             anInt5912++
-            Class348_Sub42_Sub1.anInt9488 = i_6_
+            ParamMap.anInt9488 = i_6_
             SocketStreamWorker.aClass60_2671!!.method590(0)
         }
 
@@ -156,18 +156,18 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
             anInt5922++
             LinkedNodeListIterator.anInt1651 = i_10_
             if (i == -1) {
-                if (Class348_Sub49.anInt7207 == 0) {
-                    ShadowQualityOptionState.anInt6008 = (2 * Class348_Sub42_Sub9_Sub1.anInt10444 + LinkedNodeListIterator.anInt1651)
-                    Class348_Sub16_Sub1.anInt8854 = SoundEnvelope.anInt2747 * 2 + Class59_Sub1.anInt5283
-                } else if (Class348_Sub49.anInt7207 == 1) {
+                if (Buffer.anInt7207 == 0) {
+                    ShadowQualityOptionState.anInt6008 = (2 * HardKeyedCacheEntryReference.anInt10444 + LinkedNodeListIterator.anInt1651)
+                    SynthVoiceGroup.anInt8854 = SoundEnvelope.anInt2747 * 2 + Class59_Sub1.anInt5283
+                } else if (Buffer.anInt7207 == 1) {
                     ItemModelDefinition.anInt425 = (BloomGraphicsOptionState.anInt5965 + Class59_Sub1.anInt5283 / Class58.anInt1067 - -2)
                     BackgroundWorkerThread.anInt3225 = (Class73.anInt4784 + LinkedNodeListIterator.anInt1651 / ByteStore.anInt4267 - -2)
-                    Class348_Sub16_Sub1.anInt8854 = Class58.anInt1067 * ItemModelDefinition.anInt425
+                    SynthVoiceGroup.anInt8854 = Class58.anInt1067 * ItemModelDefinition.anInt425
                     ShadowQualityOptionState.anInt6008 = ByteStore.anInt4267 * BackgroundWorkerThread.anInt3225
-                    SoundEnvelope.anInt2747 = (-Class59_Sub1.anInt5283 + Class348_Sub16_Sub1.anInt8854 shr 1)
-                    Class348_Sub42_Sub9_Sub1.anInt10444 = (ShadowQualityOptionState.anInt6008 - LinkedNodeListIterator.anInt1651 shr 1)
-                } else if (Class348_Sub49.anInt7207 == 2) {
-                    Class348_Sub16_Sub1.anInt8854 = Class59_Sub1.anInt5283
+                    SoundEnvelope.anInt2747 = (-Class59_Sub1.anInt5283 + SynthVoiceGroup.anInt8854 shr 1)
+                    HardKeyedCacheEntryReference.anInt10444 = (ShadowQualityOptionState.anInt6008 - LinkedNodeListIterator.anInt1651 shr 1)
+                } else if (Buffer.anInt7207 == 2) {
+                    SynthVoiceGroup.anInt8854 = Class59_Sub1.anInt5283
                     ShadowQualityOptionState.anInt6008 = LinkedNodeListIterator.anInt1651
                 }
             }
@@ -188,13 +188,13 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1754(bool: Boolean, i: Int, i_12_: Int, i_13_: Int): Int {
             anInt5920++
-            if (Class348.anInt4290 < 100) return -2
+            if (LinkedListNode.anInt4290 < 100) return -2
             if (bool != true) method1754(false, 115, 112, -104)
             var i_14_ = -2
             var i_15_ = 2147483647
             val i_16_ = i_12_ - Class75.anInt1266
             val i_17_ = i_13_ - Class75.anInt1263
-            var class348_sub21 = Class75.aNodeDeque_1254!!.method1995(4) as Class348_Sub21?
+            var class348_sub21 = Class75.aNodeDeque_1254!!.method1995(4) as CameraSplineNode?
             while (class348_sub21 != null) {
                 if (class348_sub21.anInt6847 == i) {
                     val i_18_ = class348_sub21.anInt6852
@@ -206,7 +206,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                         i_14_ = i_20_
                     }
                 }
-                class348_sub21 = Class75.aNodeDeque_1254!!.method1990(113.toByte()) as Class348_Sub21?
+                class348_sub21 = Class75.aNodeDeque_1254!!.method1990(113.toByte()) as CameraSplineNode?
             }
             return i_14_
         }
@@ -244,7 +244,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                 }
                 return -i_35_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("mfa.K(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_22_ + ',' + i_23_ + ',' + (if (is_24_ != null) "{...}" else "null") + ',' + (if (is_25_ != null) "{...}" else "null") + ',' + (if (is_26_ != null) "{...}" else "null") + ',' + (if (is_27_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("mfa.K(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_22_ + ',' + i_23_ + ',' + (if (is_24_ != null) "{...}" else "null") + ',' + (if (is_25_ != null) "{...}" else "null") + ',' + (if (is_26_ != null) "{...}" else "null") + ',' + (if (is_27_ != null) "{...}" else "null") + ')'))
             }
         }
     }

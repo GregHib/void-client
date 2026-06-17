@@ -54,7 +54,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
             if (i_1_ > -106) this.aBoolean10345 = false
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lf.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lf.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
         }
     }
 
@@ -78,9 +78,9 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
     private fun method2465(var_renderer: Renderer?, i: Int, i_26_: Int, i_27_: Byte): Class64? {
         anInt10353++
         if (i_27_.toInt() != -82) return null
-        val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(122.toByte(), i)
-        val var_s = Class348_Sub1_Sub1.aTerrainTileArray8801!![this.plane.toInt()]
-        val var_s_28_ = (if (this.aByte6376 < 3) (Class348_Sub1_Sub1.aTerrainTileArray8801!![1 + this.aByte6376]) else null)
+        val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(122.toByte(), i)
+        val var_s = TerrainTileShape.aTerrainTileArray8801!![this.plane.toInt()]
+        val var_s_28_ = (if (this.aByte6376 < 3) (TerrainTileShape.aTerrainTileArray8801!![1 + this.aByte6376]) else null)
         if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_renderer, anInt10350, this.x, -129, ParticleEmitterNode.aClass87_191, var_s_28_, this.y, var_s)
         return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_renderer, -1, this.x, -129, ParticleEmitterNode.aClass87_191, var_s_28_, this.y, var_s)
     }
@@ -112,7 +112,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                     aClass318_Sub10_10341!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("lf.BA(" + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -157,7 +157,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         anInt10350 = -1
         anInt10334 = i_45_
         this.anInt10349 = i_35_ + i_34_
-        val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(57.toByte(), anInt10355)
+        val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(57.toByte(), anInt10355)
         val i_46_ = class368.anInt4503
         if (i_46_ == -1) this.aBoolean10345 = true
         else {
@@ -269,22 +269,22 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
             do {
                 try {
                     anInt10357++
-                    if (Class348.anInt4290 < 100) SpotAnimEntity.Companion.method2512(var_renderConfig, var_renderer, i.toInt() xor 0x74)
+                    if (LinkedListNode.anInt4290 < 100) SpotAnimEntity.Companion.method2512(var_renderConfig, var_renderer, i.toInt() xor 0x74)
                     var_renderer!!.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_)
-                    if (Class348.anInt4290 < 100) {
+                    if (LinkedListNode.anInt4290 < 100) {
                         val i_15_ = 20
                         val i_16_ = i_12_ / 2 + i_11_
                         val i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_
                         var_renderer.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
-                        var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
-                        var_renderer.aa(i_16_ - 150, 2 + i_17_, Class348.anInt4290 * 3, 30, GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
-                        NodeDeque.aFont_3326!!.method2575((-116).toByte(), i_16_, Class50_Sub3.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(Class348_Sub33.anInt6967, i + 551), -1, i_15_ + i_17_)
+                        var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
+                        var_renderer.aa(i_16_ - 150, 2 + i_17_, LinkedListNode.anInt4290 * 3, 30, GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
+                        NodeDeque.aFont_3326!!.method2575((-116).toByte(), i_16_, Class50_Sub3.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(AnimationFrameDefinition.anInt6967, i + 551), -1, i_15_ + i_17_)
                     } else {
-                        val i_18_ = (Class348_Sub36.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())
+                        val i_18_ = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())
                         val i_19_ = ((i_13_.toFloat() / Class75.aFloat1247).toInt() + DebugOverlayRenderer.anInt3170)
-                        val i_20_ = ((i_12_.toFloat() / Class75.aFloat1247).toInt() + Class348_Sub36.anInt6992)
+                        val i_20_ = ((i_12_.toFloat() / Class75.aFloat1247).toInt() + WidgetActionEntry.anInt6992)
                         Class59_Sub1_Sub2.anInt8665 = DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / Class75.aFloat1247).toInt()
-                        Class368.anInt4509 = (Class348_Sub36.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())
+                        Class368.anInt4509 = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())
                         val i_21_ = (DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / Class75.aFloat1247).toInt())
                         LoadProgressCounters.anInt2446 = ((2 * i_13_).toFloat() / Class75.aFloat1247).toInt()
                         SpriteStore.anInt370 = ((i_12_ * 2).toFloat() / Class75.aFloat1247).toInt()
@@ -313,7 +313,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         i_23_ -= 15
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_14_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_14_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)
@@ -326,7 +326,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                 var i_32_ = 0
                 while (Class367_Sub4.anInt7319 > i_32_) {
                     var i_33_ = 0
-                    while (Class348_Sub40_Sub3.anInt9109 > i_33_) {
+                    while (RangeThresholdTextureNode.anInt9109 > i_33_) {
                         if (Class367_Sub4.method3542(i_33_, HintArrowOrMessage.aClass357ArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++
                         if (i_31_ >= 512) return
                         i_33_++

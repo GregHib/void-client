@@ -42,7 +42,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         try {
             anInt4837 = i
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kaa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("kaa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + bool + ')'))
         }
     }
 
@@ -62,7 +62,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         var anInt4844: Int = 0
         private var aCharArray4845: CharArray? = CharArray(64)
         @JvmField
-        var aClass348_Sub42_Sub12_4846: Class348_Sub42_Sub12? = null
+        var aClass348_Sub42_Sub12_4846: ContactEntry? = null
 
         @JvmStatic
         fun method1155(i: Byte) {
@@ -103,13 +103,13 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
                 anInt4834++
                 RuntimeException_Sub1.anInt4596 = i
                 var l = 0L
-                if (Class348_Sub23_Sub3.aString9043 == null) {
+                if (NullOggStream.aString9043 == null) {
                     GlRectangleTexture.method254(35, (-87).toByte())
                     return
                 } else {
-                    val class348_sub49 = (Class348_Sub49(method878((MapLabelMenuEntry.method1039(Class348_Sub23_Sub3.aString9043!!, true)), -126)))
+                    val class348_sub49 = (Buffer(method878((MapLabelMenuEntry.method1039(NullOggStream.aString9043!!, true)), -126)))
                     l = class348_sub49.readLong(-456577760)
-                    Class348_Sub33.aLong6966 = class348_sub49.readLong(-456577760)
+                    AnimationFrameDefinition.aLong6966 = class348_sub49.readLong(-456577760)
                 }
                 LocalPlayerState.method1138(method313(l, -95), true, "", 79.toByte())
             }

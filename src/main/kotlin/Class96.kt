@@ -1,4 +1,4 @@
-import Class348_Sub40_Sub19.Companion.method3098
+import BlankTextureNode.Companion.method3098
 import Class9.method215
 import java.awt.Canvas
 

@@ -1,7 +1,7 @@
 import NpcSummaryDefinition.Companion.method1166
 import AsyncTaskHandle.Companion.method1436
 import BoundsConstraintEntry.Companion.method2057
-import Class348_Sub17.Companion.method2929
+import SoundBankPatch.Companion.method2929
 import jaggl.OpenGL.Companion.glTexImage2Di
 import kotlin.math.min
 

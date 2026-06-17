@@ -22,9 +22,9 @@ class ParticleDetailOptionState : GraphicsOptionState {
         anInt6024++
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     fun method1798(i: Int): Int {
         anInt6028++
@@ -128,7 +128,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
                 val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364) else null)
                 if (Client.method105(class46)!!.method3303(1) && (Class38.anInt500 and 0x20) != 0 && (class254 == null || (class46.method428(class254.anInt3256, ParticleEmitterFactory.anInt3176, -128) != class254.anInt3256))) {
                     ItemModelDefinition.anInt436++
-                    Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> " + class46.aString752) + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-90).toByte(), false, class46.anInt704, class46.anInt812, true, 6, (class46.anInt830 or (class46.anInt704 shl 0)).toLong(), ItemNameResolver.aString5001, 0L, Class348_Sub49_Sub1.anInt9747)
+                    Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> " + class46.aString752) + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-90).toByte(), false, class46.anInt704, class46.anInt812, true, 6, (class46.anInt830 or (class46.anInt704 shl 0)).toLong(), ItemNameResolver.aString5001, 0L, FloatBuffer.anInt9747)
                 }
             }
             anInt6022++
@@ -153,8 +153,8 @@ class ParticleDetailOptionState : GraphicsOptionState {
             }
             if (Client.method105(class46)!!.method3305(0)) {
                 if (class46.aString816 != null) Class50_Sub3.method466(false, "", class46.anInt830, (-118).toByte(), false, class46.anInt704, class46.anInt812, true, 16, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), class46.aString816, 0L, -1)
-                else Class50_Sub3.method466(false, "", class46.anInt830, (-79).toByte(), false, class46.anInt704, class46.anInt812, true, 16, (class46.anInt704 shl 0 or class46.anInt830).toLong(), LocalizedText.aLocalizedText_3492!!.method2063(Class348_Sub33.anInt6967, 544), 0L, -1)
-                Class348_Sub42_Sub15.anInt9655++
+                else Class50_Sub3.method466(false, "", class46.anInt830, (-79).toByte(), false, class46.anInt704, class46.anInt812, true, 16, (class46.anInt704 shl 0 or class46.anInt830).toLong(), LocalizedText.aLocalizedText_3492!!.method2063(AnimationFrameDefinition.anInt6967, 544), 0L, -1)
+                TimedTileQueueEntry.anInt9655++
             }
         }
     }

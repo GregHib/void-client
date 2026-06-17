@@ -58,7 +58,7 @@ class MapRegionLoaderThread : Runnable {
         if (aLinkedQueueNode_4201 == null) {
             try {
                 val i_15_ = (if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) 80 else 7000 - -(GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143))
-                aLinkedQueueNode_4201 = (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987), 8362))
+                aLinkedQueueNode_4201 = (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + HardCacheEntryReference.aSceneProjector_10434!!.anInt2987), 8362))
             } catch (malformedurlexception: MalformedURLException) {
                 return true
             }
@@ -154,7 +154,7 @@ class MapRegionLoaderThread : Runnable {
             anInt4199++
             if (class46 != null) {
                 if (class46.anObjectArray714 != null) {
-                    val class348_sub36 = Class348_Sub36()
+                    val class348_sub36 = WidgetActionEntry()
                     class348_sub36.anObjectArray6987 = class46.anObjectArray714
                     class348_sub36.aClass46_6989 = class46
                     method705(class348_sub36)
@@ -165,7 +165,7 @@ class MapRegionLoaderThread : Runnable {
                 HeightMapNoise.anInt3829 = class46.anInt812
                 RenderNode.aBoolean9722 = true
                 Class9.anInt169 = class46.anInt704
-                Class348_Sub49_Sub1.anInt9747 = class46.anInt824
+                FloatBuffer.anInt9747 = class46.anInt824
                 if (i_14_.toInt() != 21) Companion.method2665(-99, (-106).toByte(), 10, -37, 26, -123)
                 OrientationRotator.anInt2046 = class46.anInt830
                 method1916(-9343, class46)
@@ -179,7 +179,7 @@ class MapRegionLoaderThread : Runnable {
                     Class353.method3461(0, objects, -1 + ls!!.size, ls, 9455)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("eaa.E(" + (if (objects != null) "{...}" else "null") + ',' + (if (ls != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("eaa.E(" + (if (objects != null) "{...}" else "null") + ',' + (if (ls != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

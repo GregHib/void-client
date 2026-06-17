@@ -1,5 +1,5 @@
 import ModelHeaderCache.Companion.method1935
-import Class348_Sub23_Sub1.Companion.method2967
+import VorbisOggDecoder.Companion.method2967
 import Class95.method868
 import OutputStream_Sub2.Companion.method136
 
@@ -64,7 +64,7 @@ class SequencedActorEntity internal constructor(var_renderer: Renderer?, class51
             this.aSceneObjectAnimator_10115 = SceneObjectAnimator(var_renderer, class51, i_9_, i_10_, this.plane.toInt(), i_5_, this, bool, i_11_)
             aBoolean10114 = class51!!.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ju.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ju.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
         }
     }
 
@@ -155,7 +155,7 @@ class SequencedActorEntity internal constructor(var_renderer: Renderer?, class51
             anInt10112++
             check(i_15_ >= -106)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ju.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ju.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'))
         }
     }
 

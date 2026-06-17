@@ -45,12 +45,12 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
         fun method2270(i: Int, i_4_: Int, var_renderer: Renderer?, string: String?, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int) {
             try {
                 if (OutputStream_Sub2.aAbstractModelRenderer_106 == null || MinimapFlagRenderer.aAbstractModelRenderer_1800 == null) {
-                    if (CameraRotationStub.aClass45_322!!.method421(false, HudTabPanel.anInt2996) && CameraRotationStub.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)) {
+                    if (CameraRotationStub.aClass45_322!!.method421(false, HudTabPanel.anInt2996) && CameraRotationStub.aClass45_322!!.method421(false, CombineTextureNode.anInt9231)) {
                         OutputStream_Sub2.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(CameraRotationStub.aClass45_322!!, HudTabPanel.anInt2996, 0), true))
-                        val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, Class348_Sub40_Sub16.anInt9231, 0)
+                        val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, CombineTextureNode.anInt9231, 0)
                         MinimapFlagRenderer.aAbstractModelRenderer_1800 = var_renderer.method3691(spriteImage, true)
                         spriteImage!!.method1518()
-                        Class348_Sub5.aAbstractModelRenderer_6627 = var_renderer.method3691(spriteImage, true)
+                        AbstractBloomEffect.aAbstractModelRenderer_6627 = var_renderer.method3691(spriteImage, true)
                     } else var_renderer!!.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 shl 24 or CompassSmoother.anInt3376), 1)
                 }
                 anInt8709++
@@ -58,14 +58,14 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
                     val i_8_ = ((i - 2 * MinimapFlagRenderer.aAbstractModelRenderer_1800!!.method971()) / OutputStream_Sub2.aAbstractModelRenderer_106!!.method971())
                     for (i_9_ in 0..<i_8_) OutputStream_Sub2.aAbstractModelRenderer_106!!.method974((MinimapFlagRenderer.aAbstractModelRenderer_1800!!.method971() + i_4_ + (OutputStream_Sub2.aAbstractModelRenderer_106!!.method971() * i_9_)), i_5_)
                     MinimapFlagRenderer.aAbstractModelRenderer_1800!!.method974(i_4_, i_5_)
-                    Class348_Sub5.aAbstractModelRenderer_6627!!.method974((-Class348_Sub5.aAbstractModelRenderer_6627!!.method971() + i_4_ - -i), i_5_)
+                    AbstractBloomEffect.aAbstractModelRenderer_6627!!.method974((-AbstractBloomEffect.aAbstractModelRenderer_6627!!.method971() + i_4_ - -i), i_5_)
                 }
                 if (bool == false) {
-                    NodeDeque.aFont_3326!!.method2576(string, (Class348_Sub42_Sub11.anInt9586) or 0xffffff.inv(), 14 + i_5_, 3 + i_4_, -1, -127)
+                    NodeDeque.aFont_3326!!.method2576(string, (CharCodeMap.anInt9586) or 0xffffff.inv(), 14 + i_5_, 3 + i_4_, -1, -127)
                     var_renderer!!.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (CompassSmoother.anInt3376 or (255 + -Class51.anInt948 shl 24)), 1)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
             }
         }
 
@@ -74,7 +74,7 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
             anInt8710++
             if (!Class55_Sub1.aBoolean5265) {
                 GzipDecompressor.method1217(0, Class65.aClass357ArrayArrayArray1148!!)
-                if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) GzipDecompressor.method1217(0, (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!!))
+                if (ProducerImageSurface.aClass357ArrayArrayArray9082 != null) GzipDecompressor.method1217(0, (ProducerImageSurface.aClass357ArrayArrayArray9082!!))
                 Class55_Sub1.aBoolean5265 = true
             }
         }

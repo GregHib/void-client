@@ -17,7 +17,7 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
             `is` = aClass45_4085.method410(-1860, 11, i)
         }
         emoteDefinition = EmoteDefinition()
-        if (`is` != null) emoteDefinition.method1924(Class348_Sub49(`is`), (-127).toByte())
+        if (`is` != null) emoteDefinition.method1924(Buffer(`is`), (-127).toByte())
         synchronized(aClass60_4087!!) {
             aClass60_4087!!.method582(emoteDefinition, i.toLong(), (-114).toByte())
         }
@@ -55,7 +55,7 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
                 if (aClass45_4085 == null) break
                 aClass45_4085.method407(0, 11)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dc.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("dc.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

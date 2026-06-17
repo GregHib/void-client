@@ -1,4 +1,4 @@
-import Class348_Sub40_Sub1.Companion.method3051
+import ColorThresholdEffect.Companion.method3051
 import java.awt.Canvas
 
 /*

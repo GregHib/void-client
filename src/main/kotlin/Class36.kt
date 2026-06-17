@@ -11,7 +11,7 @@ object Class36 {
     var anInt489: Int = 0
 
     fun method354(i: Int) {
-        Class348_Sub42_Sub3.aBoolean9498 = true
+        LoadingScreenImageNode.aBoolean9498 = true
         if (i != 2) method355(84)
         anInt488++
     }

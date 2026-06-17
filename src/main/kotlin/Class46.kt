@@ -1,5 +1,5 @@
-import Class348_Sub40_Sub20.Companion.method3102
-import Class348_Sub40_Sub5.Companion.method3060
+import NoiseTextureNode.Companion.method3102
+import VoronoiNoiseTextureNode.Companion.method3060
 import kotlin.math.sqrt
 
 /* Class46 - Decompiled by JODE
@@ -143,7 +143,7 @@ class Class46 {
     @JvmField
     var anInt747: Int = 0
     @JvmField
-    var aClass348_Sub44_748: Class348_Sub44?
+    var aClass348_Sub44_748: PackedFlagsAccessor?
     @JvmField
     var anInt749: Int = 0
     @JvmField
@@ -345,7 +345,7 @@ class Class46 {
         anInt827++
         val class324 = GlTextureBase.method232(var_renderer, (-53).toByte(), false, this.anInt702)
         if (i.toInt() != 68) method436(-71, -56, -125)
-        Class348_Sub42_Sub13.aBoolean9616 = class324 == null
+        ContactList.aBoolean9616 = class324 == null
         return class324
     }
 
@@ -353,7 +353,7 @@ class Class46 {
         anInt736++
         if (aClass356_711 == null) return i
         if (i_19_ >= -124) this.anInt700 = 46
-        val class348_sub35 = aClass356_711!!.method3480(i_18_.toLong(), -6008) as Class348_Sub35?
+        val class348_sub35 = aClass356_711!!.method3480(i_18_.toLong(), -6008) as IntKeyNode?
         if (class348_sub35 == null) return i
         return class348_sub35.anInt6976
     }
@@ -362,7 +362,7 @@ class Class46 {
         anInt783++
         if (i_20_ != -1) method437(-123, null, null, -35, null)
         if (aClass356_711 == null) return string
-        val class348_sub50 = aClass356_711!!.method3480(i.toLong(), -6008) as Class348_Sub50?
+        val class348_sub50 = aClass356_711!!.method3480(i.toLong(), -6008) as StringCacheNode?
         if (class348_sub50 == null) return string
         return class348_sub50.aString7211
     }
@@ -371,7 +371,7 @@ class Class46 {
         var i = i
         try {
             anInt684++
-            Class348_Sub42_Sub13.aBoolean9616 = false
+            ContactList.aBoolean9616 = false
             if (this.anInt770 == 0) return null
             if (this.anInt770 == 1 && this.anInt753 == -1) return null
             if (this.anInt770 == 1) {
@@ -381,9 +381,9 @@ class Class46 {
                 var class64 = Class358.aClass60_4417!!.method583(l, -90) as Class64?
                 if (class64 == null || var_renderer.method3667(class64.ua(), i) != 0) {
                     if (class64 != null) i = var_renderer.method3679(i, class64.ua())
-                    val class124 = ParticleConfigParser.method2277(0, (Class348_Sub40_Sub28.aClass45_9365!!), this.anInt753, -1)
+                    val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aClass45_9365!!), this.anInt753, -1)
                     if (class124 == null) {
-                        Class348_Sub42_Sub13.aBoolean9616 = true
+                        ContactList.aBoolean9616 = true
                         return null
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
@@ -397,7 +397,7 @@ class Class46 {
             if (this.anInt770 == 2) {
                 val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method803(interface17, var_renderer, i_22_, i_24_, widgetDefinition, class87, i_21_, 104, i))
                 if (class64 == null) {
-                    Class348_Sub42_Sub13.aBoolean9616 = true
+                    ContactList.aBoolean9616 = true
                     return null
                 }
                 return class64
@@ -406,7 +406,7 @@ class Class46 {
                 if (compositeNpcModelBuilder == null) return null
                 val class64 = compositeNpcModelBuilder.method1230(modelHeaderCache, -402058072, class87, modelDefinitionLoader, interface17, bufferedMessageQueue, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
                 if (class64 == null) {
-                    Class348_Sub42_Sub13.aBoolean9616 = true
+                    ContactList.aBoolean9616 = true
                     return null
                 }
                 return class64
@@ -415,7 +415,7 @@ class Class46 {
                 val class213 = modelHeaderCache!!.method1940(i_23_ + -365, this.anInt753)
                 val class64 = class213.method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
                 if (class64 == null) {
-                    Class348_Sub42_Sub13.aBoolean9616 = true
+                    ContactList.aBoolean9616 = true
                     return null
                 }
                 return class64
@@ -423,7 +423,7 @@ class Class46 {
             if (this.anInt770 == 6) {
                 val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method800(0, null, class87, false, null, 0, npcDefinitionCache, i_21_, widgetDefinition, interface17, var_renderer, 0, null, i_24_, 0, i, i_22_))
                 if (class64 == null) {
-                    Class348_Sub42_Sub13.aBoolean9616 = true
+                    ContactList.aBoolean9616 = true
                     return null
                 }
                 return class64
@@ -435,14 +435,14 @@ class Class46 {
                 val i_28_ = this.anInt779
                 val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, class87, modelDefinitionLoader, -15331, i_26_, i_22_, var_renderer, i_21_, widgetDefinition)
                 if (class64 == null) {
-                    Class348_Sub42_Sub13.aBoolean9616 = true
+                    ContactList.aBoolean9616 = true
                     return null
                 }
                 return class64
             }
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(
+            throw SoundBankPatch.method2929(
                 runtimeexception,
                 ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
@@ -471,7 +471,7 @@ class Class46 {
         if (i_30_ > -18) this.anInt779 = 13
     }
 
-    private fun method432(class348_sub49: Class348_Sub49, i: Int): Array<Any?>? {
+    private fun method432(class348_sub49: Buffer, i: Int): Array<Any?>? {
         if (i != -1) return null
         anInt691++
         val i_33_ = class348_sub49.readUnsignedByte(255)
@@ -487,7 +487,7 @@ class Class46 {
         return objects
     }
 
-    fun method433(class348_sub49: Class348_Sub49, bool: Boolean) {
+    fun method433(class348_sub49: Buffer, bool: Boolean) {
         anInt743++
         var i = class348_sub49.readUnsignedByte(255)
         if (i == 255) i = -1
@@ -638,21 +638,21 @@ class Class46 {
             this.anInt719 = class348_sub49.readUnsignedShort(842397944)
             if (this.anInt719 == 65535) this.anInt719 = -1
         }
-        this.aClass348_Sub44_748 = Class348_Sub44(i_40_, i_52_)
+        this.aClass348_Sub44_748 = PackedFlagsAccessor(i_40_, i_52_)
         if (i >= 0) {
             val i_53_ = class348_sub49.readUnsignedByte(255)
             var i_54_ = 0
             while (i_53_ > i_54_) {
                 val i_55_ = class348_sub49.readMedium(-1)
                 val i_56_ = class348_sub49.readInt((-126).toByte())
-                aClass356_711!!.method3483(120.toByte(), i_55_.toLong(), Class348_Sub35(i_56_))
+                aClass356_711!!.method3483(120.toByte(), i_55_.toLong(), IntKeyNode(i_56_))
                 i_54_++
             }
             val i_57_ = class348_sub49.readUnsignedByte(255)
             for (i_58_ in 0..<i_57_) {
                 val i_59_ = class348_sub49.readMedium(-1)
                 val string = class348_sub49.method3371(-13487)
-                aClass356_711!!.method3483(119.toByte(), i_59_.toLong(), Class348_Sub50(string))
+                aClass356_711!!.method3483(119.toByte(), i_59_.toLong(), StringCacheNode(string))
             }
         }
         this.anObjectArray815 = method432(class348_sub49, -1)
@@ -736,10 +736,10 @@ class Class46 {
         anInt694++
         if (aClass356_711 == null) {
             aClass356_711 = Class356(16)
-            aClass356_711!!.method3483(60.toByte(), i_61_.toLong(), Class348_Sub35(i_62_))
+            aClass356_711!!.method3483(60.toByte(), i_61_.toLong(), IntKeyNode(i_62_))
         } else if (i < -38) {
-            val class348_sub35 = (aClass356_711!!.method3480(i_61_.toLong(), -6008) as Class348_Sub35?)
-            if (class348_sub35 == null) aClass356_711!!.method3483(67.toByte(), i_61_.toLong(), Class348_Sub35(i_62_))
+            val class348_sub35 = (aClass356_711!!.method3480(i_61_.toLong(), -6008) as IntKeyNode?)
+            if (class348_sub35 == null) aClass356_711!!.method3483(67.toByte(), i_61_.toLong(), IntKeyNode(i_62_))
             else class348_sub35.anInt6976 = i_62_
         }
     }
@@ -756,7 +756,7 @@ class Class46 {
                 if (this.aClass318_Sub10_740 == null) break
                 this.aClass318_Sub10_740!!.method2536(var_renderer, i_63_.toLong(), class129s, class342s, false)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("at.J(" + i + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -785,15 +785,15 @@ class Class46 {
         if (i != 0) this.anInt756 = -106
         if (aClass356_711 == null) {
             aClass356_711 = Class356(16)
-            aClass356_711!!.method3483(86.toByte(), i_66_.toLong(), Class348_Sub50(string))
+            aClass356_711!!.method3483(86.toByte(), i_66_.toLong(), StringCacheNode(string))
         } else {
-            val class348_sub50 = (aClass356_711!!.method3480(i_66_.toLong(), -6008) as Class348_Sub50?)
-            if (class348_sub50 == null) aClass356_711!!.method3483(73.toByte(), i_66_.toLong(), Class348_Sub50(string))
+            val class348_sub50 = (aClass356_711!!.method3480(i_66_.toLong(), -6008) as StringCacheNode?)
+            if (class348_sub50 == null) aClass356_711!!.method3483(73.toByte(), i_66_.toLong(), StringCacheNode(string))
             else class348_sub50.aString7211 = string
         }
     }
 
-    private fun method441(bool: Boolean, class348_sub49: Class348_Sub49): IntArray? {
+    private fun method441(bool: Boolean, class348_sub49: Buffer): IntArray? {
         anInt722++
         val i = class348_sub49.readUnsignedByte(255)
         if (bool != false) return null
@@ -805,14 +805,14 @@ class Class46 {
 
     fun method443(var_renderer: Renderer, i: Byte): AbstractModelRenderer? {
         anInt819++
-        Class348_Sub42_Sub13.aBoolean9616 = false
+        ContactList.aBoolean9616 = false
         val l = ((this.anInt809.toLong() shl 40) + (((if (this.aBoolean790) 1L else 0L) shl 38) + ((this.anInt672.toLong() shl 36) + ((if (this.aBoolean745) 1L else 0L) shl 35))) + (this.anInt756.toLong() + ((if (!this.aBoolean735) 0L else 1L) shl 39)))
         var abstractModelRenderer = Class351.aClass60_4327!!.method583(l, -71) as AbstractModelRenderer?
         if (i > -27) method434(true)
         if (abstractModelRenderer != null) return abstractModelRenderer
         val spriteImage = SpriteImage.method1521(GroundDecorEntity.aClass45_8755!!, this.anInt756, 0)
         if (spriteImage == null) {
-            Class348_Sub42_Sub13.aBoolean9616 = true
+            ContactList.aBoolean9616 = true
             return null
         }
         if (this.aBoolean790) spriteImage.method1514()
@@ -833,14 +833,14 @@ class Class46 {
             anInt804++
             if (this.anInt705 == -1) return null
             val l = ((this.anInt693.toLong() shl 16 and (65535L shl 16)) or ((this.anInt733.toLong() shl 32 and (65535L shl 32)) or (this.anInt674.toLong() shl 48 and (65535L shl 48))) or (this.anInt705.toLong() and 0xffffL))
-            var particleSystemRenderer = (Class348_Sub40_Sub9.aClass60_9171!!.method583(l, 78) as ParticleSystemRenderer?)
+            var particleSystemRenderer = (EdgeDetectTextureNode.aClass60_9171!!.method583(l, 78) as ParticleSystemRenderer?)
             if (particleSystemRenderer == null) {
                 particleSystemRenderer = class84!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, spriteStore!!, this.anInt705)
-                Class348_Sub40_Sub9.aClass60_9171!!.method582(particleSystemRenderer, l, (-120).toByte())
+                EdgeDetectTextureNode.aClass60_9171!!.method582(particleSystemRenderer, l, (-120).toByte())
             }
             return particleSystemRenderer
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (class84 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (class84 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -936,7 +936,7 @@ class Class46 {
                     var_renderer!!.Q(i_6_, i_9_, i_5_, i_8_, i_0_, i, `is`!![i_7_ - 1]!![i_4_], i_3_, i_2_)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("at.S(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("at.S(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
             }
         }
 
@@ -945,22 +945,22 @@ class Class46 {
             anInt837++
             RenderConfigFactory.aLocDefinitionCache_2979!!.method2033(46.toByte())
             Class362.aParticleDefLoader_4460!!.method1377(2)
-            Class348_Sub40_Sub25.aModelDefinitionLoader_9342!!.method1204(0)
-            Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2006(88)
+            RadialTextureNode.aModelDefinitionLoader_9342!!.method1204(0)
+            GradientLookupEffect.aSeqDefinitionCache_9195!!.method2006(88)
             MapAreaDefinition.aBufferedMessageQueue_2529!!.method2080(127)
             Exception_Sub1.aModelHeaderCache_112!!.method1938(126)
             ParticleEmitterNode.aClass87_191!!.method838(7)
-            Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2542(-101)
+            ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2542(-101)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
             Class64_Sub3.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
-            Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1222(true)
-            Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1410(-27995)
+            TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1222(true)
+            TheoraVideoStream.aLocTypeDefLoader_9036!!.method1410(-27995)
             ProjectionCameraTransform.aEmoteDefCache_5764!!.method2602(0)
             CircleHitbox.aClass84_413!!.method816(false)
             HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
-            Class348_Sub1.aMapSceneDefLoader_6559!!.method1390(23)
+            AbstractTileShape.aMapSceneDefLoader_6559!!.method1390(23)
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)
             SpriteLoadValidator.aClass65_4787!!.method694(-1007)
             Class73.aModelDefinitionCache_4782!!.method1598(111)
@@ -971,14 +971,14 @@ class Class46 {
             AudioResampler.method1271(0)
             Class353.aClass60_4346!!.method587(-108)
             MaterialTypeMarker.aClass60_6517!!.method587(-109)
-            Class348_Sub1_Sub1.aClass60_8807!!.method587(-113)
+            TerrainTileShape.aClass60_8807!!.method587(-113)
             SkeletalAnimFrameLoader.aClass60_463!!.method587(-83)
             Class66.aClass60_1174!!.method587(-91)
             val i_17_ = 54 / ((26 - i) / 53)
         }
 
         fun method440(i: Int, i_67_: Byte) {
-            Class348_Sub40_Sub19.anIntArray9259 = IntArray(i)
+            BlankTextureNode.anIntArray9259 = IntArray(i)
             if (i_67_.toInt() == -61) {
                 Class56.anIntArray1045 = IntArray(i)
                 LinkedListIterator.anIntArray2117 = IntArray(i)

@@ -36,10 +36,10 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
 
     fun method2530() {
         this.aBoolean6470 = true
-        var class348_sub42_sub20 = (this.aNodeDeque_6479.method1995(4) as Class348_Sub42_Sub20?)
+        var class348_sub42_sub20 = (this.aNodeDeque_6479.method1995(4) as SpriteRenderEntry?)
         while (class348_sub42_sub20 != null) {
             if (class348_sub42_sub20.aSpotAnimVector_9704!!.anInt2296 == 1) class348_sub42_sub20.method3162(true)
-            class348_sub42_sub20 = this.aNodeDeque_6479.method1990(89.toByte()) as Class348_Sub42_Sub20?
+            class348_sub42_sub20 = this.aNodeDeque_6479.method1990(89.toByte()) as SpriteRenderEntry?
         }
         for (i in (this.aClass318_Sub9_Sub2_Sub1Array6475).indices) {
             if (this.aClass318_Sub9_Sub2_Sub1Array6475[i] != null) {
@@ -53,8 +53,8 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         this.aNodeDeque_6479 = NodeDeque()
         anInt6485 = 0
         this.method2373(false)
-        Class348_Sub51.aClass318_Sub10Array7249!![GlTexture2D.anInt8550] = this
-        GlTexture2D.anInt8550 = (GlTexture2D.anInt8550 + 1 and Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637])
+        DisplaySettingsConfig.aClass318_Sub10Array7249!![GlTexture2D.anInt8550] = this
+        GlTexture2D.anInt8550 = (GlTexture2D.anInt8550 + 1 and KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637])
     }
 
     private fun method2531(i: Int, bool: Boolean) {
@@ -148,14 +148,14 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
 
     private fun method2538(widgetRedrawRegions: Array<WidgetRedrawRegion?>?, bool: Boolean) {
         for (i in 0..7) aBooleanArray6477!![i] = false
-        var class348_sub42_sub20 = (this.aNodeDeque_6479.method1995(4) as Class348_Sub42_Sub20?)
+        var class348_sub42_sub20 = (this.aNodeDeque_6479.method1995(4) as SpriteRenderEntry?)
         while_112_@ while (class348_sub42_sub20 != null) {
             if (widgetRedrawRegions != null) {
                 for (i in widgetRedrawRegions.indices) {
                     if ((class348_sub42_sub20!!.aWidgetRedrawRegion_9702) == widgetRedrawRegions[i] || ((class348_sub42_sub20.aWidgetRedrawRegion_9702) == widgetRedrawRegions[i]!!.aWidgetRedrawRegion_4248)) {
                         aBooleanArray6477!![i] = true
                         class348_sub42_sub20.method3279(2)
-                        class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as Class348_Sub42_Sub20?
+                        class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as SpriteRenderEntry?
                         continue@while_112_
                     }
                 }
@@ -168,19 +168,19 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
                     SpotAnimEntity.Companion.anInt6450--
                 }
             }
-            class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as Class348_Sub42_Sub20?
+            class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as SpriteRenderEntry?
         }
         if (widgetRedrawRegions != null) {
             for (i in widgetRedrawRegions.indices) {
                 if (i == 8 || anInt6485 == 8) break
                 if (!aBooleanArray6477!![i]) {
-                    var class348_sub42_sub20: Class348_Sub42_Sub20? = null
+                    var class348_sub42_sub20: SpriteRenderEntry? = null
                     if ((widgetRedrawRegions[i]!!.method2685((-13).toByte()).anInt2296) == 1 && SpotAnimEntity.Companion.anInt6450 < 32) {
-                        class348_sub42_sub20 = Class348_Sub42_Sub20(widgetRedrawRegions[i], this)
+                        class348_sub42_sub20 = SpriteRenderEntry(widgetRedrawRegions[i], this)
                         Class367_Sub11.aLongHashTable_7415!!.method335(class348_sub42_sub20, -8098, widgetRedrawRegions[i]!!.anInt4245.toLong())
                         SpotAnimEntity.Companion.anInt6450++
                     }
-                    if (class348_sub42_sub20 == null) class348_sub42_sub20 = Class348_Sub42_Sub20(widgetRedrawRegions[i], this)
+                    if (class348_sub42_sub20 == null) class348_sub42_sub20 = SpriteRenderEntry(widgetRedrawRegions[i], this)
                     this.aNodeDeque_6479.method1999(class348_sub42_sub20, -20180)
                     anInt6485++
                     aBooleanArray6477!![i] = true
@@ -218,8 +218,8 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         private var aBooleanArray6477: BooleanArray? = BooleanArray(8)
         fun method2526(i: Int, bool: Boolean): SceneGraphContainer {
             if (GlTexture2D.anInt8550 != Class376.anInt4559) {
-                val class318_sub10 = Class348_Sub51.aClass318_Sub10Array7249!![Class376.anInt4559]!!
-                Class376.anInt4559 = Class376.anInt4559 + 1 and (Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637])
+                val class318_sub10 = DisplaySettingsConfig.aClass318_Sub10Array7249!![Class376.anInt4559]!!
+                Class376.anInt4559 = Class376.anInt4559 + 1 and (KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637])
                 class318_sub10.method2531(i, bool)
                 return class318_sub10
             }

@@ -33,7 +33,7 @@ class Class80 {
         return 0
     }
 
-    fun method807(class348_sub49: Class348_Sub49) {
+    fun method807(class348_sub49: Buffer) {
         aEnvelopeInterpolator_1418 = EnvelopeInterpolator()
         aEnvelopeInterpolator_1418!!.method1452(class348_sub49)
         aEnvelopeInterpolator_1408 = EnvelopeInterpolator()

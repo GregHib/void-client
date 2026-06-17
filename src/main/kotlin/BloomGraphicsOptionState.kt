@@ -5,7 +5,7 @@ class BloomGraphicsOptionState : GraphicsOptionState {
     override fun method1714(i: Int, i_0_: Int): Int {
         anInt5972++
         if (i != 3) return 121
-        if (!Class348.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
+        if (!LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
         return 1
     }
 
@@ -21,21 +21,21 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         anInt5963++
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1716(bool: Boolean) {
         if (bool != false) method1716(false)
         anInt5962++
-        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-119).toByte()) && !Class348.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
+        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-119).toByte()) && !LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
         if (this.anInt3138 < 0 || this.anInt3138 > 1) this.anInt3138 = method1710(20014)
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     fun method1774(i: Int): Boolean {
         if (i < 85) method1773(116.toByte())
         anInt5961++
-        return Class348.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
+        return LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
     }
 
     override fun method1710(i: Int): Int {
@@ -77,11 +77,11 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1772(i: Int) {
             anInt5968++
-            var class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3484(0) as Class348_Sub15?
+            var class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3484(0) as MenuActionNode?
             if (i <= 4) aString5966 = null
             while ( /**/class348_sub15 != null) {
                 Class64_Sub3.method690(108.toByte(), (class348_sub15.anInt6773))
-                class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3482(0) as Class348_Sub15?
+                class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3482(0) as MenuActionNode?
             }
         }
 
@@ -95,7 +95,7 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1775(i: Byte, i_4_: Int, i_5_: Int) {
             anInt5967++
-            if (i.toInt() == -8 && TextureLoaderUtil.method2547(i_4_, 84.toByte())) Class348_Sub40_Sub19.method3097((Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_4_]!!), i_5_, 119)
+            if (i.toInt() == -8 && TextureLoaderUtil.method2547(i_4_, 84.toByte())) BlankTextureNode.method3097((WarpTextureNode.aClass46ArrayArray9427!![i_4_]!!), i_5_, 119)
         }
     }
 }

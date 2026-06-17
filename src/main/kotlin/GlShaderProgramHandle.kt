@@ -1,6 +1,6 @@
 import ParticleEmitterDef.Companion.method2187
 import ParticleEmitterDefExt.Companion.method2189
-import Class348.Companion.method2709
+import LinkedListNode.Companion.method2709
 
 /* Class337 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -21,7 +21,7 @@ class GlShaderProgramHandle internal constructor(var_ha_Sub2: OpenGlRenderer?, l
             aHa_Sub2_4173 = var_ha_Sub2
             this.aLong4178 = l
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("dw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -49,7 +49,7 @@ class GlShaderProgramHandle internal constructor(var_ha_Sub2: OpenGlRenderer?, l
             return ((0x70000 and i_0_) != 0) or method2709(i_1_, i_0_, -1) || method2187(i_0_, -84, i_1_)
         }
 
-        fun method2660(i: Byte, class348_sub49: Class348_Sub49): ParticleEmitterDefExt? {
+        fun method2660(i: Byte, class348_sub49: Buffer): ParticleEmitterDefExt? {
             anInt4180++
             if (i.toInt() != 26) return null
             val class288 = method2189(class348_sub49, i + 59)

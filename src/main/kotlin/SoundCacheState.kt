@@ -38,7 +38,7 @@ object SoundCacheState {
     fun method2642(i: Int, i_6_: Int, bool: Boolean, i_7_: Int, i_8_: Int) {
         anInt4138++
         var i_9_ = 0
-        while (Class348_Sub38.anInt7008 > i_9_) {
+        while (TerrainShadowBuilderGl3.anInt7008 > i_9_) {
             val rectangle = HintIconState.aRectangleArray2371!![i_9_]
             if (rectangle!!.width + rectangle.x > i_7_ && rectangle.x < i + i_7_ && rectangle.height + rectangle.y > i_6_ && rectangle.y < i_8_ + i_6_) LocDefinitionCache.aBooleanArray3438!![i_9_] = true
             i_9_++

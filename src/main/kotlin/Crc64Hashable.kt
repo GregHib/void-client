@@ -1,4 +1,4 @@
-import Class348_Sub42_Sub9.Companion.method3203
+import KeyedCacheEntryReference.Companion.method3203
 
 /* Class126 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -20,7 +20,7 @@ class Crc64Hashable : Interface14 {
     var anInt4993: Int = 0
     override fun method52(i: Byte): Long {
         anInt4988++
-        val ls = Class348_Sub40_Sub21.aLongArray9283
+        val ls = WeaveTextureNode.aLongArray9283
         var l = -1L
         l = (ls!![((l xor this.anInt4991.toLong()) and 0xffL).toInt()] xor (l ushr 8))
         l = (l ushr 8 xor ls[(0xffL and ((this.anInt4992 shr 8).toLong() xor l)).toInt()])
@@ -89,8 +89,8 @@ class Crc64Hashable : Interface14 {
             var i = i
             anInt4986++
             if (i < 0 || i > 2) i = 0
-            Class348_Sub6.anInt6637 = i
-            Class348_Sub51.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>(1 + (Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637]))
+            HslColorTableNode.anInt6637 = i
+            DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>(1 + (KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637]))
             GlTexture2D.anInt8550 = 0
             if (i_2_ >= -118) method1114(-43, -71)
             Class376.anInt4559 = 0

@@ -1,4 +1,4 @@
-import Class348_Sub40_Sub34.Companion.method3140
+import NormalMapTextureNode.Companion.method3140
 
 /* Class277 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -27,7 +27,7 @@ class LocTypeConfig {
         anInt3571++
     }
 
-    private fun method2069(i: Int, class348_sub49: Class348_Sub49, i_1_: Int) {
+    private fun method2069(i: Int, class348_sub49: Buffer, i_1_: Int) {
         anInt3567++
         if (i == -1) {
             if (i_1_ != 1) {
@@ -54,7 +54,7 @@ class LocTypeConfig {
         }
     }
 
-    fun method2070(bool: Boolean, class348_sub49: Class348_Sub49) {
+    fun method2070(bool: Boolean, class348_sub49: Buffer) {
         if (bool != true) this.aBoolean3561 = false
         while (true) {
             val i = class348_sub49.readUnsignedByte(255)
@@ -80,7 +80,7 @@ class LocTypeConfig {
             try {
                 return l or l_0_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "vd.D(" + l + ',' + l_0_ + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "vd.D(" + l + ',' + l_0_ + ')')
             }
         }
 

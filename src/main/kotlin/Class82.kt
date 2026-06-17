@@ -10,9 +10,9 @@ import WaterMaterialPass.Companion.method2148
 import CubemapTextureImplSource.Companion.method2271
 import SceneObjectEntity.Companion.method2405
 import ActorEntity.Companion.method2478
-import Class348.Companion.method2710
-import Class348_Sub23_Sub1.Companion.method2972
-import Class348_Sub40_Sub23.Companion.method3113
+import LinkedListNode.Companion.method2710
+import VorbisOggDecoder.Companion.method2972
+import TurbulenceTextureNode.Companion.method3113
 import Class367_Sub10.Companion.method3553
 import Class367_Sub4.Companion.method3544
 import Class46.Companion.method427
@@ -36,7 +36,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
             aClass45_1436 = class45
             this.anInt1439 = aClass45_1436!!.method407(0, 15)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -84,7 +84,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         return
                     }
                     if (string == "renderer") {
-                        val class365 = Class348_Sub8.aRenderer6654!!.c()
+                        val class365 = FacingDirectionNode.aRenderer6654!!.c()
                         method94("Vendor: " + class365.anInt4476, 89)
                         method94("Name: " + (class365.aString4470), 71)
                         method94(("Version: " + (class365.anInt4475)), -110)
@@ -97,7 +97,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         return
                     }
                 } catch (exception: Exception) {
-                    method94((LocalizedText.aLocalizedText_3485!!.method2063(Class348_Sub33.anInt6967, 544)!!), -99)
+                    method94((LocalizedText.aLocalizedText_3485!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!), -99)
                     return
                 }
                 if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271 || AsyncTaskHandle.anInt2581 >= 2) {
@@ -109,8 +109,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("occlude", ignoreCase = true)) {
-                            Class348_Sub40_Sub23.aBoolean9307 = !Class348_Sub40_Sub23.aBoolean9307
-                            if (Class348_Sub40_Sub23.aBoolean9307) {
+                            TurbulenceTextureNode.aBoolean9307 = !TurbulenceTextureNode.aBoolean9307
+                            if (TurbulenceTextureNode.aBoolean9307) {
                                 method94("Occlsion now on!", -102)
                                 return
                             } else method94("Occlsion now off!", -106)
@@ -128,7 +128,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string == "systemmem") {
                             try {
-                                method94(("System memory: " + (availablePhysicalMemory / 1048576L) + "/" + Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609 + "Mb"), i + 26)
+                                method94(("System memory: " + (availablePhysicalMemory / 1048576L) + "/" + NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609 + "Mb"), i + 26)
                             } catch (throwable: Throwable) {
                                 /* empty */
                             }
@@ -179,24 +179,24 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("clientjs5drop", ignoreCase = true)) {
-                            Class348_Sub4.aMediaStreamClient_6601!!.method1901(-83)
+                            ClientMachineInfo.aMediaStreamClient_6601!!.method1901(-83)
                             method94("Dropped client js5 net queue", -116)
                             return
                         }
                         if (string.equals("serverjs5drop", ignoreCase = true)) {
-                            Class348_Sub4.aMediaStreamClient_6601!!.method1905(0)
+                            ClientMachineInfo.aMediaStreamClient_6601!!.method1905(0)
                             method94("Dropped server js5 net queue", -100)
                             return
                         }
                         if (string.equals("breakcon", ignoreCase = true)) {
-                            Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2239(-95)
-                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1702(i + 123)
-                            Class348_Sub4.aMediaStreamClient_6601!!.method1898(true)
+                            VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2239(-95)
+                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1702(i + 123)
+                            ClientMachineInfo.aMediaStreamClient_6601!!.method1898(true)
                             method94("Breaking new connections for 5 seconds", i + -4)
                             return
                         }
                         if (string.equals("rebuild", ignoreCase = true)) {
-                            Class348_Sub20.method2953((-117).toByte())
+                            TextureTileRenderer.method2953((-117).toByte())
                             method464(-1)
                             method94("Rebuilding map", -113)
                             return
@@ -204,14 +204,14 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         if (string.equals("rebuildprofile", ignoreCase = true)) {
                             Class90.aLong1516 = method599(-75)
                             GlTexture1D.aBoolean8558 = true
-                            Class348_Sub20.method2953((-114).toByte())
+                            TextureTileRenderer.method2953((-114).toByte())
                             method464(-1)
                             method94("Rebuilding map (with profiling)", -117)
                             return
                         }
                         if (string.equals("wm1", ignoreCase = true)) {
                             Class85.Companion.method830(1, -1, 102.toByte(), false, -1)
-                            if (Class348_Sub42_Sub12.method3229(-61) == 1) {
+                            if (ContactEntry.method3229(-61) == 1) {
                                 method94("wm1 succeeded", -65)
                                 return
                             } else method94("wm1 failed", i.toInt() xor 0x17.inv())
@@ -219,7 +219,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("wm2", ignoreCase = true)) {
                             Class85.Companion.method830(2, -1, 102.toByte(), false, -1)
-                            if (Class348_Sub42_Sub12.method3229(-119) == 2) method94("wm2 succeeded", -109)
+                            if (ContactEntry.method3229(-119) == 2) method94("wm2 succeeded", -109)
                             else {
                                 method94("wm2 failed", i + 154)
                                 return
@@ -228,7 +228,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("wm3", ignoreCase = true)) {
                             Class85.Companion.method830(3, 1024, 102.toByte(), false, 768)
-                            if (Class348_Sub42_Sub12.method3229(i.toInt() xor 0x3d) == 3) method94("wm3 succeeded", 111)
+                            if (ContactEntry.method3229(i.toInt() xor 0x3d) == 3) method94("wm3 succeeded", 111)
                             else {
                                 method94("wm3 failed", 83)
                                 return
@@ -297,7 +297,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         if (string!!.startsWith("setba")) {
                             if (string.length < 6) method94("Invalid buildarea value", i + -36)
                             else {
-                                val i_6_ = (Class348_Sub41.method3156(true, string.substring(6)))
+                                val i_6_ = (RegionSceneShifter.method3156(true, string.substring(6)))
                                 if (i_6_ < 0 || (method2710(-126, TextureDefinitionCache.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
                                 else {
                                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
@@ -313,7 +313,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         if (string.startsWith("rect_debug")) {
                             if (string.length < 10) method94("Invalid rect_debug value", -94)
                             else {
-                                NativeRenderer.anInt8045 = Class348_Sub41.method3156(true, string.substring(10).trim { it <= ' ' })
+                                NativeRenderer.anInt8045 = RegionSceneShifter.method3156(true, string.substring(10).trim { it <= ' ' })
                                 method94(("rect_debug=" + NativeRenderer.anInt8045), -124)
                                 return
                             }
@@ -330,8 +330,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.startsWith("bloom")) {
-                            val bool_7_ = Class348_Sub8.aRenderer6654!!.method3666()
-                            if (Class348_Sub40_Sub33.method3137(!bool_7_, (-24).toByte())) {
+                            val bool_7_ = FacingDirectionNode.aRenderer6654!!.method3666()
+                            if (WarpTextureNode.method3137(!bool_7_, (-24).toByte())) {
                                 if (bool_7_) {
                                     method94("Bloom disabled", i + -49)
                                     return
@@ -374,19 +374,19 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             CameraRotationStub.aClass45_322!!.method405(i.toInt() xor 0x4e.inv())
                             CameraRotationStub.aClass45_322!!.method412(127.toByte())
                             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1175(125.toByte())
-                            Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1219(7851)
+                            TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1219(7851)
                             method464(-1)
                             method94("Minimap reset", 70)
                             return
                         }
                         if (string.startsWith("mc")) {
-                            if (Class348_Sub8.aRenderer6654!!.method3708()) {
+                            if (FacingDirectionNode.aRenderer6654!!.method3708()) {
                                 var i_8_ = string.substring(3).toInt()
                                 if (i_8_ >= 1) {
                                     if (i_8_ > 4) i_8_ = 4
                                 } else i_8_ = 1
                                 ShadowQualityOptionState.anInt6012 = i_8_
-                                Class348_Sub20.method2953((-128).toByte())
+                                TextureTileRenderer.method2953((-128).toByte())
                                 method94(("Render cores now: " + (ShadowQualityOptionState.anInt6012)), -77)
                             } else {
                                 method94("Current toolkit doesn't support multiple cores", i + 138)
@@ -421,7 +421,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string == "renderprofile" || string == "rp") {
                             GlowPostProcessor.aBoolean2514 = !GlowPostProcessor.aBoolean2514
-                            Class348_Sub8.aRenderer6654!!.method3647(GlowPostProcessor.aBoolean2514)
+                            FacingDirectionNode.aRenderer6654!!.method3647(GlowPostProcessor.aBoolean2514)
                             MapLabelMenuEntry.method1042(23.toByte())
                             method94(("showprofiling=" + GlowPostProcessor.aBoolean2514), 106)
                             return
@@ -430,7 +430,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             var i_9_ = -1
                             var i_10_ = 1000
                             if (string.length > 15) {
-                                val strings = Class348_Sub40_Sub23.method3113(' ', true, string)
+                                val strings = TurbulenceTextureNode.method3113(' ', true, string)
                                 try {
                                     if (strings.size > 1) i_10_ = strings[1]!!.toInt()
                                 } catch (throwable: Throwable) {
@@ -458,7 +458,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string == "autoworld") {
-                            Class348_Sub42_Sub20.method3283(127)
+                            SpriteRenderEntry.method3283(127)
                             method94("auto world selected", -59)
                             return
                         }
@@ -473,14 +473,14 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.startsWith("pc")) {
-                            val class348_sub47 = (method2148(Class348_Sub40_Sub22.aClass351_9304, Class348_Sub23_Sub2.aClass77_9029, -97))
+                            val class348_sub47 = (method2148(CellNoiseTextureNode.aClass351_9304, TheoraVideoStream.aClass77_9029, -97))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                             val i_12_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                             val i_13_ = string.indexOf(" ", 4)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string.substring(3, i_13_))
                             method3544((class348_sub47.aClass348_Sub49_Sub2_7116!!), i + -12, string.substring(i_13_))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(114, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 + -i_12_))
-                            Class348_Sub42_Sub14.method3243(i.toInt() xor 0x49.inv(), class348_sub47)
+                            InterfaceComponentGroup.method3243(i.toInt() xor 0x49.inv(), class348_sub47)
                             return
                         }
                         if (string == "savevarcs") {
@@ -514,7 +514,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string == "resetcache") {
-                            Class348_Sub18.method2938(122.toByte())
+                            InterfaceBounds.method2938(122.toByte())
                             method94("Caches reset", -113)
                             return
                         }
@@ -554,11 +554,11 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.startsWith("texsize")) {
                             val i_18_ = string.substring(8).toInt()
-                            Class348_Sub8.aRenderer6654!!.method3696(i_18_)
+                            FacingDirectionNode.aRenderer6654!!.method3696(i_18_)
                             return
                         }
                         if (string == "soundstreamcount") {
-                            method94(("Active streams: " + Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2887()), 84)
+                            method94(("Active streams: " + SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2887()), 84)
                             return
                         }
                         if (string == "autosetup") {
@@ -585,7 +585,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         if (string.startsWith("w2debug")) {
                             val i_19_ = string.substring(8, 9).toInt()
                             SequencedActorEntity.anInt10096 = i_19_
-                            Class348_Sub20.method2953((-103).toByte())
+                            TextureTileRenderer.method2953((-103).toByte())
                             method94("Toggled!", -99)
                             return
                         }
@@ -593,11 +593,11 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             val i_20_ = string.indexOf(' ')
                             if (i_20_ < 0) method94("Syntax: ortho <n>", 66)
                             else {
-                                val i_21_ = (Class348_Sub41.method3156(true, string.substring(1 + i_20_)))
+                                val i_21_ = (RegionSceneShifter.method3156(true, string.substring(1 + i_20_)))
                                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_21_)
                                 method243(37)
                                 RenderNode.aBoolean9719 = false
-                                Class348_Sub42_Sub3.method3179(i + 79)
+                                LoadingScreenImageNode.method3179(i + 79)
                                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350) == i_21_) {
                                     method94("Successfully changed ortho mode", -82)
                                     return
@@ -609,7 +609,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         if (string.startsWith("orthozoom ")) {
                             if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(i + -32271) == 0) method94("enable ortho mode first (use 'ortho <n>')", i + 182)
                             else {
-                                val i_22_ = (Class348_Sub41.method3156(true, string.substring(string.indexOf(' ') - -1)))
+                                val i_22_ = (RegionSceneShifter.method3156(true, string.substring(string.indexOf(' ') - -1)))
                                 LocalPlayerState.anInt1911 = i_22_
                                 method94(("orthozoom=" + LocalPlayerState.anInt1911), 68)
                                 return
@@ -617,16 +617,16 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.startsWith("orthotilesize ")) {
-                            val i_23_ = (Class348_Sub41.method3156(true, string.substring(1 + string.indexOf(' '))))
+                            val i_23_ = (RegionSceneShifter.method3156(true, string.substring(1 + string.indexOf(' '))))
                             Class45.anInt666 = i_23_
                             PerlinTextureProvider.anInt5812 = Class45.anInt666
                             method94("ortho tile size=" + i_23_, -70)
-                            Class348_Sub42_Sub3.method3179(0)
+                            LoadingScreenImageNode.method3179(0)
                             return
                         }
                         if (string == "orthocamlock") {
-                            Class348_Sub49_Sub1.aBoolean9746 = !Class348_Sub49_Sub1.aBoolean9746
-                            method94(("ortho camera lock is " + (if (!(Class348_Sub49_Sub1.aBoolean9746)) "off" else "on")), -92)
+                            FloatBuffer.aBoolean9746 = !FloatBuffer.aBoolean9746
+                            method94(("ortho camera lock is " + (if (!(FloatBuffer.aBoolean9746)) "off" else "on")), -92)
                             return
                         }
                         if (string.startsWith("setoutput ")) {
@@ -668,37 +668,37 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                                 return
                             }
                             val strings = (method3113('\n', true, (NpcDefinitionCache.method1981(method1795(`is`, true), (-89).toByte(), '\r', ""))!!))
-                            Class348_Sub42_Sub6.method3189(0, strings)
+                            ChatScriptListNode.method3189(0, strings)
                         }
                         if (string.startsWith("zoom ")) {
-                            val i_24_ = (Class348_Sub41.method3156(true, string.substring(5))).toShort()
+                            val i_24_ = (RegionSceneShifter.method3156(true, string.substring(5))).toShort()
                             if (i_24_ > 0) TextureLoaderUtil.aShort3992 = i_24_
                             return
                         }
                         if (string.startsWith("fps ") && (Class8.aClass364_165 != Class55_Sub1.aClass364_5271)) {
-                            LocalizedTextTriple.method2222((Class348_Sub41.method3156(true, string.substring(4))), (-124).toByte())
+                            LocalizedTextTriple.method2222((RegionSceneShifter.method3156(true, string.substring(4))), (-124).toByte())
                             return
                         }
                     } catch (exception: Exception) {
-                        method94(LocalizedText.aLocalizedText_3485!!.method2063(Class348_Sub33.anInt6967, 544)!!, -92)
+                        method94(LocalizedText.aLocalizedText_3485!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!, -92)
                         return
                     }
                 }
                 if (WorldMapRenderer.anInt4674 == 10) {
                     MapArchiveSource.anInt4799++
-                    val class348_sub47 = method2148((FloatCameraTransform.aClass351_5699), (Class348_Sub23_Sub2.aClass77_9029), i.toInt() xor 0x24)
+                    val class348_sub47 = method2148((FloatCameraTransform.aClass351_5699), (TheoraVideoStream.aClass77_9029), i.toInt() xor 0x24)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string!!.length + 3)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (bool) 1 else 0)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (bool_0_) 1 else 0)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
-                    Class348_Sub42_Sub14.method3243(120, class348_sub47)
+                    InterfaceComponentGroup.method3243(120, class348_sub47)
                 }
                 if (WorldMapRenderer.anInt4674 == 10) {
                     return
                 }
-                method94(LocalizedText.aLocalizedText_3486!!.method2063(Class348_Sub33.anInt6967, 544) + string, 57)
+                method94(LocalizedText.aLocalizedText_3486!!.method2063(AnimationFrameDefinition.anInt6967, 544) + string, 57)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("lba.B(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("lba.B(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'))
             }
         }
 
@@ -712,7 +712,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         fun method814(i: Byte, l: Long) {
             try {
                 anInt1438++
-                val i_27_ = Class348_Sub6.anInt6633
+                val i_27_ = HslColorTableNode.anInt6633
                 if (i > 106) {
                     if (FrameStatsReset.anInt5799 != i_27_) {
                         val i_28_ = i_27_ - FrameStatsReset.anInt5799
@@ -725,8 +725,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         else if (i_28_ < i_29_) i_29_ = i_28_
                         FrameStatsReset.anInt5799 += i_29_
                     }
-                    val i_30_ = Class348_Sub7.anInt6652
-                    Class76.Companion.aFloat1287 += Class348_Sub27.aFloat6898 * l.toFloat() / 40.0f * 8.0f
+                    val i_30_ = RegionTileNode.anInt6652
+                    Class76.Companion.aFloat1287 += MultiFieldRecord.aFloat6898 * l.toFloat() / 40.0f * 8.0f
                     ResourceProvider.aFloat3938 += CircleDrawer.aFloat2687 * l.toFloat() / 40.0f * 8.0f
                     if (AsyncTaskHandle.anInt2578 != i_30_) {
                         val i_31_ = -AsyncTaskHandle.anInt2578 + i_30_
@@ -742,7 +742,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                     method1725(262144)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "lba.A(" + i + ',' + l + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "lba.A(" + i + ',' + l + ')')
             }
         }
     }

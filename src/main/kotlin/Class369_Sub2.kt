@@ -9,7 +9,7 @@ class Class369_Sub2(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderSta
     override fun method51(i: Byte): ProjectileFactory? {
         if (i < 116) method3572(118)
         anInt8586++
-        return Class348_Sub49.aProjectileFactory_7175
+        return Buffer.aProjectileFactory_7175
     }
 
     init {
@@ -17,7 +17,7 @@ class Class369_Sub2(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderSta
             this.anInt8585 = i_9_
             this.anInt8591 = i_8_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ou.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ou.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
         }
     }
 

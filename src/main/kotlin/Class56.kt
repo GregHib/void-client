@@ -39,7 +39,7 @@ class Class56 private constructor(i: Int, localizedText: LocalizedText?, localiz
             this.aBoolean1016 = bool_8_
             this.aBoolean1013 = bool
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jj.<init>(" + i + ',' + (if (localizedText != null) "{...}" else "null") + ',' + (if (localizedText_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + bool + ',' + bool_8_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("jj.<init>(" + i + ',' + (if (localizedText != null) "{...}" else "null") + ',' + (if (localizedText_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + bool + ',' + bool_8_ + ')'))
         }
     }
 
@@ -138,7 +138,7 @@ class Class56 private constructor(i: Int, localizedText: LocalizedText?, localiz
                 frame!!.setVisible(bool)
                 frame.dispose()
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("jj.D(" + (if (frame != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("jj.D(" + (if (frame != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
 

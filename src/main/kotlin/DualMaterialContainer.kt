@@ -18,9 +18,9 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
         val class223 = interface12.method51(120.toByte())
         if (ModelDefinitionCache.aProjectileFactory_2868 == class223) return ClickFeedbackTask(interface12 as Class52)
         if (MatrixCameraTransform.aProjectileFactory_5689 == class223) return WorldMapRenderer(method998(-107), interface12 as MinimapSpriteRenderer)
-        if (class223 == Class348_Sub40_Sub21.aProjectileFactory_9274) return WidgetComponentNode(aClass45_1637, interface12 as ParticleEmitterDef)
+        if (class223 == WeaveTextureNode.aProjectileFactory_9274) return WidgetComponentNode(aClass45_1637, interface12 as ParticleEmitterDef)
         if (class223 == ItemNameResolver.aProjectileFactory_4997) return ScrollingWidgetComponentNode(aClass45_1637, interface12 as ParticleEmitterDefExt)
-        if (class223 == Class348_Sub49.aProjectileFactory_7175) return Class5_Sub2(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub2)
+        if (class223 == Buffer.aProjectileFactory_7175) return Class5_Sub2(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub2)
         if (class223 == SkyboxGradient.aProjectileFactory_3934) return Class5_Sub3(aClass45_1637, aClass45_1641!!, interface12 as Class369_Sub1)
         if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return Class5_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3)
         if (class223 == SpotAnimVector.aProjectileFactory_2307) return Class67(aClass45_1637, aClass45_1641, interface12 as HeapInfoRecord)
@@ -35,7 +35,7 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
             aClass45_1637 = class45
             aClass45_1641 = class45_0_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mia.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_0_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("mia.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_0_ != null) "{...}" else "null") + ')'))
         }
     }
 

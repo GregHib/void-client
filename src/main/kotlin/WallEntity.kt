@@ -25,7 +25,7 @@ abstract class WallEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i
             if (i_3_ >= -106) method2384(null, 52)
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("un.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("un.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
         }
     }
 
@@ -42,7 +42,7 @@ abstract class WallEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i
         }
     }
 
-    override fun method2384(class348_sub1s: Array<Class348_Sub1?>?, i: Int): Int {
+    override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8771++
         val i_10_ = 122 % ((-14 - i) / 61)
         return this.method2390(class348_sub1s!!, (this.x shr Class362.anInt4459), -2, (this.y shr Class362.anInt4459))
@@ -119,7 +119,7 @@ abstract class WallEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i
         @JvmStatic
         fun method2487(i: Int): MapLabelMenuEntry? {
             anInt8778++
-            Class348_Sub36.anInt6985 = 0
+            WidgetActionEntry.anInt6985 = 0
             if (i >= -91) anInt8775 = -63
             return ModelOrSpriteHolder.method170(true)
         }

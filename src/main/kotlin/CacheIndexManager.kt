@@ -105,7 +105,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             NpcActorEntity.anInt10074 = i_1_
             WaterDetailOptionState.anInt5994 = i_3_
-            Class348_Sub43.anInt7068 = 1
+            SpriteDefinition.anInt7068 = 1
             SceneLinkedListNode.anInt3971 = i_2_
             ModelDefinition.aClass45_1848 = class45
         }

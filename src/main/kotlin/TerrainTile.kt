@@ -22,7 +22,7 @@ abstract class TerrainTile internal constructor(i: Int, i_60_: Int, i_61_: Int, 
 
     abstract fun ka(i: Int, i_18_: Int, i_19_: Int)
 
-    abstract fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray)
+    abstract fun method3981(class348_sub1: AbstractTileShape, `is`: IntArray)
 
     fun method3982(i: Byte, i_20_: Int, i_21_: Int): Int {
         anInt4593++
@@ -91,8 +91,8 @@ abstract class TerrainTile internal constructor(i: Int, i_60_: Int, i_61_: Int, 
                 anInt4586++
                 val dimension = canvas.getSize()
                 Class85.method828(38.toByte(), dimension.height, dimension.width)
-                if (Class348_Sub49.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3669(canvas, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651)
-                else CameraRotationStub.aRenderer326!!.method3669(canvas, Class348_Sub16_Sub1.anInt8854, ShadowQualityOptionState.anInt6008)
+                if (Buffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3669(canvas, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651)
+                else CameraRotationStub.aRenderer326!!.method3669(canvas, SynthVoiceGroup.anInt8854, ShadowQualityOptionState.anInt6008)
             }
         }
 

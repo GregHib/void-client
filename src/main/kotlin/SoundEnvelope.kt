@@ -20,7 +20,7 @@ class SoundEnvelope {
     var aShortArray2742: ShortArray? = null
     private var anInt2743 = 0
     @JvmField
-    var aClass348_Sub1_2745: Class348_Sub1? = null
+    var aClass348_Sub1_2745: AbstractTileShape? = null
     @JvmField
     var aBoolean2749: Boolean = false
 
@@ -234,7 +234,7 @@ class SoundEnvelope {
         method1542(32402)
     }
 
-    internal constructor(var_renderer: Renderer?, class348_sub49: Class348_Sub49?, i: Int) {
+    internal constructor(var_renderer: Renderer?, class348_sub49: Buffer?, i: Int) {
         try {
             if (CutsceneSequenceData.anIntArray3726 == null) method1177(122.toByte())
             this.anInt2731 = class348_sub49!!.readUnsignedByte(255)
@@ -257,7 +257,7 @@ class SoundEnvelope {
                 this.aShortArray2742!![i_48_] = BoundsConstraintEntry.method2057(i_51_, i_50_ shl 8).toShort()
                 i_48_++
             }
-            i_46_ = ((i_46_ shl Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037)
+            i_46_ = ((i_46_ shl Class362.anInt4459) + TheoraVideoStream.anInt9037)
             val i_52_ = (if (ParticleEmitterNode.anIntArray179 == null) (Crc64Hashable.anIntArray4983!![method303(class348_sub49.readUnsignedShort(842397944), 30).toInt() and 0xffff]) else (ParticleEmitterNode.anIntArray179!![class348_sub49.readUnsignedShort(842397944)]))
             val i_53_ = class348_sub49.readUnsignedByte(255)
             anInt2739 = (0xe0 and i_53_) shl 3
@@ -265,7 +265,7 @@ class SoundEnvelope {
             if (this.anInt2734 != 31) method1542(32402)
             method1541(i_45_, var_renderer!!, i_44_, i_43_, 3, i_52_, i_46_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ro.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ro.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -279,7 +279,7 @@ class SoundEnvelope {
         @JvmField
         var anInt2747: Int = 0
         var anInt2748: Int = 0
-        fun method1538(i: Int, i_0_: Byte, class348_sub49_sub2: Class348_Sub49_Sub2): Boolean {
+        fun method1538(i: Int, i_0_: Byte, class348_sub49_sub2: CipheredPacketBuffer): Boolean {
             anInt2732++
             val i_1_ = class348_sub49_sub2.readBits((-24).toByte(), 2)
             if (i_1_ == 0) {
@@ -289,7 +289,7 @@ class SoundEnvelope {
                 val bool = (class348_sub49_sub2.readBits((-24).toByte(), 1) == 1)
                 if (bool) GlFramebufferBlitter.anIntArray279!![ProjectionCameraTransform.anInt5768++] = i
                 if (LoadingBarRenderer.aPlayerArray5058!![i] != null) throw RuntimeException("hr:lr")
-                val class359 = Class348_Sub17.aClass359Array6802!![i]!!
+                val class359 = SoundBankPatch.aClass359Array6802!![i]!!
                 val player = (Player().also { LoadingBarRenderer.aPlayerArray5058!![i] = it })
                 player.anInt10290 = i
                 if (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i] != null) player.method2452(84.toByte(), CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i]!!)
@@ -308,20 +308,20 @@ class SoundEnvelope {
                 if (method802(i_9_, i_8_, true)) player.aByte6376++
                 player.method2449(i_9_, i_8_, 102.toByte())
                 player.aBoolean10539 = false
-                Class348_Sub17.aClass359Array6802!![i] = null
+                SoundBankPatch.aClass359Array6802!![i] = null
                 return true
             }
             if (i_1_ == 1) {
                 val i_10_ = class348_sub49_sub2.readBits((-24).toByte(), 2)
-                val i_11_ = Class348_Sub17.aClass359Array6802!![i]!!.anInt4420
-                Class348_Sub17.aClass359Array6802!![i]!!.anInt4420 = (0xfffffff and i_11_) + (((i_11_ shr 28) + i_10_ and 0x3) shl 28)
+                val i_11_ = SoundBankPatch.aClass359Array6802!![i]!!.anInt4420
+                SoundBankPatch.aClass359Array6802!![i]!!.anInt4420 = (0xfffffff and i_11_) + (((i_11_ shr 28) + i_10_ and 0x3) shl 28)
                 return false
             }
             if (i_1_ == 2) {
                 val i_12_ = class348_sub49_sub2.readBits((-24).toByte(), 5)
                 val i_13_ = i_12_ shr 3
                 val i_14_ = 0x7 and i_12_
-                val i_15_ = Class348_Sub17.aClass359Array6802!![i]!!.anInt4420
+                val i_15_ = SoundBankPatch.aClass359Array6802!![i]!!.anInt4420
                 val i_16_ = 0x3 and i_13_ + (i_15_ shr 28)
                 var i_17_ = (i_15_ and 0x3fd366) shr 14
                 var i_18_ = 0xff and i_15_
@@ -345,19 +345,19 @@ class SoundEnvelope {
                     i_17_++
                     i_18_++
                 }
-                Class348_Sub17.aClass359Array6802!![i]!!.anInt4420 = i_18_ + ((i_16_ shl 28) + (i_17_ shl 14))
+                SoundBankPatch.aClass359Array6802!![i]!!.anInt4420 = i_18_ + ((i_16_ shl 28) + (i_17_ shl 14))
                 return false
             }
             val i_19_ = class348_sub49_sub2.readBits((-24).toByte(), 18)
             val i_20_ = i_19_ shr 16
             val i_21_ = 0xff and (i_19_ shr 8)
             val i_22_ = 0xff and i_19_
-            val i_23_ = Class348_Sub17.aClass359Array6802!![i]!!.anInt4420
+            val i_23_ = SoundBankPatch.aClass359Array6802!![i]!!.anInt4420
             val i_24_ = 0x3 and (i_23_ shr 28) - -i_20_
             val i_25_ = i_21_ + (i_23_ shr 14) and 0xff
             if (i_0_.toInt() != 105) anIntArray2744 = null
             val i_26_ = 0xff and i_23_ + i_22_
-            Class348_Sub17.aClass359Array6802!![i]!!.anInt4420 = i_26_ + (i_24_ shl 28) - -(i_25_ shl 14)
+            SoundBankPatch.aClass359Array6802!![i]!!.anInt4420 = i_26_ + (i_24_ shl 28) - -(i_25_ shl 14)
             return false
         }
 

@@ -12,7 +12,7 @@ public abstract class Class64 {
 
     abstract fun p(i: Int, i_0_: Int, var_terrainTile: TerrainTile?, var_terrainTile_1_: TerrainTile?, i_2_: Int, i_3_: Int, i_4_: Int)
 
-    private fun method602(i: Int, class348_sub33: Class348_Sub33?, i_5_: Int, bool: Boolean, i_6_: Int, class4: Class4?, i_7_: Int, `is`: IntArray?, bools: BooleanArray?, class4_8_: Class4?, i_9_: Int, bool_10_: Boolean) {
+    private fun method602(i: Int, class348_sub33: AnimationFrameDefinition?, i_5_: Int, bool: Boolean, i_6_: Int, class4: Class4?, i_7_: Int, `is`: IntArray?, bools: BooleanArray?, class4_8_: Class4?, i_9_: Int, bool_10_: Boolean) {
         try {
             anInt1130++
             if (class4 == null || i_7_ == 0) {
@@ -125,11 +125,11 @@ public abstract class Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ka.AC(" + i + ',' + (if (class348_sub33 != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (if (class4 != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + (if (class4_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + bool_10_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ka.AC(" + i + ',' + (if (class348_sub33 != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (if (class4 != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + (if (class4_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + bool_10_ + ')'))
         }
     }
 
-    fun method603(i: Byte, i_40_: Int, `is`: IntArray?, i_41_: Int, i_42_: Int, i_43_: Int, class348_sub42_sub17: Class348_Sub42_Sub17?, i_44_: Int, class348_sub42_sub17_45_: Class348_Sub42_Sub17?, bool: Boolean, i_46_: Int) {
+    fun method603(i: Byte, i_40_: Int, `is`: IntArray?, i_41_: Int, i_42_: Int, i_43_: Int, class348_sub42_sub17: TextureMaterialGroup?, i_44_: Int, class348_sub42_sub17_45_: TextureMaterialGroup?, bool: Boolean, i_46_: Int) {
         try {
             anInt1133++
             if (i_42_ != -1) {
@@ -149,7 +149,7 @@ public abstract class Class64 {
                 } else method621()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ka.QB(" + i + ',' + i_40_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_44_ + ',' + (if (class348_sub42_sub17_45_ != null) "{...}" else "null") + ',' + bool + ',' + i_46_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ka.QB(" + i + ',' + i_40_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_44_ + ',' + (if (class348_sub42_sub17_45_ != null) "{...}" else "null") + ',' + bool + ',' + i_46_ + ')'))
         }
     }
 
@@ -185,7 +185,7 @@ public abstract class Class64 {
 
     abstract fun EA(): Int
 
-    fun method611(i: Int, i_74_: Int, class348_sub42_sub17: Class348_Sub42_Sub17) {
+    fun method611(i: Int, i_74_: Int, class348_sub42_sub17: TextureMaterialGroup) {
         anInt1126++
         if (i != -1) {
             method622()
@@ -224,7 +224,7 @@ public abstract class Class64 {
 
     abstract fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int)
 
-    fun method617(i: Int, i_83_: Int, class348_sub42_sub17: Class348_Sub42_Sub17?, i_84_: Int, class348_sub42_sub17_85_: Class348_Sub42_Sub17?, bool: Boolean, bool_86_: Boolean, i_87_: Int, i_88_: Int) {
+    fun method617(i: Int, i_83_: Int, class348_sub42_sub17: TextureMaterialGroup?, i_84_: Int, class348_sub42_sub17_85_: TextureMaterialGroup?, bool: Boolean, bool_86_: Boolean, i_87_: Int, i_88_: Int) {
         try {
             anInt1125++
             if (i != -1) {
@@ -243,7 +243,7 @@ public abstract class Class64 {
                 } else method621()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ka.BC(" + i + ',' + i_83_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_84_ + ',' + (if (class348_sub42_sub17_85_ != null) "{...}" else "null") + ',' + bool + ',' + bool_86_ + ',' + i_87_ + ',' + i_88_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ka.BC(" + i + ',' + i_83_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_84_ + ',' + (if (class348_sub42_sub17_85_ != null) "{...}" else "null") + ',' + bool + ',' + bool_86_ + ',' + i_87_ + ',' + i_88_ + ')'))
         }
     }
 
@@ -281,7 +281,7 @@ public abstract class Class64 {
 
     abstract fun na(): Int
 
-    fun method625(class348_sub42_sub17: Class348_Sub42_Sub17?, i: Int, i_101_: Byte, i_102_: Int, class348_sub42_sub17_103_: Class348_Sub42_Sub17?, i_104_: Int, i_105_: Int, i_106_: Int, class348_sub42_sub17_107_: Class348_Sub42_Sub17?, bool: Boolean, i_108_: Int, class348_sub42_sub17_109_: Class348_Sub42_Sub17?, i_110_: Int, bools: BooleanArray?, i_111_: Int) {
+    fun method625(class348_sub42_sub17: TextureMaterialGroup?, i: Int, i_101_: Byte, i_102_: Int, class348_sub42_sub17_103_: TextureMaterialGroup?, i_104_: Int, i_105_: Int, i_106_: Int, class348_sub42_sub17_107_: TextureMaterialGroup?, bool: Boolean, i_108_: Int, class348_sub42_sub17_109_: TextureMaterialGroup?, i_110_: Int, bools: BooleanArray?, i_111_: Int) {
         try {
             anInt1135++
             if (i_104_ != -1) {
@@ -312,7 +312,7 @@ public abstract class Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(
+            throw SoundBankPatch.method2929(
                 runtimeexception,
                 ("ka.VB(" + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i + ',' + i_101_ + ',' + i_102_ + ',' + (if (class348_sub42_sub17_103_ != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + (if (class348_sub42_sub17_107_ != null) "{...}" else "null") + ',' + bool + ',' + i_108_ + ',' + (if (class348_sub42_sub17_109_ != null) "{...}" else "null") + ',' + i_110_ + ',' + (if (bools != null) "{...}" else "null") + ',' + i_111_ + ')')
             )
@@ -420,7 +420,7 @@ public abstract class Class64 {
                 else I(i_147_, `is`, i_150_, i_146_, i_152_, bool, i_148_, is_151_)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ka.PB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_146_ + ',' + i_147_ + ',' + i_148_ + ',' + i_149_ + ',' + i_150_ + ',' + (if (is_151_ != null) "{...}" else "null") + ',' + i_152_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ka.PB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_146_ + ',' + i_147_ + ',' + i_148_ + ',' + i_149_ + ',' + i_150_ + ',' + (if (is_151_ != null) "{...}" else "null") + ',' + i_152_ + ')'))
         }
     }
 
@@ -493,7 +493,7 @@ public abstract class Class64 {
             val strings = arrayOfNulls<String>(Class76.anInt1285)
             var i_58_ = 0
             while (Class76.anInt1285 > i_58_) {
-                strings[i_58_] = BrightnessOptionState.aClass355_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(Class348_Sub21.method2955(i, 81))
+                strings[i_58_] = BrightnessOptionState.aClass355_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(CameraSplineNode.method2955(i, 81))
                 i_58_++
             }
             SpotAnimVector.method1333(AsyncTaskHandle.aShortArray2579, i + 26073, strings)
@@ -531,7 +531,7 @@ public abstract class Class64 {
                 }
                 anInt1134++
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ka.UB(" + i + ',' + (if (strings != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_64_ + ',' + bool + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ka.UB(" + i + ',' + (if (strings != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_64_ + ',' + bool + ')'))
             }
         }
 

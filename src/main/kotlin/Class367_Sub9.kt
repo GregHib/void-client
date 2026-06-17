@@ -71,7 +71,7 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
                 aBoolean7376 = (aClass89_7369 != null && aNormalMapGenerator_7375!!.method2041(120.toByte()))
             } else aBoolean7376 = false
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ko.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ko.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 

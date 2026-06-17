@@ -18,7 +18,7 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
             `is` = aClass45_3299.method410(-1860, 19, i)
         }
         keyboardLayoutConfig = KeyboardLayoutConfig()
-        if (`is` != null) keyboardLayoutConfig.method1255(Class348_Sub49(`is`), -1)
+        if (`is` != null) keyboardLayoutConfig.method1255(Buffer(`is`), -1)
         synchronized(aClass60_3303) {
             aClass60_3303.method582(keyboardLayoutConfig, i.toLong(), (-120).toByte())
         }
@@ -30,7 +30,7 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
             aClass45_3299 = class45
             this.anInt3305 = aClass45_3299!!.method407(0, 19)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uea.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("uea.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

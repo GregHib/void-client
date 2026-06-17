@@ -33,7 +33,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
         }
         itemModelDefinition = ItemModelDefinition()
         itemModelDefinition.aModelDefinitionCache_438 = this
-        if (`is` != null) itemModelDefinition.method332(i xor 0x55.inv(), Class348_Sub49(`is`))
+        if (`is` != null) itemModelDefinition.method332(i xor 0x55.inv(), Buffer(`is`))
         synchronized(aClass60_2875) {
             aClass60_2875.method582(itemModelDefinition, i_15_.toLong(), (-109).toByte())
         }
@@ -67,7 +67,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
             aClass45_2866 = class45
             aClass45_2866!!.method407(0, 46)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_17_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("sb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_17_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -115,7 +115,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                     }
                 }
                 if (class318_sub1_sub3_sub3.anInt10269 != -1 && (class318_sub1_sub3_sub3.anInt10225) <= Class367_Sub11.anInt7396) {
-                    val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(118.toByte(), (class318_sub1_sub3_sub3.anInt10269)))
+                    val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(118.toByte(), (class318_sub1_sub3_sub3.anInt10269)))
                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                         val class17 = ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7)
                         if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
@@ -133,7 +133,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                     }
                 }
                 if (class318_sub1_sub3_sub3.anInt10269 != -1 && ((class318_sub1_sub3_sub3.anInt10225) <= Class367_Sub11.anInt7396)) {
-                    val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), (class318_sub1_sub3_sub3.anInt10269)))
+                    val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), (class318_sub1_sub3_sub3.anInt10269)))
                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                         val class17 = ParticleEmitterNode.aClass87_191!!.method835((class368.anInt4503), i xor 0x7)
                         if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {

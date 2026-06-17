@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 abstract class ParticleProcessor {
-    abstract fun method2694(i: Int, class348_sub42_sub9: Class348_Sub42_Sub9): Class348_Sub42_Sub9?
+    abstract fun method2694(i: Int, class348_sub42_sub9: KeyedCacheEntryReference): KeyedCacheEntryReference?
 
     companion object {
         @JvmField

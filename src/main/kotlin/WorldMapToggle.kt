@@ -20,7 +20,7 @@ object WorldMapToggle {
             anInt3875++
             return oa(canvas, var_renderConfig, i_1_, i_0_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_1_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }
     }
 
@@ -28,11 +28,11 @@ object WorldMapToggle {
         anInt3876++
         if (HostPingThread.aWorldListEntryArray2261 != null) {
             NativeIndexBuffer.anInt4698++
-            val class348_sub47 = method2148(Class357.aClass351_4405, Class348_Sub23_Sub2.aClass77_9029, -97)
+            val class348_sub47 = method2148(Class357.aClass351_4405, TheoraVideoStream.aClass77_9029, -97)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
             if (i > -50) method2297(104, 26, null, null, -19)
-            Class348_Sub42_Sub14.method3243(-43, class348_sub47)
+            InterfaceComponentGroup.method3243(-43, class348_sub47)
         }
     }
 

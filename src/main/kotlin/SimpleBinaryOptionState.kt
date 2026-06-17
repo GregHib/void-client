@@ -20,7 +20,7 @@ class SimpleBinaryOptionState : GraphicsOptionState {
         val i_1_ = 126 / ((82 - i) / 35)
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     fun method1815(i: Int): Int {
         if (i != -32350) method1816(84)
@@ -28,7 +28,7 @@ class SimpleBinaryOptionState : GraphicsOptionState {
         return this.anInt3138
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1714(i: Int, i_2_: Int): Int {
         anInt6073++

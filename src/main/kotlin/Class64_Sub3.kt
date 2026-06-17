@@ -3,9 +3,9 @@ import ParticleEmitterFactory.Companion.method1885
 import SphereMapMaterialPass.Companion.method2174
 import Texture2DProvider.Companion.method2259
 import ArchiveResourceProvider.Companion.method2352
-import Class348.Companion.method2709
-import Class348_Sub16_Sub2.Companion.method2832
-import Class348_Sub40_Sub19.Companion.method3100
+import LinkedListNode.Companion.method2709
+import PcmStreamBuffer.Companion.method2832
+import BlankTextureNode.Companion.method3100
 import Class40.Companion.method371
 import Class59_Sub2_Sub1.Companion.method565
 import RasterSprite.Companion.method166
@@ -141,11 +141,11 @@ class Class64_Sub3 : Class64 {
     }
 
     private fun method678(bool: Boolean, i: Byte) {
-        if (6 * anInt5537 > (aHa_Sub2_5598!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154)!!.size) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(6 * (anInt5537 - -100))
+        if (6 * anInt5537 > (aHa_Sub2_5598!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154)!!.size) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = FloatBuffer(6 * (anInt5537 - -100))
         else aHa_Sub2_5598.aClass348_Sub49_Sub1_7798!!.anInt7197 = 0
         anInt5630++
         if (i.toInt() != 27) WA()
-        val class348_sub49_sub1: Class348_Sub49_Sub1 = aHa_Sub2_5598.aClass348_Sub49_Sub1_7798!!
+        val class348_sub49_sub1: FloatBuffer = aHa_Sub2_5598.aClass348_Sub49_Sub1_7798!!
         if (aHa_Sub2_5598.aBoolean7775) {
             for (i_12_ in 0..<anInt5537) {
                 class348_sub49_sub1.writeShort(107.toByte(), aShortArray5592!![i_12_].toInt())
@@ -174,7 +174,7 @@ class Class64_Sub3 : Class64 {
             anInt5533++
             return method684(bool, 1566382404, -1, i_14_, i_15_, i, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.MA(" + i + ',' + i_14_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_15_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.MA(" + i + ',' + i_14_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_15_ + ')'))
         }
     }
 
@@ -400,7 +400,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.PA(" + (if (class64 != null) "{...}" else "null") + ',' + i + ',' + i_42_ + ',' + i_43_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.PA(" + (if (class64 != null) "{...}" else "null") + ',' + i + ',' + i_42_ + ',' + i_43_ + ',' + bool + ')'))
         }
     }
 
@@ -409,7 +409,7 @@ class Class64_Sub3 : Class64 {
             anInt5633++
             return method684(bool, 1566382404, i_89_, i_87_, i_88_, i, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.OA(" + i + ',' + i_87_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_88_ + ',' + i_89_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.OA(" + i + ',' + i_87_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_88_ + ',' + i_89_ + ')'))
         }
     }
 
@@ -473,7 +473,7 @@ class Class64_Sub3 : Class64 {
             aFloatArray5571!![anInt5529] = f_102_
             return (anInt5529++).toShort()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.R(" + i + ',' + i_97_ + ',' + l + ',' + i_98_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_99_ + ',' + f + ',' + i_100_ + ',' + i_101_ + ',' + f_102_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.R(" + i + ',' + i_97_ + ',' + l + ',' + i_98_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_99_ + ',' + f + ',' + i_100_ + ',' + i_101_ + ',' + f_102_ + ')'))
         }
     }
 
@@ -619,7 +619,7 @@ class Class64_Sub3 : Class64 {
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.SA(" + bool + ',' + i + ',' + i_108_ + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.SA(" + bool + ',' + i + ',' + i_108_ + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -672,7 +672,7 @@ class Class64_Sub3 : Class64 {
             method685(118.toByte(), var_r_Sub2_170_)
             return var_r_Sub2_170_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "paa.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "paa.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
         }
     }
 
@@ -752,7 +752,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.U(" + i + ',' + (if (var_r_Sub2 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.U(" + i + ',' + (if (var_r_Sub2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -953,7 +953,7 @@ class Class64_Sub3 : Class64 {
                 class64_sub3_211_.aByteArray5594 = aByteArray5594
                 class64_sub3_211_.aShortArray5576 = aShortArray5576
             }
-            if (Class348_Sub47.method3325(i, anInt5556, true)) {
+            if (OutgoingPacketNode.method3325(i, anInt5556, true)) {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x4).toByte()
                 class64_sub3_211_.aHoverActionEntry_5563 = class64_sub3_213_!!.aHoverActionEntry_5563
                 class64_sub3_211_.aHoverActionEntry_5563!!.anInterface2_1811 = aHoverActionEntry_5563!!.anInterface2_1811
@@ -1069,7 +1069,7 @@ class Class64_Sub3 : Class64 {
             class64_sub3_211_.aModelFacePriorityNodeArray5640 = aModelFacePriorityNodeArray5640
             return class64_sub3_211_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.K(" + (if (class64_sub3_211_ != null) "{...}" else "null") + ',' + i + ',' + i_212_ + ',' + bool + ',' + (if (class64_sub3_213_ != null) "{...}" else "null") + ',' + bool_214_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.K(" + (if (class64_sub3_211_ != null) "{...}" else "null") + ',' + i + ',' + i_212_ + ',' + bool + ',' + (if (class64_sub3_213_ != null) "{...}" else "null") + ',' + bool_214_ + ')'))
         }
     }
 
@@ -1177,7 +1177,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_235_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_235_ + ')'))
         }
     }
 
@@ -1272,7 +1272,7 @@ class Class64_Sub3 : Class64 {
                     aHoverActionEntry_5605!!.anInterface2_1811 = null
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
             }
             break
         } while (false)
@@ -1346,9 +1346,9 @@ class Class64_Sub3 : Class64 {
                 i_295_ = (i_295_ + 8).toByte()
             }
             if (i_295_.toInt() != 0) {
-                if (anInt5529 * i_295_ > (aHa_Sub2_5598!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154)!!.size) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(i_295_ * (100 + anInt5529))
+                if (anInt5529 * i_295_ > (aHa_Sub2_5598!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154)!!.size) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = FloatBuffer(i_295_ * (100 + anInt5529))
                 else aHa_Sub2_5598.aClass348_Sub49_Sub1_7798!!.anInt7197 = 0
-                val class348_sub49_sub1: Class348_Sub49_Sub1 = aHa_Sub2_5598.aClass348_Sub49_Sub1_7798!!
+                val class348_sub49_sub1: FloatBuffer = aHa_Sub2_5598.aClass348_Sub49_Sub1_7798!!
                 if (bool_293_) {
                     if (aHa_Sub2_5598.aBoolean7775) {
                         var i_300_ = 0
@@ -1703,7 +1703,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1875,7 +1875,7 @@ class Class64_Sub3 : Class64 {
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "paa.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "paa.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -2191,7 +2191,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_386_ + ',' + i_387_ + ',' + i_388_ + ',' + i_389_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_386_ + ',' + i_387_ + ',' + i_388_ + ',' + i_389_ + ',' + bool + ')'))
         }
     }
 
@@ -2407,7 +2407,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
         }
     }
 
@@ -2451,7 +2451,7 @@ class Class64_Sub3 : Class64 {
                     ShaderProgram.anInt7275 = i_510_ + ShaderProgram.anInt7275 / i_516_
                     ScreenAnchorAlignment.anInt2880 = ScreenAnchorAlignment.anInt2880 / i_516_ - -i_511_
                     SpotAnimDefinition.anInt2398 = i_512_ + SpotAnimDefinition.anInt2398 / i_516_
-                    Class348_Sub42_Sub16_Sub1.aBoolean10450 = true
+                    StreamingResourceRequest.aBoolean10450 = true
                 }
             } else if (i == 1) {
                 if (is_514_ != null) {
@@ -2578,7 +2578,7 @@ class Class64_Sub3 : Class64 {
                     val i_565_ = is_514_[12] shl 4
                     val i_566_ = is_514_[13] shl 4
                     val i_567_ = is_514_[14] shl 4
-                    if (Class348_Sub42_Sub16_Sub1.aBoolean10450) {
+                    if (StreamingResourceRequest.aBoolean10450) {
                         var i_568_ = ((ShaderProgram.anInt7275 * is_514_[0] - -(is_514_[3] * ScreenAnchorAlignment.anInt2880) - -(is_514_[6] * SpotAnimDefinition.anInt2398) - -8192) shr 14)
                         var i_569_ = ((is_514_[1] * ShaderProgram.anInt7275 - -(ScreenAnchorAlignment.anInt2880 * is_514_[4]) - (-(is_514_[7] * SpotAnimDefinition.anInt2398) - 8192)) shr 14)
                         i_568_ += i_565_
@@ -2588,7 +2588,7 @@ class Class64_Sub3 : Class64 {
                         ShaderProgram.anInt7275 = i_568_
                         ScreenAnchorAlignment.anInt2880 = i_569_
                         SpotAnimDefinition.anInt2398 = i_570_
-                        Class348_Sub42_Sub16_Sub1.aBoolean10450 = false
+                        StreamingResourceRequest.aBoolean10450 = false
                     }
                     val is_571_ = IntArray(9)
                     val i_572_ = Class70.anIntArray1204!![i_510_]
@@ -2698,7 +2698,7 @@ class Class64_Sub3 : Class64 {
                     val i_613_ = is_514_[12] shl 4
                     val i_614_ = is_514_[13] shl 4
                     val i_615_ = is_514_[14] shl 4
-                    if (Class348_Sub42_Sub16_Sub1.aBoolean10450) {
+                    if (StreamingResourceRequest.aBoolean10450) {
                         var i_616_ = (8192 + (ShaderProgram.anInt7275 * is_514_[0] - -(ScreenAnchorAlignment.anInt2880 * is_514_[3]) - -(is_514_[6] * SpotAnimDefinition.anInt2398)) shr 14)
                         var i_617_ = (8192 + (is_514_[7] * SpotAnimDefinition.anInt2398 + (ScreenAnchorAlignment.anInt2880 * is_514_[4] + is_514_[1] * ShaderProgram.anInt7275)) shr 14)
                         i_617_ += i_614_
@@ -2707,7 +2707,7 @@ class Class64_Sub3 : Class64 {
                         ScreenAnchorAlignment.anInt2880 = i_617_
                         i_618_ += i_615_
                         ShaderProgram.anInt7275 = i_616_
-                        Class348_Sub42_Sub16_Sub1.aBoolean10450 = false
+                        StreamingResourceRequest.aBoolean10450 = false
                         SpotAnimDefinition.anInt2398 = i_618_
                     }
                     val i_619_ = i_510_ shl 15 shr 7
@@ -2889,7 +2889,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_510_ + ',' + i_511_ + ',' + i_512_ + ',' + bool + ',' + i_513_ + ',' + (if (is_514_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_510_ + ',' + i_511_ + ',' + i_512_ + ',' + bool + ',' + i_513_ + ',' + (if (is_514_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2951,7 +2951,7 @@ class Class64_Sub3 : Class64 {
             aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
             aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -3450,7 +3450,7 @@ class Class64_Sub3 : Class64 {
                     if (i_823_ >= 0) anIntArrayArray5553!![i_823_]!![is_818_[i_823_]++] = i_822_
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_695_ + ',' + i_696_ + ',' + i_697_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_695_ + ',' + i_696_ + ',' + i_697_ + ')'))
             }
             break
         } while (false)
@@ -3610,14 +3610,14 @@ class Class64_Sub3 : Class64 {
             TextureMetadataProvider.anInt4609 = -1
             if (i.toInt() != -59) anInt5584 = 77
             anInt5577++
-            Class348_Sub36.anInt6992 = i_377_
-            Class348_Sub15.method2811(false)
+            WidgetActionEntry.anInt6992 = i_377_
+            MenuActionNode.method2811(false)
         }
 
         @JvmStatic
         fun method690(i: Byte, i_378_: Int) {
             anInt5565++
-            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i_378_.toLong(), -6008) as Class348_Sub15?)
+            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i_378_.toLong(), -6008) as MenuActionNode?)
             val i_379_ = -8 % ((i - -49) / 44)
             if (class348_sub15 != null) {
                 class348_sub15.aClass55_Sub1_6768!!.method508(1)

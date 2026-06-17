@@ -65,13 +65,13 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83
             try {
                 aClass83_6242 = class83
                 if (aClass83_6242!!.aClass258_Sub1_1443 == null || !(this.aHa_Sub2_3684.aBoolean7791) || !(this.aHa_Sub2_3684.aBoolean7783)) break
-                val class242 = (Class348_Sub42_Sub15.method3249(
+                val class242 = (TimedTileQueueEntry.method3249(
                     35633,
                     -21,
                     this.aHa_Sub2_3684,
                     "uniform float time;\nuniform float scale;\nvarying vec3 wvVertex;\nvarying float waterDepth;\nvoid main() {\nwaterDepth = gl_MultiTexCoord0.z;\nvec4 ecVertex = gl_ModelViewMatrix*gl_Vertex;\nwvVertex.x = dot(gl_NormalMatrix[0], ecVertex.xyz);\nwvVertex.y = dot(gl_NormalMatrix[1], ecVertex.xyz);\nwvVertex.z = dot(gl_NormalMatrix[2], ecVertex.xyz);\ngl_TexCoord[0].x = dot(gl_TextureMatrix[0][0], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].y = dot(gl_TextureMatrix[0][1], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].z = time;\ngl_TexCoord[0].w = 1.0;\ngl_FogFragCoord = 1.0-clamp((gl_Fog.end+ecVertex.z)*gl_Fog.scale, 0.0, 1.0);\ngl_Position = ftransform();\n}\n"
                 ))
-                val class242_6_ = (Class348_Sub42_Sub15.method3249(
+                val class242_6_ = (TimedTileQueueEntry.method3249(
                     35632,
                     -53,
                     this.aHa_Sub2_3684,
@@ -80,7 +80,7 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83
                 aGlShaderProgramHandle_6234 = SequencedWallEntity.method2493((this.aHa_Sub2_3684), -1, (arrayOf<ManagedGlResource?>(class242, class242_6_)))
                 aBoolean6237 = aGlShaderProgramHandle_6234 != null
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("er.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("er.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -171,7 +171,7 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83
         fun method2157(i: Int, i_15_: Int): String? {
             anInt6238++
             if (i_15_ != -1431655765) method2157(-27, 75)
-            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i.toLong(), -6008) as Class348_Sub15?)
+            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i.toLong(), -6008) as MenuActionNode?)
             if (class348_sub15 != null) {
                 val class348_sub23_sub4 = class348_sub15.aClass55_Sub1_6768!!.method513(i_15_ + 1431655815)
                 if (class348_sub23_sub4 != null) {

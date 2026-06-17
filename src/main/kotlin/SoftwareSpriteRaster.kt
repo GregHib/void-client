@@ -289,7 +289,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
             anInt1618 = aS_Sub2_1622.anInt4587 shr anInt1613
             anInt1625 = aS_Sub2_1622.anInt4590 shr anInt1613
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mha.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("mha.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -346,7 +346,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
                 }
                 return method3692(i_61_, i_63_, i_62_, class45, 0, var_renderConfig, canvas, i)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_61_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_61_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -355,7 +355,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
             Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
             anInt1611++
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-            Class348_Sub43.anInt7068 = i
+            SpriteDefinition.anInt7068 = i
             ModelDefinition.aClass45_1848 = null
         }
     }

@@ -39,7 +39,7 @@ class SceneEntityModel : SceneLinkedListNode() {
             try {
                 if (i_0_ >= -32) method2502(null, -18)
                 anInt6412++
-                if (var_ha_Sub3!!.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aTextureFormatInfo_9471, 125.toByte())) {
+                if (var_ha_Sub3!!.method3880(Class68.aClass68_1183, ClampTextureNode.aTextureFormatInfo_9471, 125.toByte())) {
                     val is_3_ = ByteArray(i * i_2_)
                     var i_4_ = 0
                     while (i > i_4_) {
@@ -62,16 +62,16 @@ class SceneEntityModel : SceneLinkedListNode() {
                 }
                 return IndexedSprite(var_ha_Sub3, i_2_, i, is_7_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("jda.A(" + i + ',' + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("jda.A(" + i + ',' + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ')'))
             }
         }
 
         @JvmStatic
-        fun method2502(`is`: ByteArray?, i: Int): Class348_Sub42_Sub19? {
+        fun method2502(`is`: ByteArray?, i: Int): MinimapAreaMarkerNode? {
             if (i >= -76) return null
             anInt6413++
-            val class348_sub42_sub19 = Class348_Sub42_Sub19()
-            val class348_sub49 = Class348_Sub49(`is`)
+            val class348_sub42_sub19 = MinimapAreaMarkerNode()
+            val class348_sub49 = Buffer(`is`)
             class348_sub49.anInt7197 = -2 + class348_sub49.aByteArray7154!!.size
             val i_11_ = class348_sub49.readUnsignedShort(842397944)
             val i_12_ = -12 + -i_11_ + (-2 + (class348_sub49.aByteArray7154)!!.size)
@@ -91,7 +91,7 @@ class SceneEntityModel : SceneLinkedListNode() {
                     while (i_16_-- > 0) {
                         val i_17_ = class348_sub49.readInt((-126).toByte())
                         val i_18_ = class348_sub49.readInt((-126).toByte())
-                        class356.method3483(124.toByte(), i_17_.toLong(), Class348_Sub35(i_18_))
+                        class356.method3483(124.toByte(), i_17_.toLong(), IntKeyNode(i_18_))
                     }
                 }
             }

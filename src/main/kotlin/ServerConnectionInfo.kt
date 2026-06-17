@@ -1,5 +1,5 @@
-import Class348_Sub40.Companion.method3038
-import Class348_Sub40_Sub32.Companion.method3134
+import AbstractProceduralTextureNode.Companion.method3038
+import InvertTextureNode.Companion.method3134
 import Class62.method599
 import Class76.Companion.method773
 
@@ -66,14 +66,14 @@ class ServerConnectionInfo {
 
         fun method1260(bool: Boolean, i: Int, modelLightingConfig: ModelLightingConfig?) {
             var i = i
-            if (Class348_Sub40_Sub10.aBoolean9181) {
-                Class348_Sub40_Sub10.aBoolean9181 = false
+            if (BrightnessContrastEffect.aBoolean9181) {
+                BrightnessContrastEffect.aBoolean9181 = false
                 i = 0
             }
             anInt2140++
             if (WaterDetailOptionState.aModelLightingConfig_5990 == null || !WaterDetailOptionState.aModelLightingConfig_5990!!.method1424(modelLightingConfig!!, 84.toByte())) {
                 WaterDetailOptionState.aModelLightingConfig_5990 = modelLightingConfig
-                Class348_Sub33.aLong6963 = method599(-78)
+                AnimationFrameDefinition.aLong6963 = method599(-78)
                 TexGenMaterialPass.anInt6248 = i
                 FrameBufferObject.anInt4889 = TexGenMaterialPass.anInt6248
                 if (FrameBufferObject.anInt4889 == 0) method3134(-1)
@@ -83,7 +83,7 @@ class ServerConnectionInfo {
                     SceneryDetailOptionState.aCircleRasterizer_6098 = HeapInfoRecord.aCircleRasterizer_4938
                     Class64.aFloat1136 = TextureMetadataProvider.aFloat4626
                     DebugOverlayRenderer.aFloat3172 = NormalMapGenerator.aFloat3462
-                    Class45.aFloat670 = Class348_Sub3.aFloat6586
+                    Class45.aFloat670 = ModelVertexColorBuffer.aFloat6586
                     GlTexture1D.aFloat8560 = RangedGraphicsOptionState.aFloat5945
                     ParticleEmitterFactory.aFloat3177 = Class361.aFloat4455
                     GroundDecorEntity.anInt8739 = NativeIndexBuffer.anInt4703

@@ -24,7 +24,7 @@ class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : I
             if (RenderNode.anInt9721 != -1) {
                 var i_0_ = GlTexture1D.aClass373_8552!!.method3597(true)
                 var i_1_ = GlTexture1D.aClass373_8552!!.method3594(72.toByte())
-                val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?)
+                val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?)
                 if (class348_sub45 != null) {
                     i_0_ = class348_sub45.method3308((-128).toByte())
                     i_1_ = class348_sub45.method3311(58)
@@ -36,7 +36,7 @@ class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : I
                     i_2_ = NativeTerrainTile.method4008((-128).toByte())
                     i_3_ = method260(false)
                 }
-                method1373(RenderNode.anInt9721, i_2_, i_2_, LocTypeDefinition.anInt4017 + i_2_, i_1_, i_0_, -1391, i_0_ + i_2_, Class348_Sub42_Sub8_Sub2.anInt10432 + i_3_, i_3_, i_3_ + i_1_, i_3_)
+                method1373(RenderNode.anInt9721, i_2_, i_2_, LocTypeDefinition.anInt4017 + i_2_, i_1_, i_0_, -1391, i_0_ + i_2_, HardCacheEntryReference.anInt10432 + i_3_, i_3_, i_3_ + i_1_, i_3_)
                 if (HeapDiagnosticsHolder.aClass46_2249 != null) NativeLibraryUnloader.method1630(0, i_3_ + i_1_, i_2_ + i_0_)
             }
         }

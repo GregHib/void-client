@@ -24,7 +24,7 @@ class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_
             glPixelStorei(3317, 4)
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wha.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wha.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }
     }
 
@@ -54,11 +54,11 @@ class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_
         }
 
         @JvmStatic
-        fun method1974(i: Byte, i_3_: Int, bool: Boolean): Class348_Sub13? {
+        fun method1974(i: Byte, i_3_: Int, bool: Boolean): ModelKeyBuilder? {
             anInt8559++
             val i_4_ = -43 / ((-65 - i) / 55)
             val l = (i_3_ or (if (bool) -2147483648 else 0)).toLong()
-            return (Class348_Sub40.aClass356_7041!!.method3480(l, -6008) as Class348_Sub13?)
+            return (AbstractProceduralTextureNode.aClass356_7041!!.method3480(l, -6008) as ModelKeyBuilder?)
         }
 
         init {

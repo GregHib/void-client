@@ -51,10 +51,10 @@ object RegionSceneLoader {
             SceneRegionState.anInt193++
             if (i < -118 && (SceneRegionState.anInt193 >= 50 || bool)) {
                 SceneRegionState.anInt193 = 0
-                if (!AbstractMenuEntry.aBoolean1712 && Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
+                if (!AbstractMenuEntry.aBoolean1712 && PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
                     IOException_Sub1.anInt88++
-                    val class348_sub47 = method2148((RangedGraphicsOptionState.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -106)
-                    Class348_Sub42_Sub14.method3243(122, class348_sub47)
+                    val class348_sub47 = method2148((RangedGraphicsOptionState.aClass351_5938), (TheoraVideoStream.aClass77_9029), -106)
+                    InterfaceComponentGroup.method3243(122, class348_sub47)
                     try {
                         method1802(0)
                     } catch (ioexception: IOException) {
@@ -67,10 +67,10 @@ object RegionSceneLoader {
     }
 
     @JvmStatic
-    fun method2194(i: Int, class348_sub42_sub13: Class348_Sub42_Sub13?): Int {
+    fun method2194(i: Int, class348_sub42_sub13: ContactList?): Int {
         anInt3696++
         if (i != -1) return -42
-        val string = Class348_Sub15.method2812(i + -43, class348_sub42_sub13!!)
+        val string = MenuActionNode.method2812(i + -43, class348_sub42_sub13!!)
         return Class369.aFontDefinition_4962!!.method1186(string, TileRenderState.aAbstractModelRendererArray4234, false)
     }
 

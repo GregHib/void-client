@@ -39,7 +39,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
                                             if (string_7_ != "reg") {
                                                 if (string_7_.startsWith("img=") && abstractModelRenderers != null) {
                                                     try {
-                                                        val i_8_ = (Class348_Sub41.method3156(true, (string_7_.substring(4))))
+                                                        val i_8_ = (RegionSceneShifter.method3156(true, (string_7_.substring(4))))
                                                         i_2_ = -1
                                                         i_3_ += (abstractModelRenderers[i_8_]!!.method966())
                                                         if (i_3_ > i) return (string_5_ + "...")
@@ -72,7 +72,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             }
             return string
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.I(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_0_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oea.I(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_0_ + ')'))
         }
     }
 
@@ -104,7 +104,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             val i_15_ = (-1 + i_14_) * i_12_
             return (this.anInt1988 + (i_15_ + this.anInt1993))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.A(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + i_12_ + ',' + i_13_ + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oea.A(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + i_12_ + ',' + i_13_ + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -135,7 +135,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
                                             else {
                                                 if (string_20_.startsWith("img=") && abstractModelRenderers != null) {
                                                     try {
-                                                        val i_21_ = (Class348_Sub41.method3156(true, (string_20_.substring(4))))
+                                                        val i_21_ = (RegionSceneShifter.method3156(true, (string_20_.substring(4))))
                                                         i_16_ = -1
                                                         i_17_ += (abstractModelRenderers[i_21_]!!.method966())
                                                     } catch (exception: Exception) {
@@ -159,7 +159,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             }
             return i_17_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.F(" + (if (string != null) "{...}" else "null") + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oea.F(" + (if (string != null) "{...}" else "null") + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -177,7 +177,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             }
             return i_23_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.K(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oea.K(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -260,7 +260,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
                             i_32_ = 174
                         } else if (string_39_.startsWith("img=") && abstractModelRenderers != null) {
                             try {
-                                val i_40_ = (Class348_Sub41.method3156(true, (string_39_.substring(4))))
+                                val i_40_ = (RegionSceneShifter.method3156(true, (string_39_.substring(4))))
                                 i_32_ = -1
                                 i_37_ += abstractModelRenderers[i_40_]!!.method966()
                             } catch (exception: Exception) {
@@ -311,7 +311,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             }
             return i_33_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.J(" + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (strings != null) "{...}" else "null") + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oea.J(" + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (strings != null) "{...}" else "null") + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -321,12 +321,12 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             if (i != 1) this.anInt1992 = -13
             return method1188(string, intArrayOf(i_42_), TextureGenerator.aStringArray2494, 87.toByte(), abstractModelRenderers)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.B(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_42_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oea.B(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_42_ + ')'))
         }
     }
 
     init {
-        val class348_sub49 = Class348_Sub49(`is`)
+        val class348_sub49 = Buffer(`is`)
         val i = class348_sub49.readUnsignedByte(255)
         if (i != 0) throw RuntimeException("")
         val bool = class348_sub49.readUnsignedByte(255) == 1
@@ -396,7 +396,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
         fun method1189(i: Int, i_41_: Int) {
             anInt1991++
             if (i != -1) aClass351_1987 = null
-            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i_41_.toLong(), -6008) as? Class348_Sub15?)
+            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i_41_.toLong(), -6008) as? MenuActionNode?)
             if (class348_sub15 != null) {
                 class348_sub15.aBoolean6781 = !class348_sub15.aBoolean6781
                 class348_sub15.aClass55_Sub1_6768!!.method514(116.toByte(), class348_sub15.aBoolean6781)

@@ -10,10 +10,10 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
     fun method575(i: Int): Int {
         anInt1101++
         var i_0_ = i
-        var class348_sub42_sub8 = aLinkedNodeListIterator_1089!!.method1011(-84) as Class348_Sub42_Sub8?
+        var class348_sub42_sub8 = aLinkedNodeListIterator_1089!!.method1011(-84) as CacheEntryReference?
         while (class348_sub42_sub8 != null) {
             if (!class348_sub42_sub8.method3195(-4)) i_0_++
-            class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1003(79.toByte()) as Class348_Sub42_Sub8?)
+            class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1003(79.toByte()) as CacheEntryReference?)
         }
         return i_0_
     }
@@ -28,7 +28,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         if (i == 2) {
             anInt1093++
             if (MatrixCameraTransform.aParticleEmitterFactory_5675 != null) {
-                var class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1011(-59) as Class348_Sub42_Sub8?)
+                var class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1011(-59) as CacheEntryReference?)
                 while (class348_sub42_sub8 != null) {
                     if (!class348_sub42_sub8.method3195(-4)) {
                         if (i_2_.toLong() < ++class348_sub42_sub8.aLong7057) {
@@ -43,7 +43,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
                         class348_sub42_sub8.method3162(true)
                         anInt1086 += (class348_sub42_sub8.anInt9545)
                     }
-                    class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1003(97.toByte()) as Class348_Sub42_Sub8?)
+                    class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1003(97.toByte()) as CacheEntryReference?)
                 }
             }
         }
@@ -51,12 +51,12 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
 
     fun method579(i: Int): Any? {
         anInt1094++
-        var class348_sub42_sub8 = aClass356_1100.method3482(0) as Class348_Sub42_Sub8?
+        var class348_sub42_sub8 = aClass356_1100.method3482(0) as CacheEntryReference?
         while (class348_sub42_sub8 != null) {
             val `object` = class348_sub42_sub8.method3193(114)
             if (`object` != null) return `object`
-            val class348_sub42_sub8_4_: Class348_Sub42_Sub8? = class348_sub42_sub8
-            class348_sub42_sub8 = aClass356_1100.method3482(0) as Class348_Sub42_Sub8?
+            val class348_sub42_sub8_4_: CacheEntryReference? = class348_sub42_sub8
+            class348_sub42_sub8 = aClass356_1100.method3482(0) as CacheEntryReference?
             class348_sub42_sub8_4_!!.method2715(92.toByte())
             class348_sub42_sub8_4_.method3162(true)
             anInt1086 += class348_sub42_sub8_4_.anInt9545
@@ -72,16 +72,16 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
             method586(l, 0)
             anInt1086 -= i_5_
             while (anInt1086 < 0) {
-                val class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1008(i xor 0x7c8a) as Class348_Sub42_Sub8?)
+                val class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1008(i xor 0x7c8a) as CacheEntryReference?)
                 method585(class348_sub42_sub8, i xor 0x7cfa.inv())
             }
-            val class348_sub42_sub8_sub2 = Class348_Sub42_Sub8_Sub2(`object`, i_5_)
+            val class348_sub42_sub8_sub2 = HardCacheEntryReference(`object`, i_5_)
             aClass356_1100.method3483(54.toByte(), l, class348_sub42_sub8_sub2)
             if (i != 31902) anInt1086 = -106
             aLinkedNodeListIterator_1089!!.method1005(true, class348_sub42_sub8_sub2)
             class348_sub42_sub8_sub2.aLong7057 = 0L
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jr.E(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + l + ',' + i_5_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("jr.E(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + l + ',' + i_5_ + ')'))
         }
     }
 
@@ -97,7 +97,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
             anInt1095++
             method580(31902, `object`, l, 1)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jr.B(" + (if (`object` != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("jr.B(" + (if (`object` != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
         }
     }
 
@@ -105,7 +105,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         try {
             val i_6_ = -59 % ((i - 2) / 47)
             anInt1085++
-            val class348_sub42_sub8 = aClass356_1100.method3480(l, -6008) as Class348_Sub42_Sub8?
+            val class348_sub42_sub8 = aClass356_1100.method3480(l, -6008) as CacheEntryReference?
             if (class348_sub42_sub8 == null) return null
             val `object` = class348_sub42_sub8.method3193(86)
             if (`object` == null) {
@@ -115,7 +115,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
                 return null
             }
             if (class348_sub42_sub8.method3195(-4)) {
-                val class348_sub42_sub8_sub2 = Class348_Sub42_Sub8_Sub2(`object`, (class348_sub42_sub8.anInt9545))
+                val class348_sub42_sub8_sub2 = HardCacheEntryReference(`object`, (class348_sub42_sub8.anInt9545))
                 aClass356_1100.method3483(90.toByte(), (class348_sub42_sub8.aLong4291), class348_sub42_sub8_sub2)
                 aLinkedNodeListIterator_1089!!.method1005(true, class348_sub42_sub8_sub2)
                 class348_sub42_sub8_sub2.aLong7057 = 0L
@@ -127,11 +127,11 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
             }
             return `object`
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "jr.K(" + l + ',' + i + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "jr.K(" + l + ',' + i + ')')
         }
     }
 
-    private fun method585(class348_sub42_sub8: Class348_Sub42_Sub8?, i: Int) {
+    private fun method585(class348_sub42_sub8: CacheEntryReference?, i: Int) {
         val i_8_ = 80 / ((i - 6) / 36)
         anInt1102++
         if (class348_sub42_sub8 != null) {
@@ -145,36 +145,36 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         try {
             if (i != 0) aLinkedNodeListIterator_1089 = null
             anInt1090++
-            val class348_sub42_sub8 = aClass356_1100.method3480(l, -6008) as Class348_Sub42_Sub8?
+            val class348_sub42_sub8 = aClass356_1100.method3480(l, -6008) as CacheEntryReference?
             method585(class348_sub42_sub8, -57)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "jr.J(" + l + ',' + i + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "jr.J(" + l + ',' + i + ')')
         }
     }
 
     fun method587(i: Int) {
         anInt1096++
-        var class348_sub42_sub8 = aLinkedNodeListIterator_1089!!.method1011(-71) as Class348_Sub42_Sub8?
+        var class348_sub42_sub8 = aLinkedNodeListIterator_1089!!.method1011(-71) as CacheEntryReference?
         while (class348_sub42_sub8 != null) {
             if (class348_sub42_sub8.method3195(-4)) {
                 class348_sub42_sub8.method2715(118.toByte())
                 class348_sub42_sub8.method3162(true)
                 anInt1086 += class348_sub42_sub8.anInt9545
             }
-            class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1003(50.toByte()) as Class348_Sub42_Sub8?)
+            class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1003(50.toByte()) as CacheEntryReference?)
         }
         if (i >= -75) method587(-97)
     }
 
     fun method588(i: Int): Any? {
         anInt1087++
-        var class348_sub42_sub8 = aClass356_1100.method3484(0) as Class348_Sub42_Sub8?
+        var class348_sub42_sub8 = aClass356_1100.method3484(0) as CacheEntryReference?
         if (i != -5052) method577(77)
         while (class348_sub42_sub8 != null) {
             val `object` = class348_sub42_sub8.method3193(119)
             if (`object` == null) {
-                val class348_sub42_sub8_9_: Class348_Sub42_Sub8? = class348_sub42_sub8
-                class348_sub42_sub8 = aClass356_1100.method3482(0) as Class348_Sub42_Sub8?
+                val class348_sub42_sub8_9_: CacheEntryReference? = class348_sub42_sub8
+                class348_sub42_sub8 = aClass356_1100.method3482(0) as CacheEntryReference?
                 class348_sub42_sub8_9_!!.method2715(41.toByte())
                 class348_sub42_sub8_9_.method3162(true)
                 anInt1086 += (class348_sub42_sub8_9_.anInt9545)
@@ -254,7 +254,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
             if (!class42.aBoolean574) return false
             if (!class42.method373(Class75.anInterface17_1244!!, i xor 0x2d.inv())) return false
             if (HeapInfoRecord.aClass356_4934!!.method3480(class42.anInt581.toLong(), i xor 0x1774) != null) return false
-            return Class348_Sub42_Sub9_Sub1.aClass356_10442!!.method3480(class42.anInt596.toLong(), i + -6004) == null
+            return HardKeyedCacheEntryReference.aClass356_10442!!.method3480(class42.anInt596.toLong(), i + -6004) == null
         }
     }
 }

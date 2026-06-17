@@ -19,7 +19,7 @@ class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseLis
     }
 
     private fun method3598(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean) {
-        val class348_sub45_sub1 = Class348_Sub45_Sub1()
+        val class348_sub45_sub1 = TimedRecordAccessorA()
         class348_sub45_sub1.anInt9725 = i_3_
         class348_sub45_sub1.anInt9728 = i_1_
         class348_sub45_sub1.anInt9729 = i
@@ -99,9 +99,9 @@ class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseLis
         return (anInt7419 and 0x1) != 0
     }
 
-    override fun method3596(i: Int): Class348_Sub45? {
+    override fun method3596(i: Int): TimedRecordAccessor? {
         if (i != 0) mouseReleased(null)
-        return aNodeDeque_7418!!.method1997(8) as Class348_Sub45?
+        return aNodeDeque_7418!!.method1997(8) as TimedRecordAccessor?
     }
 
     @Synchronized

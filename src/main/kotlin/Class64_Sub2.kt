@@ -3,16 +3,16 @@ import DetailLevelOptionState.Companion.method1837
 import SimpleToggleOptionState.Companion.method1740
 import ParticleEmitterFactory.Companion.method1885
 import ParticleEmitterFactory.Companion.method1887
-import Class348_Sub16_Sub2.Companion.method2832
-import Class348_Sub23_Sub4.Companion.method2985
-import Class348_Sub40_Sub26.Companion.method3119
-import Class348_Sub40_Sub3.Companion.method3056
-import Class348_Sub40_Sub9.Companion.method3073
-import Class348_Sub42_Sub16.Companion.method3258
-import Class348_Sub42_Sub16_Sub1.Companion.method3262
-import Class348_Sub42_Sub8.Companion.method3194
-import Class348_Sub42_Sub8_Sub2.Companion.method3200
-import Class348_Sub9.Companion.method2783
+import PcmStreamBuffer.Companion.method2832
+import KaraokeSubtitleStream.Companion.method2985
+import ColourKeyTextureNode.Companion.method3119
+import RangeThresholdTextureNode.Companion.method3056
+import EdgeDetectTextureNode.Companion.method3073
+import AsyncResourceRequest.Companion.method3258
+import StreamingResourceRequest.Companion.method3262
+import CacheEntryReference.Companion.method3194
+import HardCacheEntryReference.Companion.method3200
+import CharacterRenderState.Companion.method2783
 import Class368.Companion.method3563
 import Class59_Sub2_Sub1.Companion.method565
 import OutputStream_Sub2.Companion.method135
@@ -87,8 +87,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         if (aClass353Array5524 != null) {
             aHa_Sub3_5419!!.C(!aBoolean5428)
             aHa_Sub3_5419!!.method3866(false, true)
-            aHa_Sub3_5419!!.method3849(47.toByte(), 1, Class348_Sub40_Sub39.aClass70_9485)
-            aHa_Sub3_5419!!.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485)
+            aHa_Sub3_5419!!.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
+            aHa_Sub3_5419!!.method3885(1, true, RenderListTextureNode.aClass70_9485)
             var i_0_ = 0
             while (anInt5406 > i_0_) {
                 val class353 = aClass353Array5524!![i_0_]!!
@@ -97,8 +97,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f = (0.3333333f * ((anIntArray5511!![class353.anInt4349]) - -(anIntArray5511!![class353.anInt4344]) + (anIntArray5511!![class353.anInt4339])).toFloat())
                     val f_1_ = (0.3333333f * ((anIntArray5519!![class353.anInt4344]) + (anIntArray5519!![class353.anInt4349]) + (anIntArray5519!![class353.anInt4339])).toFloat())
                     val f_2_ = (0.3333333f * ((anIntArray5429!![class353.anInt4339]) + (anIntArray5429!![class353.anInt4344]) + (anIntArray5429!![class353.anInt4349])).toFloat())
-                    val f_3_ = (f_2_ * Class348_Sub42_Sub4.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
-                    val f_4_ = (Class348_Sub12.aFloat6752 + (SceneEffectMarker.aFloat6430 * f_2_ + (Class348_Sub20.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
+                    val f_3_ = (f_2_ * ShortMatrixNode.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
+                    val f_4_ = (BoundingBoxNode.aFloat6752 + (SceneEffectMarker.aFloat6430 * f_2_ + (TextureTileRenderer.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
                     val f_5_ = WorldMapRenderer.aFloat4673 + (Class353.aFloat4338 * f_1_ + f * RenderQueueState.aFloat6523 + f_2_ * Renderer.aFloat4582)
                     val f_6_ = ((1.0 / sqrt((f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_)).toDouble())).toFloat() * class353.anInt4347.toFloat())
                     val class101_sub2 = aHa_Sub3_5419!!.method3934(-96)
@@ -277,7 +277,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             anInt5414++
             return method662(i, i_23_, -1, 127, i_22_, bool, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_23_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_23_ + ')'))
         }
     }
 
@@ -317,7 +317,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             method665(41, var_r_Sub1_29_)
             return var_r_Sub1_29_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "nca.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "nca.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
         }
     }
 
@@ -347,12 +347,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             val class101_sub2_34_ = aHa_Sub3_5419!!.aClass101_Sub2_8080
             val f = (class101_sub2_34_.aFloat5729 + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5729) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5710) + (class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5724)))
             val f_35_ = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5724) + ((class101_sub2.aFloat5710 * class101_sub2_34_.aFloat5722) + (class101_sub2.aFloat5729 * class101_sub2_34_.aFloat5708)) + class101_sub2_34_.aFloat5710)
-            Class348_Sub42_Sub4.aFloat9516 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5711) + (class101_sub2.aFloat5732 * class101_sub2_34_.aFloat5700)))
+            ShortMatrixNode.aFloat9516 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5711) + (class101_sub2.aFloat5732 * class101_sub2_34_.aFloat5700)))
             RenderQueueState.aFloat6523 = ((class101_sub2.aFloat5736 * class101_sub2_34_.aFloat5716) + ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5736)))
             BufferToggleState.aFloat3710 = ((class101_sub2.aFloat5722 * class101_sub2_34_.aFloat5722) + (class101_sub2_34_.aFloat5708 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5691))
             Renderer.aFloat4582 = ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5736) + (class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5716))
             DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5704) + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5722)))
-            Class348_Sub20.aFloat6835 = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5736) + ((class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5708 * class101_sub2_34_.aFloat5722)))
+            TextureTileRenderer.aFloat6835 = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5736) + ((class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5708 * class101_sub2_34_.aFloat5722)))
             Class55.aFloat1010 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5736) + ((class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5711)))
             val f_36_ = (class101_sub2_34_.aFloat5724 + ((class101_sub2_34_.aFloat5716 * class101_sub2.aFloat5724) + ((class101_sub2_34_.aFloat5736 * class101_sub2.aFloat5729) + (class101_sub2.aFloat5710 * (class101_sub2_34_.aFloat5691)))))
             SceneEffectMarker.aFloat6430 = ((class101_sub2_34_.aFloat5722 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5732))
@@ -379,35 +379,35 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             val i_54_ = i_48_ + (i_45_ shl i_30_)
             OpenGlTerrainTile.anIntArray8269!![0] = i_50_
             val i_55_ = (i_46_ shl i_30_) + i_49_
-            Class348_Sub42_Sub12.anIntArray9612!![0] = i_51_
+            ContactEntry.anIntArray9612!![0] = i_51_
             OpenGlTerrainTile.anIntArray8269!![1] = i_53_
             Class363.anIntArray4463!![0] = i_52_
-            Class348_Sub42_Sub12.anIntArray9612!![1] = i_51_
+            ContactEntry.anIntArray9612!![1] = i_51_
             Class363.anIntArray4463!![1] = i_52_
             OpenGlTerrainTile.anIntArray8269!![2] = i_50_
-            Class348_Sub42_Sub12.anIntArray9612!![2] = i_54_
+            ContactEntry.anIntArray9612!![2] = i_54_
             Class363.anIntArray4463!![2] = i_52_
             OpenGlTerrainTile.anIntArray8269!![3] = i_53_
-            Class348_Sub42_Sub12.anIntArray9612!![3] = i_54_
+            ContactEntry.anIntArray9612!![3] = i_54_
             Class363.anIntArray4463!![3] = i_52_
             OpenGlTerrainTile.anIntArray8269!![4] = i_50_
-            Class348_Sub42_Sub12.anIntArray9612!![4] = i_51_
+            ContactEntry.anIntArray9612!![4] = i_51_
             Class363.anIntArray4463!![4] = i_55_
             OpenGlTerrainTile.anIntArray8269!![5] = i_53_
-            Class348_Sub42_Sub12.anIntArray9612!![5] = i_51_
+            ContactEntry.anIntArray9612!![5] = i_51_
             Class363.anIntArray4463!![5] = i_55_
             OpenGlTerrainTile.anIntArray8269!![6] = i_50_
-            Class348_Sub42_Sub12.anIntArray9612!![6] = i_54_
+            ContactEntry.anIntArray9612!![6] = i_54_
             OpenGlTerrainTile.anIntArray8269!![7] = i_53_
             Class363.anIntArray4463!![6] = i_55_
-            Class348_Sub42_Sub12.anIntArray9612!![7] = i_54_
+            ContactEntry.anIntArray9612!![7] = i_54_
             Class363.anIntArray4463!![7] = i_55_
             for (i_56_ in 0..7) {
                 val f_57_ = OpenGlTerrainTile.anIntArray8269!![i_56_].toFloat()
                 val f_58_ = Class363.anIntArray4463!![i_56_].toFloat()
-                val f_59_ = Class348_Sub42_Sub12.anIntArray9612!![i_56_].toFloat()
-                val f_60_ = (f_57_ * Class348_Sub20.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + SceneEffectMarker.aFloat6430 * f_58_ + f_35_)
-                val f_61_ = (Class55.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntity.aFloat10199 + f_58_ * Class348_Sub42_Sub4.aFloat9516 + f)
+                val f_59_ = ContactEntry.anIntArray9612!![i_56_].toFloat()
+                val f_60_ = (f_57_ * TextureTileRenderer.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + SceneEffectMarker.aFloat6430 * f_58_ + f_35_)
+                val f_61_ = (Class55.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntity.aFloat10199 + f_58_ * ShortMatrixNode.aFloat9516 + f)
                 var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (Class353.aFloat4338 * f_59_ + RenderQueueState.aFloat6523 * f_57_))
                 if (f_62_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                     if (i_31_ > 0) f_62_ = i_31_.toFloat()
@@ -431,8 +431,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f_67_ = anIntArray5519!![i_65_].toFloat()
                     val f_68_ = anIntArray5511!![i_65_].toFloat()
                     var f_69_ = (Renderer.aFloat4582 * f_66_ + (f_68_ * RenderQueueState.aFloat6523 + Class353.aFloat4338 * f_67_) + f_36_)
-                    val f_70_ = f + (DynamicSceneObjectEntity.aFloat10199 * f_67_ + Class55.aFloat1010 * f_68_ + f_66_ * Class348_Sub42_Sub4.aFloat9516)
-                    val f_71_ = (SceneEffectMarker.aFloat6430 * f_66_ + (f_68_ * Class348_Sub20.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
+                    val f_70_ = f + (DynamicSceneObjectEntity.aFloat10199 * f_67_ + Class55.aFloat1010 * f_68_ + f_66_ * ShortMatrixNode.aFloat9516)
+                    val f_71_ = (SceneEffectMarker.aFloat6430 * f_66_ + (f_68_ * TextureTileRenderer.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
                     if (f_69_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                         if (i_31_ > 0) f_69_ = i_31_.toFloat()
                         val i_72_ = (i_42_.toFloat() * f_70_ / f_69_ + (aHa_Sub3_5419!!.anInt8094).toFloat()).toInt()
@@ -476,7 +476,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -520,7 +520,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 if (aBufferToggleState_5482 != null && !aBufferToggleState_5482!!.method2197((-74).toByte())) aBoolean5402 = true
                 else aShortArray5486 = null
             }
-            if (aByteArray5515 != null && !Class348_Sub40_Sub29.method3124(anInt5472, (-119).toByte(), anInt5463)) {
+            if (aByteArray5515 != null && !TextureMapImageNode.method3124(anInt5472, (-119).toByte(), anInt5463)) {
                 if (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-20).toByte())) aByteArray5515 = null
                 else aBoolean5402 = true
             }
@@ -816,7 +816,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.B(" + i + ',' + (if (var_r_Sub1 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.B(" + i + ',' + (if (var_r_Sub1 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -893,7 +893,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
         }
     }
 
@@ -996,7 +996,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 } else class64_sub2_154_.aByteArray5515 = class64_sub2_153_.aByteArray5515
                 for (i_163_ in 0..<anInt5478) class64_sub2_154_.aByteArray5515!![i_163_] = aByteArray5515!![i_163_]
             } else class64_sub2_154_.aByteArray5515 = aByteArray5515
-            if (Class348_Sub42_Sub8_Sub2.method3200(i, anInt5472, (-75).toByte())) {
+            if (HardCacheEntryReference.method3200(i, anInt5472, (-75).toByte())) {
                 class64_sub2_154_.aBufferToggleState_5482 = class64_sub2_153_!!.aBufferToggleState_5482
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3709 = true
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3714 = aBufferToggleState_5482!!.aBoolean3714
@@ -1143,7 +1143,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val i_175_ = anInt5406
                     class64_sub2_153_.aCameraOrModelTransformArray5442 = arrayOfNulls<CameraOrModelTransform>(i_175_)
                     class64_sub2_154_.aCameraOrModelTransformArray5442 = class64_sub2_153_.aCameraOrModelTransformArray5442
-                    for (i_176_ in 0..<anInt5406) class64_sub2_154_.aCameraOrModelTransformArray5442!![i_176_] = (aCameraOrModelTransformArray5442!![i_176_]!!.method2649(Class348_Sub21.method2955(i_156_, 26792)))
+                    for (i_176_ in 0..<anInt5406) class64_sub2_154_.aCameraOrModelTransformArray5442!![i_176_] = (aCameraOrModelTransformArray5442!![i_176_]!!.method2649(CameraSplineNode.method2955(i_156_, 26792)))
                 }
             } else class64_sub2_154_.aCameraOrModelTransformArray5442 = aCameraOrModelTransformArray5442
             if (aBoolean5477) {
@@ -1175,7 +1175,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             class64_sub2_154_.aShortArray5470 = aShortArray5470
             return class64_sub2_154_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.U(" + bool + ',' + (if (class64_sub2_153_ != null) "{...}" else "null") + ',' + (if (class64_sub2_154_ != null) "{...}" else "null") + ',' + i + ',' + bool_155_ + ',' + i_156_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.U(" + bool + ',' + (if (class64_sub2_153_ != null) "{...}" else "null") + ',' + (if (class64_sub2_154_ != null) "{...}" else "null") + ',' + i + ',' + bool_155_ + ',' + i_156_ + ')'))
         }
     }
 
@@ -1227,7 +1227,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "nca.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "nca.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1275,9 +1275,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     }
                     if (!(aHa_Sub3_5419!!.aFloat8158 <= f_187_ / i.toFloat()) && !(f_186_ / i.toFloat() <= aHa_Sub3_5419!!.aFloat8126)) {
                         BufferToggleState.aFloat3710 = ((class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_180_.aFloat5722)) + ((class101_sub2_180_.aFloat5700) * (class101_sub2.aFloat5708))))
-                        Class348_Sub12.aFloat6752 = (class101_sub2.aFloat5710 + ((class101_sub2.aFloat5708 * (class101_sub2_180_.aFloat5729)) + ((class101_sub2_180_.aFloat5710) * (class101_sub2.aFloat5722)) + ((class101_sub2_180_.aFloat5724) * (class101_sub2.aFloat5732))))
-                        val f_188_ = (Class348_Sub12.aFloat6752 + BufferToggleState.aFloat3710 * anInt5461.toFloat())
-                        val f_189_ = (anInt5509.toFloat() * BufferToggleState.aFloat3710 + Class348_Sub12.aFloat6752)
+                        BoundingBoxNode.aFloat6752 = (class101_sub2.aFloat5710 + ((class101_sub2.aFloat5708 * (class101_sub2_180_.aFloat5729)) + ((class101_sub2_180_.aFloat5710) * (class101_sub2.aFloat5722)) + ((class101_sub2_180_.aFloat5724) * (class101_sub2.aFloat5732))))
+                        val f_188_ = (BoundingBoxNode.aFloat6752 + BufferToggleState.aFloat3710 * anInt5461.toFloat())
+                        val f_189_ = (anInt5509.toFloat() * BufferToggleState.aFloat3710 + BoundingBoxNode.aFloat6752)
                         val f_190_: Float
                         val f_191_: Float
                         if (f_189_ < f_188_) {
@@ -1290,20 +1290,20 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         if (!(f_191_ / i.toFloat() >= aHa_Sub3_5419!!.aFloat8185) && !(f_190_ / i.toFloat() <= aHa_Sub3_5419!!.aFloat8103)) {
                             if (class318_sub3 != null || aClass353Array5524 != null) {
                                 Class55.aFloat1010 = (((class101_sub2.aFloat5700) * (class101_sub2_180_.aFloat5708)) + ((class101_sub2.aFloat5711) * class101_sub2_180_.aFloat5711) + ((class101_sub2.aFloat5704) * class101_sub2_180_.aFloat5736))
-                                Class348_Sub42_Sub4.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2_180_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5704)))
+                                ShortMatrixNode.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2_180_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5704)))
                                 SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
                                 RenderQueueState.aFloat6523 = (((class101_sub2_180_.aFloat5736) * (class101_sub2.aFloat5716)) + (((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5708) + ((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5711))))
-                                Class348_Sub20.aFloat6835 = (((class101_sub2_180_.aFloat5711) * (class101_sub2.aFloat5708)) + ((class101_sub2_180_.aFloat5708) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5736))
+                                TextureTileRenderer.aFloat6835 = (((class101_sub2_180_.aFloat5711) * (class101_sub2.aFloat5708)) + ((class101_sub2_180_.aFloat5708) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5736))
                                 Renderer.aFloat4582 = (((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5732) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5716)))
                             }
                             if (class318_sub3 != null) {
                                 val i_192_ = anInt5467 + anInt5507 shr 1
                                 val i_193_ = anInt5418 + anInt5443 shr 1
-                                val i_194_ = (ParticleProcessor.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
-                                val i_195_ = (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (SceneEffectMarker.aFloat6430 * i_193_.toFloat())).toInt()
+                                val i_194_ = (ParticleProcessor.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
+                                val i_195_ = (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (SceneEffectMarker.aFloat6430 * i_193_.toFloat())).toInt()
                                 val i_196_ = ((anInt5461.toFloat() * Class353.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
-                                val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_193_.toFloat())).toInt()
-                                val i_198_ = ((SceneEffectMarker.aFloat6430 * i_193_.toFloat()) + (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
+                                val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_193_.toFloat())).toInt()
+                                val i_198_ = ((SceneEffectMarker.aFloat6430 * i_193_.toFloat()) + (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
                                 class318_sub3.anInt6402 = ((i_195_ * aHa_Sub3_5419!!.anInt8134 / i) + aHa_Sub3_5419!!.anInt8130)
                                 class318_sub3.anInt6405 = (aHa_Sub3_5419!!.anInt8094 - -(i_194_ * (aHa_Sub3_5419!!.anInt8129) / i))
                                 class318_sub3.anInt6404 = (aHa_Sub3_5419!!.anInt8130 - -(aHa_Sub3_5419!!.anInt8134 * i_198_ / i))
@@ -1324,7 +1324,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_179_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_179_ + ')'))
         }
     }
 
@@ -1341,10 +1341,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     i_209_ = i_210_
                     break
                 }
-                if (Class348_Sub40_Sub37.aLongArray9465!![i_210_] == l) return (-1 + i_211_).toShort()
+                if (BoxBlurTextureNode.aLongArray9465!![i_210_] == l) return (-1 + i_211_).toShort()
             }
             aShortArray5439!![i_209_] = (1 + anInt5475).toShort()
-            Class348_Sub40_Sub37.aLongArray9465!![i_209_] = l
+            BoxBlurTextureNode.aLongArray9465!![i_209_] = l
             aShortArray5416!![anInt5475] = i_200_.toShort()
             aShortArray5470!![anInt5475] = i_204_.toShort()
             aShortArray5493!![anInt5475] = i_202_.toShort()
@@ -1355,7 +1355,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             aFloatArray5506!![anInt5475] = f_205_
             return (anInt5475++).toShort()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.SA(" + i + ',' + l + ',' + i_200_ + ',' + i_201_ + ',' + i_202_ + ',' + i_203_ + ',' + f + ',' + i_204_ + ',' + f_205_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_206_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.SA(" + i + ',' + l + ',' + i_200_ + ',' + i_201_ + ',' + i_202_ + ',' + i_203_ + ',' + f + ',' + i_204_ + ',' + f_205_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_206_ + ')'))
         }
     }
 
@@ -1710,7 +1710,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ',' + i_214_ + ',' + i_215_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ',' + i_214_ + ',' + i_215_ + ',' + bool + ')'))
         }
     }
 
@@ -1750,9 +1750,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     }
                     if (!(aHa_Sub3_5419!!.aFloat8158 <= f_314_ / f_309_) && !(f_313_ / f_309_ <= aHa_Sub3_5419!!.aFloat8126)) {
                         BufferToggleState.aFloat3710 = ((class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_307_.aFloat5722)) + (class101_sub2.aFloat5708 * (class101_sub2_307_.aFloat5700))))
-                        Class348_Sub12.aFloat6752 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5732) + (((class101_sub2_307_.aFloat5729) * (class101_sub2.aFloat5708)) + ((class101_sub2_307_.aFloat5710) * (class101_sub2.aFloat5722))) + class101_sub2.aFloat5710)
-                        val f_315_ = (anInt5461.toFloat() * BufferToggleState.aFloat3710 + Class348_Sub12.aFloat6752)
-                        val f_316_ = (BufferToggleState.aFloat3710 * anInt5509.toFloat() + Class348_Sub12.aFloat6752)
+                        BoundingBoxNode.aFloat6752 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5732) + (((class101_sub2_307_.aFloat5729) * (class101_sub2.aFloat5708)) + ((class101_sub2_307_.aFloat5710) * (class101_sub2.aFloat5722))) + class101_sub2.aFloat5710)
+                        val f_315_ = (anInt5461.toFloat() * BufferToggleState.aFloat3710 + BoundingBoxNode.aFloat6752)
+                        val f_316_ = (BufferToggleState.aFloat3710 * anInt5509.toFloat() + BoundingBoxNode.aFloat6752)
                         val f_317_: Float
                         val f_318_: Float
                         if (f_316_ < f_315_) {
@@ -1767,8 +1767,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 RenderQueueState.aFloat6523 = (((class101_sub2.aFloat5716) * (class101_sub2_307_.aFloat5736)) + ((class101_sub2_307_.aFloat5711 * (class101_sub2.aFloat5736)) + ((class101_sub2.aFloat5691) * (class101_sub2_307_.aFloat5708))))
                                 SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5716))
                                 Class55.aFloat1010 = (((class101_sub2.aFloat5704) * (class101_sub2_307_.aFloat5736)) + (((class101_sub2.aFloat5700) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5711))))
-                                Class348_Sub42_Sub4.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2.aFloat5704) * class101_sub2_307_.aFloat5716))
-                                Class348_Sub20.aFloat6835 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5711)) + ((class101_sub2.aFloat5722) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5736))
+                                ShortMatrixNode.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2.aFloat5704) * class101_sub2_307_.aFloat5716))
+                                TextureTileRenderer.aFloat6835 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5711)) + ((class101_sub2.aFloat5722) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5736))
                                 Renderer.aFloat4582 = (((class101_sub2_307_.aFloat5716) * (class101_sub2.aFloat5716)) + ((class101_sub2_307_.aFloat5704 * (class101_sub2.aFloat5736)) + (class101_sub2_307_.aFloat5732 * (class101_sub2.aFloat5691))))
                             }
                             if (class318_sub3 != null) {
@@ -1776,16 +1776,16 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 var bool_319_ = true
                                 val i_320_ = anInt5507 - -anInt5467 shr 1
                                 val i_321_ = anInt5418 + anInt5443 shr 1
-                                val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_321_.toFloat())).toInt()
-                                val i_323_ = ((SceneEffectMarker.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * Class348_Sub20.aFloat6835) + Class348_Sub12.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
+                                val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_321_.toFloat())).toInt()
+                                val i_323_ = ((SceneEffectMarker.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * TextureTileRenderer.aFloat6835) + BoundingBoxNode.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
                                 val i_324_ = (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523) + (anInt5461.toFloat() * Class353.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_324_) bool = true
                                 else {
                                     class318_sub3.anInt6402 = (aHa_Sub3_5419!!.anInt8130 - -(i_323_ * (aHa_Sub3_5419!!.anInt8134) / i_324_))
                                     class318_sub3.anInt6405 = ((aHa_Sub3_5419!!.anInt8129 * i_322_ / i_324_) + (aHa_Sub3_5419!!.anInt8094))
                                 }
-                                val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
-                                val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (Class348_Sub12.aFloat6752 + (i_320_.toFloat() * (Class348_Sub20.aFloat6835))) + (i_321_.toFloat() * SceneEffectMarker.aFloat6430)).toInt()
+                                val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
+                                val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (BoundingBoxNode.aFloat6752 + (i_320_.toFloat() * (TextureTileRenderer.aFloat6835))) + (i_321_.toFloat() * SceneEffectMarker.aFloat6430)).toInt()
                                 val i_327_ = ((anInt5509.toFloat() * Class353.aFloat4338) + (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_327_) bool = true
                                 else {
@@ -1825,7 +1825,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1981,7 +1981,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 if (modelDefinition.aShortArray1856 != null) aShortArray5432 = ShortArray(anInt5478)
                 aShortArray5470 = ShortArray(i_354_)
                 aShortArray5416 = ShortArray(i_354_)
-                Class348_Sub40_Sub37.aLongArray9465 = LongArray(i_354_)
+                BoxBlurTextureNode.aLongArray9465 = LongArray(i_354_)
                 aShortArray5495 = ShortArray(anInt5478)
                 aShort5452 = i_334_.toShort()
                 aByteArray5515 = ByteArray(anInt5478)
@@ -2325,7 +2325,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     anIntArray5473!![i_450_] = i_455_ + -i_454_ + 1
                     anIntArray5404!![++i_450_] = anInt5516
                 }
-                Class348_Sub40_Sub37.aLongArray9465 = null
+                BoxBlurTextureNode.aLongArray9465 = null
                 aShortArray5470 = CalendarUtil.method2639((-111).toByte(), aShortArray5470!!, anInt5475)
                 aShortArray5416 = CalendarUtil.method2639(26.toByte(), aShortArray5416!!, anInt5475)
                 aShortArray5493 = CalendarUtil.method2639(68.toByte(), aShortArray5493!!, anInt5475)
@@ -2360,7 +2360,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     i_464_++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_334_ + ',' + i_335_ + ',' + i_336_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_334_ + ',' + i_335_ + ',' + i_336_ + ')'))
             }
             break
         } while (false)
@@ -2423,7 +2423,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             anInt5517++
             return method662(i, i_479_, i_480_, 126, i_478_, bool, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'))
         }
     }
 
@@ -2594,7 +2594,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.PA(" + (if (class64 != null) "{...}" else "null") + ',' + i + ',' + i_483_ + ',' + i_484_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.PA(" + (if (class64 != null) "{...}" else "null") + ',' + i + ',' + i_483_ + ',' + i_484_ + ',' + bool + ')'))
         }
     }
 
@@ -2703,7 +2703,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 aBoolean5477 = false
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.p(" + i + ',' + i_534_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_535_ != null) "{...}" else "null") + ',' + i_536_ + ',' + i_537_ + ',' + i_538_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.p(" + i + ',' + i_534_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_535_ != null) "{...}" else "null") + ',' + i_536_ + ',' + i_537_ + ',' + i_538_ + ')'))
         }
     }
 
@@ -3335,7 +3335,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_590_ + ',' + i_591_ + ',' + i_592_ + ',' + bool + ',' + i_593_ + ',' + (if (is_594_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_590_ + ',' + i_591_ + ',' + i_592_ + ',' + bool + ',' + i_593_ + ',' + (if (is_594_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -3347,11 +3347,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             aHa_Sub3_5419 = var_ha_Sub3
             if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aBufferToggleState_5520 = BufferToggleState(CompassSmoother.method2015(anInt5463, anInt5472, 7))
             if (bool || method1837(anInt5472, 102, anInt5463)) aBufferToggleState_5460 = BufferToggleState(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
-            if (bool || HuffmanCodec.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(Class348_Sub42_Sub8_Sub2.method3200(anInt5463, anInt5472, (-82).toByte()))
+            if (bool || HuffmanCodec.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(HardCacheEntryReference.method3200(anInt5463, anInt5472, (-82).toByte()))
             if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aBufferToggleState_5424 = BufferToggleState(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
-            if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(Class348_Sub9.method2783(anInt5472, (-97).toByte(), anInt5463))
+            if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(CharacterRenderState.method2783(anInt5472, (-97).toByte(), anInt5463))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))
         }
     }
 
@@ -3489,22 +3489,22 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         @JvmStatic
         fun method661(i: Byte) {
             anInt5466++
-            var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-93) as Class348_Sub42_Sub13?)
+            var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-93) as ContactList?)
             while (class348_sub42_sub13 != null) {
                 if (class348_sub42_sub13.anInt9615 > 1) {
                     class348_sub42_sub13.anInt9615 = 0
-                    KeyboardLayoutCache.aClass60_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).aLong9600, (-124).toByte())
+                    KeyboardLayoutCache.aClass60_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aLong9600, (-124).toByte())
                     class348_sub42_sub13.aLinkedNodeListIterator_9621.method1009(2110355138)
                 }
-                class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(46.toByte()) as Class348_Sub42_Sub13?)
+                class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(46.toByte()) as ContactList?)
             }
             Class8.anInt166 = 0
             if (i < 92) method661(114.toByte())
             Class73.anInt4776 = 0
-            Class348_Sub40_Sub4.aNodeDeque_9111!!.method1996(115)
-            Class348_Sub42_Sub12.aClass356_9603!!.method3481(0)
+            SourceRowTextureNode.aNodeDeque_9111!!.method1996(115)
+            ContactEntry.aClass356_9603!!.method3481(0)
             ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)
-            method3743(6.toByte(), Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144)
+            method3743(6.toByte(), FlipTextureNode.aClass348_Sub42_Sub12_9144)
         }
 
         @JvmStatic

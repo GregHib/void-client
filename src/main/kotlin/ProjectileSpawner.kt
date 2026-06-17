@@ -21,13 +21,13 @@ object ProjectileSpawner {
     }
 
     @JvmStatic
-    fun method1478(bool: Boolean): Class348_Sub47? {
+    fun method1478(bool: Boolean): OutgoingPacketNode? {
         anInt2673++
         val class348_sub47 = ParticleConfigParser.method2273((-103).toByte())
         if (bool != true) return null
         class348_sub47!!.anInt7122 = 0
         class348_sub47.aClass351_7118 = null
-        class348_sub47.aClass348_Sub49_Sub2_7116 = Class348_Sub49_Sub2(5000)
+        class348_sub47.aClass348_Sub49_Sub2_7116 = CipheredPacketBuffer(5000)
         return class348_sub47
     }
 
@@ -35,12 +35,12 @@ object ProjectileSpawner {
         anInt2675++
         val i_4_ = i_2_ - -ArbVertexProgram.regionTileX
         val i_5_ = Class90.regionTileY + i
-        if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null && i_2_ >= 0 && i >= 0 && Class367_Sub4.anInt7319 > i_2_ && Class348_Sub40_Sub3.anInt9109 > i && (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 0 || i_3_ == (LocalPlayerState.aPlayer_1907!!.plane).toInt())) {
+        if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null && i_2_ >= 0 && i >= 0 && Class367_Sub4.anInt7319 > i_2_ && RangeThresholdTextureNode.anInt9109 > i && (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 0 || i_3_ == (LocalPlayerState.aPlayer_1907!!.plane).toInt())) {
             val l = (i_5_ shl 14 or (i_3_ shl 28) or i_4_).toLong()
-            val class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3480(l, -6008) as? Class348_Sub37?)
+            val class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3480(l, -6008) as? HashTableContainer?)
             if (class348_sub37 == null) NpcEntityUpdater.method2110(i_3_, i_2_, i)
             else {
-                val class348_sub34 = class348_sub37.aNodeDeque_6998.method1995(4) as? Class348_Sub34?
+                val class348_sub34 = class348_sub37.aNodeDeque_6998.method1995(4) as? IntPair?
                 if (class348_sub34 == null) NpcEntityUpdater.method2110(i_3_, i_2_, i)
                 else {
                     var class318_sub1_sub2_sub1 = (NpcEntityUpdater.method2110(i_3_, i_2_, i) as? DynamicSceneObjectEntity?)
@@ -53,13 +53,13 @@ object ProjectileSpawner {
                     if (i_1_ >= -112) aBoolean2674 = true
                     class318_sub1_sub2_sub1.anInt10185 = class348_sub34.anInt6971
                     while (true) {
-                        val class348_sub34_6_ = (class348_sub37.aNodeDeque_6998.method1990(55.toByte()) as? Class348_Sub34?)
+                        val class348_sub34_6_ = (class348_sub37.aNodeDeque_6998.method1990(55.toByte()) as? IntPair?)
                         if (class348_sub34_6_ == null) break
                         if (class348_sub34_6_.anInt6973 != class318_sub1_sub2_sub1.anInt10181) {
                             class318_sub1_sub2_sub1.anInt10189 = (class348_sub34_6_.anInt6973)
                             class318_sub1_sub2_sub1.anInt10190 = (class348_sub34_6_.anInt6971)
                             while (true) {
-                                val class348_sub34_7_ = (class348_sub37.aNodeDeque_6998.method1990(55.toByte()) as? Class348_Sub34?)
+                                val class348_sub34_7_ = (class348_sub37.aNodeDeque_6998.method1990(55.toByte()) as? IntPair?)
                                 if (class348_sub34_7_ == null) break
                                 if ((class318_sub1_sub2_sub1.anInt10181 != (class348_sub34_7_.anInt6973)) && ((class318_sub1_sub2_sub1.anInt10189) != (class348_sub34_7_.anInt6973))) {
                                     class318_sub1_sub2_sub1.anInt10180 = (class348_sub34_7_.anInt6973)

@@ -153,7 +153,7 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
         @JvmField
         var anInt4742: Int = 0
         @JvmField
-        var aClass348_Sub16_Sub3_4743: Class348_Sub16_Sub3? = null
+        var aClass348_Sub16_Sub3_4743: MidiSequencePlayer? = null
         @JvmField
         var aStringArray4744: Array<String?>? = arrayOfNulls<String>(200)
         @JvmField

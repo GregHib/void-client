@@ -1,5 +1,5 @@
 import SoftwareSpriteRaster.Companion.method960
-import Class348_Sub40_Sub17_Sub1.Companion.method3093
+import SpriteRgbTextureNode.Companion.method3093
 import Class40.Companion.method368
 import kotlin.math.max
 
@@ -41,16 +41,16 @@ class HeadIconRenderer {
                 anInt2064++
                 if (abstractModelRenderer != null) {
                     val i_6_: Int
-                    if (Class348_Sub40_Sub21.anInt9282 != 4) i_6_ = (0x3fff and ResourceProvider.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483)
+                    if (WeaveTextureNode.anInt9282 != 4) i_6_ = (0x3fff and ResourceProvider.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483)
                     else i_6_ = 0x3fff and ResourceProvider.aFloat3938.toInt()
                     val i_7_ = 10 + max(class46!!.anInt709 / 2, class46.anInt789 / i_4_)
                     val i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_)
                     if (i_7_ * i_7_ >= i_8_) {
                         var i_9_ = Class70.anIntArray1207!![i_6_]
                         var i_10_ = Class70.anIntArray1204!![i_6_]
-                        if (Class348_Sub40_Sub21.anInt9282 != 4) {
-                            i_10_ = 256 * i_10_ / (Class348_Sub49_Sub1.anInt9750 - -256)
-                            i_9_ = i_9_ * 256 / (Class348_Sub49_Sub1.anInt9750 - -256)
+                        if (WeaveTextureNode.anInt9282 != 4) {
+                            i_10_ = 256 * i_10_ / (FloatBuffer.anInt9750 - -256)
+                            i_9_ = i_9_ * 256 / (FloatBuffer.anInt9750 - -256)
                         }
                         val i_11_ = i_5_ * i_10_ + i_3_ * i_9_ shr 14
                         val i_12_ = i_3_ * i_10_ + -(i_9_ * i_5_) shr 14
@@ -58,7 +58,7 @@ class HeadIconRenderer {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ok.C(" + i + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ok.C(" + i + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
             }
         }
 
@@ -84,7 +84,7 @@ class HeadIconRenderer {
                 BloomGraphicsOptionState.anInt5969 = if (Loader.skipLobby) 2 else 1
                 LocalPlayerState.method1138(string, false, string_16_, (-95).toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ok.E(" + (if (string != null) "{...}" else "null") + ',' + (if (string_16_ != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ok.E(" + (if (string != null) "{...}" else "null") + ',' + (if (string_16_ != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

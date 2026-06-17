@@ -42,7 +42,7 @@ class GlIndexBufferArb internal constructor(class377: Class377, class68: Class68
         try {
             aClass68_8504 = class68
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mw.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("mw.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 

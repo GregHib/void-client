@@ -35,7 +35,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
                 }
                 return NativeSprite(var_ha_Sub2, i, i_2_, is_3_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kg.C(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i_2_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("kg.C(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i_2_ + ')'))
             }
         }
 
@@ -53,10 +53,10 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
             anInt4598++
             if (i != 1024) method4012(null, 68.toByte())
             Client.anInt5171 = 0
-            Class348_Sub1_Sub1.anInt8808 = 0
+            TerrainTileShape.anInt8808 = 0
             GzipDecompressor.aDoublyLinkedNodeList_2077 = DoublyLinkedNodeList()
             DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103 = arrayOfNulls<ProjectileNode>(1024)
-            Class348_Sub51.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>((Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637]) + 1)
+            DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>((KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637]) + 1)
             GlTexture2D.anInt8550 = 0
             Class376.anInt4559 = 0
             CacheArchiveIndex.method1072(class45, (-107).toByte())
@@ -66,7 +66,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
         @JvmStatic
         fun method4012(`is`: ByteArray?, i: Byte) {
             anInt4605++
-            val class348_sub49 = Class348_Sub49(`is`)
+            val class348_sub49 = Buffer(`is`)
             val i_7_ = -91 % ((i - -51) / 42)
             var bool = false
             while (true) {
@@ -89,7 +89,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
                         MapSceneTileDefinition.anIntArray1786 = IntArray(LocalPlayerState.anInt1905)
                         DualMaterialContainer.anIntArray1636 = IntArray(LocalPlayerState.anInt1905)
                     }
-                } else Class348_Sub31.anInt6923 = class348_sub49.readUnsignedShort(842397944)
+                } else AbstractFrameBufferSurface.anInt6923 = class348_sub49.readUnsignedShort(842397944)
             }
             if (!bool) {
                 if (MapSceneTileDefinition.anIntArray1786 == null) {

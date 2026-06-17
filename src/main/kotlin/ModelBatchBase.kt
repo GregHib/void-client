@@ -50,7 +50,7 @@ abstract class ModelBatchBase {
             Class367_Sub9.anInt7379 = 3
             ClientLoadStateMachine.anInt2173 = i_0_
             SkeletalAnimFrameLoader.anInt481 = -1
-            Class348_Sub40_Sub30.anInt9399 = i
+            HslAdjustTextureNode.anInt9399 = i
             anInt1898++
         }
 
@@ -58,10 +58,10 @@ abstract class ModelBatchBase {
         fun method1130(var_renderNode: RenderNode?, i: Int, i_1_: Int, i_2_: Int, bools: BooleanArray?): Boolean {
             var bool = false
             if (NativeSprite.aTerrainTileArray5191 != SoundCacheState.aTerrainTileArray4142) {
-                val i_3_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3986(i_1_, i_2_, (-109).toByte())
+                val i_3_ = TerrainTileShape.aTerrainTileArray8801!![i]!!.method3986(i_1_, i_2_, (-109).toByte())
                 var i_4_ = 0
                 while ( /**/i_4_ <= i) {
-                    val var_s = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]
+                    val var_s = TerrainTileShape.aTerrainTileArray8801!![i_4_]
                     if (var_s != null) {
                         val i_5_ = i_3_ - var_s.method3986(i_1_, i_2_, 72.toByte())
                         if (bools != null) {

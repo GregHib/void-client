@@ -40,7 +40,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         locTypeConfig = LocTypeConfig()
         locTypeConfig.anInt3573 = i
         locTypeConfig.aLocDefinitionCache_3562 = this
-        if (`is` != null) locTypeConfig.method2070(true, Class348_Sub49(`is`))
+        if (`is` != null) locTypeConfig.method2070(true, Buffer(`is`))
         locTypeConfig.method2067(-4860)
         synchronized(aClass60_3433) {
             aClass60_3433.method582(locTypeConfig, i.toLong(), (-111).toByte())
@@ -60,7 +60,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             aClass45_3442 = class45
             this.anInt3429 = aClass45_3442!!.method407(0, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("cb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -111,21 +111,21 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
         fun method2035(i: Int, i_4_: Int) {
             anInt3445++
-            val i_5_ = Class367_Sub11.anInt7396 - Class348_Sub49_Sub1.anInt9751
+            val i_5_ = Class367_Sub11.anInt7396 - FloatBuffer.anInt9751
             if (i_5_ >= 100) {
-                Class348_Sub40_Sub21.anInt9282 = 1
+                WeaveTextureNode.anInt9282 = 1
                 SequencedWallEntity.anInt10163 = -1
                 Class9.anInt167 = SequencedWallEntity.anInt10163
             } else {
                 var i_6_ = Class76.aFloat1287.toInt()
-                if (i_6_ < Class348_Sub35.anInt6979 shr 8) i_6_ = Class348_Sub35.anInt6979 shr 8
+                if (i_6_ < IntKeyNode.anInt6979 shr 8) i_6_ = IntKeyNode.anInt6979 shr 8
                 if (SpotAnimDefinition.aBooleanArray2374!![4] && ModelHeaderCache.anIntArray3273!![4] - -128 > i_6_) i_6_ = ModelHeaderCache.anIntArray3273!![4] + 128
                 val i_7_ = 0x3fff and ResourceProvider.aFloat3938.toInt() + RenderableGroup.anInt5016
                 method268(i_6_, -200 + (CollisionMapAccessor.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_7_, AsyncTaskHandle.anInt2578, i, -19360, FrameStatsReset.anInt5799, 3 * (i_6_ shr 3) + 600 shl 2)
                 val f = (-(((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)).toFloat() / 1000000.0f) + 1.0f)
                 GlslMaterialPass.anInt6246 = (SequencedGroundDecor.anInt10047.toFloat() + f * (-SequencedGroundDecor.anInt10047 + GlslMaterialPass.anInt6246).toFloat()).toInt()
                 ParticleSystemRenderer.anInt3855 = ((-Class5_Sub3.anInt8368 + ParticleSystemRenderer.anInt3855).toFloat() * f + Class5_Sub3.anInt8368.toFloat()).toInt()
-                Class348_Sub42_Sub19.anInt9701 = (DataHolder.anInt3662.toFloat() + (Class348_Sub42_Sub19.anInt9701 - DataHolder.anInt3662).toFloat() * f).toInt()
+                MinimapAreaMarkerNode.anInt9701 = (DataHolder.anInt3662.toFloat() + (MinimapAreaMarkerNode.anInt9701 - DataHolder.anInt3662).toFloat() * f).toInt()
                 Class59_Sub2_Sub2.anInt8685 = (Class359.anInt4424.toFloat() + f * (-Class359.anInt4424 + Class59_Sub2_Sub2.anInt8685).toFloat()).toInt()
                 var i_8_ = Class5.anInt4638 - CameraConfigDefinition.anInt3253
                 if (i_8_ <= 8192) {
@@ -153,7 +153,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     val class10 = GlTextureCubeMap.aParticleEmitterNodeArray8531s!![i_9_]
                     if (class10!!.aByte180.toInt() == 3) {
                         if (class10.aClass348_Sub16_Sub5_176 == null) class10.anInt188 = -2147483648
-                        else Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class10.aClass348_Sub16_Sub5_176!!)
+                        else SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class10.aClass348_Sub16_Sub5_176!!)
                     }
                 }
                 anInt3446++

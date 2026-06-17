@@ -53,7 +53,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
             }
         }
 
-        fun method2683(systemFontGlyphs: SystemFontGlyphs?, class348_sub21: Class348_Sub21?, i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, class42: Class42?) {
+        fun method2683(systemFontGlyphs: SystemFontGlyphs?, class348_sub21: CameraSplineNode?, i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, class42: Class42?) {
             var i_2_ = i_2_
             try {
                 if (i_0_ == 64) {
@@ -74,7 +74,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("eca.A(" + (if (systemFontGlyphs != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (class42 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("eca.A(" + (if (systemFontGlyphs != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (class42 != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -87,7 +87,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
         fun method2686() {
             for (i in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {
                 for (i_8_ in 0..<SpotAnimEntity.anInt6451) {
-                    for (i_9_ in 0..<Class348_Sub41.anInt7054) {
+                    for (i_9_ in 0..<RegionSceneShifter.anInt7054) {
                         val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_8_]!![i_9_]
                         if (class357 != null) {
                             val class318_sub1_sub4 = class357.aClass318_Sub1_Sub4_4406

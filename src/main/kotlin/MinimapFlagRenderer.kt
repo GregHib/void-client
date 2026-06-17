@@ -27,7 +27,7 @@ object MinimapFlagRenderer {
 
     fun method1082(i: Int, bool: Boolean): Int {
         anInt1795++
-        var i_1_ = Class348_Sub49.anInt7207
+        var i_1_ = Buffer.anInt7207
         while_44_@ do {
             do {
                 if (i_1_ == 0) {
@@ -52,8 +52,8 @@ object MinimapFlagRenderer {
         Class51.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
         Class44.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
         RenderNode.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
-        Class348_Sub42_Sub9_Sub1.anInt10444 = i_4_
-        Class348_Sub49.anInt7207 = 0
+        HardKeyedCacheEntryReference.anInt10444 = i_4_
+        Buffer.anInt7207 = 0
         SoundEnvelope.anInt2747 = i
         LocalPlayerState.anIntArray1909 = null
         Class92.anInterface4Array1525 = null
@@ -80,7 +80,7 @@ object MinimapFlagRenderer {
             if (!method2169(i_13_, i_13_, i_15_, i_13_, i_15_, i_14_, i_14_, i_10_, i_8_, false)) return false
             if (!method2169(i_13_, i_13_, i_15_, i_13_, i_8_, i_14_, i_10_, i_10_, i_8_, false)) return false
         }
-        if (i_8_ >= Class348_Sub40_Sub27.anInt9360) {
+        if (i_8_ >= BlendTextureNode.anInt9360) {
             if (!method2169(i_9_, i_13_, i_15_, i_9_, i_15_, i_14_, i_14_, i_10_, i_15_, false)) return false
             return method2169(i_9_, i_13_, i_15_, i_13_, i_15_, i_14_, i_10_, i_10_, i_15_, false)
         } else {

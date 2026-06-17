@@ -19,7 +19,7 @@ class GlTextureCubeMap : GlTexture {
     internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_4_: Int) : super(var_ha_Sub2, 34067, i, i_4_ * (i_4_ * 6), false) {
         this.anInt8538 = i_4_
         this.aHa_Sub2_4851.method3771((-81).toByte(), this)
-        for (i_5_ in 0..5) glTexImage2Dub(i_5_ + 34069, 0, this.anInt4858, i_4_, i_4_, 0, Class348_Sub9.method2779(true, (this.anInt4858)), 5121, null, 0)
+        for (i_5_ in 0..5) glTexImage2Dub(i_5_ + 34069, 0, this.anInt4858, i_4_, i_4_, 0, CharacterRenderState.method2779(true, (this.anInt4858)), 5121, null, 0)
         this.method1957(9728, true)
     }
 
@@ -38,7 +38,7 @@ class GlTextureCubeMap : GlTexture {
             for (i_8_ in 0..5) glTexImage2Dub(i_8_ + 34069, 0, this.anInt4858, i_6_, i_6_, 0, i_7_, 5121, `is`!![i_8_], 0)
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("q.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("q.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ')'))
         }
     }
 
@@ -53,7 +53,7 @@ class GlTextureCubeMap : GlTexture {
             }
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("q.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_9_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("q.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_9_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 

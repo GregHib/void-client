@@ -125,7 +125,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                 method2099(i_3_ xor 0x66d6, var_ha_Sub3)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ve.G(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (class98 != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ve.G(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (class98 != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
         }
     }
 

@@ -22,7 +22,7 @@ class GroundDecorOptionState : GraphicsOptionState {
         return 1
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1712(i: Int, i_1_: Int) {
         anInt5977++
@@ -36,7 +36,7 @@ class GroundDecorOptionState : GraphicsOptionState {
         return 1
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     companion object {
         @JvmField
@@ -64,7 +64,7 @@ class GroundDecorOptionState : GraphicsOptionState {
                     if (npc.aClass79_10505 != null) WaterMaterialPass.method2150(((LocalPlayerState.aPlayer_1907!!.plane) != (npc.plane)), false, npc)
                 } else if (class318_sub1_sub3_sub3 is Player) {
                     val player = class318_sub1_sub3_sub3
-                    Class348_Sub43.method3298(105.toByte(), ((player.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player)
+                    SpriteDefinition.method3298(105.toByte(), ((player.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player)
                 }
                 anInt5981++
             }

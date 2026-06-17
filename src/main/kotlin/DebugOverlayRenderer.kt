@@ -24,18 +24,18 @@ object DebugOverlayRenderer {
             sceneLinkedListNode_0_.aSceneLinkedListNode_3976!!.aSceneLinkedListNode_3970 = sceneLinkedListNode_0_
             sceneLinkedListNode_0_.aSceneLinkedListNode_3970!!.aSceneLinkedListNode_3976 = sceneLinkedListNode_0_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("te.B(" + (if (sceneLinkedListNode != null) "{...}" else "null") + ',' + (if (sceneLinkedListNode_0_ != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("te.B(" + (if (sceneLinkedListNode != null) "{...}" else "null") + ',' + (if (sceneLinkedListNode_0_ != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
     fun method1884() {
         val i = 10
         val i_1_ = 30
-        if (Class348_Sub18.anInt6818 != 0 && Class362.aFont_4456 != null) {
-            Class9.aRenderer171!!.K(Class348_Sub40_Sub10.anIntArray9183)
-            for (i_2_ in WidgetDefinition.anIntArray256!!.indices) Class9.aRenderer171!!.method3660((WidgetDefinition.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183!![3] - Class348_Sub40_Sub10.anIntArray9183!![1]), Class348_Sub40_Sub10.anIntArray9183!![1], true)
-            for (i_3_ in 0..<Class348_Sub42_Sub10.anInt9577) {
-                val class338 = Class348_Sub42_Sub19.aMapTileShapeArray9700!![i_3_]!!
+        if (InterfaceBounds.anInt6818 != 0 && Class362.aFont_4456 != null) {
+            Class9.aRenderer171!!.K(BrightnessContrastEffect.anIntArray9183)
+            for (i_2_ in WidgetDefinition.anIntArray256!!.indices) Class9.aRenderer171!!.method3660((WidgetDefinition.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_]), -256, (BrightnessContrastEffect.anIntArray9183!![3] - BrightnessContrastEffect.anIntArray9183!![1]), BrightnessContrastEffect.anIntArray9183!![1], true)
+            for (i_3_ in 0..<ParameterizedText.anInt9577) {
+                val class338 = MinimapAreaMarkerNode.aMapTileShapeArray9700!![i_3_]!!
                 Class9.aRenderer171!!.H(class338.anIntArray4187!![0], class338.anIntArray4191[0], class338.anIntArray4184[0], ClickFeedbackTask.anIntArray4670)
                 Class9.aRenderer171!!.H(class338.anIntArray4187!![1], class338.anIntArray4191[1], class338.anIntArray4184[1], MinimapRectClipper.anIntArray222)
                 Class9.aRenderer171!!.H(class338.anIntArray4187!![2], class338.anIntArray4191[2], class338.anIntArray4184[2], anIntArray3169)
@@ -52,11 +52,11 @@ object DebugOverlayRenderer {
             }
             Class362.aFont_4456!!.method2576(("Dynamic: " + Class86.anInt1477 + "/" + 5000), -256, i_1_ + 45, i, -16777216, -120)
             Class362.aFont_4456!!.method2576(("Total Opaque Onscreen: " + Class5_Sub1_Sub1.anInt9930 + "/" + 10000), -256, i_1_ + 60, i, -16777216, -124)
-            Class362.aFont_4456!!.method2576(("Total Trans Onscreen: " + Class348_Sub42_Sub3.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111)
-            Class362.aFont_4456!!.method2576(("Occluders: " + (DetailLevelOptionState.anInt6115 + Class69.anInt1200) + " Active: " + (Class348_Sub42_Sub10.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
-            Class362.aFont_4456!!.method2576(("Occluded: Ground:" + Class348_Sub23_Sub2.anInt9039 + " Walls: " + Class42.anInt562 + " CPs: " + Class348_Sub40_Sub4.anInt9112 + " Pixels: " + NpcDefinition.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
+            Class362.aFont_4456!!.method2576(("Total Trans Onscreen: " + LoadingScreenImageNode.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111)
+            Class362.aFont_4456!!.method2576(("Occluders: " + (DetailLevelOptionState.anInt6115 + Class69.anInt1200) + " Active: " + (ParameterizedText.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
+            Class362.aFont_4456!!.method2576(("Occluded: Ground:" + TheoraVideoStream.anInt9039 + " Walls: " + Class42.anInt562 + " CPs: " + SourceRowTextureNode.anInt9112 + " Pixels: " + NpcDefinition.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
             Class362.aFont_4456!!.method2576(("Occlude Calc Took: " + (GlslEnvMaterialPass.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123)
-            if (Class348_Sub18.anInt6818 == 2 && GlTextureBase.anIntArray5091 != null) {
+            if (InterfaceBounds.anInt6818 == 2 && GlTextureBase.anIntArray5091 != null) {
                 for (i_5_ in GlTextureBase.anIntArray5091!!.indices) {
                     var f = GlTextureBase.anIntArray5091!![i_5_].toFloat()
                     f /= 4194304.0f

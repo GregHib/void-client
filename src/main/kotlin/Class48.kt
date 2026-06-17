@@ -90,8 +90,8 @@ class Class48 {
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), SocketStreamWorker.anInt2670)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeLong(TextureMetadataProvider.aLong4615, 104.toByte())
-                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, Class348_Sub33.anInt6967)
-                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987))
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, AnimationFrameDefinition.anInt6967)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, (HardCacheEntryReference.aSceneProjector_10434!!.anInt2987))
                     method4002((class348_sub47.aClass348_Sub49_Sub2_7116!!), 55.toByte())
                     val string_5_ = Gl2dTexture.aString8605
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (string_5_ == null) 0 else 1)
@@ -101,7 +101,7 @@ class Class48 {
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 += 7
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.method3350(i_4_, true, `is`, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197))
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.method3383(1809639944, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 + -i_3_))
-                    Class348_Sub42_Sub14.method3243(2, class348_sub47)
+                    InterfaceComponentGroup.method3243(2, class348_sub47)
                     Class352.anInt4337 = -3
                     Class367_Sub2.anInt7297 = 1
                     HostPingThread.anInt2264 = 0
@@ -110,7 +110,7 @@ class Class48 {
                     VideoStreamDecoder.aBoolean4127 = true
                     method2172(60)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("iq.D(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + bool_2_ + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("iq.D(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + bool_2_ + ')'))
                 }
                 break
             } while (false)

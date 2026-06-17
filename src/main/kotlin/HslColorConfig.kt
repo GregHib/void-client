@@ -23,7 +23,7 @@ class HslColorConfig {
     @JvmField
     var anInt343: Int = 0
 
-    fun method290(class348_sub49: Class348_Sub49, i: Int) {
+    fun method290(class348_sub49: Buffer, i: Int) {
         if (i != -1) this.anInt332 = 25
         while (true) {
             val i_0_ = class348_sub49.readUnsignedByte(255)
@@ -33,7 +33,7 @@ class HslColorConfig {
         anInt329++
     }
 
-    private fun method291(i: Int, i_1_: Int, class348_sub49: Class348_Sub49) {
+    private fun method291(i: Int, i_1_: Int, class348_sub49: Buffer) {
         if (i == 1) {
             anInt337 = class348_sub49.readMedium(-1)
             method292(anInt337, 117.toByte())
@@ -110,25 +110,25 @@ class HslColorConfig {
             anInt328++
             if (Class5_Sub1_Sub1.aNodeDeque_9931!!.method1998(i) != 0) {
                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
-                    var class348_sub7 = (Class5_Sub1_Sub1.aNodeDeque_9931!!.method1995(4) as Class348_Sub7?)
+                    var class348_sub7 = (Class5_Sub1_Sub1.aNodeDeque_9931!!.method1995(4) as RegionTileNode?)
                     while (class348_sub7 != null) {
                         Exception_Sub1.aModelHeaderCache_112!!.method1932(var_renderer, class348_sub7.anInt6647, class348_sub7.anInt6648, WorldMapRenderer.aFont_4684, (if (!class348_sub7.aBoolean6650) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
                         class348_sub7.method2715(29.toByte())
-                        class348_sub7 = Class5_Sub1_Sub1.aNodeDeque_9931!!.method1990(31.toByte()) as Class348_Sub7?
+                        class348_sub7 = Class5_Sub1_Sub1.aNodeDeque_9931!!.method1990(31.toByte()) as RegionTileNode?
                     }
                     Class354.method3466(i + -113)
                 } else {
-                    if (Class348_Sub34.aRenderer6968 == null) {
+                    if (IntPair.aRenderer6968 == null) {
                         val canvas = Canvas()
                         canvas.setSize(36, 32)
-                        Class348_Sub34.aRenderer6968 = SoftwareSpriteRaster.method958(true, 0, Class348_Sub40_Sub4.aRenderConfig9113, 0, canvas, SpriteLoadValidator.aClass45_4796)
-                        Class348_Sub40_Sub9.aFont_9173 = (Class348_Sub34.aRenderer6968!!.method3686(method1819(Class56.anInt1044, 0, -44, SoftwareSpriteRaster.aClass45_1627!!), SpriteImage.method1519(CameraRotationStub.Companion.aClass45_322!!, Class56.anInt1044, 0), true))
+                        IntPair.aRenderer6968 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, canvas, SpriteLoadValidator.aClass45_4796)
+                        EdgeDetectTextureNode.aFont_9173 = (IntPair.aRenderer6968!!.method3686(method1819(Class56.anInt1044, 0, -44, SoftwareSpriteRaster.aClass45_1627!!), SpriteImage.method1519(CameraRotationStub.Companion.aClass45_322!!, Class56.anInt1044, 0), true))
                     }
-                    var class348_sub7 = (Class5_Sub1_Sub1.aNodeDeque_9931!!.method1995(i + 4) as Class348_Sub7?)
+                    var class348_sub7 = (Class5_Sub1_Sub1.aNodeDeque_9931!!.method1995(i + 4) as RegionTileNode?)
                     while (class348_sub7 != null) {
-                        Exception_Sub1.aModelHeaderCache_112!!.method1932(Class348_Sub34.aRenderer6968, class348_sub7.anInt6647, class348_sub7.anInt6648, Class348_Sub40_Sub9.aFont_9173, (if (class348_sub7.aBoolean6650) (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) else null), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
+                        Exception_Sub1.aModelHeaderCache_112!!.method1932(IntPair.aRenderer6968, class348_sub7.anInt6647, class348_sub7.anInt6648, EdgeDetectTextureNode.aFont_9173, (if (class348_sub7.aBoolean6650) (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) else null), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
                         class348_sub7.method2715(21.toByte())
-                        class348_sub7 = Class5_Sub1_Sub1.aNodeDeque_9931!!.method1990(118.toByte()) as Class348_Sub7?
+                        class348_sub7 = Class5_Sub1_Sub1.aNodeDeque_9931!!.method1990(118.toByte()) as RegionTileNode?
                     }
                 }
             }
@@ -156,7 +156,7 @@ class HslColorConfig {
                     i_11_ += i
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("hk.E(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_13_ + ',' + (if (is_14_ != null) "{...}" else "null") + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("hk.E(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_13_ + ',' + (if (is_14_ != null) "{...}" else "null") + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ')'))
             }
         }
     }

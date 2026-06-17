@@ -11,27 +11,27 @@ abstract class Class55(i: Int) {
     private var aBoolean991 = false
     private val anOggPacket993: OggPacket
     private var aByteArray995: ByteArray?
-    private var aClass348_Sub23_Sub4_999: Class348_Sub23_Sub4? = null
-    private var aClass348_Sub23_Sub2_1001: Class348_Sub23_Sub2? = null
+    private var aClass348_Sub23_Sub4_999: KaraokeSubtitleStream? = null
+    private var aClass348_Sub23_Sub2_1001: TheoraVideoStream? = null
     private var aBoolean1006 = false
     private var aBoolean1007 = false
-    private var aClass348_Sub23_Sub1_1008: Class348_Sub23_Sub1? = null
+    private var aClass348_Sub23_Sub1_1008: VorbisOggDecoder? = null
     private var aString1009: String? = null
     private val aClass356_1011: Class356
 
     private fun method504(i: Int) {
         if (i != 1999) aByteArray995 = null
         anInt982++
-        var class348_sub23 = aClass356_1011.method3484(0) as Class348_Sub23?
+        var class348_sub23 = aClass356_1011.method3484(0) as OggBitstreamDecoder?
         while (class348_sub23 != null) {
-            if (class348_sub23 is Class348_Sub23_Sub4) {
+            if (class348_sub23 is KaraokeSubtitleStream) {
                 val class348_sub23_sub4 = class348_sub23
                 while (class348_sub23_sub4.anInt6868 <= 8 || (method519(i xor 0x7b2) > class348_sub23_sub4.method2984(97.toByte()).toDouble())) {
                     if (class348_sub23_sub4.anOggStreamState6869!!.packetOut(anOggPacket993) != 1) break
                     class348_sub23_sub4.method2963(anOggPacket993, i + 14385)
                 }
             }
-            class348_sub23 = aClass356_1011.method3482(0) as Class348_Sub23?
+            class348_sub23 = aClass356_1011.method3482(0) as OggBitstreamDecoder?
         }
         method509(i + -2012, aString1009)
     }
@@ -50,7 +50,7 @@ abstract class Class55(i: Int) {
         if (i < 58) anOggPage981 = null
     }
 
-    fun method506(bool: Boolean): Class348_Sub23_Sub2? {
+    fun method506(bool: Boolean): TheoraVideoStream? {
         anInt1002++
         if (bool != false) return null
         return aClass348_Sub23_Sub2_1001
@@ -69,12 +69,12 @@ abstract class Class55(i: Int) {
     fun method508(i: Int) {
         anInt989++
         if (!aBoolean1007) {
-            var class348_sub23 = aClass356_1011.method3484(0) as Class348_Sub23?
+            var class348_sub23 = aClass356_1011.method3484(0) as OggBitstreamDecoder?
             if (i != 1) aBoolean991 = true
             while ( /**/class348_sub23 != null) {
                 class348_sub23.method2961(13.toByte())
                 class348_sub23.anOggStreamState6869!!.a()
-                class348_sub23 = aClass356_1011.method3482(i xor 0x1) as Class348_Sub23?
+                class348_sub23 = aClass356_1011.method3482(i xor 0x1) as OggBitstreamDecoder?
             }
             anOggPacket993.a()
             anOggPage981!!.a()
@@ -91,16 +91,16 @@ abstract class Class55(i: Int) {
             if (i > -4) anInt984 = -61
             if (aClass348_Sub23_Sub4_999 != null && aString1009 != aClass348_Sub23_Sub4_999!!.method2986(52)) aClass348_Sub23_Sub4_999 = null
             if (aClass348_Sub23_Sub4_999 == null) {
-                var class348_sub23 = aClass356_1011.method3484(0) as Class348_Sub23?
+                var class348_sub23 = aClass356_1011.method3484(0) as OggBitstreamDecoder?
                 while (class348_sub23 != null) {
-                    if (class348_sub23 is Class348_Sub23_Sub4) {
+                    if (class348_sub23 is KaraokeSubtitleStream) {
                         val class348_sub23_sub4 = class348_sub23
                         if (aString1009 == class348_sub23_sub4.method2986(41)) {
                             aClass348_Sub23_Sub4_999 = class348_sub23_sub4
                             break
                         }
                     }
-                    class348_sub23 = aClass356_1011.method3482(0) as Class348_Sub23?
+                    class348_sub23 = aClass356_1011.method3482(0) as OggBitstreamDecoder?
                 }
             }
         }
@@ -115,12 +115,12 @@ abstract class Class55(i: Int) {
 
     private fun method511(i: Int) {
         anInt1003++
-        var class348_sub23 = aClass356_1011.method3484(0) as Class348_Sub23?
+        var class348_sub23 = aClass356_1011.method3484(0) as OggBitstreamDecoder?
         while (class348_sub23 != null) {
             if (class348_sub23 !== aClass348_Sub23_Sub2_1001) {
                 while (class348_sub23.anOggStreamState6869!!.packetOut() == 1) class348_sub23.method2963(anOggPacket993, i xor 0x4001.inv())
             }
-            class348_sub23 = aClass356_1011.method3482(i + 2) as Class348_Sub23?
+            class348_sub23 = aClass356_1011.method3482(i + 2) as OggBitstreamDecoder?
         }
         if (aClass348_Sub23_Sub2_1001 != null) {
             if (i != -2) method518(null, 10.toByte())
@@ -136,13 +136,13 @@ abstract class Class55(i: Int) {
         }
     }
 
-    fun method512(i: Int): Class348_Sub23_Sub1? {
+    fun method512(i: Int): VorbisOggDecoder? {
         if (i != 0) method512(120)
         anInt1005++
         return aClass348_Sub23_Sub1_1008
     }
 
-    fun method513(i: Int): Class348_Sub23_Sub4? {
+    fun method513(i: Int): KaraokeSubtitleStream? {
         anInt978++
         if (i != 50) aClass348_Sub23_Sub1_1008 = null
         return aClass348_Sub23_Sub4_999
@@ -167,7 +167,7 @@ abstract class Class55(i: Int) {
             anInt988++
             if (!aBoolean1006) {
                 while (!aBoolean1007) {
-                    val class348_sub23: Class348_Sub23?
+                    val class348_sub23: OggBitstreamDecoder?
                     if (!aBoolean983) {
                         class348_sub23 = method521(1)
                         if (class348_sub23 == null) {
@@ -176,7 +176,7 @@ abstract class Class55(i: Int) {
                         }
                         checkNotNull(class348_sub23)
                         aBoolean983 = true
-                    } else class348_sub23 = ((aClass356_1011.method3480(anOggPage981!!.serialNumber.toLong(), -6008)) as Class348_Sub23?)
+                    } else class348_sub23 = ((aClass356_1011.method3480(anOggPage981!!.serialNumber.toLong(), -6008)) as OggBitstreamDecoder?)
                     if (aClass348_Sub23_Sub1_1008 == class348_sub23) {
                         if (aClass348_Sub23_Sub1_1008!!.method2969(-11020) >= 50) break
                         while (aClass348_Sub23_Sub1_1008!!.anOggStreamState6869!!.packetOut(anOggPacket993) == 1) {
@@ -194,7 +194,7 @@ abstract class Class55(i: Int) {
                             }
                             if (aClass348_Sub23_Sub1_1008!!.method2969(-11020) >= 50) return
                         }
-                    } else if (class348_sub23 !is Class348_Sub23_Sub4) {
+                    } else if (class348_sub23 !is KaraokeSubtitleStream) {
                         if (class348_sub23 === aClass348_Sub23_Sub2_1001) {
                             if (aClass348_Sub23_Sub1_1008 == null && !aBoolean1006) {
                                 var i_28_ = 0
@@ -207,7 +207,7 @@ abstract class Class55(i: Int) {
                             }
                         } else {
                             while (class348_sub23!!.anOggStreamState6869.packetOut(anOggPacket993) == 1) {
-                                if ((class348_sub23.anInt6868) == 1 && (class348_sub23 is Class348_Sub23_Sub4)) method509(-22, aString1009)
+                                if ((class348_sub23.anInt6868) == 1 && (class348_sub23 is KaraokeSubtitleStream)) method509(-22, aString1009)
                                 class348_sub23.method2963(anOggPacket993, 16384)
                             }
                         }
@@ -227,7 +227,7 @@ abstract class Class55(i: Int) {
     }
 
     @Throws(IOException::class)
-    private fun method521(i: Int): Class348_Sub23? {
+    private fun method521(i: Int): OggBitstreamDecoder? {
         anInt998++
         check(!aBoolean1007)
         if (aBoolean991) return null
@@ -243,19 +243,19 @@ abstract class Class55(i: Int) {
         val i_32_ = anOggPage981!!.serialNumber
         if (i != 1) aClass348_Sub23_Sub1_1008 = null
         if (!anOggPage981!!.isBOS) {
-            val class348_sub23 = (aClass356_1011.method3480(i_32_.toLong(), -6008) as Class348_Sub23?)
+            val class348_sub23 = (aClass356_1011.method3480(i_32_.toLong(), -6008) as OggBitstreamDecoder?)
             check(class348_sub23!!.anOggStreamState6869.pageIn(anOggPage981))
             return class348_sub23
         }
         val oggstreamstate = OggStreamState(i_32_)
         check(oggstreamstate.pageIn(anOggPage981))
         check(oggstreamstate.packetPeek(anOggPacket993) == 1)
-        val class348_sub23: Class348_Sub23?
+        val class348_sub23: OggBitstreamDecoder?
         if (aClass348_Sub23_Sub2_1001 == null && anOggPacket993.isTheora) {
-            aClass348_Sub23_Sub2_1001 = Class348_Sub23_Sub2(oggstreamstate)
+            aClass348_Sub23_Sub2_1001 = TheoraVideoStream(oggstreamstate)
             class348_sub23 = aClass348_Sub23_Sub2_1001
         } else if (aClass348_Sub23_Sub1_1008 == null && anOggPacket993.isVorbis) {
-            aClass348_Sub23_Sub1_1008 = Class348_Sub23_Sub1(oggstreamstate)
+            aClass348_Sub23_Sub1_1008 = VorbisOggDecoder(oggstreamstate)
             class348_sub23 = aClass348_Sub23_Sub1_1008
         } else {
             val `is` = anOggPacket993.data
@@ -267,15 +267,15 @@ abstract class Class55(i: Int) {
                 i_33_++
             }
             val string = stringbuffer.toString()
-            if (string == "kate") class348_sub23 = Class348_Sub23_Sub4(oggstreamstate)
-            else class348_sub23 = Class348_Sub23_Sub3(oggstreamstate)
+            if (string == "kate") class348_sub23 = KaraokeSubtitleStream(oggstreamstate)
+            else class348_sub23 = NullOggStream(oggstreamstate)
         }
         aClass356_1011.method3483(92.toByte(), i_32_.toLong(), class348_sub23)
         return class348_sub23
     }
 
     init {
-        if (!Class348_Sub40_Sub19.method3098(-30282, "jagtheora")) throw RuntimeException("Failed to load jagtheora library")
+        if (!BlankTextureNode.method3098(-30282, "jagtheora")) throw RuntimeException("Failed to load jagtheora library")
         aByteArray995 = ByteArray(i)
         anOggSyncState987 = OggSyncState()
         anOggPage981 = OggPage()
@@ -386,7 +386,7 @@ abstract class Class55(i: Int) {
         @JvmStatic
         fun method520(interface10: Interface10, i: Int): Boolean {
             anInt1000++
-            val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-94))
+            val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-94))
             if (class51.anInt875 == -1) return true
             val class218 = ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1173(31.toByte(), class51.anInt875)
             if (i == class218!!.anInt2853) return true

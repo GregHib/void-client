@@ -25,7 +25,7 @@ class Class371 {
                 if (var_ha_Sub2.aBoolean7837) return GlTexture2DRegion(var_ha_Sub2, 34037, i_2_, i_3_, i_0_, bool, `is`, i)
                 return GlTexture2DRegion(var_ha_Sub2, i_2_, i_3_, i_0_, CacheArchiveIndexLoader.method340(i_3_, 108.toByte()), CacheArchiveIndexLoader.method340(i_0_, 108.toByte()), `is`, i)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("fr.B(" + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("fr.B(" + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ')'))
             }
         }
 

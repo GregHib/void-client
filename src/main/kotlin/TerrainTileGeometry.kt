@@ -57,7 +57,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
             anInt3008 = i_9_
             if (i_9_ <= 0) aClass258_Sub3_2998 = null
             else {
-                val class348_sub49 = Class348_Sub49(i_9_ * 2)
+                val class348_sub49 = Buffer(i_9_ * 2)
                 if (aHa_Sub2_3000!!.aBoolean7775) {
                     var i_19_ = 0
                     while (i_8_ > i_19_) {
@@ -99,7 +99,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
                 aClass119_Sub2_3011 = NativeVertexBuffer(aHa_Sub2_3000, 5123, null, 1)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sm.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (softwareSpriteRaster != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("sm.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (softwareSpriteRaster != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
         }
     }
 

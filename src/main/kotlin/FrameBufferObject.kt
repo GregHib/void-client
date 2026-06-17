@@ -1,7 +1,7 @@
 import ParticleSystemState.Companion.method1296
 import WaterMaterialPass.Companion.method2148
-import Class348_Sub1_Sub3.Companion.method2732
-import Class348_Sub40_Sub15.Companion.method3086
+import ParticleTileShape.Companion.method2732
+import BrightnessTextureNode.Companion.method3086
 import jaggl.OpenGL.Companion.glBindFramebufferEXT
 import jaggl.OpenGL.Companion.glCheckFramebufferStatusEXT
 import jaggl.OpenGL.Companion.glDrawBuffer
@@ -129,7 +129,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
         return i_30_ == 36053
     }
 
-    fun method1508(i: Int, class348_sub42_sub2: Class348_Sub42_Sub2, i_32_: Int) {
+    fun method1508(i: Int, class348_sub42_sub2: RenderbufferObject, i_32_: Int) {
         anInt4881++
         if (anInt4873 == -1) throw RuntimeException()
         val i_33_ = 1 shl i
@@ -219,7 +219,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                             }
                             class10.anInt188 += class10.aAudioClipDefinition_183!!.method2370()
                         } else if (class10.method220((-39).toByte()) && ((class10.aClass348_Sub10_192 == null) || (class10.aClass348_Sub19_Sub1_189) == null)) {
-                            if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = Class348_Sub10.method2793((LightingOptionState.aClass45_5878!!), (class10.anInt185))
+                            if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = VorbisAudioDecoder.method2793((LightingOptionState.aClass45_5878!!), (class10.anInt185))
                             if (class10.aClass348_Sub10_192 == null) {
                                 i_4_++
                                 continue
@@ -270,13 +270,13 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                                 } else i_6_ = 0
                             }
                             if (i_6_ > 0) {
-                                var class348_sub19_sub1: Class348_Sub19_Sub1? = null
+                                var class348_sub19_sub1: PcmSampleData? = null
                                 if (class10.aByte180.toInt() != 1) {
                                     if (class10.method220((-112).toByte())) class348_sub19_sub1 = (class10.aClass348_Sub19_Sub1_189)
                                 } else class348_sub19_sub1 = class10.aAudioClipDefinition_183!!.method2369().method2944(Class57.aAudioResampler_1050!!)
-                                val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1!!, class10.anInt173, i_6_, i_5_).also { class10.aClass348_Sub16_Sub5_176 = it })
+                                val class348_sub16_sub5 = (SampledVoice.method2911(class348_sub19_sub1!!, class10.anInt173, i_6_, i_5_).also { class10.aClass348_Sub16_Sub5_176 = it })
                                 class348_sub16_sub5!!.method2917(-1 + class10.anInt177)
-                                Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
+                                SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
                             }
                         }
                     } else bool = true
@@ -302,9 +302,9 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                 UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null
             } else if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1 && !method1296(true)) {
                 SceneLinkedListNode.anInt3973++
-                val class348_sub47 = method2148(OpenGlRenderer.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107)
+                val class348_sub47 = method2148(OpenGlRenderer.aClass351_7554, TheoraVideoStream.aClass77_9029, -107)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(118.toByte(), SlotBinding.anInt3428)
-                Class348_Sub42_Sub14.method3243(-54, class348_sub47)
+                InterfaceComponentGroup.method3243(-54, class348_sub47)
                 SlotBinding.anInt3428 = -1
             }
         }

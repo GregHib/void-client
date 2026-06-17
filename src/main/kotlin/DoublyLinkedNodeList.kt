@@ -124,11 +124,11 @@ class DoublyLinkedNodeList {
         @JvmStatic
         fun method1879(bool: Boolean) {
             if (bool) {
-                HintArrowOrMessage.aClass357ArrayArrayArray2029 = Class348_Sub31_Sub2.aClass357ArrayArrayArray9082
+                HintArrowOrMessage.aClass357ArrayArrayArray2029 = ProducerImageSurface.aClass357ArrayArrayArray9082
                 NativeSprite.aTerrainTileArray5191 = SoundCacheState.aTerrainTileArray4142
             } else {
                 HintArrowOrMessage.aClass357ArrayArrayArray2029 = Class65.aClass357ArrayArrayArray1148
-                NativeSprite.aTerrainTileArray5191 = Class348_Sub1_Sub1.aTerrainTileArray8801
+                NativeSprite.aTerrainTileArray5191 = TerrainTileShape.aTerrainTileArray8801
             }
             MapAreaDefinition.anInt2524 = HintArrowOrMessage.aClass357ArrayArrayArray2029!!.size
         }

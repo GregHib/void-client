@@ -12,7 +12,7 @@ class RectangleRegion internal constructor(var anInt1941: Int, @JvmField var anI
         var aClass45_1940: Class45? = null
         var aClass46Array1942: Array<Class46?>? = null
         @JvmField
-        var aClass348_Sub42_Sub12_1946: Class348_Sub42_Sub12? = null
+        var aClass348_Sub42_Sub12_1946: ContactEntry? = null
         var anInt1947: Int = 0
 
         @JvmStatic

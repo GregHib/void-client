@@ -11,7 +11,7 @@ class CacheArchiveIndex {
     private var aString1774: String? = "null"
     var aChar1778: Char = 0.toChar()
     var aChar1779: Char = 0.toChar()
-    private fun method1065(class348_sub49: Class348_Sub49, i: Int, i_0_: Int) {
+    private fun method1065(class348_sub49: Buffer, i: Int, i_0_: Int) {
         if (i_0_ == 1) this.aChar1778 = method462(class348_sub49.readByte(-91), -128)
         else if (i_0_ == 2) this.aChar1779 = method462(class348_sub49.readByte(-119), -128)
         else if (i_0_ == 3) aString1774 = class348_sub49.readString(86.toByte())
@@ -21,8 +21,8 @@ class CacheArchiveIndex {
             this.aClass356_1767 = Class356(method340(i_1_, 108.toByte()))
             for (i_2_ in 0..<i_1_) {
                 val i_3_ = class348_sub49.readInt(((-126).toByte()).toByte())
-                val class348 = if (i_0_ != 5) Class348_Sub35(class348_sub49.readInt(((-126).toByte()).toByte()))
-                else Class348_Sub50(class348_sub49.readString(((-35).toByte()).toByte()))
+                val class348 = if (i_0_ != 5) IntKeyNode(class348_sub49.readInt(((-126).toByte()).toByte()))
+                else StringCacheNode(class348_sub49.readString(((-35).toByte()).toByte()))
                 aClass356_1767!!.method3483(21.toByte(), i_3_.toLong(), class348)
             }
         }
@@ -35,10 +35,10 @@ class CacheArchiveIndex {
         if (this.aClass356_1767 == null) return false
         if (bool != false) aClass356_1770 = null
         if (aClass356_1770 == null) method1071(true)
-        var class348_sub46 = (aClass356_1770!!.method3480(TypedRecordTable.method2179(string, 109.toByte()), -6008) as? Class348_Sub46)
+        var class348_sub46 = (aClass356_1770!!.method3480(TypedRecordTable.method2179(string, 109.toByte()), -6008) as? StringValueNode)
         while (class348_sub46 != null) {
             if (class348_sub46.aString7111 == string) return true
-            class348_sub46 = aClass356_1770!!.method3476(true) as? Class348_Sub46
+            class348_sub46 = aClass356_1770!!.method3476(true) as? StringValueNode
         }
         return false
     }
@@ -48,22 +48,22 @@ class CacheArchiveIndex {
         if (this.aClass356_1767 == null) return false
         if (bool != true) return true
         if (aClass356_1770 == null) method1068(120.toByte())
-        val class348_sub35 = aClass356_1770!!.method3480(i.toLong(), -6008) as? Class348_Sub35
+        val class348_sub35 = aClass356_1770!!.method3480(i.toLong(), -6008) as? IntKeyNode
         return class348_sub35 != null
     }
 
     private fun method1068(i: Byte) {
         anInt1772++
         aClass356_1770 = Class356(aClass356_1767!!.method3475(true))
-        var class348_sub35 = (aClass356_1767!!.method3484(0) as? Class348_Sub35)
+        var class348_sub35 = (aClass356_1767!!.method3484(0) as? IntKeyNode)
         while (class348_sub35 != null) {
-            val class348_sub35_4_ = Class348_Sub35(class348_sub35.aLong4291.toInt())
+            val class348_sub35_4_ = IntKeyNode(class348_sub35.aLong4291.toInt())
             aClass356_1770!!.method3483(26.toByte(), class348_sub35.anInt6976.toLong(), class348_sub35_4_)
-            class348_sub35 = aClass356_1767!!.method3482(0) as? Class348_Sub35
+            class348_sub35 = aClass356_1767!!.method3482(0) as? IntKeyNode
         }
     }
 
-    fun method1069(i: Int, class348_sub49: Class348_Sub49) {
+    fun method1069(i: Int, class348_sub49: Buffer) {
         anInt1763++
         while (true) {
             val i_5_ = class348_sub49.readUnsignedByte(i + 255)
@@ -76,11 +76,11 @@ class CacheArchiveIndex {
     private fun method1071(bool: Boolean) {
         aClass356_1770 = Class356(aClass356_1767!!.method3475(bool))
         anInt1768++
-        var class348_sub50 = (aClass356_1767!!.method3484(0) as? Class348_Sub50)
+        var class348_sub50 = (aClass356_1767!!.method3484(0) as? StringCacheNode)
         while (class348_sub50 != null) {
-            val class348_sub46 = Class348_Sub46((class348_sub50.aString7211), (class348_sub50.aLong4291).toInt())
+            val class348_sub46 = StringValueNode((class348_sub50.aString7211), (class348_sub50.aLong4291).toInt())
             aClass356_1770!!.method3483(102.toByte(), TypedRecordTable.method2179((class348_sub50.aString7211!!), 120.toByte()), class348_sub46)
-            class348_sub50 = aClass356_1767!!.method3482(0) as? Class348_Sub50
+            class348_sub50 = aClass356_1767!!.method3482(0) as? StringCacheNode
         }
     }
 
@@ -88,7 +88,7 @@ class CacheArchiveIndex {
         if (bool != false) method1067(false, -31)
         anInt1775++
         if (this.aClass356_1767 == null) return anInt1764
-        val class348_sub35 = (aClass356_1767!!.method3480(i.toLong(), -6008) as? Class348_Sub35) ?: return anInt1764
+        val class348_sub35 = (aClass356_1767!!.method3480(i.toLong(), -6008) as? IntKeyNode) ?: return anInt1764
         return class348_sub35.anInt6976
     }
 
@@ -96,7 +96,7 @@ class CacheArchiveIndex {
         anInt1777++
         if (i_7_ <= 60) return null
         if (this.aClass356_1767 == null) return aString1774
-        val class348_sub50 = (aClass356_1767!!.method3480(i.toLong(), -6008) as? Class348_Sub50) ?: return aString1774
+        val class348_sub50 = (aClass356_1767!!.method3480(i.toLong(), -6008) as? StringCacheNode) ?: return aString1774
         return class348_sub50.aString7211
     }
 
@@ -136,7 +136,7 @@ class CacheArchiveIndex {
         fun method1070(i: Byte, i_6_: Int) {
             if (i < 109) anInt1780 = 10
             anInt1769++
-            if (Class348_Sub49_Sub2.anIntArray9757 == null || Class348_Sub49_Sub2.anIntArray9757!!.size < i_6_) Class348_Sub49_Sub2.anIntArray9757 = IntArray(i_6_)
+            if (CipheredPacketBuffer.anIntArray9757 == null || CipheredPacketBuffer.anIntArray9757!!.size < i_6_) CipheredPacketBuffer.anIntArray9757 = IntArray(i_6_)
         }
 
         fun method1072(class45: Class45?, i: Byte) {

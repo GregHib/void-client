@@ -1,7 +1,7 @@
 import ModelBatchBase.Companion.method1130
 import HostPingThread.Companion.method1301
-import Class348_Sub23_Sub1.Companion.method2967
-import Class348_Sub9.Companion.method2782
+import VorbisOggDecoder.Companion.method2967
+import CharacterRenderState.Companion.method2782
 import OutputStream_Sub2.Companion.method136
 
 /* Class318_Sub1_Sub3_Sub1 - Decompiled by JODE
@@ -67,7 +67,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, class51: Cl
                 if (!aBoolean10019) break
                 this.aClass64_10028 = this.aClass64_10028!!.method614(0.toByte(), i_11_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dm.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + bool_10_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("dm.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + bool_10_ + ')'))
             }
             break
         } while (false)
@@ -145,7 +145,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, class51: Cl
                 if (i_17_ < -106) break
                 method2392(false)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dm.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("dm.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ')'))
             }
             break
         } while (false)
@@ -173,16 +173,16 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, class51: Cl
 
     private fun method2417(i: Int, var_renderer: Renderer?, i_20_: Int, bool: Boolean): ModelOrSpriteHolder? {
         anInt10007++
-        val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(i, 0xffff and aShort10032.toInt())
+        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i, 0xffff and aShort10032.toInt())
         val var_terrainTile: TerrainTile?
         val var_terrainTile_21_: TerrainTile?
         if (aBoolean10017) {
             var_terrainTile = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
-            var_terrainTile_21_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![0]
+            var_terrainTile_21_ = TerrainTileShape.aTerrainTileArray8801!![0]
         } else {
-            var_terrainTile = (Class348_Sub1_Sub1.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
             if (this.aByte6376 >= 3) var_terrainTile_21_ = null
-            else var_terrainTile_21_ = (Class348_Sub1_Sub1.aTerrainTileArray8801!![this.aByte6376 - -1])
+            else var_terrainTile_21_ = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376 - -1])
         }
         return class51.method476(var_renderer, var_terrainTile_21_, (if (aByte10024.toInt() != 11) aByte10024 else 10).toInt(), i_20_, this.x, bool, var_terrainTile, this.anInt6382, this.y, (if (aByte10024.toInt() != 11) aByte10015.toInt() else aByte10015 + 4), 128)
     }
@@ -242,7 +242,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, class51: Cl
         var anInt10007: Int = 0
         var anInt10008: Int = 0
         var anInt10009: Int = 0
-        var aClass348_Sub42_Sub17Array10010: Array<Class348_Sub42_Sub17?>? = arrayOfNulls<Class348_Sub42_Sub17>(14)
+        var aClass348_Sub42_Sub17Array10010: Array<TextureMaterialGroup?>? = arrayOfNulls<TextureMaterialGroup>(14)
         var anInt10011: Int = 0
         var anInt10012: Int = 0
         var anInt10013: Int = 0

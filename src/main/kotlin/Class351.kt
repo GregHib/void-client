@@ -24,7 +24,7 @@ class Class351 internal constructor(private var anInt4326: Int, var anInt4323: I
             anInt4324++
             if (string == null) return false
             var i_0_ = 0
-            while ((i_0_ < Class348_Sub42_Sub12.anInt9604)) {
+            while ((i_0_ < ContactEntry.anInt9604)) {
                 if (string.equals(ObjectSpawnDecoder.aStringArray1808!![i_0_], ignoreCase = true)) return true
                 if (string.equals(IndexedSprite.aStringArray5197!![i_0_], ignoreCase = true)) return true
                 i_0_++

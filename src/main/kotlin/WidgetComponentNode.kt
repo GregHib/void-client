@@ -35,7 +35,7 @@ open class WidgetComponentNode(class45: Class45?, particleEmitterDef: ParticleEm
             aClass45_4661 = class45
             this.aParticleEmitterDef_4659 = particleEmitterDef
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (particleEmitterDef != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (particleEmitterDef != null) "{...}" else "null") + ')'))
         }
     }
 

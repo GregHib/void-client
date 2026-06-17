@@ -58,7 +58,7 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
                 val i_4_ = 0x7fffffff and (l ushr 32).toInt()
                 if (i_2_ != 10 && i_2_ != 11 && i_2_ != 22) PixelBlender.method2252(true, i_0_, i, (-119).toByte(), 0, 0, 0, i_2_, i_3_)
                 else {
-                    val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_4_)
+                    val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_4_)
                     val i_5_: Int
                     val i_6_: Int
                     if (i_3_ == 0 || i_3_ == 2) {
@@ -73,7 +73,7 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
                     PixelBlender.method2252(true, i_0_, i, (-99).toByte(), i_5_, i_7_, i_6_, 0, 0)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("cf.B(" + i + ',' + l + ',' + i_0_ + ',' + i_1_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("cf.B(" + i + ',' + l + ',' + i_0_ + ',' + i_1_ + ')'))
             }
         }
 
@@ -119,21 +119,21 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
                 try {
                     anInt4811++
                     RegionSceneLoader.aNodeDeque_3705!!.method1996(125)
-                    if (!Class348_Sub1_Sub1.aBoolean8805) {
-                        var class348_sub21 = nodeDeque!!.method1995(4) as Class348_Sub21?
+                    if (!TerrainTileShape.aBoolean8805) {
+                        var class348_sub21 = nodeDeque!!.method1995(4) as CameraSplineNode?
                         while (class348_sub21 != null) {
                             val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 82.toByte()))
                             if (method589(class42, -4)) {
                                 val bool = ModelLightingConfig.method1425((-31).toByte(), class42, class348_sub21, i_14_, var_renderer, i_15_)
                                 if (bool) Class59.method549((-43).toByte(), class348_sub21, var_renderer!!, class42)
                             }
-                            class348_sub21 = (nodeDeque.method1990(104.toByte()) as Class348_Sub21?)
+                            class348_sub21 = (nodeDeque.method1990(104.toByte()) as CameraSplineNode?)
                         }
                         if (i == -13084) break
                         aStringArray4818 = null
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (if (nodeDeque != null) "{...}" else "null") + ',' + i_15_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (if (nodeDeque != null) "{...}" else "null") + ',' + i_15_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

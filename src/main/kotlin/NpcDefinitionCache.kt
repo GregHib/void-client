@@ -23,7 +23,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             `is` = aClass45_3319.method410(-1860, i_9_, i)
         }
         npcDefinition = NpcDefinition()
-        if (`is` != null) npcDefinition.method1620(Class348_Sub49(`is`), -108)
+        if (`is` != null) npcDefinition.method1620(Buffer(`is`), -108)
         synchronized(aClass60_3321) {
             aClass60_3321.method582(npcDefinition, i.toLong(), (-109).toByte())
         }
@@ -58,7 +58,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             aClass45_3319 = class45
             aClass45_3319!!.method407(0, 32)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("uga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -106,19 +106,19 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 stringbuffer.append(string.substring(i_6_))
                 return stringbuffer.toString()
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uga.H(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + c + ',' + (if (string_0_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("uga.H(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + c + ',' + (if (string_0_ != null) "{...}" else "null") + ')'))
             }
         }
 
         fun method1982(i: Int, i_8_: Int, string: String) {
-            Class348_Sub42_Sub12.anInt9594++
+            ContactEntry.anInt9594++
             anInt3318++
-            val class348_sub47 = method2148(CacheArchiveIndex.aClass351_1766, Class348_Sub23_Sub2.aClass77_9029, i + -107)
+            val class348_sub47 = method2148(CacheArchiveIndex.aClass351_1766, TheoraVideoStream.aClass77_9029, i + -107)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1 - -method1745(string, -65))
             if (i == 16) {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-70).toByte(), i_8_)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
-                Class348_Sub42_Sub14.method3243(117, class348_sub47)
+                InterfaceComponentGroup.method3243(117, class348_sub47)
             }
         }
 
@@ -126,31 +126,31 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         fun method1987(i: Int) {
             val i_12_ = 81 % ((i - -70) / 35)
             anInt3313++
-            if (!Class5_Sub1.aBoolean8335) Class348_Sub42_Sub6.aBoolean9535 = ((SoundCacheState.anInt4143 != -1 && Class73.anInt4776 >= SoundCacheState.anInt4143) || (Class348_Sub42_Sub8_Sub2.anInt10432 < 16 * Class73.anInt4776 - -(if (!Class71.aBoolean1211) 22 else 26)))
+            if (!Class5_Sub1.aBoolean8335) ChatScriptListNode.aBoolean9535 = ((SoundCacheState.anInt4143 != -1 && Class73.anInt4776 >= SoundCacheState.anInt4143) || (HardCacheEntryReference.anInt10432 < 16 * Class73.anInt4776 - -(if (!Class71.aBoolean1211) 22 else 26)))
             ItemDefinitionLoader.aNodeDeque_2187!!.method1996(103)
-            Class348_Sub40_Sub38.aNodeDeque_9478!!.method1996(104)
-            var class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as Class348_Sub42_Sub12?)
+            ClampTextureNode.aNodeDeque_9478!!.method1996(104)
+            var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as ContactEntry?)
             while (class348_sub42_sub12 != null) {
                 val i_13_ = class348_sub42_sub12.anInt9608
                 if (i_13_ < 1000) {
                     class348_sub42_sub12.method2715(97.toByte())
-                    if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) Class348_Sub40_Sub38.aNodeDeque_9478!!.method1999(class348_sub42_sub12, -20180)
+                    if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) ClampTextureNode.aNodeDeque_9478!!.method1999(class348_sub42_sub12, -20180)
                     else ItemDefinitionLoader.aNodeDeque_2187!!.method1999(class348_sub42_sub12, -20180)
                 }
-                class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(83.toByte()) as Class348_Sub42_Sub12?
+                class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(83.toByte()) as ContactEntry?
             }
-            ItemDefinitionLoader.aNodeDeque_2187!!.method1988(Class348_Sub40_Sub4.aNodeDeque_9111, (-115).toByte())
-            Class348_Sub40_Sub38.aNodeDeque_9478!!.method1988(Class348_Sub40_Sub4.aNodeDeque_9111, (-115).toByte())
+            ItemDefinitionLoader.aNodeDeque_2187!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
+            ClampTextureNode.aNodeDeque_9478!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
             if (Class73.anInt4776 > 1) {
-                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) IntHashSet.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
-                else IntHashSet.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295!!.aClass348_4295 as Class348_Sub42_Sub12?)
-                GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
+                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) IntHashSet.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
+                else IntHashSet.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295!!.aLinkedListNode_4295 as ContactEntry?)
+                GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
             } else {
                 IntHashSet.aClass348_Sub42_Sub12_3963 = null
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = null
             }
             var i_14_ = -1
-            val class348_sub45 = GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?
+            val class348_sub45 = GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?
             if (class348_sub45 != null) i_14_ = class348_sub45.method3310(58)
             if (Class5_Sub1.aBoolean8335) {
                 if (i_14_ == -1) {
@@ -158,24 +158,24 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     val i_16_ = GlTexture1D.aClass373_8552!!.method3594(116.toByte())
                     var bool = false
                     if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
-                        if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -Class348_Sub1_Sub1.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + Class373.anInt4534 + 10 < i_16_)) Class348_Sub42_Sub19.method3277((-48).toByte())
+                        if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -TerrainTileShape.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + Class373.anInt4534 + 10 < i_16_)) MinimapAreaMarkerNode.method3277((-48).toByte())
                         else bool = true
                     }
                     if (!bool) {
-                        if (GlArrayBufferObject.anInt4717 - 10 <= i_15_ && i_15_ <= (10 + GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_16_ >= -10 + Class348_Sub42_Sub5.anInt9532 && i_16_ <= (10 + Class348_Sub42_Sub5.anInt9532 - -WorldMapSceneSoftware.anInt5819)) {
-                            if (Class348_Sub42_Sub6.aBoolean9535) {
+                        if (GlArrayBufferObject.anInt4717 - 10 <= i_15_ && i_15_ <= (10 + GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_16_ >= -10 + ProceduralTextureGraph.anInt9532 && i_16_ <= (10 + ProceduralTextureGraph.anInt9532 - -WorldMapSceneSoftware.anInt5819)) {
+                            if (ChatScriptListNode.aBoolean9535) {
                                 var i_17_ = -1
                                 var i_18_ = -1
                                 for (i_19_ in 0..<Class8.anInt166) {
                                     if (Class71.aBoolean1211) {
-                                        val i_21_ = (16 * i_19_ + 33 + Class348_Sub42_Sub5.anInt9532)
+                                        val i_21_ = (16 * i_19_ + 33 + ProceduralTextureGraph.anInt9532)
                                         if ((i_16_ > -13 + i_21_) && i_21_ + 4 > i_16_) {
                                             i_18_ = -13 + i_21_
                                             i_17_ = i_19_
                                             break
                                         }
                                     } else {
-                                        val i_20_ = (16 * i_19_ + Class348_Sub42_Sub5.anInt9532 - -31)
+                                        val i_20_ = (16 * i_19_ + ProceduralTextureGraph.anInt9532 - -31)
                                         if (i_20_ + -13 < i_16_ && (i_20_ + 3 > i_16_)) {
                                             i_18_ = i_20_ + -13
                                             i_17_ = i_19_
@@ -186,14 +186,14 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                                 if (i_17_ != -1) {
                                     var i_22_ = 0
                                     val linkedListIterator = LinkedListIterator(ParticleSortRenderer.aLinkedNodeListIterator_3022!!)
-                                    var class348_sub42_sub13 = (linkedListIterator.method1240(75) as Class348_Sub42_Sub13?)
+                                    var class348_sub42_sub13 = (linkedListIterator.method1240(75) as ContactList?)
                                     while (class348_sub42_sub13 != null) {
                                         if (i_17_ == i_22_) {
                                             if (class348_sub42_sub13.anInt9615 > 1) method881(class348_sub42_sub13, i_16_, true, i_18_)
                                             break
                                         }
                                         i_22_++
-                                        class348_sub42_sub13 = (linkedListIterator.method1243(74.toByte()) as Class348_Sub42_Sub13?)
+                                        class348_sub42_sub13 = (linkedListIterator.method1243(74.toByte()) as ContactList?)
                                     }
                                 }
                             }
@@ -203,7 +203,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 if (i_14_ == 0) {
                     val i_23_ = class348_sub45!!.method3308((-128).toByte())
                     val i_24_ = class348_sub45.method3311(33)
-                    if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 <= i_23_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252 >= i_23_) && i_24_ >= Class373.anInt4534 && Class373.anInt4534 + ClickFeedbackTask.anInt4669 >= i_24_) {
+                    if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 <= i_23_ && (TerrainTileShape.anInt8806 + Class50_Sub3.anInt5252 >= i_23_) && i_24_ >= Class373.anInt4534 && Class373.anInt4534 + ClickFeedbackTask.anInt4669 >= i_24_) {
                         var i_25_ = -1
                         var i_26_ = 0
                         while ((ManagedGlResource.aClass348_Sub42_Sub13_3152!!.anInt9615 > i_26_)) {
@@ -219,29 +219,29 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                         if (i_25_ != -1) {
                             var i_29_ = 0
                             val linkedListIterator = LinkedListIterator(ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
-                            var class348_sub42_sub12 = (linkedListIterator.method1240(98) as Class348_Sub42_Sub12?)
+                            var class348_sub42_sub12 = (linkedListIterator.method1240(98) as ContactEntry?)
                             while (class348_sub42_sub12 != null) {
                                 if (i_29_ == i_25_) {
                                     SpriteMaskShape.method2599(126.toByte(), class348_sub42_sub12, i_24_, i_23_)
                                     break
                                 }
                                 i_29_++
-                                class348_sub42_sub12 = (linkedListIterator.method1243(122.toByte()) as Class348_Sub42_Sub12?)
+                                class348_sub42_sub12 = (linkedListIterator.method1243(122.toByte()) as ContactEntry?)
                             }
                         }
                         method2146(78.toByte())
-                    } else if (GlArrayBufferObject.anInt4717 <= i_23_ && (i_23_ <= GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_24_ >= Class348_Sub42_Sub5.anInt9532 && ((Class348_Sub42_Sub5.anInt9532 - -WorldMapSceneSoftware.anInt5819) >= i_24_)) {
-                        if (Class348_Sub42_Sub6.aBoolean9535) {
+                    } else if (GlArrayBufferObject.anInt4717 <= i_23_ && (i_23_ <= GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_24_ >= ProceduralTextureGraph.anInt9532 && ((ProceduralTextureGraph.anInt9532 - -WorldMapSceneSoftware.anInt5819) >= i_24_)) {
+                        if (ChatScriptListNode.aBoolean9535) {
                             var i_30_ = -1
                             for (i_31_ in 0..<Class8.anInt166) {
                                 if (Class71.aBoolean1211) {
-                                    val i_33_ = (Class348_Sub42_Sub5.anInt9532 + 33 - -(i_31_ * 16))
+                                    val i_33_ = (ProceduralTextureGraph.anInt9532 + 33 - -(i_31_ * 16))
                                     if (i_24_ > -13 + i_33_ && i_33_ + 4 > i_24_) {
                                         i_30_ = i_31_
                                         break
                                     }
                                 } else {
-                                    val i_32_ = (Class348_Sub42_Sub5.anInt9532 + 31 + i_31_ * 16)
+                                    val i_32_ = (ProceduralTextureGraph.anInt9532 + 31 + i_31_ * 16)
                                     if (i_24_ > i_32_ - 13 && i_32_ + 3 > i_24_) {
                                         i_30_ = i_31_
                                         break
@@ -251,15 +251,15 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                             if (i_30_ != -1) {
                                 var i_34_ = 0
                                 val linkedListIterator = LinkedListIterator(ParticleSortRenderer.aLinkedNodeListIterator_3022!!)
-                                var class348_sub42_sub13 = (linkedListIterator.method1240(18) as Class348_Sub42_Sub13?)
+                                var class348_sub42_sub13 = (linkedListIterator.method1240(18) as ContactList?)
                                 while (class348_sub42_sub13 != null) {
                                     if (i_34_ == i_30_) {
-                                        SpriteMaskShape.method2599(122.toByte(), ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?), i_24_, i_23_)
+                                        SpriteMaskShape.method2599(122.toByte(), ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as ContactEntry?), i_24_, i_23_)
                                         method2146(118.toByte())
                                         break
                                     }
                                     i_34_++
-                                    class348_sub42_sub13 = (linkedListIterator.method1243(55.toByte()) as Class348_Sub42_Sub13?)
+                                    class348_sub42_sub13 = (linkedListIterator.method1243(55.toByte()) as ContactList?)
                                 }
                             }
                         } else {
@@ -267,25 +267,25 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                             var i_36_ = 0
                             while ((i_36_ < Class73.anInt4776)) {
                                 if (Class71.aBoolean1211) {
-                                    val i_37_ = (33 + Class348_Sub42_Sub5.anInt9532 + 16 * (Class73.anInt4776 - (1 - -i_36_)))
+                                    val i_37_ = (33 + ProceduralTextureGraph.anInt9532 + 16 * (Class73.anInt4776 - (1 - -i_36_)))
                                     if (i_37_ - 13 < i_24_ && 4 + i_37_ > i_24_) i_35_ = i_36_
                                 } else {
-                                    val i_38_ = (Class348_Sub42_Sub5.anInt9532 + (31 - -((Class73.anInt4776 - 1 - i_36_) * 16)))
+                                    val i_38_ = (ProceduralTextureGraph.anInt9532 + (31 - -((Class73.anInt4776 - 1 - i_36_) * 16)))
                                     if (i_38_ - 13 < i_24_ && (i_24_ < i_38_ - -3)) i_35_ = i_36_
                                 }
                                 i_36_++
                             }
                             if (i_35_ != -1) {
                                 var i_39_ = 0
-                                val widgetRedrawTracker = WidgetRedrawTracker(Class348_Sub40_Sub4.aNodeDeque_9111!!)
-                                var class348_sub42_sub12 = (widgetRedrawTracker.method2327((-53).toByte()) as Class348_Sub42_Sub12?)
+                                val widgetRedrawTracker = WidgetRedrawTracker(SourceRowTextureNode.aNodeDeque_9111!!)
+                                var class348_sub42_sub12 = (widgetRedrawTracker.method2327((-53).toByte()) as ContactEntry?)
                                 while (class348_sub42_sub12 != null) {
                                     if (i_35_ == i_39_) {
                                         SpriteMaskShape.method2599(107.toByte(), class348_sub42_sub12, i_24_, i_23_)
                                         break
                                     }
                                     i_39_++
-                                    class348_sub42_sub12 = (widgetRedrawTracker.method2329(10) as Class348_Sub42_Sub12?)
+                                    class348_sub42_sub12 = (widgetRedrawTracker.method2329(10) as ContactEntry?)
                                 }
                             }
                             FixedFunctionMaterialPass.method2146((-46).toByte())
@@ -295,14 +295,14 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             } else {
                 if (i_14_ == 0 && ((WallEntity.anInt8770 == 1 && Class73.anInt4776 > 2) || method2485(-100))) i_14_ = 2
                 if (i_14_ == 2 && Class73.anInt4776 > 0 && class348_sub45 != null) {
-                    if (RegionSceneLoader.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) TextureFormatInfo.method2291((-124).toByte(), class348_sub45.method3308((-127).toByte()), class348_sub45.method3311(-104))
+                    if (RegionSceneLoader.aClass46_3701 == null && HashLinkedListNode.anInt7059 == 0) TextureFormatInfo.method2291((-124).toByte(), class348_sub45.method3308((-127).toByte()), class348_sub45.method3311(-104))
                     else NpcEntityUpdater.anInt3655 = 2
                 }
                 if (i_14_ == 0) {
                     if (IntHashSet.aClass348_Sub42_Sub12_3963 != null) method1731(1)
                     else if (RenderNode.aBoolean9722) TileRenderState.method2678(-2049)
                 }
-                if (RegionSceneLoader.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) {
+                if (RegionSceneLoader.aClass46_3701 == null && HashLinkedListNode.anInt7059 == 0) {
                     RectangleRegion.aClass348_Sub42_Sub12_1946 = null
                     NpcEntityUpdater.anInt3655 = 0
                 }

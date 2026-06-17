@@ -21,7 +21,7 @@ class CameraDistanceOptionState : GraphicsOptionState {
         return 1
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1712(i: Int, i_13_: Int) {
         val i_14_ = 87 / ((82 - i) / 35)
@@ -35,7 +35,7 @@ class CameraDistanceOptionState : GraphicsOptionState {
         return this.anInt3138
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     companion object {
         @JvmField
@@ -66,7 +66,7 @@ class CameraDistanceOptionState : GraphicsOptionState {
             var i_2_ = 3072
             if (ParticleSystemRenderer.aBoolean3870) {
                 i_2_ = 4096
-                if (Class348_Sub49_Sub1.aBoolean9746) i_1_ = 2048
+                if (FloatBuffer.aBoolean9746) i_1_ = 2048
             }
             if (Class76.aFloat1287 < i_1_.toFloat()) Class76.aFloat1287 = i_1_.toFloat()
             if (Class76.aFloat1287 > i_2_.toFloat()) Class76.aFloat1287 = i_2_.toFloat()
@@ -80,7 +80,7 @@ class CameraDistanceOptionState : GraphicsOptionState {
             val i_4_ = AsyncTaskHandle.anInt2578 shr 9
             val i_5_ = CollisionMapAccessor.method2064(FrameStatsReset.anInt5799, Class355.anInt4372, 11219, AsyncTaskHandle.anInt2578)
             var i_6_ = 0
-            if (i_3_ > 3 && i_4_ > 3 && -4 + Class367_Sub4.anInt7319 > i_3_ && Class348_Sub40_Sub3.anInt9109 - 4 > i_4_) {
+            if (i_3_ > 3 && i_4_ > 3 && -4 + Class367_Sub4.anInt7319 > i_3_ && RangeThresholdTextureNode.anInt9109 - 4 > i_4_) {
                 var i_7_ = i_3_ - 4
                 while (i_3_ - -4 >= i_7_) {
                     for (i_8_ in -4 + i_4_..4 + i_4_) {
@@ -99,8 +99,8 @@ class CameraDistanceOptionState : GraphicsOptionState {
             var i_12_ = 1536 * (i_6_ shr 2)
             if (i_12_ > 786432) i_12_ = 786432
             if (i_12_ < i) i_12_ = 262144
-            if (Class348_Sub35.anInt6979 < i_12_) Class348_Sub35.anInt6979 += (i_12_ - Class348_Sub35.anInt6979) / 24
-            else if (Class348_Sub35.anInt6979 > i_12_) Class348_Sub35.anInt6979 += (-Class348_Sub35.anInt6979 + i_12_) / 80
+            if (IntKeyNode.anInt6979 < i_12_) IntKeyNode.anInt6979 += (i_12_ - IntKeyNode.anInt6979) / 24
+            else if (IntKeyNode.anInt6979 > i_12_) IntKeyNode.anInt6979 += (-IntKeyNode.anInt6979 + i_12_) / 80
         }
     }
 }

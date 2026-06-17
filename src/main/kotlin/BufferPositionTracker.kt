@@ -15,7 +15,7 @@ abstract class BufferPositionTracker {
             if (i.toLong() < l_1_) TexGenMaterialPass.method2161(61.toByte(), l_1_)
             return method1859(71, l)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "tb.H(" + i + ',' + l + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "tb.H(" + i + ',' + l + ')')
         }
     }
 
@@ -33,7 +33,7 @@ abstract class BufferPositionTracker {
         fun method1857(i: Byte): Long {
             anInt3148++
             if (i.toInt() != -45) return -58L
-            return Class348_Sub8.aBufferPositionTracker_6660!!.method1862(-18931)
+            return FacingDirectionNode.aBufferPositionTracker_6660!!.method1862(-18931)
         }
 
         @JvmStatic

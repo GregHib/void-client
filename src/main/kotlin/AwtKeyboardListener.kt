@@ -67,7 +67,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
 
     private fun method2702(i: Int, i_4_: Int, c: Char, i_5_: Int) {
         anInt6532++
-        val class348_sub11 = Class348_Sub11()
+        val class348_sub11 = KeyEventNode()
         class348_sub11.anInt4771 = i_5_
         class348_sub11.anInt4767 = i
         class348_sub11.aChar4761 = c
@@ -111,12 +111,12 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         anInt6534++
         aNodeDeque_6541.method1996(110)
         if (i >= 51) {
-            var class348_sub11 = aNodeDeque_6542!!.method1997(8) as Class348_Sub11?
+            var class348_sub11 = aNodeDeque_6542!!.method1997(8) as KeyEventNode?
             while (class348_sub11 != null) {
                 class348_sub11.anInt4766 = method2704(127.toByte())
                 if (class348_sub11.anInt4771 == 0) {
                     if (!aBooleanArray6543!![class348_sub11.anInt4767]) {
-                        val class348_sub11_10_ = Class348_Sub11()
+                        val class348_sub11_10_ = KeyEventNode()
                         class348_sub11_10_.anInt4767 = class348_sub11.anInt4767
                         class348_sub11_10_.anInt4771 = 0
                         class348_sub11_10_.aChar4761 = '\u0000'
@@ -131,7 +131,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
                     if (class348_sub11.anInt4771 == -1) {
                         for (i_11_ in 0..111) {
                             if (aBooleanArray6543!![i_11_]) {
-                                val class348_sub11_12_ = Class348_Sub11()
+                                val class348_sub11_12_ = KeyEventNode()
                                 class348_sub11_12_.aChar4761 = '\u0000'
                                 class348_sub11_12_.anInt4767 = i_11_
                                 class348_sub11_12_.anInt4766 = (class348_sub11.anInt4766)
@@ -146,7 +146,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
                     aNodeDeque_6541.method1999(class348_sub11, -20180)
                     aBooleanArray6543!![(class348_sub11.anInt4767)] = false
                 }
-                class348_sub11 = aNodeDeque_6542!!.method1997(8) as Class348_Sub11?
+                class348_sub11 = aNodeDeque_6542!!.method1997(8) as KeyEventNode?
             }
         }
     }
@@ -175,7 +175,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
     }
 
     init {
-        Class348_Sub49_Sub1.method3402((-82).toByte())
+        FloatBuffer.method3402((-82).toByte())
         method2706(component, 2)
     }
 

@@ -2,8 +2,8 @@ import MapLabelMenuEntry.Companion.method1041
 import ModelDefinitionCache.Companion.method1600
 import SceneProjector.Companion.method1635
 import GlTexture1D.Companion.method1974
-import Class348_Sub42_Sub9_Sub1.Companion.method3208
-import Class348_Sub8.Companion.method2774
+import HardKeyedCacheEntryReference.Companion.method3208
+import FacingDirectionNode.Companion.method2774
 import Class71.method729
 import ArbVertexProgram.Companion.method3443
 
@@ -17,7 +17,7 @@ class ImageFrameCache internal constructor(i: Int, i_9_: Int, i_10_: Int) {
     private val anInt4024: Int
     private var anInt4025 = 0
     private var anIntArrayArrayArray4029: Array<Array<IntArray?>?>?
-    private var aClass348_Sub24Array4033: Array<Class348_Sub24?>?
+    private var aClass348_Sub24Array4033: Array<ClientGameLoopNode?>?
     var aBoolean4035: Boolean
     fun method2553(i: Int): Array<Array<IntArray?>?>? {
         anInt4018++
@@ -39,12 +39,12 @@ class ImageFrameCache internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             if (class348_sub24 == null) {
                 this.aBoolean4035 = true
                 if (anInt4020 <= anInt4025) {
-                    val class348_sub24_7_ = aNodeDeque_4021!!.method1993(-126) as Class348_Sub24?
-                    class348_sub24 = Class348_Sub24(i_6_, class348_sub24_7_!!.anInt6875)
+                    val class348_sub24_7_ = aNodeDeque_4021!!.method1993(-126) as ClientGameLoopNode?
+                    class348_sub24 = ClientGameLoopNode(i_6_, class348_sub24_7_!!.anInt6875)
                     aClass348_Sub24Array4033!![class348_sub24_7_.anInt6872] = null
                     class348_sub24_7_.method2715(56.toByte())
                 } else {
-                    class348_sub24 = Class348_Sub24(i_6_, anInt4025)
+                    class348_sub24 = ClientGameLoopNode(i_6_, anInt4025)
                     anInt4025++
                 }
                 aClass348_Sub24Array4033!![i_6_] = class348_sub24
@@ -80,7 +80,7 @@ class ImageFrameCache internal constructor(i: Int, i_9_: Int, i_10_: Int) {
         this.aBoolean4035 = false
         anInt4020 = i
         anInt4024 = i_9_
-        aClass348_Sub24Array4033 = arrayOfNulls<Class348_Sub24>(anInt4024)
+        aClass348_Sub24Array4033 = arrayOfNulls<ClientGameLoopNode>(anInt4024)
         anIntArrayArrayArray4029 = Array<Array<IntArray?>?>(anInt4020) { Array<IntArray?>(3) { IntArray(i_10_) } }
     }
 
@@ -112,7 +112,7 @@ class ImageFrameCache internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             if (i.toInt() != -45) anInt4032 = 61
             anInt4030++
             if (WidgetRedrawTracker.anInt3931 == 1 || WidgetRedrawTracker.anInt3931 == 3 || (WidgetRedrawTracker.anInt3931 != Class83.anInt1447 && (WidgetRedrawTracker.anInt3931 == 0 || Class83.anInt1447 == 0))) {
-                Class348_Sub32.anInt6930 = 0
+                TerrainShadowBuilderGl2.anInt6930 = 0
                 ModelDefinitionLoader.anInt2057 = 0
                 NpcEntityUpdater.aClass356_3654!!.method3481(0)
             }
@@ -139,7 +139,7 @@ class ImageFrameCache internal constructor(i: Int, i_9_: Int, i_10_: Int) {
                 i_4_ = ScrollingWidgetComponentNode.anInt8387
             }
             if (bool != false) aIntRange_4027 = null
-            if ((class318_sub1_sub3_sub3.x < 512) || class318_sub1_sub3_sub3.y < 512 || (-512 + Class367_Sub4.anInt7319 * 512 <= class318_sub1_sub3_sub3.x) || (-512 + Class348_Sub40_Sub3.anInt9109 * 512 <= class318_sub1_sub3_sub3.y)) {
+            if ((class318_sub1_sub3_sub3.x < 512) || class318_sub1_sub3_sub3.y < 512 || (-512 + Class367_Sub4.anInt7319 * 512 <= class318_sub1_sub3_sub3.x) || (-512 + RangeThresholdTextureNode.anInt9109 * 512 <= class318_sub1_sub3_sub3.y)) {
                 class318_sub1_sub3_sub3.anInt10291 = -1
                 class318_sub1_sub3_sub3.anInt10300 = 0
                 i_4_ = 0
@@ -152,7 +152,7 @@ class ImageFrameCache internal constructor(i: Int, i_9_: Int, i_10_: Int) {
                 class318_sub1_sub3_sub3.y = (512 * (class318_sub1_sub3_sub3.anIntArray10317!![0]) + class318_sub1_sub3_sub3.method2436(88.toByte()) * 256)
                 class318_sub1_sub3_sub3.method2427(70)
             }
-            if ((LocalPlayerState.aPlayer_1907 == class318_sub1_sub3_sub3) && (class318_sub1_sub3_sub3.x < 6144 || class318_sub1_sub3_sub3.y < 6144 || (class318_sub1_sub3_sub3.x >= 512 * (Class367_Sub4.anInt7319 + -12)) || (512 * (Class348_Sub40_Sub3.anInt9109 - 12) <= class318_sub1_sub3_sub3.y))) {
+            if ((LocalPlayerState.aPlayer_1907 == class318_sub1_sub3_sub3) && (class318_sub1_sub3_sub3.x < 6144 || class318_sub1_sub3_sub3.y < 6144 || (class318_sub1_sub3_sub3.x >= 512 * (Class367_Sub4.anInt7319 + -12)) || (512 * (RangeThresholdTextureNode.anInt9109 - 12) <= class318_sub1_sub3_sub3.y))) {
                 class318_sub1_sub3_sub3.anInt10291 = -1
                 i_3_ = -1
                 class318_sub1_sub3_sub3.anInt10300 = 0

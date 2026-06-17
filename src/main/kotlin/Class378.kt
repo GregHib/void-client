@@ -682,7 +682,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
     }
 
     override fun method3940(i: Int) {
-        if (anIDirect3DVertexShader9794 == null && ((this.aConfigFlagUtilArray8113[this.anInt8175]) != Class348_Sub42_Sub18.aConfigFlagUtil_9685)) {
+        if (anIDirect3DVertexShader9794 == null && ((this.aConfigFlagUtilArray8113[this.anInt8175]) != ParticleEmitterListNode.aConfigFlagUtil_9685)) {
             if (LightDetailOptionState.aConfigFlagUtil_6030 == (this.aConfigFlagUtilArray8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797!!, i))
             else this.anIDirect3DDevice9810!!.SetTransform(16 - -this.anInt8175, this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(aFloatArray9797!!, i xor 0x1))
             val i_72_: Int = method3963(594, (this.aConfigFlagUtilArray8113[this.anInt8175]))
@@ -720,7 +720,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3950(i: Int) {
         if (i != 0) anIntArray9809 = null
-        if (Class348_Sub4.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) {
+        if (ClientMachineInfo.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 5)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 6)
         } else if (this.aObjectByteSerializerHolder_8163 == Class69.aObjectByteSerializerHolder_1201) {
@@ -770,10 +770,10 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         private fun method3953(cameraRotationStub: CameraRotationStub?, i: Byte): Int {
             if (i.toInt() != -111) Companion.method3952(null, (-118).toByte())
             if (cameraRotationStub == TileTransform.aCameraRotationStub_3217) return 2
-            if (Class348_Sub5_Sub1.aCameraRotationStub_8832 == cameraRotationStub) return 3
+            if (GlBloomEffect.aCameraRotationStub_8832 == cameraRotationStub) return 3
             if (LocTypeConfig.aCameraRotationStub_3572 == cameraRotationStub) return 1
             if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) return 4
-            if (Class348_Sub42_Sub16.aCameraRotationStub_9661 == cameraRotationStub) return 6
+            if (AsyncResourceRequest.aCameraRotationStub_9661 == cameraRotationStub) return 6
             if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) return 5
             throw IllegalArgumentException("")
         }
@@ -782,8 +782,8 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             if (RenderQueueState.aRenderConfigFactory_6519 == renderConfigFactory) return 2
             if (ParticleSystemState.aRenderConfigFactory_2207 == renderConfigFactory) return 4
             if (MediaStreamClient.aRenderConfigFactory_3196 != renderConfigFactory) {
-                if (renderConfigFactory != Class348_Sub23_Sub2.aRenderConfigFactory_9011) {
-                    if (renderConfigFactory == Class348_Sub7.aRenderConfigFactory_6644) return 10
+                if (renderConfigFactory != TheoraVideoStream.aRenderConfigFactory_9011) {
+                    if (renderConfigFactory == RegionTileNode.aRenderConfigFactory_6644) return 10
                 } else return 7
             } else return 26
             if (i <= 16) method3955(-116, null)
@@ -840,10 +840,10 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         @JvmStatic
         fun method3958(i: Int, class68: Class68?, textureFormatInfo: TextureFormatInfo?): Int {
             if (class68 == Class68.aClass68_1183) {
-                if (Class348_Sub45.aTextureFormatInfo_7103 != textureFormatInfo) {
+                if (TimedRecordAccessor.aTextureFormatInfo_7103 != textureFormatInfo) {
                     if (GroundItemRenderState.aTextureFormatInfo_1662 == textureFormatInfo) return 21
-                    if (Class348_Sub40_Sub38.aTextureFormatInfo_9471 == textureFormatInfo) return 28
-                    if (Class348_Sub40_Sub22.aTextureFormatInfo_9303 == textureFormatInfo) return 50
+                    if (ClampTextureNode.aTextureFormatInfo_9471 == textureFormatInfo) return 28
+                    if (CellNoiseTextureNode.aTextureFormatInfo_9303 == textureFormatInfo) return 50
                     if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 51
                     if (textureFormatInfo == SceneLinkedListNode.aTextureFormatInfo_3977) return 77
                 } else return 22
@@ -857,7 +857,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             if (WidgetRedrawRegion.aClass70_4247 == class70) return 2
             if (class70 == GlIndexBufferArb.aClass70_8503) return 0
             if (SceneObjectEntity.aClass70_8737 != class70) {
-                if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 3
+                if (RenderListTextureNode.aClass70_9485 == class70) return 3
             } else return 1
             throw IllegalArgumentException()
         }
@@ -866,7 +866,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             if (i != 594) return 7
             if (configFlagUtil == GlElementArrayBuffer.aConfigFlagUtil_4835) return 1
             if (configFlagUtil != LightDetailOptionState.aConfigFlagUtil_6030) {
-                if (configFlagUtil != Class348_Sub40_Sub38.aConfigFlagUtil_9477) {
+                if (configFlagUtil != ClampTextureNode.aConfigFlagUtil_9477) {
                     if (Class57.aConfigFlagUtil_1051 == configFlagUtil) return 4
                     if (configFlagUtil == WaterDetailOptionState.aConfigFlagUtil_5989) return 256
                 } else return 3

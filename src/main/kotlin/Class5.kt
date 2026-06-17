@@ -25,7 +25,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         anInt4639++
         if (i == 10286) {
             val class143 = RangedGraphicsOptionState.method1766((-85).toByte(), (this.aClass369_4635!!.anInt4965), aClass45_4631)
-            aFont_4637 = (Class348_Sub8.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aClass45_4632!!, (this.aClass369_4635!!.anInt4965)), true))
+            aFont_4637 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aClass45_4632!!, (this.aClass369_4635!!.anInt4965)), true))
         }
     }
 
@@ -73,7 +73,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
             this.aClass45_4632 = class45
             this.aClass369_4635 = class369
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("gl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_15_ != null) "{...}" else "null") + ',' + (if (class369 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("gl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_15_ != null) "{...}" else "null") + ',' + (if (class369 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -98,9 +98,9 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         var anInt4641: Int = 0
 
         @JvmStatic
-        fun method179(i: Int, class348_sub49: Class348_Sub49): Class369_Sub1 {
+        fun method179(i: Int, class348_sub49: Buffer): Class369_Sub1 {
             anInt4629++
-            val class369 = Class348_Sub16_Sub2.method2834((-127).toByte(), class348_sub49)
+            val class369 = PcmStreamBuffer.method2834((-127).toByte(), class348_sub49)
             val i_3_ = class348_sub49.readInt((-126).toByte())
             val i_4_ = class348_sub49.readInt((-126).toByte())
             if (i != 16533) aClass60_4636 = null
@@ -118,17 +118,17 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         fun method181(bool: Boolean, npc: Npc?) {
             if (bool != true) method180(54)
             anInt4627++
-            var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? Class348_Sub9?
+            var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? CharacterRenderState?
             while (class348_sub9 != null) {
                 if ((class348_sub9.aNpc_6691) == npc) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null
                     }
                     class348_sub9.method2715(27.toByte())
                     break
                 }
-                class348_sub9 = (Client.aNodeDeque_5185!!.method1990(78.toByte()) as? Class348_Sub9?)
+                class348_sub9 = (Client.aNodeDeque_5185!!.method1990(78.toByte()) as? CharacterRenderState?)
             }
         }
     }

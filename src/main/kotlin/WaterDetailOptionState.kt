@@ -11,9 +11,9 @@ class WaterDetailOptionState : GraphicsOptionState {
         if (this.anInt3138 < 0 || this.anInt3138 > 2) this.anInt3138 = method1710(20014)
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1712(i: Int, i_8_: Int) {
         this.anInt3138 = i_8_
@@ -71,7 +71,7 @@ class WaterDetailOptionState : GraphicsOptionState {
             if (i <= 89) anInt5994 = -75
             SceneryDetailOptionState.aCircleRasterizer_6098 = null
             HeapInfoRecord.aCircleRasterizer_4938 = null
-            Class348_Sub42_Sub10.aCircleRasterizer_9571 = null
+            ParameterizedText.aCircleRasterizer_9571 = null
         }
 
         @JvmStatic
@@ -88,28 +88,28 @@ class WaterDetailOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1781(i: Int, i_1_: Int, i_2_: Int): Int {
             anInt5983++
-            if (Class348_Sub31.anInt6923 == -1) return 1
+            if (AbstractFrameBufferSurface.anInt6923 == -1) return 1
             if (i != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {
-                GlTexture2DRegion.method1971(-2, LocalizedText.aLocalizedText_3496!!.method2063(Class348_Sub33.anInt6967, 544), true, i)
+                GlTexture2DRegion.method1971(-2, LocalizedText.aLocalizedText_3496!!.method2063(AnimationFrameDefinition.anInt6967, 544), true, i)
                 if (i != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) return -1
             }
             try {
                 val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
-                Class362.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aRenderer6654)
-                val class124 = ParticleConfigParser.method2277(0, RasterSprite.aClass45_5207!!, Class348_Sub31.anInt6923, -1)
+                Class362.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(AnimationFrameDefinition.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
+                val class124 = ParticleConfigParser.method2277(0, RasterSprite.aClass45_5207!!, AbstractFrameBufferSurface.anInt6923, -1)
                 val l = Class62.method599(-88)
-                Class348_Sub8.aRenderer6654!!.la()
-                SettingsCrcWriter.aAbstractCameraTransform_2123!!.method894(0, Class348_Sub23_Sub2.anInt9037, 0)
-                Class348_Sub8.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
-                Class348_Sub8.aRenderer6654!!.DA(dimension.width / 2, dimension.height / 2, 512, 512)
-                Class348_Sub8.aRenderer6654!!.xa(1.0f)
+                FacingDirectionNode.aRenderer6654!!.la()
+                SettingsCrcWriter.aAbstractCameraTransform_2123!!.method894(0, TheoraVideoStream.anInt9037, 0)
+                FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
+                FacingDirectionNode.aRenderer6654!!.DA(dimension.width / 2, dimension.height / 2, 512, 512)
+                FacingDirectionNode.aRenderer6654!!.xa(1.0f)
                 if (i_1_ >= -66) aModelLightingConfig_5990 = null
-                Class348_Sub8.aRenderer6654!!.ZA(16777215, 0.5f, 0.5f, 20.0f, -50.0f, 30.0f)
-                val class64 = Class348_Sub8.aRenderer6654!!.method3625(class124, 2048, 64, 64, 768)
+                FacingDirectionNode.aRenderer6654!!.ZA(16777215, 0.5f, 0.5f, 20.0f, -50.0f, 30.0f)
+                val class64 = FacingDirectionNode.aRenderer6654!!.method3625(class124, 2048, 64, 64, 768)
                 var i_3_ = 0
                 while_80_@ for (i_4_ in 0..499) {
-                    Class348_Sub8.aRenderer6654!!.GA(0)
-                    Class348_Sub8.aRenderer6654!!.ya()
+                    FacingDirectionNode.aRenderer6654!!.GA(0)
+                    FacingDirectionNode.aRenderer6654!!.ya()
                     for (i_5_ in 15 downTo 0) {
                         for (i_6_ in 0..i_5_) {
                             Class50_Sub1.aAbstractCameraTransform_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * ArchiveFileConditionWrapper.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * ArchiveFileConditionWrapper.anInt3465)
@@ -119,10 +119,10 @@ class WaterDetailOptionState : GraphicsOptionState {
                         }
                     }
                 }
-                Class348_Sub8.aRenderer6654!!.method3633()
+                FacingDirectionNode.aRenderer6654!!.method3633()
                 val l_7_ = (1000 * i_3_).toLong() / (Class62.method599(-86) + -l)
-                Class348_Sub8.aRenderer6654!!.GA(0)
-                Class348_Sub8.aRenderer6654!!.ya()
+                FacingDirectionNode.aRenderer6654!!.GA(0)
+                FacingDirectionNode.aRenderer6654!!.ya()
                 return l_7_.toInt()
             } catch (throwable: Throwable) {
                 throwable.printStackTrace()

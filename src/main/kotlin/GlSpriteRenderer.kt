@@ -1,6 +1,6 @@
 import AbstractCameraTransform.Companion.method904
 import PerlinTextureProvider.Companion.method1401
-import Class348_Sub40_Sub32.Companion.method3132
+import InvertTextureNode.Companion.method3132
 import jaggl.OpenGL.Companion.glBegin
 import jaggl.OpenGL.Companion.glColor3f
 import jaggl.OpenGL.Companion.glColor4ub
@@ -522,7 +522,7 @@ class GlSpriteRenderer : AbstractModelRenderer {
             aHa_Sub2_8430 = var_ha_Sub2
             aClass258_Sub3_Sub1_8434 = method3132(`is`, i_110_, i_111_, i_109_, i, var_ha_Sub2, false, 12.toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nda.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_109_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_110_ + ',' + i_111_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nda.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_109_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_110_ + ',' + i_111_ + ')'))
         }
     }
 
@@ -576,7 +576,7 @@ class GlSpriteRenderer : AbstractModelRenderer {
             try {
                 return l xor l_104_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "nda.Q($l,$l_104_)")
+                throw SoundBankPatch.method2929(runtimeexception, "nda.Q($l,$l_104_)")
             }
         }
     }

@@ -51,7 +51,7 @@ object SceneTilePlaneManager {
     fun method260(bool: Boolean): Int {
         if (bool != false) aClass45_233 = null
         anInt232++
-        if (Class348_Sub49.anInt7207 == 1) return Class348_Sub40_Sub8.anInt9157
+        if (Buffer.anInt7207 == 1) return PerlinNoiseTextureNode.anInt9157
         return 0
     }
 

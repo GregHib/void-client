@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class RangedGraphicsOptionState : GraphicsOptionState {
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1716(bool: Boolean) {
         anInt5941++
@@ -34,7 +34,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
         return 3
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     companion object {
         @JvmField
@@ -75,11 +75,11 @@ class RangedGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1761(i: Int) {
             anInt5935++
-            Class348_Sub47.method3324(Class348_Sub8.aRenderer6654, 105.toByte(), Class367_Sub11.anInt7396.toLong())
+            OutgoingPacketNode.method3324(FacingDirectionNode.aRenderer6654, 105.toByte(), Class367_Sub11.anInt7396.toLong())
             if (i != 85) anInt5943 = -99
             if (RenderNode.anInt9721 != -1) Class75_Sub1.method769(RenderNode.anInt9721, 118.toByte())
             var i_6_ = 0
-            while (Class348_Sub38.anInt7008 > i_6_) {
+            while (TerrainShadowBuilderGl3.anInt7008 > i_6_) {
                 if (GzipDecompressor.aBooleanArray2076!![i_6_]) LocDefinitionCache.aBooleanArray3438!![i_6_] = true
                 SizeBoundedSoftCache.aBooleanArray2326!![i_6_] = GzipDecompressor.aBooleanArray2076!![i_6_]
                 GzipDecompressor.aBooleanArray2076!![i_6_] = false
@@ -87,24 +87,24 @@ class RangedGraphicsOptionState : GraphicsOptionState {
             }
             Class58.anInt1064 = Class367_Sub11.anInt7396
             if (RenderNode.anInt9721 != -1) {
-                Class348_Sub38.anInt7008 = 0
+                TerrainShadowBuilderGl3.anInt7008 = 0
                 Class88.method842(false)
             }
-            Class348_Sub8.aRenderer6654!!.la()
-            Class348_Sub42_Sub20.method3281(77.toByte(), Class348_Sub8.aRenderer6654!!)
+            FacingDirectionNode.aRenderer6654!!.la()
+            SpriteRenderEntry.method3281(77.toByte(), FacingDirectionNode.aRenderer6654!!)
             var i_7_ = ScriptCompilerThread.method1053(3112)
             if (i_7_ == -1) i_7_ = Class362.anInt4458
-            if (i_7_ == -1) i_7_ = Class348_Sub42_Sub16_Sub1.anInt10447
+            if (i_7_ == -1) i_7_ = StreamingResourceRequest.anInt10447
             CacheArchiveIndexLoader.method338(0, i_7_)
-            Class348_Sub51.anInt7267 = 0
+            DisplaySettingsConfig.anInt7267 = 0
         }
 
         @JvmStatic
         fun method1762(i: Int, i_10_: Int, i_11_: Int, i_12_: Int): Int {
             val i_13_ = 56 / ((i - 74) / 43)
             anInt5947++
-            if ((0x8 and Class348_Sub33.aByteArrayArrayArray6962!![i_10_]!![i_12_]!![i_11_].toInt()) != 0) return 0
-            if (i_10_ > 0 && ((0x2 and Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_12_]!![i_11_].toInt()) != 0)) return i_10_ + -1
+            if ((0x8 and AnimationFrameDefinition.aByteArrayArrayArray6962!![i_10_]!![i_12_]!![i_11_].toInt()) != 0) return 0
+            if (i_10_ > 0 && ((0x2 and AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_12_]!![i_11_].toInt()) != 0)) return i_10_ + -1
             return i_10_
         }
 

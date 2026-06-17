@@ -13,7 +13,7 @@ class Class83 internal constructor(var_ha_Sub2: OpenGlRenderer) {
 
     init {
         this.aBoolean1442 = var_ha_Sub2.aBoolean7831
-        Class348_Sub37.method3030(8, var_ha_Sub2)
+        HashTableContainer.method3030(8, var_ha_Sub2)
         if (this.aBoolean1442) {
             var `is` = method461(false, GlShaderProgramHandle.anObject4177, 53146732)
             this.aClass258_Sub1_1440 = GlTexture3D(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)

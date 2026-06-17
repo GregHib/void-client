@@ -45,21 +45,21 @@ class DragDropController {
                 var i_3_ = i_1_ + GlTexture1D.aClass373_8552!!.method3594(80.toByte())
                 i_3_ -= ModelDefinitionCache.anInt2872
                 i_2_ -= SceneEntityModel.anInt6411
-                if (i_2_ < Class348_Sub40_Sub37.anInt9461) i_2_ = Class348_Sub40_Sub37.anInt9461
+                if (i_2_ < BoxBlurTextureNode.anInt9461) i_2_ = BoxBlurTextureNode.anInt9461
                 if (i == -30206) {
-                    if (i_2_ - -RegionSceneLoader.aClass46_3701!!.anInt709 > (Class348_Sub40_Sub37.anInt9461 - -CalendarUtil.aClass46_4130!!.anInt709)) i_2_ = (CalendarUtil.aClass46_4130!!.anInt709 + (Class348_Sub40_Sub37.anInt9461 + -RegionSceneLoader.aClass46_3701!!.anInt709))
+                    if (i_2_ - -RegionSceneLoader.aClass46_3701!!.anInt709 > (BoxBlurTextureNode.anInt9461 - -CalendarUtil.aClass46_4130!!.anInt709)) i_2_ = (CalendarUtil.aClass46_4130!!.anInt709 + (BoxBlurTextureNode.anInt9461 + -RegionSceneLoader.aClass46_3701!!.anInt709))
                     if (i_3_ < Class40.anInt558) i_3_ = Class40.anInt558
                     if (RegionSceneLoader.aClass46_3701!!.anInt789 + i_3_ > (Class40.anInt558 - -CalendarUtil.aClass46_4130!!.anInt789)) i_3_ = (-RegionSceneLoader.aClass46_3701!!.anInt789 + (Class40.anInt558 - -CalendarUtil.aClass46_4130!!.anInt789))
-                    val i_4_ = (-Class348_Sub40_Sub37.anInt9461 + (i_2_ - -CalendarUtil.aClass46_4130!!.anInt747))
+                    val i_4_ = (-BoxBlurTextureNode.anInt9461 + (i_2_ - -CalendarUtil.aClass46_4130!!.anInt747))
                     val i_5_ = (-Class40.anInt558 + (i_3_ + CalendarUtil.aClass46_4130!!.anInt755))
                     if (GlTexture1D.aClass373_8552!!.method3593(94)) {
                         if (RegionSceneLoader.aClass46_3701!!.anInt703 < SceneEntity.anInt6392) {
                             val i_6_ = i_2_ + -NativeRenderer.anInt8001
-                            val i_7_ = -Class348_Sub40_Sub13.anInt9203 + i_3_
+                            val i_7_ = -GrayscaleEffect.anInt9203 + i_3_
                             if (RegionSceneLoader.aClass46_3701!!.anInt729 < i_6_ || (-RegionSceneLoader.aClass46_3701!!.anInt729 > i_6_) || (i_7_ > RegionSceneLoader.aClass46_3701!!.anInt729) || i_7_ < -RegionSceneLoader.aClass46_3701!!.anInt729) ParticleConfigParser.aBoolean3819 = true
                         }
                         if ((RegionSceneLoader.aClass46_3701!!.anObjectArray823 != null) && ParticleConfigParser.aBoolean3819) {
-                            val class348_sub36 = Class348_Sub36()
+                            val class348_sub36 = WidgetActionEntry()
                             class348_sub36.aClass46_6989 = RegionSceneLoader.aClass46_3701
                             class348_sub36.anInt6984 = i_4_
                             class348_sub36.anObjectArray6987 = (RegionSceneLoader.aClass46_3701!!.anObjectArray823)
@@ -70,7 +70,7 @@ class DragDropController {
                         if (ParticleConfigParser.aBoolean3819) {
                             TileRenderState.Companion.method2678(-2049)
                             if (RegionSceneLoader.aClass46_3701!!.anObjectArray692 != null) {
-                                val class348_sub36 = Class348_Sub36()
+                                val class348_sub36 = WidgetActionEntry()
                                 class348_sub36.aClass46_6983 = MapElementDecor.aClass46_10336
                                 class348_sub36.anInt6984 = i_4_
                                 class348_sub36.anObjectArray6987 = (RegionSceneLoader.aClass46_3701!!.anObjectArray692)
@@ -79,8 +79,8 @@ class DragDropController {
                                 method705(class348_sub36)
                             }
                             if (MapElementDecor.aClass46_10336 != null && (Client.method108(RegionSceneLoader.aClass46_3701) != null)) method173(-67, RegionSceneLoader.aClass46_3701, (MapElementDecor.aClass46_10336))
-                        } else if ((WallEntity.anInt8770 == 1 || method2485(-113)) && Class73.anInt4776 > 2) method191(true, (NativeRenderer.anInt8001 + SceneEntityModel.anInt6411), (ModelDefinitionCache.anInt2872 - -(Class348_Sub40_Sub13.anInt9203)))
-                        else if (method913(127.toByte())) method191(true, (NativeRenderer.anInt8001 + SceneEntityModel.anInt6411), (ModelDefinitionCache.anInt2872 + (Class348_Sub40_Sub13.anInt9203)))
+                        } else if ((WallEntity.anInt8770 == 1 || method2485(-113)) && Class73.anInt4776 > 2) method191(true, (NativeRenderer.anInt8001 + SceneEntityModel.anInt6411), (ModelDefinitionCache.anInt2872 - -(GrayscaleEffect.anInt9203)))
+                        else if (method913(127.toByte())) method191(true, (NativeRenderer.anInt8001 + SceneEntityModel.anInt6411), (ModelDefinitionCache.anInt2872 + (GrayscaleEffect.anInt9203)))
                         RegionSceneLoader.aClass46_3701 = null
                     }
                 }

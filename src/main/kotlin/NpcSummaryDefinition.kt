@@ -30,27 +30,27 @@ class NpcSummaryDefinition {
                 ModelDefinitionLoader.anInt2057 = 0
                 for (i_2_ in 0..<i_0_) {
                     val i_3_ = Class74.anIntArray1233!![i_2_]
-                    val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as Class348_Sub22).aNpc_6859)!!
+                    val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as NpcReference).aNpc_6859)!!
                     val i_4_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                     if (i_4_ == 0) {
                         Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_3_
-                        npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
+                        npc.anInt10306 = NullOggStream.anInt9041
                     } else {
                         val i_5_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 2)
                         if (i_5_ == 0) {
                             Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_3_
-                            npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
+                            npc.anInt10306 = NullOggStream.anInt9041
                             MinimapRectClipper.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_3_
                         } else if (i_5_ == 1) {
                             Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_3_
-                            npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
+                            npc.anInt10306 = NullOggStream.anInt9041
                             val i_6_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3)
                             npc.method2443(i_6_, 1, -10)
                             val i_7_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                             if (i_7_ == 1) MinimapRectClipper.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_3_
                         } else if (i_5_ == 2) {
                             Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_3_
-                            npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
+                            npc.anInt10306 = NullOggStream.anInt9041
                             if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1) == 1) {
                                 val i_9_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3)
                                 npc.method2443(i_9_, 2, -10)

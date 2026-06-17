@@ -130,7 +130,7 @@ class Class79 {
         return this.aBufferedMessageQueue_1348!!.method2079(this.anIntArray1377!![i_2_], -1)
     }
 
-    private fun method795(class348_sub49: Class348_Sub49, i: Int, i_4_: Int) {
+    private fun method795(class348_sub49: Buffer, i: Int, i_4_: Int) {
         if (i_4_ != 127) this.aBoolean1381 = true
         if (i == 1) {
             val i_5_ = class348_sub49.readUnsignedByte(255)
@@ -215,7 +215,7 @@ class Class79 {
                                                     while ((i_14_ > i_15_)) {
                                                         val i_16_ = (class348_sub49.readUnsignedByte(255))
                                                         val `is` = (IntArray(3).also { anIntArrayArray1388!![i_16_] = it })
-                                                        `is`[0] = (class348_sub49.readByte(Class348_Sub21.method2955(i_4_, -50))).toInt()
+                                                        `is`[0] = (class348_sub49.readByte(CameraSplineNode.method2955(i_4_, -50))).toInt()
                                                         `is`[1] = (class348_sub49.readByte(-113)).toInt()
                                                         `is`[2] = (class348_sub49.readByte(-84)).toInt()
                                                         i_15_++
@@ -278,10 +278,10 @@ class Class79 {
                                                                                             while (i_17_ > i_19_) {
                                                                                                 val bool = class348_sub49.readUnsignedByte(255) == 1
                                                                                                 val i_20_ = class348_sub49.readMedium(-1)
-                                                                                                val class348: Class348?
-                                                                                                if (!bool) class348 = Class348_Sub35(class348_sub49.readInt((-126).toByte()))
-                                                                                                else class348 = Class348_Sub50(class348_sub49.readString((-120).toByte()))
-                                                                                                aClass356_1386!!.method3483(61.toByte(), i_20_.toLong(), class348)
+                                                                                                val linkedListNode: LinkedListNode?
+                                                                                                if (!bool) linkedListNode = IntKeyNode(class348_sub49.readInt((-126).toByte()))
+                                                                                                else linkedListNode = StringCacheNode(class348_sub49.readString((-120).toByte()))
+                                                                                                aClass356_1386!!.method3483(61.toByte(), i_20_.toLong(), linkedListNode)
                                                                                                 i_19_++
                                                                                             }
                                                                                         }
@@ -321,7 +321,7 @@ class Class79 {
         return i == 18627
     }
 
-    fun method798(i: Int, class348_sub49: Class348_Sub49) {
+    fun method798(i: Int, class348_sub49: Buffer) {
         while (true) {
             val i_33_ = class348_sub49.readUnsignedByte(255)
             if (i_33_ == 0) break
@@ -377,21 +377,21 @@ class Class79 {
                             bool_47_ = bool_47_ or class17_51_.aBoolean242
                         }
                         if ((class17_51_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_53_ != -1 && i_53_ < (class17_51_.anIntArray237).size) {
-                            Class348_Sub23_Sub4.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
+                            KaraokeSubtitleStream.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
                             Class67.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
                             var i_55_ = class17_51_.anIntArray237[i_53_]
-                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_] = class87.method839(i_55_ ushr 16, 3)
+                            TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = class87.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
                             ParticleDefLoader.anIntArray2466!![i_50_] = i_55_
-                            if ((Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
-                                bool_46_ = bool_46_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3272(i_55_, 0)
-                                bool_45_ = bool_45_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3271(i_55_, 14)
-                                bool_48_ = bool_48_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3267((-99).toByte(), i_55_)
+                            if ((TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
+                                bool_46_ = bool_46_ or TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3272(i_55_, 0)
+                                bool_45_ = bool_45_ or TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3271(i_55_, 14)
+                                bool_48_ = bool_48_ or TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3267((-99).toByte(), i_55_)
                             }
                         } else {
-                            Class348_Sub23_Sub4.anIntArray9050!![i_50_] = 0
+                            KaraokeSubtitleStream.anIntArray9050!![i_50_] = 0
                             Class67.anIntArray4648!![i_50_] = 0
-                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_] = null
+                            TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = null
                             ParticleDefLoader.anIntArray2466!![i_50_] = -1
                         }
                     }
@@ -400,13 +400,13 @@ class Class79 {
             var i_56_ = -1
             var i_57_ = -1
             var i_58_ = 0
-            var class348_sub42_sub17: Class348_Sub42_Sub17? = null
-            var class348_sub42_sub17_59_: Class348_Sub42_Sub17? = null
+            var class348_sub42_sub17: TextureMaterialGroup? = null
+            var class348_sub42_sub17_59_: TextureMaterialGroup? = null
             var i_60_ = -1
             var i_61_ = -1
             var i_62_ = 0
-            var class348_sub42_sub17_63_: Class348_Sub42_Sub17? = null
-            var class348_sub42_sub17_64_: Class348_Sub42_Sub17? = null
+            var class348_sub42_sub17_63_: TextureMaterialGroup? = null
+            var class348_sub42_sub17_64_: TextureMaterialGroup? = null
             if (bool_44_) {
                 i_43_ = i_43_ or 0x20
                 if (widgetDefinition_36_ != null) {
@@ -530,7 +530,7 @@ class Class79 {
                     var i_80_ = 0
                     while ((i_80_ < aShortArray1328!!.size)) {
                         if (aByteArray1374 == null || aByteArray1374!!.size <= i_80_) class64.ia(aShortArray1328!![i_80_], aShortArray1352[i_80_])
-                        else class64.ia(aShortArray1328!![i_80_], (Class348_Sub42_Sub3.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
+                        else class64.ia(aShortArray1328!![i_80_], (LoadingScreenImageNode.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
                         i_80_++
                     }
                 }
@@ -572,11 +572,11 @@ class Class79 {
                     i_87_,
                     Class90.anIntArray1518!![i_86_],
                     ParticleDefLoader.anIntArray2466!![i_86_],
-                    (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_86_]),
+                    (TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
                     (ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_86_]),
                     (AudioResampler.aWidgetDefinitionArray2169s!![i_86_]!!.aBoolean242),
-                    Class348_Sub23_Sub4.anIntArray9050!![i_86_]
+                    KaraokeSubtitleStream.anIntArray9050!![i_86_]
                 )
                 i_86_++
                 i_87_ = i_87_ shl 1
@@ -603,7 +603,7 @@ class Class79 {
             var i_91_ = 0
             while (i_49_ > i_91_) {
                 ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_91_] = null
-                Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_91_] = null
+                TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_91_] = null
                 AudioResampler.aWidgetDefinitionArray2169s!![i_91_] = null
                 i_91_++
             }
@@ -611,7 +611,7 @@ class Class79 {
             class64_82_!!.s(i_40_)
             return class64_82_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(
+            throw SoundBankPatch.method2929(
                 runtimeexception,
                 ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
             )
@@ -622,7 +622,7 @@ class Class79 {
         anInt1378++
         if (aClass356_1386 == null) return string
         if (i.toInt() != 17) method801((-115).toByte(), -68, null)
-        val class348_sub50 = (aClass356_1386!!.method3480(i_92_.toLong(), i + -6025) as Class348_Sub50?)
+        val class348_sub50 = (aClass356_1386!!.method3480(i_92_.toLong(), i + -6025) as StringCacheNode?)
         if (class348_sub50 == null) return string
         return class348_sub50.aString7211
     }
@@ -677,7 +677,7 @@ class Class79 {
                 if (aShortArray1328 != null) {
                     var i_104_ = 0
                     while ((aShortArray1328!!.size > i_104_)) {
-                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) class64.ia(aShortArray1328!![i_104_], (Class348_Sub42_Sub3.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
+                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) class64.ia(aShortArray1328!![i_104_], (LoadingScreenImageNode.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
                         else class64.ia(aShortArray1328!![i_104_], aShortArray1352[i_104_])
                         i_104_++
                     }
@@ -699,7 +699,7 @@ class Class79 {
             class64!!.s(i_97_)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bb.H(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
         }
     }
 
@@ -707,7 +707,7 @@ class Class79 {
         anInt1326++
         if (aClass356_1386 == null) return i
         if (i_107_ <= 12) method805(46, 116, 126)
-        val class348_sub35 = aClass356_1386!!.method3480(i_106_.toLong(), -6008) as Class348_Sub35?
+        val class348_sub35 = aClass356_1386!!.method3480(i_106_.toLong(), -6008) as IntKeyNode?
         if (class348_sub35 == null) return i
         return class348_sub35.anInt6976
     }
@@ -778,16 +778,16 @@ class Class79 {
         @JvmStatic
         fun method797(i: Int, i_29_: Int, i_30_: Byte) {
             anInt1379++
-            if (Class348_Sub40_Sub6.anInt9139 != i_29_) {
+            if (DisplaceTextureNode.anInt9139 != i_29_) {
                 SceneEffectMarker.anIntArray6432 = IntArray(i_29_)
                 for (i_31_ in 0..<i_29_) SceneEffectMarker.anIntArray6432!![i_31_] = (i_31_ shl 12) / i_29_
                 SimpleBinaryOptionState.anInt6076 = i_29_ + -1
-                Class348_Sub40_Sub6.anInt9139 = i_29_
+                DisplaceTextureNode.anInt9139 = i_29_
                 MediaStreamClient.anInt3201 = 32 * i_29_
             }
             if (i_30_ <= 108) aClient1367 = null
             if (FixedFunctionMaterialPass.anInt6212 != i) {
-                if (Class348_Sub40_Sub6.anInt9139 != i) {
+                if (DisplaceTextureNode.anInt9139 != i) {
                     LightDetailOptionState.anIntArray6035 = IntArray(i)
                     for (i_32_ in 0..<i) LightDetailOptionState.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
                 } else LightDetailOptionState.anIntArray6035 = SceneEffectMarker.anIntArray6432
@@ -800,8 +800,8 @@ class Class79 {
         fun method802(i: Int, i_93_: Int, bool: Boolean): Boolean {
             if (bool != true) return false
             anInt1332++
-            if (i_93_ < 0 || i < 0 || i_93_ >= Class348_Sub33.aByteArrayArrayArray6962!![1]!!.size || i >= Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_93_]!!.size) return false
-            return (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_93_]!![i].toInt() and 0x2) != 0
+            if (i_93_ < 0 || i < 0 || i_93_ >= AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!!.size || i >= AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_93_]!!.size) return false
+            return (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_93_]!![i].toInt() and 0x2) != 0
         }
 
         @JvmStatic

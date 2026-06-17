@@ -1,5 +1,5 @@
 import ModelBatchBase.Companion.method1128
-import Class348_Sub40_Sub3.Companion.method3055
+import RangeThresholdTextureNode.Companion.method3055
 import jaggl.OpenGL.Companion.glGetTexImagei
 import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage2Df
@@ -33,7 +33,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
                 glPixelStorei(3314, 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
         }
     }
 
@@ -50,7 +50,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             } else this.method230(7365, i, `is`!!, i_6_, this.anInt5093)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 
@@ -69,7 +69,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             glTexSubImage2Df(this.anInt5093, 0, i_12_, i_10_, i_13_, i_14_, method3055(106, textureFormatInfo), 5121, fs, i_11_)
             glPixelStorei(3314, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.CA(" + i + ',' + i_9_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.CA(" + i + ',' + i_9_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
         }
     }
 
@@ -84,7 +84,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             glPixelStorei(3314, 0)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.T(" + i + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.T(" + i + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -135,7 +135,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             this.aClass377_5082!!.method3850(110.toByte(), this)
             glTexImage2Dub(this.anInt5093, 0, this.method228(113), i, i_47_, 0, method3055(113, this.aTextureFormatInfo_5084), method1128(-112, this.aClass68_5088), null, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
         }
     }
 
@@ -158,7 +158,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
                 glPixelStorei(3314, 0)
             } else this.method238(this.anInt5093, 1, i, fs, i_49_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_50_ + ',' + i_51_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_50_ + ',' + i_51_ + ')'))
         }
     }
 
@@ -223,36 +223,36 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         @JvmStatic
         fun method241(i: Byte) {
             anInt8617++
-            var i_16_ = Class348_Sub35.anInt6981 * 512 + 256
+            var i_16_ = IntKeyNode.anInt6981 * 512 + 256
             var i_17_ = 512 * CollisionMapAccessor.anInt3550 + 256
-            var i_18_ = (CollisionMapAccessor.method2064(i_16_, Class355.anInt4372, 11219, i_17_) + -Class348_Sub42_Sub4.anInt9515)
+            var i_18_ = (CollisionMapAccessor.method2064(i_16_, Class355.anInt4372, 11219, i_17_) + -ShortMatrixNode.anInt9515)
             if (GlTextureCubeMap.anInt8537 >= 100) {
                 Class59_Sub2_Sub2.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
-                GlslMaterialPass.anInt6246 = Class348_Sub35.anInt6981 * 512 + 256
-                ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
+                GlslMaterialPass.anInt6246 = IntKeyNode.anInt6981 * 512 + 256
+                ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -ShortMatrixNode.anInt9515)
             } else {
                 if (GlslMaterialPass.anInt6246 < i_16_) {
-                    GlslMaterialPass.anInt6246 += (Class348_Sub40_Sub31.anInt9406 + (GlTextureCubeMap.anInt8537 * (i_16_ + -GlslMaterialPass.anInt6246) / 1000))
+                    GlslMaterialPass.anInt6246 += (TileTextureNode.anInt9406 + (GlTextureCubeMap.anInt8537 * (i_16_ + -GlslMaterialPass.anInt6246) / 1000))
                     if (i_16_ < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = i_16_
                 }
                 if (GlslMaterialPass.anInt6246 > i_16_) {
-                    GlslMaterialPass.anInt6246 -= (Class348_Sub40_Sub31.anInt9406 - -(GlTextureCubeMap.anInt8537 * (-i_16_ + GlslMaterialPass.anInt6246) / 1000))
+                    GlslMaterialPass.anInt6246 -= (TileTextureNode.anInt9406 - -(GlTextureCubeMap.anInt8537 * (-i_16_ + GlslMaterialPass.anInt6246) / 1000))
                     if (GlslMaterialPass.anInt6246 < i_16_) GlslMaterialPass.anInt6246 = i_16_
                 }
                 if (ParticleSystemRenderer.anInt3855 < i_18_) {
-                    ParticleSystemRenderer.anInt3855 += ((-ParticleSystemRenderer.anInt3855 + i_18_) * GlTextureCubeMap.anInt8537 / 1000) + Class348_Sub40_Sub31.anInt9406
+                    ParticleSystemRenderer.anInt3855 += ((-ParticleSystemRenderer.anInt3855 + i_18_) * GlTextureCubeMap.anInt8537 / 1000) + TileTextureNode.anInt9406
                     if (i_18_ < ParticleSystemRenderer.anInt3855) ParticleSystemRenderer.anInt3855 = i_18_
                 }
                 if (Class59_Sub2_Sub2.anInt8685 < i_17_) {
-                    Class59_Sub2_Sub2.anInt8685 += (Class348_Sub40_Sub31.anInt9406 - -((i_17_ + -Class59_Sub2_Sub2.anInt8685) * GlTextureCubeMap.anInt8537 / 1000))
+                    Class59_Sub2_Sub2.anInt8685 += (TileTextureNode.anInt9406 - -((i_17_ + -Class59_Sub2_Sub2.anInt8685) * GlTextureCubeMap.anInt8537 / 1000))
                     if (Class59_Sub2_Sub2.anInt8685 > i_17_) Class59_Sub2_Sub2.anInt8685 = i_17_
                 }
                 if (i_18_ < ParticleSystemRenderer.anInt3855) {
-                    ParticleSystemRenderer.anInt3855 -= ((ParticleSystemRenderer.anInt3855 - i_18_) * GlTextureCubeMap.anInt8537 / 1000) + Class348_Sub40_Sub31.anInt9406
+                    ParticleSystemRenderer.anInt3855 -= ((ParticleSystemRenderer.anInt3855 - i_18_) * GlTextureCubeMap.anInt8537 / 1000) + TileTextureNode.anInt9406
                     if (i_18_ > ParticleSystemRenderer.anInt3855) ParticleSystemRenderer.anInt3855 = i_18_
                 }
                 if (Class59_Sub2_Sub2.anInt8685 > i_17_) {
-                    Class59_Sub2_Sub2.anInt8685 -= (Class348_Sub40_Sub31.anInt9406 + ((Class59_Sub2_Sub2.anInt8685 - i_17_) * GlTextureCubeMap.anInt8537 / 1000))
+                    Class59_Sub2_Sub2.anInt8685 -= (TileTextureNode.anInt9406 + ((Class59_Sub2_Sub2.anInt8685 - i_17_) * GlTextureCubeMap.anInt8537 / 1000))
                     if (i_17_ > Class59_Sub2_Sub2.anInt8685) Class59_Sub2_Sub2.anInt8685 = i_17_
                 }
             }
@@ -268,13 +268,13 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             if (i_23_ < 1024) i_23_ = 1024
             val i_24_ = 0x3fff and (-2607.5945876176133 * atan2(i_19_.toDouble(), i_21_.toDouble())).toInt()
             if (i_23_ > 3072) i_23_ = 3072
-            if (i_23_ > Class348_Sub42_Sub19.anInt9701) {
-                Class348_Sub42_Sub19.anInt9701 += (BloomGraphicsOptionState.anInt5973 * (i_23_ - Class348_Sub42_Sub19.anInt9701 shr 3) / 1000) + Class367_Sub11.anInt7403 shl 3
-                if (i_23_ < Class348_Sub42_Sub19.anInt9701) Class348_Sub42_Sub19.anInt9701 = i_23_
+            if (i_23_ > MinimapAreaMarkerNode.anInt9701) {
+                MinimapAreaMarkerNode.anInt9701 += (BloomGraphicsOptionState.anInt5973 * (i_23_ - MinimapAreaMarkerNode.anInt9701 shr 3) / 1000) + Class367_Sub11.anInt7403 shl 3
+                if (i_23_ < MinimapAreaMarkerNode.anInt9701) MinimapAreaMarkerNode.anInt9701 = i_23_
             }
-            if (Class348_Sub42_Sub19.anInt9701 > i_23_) {
-                Class348_Sub42_Sub19.anInt9701 -= (((-i_23_ + Class348_Sub42_Sub19.anInt9701 shr 3) * BloomGraphicsOptionState.anInt5973 / 1000) + Class367_Sub11.anInt7403) shl 3
-                if (Class348_Sub42_Sub19.anInt9701 < i_23_) Class348_Sub42_Sub19.anInt9701 = i_23_
+            if (MinimapAreaMarkerNode.anInt9701 > i_23_) {
+                MinimapAreaMarkerNode.anInt9701 -= (((-i_23_ + MinimapAreaMarkerNode.anInt9701 shr 3) * BloomGraphicsOptionState.anInt5973 / 1000) + Class367_Sub11.anInt7403) shl 3
+                if (MinimapAreaMarkerNode.anInt9701 < i_23_) MinimapAreaMarkerNode.anInt9701 = i_23_
             }
             var i_25_ = -Class5.anInt4638 + i_24_
             if (i_25_ > 8192) i_25_ -= 16384

@@ -72,7 +72,7 @@ class Class370 {
         var i: Int
         i = 0
         while (anIntArray4519[i] >= 0) {
-            i = (if (Class348_Sub10.method2788() != 0) anIntArray4519[i] else i + 1)
+            i = (if (VorbisAudioDecoder.method2788() != 0) anIntArray4519[i] else i + 1)
         }
         return anIntArray4519[i].inv()
     }
@@ -82,38 +82,38 @@ class Class370 {
     }
 
     init {
-        Class348_Sub10.method2789(24)
-        this.anInt4514 = Class348_Sub10.method2789(16)
-        anInt4518 = Class348_Sub10.method2789(24)
+        VorbisAudioDecoder.method2789(24)
+        this.anInt4514 = VorbisAudioDecoder.method2789(16)
+        anInt4518 = VorbisAudioDecoder.method2789(24)
         anIntArray4516 = IntArray(anInt4518)
-        val bool = Class348_Sub10.method2788() != 0
+        val bool = VorbisAudioDecoder.method2788() != 0
         if (bool) {
             var i = 0
-            var i_20_ = Class348_Sub10.method2789(5) + 1
+            var i_20_ = VorbisAudioDecoder.method2789(5) + 1
             while (i < anInt4518) {
-                val i_21_ = Class348_Sub10.method2789(CircleRasterizer.method2253(anInt4518 - i, 126))
+                val i_21_ = VorbisAudioDecoder.method2789(CircleRasterizer.method2253(anInt4518 - i, 126))
                 for (i_22_ in 0..<i_21_) anIntArray4516[i++] = i_20_
                 i_20_++
             }
         } else {
-            val bool_23_ = Class348_Sub10.method2788() != 0
+            val bool_23_ = VorbisAudioDecoder.method2788() != 0
             for (i in 0..<anInt4518) {
-                if (bool_23_ && Class348_Sub10.method2788() == 0) anIntArray4516[i] = 0
-                else anIntArray4516[i] = Class348_Sub10.method2789(5) + 1
+                if (bool_23_ && VorbisAudioDecoder.method2788() == 0) anIntArray4516[i] = 0
+                else anIntArray4516[i] = VorbisAudioDecoder.method2789(5) + 1
             }
         }
         method3579()
-        val i = Class348_Sub10.method2789(4)
+        val i = VorbisAudioDecoder.method2789(4)
         if (i > 0) {
-            val f = Class348_Sub10.method2786(Class348_Sub10.method2789(32))
-            val f_24_ = Class348_Sub10.method2786(Class348_Sub10.method2789(32))
-            val i_25_ = Class348_Sub10.method2789(4) + 1
-            val bool_26_ = Class348_Sub10.method2788() != 0
+            val f = VorbisAudioDecoder.method2786(VorbisAudioDecoder.method2789(32))
+            val f_24_ = VorbisAudioDecoder.method2786(VorbisAudioDecoder.method2789(32))
+            val i_25_ = VorbisAudioDecoder.method2789(4) + 1
+            val bool_26_ = VorbisAudioDecoder.method2788() != 0
             val i_27_: Int
             if (i == 1) i_27_ = method3580(anInt4518, this.anInt4514)
             else i_27_ = anInt4518 * this.anInt4514
             anIntArray4517 = IntArray(i_27_)
-            for (i_28_ in 0..<i_27_) anIntArray4517[i_28_] = Class348_Sub10.method2789(i_25_)
+            for (i_28_ in 0..<i_27_) anIntArray4517[i_28_] = VorbisAudioDecoder.method2789(i_25_)
             aFloatArrayArray4515 = Array<FloatArray?>(anInt4518) { FloatArray(this.anInt4514) }
             if (i == 1) {
                 for (i_29_ in 0..<anInt4518) {
@@ -146,7 +146,7 @@ class Class370 {
         private fun method3580(i: Int, i_18_: Int): Int {
             var i_19_: Int
             i_19_ = i.toDouble().pow(1.0 / i_18_.toDouble()).toInt() + 1
-            while (Class348_Sub49.method3331(i_18_, 64.toByte(), i_19_) > i) {
+            while (Buffer.method3331(i_18_, 64.toByte(), i_19_) > i) {
                 i_19_--
             }
             return i_19_

@@ -1,5 +1,5 @@
 import DetailLevelOptionState.Companion.method1837
-import Class348_Sub42_Sub8.Companion.method3194
+import CacheEntryReference.Companion.method3194
 
 /* Class183 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -28,7 +28,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
             `is` = aClass45_2461.method410(-1860, 1, i)
         }
         hslColorConfig = HslColorConfig()
-        if (`is` != null) hslColorConfig.method290(Class348_Sub49(`is`), -1)
+        if (`is` != null) hslColorConfig.method290(Buffer(`is`), -1)
         synchronized(aClass60_2458) {
             aClass60_2458.method582(hslColorConfig, i.toLong(), (-124).toByte())
         }
@@ -56,7 +56,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
             aClass45_2461 = class45
             aClass45_2461!!.method407(0, 1)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qe.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qe.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -78,12 +78,12 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
             if (class318_sub1 != null) {
                 for (i in 0..1) {
                     var class318_sub1_0_: SceneEntity? = null
-                    var class318_sub1_1_ = Class348.aClass318_Sub1Array4293!![i]
+                    var class318_sub1_1_ = LinkedListNode.aClass318_Sub1Array4293!![i]
                     while (class318_sub1_1_ != null) {
                         if (class318_sub1_1_ === class318_sub1) {
                             if (class318_sub1_0_ != null) class318_sub1_0_.aClass318_Sub1_6379 = (class318_sub1_1_.aClass318_Sub1_6379)
-                            else Class348.aClass318_Sub1Array4293!![i] = (class318_sub1_1_.aClass318_Sub1_6379)
-                            Class348_Sub16_Sub2.aBoolean8870 = true
+                            else LinkedListNode.aClass318_Sub1Array4293!![i] = (class318_sub1_1_.aClass318_Sub1_6379)
+                            PcmStreamBuffer.aBoolean8870 = true
                             return
                         }
                         class318_sub1_0_ = class318_sub1_1_
@@ -95,7 +95,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
                         if (class318_sub1_2_ === class318_sub1) {
                             if (class318_sub1_0_ != null) class318_sub1_0_.aClass318_Sub1_6379 = (class318_sub1_2_.aClass318_Sub1_6379)
                             else BackgroundWorkerThread.aClass318_Sub1Array3226!![i] = (class318_sub1_2_.aClass318_Sub1_6379)
-                            Class348_Sub16_Sub2.aBoolean8870 = true
+                            PcmStreamBuffer.aBoolean8870 = true
                             return
                         }
                         class318_sub1_0_ = class318_sub1_2_
@@ -107,7 +107,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
                         if (class318_sub1_3_ === class318_sub1) {
                             if (class318_sub1_0_ != null) class318_sub1_0_.aClass318_Sub1_6379 = (class318_sub1_3_.aClass318_Sub1_6379)
                             else OverlayColorTable.aClass318_Sub1Array1754!![i] = (class318_sub1_3_.aClass318_Sub1_6379!!)
-                            Class348_Sub16_Sub2.aBoolean8870 = true
+                            PcmStreamBuffer.aBoolean8870 = true
                             return
                         }
                         class318_sub1_0_ = class318_sub1_3_

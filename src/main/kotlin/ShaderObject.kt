@@ -23,29 +23,29 @@ open class ShaderObject {
                 glShaderSourceRawARB(l, `is`)
                 glCompileShaderARB(l)
                 if (i > -95) method2608(null, null, -27, 75)
-                glGetObjectParameterivARB(l, 35713, (Class348_Sub40_Sub2.anIntArray9096), 0)
-                if (Class348_Sub40_Sub2.anIntArray9096!![0] == 0) {
-                    if (Class348_Sub40_Sub2.anIntArray9096!![0] == 0) println("Shader compile failed:")
-                    glGetObjectParameterivARB(l, 35716, (Class348_Sub40_Sub2.anIntArray9096), 1)
-                    if (Class348_Sub40_Sub2.anIntArray9096!![1] > 1) {
-                        val is_1_ = ByteArray(Class348_Sub40_Sub2.anIntArray9096!![1])
-                        glGetInfoLogARB(l, (Class348_Sub40_Sub2.anIntArray9096!![1]), Class348_Sub40_Sub2.anIntArray9096, 0, is_1_, 0)
+                glGetObjectParameterivARB(l, 35713, (DirectionalStripeTextureNode.anIntArray9096), 0)
+                if (DirectionalStripeTextureNode.anIntArray9096!![0] == 0) {
+                    if (DirectionalStripeTextureNode.anIntArray9096!![0] == 0) println("Shader compile failed:")
+                    glGetObjectParameterivARB(l, 35716, (DirectionalStripeTextureNode.anIntArray9096), 1)
+                    if (DirectionalStripeTextureNode.anIntArray9096!![1] > 1) {
+                        val is_1_ = ByteArray(DirectionalStripeTextureNode.anIntArray9096!![1])
+                        glGetInfoLogARB(l, (DirectionalStripeTextureNode.anIntArray9096!![1]), DirectionalStripeTextureNode.anIntArray9096, 0, is_1_, 0)
                         println(String(is_1_))
                     }
-                    if (Class348_Sub40_Sub2.anIntArray9096!![0] == 0) {
+                    if (DirectionalStripeTextureNode.anIntArray9096!![0] == 0) {
                         glDeleteObjectARB(l)
                         return null
                     }
                 }
                 return Class39(class377, l, i_0_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dea.E(" + (if (class377 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("dea.E(" + (if (class377 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
             }
         }
 
-        fun method2609(i: Int, i_2_: Int): Class348_Sub42_Sub19? {
+        fun method2609(i: Int, i_2_: Int): MinimapAreaMarkerNode? {
             anInt4101++
-            var class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_2_.toLong(), (-68).toByte()) as Class348_Sub42_Sub19?)
+            var class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_2_.toLong(), (-68).toByte()) as MinimapAreaMarkerNode?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
             val `is` = CameraNodeList.aClass45_1743!!.method410(-1860, i_2_, 0)
             if (`is` == null || `is`.size <= 1) return null

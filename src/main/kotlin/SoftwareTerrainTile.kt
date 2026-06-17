@@ -25,7 +25,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     private var aByteArrayArray8232: Array<ByteArray?>?
     private var aFloat8233 = 0f
 
-    override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
+    override fun method3981(class348_sub1: AbstractTileShape, `is`: IntArray) {
         /* empty */
     }
 

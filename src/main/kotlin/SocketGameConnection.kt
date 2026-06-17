@@ -85,7 +85,7 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
         }
 
         @JvmStatic
-        fun method1708(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Byte, class348_sub9: Class348_Sub9) {
+        fun method1708(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Byte, class348_sub9: CharacterRenderState) {
             anInt5830++
             if (class348_sub9.anInt6685 != -1 || class348_sub9.anIntArray6697 != null) {
                 var i_7_ = 0
@@ -98,13 +98,13 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                 } else i_7_ += -class348_sub9.anInt6687 + i_5_
                 if (class348_sub9.anInt6694 == 0 || (-256 + i_7_ > class348_sub9.anInt6694) || IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) == 0 || class348_sub9.anInt6693 != i_4_) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                         class348_sub9.aClass348_Sub19_Sub1_6686 = null
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null
                         class348_sub9.aClass348_Sub10_6688 = null
                     }
                     if (class348_sub9.aClass348_Sub16_Sub5_6673 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6673!!)
+                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6673!!)
                         class348_sub9.aClass348_Sub16_Sub5_6673 = null
                         class348_sub9.aClass348_Sub10_6683 = null
                         class348_sub9.aClass348_Sub19_Sub1_6692 = null
@@ -133,13 +133,13 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                         } else if (class348_sub9.anInt6685 >= 0) {
                             val i_15_ = (if (class348_sub9.anInt6681 == 256 && (class348_sub9.anInt6696 == 256)) 256 else (Texture2DProvider.method2257(class348_sub9.anInt6681, class348_sub9.anInt6696, (-120).toByte())))
                             if (class348_sub9.aBoolean6674) {
-                                if ((class348_sub9.aClass348_Sub10_6688) == null) class348_sub9.aClass348_Sub10_6688 = (Class348_Sub10.method2793(LightingOptionState.aClass45_5878!!, (class348_sub9.anInt6685)))
+                                if ((class348_sub9.aClass348_Sub10_6688) == null) class348_sub9.aClass348_Sub10_6688 = (VorbisAudioDecoder.method2793(LightingOptionState.aClass45_5878!!, (class348_sub9.anInt6685)))
                                 if ((class348_sub9.aClass348_Sub10_6688) != null) {
                                     if ((class348_sub9.aClass348_Sub19_Sub1_6686) == null) class348_sub9.aClass348_Sub19_Sub1_6686 = class348_sub9.aClass348_Sub10_6688!!.method2791(intArrayOf(22050))
                                     if ((class348_sub9.aClass348_Sub19_Sub1_6686) != null) {
-                                        val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911((class348_sub9.aClass348_Sub19_Sub1_6686!!), i_15_, i_9_ shl 6, i_10_))
+                                        val class348_sub16_sub5 = (SampledVoice.method2911((class348_sub9.aClass348_Sub19_Sub1_6686!!), i_15_, i_9_ shl 6, i_10_))
                                         class348_sub16_sub5!!.method2917(-1)
-                                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
+                                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
                                         class348_sub9.aClass348_Sub16_Sub5_6676 = class348_sub16_sub5
                                     }
                                 }
@@ -147,9 +147,9 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                                 val audioClipDefinition = AudioClipDefinition.method2372(ModelFacePriorityNode.aClass45_1878!!, (class348_sub9.anInt6685), 0)
                                 if (audioClipDefinition != null) {
                                     val class348_sub19_sub1 = audioClipDefinition.method2369().method2944(Class57.aAudioResampler_1050!!)
-                                    val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1, i_15_, i_9_ shl 6, i_10_))
+                                    val class348_sub16_sub5 = (SampledVoice.method2911(class348_sub19_sub1, i_15_, i_9_ shl 6, i_10_))
                                     class348_sub16_sub5!!.method2917(-1)
-                                    Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
+                                    SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
                                     class348_sub9.aClass348_Sub16_Sub5_6676 = class348_sub16_sub5
                                 }
                             }
@@ -161,14 +161,14 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                                     if (class348_sub9.aBoolean6699) {
                                         if ((class348_sub9.aClass348_Sub10_6683) == null) {
                                             val i_17_ = ((class348_sub9.anIntArray6697!!).size.toDouble() * Math.random()).toInt()
-                                            class348_sub9.aClass348_Sub10_6683 = (Class348_Sub10.method2793(LightingOptionState.aClass45_5878!!, (class348_sub9.anIntArray6697!![i_17_])))
+                                            class348_sub9.aClass348_Sub10_6683 = (VorbisAudioDecoder.method2793(LightingOptionState.aClass45_5878!!, (class348_sub9.anIntArray6697!![i_17_])))
                                         }
                                         if ((class348_sub9.aClass348_Sub10_6683) != null) {
                                             if ((class348_sub9.aClass348_Sub19_Sub1_6692) == null) class348_sub9.aClass348_Sub19_Sub1_6692 = (class348_sub9.aClass348_Sub10_6683!!.method2791(intArrayOf(22050)))
                                             if ((class348_sub9.aClass348_Sub19_Sub1_6692) != null) {
-                                                val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911((class348_sub9.aClass348_Sub19_Sub1_6692!!), i_16_, i_9_ shl 6, i_10_))
+                                                val class348_sub16_sub5 = (SampledVoice.method2911((class348_sub9.aClass348_Sub19_Sub1_6692!!), i_16_, i_9_ shl 6, i_10_))
                                                 class348_sub16_sub5!!.method2917(0)
-                                                Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
+                                                SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
                                                 class348_sub9.aClass348_Sub16_Sub5_6673 = class348_sub16_sub5
                                                 class348_sub9.anInt6670 = ((((class348_sub9.anInt6668) - (class348_sub9.anInt6680)).toDouble() * Math.random()).toInt() + (class348_sub9.anInt6680))
                                             }
@@ -178,9 +178,9 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                                         val audioClipDefinition = AudioClipDefinition.method2372((ModelFacePriorityNode.aClass45_1878!!), (class348_sub9.anIntArray6697!![i_18_]), 0)
                                         if (audioClipDefinition == null) break
                                         val class348_sub19_sub1 = (audioClipDefinition.method2369().method2944(Class57.aAudioResampler_1050!!))
-                                        val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1, i_16_, i_9_ shl 6, i_10_))
+                                        val class348_sub16_sub5 = (SampledVoice.method2911(class348_sub19_sub1, i_16_, i_9_ shl 6, i_10_))
                                         class348_sub16_sub5!!.method2917(0)
-                                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
+                                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
                                         class348_sub9.anInt6670 = (((-(class348_sub9.anInt6680) + (class348_sub9.anInt6668)).toDouble() * Math.random()).toInt() + (class348_sub9.anInt6680))
                                         class348_sub9.aClass348_Sub16_Sub5_6673 = class348_sub16_sub5
                                     }

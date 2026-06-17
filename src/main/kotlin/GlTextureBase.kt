@@ -44,30 +44,30 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
         anInt5085++
         if (Class68.aClass68_1183 != this.aClass68_5088) {
             if (Class68.aClass68_1186 == this.aClass68_5088) {
-                if (this.aTextureFormatInfo_5084 == Class348_Sub45.aTextureFormatInfo_7103) return 34843
+                if (this.aTextureFormatInfo_5084 == TimedRecordAccessor.aTextureFormatInfo_7103) return 34843
                 if (GroundItemRenderState.aTextureFormatInfo_1662 == this.aTextureFormatInfo_5084) return 34842
-                if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub38.aTextureFormatInfo_9471) {
-                    if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub22.aTextureFormatInfo_9303) {
+                if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
+                    if (this.aTextureFormatInfo_5084 != CellNoiseTextureNode.aTextureFormatInfo_9303) {
                         if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
                             if (this.aTextureFormatInfo_5084 == SceneLinkedListNode.aTextureFormatInfo_3977) return 6145
                         } else return 34847
                     } else return 34846
                 } else return 34844
             } else if (this.aClass68_5088 == Class68.aClass68_1187) {
-                if (Class348_Sub45.aTextureFormatInfo_7103 != this.aTextureFormatInfo_5084) {
+                if (TimedRecordAccessor.aTextureFormatInfo_7103 != this.aTextureFormatInfo_5084) {
                     if (this.aTextureFormatInfo_5084 == GroundItemRenderState.aTextureFormatInfo_1662) return 34836
-                    if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub38.aTextureFormatInfo_9471) {
-                        if (Class348_Sub40_Sub22.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 34840
+                    if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
+                        if (CellNoiseTextureNode.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 34840
                         if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
                             if (SceneLinkedListNode.aTextureFormatInfo_3977 == this.aTextureFormatInfo_5084) return 6145
                         } else return 34841
                     } else return 34838
                 } else return 34837
             }
-        } else if (this.aTextureFormatInfo_5084 != Class348_Sub45.aTextureFormatInfo_7103) {
+        } else if (this.aTextureFormatInfo_5084 != TimedRecordAccessor.aTextureFormatInfo_7103) {
             if (this.aTextureFormatInfo_5084 != GroundItemRenderState.aTextureFormatInfo_1662) {
-                if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub38.aTextureFormatInfo_9471) {
-                    if (Class348_Sub40_Sub22.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 6409
+                if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
+                    if (CellNoiseTextureNode.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 6409
                     if (this.aTextureFormatInfo_5084 == SpriteSheetCache.aTextureFormatInfo_2571) return 6410
                     if (this.aTextureFormatInfo_5084 == SceneLinkedListNode.aTextureFormatInfo_3977) return 6145
                 } else return 6406
@@ -105,7 +105,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
         var is_10_ = `is`
         var is_11_ = ByteArray(i_9_ * (i_8_ * i_5_))
         while (true) {
-            glTexImage2Dub(i_4_, i_6_, method228(108), i_2_, i_3_, 0, Class348_Sub40_Sub3.method3055(i + -7265, this.aTextureFormatInfo_5084), 5121, is_10_, 0)
+            glTexImage2Dub(i_4_, i_6_, method228(108), i_2_, i_3_, 0, RangeThresholdTextureNode.method3055(i + -7265, this.aTextureFormatInfo_5084), 5121, is_10_, 0)
             if (i_7_ <= 1) break
             val i_12_ = i_2_ * i_5_
             var i_13_ = 0
@@ -257,7 +257,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
         var fs_56_ = fs!!
         var fs_57_ = FloatArray(i_54_ * (i_55_ * i_51_))
         while (true) {
-            glTexImage2Df(i, i_52_, method228(123), i_49_, i_50_, 0, (Class348_Sub40_Sub3.method3055(124, this.aTextureFormatInfo_5084)), 5126, fs_56_, 0)
+            glTexImage2Df(i, i_52_, method228(123), i_49_, i_50_, 0, (RangeThresholdTextureNode.method3055(124, this.aTextureFormatInfo_5084)), 5126, fs_56_, 0)
             if (i_53_ <= 1) break
             val i_58_ = i_49_ * i_51_
             var i_59_ = 0
@@ -317,7 +317,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("hda.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("hda.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
         }
     }
 
@@ -367,7 +367,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
             anInt5087++
             if (i != -1 && AudioResampler.aBooleanArray2162!![i]) {
                 RenderConfigFactory.aClass45_2978!!.method411(i, -120)
-                Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] = null
+                WarpTextureNode.aClass46ArrayArray9427!![i] = null
                 Class369_Sub2.aClass46ArrayArray8584!![i] = null
                 if (i_46_ <= -94) AudioResampler.aBooleanArray2162!![i] = false
             }

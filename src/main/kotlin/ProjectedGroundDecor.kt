@@ -362,7 +362,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 if (i < -71) break
                 this.anIntArray10236 = null
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kda.DB(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_51_ != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("kda.DB(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_51_ != null) "{...}" else "null") + ',' + i + ')'))
             }
             break
         } while (false)
@@ -470,7 +470,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                     this.aClass318_Sub10_10327!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + (if (class64s != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("kda.L(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + (if (class64s != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -532,7 +532,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         val i_92_ = (if (!bool) this.anInt10269 else this.anInt10291)
         if (i_88_ != -1 && i_92_ != -1) {
             if (i_92_ == i_88_) {
-                val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(65.toByte(), i_88_)
+                val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(65.toByte(), i_88_)
                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7)
                     val i_95_ = class17.anInt248
@@ -546,8 +546,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                     }
                 }
             } else {
-                val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(109.toByte(), i_88_)
-                val class368_93_ = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(99.toByte(), i_92_)
+                val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(109.toByte(), i_88_)
+                val class368_93_ = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(99.toByte(), i_92_)
                 if (class368.anInt4503 != -1 && class368_93_.anInt4503 != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7)
                     val class17_94_ = ParticleEmitterNode.aClass87_191!!.method835((class368_93_.anInt4503), i_89_ xor 0x3c5664d6.inv())
@@ -568,7 +568,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             this.anInt10273 = 0
             if (i_96_ < this.anInt10211) this.anInt10224 = -1
             if (this.anInt10291 != -1 && (this.anInt10211 == i_96_)) {
-                val i_97_ = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), this.anInt10291).anInt4503)
+                val i_97_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), this.anInt10291).anInt4503)
                 if (i_97_ != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_97_, 7)
                     if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTable.method2178(this, 0, class17, i_89_ + 1012294835)
@@ -585,7 +585,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             this.anInt10220 = i_91_ shr 16
             if (i_96_ < this.anInt10225) this.anInt10240 = -1
             if (this.anInt10269 != -1 && this.anInt10225 == i_96_) {
-                val i_98_ = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(103.toByte(), this.anInt10269).anInt4503)
+                val i_98_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(103.toByte(), this.anInt10269).anInt4503)
                 if (i_98_ != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_98_, 7)
                     if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTable.method2178(this, 0, class17, -128)
@@ -668,7 +668,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 class64.H(0, i_117_, 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kda.GB(" + i + ',' + (if (class64 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("kda.GB(" + i + ',' + (if (class64 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -808,16 +808,16 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         }
 
         @JvmStatic
-        fun method2431(i: Int, i_56_: Int, class348_sub42_sub13: Class348_Sub42_Sub13?, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, var_renderer: Renderer?, i_61_: Int, i_62_: Int, i_63_: Int, i_64_: Int) {
+        fun method2431(i: Int, i_56_: Int, class348_sub42_sub13: ContactList?, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, var_renderer: Renderer?, i_61_: Int, i_62_: Int, i_63_: Int, i_64_: Int) {
             var i = i
             try {
                 if (i_62_ < 111) aShortArrayArray10246 = null
                 if (i_63_ < i_57_ && i_57_ < i_58_ + i_63_ && i_60_ > i_56_ - 13 && i_60_ < 3 + i_56_) i = i_59_
                 anInt10212++
-                val string = Class348_Sub15.method2812(-44, class348_sub42_sub13!!)
+                val string = MenuActionNode.method2812(-44, class348_sub42_sub13!!)
                 NodeDeque.aFont_3326!!.method2567(i_56_, string, 120.toByte(), i, 0, i_63_ - -3, TileRenderState.aAbstractModelRendererArray4234, SizeBoundedSoftCache.anIntArray2330)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kda.VA(" + i + ',' + i_56_ + ',' + (if (class348_sub42_sub13 != null) "{...}" else "null") + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ',' + i_64_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("kda.VA(" + i + ',' + i_56_ + ',' + (if (class348_sub42_sub13 != null) "{...}" else "null") + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ',' + i_64_ + ')'))
             }
         }
 
@@ -826,7 +826,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             if (Class65.aClass357ArrayArrayArray1148 != null) {
                 for (i in Class65.aClass357ArrayArrayArray1148!!.indices) {
                     for (i_80_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_81_ in 0..<Class348_Sub41.anInt7054) {
+                        for (i_81_ in 0..<RegionSceneShifter.anInt7054) {
                             if ((Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
                             Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
                         }
@@ -834,23 +834,23 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 }
             }
             Class65.aClass357ArrayArrayArray1148 = null
-            Class348_Sub1_Sub1.aTerrainTileArray8801 = null
-            if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
-                for (i in Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!!.indices) {
+            TerrainTileShape.aTerrainTileArray8801 = null
+            if (ProducerImageSurface.aClass357ArrayArrayArray9082 != null) {
+                for (i in ProducerImageSurface.aClass357ArrayArrayArray9082!!.indices) {
                     for (i_82_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_83_ in 0..<Class348_Sub41.anInt7054) {
-                            if ((Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]) != null) Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]!!.method3485(true)
-                            Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_] = null
+                        for (i_83_ in 0..<RegionSceneShifter.anInt7054) {
+                            if ((ProducerImageSurface.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]) != null) ProducerImageSurface.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]!!.method3485(true)
+                            ProducerImageSurface.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_] = null
                         }
                     }
                 }
             }
-            Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null
+            ProducerImageSurface.aClass357ArrayArrayArray9082 = null
             SoundCacheState.aTerrainTileArray4142 = null
             HintArrowOrMessage.aClass357ArrayArrayArray2029 = null
             NativeSprite.aTerrainTileArray5191 = null
             Class99.aBooleanArrayArray1572 = null
-            Class348_Sub8.aBooleanArrayArray6656 = null
+            FacingDirectionNode.aBooleanArrayArray6656 = null
             RefCountedHandle.anIntArray2272 = null
             OverlayColorTable.aBooleanArrayArrayArray1751 = null
             Class5_Sub2.aBooleanArrayArrayArray8361 = null
@@ -859,7 +859,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 for (i in 0..<Class86.anInt1477) ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
                 Class86.anInt1477 = 0
             }
-            Class348.aClass318_Sub1Array4293 = null
+            LinkedListNode.aClass318_Sub1Array4293 = null
             BackgroundWorkerThread.aClass318_Sub1Array3226 = null
             OverlayColorTable.aClass318_Sub1Array1754 = null
             if (RemoveRoofsOptionState.aClass318_Sub1Array6066 != null) {
@@ -868,13 +868,13 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             }
             if (CutsceneSequenceData.aClass318_Sub1Array3737 != null) {
                 for (i in CutsceneSequenceData.aClass318_Sub1Array3737!!.indices) CutsceneSequenceData.aClass318_Sub1Array3737!![i] = null
-                Class348_Sub42_Sub3.anInt9504 = 0
+                LoadingScreenImageNode.anInt9504 = 0
             }
             if (WaterDetailOptionState.aSoundEnvelopeArray5993 != null) {
                 for (i in 0..<CalendarUtil.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i] = null
                 for (i in 0..<MapAreaDefinition.anInt2524) {
                     for (i_84_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_85_ in 0..<Class348_Sub41.anInt7054) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
+                        for (i_85_ in 0..<RegionSceneShifter.anInt7054) HardCacheEntryReference.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
                     }
                 }
                 CalendarUtil.anInt4135 = 0
@@ -882,10 +882,10 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             Class363.method3513(-120)
             Class71.aClass76_1208 = Class71.aClass76_1210
             Class71.aClass76_1208!!.method775(69.toByte())
-            Class348_Sub1_Sub2.aByteArrayArray8816 = null
+            HashTileShape.aByteArrayArray8816 = null
             WidgetRedrawRegion.anIntArrayArray4253 = null
             BooleanGraphicsOptionState.aShortArrayArray5847 = null
-            if (Class348_Sub40_Sub34.aSceneLoaderThreadArray9432 != null) {
+            if (NormalMapTextureNode.aSceneLoaderThreadArray9432 != null) {
                 WalkingTypeUtil.method1978()
                 Class9.aRenderer171!!.method3631(1)
                 Class9.aRenderer171!!.method3659(0)

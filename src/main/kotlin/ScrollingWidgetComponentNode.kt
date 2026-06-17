@@ -35,7 +35,7 @@ class ScrollingWidgetComponentNode internal constructor(class45: Class45?, class
         var aClass8389: Class<*>? = null
 
         @JvmStatic
-        fun method1118(bool: Boolean, bool_2_: Boolean, class348_sub41: Class348_Sub41, i: Int) {
+        fun method1118(bool: Boolean, bool_2_: Boolean, class348_sub41: RegionSceneShifter, i: Int) {
             anInt8382++
             val i_3_ = class348_sub41.anInt7050
             val i_4_ = class348_sub41.aLong4291.toInt()
@@ -45,20 +45,20 @@ class ScrollingWidgetComponentNode internal constructor(class45: Class45?, class
                 ItemDefinitionLoader.method1288(i xor 0x9e2.inv(), i_3_)
                 val class46 = method2570(1512932720, i_4_)
                 if (class46 != null) ConfigFlagUtil.method1916(-9343, class46)
-                Class348_Sub42_Sub17.method3270(119.toByte())
+                TextureMaterialGroup.method3270(119.toByte())
                 if (!bool_2_ && RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 1)
                 val mapElementLookup = MapElementLookup(MinimapSpriteRenderer.Companion.aClass356_4915!!)
-                var class348_sub41_5_ = mapElementLookup.method2644(123.toByte()) as? Class348_Sub41?
+                var class348_sub41_5_ = mapElementLookup.method2644(123.toByte()) as? RegionSceneShifter?
                 while (class348_sub41_5_ != null) {
                     if (!class348_sub41_5_.method2712(4.toByte())) {
-                        class348_sub41_5_ = mapElementLookup.method2644(123.toByte()) as? Class348_Sub41?
+                        class348_sub41_5_ = mapElementLookup.method2644(123.toByte()) as? RegionSceneShifter?
                         if (class348_sub41_5_ == null) break
                     }
                     if (class348_sub41_5_.anInt7053 == 3) {
                         val i_6_ = class348_sub41_5_.aLong4291.toInt()
                         if (i_3_ == i_6_ ushr 16) method1118(true, bool_2_, class348_sub41_5_, 2533)
                     }
-                    class348_sub41_5_ = mapElementLookup.method2646(99.toByte()) as? Class348_Sub41?
+                    class348_sub41_5_ = mapElementLookup.method2646(99.toByte()) as? RegionSceneShifter?
                 }
             }
         }
@@ -69,7 +69,7 @@ class ScrollingWidgetComponentNode internal constructor(class45: Class45?, class
                 try {
                     val runtime = Runtime.getRuntime()
                     val integer = runtime.availableProcessors()
-                    Class348_Sub40_Sub29.anInt9372 = integer
+                    TextureMapImageNode.anInt9372 = integer
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

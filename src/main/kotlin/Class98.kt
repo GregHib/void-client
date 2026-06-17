@@ -10,7 +10,7 @@ class Class98 {
 
     companion object {
         @JvmField
-        var aClass348_Sub16_Sub3_1564: Class348_Sub16_Sub3? = null
+        var aClass348_Sub16_Sub3_1564: MidiSequencePlayer? = null
         @JvmField
         var anInt1565: Int = 0
         @JvmField

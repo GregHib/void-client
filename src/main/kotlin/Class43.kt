@@ -1,11 +1,11 @@
-import Class348_Sub42_Sub16_Sub1.Companion.method3261
+import StreamingResourceRequest.Companion.method3261
 
 /* Class43 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
 class Class43 {
     @JvmField
-    var aClass348_Sub42_Sub10_614: Class348_Sub42_Sub10? = null
+    var aClass348_Sub42_Sub10_614: ParameterizedText? = null
     @JvmField
     var anInt615: Int = 0
     @JvmField

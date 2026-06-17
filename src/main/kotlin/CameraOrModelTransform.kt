@@ -61,16 +61,16 @@ class CameraOrModelTransform {
             try {
                 anInt4153++
                 val i_7_: Int
-                if (Class348_Sub40_Sub21.anInt9282 == 4) i_7_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
+                if (WeaveTextureNode.anInt9282 == 4) i_7_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
                 else i_7_ = 0x3fff and OpenGlRenderNode.anInt10483 + ResourceProvider.aFloat3938.toInt()
                 val i_8_ = (max(class46!!.anInt709 / 2, class46.anInt789 / 2) + 10)
                 val i_9_ = i_5_ * i_5_ - -(i_1_ * i_1_)
                 if (i_9_ <= i_8_ * i_8_) {
                     var i_10_ = Class70.anIntArray1207!![i_7_]
                     var i_11_ = Class70.anIntArray1204!![i_7_]
-                    if (Class348_Sub40_Sub21.anInt9282 != 4) {
-                        i_11_ = 256 * i_11_ / (Class348_Sub49_Sub1.anInt9750 + 256)
-                        i_10_ = 256 * i_10_ / (256 + Class348_Sub49_Sub1.anInt9750)
+                    if (WeaveTextureNode.anInt9282 != 4) {
+                        i_11_ = 256 * i_11_ / (FloatBuffer.anInt9750 + 256)
+                        i_10_ = 256 * i_10_ / (256 + FloatBuffer.anInt9750)
                     }
                     var i_12_ = i_10_ * i_1_ + i_5_ * i_11_ shr 14
                     val i_13_ = -(i_5_ * i_10_) + i_11_ * i_1_ shr 14
@@ -80,16 +80,16 @@ class CameraOrModelTransform {
                     if (-class46.anInt709 <= i_12_ && class46.anInt709 >= i_12_ && (i_13_ >= -class46.anInt789) && class46.anInt789 >= i_13_) font!!.method2584(null, 0, 0, null, i, 0, 50, var_sprite, (-i_4_ + (i_3_ + (class46.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (class46.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dk.H(" + (if (fontDefinition != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (font != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("dk.H(" + (if (fontDefinition != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (font != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
             }
         }
 
         fun method2651(string: String?, i: Int): String? {
             if (i != 3) method2650(null, -94, null, 2, -110, null, -7, null, -71, null, -47, 104)
             anInt4160++
-            if (!Class348_Sub24.aString6877!!.startsWith("win")) {
-                if (Class348_Sub24.aString6877!!.startsWith("linux")) return "lib" + string + ".so"
-                if (Class348_Sub24.aString6877!!.startsWith("mac")) return "lib" + string + ".dylib"
+            if (!ClientGameLoopNode.aString6877!!.startsWith("win")) {
+                if (ClientGameLoopNode.aString6877!!.startsWith("linux")) return "lib" + string + ".so"
+                if (ClientGameLoopNode.aString6877!!.startsWith("mac")) return "lib" + string + ".dylib"
             } else return string + ".dll"
             return null
         }

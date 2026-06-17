@@ -131,13 +131,13 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
         @JvmStatic
         fun method1294(i: Byte, `is`: ByteArray?): Boolean {
             anInt2199++
-            val class348_sub49 = Class348_Sub49(`is`)
+            val class348_sub49 = Buffer(`is`)
             if (i > -98) method1294(73.toByte(), null)
             val i_0_ = class348_sub49.readUnsignedByte(255)
             if (i_0_ != 2) return false
             val bool = class348_sub49.readUnsignedByte(255) == 1
             if (bool) Class59_Sub2_Sub2.method569((-123).toByte(), class348_sub49)
-            Class348_Sub42_Sub6.method3188((-67).toByte(), class348_sub49)
+            ChatScriptListNode.method3188((-67).toByte(), class348_sub49)
             return true
         }
 
@@ -168,7 +168,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
         fun method1296(bool: Boolean): Boolean {
             if (bool != true) method1297(88.toByte(), null, null, null, null)
             anInt2200++
-            if (Class348_Sub43.anInt7068 != 0) return true
+            if (SpriteDefinition.anInt7068 != 0) return true
             return Class98.aClass348_Sub16_Sub3_1564!!.method2860(120)
         }
 
@@ -225,7 +225,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
                     i_9_++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("pga.G(" + i + ',' + (if (player != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_7_ != null) "{...}" else "null") + ',' + (if (is_8_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("pga.G(" + i + ',' + (if (player != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_7_ != null) "{...}" else "null") + ',' + (if (is_8_ != null) "{...}" else "null") + ')'))
             }
         }
     }

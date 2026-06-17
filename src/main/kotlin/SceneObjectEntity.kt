@@ -22,7 +22,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
         throw IllegalStateException()
     }
 
-    override fun method2384(class348_sub1s: Array<Class348_Sub1?>?, i: Int): Int {
+    override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8735++
         val i_2_ = -79 % ((-14 - i) / 61)
         return this.method2390(class348_sub1s!!, (this.x shr Class362.anInt4459), -2, (this.y shr Class362.anInt4459))
@@ -40,7 +40,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
             anInt8736++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fha.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fha.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
         }
     }
 
@@ -80,7 +80,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
             var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
             try {
                 randomAccessFileOnDisk = PrivilegedOperationWorker.method2231("2", -1141472112)!!
-                val class348_sub49 = Class348_Sub49(3 + 6 * TimingCounters.anInt4168)
+                val class348_sub49 = Buffer(3 + 6 * TimingCounters.anInt4168)
                 class348_sub49.writeByte(false, 1)
                 class348_sub49.writeShort(107.toByte(), TimingCounters.anInt4168)
                 val i_0_ = -4 % ((-12 - i) / 38)

@@ -67,7 +67,7 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
         fun method3533(i: Byte, i_0_: Int, i_1_: Int, i_2_: Int, f: Float, i_3_: Int, bool: Boolean, i_4_: Int): IntArray {
             anInt7281++
             val `is` = IntArray(i_0_)
-            val class348_sub40_sub8 = Class348_Sub40_Sub8()
+            val class348_sub40_sub8 = PerlinNoiseTextureNode()
             class348_sub40_sub8.anInt9149 = (f * 4096.0f).toInt()
             class348_sub40_sub8.anInt9164 = i_4_
             class348_sub40_sub8.anInt9150 = i_1_

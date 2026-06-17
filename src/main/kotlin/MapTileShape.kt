@@ -1,7 +1,7 @@
 import ConfigFlagUtil.Companion.method1913
 import ConfigFlagUtil.Companion.method1916
 import Font.Companion.method2570
-import Class348_Sub7.Companion.method2772
+import RegionTileNode.Companion.method2772
 import Class66.method703
 
 /* Class338 - Decompiled by JODE
@@ -60,10 +60,10 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
         var anIntArray4196: IntArray? = IntArray(5)
         var aClass237_Sub1_4197: WorldMapSceneSoftware? = null
 
-        fun method2661(i: Int, i_0_: Int, i_1_: Int, bool: Boolean, i_2_: Int): Class348_Sub41 {
+        fun method2661(i: Int, i_0_: Int, i_1_: Int, bool: Boolean, i_2_: Int): RegionSceneShifter {
             if (i_2_ != 2) method2661(31, -43, 32, true, -110)
             anInt4189++
-            val class348_sub41 = Class348_Sub41()
+            val class348_sub41 = RegionSceneShifter()
             class348_sub41.anInt7050 = i
             class348_sub41.anInt7053 = i_1_
             MinimapSpriteRenderer.aClass356_4915!!.method3483(109.toByte(), i_0_.toLong(), class348_sub41)
@@ -74,7 +74,7 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
                 ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
                 Class49.aClass46_4730 = null
             }
-            Class348_Sub42_Sub17.method3270(120.toByte())
+            TextureMaterialGroup.method3270(120.toByte())
             if (class46 != null) method1913(!bool, i_2_ + -104, class46)
             if (!bool) method703(i)
             if (!bool && RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 1)
@@ -90,7 +90,7 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
 
         fun method2663(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             anInt4195++
-            if (Class348_Sub49.anInt7207 == 1) {
+            if (Buffer.anInt7207 == 1) {
                 var i_7_ = i_3_ / Class58.anInt1067
                 var i_8_ = i_4_ / Class58.anInt1067
                 var i_9_ = i_5_ / ByteStore.anInt4267

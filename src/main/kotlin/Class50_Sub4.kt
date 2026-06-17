@@ -40,7 +40,7 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
         }
 
         @JvmStatic
-        fun method472(i: Int, class348_sub49: Class348_Sub49): HeapInfoRecord? {
+        fun method472(i: Int, class348_sub49: Buffer): HeapInfoRecord? {
             anInt5263++
             val string = class348_sub49.readString(90.toByte())
             val class221 = HeapInfoRecord.method1248(127)[class348_sub49.readUnsignedByte(i xor 0x6c6e.inv())]
@@ -74,7 +74,7 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
                 if (bool_27_) return -i_30_
                 return i_30_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("o.B(" + i + ',' + i_25_ + ',' + (if (class110_sub1 != null) "{...}" else "null") + ',' + i_26_ + ',' + bool + ',' + bool_27_ + ',' + (if (class110_sub1_28_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("o.B(" + i + ',' + i_25_ + ',' + (if (class110_sub1 != null) "{...}" else "null") + ',' + i_26_ + ',' + bool + ',' + bool_27_ + ',' + (if (class110_sub1_28_ != null) "{...}" else "null") + ')'))
             }
         }
     }

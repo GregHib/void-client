@@ -4,7 +4,7 @@ import java.awt.Rectangle
 /*
  * NativeFrameBuffer
  */
-class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145: Int, @JvmField var anInt5148: Int) : Class348(), Interface19 {
+class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145: Int, @JvmField var anInt5148: Int) : LinkedListNode(), Interface19 {
     var nativeid: Long = 0
 
     private external fun sa(var_oa: oa?, canvas: Canvas?, i: Int, i_0_: Int)

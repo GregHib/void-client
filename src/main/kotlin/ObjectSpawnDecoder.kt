@@ -78,15 +78,15 @@ object ObjectSpawnDecoder {
                 for (i_14_ in 0..<i_13_) {
                     val is_15_ = `is`!![i_14_]
                     if (is_15_ != null) {
-                        val i_16_ = (64 * (Class348_Sub23_Sub3.anIntArray9042!![i_14_] shr 8) + -ArbVertexProgram.regionTileX)
-                        val i_17_ = ((Class348_Sub23_Sub3.anIntArray9042!![i_14_] and 0xff) * 64 - Class90.regionTileY)
+                        val i_16_ = (64 * (NullOggStream.anIntArray9042!![i_14_] shr 8) + -ArbVertexProgram.regionTileX)
+                        val i_17_ = ((NullOggStream.anIntArray9042!![i_14_] and 0xff) * 64 - Class90.regionTileY)
                         method3570(false)
-                        class237_sub1!!.method1695(is_15_, (Class348_Sub45.aClass361Array7108), i_17_, Class348_Sub8.aRenderer6654, i_16_, i xor 0x1054f)
+                        class237_sub1!!.method1695(is_15_, (TimedRecordAccessor.aClass361Array7108), i_17_, FacingDirectionNode.aRenderer6654, i_16_, i xor 0x1054f)
                     }
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nga.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nga.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
         }
     }
 

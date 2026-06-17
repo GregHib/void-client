@@ -28,21 +28,21 @@ abstract class ResourceProvider {
         fun method2336(class51: Class51, i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             anInt3940++
             if (i_3_ > -126) anInt3941 = 15
-            var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? Class348_Sub9?
+            var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState?
             while (class348_sub9 != null) {
                 if (i_2_ == class348_sub9.anInt6693 && (class348_sub9.anInt6678 == i shl 9) && (i_1_ shl 9 == class348_sub9.anInt6689) && (class348_sub9.aClass51_6695!!.anInt941 == class51.anInt941)) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null
                     }
                     if (class348_sub9.aClass348_Sub16_Sub5_6673 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6673!!)
+                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6673!!)
                         class348_sub9.aClass348_Sub16_Sub5_6673 = null
                     }
                     class348_sub9.method2715(125.toByte())
                     break
                 }
-                class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(123.toByte()) as? Class348_Sub9?
+                class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(123.toByte()) as? CharacterRenderState?
             }
         }
 

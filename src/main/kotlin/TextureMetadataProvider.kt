@@ -13,14 +13,14 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
         return method1881(i_1_, false)!!.method3183(this, i_2_, i_0_, (aNpcAppearanceFlagsArray4611[i_1_]!!.aBoolean207), f.toDouble(), aClass45_4624, 11.toByte())
     }
 
-    private fun method1881(i: Int, bool: Boolean): Class348_Sub42_Sub5? {
+    private fun method1881(i: Int, bool: Boolean): ProceduralTextureGraph? {
         anInt4620++
         val class348_sub42 = aCacheLruCache_4622.method2302(i.toLong(), (-34).toByte())
-        if (class348_sub42 != null) return class348_sub42 as Class348_Sub42_Sub5
+        if (class348_sub42 != null) return class348_sub42 as ProceduralTextureGraph
         val `is` = aClass45_4619!!.method415(73.toByte(), i)
         if (`is` == null) return null
         if (bool != false) method1(-58, 1.9039171f, false, -106, -22, -18)
-        val class348_sub42_sub5 = Class348_Sub42_Sub5(Class348_Sub49(`is`))
+        val class348_sub42_sub5 = ProceduralTextureGraph(Buffer(`is`))
         aCacheLruCache_4622.method2305(i.toLong(), class348_sub42_sub5, -1)
         return class348_sub42_sub5
     }
@@ -60,7 +60,7 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
         try {
             aClass45_4619 = class45_12_
             aClass45_4624 = class45_13_
-            val class348_sub49 = Class348_Sub49(class45!!.method410(-1860, 0, 0))
+            val class348_sub49 = Buffer(class45!!.method410(-1860, 0, 0))
             anInt4625 = class348_sub49.readUnsignedShort(842397944)
             aNpcAppearanceFlagsArray4611 = arrayOfNulls<NpcAppearanceFlags>(anInt4625)
             run {
@@ -162,7 +162,7 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
                 i++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tda.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_12_ != null) "{...}" else "null") + ',' + (if (class45_13_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("tda.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_12_ != null) "{...}" else "null") + ',' + (if (class45_13_ != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -49,11 +49,11 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
         if (hitsplatDefinition != null) return hitsplatDefinition
         val `is`: ByteArray?
         synchronized(aClass45_2597!!) {
-            `is` = aClass45_2597.method410(i_4_ xor 0x743, method1359(true, i), Class348_Sub14.method2806(false, i))
+            `is` = aClass45_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNode.method2806(false, i))
         }
         hitsplatDefinition = HitsplatDefinition()
         if (i_4_ != -1) return null
-        if (`is` != null) hitsplatDefinition.method1191(i_4_ xor 0x800.inv(), Class348_Sub49(`is`))
+        if (`is` != null) hitsplatDefinition.method1191(i_4_ xor 0x800.inv(), Buffer(`is`))
         synchronized(aClass60_2594!!) {
             aClass60_2594!!.method582(hitsplatDefinition, i.toLong(), (-105).toByte())
         }
@@ -68,7 +68,7 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
                 val i_5_ = aClass45_2597.method414(-1) + -1
                 aClass45_2597.method407(0, i_5_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qs.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qs.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

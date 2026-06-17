@@ -129,7 +129,7 @@ class SpotAnimDefinition {
     var aBoolean2443: Boolean = true
     private var anInt2444 = 0
 
-    private fun method1368(i: Int, class348_sub49: Class348_Sub49, i_16_: Int) {
+    private fun method1368(i: Int, class348_sub49: Buffer, i_16_: Int) {
         if (i >= -43) Companion.method1369((-111).toByte())
         anInt2396++
         if (i_16_ == 1) {
@@ -224,7 +224,7 @@ class SpotAnimDefinition {
         }
     }
 
-    fun method1370(i: Int, class348_sub49: Class348_Sub49) {
+    fun method1370(i: Int, class348_sub49: Buffer) {
         anInt2400++
         while (true) {
             val i_24_ = class348_sub49.readUnsignedByte(255)
@@ -328,7 +328,7 @@ class SpotAnimDefinition {
                 fs!![0] = f_12_
                 fs[1] = f_13_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qb.E(" + i + ',' + i_0_ + ',' + f + ',' + i_1_ + ',' + (if (fs != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + (if (fs_7_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qb.E(" + i + ',' + i_0_ + ',' + f + ',' + i_1_ + ',' + (if (fs != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + (if (fs_7_ != null) "{...}" else "null") + ')'))
             }
         }
 

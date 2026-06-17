@@ -20,9 +20,9 @@ class SimpleToggleOptionState : GraphicsOptionState {
         return this.anInt3138
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1714(i: Int, i_13_: Int): Int {
         if (i != 3) anInt5891 = -34
@@ -62,14 +62,14 @@ class SimpleToggleOptionState : GraphicsOptionState {
         fun method1740(i: Int, i_2_: Int, bool: Boolean): Boolean {
             if (bool != false) return true
             anInt5890++
-            return DetailLevelOptionState.method1833((-128).toByte(), i_2_, i) || Class348_Sub42_Sub8_Sub2.method3200(i_2_, i, 96.toByte())
+            return DetailLevelOptionState.method1833((-128).toByte(), i_2_, i) || HardCacheEntryReference.method3200(i_2_, i, 96.toByte())
         }
 
         @JvmStatic
-        fun method1741(class348_sub49_sub2: Class348_Sub49_Sub2, i: Byte) {
+        fun method1741(class348_sub49_sub2: CipheredPacketBuffer, i: Byte) {
             anInt5893++
             class348_sub49_sub2.startBitAccess(122)
-            val i_3_ = Class348_Sub42_Sub11.anInt9591
+            val i_3_ = CharCodeMap.anInt9591
             val player = (Player().also { LoadingBarRenderer.aPlayerArray5058!![i_3_] = it }.also { LocalPlayerState.aPlayer_1907 = it })
             player.anInt10290 = i_3_
             val i_4_ = class348_sub49_sub2.readBits((-24).toByte(), 30)
@@ -88,22 +88,22 @@ class SimpleToggleOptionState : GraphicsOptionState {
             if (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_] != null) player.method2452(84.toByte(), (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_]!!))
             ShaderState.anInt6513 = 0
             ScrollTexMaterialPass.anIntArray6290!![ShaderState.anInt6513++] = i_3_
-            Class348_Sub5.aByteArray6624!![i_3_] = 0.toByte()
-            Class348_Sub42_Sub4.anInt9513 = 0
+            AbstractBloomEffect.aByteArray6624!![i_3_] = 0.toByte()
+            ShortMatrixNode.anInt9513 = 0
             for (i_8_ in 1..2047) {
                 if (i_8_ != i_3_) {
                     val i_9_ = class348_sub49_sub2.readBits((-24).toByte(), 18)
                     val i_10_ = i_9_ shr 16
                     val i_11_ = (i_9_ and 0xff78) shr 8
                     val i_12_ = i_9_ and 0xff
-                    Class348_Sub17.aClass359Array6802!![i_8_] = Class359()
-                    val class359 = Class348_Sub17.aClass359Array6802!![i_8_]!!
+                    SoundBankPatch.aClass359Array6802!![i_8_] = Class359()
+                    val class359 = SoundBankPatch.aClass359Array6802!![i_8_]!!
                     class359.aBoolean4426 = false
                     class359.anInt4420 = (i_11_ shl 14) + ((i_10_ shl 28) + i_12_)
                     class359.anInt4423 = 0
                     class359.anInt4425 = -1
-                    GlArrayBufferObject.anIntArray4709!![Class348_Sub42_Sub4.anInt9513++] = i_8_
-                    Class348_Sub5.aByteArray6624!![i_8_] = 0.toByte()
+                    GlArrayBufferObject.anIntArray4709!![ShortMatrixNode.anInt9513++] = i_8_
+                    AbstractBloomEffect.aByteArray6624!![i_8_] = 0.toByte()
                 }
             }
             class348_sub49_sub2.stopBitAccess(false)

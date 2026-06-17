@@ -12,7 +12,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
         return IndexedSprite.method164(this.aByte6376.toInt(), (this.x shr Class362.anInt4459), (-97).toByte(), (this.y shr Class362.anInt4459))
     }
 
-    override fun method2384(class348_sub1s: Array<Class348_Sub1?>?, i: Int): Int {
+    override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8722++
         val i_0_ = 88 % ((i - -14) / 61)
         return this.method2390(class348_sub1s!!, (this.x shr Class362.anInt4459), -2, (this.y shr Class362.anInt4459))
@@ -64,10 +64,10 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
             anInt8726++
             i_1_ = i_1_ shl 3
             i_2_ = i_2_ shl 3
-            if (Class348_Sub40_Sub21.anInt9282 == 2) {
+            if (WeaveTextureNode.anInt9282 == 2) {
                 Class5.anInt4638 = i_1_
                 MapTileShape.anInt4186 = i_2_
-                Class348_Sub42_Sub19.anInt9701 = i
+                MinimapAreaMarkerNode.anInt9701 = i
             }
             ResourceProvider.aFloat3938 = i_1_.toFloat()
             Class76.aFloat1287 = i.toFloat()

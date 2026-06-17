@@ -45,7 +45,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
                 if (i != -12763) anInt1546 = -8
                 var i_13_ = 0
                 i_10_ = anInt1544 + anInt1559 * i_9_
-                if (aHa_Sub3_1561!!.method3880(Class68.aClass68_1183, (Class348_Sub40_Sub38.aTextureFormatInfo_9471), 122.toByte())) {
+                if (aHa_Sub3_1561!!.method3880(Class68.aClass68_1183, (ClampTextureNode.aTextureFormatInfo_9471), 122.toByte())) {
                     if (Class367_Sub11.aByteArray7394 == null) Class367_Sub11.aByteArray7394 = ByteArray(16384)
                     val is_14_ = Class367_Sub11.aByteArray7394!!
                     for (i_15_ in -128..-1) {
@@ -63,9 +63,9 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
                         i_10_ += -128 + aVideoStreamDecoder_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
-                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((Class367_Sub11.aByteArray7394), 128, (Class348_Sub40_Sub38.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
+                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((Class367_Sub11.aByteArray7394), 128, (ClampTextureNode.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
                         anInterface18_Impl3_1556!!.method66(false, false, i xor 0x5582.inv())
-                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (Class367_Sub11.aByteArray7394), (Class348_Sub40_Sub38.aTextureFormatInfo_9471))
+                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (Class367_Sub11.aByteArray7394), (ClampTextureNode.aTextureFormatInfo_9471))
                 } else {
                     if (Class40.anIntArray543 == null) Class40.anIntArray543 = IntArray(16384)
                     val is_18_ = Class40.anIntArray543!!
@@ -181,7 +181,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
                 this.anInt1563 = i_29_ / 3
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (videoStreamDecoder != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + i_27_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("mc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (videoStreamDecoder != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + i_27_ + ')'))
         }
     }
 
@@ -219,7 +219,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
             NodeDeque.aModelLightingConfigArrayArray3335 = Array(i) { arrayOfNulls(i_7_) }
             if (i_6_ == 21719) {
                 anInt1549++
-                if (Class81.anIntArray1432 != null) Class348_Sub42_Sub10.aCircleRasterizer_9571 = SceneProjector.method1636(Class81.anIntArray1432!![4], Class81.anIntArray1432!![3], Class81.anIntArray1432!![0], Class81.anIntArray1432!![5], Class81.anIntArray1432!![1], -1, Class81.anIntArray1432!![2])
+                if (Class81.anIntArray1432 != null) ParameterizedText.aCircleRasterizer_9571 = SceneProjector.method1636(Class81.anIntArray1432!![4], Class81.anIntArray1432!![3], Class81.anIntArray1432!![0], Class81.anIntArray1432!![5], Class81.anIntArray1432!![1], -1, Class81.anIntArray1432!![2])
                 LocalizedText.aModelLightingConfig_3547 = ModelLightingConfig()
                 method3936(0)
             }

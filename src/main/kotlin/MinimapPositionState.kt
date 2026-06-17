@@ -45,13 +45,13 @@ class MinimapPositionState {
             try {
                 anInt3841++
                 if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
-                    if (Class348_Sub40_Sub21.anInt9282 != 1 && Class348_Sub40_Sub21.anInt9282 != 5) {
-                        if (Class348_Sub40_Sub21.anInt9282 == 4) method814(125.toByte(), l)
+                    if (WeaveTextureNode.anInt9282 != 1 && WeaveTextureNode.anInt9282 != 5) {
+                        if (WeaveTextureNode.anInt9282 == 4) method814(125.toByte(), l)
                     } else method119(-1, l)
                 }
-                Class348_Sub47.method3324(Class348_Sub8.aRenderer6654, 83.toByte(), Class367_Sub11.anInt7396.toLong())
+                OutgoingPacketNode.method3324(FacingDirectionNode.aRenderer6654, 83.toByte(), Class367_Sub11.anInt7396.toLong())
                 if (RenderNode.anInt9721 != -1) method769(RenderNode.anInt9721, 118.toByte())
-                for (i_3_ in 0..<Class348_Sub38.anInt7008) {
+                for (i_3_ in 0..<TerrainShadowBuilderGl3.anInt7008) {
                     if (GzipDecompressor.aBooleanArray2076!![i_3_]) LocDefinitionCache.aBooleanArray3438!![i_3_] = true
                     SizeBoundedSoftCache.aBooleanArray2326!![i_3_] = GzipDecompressor.aBooleanArray2076!![i_3_]
                     GzipDecompressor.aBooleanArray2076!![i_3_] = false
@@ -60,22 +60,22 @@ class MinimapPositionState {
                 method198(null, false, -1, -1)
                 method1343(-1, null, 1, -1)
                 if (RenderNode.anInt9721 != -1) {
-                    Class348_Sub38.anInt7008 = 0
+                    TerrainShadowBuilderGl3.anInt7008 = 0
                     method842(false)
                 }
-                Class348_Sub8.aRenderer6654!!.la()
-                Class348_Sub42_Sub20.method3281(46.toByte(), Class348_Sub8.aRenderer6654!!)
+                FacingDirectionNode.aRenderer6654!!.la()
+                SpriteRenderEntry.method3281(46.toByte(), FacingDirectionNode.aRenderer6654!!)
                 var i_4_ = method1053(3112)
                 if (i_4_ == -1) i_4_ = Class362.anInt4458
-                if (i_4_ == -1) i_4_ = Class348_Sub42_Sub16_Sub1.anInt10447
+                if (i_4_ == -1) i_4_ = StreamingResourceRequest.anInt10447
                 method338(0, i_4_)
                 if (i.toInt() == -43) {
                     val i_5_ = (LocalPlayerState.aPlayer_1907!!.method2436(103.toByte()) shl 8)
-                    TimingCounters.method2655(98, LocalPlayerState.aPlayer_1907!!.plane.toInt(), Class348_Sub51.anInt7267, i_5_ + (LocalPlayerState.aPlayer_1907!!.y), (LocalPlayerState.aPlayer_1907!!.x - -i_5_))
-                    Class348_Sub51.anInt7267 = 0
+                    TimingCounters.method2655(98, LocalPlayerState.aPlayer_1907!!.plane.toInt(), DisplaySettingsConfig.anInt7267, i_5_ + (LocalPlayerState.aPlayer_1907!!.y), (LocalPlayerState.aPlayer_1907!!.x - -i_5_))
+                    DisplaySettingsConfig.anInt7267 = 0
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "wo.B(" + i + ',' + l + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "wo.B(" + i + ',' + l + ')')
             }
         }
     }

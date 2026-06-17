@@ -47,7 +47,7 @@ class Class57 {
             if (WidgetRedrawRegion.aClass70_4247 != class70) {
                 if (class70 != GlIndexBufferArb.aClass70_8503) {
                     if (SceneObjectEntity.aClass70_8737 != class70) {
-                        if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 34166
+                        if (RenderListTextureNode.aClass70_9485 == class70) return 34166
                     } else return 34168
                 } else return 34167
             } else return 5890

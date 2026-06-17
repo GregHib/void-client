@@ -21,8 +21,8 @@ object ScreenBorderFiller {
     @JvmStatic
     fun method1168(i: Int, i_0_: Int, rectangles: Array<Rectangle?>?) {
         anInt1957++
-        if (Class348_Sub49.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3707(rectangles, i, 0, 0)
-        else CameraRotationStub.aRenderer326!!.method3707(rectangles, i, MapRegionLoaderThread.anInt4211, Class348_Sub40_Sub8.anInt9157)
+        if (Buffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3707(rectangles, i, 0, 0)
+        else CameraRotationStub.aRenderer326!!.method3707(rectangles, i, MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
         if (i_0_ != 0) aClass351_1961 = null
     }
 
@@ -37,17 +37,17 @@ object ScreenBorderFiller {
     fun method1170(i: Byte) {
         anInt1956++
         if (SkeletalAnimFrameLoader.aFrame476 == null) {
-            val i_1_ = Class348_Sub48.anInt7129
+            val i_1_ = ModelResourceBundle.anInt7129
             val i_2_ = TimingCounters.anInt4167
             if (i > -25) ScreenBorderFiller.method1172((-22).toByte(), -1)
             val i_3_ = -i_1_ + -LocTypeDefinition.anInt4017 + SocketFactory.anInt3473
-            val i_4_ = -i_2_ + (Class348_Sub22.anInt6857 + -Class348_Sub42_Sub8_Sub2.anInt10432)
+            val i_4_ = -i_2_ + (NpcReference.anInt6857 + -HardCacheEntryReference.anInt10432)
             do {
                 if (i_1_ > 0 || i_3_ > 0 || i_2_ > 0 || i_4_ > 0) {
                     try {
                         val container: Container?
                         if (Class52.aFrame4904 == null) {
-                            if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169
+                            if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                             else container = Class93.anApplet1530 as? Container
                         } else container = Class52.aFrame4904
                         var i_5_ = 0
@@ -59,11 +59,11 @@ object ScreenBorderFiller {
                         }
                         val graphics = container!!.getGraphics()
                         graphics.setColor(Color.black)
-                        if (i_1_ > 0) graphics.fillRect(i_5_, i_6_, i_1_, Class348_Sub22.anInt6857)
+                        if (i_1_ > 0) graphics.fillRect(i_5_, i_6_, i_1_, NpcReference.anInt6857)
                         if (i_2_ > 0) graphics.fillRect(i_5_, i_6_, SocketFactory.anInt3473, i_2_)
-                        if (i_3_ > 0) graphics.fillRect((-i_3_ + SocketFactory.anInt3473 + i_5_), i_6_, i_3_, Class348_Sub22.anInt6857)
+                        if (i_3_ > 0) graphics.fillRect((-i_3_ + SocketFactory.anInt3473 + i_5_), i_6_, i_3_, NpcReference.anInt6857)
                         if (i_4_ <= 0) break
-                        graphics.fillRect(i_5_, Class348_Sub22.anInt6857 + (i_6_ - i_4_), SocketFactory.anInt3473, i_4_)
+                        graphics.fillRect(i_5_, NpcReference.anInt6857 + (i_6_ - i_4_), SocketFactory.anInt3473, i_4_)
                     } catch (exception: Exception) {
                         break
                     }

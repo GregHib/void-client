@@ -26,7 +26,7 @@ open class GlTexture2D : GlTexture {
         this.anInt8547 = i_1_
         this.anInt8551 = i_2_
         this.aHa_Sub2_4851.method3771((-111).toByte(), this)
-        glTexImage2Dub(this.anInt4849, 0, this.anInt4858, i_1_, i_2_, 0, Class348_Sub9.method2779(true, (this.anInt4858)), 5121, null, 0)
+        glTexImage2Dub(this.anInt4849, 0, this.anInt4858, i_1_, i_2_, 0, CharacterRenderState.method2779(true, (this.anInt4858)), 5121, null, 0)
         this.method1957(9728, true)
     }
 
@@ -53,7 +53,7 @@ open class GlTexture2D : GlTexture {
             }
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_9_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_9_ + ')'))
         }
     }
 
@@ -107,7 +107,7 @@ open class GlTexture2D : GlTexture {
             }
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + bool_26_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + bool_26_ + ')'))
         }
     }
 
@@ -144,7 +144,7 @@ open class GlTexture2D : GlTexture {
             glPixelStorei(3317, 4)
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_32_ + ',' + i_33_ + ',' + i_34_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_35_ + ',' + bool_36_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_32_ + ',' + i_33_ + ',' + i_34_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_35_ + ',' + bool_36_ + ')'))
         }
     }
 
@@ -262,7 +262,7 @@ open class GlTexture2D : GlTexture {
                     val is_60_ = IntArray(i_59_ * i_58_)
                     val pixelgrabber = PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_)
                     pixelgrabber.grabPixels()
-                    return Class348_Sub8.aRenderer6654!!.method3662(i_58_, is_60_, 94.toByte(), 0, i_58_, i_59_)
+                    return FacingDirectionNode.aRenderer6654!!.method3662(i_58_, is_60_, 94.toByte(), 0, i_58_, i_59_)
                 } catch (interruptedexception: InterruptedException) {
                     /* empty */
                 }

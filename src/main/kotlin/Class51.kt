@@ -146,7 +146,7 @@ class Class51 {
         anInt866++
         if (aClass356_881 == null) return string
         if (i_3_ != -16) return null
-        val class348_sub50 = aClass356_881!!.method3480(i.toLong(), -6008) as Class348_Sub50?
+        val class348_sub50 = aClass356_881!!.method3480(i.toLong(), -6008) as StringCacheNode?
         if (class348_sub50 == null) return string
         return class348_sub50.aString7211
     }
@@ -203,12 +203,12 @@ class Class51 {
                 if (bool_14_) class64!!.H(anInt893, anInt954, anInt890)
                 class64!!.s(i_4_)
             } else class64 = class64!!.method614(0.toByte(), i_4_, true)
-            Class348_Sub42.aModelOrSpriteHolder_7058!!.aClass64_119 = class64
-            Class348_Sub42.aModelOrSpriteHolder_7058!!.aRenderNode118 = var_renderNode
-            return Class348_Sub42.aModelOrSpriteHolder_7058
+            HashLinkedListNode.aModelOrSpriteHolder_7058!!.aClass64_119 = class64
+            HashLinkedListNode.aModelOrSpriteHolder_7058!!.aRenderNode118 = var_renderNode
+            return HashLinkedListNode.aModelOrSpriteHolder_7058
         } catch (runtimeexception: RuntimeException) {
             runtimeexception.printStackTrace()
-            throw Class348_Sub17.method2929(runtimeexception, ("iv.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (if (var_terrainTile_6_ != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("iv.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (if (var_terrainTile_6_ != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
         }
     }
 
@@ -294,7 +294,7 @@ class Class51 {
         if (aShortArray940 != null) {
             var i_28_ = 0
             while (aShortArray940!!.size > i_28_) {
-                if (aByteArray872 != null && aByteArray872!!.size > i_28_) class64_27_!!.ia(aShortArray940!![i_28_], (Class348_Sub26.aShortArray6889!![0xff and aByteArray872!![i_28_].toInt()]))
+                if (aByteArray872 != null && aByteArray872!!.size > i_28_) class64_27_!!.ia(aShortArray940!![i_28_], (NamedIdEntry.aShortArray6889!![0xff and aByteArray872!![i_28_].toInt()]))
                 else class64_27_!!.ia(aShortArray940!![i_28_], aShortArray908[i_28_])
                 i_28_++
             }
@@ -330,7 +330,7 @@ class Class51 {
         return true
     }
 
-    fun method479(i: Byte, class348_sub49: Class348_Sub49) {
+    fun method479(i: Byte, class348_sub49: Buffer) {
         anInt867++
         while (true) {
             val i_33_ = class348_sub49.readUnsignedByte(255)
@@ -368,7 +368,7 @@ class Class51 {
         return false
     }
 
-    private fun method482(class348_sub49: Class348_Sub49, i: Int, i_38_: Byte) {
+    private fun method482(class348_sub49: Buffer, i: Int, i_38_: Byte) {
         anInt960++
         if (i == 1 || i == 5) {
             if (i == 5 && this.aSeqDefinitionCache_933!!.aBoolean3355) method484(class348_sub49, -528)
@@ -531,10 +531,10 @@ class Class51 {
                                                                                                                     for (i_44_ in 0..<i_42_) {
                                                                                                                         val bool = class348_sub49.readUnsignedByte(255) == 1
                                                                                                                         val i_45_ = class348_sub49.readMedium(-1)
-                                                                                                                        val class348: Class348?
-                                                                                                                        if (!bool) class348 = Class348_Sub35(class348_sub49.readInt((-126).toByte()))
-                                                                                                                        else class348 = Class348_Sub50(class348_sub49.readString((-87).toByte()))
-                                                                                                                        aClass356_881!!.method3483(86.toByte(), i_45_.toLong(), class348)
+                                                                                                                        val linkedListNode: LinkedListNode?
+                                                                                                                        if (!bool) linkedListNode = IntKeyNode(class348_sub49.readInt((-126).toByte()))
+                                                                                                                        else linkedListNode = StringCacheNode(class348_sub49.readString((-87).toByte()))
+                                                                                                                        aClass356_881!!.method3483(86.toByte(), i_45_.toLong(), linkedListNode)
                                                                                                                     }
                                                                                                                 }
                                                                                                             } else this.anInt909 = class348_sub49.readSmart(-121)
@@ -643,11 +643,11 @@ class Class51 {
             if (bool) class64!!.s(i_73_)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
         }
     }
 
-    private fun method484(class348_sub49: Class348_Sub49, i: Int) {
+    private fun method484(class348_sub49: Buffer, i: Int) {
         if (i != -528) method486(79)
         anInt871++
         val i_74_ = class348_sub49.readUnsignedByte(255)
@@ -679,7 +679,7 @@ class Class51 {
         val i_81_ = 81 % ((i_80_ - -53) / 44)
         anInt898++
         if (aClass356_881 == null) return i_79_
-        val class348_sub35 = aClass356_881!!.method3480(i.toLong(), -6008) as Class348_Sub35?
+        val class348_sub35 = aClass356_881!!.method3480(i.toLong(), -6008) as IntKeyNode?
         if (class348_sub35 == null) return i_79_
         return class348_sub35.anInt6976
     }

@@ -1,5 +1,5 @@
 import ShadowQualityOptionState.Companion.method1791
-import Class348_Sub40.Companion.method3038
+import AbstractProceduralTextureNode.Companion.method3038
 import Class76.Companion.method773
 
 /*
@@ -60,7 +60,7 @@ object PlayerUpdateDecoder {
         }
     }
 
-    fun method1141(class348_sub49_sub2: Class348_Sub49_Sub2?, i: Int, i_0_: Int, i_1_: Int, player: Player?) {
+    fun method1141(class348_sub49_sub2: CipheredPacketBuffer?, i: Int, i_0_: Int, i_1_: Int, player: Player?) {
         do {
             try {
                 anInt1912++
@@ -216,7 +216,7 @@ object PlayerUpdateDecoder {
                     if ((i_0_ and 0x10) != 0) {
                         val i_35_ = class348_sub49_sub2!!.readUnsignedByte(255)
                         val `is` = ByteArray(i_35_)
-                        val class348_sub49 = Class348_Sub49(`is`)
+                        val class348_sub49 = Buffer(`is`)
                         class348_sub49_sub2.method3347(`is`, 0, i_35_, (-124).toByte())
                         CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i] = class348_sub49
                         player!!.method2452(84.toByte(), class348_sub49)
@@ -227,12 +227,12 @@ object PlayerUpdateDecoder {
                         val i_36_: Byte
                         if (i_2_.toInt() != -1) i_36_ = i_2_
                         else i_36_ = KeyboardLayoutCache.aByteArray3300!![i]
-                        Class348_Sub42_Sub9_Sub1.method3208(player, i_36_.toInt(), -21)
+                        HardKeyedCacheEntryReference.method3208(player, i_36_.toInt(), -21)
                         player.method2455(player.anInt10531, -26443, i_36_, player.anInt10549)
                     } else player.method2449(player.anInt10531, player.anInt10549, 84.toByte())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ns.A(" + (if (class348_sub49_sub2 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (player != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ns.A(" + (if (class348_sub49_sub2 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (player != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

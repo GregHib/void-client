@@ -51,7 +51,7 @@ class WidgetDefinition {
         var i_2_ = 0
         var i_3_ = 0
         var i_4_ = this.anIntArray237[i_1_]
-        var class348_sub42_sub17: Class348_Sub42_Sub17? = null
+        var class348_sub42_sub17: TextureMaterialGroup? = null
         val class348_sub42_sub17_5_ = this.aClass87_251!!.method839(i_4_ shr 16, 3)
         i_4_ = i_4_ and 0xffff
         if (class348_sub42_sub17_5_ == null) return i_2_
@@ -99,7 +99,7 @@ class WidgetDefinition {
         return 0x20 or i_2_
     }
 
-    private fun method264(class348_sub49: Class348_Sub49, i: Int, i_10_: Int) {
+    private fun method264(class348_sub49: Buffer, i: Int, i_10_: Int) {
         if (i_10_ == -14861) {
             if (i == 1) {
                 val i_11_ = class348_sub49.readUnsignedShort(842397944) //short
@@ -163,7 +163,7 @@ class WidgetDefinition {
                                                     i_24_++
                                                 }
                                             }
-                                            this.anIntArray253!![class348_sub49.readUnsignedByte(255)] = (class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i_10_, -15092)))
+                                            this.anIntArray253!![class348_sub49.readUnsignedByte(255)] = (class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i_10_, -15092)))
                                         } else if (i == 20) {
                                             if ((this.anIntArray236 == null) || (this.anIntArray265) == null) {
                                                 this.anIntArray236 = (IntArray((this.anIntArrayArray264)!!.size))
@@ -200,7 +200,7 @@ class WidgetDefinition {
         val class348_sub42_sub17 = this.aClass87_251!!.method839(i_29_ shr 16, 3)
         i_29_ = i_29_ and 0xffff
         if (class348_sub42_sub17 == null) return class64.method614(i_28_, i_32_, true)
-        var class348_sub42_sub17_34_: Class348_Sub42_Sub17? = null
+        var class348_sub42_sub17_34_: TextureMaterialGroup? = null
         if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_27_ != -1 && this.anIntArray237.size > i_27_) {
             i_27_ = this.anIntArray237[i_27_]
             class348_sub42_sub17_34_ = this.aClass87_251!!.method839(i_27_ shr 16, 3)
@@ -222,7 +222,7 @@ class WidgetDefinition {
         return class64_35_
     }
 
-    fun method267(class348_sub49: Class348_Sub49, bool: Boolean) {
+    fun method267(class348_sub49: Buffer, bool: Boolean) {
         anInt243++
         while (true) {
             val i = class348_sub49.readUnsignedByte(255)
@@ -241,14 +241,14 @@ class WidgetDefinition {
         val class348_sub42_sub17 = this.aClass87_251!!.method839(i_55_ shr 16, 3)
         i_55_ = i_55_ and 0xffff
         if (class348_sub42_sub17 == null) return class64.method614(1.toByte(), i_52_, true)
-        var class348_sub42_sub17_56_: Class348_Sub42_Sub17? = null
+        var class348_sub42_sub17_56_: TextureMaterialGroup? = null
         if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_50_ != -1 && this.anIntArray237.size > i_50_) {
             i_50_ = this.anIntArray237[i_50_]
             class348_sub42_sub17_56_ = this.aClass87_251!!.method839(i_50_ shr 16, 3)
             i_50_ = i_50_ and 0xffff
         }
-        var class348_sub42_sub17_57_: Class348_Sub42_Sub17? = null
-        var class348_sub42_sub17_58_: Class348_Sub42_Sub17? = null
+        var class348_sub42_sub17_57_: TextureMaterialGroup? = null
+        var class348_sub42_sub17_58_: TextureMaterialGroup? = null
         var i_59_ = 0
         var i_60_ = 0
         if (anIntArray260 != null) {
@@ -357,7 +357,7 @@ class WidgetDefinition {
             var i_43_ = -334 + i_39_
             if (i_43_ < 0) i_43_ = 0
             else if (i_43_ > 100) i_43_ = 100
-            val i_44_ = (i_43_ * (-Class348_Sub23_Sub3.aShort9044 + TextureLoaderUtil.aShort3992) / 100 + Class348_Sub23_Sub3.aShort9044)
+            val i_44_ = (i_43_ * (-NullOggStream.aShort9044 + TextureLoaderUtil.aShort3992) / 100 + NullOggStream.aShort9044)
             i_42_ = i_42_ * i_44_ shr 8
             LocalPlayerState.anInt1906 = LocalPlayerState.anInt1911 * i_44_ shr 8
             val i_45_ = 16384 - i and 0x3fff
@@ -379,7 +379,7 @@ class WidgetDefinition {
             Class59_Sub2_Sub2.anInt8685 = i_38_ - i_49_
             ParticleSystemRenderer.anInt3855 = -i_48_ + i_36_
             GlslMaterialPass.anInt6246 = -i_47_ + i_41_
-            Class348_Sub42_Sub19.anInt9701 = i
+            MinimapAreaMarkerNode.anInt9701 = i
         }
     }
 }

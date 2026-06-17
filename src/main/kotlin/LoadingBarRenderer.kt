@@ -74,7 +74,7 @@ class LoadingBarRenderer : Interface16 {
             val field = var_class!!.getDeclaredField(string)
             return field.getInt(`object`)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wba.K(" + (if (`object` != null) "{...}" else "null") + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wba.K(" + (if (`object` != null) "{...}" else "null") + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -88,7 +88,7 @@ class LoadingBarRenderer : Interface16 {
             field.set(Class93.anApplet1530, null)
             return `object`
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -104,7 +104,7 @@ class LoadingBarRenderer : Interface16 {
             anInt5061++
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "wba.I(" + i + ',' + l + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "wba.I(" + i + ',' + l + ')')
         }
     }
 
@@ -140,7 +140,7 @@ class LoadingBarRenderer : Interface16 {
             val field = var_class!!.getDeclaredField(string)
             return field.getBoolean(`object`)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wba.H(" + (if (`object` != null) "{...}" else "null") + ',' + bool + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wba.H(" + (if (`object` != null) "{...}" else "null") + ',' + bool + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -164,9 +164,9 @@ class LoadingBarRenderer : Interface16 {
                 try {
                     val i_5_ = Class51.aResourceLoaderThread_897!!.method2320(103.toByte())
                     val string = Class51.aResourceLoaderThread_897!!.method2318(-9324)
-                    if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
+                    if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432))
                     val graphics_6_ = WidgetRedrawRegion.anImage4249!!.getGraphics()
-                    graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+                    graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
                     val i_7_ = anImage5030!!.getWidth(null)
                     val i_8_ = anImage5026!!.getWidth(null)
                     val i_9_ = anImage5056!!.getWidth(null)
@@ -248,14 +248,14 @@ class LoadingBarRenderer : Interface16 {
 
     private fun method2218(i: Int, i_40_: Int): Int {
         anInt5028++
-        if (aBoolean5045) return (-i + Class348_Sub42_Sub8_Sub2.anInt10432) / 2
+        if (aBoolean5045) return (-i + HardCacheEntryReference.anInt10432) / 2
         if (i_40_ != -6277) anImage5026 = null
         return 0
     }
 
     private fun method2219(i: Int) {
         anInt5031++
-        LoadingScreenState.method1455(Class51.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], Class51.aResourceLoaderThread_897!!.method2318(-9324), (Class348_Sub40_Sub8.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), Class50_Sub3.aColorArray5242!![UnderlayDefinition.anInt2884])
+        LoadingScreenState.method1455(Class51.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], Class51.aResourceLoaderThread_897!!.method2318(-9324), (PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), Class50_Sub3.aColorArray5242!![UnderlayDefinition.anInt2884])
         if (i != 33) method55(1.toByte())
     }
 

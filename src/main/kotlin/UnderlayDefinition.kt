@@ -6,7 +6,7 @@ class UnderlayDefinition {
     var aItemDefinitionLoader_2886: ItemDefinitionLoader? = null
     var anInt2890: Int = 0
     private var anInt2891 = 0
-    private fun method1608(i: Int, class348_sub49: Class348_Sub49, i_0_: Byte) {
+    private fun method1608(i: Int, class348_sub49: Buffer, i_0_: Byte) {
         anInt2887++
         if (i == 1) anInt2891 = class348_sub49.readUnsignedShort(842397944)
         else if (i == 2) {
@@ -26,7 +26,7 @@ class UnderlayDefinition {
         return spriteImage
     }
 
-    fun method1611(class348_sub49: Class348_Sub49, bool: Boolean) {
+    fun method1611(class348_sub49: Buffer, bool: Boolean) {
         while (true) {
             val i = class348_sub49.readUnsignedByte(255)
             if (i == 0) break

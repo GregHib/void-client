@@ -17,7 +17,7 @@ class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
             this.aLong517 = l
             aClass377_519 = class377
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ifa.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ifa.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
         }
     }
 
@@ -44,7 +44,7 @@ class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
                     if (i <= -97) break
                     method367(-67)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("ifa.B(" + (if (objects != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("ifa.B(" + (if (objects != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

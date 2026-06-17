@@ -4,27 +4,27 @@
 class MapElementLookup {
     private var aClass356_4146: Class356? = null
     private var anInt4148 = 0
-    private var aClass348_4150: Class348? = null
+    private var aLinkedListNode_4150: LinkedListNode? = null
 
-    fun method2644(i: Byte): Class348? {
+    fun method2644(i: Byte): LinkedListNode? {
         anInt4148 = 0
         if (i.toInt() != 123) method2643(-115, 5, -49, 81, 25)
         anInt4145++
         return method2646(117.toByte())
     }
 
-    fun method2646(i: Byte): Class348? {
+    fun method2646(i: Byte): LinkedListNode? {
         anInt4149++
         val i_4_ = -49 / ((i - 44) / 40)
-        if (anInt4148 > 0 && (aClass356_4146!!.aClass348Array4374[-1 + anInt4148] !== aClass348_4150)) {
-            val class348 = aClass348_4150
-            aClass348_4150 = class348!!.aClass348_4294
+        if (anInt4148 > 0 && (aClass356_4146!!.aLinkedListNodeArray4374[-1 + anInt4148] !== aLinkedListNode_4150)) {
+            val class348 = aLinkedListNode_4150
+            aLinkedListNode_4150 = class348!!.aLinkedListNode_4294
             return class348
         }
         while (aClass356_4146!!.anInt4377 > anInt4148) {
-            val class348 = (aClass356_4146!!.aClass348Array4374[anInt4148++].aClass348_4294)
-            if (aClass356_4146!!.aClass348Array4374[anInt4148 + -1] !== class348) {
-                aClass348_4150 = class348!!.aClass348_4294
+            val class348 = (aClass356_4146!!.aLinkedListNodeArray4374[anInt4148++].aLinkedListNode_4294)
+            if (aClass356_4146!!.aLinkedListNodeArray4374[anInt4148 + -1] !== class348) {
+                aLinkedListNode_4150 = class348!!.aLinkedListNode_4294
                 return class348
             }
         }
@@ -46,7 +46,7 @@ class MapElementLookup {
         fun method2643(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             if (WidgetRedrawRegion.anIntArrayArray4253 != null) WidgetRedrawRegion.anIntArrayArray4253!![i]!![i_0_] = 0xffffff.inv() or i_1_
             if (BooleanGraphicsOptionState.aShortArrayArray5847 != null) BooleanGraphicsOptionState.aShortArrayArray5847!![i]!![i_0_] = i_2_.toShort()
-            if (Class348_Sub1_Sub2.aByteArrayArray8816 != null) Class348_Sub1_Sub2.aByteArrayArray8816!![i]!![i_0_] = i_3_.toByte()
+            if (HashTileShape.aByteArrayArray8816 != null) HashTileShape.aByteArrayArray8816!![i]!![i_0_] = i_3_.toByte()
         }
 
         @JvmStatic

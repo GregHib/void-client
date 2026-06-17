@@ -30,7 +30,7 @@ class RemoveRoofsOptionState : GraphicsOptionState {
         return 1
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1716(bool: Boolean) {
         if (this.aClass348_Sub51_3136.method3425(-112)) this.anInt3138 = 0
@@ -39,7 +39,7 @@ class RemoveRoofsOptionState : GraphicsOptionState {
         if (this.anInt3138 != 1 && this.anInt3138 != 0) this.anInt3138 = method1710(20014)
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     fun method1812(i: Int): Int {
         if (i != -32350) anIntArray6062 = null
@@ -93,17 +93,17 @@ class RemoveRoofsOptionState : GraphicsOptionState {
                 val i_13_ = ArchiveFileConditionWrapper.anInt3465 + i_12_
                 val i_14_ = i_2_ shl Class362.anInt4459
                 val i_15_ = ArchiveFileConditionWrapper.anInt3465 + i_14_
-                val i_16_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), i_2_, i)
-                val i_17_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), 1 + i_2_, i - -1)
-                LoadingBarRenderer.aMapTileShapeArray5060!![Class348_Sub44.anInt7101++] = MapTileShape(i_5_, i_4_, i_12_, i_13_, i_13_, i_12_, i_16_, i_17_, -i_1_ + i_17_, -i_1_ + i_16_, i_14_, i_15_, i_15_, i_14_)
+                val i_16_ = TerrainTileShape.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), i_2_, i)
+                val i_17_ = TerrainTileShape.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), 1 + i_2_, i - -1)
+                LoadingBarRenderer.aMapTileShapeArray5060!![PackedFlagsAccessor.anInt7101++] = MapTileShape(i_5_, i_4_, i_12_, i_13_, i_13_, i_12_, i_16_, i_17_, -i_1_ + i_17_, -i_1_ + i_16_, i_14_, i_15_, i_15_, i_14_)
             } else {
                 val i_6_ = ArchiveFileConditionWrapper.anInt3465 + (i shl Class362.anInt4459)
                 val i_7_ = -ArchiveFileConditionWrapper.anInt3465 + i_6_
                 val i_8_ = i_2_ shl Class362.anInt4459
                 val i_9_ = i_8_ + ArchiveFileConditionWrapper.anInt3465
-                val i_10_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), i_2_, i + 1)
-                val i_11_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), 1 + i_2_, i)
-                LoadingBarRenderer.aMapTileShapeArray5060!![Class348_Sub44.anInt7101++] = MapTileShape(i_5_, i_4_, i_6_, i_7_, i_7_, i_6_, i_10_, i_11_, -i_1_ + i_11_, i_10_ - i_1_, i_8_, i_9_, i_9_, i_8_)
+                val i_10_ = TerrainTileShape.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), i_2_, i + 1)
+                val i_11_ = TerrainTileShape.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), 1 + i_2_, i)
+                LoadingBarRenderer.aMapTileShapeArray5060!![PackedFlagsAccessor.anInt7101++] = MapTileShape(i_5_, i_4_, i_6_, i_7_, i_7_, i_6_, i_10_, i_11_, -i_1_ + i_11_, i_10_ - i_1_, i_8_, i_9_, i_9_, i_8_)
             }
             if (i_3_ != -1) method1811(31, null, 115, null)
             anInt6067++
@@ -177,7 +177,7 @@ class RemoveRoofsOptionState : GraphicsOptionState {
                 }
                 return 0
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vu.F(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_18_ + ',' + (if (string_19_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vu.F(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_18_ + ',' + (if (string_19_ != null) "{...}" else "null") + ')'))
             }
         }
 

@@ -1,5 +1,5 @@
 import CacheArchiveIndexLoader.Companion.method340
-import Class348_Sub40_Sub1.Companion.method3051
+import ColorThresholdEffect.Companion.method3051
 import kotlin.math.asin
 import kotlin.math.atan2
 import kotlin.math.max

@@ -8,7 +8,7 @@ class CameraConfigDefinition {
     var anInt3245: Int = 0
     var anInt3249: Int = 2048
     var anInt3251: Int = 0
-    fun method1921(i: Byte, class348_sub49: Class348_Sub49) {
+    fun method1921(i: Byte, class348_sub49: Buffer) {
         anInt3255++
         while (true) {
             val i_11_ = class348_sub49.readUnsignedByte(255)
@@ -17,7 +17,7 @@ class CameraConfigDefinition {
         }
     }
 
-    private fun method1923(i: Int, i_13_: Int, class348_sub49: Class348_Sub49) {
+    private fun method1923(i: Int, i_13_: Int, class348_sub49: Buffer) {
         anInt3254++
         if (i_13_ == 4) {
             if (i != 1) {
@@ -53,7 +53,7 @@ class CameraConfigDefinition {
                 }
                 anInt3250++
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("u.B(" + i + ',' + f + ',' + (if (`is` != null) "{...}" else "null") + ',' + f_0_ + ',' + i_1_ + ',' + f_2_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + f_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + f_7_ + ',' + i_8_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("u.B(" + i + ',' + f + ',' + (if (`is` != null) "{...}" else "null") + ',' + f_0_ + ',' + i_1_ + ',' + f_2_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + f_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + f_7_ + ',' + i_8_ + ')'))
             }
         }
 
@@ -74,7 +74,7 @@ class CameraConfigDefinition {
                     LocalPlayerState.method1138(string_12_, false, string, (-45).toByte())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("u.E(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_12_ != null) "{...}" else "null") + ',' + bool + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("u.E(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_12_ != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
     }

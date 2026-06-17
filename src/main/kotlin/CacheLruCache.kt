@@ -2,20 +2,20 @@
 * Visit http://jode.sourceforge.net/
 */
 class CacheLruCache internal constructor(private var anInt3891: Int) {
-    private var aClass348_Sub42_3887 = Class348_Sub42()
+    private var aClass348_Sub42_3887 = HashLinkedListNode()
     private val aClass356_3888: Class356
     private var aLinkedNodeListIterator_3889: LinkedNodeListIterator? = LinkedNodeListIterator()
     private val anInt3890: Int
 
-    fun method2302(l: Long, i: Byte): Class348_Sub42? {
+    fun method2302(l: Long, i: Byte): HashLinkedListNode? {
         try {
             if (i > -25) aLinkedNodeListIterator_3889 = null
             anInt3885++
-            val class348_sub42 = aClass356_3888.method3480(l, -6008) as Class348_Sub42?
+            val class348_sub42 = aClass356_3888.method3480(l, -6008) as HashLinkedListNode?
             if (class348_sub42 != null) aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42)
             return class348_sub42
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "wu.D(" + l + ',' + i + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "wu.D(" + l + ',' + i + ')')
         }
     }
 
@@ -24,7 +24,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
         if (bool != true) method2305(-121L, null, -1)
         aLinkedNodeListIterator_3889!!.method1009(2110355138)
         aClass356_3888.method3481(0)
-        aClass348_Sub42_3887 = Class348_Sub42()
+        aClass348_Sub42_3887 = HashLinkedListNode()
         anInt3891 = anInt3890
     }
 
@@ -32,7 +32,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
         do {
             try {
                 anInt3880++
-                val class348_sub42 = aClass356_3888.method3480(l, -6008) as Class348_Sub42?
+                val class348_sub42 = aClass356_3888.method3480(l, -6008) as HashLinkedListNode?
                 if (class348_sub42 != null) {
                     class348_sub42.method2715(73.toByte())
                     class348_sub42.method3162(true)
@@ -41,13 +41,13 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
                 if (i <= -110) break
                 method2304(36, -86L)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "wu.C(" + i + ',' + l + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "wu.C(" + i + ',' + l + ')')
             }
             break
         } while (false)
     }
 
-    fun method2305(l: Long, class348_sub42: Class348_Sub42?, i: Int) {
+    fun method2305(l: Long, class348_sub42: HashLinkedListNode?, i: Int) {
         try {
             anInt3881++
             if ((anInt3891.inv()) == i) {
@@ -63,7 +63,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
             aClass356_3888.method3483(37.toByte(), l, class348_sub42)
             aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42!!)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wu.E(" + l + ',' + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wu.E(" + l + ',' + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

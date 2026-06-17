@@ -22,7 +22,7 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
             aClass45_4785 = class45
             aString4778 = string
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kk.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("kk.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -65,7 +65,7 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
             val `is` = Class369_Sub3.aClass45_8601!!.method410(-1860, 0, i_0_)
             if (i != 104) method741(98.toByte())
             mapAreaDefinition = MapAreaDefinition()
-            if (`is` != null) mapAreaDefinition.method1419(i_0_, Class348_Sub49(`is`), 64.toByte())
+            if (`is` != null) mapAreaDefinition.method1419(i_0_, Buffer(`is`), 64.toByte())
             ParticleAmountCache.aClass60_2844!!.method582(mapAreaDefinition, i_0_.toLong(), (-114).toByte())
             return mapAreaDefinition
         }

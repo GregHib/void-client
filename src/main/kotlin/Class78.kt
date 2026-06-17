@@ -172,7 +172,7 @@ class Class78 internal constructor(private val aRandomAccessFileOnDisk_1312: Ran
             val i_16_ = -67 / ((i - -49) / 34)
             aLong1324 = l
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "l.A(" + l + ',' + i + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "l.A(" + l + ',' + i + ')')
         }
     }
 

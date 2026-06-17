@@ -33,7 +33,7 @@ object LocalPlayerState {
                 val i_1_ = 34 % ((16 - i) / 55)
                 if (BloomGraphicsOptionState.anInt5969 != 1) {
                     Class63.anInt1121 = 0
-                    Class348_Sub42_Sub7.anInt9541 = -1
+                    ConfigShortValueNode.anInt9541 = -1
                 }
                 AbstractMenuEntry.aBoolean1712 = false
                 GlRectangleTexture.method254(-3, (-94).toByte())
@@ -42,7 +42,7 @@ object LocalPlayerState {
                 GroundDecorSceneEntity.anInt9971 = 0
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nr.A(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nr.A(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

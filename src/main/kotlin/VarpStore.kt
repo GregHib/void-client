@@ -1,5 +1,5 @@
 import ChatEffectsOptionState.Companion.method1730
-import Class348_Sub16_Sub3.Companion.method2862
+import MidiSequencePlayer.Companion.method2862
 import Class367_Sub8.Companion.method3548
 import Class5.Companion.method181
 import Class62.method599
@@ -17,7 +17,7 @@ class VarpStore : Interface17 {
         anInt5071++
         if (i >= -124) method1308(-105, 89, -65, -52, 76.toByte(), 37, -61, 73)
         val l = method599(-79)
-        var class348_sub14 = (if (bool) aClass356_5070.method3484(0) as Class348_Sub14? else aClass356_5070.method3482(0) as Class348_Sub14?)
+        var class348_sub14 = (if (bool) aClass356_5070.method3484(0) as LongKeyNode? else aClass356_5070.method3482(0) as LongKeyNode?)
         while (class348_sub14 != null) {
             if (l > (class348_sub14.aLong6762 and 0x3fffffffffffffffL)) {
                 if ((0x4000000000000000L and class348_sub14.aLong6762) != 0L) {
@@ -28,7 +28,7 @@ class VarpStore : Interface17 {
                 }
                 class348_sub14.method2715(75.toByte())
             }
-            class348_sub14 = aClass356_5070.method3482(0) as Class348_Sub14?
+            class348_sub14 = aClass356_5070.method3482(0) as LongKeyNode?
         }
         return -1
     }
@@ -37,9 +37,9 @@ class VarpStore : Interface17 {
         if (i.toInt() == -78) {
             anInt5066++
             this.anIntArray5063[i_2_] = i_1_
-            var class348_sub14 = (aClass356_5070.method3480(i_2_.toLong(), -6008) as Class348_Sub14?)
+            var class348_sub14 = (aClass356_5070.method3480(i_2_.toLong(), -6008) as LongKeyNode?)
             if (class348_sub14 == null) {
-                class348_sub14 = Class348_Sub14(500L + method599(-122))
+                class348_sub14 = LongKeyNode(500L + method599(-122))
                 aClass356_5070.method3483(73.toByte(), i_2_.toLong(), class348_sub14)
             } else class348_sub14.aLong6762 = method599(-88) - -500L
         }
@@ -73,9 +73,9 @@ class VarpStore : Interface17 {
         anInt5073++
         if (i.toInt() != 42) anInt5065 = -16
         anIntArray5078[i_25_] = i_24_
-        var class348_sub14 = (aClass356_5070.method3480(i_25_.toLong(), i + -6050) as Class348_Sub14?)
+        var class348_sub14 = (aClass356_5070.method3480(i_25_.toLong(), i + -6050) as LongKeyNode?)
         if (class348_sub14 == null) {
-            class348_sub14 = Class348_Sub14(4611686018427387905L)
+            class348_sub14 = LongKeyNode(4611686018427387905L)
             aClass356_5070.method3483(19.toByte(), i_25_.toLong(), class348_sub14)
         } else if (class348_sub14.aLong6762 != 4611686018427387905L) class348_sub14.aLong6762 = 0x4000000000000000L or 500L + method599(-108)
     }
@@ -161,12 +161,12 @@ class VarpStore : Interface17 {
         }
 
         fun method1311(i: Int, var_renderer: Renderer) {
-            LoadingScreenState.aClass352Array2636 = arrayOfNulls<Class352>(Class348_Sub1.anIntArray6547!!.size)
+            LoadingScreenState.aClass352Array2636 = arrayOfNulls<Class352>(AbstractTileShape.anIntArray6547!!.size)
             anInt5064++
             if (i != 5139) anInt5065 = 62
             var i_21_ = 0
-            while ((i_21_ < Class348_Sub1.anIntArray6547!!.size)) {
-                val i_22_ = Class348_Sub1.anIntArray6547!![i_21_]
+            while ((i_21_ < AbstractTileShape.anIntArray6547!!.size)) {
+                val i_22_ = AbstractTileShape.anIntArray6547!![i_21_]
                 val class143 = RangedGraphicsOptionState.method1766((-86).toByte(), i_22_, TerrainTile.aClass45_4585!!)
                 val class324 = var_renderer.method3686(class143, SpriteImage.method1523(Class39.aClass45_518!!, i_22_), true)
                 LoadingScreenState.aClass352Array2636!![i_21_] = Class352(class324, class143)
@@ -175,7 +175,7 @@ class VarpStore : Interface17 {
         }
 
         @JvmStatic
-        fun method1312(i: Byte, class348_sub49: Class348_Sub49): Class52 {
+        fun method1312(i: Byte, class348_sub49: Buffer): Class52 {
             anInt5075++
             val i_23_ = class348_sub49.readInt((-126).toByte())
             if (i < 47) method1315(4)
@@ -191,7 +191,7 @@ class VarpStore : Interface17 {
                     return
                 }
                 if (WallEntity.aLinkedQueueNode_8766!!.anInt1997 == 2) {
-                    method2862(RenderableGroup.aPrivilegedOperationWorker_5017, Class348_Sub42_Sub8.aString9554, -120, 2)
+                    method2862(RenderableGroup.aPrivilegedOperationWorker_5017, CacheEntryReference.aString9554, -120, 2)
                     WallEntity.aLinkedQueueNode_8766 = null
                     return
                 }
@@ -209,7 +209,7 @@ class VarpStore : Interface17 {
             if (i != -65536) method1310(false)
             for (i_38_ in 0..<AbstractCameraTransform.anInt1597) {
                 val i_39_ = MinimapRectClipper.anIntArray224!![i_38_]
-                val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(i_39_.toLong(), -6008) as Class348_Sub22).aNpc_6859)!!
+                val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(i_39_.toLong(), -6008) as NpcReference).aNpc_6859)!!
                 var i_40_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if ((0x10 and i_40_) != 0) i_40_ += CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i xor 0xff00.inv()) shl 8
                 if ((0x2 and i_40_) != 0) {
@@ -226,7 +226,7 @@ class VarpStore : Interface17 {
                         if (`is`[i_41_] == 65535) `is`[i_41_] = -1
                     }
                     val i_42_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-121).toByte())
-                    Class348_Sub17.method2931(i_42_, 115.toByte(), `is`, npc)
+                    SoundBankPatch.method2931(i_42_, 115.toByte(), `is`, npc)
                 }
                 if ((i_40_ and 0x20) != 0) {
                     var i_43_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)

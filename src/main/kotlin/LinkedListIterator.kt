@@ -1,4 +1,4 @@
-import Class348_Sub5_Sub1.Companion.method2766
+import GlBloomEffect.Companion.method2766
 import Class88.Companion.method847
 import java.io.DataInputStream
 import java.net.URL
@@ -7,9 +7,9 @@ import java.net.URL
  * Class156
  */
 class LinkedListIterator {
-    private var aClass348_Sub42_2115: Class348_Sub42? = null
+    private var aClass348_Sub42_2115: HashLinkedListNode? = null
     private var aLinkedNodeListIterator_2118: LinkedNodeListIterator? = null
-    fun method1240(i: Int): Class348_Sub42? {
+    fun method1240(i: Int): HashLinkedListNode? {
         anInt2114++
         if (i <= 7) method1240(79)
         val class348_sub42 = (aLinkedNodeListIterator_2118!!.aClass348_Sub42_1647.aClass348_Sub42_7063)
@@ -23,7 +23,7 @@ class LinkedListIterator {
 
     constructor()
 
-    fun method1243(i: Byte): Class348_Sub42? {
+    fun method1243(i: Byte): HashLinkedListNode? {
         anInt2120++
         if (i < 44) aStringArray2113 = null
         val class348_sub42 = aClass348_Sub42_2115
@@ -87,9 +87,9 @@ class LinkedListIterator {
                     string_4_ = TileRenderState.method2680("%40", true, "@", string_4_)
                     string_4_ = TileRenderState.method2680("%26", true, "&", string_4_)
                     string_4_ = TileRenderState.method2680("%23", true, "#", string_4_)
-                    if (Class348_Sub8.anApplet6662 != null) {
+                    if (FacingDirectionNode.anApplet6662 != null) {
                         if (i != 15004) method1238(-69, 63, 124)
-                        val class144 = (HudTabPanel.aPrivilegedOperationWorker_2993!!.method2237(URL(Class348_Sub8.anApplet6662!!.getCodeBase(), ("clienterror.ws?c=" + Class348_Sub1_Sub3.anInt8818 + "&u=" + (if (OpenGlTerrainTile.aString8265 != null) OpenGlTerrainTile.aString8265 else Class89.aLong1507.toString()) + "&v1=" + PrivilegedOperationWorker.aString3782 + "&v2=" + PrivilegedOperationWorker.aString3796 + "&e=" + string_4_)), 8362))
+                        val class144 = (HudTabPanel.aPrivilegedOperationWorker_2993!!.method2237(URL(FacingDirectionNode.anApplet6662!!.getCodeBase(), ("clienterror.ws?c=" + ParticleTileShape.anInt8818 + "&u=" + (if (OpenGlTerrainTile.aString8265 != null) OpenGlTerrainTile.aString8265 else Class89.aLong1507.toString()) + "&v1=" + PrivilegedOperationWorker.aString3782 + "&v2=" + PrivilegedOperationWorker.aString3796 + "&e=" + string_4_)), 8362))
                         while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-123).toByte(), 1L)
                         if (class144.anInt1997 != 1) break
                         val datainputstream = class144.anObject1998 as DataInputStream?

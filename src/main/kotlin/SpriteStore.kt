@@ -33,7 +33,7 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         }
         if (i_2_ < 6) aClass60_360 = null
         class38 = Class38()
-        if (`is` != null) class38.method364(Class348_Sub49(`is`), 54.toByte())
+        if (`is` != null) class38.method364(Buffer(`is`), 54.toByte())
         synchronized(aClass60_360!!) {
             aClass60_360!!.method582(class38, i.toLong(), (-109).toByte())
         }
@@ -53,7 +53,7 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
             aClass45_366 = class45
             aClass45_366!!.method407(0, 30)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("hq.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("hq.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

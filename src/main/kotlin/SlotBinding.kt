@@ -138,7 +138,7 @@ class SlotBinding private constructor(private val aClass69_3392: Class69?) {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("up.C(" + i + ',' + (if (class51 != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("up.C(" + i + ',' + (if (class51 != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
             }
         }
 

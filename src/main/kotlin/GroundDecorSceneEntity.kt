@@ -1,6 +1,6 @@
 import ModelBatchBase.Companion.method1130
 import HostPingThread.Companion.method1301
-import Class348_Sub23_Sub1.Companion.method2967
+import VorbisOggDecoder.Companion.method2967
 import OutputStream_Sub2.Companion.method136
 
 /* Class318_Sub1_Sub1_Sub2 - Decompiled by JODE
@@ -26,7 +26,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, class
                 if (aClass64_9993 == null || class318_sub1_sub1_sub2_3_.aClass64_9993 == null) break
                 aClass64_9993!!.method613((class318_sub1_sub1_sub2_3_.aClass64_9993), i_2_, i, i_0_, bool)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uo.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("uo.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
             }
             break
         } while (false)
@@ -55,15 +55,15 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, class
 
     private fun method2401(var_renderer: Renderer?, i: Int, bool: Boolean, i_4_: Int): ModelOrSpriteHolder? {
         anInt9985++
-        val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, aShort9991.toInt() and 0xffff)
+        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, aShort9991.toInt() and 0xffff)
         val var_terrainTile: TerrainTile?
         val var_terrainTile_5_: TerrainTile?
         if (aBoolean9983) {
             var_terrainTile = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
-            var_terrainTile_5_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![0]
+            var_terrainTile_5_ = TerrainTileShape.aTerrainTileArray8801!![0]
         } else {
-            var_terrainTile = (Class348_Sub1_Sub1.aTerrainTileArray8801!![this.aByte6376.toInt()])
-            if (this.aByte6376 < 3) var_terrainTile_5_ = (Class348_Sub1_Sub1.aTerrainTileArray8801!![1 + this.aByte6376])
+            var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            if (this.aByte6376 < 3) var_terrainTile_5_ = (TerrainTileShape.aTerrainTileArray8801!![1 + this.aByte6376])
             else var_terrainTile_5_ = null
         }
         return class51.method476(var_renderer, var_terrainTile_5_, 22, i, this.x, bool, var_terrainTile, this.anInt6382, this.y, aByte9980.toInt(), 128)
@@ -199,7 +199,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, class
                 if (!aBoolean9989) break
                 aClass64_9993 = aClass64_9993!!.method614(0.toByte(), i_26_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uo.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + i_24_ + ',' + bool_25_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("uo.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + i_24_ + ',' + bool_25_ + ')'))
             }
             break
         } while (false)
@@ -268,7 +268,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, class
         fun method2403(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int) {
             anInt9977++
             if (i_10_ != 19206) method2402(-3, 46.toByte())
-            val class302s = Class348_Sub27.aMinimapPositionStateArray6897s!!
+            val class302s = MultiFieldRecord.aMinimapPositionStateArray6897s!!
             for (i_13_ in class302s.indices) {
                 val class302 = class302s[i_13_]
                 if (class302 != null && class302.anInt3840 == 2) {

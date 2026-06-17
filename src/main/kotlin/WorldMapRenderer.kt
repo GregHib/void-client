@@ -22,10 +22,10 @@ class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoad
         if (class295 != null) {
             val i_7_ = ((aMinimapSpriteRenderer_4685.aScreenAnchorAlignment_4922!!.method1607(Class92.anInt1524, aMinimapSpriteRenderer_4685.anInt4929, (-118).toByte())) - -aMinimapSpriteRenderer_4685.anInt4924)
             var i_8_ = ((aMinimapSpriteRenderer_4685.aTileRenderState_4925!!.method2679(OpenGlRenderer.anInt7666, aMinimapSpriteRenderer_4685.anInt4923, i.toInt() xor 0x60b.inv())) - -aMinimapSpriteRenderer_4685.anInt4920)
-            if (aMinimapSpriteRenderer_4685.aBoolean4914) Class348_Sub8.aRenderer6654!!.method3628(i_7_, i_8_, aMinimapSpriteRenderer_4685.anInt4929, aMinimapSpriteRenderer_4685.anInt4923, aMinimapSpriteRenderer_4685.anInt4917, 0)
+            if (aMinimapSpriteRenderer_4685.aBoolean4914) FacingDirectionNode.aRenderer6654!!.method3628(i_7_, i_8_, aMinimapSpriteRenderer_4685.anInt4929, aMinimapSpriteRenderer_4685.anInt4923, aMinimapSpriteRenderer_4685.anInt4917, 0)
             i_8_ += method1855(5, class295.aString3756, true, NodeDeque.aFont_3326, i_7_, i_8_) * 12
             i_8_ += 8
-            if (aMinimapSpriteRenderer_4685.aBoolean4914) Class348_Sub8.aRenderer6654!!.method3709(i_7_, i_8_, i_7_ + aMinimapSpriteRenderer_4685.anInt4929 + -1, i_8_, aMinimapSpriteRenderer_4685.anInt4917, 0)
+            if (aMinimapSpriteRenderer_4685.aBoolean4914) FacingDirectionNode.aRenderer6654!!.method3709(i_7_, i_8_, i_7_ + aMinimapSpriteRenderer_4685.anInt4929 + -1, i_8_, aMinimapSpriteRenderer_4685.anInt4917, 0)
             i_8_ = ++i_8_ + method1855(5, class295.aString3754, true, NodeDeque.aFont_3326, i_7_, i_8_) * 12
             i_8_ += 5
             i_8_ += method1855(5, class295.aString3758, true, NodeDeque.aFont_3326, i_7_, i_8_) * 12
@@ -39,7 +39,7 @@ class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoad
             anInt4677++
             return (font!!.method2584(null, 0, aMinimapSpriteRenderer_4685!!.anInt4928, null, aMinimapSpriteRenderer_4685.anInt4913, 0, -(i * 2) + aMinimapSpriteRenderer_4685.anInt4923, null, i + i_10_, 0, 0, -(i * 2) + aMinimapSpriteRenderer_4685.anInt4929, i_9_ + i, false, 0, string))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ta.A(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (font != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ta.A(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (font != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ')'))
         }
     }
 
@@ -48,7 +48,7 @@ class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoad
             aMinimapSpriteRenderer_4685 = minimapSpriteRenderer
             aMapRegionLoaderThread_4682 = mapRegionLoaderThread
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ta.<init>(" + (if (mapRegionLoaderThread != null) "{...}" else "null") + ',' + (if (minimapSpriteRenderer != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ta.<init>(" + (if (mapRegionLoaderThread != null) "{...}" else "null") + ',' + (if (minimapSpriteRenderer != null) "{...}" else "null") + ')'))
         }
     }
 

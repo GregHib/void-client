@@ -14,9 +14,9 @@ object NpcCountAccessor {
         if (i <= -123) aIntRange_2279 = null
     }
 
-    fun method1326(class348_sub16_sub3: Class348_Sub16_Sub3?, i: Int): Class348_Sub16_Sub3 {
+    fun method1326(class348_sub16_sub3: MidiSequencePlayer?, i: Int): MidiSequencePlayer {
         anInt2278++
-        val class348_sub16_sub3_0_ = (if (class348_sub16_sub3 == null) Class348_Sub16_Sub3() else Class348_Sub16_Sub3(class348_sub16_sub3))
+        val class348_sub16_sub3_0_ = (if (class348_sub16_sub3 == null) MidiSequencePlayer() else MidiSequencePlayer(class348_sub16_sub3))
         class348_sub16_sub3_0_.method2841(i, -94, 128)
         return class348_sub16_sub3_0_
     }
@@ -24,7 +24,7 @@ object NpcCountAccessor {
     fun method1327(i: Int): Int {
         if (i <= 17) anIntArray2280 = null
         anInt2277++
-        return Class348_Sub31.anInt6924
+        return AbstractFrameBufferSurface.anInt6924
     }
 
     fun method1328(i: Int) {
@@ -33,6 +33,6 @@ object NpcCountAccessor {
         anInt2281++
         Class358.aClass60_4417!!.method587(-89)
         SceneryDetailOptionState.aClass60_6096!!.method587(-87)
-        Class348_Sub40_Sub9.aClass60_9171!!.method587(-95)
+        EdgeDetectTextureNode.aClass60_9171!!.method587(-95)
     }
 }

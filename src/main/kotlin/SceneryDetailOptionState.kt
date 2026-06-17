@@ -7,7 +7,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
         anInt6085++
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     fun method1820(i: Int): Int {
         if (i != -32350) return -43
@@ -48,7 +48,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
         return false
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     companion object {
         @JvmField
@@ -120,7 +120,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     i_9_ = `is`[3]
                     i_10_ = `is`[2]
                     i_11_ = i + MinimapFlagRenderer.method1082(-81, false)
-                    i_12_ = Class348_Sub23.method2960(false, -52) + i_4_
+                    i_12_ = OggBitstreamDecoder.method2960(false, -52) + i_4_
                 } else {
                     var_renderer.DA(HslPaletteState.anInt4171, CircleDrawer.anInt2688, GlFramebufferBlitter.anInt282, ParticleSystemRenderer.anInt3861)
                     i_8_ = CircleDrawer.anInt2688
@@ -129,7 +129,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     i_10_ = GlFramebufferBlitter.anInt282
                     var_renderer.KA(ConfigValueProvider.anInt4911, SocketGameConnection.anInt5832, GlFramebufferBlitter.anInt282, ParticleSystemRenderer.anInt3861)
                     abstractCameraTransform = var_renderer.method3654()
-                    abstractCameraTransform.method903(GlRectangleTexture.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, ClanChatRequestSender.anInt3650, Class348_Sub51.anInt7244)
+                    abstractCameraTransform.method903(GlRectangleTexture.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, PackedFlagsAccessor.anInt7092, ClanChatRequestSender.anInt3650, DisplaySettingsConfig.anInt7244)
                     var_renderer.method3638(abstractCameraTransform)
                     i_12_ = i_4_
                     i_11_ = i
@@ -137,7 +137,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                 TextureDefinitionCache.method1626(1, true)
                 if (i_10_ == 0) i_10_ = 1
                 if (i_9_ == 0) i_9_ = 1
-                if (Class348_Sub1_Sub1.aTerrainTileArray8801 != null && (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) != 0)) {
+                if (TerrainTileShape.aTerrainTileArray8801 != null && (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) != 0)) {
                     var i_13_ = -1
                     var i_14_ = -1
                     val i_15_ = var_renderer.i()
@@ -170,17 +170,17 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         i_13_ = (LocalPlayerState.aPlayer_1907!!.method2436(71.toByte()) + -1 shl 8) + i_24_ shr 9
                         i_14_ = i_25_ - -(LocalPlayerState.aPlayer_1907!!.method2436(73.toByte()) + -1 shl 8) shr 9
                         var i_26_ = (LocalPlayerState.aPlayer_1907!!.plane).toInt()
-                        if (i_26_ < 3 && ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_24_ shr 9]!![i_25_ shr 9]).toInt()) != 0)) i_26_++
+                        if (i_26_ < 3 && ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_24_ shr 9]!![i_25_ shr 9]).toInt()) != 0)) i_26_++
                     }
                     if (i_13_ != -1 && i_14_ != -1) {
                         if (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) == 0) {
-                            if (ObjectSpawnDecoder.aBoolean1801) Class50_Sub3.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(Class348_Sub33.anInt6967, 544)), 0L, -1)
+                            if (ObjectSpawnDecoder.aBoolean1801) Class50_Sub3.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 0L, -1)
                             Class352.anInt4334++
                             Class50_Sub3.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, MapElementLookup.anInt4144)
                         } else {
-                            val class46 = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
+                            val class46 = NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                             if (class46 == null) TileRenderState.method2678(-2049)
-                            else Class50_Sub3.method466(false, " ->", i_14_, (-101).toByte(), true, i_13_, -1, true, 15, (i_13_ shl 0 or i_14_).toLong(), ItemNameResolver.aString5001, 0L, (Class348_Sub49_Sub1.anInt9747))
+                            else Class50_Sub3.method466(false, " ->", i_14_, (-101).toByte(), true, i_13_, -1, true, 15, (i_13_ shl 0 or i_14_).toLong(), ItemNameResolver.aString5001, 0L, (FloatBuffer.anInt9747))
                         }
                     }
                 }
@@ -188,13 +188,13 @@ class SceneryDetailOptionState : GraphicsOptionState {
                 var i_27_ = 0
                 while ((i_27_ < (if (!Class59_Sub1.aBoolean5300) 1 else 2))) {
                     val bool = i_27_ == 0
-                    val class76 = (if (bool) Class71.aClass76_1208 else Class348_Sub42_Sub8_Sub2.aClass76_10436)
+                    val class76 = (if (bool) Class71.aClass76_1208 else HardCacheEntryReference.aClass76_10436)
                     var i_28_ = i
                     var i_29_ = i_4_
                     if (Class59_Sub1.aBoolean5300) {
                         LinkedNodeListIterator.method1010(false, bool)
                         i_28_ += MinimapFlagRenderer.method1082(-92, bool)
-                        i_29_ += Class348_Sub23.method2960(bool, -48)
+                        i_29_ += OggBitstreamDecoder.method2960(bool, -48)
                     }
                     val class243 = class76!!.aDoublyLinkedNodeList_1282
                     var class318_sub4 = class243.method1872(8) as SceneEntityModel?
@@ -219,7 +219,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     val i_36_ = (player.y + -(-1 + player.method2436(105.toByte()) shl 8))
                                     var i_37_ = 0
                                     while ((ModelDefinitionLoader.anInt2057 > i_37_)) {
-                                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as? Class348_Sub22?)
+                                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as? NpcReference?)
                                         if (class348_sub22 != null) {
                                             val npc = (class348_sub22.aNpc_6859)!!
                                             if ((Class367_Sub11.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
@@ -242,7 +242,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             val i_43_ = ((player_42_.x) + -((player_42_.method2436(94.toByte()) - 1) shl 8))
                                             val i_44_ = ((player_42_.y) + -((-1 + (player_42_.method2436(82.toByte()))) shl 8))
                                             if ((i_43_ >= i_35_) && ((player.method2436(70.toByte()) - (-i_35_ + i_43_ shr 9)) >= player_42_.method2436(89.toByte())) && (i_44_ >= i_36_) && ((player.method2436(42.toByte()) - (i_44_ - i_36_ shr 9)) >= player_42_.method2436(127.toByte()))) {
-                                                Class348_Sub43.method3298(114.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player_42_)
+                                                SpriteDefinition.method3298(114.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player_42_)
                                                 player_42_.anInt10215 = Class367_Sub11.anInt7396
                                             }
                                         }
@@ -253,7 +253,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     class318_sub4 = class243.method1878((-123).toByte()) as SceneEntityModel?
                                     continue
                                 }
-                                Class348_Sub43.method3298(96.toByte(), ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), player)
+                                SpriteDefinition.method3298(96.toByte(), ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), player)
                                 player.anInt10215 = Class367_Sub11.anInt7396
                             }
                             if (class318_sub4.aClass318_Sub1_6410 is Npc) {
@@ -263,7 +263,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val i_45_ = ((npc.x) - ((-1 + npc.aClass79_10505!!.anInt1399) shl 8))
                                         val i_46_ = ((npc.y) - (npc.aClass79_10505!!.anInt1399 - 1 shl 8))
                                         for (i_47_ in 0..<ModelDefinitionLoader.anInt2057) {
-                                            val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_47_].toLong(), -6008)) as Class348_Sub22?)
+                                            val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_47_].toLong(), -6008)) as NpcReference?)
                                             if (class348_sub22 != null) {
                                                 val npc_48_ = (class348_sub22.aNpc_6859)!!
                                                 if (((npc_48_.anInt10215) != Class367_Sub11.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {
@@ -285,7 +285,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                 val i_53_ = ((player.x) - ((-1 + (player.method2436(116.toByte()))) shl 8))
                                                 val i_54_ = ((player.y) + -((player.method2436(121.toByte())) + -1 shl 8))
                                                 if ((i_53_ >= i_45_) && ((-(-i_45_ + i_53_ shr 9) + (npc.aClass79_10505!!.anInt1399)) >= player.method2436(114.toByte())) && (i_54_ >= i_46_) && (player.method2436(58.toByte()) <= ((npc.aClass79_10505!!.anInt1399) - (i_54_ + -i_46_ shr 9)))) {
-                                                    Class348_Sub43.method3298(125.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player)
+                                                    SpriteDefinition.method3298(125.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player)
                                                     player.anInt10215 = Class367_Sub11.anInt7396
                                                 }
                                             }
@@ -303,17 +303,17 @@ class SceneryDetailOptionState : GraphicsOptionState {
                             if (class318_sub4.aClass318_Sub1_6410 is DynamicSceneObjectEntity) {
                                 val i_55_ = ArbVertexProgram.regionTileX + i_33_
                                 val i_56_ = i_32_ - -Class90.regionTileY
-                                val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480(((class318_sub4.aClass318_Sub1_6410!!.plane).toInt() shl 28 or (i_56_ shl 14) or i_55_).toLong(), -6008)) as Class348_Sub37?)
+                                val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480(((class318_sub4.aClass318_Sub1_6410!!.plane).toInt() shl 28 or (i_56_ shl 14) or i_55_).toLong(), -6008)) as HashTableContainer?)
                                 if (class348_sub37 != null) {
                                     var i_57_ = 0
-                                    var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1993(-92) as Class348_Sub34?)
+                                    var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1993(-92) as IntPair?)
                                     while (class348_sub34 != null) {
                                         val class213 = (Exception_Sub1.aModelHeaderCache_112!!.method1940(79, (class348_sub34.anInt6973)))
                                         if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
                                             val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) (ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364)) else null)
                                             if ((Class38.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, ParticleEmitterFactory.anInt3176))))) {
                                                 Class97.anInt1555++
-                                                Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> <col=ff9040>" + (class213.aString2795)), i_32_, (-76).toByte(), false, i_33_, -1, true, 49, i_57_.toLong(), ItemNameResolver.aString5001, class348_sub34.anInt6973.toLong(), (Class348_Sub49_Sub1.anInt9747))
+                                                Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> <col=ff9040>" + (class213.aString2795)), i_32_, (-76).toByte(), false, i_33_, -1, true, 49, i_57_.toLong(), ItemNameResolver.aString5001, class348_sub34.anInt6973.toLong(), (FloatBuffer.anInt9747))
                                             }
                                         }
                                         if (class318_sub4.aClass318_Sub1_6410!!.plane == (LocalPlayerState.aPlayer_1907!!.plane)) {
@@ -330,27 +330,27 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                     if (i_58_ == 4) i_59_ = 5
                                                     if ((class213.anInt2764) == i_58_) i_60_ = class213.anInt2830
                                                     Class50_Sub3.method466(false, ("<col=ff9040>" + (class213.aString2795)), i_32_, (-119).toByte(), false, i_33_, -1, true, i_59_, i_57_.toLong(), strings[i_58_], class348_sub34.anInt6973.toLong(), i_60_)
-                                                    Class348_Sub42_Sub8.anInt9548++
+                                                    CacheEntryReference.anInt9548++
                                                 }
                                             }
                                         }
-                                        Class348_Sub33.anInt6956++
-                                        Class50_Sub3.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973.toLong(), CubeMapMaterialPass.anInt6299)
-                                        class348_sub34 = (class348_sub37.aNodeDeque_6998.method2003(-127) as Class348_Sub34?)
+                                        AnimationFrameDefinition.anInt6956++
+                                        Class50_Sub3.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544)), class348_sub34.anInt6973.toLong(), CubeMapMaterialPass.anInt6299)
+                                        class348_sub34 = (class348_sub37.aNodeDeque_6998.method2003(-127) as IntPair?)
                                         i_57_++
                                     }
                                 }
                             }
                             if (class318_sub4.aClass318_Sub1_6410 is Interface10) {
                                 val interface10 = ((class318_sub4.aClass318_Sub1_6410) as Interface10)
-                                var class51: Class51? = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-100)))
+                                var class51: Class51? = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-100)))
                                 if (class51!!.anIntArray945 != null) class51 = (class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
                                 if (class51 != null) {
                                     if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
                                         val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) (ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364)) else null)
                                         if (((0x4 and Class38.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (class51.method487(ParticleEmitterFactory.anInt3176, (class254.anInt3256), 54))))) {
                                             TrigLookupInit.anInt2877++
-                                            Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> <col=00ffff>" + (class51.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), ItemNameResolver.aString5001, (Class348_Sub40_Sub21.method3107(95.toByte(), interface10, i_32_, i_33_)), Class348_Sub49_Sub1.anInt9747)
+                                            Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> <col=00ffff>" + (class51.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), ItemNameResolver.aString5001, (WeaveTextureNode.method3107(95.toByte(), interface10, i_32_, i_33_)), FloatBuffer.anInt9747)
                                         }
                                     }
                                     if (class318_sub4.aClass318_Sub1_6410!!.plane == (LocalPlayerState.aPlayer_1907!!.plane)) {
@@ -367,7 +367,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                     if (i_61_ == 4) i_62_ = 1007
                                                     if ((class51.anInt950) == i_61_) i_63_ = (class51.anInt869)
                                                     if (i_61_ == (class51.anInt951)) i_63_ = (class51.anInt877)
-                                                    Class50_Sub3.method466(false, ("<col=00ffff>" + (class51.aString884)), i_32_, (-100).toByte(), false, i_33_, -1, true, i_62_, interface10.hashCode().toLong(), strings[i_61_], (Class348_Sub40_Sub21.method3107((-116).toByte(), interface10, i_32_, i_33_)), i_63_)
+                                                    Class50_Sub3.method466(false, ("<col=00ffff>" + (class51.aString884)), i_32_, (-100).toByte(), false, i_33_, -1, true, i_62_, interface10.hashCode().toLong(), strings[i_61_], (WeaveTextureNode.method3107((-116).toByte(), interface10, i_32_, i_33_)), i_63_)
                                                     Class83.anInt1445++
                                                 }
                                             }
@@ -385,7 +385,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             true,
                                             1001,
                                             interface10.hashCode().toLong(),
-                                            (LocalizedText.aLocalizedText_3505!!.method2063(Class348_Sub33.anInt6967, 544)),
+                                            (LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544)),
                                             class51.anInt941.toLong(),
                                             CubeMapMaterialPass.anInt6299
                                         )

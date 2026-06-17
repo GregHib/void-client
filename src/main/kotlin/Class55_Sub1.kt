@@ -5,9 +5,9 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
     private var anIntArray5269: IntArray? = null
     private var anInt5270 = 0
     private val anInt5272: Int
-    private val aClass348_Sub49_5274: Class348_Sub49
+    private val aClass348_Sub49_5274: Buffer
     private var aByteArrayArray5275: Array<ByteArray?>? = arrayOfNulls<ByteArray>(10)
-    private val aClass348_Sub49_5276: Class348_Sub49
+    private val aClass348_Sub49_5276: Buffer
 
     fun method522(i: Byte) {
         anInt5266++
@@ -21,8 +21,8 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
     }
 
     init {
-        aClass348_Sub49_5274 = Class348_Sub49(null)
-        aClass348_Sub49_5276 = Class348_Sub49(null)
+        aClass348_Sub49_5274 = Buffer(null)
+        aClass348_Sub49_5276 = Buffer(null)
         aClass45_5267 = class45
         anInt5272 = i_1_
     }
@@ -97,8 +97,8 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
             if (i_3_ > -108) aBoolean5265 = false
             if (ProjectileConfigUtil.aClass356_389!!.method3480(i_2_.toLong(), -6008) == null) {
                 if (Class38.aBoolean510) {
-                    val class348_sub15 = Class348_Sub15(i_2_, Class55_Sub1(4096, (HitsplatDefinition.aClass45_2015!!), i_2_), i, bool)
-                    class348_sub15.aClass55_Sub1_6768!!.method509(-92, Class59_Sub2.aStringArray5305!![Class348_Sub33.anInt6967])
+                    val class348_sub15 = MenuActionNode(i_2_, Class55_Sub1(4096, (HitsplatDefinition.aClass45_2015!!), i_2_), i, bool)
+                    class348_sub15.aClass55_Sub1_6768!!.method509(-92, Class59_Sub2.aStringArray5305!![AnimationFrameDefinition.anInt6967])
                     ProjectileConfigUtil.aClass356_389!!.method3483(35.toByte(), i_2_.toLong(), class348_sub15)
                 } else ProjectileDefinition.method2285(bool, (-90).toByte(), i_2_)
             }

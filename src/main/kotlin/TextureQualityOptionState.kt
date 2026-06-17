@@ -16,7 +16,7 @@ class TextureQualityOptionState : GraphicsOptionState {
         return 1
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51) {
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51) {
         Crc64Hashable.method1114(this.anInt3138, -122)
     }
 
@@ -34,7 +34,7 @@ class TextureQualityOptionState : GraphicsOptionState {
         return 2
     }
 
-    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51) {
+    internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51) {
         Crc64Hashable.method1114(this.anInt3138, -120)
     }
 
@@ -91,7 +91,7 @@ class TextureQualityOptionState : GraphicsOptionState {
             } else if (i == 2) {
                 if (Class75.aFloat1247.toDouble() == 3.0) return PingHostListHolder.aSystemFontGlyphs_2333
                 if (Class75.aFloat1247.toDouble() == 4.0) return GlBufferObject.aSystemFontGlyphs_4754
-                if (Class75.aFloat1247.toDouble() == 6.0) return Class348_Sub3.aSystemFontGlyphs_6581
+                if (Class75.aFloat1247.toDouble() == 6.0) return ModelVertexColorBuffer.aSystemFontGlyphs_6581
                 if (Class75.aFloat1247.toDouble() >= 8.0) return WorldMapRenderer.aSystemFontGlyphs_4672
             }
             return null

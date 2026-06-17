@@ -7,10 +7,10 @@ class IndexedSprite : Sprite {
 
     constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_16_: Int, `is`: ByteArray?) {
         try {
-            this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, Class348_Sub40_Sub38.aTextureFormatInfo_9471, 2, false, i_16_)
+            this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, ClampTextureNode.aTextureFormatInfo_9471, 2, false, i_16_)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -19,7 +19,7 @@ class IndexedSprite : Sprite {
             this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3839(i_17_, i, -15137, false, `is`)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -52,7 +52,7 @@ class IndexedSprite : Sprite {
         @JvmStatic
         fun method164(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int): Boolean {
             anInt5195++
-            if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
+            if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             val i_3_ = Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
             if (i_3_ == -RandomAccessFileOnDisk.anInt3049) return false
@@ -74,7 +74,7 @@ class IndexedSprite : Sprite {
                     false
                 ))
             ) {
-                Class348_Sub23_Sub2.anInt9039++
+                TheoraVideoStream.anInt9039++
                 Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = RandomAccessFileOnDisk.anInt3049
                 return true
             }
@@ -85,7 +85,7 @@ class IndexedSprite : Sprite {
         @JvmStatic
         fun method165(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Byte, i_13_: Int, i_14_: Int) {
             anInt5194++
-            if (i_9_ < 512 || i_11_ < 512 || (-2 + Class367_Sub4.anInt7319) * 512 < i_9_ || (-2 + Class348_Sub40_Sub3.anInt9109) * 512 < i_11_) {
+            if (i_9_ < 512 || i_11_ < 512 || (-2 + Class367_Sub4.anInt7319) * 512 < i_9_ || (-2 + RangeThresholdTextureNode.anInt9109) * 512 < i_11_) {
                 RemoveRoofsOptionState.anIntArray6062!![1] = -1
                 RemoveRoofsOptionState.anIntArray6062!![0] = RemoveRoofsOptionState.anIntArray6062!![1]
             } else if (i_12_ >= 22) {
@@ -93,14 +93,14 @@ class IndexedSprite : Sprite {
                 if (Class59_Sub1.aBoolean5300) LinkedNodeListIterator.method1010(false, true)
                 else {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(i_10_, 0, 0)
-                    Class348_Sub8.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
+                    FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                 }
-                if (!ParticleSystemRenderer.aBoolean3870) Class348_Sub8.aRenderer6654!!.da(i_9_, i_15_, i_11_, RemoveRoofsOptionState.anIntArray6062)
-                else Class348_Sub8.aRenderer6654!!.HA(i_9_, i_15_, i_11_, LocalPlayerState.anInt1906, RemoveRoofsOptionState.anIntArray6062)
+                if (!ParticleSystemRenderer.aBoolean3870) FacingDirectionNode.aRenderer6654!!.da(i_9_, i_15_, i_11_, RemoveRoofsOptionState.anIntArray6062)
+                else FacingDirectionNode.aRenderer6654!!.HA(i_9_, i_15_, i_11_, LocalPlayerState.anInt1906, RemoveRoofsOptionState.anIntArray6062)
                 if (Class59_Sub1.aBoolean5300) GlVertexBufferArb.method2129(60.toByte())
                 else {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(-i_10_, 0, 0)
-                    Class348_Sub8.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
+                    FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                 }
             }
         }

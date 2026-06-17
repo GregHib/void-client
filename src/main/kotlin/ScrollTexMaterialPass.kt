@@ -107,7 +107,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
             aClass258_Sub4_6285 = GlTexture1D(this.aHa_Sub2_3684, 6406, 2, byteArrayOf(0, -1), 6406)
             aClass258_Sub4_6285!!.method1972((-91).toByte(), false)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("tn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -178,13 +178,13 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
                 val string_0_ = method2127(2, string)
                 if (string_0_ != null) {
                     var i = 0
-                    while ((Class348_Sub40_Sub30.anInt9383 > i)) {
+                    while ((HslAdjustTextureNode.anInt9383 > i)) {
                         var string_1_ = Class83.aStringArray1441!![i]
                         if (string_1_!!.startsWith("*")) string_1_ = string_1_.substring(1)
                         string_1_ = method2127(2, string_1_)
                         if (string_1_ != null && string_1_ == string_0_) {
-                            Class348_Sub40_Sub30.anInt9383--
-                            for (i_2_ in i..<Class348_Sub40_Sub30.anInt9383) {
+                            HslAdjustTextureNode.anInt9383--
+                            for (i_2_ in i..<HslAdjustTextureNode.anInt9383) {
                                 Class83.aStringArray1441!![i_2_] = Class83.aStringArray1441!![i_2_ - -1]
                                 FixedFunctionMaterialPass.Companion.aStringArray6205!![i_2_] = FixedFunctionMaterialPass.Companion.aStringArray6205!![1 + i_2_]
                                 Renderer.anIntArray4578!![i_2_] = Renderer.anIntArray4578!![i_2_ - -1]
@@ -193,11 +193,11 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
                                 ObjectSpawnDecoder.aBooleanArray1806!![i_2_] = ObjectSpawnDecoder.aBooleanArray1806!![1 + i_2_]
                             }
                             Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
-                            Class348_Sub42_Sub7.anInt9540++
-                            val class348_sub47: Class348_Sub47 = WaterMaterialPass.Companion.method2148(Class357.aClass351_4394, (Class348_Sub23_Sub2.aClass77_9029), -99)
+                            ConfigShortValueNode.anInt9540++
+                            val class348_sub47: OutgoingPacketNode = WaterMaterialPass.Companion.method2148(Class357.aClass351_4394, (TheoraVideoStream.aClass77_9029), -99)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
-                            Class348_Sub42_Sub14.method3243(117, class348_sub47)
+                            InterfaceComponentGroup.method3243(117, class348_sub47)
                             break
                         }
                         i++
@@ -251,7 +251,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
             if (bool != false) return false
             i_14_ = SequencedWallEntity.anIntArray10172!![1]
             i_12_ = SequencedWallEntity.anIntArray10172!![0]
-            return Class348_Sub40_Sub29.method3125(i_12_, i_16_, i_10_, i_13_, i_17_, (-76).toByte(), i_15_, i_11_, i, i_14_)
+            return TextureMapImageNode.method3125(i_12_, i_16_, i_10_, i_13_, i_17_, (-76).toByte(), i_15_, i_11_, i, i_14_)
         }
     }
 }

@@ -20,7 +20,7 @@ abstract class Class373 {
 
     abstract fun method3595(i: Int): Boolean
 
-    abstract fun method3596(i: Int): Class348_Sub45?
+    abstract fun method3596(i: Int): TimedRecordAccessor?
 
     abstract fun method3597(bool: Boolean): Int
 
@@ -39,7 +39,7 @@ abstract class Class373 {
             if (spotAnimDefinition != null) return spotAnimDefinition
             val `is` = BloomGraphicsOptionState.aClass45_5964!!.method410(-1860, i_0_, i)
             spotAnimDefinition = SpotAnimDefinition()
-            if (`is` != null) spotAnimDefinition.method1370(24, Class348_Sub49(`is`))
+            if (`is` != null) spotAnimDefinition.method1370(24, Buffer(`is`))
             spotAnimDefinition.method1371(4)
             Class5.aClass60_4636!!.method582(spotAnimDefinition, i.toLong(), (-103).toByte())
             return spotAnimDefinition

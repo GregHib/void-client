@@ -99,7 +99,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var anInt7713: Int = 0
     private val aGlFramebufferBlitter_7720: GlFramebufferBlitter?
-    private var aClass348_Sub5_Sub1_7721: Class348_Sub5_Sub1? = null
+    private var aClass348_Sub5_Sub1_7721: GlBloomEffect? = null
     private val aClass354_7723: Class354
     private val aClass101_Sub3_7725: ProjectionCameraTransform
     @JvmField
@@ -200,7 +200,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var anInt7796 = 0
     private var anInterface2_7797: Interface2? = null
     @JvmField
-    var aClass348_Sub49_Sub1_7798: Class348_Sub49_Sub1?
+    var aClass348_Sub49_Sub1_7798: FloatBuffer?
     private var anInt7799 = 0
     private var aFloat7800: Float
     private var aBoolean7801 = false
@@ -293,7 +293,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var anInt7855: Int
     var anInt7856: Int
     private var aFloat7857: Float
-    private val aClass348_Sub1Array7858: Array<Class348_Sub1?>
+    private val aClass348_Sub1Array7858: Array<AbstractTileShape?>
     private var aBoolean7859: Boolean
     private var aBoolean7860 = false
     private var anInt7861: Int
@@ -355,7 +355,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7579++
             return Class64_Sub3(this, modelDefinition, i, i_3_, i_4_, i_2_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
         }
     }
 
@@ -394,7 +394,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7550++
             aClass299_Sub1_7769 = circleRasterizer as Texture2DProvider?
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qo.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qo.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
         }
     }
 
@@ -405,7 +405,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (aBoolean7873 && (!bool || aBoolean7869)) return GlArrayBufferObject(this, i_8_, `is`, i_9_, bool)
             return NativeIndexBuffer(this, i_8_, `is`, i_9_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.VB(" + i + ',' + bool + ',' + i_8_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_9_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.VB(" + i + ',' + bool + ',' + i_8_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_9_ + ')'))
         }
     }
 
@@ -435,7 +435,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (aBoolean7873 && (!bool || aBoolean7869)) return GlElementArrayBuffer(this, i, `is`, i_15_, bool)
             return NativeVertexBuffer(this, i, `is`, i_15_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.G(" + i + ',' + i_14_ + ',' + i_15_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.G(" + i + ',' + i_14_ + ',' + i_15_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -445,9 +445,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (bool != true) this.anInt7772 = 37
     }
 
-    override fun method3690(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, f: Float): Class348_Sub1 {
+    override fun method3690(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, f: Float): AbstractTileShape {
         anInt7559++
-        return Class348_Sub1_Sub1(i, i_16_, i_17_, i_18_, i_19_, f)
+        return TerrainTileShape(i, i_16_, i_17_, i_18_, i_19_, f)
     }
 
     fun method3735(i: Int) {
@@ -495,7 +495,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glEnd()
             method3762(5890, 768, (-87).toByte(), 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.ME(" + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_25_ + ',' + i_26_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.ME(" + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_25_ + ',' + i_26_ + ')'))
         }
     }
 
@@ -507,7 +507,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @Synchronized
     fun method3737(i: Int, i_31_: Byte, i_32_: Int) {
         anInt7676++
-        val class348_sub35 = Class348_Sub35(i_32_)
+        val class348_sub35 = IntKeyNode(i_32_)
         class348_sub35.aLong4291 = i.toLong()
         val i_33_ = -124 / ((i_31_ - 79) / 39)
         aNodeDeque_7752.method1999(class348_sub35, -20180)
@@ -529,7 +529,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (aBoolean7873 && (!bool || aBoolean7869)) return GlArrayBufferObject(this, i_35_, buffer, i_36_, bool)
             return NativeIndexBuffer(this, i_35_, buffer)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.OG(" + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + bool + ',' + i_35_ + ',' + i_36_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.OG(" + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + bool + ',' + i_35_ + ',' + i_36_ + ')'))
         }
     }
 
@@ -578,7 +578,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 `is`[0] = `is`[1]
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.HA(" + i + ',' + i_37_ + ',' + i_38_ + ',' + i_39_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.HA(" + i + ',' + i_37_ + ',' + i_38_ + ',' + i_39_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -710,7 +710,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7580++
             `is`[2] = anInt7855
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qo.K(" + (if (`is` != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qo.K(" + (if (`is` != null) "{...}" else "null") + ')')
         }
     }
 
@@ -758,7 +758,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             method3775(false, 0, 770, 5890)
             method3775(false, 2, 770, 34166)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.Q(" + i + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + i_61_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_62_ + ',' + i_63_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.Q(" + i + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + i_61_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_62_ + ',' + i_63_ + ')'))
         }
     }
 
@@ -767,7 +767,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             aParticleSortRenderer_7711.method1651(this, (-119).toByte(), -1, class98)
             anInt7569++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qo.EF(" + (if (class98 != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qo.EF(" + (if (class98 != null) "{...}" else "null") + ')')
         }
     }
 
@@ -792,7 +792,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (anInt7865 == 1) break
                 method3754(89.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "qo.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "qo.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -807,7 +807,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             }
             anInt7552++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.D(" + i + ',' + (if (interface2 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.D(" + i + ',' + (if (interface2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -855,7 +855,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInterface11_7740 = interface11
             anInterface11_7740!!.method47(-11421)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.NG(" + (if (interface11 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.NG(" + (if (interface11 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -875,7 +875,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7574++
             return GlFontDisplayList(this, fontDefinition, spriteImages!!, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -1066,7 +1066,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7653++
             glMultMatrixf(class101_sub3!!.method940(1), 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.WC(" + bool + ',' + (if (class101_sub3 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.WC(" + bool + ',' + (if (class101_sub3 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1085,7 +1085,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             method3793(1, interface8)
             glDrawElements(i_119_, i, i_121_, (interface8.method36(78.toByte()) + i_120_.toLong()))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.MA(" + i + ',' + i_118_ + ',' + i_119_ + ',' + (if (interface8 != null) "{...}" else "null") + ',' + i_120_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.MA(" + i + ',' + i_118_ + ',' + i_119_ + ',' + (if (interface8 != null) "{...}" else "null") + ',' + i_120_ + ')'))
         }
     }
 
@@ -1096,7 +1096,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         var i_122_ = 0
         i = i and 0x7fffffff
         while (!aNodeDeque_7751!!.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_7751!!.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_7751!!.method1997(8) as IntKeyNode?
             RenderQueueState.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt7747 -= class348_sub35.anInt6976
             if (i_122_ == 1000) {
@@ -1109,7 +1109,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             i_122_ = 0
         }
         while (!aNodeDeque_7752.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_7752.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_7752.method1997(8) as IntKeyNode?
             RenderQueueState.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt7748 -= class348_sub35.anInt6976
             if (i_122_ == 1000) {
@@ -1122,7 +1122,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             i_122_ = 0
         }
         while (!aNodeDeque_7753.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_7753.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_7753.method1997(8) as IntKeyNode?
             RenderQueueState.anIntArray6522!![i_122_++] = class348_sub35!!.anInt6976
             if (i_122_ == 1000) {
                 glDeleteFramebuffersEXT(i_122_, RenderQueueState.anIntArray6522, 0)
@@ -1134,7 +1134,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             i_122_ = 0
         }
         while (!aNodeDeque_7754.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_7754.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_7754.method1997(8) as IntKeyNode?
             RenderQueueState.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
             anInt7750 -= class348_sub35.anInt6976
             if (i_122_ == 1000) {
@@ -1147,7 +1147,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             val bool = false
         }
         while (!aNodeDeque_7749.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_7749.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_7749.method1997(8) as IntKeyNode?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
         while (!aNodeDeque_7755.method2002(18.toByte())) {
@@ -1159,7 +1159,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glDeleteObjectARB(class348!!.aLong4291)
         }
         while (!aNodeDeque_7749.method2002(18.toByte())) {
-            val class348_sub35 = aNodeDeque_7749.method1997(8) as Class348_Sub35?
+            val class348_sub35 = aNodeDeque_7749.method1997(8) as IntKeyNode?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
         aClass354_7723.method3469(8218)
@@ -1257,16 +1257,16 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 anInterface11_7740!!.method47(-11421)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.FA(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.FA(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
         }
     }
 
     @Synchronized
     fun method3765(i: Byte, i_137_: Int) {
         anInt7566++
-        val class348 = Class348()
-        class348.aLong4291 = i_137_.toLong()
-        aNodeDeque_7755.method1999(class348, -20180)
+        val linkedListNode = LinkedListNode()
+        linkedListNode.aLong4291 = i_137_.toLong()
+        aNodeDeque_7755.method1999(linkedListNode, -20180)
     }
 
     fun method3766(i: Byte, class101_sub3: ProjectionCameraTransform?) {
@@ -1277,14 +1277,14 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (i.toInt() == 55) break
                 method3782(null, -47)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qo.GC(" + i + ',' + (if (class101_sub3 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qo.GC(" + i + ',' + (if (class101_sub3 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
     }
 
     override fun method3700(f: Float, f_138_: Float, f_139_: Float) {
-        Class348_Sub40_Sub13.aFloat9204 = f_139_
+        GrayscaleEffect.aFloat9204 = f_139_
         Class75_Sub1.aFloat5654 = f
         anInt7685++
         DetailLevelOptionState.aFloat6120 = f_138_
@@ -1300,7 +1300,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 anOpenGL7664!!.releaseSurface(canvas, var_long)
                 aHashtable7577.remove(canvas)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "qo.AG(" + (if (canvas != null) "{...}" else "null") + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "qo.AG(" + (if (canvas != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1354,11 +1354,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (i_146_ > 64) {
                     if (i_146_ > 512) i_146_ = 512
                 } else i_146_ = 64
-                i_146_ = Class348_Sub40_Sub1.method3051(i_146_, 4096)
+                i_146_ = ColorThresholdEffect.method3051(i_146_, 4096)
                 glVertex2f(i_141_.toFloat() + f, f_144_)
                 var i_147_ = 16384 + -i_146_
                 while (i_147_ > 0) {
-                    glVertex2f(i_141_.toFloat() * (Class348_Sub23.aFloatArray6867!![i_147_]) + f, i_141_.toFloat() * (Class348_Sub23.aFloatArray6865!![i_147_]) + f_144_)
+                    glVertex2f(i_141_.toFloat() * (OggBitstreamDecoder.aFloatArray6867!![i_147_]) + f, i_141_.toFloat() * (OggBitstreamDecoder.aFloatArray6865!![i_147_]) + f_144_)
                     i_147_ -= i_146_
                 }
                 glVertex2f(f + i_141_.toFloat(), f_144_)
@@ -1448,11 +1448,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         try {
             if (bool != false) aNodeDeque_7751 = null
             anInt7533++
-            val class348 = Class348()
-            class348.aLong4291 = l
-            aNodeDeque_7756.method1999(class348, -20180)
+            val linkedListNode = LinkedListNode()
+            linkedListNode.aLong4291 = l
+            aNodeDeque_7756.method1999(linkedListNode, -20180)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qo.CD(" + l + ',' + bool + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qo.CD(" + l + ',' + bool + ')')
         }
     }
 
@@ -1479,7 +1479,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (i == -422613672) break
                 this.anInt7788 = 30
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qo.FD(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qo.FD(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1505,7 +1505,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             }
             anInt7765 = anInt7765 and 0x1.inv()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.VA(" + i + ',' + (if (glTexture != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.VA(" + i + ',' + (if (glTexture != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1586,7 +1586,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (l == -1L) throw RuntimeException()
                 aHashtable7577.put(canvas, l)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qo.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_177_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qo.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_177_ + ')'))
             }
             break
         } while (false)
@@ -1613,7 +1613,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7600++
             return OpenGlTerrainTile(this, i_181_, i_182_, i, i_178_, `is`, is_179_, i_180_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.VE(" + i + ',' + i_178_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_179_ != null) "{...}" else "null") + ',' + i_180_ + ',' + i_181_ + ',' + i_182_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.VE(" + i + ',' + i_178_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_179_ != null) "{...}" else "null") + ',' + i_180_ + ',' + i_181_ + ',' + i_182_ + ')'))
         }
     }
 
@@ -1638,7 +1638,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 anInterface11_7745!!.method46(-11762)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.JB(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.JB(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1650,11 +1650,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (aString7845!!.indexOf("microsoft") != -1) i_183_ = i_183_ or 0x1
         if (aString7845!!.indexOf("brian paul") != -1 || aString7845!!.indexOf("mesa") != -1) i_183_ = i_183_ or 0x1
         val string = glGetString(7938)
-        val strings = Class348_Sub40_Sub23.method3113(' ', true, string.replace('.', ' '))
+        val strings = TurbulenceTextureNode.method3113(' ', true, string.replace('.', ' '))
         if (strings.size >= 2) {
             try {
-                val i_184_ = Class348_Sub41.method3156(true, strings[0]!!)
-                val i_185_ = Class348_Sub41.method3156(true, strings[1]!!)
+                val i_184_ = RegionSceneShifter.method3156(true, strings[0]!!)
+                val i_185_ = RegionSceneShifter.method3156(true, strings[1]!!)
                 anInt7789 = i_184_ * 10 - -i_185_
             } catch (numberformatexception: NumberFormatException) {
                 i_183_ = i_183_ or 0x4
@@ -1762,7 +1762,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 method3762(5890, 768, (-87).toByte(), 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.IF(" + i + ',' + i_186_ + ',' + i_187_ + ',' + i_188_ + ',' + i_189_ + ',' + i_190_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_191_ + ',' + i_192_ + ',' + i_193_ + ',' + i_194_ + ',' + i_195_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.IF(" + i + ',' + i_186_ + ',' + i_187_ + ',' + i_188_ + ',' + i_189_ + ',' + i_190_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_191_ + ',' + i_192_ + ',' + i_193_ + ',' + i_194_ + ',' + i_195_ + ')'))
         }
     }
 
@@ -1782,7 +1782,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7589++
             return method4009(i, `is`, is_211_, 0, this, i_210_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.RF(" + i + ',' + i_210_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_211_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.RF(" + i + ',' + i_210_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_211_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1792,7 +1792,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7675++
             `is`[1] = this.anInt7641
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qo.KE(" + (if (`is` != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qo.KE(" + (if (`is` != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1802,7 +1802,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 this.aNativeHeap7730 = (var_shaderProgram as NativeShaderProgram).aNativeHeap9770
                 anInt7573++
                 if (anInterface2_7797 != null) break
-                val class348_sub49_sub1 = Class348_Sub49_Sub1(80)
+                val class348_sub49_sub1 = FloatBuffer(80)
                 if (this.aBoolean7775) {
                     class348_sub49_sub1.method3400(-1.0f, (-122).toByte())
                     class348_sub49_sub1.method3400(-1.0f, (-103).toByte())
@@ -1851,7 +1851,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 this.aHoverActionEntry_7833 = HoverActionEntry(anInterface2_7797, 5126, 2, 12)
                 aParticleSortRenderer_7711.method1654(643267468, this)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "qo.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
+                throw SoundBankPatch.method2929(runtimeexception, "qo.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1882,7 +1882,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glEnd()
             method3762(5890, 768, (-87).toByte(), 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ')'))
         }
     }
 
@@ -1965,7 +1965,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (aCanvas7575 !== canvas) break
                 method3745(117.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qo.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_231_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qo.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_231_ + ')'))
             }
             break
         } while (false)
@@ -1976,7 +1976,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7522++
             return GlSpriteRenderer(this, i_233_, i_234_, `is`, i, i_232_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.BE(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_232_ + ',' + i_233_ + ',' + i_234_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.BE(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_232_ + ',' + i_233_ + ',' + i_234_ + ',' + bool + ')'))
         }
     }
 
@@ -2014,7 +2014,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @Synchronized
     fun method3780(i: Int, i_235_: Int, i_236_: Int) {
         anInt7616++
-        val class348_sub35 = Class348_Sub35(i)
+        val class348_sub35 = IntKeyNode(i)
         class348_sub35.aLong4291 = i_236_.toLong()
         aNodeDeque_7751!!.method1999(class348_sub35, -20180)
         if (i_235_ != -1) method3733(-17, -42, -40, null, true)
@@ -2050,7 +2050,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInterface11Array7741[++anInt7738] = interface11
             anInterface11_7745!!.method49(-27141)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.HD(" + (if (interface11 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.HD(" + (if (interface11 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -2089,7 +2089,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 `is`[1] = (-this.aFloat7836 + i_249_.toFloat()).toInt()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.H(" + i + ',' + i_246_ + ',' + i_247_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.H(" + i + ',' + i_246_ + ',' + i_247_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2166,7 +2166,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             aParticleSortRenderer_7711.method1651(this, (-116).toByte(), i, class98)
             anInt7687++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.FG(" + (if (class98 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.FG(" + (if (class98 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -2234,7 +2234,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 `is`[0] = `is`[1]
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.da(" + i + ',' + i_254_ + ',' + i_255_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.da(" + i + ',' + i_254_ + ',' + i_255_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2251,7 +2251,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         try {
             anInt7590++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qo.IA(" + (if (interface4 != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qo.IA(" + (if (interface4 != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2435,7 +2435,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     anInterface8_7817 = interface8
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qo.OE(" + i + ',' + (if (interface8 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qo.OE(" + i + ',' + (if (interface8 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -2467,7 +2467,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 } else glDisableClientState(32888)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.KB(" + (if (hoverActionEntry != null) "{...}" else "null") + ',' + (if (hoverActionEntry_279_ != null) "{...}" else "null") + ',' + i + ',' + (if (hoverActionEntry_280_ != null) "{...}" else "null") + ',' + (if (hoverActionEntry_281_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.KB(" + (if (hoverActionEntry != null) "{...}" else "null") + ',' + (if (hoverActionEntry_279_ != null) "{...}" else "null") + ',' + i + ',' + (if (hoverActionEntry_280_ != null) "{...}" else "null") + ',' + (if (hoverActionEntry_281_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2481,7 +2481,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7596++
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (interface13 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (interface13 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2532,7 +2532,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return aClass348_Sub5_Sub1_7721 != null && aClass348_Sub5_Sub1_7721!!.method2760(1.toByte())
     }
 
-    override fun method3642(i: Int, class348_sub1s: Array<Class348_Sub1?>?) {
+    override fun method3642(i: Int, class348_sub1s: Array<AbstractTileShape?>?) {
         do {
             try {
                 for (i_282_ in 0..<i) aClass348_Sub1Array7858[i_282_] = class348_sub1s!![i_282_]
@@ -2541,7 +2541,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (anInt7865 == 1) break
                 method3783(0)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qo.FF(" + i + ',' + (if (class348_sub1s != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qo.FF(" + i + ',' + (if (class348_sub1s != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -2612,7 +2612,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @Synchronized
     fun method3800(i: Int, i_299_: Int) {
         anInt7570++
-        val class348_sub35 = Class348_Sub35(i_299_)
+        val class348_sub35 = IntKeyNode(i_299_)
         if (i > 71) aNodeDeque_7753.method1999(class348_sub35, -20180)
     }
 
@@ -2661,7 +2661,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (f < 0.5f) return circleRasterizer
             return circleRasterizer_305_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_305_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_306_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_305_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_306_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2682,7 +2682,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anOpenGL7664!!.setSurface(aLong7636)
             method3745(92.toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qo.MF(" + (if (canvas != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qo.MF(" + (if (canvas != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2703,7 +2703,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             method3626(i_313_, i_314_)
             anInt7584++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_313_ + ',' + i_314_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_313_ + ',' + i_314_ + ')'))
         }
     }
 
@@ -2769,7 +2769,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.CA(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.CA(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2870,7 +2870,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             class105.method985(spriteImage.anInt2703, spriteImage.anInt2700, spriteImage.anInt2698, spriteImage.anInt2701)
             return class105
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -2920,7 +2920,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     fun method3810(i: Int, i_478_: Int, i_479_: Int) {
         if (i_479_ < -57) {
             anInt7677++
-            val class348_sub35 = Class348_Sub35(i_478_)
+            val class348_sub35 = IntKeyNode(i_478_)
             class348_sub35.aLong4291 = i.toLong()
             aNodeDeque_7754.method1999(class348_sub35, -20180)
         }
@@ -2998,7 +2998,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         aFloatArray7779 = FloatArray(16)
         aBoolean7870 = true
         this.aFloat7871 = -1.0f
-        aClass348_Sub1Array7858 = arrayOfNulls<Class348_Sub1>(Class55.anInt984)
+        aClass348_Sub1Array7858 = arrayOfNulls<AbstractTileShape>(Class55.anInt984)
         this.anInt7853 = 0
         anInt7867 = 0
         this.aFloat7875 = 3584.0f
@@ -3006,7 +3006,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         this.anInt7848 = -1
         aFloatArray7877 = FloatArray(4)
         this.anInt7782 = -1
-        this.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(8192)
+        this.aClass348_Sub49_Sub1_7798 = FloatBuffer(8192)
         this.aByteArray7879 = ByteArray(16384)
         this.anIntArray7880 = IntArray(1)
         this.anIntArray7883 = IntArray(1)
@@ -3015,8 +3015,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             aCanvas7626 = canvas
             aCanvas7575 = aCanvas7626
             this.anInt7713 = i
-            if (!Class348_Sub40_Sub19.method3098(-30282, "jaclib")) throw RuntimeException("")
-            if (!Class348_Sub40_Sub19.method3098(-30282, "jaggl")) throw RuntimeException("")
+            if (!BlankTextureNode.method3098(-30282, "jaclib")) throw RuntimeException("")
+            if (!BlankTextureNode.method3098(-30282, "jaggl")) throw RuntimeException("")
             try {
                 anOpenGL7664 = OpenGL()
                 aLong7553 = anOpenGL7664!!.init(canvas, 8, 8, 8, 24, 0, this.anInt7713)
@@ -3030,7 +3030,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     var i_100_ = 0
                     var bool = false
                     var bool_101_ = false
-                    val strings = (Class348_Sub40_Sub23.method3113(' ', true, aString7790!!.replace('/', ' ')))
+                    val strings = (TurbulenceTextureNode.method3113(' ', true, aString7790!!.replace('/', ' ')))
                     for (i_102_ in strings.indices) {
                         var string = strings[i_102_]!!
                         try {
@@ -3046,7 +3046,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         string = string.substring(2)
                                     }
                                     if (string.length >= 4 && (Class50_Sub3.method468(string.substring(0, 4), 47))) {
-                                        i_100_ = (Class348_Sub41.method3156(true, string.substring(0, 4)))
+                                        i_100_ = (RegionSceneShifter.method3156(true, string.substring(0, 4)))
                                         break
                                     }
                                 }
@@ -3081,7 +3081,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 this.aGlowPostProcessor_7736 = GlowPostProcessor(this)
                 aGlFramebufferBlitter_7720 = GlFramebufferBlitter(this)
                 if (aGlFramebufferBlitter_7720.method280(1)) {
-                    aClass348_Sub5_Sub1_7721 = Class348_Sub5_Sub1(this)
+                    aClass348_Sub5_Sub1_7721 = GlBloomEffect(this)
                     if (!aClass348_Sub5_Sub1_7721!!.method2767(104.toByte())) {
                         aClass348_Sub5_Sub1_7721!!.method2763((-124).toByte())
                         aClass348_Sub5_Sub1_7721 = null
@@ -3097,7 +3097,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -3504,31 +3504,31 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
 
         @JvmStatic
-        fun method3743(i: Byte, class348_sub42_sub12: Class348_Sub42_Sub12?) {
+        fun method3743(i: Byte, class348_sub42_sub12: ContactEntry?) {
             do {
                 try {
                     anInt7686++
                     if (i.toInt() != 6) aClass351_7715 = null
                     if (class348_sub42_sub12 != null) {
-                        Class348_Sub40_Sub4.aNodeDeque_9111!!.method1999(class348_sub42_sub12, -20180)
+                        SourceRowTextureNode.aNodeDeque_9111!!.method1999(class348_sub42_sub12, -20180)
                         Class73.anInt4776++
                         val `object`: Any? = null
-                        var class348_sub42_sub13: Class348_Sub42_Sub13?
+                        var class348_sub42_sub13: ContactList?
                         if ((class348_sub42_sub12.aBoolean9611) || "" == class348_sub42_sub12.aString9601) {
-                            class348_sub42_sub13 = Class348_Sub42_Sub13(class348_sub42_sub12.aString9601)
+                            class348_sub42_sub13 = ContactList(class348_sub42_sub12.aString9601)
                             Class8.anInt166++
                         } else {
                             val l = (class348_sub42_sub12.aLong9600)
-                            class348_sub42_sub13 = (Class348_Sub42_Sub12.aClass356_9603!!.method3480(l, -6008) as? Class348_Sub42_Sub13?)
+                            class348_sub42_sub13 = (ContactEntry.aClass356_9603!!.method3480(l, -6008) as? ContactList?)
                             while (class348_sub42_sub13 != null) {
                                 if (class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601) break
-                                class348_sub42_sub13 = (Class348_Sub42_Sub12.aClass356_9603!!.method3476(true) as? Class348_Sub42_Sub13?)
+                                class348_sub42_sub13 = (ContactEntry.aClass356_9603!!.method3476(true) as? ContactList?)
                             }
                             if (class348_sub42_sub13 == null) {
-                                class348_sub42_sub13 = (KeyboardLayoutCache.aClass60_3301!!.method583(l, i.toInt() xor 0x3a) as? Class348_Sub42_Sub13?)
+                                class348_sub42_sub13 = (KeyboardLayoutCache.aClass60_3301!!.method583(l, i.toInt() xor 0x3a) as? ContactList?)
                                 if (class348_sub42_sub13 != null && !(class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601)) class348_sub42_sub13 = null
-                                if (class348_sub42_sub13 == null) class348_sub42_sub13 = (Class348_Sub42_Sub13(class348_sub42_sub12.aString9601))
-                                Class348_Sub42_Sub12.aClass356_9603!!.method3483(71.toByte(), l, class348_sub42_sub13)
+                                if (class348_sub42_sub13 == null) class348_sub42_sub13 = (ContactList(class348_sub42_sub12.aString9601))
+                                ContactEntry.aClass356_9603!!.method3483(71.toByte(), l, class348_sub42_sub13)
                                 Class8.anInt166++
                             }
                         }
@@ -3536,7 +3536,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         ManagedGlResource.method1868((-39).toByte(), class348_sub42_sub13)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("qo.VC(" + i + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("qo.VC(" + i + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)
@@ -3554,7 +3554,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_322_]]!!)
                 else {
-                    class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as Class348_Sub22).aNpc_6859!!)
+                    class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as NpcReference).aNpc_6859!!)
                     class79 = class318_sub1_sub3_sub3.aClass79_10505!!
                     if (class79.anIntArray1377 != null) {
                         class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), i_316_ + -3)
@@ -3565,9 +3565,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     }
                 }
                 if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == TextureQualityOptionState.anInt6006) || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub1_sub3_sub3.plane))) {
-                    Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, 100.toByte())
+                    ModelKeyBuilder.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, 100.toByte())
                     if (RemoveRoofsOptionState.anIntArray6062!![0] >= 0) {
-                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (Class348_Sub11.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < ConfigVarProgress.anInt4814) {
+                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (KeyEventNode.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < ConfigVarProgress.anInt4814) {
                             ConfigVarProgress.anIntArray4819!![Class88.anInt1497] = ((Class369.aFontDefinition_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
                             ConfigVarProgress.anIntArray4822!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![0]
                             ConfigVarProgress.anIntArray4813!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![1]
@@ -3589,7 +3589,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 i_324_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2909)
                                 if (player.aBoolean10554) i_325_ = 2
                             }
-                            var class105s = Class348_Sub45.aAbstractModelRendererArray7107
+                            var class105s = TimedRecordAccessor.aAbstractModelRendererArray7107
                             if (i_324_ != -1) {
                                 var abstractModelRendererS_326_ = ((Class353.aClass60_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
                                 if (abstractModelRendererS_326_ == null) {
@@ -3598,7 +3598,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         abstractModelRendererS_326_ = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                         var i_327_ = 0
                                         while (spriteImages.size > i_327_) {
-                                            abstractModelRendererS_326_[i_327_] = (Class348_Sub8.aRenderer6654!!.method3691(spriteImages[i_327_], true))
+                                            abstractModelRendererS_326_[i_327_] = (FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[i_327_], true))
                                             i_327_++
                                         }
                                         Class353.aClass60_4346!!.method582(abstractModelRendererS_326_, i_324_.toLong(), (-94).toByte())
@@ -3615,11 +3615,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             val i_331_ = class105.method969()
                             if (class318_sub1_sub3_sub3.anInt10295 > 0 && i_330_ < 2) i_330_ = 2
                             class105.method974(i_329_, i_323_)
-                            Class348_Sub8.aRenderer6654!!.T(i_329_, i_323_, i_330_ + i_329_, i_331_ + i_323_)
+                            FacingDirectionNode.aRenderer6654!!.T(i_329_, i_323_, i_330_ + i_329_, i_331_ + i_323_)
                             class105_328_.method974(i_329_, i_323_)
-                            Class348_Sub8.aRenderer6654!!.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
+                            FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
                             MapTileShape.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_)
-                        } else i_323_ -= max((Class369.aFontDefinition_4962!!.anInt1988), Class348_Sub45.aAbstractModelRendererArray7107!![0]!!.method969())
+                        } else i_323_ -= max((Class369.aFontDefinition_4962!!.anInt1988), TimedRecordAccessor.aAbstractModelRendererArray7107!![0]!!.method969())
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
                             if (class318_sub1_sub3_sub3.anInt10287 > Class367_Sub11.anInt7396) {
@@ -3638,7 +3638,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             abstractModelRenderers = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                             var i_334_ = 0
                                             while ((spriteImages.size > i_334_)) {
-                                                abstractModelRenderers[i_334_] = (Class348_Sub8.aRenderer6654!!.method3691(spriteImages[i_334_], true))
+                                                abstractModelRenderers[i_334_] = (FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[i_334_], true))
                                                 i_334_++
                                             }
                                             MaterialTypeMarker.aClass60_6517!!.method582(abstractModelRenderers, i_333_.toLong(), (-101).toByte())
@@ -3660,9 +3660,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 i_323_ -= i_338_
                                 val i_339_ = (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ + -(class105.method971() shr 1)))
                                 class105.method974(i_339_, i_323_)
-                                Class348_Sub8.aRenderer6654!!.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_)
+                                FacingDirectionNode.aRenderer6654!!.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_)
                                 class105_332_.method974(i_339_, i_323_)
-                                Class348_Sub8.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i - -i_315_)
+                                FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i - -i_315_)
                                 MapTileShape.method2663(-5590, i_339_, class105.method966() + i_339_, i_323_, i_338_ + i_323_)
                                 i_323_ -= 2
                             }
@@ -3693,7 +3693,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         if (class318_sub1_sub3_sub3 is Player) {
                             if (i_322_ >= 0) {
                                 var i_340_ = 0
-                                val class302s = Class348_Sub27.aMinimapPositionStateArray6897s!!
+                                val class302s = MultiFieldRecord.aMinimapPositionStateArray6897s!!
                                 var i_341_ = 0
                                 while ((i_341_ < class302s.size)) {
                                     val class302 = class302s[i_341_]
@@ -3709,7 +3709,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             }
                         } else {
                             var i_342_ = 0
-                            val class302s = Class348_Sub27.aMinimapPositionStateArray6897s!!
+                            val class302s = MultiFieldRecord.aMinimapPositionStateArray6897s!!
                             var i_343_ = 0
                             while (class302s.size > i_343_) {
                                 val class302 = class302s[i_343_]
@@ -3755,7 +3755,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 if (itemModelDefinition == null) class318_sub1_sub3_sub3.anIntArray10219[i_344_] = -1
                                 else {
                                     val i_351_ = (class318_sub1_sub3_sub3.method2426(200) / 2)
-                                    Class348_Sub13.method2801(i_351_, i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, (-107).toByte())
+                                    ModelKeyBuilder.method2801(i_351_, i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, (-107).toByte())
                                     if (RemoveRoofsOptionState.anIntArray6062!![0] > -1) {
                                         RemoveRoofsOptionState.anIntArray6062!![0] += MapSceneTileDefinition.anIntArray1786!![i_344_]
                                         RemoveRoofsOptionState.anIntArray6062!![1] += DualMaterialContainer.anIntArray1636!![i_344_]
@@ -3784,7 +3784,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var i_372_ = 0
                                         var i_373_ = 0
                                         var i_374_ = 0
-                                        val class105_375_ = itemModelDefinition.method327((Class348_Sub8.aRenderer6654!!), (-96).toByte())
+                                        val class105_375_ = itemModelDefinition.method327((FacingDirectionNode.aRenderer6654!!), (-96).toByte())
                                         if (class105_375_ != null) {
                                             i_355_ = class105_375_.method971()
                                             val i_376_ = class105_375_.method969()
@@ -3792,7 +3792,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             if (i_374_ < i_376_) i_374_ = i_376_
                                             i_359_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        val class105_377_ = itemModelDefinition.method331((Class348_Sub8.aRenderer6654!!), (-75).toByte())
+                                        val class105_377_ = itemModelDefinition.method331((FacingDirectionNode.aRenderer6654!!), (-75).toByte())
                                         if (class105_377_ != null) {
                                             i_356_ = class105_377_.method971()
                                             val i_378_ = class105_377_.method969()
@@ -3800,7 +3800,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             if (i_378_ > i_374_) i_374_ = i_378_
                                             i_360_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        val class105_379_ = itemModelDefinition.method324((Class348_Sub8.aRenderer6654!!), true)
+                                        val class105_379_ = itemModelDefinition.method324((FacingDirectionNode.aRenderer6654!!), true)
                                         if (class105_379_ != null) {
                                             i_357_ = class105_379_.method971()
                                             val i_380_ = class105_379_.method969()
@@ -3808,7 +3808,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             class105_379_.method984(HeadIconRenderer.anIntArray2062)
                                             i_361_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        val class105_381_ = itemModelDefinition.method325((Class348_Sub8.aRenderer6654!!), 105)
+                                        val class105_381_ = itemModelDefinition.method325((FacingDirectionNode.aRenderer6654!!), 105)
                                         if (class105_381_ != null) {
                                             i_358_ = class105_381_.method971()
                                             val i_382_ = class105_381_.method969()
@@ -3817,7 +3817,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             i_362_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
                                         if (itemModelDefinition_349_ != null) {
-                                            abstractModelRenderer = (itemModelDefinition_349_.method327(Class348_Sub8.aRenderer6654!!, 110.toByte()))
+                                            abstractModelRenderer = (itemModelDefinition_349_.method327(FacingDirectionNode.aRenderer6654!!, 110.toByte()))
                                             if (abstractModelRenderer != null) {
                                                 i_366_ = abstractModelRenderer.method971()
                                                 val i_383_ = abstractModelRenderer.method969()
@@ -3825,7 +3825,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 abstractModelRenderer.method984(HeadIconRenderer.anIntArray2062)
                                                 i_370_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
-                                            abstractModelRenderer_363_ = (itemModelDefinition_349_.method331(Class348_Sub8.aRenderer6654!!, (-80).toByte()))
+                                            abstractModelRenderer_363_ = (itemModelDefinition_349_.method331(FacingDirectionNode.aRenderer6654!!, (-80).toByte()))
                                             if (abstractModelRenderer_363_ != null) {
                                                 i_367_ = abstractModelRenderer_363_.method971()
                                                 val i_384_ = abstractModelRenderer_363_.method969()
@@ -3833,7 +3833,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 abstractModelRenderer_363_.method984(HeadIconRenderer.anIntArray2062)
                                                 i_371_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
-                                            abstractModelRenderer_364_ = (itemModelDefinition_349_.method324(Class348_Sub8.aRenderer6654!!, true))
+                                            abstractModelRenderer_364_ = (itemModelDefinition_349_.method324(FacingDirectionNode.aRenderer6654!!, true))
                                             if (abstractModelRenderer_364_ != null) {
                                                 i_368_ = abstractModelRenderer_364_.method971()
                                                 val i_385_ = abstractModelRenderer_364_.method969()
@@ -3841,7 +3841,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 if (i_385_ > i_374_) i_374_ = i_385_
                                                 i_372_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
-                                            abstractModelRenderer_365_ = (itemModelDefinition_349_.method325(Class348_Sub8.aRenderer6654!!, i_316_ xor 0x35))
+                                            abstractModelRenderer_365_ = (itemModelDefinition_349_.method325(FacingDirectionNode.aRenderer6654!!, i_316_ xor 0x35))
                                             if (abstractModelRenderer_365_ != null) {
                                                 i_369_ = abstractModelRenderer_365_.method971()
                                                 val i_386_ = abstractModelRenderer_365_.method969()
@@ -3856,8 +3856,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var i_388_ = itemModelDefinition.anInt435
                                         var class143_389_ = GlTexture3D.aFontDefinition_8527
                                         if (i_388_ >= 0) {
-                                            val class324_390_ = GlTextureBase.method232((Class348_Sub8.aRenderer6654), (-53).toByte(), true, i_388_)
-                                            val class143_391_ = (GlVertexBufferBase.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
+                                            val class324_390_ = GlTextureBase.method232((FacingDirectionNode.aRenderer6654), (-53).toByte(), true, i_388_)
+                                            val class143_391_ = (GlVertexBufferBase.method1151(-25411, FacingDirectionNode.aRenderer6654, i_388_))
                                             if (class324_390_ != null && class143_391_ != null) {
                                                 class324 = class324_390_
                                                 class143 = class143_391_
@@ -3866,8 +3866,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         if (itemModelDefinition_349_ != null) {
                                             i_388_ = (itemModelDefinition_349_.anInt435)
                                             if (i_388_ >= 0) {
-                                                val class324_392_ = (GlTextureBase.method232(Class348_Sub8.aRenderer6654, (-53).toByte(), true, i_388_))
-                                                val class143_393_ = (GlVertexBufferBase.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
+                                                val class324_392_ = (GlTextureBase.method232(FacingDirectionNode.aRenderer6654, (-53).toByte(), true, i_388_))
+                                                val class143_393_ = (GlVertexBufferBase.method1151(-25411, FacingDirectionNode.aRenderer6654, i_388_))
                                                 if (class324_392_ != null && class143_393_ != null) {
                                                     class143_389_ = class143_393_
                                                     class324_387_ = class324_392_
@@ -4006,11 +4006,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             for (i_433_ in 0..<Class45.anInt669) {
                 val i_434_ = GlTexture1D.anIntArray8557!![i_433_]
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
-                if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? Class348_Sub22)?.aNpc_6859)
+                if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
                 else class318_sub1_sub3_sub3 = LoadingBarRenderer.aPlayerArray5058!![i_434_]
                 val i_435_ = LocDefinitionCache.anIntArray3432!![i_433_]
                 val class318_sub1_sub3_sub3_436_: ProjectedGroundDecor?
-                if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((NpcEntityUpdater.aClass356_3654!!.method3480((-2048 + i_435_).toLong(), -6008) as? Class348_Sub22)?.aNpc_6859)
+                if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((NpcEntityUpdater.aClass356_3654!!.method3480((-2048 + i_435_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
                 else class318_sub1_sub3_sub3_436_ = LoadingBarRenderer.aPlayerArray5058!![i_435_]
                 SpriteSheetCache.method1430(--class318_sub1_sub3_sub3!!.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)
             }
@@ -4038,7 +4038,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 var i_445_ = -Class369.aFontDefinition_4962!!.anInt1988 + i_440_ + i
                 var i_446_ = i_444_ - -i_443_
                 var i_447_ = i_440_ + i - -Class369.aFontDefinition_4962!!.anInt1993
-                if (Class348_Sub40_Sub31.anInt9408 == 0) {
+                if (TileTextureNode.anInt9408 == 0) {
                     var i_448_ = 16776960
                     if (ConfigVarProgress.anIntArray4817!![i_438_] < 6) i_448_ = (OverlayColorTable.anIntArray1757!![ConfigVarProgress.anIntArray4817!![i_438_]])
                     if (ConfigVarProgress.anIntArray4817!![i_438_] == 6) i_448_ = (if (TextureQualityOptionState.anInt6006 % 20 >= 10) 16776960 else 16711680)
@@ -4094,11 +4094,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 4) {
                         val i_453_ = ((150 + -ConfigVarProgress.anIntArray4812!![i_438_]) * (Class369.aFontDefinition_4962!!.method1183(true, string) + 100) / 150)
-                        Class348_Sub8.aRenderer6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
+                        FacingDirectionNode.aRenderer6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
                         i_444_ += 50 - i_453_
                         i_446_ += -i_453_ + 50
                         NodeDeque.aFont_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
-                        Class348_Sub8.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i + i_315_)
+                        FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i + i_315_)
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 5) {
                         val i_454_ = 150 + -ConfigVarProgress.anIntArray4812!![i_438_]
@@ -4107,13 +4107,13 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             if (i_454_ > 125) i_455_ = i_454_ + -125
                         } else i_455_ = i_454_ - 25
                         val i_456_ = (Class369.aFontDefinition_4962!!.anInt1993 + Class369.aFontDefinition_4962!!.anInt1988)
-                        Class348_Sub8.aRenderer6654!!.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
+                        FacingDirectionNode.aRenderer6654!!.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_447_ += i_455_
                         NodeDeque.aFont_3326!!.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
                         i_445_ += i_455_
                         i_446_ -= i_443_ shr 1
-                        Class348_Sub8.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i_315_ + i)
+                        FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i_315_ + i)
                     }
                 } else {
                     i_444_ -= i_443_ shr 1

@@ -6,9 +6,9 @@ class AudioClipDefinition {
     private var anInt3968 = 0
     private val aClass80Array3969: Array<Class80?>
 
-    fun method2369(): Class348_Sub19_Sub1 {
+    fun method2369(): PcmSampleData {
         val `is` = method2371()
-        return Class348_Sub19_Sub1(22050, `is`, 22050 * anInt3967 / 1000, 22050 * anInt3968 / 1000)
+        return PcmSampleData(22050, `is`, 22050 * anInt3967 / 1000, 22050 * anInt3968 / 1000)
     }
 
     fun method2370(): Int {
@@ -51,7 +51,7 @@ class AudioClipDefinition {
         return `is`
     }
 
-    private constructor(class348_sub49: Class348_Sub49) {
+    private constructor(class348_sub49: Buffer) {
         aClass80Array3969 = arrayOfNulls<Class80>(10)
         for (i in 0..9) {
             val i_10_ = class348_sub49.readUnsignedByte(255)
@@ -73,7 +73,7 @@ class AudioClipDefinition {
         fun method2372(class45: Class45, i: Int, i_11_: Int): AudioClipDefinition? {
             val `is` = class45.method410(-1860, i, i_11_)
             if (`is` == null) return null
-            return AudioClipDefinition(Class348_Sub49(`is`))
+            return AudioClipDefinition(Buffer(`is`))
         }
     }
 }

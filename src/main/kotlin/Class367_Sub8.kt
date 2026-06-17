@@ -50,7 +50,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
             class101_sub2_21_.method898(class101_sub2)
             class101_sub2_21_.method914(0.125f, 1.0f, 0, 0.125f)
             class101_sub2_21_.method920(0.0f, false, aFloat7350, 0.0f)
-            this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aConfigFlagUtil_9477)
+            this.aHa_Sub3_4479.method3853(-32, ClampTextureNode.aConfigFlagUtil_9477)
             this.aHa_Sub3_4479.method3897(0, -4382)
         }
         anInt7352++
@@ -66,13 +66,13 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
     override fun method3525(i: Int, bool: Boolean) {
         anInt7356++
         this.aHa_Sub3_4479.method3897(1, i xor 0x2a45.inv())
-        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 111, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
+        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 111, (TheoraVideoStream.aRenderConfigFactory_9011))
         this.aHa_Sub3_4479.method3924(true, false, 0, WidgetRedrawRegion.aClass70_4247, false)
         this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
         this.aHa_Sub3_4479.method3910((-26).toByte(), 0)
         this.aHa_Sub3_4479.method3897(0, -4382)
         this.aHa_Sub3_4479.method3894(-28186, -16777216)
-        this.aHa_Sub3_4479.method3885(0, true, Class348_Sub40_Sub39.aClass70_9485)
+        this.aHa_Sub3_4479.method3885(0, true, RenderListTextureNode.aClass70_9485)
         method3532(10425)
         if (i != 15192) aShort7355 = 106.toShort()
     }
@@ -87,7 +87,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
         try {
             aNormalMapGenerator_7353 = normalMapGenerator
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kl.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("kl.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -201,7 +201,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
                 }
                 anInt7359++
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kl.E(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_7_ != null) "{...}" else "null") + ',' + (if (is_8_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("kl.E(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_7_ != null) "{...}" else "null") + ',' + (if (is_8_ != null) "{...}" else "null") + ')'))
             }
         }
 

@@ -175,7 +175,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             Class358.aClass60_4417!!.method578(2, i)
             if (i_49_ != -1) aIntRange_1068 = null
             SceneryDetailOptionState.aClass60_6096!!.method578(2, i)
-            Class348_Sub40_Sub9.aClass60_9171!!.method578(i_49_ xor 0x2.inv(), i)
+            EdgeDetectTextureNode.aClass60_9171!!.method578(i_49_ xor 0x2.inv(), i)
         }
 
         @JvmStatic
@@ -185,7 +185,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             if (CollisionMapAccessor.aHashtable3548!!.containsKey(string)) return 100
             val string_52_ = CameraOrModelTransform.method2651(string, 3)
             if (string_52_ == null) return -1
-            val string_53_ = Class348_Sub41.aString7048 + string_52_
+            val string_53_ = RegionSceneShifter.aString7048 + string_52_
             if (!ParticleSystemState.aClass45_2208!!.method422("", string_53_, -88)) return -1
             if (!ParticleSystemState.aClass45_2208!!.method413(i xor 0x1d48, string_53_)) return ParticleSystemState.aClass45_2208!!.method397(string_53_, 0)
             val `is` = ParticleSystemState.aClass45_2208!!.method391(string_53_, "", -29832)
@@ -232,7 +232,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
         }
 
         @JvmStatic
-        fun method549(i: Byte, class348_sub21: Class348_Sub21?, var_renderer: Renderer, class42: Class42?) {
+        fun method549(i: Byte, class348_sub21: CameraSplineNode?, var_renderer: Renderer, class42: Class42?) {
             try {
                 anInt1080++
                 val class105 = class42!!.method375(var_renderer, false)
@@ -300,7 +300,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     }
                     if (class42.anInt578 != -1 || class42.aString597 != null) {
                         i_56_ = i_56_ shr 1
-                        val class348_sub12 = Class348_Sub12(class348_sub21)
+                        val class348_sub12 = BoundingBoxNode(class348_sub21)
                         class348_sub12.anInt6737 = i_70_
                         class348_sub12.anInt6746 = -i_56_ + i_59_
                         class348_sub12.anInt6735 = i_59_ - -i_56_
@@ -313,7 +313,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("jp.I(" + i + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class42 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("jp.I(" + i + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class42 != null) "{...}" else "null") + ')'))
             }
         }
     }

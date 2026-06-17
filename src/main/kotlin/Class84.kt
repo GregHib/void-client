@@ -32,7 +32,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
             `is` = aClass45_1460.method410(-1860, i_15_, i)
         }
         particleConfigParser = ParticleConfigParser()
-        if (`is` != null) particleConfigParser!!.method2275(Class348_Sub49(`is`), (-123).toByte())
+        if (`is` != null) particleConfigParser!!.method2275(Buffer(`is`), (-123).toByte())
         synchronized(aClass60_1449) {
             aClass60_1449.method582(particleConfigParser, i.toLong(), (-106).toByte())
         }
@@ -69,7 +69,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
             aClass45_1460 = class45
             aClass45_1460!!.method407(0, 29)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lca.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lca.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -147,7 +147,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         fun method824(i: Int) {
             DelegatingRenderCanvas.anInt67 = i
             for (i_22_ in 0..<SpotAnimEntity.anInt6451) {
-                for (i_23_ in 0..<Class348_Sub41.anInt7054) {
+                for (i_23_ in 0..<RegionSceneShifter.anInt7054) {
                     if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] == null) HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] = Class357(i)
                 }
             }
@@ -161,28 +161,28 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
         @JvmStatic
         fun method826(i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, var_renderer: Renderer) {
-            if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9658 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aClass45_322!!.method421(false, ProjectedGroundDecor.anInt10257) && CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aClass45_322!!.method421(false, Class79.Companion.anInt1387)) {
+            if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || TimedTileQueueEntry.aAbstractModelRenderer_9658 == null || TimedTileQueueEntry.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aClass45_322!!.method421(false, ProjectedGroundDecor.anInt10257) && CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aClass45_322!!.method421(false, Class79.Companion.anInt1387)) {
                 val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, SkyboxGradient.anInt3937, 0)
-                Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = var_renderer.method3691(spriteImage, true)
+                TimedTileQueueEntry.aAbstractModelRenderer_9658 = var_renderer.method3691(spriteImage, true)
                 spriteImage!!.method1518()
                 ConfigVarProgress.aAbstractModelRenderer_4808 = var_renderer.method3691(spriteImage, true)
                 SpotAnimVector.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(CameraRotationStub.aClass45_322!!, ProjectedGroundDecor.anInt10257, 0), true))
                 val spriteImage_29_ = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, Class79.Companion.anInt1387, 0)
-                Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = var_renderer.method3691(spriteImage_29_, true)
+                TimedTileQueueEntry.aAbstractModelRenderer_9659 = var_renderer.method3691(spriteImage_29_, true)
                 spriteImage_29_!!.method1518()
                 AbstractMenuEntry.aAbstractModelRenderer_1706 = var_renderer.method3691(spriteImage_29_, true)
             }
             anInt1454++
-            if (SpotAnimVector.aAbstractModelRenderer_2309 != null && Class348_Sub42_Sub15.aAbstractModelRenderer_9658 != null && Class348_Sub42_Sub15.aAbstractModelRenderer_9659 != null) {
-                val i_30_ = (-(Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method971() * 2) + i_25_) / SpotAnimVector.aAbstractModelRenderer_2309!!.method971()
-                for (i_31_ in 0..<i_30_) SpotAnimVector.aAbstractModelRenderer_2309!!.method974(i_24_ + (Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method971() - -(i_31_ * SpotAnimVector.aAbstractModelRenderer_2309!!.method971())), -SpotAnimVector.aAbstractModelRenderer_2309!!.method969() + (i_28_ + i_26_))
-                val i_32_ = ((i_26_ - (i + Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method969())) / Class348_Sub42_Sub15.aAbstractModelRenderer_9658!!.method969())
+            if (SpotAnimVector.aAbstractModelRenderer_2309 != null && TimedTileQueueEntry.aAbstractModelRenderer_9658 != null && TimedTileQueueEntry.aAbstractModelRenderer_9659 != null) {
+                val i_30_ = (-(TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971() * 2) + i_25_) / SpotAnimVector.aAbstractModelRenderer_2309!!.method971()
+                for (i_31_ in 0..<i_30_) SpotAnimVector.aAbstractModelRenderer_2309!!.method974(i_24_ + (TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971() - -(i_31_ * SpotAnimVector.aAbstractModelRenderer_2309!!.method971())), -SpotAnimVector.aAbstractModelRenderer_2309!!.method969() + (i_28_ + i_26_))
+                val i_32_ = ((i_26_ - (i + TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method969())) / TimedTileQueueEntry.aAbstractModelRenderer_9658!!.method969())
                 for (i_33_ in 0..<i_32_) {
-                    Class348_Sub42_Sub15.aAbstractModelRenderer_9658!!.method974(i_24_, (Class348_Sub42_Sub15.aAbstractModelRenderer_9658!!.method969() * i_33_ + (i_28_ + i)))
-                    ConfigVarProgress.aAbstractModelRenderer_4808!!.method974(-ConfigVarProgress.aAbstractModelRenderer_4808!!.method971() + i_25_ + i_24_, (Class348_Sub42_Sub15.aAbstractModelRenderer_9658!!.method969() * i_33_ + i + i_28_))
+                    TimedTileQueueEntry.aAbstractModelRenderer_9658!!.method974(i_24_, (TimedTileQueueEntry.aAbstractModelRenderer_9658!!.method969() * i_33_ + (i_28_ + i)))
+                    ConfigVarProgress.aAbstractModelRenderer_4808!!.method974(-ConfigVarProgress.aAbstractModelRenderer_4808!!.method971() + i_25_ + i_24_, (TimedTileQueueEntry.aAbstractModelRenderer_9658!!.method969() * i_33_ + i + i_28_))
                 }
-                Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method974(i_24_, (-Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method969() + i_28_ + i_26_))
-                AbstractMenuEntry.aAbstractModelRenderer_1706!!.method974(i_24_ + (i_25_ + -Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method971()), i_28_ - (-i_26_ + Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method969()))
+                TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method974(i_24_, (-TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method969() + i_28_ + i_26_))
+                AbstractMenuEntry.aAbstractModelRenderer_1706!!.method974(i_24_ + (i_25_ + -TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971()), i_28_ - (-i_26_ + TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method969()))
             }
             val i_34_ = -24 % ((i_27_ - 85) / 35)
         }

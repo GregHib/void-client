@@ -32,7 +32,7 @@ class InputStream_Sub2 : InputStream() {
         fun method128(class74: Class74?, i: Byte) {
             try {
                 anInt81++
-                if (class74 == Class348_Sub26.aClass74_6891) {
+                if (class74 == NamedIdEntry.aClass74_6891) {
                     val i_0_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-124).toByte())
                     val i_1_ = i_0_ shr 2
                     val i_2_ = 0x3 and i_0_
@@ -41,8 +41,8 @@ class InputStream_Sub2 : InputStream() {
                     val i_5_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(65.toByte())
                     val i_6_ = BufferedMessageQueue.anInt3581 + (0x7 and (i_5_ shr 4))
                     val i_7_ = Class73.anInt4786 - -(i_5_ and 0x7)
-                    if (NpcEntityUpdater.method2112(126, WidgetRedrawTracker.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && Class367_Sub4.anInt7319 > i_6_ && (i_7_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
-                } else if (class74 == Class348_Sub40_Sub38.aClass74_9475) {
+                    if (NpcEntityUpdater.method2112(126, WidgetRedrawTracker.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && Class367_Sub4.anInt7319 > i_6_ && (i_7_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
+                } else if (class74 == ClampTextureNode.aClass74_9475) {
                     val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_9_ = BufferedMessageQueue.anInt3581 + ((0x7a and i_8_) shr 4)
                     val i_10_ = Class73.anInt4786 - -(i_8_ and 0x7)
@@ -50,13 +50,13 @@ class InputStream_Sub2 : InputStream() {
                     val i_12_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_13_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_14_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
-                    if (i_9_ >= 0 && i_10_ >= 0 && i_9_ < Class367_Sub4.anInt7319 && Class348_Sub40_Sub3.anInt9109 > i_10_) {
+                    if (i_9_ >= 0 && i_10_ >= 0 && i_9_ < Class367_Sub4.anInt7319 && RangeThresholdTextureNode.anInt9109 > i_10_) {
                         val i_15_ = 512 * i_9_ - -256
                         val i_16_ = 256 + 512 * i_10_
-                        var i_17_ = Class348_Sub40_Sub12.anInt9200
+                        var i_17_ = GradientLookupEffect.anInt9200
                         if (i_17_ < 3 && Class79.method802(i_10_, i_9_, true)) i_17_++
-                        val class318_sub1_sub3_sub4 = (MapElementDecor(i_11_, i_13_, Class367_Sub11.anInt7396, Class348_Sub40_Sub12.anInt9200, i_17_, i_15_, CollisionMapAccessor.method2064(i_15_, Class348_Sub40_Sub12.anInt9200, 11219, i_16_) + -i_12_, i_16_, i_9_, i_9_, i_10_, i_10_, i_14_))
-                        OpenGlRenderNode.aNodeDeque_10492!!.method1999(Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180)
+                        val class318_sub1_sub3_sub4 = (MapElementDecor(i_11_, i_13_, Class367_Sub11.anInt7396, GradientLookupEffect.anInt9200, i_17_, i_15_, CollisionMapAccessor.method2064(i_15_, GradientLookupEffect.anInt9200, 11219, i_16_) + -i_12_, i_16_, i_9_, i_9_, i_10_, i_10_, i_14_))
+                        OpenGlRenderNode.aNodeDeque_10492!!.method1999(ChatScriptListNode(class318_sub1_sub3_sub4), -20180)
                     }
                 } else if (class74 == Class91.aClass74_1519) {
                     val i_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -70,24 +70,24 @@ class InputStream_Sub2 : InputStream() {
                     val i_25_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_26_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_27_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
-                    if (i_19_ >= 0 && i_20_ >= 0 && i_19_ < Class367_Sub4.anInt7319 && (i_20_ < Class348_Sub40_Sub3.anInt9109)) {
+                    if (i_19_ >= 0 && i_20_ >= 0 && i_19_ < Class367_Sub4.anInt7319 && (i_20_ < RangeThresholdTextureNode.anInt9109)) {
                         val i_28_ = 1 + i_23_
                         if (((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_19_ + -i_28_) && i_28_ + i_19_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_28_ + i_20_) && i_20_ + i_28_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) RangedGraphicsOptionState.method1760(
                             i_21_,
                             i_26_,
                             false,
-                            ((i_20_ shl 8) + (((Class348_Sub40_Sub12.anInt9200) shl 24) + ((i_19_ shl 16) - -i_23_))),
+                            ((i_20_ shl 8) + (((GradientLookupEffect.anInt9200) shl 24) + ((i_19_ shl 16) - -i_23_))),
                             (-98).toByte(),
                             i_24_,
                             i_27_,
                             i_25_
                         )
                     }
-                } else if (class74 == Class348_Sub35.aClass74_6977) {
+                } else if (class74 == IntKeyNode.aClass74_6977) {
                     val i_29_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_30_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                    Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_29_).method478(i_30_, -31076)
-                } else if (Class348_Sub16_Sub1.aClass74_8853 == class74) {
+                    GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_29_).method478(i_30_, -31076)
+                } else if (SynthVoiceGroup.aClass74_8853 == class74) {
                     val i_31_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_32_ = BufferedMessageQueue.anInt3581 + ((i_31_ and 0x7b) shr 4)
                     val i_33_ = (i_31_ and 0x7) + Class73.anInt4786
@@ -99,9 +99,9 @@ class InputStream_Sub2 : InputStream() {
                     val i_38_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_39_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     val i_40_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    if (i_32_ >= 0 && i_33_ >= 0 && i_32_ < Class367_Sub4.anInt7319 && i_33_ < Class348_Sub40_Sub3.anInt9109) {
+                    if (i_32_ >= 0 && i_33_ >= 0 && i_32_ < Class367_Sub4.anInt7319 && i_33_ < RangeThresholdTextureNode.anInt9109) {
                         val i_41_ = i_36_ + 1
-                        if ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_32_ - i_41_ && (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) <= i_41_ + i_32_ && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_41_ + i_33_) && (i_33_ - -i_41_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]))) Class37.method358(i_37_, (i_36_ + (i_33_ shl 8) + ((Class348_Sub40_Sub12.anInt9200 shl 24) + (i_32_ shl 16))), i_38_, i_39_, i_40_, i_34_, -29494)
+                        if ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_32_ - i_41_ && (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) <= i_41_ + i_32_ && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_41_ + i_33_) && (i_33_ - -i_41_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]))) Class37.method358(i_37_, (i_36_ + (i_33_ shl 8) + ((GradientLookupEffect.anInt9200 shl 24) + (i_32_ shl 16))), i_38_, i_39_, i_40_, i_34_, -29494)
                     }
                 } else if (SplashImageLoadable.aClass74_4689 == class74) {
                     var i_42_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
@@ -113,7 +113,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_47_ = i_46_ shr 2
                     val i_48_ = i_46_ and 0x3
                     val i_49_ = Class36.anIntArray487!![i_47_]
-                    NativeRenderer.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, Class348_Sub40_Sub12.anInt9200, i_49_)
+                    NativeRenderer.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, GradientLookupEffect.anInt9200, i_49_)
                 } else if (class74 == ArbFogMaterialPass.aClass74_6201) {
                     val i_50_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     var i_51_ = (i_50_ shr 4 and 0xf) + BufferedMessageQueue.anInt3581 * 2
@@ -136,7 +136,7 @@ class InputStream_Sub2 : InputStream() {
                     var i_65_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     var i_66_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (i_65_ == 255) i_65_ = -1
-                    if (i_51_ >= 0 && i_52_ >= 0 && (i_51_ < 2 * Class367_Sub4.anInt7319) && (i_52_ < Class367_Sub4.anInt7319 * 2) && i_56_ >= 0 && i_57_ >= 0 && (i_56_ < Class348_Sub40_Sub3.anInt9109 * 2) && 2 * Class348_Sub40_Sub3.anInt9109 > i_57_ && i_60_ != 65535) {
+                    if (i_51_ >= 0 && i_52_ >= 0 && (i_51_ < 2 * Class367_Sub4.anInt7319) && (i_52_ < Class367_Sub4.anInt7319 * 2) && i_56_ >= 0 && i_57_ >= 0 && (i_56_ < RangeThresholdTextureNode.anInt9109 * 2) && 2 * RangeThresholdTextureNode.anInt9109 > i_57_ && i_60_ != 65535) {
                         i_57_ *= 256
                         i_56_ = 256 * i_56_
                         i_62_ = i_62_ shl 2
@@ -148,11 +148,11 @@ class InputStream_Sub2 : InputStream() {
                             var class318_sub1_sub3_sub3: ProjectedGroundDecor? = null
                             if (i_58_ < 0) {
                                 val i_67_ = -i_58_ + -1
-                                if (Class348_Sub42_Sub11.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_67_])
+                                if (CharCodeMap.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_67_])
                                 else class318_sub1_sub3_sub3 = (LocalPlayerState.aPlayer_1907)
                             } else {
                                 val i_68_ = i_58_ + -1
-                                val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_68_.toLong(), -6008) as? Class348_Sub22?)
+                                val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_68_.toLong(), -6008) as? NpcReference?)
                                 if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aNpc_6859)
                             }
                             if (class318_sub1_sub3_sub3 != null) {
@@ -161,29 +161,29 @@ class InputStream_Sub2 : InputStream() {
                                 if ((class225.anIntArrayArray2910 != null) && (class225.anIntArrayArray2910!![i_55_]) != null) i_61_ -= (class225.anIntArrayArray2910!![i_55_]!![1])
                             }
                         }
-                        val class318_sub1_sub3_sub5 = (TrackedGroundDecor(i_60_, Class348_Sub40_Sub12.anInt9200, Class348_Sub40_Sub12.anInt9200, i_51_, i_52_, i_61_, i_63_ - -Class367_Sub11.anInt7396, i_64_ + Class367_Sub11.anInt7396, i_65_, i_66_, i_58_, i_59_, i_62_, bool, i_55_))
-                        class318_sub1_sub3_sub5.method2471((-103).toByte(), (-i_62_ + CollisionMapAccessor.method2064(i_56_, Class348_Sub40_Sub12.anInt9200, 11219, i_57_)), i_57_, i_63_ + Class367_Sub11.anInt7396, i_56_)
-                        Class348_Sub40_Sub17.aNodeDeque_9240!!.method1999(Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180)
+                        val class318_sub1_sub3_sub5 = (TrackedGroundDecor(i_60_, GradientLookupEffect.anInt9200, GradientLookupEffect.anInt9200, i_51_, i_52_, i_61_, i_63_ - -Class367_Sub11.anInt7396, i_64_ + Class367_Sub11.anInt7396, i_65_, i_66_, i_58_, i_59_, i_62_, bool, i_55_))
+                        class318_sub1_sub3_sub5.method2471((-103).toByte(), (-i_62_ + CollisionMapAccessor.method2064(i_56_, GradientLookupEffect.anInt9200, 11219, i_57_)), i_57_, i_63_ + Class367_Sub11.anInt7396, i_56_)
+                        SpriteTextureNode.aNodeDeque_9240!!.method1999(ParticleEmitterListNode(class318_sub1_sub3_sub5), -20180)
                     }
-                } else if (class74 == Class348_Sub42_Sub8_Sub2.aClass74_10437) {
+                } else if (class74 == HardCacheEntryReference.aClass74_10437) {
                     val i_69_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-128)
                     val i_70_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
                     val i_71_ = Class73.anInt4786 + (i_70_ and 0x7)
                     val i_72_ = Class90.regionTileY + i_71_
                     val i_73_ = BufferedMessageQueue.anInt3581 + (i_70_ shr 4 and 0x7)
                     val i_74_ = ArbVertexProgram.regionTileX + i_73_
-                    val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480((i_72_ shl 14 or (Class348_Sub40_Sub12.anInt9200 shl 28) or i_74_).toLong(), -6008)) as Class348_Sub37?)
+                    val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480((i_72_ shl 14 or (GradientLookupEffect.anInt9200 shl 28) or i_74_).toLong(), -6008)) as HashTableContainer?)
                     if (class348_sub37 != null) {
-                        var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1995(4) as Class348_Sub34?)
+                        var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1995(4) as IntPair?)
                         while (class348_sub34 != null) {
                             if ((0x7fff and i_69_) == class348_sub34.anInt6973) {
                                 class348_sub34.method2715(127.toByte())
                                 break
                             }
-                            class348_sub34 = (class348_sub37.aNodeDeque_6998.method1990(49.toByte()) as Class348_Sub34?)
+                            class348_sub34 = (class348_sub37.aNodeDeque_6998.method1990(49.toByte()) as IntPair?)
                         }
                         if (class348_sub37.aNodeDeque_6998.method2002(18.toByte())) class348_sub37.method2715(62.toByte())
-                        if (i_73_ >= 0 && i_71_ >= 0 && Class367_Sub4.anInt7319 > i_73_ && Class348_Sub40_Sub3.anInt9109 > i_71_) ProjectileSpawner.method1479(i_71_, (-125).toByte(), i_73_, Class348_Sub40_Sub12.anInt9200)
+                        if (i_73_ >= 0 && i_71_ >= 0 && Class367_Sub4.anInt7319 > i_73_ && RangeThresholdTextureNode.anInt9109 > i_71_) ProjectileSpawner.method1479(i_71_, (-125).toByte(), i_73_, GradientLookupEffect.anInt9200)
                     }
                 } else if (Class59_Sub1_Sub2.aClass74_8662 == class74) {
                     val i_75_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
@@ -193,10 +193,10 @@ class InputStream_Sub2 : InputStream() {
                     val i_79_ = i_78_ + Class90.regionTileY
                     val i_80_ = BufferedMessageQueue.anInt3581 - -((i_77_ and 0x79) shr 4)
                     val i_81_ = ArbVertexProgram.regionTileX - -i_80_
-                    val bool = (i_80_ >= 0 && i_78_ >= 0 && Class367_Sub4.anInt7319 > i_80_ && Class348_Sub40_Sub3.anInt9109 > i_78_)
+                    val bool = (i_80_ >= 0 && i_78_ >= 0 && Class367_Sub4.anInt7319 > i_80_ && RangeThresholdTextureNode.anInt9109 > i_78_)
                     if (bool || NpcEntityUpdater.method2112(124, WidgetRedrawTracker.anInt3931)) {
-                        Class352.method3459(Class348_Sub34(i_76_, i_75_), Class348_Sub40_Sub12.anInt9200, i_79_, i_81_, -2)
-                        if (bool) ProjectileSpawner.method1479(i_78_, (-124).toByte(), i_80_, Class348_Sub40_Sub12.anInt9200)
+                        Class352.method3459(IntPair(i_76_, i_75_), GradientLookupEffect.anInt9200, i_79_, i_81_, -2)
+                        if (bool) ProjectileSpawner.method1479(i_78_, (-124).toByte(), i_80_, GradientLookupEffect.anInt9200)
                     }
                 } else if (class74 == Class374.aClass74_4537) {
                     val i_82_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(83.toByte())
@@ -206,7 +206,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_86_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     val i_87_ = BufferedMessageQueue.anInt3581 + (i_86_ shr 4 and 0x7)
                     val i_88_ = Class73.anInt4786 - -(0x7 and i_86_)
-                    if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, WidgetRedrawTracker.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367_Sub4.anInt7319 > i_87_ && (i_88_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
+                    if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, WidgetRedrawTracker.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367_Sub4.anInt7319 > i_87_ && (i_88_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
                     if (i.toInt() != 8) aIntRange_82 = null
                     if (Class39.aClass74_515 == class74) {
@@ -219,19 +219,19 @@ class InputStream_Sub2 : InputStream() {
                         val i_95_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
                         val i_96_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         if (ModelBatchBase.aClass356_1895 != null) {
-                            val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480((i_93_ or ((Class348_Sub40_Sub12.anInt9200 shl 28) or (i_91_ shl 14))).toLong(), -6008)) as Class348_Sub37?)
+                            val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480((i_93_ or ((GradientLookupEffect.anInt9200 shl 28) or (i_91_ shl 14))).toLong(), -6008)) as HashTableContainer?)
                             if (class348_sub37 != null) {
-                                var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1995(4) as Class348_Sub34?)
+                                var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1995(4) as IntPair?)
                                 while (class348_sub34 != null) {
                                     if ((class348_sub34.anInt6973) == (0x7fff and i_94_) && i_95_ == class348_sub34.anInt6971) {
                                         class348_sub34.method2715(32.toByte())
                                         class348_sub34.anInt6971 = i_96_
-                                        Class352.method3459(class348_sub34, (Class348_Sub40_Sub12.anInt9200), i_91_, i_93_, i.toInt() xor 0x9.inv())
+                                        Class352.method3459(class348_sub34, (GradientLookupEffect.anInt9200), i_91_, i_93_, i.toInt() xor 0x9.inv())
                                         break
                                     }
-                                    class348_sub34 = (class348_sub37.aNodeDeque_6998.method1990(34.toByte()) as Class348_Sub34?)
+                                    class348_sub34 = (class348_sub37.aNodeDeque_6998.method1990(34.toByte()) as IntPair?)
                                 }
-                                if (i_92_ >= 0 && i_90_ >= 0 && (i_92_ < Class367_Sub4.anInt7319) && (Class348_Sub40_Sub3.anInt9109 > i_90_)) ProjectileSpawner.method1479(i_90_, (-125).toByte(), i_92_, (Class348_Sub40_Sub12.anInt9200))
+                                if (i_92_ >= 0 && i_90_ >= 0 && (i_92_ < Class367_Sub4.anInt7319) && (RangeThresholdTextureNode.anInt9109 > i_90_)) ProjectileSpawner.method1479(i_90_, (-125).toByte(), i_92_, (GradientLookupEffect.anInt9200))
                             }
                         }
                     } else if (class74 == FileIoUtil.aClass74_4098) {
@@ -243,11 +243,11 @@ class InputStream_Sub2 : InputStream() {
                         val i_102_ = ArbVertexProgram.regionTileX + i_101_
                         val i_103_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-25)
                         val i_104_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(123)
-                        if (i_104_ != Class348_Sub42_Sub11.anInt9591) {
-                            val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < Class367_Sub4.anInt7319) && (i_99_ < Class348_Sub40_Sub3.anInt9109))
+                        if (i_104_ != CharCodeMap.anInt9591) {
+                            val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < Class367_Sub4.anInt7319) && (i_99_ < RangeThresholdTextureNode.anInt9109))
                             if (bool || NpcEntityUpdater.method2112(122, WidgetRedrawTracker.anInt3931)) {
-                                Class352.method3459(Class348_Sub34(i_103_, i_97_), Class348_Sub40_Sub12.anInt9200, i_100_, i_102_, i + -10)
-                                if (bool) ProjectileSpawner.method1479(i_99_, (-120).toByte(), i_101_, (Class348_Sub40_Sub12.anInt9200))
+                                Class352.method3459(IntPair(i_103_, i_97_), GradientLookupEffect.anInt9200, i_100_, i_102_, i + -10)
+                                if (bool) ProjectileSpawner.method1479(i_99_, (-120).toByte(), i_101_, (GradientLookupEffect.anInt9200))
                             }
                         }
                     } else if (class74 == RectangleBounds.aClass74_2157) {
@@ -266,7 +266,7 @@ class InputStream_Sub2 : InputStream() {
                         var i_116_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         if (i_116_ == 255) i_116_ = -1
                         var i_117_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                        if (i_106_ >= 0 && i_107_ >= 0 && (i_106_ < Class367_Sub4.anInt7319) && i_107_ < Class348_Sub40_Sub3.anInt9109 && i_108_ >= 0 && i_109_ >= 0 && Class367_Sub4.anInt7319 > i_108_ && (Class348_Sub40_Sub3.anInt9109 > i_109_) && i_111_ != 65535) {
+                        if (i_106_ >= 0 && i_107_ >= 0 && (i_106_ < Class367_Sub4.anInt7319) && i_107_ < RangeThresholdTextureNode.anInt9109 && i_108_ >= 0 && i_109_ >= 0 && Class367_Sub4.anInt7319 > i_108_ && (RangeThresholdTextureNode.anInt9109 > i_109_) && i_111_ != 65535) {
                             i_117_ = i_117_ shl 2
                             i_109_ = 256 + i_109_ * 512
                             i_113_ = i_113_ shl 2
@@ -274,9 +274,9 @@ class InputStream_Sub2 : InputStream() {
                             i_107_ = i_107_ * 512 + 256
                             i_106_ = i_106_ * 512 + 256
                             i_112_ = i_112_ shl 2
-                            val class318_sub1_sub3_sub5 = (TrackedGroundDecor(i_111_, Class348_Sub40_Sub12.anInt9200, Class348_Sub40_Sub12.anInt9200, i_106_, i_107_, i_112_, i_114_ + Class367_Sub11.anInt7396, Class367_Sub11.anInt7396 + i_115_, i_116_, i_117_, 0, i_110_, i_113_, bool, -1))
-                            class318_sub1_sub3_sub5.method2471((-103).toByte(), CollisionMapAccessor.method2064(i_108_, (Class348_Sub40_Sub12.anInt9200), 11219, i_109_) + -i_113_, i_109_, i_114_ + Class367_Sub11.anInt7396, i_108_)
-                            Class348_Sub40_Sub17.aNodeDeque_9240!!.method1999(Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180)
+                            val class318_sub1_sub3_sub5 = (TrackedGroundDecor(i_111_, GradientLookupEffect.anInt9200, GradientLookupEffect.anInt9200, i_106_, i_107_, i_112_, i_114_ + Class367_Sub11.anInt7396, Class367_Sub11.anInt7396 + i_115_, i_116_, i_117_, 0, i_110_, i_113_, bool, -1))
+                            class318_sub1_sub3_sub5.method2471((-103).toByte(), CollisionMapAccessor.method2064(i_108_, (GradientLookupEffect.anInt9200), 11219, i_109_) + -i_113_, i_109_, i_114_ + Class367_Sub11.anInt7396, i_108_)
+                            SpriteTextureNode.aNodeDeque_9240!!.method1999(ParticleEmitterListNode(class318_sub1_sub3_sub5), -20180)
                         }
                     } else if (TextureGenerator.aClass74_2491 == class74) {
                         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -287,14 +287,14 @@ class InputStream_Sub2 : InputStream() {
                         val i_122_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_123_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readMedium(-1)
                         val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-126).toByte())
-                        Class6.method205(i_121_, i_119_, i_123_, string, i_122_, -109, i_120_, Class348_Sub40_Sub12.anInt9200)
+                        Class6.method205(i_121_, i_119_, i_123_, string, i_122_, -109, i_120_, GradientLookupEffect.anInt9200)
                     } else {
                         LinkedListIterator.method1242("T3 - " + class74, null, 15004)
-                        Class348_Sub40_Sub34.method3141(false, 11.toByte())
+                        NormalMapTextureNode.method3141(false, 11.toByte())
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("sfa.A(" + (if (class74 != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("sfa.A(" + (if (class74 != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

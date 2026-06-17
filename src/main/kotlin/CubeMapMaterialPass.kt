@@ -127,7 +127,7 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
             if (i_0_.toInt() != 3) method2170(-109, 7.toByte())
             DebugOverlayRenderer.anInt3170 = i
             Class48.anInt859 = -1
-            Class348_Sub15.method2811(false)
+            MenuActionNode.method2811(false)
         }
 
         @JvmStatic
@@ -161,8 +161,8 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
                 if (SpriteArchiveLoader.anInt383 == 0) ParticleEmitterNode.anIntArray179 = null
             }
             if (bool_6_) {
-                Class348_Sub40_Sub26.anInt9346--
-                if (Class348_Sub40_Sub26.anInt9346 == 0) Crc64Hashable.anIntArray4983 = null
+                ColourKeyTextureNode.anInt9346--
+                if (ColourKeyTextureNode.anInt9346 == 0) Crc64Hashable.anIntArray4983 = null
             }
         }
     }

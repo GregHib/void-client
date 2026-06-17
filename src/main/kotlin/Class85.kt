@@ -1,5 +1,5 @@
 import FlickeringEffectsOptionState.Companion.method1752
-import Class348_Sub8.Companion.method2777
+import FacingDirectionNode.Companion.method2777
 import kotlin.math.min
 
 /* Class85 - Decompiled by JODE
@@ -123,7 +123,7 @@ class Class85 {
                 anInt1463 += l.toInt()
             } else anInt1463 += l.toInt()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lda.B(" + l + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lda.B(" + l + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -189,10 +189,10 @@ class Class85 {
                 val i_15_ = ItemModelDefinition.anInt425
                 val i_16_ = BackgroundWorkerThread.anInt3225
                 method1752(-1, i_13_, i_14_)
-                if (Class348_Sub49.anInt7207 == 0) {
+                if (Buffer.anInt7207 == 0) {
                     WidgetDefinition.anInterface4_252 = null
-                    WidgetDefinition.anInterface4_252 = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665((Class348_Sub16_Sub1.anInt8854), ShadowQualityOptionState.anInt6008), CameraRotationStub.aRenderer326!!.method3624((Class348_Sub16_Sub1.anInt8854), ShadowQualityOptionState.anInt6008)))
-                } else if (Class348_Sub49.anInt7207 == 1 && (Class92.anInterface4Array1525 == null || i_15_ != ItemModelDefinition.anInt425 || i_16_ != BackgroundWorkerThread.anInt3225)) {
+                    WidgetDefinition.anInterface4_252 = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665((SynthVoiceGroup.anInt8854), ShadowQualityOptionState.anInt6008), CameraRotationStub.aRenderer326!!.method3624((SynthVoiceGroup.anInt8854), ShadowQualityOptionState.anInt6008)))
+                } else if (Buffer.anInt7207 == 1 && (Class92.anInterface4Array1525 == null || i_15_ != ItemModelDefinition.anInt425 || i_16_ != BackgroundWorkerThread.anInt3225)) {
                     Class92.anInterface4Array1525 = arrayOfNulls<Interface4>(BackgroundWorkerThread.anInt3225 * ItemModelDefinition.anInt425)
                     var i_17_ = 0
                     while (Class92.anInterface4Array1525!!.size > i_17_) {
@@ -202,7 +202,7 @@ class Class85 {
                     LocalPlayerState.anIntArray1909 = IntArray(ItemModelDefinition.anInt425 * BackgroundWorkerThread.anInt3225)
                     GroundDecorSceneEntity.anInt9997 = 1
                 }
-                Class348_Sub16_Sub2.aBoolean8870 = true
+                PcmStreamBuffer.aBoolean8870 = true
             }
         }
 
@@ -210,12 +210,12 @@ class Class85 {
         fun method830(i: Int, i_21_: Int, i_22_: Byte, bool: Boolean, i_23_: Int) {
             var bool = bool
             anInt1461++
-            Class348_Sub42_Sub3.method3179(0)
-            Class348_Sub16_Sub2.aLong8866 = 0L
-            val i_24_ = Class348_Sub42_Sub12.method3229(-82)
+            LoadingScreenImageNode.method3179(0)
+            PcmStreamBuffer.aLong8866 = 0L
+            val i_24_ = ContactEntry.method3229(-82)
             if (i_22_.toInt() == 102) {
                 if (i == 3 || i_24_ == 3) bool = true
-                if (!Class348_Sub8.aRenderer6654!!.method3695()) bool = true
+                if (!FacingDirectionNode.aRenderer6654!!.method3695()) bool = true
                 GameDisplayManager.method1580((-125).toByte(), bool, i_21_, i_24_, i, i_23_)
             }
         }

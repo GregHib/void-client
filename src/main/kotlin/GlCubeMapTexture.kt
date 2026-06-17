@@ -1,5 +1,5 @@
-import Class348_Sub16_Sub3.Companion.method2878
-import Class348_Sub40_Sub3.Companion.method3055
+import MidiSequencePlayer.Companion.method2878
+import RangeThresholdTextureNode.Companion.method3055
 import Class55.Companion.method520
 import jaggl.OpenGL.Companion.glTexImage2Di
 import OpenGlRenderNode.Companion.method3297
@@ -14,7 +14,7 @@ class GlCubeMapTexture internal constructor(class377: Class377?, i: Int, bool: B
                 for (i_0_ in 0..5) glTexImage2Di(34069 + i_0_, 0, this.method228(121), i, i, 0, method3055(110, this.aTextureFormatInfo_5084), (this.aClass377_5082!!.anInt9918), `is`!![i_0_], 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("le.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("le.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -36,7 +36,7 @@ class GlCubeMapTexture internal constructor(class377: Class377?, i: Int, bool: B
             anInt8620++
             var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
             try {
-                val class144 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2233((-46).toByte(), "", true)
+                val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2233((-46).toByte(), "", true)
                 while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-122).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
                     randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk?

@@ -1,5 +1,5 @@
 import DefaultGraphicsOptionState.Companion.method1839
-import Class348_Sub5.Companion.method2753
+import AbstractBloomEffect.Companion.method2753
 import Class55.Companion.method515
 import java.awt.Canvas
 import java.awt.Rectangle
@@ -50,7 +50,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
     fun method3635(i: Byte) {
         val i_15_ = -90 % ((i - 8) / 33)
         anInt4573++
-        Class348_Sub40_Sub26.aBooleanArray9351!![this.anInt4567] = false
+        ColourKeyTextureNode.aBooleanArray9351!![this.anInt4567] = false
         method3652()
     }
 
@@ -70,7 +70,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3640(): AbstractCameraTransform?
 
-    abstract fun method3642(i: Int, class348_sub1s: Array<Class348_Sub1?>?)
+    abstract fun method3642(i: Int, class348_sub1s: Array<AbstractTileShape?>?)
 
     abstract fun method3643(canvas: Canvas?, i: Int, i_40_: Int)
 
@@ -239,7 +239,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
         if (i >= 53) anInt4572++
     }
 
-    abstract fun method3690(i: Int, i_164_: Int, i_165_: Int, i_166_: Int, i_167_: Int, f: Float): Class348_Sub1?
+    abstract fun method3690(i: Int, i_164_: Int, i_165_: Int, i_166_: Int, i_167_: Int, f: Float): AbstractTileShape?
 
     abstract fun method3691(spriteImage: SpriteImage?, bool: Boolean): AbstractModelRenderer?
 
@@ -302,8 +302,8 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
     init {
         var i = -1
         for (i_215_ in 0..7) {
-            if (!Class348_Sub40_Sub26.aBooleanArray9351!![i_215_]) {
-                Class348_Sub40_Sub26.aBooleanArray9351!![i_215_] = true
+            if (!ColourKeyTextureNode.aBooleanArray9351!![i_215_]) {
+                ColourKeyTextureNode.aBooleanArray9351!![i_215_] = true
                 i = i_215_
                 break
             }
@@ -367,7 +367,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
         fun method3664(i: Int, i_88_: Int): ByteArray {
             anInt4564++
             if (i_88_ <= 21) anInt4583 = 60
-            var class348_sub42_sub3 = (Class348_Sub1_Sub2.aCacheLruCache_8815!!.method2302(i.toLong(), (-120).toByte()) as Class348_Sub42_Sub3?)
+            var class348_sub42_sub3 = (HashTileShape.aCacheLruCache_8815!!.method2302(i.toLong(), (-120).toByte()) as LoadingScreenImageNode?)
             if (class348_sub42_sub3 == null) {
                 val `is` = ByteArray(512)
                 val random = Random(i.toLong())
@@ -380,8 +380,8 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
                     `is`[511 + -i_90_] = i_93_
                     `is`[i_91_] = `is`[511 + -i_90_]
                 }
-                class348_sub42_sub3 = Class348_Sub42_Sub3(`is`)
-                Class348_Sub1_Sub2.aCacheLruCache_8815!!.method2305(i.toLong(), class348_sub42_sub3, -1)
+                class348_sub42_sub3 = LoadingScreenImageNode(`is`)
+                HashTileShape.aCacheLruCache_8815!!.method2305(i.toLong(), class348_sub42_sub3, -1)
             }
             return class348_sub42_sub3.aByteArray9499!!
         }
@@ -405,7 +405,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
                 if (i_171_ == 3) return Class96.method870(i, i_170_ xor 0x4a31, var_renderConfig!!, class45!!, canvas!!)
                 throw IllegalArgumentException("UM")
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))
             }
         }
 
