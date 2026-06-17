@@ -21,11 +21,11 @@ class IntRange internal constructor(private var anInt1747: Int, var anInt1749: I
         @JvmField
         var anInt1750: Int = 0
 
-        fun method1059(i: Byte, i_1_: Int): Class179 {
+        fun method1059(i: Byte, i_1_: Int): GrowableStringList {
             anInt1748++
             if (i.toInt() != 95) method1059(120.toByte(), -75)
-            val class179 = Class179(i_1_, false)
-            return class179
+            val growableStringList = GrowableStringList(i_1_, false)
+            return growableStringList
         }
     }
 }

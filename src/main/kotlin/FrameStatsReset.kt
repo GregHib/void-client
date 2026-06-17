@@ -858,7 +858,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ProjectionCameraTransform.anInt5753 = 0
             VarpStore.anInt5066 = 0
             TerrainTile.anInt4589 = 0
-            Class179.anInt2358 = 0
+            GrowableStringList.anInt2358 = 0
             Class348_Sub23_Sub4.anInt9061 = 0
             OpenGlRenderer.anInt7668 = 0
             Class206.anInt4865 = 0
@@ -1232,7 +1232,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8938 = 0
             OpenGlRenderer.anInt7695 = 0
             Class369_Sub2.anInt8588 = 0
-            Class179.anInt2366 = 0
+            GrowableStringList.anInt2366 = 0
             Class45.anInt626 = 0
             OpenGlRenderer.anInt7657 = 0
             Class348_Sub45_Sub2.anInt9740 = 0
@@ -1272,11 +1272,11 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class312.anInt3928 = 0
             NativeRenderer.anInt8003 = 0
             Class50_Sub4.anInt5257 = 0
-            Class179.anInt2363 = 0
+            GrowableStringList.anInt2363 = 0
             Class377.anInt9831 = 0
             GlRectangleTexture.anInt8648 = 0
             Class318_Sub1_Sub3_Sub4.anInt10337 = 0
-            Class179.anInt2369 = 0
+            GrowableStringList.anInt2369 = 0
             Class286_Sub8.anInt6297 = 0
             MinimapStateReset.anInt1870 = 0
             Player.anInt10527 = 0
@@ -1702,7 +1702,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub9.anInt6682 = 0
             OpenGlRenderer.anInt7564 = 0
             Class248.anInt3198 = 0
-            Class179.anInt2368 = 0
+            GrowableStringList.anInt2368 = 0
             Class237_Sub1.anInt5820 = 0
             GameAppletFrame.anInt28 = 0
             OpenGlRenderer.anInt7605 = 0
@@ -2081,7 +2081,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GameAppletFrame.anInt15 = 0
             Class46.anInt829 = 0
             Class348_Sub42_Sub14.anInt9638 = 0
-            Class179.anInt2357 = 0
+            GrowableStringList.anInt2357 = 0
             OpenGlTerrainTile.anInt8239 = 0
             Class348_Sub16_Sub3.anInt8930 = 0
             Class377.anInt9859 = 0
@@ -2183,7 +2183,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MatrixCameraTransform.anInt5661 = 0
             OpenGlRenderer.anInt7618 = 0
             Class239_Sub11.anInt5956 = 0
-            Class179.anInt2362 = 0
+            GrowableStringList.anInt2362 = 0
             NativeRenderer.anInt8028 = 0
             NativeRenderer.anInt7953 = 0
             Class303.anInt3845 = 0
@@ -2343,7 +2343,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1.anInt6390 = 0
             InputStream_Sub1.anInt71 = 0
             Class348_Sub16_Sub1.anInt8859 = 0
-            Class179.anInt2355 = 0
+            GrowableStringList.anInt2355 = 0
             Class367_Sub1.anInt7277 = 0
             Class348_Sub41.anInt7049 = 0
             Class308.anInt3879 = 0
@@ -2743,7 +2743,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class368.anInt4491 = 0
             SizeBoundedSoftCache.anInt2319 = 0
             NativeRenderer.anInt7978 = 0
-            Class179.anInt2356 = 0
+            GrowableStringList.anInt2356 = 0
             Class348_Sub49_Sub1.anInt9742 = 0
             Class239_Sub23.anInt6081 = 0
             Player.anInt10546 = 0
@@ -3423,7 +3423,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SizeBoundedSoftCache.anInt2314 = 0
             GlArrayBufferObject.anInt4714 = 0
             Class369.anInt4967 = 0
-            Class179.anInt2359 = 0
+            GrowableStringList.anInt2359 = 0
             Class351.anInt4322 = 0
             FontDefinition.anInt1981 = 0
             Class348_Sub42_Sub18.anInt9683 = 0

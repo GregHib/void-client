@@ -1002,7 +1002,7 @@ object Class66 {
                 if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 if (Class52.aFrame4904 == null) {
                     val string = (if (InputSettingsState.aString1761 != null) InputSettingsState.aString1761 else method2162(false))
-                    Class179.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
+                    GrowableStringList.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
                     return
                 } else {
                     method2405(97)
@@ -1028,7 +1028,7 @@ object Class66 {
                 val string = aStringArray1152!![--anInt1170]
                 val bool_118_ = anIntArray1149!![--anInt1173] == 1
                 val string_119_ = method2162(false) + string
-                Class179.method1360(string_119_, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, bool_118_, 104)
+                GrowableStringList.method1360(string_119_, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, bool_118_, 104)
                 return
             }
             if (i == 5422) {
@@ -3229,7 +3229,7 @@ object Class66 {
             }
             if (i == 1302) {
                 val i_284_ = anIntArray1149!![--anInt1173]
-                if (i_284_ == InputStream_Sub1.anInt78 || i_284_ == Class179.anInt2361 || i_284_ == Class312.anInt3930) {
+                if (i_284_ == InputStream_Sub1.anInt78 || i_284_ == GrowableStringList.anInt2361 || i_284_ == Class312.anInt3930) {
                     class46!!.anInt797 = i_284_
                     return
                 }

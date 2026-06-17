@@ -35,7 +35,7 @@ class Class43 {
         }
 
         @JvmStatic
-        fun method381(i: Byte): Class179 {
+        fun method381(i: Byte): GrowableStringList {
             anInt616++
             if (i.toInt() != 68) Companion.method381((-42).toByte())
             return IntRange.method1059(95.toByte(), 1)

@@ -1308,7 +1308,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val `is` = ByteArray(Class348_Sub40_Sub25.anInt9341)
                 Class299.aClass348_Sub49_Sub2_3813!!.method3409(Class348_Sub40_Sub25.anInt9341, `is`, 0, -32769)
                 val string = method3546(`is`, 0, Class348_Sub40_Sub25.anInt9341, 0)
-                Class179.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, true, 99)
+                GrowableStringList.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, true, 99)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1619,7 +1619,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub3.aIntRange_6584 == Class314_Sub1.aIntRange_6340) {
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 += 28
-                if (Class299.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) Class179.method1365((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), Class299.aClass348_Sub49_Sub2_3813!!)
+                if (Class299.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) GrowableStringList.method1365((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), Class299.aClass348_Sub49_Sub2_3813!!)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

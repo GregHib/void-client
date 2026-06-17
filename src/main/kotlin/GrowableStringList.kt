@@ -4,7 +4,7 @@ import NativeRenderer.Companion.method3873
 /* Class179 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class179 internal constructor(private val anInt2365: Int, bool: Boolean) {
+class GrowableStringList internal constructor(private val anInt2365: Int, bool: Boolean) {
     private var aBoolean2360 = false
     private var anInt2364 = -1
     private var aStringArray2367 = arrayOfNulls<String>(0)
