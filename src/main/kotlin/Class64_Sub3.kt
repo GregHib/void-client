@@ -3003,11 +3003,11 @@ class Class64_Sub3 : Class64 {
                     var i_702_ = 0
                     var i_703_ = 0
                     var i_704_ = 0
-                    if (modelDefinition.aClass162Array1832 != null) {
+                    if (modelDefinition.aRectangleBoundsArray1832 != null) {
                         var bool_705_ = false
                         var i_706_ = 0
-                        while ((modelDefinition.aClass162Array1832!!.size > i_706_)) {
-                            val class162 = (modelDefinition.aClass162Array1832!![i_706_])!!
+                        while ((modelDefinition.aRectangleBoundsArray1832!!.size > i_706_)) {
+                            val class162 = (modelDefinition.aRectangleBoundsArray1832!![i_706_])!!
                             if (i_700_ == class162.anInt2155) {
                                 val class189 = Class73.method742(104, (class162.anInt2153))
                                 if (class189.aBoolean2531) bool_705_ = true
@@ -3063,13 +3063,13 @@ class Class64_Sub3 : Class64 {
                 aClass342Array5541 = modelDefinition.aClass342Array1866
                 val class8s: Array<Class8?> = arrayOfNulls<Class8>(anInt5557)
                 aModelFacePriorityNodeArray5640 = modelDefinition.aModelFacePriorityNodeArray1846
-                if (modelDefinition.aClass162Array1832 != null) {
-                    anInt5536 = modelDefinition.aClass162Array1832!!.size
+                if (modelDefinition.aRectangleBoundsArray1832 != null) {
+                    anInt5536 = modelDefinition.aRectangleBoundsArray1832!!.size
                     aClass48Array5596 = arrayOfNulls<Class48>(anInt5536)
                     aMapSceneTileDefinitionArray5621 = arrayOfNulls<MapSceneTileDefinition>(anInt5536)
                     var i_711_ = 0
                     while (anInt5536 > i_711_) {
-                        val class162 = modelDefinition.aClass162Array1832!![i_711_]!!
+                        val class162 = modelDefinition.aRectangleBoundsArray1832!![i_711_]!!
                         val class189 = Class73.method742(104, (class162.anInt2153))
                         var i_712_ = -1
                         for (i_713_ in 0..<anInt5632) {
@@ -3427,7 +3427,7 @@ class Class64_Sub3 : Class64 {
                 aFloatArray5552 = Class231.method1638(anInt5529, aFloatArray5552!!, -1)
                 aFloatArray5571 = Class231.method1638(anInt5529, aFloatArray5571!!, -1)
                 if (modelDefinition.anIntArray1868 != null && Class312.method2332(anInt5556, 125.toByte(), i)) anIntArrayArray5539 = modelDefinition.method1100(false, -42)
-                if (modelDefinition.aClass162Array1832 != null && Class229.method1633(false, i, anInt5556)) anIntArrayArray5627 = modelDefinition.method1093((-69).toByte())
+                if (modelDefinition.aRectangleBoundsArray1832 != null && Class229.method1633(false, i, anInt5556)) anIntArrayArray5627 = modelDefinition.method1093((-69).toByte())
                 if (modelDefinition.anIntArray1824 == null || !method371(i, 256, anInt5556)) break
                 var i_817_ = 0
                 val is_818_ = IntArray(256)

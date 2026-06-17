@@ -1647,7 +1647,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class19.aIntRange_315 == Class348_Sub3.aIntRange_6584) {
-                method128(Class162.aClass74_2157, 8.toByte())
+                method128(RectangleBounds.aClass74_2157, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

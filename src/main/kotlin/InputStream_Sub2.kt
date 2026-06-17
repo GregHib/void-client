@@ -250,7 +250,7 @@ class InputStream_Sub2 : InputStream() {
                                 if (bool) Class203.method1479(i_99_, (-120).toByte(), i_101_, (Class348_Sub40_Sub12.anInt9200))
                             }
                         }
-                    } else if (class74 == Class162.aClass74_2157) {
+                    } else if (class74 == RectangleBounds.aClass74_2157) {
                         val i_105_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val bool = (0x80 and i_105_) != 0
                         var i_106_ = Class278.anInt3581 - -(i_105_ shr 3 and 0x7)

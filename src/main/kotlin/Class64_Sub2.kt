@@ -1890,10 +1890,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     var i_341_ = 0
                     var i_342_ = 0
                     var i_343_ = 0
-                    if (modelDefinition.aClass162Array1832 != null) {
+                    if (modelDefinition.aRectangleBoundsArray1832 != null) {
                         var bool_344_ = false
-                        for (i_345_ in (modelDefinition.aClass162Array1832)!!.indices) {
-                            val class162 = (modelDefinition.aClass162Array1832!![i_345_])!!
+                        for (i_345_ in (modelDefinition.aRectangleBoundsArray1832)!!.indices) {
+                            val class162 = (modelDefinition.aRectangleBoundsArray1832!![i_345_])!!
                             if (class162.anInt2155 == i_339_) {
                                 val class189 = Class73.method742(104, (class162.anInt2153))
                                 if (class189.aBoolean2531) bool_344_ = true
@@ -1945,13 +1945,13 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 aClass342Array5474 = modelDefinition.aClass342Array1866
                 val class371s: Array<Class371?> = arrayOfNulls<Class371>(anInt5433)
                 aModelFacePriorityNodeArray5457 = modelDefinition.aModelFacePriorityNodeArray1846
-                if (modelDefinition.aClass162Array1832 != null) {
-                    anInt5406 = modelDefinition.aClass162Array1832!!.size
+                if (modelDefinition.aRectangleBoundsArray1832 != null) {
+                    anInt5406 = modelDefinition.aRectangleBoundsArray1832!!.size
                     aClass353Array5524 = arrayOfNulls<Class353>(anInt5406)
                     aClass334Array5442 = arrayOfNulls<Class334>(anInt5406)
                     var i_350_ = 0
                     while (anInt5406 > i_350_) {
-                        val class162 = modelDefinition.aClass162Array1832!![i_350_]!!
+                        val class162 = modelDefinition.aRectangleBoundsArray1832!![i_350_]!!
                         val class189 = Class73.method742(104, (class162.anInt2153))
                         var i_351_ = -1
                         for (i_352_ in 0..<anInt5478) {
@@ -2335,7 +2335,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 aFloatArray5476 = method3258(0, anInt5475, aFloatArray5476)
                 aFloatArray5506 = method3258(0, anInt5475, aFloatArray5506)
                 if (modelDefinition.anIntArray1868 != null && KeyboardLayoutConfig.method1257(-58, anInt5472, i)) anIntArrayArray5413 = modelDefinition.method1100(false, -20)
-                if (modelDefinition.aClass162Array1832 != null && Class77.method780(anInt5472, 0, i)) anIntArrayArray5412 = modelDefinition.method1093((-120).toByte())
+                if (modelDefinition.aRectangleBoundsArray1832 != null && Class77.method780(anInt5472, 0, i)) anIntArrayArray5412 = modelDefinition.method1093((-120).toByte())
                 if (modelDefinition.anIntArray1824 == null || !GlElementArrayBuffer.method1158(anInt5472, -1, i)) break
                 var i_459_ = 0
                 val is_460_ = IntArray(256)

@@ -64,8 +64,8 @@ import HeapInfoRecord.Companion.method1249
 import Class16.method260
 import KeyboardLayoutConfig.Companion.method1254
 import ServerConnectionInfo.Companion.method1261
-import Class162.Companion.method1265
-import Class162.Companion.method1267
+import RectangleBounds.Companion.method1265
+import RectangleBounds.Companion.method1267
 import Class163.Companion.method1269
 import Class163.Companion.method1276
 import Class166.Companion.method1284

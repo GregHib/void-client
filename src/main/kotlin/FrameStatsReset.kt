@@ -2784,7 +2784,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub4.anInt10363 = 0
             Class289.anInt3698 = 0
             Class59_Sub1_Sub2.anInt8661 = 0
-            Class162.anInt2152 = 0
+            RectangleBounds.anInt2152 = 0
             Class294.anInt5033 = 0
             WidgetNodeLink.anInt2041 = 0
             Class348_Sub23_Sub1.anInt8997 = 0
@@ -2895,7 +2895,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class299_Sub2_Sub1.anInt8710 = 0
             Class62.anInt1113 = 0
             NativeTerrainTile.anInt8298 = 0
-            Class162.anInt2154 = 0
+            RectangleBounds.anInt2154 = 0
             Class348.anInt4298 = 0
             Class322.anInt4019 = 0
             OpenGlRenderer.anInt7543 = 0

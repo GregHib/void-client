@@ -15,7 +15,7 @@ class ModelDefinition {
     var aShortArray1829: ShortArray = shortArrayOf()
     @JvmField
     var anInt1830: Int = 12
-    var aClass162Array1832: Array<Class162?>? = null
+    var aRectangleBoundsArray1832: Array<RectangleBounds?>? = null
     var aByteArray1833: ByteArray = byteArrayOf()
     var aByteArray1834: ByteArray? = null
     var aShortArray1835: ShortArray? = null
@@ -66,8 +66,8 @@ class ModelDefinition {
         val `is` = IntArray(256)
         var i_3_ = 0
         var i_4_ = 0
-        while (this.aClass162Array1832!!.size > i_4_) {
-            val i_5_ = (this.aClass162Array1832!![i_4_]!!.anInt2156)
+        while (this.aRectangleBoundsArray1832!!.size > i_4_) {
+            val i_5_ = (this.aRectangleBoundsArray1832!![i_4_]!!.anInt2156)
             if (i_5_ >= 0) {
                 `is`[i_5_]++
                 if (i_3_ < i_5_) i_3_ = i_5_
@@ -80,8 +80,8 @@ class ModelDefinition {
             `is`[i_7_] = 0
         }
         if (i > -68) return null
-        for (i_8_ in this.aClass162Array1832!!.indices) {
-            val i_9_ = (this.aClass162Array1832!![i_8_]!!.anInt2156)
+        for (i_8_ in this.aRectangleBoundsArray1832!!.indices) {
+            val i_9_ = (this.aRectangleBoundsArray1832!![i_8_]!!.anInt2156)
             if (i_9_ >= 0) is_6_[i_9_]!![`is`[i_9_]++] = i_8_
         }
         return is_6_
@@ -768,14 +768,14 @@ class ModelDefinition {
         if (bool_126_) {
             val i_193_ = class348_sub49.readUnsignedByte(255)
             if (i_193_ > 0) {
-                this.aClass162Array1832 = arrayOfNulls<Class162>(i_193_)
+                this.aRectangleBoundsArray1832 = arrayOfNulls<RectangleBounds>(i_193_)
                 var i_194_ = 0
                 while (i_193_ > i_194_) {
                     val i_195_ = class348_sub49.readUnsignedShort(842397944)
                     val i_196_ = class348_sub49.readUnsignedShort(842397944)
                     val i_197_ = class348_sub49.readUnsignedByte(255)
                     val i_198_ = class348_sub49.readByte(-127)
-                    this.aClass162Array1832!![i_194_] = Class162(i_195_, i_196_, i_197_, i_198_.toInt())
+                    this.aRectangleBoundsArray1832!![i_194_] = RectangleBounds(i_195_, i_196_, i_197_, i_198_.toInt())
                     i_194_++
                 }
             }
@@ -893,7 +893,7 @@ class ModelDefinition {
                 this.anInt1836 += class124_225_.anInt1836
                 this.anInt1818 += class124_225_.anInt1818
                 bool = bool or (class124_225_.aByteArray1843 != null)
-                if (class124_225_.aClass162Array1832 != null) i_218_ += (class124_225_.aClass162Array1832!!).size
+                if (class124_225_.aRectangleBoundsArray1832 != null) i_218_ += (class124_225_.aRectangleBoundsArray1832!!).size
                 if (class124_225_.aModelFacePriorityNodeArray1846 != null) i_216_ += (class124_225_.aModelFacePriorityNodeArray1846!!).size
                 if (class124_225_.aClass342Array1866 != null) i_217_ += (class124_225_.aClass342Array1866!!).size
                 bool_222_ = (bool_222_ or (class124_225_.aShortArray1822 != null))
@@ -928,7 +928,7 @@ class ModelDefinition {
         if (bool_223_) this.anIntArray1824 = IntArray(this.anInt1817)
         if (bool_219_) this.aByteArray1839 = ByteArray(this.anInt1817)
         if (bool) this.aByteArray1843 = ByteArray(this.anInt1817)
-        if (i_218_ > 0) this.aClass162Array1832 = arrayOfNulls<Class162>(i_218_)
+        if (i_218_ > 0) this.aRectangleBoundsArray1832 = arrayOfNulls<RectangleBounds>(i_218_)
         if (i_217_ > 0) this.aClass342Array1866 = arrayOfNulls<Class342>(i_217_)
         this.anIntArray1868 = IntArray(this.anInt1836)
         if (bool_221_) this.aByteArray1820 = ByteArray(this.anInt1817)
@@ -951,11 +951,11 @@ class ModelDefinition {
             val i_227_ = (1 shl i_226_).toShort()
             val class124_228_ = modelDefinitions[i_226_]
             if (class124_228_ != null) {
-                if (class124_228_.aClass162Array1832 != null) {
+                if (class124_228_.aRectangleBoundsArray1832 != null) {
                     var i_229_ = 0
-                    while ((class124_228_.aClass162Array1832!!.size > i_229_)) {
-                        val class162 = (class124_228_.aClass162Array1832!![i_229_])!!
-                        this.aClass162Array1832!![i_218_++] = class162.method1266(5, ((class162.anInt2155) - -(this.anInt1817)))
+                    while ((class124_228_.aRectangleBoundsArray1832!!.size > i_229_)) {
+                        val class162 = (class124_228_.aRectangleBoundsArray1832!![i_229_])!!
+                        this.aRectangleBoundsArray1832!![i_218_++] = class162.method1266(5, ((class162.anInt2155) - -(this.anInt1817)))
                         i_229_++
                     }
                 }

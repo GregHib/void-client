@@ -3369,10 +3369,10 @@ class Class64_Sub1 : Class64 {
             var i_792_ = 0
             var i_793_ = 0
             var i_794_ = 0
-            if (modelDefinition.aClass162Array1832 != null) {
+            if (modelDefinition.aRectangleBoundsArray1832 != null) {
                 var bool_795_ = false
-                for (i_796_ in modelDefinition.aClass162Array1832!!.indices) {
-                    val class162 = modelDefinition.aClass162Array1832!![i_796_]!!
+                for (i_796_ in modelDefinition.aRectangleBoundsArray1832!!.indices) {
+                    val class162 = modelDefinition.aRectangleBoundsArray1832!![i_796_]!!
                     if (i_790_ == class162.anInt2155) {
                         val class189 = Class73.method742(104, (class162.anInt2153))
                         if (class189.aBoolean2531) bool_795_ = true
@@ -3406,12 +3406,12 @@ class Class64_Sub1 : Class64 {
             aBoolean5382 = aBoolean5382 or bool_799_
         }
         method2832(`is`, ls, 0)
-        if (modelDefinition.aClass162Array1832 != null) {
-            anInt5389 = modelDefinition.aClass162Array1832!!.size
+        if (modelDefinition.aRectangleBoundsArray1832 != null) {
+            anInt5389 = modelDefinition.aRectangleBoundsArray1832!!.size
             aClass6Array5361 = arrayOfNulls<Class6>(anInt5389)
             aClass350Array5363 = arrayOfNulls<Class350>(anInt5389)
-            for (i_800_ in modelDefinition.aClass162Array1832!!.indices) {
-                val class162 = modelDefinition.aClass162Array1832!![i_800_]!!
+            for (i_800_ in modelDefinition.aRectangleBoundsArray1832!!.indices) {
+                val class162 = modelDefinition.aRectangleBoundsArray1832!![i_800_]!!
                 val class189 = Class73.method742(104, class162.anInt2153)
                 var i_801_ = ((Crc64Hashable.anIntArray4983!![(modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff]) and 0xffffff)
                 i_801_ = (i_801_ or (255 - (if (modelDefinition.aByteArray1834 != null) (modelDefinition.aByteArray1834!![class162.anInt2155]).toInt() and 0xff else 0) shl 24))
@@ -3587,7 +3587,7 @@ class Class64_Sub1 : Class64 {
         }
         if (modelDefinition.anIntArray1868 != null && (anInt5316 and 0x20) != 0) anIntArrayArray5334 = modelDefinition.method1100(true, -122)
         if (modelDefinition.anIntArray1824 != null && (anInt5316 and 0x180) != 0) anIntArrayArray5330 = modelDefinition.method1094(30.toByte())
-        if (modelDefinition.aClass162Array1832 != null && (anInt5316 and 0x400) != 0) anIntArrayArray5379 = modelDefinition.method1093((-75).toByte())
+        if (modelDefinition.aRectangleBoundsArray1832 != null && (anInt5316 and 0x400) != 0) anIntArrayArray5379 = modelDefinition.method1093((-75).toByte())
         if (modelDefinition.aShortArray1822 != null) {
             aShortArray5388 = ShortArray(anInt5351)
             var bool_869_ = false
