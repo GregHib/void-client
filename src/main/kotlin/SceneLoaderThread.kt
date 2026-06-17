@@ -5,7 +5,7 @@ import kotlin.concurrent.Volatile
 /* Class293 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class293 internal constructor(private val anInt3749: Int, private val aRenderer3746: Renderer) : Runnable {
+class SceneLoaderThread internal constructor(private val anInt3749: Int, private val aRenderer3746: Renderer) : Runnable {
     private var aLong3742: Long = 0
     private var aClass315_3743: Class315? = null
 

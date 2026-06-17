@@ -78,7 +78,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
         @JvmField
         var anIntArray9431: IntArray? = IntArray(1)
         @JvmField
-        var aClass293Array9432: Array<Class293?>? = null
+        var aSceneLoaderThreadArray9432: Array<SceneLoaderThread?>? = null
         @JvmField
         var anInt9433: Int = 0
         @JvmField
@@ -155,8 +155,8 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
         fun method3142(i: Int) {
             anIntArray9431 = null
             anIntArray9436 = null
-            if (i != 0) aClass293Array9432 = null
-            aClass293Array9432 = null
+            if (i != 0) aSceneLoaderThreadArray9432 = null
+            aSceneLoaderThreadArray9432 = null
         }
     }
 }

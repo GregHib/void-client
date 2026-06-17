@@ -162,7 +162,7 @@ class GlTexture3D : GlTexture {
                 Class9.aRenderer171!!.K(Class348_Sub40_Sub10.anIntArray9183)
                 val i_43_ = ((Class348_Sub40_Sub10.anIntArray9183!![2] - Class348_Sub40_Sub10.anIntArray9183!![0]) / Class75_Sub1.anInt5652)
                 for (i_44_ in 0..<Class75_Sub1.anInt5652 - 1) WidgetDefinition.anIntArray256!![i_44_] = i_43_ * (i_44_ + 1) + Class345.anIntArray4271!![i_44_]
-                for (i_45_ in Class348_Sub40_Sub34.aClass293Array9432!!.indices) Class348_Sub40_Sub34.aClass293Array9432!![i_45_]!!.method2209()
+                for (i_45_ in Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.indices) Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i_45_]!!.method2209()
             }
             if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
                 if (Class348_Sub40_Sub5.aBoolean9121) method2131(0)
@@ -177,7 +177,7 @@ class GlTexture3D : GlTexture {
             if (Class348_Sub40_Sub5.aBoolean9121) {
                 for (i_46_ in 0..<MapAreaDefinition.anInt2524) Class5_Sub2.aBooleanArrayArrayArray8361!![i_46_] = OverlayColorTable.aBooleanArrayArrayArray1751!![i_46_]
                 method2131(0)
-                for (i_47_ in Class348_Sub40_Sub34.aClass293Array9432!!.indices) Class348_Sub40_Sub34.aClass293Array9432!![i_47_]!!.method2209()
+                for (i_47_ in Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.indices) Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i_47_]!!.method2209()
             }
             if (Class348_Sub40_Sub5.aBoolean9121) {
                 Class304.method2290()

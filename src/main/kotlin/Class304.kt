@@ -40,13 +40,13 @@ class Class304 internal constructor(var anInt3850: Int) {
         fun method2290() {
             while (true) {
                 var bool = true
-                for (i in Class348_Sub40_Sub34.aClass293Array9432!!.indices) {
-                    if (!Class348_Sub40_Sub34.aClass293Array9432!![i]!!.method2210()) {
-                        synchronized(Class348_Sub40_Sub34.aClass293Array9432!![i]!!) {
-                            (Class348_Sub40_Sub34.aClass293Array9432!![i] as Object).notify()
+                for (i in Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.indices) {
+                    if (!Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i]!!.method2210()) {
+                        synchronized(Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i]!!) {
+                            (Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i] as Object).notify()
                         }
                         bool = false
-                    } else HitsplatDefinition.aLongArray2013!![i] = Class348_Sub40_Sub34.aClass293Array9432!![i]!!.method2204()
+                    } else HitsplatDefinition.aLongArray2013!![i] = Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i]!!.method2204()
                 }
                 if (bool) break
                 try {
@@ -55,14 +55,14 @@ class Class304 internal constructor(var anInt3850: Int) {
                     /* empty */
                 }
             }
-            Class348_Sub40_Sub34.aClass293Array9432!![Class348_Sub40_Sub34.aClass293Array9432!!.size - 1]!!.method2208()
+            Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.size - 1]!!.method2208()
             method2131(1)
             while (true) {
                 var bool = true
-                for (i in 0..<Class348_Sub40_Sub34.aClass293Array9432!!.size - 1) {
-                    if (!Class348_Sub40_Sub34.aClass293Array9432!![i]!!.method2210()) {
-                        synchronized(Class348_Sub40_Sub34.aClass293Array9432!![i]!!) {
-                            (Class348_Sub40_Sub34.aClass293Array9432!![i] as Object).notify()
+                for (i in 0..<Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.size - 1) {
+                    if (!Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i]!!.method2210()) {
+                        synchronized(Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i]!!) {
+                            (Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i] as Object).notify()
                         }
                         bool = false
                     }
@@ -74,11 +74,11 @@ class Class304 internal constructor(var anInt3850: Int) {
                     /* empty */
                 }
             }
-            for (i in 1..<Class348_Sub40_Sub34.aClass293Array9432!!.size - 2) Class348_Sub40_Sub34.aClass293Array9432!![i]!!.method2208()
+            for (i in 1..<Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.size - 2) Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i]!!.method2208()
             method2131(2)
-            while (!Class348_Sub40_Sub34.aClass293Array9432!![0]!!.method2210()) {
-                synchronized(Class348_Sub40_Sub34.aClass293Array9432!![0]!!) {
-                    (Class348_Sub40_Sub34.aClass293Array9432!![0] as Object).notify()
+            while (!Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![0]!!.method2210()) {
+                synchronized(Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![0]!!) {
+                    (Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![0] as Object).notify()
                 }
                 try {
                     method2161(112.toByte(), 1L)
@@ -86,7 +86,7 @@ class Class304 internal constructor(var anInt3850: Int) {
                     /* empty */
                 }
             }
-            Class348_Sub40_Sub34.aClass293Array9432!![0]!!.method2208()
+            Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![0]!!.method2208()
         }
 
         fun method2291(i: Byte, i_4_: Int, i_5_: Int) {

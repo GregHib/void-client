@@ -148,13 +148,13 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             if (Class348_Sub40_Sub5.aBoolean9121) {
                 OverlayColorTable.aBooleanArrayArrayArray1751 = (Array<Array<BooleanArray?>?>(i_1_) { Array<BooleanArray?>((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) { BooleanArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) } })
                 Class5_Sub2.aBooleanArrayArrayArray8361 = arrayOfNulls<Array<BooleanArray?>>(i_1_)
-                if (Class348_Sub40_Sub34.aClass293Array9432 != null) method1978()
-                Class348_Sub40_Sub34.aClass293Array9432 = arrayOfNulls<Class293>(Npc.anInt10503)
-                Class9.aRenderer171!!.method3631((Class348_Sub40_Sub34.aClass293Array9432)!!.size + 1)
+                if (Class348_Sub40_Sub34.aSceneLoaderThreadArray9432 != null) method1978()
+                Class348_Sub40_Sub34.aSceneLoaderThreadArray9432 = arrayOfNulls<SceneLoaderThread>(Npc.anInt10503)
+                Class9.aRenderer171!!.method3631((Class348_Sub40_Sub34.aSceneLoaderThreadArray9432)!!.size + 1)
                 Class9.aRenderer171!!.method3659(0)
-                for (i_6_ in Class348_Sub40_Sub34.aClass293Array9432!!.indices) {
-                    Class348_Sub40_Sub34.aClass293Array9432!![i_6_] = Class293(i_6_ + 1, Class9.aRenderer171!!)
-                    Thread(Class348_Sub40_Sub34.aClass293Array9432!![i_6_], "wr" + i_6_).start()
+                for (i_6_ in Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.indices) {
+                    Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i_6_] = SceneLoaderThread(i_6_ + 1, Class9.aRenderer171!!)
+                    Thread(Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i_6_], "wr" + i_6_).start()
                 }
                 val i_7_: Int
                 if (Npc.anInt10503 == 2) {

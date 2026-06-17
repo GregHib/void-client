@@ -7,7 +7,7 @@ import kotlin.concurrent.Volatile
 */
 class Class315 internal constructor(var aString3953: String?) {
     private val aDoublyLinkedNodeList_3946 = DoublyLinkedNodeList()
-    private var aClass293_3956: Class293? = null
+    private var aSceneLoaderThread_3956: SceneLoaderThread? = null
 
     @Volatile
     private var anInt3957 = 0
@@ -19,15 +19,15 @@ class Class315 internal constructor(var aString3953: String?) {
             aDoublyLinkedNodeList_3946.method1869(-90, class318_sub1)
             anInt3957++
         }
-        if (aClass293_3956 != null) {
-            synchronized(aClass293_3956!!) {
-                (aClass293_3956 as Object).notify()
+        if (aSceneLoaderThread_3956 != null) {
+            synchronized(aSceneLoaderThread_3956!!) {
+                (aSceneLoaderThread_3956 as Object).notify()
             }
         }
     }
 
-    fun method2356(class293: Class293?, i: Byte) {
-        aClass293_3956 = class293
+    fun method2356(sceneLoaderThread: SceneLoaderThread?, i: Byte) {
+        aSceneLoaderThread_3956 = sceneLoaderThread
         if (i.toInt() != -108) method2358(-10, -55, 5)
         anInt3949++
     }
@@ -39,9 +39,9 @@ class Class315 internal constructor(var aString3953: String?) {
             anInt3957++
         }
         anInt3947++
-        if (aClass293_3956 != null) {
-            synchronized(aClass293_3956!!) {
-                (aClass293_3956 as Object).notify()
+        if (aSceneLoaderThread_3956 != null) {
+            synchronized(aSceneLoaderThread_3956!!) {
+                (aSceneLoaderThread_3956 as Object).notify()
             }
         }
     }
@@ -60,9 +60,9 @@ class Class315 internal constructor(var aString3953: String?) {
             anInt3957++
         }
         if (i != -15481) this.aString3953 = null
-        if (aClass293_3956 != null) {
-            synchronized(aClass293_3956!!) {
-                (aClass293_3956 as Object).notify()
+        if (aSceneLoaderThread_3956 != null) {
+            synchronized(aSceneLoaderThread_3956!!) {
+                (aSceneLoaderThread_3956 as Object).notify()
             }
         }
     }
