@@ -281,7 +281,7 @@ import CameraOrModelTransform.Companion.method2653
 import CameraOrModelTransform.Companion.method2654
 import HslPaletteState.method2657
 import GlShaderProgramHandle.Companion.method2658
-import Class338.Companion.method2662
+import MapTileShape.Companion.method2662
 import Class339.Companion.method2664
 import Class339.Companion.method2666
 import Class34.Companion.method347

@@ -277,20 +277,20 @@ class LoadingBarRenderer : Interface16 {
         @JvmField
         var aPlayerArray5058: Array<Player?>? = arrayOfNulls<Player>(2048)
         @JvmField
-        var aClass338Array5060: Array<Class338?>? = null
+        var aMapTileShapeArray5060: Array<MapTileShape?>? = null
         var anInt5061: Int = 0
 
         @JvmStatic
         fun method2214(i: Int) {
             aClass351_5057 = null
             if (i != 0) aPlayerArray5058 = null
-            aClass338Array5060 = null
+            aMapTileShapeArray5060 = null
             aPlayerArray5058 = null
         }
 
         fun method2217(i: Int, i_3_: Int, i_4_: Int): Boolean {
             anInt5027++
-            if (i_4_ != 0) aClass338Array5060 = null
+            if (i_4_ != 0) aMapTileShapeArray5060 = null
             return (i_3_ and 0x21) != 0
         }
     }

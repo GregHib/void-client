@@ -66,7 +66,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
             i_2_ = i_2_ shl 3
             if (Class348_Sub40_Sub21.anInt9282 == 2) {
                 Class5.anInt4638 = i_1_
-                Class338.anInt4186 = i_2_
+                MapTileShape.anInt4186 = i_2_
                 Class348_Sub42_Sub19.anInt9701 = i
             }
             ResourceProvider.aFloat3938 = i_1_.toFloat()

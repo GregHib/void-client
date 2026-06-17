@@ -189,7 +189,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         var anInt10328: Int = 0
         var anInt10329: Int = 0
         @JvmField
-        var aClass338Array10330: Array<Class338?>? = null
+        var aMapTileShapeArray10330: Array<MapTileShape?>? = null
         var anInt10333: Int = 0
         @JvmField
         var aClass46_10336: Class46? = null
@@ -339,7 +339,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         @JvmStatic
         fun method2469(bool: Boolean) {
             aClass46_10336 = null
-            if (bool == true) aClass338Array10330 = null
+            if (bool == true) aMapTileShapeArray10330 = null
         }
     }
 }

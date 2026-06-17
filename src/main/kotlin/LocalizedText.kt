@@ -224,23 +224,23 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
         }
 
         fun method2062(i: Byte) {
-            if (HintArrowOrMessage.aClass338Array2034 != null) {
-                for (i_3_ in 0..<DetailLevelOptionState.anInt6115) HintArrowOrMessage.aClass338Array2034!![i_3_] = null
-                HintArrowOrMessage.aClass338Array2034 = null
+            if (HintArrowOrMessage.aMapTileShapeArray2034 != null) {
+                for (i_3_ in 0..<DetailLevelOptionState.anInt6115) HintArrowOrMessage.aMapTileShapeArray2034!![i_3_] = null
+                HintArrowOrMessage.aMapTileShapeArray2034 = null
             }
             anInt3480++
-            if (MapElementDecor.aClass338Array10330 != null) {
-                for (i_4_ in 0..<Class69.anInt1200) MapElementDecor.aClass338Array10330!![i_4_] = null
-                MapElementDecor.aClass338Array10330 = null
+            if (MapElementDecor.aMapTileShapeArray10330 != null) {
+                for (i_4_ in 0..<Class69.anInt1200) MapElementDecor.aMapTileShapeArray10330!![i_4_] = null
+                MapElementDecor.aMapTileShapeArray10330 = null
             }
-            if (LoadingBarRenderer.aClass338Array5060 != null) {
-                for (i_5_ in 0..<Class348_Sub44.anInt7101) LoadingBarRenderer.aClass338Array5060!![i_5_] = null
-                LoadingBarRenderer.aClass338Array5060 = null
+            if (LoadingBarRenderer.aMapTileShapeArray5060 != null) {
+                for (i_5_ in 0..<Class348_Sub44.anInt7101) LoadingBarRenderer.aMapTileShapeArray5060!![i_5_] = null
+                LoadingBarRenderer.aMapTileShapeArray5060 = null
             }
             Class354.anIntArrayArrayArray4356 = null
             val i_6_ = 36 % ((-81 - i) / 38)
             GlTextureBase.anIntArray5091 = null
-            Class348_Sub42_Sub19.aClass338Array9700 = null
+            Class348_Sub42_Sub19.aMapTileShapeArray9700 = null
             Class86.anInt1480 = -1
             WorldMapToggle.anInt3872 = Class86.anInt1480
         }

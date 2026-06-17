@@ -34,16 +34,16 @@ abstract class Class348_Sub45 : Class348() {
             anInt7104++
             Class348_Sub44.anInt7101 = 0
             SceneRegionState.anInt194 = ArchiveFileConditionWrapper.anInt3465
-            MapElementDecor.aClass338Array10330 = arrayOfNulls<Class338>(2000)
+            MapElementDecor.aMapTileShapeArray10330 = arrayOfNulls<MapTileShape>(2000)
             OpenGlRenderer.anInt7714 = ArchiveFileConditionWrapper.anInt3465
             Class50_Sub1.aBoolean5226 = false
-            HintArrowOrMessage.aClass338Array2034 = arrayOfNulls<Class338>(500)
+            HintArrowOrMessage.aMapTileShapeArray2034 = arrayOfNulls<MapTileShape>(500)
             Class69.anInt1200 = 0
             DetailLevelOptionState.anInt6115 = 0
-            LoadingBarRenderer.aClass338Array5060 = arrayOfNulls<Class338>(1000)
+            LoadingBarRenderer.aMapTileShapeArray5060 = arrayOfNulls<MapTileShape>(1000)
             if (i > -113) aTextureFormatInfo_7103 = null
             Class348_Sub42_Sub10.anInt9577 = 0
-            Class348_Sub42_Sub19.aClass338Array9700 = arrayOfNulls<Class338>(500)
+            Class348_Sub42_Sub19.aMapTileShapeArray9700 = arrayOfNulls<MapTileShape>(500)
             Class348_Sub40_Sub23.aBoolean9307 = Class9.aRenderer171 !is oa
         }
 

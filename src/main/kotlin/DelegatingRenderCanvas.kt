@@ -264,9 +264,9 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     OutputStream_Sub2.anInt101 = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
                     IOException_Sub1.aBoolean86 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
                     Class47.aBoolean845 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
-                    Class338.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, false)
-                    if (WidgetRedrawTracker.anInt3931 != 0) Class44.method385(false, Class338.aClass237_Sub1_4197, Class347.aByteArrayArray4281)
-                    else Class348_Sub1_Sub1.method2727((-65).toByte(), Class338.aClass237_Sub1_4197, (Class347.aByteArrayArray4281))
+                    MapTileShape.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, false)
+                    if (WidgetRedrawTracker.anInt3931 != 0) Class44.method385(false, MapTileShape.aClass237_Sub1_4197, Class347.aByteArrayArray4281)
+                    else Class348_Sub1_Sub1.method2727((-65).toByte(), MapTileShape.aClass237_Sub1_4197, (Class347.aByteArrayArray4281))
                     GroundItemRenderState.method1015(Class367_Sub4.anInt7319 shr 4, (Class348_Sub40_Sub3.anInt9109 shr 4), true)
                     Class348_Sub42_Sub3.method3175((-77).toByte())
                     if (bool_25_) {
@@ -279,24 +279,24 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                             Class44.method385(false, VarpStore.aClass237_Sub1_5067, ModelFacePriorityNode.aByteArrayArray1887)
                             RegionSceneLoader.method2193(true, (-125).toByte())
                         }
-                        VarpStore.aClass237_Sub1_5067!!.method1679(0, 0, (Class338.aClass237_Sub1_4197!!.anIntArrayArrayArray3122[0]!!))
+                        VarpStore.aClass237_Sub1_5067!!.method1679(0, 0, (MapTileShape.aClass237_Sub1_4197!!.anIntArrayArrayArray3122[0]!!))
                         VarpStore.aClass237_Sub1_5067!!.method1685(Class348_Sub8.aRenderer6654, null, 21407, null)
                         DoublyLinkedNodeList.method1879(false)
                     }
-                    Class338.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aRenderer6654, (if (!bool_25_) null else (VarpStore.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108)
+                    MapTileShape.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aRenderer6654, (if (!bool_25_) null else (VarpStore.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108)
                     if (WidgetRedrawTracker.anInt3931 == 0) {
                         RegionSceneLoader.method2193(true, (-128).toByte())
-                        ObjectSpawnDecoder.method1090(GlRectangleTexture.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)
+                        ObjectSpawnDecoder.method1090(GlRectangleTexture.aByteArrayArray8642, i + 65536, MapTileShape.aClass237_Sub1_4197)
                         if (Class348_Sub50.aByteArrayArray7212 != null) Class92.method859(i xor 0x7e.inv())
                     } else {
                         RegionSceneLoader.method2193(true, (-121).toByte())
-                        ProjectionCameraTransform.method944(i + -8212, GlRectangleTexture.aByteArrayArray8642, Class338.aClass237_Sub1_4197)
+                        ProjectionCameraTransform.method944(i + -8212, GlRectangleTexture.aByteArrayArray8642, MapTileShape.aClass237_Sub1_4197)
                     }
                     Class348_Sub18.method2938(66.toByte())
                     if (TextureDefinitionCache.anInt2964 < 96) method2271(31268)
                     RegionSceneLoader.method2193(true, (-119).toByte())
-                    Class338.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (SoundCacheState.aTerrainTileArray4142!![0])), Class348_Sub8.aRenderer6654)
-                    Class338.aClass237_Sub1_4197!!.method1697(false, Class348_Sub8.aRenderer6654, -36)
+                    MapTileShape.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (SoundCacheState.aTerrainTileArray4142!![0])), Class348_Sub8.aRenderer6654)
+                    MapTileShape.aClass237_Sub1_4197!!.method1697(false, Class348_Sub8.aRenderer6654, -36)
                     RegionSceneLoader.method2193(true, (-122).toByte())
                     if (bool_25_) {
                         DoublyLinkedNodeList.method1879(true)
@@ -311,7 +311,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         DoublyLinkedNodeList.method1879(false)
                     }
                     Class348_Sub50.method3419(13022)
-                    var i_29_ = Class338.aClass237_Sub1_4197!!.anInt5824
+                    var i_29_ = MapTileShape.aClass237_Sub1_4197!!.anInt5824
                     if (i_29_ > Class355.anInt4372) i_29_ = Class355.anInt4372
                     if (i_29_ < -1 + Class355.anInt4372) i_29_ = Class355.anInt4372 - 1
                     if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) Class84.method824(i_29_)

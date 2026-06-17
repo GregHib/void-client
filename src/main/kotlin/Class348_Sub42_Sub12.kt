@@ -106,7 +106,7 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
                 Class348_Sub42_Sub19.Companion.anInt9701 = (atan2(i_12_.toDouble(), i_14_.toDouble()) * 2607.5945876176133).toInt() and 0x3fff
                 Class5.anInt4638 = (-2607.5945876176133 * atan2(i_11_.toDouble(), i_13_.toDouble())).toInt() and 0x3fff
                 if (Class348_Sub42_Sub19.Companion.anInt9701 < 1024) Class348_Sub42_Sub19.Companion.anInt9701 = 1024
-                Class338.anInt4186 = 0
+                MapTileShape.anInt4186 = 0
                 if (Class348_Sub42_Sub19.Companion.anInt9701 > 3072) Class348_Sub42_Sub19.Companion.anInt9701 = 3072
             }
             Class348_Sub40_Sub21.anInt9282 = 2

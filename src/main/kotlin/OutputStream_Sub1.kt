@@ -76,7 +76,7 @@ class OutputStream_Sub1 : OutputStream() {
                 val i_12_ = Class5.anInt4638
                 for (i_13_ in 0..4) {
                     if (SpotAnimDefinition.aBooleanArray2374!![i_13_]) {
-                        val i_14_ = ((Math.random() * ((CollisionMapAccessor.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - CollisionMapAccessor.anIntArray3552!![i_13_].toDouble() + (sin((GroundDecorSceneEntity.anIntArray9981!![i_13_]).toDouble() * ((Class338.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (ModelHeaderCache.anIntArray3273!![i_13_]).toDouble())).toInt()
+                        val i_14_ = ((Math.random() * ((CollisionMapAccessor.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - CollisionMapAccessor.anIntArray3552!![i_13_].toDouble() + (sin((GroundDecorSceneEntity.anIntArray9981!![i_13_]).toDouble() * ((MapTileShape.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (ModelHeaderCache.anIntArray3273!![i_13_]).toDouble())).toInt()
                         if (i_13_ == 4) {
                             Class348_Sub42_Sub19.anInt9701 += i_14_
                             if (Class348_Sub42_Sub19.anInt9701 >= 1024) {
@@ -109,14 +109,14 @@ class OutputStream_Sub1 : OutputStream() {
                 }
                 Class369_Sub1.method3570(false)
                 if (i >= 80) {
-                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, Class59_Sub2_Sub2.anInt8685, -Class348_Sub42_Sub19.anInt9701 and 0x3fff, -Class5.anInt4638 and 0x3fff, 0x3fff and -Class338.anInt4186)
+                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, Class59_Sub2_Sub2.anInt8685, -Class348_Sub42_Sub19.anInt9701 and 0x3fff, -Class5.anInt4638 and 0x3fff, 0x3fff and -MapTileShape.anInt4186)
                     Class348_Sub8.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                     Class348_Sub8.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 shl 1, Class97.anInt1550 shl 1)
                     CircleHitbox.method319(Class97.anInt1550 shl 1, Class97.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
-                    Class348_Sub42_Sub20.method3282(0x3fff and -(Class348_Sub42_Sub19.anInt9701), Class59_Sub2_Sub2.anInt8685, ParticleSystemRenderer.anInt3855, 0, -Class5.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -Class338.anInt4186 and 0x3fff)
+                    Class348_Sub42_Sub20.method3282(0x3fff and -(Class348_Sub42_Sub19.anInt9701), Class59_Sub2_Sub2.anInt8685, ParticleSystemRenderer.anInt3855, 0, -Class5.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShape.anInt4186 and 0x3fff)
                     val i_16_ = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (Class59_Sub1.aBoolean5300) {
-                        CameraRotationStub.method289(-15902, 0x3fff and -Class5.anInt4638, -Class338.anInt4186 and 0x3fff, (-Class348_Sub42_Sub19.anInt9701 and 0x3fff))
+                        CameraRotationStub.method289(-15902, 0x3fff and -Class5.anInt4638, -MapTileShape.anInt4186 and 0x3fff, (-Class348_Sub42_Sub19.anInt9701 and 0x3fff))
                         SceneProjector.method1634(
                             Class64.anIntArray1127,
                             -2,

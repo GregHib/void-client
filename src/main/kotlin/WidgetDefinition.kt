@@ -375,7 +375,7 @@ class WidgetDefinition {
                 i_49_ = i_49_ * Class70.anIntArray1204!![i_46_] shr 14
             }
             Class5.anInt4638 = i_37_
-            Class338.anInt4186 = 0
+            MapTileShape.anInt4186 = 0
             Class59_Sub2_Sub2.anInt8685 = i_38_ - i_49_
             ParticleSystemRenderer.anInt3855 = -i_48_ + i_36_
             GlslMaterialPass.anInt6246 = -i_47_ + i_41_

@@ -43,7 +43,7 @@ object SoundCacheState {
             if (rectangle!!.width + rectangle.x > i_7_ && rectangle.x < i + i_7_ && rectangle.height + rectangle.y > i_6_ && rectangle.y < i_8_ + i_6_) LocDefinitionCache.aBooleanArray3438!![i_9_] = true
             i_9_++
         }
-        Class338.Companion.method2663(-5590, i_7_, i_7_ + i, i_6_, i_6_ - -i_8_)
+        MapTileShape.Companion.method2663(-5590, i_7_, i_7_ + i, i_6_, i_6_ - -i_8_)
         if (bool != true) method2642(-120, -24, false, -125, -16)
     }
 

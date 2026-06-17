@@ -48,7 +48,7 @@ class ParticleAmountConfig {
                 else method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (Class369_Sub2.aClass46ArrayArray8584!![i_2_]), -1, i_7_)
                 if (i_8_ <= 58) anInt2127 = -84
                 if (Class59_Sub1.aBoolean5300) {
-                    if (i_4_ >= 0 && Class348_Sub42_Sub16_Sub2.anInt10463 == 2) Class338.method2663(-5590, ResourceProvider.anInt3941, ResourceProvider.anInt3939, GraphicsOptionState.anInt3142, Class348_Sub3.anInt6585)
+                    if (i_4_ >= 0 && Class348_Sub42_Sub16_Sub2.anInt10463 == 2) MapTileShape.method2663(-5590, ResourceProvider.anInt3941, ResourceProvider.anInt3939, GraphicsOptionState.anInt3142, Class348_Sub3.anInt6585)
                     Class348_Sub42_Sub16_Sub2.anInt10463 = i_15_
                     ResourceProvider.anInt3939 = i_13_
                     GraphicsOptionState.anInt3142 = i_12_

@@ -606,11 +606,11 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                 Class348_Sub42_Sub10.Companion.anInt9577 = 0
                 var i_8_ = 0
                 while ( /**/DetailLevelOptionState.anInt6115 > i_8_) {
-                    SceneModelBuilder.method2498(HintArrowOrMessage.aClass338Array2034!![i_8_], var_renderer, (-112).toByte(), i)
+                    SceneModelBuilder.method2498(HintArrowOrMessage.aMapTileShapeArray2034!![i_8_], var_renderer, (-112).toByte(), i)
                     i_8_++
                 }
-                for (i_9_ in 0..<Class69.anInt1200) SceneModelBuilder.method2498((MapElementDecor.aClass338Array10330!![i_9_]), var_renderer, (-127).toByte(), i)
-                for (i_10_ in 0..<Class348_Sub44.anInt7101) SceneModelBuilder.method2498(LoadingBarRenderer.aClass338Array5060!![i_10_], var_renderer, (-128).toByte(), i)
+                for (i_9_ in 0..<Class69.anInt1200) SceneModelBuilder.method2498((MapElementDecor.aMapTileShapeArray10330!![i_9_]), var_renderer, (-127).toByte(), i)
+                for (i_10_ in 0..<Class348_Sub44.anInt7101) SceneModelBuilder.method2498(LoadingBarRenderer.aMapTileShapeArray5060!![i_10_], var_renderer, (-128).toByte(), i)
                 NpcDefinition.anInt2946 = 0
                 if (Class348_Sub42_Sub10.Companion.anInt9577 > 0) {
                     val i_11_ = GlTextureBase.anIntArray5091!!.size
@@ -630,9 +630,9 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                     Class350.anInt4319 = 1
                     var i_14_ = 0
                     while ((i_14_ < Class348_Sub42_Sub10.Companion.anInt9577)) {
-                        val class338: Class338 = Class348_Sub42_Sub19.Companion.aClass338Array9700!![i_14_]!!
-                        Class348_Sub40_Sub29.method3125(class338.aShortArray4194!![3].toInt(), class338.aShortArray4183!![0].toInt(), class338.aShortArray4194!![1].toInt(), class338.aShortArray4188!![3].toInt(), class338.aShortArray4188!![1].toInt(), (-105).toByte(), class338.aShortArray4183!![1].toInt(), class338.aShortArray4188!![0].toInt(), class338.aShortArray4194!![0].toInt(), class338.aShortArray4183!![3].toInt())
-                        Class348_Sub40_Sub29.method3125(class338.aShortArray4194!![3].toInt(), class338.aShortArray4183!![1].toInt(), class338.aShortArray4194!![2].toInt(), class338.aShortArray4188!![3].toInt(), class338.aShortArray4188!![2].toInt(), (-118).toByte(), class338.aShortArray4183!![2].toInt(), class338.aShortArray4188!![1].toInt(), class338.aShortArray4194!![1].toInt(), class338.aShortArray4183!![3].toInt())
+                        val mapTileShape: MapTileShape = Class348_Sub42_Sub19.Companion.aMapTileShapeArray9700!![i_14_]!!
+                        Class348_Sub40_Sub29.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![0].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![1].toInt(), (-105).toByte(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4188!![0].toInt(), mapTileShape.aShortArray4194!![0].toInt(), mapTileShape.aShortArray4183!![3].toInt())
+                        Class348_Sub40_Sub29.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4194!![2].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![2].toInt(), (-118).toByte(), mapTileShape.aShortArray4183!![2].toInt(), mapTileShape.aShortArray4188!![1].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4183!![3].toInt())
                         i_14_++
                     }
                     Class350.anInt4319 = 2

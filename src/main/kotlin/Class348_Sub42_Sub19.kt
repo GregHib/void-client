@@ -20,7 +20,7 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
         var anInt9698: Int = 0
         @JvmField
         var anInt9699: Int = 0
-        var aClass338Array9700: Array<Class338?>? = null
+        var aMapTileShapeArray9700: Array<MapTileShape?>? = null
         var anInt9701: Int = 0
 
         fun method3276(soundEnvelope: SoundEnvelope) {
@@ -72,7 +72,7 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
         fun method3278(i: Int) {
             aClass351_9687 = null
             if (i != 1) anInt9699 = -66
-            aClass338Array9700 = null
+            aMapTileShapeArray9700 = null
         }
     }
 }

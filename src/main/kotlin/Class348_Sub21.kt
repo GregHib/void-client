@@ -75,7 +75,7 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
                 val d = sqrt((f_21_ * f_21_ + f_23_ * f_23_).toDouble())
                 Class348_Sub42_Sub19.anInt9701 = 0x3fff and (2607.5945876176133 * atan2(f_22_.toDouble(), d)).toInt()
                 Class5.anInt4638 = 0x3fff and (2607.5945876176133 * -atan2(f_21_.toDouble(), f_23_.toDouble())).toInt()
-                Class338.anInt4186 = ((Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (((-(Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![3])) * CacheArchiveIndex.anInt1780) shr 16))
+                MapTileShape.anInt4186 = ((Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (((-(Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![3])) * CacheArchiveIndex.anInt1780) shr 16))
             }
         }
 

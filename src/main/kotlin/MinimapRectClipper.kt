@@ -36,7 +36,7 @@ object MinimapRectClipper {
             i_4_++
         }
         anInt219++
-        Class338.method2663(i_2_ + -5590, i, i - -i_0_, i_1_, i_3_ + i_1_)
+        MapTileShape.method2663(i_2_ + -5590, i, i - -i_0_, i_1_, i_3_ + i_1_)
     }
 
     @JvmStatic

@@ -120,7 +120,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
                     val i_12_ = -76 / ((i_1_ - 3) / 38)
                     abstractModelRenderer!!.method974(i_10_, i_11_)
                     if (class318_sub1_sub3_sub3 === class318_sub1_sub3_sub3_8_) Class348_Sub8.aRenderer6654!!.method3668(18, -1 + i_11_, -256, i_10_ - 1, 18, 57)
-                    Class338.method2663(-5590, i_10_ + -1, 18 + i_10_, i_11_ + -1, i_11_ - -18)
+                    MapTileShape.method2663(-5590, i_10_ + -1, 18 + i_10_, i_11_ + -1, i_11_ - -18)
                     val class318_sub6 = method3529(32564)
                     class318_sub6.anInt6426 = 16 + i_10_
                     class318_sub6.anInt6427 = i_11_

@@ -278,7 +278,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, class
                         val i_14_ = -12 + (i - -RemoveRoofsOptionState.anIntArray6062!![0])
                         val i_15_ = i_8_ - -RemoveRoofsOptionState.anIntArray6062!![1] - 28
                         class105!!.method974(i_14_, i_15_)
-                        Class338.method2663(-5590, i_14_, i_14_ - -class105.method966(), i_15_, class105.method980() + i_15_)
+                        MapTileShape.method2663(-5590, i_14_, i_14_ - -class105.method966(), i_15_, class105.method980() + i_15_)
                     }
                 }
             }

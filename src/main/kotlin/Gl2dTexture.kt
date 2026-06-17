@@ -291,7 +291,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             var i_26_ = i_24_ - Class5.anInt4638
             if (i_26_ > 8192) i_26_ -= 16384
             if (i_26_ < -8192) i_26_ += 16384
-            Class338.anInt4186 = 0
+            MapTileShape.anInt4186 = 0
             if (i_26_ < 0 && i_25_ > 0 || i_26_ > 0 && i_25_ < 0) Class5.anInt4638 = i_24_
         }
 

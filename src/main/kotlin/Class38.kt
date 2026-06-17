@@ -302,7 +302,7 @@ class Class38 {
                     val class318_sub3s = class318_sub4.aClass318_Sub3Array6414!!
                     for (i in class318_sub3s.indices) {
                         val class318_sub3 = class318_sub3s[i]!!
-                        if (class318_sub3.aBoolean6401) Class338.method2663(-5590, (class318_sub3.anInt6405 - class318_sub3.anInt6403), (class318_sub3.anInt6406 + class318_sub3.anInt6403), (class318_sub3.anInt6402 - class318_sub3.anInt6403), (class318_sub3.anInt6404 + class318_sub3.anInt6403))
+                        if (class318_sub3.aBoolean6401) MapTileShape.method2663(-5590, (class318_sub3.anInt6405 - class318_sub3.anInt6403), (class318_sub3.anInt6406 + class318_sub3.anInt6403), (class318_sub3.anInt6402 - class318_sub3.anInt6403), (class318_sub3.anInt6404 + class318_sub3.anInt6403))
                     }
                 }
                 if (class318_sub4.aBoolean6409) {

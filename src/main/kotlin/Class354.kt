@@ -110,14 +110,14 @@ class Class354 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_renderConf
             return i
         }
 
-        fun method3465(i: Int, i_0_: Int, class338: Class338): Boolean {
+        fun method3465(i: Int, i_0_: Int, mapTileShape: MapTileShape): Boolean {
             anInt4358++
-            Class348_Sub40_Sub4.aAbstractCameraTransform_9114!!.method897(class338.anIntArray4187!![i], class338.anIntArray4191[i], class338.anIntArray4184[i], SequencedWallEntity.anIntArray10172!!)
+            Class348_Sub40_Sub4.aAbstractCameraTransform_9114!!.method897(mapTileShape.anIntArray4187!![i], mapTileShape.anIntArray4191[i], mapTileShape.anIntArray4184[i], SequencedWallEntity.anIntArray10172!!)
             val i_1_ = SequencedWallEntity.anIntArray10172!![2]
             if (i_1_ < 50) return false
-            class338.aShortArray4194!![i] = (Class69.anInt1202 + (SequencedWallEntity.anIntArray10172!![0] * ScreenBorderFiller.anInt1962 / i_1_)).toShort()
-            class338.aShortArray4183!![i] = ((GlIndexBufferArb.anInt8498 * SequencedWallEntity.anIntArray10172!![i_0_] / i_1_) + Class348_Sub49_Sub2.anInt9759).toShort()
-            class338.aShortArray4188!![i] = i_1_.toShort()
+            mapTileShape.aShortArray4194!![i] = (Class69.anInt1202 + (SequencedWallEntity.anIntArray10172!![0] * ScreenBorderFiller.anInt1962 / i_1_)).toShort()
+            mapTileShape.aShortArray4183!![i] = ((GlIndexBufferArb.anInt8498 * SequencedWallEntity.anIntArray10172!![i_0_] / i_1_) + Class348_Sub49_Sub2.anInt9759).toShort()
+            mapTileShape.aShortArray4188!![i] = i_1_.toShort()
             return true
         }
 

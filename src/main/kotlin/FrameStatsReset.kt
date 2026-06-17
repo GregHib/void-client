@@ -87,7 +87,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9897 = 0
             Class348_Sub40_Sub6.anInt9137 = 0
             Class5_Sub2.anInt8357 = 0
-            Class338.anInt4195 = 0
+            MapTileShape.anInt4195 = 0
             Class367_Sub8.anInt7349 = 0
             Class348_Sub42.anInt7064 = 0
             Class64_Sub2.anInt5468 = 0
@@ -1709,7 +1709,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7188 = 0
             OpenGlRenderer.anInt7587 = 0
             Class348_Sub24.anInt6873 = 0
-            Class338.anInt4189 = 0
+            MapTileShape.anInt4189 = 0
             ProjectionCameraTransform.anInt5755 = 0
             Npc.anInt10501 = 0
             ModelOrSpriteHolder.anInt120 = 0

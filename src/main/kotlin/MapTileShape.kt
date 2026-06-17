@@ -7,7 +7,7 @@ import Class66.method703
 /* Class338 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
+class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
     var aByte4181: Byte
     var aShort4182: Short
     @JvmField

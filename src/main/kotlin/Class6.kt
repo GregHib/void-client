@@ -154,7 +154,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     }
                     var_renderer!!.KA(i_35_, i_36_, LocTypeDefinition.anInt4017 + i_35_, i_36_ + 350)
                     var_renderer.aa(i_35_, i_36_, LocTypeDefinition.anInt4017, 350, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 1)
-                    Class338.method2663(-5590, i_35_, LocTypeDefinition.anInt4017 + i_35_, i_36_, i_36_ + 350)
+                    MapTileShape.method2663(-5590, i_35_, LocTypeDefinition.anInt4017 + i_35_, i_36_, i_36_ + 350)
                     val i_37_ = 350 / Class68.anInt1188
                     if (Class369_Sub2.anInt8587 > 0) {
                         val i_38_ = 342 + -Class68.anInt1188

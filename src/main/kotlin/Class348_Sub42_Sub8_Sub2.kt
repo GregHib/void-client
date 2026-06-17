@@ -287,7 +287,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 SpotAnimDefinition.aBooleanArray2374!![i_23_] = true
                 CollisionMapAccessor.anIntArray3552!![i_23_] = i
                 ModelHeaderCache.anIntArray3273!![i_23_] = i_25_
-                Class338.anIntArray4196!![i_23_] = i_26_
+                MapTileShape.anIntArray4196!![i_23_] = i_26_
                 GroundDecorSceneEntity.anIntArray9981!![i_23_] = i_24_
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1407,7 +1407,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 WallSceneEntity.method2397((-125).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_182_.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533)
-                Class338.method2661(i, i_182_, i_183_, false, 2)
+                MapTileShape.method2661(i, i_182_, i_183_, false, 2)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

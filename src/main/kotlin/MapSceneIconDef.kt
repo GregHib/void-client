@@ -80,11 +80,11 @@ class MapSceneIconDef {
                 var i_8_ = i_7_
                 if (i_8_ < 3 && method802(i_5_, i, true)) i_8_++
                 if ((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && !method536(i_5_, false, i, ParticleSystemState.anInt2204, i_8_)) || HintArrowOrMessage.aClass357ArrayArrayArray2029 == null) return
-                Class338.aClass237_Sub1_4197!!.method1694((Class348_Sub45.aClass361Array7108!![i_7_]), i_1_, i_7_, Class348_Sub8.aRenderer6654, i, i_5_, 106.toByte())
+                MapTileShape.aClass237_Sub1_4197!!.method1694((Class348_Sub45.aClass361Array7108!![i_7_]), i_1_, i_7_, Class348_Sub8.aRenderer6654, i, i_5_, 106.toByte())
                 if (i_3_ >= 0) {
                     val i_9_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350)
                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220), 1)
-                    Class338.aClass237_Sub1_4197!!.method1689(i, i_7_, i_3_, Class348_Sub8.aRenderer6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (Class348_Sub45.aClass361Array7108!![i_7_]))
+                    MapTileShape.aClass237_Sub1_4197!!.method1689(i, i_7_, i_3_, Class348_Sub8.aRenderer6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (Class348_Sub45.aClass361Array7108!![i_7_]))
                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220), i_9_)
                 }
             }

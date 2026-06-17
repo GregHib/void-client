@@ -58,7 +58,7 @@ class HintArrowOrMessage internal constructor(i: Int, i_0_: Int, string: String?
         @JvmField
         var aClass357ArrayArrayArray2029: Array<Array<Array<Class357?>?>?>? = null
         @JvmField
-        var aClass338Array2034: Array<Class338?>? = null
+        var aMapTileShapeArray2034: Array<MapTileShape?>? = null
         @JvmField
         var anInt2035: Int = 0
         var anInt2036: Int = 0
@@ -67,7 +67,7 @@ class HintArrowOrMessage internal constructor(i: Int, i_0_: Int, string: String?
         fun method1195(i: Byte) {
             if (i < 73) method1195(61.toByte())
             aClass357ArrayArrayArray2029 = null
-            aClass338Array2034 = null
+            aMapTileShapeArray2034 = null
         }
     }
 }
