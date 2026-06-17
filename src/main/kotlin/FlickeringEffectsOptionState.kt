@@ -160,9 +160,9 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                     ShadowQualityOptionState.anInt6008 = (2 * Class348_Sub42_Sub9_Sub1.anInt10444 + LinkedNodeListIterator.anInt1651)
                     Class348_Sub16_Sub1.anInt8854 = SoundEnvelope.anInt2747 * 2 + Class59_Sub1.anInt5283
                 } else if (Class348_Sub49.anInt7207 == 1) {
-                    Class31.anInt425 = (BloomGraphicsOptionState.anInt5965 + Class59_Sub1.anInt5283 / Class58.anInt1067 - -2)
+                    ItemModelDefinition.anInt425 = (BloomGraphicsOptionState.anInt5965 + Class59_Sub1.anInt5283 / Class58.anInt1067 - -2)
                     BackgroundWorkerThread.anInt3225 = (Class73.anInt4784 + LinkedNodeListIterator.anInt1651 / Class344.anInt4267 - -2)
-                    Class348_Sub16_Sub1.anInt8854 = Class58.anInt1067 * Class31.anInt425
+                    Class348_Sub16_Sub1.anInt8854 = Class58.anInt1067 * ItemModelDefinition.anInt425
                     ShadowQualityOptionState.anInt6008 = Class344.anInt4267 * BackgroundWorkerThread.anInt3225
                     SoundEnvelope.anInt2747 = (-Class59_Sub1.anInt5283 + Class348_Sub16_Sub1.anInt8854 shr 1)
                     Class348_Sub42_Sub9_Sub1.anInt10444 = (ShadowQualityOptionState.anInt6008 - LinkedNodeListIterator.anInt1651 shr 1)

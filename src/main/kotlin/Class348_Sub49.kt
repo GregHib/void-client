@@ -757,7 +757,7 @@ open class Class348_Sub49 : Class348 {
                     Class78.aClass45_1322!!.anInt634 = 2
                 }
                 if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (-119).toByte())) {
-                    Class31.anInt443 = 1
+                    ItemModelDefinition.anInt443 = 1
                     Class36.anInt489 = 0
                     Class348_Sub46.Companion.anInt7115 = 1
                     CompositeNpcModelBuilder.anInt2101 = 0

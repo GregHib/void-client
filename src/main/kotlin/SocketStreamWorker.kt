@@ -217,8 +217,8 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
             val i_0_ = 29 % ((-42 - i) / 63)
             var i_1_ = 0
             while (BackgroundWorkerThread.anInt3225 > i_1_) {
-                val i_2_ = Class31.anInt425 * i_1_
-                for (i_3_ in 0..<Class31.anInt425) {
+                val i_2_ = ItemModelDefinition.anInt425 * i_1_
+                for (i_3_ in 0..<ItemModelDefinition.anInt425) {
                     val i_4_ = i_2_ - -i_3_
                     Class92.anInterface4Array1525!![i_4_]!!.method15(i_3_ * Class58.anInt1067, i_1_ * Class344.anInt4267, Class58.anInt1067, Class344.anInt4267, 0, 0, true, true)
                 }

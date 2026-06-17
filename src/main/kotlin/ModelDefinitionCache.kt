@@ -20,24 +20,24 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
         }
     }
 
-    fun method1601(i: Int, i_15_: Int): Class31 {
+    fun method1601(i: Int, i_15_: Int): ItemModelDefinition {
         anInt2874++
-        var class31: Class31?
+        var itemModelDefinition: ItemModelDefinition?
         synchronized(aClass60_2875) {
-            class31 = aClass60_2875.method583(i_15_.toLong(), i + -148) as Class31?
+            itemModelDefinition = aClass60_2875.method583(i_15_.toLong(), i + -148) as ItemModelDefinition?
         }
-        if (class31 != null) return class31
+        if (itemModelDefinition != null) return itemModelDefinition
         val `is`: ByteArray?
         synchronized(aClass45_2866!!) {
             `is` = aClass45_2866.method410(-1860, i, i_15_)
         }
-        class31 = Class31()
-        class31.aModelDefinitionCache_438 = this
-        if (`is` != null) class31.method332(i xor 0x55.inv(), Class348_Sub49(`is`))
+        itemModelDefinition = ItemModelDefinition()
+        itemModelDefinition.aModelDefinitionCache_438 = this
+        if (`is` != null) itemModelDefinition.method332(i xor 0x55.inv(), Class348_Sub49(`is`))
         synchronized(aClass60_2875) {
-            aClass60_2875.method582(class31, i_15_.toLong(), (-109).toByte())
+            aClass60_2875.method582(itemModelDefinition, i_15_.toLong(), (-109).toByte())
         }
-        return class31
+        return itemModelDefinition
     }
 
     fun method1602(i: Int) {

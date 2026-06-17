@@ -3729,22 +3729,22 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         while ( /**/i_344_ < LocalPlayerState.anInt1905) {
                             val i_345_ = (class318_sub1_sub3_sub3.anIntArray10219[i_344_])
                             val i_346_ = (class318_sub1_sub3_sub3.anIntArray10259[i_344_])
-                            var class31: Class31? = null
+                            var itemModelDefinition: ItemModelDefinition? = null
                             var i_347_ = 0
                             if (i_346_ >= 0) {
                                 if (i_345_ <= Class367_Sub11.anInt7396) {
                                     i_344_++
                                     continue
                                 }
-                                class31 = (Class73.aModelDefinitionCache_4782!!.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])))
-                                i_347_ = class31.anInt434
+                                itemModelDefinition = (Class73.aModelDefinitionCache_4782!!.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])))
+                                i_347_ = itemModelDefinition.anInt434
                             } else if (i_345_ < 0) {
                                 i_344_++
                                 continue
                             }
                             val i_348_ = (class318_sub1_sub3_sub3.anIntArray10304[i_344_])
-                            var class31_349_: Class31? = null
-                            if (i_348_ >= 0) class31_349_ = Class73.aModelDefinitionCache_4782!!.method1601(46, i_348_)
+                            var itemModelDefinition_349_: ItemModelDefinition? = null
+                            if (i_348_ >= 0) itemModelDefinition_349_ = Class73.aModelDefinitionCache_4782!!.method1601(46, i_348_)
                             if (-i_347_ + i_345_ <= Class367_Sub11.anInt7396) {
                                 val i_350_ = (class318_sub1_sub3_sub3.anIntArray10303[i_344_])
                                 if (i_350_ >= 0) {
@@ -3752,7 +3752,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     class318_sub1_sub3_sub3.anInt10295 = i_350_
                                     class318_sub1_sub3_sub3.anIntArray10303[i_344_] = -1
                                 }
-                                if (class31 == null) class318_sub1_sub3_sub3.anIntArray10219[i_344_] = -1
+                                if (itemModelDefinition == null) class318_sub1_sub3_sub3.anIntArray10219[i_344_] = -1
                                 else {
                                     val i_351_ = (class318_sub1_sub3_sub3.method2426(200) / 2)
                                     Class348_Sub13.method2801(i_351_, i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, (-107).toByte())
@@ -3784,7 +3784,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var i_372_ = 0
                                         var i_373_ = 0
                                         var i_374_ = 0
-                                        val class105_375_ = class31.method327((Class348_Sub8.aRenderer6654!!), (-96).toByte())
+                                        val class105_375_ = itemModelDefinition.method327((Class348_Sub8.aRenderer6654!!), (-96).toByte())
                                         if (class105_375_ != null) {
                                             i_355_ = class105_375_.method971()
                                             val i_376_ = class105_375_.method969()
@@ -3792,7 +3792,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             if (i_374_ < i_376_) i_374_ = i_376_
                                             i_359_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        val class105_377_ = class31.method331((Class348_Sub8.aRenderer6654!!), (-75).toByte())
+                                        val class105_377_ = itemModelDefinition.method331((Class348_Sub8.aRenderer6654!!), (-75).toByte())
                                         if (class105_377_ != null) {
                                             i_356_ = class105_377_.method971()
                                             val i_378_ = class105_377_.method969()
@@ -3800,7 +3800,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             if (i_378_ > i_374_) i_374_ = i_378_
                                             i_360_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        val class105_379_ = class31.method324((Class348_Sub8.aRenderer6654!!), true)
+                                        val class105_379_ = itemModelDefinition.method324((Class348_Sub8.aRenderer6654!!), true)
                                         if (class105_379_ != null) {
                                             i_357_ = class105_379_.method971()
                                             val i_380_ = class105_379_.method969()
@@ -3808,7 +3808,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             class105_379_.method984(HeadIconRenderer.anIntArray2062)
                                             i_361_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        val class105_381_ = class31.method325((Class348_Sub8.aRenderer6654!!), 105)
+                                        val class105_381_ = itemModelDefinition.method325((Class348_Sub8.aRenderer6654!!), 105)
                                         if (class105_381_ != null) {
                                             i_358_ = class105_381_.method971()
                                             val i_382_ = class105_381_.method969()
@@ -3816,8 +3816,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             if (i_374_ < i_382_) i_374_ = i_382_
                                             i_362_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        if (class31_349_ != null) {
-                                            abstractModelRenderer = (class31_349_.method327(Class348_Sub8.aRenderer6654!!, 110.toByte()))
+                                        if (itemModelDefinition_349_ != null) {
+                                            abstractModelRenderer = (itemModelDefinition_349_.method327(Class348_Sub8.aRenderer6654!!, 110.toByte()))
                                             if (abstractModelRenderer != null) {
                                                 i_366_ = abstractModelRenderer.method971()
                                                 val i_383_ = abstractModelRenderer.method969()
@@ -3825,7 +3825,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 abstractModelRenderer.method984(HeadIconRenderer.anIntArray2062)
                                                 i_370_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
-                                            abstractModelRenderer_363_ = (class31_349_.method331(Class348_Sub8.aRenderer6654!!, (-80).toByte()))
+                                            abstractModelRenderer_363_ = (itemModelDefinition_349_.method331(Class348_Sub8.aRenderer6654!!, (-80).toByte()))
                                             if (abstractModelRenderer_363_ != null) {
                                                 i_367_ = abstractModelRenderer_363_.method971()
                                                 val i_384_ = abstractModelRenderer_363_.method969()
@@ -3833,7 +3833,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 abstractModelRenderer_363_.method984(HeadIconRenderer.anIntArray2062)
                                                 i_371_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
-                                            abstractModelRenderer_364_ = (class31_349_.method324(Class348_Sub8.aRenderer6654!!, true))
+                                            abstractModelRenderer_364_ = (itemModelDefinition_349_.method324(Class348_Sub8.aRenderer6654!!, true))
                                             if (abstractModelRenderer_364_ != null) {
                                                 i_368_ = abstractModelRenderer_364_.method971()
                                                 val i_385_ = abstractModelRenderer_364_.method969()
@@ -3841,7 +3841,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 if (i_385_ > i_374_) i_374_ = i_385_
                                                 i_372_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
-                                            abstractModelRenderer_365_ = (class31_349_.method325(Class348_Sub8.aRenderer6654!!, i_316_ xor 0x35))
+                                            abstractModelRenderer_365_ = (itemModelDefinition_349_.method325(Class348_Sub8.aRenderer6654!!, i_316_ xor 0x35))
                                             if (abstractModelRenderer_365_ != null) {
                                                 i_369_ = abstractModelRenderer_365_.method971()
                                                 val i_386_ = abstractModelRenderer_365_.method969()
@@ -3853,7 +3853,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var class324 = WorldMapRenderer.aClass324_4684
                                         var class324_387_ = WorldMapRenderer.aClass324_4684
                                         var class143 = GlTexture3D.aFontDefinition_8527
-                                        var i_388_ = class31.anInt435
+                                        var i_388_ = itemModelDefinition.anInt435
                                         var class143_389_ = GlTexture3D.aFontDefinition_8527
                                         if (i_388_ >= 0) {
                                             val class324_390_ = GlTextureBase.method232((Class348_Sub8.aRenderer6654), (-53).toByte(), true, i_388_)
@@ -3863,8 +3863,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 class143 = class143_391_
                                             }
                                         }
-                                        if (class31_349_ != null) {
-                                            i_388_ = (class31_349_.anInt435)
+                                        if (itemModelDefinition_349_ != null) {
+                                            i_388_ = (itemModelDefinition_349_.anInt435)
                                             if (i_388_ >= 0) {
                                                 val class324_392_ = (GlTextureBase.method232(Class348_Sub8.aRenderer6654, (-53).toByte(), true, i_388_))
                                                 val class143_393_ = (GlVertexBufferBase.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
@@ -3878,16 +3878,16 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var string: String? = null
                                         val bool = false
                                         var i_395_ = 0
-                                        val string_396_ = (class31.method333((class318_sub1_sub3_sub3.anIntArray10229[i_344_]), 0))
+                                        val string_396_ = (itemModelDefinition.method333((class318_sub1_sub3_sub3.anIntArray10229[i_344_]), 0))
                                         val i_397_ = class143!!.method1183(true, string_396_)
-                                        if (class31_349_ != null) {
-                                            string = (class31_349_.method333((class318_sub1_sub3_sub3.anIntArray10284[i_344_]), 0))
+                                        if (itemModelDefinition_349_ != null) {
+                                            string = (itemModelDefinition_349_.method333((class318_sub1_sub3_sub3.anIntArray10284[i_344_]), 0))
                                             i_395_ = class143_389_!!.method1183(true, string)
                                         }
                                         var i_398_ = 0
                                         if (i_356_ > 0) i_398_ = i_397_ / i_356_ + 1
                                         var i_399_ = 0
-                                        if (class31_349_ != null && i_367_ > 0) i_399_ = i_395_ / i_367_ - -1
+                                        if (itemModelDefinition_349_ != null && i_367_ > 0) i_399_ = i_395_ / i_367_ - -1
                                         var i_400_ = 0
                                         val i_401_ = i_400_
                                         if (i_355_ > 0) i_400_ += i_355_
@@ -3909,7 +3909,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var i_409_ = 0
                                         var i_410_ = 0
                                         var i_411_ = 0
-                                        if (class31_349_ != null) {
+                                        if (itemModelDefinition_349_ != null) {
                                             i_400_ += 2
                                             i_407_ = i_400_
                                             if (i_366_ > 0) i_400_ += i_366_
@@ -3927,27 +3927,27 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             if (i_369_ > 0) i_400_ += i_369_
                                         }
                                         val i_413_ = (-Class367_Sub11.anInt7396 + (class318_sub1_sub3_sub3.anIntArray10219[i_344_]))
-                                        val i_414_ = (-(class31.anInt424 * i_413_ / class31.anInt434) + class31.anInt424)
-                                        val i_415_ = (-class31.anInt422 + (class31.anInt422 * i_413_ / class31.anInt434))
+                                        val i_414_ = (-(itemModelDefinition.anInt424 * i_413_ / itemModelDefinition.anInt434) + itemModelDefinition.anInt424)
+                                        val i_415_ = (-itemModelDefinition.anInt422 + (itemModelDefinition.anInt422 * i_413_ / itemModelDefinition.anInt434))
                                         val i_416_ = (i_317_ + RemoveRoofsOptionState.anIntArray6062!![0] + -(i_400_ shr 1) - -i_414_)
                                         val i_417_ = -12 + (i + ((RemoveRoofsOptionState.anIntArray6062!![1]) - -i_415_))
                                         var i_418_ = i_417_
                                         var i_419_ = i_417_ + i_374_
-                                        val i_420_ = 15 + (i_417_ - -(class31.anInt420))
+                                        val i_420_ = 15 + (i_417_ - -(itemModelDefinition.anInt420))
                                         val i_421_ = (i_420_ + -class143.anInt1988)
                                         val i_422_ = (i_420_ - -class143.anInt1993)
                                         if (i_418_ > i_421_) i_418_ = i_421_
                                         if (i_419_ < i_422_) i_419_ = i_422_
                                         var i_423_ = 0
-                                        if (class31_349_ != null) {
-                                            i_423_ = 15 + (i_417_ - -(class31_349_.anInt420))
+                                        if (itemModelDefinition_349_ != null) {
+                                            i_423_ = 15 + (i_417_ - -(itemModelDefinition_349_.anInt420))
                                             val i_424_ = (-(class143_389_!!.anInt1988) + i_423_)
                                             if (i_424_ < i_418_) i_418_ = i_424_
                                             val i_425_ = ((class143_389_.anInt1993) + i_423_)
                                             if (i_419_ < i_425_) i_419_ = i_425_
                                         }
                                         var i_426_ = 255
-                                        if (class31.anInt426 >= 0) i_426_ = ((i_413_ shl 8) / (-class31.anInt426 + (class31.anInt434)))
+                                        if (itemModelDefinition.anInt426 >= 0) i_426_ = ((i_413_ shl 8) / (-itemModelDefinition.anInt426 + (itemModelDefinition.anInt434)))
                                         if (i_426_ >= 0 && i_426_ < 255) {
                                             val i_427_ = i_426_ shl 24
                                             val i_428_ = 0xffffff or i_427_
@@ -3961,15 +3961,15 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 }
                                             }
                                             if (class105_381_ != null) class105_381_.method964(i_406_ + i_416_ + -i_362_, i_417_, 0, i_428_, 1)
-                                            class324!!.method2576(string_396_, (class31.anInt444 or i_427_), i_420_, i_404_ + i_416_, 0, -124)
-                                            if (class31_349_ != null) {
+                                            class324!!.method2576(string_396_, (itemModelDefinition.anInt444 or i_427_), i_420_, i_404_ + i_416_, 0, -124)
+                                            if (itemModelDefinition_349_ != null) {
                                                 if (abstractModelRenderer != null) abstractModelRenderer.method964((i_416_ + i_407_ - i_370_), i_417_, 0, i_428_, 1)
                                                 if (abstractModelRenderer_364_ != null) abstractModelRenderer_364_.method964(-i_372_ + (i_408_ + i_416_), i_417_, 0, i_428_, 1)
                                                 if (abstractModelRenderer_363_ != null) {
                                                     for (i_430_ in 0..<i_399_) abstractModelRenderer_363_.method964((i_430_ * i_367_ + i_416_ + (i_409_ + -i_371_)), i_417_, 0, i_428_, 1)
                                                 }
                                                 if (abstractModelRenderer_365_ != null) abstractModelRenderer_365_.method964((i_416_ - -i_410_ + -i_373_), i_417_, 0, i_428_, 1)
-                                                class324_387_!!.method2576(string, (i_427_ or (class31_349_.anInt444)), i_423_, i_416_ + i_411_, 0, -125)
+                                                class324_387_!!.method2576(string, (i_427_ or (itemModelDefinition_349_.anInt444)), i_423_, i_416_ + i_411_, 0, -125)
                                             }
                                         } else {
                                             if (class105_375_ != null) class105_375_.method974(i_416_ - (-i_401_ + i_359_), i_417_)
@@ -3978,8 +3978,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 for (i_431_ in 0..<i_398_) class105_377_.method974((i_403_ + i_416_ - (i_360_ - i_431_ * i_356_)), i_417_)
                                             }
                                             if (class105_381_ != null) class105_381_.method974(i_406_ + (i_416_ + -i_362_), i_417_)
-                                            class324!!.method2576(string_396_, (class31.anInt444 or 0xffffff.inv()), i_420_, i_416_ + i_404_, 0, i_316_ xor 0x74.inv())
-                                            if (class31_349_ != null) {
+                                            class324!!.method2576(string_396_, (itemModelDefinition.anInt444 or 0xffffff.inv()), i_420_, i_416_ + i_404_, 0, i_316_ xor 0x74.inv())
+                                            if (itemModelDefinition_349_ != null) {
                                                 if (abstractModelRenderer != null) abstractModelRenderer.method974((-i_370_ + i_416_ + i_407_), i_417_)
                                                 if (abstractModelRenderer_364_ != null) abstractModelRenderer_364_.method974(i_408_ + (i_416_ + -i_372_), i_417_)
                                                 if (abstractModelRenderer_363_ != null) {
@@ -3990,7 +3990,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                     }
                                                 }
                                                 if (abstractModelRenderer_365_ != null) abstractModelRenderer_365_.method974(i_410_ + i_416_ - i_373_, i_417_)
-                                                class324_387_!!.method2576(string, (class31_349_.anInt444) or 0xffffff.inv(), i_423_, i_411_ + i_416_, 0, -119)
+                                                class324_387_!!.method2576(string, (itemModelDefinition_349_.anInt444) or 0xffffff.inv(), i_423_, i_411_ + i_416_, 0, -119)
                                             }
                                         }
                                         Class338.method2663(-5590, i_416_, i_416_ + i_400_, i_418_, 1 + i_419_)

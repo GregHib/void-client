@@ -233,7 +233,7 @@ import HeightMapNoise.method2281
 import ProjectileDefinition.method2286
 import ParticleSystemRenderer.Companion.method2294
 import ConfigVarProgress.Companion.method2310
-import Class31.Companion.method328
+import ItemModelDefinition.Companion.method328
 import Class311.Companion.method2317
 import Class312.Companion.method2331
 import Class313.method2333
@@ -1707,8 +1707,8 @@ class Client : GameAppletFrame() {
                             val i = ((-LocDefinitionCache.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115)
                             method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
                         } else if (Class36.anInt489 == 2) {
-                            if (Class31.anInt443 < CompositeNpcModelBuilder.anInt2101) Class31.anInt443 = CompositeNpcModelBuilder.anInt2101
-                            val i = (((Class31.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / Class31.anInt443) + 50)
+                            if (ItemModelDefinition.anInt443 < CompositeNpcModelBuilder.anInt2101) ItemModelDefinition.anInt443 = CompositeNpcModelBuilder.anInt2101
+                            val i = (((ItemModelDefinition.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / ItemModelDefinition.anInt443) + 50)
                             method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
                         } else method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
                     } else if (WorldMapRenderer.anInt4674 != 10) {

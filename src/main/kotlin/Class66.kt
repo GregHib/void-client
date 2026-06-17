@@ -27,7 +27,7 @@ import WaterMaterialPass.Companion.method2153
 import GlslEnvMaterialPass.Companion.method2162
 import ScrollTexMaterialPass.Companion.method2165
 import CubeMapMaterialPass.Companion.method2172
-import Class31.Companion.method326
+import ItemModelDefinition.Companion.method326
 import Class318_Sub1_Sub1.Companion.method2396
 import Class318_Sub1_Sub2.Companion.method2405
 import Class318_Sub1_Sub4.Companion.method2478

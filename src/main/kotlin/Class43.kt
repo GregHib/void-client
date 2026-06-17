@@ -63,10 +63,10 @@ class Class43 {
         fun method383(i: Int) {
             var i_3_ = i
             while (BackgroundWorkerThread.anInt3225 > i_3_) {
-                val i_4_ = (Class350.method3452(MaterialPass.anInt3682 + i_3_, (-15).toByte(), BackgroundWorkerThread.anInt3225) * Class31.anInt425)
+                val i_4_ = (Class350.method3452(MaterialPass.anInt3682 + i_3_, (-15).toByte(), BackgroundWorkerThread.anInt3225) * ItemModelDefinition.anInt425)
                 var i_5_ = 0
-                while (Class31.anInt425 > i_5_) {
-                    val i_6_ = (Class350.method3452(i_5_ - -SceneryDetailOptionState.anInt6095, (-15).toByte(), Class31.anInt425) + i_4_)
+                while (ItemModelDefinition.anInt425 > i_5_) {
+                    val i_6_ = (Class350.method3452(i_5_ - -SceneryDetailOptionState.anInt6095, (-15).toByte(), ItemModelDefinition.anInt425) + i_4_)
                     if (LocalPlayerState.anIntArray1909!![i_6_] == Class318_Sub1_Sub1_Sub2.anInt9997) Class92.anInterface4Array1525!![i_6_]!!.method14(0, 0, Class58.anInt1067, Class344.anInt4267, i_5_ * Class58.anInt1067, Class344.anInt4267 * i_3_, true, true)
                     i_5_++
                 }

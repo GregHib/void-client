@@ -1,7 +1,7 @@
 /* Class31 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class31 {
+class ItemModelDefinition {
     var anInt420: Int = 0
     private var anInt421: Int
     var anInt422: Int = 0
