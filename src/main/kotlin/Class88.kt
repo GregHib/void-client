@@ -370,7 +370,7 @@ class Class88 {
                                 FloatGrid.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
                                 FrameStatsReset.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class348_Sub6.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944)
-                                Class290.aBoolean3706 = class348_sub49_sub2.readUnsignedByte(255) == 1
+                                BufferToggleState.aBoolean3706 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 OpenGlTerrainTile.aString8265 = class348_sub49_sub2.method3371(-13487)
                                 LocalPlayerState.aPlayer_1907!!.aString10537 = OpenGlTerrainTile.aString8265
                                 LocalPlayerState.aPlayer_1907!!.aString10544 = LocalPlayerState.aPlayer_1907!!.aString10537

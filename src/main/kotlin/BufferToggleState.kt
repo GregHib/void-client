@@ -3,7 +3,7 @@ import TextureDefinitionCache.Companion.method1626
 /* Class290 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class290 internal constructor(var aBoolean3709: Boolean) {
+class BufferToggleState internal constructor(var aBoolean3709: Boolean) {
     var anInterface5_Impl1_3708: Interface5_Impl1? = null
     var anInterface5_Impl1_3711: Interface5_Impl1? = null
     var aBoolean3714: Boolean = false

@@ -2052,7 +2052,7 @@ class Client : GameAppletFrame() {
                         i_47_ = min(i_49_, i_34_)
                         i_48_ = min(i_50_, i_35_)
                     }
-                    if (class46.anInt774 != 0 && !class46.aBoolean682 && method105(class46)!!.anInt7098 == 0 && class46 != Class331.aClass46_4130 && class46.anInt765 != Class290.anInt3717 && (class46.anInt765 != Class348_Sub47.anInt7125)) {
+                    if (class46.anInt774 != 0 && !class46.aBoolean682 && method105(class46)!!.anInt7098 == 0 && class46 != Class331.aClass46_4130 && class46.anInt765 != BufferToggleState.anInt3717 && (class46.anInt765 != Class348_Sub47.anInt7125)) {
                         if (i_45_ < i_47_ && i_46_ < i_48_) method273(class46, -2835)
                     } else if (!method111(class46)) {
                         var i_51_ = 0
@@ -2167,7 +2167,7 @@ class Client : GameAppletFrame() {
                                             continue
                                         }
                                     }
-                                    if (class46.anInt765 == Class290.anInt3717) {
+                                    if (class46.anInt765 == BufferToggleState.anInt3717) {
                                         if (class46.method425((Class348_Sub8.aRenderer6654!!), 3.toByte()) != null && (KeyboardLayoutCache.anInt3306 == 0 || KeyboardLayoutCache.anInt3306 == 3) && !Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                             var i_58_ = i_40_ - i_43_
                                             var i_59_ = i_41_ - i_44_

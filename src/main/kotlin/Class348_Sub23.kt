@@ -125,7 +125,7 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
             Class348_Sub8.aRenderer6654!!.X(32)
             SettingsCrcWriter.aAbstractCameraTransform_2123 = Class348_Sub8.aRenderer6654!!.method3654()
             Class50_Sub1.aAbstractCameraTransform_5209 = Class348_Sub8.aRenderer6654!!.method3654()
-            Class290.method2196((-9).toByte())
+            BufferToggleState.method2196((-9).toByte())
             Class348_Sub8.aRenderer6654!!.method3630(Class316.aClass348_Sub51_3959!!.aClass239_Sub2_7228!!.method1726(-32350) == 1)
             if (Class348_Sub8.aRenderer6654!!.method3627()) Class348_Sub40_Sub33.method3137(Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) == 1, (-24).toByte())
             Class97.method873(Class367_Sub4.anInt7319 shr 3, 21719, Class348_Sub8.aRenderer6654, Class348_Sub40_Sub3.anInt9109 shr 3)

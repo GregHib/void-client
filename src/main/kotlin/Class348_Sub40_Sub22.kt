@@ -194,7 +194,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
                 if (i < 18) aClass304_9303 = null
                 Class348_Sub40_Sub3.Companion.anInt9109 = Class73.anIntArray4780!![i_23_]
                 Class367_Sub4.anInt7319 = Class348_Sub40_Sub3.Companion.anInt9109
-                Class290.method2196((-9).toByte())
+                BufferToggleState.method2196((-9).toByte())
                 Class62.anIntArrayArrayArray1116 = (Array<Array<IntArray?>?>(4) { Array<IntArray?>(Class367_Sub4.anInt7319 shr 3) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109 shr 3) } })
                 FlickeringEffectsOptionState.anIntArrayArray5921 = (Array<IntArray?>(Class367_Sub4.anInt7319) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109) })
                 Class348_Sub42_Sub17.anIntArrayArray9678 = (Array<IntArray?>(Class367_Sub4.anInt7319) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109) })

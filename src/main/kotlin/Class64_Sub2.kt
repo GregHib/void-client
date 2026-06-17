@@ -33,7 +33,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var anInt5418 = 0
     private var aHa_Sub3_5419: NativeRenderer? = null
     private var aShortArray5423: ShortArray? = null
-    private var aClass290_5424: Class290? = null
+    private var aBufferToggleState_5424: BufferToggleState? = null
     private var aShort5427: Short = 0
     private var aBoolean5428 = false
     private var anIntArray5429: IntArray? = null
@@ -47,7 +47,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var aShort5452: Short = 0
     private var anIntArray5455: IntArray? = null
     private var aModelFacePriorityNodeArray5457: Array<ModelFacePriorityNode?>? = null
-    private var aClass290_5460: Class290? = null
+    private var aBufferToggleState_5460: BufferToggleState? = null
     private var anInt5461 = 0
     private var aBoolean5462 = false
     private var anInt5463 = 0
@@ -60,7 +60,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var aFloatArray5476: FloatArray? = null
     private var aBoolean5477 = false
     private var anInt5478 = 0
-    private var aClass290_5482: Class290? = null
+    private var aBufferToggleState_5482: BufferToggleState? = null
     private var aAsyncTaskHandle_5485: AsyncTaskHandle? = null
     private var aShortArray5486: ShortArray? = null
     private var anIntArrayArray5492: Array<IntArray?>? = null
@@ -81,7 +81,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var aByteArray5515: ByteArray? = null
     private var anInt5516 = 0
     private var anIntArray5519: IntArray? = null
-    private var aClass290_5520: Class290? = null
+    private var aBufferToggleState_5520: BufferToggleState? = null
     private var aClass353Array5524: Array<Class353?>? = null
     private fun method659(i: Int) {
         if (aClass353Array5524 != null) {
@@ -98,7 +98,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f_1_ = (0.3333333f * ((anIntArray5519!![class353.anInt4344]) + (anIntArray5519!![class353.anInt4349]) + (anIntArray5519!![class353.anInt4339])).toFloat())
                     val f_2_ = (0.3333333f * ((anIntArray5429!![class353.anInt4339]) + (anIntArray5429!![class353.anInt4344]) + (anIntArray5429!![class353.anInt4349])).toFloat())
                     val f_3_ = (f_2_ * Class348_Sub42_Sub4.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * Class318_Sub1_Sub2_Sub1.aFloat10199) + Class345.aFloat4268)
-                    val f_4_ = (Class348_Sub12.aFloat6752 + (Class318_Sub6.aFloat6430 * f_2_ + (Class348_Sub20.aFloat6835 * f + f_1_ * Class290.aFloat3710)))
+                    val f_4_ = (Class348_Sub12.aFloat6752 + (Class318_Sub6.aFloat6430 * f_2_ + (Class348_Sub20.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
                     val f_5_ = WorldMapRenderer.aFloat4673 + (Class353.aFloat4338 * f_1_ + f * Class328_Sub3.aFloat6523 + f_2_ * Renderer.aFloat4582)
                     val f_6_ = ((1.0 / sqrt((f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_)).toDouble())).toFloat() * class353.anInt4347.toFloat())
                     val class101_sub2 = aHa_Sub3_5419!!.method3934(-96)
@@ -123,28 +123,28 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
 
     private fun method660(i: Int): Boolean {
         anInt5440++
-        val bool = !aClass290_5482!!.aBoolean3714
-        val bool_8_ = ((anInt5472 and 0x37) != 0 && !aClass290_5424!!.aBoolean3714)
-        val bool_9_ = !aClass290_5520!!.aBoolean3714
-        val bool_10_ = !aClass290_5460!!.aBoolean3714
+        val bool = !aBufferToggleState_5482!!.aBoolean3714
+        val bool_8_ = ((anInt5472 and 0x37) != 0 && !aBufferToggleState_5424!!.aBoolean3714)
+        val bool_9_ = !aBufferToggleState_5520!!.aBoolean3714
+        val bool_10_ = !aBufferToggleState_5460!!.aBoolean3714
         if (!bool_9_ && !bool && !bool_8_ && !bool_10_) return true
         var bool_11_ = true
         if (bool_9_) {
-            if (aClass290_5520!!.anInterface5_Impl1_3708 == null) aClass290_5520!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
-            val interface5_impl1 = aClass290_5520!!.anInterface5_Impl1_3708!!
+            if (aBufferToggleState_5520!!.anInterface5_Impl1_3708 == null) aBufferToggleState_5520!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
+            val interface5_impl1 = aBufferToggleState_5520!!.anInterface5_Impl1_3708!!
             interface5_impl1.method20(12 * anInt5475, 125.toByte(), 12)
             val buffer = interface5_impl1.method19(true, 26775)
             if (buffer != null) {
                 aHa_Sub3_5419!!.aNativeInterface7924!!.copyPositions(anIntArray5511, anIntArray5519, anIntArray5429, aShortArray5470, 0, 12, anInt5475, buffer.getAddress())
                 if (interface5_impl1.method18(6331)) {
-                    aClass290_5520!!.anInterface5_Impl1_3711 = interface5_impl1
-                    aClass290_5520!!.aBoolean3714 = true
+                    aBufferToggleState_5520!!.anInterface5_Impl1_3711 = interface5_impl1
+                    aBufferToggleState_5520!!.aBoolean3714 = true
                 } else bool_11_ = false
             } else bool_11_ = false
         }
         if (bool) {
-            if (aClass290_5482!!.anInterface5_Impl1_3708 == null) aClass290_5482!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
-            val interface5_impl1 = aClass290_5482!!.anInterface5_Impl1_3708!!
+            if (aBufferToggleState_5482!!.anInterface5_Impl1_3708 == null) aBufferToggleState_5482!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
+            val interface5_impl1 = aBufferToggleState_5482!!.anInterface5_Impl1_3708!!
             interface5_impl1.method20(4 * anInt5475, 125.toByte(), 4)
             val buffer = interface5_impl1.method19(true, 26775)
             if (buffer == null) bool_11_ = false
@@ -168,14 +168,14 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     aHa_Sub3_5419!!.aNativeInterface7924!!.copyLighting(aShortArray5486, aByteArray5515, aShortArray5423, is_14_, is_12_, `is`, is_13_, aShort5452.toInt(), aShort5427.toInt(), aShortArray5416, 0, 4, anInt5475, buffer.getAddress())
                 } else aHa_Sub3_5419!!.aNativeInterface7924!!.copyColours(aShortArray5486, aByteArray5515, aShortArray5423, aShort5452.toInt(), aShortArray5416, 0, 4, anInt5475, buffer.getAddress())
                 if (interface5_impl1.method18(6331)) {
-                    aClass290_5482!!.aBoolean3714 = true
-                    aClass290_5482!!.anInterface5_Impl1_3711 = interface5_impl1
+                    aBufferToggleState_5482!!.aBoolean3714 = true
+                    aBufferToggleState_5482!!.anInterface5_Impl1_3711 = interface5_impl1
                 } else bool_11_ = false
             }
         }
         if (bool_8_) {
-            if (aClass290_5424!!.anInterface5_Impl1_3708 == null) aClass290_5424!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
-            val interface5_impl1 = aClass290_5424!!.anInterface5_Impl1_3708!!
+            if (aBufferToggleState_5424!!.anInterface5_Impl1_3708 == null) aBufferToggleState_5424!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
+            val interface5_impl1 = aBufferToggleState_5424!!.anInterface5_Impl1_3708!!
             interface5_impl1.method20(anInt5475 * 12, 125.toByte(), 12)
             val buffer = interface5_impl1.method19(true, 26775)
             if (buffer == null) bool_11_ = false
@@ -197,21 +197,21 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
                 aHa_Sub3_5419!!.aNativeInterface7924!!.copyNormals(is_15_, is_17_, `is`, is_16_, 3.0f / aShort5427.toFloat(), 3.0f / (aShort5427 + aShort5427 / 2).toFloat(), 0, 12, anInt5475, buffer.getAddress())
                 if (interface5_impl1.method18(6331)) {
-                    aClass290_5424!!.aBoolean3714 = true
-                    aClass290_5424!!.anInterface5_Impl1_3711 = interface5_impl1
+                    aBufferToggleState_5424!!.aBoolean3714 = true
+                    aBufferToggleState_5424!!.anInterface5_Impl1_3711 = interface5_impl1
                 } else bool_11_ = false
             }
         }
         if (bool_10_) {
-            if (aClass290_5460!!.anInterface5_Impl1_3708 == null) aClass290_5460!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
-            val interface5_impl1 = aClass290_5460!!.anInterface5_Impl1_3708!!
+            if (aBufferToggleState_5460!!.anInterface5_Impl1_3708 == null) aBufferToggleState_5460!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
+            val interface5_impl1 = aBufferToggleState_5460!!.anInterface5_Impl1_3708!!
             interface5_impl1.method20(anInt5475 * 8, 126.toByte(), 8)
             val buffer = interface5_impl1.method19(true, 26775)
             if (buffer != null) {
                 aHa_Sub3_5419!!.aNativeInterface7924!!.copyTexCoords(aFloatArray5476, aFloatArray5506, 0, 8, anInt5475, buffer.getAddress())
                 if (interface5_impl1.method18(6331)) {
-                    aClass290_5460!!.anInterface5_Impl1_3711 = interface5_impl1
-                    aClass290_5460!!.aBoolean3714 = true
+                    aBufferToggleState_5460!!.anInterface5_Impl1_3711 = interface5_impl1
+                    aBufferToggleState_5460!!.aBoolean3714 = true
                 } else bool_11_ = false
             } else bool_11_ = false
         }
@@ -349,7 +349,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             val f_35_ = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5724) + ((class101_sub2.aFloat5710 * class101_sub2_34_.aFloat5722) + (class101_sub2.aFloat5729 * class101_sub2_34_.aFloat5708)) + class101_sub2_34_.aFloat5710)
             Class348_Sub42_Sub4.aFloat9516 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5711) + (class101_sub2.aFloat5732 * class101_sub2_34_.aFloat5700)))
             Class328_Sub3.aFloat6523 = ((class101_sub2.aFloat5736 * class101_sub2_34_.aFloat5716) + ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5736)))
-            Class290.aFloat3710 = ((class101_sub2.aFloat5722 * class101_sub2_34_.aFloat5722) + (class101_sub2_34_.aFloat5708 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5691))
+            BufferToggleState.aFloat3710 = ((class101_sub2.aFloat5722 * class101_sub2_34_.aFloat5722) + (class101_sub2_34_.aFloat5708 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5691))
             Renderer.aFloat4582 = ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5736) + (class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5716))
             Class318_Sub1_Sub2_Sub1.aFloat10199 = ((class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5704) + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5722)))
             Class348_Sub20.aFloat6835 = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5736) + ((class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5708 * class101_sub2_34_.aFloat5722)))
@@ -406,7 +406,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 val f_57_ = OpenGlTerrainTile.anIntArray8269!![i_56_].toFloat()
                 val f_58_ = Class363.anIntArray4463!![i_56_].toFloat()
                 val f_59_ = Class348_Sub42_Sub12.anIntArray9612!![i_56_].toFloat()
-                val f_60_ = (f_57_ * Class348_Sub20.aFloat6835 + f_59_ * Class290.aFloat3710 + Class318_Sub6.aFloat6430 * f_58_ + f_35_)
+                val f_60_ = (f_57_ * Class348_Sub20.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + Class318_Sub6.aFloat6430 * f_58_ + f_35_)
                 val f_61_ = (Class55.aFloat1010 * f_57_ + f_59_ * Class318_Sub1_Sub2_Sub1.aFloat10199 + f_58_ * Class348_Sub42_Sub4.aFloat9516 + f)
                 var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (Class353.aFloat4338 * f_59_ + Class328_Sub3.aFloat6523 * f_57_))
                 if (f_62_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
@@ -432,7 +432,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f_68_ = anIntArray5511!![i_65_].toFloat()
                     var f_69_ = (Renderer.aFloat4582 * f_66_ + (f_68_ * Class328_Sub3.aFloat6523 + Class353.aFloat4338 * f_67_) + f_36_)
                     val f_70_ = f + (Class318_Sub1_Sub2_Sub1.aFloat10199 * f_67_ + Class55.aFloat1010 * f_68_ + f_66_ * Class348_Sub42_Sub4.aFloat9516)
-                    val f_71_ = (Class318_Sub6.aFloat6430 * f_66_ + (f_68_ * Class348_Sub20.aFloat6835 + Class290.aFloat3710 * f_67_) + f_35_)
+                    val f_71_ = (Class318_Sub6.aFloat6430 * f_66_ + (f_68_ * Class348_Sub20.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
                     if (f_69_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                         if (i_31_ > 0) f_69_ = i_31_.toFloat()
                         val i_72_ = (i_42_.toFloat() * f_70_ / f_69_ + (aHa_Sub3_5419!!.anInt8094).toFloat()).toInt()
@@ -486,19 +486,19 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             aBoolean5402 = false
             if (aModelFacePriorityNodeArray5457 == null && aClass342Array5474 == null && aClass353Array5524 == null) {
                 if (anIntArray5511 != null && !VarpStore.method1317(anInt5472, (-91).toByte(), anInt5463)) {
-                    if (aClass290_5520 == null || aClass290_5520!!.method2197((-62).toByte())) {
+                    if (aBufferToggleState_5520 == null || aBufferToggleState_5520!!.method2197((-62).toByte())) {
                         if (!aBoolean5477) method675(0)
                         anIntArray5511 = null
                     } else aBoolean5402 = true
                 }
                 if (anIntArray5519 != null && !method1887(0, anInt5472, anInt5463)) {
-                    if (aClass290_5520 == null || aClass290_5520!!.method2197((-87).toByte())) {
+                    if (aBufferToggleState_5520 == null || aBufferToggleState_5520!!.method2197((-87).toByte())) {
                         if (!aBoolean5477) method675(0)
                         anIntArray5519 = null
                     } else aBoolean5402 = true
                 }
                 if (anIntArray5429 != null && !method137(anInt5472, -96, anInt5463)) {
-                    if (aClass290_5520 == null || aClass290_5520!!.method2197((-34).toByte())) {
+                    if (aBufferToggleState_5520 == null || aBufferToggleState_5520!!.method2197((-34).toByte())) {
                         if (!aBoolean5477) method675(0)
                         anIntArray5429 = null
                     } else aBoolean5402 = true
@@ -509,7 +509,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 aShortArray5439 = null
             }
             if (aByteArray5499 != null && !Class77.method776(anInt5472, anInt5463, i + -196608)) {
-                if (if ((0x37 and anInt5472) != 0) (aClass290_5424 == null || aClass290_5424!!.method2197((-10).toByte())) else (aClass290_5482 == null || aClass290_5482!!.method2197((-73).toByte()))) {
+                if (if ((0x37 and anInt5472) != 0) (aBufferToggleState_5424 == null || aBufferToggleState_5424!!.method2197((-10).toByte())) else (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-73).toByte()))) {
                     aShortArray5436 = null
                     aShortArray5438 = aShortArray5436
                     aShortArray5493 = aShortArray5438
@@ -517,37 +517,37 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 } else aBoolean5402 = true
             }
             if (aShortArray5486 != null && !method1740(anInt5472, anInt5463, false)) {
-                if (aClass290_5482 != null && !aClass290_5482!!.method2197((-74).toByte())) aBoolean5402 = true
+                if (aBufferToggleState_5482 != null && !aBufferToggleState_5482!!.method2197((-74).toByte())) aBoolean5402 = true
                 else aShortArray5486 = null
             }
             if (aByteArray5515 != null && !Class348_Sub40_Sub29.method3124(anInt5472, (-119).toByte(), anInt5463)) {
-                if (aClass290_5482 == null || aClass290_5482!!.method2197((-20).toByte())) aByteArray5515 = null
+                if (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-20).toByte())) aByteArray5515 = null
                 else aBoolean5402 = true
             }
             if (aFloatArray5476 != null && !FrameStatsReset.method1132(1673, anInt5472, anInt5463)) {
-                if (aClass290_5460 == null || aClass290_5460!!.method2197((-66).toByte())) {
+                if (aBufferToggleState_5460 == null || aBufferToggleState_5460!!.method2197((-66).toByte())) {
                     aFloatArray5506 = null
                     aFloatArray5476 = aFloatArray5506
                 } else aBoolean5402 = true
             }
             if (aShortArray5423 != null && !method219(anInt5463, false, anInt5472)) {
-                if (aClass290_5482 != null && !aClass290_5482!!.method2197((-125).toByte())) aBoolean5402 = true
+                if (aBufferToggleState_5482 != null && !aBufferToggleState_5482!!.method2197((-125).toByte())) aBoolean5402 = true
                 else aShortArray5423 = null
             }
             if (i != 262144) method623(-95, 94, null, true, 116, 62)
             if (aShortArray5508 != null && !HeapDiagnosticsHolder.method1299(i + 131072, anInt5463, anInt5472)) {
-                if ((aAsyncTaskHandle_5485 == null || aAsyncTaskHandle_5485!!.method1437((-100).toByte())) && (aClass290_5482 == null || aClass290_5482!!.method2197((-56).toByte()))) {
+                if ((aAsyncTaskHandle_5485 == null || aAsyncTaskHandle_5485!!.method1437((-100).toByte())) && (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-56).toByte()))) {
                     aShortArray5512 = null
                     aShortArray5495 = aShortArray5512
                     aShortArray5508 = aShortArray5495
                 } else aBoolean5402 = true
             }
             if (aShortArray5470 != null) {
-                if (aClass290_5520 == null || aClass290_5520!!.method2197((-83).toByte())) aShortArray5470 = null
+                if (aBufferToggleState_5520 == null || aBufferToggleState_5520!!.method2197((-83).toByte())) aShortArray5470 = null
                 else aBoolean5402 = true
             }
             if (aShortArray5416 != null) {
-                if (aClass290_5482 == null || aClass290_5482!!.method2197((-36).toByte())) aShortArray5416 = null
+                if (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-36).toByte())) aShortArray5416 = null
                 else aBoolean5402 = true
             }
             if (anIntArrayArray5492 != null && !GlElementArrayBuffer.method1158(anInt5472, -1, anInt5463)) {
@@ -608,11 +608,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
 
     fun method664(i: Int) {
         anInt5483++
-        if (aClass290_5520 != null) aClass290_5520!!.method2195(false)
-        if (aClass290_5460 != null) aClass290_5460!!.method2195(false)
-        if (aClass290_5482 != null) aClass290_5482!!.method2195(false)
+        if (aBufferToggleState_5520 != null) aBufferToggleState_5520!!.method2195(false)
+        if (aBufferToggleState_5460 != null) aBufferToggleState_5460!!.method2195(false)
+        if (aBufferToggleState_5482 != null) aBufferToggleState_5482!!.method2195(false)
         if (i != -23755) aBoolean5477 = false
-        if (aClass290_5424 != null) aClass290_5424!!.method2195(false)
+        if (aBufferToggleState_5424 != null) aBufferToggleState_5424!!.method2195(false)
         if (aAsyncTaskHandle_5485 != null) aAsyncTaskHandle_5485!!.method1435((-95).toByte())
     }
 
@@ -900,7 +900,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private fun method667(i: Int) {
         anInt5491++
         if (i == 0) {
-            if (aClass290_5520 != null) aClass290_5520!!.aBoolean3714 = false
+            if (aBufferToggleState_5520 != null) aBufferToggleState_5520!!.aBoolean3714 = false
         }
     }
 
@@ -971,12 +971,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 class64_sub2_154_.anIntArray5519 = anIntArray5519
             }
             if (CompassSmoother.method2015(i, anInt5472, 7)) {
-                class64_sub2_154_.aClass290_5520 = class64_sub2_153_!!.aClass290_5520
-                class64_sub2_154_.aClass290_5520!!.anInterface5_Impl1_3711 = aClass290_5520!!.anInterface5_Impl1_3711
-                class64_sub2_154_.aClass290_5520!!.aBoolean3714 = aClass290_5520!!.aBoolean3714
-                class64_sub2_154_.aClass290_5520!!.aBoolean3709 = true
-            } else if (!ServerConnectionInfo.method1258(i, -9301, anInt5472)) class64_sub2_154_.aClass290_5520 = null
-            else class64_sub2_154_.aClass290_5520 = aClass290_5520
+                class64_sub2_154_.aBufferToggleState_5520 = class64_sub2_153_!!.aBufferToggleState_5520
+                class64_sub2_154_.aBufferToggleState_5520!!.anInterface5_Impl1_3711 = aBufferToggleState_5520!!.anInterface5_Impl1_3711
+                class64_sub2_154_.aBufferToggleState_5520!!.aBoolean3714 = aBufferToggleState_5520!!.aBoolean3714
+                class64_sub2_154_.aBufferToggleState_5520!!.aBoolean3709 = true
+            } else if (!ServerConnectionInfo.method1258(i, -9301, anInt5472)) class64_sub2_154_.aBufferToggleState_5520 = null
+            else class64_sub2_154_.aBufferToggleState_5520 = aBufferToggleState_5520
             if (DetailLevelOptionState.method1833((-122).toByte(), i, anInt5472)) {
                 if (class64_sub2_153_!!.aShortArray5486 != null && (anInt5478 <= class64_sub2_153_.aShortArray5486!!.size)) class64_sub2_154_.aShortArray5486 = class64_sub2_153_.aShortArray5486
                 else {
@@ -997,12 +997,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 for (i_163_ in 0..<anInt5478) class64_sub2_154_.aByteArray5515!![i_163_] = aByteArray5515!![i_163_]
             } else class64_sub2_154_.aByteArray5515 = aByteArray5515
             if (Class348_Sub42_Sub8_Sub2.method3200(i, anInt5472, (-75).toByte())) {
-                class64_sub2_154_.aClass290_5482 = class64_sub2_153_!!.aClass290_5482
-                class64_sub2_154_.aClass290_5482!!.aBoolean3709 = true
-                class64_sub2_154_.aClass290_5482!!.aBoolean3714 = aClass290_5482!!.aBoolean3714
-                class64_sub2_154_.aClass290_5482!!.anInterface5_Impl1_3711 = aClass290_5482!!.anInterface5_Impl1_3711
-            } else if (Class296.method2224(i, 117.toByte(), anInt5472)) class64_sub2_154_.aClass290_5482 = aClass290_5482
-            else class64_sub2_154_.aClass290_5482 = null
+                class64_sub2_154_.aBufferToggleState_5482 = class64_sub2_153_!!.aBufferToggleState_5482
+                class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3709 = true
+                class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3714 = aBufferToggleState_5482!!.aBoolean3714
+                class64_sub2_154_.aBufferToggleState_5482!!.anInterface5_Impl1_3711 = aBufferToggleState_5482!!.anInterface5_Impl1_3711
+            } else if (Class296.method2224(i, 117.toByte(), anInt5472)) class64_sub2_154_.aBufferToggleState_5482 = aBufferToggleState_5482
+            else class64_sub2_154_.aBufferToggleState_5482 = null
             if (LocalizedText.method2058(i, anInt5472, 116)) {
                 if (class64_sub2_153_!!.aShortArray5493 == null || (anInt5475 > class64_sub2_153_.aShortArray5493!!.size)) {
                     val i_164_ = anInt5475
@@ -1055,12 +1055,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 class64_sub2_154_.aShortArray5438 = aShortArray5438
             }
             if (Crc64Hashable.method1113(i, anInt5472, -30)) {
-                class64_sub2_154_.aClass290_5424 = class64_sub2_153_!!.aClass290_5424
-                class64_sub2_154_.aClass290_5424!!.anInterface5_Impl1_3711 = aClass290_5424!!.anInterface5_Impl1_3711
-                class64_sub2_154_.aClass290_5424!!.aBoolean3709 = true
-                class64_sub2_154_.aClass290_5424!!.aBoolean3714 = aClass290_5424!!.aBoolean3714
-            } else if (!GlowPostProcessor.method1412((-35).toByte(), anInt5472, i)) class64_sub2_154_.aClass290_5424 = null
-            else class64_sub2_154_.aClass290_5424 = aClass290_5424
+                class64_sub2_154_.aBufferToggleState_5424 = class64_sub2_153_!!.aBufferToggleState_5424
+                class64_sub2_154_.aBufferToggleState_5424!!.anInterface5_Impl1_3711 = aBufferToggleState_5424!!.anInterface5_Impl1_3711
+                class64_sub2_154_.aBufferToggleState_5424!!.aBoolean3709 = true
+                class64_sub2_154_.aBufferToggleState_5424!!.aBoolean3714 = aBufferToggleState_5424!!.aBoolean3714
+            } else if (!GlowPostProcessor.method1412((-35).toByte(), anInt5472, i)) class64_sub2_154_.aBufferToggleState_5424 = null
+            else class64_sub2_154_.aBufferToggleState_5424 = aBufferToggleState_5424
             if (method3194(i, anInt5472, 121.toByte())) {
                 if (class64_sub2_153_!!.aFloatArray5476 == null || (class64_sub2_153_.aFloatArray5476!!.size < anInt5478)) {
                     val i_168_ = anInt5475
@@ -1081,12 +1081,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 class64_sub2_154_.aFloatArray5506 = aFloatArray5506
             }
             if (ParticleDefLoader.method1379(4, anInt5472, i)) {
-                class64_sub2_154_.aClass290_5460 = class64_sub2_153_!!.aClass290_5460
-                class64_sub2_154_.aClass290_5460!!.anInterface5_Impl1_3711 = aClass290_5460!!.anInterface5_Impl1_3711
-                class64_sub2_154_.aClass290_5460!!.aBoolean3714 = aClass290_5460!!.aBoolean3714
-                class64_sub2_154_.aClass290_5460!!.aBoolean3709 = true
-            } else if (method1837(anInt5472, 56, i)) class64_sub2_154_.aClass290_5460 = aClass290_5460
-            else class64_sub2_154_.aClass290_5460 = null
+                class64_sub2_154_.aBufferToggleState_5460 = class64_sub2_153_!!.aBufferToggleState_5460
+                class64_sub2_154_.aBufferToggleState_5460!!.anInterface5_Impl1_3711 = aBufferToggleState_5460!!.anInterface5_Impl1_3711
+                class64_sub2_154_.aBufferToggleState_5460!!.aBoolean3714 = aBufferToggleState_5460!!.aBoolean3714
+                class64_sub2_154_.aBufferToggleState_5460!!.aBoolean3709 = true
+            } else if (method1837(anInt5472, 56, i)) class64_sub2_154_.aBufferToggleState_5460 = aBufferToggleState_5460
+            else class64_sub2_154_.aBufferToggleState_5460 = null
             if (method3262(i, anInt5472, 94)) {
                 if (class64_sub2_153_!!.aShortArray5508 != null && (class64_sub2_153_.aShortArray5508!!.size >= anInt5478)) {
                     class64_sub2_154_.aShortArray5508 = class64_sub2_153_.aShortArray5508
@@ -1274,10 +1274,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         f_187_ = ((-anInt5510.toFloat() + f_184_) * aHa_Sub3_5419!!.anInt8129.toFloat())
                     }
                     if (!(aHa_Sub3_5419!!.aFloat8158 <= f_187_ / i.toFloat()) && !(f_186_ / i.toFloat() <= aHa_Sub3_5419!!.aFloat8126)) {
-                        Class290.aFloat3710 = ((class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_180_.aFloat5722)) + ((class101_sub2_180_.aFloat5700) * (class101_sub2.aFloat5708))))
+                        BufferToggleState.aFloat3710 = ((class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_180_.aFloat5722)) + ((class101_sub2_180_.aFloat5700) * (class101_sub2.aFloat5708))))
                         Class348_Sub12.aFloat6752 = (class101_sub2.aFloat5710 + ((class101_sub2.aFloat5708 * (class101_sub2_180_.aFloat5729)) + ((class101_sub2_180_.aFloat5710) * (class101_sub2.aFloat5722)) + ((class101_sub2_180_.aFloat5724) * (class101_sub2.aFloat5732))))
-                        val f_188_ = (Class348_Sub12.aFloat6752 + Class290.aFloat3710 * anInt5461.toFloat())
-                        val f_189_ = (anInt5509.toFloat() * Class290.aFloat3710 + Class348_Sub12.aFloat6752)
+                        val f_188_ = (Class348_Sub12.aFloat6752 + BufferToggleState.aFloat3710 * anInt5461.toFloat())
+                        val f_189_ = (anInt5509.toFloat() * BufferToggleState.aFloat3710 + Class348_Sub12.aFloat6752)
                         val f_190_: Float
                         val f_191_: Float
                         if (f_189_ < f_188_) {
@@ -1300,10 +1300,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 val i_192_ = anInt5467 + anInt5507 shr 1
                                 val i_193_ = anInt5418 + anInt5443 shr 1
                                 val i_194_ = (Class345.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((Class318_Sub1_Sub2_Sub1.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
-                                val i_195_ = (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * Class290.aFloat3710) + (Class318_Sub6.aFloat6430 * i_193_.toFloat())).toInt()
+                                val i_195_ = (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (Class318_Sub6.aFloat6430 * i_193_.toFloat())).toInt()
                                 val i_196_ = ((anInt5461.toFloat() * Class353.aFloat4338) + ((Class328_Sub3.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
                                 val i_197_ = ((anInt5509.toFloat() * (Class318_Sub1_Sub2_Sub1.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_193_.toFloat())).toInt()
-                                val i_198_ = ((Class318_Sub6.aFloat6430 * i_193_.toFloat()) + (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (Class290.aFloat3710 * anInt5509.toFloat()))).toInt()
+                                val i_198_ = ((Class318_Sub6.aFloat6430 * i_193_.toFloat()) + (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
                                 class318_sub3.anInt6402 = ((i_195_ * aHa_Sub3_5419!!.anInt8134 / i) + aHa_Sub3_5419!!.anInt8130)
                                 class318_sub3.anInt6405 = (aHa_Sub3_5419!!.anInt8094 - -(i_194_ * (aHa_Sub3_5419!!.anInt8129) / i))
                                 class318_sub3.anInt6404 = (aHa_Sub3_5419!!.anInt8130 - -(aHa_Sub3_5419!!.anInt8134 * i_198_ / i))
@@ -1382,7 +1382,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     }
 
     private fun method670(i: Int) {
-        if (aClass290_5482 != null) aClass290_5482!!.aBoolean3714 = false
+        if (aBufferToggleState_5482 != null) aBufferToggleState_5482!!.aBoolean3714 = false
         if (i > -82) LA(97)
         anInt5458++
     }
@@ -1749,10 +1749,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         f_314_ = (aHa_Sub3_5419!!.anInt8129.toFloat() * (-anInt5510.toFloat() + f_311_))
                     }
                     if (!(aHa_Sub3_5419!!.aFloat8158 <= f_314_ / f_309_) && !(f_313_ / f_309_ <= aHa_Sub3_5419!!.aFloat8126)) {
-                        Class290.aFloat3710 = ((class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_307_.aFloat5722)) + (class101_sub2.aFloat5708 * (class101_sub2_307_.aFloat5700))))
+                        BufferToggleState.aFloat3710 = ((class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_307_.aFloat5722)) + (class101_sub2.aFloat5708 * (class101_sub2_307_.aFloat5700))))
                         Class348_Sub12.aFloat6752 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5732) + (((class101_sub2_307_.aFloat5729) * (class101_sub2.aFloat5708)) + ((class101_sub2_307_.aFloat5710) * (class101_sub2.aFloat5722))) + class101_sub2.aFloat5710)
-                        val f_315_ = (anInt5461.toFloat() * Class290.aFloat3710 + Class348_Sub12.aFloat6752)
-                        val f_316_ = (Class290.aFloat3710 * anInt5509.toFloat() + Class348_Sub12.aFloat6752)
+                        val f_315_ = (anInt5461.toFloat() * BufferToggleState.aFloat3710 + Class348_Sub12.aFloat6752)
+                        val f_316_ = (BufferToggleState.aFloat3710 * anInt5509.toFloat() + Class348_Sub12.aFloat6752)
                         val f_317_: Float
                         val f_318_: Float
                         if (f_316_ < f_315_) {
@@ -1777,7 +1777,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 val i_320_ = anInt5507 - -anInt5467 shr 1
                                 val i_321_ = anInt5418 + anInt5443 shr 1
                                 val i_322_ = ((anInt5461.toFloat() * (Class318_Sub1_Sub2_Sub1.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_321_.toFloat())).toInt()
-                                val i_323_ = ((Class318_Sub6.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * Class348_Sub20.aFloat6835) + Class348_Sub12.aFloat6752 + (Class290.aFloat3710 * anInt5461.toFloat()))).toInt()
+                                val i_323_ = ((Class318_Sub6.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * Class348_Sub20.aFloat6835) + Class348_Sub12.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
                                 val i_324_ = (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * Class328_Sub3.aFloat6523) + (anInt5461.toFloat() * Class353.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_324_) bool = true
                                 else {
@@ -1785,7 +1785,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                     class318_sub3.anInt6405 = ((aHa_Sub3_5419!!.anInt8129 * i_322_ / i_324_) + (aHa_Sub3_5419!!.anInt8094))
                                 }
                                 val i_325_ = ((Class318_Sub1_Sub2_Sub1.aFloat10199) * anInt5509.toFloat() + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
-                                val i_326_ = ((Class290.aFloat3710 * anInt5509.toFloat()) + (Class348_Sub12.aFloat6752 + (i_320_.toFloat() * (Class348_Sub20.aFloat6835))) + (i_321_.toFloat() * Class318_Sub6.aFloat6430)).toInt()
+                                val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (Class348_Sub12.aFloat6752 + (i_320_.toFloat() * (Class348_Sub20.aFloat6835))) + (i_321_.toFloat() * Class318_Sub6.aFloat6430)).toInt()
                                 val i_327_ = ((anInt5509.toFloat() * Class353.aFloat4338) + (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * Class328_Sub3.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_327_) bool = true
                                 else {
@@ -1831,10 +1831,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
 
     public override fun s(i: Int) {
         anInt5445++
-        if (aClass290_5520 != null) aClass290_5520!!.aBoolean3709 = CompassSmoother.method2015(i, anInt5472, 7)
-        if (aClass290_5460 != null) aClass290_5460!!.aBoolean3709 = ParticleDefLoader.method1379(4, anInt5472, i)
-        if (aClass290_5482 != null) aClass290_5482!!.aBoolean3709 = method3200(i, anInt5472, 73.toByte())
-        if (aClass290_5424 != null) aClass290_5424!!.aBoolean3709 = Crc64Hashable.method1113(i, anInt5472, -10)
+        if (aBufferToggleState_5520 != null) aBufferToggleState_5520!!.aBoolean3709 = CompassSmoother.method2015(i, anInt5472, 7)
+        if (aBufferToggleState_5460 != null) aBufferToggleState_5460!!.aBoolean3709 = ParticleDefLoader.method1379(4, anInt5472, i)
+        if (aBufferToggleState_5482 != null) aBufferToggleState_5482!!.aBoolean3709 = method3200(i, anInt5472, 73.toByte())
+        if (aBufferToggleState_5424 != null) aBufferToggleState_5424!!.aBoolean3709 = Crc64Hashable.method1113(i, anInt5472, -10)
         anInt5463 = i
         aBoolean5402 = true
         if (aHeadIconRenderer_5503 != null && (anInt5463 and 0x10000) == 0) {
@@ -2389,9 +2389,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         anInt5441++
         if (anInt5516 != 0) {
             if (method660(i xor 0x18d78060.inv()) && method666(-128)) {
-                aHa_Sub3_5419!!.method3925(i + -416776294, (aClass290_5520!!.anInterface5_Impl1_3711), 0)
-                aHa_Sub3_5419!!.method3925(i xor 0x18d78057, (aClass290_5482!!.anInterface5_Impl1_3711), 1)
-                aHa_Sub3_5419!!.method3925(i xor 0x18d78079.inv(), (aClass290_5460!!.anInterface5_Impl1_3711), 2)
+                aHa_Sub3_5419!!.method3925(i + -416776294, (aBufferToggleState_5520!!.anInterface5_Impl1_3711), 0)
+                aHa_Sub3_5419!!.method3925(i xor 0x18d78057, (aBufferToggleState_5482!!.anInterface5_Impl1_3711), 1)
+                aHa_Sub3_5419!!.method3925(i xor 0x18d78079.inv(), (aBufferToggleState_5460!!.anInterface5_Impl1_3711), 2)
                 val bool: Boolean
                 if ((anInt5472 and 0x37) == 0) {
                     bool = false
@@ -2400,7 +2400,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 } else {
                     bool = true
                     aHa_Sub3_5419!!.method3866(true, true)
-                    aHa_Sub3_5419!!.method3925(i xor 0x18d7806c.inv(), (aClass290_5424!!.anInterface5_Impl1_3711), 3)
+                    aHa_Sub3_5419!!.method3925(i xor 0x18d7806c.inv(), (aBufferToggleState_5424!!.anInterface5_Impl1_3711), 3)
                     aHa_Sub3_5419!!.method3862(0, (aHa_Sub3_5419!!.aModelBatchBase_8208))
                 }
                 var i_474_ = 0
@@ -2430,8 +2430,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private fun method673(i: Byte) {
         val i_481_ = 1 % ((25 - i) / 40)
         if ((anInt5472 and 0x37) == 0) {
-            if (aClass290_5482 != null) aClass290_5482!!.aBoolean3714 = false
-        } else if (aClass290_5424 != null) aClass290_5424!!.aBoolean3714 = false
+            if (aBufferToggleState_5482 != null) aBufferToggleState_5482!!.aBoolean3714 = false
+        } else if (aBufferToggleState_5424 != null) aBufferToggleState_5424!!.aBoolean3714 = false
         anInt5405++
     }
 
@@ -3345,10 +3345,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             aBoolean5462 = bool_765_
             anInt5472 = i_764_
             aHa_Sub3_5419 = var_ha_Sub3
-            if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aClass290_5520 = Class290(CompassSmoother.method2015(anInt5463, anInt5472, 7))
-            if (bool || method1837(anInt5472, 102, anInt5463)) aClass290_5460 = Class290(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
-            if (bool || Class296.method2224(anInt5463, 110.toByte(), anInt5472)) aClass290_5482 = Class290(Class348_Sub42_Sub8_Sub2.method3200(anInt5463, anInt5472, (-82).toByte()))
-            if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aClass290_5424 = Class290(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
+            if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aBufferToggleState_5520 = BufferToggleState(CompassSmoother.method2015(anInt5463, anInt5472, 7))
+            if (bool || method1837(anInt5472, 102, anInt5463)) aBufferToggleState_5460 = BufferToggleState(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
+            if (bool || Class296.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(Class348_Sub42_Sub8_Sub2.method3200(anInt5463, anInt5472, (-82).toByte()))
+            if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aBufferToggleState_5424 = BufferToggleState(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
             if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(Class348_Sub9.method2783(anInt5472, (-97).toByte(), anInt5463))
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))

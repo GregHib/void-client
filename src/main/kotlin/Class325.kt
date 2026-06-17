@@ -759,7 +759,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 60) {
                             val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
-                                Class290.anInt3707++
+                                BufferToggleState.anInt3707++
                                 Class348.anInt4292 = 0
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_

@@ -1540,7 +1540,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub1_Sub2.aIntRange_8817 == Class348_Sub3.aIntRange_6584) {
                 ShaderProgram.anInt7276 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(69.toByte())
-                Class290.anInt3713 = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-82).toByte())
+                BufferToggleState.anInt3713 = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-82).toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

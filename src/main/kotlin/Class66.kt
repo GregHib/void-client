@@ -188,12 +188,12 @@ object Class66 {
                 ShaderProgram.anInt7276 = anIntArray1149!![anInt1173]
                 Class57.aBoxedIntHolder_1055 = Class38.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
                 if (Class57.aBoxedIntHolder_1055 == null) Class57.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
-                Class290.anInt3713 = anIntArray1149!![anInt1173 + 2]
+                BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
                 val class348_sub47 = method2148(Class348_Sub14.aClass351_6766, (Class348_Sub23_Sub2.aClass77_9029), -111)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, ShaderProgram.anInt7276)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, Class57.aBoxedIntHolder_1055!!.anInt2970)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, Class290.anInt3713)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, BufferToggleState.anInt3713)
                 Class348_Sub42_Sub14.method3243(-77, class348_sub47)
                 return
             }
@@ -301,7 +301,7 @@ object Class66 {
                 return
             }
             if (i == 5016) {
-                anIntArray1149!![anInt1173++] = Class290.anInt3713
+                anIntArray1149!![anInt1173++] = BufferToggleState.anInt3713
                 return
             }
             if (i == 5017) {
@@ -2296,7 +2296,7 @@ object Class66 {
                     return
                 }
                 if (i == 6909) {
-                    anIntArray1149!![anInt1173++] = if (Class290.aBoolean3706) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (BufferToggleState.aBoolean3706) 1 else 0
                     return
                 }
                 if (i == 6910) {

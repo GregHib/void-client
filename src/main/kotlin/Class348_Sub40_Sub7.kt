@@ -192,7 +192,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             i_18_++
                                             continue
                                         }
-                                        if (class46.anInt765 == Class290.anInt3717) {
+                                        if (class46.anInt765 == BufferToggleState.anInt3717) {
                                             if (class46.method425((Class348_Sub8.aRenderer6654!!), 8.toByte()) != null) {
                                                 method3570(false)
                                                 LinkedNodeListIterator.method1007(class46, (Class348_Sub8.aRenderer6654), i_24_, i_25_, 22960)

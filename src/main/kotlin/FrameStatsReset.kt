@@ -1741,7 +1741,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class373_Sub2.anInt7431 = 0
             SpriteSheetCache.anInt2560 = 0
             SocketStreamWorker.anInt2664 = 0
-            Class290.anInt3707 = 0
+            BufferToggleState.anInt3707 = 0
             ModelHeaderCache.anInt3274 = 0
             GlRectangleTexture.anInt8650 = 0
             Npc.anInt10508 = 0
@@ -1908,7 +1908,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8934 = 0
             Class30.anInt414 = 0
             OpenGlRenderer.anInt7533 = 0
-            Class290.anInt3716 = 0
+            BufferToggleState.anInt3716 = 0
             ScreenAnchorAlignment.anInt2882 = 0
             BufferPositionTracker.anInt3148 = 0
             Npc.anInt10502 = 0
@@ -2485,7 +2485,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8903 = 0
             Class361.anInt4434 = 0
             Class348_Sub31_Sub2.anInt9074 = 0
-            Class290.anInt3715 = 0
+            BufferToggleState.anInt3715 = 0
             Class70.anInt1206 = 0
             Class377.anInt9879 = 0
             ParticleSortRenderer.anInt3016 = 0
@@ -3583,7 +3583,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TwoStateOptionState.anInt6134 = 0
             Class64.anInt1130 = 0
             Client.anInt5187 = 0
-            Class290.anInt3718 = 0
+            BufferToggleState.anInt3718 = 0
             FixedFunctionMaterialPass.anInt6213 = 0
             Class301.anInt3826 = 0
             Class66.anInt1156 = 0

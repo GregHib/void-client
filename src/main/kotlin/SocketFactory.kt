@@ -65,7 +65,7 @@ abstract class SocketFactory {
                 anInt3471++
                 NormalMapGenerator.anInt3451 = i_0_
                 OutputStream_Sub1.anInt98 = i_2_
-                Class290.anInt3712 = i_6_
+                BufferToggleState.anInt3712 = i_6_
                 ScriptCompilerThread.aSpriteImage_1727 = null
                 Class348_Sub32.anInt6938 = i_1_
                 Class359.method3490(true)
