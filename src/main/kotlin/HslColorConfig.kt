@@ -112,7 +112,7 @@ class HslColorConfig {
                 if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
                     var class348_sub7 = (Class5_Sub1_Sub1.aClass262_9931!!.method1995(4) as Class348_Sub7?)
                     while (class348_sub7 != null) {
-                        Exception_Sub1.aClass255_112!!.method1932(var_renderer, class348_sub7.anInt6647, class348_sub7.anInt6648, WorldMapRenderer.aClass324_4684, (if (!class348_sub7.aBoolean6650) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
+                        Exception_Sub1.aModelHeaderCache_112!!.method1932(var_renderer, class348_sub7.anInt6647, class348_sub7.anInt6648, WorldMapRenderer.aClass324_4684, (if (!class348_sub7.aBoolean6650) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
                         class348_sub7.method2715(29.toByte())
                         class348_sub7 = Class5_Sub1_Sub1.aClass262_9931!!.method1990(31.toByte()) as Class348_Sub7?
                     }
@@ -126,7 +126,7 @@ class HslColorConfig {
                     }
                     var class348_sub7 = (Class5_Sub1_Sub1.aClass262_9931!!.method1995(i + 4) as Class348_Sub7?)
                     while (class348_sub7 != null) {
-                        Exception_Sub1.aClass255_112!!.method1932(Class348_Sub34.aRenderer6968, class348_sub7.anInt6647, class348_sub7.anInt6648, Class348_Sub40_Sub9.aClass324_9173, (if (class348_sub7.aBoolean6650) (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) else null), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
+                        Exception_Sub1.aModelHeaderCache_112!!.method1932(Class348_Sub34.aRenderer6968, class348_sub7.anInt6647, class348_sub7.anInt6648, Class348_Sub40_Sub9.aClass324_9173, (if (class348_sub7.aBoolean6650) (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) else null), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
                         class348_sub7.method2715(21.toByte())
                         class348_sub7 = Class5_Sub1_Sub1.aClass262_9931!!.method1990(118.toByte()) as Class348_Sub7?
                     }

@@ -16,7 +16,7 @@ class ItemDefinition {
     var anInt2759: Int
     private var anInt2760: Int
     @JvmField
-    var aClass255_2761: Class255? = null
+    var aModelHeaderCache_2761: ModelHeaderCache? = null
     @JvmField
     var anIntArray2762: IntArray? = null
     @JvmField
@@ -95,10 +95,10 @@ class ItemDefinition {
             i_0_ = anInt2822
         }
         if (i_0_ == -1) return null
-        var class124 = Class300.method2277(0, this.aClass255_2761!!.aClass45_3268!!, i_0_, -1)
+        var class124 = Class300.method2277(0, this.aModelHeaderCache_2761!!.aClass45_3268!!, i_0_, -1)
         if ((class124!!.anInt1830.inv()) > i) class124.method1092(2, 54)
         if (i_1_ != -1) {
-            val class124_2_ = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), i_1_, -1)
+            val class124_2_ = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), i_1_, -1)
             if (class124_2_!!.anInt1830 < 13) class124_2_.method1092(2, i xor 0x78.inv())
             val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_2_)
             class124 = ModelDefinition(modelDefinitions, 2)
@@ -123,8 +123,8 @@ class ItemDefinition {
         }
         if (i_5_ == -1) return true
         var bool_8_ = true
-        if (!this.aClass255_2761!!.aClass45_3268!!.method420(-10499, i_5_, 0)) bool_8_ = false
-        if (i_7_ != -1 && !this.aClass255_2761!!.aClass45_3268!!.method420(-10499, i_7_, 0)) bool_8_ = false
+        if (!this.aModelHeaderCache_2761!!.aClass45_3268!!.method420(-10499, i_5_, 0)) bool_8_ = false
+        if (i_7_ != -1 && !this.aModelHeaderCache_2761!!.aClass45_3268!!.method420(-10499, i_7_, 0)) bool_8_ = false
         return bool_8_
     }
 
@@ -170,7 +170,7 @@ class ItemDefinition {
             if (itemDefinition_9_.aStringArray2763 != null) {
                 for (i_11_ in 0..3) this.aStringArray2763!![i_11_] = itemDefinition_9_.aStringArray2763!![i_11_]
             }
-            this.aStringArray2763!![4] = Class274.aClass274_3489!!.method2063((this.aClass255_2761!!.anInt3286), 544)
+            this.aStringArray2763!![4] = Class274.aClass274_3489!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
         }
@@ -180,8 +180,8 @@ class ItemDefinition {
         anInt2816++
         if (i_12_ != -11619) this.anInt2788 = -113
         if (i < 100000) return "<col=ffff00>" + i + "</col>"
-        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + Class274.aClass274_3519!!.method2063((this.aClass255_2761!!.anInt3286), 544) + "</col>")
-        return ("<col=00ff80>" + i / 1000000 + Class274.aClass274_3517!!.method2063((this.aClass255_2761!!.anInt3286), 544) + "</col>")
+        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + Class274.aClass274_3519!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
+        return ("<col=00ff80>" + i / 1000000 + Class274.aClass274_3517!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
     }
 
     fun method1558(bool: Boolean, bool_13_: Boolean): ModelDefinition? {
@@ -196,16 +196,16 @@ class ItemDefinition {
             i_14_ = anInt2760
         }
         if (i == -1) return null
-        var class124 = Class300.method2277(0, this.aClass255_2761!!.aClass45_3268!!, i, -1)
+        var class124 = Class300.method2277(0, this.aModelHeaderCache_2761!!.aClass45_3268!!, i, -1)
         if (class124!!.anInt1830 < 13) class124.method1092(2, 64)
         if (i_14_ != -1) {
-            val class124_16_ = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), i_14_, -1)
+            val class124_16_ = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), i_14_, -1)
             if (class124_16_!!.anInt1830 < 13) class124_16_.method1092(2, 89)
             if (i_15_ == -1) {
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_)
                 class124 = ModelDefinition(modelDefinitions, 2)
             } else {
-                val class124_17_ = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), i_15_, -1)
+                val class124_17_ = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), i_15_, -1)
                 if (class124_17_!!.anInt1830 < 13) class124_17_.method1092(2, 109)
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_, class124_17_)
                 class124 = ModelDefinition(modelDefinitions, 3)
@@ -239,14 +239,14 @@ class ItemDefinition {
                 for (i_26_ in 0..9) {
                     if (i_21_ >= this.anIntArray2831[i_26_] && this.anIntArray2831[i_26_] != 0) i_25_ = this.anIntArray2762!![i_26_]
                 }
-                if (i_25_ != -1) return (this.aClass255_2761!!.method1940(103, i_25_).method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
+                if (i_25_ != -1) return (this.aModelHeaderCache_2761!!.method1940(103, i_25_).method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
             }
             if (i_23_.toInt() != 88) this.aString2795 = null
             var i_27_ = i
             if (widgetDefinition != null) i_27_ = i_27_ or widgetDefinition.method263(i_24_, 105, i_22_, true)
             var class64: Class64?
-            synchronized(this.aClass255_2761!!.aClass60_3287) {
-                class64 = (this.aClass255_2761!!.aClass60_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as Class64?
+            synchronized(this.aModelHeaderCache_2761!!.aClass60_3287) {
+                class64 = (this.aModelHeaderCache_2761!!.aClass60_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as Class64?
             }
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_27_) != 0) {
                 if (class64 != null) i_27_ = var_renderer!!.method3679(i_27_, class64.ua())
@@ -256,10 +256,10 @@ class ItemDefinition {
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x1
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x2
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x4
-                val class124 = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), anInt2756, -1)
+                val class124 = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), anInt2756, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 97)
-                class64 = var_renderer!!.method3625(class124, i_28_, (this.aClass255_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
+                class64 = var_renderer!!.method3625(class124, i_28_, (this.aModelHeaderCache_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
                 if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) class64.O(anInt2786, anInt2794, anInt2765)
                 if (aShortArray2777 != null) {
                     var i_29_ = 0
@@ -286,8 +286,8 @@ class ItemDefinition {
                     }
                 }
                 class64.s(i_27_)
-                synchronized(this.aClass255_2761!!.aClass60_3287) {
-                    this.aClass255_2761!!.aClass60_3287.method582(class64, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
+                synchronized(this.aModelHeaderCache_2761!!.aClass60_3287) {
+                    this.aModelHeaderCache_2761!!.aClass60_3287.method582(class64, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
                 }
             }
             if (widgetDefinition != null) class64 = widgetDefinition.method269(116, class64, i_24_, i_20_, i_27_, i_22_)
@@ -306,7 +306,7 @@ class ItemDefinition {
             for (i_35_ in 0..9) {
                 if (i >= this.anIntArray2831[i_35_] && this.anIntArray2831[i_35_] != 0) i_34_ = this.anIntArray2762!![i_35_]
             }
-            if (i_34_ != -1) return this.aClass255_2761!!.method1940(95, i_34_)
+            if (i_34_ != -1) return this.aModelHeaderCache_2761!!.method1940(95, i_34_)
         }
         return this
     }
@@ -327,7 +327,7 @@ class ItemDefinition {
     fun method1562(i: Int, bool: Boolean, i_37_: Int, var_renderer: Renderer?, var_renderer_38_: Renderer?, class324: Class324?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_39_: Int, i_40_: Byte, i_41_: Int): IntArray? {
         try {
             anInt2806++
-            val class124 = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), anInt2756, i_40_.toInt() xor 0x65)
+            val class124 = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), anInt2756, i_40_.toInt() xor 0x65)
             if (class124 == null) return null
             if (class124.anInt1830 < 13) class124.method1092(2, i_40_.toInt() xor 0xb.inv())
             if (aShortArray2777 != null) {
@@ -366,11 +366,11 @@ class ItemDefinition {
             var abstractModelRenderer: AbstractModelRenderer? = null
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
-                    abstractModelRenderer = (this.aClass255_2761!!.method1932(var_renderer_38_, i_37_, i, class324, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
+                    abstractModelRenderer = (this.aModelHeaderCache_2761!!.method1932(var_renderer_38_, i_37_, i, class324, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
                     if (abstractModelRenderer == null) return null
                 }
             } else {
-                abstractModelRenderer = (this.aClass255_2761!!.method1932(var_renderer_38_, 0, 10, class324, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
+                abstractModelRenderer = (this.aModelHeaderCache_2761!!.method1932(var_renderer_38_, 0, 10, class324, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
                 if (abstractModelRenderer == null) return null
             }
             val i_48_: Int
@@ -437,9 +437,9 @@ class ItemDefinition {
         }
         if (i_53_ == -1) return true
         var bool_56_ = true
-        if (!this.aClass255_2761!!.aClass45_3268!!.method420(-10499, i_53_, 0)) bool_56_ = false
-        if (i_54_ != -1 && !this.aClass255_2761!!.aClass45_3268!!.method420(i xor 0x2902, i_54_, 0)) bool_56_ = false
-        if (i != i_55_ && !this.aClass255_2761!!.aClass45_3268!!.method420(-10499, i_55_, 0)) bool_56_ = false
+        if (!this.aModelHeaderCache_2761!!.aClass45_3268!!.method420(-10499, i_53_, 0)) bool_56_ = false
+        if (i_54_ != -1 && !this.aModelHeaderCache_2761!!.aClass45_3268!!.method420(i xor 0x2902, i_54_, 0)) bool_56_ = false
+        if (i != i_55_ && !this.aModelHeaderCache_2761!!.aClass45_3268!!.method420(-10499, i_55_, 0)) bool_56_ = false
         return bool_56_
     }
 

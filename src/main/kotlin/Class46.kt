@@ -367,7 +367,7 @@ class Class46 {
         return class348_sub50.aString7211
     }
 
-    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, class255: Class255?, interface17: Interface17?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, class261: Class261?, class278: Class278?, i_24_: Int): Class64? {
+    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, modelHeaderCache: ModelHeaderCache?, interface17: Interface17?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, class261: Class261?, class278: Class278?, i_24_: Int): Class64? {
         var i = i
         try {
             anInt684++
@@ -404,7 +404,7 @@ class Class46 {
             }
             if (this.anInt770 == 3) {
                 if (compositeNpcModelBuilder == null) return null
-                val class64 = compositeNpcModelBuilder.method1230(class255, -402058072, class87, modelDefinitionLoader, interface17, class278, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
+                val class64 = compositeNpcModelBuilder.method1230(modelHeaderCache, -402058072, class87, modelDefinitionLoader, interface17, class278, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -412,7 +412,7 @@ class Class46 {
                 return class64
             }
             if (this.anInt770 == 4) {
-                val class213 = class255!!.method1940(i_23_ + -365, this.anInt753)
+                val class213 = modelHeaderCache!!.method1940(i_23_ + -365, this.anInt753)
                 val class64 = class213.method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
@@ -444,7 +444,7 @@ class Class46 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (class255 != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (class261 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_24_ + ')')
+                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (class261 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
         }
     }
@@ -948,7 +948,7 @@ class Class46 {
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342!!.method1204(0)
             Class348_Sub40_Sub12.aClass263_9195!!.method2006(88)
             MapAreaDefinition.aClass278_2529!!.method2080(127)
-            Exception_Sub1.aClass255_112!!.method1938(126)
+            Exception_Sub1.aModelHeaderCache_112!!.method1938(126)
             ParticleEmitterNode.aClass87_191!!.method838(7)
             Class348_Sub40_Sub18.aClass319_9245!!.method2542(-101)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)

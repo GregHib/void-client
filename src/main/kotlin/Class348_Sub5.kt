@@ -115,13 +115,13 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                                 Class352.anInt4337 = -5
                                 return
                             }
-                            Class255.aServerConnectionInfo_3285!!.method1259(0)
+                            ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
                             Class367_Sub2.anInt7297 = 1
                             HostPingThread.anInt2264 = 0
                             AnimatedModelRenderer.anInt8398++
                         }
                         if (Class367_Sub2.anInt7297 == 1) {
-                            FrameStatsReset.aLinkedQueueNode_5800 = (Class255.aServerConnectionInfo_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                            FrameStatsReset.aLinkedQueueNode_5800 = (ModelHeaderCache.aServerConnectionInfo_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
                             Class367_Sub2.anInt7297 = 2
                         }
                         if (Class367_Sub2.anInt7297 == 2) {
@@ -149,7 +149,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                         Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                     }
                     if (AnimatedModelRenderer.anInt8398 < 2) {
-                        Class255.aServerConnectionInfo_3285!!.method1259(0)
+                        ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
                         HostPingThread.anInt2264 = 0
                         AnimatedModelRenderer.anInt8398++
                         Class367_Sub2.anInt7297 = 1

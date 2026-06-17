@@ -3,7 +3,7 @@ import Class54.Companion.method500
 /* Class255 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class326: Class326?, class45: Class45?, class45_22_: Class45?) {
+class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class326: Class326?, class45: Class45?, class45_22_: Class45?) {
     private val aClass45_3267: Class45?
     var aClass45_3268: Class45? = null
     private var aBoolean3269 = false
@@ -133,7 +133,7 @@ class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
             `is` = aClass45_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
         }
         itemDefinition = ItemDefinition()
-        itemDefinition.aClass255_2761 = this
+        itemDefinition.aModelHeaderCache_2761 = this
         itemDefinition.anInt2769 = i_13_
         itemDefinition.aStringArray2811 = arrayOf<String?>(null, null, Class274.aClass274_3490!!.method2063(this.anInt3286, 544), null, null)
         itemDefinition.aStringArray2763 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491!!.method2063(this.anInt3286, 544)))

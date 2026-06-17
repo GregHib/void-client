@@ -148,7 +148,7 @@ class Class88 {
                             GlRectangleTexture.method254(-5, (-111).toByte())
                             return
                         }
-                        if (BloomGraphicsOptionState.anInt5969 != 2) Class255.aServerConnectionInfo_3285!!.method1259(0)
+                        if (BloomGraphicsOptionState.anInt5969 != 2) ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
                         else Class3.aServerConnectionInfo_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         NpcDefinition.anInt2955 = 1
@@ -156,7 +156,7 @@ class Class88 {
                     }
                     if (NpcDefinition.anInt2955 == 1) {
                         if (BloomGraphicsOptionState.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (Class3.aServerConnectionInfo_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
-                        else FrameStatsReset.aLinkedQueueNode_5800 = (Class255.aServerConnectionInfo_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        else FrameStatsReset.aLinkedQueueNode_5800 = (ModelHeaderCache.aServerConnectionInfo_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
                         NpcDefinition.anInt2955 = 2
                     }
                     if (NpcDefinition.anInt2955 == 2) {
@@ -349,7 +349,7 @@ class Class88 {
                                 ModelDataCache.anInt359 = class348_sub49_sub2.method3369(125.toByte())
                                 ModelBatchBase.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class348_Sub40_Sub12.aClass263_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
-                                Exception_Sub1.aClass255_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
+                                Exception_Sub1.aModelHeaderCache_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
                                 MapAreaDefinition.aClass278_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
                             } else {
                                 if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(Class76.Companion.anInt1288, 107)) return
@@ -486,7 +486,7 @@ class Class88 {
                         GlRectangleTexture.method254(-4, (-87).toByte())
                         GzipDecompressor.method1215(3.toByte())
                     } else {
-                        if (BloomGraphicsOptionState.anInt5969 != 2) Class255.aServerConnectionInfo_3285!!.method1259(0)
+                        if (BloomGraphicsOptionState.anInt5969 != 2) ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
                         else Class3.aServerConnectionInfo_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         SceneRegionState.anInt197 = 0

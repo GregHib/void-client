@@ -89,8 +89,8 @@ class OutputStream_Sub2 : OutputStream() {
                         if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte())
                         if (class51 != null) `is` = class51.anIntArray917
                     }
-                } else `is` = (Exception_Sub1.aClass255_112!!.method1940(-76, class348_sub42_sub12.anInt9599).anIntArray2772)
-            } else `is` = (Exception_Sub1.aClass255_112!!.method1940(-115, class348_sub42_sub12.aLong9605.toInt()).anIntArray2772)
+                } else `is` = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-76, class348_sub42_sub12.anInt9599).anIntArray2772)
+            } else `is` = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-115, class348_sub42_sub12.aLong9605.toInt()).anIntArray2772)
             if (`is` != null) string += AudioResampler.method1273(`is`, true)
             var i = Class369.aFontDefinition_4962!!.method1186(string, Class341.aAbstractModelRendererArray4234, bool)
             if (class348_sub42_sub12.aBoolean9597) i += SceneryDetailOptionState.aAbstractModelRenderer_6097!!.method971() + 4

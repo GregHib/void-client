@@ -10,7 +10,7 @@ class CompositeNpcModelBuilder {
     var aBoolean2100: Boolean = false
     private var aLong2102: Long = 0
     private var anInt2103 = 0
-    fun method1226(interface17: Interface17?, widgetDefinition: WidgetDefinition?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, class255: Class255?, i: Int, widgetDefinition_0_: WidgetDefinition?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, class261: Class261?): Class64? {
+    fun method1226(interface17: Interface17?, widgetDefinition: WidgetDefinition?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, modelHeaderCache: ModelHeaderCache?, i: Int, widgetDefinition_0_: WidgetDefinition?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, class261: Class261?): Class64? {
         try {
             anInt2097++
             if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method800(i, loadProgressCounters, class87, !bool_2_, widgetDefinition, i_8_, class261, i_7_, widgetDefinition_0_, interface17, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
@@ -161,7 +161,7 @@ class CompositeNpcModelBuilder {
                     val i_39_ = is_10_!![i_38_]
                     if ((0x40000000 and i_39_) == 0) {
                         if ((0x7fffffff.inv() and i_39_) != 0 && !modelDefinitionLoader!!.method1203(33.toByte(), i_39_ and 0x3fffffff).method348(34.toByte())) bool_37_ = true
-                    } else if (!class255!!.method1940(94, 0x3fffffff and i_39_).method1565(this.aBoolean2100, -1)) bool_37_ = true
+                    } else if (!modelHeaderCache!!.method1940(94, 0x3fffffff and i_39_).method1565(this.aBoolean2100, -1)) bool_37_ = true
                 }
                 if (bool_37_) {
                     if (aLong2094 != -1L) {
@@ -180,7 +180,7 @@ class CompositeNpcModelBuilder {
                                 if (class124 != null) modelDefinitions[i_40_] = class124
                             }
                         } else {
-                            val class124 = (class255!!.method1940(104, i_41_ and 0x3fffffff).method1558(this.aBoolean2100, !bool_2_))
+                            val class124 = (modelHeaderCache!!.method1940(104, i_41_ and 0x3fffffff).method1558(this.aBoolean2100, !bool_2_))
                             if (class124 != null) modelDefinitions[i_40_] = class124
                         }
                     }
@@ -279,23 +279,23 @@ class CompositeNpcModelBuilder {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (class261 != null) "{...}" else "null") + ')')
+                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (class261 != null) "{...}" else "null") + ')')
             )
         }
     }
 
-    fun method1227(i: Byte, i_61_: Int, i_62_: Int, class255: Class255?) {
+    fun method1227(i: Byte, i_61_: Int, i_62_: Int, modelHeaderCache: ModelHeaderCache?) {
         try {
             if (i.toInt() == 42) {
                 anInt2099++
                 if (i_62_ == -1) anIntArray2092!![i_61_] = 0
-                else if (class255!!.method1940(-125, i_62_) != null) {
+                else if (modelHeaderCache!!.method1940(-125, i_62_) != null) {
                     anIntArray2092!![i_61_] = Class273.method2057(1073741824, i_62_)
                     method1234(-100)
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (class255 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -321,7 +321,7 @@ class CompositeNpcModelBuilder {
         method1234(-78)
     }
 
-    fun method1230(class255: Class255?, i: Int, class87: Class87?, modelDefinitionLoader: ModelDefinitionLoader?, interface17: Interface17?, class278: Class278?, i_66_: Int, i_67_: Int, i_68_: Int, widgetDefinition: WidgetDefinition?, i_69_: Int, var_renderer: Renderer?): Class64? {
+    fun method1230(modelHeaderCache: ModelHeaderCache?, i: Int, class87: Class87?, modelDefinitionLoader: ModelDefinitionLoader?, interface17: Interface17?, class278: Class278?, i_66_: Int, i_67_: Int, i_68_: Int, widgetDefinition: WidgetDefinition?, i_69_: Int, var_renderer: Renderer?): Class64? {
         try {
             anInt2107++
             if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method803(interface17, var_renderer, i_69_, i_67_, widgetDefinition, class87, i_66_, 121, i_68_))
@@ -374,7 +374,7 @@ class CompositeNpcModelBuilder {
                 for (i_81_ in 0..11) {
                     val i_82_ = anIntArray2092!![i_81_]
                     if ((i_82_ and 0x40000000) != 0) {
-                        if (!class255!!.method1940(i xor 0x17f6eb2c, 0x3fffffff and i_82_).method1555(97.toByte(), this.aBoolean2100)) bool = true
+                        if (!modelHeaderCache!!.method1940(i xor 0x17f6eb2c, 0x3fffffff and i_82_).method1555(97.toByte(), this.aBoolean2100)) bool = true
                     } else if ((0x7fffffff.inv() and i_82_) != 0 && !modelDefinitionLoader!!.method1203(33.toByte(), i_82_ and 0x3fffffff).method342(110.toByte())) bool = true
                 }
                 if (bool) return null
@@ -388,7 +388,7 @@ class CompositeNpcModelBuilder {
                             if (class124 != null) modelDefinitions[i_83_++] = class124
                         }
                     } else {
-                        val class124 = (class255!!.method1940(-107, i_85_ and 0x3fffffff).method1554(this.aBoolean2100, -14))
+                        val class124 = (modelHeaderCache!!.method1940(-107, i_85_ and 0x3fffffff).method1554(this.aBoolean2100, -14))
                         if (class124 != null) modelDefinitions[i_83_++] = class124
                     }
                 }
@@ -414,7 +414,7 @@ class CompositeNpcModelBuilder {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("oo.J(" + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
+                ("oo.J(" + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
             )
         }
     }

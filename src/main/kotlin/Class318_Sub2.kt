@@ -46,8 +46,8 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                                 if (class51.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte()))
                                 if (class51 != null) `is` = class51.anIntArray917
                             }
-                        } else `is` = Exception_Sub1.aClass255_112!!.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772
-                    } else `is` = (Exception_Sub1.aClass255_112!!.method1940(-67, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
+                        } else `is` = Exception_Sub1.aModelHeaderCache_112!!.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772
+                    } else `is` = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-67, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     var string = Class316.method2367(125.toByte(), class348_sub42_sub12)
                     if (`is` != null) string += method1273(`is`, true)
                     Class262.aClass324_3326!!.method2567(i_1_, string, 116.toByte(), i_4_, 0, i_7_ - -3, Class341.aAbstractModelRendererArray4234, SizeBoundedSoftCache.anIntArray2330)

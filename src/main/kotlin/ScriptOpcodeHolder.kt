@@ -67,8 +67,8 @@ object ScriptOpcodeHolder {
             var i_6_ = 0
             var i_7_ = 0
             if (bool_3_ != true) aClass29_2352 = null
-            while ( /**/i_7_ < Exception_Sub1.aClass255_112!!.anInt3271) {
-                val class213 = Exception_Sub1.aClass255_112!!.method1940(-74, i_7_)
+            while ( /**/i_7_ < Exception_Sub1.aModelHeaderCache_112!!.anInt3271) {
+                val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(-74, i_7_)
                 if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795!!.lowercase(Locale.getDefault()).indexOf(string_2_) != -1) {
                     if (i_0_ != -1) {
                         if (bool) {
@@ -101,7 +101,7 @@ object ScriptOpcodeHolder {
             val strings = arrayOfNulls<String>(Class76.anInt1285)
             var i_10_ = 0
             while (Class76.anInt1285 > i_10_) {
-                strings[i_10_] = Exception_Sub1.aClass255_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
+                strings[i_10_] = Exception_Sub1.aModelHeaderCache_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
                 i_10_++
             }
             SpotAnimVector.Companion.method1333(AsyncTaskHandle.aShortArray2579, 26073, strings)

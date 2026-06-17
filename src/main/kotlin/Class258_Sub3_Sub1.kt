@@ -141,7 +141,7 @@ class Class258_Sub3_Sub1 : Class258_Sub3 {
             Class348_Sub24.method2994(2)
             VarpStore.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, 4)
-            Class255.method1933(CameraRotationStub.aClass45_322, Class348_Sub8.aRenderer6654, true)
+            ModelHeaderCache.method1933(CameraRotationStub.aClass45_322, Class348_Sub8.aRenderer6654, true)
             Class274.method2061(-128)
             method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
             Class354.method3466(i xor 0x4f.inv())

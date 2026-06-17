@@ -286,7 +286,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 SpotAnimDefinition.aBooleanArray2374!![i_23_] = true
                 Class275.anIntArray3552!![i_23_] = i
-                Class255.anIntArray3273!![i_23_] = i_25_
+                ModelHeaderCache.anIntArray3273!![i_23_] = i_25_
                 Class338.anIntArray4196!![i_23_] = i_26_
                 Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_23_] = i_24_
                 Class348_Sub3.aIntRange_6584 = null
@@ -331,7 +331,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_29_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 Class70.method727((-63).toByte(), i_29_, i, i_28_)
-                val class213 = Exception_Sub1.aClass255_112!!.method1940(-126, i)
+                val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(-126, i)
                 ObjectSpawnDecoder.method1085(class213.anInt2825, class213.anInt2787, (-59).toByte(), class213.anInt2781, i_28_)
                 Class34.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)
                 Class348_Sub3.aIntRange_6584 = null
@@ -934,12 +934,12 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class255.aIntRange_3265 == Class348_Sub3.aIntRange_6584) {
+            if (ModelHeaderCache.aIntRange_3265 == Class348_Sub3.aIntRange_6584) {
                 Class278.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 Class348_Sub40_Sub12.anInt9200 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(98.toByte())
                 Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt() shl 3)
                 while ((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) < Class348_Sub40_Sub25.anInt9341) {
-                    val class74 = (Class255.method1929((-19).toByte())[Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)])
+                    val class74 = (ModelHeaderCache.method1929((-19).toByte())[Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)])
                     method128(class74, 8.toByte())
                 }
                 Class348_Sub3.aIntRange_6584 = null

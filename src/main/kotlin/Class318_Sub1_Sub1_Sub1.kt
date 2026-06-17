@@ -1,5 +1,5 @@
 import BrightnessOptionState.Companion.method1745
-import Class255.Companion.method1935
+import ModelHeaderCache.Companion.method1935
 import Class286_Sub3.Companion.method2148
 import Class348_Sub23_Sub1.Companion.method2967
 import OutputStream_Sub2.Companion.method136

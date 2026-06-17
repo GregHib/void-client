@@ -168,7 +168,7 @@ import BackgroundWorkerThread.Companion.method1910
 import ConfigFlagUtil.Companion.method1912
 import SmoothingBuffer.Companion.method1917
 import EmoteDefinition.Companion.method1926
-import Class255.Companion.method1931
+import ModelHeaderCache.Companion.method1931
 import Class256.method1944
 import Class258_Sub1.Companion.method1959
 import Class258_Sub2.Companion.method1962
@@ -646,20 +646,20 @@ class Client : GameAppletFrame() {
         else if (method2354(Class8.aClass364_165, i xor 0x7044.inv())) {
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2148 = 40000 - -GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143
-            Class255.aServerConnectionInfo_3285!!.anInt2148 = Class255.aServerConnectionInfo_3285!!.anInt2143 + 40000
+            ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2148 = ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143 + 40000
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2138 = 50000 - -GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143
             Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2148 = (Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143 + 40000)
-            Class255.aServerConnectionInfo_3285!!.anInt2138 = 50000 - -Class255.aServerConnectionInfo_3285!!.anInt2143
+            ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2138 = 50000 - -ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143
             Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2138 = (Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143 + 50000)
         } else if (Class76.aClass364_1279 == Class8.aClass364_165) {
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = "127.0.0.1"
-            Class255.aServerConnectionInfo_3285!!.aString2147 = "127.0.0.1"
+            ModelHeaderCache.aServerConnectionInfo_3285!!.aString2147 = "127.0.0.1"
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2148 = (40000 + GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143)
             Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.aString2147 = "127.0.0.1"
-            Class255.aServerConnectionInfo_3285!!.anInt2148 = 40000 - -Class255.aServerConnectionInfo_3285!!.anInt2143
+            ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2148 = 40000 - -ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143
             Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2148 = 40000 - -Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2138 = (GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143 + 50000)
-            Class255.aServerConnectionInfo_3285!!.anInt2138 = Class255.aServerConnectionInfo_3285!!.anInt2143 + 50000
+            ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2138 = ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143 + 50000
             Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2138 = 50000 - -Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143
         }
         Class336.aShortArray4172 = ShortArray(256)
@@ -1310,9 +1310,9 @@ class Client : GameAppletFrame() {
         if (this.method89(48)) {
             GlElementArrayBuffer.aServerConnectionInfo_4839 = ServerConnectionInfo()
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143 = this.getParameter("worldid")!!.toInt()
-            Class255.aServerConnectionInfo_3285 = ServerConnectionInfo()
-            Class255.aServerConnectionInfo_3285!!.anInt2143 = this.getParameter("lobbyid")!!.toInt()
-            Class255.aServerConnectionInfo_3285!!.aString2147 = this.getParameter("lobbyaddress")
+            ModelHeaderCache.aServerConnectionInfo_3285 = ServerConnectionInfo()
+            ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143 = this.getParameter("lobbyid")!!.toInt()
+            ModelHeaderCache.aServerConnectionInfo_3285!!.aString2147 = this.getParameter("lobbyaddress")
             Class348_Sub40_Sub35.aServerConnectionInfo_9443 = ServerConnectionInfo()
             Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143 = this.getParameter("demoid")!!.toInt()
             Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.aString2147 = this.getParameter("demoaddress")
@@ -1973,8 +1973,8 @@ class Client : GameAppletFrame() {
                     if (strings.size != 6) method518("Argument count", 44.toByte())
                     GlElementArrayBuffer.aServerConnectionInfo_4839 = ServerConnectionInfo()
                     GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143 = strings[0].toInt()
-                    Class255.aServerConnectionInfo_3285 = ServerConnectionInfo()
-                    Class255.aServerConnectionInfo_3285!!.anInt2143 = strings[1].toInt()
+                    ModelHeaderCache.aServerConnectionInfo_3285 = ServerConnectionInfo()
+                    ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143 = strings[1].toInt()
                     Class348_Sub40_Sub35.aServerConnectionInfo_9443 = ServerConnectionInfo()
                     Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143 = strings[2].toInt()
                     Class8.aClass364_165 = Class76.aClass364_1279
