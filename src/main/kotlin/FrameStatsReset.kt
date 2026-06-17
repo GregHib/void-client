@@ -1124,7 +1124,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub1.anInt10026 = 0
             Class60.anInt1102 = 0
             Class285.anInt4756 = 0
-            Class140.anInt1956 = 0
+            ScreenBorderFiller.anInt1956 = 0
             Class255.anInt3275 = 0
             Class215.anInt2838 = 0
             NpcAppearanceFlags.anInt214 = 0
@@ -1604,7 +1604,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class333.anInt4145 = 0
             Class90.anInt1515 = 0
             GlElementArrayBuffer.anInt4836 = 0
-            Class140.anInt1957 = 0
+            ScreenBorderFiller.anInt1957 = 0
             Class64_Sub3.anInt5551 = 0
             Class239_Sub8.anInt5919 = 0
             Class318_Sub1_Sub4_Sub1.anInt10073 = 0
@@ -2031,7 +2031,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub4.anInt5873 = 0
             Class263.anInt3344 = 0
             OpenGlRenderer.anInt7710 = 0
-            Class140.anInt1960 = 0
+            ScreenBorderFiller.anInt1960 = 0
             ProjectionCameraTransform.anInt5763 = 0
             OpenGlRenderer.anInt7665 = 0
             Class367_Sub8.anInt7354 = 0
@@ -4065,7 +4065,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub4.anInt9514 = 0
             FloatCameraTransform.anInt5731 = 0
             Class318_Sub1_Sub1_Sub1.anInt9943 = 0
-            Class140.anInt1958 = 0
+            ScreenBorderFiller.anInt1958 = 0
             Class286_Sub3.anInt6232 = 0
             Class348_Sub42_Sub1.anInt9496 = 0
             Class230.anInt2984 = 0

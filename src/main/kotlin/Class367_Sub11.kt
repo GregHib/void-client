@@ -223,7 +223,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                             Class305.aCanvas3869!!.setLocation(insets.left - -Class348_Sub48.anInt7129, Class335.anInt4167 + insets.top)
                         } else Class305.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129), Class335.anInt4167)
                         if (RenderNode.anInt9721 != -1) method1713(true, 520)
-                        Class140.method1170((-78).toByte())
+                        ScreenBorderFiller.method1170((-78).toByte())
                     } else {
                         /* empty */
                     }

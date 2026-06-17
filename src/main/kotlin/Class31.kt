@@ -130,7 +130,7 @@ class Class31 {
         while (true) {
             val i_5_ = string.indexOf("%1")
             if (i_5_ < 0) break
-            string = (string.substring(0, i_5_) + Class140.method1171(i, 55, false) + string.substring(i_5_ - -2))
+            string = (string.substring(0, i_5_) + ScreenBorderFiller.method1171(i, 55, false) + string.substring(i_5_ - -2))
         }
         return string
     }

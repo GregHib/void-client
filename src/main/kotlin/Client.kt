@@ -42,8 +42,8 @@ import GlVertexBufferBase.Companion.method1149
 import GlArrayBufferObject.Companion.method1154
 import SpriteLoadValidator.Companion.method1159
 import GlTextureBase.Companion.method237
-import Class140.method1168
-import Class140.method1169
+import ScreenBorderFiller.method1168
+import ScreenBorderFiller.method1169
 import Class146.Companion.method1194
 import Class147.Companion.method1195
 import Class148.Companion.method1198
@@ -1696,7 +1696,7 @@ class Client : GameAppletFrame() {
                 bool_120_ = true
                 Class49.aBoolean4726 = false
             }
-            if (bool_120_) Class140.method1170((-116).toByte())
+            if (bool_120_) ScreenBorderFiller.method1170((-116).toByte())
             if ((Class348_Sub8.aRenderer6654 != null && Class348_Sub8.aRenderer6654!!.method3655()) || method3229(-91) != 1) method3466(-77)
             if (NpcSummaryDefinition.method1167(Class240.anInt4674, (-113).toByte())) method1309(bool_120_, 117)
             else if (!method2114(Class240.anInt4674, bool)) {

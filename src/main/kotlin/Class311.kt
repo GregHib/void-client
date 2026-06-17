@@ -72,7 +72,7 @@ class Class311 : Runnable {
                         var i_2_ = -i + 255
                         i_2_ = 0xffffff or (i_2_ shl 24)
                         i = 0xffffff or (i shl 24)
-                        Class140.method1170((-121).toByte())
+                        ScreenBorderFiller.method1170((-121).toByte())
                         Class348_Sub8.aRenderer6654!!.GA(0)
                         val class105 = (Class348_Sub8.aRenderer6654!!.method3629(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, true))
                         Class348_Sub8.aRenderer6654!!.method3681(class105!!, 0)
@@ -91,7 +91,7 @@ class Class311 : Runnable {
                             anInterface16_3919 = null
                         }
                         if (aBoolean3908) {
-                            Class140.method1170((-64).toByte())
+                            ScreenBorderFiller.method1170((-64).toByte())
                             if (Class348_Sub8.aRenderer6654 != null) Class348_Sub8.aRenderer6654!!.GA(0)
                         }
                         anInterface16_3907.method58((aBoolean3908 || (Class348_Sub8.aRenderer6654 != null && Class348_Sub8.aRenderer6654!!.method3655())), -90)

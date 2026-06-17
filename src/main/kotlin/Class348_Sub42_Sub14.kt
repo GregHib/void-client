@@ -593,7 +593,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                 Class348_Sub40_Sub4.anInt9112 = 0
                 val `is` = var_renderer.Y()
                 Class285_Sub2.anInt8498 = (`is`[3].toFloat() / 3.0f).toInt()
-                Class140.anInt1962 = (`is`[2].toFloat() / 3.0f).toInt()
+                ScreenBorderFiller.anInt1962 = (`is`[2].toFloat() / 3.0f).toInt()
                 var_renderer.method3632(Class348_Sub40_Sub34.anIntArray9436)
                 if ((Class306.anInt3872 != (Class348_Sub40_Sub34.anIntArray9436!![0].toFloat() / 3.0f).toInt()) || Class86.anInt1480 != (Class348_Sub40_Sub34.anIntArray9436!![1].toFloat() / 3.0f).toInt()) {
                     Class86.anInt1480 = (Class348_Sub40_Sub34.anIntArray9436!![1].toFloat() / 3.0f).toInt()

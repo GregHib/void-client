@@ -4643,7 +4643,7 @@ object Class66 {
                 if (i == 4102) {
                     val string = aStringArray1152!![--anInt1170]
                     val i_430_ = anIntArray1149!![--anInt1173]
-                    aStringArray1152!![anInt1170++] = string + Class140.method1171(i_430_, 76, true)
+                    aStringArray1152!![anInt1170++] = string + ScreenBorderFiller.method1171(i_430_, 76, true)
                     return
                 }
                 if (i == 4103) {

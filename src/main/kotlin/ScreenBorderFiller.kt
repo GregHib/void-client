@@ -3,7 +3,10 @@ import java.awt.Color
 import java.awt.Container
 import java.awt.Rectangle
 
-object Class140 {
+/*
+ * Class140
+ */
+object ScreenBorderFiller {
     var anInt1956: Int = 0
     var anInt1957: Int = 0
     var anInt1958: Int = 0
@@ -36,7 +39,7 @@ object Class140 {
         if (Class34.aFrame476 == null) {
             val i_1_ = Class348_Sub48.anInt7129
             val i_2_ = Class335.anInt4167
-            if (i > -25) Class140.method1172((-22).toByte(), -1)
+            if (i > -25) ScreenBorderFiller.method1172((-22).toByte(), -1)
             val i_3_ = -i_1_ + -Class321.anInt4017 + Class272.anInt3473
             val i_4_ = -i_2_ + (Class348_Sub22.anInt6857 + -Class348_Sub42_Sub8_Sub2.anInt10432)
             do {
