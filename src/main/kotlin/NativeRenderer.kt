@@ -637,7 +637,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aBoolean8097 = false
         anInt7893++
         method3906(122.toByte())
-        if (Class180.aClass196_2372 == this.aClass196_8184) method3929(true)
+        if (HintIconState.aClass196_2372 == this.aClass196_8184) method3929(true)
     }
 
     open fun method3832(i: Int, i_61_: Byte): Class367? {
@@ -1503,9 +1503,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private fun method3895(i: Int) {
         anInt8035++
         if (i != -8) method3644()
-        if (Class180.aClass196_2372 != this.aClass196_8184) {
+        if (HintIconState.aClass196_2372 != this.aClass196_8184) {
             val class196 = this.aClass196_8184
-            this.aClass196_8184 = Class180.aClass196_2372!!
+            this.aClass196_8184 = HintIconState.aClass196_2372!!
             if (!class196.method1450(-90)) method3913(60.toByte())
             method3906(118.toByte())
             this.aFloatArray8135 = aFloatArray8152

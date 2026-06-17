@@ -36,7 +36,7 @@ object Class332 {
         anInt4138++
         var i_9_ = 0
         while (Class348_Sub38.anInt7008 > i_9_) {
-            val rectangle = Class180.aRectangleArray2371!![i_9_]
+            val rectangle = HintIconState.aRectangleArray2371!![i_9_]
             if (rectangle!!.width + rectangle.x > i_7_ && rectangle.x < i + i_7_ && rectangle.height + rectangle.y > i_6_ && rectangle.y < i_8_ + i_6_) Class268.aBooleanArray3438!![i_9_] = true
             i_9_++
         }

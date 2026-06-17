@@ -120,7 +120,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                             val i_22_ = class46.anInt789 + i_20_ - -1
                             val i_23_: Int
                             if (i_13_ == -1) {
-                                Class180.aRectangleArray2371!![Class348_Sub38.anInt7008]!!.setBounds(i_11_ + class46.anInt800, i_10_ + class46.anInt750, class46.anInt709, class46.anInt789)
+                                HintIconState.aRectangleArray2371!![Class348_Sub38.anInt7008]!!.setBounds(i_11_ + class46.anInt800, i_10_ + class46.anInt750, class46.anInt709, class46.anInt789)
                                 i_23_ = Class348_Sub38.anInt7008++
                             } else i_23_ = i_13_
                             class46.anInt794 = Class367_Sub11.anInt7396

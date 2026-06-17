@@ -52,7 +52,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     Class223.anIntArray2899!![0] = class277_10_.anInt3575
                                     Class348_Sub6.anIntArray6631!![0] = class277_10_.anInt3570
                                     Class306.anIntArray3873!![0] = class277_10_.anInt3564
-                                    Class180.anIntArray2370!![0] = 256
+                                    HintIconState.anIntArray2370!![0] = 256
                                 }
                             }
                         }
@@ -71,7 +71,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     Class223.anIntArray2899!![2] = class277_15_.anInt3575
                                     Class348_Sub6.anIntArray6631!![2] = class277_15_.anInt3570
                                     Class306.anIntArray3873!![2] = class277_15_.anInt3564
-                                    Class180.anIntArray2370!![2] = 512
+                                    HintIconState.anIntArray2370!![2] = 512
                                 }
                             }
                         }
@@ -92,7 +92,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     Class223.anIntArray2899!![6] = class277_20_.anInt3575
                                     Class348_Sub6.anIntArray6631!![6] = class277_20_.anInt3570
                                     Class306.anIntArray3873!![6] = class277_20_.anInt3564
-                                    Class180.anIntArray2370!![6] = 64
+                                    HintIconState.anIntArray2370!![6] = 64
                                 }
                             }
                         }
@@ -111,7 +111,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     Class223.anIntArray2899!![4] = class277_25_.anInt3575
                                     Class348_Sub6.anIntArray6631!![4] = class277_25_.anInt3570
                                     Class306.anIntArray3873!![4] = class277_25_.anInt3564
-                                    Class180.anIntArray2370!![4] = 128
+                                    HintIconState.anIntArray2370!![4] = 128
                                 }
                             }
                         }
@@ -136,8 +136,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                         Class348_Sub40_Sub38.anIntArray9480!![i_33_] = i_35_
                                         Class223.anIntArray2899!![i_33_] = (class277_30_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_33_] = (class277_30_.anInt3570)
-                                        if (Class306.anIntArray3873!![i_33_] != (class277_30_.anInt3564)) Class180.anIntArray2370!![i_33_] = 32
-                                        else Class180.anIntArray2370!![i_33_] = (Class273.method2057((Class180.anIntArray2370!![i_33_]), 32))
+                                        if (Class306.anIntArray3873!![i_33_] != (class277_30_.anInt3564)) HintIconState.anIntArray2370!![i_33_] = 32
+                                        else HintIconState.anIntArray2370!![i_33_] = (Class273.method2057((HintIconState.anIntArray2370!![i_33_]), 32))
                                         Class306.anIntArray3873!![i_33_] = (class277_30_.anInt3564)
                                     }
                                     i_34_++
@@ -167,8 +167,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                         Class348_Sub40_Sub38.anIntArray9480!![i_41_] = i_43_
                                         Class223.anIntArray2899!![i_41_] = (class277_38_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_41_] = (class277_38_.anInt3570)
-                                        if (Class306.anIntArray3873!![i_41_] != (class277_38_.anInt3564)) Class180.anIntArray2370!![i_41_] = 16
-                                        else Class180.anIntArray2370!![i_41_] = (Class273.method2057((Class180.anIntArray2370!![i_41_]), 16))
+                                        if (Class306.anIntArray3873!![i_41_] != (class277_38_.anInt3564)) HintIconState.anIntArray2370!![i_41_] = 16
+                                        else HintIconState.anIntArray2370!![i_41_] = (Class273.method2057((HintIconState.anIntArray2370!![i_41_]), 16))
                                         Class306.anIntArray3873!![i_41_] = (class277_38_.anInt3564)
                                     }
                                     i_42_--
@@ -198,8 +198,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                         Class348_Sub40_Sub38.anIntArray9480!![i_49_] = i_51_
                                         Class223.anIntArray2899!![i_49_] = (class277_46_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_49_] = (class277_46_.anInt3570)
-                                        if (Class306.anIntArray3873!![i_49_] != (class277_46_.anInt3564)) Class180.anIntArray2370!![i_49_] = 8
-                                        else Class180.anIntArray2370!![i_49_] = (Class273.method2057((Class180.anIntArray2370!![i_49_]), 8))
+                                        if (Class306.anIntArray3873!![i_49_] != (class277_46_.anInt3564)) HintIconState.anIntArray2370!![i_49_] = 8
+                                        else HintIconState.anIntArray2370!![i_49_] = (Class273.method2057((HintIconState.anIntArray2370!![i_49_]), 8))
                                         Class306.anIntArray3873!![i_49_] = (class277_46_.anInt3564)
                                     }
                                     i_49_++
@@ -229,8 +229,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                         Class348_Sub40_Sub38.anIntArray9480!![i_57_] = i_59_
                                         Class223.anIntArray2899!![i_57_] = (class277_54_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_57_] = (class277_54_.anInt3570)
-                                        if (class277_54_.anInt3564 == Class306.anIntArray3873!![i_57_]) Class180.anIntArray2370!![i_57_] = (Class273.method2057((Class180.anIntArray2370!![i_57_]), 4))
-                                        else Class180.anIntArray2370!![i_57_] = 4
+                                        if (class277_54_.anInt3564 == Class306.anIntArray3873!![i_57_]) HintIconState.anIntArray2370!![i_57_] = (Class273.method2057((HintIconState.anIntArray2370!![i_57_]), 4))
+                                        else HintIconState.anIntArray2370!![i_57_] = 4
                                         Class306.anIntArray3873!![i_57_] = (class277_54_.anInt3564)
                                     }
                                     i_58_++
@@ -251,8 +251,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                         Class348_Sub40_Sub38.anIntArray9480!![i_63_] = i_61_
                         Class223.anIntArray2899!![i_63_] = class277.anInt3575
                         Class348_Sub6.anIntArray6631!![i_63_] = class277.anInt3570
-                        if (Class306.anIntArray3873!![i_63_] != class277.anInt3564) Class180.anIntArray2370!![i_63_] = 2
-                        else Class180.anIntArray2370!![i_63_] = Class273.method2057((Class180.anIntArray2370!![i_63_]), 2)
+                        if (Class306.anIntArray3873!![i_63_] != class277.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
+                        else HintIconState.anIntArray2370!![i_63_] = Class273.method2057((HintIconState.anIntArray2370!![i_63_]), 2)
                         Class306.anIntArray3873!![i_63_] = class277.anInt3564
                     }
                 }
@@ -354,7 +354,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             }
                             for (i_90_ in 0..12) {
                                 Class306.anIntArray3873!![i_90_] = -1
-                                Class180.anIntArray2370!![i_90_] = 1
+                                HintIconState.anIntArray2370!![i_90_] = 1
                             }
                             val bools_91_: BooleanArray = (if (class277 == null || !class277.aBoolean3560) Class265.aBooleanArrayArray4693!![i_76_.toInt()] else (Class50_Sub1.aBooleanArrayArray5225!![i_76_.toInt()]))!!
                             method1675(i_71_, this.anInt3114, is_67_, i_73_, is_68_, -1, class277, class22, bools, i_77_, is_70_, this.anInt3117, i_76_.toInt(), var_renderer)
@@ -367,10 +367,10 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     }
                                 }
                             }
-                            if (!bools_91_[i_77_ + 1 and 0x3]) bools[1] = (method3576(bools[1], method1166((Class180.anIntArray2370!![2]), (Class180.anIntArray2370!![4])) == 0))
-                            if (!bools_91_[0x3 and i_77_ + 3]) bools[3] = (method3576(bools[3], method1166((Class180.anIntArray2370!![0]), (Class180.anIntArray2370!![6])) == 0))
-                            if (!bools_91_[i_77_ and 0x3]) bools[0] = (method3576(bools[0], method1166((Class180.anIntArray2370!![0]), (Class180.anIntArray2370!![2])) == 0))
-                            if (!bools_91_[i_77_ + 2 and 0x3]) bools[2] = (method3576(bools[2], method1166((Class180.anIntArray2370!![4]), (Class180.anIntArray2370!![6])) == 0))
+                            if (!bools_91_[i_77_ + 1 and 0x3]) bools[1] = (method3576(bools[1], method1166((HintIconState.anIntArray2370!![2]), (HintIconState.anIntArray2370!![4])) == 0))
+                            if (!bools_91_[0x3 and i_77_ + 3]) bools[3] = (method3576(bools[3], method1166((HintIconState.anIntArray2370!![0]), (HintIconState.anIntArray2370!![6])) == 0))
+                            if (!bools_91_[i_77_ and 0x3]) bools[0] = (method3576(bools[0], method1166((HintIconState.anIntArray2370!![0]), (HintIconState.anIntArray2370!![2])) == 0))
+                            if (!bools_91_[i_77_ + 2 and 0x3]) bools[2] = (method3576(bools[2], method1166((HintIconState.anIntArray2370!![4]), (HintIconState.anIntArray2370!![6])) == 0))
                             if (!bool_75_ && (i_76_.toInt() == 0 || i_76_.toInt() == 12)) {
                                 if (!bools[0] || bools[1] || bools[2] || !bools[3]) {
                                     if (!bools[0] || !bools[1] || bools[2] || bools[3]) {

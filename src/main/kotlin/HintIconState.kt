@@ -1,6 +1,9 @@
 import java.awt.Rectangle
 
-object Class180 {
+/*
+ * Class180
+ */
+object HintIconState {
     @JvmField
     var anIntArray2370: IntArray? = IntArray(13)
     @JvmField

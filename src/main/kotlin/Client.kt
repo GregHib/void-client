@@ -890,7 +890,7 @@ class Client : GameAppletFrame() {
         method1137(3)
         method2677(i.toInt() xor 0x33)
         method1200(false)
-        Class180.method1366((-43).toByte())
+        HintIconState.method1366((-43).toByte())
         Class76.method772((-113).toByte())
         method322(1)
         method2018(0)
@@ -1719,7 +1719,7 @@ class Client : GameAppletFrame() {
             if (NativeRenderer.anInt8045 == 3) {
                 var i = 0
                 while (Class348_Sub38.anInt7008 > i) {
-                    val rectangle = Class180.aRectangleArray2371!![i]
+                    val rectangle = HintIconState.aRectangleArray2371!![i]
                     if (SizeBoundedSoftCache.aBooleanArray2326!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46)
                     else if (!Class268.aBooleanArray3438!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66)
                     else Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40)
@@ -1733,7 +1733,7 @@ class Client : GameAppletFrame() {
                 while ((Class348_Sub38.anInt7008 > i_121_)) {
                     if (Class268.aBooleanArray3438!![i_121_]) {
                         Class268.aBooleanArray3438!![i_121_] = false
-                        Class190.aRectangleArray2554!![i++] = Class180.aRectangleArray2371!![i_121_]
+                        Class190.aRectangleArray2554!![i++] = HintIconState.aRectangleArray2371!![i_121_]
                     }
                     i_121_++
                 }
