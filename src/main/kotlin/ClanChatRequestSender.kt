@@ -3,7 +3,7 @@ import ProjectileSpawner.method1478
 /* Class281 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class281 {
+object ClanChatRequestSender {
     var aClass351_3644: Class351? = Class351(42, 8)
     var anInt3645: Int = 0
     var anInt3646: Int = 0
@@ -42,7 +42,7 @@ object Class281 {
         aClass351_3648 = null
         aFontDefinition_3649 = null
         aClass351_3644 = null
-        if (i.toInt() != 77) Class281.method2107((-107).toByte())
+        if (i.toInt() != 77) ClanChatRequestSender.method2107((-107).toByte())
     }
 
     fun method2108(string: String, i: Int): Int {

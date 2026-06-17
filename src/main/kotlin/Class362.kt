@@ -26,7 +26,7 @@ object Class362 {
             val bool_0_ = !Class295.aBoolean3763 || method3490(true)
             if (bool_0_) {
                 if (Class295.aBoolean3763 && bool_0_) {
-                    class143 = Class281.aFontDefinition_3649
+                    class143 = ClanChatRequestSender.aFontDefinition_3649
                     class324 = var_renderer!!.method3686(class143, (Class5_Sub1_Sub1.aSpriteImageArray9929), true)
                     var i_1_ = class143!!.method1187(string, false, 250, null)
                     var i_2_ = class143.method1185(null, i xor 0x2, class143.anInt1992, 250, string)

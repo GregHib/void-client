@@ -119,7 +119,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub5_Sub1.anInt10123 = 0
             TextureMetadataProvider.anInt4618 = 0
             Class348_Sub49.anInt7166 = 0
-            Class281.anInt3646 = 0
+            ClanChatRequestSender.anInt3646 = 0
             Npc.anInt10504 = 0
             Player.anInt10547 = 0
             RemoveRoofsOptionState.anInt6059 = 0
@@ -2269,7 +2269,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class84.anInt1453 = 0
             Class348_Sub42_Sub6.anInt9539 = 0
             Class377.anInt9828 = 0
-            Class281.anInt3645 = 0
+            ClanChatRequestSender.anInt3645 = 0
             Class296.anInt3768 = 0
             ShadowQualityOptionState.anInt6007 = 0
             Class5_Sub2.anInt8362 = 0
@@ -4131,7 +4131,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class331.method2636(i + 69)
             BloomGraphicsOptionState.anInt5973 = 0
             CollisionMapAccessor.anInt3550 = 0
-            Class281.anInt3647 = 0
+            ClanChatRequestSender.anInt3647 = 0
             GlTextureCubeMap.anInt8537 = 0
             MinimapFlagRenderer.anInt1797 = 0
             Class348_Sub42_Sub4.anInt9515 = 0

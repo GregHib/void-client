@@ -62,7 +62,7 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
             GlRectangleTexture.anInt8633 = i_5_
             Class59_Sub2_Sub1.anInt8668 = i_2_
             Class348_Sub44.anInt7092 = i
-            Class281.anInt3650 = i_4_
+            ClanChatRequestSender.anInt3650 = i_4_
             Class43.anInt620 = i_1_
             anInt9703++
         }

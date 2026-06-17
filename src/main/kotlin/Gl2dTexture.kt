@@ -256,7 +256,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
                     if (i_17_ > Class59_Sub2_Sub2.anInt8685) Class59_Sub2_Sub2.anInt8685 = i_17_
                 }
             }
-            i_17_ = 256 + Class281.anInt3647 * 512
+            i_17_ = 256 + ClanChatRequestSender.anInt3647 * 512
             i_16_ = 256 + 512 * Class352.anInt4336
             i_18_ = (CollisionMapAccessor.method2064(i_16_, Class355.anInt4372, 11219, i_17_) - MinimapFlagRenderer.anInt1797)
             val i_19_ = -Class286_Sub4.anInt6246 + i_16_

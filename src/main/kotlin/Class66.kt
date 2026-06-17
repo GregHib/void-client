@@ -1298,7 +1298,7 @@ object Class66 {
             if (i == 5604) {
                 anInt1170--
                 if (WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
-                    Class281.method2106(aStringArray1152!![anInt1170], 101)
+                    ClanChatRequestSender.method2106(aStringArray1152!![anInt1170], 101)
                     return
                 }
                 return

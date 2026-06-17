@@ -94,10 +94,10 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
             Class352.anInt4336 = i_3_
             Class367_Sub11.anInt7403 = i_6_
             anInt9598++
-            Class281.anInt3647 = i
+            ClanChatRequestSender.anInt3647 = i
             if (BloomGraphicsOptionState.anInt5973 >= 100) {
                 val i_8_ = Class352.anInt4336 * 512 - -256
-                val i_9_ = Class281.anInt3647 * 512 - -256
+                val i_9_ = ClanChatRequestSender.anInt3647 * 512 - -256
                 val i_10_ = (method2064(i_8_, Class355.anInt4372, 11219, i_9_) + -MinimapFlagRenderer.anInt1797)
                 val i_11_ = i_8_ - Class286_Sub4.anInt6246
                 val i_12_ = -Class305.anInt3855 + i_10_

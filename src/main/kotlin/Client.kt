@@ -195,7 +195,7 @@ import LocTypeConfig.Companion.method2071
 import NativeSoundOutput.Companion.method2097
 import ItemNameResolver.Companion.method318
 import GroundDecorRenderer.Companion.method2104
-import Class281.method2107
+import ClanChatRequestSender.method2107
 import Class282.method2111
 import Class283.Companion.method2113
 import Class283.Companion.method2114

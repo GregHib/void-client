@@ -207,7 +207,7 @@ class Class348_Sub41 : Class348() {
                         CollisionMapAccessor.anInt3550 -= i_21_
                         Class286_Sub4.anInt6246 -= 512 * i_20_
                         Class352.anInt4336 -= i_20_
-                        Class281.anInt3647 -= i_21_
+                        ClanChatRequestSender.anInt3647 -= i_21_
                         Class348_Sub35.Companion.anInt6981 -= i_20_
                         Class59_Sub2_Sub2.anInt8685 -= 512 * i_21_
                         if ((Class367_Sub4.anInt7319 < abs(i_20_)) || abs(i_21_) > Class348_Sub40_Sub3.anInt9109) method773(true)
