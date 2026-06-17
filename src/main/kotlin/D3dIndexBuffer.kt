@@ -2,7 +2,10 @@ import jaclib.memory.Buffer
 import jagdx.IDirect3DIndexBuffer
 import jagdx.ue.a
 
-class Class142 internal constructor(private val aClass378_8515: Class378, private var aClass68_8518: Class68?, private val aBoolean8519: Boolean) : Interface5_Impl2 {
+/*
+ * Class142
+ */
+class D3dIndexBuffer internal constructor(private val aClass378_8515: Class378, private var aClass68_8518: Class68?, private val aBoolean8519: Boolean) : Interface5_Impl2 {
     private var anInt8516 = 0
     var anIDirect3DIndexBuffer8517: IDirect3DIndexBuffer? = null
     private var aBoolean8520 = false

@@ -240,7 +240,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
     }
 
     override fun method3938(class21: Class21?, i: Int, interface5_impl2: Interface5_Impl2?, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
-        this.anIDirect3DDevice9810!!.SetIndices((interface5_impl2 as Class142).anIDirect3DIndexBuffer8517)
+        this.anIDirect3DDevice9810!!.SetIndices((interface5_impl2 as D3dIndexBuffer).anIDirect3DIndexBuffer8517)
         this.anIDirect3DDevice9810!!.DrawIndexedPrimitive(Companion.method3953(class21, (-111).toByte()), 0, i_24_, i_26_, i_25_, i)
         if (i_27_ < 46) method3931(true, null, null)
     }
@@ -419,7 +419,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3840(i: Int, bool: Boolean): Interface5_Impl2 {
         if (i != -28633) method3937(102.toByte())
-        return Class142(this, Class68.aClass68_1184, bool)
+        return D3dIndexBuffer(this, Class68.aClass68_1184, bool)
     }
 
     override fun GA(i: Int) {
