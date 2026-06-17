@@ -1,5 +1,5 @@
 import Gl3dTexture.Companion.method249
-import Class275.method2066
+import CollisionMapAccessor.method2066
 
 /* Class316 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

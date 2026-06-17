@@ -1,4 +1,4 @@
-import Class275.method2064
+import CollisionMapAccessor.method2064
 import Class348_Sub17.Companion.method2929
 import kotlin.math.atan2
 import kotlin.math.sqrt

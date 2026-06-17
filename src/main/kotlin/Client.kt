@@ -188,9 +188,9 @@ import ParticleEffectCache.Companion.method2045
 import SocketFactory.Companion.method2048
 import BoundsConstraintEntry.Companion.method2055
 import LocalizedText.Companion.method2059
-import Class275.method2064
-import Class275.method2065
-import Class275.method2066
+import CollisionMapAccessor.method2064
+import CollisionMapAccessor.method2065
+import CollisionMapAccessor.method2066
 import Class277.Companion.method2071
 import Class279_Sub2.Companion.method2097
 import Class28.Companion.method318

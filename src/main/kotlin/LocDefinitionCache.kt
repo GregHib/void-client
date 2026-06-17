@@ -121,7 +121,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 if (i_6_ < Class348_Sub35.anInt6979 shr 8) i_6_ = Class348_Sub35.anInt6979 shr 8
                 if (SpotAnimDefinition.aBooleanArray2374!![4] && ModelHeaderCache.anIntArray3273!![4] - -128 > i_6_) i_6_ = ModelHeaderCache.anIntArray3273!![4] + 128
                 val i_7_ = 0x3fff and Class314.aFloat3938.toInt() + RenderableGroup.anInt5016
-                method268(i_6_, -200 + (Class275.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_7_, AsyncTaskHandle.anInt2578, i, -19360, FrameStatsReset.anInt5799, 3 * (i_6_ shr 3) + 600 shl 2)
+                method268(i_6_, -200 + (CollisionMapAccessor.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_7_, AsyncTaskHandle.anInt2578, i, -19360, FrameStatsReset.anInt5799, 3 * (i_6_ shr 3) + 600 shl 2)
                 val f = (-(((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)).toFloat() / 1000000.0f) + 1.0f)
                 Class286_Sub4.anInt6246 = (Class318_Sub1_Sub3_Sub2.anInt10047.toFloat() + f * (-Class318_Sub1_Sub3_Sub2.anInt10047 + Class286_Sub4.anInt6246).toFloat()).toInt()
                 Class305.anInt3855 = ((-Class5_Sub3.anInt8368 + Class305.anInt3855).toFloat() * f + Class5_Sub3.anInt8368.toFloat()).toInt()

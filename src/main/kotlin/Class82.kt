@@ -402,7 +402,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {
                             method94(
-                                ("Pos: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((Class275.method2064(
+                                ("Pos: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((CollisionMapAccessor.method2064(
                                     Class286_Sub4.anInt6246,
                                     (LocalPlayerState.aPlayer_1907!!.plane).toInt(),
                                     11219,
@@ -410,7 +410,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                                 )) - Class305.anInt3855)), 126
                             )
                             method94(
-                                ("Look: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (Class352.anInt4336 - -ArbVertexProgram.regionTileX shr 6) + "," + (Class90.regionTileY + Class281.anInt3647 shr 6) + "," + (0x3f and Class352.anInt4336 - -ArbVertexProgram.regionTileX) + "," + (0x3f and Class281.anInt3647 - -Class90.regionTileY) + " Height: " + ((Class275.method2064(
+                                ("Look: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (Class352.anInt4336 - -ArbVertexProgram.regionTileX shr 6) + "," + (Class90.regionTileY + Class281.anInt3647 shr 6) + "," + (0x3f and Class352.anInt4336 - -ArbVertexProgram.regionTileX) + "," + (0x3f and Class281.anInt3647 - -Class90.regionTileY) + " Height: " + ((CollisionMapAccessor.method2064(
                                     Class352.anInt4336,
                                     (LocalPlayerState.aPlayer_1907!!.plane).toInt(),
                                     11219,

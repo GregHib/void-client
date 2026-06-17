@@ -97,7 +97,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
             do {
                 try {
                     anInt2181++
-                    Class275.aHashtable3548!!.put(string, file)
+                    CollisionMapAccessor.aHashtable3548!!.put(string, file)
                     if (i == 64) break
                     aIntRange_2183 = null
                 } catch (runtimeexception: RuntimeException) {

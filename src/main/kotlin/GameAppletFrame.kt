@@ -530,7 +530,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         fun method86(string: String?, i: Int): Boolean {
             anInt13++
             if (i != 0) return true
-            return Class275.aHashtable3548!!.containsKey(string)
+            return CollisionMapAccessor.aHashtable3548!!.containsKey(string)
         }
 
         @JvmStatic

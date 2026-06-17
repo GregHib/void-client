@@ -104,16 +104,16 @@ class TwoStateOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1844(i: Int, i_12_: Int, bool: Boolean, i_13_: Int, bool_14_: Boolean, i_15_: Int, i_16_: Int) {
             Class348_Sub42_Sub4.anInt9515 = i_13_
-            Class275.anInt3550 = i_16_
+            CollisionMapAccessor.anInt3550 = i_16_
             if (bool_14_ == false) {
                 Class348_Sub40_Sub31.anInt9406 = i
                 anInt6136++
                 Class348_Sub35.anInt6981 = i_12_
                 GlTextureCubeMap.anInt8537 = i_15_
                 if (bool && GlTextureCubeMap.anInt8537 >= 100) {
-                    Class59_Sub2_Sub2.anInt8685 = 256 + 512 * Class275.anInt3550
+                    Class59_Sub2_Sub2.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
                     Class286_Sub4.anInt6246 = 256 + Class348_Sub35.anInt6981 * 512
-                    Class305.anInt3855 = (Class275.method2064(Class286_Sub4.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
+                    Class305.anInt3855 = (CollisionMapAccessor.method2064(Class286_Sub4.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
                 }
                 Class348_Sub40_Sub21.anInt9282 = 2
                 Class318_Sub1_Sub5_Sub2.anInt10163 = -1

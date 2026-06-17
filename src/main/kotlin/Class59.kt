@@ -182,7 +182,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
         fun method547(string: String?, i: Int): Int {
             anInt1076++
             if (!Class59_Sub1.aClass297_5297!!.aBoolean3777) return -1
-            if (Class275.aHashtable3548!!.containsKey(string)) return 100
+            if (CollisionMapAccessor.aHashtable3548!!.containsKey(string)) return 100
             val string_52_ = Class334.method2651(string, 3)
             if (string_52_ == null) return -1
             val string_53_ = Class348_Sub41.aString7048 + string_52_

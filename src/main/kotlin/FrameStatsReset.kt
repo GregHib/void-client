@@ -408,7 +408,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9898 = 0
             OpenGlRenderer.anInt7670 = 0
             Class348_Sub40_Sub23.anInt9315 = 0
-            Class275.anInt3549 = 0
+            CollisionMapAccessor.anInt3549 = 0
             FloatCameraTransform.anInt5702 = 0
             Class348_Sub42_Sub13.anInt9618 = 0
             TwoStateOptionState.anInt6141 = 0
@@ -864,7 +864,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FrameBufferObject.anInt4865 = 0
             OpenGlRenderer.anInt7627 = 0
             FloatCameraTransform.anInt5712 = 0
-            Class275.anInt3553 = 0
+            CollisionMapAccessor.anInt3553 = 0
             Class348_Sub42_Sub17.anInt9674 = 0
             Class348_Sub42_Sub11.anInt9581 = 0
             OpenGlRenderer.anInt7592 = 0
@@ -4130,7 +4130,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1314(74.toByte())
             Class331.method2636(i + 69)
             BloomGraphicsOptionState.anInt5973 = 0
-            Class275.anInt3550 = 0
+            CollisionMapAccessor.anInt3550 = 0
             Class281.anInt3647 = 0
             GlTextureCubeMap.anInt8537 = 0
             MinimapFlagRenderer.anInt1797 = 0

@@ -1,6 +1,9 @@
 import java.util.*
 
-object Class275 {
+/*
+ * Class275
+ */
+object CollisionMapAccessor {
     var aHashtable3548: Hashtable<Any?, Any?>? = Hashtable<Any?, Any?>()
     var anInt3549: Int = 0
     @JvmField

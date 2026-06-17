@@ -43,7 +43,7 @@ class Class348_Sub6 internal constructor(@JvmField var anInt6630: Int, @JvmField
                 if (var_class_0_ != null) {
                     return var_class_0_.getClassLoader() === var_class!!.getClassLoader()
                 }
-                val file = Class275.aHashtable3548!!.get(string) as? File?
+                val file = CollisionMapAccessor.aHashtable3548!!.get(string) as? File?
                 if (i.toInt() != 20) anInt6633 = -118
                 if (file != null) {
                     try {

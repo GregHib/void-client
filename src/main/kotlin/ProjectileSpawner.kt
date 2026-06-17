@@ -69,7 +69,7 @@ object ProjectileSpawner {
                             break
                         }
                     }
-                    val i_8_ = Class275.method2064(256 + (i_2_ shl 9), i_3_, 11219, 256 + (i shl 9))
+                    val i_8_ = CollisionMapAccessor.method2064(256 + (i_2_ shl 9), i_3_, 11219, 256 + (i shl 9))
                     class318_sub1_sub2_sub1.y = i shl 9
                     class318_sub1_sub2_sub1.plane = i_3_.toByte()
                     class318_sub1_sub2_sub1.anInt10196 = 0

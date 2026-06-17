@@ -1,5 +1,5 @@
 import ParticleDefLoader.Companion.method1376
-import Class275.method2064
+import CollisionMapAccessor.method2064
 import Class89.Companion.method850
 
 /* Class282 - Decompiled by JODE

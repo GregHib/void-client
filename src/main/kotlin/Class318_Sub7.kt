@@ -79,7 +79,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
             try {
                 if (!this.aBoolean6446) {
                     if (Class348_Sub6.anInt6637 < (this.aSpotAnimDefinition_6441!!.anInt2379)) bool = false
-                    else if (Class292.anInt4797 <= (Class275.anIntArray3551!![Class348_Sub6.anInt6637])) {
+                    else if (Class292.anInt4797 <= (CollisionMapAccessor.anIntArray3551!![Class348_Sub6.anInt6637])) {
                         if (!aBoolean6453) {
                             if (this.aSpotAnimDefinition_6441!!.anInt2425 != -1) {
                                 var i_10_ = (-aLong6435 + l).toInt()

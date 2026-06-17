@@ -78,7 +78,7 @@ class CameraDistanceOptionState : GraphicsOptionState {
             }
             val i_3_ = FrameStatsReset.anInt5799 shr 9
             val i_4_ = AsyncTaskHandle.anInt2578 shr 9
-            val i_5_ = Class275.method2064(FrameStatsReset.anInt5799, Class355.anInt4372, 11219, AsyncTaskHandle.anInt2578)
+            val i_5_ = CollisionMapAccessor.method2064(FrameStatsReset.anInt5799, Class355.anInt4372, 11219, AsyncTaskHandle.anInt2578)
             var i_6_ = 0
             if (i_3_ > 3 && i_4_ > 3 && -4 + Class367_Sub4.anInt7319 > i_3_ && Class348_Sub40_Sub3.anInt9109 - 4 > i_4_) {
                 var i_7_ = i_3_ - 4

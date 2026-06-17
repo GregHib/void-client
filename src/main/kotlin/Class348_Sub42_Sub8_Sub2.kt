@@ -285,7 +285,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_26_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 SpotAnimDefinition.aBooleanArray2374!![i_23_] = true
-                Class275.anIntArray3552!![i_23_] = i
+                CollisionMapAccessor.anIntArray3552!![i_23_] = i
                 ModelHeaderCache.anIntArray3273!![i_23_] = i_25_
                 Class338.anIntArray4196!![i_23_] = i_26_
                 Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_23_] = i_24_
@@ -525,7 +525,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         val i_64_ = 512 * i_62_ + 256
                         var i_65_ = i_60_
                         if (i_65_ < 3 && Class79.method802(i_62_, i_61_, true)) i_65_++
-                        val class318_sub1_sub3_sub4 = (Class318_Sub1_Sub3_Sub4(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + Class275.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_))
+                        val class318_sub1_sub3_sub4 = (Class318_Sub1_Sub3_Sub4(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + CollisionMapAccessor.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_))
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180)
                     }
                 }
