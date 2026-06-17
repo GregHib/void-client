@@ -280,25 +280,25 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     val i_48_ = i_46_ * 100 / i_44_
                                                     val i_49_ = 10000 * i_45_ / i_44_
                                                     val string = ("Cache:" + (Class357.method3486(2, true, 0, i_49_.toLong(), 16980)) + "% (" + i_48_ + "%)")
-                                                    Class240.aClass324_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
+                                                    WorldMapRenderer.aClass324_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     if (Loader.showCoordinates) {
                                                         val playerX = (LocalPlayerState.aPlayer_1907!!.x shr 9) + ArbVertexProgram.regionTileX
                                                         val playerY = (LocalPlayerState.aPlayer_1907!!.y shr 9) + Class90.regionTileY
-                                                        Class240.aClass324_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + LocalPlayerState.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aClass324_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + LocalPlayerState.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
-                                                        Class240.aClass324_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aClass324_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
-                                                        Class240.aClass324_4684!!.method2569("Chunk: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aClass324_4684!!.method2569("Chunk: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
                                                     }
                                                 }
-                                                if (Class313.anInt3936 > 0) Class240.aClass324_4684!!.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1)
+                                                if (Class313.anInt3936 > 0) WorldMapRenderer.aClass324_4684!!.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1)
                                                 i_38_ += 12
                                                 if (GlowPostProcessor.aBoolean2514) {
-                                                    Class240.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
+                                                    WorldMapRenderer.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
-                                                    Class240.aClass324_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + BoxedIntHolder.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
+                                                    WorldMapRenderer.aClass324_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + BoxedIntHolder.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
                                                     MapLabelMenuEntry.method1042((-123).toByte())
                                                     i_38_ += 12
                                                 }

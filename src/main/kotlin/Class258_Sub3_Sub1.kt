@@ -146,10 +146,10 @@ class Class258_Sub3_Sub1 : Class258_Sub3 {
             method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
             Class354.method3466(i xor 0x4f.inv())
             Class348_Sub40.method3038(-1)
-            if (Class240.anInt4674 == 3) Class348_Sub49.method3379(2, 4)
-            else if (Class240.anInt4674 == 7) Class348_Sub49.method3379(2, 8)
-            else if (Class240.anInt4674 != 10) {
-                if (Class240.anInt4674 == 1 || Class240.anInt4674 == 2) method3616(12639)
+            if (WorldMapRenderer.anInt4674 == 3) Class348_Sub49.method3379(2, 4)
+            else if (WorldMapRenderer.anInt4674 == 7) Class348_Sub49.method3379(2, 8)
+            else if (WorldMapRenderer.anInt4674 != 10) {
+                if (WorldMapRenderer.anInt4674 == 1 || WorldMapRenderer.anInt4674 == 2) method3616(12639)
             } else Class348_Sub49.method3379(2, 11)
         }
     }

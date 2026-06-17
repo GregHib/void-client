@@ -85,9 +85,9 @@ class Class258_Sub1 : Class258 {
             } else AnimatedModelRenderer.anInt8412 = 0
             Class348_Sub34.anInt6974 = Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084
             if (Class348_Sub34.anInt6974 < 0) {
-                Class240.anInt4686 = -Class348_Sub34.anInt6974
+                WorldMapRenderer.anInt4686 = -Class348_Sub34.anInt6974
                 Class348_Sub34.anInt6974 = 0
-            } else Class240.anInt4686 = 0
+            } else WorldMapRenderer.anInt4686 = 0
             Class27.anInt387 = DisplayModeOptionState.anInt6111 + Class318_Sub1_Sub4_Sub1.anInt10084
             if (Class27.anInt387 > Class318_Sub7.anInt6451) Class27.anInt387 = Class318_Sub7.anInt6451
             Class59_Sub1.anInt5293 = Class285_Sub2.anInt8502 + Class318_Sub1_Sub4_Sub1.anInt10084

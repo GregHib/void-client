@@ -51,9 +51,9 @@ class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
 
         fun method1215(i: Byte) {
             anInt2078++
-            if (Class240.anInt4674 != 9) {
-                if (Class240.anInt4674 == 5 || Class240.anInt4674 == 6) Class348_Sub49.method3379(2, 3)
-                else if (Class240.anInt4674 == 12) Class348_Sub49.method3379(2, 3)
+            if (WorldMapRenderer.anInt4674 != 9) {
+                if (WorldMapRenderer.anInt4674 == 5 || WorldMapRenderer.anInt4674 == 6) Class348_Sub49.method3379(2, 3)
+                else if (WorldMapRenderer.anInt4674 == 12) Class348_Sub49.method3379(2, 3)
             } else Class348_Sub49.method3379(2, 5)
         }
 

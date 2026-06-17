@@ -34,7 +34,7 @@ object Class275 {
     @JvmStatic
     fun method2066(i: Byte): Boolean {
         anInt3553++
-        if (Class240.anInt4674 < 1) return false
+        if (WorldMapRenderer.anInt4674 < 1) return false
         if (i < 101) method2065(66)
         return true
     }

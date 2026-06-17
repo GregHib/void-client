@@ -1275,7 +1275,7 @@ object Class66 {
                 val string = aStringArray1152!![anInt1170]!!
                 val string_142_ = aStringArray1152!![anInt1170 + 1]
                 val i_143_ = anIntArray1149!![--anInt1173]
-                if (string.length <= 320 && Class240.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     Class64_Sub3.aString5600 = string
                     TextureGenerator.aString2496 = string_142_
                     RuntimeException_Sub1.anInt4596 = i_143_
@@ -1297,7 +1297,7 @@ object Class66 {
             }
             if (i == 5604) {
                 anInt1170--
-                if (Class240.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     Class281.method2106(aStringArray1152!![anInt1170], 101)
                     return
                 }
@@ -1306,7 +1306,7 @@ object Class66 {
             if (i == 5605) {
                 anInt1170 -= 2
                 anInt1173 -= 2
-                if (Class240.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     method449(aStringArray1152!![anInt1170 + 1], aStringArray1152!![anInt1170], false, anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1] == 1)
                     return
                 }
@@ -1334,7 +1334,7 @@ object Class66 {
             }
             if (i == 5612) {
                 val i_144_ = anIntArray1149!![--anInt1173]
-                if (Class240.anInt4674 == 7 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (WorldMapRenderer.anInt4674 == 7 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
                         Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
                         Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
@@ -1353,7 +1353,7 @@ object Class66 {
                 anInt1170 -= 2
                 val string = aStringArray1152!![anInt1170]!!
                 val string_145_ = aStringArray1152!![anInt1170 + 1]
-                if (string.length <= 320 && Class240.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
                         Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
                         Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
@@ -1517,7 +1517,7 @@ object Class66 {
                 val i_149_ = anIntArray1149!![--anInt1173]
                 val i_150_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!!!.method1838(-32350)
                 if (i_149_ != i_150_) {
-                    if (Class334.method2653(true, Class240.anInt4674)) {
+                    if (Class334.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_150_ == 0 && Class267.anInt3428 != -1) {
                             method2732(0, Class267.anInt3428, false, 94, (Class59_Sub2_Sub1.aClass45_8667), i_149_)
                             method3093(87)
@@ -1636,7 +1636,7 @@ object Class66 {
                 val i_158_ = anIntArray1149!![--anInt1173]
                 val i_159_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
                 if (i_158_ != i_159_ && Class267.anInt3428 == Class345.anInt4270) {
-                    if (!Class334.method2653(true, Class240.anInt4674)) {
+                    if (!Class334.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_159_ == 0) {
                             method2732(0, Class267.anInt3428, false, 127, (Class59_Sub2_Sub1.aClass45_8667), i_158_)
                             method3093(118)
@@ -1921,11 +1921,11 @@ object Class66 {
             }
         } else if (i < 6600) {
             if (i == 6500) {
-                if (Class240.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
+                if (WorldMapRenderer.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
                 else {
                     if (ModelBatchBase.aBoolean1899) anIntArray1149!![anInt1173++] = 0
                     else {
-                        if (Class240.aLong4683 > method599(-126) - 1000L) anIntArray1149!![anInt1173++] = 1
+                        if (WorldMapRenderer.aLong4683 > method599(-126) - 1000L) anIntArray1149!![anInt1173++] = 1
                         else {
                             ModelBatchBase.aBoolean1899 = true
                             val class348_sub47 = method2148((Class348_Sub23_Sub2.aClass351_9034), (Class348_Sub23_Sub2.aClass77_9029), -115)
@@ -1993,7 +1993,7 @@ object Class66 {
             if (i == 6503) {
                 val i_168_ = anIntArray1149!![--anInt1173]
                 val string = aStringArray1152!![--anInt1170]
-                if (Class240.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 0
+                if (WorldMapRenderer.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 0
                 else {
                     anIntArray1149!![anInt1173++] = (if (method2972(string, i_168_, -42)) 1 else 0)
                     return
@@ -2038,7 +2038,7 @@ object Class66 {
                 return
             }
             if (i == 6509) {
-                if (Class240.anInt4674 == 7) {
+                if (WorldMapRenderer.anInt4674 == 7) {
                     Class348_Sub40_Sub30.aBoolean9403 = anIntArray1149!![--anInt1173] == 1
                     return
                 }
@@ -3893,7 +3893,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_319_ = anIntArray1149!![anInt1173]
                     val i_320_ = anIntArray1149!![anInt1173 + 1]
-                    anIntArray1149!![anInt1173++] = Class240.method1854(71, i_319_, false, i_320_)
+                    anIntArray1149!![anInt1173++] = WorldMapRenderer.method1854(71, i_319_, false, i_320_)
                     return
                 }
                 if (i == 3303) {
@@ -3960,7 +3960,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_335_ = anIntArray1149!![anInt1173]
                     val i_336_ = anIntArray1149!![anInt1173 + 1]
-                    anIntArray1149!![anInt1173++] = Class240.method1854(103, i_335_, true, i_336_)
+                    anIntArray1149!![anInt1173++] = WorldMapRenderer.method1854(103, i_335_, true, i_336_)
                     return
                 }
                 if (i == 3315) {

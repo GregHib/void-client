@@ -118,7 +118,7 @@ class Class40 internal constructor() {
             Class348_Sub45.aAbstractModelRendererArray7107 = null
             CameraDistanceOptionState.aAbstractModelRendererArray5857 = null
             Class348_Sub12.aAbstractModelRendererArray6742 = null
-            Class240.aAbstractModelRendererArray4679 = null
+            WorldMapRenderer.aAbstractModelRendererArray4679 = null
             if (i != -29776) method370(true)
             Class79.aAbstractModelRenderer_1365 = null
             Class25.aAbstractModelRendererArray367 = null
@@ -128,7 +128,7 @@ class Class40 internal constructor() {
             Class262.aClass324_3326 = null
             SceneryDetailOptionState.aAbstractModelRenderer_6097 = null
             GameAppletFrame.aClass324_20 = null
-            Class240.aClass324_4684 = null
+            WorldMapRenderer.aClass324_4684 = null
             HostPingThread.aAbstractModelRendererArray2260 = null
             CameraNodeList.aAbstractModelRendererArray1744 = null
             Class264.aAbstractModelRendererArray3378 = null

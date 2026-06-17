@@ -201,9 +201,9 @@ class Class348_Sub20 internal constructor(private val aS_Sub2_6839: OpenGlTerrai
         fun method2953(i: Byte) {
             if (i > -102) anIntArray6830 = null
             anInt6836++
-            if (Class240.anInt4674 == 3) Class348_Sub49.method3379(2, 4)
-            else if (Class240.anInt4674 != 7) {
-                if (Class240.anInt4674 == 10) Class348_Sub49.method3379(2, 11)
+            if (WorldMapRenderer.anInt4674 == 3) Class348_Sub49.method3379(2, 4)
+            else if (WorldMapRenderer.anInt4674 != 7) {
+                if (WorldMapRenderer.anInt4674 == 10) Class348_Sub49.method3379(2, 11)
             } else Class348_Sub49.method3379(2, 8)
         }
     }

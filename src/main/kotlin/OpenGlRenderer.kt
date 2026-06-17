@@ -3850,8 +3850,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 i_373_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
                                         }
-                                        var class324 = Class240.aClass324_4684
-                                        var class324_387_ = Class240.aClass324_4684
+                                        var class324 = WorldMapRenderer.aClass324_4684
+                                        var class324_387_ = WorldMapRenderer.aClass324_4684
                                         var class143 = Class258_Sub1.aFontDefinition_8527
                                         var i_388_ = class31.anInt435
                                         var class143_389_ = Class258_Sub1.aFontDefinition_8527

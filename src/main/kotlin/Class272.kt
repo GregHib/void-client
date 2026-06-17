@@ -38,7 +38,7 @@ abstract class Class272 {
         fun method2049(i: Int) {
             anInt3474++
             if (i > 49) {
-                if (Class240.anInt4674 == 7) Class348_Sub40_Sub34.method3141(false, 11.toByte())
+                if (WorldMapRenderer.anInt4674 == 7) Class348_Sub40_Sub34.method3141(false, 11.toByte())
                 else {
                     ItemDefinition.aAbstractGameSocket_2773 = Class348_Sub40_Sub8.aAbstractGameSocket_9165
                     Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null

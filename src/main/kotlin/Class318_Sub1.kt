@@ -189,7 +189,7 @@ abstract class Class318_Sub1 : Class318() {
                         if (class42.aString597 == null) break
                         var i_29_ = 0
                         if (abstractModelRenderer != null) i_29_ = abstractModelRenderer.method969()
-                        var class324 = Class240.aClass324_4684
+                        var class324 = WorldMapRenderer.aClass324_4684
                         var class143 = Class258_Sub1.aFontDefinition_8527
                         if (class42.anInt576 == 1) {
                             class324 = GameAppletFrame.aClass324_20

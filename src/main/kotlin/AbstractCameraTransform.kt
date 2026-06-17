@@ -106,7 +106,7 @@ public abstract class AbstractCameraTransform {
                 i_10_++
             }
             val i_11_: Int
-            if (Class240.anInt4674 != 3) i_11_ = 8
+            if (WorldMapRenderer.anInt4674 != 3) i_11_ = 8
             else i_11_ = 4
             Class348_Sub41.method3157(i_5_, 123.toByte(), i_4_, i_11_, false)
         }

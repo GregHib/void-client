@@ -53,7 +53,7 @@ class ScanlineRasterFiller {
                     i_3_++
                 }
                 ModelBatchBase.aBoolean1899 = false
-                Class240.aLong4683 = method599(-92)
+                WorldMapRenderer.aLong4683 = method599(-92)
                 Class299_Sub1_Sub2.aClass348_Sub49_8698 = null
             }
             if (i > -21) aBoolean2469 = true

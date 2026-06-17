@@ -158,7 +158,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 if (i_22_ == 1 && !this.aBoolean3109) method1810(i, class51.anInt953, class51.anInt909, i_5_, -1, i_0_, 2)
                             }
                             if (class51.anInt920 != 0 && class361 != null) class361.method3510(i_5_, i, i_3_ xor 0x1b.inv(), i_4_, i_7_, !(class51.aBoolean876), (class51.aBoolean896))
-                            if (class51.anInt883 != 64) Class240.method1852(i_0_, i, i_5_, (class51.anInt883))
+                            if (class51.anInt883 != 64) WorldMapRenderer.method1852(i_0_, i, i_5_, (class51.anInt883))
                         } else if (i_4_ == 1) {
                             val class318_sub1_sub4: Class318_Sub1_Sub4?
                             if (bool_17_) {
@@ -208,7 +208,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 }
                             }
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3510(i_5_, i, -102, i_4_, i_7_, !(class51.aBoolean876), (class51.aBoolean896))
-                            if (class51.anInt883 != 64) Class240.method1852(i_0_, i, i_5_, (class51.anInt883))
+                            if (class51.anInt883 != 64) WorldMapRenderer.method1852(i_0_, i, i_5_, (class51.anInt883))
                         } else if (i_4_ == 3) {
                             val class318_sub1_sub4: Class318_Sub1_Sub4?
                             if (bool_17_) {
@@ -240,7 +240,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 method1810(i, 0, (class51.anInt909), i_5_, -1, i_0_, i_26_)
                             }
                             if (class51.anInt920 != 0 && class361 != null) class361.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_)
-                            if (class51.anInt883 != 64) Class240.method1852(i_0_, i, i_5_, (class51.anInt883))
+                            if (class51.anInt883 != 64) WorldMapRenderer.method1852(i_0_, i, i_5_, (class51.anInt883))
                         } else if (i_4_ == 4) {
                             val class318_sub1_sub5: Class318_Sub1_Sub5?
                             if (bool_17_) {

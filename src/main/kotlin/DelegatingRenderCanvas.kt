@@ -245,7 +245,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (Class348_Sub8.aRenderer6654!!.method3670()) i_27_++
                     Class348_Sub42_Sub2.method3171(Class348_Sub8.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, i_27_, bool_25_, Class348_Sub8.aRenderer6654!!.method3704() > 0)
                     Class348_Sub32.method3018(Class318_Sub1_Sub4_Sub2.anInt10096)
-                    if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(Class240.aClass324_4684)
+                    if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(WorldMapRenderer.aClass324_4684)
                     else Class348_Sub48.method3328(null)
                     for (i_28_ in 0..3) Class348_Sub45.aClass361Array7108!![i_28_]!!.method3500(i xor 0x2bc)
                     Class52.method491((-86).toByte())
@@ -332,7 +332,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class363.method3514((-105).toByte())
                     Class348_Sub18.method2938(62.toByte())
                     FrameStatsReset.method1131(99)
-                    if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null && Class240.anInt4674 == 11) {
+                    if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {
                         Class352.anInt4335++
                         val class348_sub47 = method2148(Class327.aClass351_4094, (Class348_Sub23_Sub2.aClass77_9029), i xor 0x55.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), 1057001181)
@@ -352,8 +352,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                             }
                         }
                     }
-                    if (Class240.anInt4674 != 4) {
-                        if (Class240.anInt4674 != 8) {
+                    if (WorldMapRenderer.anInt4674 != 4) {
+                        if (WorldMapRenderer.anInt4674 != 8) {
                             Class348_Sub49.method3379(2, 10)
                             if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
                                 val class348_sub47 = method2148((Class340.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106)

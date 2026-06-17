@@ -52,7 +52,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                 for (i_0_ in 0..99) {
                     if (!Class292.method2203((-52).toByte())) break
                 }
-                if (Class240.anInt4674 == 10) {
+                if (WorldMapRenderer.anInt4674 == 10) {
                     while (method2138(i xor 0x2ca2)) {
                         val class348_sub47 = method2148(ScreenBorderFiller.aClass351_1961, (Class348_Sub23_Sub2.aClass77_9029), -92)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -200,7 +200,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                     if (!Class50_Sub1.aBoolean5224) Class348_Sub27.Companion.aFloat6898 /= 2.0f
                     else Class50_Sub1.aBoolean5224 = false
                     Class348_Sub35.Companion.method3027(33.toByte())
-                    if (Class240.anInt4674 == 10) {
+                    if (WorldMapRenderer.anInt4674 == 10) {
                         Class348_Sub42_Sub3.method3175(55.toByte())
                         method362(i + -11335)
                         method1501(-123)

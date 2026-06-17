@@ -174,7 +174,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                             i_41_++
                         }
                     }
-                    Class240.aClass324_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (Class321.anInt4017 + i_35_ + -25), -121, -16777216)
+                    WorldMapRenderer.aClass324_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (Class321.anInt4017 + i_35_ + -25), -121, -16777216)
                     var_renderer.KA(i_35_, i_36_, i_35_ - -Class321.anInt4017, i_36_ - -350)
                     var_renderer.method3649((-80).toByte(), Class321.anInt4017, -Class348_Sub31_Sub2.anInt9077 + (350 + i_36_), -1, i_35_)
                     Class262.aClass324_3326!!.method2576("--> " + Class250.method1909(31.toByte(), Class363.aString4461!!), -1, (i_36_ - (-350 + Class369.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)

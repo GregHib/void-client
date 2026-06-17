@@ -1466,7 +1466,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub9.anInt9557 = 0
             ModelDefinition.anInt1864 = 0
             SocketGameConnection.anInt5838 = 0
-            Class240.anInt4675 = 0
+            WorldMapRenderer.anInt4675 = 0
             NativeRenderer.anInt8058 = 0
             Class5_Sub2.anInt8354 = 0
             Class348_Sub49_Sub2.anInt9765 = 0
@@ -1903,7 +1903,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             InputStream_Sub1.anInt72 = 0
             Class318_Sub2.anInt6398 = 0
             Class348_Sub42_Sub11.anInt9584 = 0
-            Class240.anInt4677 = 0
+            WorldMapRenderer.anInt4677 = 0
             Class348_Sub51.anInt7258 = 0
             Class348_Sub16_Sub3.anInt8934 = 0
             Class30.anInt414 = 0
@@ -2589,7 +2589,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class88.anInt1498 = 0
             Class348_Sub40_Sub21.anInt9272 = 0
             AntialiasOptionState.anInt6077 = 0
-            Class240.anInt4676 = 0
+            WorldMapRenderer.anInt4676 = 0
             ShadowQualityOptionState.anInt6010 = 0
             Class318_Sub1_Sub5_Sub2.anInt10160 = 0
             IndexedFileCache.anInt1935 = 0
@@ -3142,7 +3142,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8025 = 0
             Class348_Sub42_Sub16_Sub2.anInt10459 = 0
             ItemDefinitionLoader.anInt2189 = 0
-            Class240.anInt4680 = 0
+            WorldMapRenderer.anInt4680 = 0
             Class50_Sub3.anInt5244 = 0
             Class359.anInt4419 = 0
             RandomAccessFileOnDisk.anInt3041 = 0
@@ -3203,7 +3203,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MapLabelMenuEntry.anInt5790 = 0
             NativeRenderer.anInt7926 = 0
             NativeRenderer.anInt7989 = 0
-            Class240.anInt4678 = 0
+            WorldMapRenderer.anInt4678 = 0
             TextureMetadataProvider.anInt4620 = 0
             RangedGraphicsOptionState.anInt5935 = 0
             Class262.anInt3333 = 0
@@ -3390,7 +3390,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class46.anInt767 = 0
             ConfigValueProvider.anInt4908 = 0
             Class348_Sub16_Sub3.anInt8941 = 0
-            Class240.anInt4681 = 0
+            WorldMapRenderer.anInt4681 = 0
             OpenGlRenderer.anInt7588 = 0
             Class59_Sub2_Sub2.anInt8682 = 0
             Class318_Sub1_Sub3_Sub2.anInt10058 = 0

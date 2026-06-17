@@ -61,7 +61,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                 if (i.toInt() != -79) Companion.method814((-79).toByte(), 126L)
                 anInt1437++
                 try {
-                    if (Class240.anInt4674 != 10 && (string.equals("commands", ignoreCase = true) || string.equals("help", ignoreCase = true))) {
+                    if (WorldMapRenderer.anInt4674 != 10 && (string.equals("commands", ignoreCase = true) || string.equals("help", ignoreCase = true))) {
                         method94("commands - This command", i.toInt() xor 0x1)
                         method94("cls - Clear console", -54)
                         method94("displayfps - Toggle FPS and other information", -89)
@@ -166,9 +166,9 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("clientdrop", ignoreCase = true)) {
                             method94("Dropped client connection", -119)
-                            if (Class240.anInt4674 == 10) method2049(105)
+                            if (WorldMapRenderer.anInt4674 == 10) method2049(105)
                             else {
-                                if (Class240.anInt4674 == 11) AbstractMenuEntry.aBoolean1712 = true
+                                if (WorldMapRenderer.anInt4674 == 11) AbstractMenuEntry.aBoolean1712 = true
                                 return
                             }
                             return
@@ -684,7 +684,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         return
                     }
                 }
-                if (Class240.anInt4674 == 10) {
+                if (WorldMapRenderer.anInt4674 == 10) {
                     Class292.anInt4799++
                     val class348_sub47 = method2148((FloatCameraTransform.aClass351_5699), (Class348_Sub23_Sub2.aClass77_9029), i.toInt() xor 0x24)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string!!.length + 3)
@@ -693,7 +693,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                     Class348_Sub42_Sub14.method3243(120, class348_sub47)
                 }
-                if (Class240.anInt4674 == 10) {
+                if (WorldMapRenderer.anInt4674 == 10) {
                     return
                 }
                 method94(Class274.aClass274_3486!!.method2063(Class348_Sub33.anInt6967, 544) + string, 57)

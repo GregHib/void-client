@@ -200,7 +200,7 @@ class Class348_Sub9 : Class348() {
                             class348_sub36.anInt6986 = i_8_
                             Class66.method705(class348_sub36)
                         }
-                        if (Class240.anInt4674 == 10 && Client.method105(class46)!!.method3301(-1 + i_8_, false)) {
+                        if (WorldMapRenderer.anInt4674 == 10 && Client.method105(class46)!!.method3301(-1 + i_8_, false)) {
                             if (i_8_ == 1) {
                                 ScrollingWidgetComponentNode.anInt8380++
                                 val class348_sub47 = method2148((Class27.aClass351_398), (Class348_Sub23_Sub2.aClass77_9029), -93)
@@ -233,7 +233,7 @@ class Class348_Sub9 : Class348() {
                                 Class348_Sub42_Sub14.method3243(123, class348_sub47)
                             }
                             if (i_8_ == 6) {
-                                Class240.anInt4680++
+                                WorldMapRenderer.anInt4680++
                                 val class348_sub47 = method2148((UnderlayDefinition.aClass351_2892), (Class348_Sub23_Sub2.aClass77_9029), -100)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 Class348_Sub42_Sub14.method3243(-4, class348_sub47)

@@ -92,7 +92,7 @@ class TextureQualityOptionState : GraphicsOptionState {
                 if (Class75.aFloat1247.toDouble() == 3.0) return PingHostListHolder.aClass323_2333
                 if (Class75.aFloat1247.toDouble() == 4.0) return Class285.aClass323_4754
                 if (Class75.aFloat1247.toDouble() == 6.0) return Class348_Sub3.aClass323_6581
-                if (Class75.aFloat1247.toDouble() >= 8.0) return Class240.aClass323_4672
+                if (Class75.aFloat1247.toDouble() >= 8.0) return WorldMapRenderer.aClass323_4672
             }
             return null
         }

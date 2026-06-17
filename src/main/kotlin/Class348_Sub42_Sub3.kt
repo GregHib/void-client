@@ -87,7 +87,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
         }
 
         fun method3175(i: Byte) {
-            if (!method3196(Class240.anInt4674, -114) && !method2672(Class240.anInt4674, -103)) {
+            if (!method3196(WorldMapRenderer.anInt4674, -114) && !method2672(WorldMapRenderer.anInt4674, -103)) {
                 val i_12_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) shr 3)
                 val i_13_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) shr 3)
                 if (i_12_ < 0 || Class367_Sub4.anInt7319 shr 3 <= i_12_ || i_13_ < 0 || (Class348_Sub40_Sub3.anInt9109 shr 3 <= i_13_)) Class346_Sub1.method2703(0, Class367_Sub4.anInt7319 shr 4, (Class348_Sub40_Sub3.anInt9109 shr 4), (-13).toByte())
@@ -132,7 +132,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             Class48.anInt859 = -1
             if (i <= -44) {
                 TextureMetadataProvider.anInt4609 = -1
-                Class240.aClass323_4672 = null
+                WorldMapRenderer.aClass323_4672 = null
                 if (Class75.aConfigDefinitionLoader_1238 != null) {
                     Class75.aConfigDefinitionLoader_1238!!.method1219(7851)
                     Class75.aConfigDefinitionLoader_1238!!.method1220((-100).toByte(), 64, 128)

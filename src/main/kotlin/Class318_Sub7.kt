@@ -440,7 +440,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             Class289.method2193(true, (-125).toByte())
                             method867(true)
                         } else {
-                            Class240.aClass323_4672 = Class323(var_renderer!!, 30, true, Class305.aCanvas3869!!)
+                            WorldMapRenderer.aClass323_4672 = Class323(var_renderer!!, 30, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 100
                             Class289.method2193(true, (-119).toByte())
                             method867(true)

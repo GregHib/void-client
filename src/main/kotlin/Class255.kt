@@ -326,8 +326,8 @@ class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
                     }
                 }
                 spriteImages = SpriteImage.method1519(class45, Class364.anInt4469, 0)
-                Class240.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                for (i in spriteImages.indices) Class240.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                WorldMapRenderer.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                for (i in spriteImages.indices) WorldMapRenderer.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(spriteImages[i], true)
                 spriteImages = SpriteImage.method1519(class45, Class348_Sub40_Sub38.anInt9473, 0)
                 CameraNodeList.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {

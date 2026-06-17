@@ -3,7 +3,7 @@ import Class258_Sub4.Companion.method1974
 /* Class240 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class240 internal constructor(class339: Class339?, minimapSpriteRenderer: MinimapSpriteRenderer?) : Interface1 {
+class WorldMapRenderer internal constructor(class339: Class339?, minimapSpriteRenderer: MinimapSpriteRenderer?) : Interface1 {
     private val aClass339_4682: Class339?
     private val aMinimapSpriteRenderer_4685: MinimapSpriteRenderer?
     override fun method8(i: Byte): Boolean {

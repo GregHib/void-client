@@ -723,7 +723,7 @@ open class Class348_Sub49 : Class348 {
 
         fun method3379(i: Int, i_71_: Int) {
             anInt7201++
-            if (i_71_ != Class240.anInt4674) {
+            if (i_71_ != WorldMapRenderer.anInt4674) {
                 if (i_71_ == 13) {
                     if (Class348_Sub23_Sub3.aString9043 != null) GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-81).toByte())
                     else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
@@ -747,7 +747,7 @@ open class Class348_Sub49 : Class348 {
                     }
                 } else if (Class348_Sub23_Sub3.aString9043 == null) method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
                 else GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-99).toByte())
-                if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (-78).toByte())) {
+                if (Class318_Sub1_Sub1_Sub2.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
                     Class95.aClass45_1541!!.anInt634 = 2
                     Class247.aClass45_3183!!.anInt634 = 2
                     Class94.aClass45_1538!!.anInt634 = 2
@@ -773,7 +773,7 @@ open class Class348_Sub49 : Class348 {
                 }
                 if (i_71_ == 11 || i_71_ == 3) method3088(9)
                 val bool = (i == i_71_ || method3196(i_71_, i xor 0x58.inv()) || method2672(i_71_, -100))
-                val bool_72_ = (Class240.anInt4674 == 2 || method3196(Class240.anInt4674, -110) || method2672(Class240.anInt4674, -128))
+                val bool_72_ = (WorldMapRenderer.anInt4674 == 2 || method3196(WorldMapRenderer.anInt4674, -110) || method2672(WorldMapRenderer.anInt4674, -128))
                 if (bool != bool_72_) {
                     if (bool) {
                         Class267.anInt3428 = Class345.anInt4270
@@ -788,7 +788,7 @@ open class Class348_Sub49 : Class348 {
                     }
                 }
                 if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (-64).toByte()) || i_71_ == 13) Class348_Sub8.aRenderer6654!!.method3673()
-                Class240.anInt4674 = i_71_
+                WorldMapRenderer.anInt4674 = i_71_
             }
         }
     }
