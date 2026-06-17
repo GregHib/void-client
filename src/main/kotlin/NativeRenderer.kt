@@ -6,7 +6,7 @@ import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeap
 import jaclib.memory.heap.NativeHeapBuffer
 import jagex3.graphics2.hw.NativeInterface
-import r_Sub2.Companion.method3297
+import OpenGlRenderNode.Companion.method3297
 import java.awt.Canvas
 import java.util.*
 import kotlin.math.cos

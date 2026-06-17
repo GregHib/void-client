@@ -137,7 +137,7 @@ class Class239_Sub24 : Class239 {
                 Class226.method1626(1, true)
                 if (i_10_ == 0) i_10_ = 1
                 if (i_9_ == 0) i_9_ = 1
-                if (Class348_Sub1_Sub1.aSArray8801 != null && (!r.aBoolean9722 || (0x40 and Class38.anInt500) != 0)) {
+                if (Class348_Sub1_Sub1.aSArray8801 != null && (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) != 0)) {
                     var i_13_ = -1
                     var i_14_ = -1
                     val i_15_ = var_renderer.i()
@@ -173,7 +173,7 @@ class Class239_Sub24 : Class239 {
                         if (i_26_ < 3 && ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_24_ shr 9]!![i_25_ shr 9]).toInt()) != 0)) i_26_++
                     }
                     if (i_13_ != -1 && i_14_ != -1) {
-                        if (!r.aBoolean9722 || (0x40 and Class38.anInt500) == 0) {
+                        if (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) == 0) {
                             if (Class122.aBoolean1801) Class50_Sub3.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (Class274.aClass274_3510!!.method2063(Class348_Sub33.anInt6967, 544)), 0L, -1)
                             Class352.anInt4334++
                             Class50_Sub3.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), Class239_Sub4.aString5882, 0L, Class333.anInt4144)
@@ -309,7 +309,7 @@ class Class239_Sub24 : Class239 {
                                     var class348_sub34 = (class348_sub37.aClass262_6998.method1993(-92) as Class348_Sub34?)
                                     while (class348_sub34 != null) {
                                         val class213 = (Exception_Sub1.aClass255_112!!.method1940(79, (class348_sub34.anInt6973)))
-                                        if (r.aBoolean9722 && ((Class132.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
+                                        if (RenderNode.aBoolean9722 && ((Class132.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
                                             val class254 = (if (Class246.anInt3176 != -1) (Class101_Sub3.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
                                             if ((Class38.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, Class246.anInt3176))))) {
                                                 Class97.anInt1555++
@@ -346,7 +346,7 @@ class Class239_Sub24 : Class239 {
                                 var class51: Class51? = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-100)))
                                 if (class51!!.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), 47.toByte()))
                                 if (class51 != null) {
-                                    if (r.aBoolean9722 && ((Class132.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
+                                    if (RenderNode.aBoolean9722 && ((Class132.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
                                         val class254 = (if (Class246.anInt3176 != -1) (Class101_Sub3.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
                                         if (((0x4 and Class38.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (class51.method487(Class246.anInt3176, (class254.anInt3256), 54))))) {
                                             Class220.anInt2877++

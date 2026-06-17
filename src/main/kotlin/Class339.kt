@@ -160,7 +160,7 @@ class Class339 : Runnable {
                 Class246.anInt3176 = i
                 Class38.anInt500 = i_13_
                 Class301.anInt3829 = class46.anInt812
-                r.aBoolean9722 = true
+                RenderNode.aBoolean9722 = true
                 Class9.anInt169 = class46.anInt704
                 Class348_Sub49_Sub1.anInt9747 = class46.anInt824
                 if (i_14_.toInt() != 21) Companion.method2665(-99, (-106).toByte(), 10, -37, 26, -123)

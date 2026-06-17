@@ -22,7 +22,7 @@ import Class5_Sub2.Companion.method192
 import Class75_Sub1.method770
 import Class87.Companion.method837
 import Class89.Companion.method850
-import r_Sub2.Companion.method3297
+import OpenGlRenderNode.Companion.method3297
 
 /* Class237_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

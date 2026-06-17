@@ -1194,7 +1194,7 @@ class s_Sub1(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, private val an
         else if (aClass198ArrayArray8219 != null) method3995(i, i_255_, class167.aBoolean2195, class167, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
     }
 
-    override fun wa(var_r: r?, i: Int, i_257_: Int, i_258_: Int, i_259_: Int, bool: Boolean) {
+    override fun wa(var_renderNode: RenderNode?, i: Int, i_257_: Int, i_258_: Int, i_259_: Int, bool: Boolean) {
         /* empty */
     }
 
@@ -1731,11 +1731,11 @@ class s_Sub1(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, private val an
         }
     }
 
-    override fun method3989(var_r: r?, i: Int, i_407_: Int, i_408_: Int, i_409_: Int, bool: Boolean): Boolean {
+    override fun method3989(var_renderNode: RenderNode?, i: Int, i_407_: Int, i_408_: Int, i_409_: Int, bool: Boolean): Boolean {
         return false
     }
 
-    override fun fa(i: Int, i_410_: Int, var_r: r?): r? {
+    override fun fa(i: Int, i_410_: Int, var_renderNode: RenderNode?): RenderNode? {
         return null
     }
 
@@ -2029,7 +2029,7 @@ class s_Sub1(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, private val an
         aByteArrayArray8232 = null
     }
 
-    override fun CA(var_r: r?, i: Int, i_482_: Int, i_483_: Int, i_484_: Int, bool: Boolean) {
+    override fun CA(var_renderNode: RenderNode?, i: Int, i_482_: Int, i_483_: Int, i_484_: Int, bool: Boolean) {
         /* empty */
     }
 

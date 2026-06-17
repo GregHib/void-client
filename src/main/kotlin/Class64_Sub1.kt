@@ -1621,7 +1621,7 @@ class Class64_Sub1 : Class64 {
         return aShort5324.toInt()
     }
 
-    public override fun ba(var_r: r?): r? {
+    public override fun ba(var_renderNode: RenderNode?): RenderNode? {
         return null
     }
 

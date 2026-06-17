@@ -281,7 +281,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         }
     }
 
-    public override fun ba(var_r: r?): r? {
+    public override fun ba(var_renderNode: RenderNode?): RenderNode? {
         try {
             anInt5513++
             if (anInt5475 == 0) return null
@@ -306,9 +306,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             }
             val i_27_ = 1 + (i_24_ - i)
             val i_28_ = 1 + -i_25_ + i_26_
-            val var_r_Sub1 = var_r as r_Sub1?
-            val var_r_Sub1_29_: r_Sub1
-            if (var_r_Sub1 == null || !var_r_Sub1.method3291(i_27_, i_28_, (-59).toByte())) var_r_Sub1_29_ = r_Sub1(aHa_Sub3_5419, i_27_, i_28_)
+            val var_r_Sub1 = var_renderNode as NativeRenderNode?
+            val var_r_Sub1_29_: NativeRenderNode
+            if (var_r_Sub1 == null || !var_r_Sub1.method3291(i_27_, i_28_, (-59).toByte())) var_r_Sub1_29_ = NativeRenderNode(aHa_Sub3_5419, i_27_, i_28_)
             else {
                 var_r_Sub1_29_ = var_r_Sub1
                 var_r_Sub1_29_.method3289(108)
@@ -317,7 +317,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             method665(41, var_r_Sub1_29_)
             return var_r_Sub1_29_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "nca.ba(" + (if (var_r != null) "{...}" else "null") + ')')
+            throw Class348_Sub17.method2929(runtimeexception, "nca.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
         }
     }
 
@@ -776,7 +776,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         aBoolean5477 = false
     }
 
-    private fun method665(i: Int, var_r_Sub1: r_Sub1) {
+    private fun method665(i: Int, var_r_Sub1: NativeRenderNode) {
         try {
             if (anInt5475 > Class318_Sub1_Sub1_Sub1.anIntArray9949!!.size) {
                 Class101.anIntArray1593 = IntArray(anInt5475)

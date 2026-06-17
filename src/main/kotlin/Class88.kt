@@ -123,7 +123,7 @@ class Class88 {
                 i = s_Sub3.method4008((-124).toByte())
                 i_1_ = method260(false)
             }
-            Class159.method1252(i_1_, r.anInt9721, i_1_, -1, i, i + Class321.anInt4017, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432, 116.toByte(), i)
+            Class159.method1252(i_1_, RenderNode.anInt9721, i_1_, -1, i, i + Class321.anInt4017, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432, 116.toByte(), i)
             if (Class138.aClass46Array1942 != null) {
                 method3064(i, Class136.anInt4792, true, Class348_Sub1.anInt6555, i_1_, Class331.aClass46_4130!!.anInt760, i + Class321.anInt4017, false, Class138.aClass46Array1942, -1412584499, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432)
                 Class138.aClass46Array1942 = null
@@ -223,7 +223,7 @@ class Class88 {
                             val class348_sub49_8_ = Class316.aClass348_Sub51_3959!!.method3427(24)
                             class348_sub49_sub2.writeByte(false, (class348_sub49_8_.anInt7197))
                             class348_sub49_sub2.writeBytes(class348_sub49_8_.anInt7197, 0, (class348_sub49_8_.aByteArray7154!!), 74)
-                            r.aBoolean9719 = true
+                            RenderNode.aBoolean9719 = true
                             val class348_sub49_9_ = Class348_Sub49(Class348_Sub40_Sub20.aClass348_Sub4_9264!!.method2746((-76).toByte()))
                             Class348_Sub40_Sub20.aClass348_Sub4_9264!!.method2747(1, class348_sub49_9_)
                             class348_sub49_sub2.writeBytes((class348_sub49_9_.aByteArray7154!!).size, 0, (class348_sub49_9_.aByteArray7154!!), -73)

@@ -130,7 +130,7 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
             if (Class348_Sub8.aRenderer6654!!.method3627()) Class348_Sub40_Sub33.method3137(Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) == 1, (-24).toByte())
             Class97.method873(Class367_Sub4.anInt7319 shr 3, 21719, Class348_Sub8.aRenderer6654, Class348_Sub40_Sub3.anInt9109 shr 3)
             Class76.method773(true)
-            r.aBoolean9719 = false
+            RenderNode.aBoolean9719 = false
             Class228.aClass57Array2974 = null
             RuntimeException_Sub1.aBoolean4604 = true
             Class348_Sub42_Sub3.method3179(i_1_)

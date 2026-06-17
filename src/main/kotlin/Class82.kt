@@ -241,7 +241,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                 method94("Entered tk0", 101)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
                                 method243(37)
-                                r.aBoolean9719 = false
+                                RenderNode.aBoolean9719 = false
                                 return
                             } else method94("Failed to enter tk0", 69)
                             return
@@ -252,7 +252,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                 method94("Entered tk1", -65)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 1)
                                 method243(i.toInt() xor 0x6b.inv())
-                                r.aBoolean9719 = false
+                                RenderNode.aBoolean9719 = false
                                 return
                             } else method94("Failed to enter tk1", -56)
                             return
@@ -263,7 +263,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                 method94("Entered tk2", i + 151)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)
                                 method243(37)
-                                r.aBoolean9719 = false
+                                RenderNode.aBoolean9719 = false
                             } else {
                                 method94("Failed to enter tk2", i.toInt() xor 0x22)
                                 return
@@ -276,7 +276,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                 method94("Entered tk3", 78)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 3)
                                 method243(37)
-                                r.aBoolean9719 = false
+                                RenderNode.aBoolean9719 = false
                                 return
                             } else method94("Failed to enter tk3", 54)
                             return
@@ -287,7 +287,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                 method94("Entered tk5", -108)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 5)
                                 method243(37)
-                                r.aBoolean9719 = false
+                                RenderNode.aBoolean9719 = false
                             } else {
                                 method94("Failed to enter tk5", 63)
                                 return
@@ -302,7 +302,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                 else {
                                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
                                     method243(37)
-                                    r.aBoolean9719 = false
+                                    RenderNode.aBoolean9719 = false
                                     method94(("maxbuildarea=" + Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)), 98)
                                     return
                                 }
@@ -596,7 +596,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                 val i_21_ = (Class348_Sub41.method3156(true, string.substring(1 + i_20_)))
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_21_)
                                 method243(37)
-                                r.aBoolean9719 = false
+                                RenderNode.aBoolean9719 = false
                                 Class348_Sub42_Sub3.method3179(i + 79)
                                 if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350) == i_21_) {
                                     method94("Successfully changed ortho mode", -82)

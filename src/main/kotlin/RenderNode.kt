@@ -3,7 +3,7 @@ import kotlin.concurrent.Volatile
 /* r - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class r : Class348_Sub42() {
+abstract class RenderNode : Class348_Sub42() {
     companion object {
         @JvmField
         var aClass312_9716: Class312? = Class312()

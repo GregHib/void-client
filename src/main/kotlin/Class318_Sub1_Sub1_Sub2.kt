@@ -8,7 +8,7 @@ import OutputStream_Sub2.Companion.method136
 */
 class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, class51: Class51, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bool: Boolean, i_24_: Int, bool_25_: Boolean) : Class318_Sub1_Sub1(i_21_, i_22_, i_23_, i, i_20_, class51.anInt930), Interface10 {
     private val aBoolean9974: Boolean
-    private var aR9976: r? = null
+    private var aRenderNode9976: RenderNode? = null
     private val aByte9980: Byte
     private var aBoolean9983 = false
     private val aBoolean9988: Boolean
@@ -42,15 +42,15 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
     override fun method43(var_renderer: Renderer?, i: Int) {
         anInt9995++
         val `object`: Any? = null
-        val var_r: r?
-        if (aR9976 == null && aBoolean9988) {
+        val var_renderNode: RenderNode?
+        if (aRenderNode9976 == null && aBoolean9988) {
             val class2 = method2401(var_renderer, 262144, true, 22)
-            var_r = if (class2 == null) null else class2.aR118
+            var_renderNode = if (class2 == null) null else class2.aRenderNode118
         } else {
-            var_r = aR9976
-            aR9976 = null
+            var_renderNode = aRenderNode9976
+            aRenderNode9976 = null
         }
-        if (var_r != null) method1301(var_r, this.aByte6376.toInt(), this.x, this.y, null)
+        if (var_renderNode != null) method1301(var_renderNode, this.aByte6376.toInt(), this.x, this.y, null)
     }
 
     private fun method2401(var_renderer: Renderer?, i: Int, bool: Boolean, i_4_: Int): Class2? {
@@ -145,15 +145,15 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
     override fun method44(i: Int, var_renderer: Renderer?) {
         anInt9986++
         val `object`: Any? = null
-        val var_r: r?
-        if (aR9976 != null || !aBoolean9988) {
-            var_r = aR9976
-            aR9976 = null
+        val var_renderNode: RenderNode?
+        if (aRenderNode9976 != null || !aBoolean9988) {
+            var_renderNode = aRenderNode9976
+            aRenderNode9976 = null
         } else {
             val class2 = method2401(var_renderer, 262144, true, 22)
-            var_r = if (class2 == null) null else class2.aR118
+            var_renderNode = if (class2 == null) null else class2.aRenderNode118
         }
-        if (var_r != null) method1130(var_r, this.aByte6376.toInt(), this.x, this.y, null)
+        if (var_renderNode != null) method1130(var_renderNode, this.aByte6376.toInt(), this.x, this.y, null)
         if (i != 836) aShort9991 = 86.toShort()
     }
 
@@ -195,7 +195,7 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
                 val class2 = method2401(var_renderer, i_26_, aBoolean9988, 22)
                 if (class2 == null) break
                 aClass64_9993 = class2.aClass64_119
-                aR9976 = class2.aR118
+                aRenderNode9976 = class2.aRenderNode118
                 if (!aBoolean9989) break
                 aClass64_9993 = aClass64_9993!!.method614(0.toByte(), i_26_, false)
             } catch (runtimeexception: RuntimeException) {

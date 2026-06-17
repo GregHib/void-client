@@ -15,7 +15,7 @@ abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Arra
 
     abstract fun method3979(i: Int, i_14_: Int)
 
-    abstract fun wa(var_r: r?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, bool: Boolean)
+    abstract fun wa(var_renderNode: RenderNode?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, bool: Boolean)
 
     abstract fun ka(i: Int, i_18_: Int, i_19_: Int)
 
@@ -48,7 +48,7 @@ abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Arra
 
     abstract fun U(i: Int, i_45_: Int, `is`: IntArray?, is_46_: IntArray?, is_47_: IntArray, is_48_: IntArray?, is_49_: IntArray, is_50_: IntArray?, is_51_: IntArray, is_52_: IntArray, i_53_: Int, i_54_: Int, i_55_: Int, bool: Boolean)
 
-    abstract fun CA(var_r: r?, i: Int, i_57_: Int, i_58_: Int, i_59_: Int, bool: Boolean)
+    abstract fun CA(var_renderNode: RenderNode?, i: Int, i_57_: Int, i_58_: Int, i_59_: Int, bool: Boolean)
 
     init {
         var i_61_ = i_61_
@@ -64,11 +64,11 @@ abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Arra
         this.anInt4588 = i_62_
     }
 
-    abstract fun method3989(var_r: r?, i: Int, i_63_: Int, i_64_: Int, i_65_: Int, bool: Boolean): Boolean
+    abstract fun method3989(var_renderNode: RenderNode?, i: Int, i_63_: Int, i_64_: Int, i_65_: Int, bool: Boolean): Boolean
 
     abstract fun YA()
 
-    abstract fun fa(i: Int, i_66_: Int, var_r: r?): r?
+    abstract fun fa(i: Int, i_66_: Int, var_renderNode: RenderNode?): RenderNode?
 
     companion object {
         @JvmField

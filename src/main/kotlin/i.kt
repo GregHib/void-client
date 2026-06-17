@@ -1,5 +1,6 @@
 /* i - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
+* NativeModel
 */
 class i : Class64, Interface19 {
     private val anOa5117: oa
@@ -336,7 +337,7 @@ class i : Class64, Interface19 {
 
     private external fun A(l: Long, i: Int, bool: Boolean)
 
-    public external override fun ba(var_r: r?): r?
+    public external override fun ba(var_renderNode: RenderNode?): RenderNode?
 
     private external fun oa(var_oa: oa?)
 

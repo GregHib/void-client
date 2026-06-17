@@ -7,7 +7,7 @@ import Class348_Sub16_Sub3.Companion.method2878
 import Class348_Sub40_Sub32.Companion.method3135
 import Class58.Companion.method536
 import Class79.Companion.method802
-import r_Sub2.Companion.method3297
+import OpenGlRenderNode.Companion.method3297
 
 /* Class348_Sub14 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -251,17 +251,17 @@ class Class348_Sub14 : Class348 {
                         }
                         i_37_++
                     }
-                    if (r_Sub2.aClass252_10488 != null) {
+                    if (OpenGlRenderNode.aClass252_10488 != null) {
                         Class95.aClass45_1541!!.anInt634 = 1
                         Class348_Sub23_Sub2.aClass153_9031!!.method1220(116.toByte(), 64, 1024)
-                        for (i_51_ in 0..<r_Sub2.aClass252_10488!!.anInt3241) {
-                            val i_52_ = (r_Sub2.aClass252_10488!!.anIntArray3238!![i_51_])
+                        for (i_51_ in 0..<OpenGlRenderNode.aClass252_10488!!.anInt3241) {
+                            val i_52_ = (OpenGlRenderNode.aClass252_10488!!.anIntArray3238!![i_51_])
                             if ((Class132.aPlayer_1907!!.plane).toInt() == i_52_ shr 28) {
                                 val i_53_ = ((i_52_ shr 14 and 0x3fff) - za_Sub2.regionTileX)
                                 val i_54_ = (i_52_ and 0x3fff) + -Class90.regionTileY
                                 if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319 && i_54_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_54_)) Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1999(Class348_Sub35(i_51_), -20180)
                                 else {
-                                    val class42 = (Class348_Sub23_Sub2.aClass153_9031!!.method1225((r_Sub2.aClass252_10488!!.anIntArray3239!![i_51_]), 120.toByte()))
+                                    val class42 = (Class348_Sub23_Sub2.aClass153_9031!!.method1225((OpenGlRenderNode.aClass252_10488!!.anIntArray3239!![i_51_]), 120.toByte()))
                                     if (class42!!.anIntArray591 != null && (i_53_ + class42.anInt595 >= 0) && (Class367_Sub4.anInt7319 > class42.anInt603 + i_53_) && i_54_ + class42.anInt570 >= 0 && (Class348_Sub40_Sub3.anInt9109 > (i_54_ - -class42.anInt607))) Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1999(Class348_Sub35(i_51_), -20180)
                                 }
                             }

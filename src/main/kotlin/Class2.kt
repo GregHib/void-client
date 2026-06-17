@@ -5,7 +5,7 @@ import Class286_Sub3.Companion.method2148
 */
 class Class2 {
     @JvmField
-    var aR118: r? = null
+    var aRenderNode118: RenderNode? = null
     @JvmField
     var aClass64_119: Class64? = null
 

@@ -170,8 +170,8 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                         bool = false
                     }
                 }
-                if (r.anIntArray9724!![i_19_] != -1 && Class348_Sub23_Sub1.aByteArrayArray8996!![i_19_] == null) {
-                    Class348_Sub23_Sub1.aByteArrayArray8996!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, r.anIntArray9724!![i_19_], 0)
+                if (RenderNode.anIntArray9724!![i_19_] != -1 && Class348_Sub23_Sub1.aByteArrayArray8996!![i_19_] == null) {
+                    Class348_Sub23_Sub1.aByteArrayArray8996!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, RenderNode.anIntArray9724!![i_19_], 0)
                     if (Class348_Sub23_Sub1.aByteArrayArray8996!![i_19_] == null) {
                         bool = false
                         Class268.anInt3441++
@@ -186,14 +186,14 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                 }
                 i_19_++
             }
-            if (r_Sub2.aClass252_10488 == null) {
+            if (OpenGlRenderNode.aClass252_10488 == null) {
                 if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.aClass45_6950!!.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"))) {
-                    if (Class348_Sub32.aClass45_6950!!.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), Class130.aBoolean1900, (-91).toByte())
+                    if (Class348_Sub32.aClass45_6950!!.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aClass252_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), Class130.aBoolean1900, (-91).toByte())
                     else {
                         bool = false
                         Class268.anInt3441++
                     }
-                } else r_Sub2.aClass252_10488 = Class252(0)
+                } else OpenGlRenderNode.aClass252_10488 = Class252(0)
             }
             if (bool) {
                 bool = true

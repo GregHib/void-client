@@ -1418,7 +1418,7 @@ object Class66 {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!), i_146_)
                 Class348_Sub20.method2953((-126).toByte())
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6002) {
@@ -1428,7 +1428,7 @@ object Class66 {
                 Class348_Sub20.method2953((-122).toByte())
                 method3072(32.toByte())
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6003) {
@@ -1437,39 +1437,39 @@ object Class66 {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264), if (bool_148_) 2 else 1)
                 Class348_Sub40_Sub9.method3072((-106).toByte())
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6005) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 Class348_Sub20.method2953((-111).toByte())
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6007) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub13_7236), anIntArray1149!![--anInt1173])
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6008) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub1_7246), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6010) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6011) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238), anIntArray1149!![--anInt1173])
                 Class348_Sub20.method2953((-116).toByte())
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6012) {
@@ -1477,21 +1477,21 @@ object Class66 {
                 method3038(-1)
                 Class76.method773(true)
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6014) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259), if (anIntArray1149!![--anInt1173] == 1) 2 else 0)
                 Class348_Sub20.method2953((-112).toByte())
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6015) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 Class348_Sub20.method2953((-127).toByte())
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6016) {
@@ -1504,13 +1504,13 @@ object Class66 {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub5_7240), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method352(1)
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6018) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272), anIntArray1149!![--anInt1173])
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6019) {
@@ -1529,14 +1529,14 @@ object Class66 {
                     }
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260), i_149_)
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                 }
                 return
             }
             if (i == 6020) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7234), anIntArray1149!![--anInt1173])
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6021) {
@@ -1549,7 +1549,7 @@ object Class66 {
                 val i_152_ = anIntArray1149!![--anInt1173]
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub15_7224), i_152_)
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6024) {
@@ -1560,7 +1560,7 @@ object Class66 {
             if (i == 6025) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226), anIntArray1149!![--anInt1173])
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6027) {
@@ -1598,7 +1598,7 @@ object Class66 {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), i_155_)
                 if (!bool_156_) Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 0)
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6033) {
@@ -1610,7 +1610,7 @@ object Class66 {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method243(37)
                 method3038(-1)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6035) {
@@ -1629,7 +1629,7 @@ object Class66 {
             if (i == 6037) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215), anIntArray1149!![--anInt1173])
                 method243(37)
-                r.aBoolean9719 = false
+                RenderNode.aBoolean9719 = false
                 return
             }
             if (i == 6038) {
@@ -1648,7 +1648,7 @@ object Class66 {
                     }
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245), i_158_)
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                 }
                 return
             }
@@ -1658,7 +1658,7 @@ object Class66 {
                 if (i_160_ != Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(-32350)) {
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257), i_160_)
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                 }
                 return
             }
@@ -1667,7 +1667,7 @@ object Class66 {
                 if (i_161_ != Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)) {
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_161_)
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                     Class348_Sub42_Sub3.method3179(0)
                 }
                 return
@@ -2052,15 +2052,15 @@ object Class66 {
             if (i < 6800 && Class11.aClass231_196 == Class288.aClass231_4953) {
                 if (i == 6700) {
                     var i_174_ = Class125.aClass356_4915!!.method3474(1)
-                    if (r.anInt9721 != -1) i_174_++
+                    if (RenderNode.anInt9721 != -1) i_174_++
                     anIntArray1149!![anInt1173++] = i_174_
                     return
                 }
                 if (i == 6701) {
                     var i_175_ = anIntArray1149!![--anInt1173]
-                    if (r.anInt9721 != -1) {
+                    if (RenderNode.anInt9721 != -1) {
                         if (i_175_ == 0) {
-                            anIntArray1149!![anInt1173++] = r.anInt9721
+                            anIntArray1149!![anInt1173++] = RenderNode.anInt9721
                             return
                         }
                         i_175_--
@@ -2319,41 +2319,41 @@ object Class66 {
                     anIntArray1149!![anInt1173++] = i_221_
                     Class348_Sub20.method2953((-113).toByte())
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7001) {
                     Class133.method1140(47)
                     Class348_Sub20.method2953((-126).toByte())
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7002) {
                     Class47.method447((-59).toByte())
                     Class348_Sub20.method2953((-124).toByte())
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7003) {
                     Class161.method1263(true)
                     Class348_Sub20.method2953((-106).toByte())
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7004) {
                     method3076(0, true)
                     Class348_Sub20.method2953((-107).toByte())
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7005) {
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 0)
                     method243(37)
-                    r.aBoolean9719 = false
+                    RenderNode.aBoolean9719 = false
                     return
                 }
                 if (i == 7006) {

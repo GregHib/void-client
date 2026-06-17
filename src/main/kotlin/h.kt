@@ -1,5 +1,6 @@
 /* h - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
+* NativeFontRenderer
 */
 class h(var_oa: oa?, var_ya: ya?, class143: Class143?, class207s: Array<Class207>, class105s: Array<Class105?>?) : Class324(var_oa, class143), Interface19 {
     var nativeid: Long = 0

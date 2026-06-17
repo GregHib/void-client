@@ -17,7 +17,7 @@ class Class318_Sub1_Sub3_Sub1 internal constructor(var_renderer: Renderer?, clas
     private var aClass30_10025: Class30? = null
     var aClass64_10028: Class64? = null
     private var aShort10032: Short = 0
-    private var aR10036: r? = null
+    private var aRenderNode10036: RenderNode? = null
     override fun method40(i: Int) {
         if (i == -12031) {
             if (this.aClass64_10028 != null) this.aClass64_10028!!.method612()
@@ -35,16 +35,16 @@ class Class318_Sub1_Sub3_Sub1 internal constructor(var_renderer: Renderer?, clas
     override fun method44(i: Int, var_renderer: Renderer?) {
         anInt10008++
         val `object`: Any? = null
-        val var_r: r?
-        if (aR10036 != null || !aBoolean10003) {
-            var_r = aR10036
-            aR10036 = null
+        val var_renderNode: RenderNode?
+        if (aRenderNode10036 != null || !aBoolean10003) {
+            var_renderNode = aRenderNode10036
+            aRenderNode10036 = null
         } else {
             val class2 = method2417(0, var_renderer, 262144, true)
-            var_r = if (class2 != null) class2.aR118 else null
+            var_renderNode = if (class2 != null) class2.aRenderNode118 else null
         }
         if (i != 836) method41(-125)
-        if (var_r != null) method1130(var_r, this.aByte6376.toInt(), this.x, this.y, null)
+        if (var_renderNode != null) method1130(var_renderNode, this.aByte6376.toInt(), this.x, this.y, null)
     }
 
     init {
@@ -63,7 +63,7 @@ class Class318_Sub1_Sub3_Sub1 internal constructor(var_renderer: Renderer?, clas
                 val class2 = method2417(0, var_renderer, i_11_, aBoolean10003)
                 if (class2 == null) break
                 this.aClass64_10028 = class2.aClass64_119
-                aR10036 = class2.aR118
+                aRenderNode10036 = class2.aRenderNode118
                 if (!aBoolean10019) break
                 this.aClass64_10028 = this.aClass64_10028!!.method614(0.toByte(), i_11_, false)
             } catch (runtimeexception: RuntimeException) {
@@ -207,15 +207,15 @@ class Class318_Sub1_Sub3_Sub1 internal constructor(var_renderer: Renderer?, clas
         if (i != -14218) aBoolean10019 = false
         anInt10016++
         val `object`: Any? = null
-        val var_r: r?
-        if (aR10036 == null && aBoolean10003) {
+        val var_renderNode: RenderNode?
+        if (aRenderNode10036 == null && aBoolean10003) {
             val class2 = method2417(i + 14218, var_renderer, 262144, true)
-            var_r = if (class2 != null) class2.aR118 else null
+            var_renderNode = if (class2 != null) class2.aRenderNode118 else null
         } else {
-            var_r = aR10036
-            aR10036 = null
+            var_renderNode = aRenderNode10036
+            aRenderNode10036 = null
         }
-        if (var_r != null) method1301(var_r, this.aByte6376.toInt(), this.x, this.y, null)
+        if (var_renderNode != null) method1301(var_renderNode, this.aByte6376.toInt(), this.x, this.y, null)
     }
 
     override fun method39(i: Int): Int {

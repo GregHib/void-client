@@ -58,7 +58,7 @@ object Class90 {
         }
         Class322.anIntArray4031 = null
         Applet_Sub1.anIntArray38 = IntArray(i_7_)
-        r.anIntArray9724 = IntArray(i_7_)
+        RenderNode.anIntArray9724 = IntArray(i_7_)
         NativeSprite.anIntArray5192 = IntArray(i_7_)
         Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_7_)
         Class295.anIntArray3759 = IntArray(i_7_)
@@ -92,7 +92,7 @@ object Class90 {
                             NativeSprite.anIntArray5192!![i_7_] = (Class367_Sub10.aClass45_7382!!.method417("m" + i_18_ + "_" + i_19_, Class348_Sub21.method2955(i.toInt(), 99)))
                             Applet_Sub1.anIntArray38!![i_7_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_18_ + "_" + i_19_, 0)
                             Class295.anIntArray3759!![i_7_] = (Class367_Sub10.aClass45_7382!!.method417("um" + i_18_ + "_" + i_19_, 0))
-                            r.anIntArray9724!![i_7_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_18_ + "_" + i_19_, 0))
+                            RenderNode.anIntArray9724!![i_7_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_18_ + "_" + i_19_, 0))
                             i_7_++
                         }
                     }

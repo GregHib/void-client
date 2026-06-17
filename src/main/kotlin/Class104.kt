@@ -19,11 +19,11 @@ class Class104 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: s_
     @JvmField
     var anInt1624: Int = 0
     private val anInt1625: Int
-    fun method951(var_r: r, i: Int, i_0_: Int, i_1_: Int) {
+    fun method951(var_renderNode: RenderNode, i: Int, i_0_: Int, i_1_: Int) {
         var i = i
         var i_0_ = i_0_
         anInt1619++
-        val var_r_Sub2 = var_r as r_Sub2
+        val var_r_Sub2 = var_renderNode as OpenGlRenderNode
         i += var_r_Sub2.anInt10489 - -1
         i_0_ += var_r_Sub2.anInt10484 + 1
         var i_2_ = this.anInt1624 * i_0_ + i
@@ -81,11 +81,11 @@ class Class104 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: s_
         }
     }
 
-    fun method954(i: Int, i_23_: Byte, i_24_: Int, var_r: r): Boolean {
+    fun method954(i: Int, i_23_: Byte, i_24_: Int, var_renderNode: RenderNode): Boolean {
         var i = i
         var i_24_ = i_24_
         anInt1630++
-        val var_r_Sub2 = var_r as r_Sub2
+        val var_r_Sub2 = var_renderNode as OpenGlRenderNode
         i_24_ += 1 + var_r_Sub2.anInt10484
         if (i_23_.toInt() != 88) aClass232ArrayArray1623 = null
         i += 1 + var_r_Sub2.anInt10489
@@ -232,11 +232,11 @@ class Class104 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: s_
         }
     }
 
-    fun method959(i: Int, i_64_: Int, i_65_: Byte, var_r: r) {
+    fun method959(i: Int, i_64_: Int, i_65_: Byte, var_renderNode: RenderNode) {
         var i = i
         var i_64_ = i_64_
         anInt1621++
-        val var_r_Sub2 = var_r as r_Sub2
+        val var_r_Sub2 = var_renderNode as OpenGlRenderNode
         i_64_ += 1 + var_r_Sub2.anInt10484
         i += 1 + var_r_Sub2.anInt10489
         var i_66_ = this.anInt1624 * i_64_ + i

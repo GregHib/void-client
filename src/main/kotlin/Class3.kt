@@ -13,7 +13,7 @@ object Class3 {
     fun method175(i: Byte) {
         Class295.anInt3760 = -1
         Class17.anInterface4_252 = null
-        r.aClass101_9720 = null
+        RenderNode.aClass101_9720 = null
         Class132.anIntArray1909 = null
         Class92.anInterface4Array1525 = null
         Class21.aRenderer326 = null

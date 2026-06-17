@@ -28,7 +28,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         }
     }
 
-    external override fun wa(var_r: r?, i: Int, i_9_: Int, i_10_: Int, i_11_: Int, bool: Boolean)
+    external override fun wa(var_renderNode: RenderNode?, i: Int, i_9_: Int, i_10_: Int, i_11_: Int, bool: Boolean)
 
     override fun method3979(i: Int, i_12_: Int) {
         if (anInt5151 < 0) anOa5150.method3973()?.method142(this, i, i_12_)
@@ -99,7 +99,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         V(class348_sub1.hashCode(), class348_sub1.method2724(-1), class348_sub1.method2722(124), class348_sub1.method2717(83.toByte()), class348_sub1.method2723(-1), class348_sub1.method2720(-1), `is`)
     }
 
-    external override fun CA(var_r: r?, i: Int, i_45_: Int, i_46_: Int, i_47_: Int, bool: Boolean)
+    external override fun CA(var_renderNode: RenderNode?, i: Int, i_45_: Int, i_46_: Int, i_47_: Int, bool: Boolean)
 
     private external fun q(fs: FloatArray?)
 
@@ -109,7 +109,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         ga(anOa5150, var_ya, i, i_50_, this.anIntArrayArray4584, is_51_, i_52_, i_53_, i_54_)
     }
 
-    override fun method3989(var_r: r?, i: Int, i_55_: Int, i_56_: Int, i_57_: Int, bool: Boolean): Boolean {
+    override fun method3989(var_renderNode: RenderNode?, i: Int, i_55_: Int, i_56_: Int, i_57_: Int, bool: Boolean): Boolean {
         return true
     }
 
@@ -138,7 +138,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         }
     }
 
-    external override fun fa(i: Int, i_71_: Int, var_r: r?): r?
+    external override fun fa(i: Int, i_71_: Int, var_renderNode: RenderNode?): RenderNode?
 
     protected fun finalize() {
         if (this.nativeid != 0L) Class257.method1947(0, this)

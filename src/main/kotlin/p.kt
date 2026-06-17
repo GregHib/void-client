@@ -1,6 +1,9 @@
 import java.awt.Canvas
 import java.awt.Rectangle
 
+/*
+ * NativeFrameBuffer
+ */
 class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145: Int, @JvmField var anInt5148: Int) : Class348(), Interface19 {
     var nativeid: Long = 0
 

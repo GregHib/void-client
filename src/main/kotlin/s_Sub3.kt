@@ -41,22 +41,22 @@ class s_Sub3(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140_: Int, i_1
     private var aFloatArrayArray8332: Array<FloatArray?>?
     private var aFloatArrayArray8333: Array<FloatArray?>?
 
-    override fun fa(i: Int, i_0_: Int, var_r: r?): r? {
+    override fun fa(i: Int, i_0_: Int, var_renderNode: RenderNode?): RenderNode? {
         anInt8290++
         if ((aByteArrayArray8317[i]!![i_0_].toInt() and 0x1) == 0) return null
         val i_1_ = (this.anInt4592 shr this.aHa_Sub3_8322!!.anInt8107)
-        val var_r_Sub1 = var_r as r_Sub1?
-        val var_r_Sub1_2_: r_Sub1?
+        val var_r_Sub1 = var_renderNode as NativeRenderNode?
+        val var_r_Sub1_2_: NativeRenderNode?
         if (var_r_Sub1 != null && var_r_Sub1.method3291(i_1_, i_1_, (-59).toByte())) {
             var_r_Sub1_2_ = var_r_Sub1
             var_r_Sub1_2_.method3289(11)
-        } else var_r_Sub1_2_ = r_Sub1(this.aHa_Sub3_8322, i_1_, i_1_)
+        } else var_r_Sub1_2_ = NativeRenderNode(this.aHa_Sub3_8322, i_1_, i_1_)
         var_r_Sub1_2_.method3286(i_1_, -97, i_1_, 0, 0)
         method4005(var_r_Sub1_2_, i_0_, i, 21722)
         return var_r_Sub1_2_
     }
 
-    private fun method4005(var_r_Sub1: r_Sub1, i: Int, i_21_: Int, i_22_: Int) {
+    private fun method4005(var_r_Sub1: NativeRenderNode, i: Int, i_21_: Int, i_22_: Int) {
         anInt8310++
         if (i_22_ != 21722) fa(16, 8, null)
         val `is` = this.anIntArrayArrayArray8321!![i_21_]!![i]!!
@@ -82,12 +82,12 @@ class s_Sub3(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140_: Int, i_1
         }
     }
 
-    override fun wa(var_r: r?, i: Int, i_33_: Int, i_34_: Int, i_35_: Int, bool: Boolean) {
+    override fun wa(var_renderNode: RenderNode?, i: Int, i_33_: Int, i_34_: Int, i_35_: Int, bool: Boolean) {
         anInt8315++
-        if (aClass330_8307 != null && var_r != null) {
+        if (aClass330_8307 != null && var_renderNode != null) {
             val i_36_ = (i + -(i_33_ * (this.aHa_Sub3_8322!!.anInt8133) shr 8) shr this.aHa_Sub3_8322!!.anInt8107)
             val i_37_ = (i_34_ - ((this.aHa_Sub3_8322!!.anInt8114) * i_33_ shr 8) shr this.aHa_Sub3_8322!!.anInt8107)
-            aClass330_8307!!.method2629(i_37_, var_r, 1, i_36_)
+            aClass330_8307!!.method2629(i_37_, var_renderNode, 1, i_36_)
         }
     }
 
@@ -95,12 +95,12 @@ class s_Sub3(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140_: Int, i_1
         anInt8293++
     }
 
-    override fun CA(var_r: r?, i: Int, i_39_: Int, i_40_: Int, i_41_: Int, bool: Boolean) {
+    override fun CA(var_renderNode: RenderNode?, i: Int, i_39_: Int, i_40_: Int, i_41_: Int, bool: Boolean) {
         anInt8319++
-        if (aClass330_8307 != null && var_r != null) {
+        if (aClass330_8307 != null && var_renderNode != null) {
             val i_42_ = (i + -((this.aHa_Sub3_8322!!.anInt8133 * i_39_) shr 8) shr this.aHa_Sub3_8322!!.anInt8107)
             val i_43_ = (-((this.aHa_Sub3_8322!!.anInt8114 * i_39_) shr 8) + i_40_ shr this.aHa_Sub3_8322!!.anInt8107)
-            aClass330_8307!!.method2633(287, i_42_, var_r, i_43_)
+            aClass330_8307!!.method2633(287, i_42_, var_renderNode, i_43_)
         }
     }
 
@@ -398,12 +398,12 @@ class s_Sub3(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140_: Int, i_1
         this.anIntArrayArrayArray8321 = this.anIntArrayArrayArray8313
     }
 
-    override fun method3989(var_r: r?, i: Int, i_128_: Int, i_129_: Int, i_130_: Int, bool: Boolean): Boolean {
+    override fun method3989(var_renderNode: RenderNode?, i: Int, i_128_: Int, i_129_: Int, i_130_: Int, bool: Boolean): Boolean {
         anInt8316++
-        if (aClass330_8307 == null || var_r == null) return false
+        if (aClass330_8307 == null || var_renderNode == null) return false
         val i_131_ = (-(this.aHa_Sub3_8322!!.anInt8133 * i_128_ shr 8) + i shr this.aHa_Sub3_8322!!.anInt8107)
         val i_132_ = (i_129_ + -((this.aHa_Sub3_8322!!.anInt8114 * i_128_) shr 8) shr this.aHa_Sub3_8322!!.anInt8107)
-        return aClass330_8307!!.method2628(i_131_, 69.toByte(), var_r, i_132_)
+        return aClass330_8307!!.method2628(i_131_, 69.toByte(), var_renderNode, i_132_)
     }
 
     override fun ka(i: Int, i_133_: Int, i_134_: Int) {

@@ -41,8 +41,8 @@ abstract class Class135 {
             this.aHa_Sub2_1927 = var_ha_Sub2
             anInt1930 = i
             anInt1921 = i_4_
-            glGenBuffersARB(1, r_Sub1.anIntArray10478, 0)
-            this.anInt1929 = r_Sub1.anIntArray10478!![0]
+            glGenBuffersARB(1, NativeRenderNode.anIntArray10478, 0)
+            this.anInt1929 = NativeRenderNode.anIntArray10478!![0]
             method1152(-111)
             glBufferDataARBub(i, anInt1921, `is`, 0, if (aBoolean1923) 35040 else 35044)
             this.aHa_Sub2_1927!!.anInt7747 += anInt1921
@@ -57,8 +57,8 @@ abstract class Class135 {
             anInt1921 = i_5_
             this.aHa_Sub2_1927 = var_ha_Sub2
             aBoolean1923 = bool
-            glGenBuffersARB(1, r_Sub1.anIntArray10478, 0)
-            this.anInt1929 = r_Sub1.anIntArray10478!![0]
+            glGenBuffersARB(1, NativeRenderNode.anIntArray10478, 0)
+            this.anInt1929 = NativeRenderNode.anIntArray10478!![0]
             method1152(-126)
             glBufferDataARBa(i, anInt1921, buffer!!.getAddress(), if (!aBoolean1923) 35044 else 35040)
             this.aHa_Sub2_1927!!.anInt7747 += anInt1921

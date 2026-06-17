@@ -56,7 +56,7 @@ abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545:
             anInt9547++
             if (i.toInt() != -45) aShort9555 = (-74).toShort()
             if (bool) {
-                if (r.anInt9721 != -1) Class14.method235(r.anInt9721, (-113).toByte())
+                if (RenderNode.anInt9721 != -1) Class14.method235(RenderNode.anInt9721, (-113).toByte())
                 var class348_sub41 = Class125.aClass356_4915!!.method3484(0) as Class348_Sub41?
                 while (class348_sub41 != null) {
                     if (!class348_sub41.method2712(4.toByte())) {
@@ -66,13 +66,13 @@ abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545:
                     Class127_Sub1.method1118(true, false, class348_sub41, 2533)
                     class348_sub41 = (Class125.aClass356_4915!!.method3482(0) as Class348_Sub41?)
                 }
-                r.anInt9721 = -1
+                RenderNode.anInt9721 = -1
                 Class125.aClass356_4915 = Class356(8)
                 Class99.method882(11.toByte())
-                r.anInt9721 = Class285.anInt4737
+                RenderNode.anInt9721 = Class285.anInt4737
                 method1713(false, 520)
                 Class354.method3466(100)
-                Class66.method703(r.anInt9721)
+                Class66.method703(RenderNode.anInt9721)
             }
             Class223.aBoolean2895 = false
             Class186.aString2496 = ""

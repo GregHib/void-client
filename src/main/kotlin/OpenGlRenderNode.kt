@@ -1,7 +1,7 @@
 /* r_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class r_Sub2(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : r() {
+class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : RenderNode() {
     @JvmField
     var anInt10482: Int = 0
     @JvmField

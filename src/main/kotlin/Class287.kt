@@ -115,7 +115,7 @@ class Class287 {
                         i_19_ -= 10
                         val i_20_: Int
                         if (Class348_Sub40_Sub21.anInt9282 == 4) i_20_ = Class314.aFloat3938.toInt() and 0x3fff
-                        else i_20_ = 0x3fff and (Class314.aFloat3938.toInt() + r_Sub2.anInt10483)
+                        else i_20_ = 0x3fff and (Class314.aFloat3938.toInt() + OpenGlRenderNode.anInt10483)
                         var i_21_ = Class70.anIntArray1207!![i_20_]
                         var i_22_ = Class70.anIntArray1204!![i_20_]
                         if (Class348_Sub40_Sub21.anInt9282 != 4) {

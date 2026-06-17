@@ -74,7 +74,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                     if (class348_sub45 != null || (Class355.aLong4367 < -2000L + method599(-97))) {
                         var class348_sub47: Class348_Sub47? = null
                         var i_2_ = 0
-                        var class348_sub45_3_ = (r_Sub1.aClass262_10479!!.method1995(4) as Class348_Sub45?)
+                        var class348_sub45_3_ = (NativeRenderNode.aClass262_10479!!.method1995(4) as Class348_Sub45?)
                         while (class348_sub45_3_ != null) {
                             if (class348_sub47 != null && (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 - i_2_ >= 240)) break
                             class348_sub45_3_.method2715(107.toByte())
@@ -120,7 +120,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 }
                                 Class355.aLong4367 = class348_sub45_3_.method3312((-109).toByte())
                             }
-                            class348_sub45_3_ = r_Sub1.aClass262_10479!!.method1990(79.toByte()) as Class348_Sub45?
+                            class348_sub45_3_ = NativeRenderNode.aClass262_10479!!.method1990(79.toByte()) as Class348_Sub45?
                         }
                         if (class348_sub47 != null) {
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(105, class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 + -i_2_)
@@ -180,7 +180,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!Class175.aBoolean2329) 0 else 1)
                         Class348_Sub42_Sub14.method3243(i + -11501, class348_sub47)
                     }
-                    if (!r.aBoolean9719) {
+                    if (!RenderNode.aBoolean9719) {
                         Class62.anInt1110++
                         val class348_sub47 = method2148((Class348_Sub49_Sub1.aClass351_9743), (Class348_Sub23_Sub2.aClass77_9029), -113)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -189,7 +189,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, 82)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(96, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_14_)
                         Class348_Sub42_Sub14.method3243(i + -11473, class348_sub47)
-                        r.aBoolean9719 = true
+                        RenderNode.aBoolean9719 = true
                     }
                     if (Class147.aClass357ArrayArrayArray2029 != null) {
                         if (Class348_Sub40_Sub21.anInt9282 == 2) method241(127.toByte())
@@ -355,7 +355,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             Class127_Sub1.aBoolean8386 = false
                             method198(null, false, -1, -1)
                             method1343(-1, null, 1, -1)
-                            if (!r.aBoolean9722) Class362.anInt4458 = -1
+                            if (!RenderNode.aBoolean9722) Class362.anInt4458 = -1
                             Class216.method1583((-73).toByte())
                             Class311.anInt3918++
                             if (Class237.aBoolean3103) {
@@ -446,11 +446,11 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     Class285.anInt4753 = 0
                                     val i_33_ = (Math.random() * 8.0).toInt()
                                     if ((i_33_ and 0x2) == 2) Class348_Sub49_Sub1.anInt9750 += Class348_Sub42_Sub14.anInt9645
-                                    if ((i_33_ and 0x1) == 1) r_Sub2.anInt10483 += Class348_Sub42_Sub9_Sub1.anInt10443
+                                    if ((i_33_ and 0x1) == 1) OpenGlRenderNode.anInt10483 += Class348_Sub42_Sub9_Sub1.anInt10443
                                 }
-                                if (r_Sub2.anInt10483 < -60) Class348_Sub42_Sub9_Sub1.anInt10443 = 2
+                                if (OpenGlRenderNode.anInt10483 < -60) Class348_Sub42_Sub9_Sub1.anInt10443 = 2
                                 if (Class348_Sub49_Sub1.anInt9750 < -20) Class348_Sub42_Sub14.anInt9645 = 1
-                                if (r_Sub2.anInt10483 > 60) Class348_Sub42_Sub9_Sub1.anInt10443 = -2
+                                if (OpenGlRenderNode.anInt10483 > 60) Class348_Sub42_Sub9_Sub1.anInt10443 = -2
                                 if (Class348_Sub49_Sub1.anInt9750 > 10) Class348_Sub42_Sub14.anInt9645 = -1
                                 Class11.anInt193++
                                 if (Class11.anInt193 > 50) {

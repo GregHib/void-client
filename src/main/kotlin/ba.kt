@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeRenderTarget
 */
-class ba internal constructor(var_oa: oa?) : r(), Interface19 {
+class ba internal constructor(var_oa: oa?) : RenderNode(), Interface19 {
     var nativeid: Long = 0
 
     protected fun finalize() {

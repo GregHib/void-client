@@ -428,7 +428,7 @@ public abstract class Class64 {
 
     abstract fun aa(i: Short, i_161_: Short)
 
-    abstract fun ba(var_r: r?): r?
+    abstract fun ba(var_renderNode: RenderNode?): RenderNode?
 
     companion object {
         @JvmField

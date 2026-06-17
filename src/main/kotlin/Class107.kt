@@ -3,7 +3,7 @@ import Class239.Companion.method1713
 import Class318_Sub1.Companion.method2385
 import Class66.method703
 import Class99.method882
-import r.Companion.method3284
+import RenderNode.Companion.method3284
 
 /* Class107 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -118,7 +118,7 @@ class Class107 {
         fun method1006(bool: Boolean, i: Byte) {
             anInt1655++
             if (bool) {
-                if (r.anInt9721 != -1) method235(r.anInt9721, ((-108).toByte()).toByte())
+                if (RenderNode.anInt9721 != -1) method235(RenderNode.anInt9721, ((-108).toByte()).toByte())
                 var class348_sub41 = Class125.aClass356_4915!!.method3484(0) as? Class348_Sub41
                 while (class348_sub41 != null) {
                     if (!class348_sub41.method2712(4.toByte())) {
@@ -128,13 +128,13 @@ class Class107 {
                     Class127_Sub1.method1118(true, false, class348_sub41, 2533)
                     class348_sub41 = (Class125.aClass356_4915!!.method3482(0) as? Class348_Sub41)
                 }
-                r.anInt9721 = -1
+                RenderNode.anInt9721 = -1
                 Class125.aClass356_4915 = Class356(8)
                 method882(11.toByte())
-                r.anInt9721 = Class54.anInt970
+                RenderNode.anInt9721 = Class54.anInt970
                 method1713(false, 520)
                 Class354.method3466(-119)
-                method703(r.anInt9721)
+                method703(RenderNode.anInt9721)
             }
             Class223.aBoolean2895 = true
             if (i < 49) anInt1651 = 10
@@ -160,7 +160,7 @@ class Class107 {
                         } else {
                             i_5_ = 4096 - 16 * Class348_Sub49_Sub1.anInt9750
                             i_3_ = (Class132.aPlayer_1907!!.y)
-                            i_6_ = (-Class314.aFloat3938.toInt() - -r_Sub2.anInt10483 and 0x3fff)
+                            i_6_ = (-Class314.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483 and 0x3fff)
                             i_4_ = (Class132.aPlayer_1907!!.x)
                         }
                         val i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208
@@ -169,11 +169,11 @@ class Class107 {
                         var class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1995(i_2_ xor 0x59b4) as? Class348_Sub35
                         while (class348_sub35 != null) {
                             val i_9_ = class348_sub35.anInt6976
-                            val i_10_ = (-za_Sub2.regionTileX + ((0xfffe5b0 and (r_Sub2.aClass252_10488!!.anIntArray3238!![i_9_])) shr 14))
-                            val i_11_ = (-Class90.regionTileY + (0x3fff and (r_Sub2.aClass252_10488!!.anIntArray3238!![i_9_])))
+                            val i_10_ = (-za_Sub2.regionTileX + ((0xfffe5b0 and (OpenGlRenderNode.aClass252_10488!!.anIntArray3238!![i_9_])) shr 14))
+                            val i_11_ = (-Class90.regionTileY + (0x3fff and (OpenGlRenderNode.aClass252_10488!!.anIntArray3238!![i_9_])))
                             val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
                             val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
-                            method2385(class46, i_1_, var_aa, (r_Sub2.aClass252_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_renderer)
+                            method2385(class46, i_1_, var_aa, (OpenGlRenderNode.aClass252_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_renderer)
                             class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1990(92.toByte()) as? Class348_Sub35
                         }
                         var i_14_ = 0
@@ -305,7 +305,7 @@ class Class107 {
         }
 
         fun method1010(bool: Boolean, bool_42_: Boolean) {
-            r.aClass101_9720!!.method898(Class21.aRenderer326!!.method3640())
+            RenderNode.aClass101_9720!!.method898(Class21.aRenderer326!!.method3640())
             anInt1642++
             val `is` = Class21.aRenderer326!!.Y()
             Class14_Sub3.anInt8630 = `is`[2]

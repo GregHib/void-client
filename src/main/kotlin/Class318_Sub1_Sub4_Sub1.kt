@@ -16,7 +16,7 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
     private var aShort10081: Short = 0
     private var aClass30_10082: Class30? = null
     private var aBoolean10090 = false
-    private var aR10094: r? = null
+    private var aRenderNode10094: RenderNode? = null
 
     init {
         do {
@@ -34,7 +34,7 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
                 if (aBoolean10090) i_7_ = i_7_ or 0x10000
                 val class2 = method2481(aBoolean10064, i_7_, -4, var_renderer)
                 if (class2 == null) break
-                aR10094 = class2.aR118
+                aRenderNode10094 = class2.aRenderNode118
                 this.aClass64_10071 = class2.aClass64_119
                 if (!aBoolean10090) break
                 this.aClass64_10071 = this.aClass64_10071!!.method614(0.toByte(), i_7_, false)
@@ -134,16 +134,16 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
     override fun method44(i: Int, var_renderer: Renderer?) {
         anInt10092++
         val `object`: Any? = null
-        val var_r: r?
-        if (aR10094 == null && aBoolean10064) {
+        val var_renderNode: RenderNode?
+        if (aRenderNode10094 == null && aBoolean10064) {
             val class2 = method2481(true, 262144, -4, var_renderer)
-            var_r = if (class2 == null) null else class2.aR118
+            var_renderNode = if (class2 == null) null else class2.aRenderNode118
         } else {
-            var_r = aR10094
-            aR10094 = null
+            var_renderNode = aRenderNode10094
+            aRenderNode10094 = null
         }
-        if (var_r != null) method1130(var_r, this.aByte6376.toInt(), this.x, this.y, null)
-        if (i != 836) aR10094 = null
+        if (var_renderNode != null) method1130(var_renderNode, this.aByte6376.toInt(), this.x, this.y, null)
+        if (i != 836) aRenderNode10094 = null
     }
 
     private fun method2481(bool: Boolean, i: Int, i_15_: Int, var_renderer: Renderer?): Class2? {
@@ -216,15 +216,15 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
         if (i != -14218) aClass30_10082 = null
         anInt10068++
         val `object`: Any? = null
-        val var_r: r?
-        if (aR10094 == null && aBoolean10064) {
+        val var_renderNode: RenderNode?
+        if (aRenderNode10094 == null && aBoolean10064) {
             val class2 = method2481(true, 262144, -4, var_renderer)
-            var_r = if (class2 == null) null else class2.aR118
+            var_renderNode = if (class2 == null) null else class2.aRenderNode118
         } else {
-            var_r = aR10094
-            aR10094 = null
+            var_renderNode = aRenderNode10094
+            aRenderNode10094 = null
         }
-        if (var_r != null) method1301(var_r, this.aByte6376.toInt(), this.x, this.y, null)
+        if (var_renderNode != null) method1301(var_renderNode, this.aByte6376.toInt(), this.x, this.y, null)
     }
 
     companion object {

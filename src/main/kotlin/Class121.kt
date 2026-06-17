@@ -51,7 +51,7 @@ object Class121 {
         Class21.aRenderer326 = var_renderer
         Class51.aClass101_905 = Class21.aRenderer326!!.method3654()
         Class44.aClass101_624 = Class21.aRenderer326!!.method3654()
-        r.aClass101_9720 = Class21.aRenderer326!!.method3654()
+        RenderNode.aClass101_9720 = Class21.aRenderer326!!.method3654()
         Class348_Sub42_Sub9_Sub1.anInt10444 = i_4_
         Class348_Sub49.anInt7207 = 0
         Class211.anInt2747 = i

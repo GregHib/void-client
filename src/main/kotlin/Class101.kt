@@ -67,7 +67,7 @@ public abstract class Class101 {
             NativeSprite.anIntArray5192 = IntArray(i_6_)
             Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)
             Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_6_)
-            r.anIntArray9724 = IntArray(i_6_)
+            RenderNode.anIntArray9724 = IntArray(i_6_)
             Class295.anIntArray3759 = IntArray(i_6_)
             Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
             Applet_Sub1.anIntArray38 = IntArray(i_6_)
@@ -84,12 +84,12 @@ public abstract class Class101 {
                     Applet_Sub1.anIntArray38!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
                     Class322.anIntArray4031!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
                     Class295.anIntArray3759!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
-                    r.anIntArray9724!![i_6_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i.toInt(), -49)))
+                    RenderNode.anIntArray9724!![i_6_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i.toInt(), -49)))
                     if (Class322.anIntArray4031!![i_6_] == -1) {
                         NativeSprite.anIntArray5192!![i_6_] = -1
                         Applet_Sub1.anIntArray38!![i_6_] = -1
                         Class295.anIntArray3759!![i_6_] = -1
-                        r.anIntArray9724!![i_6_] = -1
+                        RenderNode.anIntArray9724!![i_6_] = -1
                     }
                     i_6_++
                     i_8_++
@@ -102,7 +102,7 @@ public abstract class Class101 {
                 NativeSprite.anIntArray5192!![i_10_] = -1
                 Applet_Sub1.anIntArray38!![i_10_] = -1
                 Class295.anIntArray3759!![i_10_] = -1
-                r.anIntArray9724!![i_10_] = -1
+                RenderNode.anIntArray9724!![i_10_] = -1
                 i_10_++
             }
             val i_11_: Int

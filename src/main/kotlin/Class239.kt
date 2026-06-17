@@ -77,7 +77,7 @@ abstract class Class239 {
 
         @JvmStatic
         fun method1713(bool: Boolean, i: Int) {
-            method1728(Class348_Sub42_Sub8_Sub2.anInt10432, -1, r.anInt9721, bool, Class321.anInt4017)
+            method1728(Class348_Sub42_Sub8_Sub2.anInt10432, -1, RenderNode.anInt9721, bool, Class321.anInt4017)
             if (i == 520) anInt3137++
         }
 

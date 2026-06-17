@@ -1,5 +1,6 @@
 /* j - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
+* NativeCamera
 */
 class j : Class105, Interface19 {
     var nativeid: Long = 0

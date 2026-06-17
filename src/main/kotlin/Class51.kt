@@ -171,7 +171,7 @@ class Class51 {
                 class2 = this.aClass263_933!!.aClass60_3361!!.method583(l, i_10_ + -25) as Class2?
             }
             var class64 = if (class2 == null) null else class2.aClass64_119
-            var var_r: r? = null
+            var var_renderNode: RenderNode? = null
             if (class64 == null || var_renderer.method3667(class64.ua(), i_11_) != 0) {
                 if (class64 != null) i_11_ = var_renderer.method3679(i_11_, class64.ua())
                 var i_12_ = i_11_
@@ -179,20 +179,20 @@ class Class51 {
                 class64 = method477(i_9_, var_renderer, i, i_10_ xor 0xec.inv(), i_12_)
                 if (class64 == null) return null
                 if (i == 10 && i_9_ > 3) class64.a(2048)
-                if (bool) var_r = class64.ba(null)
+                if (bool) var_renderNode = class64.ba(null)
                 class64.s(i_11_)
                 class2 = Class2()
                 class2.aClass64_119 = class64
-                class2.aR118 = var_r
+                class2.aRenderNode118 = var_renderNode
                 synchronized(this.aClass263_933!!.aClass60_3361!!) {
                     this.aClass263_933!!.aClass60_3361!!.method582(class2, l, (-120).toByte())
                 }
             } else {
                 class64 = class2!!.aClass64_119
-                var_r = class2.aR118
-                if (bool && var_r == null) {
-                    class2.aR118 = class64!!.ba(null)
-                    var_r = class2.aR118
+                var_renderNode = class2.aRenderNode118
+                if (bool && var_renderNode == null) {
+                    class2.aRenderNode118 = class64!!.ba(null)
+                    var_renderNode = class2.aRenderNode118
                 }
             }
             val bool_13_ = (aByte886.toInt() != 0 && (var_s_6_ != null || var_s != null))
@@ -204,7 +204,7 @@ class Class51 {
                 class64!!.s(i_4_)
             } else class64 = class64!!.method614(0.toByte(), i_4_, true)
             Class348_Sub42.aClass2_7058!!.aClass64_119 = class64
-            Class348_Sub42.aClass2_7058!!.aR118 = var_r
+            Class348_Sub42.aClass2_7058!!.aRenderNode118 = var_renderNode
             return Class348_Sub42.aClass2_7058
         } catch (runtimeexception: RuntimeException) {
             runtimeexception.printStackTrace()

@@ -4,7 +4,7 @@ import Class239_Sub5.Companion.method1742
 import Class348_Sub16_Sub3.Companion.method2878
 import Class348_Sub40_Sub32.Companion.method3135
 import Class62.method599
-import r_Sub2.Companion.method3297
+import OpenGlRenderNode.Companion.method3297
 
 /* Class184 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -12,11 +12,11 @@ class Class330 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: s_
     private var aClass97ArrayArray4122: Array<Array<Class97?>?>? = null
     private val anInt4123: Int
     private val anInt4124: Int
-    fun method2628(i: Int, i_0_: Byte, var_r: r?, i_1_: Int): Boolean {
+    fun method2628(i: Int, i_0_: Byte, var_renderNode: RenderNode?, i_1_: Int): Boolean {
         var i = i
         var i_1_ = i_1_
         anInt4119++
-        val var_r_Sub1 = var_r as r_Sub1
+        val var_r_Sub1 = var_renderNode as NativeRenderNode
         val i_2_ = 13 % ((i_0_ - -21) / 45)
         i_1_ += var_r_Sub1.anInt10474 + 1
         i += var_r_Sub1.anInt10468 - -1
@@ -52,11 +52,11 @@ class Class330 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: s_
         return method2503(i_6_, i_3_, i_11_, this.aByteArray4112, i_5_, -16259, i_4_)
     }
 
-    fun method2629(i: Int, var_r: r?, i_12_: Int, i_13_: Int) {
+    fun method2629(i: Int, var_renderNode: RenderNode?, i_12_: Int, i_13_: Int) {
         var i = i
         var i_13_ = i_13_
         anInt4114++
-        val var_r_Sub1 = var_r as r_Sub1
+        val var_r_Sub1 = var_renderNode as NativeRenderNode
         i_13_ += 1 + var_r_Sub1.anInt10468
         i += i_12_ + var_r_Sub1.anInt10474
         var i_14_ = i * this.anInt4113 + i_13_
@@ -211,11 +211,11 @@ class Class330 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: s_
         }
     }
 
-    fun method2633(i: Int, i_50_: Int, var_r: r?, i_51_: Int) {
+    fun method2633(i: Int, i_50_: Int, var_renderNode: RenderNode?, i_51_: Int) {
         var i_50_ = i_50_
         var i_51_ = i_51_
         anInt4120++
-        val var_r_Sub1 = var_r as r_Sub1
+        val var_r_Sub1 = var_renderNode as NativeRenderNode
         i_51_ += var_r_Sub1.anInt10474 + 1
         i_50_ += 1 + var_r_Sub1.anInt10468
         if (i != 287) method2634(-49, -3, 16, -9, -115)

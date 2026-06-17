@@ -21,7 +21,7 @@ class Class216 internal constructor(var anInt4974: Int, var anInt4978: Int) : In
         @JvmStatic
         fun method1583(i: Byte) {
             anInt4977++
-            if (r.anInt9721 != -1) {
+            if (RenderNode.anInt9721 != -1) {
                 var i_0_ = Class258_Sub4.aClass373_8552!!.method3597(true)
                 var i_1_ = Class258_Sub4.aClass373_8552!!.method3594(72.toByte())
                 val class348_sub45 = (Class318_Sub1_Sub3.aClass262_8744!!.method1995(4) as Class348_Sub45?)
@@ -36,7 +36,7 @@ class Class216 internal constructor(var anInt4974: Int, var anInt4978: Int) : In
                     i_2_ = s_Sub3.method4008((-128).toByte())
                     i_3_ = method260(false)
                 }
-                method1373(r.anInt9721, i_2_, i_2_, Class321.anInt4017 + i_2_, i_1_, i_0_, -1391, i_0_ + i_2_, Class348_Sub42_Sub8_Sub2.anInt10432 + i_3_, i_3_, i_3_ + i_1_, i_3_)
+                method1373(RenderNode.anInt9721, i_2_, i_2_, Class321.anInt4017 + i_2_, i_1_, i_0_, -1391, i_0_ + i_2_, Class348_Sub42_Sub8_Sub2.anInt10432 + i_3_, i_3_, i_3_ + i_1_, i_3_)
                 if (Class168.aClass46_2249 != null) Class228.method1630(0, i_3_ + i_1_, i_2_ + i_0_)
             }
         }

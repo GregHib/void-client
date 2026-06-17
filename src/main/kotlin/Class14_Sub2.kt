@@ -2,7 +2,7 @@ import Class348_Sub16_Sub3.Companion.method2878
 import Class348_Sub40_Sub3.Companion.method3055
 import Class55.Companion.method520
 import jaggl.OpenGL.Companion.glTexImage2Di
-import r_Sub2.Companion.method3297
+import OpenGlRenderNode.Companion.method3297
 
 class Class14_Sub2 internal constructor(class377: Class377?, i: Int, bool: Boolean, `is`: Array<IntArray?>?) : Class14(class377, 34067, Class108.aClass304_1662, Class68.aClass68_1183, 6 * (i * i), bool), Interface18_Impl2 {
     init {

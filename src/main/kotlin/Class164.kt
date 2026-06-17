@@ -19,7 +19,7 @@ import RuntimeException_Sub1.Companion.method4011
 import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init
-import r_Sub1.Companion.method3290
+import NativeRenderNode.Companion.method3290
 
 object Class164 {
     var anInt2172: Int = 0
@@ -135,7 +135,7 @@ object Class164 {
             Class247.aClass45_3183 = Class369_Sub2.method3571(false, 17, (-23).toByte(), 1)
             Class216.aClass45_4975 = Class369_Sub2.method3571(false, 18, (-23).toByte(), 1)
             Class174.aClass45_2306 = Class369_Sub2.method3571(false, 19, (-23).toByte(), 1)
-            r_Sub2.aClass45_10480 = Class369_Sub2.method3571(false, 20, (-23).toByte(), 1)
+            OpenGlRenderNode.aClass45_10480 = Class369_Sub2.method3571(false, 20, (-23).toByte(), 1)
             Class78.aClass45_1322 = Class369_Sub2.method3571(false, 21, (-23).toByte(), 1)
             Class348_Sub16_Sub3.aClass45_8926 = Class369_Sub2.method3571(false, 22, (-23).toByte(), 1)
             Class348_Sub32.aClass45_6950 = Class369_Sub2.method3571(true, 23, (-23).toByte(), 1)
@@ -193,7 +193,7 @@ object Class164 {
             Class189.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.aClass45_4975, RasterSprite.aClass45_5207)
             Exception_Sub1.aClass255_112 = Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class101_Sub3.aClass326_5764, Class174.aClass45_2306, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aClass187_9036 = Class187(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class10.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, r_Sub2.aClass45_10480, Class348_Sub29.aClass45_6909, Class186.aClass45_2490)
+            Class10.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, OpenGlRenderNode.aClass45_10480, Class348_Sub29.aClass45_6909, Class186.aClass45_2490)
             Class30.aClass84_413 = Class84(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class123.aClass25_1813 = Class25(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub40_Sub18.aClass319_9245 = Class319(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class78.aClass45_1322, RasterSprite.aClass45_5207)
@@ -257,7 +257,7 @@ object Class164 {
             Class94.aClass45_1538!!.anInt634 = 2
             Class216.aClass45_4975!!.anInt634 = 2
             Class174.aClass45_2306!!.anInt634 = 2
-            r_Sub2.aClass45_10480!!.anInt634 = 2
+            OpenGlRenderNode.aClass45_10480!!.anInt634 = 2
             Class78.aClass45_1322!!.anInt634 = 2
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1040) {

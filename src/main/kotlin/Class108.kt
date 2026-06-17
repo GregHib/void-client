@@ -66,7 +66,7 @@ object Class108 {
 
     fun method1014(i: Int) {
         anInt1660++
-        var class348_sub42_sub6 = r_Sub2.aClass262_10492!!.method1995(4) as? Class348_Sub42_Sub6
+        var class348_sub42_sub6 = OpenGlRenderNode.aClass262_10492!!.method1995(4) as? Class348_Sub42_Sub6
         while (class348_sub42_sub6 != null) {
             val class318_sub1_sub3_sub4 = (class348_sub42_sub6.aClass318_Sub1_Sub3_Sub4_9538)!!
             if (class318_sub1_sub3_sub4.aBoolean10345) {
@@ -77,7 +77,7 @@ object Class108 {
                 if (class318_sub1_sub3_sub4.aBoolean10345) class348_sub42_sub6.method2715(42.toByte())
                 else method850(class318_sub1_sub3_sub4, true)
             }
-            class348_sub42_sub6 = (r_Sub2.aClass262_10492!!.method1990(55.toByte()) as? Class348_Sub42_Sub6)
+            class348_sub42_sub6 = (OpenGlRenderNode.aClass262_10492!!.method1990(55.toByte()) as? Class348_Sub42_Sub6)
         }
         if (i != -4) aBoolean1661 = false
     }

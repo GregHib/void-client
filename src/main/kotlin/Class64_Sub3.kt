@@ -636,7 +636,7 @@ class Class64_Sub3 : Class64 {
         aBoolean5527 = false
     }
 
-    public override fun ba(var_r: r?): r? {
+    public override fun ba(var_renderNode: RenderNode?): RenderNode? {
         try {
             anInt5562++
             if (anInt5529 == 0) return null
@@ -661,9 +661,9 @@ class Class64_Sub3 : Class64 {
             }
             val i_168_ = i_165_ - i - -1
             val i_169_ = -i_166_ + i_167_ - -1
-            val var_r_Sub2 = var_r as r_Sub2?
-            val var_r_Sub2_170_: r_Sub2?
-            if (var_r_Sub2 == null || !var_r_Sub2.method3296((-47).toByte(), i_169_, i_168_)) var_r_Sub2_170_ = r_Sub2(aHa_Sub2_5598, i_168_, i_169_)
+            val var_r_Sub2 = var_renderNode as OpenGlRenderNode?
+            val var_r_Sub2_170_: OpenGlRenderNode?
+            if (var_r_Sub2 == null || !var_r_Sub2.method3296((-47).toByte(), i_169_, i_168_)) var_r_Sub2_170_ = OpenGlRenderNode(aHa_Sub2_5598, i_168_, i_169_)
             else {
                 var_r_Sub2_170_ = var_r_Sub2
                 var_r_Sub2_170_.method3293(0.toByte())
@@ -672,7 +672,7 @@ class Class64_Sub3 : Class64 {
             method685(118.toByte(), var_r_Sub2_170_)
             return var_r_Sub2_170_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "paa.ba(" + (if (var_r != null) "{...}" else "null") + ')')
+            throw Class348_Sub17.method2929(runtimeexception, "paa.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
         }
     }
 
@@ -711,7 +711,7 @@ class Class64_Sub3 : Class64 {
         aBoolean5527 = false
     }
 
-    private fun method685(i: Byte, var_r_Sub2: r_Sub2?) {
+    private fun method685(i: Byte, var_r_Sub2: OpenGlRenderNode?) {
         try {
             if (aHa_Sub2_5598!!.anIntArray7880!!.size < anInt5529) {
                 aHa_Sub2_5598.anIntArray7883 = IntArray(anInt5529)

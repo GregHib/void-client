@@ -183,7 +183,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class251.method1916(-9343, class46)
                     Class251.method1913(true, -123, class46)
                 }
-                if (r.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), r.anInt9721, 1)
+                if (RenderNode.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), RenderNode.anInt9721, 1)
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
@@ -526,7 +526,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         var i_65_ = i_60_
                         if (i_65_ < 3 && Class79.method802(i_62_, i_61_, true)) i_65_++
                         val class318_sub1_sub3_sub4 = (Class318_Sub1_Sub3_Sub4(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + Class275.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_))
-                        r_Sub2.aClass262_10492!!.method1999(Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180)
+                        OpenGlRenderNode.aClass262_10492!!.method1999(Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180)
                     }
                 }
                 Class348_Sub3.aClass114_6584 = null
@@ -893,7 +893,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub42_Sub8.Companion.aClass114_9552 == Class348_Sub3.aClass114_6584) {
-                if (r.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), r.anInt9721, 0)
+                if (RenderNode.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), RenderNode.anInt9721, 0)
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
@@ -1549,10 +1549,10 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_202_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 if (i == 2) Class130_Sub1.method1134(92)
-                r.anInt9721 = i_202_
+                RenderNode.anInt9721 = i_202_
                 Class348_Sub7.method2772(i_202_, 123.toByte())
                 method1713(false, 520)
-                Class66.method703(r.anInt9721)
+                Class66.method703(RenderNode.anInt9721)
                 for (i_203_ in 0..99) Class152.aBooleanArray2076!![i_203_] = true
                 Class348_Sub3.aClass114_6584 = null
                 return true

@@ -48,12 +48,12 @@ class s_Sub2(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134_: Int, i_1
     private var anInt8284 = 0
     private var aFloatArrayArray8285: Array<FloatArray?>?
 
-    override fun wa(var_r: r?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, bool: Boolean) {
+    override fun wa(var_renderNode: RenderNode?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, bool: Boolean) {
         anInt8251++
-        if (aClass104_8266 != null && var_r != null) {
+        if (aClass104_8266 != null && var_renderNode != null) {
             val i_3_ = (i - ((this.aHa_Sub2_8272!!.anInt7772 * i_0_) shr 8) shr this.aHa_Sub2_8272!!.anInt7731)
             val i_4_ = (-(i_0_ * this.aHa_Sub2_8272!!.anInt7777 shr 8) + i_1_ shr this.aHa_Sub2_8272!!.anInt7731)
-            aClass104_8266!!.method951(var_r, i_3_, i_4_, 70)
+            aClass104_8266!!.method951(var_renderNode, i_3_, i_4_, 70)
         }
     }
 
@@ -410,7 +410,7 @@ class s_Sub2(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134_: Int, i_1
         this.anIntArrayArrayArray8268 = this.anIntArrayArrayArray8234
     }
 
-    private fun method3998(i: Byte, i_113_: Int, i_114_: Int, var_r_Sub2: r_Sub2) {
+    private fun method3998(i: Byte, i_113_: Int, i_114_: Int, var_r_Sub2: OpenGlRenderNode) {
         anInt8254++
         val `is` = this.anIntArrayArrayArray8268!![i_113_]!![i_114_]!!
         val is_115_ = this.anIntArrayArrayArray8234!![i_113_]!![i_114_]!!
@@ -441,21 +441,21 @@ class s_Sub2(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134_: Int, i_1
         anInt8239++
     }
 
-    override fun CA(var_r: r?, i: Int, i_128_: Int, i_129_: Int, i_130_: Int, bool: Boolean) {
+    override fun CA(var_renderNode: RenderNode?, i: Int, i_128_: Int, i_129_: Int, i_130_: Int, bool: Boolean) {
         anInt8236++
-        if (aClass104_8266 != null && var_r != null) {
+        if (aClass104_8266 != null && var_renderNode != null) {
             val i_131_ = (i - ((i_128_ * this.aHa_Sub2_8272!!.anInt7772) shr 8) shr this.aHa_Sub2_8272!!.anInt7731)
             val i_132_ = (-((this.aHa_Sub2_8272!!.anInt7777 * i_128_) shr 8) + i_129_ shr this.aHa_Sub2_8272!!.anInt7731)
-            aClass104_8266!!.method959(i_131_, i_132_, 107.toByte(), var_r)
+            aClass104_8266!!.method959(i_131_, i_132_, 107.toByte(), var_renderNode)
         }
     }
 
-    override fun method3989(var_r: r?, i: Int, i_142_: Int, i_143_: Int, i_144_: Int, bool: Boolean): Boolean {
+    override fun method3989(var_renderNode: RenderNode?, i: Int, i_142_: Int, i_143_: Int, i_144_: Int, bool: Boolean): Boolean {
         anInt8244++
-        if (aClass104_8266 == null || var_r == null) return false
+        if (aClass104_8266 == null || var_renderNode == null) return false
         val i_145_ = (-(i_142_ * this.aHa_Sub2_8272!!.anInt7772 shr 8) + i shr this.aHa_Sub2_8272!!.anInt7731)
         val i_146_ = (i_143_ + -((this.aHa_Sub2_8272!!.anInt7777 * i_142_) shr 8) shr this.aHa_Sub2_8272!!.anInt7731)
-        return aClass104_8266!!.method954(i_145_, 88.toByte(), i_146_, var_r)
+        return aClass104_8266!!.method954(i_145_, 88.toByte(), i_146_, var_renderNode)
     }
 
     override fun method3983(i: Int, i_149_: Int, i_150_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_151_: Int) {
@@ -564,13 +564,13 @@ class s_Sub2(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134_: Int, i_1
         }
     }
 
-    override fun fa(i: Int, i_167_: Int, var_r: r?): r? {
+    override fun fa(i: Int, i_167_: Int, var_renderNode: RenderNode?): RenderNode? {
         anInt8259++
         if ((0x1 and aByteArrayArray8240[i]!![i_167_].toInt()) == 0) return null
         val i_168_ = (this.anInt4592 shr this.aHa_Sub2_8272!!.anInt7731)
-        val var_r_Sub2 = var_r as r_Sub2?
-        val var_r_Sub2_169_: r_Sub2?
-        if (var_r_Sub2 == null || !var_r_Sub2.method3296(104.toByte(), i_168_, i_168_)) var_r_Sub2_169_ = r_Sub2(this.aHa_Sub2_8272, i_168_, i_168_)
+        val var_r_Sub2 = var_renderNode as OpenGlRenderNode?
+        val var_r_Sub2_169_: OpenGlRenderNode?
+        if (var_r_Sub2 == null || !var_r_Sub2.method3296(104.toByte(), i_168_, i_168_)) var_r_Sub2_169_ = OpenGlRenderNode(this.aHa_Sub2_8272, i_168_, i_168_)
         else {
             var_r_Sub2_169_ = var_r_Sub2
             var_r_Sub2_169_.method3293(0.toByte())

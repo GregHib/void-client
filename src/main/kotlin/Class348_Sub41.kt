@@ -8,7 +8,7 @@ import Class348_Sub40_Sub39.Companion.method3153
 import Class50_Sub2.Companion.method464
 import Class75.Companion.method766
 import Class76.Companion.method773
-import r_Sub2.Companion.method3297
+import OpenGlRenderNode.Companion.method3297
 import kotlin.math.abs
 
 /* Class348_Sub41 - Decompiled by JODE
@@ -103,7 +103,7 @@ class Class348_Sub41 : Class348() {
                 za_Sub2.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + Renderer.anInt4581) * 8
                 Class90.regionTileY = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.anInt9109 shr 4))
                 Class348_Sub26.Companion.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, Class327.anInt4095 * 8)
-                r_Sub2.aClass252_10488 = null
+                OpenGlRenderNode.aClass252_10488 = null
                 val i_20_ = za_Sub2.regionTileX - i_18_
                 val i_21_ = -i_19_ + Class90.regionTileY
                 if (i_17_ == 11) {
@@ -223,7 +223,7 @@ class Class348_Sub41 : Class348() {
                     }
                     method3153(0)
                     method464(-1)
-                    r_Sub2.aClass262_10492!!.method1996(107)
+                    OpenGlRenderNode.aClass262_10492!!.method1996(107)
                     Class348_Sub40_Sub17.aClass262_9240!!.method1996(103)
                     Class225.aClass243_2957!!.method1876((-45).toByte())
                     method1911(99.toByte())

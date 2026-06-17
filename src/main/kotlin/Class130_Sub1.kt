@@ -401,7 +401,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             NativeRenderer.anInt7904 = 0
             Class51.anInt867 = 0
             Class318_Sub1_Sub5_Sub1.anInt10121 = 0
-            r_Sub1.anInt10469 = 0
+            NativeRenderNode.anInt10469 = 0
             Class294.anInt5038 = 0
             Class88.anInt1494 = 0
             Class62.anInt1111 = 0
@@ -429,7 +429,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub23.anInt9316 = 0
             OpenGlRenderer.anInt7674 = 0
             Class64_Sub2.anInt5410 = 0
-            r_Sub1.anInt10472 = 0
+            NativeRenderNode.anInt10472 = 0
             Class94.anInt1535 = 0
             Class50_Sub1.anInt5220 = 0
             Class286_Sub1.anInt6202 = 0
@@ -502,7 +502,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class235.anInt3076 = 0
             Class325.anInt4067 = 0
             Class318_Sub1_Sub2_Sub1.anInt10192 = 0
-            r_Sub2.anInt10485 = 0
+            OpenGlRenderNode.anInt10485 = 0
             Class21.anInt321 = 0
             Class377.anInt9836 = 0
             Class348_Sub16_Sub1.anInt8846 = 0
@@ -615,7 +615,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class87.anInt1489 = 0
             za_Sub1.anInt9771 = 0
             Class348_Sub42_Sub8_Sub2.anInt10433 = 0
-            r.anInt9717 = 0
+            RenderNode.anInt9717 = 0
             Class348_Sub40_Sub26.anInt9355 = 0
             Class59.anInt1075 = 0
             Class340.anInt4221 = 0
@@ -1537,7 +1537,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class279.anInt3594 = 0
             Class348_Sub40_Sub33.anInt9426 = 0
             s_Sub3.anInt8288 = 0
-            r_Sub2.anInt10491 = 0
+            OpenGlRenderNode.anInt10491 = 0
             Class348_Sub42_Sub17.anInt9670 = 0
             Class348_Sub42_Sub15.anInt9646 = 0
             Class59_Sub2.anInt5310 = 0
@@ -1696,7 +1696,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class342.anInt4243 = 0
             Class348_Sub40_Sub28.anInt9363 = 0
             Class318_Sub1_Sub1_Sub1.anInt9960 = 0
-            r_Sub1.anInt10476 = 0
+            NativeRenderNode.anInt10476 = 0
             Class348_Sub16_Sub3.anInt8918 = 0
             Class105_Sub1.anInt8406 = 0
             Class348_Sub9.anInt6682 = 0
@@ -1917,7 +1917,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class143.anInt1984 = 0
             Class239_Sub6.anInt5896 = 0
             NativeRenderer.anInt8015 = 0
-            r_Sub2.anInt10481 = 0
+            OpenGlRenderNode.anInt10481 = 0
             Class348_Sub8.anInt6659 = 0
             Class64.anInt1133 = 0
             Class348_Sub42_Sub7.anInt9543 = 0
@@ -2127,7 +2127,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class306.anInt3874 = 0
             Class97.anInt1557 = 0
             Class14.anInt5100 = 0
-            r_Sub2.anInt10490 = 0
+            OpenGlRenderNode.anInt10490 = 0
             Class315.anInt3950 = 0
             Class340.anInt4219 = 0
             Class348_Sub18.anInt6817 = 0
@@ -2187,7 +2187,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             NativeRenderer.anInt8028 = 0
             NativeRenderer.anInt7953 = 0
             Class303.anInt3845 = 0
-            r_Sub1.anInt10473 = 0
+            NativeRenderNode.anInt10473 = 0
             Class348_Sub1_Sub3.anInt8821 = 0
             Class348_Sub46.anInt7112 = 0
             Class137.anInt1934 = 0
@@ -2468,7 +2468,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class324.anInt4049 = 0
             Class59_Sub2_Sub2.anInt8676 = 0
             Class59_Sub1.anInt5295 = 0
-            r_Sub1.anInt10470 = 0
+            NativeRenderNode.anInt10470 = 0
             Class348_Sub12.anInt6739 = 0
             Class64_Sub3.anInt5603 = 0
             Class64_Sub2.anInt5523 = 0
@@ -3665,7 +3665,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class315.anInt3944 = 0
             Class348_Sub40_Sub8.anInt9154 = 0
             Class318_Sub1_Sub3.anInt8752 = 0
-            r_Sub1.anInt10475 = 0
+            NativeRenderNode.anInt10475 = 0
             Class348_Sub42_Sub20.anInt9709 = 0
             Class135_Sub2.anInt4834 = 0
             Class239_Sub9.anInt5925 = 0
@@ -4108,9 +4108,9 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
                 j++
             }
 
-            r.aBoolean9722 = false
+            RenderNode.aBoolean9722 = false
             Class348_Sub17.method2928(true)
-            r_Sub2.anInt10483 = -60 + (Math.random() * 120.0).toInt()
+            OpenGlRenderNode.anInt10483 = -60 + (Math.random() * 120.0).toInt()
             Class260.anInt3310 = -55 + (Math.random() * 110.0).toInt()
             Class314.aFloat3938 = (0x3fff and -80 + (160.0 * Math.random()).toInt()).toFloat()
             Class348_Sub49_Sub1.anInt9750 = (30.0 * Math.random()).toInt() + -20
@@ -4123,7 +4123,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub32.anInt6930 = 0
             Class282.aClass356_3654!!.method3481(0)
             Class348_Sub40_Sub17.aClass262_9240!!.method1996(112)
-            r_Sub2.aClass262_10492!!.method1996(109)
+            OpenGlRenderNode.aClass262_10492!!.method1996(109)
             Class225.aClass243_2957!!.method1876((-45).toByte())
             aClass356_1895!!.method3481(0)
             Class348_Sub42_Sub20.aClass262_9711 = Class262()
@@ -4141,7 +4141,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class367_Sub11.anInt7403 = 0
             for (l in Class77.anIntArray1303!!.indices) if (!Class286_Sub6.aBooleanArray6270!![l]) Class77.anIntArray1303!![l] = -1
 
-            if (r.anInt9721 != -1) Class14.method235(r.anInt9721, (-105).toByte())
+            if (RenderNode.anInt9721 != -1) Class14.method235(RenderNode.anInt9721, (-105).toByte())
             var class348_sub41 = Class125.aClass356_4915!!.method3484(0) as Class348_Sub41?
             while (class348_sub41 != null) {
                 if (!class348_sub41.method2712(4.toByte())) {
@@ -4152,7 +4152,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
                 class348_sub41 = Class125.aClass356_4915!!.method3482(0) as Class348_Sub41?
             }
 
-            r.anInt9721 = -1
+            RenderNode.anInt9721 = -1
             Class125.aClass356_4915 = Class356(8)
             method882(11.toByte())
             Class49.aClass46_4730 = null

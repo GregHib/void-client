@@ -36,7 +36,7 @@ class Class171 internal constructor(private val aHa_Sub2_2268: OpenGlRenderer, i
         @JvmStatic
         fun method1320() {
             for (i in 0..<Class331.anInt4135) {
-                if (!r.aBooleanArray9718!![i]) {
+                if (!RenderNode.aBooleanArray9718!![i]) {
                     val class211 = Class239_Sub14.aClass211Array5993!![i]
                     val class348_sub1 = class211!!.aClass348_Sub1_2745!!
                     val i_3_ = class211.anInt2731
@@ -107,7 +107,7 @@ class Class171 internal constructor(private val aHa_Sub2_2268: OpenGlRenderer, i
                         }
                         i_6_++
                     }
-                    r.aBooleanArray9718!![i] = true
+                    RenderNode.aBooleanArray9718!![i] = true
                     NativeSprite.aSArray5191!![i_3_]!!.method3981(class348_sub1, `is`)
                 }
             }

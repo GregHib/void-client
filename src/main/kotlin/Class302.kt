@@ -50,7 +50,7 @@ class Class302 {
                     } else method119(-1, l)
                 }
                 Class348_Sub47.method3324(Class348_Sub8.aRenderer6654, 83.toByte(), Class367_Sub11.anInt7396.toLong())
-                if (r.anInt9721 != -1) method769(r.anInt9721, 118.toByte())
+                if (RenderNode.anInt9721 != -1) method769(RenderNode.anInt9721, 118.toByte())
                 for (i_3_ in 0..<Class348_Sub38.anInt7008) {
                     if (Class152.aBooleanArray2076!![i_3_]) Class268.aBooleanArray3438!![i_3_] = true
                     Class175.aBooleanArray2326!![i_3_] = Class152.aBooleanArray2076!![i_3_]
@@ -59,7 +59,7 @@ class Class302 {
                 Class58.anInt1064 = Class367_Sub11.anInt7396
                 method198(null, false, -1, -1)
                 method1343(-1, null, 1, -1)
-                if (r.anInt9721 != -1) {
+                if (RenderNode.anInt9721 != -1) {
                     Class348_Sub38.anInt7008 = 0
                     method842(false)
                 }

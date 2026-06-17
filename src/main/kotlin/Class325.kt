@@ -459,7 +459,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, -1)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class314.aFloat3938.toInt())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 57)
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, r_Sub2.anInt10483)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, OpenGlRenderNode.anInt10483)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, Class348_Sub49_Sub1.anInt9750)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 89)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (Class132.aPlayer_1907!!.x))
@@ -733,7 +733,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348.anInt4292 = 0
                             Class239_Sub20.anInt6048 = 2
                             Class26.anInt385 = i_73_
-                            val class348_sub47 = method2148(r_Sub1.aClass351_10477, (Class348_Sub23_Sub2.aClass77_9029), -107)
+                            val class348_sub47 = method2148(NativeRenderNode.aClass351_10477, (Class348_Sub23_Sub2.aClass77_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), za_Sub2.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_75_ + Class90.regionTileY)
@@ -775,7 +775,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 2) {
                             Class348.anInt4292 = 0
                             Class239_Sub20.anInt6048 = 2
-                            r_Sub1.anInt10476++
+                            NativeRenderNode.anInt10476++
                             Class26.anInt385 = i_73_
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub16_Sub1.aClass351_8857), (Class348_Sub23_Sub2.aClass77_9029), -105)
@@ -990,7 +990,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     Class348_Sub42_Sub14.method3243(-22, class348_sub47)
                                     Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)
                                 }
-                                if (r.aBoolean9722) Class341.method2678(-2049)
+                                if (RenderNode.aBoolean9722) Class341.method2678(-2049)
                                 if (Class311.aClass46_3913 == null || Class108.anInt1656 != 0) break
                                 Class251.method1916(-9343, Class311.aClass46_3913!!)
                             }

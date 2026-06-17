@@ -77,7 +77,7 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
             Class348_Sub42_Sub17.method3270(120.toByte())
             if (class46 != null) method1913(!bool, i_2_ + -104, class46)
             if (!bool) method703(i)
-            if (!bool && r.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), r.anInt9721, 1)
+            if (!bool && RenderNode.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), RenderNode.anInt9721, 1)
             return class348_sub41
         }
 

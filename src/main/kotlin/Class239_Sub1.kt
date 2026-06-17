@@ -72,7 +72,7 @@ class Class239_Sub1 : Class239 {
         @JvmStatic
         fun method1721(string: String?, i: Byte) {
             anInt5849++
-            if (r.aBoolean9722 && (0x18 and Class38.anInt500) != 0) {
+            if (RenderNode.aBoolean9722 && (0x18 and Class38.anInt500) != 0) {
                 val i_2_ = -88 / ((i - -33) / 37)
                 var bool = false
                 val i_3_ = Class328_Sub1.anInt6513
@@ -96,7 +96,7 @@ class Class239_Sub1 : Class239 {
                     i_4_++
                 }
                 if (!bool) method544((Class274.aClass274_3504!!.method2063(Class348_Sub33.anInt6967, 544)) + string, false, 4)
-                if (r.aBoolean9722) Class341.method2678(-2049)
+                if (RenderNode.aBoolean9722) Class341.method2678(-2049)
             }
         }
 

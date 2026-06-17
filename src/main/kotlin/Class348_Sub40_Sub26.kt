@@ -120,7 +120,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
             Applet_Sub1.anIntArray38 = IntArray(i_18_)
             Class348_Sub50.aByteArrayArray7212 = null
-            r.anIntArray9724 = IntArray(i_18_)
+            RenderNode.anIntArray9724 = IntArray(i_18_)
             Class322.anIntArray4031 = null
             Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
             if (i >= -47) anInt9349 = -54
@@ -134,7 +134,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
                     NativeSprite.anIntArray5192!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_21_ + "_" + i_22_, 0)
                     Applet_Sub1.anIntArray38!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
                     Class295.anIntArray3759!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)
-                    r.anIntArray9724!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
+                    RenderNode.anIntArray9724!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
                     i_18_++
                     i_22_++
                 }

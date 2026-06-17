@@ -21,7 +21,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
     private val aBoolean3065: Boolean
     private val aByte3067: Byte
     private var aBoolean3069 = false
-    private var aR3071: r? = null
+    private var aRenderNode3071: RenderNode? = null
     private var aBooleanArray3072: BooleanArray? = null
     private var anInt3073: Int
     private var anInt3074 = 0
@@ -136,7 +136,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
             return null
         }
         if (bool_3_) {
-            method1301(aR3071, aByte3067.toInt(), (aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), aBooleanArray3072)
+            method1301(aRenderNode3071, aByte3067.toInt(), (aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), aBooleanArray3072)
             anInt3056 = -1
             anInt3073 = -1
         }
@@ -153,7 +153,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
                 if (class2 == null) {
                     anInt3055 = 0
                     aBooleanArray3072 = null
-                    aR3071 = null
+                    aRenderNode3071 = null
                     anInt3060 = 0
                     aClass64_3059 = null
                 } else {
@@ -161,8 +161,8 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
                     aClass64_3059 = class64
                     if (bool_3_) {
                         aBooleanArray3072 = null
-                        aR3071 = class2.aR118
-                        method1130(aR3071, aByte3067.toInt(), aClass318_Sub1_3051.x, aClass318_Sub1_3051.y, null)
+                        aRenderNode3071 = class2.aRenderNode118
+                        method1130(aRenderNode3071, aByte3067.toInt(), aClass318_Sub1_3051.x, aClass318_Sub1_3051.y, null)
                         anInt3073 = -1
                         anInt3056 = class51.anInt941
                     }
@@ -177,12 +177,12 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
                 anInt3055 = 0
                 aBooleanArray3072 = null
                 anInt3060 = 0
-                aR3071 = null
+                aRenderNode3071 = null
             } else {
                 if (bool_3_) {
                     if (aBooleanArray3072 == null) aBooleanArray3072 = BooleanArray(4)
-                    aR3071 = class64.ba(aR3071)
-                    method1130(aR3071, aByte3067.toInt(), (aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), aBooleanArray3072)
+                    aRenderNode3071 = class64.ba(aRenderNode3071)
+                    method1130(aRenderNode3071, aByte3067.toInt(), (aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), aBooleanArray3072)
                     anInt3073 = anInt3084
                     anInt3056 = class51.anInt941
                 }
@@ -309,9 +309,9 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
 
     fun method1674(i: Int, var_renderer: Renderer?) {
         if (i != -1) aBoolean3064 = false
-        if (aR3071 != null) {
-            method1301(aR3071, aByte3067.toInt(), (aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), aBooleanArray3072)
-            aR3071 = null
+        if (aRenderNode3071 != null) {
+            method1301(aRenderNode3071, aByte3067.toInt(), (aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), aBooleanArray3072)
+            aRenderNode3071 = null
             aBooleanArray3072 = null
         }
         anInt3050++

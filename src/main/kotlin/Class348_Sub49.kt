@@ -732,8 +732,8 @@ open class Class348_Sub49 : Class348 {
                     Class213.aClass238_2773!!.method1700(36.toByte())
                     Class213.aClass238_2773 = null
                 }
-                if (i_71_ == 3) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != r.anInt9721), (-45).toByte())
-                if (i_71_ == 7) method1006((r.anInt9721 != Class54.anInt970), 102.toByte())
+                if (i_71_ == 3) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != RenderNode.anInt9721), (-45).toByte())
+                if (i_71_ == 7) method1006((RenderNode.anInt9721 != Class54.anInt970), 102.toByte())
                 if (i_71_ == 5) {
                     if (Class348_Sub23_Sub3.aString9043 == null) method1213(Class64_Sub3.aString5600, Class186.aString2496, -124)
                     else method1372(-1)
@@ -753,7 +753,7 @@ open class Class348_Sub49 : Class348 {
                     Class94.aClass45_1538!!.anInt634 = 2
                     Class216.aClass45_4975!!.anInt634 = 2
                     Class174.aClass45_2306!!.anInt634 = 2
-                    r_Sub2.aClass45_10480!!.anInt634 = 2
+                    OpenGlRenderNode.aClass45_10480!!.anInt634 = 2
                     Class78.aClass45_1322!!.anInt634 = 2
                 }
                 if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (-119).toByte())) {
@@ -768,7 +768,7 @@ open class Class348_Sub49 : Class348 {
                     Class94.aClass45_1538!!.anInt634 = 1
                     Class216.aClass45_4975!!.anInt634 = 1
                     Class174.aClass45_2306!!.anInt634 = 1
-                    r_Sub2.aClass45_10480!!.anInt634 = 1
+                    OpenGlRenderNode.aClass45_10480!!.anInt634 = 1
                     Class78.aClass45_1322!!.anInt634 = 1
                 }
                 if (i_71_ == 11 || i_71_ == 3) method3088(9)

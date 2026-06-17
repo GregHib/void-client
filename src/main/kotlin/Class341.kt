@@ -79,7 +79,7 @@ class Class341 {
         fun method2678(i: Int) {
             if (i != -2049) anIntArrayArray4233 = null
             anInt4229++
-            if (r.aBoolean9722) {
+            if (RenderNode.aBoolean9722) {
                 val class46 = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), Class149.anInt2046)
                 if (class46 != null && class46.anObjectArray680 != null) {
                     val class348_sub36 = Class348_Sub36()
@@ -88,7 +88,7 @@ class Class341 {
                     method705(class348_sub36)
                 }
                 Class301.anInt3829 = -1
-                r.aBoolean9722 = false
+                RenderNode.aBoolean9722 = false
                 Class362.anInt4458 = -1
                 if (class46 != null) method1916(-9343, class46)
             }

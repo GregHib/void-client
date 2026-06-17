@@ -19,7 +19,7 @@ object Class155 {
     fun method1237(i: Byte, class46: Class46) {
         anInt2108++
         if (i < 69) Class155.method1236((-52).toByte())
-        if (r.aBoolean9722) {
+        if (RenderNode.aBoolean9722) {
             Class296.anInt3775++
             if (class46.anObjectArray679 != null) {
                 val class46_0_ = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), Class149.anInt2046)

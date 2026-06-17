@@ -373,7 +373,7 @@ class Class18 internal constructor(var_ha_Sub2: OpenGlRenderer) {
             Class21.aRenderer326 = var_renderer
             Class51.aClass101_905 = Class21.aRenderer326!!.method3654()
             Class44.aClass101_624 = Class21.aRenderer326!!.method3654()
-            r.aClass101_9720 = Class21.aRenderer326!!.method3654()
+            RenderNode.aClass101_9720 = Class21.aRenderer326!!.method3654()
             Class73.anInt4784 = i_26_
             Class239_Sub24.anInt6095 = 0
             if (i_22_ <= 64) anIntArray279 = null

@@ -33,7 +33,7 @@ object Class157 {
         class348_sub49_sub2.writeInt(93.toByte(), Class247.aClass45_3183!!.method389(28))
         class348_sub49_sub2.writeInt(115.toByte(), Class216.aClass45_4975!!.method389(-96))
         class348_sub49_sub2.writeInt(102.toByte(), Class174.aClass45_2306!!.method389(98))
-        class348_sub49_sub2.writeInt(97.toByte(), r_Sub2.aClass45_10480!!.method389(114))
+        class348_sub49_sub2.writeInt(97.toByte(), OpenGlRenderNode.aClass45_10480!!.method389(114))
         class348_sub49_sub2.writeInt(123.toByte(), Class78.aClass45_1322!!.method389(-104))
         class348_sub49_sub2.writeInt(97.toByte(), Class348_Sub16_Sub3.aClass45_8926!!.method389(-96))
         class348_sub49_sub2.writeInt(111.toByte(), Class348_Sub32.aClass45_6950!!.method389(109))

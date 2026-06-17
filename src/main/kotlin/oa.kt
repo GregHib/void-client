@@ -2,6 +2,9 @@ import java.awt.Canvas
 import java.awt.Rectangle
 import kotlin.math.max
 
+/*
+ * NativeGraphicsContext
+ */
 class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Interface19 {
     private var aYa5121: ya? = null
     var nativeid: Long = 0L
