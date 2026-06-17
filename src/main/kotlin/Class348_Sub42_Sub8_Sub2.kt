@@ -299,7 +299,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class19.aIntRange_304) {
+            if (Class348_Sub3.aIntRange_6584 == WorldListEntry.aIntRange_304) {
                 Class90.method853(99.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return false
@@ -565,34 +565,34 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     var i_71_: Int
                     i_71_ = 0
                     while (Class37.anInt496 > i_71_) {
-                        if (HostPingThread.aClass19Array2261!![i_71_]!!.aString306 == string_67_ && i == (HostPingThread.aClass19Array2261!![i_71_]!!.anInt308)) break
+                        if (HostPingThread.aWorldListEntryArray2261!![i_71_]!!.aString306 == string_67_ && i == (HostPingThread.aWorldListEntryArray2261!![i_71_]!!.anInt308)) break
                         i_71_++
                     }
                     if (Class37.anInt496 > i_71_) {
                         while ( /**/-1 + Class37.anInt496 > i_71_) {
-                            HostPingThread.aClass19Array2261!![i_71_] = HostPingThread.aClass19Array2261!![i_71_ - -1]
+                            HostPingThread.aWorldListEntryArray2261!![i_71_] = HostPingThread.aWorldListEntryArray2261!![i_71_ - -1]
                             i_71_++
                         }
                         Class37.anInt496--
-                        HostPingThread.aClass19Array2261!![Class37.anInt496] = null
+                        HostPingThread.aWorldListEntryArray2261!![Class37.anInt496] = null
                     }
                 } else {
                     val string_72_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-74).toByte())
-                    val class19 = Class19()
-                    class19.aString306 = string_67_
-                    class19.aString314 = string
-                    class19.aString312 = method2127(2, class19.aString306)
-                    class19.aString313 = string_72_
-                    class19.anInt308 = i
-                    class19.aByte310 = i_68_
+                    val worldListEntry = WorldListEntry()
+                    worldListEntry.aString306 = string_67_
+                    worldListEntry.aString314 = string
+                    worldListEntry.aString312 = method2127(2, worldListEntry.aString306)
+                    worldListEntry.aString313 = string_72_
+                    worldListEntry.anInt308 = i
+                    worldListEntry.aByte310 = i_68_
                     var i_73_: Int
                     i_73_ = -1 + Class37.anInt496
                     while (i_73_ >= 0) {
-                        val i_74_ = HostPingThread.aClass19Array2261!![i_73_]!!.aString312!!.compareTo(class19.aString312!!)
+                        val i_74_ = HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aString312!!.compareTo(worldListEntry.aString312!!)
                         if (i_74_ == 0) {
-                            HostPingThread.aClass19Array2261!![i_73_]!!.anInt308 = i
-                            HostPingThread.aClass19Array2261!![i_73_]!!.aByte310 = i_68_
-                            HostPingThread.aClass19Array2261!![i_73_]!!.aString313 = string_72_
+                            HostPingThread.aWorldListEntryArray2261!![i_73_]!!.anInt308 = i
+                            HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aByte310 = i_68_
+                            HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aString313 = string_72_
                             if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                             Class230.anInt2986 = Class311.anInt3918
                             Class348_Sub3.aIntRange_6584 = null
@@ -601,13 +601,13 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         if (i_74_ < 0) break
                         i_73_--
                     }
-                    if (HostPingThread.aClass19Array2261!!.size <= Class37.anInt496) {
+                    if (HostPingThread.aWorldListEntryArray2261!!.size <= Class37.anInt496) {
                         Class348_Sub3.aIntRange_6584 = null
                         return true
                     }
-                    for (i_75_ in Class37.anInt496 - 1 downTo i_73_ + 1) HostPingThread.aClass19Array2261!![1 + i_75_] = HostPingThread.aClass19Array2261!![i_75_]
-                    if (Class37.anInt496 == 0) HostPingThread.aClass19Array2261 = arrayOfNulls<Class19>(100)
-                    HostPingThread.aClass19Array2261!![i_73_ - -1] = class19
+                    for (i_75_ in Class37.anInt496 - 1 downTo i_73_ + 1) HostPingThread.aWorldListEntryArray2261!![1 + i_75_] = HostPingThread.aWorldListEntryArray2261!![i_75_]
+                    if (Class37.anInt496 == 0) HostPingThread.aWorldListEntryArray2261 = arrayOfNulls<WorldListEntry>(100)
+                    HostPingThread.aWorldListEntryArray2261!![i_73_ - -1] = worldListEntry
                     Class37.anInt496++
                     if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                 }
@@ -1646,7 +1646,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class19.aIntRange_315 == Class348_Sub3.aIntRange_6584) {
+            if (WorldListEntry.aIntRange_315 == Class348_Sub3.aIntRange_6584) {
                 method128(RectangleBounds.aClass74_2157, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1733,7 +1733,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (Class348_Sub40_Sub25.anInt9341 == 0) {
                     Class37.anInt496 = 0
                     Class50.aString863 = null
-                    HostPingThread.aClass19Array2261 = null
+                    HostPingThread.aWorldListEntryArray2261 = null
                     Class348_Sub21.aString6854 = null
                     Class348_Sub3.aIntRange_6584 = null
                     return true
@@ -1750,19 +1750,19 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     return true
                 }
                 Class37.anInt496 = i
-                val class19s = arrayOfNulls<Class19>(100)
+                val worldListEntries = arrayOfNulls<WorldListEntry>(100)
                 var i_234_ = 0
                 while (Class37.anInt496 > i_234_) {
-                    class19s[i_234_] = Class19()
-                    class19s[i_234_]!!.aString314 = Class299.aClass348_Sub49_Sub2_3813!!.readString(103.toByte())
+                    worldListEntries[i_234_] = WorldListEntry()
+                    worldListEntries[i_234_]!!.aString314 = Class299.aClass348_Sub49_Sub2_3813!!.readString(103.toByte())
                     bool_233_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
-                    if (!bool_233_) class19s[i_234_]!!.aString306 = class19s[i_234_]!!.aString314
-                    else class19s[i_234_]!!.aString306 = Class299.aClass348_Sub49_Sub2_3813!!.readString(107.toByte())
-                    class19s[i_234_]!!.aString312 = method2127(2, (class19s[i_234_]!!.aString306))
-                    class19s[i_234_]!!.anInt308 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    class19s[i_234_]!!.aByte310 = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-118)
-                    class19s[i_234_]!!.aString313 = Class299.aClass348_Sub49_Sub2_3813!!.readString((-124).toByte())
-                    if (class19s[i_234_]!!.aString306 == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = class19s[i_234_]!!.aByte310
+                    if (!bool_233_) worldListEntries[i_234_]!!.aString306 = worldListEntries[i_234_]!!.aString314
+                    else worldListEntries[i_234_]!!.aString306 = Class299.aClass348_Sub49_Sub2_3813!!.readString(107.toByte())
+                    worldListEntries[i_234_]!!.aString312 = method2127(2, (worldListEntries[i_234_]!!.aString306))
+                    worldListEntries[i_234_]!!.anInt308 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    worldListEntries[i_234_]!!.aByte310 = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-118)
+                    worldListEntries[i_234_]!!.aString313 = Class299.aClass348_Sub49_Sub2_3813!!.readString((-124).toByte())
+                    if (worldListEntries[i_234_]!!.aString306 == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = worldListEntries[i_234_]!!.aByte310
                     i_234_++
                 }
                 var bool_235_ = false
@@ -1772,17 +1772,17 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     bool_235_ = true
                     var i_237_ = 0
                     while (i_236_ > i_237_) {
-                        if ((class19s[i_237_]!!.aString312!!.compareTo(class19s[1 + i_237_]!!.aString312!!)) > 0) {
-                            val class19 = class19s[i_237_]
-                            class19s[i_237_] = class19s[i_237_ - -1]
-                            class19s[1 + i_237_] = class19
+                        if ((worldListEntries[i_237_]!!.aString312!!.compareTo(worldListEntries[1 + i_237_]!!.aString312!!)) > 0) {
+                            val class19 = worldListEntries[i_237_]
+                            worldListEntries[i_237_] = worldListEntries[i_237_ - -1]
+                            worldListEntries[1 + i_237_] = class19
                             bool_235_ = false
                         }
                         i_237_++
                     }
                     if (bool_235_) break
                 }
-                HostPingThread.aClass19Array2261 = class19s
+                HostPingThread.aWorldListEntryArray2261 = worldListEntries
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

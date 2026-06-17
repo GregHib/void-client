@@ -3034,7 +3034,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             VarpStore.anInt5072 = 0
             Class62.anInt1112 = 0
             GameAppletFrame.anInt10 = 0
-            Class19.anInt309 = 0
+            WorldListEntry.anInt309 = 0
             Class237.anInt3107 = 0
             OpenGlRenderer.anInt7539 = 0
             Class261.anInt3316 = 0
@@ -3579,7 +3579,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class237.anInt3102 = 0
             Class318_Sub1_Sub3_Sub1.anInt10009 = 0
             Class45.anInt638 = 0
-            Class19.anInt305 = 0
+            WorldListEntry.anInt305 = 0
             Class239_Sub28.anInt6134 = 0
             Class64.anInt1130 = 0
             Client.anInt5187 = 0
@@ -3962,7 +3962,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub5_Sub1.anInt10119 = 0
             Class64_Sub2.anInt5483 = 0
             Class318_Sub7.anInt6440 = 0
-            Class19.anInt307 = 0
+            WorldListEntry.anInt307 = 0
             NativeRenderer.anInt7966 = 0
             Class318_Sub1_Sub4_Sub2.anInt10099 = 0
             OpenGlRenderer.anInt7651 = 0

@@ -160,7 +160,7 @@ class OutputStream_Sub1 : OutputStream() {
                     )
                     Class369_Sub1.method3570(false)
                     if (Class240.anInt4674 == 10) {
-                        Class19.method283(-127, i_0_, 256, i_2_, i_1_, i_3_, 256)
+                        WorldListEntry.method283(-127, i_0_, 256, i_2_, i_1_, i_3_, 256)
                         method3802(i_3_, i_2_, 2, i_1_, i_0_, 256, 256)
                         Class318_Sub1_Sub1_Sub2.method2403(i_1_, 256, i_3_, i_0_, 19206, i_2_, 256)
                         ItemDefinitionLoader.method1289(i_2_, i_0_, i_3_, 8, i_1_)

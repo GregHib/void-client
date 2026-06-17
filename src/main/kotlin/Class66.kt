@@ -4270,7 +4270,7 @@ object Class66 {
                 }
                 if (i == 3613) {
                     val i_364_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_364_ < Class37.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aClass19Array2261!![i_364_]!!.aString314!!)
+                    if (Class50.aString863 != null && i_364_ < Class37.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_364_]!!.aString314!!)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4279,7 +4279,7 @@ object Class66 {
                 }
                 if (i == 3614) {
                     val i_365_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_365_ < Class37.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aClass19Array2261!![i_365_]!!.anInt308)
+                    if (Class50.aString863 != null && i_365_ < Class37.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_365_]!!.anInt308)
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4288,7 +4288,7 @@ object Class66 {
                 }
                 if (i == 3615) {
                     val i_366_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_366_ < Class37.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aClass19Array2261!![i_366_]!!.aByte310).toInt()
+                    if (Class50.aString863 != null && i_366_ < Class37.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_366_]!!.aByte310).toInt()
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4346,7 +4346,7 @@ object Class66 {
                 }
                 if (i == 3624) {
                     val i_368_ = anIntArray1149!![--anInt1173]
-                    if (HostPingThread.aClass19Array2261 != null && i_368_ < Class37.anInt496 && (HostPingThread.aClass19Array2261!![i_368_]!!.aString306.equals(LocalPlayerState.aPlayer_1907!!.aString10544, ignoreCase = true))) anIntArray1149!![anInt1173++] = 1
+                    if (HostPingThread.aWorldListEntryArray2261 != null && i_368_ < Class37.anInt496 && (HostPingThread.aWorldListEntryArray2261!![i_368_]!!.aString306.equals(LocalPlayerState.aPlayer_1907!!.aString10544, ignoreCase = true))) anIntArray1149!![anInt1173++] = 1
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4362,7 +4362,7 @@ object Class66 {
                 }
                 if (i == 3626) {
                     val i_369_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_369_ < Class37.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aClass19Array2261!![i_369_]!!.aString313!!)
+                    if (Class50.aString863 != null && i_369_ < Class37.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_369_]!!.aString313!!)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4400,7 +4400,7 @@ object Class66 {
                 }
                 if (i == 3632) {
                     val i_372_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_372_ < Class37.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aClass19Array2261!![i_372_]!!.aString306!!)
+                    if (Class50.aString863 != null && i_372_ < Class37.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_372_]!!.aString306!!)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return

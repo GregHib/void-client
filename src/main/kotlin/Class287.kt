@@ -1,5 +1,5 @@
 import HeadIconRenderer.Companion.method1211
-import Class19.Companion.method285
+import WorldListEntry.Companion.method285
 import java.util.zip.CRC32
 import kotlin.math.atan2
 import kotlin.math.cos

@@ -85,7 +85,7 @@ class HostPingThread : Runnable {
         @JvmField
         var aAbstractModelRendererArray2260: Array<AbstractModelRenderer?>? = null
         @JvmField
-        var aClass19Array2261: Array<Class19?>? = null
+        var aWorldListEntryArray2261: Array<WorldListEntry?>? = null
         var anInt2262: Int = 0
         var anInt2263: Int = 0
         @JvmField
@@ -98,7 +98,7 @@ class HostPingThread : Runnable {
         fun method1300(i: Byte) {
             if (i < -127) {
                 aAbstractModelRendererArray2260 = null
-                aClass19Array2261 = null
+                aWorldListEntryArray2261 = null
             }
         }
 

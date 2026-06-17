@@ -240,7 +240,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             anInt10344++
             if (!class297.method2247(-4)) return null
             if (i_7_ == 0) {
-                val class57s = Class19.method286((-49).toByte(), class297)
+                val class57s = WorldListEntry.method286((-49).toByte(), class297)
                 if (class57s == null) return null
                 var bool = false
                 var i_10_ = 0

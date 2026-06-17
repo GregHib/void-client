@@ -328,7 +328,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
                     }
                 }
                 for (i_64_ in class181.anIntArray2385!!.indices) {
-                    val class174 = (Class19.aSpotAnimVectorArray311s!![class181.anIntArray2385!![i_64_]])
+                    val class174 = (WorldListEntry.aSpotAnimVectorArray311s!![class181.anIntArray2385!![i_64_]])
                     if (class174!!.anInt2297 == 0) {
                         d += (class174.anInt2291 * i).toDouble()
                         d_27_ += (class174.anInt2290 * i).toDouble()

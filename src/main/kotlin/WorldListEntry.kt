@@ -1,7 +1,7 @@
 /* Class19 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class19 {
+class WorldListEntry {
     @JvmField
     var aString306: String? = null
     @JvmField

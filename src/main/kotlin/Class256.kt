@@ -18,7 +18,7 @@ object Class256 {
         spotAnimVector.method1337(-1)
         if (spotAnimVector.anInt2296 == 2 && (Class59_Sub2_Sub2.aClass356_8679!!.method3480(i.toLong(), -6008) == null)) {
             Class59_Sub2_Sub2.aClass356_8679!!.method3483(87.toByte(), i.toLong(), Class348_Sub35(Class285_Sub1.anInt8492))
-            Class19.aSpotAnimVectorArray311s!![Class285_Sub1.anInt8492++] = spotAnimVector
+            WorldListEntry.aSpotAnimVectorArray311s!![Class285_Sub1.anInt8492++] = spotAnimVector
         }
         Class318_Sub1_Sub2.aClass60_8732!!.method582(spotAnimVector, i.toLong(), (-109).toByte())
         return spotAnimVector

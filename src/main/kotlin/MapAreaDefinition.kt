@@ -3,7 +3,7 @@ import Class239_Sub28.Companion.method1842
 /* Class189 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class189 {
+class MapAreaDefinition {
     var aBoolean2522: Boolean = false
     var anInt2525: Int
     var anInt2526: Int = 64

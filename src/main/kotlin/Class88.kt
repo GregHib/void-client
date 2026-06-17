@@ -448,7 +448,7 @@ class Class88 {
                                 FrameStatsReset.method1135(0)
                                 Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 Renderer.anInt4581 = -1
-                                if (Class348_Sub3.aIntRange_6584 != Class19.aIntRange_304) method3120(-92)
+                                if (Class348_Sub3.aIntRange_6584 != WorldListEntry.aIntRange_304) method3120(-92)
                                 else Class90.method853(99.toByte())
                                 if (i_13_ != Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("lswp pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_13_)
                                 Class348_Sub3.aIntRange_6584 = null
