@@ -19,7 +19,7 @@ import java.io.*
 class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class348_Sub5(var_ha_Sub2) {
     private var aClass337_8822: Class337? = null
     private var aClass337_8824: Class337? = null
-    private var aClass206_8825: Class206? = null
+    private var aFrameBufferObject_8825: FrameBufferObject? = null
     private var anInt8826 = 0
     private var aClass258_Sub3_8830: Class258_Sub3? = null
     private var anInt8833 = 0
@@ -29,7 +29,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
     private var anInt8838 = 0
     private var anInt8841 = 0
     private var aClass337_8842: Class337? = null
-    private var aClass206_8844: Class206? = null
+    private var aFrameBufferObject_8844: FrameBufferObject? = null
 
     override fun method2756(i: Byte, i_0_: Int) {
         anInt8831++
@@ -50,8 +50,8 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
             glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, 1.0)
             if (aClass258_Sub3Array8837 == null) {
                 this.aHa_Sub2_6618.method3771((-90).toByte(), class258_sub3_2_)
-                this.aHa_Sub2_6618.method3773(-1, aClass206_8825)
-                aClass206_8825!!.method1503(0, 3.toByte())
+                this.aHa_Sub2_6618.method3773(-1, aFrameBufferObject_8825)
+                aFrameBufferObject_8825!!.method1503(0, 3.toByte())
                 glViewport(0, 0, 256, 256)
                 val l = aClass337_8842!!.aLong4178
                 glUseProgramObjectARB(l)
@@ -68,13 +68,13 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                 glVertex2i(0, 1)
                 glEnd()
             } else {
-                this.aHa_Sub2_6618.method3773(-1, aClass206_8844)
+                this.aHa_Sub2_6618.method3773(-1, aFrameBufferObject_8844)
                 var i_4_ = Class348_Sub40_Sub1.method3051(anInt8841, 4096)
                 var i_5_ = Class348_Sub40_Sub1.method3051(anInt8833, 4096)
                 var i_6_ = 0
                 while (i_4_ > 256 || i_5_ > 256) {
                     glViewport(0, 0, i_4_, i_5_)
-                    aClass206_8844!!.method1509(aClass258_Sub3Array8837!![i_6_]!!, 0, 0)
+                    aFrameBufferObject_8844!!.method1509(aClass258_Sub3Array8837!![i_6_]!!, 0, 0)
                     if (i_6_ == 0) {
                         this.aHa_Sub2_6618.method3771((-115).toByte(), class258_sub3_2_)
                         glBegin(7)
@@ -104,10 +104,10 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                     if (i_4_ > 256) i_4_ = i_4_ shr 1
                     i_6_++
                 }
-                this.aHa_Sub2_6618.method3770(-422613672, aClass206_8844)
+                this.aHa_Sub2_6618.method3770(-422613672, aFrameBufferObject_8844)
                 this.aHa_Sub2_6618.method3771((-100).toByte(), aClass258_Sub3Array8837!![i_6_ + -1])
-                this.aHa_Sub2_6618.method3773(-1, aClass206_8825)
-                aClass206_8825!!.method1503(0, 3.toByte())
+                this.aHa_Sub2_6618.method3773(-1, aFrameBufferObject_8825)
+                aFrameBufferObject_8825!!.method1503(0, 3.toByte())
                 glViewport(0, 0, 256, 256)
                 val l = aClass337_8824!!.aLong4178
                 glUseProgramObjectARB(l)
@@ -124,7 +124,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                 glVertex2i(0, 1)
                 glEnd()
             }
-            aClass206_8825!!.method1503(1, 3.toByte())
+            aFrameBufferObject_8825!!.method1503(1, 3.toByte())
             this.aHa_Sub2_6618.method3771((-100).toByte(), aClass258_Sub3_8835)
             val l = aClass337_8822!!.aLong4178
             glUseProgramObjectARB(l)
@@ -140,7 +140,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
             glTexCoord2f(0.0f, 1.0f)
             glVertex2i(0, 1)
             glEnd()
-            aClass206_8825!!.method1503(0, 3.toByte())
+            aFrameBufferObject_8825!!.method1503(0, 3.toByte())
             this.aHa_Sub2_6618.method3771((-114).toByte(), aClass258_Sub3_8830)
             glUniform3fARB(glGetUniformLocationARB(l, "step"), 0.0f, 0.00390625f, 0.0f)
             glBegin(7)
@@ -157,7 +157,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
             glPopAttrib()
             glPopMatrix()
             glMatrixMode(5888)
-            this.aHa_Sub2_6618.method3770(-422613672, aClass206_8825)
+            this.aHa_Sub2_6618.method3770(-422613672, aFrameBufferObject_8825)
             val l_7_ = aClass337_8836!!.aLong4178
             glUseProgramObjectARB(l_7_)
             glUniform1iARB(glGetUniformLocationARB(l_7_, "sceneTex"), 0)
@@ -197,7 +197,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                         if (i_19_ > 256) i_19_ = i_19_ shr 1
                         i_21_++
                     }
-                    if (aClass206_8844 == null) aClass206_8844 = Class206(this.aHa_Sub2_6618)
+                    if (aFrameBufferObject_8844 == null) aFrameBufferObject_8844 = FrameBufferObject(this.aHa_Sub2_6618)
                     i_19_ = i_16_
                     aClass258_Sub3Array8837 = arrayOfNulls<Class258_Sub3>(i_21_)
                     i_20_ = i_17_
@@ -207,7 +207,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                         if (i_20_ > 256) i_20_ = i_20_ shr 1
                         if (i_19_ > 256) i_19_ = i_19_ shr 1
                     }
-                } else aClass206_8844 = null
+                } else aFrameBufferObject_8844 = null
                 anInt8826 = i_16_
                 anInt8838 = i_17_
             }
@@ -217,8 +217,8 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
     override fun method2763(i: Byte) {
         aClass337_8822 = null
         aClass258_Sub3_8835 = null
-        aClass206_8844 = null
-        aClass206_8825 = null
+        aFrameBufferObject_8844 = null
+        aFrameBufferObject_8825 = null
         aClass337_8842 = null
         anInt8839++
         aClass258_Sub3Array8837 = null
@@ -231,7 +231,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
     override fun method2751(bool: Boolean): Boolean {
         if (bool != true) method2751(true)
         anInt8829++
-        return aClass206_8825 != null
+        return aFrameBufferObject_8825 != null
     }
 
     fun method2767(i: Byte): Boolean {
@@ -247,23 +247,23 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
     }
 
     override fun method2758(i: Int): Boolean {
-        if (i < 84) aClass206_8844 = null
+        if (i < 84) aFrameBufferObject_8844 = null
         anInt8834++
         if (this.aHa_Sub2_6618.aBoolean7820 && this.aHa_Sub2_6618.aBoolean7783 && this.aHa_Sub2_6618.aBoolean7818) {
-            aClass206_8825 = Class206(this.aHa_Sub2_6618)
+            aFrameBufferObject_8825 = FrameBufferObject(this.aHa_Sub2_6618)
             aClass258_Sub3_8835 = Class258_Sub3(this.aHa_Sub2_6618, 3553, 34842, 256, 256)
             aClass258_Sub3_8835!!.method1965(false, false, 10243)
             aClass258_Sub3_8830 = Class258_Sub3(this.aHa_Sub2_6618, 3553, 34842, 256, 256)
             aClass258_Sub3_8830!!.method1965(false, false, 10243)
-            this.aHa_Sub2_6618.method3773(-1, aClass206_8825)
-            aClass206_8825!!.method1509(aClass258_Sub3_8835!!, 0, 0)
-            aClass206_8825!!.method1509(aClass258_Sub3_8830!!, 0, 1)
-            aClass206_8825!!.method1503(0, 3.toByte())
-            if (!aClass206_8825!!.method1507(124)) {
-                this.aHa_Sub2_6618.method3770(-422613672, aClass206_8825)
+            this.aHa_Sub2_6618.method3773(-1, aFrameBufferObject_8825)
+            aFrameBufferObject_8825!!.method1509(aClass258_Sub3_8835!!, 0, 0)
+            aFrameBufferObject_8825!!.method1509(aClass258_Sub3_8830!!, 0, 1)
+            aFrameBufferObject_8825!!.method1503(0, 3.toByte())
+            if (!aFrameBufferObject_8825!!.method1507(124)) {
+                this.aHa_Sub2_6618.method3770(-422613672, aFrameBufferObject_8825)
                 return false
             }
-            this.aHa_Sub2_6618.method3770(-422613672, aClass206_8825)
+            this.aHa_Sub2_6618.method3770(-422613672, aFrameBufferObject_8825)
             aClass337_8842 = (Class318_Sub1_Sub5_Sub2.method2493(
                 this.aHa_Sub2_6618,
                 -1,

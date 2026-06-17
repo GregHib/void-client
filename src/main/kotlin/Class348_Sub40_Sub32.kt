@@ -101,7 +101,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
                 val l = Class62.method599(i xor 0x3c)
                 Class286_Sub5.anInt6248 -= (-Class348_Sub33.aLong6963 + l).toInt()
                 if (Class286_Sub5.anInt6248 > 0) {
-                    val i_4_ = ((Class286_Sub5.anInt6248 shl 8) / Class206.anInt4889)
+                    val i_4_ = ((Class286_Sub5.anInt6248 shl 8) / FrameBufferObject.anInt4889)
                     val i_5_ = -i_4_ + 255
                     val f = i_4_.toFloat() / 255.0f
                     val f_6_ = 1.0f - f

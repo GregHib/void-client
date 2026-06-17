@@ -13,9 +13,9 @@ import kotlin.math.min
 class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     private var anInt275 = 1
     private var anInt276 = 0
-    private var aClass206_281: Class206? = null
-    private var aClass206_284: Class206? = null
-    private var aClass206_285: Class206? = null
+    private var aFrameBufferObject_281: FrameBufferObject? = null
+    private var aFrameBufferObject_284: FrameBufferObject? = null
+    private var aFrameBufferObject_285: FrameBufferObject? = null
     private var anInt286 = 1
     private var anInt287 = 0
     private var aBoolean289 = false
@@ -36,16 +36,16 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     fun method272(i: Int) {
         anInt277++
         if (aBoolean289) {
-            if (aClass206_285 != null) {
-                aHa_Sub2_290.method3764(-17083, aClass206_285)
+            if (aFrameBufferObject_285 != null) {
+                aHa_Sub2_290.method3764(-17083, aFrameBufferObject_285)
                 var i_2_ = 16384
-                aHa_Sub2_290.method3751(aClass206_281, -115)
-                aClass206_285!!.method1505(0, 0)
-                aClass206_281!!.method1503(0, 3.toByte())
+                aHa_Sub2_290.method3751(aFrameBufferObject_281, -115)
+                aFrameBufferObject_285!!.method1505(0, 0)
+                aFrameBufferObject_281!!.method1503(0, 3.toByte())
                 if (aBoolean303) i_2_ = i_2_ or 0x100
                 glBlitFramebufferEXT(0, 0, anInt286, anInt275, 0, 0, anInt286, anInt275, i_2_, 9728)
-                aHa_Sub2_290.method3805(8387, aClass206_285)
-                aHa_Sub2_290.method3782(aClass206_281, 327685)
+                aHa_Sub2_290.method3805(8387, aFrameBufferObject_285)
+                aHa_Sub2_290.method3782(aFrameBufferObject_281, 327685)
             }
             aHa_Sub2_290.method3792(92)
             aHa_Sub2_290.method3753(0, 1)
@@ -62,7 +62,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 for (i_8_ in 0..<i_7_) {
                     class348_sub5_6_.method2750(aClass258_Sub3_300, aClass258_Sub3Array295!![i_4_], i_8_, 103.toByte())
                     if (class348_sub5 == null && i_8_ == i_7_ - 1) {
-                        aHa_Sub2_290.method3770(-422613672, aClass206_281)
+                        aHa_Sub2_290.method3770(-422613672, aFrameBufferObject_281)
                         aHa_Sub2_290.method3790(103, 0, 0)
                         glBegin(7)
                         glTexCoord2f(0.0f, anInt275.toFloat())
@@ -79,7 +79,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                         glVertex2i(anInt286 + anInt287, anInt276)
                         glEnd()
                     } else {
-                        aClass206_281!!.method1503(i_5_, 3.toByte())
+                        aFrameBufferObject_281!!.method1503(i_5_, 3.toByte())
                         glBegin(7)
                         glTexCoord2f(0.0f, anInt275.toFloat())
                         glMultiTexCoord2f(33985, 0.0f, 1.0f)
@@ -107,7 +107,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
 
     fun method274(class348_sub5: Class348_Sub5, bool: Boolean): Boolean {
         anInt273++
-        if (aClass206_284 != null) {
+        if (aFrameBufferObject_284 != null) {
             if (class348_sub5.method2751(bool) || class348_sub5.method2758(85)) {
                 aClass262_292.method1999(class348_sub5, -20180)
                 method281((-94).toByte())
@@ -126,7 +126,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     fun method275(i: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int): Boolean {
         if (i_12_ != -1) return true
         anInt272++
-        if (aClass206_284 == null || aClass262_292.method2002(18.toByte())) return false
+        if (aFrameBufferObject_284 == null || aClass262_292.method2002(18.toByte())) return false
         if (anInt286 != i || i_10_ != anInt275) {
             anInt286 = i
             anInt275 = i_10_
@@ -143,8 +143,8 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             aBoolean289 = true
             anInt276 = i_11_
             anInt287 = i_9_
-            aHa_Sub2_290.method3773(i_12_, aClass206_284)
-            aClass206_284!!.method1503(0, 3.toByte())
+            aHa_Sub2_290.method3773(i_12_, aFrameBufferObject_284)
+            aFrameBufferObject_284!!.method1503(0, 3.toByte())
             aHa_Sub2_290.method3790(98, (-aHa_Sub2_290.anInt7641 + (anInt275 - -anInt276)), -anInt287)
             return true
         }
@@ -161,7 +161,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 aClass258_Sub3_300!!.method1952(-19948)
                 aClass258_Sub3_300 = null
             }
-            if (aClass206_285 != null) aClass348_Sub42_Sub2_298 = Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
+            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_298 = Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
             if (aBoolean303) aClass258_Sub3_300 = Class258_Sub3(aHa_Sub2_290, 34037, 6402, anInt286, anInt275)
             else if (aClass348_Sub42_Sub2_298 == null) aClass348_Sub42_Sub2_298 = Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286, anInt275)
             aBoolean293 = false
@@ -182,7 +182,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 aClass258_Sub3Array295!![1]!!.method1952(-19948)
                 aClass258_Sub3Array295!![1] = null
             }
-            if (aClass206_285 != null) aClass348_Sub42_Sub2_296 = Class348_Sub42_Sub2(aHa_Sub2_290, anInt301, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
+            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_296 = Class348_Sub42_Sub2(aHa_Sub2_290, anInt301, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
             aClass258_Sub3Array295!![0] = Class258_Sub3(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275)
             aClass258_Sub3Array295!![1] = if (anInt302 > 1) Class258_Sub3(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275) else null
             aBoolean294 = true
@@ -191,39 +191,39 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         }
         if (bool != false) anInt282 = -21
         if (aBoolean294) {
-            if (aClass206_285 == null) {
-                aHa_Sub2_290.method3773(-1, aClass206_281)
-                aClass206_281!!.method1500(2983, 0)
-                aClass206_281!!.method1500(2983, 1)
-                aClass206_281!!.method1500(2983, 8)
-                aClass206_281!!.method1509(aClass258_Sub3Array295!![0]!!, 0, 0)
-                if (anInt302 > 1) aClass206_281!!.method1509(aClass258_Sub3Array295!![1]!!, 0, 1)
-                if (aBoolean303) aClass206_281!!.method1509(aClass258_Sub3_300!!, 0, 8)
-                else aClass206_281!!.method1508(8, aClass348_Sub42_Sub2_298!!, 114)
-                aHa_Sub2_290.method3770(-422613672, aClass206_281)
+            if (aFrameBufferObject_285 == null) {
+                aHa_Sub2_290.method3773(-1, aFrameBufferObject_281)
+                aFrameBufferObject_281!!.method1500(2983, 0)
+                aFrameBufferObject_281!!.method1500(2983, 1)
+                aFrameBufferObject_281!!.method1500(2983, 8)
+                aFrameBufferObject_281!!.method1509(aClass258_Sub3Array295!![0]!!, 0, 0)
+                if (anInt302 > 1) aFrameBufferObject_281!!.method1509(aClass258_Sub3Array295!![1]!!, 0, 1)
+                if (aBoolean303) aFrameBufferObject_281!!.method1509(aClass258_Sub3_300!!, 0, 8)
+                else aFrameBufferObject_281!!.method1508(8, aClass348_Sub42_Sub2_298!!, 114)
+                aHa_Sub2_290.method3770(-422613672, aFrameBufferObject_281)
             } else {
-                aHa_Sub2_290.method3773(-1, aClass206_281)
-                aClass206_281!!.method1500(2983, 0)
-                aClass206_281!!.method1500(2983, 1)
-                aClass206_281!!.method1500(2983, 8)
-                aClass206_281!!.method1509(aClass258_Sub3Array295!![0]!!, 0, 0)
-                if (anInt302 > 1) aClass206_281!!.method1509(aClass258_Sub3Array295!![1]!!, 0, 1)
-                if (aBoolean303) aClass206_281!!.method1509(aClass258_Sub3_300!!, 0, 8)
-                aHa_Sub2_290.method3770(-422613672, aClass206_281)
-                aHa_Sub2_290.method3773(-1, aClass206_285)
-                aClass206_285!!.method1500(2983, 0)
-                aClass206_285!!.method1500(2983, 8)
-                aClass206_285!!.method1508(0, aClass348_Sub42_Sub2_296!!, -100)
-                aClass206_285!!.method1508(8, aClass348_Sub42_Sub2_298!!, -47)
-                aHa_Sub2_290.method3770(-422613672, aClass206_285)
+                aHa_Sub2_290.method3773(-1, aFrameBufferObject_281)
+                aFrameBufferObject_281!!.method1500(2983, 0)
+                aFrameBufferObject_281!!.method1500(2983, 1)
+                aFrameBufferObject_281!!.method1500(2983, 8)
+                aFrameBufferObject_281!!.method1509(aClass258_Sub3Array295!![0]!!, 0, 0)
+                if (anInt302 > 1) aFrameBufferObject_281!!.method1509(aClass258_Sub3Array295!![1]!!, 0, 1)
+                if (aBoolean303) aFrameBufferObject_281!!.method1509(aClass258_Sub3_300!!, 0, 8)
+                aHa_Sub2_290.method3770(-422613672, aFrameBufferObject_281)
+                aHa_Sub2_290.method3773(-1, aFrameBufferObject_285)
+                aFrameBufferObject_285!!.method1500(2983, 0)
+                aFrameBufferObject_285!!.method1500(2983, 8)
+                aFrameBufferObject_285!!.method1508(0, aClass348_Sub42_Sub2_296!!, -100)
+                aFrameBufferObject_285!!.method1508(8, aClass348_Sub42_Sub2_298!!, -47)
+                aHa_Sub2_290.method3770(-422613672, aFrameBufferObject_285)
             }
             aBoolean294 = false
             aBoolean299 = true
         }
         if (aBoolean299) {
-            aHa_Sub2_290.method3773(-1, aClass206_284)
-            aBoolean299 = !aClass206_284!!.method1507(118)
-            aHa_Sub2_290.method3770(-422613672, aClass206_284)
+            aHa_Sub2_290.method3773(-1, aFrameBufferObject_284)
+            aBoolean299 = !aFrameBufferObject_284!!.method1507(118)
+            aHa_Sub2_290.method3770(-422613672, aFrameBufferObject_284)
         }
         return !aBoolean299
     }
@@ -242,9 +242,9 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         val i_13_ = 84 % ((-63 - i) / 56)
         aClass348_Sub42_Sub2_296 = null
         anInt291++
-        aClass206_281 = null
-        aClass206_285 = aClass206_281
-        aClass206_284 = aClass206_285
+        aFrameBufferObject_281 = null
+        aFrameBufferObject_285 = aFrameBufferObject_281
+        aFrameBufferObject_284 = aFrameBufferObject_285
         aClass258_Sub3_300 = null
         aClass348_Sub42_Sub2_298 = null
         aClass258_Sub3Array295 = null
@@ -262,7 +262,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     fun method280(i: Int): Boolean {
         anInt270++
         if (i != 1) anInt286 = -99
-        return aClass206_284 != null
+        return aFrameBufferObject_284 != null
     }
 
     private fun method281(i: Byte) {
@@ -313,11 +313,11 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         aBoolean303 = false
         aHa_Sub2_290 = var_ha_Sub2
         if (aHa_Sub2_290.aBoolean7820 && aHa_Sub2_290.aBoolean7837) {
-            aClass206_281 = Class206(aHa_Sub2_290)
-            aClass206_284 = aClass206_281
+            aFrameBufferObject_281 = FrameBufferObject(aHa_Sub2_290)
+            aFrameBufferObject_284 = aFrameBufferObject_281
             if (aHa_Sub2_290.anInt7713 > 1 && aHa_Sub2_290.aBoolean7815 && aHa_Sub2_290.aBoolean7807) {
-                aClass206_285 = Class206(aHa_Sub2_290)
-                aClass206_284 = aClass206_285
+                aFrameBufferObject_285 = FrameBufferObject(aHa_Sub2_290)
+                aFrameBufferObject_284 = aFrameBufferObject_285
             }
         }
     }

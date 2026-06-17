@@ -107,7 +107,7 @@ import ScriptResources.method1463
 import SocketStreamWorker.Companion.method1471
 import MidiTrackReader.Companion.method1493
 import CircleDrawer.method1497
-import Class206.Companion.method1499
+import FrameBufferObject.Companion.method1499
 import Class208.Companion.method1525
 import Class209.Companion.method1529
 import Class21.Companion.method288
@@ -1364,7 +1364,7 @@ class Client : GameAppletFrame() {
             if (Class222.anInt2884 < 0 || GlVertexBufferBase.aColorArray1928!!.size <= Class222.anInt2884) Class222.anInt2884 = 0
             if (this.getParameter("sitesettings_member")!!.toInt() == 1) {
                 ItemActionPacketSender.aBoolean2110 = true
-                Class206.aBoolean4888 = ItemActionPacketSender.aBoolean2110
+                FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
             }
             val string_28_ = this.getParameter("frombilling")
             if (string_28_ != null && string_28_ == "true") Class375.aBoolean4540 = true
@@ -2006,7 +2006,7 @@ class Client : GameAppletFrame() {
                     Class348_Sub23_Sub3.aString9043 = null
                     SocketStreamWorker.anInt2670 = 0
                     ItemActionPacketSender.aBoolean2110 = true
-                    Class206.aBoolean4888 = ItemActionPacketSender.aBoolean2110
+                    FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
                     Class375.aBoolean4540 = false
                     Class251.anInt3234 = 0
                     Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987)

@@ -10,7 +10,10 @@ import jaggl.OpenGL.Companion.glReadBuffer
 import kotlin.math.abs
 import kotlin.math.atan2
 
-class Class206 internal constructor(var_ha_Sub2: OpenGlRenderer) : Interface11 {
+/*
+ * Class206
+ */
+class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Interface11 {
     private var anInt4872 = 0
     private var anInt4873: Int
     private val anInterface9Array4875 = arrayOfNulls<Interface9>(9)

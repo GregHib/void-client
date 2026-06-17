@@ -82,7 +82,7 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRender
             anInterface18_Impl3_6492 = aHa_Sub3_6494.method3839(i_5_, i_5_, -15137, false, `is`)
             aBoolean6493 = false
         }
-        anInterface18_Impl3_6492!!.method64(Class206.aClass209_4874, -22095)
+        anInterface18_Impl3_6492!!.method64(FrameBufferObject.aClass209_4874, -22095)
         anInterface5_Impl1_6495 = aHa_Sub3_6494.method3889(false, 16711680)
         anInterface5_Impl1_6495.method20(20480, 126.toByte(), 20)
         for (i_36_ in 0..3) {

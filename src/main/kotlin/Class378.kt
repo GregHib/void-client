@@ -762,7 +762,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         private var anIntArray9809: IntArray? = intArrayOf(77, 80)
         private fun method3952(class209: Class209?, i: Byte): Int {
             if (Class71.aClass209_1212 == class209) return 2
-            if (Class206.aClass209_4874 == class209) return 1
+            if (FrameBufferObject.aClass209_4874 == class209) return 1
             if (i <= 57) anIntArray9790 = null
             throw IllegalArgumentException()
         }

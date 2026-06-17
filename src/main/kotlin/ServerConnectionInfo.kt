@@ -75,8 +75,8 @@ class ServerConnectionInfo {
                 Class239_Sub14.aModelLightingConfig_5990 = modelLightingConfig
                 Class348_Sub33.aLong6963 = method599(-78)
                 Class286_Sub5.anInt6248 = i
-                Class206.anInt4889 = Class286_Sub5.anInt6248
-                if (Class206.anInt4889 == 0) method3134(-1)
+                FrameBufferObject.anInt4889 = Class286_Sub5.anInt6248
+                if (FrameBufferObject.anInt4889 == 0) method3134(-1)
                 else {
                     Class318_Sub1_Sub1.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137
                     DelegatingRenderCanvas.anInt70 = LocTypeDefLoader.anInt2500

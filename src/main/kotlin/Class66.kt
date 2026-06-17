@@ -2271,7 +2271,7 @@ object Class66 {
                     return
                 }
                 if (i == 6904) {
-                    anIntArray1149!![anInt1173++] = Class206.anInt4870
+                    anIntArray1149!![anInt1173++] = FrameBufferObject.anInt4870
                     return
                 }
                 if (i == 6905) {
@@ -4011,7 +4011,7 @@ object Class66 {
                     return
                 }
                 if (i == 3325) {
-                    anIntArray1149!![anInt1173++] = if (Class206.aBoolean4888) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (FrameBufferObject.aBoolean4888) 1 else 0
                     return
                 }
                 if (i == 3326) {

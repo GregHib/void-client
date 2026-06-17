@@ -118,7 +118,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var aGlowPostProcessor_7736: GlowPostProcessor? = null
     private val anInterface11Array7737: Array<Interface11?>
     private var anInt7738: Int
-    private val aClass206_7739: Class206? = null
+    private val aFrameBufferObject_7739: FrameBufferObject? = null
     private var anInterface11_7740: Interface11? = null
     private val anInterface11Array7741: Array<Interface11?>
     private var anInt7742: Int
@@ -168,7 +168,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var anInt7777: Int = 0
     @JvmField
-    var aClass206_7778: Class206? = null
+    var aFrameBufferObject_7778: FrameBufferObject? = null
     private val aFloatArray7779: FloatArray
     @JvmField
     var aClass64_Sub3_7780: Class64_Sub3? = null
@@ -828,10 +828,10 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     override fun method3672() {
         anInt7702++
         if (this.aBoolean7820) {
-            if (anInterface11_7740 !== aClass206_7739) throw RuntimeException()
-            aClass206_7739!!.method1500(2983, 0)
-            aClass206_7739.method1500(2983, 8)
-            method3770(-422613672, aClass206_7739)
+            if (anInterface11_7740 !== aFrameBufferObject_7739) throw RuntimeException()
+            aFrameBufferObject_7739!!.method1500(2983, 0)
+            aFrameBufferObject_7739.method1500(2983, 8)
+            method3770(-422613672, aFrameBufferObject_7739)
         } else {
             if (!aBoolean7866) throw RuntimeException("")
             aClass105_Sub2_7744!!.method979(0, 0, this.anInt7688, this.anInt7641, 0, 0)
@@ -2187,8 +2187,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         this.aClass64_Sub3_7844 = Class64_Sub3(this)
         this.aClass64_Sub3_7785 = Class64_Sub3(this)
         if (this.aBoolean7820) {
-            this.aClass206_7778 = Class206(this)
-            Class206(this)
+            this.aFrameBufferObject_7778 = FrameBufferObject(this)
+            FrameBufferObject(this)
         }
     }
 

@@ -2,7 +2,7 @@ import NpcSummaryDefinition.Companion.method1166
 import Gl2dTexture.Companion.method241
 import SizeBoundedSoftCache.Companion.method1343
 import TextureGenerator.Companion.method1397
-import Class206.Companion.method1501
+import FrameBufferObject.Companion.method1501
 import Class239_Sub11.Companion.method1767
 import Class239_Sub18.Companion.method1802
 import Class251.Companion.method1916

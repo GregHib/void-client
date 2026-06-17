@@ -30,7 +30,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
         try {
             anInt2517++
             if (!method1414(35632)) return false
-            val class206 = aHa_Sub2_2511.aClass206_7778
+            val class206 = aHa_Sub2_2511.aFrameBufferObject_7778
             val i_3_ = 30 % ((-55 - i) / 59)
             val class348_sub42_sub2 = Class348_Sub42_Sub2(aHa_Sub2_2511, 6408, (class258_sub1!!.anInt8523), (class258_sub1.anInt8529))
             aHa_Sub2_2511.method3773(-1, class206)

@@ -345,7 +345,7 @@ class Class88 {
                                 Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class50_Sub2.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class348_Sub42_Sub11.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944)
-                                Class206.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
+                                FrameBufferObject.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class24.anInt359 = class348_sub49_sub2.method3369(125.toByte())
                                 ModelBatchBase.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class348_Sub40_Sub12.aClass263_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
@@ -361,10 +361,10 @@ class Class88 {
                                 PlayerUpdateDecoder.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 InputSettingsState.anInt1758 = class348_sub49_sub2.readShort(13638)
-                                Class206.aBoolean4888 = InputSettingsState.anInt1758 > 0
+                                FrameBufferObject.aBoolean4888 = InputSettingsState.anInt1758 > 0
                                 GlArrayBufferObject.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class322.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944)
-                                Class206.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)
+                                FrameBufferObject.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 VarpStore.anInt5065 = class348_sub49_sub2.readInt((-126).toByte())
                                 Class348_Sub42_Sub6.aLinkedQueueNode_9536 = Class348_Sub23_Sub1.aClass297_8992!!.method2232(116, VarpStore.anInt5065)
                                 Class216.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
@@ -386,7 +386,7 @@ class Class88 {
                                 }
                                 if (Class8.aClass364_165 != Class76.Companion.aClass364_1279 && ((Class3.aServerConnectionInfo_125!!.method1264(94.toByte(), GlElementArrayBuffer.aServerConnectionInfo_4839)) || (Class3.aServerConnectionInfo_125!!.method1264(112.toByte(), (Class348_Sub40_Sub35.aServerConnectionInfo_9443))))) Class348_Sub42_Sub20.method3283(114)
                             }
-                            if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !Class206.aBoolean4888) {
+                            if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !FrameBufferObject.aBoolean4888) {
                                 try {
                                     Class224.method1617(125.toByte(), Class93.anApplet1530, "unzap")
                                 } catch (throwable: Throwable) {

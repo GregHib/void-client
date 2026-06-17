@@ -18,7 +18,7 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer, i: In
         try {
             anInt8703++
             var bool = true
-            val class206 = aHa_Sub2_8707.aClass206_7778
+            val class206 = aHa_Sub2_8707.aFrameBufferObject_7778
             aHa_Sub2_8707.K(Class348_Sub6.anIntArray6635)
             aHa_Sub2_8707.la()
             aHa_Sub2_8707.method3755(-32)
