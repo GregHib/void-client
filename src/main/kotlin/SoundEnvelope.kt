@@ -5,7 +5,7 @@ import Class79.Companion.method802
 /* Class211 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class211 {
+class SoundEnvelope {
     @JvmField
     var anInt2731: Int = 0
     @JvmField
