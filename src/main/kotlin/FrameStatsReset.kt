@@ -253,7 +253,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class46.anInt766 = 0
             Class29.anInt402 = 0
             Class348_Sub43.anInt7073 = 0
-            Class267.anInt3395 = 0
+            SlotBinding.anInt3395 = 0
             Class69.anInt1192 = 0
             Class40.anInt547 = 0
             Class328_Sub2.anInt6516 = 0
@@ -927,7 +927,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class287.anInt3693 = 0
             ConfigDefinitionLoader.anInt2080 = 0
             Class59.anInt1073 = 0
-            Class267.anInt3391 = 0
+            SlotBinding.anInt3391 = 0
             Class50_Sub3.anInt5254 = 0
             MatrixCameraTransform.anInt5665 = 0
             NativeRenderer.anInt7950 = 0
@@ -1019,7 +1019,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348.anInt4285 = 0
             CompassSmoother.anInt3364 = 0
             GlRectangleTexture.anInt8651 = 0
-            Class267.anInt3397 = 0
+            SlotBinding.anInt3397 = 0
             NativeRenderer.anInt8073 = 0
             Class348_Sub42_Sub11.anInt9579 = 0
             Class373_Sub2.anInt7426 = 0
@@ -1679,7 +1679,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BufferedOutputStreamWorker.anInt2711 = 0
             OpenGlRenderer.anInt7568 = 0
             Class59_Sub1.anInt5277 = 0
-            Class267.anInt3400 = 0
+            SlotBinding.anInt3400 = 0
             Class367_Sub11.anInt7408 = 0
             ProjectionCameraTransform.anInt5746 = 0
             Class60.anInt1092 = 0
@@ -1993,7 +1993,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7642 = 0
             Class367_Sub10.anInt7381 = 0
             Class339.anInt4200 = 0
-            Class267.anInt3399 = 0
+            SlotBinding.anInt3399 = 0
             BloomGraphicsOptionState.anInt5970 = 0
             PerlinTextureProvider.anInt5811 = 0
             Class88.anInt1499 = 0
@@ -2702,7 +2702,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8053 = 0
             NpcCountAccessor.anInt2281 = 0
             OpenGlRenderer.anInt7537 = 0
-            Class267.anInt3393 = 0
+            SlotBinding.anInt3393 = 0
             Class303.anInt3846 = 0
             Class97.anInt1549 = 0
             MatrixCameraTransform.anInt5688 = 0
@@ -2928,7 +2928,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7669 = 0
             TwoStateOptionState.anInt6138 = 0
             SceneryDetailOptionState.anInt6086 = 0
-            Class267.anInt3390 = 0
+            SlotBinding.anInt3390 = 0
             OpenGlRenderer.anInt7540 = 0
             AbstractMenuEntry.anInt1709 = 0
             Class348_Sub40_Sub32.anInt9414 = 0

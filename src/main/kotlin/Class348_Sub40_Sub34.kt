@@ -113,7 +113,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             System.gc()
             method3007(2, 22684)
             Class74.aBoolean1236 = false
-            Class267.anInt3428 = -1
+            SlotBinding.anInt3428 = -1
             Class348_Sub40_Sub17_Sub1.Companion.method3093(i + 79)
             FloatCameraTransform.method921(99.toByte(), true)
             Class90.regionTileY = 0

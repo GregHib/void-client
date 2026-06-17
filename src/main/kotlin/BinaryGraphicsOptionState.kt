@@ -84,44 +84,44 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
         fun method1770(i: Byte): Int {
             anInt5957++
             if (Class367_Sub8.anInt7365 == 0) {
-                Class267.aClass267_3401!!.method2025(Class309("jaclib"), false)
-                if (Class267.aClass267_3401!!.method2027(119)!!.method31(28) != 100) return 1
-                if (!(Class267.aClass267_3401!!.method2027(71) as Class309).method2313(124)) Class79.aClient1367!!.method97(i + 24)
+                SlotBinding.aSlotBinding_3401!!.method2025(Class309("jaclib"), false)
+                if (SlotBinding.aSlotBinding_3401!!.method2027(119)!!.method31(28) != 100) return 1
+                if (!(SlotBinding.aSlotBinding_3401!!.method2027(71) as Class309).method2313(124)) Class79.aClient1367!!.method97(i + 24)
                 Class367_Sub8.anInt7365 = 1
             }
             if (Class367_Sub8.anInt7365 == 1) {
-                Crc64Hashable.aClass267Array4987 = Class267.method2029(110)
-                Class267.aClass267_3396!!.method2025(Class292(Class367_Sub8.aClass45_7362!!), false)
-                Class267.aClass267_3402!!.method2025(Class309("jaggl"), false)
-                Class267.aClass267_3403!!.method2025(Class309("jagdx"), false)
-                Class267.aClass267_3404!!.method2025(Class309("jagmisc"), false)
-                Class267.aClass267_3405!!.method2025(Class309("sw3d"), false)
-                Class267.aClass267_3406!!.method2025(Class309("hw3d"), false)
-                Class267.aClass267_3407!!.method2025(Class309("jagtheora"), false)
-                Class267.aClass267_3408!!.method2025(Class292(SpriteLoadValidator.aClass45_4796!!), false)
-                Class267.aClass267_3409!!.method2025(Class292(Class348_Sub11.aClass45_4770!!), false)
-                Class267.aClass267_3410!!.method2025(Class292(Class95.aClass45_1541!!), false)
-                Class267.aClass267_3411!!.method2025(Class292(Class94.aClass45_1538!!), false)
-                Class267.aClass267_3412!!.method2025(Class292(VideoAdChecker.aClass45_3183!!), false)
-                Class267.aClass267_3413!!.method2025(Class292(FloatGrid.aClass45_4975!!), false)
-                Class267.aClass267_3414!!.method2025(Class292(SpotAnimVector.aClass45_2306!!), false)
-                Class267.aClass267_3415!!.method2025(Class292(OpenGlRenderNode.aClass45_10480!!), false)
-                Class267.aClass267_3416!!.method2025(Class292(Class78.aClass45_1322!!), false)
-                Class267.aClass267_3417!!.method2025(Class292(Class348_Sub16_Sub3.aClass45_8926!!), false)
-                Class267.aClass267_3418!!.method2025(Class292(ModelBatchBase.aClass45_1897!!), false)
-                Class267.aClass267_3419!!.method2025(Class292(Class82.aClass45_1434!!), false)
-                Class267.aClass267_3420!!.method2025(Class292(aClass45_3146!!), false)
-                Class267.aClass267_3421!!.method2025(Class292(NodeDeque.aClass45_3323!!), false)
-                Class267.aClass267_3422!!.method2025(Class73((SceneTilePlaneManager.aClass45_233), "huffman"), false)
-                Class267.aClass267_3423!!.method2025(Class292(Class348_Sub35.aClass45_6980!!), false)
-                Class267.aClass267_3424!!.method2025(Class292(CameraNodeList.aClass45_1743!!), false)
-                Class267.aClass267_3425!!.method2025(Class292(SoftwareSpriteRaster.aClass45_1627!!), false)
-                Class267.aClass267_3426!!.method2025(SpriteLoadValidator((Class348_Sub32.aClass45_6950), "details"), false)
-                for (i_4_ in Crc64Hashable.aClass267Array4987!!.indices) {
-                    if (Crc64Hashable.aClass267Array4987!![i_4_]!!.method2027(78) == null) throw RuntimeException()
+                Crc64Hashable.aSlotBindingArray4987 = SlotBinding.method2029(110)
+                SlotBinding.aSlotBinding_3396!!.method2025(Class292(Class367_Sub8.aClass45_7362!!), false)
+                SlotBinding.aSlotBinding_3402!!.method2025(Class309("jaggl"), false)
+                SlotBinding.aSlotBinding_3403!!.method2025(Class309("jagdx"), false)
+                SlotBinding.aSlotBinding_3404!!.method2025(Class309("jagmisc"), false)
+                SlotBinding.aSlotBinding_3405!!.method2025(Class309("sw3d"), false)
+                SlotBinding.aSlotBinding_3406!!.method2025(Class309("hw3d"), false)
+                SlotBinding.aSlotBinding_3407!!.method2025(Class309("jagtheora"), false)
+                SlotBinding.aSlotBinding_3408!!.method2025(Class292(SpriteLoadValidator.aClass45_4796!!), false)
+                SlotBinding.aSlotBinding_3409!!.method2025(Class292(Class348_Sub11.aClass45_4770!!), false)
+                SlotBinding.aSlotBinding_3410!!.method2025(Class292(Class95.aClass45_1541!!), false)
+                SlotBinding.aSlotBinding_3411!!.method2025(Class292(Class94.aClass45_1538!!), false)
+                SlotBinding.aSlotBinding_3412!!.method2025(Class292(VideoAdChecker.aClass45_3183!!), false)
+                SlotBinding.aSlotBinding_3413!!.method2025(Class292(FloatGrid.aClass45_4975!!), false)
+                SlotBinding.aSlotBinding_3414!!.method2025(Class292(SpotAnimVector.aClass45_2306!!), false)
+                SlotBinding.aSlotBinding_3415!!.method2025(Class292(OpenGlRenderNode.aClass45_10480!!), false)
+                SlotBinding.aSlotBinding_3416!!.method2025(Class292(Class78.aClass45_1322!!), false)
+                SlotBinding.aSlotBinding_3417!!.method2025(Class292(Class348_Sub16_Sub3.aClass45_8926!!), false)
+                SlotBinding.aSlotBinding_3418!!.method2025(Class292(ModelBatchBase.aClass45_1897!!), false)
+                SlotBinding.aSlotBinding_3419!!.method2025(Class292(Class82.aClass45_1434!!), false)
+                SlotBinding.aSlotBinding_3420!!.method2025(Class292(aClass45_3146!!), false)
+                SlotBinding.aSlotBinding_3421!!.method2025(Class292(NodeDeque.aClass45_3323!!), false)
+                SlotBinding.aSlotBinding_3422!!.method2025(Class73((SceneTilePlaneManager.aClass45_233), "huffman"), false)
+                SlotBinding.aSlotBinding_3423!!.method2025(Class292(Class348_Sub35.aClass45_6980!!), false)
+                SlotBinding.aSlotBinding_3424!!.method2025(Class292(CameraNodeList.aClass45_1743!!), false)
+                SlotBinding.aSlotBinding_3425!!.method2025(Class292(SoftwareSpriteRaster.aClass45_1627!!), false)
+                SlotBinding.aSlotBinding_3426!!.method2025(SpriteLoadValidator((Class348_Sub32.aClass45_6950), "details"), false)
+                for (i_4_ in Crc64Hashable.aSlotBindingArray4987!!.indices) {
+                    if (Crc64Hashable.aSlotBindingArray4987!![i_4_]!!.method2027(78) == null) throw RuntimeException()
                 }
                 var i_5_ = 0
-                val class267s = Crc64Hashable.aClass267Array4987!!
+                val class267s = Crc64Hashable.aSlotBindingArray4987!!
                 for (i_6_ in class267s.indices) {
                     val class267 = class267s[i_6_]!!
                     val i_7_ = class267.method2024(-1)
@@ -131,12 +131,12 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 Class348_Sub40_Sub24.anInt9327 = i_5_
                 Class367_Sub8.anInt7365 = 2
             }
-            if (Crc64Hashable.aClass267Array4987 == null) return 100
+            if (Crc64Hashable.aSlotBindingArray4987 == null) return 100
             var i_9_ = 0
             var i_10_ = 0
             var bool = true
             if (i.toInt() != -25) anInt5951 = -33
-            val class267s = Crc64Hashable.aClass267Array4987!!
+            val class267s = Crc64Hashable.aSlotBindingArray4987!!
             var i_11_ = 0
             while (class267s.size > i_11_) {
                 val class267 = class267s[i_11_]!!
@@ -148,9 +148,9 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 i_11_++
             }
             if (bool) {
-                if (!(Class267.aClass267_3404!!.method2027(92) as Class309).method2313(102)) Class79.aClient1367!!.method83(true)
-                if (!(Class267.aClass267_3407!!.method2027(i.toInt() xor 0x64.inv()) as Class309).method2313(103)) Class38.aBoolean510 = Class79.aClient1367!!.method100(i.toInt() xor 0x12.inv())
-                Crc64Hashable.aClass267Array4987 = null
+                if (!(SlotBinding.aSlotBinding_3404!!.method2027(92) as Class309).method2313(102)) Class79.aClient1367!!.method83(true)
+                if (!(SlotBinding.aSlotBinding_3407!!.method2027(i.toInt() xor 0x64.inv()) as Class309).method2313(103)) Class38.aBoolean510 = Class79.aClient1367!!.method100(i.toInt() xor 0x12.inv())
+                Crc64Hashable.aSlotBindingArray4987 = null
             }
             i_9_ -= Class348_Sub40_Sub24.anInt9327
             i_10_ -= Class348_Sub40_Sub24.anInt9327

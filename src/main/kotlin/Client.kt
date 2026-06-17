@@ -179,8 +179,8 @@ import NpcDefinitionCache.Companion.method1980
 import NpcDefinitionCache.Companion.method1987
 import NodeDeque.Companion.method1994
 import CompassSmoother.Companion.method2018
-import Class267.Companion.method2026
-import Class267.Companion.method2029
+import SlotBinding.Companion.method2026
+import SlotBinding.Companion.method2029
 import Class268.Companion.method2036
 import Class27.method315
 import Class270.Companion.method2043

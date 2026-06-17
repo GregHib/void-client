@@ -1518,8 +1518,8 @@ object Class66 {
                 val i_150_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!!!.method1838(-32350)
                 if (i_149_ != i_150_) {
                     if (Class334.method2653(true, WorldMapRenderer.anInt4674)) {
-                        if (i_150_ == 0 && Class267.anInt3428 != -1) {
-                            method2732(0, Class267.anInt3428, false, 94, (Class59_Sub2_Sub1.aClass45_8667), i_149_)
+                        if (i_150_ == 0 && SlotBinding.anInt3428 != -1) {
+                            method2732(0, SlotBinding.anInt3428, false, 94, (Class59_Sub2_Sub1.aClass45_8667), i_149_)
                             method3093(87)
                             Class74.Companion.aBoolean1236 = false
                         } else if (i_149_ == 0) {
@@ -1635,10 +1635,10 @@ object Class66 {
             if (i == 6038) {
                 val i_158_ = anIntArray1149!![--anInt1173]
                 val i_159_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
-                if (i_158_ != i_159_ && Class267.anInt3428 == Class345.anInt4270) {
+                if (i_158_ != i_159_ && SlotBinding.anInt3428 == Class345.anInt4270) {
                     if (!Class334.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_159_ == 0) {
-                            method2732(0, Class267.anInt3428, false, 127, (Class59_Sub2_Sub1.aClass45_8667), i_158_)
+                            method2732(0, SlotBinding.anInt3428, false, 127, (Class59_Sub2_Sub1.aClass45_8667), i_158_)
                             method3093(118)
                             Class74.Companion.aBoolean1236 = false
                         } else if (i_158_ == 0) {

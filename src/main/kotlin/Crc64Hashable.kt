@@ -63,7 +63,7 @@ class Crc64Hashable : Interface14 {
         var anInt4985: Int = 0
         @JvmField
         var anInt4986: Int = 0
-        var aClass267Array4987: Array<Class267?>? = null
+        var aSlotBindingArray4987: Array<SlotBinding?>? = null
         @JvmField
         var anInt4988: Int = 0
         @JvmField
@@ -73,10 +73,10 @@ class Crc64Hashable : Interface14 {
 
         @JvmStatic
         fun method1112(i: Int) {
-            if (i != 1) aClass267Array4987 = null
+            if (i != 1) aSlotBindingArray4987 = null
             aClass45_4984 = null
             anIntArray4983 = null
-            aClass267Array4987 = null
+            aSlotBindingArray4987 = null
         }
 
         fun method1113(i: Int, i_0_: Int, i_1_: Int): Boolean {

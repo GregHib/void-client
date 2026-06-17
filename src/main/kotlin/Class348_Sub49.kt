@@ -776,7 +776,7 @@ open class Class348_Sub49 : Class348 {
                 val bool_72_ = (WorldMapRenderer.anInt4674 == 2 || method3196(WorldMapRenderer.anInt4674, -110) || method2672(WorldMapRenderer.anInt4674, -128))
                 if (bool != bool_72_) {
                     if (bool) {
-                        Class267.anInt3428 = Class345.anInt4270
+                        SlotBinding.anInt3428 = Class345.anInt4270
                         if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350) != 0) {
                             method2355(Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, Class59_Sub2_Sub1.aClass45_8667, Class345.anInt4270, 0, 2)
                             method3093(i xor 0x66)

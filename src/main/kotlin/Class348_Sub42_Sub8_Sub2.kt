@@ -913,7 +913,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return false
             }
-            if (Class267.aIntRange_3427 == Class348_Sub3.aIntRange_6584) {
+            if (SlotBinding.aIntRange_3427 == Class348_Sub3.aIntRange_6584) {
                 method1034(Class348_Sub40_Sub25.anInt9341, Class299.aClass348_Sub49_Sub2_3813, Class348_Sub23_Sub1.aClass297_8992, 110)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
