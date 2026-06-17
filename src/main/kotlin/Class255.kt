@@ -11,7 +11,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     private val aClass60_3278 = Class60(64)
     var anInt3286: Int = 0
     var aClass60_3287: Class60 = Class60(50)
-    var aClass175_3288: Class175 = Class175(250)
+    var aSizeBoundedSoftCache_3288: SizeBoundedSoftCache = SizeBoundedSoftCache(250)
     private var aCrc64Hashable_3289: Crc64Hashable? = Crc64Hashable()
     private val aStringArray3290: Array<String?>
     var anInt3291: Int = 0
@@ -54,7 +54,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 crc64Hashable.anInt4981 = i_1_
                 crc64Hashable.anInt4991 = var_renderer_3_!!.anInt4567
                 crc64Hashable.anInt4993 = i_6_
-                this.aClass175_3288.method1348(70, abstractModelRenderer_9_, crc64Hashable)
+                this.aSizeBoundedSoftCache_3288.method1348(70, abstractModelRenderer_9_, crc64Hashable)
             }
             return abstractModelRenderer_9_
         } catch (runtimeexception: RuntimeException) {
@@ -73,8 +73,8 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
 
     fun method1936(i: Int) {
         anInt3281++
-        synchronized(this.aClass175_3288) {
-            this.aClass175_3288.method1345((-126).toByte())
+        synchronized(this.aSizeBoundedSoftCache_3288) {
+            this.aSizeBoundedSoftCache_3288.method1345((-126).toByte())
             val i_12_ = -63 / ((21 - i) / 50)
         }
     }
@@ -88,8 +88,8 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             if (bool != false) method1939(-11)
             this.aClass60_3287.method578(2, i)
         }
-        synchronized(this.aClass175_3288) {
-            this.aClass175_3288.method1346(-1491, i)
+        synchronized(this.aSizeBoundedSoftCache_3288) {
+            this.aSizeBoundedSoftCache_3288.method1346(-1491, i)
         }
     }
 
@@ -101,8 +101,8 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         synchronized(this.aClass60_3287) {
             this.aClass60_3287.method587(-85)
         }
-        synchronized(this.aClass175_3288) {
-            this.aClass175_3288.method1344((-124).toByte())
+        synchronized(this.aSizeBoundedSoftCache_3288) {
+            this.aSizeBoundedSoftCache_3288.method1344((-124).toByte())
         }
         if (i < 105) this.aClass45_3268 = null
     }
@@ -116,8 +116,8 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         synchronized(this.aClass60_3287) {
             this.aClass60_3287.method590(0)
         }
-        synchronized(this.aClass175_3288) {
-            this.aClass175_3288.method1345(47.toByte())
+        synchronized(this.aSizeBoundedSoftCache_3288) {
+            this.aSizeBoundedSoftCache_3288.method1345(47.toByte())
         }
     }
 
@@ -178,7 +178,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             aCrc64Hashable_3289!!.anInt4982 = i_18_
             anInt3282++
             aCrc64Hashable_3289!!.anInt4993 = i
-            return this.aClass175_3288.method1340(123, aCrc64Hashable_3289!!) as AbstractModelRenderer?
+            return this.aSizeBoundedSoftCache_3288.method1340(123, aCrc64Hashable_3289!!) as AbstractModelRenderer?
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ')'))
         }

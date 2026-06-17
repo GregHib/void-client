@@ -797,7 +797,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class26.anInt385 = i_73_
                                 Class239_Sub20.anInt6048 = 2
                                 Class98.anInt1570++
-                                val class348_sub47 = method2148((Class175.aClass351_2315), (Class348_Sub23_Sub2.aClass77_9029), -90)
+                                val class348_sub47 = method2148((SizeBoundedSoftCache.aClass351_2315), (Class348_Sub23_Sub2.aClass77_9029), -90)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!Class182.aClass346_2449!!.method2696(82, -121)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(52, i_77_)
                                 Class348_Sub42_Sub14.method3243(-127, class348_sub47)

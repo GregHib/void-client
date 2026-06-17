@@ -77,7 +77,7 @@ import VarpStore.Companion.method1310
 import VarpStore.Companion.method1315
 import NpcCountAccessor.method1325
 import ObjectByteSerializerHolder.Companion.method1329
-import Class175.Companion.method1343
+import SizeBoundedSoftCache.Companion.method1343
 import Class176.method1351
 import Class178.method1355
 import Class18.Companion.method273
@@ -927,7 +927,7 @@ class Client : GameAppletFrame() {
         method3024(-100)
         method177()
         Class222.method1609((-121).toByte())
-        Class175.method1349((-121).toByte())
+        SizeBoundedSoftCache.method1349((-121).toByte())
         method3560(-13)
         method1062(35.toByte())
         method1013(114.toByte())
@@ -1569,7 +1569,7 @@ class Client : GameAppletFrame() {
                 MinimapRectClipper.anInt221 = 0
             }
             method102(61.toByte())
-            if (Class175.aClass340_2327 != null) Class175.aClass340_2327!!.method2670(0)
+            if (SizeBoundedSoftCache.aClass340_2327 != null) SizeBoundedSoftCache.aClass340_2327!!.method2670(0)
             method2228(0)
             method3260(66)
             Class182.aClass346_2449!!.method2695(67)
@@ -1690,7 +1690,7 @@ class Client : GameAppletFrame() {
                     RuntimeException_Sub1.aBoolean4604 = false
                 }
             }
-            if (Class34.aFrame476 != null && !Class175.aBoolean2329 && Class260.method1977((-79).toByte(), Class240.anInt4674)) method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+            if (Class34.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && Class260.method1977((-79).toByte(), Class240.anInt4674)) method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             var bool_120_ = false
             if (Class49.aBoolean4726) {
                 bool_120_ = true
@@ -1720,7 +1720,7 @@ class Client : GameAppletFrame() {
                 var i = 0
                 while (Class348_Sub38.anInt7008 > i) {
                     val rectangle = Class180.aRectangleArray2371!![i]
-                    if (Class175.aBooleanArray2326!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46)
+                    if (SizeBoundedSoftCache.aBooleanArray2326!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46)
                     else if (!Class268.aBooleanArray3438!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66)
                     else Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40)
                     i++

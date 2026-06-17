@@ -4078,7 +4078,7 @@ object Class66 {
                     return
                 }
                 if (i == 3340) {
-                    anIntArray1149!![anInt1173++] = if (Class175.aBoolean2329) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (SizeBoundedSoftCache.aBoolean2329) 1 else 0
                     return
                 }
                 if (i == 3341) {

@@ -1,7 +1,7 @@
 import DelegatingRenderCanvas.Companion.method119
 import MinimapDrawController.method950
 import ScriptCompilerThread.Companion.method1053
-import Class175.Companion.method1343
+import SizeBoundedSoftCache.Companion.method1343
 import Class33.Companion.method338
 import Class5_Sub2.Companion.method198
 import Class75_Sub1.method769
@@ -53,7 +53,7 @@ class Class302 {
                 if (RenderNode.anInt9721 != -1) method769(RenderNode.anInt9721, 118.toByte())
                 for (i_3_ in 0..<Class348_Sub38.anInt7008) {
                     if (GzipDecompressor.aBooleanArray2076!![i_3_]) Class268.aBooleanArray3438!![i_3_] = true
-                    Class175.aBooleanArray2326!![i_3_] = GzipDecompressor.aBooleanArray2076!![i_3_]
+                    SizeBoundedSoftCache.aBooleanArray2326!![i_3_] = GzipDecompressor.aBooleanArray2076!![i_3_]
                     GzipDecompressor.aBooleanArray2076!![i_3_] = false
                 }
                 Class58.anInt1064 = Class367_Sub11.anInt7396

@@ -317,7 +317,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         if ((class46.anInt765 == Class372.anInt4532) && Class348_Sub8.aRenderer6654!!.method3666()) Class348_Sub8.aRenderer6654!!.method3698()
                                         Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                     }
-                                    if (Class175.aBooleanArray2326!![i_23_] || NativeRenderer.anInt8045 > 1) {
+                                    if (SizeBoundedSoftCache.aBooleanArray2326!![i_23_] || NativeRenderer.anInt8045 > 1) {
                                         if (class46.anInt774 == 3) {
                                             if (i_28_ == 0) {
                                                 if (class46.aBoolean810) Class348_Sub8.aRenderer6654!!.aa(i_24_, i_25_, (class46.anInt709), (class46.anInt789), (class46.anInt749), 0)

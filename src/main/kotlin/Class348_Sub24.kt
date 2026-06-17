@@ -1,6 +1,6 @@
 import NpcSummaryDefinition.Companion.method1166
 import Gl2dTexture.Companion.method241
-import Class175.Companion.method1343
+import SizeBoundedSoftCache.Companion.method1343
 import Class186.Companion.method1397
 import Class206.Companion.method1501
 import Class239_Sub11.Companion.method1767
@@ -173,11 +173,11 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class76.aFloat1287.toInt() shr 3)
                         Class348_Sub42_Sub14.method3243(-31, class348_sub47)
                     }
-                    if (Class347.aBoolean4278 != Class175.aBoolean2329) {
+                    if (Class347.aBoolean4278 != SizeBoundedSoftCache.aBoolean2329) {
                         Class269.anInt3460++
-                        Class347.aBoolean4278 = Class175.aBoolean2329
+                        Class347.aBoolean4278 = SizeBoundedSoftCache.aBoolean2329
                         val class348_sub47 = method2148((InputStream_Sub1.aClass351_77), (Class348_Sub23_Sub2.aClass77_9029), i xor 0x2cc8.inv())
-                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!Class175.aBoolean2329) 0 else 1)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!SizeBoundedSoftCache.aBoolean2329) 0 else 1)
                         Class348_Sub42_Sub14.method3243(i + -11501, class348_sub47)
                     }
                     if (!RenderNode.aBoolean9719) {

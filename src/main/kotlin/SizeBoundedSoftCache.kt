@@ -6,7 +6,7 @@ import kotlin.math.sqrt
 /* Class175 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class175 internal constructor(private var anInt2311: Int) {
+class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
     private val aClass356_2312: Class356
     private var aLinkedNodeListIterator_2316: LinkedNodeListIterator? = LinkedNodeListIterator()
     private val anInt2324: Int

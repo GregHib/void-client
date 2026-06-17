@@ -81,7 +81,7 @@ class Class239_Sub10 : Class239 {
             var i_6_ = 0
             while (Class348_Sub38.anInt7008 > i_6_) {
                 if (GzipDecompressor.aBooleanArray2076!![i_6_]) Class268.aBooleanArray3438!![i_6_] = true
-                Class175.aBooleanArray2326!![i_6_] = GzipDecompressor.aBooleanArray2076!![i_6_]
+                SizeBoundedSoftCache.aBooleanArray2326!![i_6_] = GzipDecompressor.aBooleanArray2076!![i_6_]
                 GzipDecompressor.aBooleanArray2076!![i_6_] = false
                 i_6_++
             }

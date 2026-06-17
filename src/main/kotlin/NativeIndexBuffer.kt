@@ -102,7 +102,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                     var class324 = Class348_Sub36.aClass46_6990!!.method426(var_renderer, 68.toByte())
                     if (class324 == null) class324 = Class262.aClass324_3326!!
                     class324.method2585(
-                        Class175.anIntArray2330,
+                        SizeBoundedSoftCache.anIntArray2330,
                         Class348_Sub36.aClass46_6990!!.anInt709,
                         Class341.aAbstractModelRendererArray4234!!,
                         Class348_Sub36.aClass46_6990!!.anInt700,
@@ -120,7 +120,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                     )
                     method226(Class195.anIntArray5007!![0], Class195.anIntArray5007!![2], Class195.anIntArray5007!![1], 0, Class195.anIntArray5007!![3])
                 } else if (Class21.aClass46_323 != null && (Class348_Sub42_Sub8_Sub2.aClass230_10434 == ParticleEmitterNode.aClass230_186)) {
-                    val i_1_ = (Class262.aClass324_3326!!.method2571(-1, Class356.anInt4383, Class175.anIntArray2330, string, 16777215, 0, Class341.aAbstractModelRendererArray4234, 16 + Class238_Sub1.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, OutputStream_Sub1.aRandom93))
+                    val i_1_ = (Class262.aClass324_3326!!.method2571(-1, Class356.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, Class341.aAbstractModelRendererArray4234, 16 + Class238_Sub1.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, OutputStream_Sub1.aRandom93))
                     method226(ConfigValueProvider.Companion.anInt4911 - -4, (Class369.aFontDefinition_4962!!.method1183(true, string) + i_1_), Class238_Sub1.anInt5832, 0, 16)
                 }
             }

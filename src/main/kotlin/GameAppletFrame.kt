@@ -82,7 +82,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             /* empty */
         }
         synchronized(this) {
-            Class175.aBoolean2329 = Class348_Sub40_Sub16.aBoolean9229
+            SizeBoundedSoftCache.aBoolean2329 = Class348_Sub40_Sub16.aBoolean9229
         }
         method99(93.toByte())
         if (i != -1) aBoolean27 = true
@@ -137,7 +137,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         Class305.aCanvas3869!!.addFocusListener(this)
         Class305.aCanvas3869!!.requestFocus()
         Class348_Sub40_Sub16.aBoolean9229 = true
-        Class175.aBoolean2329 = true
+        SizeBoundedSoftCache.aBoolean2329 = true
         Class49.aBoolean4726 = true
         Class203.aBoolean2674 = false
         Class348_Sub12.aLong6748 = Class62.method599(-106)
