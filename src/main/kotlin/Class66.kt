@@ -4381,7 +4381,7 @@ object Class66 {
                 if (i == 3628) {
                     var string = aStringArray1152!![--anInt1170]!!
                     if (string.startsWith("<img=0>") || string.startsWith("<img=1>")) string = string.substring(7)
-                    anIntArray1149!![anInt1173++] = Class300.method2274(string, -91)
+                    anIntArray1149!![anInt1173++] = ParticleConfigParser.method2274(string, -91)
                     return
                 }
                 if (i == 3629) {

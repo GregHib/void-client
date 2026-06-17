@@ -980,7 +980,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     FogOptionState.anInt6048 = 2
                                     SpriteArchiveLoader.anInt385 = i_73_
                                     Class348.anInt4292 = 0
-                                    Class300.anInt3820++
+                                    ParticleConfigParser.anInt3820++
                                     Class93.anInt1534 = i_72_
                                     val class348_sub47 = (method2148(GlowPostProcessor.aClass351_2512, Class348_Sub23_Sub2.aClass77_9029, -91))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-108, i_75_ - -Class90.regionTileY)

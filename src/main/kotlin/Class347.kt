@@ -56,9 +56,9 @@ class Class347 {
                         if (RegionSceneLoader.aClass46_3701!!.anInt703 < Class318_Sub1.anInt6392) {
                             val i_6_ = i_2_ + -NativeRenderer.anInt8001
                             val i_7_ = -Class348_Sub40_Sub13.anInt9203 + i_3_
-                            if (RegionSceneLoader.aClass46_3701!!.anInt729 < i_6_ || (-RegionSceneLoader.aClass46_3701!!.anInt729 > i_6_) || (i_7_ > RegionSceneLoader.aClass46_3701!!.anInt729) || i_7_ < -RegionSceneLoader.aClass46_3701!!.anInt729) Class300.aBoolean3819 = true
+                            if (RegionSceneLoader.aClass46_3701!!.anInt729 < i_6_ || (-RegionSceneLoader.aClass46_3701!!.anInt729 > i_6_) || (i_7_ > RegionSceneLoader.aClass46_3701!!.anInt729) || i_7_ < -RegionSceneLoader.aClass46_3701!!.anInt729) ParticleConfigParser.aBoolean3819 = true
                         }
-                        if ((RegionSceneLoader.aClass46_3701!!.anObjectArray823 != null) && Class300.aBoolean3819) {
+                        if ((RegionSceneLoader.aClass46_3701!!.anObjectArray823 != null) && ParticleConfigParser.aBoolean3819) {
                             val class348_sub36 = Class348_Sub36()
                             class348_sub36.aClass46_6989 = RegionSceneLoader.aClass46_3701
                             class348_sub36.anInt6984 = i_4_
@@ -67,7 +67,7 @@ class Class347 {
                             method705(class348_sub36)
                         }
                     } else {
-                        if (Class300.aBoolean3819) {
+                        if (ParticleConfigParser.aBoolean3819) {
                             Class341.Companion.method2678(-2049)
                             if (RegionSceneLoader.aClass46_3701!!.anObjectArray692 != null) {
                                 val class348_sub36 = Class348_Sub36()

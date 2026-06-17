@@ -111,7 +111,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
                     Class318_Sub1.anInt6392 = 0
                     ModelDefinitionCache.anInt2872 = i_5_
                     Class318_Sub4.anInt6411 = i
-                    Class300.aBoolean3819 = false
+                    ParticleConfigParser.aBoolean3819 = false
                 }
             }
         }

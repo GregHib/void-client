@@ -195,7 +195,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
         fun method2148(class351: Class351?, class77: Class77?, i: Int): Class348_Sub47 {
             try {
                 anInt6230++
-                val class348_sub47 = Class300.method2273((-103).toByte())!!
+                val class348_sub47 = ParticleConfigParser.method2273((-103).toByte())!!
                 if (i >= -80) aCalendar6221 = null
                 class348_sub47.anInt7122 = class351!!.anInt4323
                 class348_sub47.aClass351_7118 = class351

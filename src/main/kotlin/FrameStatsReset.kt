@@ -228,7 +228,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class5_Sub3.anInt8377 = 0
             NodeDeque.anInt3330 = 0
             Class348_Sub40_Sub26.anInt9353 = 0
-            Class300.anInt3824 = 0
+            ParticleConfigParser.anInt3824 = 0
             RangedGraphicsOptionState.anInt5947 = 0
             CameraDistanceOptionState.anInt5855 = 0
             Class348_Sub40_Sub33.anInt9425 = 0
@@ -350,7 +350,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             DetailLevelOptionState.anInt6117 = 0
             Class341.anInt4229 = 0
             Class361.anInt4447 = 0
-            Class300.anInt3818 = 0
+            ParticleConfigParser.anInt3818 = 0
             Class58.anInt1056 = 0
             Class64_Sub3.anInt5532 = 0
             ParticleSystemState.anInt2194 = 0
@@ -586,7 +586,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub2.anInt10054 = 0
             NativeRenderer.anInt7909 = 0
             RemoveRoofsOptionState.anInt6064 = 0
-            Class300.anInt3815 = 0
+            ParticleConfigParser.anInt3815 = 0
             Class367_Sub4.anInt7310 = 0
             ModelDefinitionLoader.anInt2053 = 0
             Class315.anInt3954 = 0
@@ -2232,7 +2232,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub5_Sub2.anInt10158 = 0
             Class348_Sub31.anInt6914 = 0
             DualMaterialContainer.anInt1634 = 0
-            Class300.anInt3820 = 0
+            ParticleConfigParser.anInt3820 = 0
             Class377.anInt9841 = 0
             Class64_Sub3.anInt5569 = 0
             SceneryDetailOptionState.anInt6084 = 0
@@ -2796,7 +2796,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7594 = 0
             FloatCameraTransform.anInt5739 = 0
             OpenGlRenderer.anInt7663 = 0
-            Class300.anInt3822 = 0
+            ParticleConfigParser.anInt3822 = 0
             Class377.anInt9872 = 0
             Renderer.anInt4565 = 0
             Class348_Sub16_Sub3.anInt8946 = 0
@@ -2979,7 +2979,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TypedRecordTable.anInt3686 = 0
             MediaStreamClient.anInt3191 = 0
             ChatEffectsOptionState.anInt5864 = 0
-            Class300.anInt3816 = 0
+            ParticleConfigParser.anInt3816 = 0
             Class311.anInt3904 = 0
             ConfigFlagUtil.anInt3231 = 0
             Class348_Sub42_Sub19.anInt9698 = 0

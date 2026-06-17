@@ -23,7 +23,7 @@ object ProjectileSpawner {
     @JvmStatic
     fun method1478(bool: Boolean): Class348_Sub47? {
         anInt2673++
-        val class348_sub47 = Class300.method2273((-103).toByte())
+        val class348_sub47 = ParticleConfigParser.method2273((-103).toByte())
         if (bool != true) return null
         class348_sub47!!.anInt7122 = 0
         class348_sub47.aClass351_7118 = null

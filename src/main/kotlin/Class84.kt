@@ -20,23 +20,23 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         anInt1457++
     }
 
-    private fun method820(i: Int, i_15_: Int): Class300 {
+    private fun method820(i: Int, i_15_: Int): ParticleConfigParser {
         anInt1458++
-        var class300: Class300?
+        var particleConfigParser: ParticleConfigParser?
         synchronized(aClass60_1449) {
-            class300 = aClass60_1449.method583(i.toLong(), 116) as Class300?
+            particleConfigParser = aClass60_1449.method583(i.toLong(), 116) as ParticleConfigParser?
         }
-        if (class300 != null) return class300!!
+        if (particleConfigParser != null) return particleConfigParser!!
         val `is`: ByteArray?
         synchronized(aClass45_1460!!) {
             `is` = aClass45_1460.method410(-1860, i_15_, i)
         }
-        class300 = Class300()
-        if (`is` != null) class300!!.method2275(Class348_Sub49(`is`), (-123).toByte())
+        particleConfigParser = ParticleConfigParser()
+        if (`is` != null) particleConfigParser!!.method2275(Class348_Sub49(`is`), (-123).toByte())
         synchronized(aClass60_1449) {
-            aClass60_1449.method582(class300, i.toLong(), (-106).toByte())
+            aClass60_1449.method582(particleConfigParser, i.toLong(), (-106).toByte())
         }
-        return class300!!
+        return particleConfigParser!!
     }
 
     fun method822(i: Byte) {

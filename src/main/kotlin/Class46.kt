@@ -381,7 +381,7 @@ class Class46 {
                 var class64 = Class358.aClass60_4417!!.method583(l, -90) as Class64?
                 if (class64 == null || var_renderer.method3667(class64.ua(), i) != 0) {
                     if (class64 != null) i = var_renderer.method3679(i, class64.ua())
-                    val class124 = Class300.method2277(0, (Class348_Sub40_Sub28.aClass45_9365!!), this.anInt753, -1)
+                    val class124 = ParticleConfigParser.method2277(0, (Class348_Sub40_Sub28.aClass45_9365!!), this.anInt753, -1)
                     if (class124 == null) {
                         Class348_Sub42_Sub13.aBoolean9616 = true
                         return null

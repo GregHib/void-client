@@ -487,7 +487,7 @@ class Class79 {
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
                         synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
-                            modelDefinitions[i_72_] = Class300.method2277(0, (this.aBufferedMessageQueue_1348!!.aClass45_3576!!), anIntArray1402!![i_72_], -1)
+                            modelDefinitions[i_72_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aClass45_3576!!), anIntArray1402!![i_72_], -1)
                         }
                         if (modelDefinitions[i_72_] != null) {
                             if (modelDefinitions[i_72_]!!.anInt1830 < 13) modelDefinitions[i_72_]!!.method1092(2, 115)
@@ -658,7 +658,7 @@ class Class79 {
                 synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
-                        modelDefinitions[i_102_] = Class300.method2277(0, (this.aBufferedMessageQueue_1348!!.aClass45_3576!!), anIntArray1380!![i_102_], -1)
+                        modelDefinitions[i_102_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aClass45_3576!!), anIntArray1380!![i_102_], -1)
                         i_102_++
                     }
                 }

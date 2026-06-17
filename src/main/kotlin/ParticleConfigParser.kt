@@ -1,7 +1,7 @@
 /* Class300 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class300 {
+class ParticleConfigParser {
     var anInt3817: Int
     var anIntArray3821: IntArray? = null
     var anInt3823: Int = -1

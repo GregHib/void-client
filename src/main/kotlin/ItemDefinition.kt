@@ -95,10 +95,10 @@ class ItemDefinition {
             i_0_ = anInt2822
         }
         if (i_0_ == -1) return null
-        var class124 = Class300.method2277(0, this.aModelHeaderCache_2761!!.aClass45_3268!!, i_0_, -1)
+        var class124 = ParticleConfigParser.method2277(0, this.aModelHeaderCache_2761!!.aClass45_3268!!, i_0_, -1)
         if ((class124!!.anInt1830.inv()) > i) class124.method1092(2, 54)
         if (i_1_ != -1) {
-            val class124_2_ = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), i_1_, -1)
+            val class124_2_ = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), i_1_, -1)
             if (class124_2_!!.anInt1830 < 13) class124_2_.method1092(2, i xor 0x78.inv())
             val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_2_)
             class124 = ModelDefinition(modelDefinitions, 2)
@@ -196,16 +196,16 @@ class ItemDefinition {
             i_14_ = anInt2760
         }
         if (i == -1) return null
-        var class124 = Class300.method2277(0, this.aModelHeaderCache_2761!!.aClass45_3268!!, i, -1)
+        var class124 = ParticleConfigParser.method2277(0, this.aModelHeaderCache_2761!!.aClass45_3268!!, i, -1)
         if (class124!!.anInt1830 < 13) class124.method1092(2, 64)
         if (i_14_ != -1) {
-            val class124_16_ = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), i_14_, -1)
+            val class124_16_ = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), i_14_, -1)
             if (class124_16_!!.anInt1830 < 13) class124_16_.method1092(2, 89)
             if (i_15_ == -1) {
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_)
                 class124 = ModelDefinition(modelDefinitions, 2)
             } else {
-                val class124_17_ = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), i_15_, -1)
+                val class124_17_ = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), i_15_, -1)
                 if (class124_17_!!.anInt1830 < 13) class124_17_.method1092(2, 109)
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_, class124_17_)
                 class124 = ModelDefinition(modelDefinitions, 3)
@@ -256,7 +256,7 @@ class ItemDefinition {
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x1
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x2
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x4
-                val class124 = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), anInt2756, -1)
+                val class124 = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), anInt2756, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 97)
                 class64 = var_renderer!!.method3625(class124, i_28_, (this.aModelHeaderCache_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
@@ -327,7 +327,7 @@ class ItemDefinition {
     fun method1562(i: Int, bool: Boolean, i_37_: Int, var_renderer: Renderer?, var_renderer_38_: Renderer?, class324: Class324?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_39_: Int, i_40_: Byte, i_41_: Int): IntArray? {
         try {
             anInt2806++
-            val class124 = Class300.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), anInt2756, i_40_.toInt() xor 0x65)
+            val class124 = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), anInt2756, i_40_.toInt() xor 0x65)
             if (class124 == null) return null
             if (class124.anInt1830 < 13) class124.method1092(2, i_40_.toInt() xor 0xb.inv())
             if (aShortArray2777 != null) {
