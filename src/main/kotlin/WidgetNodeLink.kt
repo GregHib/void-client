@@ -22,7 +22,7 @@ class WidgetNodeLink {
         @JvmField
         var anIntArray2039: IntArray? = intArrayOf(1, 0, -1, 0)
         var anInt2041: Int = 0
-        var aClass196_2042: Class196? = Class196()
+        var aSingletonMarker_2042: SingletonMarker? = SingletonMarker()
         var anInt2043: Int = 0
 
         @JvmStatic
@@ -37,7 +37,7 @@ class WidgetNodeLink {
         fun method1198(i: Int) {
             if (i == 1010) {
                 anIntArray2039 = null
-                aClass196_2042 = null
+                aSingletonMarker_2042 = null
             }
         }
     }

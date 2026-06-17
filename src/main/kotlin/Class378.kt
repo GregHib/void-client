@@ -390,7 +390,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3898(i: Int) {
         if (i != 12) method3634(null, null)
-        if (this.aClass196_8184.method1450(-32)) this.aClass101_Sub2_8083.method918(aFloatArray9797!!, 0)
+        if (this.aSingletonMarker_8184.method1450(-32)) this.aClass101_Sub2_8083.method918(aFloatArray9797!!, 0)
         else {
             aFloatArray9797!![1] = 0.0f
             aFloatArray9797!![7] = 0.0f

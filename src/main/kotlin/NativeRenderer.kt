@@ -159,7 +159,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var anInt8181: Int
     var aBoolean8182: Boolean = false
     var anInt8183: Int
-    var aClass196_8184: Class196
+    var aSingletonMarker_8184: SingletonMarker
     @JvmField
     var aFloat8185: Float = 0f
     var aFloat8186: Float
@@ -524,7 +524,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 this.aClass101_Sub2_8083.method934(64.toByte())
                 aClass101_Sub2_8084.method931(-25519, this.aClass101_Sub2_8083)
                 this.aClass101_Sub2_8082.method931(-25519, this.aClass101_Sub2_8080)
-                if (!this.aClass196_8184.method1450(-112)) break
+                if (!this.aSingletonMarker_8184.method1450(-112)) break
                 method3913(107.toByte())
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, "wga.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
@@ -637,7 +637,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aBoolean8097 = false
         anInt7893++
         method3906(122.toByte())
-        if (HintIconState.aClass196_2372 == this.aClass196_8184) method3929(true)
+        if (HintIconState.aSingletonMarker_2372 == this.aSingletonMarker_8184) method3929(true)
     }
 
     open fun method3832(i: Int, i_61_: Byte): Class367? {
@@ -704,7 +704,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     }
 
     private fun method3836(i: Int) {
-        if (WidgetNodeLink.aClass196_2042 == this.aClass196_8184) {
+        if (WidgetNodeLink.aSingletonMarker_2042 == this.aSingletonMarker_8184) {
             val f = method3858(false)
             this.aClass101_Sub2_8074.method920(f, false, 0.0f, f)
         }
@@ -780,9 +780,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     }
 
     private fun method3845(i: Byte) {
-        if (WidgetNodeLink.aClass196_2042 != this.aClass196_8184) {
-            val class196 = this.aClass196_8184
-            this.aClass196_8184 = WidgetNodeLink.aClass196_2042!!
+        if (WidgetNodeLink.aSingletonMarker_2042 != this.aSingletonMarker_8184) {
+            val class196 = this.aSingletonMarker_8184
+            this.aSingletonMarker_8184 = WidgetNodeLink.aSingletonMarker_2042!!
             if (class196.method1450(-48)) method3913((-121).toByte())
             method3919(20794)
             this.aFloatArray8135 = aFloatArray8120
@@ -798,13 +798,13 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aBoolean8112 = false
         val i_75_ = -77 / ((i - 78) / 48)
         method3949((-58).toByte())
-        if (Class46.aClass196_838 == this.aClass196_8184) method3929(true)
+        if (Class46.aSingletonMarker_838 == this.aSingletonMarker_8184) method3929(true)
     }
 
     private fun method3847(i: Int) {
-        if (Class46.aClass196_838 != this.aClass196_8184) {
-            val class196 = this.aClass196_8184
-            this.aClass196_8184 = Class46.aClass196_838!!
+        if (Class46.aSingletonMarker_838 != this.aSingletonMarker_8184) {
+            val class196 = this.aSingletonMarker_8184
+            this.aSingletonMarker_8184 = Class46.aSingletonMarker_838!!
             if (!class196.method1450(-45)) method3913(94.toByte())
             method3949((-113).toByte())
             this.aFloatArray8135 = aFloatArray8157
@@ -1503,9 +1503,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private fun method3895(i: Int) {
         anInt8035++
         if (i != -8) method3644()
-        if (HintIconState.aClass196_2372 != this.aClass196_8184) {
-            val class196 = this.aClass196_8184
-            this.aClass196_8184 = HintIconState.aClass196_2372!!
+        if (HintIconState.aSingletonMarker_2372 != this.aSingletonMarker_8184) {
+            val class196 = this.aSingletonMarker_8184
+            this.aSingletonMarker_8184 = HintIconState.aSingletonMarker_2372!!
             if (!class196.method1450(-90)) method3913(60.toByte())
             method3906(118.toByte())
             this.aFloatArray8135 = aFloatArray8152
@@ -1909,7 +1909,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7904++
         if (i != 1) aStream8088 = null
         aBoolean8127 = false
-        if (WidgetNodeLink.aClass196_2042 == this.aClass196_8184) {
+        if (WidgetNodeLink.aSingletonMarker_2042 == this.aSingletonMarker_8184) {
             method3919(i + 20793)
             method3929(true)
         }
@@ -2210,9 +2210,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     abstract fun method3931(bool: Boolean, class304: Class304?, class68: Class68?): Boolean
 
     fun method3932(i: Byte) {
-        if (this.aClass196_8184 != Class219.aClass196_2864) {
-            val class196 = this.aClass196_8184
-            this.aClass196_8184 = Class219.aClass196_2864!!
+        if (this.aSingletonMarker_8184 != Class219.aSingletonMarker_2864) {
+            val class196 = this.aSingletonMarker_8184
+            this.aSingletonMarker_8184 = Class219.aSingletonMarker_2864!!
             if (class196.method1450(-116)) method3913((-100).toByte())
             anInt8100 = anInt8100 and 0x1f.inv()
             this.aFloatArray8135 = aFloatArray8111
@@ -2309,7 +2309,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 for (i_281_ in 0..<i) this.aClass348_Sub1Array8132[i_281_] = class348_sub1s!![i_281_]
                 anInt7988++
                 this.anInt8151 = i
-                if (!this.aClass196_8184.method1450(-94)) break
+                if (!this.aSingletonMarker_8184.method1450(-94)) break
                 method3823(51.toByte())
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("wga.FF(" + i + ',' + (if (class348_sub1s != null) "{...}" else "null") + ')'))
@@ -2486,7 +2486,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aFloat8174 = -1.0f
         this.aFloatArray8170 = floatArrayOf(0.0f, 0.0f, 1.0f, 0.0f)
         this.anInt8181 = 0
-        this.aClass196_8184 = Class219.aClass196_2864!!
+        this.aSingletonMarker_8184 = Class219.aSingletonMarker_2864!!
         this.aFloat8180 = 1.0f
         this.aFloat8186 = -1.0f
         anInt8172 = 16777215

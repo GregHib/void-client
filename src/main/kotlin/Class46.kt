@@ -912,7 +912,7 @@ class Class46 {
         @JvmField
         var anInt837: Int = 0
         @JvmField
-        var aClass196_838: Class196?
+        var aSingletonMarker_838: SingletonMarker?
 
         @JvmStatic
         fun method424(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, `is`: Array<Array<ByteArray?>?>?, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
@@ -991,7 +991,7 @@ class Class46 {
         @JvmStatic
         fun method442(i: Byte) {
             if (i <= -8) {
-                aClass196_838 = null
+                aSingletonMarker_838 = null
                 aByteArray821 = null
             }
         }
@@ -1005,7 +1005,7 @@ class Class46 {
                     i_70_++
                 }
             }
-            aClass196_838 = Class196()
+            aSingletonMarker_838 = SingletonMarker()
         }
     }
 }

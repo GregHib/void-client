@@ -528,7 +528,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         if (aBoolean9911) glPopMatrix()
         anInt9840++
         if (i != 1) method3950(69)
-        if (this.aClass196_8184.method1450(-98)) {
+        if (this.aSingletonMarker_8184.method1450(-98)) {
             if (!aBoolean9914) {
                 glLoadMatrixf(this.aClass101_Sub2_8083.method918(Class233.aFloatArray3015!!, 0), 0)
                 aBoolean9914 = true

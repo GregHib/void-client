@@ -86,7 +86,7 @@ object GroundItemRenderState {
         anInt1658++
         val class190 = Class262.aModelLightingConfigArrayArray3335!![i]!![i_20_]
         if (class190 != null) {
-            Class196.anInt2601 = class190.anInt2535
+            SingletonMarker.anInt2601 = class190.anInt2535
             Class21.anInt325 = class190.anInt2538
             Class318_Sub1_Sub3_Sub1.anInt10023 = class190.anInt2548
         }

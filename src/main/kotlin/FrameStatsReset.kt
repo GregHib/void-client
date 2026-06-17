@@ -3187,7 +3187,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlElementArrayBuffer.anInt4842 = 0
             GameAppletFrame.anInt32 = 0
             ScriptCompilerThread.anInt1726 = 0
-            Class196.anInt2600 = 0
+            SingletonMarker.anInt2600 = 0
             Class202.anInt2662 = 0
             Class66.anInt1157 = 0
             Class251.anInt3235 = 0
@@ -3997,7 +3997,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class369_Sub3_Sub1.anInt10176 = 0
             NativeTerrainTile.anInt8316 = 0
             Class294.anInt5044 = 0
-            Class196.anInt2599 = 0
+            SingletonMarker.anInt2599 = 0
             CompositeNpcModelBuilder.anInt2107 = 0
             Class348_Sub16_Sub3.anInt8890 = 0
             Class55.anInt986 = 0

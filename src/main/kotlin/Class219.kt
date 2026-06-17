@@ -73,7 +73,7 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     companion object {
         var anInt2863: Int = 0
-        var aClass196_2864: Class196? = Class196()
+        var aSingletonMarker_2864: SingletonMarker? = SingletonMarker()
         var anInt2865: Int = 0
         var anInt2867: Int = 0
         @JvmField
@@ -257,7 +257,7 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
 
         @JvmStatic
         fun method1604(i: Int) {
-            aClass196_2864 = null
+            aSingletonMarker_2864 = null
             aClass223_2868 = null
             if (i != 11868) anInt2872 = -94
         }
