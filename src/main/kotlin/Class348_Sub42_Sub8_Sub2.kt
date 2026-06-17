@@ -1344,7 +1344,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class218.aIntRange_2860) {
+            if (Class348_Sub3.aIntRange_6584 == MapSceneIconDef.aIntRange_2860) {
                 var i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
                 val i_169_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)

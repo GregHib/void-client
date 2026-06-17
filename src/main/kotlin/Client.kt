@@ -116,7 +116,7 @@ import SoundEnvelope.Companion.method1543
 import CompressedBlockDecoder.method1551
 import ItemDefinition.Companion.method1564
 import ParticleAmountCache.Companion.method1585
-import Class218.Companion.method1594
+import MapSceneIconDef.Companion.method1594
 import Class219.Companion.method1600
 import Class219.Companion.method1604
 import Class22.Companion.method294
@@ -2255,7 +2255,7 @@ class Client : GameAppletFrame() {
                                         }
                                         continue
                                     }
-                                    if (class46.anInt765 == Class218.anInt2861) {
+                                    if (class46.anInt765 == MapSceneIconDef.anInt2861) {
                                         if (bool_53_) method2676(class46.anInt709, class46.anInt789, (i_51_ + Class258_Sub4.aClass373_8552!!.method3597(true) - i_43_), 58.toByte(), (i_52_ + Class258_Sub4.aClass373_8552!!.method3594(111.toByte()) - i_44_))
                                         continue
                                     }

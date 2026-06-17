@@ -226,7 +226,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             i_18_++
                                             continue
                                         }
-                                        if (Class218.anInt2861 == class46.anInt765) {
+                                        if (MapSceneIconDef.anInt2861 == class46.anInt765) {
                                             Class361.method3498(class46.anInt789, Class348_Sub8.aRenderer6654, i_24_, class46.anInt709, true, i_25_)
                                             GzipDecompressor.aBooleanArray2076!![i_23_] = true
                                             Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)

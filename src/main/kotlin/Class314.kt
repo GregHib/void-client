@@ -28,7 +28,7 @@ abstract class Class314 {
         fun method2336(class51: Class51, i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             anInt3940++
             if (i_3_ > -126) anInt3941 = 15
-            var class348_sub9 = Class218.aClass262_2859!!.method1995(4) as? Class348_Sub9?
+            var class348_sub9 = MapSceneIconDef.aClass262_2859!!.method1995(4) as? Class348_Sub9?
             while (class348_sub9 != null) {
                 if (i_2_ == class348_sub9.anInt6693 && (class348_sub9.anInt6678 == i shl 9) && (i_1_ shl 9 == class348_sub9.anInt6689) && (class348_sub9.aClass51_6695!!.anInt941 == class51.anInt941)) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
@@ -42,7 +42,7 @@ abstract class Class314 {
                     class348_sub9.method2715(125.toByte())
                     break
                 }
-                class348_sub9 = Class218.aClass262_2859!!.method1990(123.toByte()) as? Class348_Sub9?
+                class348_sub9 = MapSceneIconDef.aClass262_2859!!.method1990(123.toByte()) as? Class348_Sub9?
             }
         }
 

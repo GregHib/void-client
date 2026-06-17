@@ -581,12 +581,12 @@ open class Class75 {
                     val class51: Class51 = aClass263_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
                     val i_123_ = class51.anInt875
                     if (i_123_ != -1) {
-                        val class218: Class218? = aTextureDefinitionLoader_1242!!.method1173(31.toByte(), i_123_)
-                        val class105 = class218!!.method1596((if (class51.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_renderer!!)
+                        val mapSceneIconDef: MapSceneIconDef? = aTextureDefinitionLoader_1242!!.method1173(31.toByte(), i_123_)
+                        val class105 = mapSceneIconDef!!.method1596((if (class51.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_renderer!!)
                         if (class105 != null) {
                             var i_124_ = i_119_ * class105.method966() shr 2
                             var i_125_ = i_120_ * class105.method980() shr 2
-                            if (class218.aBoolean2854) {
+                            if (mapSceneIconDef.aBoolean2854) {
                                 var i_126_ = class51.anInt961
                                 var i_127_ = class51.anInt926
                                 if ((is_121_!![i_122_].toInt() shr 6 and 0x1) == 1) {
@@ -598,7 +598,7 @@ open class Class75 {
                                 i_125_ = i_127_ * i_120_
                             }
                             if (i_124_ != 0 && i_125_ != 0) {
-                                if (class218.anInt2856 != 0) class105.method970(i, i_118_ - i_125_ + i_120_, i_124_, i_125_, 0, (0xffffff.inv() or (class218.anInt2856)), 1)
+                                if (mapSceneIconDef.anInt2856 != 0) class105.method970(i, i_118_ - i_125_ + i_120_, i_124_, i_125_, 0, (0xffffff.inv() or (mapSceneIconDef.anInt2856)), 1)
                                 else class105.method973(i, i_118_ - i_125_ + i_120_, i_124_, i_125_)
                             }
                         }

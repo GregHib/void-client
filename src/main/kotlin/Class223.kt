@@ -100,7 +100,7 @@ class Class223 internal constructor(i: Int, var anInt2896: Int) {
                         class348_sub9.method2781(21.toByte())
                     }
                     if (class348_sub9.anIntArray6697 != null) class348_sub9.anInt6670 = (class348_sub9.anInt6680 - -((-class348_sub9.anInt6680 + class348_sub9.anInt6668).toDouble() * Math.random()).toInt())
-                    Class218.aClass262_2859!!.method1999(class348_sub9, -20180)
+                    MapSceneIconDef.aClass262_2859!!.method1999(class348_sub9, -20180)
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ad.B(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (player != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i_5_ + ')'))

@@ -2898,11 +2898,11 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     val interface10_42_ = Class82.method813(i_40_, i_37_, i) as Interface10?
                     if (interface10 != null && i_36_ != 2) {
                         if (interface10 is Class318_Sub1_Sub4_Sub2) interface10.aClass235_10115!!.method1671(262144, i_35_)
-                        else Class218.method1591(i_37_, 89, i_41_, i_35_, interface10.method42(-76), i_36_, i, i_38_, i_40_)
+                        else MapSceneIconDef.method1591(i_37_, 89, i_41_, i_35_, interface10.method42(-76), i_36_, i, i_38_, i_40_)
                     }
                     if (interface10_42_ != null) {
                         if (interface10_42_ is Class318_Sub1_Sub4_Sub2) interface10_42_.aClass235_10115!!.method1671(262144, i_35_)
-                        else Class218.method1591(i_37_, 92, i_41_, i_35_, interface10_42_.method42(-71), i_36_, i, i_38_, i_40_)
+                        else MapSceneIconDef.method1591(i_37_, 92, i_41_, i_35_, interface10_42_.method42(-71), i_36_, i, i_38_, i_40_)
                     }
                 } else if (i_41_ == 1) {
                     val interface10 = (method3135(i_40_, i_37_, i) as Interface10?)
@@ -2912,27 +2912,27 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                             val i_43_ = interface10.method42(-83)
                             if (i_36_ != 4 && i_36_ != 5) {
                                 if (i_36_ != 6) {
-                                    if (i_36_ == 7) Class218.method1591(i_37_, 50, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and 2 + i_38_), i_40_)
+                                    if (i_36_ == 7) MapSceneIconDef.method1591(i_37_, 50, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and 2 + i_38_), i_40_)
                                     else if (i_36_ == 8) {
-                                        Class218.method1591(i_37_, 116, i_41_, i_35_, i_43_, 4, i, 4 + i_38_, i_40_)
-                                        Class218.method1591(i_37_, 91, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and i_38_ - -2), i_40_)
+                                        MapSceneIconDef.method1591(i_37_, 116, i_41_, i_35_, i_43_, 4, i, 4 + i_38_, i_40_)
+                                        MapSceneIconDef.method1591(i_37_, 91, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and i_38_ - -2), i_40_)
                                     }
-                                } else Class218.method1591(i_37_, 22, i_41_, i_35_, i_43_, 4, i, i_38_ + 4, i_40_)
-                            } else Class218.method1591(i_37_, 86, i_41_, i_35_, i_43_, 4, i, i_38_, i_40_)
+                                } else MapSceneIconDef.method1591(i_37_, 22, i_41_, i_35_, i_43_, 4, i, i_38_ + 4, i_40_)
+                            } else MapSceneIconDef.method1591(i_37_, 86, i_41_, i_35_, i_43_, 4, i, i_38_, i_40_)
                         }
                     }
                 } else if (i_41_ == 2) {
                     val interface10 = ((ClickFeedbackTask.method1353(i_40_, i_37_, i, (if (aClass8211 != null) aClass8211 else (Interface10::class.java.also { aClass8211 = it })))) as Interface10?)
                     if (interface10 != null) {
                         if (i_36_ == 11) i_36_ = 10
-                        if (interface10 !is Class318_Sub1_Sub3_Sub2) Class218.method1591(i_37_, 43, i_41_, i_35_, interface10.method42(-107), i_36_, i, i_38_, i_40_)
+                        if (interface10 !is Class318_Sub1_Sub3_Sub2) MapSceneIconDef.method1591(i_37_, 43, i_41_, i_35_, interface10.method42(-107), i_36_, i, i_38_, i_40_)
                         else interface10.aClass235_10045!!.method1671(262144, i_35_)
                     }
                 } else if (i_41_ == 3) {
                     val interface10 = (method2878(i_40_, i_37_, i) as Interface10?)
                     if (interface10 != null) {
                         if (interface10 is Class318_Sub1_Sub1_Sub1) interface10.aClass235_9955!!.method1671(262144, i_35_)
-                        else Class218.method1591(i_37_, 28, i_41_, i_35_, interface10.method42(-123), i_36_, i, i_38_, i_40_)
+                        else MapSceneIconDef.method1591(i_37_, 28, i_41_, i_35_, interface10.method42(-123), i_36_, i, i_38_, i_40_)
                     }
                 }
             }

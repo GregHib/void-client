@@ -10,25 +10,25 @@ class TextureDefinitionLoader internal constructor(class230: Class230?, i: Int, 
     private val aClass45_1971: Class45?
     @JvmField
     var aClass60_1976: Class60 = Class60(64)
-    fun method1173(i: Byte, i_0_: Int): Class218? {
+    fun method1173(i: Byte, i_0_: Int): MapSceneIconDef? {
         anInt1964++
-        var class218: Class218?
+        var mapSceneIconDef: MapSceneIconDef?
         synchronized(aClass60_1963) {
-            class218 = aClass60_1963.method583(i_0_.toLong(), 118) as Class218?
+            mapSceneIconDef = aClass60_1963.method583(i_0_.toLong(), 118) as MapSceneIconDef?
         }
-        if (class218 != null) return class218
+        if (mapSceneIconDef != null) return mapSceneIconDef
         val `is`: ByteArray?
         synchronized(aClass45_1971!!) {
             `is` = aClass45_1971.method410(i + -1891, 34, i_0_)
         }
-        class218 = Class218()
+        mapSceneIconDef = MapSceneIconDef()
         if (i.toInt() != 31) return null
-        class218.aTextureDefinitionLoader_2851 = this
-        if (`is` != null) class218.method1597((-114).toByte(), Class348_Sub49(`is`))
+        mapSceneIconDef.aTextureDefinitionLoader_2851 = this
+        if (`is` != null) mapSceneIconDef.method1597((-114).toByte(), Class348_Sub49(`is`))
         synchronized(aClass60_1963) {
-            aClass60_1963.method582(class218, i_0_.toLong(), (-108).toByte())
+            aClass60_1963.method582(mapSceneIconDef, i_0_.toLong(), (-108).toByte())
         }
-        return class218
+        return mapSceneIconDef
     }
 
     fun method1174(i: Byte) {

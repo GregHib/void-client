@@ -711,7 +711,7 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
         fun method921(i: Byte, bool: Boolean) {
             if (i.toInt() == 99) {
-                var class348_sub9 = Class218.aClass262_2859!!.method1995(4) as? Class348_Sub9
+                var class348_sub9 = MapSceneIconDef.aClass262_2859!!.method1995(4) as? Class348_Sub9
                 while (class348_sub9 != null) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
                         Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
@@ -722,7 +722,7 @@ class FloatCameraTransform : AbstractCameraTransform() {
                         class348_sub9.aClass348_Sub16_Sub5_6673 = null
                     }
                     class348_sub9.method2715(94.toByte())
-                    class348_sub9 = Class218.aClass262_2859!!.method1990(120.toByte()) as? Class348_Sub9
+                    class348_sub9 = MapSceneIconDef.aClass262_2859!!.method1990(120.toByte()) as? Class348_Sub9
                 }
                 anInt5739++
                 if (bool) {

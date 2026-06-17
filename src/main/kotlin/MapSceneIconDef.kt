@@ -5,7 +5,7 @@ import Class79.Companion.method802
 /* Class218 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class218 {
+class MapSceneIconDef {
     var aTextureDefinitionLoader_2851: TextureDefinitionLoader? = null
     @JvmField
     var anInt2853: Int = 0

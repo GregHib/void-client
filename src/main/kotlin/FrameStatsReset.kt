@@ -592,7 +592,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class315.anInt3954 = 0
             MinimapDrawController.anInt1609 = 0
             Class292.anInt4802 = 0
-            Class218.anInt2850 = 0
+            MapSceneIconDef.anInt2850 = 0
             Class377.anInt9864 = 0
             IntRange.anInt1746 = 0
             Class263.anInt3348 = 0
@@ -1805,7 +1805,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub5.anInt5885 = 0
             Class35.anInt484 = 0
             Class239_Sub15.anInt5996 = 0
-            Class218.anInt2858 = 0
+            MapSceneIconDef.anInt2858 = 0
             OpenGlRenderer.anInt7609 = 0
             OpenGlRenderer.anInt7604 = 0
             Class348_Sub42_Sub16.anInt9666 = 0
@@ -2317,7 +2317,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7198 = 0
             AbstractMenuEntry.anInt1705 = 0
             Class373_Sub2.anInt7455 = 0
-            Class218.anInt2857 = 0
+            MapSceneIconDef.anInt2857 = 0
             Class84.anInt1459 = 0
             Class76.anInt1281 = 0
             NativeRenderer.anInt8033 = 0
@@ -2360,7 +2360,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub5.anInt6626 = 0
             Class232.anInt3007 = 0
             Class25.anInt372 = 0
-            Class218.anInt2852 = 0
+            MapSceneIconDef.anInt2852 = 0
             Class55.anInt992 = 0
             Npc.anInt10509 = 0
             NativeRenderer.anInt7913 = 0
@@ -2935,7 +2935,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub21.anInt6057 = 0
             Class348_Sub40.anInt7030 = 0
             NativeRenderer.anInt7921 = 0
-            Class218.anInt2855 = 0
+            MapSceneIconDef.anInt2855 = 0
             VarbitDefLoader.anInt2592 = 0
             Class341.anInt4232 = 0
             Class262.anInt3329 = 0
@@ -3716,7 +3716,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class358.anInt4413 = 0
             ModelDefinition.anInt1838 = 0
             Class348_Sub23_Sub2.anInt9013 = 0
-            Class218.anInt2849 = 0
+            MapSceneIconDef.anInt2849 = 0
             Class285_Sub2.anInt8497 = 0
             Class312.anInt3924 = 0
             Class348_Sub40_Sub31.anInt9413 = 0
