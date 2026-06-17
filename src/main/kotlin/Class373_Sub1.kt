@@ -4,9 +4,9 @@ import java.awt.event.*
 class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseListener, MouseMotionListener, MouseWheelListener {
     private var anInt7416 = 0
     private var anInt7417 = 0
-    private var aClass262_7418: Class262? = Class262()
+    private var aNodeDeque_7418: NodeDeque? = NodeDeque()
     private var anInt7419 = 0
-    private var aClass262_7420: Class262? = Class262()
+    private var aNodeDeque_7420: NodeDeque? = NodeDeque()
     private var anInt7421 = 0
     private var anInt7422 = 0
     private var anInt7423 = 0
@@ -26,7 +26,7 @@ class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseLis
         class348_sub45_sub1.aLong9726 = Class62.method599(-115)
         class348_sub45_sub1.anInt9727 = i_2_
         if (bool) mouseDragged(null)
-        aClass262_7420!!.method1999(class348_sub45_sub1, -20180)
+        aNodeDeque_7420!!.method1999(class348_sub45_sub1, -20180)
     }
 
     @Synchronized
@@ -101,7 +101,7 @@ class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseLis
 
     override fun method3596(i: Int): Class348_Sub45? {
         if (i != 0) mouseReleased(null)
-        return aClass262_7418!!.method1997(8) as Class348_Sub45?
+        return aNodeDeque_7418!!.method1997(8) as Class348_Sub45?
     }
 
     @Synchronized
@@ -122,8 +122,8 @@ class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseLis
             anInt7419 = 0
             anInt7416 = anInt7419
             anInt7417 = anInt7416
-            aClass262_7418 = null
-            aClass262_7420 = null
+            aNodeDeque_7418 = null
+            aNodeDeque_7420 = null
         }
     }
 
@@ -133,10 +133,10 @@ class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseLis
         anInt7417 = anInt7423
         anInt7419 = anInt7422
         if (i == 0) {
-            val class262 = aClass262_7418
-            aClass262_7418 = aClass262_7420
-            aClass262_7420 = class262
-            aClass262_7420!!.method1996(127)
+            val class262 = aNodeDeque_7418
+            aNodeDeque_7418 = aNodeDeque_7420
+            aNodeDeque_7420 = class262
+            aNodeDeque_7420!!.method1996(127)
         }
     }
 

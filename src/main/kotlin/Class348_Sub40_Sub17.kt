@@ -90,13 +90,13 @@ open class Class348_Sub40_Sub17 : Class348_Sub40(0, false) {
         @JvmField
         var anInt9239: Int = 0
         @JvmField
-        var aClass262_9240: Class262? = Class262()
+        var aNodeDeque_9240: NodeDeque? = NodeDeque()
         @JvmField
         var aBoolean9242: Boolean = false
         @JvmStatic
         fun method3091(bool: Boolean) {
             aClass351_9234 = null
-            aClass262_9240 = null
+            aNodeDeque_9240 = null
             if (bool != true) method3091(false)
         }
     }

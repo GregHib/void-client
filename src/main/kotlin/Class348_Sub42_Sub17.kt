@@ -36,7 +36,7 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
             }
         }
         if (!bool) return false
-        val class262 = Class262()
+        val nodeDeque = NodeDeque()
         val `is`: IntArray?
         synchronized(RectangleRegion.aClass45_1940!!) {
             val i_4_ = RectangleRegion.aClass45_1940!!.method407(0, anInt9669)
@@ -50,19 +50,19 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
             class348_sub49.anInt7197 = 1
             val i_7_ = class348_sub49.readUnsignedShort(842397944) //
             var class348_sub33: Class348_Sub33? = null
-            var class348_sub33_8_ = class262.method1995(4) as Class348_Sub33?
+            var class348_sub33_8_ = nodeDeque.method1995(4) as Class348_Sub33?
             while (class348_sub33_8_ != null) {
                 if (class348_sub33_8_.anInt6958 == i_7_) {
                     class348_sub33 = class348_sub33_8_
                     break
                 }
-                class348_sub33_8_ = class262.method1990(78.toByte()) as Class348_Sub33?
+                class348_sub33_8_ = nodeDeque.method1990(78.toByte()) as Class348_Sub33?
             }
             if (class348_sub33 == null) {
                 synchronized(GlElementArrayBuffer.aClass45_4843!!) {
                     class348_sub33 = Class348_Sub33(i_7_, GlElementArrayBuffer.aClass45_4843!!.method415(73.toByte(), i_7_))
                 }
-                class262.method1999(class348_sub33!!, -20180)
+                nodeDeque.method1999(class348_sub33!!, -20180)
             }
             this.aClass4Array9673!![`is`[i_5_]] = Class4(is_6_!!, class348_sub33)
         }
@@ -120,10 +120,10 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
 
         fun method3270(i: Byte) {
             if (i <= 106) method3266(null, -91, null)
-            var class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as Class348_Sub42_Sub12?)
+            var class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as Class348_Sub42_Sub12?)
             while (class348_sub42_sub12 != null) {
                 if (method1796(69, class348_sub42_sub12.anInt9608)) method202(6, class348_sub42_sub12)
-                class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(115.toByte()) as Class348_Sub42_Sub12?
+                class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(115.toByte()) as Class348_Sub42_Sub12?
             }
             anInt9680++
         }

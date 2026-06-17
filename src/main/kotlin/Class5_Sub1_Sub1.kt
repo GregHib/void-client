@@ -20,7 +20,7 @@ class Class5_Sub1_Sub1 internal constructor(class45: Class45, class45_0_: Class4
         @JvmField
         var anInt9930: Int = 0
         @JvmField
-        var aClass262_9931: Class262? = Class262()
+        var aNodeDeque_9931: NodeDeque? = NodeDeque()
         @JvmField
         var anIntArray9932: IntArray? = IntArray(1000)
 
@@ -28,7 +28,7 @@ class Class5_Sub1_Sub1 internal constructor(class45: Class45, class45_0_: Class4
         fun method190(i: Byte) {
             if (i < 23) anIntArray9932 = null
             aSpriteImageArray9929 = null
-            aClass262_9931 = null
+            aNodeDeque_9931 = null
             anIntArray9932 = null
         }
     }

@@ -3546,13 +3546,13 @@ class Class64_Sub1 : Class64 {
                             val f_866_ = ((i_859_.toFloat() * fs_847_[3] + i_860_.toFloat() * fs_847_[4] + i_861_.toFloat() * fs_847_[5]) / f_863_)
                             val f_867_ = ((i_859_.toFloat() * fs_847_[6] + i_860_.toFloat() * fs_847_[7] + i_861_.toFloat() * fs_847_[8]) / f_864_)
                             val i_868_ = Class331.method2635(f_866_, false, f_867_, f_865_)
-                            Class262.method1991(f_852_, f, fs_847_, anIntArray5312!![i_841_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_841_.toInt()], anIntArray5332!![i_841_.toInt()], f_851_, fs, i_845_, i_868_)
+                            NodeDeque.method1991(f_852_, f, fs_847_, anIntArray5312!![i_841_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_841_.toInt()], anIntArray5332!![i_841_.toInt()], f_851_, fs, i_845_, i_868_)
                             fs_807_[0] = fs[0]
                             fs_808_[0] = fs[1]
-                            Class262.method1991(f_852_, f, fs_847_, anIntArray5312!![i_842_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_842_.toInt()], anIntArray5332!![i_842_.toInt()], f_851_, fs, i_845_, i_868_)
+                            NodeDeque.method1991(f_852_, f, fs_847_, anIntArray5312!![i_842_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_842_.toInt()], anIntArray5332!![i_842_.toInt()], f_851_, fs, i_845_, i_868_)
                             fs_807_[1] = fs[0]
                             fs_808_[1] = fs[1]
-                            Class262.method1991(f_852_, f, fs_847_, anIntArray5312!![i_843_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_843_.toInt()], anIntArray5332!![i_843_.toInt()], f_851_, fs, i_845_, i_868_)
+                            NodeDeque.method1991(f_852_, f, fs_847_, anIntArray5312!![i_843_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_843_.toInt()], anIntArray5332!![i_843_.toInt()], f_851_, fs, i_845_, i_868_)
                             fs_807_[2] = fs[0]
                             fs_808_[2] = fs[1]
                         } else if (i_810_.toInt() == 3) {

@@ -93,7 +93,7 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
             if (bool != true) method1208(102)
             val class348_sub42_sub14 = Class348_Sub42_Sub14(i, class348_sub49.readString(88.toByte()), class348_sub49.readString(120.toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readUnsignedByte(255) == 1, class348_sub49.readUnsignedByte(255), class348_sub49.readUnsignedByte(255))
             val i_5_ = class348_sub49.readUnsignedByte(255)
-            for (i_6_ in 0..<i_5_) class348_sub42_sub14.aClass262_9629!!.method1999(
+            for (i_6_ in 0..<i_5_) class348_sub42_sub14.aNodeDeque_9629!!.method1999(
                 Class348_Sub18(
                     class348_sub49.readUnsignedByte(255),
                     class348_sub49.readUnsignedShort(842397944),

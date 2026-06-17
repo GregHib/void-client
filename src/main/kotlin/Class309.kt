@@ -114,26 +114,26 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
         }
 
         @JvmStatic
-        fun method2312(i: Int, i_14_: Int, class262: Class262?, i_15_: Int, var_renderer: Renderer?) {
+        fun method2312(i: Int, i_14_: Int, nodeDeque: NodeDeque?, i_15_: Int, var_renderer: Renderer?) {
             do {
                 try {
                     anInt4811++
-                    Class289.aClass262_3705!!.method1996(125)
+                    Class289.aNodeDeque_3705!!.method1996(125)
                     if (!Class348_Sub1_Sub1.aBoolean8805) {
-                        var class348_sub21 = class262!!.method1995(4) as Class348_Sub21?
+                        var class348_sub21 = nodeDeque!!.method1995(4) as Class348_Sub21?
                         while (class348_sub21 != null) {
                             val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 82.toByte()))
                             if (method589(class42, -4)) {
                                 val bool = ModelLightingConfig.method1425((-31).toByte(), class42, class348_sub21, i_14_, var_renderer, i_15_)
                                 if (bool) Class59.method549((-43).toByte(), class348_sub21, var_renderer!!, class42)
                             }
-                            class348_sub21 = (class262.method1990(104.toByte()) as Class348_Sub21?)
+                            class348_sub21 = (nodeDeque.method1990(104.toByte()) as Class348_Sub21?)
                         }
                         if (i == -13084) break
                         aStringArray4818 = null
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (if (class262 != null) "{...}" else "null") + ',' + i_15_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (if (nodeDeque != null) "{...}" else "null") + ',' + i_15_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

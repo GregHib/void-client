@@ -67,7 +67,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub35.anInt9446 = 0
             Class348_Sub40_Sub18.anInt9246 = 0
             Class318_Sub1_Sub5_Sub2.anInt10154 = 0
-            Class262.anInt3332 = 0
+            NodeDeque.anInt3332 = 0
             Class52.anInt4902 = 0
             Class330.anInt4110 = 0
             Class348_Sub5_Sub1.anInt8828 = 0
@@ -226,7 +226,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub26.anInt9350 = 0
             Class33.anInt461 = 0
             Class5_Sub3.anInt8377 = 0
-            Class262.anInt3330 = 0
+            NodeDeque.anInt3330 = 0
             Class348_Sub40_Sub26.anInt9353 = 0
             Class300.anInt3824 = 0
             RangedGraphicsOptionState.anInt5947 = 0
@@ -1481,7 +1481,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub32.anInt6941 = 0
             Class82.anInt1437 = 0
             Class354.anInt4353 = 0
-            Class262.anInt3340 = 0
+            NodeDeque.anInt3340 = 0
             Class50_Sub1.anInt5215 = 0
             NativeRenderer.anInt7951 = 0
             DisplayModeOptionState.anInt6107 = 0
@@ -1501,7 +1501,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class51.anInt898 = 0
             Class288_Sub1.anInt8578 = 0
             Class348_Sub40_Sub29.anInt9381 = 0
-            Class262.anInt3324 = 0
+            NodeDeque.anInt3324 = 0
             Class348_Sub42_Sub15.anInt9655 = 0
             MediaStreamClient.anInt3190 = 0
             HudTabPanel.anInt2992 = 0
@@ -1614,7 +1614,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlSpriteRenderer.anInt8436 = 0
             Class348_Sub42_Sub10.anInt9578 = 0
             FloatCameraTransform.anInt5743 = 0
-            Class262.anInt3337 = 0
+            NodeDeque.anInt3337 = 0
             OpenGlRenderer.anInt7639 = 0
             Class318_Sub1_Sub2_Sub1.anInt10198 = 0
             Class348_Sub40_Sub16.anInt9228 = 0
@@ -1978,11 +1978,11 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class45.anInt628 = 0
             Class348_Sub42_Sub20.anInt9703 = 0
             Class348_Sub11.anInt4765 = 0
-            Class262.anInt3341 = 0
+            NodeDeque.anInt3341 = 0
             ScriptCompilerThread.anInt1731 = 0
             Class64_Sub3.anInt5602 = 0
             GameAppletFrame.anInt30 = 0
-            Class262.anInt3325 = 0
+            NodeDeque.anInt3325 = 0
             ProjectionCameraTransform.anInt5766 = 0
             FlickeringEffectsOptionState.anInt5916 = 0
             Class318_Sub1_Sub1_Sub2.anInt9969 = 0
@@ -2570,7 +2570,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WaterDetailOptionState.anInt5984 = 0
             Class348_Sub42_Sub8_Sub2.anInt10438 = 0
             Class318_Sub1_Sub5_Sub1.anInt10139 = 0
-            Class262.anInt3339 = 0
+            NodeDeque.anInt3339 = 0
             Class318_Sub1_Sub3_Sub5.anInt10372 = 0
             Class334.anInt4163 = 0
             OpenGlRenderer.anInt7570 = 0
@@ -2817,7 +2817,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7939 = 0
             Class315.anInt3945 = 0
             GlTextureBase.anInt5092 = 0
-            Class262.anInt3328 = 0
+            NodeDeque.anInt3328 = 0
             Class335.anInt4166 = 0
             BooleanGraphicsOptionState.anInt5844 = 0
             ItemDefinition.anInt2828 = 0
@@ -2938,7 +2938,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MapSceneIconDef.anInt2855 = 0
             VarbitDefLoader.anInt2592 = 0
             Class341.anInt4232 = 0
-            Class262.anInt3329 = 0
+            NodeDeque.anInt3329 = 0
             Class348_Sub40_Sub12.anInt9196 = 0
             Class348_Sub40.anInt7026 = 0
             Class348_Sub20.anInt6838 = 0
@@ -3134,7 +3134,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub1.anInt8726 = 0
             Class348_Sub14.anInt6760 = 0
             Class377.anInt9830 = 0
-            Class262.anInt3327 = 0
+            NodeDeque.anInt3327 = 0
             AbstractCameraTransform.anInt1599 = 0
             RangedGraphicsOptionState.anInt5946 = 0
             Class84.anInt1457 = 0
@@ -3206,7 +3206,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WorldMapRenderer.anInt4678 = 0
             TextureMetadataProvider.anInt4620 = 0
             RangedGraphicsOptionState.anInt5935 = 0
-            Class262.anInt3333 = 0
+            NodeDeque.anInt3333 = 0
             TrigLookupInit.anInt2878 = 0
             Class54.anInt971 = 0
             Class64_Sub2.anInt5479 = 0
@@ -3331,7 +3331,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CacheArchiveIndex.anInt1771 = 0
             RangedGraphicsOptionState.anInt5942 = 0
             DelegatingRenderCanvas.anInt62 = 0
-            Class262.anInt3338 = 0
+            NodeDeque.anInt3338 = 0
             LightDetailOptionState.anInt6034 = 0
             Class60.anInt1095 = 0
             Class59_Sub2.anInt5307 = 0
@@ -3916,7 +3916,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class61.anInt1106 = 0
             Class51.anInt901 = 0
             Renderer.anInt4564 = 0
-            Class262.anInt3336 = 0
+            NodeDeque.anInt3336 = 0
             PerlinTextureProvider.anInt5806 = 0
             UnderlayDefinition.anInt2889 = 0
             NativeRenderer.anInt7933 = 0
@@ -4122,11 +4122,11 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ModelDefinitionLoader.anInt2057 = 0
             Class348_Sub32.anInt6930 = 0
             Class282.aClass356_3654!!.method3481(0)
-            Class348_Sub40_Sub17.aClass262_9240!!.method1996(112)
-            OpenGlRenderNode.aClass262_10492!!.method1996(109)
+            Class348_Sub40_Sub17.aNodeDeque_9240!!.method1996(112)
+            OpenGlRenderNode.aNodeDeque_10492!!.method1996(109)
             NpcDefinition.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
             aClass356_1895!!.method3481(0)
-            Class348_Sub42_Sub20.aClass262_9711 = Class262()
+            Class348_Sub42_Sub20.aNodeDeque_9711 = NodeDeque()
             Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1314(74.toByte())
             Class331.method2636(i + 69)
             BloomGraphicsOptionState.anInt5973 = 0

@@ -252,13 +252,13 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             val i_42_ = -123 % ((i_40_ - 24) / 42)
             aClass348_Sub43ArrayArray8928[i_41_]!![i_39_] = null
             if ((this.anIntArray8895[i_41_] and 0x2) != 0) {
-                var class348_sub43_43_ = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1995(4) as Class348_Sub43?)
+                var class348_sub43_43_ = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1995(4) as Class348_Sub43?)
                 while (class348_sub43_43_ != null) {
                     if ((class348_sub43_43_.anInt7067 == class348_sub43.anInt7067) && class348_sub43_43_.anInt7087 < 0 && class348_sub43 != class348_sub43_43_) {
                         class348_sub43.anInt7087 = 0
                         break
                     }
-                    class348_sub43_43_ = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1990(36.toByte()) as Class348_Sub43?)
+                    class348_sub43_43_ = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1990(36.toByte()) as Class348_Sub43?)
                 }
             } else class348_sub43.anInt7087 = 0
         }
@@ -266,10 +266,10 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
 
     private fun method2850(i: Int, i_44_: Int) {
         if ((0x4 and this.anIntArray8895[i]) != 0) {
-            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1995(4) as Class348_Sub43?)
+            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1995(4) as Class348_Sub43?)
             while (class348_sub43 != null) {
                 if (i == class348_sub43.anInt7067) class348_sub43.anInt7082 = 0
-                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1990(65.toByte()) as Class348_Sub43?)
+                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1990(65.toByte()) as Class348_Sub43?)
             }
         }
         if (i_44_ == 0) anInt8897++
@@ -352,7 +352,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         method2849(64, i_50_, 86.toByte(), i_51_)
         anInt8931++
         if ((0x2 and this.anIntArray8895[i_51_]) != 0) {
-            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1993(i xor 0x51.inv()) as? Class348_Sub43?)
+            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1993(i xor 0x51.inv()) as? Class348_Sub43?)
             while (class348_sub43 != null) {
                 if ((class348_sub43.anInt7067 == i_51_) && class348_sub43.anInt7087 < 0) {
                     aClass348_Sub43ArrayArray8928[i_51_]!![class348_sub43.anInt7071] = null
@@ -364,7 +364,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     class348_sub43.anInt7089 = 4096
                     return
                 }
-                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method2003(-50) as? Class348_Sub43?)
+                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method2003(-50) as? Class348_Sub43?)
             }
         }
         val class348_sub17 = (aClass356_8891.method3480(anIntArray8916!![i_51_].toLong(), -6008) as? Class348_Sub17?)
@@ -400,7 +400,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     }
                     aClass348_Sub43ArrayArray8915[i_51_]!![class348_sub43.anInt7088] = class348_sub43
                 }
-                aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1999(class348_sub43, i xor 0x4ed3.inv())
+                aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1999(class348_sub43, i xor 0x4ed3.inv())
                 aClass348_Sub43ArrayArray8928[i_51_]!![i_50_] = class348_sub43
             }
         }
@@ -417,13 +417,13 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
     private fun method2855(i: Int, i_56_: Byte) {
         anInt8927++
         if (i_56_ < -42) {
-            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1995(4) as Class348_Sub43?)
+            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1995(4) as Class348_Sub43?)
             while (class348_sub43 != null) {
                 if ((i < 0 || i == class348_sub43.anInt7067) && class348_sub43.anInt7087 < 0) {
                     aClass348_Sub43ArrayArray8928[class348_sub43.anInt7067]!![class348_sub43.anInt7071] = null
                     class348_sub43.anInt7087 = 0
                 }
-                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1990(60.toByte()) as Class348_Sub43?)
+                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1990(60.toByte()) as Class348_Sub43?)
             }
         }
     }
@@ -490,10 +490,10 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         anInt8893++
         if (i >= -101) method2856((-89).toByte())
         if ((this.anIntArray8895[i_62_] and 0x2) != 0) {
-            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1995(4) as Class348_Sub43?)
+            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1995(4) as Class348_Sub43?)
             while (class348_sub43 != null) {
                 if ((class348_sub43.anInt7067 == i_62_) && (aClass348_Sub43ArrayArray8928[i_62_]!![class348_sub43.anInt7071]) == null && class348_sub43.anInt7087 < 0) class348_sub43.anInt7087 = 0
-                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1990(41.toByte()) as Class348_Sub43?)
+                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1990(41.toByte()) as Class348_Sub43?)
             }
         }
     }
@@ -722,7 +722,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
 
     private fun method2872(i: Int, i_90_: Int) {
         anInt8918++
-        var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1995(i + -2005674596) as Class348_Sub43?)
+        var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1995(i + -2005674596) as Class348_Sub43?)
         while (class348_sub43 != null) {
             if (i_90_ < 0 || (class348_sub43.anInt7067 == i_90_)) {
                 if (class348_sub43.aClass348_Sub16_Sub5_7081 != null) {
@@ -733,7 +733,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 if (class348_sub43.anInt7087 < 0) aClass348_Sub43ArrayArray8928[class348_sub43.anInt7067]!![class348_sub43.anInt7071] = null
                 class348_sub43.method2715(21.toByte())
             }
-            class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1990(68.toByte()) as Class348_Sub43?)
+            class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method1990(68.toByte()) as Class348_Sub43?)
         }
         if (i != 2005674600) anIntArray8902 = null
     }

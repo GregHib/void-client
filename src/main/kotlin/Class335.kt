@@ -10,14 +10,14 @@ object Class335 {
     fun method2655(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         anInt4166++
         run {
-            var class348_sub9 = MapSceneIconDef.aClass262_2859!!.method1995(4) as Class348_Sub9?
+            var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as Class348_Sub9?
             while (class348_sub9 != null) {
                 SocketGameConnection.method1708(i_1_, i_3_, i_0_, i_2_, (-78).toByte(), class348_sub9)
-                class348_sub9 = (MapSceneIconDef.aClass262_2859!!.method1990(97.toByte()) as Class348_Sub9?)
+                class348_sub9 = (MapSceneIconDef.aNodeDeque_2859!!.method1990(97.toByte()) as Class348_Sub9?)
             }
         }
         run {
-            var class348_sub9 = Client.aClass262_5185!!.method1995(4) as? Class348_Sub9?
+            var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? Class348_Sub9?
             while (class348_sub9 != null) {
                 var i_4_ = 1
                 val class225 = class348_sub9.aNpc_6691!!.method2422(72.toByte())
@@ -61,7 +61,7 @@ object Class335 {
                 class348_sub9.anInt6689 = (class348_sub9.aNpc_6691!!.y)
                 class348_sub9.anInt6687 = ((class348_sub9.aNpc_6691!!.y) + (class348_sub9.aNpc_6691!!.method2436(92.toByte()) shl 8))
                 SocketGameConnection.method1708(i_1_, i_3_, i_0_, i_2_, (-78).toByte(), class348_sub9)
-                class348_sub9 = (Client.aClass262_5185!!.method1990(85.toByte()) as? Class348_Sub9?)
+                class348_sub9 = (Client.aNodeDeque_5185!!.method1990(85.toByte()) as? Class348_Sub9?)
             }
         }
         var class348_sub9 = (Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3484(0) as? Class348_Sub9?)

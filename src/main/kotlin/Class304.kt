@@ -106,11 +106,11 @@ class Class304 internal constructor(var anInt3850: Int) {
                 i_7_ = 21 + 16 * Class8.anInt166
                 WorldMapSceneSoftware.anInt5819 = (if (Class71.aBoolean1211) 26 else 22) + 16 * Class8.anInt166
             } else {
-                var class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
+                var class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
                 while (class348_sub42_sub12 != null) {
                     val i_8_ = method138(class348_sub42_sub12, false)
                     if (i_6_ < i_8_) i_6_ = i_8_
-                    class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(69.toByte()) as? Class348_Sub42_Sub12?
+                    class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(69.toByte()) as? Class348_Sub42_Sub12?
                 }
                 i_6_ += 8
                 WorldMapSceneSoftware.anInt5819 = (if (!Class71.aBoolean1211) 22 else 26) + 16 * Class73.anInt4776

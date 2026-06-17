@@ -38,14 +38,14 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
         var anInt9708: Int = 0
         var anInt9709: Int = 0
         @JvmField
-        var aClass262_9711: Class262? = Class262()
+        var aNodeDeque_9711: NodeDeque? = NodeDeque()
         var anInt9713: Int = 0
         var anIntArray9714: IntArray? = intArrayOf(1, 2, 4, 8)
         var anInt9715: Int = 0
 
         @JvmStatic
         fun method3280(i: Int) {
-            aClass262_9711 = null
+            aNodeDeque_9711 = null
             anIntArray9714 = null
             val i_0_ = 112 / ((i - 16) / 57)
         }

@@ -6,7 +6,7 @@ import Class5_Sub2.Companion.method194
 */
 class Class348_Sub37 : Class348() {
     @JvmField
-    var aClass262_6998: Class262 = Class262()
+    var aNodeDeque_6998: NodeDeque = NodeDeque()
 
     companion object {
         var anInt6996: Int = 0

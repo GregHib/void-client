@@ -363,13 +363,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
         @JvmField
         var anInt10491: Int = 0
         @JvmField
-        var aClass262_10492: Class262? = Class262()
+        var aNodeDeque_10492: NodeDeque? = NodeDeque()
 
         @JvmStatic
         fun method3295(i: Int) {
             aClass45_10480 = null
             aSmoothingBuffer_10488 = null
-            aClass262_10492 = null
+            aNodeDeque_10492 = null
             if (i != -1) method3295(109)
         }
 

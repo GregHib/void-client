@@ -444,7 +444,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
             do {
                 try {
                     anInt4067++
-                    if (class348_sub42_sub12 != null && (class348_sub42_sub12 != (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334))) {
+                    if (class348_sub42_sub12 != null && (class348_sub42_sub12 != (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334))) {
                         val i_74_ = (class348_sub42_sub12.anInt9602)
                         val i_75_ = (class348_sub42_sub12.anInt9607)
                         var i_76_ = (class348_sub42_sub12.anInt9608)

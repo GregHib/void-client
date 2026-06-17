@@ -118,7 +118,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         fun method181(bool: Boolean, npc: Npc?) {
             if (bool != true) method180(54)
             anInt4627++
-            var class348_sub9 = Client.aClass262_5185!!.method1995(4) as? Class348_Sub9?
+            var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? Class348_Sub9?
             while (class348_sub9 != null) {
                 if ((class348_sub9.aNpc_6691) == npc) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
@@ -128,7 +128,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
                     class348_sub9.method2715(27.toByte())
                     break
                 }
-                class348_sub9 = (Client.aClass262_5185!!.method1990(78.toByte()) as? Class348_Sub9?)
+                class348_sub9 = (Client.aNodeDeque_5185!!.method1990(78.toByte()) as? Class348_Sub9?)
             }
         }
     }

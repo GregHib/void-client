@@ -42,7 +42,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(113.toByte(), Class348_Sub11.aClass45_4770!!.method389(-122))
         class348_sub49_sub2.writeInt(86.toByte(), GraphicsOptionState.aClass45_3146!!.method389(97))
         class348_sub49_sub2.writeInt(96.toByte(), Class367_Sub8.aClass45_7362!!.method389(-6))
-        class348_sub49_sub2.writeInt(96.toByte(), Class262.aClass45_3323!!.method389(-122))
+        class348_sub49_sub2.writeInt(96.toByte(), NodeDeque.aClass45_3323!!.method389(-122))
         class348_sub49_sub2.writeInt(107.toByte(), Crc64Hashable.aClass45_4984!!.method389(-107))
         class348_sub49_sub2.writeInt(125.toByte(), SpriteLoadValidator.aClass45_4796!!.method389(-118))
         class348_sub49_sub2.writeInt(90.toByte(), NpcCountAccessor.method1327(31))

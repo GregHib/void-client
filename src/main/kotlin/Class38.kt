@@ -88,7 +88,7 @@ class Class38 {
         @JvmStatic
         fun method362(i: Int) {
             anInt509++
-            var class348_sub27 = (Class348_Sub42_Sub20.aClass262_9711!!.method1995(4) as? Class348_Sub27?)
+            var class348_sub27 = (Class348_Sub42_Sub20.aNodeDeque_9711!!.method1995(4) as? Class348_Sub27?)
             val i_3_ = -45 % ((i - -34) / 47)
             while ( /**/class348_sub27 != null) {
                 if (class348_sub27.anInt6893 > 0) class348_sub27.anInt6893--
@@ -105,7 +105,7 @@ class Class38 {
                     MapSceneIconDef.method1591(class348_sub27.anInt6905, 112, class348_sub27.anInt6904, -1, class348_sub27.anInt6902, class348_sub27.anInt6903, class348_sub27.anInt6896, class348_sub27.anInt6892, class348_sub27.anInt6899)
                     class348_sub27.method2715(49.toByte())
                 }
-                class348_sub27 = Class348_Sub42_Sub20.aClass262_9711!!.method1990(81.toByte()) as? Class348_Sub27?
+                class348_sub27 = Class348_Sub42_Sub20.aNodeDeque_9711!!.method1990(81.toByte()) as? Class348_Sub27?
             }
         }
 

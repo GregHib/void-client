@@ -16,7 +16,7 @@ class Class348_Sub1_Sub2 internal constructor(i: Int, i_9_: Int, i_10_: Int, i_1
 
     companion object {
         @JvmField
-        var aClass262_8810: Class262? = Class262()
+        var aNodeDeque_8810: NodeDeque? = NodeDeque()
         @JvmField
         var anInt8811: Int = 0
         @JvmField
@@ -62,7 +62,7 @@ class Class348_Sub1_Sub2 internal constructor(i: Int, i_9_: Int, i_10_: Int, i_1
         @JvmStatic
         fun method2731(i: Byte) {
             aByteArrayArray8816 = null
-            aClass262_8810 = null
+            aNodeDeque_8810 = null
             aClass308_8815 = null
             aIntRange_8817 = null
         }

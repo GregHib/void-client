@@ -2201,13 +2201,13 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                     val f_411_ = ((fs[5] * i_406_.toFloat() + (fs[3] * i_404_.toFloat() + i_405_.toFloat() * fs[4])) / f_408_)
                                     val f_412_ = ((i_405_.toFloat() * fs[7] + fs[6] * i_404_.toFloat() + fs[8] * i_406_.toFloat()) / f_409_)
                                     i_386_ = Class331.method2635(f_411_, false, f_412_, f_410_)
-                                    Class262.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_388_.toInt()]), (modelDefinition.anIntArray1847[i_388_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
+                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_388_.toInt()]), (modelDefinition.anIntArray1847[i_388_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
                                     f_379_ = Class283.aFloatArray3658!![1]
                                     f = Class283.aFloatArray3658!![0]
-                                    Class262.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_389_.toInt()]), (modelDefinition.anIntArray1847[i_389_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
+                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_389_.toInt()]), (modelDefinition.anIntArray1847[i_389_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
                                     f_381_ = Class283.aFloatArray3658!![1]
                                     f_380_ = Class283.aFloatArray3658!![0]
-                                    Class262.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_390_.toInt()]), (modelDefinition.anIntArray1847[i_390_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
+                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_390_.toInt()]), (modelDefinition.anIntArray1847[i_390_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
                                     f_382_ = Class283.aFloatArray3658!![0]
                                     f_383_ = Class283.aFloatArray3658!![1]
                                 } else if (i_387_.toInt() == 3) {
@@ -3501,7 +3501,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             Class8.anInt166 = 0
             if (i < 92) method661(114.toByte())
             Class73.anInt4776 = 0
-            Class348_Sub40_Sub4.aClass262_9111!!.method1996(115)
+            Class348_Sub40_Sub4.aNodeDeque_9111!!.method1996(115)
             Class348_Sub42_Sub12.aClass356_9603!!.method3481(0)
             ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)
             method3743(6.toByte(), Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144)

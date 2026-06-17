@@ -66,7 +66,7 @@ class WaterDetailOptionState : GraphicsOptionState {
         fun method1779(i: Byte) {
             anInt5985++
             Class364.method3517(73)
-            Class262.aModelLightingConfigArrayArray3335 = null
+            NodeDeque.aModelLightingConfigArrayArray3335 = null
             Class60.aRenderer1098 = null
             if (i <= 89) anInt5994 = -75
             SceneryDetailOptionState.aClass299_6098 = null

@@ -29,7 +29,7 @@ abstract class Class286 internal constructor(var aHa_Sub2_3684: OpenGlRenderer) 
         @JvmStatic
         fun method2138(i: Int): Boolean {
             anInt3681++
-            val class348_sub48 = Class348_Sub35.aClass262_6978!!.method1995(4) as Class348_Sub48?
+            val class348_sub48 = Class348_Sub35.aNodeDeque_6978!!.method1995(4) as Class348_Sub48?
             if (class348_sub48 == null) return false
             val i_3_ = 118 % ((-40 - i) / 50)
             var i_4_ = 0

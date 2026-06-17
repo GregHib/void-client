@@ -100,7 +100,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                 if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508!!.method2063(Class348_Sub33.anInt6967, 544))
                 if (Class348_Sub36.aClass46_6990 != null) {
                     var class324 = Class348_Sub36.aClass46_6990!!.method426(var_renderer, 68.toByte())
-                    if (class324 == null) class324 = Class262.aClass324_3326!!
+                    if (class324 == null) class324 = NodeDeque.aClass324_3326!!
                     class324.method2585(
                         SizeBoundedSoftCache.anIntArray2330,
                         Class348_Sub36.aClass46_6990!!.anInt709,
@@ -120,7 +120,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                     )
                     method226(RenderableGroup.anIntArray5007!![0], RenderableGroup.anIntArray5007!![2], RenderableGroup.anIntArray5007!![1], 0, RenderableGroup.anIntArray5007!![3])
                 } else if (CameraRotationStub.aClass46_323 != null && (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
-                    val i_1_ = (Class262.aClass324_3326!!.method2571(-1, Class356.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, Class341.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, OutputStream_Sub1.aRandom93))
+                    val i_1_ = (NodeDeque.aClass324_3326!!.method2571(-1, Class356.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, Class341.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, OutputStream_Sub1.aRandom93))
                     method226(ConfigValueProvider.Companion.anInt4911 - -4, (Class369.aFontDefinition_4962!!.method1183(true, string) + i_1_), SocketGameConnection.anInt5832, 0, 16)
                 }
             }

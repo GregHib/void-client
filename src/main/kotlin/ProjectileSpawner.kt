@@ -40,7 +40,7 @@ object ProjectileSpawner {
             val class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3480(l, -6008) as? Class348_Sub37?)
             if (class348_sub37 == null) Class282.method2110(i_3_, i_2_, i)
             else {
-                val class348_sub34 = class348_sub37.aClass262_6998.method1995(4) as? Class348_Sub34?
+                val class348_sub34 = class348_sub37.aNodeDeque_6998.method1995(4) as? Class348_Sub34?
                 if (class348_sub34 == null) Class282.method2110(i_3_, i_2_, i)
                 else {
                     var class318_sub1_sub2_sub1 = (Class282.method2110(i_3_, i_2_, i) as? Class318_Sub1_Sub2_Sub1?)
@@ -53,13 +53,13 @@ object ProjectileSpawner {
                     if (i_1_ >= -112) aBoolean2674 = true
                     class318_sub1_sub2_sub1.anInt10185 = class348_sub34.anInt6971
                     while (true) {
-                        val class348_sub34_6_ = (class348_sub37.aClass262_6998.method1990(55.toByte()) as? Class348_Sub34?)
+                        val class348_sub34_6_ = (class348_sub37.aNodeDeque_6998.method1990(55.toByte()) as? Class348_Sub34?)
                         if (class348_sub34_6_ == null) break
                         if (class348_sub34_6_.anInt6973 != class318_sub1_sub2_sub1.anInt10181) {
                             class318_sub1_sub2_sub1.anInt10189 = (class348_sub34_6_.anInt6973)
                             class318_sub1_sub2_sub1.anInt10190 = (class348_sub34_6_.anInt6971)
                             while (true) {
-                                val class348_sub34_7_ = (class348_sub37.aClass262_6998.method1990(55.toByte()) as? Class348_Sub34?)
+                                val class348_sub34_7_ = (class348_sub37.aNodeDeque_6998.method1990(55.toByte()) as? Class348_Sub34?)
                                 if (class348_sub34_7_ == null) break
                                 if ((class318_sub1_sub2_sub1.anInt10181 != (class348_sub34_7_.anInt6973)) && ((class318_sub1_sub2_sub1.anInt10189) != (class348_sub34_7_.anInt6973))) {
                                     class318_sub1_sub2_sub1.anInt10180 = (class348_sub34_7_.anInt6973)

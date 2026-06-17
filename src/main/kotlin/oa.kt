@@ -8,7 +8,7 @@ import kotlin.math.max
 class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Interface19 {
     private var aYa5121: ya? = null
     var nativeid: Long = 0L
-    private val aClass262_5123: Class262
+    private val aNodeDeque_5123: NodeDeque
     private var aBoolean5124 = false
     private var aAbstractCameraTransform_5125: AbstractCameraTransform? = null
     private val aClass356_5126: Class356
@@ -189,7 +189,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     override fun method3702(i: Int): ShaderProgram {
         val var_ya = ya(this, i)
-        aClass262_5123.method1999(var_ya, -20180)
+        aNodeDeque_5123.method1999(var_ya, -20180)
         return var_ya
     }
 
@@ -254,12 +254,12 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
             aYa5121 = null
             aAbstractCameraTransform_5131 = null
             aClass356_5126.method3481(0)
-            var var_ya = aClass262_5123.method1995(4) as ya?
+            var var_ya = aNodeDeque_5123.method1995(4) as ya?
             while (var_ya != null) {
                 var_ya.ga()
-                var_ya = aClass262_5123.method1990(36.toByte()) as ya?
+                var_ya = aNodeDeque_5123.method1990(36.toByte()) as ya?
             }
-            aClass262_5123.method1996(117)
+            aNodeDeque_5123.method1996(117)
             FA()
             if (aBoolean5142) {
                 Class286_Sub8.method2173(true, -110, false)
@@ -307,10 +307,10 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     override fun method3646(i: Int) {
         RequestGate.method1948((-71).toByte())
         d(i)
-        var var_ya = aClass262_5123.method1995(4) as ya?
+        var var_ya = aNodeDeque_5123.method1995(4) as ya?
         while (var_ya != null) {
             var_ya.r()
-            var_ya = aClass262_5123.method1990(40.toByte()) as ya?
+            var_ya = aNodeDeque_5123.method1990(40.toByte()) as ya?
         }
     }
 
@@ -570,7 +570,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     }
 
     init {
-        aClass262_5123 = Class262()
+        aNodeDeque_5123 = NodeDeque()
         anInt5127 = 4096
         anInt5128 = 4096
         aClass356_5126 = Class356(4)

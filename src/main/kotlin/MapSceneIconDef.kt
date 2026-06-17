@@ -58,7 +58,7 @@ class MapSceneIconDef {
             if (i_20_ == 0) break
             method1595(61.toByte(), i_20_, class348_sub49)
         }
-        if (i.toInt() != -114) aClass262_2859 = null
+        if (i.toInt() != -114) aNodeDeque_2859 = null
     }
 
     companion object {
@@ -69,7 +69,7 @@ class MapSceneIconDef {
         var anInt2857: Int = 0
         var anInt2858: Int = 0
         @JvmField
-        var aClass262_2859: Class262? = Class262()
+        var aNodeDeque_2859: NodeDeque? = NodeDeque()
         var aIntRange_2860: IntRange?
         @JvmField
         var anInt2861: Int = 1401
@@ -88,7 +88,7 @@ class MapSceneIconDef {
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220), i_9_)
                 }
             }
-            if (i_0_ < 12) aClass262_2859 = null
+            if (i_0_ < 12) aNodeDeque_2859 = null
         }
 
         fun method1592(i: Byte, i_10_: Int, i_11_: Int, i_12_: Int, player: Player) {
@@ -98,7 +98,7 @@ class MapSceneIconDef {
             if (i_13_ >= 0 && Class367_Sub4.anInt7319 > i_13_ && i_14_ >= 0 && i_14_ < Class348_Sub40_Sub3.anInt9109 && (i_12_ >= 0 && i_12_ < Class367_Sub4.anInt7319 && i_10_ >= 0 && Class348_Sub40_Sub3.anInt9109 > i_10_)) {
                 val i_15_ = (method574(i_12_, player.method2436(62.toByte()), 0, Class348_Sub40_Sub11.anIntArray9185, true, 120.toByte(), -4, i_13_, i_14_, Class348_Sub42_Sub14.anIntArray9626, i_10_, (Class348_Sub45.aClass361Array7108!![(player.plane).toInt()]), 0, 0, 0))
                 if (i_15_ >= 1) {
-                    if (i_11_ != 4) aClass262_2859 = null
+                    if (i_11_ != 4) aNodeDeque_2859 = null
                     if (i_15_ <= 3) {
                         for (i_16_ in 0..<-1 + i_15_) player.method2451(i, Class348_Sub42_Sub14.anIntArray9626!![i_16_], i_11_ + -29038, Class348_Sub40_Sub11.anIntArray9185!![i_16_])
                     }
@@ -108,8 +108,8 @@ class MapSceneIconDef {
 
         @JvmStatic
         fun method1594(i: Int) {
-            aClass262_2859 = null
-            if (i != -1966608624) aClass262_2859 = null
+            aNodeDeque_2859 = null
+            if (i != -1966608624) aNodeDeque_2859 = null
             aIntRange_2860 = null
         }
 

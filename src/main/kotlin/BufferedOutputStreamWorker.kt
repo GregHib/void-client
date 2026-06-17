@@ -99,15 +99,15 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
 
     companion object {
         @JvmField
-        var aClass262_2707: Class262? = Class262()
+        var aNodeDeque_2707: NodeDeque? = NodeDeque()
         var anInt2709: Int = 0
         var anInt2710: Int = 0
         var anInt2711: Int = 0
         var anInt2714: Int = 0
         @JvmStatic
         fun method1525(i: Byte) {
-            if (i.toInt() != 4) aClass262_2707 = null
-            aClass262_2707 = null
+            if (i.toInt() != 4) aNodeDeque_2707 = null
+            aNodeDeque_2707 = null
         }
     }
 }

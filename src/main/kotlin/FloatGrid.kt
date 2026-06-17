@@ -24,7 +24,7 @@ class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : I
             if (RenderNode.anInt9721 != -1) {
                 var i_0_ = GlTexture1D.aClass373_8552!!.method3597(true)
                 var i_1_ = GlTexture1D.aClass373_8552!!.method3594(72.toByte())
-                val class348_sub45 = (Class318_Sub1_Sub3.aClass262_8744!!.method1995(4) as Class348_Sub45?)
+                val class348_sub45 = (Class318_Sub1_Sub3.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?)
                 if (class348_sub45 != null) {
                     i_0_ = class348_sub45.method3308((-128).toByte())
                     i_1_ = class348_sub45.method3311(58)

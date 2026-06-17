@@ -61,7 +61,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
 
         @JvmStatic
         fun method192(modelLightingConfig: ModelLightingConfig?, i: Int, i_1_: Int, i_2_: Int) {
-            Class262.aModelLightingConfigArrayArray3335!![i_1_]!![i_2_] = modelLightingConfig
+            NodeDeque.aModelLightingConfigArrayArray3335!![i_1_]!![i_2_] = modelLightingConfig
             anInt8362++
             if (i != 10000) anInt8363 = 32
         }

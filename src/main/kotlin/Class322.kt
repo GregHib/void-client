@@ -12,7 +12,7 @@ import ArbVertexProgram.Companion.method3443
 */
 class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
     private val anInt4020: Int
-    private var aClass262_4021: Class262?
+    private var aNodeDeque_4021: NodeDeque?
     private var anInt4022: Int
     private val anInt4024: Int
     private var anInt4025 = 0
@@ -39,7 +39,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             if (class348_sub24 == null) {
                 this.aBoolean4035 = true
                 if (anInt4020 <= anInt4025) {
-                    val class348_sub24_7_ = aClass262_4021!!.method1993(-126) as Class348_Sub24?
+                    val class348_sub24_7_ = aNodeDeque_4021!!.method1993(-126) as Class348_Sub24?
                     class348_sub24 = Class348_Sub24(i_6_, class348_sub24_7_!!.anInt6875)
                     aClass348_Sub24Array4033!![class348_sub24_7_.anInt6872] = null
                     class348_sub24_7_.method2715(56.toByte())
@@ -49,7 +49,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
                 }
                 aClass348_Sub24Array4033!![i_6_] = class348_sub24
             } else this.aBoolean4035 = false
-            aClass262_4021!!.method2001(class348_sub24, -110)
+            aNodeDeque_4021!!.method2001(class348_sub24, -110)
             return (anIntArrayArrayArray4029!![class348_sub24.anInt6875])
         }
         this.aBoolean4035 = aClass348_Sub24Array4033!![i_6_] == null
@@ -70,13 +70,13 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
         }
         aClass348_Sub24Array4033 = null
         anIntArrayArrayArray4029 = null
-        aClass262_4021!!.method1996(99)
-        aClass262_4021 = null
+        aNodeDeque_4021!!.method1996(99)
+        aNodeDeque_4021 = null
     }
 
     init {
         anInt4022 = -1
-        aClass262_4021 = Class262()
+        aNodeDeque_4021 = NodeDeque()
         this.aBoolean4035 = false
         anInt4020 = i
         anInt4024 = i_9_

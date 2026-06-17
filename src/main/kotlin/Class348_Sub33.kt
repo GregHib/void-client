@@ -68,7 +68,7 @@ class Class348_Sub33 internal constructor(@JvmField var anInt6958: Int, `is`: By
 
         fun method3025(i: Byte, class348_sub49_sub2: Class348_Sub49_Sub2) {
             anInt6961++
-            val class348_sub48 = Class348_Sub35.Companion.aClass262_6978!!.method1995(4) as Class348_Sub48?
+            val class348_sub48 = Class348_Sub35.Companion.aNodeDeque_6978!!.method1995(4) as Class348_Sub48?
             if (class348_sub48 != null) {
                 var bool = false
                 for (i_0_ in 0..<class348_sub48.anInt7126) {

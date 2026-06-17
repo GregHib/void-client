@@ -87,7 +87,7 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
         var anInt9476: Int = 0
         var aConfigFlagUtil_9477: ConfigFlagUtil? = ConfigFlagUtil()
         @JvmField
-        var aClass262_9478: Class262? = Class262()
+        var aNodeDeque_9478: NodeDeque? = NodeDeque()
         @JvmField
         var anInt9479: Int = 0
         @JvmField
@@ -99,7 +99,7 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
             anIntArray9480 = null
             aClass304_9471 = null
             aConfigFlagUtil_9477 = null
-            aClass262_9478 = null
+            aNodeDeque_9478 = null
             if (i < 32) method3149(58)
         }
 

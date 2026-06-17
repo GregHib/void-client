@@ -141,7 +141,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
         fun method2480(i: Int) {
             if (i == -1) {
                 anInt8761++
-                Class348_Sub35.aClass262_6978 = Class262()
+                Class348_Sub35.aNodeDeque_6978 = NodeDeque()
             }
         }
     }

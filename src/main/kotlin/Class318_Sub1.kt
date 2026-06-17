@@ -96,7 +96,7 @@ abstract class Class318_Sub1 : Class318() {
                     anInt6385++
                     val bool = ((Exception_Sub1.aModelHeaderCache_112!!.method1941(class46!!.anInt672, (-74).toByte(), class46.anInt812, class46.anInt781, 0xffffff.inv() or class46.anInt809, class46.anInt678, var_renderer, (if (!class46.aBoolean720) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)))) == null)
                     if (!bool) break
-                    Class5_Sub1_Sub1.aClass262_9931!!.method1999(Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (0xffffff.inv() or class46.anInt809), class46.anInt678, class46.aBoolean720), i xor 0x4ed2)
+                    Class5_Sub1_Sub1.aNodeDeque_9931!!.method1999(Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (0xffffff.inv() or class46.anInt809), class46.anInt678, class46.aBoolean720), i xor 0x4ed2)
                     ConfigFlagUtil.method1916(-9343, class46)
                 } catch (runtimeexception: RuntimeException) {
                     throw Class348_Sub17.method2929(runtimeexception, ("ga.QA(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (class46 != null) "{...}" else "null") + ')'))
@@ -197,7 +197,7 @@ abstract class Class318_Sub1 : Class318() {
                         }
                         if (class42.anInt576 == 2) {
                             class143 = Class369.aFontDefinition_4962
-                            class324 = Class262.aClass324_3326
+                            class324 = NodeDeque.aClass324_3326
                         }
                         Class334.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, class46, i_5_, 100)
                     }

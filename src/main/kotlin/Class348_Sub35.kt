@@ -14,7 +14,7 @@ class Class348_Sub35 : Class348 {
     companion object {
         var anInt6975: Int = 0
         var aClass74_6977: Class74? = Class74(8, 3)
-        var aClass262_6978: Class262?
+        var aNodeDeque_6978: NodeDeque?
         var anInt6979: Int = 0
         var aClass45_6980: Class45? = null
         var anInt6981: Int = 0
@@ -34,11 +34,11 @@ class Class348_Sub35 : Class348 {
             if (i != -11677) Companion.method3027((-80).toByte())
             aClass74_6977 = null
             aClass45_6980 = null
-            aClass262_6978 = null
+            aNodeDeque_6978 = null
         }
 
         init {
-            aClass262_6978 = Class262()
+            aNodeDeque_6978 = NodeDeque()
         }
     }
 }

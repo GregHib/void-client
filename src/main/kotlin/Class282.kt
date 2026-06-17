@@ -15,7 +15,7 @@ object Class282 {
 
     fun method2109(i: Int) {
         anInt3653++
-        var class348_sub42_sub18 = (Class348_Sub40_Sub17.aClass262_9240!!.method1995(4) as Class348_Sub42_Sub18?)
+        var class348_sub42_sub18 = (Class348_Sub40_Sub17.aNodeDeque_9240!!.method1995(4) as Class348_Sub42_Sub18?)
         if (i != 512) method2110(-125, 79, 70)
         while ( /**/class348_sub42_sub18 != null) {
             val class318_sub1_sub3_sub5 = (class348_sub42_sub18.aClass318_Sub1_Sub3_Sub5_9682)!!
@@ -41,7 +41,7 @@ object Class282 {
                 class318_sub1_sub3_sub5.method2475(75.toByte(), Class348_Sub51.anInt7267)
                 method850(class318_sub1_sub3_sub5, true)
             }
-            class348_sub42_sub18 = Class348_Sub40_Sub17.aClass262_9240!!.method1990(56.toByte()) as Class348_Sub42_Sub18?
+            class348_sub42_sub18 = Class348_Sub40_Sub17.aNodeDeque_9240!!.method1990(56.toByte()) as Class348_Sub42_Sub18?
         }
     }
 

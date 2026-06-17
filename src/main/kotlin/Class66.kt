@@ -3543,7 +3543,7 @@ object Class66 {
                         class348_sub36.aClass46_6989 = class46
                         class348_sub36.anObjectArray6987 = class46.anObjectArray727
                         class348_sub36.anInt6988 = anInt1177 + 1
-                        Class348_Sub1_Sub2.aClass262_8810!!.method1999(class348_sub36, -20180)
+                        Class348_Sub1_Sub2.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                         return
                     }
                     return

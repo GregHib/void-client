@@ -67,13 +67,13 @@ import java.util.*
 
 class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: RenderConfig?, class45: Class45?, i: Int) : NativeRenderer(canvas, l, var_renderConfig, class45, i, 1) {
     private var anOpenGL9856: OpenGL? = null
-    private val aClass262_9869 = Class262()
-    private var aClass262_9899: Class262? = Class262()
-    private val aClass262_9901 = Class262()
-    private var aClass262_9902: Class262? = Class262()
-    private var aClass262_9903: Class262? = Class262()
-    private val aClass262_9904 = Class262()
-    private var aClass262_9905: Class262? = Class262()
+    private val aNodeDeque_9869 = NodeDeque()
+    private var aNodeDeque_9899: NodeDeque? = NodeDeque()
+    private val aNodeDeque_9901 = NodeDeque()
+    private var aNodeDeque_9902: NodeDeque? = NodeDeque()
+    private var aNodeDeque_9903: NodeDeque? = NodeDeque()
+    private val aNodeDeque_9904 = NodeDeque()
+    private var aNodeDeque_9905: NodeDeque? = NodeDeque()
     private var aLong9906: Long = 0
     private var aClass285_Sub1Array9907: Array<Class285_Sub1?>? = arrayOfNulls<Class285_Sub1>(16)
     private var aBoolean9908 = false
@@ -110,8 +110,8 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         anInt9870++
         var i_0_ = 0
         i = i and 0x7fffffff
-        while (!aClass262_9899!!.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_9899!!.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_9899!!.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_9899!!.method1997(8) as Class348_Sub35?
             LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8063 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
@@ -123,8 +123,8 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             glDeleteBuffersARB(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
             i_0_ = 0
         }
-        while (!aClass262_9901.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_9901.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_9901.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_9901.method1997(8) as Class348_Sub35?
             LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8062 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
@@ -136,8 +136,8 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             glDeleteTextures(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
             i_0_ = 0
         }
-        while (!aClass262_9902!!.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_9902!!.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_9902!!.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_9902!!.method1997(8) as Class348_Sub35?
             LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.anInt6976
             if (i_0_ == 1000) {
                 glDeleteFramebuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
@@ -148,8 +148,8 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             glDeleteFramebuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
             i_0_ = 0
         }
-        while (!aClass262_9903!!.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_9903!!.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_9903!!.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_9903!!.method1997(8) as Class348_Sub35?
             LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8079 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
@@ -161,20 +161,20 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             glDeleteRenderbuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
             val bool = false
         }
-        while (!aClass262_9869.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_9869.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_9869.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_9869.method1997(8) as Class348_Sub35?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
-        while (!aClass262_9904.method2002(18.toByte())) {
-            val class348 = aClass262_9904.method1997(8)
+        while (!aNodeDeque_9904.method2002(18.toByte())) {
+            val class348 = aNodeDeque_9904.method1997(8)
             glDeleteProgramARB(class348!!.aLong4291.toInt())
         }
-        while (!aClass262_9905!!.method2002(18.toByte())) {
-            val class348 = aClass262_9905!!.method1997(8)
+        while (!aNodeDeque_9905!!.method2002(18.toByte())) {
+            val class348 = aNodeDeque_9905!!.method1997(8)
             glDeleteObjectARB(class348!!.aLong4291)
         }
-        while (!aClass262_9869.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_9869.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_9869.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_9869.method1997(8) as Class348_Sub35?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
         if (this.E() > 100663296 && (Class62.method599(-82) > 60000L + aLong9906)) {
@@ -202,7 +202,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
 
     override fun method3818(bool: Boolean) {
         anInt9844++
-        if (bool != true) aClass262_9899 = null
+        if (bool != true) aNodeDeque_9899 = null
         if (this.aBoolean8110) {
             glEnable(16384)
             glEnable(16385)
@@ -272,7 +272,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9853++
             val class348 = Class348()
             class348.aLong4291 = l
-            if (i == 34192) aClass262_9905!!.method1999(class348, i xor 0xcb43.inv())
+            if (i == 34192) aNodeDeque_9905!!.method1999(class348, i xor 0xcb43.inv())
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, "bga.N(" + l + ',' + i + ')')
         }
@@ -305,7 +305,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         val class348_sub35 = Class348_Sub35(i)
         if (i_8_.toInt() != 59) method3818(false)
         class348_sub35.aLong4291 = i_9_.toLong()
-        aClass262_9901.method1999(class348_sub35, -20180)
+        aNodeDeque_9901.method1999(class348_sub35, -20180)
     }
 
     override fun method3884(i: Byte) {
@@ -505,7 +505,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         anInt9850++
         val class348_sub35 = Class348_Sub35(i)
         class348_sub35.aLong4291 = i_26_.toLong()
-        aClass262_9899!!.method1999(class348_sub35, i_27_ xor 0x42c2.inv())
+        aNodeDeque_9899!!.method1999(class348_sub35, i_27_ xor 0x42c2.inv())
     }
 
     override fun method3842(bool: Boolean) {
@@ -699,7 +699,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
 
     override fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: Interface5_Impl2?, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int) {
         try {
-            if (i_43_ <= 46) aClass262_9903 = null
+            if (i_43_ <= 46) aNodeDeque_9903 = null
             anInt9867++
             val i_44_: Int
             val i_45_: Int
@@ -781,7 +781,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
 
     override fun method3931(bool: Boolean, class304: Class304?, class68: Class68?): Boolean {
         try {
-            if (bool != true) aClass262_9905 = null
+            if (bool != true) aNodeDeque_9905 = null
             anInt9855++
             return true
         } catch (runtimeexception: RuntimeException) {
@@ -822,7 +822,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
 
     override fun method3900(`is`: Array<IntArray?>?, bool: Boolean, i: Int, i_53_: Int): Interface18_Impl2 {
         try {
-            if (i <= 1) aClass262_9902 = null
+            if (i <= 1) aNodeDeque_9902 = null
             anInt9883++
             return GlCubeMapTexture(this, i_53_, bool, `is`)
         } catch (runtimeexception: RuntimeException) {
@@ -940,7 +940,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         anInt9819++
         val class348 = Class348()
         class348.aLong4291 = i_70_.toLong()
-        aClass262_9904.method1999(class348, -20180)
+        aNodeDeque_9904.method1999(class348, -20180)
         if (i != 16386) method3928(-86)
     }
 

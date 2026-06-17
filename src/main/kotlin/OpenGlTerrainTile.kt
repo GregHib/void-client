@@ -19,7 +19,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     private var anIntArrayArrayArray8252: Array<Array<IntArray?>?>? = null
     @JvmField
     var anIntArrayArrayArray8253: Array<Array<IntArray?>?>?
-    private val aClass262_8256 = Class262()
+    private val aNodeDeque_8256 = NodeDeque()
     private var anInt8257 = 0
     private var anIntArrayArrayArray8258: Array<Array<IntArray?>?>?
     private val anInt8260: Int
@@ -588,7 +588,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
         try {
             anInt8271++
-            aClass262_8256.method1999(Class348_Sub32((this.aHa_Sub2_8272), this, class348_sub1, `is`), -20180)
+            aNodeDeque_8256.method1999(Class348_Sub32((this.aHa_Sub2_8272), this, class348_sub1, `is`), -20180)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ed.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
@@ -683,7 +683,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 aClass348_Sub20Array8282!![i_208_]!!.method2948(5123, i_204_, `is`)
                 i_208_++
             }
-            if (!aClass262_8256.method2002(18.toByte())) {
+            if (!aNodeDeque_8256.method2002(18.toByte())) {
                 val i_209_ = this.aHa_Sub2_8272!!.anInt7856
                 val i_210_ = this.aHa_Sub2_8272!!.anInt7782
                 this.aHa_Sub2_8272!!.L(0, i_210_, (this.aHa_Sub2_8272!!.anInt7813))
@@ -695,11 +695,11 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 this.aHa_Sub2_8272!!.method3729(8448, 98.toByte(), 7681)
                 this.aHa_Sub2_8272!!.method3762(34166, 770, (-87).toByte(), 0)
                 this.aHa_Sub2_8272!!.method3775(false, 0, 770, 34167)
-                var class348 = aClass262_8256.method1995(4)
+                var class348 = aNodeDeque_8256.method1995(4)
                 while (class348 != null) {
                     val class348_sub32 = class348 as Class348_Sub32
                     class348_sub32.method3023(bools, 255, i_194_, i_196_, i_192_)
-                    class348 = aClass262_8256.method1990(92.toByte())
+                    class348 = aNodeDeque_8256.method1990(92.toByte())
                 }
                 this.aHa_Sub2_8272!!.method3762(5890, 768, (-87).toByte(), 0)
                 this.aHa_Sub2_8272!!.method3775(false, 0, 770, 5890)

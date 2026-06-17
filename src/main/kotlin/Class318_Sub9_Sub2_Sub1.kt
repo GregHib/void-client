@@ -207,7 +207,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
                 anInt10421 -= (anInt10421.toLong() * l_38_ shr 28).toInt()
             }
             if (class181.anIntArray2402 != null) {
-                val class348 = (class318_sub10.aClass262_6479.aClass348_3334)
+                val class348 = (class318_sub10.aNodeDeque_6479.aClass348_3334)
                 var class348_39_ = class348.aClass348_4294
                 while (class348_39_ !== class348) {
                     val class348_sub42_sub20 = class348_39_ as Class348_Sub42_Sub20?

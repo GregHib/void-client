@@ -1,17 +1,20 @@
 import java.awt.Canvas
 
-class Class262 {
+/*
+ * Class262
+ */
+class NodeDeque {
     @JvmField
     var aClass348_3334: Class348 = Class348()
     private var aClass348_3342: Class348? = null
 
-    fun method1988(class262_0_: Class262?, i: Byte) {
+    fun method1988(nodeDeque_0_: NodeDeque?, i: Byte) {
         if (i.toInt() != -115) method1995(-53)
-        method1989((this.aClass348_3334.aClass348_4294), false, class262_0_)
+        method1989((this.aClass348_3334.aClass348_4294), false, nodeDeque_0_)
         anInt3340++
     }
 
-    private fun method1989(class348: Class348?, bool: Boolean, class262_1_: Class262?) {
+    private fun method1989(class348: Class348?, bool: Boolean, nodeDeque_1_: NodeDeque?) {
         do {
             try {
                 anInt3325++
@@ -19,15 +22,15 @@ class Class262 {
                 this.aClass348_3334.aClass348_4295 = class348!!.aClass348_4295
                 class348.aClass348_4295!!.aClass348_4294 = this.aClass348_3334
                 if (this.aClass348_3334 !== class348) {
-                    class348.aClass348_4295 = (class262_1_!!.aClass348_3334.aClass348_4295)
+                    class348.aClass348_4295 = (nodeDeque_1_!!.aClass348_3334.aClass348_4295)
                     class348.aClass348_4295!!.aClass348_4294 = class348
-                    class262_1_.aClass348_3334.aClass348_4295 = class348_2_
-                    class348_2_!!.aClass348_4294 = class262_1_.aClass348_3334
+                    nodeDeque_1_.aClass348_3334.aClass348_4295 = class348_2_
+                    class348_2_!!.aClass348_4294 = nodeDeque_1_.aClass348_3334
                 }
                 if (bool == false) break
                 aClass45_3323 = null
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uh.K(" + (if (class348 != null) "{...}" else "null") + ',' + bool + ',' + (if (class262_1_ != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("uh.K(" + (if (class348 != null) "{...}" else "null") + ',' + bool + ',' + (if (nodeDeque_1_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

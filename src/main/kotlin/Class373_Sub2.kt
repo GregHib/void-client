@@ -5,10 +5,10 @@ import java.awt.event.MouseMotionListener
 
 class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseListener, MouseMotionListener {
     private var anInt7432 = 0
-    private var aClass262_7441: Class262? = Class262()
+    private var aNodeDeque_7441: NodeDeque? = NodeDeque()
     private var anInt7442 = 0
     private var anInt7448 = 0
-    private var aClass262_7450: Class262? = Class262()
+    private var aNodeDeque_7450: NodeDeque? = NodeDeque()
     private var anInt7453 = 0
     private var anInt7454 = 0
     private var anInt7456 = 0
@@ -70,10 +70,10 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
         anInt7440++
         anInt7448 = anInt7453
         anInt7442 = anInt7454
-        val class262 = aClass262_7441
-        aClass262_7441 = aClass262_7450
-        aClass262_7450 = class262
-        aClass262_7450!!.method1996(i xor 0x66)
+        val class262 = aNodeDeque_7441
+        aNodeDeque_7441 = aNodeDeque_7450
+        aNodeDeque_7450 = class262
+        aNodeDeque_7450!!.method1996(i xor 0x66)
     }
 
     @Synchronized
@@ -99,7 +99,7 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
     override fun method3596(i: Int): Class348_Sub45? {
         if (i != 0) mouseReleased(null)
         anInt7437++
-        return aClass262_7441!!.method1997(i + 8) as Class348_Sub45?
+        return aNodeDeque_7441!!.method1997(i + 8) as Class348_Sub45?
     }
 
     private fun method3606(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
@@ -110,7 +110,7 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
         class348_sub45_sub2.anInt9730 = i_7_
         class348_sub45_sub2.anInt9736 = i
         class348_sub45_sub2.aLong9734 = Class62.method599(-110)
-        aClass262_7450!!.method1999(class348_sub45_sub2, -20180)
+        aNodeDeque_7450!!.method1999(class348_sub45_sub2, -20180)
         if (i_8_ >= -110) Companion.method3607(28, null, -68)
     }
 
@@ -156,8 +156,8 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
             aComponent7459!!.removeMouseMotionListener(this)
             aComponent7459!!.removeMouseListener(this)
             aComponent7459 = null
-            aClass262_7441 = null
-            aClass262_7450 = null
+            aNodeDeque_7441 = null
+            aNodeDeque_7450 = null
             anInt7432 = 0
             anInt7448 = anInt7432
             anInt7442 = anInt7448

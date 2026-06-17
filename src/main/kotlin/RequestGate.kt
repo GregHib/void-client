@@ -3,7 +3,7 @@
 */
 object RequestGate {
     private var aBoolean3296 = false
-    private val aClass262_3297: Class262
+    private val aNodeDeque_3297: NodeDeque
     private var anInt3298 = 0
 
     @Synchronized
@@ -24,7 +24,7 @@ object RequestGate {
             else {
                 val class348_sub28 = Class348_Sub28()
                 class348_sub28.anInterface19_6908 = interface19
-                aClass262_3297.method1999(class348_sub28, -20180)
+                aNodeDeque_3297.method1999(class348_sub28, -20180)
             }
         }
     }
@@ -32,7 +32,7 @@ object RequestGate {
     @Synchronized
     fun method1948(i: Byte) {
         while (true) {
-            val class348_sub28 = aClass262_3297.method1997(8) as Class348_Sub28?
+            val class348_sub28 = aNodeDeque_3297.method1997(8) as Class348_Sub28?
             if (class348_sub28 == null) break
             class348_sub28.anInterface19_6908!!.w(true)
             class348_sub28.method2715(69.toByte())
@@ -47,6 +47,6 @@ object RequestGate {
     }
 
     init {
-        aClass262_3297 = Class262()
+        aNodeDeque_3297 = NodeDeque()
     }
 }

@@ -9,7 +9,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
     var aClass318_Sub9_Sub2_Sub1Array6475: Array<Class318_Sub9_Sub2_Sub1?>
     var anInt6476: Int = 0
     private var aDoublyLinkedNodeList_6478: DoublyLinkedNodeList
-    var aClass262_6479: Class262
+    var aNodeDeque_6479: NodeDeque
     private var anInt6480: Int
     var aClass98_6481: Class98
     var aBoolean6482: Boolean
@@ -36,10 +36,10 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
 
     fun method2530() {
         this.aBoolean6470 = true
-        var class348_sub42_sub20 = (this.aClass262_6479.method1995(4) as Class348_Sub42_Sub20?)
+        var class348_sub42_sub20 = (this.aNodeDeque_6479.method1995(4) as Class348_Sub42_Sub20?)
         while (class348_sub42_sub20 != null) {
             if (class348_sub42_sub20.aSpotAnimVector_9704!!.anInt2296 == 1) class348_sub42_sub20.method3162(true)
-            class348_sub42_sub20 = this.aClass262_6479.method1990(89.toByte()) as Class348_Sub42_Sub20?
+            class348_sub42_sub20 = this.aNodeDeque_6479.method1990(89.toByte()) as Class348_Sub42_Sub20?
         }
         for (i in (this.aClass318_Sub9_Sub2_Sub1Array6475).indices) {
             if (this.aClass318_Sub9_Sub2_Sub1Array6475[i] != null) {
@@ -50,7 +50,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         this.anInt6476 = 0
         aDoublyLinkedNodeList_6478 = DoublyLinkedNodeList()
         anInt6480 = 0
-        this.aClass262_6479 = Class262()
+        this.aNodeDeque_6479 = NodeDeque()
         anInt6485 = 0
         this.method2373(false)
         Class348_Sub51.aClass318_Sub10Array7249!![GlTexture2D.anInt8550] = this
@@ -148,14 +148,14 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
 
     private fun method2538(class342s: Array<Class342?>?, bool: Boolean) {
         for (i in 0..7) aBooleanArray6477!![i] = false
-        var class348_sub42_sub20 = (this.aClass262_6479.method1995(4) as Class348_Sub42_Sub20?)
+        var class348_sub42_sub20 = (this.aNodeDeque_6479.method1995(4) as Class348_Sub42_Sub20?)
         while_112_@ while (class348_sub42_sub20 != null) {
             if (class342s != null) {
                 for (i in class342s.indices) {
                     if ((class348_sub42_sub20!!.aClass342_9702) == class342s[i] || ((class348_sub42_sub20.aClass342_9702) == class342s[i]!!.aClass342_4248)) {
                         aBooleanArray6477!![i] = true
                         class348_sub42_sub20.method3279(2)
-                        class348_sub42_sub20 = this.aClass262_6479.method1990(85.toByte()) as Class348_Sub42_Sub20?
+                        class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as Class348_Sub42_Sub20?
                         continue@while_112_
                     }
                 }
@@ -168,7 +168,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
                     Class318_Sub7.Companion.anInt6450--
                 }
             }
-            class348_sub42_sub20 = this.aClass262_6479.method1990(85.toByte()) as Class348_Sub42_Sub20?
+            class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as Class348_Sub42_Sub20?
         }
         if (class342s != null) {
             for (i in class342s.indices) {
@@ -181,7 +181,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
                         Class318_Sub7.Companion.anInt6450++
                     }
                     if (class348_sub42_sub20 == null) class348_sub42_sub20 = Class348_Sub42_Sub20(class342s[i], this)
-                    this.aClass262_6479.method1999(class348_sub42_sub20, -20180)
+                    this.aNodeDeque_6479.method1999(class348_sub42_sub20, -20180)
                     anInt6485++
                     aBooleanArray6477!![i] = true
                 }
@@ -204,7 +204,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
     init {
         aDoublyLinkedNodeList_6478 = DoublyLinkedNodeList()
         anInt6480 = 0
-        this.aClass262_6479 = Class262()
+        this.aNodeDeque_6479 = NodeDeque()
         this.aBoolean6482 = false
         anInt6485 = 0
         aBoolean6484 = false

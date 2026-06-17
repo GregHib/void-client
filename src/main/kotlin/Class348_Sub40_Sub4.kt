@@ -4,7 +4,7 @@
 class Class348_Sub40_Sub4 : Class348_Sub40(0, true) {
     override fun method3042(i: Int, i_0_: Int): IntArray? {
         anInt9115++
-        if (i_0_ != 255) aClass262_9111 = null
+        if (i_0_ != 255) aNodeDeque_9111 = null
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) ArrayCopyUtil.method1579(`is`, 0, Class348_Sub40_Sub6.Companion.anInt9139, LightDetailOptionState.anIntArray6035!![i])
         return `is`
@@ -12,7 +12,7 @@ class Class348_Sub40_Sub4 : Class348_Sub40(0, true) {
 
     companion object {
         @JvmField
-        var aClass262_9111: Class262? = Class262()
+        var aNodeDeque_9111: NodeDeque? = NodeDeque()
         @JvmField
         var anInt9112: Int = 0
         @JvmField
@@ -26,7 +26,7 @@ class Class348_Sub40_Sub4 : Class348_Sub40(0, true) {
         fun method3057(i: Byte) {
             if (i > -32) method3058(-76, 25, -12)
             aAbstractCameraTransform_9114 = null
-            aClass262_9111 = null
+            aNodeDeque_9111 = null
             aRenderConfig9113 = null
         }
 

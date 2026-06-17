@@ -22,7 +22,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     @JvmField
     var aNativeInterface7924: NativeInterface? = null
     var aCanvas7925: Canvas? = null
-    private var aClass262_7927: Class262? = Class262()
+    private var aNodeDeque_7927: NodeDeque? = NodeDeque()
     var anInt7931: Int = 0
     var aClass269_7937: Class269? = null
     private var anInt7958 = 0
@@ -460,10 +460,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     override fun method3652() {
         anInt8065++
         if (!aBoolean8176) {
-            var class348 = aClass262_7927!!.method1995(4)
+            var class348 = aNodeDeque_7927!!.method1995(4)
             while (class348 != null) {
                 (class348 as ArbVertexProgram).method3445(-9503)
-                class348 = aClass262_7927!!.method1990(102.toByte())
+                class348 = aNodeDeque_7927!!.method1990(102.toByte())
             }
             val enumeration = aHashtable8014!!.keys()
             while (enumeration.hasMoreElements()) {
@@ -1612,7 +1612,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     private fun method3905(i: Byte) {
         method3940(1)
-        if (i < 80) aClass262_7927 = null
+        if (i < 80) aNodeDeque_7927 = null
         anInt8047++
         if (aClass367_8143 != null) aClass367_8143!!.method3532(10425)
     }
@@ -2326,7 +2326,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     override fun method3702(i: Int): ShaderProgram {
         anInt8049++
         val var_za_Sub2 = ArbVertexProgram(i)
-        aClass262_7927!!.method1999(var_za_Sub2, -20180)
+        aNodeDeque_7927!!.method1999(var_za_Sub2, -20180)
         return var_za_Sub2
     }
 
@@ -2983,12 +2983,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         @JvmStatic
         fun method3936(i: Int) {
             anInt7990++
-            if (Class262.aModelLightingConfigArrayArray3335 != null) {
+            if (NodeDeque.aModelLightingConfigArrayArray3335 != null) {
                 var i_274_ = 0
-                while ((i_274_ < Class262.aModelLightingConfigArrayArray3335!!.size)) {
+                while ((i_274_ < NodeDeque.aModelLightingConfigArrayArray3335!!.size)) {
                     var i_275_ = 0
-                    while ((Class262.aModelLightingConfigArrayArray3335!![i_274_]!!.size > i_275_)) {
-                        Class262.aModelLightingConfigArrayArray3335!![i_274_]!![i_275_] = Class274.aModelLightingConfig_3547
+                    while ((NodeDeque.aModelLightingConfigArrayArray3335!![i_274_]!!.size > i_275_)) {
+                        NodeDeque.aModelLightingConfigArrayArray3335!![i_274_]!![i_275_] = Class274.aModelLightingConfig_3547
                         i_275_++
                     }
                     i_274_++

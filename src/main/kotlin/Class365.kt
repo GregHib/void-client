@@ -24,19 +24,19 @@ class Class365 internal constructor(i: Int, string: String?, i_0_: Int, string_1
 
     companion object {
         @JvmField
-        var aClass262_4473: Class262?
+        var aNodeDeque_4473: NodeDeque?
         var anInt4474: Int = 0
         var aIntRange_4477: IntRange?
 
         @JvmStatic
         fun method3518(i: Int) {
-            aClass262_4473 = null
+            aNodeDeque_4473 = null
             if (i != 88) method3518(-49)
             aIntRange_4477 = null
         }
 
         init {
-            aClass262_4473 = Class262()
+            aNodeDeque_4473 = NodeDeque()
             aIntRange_4477 = IntRange(88, 10)
         }
     }

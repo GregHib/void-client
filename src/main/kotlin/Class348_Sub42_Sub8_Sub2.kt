@@ -526,7 +526,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         var i_65_ = i_60_
                         if (i_65_ < 3 && Class79.method802(i_62_, i_61_, true)) i_65_++
                         val class318_sub1_sub3_sub4 = (Class318_Sub1_Sub3_Sub4(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + Class275.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_))
-                        OpenGlRenderNode.aClass262_10492!!.method1999(Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180)
+                        OpenGlRenderNode.aNodeDeque_10492!!.method1999(Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180)
                     }
                 }
                 Class348_Sub3.aIntRange_6584 = null
@@ -1461,10 +1461,10 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                     class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3482(0) as? Class348_Sub37?)
                 }
-                var class348_sub27 = (Class348_Sub42_Sub20.aClass262_9711!!.method1995(4) as? Class348_Sub27?)
+                var class348_sub27 = (Class348_Sub42_Sub20.aNodeDeque_9711!!.method1995(4) as? Class348_Sub27?)
                 while (class348_sub27 != null) {
                     if ((Class278.anInt3581 <= class348_sub27.anInt6905) && (class348_sub27.anInt6905 < Class278.anInt3581 - -8) && (class348_sub27.anInt6896 >= Class73.anInt4786) && (class348_sub27.anInt6896 < Class73.anInt4786 + 8) && (class348_sub27.anInt6899 == Class348_Sub40_Sub12.anInt9200)) class348_sub27.anInt6893 = 0
-                    class348_sub27 = Class348_Sub42_Sub20.aClass262_9711!!.method1990(31.toByte()) as? Class348_Sub27?
+                    class348_sub27 = Class348_Sub42_Sub20.aNodeDeque_9711!!.method1990(31.toByte()) as? Class348_Sub27?
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true

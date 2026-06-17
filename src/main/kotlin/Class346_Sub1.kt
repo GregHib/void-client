@@ -5,15 +5,15 @@ import java.awt.event.KeyEvent
 import java.awt.event.KeyListener
 
 class Class346_Sub1 internal constructor(component: Component?) : Class346(), KeyListener, FocusListener {
-    private val aClass262_6541 = Class262()
-    private var aClass262_6542: Class262? = Class262()
+    private val aNodeDeque_6541 = NodeDeque()
+    private var aNodeDeque_6542: NodeDeque? = NodeDeque()
     private var aBooleanArray6543: BooleanArray? = BooleanArray(112)
     private var aComponent6544: Component? = null
 
     override fun method2697(i: Int): Interface6? {
         if (i != 0) aBooleanArray6543 = null
         anInt6525++
-        return aClass262_6541.method1997(8) as Interface6?
+        return aNodeDeque_6541.method1997(8) as Interface6?
     }
 
     override fun method2696(i: Int, i_0_: Int): Boolean {
@@ -31,8 +31,8 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
                 aComponent6544!!.removeFocusListener(this)
                 aComponent6544 = null
                 for (i_1_ in 0..111) aBooleanArray6543!![i_1_] = false
-                aClass262_6541.method1996(116)
-                aClass262_6542!!.method1996(i.toInt() xor 0x1b.inv())
+                aNodeDeque_6541.method1996(116)
+                aNodeDeque_6542!!.method1996(i.toInt() xor 0x1b.inv())
             }
         }
     }
@@ -62,7 +62,7 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
     override fun method2698(i: Int) {
         anInt6530++
         method2700((-104).toByte())
-        if (i != 14174) aClass262_6542 = null
+        if (i != 14174) aNodeDeque_6542 = null
     }
 
     private fun method2702(i: Int, i_4_: Int, c: Char, i_5_: Int) {
@@ -72,7 +72,7 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
         class348_sub11.anInt4767 = i
         class348_sub11.aChar4761 = c
         class348_sub11.aLong4764 = Class62.method599(-102)
-        aClass262_6542!!.method1999(class348_sub11, -20180)
+        aNodeDeque_6542!!.method1999(class348_sub11, -20180)
         if (i_4_ != 128) aComponent6544 = null
     }
 
@@ -109,9 +109,9 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
     @Synchronized
     override fun method2695(i: Int) {
         anInt6534++
-        aClass262_6541.method1996(110)
+        aNodeDeque_6541.method1996(110)
         if (i >= 51) {
-            var class348_sub11 = aClass262_6542!!.method1997(8) as Class348_Sub11?
+            var class348_sub11 = aNodeDeque_6542!!.method1997(8) as Class348_Sub11?
             while (class348_sub11 != null) {
                 class348_sub11.anInt4766 = method2704(127.toByte())
                 if (class348_sub11.anInt4771 == 0) {
@@ -122,11 +122,11 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
                         class348_sub11_10_.aChar4761 = '\u0000'
                         class348_sub11_10_.anInt4766 = class348_sub11.anInt4766
                         class348_sub11_10_.aLong4764 = class348_sub11.aLong4764
-                        aClass262_6541.method1999(class348_sub11_10_, -20180)
+                        aNodeDeque_6541.method1999(class348_sub11_10_, -20180)
                         aBooleanArray6543!![(class348_sub11.anInt4767)] = true
                     }
                     class348_sub11.anInt4771 = 2
-                    aClass262_6541.method1999(class348_sub11, -20180)
+                    aNodeDeque_6541.method1999(class348_sub11, -20180)
                 } else if (class348_sub11.anInt4771 != 1) {
                     if (class348_sub11.anInt4771 == -1) {
                         for (i_11_ in 0..111) {
@@ -137,16 +137,16 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
                                 class348_sub11_12_.anInt4766 = (class348_sub11.anInt4766)
                                 class348_sub11_12_.anInt4771 = 1
                                 class348_sub11_12_.aLong4764 = (class348_sub11.aLong4764)
-                                aClass262_6541.method1999(class348_sub11_12_, -20180)
+                                aNodeDeque_6541.method1999(class348_sub11_12_, -20180)
                                 aBooleanArray6543!![i_11_] = false
                             }
                         }
-                    } else if (class348_sub11.anInt4771 == 3) aClass262_6541.method1999(class348_sub11, -20180)
+                    } else if (class348_sub11.anInt4771 == 3) aNodeDeque_6541.method1999(class348_sub11, -20180)
                 } else if (aBooleanArray6543!![class348_sub11.anInt4767]) {
-                    aClass262_6541.method1999(class348_sub11, -20180)
+                    aNodeDeque_6541.method1999(class348_sub11, -20180)
                     aBooleanArray6543!![(class348_sub11.anInt4767)] = false
                 }
-                class348_sub11 = aClass262_6542!!.method1997(8) as Class348_Sub11?
+                class348_sub11 = aNodeDeque_6542!!.method1997(8) as Class348_Sub11?
             }
         }
     }
@@ -215,7 +215,7 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
         @JvmStatic
         fun method2703(i: Int, i_6_: Int, i_7_: Int, i_8_: Byte) {
             anInt6536++
-            val class190 = Class262.aModelLightingConfigArrayArray3335!![i_6_]!![i_7_]
+            val class190 = NodeDeque.aModelLightingConfigArrayArray3335!![i_6_]!![i_7_]
             if (i_8_.toInt() == -13) ServerConnectionInfo.method1260(false, i, (if (class190 == null) Class274.aModelLightingConfig_3547 else class190))
         }
 

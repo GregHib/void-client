@@ -16,9 +16,9 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
     private val aIndexedFileCache_6364: IndexedFileCache?
     private val aIndexedFileCache_6365: IndexedFileCache?
     private var aBoolean6368 = false
-    private val aClass262_6369: Class262
+    private val aNodeDeque_6369: NodeDeque
     private var aBoolean6371 = false
-    private var aClass262_6372: Class262? = null
+    private var aNodeDeque_6372: NodeDeque? = null
     private var anInt6373: Int
     private var aLong6374: Long
     private var aBoolean6375 = false
@@ -28,7 +28,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
         if (aClass291_6342 == null) return 0
         if (!aBoolean6368) return aClass291_6342!!.anInt3727
         if (i != 24940) method2345(-32)
-        val class348 = aClass262_6372!!.method1995(i xor 0x6168)
+        val class348 = aNodeDeque_6372!!.method1995(i xor 0x6168)
         if (class348 == null) return 0
         return class348.aLong4291.toInt()
     }
@@ -36,8 +36,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
     fun method2342(i: Int) {
         anInt6349++
         if (i != 0) aBoolean6375 = false
-        if (aClass262_6372 != null && method2340(56.toByte()) != null) {
-            var class348 = aClass262_6369.method1995(4)
+        if (aNodeDeque_6372 != null && method2340(56.toByte()) != null) {
+            var class348 = aNodeDeque_6369.method1995(4)
             while (class348 != null) {
                 val i_0_ = class348.aLong4291.toInt()
                 if (i_0_ < 0 || (aClass291_6342!!.anInt3734 <= i_0_) || aClass291_6342!!.anIntArray3725[i_0_] == 0) class348.method2715(37.toByte())
@@ -46,24 +46,24 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                     if (aByteArray6351!![i_0_].toInt() == -1) method2350(i_0_, 65.toByte(), 2)
                     if (aByteArray6351!![i_0_].toInt() == 1) class348.method2715(29.toByte())
                 }
-                class348 = aClass262_6369.method1990(112.toByte())
+                class348 = aNodeDeque_6369.method1990(112.toByte())
             }
         }
     }
 
     fun method2343(i: Int) {
         anInt6356++
-        if (aClass262_6372 != null) {
+        if (aNodeDeque_6372 != null) {
             if (method2340(56.toByte()) == null) return
             if (aBoolean6368) {
                 var bool = true
-                var class348 = aClass262_6372!!.method1995(4)
+                var class348 = aNodeDeque_6372!!.method1995(4)
                 while (class348 != null) {
                     val i_1_ = class348.aLong4291.toInt()
                     if (aByteArray6351!![i_1_].toInt() == 0) method2350(i_1_, 65.toByte(), 1)
                     if (aByteArray6351!![i_1_].toInt() != 0) class348.method2715(22.toByte())
                     else bool = false
-                    class348 = aClass262_6372!!.method1990(106.toByte())
+                    class348 = aNodeDeque_6372!!.method1990(106.toByte())
                 }
                 while (aClass291_6342!!.anIntArray3725.size > anInt6373) {
                     if (aClass291_6342!!.anIntArray3725[anInt6373] == 0) anInt6373++
@@ -76,7 +76,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                         if (aByteArray6351!![anInt6373].toInt() == 0) {
                             val class348 = Class348()
                             class348.aLong4291 = anInt6373.toLong()
-                            aClass262_6372!!.method1999(class348, -20180)
+                            aNodeDeque_6372!!.method1999(class348, -20180)
                             bool = false
                         }
                         anInt6373++
@@ -88,13 +88,13 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                 }
             } else if (aBoolean6371) {
                 var bool = true
-                var class348 = aClass262_6372!!.method1995(4)
+                var class348 = aNodeDeque_6372!!.method1995(4)
                 while (class348 != null) {
                     val i_2_ = class348.aLong4291.toInt()
                     if (aByteArray6351!![i_2_].toInt() != 1) method2350(i_2_, 65.toByte(), 2)
                     if (aByteArray6351!![i_2_].toInt() != 1) bool = false
                     else class348.method2715(60.toByte())
-                    class348 = aClass262_6372!!.method1990(43.toByte())
+                    class348 = aNodeDeque_6372!!.method1990(43.toByte())
                 }
                 while (aClass291_6342!!.anIntArray3725.size > anInt6373) {
                     if (aClass291_6342!!.anIntArray3725[anInt6373] == 0) anInt6373++
@@ -108,7 +108,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                             val class348 = Class348()
                             class348.aLong4291 = anInt6373.toLong()
                             bool = false
-                            aClass262_6372!!.method1999(class348, i + -20179)
+                            aNodeDeque_6372!!.method1999(class348, i + -20179)
                         }
                         anInt6373++
                     }
@@ -117,7 +117,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                     anInt6373 = 0
                     aBoolean6371 = false
                 }
-            } else aClass262_6372 = null
+            } else aNodeDeque_6372 = null
         }
         if (i == -1) {
             if (aBoolean6375 && Class62.method599(-94) >= aLong6374) {
@@ -158,7 +158,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
             anInt6366++
             if (aIndexedFileCache_6365 != null) {
                 aBoolean6371 = true
-                if (aClass262_6372 == null) aClass262_6372 = Class262()
+                if (aNodeDeque_6372 == null) aNodeDeque_6372 = NodeDeque()
             }
         }
     }
@@ -168,15 +168,15 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
         if (i.toInt() != -52) aClass291_6342 = null
         if (aIndexedFileCache_6365 != null) {
             run {
-                var class348 = aClass262_6369.method1995(i.toInt() xor 0x37.inv())
+                var class348 = aNodeDeque_6369.method1995(i.toInt() xor 0x37.inv())
                 while (class348 != null) {
                     if (i_5_.toLong() == class348.aLong4291) return
-                    class348 = aClass262_6369.method1990(124.toByte())
+                    class348 = aNodeDeque_6369.method1990(124.toByte())
                 }
             }
             val class348 = Class348()
             class348.aLong4291 = i_5_.toLong()
-            aClass262_6369.method1999(class348, -20180)
+            aNodeDeque_6369.method1999(class348, -20180)
         }
     }
 
@@ -348,7 +348,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
     init {
         aClass356_6360 = Class356(16)
         anInt6373 = 0
-        aClass262_6369 = Class262()
+        aNodeDeque_6369 = NodeDeque()
         aLong6374 = 0L
         do {
             try {
@@ -356,7 +356,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                 aIndexedFileCache_6365 = indexedFileCache
                 if (aIndexedFileCache_6365 != null) {
                     aBoolean6368 = true
-                    aClass262_6372 = Class262()
+                    aNodeDeque_6372 = NodeDeque()
                 } else aBoolean6368 = false
                 anInt6344 = i_24_
                 aByteArray6346 = `is`

@@ -728,13 +728,13 @@ class Class348_Sub12 internal constructor(var aClass348_Sub21_6751: Class348_Sub
             anInt6734++
             if (i_10_ >= 118) {
                 var class348_sub27: Class348_Sub27? = null
-                var class348_sub27_12_ = (Class348_Sub42_Sub20.aClass262_9711!!.method1995(4) as? Class348_Sub27?)
+                var class348_sub27_12_ = (Class348_Sub42_Sub20.aNodeDeque_9711!!.method1995(4) as? Class348_Sub27?)
                 while (class348_sub27_12_ != null) {
                     if ((class348_sub27_12_.anInt6899 == i) && i_11_ == class348_sub27_12_.anInt6905 && i_4_ == class348_sub27_12_.anInt6896 && (class348_sub27_12_.anInt6904 == i_7_)) {
                         class348_sub27 = class348_sub27_12_
                         break
                     }
-                    class348_sub27_12_ = Class348_Sub42_Sub20.aClass262_9711!!.method1990(50.toByte()) as? Class348_Sub27?
+                    class348_sub27_12_ = Class348_Sub42_Sub20.aNodeDeque_9711!!.method1990(50.toByte()) as? Class348_Sub27?
                 }
                 if (class348_sub27 == null) {
                     class348_sub27 = Class348_Sub27()
@@ -743,7 +743,7 @@ class Class348_Sub12 internal constructor(var aClass348_Sub21_6751: Class348_Sub
                     class348_sub27.anInt6896 = i_4_
                     class348_sub27.anInt6905 = i_11_
                     if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.anInt7319 > i_11_ && Class348_Sub40_Sub3.anInt9109 > i_4_) method1387(-69, class348_sub27)
-                    Class348_Sub42_Sub20.aClass262_9711!!.method1999(class348_sub27, -20180)
+                    Class348_Sub42_Sub20.aNodeDeque_9711!!.method1999(class348_sub27, -20180)
                 }
                 class348_sub27.anInt6893 = i_5_
                 class348_sub27.anInt6900 = i_8_

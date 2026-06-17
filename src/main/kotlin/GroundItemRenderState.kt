@@ -66,7 +66,7 @@ object GroundItemRenderState {
 
     fun method1014(i: Int) {
         anInt1660++
-        var class348_sub42_sub6 = OpenGlRenderNode.aClass262_10492!!.method1995(4) as? Class348_Sub42_Sub6
+        var class348_sub42_sub6 = OpenGlRenderNode.aNodeDeque_10492!!.method1995(4) as? Class348_Sub42_Sub6
         while (class348_sub42_sub6 != null) {
             val class318_sub1_sub3_sub4 = (class348_sub42_sub6.aClass318_Sub1_Sub3_Sub4_9538)!!
             if (class318_sub1_sub3_sub4.aBoolean10345) {
@@ -77,14 +77,14 @@ object GroundItemRenderState {
                 if (class318_sub1_sub3_sub4.aBoolean10345) class348_sub42_sub6.method2715(42.toByte())
                 else method850(class318_sub1_sub3_sub4, true)
             }
-            class348_sub42_sub6 = (OpenGlRenderNode.aClass262_10492!!.method1990(55.toByte()) as? Class348_Sub42_Sub6)
+            class348_sub42_sub6 = (OpenGlRenderNode.aNodeDeque_10492!!.method1990(55.toByte()) as? Class348_Sub42_Sub6)
         }
         if (i != -4) aBoolean1661 = false
     }
 
     fun method1015(i: Int, i_20_: Int, bool: Boolean) {
         anInt1658++
-        val class190 = Class262.aModelLightingConfigArrayArray3335!![i]!![i_20_]
+        val class190 = NodeDeque.aModelLightingConfigArrayArray3335!![i]!![i_20_]
         if (class190 != null) {
             SingletonMarker.anInt2601 = class190.anInt2535
             CameraRotationStub.anInt325 = class190.anInt2538

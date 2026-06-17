@@ -127,30 +127,30 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             val i_12_ = 81 % ((i - -70) / 35)
             anInt3313++
             if (!Class5_Sub1.aBoolean8335) Class348_Sub42_Sub6.aBoolean9535 = ((Class332.anInt4143 != -1 && Class73.anInt4776 >= Class332.anInt4143) || (Class348_Sub42_Sub8_Sub2.anInt10432 < 16 * Class73.anInt4776 - -(if (!Class71.aBoolean1211) 22 else 26)))
-            ItemDefinitionLoader.aClass262_2187!!.method1996(103)
-            Class348_Sub40_Sub38.aClass262_9478!!.method1996(104)
-            var class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as Class348_Sub42_Sub12?)
+            ItemDefinitionLoader.aNodeDeque_2187!!.method1996(103)
+            Class348_Sub40_Sub38.aNodeDeque_9478!!.method1996(104)
+            var class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as Class348_Sub42_Sub12?)
             while (class348_sub42_sub12 != null) {
                 val i_13_ = class348_sub42_sub12.anInt9608
                 if (i_13_ < 1000) {
                     class348_sub42_sub12.method2715(97.toByte())
-                    if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) Class348_Sub40_Sub38.aClass262_9478!!.method1999(class348_sub42_sub12, -20180)
-                    else ItemDefinitionLoader.aClass262_2187!!.method1999(class348_sub42_sub12, -20180)
+                    if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) Class348_Sub40_Sub38.aNodeDeque_9478!!.method1999(class348_sub42_sub12, -20180)
+                    else ItemDefinitionLoader.aNodeDeque_2187!!.method1999(class348_sub42_sub12, -20180)
                 }
-                class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(83.toByte()) as Class348_Sub42_Sub12?
+                class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(83.toByte()) as Class348_Sub42_Sub12?
             }
-            ItemDefinitionLoader.aClass262_2187!!.method1988(Class348_Sub40_Sub4.aClass262_9111, (-115).toByte())
-            Class348_Sub40_Sub38.aClass262_9478!!.method1988(Class348_Sub40_Sub4.aClass262_9111, (-115).toByte())
+            ItemDefinitionLoader.aNodeDeque_2187!!.method1988(Class348_Sub40_Sub4.aNodeDeque_9111, (-115).toByte())
+            Class348_Sub40_Sub38.aNodeDeque_9478!!.method1988(Class348_Sub40_Sub4.aNodeDeque_9111, (-115).toByte())
             if (Class73.anInt4776 > 1) {
-                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aClass346_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
-                else Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295!!.aClass348_4295 as Class348_Sub42_Sub12?)
-                GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
+                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aClass346_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
+                else Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295!!.aClass348_4295 as Class348_Sub42_Sub12?)
+                GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
             } else {
                 Class316.aClass348_Sub42_Sub12_3963 = null
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = null
             }
             var i_14_ = -1
-            val class348_sub45 = Class318_Sub1_Sub3.aClass262_8744!!.method1995(4) as Class348_Sub45?
+            val class348_sub45 = Class318_Sub1_Sub3.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?
             if (class348_sub45 != null) i_14_ = class348_sub45.method3310(58)
             if (Class5_Sub1.aBoolean8335) {
                 if (i_14_ == -1) {
@@ -277,7 +277,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                             }
                             if (i_35_ != -1) {
                                 var i_39_ = 0
-                                val class312 = Class312(Class348_Sub40_Sub4.aClass262_9111!!)
+                                val class312 = Class312(Class348_Sub40_Sub4.aNodeDeque_9111!!)
                                 var class348_sub42_sub12 = (class312.method2327((-53).toByte()) as Class348_Sub42_Sub12?)
                                 while (class348_sub42_sub12 != null) {
                                     if (i_35_ == i_39_) {

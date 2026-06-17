@@ -4,13 +4,13 @@ import Class375.method3612
 * Visit http://jode.sourceforge.net/
 */
 class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_8852: Class348_Sub16_Sub3) : Class348_Sub16() {
-    var aClass262_8848: Class262 = Class262()
+    var aNodeDeque_8848: NodeDeque = NodeDeque()
     var aClass348_Sub16_Sub4_8855: Class348_Sub16_Sub4 = Class348_Sub16_Sub4()
     override fun method2818(): Class348_Sub16? {
         anInt8856++
         var class348_sub43: Class348_Sub43?
         do {
-            class348_sub43 = this.aClass262_8848.method1990(122.toByte()) as Class348_Sub43?
+            class348_sub43 = this.aNodeDeque_8848.method1990(122.toByte()) as Class348_Sub43?
             if (class348_sub43 == null) return null
         } while (class348_sub43.aClass348_Sub16_Sub5_7081 == null)
         return class348_sub43.aClass348_Sub16_Sub5_7081
@@ -19,7 +19,7 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
     override fun method2817(`is`: IntArray, i: Int, i_0_: Int) {
         anInt8847++
         this.aClass348_Sub16_Sub4_8855.method2817(`is`, i, i_0_)
-        var class348_sub43 = (this.aClass262_8848.method1995(4) as Class348_Sub43?)
+        var class348_sub43 = (this.aNodeDeque_8848.method1995(4) as Class348_Sub43?)
         while_125_@ while (class348_sub43 != null) {
             if (!aClass348_Sub16_Sub3_8852.method2847(-107, class348_sub43)) {
                 var i_1_ = i
@@ -29,14 +29,14 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
                     i_1_ += class348_sub43.anInt7086
                     i_2_ -= class348_sub43.anInt7086
                     if (aClass348_Sub16_Sub3_8852.method2852(`is`, i_2_, class348_sub43, i_1_, (-4).toByte())) {
-                        class348_sub43 = this.aClass262_8848.method1990(121.toByte()) as Class348_Sub43?
+                        class348_sub43 = this.aNodeDeque_8848.method1990(121.toByte()) as Class348_Sub43?
                         continue@while_125_
                     }
                 }
                 method2825(i_1_ + i_2_, class348_sub43, i_1_, (-114).toByte(), i_2_, `is`)
                 class348_sub43.anInt7086 -= i_2_
             }
-            class348_sub43 = this.aClass262_8848.method1990(121.toByte()) as Class348_Sub43?
+            class348_sub43 = this.aNodeDeque_8848.method1990(121.toByte()) as Class348_Sub43?
         }
     }
 
@@ -68,7 +68,7 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
     override fun method2819(i: Int) {
         this.aClass348_Sub16_Sub4_8855.method2819(i)
         anInt8850++
-        var class348_sub43 = (this.aClass262_8848.method1995(4) as Class348_Sub43?)
+        var class348_sub43 = (this.aNodeDeque_8848.method1995(4) as Class348_Sub43?)
         while_127_@ while (class348_sub43 != null) {
             if (!aClass348_Sub16_Sub3_8852.method2847(53, class348_sub43)) {
                 var i_8_ = i
@@ -76,14 +76,14 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
                     method2824(class348_sub43.anInt7086, 115.toByte(), class348_sub43)
                     i_8_ -= class348_sub43.anInt7086
                     if (aClass348_Sub16_Sub3_8852.method2852(null, i_8_, class348_sub43, 0, (-4).toByte())) {
-                        class348_sub43 = this.aClass262_8848.method1990(38.toByte()) as Class348_Sub43?
+                        class348_sub43 = this.aNodeDeque_8848.method1990(38.toByte()) as Class348_Sub43?
                         continue@while_127_
                     }
                 }
                 method2824(i_8_, 84.toByte(), class348_sub43)
                 class348_sub43.anInt7086 -= i_8_
             }
-            class348_sub43 = this.aClass262_8848.method1990(38.toByte()) as Class348_Sub43?
+            class348_sub43 = this.aNodeDeque_8848.method1990(38.toByte()) as Class348_Sub43?
         }
     }
 
@@ -126,7 +126,7 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
 
     override fun method2816(): Class348_Sub16? {
         anInt8851++
-        val class348_sub43 = (this.aClass262_8848.method1995(4) as Class348_Sub43?)
+        val class348_sub43 = (this.aNodeDeque_8848.method1995(4) as Class348_Sub43?)
         if (class348_sub43 == null) return null
         if (class348_sub43.aClass348_Sub16_Sub5_7081 != null) return class348_sub43.aClass348_Sub16_Sub5_7081
         return method2818()

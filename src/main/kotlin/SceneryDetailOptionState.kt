@@ -306,7 +306,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                 val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480(((class318_sub4.aClass318_Sub1_6410!!.plane).toInt() shl 28 or (i_56_ shl 14) or i_55_).toLong(), -6008)) as Class348_Sub37?)
                                 if (class348_sub37 != null) {
                                     var i_57_ = 0
-                                    var class348_sub34 = (class348_sub37.aClass262_6998.method1993(-92) as Class348_Sub34?)
+                                    var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1993(-92) as Class348_Sub34?)
                                     while (class348_sub34 != null) {
                                         val class213 = (Exception_Sub1.aModelHeaderCache_112!!.method1940(79, (class348_sub34.anInt6973)))
                                         if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
@@ -336,7 +336,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         }
                                         Class348_Sub33.anInt6956++
                                         Class50_Sub3.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (Class274.aClass274_3505!!.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973.toLong(), Class286_Sub8.anInt6299)
-                                        class348_sub34 = (class348_sub37.aClass262_6998.method2003(-127) as Class348_Sub34?)
+                                        class348_sub34 = (class348_sub37.aNodeDeque_6998.method2003(-127) as Class348_Sub34?)
                                         i_57_++
                                     }
                                 }

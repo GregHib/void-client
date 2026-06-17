@@ -108,7 +108,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var aNativeHeap7730: NativeHeap? = null
     @JvmField
     var anInt7731: Int
-    private val aClass262_7732: Class262
+    private val aNodeDeque_7732: NodeDeque
     @JvmField
     var anInt7733: Int
     private var aBoolean7734: Boolean
@@ -130,14 +130,14 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var anInt7747: Int = 0
     @JvmField
     var anInt7748: Int = 0
-    private val aClass262_7749: Class262
+    private val aNodeDeque_7749: NodeDeque
     private var anInt7750 = 0
-    private var aClass262_7751: Class262?
-    private val aClass262_7752: Class262
-    private val aClass262_7753: Class262
-    private val aClass262_7754: Class262
-    private val aClass262_7755: Class262
-    private val aClass262_7756: Class262
+    private var aNodeDeque_7751: NodeDeque?
+    private val aNodeDeque_7752: NodeDeque
+    private val aNodeDeque_7753: NodeDeque
+    private val aNodeDeque_7754: NodeDeque
+    private val aNodeDeque_7755: NodeDeque
+    private val aNodeDeque_7756: NodeDeque
     private var aLong7757: Long = 0
     private var aBoolean7758 = false
     private var aBoolean7759 = false
@@ -510,7 +510,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         val class348_sub35 = Class348_Sub35(i_32_)
         class348_sub35.aLong4291 = i.toLong()
         val i_33_ = -124 / ((i_31_ - 79) / 39)
-        aClass262_7752.method1999(class348_sub35, -20180)
+        aNodeDeque_7752.method1999(class348_sub35, -20180)
     }
 
     fun method3738(i: Int, i_34_: Int) {
@@ -1095,8 +1095,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7699++
         var i_122_ = 0
         i = i and 0x7fffffff
-        while (!aClass262_7751!!.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_7751!!.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_7751!!.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_7751!!.method1997(8) as Class348_Sub35?
             Class328_Sub3.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt7747 -= class348_sub35.anInt6976
             if (i_122_ == 1000) {
@@ -1108,8 +1108,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glDeleteBuffersARB(i_122_, Class328_Sub3.anIntArray6522, 0)
             i_122_ = 0
         }
-        while (!aClass262_7752.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_7752.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_7752.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_7752.method1997(8) as Class348_Sub35?
             Class328_Sub3.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt7748 -= class348_sub35.anInt6976
             if (i_122_ == 1000) {
@@ -1121,8 +1121,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glDeleteTextures(i_122_, Class328_Sub3.anIntArray6522, 0)
             i_122_ = 0
         }
-        while (!aClass262_7753.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_7753.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_7753.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_7753.method1997(8) as Class348_Sub35?
             Class328_Sub3.anIntArray6522!![i_122_++] = class348_sub35!!.anInt6976
             if (i_122_ == 1000) {
                 glDeleteFramebuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0)
@@ -1133,8 +1133,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glDeleteFramebuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0)
             i_122_ = 0
         }
-        while (!aClass262_7754.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_7754.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_7754.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_7754.method1997(8) as Class348_Sub35?
             Class328_Sub3.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
             anInt7750 -= class348_sub35.anInt6976
             if (i_122_ == 1000) {
@@ -1146,20 +1146,20 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glDeleteRenderbuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0)
             val bool = false
         }
-        while (!aClass262_7749.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_7749.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_7749.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_7749.method1997(8) as Class348_Sub35?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
-        while (!aClass262_7755.method2002(18.toByte())) {
-            val class348 = aClass262_7755.method1997(8)
+        while (!aNodeDeque_7755.method2002(18.toByte())) {
+            val class348 = aNodeDeque_7755.method1997(8)
             glDeleteProgramARB(class348!!.aLong4291.toInt())
         }
-        while (!aClass262_7756.method2002(18.toByte())) {
-            val class348 = aClass262_7756.method1997(8)
+        while (!aNodeDeque_7756.method2002(18.toByte())) {
+            val class348 = aNodeDeque_7756.method1997(8)
             glDeleteObjectARB(class348!!.aLong4291)
         }
-        while (!aClass262_7749.method2002(18.toByte())) {
-            val class348_sub35 = aClass262_7749.method1997(8) as Class348_Sub35?
+        while (!aNodeDeque_7749.method2002(18.toByte())) {
+            val class348_sub35 = aNodeDeque_7749.method1997(8) as Class348_Sub35?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
         aClass354_7723.method3469(8218)
@@ -1207,7 +1207,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     fun method3761(i: Int, i_133_: Int) {
-        if (i != 0) aClass262_7751 = null
+        if (i != 0) aNodeDeque_7751 = null
         anInt7654++
         if (i_133_ == 1) method3729(7681, 114.toByte(), 7681)
         else if (i_133_ == 0) method3729(8448, 107.toByte(), 8448)
@@ -1266,7 +1266,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7566++
         val class348 = Class348()
         class348.aLong4291 = i_137_.toLong()
-        aClass262_7755.method1999(class348, -20180)
+        aNodeDeque_7755.method1999(class348, -20180)
     }
 
     fun method3766(i: Byte, class101_sub3: ProjectionCameraTransform?) {
@@ -1380,10 +1380,10 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     override fun method3652() {
-        var class348 = aClass262_7732.method1995(4)
+        var class348 = aNodeDeque_7732.method1995(4)
         while (class348 != null) {
             (class348 as NativeShaderProgram).method3440(-82)
-            class348 = aClass262_7732.method1990(55.toByte())
+            class348 = aNodeDeque_7732.method1990(55.toByte())
         }
         anInt7563++
         if (aGlFramebufferBlitter_7720 != null) aGlFramebufferBlitter_7720.method279((-126).toByte())
@@ -1446,11 +1446,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @Synchronized
     fun method3769(l: Long, bool: Boolean) {
         try {
-            if (bool != false) aClass262_7751 = null
+            if (bool != false) aNodeDeque_7751 = null
             anInt7533++
             val class348 = Class348()
             class348.aLong4291 = l
-            aClass262_7756.method1999(class348, -20180)
+            aNodeDeque_7756.method1999(class348, -20180)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, "qo.CD(" + l + ',' + bool + ')')
         }
@@ -1604,7 +1604,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     override fun method3702(i: Int): ShaderProgram {
         anInt7538++
         val var_za_Sub1 = NativeShaderProgram(i)
-        aClass262_7732.method1999(var_za_Sub1, -20180)
+        aNodeDeque_7732.method1999(var_za_Sub1, -20180)
         return var_za_Sub1
     }
 
@@ -2016,7 +2016,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7616++
         val class348_sub35 = Class348_Sub35(i)
         class348_sub35.aLong4291 = i_236_.toLong()
-        aClass262_7751!!.method1999(class348_sub35, -20180)
+        aNodeDeque_7751!!.method1999(class348_sub35, -20180)
         if (i_235_ != -1) method3733(-17, -42, -40, null, true)
     }
 
@@ -2613,7 +2613,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     fun method3800(i: Int, i_299_: Int) {
         anInt7570++
         val class348_sub35 = Class348_Sub35(i_299_)
-        if (i > 71) aClass262_7753.method1999(class348_sub35, -20180)
+        if (i > 71) aNodeDeque_7753.method1999(class348_sub35, -20180)
     }
 
     override fun method3698() {
@@ -2922,7 +2922,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7677++
             val class348_sub35 = Class348_Sub35(i_478_)
             class348_sub35.aLong4291 = i.toLong()
-            aClass262_7754.method1999(class348_sub35, -20180)
+            aNodeDeque_7754.method1999(class348_sub35, -20180)
         }
     }
 
@@ -2946,7 +2946,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         this.anInt7731 = 3
         aBoolean7734 = false
         this.anInt7733 = 8
-        aClass262_7732 = Class262()
+        aNodeDeque_7732 = NodeDeque()
         anInterface11Array7737 = arrayOfNulls<Interface11>(4)
         anInt7738 = -1
         anInt7742 = -1
@@ -2955,13 +2955,13 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7746 = -1
         LinkedNodeListIterator()
         Class356(16)
-        aClass262_7749 = Class262()
-        aClass262_7751 = Class262()
-        aClass262_7752 = Class262()
-        aClass262_7753 = Class262()
-        aClass262_7754 = Class262()
-        aClass262_7755 = Class262()
-        aClass262_7756 = Class262()
+        aNodeDeque_7749 = NodeDeque()
+        aNodeDeque_7751 = NodeDeque()
+        aNodeDeque_7752 = NodeDeque()
+        aNodeDeque_7753 = NodeDeque()
+        aNodeDeque_7754 = NodeDeque()
+        aNodeDeque_7755 = NodeDeque()
+        aNodeDeque_7756 = NodeDeque()
         this.aClass101_Sub3_7760 = ProjectionCameraTransform()
         this.aClass101_Sub3_7766 = ProjectionCameraTransform()
         this.aClass101_Sub3_7767 = ProjectionCameraTransform()
@@ -3510,7 +3510,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     anInt7686++
                     if (i.toInt() != 6) aClass351_7715 = null
                     if (class348_sub42_sub12 != null) {
-                        Class348_Sub40_Sub4.aClass262_9111!!.method1999(class348_sub42_sub12, -20180)
+                        Class348_Sub40_Sub4.aNodeDeque_9111!!.method1999(class348_sub42_sub12, -20180)
                         Class73.anInt4776++
                         val `object`: Any? = null
                         var class348_sub42_sub13: Class348_Sub42_Sub13?
@@ -4067,21 +4067,21 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     }
                     val i_452_ = 0xffffff.inv() or i_448_
                     if (Class309.anIntArray4806!![i_438_] == 0) {
-                        Class262.aClass324_3326!!.method2575(115.toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i)
+                        NodeDeque.aClass324_3326!!.method2575(115.toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_446_ -= i_443_ shr 1
                     }
                     if (Class309.anIntArray4806!![i_438_] == 1) {
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
-                        Class262.aClass324_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, TextureQualityOptionState.anInt6006, false)
+                        NodeDeque.aClass324_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, TextureQualityOptionState.anInt6006, false)
                         i_447_ += 5
                         i_445_ -= 5
                     }
                     if (Class309.anIntArray4806!![i_438_] == 2) {
                         i_447_ += 5
                         i_446_ -= -5 + (i_443_ shr 1)
-                        Class262.aClass324_3326!!.method2581(string, i_452_, (TextureQualityOptionState.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
+                        NodeDeque.aClass324_3326!!.method2581(string, i_452_, (TextureQualityOptionState.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
                         i_445_ -= 5
                         i_444_ -= (i_443_ shr 1) - -5
                     }
@@ -4089,7 +4089,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
                         i_447_ += 7
-                        Class262.aClass324_3326!!.method2577(TextureQualityOptionState.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
+                        NodeDeque.aClass324_3326!!.method2577(TextureQualityOptionState.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
                         i_445_ -= 7
                     }
                     if (Class309.anIntArray4806!![i_438_] == 4) {
@@ -4097,7 +4097,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         Class348_Sub8.aRenderer6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
                         i_444_ += 50 - i_453_
                         i_446_ += -i_453_ + 50
-                        Class262.aClass324_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
+                        NodeDeque.aClass324_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
                         Class348_Sub8.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i + i_315_)
                     }
                     if (Class309.anIntArray4806!![i_438_] == 5) {
@@ -4110,7 +4110,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         Class348_Sub8.aRenderer6654!!.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_447_ += i_455_
-                        Class262.aClass324_3326!!.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
+                        NodeDeque.aClass324_3326!!.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
                         i_445_ += i_455_
                         i_446_ -= i_443_ shr 1
                         Class348_Sub8.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i_315_ + i)
@@ -4118,7 +4118,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 } else {
                     i_444_ -= i_443_ shr 1
                     i_446_ -= i_443_ shr 1
-                    Class262.aClass324_3326!!.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
+                    NodeDeque.aClass324_3326!!.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
                 }
                 Class338.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_)
             }

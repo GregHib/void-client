@@ -5,17 +5,17 @@
 class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArray?>, is_51_: Array<IntArray?>?, i_52_: Int, i_53_: Int, i_54_: Int) : TerrainTile(i, i_50_, i_52_, `is`), Interface19 {
     @JvmField
     var nativeid: Long = 0
-    private val aClass262_5149 = Class262()
+    private val aNodeDeque_5149 = NodeDeque()
     private var anInt5151 = -1
 
     override fun method3984(i: Int, i_0_: Int, i_1_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_2_: Int, i_3_: Int) {
         anInt5151 = i_2_
         var i_4_ = 0
-        val fs = FloatArray(aClass262_5149.method1998(0))
-        var class348_sub1 = aClass262_5149.method1995(4) as? Class348_Sub1?
+        val fs = FloatArray(aNodeDeque_5149.method1998(0))
+        var class348_sub1 = aNodeDeque_5149.method1995(4) as? Class348_Sub1?
         while (class348_sub1 != null) {
             fs[i_4_++] = class348_sub1.method2721(-37)
-            class348_sub1 = aClass262_5149.method1990(34.toByte()) as? Class348_Sub1?
+            class348_sub1 = aNodeDeque_5149.method1990(34.toByte()) as? Class348_Sub1?
         }
         q(fs)
         for (i_5_ in 0..<i_1_ + i_1_) {
@@ -96,7 +96,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
     }
 
     override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
-        aClass262_5149.method1999(class348_sub1, -20180)
+        aNodeDeque_5149.method1999(class348_sub1, -20180)
         V(class348_sub1.hashCode(), class348_sub1.method2724(-1), class348_sub1.method2722(124), class348_sub1.method2717(83.toByte()), class348_sub1.method2723(-1), class348_sub1.method2720(-1), `is`)
     }
 
@@ -121,11 +121,11 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
     override fun method3983(i: Int, i_63_: Int, i_64_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_65_: Int) {
         anInt5151 = -1
         var i_66_ = 0
-        val fs = FloatArray(aClass262_5149.method1998(0))
-        var class348_sub1 = aClass262_5149.method1995(4) as? Class348_Sub1?
+        val fs = FloatArray(aNodeDeque_5149.method1998(0))
+        var class348_sub1 = aNodeDeque_5149.method1995(4) as? Class348_Sub1?
         while (class348_sub1 != null) {
             fs[i_66_++] = class348_sub1.method2721(-65)
-            class348_sub1 = aClass262_5149.method1990(40.toByte()) as? Class348_Sub1?
+            class348_sub1 = aNodeDeque_5149.method1990(40.toByte()) as? Class348_Sub1?
         }
         q(fs)
         for (i_67_ in 0..<i_64_ + i_64_) {

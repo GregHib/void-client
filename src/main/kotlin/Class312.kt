@@ -8,12 +8,12 @@ import Class348_Sub40_Sub39.Companion.method3153
 */
 class Class312 {
     private var aClass348_3922: Class348? = null
-    private var aClass262_3923: Class262? = null
+    private var aNodeDeque_3923: NodeDeque? = null
     fun method2327(i: Byte): Class348? {
         anInt3929++
-        val class348 = (aClass262_3923!!.aClass348_3334.aClass348_4294)
+        val class348 = (aNodeDeque_3923!!.aClass348_3334.aClass348_4294)
         if (i.toInt() != -53) method2329(-21)
-        if (aClass262_3923!!.aClass348_3334 === class348) {
+        if (aNodeDeque_3923!!.aClass348_3334 === class348) {
             aClass348_3922 = null
             return null
         }
@@ -21,17 +21,17 @@ class Class312 {
         return class348
     }
 
-    fun method2328(class262: Class262, i: Int) {
+    fun method2328(nodeDeque: NodeDeque, i: Int) {
         anInt3927++
         if (i <= 73) method2327((-67).toByte())
-        aClass262_3923 = class262
+        aNodeDeque_3923 = nodeDeque
     }
 
     fun method2329(i: Int): Class348? {
         anInt3928++
         if (i != 10) Companion.method2330((-25).toByte())
         val class348 = aClass348_3922
-        if (aClass262_3923!!.aClass348_3334 === class348) {
+        if (aNodeDeque_3923!!.aClass348_3334 === class348) {
             aClass348_3922 = null
             return null
         }
@@ -41,8 +41,8 @@ class Class312 {
 
     constructor()
 
-    internal constructor(class262: Class262) {
-        aClass262_3923 = class262
+    internal constructor(nodeDeque: NodeDeque) {
+        aNodeDeque_3923 = nodeDeque
     }
 
     companion object {

@@ -154,7 +154,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         @JvmField
         var anInt8742: Int = 0
         @JvmField
-        var aClass262_8744: Class262? = Class262()
+        var aNodeDeque_8744: NodeDeque? = NodeDeque()
         @JvmField
         var anInt8746: Int = 0
         @JvmField
@@ -189,7 +189,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
             if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_7_] == null || Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_7_]!![i_8_] == null) return false
             val class46 = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_7_]!![i_8_]
             if (i_5_ == -1 && class46!!.anInt774 == 0) {
-                var class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
+                var class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
                 while (class348_sub42_sub12 != null) {
                     if (class348_sub42_sub12.anInt9608 == 6 || class348_sub42_sub12.anInt9608 == 1011 || (class348_sub42_sub12.anInt9608 == 13) || (class348_sub42_sub12.anInt9608 == 18) || (class348_sub42_sub12.anInt9608 == 16)) {
                         var class46_9_ = method2570(1512932720, (class348_sub42_sub12.anInt9607))
@@ -198,13 +198,13 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
                             class46_9_ = WorldMapScene.method1687(class46_9_, 3)
                         }
                     }
-                    class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(56.toByte()) as? Class348_Sub42_Sub12?
+                    class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(56.toByte()) as? Class348_Sub42_Sub12?
                 }
             } else {
-                var class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
+                var class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
                 while (class348_sub42_sub12 != null) {
                     if ((class348_sub42_sub12.anInt9602 == i_5_) && (class348_sub42_sub12.anInt9607 == class46!!.anInt830) && ((class348_sub42_sub12.anInt9608) == 6 || (class348_sub42_sub12.anInt9608) == 1011 || (class348_sub42_sub12.anInt9608) == 13 || (class348_sub42_sub12.anInt9608) == 18 || (class348_sub42_sub12.anInt9608) == 16)) return true
-                    class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(93.toByte()) as? Class348_Sub42_Sub12?
+                    class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(93.toByte()) as? Class348_Sub42_Sub12?
                 }
             }
             return false
@@ -222,7 +222,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         fun method2412(bool: Boolean) {
             aClass45_8755 = null
             aIntRange_8756 = null
-            aClass262_8744 = null
+            aNodeDeque_8744 = null
             if (bool != true) Companion.method2408((-121).toByte())
         }
 
@@ -230,7 +230,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         fun method2413(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2): Int {
             anInt8749++
             val i_35_ = class348_sub49_sub2.readBits((-24).toByte(), 2)
-            if (i != 1) aClass262_8744 = null
+            if (i != 1) aNodeDeque_8744 = null
             val i_36_: Int
             if (i_35_ != 0) {
                 if (i_35_ == 1) i_36_ = class348_sub49_sub2.readBits((-24).toByte(), 5)

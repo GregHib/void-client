@@ -85,12 +85,12 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
         var anInt2184: Int = 0
         var anInt2186: Int = 0
         @JvmField
-        var aClass262_2187: Class262? = Class262()
+        var aNodeDeque_2187: NodeDeque? = NodeDeque()
         var anInt2189: Int = 0
         @JvmStatic
         fun method1284(i: Int) {
             aIntRange_2183 = null
-            if (i == -21165) aClass262_2187 = null
+            if (i == -21165) aNodeDeque_2187 = null
         }
 
         fun method1286(file: File?, i: Int, string: String?) {

@@ -180,12 +180,12 @@ class Class348_Sub41 : Class348() {
                         }
                         i_32_++
                     }
-                    var class348_sub27 = (Class348_Sub42_Sub20.aClass262_9711!!.method1995(4) as? Class348_Sub27?)
+                    var class348_sub27 = (Class348_Sub42_Sub20.aNodeDeque_9711!!.method1995(4) as? Class348_Sub27?)
                     while (class348_sub27 != null) {
                         class348_sub27.anInt6896 -= i_21_
                         class348_sub27.anInt6905 -= i_20_
                         if (Class312.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= Class367_Sub4.anInt7319) || (Class348_Sub40_Sub3.anInt9109 <= (class348_sub27.anInt6896)))) class348_sub27.method2715(101.toByte())
-                        class348_sub27 = Class348_Sub42_Sub20.aClass262_9711!!.method1990(68.toByte()) as? Class348_Sub27?
+                        class348_sub27 = Class348_Sub42_Sub20.aNodeDeque_9711!!.method1990(68.toByte()) as? Class348_Sub27?
                     }
                     if (Class312.anInt3931 != 4) {
                         var class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3484(0) as? Class348_Sub37?)
@@ -223,8 +223,8 @@ class Class348_Sub41 : Class348() {
                     }
                     method3153(0)
                     method464(-1)
-                    OpenGlRenderNode.aClass262_10492!!.method1996(107)
-                    Class348_Sub40_Sub17.aClass262_9240!!.method1996(103)
+                    OpenGlRenderNode.aNodeDeque_10492!!.method1996(107)
+                    Class348_Sub40_Sub17.aNodeDeque_9240!!.method1996(103)
                     NpcDefinition.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
                     method1911(99.toByte())
                 }

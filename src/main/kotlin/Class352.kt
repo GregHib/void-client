@@ -43,12 +43,12 @@ class Class352 {
             if (class348_sub37 == null) {
                 class348_sub37 = Class348_Sub37()
                 ModelBatchBase.aClass356_1895!!.method3483(50.toByte(), l, class348_sub37)
-                class348_sub37.aClass262_6998.method1999(class348_sub34, -20180)
+                class348_sub37.aNodeDeque_6998.method1999(class348_sub34, -20180)
             } else {
                 var class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(i_2_ xor 0x72.inv(), (class348_sub34.anInt6973))
                 var i_3_ = class213.anInt2819
                 if (i_2_ == (class213.anInt2820.inv())) i_3_ *= 1 + class348_sub34.anInt6971
-                var class348_sub34_4_ = class348_sub37.aClass262_6998.method1995(i_2_ + 6) as Class348_Sub34?
+                var class348_sub34_4_ = class348_sub37.aNodeDeque_6998.method1995(i_2_ + 6) as Class348_Sub34?
                 while (class348_sub34_4_ != null) {
                     class213 = (Exception_Sub1.aModelHeaderCache_112!!.method1940(104, class348_sub34_4_.anInt6973))
                     var i_5_ = class213.anInt2819
@@ -57,9 +57,9 @@ class Class352 {
                         method3265(i_2_ xor 0x6c, class348_sub34, class348_sub34_4_)
                         return
                     }
-                    class348_sub34_4_ = class348_sub37.aClass262_6998.method1990(34.toByte()) as Class348_Sub34?
+                    class348_sub34_4_ = class348_sub37.aNodeDeque_6998.method1990(34.toByte()) as Class348_Sub34?
                 }
-                class348_sub37.aClass262_6998.method1999(class348_sub34, i_2_ xor 0x4ed2)
+                class348_sub37.aNodeDeque_6998.method1999(class348_sub34, i_2_ xor 0x4ed2)
             }
         }
     }

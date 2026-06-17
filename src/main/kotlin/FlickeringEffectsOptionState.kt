@@ -194,7 +194,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
             var i_15_ = 2147483647
             val i_16_ = i_12_ - Class75.anInt1266
             val i_17_ = i_13_ - Class75.anInt1263
-            var class348_sub21 = Class75.aClass262_1254!!.method1995(4) as Class348_Sub21?
+            var class348_sub21 = Class75.aNodeDeque_1254!!.method1995(4) as Class348_Sub21?
             while (class348_sub21 != null) {
                 if (class348_sub21.anInt6847 == i) {
                     val i_18_ = class348_sub21.anInt6852
@@ -206,7 +206,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                         i_14_ = i_20_
                     }
                 }
-                class348_sub21 = Class75.aClass262_1254!!.method1990(113.toByte()) as Class348_Sub21?
+                class348_sub21 = Class75.aNodeDeque_1254!!.method1990(113.toByte()) as Class348_Sub21?
             }
             return i_14_
         }

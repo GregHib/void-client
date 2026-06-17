@@ -22,14 +22,14 @@ object Class289 {
     @JvmField
     var anInt3704: Int = 0
     @JvmField
-    var aClass262_3705: Class262? = null
+    var aNodeDeque_3705: NodeDeque? = null
 
     @JvmStatic
     fun method2191(i: Int) {
         if (i != 0) Class289.method2192((-74).toByte())
         aClass46_3701 = null
         aByteArrayArrayArray3700 = null
-        aClass262_3705 = null
+        aNodeDeque_3705 = null
     }
 
     fun method2192(i: Byte) {

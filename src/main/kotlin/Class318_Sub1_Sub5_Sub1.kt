@@ -135,7 +135,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
     }
 
     private fun method2491(i: Byte, bool: Boolean, i_5_: Int, var_renderer: Renderer?): ModelOrSpriteHolder? {
-        if (i.toInt() != -51) aClass262_10125 = null
+        if (i.toInt() != -51) aNodeDeque_10125 = null
         anInt10142++
         val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, 0xffff and aShort10129.toInt())
         val var_terrainTile: TerrainTile?
@@ -199,7 +199,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
         var anInt10122: Int = 0
         var anInt10123: Int = 0
         @JvmField
-        var aClass262_10125: Class262? = Class262()
+        var aNodeDeque_10125: NodeDeque? = NodeDeque()
         var anInt10126: Int = 0
         var anInt10131: Int = 0
         var anInt10132: Int = 0
@@ -234,7 +234,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
         fun method2490(i: Int) {
             aClass351_10134 = null
             if (i != 4) method2490(-26)
-            aClass262_10125 = null
+            aNodeDeque_10125 = null
         }
     }
 }

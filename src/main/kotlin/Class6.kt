@@ -177,7 +177,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     WorldMapRenderer.aClass324_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (Class321.anInt4017 + i_35_ + -25), -121, -16777216)
                     var_renderer.KA(i_35_, i_36_, i_35_ - -Class321.anInt4017, i_36_ - -350)
                     var_renderer.method3649((-80).toByte(), Class321.anInt4017, -Class348_Sub31_Sub2.anInt9077 + (350 + i_36_), -1, i_35_)
-                    Class262.aClass324_3326!!.method2576("--> " + BackgroundWorkerThread.method1909(31.toByte(), Class363.aString4461!!), -1, (i_36_ - (-350 + Class369.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
+                    NodeDeque.aClass324_3326!!.method2576("--> " + BackgroundWorkerThread.method1909(31.toByte(), Class363.aString4461!!), -1, (i_36_ - (-350 + Class369.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
                     if (!SizeBoundedSoftCache.aBoolean2329) break
                     var i_45_ = -1
                     if (Class367_Sub11.anInt7396 % 30 > 15) i_45_ = 16777215

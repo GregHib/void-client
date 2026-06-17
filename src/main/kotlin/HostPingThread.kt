@@ -6,7 +6,7 @@ import java.net.InetAddress
  * Class169
  */
 class HostPingThread : Runnable {
-    private var aClass262_2258: Class262? = Class262()
+    private var aNodeDeque_2258: NodeDeque? = NodeDeque()
     private var aThread2259: Thread? = Thread(this)
     override fun run() {
         anInt2263++
@@ -25,16 +25,16 @@ class HostPingThread : Runnable {
 
     fun runClass348(): Class348_Sub26? {
         val class348_sub26: Class348_Sub26?
-        synchronized(aClass262_2258!!) {
+        synchronized(aNodeDeque_2258!!) {
             var class348: Class348?
-            class348 = aClass262_2258!!.method1997(8)
+            class348 = aNodeDeque_2258!!.method1997(8)
             while (class348 == null) {
                 try {
-                    (aClass262_2258 as Object).wait()
+                    (aNodeDeque_2258 as Object).wait()
                 } catch (interruptedexception: InterruptedException) {
                     /* empty */
                 }
-                class348 = aClass262_2258!!.method1997(8)
+                class348 = aNodeDeque_2258!!.method1997(8)
             }
             if (class348 !is Class348_Sub26) return null
             class348_sub26 = class348
@@ -51,7 +51,7 @@ class HostPingThread : Runnable {
         anInt2266++
         checkNotNull(aThread2259) { "" }
         requireNotNull(string) { "" }
-        if (i != -5255) aClass262_2258 = null
+        if (i != -5255) aNodeDeque_2258 = null
         val class348_sub26 = Class348_Sub26(string)
         method1304(1000, class348_sub26)
         return class348_sub26
@@ -73,9 +73,9 @@ class HostPingThread : Runnable {
 
     private fun method1304(i: Int, class348: Class348) {
         if (i != 1000) method1303(95.toByte())
-        synchronized(aClass262_2258!!) {
-            aClass262_2258!!.method1999(class348, -20180)
-            (aClass262_2258 as Object).notify()
+        synchronized(aNodeDeque_2258!!) {
+            aNodeDeque_2258!!.method1999(class348, -20180)
+            (aNodeDeque_2258 as Object).notify()
         }
         anInt2262++
     }

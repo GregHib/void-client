@@ -38,7 +38,7 @@ open class Class75 {
         @JvmField
         var anInt1253: Int = (Math.random() * 17.0).toInt() - 8
         @JvmField
-        var aClass262_1254: Class262?
+        var aNodeDeque_1254: NodeDeque?
         @JvmField
         var anInt1255: Int = 0
         private var aByteArray1256: ByteArray? = null
@@ -146,7 +146,7 @@ open class Class75 {
             aShortArray1252 = null
             aByteArray1248 = null
             aSmoothingBuffer_1246 = null
-            aClass262_1254 = null
+            aNodeDeque_1254 = null
             anIntArray1260 = null
             aByteArray1273 = null
             aByteArray1264 = null
@@ -307,7 +307,7 @@ open class Class75 {
                                         val class348_sub21 = Class348_Sub21(i_51_)
                                         class348_sub21.anInt6852 = i
                                         class348_sub21.anInt6851 = i_48_
-                                        aClass262_1254!!.method1999(class348_sub21, -20180)
+                                        aNodeDeque_1254!!.method1999(class348_sub21, -20180)
                                     }
                                 }
                             }
@@ -322,7 +322,7 @@ open class Class75 {
                                 val class348_sub21 = Class348_Sub21(i_52_)
                                 class348_sub21.anInt6852 = i
                                 class348_sub21.anInt6851 = i_48_
-                                aClass262_1254!!.method1999(class348_sub21, -20180)
+                                aNodeDeque_1254!!.method1999(class348_sub21, -20180)
                             }
                         }
                     }
@@ -347,7 +347,7 @@ open class Class75 {
                                             val class348_sub21 = Class348_Sub21(i_56_)
                                             class348_sub21.anInt6852 = ((i_53_ + (anInt1266 shr 6)) * 64 + class318_sub8.aByte6466 - anInt1266)
                                             class348_sub21.anInt6851 = ((i_54_ + (anInt1263 shr 6)) * 64 + class318_sub8.aByte6464 - anInt1263)
-                                            aClass262_1254!!.method1999(class348_sub21, -20180)
+                                            aNodeDeque_1254!!.method1999(class348_sub21, -20180)
                                         }
                                     }
                                 }
@@ -506,7 +506,7 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method758(var_renderer: Renderer?): Class262? {
+        fun method758(var_renderer: Renderer?): NodeDeque? {
             val i: Int = anInt1265 - anInt1274
             val i_102_: Int = anInt1277 - anInt1257
             val i_103_: Int = (anInt1276 - anInt1272 shl 16) / i
@@ -561,18 +561,18 @@ open class Class75 {
                     val class348_sub21 = Class348_Sub21(aSmoothingBuffer_1246!!.anIntArray3239!![i])
                     class348_sub21.anInt6852 = `is`[1] - anInt1266
                     class348_sub21.anInt6851 = `is`[2] - anInt1263
-                    aClass262_1254!!.method1999(class348_sub21, -20180)
+                    aNodeDeque_1254!!.method1999(class348_sub21, -20180)
                 }
             }
         }
 
-        private fun method762(var_renderer: Renderer?, i: Int, i_115_: Int, i_116_: Int, i_117_: Int): Class262? {
-            var class348_sub21 = aClass262_1254!!.method1995(4) as Class348_Sub21?
+        private fun method762(var_renderer: Renderer?, i: Int, i_115_: Int, i_116_: Int, i_117_: Int): NodeDeque? {
+            var class348_sub21 = aNodeDeque_1254!!.method1995(4) as Class348_Sub21?
             while (class348_sub21 != null) {
                 method747(var_renderer, class348_sub21, i, i_115_, i_116_, i_117_)
-                class348_sub21 = aClass262_1254!!.method1990(74.toByte()) as Class348_Sub21?
+                class348_sub21 = aNodeDeque_1254!!.method1990(74.toByte()) as Class348_Sub21?
             }
-            return aClass262_1254
+            return aNodeDeque_1254
         }
 
         private fun method763(var_renderer: Renderer?, i: Int, i_118_: Int, i_119_: Int, i_120_: Int, `is`: ShortArray?, is_121_: ByteArray?) {
@@ -858,7 +858,7 @@ open class Class75 {
             aShortArray1252 = ShortArray(1)
             anInt1250 = (Math.random() * 11.0).toInt() - 5
             aByteArray1248 = ByteArray(1)
-            aClass262_1254 = Class262()
+            aNodeDeque_1254 = NodeDeque()
         }
     }
 }

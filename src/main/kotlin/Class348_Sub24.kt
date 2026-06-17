@@ -70,11 +70,11 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             FloatCameraTransform.aLong5745 = method599(-106) + 30000L
                         }
                     } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = Class76.aHostPingThread_1286!!.method1302(-5255, (Class3.aServerConnectionInfo_125!!.aString2147!!))
-                    val class348_sub45 = (Class318_Sub1_Sub3.aClass262_8744!!.method1995(4) as Class348_Sub45?)
+                    val class348_sub45 = (Class318_Sub1_Sub3.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?)
                     if (class348_sub45 != null || (Class355.aLong4367 < -2000L + method599(-97))) {
                         var class348_sub47: Class348_Sub47? = null
                         var i_2_ = 0
-                        var class348_sub45_3_ = (NativeRenderNode.aClass262_10479!!.method1995(4) as Class348_Sub45?)
+                        var class348_sub45_3_ = (NativeRenderNode.aNodeDeque_10479!!.method1995(4) as Class348_Sub45?)
                         while (class348_sub45_3_ != null) {
                             if (class348_sub47 != null && (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 - i_2_ >= 240)) break
                             class348_sub45_3_.method2715(107.toByte())
@@ -120,7 +120,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 }
                                 Class355.aLong4367 = class348_sub45_3_.method3312((-109).toByte())
                             }
-                            class348_sub45_3_ = NativeRenderNode.aClass262_10479!!.method1990(79.toByte()) as Class348_Sub45?
+                            class348_sub45_3_ = NativeRenderNode.aNodeDeque_10479!!.method1990(79.toByte()) as Class348_Sub45?
                         }
                         if (class348_sub47 != null) {
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(105, class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 + -i_2_)
@@ -366,7 +366,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 WorldMapScene.aBoolean3103 = false
                             }
                             while (true) {
-                                val class348_sub36 = (BufferedOutputStreamWorker.aClass262_2707!!.method1997(8) as? Class348_Sub36?)
+                                val class348_sub36 = (BufferedOutputStreamWorker.aNodeDeque_2707!!.method1997(8) as? Class348_Sub36?)
                                 if (class348_sub36 == null) break
                                 val class46 = (class348_sub36.aClass46_6989)!!
                                 if (class46.anInt704 >= 0) {
@@ -378,7 +378,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 method705(class348_sub36)
                             }
                             while (true) {
-                                val class348_sub36 = (Class365.aClass262_4473!!.method1997(8) as? Class348_Sub36?)
+                                val class348_sub36 = (Class365.aNodeDeque_4473!!.method1997(8) as? Class348_Sub36?)
                                 if (class348_sub36 == null) break
                                 val class46 = (class348_sub36.aClass46_6989)!!
                                 if (class46.anInt704 >= 0) {
@@ -390,7 +390,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 method705(class348_sub36)
                             }
                             while (true) {
-                                val class348_sub36 = (Class348_Sub1_Sub2.aClass262_8810!!.method1997(i + -11424) as? Class348_Sub36?)
+                                val class348_sub36 = (Class348_Sub1_Sub2.aNodeDeque_8810!!.method1997(i + -11424) as? Class348_Sub36?)
                                 if (class348_sub36 == null) break
                                 val class46 = (class348_sub36.aClass46_6989)!!
                                 if (class46.anInt704 >= 0) {

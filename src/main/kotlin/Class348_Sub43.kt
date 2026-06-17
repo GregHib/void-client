@@ -95,13 +95,13 @@ class Class348_Sub43 : Class348() {
                         }
                     }
                     if (!bool) {
-                        var class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as Class348_Sub42_Sub12?
+                        var class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as Class348_Sub42_Sub12?
                         while (class348_sub42_sub12 != null) {
                             if ((class348_sub42_sub12.anInt9608) == 19) {
                                 class348_sub42_sub12.aString9595 = "<col=ffffff>" + string
                                 break
                             }
-                            class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1990(105.toByte()) as Class348_Sub42_Sub12?)
+                            class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(105.toByte()) as Class348_Sub42_Sub12?)
                         }
                     }
                 }

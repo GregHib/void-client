@@ -7,7 +7,7 @@ import IndexedSprite.Companion.method165
 class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
     private var anInt2557 = 0
     private val anInt2559: Int
-    private var aClass262_2561: Class262?
+    private var aNodeDeque_2561: NodeDeque?
     private var anInt2562 = -1
     private var aClass348_Sub6Array2563: Array<Class348_Sub6?>?
     private var anIntArrayArray2564: Array<IntArray?>?
@@ -30,9 +30,9 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         anInt2556++
         aClass348_Sub6Array2563 = null
         anIntArrayArray2564 = null
-        aClass262_2561!!.method1996(112)
+        aNodeDeque_2561!!.method1996(112)
         if (i.toInt() != 124) anInt2565 = -126
-        aClass262_2561 = null
+        aNodeDeque_2561 = null
     }
 
     fun method1433(i: Int, i_14_: Int): IntArray? {
@@ -51,14 +51,14 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
                     class348_sub6 = Class348_Sub6(i_14_, anInt2557)
                     anInt2557++
                 } else {
-                    val class348_sub6_15_ = aClass262_2561!!.method1993(i + -123) as Class348_Sub6?
+                    val class348_sub6_15_ = aNodeDeque_2561!!.method1993(i + -123) as Class348_Sub6?
                     class348_sub6 = Class348_Sub6(i_14_, class348_sub6_15_!!.anInt6636)
                     aClass348_Sub6Array2563!![class348_sub6_15_.anInt6630] = null
                     class348_sub6_15_.method2715(80.toByte())
                 }
                 aClass348_Sub6Array2563!![i_14_] = class348_sub6
             } else this.aBoolean2570 = false
-            aClass262_2561!!.method2001(class348_sub6, -90)
+            aNodeDeque_2561!!.method2001(class348_sub6, -90)
             return (anIntArrayArray2564!![class348_sub6.anInt6636])
         }
         this.aBoolean2570 = i_14_ != anInt2562
@@ -67,7 +67,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
     }
 
     init {
-        aClass262_2561 = Class262()
+        aNodeDeque_2561 = NodeDeque()
         this.aBoolean2570 = false
         anInt2559 = i
         anInt2565 = i_16_

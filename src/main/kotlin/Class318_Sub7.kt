@@ -375,7 +375,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                         Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, 12871)
                         Class348_Sub15.method2811(false)
                         method760()
-                        Class289.aClass262_3705 = Class262()
+                        Class289.aNodeDeque_3705 = NodeDeque()
                         Class75.anInt1250 += (Math.random() * 5.0).toInt() + -2
                         if (Class75.anInt1250 < -8) Class75.anInt1250 = -8
                         if (Class75.anInt1250 > 8) Class75.anInt1250 = 8

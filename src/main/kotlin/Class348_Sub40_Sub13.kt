@@ -22,7 +22,7 @@ class Class348_Sub40_Sub13 : Class348_Sub40(1, true) {
 
     companion object {
         @JvmField
-        var aClass262_9201: Class262?
+        var aNodeDeque_9201: NodeDeque?
         @JvmField
         var anInt9202: Int = 0
         @JvmField
@@ -31,12 +31,12 @@ class Class348_Sub40_Sub13 : Class348_Sub40(1, true) {
 
         @JvmStatic
         fun method3080(i: Byte) {
-            aClass262_9201 = null
+            aNodeDeque_9201 = null
             if (i < 39) method3080(100.toByte())
         }
 
         init {
-            aClass262_9201 = Class262()
+            aNodeDeque_9201 = NodeDeque()
             aFloat9204 = 0.25f
         }
     }

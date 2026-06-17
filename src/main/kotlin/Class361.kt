@@ -804,7 +804,7 @@ class Class361 {
                         val i_49_: Int
                         if (ClientLoadStateMachine.anInt2173 <= 50) i_49_ = ClientLoadStateMachine.anInt2173 * 5
                         else i_49_ = -(5 * ClientLoadStateMachine.anInt2173) + 500
-                        var class348_sub21 = (Class75.aClass262_1254!!.method1995(4) as Class348_Sub21?)
+                        var class348_sub21 = (Class75.aNodeDeque_1254!!.method1995(4) as Class348_Sub21?)
                         while (class348_sub21 != null) {
                             val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
                             if (method589(class42, -4)) {
@@ -818,7 +818,7 @@ class Class361 {
                                     var_renderer.method3675(4, (-125).toByte(), i_52_ + -2, -2 + i_53_, 4, (i_49_ shl 24 or 0xffff00))
                                 }
                             }
-                            class348_sub21 = Class75.aClass262_1254!!.method1990(126.toByte()) as Class348_Sub21?
+                            class348_sub21 = Class75.aNodeDeque_1254!!.method1990(126.toByte()) as Class348_Sub21?
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {

@@ -76,10 +76,10 @@ class Class348_Sub42_Sub1 : Class348_Sub42() {
         fun method3169(i: Int, i_8_: Int): Boolean {
             if (i_8_ != 0) return true
             anInt9496++
-            var class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as Class348_Sub42_Sub12?)
+            var class348_sub42_sub12 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.method1995(4) as Class348_Sub42_Sub12?)
             while (class348_sub42_sub12 != null) {
                 if (Class367_Sub8.method3549(class348_sub42_sub12.anInt9608, (-28).toByte()) && i.toLong() == (class348_sub42_sub12.aLong9605)) return true
-                class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(99.toByte()) as Class348_Sub42_Sub12?
+                class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(99.toByte()) as Class348_Sub42_Sub12?
             }
             return false
         }

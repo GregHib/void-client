@@ -3,7 +3,7 @@ import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt
 
 class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140_: Int, i_141_: Int, `is`: Array<IntArray?>, is_142_: Array<IntArray?>?, i_143_: Int) : TerrainTile(i_140_, i_141_, i_143_, `is`) {
-    private val aClass262_8286: Class262
+    private val aNodeDeque_8286: NodeDeque
     private var anIntArrayArrayArray8291: Array<Array<IntArray?>?>?
     @JvmField
     var anInt8294: Int = 0
@@ -417,7 +417,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
     }
 
     init {
-        aClass262_8286 = Class262()
+        aNodeDeque_8286 = NodeDeque()
         do {
             try {
                 anInt8302 = this.anInt4588 - 2
@@ -505,7 +505,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 val class101_sub2 = this.aHa_Sub3_8322!!.method3934(-97)
                 class101_sub2!!.method894(0, -1, 0)
                 this.aHa_Sub3_8322!!.method3915(0)
-                if (!aClass262_8286.method2002(18.toByte())) {
+                if (!aNodeDeque_8286.method2002(18.toByte())) {
                     val i_165_ = this.aHa_Sub3_8322!!.anInt8144
                     val i_166_ = this.aHa_Sub3_8322!!.anInt8091
                     this.aHa_Sub3_8322!!.L(0, i_166_, this.aHa_Sub3_8322!!.anInt8105)
@@ -517,11 +517,11 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     this.aHa_Sub3_8322!!.method3874(Class328_Sub3.aRenderConfigFactory_6519, 116, ParticleSystemState.aRenderConfigFactory_2207)
                     this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
                     this.aHa_Sub3_8322!!.method3885(0, true, Class285_Sub2.aClass70_8503)
-                    var class348 = aClass262_8286.method1995(i_151_ + 5)
+                    var class348 = aNodeDeque_8286.method1995(i_151_ + 5)
                     while (class348 != null) {
                         val class348_sub38 = class348 as Class348_Sub38
                         class348_sub38.method3032(i_149_, i_153_, bools, false, i)
-                        class348 = aClass262_8286.method1990(106.toByte())
+                        class348 = aNodeDeque_8286.method1990(106.toByte())
                     }
                     this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, Class342.aClass70_4247)
                     this.aHa_Sub3_8322!!.method3885(0, true, Class342.aClass70_4247)
@@ -541,7 +541,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
 
     override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
         try {
-            aClass262_8286.method1999(Class348_Sub38((this.aHa_Sub3_8322), this, class348_sub1, `is`), -20180)
+            aNodeDeque_8286.method1999(Class348_Sub38((this.aHa_Sub3_8322), this, class348_sub1, `is`), -20180)
             anInt8287++
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qm.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))

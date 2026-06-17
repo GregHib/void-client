@@ -215,7 +215,7 @@ class Class348_Sub3 internal constructor(private val aS_Sub3_6566: NativeTerrain
 
         @JvmStatic
         fun method2739(i: Int) {
-            Class348_Sub40_Sub13.aClass262_9201!!.method1996(98)
+            Class348_Sub40_Sub13.aNodeDeque_9201!!.method1996(98)
             anInt6579++
             Class348_Sub34.anInt6969 = i
         }

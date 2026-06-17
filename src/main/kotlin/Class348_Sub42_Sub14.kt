@@ -8,7 +8,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
     var aString9625: String? = null
     var anInt9627: Int = 0
     var anInt9628: Int = 0
-    var aClass262_9629: Class262? = null
+    var aNodeDeque_9629: NodeDeque? = null
     var anInt9631: Int
     var aString9632: String? = null
     var anInt9634: Int = -1
@@ -19,13 +19,13 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
     var anInt9644: Int = 12800
     fun method3236(`is`: IntArray, i: Int, i_0_: Int, i_1_: Int, i_2_: Byte): Boolean {
         anInt9623++
-        var class348_sub18 = this.aClass262_9629!!.method1995(4) as? Class348_Sub18?
+        var class348_sub18 = this.aNodeDeque_9629!!.method1995(4) as? Class348_Sub18?
         while (class348_sub18 != null) {
             if (class348_sub18.method2935(i_0_, i, i_1_, true)) {
                 class348_sub18.method2940(i_0_, true, `is`, i)
                 return true
             }
-            class348_sub18 = this.aClass262_9629!!.method1990(117.toByte()) as? Class348_Sub18?
+            class348_sub18 = this.aNodeDeque_9629!!.method1990(117.toByte()) as? Class348_Sub18?
         }
         if (i_2_.toInt() != -28) method3244(123, -16, 116)
         return false
@@ -34,10 +34,10 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
     fun method3238(i: Byte, i_3_: Int, i_4_: Int): Boolean {
         val i_5_ = 113 % ((-26 - i) / 46)
         anInt9641++
-        var class348_sub18 = this.aClass262_9629!!.method1995(4) as? Class348_Sub18?
+        var class348_sub18 = this.aNodeDeque_9629!!.method1995(4) as? Class348_Sub18?
         while (class348_sub18 != null) {
             if (class348_sub18.method2934(3589, i_3_, i_4_)) return true
-            class348_sub18 = this.aClass262_9629!!.method1990(117.toByte()) as? Class348_Sub18?
+            class348_sub18 = this.aNodeDeque_9629!!.method1990(117.toByte()) as? Class348_Sub18?
         }
         return false
     }
@@ -45,13 +45,13 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
     fun method3239(bool: Boolean, i: Int, i_6_: Int, `is`: IntArray): Boolean {
         anInt9638++
         if (bool != true) method3238(9.toByte(), -26, -68)
-        var class348_sub18 = this.aClass262_9629!!.method1995(4) as? Class348_Sub18?
+        var class348_sub18 = this.aNodeDeque_9629!!.method1995(4) as? Class348_Sub18?
         while (class348_sub18 != null) {
             if (class348_sub18.method2939(i_6_, 2, i)) {
                 class348_sub18.method2937(i_6_, i, -3069, `is`)
                 return true
             }
-            class348_sub18 = this.aClass262_9629!!.method1990(126.toByte()) as? Class348_Sub18?
+            class348_sub18 = this.aNodeDeque_9629!!.method1990(126.toByte()) as? Class348_Sub18?
         }
         return false
     }
@@ -63,25 +63,25 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
         anInt9636++
         this.anInt9635 = 0
         if (i.toInt() != 37) method3244(30, -85, -43)
-        var class348_sub18 = this.aClass262_9629!!.method1995(i + -33) as? Class348_Sub18?
+        var class348_sub18 = this.aNodeDeque_9629!!.method1995(i + -33) as? Class348_Sub18?
         while (class348_sub18 != null) {
             if (this.anInt9643 > class348_sub18.anInt6812) this.anInt9643 = class348_sub18.anInt6812
             if (class348_sub18.anInt6813 > this.anInt9627) this.anInt9627 = class348_sub18.anInt6813
             if (this.anInt9635 < class348_sub18.anInt6819) this.anInt9635 = class348_sub18.anInt6819
             if (class348_sub18.anInt6809 < this.anInt9644) this.anInt9644 = class348_sub18.anInt6809
-            class348_sub18 = this.aClass262_9629!!.method1990(52.toByte()) as? Class348_Sub18?
+            class348_sub18 = this.aNodeDeque_9629!!.method1990(52.toByte()) as? Class348_Sub18?
         }
     }
 
     fun method3242(`is`: IntArray, i: Int, i_15_: Int, i_16_: Int): Boolean {
         anInt9624++
-        var class348_sub18 = this.aClass262_9629!!.method1995(4) as? Class348_Sub18?
+        var class348_sub18 = this.aNodeDeque_9629!!.method1995(4) as? Class348_Sub18?
         while (class348_sub18 != null) {
             if (class348_sub18.method2934(3589, i_16_, i_15_)) {
                 class348_sub18.method2940(i_15_, true, `is`, i_16_)
                 return true
             }
-            class348_sub18 = this.aClass262_9629!!.method1990(115.toByte()) as? Class348_Sub18?
+            class348_sub18 = this.aNodeDeque_9629!!.method1990(115.toByte()) as? Class348_Sub18?
         }
         return false
     }
@@ -97,7 +97,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
             this.anInt9628 = i
             this.aBoolean9639 = bool
             if (this.anInt9631 == 255) this.anInt9631 = 0
-            this.aClass262_9629 = Class262()
+            this.aNodeDeque_9629 = NodeDeque()
         } catch (runtimeexception: RuntimeException) {
             throw method2929(runtimeexception, ("dfa.<init>(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_20_ != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + bool + ',' + i_23_ + ',' + i_24_ + ')'))
         }
@@ -644,7 +644,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
         @JvmStatic
         fun method3243(i: Int, class348_sub47: Class348_Sub47) {
             anInt9630++
-            Class348_Sub40_Sub13.aClass262_9201!!.method1999(class348_sub47, -20180)
+            Class348_Sub40_Sub13.aNodeDeque_9201!!.method1999(class348_sub47, -20180)
             class348_sub47.anInt7119 = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
             class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 = 0
             Class348_Sub34.anInt6969 += class348_sub47.anInt7119

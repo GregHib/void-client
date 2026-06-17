@@ -20,7 +20,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     private var anInt287 = 0
     private var aBoolean289 = false
     private val aHa_Sub2_290: OpenGlRenderer
-    private val aClass262_292: Class262
+    private val aNodeDeque_292: NodeDeque
     private var aBoolean293: Boolean
     private var aBoolean294: Boolean
     private var aClass258_Sub3Array295: Array<GlTexture2D?>?
@@ -55,9 +55,9 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             var i_4_ = 0
             var i_5_ = 1
             var class348_sub5: Class348_Sub5?
-            var class348_sub5_6_ = aClass262_292.method1995(4) as Class348_Sub5?
+            var class348_sub5_6_ = aNodeDeque_292.method1995(4) as Class348_Sub5?
             while (class348_sub5_6_ != null) {
-                class348_sub5 = aClass262_292.method1990(113.toByte()) as Class348_Sub5?
+                class348_sub5 = aNodeDeque_292.method1990(113.toByte()) as Class348_Sub5?
                 val i_7_ = class348_sub5_6_.method2764(1)
                 for (i_8_ in 0..<i_7_) {
                     class348_sub5_6_.method2750(aClass258_Sub3_300, aClass258_Sub3Array295!![i_4_], i_8_, 103.toByte())
@@ -109,7 +109,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         anInt273++
         if (aFrameBufferObject_284 != null) {
             if (class348_sub5.method2751(bool) || class348_sub5.method2758(85)) {
-                aClass262_292.method1999(class348_sub5, -20180)
+                aNodeDeque_292.method1999(class348_sub5, -20180)
                 method281((-94).toByte())
                 if (method276(false)) {
                     if (anInt286 != -1 && anInt275 != -1) class348_sub5.method2754(anInt275, 55.toByte(), anInt286)
@@ -126,12 +126,12 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     fun method275(i: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int): Boolean {
         if (i_12_ != -1) return true
         anInt272++
-        if (aFrameBufferObject_284 == null || aClass262_292.method2002(18.toByte())) return false
+        if (aFrameBufferObject_284 == null || aNodeDeque_292.method2002(18.toByte())) return false
         if (anInt286 != i || i_10_ != anInt275) {
             anInt286 = i
             anInt275 = i_10_
-            var class348 = aClass262_292.method1995(i_12_ xor 0x4.inv())
-            while (aClass262_292.aClass348_3334 !== class348) {
+            var class348 = aNodeDeque_292.method1995(i_12_ xor 0x4.inv())
+            while (aNodeDeque_292.aClass348_3334 !== class348) {
                 (class348 as Class348_Sub5).method2754(anInt275, 41.toByte(), anInt286)
                 class348 = class348.aClass348_4294
             }
@@ -248,9 +248,9 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         aClass258_Sub3_300 = null
         aClass348_Sub42_Sub2_298 = null
         aClass258_Sub3Array295 = null
-        if (!aClass262_292.method2002(18.toByte())) {
-            var class348 = aClass262_292.method1995(4)
-            while (aClass262_292.aClass348_3334 !== class348) {
+        if (!aNodeDeque_292.method2002(18.toByte())) {
+            var class348 = aNodeDeque_292.method1995(4)
+            while (aNodeDeque_292.aClass348_3334 !== class348) {
                 (class348 as Class348_Sub5).method2763((-124).toByte())
                 class348 = class348.aClass348_4294
             }
@@ -270,14 +270,14 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         var bool = false
         var i_14_ = 0
         var i_15_ = 0
-        var class348_sub5 = aClass262_292.method1995(4) as Class348_Sub5?
+        var class348_sub5 = aNodeDeque_292.method1995(4) as Class348_Sub5?
         val i_16_ = 50 / ((-34 - i) / 45)
         while ( /**/class348_sub5 != null) {
             val i_17_ = class348_sub5.method2761(true)
             i_15_ += class348_sub5.method2764(1)
             if (i_14_ < i_17_) i_14_ = i_17_
             bool = bool or class348_sub5.method2759(1)
-            class348_sub5 = aClass262_292.method1990(67.toByte()) as Class348_Sub5?
+            class348_sub5 = aNodeDeque_292.method1990(67.toByte()) as Class348_Sub5?
         }
         val i_18_: Int
         if (i_14_ != 2) {
@@ -302,7 +302,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     }
 
     init {
-        aClass262_292 = Class262()
+        aNodeDeque_292 = NodeDeque()
         aBoolean293 = true
         aClass258_Sub3Array295 = arrayOfNulls<GlTexture2D>(2)
         aBoolean297 = true

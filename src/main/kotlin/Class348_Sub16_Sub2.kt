@@ -4,7 +4,7 @@ import IOException_Sub1.Companion.method129
 * Visit http://jode.sourceforge.net/
 */
 class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Class348_Sub16() {
-    private var aClass262_8861: Class262? = Class262()
+    private var aNodeDeque_8861: NodeDeque? = NodeDeque()
     private var anInt8883 = 0
     private var aBoolean8884 = false
     private var anInt8885 = 256
@@ -22,7 +22,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
     @Synchronized
     private fun method2828(i: Int): Class348_Sub42_Sub4? {
         anInt8872++
-        return aClass262_8861!!.method1995(i + 23080) as Class348_Sub42_Sub4?
+        return aNodeDeque_8861!!.method1995(i + 23080) as Class348_Sub42_Sub4?
     }
 
     override fun method2818(): Class348_Sub16? {
@@ -94,12 +94,12 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
     @Synchronized
     fun method2835(class348_sub42_sub4: Class348_Sub42_Sub4, i: Int) {
         while ( /**/anInt8888 >= 100) {
-            aClass262_8861!!.method1997(8)
+            aNodeDeque_8861!!.method1997(8)
             anInt8888--
         }
         if (i == 30700) {
             anInt8881++
-            aClass262_8861!!.method1999(class348_sub42_sub4, -20180)
+            aNodeDeque_8861!!.method1999(class348_sub42_sub4, -20180)
             anInt8888++
         }
     }
@@ -112,7 +112,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
     @Synchronized
     fun method2836(i: Int) {
         aBoolean8884 = true
-        if (i != -1) aClass262_8861 = null
+        if (i != -1) aNodeDeque_8861 = null
         anInt8865++
     }
 
@@ -121,7 +121,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
         anInt8868++
         if (anInt8888 < 1) return -1.0
         if (i != -21987) method2818()
-        val class348_sub42_sub4 = aClass262_8861!!.method1995(4) as Class348_Sub42_Sub4?
+        val class348_sub42_sub4 = aNodeDeque_8861!!.method1995(4) as Class348_Sub42_Sub4?
         if (class348_sub42_sub4 == null) return -1.0
         return (-((class348_sub42_sub4.aShortArrayArray9518[0])!!.size.toFloat() / HslColorConfig.anInt339.toFloat()).toDouble() + class348_sub42_sub4.aDouble9512)
     }
