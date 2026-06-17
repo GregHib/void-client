@@ -284,7 +284,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_25_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-128).toByte())
                 val i_26_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
-                Class181.aBooleanArray2374!![i_23_] = true
+                SpotAnimDefinition.aBooleanArray2374!![i_23_] = true
                 Class275.anIntArray3552!![i_23_] = i
                 Class255.anIntArray3273!![i_23_] = i_25_
                 Class338.anIntArray4196!![i_23_] = i_26_

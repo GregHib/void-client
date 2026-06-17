@@ -3556,13 +3556,13 @@ class Class64_Sub1 : Class64 {
                             fs_807_[2] = fs[0]
                             fs_808_[2] = fs[1]
                         } else if (i_810_.toInt() == 3) {
-                            Class181.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_841_.toInt()], fs, anIntArray5312!![i_841_.toInt()], i_844_, anIntArray5332!![i_841_.toInt()], i_845_, -4, fs_847_)
+                            SpotAnimDefinition.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_841_.toInt()], fs, anIntArray5312!![i_841_.toInt()], i_844_, anIntArray5332!![i_841_.toInt()], i_845_, -4, fs_847_)
                             fs_807_[0] = fs[0]
                             fs_808_[0] = fs[1]
-                            Class181.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_842_.toInt()], fs, anIntArray5312!![i_842_.toInt()], i_844_, anIntArray5332!![i_842_.toInt()], i_845_, -4, fs_847_)
+                            SpotAnimDefinition.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_842_.toInt()], fs, anIntArray5312!![i_842_.toInt()], i_844_, anIntArray5332!![i_842_.toInt()], i_845_, -4, fs_847_)
                             fs_807_[1] = fs[0]
                             fs_808_[1] = fs[1]
-                            Class181.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_843_.toInt()], fs, anIntArray5312!![i_843_.toInt()], i_844_, anIntArray5332!![i_843_.toInt()], i_845_, -4, fs_847_)
+                            SpotAnimDefinition.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_843_.toInt()], fs, anIntArray5312!![i_843_.toInt()], i_844_, anIntArray5332!![i_843_.toInt()], i_845_, -4, fs_847_)
                             fs_807_[2] = fs[0]
                             fs_808_[2] = fs[1]
                             if ((i_848_.toInt() and 0x1) == 0) {

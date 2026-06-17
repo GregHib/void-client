@@ -5,7 +5,7 @@ import kotlin.math.sqrt
 /* Class181 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class181 {
+class SpotAnimDefinition {
     @JvmField
     var anInt2373: Int = 0
     private var anInt2375 = 100

@@ -119,7 +119,7 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
             } else {
                 var i_6_ = Class76.aFloat1287.toInt()
                 if (i_6_ < Class348_Sub35.anInt6979 shr 8) i_6_ = Class348_Sub35.anInt6979 shr 8
-                if (Class181.aBooleanArray2374!![4] && Class255.anIntArray3273!![4] - -128 > i_6_) i_6_ = Class255.anIntArray3273!![4] + 128
+                if (SpotAnimDefinition.aBooleanArray2374!![4] && Class255.anIntArray3273!![4] - -128 > i_6_) i_6_ = Class255.anIntArray3273!![4] + 128
                 val i_7_ = 0x3fff and Class314.aFloat3938.toInt() + Class195.anInt5016
                 method268(i_6_, -200 + (Class275.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_7_, Class192.anInt2578, i, -19360, FrameStatsReset.anInt5799, 3 * (i_6_ shr 3) + 600 shl 2)
                 val f = (-(((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)).toFloat() / 1000000.0f) + 1.0f)

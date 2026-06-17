@@ -16,7 +16,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
     private val aLong6435: Long
     var aModelFacePriorityNode_6436: ModelFacePriorityNode? = null
     var aClass318_Sub10_6439: Class318_Sub10? = null
-    var aClass181_6441: Class181? = null
+    var aSpotAnimDefinition_6441: SpotAnimDefinition? = null
     var aClass284_6444: Class284
     var aBoolean6446: Boolean = false
     var anInt6447: Int = 0
@@ -78,15 +78,15 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
         do {
             try {
                 if (!this.aBoolean6446) {
-                    if (Class348_Sub6.anInt6637 < (this.aClass181_6441!!.anInt2379)) bool = false
+                    if (Class348_Sub6.anInt6637 < (this.aSpotAnimDefinition_6441!!.anInt2379)) bool = false
                     else if (Class292.anInt4797 <= (Class275.anIntArray3551!![Class348_Sub6.anInt6637])) {
                         if (!aBoolean6453) {
-                            if (this.aClass181_6441!!.anInt2425 != -1) {
+                            if (this.aSpotAnimDefinition_6441!!.anInt2425 != -1) {
                                 var i_10_ = (-aLong6435 + l).toInt()
-                                if (!(this.aClass181_6441!!.aBoolean2411) && (this.aClass181_6441!!.anInt2425) < i_10_) bool = false
-                                else i_10_ %= (this.aClass181_6441!!.anInt2425)
-                                if (!(this.aClass181_6441!!.aBoolean2406) && ((this.aClass181_6441!!.anInt2393) > i_10_)) bool = false
-                                if (this.aClass181_6441!!.aBoolean2406 && (this.aClass181_6441!!.anInt2393) <= i_10_) bool = false
+                                if (!(this.aSpotAnimDefinition_6441!!.aBoolean2411) && (this.aSpotAnimDefinition_6441!!.anInt2425) < i_10_) bool = false
+                                else i_10_ %= (this.aSpotAnimDefinition_6441!!.anInt2425)
+                                if (!(this.aSpotAnimDefinition_6441!!.aBoolean2406) && ((this.aSpotAnimDefinition_6441!!.anInt2393) > i_10_)) bool = false
+                                if (this.aSpotAnimDefinition_6441!!.aBoolean2406 && (this.aSpotAnimDefinition_6441!!.anInt2393) <= i_10_) bool = false
                             }
                         } else bool = false
                     } else bool = false
@@ -120,16 +120,16 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                         anInt6455 = anInt6455 * 32767 / i_20_
                         anInt6458 = 32767 * anInt6458 / i_20_
                         anInt6457 = 32767 * anInt6457 / i_20_
-                        if ((this.aClass181_6441!!.aShort2415) > 0 || this.aClass181_6441!!.aShort2441 > 0) {
+                        if ((this.aSpotAnimDefinition_6441!!.aShort2415) > 0 || this.aSpotAnimDefinition_6441!!.aShort2441 > 0) {
                             val i_21_ = (2607.5945876176133 * atan2(anInt6458.toDouble(), anInt6455.toDouble())).toInt()
                             val i_22_ = (2607.5945876176133 * (atan2(anInt6457.toDouble(), (sqrt((anInt6458 * anInt6458 + (anInt6455 * anInt6455)).toDouble()))))).toInt()
-                            anInt6456 = (this.aClass181_6441!!.aShort2415 - (this.aClass181_6441!!.aShort2431))
-                            anInt6459 = (this.aClass181_6441!!.aShort2431 + i_21_ - (anInt6456 shr 1))
-                            anInt6454 = (-this.aClass181_6441!!.aShort2418 + (this.aClass181_6441!!.aShort2441))
-                            anInt6452 = i_22_ - (-(this.aClass181_6441!!.aShort2418) - -(anInt6454 shr 1))
+                            anInt6456 = (this.aSpotAnimDefinition_6441!!.aShort2415 - (this.aSpotAnimDefinition_6441!!.aShort2431))
+                            anInt6459 = (this.aSpotAnimDefinition_6441!!.aShort2431 + i_21_ - (anInt6456 shr 1))
+                            anInt6454 = (-this.aSpotAnimDefinition_6441!!.aShort2418 + (this.aSpotAnimDefinition_6441!!.aShort2441))
+                            anInt6452 = i_22_ - (-(this.aSpotAnimDefinition_6441!!.aShort2418) - -(anInt6454 shr 1))
                         }
                     }
-                    anInt6434 += ((((-this.aClass181_6441!!.anInt2391 + this.aClass181_6441!!.anInt2389).toDouble() * Math.random()) + this.aClass181_6441!!.anInt2391.toDouble()) * i.toDouble()).toInt()
+                    anInt6434 += ((((-this.aSpotAnimDefinition_6441!!.anInt2391 + this.aSpotAnimDefinition_6441!!.anInt2389).toDouble() * Math.random()) + this.aSpotAnimDefinition_6441!!.anInt2391.toDouble()) * i.toDouble()).toInt()
                     if (anInt6434 > 63) {
                         val i_23_ = anInt6434 shr 6
                         anInt6434 = anInt6434 and 0x3f
@@ -137,7 +137,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             val i_25_: Int
                             val i_26_: Int
                             val i_27_: Int
-                            if (this.aClass181_6441!!.aShort2415 <= 0 && this.aClass181_6441!!.aShort2441 <= 0) {
+                            if (this.aSpotAnimDefinition_6441!!.aShort2415 <= 0 && this.aSpotAnimDefinition_6441!!.aShort2441 <= 0) {
                                 i_25_ = anInt6455
                                 i_27_ = anInt6458
                                 i_26_ = anInt6457
@@ -174,24 +174,24 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             val i_46_ = (i_43_.toDouble() * Math.random() + i_40_.toDouble()).toInt()
                             val i_47_ = (i_41_.toDouble() + i_44_.toDouble() * Math.random()).toInt()
                             val i_48_ = (i_42_.toDouble() + i_45_.toDouble() * Math.random()).toInt()
-                            val i_49_ = ((Math.random() * ((this.aClass181_6441!!.anInt2438) + -(this.aClass181_6441!!.anInt2392)).toDouble()).toInt() + this.aClass181_6441!!.anInt2392)
-                            val i_50_ = (this.aClass181_6441!!.anInt2394 + ((-(this.aClass181_6441!!.anInt2394) + (this.aClass181_6441!!.anInt2407)).toDouble() * Math.random()).toInt())
-                            val i_51_ = ((((this.aClass181_6441!!.anInt2417) - (this.aClass181_6441!!.anInt2442)).toDouble() * Math.random()).toInt() + this.aClass181_6441!!.anInt2442)
+                            val i_49_ = ((Math.random() * ((this.aSpotAnimDefinition_6441!!.anInt2438) + -(this.aSpotAnimDefinition_6441!!.anInt2392)).toDouble()).toInt() + this.aSpotAnimDefinition_6441!!.anInt2392)
+                            val i_50_ = (this.aSpotAnimDefinition_6441!!.anInt2394 + ((-(this.aSpotAnimDefinition_6441!!.anInt2394) + (this.aSpotAnimDefinition_6441!!.anInt2407)).toDouble() * Math.random()).toInt())
+                            val i_51_ = ((((this.aSpotAnimDefinition_6441!!.anInt2417) - (this.aSpotAnimDefinition_6441!!.anInt2442)).toDouble() * Math.random()).toInt() + this.aSpotAnimDefinition_6441!!.anInt2442)
                             val i_52_: Int
-                            if (this.aClass181_6441!!.aBoolean2443) {
+                            if (this.aSpotAnimDefinition_6441!!.aBoolean2443) {
                                 val d = Math.random()
                                 i_52_ =
-                                    ((d * (this.aClass181_6441!!.anInt2408).toDouble() + (this.aClass181_6441!!.anInt2399).toDouble()).toInt() or ((((this.aClass181_6441!!.anInt2433).toDouble() * d + (this.aClass181_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((this.aClass181_6441!!.anInt2390).toDouble() + ((this.aClass181_6441!!.anInt2403).toDouble() * d)).toInt() shl 8)) or (((this.aClass181_6441!!.anInt2413).toDouble() + ((this.aClass181_6441!!.anInt2410).toDouble() * (Math.random()))).toInt() shl 24))
+                                    ((d * (this.aSpotAnimDefinition_6441!!.anInt2408).toDouble() + (this.aSpotAnimDefinition_6441!!.anInt2399).toDouble()).toInt() or ((((this.aSpotAnimDefinition_6441!!.anInt2433).toDouble() * d + (this.aSpotAnimDefinition_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((this.aSpotAnimDefinition_6441!!.anInt2390).toDouble() + ((this.aSpotAnimDefinition_6441!!.anInt2403).toDouble() * d)).toInt() shl 8)) or (((this.aSpotAnimDefinition_6441!!.anInt2413).toDouble() + ((this.aSpotAnimDefinition_6441!!.anInt2410).toDouble() * (Math.random()))).toInt() shl 24))
                             } else i_52_ =
-                                (((((this.aClass181_6441!!.anInt2410).toDouble() * Math.random()) + (this.aClass181_6441!!.anInt2413).toDouble()).toInt() shl 24) or ((((Math.random() * (this.aClass181_6441!!.anInt2433).toDouble()) + (this.aClass181_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((Math.random() * (this.aClass181_6441!!.anInt2403).toDouble()) + (this.aClass181_6441!!.anInt2390).toDouble()).toInt() shl 8) or (((this.aClass181_6441!!.anInt2408).toDouble() * Math.random()) + (this.aClass181_6441!!.anInt2399).toDouble()).toInt()))
-                            var i_53_ = (this.aClass181_6441!!.anInt2414)
-                            if (!var_renderer!!.method3644() && !(this.aClass181_6441!!.aBoolean2382)) i_53_ = -1
+                                (((((this.aSpotAnimDefinition_6441!!.anInt2410).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2413).toDouble()).toInt() shl 24) or ((((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2433).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2403).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2390).toDouble()).toInt() shl 8) or (((this.aSpotAnimDefinition_6441!!.anInt2408).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2399).toDouble()).toInt()))
+                            var i_53_ = (this.aSpotAnimDefinition_6441!!.anInt2414)
+                            if (!var_renderer!!.method3644() && !(this.aSpotAnimDefinition_6441!!.aBoolean2382)) i_53_ = -1
                             if (Client.anInt5171 == Class348_Sub1_Sub1.anInt8808) {
-                                val class318_sub9_sub2_sub1 = (Class318_Sub9_Sub2_Sub1(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aClass181_6441!!.aBoolean2435), (this.aClass181_6441!!.aBoolean2430)))
+                                val class318_sub9_sub2_sub1 = (Class318_Sub9_Sub2_Sub1(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430)))
                             } else {
                                 val class318_sub9_sub2_sub1 = (Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103!![Class348_Sub1_Sub1.anInt8808])
                                 Class348_Sub1_Sub1.anInt8808 = 0x3ff and 1 + Class348_Sub1_Sub1.anInt8808
-                                class318_sub9_sub2_sub1!!.method2523(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aClass181_6441!!.aBoolean2435), (this.aClass181_6441!!.aBoolean2430))
+                                class318_sub9_sub2_sub1!!.method2523(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430))
                             }
                         }
                     }
@@ -238,8 +238,8 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
             aLong6435 = l
             this.aModelFacePriorityNode_6436 = modelFacePriorityNode
             this.aClass318_Sub10_6439 = class318_sub10
-            this.aClass181_6441 = this.aModelFacePriorityNode_6436!!.method1125(59.toByte())
-            if (!var_renderer!!.method3644() && (this.aClass181_6441!!.anInt2387) != -1) this.aClass181_6441 = method3591((this.aClass181_6441!!.anInt2387), 0)
+            this.aSpotAnimDefinition_6441 = this.aModelFacePriorityNode_6436!!.method1125(59.toByte())
+            if (!var_renderer!!.method3644() && (this.aSpotAnimDefinition_6441!!.anInt2387) != -1) this.aSpotAnimDefinition_6441 = method3591((this.aSpotAnimDefinition_6441!!.anInt2387), 0)
             this.aClass243_6433 = Class243()
             anInt6434 = (anInt6434 + 64.0 * Math.random()).toInt()
             method2507(true)

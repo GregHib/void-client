@@ -38,7 +38,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
         if (i_1_ > 0 || i_1_ < -262144 || i < 0 || i >= Class318_Sub7.Companion.anInt6451 || i_0_ < 0 || i_0_ >= Class348_Sub41.anInt7054) method2520()
         else {
             val class318_sub10 = (this.aClass318_Sub7_10419.aClass318_Sub10_6439)!!
-            val class181 = (this.aClass318_Sub7_10419.aClass181_6441)!!
+            val class181 = (this.aClass318_Sub7_10419.aSpotAnimDefinition_6441)!!
             val var_ses = NativeSprite.aTerrainTileArray5191
             var i_2_ = class318_sub10.anInt6483
             var class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![class318_sub10.anInt6483]!![i]!![i_0_])
@@ -158,7 +158,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
             val i_21_ = this.anInt8796 shr 12
             val i_22_ = this.anInt8789 shr 12
             val class318_sub10 = (this.aClass318_Sub7_10419.aClass318_Sub10_6439)!!
-            val class181 = (this.aClass318_Sub7_10419.aClass181_6441)!!
+            val class181 = (this.aClass318_Sub7_10419.aSpotAnimDefinition_6441)!!
             if (class181.anInt2386 != 0) {
                 if (aShort10418 - aShort10420 <= class181.anInt2373) {
                     var i_23_ = ((this.anInt8790 shr 8 and 0xff00) + (anInt10417 shr 16 and 0xff) + class181.anInt2426 * i)

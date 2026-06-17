@@ -59,13 +59,13 @@ class OutputStream_Sub1 : OutputStream() {
                 if (Class348_Sub40_Sub21.anInt9282 == 1) {
                     var i_4_ = Class76.aFloat1287.toInt()
                     if (Class348_Sub35.anInt6979 shr 8 > i_4_) i_4_ = Class348_Sub35.anInt6979 shr 8
-                    if (Class181.aBooleanArray2374!![4] && Class255.anIntArray3273!![4] + 128 > i_4_) i_4_ = Class255.anIntArray3273!![4] + 128
+                    if (SpotAnimDefinition.aBooleanArray2374!![4] && Class255.anIntArray3273!![4] + 128 > i_4_) i_4_ = Class255.anIntArray3273!![4] + 128
                     val i_5_ = Class314.aFloat3938.toInt() + Class195.anInt5016 and 0x3fff
                     Class17.method268(i_4_, -200 + (Class275.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, Class192.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
                 } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
                     var i_6_ = Class76.aFloat1287.toInt()
                     if (i_6_ < Class348_Sub35.anInt6979 shr 8) i_6_ = Class348_Sub35.anInt6979 shr 8
-                    if (Class181.aBooleanArray2374!![4] && (i_6_ < Class255.anIntArray3273!![4] + 128)) i_6_ = 128 + Class255.anIntArray3273!![4]
+                    if (SpotAnimDefinition.aBooleanArray2374!![4] && (i_6_ < Class255.anIntArray3273!![4] + 128)) i_6_ = 128 + Class255.anIntArray3273!![4]
                     val i_7_ = Class314.aFloat3938.toInt() and 0x3fff
                     Class17.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, Class355.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, Class192.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
                 } else if (Class348_Sub40_Sub21.anInt9282 == 5) Class268.method2035(i_2_, 0)
@@ -75,7 +75,7 @@ class OutputStream_Sub1 : OutputStream() {
                 val i_11_ = Class348_Sub42_Sub19.anInt9701
                 val i_12_ = Class5.anInt4638
                 for (i_13_ in 0..4) {
-                    if (Class181.aBooleanArray2374!![i_13_]) {
+                    if (SpotAnimDefinition.aBooleanArray2374!![i_13_]) {
                         val i_14_ = ((Math.random() * ((Class275.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - Class275.anIntArray3552!![i_13_].toDouble() + (sin((Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_13_]).toDouble() * ((Class338.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (Class255.anIntArray3273!![i_13_]).toDouble())).toInt()
                         if (i_13_ == 4) {
                             Class348_Sub42_Sub19.anInt9701 += i_14_

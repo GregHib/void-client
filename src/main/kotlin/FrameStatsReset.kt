@@ -284,7 +284,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub44.anInt7097 = 0
             Class265.anInt4695 = 0
             Class69.anInt1196 = 0
-            Class181.anInt2378 = 0
+            SpotAnimDefinition.anInt2378 = 0
             Class318_Sub1_Sub3_Sub5.anInt10404 = 0
             Class184.anInt2475 = 0
             Class82.anInt1438 = 0
@@ -1440,7 +1440,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub7.anInt6448 = 0
             ScriptOpcodeHolder.anInt2336 = 0
             Class239_Sub12.anInt5972 = 0
-            Class181.anInt2400 = 0
+            SpotAnimDefinition.anInt2400 = 0
             Class64.anInt1137 = 0
             Class194.anInt2595 = 0
             Class348_Sub40_Sub30.anInt9387 = 0
@@ -2379,7 +2379,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class37.anInt494 = 0
             Class318_Sub1_Sub5_Sub1.anInt10141 = 0
             Class237.anInt3106 = 0
-            Class181.anInt2396 = 0
+            SpotAnimDefinition.anInt2396 = 0
             Class318_Sub1_Sub3.anInt8742 = 0
             Class77.anInt1297 = 0
             NativeRenderer.anInt7961 = 0
@@ -3214,7 +3214,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class208.anInt2710 = 0
             OverlayColorTable.anInt1755 = 0
             Class348_Sub6.anInt6639 = 0
-            Class181.anInt2409 = 0
+            SpotAnimDefinition.anInt2409 = 0
             Class239_Sub21.anInt6068 = 0
             Class52.anInt4898 = 0
             Class64_Sub3.anInt5599 = 0

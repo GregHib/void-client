@@ -8,7 +8,7 @@ object MinimapStateReset {
     var anInt1872: Int = 0
 
     fun method1122(i: Int) {
-        for (i_0_ in i..4) Class181.aBooleanArray2374!![i_0_] = false
+        for (i_0_ in i..4) SpotAnimDefinition.aBooleanArray2374!![i_0_] = false
         anInt1870++
         Class318_Sub1_Sub5_Sub2.anInt10163 = -1
         Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163

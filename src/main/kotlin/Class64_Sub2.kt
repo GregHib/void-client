@@ -2211,13 +2211,13 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                     f_382_ = Class283.aFloatArray3658!![0]
                                     f_383_ = Class283.aFloatArray3658!![1]
                                 } else if (i_387_.toInt() == 3) {
-                                    Class181.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_388_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_388_.toInt()]), i_392_, -4, fs)
+                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_388_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_388_.toInt()]), i_392_, -4, fs)
                                     f = Class283.aFloatArray3658!![0]
                                     f_379_ = Class283.aFloatArray3658!![1]
-                                    Class181.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_389_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_389_.toInt()]), i_392_, -4, fs)
+                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_389_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_389_.toInt()]), i_392_, -4, fs)
                                     f_380_ = Class283.aFloatArray3658!![0]
                                     f_381_ = Class283.aFloatArray3658!![1]
-                                    Class181.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_390_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_390_.toInt()]), i_392_, -4, fs)
+                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_390_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_390_.toInt()]), i_392_, -4, fs)
                                     f_382_ = Class283.aFloatArray3658!![0]
                                     f_383_ = Class283.aFloatArray3658!![1]
                                     if ((i_394_.toInt() and 0x1) == 0) {

@@ -1196,7 +1196,7 @@ class Class64_Sub3 : Class64 {
         }
         Class221.anInt2880 = 0
         ShaderProgram.anInt7275 = 0
-        Class181.anInt2398 = 0
+        SpotAnimDefinition.anInt2398 = 0
         return true
     }
 
@@ -1898,7 +1898,7 @@ class Class64_Sub3 : Class64 {
                 i_388_ = i_388_ shl 4
                 i_387_ = i_387_ shl 4
                 i_386_ = i_386_ shl 4
-                Class181.anInt2398 = 0
+                SpotAnimDefinition.anInt2398 = 0
                 var i_391_ = 0
                 Class221.anInt2880 = 0
                 ShaderProgram.anInt7275 = 0
@@ -1912,19 +1912,19 @@ class Class64_Sub3 : Class64 {
                             ShaderProgram.anInt7275 += anIntArray5543!![i_396_]
                             Class221.anInt2880 += anIntArray5593!![i_396_]
                             i_391_++
-                            Class181.anInt2398 += anIntArray5644!![i_396_]
+                            SpotAnimDefinition.anInt2398 += anIntArray5644!![i_396_]
                             i_395_++
                         }
                     }
                 }
                 if (i_391_ <= 0) {
                     Class221.anInt2880 = i_387_
-                    Class181.anInt2398 = i_388_
+                    SpotAnimDefinition.anInt2398 = i_388_
                     ShaderProgram.anInt7275 = i_386_
                 } else {
                     Class221.anInt2880 = i_387_ + Class221.anInt2880 / i_391_
                     ShaderProgram.anInt7275 = ShaderProgram.anInt7275 / i_391_ + i_386_
-                    Class181.anInt2398 = i_388_ + Class181.anInt2398 / i_391_
+                    SpotAnimDefinition.anInt2398 = i_388_ + SpotAnimDefinition.anInt2398 / i_391_
                 }
             } else if (i == 1) {
                 i_386_ = i_386_ shl 4
@@ -1956,7 +1956,7 @@ class Class64_Sub3 : Class64 {
                                 val i_417_ = is_404_[i_416_]
                                 anIntArray5543!![i_417_] -= ShaderProgram.anInt7275
                                 anIntArray5593!![i_417_] -= Class221.anInt2880
-                                anIntArray5644!![i_417_] -= Class181.anInt2398
+                                anIntArray5644!![i_417_] -= SpotAnimDefinition.anInt2398
                                 if (i_388_ != 0) {
                                     val i_418_ = Class70.anIntArray1207!![i_388_]
                                     val i_419_ = Class70.anIntArray1204!![i_388_]
@@ -1980,7 +1980,7 @@ class Class64_Sub3 : Class64 {
                                 }
                                 anIntArray5543!![i_417_] += ShaderProgram.anInt7275
                                 anIntArray5593!![i_417_] += Class221.anInt2880
-                                anIntArray5644!![i_417_] += Class181.anInt2398
+                                anIntArray5644!![i_417_] += SpotAnimDefinition.anInt2398
                                 i_416_++
                             }
                         } else {
@@ -1989,7 +1989,7 @@ class Class64_Sub3 : Class64 {
                                 val i_406_ = is_404_[i_405_]
                                 anIntArray5543!![i_406_] -= ShaderProgram.anInt7275
                                 anIntArray5593!![i_406_] -= Class221.anInt2880
-                                anIntArray5644!![i_406_] -= Class181.anInt2398
+                                anIntArray5644!![i_406_] -= SpotAnimDefinition.anInt2398
                                 if (i_386_ != 0) {
                                     val i_407_ = Class70.anIntArray1207!![i_386_]
                                     val i_408_ = Class70.anIntArray1204!![i_386_]
@@ -2013,7 +2013,7 @@ class Class64_Sub3 : Class64 {
                                 }
                                 anIntArray5543!![i_406_] += ShaderProgram.anInt7275
                                 anIntArray5593!![i_406_] += Class221.anInt2880
-                                anIntArray5644!![i_406_] += Class181.anInt2398
+                                anIntArray5644!![i_406_] += SpotAnimDefinition.anInt2398
                                 i_405_++
                             }
                         }
@@ -2071,13 +2071,13 @@ class Class64_Sub3 : Class64 {
                             val i_449_ = is_447_[i_448_]
                             anIntArray5543!![i_449_] -= ShaderProgram.anInt7275
                             anIntArray5593!![i_449_] -= Class221.anInt2880
-                            anIntArray5644!![i_449_] -= Class181.anInt2398
+                            anIntArray5644!![i_449_] -= SpotAnimDefinition.anInt2398
                             anIntArray5543!![i_449_] = i_386_ * anIntArray5543!![i_449_] shr 7
                             anIntArray5593!![i_449_] = anIntArray5593!![i_449_] * i_387_ shr 7
                             anIntArray5644!![i_449_] = anIntArray5644!![i_449_] * i_388_ shr 7
                             anIntArray5543!![i_449_] += ShaderProgram.anInt7275
                             anIntArray5593!![i_449_] += Class221.anInt2880
-                            anIntArray5644!![i_449_] += Class181.anInt2398
+                            anIntArray5644!![i_449_] += SpotAnimDefinition.anInt2398
                         }
                     }
                 }
@@ -2210,23 +2210,23 @@ class Class64_Sub3 : Class64 {
         anInt5567++
         if (i == 0) {
             ShaderProgram.anInt7275 = 0
-            Class181.anInt2398 = 0
+            SpotAnimDefinition.anInt2398 = 0
             Class221.anInt2880 = 0
             var i_482_ = 0
             for (i_483_ in 0..<anInt5557) {
                 ShaderProgram.anInt7275 += anIntArray5543!![i_483_]
                 Class221.anInt2880 += anIntArray5593!![i_483_]
                 i_482_++
-                Class181.anInt2398 += anIntArray5644!![i_483_]
+                SpotAnimDefinition.anInt2398 += anIntArray5644!![i_483_]
             }
             if (i_482_ <= 0) {
                 Class221.anInt2880 = i_480_
-                Class181.anInt2398 = i_481_
+                SpotAnimDefinition.anInt2398 = i_481_
                 ShaderProgram.anInt7275 = i_479_
             } else {
                 Class221.anInt2880 = Class221.anInt2880 / i_482_ - -i_480_
                 ShaderProgram.anInt7275 = i_479_ + ShaderProgram.anInt7275 / i_482_
-                Class181.anInt2398 = Class181.anInt2398 / i_482_ + i_481_
+                SpotAnimDefinition.anInt2398 = SpotAnimDefinition.anInt2398 / i_482_ + i_481_
             }
         } else if (i == 1) {
             for (i_484_ in 0..<anInt5557) {
@@ -2238,7 +2238,7 @@ class Class64_Sub3 : Class64 {
             for (i_485_ in 0..<anInt5557) {
                 anIntArray5543!![i_485_] -= ShaderProgram.anInt7275
                 anIntArray5593!![i_485_] -= Class221.anInt2880
-                anIntArray5644!![i_485_] -= Class181.anInt2398
+                anIntArray5644!![i_485_] -= SpotAnimDefinition.anInt2398
                 if (i_481_ != 0) {
                     val i_486_ = Class70.anIntArray1207!![i_481_]
                     val i_487_ = Class70.anIntArray1204!![i_481_]
@@ -2262,19 +2262,19 @@ class Class64_Sub3 : Class64 {
                 }
                 anIntArray5543!![i_485_] += ShaderProgram.anInt7275
                 anIntArray5593!![i_485_] += Class221.anInt2880
-                anIntArray5644!![i_485_] += Class181.anInt2398
+                anIntArray5644!![i_485_] += SpotAnimDefinition.anInt2398
             }
         } else if (i == 3) {
             for (i_495_ in 0..<anInt5557) {
                 anIntArray5543!![i_495_] -= ShaderProgram.anInt7275
                 anIntArray5593!![i_495_] -= Class221.anInt2880
-                anIntArray5644!![i_495_] -= Class181.anInt2398
+                anIntArray5644!![i_495_] -= SpotAnimDefinition.anInt2398
                 anIntArray5543!![i_495_] = i_479_ * anIntArray5543!![i_495_] / 128
                 anIntArray5593!![i_495_] = i_480_ * anIntArray5593!![i_495_] / 128
                 anIntArray5644!![i_495_] = anIntArray5644!![i_495_] * i_481_ / 128
                 anIntArray5543!![i_495_] += ShaderProgram.anInt7275
                 anIntArray5593!![i_495_] += Class221.anInt2880
-                anIntArray5644!![i_495_] += Class181.anInt2398
+                anIntArray5644!![i_495_] += SpotAnimDefinition.anInt2398
             }
         } else if (i == 5) {
             for (i_496_ in 0..<anInt5632) {
@@ -2425,7 +2425,7 @@ class Class64_Sub3 : Class64 {
                 var i_516_ = 0
                 ShaderProgram.anInt7275 = 0
                 Class221.anInt2880 = 0
-                Class181.anInt2398 = 0
+                SpotAnimDefinition.anInt2398 = 0
                 var i_517_ = 0
                 while (i_515_ > i_517_) {
                     val i_518_ = `is`[i_517_]
@@ -2437,7 +2437,7 @@ class Class64_Sub3 : Class64 {
                                 ShaderProgram.anInt7275 += anIntArray5543!![i_521_]
                                 Class221.anInt2880 += anIntArray5593!![i_521_]
                                 i_516_++
-                                Class181.anInt2398 += anIntArray5644!![i_521_]
+                                SpotAnimDefinition.anInt2398 += anIntArray5644!![i_521_]
                             }
                         }
                     }
@@ -2445,12 +2445,12 @@ class Class64_Sub3 : Class64 {
                 }
                 if (i_516_ <= 0) {
                     ShaderProgram.anInt7275 = i_510_
-                    Class181.anInt2398 = i_512_
+                    SpotAnimDefinition.anInt2398 = i_512_
                     Class221.anInt2880 = i_511_
                 } else {
                     ShaderProgram.anInt7275 = i_510_ + ShaderProgram.anInt7275 / i_516_
                     Class221.anInt2880 = Class221.anInt2880 / i_516_ - -i_511_
-                    Class181.anInt2398 = i_512_ + Class181.anInt2398 / i_516_
+                    SpotAnimDefinition.anInt2398 = i_512_ + SpotAnimDefinition.anInt2398 / i_516_
                     Class348_Sub42_Sub16_Sub1.aBoolean10450 = true
                 }
             } else if (i == 1) {
@@ -2494,7 +2494,7 @@ class Class64_Sub3 : Class64 {
                                 if (aShortArray5608 == null || ((i_513_ and aShortArray5608!![i_534_].toInt()) != 0)) {
                                     anIntArray5543!![i_534_] -= ShaderProgram.anInt7275
                                     anIntArray5593!![i_534_] -= Class221.anInt2880
-                                    anIntArray5644!![i_534_] -= Class181.anInt2398
+                                    anIntArray5644!![i_534_] -= SpotAnimDefinition.anInt2398
                                     if (i_512_ != 0) {
                                         val i_535_ = Class70.anIntArray1207!![i_512_]
                                         val i_536_ = Class70.anIntArray1204!![i_512_]
@@ -2518,7 +2518,7 @@ class Class64_Sub3 : Class64 {
                                     }
                                     anIntArray5543!![i_534_] += ShaderProgram.anInt7275
                                     anIntArray5593!![i_534_] += Class221.anInt2880
-                                    anIntArray5644!![i_534_] += Class181.anInt2398
+                                    anIntArray5644!![i_534_] += SpotAnimDefinition.anInt2398
                                 }
                                 i_533_++
                             }
@@ -2579,15 +2579,15 @@ class Class64_Sub3 : Class64 {
                     val i_566_ = is_514_[13] shl 4
                     val i_567_ = is_514_[14] shl 4
                     if (Class348_Sub42_Sub16_Sub1.aBoolean10450) {
-                        var i_568_ = ((ShaderProgram.anInt7275 * is_514_[0] - -(is_514_[3] * Class221.anInt2880) - -(is_514_[6] * Class181.anInt2398) - -8192) shr 14)
-                        var i_569_ = ((is_514_[1] * ShaderProgram.anInt7275 - -(Class221.anInt2880 * is_514_[4]) - (-(is_514_[7] * Class181.anInt2398) - 8192)) shr 14)
+                        var i_568_ = ((ShaderProgram.anInt7275 * is_514_[0] - -(is_514_[3] * Class221.anInt2880) - -(is_514_[6] * SpotAnimDefinition.anInt2398) - -8192) shr 14)
+                        var i_569_ = ((is_514_[1] * ShaderProgram.anInt7275 - -(Class221.anInt2880 * is_514_[4]) - (-(is_514_[7] * SpotAnimDefinition.anInt2398) - 8192)) shr 14)
                         i_568_ += i_565_
                         i_569_ += i_566_
-                        var i_570_ = (8192 + (Class181.anInt2398 * is_514_[8] + is_514_[2] * ShaderProgram.anInt7275 + is_514_[5] * Class221.anInt2880) shr 14)
+                        var i_570_ = (8192 + (SpotAnimDefinition.anInt2398 * is_514_[8] + is_514_[2] * ShaderProgram.anInt7275 + is_514_[5] * Class221.anInt2880) shr 14)
                         i_570_ += i_567_
                         ShaderProgram.anInt7275 = i_568_
                         Class221.anInt2880 = i_569_
-                        Class181.anInt2398 = i_570_
+                        SpotAnimDefinition.anInt2398 = i_570_
                         Class348_Sub42_Sub16_Sub1.aBoolean10450 = false
                     }
                     val is_571_ = IntArray(9)
@@ -2608,12 +2608,12 @@ class Class64_Sub3 : Class64 {
                     is_571_[0] = (8192 + (i_575_ * i_579_ + i_576_ * i_574_) shr 14)
                     is_571_[7] = (8192 + i_574_ * i_578_ + i_577_ * i_575_ shr 14)
                     is_571_[2] = i_575_ * i_572_ - -8192 shr 14
-                    val i_580_ = ((is_571_[1] * -Class221.anInt2880 + -ShaderProgram.anInt7275 * is_571_[0] - (-(-Class181.anInt2398 * is_571_[2]) + -8192)) shr 14)
-                    val i_581_ = ((-ShaderProgram.anInt7275 * is_571_[3] + is_571_[4] * -Class221.anInt2880 - -(is_571_[5] * -Class181.anInt2398) + 8192) shr 14)
-                    val i_582_ = ((-Class181.anInt2398 * is_571_[8] + (is_571_[6] * -ShaderProgram.anInt7275 - -(is_571_[7] * -Class221.anInt2880)) - -8192) shr 14)
+                    val i_580_ = ((is_571_[1] * -Class221.anInt2880 + -ShaderProgram.anInt7275 * is_571_[0] - (-(-SpotAnimDefinition.anInt2398 * is_571_[2]) + -8192)) shr 14)
+                    val i_581_ = ((-ShaderProgram.anInt7275 * is_571_[3] + is_571_[4] * -Class221.anInt2880 - -(is_571_[5] * -SpotAnimDefinition.anInt2398) + 8192) shr 14)
+                    val i_582_ = ((-SpotAnimDefinition.anInt2398 * is_571_[8] + (is_571_[6] * -ShaderProgram.anInt7275 - -(is_571_[7] * -Class221.anInt2880)) - -8192) shr 14)
                     val i_583_ = i_580_ - -ShaderProgram.anInt7275
                     val i_584_ = i_581_ - -Class221.anInt2880
-                    val i_585_ = Class181.anInt2398 + i_582_
+                    val i_585_ = SpotAnimDefinition.anInt2398 + i_582_
                     val is_586_ = IntArray(9)
                     for (i_587_ in 0..2) {
                         for (i_588_ in 0..2) {
@@ -2678,13 +2678,13 @@ class Class64_Sub3 : Class64 {
                                 if (aShortArray5608 == null || ((i_513_ and aShortArray5608!![i_652_].toInt()) != 0)) {
                                     anIntArray5543!![i_652_] -= ShaderProgram.anInt7275
                                     anIntArray5593!![i_652_] -= Class221.anInt2880
-                                    anIntArray5644!![i_652_] -= Class181.anInt2398
+                                    anIntArray5644!![i_652_] -= SpotAnimDefinition.anInt2398
                                     anIntArray5543!![i_652_] = (anIntArray5543!![i_652_] * i_510_ shr 7)
                                     anIntArray5593!![i_652_] = (anIntArray5593!![i_652_] * i_511_ shr 7)
                                     anIntArray5644!![i_652_] = (i_512_ * anIntArray5644!![i_652_] shr 7)
                                     anIntArray5543!![i_652_] += ShaderProgram.anInt7275
                                     anIntArray5593!![i_652_] += Class221.anInt2880
-                                    anIntArray5644!![i_652_] += Class181.anInt2398
+                                    anIntArray5644!![i_652_] += SpotAnimDefinition.anInt2398
                                 }
                                 i_651_++
                             }
@@ -2699,26 +2699,26 @@ class Class64_Sub3 : Class64 {
                     val i_614_ = is_514_[13] shl 4
                     val i_615_ = is_514_[14] shl 4
                     if (Class348_Sub42_Sub16_Sub1.aBoolean10450) {
-                        var i_616_ = (8192 + (ShaderProgram.anInt7275 * is_514_[0] - -(Class221.anInt2880 * is_514_[3]) - -(is_514_[6] * Class181.anInt2398)) shr 14)
-                        var i_617_ = (8192 + (is_514_[7] * Class181.anInt2398 + (Class221.anInt2880 * is_514_[4] + is_514_[1] * ShaderProgram.anInt7275)) shr 14)
+                        var i_616_ = (8192 + (ShaderProgram.anInt7275 * is_514_[0] - -(Class221.anInt2880 * is_514_[3]) - -(is_514_[6] * SpotAnimDefinition.anInt2398)) shr 14)
+                        var i_617_ = (8192 + (is_514_[7] * SpotAnimDefinition.anInt2398 + (Class221.anInt2880 * is_514_[4] + is_514_[1] * ShaderProgram.anInt7275)) shr 14)
                         i_617_ += i_614_
-                        var i_618_ = ((is_514_[5] * Class221.anInt2880 + ShaderProgram.anInt7275 * is_514_[2] + is_514_[8] * Class181.anInt2398 - -8192) shr 14)
+                        var i_618_ = ((is_514_[5] * Class221.anInt2880 + ShaderProgram.anInt7275 * is_514_[2] + is_514_[8] * SpotAnimDefinition.anInt2398 - -8192) shr 14)
                         i_616_ += i_613_
                         Class221.anInt2880 = i_617_
                         i_618_ += i_615_
                         ShaderProgram.anInt7275 = i_616_
                         Class348_Sub42_Sub16_Sub1.aBoolean10450 = false
-                        Class181.anInt2398 = i_618_
+                        SpotAnimDefinition.anInt2398 = i_618_
                     }
                     val i_619_ = i_510_ shl 15 shr 7
                     val i_620_ = i_511_ shl 15 shr 7
                     val i_621_ = i_512_ shl 15 shr 7
                     val i_622_ = -ShaderProgram.anInt7275 * i_619_ + 8192 shr 14
                     val i_623_ = i_620_ * -Class221.anInt2880 + 8192 shr 14
-                    val i_624_ = -Class181.anInt2398 * i_621_ - -8192 shr 14
+                    val i_624_ = -SpotAnimDefinition.anInt2398 * i_621_ - -8192 shr 14
                     val i_625_ = i_622_ + ShaderProgram.anInt7275
                     val i_626_ = i_623_ - -Class221.anInt2880
-                    val i_627_ = Class181.anInt2398 + i_624_
+                    val i_627_ = SpotAnimDefinition.anInt2398 + i_624_
                     val is_628_ = IntArray(9)
                     is_628_[1] = 8192 + is_514_[3] * i_619_ shr 14
                     is_628_[0] = is_514_[0] * i_619_ - -8192 shr 14
@@ -3326,13 +3326,13 @@ class Class64_Sub3 : Class64 {
                                     f_743_ = GzipDecompressor.aFloatArray2075!![0]
                                     f_744_ = GzipDecompressor.aFloatArray2075!![1]
                                 } else if (i_748_.toInt() == 3) {
-                                    Class181.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_780_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_780_.toInt()]), i_784_, -4, fs)
+                                    SpotAnimDefinition.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_780_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_780_.toInt()]), i_784_, -4, fs)
                                     f_740_ = GzipDecompressor.aFloatArray2075!![1]
                                     f = GzipDecompressor.aFloatArray2075!![0]
-                                    Class181.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_781_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_781_.toInt()]), i_784_, -4, fs)
+                                    SpotAnimDefinition.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_781_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_781_.toInt()]), i_784_, -4, fs)
                                     f_741_ = GzipDecompressor.aFloatArray2075!![0]
                                     f_742_ = GzipDecompressor.aFloatArray2075!![1]
-                                    Class181.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_782_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_782_.toInt()]), i_784_, -4, fs)
+                                    SpotAnimDefinition.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_782_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_782_.toInt()]), i_784_, -4, fs)
                                     f_744_ = GzipDecompressor.aFloatArray2075!![1]
                                     f_743_ = GzipDecompressor.aFloatArray2075!![0]
                                     if ((0x1 and i_786_.toInt()) == 0) {

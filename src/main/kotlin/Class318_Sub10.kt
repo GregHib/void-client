@@ -120,7 +120,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         if (aBoolean6484) {
             var class318_sub7 = aClass243_6478.method1872(8) as? Class318_Sub7?
             while (class318_sub7 != null) {
-                for (i_4_ in 0..<class318_sub7.aClass181_6441!!.anInt2422) class318_sub7.method2513(var_renderer, 1, l, 3, !aBoolean6473)
+                for (i_4_ in 0..<class318_sub7.aSpotAnimDefinition_6441!!.anInt2422) class318_sub7.method2513(var_renderer, 1, l, 3, !aBoolean6473)
                 class318_sub7 = aClass243_6478.method1878(122.toByte()) as? Class318_Sub7?
             }
             aBoolean6484 = false

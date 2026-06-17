@@ -82,7 +82,7 @@ import PingHostListHolder.method1351
 import ScriptOpcodeHolder.method1355
 import Class18.Companion.method273
 import Class18.Companion.method277
-import Class181.Companion.method1369
+import SpotAnimDefinition.Companion.method1369
 import Class182.Companion.method1373
 import Class182.Companion.method1375
 import Class183.Companion.method1378

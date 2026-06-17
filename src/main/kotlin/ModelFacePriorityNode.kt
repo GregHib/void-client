@@ -30,7 +30,7 @@ class ModelFacePriorityNode internal constructor(private val anInt1886: Int, var
         return ModelFacePriorityNode(anInt1886, i_2_, i, i_1_, this.aByte1875)
     }
 
-    fun method1125(i: Byte): Class181 {
+    fun method1125(i: Byte): SpotAnimDefinition {
         anInt1873++
         if (i.toInt() != 59) this.anInt1880 = -51
         return method3591(anInt1886, i.toInt() xor 0x3b)
