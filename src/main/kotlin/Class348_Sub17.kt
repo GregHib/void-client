@@ -407,7 +407,7 @@ class Class348_Sub17 : Class348 {
 
         fun method2928(bool: Boolean) {
             if (bool == true) {
-                Class258_Sub2.aParticleEmitterNodeArray8531s = arrayOfNulls<ParticleEmitterNode>(50)
+                GlTextureCubeMap.aParticleEmitterNodeArray8531s = arrayOfNulls<ParticleEmitterNode>(50)
                 anInt6790++
                 HintArrowOrMessage.anInt2021 = 0
             }
