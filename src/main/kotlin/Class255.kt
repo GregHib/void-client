@@ -12,7 +12,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     var anInt3286: Int = 0
     var aClass60_3287: Class60 = Class60(50)
     var aClass175_3288: Class175 = Class175(250)
-    private var aClass126_3289: Class126? = Class126()
+    private var aCrc64Hashable_3289: Crc64Hashable? = Crc64Hashable()
     private val aStringArray3290: Array<String?>
     var anInt3291: Int = 0
     private var aClass326_3292: Class326? = null
@@ -46,15 +46,15 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             if (bool) abstractModelRenderer_9_ = var_renderer!!.method3662(36, `is`, 94.toByte(), 0, 36, 32)
             else abstractModelRenderer_9_ = var_renderer_3_!!.method3662(36, `is`, 94.toByte(), 0, 36, 32)
             if (!bool) {
-                val class126 = Class126()
-                class126.anInt4982 = i
-                class126.aBoolean4990 = class154 != null
-                class126.anInt4989 = i_0_
-                class126.anInt4992 = i_4_
-                class126.anInt4981 = i_1_
-                class126.anInt4991 = var_renderer_3_!!.anInt4567
-                class126.anInt4993 = i_6_
-                this.aClass175_3288.method1348(70, abstractModelRenderer_9_, class126)
+                val crc64Hashable = Crc64Hashable()
+                crc64Hashable.anInt4982 = i
+                crc64Hashable.aBoolean4990 = class154 != null
+                crc64Hashable.anInt4989 = i_0_
+                crc64Hashable.anInt4992 = i_4_
+                crc64Hashable.anInt4981 = i_1_
+                crc64Hashable.anInt4991 = var_renderer_3_!!.anInt4567
+                crc64Hashable.anInt4993 = i_6_
+                this.aClass175_3288.method1348(70, abstractModelRenderer_9_, crc64Hashable)
             }
             return abstractModelRenderer_9_
         } catch (runtimeexception: RuntimeException) {
@@ -169,16 +169,16 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
 
     fun method1941(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, var_renderer: Renderer?, class154: Class154?): AbstractModelRenderer? {
         try {
-            aClass126_3289!!.anInt4992 = i_16_
-            aClass126_3289!!.anInt4989 = i_17_
-            aClass126_3289!!.anInt4991 = var_renderer!!.anInt4567
-            aClass126_3289!!.anInt4981 = i_19_
-            if (i_15_.toInt() != -74) aClass126_3289 = null
-            aClass126_3289!!.aBoolean4990 = class154 != null
-            aClass126_3289!!.anInt4982 = i_18_
+            aCrc64Hashable_3289!!.anInt4992 = i_16_
+            aCrc64Hashable_3289!!.anInt4989 = i_17_
+            aCrc64Hashable_3289!!.anInt4991 = var_renderer!!.anInt4567
+            aCrc64Hashable_3289!!.anInt4981 = i_19_
+            if (i_15_.toInt() != -74) aCrc64Hashable_3289 = null
+            aCrc64Hashable_3289!!.aBoolean4990 = class154 != null
+            aCrc64Hashable_3289!!.anInt4982 = i_18_
             anInt3282++
-            aClass126_3289!!.anInt4993 = i
-            return this.aClass175_3288.method1340(123, aClass126_3289!!) as AbstractModelRenderer?
+            aCrc64Hashable_3289!!.anInt4993 = i
+            return this.aClass175_3288.method1340(123, aCrc64Hashable_3289!!) as AbstractModelRenderer?
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ')'))
         }

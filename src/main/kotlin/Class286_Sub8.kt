@@ -162,7 +162,7 @@ class Class286_Sub8 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
             }
             if (bool_6_) {
                 Class348_Sub40_Sub26.anInt9346--
-                if (Class348_Sub40_Sub26.anInt9346 == 0) Class126.anIntArray4983 = null
+                if (Class348_Sub40_Sub26.anInt9346 == 0) Crc64Hashable.anIntArray4983 = null
             }
         }
     }

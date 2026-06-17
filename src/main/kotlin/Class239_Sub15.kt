@@ -17,14 +17,14 @@ class Class239_Sub15 : Class239 {
     }
 
     internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51) {
-        Class126.method1114(this.anInt3138, -122)
+        Crc64Hashable.method1114(this.anInt3138, -122)
     }
 
     override fun method1712(i: Int, i_20_: Int) {
         anInt6003++
         this.anInt3138 = i_20_
         val i_21_ = 33 % ((i - 82) / 35)
-        Class126.method1114(this.anInt3138, -122)
+        Crc64Hashable.method1114(this.anInt3138, -122)
     }
 
     override fun method1710(i: Int): Int {
@@ -35,7 +35,7 @@ class Class239_Sub15 : Class239 {
     }
 
     internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51) {
-        Class126.method1114(this.anInt3138, -120)
+        Crc64Hashable.method1114(this.anInt3138, -120)
     }
 
     fun method1784(i: Int): Int {

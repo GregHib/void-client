@@ -28,7 +28,7 @@ import MinimapFlagRenderer.method1081
 import ObjectSpawnDecoder.method1086
 import HoverActionEntry.Companion.method1091
 import ModelDefinition.Companion.method1096
-import Class126.Companion.method1112
+import Crc64Hashable.Companion.method1112
 import Class127.Companion.method1117
 import Class127_Sub1.Companion.method1120
 import Class128.method1123
@@ -2463,7 +2463,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray820
                                     Class348_Sub1_Sub2.aClass262_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                if ((Class126.anInt4985 > class46.anInt726) && (class46.anObjectArray734 != null)) {
+                                if ((Crc64Hashable.anInt4985 > class46.anInt726) && (class46.anObjectArray734 != null)) {
                                     val class348_sub36 = Class348_Sub36()
                                     class348_sub36.aClass46_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray734

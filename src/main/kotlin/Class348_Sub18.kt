@@ -142,7 +142,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class239.aClass45_3146!!.method412(88.toByte())
                 Class367_Sub8.aClass45_7362!!.method412((-109).toByte())
                 Class262.aClass45_3323!!.method412(112.toByte())
-                Class126.aClass45_4984!!.method412(85.toByte())
+                Crc64Hashable.aClass45_4984!!.method412(85.toByte())
                 Class136.aClass45_4796!!.method412(93.toByte())
                 Class146.aClass45_2015!!.method412((-122).toByte())
                 Class353.aClass60_4346!!.method590(0)

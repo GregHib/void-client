@@ -223,7 +223,7 @@ class Class77 {
         fun method776(i: Int, i_0_: Int, i_1_: Int): Boolean {
             anInt1297++
             if (i_1_ != 65536) method780(-106, -24, 57)
-            val bool = (if ((i and 0x37) != 0) Class126.method1113(i_0_, i, -7) else method3200(i_0_, i, 111.toByte()))
+            val bool = (if ((i and 0x37) != 0) Crc64Hashable.method1113(i_0_, i, -7) else method3200(i_0_, i, 111.toByte()))
             return bool or (Class274.method2058(i_0_, i, i_1_ xor 0x1003d) or ((0x10000 and i_0_) != 0))
         }
 

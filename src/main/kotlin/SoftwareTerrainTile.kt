@@ -39,12 +39,12 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         if (`is` != null && `is`.size != 0) {
             for (i_12_ in is_4_.indices) {
                 if (is_4_[i_12_] == -1) is_4_[i_12_] = 0
-                else is_4_[i_12_] = ((Class126.anIntArray4983!![Class25.method303(is_4_[i_12_], 30).toInt() and 0xffff]) shl 8) or 0xff
+                else is_4_[i_12_] = ((Crc64Hashable.anIntArray4983!![Class25.method303(is_4_[i_12_], 30).toInt() and 0xffff]) shl 8) or 0xff
             }
             if (is_5_ != null) {
                 for (i_13_ in is_5_.indices) {
                     if (is_5_[i_13_] == -1) is_5_[i_13_] = 0
-                    else is_5_[i_13_] = ((Class126.anIntArray4983!![Class25.method303(is_5_[i_13_], 30).toInt() and 0xffff]) shl 8) or 0xff
+                    else is_5_[i_13_] = ((Crc64Hashable.anIntArray4983!![Class25.method303(is_5_[i_13_], 30).toInt() and 0xffff]) shl 8) or 0xff
                 }
             }
             if (bool_11_) {
@@ -320,11 +320,11 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             } else {
                                 if (bool_57_) {
                                     i_59_ = is_6_[i_54_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_54_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_54_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_55_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_55_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_55_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_56_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_56_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_56_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                 }
                                 class145.aShortArray2008!![i_53_] = (-1).toShort()
                             }
@@ -1409,9 +1409,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                 ((class236.aShortArray3094!![i_373_.toInt()]).toFloat() / this.anInt4592.toFloat()),
                                 ((class236.aShortArray3094!![i_374_.toInt()]).toFloat() / this.anInt4592.toFloat()),
                                 ((class236.aShortArray3094!![i_375_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_373_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_374_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_375_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class236.aShortArray3088!![i_373_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class236.aShortArray3088!![i_374_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class236.aShortArray3088!![i_375_.toInt()]).toInt() and 0xffff]) and 0xffffff),
                                 0,
                                 0,
                                 0,
@@ -1466,9 +1466,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                 ((class236.aShortArray3094!![i_385_.toInt()]).toFloat() / this.anInt4592.toFloat()),
                                 ((class236.aShortArray3094!![i_386_.toInt()]).toFloat() / this.anInt4592.toFloat()),
                                 ((class236.aShortArray3094!![i_387_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_385_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_386_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_387_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class236.aShortArray3088!![i_385_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class236.aShortArray3088!![i_386_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class236.aShortArray3088!![i_387_.toInt()]).toInt() and 0xffff]) and 0xffffff),
                                 0,
                                 0,
                                 0,
@@ -1628,9 +1628,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         1.0f,
                         1.0f,
                         0.0f,
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1602.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1602.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
                         0,
                         0,
                         0,
@@ -1657,9 +1657,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         0.0f,
                         0.0f,
                         1.0f,
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1601.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1601.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
                         0,
                         0,
                         0,
@@ -1687,9 +1687,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         1.0f,
                         1.0f,
                         0.0f,
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1602.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1602.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
                         0,
                         0,
                         0,
@@ -1716,9 +1716,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         0.0f,
                         0.0f,
                         1.0f,
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1601.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1601.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
                         0,
                         0,
                         0,

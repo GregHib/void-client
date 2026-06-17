@@ -3,7 +3,7 @@ import Class348_Sub42_Sub9.Companion.method3203
 /* Class126 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class126 : Interface14 {
+class Crc64Hashable : Interface14 {
     @JvmField
     var anInt4981: Int = 0
     @JvmField
@@ -42,7 +42,7 @@ class Class126 : Interface14 {
 
     override fun method53(i: Int, interface14: Interface14?): Boolean {
         anInt4994++
-        if (interface14 !is Class126) return false
+        if (interface14 !is Crc64Hashable) return false
         val class126_3_ = interface14
         if (this.anInt4991 != class126_3_.anInt4991) return false
         if (i <= 50) return true

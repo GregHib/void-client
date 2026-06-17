@@ -148,7 +148,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class367_Sub3.aBooleanArray7304!![Class348_Sub42_Sub12.anInt9604] = Class139.method1166(i, 2) == 2
                     Class348_Sub42_Sub12.anInt9604++
                 }
-                Class126.anInt4985 = Class311.anInt3918
+                Crc64Hashable.anInt4985 = Class311.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1116,7 +1116,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class367_Sub3.aBooleanArray7304!![i] = false
                     i++
                 }
-                Class126.anInt4985 = Class311.anInt3918
+                Crc64Hashable.anInt4985 = Class311.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1267,7 +1267,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                 }
                 MinimapSpriteRenderer.anInt4930 = 2
-                Class126.anInt4985 = Class311.anInt3918
+                Crc64Hashable.anInt4985 = Class311.anInt3918
                 var bool_156_ = false
                 var i = Class348_Sub40_Sub30.anInt9383
                 while (i > 0) {
@@ -1414,7 +1414,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == Class127_Sub1.aIntRange_8384) {
                 Class348_Sub3.aIntRange_6584 = null
                 MinimapSpriteRenderer.anInt4930 = 1
-                Class126.anInt4985 = Class311.anInt3918
+                Crc64Hashable.anInt4985 = Class311.anInt3918
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class176.aIntRange_2335) {

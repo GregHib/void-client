@@ -90,7 +90,7 @@ class Class239_Sub11 : Class239 {
                 Class367_Sub8.anInt7365 = 1
             }
             if (Class367_Sub8.anInt7365 == 1) {
-                Class126.aClass267Array4987 = Class267.method2029(110)
+                Crc64Hashable.aClass267Array4987 = Class267.method2029(110)
                 Class267.aClass267_3396!!.method2025(Class292(Class367_Sub8.aClass45_7362!!), false)
                 Class267.aClass267_3402!!.method2025(Class309("jaggl"), false)
                 Class267.aClass267_3403!!.method2025(Class309("jagdx"), false)
@@ -117,11 +117,11 @@ class Class239_Sub11 : Class239 {
                 Class267.aClass267_3424!!.method2025(Class292(CameraNodeList.aClass45_1743!!), false)
                 Class267.aClass267_3425!!.method2025(Class292(SoftwareSpriteRaster.aClass45_1627!!), false)
                 Class267.aClass267_3426!!.method2025(Class136((Class348_Sub32.aClass45_6950), "details"), false)
-                for (i_4_ in Class126.aClass267Array4987!!.indices) {
-                    if (Class126.aClass267Array4987!![i_4_]!!.method2027(78) == null) throw RuntimeException()
+                for (i_4_ in Crc64Hashable.aClass267Array4987!!.indices) {
+                    if (Crc64Hashable.aClass267Array4987!![i_4_]!!.method2027(78) == null) throw RuntimeException()
                 }
                 var i_5_ = 0
-                val class267s = Class126.aClass267Array4987!!
+                val class267s = Crc64Hashable.aClass267Array4987!!
                 for (i_6_ in class267s.indices) {
                     val class267 = class267s[i_6_]!!
                     val i_7_ = class267.method2024(-1)
@@ -131,12 +131,12 @@ class Class239_Sub11 : Class239 {
                 Class348_Sub40_Sub24.anInt9327 = i_5_
                 Class367_Sub8.anInt7365 = 2
             }
-            if (Class126.aClass267Array4987 == null) return 100
+            if (Crc64Hashable.aClass267Array4987 == null) return 100
             var i_9_ = 0
             var i_10_ = 0
             var bool = true
             if (i.toInt() != -25) anInt5951 = -33
-            val class267s = Class126.aClass267Array4987!!
+            val class267s = Crc64Hashable.aClass267Array4987!!
             var i_11_ = 0
             while (class267s.size > i_11_) {
                 val class267 = class267s[i_11_]!!
@@ -150,7 +150,7 @@ class Class239_Sub11 : Class239 {
             if (bool) {
                 if (!(Class267.aClass267_3404!!.method2027(92) as Class309).method2313(102)) Class79.aClient1367!!.method83(true)
                 if (!(Class267.aClass267_3407!!.method2027(i.toInt() xor 0x64.inv()) as Class309).method2313(103)) Class38.aBoolean510 = Class79.aClient1367!!.method100(i.toInt() xor 0x12.inv())
-                Class126.aClass267Array4987 = null
+                Crc64Hashable.aClass267Array4987 = null
             }
             i_9_ -= Class348_Sub40_Sub24.anInt9327
             i_10_ -= Class348_Sub40_Sub24.anInt9327

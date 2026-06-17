@@ -107,7 +107,7 @@ class Class239_Sub25 : Class239 {
         @JvmStatic
         fun method1827(i: Int) {
             anInt6112++
-            if (Class126.anIntArray4983 == null) Class126.anIntArray4983 = IntArray(65536)
+            if (Crc64Hashable.anIntArray4983 == null) Crc64Hashable.anIntArray4983 = IntArray(65536)
             else return
             val d = 0.7 + (0.03 * Math.random() - 0.015)
             var i_5_ = 0
@@ -159,7 +159,7 @@ class Class239_Sub25 : Class239 {
                         val i_21_ = (256.0f * f_11_).toInt()
                         val i_22_ = (256.0f * f_12_).toInt()
                         val i_23_ = ((i_21_ shl 8) + ((i_20_ shl 16) + (-16777216 + i_22_)))
-                        Class126.anIntArray4983!![i_5_++] = i_23_
+                        Crc64Hashable.anIntArray4983!![i_5_++] = i_23_
                     }
                 }
             }

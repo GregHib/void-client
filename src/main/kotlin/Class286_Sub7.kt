@@ -192,7 +192,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                                 Class172.anIntArray2280!![i_2_] = Class172.anIntArray2280!![i_2_ - -1]
                                 ObjectSpawnDecoder.aBooleanArray1806!![i_2_] = ObjectSpawnDecoder.aBooleanArray1806!![1 + i_2_]
                             }
-                            Class126.anInt4985 = Class311.anInt3918
+                            Crc64Hashable.anInt4985 = Class311.anInt3918
                             Class348_Sub42_Sub7.anInt9540++
                             val class348_sub47: Class348_Sub47 = Class286_Sub3.Companion.method2148(Class357.aClass351_4394, (Class348_Sub23_Sub2.aClass77_9029), -99)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))

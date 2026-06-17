@@ -342,7 +342,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             OpenGlRenderer.anInt7680 = 0
             OpenGlRenderer.anInt7551 = 0
             Class348_Sub23_Sub1.anInt8990 = 0
-            Class126.anInt4994 = 0
+            Crc64Hashable.anInt4994 = 0
             Class95.anInt1539 = 0
             Class219.anInt2867 = 0
             Class5_Sub1_Sub1.anInt9928 = 0
@@ -1491,7 +1491,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class334.anInt4153 = 0
             Class348_Sub38.anInt7012 = 0
             DelegatingRenderCanvas.anInt63 = 0
-            Class126.anInt4988 = 0
+            Crc64Hashable.anInt4988 = 0
             Class348_Sub27.anInt6901 = 0
             Class339.anInt4198 = 0
             Class348_Sub49.anInt7187 = 0
@@ -1568,7 +1568,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class64_Sub2.anInt5498 = 0
             Class318_Sub1_Sub3_Sub2.anInt10048 = 0
             Class60.anInt1099 = 0
-            Class126.anInt4995 = 0
+            Crc64Hashable.anInt4995 = 0
             Class137.anInt1937 = 0
             Class223.anInt2894 = 0
             Class64_Sub3.anInt5531 = 0
@@ -1735,7 +1735,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class258_Sub3_Sub1.anInt9942 = 0
             Class223.anInt2897 = 0
             NativeRenderer.anInt8009 = 0
-            Class126.anInt4986 = 0
+            Crc64Hashable.anInt4986 = 0
             Class318_Sub1_Sub3.anInt8753 = 0
             OpenGlRenderer.anInt7515 = 0
             Class373_Sub2.anInt7431 = 0
