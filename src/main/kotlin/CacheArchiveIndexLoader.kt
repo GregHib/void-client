@@ -2,7 +2,10 @@ import Class348_Sub31.Companion.method3013
 import Class5_Sub3.Companion.method200
 import java.awt.Point
 
-class Class33 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+/*
+ * Class33
+ */
+class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_458: Class45?
     private val aClass60_460 = Class60(128)
     fun method337(bool: Boolean, i: Int): CacheArchiveIndex {
