@@ -4,19 +4,19 @@ import kotlin.math.atan2
 
 class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int) : Class238() {
     private var aClass376_5834: Class376?
-    private val aClass208_5837: Class208
+    private val aBufferedOutputStreamWorker_5837: BufferedOutputStreamWorker
 
     @Throws(IOException::class)
     override fun method1706(i: Int, i_0_: Int, i_1_: Int, `is`: ByteArray) {
         anInt5833++
-        aClass208_5837.method1528(5.toByte(), i_1_, i, `is`)
+        aBufferedOutputStreamWorker_5837.method1528(5.toByte(), i_1_, i, `is`)
     }
 
     override fun method1702(i: Int) {
         anInt5828++
         aClass376_5834!!.method3618(0)
         val i_2_ = 29 / ((-25 - i) / 38)
-        aClass208_5837.method1527(-21179)
+        aBufferedOutputStreamWorker_5837.method1527(-21179)
     }
 
     override fun method1700(i: Byte) {
@@ -27,7 +27,7 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
             /* empty */
         }
         aClass376_5834!!.method3615(15984)
-        if (i.toInt() == 36) aClass208_5837.method1526((-99).toByte())
+        if (i.toInt() == 36) aBufferedOutputStreamWorker_5837.method1526((-99).toByte())
     }
 
     @Throws(IOException::class)
@@ -48,7 +48,7 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
         aSocket5836.setSoTimeout(30000)
         aSocket5836.setTcpNoDelay(true)
         aClass376_5834 = Class376(aSocket5836.getInputStream(), i)
-        aClass208_5837 = Class208(aSocket5836.getOutputStream(), i)
+        aBufferedOutputStreamWorker_5837 = BufferedOutputStreamWorker(aSocket5836.getOutputStream(), i)
     }
 
     protected fun finalize() {

@@ -108,7 +108,7 @@ import SocketStreamWorker.Companion.method1471
 import MidiTrackReader.Companion.method1493
 import CircleDrawer.method1497
 import FrameBufferObject.Companion.method1499
-import Class208.Companion.method1525
+import BufferedOutputStreamWorker.Companion.method1525
 import Class209.Companion.method1529
 import Class21.Companion.method288
 import Class210.Companion.method1536
@@ -1481,7 +1481,7 @@ class Client : GameAppletFrame() {
         }
         if (i.toInt() != 112) anInt5171 = 22
         while (true) {
-            val class348_sub36 = Class208.aClass262_2707!!.method1997(8) as Class348_Sub36?
+            val class348_sub36 = BufferedOutputStreamWorker.aClass262_2707!!.method1997(8) as Class348_Sub36?
             if (class348_sub36 == null) break
             val class46 = class348_sub36.aClass46_6989
             if (class46!!.anInt704 >= 0) {
@@ -2343,7 +2343,7 @@ class Client : GameAppletFrame() {
                                     val class348_sub36 = Class348_Sub36()
                                     class348_sub36.aClass46_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray764
-                                    Class208.aClass262_2707!!.method1999(class348_sub36, -20180)
+                                    BufferedOutputStreamWorker.aClass262_2707!!.method1999(class348_sub36, -20180)
                                 }
                                 if (class46.anObjectArray685 != null && (Class5_Sub1.anInt8352 > class46.anInt738)) {
                                     if (class46.anIntArray818 == null || (Class5_Sub1.anInt8352 - class46.anInt738) > 32) {

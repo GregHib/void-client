@@ -1,7 +1,10 @@
 import java.io.IOException
 import java.io.OutputStream
 
-class Class208 internal constructor(private var anOutputStream2712: OutputStream, i: Int) : Runnable {
+/*
+ * Class208
+ */
+class BufferedOutputStreamWorker internal constructor(private var anOutputStream2712: OutputStream, i: Int) : Runnable {
     private var anIOException2704: IOException? = null
     private var anInt2705 = 0
     private val aByteArray2706: ByteArray
