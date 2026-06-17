@@ -98,7 +98,7 @@ class j : AbstractModelRenderer, Interface19 {
     private external fun I(l: Long): Int
 
     protected fun finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this)
+        if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
     private external fun ua(var_oa: oa?, `is`: IntArray?, i: Int, i_91_: Int, i_92_: Int, i_93_: Int, bool: Boolean)

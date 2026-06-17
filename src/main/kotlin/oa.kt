@@ -96,7 +96,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     private fun g() { //
         System.gc()
         System.runFinalization()
-        Class257.method1948((-33).toByte())
+        RequestGate.method1948((-33).toByte())
     }
 
     external override fun b(i: Int, i_55_: Int, i_56_: Int, i_57_: Int, d: Double)
@@ -225,7 +225,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     @Synchronized
     protected override fun finalize() {
         this.method3635((-45).toByte())
-        if (this.nativeid != 0L) Class257.method1947(0, this)
+        if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
     private external fun d(i: Int)
@@ -266,7 +266,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
                 aBoolean5142 = false
             }
             g()
-            Class257.method1946(-108)
+            RequestGate.method1946(-108)
             aBoolean5124 = true
         }
     }
@@ -305,7 +305,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     external override fun KA(i: Int, i_118_: Int, i_119_: Int, i_120_: Int)
 
     override fun method3646(i: Int) {
-        Class257.method1948((-71).toByte())
+        RequestGate.method1948((-71).toByte())
         d(i)
         var var_ya = aClass262_5123.method1995(4) as ya?
         while (var_ya != null) {
@@ -578,7 +578,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         do {
             try {
                 if (!Class348_Sub40_Sub19.method3098(-30282, "sw3d")) throw RuntimeException("")
-                Class257.method1949((-128).toByte())
+                RequestGate.method1949((-128).toByte())
                 MA(aRenderConfig4579, 0, 0)
                 Class59_Sub2_Sub1.method566(false, true, 23.toByte())
                 aBoolean5142 = true

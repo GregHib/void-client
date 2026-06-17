@@ -239,7 +239,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             }
             aBoolean17 = false
         }
-        Class257.method1945((-128).toByte(), true)
+        RequestGate.method1945((-128).toByte(), true)
         NativeLibraryUnloader.method1629(!bool_4_)
         if (Class305.aCanvas3869 != null) {
             try {

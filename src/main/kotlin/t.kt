@@ -142,7 +142,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
     external override fun fa(i: Int, i_71_: Int, var_renderNode: RenderNode?): RenderNode?
 
     protected fun finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this)
+        if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
     private external fun ga(var_oa: oa?, var_ya: ya?, i: Int, i_72_: Int, `is`: Array<IntArray?>?, is_73_: Array<IntArray?>?, i_74_: Int, i_75_: Int, i_76_: Int)

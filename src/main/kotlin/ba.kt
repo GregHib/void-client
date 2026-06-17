@@ -6,7 +6,7 @@ class ba internal constructor(var_oa: oa?) : RenderNode(), Interface19 {
     var nativeid: Long = 0
 
     protected fun finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this)
+        if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
     external override fun w(bool: Boolean)

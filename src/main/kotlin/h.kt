@@ -22,7 +22,7 @@ class h(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages:
     }
 
     protected fun finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this)
+        if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
     external override fun w(bool: Boolean)

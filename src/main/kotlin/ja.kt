@@ -89,7 +89,7 @@ class ja : AbstractCameraTransform(), Interface19 {
     private external fun a(l: Long, i: Int, i_27_: Int, i_28_: Int)
 
     protected fun finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this)
+        if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
     public override fun method896(i: Int) {

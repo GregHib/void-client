@@ -36,7 +36,7 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
     private external fun W(l: Long)
 
     protected fun finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this)
+        if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
     fun method145(class64: Class64?, abstractCameraTransform: AbstractCameraTransform, `is`: IntArray?, i: Int) {

@@ -1,7 +1,7 @@
 /* Class257 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class257 {
+object RequestGate {
     private var aBoolean3296 = false
     private val aClass262_3297: Class262
     private var anInt3298 = 0
@@ -14,7 +14,7 @@ object Class257 {
     @Synchronized
     fun method1946(i: Int) {
         anInt3298--
-        if (anInt3298 == 0) Class257.method1948((-109).toByte())
+        if (anInt3298 == 0) RequestGate.method1948((-109).toByte())
     }
 
     @Synchronized

@@ -170,7 +170,7 @@ class i : Class64, Interface19 {
     public external override fun ia(i: Short, i_73_: Short)
 
     protected fun finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this)
+        if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
     public external override fun WA(): Int
