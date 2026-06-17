@@ -253,7 +253,7 @@
 "Class268","LocDefinitionCache","Loads Class277 definitions from Class45 archive into Class60 cache","Constructed with Class45; synchronized Class60 cache accessors"
 "Class269","NormalMapGenerator","Builds Interface18 normal-map/terrain textures from procedural noise via ha_Sub3","Holds Interface18_Impl1/Impl3 arrays; sqrt-based normal computation"
 "Class27","ProjectileConfigUtil","Static-only object; LOD scale selection and Class356/Class341 holders","object (singleton); no instance members"
-"Class270","Interface8Wrapper","Single instance field wrapping an Interface8","Holds anInterface8_3463; companion has unrelated int array"
+"Class270",ArchiveFileConditionWrapper,Single instance field wrapping an ArchiveFileCondition,"Holds anInterface8_3463; companion has unrelated int array"
 "Class271","ParticleEffectCache","Loads Class348_Sub42_Sub7 from Class45 archive into Class60 cache","Constructed with Class45; synchronized cache lookup"
 "Class272","SocketFactory","Abstract; opens java.net.Socket to host/port; subclasses provide method2050","Abstract; host string + port int fields; companion has connection-mode util"
 "Class272_Sub1","DirectSocketFactory","Variant of Class272 socket factory; opens direct connection ignoring proxy","Extends Class272; method2050 returns direct Socket via method2047"
