@@ -1197,7 +1197,7 @@ object Class66 {
                 return
             }
             if (i == 5506) {
-                anIntArray1149!![anInt1173++] = Class314.aFloat3938.toInt() shr 3
+                anIntArray1149!![anInt1173++] = ResourceProvider.aFloat3938.toInt() shr 3
                 return
             }
             if (i == 5507) {
@@ -4094,7 +4094,7 @@ object Class66 {
                     return
                 }
                 if (i == 3344) {
-                    aStringArray1152!![anInt1170++] = Class314_Sub1.method2347((-119).toByte())!!
+                    aStringArray1152!![anInt1170++] = ArchiveResourceProvider.method2347((-119).toByte())!!
                     return
                 }
                 if (i == 3345) {

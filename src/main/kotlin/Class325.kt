@@ -457,7 +457,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 if (i_77_ == 1) {
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, -1)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, -1)
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class314.aFloat3938.toInt())
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), ResourceProvider.aFloat3938.toInt())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 57)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, OpenGlRenderNode.anInt10483)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, Class348_Sub49_Sub1.anInt9750)

@@ -3,13 +3,13 @@ import java.util.*
 /* Class45 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
+class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boolean, i: Int) {
     private var aCutsceneSequenceData_629: CutsceneSequenceData? = null
     @JvmField
     var anInt634: Int
     private val aBoolean655: Boolean
     private var anObjectArray656: Array<Any?>? = null
-    private var aClass314_659: Class314 = class314
+    private var aResourceProvider_659: ResourceProvider = resourceProvider
     private var anObjectArrayArray664: Array<Array<Any?>?>? = null
     fun method389(i: Int): Int {
         val i_0_ = -117 / ((-60 - i) / 33)
@@ -241,7 +241,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
     private fun method399(bool: Boolean): Boolean {
         anInt652++
         if (aCutsceneSequenceData_629 == null) {
-            aCutsceneSequenceData_629 = aClass314_659!!.method2340(56.toByte())
+            aCutsceneSequenceData_629 = aResourceProvider_659!!.method2340(56.toByte())
             if (aCutsceneSequenceData_629 == null) return false
             anObjectArray656 = arrayOfNulls<Any>(aCutsceneSequenceData_629!!.anInt3734)
             anObjectArrayArray664 = arrayOfNulls<Array<Any?>>(aCutsceneSequenceData_629!!.anInt3734)
@@ -278,7 +278,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
 
     private fun method402(i: Byte, i_55_: Int) {
         anInt658++
-        if (i < -70) aClass314_659!!.method2338((-52).toByte(), i_55_)
+        if (i < -70) aResourceProvider_659!!.method2338((-52).toByte(), i_55_)
     }
 
     private fun method403(string: String?, i: Int, string_56_: String?): Boolean {
@@ -324,8 +324,8 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
 
     private fun method406(i: Int, i_61_: Int) {
         if (i_61_ > -105) anObjectArrayArray664 = null
-        if (!aBoolean655) anObjectArray656!![i] = GrowableStringList.method1357(aClass314_659!!.method2339(i, 73.toByte()), false, 123.toByte())
-        else anObjectArray656!![i] = aClass314_659!!.method2339(i, 12.toByte())
+        if (!aBoolean655) anObjectArray656!![i] = GrowableStringList.method1357(aResourceProvider_659!!.method2339(i, 73.toByte()), false, 123.toByte())
+        else anObjectArray656!![i] = aResourceProvider_659!!.method2339(i, 12.toByte())
         anInt665++
     }
 
@@ -443,7 +443,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt653++
         if (!method392(i_75_, (-40).toByte())) return 0
         if (anObjectArray656!![i_75_] != null) return 100
-        return aClass314_659!!.method2335(i_75_, i + -22197)
+        return aResourceProvider_659!!.method2335(i_75_, i + -22197)
     }
 
     fun method420(i: Int, i_76_: Int, i_77_: Int): Boolean {

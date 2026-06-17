@@ -5,7 +5,7 @@ class Class340 internal constructor(mediaStreamClient: MediaStreamClient?, scrip
     private val aMediaStreamClient_4212: MediaStreamClient?
     private val aBigInteger4213: BigInteger?
     private var aClass348_Sub49_4215: Class348_Sub49? = null
-    private var aClass314_Sub1Array4216: Array<Class314_Sub1?>? = null
+    private var aClass314_Sub1Array4216: Array<ArchiveResourceProvider?>? = null
     private var aScriptCompilerThread_4217: ScriptCompilerThread? = null
     private val aBigInteger4218: BigInteger?
     private var aClass348_Sub42_Sub16_Sub1_4220: Class348_Sub42_Sub16_Sub1? = null
@@ -23,7 +23,7 @@ class Class340 internal constructor(mediaStreamClient: MediaStreamClient?, scrip
         }
     }
 
-    fun method2673(indexedFileCache: IndexedFileCache?, i: Int, indexedFileCache_3_: IndexedFileCache?, i_4_: Int): Class314_Sub1? {
+    fun method2673(indexedFileCache: IndexedFileCache?, i: Int, indexedFileCache_3_: IndexedFileCache?, i_4_: Int): ArchiveResourceProvider? {
         try {
             anInt4219++
             if (i_4_ != 255) method2671(-43)
@@ -71,11 +71,11 @@ class Class340 internal constructor(mediaStreamClient: MediaStreamClient?, scrip
             }
         }
         aClass348_Sub49_4215 = class348_sub49
-        aClass314_Sub1Array4216 = arrayOfNulls<Class314_Sub1>(idxCount)
+        aClass314_Sub1Array4216 = arrayOfNulls<ArchiveResourceProvider>(idxCount)
         return true
     }
 
-    private fun method2675(i: Byte, bool: Boolean, i_10_: Int, indexedFileCache: IndexedFileCache?, indexedFileCache_11_: IndexedFileCache?): Class314_Sub1? {
+    private fun method2675(i: Byte, bool: Boolean, i_10_: Int, indexedFileCache: IndexedFileCache?, indexedFileCache_11_: IndexedFileCache?): ArchiveResourceProvider? {
         try {
             anInt4221++
             if (aClass348_Sub49_4215 == null) throw RuntimeException()
@@ -87,7 +87,7 @@ class Class340 internal constructor(mediaStreamClient: MediaStreamClient?, scrip
             val `is` = ByteArray(64)
             aClass348_Sub49_4215!!.method3389(2147483647, 0, 64, `is`)
             if (i >= -18) method2671(103)
-            val class314_sub1 = Class314_Sub1(i_10_, indexedFileCache, indexedFileCache_11_, aMediaStreamClient_4212, aScriptCompilerThread_4217, i_12_, `is`, i_13_, bool)
+            val class314_sub1 = ArchiveResourceProvider(i_10_, indexedFileCache, indexedFileCache_11_, aMediaStreamClient_4212, aScriptCompilerThread_4217, i_12_, `is`, i_13_, bool)
             aClass314_Sub1Array4216!![i_10_] = class314_sub1
             return class314_sub1
         } catch (runtimeexception: RuntimeException) {

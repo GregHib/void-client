@@ -13,7 +13,7 @@ object MinimapRectClipper {
     @JvmField
     var anIntArray222: IntArray?
     @JvmField
-    var aClass314_Sub1Array223: Array<Class314_Sub1?>? = arrayOfNulls<Class314_Sub1>(37)
+    var aClass314_Sub1Array223: Array<ArchiveResourceProvider?>? = arrayOfNulls<ArchiveResourceProvider>(37)
     @JvmField
     var anIntArray224: IntArray?
 

@@ -148,7 +148,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 InputStream_Sub2.aIntRange_82,
                 Class348_Sub42_Sub8.aIntRange_9552,
                 Class348_Sub40_Sub19.aIntRange_9254,
-                Class314_Sub1.aIntRange_6340,
+                ArchiveResourceProvider.aIntRange_6340,
                 InputStream_Sub1.aIntRange_79,
                 Class73.aIntRange_4779,
                 ObjectByteSerializerHolder.aIntRange_2285,

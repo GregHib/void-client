@@ -70,11 +70,11 @@ class CameraDistanceOptionState : GraphicsOptionState {
             }
             if (Class76.aFloat1287 < i_1_.toFloat()) Class76.aFloat1287 = i_1_.toFloat()
             if (Class76.aFloat1287 > i_2_.toFloat()) Class76.aFloat1287 = i_2_.toFloat()
-            while ( /**/Class314.aFloat3938 >= 16384.0f) {
-                Class314.aFloat3938 -= 16384.0f
+            while ( /**/ResourceProvider.aFloat3938 >= 16384.0f) {
+                ResourceProvider.aFloat3938 -= 16384.0f
             }
-            while ( /**/Class314.aFloat3938 < 0.0f) {
-                Class314.aFloat3938 += 16384.0f
+            while ( /**/ResourceProvider.aFloat3938 < 0.0f) {
+                ResourceProvider.aFloat3938 += 16384.0f
             }
             val i_3_ = FrameStatsReset.anInt5799 shr 9
             val i_4_ = AsyncTaskHandle.anInt2578 shr 9

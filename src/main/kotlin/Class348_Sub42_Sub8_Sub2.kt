@@ -1617,7 +1617,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class314_Sub1.aIntRange_6340) {
+            if (Class348_Sub3.aIntRange_6584 == ArchiveResourceProvider.aIntRange_6340) {
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 += 28
                 if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) GrowableStringList.method1365((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
                 Class348_Sub3.aIntRange_6584 = null

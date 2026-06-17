@@ -69,7 +69,7 @@ abstract class Class318_Sub1_Sub1 internal constructor(i: Int, i_4_: Int, i_5_: 
                 Class338.anInt4186 = i_2_
                 Class348_Sub42_Sub19.anInt9701 = i
             }
-            Class314.aFloat3938 = i_1_.toFloat()
+            ResourceProvider.aFloat3938 = i_1_.toFloat()
             Class76.aFloat1287 = i.toFloat()
             method1725(262144)
             Class369_Sub3_Sub1.aBoolean10174 = true

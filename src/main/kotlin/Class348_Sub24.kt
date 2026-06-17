@@ -169,7 +169,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         Class369_Sub3_Sub1.aBoolean10174 = false
                         HintArrowOrMessage.anInt2035 = 20
                         val class348_sub47 = method2148(ClanChatRequestSender.aClass351_3648, (Class348_Sub23_Sub2.aClass77_9029), i + -11549)
-                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, Class314.aFloat3938.toInt() shr 3)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, ResourceProvider.aFloat3938.toInt() shr 3)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class76.aFloat1287.toInt() shr 3)
                         Class348_Sub42_Sub14.method3243(-31, class348_sub47)
                     }

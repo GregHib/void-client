@@ -9,7 +9,7 @@ import HudTabPanel.Companion.method1639
 import RemoveRoofsOptionState.Companion.method1810
 import GlTexture2D.Companion.method1966
 import ScrollTexMaterialPass.Companion.method2168
-import Class314.Companion.method2336
+import ResourceProvider.Companion.method2336
 import Class348_Sub16_Sub3.Companion.method2878
 import Class348_Sub16_Sub3.Companion.method2879
 import Class348_Sub23_Sub4.Companion.method2987

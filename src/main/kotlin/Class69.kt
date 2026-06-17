@@ -1,4 +1,4 @@
-import Class314_Sub1.Companion.method2352
+import ArchiveResourceProvider.Companion.method2352
 
 /* Class69 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

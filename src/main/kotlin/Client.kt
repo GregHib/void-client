@@ -237,7 +237,7 @@ import ItemModelDefinition.Companion.method328
 import ResourceLoaderThread.Companion.method2317
 import WidgetRedrawTracker.Companion.method2331
 import SkyboxGradient.method2333
-import Class314_Sub1.Companion.method2344
+import ArchiveResourceProvider.Companion.method2344
 import Class315.Companion.method2354
 import Class316.Companion.method2363
 import Class316.Companion.method2366
@@ -2176,8 +2176,8 @@ class Client : GameAppletFrame() {
                                                 i_58_ -= (class46.anInt709) / 2
                                                 i_59_ -= (class46.anInt789) / 2
                                                 val i_61_: Int
-                                                if (Class348_Sub40_Sub21.anInt9282 == 4) i_61_ = ((Class314.aFloat3938).toInt() and 0x3fff)
-                                                else i_61_ = (((Class314.aFloat3938).toInt() + OpenGlRenderNode.anInt10483) and 0x3fff)
+                                                if (Class348_Sub40_Sub21.anInt9282 == 4) i_61_ = ((ResourceProvider.aFloat3938).toInt() and 0x3fff)
+                                                else i_61_ = (((ResourceProvider.aFloat3938).toInt() + OpenGlRenderNode.anInt10483) and 0x3fff)
                                                 var i_62_ = (Class70.anIntArray1207!![i_61_])
                                                 var i_63_ = (Class70.anIntArray1204!![i_61_])
                                                 if (Class348_Sub40_Sub21.anInt9282 != 4) {

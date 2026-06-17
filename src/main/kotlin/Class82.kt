@@ -727,7 +727,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                     }
                     val i_30_ = Class348_Sub7.anInt6652
                     Class76.Companion.aFloat1287 += Class348_Sub27.aFloat6898 * l.toFloat() / 40.0f * 8.0f
-                    Class314.aFloat3938 += CircleDrawer.aFloat2687 * l.toFloat() / 40.0f * 8.0f
+                    ResourceProvider.aFloat3938 += CircleDrawer.aFloat2687 * l.toFloat() / 40.0f * 8.0f
                     if (AsyncTaskHandle.anInt2578 != i_30_) {
                         val i_31_ = -AsyncTaskHandle.anInt2578 + i_30_
                         var i_32_ = (l * i_31_.toLong() / 320L).toInt()

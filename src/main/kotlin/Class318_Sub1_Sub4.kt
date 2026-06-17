@@ -1,5 +1,5 @@
 import WaterDetailOptionState.Companion.method1781
-import Class314_Sub1.Companion.method2348
+import ArchiveResourceProvider.Companion.method2348
 import InputStream_Sub1.Companion.method125
 import java.math.BigInteger
 

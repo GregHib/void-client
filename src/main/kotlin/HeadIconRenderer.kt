@@ -41,8 +41,8 @@ class HeadIconRenderer {
                 anInt2064++
                 if (abstractModelRenderer != null) {
                     val i_6_: Int
-                    if (Class348_Sub40_Sub21.anInt9282 != 4) i_6_ = (0x3fff and Class314.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483)
-                    else i_6_ = 0x3fff and Class314.aFloat3938.toInt()
+                    if (Class348_Sub40_Sub21.anInt9282 != 4) i_6_ = (0x3fff and ResourceProvider.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483)
+                    else i_6_ = 0x3fff and ResourceProvider.aFloat3938.toInt()
                     val i_7_ = 10 + max(class46!!.anInt709 / 2, class46.anInt789 / i_4_)
                     val i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_)
                     if (i_7_ * i_7_ >= i_8_) {

@@ -1,7 +1,7 @@
 /* Class314_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCache?, indexedFileCache_23_: IndexedFileCache?, mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, i_24_: Int, `is`: ByteArray?, i_25_: Int, bool: Boolean) : Class314() {
+class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: IndexedFileCache?, indexedFileCache_23_: IndexedFileCache?, mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, i_24_: Int, `is`: ByteArray?, i_25_: Int, bool: Boolean) : ResourceProvider() {
     private var aCutsceneSequenceData_6342: CutsceneSequenceData? = null
     private val anInt6344: Int
     private val aByteArray6346: ByteArray?
