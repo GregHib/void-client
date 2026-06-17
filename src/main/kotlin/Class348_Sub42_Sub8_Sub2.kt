@@ -254,7 +254,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         else if (Class351.method3455(string_16_, 28280)) bool_20_ = true
                     }
                 } while (false)
-                if (!bool_20_ && Class250.anInt3227 == 0) {
+                if (!bool_20_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_19_
                     Class79.anInt1359 = (1 + Class79.anInt1359) % 100
                     val string_22_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
@@ -730,7 +730,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     if (Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915 || Class50_Sub2.aBoolean5233) bool_83_ = true
                     else if (i <= 1 && Class351.method3455(string_82_, 28280)) bool_83_ = true
                 }
-                if (!bool_83_ && Class250.anInt3227 == 0) {
+                if (!bool_83_ && BackgroundWorkerThread.anInt3227 == 0) {
                     val string_84_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_82_, string_84_, (-119).toByte(), -1, "<img=1>" + string, null, 24, 0, string)
                     else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_82_, string_84_, (-119).toByte(), -1, "<img=0>" + string, null, 24, 0, string)
@@ -834,7 +834,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         if (!bool_93_ && ((Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233)) bool_94_ = true
                         else if (Class351.method3455(player.aString10544, 28280)) bool_94_ = true
                     }
-                    if (!bool_94_ && Class250.anInt3227 == 0) {
+                    if (!bool_94_ && BackgroundWorkerThread.anInt3227 == 0) {
                         var i_95_ = -1
                         val string: String?
                         if (bool_93_) {
@@ -881,7 +881,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         else if (Class351.method3455(string_98_, 28280)) bool_101_ = true
                     }
                 } while (false)
-                if (!bool_101_ && Class250.anInt3227 == 0) {
+                if (!bool_101_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_100_
                     Class79.anInt1359 = (1 + Class79.anInt1359) % 100
                     val string_103_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
@@ -991,7 +991,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                     if (i <= 1 && Class351.method3455(string_114_, 28280)) bool_119_ = true
                 } while (false)
-                if (!bool_119_ && Class250.anInt3227 == 0) {
+                if (!bool_119_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_118_
                     Class79.anInt1359 = (Class79.anInt1359 + 1) % 100
                     val string_121_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_117_, (-106).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
@@ -1389,7 +1389,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                     if (i <= 1 && Class351.method3455(string_175_, 28280)) bool_179_ = true
                 } while (false)
-                if (!bool_179_ && Class250.anInt3227 == 0) {
+                if (!bool_179_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_178_
                     Class79.anInt1359 = (Class79.anInt1359 - -1) % 100
                     val string_181_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_177_, (-93).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 62.toByte()))
@@ -1711,7 +1711,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_229_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 var bool_230_ = false
                 if (i <= 1 && Class351.method3455(string_228_, 28280)) bool_230_ = true
-                if (!bool_230_ && Class250.anInt3227 == 0) {
+                if (!bool_230_ && BackgroundWorkerThread.anInt3227 == 0) {
                     val string_231_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_229_, (-108).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_228_, string_231_, (-127).toByte(), i_229_, "<img=1>" + string, null, 25, 0, string)
                     else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_228_, string_231_, (-119).toByte(), i_229_, string, null, 25, 0, string)

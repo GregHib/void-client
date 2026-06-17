@@ -649,7 +649,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ItemDefinition.anInt2832 = 0
             Class348_Sub40_Sub19.anInt9258 = 0
             Class348_Sub12.anInt6734 = 0
-            Class250.anInt3222 = 0
+            BackgroundWorkerThread.anInt3222 = 0
             TwoStateOptionState.anInt6140 = 0
             Class318_Sub1_Sub5_Sub2.anInt10162 = 0
             SceneObjectAnimator.anInt3082 = 0
@@ -2813,7 +2813,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class279.anInt3599 = 0
             Class50_Sub1.anInt5210 = 0
             NativeIndexBuffer.anInt4700 = 0
-            Class250.anInt3219 = 0
+            BackgroundWorkerThread.anInt3219 = 0
             NativeRenderer.anInt7939 = 0
             Class315.anInt3945 = 0
             GlTextureBase.anInt5092 = 0
@@ -4044,7 +4044,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MapAreaDefinition.anInt2521 = 0
             Class258_Sub1.anInt8526 = 0
             OpenGlRenderer.anInt7532 = 0
-            Class250.anInt3224 = 0
+            BackgroundWorkerThread.anInt3224 = 0
             Class45.anInt662 = 0
             NativeRenderer.anInt8056 = 0
             Class348_Sub20.anInt6827 = 0

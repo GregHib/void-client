@@ -125,7 +125,7 @@ class Class258_Sub1 : Class258 {
                 if (i_25_ >= 0) SkeletalAnimFrameData.aBoolean351 = false
                 else {
                     Player.anIntArray10566 = is_15_
-                    Class250.anIntArray3220 = is_16_
+                    BackgroundWorkerThread.anIntArray3220 = is_16_
                     Class59_Sub1_Sub2.anIntArray8666 = is_17_
                     Class299_Sub2_Sub1.anIntArray8712 = is_18_
                     Client.anIntArray5176 = is_19_

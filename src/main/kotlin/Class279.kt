@@ -231,16 +231,16 @@ open class Class279 {
     @Synchronized
     fun method2093(bool: Boolean) {
         anInt3609++
-        if (ParticleDefLoader.aClass250_2462 != null) {
+        if (ParticleDefLoader.aBackgroundWorkerThread_2462 != null) {
             var bool_35_ = true
             for (i in 0..1) {
-                if (ParticleDefLoader.aClass250_2462!!.aClass279Array3218[i] === this) ParticleDefLoader.aClass250_2462!!.aClass279Array3218[i] = null
-                if (ParticleDefLoader.aClass250_2462!!.aClass279Array3218[i] != null) bool_35_ = false
+                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i] === this) ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i] = null
+                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i] != null) bool_35_ = false
             }
             if (bool_35_) {
-                ParticleDefLoader.aClass250_2462!!.aBoolean3221 = true
-                while (ParticleDefLoader.aClass250_2462!!.aBoolean3223) method2161(68.toByte(), 50L)
-                ParticleDefLoader.aClass250_2462 = null
+                ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3221 = true
+                while (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3223) method2161(68.toByte(), 50L)
+                ParticleDefLoader.aBackgroundWorkerThread_2462 = null
             }
         }
         method2091()

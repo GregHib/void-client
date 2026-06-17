@@ -101,8 +101,8 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                 val i_22_ = if (NativeSprite.aTerrainTileArray5191 == Class332.aTerrainTileArray4142) 1 else 0
                 if (class318_sub1_sub3.method2376(-118)) {
                     if (class318_sub1_sub3.method2377(122.toByte())) {
-                        class318_sub1_sub3.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_22_]
-                        Class250.aClass318_Sub1Array3226!![i_22_] = class318_sub1_sub3
+                        class318_sub1_sub3.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_22_]
+                        BackgroundWorkerThread.aClass318_Sub1Array3226!![i_22_] = class318_sub1_sub3
                     } else {
                         class318_sub1_sub3.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_22_]
                         Class348.aClass318_Sub1Array4293!![i_22_] = class318_sub1_sub3

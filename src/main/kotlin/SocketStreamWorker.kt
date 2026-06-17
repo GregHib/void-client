@@ -216,7 +216,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, class297: Class29
             SceneryDetailOptionState.anInt6095 = 0
             val i_0_ = 29 % ((-42 - i) / 63)
             var i_1_ = 0
-            while (Class250.anInt3225 > i_1_) {
+            while (BackgroundWorkerThread.anInt3225 > i_1_) {
                 val i_2_ = Class31.anInt425 * i_1_
                 for (i_3_ in 0..<Class31.anInt425) {
                     val i_4_ = i_2_ - -i_3_

@@ -56,7 +56,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
             }
             if ((i_2_ and 0x1) == 0) {
                 run {
-                    var class318_sub1 = Class250.aClass318_Sub1Array3226!![i_4_]
+                    var class318_sub1 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_4_]
                     while (class318_sub1 != null) {
                         if (!method2778(class318_sub1, bool, `is`, i, i_0_)) {
                             method4001(class318_sub1)

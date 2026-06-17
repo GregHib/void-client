@@ -65,7 +65,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         var anInt2459: Int = 0
         var anInt2460: Int = 0
         @JvmField
-        var aClass250_2462: Class250? = null
+        var aBackgroundWorkerThread_2462: BackgroundWorkerThread? = null
         var anInt2463: Int = 0
         @JvmField
         var anInt2464: Int = 0
@@ -90,11 +90,11 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
                         class318_sub1_1_ = (class318_sub1_1_.aClass318_Sub1_6379)
                     }
                     class318_sub1_0_ = null
-                    var class318_sub1_2_ = Class250.aClass318_Sub1Array3226!![i]
+                    var class318_sub1_2_ = BackgroundWorkerThread.aClass318_Sub1Array3226!![i]
                     while (class318_sub1_2_ != null) {
                         if (class318_sub1_2_ === class318_sub1) {
                             if (class318_sub1_0_ != null) class318_sub1_0_.aClass318_Sub1_6379 = (class318_sub1_2_.aClass318_Sub1_6379)
-                            else Class250.aClass318_Sub1Array3226!![i] = (class318_sub1_2_.aClass318_Sub1_6379)
+                            else BackgroundWorkerThread.aClass318_Sub1Array3226!![i] = (class318_sub1_2_.aClass318_Sub1_6379)
                             Class348_Sub16_Sub2.aBoolean8870 = true
                             return
                         }
@@ -119,7 +119,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
 
         @JvmStatic
         fun method1378(i: Int) {
-            aClass250_2462 = null
+            aBackgroundWorkerThread_2462 = null
             anIntArray2466 = null
             if (i != 14) method1382(99, -102)
         }

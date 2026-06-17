@@ -4,7 +4,7 @@ import kotlin.concurrent.Volatile
 /* Class250 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class250 : Runnable {
+class BackgroundWorkerThread : Runnable {
     @JvmField
     @Volatile
     var aClass279Array3218: Array<Class279?> = arrayOfNulls<Class279>(2)

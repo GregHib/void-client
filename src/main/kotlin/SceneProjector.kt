@@ -132,7 +132,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         if (Class348_Sub49.anInt7207 == 1) {
                                             i_41_ = 0
                                             i_39_ = i_36_
-                                            i_38_ = -i_36_ + Class250.anInt3225
+                                            i_38_ = -i_36_ + BackgroundWorkerThread.anInt3225
                                             i_47_ = i_38_
                                         }
                                         i_52_ = i_50_
@@ -146,7 +146,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         if (Class348_Sub49.anInt7207 == 1) {
                                             i_39_ = -i_36_
                                             i_38_ = 0
-                                            i_47_ = i_36_ + Class250.anInt3225
+                                            i_47_ = i_36_ + BackgroundWorkerThread.anInt3225
                                             i_41_ = i_39_
                                         }
                                     }
@@ -234,8 +234,8 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     if (Class348_Sub49.anInt7207 == 1) {
                                         SceneryDetailOptionState.anInt6095 += i_35_
                                         Class286.anInt3682 += i_36_
-                                        for (i_65_ in 0..<Class250.anInt3225) {
-                                            val i_66_ = ((Class350.method3452(i_65_ - -Class286.anInt3682, (-15).toByte(), Class250.anInt3225)) * Class31.anInt425)
+                                        for (i_65_ in 0..<BackgroundWorkerThread.anInt3225) {
+                                            val i_66_ = ((Class350.method3452(i_65_ - -Class286.anInt3682, (-15).toByte(), BackgroundWorkerThread.anInt3225)) * Class31.anInt425)
                                             var i_67_ = 0
                                             while ((Class31.anInt425 > i_67_)) {
                                                 val i_68_ = ((Class350.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), Class31.anInt425)) + i_66_)

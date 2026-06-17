@@ -107,8 +107,8 @@ object Class44 {
             val i_21_ = if (NativeSprite.aTerrainTileArray5191 == Class332.aTerrainTileArray4142) 1 else 0
             if (class318_sub1_sub5.method2376(-62)) {
                 if (class318_sub1_sub5.method2377(122.toByte())) {
-                    class318_sub1_sub5.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_21_]
-                    Class250.aClass318_Sub1Array3226!![i_21_] = class318_sub1_sub5
+                    class318_sub1_sub5.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_21_]
+                    BackgroundWorkerThread.aClass318_Sub1Array3226!![i_21_] = class318_sub1_sub5
                 } else {
                     class318_sub1_sub5.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_21_]
                     Class348.aClass318_Sub1Array4293!![i_21_] = class318_sub1_sub5
@@ -121,8 +121,8 @@ object Class44 {
             if (class318_sub1_sub5_20_ != null) {
                 if (class318_sub1_sub5_20_.method2376(-110)) {
                     if (class318_sub1_sub5_20_.method2377(122.toByte())) {
-                        class318_sub1_sub5_20_.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_21_]
-                        Class250.aClass318_Sub1Array3226!![i_21_] = class318_sub1_sub5_20_
+                        class318_sub1_sub5_20_.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_21_]
+                        BackgroundWorkerThread.aClass318_Sub1Array3226!![i_21_] = class318_sub1_sub5_20_
                     } else {
                         class318_sub1_sub5_20_.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_21_]
                         Class348.aClass318_Sub1Array4293!![i_21_] = class318_sub1_sub5_20_

@@ -22,8 +22,8 @@ object Class75_Sub1 : Class75() {
             val i_3_ = if (NativeSprite.aTerrainTileArray5191 == Class332.aTerrainTileArray4142) 1 else 0
             if (class318_sub1_sub1.method2376(-93)) {
                 if (class318_sub1_sub1.method2377(122.toByte())) {
-                    class318_sub1_sub1.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_3_]
-                    Class250.aClass318_Sub1Array3226!![i_3_] = class318_sub1_sub1
+                    class318_sub1_sub1.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_]
+                    BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_] = class318_sub1_sub1
                 } else {
                     class318_sub1_sub1.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_3_]
                     Class348.aClass318_Sub1Array4293!![i_3_] = class318_sub1_sub1

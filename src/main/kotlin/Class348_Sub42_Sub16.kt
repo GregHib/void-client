@@ -59,8 +59,8 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
                 val i_5_ = if (NativeSprite.aTerrainTileArray5191 == Class332.aTerrainTileArray4142) 1 else 0
                 if (class318_sub1_sub4.method2376(-109)) {
                     if (class318_sub1_sub4.method2377(122.toByte())) {
-                        class318_sub1_sub4.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_5_]
-                        Class250.aClass318_Sub1Array3226!![i_5_] = class318_sub1_sub4
+                        class318_sub1_sub4.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_5_]
+                        BackgroundWorkerThread.aClass318_Sub1Array3226!![i_5_] = class318_sub1_sub4
                     } else {
                         class318_sub1_sub4.aClass318_Sub1_6379 = aClass318_Sub1Array4293!![i_5_]
                         aClass318_Sub1Array4293!![i_5_] = class318_sub1_sub4
@@ -73,8 +73,8 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
                 if (class318_sub1_sub4_4_ != null) {
                     if (class318_sub1_sub4_4_.method2376(-118)) {
                         if (class318_sub1_sub4_4_.method2377(122.toByte())) {
-                            class318_sub1_sub4_4_.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_5_]
-                            Class250.aClass318_Sub1Array3226!![i_5_] = class318_sub1_sub4_4_
+                            class318_sub1_sub4_4_.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_5_]
+                            BackgroundWorkerThread.aClass318_Sub1Array3226!![i_5_] = class318_sub1_sub4_4_
                         } else {
                             class318_sub1_sub4_4_.aClass318_Sub1_6379 = aClass318_Sub1Array4293!![i_5_]
                             aClass318_Sub1Array4293!![i_5_] = class318_sub1_sub4_4_

@@ -133,7 +133,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             }
             method1879(false)
             aClass318_Sub1Array4293 = arrayOfNulls<Class318_Sub1>(2)
-            Class250.aClass318_Sub1Array3226 = arrayOfNulls<Class318_Sub1>(2)
+            BackgroundWorkerThread.aClass318_Sub1Array3226 = arrayOfNulls<Class318_Sub1>(2)
             OverlayColorTable.aClass318_Sub1Array1754 = arrayOfNulls<Class318_Sub1>(2)
             RemoveRoofsOptionState.aClass318_Sub1Array6066 = arrayOfNulls<Class318_Sub1>(10000)
             Class5_Sub1_Sub1.anInt9930 = 0

@@ -860,7 +860,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 Class86.anInt1477 = 0
             }
             Class348.aClass318_Sub1Array4293 = null
-            Class250.aClass318_Sub1Array3226 = null
+            BackgroundWorkerThread.aClass318_Sub1Array3226 = null
             OverlayColorTable.aClass318_Sub1Array1754 = null
             if (RemoveRoofsOptionState.aClass318_Sub1Array6066 != null) {
                 for (i in RemoveRoofsOptionState.aClass318_Sub1Array6066!!.indices) RemoveRoofsOptionState.aClass318_Sub1Array6066!![i] = null
