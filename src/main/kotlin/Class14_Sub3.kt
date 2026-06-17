@@ -82,7 +82,7 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
                 Class330.aClass114_4126,
                 Class254.aClass114_3264,
                 Class239.aClass114_3143,
-                Class111.aClass114_1722,
+                CollisionMapRegion.aClass114_1722,
                 Class348_Sub42_Sub3.aClass114_9503,
                 Class127_Sub1.aClass114_8385,
                 Class318_Sub1.aClass114_6383,

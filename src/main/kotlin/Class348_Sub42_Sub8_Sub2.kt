@@ -755,7 +755,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
-            if (Class348_Sub3.aClass114_6584 == Class111.aClass114_1722) {
+            if (Class348_Sub3.aClass114_6584 == CollisionMapRegion.aClass114_1722) {
                 val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-100).toByte())
                 val objects = arrayOfNulls<Any>(1 + string.length)
                 for (i in -1 + string.length downTo 0) {

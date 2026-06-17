@@ -935,7 +935,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class206.anInt4892 = 0
             Class284.anInt3674 = 0
             Class318_Sub1_Sub1_Sub1.anInt9968 = 0
-            Class111.anInt1716 = 0
+            CollisionMapRegion.anInt1716 = 0
             Class348_Sub49_Sub2.anInt9753 = 0
             NativeRenderer.anInt7976 = 0
             Class286_Sub4.anInt6236 = 0
@@ -1152,7 +1152,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class159.anInt2126 = 0
             Class45.anInt654 = 0
             Class5_Sub3.anInt8374 = 0
-            Class111.anInt1717 = 0
+            CollisionMapRegion.anInt1717 = 0
             OpenGlRenderer.anInt7679 = 0
             Class17.anInt240 = 0
             Class318_Sub1_Sub1_Sub1.anInt9965 = 0
@@ -2956,7 +2956,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class248.anInt3188 = 0
             OpenGlRenderer.anInt7704 = 0
             Class318_Sub1_Sub3_Sub5.anInt10397 = 0
-            Class111.anInt1719 = 0
+            CollisionMapRegion.anInt1719 = 0
             Class361.anInt4435 = 0
             Class286_Sub4.anInt6239 = 0
             Class318_Sub1_Sub4_Sub1.anInt10085 = 0
@@ -3655,7 +3655,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub3_Sub2.anInt10060 = 0
             Class226.anInt2962 = 0
             OpenGlRenderer.anInt7619 = 0
-            Class111.anInt1721 = 0
+            CollisionMapRegion.anInt1721 = 0
             Class261.anInt3320 = 0
             Class348_Sub49.anInt7200 = 0
             NativeRenderer.anInt8005 = 0
@@ -3950,7 +3950,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class299_Sub1_Sub2.anInt8703 = 0
             Class279.anInt3607 = 0
             Class17.anInt246 = 0
-            Class111.anInt1723 = 0
+            CollisionMapRegion.anInt1723 = 0
             Class348_Sub40_Sub35.anInt9440 = 0
             Class14_Sub4.anInt8639 = 0
             Class348_Sub1.anInt6549 = 0

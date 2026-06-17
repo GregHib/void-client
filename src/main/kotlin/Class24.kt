@@ -37,7 +37,7 @@ object Class24 {
         anInt354++
         if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) Class348_Sub42_Sub3.method3177(-98, false)
         else {
-            Class111.anInt1720 = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
+            CollisionMapRegion.anInt1720 = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
             method3553(true, 103.toByte(), 0)
         }
         Class88.aBoolean1500 = bool

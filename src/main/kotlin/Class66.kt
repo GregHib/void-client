@@ -2840,7 +2840,7 @@ object Class66 {
                 class46.aByte817 = i_267_.toByte()
                 class46.aByte681 = i_268_.toByte()
                 Class251.method1916(-9343, class46)
-                Class111.method1048(class46, 50)
+                CollisionMapRegion.method1048(class46, 50)
                 if (class46.anInt704 == -1) Class239_Sub3.method1733((-78).toByte(), class46.anInt830)
                 return
             }
@@ -2859,7 +2859,7 @@ object Class66 {
                 class46.aByte778 = i_269_.toByte()
                 class46.aByte724 = i_270_.toByte()
                 Class251.method1916(-9343, class46)
-                Class111.method1048(class46, 62)
+                CollisionMapRegion.method1048(class46, 62)
                 if (class46.anInt774 == 0) Class251.method1913(false, 36, class46)
                 return
             }
@@ -2877,7 +2877,7 @@ object Class66 {
                 class46!!.anInt710 = anIntArray1149!![anInt1173]
                 class46.anInt775 = anIntArray1149!![anInt1173 + 1]
                 Class251.method1916(-9343, class46)
-                Class111.method1048(class46, 59)
+                CollisionMapRegion.method1048(class46, 59)
                 if (class46.anInt774 == 0) Class251.method1913(false, 49, class46)
                 return
             }

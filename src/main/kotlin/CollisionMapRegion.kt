@@ -3,7 +3,10 @@ import Class19.Companion.method285
 import Class239_Sub28.Companion.method1843
 import java.util.*
 
-class Class111 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+/*
+ * Class111
+ */
+class CollisionMapRegion internal constructor(class230: Class230?, i: Int, class45: Class45?) {
     private val anInt1715: Int
     private val aClass45_1718: Class45?
     private var anIntArrayArray1724: Array<IntArray?>?

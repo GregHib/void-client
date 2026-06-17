@@ -68,9 +68,9 @@ object Class301 {
         anInt3827++
         Class348_Sub42_Sub3.method3177(i xor 0x315e, false)
         if (i == -12648) {
-            if (Class111.anInt1720 >= 0 && Class111.anInt1720 != 0) {
-                method3553(false, 116.toByte(), Class111.anInt1720)
-                Class111.anInt1720 = -1
+            if (CollisionMapRegion.anInt1720 >= 0 && CollisionMapRegion.anInt1720 != 0) {
+                method3553(false, 116.toByte(), CollisionMapRegion.anInt1720)
+                CollisionMapRegion.anInt1720 = -1
             }
         }
     }

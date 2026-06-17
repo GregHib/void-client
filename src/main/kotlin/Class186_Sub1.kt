@@ -101,7 +101,7 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
         @JvmField
         var anInt5812: Int = 100
         @JvmField
-        var aClass111_5813: Class111? = null
+        var aCollisionMapRegion_5813: CollisionMapRegion? = null
         @JvmField
         var anInt5814: Int = 0
 
@@ -116,7 +116,7 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
         @JvmStatic
         fun method1400(i: Int) {
             aClass341_5808 = null
-            aClass111_5813 = null
+            aCollisionMapRegion_5813 = null
         }
 
         @JvmStatic
