@@ -9,7 +9,7 @@ class ItemNameResolver : Interface15 {
                 val class117 = Class348_Sub7.aClass33_6653!!.method337(true, `is`!![0])
                 return class117.method1074(l.toInt(), 91)
             }
-            if (Class299_Sub1.aRectangleRegion_6321 == rectangleRegion || ShaderProgram.aRectangleRegion_7274 == rectangleRegion) {
+            if (Texture2DProvider.aRectangleRegion_6321 == rectangleRegion || ShaderProgram.aRectangleRegion_7274 == rectangleRegion) {
                 val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(i + -99, l.toInt())
                 return class213.aString2795
             }

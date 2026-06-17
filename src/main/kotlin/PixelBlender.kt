@@ -1,4 +1,4 @@
-import Class299_Sub1_Sub2.Companion.method2264
+import CubemapTextureGlSource.Companion.method2264
 import Class59_Sub2_Sub2.Companion.method574
 
 /* Class298 - Decompiled by JODE
