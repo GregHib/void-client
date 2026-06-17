@@ -294,10 +294,10 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                         val class262 = method758(var_renderer)
                         method2312(-13084, 0, class262, 0, var_renderer)
                         if (Class367_Sub9.anInt7379 > 0) {
-                            Class164.anInt2173--
-                            if (Class164.anInt2173 == 0) {
+                            ClientLoadStateMachine.anInt2173--
+                            if (ClientLoadStateMachine.anInt2173 == 0) {
                                 Class367_Sub9.anInt7379--
-                                Class164.anInt2173 = 20
+                                ClientLoadStateMachine.anInt2173 = 20
                             }
                         }
                         if (!Class298.aBoolean3811) break

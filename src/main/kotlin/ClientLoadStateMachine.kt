@@ -21,7 +21,10 @@ import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init
 import NativeRenderNode.Companion.method3290
 
-object Class164 {
+/*
+ * Class164
+ */
+object ClientLoadStateMachine {
     var anInt2172: Int = 0
     @JvmField
     var anInt2173: Int = 0
@@ -324,7 +327,7 @@ object Class164 {
                 if (string == null) stringbuffer.append("null")
                 else stringbuffer.append(string)
             }
-            if (bool != true) Class164.method1277((-20).toByte())
+            if (bool != true) ClientLoadStateMachine.method1277((-20).toByte())
             return stringbuffer.toString()
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("pea.C(" + bool + ',' + i + ',' + (if (strings != null) "{...}" else "null") + ',' + i_15_ + ')'))

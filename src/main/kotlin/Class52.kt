@@ -82,7 +82,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
             anInt4900++
             if (Class51.Companion.aClass311_897 == null) Class70.method726(116)
             val class56 = Class348_Sub42_Sub15.aClass56_9660!!
-            val i = Class164.method1278(-28660)
+            val i = ClientLoadStateMachine.method1278(-28660)
             if (class56 == Class348_Sub42_Sub15.aClass56_9660) {
                 Class64_Sub2.aString5420 = Class348_Sub42_Sub15.aClass56_9660!!.aClass274_1012!!.method2063(Class348_Sub33.anInt6967, 544)
                 if (Class348_Sub42_Sub15.aClass56_9660!!.aBoolean1016) Class251.anInt3236 = (i * ((Class348_Sub42_Sub15.aClass56_9660!!.anInt1021) + -(Class348_Sub42_Sub15.aClass56_9660!!.anInt1025)) / 100 + (Class348_Sub42_Sub15.aClass56_9660!!.anInt1025))

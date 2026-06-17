@@ -129,10 +129,10 @@ object Class228 {
             Class348_Sub15.method2811(false)
         }
         if (Class367_Sub9.anInt7379 > 0) {
-            Class164.anInt2173--
-            if (Class164.anInt2173 == 0) {
+            ClientLoadStateMachine.anInt2173--
+            if (ClientLoadStateMachine.anInt2173 == 0) {
                 Class367_Sub9.anInt7379--
-                Class164.anInt2173 = 100
+                ClientLoadStateMachine.anInt2173 = 100
             }
         } else {
             Class34.anInt481 = -1

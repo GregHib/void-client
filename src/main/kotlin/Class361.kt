@@ -802,8 +802,8 @@ class Class361 {
                         var_renderer.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0)
                         if (Class367_Sub9.anInt7379 <= 0) break
                         val i_49_: Int
-                        if (Class164.anInt2173 <= 50) i_49_ = Class164.anInt2173 * 5
-                        else i_49_ = -(5 * Class164.anInt2173) + 500
+                        if (ClientLoadStateMachine.anInt2173 <= 50) i_49_ = ClientLoadStateMachine.anInt2173 * 5
+                        else i_49_ = -(5 * ClientLoadStateMachine.anInt2173) + 500
                         var class348_sub21 = (Class75.aClass262_1254!!.method1995(4) as Class348_Sub21?)
                         while (class348_sub21 != null) {
                             val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))

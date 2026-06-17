@@ -185,8 +185,8 @@ class Class190 {
                 if (abstractModelRenderer != null) {
                     if (Class367_Sub9.anInt7379 > 0 && ((Class348_Sub40_Sub30.anInt9399 != -1 && (Class348_Sub40_Sub30.anInt9399 == class348_sub21.anInt6847)) || (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)))) {
                         val i_25_: Int
-                        if (Class164.anInt2173 <= 50) i_25_ = 2 * Class164.anInt2173
-                        else i_25_ = -(Class164.anInt2173 * 2) + 200
+                        if (ClientLoadStateMachine.anInt2173 <= 50) i_25_ = 2 * ClientLoadStateMachine.anInt2173
+                        else i_25_ = -(ClientLoadStateMachine.anInt2173 * 2) + 200
                         val i_26_ = 0xffff00 or (i_25_ shl 24)
                         var_renderer.method3656((-105).toByte(), i_26_, abstractModelRenderer.method971() / 2 - -7, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
                         var_renderer.method3656((-120).toByte(), i_26_, abstractModelRenderer.method971() / 2 - -5, (class348_sub21.anInt6853), (class348_sub21.anInt6855))

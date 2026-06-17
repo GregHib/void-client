@@ -81,7 +81,7 @@ object Class27 {
         Class34.anInt481 = i_4_
         Class367_Sub9.anInt7379 = 3
         anInt390++
-        Class164.anInt2173 = 100
+        ClientLoadStateMachine.anInt2173 = 100
         Class348_Sub40_Sub30.anInt9399 = -1
     }
 

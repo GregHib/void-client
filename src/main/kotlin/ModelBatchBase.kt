@@ -48,7 +48,7 @@ abstract class ModelBatchBase {
         @JvmStatic
         fun method1129(i: Int, i_0_: Int) {
             Class367_Sub9.anInt7379 = 3
-            Class164.anInt2173 = i_0_
+            ClientLoadStateMachine.anInt2173 = i_0_
             Class34.anInt481 = -1
             Class348_Sub40_Sub30.anInt9399 = i
             anInt1898++

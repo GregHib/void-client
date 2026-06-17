@@ -5069,7 +5069,7 @@ object Class66 {
                     else if (i_490_ == 37) {
                         val i_496_ = is_489_[i_488_]
                         anInt1170 -= i_496_
-                        val string = Class164.method1279(true, i_496_, aStringArray1152, anInt1170)
+                        val string = ClientLoadStateMachine.method1279(true, i_496_, aStringArray1152, anInt1170)
                         aStringArray1152!![anInt1170++] = string
                     } else if (i_490_ == 38) anInt1173--
                     else if (i_490_ == 39) anInt1170--
