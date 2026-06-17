@@ -49,7 +49,7 @@ class Class348_Sub43 : Class348() {
                 if (LocalPlayerState.aPlayer_1907 == player) {
                     if (RenderNode.aBoolean9722 && (Class38.anInt500 and 0x10) != 0) {
                         Class32.anInt450++
-                        Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=ffffff>" + Class274.aClass274_3520!!.method2063(Class348_Sub33.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), Class28.aString5001, 0L, Class348_Sub49_Sub1.Companion.anInt9747)
+                        Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=ffffff>" + LocalizedText.aLocalizedText_3520!!.method2063(Class348_Sub33.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), Class28.aString5001, 0L, Class348_Sub49_Sub1.Companion.anInt9747)
                     }
                 } else {
                     val string: String?
@@ -63,11 +63,11 @@ class Class348_Sub43 : Class348() {
                             if (i_4_ < 0) i_4_ = -i_4_
                             if (i_3_ < i_4_) bool_0_ = false
                         }
-                        val string_5_ = (if (GlRectangleTexture.aSceneProjector_8638 == Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) Class274.aClass274_3513!!.method2063(Class348_Sub33.anInt6967, 544) else Class274.aClass274_3511!!.method2063(Class348_Sub33.anInt6967, 544))
+                        val string_5_ = (if (GlRectangleTexture.aSceneProjector_8638 == Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) LocalizedText.aLocalizedText_3513!!.method2063(Class348_Sub33.anInt6967, 544) else LocalizedText.aLocalizedText_3511!!.method2063(Class348_Sub33.anInt6967, 544))
                         if (player.anInt10516 >= player.anInt10557) string = (player.method2456(true, 255) + (if (!bool_0_) "<col=ffffff>" else (method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, (player.anInt10516)))) + " (" + string_5_ + player.anInt10516 + ")")
                         else string = (player.method2456(true, 255) + (if (bool_0_) (method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, (player.anInt10516))) else "<col=ffffff>") + " (" + string_5_ + player.anInt10516 + "+" + (-player.anInt10516 + player.anInt10557) + ")")
                     } else if (player.anInt10564 == -1) string = player.method2456(true, 255)
-                    else string = (player.method2456(true, 255) + " (" + Class274.aClass274_3512!!.method2063(Class348_Sub33.anInt6967, 544) + player.anInt10564 + ")")
+                    else string = (player.method2456(true, 255) + " (" + LocalizedText.aLocalizedText_3512!!.method2063(Class348_Sub33.anInt6967, 544) + player.anInt10564 + ")")
                     if (RenderNode.aBoolean9722 && !bool && (0x8 and Class38.anInt500) != 0) {
                         Class50_Sub3.method466(false, Class28.aString5000 + " -> <col=ffffff>" + string, 0, (-109).toByte(), false, 0, -1, true, 51, player.anInt10290.toLong(), Class28.aString5001, player.anInt10290.toLong(), Class348_Sub49_Sub1.Companion.anInt9747)
                         Class341.anInt4228++
@@ -78,7 +78,7 @@ class Class348_Sub43 : Class348() {
                         for (i_6_ in 7 downTo 0) {
                             if (Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_6_] != null) {
                                 var i_7_: Short = 0
-                                if ((Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 != ParticleEmitterNode.aSceneProjector_186) || !(Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_6_].equals(Class274.aClass274_3506!!.method2063(Class348_Sub33.anInt6967, 544), ignoreCase = true))) {
+                                if ((Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 != ParticleEmitterNode.aSceneProjector_186) || !(Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_6_].equals(LocalizedText.aLocalizedText_3506!!.method2063(Class348_Sub33.anInt6967, 544), ignoreCase = true))) {
                                     if (Class71.aBooleanArray1214!![i_6_]) i_7_ = 2000.toShort()
                                 } else {
                                     if ((LocalPlayerState.aPlayer_1907!!.anInt10516) < (player.anInt10516)) i_7_ = 2000.toShort()

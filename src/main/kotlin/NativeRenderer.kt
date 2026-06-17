@@ -2988,7 +2988,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 while ((i_274_ < NodeDeque.aModelLightingConfigArrayArray3335!!.size)) {
                     var i_275_ = 0
                     while ((NodeDeque.aModelLightingConfigArrayArray3335!![i_274_]!!.size > i_275_)) {
-                        NodeDeque.aModelLightingConfigArrayArray3335!![i_274_]!![i_275_] = Class274.aModelLightingConfig_3547
+                        NodeDeque.aModelLightingConfigArrayArray3335!![i_274_]!![i_275_] = LocalizedText.aModelLightingConfig_3547
                         i_275_++
                     }
                     i_274_++

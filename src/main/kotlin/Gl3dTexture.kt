@@ -209,7 +209,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
                 Class286_Sub1.aStringArray6200!![i_4_] = ""
                 i_4_++
             }
-            method94(Class274.aClass274_3483!!.method2063(Class348_Sub33.anInt6967, 544)!!, 67)
+            method94(LocalizedText.aLocalizedText_3483!!.method2063(Class348_Sub33.anInt6967, 544)!!, 67)
         }
     }
 }

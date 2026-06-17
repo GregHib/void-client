@@ -133,7 +133,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                             i_7_++
                         }
                         if (bool) break
-                        method544(((Class274.aClass274_3504!!.method2063(Class348_Sub33.anInt6967, 544)) + string), false, 4)
+                        method544(((LocalizedText.aLocalizedText_3504!!.method2063(Class348_Sub33.anInt6967, 544)) + string), false, 4)
                     }
                 } catch (runtimeexception: RuntimeException) {
                     throw Class348_Sub17.method2929(runtimeexception, ("tq.A(" + i + ',' + i_5_ + ',' + (if (string != null) "{...}" else "null") + ')'))

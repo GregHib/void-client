@@ -70,7 +70,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
             if ((Class73.anInt4776 >= 2 || RenderNode.aBoolean9722) && Class289.aClass46_3701 == null) {
                 if (i >= -71) Companion.method1077(null, (-41).toByte())
                 var string: String?
-                if (RenderNode.aBoolean9722 && Class73.anInt4776 < 2) string = (Class28.aString5001 + Class274.aClass274_3515!!.method2063(Class348_Sub33.anInt6967, 544) + Class28.aString5000 + " ->")
+                if (RenderNode.aBoolean9722 && Class73.anInt4776 < 2) string = (Class28.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(Class348_Sub33.anInt6967, 544) + Class28.aString5000 + " ->")
                 else if (!InputSettingsState.shiftClick || !LoadProgressCounters.aClass346_2449!!.method2696(81, -121) || Class73.anInt4776 <= 2) {
                     val class348_sub42_sub12 = Class316.aClass348_Sub42_Sub12_3963
                     if (class348_sub42_sub12 == null) return
@@ -97,7 +97,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                     } else `is` = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-73, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     if (`is` != null) string += AudioResampler.method1273(`is`, true)
                 } else string = Class316.method2367(125.toByte(), Class316.aClass348_Sub42_Sub12_3963!!)
-                if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508!!.method2063(Class348_Sub33.anInt6967, 544))
+                if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(Class348_Sub33.anInt6967, 544))
                 if (Class348_Sub36.aClass46_6990 != null) {
                     var class324 = Class348_Sub36.aClass46_6990!!.method426(var_renderer, 68.toByte())
                     if (class324 == null) class324 = NodeDeque.aClass324_3326!!

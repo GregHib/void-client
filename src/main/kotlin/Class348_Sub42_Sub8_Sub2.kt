@@ -56,7 +56,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             val i_2_ = 18 / ((i_1_ - 30) / 42)
             if (!Class296.method2224(i, (-118).toByte(), i_0_)) return false
             if (DetailLevelOptionState.method1833((-118).toByte(), i, i_0_) or ((0x9000 and i) != 0) or Class348_Sub23_Sub4.method2985(-31735, i_0_, i)) return true
-            return (((0x37 and i_0_) == 0) and (((0x2000 and i) != 0) or Class274.method2058(i, i_0_, 88) or method3203(i_0_, 127.toByte(), i)))
+            return (((0x37 and i_0_) == 0) and (((0x2000 and i) != 0) or LocalizedText.method2058(i, i_0_, 88) or method3203(i_0_, 127.toByte(), i)))
         }
 
         @JvmStatic
@@ -189,7 +189,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (bool != true) aSceneProjector_10434 = null
             if (Class348_Sub3.aIntRange_6584 == InputSettingsState.aIntRange_1762) {
-                LightingOptionState.aString5882 = (if (Class348_Sub40_Sub25.anInt9341 > 2) Class299.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else Class274.aClass274_3509!!.method2063(Class348_Sub33.anInt6967, 544))
+                LightingOptionState.aString5882 = (if (Class348_Sub40_Sub25.anInt9341 > 2) Class299.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else LocalizedText.aLocalizedText_3509!!.method2063(Class348_Sub33.anInt6967, 544))
                 Class333.anInt4144 = (if (Class348_Sub40_Sub25.anInt9341 <= 0) -1 else Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
                 if (Class333.anInt4144 == 65535) Class333.anInt4144 = -1
                 Class348_Sub3.aIntRange_6584 = null

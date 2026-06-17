@@ -174,7 +174,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     }
                     if (i_13_ != -1 && i_14_ != -1) {
                         if (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) == 0) {
-                            if (ObjectSpawnDecoder.aBoolean1801) Class50_Sub3.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (Class274.aClass274_3510!!.method2063(Class348_Sub33.anInt6967, 544)), 0L, -1)
+                            if (ObjectSpawnDecoder.aBoolean1801) Class50_Sub3.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(Class348_Sub33.anInt6967, 544)), 0L, -1)
                             Class352.anInt4334++
                             Class50_Sub3.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, Class333.anInt4144)
                         } else {
@@ -335,7 +335,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             }
                                         }
                                         Class348_Sub33.anInt6956++
-                                        Class50_Sub3.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (Class274.aClass274_3505!!.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973.toLong(), Class286_Sub8.anInt6299)
+                                        Class50_Sub3.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973.toLong(), Class286_Sub8.anInt6299)
                                         class348_sub34 = (class348_sub37.aNodeDeque_6998.method2003(-127) as Class348_Sub34?)
                                         i_57_++
                                     }
@@ -385,7 +385,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             true,
                                             1001,
                                             interface10.hashCode().toLong(),
-                                            (Class274.aClass274_3505!!.method2063(Class348_Sub33.anInt6967, 544)),
+                                            (LocalizedText.aLocalizedText_3505!!.method2063(Class348_Sub33.anInt6967, 544)),
                                             class51.anInt941.toLong(),
                                             Class286_Sub8.anInt6299
                                         )

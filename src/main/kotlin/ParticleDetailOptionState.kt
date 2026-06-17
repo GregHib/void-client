@@ -153,7 +153,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
             }
             if (Client.method105(class46)!!.method3305(0)) {
                 if (class46.aString816 != null) Class50_Sub3.method466(false, "", class46.anInt830, (-118).toByte(), false, class46.anInt704, class46.anInt812, true, 16, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), class46.aString816, 0L, -1)
-                else Class50_Sub3.method466(false, "", class46.anInt830, (-79).toByte(), false, class46.anInt704, class46.anInt812, true, 16, (class46.anInt704 shl 0 or class46.anInt830).toLong(), Class274.aClass274_3492!!.method2063(Class348_Sub33.anInt6967, 544), 0L, -1)
+                else Class50_Sub3.method466(false, "", class46.anInt830, (-79).toByte(), false, class46.anInt704, class46.anInt812, true, 16, (class46.anInt704 shl 0 or class46.anInt830).toLong(), LocalizedText.aLocalizedText_3492!!.method2063(Class348_Sub33.anInt6967, 544), 0L, -1)
                 Class348_Sub42_Sub15.anInt9655++
             }
         }

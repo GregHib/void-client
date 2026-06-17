@@ -854,7 +854,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             RefCountedHandle.anIntArray2272 = null
             OverlayColorTable.aBooleanArrayArrayArray1751 = null
             Class5_Sub2.aBooleanArrayArrayArray8361 = null
-            Class274.method2062(89.toByte())
+            LocalizedText.method2062(89.toByte())
             if (ModelDataCache.aClass318_Sub1_Sub3Array357 != null) {
                 for (i in 0..<Class86.anInt1477) ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
                 Class86.anInt1477 = 0

@@ -142,7 +142,7 @@ class GlTexture2DRegion : GlTexture2D {
             VarpStore.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, 4)
             ModelHeaderCache.method1933(CameraRotationStub.aClass45_322, Class348_Sub8.aRenderer6654, true)
-            Class274.method2061(-128)
+            LocalizedText.method2061(-128)
             method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
             Class354.method3466(i xor 0x4f.inv())
             Class348_Sub40.method3038(-1)

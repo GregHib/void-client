@@ -135,15 +135,15 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         itemDefinition = ItemDefinition()
         itemDefinition.aModelHeaderCache_2761 = this
         itemDefinition.anInt2769 = i_13_
-        itemDefinition.aStringArray2811 = arrayOf<String?>(null, null, Class274.aClass274_3490!!.method2063(this.anInt3286, 544), null, null)
-        itemDefinition.aStringArray2763 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491!!.method2063(this.anInt3286, 544)))
+        itemDefinition.aStringArray2811 = arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null)
+        itemDefinition.aStringArray2763 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
         if (`is` != null) itemDefinition.method1569(768, Class348_Sub49(`is`))
         itemDefinition.method1563(92.toByte())
         val i_14_ = 4 / ((i - 13) / 59)
         if (itemDefinition.anInt2833 != -1) itemDefinition.method1570(1, method1940(90, itemDefinition.anInt2758), method1940(101, itemDefinition.anInt2833))
         if (itemDefinition.anInt2812 != -1) itemDefinition.method1556(method1940(-58, itemDefinition.anInt2778), (-29).toByte(), method1940(-82, itemDefinition.anInt2812))
         if (!aBoolean3269 && itemDefinition.aBoolean2783) {
-            itemDefinition.aString2795 = Class274.aClass274_3488!!.method2063(this.anInt3286, 544)
+            itemDefinition.aString2795 = LocalizedText.aLocalizedText_3488!!.method2063(this.anInt3286, 544)
             itemDefinition.anInt2827 = 0
             itemDefinition.aStringArray2811 = aStringArray3290
             itemDefinition.aStringArray2763 = aStringArray3293
@@ -204,8 +204,8 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 val i_23_ = -1 + aClass45_3267.method414(-1)
                 this.anInt3271 = aClass45_3267.method407(0, i_23_) + i_23_ * 256
             } else this.anInt3271 = 0
-            aStringArray3290 = (arrayOf<String?>(null, null, Class274.aClass274_3490!!.method2063(this.anInt3286, 544), null, null))
-            aStringArray3293 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491!!.method2063(this.anInt3286, 544)))
+            aStringArray3290 = (arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null))
+            aStringArray3293 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class326 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_22_ != null) "{...}" else "null") + ')'))
         }

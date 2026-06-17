@@ -1,7 +1,7 @@
 import LocTypeDefLoader.Companion.method1406
 import WaterDetailOptionState.Companion.method1779
 import ConfigFlagUtil.Companion.method1916
-import Class274.Companion.method2061
+import LocalizedText.Companion.method2061
 import Class299_Sub2.Companion.method2269
 import Class318_Sub1_Sub3_Sub3.Companion.method2433
 import Class376.Companion.method3616

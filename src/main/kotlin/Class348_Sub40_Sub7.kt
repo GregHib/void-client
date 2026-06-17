@@ -346,7 +346,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     if (string == null) string = ""
                                                 }
                                                 if (Class49.aClass46_4730 == class46) {
-                                                    string = (Class274.aClass274_3514!!.method2063((Class348_Sub33.anInt6967), 544))
+                                                    string = (LocalizedText.aLocalizedText_3514!!.method2063((Class348_Sub33.anInt6967), 544))
                                                     i_50_ = (class46.anInt749)
                                                 }
                                                 if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (class46.anInt789) + i_25_)

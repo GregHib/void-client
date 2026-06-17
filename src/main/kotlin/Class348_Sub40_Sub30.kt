@@ -235,8 +235,8 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
                     anInt9391++
                     if (string != null) {
                         if (anInt9383 >= 200 && !FrameBufferObject.aBoolean4888 || anInt9383 >= 200) {
-                            method544((Class274.aClass274_3493!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
-                            val string_0_ = Class274.aClass274_3494!!.method2063(Class348_Sub33.anInt6967, 544)
+                            method544((LocalizedText.aLocalizedText_3493!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
+                            val string_0_ = LocalizedText.aLocalizedText_3494!!.method2063(Class348_Sub33.anInt6967, 544)
                             if (string_0_ != null) method544(string_0_, false, 4)
                         } else {
                             val string_1_ = method2127(2, string)
@@ -245,13 +245,13 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
                                 while ((anInt9383 > i_2_)) {
                                     val string_3_ = (method2127(2, Class83.aStringArray1441!![i_2_]))
                                     if (string_3_ != null && string_3_ == string_1_) {
-                                        method544((string + (Class274.aClass274_3521!!.method2063((Class348_Sub33.anInt6967), 544))), false, 4)
+                                        method544((string + (LocalizedText.aLocalizedText_3521!!.method2063((Class348_Sub33.anInt6967), 544))), false, 4)
                                         return
                                     }
                                     if (Class286_Sub2.aStringArray6205!![i_2_] != null) {
                                         val string_4_ = (method2127(2, (Class286_Sub2.aStringArray6205!![i_2_])))
                                         if (string_4_ != null && string_4_ == string_1_) {
-                                            method544((string + (Class274.aClass274_3521!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
+                                            method544((string + (LocalizedText.aLocalizedText_3521!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                             return
                                         }
                                     }
@@ -260,18 +260,18 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
                                 for (i_5_ in 0..<Class348_Sub42_Sub12.anInt9604) {
                                     val string_6_ = (method2127(2, Class51.aStringArray932!![i_5_]))
                                     if (string_6_ != null && string_6_ == string_1_) {
-                                        method544(((Class274.aClass274_3526!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (Class274.aClass274_3527!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
+                                        method544(((LocalizedText.aLocalizedText_3526!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3527!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                         return
                                     }
                                     if (Class348_Sub40_Sub21.Companion.aStringArray9275!![i_5_] != null) {
                                         val string_7_ = (method2127(2, (Class348_Sub40_Sub21.Companion.aStringArray9275!![i_5_])))
                                         if (string_7_ != null && string_7_ == string_1_) {
-                                            method544(((Class274.aClass274_3526!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (Class274.aClass274_3527!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
+                                            method544(((LocalizedText.aLocalizedText_3526!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3527!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                             return
                                         }
                                     }
                                 }
-                                if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_1_) method544((Class274.aClass274_3524!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
+                                if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_1_) method544((LocalizedText.aLocalizedText_3524!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
                                 else {
                                     HitsplatDefinition.anInt2012++
                                     val class348_sub47 = (method2148(Class294.aClass351_5057, Class348_Sub23_Sub2.aClass77_9029, -85))

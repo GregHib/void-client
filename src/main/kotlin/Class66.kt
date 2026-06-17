@@ -1080,7 +1080,7 @@ object Class66 {
                 return
             }
             if (i == 5425) {
-                Class274.method2061(12)
+                LocalizedText.method2061(12)
                 Class71.aBoolean1211 = false
                 return
             }
@@ -2552,114 +2552,114 @@ object Class66 {
         if (AsyncTaskHandle.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
             var string_240_ = string.lowercase(Locale.getDefault())
             var i_241_ = 0
-            if (string_240_.startsWith(Class274.aClass274_3530!!.method2063(0, 544)!!)) {
+            if (string_240_.startsWith(LocalizedText.aLocalizedText_3530!!.method2063(0, 544)!!)) {
                 i_241_ = 0
-                string = string.substring(Class274.aClass274_3530!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3531!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3530!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3531!!.method2063(0, 544)!!)) {
                 i_241_ = 1
-                string = string.substring(Class274.aClass274_3531!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3532!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3531!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3532!!.method2063(0, 544)!!)) {
                 i_241_ = 2
-                string = string.substring(Class274.aClass274_3532!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3533!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3532!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3533!!.method2063(0, 544)!!)) {
                 i_241_ = 3
-                string = string.substring(Class274.aClass274_3533!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3534!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3533!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3534!!.method2063(0, 544)!!)) {
                 i_241_ = 4
-                string = string.substring(Class274.aClass274_3534!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3535!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3534!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3535!!.method2063(0, 544)!!)) {
                 i_241_ = 5
-                string = string.substring(Class274.aClass274_3535!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3536!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3535!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3536!!.method2063(0, 544)!!)) {
                 i_241_ = 6
-                string = string.substring(Class274.aClass274_3536!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3537!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3536!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3537!!.method2063(0, 544)!!)) {
                 i_241_ = 7
-                string = string.substring(Class274.aClass274_3537!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3538!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3537!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3538!!.method2063(0, 544)!!)) {
                 i_241_ = 8
-                string = string.substring(Class274.aClass274_3538!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3539!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3538!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3539!!.method2063(0, 544)!!)) {
                 i_241_ = 9
-                string = string.substring(Class274.aClass274_3539!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3540!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3539!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3540!!.method2063(0, 544)!!)) {
                 i_241_ = 10
-                string = string.substring(Class274.aClass274_3540!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3541!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3540!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3541!!.method2063(0, 544)!!)) {
                 i_241_ = 11
-                string = string.substring(Class274.aClass274_3541!!.method2063(0, 544)!!.length)
+                string = string.substring(LocalizedText.aLocalizedText_3541!!.method2063(0, 544)!!.length)
             } else if (Class348_Sub33.anInt6967 != 0) {
-                if (string_240_.startsWith(Class274.aClass274_3530!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                if (string_240_.startsWith(LocalizedText.aLocalizedText_3530!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 0
-                    string = string.substring(Class274.aClass274_3530!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3531!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3530!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3531!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 1
-                    string = string.substring(Class274.aClass274_3531!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3532!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3531!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3532!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 2
-                    string = string.substring(Class274.aClass274_3532!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3533!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3532!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3533!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 3
-                    string = string.substring(Class274.aClass274_3533!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3534!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3533!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3534!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 4
-                    string = string.substring(Class274.aClass274_3534!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3535!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3534!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3535!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 5
-                    string = string.substring(Class274.aClass274_3535!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3536!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3535!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3536!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 6
-                    string = string.substring(Class274.aClass274_3536!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3537!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3536!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3537!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 7
-                    string = string.substring(Class274.aClass274_3537!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3538!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3537!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3538!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 8
-                    string = string.substring(Class274.aClass274_3538!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3539!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3538!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3539!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 9
-                    string = string.substring(Class274.aClass274_3539!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3540!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3539!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3540!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 10
-                    string = string.substring(Class274.aClass274_3540!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3541!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3540!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3541!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_241_ = 11
-                    string = string.substring(Class274.aClass274_3541!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                    string = string.substring(LocalizedText.aLocalizedText_3541!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
                 }
             }
             string_240_ = string.lowercase(Locale.getDefault())
             var i_242_ = 0
-            if (string_240_.startsWith(Class274.aClass274_3542!!.method2063(0, 544)!!)) {
+            if (string_240_.startsWith(LocalizedText.aLocalizedText_3542!!.method2063(0, 544)!!)) {
                 i_242_ = 1
-                string = string.substring(Class274.aClass274_3542!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3543!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3542!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3543!!.method2063(0, 544)!!)) {
                 i_242_ = 2
-                string = string.substring(Class274.aClass274_3543!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3544!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3543!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3544!!.method2063(0, 544)!!)) {
                 i_242_ = 3
-                string = string.substring(Class274.aClass274_3544!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3545!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3544!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3545!!.method2063(0, 544)!!)) {
                 i_242_ = 4
-                string = string.substring(Class274.aClass274_3545!!.method2063(0, 544)!!.length)
-            } else if (string_240_.startsWith(Class274.aClass274_3546!!.method2063(0, 544)!!)) {
+                string = string.substring(LocalizedText.aLocalizedText_3545!!.method2063(0, 544)!!.length)
+            } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3546!!.method2063(0, 544)!!)) {
                 i_242_ = 5
-                string = string.substring(Class274.aClass274_3546!!.method2063(0, 544)!!.length)
+                string = string.substring(LocalizedText.aLocalizedText_3546!!.method2063(0, 544)!!.length)
             } else if (Class348_Sub33.anInt6967 != 0) {
-                if (string_240_.startsWith(Class274.aClass274_3542!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                if (string_240_.startsWith(LocalizedText.aLocalizedText_3542!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_242_ = 1
-                    string = string.substring(Class274.aClass274_3542!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3543!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3542!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3543!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_242_ = 2
-                    string = string.substring(Class274.aClass274_3543!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3544!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3543!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3544!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_242_ = 3
-                    string = string.substring(Class274.aClass274_3544!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3545!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3544!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3545!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_242_ = 4
-                    string = string.substring(Class274.aClass274_3545!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(Class274.aClass274_3546!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3545!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3546!!.method2063(Class348_Sub33.anInt6967, 544)!!)) {
                     i_242_ = 5
-                    string = string.substring(Class274.aClass274_3546!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
+                    string = string.substring(LocalizedText.aLocalizedText_3546!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
                 }
             }
             anInt1158++
@@ -3730,7 +3730,7 @@ object Class66 {
                     return
                 }
                 if (i == 3103) {
-                    Class274.method2060((-101).toByte(), true)
+                    LocalizedText.method2060((-101).toByte(), true)
                     return
                 }
                 if (i == 3104) {

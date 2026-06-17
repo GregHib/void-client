@@ -97,7 +97,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         return
                     }
                 } catch (exception: Exception) {
-                    method94((Class274.aClass274_3485!!.method2063(Class348_Sub33.anInt6967, 544)!!), -99)
+                    method94((LocalizedText.aLocalizedText_3485!!.method2063(Class348_Sub33.anInt6967, 544)!!), -99)
                     return
                 }
                 if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271 || AsyncTaskHandle.anInt2581 >= 2) {
@@ -680,7 +680,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                     } catch (exception: Exception) {
-                        method94(Class274.aClass274_3485!!.method2063(Class348_Sub33.anInt6967, 544)!!, -92)
+                        method94(LocalizedText.aLocalizedText_3485!!.method2063(Class348_Sub33.anInt6967, 544)!!, -92)
                         return
                     }
                 }
@@ -696,7 +696,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                 if (WorldMapRenderer.anInt4674 == 10) {
                     return
                 }
-                method94(Class274.aClass274_3486!!.method2063(Class348_Sub33.anInt6967, 544) + string, 57)
+                method94(LocalizedText.aLocalizedText_3486!!.method2063(Class348_Sub33.anInt6967, 544) + string, 57)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("lba.B(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'))
             }

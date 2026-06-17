@@ -170,7 +170,7 @@ class ItemDefinition {
             if (itemDefinition_9_.aStringArray2763 != null) {
                 for (i_11_ in 0..3) this.aStringArray2763!![i_11_] = itemDefinition_9_.aStringArray2763!![i_11_]
             }
-            this.aStringArray2763!![4] = Class274.aClass274_3489!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544)
+            this.aStringArray2763!![4] = LocalizedText.aLocalizedText_3489!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
         }
@@ -180,8 +180,8 @@ class ItemDefinition {
         anInt2816++
         if (i_12_ != -11619) this.anInt2788 = -113
         if (i < 100000) return "<col=ffff00>" + i + "</col>"
-        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + Class274.aClass274_3519!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
-        return ("<col=00ff80>" + i / 1000000 + Class274.aClass274_3517!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
+        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + LocalizedText.aLocalizedText_3519!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
+        return ("<col=00ff80>" + i / 1000000 + LocalizedText.aLocalizedText_3517!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
     }
 
     fun method1558(bool: Boolean, bool_13_: Boolean): ModelDefinition? {

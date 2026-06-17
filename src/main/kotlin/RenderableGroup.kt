@@ -118,7 +118,7 @@ class RenderableGroup internal constructor(class287: Class287?, dualMaterialCont
 
         fun method1448(i: Int) {
             anInt5003++
-            if (i <= -55) Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144 = Class348_Sub42_Sub12((Class274.aClass274_3487!!.method2063(Class348_Sub33.anInt6967, 544)), "", Class362.anInt4458, 1004, -1, 0L, 0, 0, true, false, 0L, true)
+            if (i <= -55) Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144 = Class348_Sub42_Sub12((LocalizedText.aLocalizedText_3487!!.method2063(Class348_Sub33.anInt6967, 544)), "", Class362.anInt4458, 1004, -1, 0L, 0, 0, true, false, 0L, true)
         }
 
         @JvmStatic

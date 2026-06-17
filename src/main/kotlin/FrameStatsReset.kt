@@ -380,7 +380,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SoundEnvelope.anInt2748 = 0
             Class318_Sub1_Sub3_Sub2.anInt10059 = 0
             Class5.anInt4629 = 0
-            Class274.anInt3482 = 0
+            LocalizedText.anInt3482 = 0
             Class60.anInt1097 = 0
             Class321.anInt4013 = 0
             Class33.anInt457 = 0
@@ -571,7 +571,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8919 = 0
             Class348_Sub23_Sub4.anInt9049 = 0
             NpcDefinitionCache.anInt3313 = 0
-            Class274.anInt3480 = 0
+            LocalizedText.anInt3480 = 0
             Class296.anInt3770 = 0
             Class42.anInt608 = 0
             NativeRenderer.anInt7997 = 0
@@ -1120,7 +1120,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class314_Sub1.anInt6357 = 0
             Class348_Sub40_Sub1.anInt9085 = 0
             Class318_Sub1_Sub3_Sub5.anInt10373 = 0
-            Class274.anInt3484 = 0
+            LocalizedText.anInt3484 = 0
             Class318_Sub1_Sub3_Sub1.anInt10026 = 0
             Class60.anInt1102 = 0
             Class285.anInt4756 = 0
@@ -2332,7 +2332,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub20.anInt6828 = 0
             ChatEffectsOptionState.anInt5860 = 0
             Class318_Sub1_Sub3_Sub1.anInt10037 = 0
-            Class274.anInt3479 = 0
+            LocalizedText.anInt3479 = 0
             Class348_Sub42_Sub2.anInt8570 = 0
             GlFramebufferBlitter.anInt283 = 0
             Class6.anInt149 = 0
@@ -3173,7 +3173,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class286_Sub7.anInt6286 = 0
             GlSpriteRenderer.anInt8444 = 0
             Class361.anInt4448 = 0
-            Class274.anInt3478 = 0
+            LocalizedText.anInt3478 = 0
             Class373.anInt4535 = 0
             LightDetailOptionState.anInt6029 = 0
             Class318_Sub1_Sub4_Sub2.anInt10107 = 0
@@ -3694,7 +3694,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49_Sub1.anInt9741 = 0
             Class368.anInt4496 = 0
             Class348_Sub40_Sub20.anInt9261 = 0
-            Class274.anInt3477 = 0
+            LocalizedText.anInt3477 = 0
             GlTextureBase.anInt5085 = 0
             Class348_Sub42_Sub16.anInt9668 = 0
             Class318_Sub1_Sub5.anInt8771 = 0
@@ -4180,7 +4180,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172
             Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502
             Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889
-            LightingOptionState.aString5882 = Class274.aClass274_3509!!.method2063(Class348_Sub33.anInt6967, 544)
+            LightingOptionState.aString5882 = LocalizedText.aLocalizedText_3509!!.method2063(Class348_Sub33.anInt6967, 544)
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264, Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(i + -32350))
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350))
             GlArrayBufferObject.anInt4718 = 0

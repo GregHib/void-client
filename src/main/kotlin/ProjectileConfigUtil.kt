@@ -110,7 +110,7 @@ object ProjectileConfigUtil {
     fun method317(string: String?, i: Int, bool: Boolean) {
         anInt391++
         if (string != null) {
-            if (Class348_Sub42_Sub12.anInt9604 >= 100) method544((Class274.aClass274_3522!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
+            if (Class348_Sub42_Sub12.anInt9604 >= 100) method544((LocalizedText.aLocalizedText_3522!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
             else {
                 val string_6_ = method2127(2, string)
                 if (string_6_ != null) {
@@ -118,13 +118,13 @@ object ProjectileConfigUtil {
                     while ((i_7_ < Class348_Sub42_Sub12.anInt9604)) {
                         val string_8_ = method2127(2, (Class51.aStringArray932!![i_7_]))
                         if (string_8_ != null && string_8_ == string_6_) {
-                            method544((string + (Class274.aClass274_3523!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
+                            method544((string + (LocalizedText.aLocalizedText_3523!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                             return
                         }
                         if (Class348_Sub40_Sub21.aStringArray9275!![i_7_] != null) {
                             val string_9_ = (method2127(2, (Class348_Sub40_Sub21.aStringArray9275!![i_7_])))
                             if (string_9_ != null && string_9_ == string_6_) {
-                                method544(string + (Class274.aClass274_3523!!.method2063((Class348_Sub33.anInt6967), 544)), false, 4)
+                                method544(string + (LocalizedText.aLocalizedText_3523!!.method2063((Class348_Sub33.anInt6967), 544)), false, 4)
                                 return
                             }
                         }
@@ -134,18 +134,18 @@ object ProjectileConfigUtil {
                         for (i_10_ in 0..<Class348_Sub40_Sub30.anInt9383) {
                             val string_11_ = method2127(2, (Class83.aStringArray1441!![i_10_]))
                             if (string_11_ != null && string_11_ == string_6_) {
-                                method544(((Class274.aClass274_3528!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (Class274.aClass274_3529!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
+                                method544(((LocalizedText.aLocalizedText_3528!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3529!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                 return
                             }
                             if (Class286_Sub2.aStringArray6205!![i_10_] != null) {
                                 val string_12_ = (method2127(2, (Class286_Sub2.aStringArray6205!![i_10_])))
                                 if (string_12_ != null && string_12_ == string_6_) {
-                                    method544(((Class274.aClass274_3528!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (Class274.aClass274_3529!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
+                                    method544(((LocalizedText.aLocalizedText_3528!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3529!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                     return
                                 }
                             }
                         }
-                        if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_6_) method544((Class274.aClass274_3525!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
+                        if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_6_) method544((LocalizedText.aLocalizedText_3525!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
                         else {
                             Class5.anInt4628++
                             val class348_sub47 = (method2148(Class348_Sub42_Sub19.aClass351_9687, Class348_Sub23_Sub2.aClass77_9029, -94))
