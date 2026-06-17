@@ -544,7 +544,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7544 = 0
             Class265.anInt4691 = 0
             Class321.anInt3999 = 0
-            Class222.anInt2887 = 0
+            UnderlayDefinition.anInt2887 = 0
             Class348_Sub5.anInt6622 = 0
             Class39.anInt514 = 0
             Class45.anInt647 = 0
@@ -2157,7 +2157,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8913 = 0
             Class339.anInt4210 = 0
             Class64_Sub2.anInt5441 = 0
-            Class222.anInt2888 = 0
+            UnderlayDefinition.anInt2888 = 0
             Class348_Sub42_Sub12.anInt9594 = 0
             Class239_Sub29.anInt6146 = 0
             Npc.anInt10510 = 0
@@ -3918,7 +3918,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Renderer.anInt4564 = 0
             Class262.anInt3336 = 0
             PerlinTextureProvider.anInt5806 = 0
-            Class222.anInt2889 = 0
+            UnderlayDefinition.anInt2889 = 0
             NativeRenderer.anInt7933 = 0
             NativeRenderer.anInt7898 = 0
             HeadIconRenderer.anInt2059 = 0

@@ -926,7 +926,7 @@ class Client : GameAppletFrame() {
         method1267(85.toByte())
         method3024(-100)
         method177()
-        Class222.method1609((-121).toByte())
+        UnderlayDefinition.method1609((-121).toByte())
         SizeBoundedSoftCache.method1349((-121).toByte())
         method3560(-13)
         method1062(35.toByte())
@@ -1360,8 +1360,8 @@ class Client : GameAppletFrame() {
                     Renderer.anInt4583 = 0
                 }
             }
-            Class222.anInt2884 = this.getParameter("colourid")!!.toInt()
-            if (Class222.anInt2884 < 0 || GlVertexBufferBase.aColorArray1928!!.size <= Class222.anInt2884) Class222.anInt2884 = 0
+            UnderlayDefinition.anInt2884 = this.getParameter("colourid")!!.toInt()
+            if (UnderlayDefinition.anInt2884 < 0 || GlVertexBufferBase.aColorArray1928!!.size <= UnderlayDefinition.anInt2884) UnderlayDefinition.anInt2884 = 0
             if (this.getParameter("sitesettings_member")!!.toInt() == 1) {
                 ItemActionPacketSender.aBoolean2110 = true
                 FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
@@ -2009,7 +2009,7 @@ class Client : GameAppletFrame() {
                     FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
                     Class375.aBoolean4540 = false
                     Class251.anInt3234 = 0
-                    Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987)
+                    UnderlayDefinition.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987)
                     Renderer.anInt4583 = 0
                     Gl2dTexture.aString8605 = null
                     val var_client = Client()

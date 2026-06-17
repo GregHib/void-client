@@ -34,25 +34,25 @@ class ItemDefinitionLoader internal constructor(class230: Class230?, i: Int, cla
         }
     }
 
-    fun method1287(i: Byte, i_1_: Int): Class222 {
+    fun method1287(i: Byte, i_1_: Int): UnderlayDefinition {
         anInt2182++
-        var class222: Class222?
+        var underlayDefinition: UnderlayDefinition?
         synchronized(aClass60_2185) {
-            class222 = aClass60_2185.method583(i_1_.toLong(), i.toInt() xor 0x1d.inv()) as? Class222?
+            underlayDefinition = aClass60_2185.method583(i_1_.toLong(), i.toInt() xor 0x1d.inv()) as? UnderlayDefinition?
         }
-        if (class222 != null) return class222
+        if (underlayDefinition != null) return underlayDefinition
         if (i.toInt() != -104) this.aClass60_2190 = null
         val `is`: ByteArray?
         synchronized(aClass45_2188!!) {
             `is` = aClass45_2188.method410(-1860, 33, i_1_)
         }
-        class222 = Class222()
-        class222.aItemDefinitionLoader_2886 = this
-        if (`is` != null) class222.method1611(Class348_Sub49(`is`), false)
+        underlayDefinition = UnderlayDefinition()
+        underlayDefinition.aItemDefinitionLoader_2886 = this
+        if (`is` != null) underlayDefinition.method1611(Class348_Sub49(`is`), false)
         synchronized(aClass60_2185) {
-            aClass60_2185.method582(class222, i_1_.toLong(), (-116).toByte())
+            aClass60_2185.method582(underlayDefinition, i_1_.toLong(), (-116).toByte())
         }
-        return class222
+        return underlayDefinition
     }
 
     fun method1290(i: Int) {

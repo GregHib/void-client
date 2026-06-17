@@ -234,7 +234,7 @@ class Class348_Sub9 : Class348() {
                             }
                             if (i_8_ == 6) {
                                 Class240.anInt4680++
-                                val class348_sub47 = method2148((Class222.aClass351_2892), (Class348_Sub23_Sub2.aClass77_9029), -100)
+                                val class348_sub47 = method2148((UnderlayDefinition.aClass351_2892), (Class348_Sub23_Sub2.aClass77_9029), -100)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 Class348_Sub42_Sub14.method3243(-4, class348_sub47)
                             }

@@ -1,7 +1,7 @@
 /* Class222 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class222 {
+class UnderlayDefinition {
     var anInt2883: Int = 0
     var aItemDefinitionLoader_2886: ItemDefinitionLoader? = null
     var anInt2890: Int = 0
