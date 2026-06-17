@@ -176,7 +176,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
             Renderer.anInt4562 = class45.method417("headicons_pk", 0)
             Class82.anInt1435 = class45.method417("headicons_prayer", 0)
             OverlayColorTable.anInt1756 = class45.method417("hint_headicons", 0)
-            Class291.anInt3739 = class45.method417("hint_mapmarkers", 0)
+            CutsceneSequenceData.anInt3739 = class45.method417("hint_mapmarkers", 0)
             Class86.anInt1481 = class45.method417("mapflag", 0)
             RangedGraphicsOptionState.anInt5948 = class45.method417("cross", 0)
             CameraNodeList.anInt1742 = class45.method417("mapdots", 0)

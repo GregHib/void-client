@@ -334,7 +334,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5526 = 0
             WidgetComponentNode.anInt4653 = 0
             Class367_Sub3.anInt7298 = 0
-            Class291.anInt3741 = 0
+            CutsceneSequenceData.anInt3741 = 0
             SizeBoundedSoftCache.anInt2322 = 0
             Class348_Sub40_Sub29.anInt9382 = 0
             ArbFogMaterialPass.anInt6192 = 0
@@ -2723,7 +2723,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub15.anInt9648 = 0
             Class377.anInt9837 = 0
             ItemDefinition.anInt2793 = 0
-            Class291.anInt3731 = 0
+            CutsceneSequenceData.anInt3731 = 0
             HeapInfoRecord.anInt4933 = 0
             SphereMapMaterialPass.anInt6314 = 0
             Npc.anInt10511 = 0

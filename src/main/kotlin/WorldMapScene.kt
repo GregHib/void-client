@@ -889,7 +889,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     i_180_++
                 }
                 if (!this.aBoolean3109) {
-                    if (Class291.anInt3720 != 0) method1968()
+                    if (CutsceneSequenceData.anInt3720 != 0) method1968()
                     if (TextureGenerator.aBoolean2492) method1320()
                 }
                 var i_196_ = 0
@@ -1267,7 +1267,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 if (!this.aBoolean3109) {
                     if (TextureGenerator.aBoolean2492) i_305_ = i_305_ or 0x2
                     if (Class369.aBoolean4972) i_306_ = i_306_ or 0x8
-                    if (Class291.anInt3720 != 0) {
+                    if (CutsceneSequenceData.anInt3720 != 0) {
                         if ((i_304_ == 0) or Class296.aBoolean3767) i_306_ = i_306_ or 0x10
                         i_305_ = i_305_ or 0x1
                     }

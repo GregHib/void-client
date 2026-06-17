@@ -137,7 +137,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             OverlayColorTable.aClass318_Sub1Array1754 = arrayOfNulls<Class318_Sub1>(2)
             RemoveRoofsOptionState.aClass318_Sub1Array6066 = arrayOfNulls<Class318_Sub1>(10000)
             Class5_Sub1_Sub1.anInt9930 = 0
-            Class291.aClass318_Sub1Array3737 = arrayOfNulls<Class318_Sub1>(5000)
+            CutsceneSequenceData.aClass318_Sub1Array3737 = arrayOfNulls<Class318_Sub1>(5000)
             Class348_Sub42_Sub3.Companion.anInt9504 = 0
             ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<Class318_Sub1_Sub3>(5000)
             Class86.anInt1477 = 0

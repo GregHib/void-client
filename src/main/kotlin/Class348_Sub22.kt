@@ -29,7 +29,7 @@ class Class348_Sub22 internal constructor(@JvmField var aNpc_6859: Npc?) : Class
             if (class45.method421(false, Renderer.anInt4562)) i_2_++
             if (class45.method421(false, Class82.anInt1435)) i_2_++
             if (class45.method421(false, OverlayColorTable.anInt1756)) i_2_++
-            if (class45.method421(false, Class291.anInt3739)) i_2_++
+            if (class45.method421(false, CutsceneSequenceData.anInt3739)) i_2_++
             if (class45.method421(false, Class86.anInt1481)) i_2_++
             if (class45.method421(false, RangedGraphicsOptionState.anInt5948)) i_2_++
             if (class45.method421(false, CameraNodeList.anInt1742)) i_2_++

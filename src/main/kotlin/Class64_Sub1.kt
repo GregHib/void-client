@@ -1296,14 +1296,14 @@ class Class64_Sub1 : Class64 {
                 val i_290_ = method303(i_288_ and 0x7f.inv() or i_289_, 30)
                 if (anIntArray5366!![i] == -1) {
                     val i_291_ = anIntArray5368!![i] and 0x1ffff.inv()
-                    anIntArray5368!![i] = i_291_ or Class291.method2198(0, i_291_ shr 17, i_290_.toInt())
+                    anIntArray5368!![i] = i_291_ or CutsceneSequenceData.method2198(0, i_291_ shr 17, i_290_.toInt())
                 } else if (anIntArray5366!![i] != -2) {
                     var i_292_ = anIntArray5368!![i] and 0x1ffff.inv()
-                    anIntArray5368!![i] = i_292_ or Class291.method2198(0, i_292_ shr 17, i_290_.toInt())
+                    anIntArray5368!![i] = i_292_ or CutsceneSequenceData.method2198(0, i_292_ shr 17, i_290_.toInt())
                     i_292_ = anIntArray5337!![i] and 0x1ffff.inv()
-                    anIntArray5337!![i] = i_292_ or Class291.method2198(0, i_292_ shr 17, i_290_.toInt())
+                    anIntArray5337!![i] = i_292_ or CutsceneSequenceData.method2198(0, i_292_ shr 17, i_290_.toInt())
                     i_292_ = anIntArray5366!![i] and 0x1ffff.inv()
-                    anIntArray5366!![i] = i_292_ or Class291.method2198(0, i_292_ shr 17, i_290_.toInt())
+                    anIntArray5366!![i] = i_292_ or CutsceneSequenceData.method2198(0, i_292_ shr 17, i_290_.toInt())
                 }
             }
         }
@@ -2995,19 +2995,19 @@ class Class64_Sub1 : Class64 {
                         var i_746_ = (((i * class360.anInt4430 + i_734_ * class360.anInt4428 + i_735_ * class360.anInt4427) / class360.anInt4429) shr 16)
                         var i_747_ = if (i_746_ > 256) i_737_ else i_738_
                         var i_748_ = (i_736_ shr 1) + (i_747_ * i_746_ shr 17)
-                        anIntArray5368!![i_739_] = i_748_ shl 17 or Class291.method2198(0, i_748_, i_745_.toInt())
+                        anIntArray5368!![i_739_] = i_748_ shl 17 or CutsceneSequenceData.method2198(0, i_748_, i_745_.toInt())
                         if (aClass360Array5313 != null && (aClass360Array5313!![aShortArray5394[i_739_].toInt()] != null)) class360 = aClass360Array5313!![aShortArray5394[i_739_].toInt()]!!
                         else class360 = aClass360Array5360!![aShortArray5394[i_739_].toInt()]!!
                         i_746_ = ((i * class360.anInt4430 + i_734_ * class360.anInt4428 + i_735_ * class360.anInt4427) / class360.anInt4429) shr 16
                         i_747_ = if (i_746_ > 256) i_737_ else i_738_
                         i_748_ = (i_736_ shr 1) + (i_747_ * i_746_ shr 17)
-                        anIntArray5337!![i_739_] = i_748_ shl 17 or Class291.method2198(0, i_748_, i_745_.toInt())
+                        anIntArray5337!![i_739_] = i_748_ shl 17 or CutsceneSequenceData.method2198(0, i_748_, i_745_.toInt())
                         if (aClass360Array5313 != null && (aClass360Array5313!![aShortArray5364[i_739_].toInt()] != null)) class360 = aClass360Array5313!![aShortArray5364[i_739_].toInt()]!!
                         else class360 = aClass360Array5360!![aShortArray5364[i_739_].toInt()]!!
                         i_746_ = ((i * class360.anInt4430 + i_734_ * class360.anInt4428 + i_735_ * class360.anInt4427) / class360.anInt4429) shr 16
                         i_747_ = if (i_746_ > 256) i_737_ else i_738_
                         i_748_ = (i_736_ shr 1) + (i_747_ * i_746_ shr 17)
-                        anIntArray5366!![i_739_] = i_748_ shl 17 or Class291.method2198(0, i_748_, i_745_.toInt())
+                        anIntArray5366!![i_739_] = i_748_ shl 17 or CutsceneSequenceData.method2198(0, i_748_, i_745_.toInt())
                     } else if (i_740_.toInt() == 1) {
                         val i_749_ = aShortArray5311!![i_739_].toInt() and 0xffff
                         val i_750_ = (i_749_ and 0x7f) * anInt5344 shr 7
@@ -3016,7 +3016,7 @@ class Class64_Sub1 : Class64 {
                         val i_752_ = ((i * class41.anInt561 + i_734_ * class41.anInt560 + i_735_ * class41.anInt559) shr 16)
                         val i_753_ = if (i_752_ > 256) i_737_ else i_738_
                         val i_754_ = (i_736_ shr 1) + (i_753_ * i_752_ shr 17)
-                        anIntArray5368!![i_739_] = i_754_ shl 17 or Class291.method2198(0, i_754_, i_751_.toInt())
+                        anIntArray5368!![i_739_] = i_754_ shl 17 or CutsceneSequenceData.method2198(0, i_754_, i_751_.toInt())
                         anIntArray5366!![i_739_] = -1
                     } else if (i_740_.toInt() == 3) {
                         anIntArray5368!![i_739_] = 128

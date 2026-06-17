@@ -216,7 +216,7 @@ import CubeMapMaterialPass.Companion.method2171
 import ParticleEmitterDef.Companion.method2185
 import ParticleEmitterDefExt.Companion.method2190
 import RegionSceneLoader.method2191
-import Class291.Companion.method2199
+import CutsceneSequenceData.Companion.method2199
 import Class292.Companion.method2202
 import Class294.Companion.method2214
 import Class295.Companion.method2223

@@ -67,7 +67,7 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
             anInt1634++
             Class56.anInt1044 = class45.method417("p11_full", i)
             WidgetDefinition.anInt235 = class45.method417("p12_full", i)
-            Class291.anInt3736 = class45.method417("b12_full", 0)
+            CutsceneSequenceData.anInt3736 = class45.method417("b12_full", 0)
         }
     }
 }

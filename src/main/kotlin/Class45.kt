@@ -4,7 +4,7 @@ import java.util.*
 * Visit http://jode.sourceforge.net/
 */
 class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
-    private var aClass291_629: Class291? = null
+    private var aCutsceneSequenceData_629: CutsceneSequenceData? = null
     @JvmField
     var anInt634: Int
     private val aBoolean655: Boolean
@@ -15,7 +15,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         val i_0_ = -117 / ((-60 - i) / 33)
         anInt657++
         check(method399(false)) { "" }
-        return aClass291_629!!.anInt3719
+        return aCutsceneSequenceData_629!!.anInt3719
     }
 
     fun method391(string: String?, string_1_: String?, i: Int): ByteArray? {
@@ -26,10 +26,10 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
             if (!method399(false)) return null
             string = string!!.lowercase(Locale.getDefault())
             string_1_ = string_1_!!.lowercase(Locale.getDefault())
-            val i_2_ = aClass291_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+            val i_2_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             if (!method392(i_2_, (-40).toByte())) return null
             if (i != -29832) method392(22, 12.toByte())
-            val i_3_ = (aClass291_629!!.aClass316Array3728!![i_2_]!!.method2365(i xor 0x7486.inv(), ClanChatRequestSender.method2108(string_1_, -29286)))
+            val i_3_ = (aCutsceneSequenceData_629!!.aClass316Array3728!![i_2_]!!.method2365(i xor 0x7486.inv(), ClanChatRequestSender.method2108(string_1_, -29286)))
             return method410(-1860, i_2_, i_3_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("in.EA(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + i + ')'))
@@ -39,7 +39,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
     private fun method392(i: Int, i_4_: Byte): Boolean {
         anInt646++
         if (!method399(false)) return false
-        if (i < 0 || aClass291_629!!.anIntArray3724.size <= i || (aClass291_629!!.anIntArray3724[i] == 0)) {
+        if (i < 0 || aCutsceneSequenceData_629!!.anIntArray3724.size <= i || (aCutsceneSequenceData_629!!.anIntArray3724[i] == 0)) {
             require(!GlBufferObject.aBoolean4741) { i.toString() }
             return false
         }
@@ -61,7 +61,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         val is_7_ = Class50_Sub1.method461(false, anObjectArrayArray664!![i]!![i_5_], 53146732)
         if (this.anInt634 == 1) {
             anObjectArrayArray664!![i]!![i_5_] = null
-            if (aClass291_629!!.anIntArray3724[i] == 1) anObjectArrayArray664!![i] = null
+            if (aCutsceneSequenceData_629!!.anIntArray3724[i] == 1) anObjectArrayArray664!![i] = null
         } else if (this.anInt634 == 2) anObjectArrayArray664!![i] = null
         return is_7_
     }
@@ -70,9 +70,9 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt628++
         if (!method392(i_9_, (-40).toByte())) return false
         if (anObjectArray656!![i_9_] == null) return false
-        val i_10_ = aClass291_629!!.anIntArray3725[i_9_]
-        val is_11_ = aClass291_629!!.anIntArrayArray3721[i_9_]
-        if (anObjectArrayArray664!![i_9_] == null) anObjectArrayArray664!![i_9_] = arrayOfNulls<Any>(aClass291_629!!.anIntArray3724[i_9_])
+        val i_10_ = aCutsceneSequenceData_629!!.anIntArray3725[i_9_]
+        val is_11_ = aCutsceneSequenceData_629!!.anIntArrayArray3721[i_9_]
+        if (anObjectArrayArray664!![i_9_] == null) anObjectArrayArray664!![i_9_] = arrayOfNulls<Any>(aCutsceneSequenceData_629!!.anIntArray3724[i_9_])
         val objects = anObjectArrayArray664!![i_9_]!!
         var bool = true
         var i_12_ = 0
@@ -98,7 +98,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         try {
             is_15_ = Class348_Sub41.method3158(is_14_, -120)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + Class59_Sub1.method554(5126, is_14_.size, is_14_) + "," + Class59_Sub1.method554(5126, -2 + is_14_.size, is_14_) + "," + aClass291_629!!.anIntArray3729[i_9_] + "," + aClass291_629!!.anInt3719))
+            throw Class348_Sub17.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + Class59_Sub1.method554(5126, is_14_.size, is_14_) + "," + Class59_Sub1.method554(5126, -2 + is_14_.size, is_14_) + "," + aCutsceneSequenceData_629!!.anIntArray3729[i_9_] + "," + aCutsceneSequenceData_629!!.anInt3719))
         }
         if (aBoolean655) anObjectArray656!![i_9_] = null
         if (i_8_ >= -17) method415(70.toByte(), -7)
@@ -202,9 +202,9 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt640++
         if (i_45_ != 0) method389(-55)
         if (!method392(i, (-40).toByte())) return null
-        var `is` = aClass291_629!!.anIntArrayArray3721[i]
+        var `is` = aCutsceneSequenceData_629!!.anIntArrayArray3721[i]
         if (`is` == null) {
-            `is` = IntArray(aClass291_629!!.anIntArray3725[i])
+            `is` = IntArray(aCutsceneSequenceData_629!!.anIntArray3725[i])
             for (i_46_ in `is`.indices) `is`[i_46_] = i_46_
         }
         return `is`
@@ -215,7 +215,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt633++
         if (!method399(false)) return 0
         string = string.lowercase(Locale.getDefault())
-        val i_47_ = aClass291_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, i xor 0x7265.inv()))
+        val i_47_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, i xor 0x7265.inv()))
         return method419(i, i_47_)
     }
 
@@ -227,7 +227,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         var i_50_ = 0
         if (i.toInt() != -31) return 50
         while ( /**/anObjectArray656!!.size > i_50_) {
-            if (aClass291_629!!.anIntArray3725[i_50_] > 0) {
+            if (aCutsceneSequenceData_629!!.anIntArray3725[i_50_] > 0) {
                 i_49_ += method419(0, i_50_)
                 i_48_ += 100
             }
@@ -240,11 +240,11 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
 
     private fun method399(bool: Boolean): Boolean {
         anInt652++
-        if (aClass291_629 == null) {
-            aClass291_629 = aClass314_659!!.method2340(56.toByte())
-            if (aClass291_629 == null) return false
-            anObjectArray656 = arrayOfNulls<Any>(aClass291_629!!.anInt3734)
-            anObjectArrayArray664 = arrayOfNulls<Array<Any?>>(aClass291_629!!.anInt3734)
+        if (aCutsceneSequenceData_629 == null) {
+            aCutsceneSequenceData_629 = aClass314_659!!.method2340(56.toByte())
+            if (aCutsceneSequenceData_629 == null) return false
+            anObjectArray656 = arrayOfNulls<Any>(aCutsceneSequenceData_629!!.anInt3734)
+            anObjectArrayArray664 = arrayOfNulls<Array<Any?>>(aCutsceneSequenceData_629!!.anInt3734)
         }
         return true
     }
@@ -255,7 +255,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         if (!method399(false)) return false
         if (i != -18308) return false
         string = string.lowercase(Locale.getDefault())
-        val i_52_ = aClass291_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+        val i_52_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
         return i_52_ >= 0
     }
 
@@ -264,8 +264,8 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         if (!method399(false)) return false
         var bool = true
         var i_53_ = 0
-        while ((i_53_ < aClass291_629!!.anIntArray3738.size)) {
-            val i_54_ = aClass291_629!!.anIntArray3738[i_53_]
+        while ((i_53_ < aCutsceneSequenceData_629!!.anIntArray3738.size)) {
+            val i_54_ = aCutsceneSequenceData_629!!.anIntArray3738[i_53_]
             if (anObjectArray656!![i_54_] == null) {
                 method406(i_54_, -128)
                 if (anObjectArray656!![i_54_] == null) bool = false
@@ -289,10 +289,10 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
             if (!method399(false)) return false
             string = string!!.lowercase(Locale.getDefault())
             string_56_ = string_56_!!.lowercase(Locale.getDefault())
-            val i_57_ = (aClass291_629!!.aClass316_3723!!.method2365(i xor 0x1c1a, ClanChatRequestSender.method2108(string, -29286)))
+            val i_57_ = (aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(i xor 0x1c1a, ClanChatRequestSender.method2108(string, -29286)))
             if (i != 7195) method403(null, -20, null)
             if (!method392(i_57_, (-40).toByte())) return false
-            val i_58_ = aClass291_629!!.aClass316Array3728!![i_57_]!!.method2365(1, ClanChatRequestSender.method2108(string_56_, -29286))
+            val i_58_ = aCutsceneSequenceData_629!!.aClass316Array3728!![i_57_]!!.method2365(1, ClanChatRequestSender.method2108(string_56_, -29286))
             return method420(i + -17694, i_57_, i_58_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("in.Q(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_56_ != null) "{...}" else "null") + ')'))
@@ -304,12 +304,12 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         if (i != 0) method391(null, null, -3)
         if (method399(false)) {
             if (bool_59_) {
-                aClass291_629!!.anIntArray3733 = null
-                aClass291_629!!.aClass316_3723 = null
+                aCutsceneSequenceData_629!!.anIntArray3733 = null
+                aCutsceneSequenceData_629!!.aClass316_3723 = null
             }
             if (bool) {
-                aClass291_629!!.anIntArrayArray3735 = null
-                aClass291_629!!.aClass316Array3728 = null
+                aCutsceneSequenceData_629!!.anIntArrayArray3735 = null
+                aCutsceneSequenceData_629!!.aClass316Array3728 = null
             }
         }
     }
@@ -333,7 +333,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         if (i != 0) method389(-61)
         anInt645++
         if (!method392(i_62_, (-40).toByte())) return 0
-        return aClass291_629!!.anIntArray3724[i_62_]
+        return aCutsceneSequenceData_629!!.anIntArray3724[i_62_]
     }
 
     fun method408(i: Byte, i_63_: Int): Boolean {
@@ -351,7 +351,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt663++
         if (bool == true && method399(false)) {
             string = string.lowercase(Locale.getDefault())
-            val i = aClass291_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+            val i = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             method402((-86).toByte(), i)
         }
     }
@@ -387,7 +387,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt636++
         if (!method399(false)) return false
         string = string.lowercase(Locale.getDefault())
-        val i_69_ = aClass291_629!!.aClass316_3723!!.method2365(i + -99, ClanChatRequestSender.method2108(string, -29286))
+        val i_69_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(i + -99, ClanChatRequestSender.method2108(string, -29286))
         if (i != 100) aFloat670 = 0.37849286f
         return method408((-120).toByte(), i_69_)
     }
@@ -396,16 +396,16 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt637++
         if (i != -1) return 49
         if (!method399(false)) return -1
-        return aClass291_629!!.anIntArray3724.size
+        return aCutsceneSequenceData_629!!.anIntArray3724.size
     }
 
     fun method415(i: Byte, i_70_: Int): ByteArray? {
         anInt630++
         if (!method399(false)) return null
-        if (aClass291_629!!.anIntArray3724.size == 1) return method410(i.toInt() xor 0x70a.inv(), 0, i_70_)
+        if (aCutsceneSequenceData_629!!.anIntArray3724.size == 1) return method410(i.toInt() xor 0x70a.inv(), 0, i_70_)
         if (!method392(i_70_, (-40).toByte())) return null
         if (i.toInt() != 73) anObjectArrayArray664 = null
-        if (aClass291_629!!.anIntArray3724[i_70_] == 1) return method410(i.toInt() xor 0x70a.inv(), i_70_, 0)
+        if (aCutsceneSequenceData_629!!.anIntArray3724[i_70_] == 1) return method410(i.toInt() xor 0x70a.inv(), i_70_, 0)
         throw RuntimeException()
     }
 
@@ -423,7 +423,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt654++
         if (!method399(false)) return -1
         string = string.lowercase(Locale.getDefault())
-        val i_72_ = aClass291_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+        val i_72_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
         if (!method392(i_72_, (-40).toByte())) return -1
         return i_72_
     }
@@ -431,7 +431,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
     private fun method418(i: Int, i_73_: Int, i_74_: Int): Boolean {
         anInt662++
         if (!method399(false)) return false
-        if (i_74_ < i_73_ || i < 0 || (aClass291_629!!.anIntArray3724.size <= i_74_) || (aClass291_629!!.anIntArray3724[i_74_] <= i)) {
+        if (i_74_ < i_73_ || i < 0 || (aCutsceneSequenceData_629!!.anIntArray3724.size <= i_74_) || (aCutsceneSequenceData_629!!.anIntArray3724[i_74_] <= i)) {
             require(!GlBufferObject.aBoolean4741) { i_74_.toString() + "," + i }
             return false
         }
@@ -459,9 +459,9 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
     fun method421(bool: Boolean, i: Int): Boolean {
         anInt661++
         if (!method399(bool)) return false
-        if (aClass291_629!!.anIntArray3724.size == 1) return method420(-10499, 0, i)
+        if (aCutsceneSequenceData_629!!.anIntArray3724.size == 1) return method420(-10499, 0, i)
         if (!method392(i, (-40).toByte())) return false
-        if (aClass291_629!!.anIntArray3724[i] == 1) return method420(-10499, i, 0)
+        if (aCutsceneSequenceData_629!!.anIntArray3724[i] == 1) return method420(-10499, i, 0)
         if (bool != false) return false
         throw RuntimeException()
     }
@@ -475,9 +475,9 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
             string_78_ = string_78_!!.lowercase(Locale.getDefault())
             if (i > -18) anInt669 = 40
             string = string!!.lowercase(Locale.getDefault())
-            val i_79_ = aClass291_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string_78_, -29286))
+            val i_79_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string_78_, -29286))
             if (i_79_ < 0) return false
-            val i_80_ = aClass291_629!!.aClass316Array3728!![i_79_]!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+            val i_80_ = aCutsceneSequenceData_629!!.aClass316Array3728!![i_79_]!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             return i_80_ >= 0
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("in.M(" + (if (string != null) "{...}" else "null") + ',' + (if (string_78_ != null) "{...}" else "null") + ',' + i + ')'))
@@ -487,7 +487,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
     fun method423(i: Int, i_81_: Byte): Int {
         anInt649++
         if (!method399(false)) return -1
-        val i_82_ = aClass291_629!!.aClass316_3723!!.method2365(1, i)
+        val i_82_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, i)
         if (!method392(i_82_, (-40).toByte())) return -1
         val i_83_ = -60 / ((i_81_ - -4) / 56)
         return i_82_

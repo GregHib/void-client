@@ -3,7 +3,7 @@ import Class59_Sub1.Companion.method554
 /* Class291 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class291 internal constructor(`is`: ByteArray?, i: Int, is_27_: ByteArray?) {
+class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_: ByteArray?) {
     var anInt3719: Int = 0
     lateinit var anIntArrayArray3721: Array<IntArray?>
     lateinit var anIntArray3722: IntArray

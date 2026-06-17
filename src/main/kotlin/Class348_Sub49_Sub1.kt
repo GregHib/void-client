@@ -60,7 +60,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                     while (class318_sub1 != null) {
                         if (!method2778(class318_sub1, bool, `is`, i, i_0_)) {
                             method4001(class318_sub1)
-                            if (class318_sub1.anInt6389 != -1) Class291.aClass318_Sub1Array3737!![Class348_Sub42_Sub3.anInt9504++] = class318_sub1
+                            if (class318_sub1.anInt6389 != -1) CutsceneSequenceData.aClass318_Sub1Array3737!![Class348_Sub42_Sub3.anInt9504++] = class318_sub1
                         }
                         class318_sub1 = class318_sub1.aClass318_Sub1_6379
                     }
@@ -70,7 +70,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                     if (!method2778(class318_sub1, bool, `is`, i, i_0_)) {
                         if (class318_sub1.method2377(122.toByte())) {
                             method4001(class318_sub1)
-                            if (class318_sub1.anInt6389 != -1) Class291.aClass318_Sub1Array3737!![Class348_Sub42_Sub3.anInt9504++] = class318_sub1
+                            if (class318_sub1.anInt6389 != -1) CutsceneSequenceData.aClass318_Sub1Array3737!![Class348_Sub42_Sub3.anInt9504++] = class318_sub1
                         } else {
                             method4001(class318_sub1)
                             if (class318_sub1.anInt6389 != -1) RemoveRoofsOptionState.aClass318_Sub1Array6066!![Class5_Sub1_Sub1.anInt9930++] = class318_sub1
@@ -83,7 +83,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                         if (!Class348_Sub9.method2778((ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!), bool, `is`, i, i_0_)) {
                             OpenGlTerrainTile.method4001(ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!)
                             if ((ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.anInt6389) != -1) {
-                                if (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.method2377(122.toByte())) Class291.aClass318_Sub1Array3737!![Class348_Sub42_Sub3.anInt9504++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
+                                if (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.method2377(122.toByte())) CutsceneSequenceData.aClass318_Sub1Array3737!![Class348_Sub42_Sub3.anInt9504++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
                                 else RemoveRoofsOptionState.aClass318_Sub1Array6066!![Class5_Sub1_Sub1.anInt9930++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
                             }
                         }
@@ -152,8 +152,8 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                 }
             }
             if (Class348_Sub42_Sub3.anInt9504 > 0) {
-                Class67.method718(Class291.aClass318_Sub1Array3737!!, 0, Class348_Sub42_Sub3.anInt9504 - 1)
-                for (i_22_ in 0..<Class348_Sub42_Sub3.anInt9504) MinimapRectClipper.method227(Class291.aClass318_Sub1Array3737!![i_22_]!!, true, bool_3_)
+                Class67.method718(CutsceneSequenceData.aClass318_Sub1Array3737!!, 0, Class348_Sub42_Sub3.anInt9504 - 1)
+                for (i_22_ in 0..<Class348_Sub42_Sub3.anInt9504) MinimapRectClipper.method227(CutsceneSequenceData.aClass318_Sub1Array3737!![i_22_]!!, true, bool_3_)
             }
         }
 

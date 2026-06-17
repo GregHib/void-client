@@ -211,7 +211,7 @@ class SoundEnvelope {
                                     } else break
                                     break@while_71_
                                 }
-                                i_40_ = (Class291.anIntArray3726!![i_41_] shr 1)
+                                i_40_ = (CutsceneSequenceData.anIntArray3726!![i_41_] shr 1)
                                 break@while_74_
                             } while (false)
                             i_40_ = i_41_ shr 10 shl 11
@@ -230,13 +230,13 @@ class SoundEnvelope {
     }
 
     protected constructor() {
-        if (Class291.anIntArray3726 == null) method1177(122.toByte())
+        if (CutsceneSequenceData.anIntArray3726 == null) method1177(122.toByte())
         method1542(32402)
     }
 
     internal constructor(var_renderer: Renderer?, class348_sub49: Class348_Sub49?, i: Int) {
         try {
-            if (Class291.anIntArray3726 == null) method1177(122.toByte())
+            if (CutsceneSequenceData.anIntArray3726 == null) method1177(122.toByte())
             this.anInt2731 = class348_sub49!!.readUnsignedByte(255)
             this.aBoolean2737 = (0x8 and this.anInt2731) != 0
             this.aBoolean2749 = (this.anInt2731 and 0x10) != 0

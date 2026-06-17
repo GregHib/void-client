@@ -257,7 +257,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     System.gc()
                     RegionSceneLoader.method2193(true, (-128).toByte())
                     Class36.method354(2)
-                    Class291.anInt3720 = Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
+                    CutsceneSequenceData.anInt3720 = Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
                     Class296.aBoolean3767 = TextureDefinitionCache.anInt2964 >= 96
                     Class369.aBoolean4972 = Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
                     TextureGenerator.aBoolean2492 = Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1

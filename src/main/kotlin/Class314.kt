@@ -8,7 +8,7 @@ abstract class Class314 {
 
     abstract fun method2339(i: Int, i_7_: Byte): ByteArray?
 
-    abstract fun method2340(i: Byte): Class291?
+    abstract fun method2340(i: Byte): CutsceneSequenceData?
 
     companion object {
         @JvmField

@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCache?, indexedFileCache_23_: IndexedFileCache?, mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, i_24_: Int, `is`: ByteArray?, i_25_: Int, bool: Boolean) : Class314() {
-    private var aClass291_6342: Class291? = null
+    private var aCutsceneSequenceData_6342: CutsceneSequenceData? = null
     private val anInt6344: Int
     private val aByteArray6346: ByteArray?
     private val aMediaStreamClient_6347: MediaStreamClient?
@@ -25,8 +25,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
 
     fun method2341(i: Int): Int {
         anInt6370++
-        if (aClass291_6342 == null) return 0
-        if (!aBoolean6368) return aClass291_6342!!.anInt3727
+        if (aCutsceneSequenceData_6342 == null) return 0
+        if (!aBoolean6368) return aCutsceneSequenceData_6342!!.anInt3727
         if (i != 24940) method2345(-32)
         val class348 = aNodeDeque_6372!!.method1995(i xor 0x6168)
         if (class348 == null) return 0
@@ -40,7 +40,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
             var class348 = aNodeDeque_6369.method1995(4)
             while (class348 != null) {
                 val i_0_ = class348.aLong4291.toInt()
-                if (i_0_ < 0 || (aClass291_6342!!.anInt3734 <= i_0_) || aClass291_6342!!.anIntArray3725[i_0_] == 0) class348.method2715(37.toByte())
+                if (i_0_ < 0 || (aCutsceneSequenceData_6342!!.anInt3734 <= i_0_) || aCutsceneSequenceData_6342!!.anIntArray3725[i_0_] == 0) class348.method2715(37.toByte())
                 else {
                     if (aByteArray6351!![i_0_].toInt() == 0) method2350(i_0_, 65.toByte(), 1)
                     if (aByteArray6351!![i_0_].toInt() == -1) method2350(i_0_, 65.toByte(), 2)
@@ -65,8 +65,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                     else bool = false
                     class348 = aNodeDeque_6372!!.method1990(106.toByte())
                 }
-                while (aClass291_6342!!.anIntArray3725.size > anInt6373) {
-                    if (aClass291_6342!!.anIntArray3725[anInt6373] == 0) anInt6373++
+                while (aCutsceneSequenceData_6342!!.anIntArray3725.size > anInt6373) {
+                    if (aCutsceneSequenceData_6342!!.anIntArray3725[anInt6373] == 0) anInt6373++
                     else {
                         if (aScriptCompilerThread_6354!!.anInt1734 >= 250) {
                             bool = false
@@ -96,8 +96,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                     else class348.method2715(60.toByte())
                     class348 = aNodeDeque_6372!!.method1990(43.toByte())
                 }
-                while (aClass291_6342!!.anIntArray3725.size > anInt6373) {
-                    if (aClass291_6342!!.anIntArray3725[anInt6373] == 0) anInt6373++
+                while (aCutsceneSequenceData_6342!!.anIntArray3725.size > anInt6373) {
+                    if (aCutsceneSequenceData_6342!!.anIntArray3725[anInt6373] == 0) anInt6373++
                     else {
                         if (aMediaStreamClient_6347!!.method1899(-124)) {
                             bool = false
@@ -138,9 +138,9 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
 
     fun method2345(i: Int): Int {
         anInt6357++
-        if (aClass291_6342 == null) return 0
+        if (aCutsceneSequenceData_6342 == null) return 0
         if (i != 0) method2338((-34).toByte(), 120)
-        return aClass291_6342!!.anInt3727
+        return aCutsceneSequenceData_6342!!.anInt3727
     }
 
     override fun method2339(i: Int, i_3_: Byte): ByteArray? {
@@ -165,7 +165,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
 
     override fun method2338(i: Byte, i_5_: Int) {
         anInt6345++
-        if (i.toInt() != -52) aClass291_6342 = null
+        if (i.toInt() != -52) aCutsceneSequenceData_6342 = null
         if (aIndexedFileCache_6365 != null) {
             run {
                 var class348 = aNodeDeque_6369.method1995(i.toInt() xor 0x37.inv())
@@ -232,9 +232,9 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                 TypedRecordTable.aCRC32_3691!!.reset()
                 TypedRecordTable.aCRC32_3691!!.update(`is`, 0, -2 + `is`.size)
                 val i_11_ = TypedRecordTable.aCRC32_3691!!.getValue().toInt()
-                if (aClass291_6342!!.anIntArray3729[i] != i_11_) throw RuntimeException()
-                if (aClass291_6342!!.aByteArrayArray3730 != null && (aClass291_6342!!.aByteArrayArray3730!![i] != null)) {
-                    val is_12_ = aClass291_6342!!.aByteArrayArray3730!![i]!!
+                if (aCutsceneSequenceData_6342!!.anIntArray3729[i] != i_11_) throw RuntimeException()
+                if (aCutsceneSequenceData_6342!!.aByteArrayArray3730 != null && (aCutsceneSequenceData_6342!!.aByteArrayArray3730!![i] != null)) {
+                    val is_12_ = aCutsceneSequenceData_6342!!.aByteArrayArray3730!![i]!!
                     val is_13_ = Class348_Sub1_Sub2.method2730(i_9_.toInt() xor 0x1196, 0, `is`, `is`.size + -2)
                     for (i_14_ in 0..63) {
                         if (is_12_[i_14_] != is_13_[i_14_]) throw RuntimeException()
@@ -251,8 +251,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                 }
                 return null
             }
-            `is`[`is`.size - 2] = (aClass291_6342!!.anIntArray3722[i] ushr 8).toByte()
-            `is`[`is`.size - 1] = aClass291_6342!!.anIntArray3722[i].toByte()
+            `is`[`is`.size - 2] = (aCutsceneSequenceData_6342!!.anIntArray3722[i] ushr 8).toByte()
+            `is`[`is`.size - 1] = aCutsceneSequenceData_6342!!.anIntArray3722[i].toByte()
             if (aIndexedFileCache_6365 != null) {
                 aScriptCompilerThread_6354!!.method1049(`is`, aIndexedFileCache_6365, 10.toByte(), i)
                 if (aByteArray6351!![i].toInt() != 1) {
@@ -268,16 +268,16 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
             TypedRecordTable.aCRC32_3691!!.reset()
             TypedRecordTable.aCRC32_3691!!.update(`is`, 0, `is`.size + -2)
             val i_15_ = TypedRecordTable.aCRC32_3691!!.getValue().toInt()
-            if (i_15_ != aClass291_6342!!.anIntArray3729[i]) throw RuntimeException()
-            if (aClass291_6342!!.aByteArrayArray3730 != null && (aClass291_6342!!.aByteArrayArray3730!![i] != null)) {
-                val is_16_ = aClass291_6342!!.aByteArrayArray3730!![i]!!
+            if (i_15_ != aCutsceneSequenceData_6342!!.anIntArray3729[i]) throw RuntimeException()
+            if (aCutsceneSequenceData_6342!!.aByteArrayArray3730 != null && (aCutsceneSequenceData_6342!!.aByteArrayArray3730!![i] != null)) {
+                val is_16_ = aCutsceneSequenceData_6342!!.aByteArrayArray3730!![i]!!
                 val is_17_ = Class348_Sub1_Sub2.method2730(i_9_ + 4502, 0, `is`, `is`.size - 2)
                 for (i_18_ in 0..63) {
                     if (is_17_[i_18_] != is_16_[i_18_]) throw RuntimeException()
                 }
             }
             val i_19_ = ((0xff00 and (`is`[-2 + `is`.size].toInt() shl 8)) + (0xff and `is`[`is`.size + -1].toInt()))
-            if ((aClass291_6342!!.anIntArray3722[i] and 0xffff) != i_19_) throw RuntimeException()
+            if ((aCutsceneSequenceData_6342!!.anIntArray3722[i] and 0xffff) != i_19_) throw RuntimeException()
             if (aByteArray6351!![i].toInt() != 1) {
                 anInt6361++
                 aByteArray6351!![i] = 1.toByte()
@@ -301,9 +301,9 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
         return anInt6361
     }
 
-    override fun method2340(i: Byte): Class291? {
+    override fun method2340(i: Byte): CutsceneSequenceData? {
         anInt6348++
-        if (aClass291_6342 != null) return aClass291_6342
+        if (aCutsceneSequenceData_6342 != null) return aCutsceneSequenceData_6342
         if (i.toInt() != 56) return null
         if (aClass348_Sub42_Sub16_6355 == null) {
             if (aMediaStreamClient_6347!!.method1900(-14)) return null
@@ -315,11 +315,11 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
             if (aClass348_Sub42_Sub16_6355 is Class348_Sub42_Sub16_Sub2) {
                 try {
                     if (`is` == null) throw RuntimeException()
-                    aClass291_6342 = Class291(`is`, anInt6344, aByteArray6346)
-                    if (anInt6352 != aClass291_6342!!.anInt3732) throw RuntimeException()
+                    aCutsceneSequenceData_6342 = CutsceneSequenceData(`is`, anInt6344, aByteArray6346)
+                    if (anInt6352 != aCutsceneSequenceData_6342!!.anInt3732) throw RuntimeException()
                     break
                 } catch (runtimeexception: RuntimeException) {
-                    aClass291_6342 = null
+                    aCutsceneSequenceData_6342 = null
                     if (aMediaStreamClient_6347!!.method1900(i + 66)) aClass348_Sub42_Sub16_6355 = null
                     else aClass348_Sub42_Sub16_6355 = aMediaStreamClient_6347.method1906((-95).toByte(), 0.toByte(), true, anInt6350, 255)
                     return null
@@ -327,10 +327,10 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
             }
             try {
                 if (`is` == null) throw RuntimeException()
-                aClass291_6342 = Class291(`is`, anInt6344, aByteArray6346)
+                aCutsceneSequenceData_6342 = CutsceneSequenceData(`is`, anInt6344, aByteArray6346)
             } catch (runtimeexception: RuntimeException) {
                 aMediaStreamClient_6347!!.method1904(i + -57)
-                aClass291_6342 = null
+                aCutsceneSequenceData_6342 = null
                 if (aMediaStreamClient_6347.method1900(i.toInt() xor 0x16.inv())) aClass348_Sub42_Sub16_6355 = null
                 else aClass348_Sub42_Sub16_6355 = aMediaStreamClient_6347.method1906(47.toByte(), 0.toByte(), true, anInt6350, 255)
                 return null
@@ -340,9 +340,9 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
         aClass348_Sub42_Sub16_6355 = null
         if (aIndexedFileCache_6365 != null) {
             anInt6361 = 0
-            aByteArray6351 = ByteArray(aClass291_6342!!.anInt3734)
+            aByteArray6351 = ByteArray(aCutsceneSequenceData_6342!!.anInt3734)
         }
-        return aClass291_6342
+        return aCutsceneSequenceData_6342
     }
 
     init {

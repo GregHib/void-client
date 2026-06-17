@@ -866,8 +866,8 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 for (i in RemoveRoofsOptionState.aClass318_Sub1Array6066!!.indices) RemoveRoofsOptionState.aClass318_Sub1Array6066!![i] = null
                 Class5_Sub1_Sub1.anInt9930 = 0
             }
-            if (Class291.aClass318_Sub1Array3737 != null) {
-                for (i in Class291.aClass318_Sub1Array3737!!.indices) Class291.aClass318_Sub1Array3737!![i] = null
+            if (CutsceneSequenceData.aClass318_Sub1Array3737 != null) {
+                for (i in CutsceneSequenceData.aClass318_Sub1Array3737!!.indices) CutsceneSequenceData.aClass318_Sub1Array3737!![i] = null
                 Class348_Sub42_Sub3.anInt9504 = 0
             }
             if (WaterDetailOptionState.aSoundEnvelopeArray5993 != null) {
