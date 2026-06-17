@@ -5,7 +5,7 @@ import Class348.Companion.method2709
 /* Class337 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class337 internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, class242s: Array<Class242?>?) {
+class Class337 internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, managedGlResources: Array<ManagedGlResource?>?) {
     private val aHa_Sub2_4173: OpenGlRenderer?
     var aLong4178: Long = 0
 
@@ -21,7 +21,7 @@ class Class337 internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, class
             aHa_Sub2_4173 = var_ha_Sub2
             this.aLong4178 = l
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + (if (class242s != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("dw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
         }
     }
 

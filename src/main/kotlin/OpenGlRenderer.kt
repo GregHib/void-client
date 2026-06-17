@@ -3533,7 +3533,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             }
                         }
                         if (!class348_sub42_sub13.method3233(class348_sub42_sub12, -21)) break
-                        Class242.method1868((-39).toByte(), class348_sub42_sub13)
+                        ManagedGlResource.method1868((-39).toByte(), class348_sub42_sub13)
                     }
                 } catch (runtimeexception: RuntimeException) {
                     throw Class348_Sub17.method2929(runtimeexception, ("qo.VC(" + i + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ')'))

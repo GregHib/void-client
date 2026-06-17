@@ -157,7 +157,7 @@ class Class261 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
                     val i_15_ = Class258_Sub4.aClass373_8552!!.method3597(true)
                     val i_16_ = Class258_Sub4.aClass373_8552!!.method3594(116.toByte())
                     var bool = false
-                    if (Class242.aClass348_Sub42_Sub13_3152 != null) {
+                    if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
                         if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -Class348_Sub1_Sub1.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + Class373.anInt4534 + 10 < i_16_)) Class348_Sub42_Sub19.method3277((-48).toByte())
                         else bool = true
                     }
@@ -203,10 +203,10 @@ class Class261 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
                 if (i_14_ == 0) {
                     val i_23_ = class348_sub45!!.method3308((-128).toByte())
                     val i_24_ = class348_sub45.method3311(33)
-                    if (Class242.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 <= i_23_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252 >= i_23_) && i_24_ >= Class373.anInt4534 && Class373.anInt4534 + ClickFeedbackTask.anInt4669 >= i_24_) {
+                    if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 <= i_23_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252 >= i_23_) && i_24_ >= Class373.anInt4534 && Class373.anInt4534 + ClickFeedbackTask.anInt4669 >= i_24_) {
                         var i_25_ = -1
                         var i_26_ = 0
-                        while ((Class242.aClass348_Sub42_Sub13_3152!!.anInt9615 > i_26_)) {
+                        while ((ManagedGlResource.aClass348_Sub42_Sub13_3152!!.anInt9615 > i_26_)) {
                             if (Class71.aBoolean1211) {
                                 val i_27_ = 33 + (Class373.anInt4534 + i_26_ * 16)
                                 if (i_24_ > -13 + i_27_ && i_24_ < 4 + i_27_) i_25_ = i_26_
@@ -218,7 +218,7 @@ class Class261 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
                         }
                         if (i_25_ != -1) {
                             var i_29_ = 0
-                            val linkedListIterator = LinkedListIterator(Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
+                            val linkedListIterator = LinkedListIterator(ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
                             var class348_sub42_sub12 = (linkedListIterator.method1240(98) as Class348_Sub42_Sub12?)
                             while (class348_sub42_sub12 != null) {
                                 if (i_29_ == i_25_) {

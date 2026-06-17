@@ -87,7 +87,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
                 aHa_Sub2_2511,
                 "uniform float rcpRelief;\nuniform vec2 sampleSize;\nuniform sampler3D heightMap;\nvoid main() {\nfloat dx = texture3D(heightMap, vec3(-sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r;\nfloat dy = texture3D(heightMap, vec3(0.0, -sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(0.0, sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r;\ngl_FragColor = vec4(0.5+normalize(vec3(dx, dy, rcpRelief))*0.5, texture3D(heightMap, gl_TexCoord[0].xyz).r);\n}\n"
             ))
-            if (class242 != null) aClass337_2513 = Class318_Sub1_Sub5_Sub2.method2493(aHa_Sub2_2511, i + -35633, (arrayOf<Class242?>(class242)))
+            if (class242 != null) aClass337_2513 = Class318_Sub1_Sub5_Sub2.method2493(aHa_Sub2_2511, i + -35633, (arrayOf<ManagedGlResource?>(class242)))
         }
         anInt2518++
         if (i != 35632) method1413(null, null, 102, 0.17865802f)

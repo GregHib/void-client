@@ -178,10 +178,10 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
                                 class348_sub42_sub13 = (linkedListIterator.method1243(77.toByte()) as? Class348_Sub42_Sub13)
                             }
                         }
-                    } else if (Class242.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 < i_2_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252) > i_2_) {
+                    } else if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 < i_2_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252) > i_2_) {
                         var i_4_ = -1
                         var i_5_ = 0
-                        while (((Class242.aClass348_Sub42_Sub13_3152!!.anInt9615) > i_5_)) {
+                        while (((ManagedGlResource.aClass348_Sub42_Sub13_3152!!.anInt9615) > i_5_)) {
                             if (Class71.aBoolean1211) {
                                 val i_7_ = Class373.anInt4534 + (33 + 16 * i_5_)
                                 if (-13 + i_7_ < i_3_ && 3 + i_7_ >= i_3_) i_4_ = i_5_
@@ -193,7 +193,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
                         }
                         if (i_4_ != -1) {
                             var i_8_ = 0
-                            val linkedListIterator = LinkedListIterator(Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
+                            val linkedListIterator = LinkedListIterator(ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
                             var class348_sub42_sub12 = (linkedListIterator.method1240(9) as? Class348_Sub42_Sub12)
                             while (class348_sub42_sub12 != null) {
                                 if (i_8_++ == i_4_) return (class348_sub42_sub12.anInt9609)

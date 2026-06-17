@@ -267,13 +267,13 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
             aClass337_8842 = (Class318_Sub1_Sub5_Sub2.method2493(
                 this.aHa_Sub2_6618,
                 -1,
-                (arrayOf<Class242?>(Class348_Sub42_Sub15.method3249(35632, 80, this.aHa_Sub2_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))
+                (arrayOf<ManagedGlResource?>(Class348_Sub42_Sub15.method3249(35632, 80, this.aHa_Sub2_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))
             ))
-            aClass337_8824 = (Class318_Sub1_Sub5_Sub2.method2493(this.aHa_Sub2_6618, -1, (arrayOf<Class242?>(Class348_Sub42_Sub15.method3249(35632, -45, this.aHa_Sub2_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))))
+            aClass337_8824 = (Class318_Sub1_Sub5_Sub2.method2493(this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(Class348_Sub42_Sub15.method3249(35632, -45, this.aHa_Sub2_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))))
             aClass337_8836 = (Class318_Sub1_Sub5_Sub2.method2493(
                 this.aHa_Sub2_6618,
                 -1,
-                (arrayOf<Class242?>(
+                (arrayOf<ManagedGlResource?>(
                     Class348_Sub42_Sub15.method3249(
                         35632,
                         -108,
@@ -283,7 +283,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                 ))
             ))
             aClass337_8822 = (Class318_Sub1_Sub5_Sub2.method2493(
-                this.aHa_Sub2_6618, -1, (arrayOf<Class242?>(
+                this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(
                     Class348_Sub42_Sub15.method3249(
                         35632,
                         -31,

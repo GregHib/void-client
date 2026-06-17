@@ -72,7 +72,7 @@ class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Su
             aBigInteger9657 = null
         }
 
-        fun method3249(i: Int, i_0_: Int, var_ha_Sub2: OpenGlRenderer?, string: String?): Class242? {
+        fun method3249(i: Int, i_0_: Int, var_ha_Sub2: OpenGlRenderer?, string: String?): ManagedGlResource? {
             try {
                 anInt9656++
                 val i_1_ = -89 / ((29 - i_0_) / 47)
@@ -93,7 +93,7 @@ class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Su
                         return null
                     }
                 }
-                return Class242(var_ha_Sub2, l, i)
+                return ManagedGlResource(var_ha_Sub2, l, i)
             } catch (runtimeexception: RuntimeException) {
                 throw method2929(runtimeexception, ("et.G(" + i + ',' + i_0_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
             }

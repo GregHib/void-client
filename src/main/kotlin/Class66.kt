@@ -4314,7 +4314,7 @@ object Class66 {
                     return
                 }
                 if (i == 3620) {
-                    Class242.method1867(77)
+                    ManagedGlResource.method1867(77)
                     return
                 }
                 if (i == 3621) {

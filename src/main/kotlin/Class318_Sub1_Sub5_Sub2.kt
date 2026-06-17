@@ -175,16 +175,16 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
             anIntArray10172 = null
         }
 
-        fun method2493(var_ha_Sub2: OpenGlRenderer?, i: Int, class242s: Array<Class242?>?): Class337? {
+        fun method2493(var_ha_Sub2: OpenGlRenderer?, i: Int, managedGlResources: Array<ManagedGlResource?>?): Class337? {
             try {
                 anInt10167++
-                for (i_16_ in class242s!!.indices) {
-                    if (class242s[i_16_] == null || class242s[i_16_]!!.aLong3156 <= 0L) return null
+                for (i_16_ in managedGlResources!!.indices) {
+                    if (managedGlResources[i_16_] == null || managedGlResources[i_16_]!!.aLong3156 <= 0L) return null
                 }
                 val l = glCreateProgramObjectARB()
                 var i_17_ = 0
-                while (class242s.size > i_17_) {
-                    glAttachObjectARB(l, (class242s[i_17_]!!.aLong3156))
+                while (managedGlResources.size > i_17_) {
+                    glAttachObjectARB(l, (managedGlResources[i_17_]!!.aLong3156))
                     i_17_++
                 }
                 glLinkProgramARB(l)
@@ -199,17 +199,17 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
                     }
                     if (LocTypeDefLoader.anIntArray2509!![0] == 0) {
                         var i_18_ = 0
-                        while (class242s.size > i_18_) {
-                            glDetachObjectARB(l, (class242s[i_18_]!!.aLong3156))
+                        while (managedGlResources.size > i_18_) {
+                            glDetachObjectARB(l, (managedGlResources[i_18_]!!.aLong3156))
                             i_18_++
                         }
                         glDeleteObjectARB(l)
                         return null
                     }
                 }
-                return Class337(var_ha_Sub2, l, class242s)
+                return Class337(var_ha_Sub2, l, managedGlResources)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("pw.D(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (class242s != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("pw.D(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
             }
         }
 

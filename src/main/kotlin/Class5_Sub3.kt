@@ -158,7 +158,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                                     var class348_sub42_sub12_12_ = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1011(-58) as Class348_Sub42_Sub12?)
                                     while (class348_sub42_sub12_12_ != null) {
                                         if (class348_sub42_sub12 == class348_sub42_sub12_12_) {
-                                            if (class348_sub42_sub13.method3234((-123).toByte(), class348_sub42_sub12)) Class242.method1868((-98).toByte(), class348_sub42_sub13)
+                                            if (class348_sub42_sub13.method3234((-123).toByte(), class348_sub42_sub12)) ManagedGlResource.method1868((-98).toByte(), class348_sub42_sub13)
                                             bool = true
                                             break
                                         }
@@ -177,7 +177,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                                 class348_sub42_sub13 = (Class348_Sub42_Sub12.aClass356_9603!!.method3476(true) as? Class348_Sub42_Sub13?)
                             }
                             if (class348_sub42_sub13 == null || !(class348_sub42_sub13.method3234(15.toByte(), class348_sub42_sub12))) break
-                            Class242.method1868(120.toByte(), class348_sub42_sub13)
+                            ManagedGlResource.method1868(120.toByte(), class348_sub42_sub13)
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {

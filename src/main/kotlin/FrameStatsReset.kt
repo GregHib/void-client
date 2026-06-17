@@ -756,7 +756,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class286_Sub1.anInt6185 = 0
             OpenGlRenderer.anInt7567 = 0
             Class280.anInt3628 = 0
-            Class242.anInt3155 = 0
+            ManagedGlResource.anInt3155 = 0
             Class348_Sub49.anInt7153 = 0
             Class45.anInt627 = 0
             Class377.anInt9850 = 0
@@ -942,7 +942,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7565 = 0
             SocketGameConnection.anInt5830 = 0
             Class299_Sub1_Sub2.anInt8704 = 0
-            Class242.anInt3154 = 0
+            ManagedGlResource.anInt3154 = 0
             Class318_Sub1_Sub1_Sub1.anInt9963 = 0
             ChatEffectsOptionState.anInt5866 = 0
             Class278.anInt3586 = 0
@@ -2375,7 +2375,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MinimapRenderer.anInt1577 = 0
             Class348_Sub16_Sub2.anInt8882 = 0
             Class348_Sub16_Sub1.anInt8850 = 0
-            Class242.anInt3151 = 0
+            ManagedGlResource.anInt3151 = 0
             Class37.anInt494 = 0
             Class318_Sub1_Sub5_Sub1.anInt10141 = 0
             WorldMapScene.anInt3106 = 0

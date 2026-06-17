@@ -4,7 +4,7 @@ import Class69.Companion.method721
 /* Class242 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class242 internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, i: Int) {
+class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, i: Int) {
     private val aHa_Sub2_3153: OpenGlRenderer?
     @JvmField
     var aLong3156: Long = 0

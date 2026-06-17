@@ -156,7 +156,7 @@ import FlickeringEffectsOptionState.Companion.method1753
 import FlickeringEffectsOptionState.Companion.method1755
 import CustomCursorsOptionState.Companion.method1758
 import WorldMapRenderer.Companion.method1853
-import Class242.Companion.method1866
+import ManagedGlResource.Companion.method1866
 import TextureMetadataProvider.Companion.method1880
 import Class245.method1882
 import Class246.Companion.method1886
