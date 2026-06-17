@@ -6,7 +6,7 @@ import kotlin.math.min
 /* Class210 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class210 internal constructor() {
+class VorbisFloorDecoder internal constructor() {
     private val anIntArray2720: IntArray
     private val anInt2722: Int
     private val anIntArray2723: IntArray

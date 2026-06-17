@@ -118,7 +118,7 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
         val class276: Class276 = aClass276Array6704!![anIntArray6709!![i_38_]]!!
         val i_49_ = class276.anInt3557
         val i_50_ = class276.anIntArray3556!![i_49_]
-        val bool_51_: Boolean = !aClass210Array6715!![i_50_]!!.method1534()
+        val bool_51_: Boolean = !aVorbisFloorDecoderArray6715!![i_50_]!!.method1534()
         val bool_52_ = bool_51_
         for (i_53_ in 0..<class276.anInt3555) {
             val class343: Class343 = (aClass343Array6710!![class276.anIntArray3554!![i_53_]])!!
@@ -128,7 +128,7 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
         if (!bool_51_) {
             val i_54_ = class276.anInt3557
             val i_55_ = class276.anIntArray3556!![i_54_]
-            aClass210Array6715!![i_55_]!!.method1530(aFloatArray6707!!, i_39_ shr 1)
+            aVorbisFloorDecoderArray6715!![i_55_]!!.method1530(aFloatArray6707!!, i_39_ shr 1)
         }
         if (bool_51_) {
             for (i_56_ in (i_39_ shr 1)..<i_39_) aFloatArray6707!![i_56_] = 0.0f
@@ -284,7 +284,7 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
         private var aFloatArray6712: FloatArray? = null
         private var aBooleanArray6713: BooleanArray? = null
         private var aByteArray6714: ByteArray? = null
-        private var aClass210Array6715: Array<Class210?>? = null
+        private var aVorbisFloorDecoderArray6715: Array<VorbisFloorDecoder?>? = null
         @JvmField
         var aClass370Array6718: Array<Class370?>? = null
         private var anIntArray6719: IntArray? = null
@@ -305,7 +305,7 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
         fun method2785() {
             aByteArray6714 = null
             aClass370Array6718 = null
-            aClass210Array6715 = null
+            aVorbisFloorDecoderArray6715 = null
             aClass343Array6710 = null
             aClass276Array6704 = null
             aBooleanArray6713 = null
@@ -407,8 +407,8 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
             val i_24_: Int = method2789(6) + 1
             for (i_25_ in 0..<i_24_) method2789(16)
             val i_26_: Int = method2789(6) + 1
-            aClass210Array6715 = arrayOfNulls<Class210>(i_26_)
-            for (i_27_ in 0..<i_26_) aClass210Array6715!![i_27_] = Class210()
+            aVorbisFloorDecoderArray6715 = arrayOfNulls<VorbisFloorDecoder>(i_26_)
+            for (i_27_ in 0..<i_26_) aVorbisFloorDecoderArray6715!![i_27_] = VorbisFloorDecoder()
             val i_28_: Int = method2789(6) + 1
             aClass343Array6710 = arrayOfNulls<Class343?>(i_28_)
             for (i_29_ in 0..<i_28_) aClass343Array6710!![i_29_] = Class343()
