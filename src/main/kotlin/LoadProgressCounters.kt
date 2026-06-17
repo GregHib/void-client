@@ -23,7 +23,7 @@ class LoadProgressCounters {
         var anInt2446: Int = 0
         var anInterface16Array2447: Array<Interface16?>? = null
         @JvmField
-        var aClass346_2449: Class346? = null
+        var aKeyboardInputSource_2449: KeyboardInputSource? = null
         var anInt2450: Int = 0
         var anInt2452: Int = 0
         var anInt2453: Int = 0
@@ -54,15 +54,15 @@ class LoadProgressCounters {
         }
 
         fun method1374(i: Int, class348_sub49: Class348_Sub49): Class50_Sub4 {
-            if (i < 106) aClass346_2449 = null
+            if (i < 106) aKeyboardInputSource_2449 = null
             anInt2453++
             return Class50_Sub4(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
         }
 
         @JvmStatic
         fun method1375(i: Int) {
-            if (i != 5616) aClass346_2449 = null
-            aClass346_2449 = null
+            if (i != 5616) aKeyboardInputSource_2449 = null
+            aKeyboardInputSource_2449 = null
             anInterface16Array2447 = null
         }
     }

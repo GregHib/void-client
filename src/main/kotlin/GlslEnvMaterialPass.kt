@@ -181,8 +181,8 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
                             }
                         }
                         if (GlBufferObject.aClass348_Sub16_Sub3_4743 == null) {
-                            if (BloomGraphicsOptionState.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564!!.method2869(MaterialPass.Companion.aClass348_Sub2_3683, Class346.aBoolean4275, false)
-                            else Class98.aClass348_Sub16_Sub3_1564!!.method2870(MaterialPass.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, Class346.aBoolean4275, true, 24.toByte())
+                            if (BloomGraphicsOptionState.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564!!.method2869(MaterialPass.Companion.aClass348_Sub2_3683, KeyboardInputSource.aBoolean4275, false)
+                            else Class98.aClass348_Sub16_Sub3_1564!!.method2870(MaterialPass.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, KeyboardInputSource.aBoolean4275, true, 24.toByte())
                         }
                         if (ActorEntity.aSoundChannelMixer_8764 != null) ActorEntity.aSoundChannelMixer_8764!!.method2088(bool, Class98.aClass348_Sub16_Sub3_1564)
                         ModelDefinition.aClass45_1848 = null

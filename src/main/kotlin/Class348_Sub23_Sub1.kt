@@ -1,4 +1,4 @@
-import Class346.Companion.method2699
+import KeyboardInputSource.Companion.method2699
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
 import jagtheora.vorbis.DSPState

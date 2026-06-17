@@ -294,7 +294,7 @@ import TileRenderState.Companion.method2678
 import WidgetRedrawRegion.Companion.method2682
 import ByteStore.Companion.method2690
 import ParticleProcessor.Companion.method2693
-import Class346_Sub1.Companion.method2705
+import AwtKeyboardListener.Companion.method2705
 import Class347.Companion.method2707
 import Class347.Companion.method2708
 import Class348.Companion.method2713
@@ -686,7 +686,7 @@ class Client : GameAppletFrame() {
         } catch (exception: Exception) {
             /* empty */
         }
-        LoadProgressCounters.aClass346_2449 = Class348_Sub3.method2743(ParticleSystemRenderer.aCanvas3869, (-124).toByte())
+        LoadProgressCounters.aKeyboardInputSource_2449 = Class348_Sub3.method2743(ParticleSystemRenderer.aCanvas3869, (-124).toByte())
         GlTexture1D.aClass373_8552 = method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
         //        try {
         if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 != null) {
@@ -1572,13 +1572,13 @@ class Client : GameAppletFrame() {
             if (SizeBoundedSoftCache.aRsaPacketDecoder_2327 != null) SizeBoundedSoftCache.aRsaPacketDecoder_2327!!.method2670(0)
             method2228(0)
             method3260(66)
-            LoadProgressCounters.aClass346_2449!!.method2695(67)
+            LoadProgressCounters.aKeyboardInputSource_2449!!.method2695(67)
             GlTexture1D.aClass373_8552!!.method3589(0)
             if (Class348_Sub8.aRenderer6654 != null) Class348_Sub8.aRenderer6654!!.method3646(method599(-74).toInt())
             method1315(93)
             CameraConfigDefinition.anInt3246 = 0
             Class348_Sub42_Sub19.anInt9699 = 0
-            var interface6 = LoadProgressCounters.aClass346_2449!!.method2697(0)
+            var interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
             while (interface6 != null) {
                 val i_109_ = interface6.method27(26276)
                 if (i_109_ == 2 || i_109_ == 3) {
@@ -1594,7 +1594,7 @@ class Client : GameAppletFrame() {
                     CacheLruCache.anInterface6Array3884!![CameraConfigDefinition.anInt3246] = interface6
                     CameraConfigDefinition.anInt3246++
                 }
-                interface6 = LoadProgressCounters.aClass346_2449!!.method2697(0)
+                interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
             }
             Class98.anInt1565 = 0
             var class348_sub45 = GlTexture1D.aClass373_8552!!.method3596(0)
@@ -2100,14 +2100,14 @@ class Client : GameAppletFrame() {
                             if (class46.aByteArray746 != null && !method3263(true)) {
                                 var i_55_ = 0
                                 while ((i_55_ < class46.aByteArray746.size)) {
-                                    if (!LoadProgressCounters.aClass346_2449!!.method2696(class46.aByteArray746[i_55_].toInt(), -122)) {
+                                    if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(class46.aByteArray746[i_55_].toInt(), -122)) {
                                         if (class46.anIntArray801 != null) class46.anIntArray801!![i_55_] = 0
                                     } else if ((class46.anIntArray801 == null) || (Class367_Sub11.anInt7396 >= (class46.anIntArray801!![i_55_]))) {
                                         val i_56_ = (class46.aByteArray832[i_55_])
-                                        if (i_56_.toInt() == 0 || (((i_56_.toInt() and 0x8) == 0 || (!LoadProgressCounters.aClass346_2449!!.method2696(86, -124) && !LoadProgressCounters.aClass346_2449!!.method2696(82, -123) && !(LoadProgressCounters.aClass346_2449!!.method2696(81, -122)))) && ((i_56_.toInt() and 0x2) == 0 || LoadProgressCounters.aClass346_2449!!.method2696(86, -127)) && ((i_56_.toInt() and 0x1) == 0 || LoadProgressCounters.aClass346_2449!!.method2696(
+                                        if (i_56_.toInt() == 0 || (((i_56_.toInt() and 0x8) == 0 || (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(86, -124) && !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -123) && !(LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -122)))) && ((i_56_.toInt() and 0x2) == 0 || LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(86, -127)) && ((i_56_.toInt() and 0x1) == 0 || LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(
                                                 82,
                                                 -124
-                                            )) && ((i_56_.toInt() and 0x4) == 0 || (LoadProgressCounters.aClass346_2449!!.method2696(81, -126))))
+                                            )) && ((i_56_.toInt() and 0x4) == 0 || (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -126))))
                                         ) {
                                             if (i_55_ < 10) method2780(-1, "", 122.toByte(), i_55_ + 1, class46.anInt830)
                                             else if (i_55_ == 10) {
@@ -2221,7 +2221,7 @@ class Client : GameAppletFrame() {
                                                 val `is`: IntArray? = IntArray(3)
                                                 class348_sub42_sub14.method3239(true, i_73_, i_72_, `is`!!)
                                                 if (`is` != null) {
-                                                    if (LoadProgressCounters.aClass346_2449!!.method2696(82, -128) && (AsyncTaskHandle.anInt2581 > 0)) {
+                                                    if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -128) && (AsyncTaskHandle.anInt2581 > 0)) {
                                                         method3502(`is`[2], 2, `is`[0], `is`[1])
                                                         continue
                                                     }

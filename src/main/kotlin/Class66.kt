@@ -556,7 +556,7 @@ object Class66 {
             }
         } else if (i < 5200) {
             if (i == 5100) {
-                if (LoadProgressCounters.aClass346_2449!!.method2696(86, -121)) anIntArray1149!![anInt1173++] = 1
+                if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(86, -121)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -564,7 +564,7 @@ object Class66 {
                 return
             }
             if (i == 5101) {
-                if (LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) anIntArray1149!![anInt1173++] = 1
+                if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -126)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -572,7 +572,7 @@ object Class66 {
                 return
             }
             if (i == 5102) {
-                if (LoadProgressCounters.aClass346_2449!!.method2696(81, -128)) anIntArray1149!![anInt1173++] = 1
+                if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -128)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -907,7 +907,7 @@ object Class66 {
                 return
             }
             if (i == 5305) {
-                val i_100_ = Class346.anInt4276
+                val i_100_ = KeyboardInputSource.anInt4276
                 val i_101_ = FlickeringEffectsOptionState.anInt5911
                 var i_102_ = -1
                 val class57s = NamedTimedNode.method2515(1494)!!

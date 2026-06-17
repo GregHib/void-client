@@ -1,7 +1,7 @@
 /* Class346 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class346 {
+abstract class KeyboardInputSource {
     abstract fun method2695(i: Int)
 
     abstract fun method2696(i: Int, i_0_: Int): Boolean

@@ -19,7 +19,7 @@ object GameDisplayManager {
     var anInt2839: Int = 0
 
     fun method1580(i: Byte, bool: Boolean, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
-        if (SkeletalAnimFrameLoader.aFrame476 != null && (i_2_ != 3 || i_0_ != Class346.anInt4276 || i_3_ != FlickeringEffectsOptionState.anInt5911)) {
+        if (SkeletalAnimFrameLoader.aFrame476 != null && (i_2_ != 3 || i_0_ != KeyboardInputSource.anInt4276 || i_3_ != FlickeringEffectsOptionState.anInt5911)) {
             method527(SkeletalAnimFrameLoader.aFrame476, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, false)
             SkeletalAnimFrameLoader.aFrame476 = null
         }
@@ -28,7 +28,7 @@ object GameDisplayManager {
         if (i_2_ == 3 && SkeletalAnimFrameLoader.aFrame476 == null) {
             SkeletalAnimFrameLoader.aFrame476 = MapElementDecor.method2463(i_3_, i_0_, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!), 0, 14199, 0)
             if (SkeletalAnimFrameLoader.aFrame476 != null) {
-                Class346.anInt4276 = i_0_
+                KeyboardInputSource.anInt4276 = i_0_
                 FlickeringEffectsOptionState.anInt5911 = i_3_
                 method243(37)
             }

@@ -71,7 +71,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                 if (i >= -71) Companion.method1077(null, (-41).toByte())
                 var string: String?
                 if (RenderNode.aBoolean9722 && Class73.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(Class348_Sub33.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
-                else if (!InputSettingsState.shiftClick || !LoadProgressCounters.aClass346_2449!!.method2696(81, -121) || Class73.anInt4776 <= 2) {
+                else if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) || Class73.anInt4776 <= 2) {
                     val class348_sub42_sub12 = IntHashSet.aClass348_Sub42_Sub12_3963
                     if (class348_sub42_sub12 == null) return
                     string = IntHashSet.method2367((-52).toByte(), class348_sub42_sub12)

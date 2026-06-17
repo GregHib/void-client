@@ -43,7 +43,7 @@ abstract class Class348_Sub31 : Class348() {
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             if (i_0_ != 22684) anInt6913 = -117
             anInt6922++
-            Class346.aBoolean4275 = false
+            KeyboardInputSource.aBoolean4275 = false
             ModelDefinition.aClass45_1848 = null
             SceneLinkedListNode.anInt3971 = -1
             WaterDetailOptionState.anInt5994 = i

@@ -88,7 +88,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 SceneEntity.aIntRange_6383,
                 SocketStreamWorker.aIntRange_2665,
                 Class359.aIntRange_4421,
-                Class346_Sub1.aIntRange_6528,
+                AwtKeyboardListener.aIntRange_6528,
                 WorldListEntry.aIntRange_315,
                 Class367_Sub11.aIntRange_7398,
                 WaterDetailOptionState.aIntRange_5992,

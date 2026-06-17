@@ -221,10 +221,10 @@ class Class348_Sub3 internal constructor(private val aS_Sub3_6566: NativeTerrain
         }
 
         @JvmStatic
-        fun method2743(component: Component?, i: Byte): Class346 {
+        fun method2743(component: Component?, i: Byte): KeyboardInputSource {
             anInt6587++
             val i_41_ = -16 % ((i - -58) / 63)
-            return Class346_Sub1(component)
+            return AwtKeyboardListener(component)
         }
     }
 }

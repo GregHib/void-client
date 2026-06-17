@@ -101,7 +101,7 @@ class Class40 internal constructor() {
             if (i_0_ != 18002) anInt558 = 41
             anInt551++
             if (i_3_ > 0) {
-                Class346.aBoolean4275 = bool
+                KeyboardInputSource.aBoolean4275 = bool
                 Class348_Sub43.anInt7068 = 1
                 ModelDefinition.aClass45_1848 = class45
                 NpcActorEntity.anInt10074 = i_1_

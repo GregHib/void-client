@@ -45,13 +45,13 @@ class Class348_Sub22 internal constructor(@JvmField var aNpc_6859: Npc?) : Class
 
         @JvmStatic
         fun method2959(i: Int) {
-            LoadProgressCounters.aClass346_2449!!.method2698(14174)
+            LoadProgressCounters.aKeyboardInputSource_2449!!.method2698(14174)
             anInt6860++
             GlTexture1D.aClass373_8552!!.method3592(0)
             Class79.aClient1367!!.method87((-49).toByte())
             ParticleSystemRenderer.aCanvas3869!!.setBackground(Color.black)
             GlShaderProgramHandle.anInt4179 = i
-            LoadProgressCounters.aClass346_2449 = method2743(ParticleSystemRenderer.aCanvas3869, 84.toByte())
+            LoadProgressCounters.aKeyboardInputSource_2449 = method2743(ParticleSystemRenderer.aCanvas3869, 84.toByte())
             GlTexture1D.aClass373_8552 = Class348_Sub18.Companion.method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
         }
     }

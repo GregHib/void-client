@@ -4,7 +4,7 @@ import java.awt.event.FocusListener
 import java.awt.event.KeyEvent
 import java.awt.event.KeyListener
 
-class Class346_Sub1 internal constructor(component: Component?) : Class346(), KeyListener, FocusListener {
+class AwtKeyboardListener internal constructor(component: Component?) : KeyboardInputSource(), KeyListener, FocusListener {
     private val aNodeDeque_6541 = NodeDeque()
     private var aNodeDeque_6542: NodeDeque? = NodeDeque()
     private var aBooleanArray6543: BooleanArray? = BooleanArray(112)

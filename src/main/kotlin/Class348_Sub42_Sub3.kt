@@ -90,9 +90,9 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             if (!method3196(WorldMapRenderer.anInt4674, -114) && !method2672(WorldMapRenderer.anInt4674, -103)) {
                 val i_12_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) shr 3)
                 val i_13_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) shr 3)
-                if (i_12_ < 0 || Class367_Sub4.anInt7319 shr 3 <= i_12_ || i_13_ < 0 || (Class348_Sub40_Sub3.anInt9109 shr 3 <= i_13_)) Class346_Sub1.method2703(0, Class367_Sub4.anInt7319 shr 4, (Class348_Sub40_Sub3.anInt9109 shr 4), (-13).toByte())
-                else Class346_Sub1.method2703(5000, i_12_, i_13_, (-13).toByte())
-            } else Class346_Sub1.method2703(5000, GlslMaterialPass.anInt6246 shr 12, Class59_Sub2_Sub2.anInt8685 shr 12, (-13).toByte())
+                if (i_12_ < 0 || Class367_Sub4.anInt7319 shr 3 <= i_12_ || i_13_ < 0 || (Class348_Sub40_Sub3.anInt9109 shr 3 <= i_13_)) AwtKeyboardListener.method2703(0, Class367_Sub4.anInt7319 shr 4, (Class348_Sub40_Sub3.anInt9109 shr 4), (-13).toByte())
+                else AwtKeyboardListener.method2703(5000, i_12_, i_13_, (-13).toByte())
+            } else AwtKeyboardListener.method2703(5000, GlslMaterialPass.anInt6246 shr 12, Class59_Sub2_Sub2.anInt8685 shr 12, (-13).toByte())
             anInt9509++
             method3134(-1)
             method2988(true)
