@@ -56,9 +56,9 @@ class Class231 internal constructor(string: String?, @JvmField var anInt2995: In
                 i_4_ = method260(false)
             }
             val i_5_ = -10660793
-            Class318_Sub7.method2509(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, var_renderer!!, Class135_Sub1.anInt4717 - -i_3_, i_5_, true, Class237_Sub1.anInt5819, -16777216)
+            Class318_Sub7.method2509(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, var_renderer!!, GlArrayBufferObject.anInt4717 - -i_3_, i_5_, true, Class237_Sub1.anInt5819, -16777216)
             if (i > 98) {
-                Class262.aClass324_3326!!.method2576(Class274.aClass274_3507!!.method2063(Class348_Sub33.anInt6967, 544), i_5_, i_4_ + (Class348_Sub42_Sub5.anInt9532 - -14), i_3_ + (Class135_Sub1.anInt4717 + 3), -1, -125)
+                Class262.aClass324_3326!!.method2576(Class274.aClass274_3507!!.method2063(Class348_Sub33.anInt6967, 544), i_5_, i_4_ + (Class348_Sub42_Sub5.anInt9532 - -14), i_3_ + (GlArrayBufferObject.anInt4717 + 3), -1, -125)
                 val i_6_ = Class258_Sub4.aClass373_8552!!.method3597(true) - -i_3_
                 val i_7_ = i_4_ + Class258_Sub4.aClass373_8552!!.method3594(127.toByte())
                 if (Class348_Sub42_Sub6.aBoolean9535) {
@@ -67,8 +67,8 @@ class Class231 internal constructor(string: String?, @JvmField var anInt2995: In
                     while (class348_sub42_sub13 != null) {
                         val i_9_ = (31 + i_4_ + Class348_Sub42_Sub5.anInt9532 + i_8_ * 16)
                         i_8_++
-                        if ((class348_sub42_sub13.anInt9615) == 1) Class318_Sub2.method2494(i_4_ + Class348_Sub42_Sub5.anInt9532, -256, i_9_, var_renderer, ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?), Class63.anInt1117, i_7_, -1, 124.toByte(), Class237_Sub1.anInt5819, Class135_Sub1.anInt4717 - -i_3_, i_6_)
-                        else method2431(-1, i_9_, class348_sub42_sub13, i_6_, Class63.anInt1117, -256, i_7_, var_renderer, Class348_Sub42_Sub5.anInt9532 + i_4_, 126, Class135_Sub1.anInt4717 - -i_3_, Class237_Sub1.anInt5819)
+                        if ((class348_sub42_sub13.anInt9615) == 1) Class318_Sub2.method2494(i_4_ + Class348_Sub42_Sub5.anInt9532, -256, i_9_, var_renderer, ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?), Class63.anInt1117, i_7_, -1, 124.toByte(), Class237_Sub1.anInt5819, GlArrayBufferObject.anInt4717 - -i_3_, i_6_)
+                        else method2431(-1, i_9_, class348_sub42_sub13, i_6_, Class63.anInt1117, -256, i_7_, var_renderer, Class348_Sub42_Sub5.anInt9532 + i_4_, 126, GlArrayBufferObject.anInt4717 - -i_3_, Class237_Sub1.anInt5819)
                         class348_sub42_sub13 = (Class233.Companion.aLinkedNodeListIterator_3022!!.method1003(44.toByte()) as? Class348_Sub42_Sub13?)
                     }
                     if (Class242.aClass348_Sub42_Sub13_3152 != null) {
@@ -89,12 +89,12 @@ class Class231 internal constructor(string: String?, @JvmField var anInt2995: In
                     var class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
                     while (class348_sub42_sub12 != null) {
                         val i_12_ = 31 + (i_4_ + Class348_Sub42_Sub5.anInt9532 - -((-i_11_ + -1 + Class73.anInt4776) * 16))
-                        Class318_Sub2.method2494(i_4_ + Class348_Sub42_Sub5.anInt9532, -256, i_12_, var_renderer, class348_sub42_sub12, Class63.anInt1117, i_7_, -1, 124.toByte(), Class237_Sub1.anInt5819, Class135_Sub1.anInt4717 - -i_3_, i_6_)
+                        Class318_Sub2.method2494(i_4_ + Class348_Sub42_Sub5.anInt9532, -256, i_12_, var_renderer, class348_sub42_sub12, Class63.anInt1117, i_7_, -1, 124.toByte(), Class237_Sub1.anInt5819, GlArrayBufferObject.anInt4717 - -i_3_, i_6_)
                         i_11_++
                         class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(55.toByte()) as? Class348_Sub42_Sub12?
                     }
                 }
-                Class332.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, true, Class135_Sub1.anInt4717 + i_3_, Class237_Sub1.anInt5819)
+                Class332.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, true, GlArrayBufferObject.anInt4717 + i_3_, Class237_Sub1.anInt5819)
             }
         }
     }

@@ -90,7 +90,7 @@ class MinimapSpriteRenderer internal constructor(i: Int, class221: Class221?, cl
         fun method1111(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) {
             var i_11_ = i_9_
             while (i >= i_11_) {
-                Class135_Sub2.method1156(-27, i_7_, Class17.anIntArrayArray255!![i_11_]!!, i_8_, i_10_)
+                GlElementArrayBuffer.method1156(-27, i_7_, Class17.anIntArrayArray255!![i_11_]!!, i_8_, i_10_)
                 i_11_++
             }
             if (i_6_ != 0) anInt4930 = 29

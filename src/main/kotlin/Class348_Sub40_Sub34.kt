@@ -134,7 +134,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             Class348_Sub32.anInt6930 = 0
             ModelBatchBase.aClass356_1895!!.method3481(0)
             MinimapStateReset.method1122(0)
-            Class135_Sub1.anInt4718 = 0
+            GlArrayBufferObject.anInt4718 = 0
             Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1314((-107).toByte())
             Class301.method2282(-12648)
             Class50_Sub3.method465(i + -1636518175)

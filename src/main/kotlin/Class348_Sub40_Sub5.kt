@@ -40,8 +40,8 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
             val i_3_ = 1 + i_2_
             var i_4_ = 0
             while_140_@ while ( /**/Class348_Sub40_Sub6.Companion.anInt9139 > i_4_) {
-                Class135_Sub1.anInt4715 = 2147483647
-                Class147.anInt2023 = Class135_Sub1.anInt4715
+                GlArrayBufferObject.anInt4715 = 2147483647
+                Class147.anInt2023 = GlArrayBufferObject.anInt4715
                 Class215.anInt2835 = Class147.anInt2023
                 Class348_Sub42_Sub20.anInt9715 = Class215.anInt2835
                 val i_5_ = 2048 - -(Class318_Sub6.anIntArray6432!![i_4_] * anInt9129)
@@ -97,16 +97,16 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
                         if (Class348_Sub42_Sub20.anInt9715 <= i_15_) {
                             if (i_15_ >= Class215.anInt2835) {
                                 if (i_15_ < Class147.anInt2023) {
-                                    Class135_Sub1.anInt4715 = Class147.anInt2023
+                                    GlArrayBufferObject.anInt4715 = Class147.anInt2023
                                     Class147.anInt2023 = i_15_
-                                } else if (i_15_ < Class135_Sub1.anInt4715) Class135_Sub1.anInt4715 = i_15_
+                                } else if (i_15_ < GlArrayBufferObject.anInt4715) GlArrayBufferObject.anInt4715 = i_15_
                             } else {
-                                Class135_Sub1.anInt4715 = Class147.anInt2023
+                                GlArrayBufferObject.anInt4715 = Class147.anInt2023
                                 Class147.anInt2023 = Class215.anInt2835
                                 Class215.anInt2835 = i_15_
                             }
                         } else {
-                            Class135_Sub1.anInt4715 = Class147.anInt2023
+                            GlArrayBufferObject.anInt4715 = Class147.anInt2023
                             Class147.anInt2023 = Class215.anInt2835
                             Class215.anInt2835 = Class348_Sub42_Sub20.anInt9715
                             Class348_Sub42_Sub20.anInt9715 = i_15_
@@ -140,7 +140,7 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
                         i_4_++
                         continue@while_140_
                     } while (false)
-                    `is`[i_4_] = Class135_Sub1.anInt4715
+                    `is`[i_4_] = GlArrayBufferObject.anInt4715
                     i_4_++
                     continue@while_140_
                 } while (false)

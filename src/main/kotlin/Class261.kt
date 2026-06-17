@@ -144,10 +144,10 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
             if (Class73.anInt4776 > 1) {
                 if (!InputSettingsState.shiftClick || !Class182.aClass346_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
                 else Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295!!.aClass348_4295 as Class348_Sub42_Sub12?)
-                Class135_Sub2.aClass348_Sub42_Sub12_4846 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
+                GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
             } else {
                 Class316.aClass348_Sub42_Sub12_3963 = null
-                Class135_Sub2.aClass348_Sub42_Sub12_4846 = null
+                GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = null
             }
             var i_14_ = -1
             val class348_sub45 = Class318_Sub1_Sub3.aClass262_8744!!.method1995(4) as Class348_Sub45?
@@ -162,7 +162,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                         else bool = true
                     }
                     if (!bool) {
-                        if (Class135_Sub1.anInt4717 - 10 <= i_15_ && i_15_ <= (10 + Class135_Sub1.anInt4717 - -Class63.anInt1117) && i_16_ >= -10 + Class348_Sub42_Sub5.anInt9532 && i_16_ <= (10 + Class348_Sub42_Sub5.anInt9532 - -Class237_Sub1.anInt5819)) {
+                        if (GlArrayBufferObject.anInt4717 - 10 <= i_15_ && i_15_ <= (10 + GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_16_ >= -10 + Class348_Sub42_Sub5.anInt9532 && i_16_ <= (10 + Class348_Sub42_Sub5.anInt9532 - -Class237_Sub1.anInt5819)) {
                             if (Class348_Sub42_Sub6.aBoolean9535) {
                                 var i_17_ = -1
                                 var i_18_ = -1
@@ -230,7 +230,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                             }
                         }
                         method2146(78.toByte())
-                    } else if (Class135_Sub1.anInt4717 <= i_23_ && (i_23_ <= Class135_Sub1.anInt4717 - -Class63.anInt1117) && i_24_ >= Class348_Sub42_Sub5.anInt9532 && ((Class348_Sub42_Sub5.anInt9532 - -Class237_Sub1.anInt5819) >= i_24_)) {
+                    } else if (GlArrayBufferObject.anInt4717 <= i_23_ && (i_23_ <= GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_24_ >= Class348_Sub42_Sub5.anInt9532 && ((Class348_Sub42_Sub5.anInt9532 - -Class237_Sub1.anInt5819) >= i_24_)) {
                         if (Class348_Sub42_Sub6.aBoolean9535) {
                             var i_30_ = -1
                             for (i_31_ in 0..<Class8.anInt166) {

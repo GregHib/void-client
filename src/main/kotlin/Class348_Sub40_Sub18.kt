@@ -104,7 +104,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
             class348_sub49_sub2.startBitAccess(i xor 0x5398.inv())
             var i_7_ = 0
             while ((i_7_ < Class348_Sub42_Sub4.anInt9513)) {
-                val i_8_ = Class135_Sub1.anIntArray4709!![i_7_]
+                val i_8_ = GlArrayBufferObject.anIntArray4709!![i_7_]
                 if ((0x1 and Class348_Sub5.aByteArray6624!![i_8_].toInt()) != 0) {
                     if (i_0_ > 0) {
                         Class348_Sub5.aByteArray6624!![i_8_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
@@ -125,7 +125,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                 class348_sub49_sub2.startBitAccess(36)
                 var i_10_ = 0
                 while ((Class348_Sub42_Sub4.anInt9513 > i_10_)) {
-                    val i_11_ = Class135_Sub1.anIntArray4709!![i_10_]
+                    val i_11_ = GlArrayBufferObject.anIntArray4709!![i_10_]
                     if ((Class348_Sub5.aByteArray6624!![i_11_].toInt() and 0x1) == 0) {
                         if (i_0_ > 0) {
                             Class348_Sub5.aByteArray6624!![i_11_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
@@ -147,7 +147,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                 for (i_13_ in 1..2047) {
                     Class348_Sub5.aByteArray6624!![i_13_] = (Class348_Sub5.aByteArray6624!![i_13_].toInt() shr 1).toByte()
                     val player = Class294.aPlayerArray5058!![i_13_]
-                    if (player == null) Class135_Sub1.anIntArray4709!![Class348_Sub42_Sub4.anInt9513++] = i_13_
+                    if (player == null) GlArrayBufferObject.anIntArray4709!![Class348_Sub42_Sub4.anInt9513++] = i_13_
                     else Class286_Sub7.anIntArray6290!![Class328_Sub1.anInt6513++] = i_13_
                 }
             }

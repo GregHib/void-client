@@ -102,7 +102,7 @@ class Class239_Sub5 : Class239 {
                     class359.anInt4420 = (i_11_ shl 14) + ((i_10_ shl 28) + i_12_)
                     class359.anInt4423 = 0
                     class359.anInt4425 = -1
-                    Class135_Sub1.anIntArray4709!![Class348_Sub42_Sub4.anInt9513++] = i_8_
+                    GlArrayBufferObject.anIntArray4709!![Class348_Sub42_Sub4.anInt9513++] = i_8_
                     Class348_Sub5.aByteArray6624!![i_8_] = 0.toByte()
                 }
             }

@@ -38,8 +38,8 @@ import ModelBatchBase.Companion.method1127
 import FrameStatsReset.Companion.method1133
 import LocalPlayerState.method1137
 import PlayerUpdateDecoder.method1139
-import Class135.Companion.method1149
-import Class135_Sub1.Companion.method1154
+import GlVertexBufferBase.Companion.method1149
+import GlArrayBufferObject.Companion.method1154
 import Class136.Companion.method1159
 import Class14.Companion.method237
 import Class140.method1168
@@ -642,23 +642,23 @@ class Client : GameAppletFrame() {
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         Class316.aClass348_Sub51_3959 = method247(24916)
-        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) Class135_Sub2.aClass161_4839!!.aString2147 = this.getCodeBase()!!.getHost()
+        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) GlElementArrayBuffer.aClass161_4839!!.aString2147 = this.getCodeBase()!!.getHost()
         else if (method2354(Class8.aClass364_165, i xor 0x7044.inv())) {
-            Class135_Sub2.aClass161_4839!!.aString2147 = this.getCodeBase()!!.getHost()
-            Class135_Sub2.aClass161_4839!!.anInt2148 = 40000 - -Class135_Sub2.aClass161_4839!!.anInt2143
+            GlElementArrayBuffer.aClass161_4839!!.aString2147 = this.getCodeBase()!!.getHost()
+            GlElementArrayBuffer.aClass161_4839!!.anInt2148 = 40000 - -GlElementArrayBuffer.aClass161_4839!!.anInt2143
             Class255.aClass161_3285!!.anInt2148 = Class255.aClass161_3285!!.anInt2143 + 40000
-            Class135_Sub2.aClass161_4839!!.anInt2138 = 50000 - -Class135_Sub2.aClass161_4839!!.anInt2143
+            GlElementArrayBuffer.aClass161_4839!!.anInt2138 = 50000 - -GlElementArrayBuffer.aClass161_4839!!.anInt2143
             Class348_Sub40_Sub35.aClass161_9443!!.anInt2148 = (Class348_Sub40_Sub35.aClass161_9443!!.anInt2143 + 40000)
             Class255.aClass161_3285!!.anInt2138 = 50000 - -Class255.aClass161_3285!!.anInt2143
             Class348_Sub40_Sub35.aClass161_9443!!.anInt2138 = (Class348_Sub40_Sub35.aClass161_9443!!.anInt2143 + 50000)
         } else if (Class76.aClass364_1279 == Class8.aClass364_165) {
-            Class135_Sub2.aClass161_4839!!.aString2147 = "127.0.0.1"
+            GlElementArrayBuffer.aClass161_4839!!.aString2147 = "127.0.0.1"
             Class255.aClass161_3285!!.aString2147 = "127.0.0.1"
-            Class135_Sub2.aClass161_4839!!.anInt2148 = (40000 + Class135_Sub2.aClass161_4839!!.anInt2143)
+            GlElementArrayBuffer.aClass161_4839!!.anInt2148 = (40000 + GlElementArrayBuffer.aClass161_4839!!.anInt2143)
             Class348_Sub40_Sub35.aClass161_9443!!.aString2147 = "127.0.0.1"
             Class255.aClass161_3285!!.anInt2148 = 40000 - -Class255.aClass161_3285!!.anInt2143
             Class348_Sub40_Sub35.aClass161_9443!!.anInt2148 = 40000 - -Class348_Sub40_Sub35.aClass161_9443!!.anInt2143
-            Class135_Sub2.aClass161_4839!!.anInt2138 = (Class135_Sub2.aClass161_4839!!.anInt2143 + 50000)
+            GlElementArrayBuffer.aClass161_4839!!.anInt2138 = (GlElementArrayBuffer.aClass161_4839!!.anInt2143 + 50000)
             Class255.aClass161_3285!!.anInt2138 = Class255.aClass161_3285!!.anInt2143 + 50000
             Class348_Sub40_Sub35.aClass161_9443!!.anInt2138 = 50000 - -Class348_Sub40_Sub35.aClass161_9443!!.anInt2143
         }
@@ -680,7 +680,7 @@ class Client : GameAppletFrame() {
             Class136.aShortArrayArray4791 = Class348_Sub40_Sub32.aShortArrayArray9424
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub12.aShortArrayArrayArray6736
         }
-        Class3.aClass161_125 = Class135_Sub2.aClass161_4839
+        Class3.aClass161_125 = GlElementArrayBuffer.aClass161_4839
         try {
             Class348_Sub40_Sub27.aClipboard9357 = Class79.aClient1367!!.getToolkit().getSystemClipboard()
         } catch (exception: Exception) {
@@ -1151,7 +1151,7 @@ class Client : GameAppletFrame() {
         Class171.method1322((-28).toByte())
         method2728(9.toByte())
         method2265(-10794)
-        Class135_Sub2.method1155((-125).toByte())
+        GlElementArrayBuffer.method1155((-125).toByte())
         method1149(99)
         method1154(11.toByte())
         method2151(-86)
@@ -1308,8 +1308,8 @@ class Client : GameAppletFrame() {
     public override fun init() {
         anInt5180++
         if (this.method89(48)) {
-            Class135_Sub2.aClass161_4839 = Class161()
-            Class135_Sub2.aClass161_4839!!.anInt2143 = this.getParameter("worldid")!!.toInt()
+            GlElementArrayBuffer.aClass161_4839 = Class161()
+            GlElementArrayBuffer.aClass161_4839!!.anInt2143 = this.getParameter("worldid")!!.toInt()
             Class255.aClass161_3285 = Class161()
             Class255.aClass161_3285!!.anInt2143 = this.getParameter("lobbyid")!!.toInt()
             Class255.aClass161_3285!!.aString2147 = this.getParameter("lobbyaddress")
@@ -1361,7 +1361,7 @@ class Client : GameAppletFrame() {
                 }
             }
             Class222.anInt2884 = this.getParameter("colourid")!!.toInt()
-            if (Class222.anInt2884 < 0 || Class135.aColorArray1928!!.size <= Class222.anInt2884) Class222.anInt2884 = 0
+            if (Class222.anInt2884 < 0 || GlVertexBufferBase.aColorArray1928!!.size <= Class222.anInt2884) Class222.anInt2884 = 0
             if (this.getParameter("sitesettings_member")!!.toInt() == 1) {
                 Class155.aBoolean2110 = true
                 Class206.aBoolean4888 = Class155.aBoolean2110
@@ -1971,8 +1971,8 @@ class Client : GameAppletFrame() {
             try {
                 try {
                     if (strings.size != 6) method518("Argument count", 44.toByte())
-                    Class135_Sub2.aClass161_4839 = Class161()
-                    Class135_Sub2.aClass161_4839!!.anInt2143 = strings[0].toInt()
+                    GlElementArrayBuffer.aClass161_4839 = Class161()
+                    GlElementArrayBuffer.aClass161_4839!!.anInt2143 = strings[0].toInt()
                     Class255.aClass161_3285 = Class161()
                     Class255.aClass161_3285!!.anInt2143 = strings[1].toInt()
                     Class348_Sub40_Sub35.aClass161_9443 = Class161()

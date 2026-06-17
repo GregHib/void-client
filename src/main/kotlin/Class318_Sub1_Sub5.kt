@@ -102,10 +102,10 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
         @JvmStatic
         fun method2485(i: Int): Boolean {
             anInt8776++
-            if (Class135_Sub2.aClass348_Sub42_Sub12_4846 == null) return false
-            if ((Class135_Sub2.aClass348_Sub42_Sub12_4846!!.anInt9608) >= 2000) Class135_Sub2.aClass348_Sub42_Sub12_4846!!.anInt9608 -= 2000
+            if (GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 == null) return false
+            if ((GlElementArrayBuffer.aClass348_Sub42_Sub12_4846!!.anInt9608) >= 2000) GlElementArrayBuffer.aClass348_Sub42_Sub12_4846!!.anInt9608 -= 2000
             val i_1_ = -53 % ((-41 - i) / 54)
-            return (Class135_Sub2.aClass348_Sub42_Sub12_4846!!.anInt9608) == 1011
+            return (GlElementArrayBuffer.aClass348_Sub42_Sub12_4846!!.anInt9608) == 1011
         }
 
         @JvmStatic

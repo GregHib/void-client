@@ -165,7 +165,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class135_Sub1.aIntRange_4707 == Class348_Sub3.aIntRange_6584) {
+            if (GlArrayBufferObject.aIntRange_4707 == Class348_Sub3.aIntRange_6584) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-123).toByte())
                 val i_9_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())

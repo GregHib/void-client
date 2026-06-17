@@ -402,7 +402,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         try {
             if (i != 2) method3781((-13).toByte(), 54)
             anInt7530++
-            if (aBoolean7873 && (!bool || aBoolean7869)) return Class135_Sub1(this, i_8_, `is`, i_9_, bool)
+            if (aBoolean7873 && (!bool || aBoolean7869)) return GlArrayBufferObject(this, i_8_, `is`, i_9_, bool)
             return NativeIndexBuffer(this, i_8_, `is`, i_9_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.VB(" + i + ',' + bool + ',' + i_8_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_9_ + ')'))
@@ -432,7 +432,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         try {
             anInt7565++
             if (i_14_ >= -2) method3644()
-            if (aBoolean7873 && (!bool || aBoolean7869)) return Class135_Sub2(this, i, `is`, i_15_, bool)
+            if (aBoolean7873 && (!bool || aBoolean7869)) return GlElementArrayBuffer(this, i, `is`, i_15_, bool)
             return NativeVertexBuffer(this, i, `is`, i_15_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.G(" + i + ',' + i_14_ + ',' + i_15_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ')'))
@@ -526,7 +526,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         try {
             if (i != 8448) this.aClass64_Sub3_7844 = null
             anInt7605++
-            if (aBoolean7873 && (!bool || aBoolean7869)) return Class135_Sub1(this, i_35_, buffer, i_36_, bool)
+            if (aBoolean7873 && (!bool || aBoolean7869)) return GlArrayBufferObject(this, i_35_, buffer, i_36_, bool)
             return NativeIndexBuffer(this, i_35_, buffer)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.OG(" + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + bool + ',' + i_35_ + ',' + i_36_ + ')'))
@@ -3857,7 +3857,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var class143_389_ = Class258_Sub1.aClass143_8527
                                         if (i_388_ >= 0) {
                                             val class324_390_ = Class14.method232((Class348_Sub8.aRenderer6654), (-53).toByte(), true, i_388_)
-                                            val class143_391_ = (Class135.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
+                                            val class143_391_ = (GlVertexBufferBase.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
                                             if (class324_390_ != null && class143_391_ != null) {
                                                 class324 = class324_390_
                                                 class143 = class143_391_
@@ -3867,7 +3867,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             i_388_ = (class31_349_.anInt435)
                                             if (i_388_ >= 0) {
                                                 val class324_392_ = (Class14.method232(Class348_Sub8.aRenderer6654, (-53).toByte(), true, i_388_))
-                                                val class143_393_ = (Class135.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
+                                                val class143_393_ = (GlVertexBufferBase.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
                                                 if (class324_392_ != null && class143_393_ != null) {
                                                     class143_389_ = class143_393_
                                                     class324_387_ = class324_392_

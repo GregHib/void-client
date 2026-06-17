@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glBufferSubDataARBub
 import jaggl.OpenGL.Companion.glGenBuffersARB
 import java.awt.Color
 
-abstract class Class135 {
+abstract class GlVertexBufferBase {
     private var anInt1921 = 0
     private val aBoolean1923: Boolean
     @JvmField

@@ -56,8 +56,8 @@ class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_
                     bool_5_ = false
                 } else bool_5_ = true
                 if (i_3_ < LocalPlayerState.anInt1910) i_3_ = LocalPlayerState.anInt1910
-                else Class135_Sub2.method1156(-27, i_0_, Class17.anIntArrayArray255!![i_3_++]!!, i_4_, i_1_)
-                if (Class38.anInt513 >= i_2_) Class135_Sub2.method1156(-27, i_0_, Class17.anIntArrayArray255!![i_2_--]!!, i_4_, i_1_)
+                else GlElementArrayBuffer.method1156(-27, i_0_, Class17.anIntArrayArray255!![i_3_++]!!, i_4_, i_1_)
+                if (Class38.anInt513 >= i_2_) GlElementArrayBuffer.method1156(-27, i_0_, Class17.anIntArrayArray255!![i_2_--]!!, i_4_, i_1_)
                 else i_2_ = Class38.anInt513
                 if (!bool || !bool_5_) {
                     if (bool) {

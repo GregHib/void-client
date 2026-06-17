@@ -130,7 +130,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LinkedNodeListIterator.anInt1648 = 0
             Class84.anInt1455 = 0
             Class348_Sub16_Sub3.anInt8940 = 0
-            Class135_Sub2.anInt4833 = 0
+            GlElementArrayBuffer.anInt4833 = 0
             Class46.anInt825 = 0
             Class59_Sub2.anInt5304 = 0
             Class243.anInt3162 = 0
@@ -219,7 +219,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class230.anInt2982 = 0
             Class61.anInt1105 = 0
             Class318_Sub1_Sub4_Sub1.anInt10091 = 0
-            Class135.anInt1922 = 0
+            GlVertexBufferBase.anInt1922 = 0
             Class348_Sub40_Sub1.anInt9093 = 0
             OpenGlRenderer.anInt7633 = 0
             ProjectionCameraTransform.anInt5773 = 0
@@ -634,7 +634,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class50_Sub2.anInt5228 = 0
             Class97.anInt1554 = 0
             GameAppletFrame.anInt13 = 0
-            Class135_Sub2.anInt4841 = 0
+            GlElementArrayBuffer.anInt4841 = 0
             Class348_Sub42_Sub2.anInt8566 = 0
             Class185.anInt2485 = 0
             OpenGlRenderer.anInt7531 = 0
@@ -705,7 +705,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class285.anInt4745 = 0
             Class348_Sub1_Sub3.anInt8819 = 0
             Class348_Sub40_Sub15.anInt9219 = 0
-            Class135_Sub2.anInt4844 = 0
+            GlElementArrayBuffer.anInt4844 = 0
             Class263.anInt3349 = 0
             Class239_Sub17.anInt6027 = 0
             Class208.anInt2709 = 0
@@ -1532,7 +1532,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class286_Sub7.anInt6283 = 0
             FloatCameraTransform.anInt5696 = 0
             Class318_Sub1_Sub4_Sub1.anInt10075 = 0
-            Class135_Sub2.anInt4840 = 0
+            GlElementArrayBuffer.anInt4840 = 0
             Class234.anInt3043 = 0
             Class279.anInt3594 = 0
             Class348_Sub40_Sub33.anInt9426 = 0
@@ -1603,7 +1603,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub16.anInt9222 = 0
             Class333.anInt4145 = 0
             Class90.anInt1515 = 0
-            Class135_Sub2.anInt4836 = 0
+            GlElementArrayBuffer.anInt4836 = 0
             Class140.anInt1957 = 0
             Class64_Sub3.anInt5551 = 0
             Class239_Sub8.anInt5919 = 0
@@ -1724,7 +1724,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class18.anInt277 = 0
             Class64_Sub2.anInt5501 = 0
             Class377.anInt9847 = 0
-            Class135.anInt1926 = 0
+            GlVertexBufferBase.anInt1926 = 0
             OpenGlRenderer.anInt7705 = 0
             Class318_Sub1_Sub3_Sub1.anInt10035 = 0
             NativeRenderer.anInt7977 = 0
@@ -2015,7 +2015,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class225.anInt2952 = 0
             Class239_Sub9.anInt5928 = 0
             OpenGlRenderer.anInt7717 = 0
-            Class135_Sub2.anInt4838 = 0
+            GlElementArrayBuffer.anInt4838 = 0
             Class348_Sub42_Sub8.anInt9547 = 0
             OpenGlRenderer.anInt7582 = 0
             NativeRenderer.anInt7988 = 0
@@ -2265,7 +2265,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7644 = 0
             ProjectionCameraTransform.anInt5774 = 0
             Class348_Sub42_Sub13.anInt9620 = 0
-            Class135_Sub1.anInt4706 = 0
+            GlArrayBufferObject.anInt4706 = 0
             Class84.anInt1453 = 0
             Class348_Sub42_Sub6.anInt9539 = 0
             Class377.anInt9828 = 0
@@ -3184,7 +3184,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub4.anInt5877 = 0
             NativeRenderer.anInt7971 = 0
             NativeIndexBuffer.anInt4698 = 0
-            Class135_Sub2.anInt4842 = 0
+            GlElementArrayBuffer.anInt4842 = 0
             GameAppletFrame.anInt32 = 0
             ScriptCompilerThread.anInt1726 = 0
             Class196.anInt2600 = 0
@@ -3397,7 +3397,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             AbstractMenuEntry.anInt1710 = 0
             GameAppletFrame.anInt35 = 0
             Class348_Sub32.anInt6933 = 0
-            Class135.anInt1925 = 0
+            GlVertexBufferBase.anInt1925 = 0
             Class286_Sub4.anInt6238 = 0
             Class50_Sub4.anInt5263 = 0
             NativeRenderer.anInt7918 = 0
@@ -3421,7 +3421,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub17.anInt9233 = 0
             Class318_Sub1_Sub2.anInt8730 = 0
             Class175.anInt2314 = 0
-            Class135_Sub1.anInt4714 = 0
+            GlArrayBufferObject.anInt4714 = 0
             Class369.anInt4967 = 0
             Class179.anInt2359 = 0
             Class351.anInt4322 = 0
@@ -3477,7 +3477,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub11.anInt7405 = 0
             Class192.anInt2575 = 0
             Class45.anInt648 = 0
-            Class135.anInt1924 = 0
+            GlVertexBufferBase.anInt1924 = 0
             Class64_Sub3.anInt5538 = 0
             OpenGlRenderer.anInt7574 = 0
             Class64_Sub2.anInt5458 = 0
@@ -3561,7 +3561,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub4_Sub2.anInt10097 = 0
             Class239_Sub8.anInt5913 = 0
             Class348_Sub49_Sub1.anInt9745 = 0
-            Class135_Sub1.anInt4710 = 0
+            GlArrayBufferObject.anInt4710 = 0
             Class225.anInt2902 = 0
             Class55.anInt985 = 0
             Class59_Sub1_Sub1.anInt8656 = 0
@@ -3627,7 +3627,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub9.anInt7368 = 0
             Class328_Sub2.anInt6518 = 0
             Class46.anInt736 = 0
-            Class135_Sub1.anInt4712 = 0
+            GlArrayBufferObject.anInt4712 = 0
             Class64_Sub2.anInt5521 = 0
             Class348_Sub42_Sub10.anInt9563 = 0
             Class348_Sub42_Sub8.anInt9551 = 0
@@ -3667,7 +3667,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3.anInt8752 = 0
             NativeRenderNode.anInt10475 = 0
             Class348_Sub42_Sub20.anInt9709 = 0
-            Class135_Sub2.anInt4834 = 0
+            GlElementArrayBuffer.anInt4834 = 0
             Class239_Sub9.anInt5925 = 0
             Class14_Sub1.anInt8614 = 0
             FloatCameraTransform.anInt5705 = 0
@@ -3900,7 +3900,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GameAppletFrame.anInt14 = 0
             Class239_Sub4.anInt5880 = 0
             NativeTerrainTile.anInt8309 = 0
-            Class135_Sub1.anInt4713 = 0
+            GlArrayBufferObject.anInt4713 = 0
             OpenGlRenderer.anInt7630 = 0
             Class340.anInt4224 = 0
             Class239_Sub28.anInt6136 = 0
@@ -4053,7 +4053,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367.anInt4483 = 0
             Class348_Sub16_Sub2.anInt8876 = 0
             Class348_Sub42.anInt7061 = 0
-            Class135_Sub1.anInt4711 = 0
+            GlArrayBufferObject.anInt4711 = 0
             Class318_Sub1_Sub1.anInt8723 = 0
             Class141.anInt1964 = 0
             Class314_Sub1.anInt6343 = 0
@@ -4183,7 +4183,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub4.aString5882 = Class274.aClass274_3509!!.method2063(Class348_Sub33.anInt6967, 544)
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264, Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(i + -32350))
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350))
-            Class135_Sub1.anInt4718 = 0
+            GlArrayBufferObject.anInt4718 = 0
             method3153(0)
             method2145(-24498)
             FloatCameraTransform.aLong5745 = 0L

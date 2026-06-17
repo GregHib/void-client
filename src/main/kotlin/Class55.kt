@@ -344,7 +344,7 @@ abstract class Class55(i: Int) {
             var i_19_ = (3 + (i_7_ shl 1)) * i_11_
             var i_20_ = i_12_ * ((i_8_ shl 1) - 3)
             var i_21_ = i_18_ * (i_7_ + 1)
-            Class135_Sub2.method1156(-27, i_2_ + i_5_, Class17.anIntArrayArray255!![i_3_]!!, -i_5_ + i_2_, i)
+            GlElementArrayBuffer.method1156(-27, i_2_ + i_5_, Class17.anIntArrayArray255!![i_3_]!!, -i_5_ + i_2_, i)
             var i_22_ = i_17_ * (-1 + i_8_)
             while (i_8_ > 0) {
                 if (i_15_ < 0) {
@@ -371,8 +371,8 @@ abstract class Class55(i: Int) {
                 val i_24_ = i_3_ - -i_8_
                 val i_25_ = i_2_ - -i_7_
                 val i_26_ = i_2_ + -i_7_
-                Class135_Sub2.method1156(-27, i_25_, Class17.anIntArrayArray255!![i_23_]!!, i_26_, i)
-                Class135_Sub2.method1156(-27, i_25_, Class17.anIntArrayArray255!![i_24_]!!, i_26_, i)
+                GlElementArrayBuffer.method1156(-27, i_25_, Class17.anIntArrayArray255!![i_23_]!!, i_26_, i)
+                GlElementArrayBuffer.method1156(-27, i_25_, Class17.anIntArrayArray255!![i_24_]!!, i_26_, i)
             }
         }
 

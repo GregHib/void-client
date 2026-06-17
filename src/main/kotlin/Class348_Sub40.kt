@@ -197,9 +197,9 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
                 val i_44_ = Class85.method831(CameraNodeList.anInt1745, i + i_5_, Class369.anInt4960, -68)
                 val i_45_ = Class85.method831(CameraNodeList.anInt1745, i_5_ + -i_15_, Class369.anInt4960, i_7_ + -115)
                 val i_46_ = Class85.method831(CameraNodeList.anInt1745, i_5_ + i_15_, Class369.anInt4960, 97)
-                Class135_Sub2.method1156(-27, i_45_, `is`, i_43_, i_10_)
-                Class135_Sub2.method1156(-27, i_46_, `is`, i_45_, i_9_)
-                Class135_Sub2.method1156(-27, i_44_, `is`, i_46_, i_10_)
+                GlElementArrayBuffer.method1156(-27, i_45_, `is`, i_43_, i_10_)
+                GlElementArrayBuffer.method1156(-27, i_46_, `is`, i_45_, i_9_)
+                GlElementArrayBuffer.method1156(-27, i_44_, `is`, i_46_, i_10_)
             }
             while (i_13_ > 0) {
                 val bool = i_16_ >= i_13_
@@ -256,19 +256,19 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
                         val i_52_ = Class85.method831(CameraNodeList.anInt1745, -i_14_ + i_5_, Class369.anInt4960, 32)
                         if (LocalPlayerState.anInt1910 <= i_47_) {
                             val `is` = Class17.anIntArrayArray255!![i_47_]!!
-                            Class135_Sub2.method1156(-27, i_52_, `is`, i_50_, i_10_)
-                            Class135_Sub2.method1156(-27, i_51_, `is`, i_52_, i_9_)
-                            Class135_Sub2.method1156(i_7_ + -26, i_49_, `is`, i_51_, i_10_)
+                            GlElementArrayBuffer.method1156(-27, i_52_, `is`, i_50_, i_10_)
+                            GlElementArrayBuffer.method1156(-27, i_51_, `is`, i_52_, i_9_)
+                            GlElementArrayBuffer.method1156(i_7_ + -26, i_49_, `is`, i_51_, i_10_)
                         }
                         if (Class38.anInt513 >= i_48_) {
                             val `is` = Class17.anIntArrayArray255!![i_48_]!!
-                            Class135_Sub2.method1156(i_7_ xor 0x1a, i_52_, `is`, i_50_, i_10_)
-                            Class135_Sub2.method1156(-27, i_51_, `is`, i_52_, i_9_)
-                            Class135_Sub2.method1156(-27, i_49_, `is`, i_51_, i_10_)
+                            GlElementArrayBuffer.method1156(i_7_ xor 0x1a, i_52_, `is`, i_50_, i_10_)
+                            GlElementArrayBuffer.method1156(-27, i_51_, `is`, i_52_, i_9_)
+                            GlElementArrayBuffer.method1156(-27, i_49_, `is`, i_51_, i_10_)
                         }
                     } else {
-                        if (i_47_ >= LocalPlayerState.anInt1910) Class135_Sub2.method1156(-27, i_49_, (Class17.anIntArrayArray255!![i_47_]!!), i_50_, i_10_)
-                        if (i_48_ <= Class38.anInt513) Class135_Sub2.method1156(-27, i_49_, (Class17.anIntArrayArray255!![i_48_]!!), i_50_, i_10_)
+                        if (i_47_ >= LocalPlayerState.anInt1910) GlElementArrayBuffer.method1156(-27, i_49_, (Class17.anIntArrayArray255!![i_47_]!!), i_50_, i_10_)
+                        if (i_48_ <= Class38.anInt513) GlElementArrayBuffer.method1156(-27, i_49_, (Class17.anIntArrayArray255!![i_48_]!!), i_50_, i_10_)
                     }
                 }
             }

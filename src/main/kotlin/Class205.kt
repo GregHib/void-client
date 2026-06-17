@@ -1,5 +1,5 @@
 import CacheArchiveIndex.Companion.method1070
-import Class135_Sub2.Companion.method1156
+import GlElementArrayBuffer.Companion.method1156
 import Class85.Companion.method831
 
 /* Class205 - Decompiled by JODE
@@ -64,8 +64,8 @@ object Class205 {
                     if (i_8_ >= i_7_) {
                         val i_20_ = method831(CameraNodeList.anInt1745, i_6_ + i_5_, Class369.anInt4960, i_3_ xor 0x36)
                         val i_21_ = method831(CameraNodeList.anInt1745, i_5_ - i_6_, Class369.anInt4960, 112)
-                        if (i_19_ <= Class38.anInt513) Class135_Sub2.method1156(-27, i_20_, (Class17.anIntArrayArray255!![i_19_]!!), i_21_, i)
-                        if (LocalPlayerState.anInt1910 <= i_18_) Class135_Sub2.method1156(-27, i_20_, (Class17.anIntArrayArray255!![i_18_]!!), i_21_, i)
+                        if (i_19_ <= Class38.anInt513) GlElementArrayBuffer.method1156(-27, i_20_, (Class17.anIntArrayArray255!![i_19_]!!), i_21_, i)
+                        if (LocalPlayerState.anInt1910 <= i_18_) GlElementArrayBuffer.method1156(-27, i_20_, (Class17.anIntArrayArray255!![i_18_]!!), i_21_, i)
                     } else {
                         val i_22_ = Class348_Sub49_Sub2.anIntArray9757!![i_8_]
                         val i_23_ = method831(CameraNodeList.anInt1745, i_6_ + i_5_, Class369.anInt4960, -123)
@@ -96,8 +96,8 @@ object Class205 {
                     i_29_ = method831(CameraNodeList.anInt1745, i_29_, Class369.anInt4960, 102)
                     i_30_ = method831(CameraNodeList.anInt1745, i_30_, Class369.anInt4960, -100)
                     if (i_6_ >= i_7_) {
-                        if (Class38.anInt513 >= i_28_) Class135_Sub2.method1156(-27, i_29_, (Class17.anIntArrayArray255!![i_28_]!!), i_30_, i)
-                        if (i_27_ >= LocalPlayerState.anInt1910) Class135_Sub2.method1156(-27, i_29_, (Class17.anIntArrayArray255!![i_27_]!!), i_30_, i)
+                        if (Class38.anInt513 >= i_28_) GlElementArrayBuffer.method1156(-27, i_29_, (Class17.anIntArrayArray255!![i_28_]!!), i_30_, i)
+                        if (i_27_ >= LocalPlayerState.anInt1910) GlElementArrayBuffer.method1156(-27, i_29_, (Class17.anIntArrayArray255!![i_27_]!!), i_30_, i)
                     } else {
                         val i_31_ = (if (i_6_ > i_10_) Class348_Sub49_Sub2.anIntArray9757!![i_6_] else i_10_)
                         val i_32_ = method831(CameraNodeList.anInt1745, i_31_ + i_5_, Class369.anInt4960, 71)

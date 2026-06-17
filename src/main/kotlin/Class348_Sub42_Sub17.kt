@@ -31,8 +31,8 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
             val class348_sub49 = Class348_Sub49(`is`)
             class348_sub49.anInt7197 = 1
             val i_3_ = class348_sub49.readUnsignedShort(842397944)
-            synchronized(Class135_Sub2.aClass45_4843!!) {
-                bool = bool and Class135_Sub2.aClass45_4843!!.method421(false, i_3_)
+            synchronized(GlElementArrayBuffer.aClass45_4843!!) {
+                bool = bool and GlElementArrayBuffer.aClass45_4843!!.method421(false, i_3_)
             }
         }
         if (!bool) return false
@@ -59,8 +59,8 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
                 class348_sub33_8_ = class262.method1990(78.toByte()) as Class348_Sub33?
             }
             if (class348_sub33 == null) {
-                synchronized(Class135_Sub2.aClass45_4843!!) {
-                    class348_sub33 = Class348_Sub33(i_7_, Class135_Sub2.aClass45_4843!!.method415(73.toByte(), i_7_))
+                synchronized(GlElementArrayBuffer.aClass45_4843!!) {
+                    class348_sub33 = Class348_Sub33(i_7_, GlElementArrayBuffer.aClass45_4843!!.method415(73.toByte(), i_7_))
                 }
                 class262.method1999(class348_sub33!!, -20180)
             }

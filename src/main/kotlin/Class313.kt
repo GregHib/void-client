@@ -22,7 +22,7 @@ object Class313 {
         if (i != 0) method2333(true)
         anInt3933++
         val class348_sub47 = method2148(RasterSprite.aClass351_5200, Class348_Sub23_Sub2.aClass77_9029, i xor 0x53.inv())
-        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class135_Sub1.anInt4718)
+        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), GlArrayBufferObject.anInt4718)
         Class348_Sub42_Sub14.method3243(118, class348_sub47)
     }
 }

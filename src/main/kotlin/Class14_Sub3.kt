@@ -113,7 +113,7 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
                 Class348_Sub45.aIntRange_7106,
                 Class367_Sub9.aIntRange_7367,
                 ParserSpecialCharsHolder.aIntRange_1901,
-                Class135_Sub1.aIntRange_4707,
+                GlArrayBufferObject.aIntRange_4707,
                 MinimapRectClipper.aIntRange_220,
                 Class239_Sub24.aIntRange_6089,
                 IOException_Sub1.aIntRange_90,

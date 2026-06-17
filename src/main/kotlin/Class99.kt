@@ -56,8 +56,8 @@ object Class99 {
             if (bool == true) {
                 Class177.anInt4669 = 16 * (class348_sub42_sub13.anInt9615) + (if (!Class71.aBoolean1211) 22 else 26)
                 val i_14_ = 21 + (class348_sub42_sub13.anInt9615) * 16
-                var i_15_ = Class63.anInt1117 + Class135_Sub1.anInt4717
-                if (i_12_ + i_15_ > Class321.anInt4017) i_15_ = -i_12_ + Class135_Sub1.anInt4717
+                var i_15_ = Class63.anInt1117 + GlArrayBufferObject.anInt4717
+                if (i_12_ + i_15_ > Class321.anInt4017) i_15_ = -i_12_ + GlArrayBufferObject.anInt4717
                 if (i_15_ < 0) i_15_ = 0
                 val i_16_ = if (!Class71.aBoolean1211) 31 else 33
                 var i_17_ = 13 + i_11_ + -i_16_

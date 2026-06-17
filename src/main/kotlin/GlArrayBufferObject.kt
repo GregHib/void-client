@@ -4,7 +4,7 @@ import Class318_Sub1_Sub3_Sub3.Companion.method2431
 import Class84.Companion.method826
 import jaclib.memory.Buffer
 
-class Class135_Sub1 : Class135, Interface2 {
+class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
     private var anInt4708 = 0
     override fun method13(i: Byte): Int {
         anInt4706++

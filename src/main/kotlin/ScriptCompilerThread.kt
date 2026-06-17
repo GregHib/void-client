@@ -156,7 +156,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
                 val i_2_ = Class258_Sub4.aClass373_8552!!.method3597(true)
                 val i_3_ = Class258_Sub4.aClass373_8552!!.method3594(81.toByte())
                 if (Class348_Sub42_Sub6.aBoolean9535) {
-                    if (i_2_ > Class135_Sub1.anInt4717 && i_2_ < Class63.anInt1117 + Class135_Sub1.anInt4717) {
+                    if (i_2_ > GlArrayBufferObject.anInt4717 && i_2_ < Class63.anInt1117 + GlArrayBufferObject.anInt4717) {
                         var i_9_ = -1
                         var i_10_ = 0
                         while (Class8.anInt166 > i_10_) {
@@ -201,7 +201,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
                             }
                         }
                     }
-                } else if (i_2_ > Class135_Sub1.anInt4717 && (i_2_ < Class135_Sub1.anInt4717 - -Class63.anInt1117)) {
+                } else if (i_2_ > GlArrayBufferObject.anInt4717 && (i_2_ < GlArrayBufferObject.anInt4717 - -Class63.anInt1117)) {
                     var i_14_ = -1
                     var i_15_ = 0
                     while (Class73.anInt4776 > i_15_) {

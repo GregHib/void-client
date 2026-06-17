@@ -123,7 +123,7 @@ class Class304 internal constructor(var anInt3850: Int) {
             if (i > -108) method2290()
             if (i_11_ + i_7_ > Class348_Sub42_Sub8_Sub2.anInt10432) i_11_ = Class348_Sub42_Sub8_Sub2.anInt10432 + -i_7_
             if (i_11_ < 0) i_11_ = 0
-            Class135_Sub1.anInt4717 = i_10_
+            GlArrayBufferObject.anInt4717 = i_10_
             Class5_Sub1.aBoolean8335 = true
             Class348_Sub42_Sub5.anInt9532 = i_11_
             Class63.anInt1117 = i_6_

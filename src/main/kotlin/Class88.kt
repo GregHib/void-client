@@ -227,7 +227,7 @@ class Class88 {
                             val class348_sub49_9_ = Class348_Sub49(Class348_Sub40_Sub20.aClass348_Sub4_9264!!.method2746((-76).toByte()))
                             Class348_Sub40_Sub20.aClass348_Sub4_9264!!.method2747(1, class348_sub49_9_)
                             class348_sub49_sub2.writeBytes((class348_sub49_9_.aByteArray7154!!).size, 0, (class348_sub49_9_.aByteArray7154!!), -73)
-                            class348_sub49_sub2.writeShort(107.toByte(), Class135_Sub1.anInt4718)
+                            class348_sub49_sub2.writeShort(107.toByte(), GlArrayBufferObject.anInt4718)
                             class348_sub49_sub2.writeLong(TextureMetadataProvider.aLong4615, (-63).toByte())
                             class348_sub49_sub2.writeByte(false, if (Class14_Sub1.aString8605 == null) 0 else 1)
                             if (Class14_Sub1.aString8605 != null) class348_sub49_sub2.writeString((-5).toByte(), (Class14_Sub1.aString8605!!))
@@ -362,7 +362,7 @@ class Class88 {
                                 Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 InputSettingsState.anInt1758 = class348_sub49_sub2.readShort(13638)
                                 Class206.aBoolean4888 = InputSettingsState.anInt1758 > 0
-                                Class135_Sub1.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944)
+                                GlArrayBufferObject.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class322.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class206.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class170.anInt5065 = class348_sub49_sub2.readInt((-126).toByte())
@@ -384,7 +384,7 @@ class Class88 {
                                     IndexedSprite.aClass161_5199!!.anInt2138 = (50000 + (IndexedSprite.aClass161_5199!!.anInt2143))
                                     IndexedSprite.aClass161_5199!!.anInt2148 = (40000 + (IndexedSprite.aClass161_5199!!.anInt2143))
                                 }
-                                if (Class8.aClass364_165 != Class76.Companion.aClass364_1279 && ((Class3.aClass161_125!!.method1264(94.toByte(), Class135_Sub2.aClass161_4839)) || (Class3.aClass161_125!!.method1264(112.toByte(), (Class348_Sub40_Sub35.aClass161_9443))))) Class348_Sub42_Sub20.method3283(114)
+                                if (Class8.aClass364_165 != Class76.Companion.aClass364_1279 && ((Class3.aClass161_125!!.method1264(94.toByte(), GlElementArrayBuffer.aClass161_4839)) || (Class3.aClass161_125!!.method1264(112.toByte(), (Class348_Sub40_Sub35.aClass161_9443))))) Class348_Sub42_Sub20.method3283(114)
                             }
                             if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !Class206.aBoolean4888) {
                                 try {

@@ -2,7 +2,7 @@ import GameAppletFrame.Companion.method94
 import ParticleEmitterNode.Companion.method217
 import SceneRegionState.method222
 import ModelBatchBase.Companion.method1129
-import Class135.Companion.method1148
+import GlVertexBufferBase.Companion.method1148
 import Class14_Sub2.Companion.method243
 import Class14_Sub2.Companion.method244
 import Class16.method259
@@ -2263,7 +2263,7 @@ object Class66 {
                     return
                 }
                 if (i == 6902) {
-                    anIntArray1149!![anInt1173++] = Class135_Sub1.anInt4716
+                    anIntArray1149!![anInt1173++] = GlArrayBufferObject.anInt4716
                     return
                 }
                 if (i == 6903) {

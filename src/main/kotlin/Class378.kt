@@ -864,7 +864,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
         private fun method3963(i: Int, class251: Class251?): Int {
             if (i != 594) return 7
-            if (class251 == Class135_Sub2.aClass251_4835) return 1
+            if (class251 == GlElementArrayBuffer.aClass251_4835) return 1
             if (class251 != Class239_Sub18.aClass251_6030) {
                 if (class251 != Class348_Sub40_Sub38.aClass251_9477) {
                     if (Class57.aClass251_1051 == class251) return 4

@@ -550,7 +550,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 if (aClass290_5482 == null || aClass290_5482!!.method2197((-36).toByte())) aShortArray5416 = null
                 else aBoolean5402 = true
             }
-            if (anIntArrayArray5492 != null && !Class135_Sub2.method1158(anInt5472, -1, anInt5463)) {
+            if (anIntArrayArray5492 != null && !GlElementArrayBuffer.method1158(anInt5472, -1, anInt5463)) {
                 aShortArray5432 = null
                 anIntArrayArray5492 = null
             }
@@ -2336,7 +2336,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 aFloatArray5506 = method3258(0, anInt5475, aFloatArray5506)
                 if (modelDefinition.anIntArray1868 != null && Class160.method1257(-58, anInt5472, i)) anIntArrayArray5413 = modelDefinition.method1100(false, -20)
                 if (modelDefinition.aClass162Array1832 != null && Class77.method780(anInt5472, 0, i)) anIntArrayArray5412 = modelDefinition.method1093((-120).toByte())
-                if (modelDefinition.anIntArray1824 == null || !Class135_Sub2.method1158(anInt5472, -1, i)) break
+                if (modelDefinition.anIntArray1824 == null || !GlElementArrayBuffer.method1158(anInt5472, -1, i)) break
                 var i_459_ = 0
                 val is_460_ = IntArray(256)
                 for (i_461_ in 0..<anInt5478) {

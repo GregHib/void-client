@@ -66,7 +66,7 @@ abstract class Class239 {
         @JvmStatic
         fun method1711(i: Int, class45: Class45?, i_0_: Int, class45_1_: Class45?) {
             try {
-                Class135_Sub2.aClass45_4843 = class45_1_
+                GlElementArrayBuffer.aClass45_4843 = class45_1_
                 anInt3140++
                 if (i != 7) aClass45_3146 = null
                 Class138.aClass45_1940 = class45

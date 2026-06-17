@@ -1,4 +1,4 @@
-import Class135_Sub1.Companion.method1153
+import GlArrayBufferObject.Companion.method1153
 import Class158.Companion.method1248
 import Class231.Companion.method1642
 import Class286_Sub3.Companion.method2148

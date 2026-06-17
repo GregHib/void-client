@@ -54,8 +54,8 @@ class Class339 : Runnable {
         if (aBoolean4205) return true
         if (aClass144_4201 == null) {
             try {
-                val i_15_ = (if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) 80 else 7000 - -(Class135_Sub2.aClass161_4839!!.anInt2143))
-                aClass144_4201 = (Class348_Sub23_Sub1.aClass297_8992!!.method2237(URL("http://" + (Class135_Sub2.aClass161_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987), 8362))
+                val i_15_ = (if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) 80 else 7000 - -(GlElementArrayBuffer.aClass161_4839!!.anInt2143))
+                aClass144_4201 = (Class348_Sub23_Sub1.aClass297_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aClass161_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987), 8362))
             } catch (malformedurlexception: MalformedURLException) {
                 return true
             }

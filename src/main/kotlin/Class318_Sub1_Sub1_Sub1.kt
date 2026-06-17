@@ -184,7 +184,7 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
         var anInt9968: Int = 0
 
         fun method2397(i: Byte): Boolean {
-            Class135_Sub1.anInt4718++
+            GlArrayBufferObject.anInt4718++
             Class239_Sub29.aBoolean6147 = true
             if (i > -123) anIntArray9949 = null
             anInt9967++
