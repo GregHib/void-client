@@ -33,10 +33,10 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
                 val i_0_ = ((CacheArchiveIndex.anInt1780 * (CalendarUtil.anInt4133 + -RenderableGroup.anInt5019) shr 16) + RenderableGroup.anInt5019)
                 CacheArchiveIndex.anInt1780 += i_0_
                 if (CacheArchiveIndex.anInt1780 < 65535) {
-                    Class347.aBoolean4284 = false
+                    DragDropController.aBoolean4284 = false
                     SpriteStore.aBoolean368 = false
                 } else {
-                    Class347.aBoolean4284 = !SpriteStore.aBoolean368
+                    DragDropController.aBoolean4284 = !SpriteStore.aBoolean368
                     CacheArchiveIndex.anInt1780 = 65535
                     SpriteStore.aBoolean368 = true
                 }

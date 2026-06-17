@@ -73,7 +73,7 @@ object ObjectSpawnDecoder {
     fun method1090(`is`: Array<ByteArray?>?, i: Int, class237_sub1: WorldMapSceneSoftware?) {
         try {
             anInt1802++
-            val i_13_ = Class347.aByteArrayArray4281!!.size
+            val i_13_ = DragDropController.aByteArrayArray4281!!.size
             if (i == 65536) {
                 for (i_14_ in 0..<i_13_) {
                     val is_15_ = `is`!![i_14_]

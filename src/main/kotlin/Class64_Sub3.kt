@@ -3113,7 +3113,7 @@ class Class64_Sub3 : Class64 {
                 }
                 anIntArray5528!![modelDefinition.anInt1821] = i_716_
                 val class358 = method565(255, anInt5632, modelDefinition, `is`)!!
-                val class347s: Array<Class347?> = arrayOfNulls<Class347>(modelDefinition.anInt1817)
+                val dragDropControllers: Array<DragDropController?> = arrayOfNulls<DragDropController>(modelDefinition.anInt1817)
                 var i_719_ = 0
                 while (modelDefinition.anInt1817 > i_719_) {
                     val i_720_ = modelDefinition.aShortArray1863[i_719_]
@@ -3157,8 +3157,8 @@ class Class64_Sub3 : Class64 {
                         class8.anInt162 += i_730_
                         class8.anInt161 += i_729_
                     } else if (i_733_.toInt() == 1) {
-                        class347s[i_719_] = Class347()
-                        val class347 = class347s[i_719_]!!
+                        dragDropControllers[i_719_] = DragDropController()
+                        val class347 = dragDropControllers[i_719_]!!
                         class347.anInt4283 = i_731_
                         class347.anInt4279 = i_730_
                         class347.anInt4282 = i_729_
@@ -3385,7 +3385,7 @@ class Class64_Sub3 : Class64 {
                         class8 = class8s[i_810_.toInt()]!!
                         aShortArray5566!![i_734_] = method683(class8.anInt162, class8.anInt159, l + i_746_.toLong(), class8.anInt161, modelDefinition, class8.anInt160, f_743_, 0, i_810_.toInt(), f_744_)
                     } else if (i_807_.toInt() == 1) {
-                        val class347 = class347s[i_735_]!!
+                        val class347 = dragDropControllers[i_735_]!!
                         val l = ((((i_736_ shl 8).toLong() + (i_747_ shl 24).toLong() + i_738_.toLong()) shl 32) + ((if (class347.anInt4282 > 0) 1024 else 2048) + (i_737_ shl 2) + ((class347.anInt4279) + 256 shl 12) - -(256 + (class347.anInt4283) shl 22)).toLong())
                         aShortArray5592!![i_734_] = method683(class347.anInt4279, class347.anInt4283, l, class347.anInt4282, modelDefinition, 0, f, 0, (modelDefinition.aShortArray1863[i_735_]).toInt(), f_740_)
                         aShortArray5579!![i_734_] = method683(class347.anInt4279, class347.anInt4283, l + i_745_.toLong(), class347.anInt4282, modelDefinition, 0, f_741_, 0, (modelDefinition.aShortArray1835!![i_735_]).toInt(), f_742_)

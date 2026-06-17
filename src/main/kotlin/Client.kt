@@ -295,8 +295,8 @@ import WidgetRedrawRegion.Companion.method2682
 import ByteStore.Companion.method2690
 import ParticleProcessor.Companion.method2693
 import AwtKeyboardListener.Companion.method2705
-import Class347.Companion.method2707
-import Class347.Companion.method2708
+import DragDropController.Companion.method2707
+import DragDropController.Companion.method2708
 import Class348.Companion.method2713
 import Class348_Sub1.Companion.method2719
 import Class348_Sub10.Companion.method2785
@@ -2498,7 +2498,7 @@ class Client : GameAppletFrame() {
                                         Class348_Sub1_Sub2.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     }
                                 }
-                                if (Class347.aBoolean4284 && (class46.anObjectArray687 != null)) {
+                                if (DragDropController.aBoolean4284 && (class46.anObjectArray687 != null)) {
                                     val class348_sub36 = Class348_Sub36()
                                     class348_sub36.aClass46_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray687

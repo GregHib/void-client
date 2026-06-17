@@ -15,7 +15,7 @@ import SkyboxGradient.method2334
 import SceneObjectEntity.Companion.method2405
 import Font.Companion.method2570
 import SkeletalAnimFrameLoader.Companion.method349
-import Class347.Companion.method2708
+import DragDropController.Companion.method2708
 import Class348_Sub40_Sub30.Companion.method3127
 import Class348_Sub40_Sub38.Companion.method3150
 import Class38.Companion.method362
@@ -173,9 +173,9 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class76.aFloat1287.toInt() shr 3)
                         Class348_Sub42_Sub14.method3243(-31, class348_sub47)
                     }
-                    if (Class347.aBoolean4278 != SizeBoundedSoftCache.aBoolean2329) {
+                    if (DragDropController.aBoolean4278 != SizeBoundedSoftCache.aBoolean2329) {
                         NormalMapGenerator.anInt3460++
-                        Class347.aBoolean4278 = SizeBoundedSoftCache.aBoolean2329
+                        DragDropController.aBoolean4278 = SizeBoundedSoftCache.aBoolean2329
                         val class348_sub47 = method2148((InputStream_Sub1.aClass351_77), (Class348_Sub23_Sub2.aClass77_9029), i xor 0x2cc8.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!SizeBoundedSoftCache.aBoolean2329) 0 else 1)
                         Class348_Sub42_Sub14.method3243(i + -11501, class348_sub47)

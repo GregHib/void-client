@@ -69,7 +69,7 @@ public abstract class AbstractCameraTransform {
             Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_6_)
             RenderNode.anIntArray9724 = IntArray(i_6_)
             LocalizedTextTriple.anIntArray3759 = IntArray(i_6_)
-            Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
+            DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
             GameAppletFrame.anIntArray38 = IntArray(i_6_)
             Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_6_)
             ModelFacePriorityNode.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_6_)

@@ -122,7 +122,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             Class348_Sub50.aByteArrayArray7212 = null
             RenderNode.anIntArray9724 = IntArray(i_18_)
             ImageFrameCache.anIntArray4031 = null
-            Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
+            DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
             if (i >= -47) anInt9349 = -54
             LocalizedTextTriple.anIntArray3759 = IntArray(i_18_)
             Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_18_)

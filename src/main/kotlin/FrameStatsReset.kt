@@ -185,7 +185,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub10.anInt9560 = 0
             Class376.anInt4553 = 0
             Class363.anInt4465 = 0
-            Class347.anInt4280 = 0
+            DragDropController.anInt4280 = 0
             CameraDistanceOptionState.anInt5854 = 0
             Class348_Sub16_Sub2.anInt8881 = 0
             SequencedActorEntity.anInt10104 = 0
@@ -4099,7 +4099,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class373_Sub2.anInt7457 = 0
             CompositeNpcModelBuilder.anInt2106 = 0
             Class348_Sub40_Sub6.anInt9138 = 0
-            Class347.aBoolean4278 = true
+            DragDropController.aBoolean4278 = true
             SizeBoundedSoftCache.aBoolean2329 = true
             method2480(i.inv())
             var j = 0
