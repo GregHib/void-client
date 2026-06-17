@@ -3,7 +3,7 @@ import Class50_Sub1.Companion.method462
 /* Class160 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class160 {
+class KeyboardLayoutConfig {
     var aChar2132: Char = 0.toChar()
     var anInt2135: Int = 1
     fun method1255(class348_sub49: Class348_Sub49, i: Int) {

@@ -78,7 +78,7 @@ class Class161 {
                 Class206.anInt4889 = Class286_Sub5.anInt6248
                 if (Class206.anInt4889 == 0) method3134(-1)
                 else {
-                    Class318_Sub1_Sub1.aFloat8725 = Class160.Companion.aFloat2137
+                    Class318_Sub1_Sub1.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137
                     DelegatingRenderCanvas.anInt70 = Class187.anInt2500
                     Class239_Sub24.aClass299_6098 = HeapInfoRecord.aClass299_4938
                     Class64.aFloat1136 = TextureMetadataProvider.aFloat4626

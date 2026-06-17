@@ -62,7 +62,7 @@ import LinkedListIterator.Companion.method1242
 import SettingsCrcWriter.method1246
 import HeapInfoRecord.Companion.method1249
 import Class16.method260
-import Class160.Companion.method1254
+import KeyboardLayoutConfig.Companion.method1254
 import Class161.Companion.method1261
 import Class162.Companion.method1265
 import Class162.Companion.method1267

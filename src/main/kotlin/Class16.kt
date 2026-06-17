@@ -66,8 +66,8 @@ object Class16 {
     fun method262(i: Int) {
         anInt234++
         if (i != 0) aWidgetNodeLink_231 = null
-        if (!Class160.aBoolean2130) {
-            Class160.aBoolean2130 = true
+        if (!KeyboardLayoutConfig.aBoolean2130) {
+            KeyboardLayoutConfig.aBoolean2130 = true
             Class205.aFloat2687 += (-Class205.aFloat2687 + -24.0f) / 2.0f
             Class369_Sub3_Sub1.aBoolean10174 = true
         }

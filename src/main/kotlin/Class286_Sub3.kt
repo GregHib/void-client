@@ -409,8 +409,8 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
         @JvmStatic
         fun method2153(i: Int) {
             anInt6214++
-            if (!Class160.aBoolean2130 && i <= -37) {
-                Class160.aBoolean2130 = true
+            if (!KeyboardLayoutConfig.aBoolean2130 && i <= -37) {
+                KeyboardLayoutConfig.aBoolean2130 = true
                 Class205.aFloat2687 += (-Class205.aFloat2687 + 24.0f) / 2.0f
                 Class369_Sub3_Sub1.aBoolean10174 = true
             }
