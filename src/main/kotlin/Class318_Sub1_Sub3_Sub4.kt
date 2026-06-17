@@ -124,7 +124,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         return anInt10356
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         if (i != 7) method2387(null, -106)
         anInt10363++
         return null

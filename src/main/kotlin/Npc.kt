@@ -248,7 +248,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         }
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         if (i != 7) this.anInt10512 = 102
         anInt10493++
         return null

@@ -14,7 +14,7 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
     private val aBoolean10076: Boolean
     private var aByte10079: Byte = 0
     private var aShort10081: Short = 0
-    private var aClass30_10082: Class30? = null
+    private var aCircleHitbox_10082: CircleHitbox? = null
     private var aBoolean10090 = false
     private var aRenderNode10094: RenderNode? = null
 
@@ -88,11 +88,11 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
         if (this.aClass64_10071 != null) this.aClass64_10071!!.s(this.aClass64_10071!!.ua() and 0x10000.inv())
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         anInt10075++
-        if (aClass30_10082 == null) aClass30_10082 = (method2967(this.x, method2482(var_renderer!!, 117.toByte(), 0), this.y, this.anInt6382, i + -5))
+        if (aCircleHitbox_10082 == null) aCircleHitbox_10082 = (method2967(this.x, method2482(var_renderer!!, 117.toByte(), 0), this.y, this.anInt6382, i + -5))
         if (i != 7) aBoolean10066 = false
-        return aClass30_10082
+        return aCircleHitbox_10082
     }
 
     override fun method42(i: Int): Int {
@@ -147,7 +147,7 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
     }
 
     private fun method2481(bool: Boolean, i: Int, i_15_: Int, var_renderer: Renderer?): ModelOrSpriteHolder? {
-        if (i_15_ != -4) aClass30_10082 = null
+        if (i_15_ != -4) aCircleHitbox_10082 = null
         anInt10086++
         val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, aShort10081.toInt() and 0xffff)
         val var_terrainTile: TerrainTile?
@@ -213,7 +213,7 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
     }
 
     override fun method43(var_renderer: Renderer?, i: Int) {
-        if (i != -14218) aClass30_10082 = null
+        if (i != -14218) aCircleHitbox_10082 = null
         anInt10068++
         val `object`: Any? = null
         val var_renderNode: RenderNode?

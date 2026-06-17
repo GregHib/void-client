@@ -274,7 +274,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         } while (false)
     }
 
-    override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         if (i != 7) this.aString10544 = null
         anInt10518++
         return null

@@ -13,7 +13,7 @@ import OutputStream_Sub2.Companion.method136
 class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) : Class318_Sub1_Sub5(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_), Interface10 {
     private val aByte10118: Byte
     private var aClass64_10124: Class64? = null
-    private var aClass30_10127: Class30? = null
+    private var aCircleHitbox_10127: CircleHitbox? = null
     private var aRenderNode10128: RenderNode? = null
     private val aShort10129: Short
     private var aBoolean10130 = false
@@ -94,7 +94,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
     }
 
     override fun method43(var_renderer: Renderer?, i: Int) {
-        if (i != -14218) aClass30_10127 = null
+        if (i != -14218) aCircleHitbox_10127 = null
         anInt10144++
         val `object`: Any? = null
         val var_renderNode: RenderNode?
@@ -127,11 +127,11 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
         if (i != 836) method2391(null, -123, 0, -64)
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         if (i != 7) method2381(null, -71)
-        if (aClass30_10127 == null) aClass30_10127 = (method2967(this.x, method2488(0, 0, var_renderer!!), this.y, this.anInt6382, 2))
+        if (aCircleHitbox_10127 == null) aCircleHitbox_10127 = (method2967(this.x, method2488(0, 0, var_renderer!!), this.y, this.anInt6382, 2))
         anInt10140++
-        return aClass30_10127
+        return aCircleHitbox_10127
     }
 
     private fun method2491(i: Byte, bool: Boolean, i_5_: Int, var_renderer: Renderer?): ModelOrSpriteHolder? {
@@ -188,7 +188,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
 
     override fun method38(i: Int): Boolean {
         anInt10132++
-        if (i != -18443) aClass30_10127 = null
+        if (i != -18443) aCircleHitbox_10127 = null
         return aBoolean10137
     }
 

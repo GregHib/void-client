@@ -1,7 +1,7 @@
 /* Class30 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class30 internal constructor(private var anInt409: Int, private var anInt417: Int, private var anInt408: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
+class CircleHitbox internal constructor(private var anInt409: Int, private var anInt417: Int, private var anInt408: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
     private var anInt404: Int
     private var anInt405: Int
     private var anInt406: Int

@@ -9,12 +9,12 @@ import OutputStream_Sub2.Companion.method136
 */
 class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, class51: Class51, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int) : Class318_Sub1_Sub1(i_8_, i_9_, i_10_, i, i_7_, class51.anInt930), Interface10 {
     private var aBoolean9945 = false
-    private var aClass30_9950: Class30? = null
+    private var aCircleHitbox_9950: CircleHitbox? = null
     var aSceneObjectAnimator_9955: SceneObjectAnimator? = null
     private var aBoolean9966 = false
     override fun method42(i: Int): Int {
         anInt9943++
-        if (i > -62) aClass30_9950 = null
+        if (i > -62) aCircleHitbox_9950 = null
         return (this.aSceneObjectAnimator_9955!!.anInt3063)
     }
 
@@ -64,8 +64,8 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
             else var_renderer.method3684(class98)
         }
         aBoolean9945 = (class64.F() || (this.aSceneObjectAnimator_9955!!.aClass318_Sub10_3081) != null)
-        if (aClass30_9950 != null) method1935(this.y, this.anInt6382, aClass30_9950, class64, false, this.x)
-        else aClass30_9950 = (method2967(this.x, class64, this.y, this.anInt6382, 2))
+        if (aCircleHitbox_9950 != null) method1935(this.y, this.anInt6382, aCircleHitbox_9950, class64, false, this.x)
+        else aCircleHitbox_9950 = (method2967(this.x, class64, this.y, this.anInt6382, 2))
         return class318_sub4
     }
 
@@ -117,10 +117,10 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
         return class64.method628(i_13_, i, class101, false, 0)
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         if (i != 7) return null
         anInt9960++
-        return aClass30_9950
+        return aCircleHitbox_9950
     }
 
     public override fun method2388(i: Int): Boolean {
@@ -143,7 +143,7 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
 
     public override fun method2376(i: Int): Boolean {
         anInt9956++
-        if (i >= -12) aClass30_9950 = null
+        if (i >= -12) aCircleHitbox_9950 = null
         return false
     }
 

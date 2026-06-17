@@ -10,7 +10,7 @@ class Class318_Sub1_Sub4_Sub2 internal constructor(var_renderer: Renderer?, clas
     private var aBoolean10095 = false
     private var aBoolean10114 = false
     var aSceneObjectAnimator_10115: SceneObjectAnimator? = null
-    private var aClass30_10116: Class30? = null
+    private var aCircleHitbox_10116: CircleHitbox? = null
     override fun method39(i: Int): Int {
         anInt10105++
         val i_0_ = -66 / ((-91 - i) / 35)
@@ -81,7 +81,7 @@ class Class318_Sub1_Sub4_Sub2 internal constructor(var_renderer: Renderer?, clas
     }
 
     override fun method42(i: Int): Int {
-        if (i > -62) aClass30_10116 = null
+        if (i > -62) aCircleHitbox_10116 = null
         anInt10098++
         return (this.aSceneObjectAnimator_10115!!.anInt3063)
     }
@@ -110,15 +110,15 @@ class Class318_Sub1_Sub4_Sub2 internal constructor(var_renderer: Renderer?, clas
             else var_renderer.method3684(class98)
         }
         aBoolean10095 = class64.F() || (this.aSceneObjectAnimator_10115!!.aClass318_Sub10_3081) != null
-        if (aClass30_10116 != null) method1935(this.y, this.anInt6382, aClass30_10116, class64, false, this.x)
-        else aClass30_10116 = (method2967(this.x, class64, this.y, this.anInt6382, 2))
+        if (aCircleHitbox_10116 != null) method1935(this.y, this.anInt6382, aCircleHitbox_10116, class64, false, this.x)
+        else aCircleHitbox_10116 = (method2967(this.x, class64, this.y, this.anInt6382, 2))
         return class318_sub4
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         anInt10109++
         if (i != 7) return null
-        return aClass30_10116
+        return aCircleHitbox_10116
     }
 
     override fun method41(i: Int): Int {

@@ -11,7 +11,7 @@ import jaggl.OpenGL.Companion.glLinkProgramARB
 
 class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int) : Class318_Sub1_Sub5(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_), Interface10 {
     private var aBoolean10148 = false
-    private var aClass30_10150: Class30? = null
+    private var aCircleHitbox_10150: CircleHitbox? = null
     private var aBoolean10153 = false
     var aSceneObjectAnimator_10155: SceneObjectAnimator? = null
     override fun method43(var_renderer: Renderer?, i: Int) {
@@ -94,15 +94,15 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
             else var_renderer.method3685(class98, LocalPlayerState.anInt1906)
         }
         aBoolean10148 = class64.F() || (this.aSceneObjectAnimator_10155!!.aClass318_Sub10_3081) != null
-        if (aClass30_10150 == null) aClass30_10150 = (method2967(this.x, class64, this.y, this.anInt6382, 2))
-        else method1935(this.y, this.anInt6382, aClass30_10150, class64, false, this.x)
+        if (aCircleHitbox_10150 == null) aCircleHitbox_10150 = (method2967(this.x, class64, this.y, this.anInt6382, 2))
+        else method1935(this.y, this.anInt6382, aCircleHitbox_10150, class64, false, this.x)
         return class318_sub4
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         anInt10169++
         if (i != 7) return null
-        return aClass30_10150
+        return aCircleHitbox_10150
     }
 
     public override fun method2377(i: Byte): Boolean {

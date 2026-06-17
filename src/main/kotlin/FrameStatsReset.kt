@@ -1143,7 +1143,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GroundDecorOptionState.anInt5977 = 0
             NativeRenderer.anInt7982 = 0
             Class348_Sub40_Sub29.anInt9377 = 0
-            Class30.anInt415 = 0
+            CircleHitbox.anInt415 = 0
             Class348_Sub20.anInt6829 = 0
             Class318_Sub1_Sub4_Sub2.anInt10113 = 0
             Class348_Sub49.anInt7149 = 0
@@ -1906,7 +1906,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WorldMapRenderer.anInt4677 = 0
             Class348_Sub51.anInt7258 = 0
             Class348_Sub16_Sub3.anInt8934 = 0
-            Class30.anInt414 = 0
+            CircleHitbox.anInt414 = 0
             OpenGlRenderer.anInt7533 = 0
             BufferToggleState.anInt3716 = 0
             ScreenAnchorAlignment.anInt2882 = 0
@@ -2241,7 +2241,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ParticleSystemState.anInt2206 = 0
             NativeRenderer.anInt7995 = 0
             GlFramebufferBlitter.anInt272 = 0
-            Class30.anInt411 = 0
+            CircleHitbox.anInt411 = 0
             Player.anInt10555 = 0
             Class377.anInt9884 = 0
             AbstractMenuEntry.anInt1707 = 0
@@ -3148,7 +3148,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RandomAccessFileOnDisk.anInt3041 = 0
             GlSpriteRenderer.anInt8433 = 0
             ParticleDefLoader.anInt2463 = 0
-            Class30.anInt410 = 0
+            CircleHitbox.anInt410 = 0
             FloatCameraTransform.anInt5733 = 0
             GlBufferObject.anInt4749 = 0
             WorldMapScene.anInt3125 = 0

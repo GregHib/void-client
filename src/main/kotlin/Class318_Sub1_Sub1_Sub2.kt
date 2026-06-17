@@ -15,7 +15,7 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
     private var aBoolean9989 = false
     private var aShort9991: Short = 0
     private var aClass64_9993: Class64? = null
-    private var aClass30_9999: Class30? = null
+    private var aCircleHitbox_9999: CircleHitbox? = null
     public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_0_: Int, i_1_: Byte, i_2_: Int) {
         do {
             try {
@@ -95,7 +95,7 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
     }
 
     override fun method38(i: Int): Boolean {
-        if (i != -18443) aClass30_9999 = null
+        if (i != -18443) aCircleHitbox_9999 = null
         anInt10002++
         return aBoolean9988
     }
@@ -205,11 +205,11 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
         } while (false)
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
-        if (aClass30_9999 == null) aClass30_9999 = (method2967(this.x, method2404(var_renderer!!, 86, 0), this.y, this.anInt6382, i xor 0x5))
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
+        if (aCircleHitbox_9999 == null) aCircleHitbox_9999 = (method2967(this.x, method2404(var_renderer!!, 86, 0), this.y, this.anInt6382, i xor 0x5))
         if (i != 7) return null
         anInt9998++
-        return aClass30_9999
+        return aCircleHitbox_9999
     }
 
     public override fun method2387(var_renderer: Renderer?, i: Int) {

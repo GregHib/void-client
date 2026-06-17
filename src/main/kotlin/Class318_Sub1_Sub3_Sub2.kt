@@ -8,7 +8,7 @@ import OutputStream_Sub2.Companion.method136
 */
 class Class318_Sub1_Sub3_Sub2 internal constructor(var_renderer: Renderer?, class51: Class51, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) : Class318_Sub1_Sub3(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, class51.anInt895 == 1, method1606(i_9_, -27939, i_8_)), Interface10 {
     var aSceneObjectAnimator_10045: SceneObjectAnimator? = null
-    private var aClass30_10051: Class30? = null
+    private var aCircleHitbox_10051: CircleHitbox? = null
     private var aBoolean10055 = false
     private val aBoolean10056: Boolean
     public override fun method2376(i: Int): Boolean {
@@ -55,15 +55,15 @@ class Class318_Sub1_Sub3_Sub2 internal constructor(var_renderer: Renderer?, clas
     }
 
     override fun method41(i: Int): Int {
-        if (i != -32228) aClass30_10051 = null
+        if (i != -32228) aCircleHitbox_10051 = null
         anInt10044++
         return (this.aSceneObjectAnimator_10045!!.anInt3052)
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         anInt10053++
         if (i != 7) return null
-        return aClass30_10051
+        return aCircleHitbox_10051
     }
 
     public override fun method2377(i: Byte): Boolean {
@@ -74,7 +74,7 @@ class Class318_Sub1_Sub3_Sub2 internal constructor(var_renderer: Renderer?, clas
 
     override fun method43(var_renderer: Renderer?, i: Int) {
         anInt10049++
-        if (i != -14218) aClass30_10051 = null
+        if (i != -14218) aCircleHitbox_10051 = null
         this.aSceneObjectAnimator_10045!!.method1674(-1, var_renderer)
     }
 
@@ -94,8 +94,8 @@ class Class318_Sub1_Sub3_Sub2 internal constructor(var_renderer: Renderer?, clas
             else var_renderer.method3684(class98)
         }
         aBoolean10055 = class64.F() || (this.aSceneObjectAnimator_10045!!.aClass318_Sub10_3081) != null
-        if (aClass30_10051 != null) method1935(this.y, this.anInt6382, aClass30_10051, class64, false, this.x)
-        else aClass30_10051 = (method2967(this.x, class64, this.y, this.anInt6382, 2))
+        if (aCircleHitbox_10051 != null) method1935(this.y, this.anInt6382, aCircleHitbox_10051, class64, false, this.x)
+        else aCircleHitbox_10051 = (method2967(this.x, class64, this.y, this.anInt6382, 2))
         return class318_sub4
     }
 

@@ -34,7 +34,7 @@ abstract class Class318_Sub1 : Class318() {
 
     abstract fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1_0_: Class318_Sub1?, i_1_: Int, i_2_: Byte, i_3_: Int)
 
-    abstract fun method2381(var_renderer: Renderer?, i: Int): Class30?
+    abstract fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox?
 
     abstract fun method2382(i: Byte): Boolean
 

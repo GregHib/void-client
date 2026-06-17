@@ -348,15 +348,15 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         }
 
         @JvmStatic
-        fun method1935(i: Int, i_10_: Int, class30: Class30?, class64: Class64?, bool: Boolean, i_11_: Int) {
+        fun method1935(i: Int, i_10_: Int, circleHitbox: CircleHitbox?, class64: Class64?, bool: Boolean, i_11_: Int) {
             try {
                 anInt3270++
                 if (class64 != null) {
                     if (bool != false) method1929(106.toByte())
-                    class30!!.method320(class64.EA(), class64.fa(), (-4).toByte(), i_11_, class64.na(), i, class64.V(), class64.G(), class64.HA(), i_10_, class64.RA())
+                    circleHitbox!!.method320(class64.EA(), class64.fa(), (-4).toByte(), i_11_, class64.na(), i, class64.V(), class64.G(), class64.HA(), i_10_, class64.RA())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (if (class30 != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_11_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (if (circleHitbox != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_11_ + ')'))
             }
         }
 

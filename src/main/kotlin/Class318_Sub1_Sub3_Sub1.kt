@@ -14,7 +14,7 @@ class Class318_Sub1_Sub3_Sub1 internal constructor(var_renderer: Renderer?, clas
     private val aBoolean10017: Boolean
     private var aBoolean10019 = false
     private val aByte10024: Byte
-    private var aClass30_10025: Class30? = null
+    private var aCircleHitbox_10025: CircleHitbox? = null
     var aClass64_10028: Class64? = null
     private var aShort10032: Short = 0
     private var aRenderNode10036: RenderNode? = null
@@ -164,11 +164,11 @@ class Class318_Sub1_Sub3_Sub1 internal constructor(var_renderer: Renderer?, clas
         if (this.aClass64_10028 != null) this.aClass64_10028!!.s(0x10000.inv() and this.aClass64_10028!!.ua())
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
-        if (aClass30_10025 == null) aClass30_10025 = (method2967(this.x, method2414(i + -8, var_renderer!!, 0), this.y, this.anInt6382, 2))
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
+        if (aCircleHitbox_10025 == null) aCircleHitbox_10025 = (method2967(this.x, method2414(i + -8, var_renderer!!, 0), this.y, this.anInt6382, 2))
         if (i != 7) return null
         anInt10013++
-        return aClass30_10025
+        return aCircleHitbox_10025
     }
 
     private fun method2417(i: Int, var_renderer: Renderer?, i_20_: Int, bool: Boolean): ModelOrSpriteHolder? {

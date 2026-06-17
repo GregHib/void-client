@@ -228,7 +228,7 @@ import CubemapTextureGlSource.Companion.method2265
 import TextureCubeProvider.Companion.method2268
 import CubemapTextureImplSource.Companion.method2272
 import CacheStateResetter.method176
-import Class30.Companion.method322
+import CircleHitbox.Companion.method322
 import Class301.method2281
 import Class303.method2286
 import Class305.Companion.method2294
@@ -2505,7 +2505,7 @@ class Client : GameAppletFrame() {
                                     Class348_Sub1_Sub2.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                             }
-                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntry.aSpriteStore_1813, Class30.aClass84_413)!!.method2292(84, Class348_Sub8.aRenderer6654!!, class46.anInt789)
+                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntry.aSpriteStore_1813, CircleHitbox.aClass84_413)!!.method2292(84, Class348_Sub8.aRenderer6654!!, class46.anInt789)
                             method273(class46, -2835)
                             if (class46.anInt774 == 0) {
                                 method107(class46s, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)

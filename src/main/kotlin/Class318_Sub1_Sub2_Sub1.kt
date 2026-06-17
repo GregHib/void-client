@@ -32,7 +32,7 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
         return i_0_
     }
 
-    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         if (i != 7) method2386(-74, null)
         anInt10182++
         return null

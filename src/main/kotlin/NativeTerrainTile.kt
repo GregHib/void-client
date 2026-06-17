@@ -62,21 +62,21 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         val `is` = this.anIntArrayArrayArray8321!![i_21_]!![i]!!
         val is_23_ = this.anIntArrayArrayArray8313!![i_21_]!![i]!!
         val i_24_ = `is`.size
-        if (Class30.anIntArray407!!.size < i_24_) {
-            Class30.anIntArray407 = IntArray(i_24_)
+        if (CircleHitbox.anIntArray407!!.size < i_24_) {
+            CircleHitbox.anIntArray407 = IntArray(i_24_)
             TerrainTileGeometry.anIntArray3014 = IntArray(i_24_)
         }
         for (i_25_ in 0..<i_24_) {
-            Class30.anIntArray407!![i_25_] = (`is`[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
+            CircleHitbox.anIntArray407!![i_25_] = (`is`[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
             TerrainTileGeometry.anIntArray3014!![i_25_] = (is_23_[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
         }
         var i_26_ = 0
         while (i_24_ > i_26_) {
-            val i_27_ = Class30.anIntArray407!![i_26_]
+            val i_27_ = CircleHitbox.anIntArray407!![i_26_]
             val i_28_ = TerrainTileGeometry.anIntArray3014!![i_26_++]
-            val i_29_ = Class30.anIntArray407!![i_26_]
+            val i_29_ = CircleHitbox.anIntArray407!![i_26_]
             val i_30_ = TerrainTileGeometry.anIntArray3014!![i_26_++]
-            val i_31_ = Class30.anIntArray407!![i_26_]
+            val i_31_ = CircleHitbox.anIntArray407!![i_26_]
             val i_32_ = TerrainTileGeometry.anIntArray3014!![i_26_++]
             if ((-((-i_29_ + i_31_) * (i_30_ - i_28_)) + (i_27_ - i_29_) * (i_30_ - i_32_)) > 0) var_r_Sub1.method3287(i_28_, i_22_ + -21622, i_27_, i_29_, i_30_, i_32_, i_31_)
         }
