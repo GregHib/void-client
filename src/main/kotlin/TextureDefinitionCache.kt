@@ -55,7 +55,7 @@ class TextureDefinitionCache internal constructor(i: Int, class45: Class45?, cla
             var i_1_ = NoOpGraphicsOptionState.anInt6043
             var i_2_ = Class348_Sub33.anInt6964
             if (i == 1) {
-                if (bool && Class305.aBoolean3870) {
+                if (bool && ParticleSystemRenderer.aBoolean3870) {
                     i_1_ = i_1_ shl 1
                     i_2_ = -i_1_
                 }

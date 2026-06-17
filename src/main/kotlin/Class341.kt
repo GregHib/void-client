@@ -117,7 +117,7 @@ class Class341 {
                     method2061(-127)
                     Class363.method3513(-113)
                     method1779(124.toByte())
-                    if (KeyboardLayoutCache.aClass305_3304 != null) KeyboardLayoutCache.aClass305_3304!!.method2295(96.toByte())
+                    if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2295(96.toByte())
                     method2269(true)
                     Class348_Sub18.method2938(127.toByte())
                     method369(-29776)

@@ -52,13 +52,13 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
             try {
                 anInt2627++
                 try {
-                    val graphics = Class305.aCanvas3869!!.getGraphics()
+                    val graphics = ParticleSystemRenderer.aCanvas3869!!.getGraphics()
                     if (Class351.aFont4329 == null) Class351.aFont4329 = Font("Helvetica", 1, 13)
                     if (color == null) color = Color(140, 17, 17)
                     if (color_0_ == null) color_0_ = Color(140, 17, 17)
                     if (color_2_ == null) color_2_ = Color(255, 255, 255)
                     try {
-                        if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
+                        if (Class342.anImage4249 == null) Class342.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
                         val graphics_3_ = Class342.anImage4249!!.getGraphics()
                         graphics_3_.setColor(Color.black)
                         graphics_3_.fillRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
@@ -103,7 +103,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics.drawString(string, i_6_ - -((304 + -(string!!.length * 6)) / 2), 22 + i_7_)
                     }
                 } catch (exception: Exception) {
-                    Class305.aCanvas3869!!.repaint()
+                    ParticleSystemRenderer.aCanvas3869!!.repaint()
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("rc.A(" + i + ',' + (if (color != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (color_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (color_2_ != null) "{...}" else "null") + ')'))

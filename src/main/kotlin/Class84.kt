@@ -47,7 +47,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         anInt1452++
     }
 
-    fun method823(i: Int, i_17_: Int, i_18_: Int, i_19_: Int, spriteStore: SpriteStore, i_20_: Int): Class305? {
+    fun method823(i: Int, i_17_: Int, i_18_: Int, i_19_: Int, spriteStore: SpriteStore, i_20_: Int): ParticleSystemRenderer? {
         anInt1453++
         var class72s: Array<Class72?>? = null
         val class300 = method820(i_20_, 29)
@@ -61,7 +61,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                 i_21_++
             }
         }
-        return Class305(class300.anInt3817, class72s, class300.anInt3823, i_18_, i, i_17_)
+        return ParticleSystemRenderer(class300.anInt3817, class72s, class300.anInt3823, i_18_, i, i_17_)
     }
 
     init {

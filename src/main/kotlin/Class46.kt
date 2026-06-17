@@ -827,18 +827,18 @@ class Class46 {
         return abstractModelRenderer
     }
 
-    fun method444(bool: Boolean, spriteStore: SpriteStore?, class84: Class84?): Class305? {
+    fun method444(bool: Boolean, spriteStore: SpriteStore?, class84: Class84?): ParticleSystemRenderer? {
         try {
             if (bool != false) method424(122, -123, null, -111, 40, 28, -109, null, 76, 127, -66, 8, -45)
             anInt804++
             if (this.anInt705 == -1) return null
             val l = ((this.anInt693.toLong() shl 16 and (65535L shl 16)) or ((this.anInt733.toLong() shl 32 and (65535L shl 32)) or (this.anInt674.toLong() shl 48 and (65535L shl 48))) or (this.anInt705.toLong() and 0xffffL))
-            var class305 = (Class348_Sub40_Sub9.aClass60_9171!!.method583(l, 78) as Class305?)
-            if (class305 == null) {
-                class305 = class84!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, spriteStore!!, this.anInt705)
-                Class348_Sub40_Sub9.aClass60_9171!!.method582(class305, l, (-120).toByte())
+            var particleSystemRenderer = (Class348_Sub40_Sub9.aClass60_9171!!.method583(l, 78) as ParticleSystemRenderer?)
+            if (particleSystemRenderer == null) {
+                particleSystemRenderer = class84!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, spriteStore!!, this.anInt705)
+                Class348_Sub40_Sub9.aClass60_9171!!.method582(particleSystemRenderer, l, (-120).toByte())
             }
-            return class305
+            return particleSystemRenderer
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (class84 != null) "{...}" else "null") + ')'))
         }

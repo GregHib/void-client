@@ -100,7 +100,7 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
                 val i_9_ = ClanChatRequestSender.anInt3647 * 512 - -256
                 val i_10_ = (method2064(i_8_, Class355.anInt4372, 11219, i_9_) + -MinimapFlagRenderer.anInt1797)
                 val i_11_ = i_8_ - GlslMaterialPass.anInt6246
-                val i_12_ = -Class305.anInt3855 + i_10_
+                val i_12_ = -ParticleSystemRenderer.anInt3855 + i_10_
                 val i_13_ = i_9_ - Class59_Sub2_Sub2.anInt8685
                 val i_14_ = sqrt((i_11_ * i_11_ + i_13_ * i_13_).toDouble()).toInt()
                 Class348_Sub42_Sub19.Companion.anInt9701 = (atan2(i_12_.toDouble(), i_14_.toDouble()) * 2607.5945876176133).toInt() and 0x3fff

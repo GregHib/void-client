@@ -166,9 +166,9 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
                 } else if (i_16_ != 3) break
                 method282(2, Class348_Sub8.aRenderer6654, Class321.anInt4017, 73.toByte(), Class45.anInt666, PerlinTextureProvider.anInt5812, Class348_Sub42_Sub8_Sub2.anInt10432, 2)
             } while (false)
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTile.method3980(i + 93, Class305.aCanvas3869!!)
+            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTile.method3980(i + 93, ParticleSystemRenderer.aCanvas3869!!)
             if (Class348_Sub8.aRenderer6654 != null) BufferToggleState.method2196((-9).toByte())
-            Class305.aBoolean3870 = i != Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
+            ParticleSystemRenderer.aBoolean3870 = i != Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
             Class59_Sub1.aBoolean5300 = Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)
         }
 

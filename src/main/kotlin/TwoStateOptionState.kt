@@ -113,7 +113,7 @@ class TwoStateOptionState : GraphicsOptionState {
                 if (bool && GlTextureCubeMap.anInt8537 >= 100) {
                     Class59_Sub2_Sub2.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
                     GlslMaterialPass.anInt6246 = 256 + Class348_Sub35.anInt6981 * 512
-                    Class305.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
+                    ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
                 }
                 Class348_Sub40_Sub21.anInt9282 = 2
                 Class318_Sub1_Sub5_Sub2.anInt10163 = -1

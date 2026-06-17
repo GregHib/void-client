@@ -29,11 +29,11 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         class101.method894(this.x, this.anInt6382, this.y)
         method2467(class64, var_renderer, -1, class101)
         val class318_sub4 = method136(i, false, false)
-        if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
+        if (ParticleSystemRenderer.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         if (aClass318_Sub10_10341 != null) {
             val class98 = aClass318_Sub10_10341!!.method2525()
-            if (!Class305.aBoolean3870) var_renderer.method3684(class98)
+            if (!ParticleSystemRenderer.aBoolean3870) var_renderer.method3684(class98)
             else var_renderer.method3685(class98, LocalPlayerState.anInt1906)
         }
         aBoolean10338 = class64.F()

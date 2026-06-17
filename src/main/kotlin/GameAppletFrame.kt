@@ -112,10 +112,10 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     @Synchronized
     open fun method87(i: Byte) {
         if (i > -11) paint(null)
-        if (Class305.aCanvas3869 != null) {
-            Class305.aCanvas3869!!.removeFocusListener(this)
-            Class305.aCanvas3869!!.getParent().setBackground(Color.black)
-            Class305.aCanvas3869!!.getParent().remove(Class305.aCanvas3869)
+        if (ParticleSystemRenderer.aCanvas3869 != null) {
+            ParticleSystemRenderer.aCanvas3869!!.removeFocusListener(this)
+            ParticleSystemRenderer.aCanvas3869!!.getParent().setBackground(Color.black)
+            ParticleSystemRenderer.aCanvas3869!!.getParent().remove(ParticleSystemRenderer.aCanvas3869)
         }
         anInt7++
         val container: Container
@@ -126,16 +126,16 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             } else container = Class52.aFrame4904 as Container
         } else container = Class34.aFrame476 as Container
         container.setLayout(null)
-        Class305.aCanvas3869 = DelegatingRenderCanvas(this)
-        container.add(Class305.aCanvas3869)
-        Class305.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
-        Class305.aCanvas3869!!.setVisible(true)
+        ParticleSystemRenderer.aCanvas3869 = DelegatingRenderCanvas(this)
+        container.add(ParticleSystemRenderer.aCanvas3869)
+        ParticleSystemRenderer.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+        ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
         if (container === Class52.aFrame4904) {
             val insets = (Class52.aFrame4904 as Container).getInsets()
-            Class305.aCanvas3869!!.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167)
-        } else Class305.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
-        Class305.aCanvas3869!!.addFocusListener(this)
-        Class305.aCanvas3869!!.requestFocus()
+            ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167)
+        } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
+        ParticleSystemRenderer.aCanvas3869!!.addFocusListener(this)
+        ParticleSystemRenderer.aCanvas3869!!.requestFocus()
         Class348_Sub40_Sub16.aBoolean9229 = true
         SizeBoundedSoftCache.aBoolean2329 = true
         Class49.aBoolean4726 = true
@@ -172,12 +172,12 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (ParticleAmountConfig.anInt2127++ > 50) {
             ParticleAmountConfig.anInt2127 -= 50
             Class49.aBoolean4726 = true
-            Class305.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
-            Class305.aCanvas3869!!.setVisible(true)
+            ParticleSystemRenderer.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+            ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
             if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
                 val insets = Class52.aFrame4904!!.getInsets()
-                Class305.aCanvas3869!!.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167))
-            } else Class305.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
+                ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167))
+            } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
         }
         method93(-11018)
         if (i > -107) method90(true, true)
@@ -241,10 +241,10 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         }
         RequestGate.method1945((-128).toByte(), true)
         NativeLibraryUnloader.method1629(!bool_4_)
-        if (Class305.aCanvas3869 != null) {
+        if (ParticleSystemRenderer.aCanvas3869 != null) {
             try {
-                Class305.aCanvas3869!!.removeFocusListener(this)
-                Class305.aCanvas3869!!.getParent().remove(Class305.aCanvas3869!!)
+                ParticleSystemRenderer.aCanvas3869!!.removeFocusListener(this)
+                ParticleSystemRenderer.aCanvas3869!!.getParent().remove(ParticleSystemRenderer.aCanvas3869!!)
             } catch (exception: Exception) {
                 /* empty */
             }
@@ -342,7 +342,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                         i++
                     }
                     method88(-119)
-                    Class369_Sub3_Sub1.method3578((-42).toByte(), Class305.aCanvas3869, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992))
+                    Class369_Sub3_Sub1.method3578((-42).toByte(), ParticleSystemRenderer.aCanvas3869, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992))
                 }
             } catch (throwable: Throwable) {
                 LinkedListIterator.method1242(method81(109.toByte()), throwable, 15004)

@@ -67,13 +67,13 @@ class Class348_Sub47 : Class348() {
         fun method3327(i: Int) {
             if (i == 1406) {
                 if (Class348_Sub8.aRenderer6654!!.method3694()) {
-                    Class348_Sub8.aRenderer6654!!.method3701(Class305.aCanvas3869)
+                    Class348_Sub8.aRenderer6654!!.method3701(ParticleSystemRenderer.aCanvas3869)
                     method2959(-1)
                     if (!Class59_Sub1.aBoolean5300) {
-                        val dimension = Class305.aCanvas3869!!.getSize()
-                        Class348_Sub8.aRenderer6654!!.method3643(Class305.aCanvas3869, dimension.width, dimension.height)
-                    } else ModelDefinition.method1108((-99).toByte(), Class305.aCanvas3869!!)
-                    Class348_Sub8.aRenderer6654!!.method3677(Class305.aCanvas3869)
+                        val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
+                        Class348_Sub8.aRenderer6654!!.method3643(ParticleSystemRenderer.aCanvas3869, dimension.width, dimension.height)
+                    } else ModelDefinition.method1108((-99).toByte(), ParticleSystemRenderer.aCanvas3869!!)
+                    Class348_Sub8.aRenderer6654!!.method3677(ParticleSystemRenderer.aCanvas3869)
                 } else method3553(false, 100.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
                 anInt7123++
                 Class354.method3466(i + -1347)

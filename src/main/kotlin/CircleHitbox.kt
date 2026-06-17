@@ -62,7 +62,7 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
             if (i_1_.toInt() != -18) method322(73)
             anInt414++
             Class336.anInt4171 = i_2_
-            Class305.anInt3861 = i_0_
+            ParticleSystemRenderer.anInt3861 = i_0_
             GlFramebufferBlitter.anInt282 = i
             CircleDrawer.anInt2688 = i_3_
         }

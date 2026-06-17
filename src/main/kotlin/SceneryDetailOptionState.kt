@@ -103,7 +103,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
         fun method1823(var_renderer: Renderer, i: Int, i_4_: Int, i_5_: Byte) {
             anInt6088++
             val i_6_ = 56 % ((68 - i_5_) / 58)
-            if (i >= 0 && i_4_ >= 0 && GlFramebufferBlitter.anInt282 != 0 && Class305.anInt3861 != 0) {
+            if (i >= 0 && i_4_ >= 0 && GlFramebufferBlitter.anInt282 != 0 && ParticleSystemRenderer.anInt3861 != 0) {
                 val abstractCameraTransform: AbstractCameraTransform
                 val i_7_: Int
                 val i_8_: Int
@@ -122,12 +122,12 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     i_11_ = i + MinimapFlagRenderer.method1082(-81, false)
                     i_12_ = Class348_Sub23.method2960(false, -52) + i_4_
                 } else {
-                    var_renderer.DA(Class336.anInt4171, CircleDrawer.anInt2688, GlFramebufferBlitter.anInt282, Class305.anInt3861)
+                    var_renderer.DA(Class336.anInt4171, CircleDrawer.anInt2688, GlFramebufferBlitter.anInt282, ParticleSystemRenderer.anInt3861)
                     i_8_ = CircleDrawer.anInt2688
-                    i_9_ = Class305.anInt3861
+                    i_9_ = ParticleSystemRenderer.anInt3861
                     i_7_ = Class336.anInt4171
                     i_10_ = GlFramebufferBlitter.anInt282
-                    var_renderer.KA(ConfigValueProvider.anInt4911, SocketGameConnection.anInt5832, GlFramebufferBlitter.anInt282, Class305.anInt3861)
+                    var_renderer.KA(ConfigValueProvider.anInt4911, SocketGameConnection.anInt5832, GlFramebufferBlitter.anInt282, ParticleSystemRenderer.anInt3861)
                     abstractCameraTransform = var_renderer.method3654()
                     abstractCameraTransform.method903(GlRectangleTexture.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, ClanChatRequestSender.anInt3650, Class348_Sub51.anInt7244)
                     var_renderer.method3638(abstractCameraTransform)
@@ -146,7 +146,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     val i_18_: Int
                     val i_19_: Int
                     val i_20_: Int
-                    if (Class305.aBoolean3870) {
+                    if (ParticleSystemRenderer.aBoolean3870) {
                         i_18_ = LocalPlayerState.anInt1906 * (-i_7_ + i_11_) / i_10_
                         i_17_ = i_18_
                         i_20_ = LocalPlayerState.anInt1906 * (-i_8_ + i_12_) / i_9_

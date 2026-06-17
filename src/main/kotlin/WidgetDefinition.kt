@@ -377,7 +377,7 @@ class WidgetDefinition {
             Class5.anInt4638 = i_37_
             Class338.anInt4186 = 0
             Class59_Sub2_Sub2.anInt8685 = i_38_ - i_49_
-            Class305.anInt3855 = -i_48_ + i_36_
+            ParticleSystemRenderer.anInt3855 = -i_48_ + i_36_
             GlslMaterialPass.anInt6246 = -i_47_ + i_41_
             Class348_Sub42_Sub19.anInt9701 = i
         }

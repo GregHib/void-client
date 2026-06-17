@@ -54,7 +54,7 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
                     fs[i_2_] = i_6_.toFloat() + f * (i_7_.toFloat() + f * (f * i_9_.toFloat() + i_8_.toFloat()))
                 }
                 GlslMaterialPass.anInt6246 = fs[0].toInt() - 512 * ArbVertexProgram.regionTileX
-                Class305.anInt3855 = -1 * fs[1].toInt()
+                ParticleSystemRenderer.anInt3855 = -1 * fs[1].toInt()
                 Class59_Sub2_Sub2.anInt8685 = fs[2].toInt() + -(Class90.regionTileY * 512)
                 val fs_10_ = FloatArray(3)
                 val i_11_ = 2 * CompassSmoother.anInt3373

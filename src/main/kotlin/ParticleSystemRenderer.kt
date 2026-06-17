@@ -1,7 +1,10 @@
 import Class348_Sub40_Sub1.Companion.method3051
 import java.awt.Canvas
 
-class Class305 internal constructor(private val anInt3858: Int, private val aClass72Array3862: Array<Class72?>?, i_23_: Int, private val anInt3866: Int, private val anInt3854: Int, private var anInt3853: Int) {
+/*
+ * Class305
+ */
+class ParticleSystemRenderer internal constructor(private val anInt3858: Int, private val aClass72Array3862: Array<Class72?>?, i_23_: Int, private val anInt3866: Int, private val anInt3854: Int, private var anInt3853: Int) {
     private var anInt3852 = 0
     private var aBoolean3857 = true
     private var anInt3859 = -1

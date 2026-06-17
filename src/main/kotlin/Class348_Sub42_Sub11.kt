@@ -206,7 +206,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
                             }
                         } else {
                             val i_22_ = method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685)
-                            if (i_22_ - Class305.anInt3855 < 3200 && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![GlslMaterialPass.anInt6246 shr 9]!![Class59_Sub2_Sub2.anInt8685 shr 9]).toInt() and 0x4) != 0) method3542(Class59_Sub2_Sub2.anInt8685 shr 9, HintArrowOrMessage.aClass357ArrayArrayArray2029, GlslMaterialPass.anInt6246 shr 9, 0, 1, false)
+                            if (i_22_ - ParticleSystemRenderer.anInt3855 < 3200 && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![GlslMaterialPass.anInt6246 shr 9]!![Class59_Sub2_Sub2.anInt8685 shr 9]).toInt() and 0x4) != 0) method3542(Class59_Sub2_Sub2.anInt8685 shr 9, HintArrowOrMessage.aClass357ArrayArrayArray2029, GlslMaterialPass.anInt6246 shr 9, 0, 1, false)
                         }
                     }
                 }

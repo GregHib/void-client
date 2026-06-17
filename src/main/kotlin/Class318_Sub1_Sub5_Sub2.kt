@@ -86,11 +86,11 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
         val i_3_ = this.x shr 9
         val i_4_ = this.y shr 9
         this.aSceneObjectAnimator_10155!!.method1670(i_3_, class101, i_4_, var_renderer, i_3_, class64, true, (-73).toByte(), i_4_)
-        if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
+        if (!ParticleSystemRenderer.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         if ((this.aSceneObjectAnimator_10155!!.aClass318_Sub10_3081) != null) {
             val class98 = this.aSceneObjectAnimator_10155!!.aClass318_Sub10_3081!!.method2525()
-            if (!Class305.aBoolean3870) var_renderer.method3684(class98)
+            if (!ParticleSystemRenderer.aBoolean3870) var_renderer.method3684(class98)
             else var_renderer.method3685(class98, LocalPlayerState.anInt1906)
         }
         aBoolean10148 = class64.F() || (this.aSceneObjectAnimator_10155!!.aClass318_Sub10_3081) != null
@@ -118,7 +118,7 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
         if (i_15_ != 0) return true
         val class101 = var_renderer!!.method3705()
         class101.method894((this.aShort8781 + this.x), this.anInt6382, (this.aShort8769 + this.y))
-        if (Class305.aBoolean3870) return class64.method623(i_14_, i, class101, false, 0, LocalPlayerState.anInt1906)
+        if (ParticleSystemRenderer.aBoolean3870) return class64.method623(i_14_, i, class101, false, 0, LocalPlayerState.anInt1906)
         return class64.method628(i_14_, i, class101, false, 0)
     }
 

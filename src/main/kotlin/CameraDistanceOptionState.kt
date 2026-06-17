@@ -64,7 +64,7 @@ class CameraDistanceOptionState : GraphicsOptionState {
             anInt5855++
             var i_1_ = 1024
             var i_2_ = 3072
-            if (Class305.aBoolean3870) {
+            if (ParticleSystemRenderer.aBoolean3870) {
                 i_2_ = 4096
                 if (Class348_Sub49_Sub1.aBoolean9746) i_1_ = 2048
             }

@@ -407,7 +407,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                                     (LocalPlayerState.aPlayer_1907!!.plane).toInt(),
                                     11219,
                                     Class59_Sub2_Sub2.anInt8685
-                                )) - Class305.anInt3855)), 126
+                                )) - ParticleSystemRenderer.anInt3855)), 126
                             )
                             method94(
                                 ("Look: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (Class352.anInt4336 - -ArbVertexProgram.regionTileX shr 6) + "," + (Class90.regionTileY + ClanChatRequestSender.anInt3647 shr 6) + "," + (0x3f and Class352.anInt4336 - -ArbVertexProgram.regionTileX) + "," + (0x3f and ClanChatRequestSender.anInt3647 - -Class90.regionTileY) + " Height: " + ((CollisionMapAccessor.method2064(

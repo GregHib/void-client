@@ -159,12 +159,12 @@ class LoadingBarRenderer : Interface16 {
         }
         if (aBoolean5022) method2219(33)
         else {
-            val graphics = Class305.aCanvas3869!!.getGraphics()
+            val graphics = ParticleSystemRenderer.aCanvas3869!!.getGraphics()
             if (graphics != null) {
                 try {
                     val i_5_ = Class51.aClass311_897!!.method2320(103.toByte())
                     val string = Class51.aClass311_897!!.method2318(-9324)
-                    if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
+                    if (Class342.anImage4249 == null) Class342.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
                     val graphics_6_ = Class342.anImage4249!!.getGraphics()
                     graphics_6_.clearRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                     val i_7_ = anImage5030!!.getWidth(null)
@@ -196,7 +196,7 @@ class LoadingBarRenderer : Interface16 {
                     val i_27_ = method2218(anInt5036, -6277) - -anInt5051
                     graphics_6_.drawImage(anImage5032, i_26_, i_27_ - -((anInt5036 + -i_17_) / 2), null)
                     graphics_6_.drawImage(anImage5037, anInt5023 + i_26_ - i_18_, (anInt5036 - i_19_) / 2 + i_27_, null)
-                    if (anImage5059 == null) anImage5059 = (Class305.aCanvas3869!!.createImage(-i_18_ + (-i_16_ + anInt5023), anInt5036))
+                    if (anImage5059 == null) anImage5059 = (ParticleSystemRenderer.aCanvas3869!!.createImage(-i_18_ + (-i_16_ + anInt5023), anInt5036))
                     val graphics_28_ = anImage5059!!.getGraphics()
                     var i_29_ = 0
                     while ((-i_18_ + (anInt5023 + -i_16_) > i_29_)) {
@@ -210,7 +210,7 @@ class LoadingBarRenderer : Interface16 {
                     }
                     var i_31_ = i_5_ * (-i_18_ + (-i_16_ + anInt5023)) / 100
                     if (i_31_ > 0) {
-                        val image = Class305.aCanvas3869!!.createImage(i_31_, (-i_22_ + (anInt5036 + -i_20_)))
+                        val image = ParticleSystemRenderer.aCanvas3869!!.createImage(i_31_, (-i_22_ + (anInt5036 + -i_20_)))
                         val i_32_ = image.getWidth(null)
                         val graphics_33_ = image.getGraphics()
                         val i_34_ = anInt5042 * method163(512) / 10 % i_24_
@@ -224,7 +224,7 @@ class LoadingBarRenderer : Interface16 {
                     val i_36_ = i_31_
                     i_31_ = -i_31_ + -i_18_ + anInt5023 + -i_16_
                     if (i_31_ > 0) {
-                        val image = Class305.aCanvas3869!!.createImage(i_31_, (-i_22_ + (anInt5036 + -i_20_)))
+                        val image = ParticleSystemRenderer.aCanvas3869!!.createImage(i_31_, (-i_22_ + (anInt5036 + -i_20_)))
                         val i_37_ = image.getWidth(null)
                         val graphics_38_ = image.getGraphics()
                         var i_39_ = 0
@@ -242,7 +242,7 @@ class LoadingBarRenderer : Interface16 {
                 } catch (exception: Exception) {
                     aBoolean5022 = true
                 }
-            } else Class305.aCanvas3869!!.repaint()
+            } else ParticleSystemRenderer.aCanvas3869!!.repaint()
         }
     }
 

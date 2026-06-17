@@ -27,7 +27,7 @@ class Class323 internal constructor(var_renderer: Renderer, i: Int, bool: Boolea
         val i_2_ = fontmetrics.getMaxAscent()
         val i_3_ = fontmetrics.getMaxAscent() + fontmetrics.getMaxDescent()
         val i_4_ = fontmetrics.getHeight()
-        val image = Class305.aCanvas3869!!.createImage(i_0_, i_3_)
+        val image = ParticleSystemRenderer.aCanvas3869!!.createImage(i_0_, i_3_)
         val graphics = image.getGraphics()
         graphics.setColor(Color.black)
         graphics.fillRect(0, 0, i_0_, i_3_)

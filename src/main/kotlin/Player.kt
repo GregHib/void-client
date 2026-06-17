@@ -114,7 +114,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         var bool = false
         var i_10_ = 0
         while ((this.aClass64Array10323!!.size > i_10_)) {
-            if ((this.aClass64Array10323!![i_10_] != null) && (if (Class305.aBoolean3870) (this.aClass64Array10323!![i_10_]!!.method623(i_7_, i, class101, true, 0, LocalPlayerState.anInt1906)) else this.aClass64Array10323!![i_10_]!!.method628(i_7_, i, class101, true, 0))) {
+            if ((this.aClass64Array10323!![i_10_] != null) && (if (ParticleSystemRenderer.aBoolean3870) (this.aClass64Array10323!![i_10_]!!.method623(i_7_, i, class101, true, 0, LocalPlayerState.anInt1906)) else this.aClass64Array10323!![i_10_]!!.method628(i_7_, i, class101, true, 0))) {
                 bool = true
                 break
             }
@@ -345,7 +345,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).size, true, false))
                     this.aBoolean10324 = true
                     var_renderer.C(false)
-                    if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), LocalPlayerState.anInt1906, 0)
+                    if (ParticleSystemRenderer.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), LocalPlayerState.anInt1906, 0)
                     else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), 0)
                     var_renderer.C(true)
                 }
@@ -362,7 +362,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                             val npc = (class348_sub22.aNpc_6859)!!
                             val i_57_ = (-(LocalPlayerState.aPlayer_1907!!.x) + npc.x)
                             val i_58_ = (-(LocalPlayerState.aPlayer_1907!!.y) + npc.y)
-                            if (Class305.aBoolean3870) method2454(6253, i_57_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_renderer, i_58_)
+                            if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_57_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_renderer, i_58_)
                             else method2453(i_57_, var_renderer, 92160000, (this.aClass64Array10323[0]), 0, i_58_, class101, class302.anInt3834)
                         }
                     }
@@ -371,7 +371,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                         val i_60_ = (-(LocalPlayerState.aPlayer_1907!!.y) + 256 + class302.anInt3832)
                         var i_61_ = class302.anInt3837 shl 9
                         i_61_ *= i_61_
-                        if (Class305.aBoolean3870) method2454(6253, i_59_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), i_61_, class101, var_renderer, i_60_)
+                        if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_59_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), i_61_, class101, var_renderer, i_60_)
                         else method2453(i_59_, var_renderer, i_61_, (this.aClass64Array10323[0]), 0, i_60_, class101, class302.anInt3834)
                     }
                     if (class302.anInt3840 == 10 && class302.anInt3833 >= 0 && (class302.anInt3833 < (LoadingBarRenderer.aPlayerArray5058)!!.size)) {
@@ -379,7 +379,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                         if (player_62_ != null) {
                             val i_63_ = (-(LocalPlayerState.aPlayer_1907!!.x) + (player_62_.x))
                             val i_64_ = (-(LocalPlayerState.aPlayer_1907!!.y) + (player_62_.y))
-                            if (Class305.aBoolean3870) method2454(6253, i_63_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_renderer, i_64_)
+                            if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_63_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_renderer, i_64_)
                             else method2453(i_63_, var_renderer, 92160000, (this.aClass64Array10323[0]), i xor 0x1, i_64_, class101, class302.anInt3834)
                         }
                     }
@@ -392,7 +392,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         class101.method891(this.x, (this.anInt6382 + (-5 + -(this.anInt10274))), this.y)
         if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aClass64Array10323).size, true, false)
         this.method2432(var_renderer, -15074, class101, false, this.aClass64Array10323)
-        if (Class305.aBoolean3870) {
+        if (ParticleSystemRenderer.aBoolean3870) {
             for (i_65_ in (this.aClass64Array10323).indices) {
                 if (this.aClass64Array10323[i_65_] != null) this.aClass64Array10323[i_65_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![i_65_]), LocalPlayerState.anInt1906, (if (this != LocalPlayerState.aPlayer_1907) 0 else 1))
             }
@@ -403,7 +403,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         }
         if (this.aClass318_Sub10_10327 != null) {
             val class98 = this.aClass318_Sub10_10327!!.method2525()
-            if (Class305.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
+            if (ParticleSystemRenderer.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         var i_67_ = 0

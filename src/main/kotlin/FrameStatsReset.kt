@@ -910,7 +910,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ItemDefinition.anInt2806 = 0
             Class97.anInt1545 = 0
             Class59_Sub1_Sub1.anInt8654 = 0
-            Class305.anInt3856 = 0
+            ParticleSystemRenderer.anInt3856 = 0
             SizeBoundedSoftCache.anInt2323 = 0
             OpenGlRenderer.anInt7569 = 0
             TypedRecordTable.anInt3689 = 0
@@ -2945,7 +2945,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class78.anInt1309 = 0
             Class348_Sub23_Sub3.anInt9045 = 0
             NativeVertexBuffer.anInt4830 = 0
-            Class305.anInt3864 = 0
+            ParticleSystemRenderer.anInt3864 = 0
             Player.anInt10548 = 0
             SceneryDetailOptionState.anInt6088 = 0
             BufferedMessageQueue.anInt3579 = 0
@@ -2963,7 +2963,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FogOptionState.anInt6053 = 0
             Class348_Sub37.anInt6996 = 0
             NpcEntityUpdater.anInt3651 = 0
-            Class305.anInt3860 = 0
+            ParticleSystemRenderer.anInt3860 = 0
             Class64_Sub2.anInt5522 = 0
             GlTextureBase.anInt5097 = 0
             Class348_Sub40_Sub34.anInt9433 = 0
@@ -3353,7 +3353,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub50.anInt7210 = 0
             Class377.anInt9862 = 0
             Class59_Sub1_Sub1.anInt8658 = 0
-            Class305.anInt3868 = 0
+            ParticleSystemRenderer.anInt3868 = 0
             RegionSceneLoader.anInt3702 = 0
             ScriptOpcodeHolder.anInt2337 = 0
             Class348_Sub37.anInt6999 = 0

@@ -41,7 +41,7 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
         var aClass60_3301: Class60? = Class60(30)
         var anInt3302: Int = 0
         @JvmField
-        var aClass305_3304: Class305? = null
+        var aParticleSystemRenderer_3304: ParticleSystemRenderer? = null
         @JvmField
         var anInt3306: Int = 0
 
@@ -49,7 +49,7 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
         fun method1975(i: Byte) {
             aClass60_3301 = null
             val i_0_ = -54 / ((i - 77) / 37)
-            aClass305_3304 = null
+            aParticleSystemRenderer_3304 = null
             aByteArray3300 = null
         }
     }

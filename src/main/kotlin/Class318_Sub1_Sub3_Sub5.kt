@@ -197,11 +197,11 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         class101.method891(aDouble10408.toInt(), aDouble10384.toInt(), aDouble10371.toInt())
         method2473(class101, class64, var_renderer, -2393)
         val class318_sub4 = method136(i, false, false)
-        if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
+        if (!ParticleSystemRenderer.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         if (aClass318_Sub10_10378 != null) {
             val class98 = aClass318_Sub10_10378!!.method2525()
-            if (Class305.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
+            if (ParticleSystemRenderer.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         aBoolean10399 = class64.F()

@@ -231,7 +231,7 @@ import CacheStateResetter.method176
 import CircleHitbox.Companion.method322
 import HeightMapNoise.method2281
 import ProjectileDefinition.method2286
-import Class305.Companion.method2294
+import ParticleSystemRenderer.Companion.method2294
 import Class309.Companion.method2310
 import Class31.Companion.method328
 import Class311.Companion.method2317
@@ -686,8 +686,8 @@ class Client : GameAppletFrame() {
         } catch (exception: Exception) {
             /* empty */
         }
-        LoadProgressCounters.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (-124).toByte())
-        GlTexture1D.aClass373_8552 = method2941(Class305.aCanvas3869, 0, true)
+        LoadProgressCounters.aClass346_2449 = Class348_Sub3.method2743(ParticleSystemRenderer.aCanvas3869, (-124).toByte())
+        GlTexture1D.aClass373_8552 = method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
         //        try {
         if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 != null) {
             TextureCubeProvider.aClass78_6328 = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
@@ -1640,13 +1640,13 @@ class Client : GameAppletFrame() {
     public override fun method87(i: Byte) {
         if (i > -11) aNodeDeque_5185 = null
         anInt5173++
-        if (Class93.anApplet1530 != null && Class305.aCanvas3869 == null && !Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
+        if (Class93.anApplet1530 != null && ParticleSystemRenderer.aCanvas3869 == null && !Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
             try {
                 val var_class: Class<*> = Class93.anApplet1530!!.javaClass
                 val field = var_class.getDeclaredField("canvas")
-                Class305.aCanvas3869 = field.get(Class93.anApplet1530) as? Canvas
+                ParticleSystemRenderer.aCanvas3869 = field.get(Class93.anApplet1530) as? Canvas
                 field.set(Class93.anApplet1530, null)
-                if (Class305.aCanvas3869 != null) return
+                if (ParticleSystemRenderer.aCanvas3869 != null) return
             } catch (exception: Exception) {
                 if (Loader.trace) {
                     exception.printStackTrace()
@@ -2151,7 +2151,7 @@ class Client : GameAppletFrame() {
                                 if (class46.anInt765 != 0) {
                                     if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == Class312.anInt3932)) {
                                         Class348_Sub1.aClass46_6561 = class46
-                                        if (KeyboardLayoutCache.aClass305_3304 != null) KeyboardLayoutCache.aClass305_3304!!.method2292(123, Class348_Sub8.aRenderer6654!!, class46.anInt789)
+                                        if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2292(123, Class348_Sub8.aRenderer6654!!, class46.anInt789)
                                         if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {
                                             if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                                 SceneryDetailOptionState.method1823(Class348_Sub8.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
