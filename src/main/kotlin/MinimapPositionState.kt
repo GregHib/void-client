@@ -71,7 +71,7 @@ class MinimapPositionState {
                 method338(0, i_4_)
                 if (i.toInt() == -43) {
                     val i_5_ = (LocalPlayerState.aPlayer_1907!!.method2436(103.toByte()) shl 8)
-                    Class335.method2655(98, LocalPlayerState.aPlayer_1907!!.plane.toInt(), Class348_Sub51.anInt7267, i_5_ + (LocalPlayerState.aPlayer_1907!!.y), (LocalPlayerState.aPlayer_1907!!.x - -i_5_))
+                    TimingCounters.method2655(98, LocalPlayerState.aPlayer_1907!!.plane.toInt(), Class348_Sub51.anInt7267, i_5_ + (LocalPlayerState.aPlayer_1907!!.y), (LocalPlayerState.aPlayer_1907!!.x - -i_5_))
                     Class348_Sub51.anInt7267 = 0
                 }
             } catch (runtimeexception: RuntimeException) {

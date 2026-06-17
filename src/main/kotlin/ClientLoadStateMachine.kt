@@ -240,7 +240,7 @@ object ClientLoadStateMachine {
             while (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000 > i_13_) {
                 if (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
                     GlslEnvMaterialPass.aBooleanArray6270!![i_13_] = true
-                    Class335.anInt4168++
+                    TimingCounters.anInt4168++
                 }
                 Class77.anIntArray1303!![i_13_] = -1
                 i_13_++

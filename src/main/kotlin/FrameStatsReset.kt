@@ -751,7 +751,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub13.anInt6756 = 0
             Class348_Sub40_Sub39.anInt9484 = 0
             NativeTerrainTile.anInt8287 = 0
-            Class335.anInt4169 = 0
+            TimingCounters.anInt4169 = 0
             TexGenMaterialPass.anInt6257 = 0
             ArbFogMaterialPass.anInt6185 = 0
             OpenGlRenderer.anInt7567 = 0
@@ -2818,7 +2818,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CacheIndexManager.anInt3945 = 0
             GlTextureBase.anInt5092 = 0
             NodeDeque.anInt3328 = 0
-            Class335.anInt4166 = 0
+            TimingCounters.anInt4166 = 0
             BooleanGraphicsOptionState.anInt5844 = 0
             ItemDefinition.anInt2828 = 0
             Class64_Sub2.anInt5437 = 0

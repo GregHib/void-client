@@ -132,8 +132,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
         if (container === Class52.aFrame4904) {
             val insets = (Class52.aFrame4904 as Container).getInsets()
-            ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167)
-        } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
+            ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -TimingCounters.anInt4167)
+        } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, TimingCounters.anInt4167)
         ParticleSystemRenderer.aCanvas3869!!.addFocusListener(this)
         ParticleSystemRenderer.aCanvas3869!!.requestFocus()
         Class348_Sub40_Sub16.aBoolean9229 = true
@@ -176,8 +176,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
             if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
                 val insets = Class52.aFrame4904!!.getInsets()
-                ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167))
-            } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
+                ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + TimingCounters.anInt4167))
+            } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, TimingCounters.anInt4167)
         }
         method93(-11018)
         if (i > -107) method90(true, true)
@@ -366,7 +366,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
                 LocTypeDefinition.anInt4017 = i
                 SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
-                Class335.anInt4167 = 0
+                TimingCounters.anInt4167 = 0
                 Class348_Sub1_Sub3.anInt8818 = i_15_
                 Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530
@@ -394,7 +394,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_
             Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
             Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
-            Class335.anInt4167 = 0
+            TimingCounters.anInt4167 = 0
             Class348_Sub48.anInt7129 = 0
             Class348_Sub1_Sub3.anInt8818 = i_21_
             Class348_Sub8.anApplet6662 = null

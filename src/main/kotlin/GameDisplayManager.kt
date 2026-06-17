@@ -55,7 +55,7 @@ object GameDisplayManager {
                 LocTypeDefinition.anInt4017 = Class92.anInt1524
                 Class348_Sub42_Sub8_Sub2.anInt10432 = OpenGlRenderer.anInt7666
                 Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 + -Class92.anInt1524) / 2
-                Class335.anInt4167 = 0
+                TimingCounters.anInt4167 = 0
             } else method2158(56.toByte())
             if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                 if (LocTypeDefinition.anInt4017 < 1024 && (Class348_Sub42_Sub8_Sub2.anInt10432 < 768)) {
@@ -69,8 +69,8 @@ object GameDisplayManager {
                 else method3980(86, ParticleSystemRenderer.aCanvas3869!!)
                 if (Class52.aFrame4904 === container) {
                     val insets = Class52.aFrame4904!!.getInsets()
-                    ParticleSystemRenderer.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129 + insets.left), (insets.top - -Class335.anInt4167))
-                } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
+                    ParticleSystemRenderer.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129 + insets.left), (insets.top - -TimingCounters.anInt4167))
+                } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, TimingCounters.anInt4167)
             }
             Class50_Sub1.aBoolean5219 = i_2_ >= 2
             if (RenderNode.anInt9721 != -1) method1713(true, 520)

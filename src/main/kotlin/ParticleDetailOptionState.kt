@@ -136,7 +136,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
                 val string = method3561(i_13_, class46, true)
                 if (string != null) {
                     Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-122).toByte(), false, class46.anInt704, class46.anInt812, true, 1011, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string, (1 + i_13_).toLong(), MinimapRenderer.method888(57.toByte(), i_13_, class46))
-                    Class335.anInt4169++
+                    TimingCounters.anInt4169++
                 }
             }
             val string = method1753(0, class46)
@@ -148,7 +148,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
                 val string_15_ = method3561(i_14_, class46, true)
                 if (string_15_ != null) {
                     Class50_Sub3.method466(false, class46.aString752, class46.anInt830, (-67).toByte(), false, class46.anInt704, class46.anInt812, true, 18, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string_15_, (1 + i_14_).toLong(), MinimapRenderer.method888(57.toByte(), i_14_, class46))
-                    Class335.anInt4169++
+                    TimingCounters.anInt4169++
                 }
             }
             if (Client.method105(class46)!!.method3305(0)) {

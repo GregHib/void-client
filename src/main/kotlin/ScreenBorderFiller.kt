@@ -38,7 +38,7 @@ object ScreenBorderFiller {
         anInt1956++
         if (Class34.aFrame476 == null) {
             val i_1_ = Class348_Sub48.anInt7129
-            val i_2_ = Class335.anInt4167
+            val i_2_ = TimingCounters.anInt4167
             if (i > -25) ScreenBorderFiller.method1172((-22).toByte(), -1)
             val i_3_ = -i_1_ + -LocTypeDefinition.anInt4017 + SocketFactory.anInt3473
             val i_4_ = -i_2_ + (Class348_Sub22.anInt6857 + -Class348_Sub42_Sub8_Sub2.anInt10432)

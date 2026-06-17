@@ -1,7 +1,7 @@
 /* Class335 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class335 {
+object TimingCounters {
     var anInt4166: Int = 0
     var anInt4167: Int = 0
     var anInt4168: Int = 0

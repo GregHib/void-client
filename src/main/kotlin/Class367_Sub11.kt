@@ -204,7 +204,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                         }
                         if (Class348_Sub42_Sub12.method3229(-86) == 1) {
                             LocTypeDefinition.anInt4017 = Class92.anInt1524
-                            Class335.anInt4167 = 0
+                            TimingCounters.anInt4167 = 0
                             Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 - Class92.anInt1524) / 2
                             Class348_Sub42_Sub8_Sub2.anInt10432 = OpenGlRenderer.anInt7666
                         } else method2158(56.toByte())
@@ -220,8 +220,8 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                         }
                         if (Class52.aFrame4904 === container) {
                             val insets = Class52.aFrame4904!!.getInsets()
-                            ParticleSystemRenderer.aCanvas3869!!.setLocation(insets.left - -Class348_Sub48.anInt7129, Class335.anInt4167 + insets.top)
-                        } else ParticleSystemRenderer.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129), Class335.anInt4167)
+                            ParticleSystemRenderer.aCanvas3869!!.setLocation(insets.left - -Class348_Sub48.anInt7129, TimingCounters.anInt4167 + insets.top)
+                        } else ParticleSystemRenderer.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129), TimingCounters.anInt4167)
                         if (RenderNode.anInt9721 != -1) method1713(true, 520)
                         ScreenBorderFiller.method1170((-78).toByte())
                     } else {

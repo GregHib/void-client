@@ -150,16 +150,16 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
                     Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 + -i_1_) / 2
                     val i_2_ = (min(Class348_Sub22.anInt6857, 600))
                     Class348_Sub42_Sub8_Sub2.anInt10432 = i_2_
-                    Class335.anInt4167 = 0
+                    TimingCounters.anInt4167 = 0
                 } else if (i_0_ == 1) {
                     val i_3_ = min(SocketFactory.anInt3473, 1024)
                     Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 + -i_3_) / 2
                     val i_4_ = (min(Class348_Sub22.anInt6857, 768))
                     LocTypeDefinition.anInt4017 = i_3_
-                    Class335.anInt4167 = 0
+                    TimingCounters.anInt4167 = 0
                     Class348_Sub42_Sub8_Sub2.anInt10432 = i_4_
                 } else {
-                    Class335.anInt4167 = 0
+                    TimingCounters.anInt4167 = 0
                     Class348_Sub42_Sub8_Sub2.anInt10432 = Class348_Sub22.anInt6857
                     Class348_Sub48.anInt7129 = 0
                     LocTypeDefinition.anInt4017 = SocketFactory.anInt3473
