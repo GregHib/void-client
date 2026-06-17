@@ -93,7 +93,7 @@ class MultiLevelOptionState : GraphicsOptionState {
             anInt6152++
             for (i_11_ in 0..4) SpotAnimDefinition.aBooleanArray2374!![i_11_] = false
             Class359.anInt4424 = Class59_Sub2_Sub2.anInt8685
-            Class283.anInt3662 = Class348_Sub42_Sub19.anInt9701
+            DataHolder.anInt3662 = Class348_Sub42_Sub19.anInt9701
             Class5_Sub3.anInt8368 = Class305.anInt3855
             Class348_Sub49_Sub1.anInt9751 = Class367_Sub11.anInt7396
             Class318_Sub1_Sub5_Sub2.anInt10163 = -1

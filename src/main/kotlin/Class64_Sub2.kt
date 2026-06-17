@@ -2141,15 +2141,15 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 val f_395_ = ((modelDefinition.anIntArray1867[i_376_]).toFloat() / 256.0f)
                                 if (i_387_.toInt() == 1) {
                                     val f_413_ = ((modelDefinition.anIntArray1844[i_376_]).toFloat() / 1024.0f)
-                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_388_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1847[i_388_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
-                                    f_379_ = Class283.aFloatArray3658!![1]
-                                    f = Class283.aFloatArray3658!![0]
-                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_389_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1847[i_389_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
-                                    f_381_ = Class283.aFloatArray3658!![1]
-                                    f_380_ = Class283.aFloatArray3658!![0]
-                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_390_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1847[i_390_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
-                                    f_382_ = Class283.aFloatArray3658!![0]
-                                    f_383_ = Class283.aFloatArray3658!![1]
+                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_388_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1847[i_388_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
+                                    f_379_ = DataHolder.aFloatArray3658!![1]
+                                    f = DataHolder.aFloatArray3658!![0]
+                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_389_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1847[i_389_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
+                                    f_381_ = DataHolder.aFloatArray3658!![1]
+                                    f_380_ = DataHolder.aFloatArray3658!![0]
+                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_390_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1847[i_390_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
+                                    f_382_ = DataHolder.aFloatArray3658!![0]
+                                    f_383_ = DataHolder.aFloatArray3658!![1]
                                     val f_414_ = f_413_ / 2.0f
                                     if ((i_394_.toInt() and 0x1) == 0) {
                                         if (f_414_ < -f + f_380_) {
@@ -2201,25 +2201,25 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                     val f_411_ = ((fs[5] * i_406_.toFloat() + (fs[3] * i_404_.toFloat() + i_405_.toFloat() * fs[4])) / f_408_)
                                     val f_412_ = ((i_405_.toFloat() * fs[7] + fs[6] * i_404_.toFloat() + fs[8] * i_406_.toFloat()) / f_409_)
                                     i_386_ = Class331.method2635(f_411_, false, f_412_, f_410_)
-                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_388_.toInt()]), (modelDefinition.anIntArray1847[i_388_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
-                                    f_379_ = Class283.aFloatArray3658!![1]
-                                    f = Class283.aFloatArray3658!![0]
-                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_389_.toInt()]), (modelDefinition.anIntArray1847[i_389_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
-                                    f_381_ = Class283.aFloatArray3658!![1]
-                                    f_380_ = Class283.aFloatArray3658!![0]
-                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_390_.toInt()]), (modelDefinition.anIntArray1847[i_390_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
-                                    f_382_ = Class283.aFloatArray3658!![0]
-                                    f_383_ = Class283.aFloatArray3658!![1]
+                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_388_.toInt()]), (modelDefinition.anIntArray1847[i_388_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
+                                    f_379_ = DataHolder.aFloatArray3658!![1]
+                                    f = DataHolder.aFloatArray3658!![0]
+                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_389_.toInt()]), (modelDefinition.anIntArray1847[i_389_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
+                                    f_381_ = DataHolder.aFloatArray3658!![1]
+                                    f_380_ = DataHolder.aFloatArray3658!![0]
+                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_390_.toInt()]), (modelDefinition.anIntArray1847[i_390_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
+                                    f_382_ = DataHolder.aFloatArray3658!![0]
+                                    f_383_ = DataHolder.aFloatArray3658!![1]
                                 } else if (i_387_.toInt() == 3) {
-                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_388_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_388_.toInt()]), i_392_, -4, fs)
-                                    f = Class283.aFloatArray3658!![0]
-                                    f_379_ = Class283.aFloatArray3658!![1]
-                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_389_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_389_.toInt()]), i_392_, -4, fs)
-                                    f_380_ = Class283.aFloatArray3658!![0]
-                                    f_381_ = Class283.aFloatArray3658!![1]
-                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_390_.toInt()]), Class283.aFloatArray3658, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_390_.toInt()]), i_392_, -4, fs)
-                                    f_382_ = Class283.aFloatArray3658!![0]
-                                    f_383_ = Class283.aFloatArray3658!![1]
+                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_388_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_388_.toInt()]), i_392_, -4, fs)
+                                    f = DataHolder.aFloatArray3658!![0]
+                                    f_379_ = DataHolder.aFloatArray3658!![1]
+                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_389_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_389_.toInt()]), i_392_, -4, fs)
+                                    f_380_ = DataHolder.aFloatArray3658!![0]
+                                    f_381_ = DataHolder.aFloatArray3658!![1]
+                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_390_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_390_.toInt()]), i_392_, -4, fs)
+                                    f_382_ = DataHolder.aFloatArray3658!![0]
+                                    f_383_ = DataHolder.aFloatArray3658!![1]
                                     if ((i_394_.toInt() and 0x1) == 0) {
                                         if (-f + f_382_ > 0.5f) {
                                             f_382_--

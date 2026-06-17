@@ -125,7 +125,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 val f = (-(((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)).toFloat() / 1000000.0f) + 1.0f)
                 Class286_Sub4.anInt6246 = (Class318_Sub1_Sub3_Sub2.anInt10047.toFloat() + f * (-Class318_Sub1_Sub3_Sub2.anInt10047 + Class286_Sub4.anInt6246).toFloat()).toInt()
                 Class305.anInt3855 = ((-Class5_Sub3.anInt8368 + Class305.anInt3855).toFloat() * f + Class5_Sub3.anInt8368.toFloat()).toInt()
-                Class348_Sub42_Sub19.anInt9701 = (Class283.anInt3662.toFloat() + (Class348_Sub42_Sub19.anInt9701 - Class283.anInt3662).toFloat() * f).toInt()
+                Class348_Sub42_Sub19.anInt9701 = (DataHolder.anInt3662.toFloat() + (Class348_Sub42_Sub19.anInt9701 - DataHolder.anInt3662).toFloat() * f).toInt()
                 Class59_Sub2_Sub2.anInt8685 = (Class359.anInt4424.toFloat() + f * (-Class359.anInt4424 + Class59_Sub2_Sub2.anInt8685).toFloat()).toInt()
                 var i_8_ = Class5.anInt4638 - CameraConfigDefinition.anInt3253
                 if (i_8_ <= 8192) {

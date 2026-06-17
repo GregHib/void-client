@@ -10,10 +10,10 @@ class MapLabelMenuEntry : AbstractMenuEntry() {
     var anInt5788: Int = -1
     var aString5794: String? = null
 
-    fun method1038(bool: Boolean): Class283 {
+    fun method1038(bool: Boolean): DataHolder {
         if (bool != false) method1040(-125)
         anInt5789++
-        return Class373_Sub2.aClass283Array7446!![anInt1711]!!
+        return Class373_Sub2.aDataHolderArray7446!![anInt1711]!!
     }
 
     companion object {

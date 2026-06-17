@@ -227,7 +227,7 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
         @JvmField
         var anInt7445: Int = 0
         @JvmField
-        var aClass283Array7446: Array<Class283?>? = null
+        var aDataHolderArray7446: Array<DataHolder?>? = null
         @JvmField
         var anInt7447: Int = 0
         @JvmField
@@ -259,7 +259,7 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
         @JvmStatic
         fun method3609(i: Byte) {
             val i_14_ = 49 % ((i - -35) / 41)
-            aClass283Array7446 = null
+            aDataHolderArray7446 = null
         }
     }
 }

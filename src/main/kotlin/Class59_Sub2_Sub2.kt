@@ -46,12 +46,12 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         fun method569(i: Byte, class348_sub49: Class348_Sub49) {
             anInt8675++
             val i_0_ = class348_sub49.readSmart(-128)
-            Class373_Sub2.aClass283Array7446 = arrayOfNulls<Class283>(i_0_)
+            Class373_Sub2.aDataHolderArray7446 = arrayOfNulls<DataHolder>(i_0_)
             var i_1_ = 0
             while (i_0_ > i_1_) {
-                Class373_Sub2.aClass283Array7446!![i_1_] = Class283()
-                Class373_Sub2.aClass283Array7446!![i_1_]!!.anInt3657 = class348_sub49.readSmart(-124)
-                Class373_Sub2.aClass283Array7446!![i_1_]!!.aString3663 = class348_sub49.method3371(-13487)
+                Class373_Sub2.aDataHolderArray7446!![i_1_] = DataHolder()
+                Class373_Sub2.aDataHolderArray7446!![i_1_]!!.anInt3657 = class348_sub49.readSmart(-124)
+                Class373_Sub2.aDataHolderArray7446!![i_1_]!!.aString3663 = class348_sub49.method3371(-13487)
                 i_1_++
             }
             Class318_Sub1_Sub2.anInt8731 = class348_sub49.readSmart(-127)
