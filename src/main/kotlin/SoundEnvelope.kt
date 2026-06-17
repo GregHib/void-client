@@ -288,9 +288,9 @@ class SoundEnvelope {
                 val i_3_ = class348_sub49_sub2.readBits((-24).toByte(), 6)
                 val bool = (class348_sub49_sub2.readBits((-24).toByte(), 1) == 1)
                 if (bool) GlFramebufferBlitter.anIntArray279!![ProjectionCameraTransform.anInt5768++] = i
-                if (Class294.aPlayerArray5058!![i] != null) throw RuntimeException("hr:lr")
+                if (LoadingBarRenderer.aPlayerArray5058!![i] != null) throw RuntimeException("hr:lr")
                 val class359 = Class348_Sub17.aClass359Array6802!![i]!!
-                val player = (Player().also { Class294.aPlayerArray5058!![i] = it })
+                val player = (Player().also { LoadingBarRenderer.aPlayerArray5058!![i] = it })
                 player.anInt10290 = i
                 if (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i] != null) player.method2452(84.toByte(), CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i]!!)
                 player.method2435((-108).toByte(), (class359.anInt4423), true)

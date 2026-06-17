@@ -449,7 +449,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     } else if (i_40_ shr 28 != 0) {
                         val i_52_ = i_40_ and 0xffff
                         val player: Player?
-                        if (Class348_Sub42_Sub11.anInt9591 != i_52_) player = (Class294.aPlayerArray5058!![i_52_])
+                        if (Class348_Sub42_Sub11.anInt9591 != i_52_) player = (LoadingBarRenderer.aPlayerArray5058!![i_52_])
                         else player = LocalPlayerState.aPlayer_1907
                         if (player != null) {
                             if (i_38_ == 65535) i_38_ = -1
@@ -819,7 +819,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == ParserSpecialCharsHolder.aIntRange_1901) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val player: Player?
-                if (i != Class348_Sub42_Sub11.anInt9591) player = Class294.aPlayerArray5058!![i]
+                if (i != Class348_Sub42_Sub11.anInt9591) player = LoadingBarRenderer.aPlayerArray5058!![i]
                 else player = LocalPlayerState.aPlayer_1907
                 if (player == null) {
                     Class348_Sub3.aIntRange_6584 = null
@@ -1068,10 +1068,10 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (SocketStreamWorker.aIntRange_2665 == Class348_Sub3.aIntRange_6584) {
-                for (i in Class294.aPlayerArray5058!!.indices) {
-                    if (Class294.aPlayerArray5058!![i] != null) {
-                        Class294.aPlayerArray5058!![i]!!.anIntArray10236 = null
-                        Class294.aPlayerArray5058!![i]!!.anInt10286 = -1
+                for (i in LoadingBarRenderer.aPlayerArray5058!!.indices) {
+                    if (LoadingBarRenderer.aPlayerArray5058!![i] != null) {
+                        LoadingBarRenderer.aPlayerArray5058!![i]!!.anIntArray10236 = null
+                        LoadingBarRenderer.aPlayerArray5058!![i]!!.anInt10286 = -1
                     }
                 }
                 var i = 0

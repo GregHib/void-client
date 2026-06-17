@@ -140,7 +140,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
                 if (anInt10387 < 0) {
                     val i_9_ = -1 + -anInt10387
                     if (i_9_ == Class348_Sub42_Sub11.anInt9591) class318_sub1_sub3_sub3 = LocalPlayerState.aPlayer_1907
-                    else class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![i_9_])
+                    else class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_9_])
                 } else {
                     val i_10_ = -1 + anInt10387
                     val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_10_.toLong(), -6008) as Class348_Sub22?)

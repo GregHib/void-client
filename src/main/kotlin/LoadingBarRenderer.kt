@@ -5,7 +5,10 @@ import java.awt.Font
 import java.awt.FontMetrics
 import java.awt.Image
 
-class Class294 : Interface16 {
+/*
+ * Class294
+ */
+class LoadingBarRenderer : Interface16 {
     private var aBoolean5020 = false
     private var anInt5021 = 0
     private var aBoolean5022 = false

@@ -21,7 +21,7 @@ internal object Class375 {
         if (i < 59) Class375.method3614(-51, 64, -115, null, -96)
         for (i_0_ in 0..<ProjectionCameraTransform.anInt5768) {
             val i_1_ = GlFramebufferBlitter.anIntArray279!![i_0_]
-            val player = Class294.aPlayerArray5058!![i_1_]
+            val player = LoadingBarRenderer.aPlayerArray5058!![i_1_]
             var i_2_ = class348_sub49_sub2!!.readUnsignedByte(255)
             if ((i_2_ and 0x40) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) shl 8
             if ((i_2_ and 0x4000) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) shl 16

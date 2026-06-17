@@ -148,7 +148,7 @@ class InputStream_Sub2 : InputStream() {
                             var class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3? = null
                             if (i_58_ < 0) {
                                 val i_67_ = -i_58_ + -1
-                                if (Class348_Sub42_Sub11.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![i_67_])
+                                if (Class348_Sub42_Sub11.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_67_])
                                 else class318_sub1_sub3_sub3 = (LocalPlayerState.aPlayer_1907)
                             } else {
                                 val i_68_ = i_58_ + -1

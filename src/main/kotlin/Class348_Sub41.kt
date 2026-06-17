@@ -160,7 +160,7 @@ class Class348_Sub41 : Class348() {
                 }
                 if (i_15_ > 122) {
                     for (i_30_ in 0..2047) {
-                        val player = (Class294.aPlayerArray5058!![i_30_])
+                        val player = (LoadingBarRenderer.aPlayerArray5058!![i_30_])
                         if (player != null) {
                             for (i_31_ in 0..9) {
                                 player.anIntArray10320!![i_31_] -= i_20_

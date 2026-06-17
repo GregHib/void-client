@@ -72,7 +72,7 @@ class Class312 {
                 RegionSceneLoader.anInt3699 = 0
                 method3153(0)
                 method3147(27.toByte())
-                for (i_0_ in 0..2047) Class294.aPlayerArray5058!![i_0_] = null
+                for (i_0_ in 0..2047) LoadingBarRenderer.aPlayerArray5058!![i_0_] = null
                 LocalPlayerState.aPlayer_1907 = null
                 var i_1_ = 0
                 while (Class348_Sub32.anInt6930 > i_1_) {

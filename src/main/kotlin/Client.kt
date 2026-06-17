@@ -218,7 +218,7 @@ import ParticleEmitterDefExt.Companion.method2190
 import RegionSceneLoader.method2191
 import CutsceneSequenceData.Companion.method2199
 import MapArchiveSource.Companion.method2202
-import Class294.Companion.method2214
+import LoadingBarRenderer.Companion.method2214
 import Class295.Companion.method2223
 import Class296.Companion.method2225
 import Class296.Companion.method2228
@@ -1880,7 +1880,7 @@ class Client : GameAppletFrame() {
             val i_8_ = if (Class373_Sub2.aBoolean7444) i_7_ else i_7_ + ModelDefinitionLoader.anInt2057
             for (i_9_ in 0..<i_8_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
-                if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_9_]])
+                if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_9_]])
                 else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_9_ - i_7_].toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i) {
                     class318_sub1_sub3_sub3.anInt10261 = 0
@@ -2559,7 +2559,7 @@ class Client : GameAppletFrame() {
             val i_92_ = if (Class373_Sub2.aBoolean7444) i else i + ModelDefinitionLoader.anInt2057
             for (i_93_ in 0..<i_92_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
-                if (i_93_ < i) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_93_]])
+                if (i_93_ < i) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_93_]])
                 else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_93_ - i].toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.anInt10285 >= 0) {
                     val i_94_ = class318_sub1_sub3_sub3.method2436(74.toByte())
@@ -2578,7 +2578,7 @@ class Client : GameAppletFrame() {
             val i_112_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
             val bool = i_112_ == 1 && i > 200 || i_112_ == 0 && i > 50
             for (i_113_ in 0..<i) {
-                val player = Class294.aPlayerArray5058!![`is`!![i_113_]]
+                val player = LoadingBarRenderer.aPlayerArray5058!![`is`!![i_113_]]
                 if (!player!!.method2457((-90).toByte())) player.anInt10285 = -1
                 else if (player.aBoolean10551) player.anInt10285 = -1
                 else {
@@ -2637,7 +2637,7 @@ class Client : GameAppletFrame() {
                             if (npc!!.anInt10285 >= 0) npc.anInt10285 += 2048
                         }
                     } else if (class302.anInt3840 == 10) {
-                        val player = (Class294.aPlayerArray5058!![class302.anInt3833])
+                        val player = (LoadingBarRenderer.aPlayerArray5058!![class302.anInt3833])
                         if (player != null && (player != LocalPlayerState.aPlayer_1907) && player.anInt10285 >= 0) player.anInt10285 += 2048
                     }
                 }
@@ -2649,7 +2649,7 @@ class Client : GameAppletFrame() {
             val `is` = ScrollTexMaterialPass.anIntArray6290
             for (i_123_ in 0..<i_122_ + ModelDefinitionLoader.anInt2057) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
-                if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_123_]])
+                if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_123_]])
                 else class318_sub1_sub3_sub3 = (NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as Class348_Sub22).aNpc_6859
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i && (class318_sub1_sub3_sub3.anInt10285) >= 0) {
                     val i_124_ = class318_sub1_sub3_sub3.method2436(114.toByte())

@@ -9,7 +9,7 @@ import kotlin.concurrent.Volatile
 * Visit http://jode.sourceforge.net/
 */
 class Class311 : Runnable {
-    private var anInterface16_3907: Interface16 = Class294()
+    private var anInterface16_3907: Interface16 = LoadingBarRenderer()
     private var aBoolean3908 = false
 
     @Volatile
@@ -64,7 +64,7 @@ class Class311 : Runnable {
         synchronized(this) {
             try {
                 anInt3920++
-                if (anInterface16_3907 is Class294) anInterface16_3907.method58(aBoolean3908, -104)
+                if (anInterface16_3907 is LoadingBarRenderer) anInterface16_3907.method58(aBoolean3908, -104)
                 else {
                     val l_1_ = method599(-104)
                     if (Class348_Sub8.aRenderer6654 != null && anInterface16_3919 != null && anInterface16_3919!!.method55((-58).toByte()) != 0 && (aLong3914 >= l_1_ - anInterface16_3919!!.method55((-58).toByte()).toLong())) {
@@ -97,7 +97,7 @@ class Class311 : Runnable {
                         anInterface16_3907.method58((aBoolean3908 || (Class348_Sub8.aRenderer6654 != null && Class348_Sub8.aRenderer6654!!.method3655())), -90)
                     }
                     try {
-                        if (Class348_Sub8.aRenderer6654 != null && anInterface16_3907 !is Class294) Class348_Sub8.aRenderer6654!!.method3689(57.toByte())
+                        if (Class348_Sub8.aRenderer6654 != null && anInterface16_3907 !is LoadingBarRenderer) Class348_Sub8.aRenderer6654!!.method3689(57.toByte())
                     } catch (exception_sub1: Exception_Sub1) {
                         method1242((exception_sub1.message + " (Recovered) " + Class79.aClient1367!!.method81(80.toByte())), exception_sub1, 15004)
                         method3553(true, 114.toByte(), 0)
@@ -113,7 +113,7 @@ class Class311 : Runnable {
                 container.getSize()
                 if (Class52.aFrame4904 === container) Class52.aFrame4904!!.getInsets()
                 aBoolean3908 = false
-                if (Class348_Sub8.aRenderer6654 != null && (anInterface16_3907 !is Class294) && (aClass56_3916!!.method525(-112) < Class56.aClass56_1041!!.method525(-127))) method3556(false)
+                if (Class348_Sub8.aRenderer6654 != null && (anInterface16_3907 !is LoadingBarRenderer) && (aClass56_3916!!.method525(-112) < Class56.aClass56_1041!!.method525(-127))) method3556(false)
             } catch (exception: Exception) {
                 return true
             }

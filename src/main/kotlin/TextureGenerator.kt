@@ -39,7 +39,7 @@ abstract class TextureGenerator {
             val i_0_ = Class328_Sub1.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290!!
             for (i_1_ in 0..<i_0_) {
-                val player = Class294.aPlayerArray5058!![`is`[i_1_]]
+                val player = LoadingBarRenderer.aPlayerArray5058!![`is`[i_1_]]
                 if (player != null && (player.anInt10264) > 0) {
                     player.anInt10264--
                     if ((player.anInt10264) == 0) player.aString10292 = null

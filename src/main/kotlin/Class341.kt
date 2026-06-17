@@ -124,7 +124,7 @@ class Class341 {
                     method3616(12639)
                     Class348_Sub42_Sub3.method3177(-78, false)
                     for (i_12_ in 0..2047) {
-                        val player = (Class294.aPlayerArray5058!![i_12_])
+                        val player = (LoadingBarRenderer.aPlayerArray5058!![i_12_])
                         if (player != null) {
                             var i_13_ = 0
                             while (((player.aClass64Array10323).size > i_13_)) {

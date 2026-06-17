@@ -219,7 +219,7 @@ class Class34 {
             val i_32_ = Class328_Sub1.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
             for (i_33_ in 0..<i_32_) {
-                val player = Class294.aPlayerArray5058!![`is`!![i_33_]]
+                val player = LoadingBarRenderer.aPlayerArray5058!![`is`!![i_33_]]
                 if (player != null) Class322.method2556(false, player.method2436(60.toByte()), player)
             }
             if (i != 4740) method347(null, null, 79, -21, 64)

@@ -202,7 +202,7 @@ class VarpStore : Interface17 {
         fun method1317(i: Int, i_36_: Byte, i_37_: Int): Boolean {
             anInt5079++
             if (i_36_ >= -67) method1317(43, 36.toByte(), 20)
-            return Class294.method2217(i, i_37_, 0) or ((i_37_ and 0x70000) != 0) || CompassSmoother.method2015(i_37_, i, 7)
+            return LoadingBarRenderer.method2217(i, i_37_, 0) or ((i_37_ and 0x70000) != 0) || CompassSmoother.method2015(i_37_, i, 7)
         }
 
         fun method1318(i: Int) {

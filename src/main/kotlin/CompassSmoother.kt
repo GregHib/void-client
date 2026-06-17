@@ -93,7 +93,7 @@ class CompassSmoother {
         fun method2015(i: Int, i_0_: Int, i_1_: Int): Boolean {
             anInt3375++
             if (i_1_ != 7) return false
-            return ((Class294.method2217(i_0_, i, i_1_ xor 0x7) or method3056(115, i, i_0_) or method3073(i_0_, i, 50.toByte())) and method1258(i, -9301, i_0_))
+            return ((LoadingBarRenderer.method2217(i_0_, i, i_1_ xor 0x7) or method3056(115, i, i_0_) or method3073(i_0_, i, 50.toByte())) and method1258(i, -9301, i_0_))
         }
 
         @JvmStatic

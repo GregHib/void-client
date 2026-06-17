@@ -248,7 +248,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FixedFunctionMaterialPass.anInt6209 = 0
             ServerConnectionInfo.anInt2149 = 0
             Class318_Sub1_Sub2.anInt8734 = 0
-            Class294.anInt5027 = 0
+            LoadingBarRenderer.anInt5027 = 0
             Class34.anInt471 = 0
             Class46.anInt766 = 0
             ConfigIdPair.anInt402 = 0
@@ -268,7 +268,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5417 = 0
             Class98.anInt1570 = 0
             Class296.anInt3775 = 0
-            Class294.anInt5049 = 0
+            LoadingBarRenderer.anInt5049 = 0
             NoOpGraphicsOptionState.anInt6045 = 0
             Class377.anInt9854 = 0
             AudioResampler.anInt2160 = 0
@@ -402,7 +402,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class51.anInt867 = 0
             Class318_Sub1_Sub5_Sub1.anInt10121 = 0
             NativeRenderNode.anInt10469 = 0
-            Class294.anInt5038 = 0
+            LoadingBarRenderer.anInt5038 = 0
             Class88.anInt1494 = 0
             Class62.anInt1111 = 0
             Class377.anInt9898 = 0
@@ -606,7 +606,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub5_Sub1.anInt10146 = 0
             Class66.anInt1162 = 0
             RenderableGroup.anInt5009 = 0
-            Class294.anInt5048 = 0
+            LoadingBarRenderer.anInt5048 = 0
             Class66.anInt1165 = 0
             BoundsConstraintEntry.anInt5166 = 0
             FloatCameraTransform.anInt5728 = 0
@@ -1633,7 +1633,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7885 = 0
             SpriteArchiveLoader.anInt380 = 0
             InputStream_Sub2.anInt81 = 0
-            Class294.anInt5043 = 0
+            LoadingBarRenderer.anInt5043 = 0
             Class348_Sub5.anInt6629 = 0
             Class367_Sub8.anInt7359 = 0
             Class367_Sub1.anInt7282 = 0
@@ -2076,7 +2076,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LocDefinitionCache.anInt3445 = 0
             Class66.anInt1171 = 0
             Class318_Sub1_Sub3_Sub3.anInt10235 = 0
-            Class294.anInt5052 = 0
+            LoadingBarRenderer.anInt5052 = 0
             CustomCursorsOptionState.anInt5926 = 0
             GameAppletFrame.anInt15 = 0
             Class46.anInt829 = 0
@@ -2695,7 +2695,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ScrollingWidgetComponentNode.anInt8379 = 0
             ParticleEmitterNode.anInt181 = 0
             Class348_Sub40_Sub6.anInt9136 = 0
-            Class294.anInt5039 = 0
+            LoadingBarRenderer.anInt5039 = 0
             Class377.anInt9894 = 0
             Class93.anInt1532 = 0
             Class64_Sub2.anInt5487 = 0
@@ -2773,7 +2773,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class368.anInt4494 = 0
             NativeRenderer.anInt8051 = 0
             TexGenMaterialPass.anInt6253 = 0
-            Class294.anInt5031 = 0
+            LoadingBarRenderer.anInt5031 = 0
             Class318_Sub1_Sub1_Sub2.anInt9973 = 0
             WaterMaterialPass.anInt6216 = 0
             Class309.anInt4823 = 0
@@ -2785,7 +2785,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RegionSceneLoader.anInt3698 = 0
             Class59_Sub1_Sub2.anInt8661 = 0
             RectangleBounds.anInt2152 = 0
-            Class294.anInt5033 = 0
+            LoadingBarRenderer.anInt5033 = 0
             WidgetNodeLink.anInt2041 = 0
             Class348_Sub23_Sub1.anInt8997 = 0
             Class348_Sub40.anInt7027 = 0
@@ -2842,7 +2842,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CustomCursorsOptionState.anInt5927 = 0
             CameraDistanceOptionState.anInt5852 = 0
             NativeRenderer.anInt7902 = 0
-            Class294.anInt5055 = 0
+            LoadingBarRenderer.anInt5055 = 0
             Class348_Sub16_Sub3.anInt8952 = 0
             Class348_Sub40_Sub22.anInt9296 = 0
             DisplayModeOptionState.anInt6102 = 0
@@ -3155,7 +3155,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub19.anInt9255 = 0
             Class348_Sub42_Sub7.anInt9544 = 0
             Class348_Sub23_Sub2.anInt9030 = 0
-            Class294.anInt5025 = 0
+            LoadingBarRenderer.anInt5025 = 0
             Class348_Sub3.anInt6570 = 0
             Class77.anInt1299 = 0
             Class318_Sub1_Sub1_Sub2.anInt9986 = 0
@@ -3702,7 +3702,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub9.anInt9168 = 0
             ProjectileConfigUtil.anInt397 = 0
             Class64_Sub2.anInt5489 = 0
-            Class294.anInt5028 = 0
+            LoadingBarRenderer.anInt5028 = 0
             Class367_Sub4.anInt7321 = 0
             Class348_Sub40_Sub26.anInt9345 = 0
             FloatCameraTransform.anInt5695 = 0
@@ -3831,7 +3831,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlCubeMapTexture.anInt8619 = 0
             Class346_Sub1.anInt6526 = 0
             NativeRenderer.anInt7895 = 0
-            Class294.anInt5061 = 0
+            LoadingBarRenderer.anInt5061 = 0
             MatrixCameraTransform.anInt5679 = 0
             Class348_Sub42_Sub11.anInt9585 = 0
             GlslMaterialPass.anInt6235 = 0
@@ -3996,7 +3996,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub5.anInt9127 = 0
             Class369_Sub3_Sub1.anInt10176 = 0
             NativeTerrainTile.anInt8316 = 0
-            Class294.anInt5044 = 0
+            LoadingBarRenderer.anInt5044 = 0
             SingletonMarker.anInt2599 = 0
             CompositeNpcModelBuilder.anInt2107 = 0
             Class348_Sub16_Sub3.anInt8890 = 0
@@ -4117,7 +4117,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RenderableGroup.anInt5016 = (80.0 * Math.random()).toInt() - 40
             ConnectionStateRefs.anInt319 = (Math.random() * 100.0).toInt() - 50
             method3089(-126)
-            for (k in 0..2047) Class294.aPlayerArray5058!![k] = null
+            for (k in 0..2047) LoadingBarRenderer.aPlayerArray5058!![k] = null
 
             ModelDefinitionLoader.anInt2057 = 0
             Class348_Sub32.anInt6930 = 0

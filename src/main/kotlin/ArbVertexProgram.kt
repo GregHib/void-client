@@ -86,7 +86,7 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
                             i_7_ = (-(npc.x) + (class318_sub1_sub3_sub3.x))
                         } else {
                             val i_11_ = i_3_ and 0x7fff
-                            val player = (Class294.aPlayerArray5058!![i_11_])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![i_11_])
                             if (player == null) {
                                 class318_sub1_sub3_sub3.method2423(67, i, -1)
                                 continue

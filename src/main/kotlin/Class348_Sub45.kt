@@ -40,7 +40,7 @@ abstract class Class348_Sub45 : Class348() {
             HintArrowOrMessage.aClass338Array2034 = arrayOfNulls<Class338>(500)
             Class69.anInt1200 = 0
             DetailLevelOptionState.anInt6115 = 0
-            Class294.aClass338Array5060 = arrayOfNulls<Class338>(1000)
+            LoadingBarRenderer.aClass338Array5060 = arrayOfNulls<Class338>(1000)
             if (i > -113) aClass304_7103 = null
             Class348_Sub42_Sub10.anInt9577 = 0
             Class348_Sub42_Sub19.aClass338Array9700 = arrayOfNulls<Class338>(500)

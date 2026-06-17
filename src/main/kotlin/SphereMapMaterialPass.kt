@@ -223,7 +223,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
             val bool = (class348_sub49_sub2.readBits((-24).toByte(), i) == 1)
             if (bool) GlFramebufferBlitter.anIntArray279!![ProjectionCameraTransform.anInt5768++] = i_22_
             val i_23_ = class348_sub49_sub2.readBits((-24).toByte(), 2)
-            val player = Class294.aPlayerArray5058!![i_22_]!!
+            val player = LoadingBarRenderer.aPlayerArray5058!![i_22_]!!
             if (i_23_ == 0) {
                 if (bool) player.aBoolean10539 = false
                 else {
@@ -235,7 +235,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     class359.aBoolean4426 = player.aBoolean10554
                     class359.anInt4425 = (player.anInt10275)
                     if (player.anInt10553 > 0) Class295.method2221(player, -28482)
-                    Class294.aPlayerArray5058!![i_22_] = null
+                    LoadingBarRenderer.aPlayerArray5058!![i_22_] = null
                     if (class348_sub49_sub2.readBits((-24).toByte(), 1) != 0) SoundEnvelope.method1538(i_22_, 105.toByte(), class348_sub49_sub2)
                 }
             } else if (i_23_ == 1) {

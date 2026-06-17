@@ -35,7 +35,7 @@ object NpcEntityUpdater {
                     val i_0_ = -(class318_sub1_sub3_sub5.anInt10412) - 1
                     val player: Player?
                     if (i_0_ == Class348_Sub42_Sub11.anInt9591) player = LocalPlayerState.aPlayer_1907
-                    else player = (Class294.aPlayerArray5058!![i_0_])
+                    else player = (LoadingBarRenderer.aPlayerArray5058!![i_0_])
                     if (player != null && (player.x) >= 0 && ((player.x) < 512 * Class367_Sub4.anInt7319) && (player.y) >= 0 && (player.y) < 512 * Class348_Sub40_Sub3.anInt9109) class318_sub1_sub3_sub5.method2471((-103).toByte(), ((method2064((player.x), (class318_sub1_sub3_sub5.plane).toInt(), 11219, (player.y))) - class318_sub1_sub3_sub5.anInt10366), (player.y), Class367_Sub11.anInt7396, (player.x))
                 }
                 class318_sub1_sub3_sub5.method2475(75.toByte(), Class348_Sub51.anInt7267)

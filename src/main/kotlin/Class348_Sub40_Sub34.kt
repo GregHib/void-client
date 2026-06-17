@@ -128,7 +128,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
                 i_3_++
             }
             Class348_Sub42.method3163((-114).toByte())
-            for (i_4_ in 0..2047) Class294.aPlayerArray5058!![i_4_] = null
+            for (i_4_ in 0..2047) LoadingBarRenderer.aPlayerArray5058!![i_4_] = null
             ModelDefinitionLoader.anInt2057 = 0
             NpcEntityUpdater.aClass356_3654!!.method3481(i.toInt() xor 0xb)
             Class348_Sub32.anInt6930 = 0

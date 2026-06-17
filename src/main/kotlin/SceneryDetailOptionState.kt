@@ -237,7 +237,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     val `is` = ScrollTexMaterialPass.anIntArray6290!!
                                     var i_41_ = 0
                                     while ((i_40_ > i_41_)) {
-                                        val player_42_ = (Class294.aPlayerArray5058!![`is`[i_41_]])
+                                        val player_42_ = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_41_]])
                                         if ((player_42_ != null) && (Class367_Sub11.anInt7396 != (player_42_.anInt10215)) && (player != player_42_) && (player_42_.aBoolean10309)) {
                                             val i_43_ = ((player_42_.x) + -((player_42_.method2436(94.toByte()) - 1) shl 8))
                                             val i_44_ = ((player_42_.y) + -((-1 + (player_42_.method2436(82.toByte()))) shl 8))
@@ -280,7 +280,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val `is` = ScrollTexMaterialPass.anIntArray6290!!
                                         var i_52_ = 0
                                         while ((i_51_ > i_52_)) {
-                                            val player = (Class294.aPlayerArray5058!![`is`[i_52_]])
+                                            val player = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_52_]])
                                             if ((player != null) && (Class367_Sub11.anInt7396 != (player.anInt10215)) && (player.aBoolean10309)) {
                                                 val i_53_ = ((player.x) - ((-1 + (player.method2436(116.toByte()))) shl 8))
                                                 val i_54_ = ((player.y) + -((player.method2436(121.toByte())) + -1 shl 8))

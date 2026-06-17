@@ -94,7 +94,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                         var bool = false
                         var i_7_ = 0
                         while (i_6_ > i_7_) {
-                            val player = (Class294.aPlayerArray5058!![`is`!![i_7_]])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_7_]])
                             if (player != null && (LocalPlayerState.aPlayer_1907 != player) && (player.aString10544 != null) && player.aString10544.equals(string, ignoreCase = true)) {
                                 bool = true
                                 if (i == 1) {

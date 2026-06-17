@@ -224,7 +224,7 @@ class LinkedNodeListIterator {
                         val i_25_ = Class328_Sub1.anInt6513
                         val `is` = ScrollTexMaterialPass.anIntArray6290
                         for (i_26_ in 0..<i_25_) {
-                            val player = (Class294.aPlayerArray5058!![`is`!![i_26_]])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_26_]])
                             if (player != null && player.method2457(37.toByte()) && !player.aBoolean10551 && (LocalPlayerState.aPlayer_1907 != player) && (player.plane == (LocalPlayerState.aPlayer_1907!!.plane))) {
                                 val i_27_ = (-(i_4_ / 128) + (player.x) / 128)
                                 val i_28_ = (-(i_3_ / 128) + (player.y) / 128)
@@ -278,8 +278,8 @@ class LinkedNodeListIterator {
                                     l *= l
                                     TypedRecordTable.method2181(l, i_1_, -112, i_37_, i, class46, i_36_, (class302.anInt3831), var_aa)
                                 }
-                                if ((class302.anInt3840 == 10) && class302.anInt3833 >= 0 && (class302.anInt3833 < (Class294.aPlayerArray5058)!!.size)) {
-                                    val player = (Class294.aPlayerArray5058!![class302.anInt3833])
+                                if ((class302.anInt3840 == 10) && class302.anInt3833 >= 0 && (class302.anInt3833 < (LoadingBarRenderer.aPlayerArray5058)!!.size)) {
+                                    val player = (LoadingBarRenderer.aPlayerArray5058!![class302.anInt3833])
                                     if (player != null) {
                                         val i_38_ = (-(i_4_ / 128) + (player.x) / 128)
                                         val i_39_ = (-(i_3_ / 128) + (player.y) / 128)

@@ -428,7 +428,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             } else if ((class46.anInt770) == 5) {
                                                 val i_61_ = class46.anInt753
                                                 if (i_61_ >= 0 && (i_61_ < 2048)) {
-                                                    val player = (Class294.aPlayerArray5058!![i_61_])
+                                                    val player = (LoadingBarRenderer.aPlayerArray5058!![i_61_])
                                                     val class17 = (if ((class46.anInt699) == -1) null else (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7)))
                                                     if ((player != null) && ((i_61_ == (Class348_Sub42_Sub11.anInt9591)) || ((class46.anInt779) == (Class318_Sub1_Sub3_Sub1.method2418((player.aString10544!!), (-50).toByte()))))) class64 =
                                                         (player.aCompositeNpcModelBuilder_10536!!.method1226((Class318_Sub1_Sub3_Sub3.aVarpStore_10209), null, null, true, (Exception_Sub1.aModelHeaderCache_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), class46.anInt841, (Class348_Sub8.aRenderer6654), (MapAreaDefinition.aBufferedMessageQueue_2529), (ParticleEmitterNode.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aNpcDefinitionCache_5558)))

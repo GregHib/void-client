@@ -95,7 +95,7 @@ class RemoveRoofsOptionState : GraphicsOptionState {
                 val i_15_ = ArchiveFileConditionWrapper.anInt3465 + i_14_
                 val i_16_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), i_2_, i)
                 val i_17_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), 1 + i_2_, i - -1)
-                Class294.aClass338Array5060!![Class348_Sub44.anInt7101++] = Class338(i_5_, i_4_, i_12_, i_13_, i_13_, i_12_, i_16_, i_17_, -i_1_ + i_17_, -i_1_ + i_16_, i_14_, i_15_, i_15_, i_14_)
+                LoadingBarRenderer.aClass338Array5060!![Class348_Sub44.anInt7101++] = Class338(i_5_, i_4_, i_12_, i_13_, i_13_, i_12_, i_16_, i_17_, -i_1_ + i_17_, -i_1_ + i_16_, i_14_, i_15_, i_15_, i_14_)
             } else {
                 val i_6_ = ArchiveFileConditionWrapper.anInt3465 + (i shl Class362.anInt4459)
                 val i_7_ = -ArchiveFileConditionWrapper.anInt3465 + i_6_
@@ -103,7 +103,7 @@ class RemoveRoofsOptionState : GraphicsOptionState {
                 val i_9_ = i_8_ + ArchiveFileConditionWrapper.anInt3465
                 val i_10_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), i_2_, i + 1)
                 val i_11_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_4_]!!.method3982((-86).toByte(), 1 + i_2_, i)
-                Class294.aClass338Array5060!![Class348_Sub44.anInt7101++] = Class338(i_5_, i_4_, i_6_, i_7_, i_7_, i_6_, i_10_, i_11_, -i_1_ + i_11_, i_10_ - i_1_, i_8_, i_9_, i_9_, i_8_)
+                LoadingBarRenderer.aClass338Array5060!![Class348_Sub44.anInt7101++] = Class338(i_5_, i_4_, i_6_, i_7_, i_7_, i_6_, i_10_, i_11_, -i_1_ + i_11_, i_10_ - i_1_, i_8_, i_9_, i_9_, i_8_)
             }
             if (i_3_ != -1) method1811(31, null, 115, null)
             anInt6067++

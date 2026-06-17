@@ -233,9 +233,9 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
                 for (i_4_ in 0..<Class69.anInt1200) Class318_Sub1_Sub3_Sub4.aClass338Array10330!![i_4_] = null
                 Class318_Sub1_Sub3_Sub4.aClass338Array10330 = null
             }
-            if (Class294.aClass338Array5060 != null) {
-                for (i_5_ in 0..<Class348_Sub44.anInt7101) Class294.aClass338Array5060!![i_5_] = null
-                Class294.aClass338Array5060 = null
+            if (LoadingBarRenderer.aClass338Array5060 != null) {
+                for (i_5_ in 0..<Class348_Sub44.anInt7101) LoadingBarRenderer.aClass338Array5060!![i_5_] = null
+                LoadingBarRenderer.aClass338Array5060 = null
             }
             Class354.anIntArrayArrayArray4356 = null
             val i_6_ = 36 % ((-81 - i) / 38)

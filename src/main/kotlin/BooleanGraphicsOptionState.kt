@@ -79,7 +79,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                 val `is` = ScrollTexMaterialPass.anIntArray6290!!
                 var i_4_ = 0
                 while (i_3_ > i_4_) {
-                    val player = (Class294.aPlayerArray5058!![`is`[i_4_]])!!
+                    val player = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_4_]])!!
                     if (player.aString10544 != null && player.aString10544.equals(string, ignoreCase = true) && (((player == LocalPlayerState.aPlayer_1907) && (0x10 and Class38.anInt500) != 0) || (player != null && (Class38.anInt500 and 0x8) != 0))) {
                         NativeLibraryUnloader.anInt2975++
                         val class348_sub47 = WaterMaterialPass.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102)

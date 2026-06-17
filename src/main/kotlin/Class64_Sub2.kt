@@ -933,7 +933,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             if ((0x100 and i) == 0) class64_sub2_154_.aBoolean5428 = aBoolean5428
             else class64_sub2_154_.aBoolean5428 = true
             class64_sub2_154_.aShort5452 = aShort5452
-            val bool_157_ = Class294.method2217(anInt5472, i, 0)
+            val bool_157_ = LoadingBarRenderer.method2217(anInt5472, i, 0)
             val bool_158_ = method3056(i_156_ + -26704, i, anInt5472)
             val bool_159_ = method3073(anInt5472, i, 50.toByte())
             val bool_160_ = bool_157_ or bool_158_ or bool_159_

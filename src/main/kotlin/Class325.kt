@@ -508,7 +508,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 48) {
-                            val player = (Class294.aPlayerArray5058!![i_77_])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
@@ -574,7 +574,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 11) {
-                            val player = (Class294.aPlayerArray5058!![i_77_])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 Class348.anInt4292 = 0
                                 WidgetComponentNode.anInt4657++
@@ -646,7 +646,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348_Sub42_Sub14.method3243(-60, class348_sub47)
                         }
                         if (i_76_ == 51) {
-                            val player = (Class294.aPlayerArray5058!![i_77_])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
@@ -664,7 +664,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 45) {
-                            val player = (Class294.aPlayerArray5058!![i_77_])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
@@ -693,7 +693,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             method2307(i_75_, l, i_74_, 25)
                         }
                         if (i_76_ == 23) {
-                            val player = (Class294.aPlayerArray5058!![i_77_])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 FogOptionState.anInt6048 = 2
                                 Class318_Sub1_Sub4_Sub1.anInt10073++
@@ -713,7 +713,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
                         }
                         if (i_76_ == 8) {
-                            val player = (Class294.aPlayerArray5058!![i_77_])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 Class93.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
@@ -790,7 +790,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             method2307(i_75_, l, i_74_, 4)
                         }
                         if (i_76_ == 58) {
-                            val player = (Class294.aPlayerArray5058!![i_77_])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
@@ -805,7 +805,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 17) {
-                            val player = (Class294.aPlayerArray5058!![i_77_])
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 FogOptionState.anInt6048 = 2
                                 Class93.anInt1534 = i_72_
@@ -932,7 +932,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     }
                                 }
                                 if (i_76_ == 57) {
-                                    val player = (Class294.aPlayerArray5058!![i_77_])
+                                    val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                                     if (player != null) {
                                         FogOptionState.anInt6048 = 2
                                         Class93.anInt1534 = i_72_
