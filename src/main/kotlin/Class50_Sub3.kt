@@ -87,7 +87,7 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
         fun method468(string: String?, i: Int): Boolean {
             val i_11_ = -91 % ((-35 - i) / 52)
             anInt5239++
-            return Class174.method1332(true, true, 10, string!!)
+            return SpotAnimVector.method1332(true, true, 10, string!!)
         }
 
         @JvmStatic

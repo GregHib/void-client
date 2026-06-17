@@ -38,7 +38,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         this.aBoolean6470 = true
         var class348_sub42_sub20 = (this.aClass262_6479.method1995(4) as Class348_Sub42_Sub20?)
         while (class348_sub42_sub20 != null) {
-            if (class348_sub42_sub20.aClass174_9704!!.anInt2296 == 1) class348_sub42_sub20.method3162(true)
+            if (class348_sub42_sub20.aSpotAnimVector_9704!!.anInt2296 == 1) class348_sub42_sub20.method3162(true)
             class348_sub42_sub20 = this.aClass262_6479.method1990(89.toByte()) as Class348_Sub42_Sub20?
         }
         for (i in (this.aClass318_Sub9_Sub2_Sub1Array6475).indices) {

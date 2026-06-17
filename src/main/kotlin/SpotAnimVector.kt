@@ -4,7 +4,7 @@ import kotlin.math.sqrt
 /* Class174 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class174 {
+class SpotAnimVector {
     @JvmField
     var anInt2289: Int = 0
     @JvmField

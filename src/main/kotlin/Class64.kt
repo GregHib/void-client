@@ -496,7 +496,7 @@ public abstract class Class64 {
                 strings[i_58_] = Class239_Sub6.aClass355_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(Class348_Sub21.method2955(i, 81))
                 i_58_++
             }
-            Class174.method1333(Class192.aShortArray2579, i + 26073, strings)
+            SpotAnimVector.method1333(Class192.aShortArray2579, i + 26073, strings)
         }
 
         @JvmStatic

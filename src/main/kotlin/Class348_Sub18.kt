@@ -131,7 +131,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class94.aClass45_1538!!.method412(34.toByte())
                 Class247.aClass45_3183!!.method412((-116).toByte())
                 Class216.aClass45_4975!!.method412(28.toByte())
-                Class174.aClass45_2306!!.method412((-115).toByte())
+                SpotAnimVector.aClass45_2306!!.method412((-115).toByte())
                 OpenGlRenderNode.aClass45_10480!!.method412(22.toByte())
                 Class78.aClass45_1322!!.method412(36.toByte())
                 Class348_Sub16_Sub3.aClass45_8926!!.method412((-114).toByte())

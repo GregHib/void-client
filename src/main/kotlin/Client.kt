@@ -943,7 +943,7 @@ class Client : GameAppletFrame() {
         Class321.method2549((-85).toByte())
         method3165(44.toByte())
         method1369(2.toByte())
-        Class174.method1334((-110).toByte())
+        SpotAnimVector.method1334((-110).toByte())
         method1061(16711680)
         Class308.method2306((-90).toByte())
         method948(false)

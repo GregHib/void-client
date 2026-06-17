@@ -373,7 +373,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class285.anInt4742 = 0
             RuntimeException_Sub1.anInt4598 = 0
             Class241.anInt3149 = 0
-            Class174.anInt2300 = 0
+            SpotAnimVector.anInt2300 = 0
             NativeRenderer.anInt8046 = 0
             ObjectByteSerializerHolder.anInt2284 = 0
             Class348_Sub31_Sub2.anInt9070 = i
@@ -1383,7 +1383,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class263.anInt3354 = 0
             PlayerUpdateDecoder.anInt1913 = 0
             Class337.anInt4175 = 0
-            Class174.anInt2293 = 0
+            SpotAnimVector.anInt2293 = 0
             Class239_Sub13.anInt5979 = 0
             Class34.anInt479 = 0
             Class348_Sub45_Sub2.anInt9731 = 0
@@ -1588,7 +1588,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7709 = 0
             Class348_Sub42_Sub8.anInt9548 = 0
             Class318_Sub1_Sub3_Sub1.anInt10030 = 0
-            Class174.anInt2287 = 0
+            SpotAnimVector.anInt2287 = 0
             Class211.anInt2732 = 0
             Class288.anInt4954 = 0
             Class60.anInt1096 = 0
@@ -2279,7 +2279,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CacheArchiveIndex.anInt1769 = 0
             Class361.anInt4439 = 0
             Class239_Sub18.anInt6033 = 0
-            Class174.anInt2295 = 0
+            SpotAnimVector.anInt2295 = 0
             Class90.anInt1514 = 0
             Class346_Sub1.anInt6530 = 0
             GlSpriteRenderer.anInt8441 = 0
@@ -2305,7 +2305,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub2.anInt10040 = 0
             Class64_Sub2.anInt5414 = 0
             OpenGlRenderer.anInt7566 = 0
-            Class174.anInt2288 = 0
+            SpotAnimVector.anInt2288 = 0
             Client.anInt5186 = 0
             Class341.anInt4231 = 0
             Class239_Sub25.anInt6106 = 0

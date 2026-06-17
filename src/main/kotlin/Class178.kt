@@ -53,7 +53,7 @@ object Class178 {
         var string_2_ = string_2_
         try {
             anInt2337++
-            Class174.Companion.aClass45_2306!!.anInt634 = 1
+            SpotAnimVector.Companion.aClass45_2306!!.anInt634 = 1
             string_2_ = string_2_!!.lowercase(Locale.getDefault())
             var `is` = ShortArray(16)
             var i_4_ = -1
@@ -104,9 +104,9 @@ object Class178 {
                 strings[i_10_] = Exception_Sub1.aClass255_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
                 i_10_++
             }
-            Class174.Companion.method1333(Class192.aShortArray2579, 26073, strings)
-            Class174.Companion.aClass45_2306!!.method412(116.toByte())
-            Class174.Companion.aClass45_2306!!.anInt634 = 2
+            SpotAnimVector.Companion.method1333(Class192.aShortArray2579, 26073, strings)
+            SpotAnimVector.Companion.aClass45_2306!!.method412(116.toByte())
+            SpotAnimVector.Companion.aClass45_2306!!.anInt634 = 2
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qa.A(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + bool_3_ + ')'))
         }

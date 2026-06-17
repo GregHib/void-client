@@ -24,7 +24,7 @@ class Class19 {
         @JvmField
         var anInt309: Int = 0
         @JvmField
-        var aClass174Array311: Array<Class174?>? = arrayOfNulls<Class174>(16)
+        var aSpotAnimVectorArray311s: Array<SpotAnimVector?>? = arrayOfNulls<SpotAnimVector>(16)
         var aIntRange_315: IntRange?
 
         fun method283(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
@@ -45,13 +45,13 @@ class Class19 {
         fun method284(i: Byte) {
             aIntRange_315 = null
             aIntRange_304 = null
-            if (i.toInt() == 51) aClass174Array311 = null
+            if (i.toInt() == 51) aSpotAnimVectorArray311s = null
         }
 
         @JvmStatic
         fun method285(i: Int): Array<Class223?> {
             anInt309++
-            return (arrayOf<Class223?>(Class219.aClass223_2868, Class348_Sub49.aClass223_7175, Class313.aClass223_3934, Class185.aClass223_2489, MatrixCameraTransform.aClass223_5689, Class348_Sub40_Sub21.aClass223_9274, Class28.aClass223_4997, Class174.aClass223_2307, OrientationRotator.aClass223_2045, Class187.aClass223_2507))
+            return (arrayOf<Class223?>(Class219.aClass223_2868, Class348_Sub49.aClass223_7175, Class313.aClass223_3934, Class185.aClass223_2489, MatrixCameraTransform.aClass223_5689, Class348_Sub40_Sub21.aClass223_9274, Class28.aClass223_4997, SpotAnimVector.aClass223_2307, OrientationRotator.aClass223_2045, Class187.aClass223_2507))
         }
 
         @JvmStatic

@@ -21,7 +21,7 @@ class HeapInfoRecord internal constructor(string: String?, class221: Class221?, 
     override fun method51(i: Byte): Class223? {
         anInt4941++
         if (i <= 116) aClass299_4938 = null
-        return Class174.aClass223_2307
+        return SpotAnimVector.aClass223_2307
     }
 
     init {

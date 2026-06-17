@@ -211,7 +211,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
                 var class348_39_ = class348.aClass348_4294
                 while (class348_39_ !== class348) {
                     val class348_sub42_sub20 = class348_39_ as Class348_Sub42_Sub20?
-                    val class174 = (class348_sub42_sub20!!.aClass174_9704)!!
+                    val class174 = (class348_sub42_sub20!!.aSpotAnimVector_9704)!!
                     if (class174.anInt2296 != 1) {
                         var bool_40_ = false
                         var i_41_ = 0
@@ -272,7 +272,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
                 for (i_52_ in class181.anIntArray2380.indices) {
                     var class348_sub42_sub20 = ((Class367_Sub11.aClass32_7415!!.method334(class181.anIntArray2380[i_52_].toLong(), 121.toByte())) as Class348_Sub42_Sub20?)
                     while (class348_sub42_sub20 != null) {
-                        val class174 = (class348_sub42_sub20.aClass174_9704)!!
+                        val class174 = (class348_sub42_sub20.aSpotAnimVector_9704)!!
                         val d_53_ = (i_20_ - class348_sub42_sub20.anInt9712).toDouble()
                         val d_54_ = (i_21_ - class348_sub42_sub20.anInt9706).toDouble()
                         val d_55_ = (i_22_ - class348_sub42_sub20.anInt9710).toDouble()
@@ -328,7 +328,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
                     }
                 }
                 for (i_64_ in class181.anIntArray2385!!.indices) {
-                    val class174 = (Class19.aClass174Array311!![class181.anIntArray2385!![i_64_]])
+                    val class174 = (Class19.aSpotAnimVectorArray311s!![class181.anIntArray2385!![i_64_]])
                     if (class174!!.anInt2297 == 0) {
                         d += (class174.anInt2291 * i).toDouble()
                         d_27_ += (class174.anInt2290 * i).toDouble()

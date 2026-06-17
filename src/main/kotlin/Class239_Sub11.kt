@@ -104,7 +104,7 @@ class Class239_Sub11 : Class239 {
                 Class267.aClass267_3411!!.method2025(Class292(Class94.aClass45_1538!!), false)
                 Class267.aClass267_3412!!.method2025(Class292(Class247.aClass45_3183!!), false)
                 Class267.aClass267_3413!!.method2025(Class292(Class216.aClass45_4975!!), false)
-                Class267.aClass267_3414!!.method2025(Class292(Class174.aClass45_2306!!), false)
+                Class267.aClass267_3414!!.method2025(Class292(SpotAnimVector.aClass45_2306!!), false)
                 Class267.aClass267_3415!!.method2025(Class292(OpenGlRenderNode.aClass45_10480!!), false)
                 Class267.aClass267_3416!!.method2025(Class292(Class78.aClass45_1322!!), false)
                 Class267.aClass267_3417!!.method2025(Class292(Class348_Sub16_Sub3.aClass45_8926!!), false)

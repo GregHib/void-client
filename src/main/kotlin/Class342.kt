@@ -13,7 +13,7 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
     var aClass342_4248: Class342? = null
     @JvmField
     var aAbstractCameraTransform_4252: AbstractCameraTransform? = null
-    fun method2685(i: Byte): Class174 {
+    fun method2685(i: Byte): SpotAnimVector {
         if (i.toInt() != -13) method2683(null, null, -120, 35, -33, null, 90, 71, null)
         anInt4243++
         return method1943(false, this.anInt4245)

@@ -7,7 +7,7 @@ import Class348_Sub23_Sub1.Companion.method2972
 */
 class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_sub10: Class318_Sub10?) : Class348_Sub42() {
     var aClass342_9702: Class342? = null
-    var aClass174_9704: Class174? = null
+    var aSpotAnimVector_9704: SpotAnimVector? = null
     var anInt9705: Int = 0
     var anInt9706: Int = 0
     var anInt9707: Int = 0
@@ -18,7 +18,7 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
         anInt9708++
         this.anInt9710 = (this.aClass342_9702!!.anInt4240)
         this.anInt9712 = (this.aClass342_9702!!.anInt4238)
-        if ((this.aClass342_9702!!.aAbstractCameraTransform_4252) != null) this.aClass342_9702!!.aAbstractCameraTransform_4252!!.method905((this.aClass174_9704!!.anInt2291), (this.aClass174_9704!!.anInt2290), (this.aClass174_9704!!.anInt2294), Class348_Sub8.anIntArray6666!!)
+        if ((this.aClass342_9702!!.aAbstractCameraTransform_4252) != null) this.aClass342_9702!!.aAbstractCameraTransform_4252!!.method905((this.aSpotAnimVector_9704!!.anInt2291), (this.aSpotAnimVector_9704!!.anInt2290), (this.aSpotAnimVector_9704!!.anInt2294), Class348_Sub8.anIntArray6666!!)
         this.anInt9705 = Class348_Sub8.anIntArray6666!![0]
         this.anInt9707 = Class348_Sub8.anIntArray6666!![i]
     }
@@ -26,7 +26,7 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
     init {
         try {
             this.aClass342_9702 = class342
-            this.aClass174_9704 = this.aClass342_9702!!.method2685((-13).toByte())
+            this.aSpotAnimVector_9704 = this.aClass342_9702!!.method2685((-13).toByte())
             method3279(2)
         } catch (runtimeexception: RuntimeException) {
             throw method2929(runtimeexception, ("jo.<init>(" + (if (class342 != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ')'))

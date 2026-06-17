@@ -1068,8 +1068,8 @@ object Class66 {
                 Class21.aClass45_322!!.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257)
                 Class21.aClass45_322!!.method421(false, Class313.anInt3937)
                 Class21.aClass45_322!!.method421(false, Class79.anInt1387)
-                Class174.aAbstractModelRenderer_2309 = null
-                AbstractMenuEntry.aAbstractModelRenderer_1706 = Class174.aAbstractModelRenderer_2309
+                SpotAnimVector.aAbstractModelRenderer_2309 = null
+                AbstractMenuEntry.aAbstractModelRenderer_1706 = SpotAnimVector.aAbstractModelRenderer_2309
                 Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = AbstractMenuEntry.aAbstractModelRenderer_1706
                 Class348_Sub5.aAbstractModelRenderer_6627 = null
                 MinimapFlagRenderer.aAbstractModelRenderer_1800 = Class348_Sub5.aAbstractModelRenderer_6627
