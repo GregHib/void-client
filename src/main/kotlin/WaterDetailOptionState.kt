@@ -69,9 +69,9 @@ class WaterDetailOptionState : GraphicsOptionState {
             NodeDeque.aModelLightingConfigArrayArray3335 = null
             Class60.aRenderer1098 = null
             if (i <= 89) anInt5994 = -75
-            SceneryDetailOptionState.aClass299_6098 = null
-            HeapInfoRecord.aClass299_4938 = null
-            Class348_Sub42_Sub10.aClass299_9571 = null
+            SceneryDetailOptionState.aCircleRasterizer_6098 = null
+            HeapInfoRecord.aCircleRasterizer_4938 = null
+            Class348_Sub42_Sub10.aCircleRasterizer_9571 = null
         }
 
         @JvmStatic

@@ -1,6 +1,6 @@
 import GraphicsOptionState.Companion.method1713
 import TexGenMaterialPass.Companion.method2158
-import Class299_Sub1_Sub1.Companion.method2260
+import CubemapTexture2dSource.Companion.method2260
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable

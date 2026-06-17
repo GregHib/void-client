@@ -211,7 +211,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
                     else class46.anInt750 = ((i_4_ * class46.anInt739 shr 14) + (-class46.anInt789 + i_4_) / 2)
                 } else class46.anInt750 = class46.anInt739 * i_4_ shr 14
             } else class46.anInt750 = class46.anInt739
-            if (Class299_Sub2.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0)) {
+            if (TextureCubeProvider.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0)) {
                 if (class46.anInt750 < 0) class46.anInt750 = 0
                 else if (i_4_ < (class46.anInt789 + class46.anInt750)) class46.anInt750 = i_4_ - class46.anInt789
                 if (class46.anInt800 >= 0) {

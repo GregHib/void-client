@@ -1,5 +1,5 @@
 import ProjectileFactory.Companion.method1613
-import Class299_Sub1.Companion.method2259
+import Texture2DProvider.Companion.method2259
 import Class348.Companion.method2709
 import Class64.Companion.method616
 

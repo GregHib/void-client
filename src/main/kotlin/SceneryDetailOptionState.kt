@@ -80,7 +80,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
         @JvmField
         var aAbstractModelRenderer_6097: AbstractModelRenderer? = null
         @JvmField
-        var aClass299_6098: Class299? = null
+        var aCircleRasterizer_6098: CircleRasterizer? = null
 
         @JvmStatic
         fun method1821(i: Int, file: File): ByteArray? {
@@ -95,8 +95,8 @@ class SceneryDetailOptionState : GraphicsOptionState {
             aClass60_6096 = null
             aAbstractModelRenderer_6097 = null
             aStringArrayArray6093 = null
-            aClass299_6098 = null
-            if (i.toInt() != 110) aClass299_6098 = null
+            aCircleRasterizer_6098 = null
+            if (i.toInt() != 110) aCircleRasterizer_6098 = null
         }
 
         @JvmStatic

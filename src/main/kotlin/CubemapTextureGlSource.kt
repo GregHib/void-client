@@ -10,7 +10,7 @@ import jaggl.OpenGL.Companion.glTexCoord3i
 import jaggl.OpenGL.Companion.glVertex2f
 import jaggl.OpenGL.Companion.glViewport
 
-class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int) : Class299_Sub1() {
+class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int) : Texture2DProvider() {
     private val aClass258_Sub2_8701: GlTextureCubeMap
     private var aHa_Sub2_8707: OpenGlRenderer
 

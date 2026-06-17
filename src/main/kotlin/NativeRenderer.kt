@@ -145,7 +145,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     @JvmField
     var aFloat8169: Float = 3584.0f
     var aFloatArray8170: FloatArray
-    private var aClass299_Sub2_8171: Class299_Sub2? = null
+    private var aClass299_Sub2_8171: TextureCubeProvider? = null
     private var anInt8172: Int
     var aFloat8173: Float = 0f
     var aFloat8174: Float
@@ -1267,9 +1267,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3697(i: Int, i_139_: Int, i_140_: Int, i_141_: Int, i_142_: Int, i_143_: Int): Class299 {
+    override fun method3697(i: Int, i_139_: Int, i_140_: Int, i_141_: Int, i_142_: Int, i_143_: Int): CircleRasterizer {
         anInt7892++
-        return Class299_Sub2_Sub1(this, i, i_139_, i_140_, i_141_, i_142_, i_143_)
+        return CubemapTextureImplSource(this, i, i_139_, i_140_, i_141_, i_142_, i_143_)
     }
 
     private fun method3878(f: Float, i: Int, f_144_: Float, f_145_: Float, f_146_: Float, f_147_: Float, f_148_: Float): Boolean {
@@ -1471,12 +1471,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3653(class299: Class299?) {
+    override fun method3653(circleRasterizer: CircleRasterizer?) {
         try {
-            aClass299_Sub2_8171 = class299 as Class299_Sub2?
+            aClass299_Sub2_8171 = circleRasterizer as TextureCubeProvider?
             anInt7950++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "wga.DF(" + (if (class299 != null) "{...}" else "null") + ')')
+            throw Class348_Sub17.method2929(runtimeexception, "wga.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
         }
     }
 

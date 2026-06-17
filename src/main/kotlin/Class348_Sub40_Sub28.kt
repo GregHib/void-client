@@ -94,7 +94,7 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
                     for (i_24_ in i_7_..<i_9_) {
                         val i_25_ = (i_24_ - i_7_) * i_21_ + (i_22_ + 1024)
                         val i_26_ = SimpleBinaryOptionState.anInt6076 and i_24_
-                        val i_27_ = i_17_ and Class299_Sub2.anInt6325
+                        val i_27_ = i_17_ and TextureCubeProvider.anInt6325
                         if (bool) is_4_[i_27_]!![i_26_] = i_25_
                         else is_4_[i_26_]!![i_27_] = i_25_
                         i_20_ += i_19_

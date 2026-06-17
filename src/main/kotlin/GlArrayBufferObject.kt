@@ -1,5 +1,5 @@
 import SceneTilePlaneManager.method260
-import Class299_Sub2_Sub1.Companion.method2270
+import CubemapTextureImplSource.Companion.method2270
 import Class318_Sub1_Sub3_Sub3.Companion.method2431
 import Class84.Companion.method826
 import jaclib.memory.Buffer

@@ -33,9 +33,9 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
         val `is` = this.aClass322_7033!!.method2557(-111, i)!!
         if (i_7_ != -1564599039) method3140(72, -13)
         if (this.aClass322_7033!!.aBoolean4035) {
-            val is_8_ = this.method3048(-1 + i and Class299_Sub2.anInt6325, 633706337, 0)!!
+            val is_8_ = this.method3048(-1 + i and TextureCubeProvider.anInt6325, 633706337, 0)!!
             val is_9_ = this.method3048(i, i_7_ + -2096661920, 0)!!
-            val is_10_ = this.method3048(Class299_Sub2.anInt6325 and 1 + i, 633706337, 0)!!
+            val is_10_ = this.method3048(TextureCubeProvider.anInt6325 and 1 + i, 633706337, 0)!!
             val is_11_ = `is`[0]!!
             val is_12_ = `is`[1]!!
             val is_13_ = `is`[2]!!

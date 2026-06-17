@@ -2,7 +2,7 @@ import GlCubeMapTexture.Companion.method245
 import ClickFeedbackTask.Companion.method1353
 import GlTexture2D.Companion.method1969
 import WaterMaterialPass.Companion.method2148
-import Class299_Sub1_Sub2.Companion.method2264
+import CubemapTextureGlSource.Companion.method2264
 import Class348_Sub16_Sub3.Companion.method2878
 import Class348_Sub40_Sub32.Companion.method3135
 import Class58.Companion.method536

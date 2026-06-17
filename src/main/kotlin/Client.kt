@@ -223,10 +223,10 @@ import LocalizedTextTriple.Companion.method2223
 import HuffmanCodec.Companion.method2225
 import HuffmanCodec.Companion.method2228
 import PixelBlender.method2251
-import Class299.Companion.method2254
-import Class299_Sub1_Sub2.Companion.method2265
-import Class299_Sub2.Companion.method2268
-import Class299_Sub2_Sub1.Companion.method2272
+import CircleRasterizer.Companion.method2254
+import CubemapTextureGlSource.Companion.method2265
+import TextureCubeProvider.Companion.method2268
+import CubemapTextureImplSource.Companion.method2272
 import Class3.method176
 import Class30.Companion.method322
 import Class301.method2281
@@ -690,10 +690,10 @@ class Client : GameAppletFrame() {
         GlTexture1D.aClass373_8552 = method2941(Class305.aCanvas3869, 0, true)
         //        try {
         if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 != null) {
-            Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
+            TextureCubeProvider.aClass78_6328 = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
             for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
             SceneObjectAnimator.aClass78_3075 = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
-            LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, Class299_Sub2.aClass78_6328, SceneObjectAnimator.aClass78_3075, 500000)
+            LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProvider.aClass78_6328, SceneObjectAnimator.aClass78_3075, 500000)
             Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
             Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779 = null
             Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 = null
@@ -1072,7 +1072,7 @@ class Client : GameAppletFrame() {
         method938(47)
         method1411(true)
         method1499(i + -235)
-        Class299_Sub1.method2258((-122).toByte())
+        Texture2DProvider.method2258((-122).toByte())
         method681(i + -14)
         method1091(-9341)
         method3403(84)
@@ -1281,7 +1281,7 @@ class Client : GameAppletFrame() {
             Class76.aHostPingThread_1286 = null
         }
         try {
-            Class299_Sub2.aClass78_6328!!.method790((-62).toByte())
+            TextureCubeProvider.aClass78_6328!!.method790((-62).toByte())
             for (i_6_ in i..36) MinimapRenderer.aClass78Array1579!![i_6_]!!.method790(118.toByte())
             SceneObjectAnimator.aClass78_3075!!.method790((-84).toByte())
             Class374.aClass78_4538!!.method790(80.toByte())
@@ -2512,7 +2512,7 @@ class Client : GameAppletFrame() {
                                 if (class46.aClass46Array798 != null) Companion.method107(class46.aClass46Array798!!, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
                                 val class348_sub41 = ((MinimapSpriteRenderer.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as Class348_Sub41?)
                                 if (class348_sub41 != null) {
-                                    if ((Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !Class299_Sub2.aBoolean6327) method661(105.toByte())
+                                    if ((Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !TextureCubeProvider.aBoolean6327) method661(105.toByte())
                                     method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_)
                                 }
                             }
@@ -2546,7 +2546,7 @@ class Client : GameAppletFrame() {
         }
 
         fun method111(class46: Class46): Boolean {
-            if (Class299_Sub2.aBoolean6327) {
+            if (TextureCubeProvider.aBoolean6327) {
                 if (method105(class46)!!.anInt7098 != 0) return false
                 if (class46.anInt774 == 0) return false
             }

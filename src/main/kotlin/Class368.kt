@@ -224,7 +224,7 @@ class Class368 {
             if (bool != true) method3560(68)
             if (!Client.method105(class46)!!.method3301(i, !bool) && class46.anObjectArray741 == null) return null
             if (class46.aStringArray833 == null || (i >= class46.aStringArray833!!.size) || class46.aStringArray833!![i] == null || class46.aStringArray833!![i]!!.trim { it <= ' ' }.length == 0) {
-                if (Class299_Sub2.aBoolean6327) return "Hidden-" + i
+                if (TextureCubeProvider.aBoolean6327) return "Hidden-" + i
                 return null
             }
             return class46.aStringArray833!![i]

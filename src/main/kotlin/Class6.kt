@@ -76,8 +76,8 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
         @JvmStatic
         fun method204(i: Int) {
             anInt155++
-            while (Class299.aClass348_Sub49_Sub2_3813!!.method3415(-62, Class348_Sub40_Sub25.anInt9341) >= 15) {
-                val i_18_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 15)
+            while (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3415(-62, Class348_Sub40_Sub25.anInt9341) >= 15) {
+                val i_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 15)
                 if (i_18_ == 32767) break
                 var bool = false
                 var class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_18_.toLong(), -6008) as Class348_Sub22?)
@@ -93,23 +93,23 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_18_
                 npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
                 if ((npc.aClass79_10505) != null && npc.aClass79_10505!!.method793(0)) method181(true, npc)
-                val i_19_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 2)
-                val i_20_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
-                var i_21_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 5)
+                val i_19_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 2)
+                val i_20_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
+                var i_21_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 5)
                 if (i_21_ > 15) i_21_ -= 32
-                var i_22_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 5)
+                var i_22_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 5)
                 if (i_22_ > 15) i_22_ -= 32
-                val i_23_ = 0x3d01 and (4 + Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3) shl 11)
-                val i_24_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
+                val i_23_ = 0x3d01 and (4 + CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3) shl 11)
+                val i_24_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                 if (i_24_ == 1) MinimapRectClipper.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_18_
-                npc.method2448((MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
+                npc.method2448((MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
                 npc.method2434(111.toByte(), npc.aClass79_10505!!.anInt1399)
                 npc.anInt10310 = (npc.aClass79_10505!!.anInt1329) shl 3
                 if (bool) npc.method2435((-108).toByte(), i_23_, true)
                 npc.method2444((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) - -i_21_, i_20_ == 1, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + i_22_, i + 724138125, npc.method2436(50.toByte()), i_19_)
                 if (npc.aClass79_10505!!.method793(0)) ProjectileFactory.method1614(979190089, npc, npc.plane.toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
             }
-            if (i == -724138005) Class299.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
+            if (i == -724138005) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
         }
 
         fun method205(i: Int, i_25_: Int, i_26_: Int, string: String?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int) {

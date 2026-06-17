@@ -34,9 +34,9 @@ class Class348_Sub40_Sub35 : Class348_Sub40(1, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val i_5_ = MediaStreamClient.anInt3201 * anInt9448 shr 12
-            val is_6_ = this.method3048(Class299_Sub2.anInt6325 and -1 + i, 633706337, 0)!!
+            val is_6_ = this.method3048(TextureCubeProvider.anInt6325 and -1 + i, 633706337, 0)!!
             val is_7_ = this.method3048(i, 633706337, 0)!!
-            val is_8_ = this.method3048(Class299_Sub2.anInt6325 and i - -1, i_4_ + 633706082, 0)!!
+            val is_8_ = this.method3048(TextureCubeProvider.anInt6325 and i - -1, i_4_ + 633706082, 0)!!
             var i_9_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_9_) {
                 val i_10_ = i_5_ * (is_8_[i_9_] - is_6_[i_9_]) shr 12

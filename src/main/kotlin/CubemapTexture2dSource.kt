@@ -1,7 +1,7 @@
 /* Class299_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: OpenGlRenderer, private val anInt8689: Int, private val anInt8695: Int, private val anInt8691: Int, private val anInt8690: Int, private val anInt8686: Int, private val anInt8697: Int) : Class299_Sub1() {
+class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: OpenGlRenderer, private val anInt8689: Int, private val anInt8695: Int, private val anInt8691: Int, private val anInt8690: Int, private val anInt8686: Int, private val anInt8697: Int) : Texture2DProvider() {
     private var aClass258_Sub2_8688: GlTextureCubeMap? = null
 
     override fun method2256(i: Byte): GlTextureCubeMap? {

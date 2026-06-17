@@ -134,8 +134,8 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                         }
                         if (Class367_Sub2.anInt7297 == 4) {
                             if (Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 104)) {
-                                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-116).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                                val i_11_ = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-116).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                val i_11_ = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                                 Class352.anInt4337 = i_11_
                                 Class367_Sub2.anInt7297 = 0
                                 Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())

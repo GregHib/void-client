@@ -149,7 +149,7 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
         var anInt9569: Int = 0
         var anInt9570: Int = 0
         @JvmField
-        var aClass299_9571: Class299? = null
+        var aCircleRasterizer_9571: CircleRasterizer? = null
         var anIntArray9572: IntArray?
         var anInt9573: Int = 0
         var anInt9575: Int = 0
@@ -165,7 +165,7 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
             Class348_Sub40_Sub36.aIntRange_9456 = null
             Class348_Sub50.anInt7213 = 0
             GraphicsOptionState.aIntRange_3145 = null
-            Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+            CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
             val i_3_ = -122 % ((i - 13) / 45)
             AbstractGameSocket.aIntRange_3133 = null
             method2296(-99)
@@ -179,7 +179,7 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
         @JvmStatic
         fun method3217(i: Byte) {
             if (i.toInt() != 61) Companion.method3211((-95).toByte())
-            aClass299_9571 = null
+            aCircleRasterizer_9571 = null
             anIntArray9572 = null
         }
 

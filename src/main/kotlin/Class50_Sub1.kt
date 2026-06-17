@@ -1,4 +1,4 @@
-import Class299_Sub2.Companion.method2267
+import TextureCubeProvider.Companion.method2267
 import NativeRenderer.Companion.method3873
 
 /* Class50_Sub1 - Decompiled by JODE

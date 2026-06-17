@@ -558,9 +558,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             for (i_12_ in strings.indices) {
                 for (i_13_ in Class369_Sub2.anInt8587 downTo 1) ArbFogMaterialPass.aStringArray6200!![i_13_] = ArbFogMaterialPass.aStringArray6200!![-1 + i_13_]
                 ArbFogMaterialPass.aStringArray6200!![0] = string_11_ + ": " + strings[i_12_]
-                if (Class299_Sub1.aFileOutputStream6323 != null) {
+                if (Texture2DProvider.aFileOutputStream6323 != null) {
                     try {
-                        Class299_Sub1.aFileOutputStream6323!!.write(Class348_Sub24.method2992(((ArbFogMaterialPass.aStringArray6200!![0]) + "\n"), (-20).toByte()))
+                        Texture2DProvider.aFileOutputStream6323!!.write(Class348_Sub24.method2992(((ArbFogMaterialPass.aStringArray6200!![0]) + "\n"), (-20).toByte()))
                     } catch (ioexception: IOException) {
                         /* empty */
                     }

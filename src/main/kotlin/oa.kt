@@ -31,7 +31,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     private external fun ma(l: Long)
 
-    override fun method3697(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): Class299? {
+    override fun method3697(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): CircleRasterizer? {
         return null
     }
 
@@ -373,7 +373,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         } else if (var_p.anInt5145 != i || var_p.anInt5148 != i_153_) var_p.method3435(canvas, i, i_153_)
     }
 
-    override fun method3706(class299: Class299?, class299_154_: Class299?, f: Float, class299_155_: Class299?): Class299? {
+    override fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_154_: CircleRasterizer?, f: Float, circleRasterizer_155_: CircleRasterizer?): CircleRasterizer? {
         return null
     }
 
@@ -433,7 +433,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         return true
     }
 
-    override fun method3653(class299: Class299?) {
+    override fun method3653(circleRasterizer: CircleRasterizer?) {
         /* empty */
     }
 

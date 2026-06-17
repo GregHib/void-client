@@ -513,7 +513,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return false
     }
 
-    override fun method3697(i: Int, i_137_: Int, i_138_: Int, i_139_: Int, i_140_: Int, i_141_: Int): Class299? {
+    override fun method3697(i: Int, i_137_: Int, i_138_: Int, i_139_: Int, i_140_: Int, i_141_: Int): CircleRasterizer? {
         return null
     }
 
@@ -1435,7 +1435,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
     }
 
-    override fun method3653(class299: Class299?) {
+    override fun method3653(circleRasterizer: CircleRasterizer?) {
         /* empty */
     }
 
@@ -1878,7 +1878,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return false
     }
 
-    override fun method3706(class299: Class299?, class299_524_: Class299?, f: Float, class299_525_: Class299?): Class299? {
+    override fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_524_: CircleRasterizer?, f: Float, circleRasterizer_525_: CircleRasterizer?): CircleRasterizer? {
         return null
     }
 

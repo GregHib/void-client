@@ -792,7 +792,7 @@ class Class79 {
                     for (i_32_ in 0..<i) LightDetailOptionState.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
                 } else LightDetailOptionState.anIntArray6035 = Class318_Sub6.anIntArray6432
                 FixedFunctionMaterialPass.anInt6212 = i
-                Class299_Sub2.anInt6325 = -1 + i
+                TextureCubeProvider.anInt6325 = -1 + i
             }
         }
 

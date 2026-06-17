@@ -67,22 +67,22 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == null) {
                 if (GroundItemRenderState.aBoolean1661) {
                     if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
-                    Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, 6.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                    Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, 6.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                     Class348_Sub50.anInt7213 = 0
                     GroundItemRenderState.aBoolean1661 = false
                     MinimapRectClipper.anInt221++
                 }
-                Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                if (Class299.aClass348_Sub49_Sub2_3813!!.method3404(-1510)) {
+                CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3404(-1510)) {
                     if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
-                    Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 1, 26.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                    Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 1, 26.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                     MinimapRectClipper.anInt221++
                     Class348_Sub50.anInt7213 = 0
                 }
                 GroundItemRenderState.aBoolean1661 = true
                 val class114s = Gl3dTexture.method248(-11271)
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.method3407(15295)
-                if (i < 0 || i >= class114s.size) throw IOException("invo:" + i + " ip:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197))
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3407(15295)
+                if (i < 0 || i >= class114s.size) throw IOException("invo:" + i + " ip:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197))
                 Class348_Sub3.aIntRange_6584 = class114s[i]
                 if (Loader.debug) {
                     println("Packet read: " + i + " length: " + Class348_Sub3.aIntRange_6584!!.anInt1749)
@@ -91,23 +91,23 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub40_Sub25.anInt9341 == -1) {
                 if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 116)) return false
-                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                Class348_Sub40_Sub25.anInt9341 = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                Class348_Sub40_Sub25.anInt9341 = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                 MinimapRectClipper.anInt221++
                 Class348_Sub50.anInt7213 = 0
             }
             if (Class348_Sub40_Sub25.anInt9341 == -2) {
                 if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(2, 120)) return false
-                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(2, 0, 127.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                Class348_Sub40_Sub25.anInt9341 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(2, 0, 127.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                Class348_Sub40_Sub25.anInt9341 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 MinimapRectClipper.anInt221 += 2
                 Class348_Sub50.anInt7213 = 0
             }
             if (Class348_Sub40_Sub25.anInt9341 > 0) {
                 if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 104)) return false
-                Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-123).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-123).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                 MinimapRectClipper.anInt221 += Class348_Sub40_Sub25.anInt9341
                 Class348_Sub50.anInt7213 = 0
             }
@@ -115,18 +115,18 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             GraphicsOptionState.aIntRange_3145 = AbstractGameSocket.aIntRange_3133
             AbstractGameSocket.aIntRange_3133 = Class348_Sub3.aIntRange_6584
             if (IOException_Sub1.aIntRange_90 == Class348_Sub3.aIntRange_6584) {
-                Class43.method382(Class299.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
+                Class43.method382(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub42_Sub3.aIntRange_9503) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_3_ = (i and 0x1) == 1
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString(108.toByte())
-                var string_4_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-92).toByte())
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(108.toByte())
+                var string_4_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-92).toByte())
                 if (string_4_ == "") string_4_ = string
-                val string_5_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-64).toByte())
-                var string_6_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-97).toByte())
+                val string_5_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-64).toByte())
+                var string_6_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-97).toByte())
                 if (string_6_ == "") string_6_ = string_5_
                 if (bool_3_) {
                     var i_7_ = 0
@@ -158,16 +158,16 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class356.aIntRange_4388 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-100)
-                val i_8_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-111)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-100)
+                val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-111)
                 Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
                 Class50_Sub3.method467(i_8_, -18075, i.toInt())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (GlArrayBufferObject.aIntRange_4707 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-123).toByte())
-                val i_9_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-123).toByte())
+                val i_9_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_9_.toLong(), -6008) as Class348_Sub41?)
                 val class348_sub41_10_ = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
@@ -189,32 +189,32 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (bool != true) aSceneProjector_10434 = null
             if (Class348_Sub3.aIntRange_6584 == InputSettingsState.aIntRange_1762) {
-                LightingOptionState.aString5882 = (if (Class348_Sub40_Sub25.anInt9341 > 2) Class299.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else LocalizedText.aLocalizedText_3509!!.method2063(Class348_Sub33.anInt6967, 544))
-                Class333.anInt4144 = (if (Class348_Sub40_Sub25.anInt9341 <= 0) -1 else Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
+                LightingOptionState.aString5882 = (if (Class348_Sub40_Sub25.anInt9341 > 2) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else LocalizedText.aLocalizedText_3509!!.method2063(Class348_Sub33.anInt6967, 544))
+                Class333.anInt4144 = (if (Class348_Sub40_Sub25.anInt9341 <= 0) -1 else CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
                 if (Class333.anInt4144 == 65535) Class333.anInt4144 = -1
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (GraphicsOptionState.aIntRange_3135 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(62.toByte())
-                val i_11_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-126).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(62.toByte())
+                val i_11_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 Class348_Sub15.method2813(true, i, i_11_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == ConnectionStateRefs.aIntRange_316) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                val i_12_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                val i_13_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
-                val i_14_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i_12_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                val i_13_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
+                val i_14_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 method1703(7, i, i_13_ shl 16 or i_14_, 4, i_12_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub40_Sub15.aIntRange_9216 == Class348_Sub3.aIntRange_6584) {
-                MinimapStateReset.anInt1872 = Class299.aClass348_Sub49_Sub2_3813!!.readShort(13638)
+                MinimapStateReset.anInt1872 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 Class348_Sub3.aIntRange_6584 = null
                 Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
                 return true
@@ -225,21 +225,21 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == ObjectByteSerializerHolder.aIntRange_2285) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 method1703(3, i, -1, 4, -1)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == HslColorConfig.aIntRange_330) {
-                val bool_15_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-34).toByte())
+                val bool_15_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-34).toByte())
                 var string_16_ = string
-                if (bool_15_) string_16_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-64).toByte())
-                val l = Class299.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
-                val l_17_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toLong()
-                val l_18_ = Class299.aClass348_Sub49_Sub2_3813!!.readMedium(-1).toLong()
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                if (bool_15_) string_16_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-64).toByte())
+                val l = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
+                val l_17_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toLong()
+                val l_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readMedium(-1).toLong()
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val l_19_ = l_18_ + (l_17_ shl 32)
                 var bool_20_ = false
                 while_217_@ do {
@@ -257,7 +257,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (!bool_20_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_19_
                     Class79.anInt1359 = (1 + Class79.anInt1359) % 100
-                    val string_22_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
+                    val string_22_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                     if (i == 2 || i == 3) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_16_, string_22_, (-126).toByte(), -1, "<img=1>" + string, ShadowQualityOptionState.method1788((-76).toByte(), l), 9, 0, string)
                     else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_16_, string_22_, (-125).toByte(), -1, string, ShadowQualityOptionState.method1788((-83).toByte(), l), 9, 0, string)
                     else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_16_, string_22_, (-126).toByte(), -1, "<img=0>" + string, ShadowQualityOptionState.method1788((-75).toByte(), l), 9, 0, string)
@@ -266,7 +266,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == LocalizedTextTriple.aIntRange_3751) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool)
                 Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
                 FontDefinition.method1189(-1, i)
                 Class348_Sub3.aIntRange_6584 = null
@@ -278,11 +278,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class73.aIntRange_4779) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-78).toByte())
-                val i_23_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
-                val i_24_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
-                val i_25_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-128).toByte())
-                val i_26_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-78).toByte())
+                val i_23_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                val i_24_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
+                val i_25_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-128).toByte())
+                val i_26_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 SpotAnimDefinition.aBooleanArray2374!![i_23_] = true
                 CollisionMapAccessor.anIntArray3552!![i_23_] = i
@@ -293,9 +293,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == SceneryDetailOptionState.aIntRange_6089) {
-                Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
-                Class348_Sub40_Sub12.anInt9200 = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-84).toByte())
-                BufferedMessageQueue.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813!!.method3341(-8679).toInt() shl 3)
+                Class73.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
+                Class348_Sub40_Sub12.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-84).toByte())
+                BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3341(-8679).toInt() shl 3)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -305,7 +305,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return false
             }
             if (Class345.aIntRange_4269 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(71.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(71.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 Class37.anInt495 = i
                 Class348_Sub3.aIntRange_6584 = null
@@ -317,18 +317,18 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == SmoothingBuffer.aIntRange_3240) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
-                val i_27_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
+                val i_27_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 method2396(i, i_27_, 0, 3)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class322.aIntRange_4027 == Class348_Sub3.aIntRange_6584) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 if (i == 65535) i = -1
-                val i_28_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                val i_29_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                val i_28_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i_29_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 Class70.method727((-63).toByte(), i_29_, i, i_28_)
                 val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(-126, i)
@@ -338,19 +338,19 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (PlayerUpdateDecoder.aIntRange_1917 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_30_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_30_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_31_ = (0x1 and i_30_) == 1
                 LocTypeDefLoader.method1405(i, bool_31_, true)
-                val i_32_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_32_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 for (i_33_ in 0..<i_32_) {
-                    var i_34_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-127).toByte())
+                    var i_34_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-127).toByte())
                     if (i_34_ == 255) {
-                        val index = Class299.aClass348_Sub49_Sub2_3813!!.anInt7197
-                        val data = Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154
-                        i_34_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
+                        val index = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197
+                        val data = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154
+                        i_34_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                     }
-                    val i_35_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-78)
+                    val i_35_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-78)
                     DelegatingRenderCanvas.method121(i, -364570972, bool_31_, i_33_, i_34_, i_35_ - 1)
                 }
                 LoadingScreenState.anIntArray2633!![NpcSummaryDefinition.method1166(31, DualMaterialContainer.anInt1631++)] = i
@@ -363,18 +363,18 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return false
             }
             if (Class348_Sub3.aIntRange_6584 == PixelBlender.aIntRange_3809) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                val i_36_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i_36_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1313(42.toByte(), i, i_36_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == FogOptionState.aIntRange_6056) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(75.toByte())
-                val i_37_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
-                var i_38_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
-                val i_39_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_40_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(75.toByte())
+                val i_37_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
+                var i_38_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
+                val i_39_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_40_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 val bool_41_ = (0x80 and i) != 0
                 val i_42_ = 0x7 and i
                 var i_43_ = (i and 0x7e) shr 3
@@ -533,27 +533,27 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class63.aIntRange_1120) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-116)
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-85).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-116)
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-85).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 method3965(string, i, 2)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class74.aIntRange_1234) {
-                ModelDataCache.anInt359 = Class299.aClass348_Sub49_Sub2_3813!!.method3369(125.toByte())
-                Class348_Sub40_Sub3.aBoolean9103 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
+                ModelDataCache.anInt359 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3369(125.toByte())
+                Class348_Sub40_Sub3.aBoolean9103 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class352.aIntRange_4331 == Class348_Sub3.aIntRange_6584) {
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString(122.toByte())
-                val bool_66_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(122.toByte())
+                val bool_66_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 val string_67_: String?
                 if (!bool_66_) string_67_ = string
-                else string_67_ = Class299.aClass348_Sub49_Sub2_3813!!.readString(125.toByte())
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_68_ = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-128)
+                else string_67_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(125.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_68_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-128)
                 var bool_69_ = false
                 if (i_68_.toInt() == -128) bool_69_ = true
                 if (bool_69_) {
@@ -577,7 +577,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         HostPingThread.aWorldListEntryArray2261!![Class37.anInt496] = null
                     }
                 } else {
-                    val string_72_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-74).toByte())
+                    val string_72_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-74).toByte())
                     val worldListEntry = WorldListEntry()
                     worldListEntry.aString306 = string_67_
                     worldListEntry.aString314 = string
@@ -616,7 +616,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (BinaryGraphicsOptionState.aIntRange_5949 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_76_ = i shr 5
                 val i_77_ = 0x1f and i
                 if (i_77_ == 0) {
@@ -626,11 +626,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 }
                 val class302 = Class302()
                 class302.anInt3840 = i_77_
-                class302.anInt3831 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                class302.anInt3831 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if (class302.anInt3831 >= 0 && (class302.anInt3831 < CustomCursorsOptionState.aAbstractModelRendererArray5933!!.size)) {
                     if (class302.anInt3840 == 1 || class302.anInt3840 == 10) {
-                        class302.anInt3833 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                        Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 += 6
+                        class302.anInt3833 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                        CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 += 6
                     } else if (class302.anInt3840 >= 2 && class302.anInt3840 <= 6) {
                         if (class302.anInt3840 == 2) {
                             class302.anInt3832 = 256
@@ -653,13 +653,13 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             class302.anInt3832 = 512
                         }
                         class302.anInt3840 = 2
-                        class302.anInt3838 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                        class302.anInt3835 += (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) + -ArbVertexProgram.regionTileX shl 9)
-                        class302.anInt3832 += (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) - Class90.regionTileY shl 9)
-                        class302.anInt3839 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) shl 2
-                        class302.anInt3837 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                        class302.anInt3838 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                        class302.anInt3835 += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) + -ArbVertexProgram.regionTileX shl 9)
+                        class302.anInt3832 += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) - Class90.regionTileY shl 9)
+                        class302.anInt3839 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) shl 2
+                        class302.anInt3837 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     }
-                    class302.anInt3834 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    class302.anInt3834 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (class302.anInt3834 == 65535) class302.anInt3834 = -1
                     Class348_Sub27.aClass302Array6897!![i_76_] = class302
                 }
@@ -673,13 +673,13 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
 
             if (Class367_Sub4.aIntRange_7323 == Class348_Sub3.aIntRange_6584) {
-                Class348_Sub16_Sub1.method2822(-101, Class299.aClass348_Sub49_Sub2_3813!!, Class348_Sub40_Sub25.anInt9341)
+                Class348_Sub16_Sub1.method2822(-101, CircleRasterizer.aClass348_Sub49_Sub2_3813!!, Class348_Sub40_Sub25.anInt9341)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == DetailLevelOptionState.aIntRange_6121) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
-                val i_78_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
+                val i_78_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 Class91.method855(6, i, i_78_)
                 Class348_Sub3.aIntRange_6584 = null
@@ -691,9 +691,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class367_Sub4.aIntRange_7324) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                val i_79_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-120)
-                val i_80_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                val i_79_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-120)
+                val i_80_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 SoundEnvelope.method1540(-101, i, i_79_ + (i_80_ shl 16))
                 Class348_Sub3.aIntRange_6584 = null
@@ -706,32 +706,32 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class303.aIntRange_3842) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 method1703(5, i, Class348_Sub42_Sub11.anInt9591, 4, 0)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class346_Sub1.aIntRange_6528 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-124)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-124)
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 Class64_Sub3.method690((-107).toByte(), i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class5_Sub2.aIntRange_8365 == Class348_Sub3.aIntRange_6584) {
-                val bool_81_ = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-29).toByte())
+                val bool_81_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-29).toByte())
                 var string_82_ = string
-                if (bool_81_) string_82_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-98).toByte())
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                if (bool_81_) string_82_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-98).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var bool_83_ = false
                 if (i <= 1) {
                     if (Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915 || Class50_Sub2.aBoolean5233) bool_83_ = true
                     else if (i <= 1 && Class351.method3455(string_82_, 28280)) bool_83_ = true
                 }
                 if (!bool_83_ && BackgroundWorkerThread.anInt3227 == 0) {
-                    val string_84_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
+                    val string_84_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_82_, string_84_, (-119).toByte(), -1, "<img=1>" + string, null, 24, 0, string)
                     else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_82_, string_84_, (-119).toByte(), -1, "<img=0>" + string, null, 24, 0, string)
                     else Class318_Sub1_Sub3_Sub5.method2477(string_82_, string_84_, (-115).toByte(), -1, string, null, 24, 0, string)
@@ -745,24 +745,24 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == FloatCameraTransform.aIntRange_5742) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
-                val i_85_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-104).toByte())
-                val i_86_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
-                val i_87_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
-                val i_88_ = (Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(126) shl 2)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
+                val i_85_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-104).toByte())
+                val i_86_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                val i_87_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                val i_88_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(126) shl 2)
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 method1844(i_85_, i_86_, true, i_88_, !bool, i_87_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == CollisionMapRegion.aIntRange_1722) {
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-100).toByte())
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-100).toByte())
                 val objects = arrayOfNulls<Any>(1 + string.length)
                 for (i in -1 + string.length downTo 0) {
-                    if (string.get(i) != 's') objects[i + 1] = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                    else objects[1 + i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(122.toByte())
+                    if (string.get(i) != 's') objects[i + 1] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                    else objects[1 + i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(122.toByte())
                 }
-                objects[0] = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                objects[0] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 val class348_sub36 = Class348_Sub36()
                 class348_sub36.anObjectArray6987 = objects
@@ -777,8 +777,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub41.aIntRange_7052) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
-                var i_89_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
+                var i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 if (i_89_ == 65535) i_89_ = -1
                 Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
                 method1703(2, i, i_89_, 4, -1)
@@ -786,7 +786,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == CompassSmoother.aIntRange_3368) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
@@ -798,8 +798,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (InputStream_Sub1.aIntRange_79 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-86)
-                val i_90_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-86)
+                val i_90_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 Class348_Sub23.method2966(i_90_, i, false)
                 Class348_Sub3.aIntRange_6584 = null
@@ -811,13 +811,13 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == NativeLibraryUnloader.aIntRange_2972) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class348_Sub42_Sub6.aLinkedQueueNode_9536 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2232(80, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == ParserSpecialCharsHolder.aIntRange_1901) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val player: Player?
                 if (i != Class348_Sub42_Sub11.anInt9591) player = LoadingBarRenderer.aPlayerArray5058!![i]
                 else player = LocalPlayerState.aPlayer_1907
@@ -825,8 +825,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class348_Sub3.aIntRange_6584 = null
                     return true
                 }
-                var i_91_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_92_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                var i_91_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_92_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_93_ = (0x8000 and i_91_) != 0
                 if ((player.aString10544) != null && player.aCompositeNpcModelBuilder_10536 != null) {
                     var bool_94_ = false
@@ -839,10 +839,10 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         val string: String?
                         if (bool_93_) {
                             i_91_ = i_91_ and 0x7fff
-                            val class43 = Class52.method490((-104).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!))
+                            val class43 = Class52.method490((-104).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!))
                             i_95_ = class43.anInt615
-                            string = (class43.aClass348_Sub42_Sub10_614!!.method3216(Class299.aClass348_Sub49_Sub2_3813!!, 119.toByte()))
-                        } else string = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
+                            string = (class43.aClass348_Sub42_Sub10_614!!.method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 119.toByte()))
+                        } else string = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                         player.aString10292 = string!!.trim { it <= ' ' }
                         player.anInt10201 = i_91_ shr 8
                         player.anInt10234 = i_91_ and 0xff
@@ -860,13 +860,13 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class63.aIntRange_1123 == Class348_Sub3.aIntRange_6584) {
-                val bool_97_ = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString(126.toByte())
+                val bool_97_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(126.toByte())
                 var string_98_ = string
-                if (bool_97_) string_98_ = Class299.aClass348_Sub49_Sub2_3813!!.readString(86.toByte())
-                val l = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toLong()
-                val l_99_ = Class299.aClass348_Sub49_Sub2_3813!!.readMedium(-1).toLong()
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                if (bool_97_) string_98_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(86.toByte())
+                val l = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toLong()
+                val l_99_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readMedium(-1).toLong()
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val l_100_ = (l shl 32) - -l_99_
                 var bool_101_ = false
                 while_218_@ do {
@@ -884,7 +884,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (!bool_101_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_100_
                     Class79.anInt1359 = (1 + Class79.anInt1359) % 100
-                    val string_103_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
+                    val string_103_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_98_, string_103_, (-127).toByte(), -1, "<img=1>" + string, null, 7, 0, string)
                     else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_98_, string_103_, (-115).toByte(), -1, "<img=0>" + string, null, 7, 0, string)
                     else Class318_Sub1_Sub3_Sub5.method2477(string_98_, string_103_, (-128).toByte(), -1, string, null, 3, 0, string)
@@ -898,11 +898,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (HeapDiagnosticsHolder.aIntRange_2248 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_104_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-87).toByte())
-                val i_105_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_106_ = (Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool) shl 2)
-                val i_107_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_104_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-87).toByte())
+                val i_105_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_106_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool) shl 2)
+                val i_107_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 Class348_Sub42_Sub12.method3231(i_104_, i, i_106_, i_107_, i_105_, -127)
                 Class348_Sub3.aIntRange_6584 = null
@@ -914,72 +914,72 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return false
             }
             if (SlotBinding.aIntRange_3427 == Class348_Sub3.aIntRange_6584) {
-                method1034(Class348_Sub40_Sub25.anInt9341, Class299.aClass348_Sub49_Sub2_3813, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, 110)
+                method1034(Class348_Sub40_Sub25.anInt9341, CircleRasterizer.aClass348_Sub49_Sub2_3813, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, 110)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (MapAreaDefinition.aIntRange_2527 == Class348_Sub3.aIntRange_6584) {
-                val bool_108_ = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
+                val bool_108_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val `is` = ByteArray(Class348_Sub40_Sub25.anInt9341 - 1)
-                Class299.aClass348_Sub49_Sub2_3813!!.method3389(2147483647, 0, (Class348_Sub40_Sub25.anInt9341) + -1, `is`)
+                CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3389(2147483647, 0, (Class348_Sub40_Sub25.anInt9341) + -1, `is`)
                 ScanlineRasterFiller.method1385(bool_108_, `is`, (-104).toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == EmoteDefinition.aIntRange_3264) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_109_ = Class299.aClass348_Sub49_Sub2_3813!!.method3341(-8679)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_109_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3341(-8679)
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 Class348_Sub42_Sub14.method3244(i_109_.toInt(), i, 120)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (ModelHeaderCache.aIntRange_3265 == Class348_Sub3.aIntRange_6584) {
-                BufferedMessageQueue.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
-                Class348_Sub40_Sub12.anInt9200 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(98.toByte())
-                Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt() shl 3)
-                while ((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) < Class348_Sub40_Sub25.anInt9341) {
-                    val class74 = (ModelHeaderCache.method1929((-19).toByte())[Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)])
+                BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
+                Class348_Sub40_Sub12.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(98.toByte())
+                Class73.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt() shl 3)
+                while ((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) < Class348_Sub40_Sub25.anInt9341) {
+                    val class74 = (ModelHeaderCache.method1929((-19).toByte())[CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)])
                     method128(class74, 8.toByte())
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (ParticleEffectCache.aIntRange_3467 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShort(13638)
-                val i_110_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                val i_111_ = Class299.aClass348_Sub49_Sub2_3813!!.method3375(84.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
+                val i_110_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                val i_111_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3375(84.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 ConfigValueProvider.method1080(i_111_, -23697, i, i_110_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (ScriptOpcodeHolder.aIntRange_2338 == Class348_Sub3.aIntRange_6584) {
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString(100.toByte())
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(100.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 method3965(string, i, 2)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class318_Sub1_Sub5_Sub2.aIntRange_10168) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
-                val i_112_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
+                val i_112_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 Class348_Sub40_Sub15.method3084(i, (-88).toByte(), i_112_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (ParticleSystemState.aIntRange_2196 == Class348_Sub3.aIntRange_6584) {
-                val bool_113_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-81).toByte())
+                val bool_113_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-81).toByte())
                 var string_114_ = string
-                if (bool_113_) string_114_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-39).toByte())
-                val l = Class299.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
-                val l_115_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toLong()
-                val l_116_ = Class299.aClass348_Sub49_Sub2_3813!!.readMedium(-1).toLong()
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_117_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                if (bool_113_) string_114_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-39).toByte())
+                val l = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
+                val l_115_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toLong()
+                val l_116_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readMedium(-1).toLong()
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_117_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val l_118_ = (l_115_ shl 32) - -l_116_
                 var bool_119_ = false
                 while_219_@ do {
@@ -994,7 +994,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (!bool_119_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_118_
                     Class79.anInt1359 = (Class79.anInt1359 + 1) % 100
-                    val string_121_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_117_, (-106).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
+                    val string_121_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_117_, (-106).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_114_, string_121_, (-120).toByte(), i_117_, "<img=1>" + string, method1788(87.toByte(), l), 20, 0, string)
                     else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_114_, string_121_, (-111).toByte(), i_117_, string, method1788(80.toByte(), l), 20, 0, string)
                     else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_114_, string_121_, (-116).toByte(), i_117_, "<img=0>" + string, ShadowQualityOptionState.method1788((-98).toByte(), l), 20, 0, string)
@@ -1003,7 +1003,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub47.aIntRange_7124 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 if (i == -1) {
                     Class9.anInt167 = -1
@@ -1026,8 +1026,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub40_Sub19.aIntRange_9254) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-88).toByte())
-                val i_124_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-88).toByte())
+                val i_124_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool)
                 Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1316((-58).toByte(), i_124_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1038,13 +1038,13 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == MapArchiveSource.aIntRange_4798) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-107)
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-107)
                 if (i == 65535) i = -1
-                val i_125_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-121).toByte())
+                val i_125_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-121).toByte())
                 val i_126_ = i_125_ shr 2
                 val i_127_ = i_125_ and 0x3
                 val i_128_ = Class36.anIntArray487!![i_126_]
-                val i_129_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i_129_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_130_ = (0x36079814 and i_129_) shr 28
                 var i_131_ = i_129_ shr 14 and 0x3fff
                 var i_132_ = 0x3fff and i_129_
@@ -1055,9 +1055,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == HeapDiagnosticsHolder.aIntRange_2255) {
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-104).toByte())
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val string_133_ = (BrightnessOptionState.aClass355_5900!!.method3471(i, (-98).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-104).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val string_133_ = (BrightnessOptionState.aClass355_5900!!.method3471(i, (-98).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
                 Class318_Sub1_Sub3_Sub5.method2477(string, string_133_, (-122).toByte(), i, string, null, 19, 0, string)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1084,17 +1084,17 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class365.aIntRange_4477 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                val i_134_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_135_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-109)
-                val i_136_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(16)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i_134_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_135_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-109)
+                val i_136_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(16)
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 ObjectSpawnDecoder.method1085(i_136_, i_134_, (-86).toByte(), i_135_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class95.aIntRange_1540 == Class348_Sub3.aIntRange_6584) {
-                Class57.aBoxedIntHolder_1055 = Class38.method360((-57).toByte(), Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
+                Class57.aBoxedIntHolder_1055 = Class38.method360((-57).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1104,14 +1104,14 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (PingHostListHolder.aIntRange_2331 == Class348_Sub3.aIntRange_6584) {
-                Class348_Sub42_Sub12.anInt9604 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                Class348_Sub42_Sub12.anInt9604 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var i = 0
                 while (Class348_Sub42_Sub12.anInt9604 > i) {
-                    Class51.aStringArray932!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-36).toByte())
-                    ObjectSpawnDecoder.aStringArray1808!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(112.toByte())
+                    Class51.aStringArray932!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-36).toByte())
+                    ObjectSpawnDecoder.aStringArray1808!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(112.toByte())
                     if (ObjectSpawnDecoder.aStringArray1808!![i] == "") ObjectSpawnDecoder.aStringArray1808!![i] = Class51.aStringArray932!![i]
-                    Class348_Sub40_Sub21.aStringArray9275!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(84.toByte())
-                    IndexedSprite.aStringArray5197!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-111).toByte())
+                    Class348_Sub40_Sub21.aStringArray9275!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(84.toByte())
+                    IndexedSprite.aStringArray5197!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-111).toByte())
                     if (IndexedSprite.aStringArray5197!![i] == "") IndexedSprite.aStringArray5197!![i] = Class348_Sub40_Sub21.aStringArray9275!![i]
                     Class367_Sub3.aBooleanArray7304!![i] = false
                     i++
@@ -1121,11 +1121,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == ItemDefinitionLoader.aIntRange_2183) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
                 if (i == 65535) i = -1
-                var string: String? = Class299.aClass348_Sub49_Sub2_3813!!.readString(103.toByte())
-                val i_137_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-91).toByte())
-                val i_138_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(13.toByte())
+                var string: String? = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(103.toByte())
+                val i_137_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-91).toByte())
+                val i_138_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(13.toByte())
                 if (i_137_ >= 1 && i_137_ <= 8) {
                     if (string.equals("null", ignoreCase = true)) string = null
                     Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_137_ + -1] = string
@@ -1136,17 +1136,17 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (MinimapStateReset.aIntRange_1871 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readSmart(-117)
-                val i_139_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                val i_140_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readSmart(-117)
+                val i_139_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                val i_140_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var string = ""
                 var string_141_ = string
                 if ((i_140_ and 0x1) != 0) {
-                    string = Class299.aClass348_Sub49_Sub2_3813!!.readString(92.toByte())
-                    if ((i_140_ and 0x2) != 0) string_141_ = Class299.aClass348_Sub49_Sub2_3813!!.readString(126.toByte())
+                    string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(92.toByte())
+                    if ((i_140_ and 0x2) != 0) string_141_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(126.toByte())
                     else string_141_ = string
                 }
-                val string_142_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-95).toByte())
+                val string_142_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-95).toByte())
                 if (i == 99) method94(string_142_, -93)
                 else if (i == 98) set(string_142_)
                 else {
@@ -1160,30 +1160,30 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub45.aIntRange_7105) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                if (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) DetailLevelOptionState.aClass54Array6114!![i] = Class54()
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) DetailLevelOptionState.aClass54Array6114!![i] = Class54()
                 else {
-                    Class299.aClass348_Sub49_Sub2_3813!!.anInt7197--
-                    DetailLevelOptionState.aClass54Array6114!![i] = Class54(Class299.aClass348_Sub49_Sub2_3813!!)
+                    CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197--
+                    DetailLevelOptionState.aClass54Array6114!![i] = Class54(CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 MapAreaDefinition.anInt2523 = Class311.anInt3918
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == AbstractMenuEntry.aIntRange_1702) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShort(13638)
-                val i_143_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
+                val i_143_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
                 ObjectByteSerializerHolder.method1330(i, -19906, i_143_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class3.aIntRange_123) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
-                val i_144_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                var i_145_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
+                val i_144_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                var i_145_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i_145_ == 65535) i_145_ = -1
-                var i_146_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
+                var i_146_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 if (i_146_ == 65535) i_146_ = -1
                 var i_147_ = i_146_
@@ -1205,17 +1205,17 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub45.aIntRange_7106) {
-                while ((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) < Class348_Sub40_Sub25.anInt9341) {
-                    val bool_149_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
-                    var string: String? = Class299.aClass348_Sub49_Sub2_3813!!.readString((-95).toByte())
-                    val string_150_ = Class299.aClass348_Sub49_Sub2_3813!!.readString(118.toByte())
-                    val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    val i_151_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                while ((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) < Class348_Sub40_Sub25.anInt9341) {
+                    val bool_149_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
+                    var string: String? = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-95).toByte())
+                    val string_150_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(118.toByte())
+                    val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    val i_151_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     var string_152_ = ""
                     var bool_153_ = false
                     if (i > 0) {
-                        string_152_ = Class299.aClass348_Sub49_Sub2_3813!!.readString(119.toByte())
-                        bool_153_ = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
+                        string_152_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(119.toByte())
+                        bool_153_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                     }
                     var i_154_ = 0
                     while ((i_154_ < Class348_Sub40_Sub30.anInt9383)) {
@@ -1306,34 +1306,34 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class59_Sub2_Sub2.aIntRange_8683 == Class348_Sub3.aIntRange_6584) {
                 if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(Class348_Sub40_Sub25.anInt9341)
-                Class299.aClass348_Sub49_Sub2_3813!!.method3409(Class348_Sub40_Sub25.anInt9341, `is`, 0, -32769)
+                CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(Class348_Sub40_Sub25.anInt9341, `is`, 0, -32769)
                 val string = method3546(`is`, 0, Class348_Sub40_Sub25.anInt9341, 0)
                 GrowableStringList.method1360(string, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, true, 99)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class367_Sub8.aIntRange_7363 == Class348_Sub3.aIntRange_6584) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
-                val i_163_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_164_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_165_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_166_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_163_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_164_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_165_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_166_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 Class348_Sub20.method2947(true, i_165_, i, i_163_, i_164_, i_166_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == GraphicsOptionState.aIntRange_3143) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_167_ = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-83)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_167_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-83)
                 Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1313(42.toByte(), i_167_.toInt(), i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class318_Sub1_Sub3.aIntRange_8756) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 if (i == 65535) i = -1
-                val i_168_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i_168_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 SpriteStore.method304(i, 437853543, i_168_)
                 Class348_Sub3.aIntRange_6584 = null
@@ -1345,12 +1345,12 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == MapSceneIconDef.aIntRange_2860) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
-                val i_169_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_170_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_171_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_172_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_169_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_170_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_171_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_172_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 SoundChannelMixer.method2090(i_169_, i_172_, false, (-35).toByte(), i_171_, i_170_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1362,22 +1362,22 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return false
             }
             if (Class348_Sub3.aIntRange_6584 == Class345.aIntRange_4272) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-127)
-                val i_173_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-127)
+                val i_173_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 Class55_Sub1.method524(i_173_, true, i, -127)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (CircleDrawer.aIntRange_2693 == Class348_Sub3.aIntRange_6584) {
-                val bool_174_ = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString(107.toByte())
+                val bool_174_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(107.toByte())
                 var string_175_ = string
-                if (bool_174_) string_175_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-71).toByte())
-                val l = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toLong()
-                val l_176_ = Class299.aClass348_Sub49_Sub2_3813!!.readMedium(-1).toLong()
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_177_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                if (bool_174_) string_175_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-71).toByte())
+                val l = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toLong()
+                val l_176_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readMedium(-1).toLong()
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_177_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val l_178_ = l_176_ + (l shl 32)
                 var bool_179_ = false
                 while_220_@ do {
@@ -1392,7 +1392,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (!bool_179_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_178_
                     Class79.anInt1359 = (Class79.anInt1359 - -1) % 100
-                    val string_181_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_177_, (-93).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 62.toByte()))
+                    val string_181_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_177_, (-93).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 62.toByte()))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_175_, string_181_, (-110).toByte(), i_177_, "<img=1>" + string, null, 18, 0, string)
                     else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_175_, string_181_, (-112).toByte(), i_177_, "<img=0>" + string, null, 18, 0, string)
                     else Class318_Sub1_Sub3_Sub5.method2477(string_175_, string_181_, (-118).toByte(), i_177_, string, null, 18, 0, string)
@@ -1401,9 +1401,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class367_Sub9.aIntRange_7367) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                val i_182_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-122).toByte())
-                val i_183_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-95).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                val i_182_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-122).toByte())
+                val i_183_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-95).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_182_.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533)
@@ -1424,14 +1424,14 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (MinimapRectClipper.aIntRange_220 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_184_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_185_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_184_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_185_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] != null) {
                     var i_186_ = i_184_
                     while (i_185_ > i_186_) {
-                        val i_187_ = Class299.aClass348_Sub49_Sub2_3813!!.readMedium(-1)
+                        val i_187_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readMedium(-1)
                         if ((Class348_Sub40_Sub33.aClass46ArrayArray9427!![i])!!.size > i_186_ && (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!![i_186_]) != null) Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!![i_186_]!!.anInt732 = i_187_
                         i_186_++
                     }
@@ -1445,9 +1445,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub38.aIntRange_7015 == Class348_Sub3.aIntRange_6584) {
-                Class348_Sub40_Sub12.anInt9200 = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(126.toByte())
-                Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
-                BufferedMessageQueue.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
+                Class348_Sub40_Sub12.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(126.toByte())
+                Class73.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
+                BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 var class348_sub37 = ModelBatchBase.aClass356_1895!!.method3484(0) as? Class348_Sub37?
                 while (class348_sub37 != null) {
                     val i = ((class348_sub37.aLong4291 shr 28) and 0x3L).toInt()
@@ -1470,64 +1470,64 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == TextureQualityOptionState.aIntRange_5997) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val `is` = IntArray(4)
-                for (i_192_ in 0..3) `is`[i_192_] = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_193_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                for (i_192_ in 0..3) `is`[i_192_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_193_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_193_.toLong(), -6008) as Class348_Sub22?)
                 if (class348_sub22 != null) Class348_Sub17.method2931(i, 110.toByte(), `is`, (class348_sub22.aNpc_6859))
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub40_Sub22.aIntRange_9285) {
-                KeyboardLayoutCache.anInt3306 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                KeyboardLayoutCache.anInt3306 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub40_Sub24.aIntRange_9324 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-104).toByte())
-                val i_194_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-92).toByte())
-                var i_195_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-127)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-104).toByte())
+                val i_194_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-92).toByte())
+                var i_195_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-127)
                 if (i_195_ == 65535) i_195_ = -1
                 HeadIconRenderer.method1212(i_194_, i_195_, -1, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class321.aIntRange_4015 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.method3363(-13309)
-                var i_196_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-124)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3363(-13309)
+                var i_196_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-124)
                 if (i_196_ == 65535) i_196_ = -1
-                val i_197_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                val i_197_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 ClickFeedbackTask.method1352(i_196_, i_197_, i, (-98).toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub40_Sub12.aIntRange_9197 == Class348_Sub3.aIntRange_6584) {
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-43).toByte())
-                val string_198_ = Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), (Class299.aClass348_Sub49_Sub2_3813))), 23034)
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-43).toByte())
+                val string_198_ = Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813))), 23034)
                 FixedFunctionMaterialPass.method2144(string, 6, (-101).toByte(), 0, string_198_, string, string)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == ScrollingWidgetComponentNode.aIntRange_8385) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-97).toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-97).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 method1803(i, string, -32394)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == SpotAnimVector.aIntRange_2305) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
-                val i_199_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                val i_200_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
+                val i_199_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i_200_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
                 method1703(5, i, i_200_, 4, i_199_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class368.aIntRange_4500 == Class348_Sub3.aIntRange_6584) {
-                val bool_201_ = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
+                val bool_201_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 ObjectSpawnDecoder.aBoolean1801 = bool_201_
                 Class348_Sub3.aIntRange_6584 = null
@@ -1539,14 +1539,14 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub1_Sub2.aIntRange_8817 == Class348_Sub3.aIntRange_6584) {
-                ShaderProgram.anInt7276 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(69.toByte())
-                BufferToggleState.anInt3713 = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-82).toByte())
+                ShaderProgram.anInt7276 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(69.toByte())
+                BufferToggleState.anInt3713 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-82).toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub40_Sub19.aIntRange_9257) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
-                val i_202_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                val i_202_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 if (i == 2) FrameStatsReset.method1134(92)
                 RenderNode.anInt9721 = i_202_
@@ -1558,26 +1558,26 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == WalkingTypeUtil.aIntRange_3307) {
-                if (!Class340.method2672(WorldMapRenderer.anInt4674, -105)) RegionSceneLoader.anInt3699 = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) * 30)
-                else RegionSceneLoader.anInt3699 = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toFloat() * 2.5f).toInt()
+                if (!Class340.method2672(WorldMapRenderer.anInt4674, -105)) RegionSceneLoader.anInt3699 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) * 30)
+                else RegionSceneLoader.anInt3699 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toFloat() * 2.5f).toInt()
                 Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class318_Sub1.aIntRange_6383) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
-                val i_204_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_205_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_206_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_204_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_205_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_206_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 SoundChannelMixer.method2090(i_204_, 256, true, (-35).toByte(), i_206_, i_205_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class318_Sub1_Sub5_Sub2.aIntRange_10149 == Class348_Sub3.aIntRange_6584) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-16)
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-16)
                 if (i == 65535) i = -1
-                val i_207_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
+                val i_207_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 method1703(1, i_207_, i, 4, -1)
                 Class348_Sub3.aIntRange_6584 = null
@@ -1589,12 +1589,12 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == LightingOptionState.aIntRange_5883) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 if (i == 65535) i = -1
-                var i_208_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                var i_208_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 if (i_208_ == 65535) i_208_ = -1
-                val i_209_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                val i_210_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i_209_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                val i_210_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 for (i_211_ in i_208_..i) {
                     val l = i_211_.toLong() + (i_209_.toLong() shl 32)
@@ -1611,28 +1611,28 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == HeadIconRenderer.aIntRange_2068) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-103)
-                val i_213_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-103)
+                val i_213_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1316((-124).toByte(), i, i_213_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class314_Sub1.aIntRange_6340) {
-                Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 += 28
-                if (Class299.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) GrowableStringList.method1365((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), Class299.aClass348_Sub49_Sub2_3813!!)
+                CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 += 28
+                if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) GrowableStringList.method1365((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == WidgetDefinition.aIntRange_250) {
-                Class309.anInt4816 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                Class309.anInt4816 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (MapSceneDefLoader.aIntRange_2483 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(20.toByte())
-                val i_214_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
-                val i_215_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(20.toByte())
+                val i_214_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                val i_215_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 TextureGenerator.anIntArray2497!![i_214_] = i_215_
                 ServerConnectionInfo.anIntArray2145!![i_214_] = i
                 SpotAnimDefCache.anIntArray3295!![i_214_] = 1
@@ -1652,8 +1652,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (ItemNameResolver.aIntRange_4998 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
-                val i_218_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(70.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
+                val i_218_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(70.toByte())
                 val bool_219_ = (0x1 and i_218_) == 1
                 Class348_Sub40_Sub3.method3054(bool_219_, i, -128)
                 LoadingScreenState.anIntArray2633!![NpcSummaryDefinition.method1166(31, DualMaterialContainer.anInt1631++)] = i
@@ -1661,16 +1661,16 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub40_Sub16.aIntRange_9225 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val i_220_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val i_220_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_221_ = (i_220_ and 0x1) == 1
-                while ((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) < Class348_Sub40_Sub25.anInt9341) {
-                    val i_222_ = Class299.aClass348_Sub49_Sub2_3813!!.readSmart(-125)
-                    val i_223_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                while ((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) < Class348_Sub40_Sub25.anInt9341) {
+                    val i_222_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readSmart(-125)
+                    val i_223_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     var i_224_ = 0
                     if (i_223_ != 0) {
-                        i_224_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                        if (i_224_ == 255) i_224_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                        i_224_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                        if (i_224_ == 255) i_224_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                     }
                     DelegatingRenderCanvas.method121(i, -364570972, bool_221_, i_222_, i_224_, -1 + i_223_)
                 }
@@ -1679,8 +1679,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (BinaryGraphicsOptionState.aIntRange_5950 == Class348_Sub3.aIntRange_6584) {
-                var i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-113).toByte())
-                var i_225_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(127.toByte())
+                var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-113).toByte())
+                var i_225_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(127.toByte())
                 if (i == 255) {
                     i_225_ = -1
                     i = -1
@@ -1690,8 +1690,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class367_Sub11.aIntRange_7398 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
-                val i_226_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
+                val i_226_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 Class50_Sub3.method467(i_226_, -18075, i)
                 Class348_Sub3.aIntRange_6584 = null
@@ -1703,16 +1703,16 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class367_Sub3.aIntRange_7301 == Class348_Sub3.aIntRange_6584) {
-                val bool_227_ = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
-                val string = Class299.aClass348_Sub49_Sub2_3813!!.readString(89.toByte())
+                val bool_227_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
+                val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(89.toByte())
                 var string_228_ = string
-                if (bool_227_) string_228_ = Class299.aClass348_Sub49_Sub2_3813!!.readString(98.toByte())
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                val i_229_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                if (bool_227_) string_228_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(98.toByte())
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                val i_229_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 var bool_230_ = false
                 if (i <= 1 && Class351.method3455(string_228_, 28280)) bool_230_ = true
                 if (!bool_230_ && BackgroundWorkerThread.anInt3227 == 0) {
-                    val string_231_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_229_, (-108).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
+                    val string_231_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_229_, (-108).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_228_, string_231_, (-127).toByte(), i_229_, "<img=1>" + string, null, 25, 0, string)
                     else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_228_, string_231_, (-119).toByte(), i_229_, string, null, 25, 0, string)
                     else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_228_, string_231_, (-125).toByte(), i_229_, "<img=0>" + string, null, 25, 0, string)
@@ -1721,8 +1721,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (ScreenBorderFiller.aIntRange_1959 == Class348_Sub3.aIntRange_6584) {
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                val i_232_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-110)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
+                val i_232_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-110)
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 Class348_Sub49_Sub2.method3411(i, 12, i_232_)
                 Class348_Sub3.aIntRange_6584 = null
@@ -1738,13 +1738,13 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class348_Sub3.aIntRange_6584 = null
                     return true
                 }
-                Class348_Sub21.aString6854 = Class299.aClass348_Sub49_Sub2_3813!!.readString((-112).toByte())
-                var bool_233_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
-                if (bool_233_) Class299.aClass348_Sub49_Sub2_3813!!.readString(108.toByte())
-                val l = Class299.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
+                Class348_Sub21.aString6854 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-112).toByte())
+                var bool_233_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
+                if (bool_233_) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(108.toByte())
+                val l = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
                 Class50.aString863 = ProjectileConfigUtil.method313(l, -104)
-                ModelDefinitionCache.aByte2871 = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-90)
-                val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                ModelDefinitionCache.aByte2871 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-90)
+                val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if (i == 255) {
                     Class348_Sub3.aIntRange_6584 = null
                     return true
@@ -1754,14 +1754,14 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 var i_234_ = 0
                 while (Class37.anInt496 > i_234_) {
                     worldListEntries[i_234_] = WorldListEntry()
-                    worldListEntries[i_234_]!!.aString314 = Class299.aClass348_Sub49_Sub2_3813!!.readString(103.toByte())
-                    bool_233_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
+                    worldListEntries[i_234_]!!.aString314 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(103.toByte())
+                    bool_233_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                     if (!bool_233_) worldListEntries[i_234_]!!.aString306 = worldListEntries[i_234_]!!.aString314
-                    else worldListEntries[i_234_]!!.aString306 = Class299.aClass348_Sub49_Sub2_3813!!.readString(107.toByte())
+                    else worldListEntries[i_234_]!!.aString306 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(107.toByte())
                     worldListEntries[i_234_]!!.aString312 = method2127(2, (worldListEntries[i_234_]!!.aString306))
-                    worldListEntries[i_234_]!!.anInt308 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    worldListEntries[i_234_]!!.aByte310 = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-118)
-                    worldListEntries[i_234_]!!.aString313 = Class299.aClass348_Sub49_Sub2_3813!!.readString((-124).toByte())
+                    worldListEntries[i_234_]!!.anInt308 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    worldListEntries[i_234_]!!.aByte310 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-118)
+                    worldListEntries[i_234_]!!.aString313 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-124).toByte())
                     if (worldListEntries[i_234_]!!.aString306 == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = worldListEntries[i_234_]!!.aByte310
                     i_234_++
                 }

@@ -91,7 +91,7 @@ class Class370 {
             var i = 0
             var i_20_ = Class348_Sub10.method2789(5) + 1
             while (i < anInt4518) {
-                val i_21_ = Class348_Sub10.method2789(Class299.method2253(anInt4518 - i, 126))
+                val i_21_ = Class348_Sub10.method2789(CircleRasterizer.method2253(anInt4518 - i, 126))
                 for (i_22_ in 0..<i_21_) anIntArray4516[i++] = i_20_
                 i_20_++
             }

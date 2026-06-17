@@ -15,9 +15,9 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
         anInt9166++
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val is_6_ = this.method3048(Class299_Sub2.anInt6325 and -1 + i, 633706337, 0)!!
+            val is_6_ = this.method3048(TextureCubeProvider.anInt6325 and -1 + i, 633706337, 0)!!
             val is_7_ = this.method3048(i, 633706337, 0)!!
-            val is_8_ = this.method3048(i - -1 and Class299_Sub2.anInt6325, 633706337, 0)!!
+            val is_8_ = this.method3048(i - -1 and TextureCubeProvider.anInt6325, 633706337, 0)!!
             var i_9_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_9_) {
                 val i_10_ = anInt9167 * (-is_6_[i_9_] + is_8_[i_9_])

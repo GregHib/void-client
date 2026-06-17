@@ -20,7 +20,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
     var aScreenAnchorAlignment_4948: ScreenAnchorAlignment? = null
     override fun method51(i: Byte): ProjectileFactory? {
         anInt4941++
-        if (i <= 116) aClass299_4938 = null
+        if (i <= 116) aCircleRasterizer_4938 = null
         return SpotAnimVector.aProjectileFactory_2307
     }
 
@@ -48,7 +48,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
         var anInt4933: Int = 0
         var aClass356_4934: Class356? = Class356(8)
         @JvmField
-        var aClass299_4938: Class299? = null
+        var aCircleRasterizer_4938: CircleRasterizer? = null
         var anInt4939: Int = 0
         var anInt4941: Int = 0
 
@@ -58,7 +58,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
         fun method1247(file: File, bool: Boolean, bool_0_: Boolean) {
             if (HeapDiagnosticsHolder.anObject2256 == null) method1142(26.toByte())
             anInt4939++
-            if (bool_0_ != false) aClass299_4938 = null
+            if (bool_0_ != false) aCircleRasterizer_4938 = null
             try {
 //                val method = (HotSpotDiagnosticMXBean::class.java.getDeclaredMethod("dumpHeap", (if (aClass4949 != null) aClass4949 else (String::class.java.also { aClass4949 = it })), java.lang.Boolean.TYPE))
 //                method.invoke(Class168.anObject2256, file.getAbsolutePath(), bool)
@@ -71,7 +71,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
         @JvmStatic
         fun method1248(i: Int): Array<ScreenAnchorAlignment?> {
             anInt4933++
-            if (i < 11) aClass299_4938 = null
+            if (i < 11) aCircleRasterizer_4938 = null
             return (arrayOf<ScreenAnchorAlignment?>(Class5_Sub1.aScreenAnchorAlignment_8344, SoftwareSpriteRaster.aScreenAnchorAlignment_1620, ProjectileFactory.aScreenAnchorAlignment_2893))
         }
 
@@ -79,7 +79,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
         fun method1249(bool: Boolean) {
             if (bool != true) method1248(-21)
             aClass356_4934 = null
-            aClass299_4938 = null
+            aCircleRasterizer_4938 = null
         }
     }
 }

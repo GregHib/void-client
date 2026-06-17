@@ -2,7 +2,7 @@ import java.io.FileOutputStream
 import kotlin.math.ln
 import kotlin.math.pow
 
-abstract class Class299_Sub1 : Class299() {
+abstract class Texture2DProvider : CircleRasterizer() {
     abstract fun method2256(i: Byte): GlTextureCubeMap?
 
     companion object {

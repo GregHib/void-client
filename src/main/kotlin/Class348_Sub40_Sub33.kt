@@ -88,7 +88,7 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
             Class344.anInt4265 = i
             MinimapFlagRenderer.anInt1796 = i_12_
         }
-        Class344.anInt4265 = Class344.anInt4265 and Class299_Sub2.anInt6325
+        Class344.anInt4265 = Class344.anInt4265 and TextureCubeProvider.anInt6325
         MinimapFlagRenderer.anInt1796 = MinimapFlagRenderer.anInt1796 and SimpleBinaryOptionState.anInt6076
     }
 

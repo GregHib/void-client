@@ -1,7 +1,7 @@
 /* Class299_Sub2_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: NativeRenderer, private val anInt8716: Int, private val anInt8717: Int, private val anInt8715: Int, private val anInt8711: Int, private val anInt8708: Int, private val anInt8714: Int) : Class299_Sub2() {
+class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: NativeRenderer, private val anInt8716: Int, private val anInt8717: Int, private val anInt8715: Int, private val anInt8711: Int, private val anInt8708: Int, private val anInt8714: Int) : TextureCubeProvider() {
     private var anInterface18_Impl2_8719: Interface18_Impl2? = null
     override fun method2266(bool: Boolean): Interface18_Impl2? {
         if (bool != true) return null

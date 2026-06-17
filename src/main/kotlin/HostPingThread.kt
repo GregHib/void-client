@@ -1,4 +1,4 @@
-import Class299.Companion.method2253
+import CircleRasterizer.Companion.method2253
 import jagex3.jagmisc.jagmisc.ping
 import java.net.InetAddress
 

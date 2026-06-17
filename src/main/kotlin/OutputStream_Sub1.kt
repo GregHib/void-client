@@ -45,7 +45,7 @@ class OutputStream_Sub1 : OutputStream() {
                 if (LocalPlayerState.aPlayer_1907 != null && MediaStreamClient.anInt3203 == (LocalPlayerState.aPlayer_1907!!.x + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(90.toByte())) - -256) shr 9 && Class97.anInt1548 == (LocalPlayerState.aPlayer_1907!!.y + 256 + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(112.toByte()))) shr 9) {
                     Class97.anInt1548 = -1
                     MediaStreamClient.anInt3203 = -1
-                    Class299_Sub1_Sub2.method2264(false)
+                    CubemapTextureGlSource.method2264(false)
                 }
                 AsyncTaskHandle.method1434(-14988)
                 if (!bool) NpcEntityUpdater.method2109(512)

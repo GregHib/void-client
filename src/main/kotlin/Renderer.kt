@@ -103,7 +103,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun za(i: Int, i_59_: Int, i_60_: Int, i_61_: Int, i_62_: Int)
 
-    abstract fun method3653(class299: Class299?)
+    abstract fun method3653(circleRasterizer: CircleRasterizer?)
 
     abstract fun method3654(): AbstractCameraTransform
 
@@ -251,7 +251,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3696(i: Int)
 
-    abstract fun method3697(i: Int, i_172_: Int, i_173_: Int, i_174_: Int, i_175_: Int, i_176_: Int): Class299?
+    abstract fun method3697(i: Int, i_172_: Int, i_173_: Int, i_174_: Int, i_175_: Int, i_176_: Int): CircleRasterizer?
 
     protected open fun finalize() {
         method3635(46.toByte())
@@ -286,7 +286,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun GA(i: Int)
 
-    abstract fun method3706(class299: Class299?, class299_203_: Class299?, f: Float, class299_204_: Class299?): Class299?
+    abstract fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_203_: CircleRasterizer?, f: Float, circleRasterizer_204_: CircleRasterizer?): CircleRasterizer?
 
     @Throws(Exception_Sub1::class)
     abstract fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_205_: Int, i_206_: Int)

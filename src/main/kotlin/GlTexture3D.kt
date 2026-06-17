@@ -127,7 +127,7 @@ class GlTexture3D : GlTexture {
                     Player.anIntArray10566 = is_15_
                     BackgroundWorkerThread.anIntArray3220 = is_16_
                     Class59_Sub1_Sub2.anIntArray8666 = is_17_
-                    Class299_Sub2_Sub1.anIntArray8712 = is_18_
+                    CubemapTextureImplSource.anIntArray8712 = is_18_
                     Client.anIntArray5176 = is_19_
                     Class348_Sub42_Sub14.method3241(i_20_, 39.toByte(), Class9.aRenderer171!!)
                 }

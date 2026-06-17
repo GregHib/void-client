@@ -1,7 +1,7 @@
 import ItemActionPacketSender.method1237
 import FlickeringEffectsOptionState.Companion.method1753
 import WaterMaterialPass.Companion.method2148
-import Class299.Companion.method2253
+import CircleRasterizer.Companion.method2253
 import Class309.Companion.method2307
 import Class348_Sub40_Sub7.Companion.method3065
 import Class348_Sub9.Companion.method2780
@@ -671,7 +671,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 AbstractCameraTransform.anInt1596++
                                 FogOptionState.anInt6048 = 2
                                 SpriteArchiveLoader.anInt385 = i_73_
-                                val class348_sub47 = method2148((Class299_Sub1_Sub2.aClass351_8706), (Class348_Sub23_Sub2.aClass77_9029), -84)
+                                val class348_sub47 = method2148((CubemapTextureGlSource.aClass351_8706), (Class348_Sub23_Sub2.aClass77_9029), -84)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-125).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 1 else 0))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                 Class348_Sub42_Sub14.method3243(30, class348_sub47)
@@ -920,7 +920,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     if (class348_sub22 != null) {
                                         FogOptionState.anInt6048 = 2
                                         Class93.anInt1534 = i_72_
-                                        Class299_Sub1_Sub2.anInt8702++
+                                        CubemapTextureGlSource.anInt8702++
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         SpriteArchiveLoader.anInt385 = i_73_
                                         Class348.anInt4292 = 0

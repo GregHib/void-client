@@ -131,7 +131,7 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                             class348_sub9.aClass348_Sub16_Sub5_6676!!.method2915(i_9_)
                             class348_sub9.aClass348_Sub16_Sub5_6676!!.method2909(i_10_)
                         } else if (class348_sub9.anInt6685 >= 0) {
-                            val i_15_ = (if (class348_sub9.anInt6681 == 256 && (class348_sub9.anInt6696 == 256)) 256 else (Class299_Sub1.method2257(class348_sub9.anInt6681, class348_sub9.anInt6696, (-120).toByte())))
+                            val i_15_ = (if (class348_sub9.anInt6681 == 256 && (class348_sub9.anInt6696 == 256)) 256 else (Texture2DProvider.method2257(class348_sub9.anInt6681, class348_sub9.anInt6696, (-120).toByte())))
                             if (class348_sub9.aBoolean6674) {
                                 if ((class348_sub9.aClass348_Sub10_6688) == null) class348_sub9.aClass348_Sub10_6688 = (Class348_Sub10.method2793(LightingOptionState.aClass45_5878!!, (class348_sub9.anInt6685)))
                                 if ((class348_sub9.aClass348_Sub10_6688) != null) {

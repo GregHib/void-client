@@ -154,7 +154,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var aClass101_Sub3_7767: ProjectionCameraTransform
     @JvmField
     var aFloat7768: Float = 0f
-    private var aClass299_Sub1_7769: Class299_Sub1? = null
+    private var aClass299_Sub1_7769: Texture2DProvider? = null
     private var anInt7770: Int
     @JvmField
     var anInt7771: Int
@@ -389,12 +389,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (i <= 113) method3659(-64)
     }
 
-    override fun method3653(class299: Class299?) {
+    override fun method3653(circleRasterizer: CircleRasterizer?) {
         try {
             anInt7550++
-            aClass299_Sub1_7769 = class299 as Class299_Sub1?
+            aClass299_Sub1_7769 = circleRasterizer as Texture2DProvider?
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qo.DF(" + (if (class299 != null) "{...}" else "null") + ')')
+            throw Class348_Sub17.method2929(runtimeexception, "qo.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1437,9 +1437,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    override fun method3697(i: Int, i_151_: Int, i_152_: Int, i_153_: Int, i_154_: Int, i_155_: Int): Class299? {
+    override fun method3697(i: Int, i_151_: Int, i_152_: Int, i_153_: Int, i_154_: Int, i_155_: Int): CircleRasterizer? {
         anInt7515++
-        if (this.aBoolean7863) return Class299_Sub1_Sub1(this, i, i_151_, i_152_, i_153_, i_154_, i_155_)
+        if (this.aBoolean7863) return CubemapTexture2dSource(this, i, i_151_, i_152_, i_153_, i_154_, i_155_)
         return null
     }
 
@@ -2639,29 +2639,29 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return (anInt7750 + this.anInt7748 + this.anInt7747)
     }
 
-    override fun method3706(class299: Class299?, class299_305_: Class299?, f: Float, class299_306_: Class299?): Class299? {
+    override fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_305_: CircleRasterizer?, f: Float, circleRasterizer_306_: CircleRasterizer?): CircleRasterizer? {
         try {
             anInt7658++
-            if (class299 != null && class299_305_ != null && this.aBoolean7863 && this.aBoolean7820) {
-                var class299_sub1_sub2: Class299_Sub1_Sub2? = null
-                val class299_sub1 = class299 as Class299_Sub1
-                val class299_sub1_307_ = class299_305_ as Class299_Sub1
+            if (circleRasterizer != null && circleRasterizer_305_ != null && this.aBoolean7863 && this.aBoolean7820) {
+                var class299_sub1_sub2: CubemapTextureGlSource? = null
+                val class299_sub1 = circleRasterizer as Texture2DProvider
+                val class299_sub1_307_ = circleRasterizer_305_ as Texture2DProvider
                 val class258_sub2 = class299_sub1.method2256((-121).toByte())
                 val class258_sub2_308_ = class299_sub1_307_.method2256((-121).toByte())
                 if (class258_sub2 != null && class258_sub2_308_ != null) {
                     val i = (max(class258_sub2_308_.anInt8538, class258_sub2.anInt8538))
-                    if (class299_306_ !== class299 && class299_305_ !== class299_306_ && class299_306_ is Class299_Sub1_Sub2) {
-                        val class299_sub1_sub2_309_ = class299_306_
+                    if (circleRasterizer_306_ !== circleRasterizer && circleRasterizer_305_ !== circleRasterizer_306_ && circleRasterizer_306_ is CubemapTextureGlSource) {
+                        val class299_sub1_sub2_309_ = circleRasterizer_306_
                         if (i == class299_sub1_sub2_309_.method2262(65534)) class299_sub1_sub2 = class299_sub1_sub2_309_
                     }
-                    if (class299_sub1_sub2 == null) class299_sub1_sub2 = Class299_Sub1_Sub2(this, i)
+                    if (class299_sub1_sub2 == null) class299_sub1_sub2 = CubemapTextureGlSource(this, i)
                     if (class299_sub1_sub2.method2261(class258_sub2, f, 65534, class258_sub2_308_)) return class299_sub1_sub2
                 }
             }
-            if (f < 0.5f) return class299
-            return class299_305_
+            if (f < 0.5f) return circleRasterizer
+            return circleRasterizer_305_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.SD(" + (if (class299 != null) "{...}" else "null") + ',' + (if (class299_305_ != null) "{...}" else "null") + ',' + f + ',' + (if (class299_306_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_305_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_306_ != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -2,7 +2,7 @@ import GameAppletFrame.Companion.method94
 import BloomGraphicsOptionState.Companion.method1772
 import CameraDistanceOptionState.Companion.method1725
 import WaterMaterialPass.Companion.method2148
-import Class299_Sub2_Sub1.Companion.method2271
+import CubemapTextureImplSource.Companion.method2271
 import Class348_Sub1.Companion.method2718
 import Class369_Sub1.Companion.method3570
 import NativeRenderer.Companion.method3936

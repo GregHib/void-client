@@ -114,9 +114,9 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
                     LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
                     Class361.aFloat4455 = (ParticleEmitterFactory.aFloat3177 + f_6_ * (-ParticleEmitterFactory.aFloat3177 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536)))
                     NormalMapGenerator.aFloat3462 = (DebugOverlayRenderer.aFloat3172 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542 - DebugOverlayRenderer.aFloat3172) * f_6_)
-                    if (SceneryDetailOptionState.aClass299_6098 !== (WaterDetailOptionState.aModelLightingConfig_5990!!.aClass299_2541)) HeapInfoRecord.aClass299_4938 = (Class60.aRenderer1098!!.method3706(SceneryDetailOptionState.aClass299_6098, (WaterDetailOptionState.aModelLightingConfig_5990!!.aClass299_2541), f_6_, HeapInfoRecord.aClass299_4938))
+                    if (SceneryDetailOptionState.aCircleRasterizer_6098 !== (WaterDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541)) HeapInfoRecord.aCircleRasterizer_4938 = (Class60.aRenderer1098!!.method3706(SceneryDetailOptionState.aCircleRasterizer_6098, (WaterDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541), f_6_, HeapInfoRecord.aCircleRasterizer_4938))
                 } else {
-                    HeapInfoRecord.aClass299_4938 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aClass299_2541)
+                    HeapInfoRecord.aCircleRasterizer_4938 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541)
                     TextureMetadataProvider.aFloat4626 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544
                     Class348_Sub3.aFloat6586 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2545
                     RangedGraphicsOptionState.aFloat5945 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2551

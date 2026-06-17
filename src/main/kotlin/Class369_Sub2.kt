@@ -44,7 +44,7 @@ class Class369_Sub2(screenAnchorAlignment: ScreenAnchorAlignment?, class341: Cla
             anInt8593++
             if (i_0_.toInt() != -23) return null
             var indexedFileCache: IndexedFileCache? = null
-            if (Class299_Sub2.aClass78_6328 != null) indexedFileCache = IndexedFileCache(i, Class299_Sub2.aClass78_6328, MinimapRenderer.aClass78Array1579!![i], 1000000)
+            if (TextureCubeProvider.aClass78_6328 != null) indexedFileCache = IndexedFileCache(i, TextureCubeProvider.aClass78_6328, MinimapRenderer.aClass78Array1579!![i], 1000000)
             MinimapRectClipper.aClass314_Sub1Array223!![i] = SizeBoundedSoftCache.aClass340_2327!!.method2673(indexedFileCache, i, LocTypeConfig.aIndexedFileCache_3568, 255)
             MinimapRectClipper.aClass314_Sub1Array223!![i]!!.method2346(27872)
             return Class45(MinimapRectClipper.aClass314_Sub1Array223!![i]!!, bool, i_1_)

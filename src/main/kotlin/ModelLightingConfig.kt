@@ -9,7 +9,7 @@ class ModelLightingConfig {
     var aFloat2536: Float = 0f
     var anInt2538: Int = 0
     var anInt2540: Int = 0
-    var aClass299_2541: Class299? = null
+    var aCircleRasterizer_2541: CircleRasterizer? = null
     var aFloat2542: Float = 0.25f
     var aFloat2544: Float = 0f
     var aFloat2545: Float = 1.0f
@@ -28,13 +28,13 @@ class ModelLightingConfig {
     fun method1424(modelLightingConfig_4_: ModelLightingConfig, i: Byte): Boolean {
         anInt2543++
         if (i.toInt() != 84) return false
-        return (this.anInt2540 == modelLightingConfig_4_.anInt2540) && (this.aFloat2547 == modelLightingConfig_4_.aFloat2547) && (modelLightingConfig_4_.aFloat2544 == this.aFloat2544) && (this.aFloat2536 == modelLightingConfig_4_.aFloat2536) && (modelLightingConfig_4_.aFloat2542 == this.aFloat2542) && (modelLightingConfig_4_.aFloat2545 == this.aFloat2545) && (modelLightingConfig_4_.aFloat2551 == this.aFloat2551) && (modelLightingConfig_4_.anInt2549 == this.anInt2549) && (modelLightingConfig_4_.anInt2546 == this.anInt2546) && (modelLightingConfig_4_.aClass299_2541 === this.aClass299_2541)
+        return (this.anInt2540 == modelLightingConfig_4_.anInt2540) && (this.aFloat2547 == modelLightingConfig_4_.aFloat2547) && (modelLightingConfig_4_.aFloat2544 == this.aFloat2544) && (this.aFloat2536 == modelLightingConfig_4_.aFloat2536) && (modelLightingConfig_4_.aFloat2542 == this.aFloat2542) && (modelLightingConfig_4_.aFloat2545 == this.aFloat2545) && (modelLightingConfig_4_.aFloat2551 == this.aFloat2551) && (modelLightingConfig_4_.anInt2549 == this.anInt2549) && (modelLightingConfig_4_.anInt2546 == this.anInt2546) && (modelLightingConfig_4_.aCircleRasterizer_2541 === this.aCircleRasterizer_2541)
     }
 
     constructor() {
         this.anInt2535 = -50
         this.aFloat2536 = 1.2f
-        this.aClass299_2541 = Class348_Sub42_Sub10.aClass299_9571
+        this.aCircleRasterizer_2541 = Class348_Sub42_Sub10.aCircleRasterizer_9571
         this.anInt2546 = 0
         this.anInt2549 = LocDefinitionCache.anInt3444
         this.anInt2548 = -60
@@ -85,8 +85,8 @@ class ModelLightingConfig {
             val i_30_ = class348_sub49.readUnsignedShort(842397944)
             val i_31_ = class348_sub49.readUnsignedShort(842397944)
             val i_32_ = class348_sub49.readUnsignedShort(842397944)
-            this.aClass299_2541 = SceneProjector.method1636(i_31_, i_30_, i_27_, i_32_, i_28_, -1, i_29_)
-        } else this.aClass299_2541 = Class348_Sub42_Sub10.aClass299_9571
+            this.aCircleRasterizer_2541 = SceneProjector.method1636(i_31_, i_30_, i_27_, i_32_, i_28_, -1, i_29_)
+        } else this.aCircleRasterizer_2541 = Class348_Sub42_Sub10.aCircleRasterizer_9571
     }
 
     companion object {

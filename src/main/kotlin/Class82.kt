@@ -7,7 +7,7 @@ import SceneryDetailOptionState.Companion.method1821
 import SimpleToggleOptionState.Companion.method1742
 import SocketFactory.Companion.method2049
 import WaterMaterialPass.Companion.method2148
-import Class299_Sub2_Sub1.Companion.method2271
+import CubemapTextureImplSource.Companion.method2271
 import Class318_Sub1_Sub2.Companion.method2405
 import Class318_Sub1_Sub4.Companion.method2478
 import Class348.Companion.method2710
@@ -320,8 +320,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("qa_op_test", ignoreCase = true)) {
-                            Class299_Sub2.aBoolean6327 = true
-                            method94(("qa_op_test=" + (Class299_Sub2.aBoolean6327)), -114)
+                            TextureCubeProvider.aBoolean6327 = true
+                            method94(("qa_op_test=" + (TextureCubeProvider.aBoolean6327)), -114)
                             return
                         }
                         if (string.equals("clipcomponents", ignoreCase = true)) {
@@ -638,12 +638,12 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                                     return
                                 }
                             }
-                            if (Class299_Sub1.aFileOutputStream6323 != null) {
-                                Class299_Sub1.aFileOutputStream6323!!.close()
-                                Class299_Sub1.aFileOutputStream6323 = null
+                            if (Texture2DProvider.aFileOutputStream6323 != null) {
+                                Texture2DProvider.aFileOutputStream6323!!.close()
+                                Texture2DProvider.aFileOutputStream6323 = null
                             }
                             try {
-                                Class299_Sub1.aFileOutputStream6323 = FileOutputStream(file)
+                                Texture2DProvider.aFileOutputStream6323 = FileOutputStream(file)
                             } catch (filenotfoundexception: FileNotFoundException) {
                                 method94(("Could not create " + file.getName()), 81)
                             } catch (securityexception: SecurityException) {
@@ -652,8 +652,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string == "closeoutput") {
-                            if (Class299_Sub1.aFileOutputStream6323 != null) Class299_Sub1.aFileOutputStream6323!!.close()
-                            Class299_Sub1.aFileOutputStream6323 = null
+                            if (Texture2DProvider.aFileOutputStream6323 != null) Texture2DProvider.aFileOutputStream6323!!.close()
+                            Texture2DProvider.aFileOutputStream6323 = null
                             return
                         }
                         if (string.startsWith("runscript ")) {

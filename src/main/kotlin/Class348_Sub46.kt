@@ -26,16 +26,16 @@ class Class348_Sub46 : Class348 {
 
         @JvmStatic
         fun method3317(i: Byte) {
-            if (Class299_Sub1.aFileOutputStream6323 != null) {
+            if (Texture2DProvider.aFileOutputStream6323 != null) {
                 try {
-                    Class299_Sub1.aFileOutputStream6323!!.close()
+                    Texture2DProvider.aFileOutputStream6323!!.close()
                 } catch (ioexception: IOException) {
                     /* empty */
                 }
             }
             if (i > -33) method3321(-73, 3, 6)
             anInt7110++
-            Class299_Sub1.aFileOutputStream6323 = null
+            Texture2DProvider.aFileOutputStream6323 = null
         }
 
         @JvmStatic

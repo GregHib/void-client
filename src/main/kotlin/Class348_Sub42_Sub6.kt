@@ -38,7 +38,7 @@ class Class348_Sub42_Sub6 internal constructor(var aClass318_Sub1_Sub3_Sub4_9538
                             method94(("Pausing for " + i_5_ + " seconds..."), -109)
                             Class50_Sub1.aStringArray5223 = strings
                             MinimapFlagRenderer.anInt1794 = i_4_ - -1
-                            Class299_Sub1_Sub1.aLong8694 = (i_5_ * 1000).toLong() + method599(-104)
+                            CubemapTexture2dSource.aLong8694 = (i_5_ * 1000).toLong() + method599(-104)
                             break
                         }
                         Class363.aString4461 = strings[i_4_]

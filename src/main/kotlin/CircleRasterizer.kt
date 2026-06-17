@@ -1,7 +1,7 @@
 /* Class299 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class299 {
+abstract class CircleRasterizer {
     companion object {
         @JvmField
         var anInt3812: Int = 0

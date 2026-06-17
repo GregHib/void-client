@@ -178,7 +178,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
             anInt5924++
             if (Client.method105(class46)!!.method3307(116) == 0) return null
             if (class46.aString780 == null || class46.aString780!!.trim { it <= ' ' }.length == 0) {
-                if (Class299_Sub2.aBoolean6327) return "Hidden-use"
+                if (TextureCubeProvider.aBoolean6327) return "Hidden-use"
                 return null
             }
             if (i != 0) return null

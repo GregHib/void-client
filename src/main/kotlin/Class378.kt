@@ -308,8 +308,8 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i > -107) this.aBoolean9802 = false
     }
 
-    override fun method3706(class299: Class299?, class299_32_: Class299?, f: Float, class299_33_: Class299?): Class299? {
-        return if (0.5f > f) class299 else class299_32_
+    override fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_32_: CircleRasterizer?, f: Float, circleRasterizer_33_: CircleRasterizer?): CircleRasterizer? {
+        return if (0.5f > f) circleRasterizer else circleRasterizer_32_
     }
 
     override fun method3647(bool: Boolean) {

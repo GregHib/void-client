@@ -1,4 +1,4 @@
-import Class299_Sub1.Companion.method2259
+import Texture2DProvider.Companion.method2259
 
 /* Class153 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

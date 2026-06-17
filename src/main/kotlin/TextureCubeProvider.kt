@@ -1,7 +1,7 @@
 /* Class299_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class299_Sub2 : Class299() {
+abstract class TextureCubeProvider : CircleRasterizer() {
     abstract fun method2266(bool: Boolean): Interface18_Impl2?
 
     companion object {

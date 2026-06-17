@@ -489,13 +489,13 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         return Class365(i, "OpenGL", anInt9924, aString9916, 0L)
     }
 
-    override fun method3706(class299: Class299?, class299_24_: Class299?, f: Float, class299_25_: Class299?): Class299? {
+    override fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_24_: CircleRasterizer?, f: Float, circleRasterizer_25_: CircleRasterizer?): CircleRasterizer? {
         try {
             anInt9873++
-            if (f < 0.5f) return class299
-            return class299_24_
+            if (f < 0.5f) return circleRasterizer
+            return circleRasterizer_24_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.SD(" + (if (class299 != null) "{...}" else "null") + ',' + (if (class299_24_ != null) "{...}" else "null") + ',' + f + ',' + (if (class299_25_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_24_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_25_ != null) "{...}" else "null") + ')'))
         }
     }
 
