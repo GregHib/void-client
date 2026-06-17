@@ -4,7 +4,7 @@ import HostPingThread.Companion.method1301
 /* Class235 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, class318_sub1: Class318_Sub1?, bool: Boolean, i_18_: Int) {
+class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, class318_sub1: Class318_Sub1?, bool: Boolean, i_18_: Int) {
     private val aClass318_Sub1_3051: Class318_Sub1?
     @JvmField
     var anInt3052: Int = 0

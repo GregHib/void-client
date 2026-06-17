@@ -1014,7 +1014,7 @@ object Class66 {
                 var string: String? = ""
                 if (Class348_Sub42_Sub6.aLinkedQueueNode_9536 != null) {
                     if (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anObject1998 != null) string = (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anObject1998) as String?
-                    else string = Class235.method1669(-19918, (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anInt2000))
+                    else string = SceneObjectAnimator.method1669(-19918, (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anInt2000))
                 }
                 aStringArray1152!![anInt1170++] = string!!
                 return
@@ -2278,7 +2278,7 @@ object Class66 {
                     var string: String? = ""
                     if (Class348_Sub42_Sub6.aLinkedQueueNode_9536 != null) {
                         if (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anObject1998 != null) string = (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anObject1998) as String?
-                        else string = Class235.method1669(-19918, (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anInt2000))
+                        else string = SceneObjectAnimator.method1669(-19918, (Class348_Sub42_Sub6.aLinkedQueueNode_9536!!.anInt2000))
                     }
                     aStringArray1152!![anInt1170++] = string!!
                     return

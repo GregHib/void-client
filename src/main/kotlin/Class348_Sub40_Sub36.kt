@@ -58,7 +58,7 @@ class Class348_Sub40_Sub36 : Class348_Sub40(0, true) {
                         if (i_8_ < 0) i_8_ = -i_8_
                         i_8_ = 2048 - i_8_ shl 1
                     }
-                } else i_8_ = 4096 + (Class235.anIntArray3068!![i_8_ shr 4 and 0xff]) shr 1
+                } else i_8_ = 4096 + (SceneObjectAnimator.anIntArray3068!![i_8_ shr 4 and 0xff]) shr 1
                 `is`[i_5_] = i_8_
                 i_5_++
             }

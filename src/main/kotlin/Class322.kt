@@ -135,7 +135,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             else if (Class367_Sub11.anInt7396 <= (class318_sub1_sub3_sub3.anInt10300)) method1041(-1, class318_sub1_sub3_sub3)
             else {
                 method1600(false, 0, class318_sub1_sub3_sub3)
-                i_3_ = Class235.anInt3062
+                i_3_ = SceneObjectAnimator.anInt3062
                 i_4_ = ScrollingWidgetComponentNode.anInt8387
             }
             if (bool != false) aIntRange_4027 = null

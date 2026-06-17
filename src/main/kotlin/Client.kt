@@ -129,7 +129,7 @@ import SceneProjector.Companion.method1635
 import HudTabPanel.Companion.method1641
 import TerrainTileGeometry.Companion.method1645
 import ParticleSortRenderer.Companion.method1653
-import Class235.Companion.method1673
+import SceneObjectAnimator.Companion.method1673
 import Class237.Companion.method1677
 import Class237_Sub1.Companion.method1698
 import Class239.Companion.method1715
@@ -692,8 +692,8 @@ class Client : GameAppletFrame() {
         if (Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785 != null) {
             Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
             for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
-            Class235.aClass78_3075 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
-            Class277.aIndexedFileCache_3568 = IndexedFileCache(255, Class299_Sub2.aClass78_6328, Class235.aClass78_3075, 500000)
+            SceneObjectAnimator.aClass78_3075 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
+            Class277.aIndexedFileCache_3568 = IndexedFileCache(255, Class299_Sub2.aClass78_6328, SceneObjectAnimator.aClass78_3075, 500000)
             Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
             Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3779 = null
             Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785 = null
@@ -1283,7 +1283,7 @@ class Client : GameAppletFrame() {
         try {
             Class299_Sub2.aClass78_6328!!.method790((-62).toByte())
             for (i_6_ in i..36) MinimapRenderer.aClass78Array1579!![i_6_]!!.method790(118.toByte())
-            Class235.aClass78_3075!!.method790((-84).toByte())
+            SceneObjectAnimator.aClass78_3075!!.method790((-84).toByte())
             Class374.aClass78_4538!!.method790(80.toByte())
             Class348_Sub46.method3317((-53).toByte())
         } catch (exception: Exception) {
@@ -1467,8 +1467,8 @@ class Client : GameAppletFrame() {
                     method1600(true, 0, npc)
                     val i_105_ = (method2774(108.toByte(), npc))
                     method3443(true, npc)
-                    method729(Class235.anInt3062, i_105_, 122.toByte(), npc, ScrollingWidgetComponentNode.anInt8387)
-                    method3208(npc, Class235.anInt3062, -84)
+                    method729(SceneObjectAnimator.anInt3062, i_105_, 122.toByte(), npc, ScrollingWidgetComponentNode.anInt8387)
+                    method3208(npc, SceneObjectAnimator.anInt3062, -84)
                     method1635(-106, npc)
                 }
             }

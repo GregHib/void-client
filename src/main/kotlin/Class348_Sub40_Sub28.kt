@@ -60,7 +60,7 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
                 var i_7_ = ModelDefinition.method1097(81.toByte(), Class348_Sub40_Sub6.Companion.anInt9139, random)
                 var i_8_ = ModelDefinition.method1097(123.toByte(), Class286_Sub2.anInt6212, random)
                 var i_9_ = i_7_ - -(anInt9368 * WidgetComponentNode.anIntArray4654!![i_6_] shr 12)
-                var i_10_ = ((Class235.anIntArray3068!![i_6_] * anInt9368 shr 12) + i_8_)
+                var i_10_ = ((SceneObjectAnimator.anIntArray3068!![i_6_] * anInt9368 shr 12) + i_8_)
                 var i_11_ = -i_8_ + i_10_
                 var i_12_ = -i_7_ + i_9_
                 if (i_12_ != 0 || i_11_ != 0) {

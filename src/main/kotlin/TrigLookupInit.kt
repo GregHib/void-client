@@ -10,12 +10,12 @@ object TrigLookupInit {
     var anInt2878: Int = 0
 
     fun method1605(i: Int) {
-        if (Class235.anIntArray3068 == null || WidgetComponentNode.anIntArray4654 == null) {
+        if (SceneObjectAnimator.anIntArray3068 == null || WidgetComponentNode.anIntArray4654 == null) {
             WidgetComponentNode.anIntArray4654 = IntArray(256)
-            Class235.anIntArray3068 = IntArray(256)
+            SceneObjectAnimator.anIntArray3068 = IntArray(256)
             for (i_0_ in 0..255) {
                 val d = 6.283185307179586 * (i_0_.toDouble() / 255.0)
-                Class235.anIntArray3068!![i_0_] = (4096.0 * sin(d)).toInt()
+                SceneObjectAnimator.anIntArray3068!![i_0_] = (4096.0 * sin(d)).toInt()
                 WidgetComponentNode.anIntArray4654!![i_0_] = (4096.0 * cos(d)).toInt()
             }
         }

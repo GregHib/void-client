@@ -499,7 +499,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub32.anInt6931 = 0
             HostPingThread.anInt2266 = 0
             Class314.anInt3942 = 0
-            Class235.anInt3076 = 0
+            SceneObjectAnimator.anInt3076 = 0
             Class325.anInt4067 = 0
             Class318_Sub1_Sub2_Sub1.anInt10192 = 0
             OpenGlRenderNode.anInt10485 = 0
@@ -652,7 +652,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class250.anInt3222 = 0
             Class239_Sub28.anInt6140 = 0
             Class318_Sub1_Sub5_Sub2.anInt10162 = 0
-            Class235.anInt3082 = 0
+            SceneObjectAnimator.anInt3082 = 0
             Class239_Sub14.anInt5985 = 0
             Class348_Sub42_Sub15.anInt9649 = 0
             GameAppletFrame.anInt31 = 0
@@ -1454,7 +1454,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class315.anInt3952 = 0
             GlTextureBase.anInt5095 = 0
             Class361.anInt4454 = 0
-            Class235.anInt3050 = 0
+            SceneObjectAnimator.anInt3050 = 0
             Sprite.anInt113 = 0
             Class332.anInt4140 = 0
             Class64_Sub3.anInt5567 = 0
@@ -1874,7 +1874,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class373_Sub2.anInt7433 = 0
             OpenGlRenderer.anInt7617 = 0
             Class318_Sub1_Sub5_Sub1.anInt10131 = 0
-            Class235.anInt3066 = 0
+            SceneObjectAnimator.anInt3066 = 0
             Class367_Sub9.anInt7370 = 0
             CharCountUtil.anInt228 = 0
             Class377.anInt9832 = 0
@@ -2385,7 +2385,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7961 = 0
             Class348_Sub40_Sub35.anInt9441 = 0
             Class64_Sub3.anInt5643 = 0
-            Class235.anInt3070 = 0
+            SceneObjectAnimator.anInt3070 = 0
             Class348_Sub40_Sub37.anInt9460 = 0
             OpenGlRenderer.anInt7650 = 0
             Class348_Sub49.anInt7152 = 0
@@ -2864,7 +2864,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub2.anInt7289 = 0
             Class348_Sub45_Sub2.anInt9735 = 0
             ConfigDefinitionLoader.anInt2082 = 0
-            Class235.anInt3086 = 0
+            SceneObjectAnimator.anInt3086 = 0
             Class269.anInt3456 = 0
             Class377.anInt9821 = 0
             Class318_Sub7.anInt6445 = 0
@@ -2891,7 +2891,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7546 = 0
             RefCountedHandle.anInt2273 = 0
             FrameBufferObject.anInt4890 = 0
-            Class235.anInt3061 = 0
+            SceneObjectAnimator.anInt3061 = 0
             Class299_Sub2_Sub1.anInt8710 = 0
             Class62.anInt1113 = 0
             NativeTerrainTile.anInt8298 = 0
@@ -2916,7 +2916,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class59_Sub1.anInt5291 = 0
             Class348_Sub47.anInt7121 = 0
             Class377.anInt9848 = 0
-            Class235.anInt3058 = 0
+            SceneObjectAnimator.anInt3058 = 0
             Class295.anInt3755 = 0
             Class255.anInt3282 = 0
             GlTextureBase.anInt5086 = 0
@@ -2973,7 +2973,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BufferedOutputStreamWorker.anInt2714 = 0
             Class356.anInt4380 = 0
             Class255.anInt3277 = 0
-            Class235.anInt3080 = 0
+            SceneObjectAnimator.anInt3080 = 0
             Class263.anInt3356 = 0
             Class31.anInt446 = 0
             Class287.anInt3686 = 0
@@ -3089,7 +3089,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub51.anInt7217 = 0
             ProjectionCameraTransform.anInt5778 = 0
             Class239_Sub7.anInt5910 = 0
-            Class235.anInt3077 = 0
+            SceneObjectAnimator.anInt3077 = 0
             LinkedNodeListIterator.anInt1642 = 0
             TextureDefinitionLoader.anInt1970 = 0
             Class239_Sub23.anInt6080 = 0
@@ -3283,7 +3283,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FrameBufferObject.anInt4868 = 0
             FloatCameraTransform.anInt5730 = 0
             Class79.anInt1326 = 0
-            Class235.anInt3087 = 0
+            SceneObjectAnimator.anInt3087 = 0
             Class251.anInt3229 = 0
             NativeRenderer.anInt8030 = 0
             Class5.anInt4641 = 0
@@ -3847,7 +3847,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class237.anInt3111 = 0
             ClickFeedbackTask.anInt4665 = 0
             Class292.anInt4801 = 0
-            Class235.anInt3078 = 0
+            SceneObjectAnimator.anInt3078 = 0
             Class59_Sub1_Sub1.anInt8652 = 0
             FrameBufferObject.anInt4869 = 0
             Class56.anInt1014 = 0

@@ -96,20 +96,20 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
             val class225 = class318_sub1_sub3_sub3.method2422(72.toByte())
             if (class318_sub1_sub3_sub3.anInt10319 == 0) {
                 class318_sub1_sub3_sub3.anInt10326 = 0
-                Class235.anInt3062 = -1
+                SceneObjectAnimator.anInt3062 = -1
                 ScrollingWidgetComponentNode.anInt8387 = 0
             } else {
                 if (i != ((class318_sub1_sub3_sub3.anInt10286).inv()) && (class318_sub1_sub3_sub3.anInt10218) == 0) {
                     val class17 = (ParticleEmitterNode.aClass87_191!!.method835((class318_sub1_sub3_sub3.anInt10286), i + 7))
                     if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
-                        Class235.anInt3062 = -1
+                        SceneObjectAnimator.anInt3062 = -1
                         ScrollingWidgetComponentNode.anInt8387 = 0
                         class318_sub1_sub3_sub3.anInt10326++
                         return
                     }
                     if ((class318_sub1_sub3_sub3.anInt10322) <= 0 && class17.anInt245 == 0) {
                         ScrollingWidgetComponentNode.anInt8387 = 0
-                        Class235.anInt3062 = -1
+                        SceneObjectAnimator.anInt3062 = -1
                         class318_sub1_sub3_sub3.anInt10326++
                         return
                     }
@@ -121,11 +121,11 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                         if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
                             ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++
-                            Class235.anInt3062 = -1
+                            SceneObjectAnimator.anInt3062 = -1
                             return
                         }
                         if ((class318_sub1_sub3_sub3.anInt10322) <= 0 && class17.anInt245 == 0) {
-                            Class235.anInt3062 = -1
+                            SceneObjectAnimator.anInt3062 = -1
                             ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++
                             return
@@ -139,11 +139,11 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                         if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
                             ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++
-                            Class235.anInt3062 = -1
+                            SceneObjectAnimator.anInt3062 = -1
                             return
                         }
                         if ((class318_sub1_sub3_sub3.anInt10322) <= 0 && class17.anInt245 == 0) {
-                            Class235.anInt3062 = -1
+                            SceneObjectAnimator.anInt3062 = -1
                             ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++
                             return
@@ -171,7 +171,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                     class318_sub1_sub3_sub3.y = i_5_
                     class318_sub1_sub3_sub3.x = i_4_
                     class318_sub1_sub3_sub3.method2435((-108).toByte(), (class318_sub1_sub3_sub3.anInt10282), false)
-                    Class235.anInt3062 = -1
+                    SceneObjectAnimator.anInt3062 = -1
                     class318_sub1_sub3_sub3.anInt10319--
                     if ((class318_sub1_sub3_sub3.anInt10322) > 0) class318_sub1_sub3_sub3.anInt10322--
                     ScrollingWidgetComponentNode.anInt8387 = 0
@@ -224,7 +224,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                         i_7_ = (class318_sub1_sub3_sub3.anInt10325) shr 9
                         if (i_7_ < 1) i_7_ = 1
                     }
-                    if (i_2_ == i_4_ && i_5_ == i_3_) Class235.anInt3062 = -1
+                    if (i_2_ == i_4_ && i_5_ == i_3_) SceneObjectAnimator.anInt3062 = -1
                     else {
                         if (i_4_ > i_2_) {
                             ScrollingWidgetComponentNode.anInt8387 = ScrollingWidgetComponentNode.anInt8387 or 0x4
@@ -235,8 +235,8 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                             class318_sub1_sub3_sub3.x -= i_7_
                             if (class318_sub1_sub3_sub3.x < i_4_) class318_sub1_sub3_sub3.x = i_4_
                         }
-                        if (i_7_ >= 32) Class235.anInt3062 = 2
-                        else Class235.anInt3062 = i_6_.toInt()
+                        if (i_7_ >= 32) SceneObjectAnimator.anInt3062 = 2
+                        else SceneObjectAnimator.anInt3062 = i_6_.toInt()
                         if (i_3_ < i_5_) {
                             ScrollingWidgetComponentNode.anInt8387 = ScrollingWidgetComponentNode.anInt8387 or 0x1
                             class318_sub1_sub3_sub3.y += i_7_
