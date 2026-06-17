@@ -1,4 +1,3 @@
-import sun.net.www.protocol.http.AuthenticationInfo
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -6,7 +5,7 @@ import java.net.*
 import java.nio.charset.StandardCharsets
 import java.util.*
 
-class Class272_Sub2 : Class272() {
+class ProxySocketFactory : SocketFactory() {
     private val aProxySelector6172: ProxySelector = ProxySelector.getDefault()
 
     @Throws(IOException::class)

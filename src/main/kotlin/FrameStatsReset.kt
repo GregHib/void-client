@@ -3783,7 +3783,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             VarbitDefLoader.anInt2591 = 0
             Class361.anInt4445 = 0
             Class348_Sub31_Sub2.anInt9071 = 0
-            Class272.anInt3472 = 0
+            SocketFactory.anInt3472 = 0
             LocTypeDefLoader.anInt2504 = 0
             Class322.anInt4023 = 0
             Class377.anInt9867 = 0
@@ -3808,7 +3808,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub7.anInt9143 = 0
             ChatEffectsOptionState.anInt5869 = 0
             Class304.anInt3851 = 0
-            Class272.anInt3471 = 0
+            SocketFactory.anInt3471 = 0
             Class348_Sub5_Sub1.anInt8843 = 0
             Class79.anInt1403 = 0
             SceneryDetailOptionState.anInt6087 = 0
@@ -4003,7 +4003,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class55.anInt986 = 0
             ShadowQualityOptionState.anInt6015 = 0
             FrameBufferObject.anInt4881 = 0
-            Class272.anInt3474 = 0
+            SocketFactory.anInt3474 = 0
             Class377.anInt9845 = 0
             ScriptCompilerThread.anInt1728 = 0
             Class340.anInt4222 = 0

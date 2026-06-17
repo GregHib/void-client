@@ -40,7 +40,7 @@ object ScreenBorderFiller {
             val i_1_ = Class348_Sub48.anInt7129
             val i_2_ = Class335.anInt4167
             if (i > -25) ScreenBorderFiller.method1172((-22).toByte(), -1)
-            val i_3_ = -i_1_ + -Class321.anInt4017 + Class272.anInt3473
+            val i_3_ = -i_1_ + -Class321.anInt4017 + SocketFactory.anInt3473
             val i_4_ = -i_2_ + (Class348_Sub22.anInt6857 + -Class348_Sub42_Sub8_Sub2.anInt10432)
             do {
                 if (i_1_ > 0 || i_3_ > 0 || i_2_ > 0 || i_4_ > 0) {
@@ -60,10 +60,10 @@ object ScreenBorderFiller {
                         val graphics = container!!.getGraphics()
                         graphics.setColor(Color.black)
                         if (i_1_ > 0) graphics.fillRect(i_5_, i_6_, i_1_, Class348_Sub22.anInt6857)
-                        if (i_2_ > 0) graphics.fillRect(i_5_, i_6_, Class272.anInt3473, i_2_)
-                        if (i_3_ > 0) graphics.fillRect((-i_3_ + Class272.anInt3473 + i_5_), i_6_, i_3_, Class348_Sub22.anInt6857)
+                        if (i_2_ > 0) graphics.fillRect(i_5_, i_6_, SocketFactory.anInt3473, i_2_)
+                        if (i_3_ > 0) graphics.fillRect((-i_3_ + SocketFactory.anInt3473 + i_5_), i_6_, i_3_, Class348_Sub22.anInt6857)
                         if (i_4_ <= 0) break
-                        graphics.fillRect(i_5_, Class348_Sub22.anInt6857 + (i_6_ - i_4_), Class272.anInt3473, i_4_)
+                        graphics.fillRect(i_5_, Class348_Sub22.anInt6857 + (i_6_ - i_4_), SocketFactory.anInt3473, i_4_)
                     } catch (exception: Exception) {
                         break
                     }

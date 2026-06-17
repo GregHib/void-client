@@ -5,7 +5,7 @@ import ParticleDetailOptionState.Companion.method1795
 import CameraDistanceOptionState.Companion.method1725
 import SceneryDetailOptionState.Companion.method1821
 import SimpleToggleOptionState.Companion.method1742
-import Class272.Companion.method2049
+import SocketFactory.Companion.method2049
 import Class286_Sub3.Companion.method2148
 import Class299_Sub2_Sub1.Companion.method2271
 import Class318_Sub1_Sub2.Companion.method2405

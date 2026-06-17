@@ -1,7 +1,10 @@
 import java.io.IOException
 import java.net.Socket
 
-abstract class Class272 {
+/*
+ * Class272
+ */
+abstract class SocketFactory {
     @JvmField
     var anInt3470: Int = 0
     @JvmField

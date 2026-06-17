@@ -185,7 +185,7 @@ import LocDefinitionCache.Companion.method2036
 import ProjectileConfigUtil.method315
 import ArchiveFileConditionWrapper.Companion.method2043
 import ParticleEffectCache.Companion.method2045
-import Class272.Companion.method2048
+import SocketFactory.Companion.method2048
 import Class273.Companion.method2055
 import Class274.Companion.method2059
 import Class275.method2064
@@ -1680,11 +1680,11 @@ class Client : GameAppletFrame() {
                     i -= insets.left + insets.right
                     i_119_ -= insets.top - -insets.bottom
                 }
-                if (i != Class272.anInt3473 || i_119_ != Class348_Sub22.anInt6857 || RuntimeException_Sub1.aBoolean4604) {
+                if (i != SocketFactory.anInt3473 || i_119_ != Class348_Sub22.anInt6857 || RuntimeException_Sub1.aBoolean4604) {
                     if (Class348_Sub8.aRenderer6654 == null || Class348_Sub8.aRenderer6654!!.method3695()) method3556(false)
                     else {
                         Class348_Sub22.anInt6857 = i_119_
-                        Class272.anInt3473 = i
+                        SocketFactory.anInt3473 = i
                     }
                     Class348_Sub16_Sub2.aLong8866 = method599(-66) - -500L
                     RuntimeException_Sub1.aBoolean4604 = false

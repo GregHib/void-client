@@ -38,23 +38,23 @@ object GameDisplayManager {
             val container: Container?
             if (Class34.aFrame476 != null) {
                 Class348_Sub22.anInt6857 = i_3_
-                Class272.anInt3473 = i_0_
+                SocketFactory.anInt3473 = i_0_
                 container = Class34.aFrame476
             } else if (Class52.aFrame4904 == null) {
                 if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169
                 else container = Class93.anApplet1530 as? Container
-                Class272.anInt3473 = container!!.getSize().width
+                SocketFactory.anInt3473 = container!!.getSize().width
                 Class348_Sub22.anInt6857 = container.getSize().height
             } else {
                 val insets = Class52.aFrame4904!!.getInsets()
-                Class272.anInt3473 = Class52.aFrame4904!!.getSize().width + (-insets.left + -insets.right)
+                SocketFactory.anInt3473 = Class52.aFrame4904!!.getSize().width + (-insets.left + -insets.right)
                 Class348_Sub22.anInt6857 = Class52.aFrame4904!!.getSize().height - (insets.top - -insets.bottom)
                 container = Class52.aFrame4904
             }
             if (i_2_ == 1) {
                 Class321.anInt4017 = Class92.anInt1524
                 Class348_Sub42_Sub8_Sub2.anInt10432 = OpenGlRenderer.anInt7666
-                Class348_Sub48.anInt7129 = (Class272.anInt3473 + -Class92.anInt1524) / 2
+                Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 + -Class92.anInt1524) / 2
                 Class335.anInt4167 = 0
             } else method2158(56.toByte())
             if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {

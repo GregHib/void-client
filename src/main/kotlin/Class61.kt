@@ -60,18 +60,18 @@ class Class61 internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int) {
         }
 
         @JvmStatic
-        fun method593(i: Int, i_6_: Byte, string: String?): Class272? {
+        fun method593(i: Int, i_6_: Byte, string: String?): SocketFactory? {
             anInt1104++
-            var class272: Class272?
+            var socketFactory: SocketFactory?
             try {
-                class272 = Class272_Sub2()
+                socketFactory = ProxySocketFactory()
             } catch (throwable: Throwable) {
-                class272 = Class272_Sub1()
+                socketFactory = DirectSocketFactory()
             }
             if (i_6_.toInt() != -90) return null
-            class272.aString3476 = string
-            class272.anInt3470 = i
-            return class272
+            socketFactory.aString3476 = string
+            socketFactory.anInt3470 = i
+            return socketFactory
         }
     }
 }

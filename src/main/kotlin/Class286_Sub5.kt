@@ -145,15 +145,15 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             if (Class316.aClass348_Sub51_3959 != null) i_0_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
             if (i.toInt() == 56) {
                 if (i_0_ == 2) {
-                    val i_1_ = (min(Class272.anInt3473, 800))
+                    val i_1_ = (min(SocketFactory.anInt3473, 800))
                     Class321.anInt4017 = i_1_
-                    Class348_Sub48.anInt7129 = (Class272.anInt3473 + -i_1_) / 2
+                    Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 + -i_1_) / 2
                     val i_2_ = (min(Class348_Sub22.anInt6857, 600))
                     Class348_Sub42_Sub8_Sub2.anInt10432 = i_2_
                     Class335.anInt4167 = 0
                 } else if (i_0_ == 1) {
-                    val i_3_ = min(Class272.anInt3473, 1024)
-                    Class348_Sub48.anInt7129 = (Class272.anInt3473 + -i_3_) / 2
+                    val i_3_ = min(SocketFactory.anInt3473, 1024)
+                    Class348_Sub48.anInt7129 = (SocketFactory.anInt3473 + -i_3_) / 2
                     val i_4_ = (min(Class348_Sub22.anInt6857, 768))
                     Class321.anInt4017 = i_3_
                     Class335.anInt4167 = 0
@@ -162,7 +162,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                     Class335.anInt4167 = 0
                     Class348_Sub42_Sub8_Sub2.anInt10432 = Class348_Sub22.anInt6857
                     Class348_Sub48.anInt7129 = 0
-                    Class321.anInt4017 = Class272.anInt3473
+                    Class321.anInt4017 = SocketFactory.anInt3473
                 }
             }
         }

@@ -154,7 +154,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             Class49.aBoolean4726 = true
             if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
                 val rectangle = graphics?.getClipBounds()
-                if (rectangle == null || (rectangle.width >= Class272.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) ProjectileSpawner.aBoolean2674 = true
+                if (rectangle == null || (rectangle.width >= SocketFactory.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) ProjectileSpawner.aBoolean2674 = true
             }
         }
     }
@@ -365,7 +365,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_
                 Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
                 Class321.anInt4017 = i
-                Class272.anInt3473 = Class321.anInt4017
+                SocketFactory.anInt3473 = Class321.anInt4017
                 Class335.anInt4167 = 0
                 Class348_Sub1_Sub3.anInt8818 = i_15_
                 Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
@@ -390,7 +390,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         try {
             if (i_23_ != 23499) return
             Class321.anInt4017 = i_20_
-            Class272.anInt3473 = Class321.anInt4017
+            SocketFactory.anInt3473 = Class321.anInt4017
             Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_
             Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
             Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
@@ -405,7 +405,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             Class52.aFrame4904!!.setVisible(true)
             Class52.aFrame4904!!.toFront()
             val insets = Class52.aFrame4904!!.getInsets()
-            Class52.aFrame4904!!.setSize(insets.right + (insets.left + Class272.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)))
+            Class52.aFrame4904!!.setSize(insets.right + (insets.left + SocketFactory.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)))
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
             HudTabPanel.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, i_23_ + -33739, 1)
