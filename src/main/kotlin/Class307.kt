@@ -38,7 +38,7 @@ object Class307 {
         anInt3878++
         if (bool) return 0
         val class348_sub13 = GlTexture1D.method1974((-9).toByte(), i_6_, bool)
-        if (class348_sub13 == null) return (ScrollingWidgetComponentNode.aClass271_8378!!.method2044(109, i_6_).anInt9542)
+        if (class348_sub13 == null) return (ScrollingWidgetComponentNode.aParticleEffectCache_8378!!.method2044(109, i_6_).anInt9542)
         var i_7_ = 0
         var i_8_ = 0
         while ((i_8_ < class348_sub13.anIntArray6757!!.size)) {
@@ -46,7 +46,7 @@ object Class307 {
             i_8_++
         }
         if (i.toInt() != 35) Class307.method2301((-102).toByte(), 43, true)
-        i_7_ += (ScrollingWidgetComponentNode.aClass271_8378!!.method2044(82, i_6_).anInt9542 + -class348_sub13.anIntArray6757!!.size)
+        i_7_ += (ScrollingWidgetComponentNode.aParticleEffectCache_8378!!.method2044(82, i_6_).anInt9542 + -class348_sub13.anIntArray6757!!.size)
         return i_7_
     }
 }

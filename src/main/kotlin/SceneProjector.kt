@@ -224,7 +224,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                                     }
                                     CameraRotationStub.aRenderer326!!.la()
-                                    Class271.method2046()
+                                    ParticleEffectCache.method2046()
                                     if (Class348_Sub49.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
                                     Class348_Sub3.anInt6568 += i_34_
                                     Class328.anInt4100 += i_33_
@@ -284,7 +284,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             Class348_Sub42_Sub8_Sub2.aClass76_10436!!.method775(69.toByte())
                             method1274(Class348_Sub42_Sub8_Sub2.aClass76_10436)
                             method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
-                            Class271.method2046()
+                            ParticleEffectCache.method2046()
                             Class348_Sub16_Sub2.aBoolean8870 = false
                             if (Class348_Sub49.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
                             if (Class348_Sub49.anInt7207 == 1) method1469(-117)

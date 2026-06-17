@@ -1,7 +1,7 @@
 /* Class271 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class271 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass60_3466 = Class60(64)
     private val aClass45_3468: Class45?
     fun method2044(i: Int, i_0_: Int): Class348_Sub42_Sub7 {

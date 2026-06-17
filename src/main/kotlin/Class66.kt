@@ -3905,7 +3905,7 @@ object Class66 {
                 }
                 if (i == 3304) {
                     val i_323_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (ScrollingWidgetComponentNode.aClass271_8378!!.method2044(106, i_323_).anInt9542)
+                    anIntArray1149!![anInt1173++] = (ScrollingWidgetComponentNode.aParticleEffectCache_8378!!.method2044(106, i_323_).anInt9542)
                     return
                 }
                 if (i == 3305) {

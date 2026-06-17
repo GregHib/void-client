@@ -2237,7 +2237,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5569 = 0
             SceneryDetailOptionState.anInt6084 = 0
             HslColorConfig.anInt328 = 0
-            Class271.anInt3469 = 0
+            ParticleEffectCache.anInt3469 = 0
             ParticleSystemState.anInt2206 = 0
             NativeRenderer.anInt7995 = 0
             GlFramebufferBlitter.anInt272 = 0

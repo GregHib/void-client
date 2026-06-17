@@ -945,7 +945,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class271.aIntRange_3467 == Class348_Sub3.aIntRange_6584) {
+            if (ParticleEffectCache.aIntRange_3467 == Class348_Sub3.aIntRange_6584) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 val i_110_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 val i_111_ = Class299.aClass348_Sub49_Sub2_3813!!.method3375(84.toByte())

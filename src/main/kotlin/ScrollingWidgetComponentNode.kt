@@ -13,7 +13,7 @@ class ScrollingWidgetComponentNode internal constructor(class45: Class45?, class
 
     companion object {
         @JvmField
-        var aClass271_8378: Class271? = null
+        var aParticleEffectCache_8378: ParticleEffectCache? = null
         @JvmField
         var anInt8379: Int = 0
         @JvmField
@@ -81,7 +81,7 @@ class ScrollingWidgetComponentNode internal constructor(class45: Class45?, class
         @JvmStatic
         fun method1120(i: Int) {
             aIntRange_8384 = null
-            aClass271_8378 = null
+            aParticleEffectCache_8378 = null
             aIntRange_8385 = null
             if (i != 1) method1119(true)
         }

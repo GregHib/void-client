@@ -184,7 +184,7 @@ import SlotBinding.Companion.method2029
 import LocDefinitionCache.Companion.method2036
 import ProjectileConfigUtil.method315
 import ArchiveFileConditionWrapper.Companion.method2043
-import Class271.Companion.method2045
+import ParticleEffectCache.Companion.method2045
 import Class272.Companion.method2048
 import Class273.Companion.method2055
 import Class274.Companion.method2059

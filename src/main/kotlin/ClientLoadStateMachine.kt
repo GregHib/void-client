@@ -188,7 +188,7 @@ object ClientLoadStateMachine {
             Class362.aParticleDefLoader_4460 = ParticleDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class73.aModelDefinitionCache_4782 = ModelDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, RasterSprite.aClass45_5207)
-            ScrollingWidgetComponentNode.aClass271_8378 = Class271(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            ScrollingWidgetComponentNode.aParticleEffectCache_8378 = ParticleEffectCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub1.aMapSceneDefLoader_6559 = MapSceneDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub40_Sub12.aSeqDefinitionCache_9195 = SeqDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, true, Class94.aClass45_1538, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
