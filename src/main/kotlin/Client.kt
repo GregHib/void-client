@@ -75,7 +75,7 @@ import Class17.Companion.method265
 import VarpStore.Companion.method1309
 import VarpStore.Companion.method1310
 import VarpStore.Companion.method1315
-import Class172.method1325
+import NpcCountAccessor.method1325
 import Class173.Companion.method1329
 import Class175.Companion.method1343
 import Class176.method1351

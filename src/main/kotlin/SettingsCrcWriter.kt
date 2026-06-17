@@ -45,7 +45,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(96.toByte(), Class262.aClass45_3323!!.method389(-122))
         class348_sub49_sub2.writeInt(107.toByte(), Crc64Hashable.aClass45_4984!!.method389(-107))
         class348_sub49_sub2.writeInt(125.toByte(), SpriteLoadValidator.aClass45_4796!!.method389(-118))
-        class348_sub49_sub2.writeInt(90.toByte(), Class172.method1327(31))
+        class348_sub49_sub2.writeInt(90.toByte(), NpcCountAccessor.method1327(31))
         class348_sub49_sub2.writeInt(120.toByte(), method912(0))
         class348_sub49_sub2.writeInt(87.toByte(), HitsplatDefinition.aClass45_2015!!.method389(-94))
     }

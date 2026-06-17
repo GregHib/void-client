@@ -965,7 +965,7 @@ class Class46 {
             SpriteLoadValidator.aClass65_4787!!.method694(-1007)
             Class73.aClass219_4782!!.method1598(111)
             Class331.method2638(-4631)
-            Class172.method1328(-26162)
+            NpcCountAccessor.method1328(-26162)
             method3102(22385)
             Class44.method386((-106).toByte())
             AudioResampler.method1271(0)

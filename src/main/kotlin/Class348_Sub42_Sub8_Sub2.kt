@@ -666,7 +666,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class172.aIntRange_2279 == Class348_Sub3.aIntRange_6584) {
+            if (NpcCountAccessor.aIntRange_2279 == Class348_Sub3.aIntRange_6584) {
                 Class348_Sub40_Sub34.method3141(Class223.aBoolean2895, 11.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return false
@@ -1243,7 +1243,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                 }
                                 Class286_Sub2.aStringArray6205!![i_154_] = string_150_
                                 Class285.aStringArray4744!![i_154_] = string_152_
-                                Class172.anIntArray2280!![i_154_] = i_151_
+                                NpcCountAccessor.anIntArray2280!![i_154_] = i_151_
                                 string = null
                                 ObjectSpawnDecoder.aBooleanArray1806!![i_154_] = bool_153_
                                 break
@@ -1261,7 +1261,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         Class286_Sub2.aStringArray6205!![(Class348_Sub40_Sub30.anInt9383)] = string_150_
                         Renderer.anIntArray4578!![Class348_Sub40_Sub30.anInt9383] = i
                         Class285.aStringArray4744!![Class348_Sub40_Sub30.anInt9383] = string_152_
-                        Class172.anIntArray2280!![Class348_Sub40_Sub30.anInt9383] = i_151_
+                        NpcCountAccessor.anIntArray2280!![Class348_Sub40_Sub30.anInt9383] = i_151_
                         ObjectSpawnDecoder.aBooleanArray1806!![Class348_Sub40_Sub30.anInt9383] = bool_153_
                         Class348_Sub40_Sub30.anInt9383++
                     }
@@ -1288,9 +1288,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             val string_160_ = Class286_Sub2.aStringArray6205!![i_157_]
                             Class286_Sub2.aStringArray6205!![i_157_] = Class286_Sub2.aStringArray6205!![i_157_ + 1]
                             Class286_Sub2.aStringArray6205!![i_157_ - -1] = string_160_
-                            val i_161_ = Class172.anIntArray2280!![i_157_]
-                            Class172.anIntArray2280!![i_157_] = Class172.anIntArray2280!![1 + i_157_]
-                            Class172.anIntArray2280!![i_157_ + 1] = i_161_
+                            val i_161_ = NpcCountAccessor.anIntArray2280!![i_157_]
+                            NpcCountAccessor.anIntArray2280!![i_157_] = NpcCountAccessor.anIntArray2280!![1 + i_157_]
+                            NpcCountAccessor.anIntArray2280!![i_157_ + 1] = i_161_
                             val bool_162_ = ObjectSpawnDecoder.aBooleanArray1806!![i_157_]
                             ObjectSpawnDecoder.aBooleanArray1806!![i_157_] = ObjectSpawnDecoder.aBooleanArray1806!![1 + i_157_]
                             bool_156_ = false

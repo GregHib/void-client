@@ -4206,7 +4206,7 @@ object Class66 {
                 }
                 if (i == 3603) {
                     val i_361_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_361_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = Class172.anIntArray2280!![i_361_]
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_361_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = NpcCountAccessor.anIntArray2280!![i_361_]
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return

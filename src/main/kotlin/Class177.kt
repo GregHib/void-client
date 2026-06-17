@@ -44,7 +44,7 @@ class Class177 internal constructor(private val aClass52_4671: Class52) : Interf
             if (i_0_ != 0 && i != -1) {
                 if (!Class74.aBoolean1236 && Class267.anInt3428 != -1 && method1296(true) && !Class327.method2605((-99).toByte())) {
                     Class209.aClass348_Sub16_Sub3_2718 = method943(false)
-                    val class348_sub16_sub3 = Class172.method1326(Class209.aClass348_Sub16_Sub3_2718, i_2_.toInt() xor 0x68.inv())
+                    val class348_sub16_sub3 = NpcCountAccessor.method1326(Class209.aClass348_Sub16_Sub3_2718, i_2_.toInt() xor 0x68.inv())
                     Class348_Sub42_Sub18.method3273(true, -95, class348_sub16_sub3)
                 }
                 method2732(0, i, false, 102, Class348_Sub23_Sub2.aClass45_9033, i_0_)

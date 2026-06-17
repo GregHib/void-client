@@ -1,7 +1,7 @@
 /* Class172 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class172 {
+object NpcCountAccessor {
     var anInt2277: Int = 0
     var anInt2278: Int = 0
     var aIntRange_2279: IntRange? = IntRange(60, 0)

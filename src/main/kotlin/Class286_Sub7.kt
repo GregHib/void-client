@@ -189,7 +189,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                                 Class286_Sub2.Companion.aStringArray6205!![i_2_] = Class286_Sub2.Companion.aStringArray6205!![1 + i_2_]
                                 Renderer.anIntArray4578!![i_2_] = Renderer.anIntArray4578!![i_2_ - -1]
                                 Class285.aStringArray4744!![i_2_] = Class285.aStringArray4744!![1 + i_2_]
-                                Class172.anIntArray2280!![i_2_] = Class172.anIntArray2280!![i_2_ - -1]
+                                NpcCountAccessor.anIntArray2280!![i_2_] = NpcCountAccessor.anIntArray2280!![i_2_ - -1]
                                 ObjectSpawnDecoder.aBooleanArray1806!![i_2_] = ObjectSpawnDecoder.aBooleanArray1806!![1 + i_2_]
                             }
                             Crc64Hashable.anInt4985 = Class311.anInt3918
