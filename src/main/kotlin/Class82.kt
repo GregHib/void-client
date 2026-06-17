@@ -619,7 +619,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         if (string.startsWith("orthotilesize ")) {
                             val i_23_ = (Class348_Sub41.method3156(true, string.substring(1 + string.indexOf(' '))))
                             Class45.anInt666 = i_23_
-                            Class186_Sub1.anInt5812 = Class45.anInt666
+                            PerlinTextureProvider.anInt5812 = Class45.anInt666
                             method94("ortho tile size=" + i_23_, -70)
                             Class348_Sub42_Sub3.method3179(0)
                             return

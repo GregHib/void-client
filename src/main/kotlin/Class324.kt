@@ -202,7 +202,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
         try {
             if (i <= -78) {
                 if (string.startsWith("col=")) Class348_Sub42_Sub1.anInt9492 = (Class348_Sub42_Sub1.anInt9492 and 0xffffff.inv() or (Class48.method450(-20188, string.substring(4), 16) and 0xffffff))
-                else if (string == "/col") Class348_Sub42_Sub1.anInt9492 = (Class348_Sub42_Sub1.anInt9492 and 0xffffff.inv() or (0xffffff and Class186_Sub1.anInt5807))
+                else if (string == "/col") Class348_Sub42_Sub1.anInt9492 = (Class348_Sub42_Sub1.anInt9492 and 0xffffff.inv() or (0xffffff and PerlinTextureProvider.anInt5807))
                 if (string.startsWith("argb=")) Class348_Sub42_Sub1.anInt9492 = Class48.method450(-20188, string.substring(5), 16)
                 else if (string != "/argb") {
                     if (!string.startsWith("str=")) {
@@ -215,7 +215,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                                             if (string.startsWith("shad=")) Class20.anInt320 = ((0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492)) or (Class48.method450(-20188, string.substring(5), 16)))
                                             else if (string == "shad") Class20.anInt320 = (0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492))
                                             else if (string != "/shad") {
-                                                if (string == "br") method2579((HeadIconRenderer.anInt2061), 117, (Class186_Sub1.anInt5807))
+                                                if (string == "br") method2579((HeadIconRenderer.anInt2061), 117, (PerlinTextureProvider.anInt5807))
                                             } else Class20.anInt320 = HeadIconRenderer.anInt2061
                                         } else Class20.anInt320 = 0
                                     } else Class348_Sub40_Sub2.anInt9101 = -1
@@ -223,7 +223,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                             } else Class348_Sub40_Sub2.anInt9101 = ((Class348_Sub42_Sub1.anInt9492 and 0xffffff.inv()) or Class48.method450(-20188, string.substring(2), 16))
                         } else Player.anInt10567 = -1
                     } else Player.anInt10567 = (Class348_Sub42_Sub1.anInt9492 and 0xffffff.inv() or Class48.method450(-20188, string.substring(4), 16))
-                } else Class348_Sub42_Sub1.anInt9492 = Class186_Sub1.anInt5807
+                } else Class348_Sub42_Sub1.anInt9492 = PerlinTextureProvider.anInt5807
             }
         } catch (exception: Exception) {
             /* empty */
@@ -285,8 +285,8 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
         var i = i
         Class348_Sub40_Sub2.anInt9101 = -1
         if (i == -1) i = 0
-        Class186_Sub1.anInt5807 = i_86_
-        Class348_Sub42_Sub1.anInt9492 = Class186_Sub1.anInt5807
+        PerlinTextureProvider.anInt5807 = i_86_
+        Class348_Sub42_Sub1.anInt9492 = PerlinTextureProvider.anInt5807
         Class258.anInt4848 = 0
         ParserSpecialCharsHolder.anInt1902 = 0
         val i_87_ = -28 / ((56 - i_85_) / 49)

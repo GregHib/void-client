@@ -233,7 +233,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         fun method1929(i: Byte): Array<Class74?> {
             if (i.toInt() != -19) method1933(null, null, false)
             anInt3280++
-            return (arrayOf<Class74?>(Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, Class265.aClass74_4689, Class374.aClass74_4537, Class327.aClass74_4098, RectangleBounds.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, Class286_Sub1.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, Class348_Sub40_Sub38.aClass74_9475, Class186.aClass74_2491))
+            return (arrayOf<Class74?>(Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, Class265.aClass74_4689, Class374.aClass74_4537, Class327.aClass74_4098, RectangleBounds.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, Class286_Sub1.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, Class348_Sub40_Sub38.aClass74_9475, TextureGenerator.aClass74_2491))
         }
 
         @JvmStatic
@@ -338,7 +338,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                     }
                 }
                 Class79.aAbstractModelRenderer_1365 = var_renderer!!.method3691(Class207.method1521(class45, Class52.anInt4895, 0), bool)
-                Class239_Sub24.aAbstractModelRenderer_6097 = var_renderer.method3691(Class207.method1521(class45, (Class186_Sub1.anInt5814), 0), true)
+                Class239_Sub24.aAbstractModelRenderer_6097 = var_renderer.method3691(Class207.method1521(class45, (PerlinTextureProvider.anInt5814), 0), true)
                 class207s = Class207.method1519(class45, Class5_Sub3.anInt8370, 0)
                 Class200.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
                 for (i in class207s.indices) Class200.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(class207s[i], true)

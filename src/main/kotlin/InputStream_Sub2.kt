@@ -278,7 +278,7 @@ class InputStream_Sub2 : InputStream() {
                             class318_sub1_sub3_sub5.method2471((-103).toByte(), Class275.method2064(i_108_, (Class348_Sub40_Sub12.anInt9200), 11219, i_109_) + -i_113_, i_109_, i_114_ + Class367_Sub11.anInt7396, i_108_)
                             Class348_Sub40_Sub17.aClass262_9240!!.method1999(Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180)
                         }
-                    } else if (Class186.aClass74_2491 == class74) {
+                    } else if (TextureGenerator.aClass74_2491 == class74) {
                         Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_118_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val i_119_ = (i_118_ shr 4 and 0x7) + Class278.anInt3581

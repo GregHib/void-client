@@ -105,7 +105,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub8.anInt9546 = 0
             Class239_Sub16.anInt6017 = 0
             RasterSprite.anInt5203 = 0
-            Class186_Sub1.anInt5810 = 0
+            PerlinTextureProvider.anInt5810 = 0
             Class286_Sub5.anInt6251 = 0
             VarpStore.anInt5080 = 0
             GameAppletFrame.anInt19 = 0
@@ -1774,7 +1774,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FontDefinition.anInt1989 = 0
             SizeBoundedSoftCache.anInt2325 = 0
             Class327.anInt4093 = 0
-            Class186_Sub1.anInt5805 = 0
+            PerlinTextureProvider.anInt5805 = 0
             OpenGlRenderer.anInt7584 = 0
             ModelFacePriorityNode.anInt1893 = 0
             Class304.anInt3849 = 0
@@ -1995,7 +1995,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class339.anInt4200 = 0
             Class267.anInt3399 = 0
             Class239_Sub12.anInt5970 = 0
-            Class186_Sub1.anInt5811 = 0
+            PerlinTextureProvider.anInt5811 = 0
             Class88.anInt1499 = 0
             Class367_Sub9.anInt7366 = 0
             Class348_Sub16_Sub1.anInt8849 = 0
@@ -2404,7 +2404,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             VarpStore.anInt5077 = 0
             Class87.anInt1490 = 0
             Class351.anInt4325 = 0
-            Class186_Sub1.anInt5809 = 0
+            PerlinTextureProvider.anInt5809 = 0
             Class199.anInt2634 = 0
             OpenGlRenderer.anInt7698 = 0
             ModelDefinition.anInt1854 = 0
@@ -2777,7 +2777,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub1_Sub2.anInt9973 = 0
             Class286_Sub3.anInt6216 = 0
             Class309.anInt4823 = 0
-            Class186.anInt2493 = 0
+            TextureGenerator.anInt2493 = 0
             Class239_Sub27.anInt6132 = 0
             Class377.anInt9838 = 0
             Class346_Sub1.anInt6538 = 0
@@ -3917,7 +3917,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class51.anInt901 = 0
             Renderer.anInt4564 = 0
             Class262.anInt3336 = 0
-            Class186_Sub1.anInt5806 = 0
+            PerlinTextureProvider.anInt5806 = 0
             Class222.anInt2889 = 0
             NativeRenderer.anInt7933 = 0
             NativeRenderer.anInt7898 = 0
@@ -4171,7 +4171,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             for (l1 in 0..24) {
                 ServerConnectionInfo.anIntArray2145!![l1] = 0
                 Class256.anIntArray3295!![l1] = 0
-                Class186.anIntArray2497!![l1] = 0
+                TextureGenerator.anIntArray2497!![l1] = 0
             }
 
             method773(true)

@@ -66,7 +66,7 @@ class Class348_Sub14 : Class348 {
             anInt6761++
             var class348_sub47: Class348_Sub47? = null
             if (i_4_ == 0) {
-                class348_sub47 = method2148(Class186.aClass351_2495, Class348_Sub23_Sub2.aClass77_9029, -100)
+                class348_sub47 = method2148(TextureGenerator.aClass351_2495, Class348_Sub23_Sub2.aClass77_9029, -100)
                 Class348_Sub46.anInt7112++
             }
             if (i_4_ == 1) {

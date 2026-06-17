@@ -1,5 +1,5 @@
 import ClientLoadStateMachine.method1277
-import Class186_Sub1.Companion.method1402
+import PerlinTextureProvider.Companion.method1402
 import Class238_Sub1.Companion.method1707
 import Class239_Sub25.Companion.method1828
 import Class24.method297
@@ -113,7 +113,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 method1707(26469)
                 Class348_Sub49.method3354(-52)
                 Class348_Sub29.Companion.aClass45_6909!!.method412((-124).toByte())
-                Class186.aClass45_2490!!.method412((-119).toByte())
+                TextureGenerator.aClass45_2490!!.method412((-119).toByte())
                 Class95.aClass45_1541!!.method412(37.toByte())
                 Class348_Sub35.Companion.aClass45_6980!!.method412((-113).toByte())
                 ModelFacePriorityNode.aClass45_1878!!.method412((-116).toByte())

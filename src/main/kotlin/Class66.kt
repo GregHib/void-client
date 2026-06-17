@@ -1277,7 +1277,7 @@ object Class66 {
                 val i_143_ = anIntArray1149!![--anInt1173]
                 if (string.length <= 320 && Class240.anInt4674 == 3 && (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     Class64_Sub3.aString5600 = string
-                    Class186.aString2496 = string_142_
+                    TextureGenerator.aString2496 = string_142_
                     RuntimeException_Sub1.anInt4596 = i_143_
                     Class348_Sub49.method3379(2, 6)
                     return
@@ -1359,7 +1359,7 @@ object Class66 {
                         Class348_Sub40_Sub8.aClass238_9165 = null
                     }
                     Class64_Sub3.aString5600 = string
-                    Class186.aString2496 = string_145_
+                    TextureGenerator.aString2496 = string_145_
                     Class348_Sub49.method3379(2, 5)
                     return
                 }
@@ -3920,7 +3920,7 @@ object Class66 {
                 }
                 if (i == 3307) {
                     val i_326_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class186.anIntArray2497!![i_326_]
+                    anIntArray1149!![anInt1173++] = TextureGenerator.anIntArray2497!![i_326_]
                     return
                 }
                 if (i == 3308) {

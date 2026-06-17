@@ -26,9 +26,9 @@ object LocalPlayerState {
         try {
             anInt1908++
             Class64_Sub3.aString5600 = string
-            Class186.aString2496 = string_0_
+            TextureGenerator.aString2496 = string_0_
             Class318_Sub1_Sub3_Sub3.aBoolean10238 = bool
-            if (!Class318_Sub1_Sub3_Sub3.aBoolean10238 && (Class64_Sub3.aString5600 == "" || Class186.aString2496 == "")) GlRectangleTexture.method254(3, (-100).toByte())
+            if (!Class318_Sub1_Sub3_Sub3.aBoolean10238 && (Class64_Sub3.aString5600 == "" || TextureGenerator.aString2496 == "")) GlRectangleTexture.method254(3, (-100).toByte())
             else {
                 val i_1_ = 34 % ((16 - i) / 55)
                 if (Class239_Sub12.anInt5969 != 1) {

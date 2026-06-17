@@ -185,7 +185,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             Class187.anInt2510 = class45.method417("floorshadows", 0)
             Class52.anInt4895 = class45.method417("compass", 0)
             if (i > -72) method2161(106.toByte(), 125L)
-            Class186_Sub1.anInt5814 = class45.method417("otherlevel", 0)
+            PerlinTextureProvider.anInt5814 = class45.method417("otherlevel", 0)
             Class5_Sub3.anInt8370 = class45.method417("hint_mapedge", 0)
         }
 

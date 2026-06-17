@@ -2,7 +2,7 @@ import jaggl.OpenGL.Companion.glTexImage2Dub
 import java.util.*
 import kotlin.math.min
 
-class Class186_Sub1 internal constructor(i: Int) : Class186() {
+class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
     private val anIntArray5804 = IntArray(512)
     override fun method1398(i: Int, i_0_: Int, f: Float, f_1_: Float, i_2_: Int, f_3_: Float, i_4_: Int, f_5_: Float, i_6_: Int, i_7_: Int, fs: FloatArray) {
         var i_2_ = i_2_

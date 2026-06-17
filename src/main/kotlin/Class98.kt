@@ -1,4 +1,4 @@
-import Class186_Sub1.Companion.method1399
+import PerlinTextureProvider.Companion.method1399
 import Class286_Sub9.Companion.method2174
 
 /* Class98 - Decompiled by JODE

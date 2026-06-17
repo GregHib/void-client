@@ -1099,7 +1099,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class239_Sub21.aIntRange_6058 == Class348_Sub3.aIntRange_6584) {
-                method128(Class186.aClass74_2491, 8.toByte())
+                method128(TextureGenerator.aClass74_2491, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1633,7 +1633,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(20.toByte())
                 val i_214_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_215_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
-                Class186.anIntArray2497!![i_214_] = i_215_
+                TextureGenerator.anIntArray2497!![i_214_] = i_215_
                 ServerConnectionInfo.anIntArray2145!![i_214_] = i
                 Class256.anIntArray3295!![i_214_] = 1
                 val i_216_ = OutputStream_Sub1.anIntArray100!![i_214_] + -1

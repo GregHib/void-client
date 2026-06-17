@@ -726,7 +726,7 @@ open class Class348_Sub49 : Class348 {
             if (i_71_ != Class240.anInt4674) {
                 if (i_71_ == 13) {
                     if (Class348_Sub23_Sub3.aString9043 != null) GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-81).toByte())
-                    else method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
+                    else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
                 }
                 if (i_71_ != 13 && Class213.aClass238_2773 != null) {
                     Class213.aClass238_2773!!.method1700(36.toByte())
@@ -735,17 +735,17 @@ open class Class348_Sub49 : Class348 {
                 if (i_71_ == 3) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != RenderNode.anInt9721), (-45).toByte())
                 if (i_71_ == 7) method1006((RenderNode.anInt9721 != Class54.anInt970), 102.toByte())
                 if (i_71_ == 5) {
-                    if (Class348_Sub23_Sub3.aString9043 == null) method1213(Class64_Sub3.aString5600, Class186.aString2496, -124)
+                    if (Class348_Sub23_Sub3.aString9043 == null) method1213(Class64_Sub3.aString5600, TextureGenerator.aString2496, -124)
                     else method1372(-1)
                 } else if (i_71_ != 6) {
                     if (i_71_ == 9) {
                         if (Class348_Sub23_Sub3.aString9043 != null) GlElementArrayBuffer.method1157((RuntimeException_Sub1.anInt4596), (-120).toByte())
-                        else method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
+                        else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
                     } else if (i_71_ == 12) {
-                        if (Class348_Sub23_Sub3.aString9043 == null) method1213(Class64_Sub3.aString5600, Class186.aString2496, -98)
+                        if (Class348_Sub23_Sub3.aString9043 == null) method1213(Class64_Sub3.aString5600, TextureGenerator.aString2496, -98)
                         else method1372(-1)
                     }
-                } else if (Class348_Sub23_Sub3.aString9043 == null) method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
+                } else if (Class348_Sub23_Sub3.aString9043 == null) method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
                 else GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-99).toByte())
                 if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (-78).toByte())) {
                     Class95.aClass45_1541!!.anInt634 = 2

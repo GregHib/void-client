@@ -87,15 +87,15 @@ object ClientLoadStateMachine {
             GroundItemRenderState.anInt1663 = Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method389(i + 28561)
             DualMaterialContainer.method1001(Class286_Sub7.aClass45_6277!!, 0)
             val i_3_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(i xor 0x11ae)
-            Class186_Sub1.aCollisionMapRegion_5813 = CollisionMapRegion(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub40_Sub17_Sub1.aClass45_10426)
-            var `is` = Class186_Sub1.aCollisionMapRegion_5813!!.method1046(i_3_, 0)
-            if (`is`!!.size == 0) `is` = Class186_Sub1.aCollisionMapRegion_5813!!.method1046(0, 0)
+            PerlinTextureProvider.aCollisionMapRegion_5813 = CollisionMapRegion(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub40_Sub17_Sub1.aClass45_10426)
+            var `is` = PerlinTextureProvider.aCollisionMapRegion_5813!!.method1046(i_3_, 0)
+            if (`is`!!.size == 0) `is` = PerlinTextureProvider.aCollisionMapRegion_5813!!.method1046(0, 0)
             val dualMaterialContainer = DualMaterialContainer(Class286_Sub7.aClass45_6277, SoftwareSpriteRaster.aClass45_1627)
             if (`is`!!.size > 0) {
                 LoadProgressCounters.anInterface16Array2447 = arrayOfNulls<Interface16>(`is`.size)
                 var i_4_ = 0
                 while ((LoadProgressCounters.anInterface16Array2447!!.size > i_4_)) {
-                    LoadProgressCounters.anInterface16Array2447!![i_4_] = Class195(Class186_Sub1.aCollisionMapRegion_5813!!.method1043(`is`[i_4_], 102.toByte()), dualMaterialContainer)
+                    LoadProgressCounters.anInterface16Array2447!![i_4_] = Class195(PerlinTextureProvider.aCollisionMapRegion_5813!!.method1043(`is`[i_4_], 102.toByte()), dualMaterialContainer)
                     i_4_++
                 }
             }
@@ -109,7 +109,7 @@ object ClientLoadStateMachine {
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1028) {
             if (LoadProgressCounters.anInterface16Array2447 != null && (LoadProgressCounters.anInterface16Array2447!!.size > 0)) {
                 if (LoadProgressCounters.anInterface16Array2447!![0]!!.method60(-19079) < 100) return 0
-                if (LoadProgressCounters.anInterface16Array2447!!.size > 1 && Class186_Sub1.aCollisionMapRegion_5813!!.method1044(86) && (LoadProgressCounters.anInterface16Array2447!![1]!!.method60(i + 9581) < 100)) return 0
+                if (LoadProgressCounters.anInterface16Array2447!!.size > 1 && PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(86) && (LoadProgressCounters.anInterface16Array2447!![1]!!.method60(i + 9581) < 100)) return 0
             }
             VarpStore.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, 4)
@@ -121,7 +121,7 @@ object ClientLoadStateMachine {
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1030) {
             Class21.aClass45_322 = Class369_Sub2.method3571(false, 8, (-23).toByte(), 1)
             Class348_Sub29.aClass45_6909 = Class369_Sub2.method3571(false, 0, (-23).toByte(), 1)
-            Class186.aClass45_2490 = Class369_Sub2.method3571(false, 1, (-23).toByte(), 1)
+            TextureGenerator.aClass45_2490 = Class369_Sub2.method3571(false, 1, (-23).toByte(), 1)
             Class95.aClass45_1541 = Class369_Sub2.method3571(false, 2, (-23).toByte(), 1)
             Class348_Sub35.aClass45_6980 = Class369_Sub2.method3571(false, 3, (-23).toByte(), 1)
             ModelFacePriorityNode.aClass45_1878 = Class369_Sub2.method3571(false, 4, (-23).toByte(), 1)
@@ -196,7 +196,7 @@ object ClientLoadStateMachine {
             Class189.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.aClass45_4975, RasterSprite.aClass45_5207)
             Exception_Sub1.aClass255_112 = Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, ProjectionCameraTransform.aClass326_5764, SpotAnimVector.aClass45_2306, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aClass187_9036 = Class187(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            ParticleEmitterNode.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, OpenGlRenderNode.aClass45_10480, Class348_Sub29.aClass45_6909, Class186.aClass45_2490)
+            ParticleEmitterNode.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, OpenGlRenderNode.aClass45_10480, Class348_Sub29.aClass45_6909, TextureGenerator.aClass45_2490)
             Class30.aClass84_413 = Class84(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             HoverActionEntry.aClass25_1813 = Class25(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub40_Sub18.aClass319_9245 = Class319(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class78.aClass45_1322, RasterSprite.aClass45_5207)
@@ -280,7 +280,7 @@ object ClientLoadStateMachine {
             } catch (interruptedexception: InterruptedException) {
                 return 0
             }
-            Class186_Sub1.aCollisionMapRegion_5813 = null
+            PerlinTextureProvider.aCollisionMapRegion_5813 = null
             Class348_Sub40_Sub17_Sub1.aClass45_10426 = null
             Class51.aClass311_897 = null
             LoadProgressCounters.anInterface16Array2447 = null

@@ -28,7 +28,7 @@ class Class348_Sub37 : Class348() {
             }
             val class188 = var_ha_Sub2.aClass188_7736
             if (class188!!.method1414(35632) && Class369_Sub2.anObject8592 == null) {
-                val `is` = method194(128, -1922, 8, 0.6f, 128, 4.0f, 4.0f, 0.5f, 16.0f, Class186_Sub1(419684), 16)
+                val `is` = method194(128, -1922, 8, 0.6f, 128, 4.0f, 4.0f, 0.5f, 16.0f, PerlinTextureProvider(419684), 16)
                 Class369_Sub2.anObject8592 = method1357(`is`, false, 78.toByte())
             }
         }

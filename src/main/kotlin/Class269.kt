@@ -26,7 +26,7 @@ class Class269 internal constructor(private val aHa_Sub3_3457: NativeRenderer) {
         if (i < 42) aFloat3462 = 2.1357973f
         if (this.anInterface18_Impl1_3455 == null) {
             if (Class262.Companion.anObject3331 == null) {
-                val `is` = method194(128, -1922, 8, 0.6f, 128, 4.0f, 4.0f, 0.5f, 16.0f, Class186_Sub1(419684), 16)
+                val `is` = method194(128, -1922, 8, 0.6f, 128, 4.0f, 4.0f, 0.5f, 16.0f, PerlinTextureProvider(419684), 16)
                 Class262.Companion.anObject3331 = method1357(`is`, false, 87.toByte())
             }
             val `is` = method461(false, Class262.Companion.anObject3331, 53146732)

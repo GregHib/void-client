@@ -164,7 +164,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
                     method1083(Class348_Sub8.aRenderer6654, 100, 9.toByte(), Class348_Sub42_Sub8_Sub2.anInt10432, 100, Class321.anInt4017)
                     break
                 } else if (i_16_ != 3) break
-                method282(2, Class348_Sub8.aRenderer6654, Class321.anInt4017, 73.toByte(), Class45.anInt666, Class186_Sub1.anInt5812, Class348_Sub42_Sub8_Sub2.anInt10432, 2)
+                method282(2, Class348_Sub8.aRenderer6654, Class321.anInt4017, 73.toByte(), Class45.anInt666, PerlinTextureProvider.anInt5812, Class348_Sub42_Sub8_Sub2.anInt10432, 2)
             } while (false)
             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTile.method3980(i + 93, Class305.aCanvas3869!!)
             if (Class348_Sub8.aRenderer6654 != null) Class290.method2196((-9).toByte())

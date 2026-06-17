@@ -111,7 +111,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
                                 }
                                 Class51.Companion.aClass311_897!!.method2321(10559, LoadProgressCounters.anInterface16Array2447!![i_5_]!!)
                                 Class375.anInt4544++
-                                if ((Class375.anInt4544 >= (-1 + LoadProgressCounters.anInterface16Array2447!!.size)) && LoadProgressCounters.anInterface16Array2447!!.size > 1) Class375.anInt4544 = if (!Class186_Sub1.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
+                                if ((Class375.anInt4544 >= (-1 + LoadProgressCounters.anInterface16Array2447!!.size)) && LoadProgressCounters.anInterface16Array2447!!.size > 1) Class375.anInt4544 = if (!PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
                             }
                             i_5_++
                         }

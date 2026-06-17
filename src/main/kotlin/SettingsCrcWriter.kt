@@ -14,7 +14,7 @@ object SettingsCrcWriter {
         if (i < 10) aAbstractCameraTransform_2123 = null
         class348_sub49_sub2.writeInt(121.toByte(), Class348_Sub29.aClass45_6909!!.method389(26))
         anInt2121++
-        class348_sub49_sub2.writeInt(112.toByte(), Class186.aClass45_2490!!.method389(-106))
+        class348_sub49_sub2.writeInt(112.toByte(), TextureGenerator.aClass45_2490!!.method389(-106))
         class348_sub49_sub2.writeInt(118.toByte(), Class95.aClass45_1541!!.method389(-109))
         class348_sub49_sub2.writeInt(120.toByte(), Class348_Sub35.aClass45_6980!!.method389(-108))
         class348_sub49_sub2.writeInt(93.toByte(), ModelFacePriorityNode.aClass45_1878!!.method389(-104))

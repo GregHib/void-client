@@ -685,7 +685,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         }
 
         @JvmStatic
-        fun method2460(f: Float, i: Int, f_100_: Float, i_101_: Int, i_102_: Int, f_103_: Float, class186: Class186?, i_104_: Int, i_105_: Byte, i_106_: Int, f_107_: Float, `is`: ByteArray?, i_108_: Int, f_109_: Float) {
+        fun method2460(f: Float, i: Int, f_100_: Float, i_101_: Int, i_102_: Int, f_103_: Float, textureGenerator: TextureGenerator?, i_104_: Int, i_105_: Byte, i_106_: Int, f_107_: Float, `is`: ByteArray?, i_108_: Int, f_109_: Float) {
             var f = f
             var f_100_ = f_100_
             var f_107_ = f_107_
@@ -698,7 +698,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     var i_111_ = 0
                     while (i_101_ > i_111_) {
                         var i_112_ = i
-                        class186!!.method1398(i_108_, i_102_, f_100_ / i_106_.toFloat(), f_109_ / i_108_.toFloat(), 0, f * 127.0f, 1, f_107_ / i_102_.toFloat(), i_106_, i_104_, fs)
+                        textureGenerator!!.method1398(i_108_, i_102_, f_100_ / i_106_.toFloat(), f_109_ / i_108_.toFloat(), 0, f * 127.0f, 1, f_107_ / i_102_.toFloat(), i_106_, i_104_, fs)
                         f_107_ *= 2.0f
                         f_100_ *= 2.0f
                         var i_113_ = 0
@@ -719,7 +719,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     if (i_105_.toInt() == 30) break
                     aHashtable10565 = null
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("ke.LB(" + f + ',' + i + ',' + f_100_ + ',' + i_101_ + ',' + i_102_ + ',' + f_103_ + ',' + (if (class186 != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + f_107_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_108_ + ',' + f_109_ + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("ke.LB(" + f + ',' + i + ',' + f_100_ + ',' + i_101_ + ',' + i_102_ + ',' + f_103_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + f_107_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_108_ + ',' + f_109_ + ')'))
                 }
                 break
             } while (false)

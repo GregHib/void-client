@@ -138,7 +138,7 @@ open class Class258_Sub3 : Class258 {
                 glTexImage2Dub(this.anInt4849, 0, this.anInt4858, this.anInt8547, this.anInt8551, 0, i_35_, 5121, `is`, 0)
                 this.method1955(false, (-123).toByte())
             } else {
-                Class186_Sub1.method1403(i_34_, i_33_, `is`!!, false, i_35_, i, i_32_)
+                PerlinTextureProvider.method1403(i_34_, i_33_, `is`!!, false, i_35_, i, i_32_)
                 this.method1955(true, (-123).toByte())
             }
             glPixelStorei(3317, 4)

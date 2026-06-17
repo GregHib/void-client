@@ -196,7 +196,7 @@ class Class88 {
                         class348_sub49.writeInt(95.toByte(), `is`[2])
                         class348_sub49.writeInt(127.toByte(), `is`[3])
                         class348_sub49.writeLong(0L, 70.toByte())
-                        class348_sub49.writeString((-5).toByte(), Class186.aString2496!!)
+                        class348_sub49.writeString((-5).toByte(), TextureGenerator.aString2496!!)
                         class348_sub49.writeLong(Class348_Sub33.aLong6966, (-124).toByte())
                         class348_sub49.writeLong(OutputStream_Sub2.aLong108, (-112).toByte())
                         class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (-76).toByte(), (Class318_Sub1_Sub4.aBigInteger8762))
