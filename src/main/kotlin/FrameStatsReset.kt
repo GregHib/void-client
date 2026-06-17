@@ -4115,7 +4115,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class314.aFloat3938 = (0x3fff and -80 + (160.0 * Math.random()).toInt()).toFloat()
             Class348_Sub49_Sub1.anInt9750 = (30.0 * Math.random()).toInt() + -20
             RenderableGroup.anInt5016 = (80.0 * Math.random()).toInt() - 40
-            Class20.anInt319 = (Math.random() * 100.0).toInt() - 50
+            ConnectionStateRefs.anInt319 = (Math.random() * 100.0).toInt() - 50
             method3089(-126)
             for (k in 0..2047) Class294.aPlayerArray5058!![k] = null
 

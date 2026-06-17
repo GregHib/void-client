@@ -102,7 +102,7 @@ import VarbitDefLoader.Companion.method1441
 import RenderableGroup.Companion.method1447
 import LoadingScreenState.Companion.method1461
 import ModelOrSpriteHolder.Companion.method171
-import Class20.method287
+import ConnectionStateRefs.method287
 import Class200.method1463
 import Class202.Companion.method1471
 import Class204.Companion.method1493

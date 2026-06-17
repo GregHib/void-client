@@ -74,7 +74,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                             if (`is` == null) i_15_ = 0
                             else i_15_ = `is`[i_6_]
                             if (c.code != 32) {
-                                if ((Class20.anInt320 and 0xffffff.inv()) != 0) fa(c, 1 + i - -i_14_, i_2_ - -1 + i_15_, Class20.anInt320, true)
+                                if ((ConnectionStateRefs.anInt320 and 0xffffff.inv()) != 0) fa(c, 1 + i - -i_14_, i_2_ - -1 + i_15_, ConnectionStateRefs.anInt320, true)
                                 fa(c, i + i_14_, i_2_ + i_15_, Class348_Sub42_Sub1.anInt9492, false)
                             } else if (ParserSpecialCharsHolder.anInt1902 > 0) {
                                 Class258.anInt4848 += ParserSpecialCharsHolder.anInt1902
@@ -212,12 +212,12 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                                 if (string != "u") {
                                     if (string != "/u") {
                                         if (!string.equals("shad=-1", ignoreCase = true)) {
-                                            if (string.startsWith("shad=")) Class20.anInt320 = ((0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492)) or (Class48.method450(-20188, string.substring(5), 16)))
-                                            else if (string == "shad") Class20.anInt320 = (0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492))
+                                            if (string.startsWith("shad=")) ConnectionStateRefs.anInt320 = ((0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492)) or (Class48.method450(-20188, string.substring(5), 16)))
+                                            else if (string == "shad") ConnectionStateRefs.anInt320 = (0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492))
                                             else if (string != "/shad") {
                                                 if (string == "br") method2579((HeadIconRenderer.anInt2061), 117, (PerlinTextureProvider.anInt5807))
-                                            } else Class20.anInt320 = HeadIconRenderer.anInt2061
-                                        } else Class20.anInt320 = 0
+                                            } else ConnectionStateRefs.anInt320 = HeadIconRenderer.anInt2061
+                                        } else ConnectionStateRefs.anInt320 = 0
                                     } else Class348_Sub40_Sub2.anInt9101 = -1
                                 } else Class348_Sub40_Sub2.anInt9101 = (Class348_Sub42_Sub1.anInt9492 and 0xffffff.inv())
                             } else Class348_Sub40_Sub2.anInt9101 = ((Class348_Sub42_Sub1.anInt9492 and 0xffffff.inv()) or Class48.method450(-20188, string.substring(2), 16))
@@ -293,7 +293,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
         anInt4053++
         Player.anInt10567 = -1
         HeadIconRenderer.anInt2061 = i
-        Class20.anInt320 = HeadIconRenderer.anInt2061
+        ConnectionStateRefs.anInt320 = HeadIconRenderer.anInt2061
     }
 
     private fun method2580(string: String, i: Int, i_88_: Int) {
@@ -379,10 +379,10 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                             if (i_108_ != -1) i_106_ += aFontDefinition_4063!!.method1182(i_108_, (-90).toByte(), c)
                             if (c.code != 32) {
                                 if (var_sprite == null) {
-                                    if ((Class20.anInt320 and 0xffffff.inv()) != 0) fa(c, i_106_ + 1, 1 + i_103_, Class20.anInt320, true)
+                                    if ((ConnectionStateRefs.anInt320 and 0xffffff.inv()) != 0) fa(c, i_106_ + 1, 1 + i_103_, ConnectionStateRefs.anInt320, true)
                                     fa(c, i_106_, i_103_, Class348_Sub42_Sub1.anInt9492, false)
                                 } else {
-                                    if ((0xffffff.inv() and Class20.anInt320) != 0) method2578(c, 1 + i_106_, i_103_ + 1, Class20.anInt320, true, var_sprite, i_104_, i)
+                                    if ((0xffffff.inv() and ConnectionStateRefs.anInt320) != 0) method2578(c, 1 + i_106_, i_103_ + 1, ConnectionStateRefs.anInt320, true, var_sprite, i_104_, i)
                                     method2578(c, i_106_, i_103_, Class348_Sub42_Sub1.anInt9492, false, var_sprite, i_104_, i)
                                 }
                             } else if (ParserSpecialCharsHolder.anInt1902 > 0) {

@@ -58,7 +58,7 @@ abstract class Class272 {
                 Class295.anInt3762 = i_8_
                 Class348_Sub40_Sub1.aClass207_9090 = null
                 Class289.anInt3704 = i_3_
-                Class20.anInt317 = i_5_
+                ConnectionStateRefs.anInt317 = i_5_
                 anInt3471++
                 Class269.anInt3451 = i_0_
                 OutputStream_Sub1.anInt98 = i_2_

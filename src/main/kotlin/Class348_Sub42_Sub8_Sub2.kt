@@ -203,7 +203,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class20.aIntRange_316) {
+            if (Class348_Sub3.aIntRange_6584 == ConnectionStateRefs.aIntRange_316) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_12_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 val i_13_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
@@ -1356,7 +1356,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
 
-            if (Class348_Sub3.aIntRange_6584 == Class20.aIntRange_318) {
+            if (Class348_Sub3.aIntRange_6584 == ConnectionStateRefs.aIntRange_318) {
                 Class348_Sub40_Sub26.method3120(-86)
                 Class348_Sub3.aIntRange_6584 = null
                 return false

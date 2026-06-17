@@ -432,11 +432,11 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     Class28.anInt4999 = 0
                                     val i_32_ = (8.0 * Math.random()).toInt()
                                     if ((0x4 and i_32_) == 4) RenderableGroup.anInt5016 += Class303.anInt3844
-                                    if ((i_32_ and 0x1) == 1) Class20.anInt319 += Class318_Sub1_Sub5.anInt8775
+                                    if ((i_32_ and 0x1) == 1) ConnectionStateRefs.anInt319 += Class318_Sub1_Sub5.anInt8775
                                     if ((0x2 and i_32_) == 2) Class260.anInt3310 += Class344.anInt4263
                                 }
-                                if (Class20.anInt319 < -50) Class318_Sub1_Sub5.anInt8775 = 2
-                                if (Class20.anInt319 > 50) Class318_Sub1_Sub5.anInt8775 = -2
+                                if (ConnectionStateRefs.anInt319 < -50) Class318_Sub1_Sub5.anInt8775 = 2
+                                if (ConnectionStateRefs.anInt319 > 50) Class318_Sub1_Sub5.anInt8775 = -2
                                 if (Class260.anInt3310 < -55) Class344.anInt4263 = 2
                                 if (RenderableGroup.anInt5016 < -40) Class303.anInt3844 = 1
                                 if (Class260.anInt3310 > 55) Class344.anInt4263 = -2

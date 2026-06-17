@@ -1,7 +1,7 @@
 /* Class20 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class20 {
+object ConnectionStateRefs {
     var aIntRange_316: IntRange? = IntRange(95, 10)
     @JvmField
     var anInt317: Int = 0
