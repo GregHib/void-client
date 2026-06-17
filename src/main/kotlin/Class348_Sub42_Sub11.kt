@@ -1,4 +1,4 @@
-import Class156.Companion.method1242
+import LinkedListIterator.Companion.method1242
 import Class273.Companion.method2057
 import Class275.method2064
 import Class367_Sub4.Companion.method3542
@@ -133,7 +133,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
                 if (Class355.anInt4372 != 3) {
                     for (i_9_ in 0..1) {
                         Class327.anIntArray4097!![i_9_] = -1000000
-                        Class156.anIntArray2117!![i_9_] = 1000000
+                        LinkedListIterator.anIntArray2117!![i_9_] = 1000000
                         Class348_Sub40_Sub19.anIntArray9259!![i_9_] = 0
                         Class64.anIntArray1127!![i_9_] = 1000000
                         Class56.anIntArray1045!![i_9_] = 0

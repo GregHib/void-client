@@ -3,7 +3,10 @@ import Class88.Companion.method847
 import java.io.DataInputStream
 import java.net.URL
 
-class Class156 {
+/*
+ * Class156
+ */
+class LinkedListIterator {
     private var aClass348_Sub42_2115: Class348_Sub42? = null
     private var aLinkedNodeListIterator_2118: LinkedNodeListIterator? = null
     fun method1240(i: Int): Class348_Sub42? {

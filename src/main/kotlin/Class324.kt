@@ -121,13 +121,13 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
             val is_33_: IntArray?
             if ((aFontDefinition_4063!!.anInt1993 + aFontDefinition_4063!!.anInt1988 - -i_32_) <= i || i_32_ + i_32_ <= i) is_33_ = intArrayOf(i_25_)
             else is_33_ = null
-            var i_34_ = aFontDefinition_4063!!.method1188(string, is_33_, Class156.aStringArray2113, 87.toByte(), abstractModelRenderers)
+            var i_34_ = aFontDefinition_4063!!.method1188(string, is_33_, LinkedListIterator.aStringArray2113, 87.toByte(), abstractModelRenderers)
             if (i_31_ == -1) {
                 i_31_ = i / i_32_
                 if (i_31_ <= 0) i_31_ = 1
             }
             if (i_31_ > 0 && i_31_ <= i_34_) {
-                Class156.aStringArray2113!![i_31_ - 1] = aFontDefinition_4063!!.method1181(abstractModelRenderers, i_25_, (Class156.aStringArray2113!![i_31_ - 1]), 55.toByte())
+                LinkedListIterator.aStringArray2113!![i_31_ - 1] = aFontDefinition_4063!!.method1181(abstractModelRenderers, i_25_, (LinkedListIterator.aStringArray2113!![i_31_ - 1]), 55.toByte())
                 i_34_ = i_31_
             }
             if (i_26_ == 3 && i_34_ == 1) i_26_ = 1
@@ -143,14 +143,14 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                 } else i_36_ = (-aFontDefinition_4063!!.anInt1993 + i + (i_24_ - (i_34_ + -1) * i_32_))
             } else i_36_ = ((-aFontDefinition_4063!!.anInt1993 + (-aFontDefinition_4063!!.anInt1988 + i + -(i_32_ * (-1 + i_34_)))) / 2 + (aFontDefinition_4063!!.anInt1988 + i_24_))
             for (i_38_ in 0..<i_34_) {
-                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
-                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
-                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
+                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (LinkedListIterator.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
+                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (LinkedListIterator.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
                 else if (i_38_ != i_34_ - 1) {
-                    method2580(Class156.aStringArray2113!![i_38_]!!, 0, i_25_)
-                    method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                    method2580(LinkedListIterator.aStringArray2113!![i_38_]!!, 0, i_25_)
+                    method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, i_28_)
                     ParserSpecialCharsHolder.anInt1902 = 0
-                } else method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                } else method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, i_28_)
                 i_36_ += i_32_
             }
             return i_34_

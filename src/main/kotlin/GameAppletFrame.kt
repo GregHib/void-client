@@ -345,7 +345,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                     Class369_Sub3_Sub1.method3578((-42).toByte(), Class305.aCanvas3869, (Class348_Sub23_Sub1.aClass297_8992))
                 }
             } catch (throwable: Throwable) {
-                Class156.method1242(method81(109.toByte()), throwable, 15004)
+                LinkedListIterator.method1242(method81(109.toByte()), throwable, 15004)
                 method82(123, "crash")
             } finally {
                 method90(true, false)
@@ -381,7 +381,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 else showDocument(getDocumentBase(), "_self")
             }
         } catch (throwable: Throwable) {
-            Class156.method1242(null, throwable, 15004)
+            LinkedListIterator.method1242(null, throwable, 15004)
             method82(52, "crash")
         }
     }
@@ -411,7 +411,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, i_23_ + -33739, 1)
             while (class144.anInt1997 == 0) Class286_Sub5.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {
-            Class156.method1242(null, exception, i_23_ + -8495)
+            LinkedListIterator.method1242(null, exception, i_23_ + -8495)
         }
         anInt31++
     }

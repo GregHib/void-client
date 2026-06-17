@@ -981,7 +981,7 @@ class Class46 {
             Class348_Sub40_Sub19.anIntArray9259 = IntArray(i)
             if (i_67_.toInt() == -61) {
                 Class56.anIntArray1045 = IntArray(i)
-                Class156.anIntArray2117 = IntArray(i)
+                LinkedListIterator.anIntArray2117 = IntArray(i)
                 anInt825++
                 Class64.anIntArray1127 = IntArray(i)
                 Class327.anIntArray4097 = IntArray(i)

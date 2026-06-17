@@ -1206,7 +1206,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub21.anInt6065 = 0
             Class348_Sub11.anInt4762 = 0
             OpenGlRenderer.anInt7595 = 0
-            Class156.anInt2112 = 0
+            LinkedListIterator.anInt2112 = 0
             Class318_Sub1_Sub4_Sub1.anInt10072 = 0
             OpenGlRenderer.anInt7613 = 0
             OpenGlRenderer.anInt7708 = 0
@@ -1562,7 +1562,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlTerrainTile.anInt8250 = 0
             Class167.anInt2200 = 0
             Class318_Sub1_Sub1_Sub1.anInt9967 = 0
-            Class156.anInt2114 = 0
+            LinkedListIterator.anInt2114 = 0
             NativeRenderer.anInt8065 = 0
             NativeRenderer.anInt7888 = 0
             Class64_Sub2.anInt5498 = 0
@@ -2848,7 +2848,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub25.anInt6102 = 0
             Class348_Sub42_Sub10.anInt9561 = 0
             Class64_Sub3.anInt5535 = 0
-            Class156.anInt2116 = 0
+            LinkedListIterator.anInt2116 = 0
             Class9.anInt170 = 0
             Npc.anInt10515 = 0
             Class314_Sub1.anInt6356 = 0
@@ -3104,7 +3104,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class169.anInt2257 = 0
             Class277.anInt3571 = 0
             Class84.anInt1451 = 0
-            Class156.anInt2120 = 0
+            LinkedListIterator.anInt2120 = 0
             Class299_Sub2.anInt6324 = 0
             Class348_Sub42_Sub16_Sub2.anInt10462 = 0
             HeadIconRenderer.anInt2064 = 0
@@ -3199,7 +3199,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7886 = 0
             Class318_Sub1_Sub3_Sub5.anInt10370 = 0
             Class65.anInt1142 = 0
-            Class156.anInt2119 = 0
+            LinkedListIterator.anInt2119 = 0
             MapLabelMenuEntry.anInt5790 = 0
             NativeRenderer.anInt7926 = 0
             NativeRenderer.anInt7989 = 0

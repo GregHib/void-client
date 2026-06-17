@@ -1,4 +1,4 @@
-import Class156.Companion.method1242
+import LinkedListIterator.Companion.method1242
 import Class286_Sub5.Companion.method2161
 import java.io.EOFException
 import java.io.IOException

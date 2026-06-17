@@ -86,7 +86,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
                     if (class348_sub42_sub16_sub2.anInt10457 == 3) class348_sub42_sub16_sub2.aByteArray10461 = (class348_sub42_sub16_sub2.aIndexedFileCache_10458!!.method1161(((-4).toByte()).toByte(), class348_sub42_sub16_sub2.aLong7057.toInt()))
                 } else class348_sub42_sub16_sub2.aIndexedFileCache_10458!!.method1160(class348_sub42_sub16_sub2.aByteArray10461!!.size, (class348_sub42_sub16_sub2.aLong7057).toInt(), class348_sub42_sub16_sub2.aByteArray10461, -7305)
             } catch (exception: Exception) {
-                Class156.method1242(null, exception, 15004)
+                LinkedListIterator.method1242(null, exception, 15004)
             }
             class348_sub42_sub16_sub2!!.aBoolean9664 = false
         }
@@ -171,11 +171,11 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
                         }
                         if (i_9_ != -1) {
                             var i_13_ = 0
-                            val class156 = Class156(Class233.aLinkedNodeListIterator_3022!!)
-                            var class348_sub42_sub13 = (class156.method1240(110) as? Class348_Sub42_Sub13)
+                            val linkedListIterator = LinkedListIterator(Class233.aLinkedNodeListIterator_3022!!)
+                            var class348_sub42_sub13 = (linkedListIterator.method1240(110) as? Class348_Sub42_Sub13)
                             while (class348_sub42_sub13 != null) {
                                 if (i_9_ == i_13_++) return (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).anInt9609
-                                class348_sub42_sub13 = (class156.method1243(77.toByte()) as? Class348_Sub42_Sub13)
+                                class348_sub42_sub13 = (linkedListIterator.method1243(77.toByte()) as? Class348_Sub42_Sub13)
                             }
                         }
                     } else if (Class242.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 < i_2_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252) > i_2_) {
@@ -193,11 +193,11 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
                         }
                         if (i_4_ != -1) {
                             var i_8_ = 0
-                            val class156 = Class156(Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
-                            var class348_sub42_sub12 = (class156.method1240(9) as? Class348_Sub42_Sub12)
+                            val linkedListIterator = LinkedListIterator(Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
+                            var class348_sub42_sub12 = (linkedListIterator.method1240(9) as? Class348_Sub42_Sub12)
                             while (class348_sub42_sub12 != null) {
                                 if (i_8_++ == i_4_) return (class348_sub42_sub12.anInt9609)
-                                class348_sub42_sub12 = (class156.method1243(90.toByte()) as? Class348_Sub42_Sub12)
+                                class348_sub42_sub12 = (linkedListIterator.method1243(90.toByte()) as? Class348_Sub42_Sub12)
                             }
                         }
                     }

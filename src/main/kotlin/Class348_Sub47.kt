@@ -1,4 +1,4 @@
-import Class156.Companion.method1241
+import LinkedListIterator.Companion.method1241
 import Class239_Sub1.Companion.method1722
 import Class348_Sub17.Companion.method2929
 import Class348_Sub22.Companion.method2959

@@ -185,15 +185,15 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                                 }
                                 if (i_17_ != -1) {
                                     var i_22_ = 0
-                                    val class156 = Class156(Class233.aLinkedNodeListIterator_3022!!)
-                                    var class348_sub42_sub13 = (class156.method1240(75) as Class348_Sub42_Sub13?)
+                                    val linkedListIterator = LinkedListIterator(Class233.aLinkedNodeListIterator_3022!!)
+                                    var class348_sub42_sub13 = (linkedListIterator.method1240(75) as Class348_Sub42_Sub13?)
                                     while (class348_sub42_sub13 != null) {
                                         if (i_17_ == i_22_) {
                                             if (class348_sub42_sub13.anInt9615 > 1) method881(class348_sub42_sub13, i_16_, true, i_18_)
                                             break
                                         }
                                         i_22_++
-                                        class348_sub42_sub13 = (class156.method1243(74.toByte()) as Class348_Sub42_Sub13?)
+                                        class348_sub42_sub13 = (linkedListIterator.method1243(74.toByte()) as Class348_Sub42_Sub13?)
                                     }
                                 }
                             }
@@ -218,15 +218,15 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                         }
                         if (i_25_ != -1) {
                             var i_29_ = 0
-                            val class156 = Class156(Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
-                            var class348_sub42_sub12 = (class156.method1240(98) as Class348_Sub42_Sub12?)
+                            val linkedListIterator = LinkedListIterator(Class242.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621)
+                            var class348_sub42_sub12 = (linkedListIterator.method1240(98) as Class348_Sub42_Sub12?)
                             while (class348_sub42_sub12 != null) {
                                 if (i_29_ == i_25_) {
                                     Class325.method2599(126.toByte(), class348_sub42_sub12, i_24_, i_23_)
                                     break
                                 }
                                 i_29_++
-                                class348_sub42_sub12 = (class156.method1243(122.toByte()) as Class348_Sub42_Sub12?)
+                                class348_sub42_sub12 = (linkedListIterator.method1243(122.toByte()) as Class348_Sub42_Sub12?)
                             }
                         }
                         method2146(78.toByte())
@@ -250,8 +250,8 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                             }
                             if (i_30_ != -1) {
                                 var i_34_ = 0
-                                val class156 = Class156(Class233.aLinkedNodeListIterator_3022!!)
-                                var class348_sub42_sub13 = (class156.method1240(18) as Class348_Sub42_Sub13?)
+                                val linkedListIterator = LinkedListIterator(Class233.aLinkedNodeListIterator_3022!!)
+                                var class348_sub42_sub13 = (linkedListIterator.method1240(18) as Class348_Sub42_Sub13?)
                                 while (class348_sub42_sub13 != null) {
                                     if (i_34_ == i_30_) {
                                         Class325.method2599(122.toByte(), ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?), i_24_, i_23_)
@@ -259,7 +259,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                                         break
                                     }
                                     i_34_++
-                                    class348_sub42_sub13 = (class156.method1243(55.toByte()) as Class348_Sub42_Sub13?)
+                                    class348_sub42_sub13 = (linkedListIterator.method1243(55.toByte()) as Class348_Sub42_Sub13?)
                                 }
                             }
                         } else {

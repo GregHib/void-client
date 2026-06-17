@@ -78,7 +78,7 @@ class Class69 {
         fun method723(i: Int, i_2_: Int, i_3_: Byte): Boolean {
             anInt1196++
             if (i_3_ >= -66) return true
-            return (method2352(113, i_2_, i) and Class156.method1238(i, i_2_, -29))
+            return (method2352(113, i_2_, i) and LinkedListIterator.method1238(i, i_2_, -29))
         }
 
         fun method724(i: Int, i_4_: Int, i_5_: Int): Boolean {

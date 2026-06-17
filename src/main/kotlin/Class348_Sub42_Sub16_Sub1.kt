@@ -47,7 +47,7 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
                     try {
                         class348_sub15.aClass55_Sub1_6768!!.method517(-2)
                     } catch (exception: Exception) {
-                        Class156.method1242("TV: " + class348_sub15.anInt6773, exception, 15004)
+                        LinkedListIterator.method1242("TV: " + class348_sub15.anInt6773, exception, 15004)
                         Class64_Sub3.method690(15.toByte(), (class348_sub15.anInt6773))
                     }
                     if (!class348_sub15.aBoolean6783 && !class348_sub15.aBoolean6781) {

@@ -1786,7 +1786,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            Class156.method1242(("T1 - " + (if (Class348_Sub3.aIntRange_6584 == null) -1 else Class348_Sub3.aIntRange_6584!!.method1058(110.toByte())) + "," + (if (Class239.aIntRange_3145 == null) -1 else Class239.aIntRange_3145!!.method1058(127.toByte())) + "," + (if (Class348_Sub40_Sub36.aIntRange_9456 == null) -1 else Class348_Sub40_Sub36.aIntRange_9456!!.method1058(125.toByte())) + " - " + Class348_Sub40_Sub25.anInt9341), null, 15004)
+            LinkedListIterator.method1242(("T1 - " + (if (Class348_Sub3.aIntRange_6584 == null) -1 else Class348_Sub3.aIntRange_6584!!.method1058(110.toByte())) + "," + (if (Class239.aIntRange_3145 == null) -1 else Class239.aIntRange_3145!!.method1058(127.toByte())) + "," + (if (Class348_Sub40_Sub36.aIntRange_9456 == null) -1 else Class348_Sub40_Sub36.aIntRange_9456!!.method1058(125.toByte())) + " - " + Class348_Sub40_Sub25.anInt9341), null, 15004)
             Class348_Sub40_Sub34.method3141(false, 11.toByte())
             return true
         }
