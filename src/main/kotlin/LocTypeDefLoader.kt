@@ -14,25 +14,25 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
         anInt2508++
     }
 
-    fun method1408(i: Int, i_3_: Int): Class321 {
+    fun method1408(i: Int, i_3_: Int): LocTypeDefinition {
         anInt2504++
-        var class321: Class321?
+        var locTypeDefinition: LocTypeDefinition?
         synchronized(aClass60_2501!!) {
-            class321 = aClass60_2501!!.method583(i_3_.toLong(), 76) as Class321?
+            locTypeDefinition = aClass60_2501!!.method583(i_3_.toLong(), 76) as LocTypeDefinition?
         }
-        if (class321 != null) return class321
+        if (locTypeDefinition != null) return locTypeDefinition
         val `is`: ByteArray?
         synchronized(aClass45_2498!!) {
             `is` = aClass45_2498!!.method410(-1860, 35, i_3_)
         }
-        class321 = Class321()
-        if (`is` != null) class321.method2551(-125, Class348_Sub49(`is`))
+        locTypeDefinition = LocTypeDefinition()
+        if (`is` != null) locTypeDefinition.method2551(-125, Class348_Sub49(`is`))
         if (i != -12637) aClass60_2501 = null
-        class321.method2548(127.toByte())
+        locTypeDefinition.method2548(127.toByte())
         synchronized(aClass60_2501!!) {
-            aClass60_2501!!.method582(class321, i_3_.toLong(), (-99).toByte())
+            aClass60_2501!!.method582(locTypeDefinition, i_3_.toLong(), (-99).toByte())
         }
-        return class321
+        return locTypeDefinition
     }
 
     fun method1409(i: Int, i_4_: Int) {

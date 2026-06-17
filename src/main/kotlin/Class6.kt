@@ -152,20 +152,20 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                         i_35_ = NativeTerrainTile.method4008((-127).toByte())
                         i_36_ = SceneTilePlaneManager.method260(false)
                     }
-                    var_renderer!!.KA(i_35_, i_36_, Class321.anInt4017 + i_35_, i_36_ + 350)
-                    var_renderer.aa(i_35_, i_36_, Class321.anInt4017, 350, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 1)
-                    Class338.method2663(-5590, i_35_, Class321.anInt4017 + i_35_, i_36_, i_36_ + 350)
+                    var_renderer!!.KA(i_35_, i_36_, LocTypeDefinition.anInt4017 + i_35_, i_36_ + 350)
+                    var_renderer.aa(i_35_, i_36_, LocTypeDefinition.anInt4017, 350, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 1)
+                    Class338.method2663(-5590, i_35_, LocTypeDefinition.anInt4017 + i_35_, i_36_, i_36_ + 350)
                     val i_37_ = 350 / Class68.anInt1188
                     if (Class369_Sub2.anInt8587 > 0) {
                         val i_38_ = 342 + -Class68.anInt1188
                         val i_39_ = (i_37_ * i_38_ / (-1 + (i_37_ - -Class369_Sub2.anInt8587)))
                         var i_40_ = 4
                         if (Class369_Sub2.anInt8587 > 1) i_40_ += ((Class369_Sub2.anInt8587 + (-1 + -ViewportTransform.anInt3676)) * (i_38_ - i_39_) / (Class369_Sub2.anInt8587 + -1))
-                        var_renderer.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 2)
+                        var_renderer.aa(-16 + (LocTypeDefinition.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 2)
                         var i_41_ = ViewportTransform.anInt3676
                         while (((i_41_ < i_37_ + ViewportTransform.anInt3676) && Class369_Sub2.anInt8587 > i_41_)) {
                             val strings = (Class348_Sub40_Sub23.method3113('\u0008', true, ArbFogMaterialPass.aStringArray6200!![i_41_]!!))
-                            val i_42_ = (-16 + Class321.anInt4017 + -8) / strings.size
+                            val i_42_ = (-16 + LocTypeDefinition.anInt4017 + -8) / strings.size
                             for (i_43_ in strings.indices) {
                                 val i_44_ = i_42_ * i_43_ + 8
                                 var_renderer.KA(i_35_ + i_44_, i_36_, i_42_ + i_35_ - (-i_44_ - -8), i_36_ + 350)
@@ -174,9 +174,9 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                             i_41_++
                         }
                     }
-                    WorldMapRenderer.aClass324_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (Class321.anInt4017 + i_35_ + -25), -121, -16777216)
-                    var_renderer.KA(i_35_, i_36_, i_35_ - -Class321.anInt4017, i_36_ - -350)
-                    var_renderer.method3649((-80).toByte(), Class321.anInt4017, -Class348_Sub31_Sub2.anInt9077 + (350 + i_36_), -1, i_35_)
+                    WorldMapRenderer.aClass324_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (LocTypeDefinition.anInt4017 + i_35_ + -25), -121, -16777216)
+                    var_renderer.KA(i_35_, i_36_, i_35_ - -LocTypeDefinition.anInt4017, i_36_ - -350)
+                    var_renderer.method3649((-80).toByte(), LocTypeDefinition.anInt4017, -Class348_Sub31_Sub2.anInt9077 + (350 + i_36_), -1, i_35_)
                     NodeDeque.aClass324_3326!!.method2576("--> " + BackgroundWorkerThread.method1909(31.toByte(), Class363.aString4461!!), -1, (i_36_ - (-350 + Class369.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
                     if (!SizeBoundedSoftCache.aBoolean2329) break
                     var i_45_ = -1

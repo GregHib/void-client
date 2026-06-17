@@ -16,7 +16,7 @@ class SplashImageLoadable internal constructor(class45: Class45?, configValuePro
     override fun method9(i: Byte, bool: Boolean) {
         anInt4696++
         if (bool) {
-            val i_0_ = (max(Class321.anInt4017, Class92.anInt1524))
+            val i_0_ = (max(LocTypeDefinition.anInt4017, Class92.anInt1524))
             val i_1_ = (max(Class348_Sub42_Sub8_Sub2.anInt10432, OpenGlRenderer.anInt7666))
             val i_2_ = aAbstractModelRenderer_4688!!.method966()
             val i_3_ = aAbstractModelRenderer_4688!!.method980()

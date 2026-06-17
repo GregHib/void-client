@@ -382,7 +382,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class5.anInt4629 = 0
             LocalizedText.anInt3482 = 0
             Class60.anInt1097 = 0
-            Class321.anInt4013 = 0
+            LocTypeDefinition.anInt4013 = 0
             Class33.anInt457 = 0
             Class59_Sub2_Sub2.anInt8677 = 0
             Class85.anInt1466 = 0
@@ -543,7 +543,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlTexture.anInt4857 = 0
             OpenGlRenderer.anInt7544 = 0
             SplashImageLoadable.anInt4691 = 0
-            Class321.anInt3999 = 0
+            LocTypeDefinition.anInt3999 = 0
             UnderlayDefinition.anInt2887 = 0
             Class348_Sub5.anInt6622 = 0
             Class39.anInt514 = 0
@@ -1347,7 +1347,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlBufferObject.anInt4735 = 0
             Class348_Sub40_Sub5.anInt9128 = 0
             OpenGlRenderer.anInt7602 = 0
-            Class321.anInt3995 = 0
+            LocTypeDefinition.anInt3995 = 0
             Class348_Sub40_Sub30.anInt9394 = 0
             CubemapTextureGlSource.anInt8705 = 0
             Class377.anInt9861 = 0

@@ -1493,7 +1493,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class321.aIntRange_4015 == Class348_Sub3.aIntRange_6584) {
+            if (LocTypeDefinition.aIntRange_4015 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3363(-13309)
                 var i_196_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-124)
                 if (i_196_ == 65535) i_196_ = -1

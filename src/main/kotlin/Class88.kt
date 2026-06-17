@@ -123,9 +123,9 @@ class Class88 {
                 i = NativeTerrainTile.method4008((-124).toByte())
                 i_1_ = method260(false)
             }
-            ParticleAmountConfig.method1252(i_1_, RenderNode.anInt9721, i_1_, -1, i, i + Class321.anInt4017, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432, 116.toByte(), i)
+            ParticleAmountConfig.method1252(i_1_, RenderNode.anInt9721, i_1_, -1, i, i + LocTypeDefinition.anInt4017, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432, 116.toByte(), i)
             if (RectangleRegion.aClass46Array1942 != null) {
-                method3064(i, SpriteLoadValidator.anInt4792, true, Class348_Sub1.anInt6555, i_1_, Class331.aClass46_4130!!.anInt760, i + Class321.anInt4017, false, RectangleRegion.aClass46Array1942, -1412584499, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432)
+                method3064(i, SpriteLoadValidator.anInt4792, true, Class348_Sub1.anInt6555, i_1_, Class331.aClass46_4130!!.anInt760, i + LocTypeDefinition.anInt4017, false, RectangleRegion.aClass46Array1942, -1412584499, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432)
                 RectangleRegion.aClass46Array1942 = null
             }
         }
@@ -214,7 +214,7 @@ class Class88 {
                             class348_sub49_sub2.writeString((-5).toByte(), Class64_Sub3.aString5600!!)
                             class348_sub49_sub2.writeByte(false, (RuntimeException_Sub1.anInt4596))
                             class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub12.method3229(-71))
-                            class348_sub49_sub2.writeShort(107.toByte(), Class321.anInt4017)
+                            class348_sub49_sub2.writeShort(107.toByte(), LocTypeDefinition.anInt4017)
                             class348_sub49_sub2.writeShort(107.toByte(), Class348_Sub42_Sub8_Sub2.anInt10432)
                             class348_sub49_sub2.writeByte(false, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350))
                             method4002(class348_sub49_sub2, 55.toByte())

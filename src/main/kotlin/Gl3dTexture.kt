@@ -190,7 +190,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 Class95.aIntRange_1540,
                 ProjectileDefinition.aIntRange_3842,
                 TextureQualityOptionState.aIntRange_5997,
-                Class321.aIntRange_4015,
+                LocTypeDefinition.aIntRange_4015,
                 Class368.aIntRange_4500,
                 UnusedToStringStub.aIntRange_2717,
                 FloatCameraTransform.aIntRange_5742,

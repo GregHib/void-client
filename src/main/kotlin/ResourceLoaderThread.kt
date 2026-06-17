@@ -74,7 +74,7 @@ class ResourceLoaderThread : Runnable {
                         i = 0xffffff or (i shl 24)
                         ScreenBorderFiller.method1170((-121).toByte())
                         Class348_Sub8.aRenderer6654!!.GA(0)
-                        val class105 = (Class348_Sub8.aRenderer6654!!.method3629(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, true))
+                        val class105 = (Class348_Sub8.aRenderer6654!!.method3629(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, true))
                         Class348_Sub8.aRenderer6654!!.method3681(class105!!, 0)
                         anInterface16_3919!!.method58(true, -126)
                         Class348_Sub8.aRenderer6654!!.method3672()

@@ -58,11 +58,11 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                     if (color_0_ == null) color_0_ = Color(140, 17, 17)
                     if (color_2_ == null) color_2_ = Color(255, 255, 255)
                     try {
-                        if (Class342.anImage4249 == null) Class342.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
+                        if (Class342.anImage4249 == null) Class342.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
                         val graphics_3_ = Class342.anImage4249!!.getGraphics()
                         graphics_3_.setColor(Color.black)
-                        graphics_3_.fillRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
-                        val i_4_ = -152 + Class321.anInt4017 / 2
+                        graphics_3_.fillRect(0, 0, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+                        val i_4_ = -152 + LocTypeDefinition.anInt4017 / 2
                         val i_5_ = -18 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2
                         graphics_3_.setColor(color_0_)
                         graphics_3_.drawRect(i_4_, i_5_, 303, 33)
@@ -78,13 +78,13 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         if (Class348_Sub42_Sub16.aString9665 != null) {
                             graphics_3_.setFont(Class351.aFont4329)
                             graphics_3_.setColor(color_2_)
-                            graphics_3_.drawString(Class348_Sub42_Sub16.aString9665, (Class321.anInt4017 / 2 - (Class348_Sub42_Sub16.aString9665!!.length * 6 / 2)), -26 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2)
+                            graphics_3_.drawString(Class348_Sub42_Sub16.aString9665, (LocTypeDefinition.anInt4017 / 2 - (Class348_Sub42_Sub16.aString9665!!.length * 6 / 2)), -26 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2)
                         }
                         graphics.drawImage(Class342.anImage4249, 0, 0, null)
                     } catch (exception: Exception) {
                         graphics.setColor(Color.black)
-                        graphics.fillRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
-                        val i_6_ = -152 + Class321.anInt4017 / 2
+                        graphics.fillRect(0, 0, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+                        val i_6_ = -152 + LocTypeDefinition.anInt4017 / 2
                         val i_7_ = Class348_Sub42_Sub8_Sub2.anInt10432 / 2 + -18
                         graphics.setColor(color_0_)
                         graphics.drawRect(i_6_, i_7_, 303, 33)
@@ -98,7 +98,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         if (Class348_Sub42_Sub16.aString9665 != null) {
                             graphics.setFont(Class351.aFont4329)
                             graphics.setColor(color_2_)
-                            graphics.drawString(Class348_Sub42_Sub16.aString9665, (Class321.anInt4017 / 2 + -(6 * Class348_Sub42_Sub16.aString9665!!.length / 2)), Class348_Sub42_Sub8_Sub2.anInt10432 / 2 - 26)
+                            graphics.drawString(Class348_Sub42_Sub16.aString9665, (LocTypeDefinition.anInt4017 / 2 + -(6 * Class348_Sub42_Sub16.aString9665!!.length / 2)), Class348_Sub42_Sub8_Sub2.anInt10432 / 2 - 26)
                         }
                         graphics.drawString(string, i_6_ - -((304 + -(string!!.length * 6)) / 2), 22 + i_7_)
                     }

@@ -117,7 +117,7 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
                 i_7_ = 21 + Class73.anInt4776 * 16
             }
             var i_10_ = -(i_6_ / 2) + i_4_
-            if (Class321.anInt4017 < i_6_ + i_10_) i_10_ = -i_6_ + Class321.anInt4017
+            if (LocTypeDefinition.anInt4017 < i_6_ + i_10_) i_10_ = -i_6_ + LocTypeDefinition.anInt4017
             if (i_10_ < 0) i_10_ = 0
             var i_11_ = i_5_
             if (i > -108) method2290()

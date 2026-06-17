@@ -128,7 +128,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         container.setLayout(null)
         ParticleSystemRenderer.aCanvas3869 = DelegatingRenderCanvas(this)
         container.add(ParticleSystemRenderer.aCanvas3869)
-        ParticleSystemRenderer.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
         ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
         if (container === Class52.aFrame4904) {
             val insets = (Class52.aFrame4904 as Container).getInsets()
@@ -172,7 +172,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (ParticleAmountConfig.anInt2127++ > 50) {
             ParticleAmountConfig.anInt2127 -= 50
             Class49.aBoolean4726 = true
-            ParticleSystemRenderer.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+            ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
             ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
             if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
                 val insets = Class52.aFrame4904!!.getInsets()
@@ -364,8 +364,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 Class348_Sub48.anInt7129 = 0
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_
                 Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
-                Class321.anInt4017 = i
-                SocketFactory.anInt3473 = Class321.anInt4017
+                LocTypeDefinition.anInt4017 = i
+                SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
                 Class335.anInt4167 = 0
                 Class348_Sub1_Sub3.anInt8818 = i_15_
                 Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
@@ -389,8 +389,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     fun method96(i: Int, i_20_: Int, bool: Boolean, i_21_: Int, i_22_: Int, string: String?, i_23_: Int, i_24_: Int) {
         try {
             if (i_23_ != 23499) return
-            Class321.anInt4017 = i_20_
-            SocketFactory.anInt3473 = Class321.anInt4017
+            LocTypeDefinition.anInt4017 = i_20_
+            SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
             Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_
             Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
             Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this

@@ -940,7 +940,7 @@ class Client : GameAppletFrame() {
         method1194(10)
         method1594(-1966608624)
         method1926(-127)
-        Class321.method2549((-85).toByte())
+        LocTypeDefinition.method2549((-85).toByte())
         method3165(44.toByte())
         method1369(2.toByte())
         SpotAnimVector.method1334((-110).toByte())
@@ -1664,7 +1664,7 @@ class Client : GameAppletFrame() {
             val bool_118_ = method2163(!bool)
             if (bool_118_ && Class74.aBoolean1236 && Class348_Sub40.aSoundChannelMixer_7042 != null) Class348_Sub40.aSoundChannelMixer_7042!!.method2087(-115)
             if (WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {
-                if ((Class348_Sub16_Sub2.aLong8866 != 0L) && method599(-98) > Class348_Sub16_Sub2.aLong8866) method830(method3229(-128), Class321.anInt4005, 102.toByte(), false, Class348_Sub40_Sub25.anInt9335)
+                if ((Class348_Sub16_Sub2.aLong8866 != 0L) && method599(-98) > Class348_Sub16_Sub2.aLong8866) method830(method3229(-128), LocTypeDefinition.anInt4005, 102.toByte(), false, Class348_Sub40_Sub25.anInt9335)
                 else if (!Class348_Sub8.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
             }
             if (Class34.aFrame476 == null) {
@@ -1780,7 +1780,7 @@ class Client : GameAppletFrame() {
             string = ("[1)" + ArbVertexProgram.regionTileX + "," + Class90.regionTileY + "," + Class367_Sub4.anInt7319 + "," + Class348_Sub40_Sub3.anInt9109 + "|")
             if (i < 40) aNodeDeque_5185 = null
             if (LocalPlayerState.aPlayer_1907 != null) string += ("2)" + Class355.anInt4372 + "," + (ArbVertexProgram.regionTileX + (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + "|")
-            string += ("3)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + Class321.anInt4017 + "," + Class348_Sub42_Sub8_Sub2.anInt10432 + "|")
+            string += ("3)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + LocTypeDefinition.anInt4017 + "," + Class348_Sub42_Sub8_Sub2.anInt10432 + "|")
             string += "7)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
             string += "8)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"
             string += "9)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) + "|"

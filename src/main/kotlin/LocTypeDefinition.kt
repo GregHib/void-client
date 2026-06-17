@@ -3,7 +3,7 @@ import Class33.Companion.method340
 /* Class321 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class321 {
+class LocTypeDefinition {
     private lateinit var anIntArrayArray3996: Array<IntArray?>
     private lateinit var anIntArrayArray3997: Array<IntArray?>
     private lateinit var anIntArray3998: IntArray

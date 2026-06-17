@@ -117,7 +117,7 @@ class LoadingBarRenderer : Interface16 {
     private fun method2215(i: Byte, i_2_: Int): Int {
         anInt5033++
         if (i < 23) anImage5030 = null
-        if (aBoolean5020) return (-i_2_ + Class321.anInt4017) / 2
+        if (aBoolean5020) return (-i_2_ + LocTypeDefinition.anInt4017) / 2
         return 0
     }
 
@@ -164,9 +164,9 @@ class LoadingBarRenderer : Interface16 {
                 try {
                     val i_5_ = Class51.aResourceLoaderThread_897!!.method2320(103.toByte())
                     val string = Class51.aResourceLoaderThread_897!!.method2318(-9324)
-                    if (Class342.anImage4249 == null) Class342.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
+                    if (Class342.anImage4249 == null) Class342.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
                     val graphics_6_ = Class342.anImage4249!!.getGraphics()
-                    graphics_6_.clearRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+                    graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                     val i_7_ = anImage5030!!.getWidth(null)
                     val i_8_ = anImage5026!!.getWidth(null)
                     val i_9_ = anImage5056!!.getWidth(null)
