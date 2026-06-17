@@ -39,7 +39,7 @@ class Class64_Sub3 : Class64 {
     private var aFloatArray5571: FloatArray? = null
     private var aNpcSummaryDefinition_5572: NpcSummaryDefinition? = null
     private var aShortArray5573: ShortArray? = null
-    private var aClass270_5575: Class270? = null
+    private var aArchiveFileConditionWrapper_5575: ArchiveFileConditionWrapper? = null
     private var aShortArray5576: ShortArray? = null
     private var aShortArray5579: ShortArray? = null
     private var aShortArray5580: ShortArray? = null
@@ -118,9 +118,9 @@ class Class64_Sub3 : Class64 {
         if (anInt5537 != 0 && i > 125) {
             if (aByte5581.toInt() != 0) method688(5, true)
             method688(5, false)
-            if (aClass270_5575 != null) {
-                if (aClass270_5575!!.anInterface8_3463 == null) method678((aByte5581.toInt() and 0x10) != 0, 27.toByte())
-                if (aClass270_5575!!.anInterface8_3463 != null) {
+            if (aArchiveFileConditionWrapper_5575 != null) {
+                if (aArchiveFileConditionWrapper_5575!!.anInterface8_3463 == null) method678((aByte5581.toInt() and 0x10) != 0, 27.toByte())
+                if (aArchiveFileConditionWrapper_5575!!.anInterface8_3463 != null) {
                     aHa_Sub2_5598!!.method3728(aHoverActionEntry_5563 != null, 118)
                     aHa_Sub2_5598.method3794(aHoverActionEntry_5605, aHoverActionEntry_5610, -26411, aHoverActionEntry_5620, aHoverActionEntry_5563)
                     val i_7_ = -1 + anIntArray5626!!.size
@@ -131,7 +131,7 @@ class Class64_Sub3 : Class64 {
                         var i_11_ = aShortArray5601!![i_9_].toInt() and 0xffff
                         if (i_11_ == 65535) i_11_ = -1
                         aHa_Sub2_5598.method3801(aHoverActionEntry_5563 != null, i_11_, 125)
-                        aHa_Sub2_5598.method3759((-i_9_ + i_10_) * 3, -128, 4, (aClass270_5575!!.anInterface8_3463), i_9_ * 3)
+                        aHa_Sub2_5598.method3759((-i_9_ + i_10_) * 3, -128, 4, (aArchiveFileConditionWrapper_5575!!.anInterface8_3463), i_9_ * 3)
                         i_8_++
                     }
                 }
@@ -163,8 +163,8 @@ class Class64_Sub3 : Class64 {
             if (bool) {
                 if (anInterface8_5647 == null) anInterface8_5647 = aHa_Sub2_5598.method3733(5123, -39, (class348_sub49_sub1.anInt7197), (class348_sub49_sub1.aByteArray7154), true)
                 else anInterface8_5647!!.method35(class348_sub49_sub1.aByteArray7154, 5123, i.toInt() xor 0x23, class348_sub49_sub1.anInt7197)
-                aClass270_5575!!.anInterface8_3463 = anInterface8_5647
-            } else aClass270_5575!!.anInterface8_3463 = (aHa_Sub2_5598.method3733(5123, i + -65, class348_sub49_sub1.anInt7197, class348_sub49_sub1.aByteArray7154, false))
+                aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = anInterface8_5647
+            } else aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = (aHa_Sub2_5598.method3733(5123, i + -65, class348_sub49_sub1.anInt7197, class348_sub49_sub1.aByteArray7154, false))
             if (!bool) aBoolean5555 = true
         }
     }
@@ -680,7 +680,7 @@ class Class64_Sub3 : Class64 {
         anInt5560++
         if (anInt5529 > 0 && anInt5537 > 0) {
             method688(5, false)
-            if ((aByte5581.toInt() and 0x10) == 0 && aClass270_5575!!.anInterface8_3463 == null) method678(false, 27.toByte())
+            if ((aByte5581.toInt() and 0x10) == 0 && aArchiveFileConditionWrapper_5575!!.anInterface8_3463 == null) method678(false, 27.toByte())
             method691(124.toByte())
         }
     }
@@ -1014,10 +1014,10 @@ class Class64_Sub3 : Class64 {
             }
             if (Class69.method723(i, anInt5556, (-70).toByte())) {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x10).toByte()
-                class64_sub3_211_.aClass270_5575 = class64_sub3_213_!!.aClass270_5575
-                class64_sub3_211_.aClass270_5575!!.anInterface8_3463 = aClass270_5575!!.anInterface8_3463
-            } else if (!LinkedListIterator.method1238(i, anInt5556, -93)) class64_sub3_211_.aClass270_5575 = null
-            else class64_sub3_211_.aClass270_5575 = aClass270_5575
+                class64_sub3_211_.aArchiveFileConditionWrapper_5575 = class64_sub3_213_!!.aArchiveFileConditionWrapper_5575
+                class64_sub3_211_.aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = aArchiveFileConditionWrapper_5575!!.anInterface8_3463
+            } else if (!LinkedListIterator.method1238(i, anInt5556, -93)) class64_sub3_211_.aArchiveFileConditionWrapper_5575 = null
+            else class64_sub3_211_.aArchiveFileConditionWrapper_5575 = aArchiveFileConditionWrapper_5575
             if (SceneProjector.method1637(anInt5556, 32768, i)) {
                 if (class64_sub3_213_!!.aShortArray5601 == null || class64_sub3_213_.aShortArray5601!!.size < anInt5632) {
                     val i_230_ = anInt5632
@@ -1778,7 +1778,7 @@ class Class64_Sub3 : Class64 {
                 else aShortArray5601 = null
             }
             if (aShortArray5592 != null && !Class69.method724(anInt5648, anInt5556, 393216)) {
-                if ((aClass270_5575 != null && aClass270_5575!!.anInterface8_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anInterface2_1811) == null) aBoolean5555 = true
+                if ((aArchiveFileConditionWrapper_5575 != null && aArchiveFileConditionWrapper_5575!!.anInterface8_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anInterface2_1811) == null) aBoolean5555 = true
                 else {
                     aShortArray5566 = null
                     aShortArray5579 = aShortArray5566
@@ -2387,7 +2387,7 @@ class Class64_Sub3 : Class64 {
         if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
         if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
         aBoolean5527 = false
-        if (aClass270_5575 != null) aClass270_5575!!.anInterface8_3463 = null
+        if (aArchiveFileConditionWrapper_5575 != null) aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = null
         if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
     }
 
@@ -2949,7 +2949,7 @@ class Class64_Sub3 : Class64 {
             aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
             aHoverActionEntry_5563 = HoverActionEntry(null, 5126, 3, 0)
             aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
-            aClass270_5575 = Class270()
+            aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ')'))
         }
@@ -2971,7 +2971,7 @@ class Class64_Sub3 : Class64 {
                 if (IndexedFileCache.method1163(i_697_, 78.toByte(), i)) aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
                 if (method166(69.toByte(), i_697_, i)) aHoverActionEntry_5563 = HoverActionEntry(null, 5126, 3, 0)
                 if (HitsplatDefinition.method1193(i_697_, i, true)) aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
-                if (LinkedListIterator.method1238(i, i_697_, -31)) aClass270_5575 = Class270()
+                if (LinkedListIterator.method1238(i, i_697_, -31)) aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
                 val var_renderConfig: RenderConfig = var_ha_Sub2!!.aRenderConfig4579!!
                 anIntArray5528 = IntArray(modelDefinition!!.anInt1821 + 1)
                 val `is` = IntArray(modelDefinition.anInt1817)

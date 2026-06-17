@@ -349,7 +349,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                                 val i_35_ = (i_34_ - -(i_31_ * class357.aShort4409))
                                 val i_36_ = i_23_ shl Class362.anInt4459
                                 val i_37_ = i_25_ shl Class362.anInt4459
-                                val i_38_ = (Class270.anInt3465 + (i_26_ shl Class362.anInt4459))
+                                val i_38_ = (ArchiveFileConditionWrapper.anInt3465 + (i_26_ shl Class362.anInt4459))
                                 Class318_Sub1_Sub3_Sub4.aClass338Array10330!![Class69.anInt1200++] = (Class338(1, i_28_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, i_32_, i_34_, i_35_, i_33_, i_37_, i_38_, i_38_, i_37_))
                                 var i_39_ = i_27_
                                 while (i_28_ >= i_39_) {
@@ -386,7 +386,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                                 val i_50_ = (Class348_Sub1_Sub1.aTerrainTileArray8801!![if (!bool_24_) i_43_ else 1 + i_43_]!!.method3982((-86).toByte(), i_22_, 1 + i_42_))
                                 val i_51_ = (class357.aShort4398 * i_47_ + i_50_)
                                 val i_52_ = i_41_ shl Class362.anInt4459
-                                val i_53_ = ((i_42_ shl Class362.anInt4459) + Class270.anInt3465)
+                                val i_53_ = ((i_42_ shl Class362.anInt4459) + ArchiveFileConditionWrapper.anInt3465)
                                 val i_54_ = i_22_ shl Class362.anInt4459
                                 Class318_Sub1_Sub3_Sub4.aClass338Array10330!![Class69.anInt1200++] = (Class338(2, i_44_, i_52_, i_53_, i_53_, i_52_, i_48_, i_50_, i_51_, i_49_, i_54_ + class357.aShort4397, i_54_ + class357.aShort4397, class357.aShort4397 + i_54_, (i_54_ - -class357.aShort4397)))
                                 for (i_55_ in i_43_..i_44_) {
