@@ -4,7 +4,7 @@ import Class59_Sub2_Sub2.Companion.method574
 /* Class298 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class298 {
+object PixelBlender {
     var anInt3808: Int = 0
     var aIntRange_3809: IntRange? = IntRange(44, 6)
     var anInt3810: Int = 0
