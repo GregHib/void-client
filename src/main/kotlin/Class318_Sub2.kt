@@ -137,7 +137,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                         if (bool) {
                             var f = (Class141.anInt1974 - (class338.anIntArray4187!![0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
-                            if (!(f < Class11.anInt194.toFloat()) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338)) Class348_Sub42_Sub19.aClass338Array9700!![Class348_Sub42_Sub10.anInt9577++] = class338
+                            if (!(f < SceneRegionState.anInt194.toFloat()) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338)) Class348_Sub42_Sub19.aClass338Array9700!![Class348_Sub42_Sub10.anInt9577++] = class338
                         }
                     }
                 } else if (class338.aByte4192.toInt() == 2) {
@@ -161,7 +161,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                         if (bool) {
                             var f = (Class348_Sub40_Sub27.anInt9360 - (class338.anIntArray4184[0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
-                            if (!(f < Class11.anInt194.toFloat()) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338)) Class348_Sub42_Sub19.aClass338Array9700!![Class348_Sub42_Sub10.anInt9577++] = class338
+                            if (!(f < SceneRegionState.anInt194.toFloat()) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338)) Class348_Sub42_Sub19.aClass338Array9700!![Class348_Sub42_Sub10.anInt9577++] = class338
                         }
                     }
                 } else if (class338.aByte4192.toInt() == 16 || class338.aByte4192.toInt() == 8) {
@@ -173,7 +173,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                             if (f < 0.0f) f *= -1.0f
                             var f_28_ = (Class348_Sub40_Sub27.anInt9360 + -(class338.anIntArray4184[0])).toFloat()
                             if (f_28_ < 0.0f) f_28_ *= -1.0f
-                            if ((!(f < Class11.anInt194.toFloat()) || !(Class11.anInt194.toFloat() > f_28_)) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338)) Class348_Sub42_Sub19.aClass338Array9700!![Class348_Sub42_Sub10.anInt9577++] = class338
+                            if ((!(f < SceneRegionState.anInt194.toFloat()) || !(SceneRegionState.anInt194.toFloat() > f_28_)) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338)) Class348_Sub42_Sub19.aClass338Array9700!![Class348_Sub42_Sub10.anInt9577++] = class338
                         }
                     }
                 } else if (class338.aByte4192.toInt() == 4) {

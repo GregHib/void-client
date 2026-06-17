@@ -33,7 +33,7 @@ abstract class Class348_Sub45 : Class348() {
             Class354.anIntArrayArrayArray4356 = (Array<Array<IntArray?>?>(Class189.anInt2524) { Array<IntArray?>(1 + Class318_Sub7.anInt6451) { IntArray(1 + Class348_Sub41.anInt7054) } })
             anInt7104++
             Class348_Sub44.anInt7101 = 0
-            Class11.anInt194 = Class270.anInt3465
+            SceneRegionState.anInt194 = Class270.anInt3465
             Class318_Sub1_Sub3_Sub4.aClass338Array10330 = arrayOfNulls<Class338>(2000)
             OpenGlRenderer.anInt7714 = Class270.anInt3465
             Class50_Sub1.aBoolean5226 = false

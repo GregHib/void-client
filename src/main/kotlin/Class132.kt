@@ -38,7 +38,7 @@ object Class132 {
                 Class110.aBoolean1712 = false
                 Class14_Sub4.method254(-3, (-94).toByte())
                 Class225.anInt2955 = 1
-                Class11.anInt197 = 0
+                SceneRegionState.anInt197 = 0
                 Class318_Sub1_Sub1_Sub2.anInt9971 = 0
             }
         } catch (runtimeexception: RuntimeException) {

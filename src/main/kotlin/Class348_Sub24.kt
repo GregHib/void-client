@@ -452,8 +452,8 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 if (Class348_Sub49_Sub1.anInt9750 < -20) Class348_Sub42_Sub14.anInt9645 = 1
                                 if (OpenGlRenderNode.anInt10483 > 60) Class348_Sub42_Sub9_Sub1.anInt10443 = -2
                                 if (Class348_Sub49_Sub1.anInt9750 > 10) Class348_Sub42_Sub14.anInt9645 = -1
-                                Class11.anInt193++
-                                if (Class11.anInt193 > 50) {
+                                SceneRegionState.anInt193++
+                                if (SceneRegionState.anInt193 > 50) {
                                     IOException_Sub1.anInt88++
                                     val class348_sub47 = (method2148(Class239_Sub10.aClass351_5938, Class348_Sub23_Sub2.aClass77_9029, -125))
                                     Class348_Sub42_Sub14.method3243(i xor 0x2cc0.inv(), class348_sub47)

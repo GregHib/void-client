@@ -138,7 +138,7 @@ class Class88 {
                     val i_2_: Int
                     if (Class318_Sub1_Sub1_Sub2.anInt9971 != 0) i_2_ = 2000
                     else i_2_ = 250
-                    if (i_2_ < ++Class11.anInt197) {
+                    if (i_2_ < ++SceneRegionState.anInt197) {
                         if (Class348_Sub40_Sub8.aClass238_9165 != null) {
                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                             Class348_Sub40_Sub8.aClass238_9165 = null
@@ -152,7 +152,7 @@ class Class88 {
                         else Class3.aClass161_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         Class225.anInt2955 = 1
-                        Class11.anInt197 = 0
+                        SceneRegionState.anInt197 = 0
                     }
                     if (Class225.anInt2955 == 1) {
                         if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) Class130_Sub1.aClass144_5800 = (Class3.aClass161_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
@@ -276,7 +276,7 @@ class Class88 {
                                         if (i_11_ == 23 && Class318_Sub1_Sub1_Sub2.anInt9971 < 3) {
                                             Class225.anInt2955 = 1
                                             Class318_Sub1_Sub1_Sub2.anInt9971++
-                                            Class11.anInt197 = 0
+                                            SceneRegionState.anInt197 = 0
                                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                                             Class348_Sub40_Sub8.aClass238_9165 = null
                                         } else {
@@ -489,7 +489,7 @@ class Class88 {
                         if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285!!.method1259(0)
                         else Class3.aClass161_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
-                        Class11.anInt197 = 0
+                        SceneRegionState.anInt197 = 0
                         Class225.anInt2955 = 1
                     }
                 }

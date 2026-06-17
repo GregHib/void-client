@@ -3,7 +3,7 @@ import Class239_Sub16.Companion.method1791
 /* Class11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class11 {
+object SceneRegionState {
     @JvmField
     var anInt193: Int = 0
     @JvmField

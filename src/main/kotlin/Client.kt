@@ -15,7 +15,7 @@ import SoftwareSpriteRaster.Companion.method953
 import DualMaterialContainer.Companion.method999
 import LinkedNodeListIterator.Companion.method1004
 import GroundItemRenderState.method1013
-import Class11.method221
+import SceneRegionState.method221
 import Class110.Companion.method1030
 import Class110_Sub1.Companion.method1040
 import Class111.Companion.method1047
@@ -1322,8 +1322,8 @@ class Client : GameAppletFrame() {
             } else if (!method2354(Class8.aClass364_165, -1) && Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                 Class8.aClass364_165 = Class55_Sub1.aClass364_5271
             }
-            Class11.aClass231_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
-            if (Class11.aClass231_196 != Class288.aClass231_4953 && Class11.aClass231_196 != Class348_Sub40_Sub20.aClass231_9263 && Class68.aClass231_1189 != Class11.aClass231_196) Class11.aClass231_196 = Class68.aClass231_1189
+            SceneRegionState.aClass231_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
+            if (SceneRegionState.aClass231_196 != Class288.aClass231_4953 && SceneRegionState.aClass231_196 != Class348_Sub40_Sub20.aClass231_9263 && Class68.aClass231_1189 != SceneRegionState.aClass231_196) SceneRegionState.aClass231_196 = Class68.aClass231_1189
             try {
                 Class348_Sub33.anInt6967 = this.getParameter("lang")!!.toInt()
             } catch (exception: Exception) {
@@ -1398,7 +1398,7 @@ class Client : GameAppletFrame() {
                 OpenGlRenderer.anInt7666 = 480
             }
             Class79.aClient1367 = this
-            this.method95(Class92.anInt1524, 634, OpenGlRenderer.anInt7666, Class11.aClass231_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985, 50)
+            this.method95(Class92.anInt1524, 634, OpenGlRenderer.anInt7666, SceneRegionState.aClass231_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985, 50)
         }
     }
 
@@ -1534,8 +1534,8 @@ class Client : GameAppletFrame() {
             if (Class240.anInt4674 == 7 && Class225.anInt2955 == 0) {
                 if (Class348_Sub40_Sub8.aClass238_9165 == null) method3141(false, 11.toByte())
                 else {
-                    Class11.anInt193++
-                    if (Class11.anInt193 > 50) {
+                    SceneRegionState.anInt193++
+                    if (SceneRegionState.anInt193 > 50) {
                         IOException_Sub1.anInt88++
                         val class348_sub47 = method2148((Class239_Sub10.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -104)
                         method3243(-49, class348_sub47)
@@ -1978,11 +1978,11 @@ class Client : GameAppletFrame() {
                     Class348_Sub40_Sub35.aClass161_9443 = Class161()
                     Class348_Sub40_Sub35.aClass161_9443!!.anInt2143 = strings[2].toInt()
                     Class8.aClass364_165 = Class76.aClass364_1279
-                    if (strings[3] == "live") Class11.aClass231_196 = Class68.aClass231_1189
+                    if (strings[3] == "live") SceneRegionState.aClass231_196 = Class68.aClass231_1189
                     else if (strings[3] != "rc") {
-                        if (strings[3] == "wip") Class11.aClass231_196 = Class288.aClass231_4953
+                        if (strings[3] == "wip") SceneRegionState.aClass231_196 = Class288.aClass231_4953
                         else method518("modewhat", 41.toByte())
-                    } else Class11.aClass231_196 = Class348_Sub40_Sub20.aClass231_9263
+                    } else SceneRegionState.aClass231_196 = Class348_Sub40_Sub20.aClass231_9263
                     Class348_Sub33.anInt6967 = method315(103.toByte(), strings[4])
                     if (Class348_Sub33.anInt6967 == -1) {
                         if (strings[4] != "english") {
@@ -2014,7 +2014,7 @@ class Client : GameAppletFrame() {
                     Class14_Sub1.aString8605 = null
                     val var_client = Client()
                     Class79.aClient1367 = var_client
-                    var_client.method96(Class11.aClass231_196!!.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985), 23499, 768)
+                    var_client.method96(SceneRegionState.aClass231_196!!.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985), 23499, 768)
                     Class52.aFrame4904!!.setLocation(40, 40)
                 } catch (exception: Exception) {
                     method1242(null, exception, 15004)

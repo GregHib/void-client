@@ -89,7 +89,7 @@ class Class239_Sub18 : Class239 {
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.method3360((-69).toByte())
                     class348_sub47.method3326((-45).toByte())
                 }
-                Class11.anInt193 = 0
+                SceneRegionState.anInt193 = 0
                 Class81.anInt1433 += i_2_
             }
             if (i != 0) method1799(58)

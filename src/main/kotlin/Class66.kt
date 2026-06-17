@@ -1,6 +1,6 @@
 import GameAppletFrame.Companion.method94
 import ParticleEmitterNode.Companion.method217
-import Class11.method222
+import SceneRegionState.method222
 import Class130.Companion.method1129
 import Class135.Companion.method1148
 import Class14_Sub2.Companion.method243
@@ -2049,7 +2049,7 @@ object Class66 {
                 return
             }
         } else if (i >= 6700) {
-            if (i < 6800 && Class11.aClass231_196 == Class288.aClass231_4953) {
+            if (i < 6800 && SceneRegionState.aClass231_196 == Class288.aClass231_4953) {
                 if (i == 6700) {
                     var i_174_ = Class125.aClass356_4915!!.method3474(1)
                     if (RenderNode.anInt9721 != -1) i_174_++

@@ -950,7 +950,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub12.anInt9198 = 0
             GameAppletFrame.anInt5 = 0
             NativeRenderer.anInt7917 = 0
-            Class11.anInt195 = 0
+            SceneRegionState.anInt195 = 0
             Class318_Sub1_Sub3_Sub3.anInt10251 = 0
             Class295.anInt3757 = 0
             Class318_Sub1_Sub4_Sub2.anInt10108 = 0
