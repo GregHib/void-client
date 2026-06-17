@@ -36,7 +36,7 @@ class Class310_Sub1 internal constructor(class378: Class378, private val anInt63
         return anIDirect3DCubeTexture6330
     }
 
-    override fun method64(class209: Class209?, i: Int) {
+    override fun method64(class209: UnusedToStringStub?, i: Int) {
         super.method64(class209, i)
     }
 }

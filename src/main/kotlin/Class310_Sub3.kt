@@ -16,7 +16,7 @@ class Class310_Sub3 internal constructor(class378: Class378, class304: Class304,
         return anIDirect3DVolumeTexture6336
     }
 
-    override fun method64(class209: Class209?, i: Int) {
+    override fun method64(class209: UnusedToStringStub?, i: Int) {
         super.method64(class209, i)
     }
 

@@ -1759,7 +1759,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub5.anInt6620 = 0
             OpenGlRenderer.anInt7648 = 0
             Class364.anInt4467 = 0
-            Class209.anInt2716 = 0
+            UnusedToStringStub.anInt2716 = 0
             Class367_Sub11.anInt7412 = 0
             Class320.anInt3993 = 0
             Class348_Sub51.anInt7219 = 0

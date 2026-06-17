@@ -1697,7 +1697,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class209.aIntRange_2717 == Class348_Sub3.aIntRange_6584) {
+            if (UnusedToStringStub.aIntRange_2717 == Class348_Sub3.aIntRange_6584) {
                 Class91.method856(63.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true

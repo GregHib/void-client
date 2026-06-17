@@ -1,7 +1,7 @@
 /* Class209 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class209 {
+class UnusedToStringStub {
     override fun toString(): String {
         anInt2716++
         throw IllegalStateException()

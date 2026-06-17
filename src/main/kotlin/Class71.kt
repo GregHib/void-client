@@ -11,7 +11,7 @@ object Class71 {
     @JvmField
     var aBoolean1211: Boolean = false
     @JvmField
-    var aClass209_1212: Class209?
+    var aClass209_1212: UnusedToStringStub?
     @JvmField
     var aRectangleRegion_1213: RectangleRegion?
     @JvmField
@@ -93,7 +93,7 @@ object Class71 {
     init {
         aClass76_1210 = Class76(false)
         aClass76_1208 = aClass76_1210
-        aClass209_1212 = Class209()
+        aClass209_1212 = UnusedToStringStub()
         aRectangleRegion_1213 = RectangleRegion(11, 0, 1, 2)
         aBooleanArray1214 = BooleanArray(8)
     }

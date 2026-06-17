@@ -18,7 +18,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
     var aBoolean9792: Boolean = false
     private var anIDirect3D9793: IDirect3D? = null
     private var anIDirect3DVertexShader9794: IDirect3DVertexShader? = null
-    private var aClass209Array9795: Array<Class209?>?
+    private var aClass209Array9795: Array<UnusedToStringStub?>?
     private var aD3DLIGHT9796: D3DLIGHT? = null
     @JvmField
     var aBoolean9798: Boolean = false
@@ -377,7 +377,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             aBooleanArray9806 = BooleanArray(this.anInt8090)
             aBooleanArray9804 = BooleanArray(this.anInt8090)
             aBooleanArray9784 = BooleanArray(this.anInt8090)
-            aClass209Array9795 = arrayOfNulls<Class209>(this.anInt8090)
+            aClass209Array9795 = arrayOfNulls<UnusedToStringStub>(this.anInt8090)
             anIntArray9805 = IntArray(this.anInt8090)
             aBooleanArray9786 = BooleanArray(this.anInt8090)
             this.anIDirect3DDevice9810!!.BeginScene()
@@ -760,7 +760,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         private var anIntArray9790: IntArray? = intArrayOf(22, 23)
         private var aFloatArray9797: FloatArray? = FloatArray(16)
         private var anIntArray9809: IntArray? = intArrayOf(77, 80)
-        private fun method3952(class209: Class209?, i: Byte): Int {
+        private fun method3952(class209: UnusedToStringStub?, i: Byte): Int {
             if (Class71.aClass209_1212 == class209) return 2
             if (FrameBufferObject.aClass209_4874 == class209) return 1
             if (i <= 57) anIntArray9790 = null

@@ -49,7 +49,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
         anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(i, i_6_, 1, 0, method3958(22, this.aClass68_3895, this.aClass304_3896), 1))
     }
 
-    override fun method64(class209: Class209?, i: Int) {
+    override fun method64(class209: UnusedToStringStub?, i: Int) {
         super.method64(class209, i)
     }
 

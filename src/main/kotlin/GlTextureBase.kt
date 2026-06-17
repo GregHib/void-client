@@ -23,7 +23,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
     var anInt5093: Int = 0
     private var anInt5096 = 0
     private var aBoolean5099 = false
-    private var aClass209_5101: Class209? = Class71.aClass209_1212
+    private var aClass209_5101: UnusedToStringStub? = Class71.aClass209_1212
     override fun method63(i: Byte) {
         anInt5104++
         val i_0_ = this.aClass377_5082!!.method3877((-126).toByte())
@@ -233,7 +233,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         if (i_47_ >= -124) aBoolean5099 = false
     }
 
-    override fun method64(class209: Class209?, i: Int) {
+    override fun method64(class209: UnusedToStringStub?, i: Int) {
         anInt5086++
         if (i != -22095) this.aClass304_5084 = null
         if (class209 != aClass209_5101) {

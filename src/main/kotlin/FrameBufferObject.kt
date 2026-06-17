@@ -180,7 +180,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
         var anInt4869: Int = 0
         var anInt4870: Int = 0
         var anInt4871: Int = 0
-        var aClass209_4874: Class209?
+        var aClass209_4874: UnusedToStringStub?
         var anInt4876: Int = 0
         var anInt4877: Int = 0
         var anInt4878: Int = 0
@@ -295,11 +295,11 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
             anInt4890++
             if (Class74.aBoolean1236 && !method1296(true)) {
                 if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && Class267.anInt3428 != -1) {
-                    if (Class209.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, Class209.Companion.aClass348_Sub16_Sub3_2718, Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), Class59_Sub2_Sub1.aClass45_8667, false, 0, Class267.anInt3428)
+                    if (UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718, Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), Class59_Sub2_Sub1.aClass45_8667, false, 0, Class267.anInt3428)
                     else method2732(0, Class267.anInt3428, false, 124, Class59_Sub2_Sub1.aClass45_8667, Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
                 }
                 Class74.aBoolean1236 = false
-                Class209.Companion.aClass348_Sub16_Sub3_2718 = null
+                UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null
             } else if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && Class267.anInt3428 != -1 && !method1296(true)) {
                 Class318.anInt3973++
                 val class348_sub47 = method2148(OpenGlRenderer.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107)
@@ -310,7 +310,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
         }
 
         init {
-            aClass209_4874 = Class209()
+            aClass209_4874 = UnusedToStringStub()
             anInt4889 = 0
         }
     }

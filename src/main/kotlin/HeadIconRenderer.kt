@@ -71,7 +71,7 @@ class HeadIconRenderer {
                 method368(i, 18002, false, i_13_, Class59_Sub2_Sub1.aClass45_8667, 0, i_15_)
                 method3093(93)
             }
-            if (Class267.anInt3428 != i_13_) Class209.aClass348_Sub16_Sub3_2718 = null
+            if (Class267.anInt3428 != i_13_) UnusedToStringStub.aClass348_Sub16_Sub3_2718 = null
             Class267.anInt3428 = i_13_
         }
 

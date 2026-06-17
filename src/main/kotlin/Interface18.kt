@@ -4,5 +4,5 @@
 interface Interface18 {
     fun method63(i: Byte)
 
-    fun method64(class209: Class209?, i: Int)
+    fun method64(class209: UnusedToStringStub?, i: Int)
 }
