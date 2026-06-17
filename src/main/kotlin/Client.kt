@@ -408,7 +408,7 @@ import CharacterRenderState.Companion.method2780
 import FormantSynthFilter.Companion.method3450
 import FontMetaRef.Companion.method3457
 import RenderableEntry.Companion.method3458
-import Class353.Companion.method3462
+import TextureMipDescriptor.Companion.method3462
 import Class354.Companion.method3466
 import Class354.Companion.method3468
 import Class355.Companion.method3473

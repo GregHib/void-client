@@ -3591,7 +3591,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             }
                             var class105s = TimedRecordAccessor.aAbstractModelRendererArray7107
                             if (i_324_ != -1) {
-                                var abstractModelRendererS_326_ = ((Class353.aClass60_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
+                                var abstractModelRendererS_326_ = ((TextureMipDescriptor.aClass60_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
                                 if (abstractModelRendererS_326_ == null) {
                                     val spriteImages = SpriteImage.method1519(CameraRotationStub.aClass45_322!!, i_324_, 0)
                                     if (spriteImages != null) {
@@ -3601,7 +3601,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             abstractModelRendererS_326_[i_327_] = (FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[i_327_], true))
                                             i_327_++
                                         }
-                                        Class353.aClass60_4346!!.method582(abstractModelRendererS_326_, i_324_.toLong(), (-94).toByte())
+                                        TextureMipDescriptor.aClass60_4346!!.method582(abstractModelRendererS_326_, i_324_.toLong(), (-94).toByte())
                                     }
                                 }
                                 if (abstractModelRendererS_326_ != null && abstractModelRendererS_326_.size >= 2) class105s = abstractModelRendererS_326_

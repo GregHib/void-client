@@ -82,16 +82,16 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var anInt5516 = 0
     private var anIntArray5519: IntArray? = null
     private var aBufferToggleState_5520: BufferToggleState? = null
-    private var aClass353Array5524: Array<Class353?>? = null
+    private var aTextureMipDescriptorArray5524: Array<TextureMipDescriptor?>? = null
     private fun method659(i: Int) {
-        if (aClass353Array5524 != null) {
+        if (aTextureMipDescriptorArray5524 != null) {
             aHa_Sub3_5419!!.C(!aBoolean5428)
             aHa_Sub3_5419!!.method3866(false, true)
             aHa_Sub3_5419!!.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
             aHa_Sub3_5419!!.method3885(1, true, RenderListTextureNode.aClass70_9485)
             var i_0_ = 0
             while (anInt5406 > i_0_) {
-                val class353 = aClass353Array5524!![i_0_]!!
+                val class353 = aTextureMipDescriptorArray5524!![i_0_]!!
                 val class334 = aCameraOrModelTransformArray5442!![i_0_]!!
                 if (!class353.aBoolean4350 || !aHa_Sub3_5419!!.method3666()) {
                     val f = (0.3333333f * ((anIntArray5511!![class353.anInt4349]) - -(anIntArray5511!![class353.anInt4344]) + (anIntArray5511!![class353.anInt4339])).toFloat())
@@ -99,7 +99,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f_2_ = (0.3333333f * ((anIntArray5429!![class353.anInt4339]) + (anIntArray5429!![class353.anInt4344]) + (anIntArray5429!![class353.anInt4349])).toFloat())
                     val f_3_ = (f_2_ * ShortMatrixNode.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
                     val f_4_ = (BoundingBoxNode.aFloat6752 + (SceneEffectMarker.aFloat6430 * f_2_ + (TextureTileRenderer.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
-                    val f_5_ = WorldMapRenderer.aFloat4673 + (Class353.aFloat4338 * f_1_ + f * RenderQueueState.aFloat6523 + f_2_ * Renderer.aFloat4582)
+                    val f_5_ = WorldMapRenderer.aFloat4673 + (TextureMipDescriptor.aFloat4338 * f_1_ + f * RenderQueueState.aFloat6523 + f_2_ * Renderer.aFloat4582)
                     val f_6_ = ((1.0 / sqrt((f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_)).toDouble())).toFloat() * class353.anInt4347.toFloat())
                     val class101_sub2 = aHa_Sub3_5419!!.method3934(-96)
                     class101_sub2.method936(class334.anInt4151, 0, (class353.aShort4340 * class334.anInt4162) shr 7, (-(f_3_ * f_6_) + (class334.anInt4158.toFloat() + f_3_)), -(f_6_ * f_5_) + f_5_, (class334.anInt4154.toFloat() + f_4_ - f_4_ * f_6_), (class334.anInt4165 * class353.aShort4341) shr 7)
@@ -356,7 +356,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             Class55.aFloat1010 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5736) + ((class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5711)))
             val f_36_ = (class101_sub2_34_.aFloat5724 + ((class101_sub2_34_.aFloat5716 * class101_sub2.aFloat5724) + ((class101_sub2_34_.aFloat5736 * class101_sub2.aFloat5729) + (class101_sub2.aFloat5710 * (class101_sub2_34_.aFloat5691)))))
             SceneEffectMarker.aFloat6430 = ((class101_sub2_34_.aFloat5722 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5732))
-            Class353.aFloat4338 = ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5722) + (class101_sub2.aFloat5700 * class101_sub2_34_.aFloat5736) + (class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5716))
+            TextureMipDescriptor.aFloat4338 = ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5722) + (class101_sub2.aFloat5700 * class101_sub2_34_.aFloat5736) + (class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5716))
             var bool_37_ = false
             var f_38_ = 3.4028235E38f
             var f_39_ = -3.4028235E38f
@@ -408,7 +408,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 val f_59_ = ContactEntry.anIntArray9612!![i_56_].toFloat()
                 val f_60_ = (f_57_ * TextureTileRenderer.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + SceneEffectMarker.aFloat6430 * f_58_ + f_35_)
                 val f_61_ = (Class55.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntity.aFloat10199 + f_58_ * ShortMatrixNode.aFloat9516 + f)
-                var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (Class353.aFloat4338 * f_59_ + RenderQueueState.aFloat6523 * f_57_))
+                var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (TextureMipDescriptor.aFloat4338 * f_59_ + RenderQueueState.aFloat6523 * f_57_))
                 if (f_62_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                     if (i_31_ > 0) f_62_ = i_31_.toFloat()
                     val f_63_ = (f_61_ * i_42_.toFloat() / f_62_ + aHa_Sub3_5419!!.anInt8094.toFloat())
@@ -430,7 +430,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f_66_ = anIntArray5429!![i_65_].toFloat()
                     val f_67_ = anIntArray5519!![i_65_].toFloat()
                     val f_68_ = anIntArray5511!![i_65_].toFloat()
-                    var f_69_ = (Renderer.aFloat4582 * f_66_ + (f_68_ * RenderQueueState.aFloat6523 + Class353.aFloat4338 * f_67_) + f_36_)
+                    var f_69_ = (Renderer.aFloat4582 * f_66_ + (f_68_ * RenderQueueState.aFloat6523 + TextureMipDescriptor.aFloat4338 * f_67_) + f_36_)
                     val f_70_ = f + (DynamicSceneObjectEntity.aFloat10199 * f_67_ + Class55.aFloat1010 * f_68_ + f_66_ * ShortMatrixNode.aFloat9516)
                     val f_71_ = (SceneEffectMarker.aFloat6430 * f_66_ + (f_68_ * TextureTileRenderer.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
                     if (f_69_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
@@ -484,7 +484,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         anInt5500++
         if (aBoolean5402) {
             aBoolean5402 = false
-            if (aModelFacePriorityNodeArray5457 == null && aWidgetRedrawRegionArray5474 == null && aClass353Array5524 == null) {
+            if (aModelFacePriorityNodeArray5457 == null && aWidgetRedrawRegionArray5474 == null && aTextureMipDescriptorArray5524 == null) {
                 if (anIntArray5511 != null && !VarpStore.method1317(anInt5472, (-91).toByte(), anInt5463)) {
                     if (aBufferToggleState_5520 == null || aBufferToggleState_5520!!.method2197((-62).toByte())) {
                         if (!aBoolean5477) method675(0)
@@ -703,10 +703,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 aByteArray5515!![i_108_] = i_109_.toByte()
                 i_108_++
             }
-            if (aClass353Array5524 != null) {
+            if (aTextureMipDescriptorArray5524 != null) {
                 var i_110_ = 0
                 while (anInt5406 > i_110_) {
-                    val class353 = aClass353Array5524!![i_110_]!!
+                    val class353 = aTextureMipDescriptorArray5524!![i_110_]!!
                     val class334 = aCameraOrModelTransformArray5442!![i_110_]!!
                     class334.anInt4156 = (class334.anInt4156 and 0xffffff or (255 - ((aByteArray5515!![class353.anInt4342]).toInt() and 0xff) shl 24))
                     i_110_++
@@ -729,9 +729,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 else if (i_115_ > 127) i_115_ = 127
                 aShortArray5486!![i_111_] = (BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(i_114_ shl 7, i_113_ shl 10), i_115_)).toShort()
             }
-            if (aClass353Array5524 != null) {
+            if (aTextureMipDescriptorArray5524 != null) {
                 for (i_116_ in 0..<anInt5406) {
-                    val class353 = aClass353Array5524!![i_116_]!!
+                    val class353 = aTextureMipDescriptorArray5524!![i_116_]!!
                     val class334 = aCameraOrModelTransformArray5442!![i_116_]!!
                     class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class334.anInt4156))
                 }
@@ -1167,7 +1167,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             class64_sub2_154_.aShortArray5439 = aShortArray5439
             if (i_156_ != 26794) return null
             class64_sub2_154_.anIntArray5473 = anIntArray5473
-            class64_sub2_154_.aClass353Array5524 = aClass353Array5524
+            class64_sub2_154_.aTextureMipDescriptorArray5524 = aTextureMipDescriptorArray5524
             class64_sub2_154_.anIntArrayArray5413 = anIntArrayArray5413
             class64_sub2_154_.anIntArray5415 = anIntArray5415
             class64_sub2_154_.aModelFacePriorityNodeArray5457 = aModelFacePriorityNodeArray5457
@@ -1247,9 +1247,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 val class101_sub2_180_ = abstractCameraTransform as FloatCameraTransform
                 if (!aBoolean5477) method675(0)
                 WorldMapRenderer.aFloat4673 = (class101_sub2.aFloat5724 + ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5691) + (class101_sub2_180_.aFloat5729 * class101_sub2.aFloat5736) + (class101_sub2_180_.aFloat5724 * class101_sub2.aFloat5716)))
-                Class353.aFloat4338 = ((class101_sub2.aFloat5691 * class101_sub2_180_.aFloat5722) + (class101_sub2.aFloat5736 * class101_sub2_180_.aFloat5700) + (class101_sub2.aFloat5716 * class101_sub2_180_.aFloat5691))
-                val f = (WorldMapRenderer.aFloat4673 + anInt5461.toFloat() * Class353.aFloat4338)
-                val f_181_ = (Class353.aFloat4338 * anInt5509.toFloat() + WorldMapRenderer.aFloat4673)
+                TextureMipDescriptor.aFloat4338 = ((class101_sub2.aFloat5691 * class101_sub2_180_.aFloat5722) + (class101_sub2.aFloat5736 * class101_sub2_180_.aFloat5700) + (class101_sub2.aFloat5716 * class101_sub2_180_.aFloat5691))
+                val f = (WorldMapRenderer.aFloat4673 + anInt5461.toFloat() * TextureMipDescriptor.aFloat4338)
+                val f_181_ = (TextureMipDescriptor.aFloat4338 * anInt5509.toFloat() + WorldMapRenderer.aFloat4673)
                 val f_182_: Float
                 val f_183_: Float
                 if (f_181_ < f) {
@@ -1288,7 +1288,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             f_191_ = (aHa_Sub3_5419!!.anInt8134.toFloat() * (f_188_ - anInt5510.toFloat()))
                         }
                         if (!(f_191_ / i.toFloat() >= aHa_Sub3_5419!!.aFloat8185) && !(f_190_ / i.toFloat() <= aHa_Sub3_5419!!.aFloat8103)) {
-                            if (class318_sub3 != null || aClass353Array5524 != null) {
+                            if (class318_sub3 != null || aTextureMipDescriptorArray5524 != null) {
                                 Class55.aFloat1010 = (((class101_sub2.aFloat5700) * (class101_sub2_180_.aFloat5708)) + ((class101_sub2.aFloat5711) * class101_sub2_180_.aFloat5711) + ((class101_sub2.aFloat5704) * class101_sub2_180_.aFloat5736))
                                 ShortMatrixNode.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2_180_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5704)))
                                 SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
@@ -1301,14 +1301,14 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 val i_193_ = anInt5418 + anInt5443 shr 1
                                 val i_194_ = (ParticleProcessor.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
                                 val i_195_ = (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (SceneEffectMarker.aFloat6430 * i_193_.toFloat())).toInt()
-                                val i_196_ = ((anInt5461.toFloat() * Class353.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
+                                val i_196_ = ((anInt5461.toFloat() * TextureMipDescriptor.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
                                 val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_193_.toFloat())).toInt()
                                 val i_198_ = ((SceneEffectMarker.aFloat6430 * i_193_.toFloat()) + (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
                                 class318_sub3.anInt6402 = ((i_195_ * aHa_Sub3_5419!!.anInt8134 / i) + aHa_Sub3_5419!!.anInt8130)
                                 class318_sub3.anInt6405 = (aHa_Sub3_5419!!.anInt8094 - -(i_194_ * (aHa_Sub3_5419!!.anInt8129) / i))
                                 class318_sub3.anInt6404 = (aHa_Sub3_5419!!.anInt8130 - -(aHa_Sub3_5419!!.anInt8134 * i_198_ / i))
                                 class318_sub3.anInt6406 = ((i_197_ * aHa_Sub3_5419!!.anInt8129 / i) + aHa_Sub3_5419!!.anInt8094)
-                                val i_199_ = (Renderer.aFloat4582 * i_193_.toFloat() + ((anInt5509.toFloat() * Class353.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673))).toInt()
+                                val i_199_ = (Renderer.aFloat4582 * i_193_.toFloat() + ((anInt5509.toFloat() * TextureMipDescriptor.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673))).toInt()
                                 if (i_196_ >= aHa_Sub3_5419!!.anInt8095 || (aHa_Sub3_5419!!.anInt8095 <= i_199_)) {
                                     class318_sub3.anInt6403 = (aHa_Sub3_5419!!.anInt8094 + (((anInt5510 + i_194_) * (aHa_Sub3_5419!!.anInt8129) / i) + -class318_sub3.anInt6405))
                                     class318_sub3.aBoolean6401 = true
@@ -1603,10 +1603,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         }
                     }
                     if (bool_276_) {
-                        if (aClass353Array5524 != null) {
+                        if (aTextureMipDescriptorArray5524 != null) {
                             var i_283_ = 0
                             while (anInt5406 > i_283_) {
-                                val class353 = aClass353Array5524!![i_283_]!!
+                                val class353 = aTextureMipDescriptorArray5524!![i_283_]!!
                                 val class334 = aCameraOrModelTransformArray5442!![i_283_]!!
                                 class334.anInt4156 = ((0xffffff and class334.anInt4156) or (255 + -(0xff and (aByteArray5515!![(class353.anInt4342)]).toInt()) shl 24))
                                 i_283_++
@@ -1645,10 +1645,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         i_285_++
                     }
                     if (bool_284_) {
-                        if (aClass353Array5524 != null) {
+                        if (aTextureMipDescriptorArray5524 != null) {
                             var i_294_ = 0
                             while (anInt5406 > i_294_) {
-                                val class353 = aClass353Array5524!![i_294_]!!
+                                val class353 = aTextureMipDescriptorArray5524!![i_294_]!!
                                 val class334 = aCameraOrModelTransformArray5442!![i_294_]!!
                                 class334.anInt4156 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5486!![(class353.anInt4342)]).toInt() and 0xffff]) or (0xffffff.inv() and class334.anInt4156))
                                 i_294_++
@@ -1721,10 +1721,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 val class101_sub2 = aHa_Sub3_5419!!.aClass101_Sub2_8080
                 val class101_sub2_307_ = abstractCameraTransform as FloatCameraTransform
                 if (!aBoolean5477) method675(0)
-                Class353.aFloat4338 = ((class101_sub2.aFloat5736 * class101_sub2_307_.aFloat5700) + (class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5722) + (class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5716))
+                TextureMipDescriptor.aFloat4338 = ((class101_sub2.aFloat5736 * class101_sub2_307_.aFloat5700) + (class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5722) + (class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5716))
                 WorldMapRenderer.aFloat4673 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5710) + (class101_sub2_307_.aFloat5729 * class101_sub2.aFloat5736)) + class101_sub2.aFloat5724)
-                val f = (Class353.aFloat4338 * anInt5461.toFloat() + WorldMapRenderer.aFloat4673)
-                val f_308_ = (anInt5509.toFloat() * Class353.aFloat4338 + WorldMapRenderer.aFloat4673)
+                val f = (TextureMipDescriptor.aFloat4338 * anInt5461.toFloat() + WorldMapRenderer.aFloat4673)
+                val f_308_ = (anInt5509.toFloat() * TextureMipDescriptor.aFloat4338 + WorldMapRenderer.aFloat4673)
                 val f_309_: Float
                 val f_310_: Float
                 if (f > f_308_) {
@@ -1763,7 +1763,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             f_318_ = ((f_315_ - anInt5510.toFloat()) * (aHa_Sub3_5419!!.anInt8134).toFloat())
                         }
                         if (!(aHa_Sub3_5419!!.aFloat8185 <= f_318_ / f_309_) && !(f_317_ / f_309_ <= aHa_Sub3_5419!!.aFloat8103)) {
-                            if (class318_sub3 != null || aClass353Array5524 != null) {
+                            if (class318_sub3 != null || aTextureMipDescriptorArray5524 != null) {
                                 RenderQueueState.aFloat6523 = (((class101_sub2.aFloat5716) * (class101_sub2_307_.aFloat5736)) + ((class101_sub2_307_.aFloat5711 * (class101_sub2.aFloat5736)) + ((class101_sub2.aFloat5691) * (class101_sub2_307_.aFloat5708))))
                                 SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5716))
                                 Class55.aFloat1010 = (((class101_sub2.aFloat5704) * (class101_sub2_307_.aFloat5736)) + (((class101_sub2.aFloat5700) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5711))))
@@ -1778,7 +1778,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 val i_321_ = anInt5418 + anInt5443 shr 1
                                 val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_321_.toFloat())).toInt()
                                 val i_323_ = ((SceneEffectMarker.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * TextureTileRenderer.aFloat6835) + BoundingBoxNode.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
-                                val i_324_ = (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523) + (anInt5461.toFloat() * Class353.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
+                                val i_324_ = (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523) + (anInt5461.toFloat() * TextureMipDescriptor.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_324_) bool = true
                                 else {
                                     class318_sub3.anInt6402 = (aHa_Sub3_5419!!.anInt8130 - -(i_323_ * (aHa_Sub3_5419!!.anInt8134) / i_324_))
@@ -1786,7 +1786,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 }
                                 val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
                                 val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (BoundingBoxNode.aFloat6752 + (i_320_.toFloat() * (TextureTileRenderer.aFloat6835))) + (i_321_.toFloat() * SceneEffectMarker.aFloat6430)).toInt()
-                                val i_327_ = ((anInt5509.toFloat() * Class353.aFloat4338) + (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
+                                val i_327_ = ((anInt5509.toFloat() * TextureMipDescriptor.aFloat4338) + (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_327_) bool = true
                                 else {
                                     class318_sub3.anInt6406 = (aHa_Sub3_5419!!.anInt8094 + (i_325_ * (aHa_Sub3_5419!!.anInt8129) / i_327_))
@@ -1947,7 +1947,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 aModelFacePriorityNodeArray5457 = modelDefinition.aModelFacePriorityNodeArray1846
                 if (modelDefinition.aRectangleBoundsArray1832 != null) {
                     anInt5406 = modelDefinition.aRectangleBoundsArray1832!!.size
-                    aClass353Array5524 = arrayOfNulls<Class353>(anInt5406)
+                    aTextureMipDescriptorArray5524 = arrayOfNulls<TextureMipDescriptor>(anInt5406)
                     aCameraOrModelTransformArray5442 = arrayOfNulls<CameraOrModelTransform>(anInt5406)
                     var i_350_ = 0
                     while (anInt5406 > i_350_) {
@@ -1963,7 +1963,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         if (i_351_ == -1) throw RuntimeException()
                         var i_353_ = (0xffffff and (ParticleEmitterNode.anIntArray179!![((modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff)]))
                         i_353_ = (i_353_ or (-(if (modelDefinition.aByteArray1834 == null) 0 else (modelDefinition.aByteArray1834!![(class162.anInt2155)])) + 255 shl 24))
-                        aClass353Array5524!![i_350_] = Class353(i_351_, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
+                        aTextureMipDescriptorArray5524!![i_350_] = TextureMipDescriptor(i_351_, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
                         aCameraOrModelTransformArray5442!![i_350_] = CameraOrModelTransform(i_353_)
                         i_350_++
                     }
@@ -2605,9 +2605,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             if (i == aShortArray5486!![i_529_]) aShortArray5486!![i_529_] = i_528_
             i_529_++
         }
-        if (aClass353Array5524 != null) {
+        if (aTextureMipDescriptorArray5524 != null) {
             for (i_530_ in 0..<anInt5406) {
-                val class353 = aClass353Array5524!![i_530_]!!
+                val class353 = aTextureMipDescriptorArray5524!![i_530_]!!
                 val class334 = aCameraOrModelTransformArray5442!![i_530_]!!
                 class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![0xffff and aShortArray5486!![(class353.anInt4342)].toInt()]) and 0xffffff or (class334.anInt4156 and 0xffffff.inv()))
             }
@@ -2730,10 +2730,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             aShortArray5486!![i_563_] = (BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(i_565_ shl 10, i_566_ shl 7), i_567_)).toShort()
             i_563_++
         }
-        if (aClass353Array5524 != null) {
+        if (aTextureMipDescriptorArray5524 != null) {
             var i_568_ = 0
             while (anInt5406 > i_568_) {
-                val class353 = aClass353Array5524!![i_568_]!!
+                val class353 = aTextureMipDescriptorArray5524!![i_568_]!!
                 val class334 = aCameraOrModelTransformArray5442!![i_568_]!!
                 class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff))
                 i_568_++
@@ -2789,9 +2789,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             i_574_ = class12.aByte201
         }
         if ((i_575_ != i_573_) or (i_572_ != i_574_)) {
-            if (aClass353Array5524 != null) {
+            if (aTextureMipDescriptorArray5524 != null) {
                 for (i_576_ in 0..<anInt5406) {
-                    val class353 = aClass353Array5524!![i_576_]!!
+                    val class353 = aTextureMipDescriptorArray5524!![i_576_]!!
                     val class334 = aCameraOrModelTransformArray5442!![i_576_]!!
                     class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342]).toInt() and 0xffff]) and 0xffffff))
                 }
@@ -3226,9 +3226,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         i_734_++
                     }
                     if (bool_733_) {
-                        if (aClass353Array5524 != null) {
+                        if (aTextureMipDescriptorArray5524 != null) {
                             for (i_740_ in 0..<anInt5406) {
-                                val class353 = aClass353Array5524!![i_740_]!!
+                                val class353 = aTextureMipDescriptorArray5524!![i_740_]!!
                                 val class334 = aCameraOrModelTransformArray5442!![i_740_]!!
                                 class334.anInt4156 = ((-(0xff and (aByteArray5515!![(class353.anInt4342)]).toInt()) + 255 shl 24) or (class334.anInt4156 and 0xffffff))
                             }
@@ -3270,10 +3270,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         i_742_++
                     }
                     if (bool_741_) {
-                        if (aClass353Array5524 != null) {
+                        if (aTextureMipDescriptorArray5524 != null) {
                             var i_751_ = 0
                             while (anInt5406 > i_751_) {
-                                val class353 = aClass353Array5524!![i_751_]!!
+                                val class353 = aTextureMipDescriptorArray5524!![i_751_]!!
                                 val class334 = aCameraOrModelTransformArray5442!![i_751_]!!
                                 class334.anInt4156 = ((class334.anInt4156 and 0xffffff.inv()) or (0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5486!![(class353.anInt4342)]).toInt()])))
                                 i_751_++

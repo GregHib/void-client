@@ -969,7 +969,7 @@ class Class46 {
             method3102(22385)
             Class44.method386((-106).toByte())
             AudioResampler.method1271(0)
-            Class353.aClass60_4346!!.method587(-108)
+            TextureMipDescriptor.aClass60_4346!!.method587(-108)
             MaterialTypeMarker.aClass60_6517!!.method587(-109)
             TerrainTileShape.aClass60_8807!!.method587(-113)
             SkeletalAnimFrameLoader.aClass60_463!!.method587(-83)
