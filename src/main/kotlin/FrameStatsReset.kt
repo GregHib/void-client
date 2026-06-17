@@ -1803,7 +1803,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LongHashTable.anInt450 = 0
             GroundDecorSceneEntity.anInt9994 = 0
             SimpleToggleOptionState.anInt5885 = 0
-            Class35.anInt484 = 0
+            SoundEngineInitializer.anInt484 = 0
             TextureQualityOptionState.anInt5996 = 0
             MapSceneIconDef.anInt2858 = 0
             OpenGlRenderer.anInt7609 = 0
@@ -2421,7 +2421,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CompositeNpcModelBuilder.anInt2096 = 0
             AwtKeyboardListener.anInt6525 = 0
             Class58.anInt1062 = 0
-            Class35.anInt485 = 0
+            SoundEngineInitializer.anInt485 = 0
             ConfigFlagUtil.anInt3230 = 0
             InterfaceComponentGroup.anInt9630 = 0
             AbstractFrameBufferSurface.anInt6919 = 0
@@ -4061,7 +4061,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RangeThresholdTextureNode.anInt9108 = 0
             LongHashTable.anInt449 = 0
             Class60.anInt1103 = 0
-            Class35.anInt483 = 0
+            SoundEngineInitializer.anInt483 = 0
             ShortMatrixNode.anInt9514 = 0
             FloatCameraTransform.anInt5731 = 0
             WallSceneEntity.anInt9943 = 0

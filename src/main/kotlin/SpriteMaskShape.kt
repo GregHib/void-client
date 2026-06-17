@@ -637,7 +637,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                         }
                         if (i_76_ == 1001) {
                             Class93.anInt1534 = i_72_
-                            Class35.anInt484++
+                            SoundEngineInitializer.anInt484++
                             FogOptionState.anInt6048 = 2
                             LinkedListNode.anInt4292 = 0
                             SpriteArchiveLoader.anInt385 = i_73_

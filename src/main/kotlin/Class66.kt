@@ -46,7 +46,7 @@ import NormalMapTextureNode.Companion.method3141
 import EdgeDetectTextureNode.Companion.method3072
 import TimedRecordAccessorB.Companion.method3316
 import CharacterRenderState.Companion.method2780
-import Class35.method352
+import SoundEngineInitializer.method352
 import Class367_Sub10.Companion.method3553
 import Class367_Sub2.Companion.method3538
 import Class367_Sub4.Companion.method3544

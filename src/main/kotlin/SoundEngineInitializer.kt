@@ -3,7 +3,7 @@ import IOException_Sub1.Companion.method131
 /* Class35 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class35 {
+object SoundEngineInitializer {
     @JvmField
     var anInt483: Int = 0
     @JvmField
