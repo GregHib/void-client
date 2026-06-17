@@ -545,7 +545,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i_76_ == 5) {
                             Class348.anInt4292 = 0
-                            Class15.anInt226++
+                            CharCountUtil.anInt226++
                             Class26.anInt385 = i_73_
                             Class239_Sub20.anInt6048 = 2
                             Class93.anInt1534 = i_72_

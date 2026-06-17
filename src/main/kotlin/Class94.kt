@@ -15,7 +15,7 @@ object Class94 {
     fun method865(i: Int, i_0_: Int) {
         anInt1536++
         if (i != -8186) method866(-99)
-        Class15.aClass60_225!!.method578(2, i_0_)
+        CharCountUtil.aClass60_225!!.method578(2, i_0_)
     }
 
     @JvmStatic

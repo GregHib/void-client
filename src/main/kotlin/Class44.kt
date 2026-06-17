@@ -88,7 +88,7 @@ object Class44 {
     fun method386(i: Byte) {
         anInt621++
         if (i.toInt() != -106) method386(21.toByte())
-        Class15.aClass60_225!!.method587(i + 9)
+        CharCountUtil.aClass60_225!!.method587(i + 9)
     }
 
     @JvmStatic

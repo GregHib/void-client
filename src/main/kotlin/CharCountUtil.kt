@@ -1,7 +1,7 @@
 /* Class15 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class15 {
+object CharCountUtil {
     @JvmField
     var aClass60_225: Class60? = Class60(4)
     @JvmField

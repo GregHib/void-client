@@ -327,7 +327,7 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
         @JvmStatic
         fun method3113(c: Char, bool: Boolean, string: String): Array<String?> {
             anInt9315++
-            val i = Class15.method257(4, string, c)
+            val i = CharCountUtil.method257(4, string, c)
             val strings = arrayOfNulls<String>(i - -1)
             var i_37_ = 0
             var i_38_ = 0

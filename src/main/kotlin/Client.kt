@@ -53,7 +53,7 @@ import Gl2dTexture.Companion.method242
 import GlCubeMapTexture.Companion.method243
 import Gl3dTexture.Companion.method247
 import GlRectangleTexture.Companion.method251
-import Class15.method255
+import CharCountUtil.method255
 import Class150.Companion.method1208
 import Class151.Companion.method1209
 import Class154.Companion.method1235

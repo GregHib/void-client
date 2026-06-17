@@ -739,7 +739,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class15.aIntRange_229 == Class348_Sub3.aIntRange_6584) {
+            if (CharCountUtil.aIntRange_229 == Class348_Sub3.aIntRange_6584) {
                 method128(Class286_Sub1.aClass74_6201, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true

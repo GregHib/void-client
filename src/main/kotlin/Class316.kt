@@ -126,7 +126,7 @@ class Class316 internal constructor(`is`: IntArray) {
 
         @JvmStatic
         fun method2368(i: Int) {
-            Class15.aClass60_225!!.method590(0)
+            CharCountUtil.aClass60_225!!.method590(0)
             anInt3965++
             if (i != -1) aClass348_Sub51_3959 = null
         }
