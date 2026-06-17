@@ -2930,7 +2930,7 @@ object Class66 {
                     class46.anInt756 = i_272_
                     Class251.method1916(-9343, class46)
                 }
-                if (class46.anInt704 == -1) Class203.method1477(class46.anInt830, 14)
+                if (class46.anInt704 == -1) ProjectileSpawner.method1477(class46.anInt830, 14)
                 return
             }
             if (i == 1106) {

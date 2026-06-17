@@ -165,7 +165,7 @@ class Class88 {
                         Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982((((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
                         FrameStatsReset.aLinkedQueueNode_5800 = null
                         method2739(0)
-                        val class348_sub47 = Class203.method1478(true)
+                        val class348_sub47 = ProjectileSpawner.method1478(true)
                         class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeByte(false, ScriptOpcodeHolder.aClass29_2339!!.anInt400)
                         Class348_Sub42_Sub14.method3243(9, class348_sub47)
                         method1802(0)
@@ -201,7 +201,7 @@ class Class88 {
                         class348_sub49.writeLong(OutputStream_Sub2.aLong108, (-112).toByte())
                         class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (-76).toByte(), (Class318_Sub1_Sub4.aBigInteger8762))
                         method2739(0)
-                        val class348_sub47 = Class203.method1478(true)
+                        val class348_sub47 = ProjectileSpawner.method1478(true)
                         val class348_sub49_sub2 = (class348_sub47!!.aClass348_Sub49_Sub2_7116)!!
                         if (Class239_Sub12.anInt5969 == 2) {
                             if (Class240.anInt4674 != 13) class348_sub49_sub2.writeByte(false, ScriptOpcodeHolder.aClass29_2342!!.anInt400)
@@ -297,7 +297,7 @@ class Class88 {
                     }
                     if (Class225.anInt2955 == 6) {
                         method2739(0)
-                        val class348_sub47 = Class203.method1478(true)
+                        val class348_sub47 = ProjectileSpawner.method1478(true)
                         val class348_sub49_sub2 = (class348_sub47!!.aClass348_Sub49_Sub2_7116)!!
                         class348_sub49_sub2.method3416(-18, Class348_Sub23_Sub2.aClass77_9029!!)
                         class348_sub49_sub2.method3408((ScriptOpcodeHolder.aClass29_2351!!.anInt400), 18676)

@@ -139,7 +139,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         Class348_Sub40_Sub16.aBoolean9229 = true
         SizeBoundedSoftCache.aBoolean2329 = true
         Class49.aBoolean4726 = true
-        Class203.aBoolean2674 = false
+        ProjectileSpawner.aBoolean2674 = false
         Class348_Sub12.aLong6748 = Class62.method599(-106)
     }
 
@@ -154,7 +154,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             Class49.aBoolean4726 = true
             if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
                 val rectangle = graphics?.getClipBounds()
-                if (rectangle == null || (rectangle.width >= Class272.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) Class203.aBoolean2674 = true
+                if (rectangle == null || (rectangle.width >= Class272.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) ProjectileSpawner.aBoolean2674 = true
             }
         }
     }

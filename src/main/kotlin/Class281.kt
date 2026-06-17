@@ -1,4 +1,4 @@
-import Class203.method1478
+import ProjectileSpawner.method1478
 
 /* Class281 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

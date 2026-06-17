@@ -5,7 +5,7 @@ import kotlin.concurrent.Volatile
 /* Class203 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class203 {
+object ProjectileSpawner {
     var anInt2672: Int = 0
     var anInt2673: Int = 0
 

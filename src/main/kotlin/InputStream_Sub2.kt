@@ -183,7 +183,7 @@ class InputStream_Sub2 : InputStream() {
                             class348_sub34 = (class348_sub37.aClass262_6998.method1990(49.toByte()) as Class348_Sub34?)
                         }
                         if (class348_sub37.aClass262_6998.method2002(18.toByte())) class348_sub37.method2715(62.toByte())
-                        if (i_73_ >= 0 && i_71_ >= 0 && Class367_Sub4.anInt7319 > i_73_ && Class348_Sub40_Sub3.anInt9109 > i_71_) Class203.method1479(i_71_, (-125).toByte(), i_73_, Class348_Sub40_Sub12.anInt9200)
+                        if (i_73_ >= 0 && i_71_ >= 0 && Class367_Sub4.anInt7319 > i_73_ && Class348_Sub40_Sub3.anInt9109 > i_71_) ProjectileSpawner.method1479(i_71_, (-125).toByte(), i_73_, Class348_Sub40_Sub12.anInt9200)
                     }
                 } else if (Class59_Sub1_Sub2.aClass74_8662 == class74) {
                     val i_75_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
@@ -196,7 +196,7 @@ class InputStream_Sub2 : InputStream() {
                     val bool = (i_80_ >= 0 && i_78_ >= 0 && Class367_Sub4.anInt7319 > i_80_ && Class348_Sub40_Sub3.anInt9109 > i_78_)
                     if (bool || Class282.method2112(124, Class312.anInt3931)) {
                         Class352.method3459(Class348_Sub34(i_76_, i_75_), Class348_Sub40_Sub12.anInt9200, i_79_, i_81_, -2)
-                        if (bool) Class203.method1479(i_78_, (-124).toByte(), i_80_, Class348_Sub40_Sub12.anInt9200)
+                        if (bool) ProjectileSpawner.method1479(i_78_, (-124).toByte(), i_80_, Class348_Sub40_Sub12.anInt9200)
                     }
                 } else if (class74 == Class374.aClass74_4537) {
                     val i_82_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(83.toByte())
@@ -231,7 +231,7 @@ class InputStream_Sub2 : InputStream() {
                                     }
                                     class348_sub34 = (class348_sub37.aClass262_6998.method1990(34.toByte()) as Class348_Sub34?)
                                 }
-                                if (i_92_ >= 0 && i_90_ >= 0 && (i_92_ < Class367_Sub4.anInt7319) && (Class348_Sub40_Sub3.anInt9109 > i_90_)) Class203.method1479(i_90_, (-125).toByte(), i_92_, (Class348_Sub40_Sub12.anInt9200))
+                                if (i_92_ >= 0 && i_90_ >= 0 && (i_92_ < Class367_Sub4.anInt7319) && (Class348_Sub40_Sub3.anInt9109 > i_90_)) ProjectileSpawner.method1479(i_90_, (-125).toByte(), i_92_, (Class348_Sub40_Sub12.anInt9200))
                             }
                         }
                     } else if (class74 == Class327.aClass74_4098) {
@@ -247,7 +247,7 @@ class InputStream_Sub2 : InputStream() {
                             val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < Class367_Sub4.anInt7319) && (i_99_ < Class348_Sub40_Sub3.anInt9109))
                             if (bool || Class282.method2112(122, Class312.anInt3931)) {
                                 Class352.method3459(Class348_Sub34(i_103_, i_97_), Class348_Sub40_Sub12.anInt9200, i_100_, i_102_, i + -10)
-                                if (bool) Class203.method1479(i_99_, (-120).toByte(), i_101_, (Class348_Sub40_Sub12.anInt9200))
+                                if (bool) ProjectileSpawner.method1479(i_99_, (-120).toByte(), i_101_, (Class348_Sub40_Sub12.anInt9200))
                             }
                         }
                     } else if (class74 == RectangleBounds.aClass74_2157) {

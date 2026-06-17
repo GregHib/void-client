@@ -321,7 +321,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         while (Class367_Sub4.anInt7319 > i_31_) {
                             var i_32_ = 0
                             while (Class348_Sub40_Sub3.anInt9109 > i_32_) {
-                                Class203.method1479(i_32_, (-126).toByte(), i_31_, i_30_)
+                                ProjectileSpawner.method1479(i_32_, (-126).toByte(), i_31_, i_30_)
                                 i_32_++
                             }
                             i_31_++

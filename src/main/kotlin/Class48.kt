@@ -79,7 +79,7 @@ class Class48 {
             do {
                 try {
                     anInt849++
-                    val class348_sub47 = Class203.method1478(true)
+                    val class348_sub47 = ProjectileSpawner.method1478(true)
                     class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeByte(bool, ScriptOpcodeHolder.aClass29_2348!!.anInt400)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 0)
                     val i_3_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)

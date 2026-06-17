@@ -1665,7 +1665,7 @@ class Client : GameAppletFrame() {
             if (bool_118_ && Class74.aBoolean1236 && Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042!!.method2087(-115)
             if (Class260.method1977((-79).toByte(), Class240.anInt4674)) {
                 if ((Class348_Sub16_Sub2.aLong8866 != 0L) && method599(-98) > Class348_Sub16_Sub2.aLong8866) method830(method3229(-128), Class321.anInt4005, 102.toByte(), false, Class348_Sub40_Sub25.anInt9335)
-                else if (!Class348_Sub8.aRenderer6654!!.method3655() && Class203.aBoolean2674) method3327(1406)
+                else if (!Class348_Sub8.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
             }
             if (Class34.aFrame476 == null) {
                 val container: Container?

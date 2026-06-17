@@ -1457,7 +1457,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     val i_191_ = -Class90.regionTileY + i_190_
                     if (i == Class348_Sub40_Sub12.anInt9200 && Class278.anInt3581 <= i_189_ && 8 + Class278.anInt3581 > i_189_ && Class73.anInt4786 <= i_191_ && Class73.anInt4786 - -8 > i_191_) {
                         class348_sub37.method2715(89.toByte())
-                        if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.anInt7319 && (i_191_ < Class348_Sub40_Sub3.anInt9109)) Class203.method1479(i_191_, (-118).toByte(), i_189_, Class348_Sub40_Sub12.anInt9200)
+                        if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.anInt7319 && (i_191_ < Class348_Sub40_Sub3.anInt9109)) ProjectileSpawner.method1479(i_191_, (-118).toByte(), i_189_, Class348_Sub40_Sub12.anInt9200)
                     }
                     class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3482(0) as? Class348_Sub37?)
                 }
