@@ -541,7 +541,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class74.aIntRange_1234) {
-                Class24.anInt359 = Class299.aClass348_Sub49_Sub2_3813!!.method3369(125.toByte())
+                ModelDataCache.anInt359 = Class299.aClass348_Sub49_Sub2_3813!!.method3369(125.toByte())
                 Class348_Sub40_Sub3.aBoolean9103 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 Class348_Sub3.aIntRange_6584 = null
                 return true

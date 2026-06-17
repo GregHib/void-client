@@ -139,7 +139,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             Class5_Sub1_Sub1.anInt9930 = 0
             Class291.aClass318_Sub1Array3737 = arrayOfNulls<Class318_Sub1>(5000)
             Class348_Sub42_Sub3.Companion.anInt9504 = 0
-            Class24.aClass318_Sub1_Sub3Array357 = arrayOfNulls<Class318_Sub1_Sub3>(5000)
+            ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<Class318_Sub1_Sub3>(5000)
             Class86.anInt1477 = 0
             Class99.aBooleanArrayArray1572 = (Array<BooleanArray?>((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) { BooleanArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) })
             Class348_Sub8.aBooleanArrayArray6656 = (Array<BooleanArray?>((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2)) { BooleanArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2)) })

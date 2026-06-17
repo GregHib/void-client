@@ -18,7 +18,7 @@ import MultiLevelOptionState.Companion.method1851
 import SimpleToggleOptionState.Companion.method1742
 import BrightnessOptionState.Companion.method1745
 import FlickeringEffectsOptionState.Companion.method1754
-import Class24.method298
+import ModelDataCache.method298
 import Class27.method312
 import Class27.method317
 import Class272.Companion.method2051
@@ -2300,7 +2300,7 @@ object Class66 {
                     return
                 }
                 if (i == 6910) {
-                    anIntArray1149!![anInt1173++] = Class24.anInt359
+                    anIntArray1149!![anInt1173++] = ModelDataCache.anInt359
                     return
                 }
                 if (i == 6911) {

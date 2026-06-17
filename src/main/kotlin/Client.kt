@@ -993,7 +993,7 @@ class Client : GameAppletFrame() {
         method130(i + -100)
         method2637(i + -108)
         method2333(false)
-        Class24.method296((-99).toByte())
+        ModelDataCache.method296((-99).toByte())
         method176(-1)
         method2366(true)
         method2690(-124)

@@ -41,8 +41,8 @@ class Class69 {
                 if (i_0_ != 1226) aObjectByteSerializerHolder_1201 = null
                 ModelBatchBase.aClass60_1894!!.method590(0)
             }
-            synchronized(Class24.aClass60_355!!) {
-                Class24.aClass60_355!!.method590(0)
+            synchronized(ModelDataCache.aClass60_355!!) {
+                ModelDataCache.aClass60_355!!.method590(0)
             }
         }
 

@@ -228,8 +228,8 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
         @JvmStatic
         fun method876(i: Int, i_23_: Int) {
             anInt1557++
-            synchronized(Class24.aClass60_355!!) {
-                Class24.aClass60_355!!.method578(2, i)
+            synchronized(ModelDataCache.aClass60_355!!) {
+                ModelDataCache.aClass60_355!!.method578(2, i)
             }
             synchronized(ModelBatchBase.aClass60_1894!!) {
                 ModelBatchBase.aClass60_1894!!.method578(2, i)

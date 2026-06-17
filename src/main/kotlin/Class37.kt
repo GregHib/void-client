@@ -35,7 +35,7 @@ object Class37 {
     @Synchronized
     fun method357(i: Int, `is`: ByteArray) {
         anInt491++
-        if (`is`.size == 100 && Class348_Sub40_Sub31.anInt9412 < 1000) Class24.aByteArrayArray358!![Class348_Sub40_Sub31.anInt9412++] = `is`
+        if (`is`.size == 100 && Class348_Sub40_Sub31.anInt9412 < 1000) ModelDataCache.aByteArrayArray358!![Class348_Sub40_Sub31.anInt9412++] = `is`
         else {
             if (i != 0) method359(-119, -101)
             if (`is`.size == 5000 && Class348_Sub40_Sub21.anInt9280 < 250) PlayerUpdateDecoder.aByteArrayArray1918!![Class348_Sub40_Sub21.anInt9280++] = `is`
@@ -64,8 +64,8 @@ object Class37 {
     fun method359(i: Int, i_9_: Int): ByteArray? {
         anInt493++
         if (i == 100 && Class348_Sub40_Sub31.anInt9412 > 0) {
-            val `is` = Class24.aByteArrayArray358!![--Class348_Sub40_Sub31.anInt9412]
-            Class24.aByteArrayArray358!![Class348_Sub40_Sub31.anInt9412] = null
+            val `is` = ModelDataCache.aByteArrayArray358!![--Class348_Sub40_Sub31.anInt9412]
+            ModelDataCache.aByteArrayArray358!![Class348_Sub40_Sub31.anInt9412] = null
             return `is`
         }
         if (i == 5000 && Class348_Sub40_Sub21.anInt9280 > 0) {

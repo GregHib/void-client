@@ -54,8 +54,8 @@ object Class331 {
     }
 
     fun method2638(i: Int) {
-        synchronized(Class24.aClass60_355!!) {
-            Class24.aClass60_355!!.method587(-98)
+        synchronized(ModelDataCache.aClass60_355!!) {
+            ModelDataCache.aClass60_355!!.method587(-98)
         }
         anInt4136++
         synchronized(ModelBatchBase.aClass60_1894!!) {

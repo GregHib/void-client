@@ -148,8 +148,8 @@ class CompositeNpcModelBuilder {
                 if (bool_14_) i_9_ = i_9_ or 0x400
             }
             var class64: Class64?
-            synchronized(Class24.aClass60_355!!) {
-                class64 = Class24.aClass60_355!!.method583(l, -47) as Class64?
+            synchronized(ModelDataCache.aClass60_355!!) {
+                class64 = ModelDataCache.aClass60_355!!.method583(l, -47) as Class64?
             }
             var npcDefinition: NpcDefinition? = null
             if (anInt2103 != -1) npcDefinition = class261!!.method1983(anInt2103, 32)
@@ -165,8 +165,8 @@ class CompositeNpcModelBuilder {
                 }
                 if (bool_37_) {
                     if (aLong2094 != -1L) {
-                        synchronized(Class24.aClass60_355!!) {
-                            class64 = Class24.aClass60_355!!.method583(aLong2094, -92) as Class64?
+                        synchronized(ModelDataCache.aClass60_355!!) {
+                            class64 = ModelDataCache.aClass60_355!!.method583(aLong2094, -92) as Class64?
                         }
                     }
                     if (class64 == null || var_renderer!!.method3667(class64.ua(), i_9_) != 0) return null
@@ -220,8 +220,8 @@ class CompositeNpcModelBuilder {
                     }
                     if (bool) {
                         class64.s(i_9_)
-                        synchronized(Class24.aClass60_355!!) {
-                            Class24.aClass60_355!!.method582(class64, l, (-98).toByte())
+                        synchronized(ModelDataCache.aClass60_355!!) {
+                            ModelDataCache.aClass60_355!!.method582(class64, l, (-98).toByte())
                         }
                         aLong2094 = l
                     }

@@ -346,7 +346,7 @@ class Class88 {
                                 Class50_Sub2.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class348_Sub42_Sub11.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 FrameBufferObject.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                Class24.anInt359 = class348_sub49_sub2.method3369(125.toByte())
+                                ModelDataCache.anInt359 = class348_sub49_sub2.method3369(125.toByte())
                                 ModelBatchBase.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class348_Sub40_Sub12.aClass263_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
                                 Exception_Sub1.aClass255_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)

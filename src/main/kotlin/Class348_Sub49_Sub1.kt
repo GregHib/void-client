@@ -80,11 +80,11 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                 }
                 if (!bool) {
                     for (i_5_ in 0..<Class86.anInt1477) {
-                        if (!Class348_Sub9.method2778((Class24.aClass318_Sub1_Sub3Array357!![i_5_]!!), bool, `is`, i, i_0_)) {
-                            OpenGlTerrainTile.method4001(Class24.aClass318_Sub1_Sub3Array357!![i_5_]!!)
-                            if ((Class24.aClass318_Sub1_Sub3Array357!![i_5_]!!.anInt6389) != -1) {
-                                if (Class24.aClass318_Sub1_Sub3Array357!![i_5_]!!.method2377(122.toByte())) Class291.aClass318_Sub1Array3737!![Class348_Sub42_Sub3.anInt9504++] = (Class24.aClass318_Sub1_Sub3Array357!![i_5_])
-                                else RemoveRoofsOptionState.aClass318_Sub1Array6066!![Class5_Sub1_Sub1.anInt9930++] = (Class24.aClass318_Sub1_Sub3Array357!![i_5_])
+                        if (!Class348_Sub9.method2778((ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!), bool, `is`, i, i_0_)) {
+                            OpenGlTerrainTile.method4001(ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!)
+                            if ((ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.anInt6389) != -1) {
+                                if (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.method2377(122.toByte())) Class291.aClass318_Sub1Array3737!![Class348_Sub42_Sub3.anInt9504++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
+                                else RemoveRoofsOptionState.aClass318_Sub1Array6066!![Class5_Sub1_Sub1.anInt9930++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
                             }
                         }
                     }

@@ -111,9 +111,9 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
 
         fun method3223() {
             for (i in 0..<Class86.anInt1477) {
-                val class318_sub1_sub3 = Class24.aClass318_Sub1_Sub3Array357!![i]!!
+                val class318_sub1_sub3 = ModelDataCache.aClass318_Sub1_Sub3Array357!![i]!!
                 Class348_Sub46.method3320(class318_sub1_sub3, true)
-                Class24.aClass318_Sub1_Sub3Array357!![i] = null
+                ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
             }
             Class86.anInt1477 = 0
         }

@@ -45,8 +45,8 @@ public open class Class369_Sub3(screenAnchorAlignment: ScreenAnchorAlignment?, c
         var aClass45_8601: Class45? = null
         @JvmStatic
         fun method3573(i: Int) {
-            synchronized(Class24.aClass60_355!!) {
-                Class24.aClass60_355!!.method590(0)
+            synchronized(ModelDataCache.aClass60_355!!) {
+                ModelDataCache.aClass60_355!!.method590(0)
             }
             anInt8598++
             synchronized(ModelBatchBase.aClass60_1894!!) {

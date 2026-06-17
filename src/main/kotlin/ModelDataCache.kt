@@ -3,7 +3,7 @@ import Class367_Sub10.Companion.method3553
 /* Class24 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class24 {
+object ModelDataCache {
     @JvmField
     var anInt354: Int = 0
     @JvmField
