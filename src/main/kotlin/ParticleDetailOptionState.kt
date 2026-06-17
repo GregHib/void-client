@@ -33,7 +33,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
     }
 
     override fun method1710(i: Int): Int {
-        if (i != 20014) aClass273_6018 = null
+        if (i != 20014) aBoundsConstraintEntry_6018 = null
         anInt6027++
         if (this.aClass348_Sub51_3136.method3428((-96).toByte())!!.method1462(-113) > 1) return 4
         return 2
@@ -41,7 +41,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
 
     companion object {
         @JvmField
-        var aClass273_6018: Class273? = Class273("", 14)
+        var aBoundsConstraintEntry_6018: BoundsConstraintEntry? = BoundsConstraintEntry("", 14)
         @JvmField
         var anInt6019: Int = 0
         @JvmField
@@ -105,7 +105,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1794(i: Int) {
             if (i != 63) anIntArray6021 = null
-            aClass273_6018 = null
+            aBoundsConstraintEntry_6018 = null
             anIntArray6021 = null
         }
 

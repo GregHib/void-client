@@ -581,7 +581,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     aClass356_8325!!.method3483(27.toByte(), l, class348_sub3s[i_178_])
                 } else class348_sub3s[i_178_] = class348 as Class348_Sub3
             }
-            if (bool) aByteArrayArray8317[i]!![i_167_] = Class273.method2057((aByteArrayArray8317[i]!![i_167_]).toInt(), 1).toByte()
+            if (bool) aByteArrayArray8317[i]!![i_167_] = BoundsConstraintEntry.method2057((aByteArrayArray8317[i]!![i_167_]).toInt(), 1).toByte()
             if (is_171_.size > anInt8331) anInt8331 = is_171_.size
             anInt8329 += is_171_.size
         } catch (runtimeexception: RuntimeException) {

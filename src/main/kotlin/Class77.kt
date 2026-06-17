@@ -208,7 +208,7 @@ class Class77 {
         @JvmField
         var anInt1297: Int = 0
         @JvmField
-        var aClass273_1298: Class273? = Class273("", 16)
+        var aBoundsConstraintEntry_1298: BoundsConstraintEntry? = BoundsConstraintEntry("", 16)
         @JvmField
         var anInt1299: Int = 0
         @JvmField
@@ -237,7 +237,7 @@ class Class77 {
         fun method782(i: Int) {
             anIntArray1303 = null
             if (i != 1) anInt1290 = 114
-            aClass273_1298 = null
+            aBoundsConstraintEntry_1298 = null
         }
     }
 }

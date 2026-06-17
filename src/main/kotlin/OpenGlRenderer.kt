@@ -2849,7 +2849,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     var i_471_ = 0
                     while ((spriteImage.anInt2702 > i_471_)) {
                         val i_472_ = (spriteImage.anIntArray2697[0xff and (spriteImage.aByteArray2699[i++]).toInt()])
-                        `is`[i_467_++] = if (i_472_ == 0) 0 else Class273.method2057(-16777216, i_472_)
+                        `is`[i_467_++] = if (i_472_ == 0) 0 else BoundsConstraintEntry.method2057(-16777216, i_472_)
                         i_471_++
                     }
                     i_470_++
@@ -2859,7 +2859,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 while (spriteImage.anInt2696 > i_468_) {
                     var i_469_ = 0
                     while ((i_469_ < spriteImage.anInt2702)) {
-                        `is`[i_467_++] = (Class273.method2057((spriteImage.aByteArray2695!![i].toInt() shl 24), (spriteImage.anIntArray2697[NpcSummaryDefinition.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)])))
+                        `is`[i_467_++] = (BoundsConstraintEntry.method2057((spriteImage.aByteArray2695!![i].toInt() shl 24), (spriteImage.anIntArray2697[NpcSummaryDefinition.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)])))
                         i++
                         i_469_++
                     }

@@ -186,7 +186,7 @@ import ProjectileConfigUtil.method315
 import ArchiveFileConditionWrapper.Companion.method2043
 import ParticleEffectCache.Companion.method2045
 import SocketFactory.Companion.method2048
-import Class273.Companion.method2055
+import BoundsConstraintEntry.Companion.method2055
 import Class274.Companion.method2059
 import Class275.method2064
 import Class275.method2065

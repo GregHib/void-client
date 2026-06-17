@@ -92,7 +92,7 @@ class Class85 {
             while (l > 8L) {
                 val i_36_ = (`is`!![i_29_].toInt() shl i_30_ and 0xff or ((0xff and `is`[1 + i_29_].toInt()) ushr 8 + -i_30_))
                 if (i_36_ < 0 || i_36_ >= 256) throw RuntimeException("LOGIC ERROR")
-                aByteArray1475[anInt1468] = Class273.method2057(aByteArray1475[anInt1468].toInt(), i_36_ ushr i_31_).toByte()
+                aByteArray1475[anInt1468] = BoundsConstraintEntry.method2057(aByteArray1475[anInt1468].toInt(), i_36_ ushr i_31_).toByte()
                 anInt1468++
                 anInt1463 += 8 - i_31_
                 if (anInt1463 == 512) {
@@ -108,7 +108,7 @@ class Class85 {
             val i_37_: Int
             if (l > 0L) {
                 i_37_ = 0xff and (`is`!![i_29_].toInt() shl i_30_)
-                aByteArray1475[anInt1468] = Class273.method2057(aByteArray1475[anInt1468].toInt(), i_37_ ushr i_31_).toByte()
+                aByteArray1475[anInt1468] = BoundsConstraintEntry.method2057(aByteArray1475[anInt1468].toInt(), i_37_ ushr i_31_).toByte()
             } else i_37_ = 0
             if (l + i_31_.toLong() >= 8) {
                 anInt1463 += 8 - i_31_
@@ -129,7 +129,7 @@ class Class85 {
 
     fun method833(bool: Boolean, i: Int, `is`: ByteArray) {
         anInt1470++
-        aByteArray1475[anInt1468] = Class273.method2057(aByteArray1475[anInt1468].toInt(), 128 ushr NpcSummaryDefinition.method1166(anInt1463, 7)).toByte()
+        aByteArray1475[anInt1468] = BoundsConstraintEntry.method2057(aByteArray1475[anInt1468].toInt(), 128 ushr NpcSummaryDefinition.method1166(anInt1463, 7)).toByte()
         anInt1468++
         if (anInt1468 > 32) {
             while (anInt1468 < 64) aByteArray1475[anInt1468++] = 0.toByte()

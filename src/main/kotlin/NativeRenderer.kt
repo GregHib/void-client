@@ -370,7 +370,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 bool = false
             } else if (i_29_ == 128) {
                 bool = true
-                objectByteSerializerHolder = Class273.aObjectByteSerializerHolder_5169
+                objectByteSerializerHolder = BoundsConstraintEntry.aObjectByteSerializerHolder_5169
                 bool_30_ = true
             } else {
                 bool_30_ = false
@@ -1752,7 +1752,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     while ((i_212_ < spriteImage.anInt2696)) {
                         for (i_213_ in 0..<spriteImage.anInt2702) {
                             val i_214_ = (spriteImage.anIntArray2697[0xff and (spriteImage.aByteArray2699[i++]).toInt()])
-                            `is`[i_211_++] = (if (i_214_ != 0) Class273.method2057(i_214_, -16777216) else 0)
+                            `is`[i_211_++] = (if (i_214_ != 0) BoundsConstraintEntry.method2057(i_214_, -16777216) else 0)
                         }
                         i_212_++
                     }
@@ -1760,7 +1760,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     for (i_215_ in 0..<spriteImage.anInt2696) {
                         var i_216_ = 0
                         while (spriteImage.anInt2702 > i_216_) {
-                            `is`[i_211_++] = (Class273.method2057((spriteImage.anIntArray2697[NpcSummaryDefinition.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)]), (spriteImage.aByteArray2695!![i].toInt() shl 24)))
+                            `is`[i_211_++] = (BoundsConstraintEntry.method2057((spriteImage.anIntArray2697[NpcSummaryDefinition.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)]), (spriteImage.aByteArray2695!![i].toInt() shl 24)))
                             i++
                             i_216_++
                         }

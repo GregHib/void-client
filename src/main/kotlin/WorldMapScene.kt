@@ -137,7 +137,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         ProjectileFactory.anIntArray2899!![i_33_] = (class277_30_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_33_] = (class277_30_.anInt3570)
                                         if (Class306.anIntArray3873!![i_33_] != (class277_30_.anInt3564)) HintIconState.anIntArray2370!![i_33_] = 32
-                                        else HintIconState.anIntArray2370!![i_33_] = (Class273.method2057((HintIconState.anIntArray2370!![i_33_]), 32))
+                                        else HintIconState.anIntArray2370!![i_33_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_33_]), 32))
                                         Class306.anIntArray3873!![i_33_] = (class277_30_.anInt3564)
                                     }
                                     i_34_++
@@ -168,7 +168,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         ProjectileFactory.anIntArray2899!![i_41_] = (class277_38_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_41_] = (class277_38_.anInt3570)
                                         if (Class306.anIntArray3873!![i_41_] != (class277_38_.anInt3564)) HintIconState.anIntArray2370!![i_41_] = 16
-                                        else HintIconState.anIntArray2370!![i_41_] = (Class273.method2057((HintIconState.anIntArray2370!![i_41_]), 16))
+                                        else HintIconState.anIntArray2370!![i_41_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_41_]), 16))
                                         Class306.anIntArray3873!![i_41_] = (class277_38_.anInt3564)
                                     }
                                     i_42_--
@@ -199,7 +199,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         ProjectileFactory.anIntArray2899!![i_49_] = (class277_46_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_49_] = (class277_46_.anInt3570)
                                         if (Class306.anIntArray3873!![i_49_] != (class277_46_.anInt3564)) HintIconState.anIntArray2370!![i_49_] = 8
-                                        else HintIconState.anIntArray2370!![i_49_] = (Class273.method2057((HintIconState.anIntArray2370!![i_49_]), 8))
+                                        else HintIconState.anIntArray2370!![i_49_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_49_]), 8))
                                         Class306.anIntArray3873!![i_49_] = (class277_46_.anInt3564)
                                     }
                                     i_49_++
@@ -229,7 +229,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         Class348_Sub40_Sub38.anIntArray9480!![i_57_] = i_59_
                                         ProjectileFactory.anIntArray2899!![i_57_] = (class277_54_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_57_] = (class277_54_.anInt3570)
-                                        if (class277_54_.anInt3564 == Class306.anIntArray3873!![i_57_]) HintIconState.anIntArray2370!![i_57_] = (Class273.method2057((HintIconState.anIntArray2370!![i_57_]), 4))
+                                        if (class277_54_.anInt3564 == Class306.anIntArray3873!![i_57_]) HintIconState.anIntArray2370!![i_57_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_57_]), 4))
                                         else HintIconState.anIntArray2370!![i_57_] = 4
                                         Class306.anIntArray3873!![i_57_] = (class277_54_.anInt3564)
                                     }
@@ -252,7 +252,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                         ProjectileFactory.anIntArray2899!![i_63_] = class277.anInt3575
                         Class348_Sub6.anIntArray6631!![i_63_] = class277.anInt3570
                         if (Class306.anIntArray3873!![i_63_] != class277.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
-                        else HintIconState.anIntArray2370!![i_63_] = Class273.method2057((HintIconState.anIntArray2370!![i_63_]), 2)
+                        else HintIconState.anIntArray2370!![i_63_] = BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_63_]), 2)
                         Class306.anIntArray3873!![i_63_] = class277.anInt3564
                     }
                 }
@@ -726,7 +726,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     if (class22 != null && !class22.aBoolean334) bool_160_ = false
                                     else if (i_79_ == 0 && i_76_.toInt() != 0) bool_160_ = false
                                     else if (i_78_ > 0 && class277_83_ != null && !(class277_83_.aBoolean3561)) bool_160_ = false
-                                    if (bool_160_ && (i_156_ == i_155_) && i_157_ == i_155_ && i_155_ == i_158_) this.aByteArrayArrayArray3108!![i_66_]!![i_71_]!![i_73_] = (Class273.method2057((this.aByteArrayArrayArray3108!![i_66_]!![i_71_]!![i_73_]).toInt(), 4)).toByte()
+                                    if (bool_160_ && (i_156_ == i_155_) && i_157_ == i_155_ && i_155_ == i_158_) this.aByteArrayArrayArray3108!![i_66_]!![i_71_]!![i_73_] = (BoundsConstraintEntry.method2057((this.aByteArrayArrayArray3108!![i_66_]!![i_71_]!![i_73_]).toInt(), 4)).toByte()
                                 }
                                 var i_161_ = 0
                                 var i_162_ = 0
@@ -1117,7 +1117,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     if (class22 != null && !class22.aBoolean334) bool_268_ = false
                                     else if (i_231_ == 0 && i_228_.toInt() != 0) bool_268_ = false
                                     else if (i_230_ > 0 && class277 != null && !(class277.aBoolean3561)) bool_268_ = false
-                                    if (bool_268_ && (i_264_ == i_263_) && (i_263_ == i_265_) && (i_263_ == i_266_)) this.aByteArrayArrayArray3108!![i]!![i_226_]!![i_227_] = (Class273.method2057((this.aByteArrayArrayArray3108!![i]!![i_226_]!![i_227_]).toInt(), 4)).toByte()
+                                    if (bool_268_ && (i_264_ == i_263_) && (i_263_ == i_265_) && (i_263_ == i_266_)) this.aByteArrayArrayArray3108!![i]!![i_226_]!![i_227_] = (BoundsConstraintEntry.method2057((this.aByteArrayArrayArray3108!![i]!![i_226_]!![i_227_]).toInt(), 4)).toByte()
                                 }
                                 var i_269_ = 0
                                 var i_270_ = 0

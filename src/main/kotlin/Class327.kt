@@ -4,7 +4,7 @@ import java.io.IOException
 
 object Class327 {
     var anInt4090: Int = 0
-    var aClass273_4091: Class273? = Class273("", 10)
+    var aBoundsConstraintEntry_4091: BoundsConstraintEntry? = BoundsConstraintEntry("", 10)
     var anInt4092: Int = 0
     var anInt4093: Int = 0
     var aClass351_4094: Class351? = Class351(47, 4)
@@ -18,7 +18,7 @@ object Class327 {
 
     @JvmStatic
     fun method2604(i: Byte) {
-        aClass273_4091 = null
+        aBoundsConstraintEntry_4091 = null
         if (i >= -49) method2606(31, -15L)
         aClass74_4098 = null
         aClass351_4094 = null

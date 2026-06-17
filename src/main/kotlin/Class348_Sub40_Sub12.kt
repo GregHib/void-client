@@ -318,7 +318,7 @@ class Class348_Sub40_Sub12 : Class348_Sub40(1, false) {
                 if (i_19_ >= 0) {
                     if (i_19_ > 255) i_19_ = 255
                 } else i_19_ = 0
-                anIntArray9199[i_13_] = (Class273.method2057(i_18_, Class273.method2057(i_17_ shl 16, i_19_ shl 8)))
+                anIntArray9199[i_13_] = (BoundsConstraintEntry.method2057(i_18_, BoundsConstraintEntry.method2057(i_17_ shl 16, i_19_ shl 8)))
             }
         }
     }

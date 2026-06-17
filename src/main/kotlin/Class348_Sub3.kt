@@ -161,7 +161,7 @@ class Class348_Sub3 internal constructor(private val aS_Sub3_6566: NativeTerrain
 
     fun method2742(i: Int, i_38_: Int, i_39_: Int, i_40_: Byte) {
         anInt6570++
-        anIntArray6573[i_38_ * aS_Sub3_6566.anInt4587 - -i_39_] = Class273.method2057((anIntArray6573[(i_38_ * aS_Sub3_6566.anInt4587 - -i_39_)]), 1 shl i)
+        anIntArray6573[i_38_ * aS_Sub3_6566.anInt4587 - -i_39_] = BoundsConstraintEntry.method2057((anIntArray6573[(i_38_ * aS_Sub3_6566.anInt4587 - -i_39_)]), 1 shl i)
         if (i_40_ > -65) aFloat6586 = -1.0413289f
         this.anInt6589++
     }

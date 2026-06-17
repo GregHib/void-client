@@ -727,7 +727,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 } else i_114_ = 0
                 if (i_115_ < 0) i_115_ = 0
                 else if (i_115_ > 127) i_115_ = 127
-                aShortArray5486!![i_111_] = (Class273.method2057(Class273.method2057(i_114_ shl 7, i_113_ shl 10), i_115_)).toShort()
+                aShortArray5486!![i_111_] = (BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(i_114_ shl 7, i_113_ shl 10), i_115_)).toShort()
             }
             if (aClass353Array5524 != null) {
                 for (i_116_ in 0..<anInt5406) {
@@ -1638,7 +1638,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 if (i_293_ >= 0) {
                                     if (i_293_ > 127) i_293_ = 127
                                 } else i_293_ = 0
-                                aShortArray5486!![i_289_] = (Class273.method2057(i_293_, (Class273.method2057(i_291_ shl 10, i_292_ shl 7)))).toShort()
+                                aShortArray5486!![i_289_] = (BoundsConstraintEntry.method2057(i_293_, (BoundsConstraintEntry.method2057(i_291_ shl 10, i_292_ shl 7)))).toShort()
                             }
                             bool_284_ = bool_284_ or (is_287_.size > 0)
                         }
@@ -2727,7 +2727,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             var i_567_ = i_564_ and 0x7f
             if (i_560_ != -1) i_566_ += (-i_566_ + i_560_) * i_562_ shr 7
             if (i_561_ != -1) i_567_ = ((-i_567_ + i_561_) * i_562_ shr 7) + i_567_
-            aShortArray5486!![i_563_] = (Class273.method2057(Class273.method2057(i_565_ shl 10, i_566_ shl 7), i_567_)).toShort()
+            aShortArray5486!![i_563_] = (BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(i_565_ shl 10, i_566_ shl 7), i_567_)).toShort()
             i_563_++
         }
         if (aClass353Array5524 != null) {
@@ -3261,7 +3261,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                     if (i_750_ >= 0) {
                                         if (i_750_ > 127) i_750_ = 127
                                     } else i_750_ = 0
-                                    aShortArray5486!![i_746_] = (Class273.method2057((Class273.method2057(i_749_ shl 7, i_748_ shl 10)), i_750_)).toShort()
+                                    aShortArray5486!![i_746_] = (BoundsConstraintEntry.method2057((BoundsConstraintEntry.method2057(i_749_ shl 7, i_748_ shl 10)), i_750_)).toShort()
                                 }
                                 i_745_++
                             }

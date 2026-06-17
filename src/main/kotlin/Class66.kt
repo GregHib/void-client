@@ -117,12 +117,12 @@ object Class66 {
     private var anInt1177: Int
 
     @JvmStatic
-    fun method701(class273: Class273, i: Int, i_0_: Int) {
-        val class348_sub42_sub19 = ConfigDefinitionLoader.method1223(i, i_0_, 96837648, class273)
+    fun method701(boundsConstraintEntry: BoundsConstraintEntry, i: Int, i_0_: Int) {
+        val class348_sub42_sub19 = ConfigDefinitionLoader.method1223(i, i_0_, 96837648, boundsConstraintEntry)
         if (class348_sub42_sub19 != null) {
             anIntArray1164 = (IntArray(class348_sub42_sub19.anInt9688))
             aStringArray1155 = (arrayOfNulls<String>(class348_sub42_sub19.anInt9689))
-            if ((class348_sub42_sub19.aClass273_9691 == Class90.aClass273_1512) || (class348_sub42_sub19.aClass273_9691) == Class59_Sub1_Sub2.aClass273_8664 || (class348_sub42_sub19.aClass273_9691) == Class77.aClass273_1298) {
+            if ((class348_sub42_sub19.aBoundsConstraintEntry_9691 == Class90.aBoundsConstraintEntry_1512) || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == Class59_Sub1_Sub2.aBoundsConstraintEntry_8664 || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == Class77.aBoundsConstraintEntry_1298) {
                 var i_1_ = 0
                 var i_2_ = 0
                 if (HeapDiagnosticsHolder.aClass46_2249 != null) {

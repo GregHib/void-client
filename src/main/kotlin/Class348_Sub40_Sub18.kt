@@ -68,13 +68,13 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                 val i_2_ = Class286_Sub7.anIntArray6290!![i_1_]
                 if ((0x1 and Class348_Sub5.aByteArray6624!![i_2_].toInt()) == 0) {
                     if (i_0_ > 0) {
-                        Class348_Sub5.aByteArray6624!![i_2_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_2_]).toInt(), 2).toByte()
+                        Class348_Sub5.aByteArray6624!![i_2_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_2_]).toInt(), 2).toByte()
                         i_0_--
                     } else {
                         val i_3_ = class348_sub49_sub2.readBits((-24).toByte(), 1)
                         if (i_3_ == 0) {
                             i_0_ = method2413(1, class348_sub49_sub2)
-                            Class348_Sub5.aByteArray6624!![i_2_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_2_]).toInt(), 2).toByte()
+                            Class348_Sub5.aByteArray6624!![i_2_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_2_]).toInt(), 2).toByte()
                         } else {
                             method2177(1, i_2_, class348_sub49_sub2)
                         }
@@ -88,13 +88,13 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                 val i_5_ = Class286_Sub7.anIntArray6290!![i_4_]
                 if ((0x1 and Class348_Sub5.aByteArray6624!![i_5_].toInt()) != 0) {
                     if (i_0_ > 0) {
-                        Class348_Sub5.aByteArray6624!![i_5_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_5_]).toInt(), 2).toByte()
+                        Class348_Sub5.aByteArray6624!![i_5_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_5_]).toInt(), 2).toByte()
                         i_0_--
                     } else {
                         val i_6_ = class348_sub49_sub2.readBits((-24).toByte(), 1)
                         if (i_6_ == 0) {
                             i_0_ = method2413(1, class348_sub49_sub2)
-                            Class348_Sub5.aByteArray6624!![i_5_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_5_]).toInt(), 2).toByte()
+                            Class348_Sub5.aByteArray6624!![i_5_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_5_]).toInt(), 2).toByte()
                         } else method2177(i xor 0x53e4.inv(), i_5_, class348_sub49_sub2)
                     }
                 }
@@ -107,14 +107,14 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                 val i_8_ = GlArrayBufferObject.anIntArray4709!![i_7_]
                 if ((0x1 and Class348_Sub5.aByteArray6624!![i_8_].toInt()) != 0) {
                     if (i_0_ > 0) {
-                        Class348_Sub5.aByteArray6624!![i_8_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
+                        Class348_Sub5.aByteArray6624!![i_8_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
                         i_0_--
                     } else {
                         val i_9_ = class348_sub49_sub2.readBits((-24).toByte(), 1)
                         if (i_9_ == 0) {
                             i_0_ = method2413(i + 21479, class348_sub49_sub2)
-                            Class348_Sub5.aByteArray6624!![i_8_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
-                        } else if (SoundEnvelope.method1538(i_8_, 105.toByte(), class348_sub49_sub2)) Class348_Sub5.aByteArray6624!![i_8_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
+                            Class348_Sub5.aByteArray6624!![i_8_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
+                        } else if (SoundEnvelope.method1538(i_8_, 105.toByte(), class348_sub49_sub2)) Class348_Sub5.aByteArray6624!![i_8_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
                     }
                 }
                 i_7_++
@@ -128,14 +128,14 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                     val i_11_ = GlArrayBufferObject.anIntArray4709!![i_10_]
                     if ((Class348_Sub5.aByteArray6624!![i_11_].toInt() and 0x1) == 0) {
                         if (i_0_ > 0) {
-                            Class348_Sub5.aByteArray6624!![i_11_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
+                            Class348_Sub5.aByteArray6624!![i_11_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
                             i_0_--
                         } else {
                             val i_12_ = class348_sub49_sub2.readBits((-24).toByte(), 1)
                             if (i_12_ == 0) {
                                 i_0_ = method2413(1, class348_sub49_sub2)
-                                Class348_Sub5.aByteArray6624!![i_11_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
-                            } else if (SoundEnvelope.method1538(i_11_, 105.toByte(), class348_sub49_sub2)) Class348_Sub5.aByteArray6624!![i_11_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
+                                Class348_Sub5.aByteArray6624!![i_11_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
+                            } else if (SoundEnvelope.method1538(i_11_, 105.toByte(), class348_sub49_sub2)) Class348_Sub5.aByteArray6624!![i_11_] = BoundsConstraintEntry.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
                         }
                     }
                     i_10_++

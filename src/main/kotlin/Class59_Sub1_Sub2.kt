@@ -15,7 +15,7 @@ class Class59_Sub1_Sub2 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
 
     fun method562(i: Int, i_4_: Int, i_5_: Byte, i_6_: Int): ByteArray {
         aByteArray8660 = ByteArray(2 * i_6_ * (i_4_ * i))
-        if (i_5_ <= 85) aClass273_8664 = null
+        if (i_5_ <= 85) aBoundsConstraintEntry_8664 = null
         anInt8661++
         this.method542(i_4_, i, 0, i_6_)
         return aByteArray8660
@@ -30,7 +30,7 @@ class Class59_Sub1_Sub2 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
         var aClass74_8662: Class74? = Class74(6, 5)
         var anIntArray8663: IntArray? = IntArray(120)
         @JvmField
-        var aClass273_8664: Class273?
+        var aBoundsConstraintEntry_8664: BoundsConstraintEntry?
         @JvmField
         var anInt8665: Int = 0
         @JvmField
@@ -42,7 +42,7 @@ class Class59_Sub1_Sub2 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
             if (i != 120) method561(-85)
             anIntArray8666 = null
             anIntArray8663 = null
-            aClass273_8664 = null
+            aBoundsConstraintEntry_8664 = null
         }
 
         init {
@@ -53,7 +53,7 @@ class Class59_Sub1_Sub2 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
                 i += i_9_
                 anIntArray8663!![i_7_] = i / 4
             }
-            aClass273_8664 = Class273("", 17)
+            aBoundsConstraintEntry_8664 = BoundsConstraintEntry("", 17)
         }
     }
 }

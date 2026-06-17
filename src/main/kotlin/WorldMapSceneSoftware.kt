@@ -120,7 +120,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 if (class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(i_3_ + 786, var_renderer)
                             } else class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i + (i_9_ - 1), i_5_, i_5_ - (-i_8_ - -1), i_4_, i_7_, i_6_))
                             method850(class318_sub1_sub3, false)
-                            if (Class348_Sub42_Sub3.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (Class273.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
+                            if (Class348_Sub42_Sub3.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (BoundsConstraintEntry.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_)
                         } else if (i_4_ == 0) {
                             var i_22_ = class51.anInt955
@@ -269,7 +269,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * WidgetNodeLink.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (OutputStream_Sub1.anIntArray99!![i_7_] * i_28_), i_28_ * Class273.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))
+                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (OutputStream_Sub1.anIntArray99!![i_7_] * i_28_), i_28_ * BoundsConstraintEntry.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 7) {
                             val i_29_ = 0x3 and 2 + i_7_
@@ -288,14 +288,14 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             val class318_sub1_sub5: Class318_Sub1_Sub5?
                             val class318_sub1_sub5_32_: Class318_Sub1_Sub5?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), Class273.anIntArray5165!![i_7_] * i_31_, i_4_, 4 + i_7_))
+                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), BoundsConstraintEntry.anIntArray5165!![i_7_] * i_31_, i_4_, 4 + i_7_))
                                 val class318_sub1_sub5_sub1_34_ = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_30_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 if (class318_sub1_sub5_sub1_34_.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub5_sub1_34_.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1_34_
                                 class318_sub1_sub5_32_ = class318_sub1_sub5_sub1
                             } else {
-                                val class318_sub1_sub5_sub2 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), i_31_ * Class273.anIntArray5165!![i_7_], i_4_, i_7_ - -4, i_6_))
+                                val class318_sub1_sub5_sub2 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), i_31_ * BoundsConstraintEntry.anIntArray5165!![i_7_], i_4_, i_7_ - -4, i_6_))
                                 val class318_sub1_sub5_sub2_33_ = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_30_ + 4, i_6_))
                                 class318_sub1_sub5_32_ = class318_sub1_sub5_sub2
                                 class318_sub1_sub5 = class318_sub1_sub5_sub2_33_

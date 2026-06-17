@@ -608,7 +608,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RenderableGroup.anInt5009 = 0
             Class294.anInt5048 = 0
             Class66.anInt1165 = 0
-            Class273.anInt5166 = 0
+            BoundsConstraintEntry.anInt5166 = 0
             FloatCameraTransform.anInt5728 = 0
             NativeIndexBuffer.anInt4701 = 0
             Class64_Sub3.anInt5560 = 0
@@ -2607,7 +2607,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40.anInt7039 = 0
             FloatCameraTransform.anInt5693 = 0
             Renderer.anInt4570 = 0
-            Class273.anInt5168 = 0
+            BoundsConstraintEntry.anInt5168 = 0
             WorldMapScene.anInt3116 = 0
             NativeRenderer.anInt8036 = 0
             NativeRenderer.anInt7996 = 0

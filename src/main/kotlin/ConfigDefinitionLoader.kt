@@ -97,9 +97,9 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             return method2259(0, i_4_, i_3_) or ((i_3_ and 0x70000) != 0) || Class288.method2187(i_3_, -79, i_4_)
         }
 
-        fun method1223(i: Int, i_5_: Int, i_6_: Int, class273: Class273): Class348_Sub42_Sub19? {
+        fun method1223(i: Int, i_5_: Int, i_6_: Int, boundsConstraintEntry: BoundsConstraintEntry): Class348_Sub42_Sub19? {
             anInt2086++
-            var i_7_ = class273.anInt5167 or (i shl 10)
+            var i_7_ = boundsConstraintEntry.anInt5167 or (i shl 10)
             var class348_sub42_sub19 = (Class322.aClass308_4036!!.method2302(i_7_.toLong() shl 16, (-91).toByte()) as Class348_Sub42_Sub19?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
             var `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, (-90).toByte())))
@@ -110,11 +110,11 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
                 } catch (exception: Exception) {
                     throw RuntimeException(exception.message + " S: " + i_7_)
                 }
-                class348_sub42_sub19!!.aClass273_9691 = class273
+                class348_sub42_sub19!!.aBoundsConstraintEntry_9691 = boundsConstraintEntry
                 Class322.aClass308_4036!!.method2305(i_7_.toLong() shl 16, class348_sub42_sub19, -1)
                 return class348_sub42_sub19
             }
-            i_7_ = class273.anInt5167 or (65536 + i_5_ shl 10)
+            i_7_ = boundsConstraintEntry.anInt5167 or (65536 + i_5_ shl 10)
             class348_sub42_sub19 = (Class322.aClass308_4036!!.method2302(i_7_.toLong() shl 16, (-31).toByte()) as Class348_Sub42_Sub19?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
             `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, (-107).toByte())))
@@ -125,11 +125,11 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
                 } catch (exception: Exception) {
                     throw RuntimeException(exception.message + " S: " + i_7_)
                 }
-                class348_sub42_sub19!!.aClass273_9691 = class273
+                class348_sub42_sub19!!.aBoundsConstraintEntry_9691 = boundsConstraintEntry
                 Class322.aClass308_4036!!.method2305(i_7_.toLong() shl 16, class348_sub42_sub19, -1)
                 return class348_sub42_sub19
             }
-            i_7_ = class273.anInt5167 or 0x3fffc00
+            i_7_ = boundsConstraintEntry.anInt5167 or 0x3fffc00
             class348_sub42_sub19 = (Class322.aClass308_4036!!.method2302(i_7_.toLong() shl 16, (-107).toByte()) as Class348_Sub42_Sub19?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
             `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, 104.toByte())))
@@ -140,7 +140,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
                 } catch (exception: Exception) {
                     throw RuntimeException(exception.message + " S: " + i_7_)
                 }
-                class348_sub42_sub19!!.aClass273_9691 = class273
+                class348_sub42_sub19!!.aBoundsConstraintEntry_9691 = boundsConstraintEntry
                 Class322.aClass308_4036!!.method2305(i_7_.toLong() shl 16, class348_sub42_sub19, -1)
                 return class348_sub42_sub19
             }

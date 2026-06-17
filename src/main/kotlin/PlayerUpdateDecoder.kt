@@ -79,7 +79,7 @@ object PlayerUpdateDecoder {
                             val i_7_ = class348_sub49_sub2.readShortAddLittle(-118)
                             if ((i_7_ and 0xc000) == 49152) {
                                 val i_8_ = class348_sub49_sub2.readShortLittle(false)
-                                `is`[i_6_] = Class273.method2057(i_7_ shl 16, i_8_)
+                                `is`[i_6_] = BoundsConstraintEntry.method2057(i_7_ shl 16, i_8_)
                             } else `is`[i_6_] = i_7_
                             is_5_[i_6_] = class348_sub49_sub2.readShortLittle(false)
                         }

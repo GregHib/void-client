@@ -407,7 +407,7 @@ class ModelDefinition {
         val i_106_ = modelDefinition_101_.anIntArray1852[i_102_]
         for (i_107_ in i..<this.anInt1836) {
             if (this.anIntArray1841[i_107_] == i_104_ && i_105_ == this.anIntArray1847[i_107_] && (i_106_ == this.anIntArray1852[i_107_])) {
-                this.aShortArray1842[i_107_] = Class273.method2057((this.aShortArray1842[i_107_]).toInt(), i_103_.toInt()).toShort()
+                this.aShortArray1842[i_107_] = BoundsConstraintEntry.method2057((this.aShortArray1842[i_107_]).toInt(), i_103_.toInt()).toShort()
                 return i_107_
             }
         }

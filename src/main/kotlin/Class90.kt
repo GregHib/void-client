@@ -5,7 +5,7 @@ import Class348_Sub40_Sub22.Companion.method3111
 */
 object Class90 {
     @JvmField
-    var aClass273_1512: Class273? = Class273("", 15)
+    var aBoundsConstraintEntry_1512: BoundsConstraintEntry? = BoundsConstraintEntry("", 15)
     @JvmField
     var anInt1513: Int = 0
     @JvmField
@@ -19,7 +19,7 @@ object Class90 {
 
     @JvmStatic
     fun method852(i: Int) {
-        aClass273_1512 = null
+        aBoundsConstraintEntry_1512 = null
         if (i != 6) aLong1516 = 20L
         anIntArray1518 = null
     }

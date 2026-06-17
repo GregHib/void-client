@@ -1,5 +1,5 @@
 import LinkedListIterator.Companion.method1242
-import Class273.Companion.method2057
+import BoundsConstraintEntry.Companion.method2057
 import Class275.method2064
 import Class367_Sub4.Companion.method3542
 import Class50_Sub1.Companion.method462

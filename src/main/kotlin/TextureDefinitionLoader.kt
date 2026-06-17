@@ -68,7 +68,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
 
     fun method1178(i: Int, i_2_: Int, i_3_: Int) {
         anInt1972++
-        if (i_2_ != 1) aClass273_1966 = null
+        if (i_2_ != 1) aBoundsConstraintEntry_1966 = null
         aClass60_1963 = Class60(i_3_)
         this.aClass60_1976 = Class60(i)
     }
@@ -86,7 +86,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
     companion object {
         var anInt1964: Int = 0
         @JvmField
-        var aClass273_1966: Class273?
+        var aBoundsConstraintEntry_1966: BoundsConstraintEntry?
         var anInt1967: Int = 0
         var anInt1968: Int = 0
         var anInt1969: Int = 0
@@ -110,12 +110,12 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
             anIntArray1975 = null
             aSpriteArchiveLoader_1977 = null
             anIntArray1973 = null
-            aClass273_1966 = null
+            aBoundsConstraintEntry_1966 = null
             if (i >= -111) method1177(47.toByte())
         }
 
         init {
-            aClass273_1966 = Class273("", 18)
+            aBoundsConstraintEntry_1966 = BoundsConstraintEntry("", 18)
             anIntArray1975 = IntArray(1)
         }
     }

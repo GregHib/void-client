@@ -197,7 +197,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
                     i_40_ += 0xff and (i_44_ shr 16)
                     i_43_ += 0xff and (i_44_ shr 8)
                     i_42_ += i_44_ and 0xff
-                    is_31_[i_32_++] = (Class273.method2057((Class273.method2057(NpcSummaryDefinition.method1166(i_43_ shl 6, 65280), Class273.method2057((NpcSummaryDefinition.method1166(i_41_, 1020) shl 22), (NpcSummaryDefinition.method1166(1020, i_40_) shl 14)))), NpcSummaryDefinition.method1166(255, i_42_ shr 2)))
+                    is_31_[i_32_++] = (BoundsConstraintEntry.method2057((BoundsConstraintEntry.method2057(NpcSummaryDefinition.method1166(i_43_ shl 6, 65280), BoundsConstraintEntry.method2057((NpcSummaryDefinition.method1166(i_41_, 1020) shl 22), (NpcSummaryDefinition.method1166(1020, i_40_) shl 14)))), NpcSummaryDefinition.method1166(255, i_42_ shr 2)))
                     i_36_++
                 }
                 i_33_ += i

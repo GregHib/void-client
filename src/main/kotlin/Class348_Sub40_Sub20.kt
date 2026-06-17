@@ -53,7 +53,7 @@ class Class348_Sub40_Sub20 : Class348_Sub40(0, true) {
         }
 
         init {
-            Class273("", 73)
+            BoundsConstraintEntry("", 73)
         }
     }
 }

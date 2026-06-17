@@ -767,7 +767,7 @@ class Class64_Sub3 : Class64 {
             var i_202_ = i_199_ and 0x7f
             if (i_195_ != -1) i_201_ = (i_197_ * (i_195_ - i_201_) shr 7) + i_201_
             if (i_196_ != -1) i_202_ += (i_196_ + -i_202_) * i_197_ shr 7
-            aShortArray5580!![i_198_] = (Class273.method2057(Class273.method2057(i_201_ shl 7, i_200_ shl 10), i_202_)).toShort()
+            aShortArray5580!![i_198_] = (BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(i_201_ shl 7, i_200_ shl 10), i_202_)).toShort()
             i_198_++
         }
         if (aMapSceneTileDefinitionArray5621 != null) {
@@ -896,7 +896,7 @@ class Class64_Sub3 : Class64 {
                     i_221_++
                 }
             } else class64_sub3_211_.aByteArray5542 = aByteArray5542
-            if (Class273.method2056(i, 108, anInt5556)) {
+            if (BoundsConstraintEntry.method2056(i, 108, anInt5556)) {
                 class64_sub3_211_.aHoverActionEntry_5610 = class64_sub3_213_!!.aHoverActionEntry_5610
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x2).toByte()
                 class64_sub3_211_.aHoverActionEntry_5610!!.anInterface2_1811 = aHoverActionEntry_5610!!.anInterface2_1811
@@ -2128,7 +2128,7 @@ class Class64_Sub3 : Class64 {
                                 } else i_464_ = 0
                                 if (i_465_ < 0) i_465_ = 0
                                 else if (i_465_ > 127) i_465_ = 127
-                                aShortArray5580!![i_461_] = (Class273.method2057((Class273.method2057(i_464_ shl 7, i_463_ shl 10)), i_465_)).toShort()
+                                aShortArray5580!![i_461_] = (BoundsConstraintEntry.method2057((BoundsConstraintEntry.method2057(i_464_ shl 7, i_463_ shl 10)), i_465_)).toShort()
                             }
                             if (is_459_.size > 0 && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
                         }
@@ -2308,7 +2308,7 @@ class Class64_Sub3 : Class64 {
                 if (i_503_ >= 0) {
                     if (i_503_ > 127) i_503_ = 127
                 } else i_503_ = 0
-                aShortArray5580!![i_499_] = (Class273.method2057(i_503_, Class273.method2057(i_502_ shl 7, i_501_ shl 10))).toShort()
+                aShortArray5580!![i_499_] = (BoundsConstraintEntry.method2057(i_503_, BoundsConstraintEntry.method2057(i_502_ shl 7, i_501_ shl 10))).toShort()
                 i_499_++
             }
             if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
@@ -2822,7 +2822,7 @@ class Class64_Sub3 : Class64 {
                                     i_668_ += i_512_
                                     if (i_668_ < 0) i_668_ = 0
                                     else if (i_668_ > 127) i_668_ = 127
-                                    aShortArray5580!![i_664_] = (Class273.method2057(i_668_, (Class273.method2057(i_666_ shl 10, i_667_ shl 7)))).toShort()
+                                    aShortArray5580!![i_664_] = (BoundsConstraintEntry.method2057(i_668_, (BoundsConstraintEntry.method2057(i_666_ shl 10, i_667_ shl 7)))).toShort()
                                     if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
                                 }
                                 i_663_++

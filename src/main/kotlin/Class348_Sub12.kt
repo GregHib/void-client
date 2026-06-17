@@ -705,7 +705,7 @@ class Class348_Sub12 internal constructor(var aClass348_Sub21_6751: Class348_Sub
             ), shortArrayOf(4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574, 4444, 4328, 7052, 4490)
         )
         var aAbstractModelRendererArray6742: Array<AbstractModelRenderer?>? = null
-        var aClass273_6743: Class273?
+        var aBoundsConstraintEntry_6743: BoundsConstraintEntry?
         private var aShortArrayArray6744: Array<ShortArray?>?
 
         @Volatile
@@ -719,7 +719,7 @@ class Class348_Sub12 internal constructor(var aClass348_Sub21_6751: Class348_Sub
             aShortArrayArray6744 = null
             aShortArrayArray6749 = null
             val i_0_ = -33 % ((-16 - i) / 53)
-            aClass273_6743 = null
+            aBoundsConstraintEntry_6743 = null
             aShortArrayArrayArray6736 = null
             anIntArrayArray6740 = null
         }
@@ -1428,7 +1428,7 @@ class Class348_Sub12 internal constructor(var aClass348_Sub21_6751: Class348_Sub
             ))
             aLong6748 = 0L
             aShortArrayArrayArray6736 = arrayOf<Array<ShortArray?>?>(aShortArrayArray6741, aShortArrayArray6744, aShortArrayArray6749)
-            aClass273_6743 = Class273("", 13)
+            aBoundsConstraintEntry_6743 = BoundsConstraintEntry("", 13)
         }
     }
 }

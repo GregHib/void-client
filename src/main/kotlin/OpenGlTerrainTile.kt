@@ -627,7 +627,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                     aClass356_8278!!.method3483(99.toByte(), l, class348_sub20s[i_187_])
                 } else class348_sub20s[i_187_] = class348 as Class348_Sub20
             }
-            if (bool) aByteArrayArray8240[i]!![i_176_] = Class273.method2057((aByteArrayArray8240[i]!![i_176_]).toInt(), 1).toByte()
+            if (bool) aByteArrayArray8240[i]!![i_176_] = BoundsConstraintEntry.method2057((aByteArrayArray8240[i]!![i_176_]).toInt(), 1).toByte()
             if (is_180_.size > anInt8280) anInt8280 = is_180_.size
             anInt8284 += is_180_.size
         } catch (runtimeexception: RuntimeException) {

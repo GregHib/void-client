@@ -7,7 +7,7 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
     var anInt9688: Int = 0
     var anInt9689: Int = 0
     var aString9690: String? = null
-    var aClass273_9691: Class273? = null
+    var aBoundsConstraintEntry_9691: BoundsConstraintEntry? = null
     var aStringArray9692: Array<String?>? = null
     var aClass356Array9693: Array<Class356?>? = null
     var anIntArray9694: IntArray? = null

@@ -254,7 +254,7 @@ class SoundEnvelope {
                 if (i_47_ <= i_50_) i_50_ = i_47_ - 1
                 var i_51_ = 0xff and i_49_
                 if (-i_50_ + i_47_ < i_51_) i_51_ = i_47_ - i_50_
-                this.aShortArray2742!![i_48_] = Class273.method2057(i_51_, i_50_ shl 8).toShort()
+                this.aShortArray2742!![i_48_] = BoundsConstraintEntry.method2057(i_51_, i_50_ shl 8).toShort()
                 i_48_++
             }
             i_46_ = ((i_46_ shl Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037)

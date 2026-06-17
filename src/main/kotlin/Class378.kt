@@ -726,7 +726,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         } else if (this.aObjectByteSerializerHolder_8163 == Class69.aObjectByteSerializerHolder_1201) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 2)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 2)
-        } else if (Class273.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) {
+        } else if (BoundsConstraintEntry.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 9)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 2)
         }

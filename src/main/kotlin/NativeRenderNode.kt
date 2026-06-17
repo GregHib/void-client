@@ -396,7 +396,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
         }
 
         init {
-            Class273("", 76)
+            BoundsConstraintEntry("", 76)
             aNodeDeque_10479 = NodeDeque()
         }
     }

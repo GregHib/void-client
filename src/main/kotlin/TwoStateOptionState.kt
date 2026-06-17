@@ -125,7 +125,7 @@ class TwoStateOptionState : GraphicsOptionState {
         fun method1846(i: Int, i_18_: Int, i_19_: Int): Boolean {
             if (i_19_ <= 42) return true
             anInt6143++
-            return Class278.method2075(i_18_, -126, i) or ((0x40000 and i_18_) != 0) || Class273.method2056(i_18_, 122, i)
+            return Class278.method2075(i_18_, -126, i) or ((0x40000 and i_18_) != 0) || BoundsConstraintEntry.method2056(i_18_, 122, i)
         }
 
         @JvmStatic

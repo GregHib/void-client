@@ -84,7 +84,7 @@ class Class69 {
         fun method724(i: Int, i_4_: Int, i_5_: Int): Boolean {
             anInt1191++
             if (i_5_ != 393216) Companion.method723(25, 30, (-113).toByte())
-            return method2352(124, i_4_, i) or ((0x60000 and i) != 0) || Class273.method2056(i, 90, i_4_) || Companion.method723(i, i_4_, (-120).toByte())
+            return method2352(124, i_4_, i) or ((0x60000 and i) != 0) || BoundsConstraintEntry.method2056(i, 90, i_4_) || Companion.method723(i, i_4_, (-120).toByte())
         }
     }
 }

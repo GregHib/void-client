@@ -25,7 +25,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
         @JvmField
         var anInt8355: Int = 0
         @JvmField
-        var aClass273_8356: Class273? = Class273("", 11)
+        var aBoundsConstraintEntry_8356: BoundsConstraintEntry? = BoundsConstraintEntry("", 11)
         @JvmField
         var anInt8357: Int = 0
         @JvmField
@@ -69,7 +69,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
         @JvmStatic
         fun method193(i: Int) {
             if (i == 30) {
-                aClass273_8356 = null
+                aBoundsConstraintEntry_8356 = null
                 aBooleanArrayArrayArray8361 = null
                 aIntRange_8365 = null
             }
@@ -78,7 +78,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
         @JvmStatic
         fun method194(i: Int, i_3_: Int, i_4_: Int, f: Float, i_5_: Int, f_6_: Float, f_7_: Float, f_8_: Float, f_9_: Float, textureGenerator: TextureGenerator?, i_10_: Int): ByteArray {
             anInt8353++
-            if (i_3_ != -1922) aClass273_8356 = null
+            if (i_3_ != -1922) aBoundsConstraintEntry_8356 = null
             val `is` = ByteArray(i * i_5_ * i_10_)
             CameraConfigDefinition.method1919(i, f_8_, `is`, f_6_, 0, f_9_, textureGenerator, f_7_, i_4_, 119.toByte(), i_10_, f, i_5_)
             return `is`
@@ -111,7 +111,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
         @JvmStatic
         fun method197(bool: Boolean): Int {
             anInt8358++
-            if (bool != false) aClass273_8356 = null
+            if (bool != false) aBoundsConstraintEntry_8356 = null
             return Class348_Sub6.anInt6637
         }
 

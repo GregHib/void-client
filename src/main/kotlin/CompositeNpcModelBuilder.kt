@@ -25,7 +25,7 @@ class CompositeNpcModelBuilder {
                         is_10_[5] = 0
                         l = l xor 0xffffffffL.inv()
                     } else {
-                        is_10_[5] = Class273.method2057((widgetDefinition_0_.anInt249), 1073741824)
+                        is_10_[5] = BoundsConstraintEntry.method2057((widgetDefinition_0_.anInt249), 1073741824)
                         l = l xor (is_10_[5].toLong() shl 32)
                     }
                 }
@@ -34,7 +34,7 @@ class CompositeNpcModelBuilder {
                         is_10_[3] = 0
                         l = l xor 0xffffffffL
                     } else {
-                        is_10_[3] = Class273.method2057((widgetDefinition_0_.anInt261), 1073741824)
+                        is_10_[3] = BoundsConstraintEntry.method2057((widgetDefinition_0_.anInt261), 1073741824)
                         l = l xor is_10_[3].toLong()
                     }
                 }
@@ -290,7 +290,7 @@ class CompositeNpcModelBuilder {
                 anInt2099++
                 if (i_62_ == -1) anIntArray2092!![i_61_] = 0
                 else if (modelHeaderCache!!.method1940(-125, i_62_) != null) {
-                    anIntArray2092!![i_61_] = Class273.method2057(1073741824, i_62_)
+                    anIntArray2092!![i_61_] = BoundsConstraintEntry.method2057(1073741824, i_62_)
                     method1234(-100)
                 }
             }
@@ -517,7 +517,7 @@ class CompositeNpcModelBuilder {
             val i_114_ = Class283.anIntArray3661!![i_113_]
             if (modelDefinitionLoader!!.method1203(33.toByte(), i) != null) {
                 if (i_112_ != -1) aLong2094 = -53L
-                anIntArray2092!![i_114_] = Class273.method2057(i, -2147483648)
+                anIntArray2092!![i_114_] = BoundsConstraintEntry.method2057(i, -2147483648)
                 method1234(-54)
             }
         } catch (runtimeexception: RuntimeException) {

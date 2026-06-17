@@ -6,7 +6,7 @@ import BooleanGraphicsOptionState.Companion.method1722
 /* Class273 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class273 internal constructor(string: String?, var anInt5167: Int) : Interface21 {
+class BoundsConstraintEntry internal constructor(string: String?, var anInt5167: Int) : Interface21 {
     override fun toString(): String {
         anInt5166++
         throw IllegalStateException()

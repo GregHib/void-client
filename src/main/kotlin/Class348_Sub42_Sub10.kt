@@ -1,4 +1,4 @@
-import Class273.Companion.method2057
+import BoundsConstraintEntry.Companion.method2057
 import Class305.Companion.method2296
 import Class348_Sub17.Companion.method2929
 import Class348_Sub3.Companion.method2739

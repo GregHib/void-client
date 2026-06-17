@@ -1,4 +1,4 @@
-import Class273.Companion.method2057
+import BoundsConstraintEntry.Companion.method2057
 import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeapBuffer
 import jaggl.OpenGL.Companion.glMatrixMode

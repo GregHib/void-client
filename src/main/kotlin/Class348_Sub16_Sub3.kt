@@ -96,10 +96,10 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             if (i_16_ == 43) anIntArray8896[i_15_] = (NpcSummaryDefinition.method1166(-128, anIntArray8896[i_15_]) - -i_17_)
             if (i_16_ == 64) {
                 if (i_17_ < 64) this.anIntArray8895[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8895[i_15_]), -2)
-                else this.anIntArray8895[i_15_] = Class273.method2057((this.anIntArray8895[i_15_]), 1)
+                else this.anIntArray8895[i_15_] = BoundsConstraintEntry.method2057((this.anIntArray8895[i_15_]), 1)
             }
             if (i_16_ == 65) {
-                if (i_17_ >= 64) this.anIntArray8895[i_15_] = Class273.method2057((this.anIntArray8895[i_15_]), 2)
+                if (i_17_ >= 64) this.anIntArray8895[i_15_] = BoundsConstraintEntry.method2057((this.anIntArray8895[i_15_]), 2)
                 else {
                     method2858(-106, i_15_)
                     this.anIntArray8895[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8895[i_15_]), -3)
@@ -123,7 +123,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             if (i_16_ == 16) this.anIntArray8914[i_15_] = (NpcSummaryDefinition.method1166(-16257, (this.anIntArray8914[i_15_])) + (i_17_ shl 7))
             if (i_16_ == 48) this.anIntArray8914[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8914[i_15_]), -128) - -i_17_
             if (i_16_ == 81) {
-                if (i_17_ >= 64) this.anIntArray8895[i_15_] = Class273.method2057((this.anIntArray8895[i_15_]), 4)
+                if (i_17_ >= 64) this.anIntArray8895[i_15_] = BoundsConstraintEntry.method2057((this.anIntArray8895[i_15_]), 4)
                 else {
                     method2850(i_15_, 0)
                     this.anIntArray8895[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8895[i_15_]), -5)

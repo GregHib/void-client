@@ -44,7 +44,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
 
     override fun method3049(class348_sub49: Class348_Sub49, i: Int, i_21_: Int) {
         anInt9414++
-        if (i_21_ != 31015) aClass273_9415 = null
+        if (i_21_ != 31015) aBoundsConstraintEntry_9415 = null
         if (i == 0) this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1
     }
 
@@ -52,7 +52,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
         @JvmField
         var anInt9414: Int = 0
         @JvmField
-        var aClass273_9415: Class273? = Class273("", 12)
+        var aBoundsConstraintEntry_9415: BoundsConstraintEntry? = BoundsConstraintEntry("", 12)
         @JvmField
         var anInt9416: Int = 0
         @JvmField
@@ -86,8 +86,8 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
 
         @JvmStatic
         fun method3133(i: Byte) {
-            aClass273_9415 = null
-            if (i.toInt() != -109) aClass273_9415 = null
+            aBoundsConstraintEntry_9415 = null
+            if (i.toInt() != -109) aBoundsConstraintEntry_9415 = null
             aShortArray9423 = null
             aShortArray9421 = null
             aShortArrayArray9424 = null
