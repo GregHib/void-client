@@ -171,7 +171,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
                         }
                         if (i_9_ != -1) {
                             var i_13_ = 0
-                            val linkedListIterator = LinkedListIterator(Class233.aLinkedNodeListIterator_3022!!)
+                            val linkedListIterator = LinkedListIterator(ParticleSortRenderer.aLinkedNodeListIterator_3022!!)
                             var class348_sub42_sub13 = (linkedListIterator.method1240(110) as? Class348_Sub42_Sub13)
                             while (class348_sub42_sub13 != null) {
                                 if (i_9_ == i_13_++) return (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).anInt9609

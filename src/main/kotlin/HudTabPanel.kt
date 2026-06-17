@@ -63,13 +63,13 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
                 val i_7_ = i_4_ + Class258_Sub4.aClass373_8552!!.method3594(127.toByte())
                 if (Class348_Sub42_Sub6.aBoolean9535) {
                     var i_8_ = 0
-                    var class348_sub42_sub13 = (Class233.Companion.aLinkedNodeListIterator_3022!!.method1011(-119) as? Class348_Sub42_Sub13?)
+                    var class348_sub42_sub13 = (ParticleSortRenderer.Companion.aLinkedNodeListIterator_3022!!.method1011(-119) as? Class348_Sub42_Sub13?)
                     while (class348_sub42_sub13 != null) {
                         val i_9_ = (31 + i_4_ + Class348_Sub42_Sub5.anInt9532 + i_8_ * 16)
                         i_8_++
                         if ((class348_sub42_sub13.anInt9615) == 1) Class318_Sub2.method2494(i_4_ + Class348_Sub42_Sub5.anInt9532, -256, i_9_, var_renderer, ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?), Class63.anInt1117, i_7_, -1, 124.toByte(), Class237_Sub1.anInt5819, GlArrayBufferObject.anInt4717 - -i_3_, i_6_)
                         else method2431(-1, i_9_, class348_sub42_sub13, i_6_, Class63.anInt1117, -256, i_7_, var_renderer, Class348_Sub42_Sub5.anInt9532 + i_4_, 126, GlArrayBufferObject.anInt4717 - -i_3_, Class237_Sub1.anInt5819)
-                        class348_sub42_sub13 = (Class233.Companion.aLinkedNodeListIterator_3022!!.method1003(44.toByte()) as? Class348_Sub42_Sub13?)
+                        class348_sub42_sub13 = (ParticleSortRenderer.Companion.aLinkedNodeListIterator_3022!!.method1003(44.toByte()) as? Class348_Sub42_Sub13?)
                     }
                     if (Class242.aClass348_Sub42_Sub13_3152 != null) {
                         Class318_Sub7.method2509(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, var_renderer, Class50_Sub3.anInt5252, i_5_, true, ClickFeedbackTask.anInt4669, -16777216)

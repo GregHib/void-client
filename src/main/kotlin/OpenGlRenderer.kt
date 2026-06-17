@@ -93,7 +93,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var anOpenGL7664: OpenGL? = null
     var anInt7688: Int = 0
     private var aMinimapRenderer_7707: MinimapRenderer? = null
-    private val aClass233_7711: Class233
+    private val aParticleSortRenderer_7711: ParticleSortRenderer
     @JvmField
     var anInt7712: Int = 128
     @JvmField
@@ -764,7 +764,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
     override fun method3684(class98: Class98) {
         try {
-            aClass233_7711.method1651(this, (-119).toByte(), -1, class98)
+            aParticleSortRenderer_7711.method1651(this, (-119).toByte(), -1, class98)
             anInt7569++
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, "qo.EF(" + (if (class98 != null) "{...}" else "null") + ')')
@@ -1849,7 +1849,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 anInterface2_7797 = method3731(2, false, 20, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
                 this.aHoverActionEntry_7849 = HoverActionEntry(anInterface2_7797, 5126, 3, 0)
                 this.aHoverActionEntry_7833 = HoverActionEntry(anInterface2_7797, 5126, 2, 12)
-                aClass233_7711.method1654(643267468, this)
+                aParticleSortRenderer_7711.method1654(643267468, this)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, "qo.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
             }
@@ -2163,7 +2163,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
     override fun method3685(class98: Class98, i: Int) {
         try {
-            aClass233_7711.method1651(this, (-116).toByte(), i, class98)
+            aParticleSortRenderer_7711.method1651(this, (-116).toByte(), i, class98)
             anInt7687++
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.FG(" + (if (class98 != null) "{...}" else "null") + ',' + i + ')'))
@@ -2940,7 +2940,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     init {
-        aClass233_7711 = Class233()
+        aParticleSortRenderer_7711 = ParticleSortRenderer()
         aClass101_Sub3_7725 = ProjectionCameraTransform()
         this.aClass101_Sub3_7729 = ProjectionCameraTransform()
         this.anInt7731 = 3

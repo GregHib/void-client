@@ -128,7 +128,7 @@ import RenderConfigFactory.Companion.method1632
 import SceneProjector.Companion.method1635
 import HudTabPanel.Companion.method1641
 import TerrainTileGeometry.Companion.method1645
-import Class233.Companion.method1653
+import ParticleSortRenderer.Companion.method1653
 import Class235.Companion.method1673
 import Class237.Companion.method1677
 import Class237_Sub1.Companion.method1698

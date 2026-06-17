@@ -50,16 +50,16 @@ class Class242 internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, i: In
             anInt3154++
             class348_sub42_sub13.method3162(true)
             var bool = false
-            var class348_sub42_sub13_1_ = (Class233.aLinkedNodeListIterator_3022!!.method1011(-85) as Class348_Sub42_Sub13?)
+            var class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-85) as Class348_Sub42_Sub13?)
             while (class348_sub42_sub13_1_ != null) {
                 if (Class318_Sub2.method2496(class348_sub42_sub13_1_.method3235(-17937), class348_sub42_sub13.method3235(-17937), true)) {
                     method721(class348_sub42_sub13_1_, class348_sub42_sub13, -1)
                     bool = true
                     break
                 }
-                class348_sub42_sub13_1_ = (Class233.aLinkedNodeListIterator_3022!!.method1003(84.toByte()) as Class348_Sub42_Sub13?)
+                class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(84.toByte()) as Class348_Sub42_Sub13?)
             }
-            if (!bool) Class233.aLinkedNodeListIterator_3022!!.method1005(true, class348_sub42_sub13)
+            if (!bool) ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1005(true, class348_sub42_sub13)
         }
     }
 }

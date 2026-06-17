@@ -5,7 +5,10 @@ import jaggl.OpenGL.Companion.glGetFloatv
 import jaggl.OpenGL.Companion.glNormal3f
 import kotlin.math.min
 
-class Class233 internal constructor() {
+/*
+ * Class233
+ */
+class ParticleSortRenderer internal constructor() {
     private val aClass348_Sub49_Sub1_3020: Class348_Sub49_Sub1
     private val aFloatArray3024 = FloatArray(16)
     private var aHoverActionEntry_3025: HoverActionEntry? = null

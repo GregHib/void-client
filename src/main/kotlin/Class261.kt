@@ -185,7 +185,7 @@ class Class261 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
                                 }
                                 if (i_17_ != -1) {
                                     var i_22_ = 0
-                                    val linkedListIterator = LinkedListIterator(Class233.aLinkedNodeListIterator_3022!!)
+                                    val linkedListIterator = LinkedListIterator(ParticleSortRenderer.aLinkedNodeListIterator_3022!!)
                                     var class348_sub42_sub13 = (linkedListIterator.method1240(75) as Class348_Sub42_Sub13?)
                                     while (class348_sub42_sub13 != null) {
                                         if (i_17_ == i_22_) {
@@ -250,7 +250,7 @@ class Class261 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
                             }
                             if (i_30_ != -1) {
                                 var i_34_ = 0
-                                val linkedListIterator = LinkedListIterator(Class233.aLinkedNodeListIterator_3022!!)
+                                val linkedListIterator = LinkedListIterator(ParticleSortRenderer.aLinkedNodeListIterator_3022!!)
                                 var class348_sub42_sub13 = (linkedListIterator.method1240(18) as Class348_Sub42_Sub13?)
                                 while (class348_sub42_sub13 != null) {
                                     if (i_34_ == i_30_) {

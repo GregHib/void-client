@@ -151,7 +151,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                         class348_sub42_sub12!!.method2715(111.toByte())
                         Class73.anInt4776--
                         if (class348_sub42_sub12.aBoolean9611) {
-                            var class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1011(-99) as Class348_Sub42_Sub13?)
+                            var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-99) as Class348_Sub42_Sub13?)
                             while (class348_sub42_sub13 != null) {
                                 if (class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601) {
                                     var bool = false
@@ -166,7 +166,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                                     }
                                     if (bool) break
                                 }
-                                class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1003(110.toByte()) as Class348_Sub42_Sub13?)
+                                class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(110.toByte()) as Class348_Sub42_Sub13?)
                             }
                         } else {
                             val l = (class348_sub42_sub12.aLong9600)

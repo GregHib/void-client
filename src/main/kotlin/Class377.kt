@@ -375,7 +375,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     override fun method3940(i: Int) {
         glMatrixMode(5890)
         anInt9888++
-        if (Class348_Sub42_Sub18.aClass251_9685 != this.aClass251Array8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(Class233.aFloatArray3015!!, 0), 0)
+        if (Class348_Sub42_Sub18.aClass251_9685 != this.aClass251Array8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
         else glLoadIdentity()
         if (i != 1) method3862(37, null)
         glMatrixMode(5888)
@@ -530,21 +530,21 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         if (i != 1) method3950(69)
         if (this.aSingletonMarker_8184.method1450(-98)) {
             if (!aBoolean9914) {
-                glLoadMatrixf(this.aClass101_Sub2_8083.method918(Class233.aFloatArray3015!!, 0), 0)
+                glLoadMatrixf(this.aClass101_Sub2_8083.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
                 aBoolean9914 = true
                 method3892(0)
                 method3823((-104).toByte())
             }
             if (!this.aBoolean8069) {
                 glPushMatrix()
-                glMultMatrixf(this.aClass101_Sub2_8074.method918(Class233.aFloatArray3015!!, i xor 0x1), 0)
+                glMultMatrixf(this.aClass101_Sub2_8074.method918(ParticleSortRenderer.aFloatArray3015!!, i xor 0x1), 0)
                 aBoolean9911 = true
             } else aBoolean9911 = false
         } else if (this.aBoolean8069) {
             glLoadIdentity()
             aBoolean9911 = false
         } else {
-            glLoadMatrixf(this.aClass101_Sub2_8074.method918(Class233.aFloatArray3015!!, 0), 0)
+            glLoadMatrixf(this.aClass101_Sub2_8074.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
             aBoolean9911 = false
         }
     }

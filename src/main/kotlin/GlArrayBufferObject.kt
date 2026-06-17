@@ -89,12 +89,12 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
             val i_12_ = i_5_ + Class258_Sub4.aClass373_8552!!.method3594(95.toByte())
             if (Class348_Sub42_Sub6.aBoolean9535) {
                 var i_15_ = 0
-                var class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1011(-73) as? Class348_Sub42_Sub13?)
+                var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-73) as? Class348_Sub42_Sub13?)
                 while (class348_sub42_sub13 != null) {
                     val i_16_ = 16 * i_15_ + i_7_ - (-i_10_ + -13)
                     if (i_4_ + anInt4717 < i_11_ && i_11_ < Class63.anInt1117 + (i_4_ + anInt4717) && i_12_ > -13 + i_16_ && i_16_ - -4 > i_12_ && ((class348_sub42_sub13.anInt9615) > 1 || (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).aBoolean9610)) var_renderer.aa(anInt4717 + i_4_, -12 + i_16_, Class63.anInt1117, 16, (255 + -Class348_Sub42_Sub4.anInt9511 shl 24) or Class264.anInt3374, 1)
                     i_15_++
-                    class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1003(61.toByte()) as? Class348_Sub42_Sub13?)
+                    class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(61.toByte()) as? Class348_Sub42_Sub13?)
                 }
                 if (Class242.aClass348_Sub42_Sub13_3152 != null) {
                     i_15_ = 0
@@ -121,13 +121,13 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
             method826(i_10_, anInt4717 + i_4_, Class63.anInt1117, Class237_Sub1.anInt5819, -75, Class348_Sub42_Sub5.anInt9532 - -i_5_, var_renderer)
             if (Class348_Sub42_Sub6.aBoolean9535) {
                 var i_20_ = 0
-                var class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1011(-77) as Class348_Sub42_Sub13?)
+                var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-77) as Class348_Sub42_Sub13?)
                 while (class348_sub42_sub13 != null) {
                     val i_21_ = i_10_ + (i_5_ + Class348_Sub42_Sub5.anInt9532 + 13 - -(16 * i_20_))
                     i_20_++
                     if (class348_sub42_sub13.anInt9615 == 1) Class318_Sub2.method2494(Class348_Sub42_Sub5.anInt9532 - -i_5_, 0xffffff.inv() or Class5_Sub2.anInt8363, i_21_, var_renderer, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12?), Class63.anInt1117, i_12_, Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv(), 125.toByte(), Class237_Sub1.anInt5819, anInt4717 - -i_4_, i_11_)
                     else method2431(0xffffff.inv() or Class348_Sub42_Sub11.anInt9586, i_21_, class348_sub42_sub13, i_11_, Class63.anInt1117, 0xffffff.inv() or Class5_Sub2.anInt8363, i_12_, var_renderer, Class348_Sub42_Sub5.anInt9532 - -i_5_, i xor 0x60, i_4_ + anInt4717, Class237_Sub1.anInt5819)
-                    class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1003(111.toByte()) as Class348_Sub42_Sub13?)
+                    class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(111.toByte()) as Class348_Sub42_Sub13?)
                 }
                 if (Class242.aClass348_Sub42_Sub13_3152 != null) {
                     i_20_ = 0

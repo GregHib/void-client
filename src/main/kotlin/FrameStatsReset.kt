@@ -59,7 +59,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class376.anInt4551 = 0
             GlTextureBase.anInt5098 = 0
             Class286_Sub4.anInt6245 = 0
-            Class233.anInt3021 = 0
+            ParticleSortRenderer.anInt3021 = 0
             Class73.anInt4781 = 0
             ObjectByteSerializerHolder.anInt2283 = 0
             Class285_Sub1.anInt8495 = 0
@@ -397,7 +397,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7536 = 0
             Class279.anInt3611 = 0
             NativeVertexBuffer.anInt4826 = 0
-            Class233.anInt3017 = 0
+            ParticleSortRenderer.anInt3017 = 0
             NativeRenderer.anInt7904 = 0
             Class51.anInt867 = 0
             Class318_Sub1_Sub5_Sub1.anInt10121 = 0
@@ -1040,7 +1040,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class373.anInt4533 = 0
             Class348_Sub16_Sub3.anInt8935 = 0
             Class377.anInt9893 = 0
-            Class233.anInt3023 = 0
+            ParticleSortRenderer.anInt3023 = 0
             Class348_Sub40_Sub10.anInt9177 = 0
             Class339.anInt4208 = 0
             OpenGlRenderer.anInt7583 = 0
@@ -2426,7 +2426,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub14.anInt9630 = 0
             Class348_Sub31.anInt6919 = 0
             Class318_Sub1_Sub5_Sub2.anInt10169 = 0
-            Class233.anInt3019 = 0
+            ParticleSortRenderer.anInt3019 = 0
             Class348_Sub9.anInt6669 = 0
             Class348_Sub5_Sub1.anInt8827 = 0
             Client.anInt5181 = 0
@@ -2488,7 +2488,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class290.anInt3715 = 0
             Class70.anInt1206 = 0
             Class377.anInt9879 = 0
-            Class233.anInt3016 = 0
+            ParticleSortRenderer.anInt3016 = 0
             Class348_Sub31_Sub2.anInt9076 = 0
             Class367_Sub4.anInt7313 = 0
             Class348_Sub49_Sub2.anInt9761 = 0
@@ -3779,7 +3779,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub22.anInt6072 = 0
             Class97.anInt1555 = 0
             Class64_Sub3.anInt5548 = 0
-            Class233.anInt3018 = 0
+            ParticleSortRenderer.anInt3018 = 0
             VarbitDefLoader.anInt2591 = 0
             Class361.anInt4445 = 0
             Class348_Sub31_Sub2.anInt9071 = 0
