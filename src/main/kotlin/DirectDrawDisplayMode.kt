@@ -6,7 +6,10 @@ import com.ms.win32.User32
 import java.awt.Component
 import java.awt.Frame
 
-class Class134 : IEnumModesCallback {
+/*
+ * Class134
+ */
+class DirectDrawDisplayMode : IEnumModesCallback {
     private val aDirectDraw4607 = DirectDraw()
     fun method1144(ddsurfacedesc: DDSurfaceDesc, iunknown: IUnknown?) {
         if (anIntArray4606 == null) anInt4608 += 4

@@ -36,7 +36,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     private var aClass144_3798: Class144? = null
     var anEventQueue3799: EventQueue? = null
     private var aBoolean3801 = false
-    private var aClass134_3802: Class134? = null
+    private var aDirectDrawDisplayMode_3802: DirectDrawDisplayMode? = null
 
     fun method2229(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte): Class144 {
         if (i_3_.toInt() != -11) aLong3781 = 34L
@@ -131,10 +131,10 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                             val frame = (Frame("Jagex Full Screen"))
                             class144.anObject1998 = frame
                             frame.setResizable(false)
-                            if (this.aBoolean3794) aClass134_3802!!.method1146((class144.anInt2000 and 0xffff), (class144.anInt1999 shr 16), (class144.anInt2000 ushr 16), -43, 0xffff and (class144.anInt1999), frame)
+                            if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1146((class144.anInt2000 and 0xffff), (class144.anInt1999 shr 16), (class144.anInt2000 ushr 16), -43, 0xffff and (class144.anInt1999), frame)
                             else (anObject3793 as Class7).method209(frame, ((class144.anInt2000) ushr 16), (0xffff and (class144.anInt2000)), ((class144.anInt1999) shr 16), ((class144.anInt1999) and 0xffff))
                         } else if (i == 7) {
-                            if (this.aBoolean3794) aClass134_3802!!.method1147(((class144.anObject1996) as Frame?), 8)
+                            if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1147(((class144.anObject1996) as Frame?), 8)
                             else (anObject3793 as Class7).method211()
                         } else if (i == 12) {
                             val class234: Class234? = (method2241(((class144.anObject1996) as String?), 12606, Companion.aString3789, anInt3792))
@@ -174,7 +174,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                             }
                         } else throw Exception("")
                     } else if (!this.aBoolean3794) class144.anObject1998 = (anObject3793 as Class7).method210()
-                    else class144.anObject1998 = aClass134_3802!!.method1145(true)
+                    else class144.anObject1998 = aDirectDrawDisplayMode_3802!!.method1145(true)
                 } else throw Exception("")
                 class144.anInt1997 = 1
             } catch (throwable: Throwable) {
@@ -317,7 +317,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         if (i != -4) method2245(null, 50)
         if (!this.aBoolean3777) return false
         if (this.aBoolean3794) {
-            return aClass134_3802 != null
+            return aDirectDrawDisplayMode_3802 != null
         }
         return anObject3793 != null
     }
@@ -400,7 +400,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
             }
             try {
                 if (!this.aBoolean3794) anObject3793 = Class7()
-                else aClass134_3802 = Class134()
+                else aDirectDrawDisplayMode_3802 = DirectDrawDisplayMode()
             } catch (throwable: Throwable) {
                 /* empty */
             }
