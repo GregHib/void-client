@@ -44,7 +44,7 @@ class Class369_Sub2(class221: Class221?, class341: Class341?, i: Int, i_2_: Int,
             anInt8593++
             if (i_0_.toInt() != -23) return null
             var class137: Class137? = null
-            if (Class299_Sub2.aClass78_6328 != null) class137 = Class137(i, Class299_Sub2.aClass78_6328, Class100.aClass78Array1579!![i], 1000000)
+            if (Class299_Sub2.aClass78_6328 != null) class137 = Class137(i, Class299_Sub2.aClass78_6328, MinimapRenderer.aClass78Array1579!![i], 1000000)
             Class13.aClass314_Sub1Array223!![i] = Class175.aClass340_2327!!.method2673(class137, i, Class277.aClass137_3568, 255)
             Class13.aClass314_Sub1Array223!![i]!!.method2346(27872)
             return Class45(Class13.aClass314_Sub1Array223!![i]!!, bool, i_1_)

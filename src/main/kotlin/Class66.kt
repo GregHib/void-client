@@ -187,7 +187,7 @@ object Class66 {
                 anInt1173 -= 3
                 ShaderProgram.anInt7276 = anIntArray1149!![anInt1173]
                 Class57.aClass227_1055 = Class38.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
-                if (Class57.aClass227_1055 == null) Class57.aClass227_1055 = Class100.aClass227_1591
+                if (Class57.aClass227_1055 == null) Class57.aClass227_1055 = MinimapRenderer.aClass227_1591
                 Class290.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
                 val class348_sub47 = method2148(Class348_Sub14.aClass351_6766, (Class348_Sub23_Sub2.aClass77_9029), -111)
@@ -3773,7 +3773,7 @@ object Class66 {
                     val i_307_ = anIntArray1149!![anInt1173 + 1]
                     val i_308_ = anIntArray1149!![anInt1173 + 2]
                     val class46 = method2570(1512932720, i_308_)
-                    Class100.method887(class46, i_306_, i_307_, 2147483647)
+                    MinimapRenderer.method887(class46, i_306_, i_307_, 2147483647)
                     return
                 }
                 if (i == 3109) {
@@ -3781,7 +3781,7 @@ object Class66 {
                     val i_309_ = anIntArray1149!![anInt1173]
                     val i_310_ = anIntArray1149!![anInt1173 + 1]
                     val class46 = if (bool) aClass46_1169 else aClass46_1150
-                    Class100.method887(class46, i_309_, i_310_, 2147483647)
+                    MinimapRenderer.method887(class46, i_309_, i_310_, 2147483647)
                     return
                 }
                 if (i == 3110) {

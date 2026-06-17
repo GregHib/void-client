@@ -984,7 +984,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class238_Sub1.anInt5839 = 0
             Class64_Sub3.anInt5565 = 0
             NativeRenderer.anInt8043 = 0
-            Class100.anInt1590 = 0
+            MinimapRenderer.anInt1590 = 0
             Class14_Sub3.anInt8632 = 0
             Class59_Sub1_Sub1.anInt8653 = 0
             Class37.anInt491 = 0
@@ -1240,7 +1240,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class337.anInt4176 = 0
             Class348_Sub40.anInt7043 = 0
             Class348_Sub5_Sub1.anInt8829 = 0
-            Class100.anInt1580 = 0
+            MinimapRenderer.anInt1580 = 0
             Class31.anInt432 = 0
             Renderer.anInt4566 = 0
             anInt1896 = 0
@@ -2213,7 +2213,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub15.anInt9218 = 0
             Class22.anInt340 = 0
             Class239_Sub6.anInt5895 = 0
-            Class100.anInt1589 = 0
+            MinimapRenderer.anInt1589 = 0
             Class239_Sub22.anInt6074 = 0
             Class61.anInt1108 = 0
             Class348_Sub23_Sub2.anInt9025 = 0
@@ -2372,7 +2372,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub16_Sub3.anInt8924 = 0
             Class286_Sub2.anInt6210 = 0
             Class278.anInt3591 = 0
-            Class100.anInt1577 = 0
+            MinimapRenderer.anInt1577 = 0
             Class348_Sub16_Sub2.anInt8882 = 0
             Class348_Sub16_Sub1.anInt8850 = 0
             Class242.anInt3151 = 0
@@ -3250,7 +3250,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub20.anInt6052 = 0
             Class286_Sub2.anInt6206 = 0
             Class318_Sub1_Sub3_Sub3.anInt10249 = 0
-            Class100.anInt1587 = 0
+            MinimapRenderer.anInt1587 = 0
             Class113.anInt1741 = 0
             OpenGlTerrainTile.anInt8271 = 0
             Class124.anInt1858 = 0

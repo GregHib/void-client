@@ -109,7 +109,7 @@ class Class88 {
         var anInt1504: Int = 0
         fun method841(i: Int): Array<Class227?> {
             anInt1504++
-            return (arrayOf<Class227?>(Class191.aClass227_2568, Class100.aClass227_1591, Class6.aClass227_151))
+            return (arrayOf<Class227?>(Class191.aClass227_2568, MinimapRenderer.aClass227_1591, Class6.aClass227_151))
         }
 
         @JvmStatic

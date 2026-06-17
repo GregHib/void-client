@@ -40,7 +40,7 @@ object Class331 {
     fun method2636(i: Int) {
         val i_5_ = -114 % ((i - 22) / 33)
         anInt4137++
-        Class100.aClass356_1585!!.method3481(0)
+        MinimapRenderer.aClass356_1585!!.method3481(0)
         OpenGlTerrainTile.aClass107_8241!!.method1009(2110355138)
         Class367_Sub4.aClass107_7325!!.method1009(2110355138)
     }

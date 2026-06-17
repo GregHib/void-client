@@ -92,7 +92,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var anInt7645 = 0
     private var anOpenGL7664: OpenGL? = null
     var anInt7688: Int = 0
-    private var aClass100_7707: Class100? = null
+    private var aMinimapRenderer_7707: MinimapRenderer? = null
     private val aClass233_7711: Class233
     @JvmField
     var anInt7712: Int = 128
@@ -590,8 +590,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         this.anInt7848 = i_43_
         this.anInt7809 = i_44_
         if (aBoolean7859) {
-            aClass100_7707!!.aClass286_Sub1_1586.method2141(false)
-            aClass100_7707!!.aClass286_Sub1_1586.method2143(34336)
+            aMinimapRenderer_7707!!.aClass286_Sub1_1586.method2141(false)
+            aMinimapRenderer_7707!!.aClass286_Sub1_1586.method2143(34336)
         }
     }
 
@@ -663,8 +663,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 }
                 i_48_ = class12.anInt203
             } else method3767(-21974)
-            aClass100_7707!!.method884(i_49_.toInt(), bool, i_51_.toInt(), i_50_, 12.toByte(), bool_46_)
-            if (!aClass100_7707!!.method885(i_48_, (-124).toByte(), class258_sub3)) {
+            aMinimapRenderer_7707!!.method884(i_49_.toInt(), bool, i_51_.toInt(), i_50_, 12.toByte(), bool_46_)
+            if (!aMinimapRenderer_7707!!.method885(i_48_, (-124).toByte(), class258_sub3)) {
                 method3771((-86).toByte(), class258_sub3)
                 method3761(0, i_48_)
             }
@@ -1005,7 +1005,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (i > 77) {
             glLoadIdentity()
             glMultMatrixf(this.aClass101_Sub3_7766.method940(1), 0)
-            if (aBoolean7859) aClass100_7707!!.aClass286_Sub1_1586.method2141(false)
+            if (aBoolean7859) aMinimapRenderer_7707!!.aClass286_Sub1_1586.method2141(false)
             method3796(16384)
             method3783(0)
         }
@@ -1080,7 +1080,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         try {
             anInt7619++
             val i_121_ = interface8!!.method34(-5711)
-            if (i_118_ >= -127) aClass100_7707 = null
+            if (i_118_ >= -127) aMinimapRenderer_7707 = null
             i_120_ *= method3785(i_121_, 4)
             method3793(1, interface8)
             glDrawElements(i_119_, i, i_121_, (interface8.method36(78.toByte()) + i_120_.toLong()))
@@ -2524,7 +2524,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
     override fun method3639(): Boolean {
         anInt7667++
-        return aClass100_7707!!.method889((-91).toByte(), 3)
+        return aMinimapRenderer_7707!!.method889((-91).toByte(), 3)
     }
 
     override fun method3666(): Boolean {
@@ -3087,7 +3087,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         aClass348_Sub5_Sub1_7721 = null
                     }
                 }
-                aClass100_7707 = Class100(this)
+                aMinimapRenderer_7707 = MinimapRenderer(this)
                 method3791(25858)
                 method3745(123.toByte())
                 method3673()

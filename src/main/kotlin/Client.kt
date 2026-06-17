@@ -1,8 +1,8 @@
 import DelegatingRenderCanvas.Companion.method120
 import DelegatingRenderCanvas.Companion.method123
 import ParticleEmitterNode.Companion.method218
-import Class100.Companion.method886
-import Class100.Companion.method887
+import MinimapRenderer.Companion.method886
+import MinimapRenderer.Companion.method887
 import Class101.Companion.method906
 import Class101.Companion.method909
 import Class101_Sub1.Companion.method911
@@ -691,7 +691,7 @@ class Client : GameAppletFrame() {
         //        try {
         if (Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785 != null) {
             Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785!!), 5200, 0)
-            for (i_3_ in 0..36) Class100.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234Array3795!![i_3_]!!), 6000, 0)
+            for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234Array3795!![i_3_]!!), 6000, 0)
             Class235.aClass78_3075 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3779!!), 6000, 0)
             Class277.aClass137_3568 = Class137(255, Class299_Sub2.aClass78_6328, Class235.aClass78_3075, 500000)
             Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3788!!), 24, 0)
@@ -1282,7 +1282,7 @@ class Client : GameAppletFrame() {
         }
         try {
             Class299_Sub2.aClass78_6328!!.method790((-62).toByte())
-            for (i_6_ in i..36) Class100.aClass78Array1579!![i_6_]!!.method790(118.toByte())
+            for (i_6_ in i..36) MinimapRenderer.aClass78Array1579!![i_6_]!!.method790(118.toByte())
             Class235.aClass78_3075!!.method790((-84).toByte())
             Class374.aClass78_4538!!.method790(80.toByte())
             Class348_Sub46.method3317((-53).toByte())

@@ -135,7 +135,7 @@ class Class239_Sub17 : Class239 {
             for (i_13_ in 9 downTo 5) {
                 val string = method3561(i_13_, class46, true)
                 if (string != null) {
-                    Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-122).toByte(), false, class46.anInt704, class46.anInt812, true, 1011, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string, (1 + i_13_).toLong(), Class100.method888(57.toByte(), i_13_, class46))
+                    Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-122).toByte(), false, class46.anInt704, class46.anInt812, true, 1011, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string, (1 + i_13_).toLong(), MinimapRenderer.method888(57.toByte(), i_13_, class46))
                     Class335.anInt4169++
                 }
             }
@@ -147,7 +147,7 @@ class Class239_Sub17 : Class239 {
             for (i_14_ in 4 downTo 0) {
                 val string_15_ = method3561(i_14_, class46, true)
                 if (string_15_ != null) {
-                    Class50_Sub3.method466(false, class46.aString752, class46.anInt830, (-67).toByte(), false, class46.anInt704, class46.anInt812, true, 18, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string_15_, (1 + i_14_).toLong(), Class100.method888(57.toByte(), i_14_, class46))
+                    Class50_Sub3.method466(false, class46.aString752, class46.anInt830, (-67).toByte(), false, class46.anInt704, class46.anInt812, true, 18, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string_15_, (1 + i_14_).toLong(), MinimapRenderer.method888(57.toByte(), i_14_, class46))
                     Class335.anInt4169++
                 }
             }
