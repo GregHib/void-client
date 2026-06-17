@@ -63,7 +63,7 @@ class Class30 internal constructor(private var anInt409: Int, private var anInt4
             anInt414++
             Class336.anInt4171 = i_2_
             Class305.anInt3861 = i_0_
-            Class18.anInt282 = i
+            GlFramebufferBlitter.anInt282 = i
             Class205.anInt2688 = i_3_
         }
 

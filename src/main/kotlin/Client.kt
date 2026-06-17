@@ -80,8 +80,8 @@ import ObjectByteSerializerHolder.Companion.method1329
 import SizeBoundedSoftCache.Companion.method1343
 import PingHostListHolder.method1351
 import ScriptOpcodeHolder.method1355
-import Class18.Companion.method273
-import Class18.Companion.method277
+import GlFramebufferBlitter.Companion.method273
+import GlFramebufferBlitter.Companion.method277
 import SpotAnimDefinition.Companion.method1369
 import LoadProgressCounters.Companion.method1373
 import LoadProgressCounters.Companion.method1375

@@ -7,7 +7,10 @@ import jaggl.OpenGL.Companion.glTexCoord2f
 import jaggl.OpenGL.Companion.glVertex2i
 import kotlin.math.min
 
-class Class18 internal constructor(var_ha_Sub2: OpenGlRenderer) {
+/*
+ * Class18
+ */
+class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     private var anInt275 = 1
     private var anInt276 = 0
     private var aClass206_281: Class206? = null

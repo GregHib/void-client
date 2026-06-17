@@ -98,7 +98,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var anInt7712: Int = 128
     @JvmField
     var anInt7713: Int = 0
-    private val aClass18_7720: Class18?
+    private val aGlFramebufferBlitter_7720: GlFramebufferBlitter?
     private var aClass348_Sub5_Sub1_7721: Class348_Sub5_Sub1? = null
     private val aClass354_7723: Class354
     private val aClass101_Sub3_7725: ProjectionCameraTransform
@@ -1386,7 +1386,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             class348 = aClass262_7732.method1990(55.toByte())
         }
         anInt7563++
-        if (aClass18_7720 != null) aClass18_7720.method279((-126).toByte())
+        if (aGlFramebufferBlitter_7720 != null) aGlFramebufferBlitter_7720.method279((-126).toByte())
         if (anOpenGL7664 != null) {
             method3797(0)
             val enumeration = aHashtable7577.keys()
@@ -1511,7 +1511,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
     override fun method3710() {
         if (aClass348_Sub5_Sub1_7721 != null && aClass348_Sub5_Sub1_7721!!.method2760(1.toByte())) {
-            aClass18_7720!!.method278(aClass348_Sub5_Sub1_7721!!, true)
+            aGlFramebufferBlitter_7720!!.method278(aClass348_Sub5_Sub1_7721!!, true)
             aClass354_7723.method3463((-110).toByte())
         }
         anInt7612++
@@ -2102,7 +2102,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7670++
         if (aClass348_Sub5_Sub1_7721 != null) {
             if (!aClass348_Sub5_Sub1_7721!!.method2760(1.toByte())) {
-                if (!aClass18_7720!!.method274(aClass348_Sub5_Sub1_7721!!, true)) return false
+                if (!aGlFramebufferBlitter_7720!!.method274(aClass348_Sub5_Sub1_7721!!, true)) return false
                 aClass354_7723.method3463((-110).toByte())
             }
             return true
@@ -2617,7 +2617,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     override fun method3698() {
-        aClass18_7720!!.method272(-53)
+        aGlFramebufferBlitter_7720!!.method272(-53)
         anInt7595++
     }
 
@@ -2751,7 +2751,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     override fun method3658(i: Int, i_459_: Int, i_460_: Int, i_461_: Int) {
-        aClass18_7720!!.method275(i_460_, i, i_461_, i_459_, -1)
+        aGlFramebufferBlitter_7720!!.method275(i_460_, i, i_461_, i_459_, -1)
         anInt7651++
     }
 
@@ -3079,8 +3079,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 aClass354_7723 = Class354(this, this.aRenderConfig4579)
                 method3786(false)
                 this.aGlowPostProcessor_7736 = GlowPostProcessor(this)
-                aClass18_7720 = Class18(this)
-                if (aClass18_7720.method280(1)) {
+                aGlFramebufferBlitter_7720 = GlFramebufferBlitter(this)
+                if (aGlFramebufferBlitter_7720.method280(1)) {
                     aClass348_Sub5_Sub1_7721 = Class348_Sub5_Sub1(this)
                     if (!aClass348_Sub5_Sub1_7721!!.method2767(104.toByte())) {
                         aClass348_Sub5_Sub1_7721!!.method2763((-124).toByte())

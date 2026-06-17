@@ -103,7 +103,7 @@ class Class239_Sub24 : Class239 {
         fun method1823(var_renderer: Renderer, i: Int, i_4_: Int, i_5_: Byte) {
             anInt6088++
             val i_6_ = 56 % ((68 - i_5_) / 58)
-            if (i >= 0 && i_4_ >= 0 && Class18.anInt282 != 0 && Class305.anInt3861 != 0) {
+            if (i >= 0 && i_4_ >= 0 && GlFramebufferBlitter.anInt282 != 0 && Class305.anInt3861 != 0) {
                 val abstractCameraTransform: AbstractCameraTransform
                 val i_7_: Int
                 val i_8_: Int
@@ -122,12 +122,12 @@ class Class239_Sub24 : Class239 {
                     i_11_ = i + MinimapFlagRenderer.method1082(-81, false)
                     i_12_ = Class348_Sub23.method2960(false, -52) + i_4_
                 } else {
-                    var_renderer.DA(Class336.anInt4171, Class205.anInt2688, Class18.anInt282, Class305.anInt3861)
+                    var_renderer.DA(Class336.anInt4171, Class205.anInt2688, GlFramebufferBlitter.anInt282, Class305.anInt3861)
                     i_8_ = Class205.anInt2688
                     i_9_ = Class305.anInt3861
                     i_7_ = Class336.anInt4171
-                    i_10_ = Class18.anInt282
-                    var_renderer.KA(ConfigValueProvider.anInt4911, Class238_Sub1.anInt5832, Class18.anInt282, Class305.anInt3861)
+                    i_10_ = GlFramebufferBlitter.anInt282
+                    var_renderer.KA(ConfigValueProvider.anInt4911, Class238_Sub1.anInt5832, GlFramebufferBlitter.anInt282, Class305.anInt3861)
                     abstractCameraTransform = var_renderer.method3654()
                     abstractCameraTransform.method903(GlRectangleTexture.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, Class348_Sub51.anInt7244)
                     var_renderer.method3638(abstractCameraTransform)
