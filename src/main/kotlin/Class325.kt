@@ -534,7 +534,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 0 else 1))
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(90, Class301.anInt3829)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(90, HeightMapNoise.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntMiddle(OrientationRotator.anInt2046, 44.toByte())
                             Class348_Sub42_Sub14.method3243(120, class348_sub47)
                             Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)
@@ -616,7 +616,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), OrientationRotator.anInt2046)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-89).toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -127)) 0 else 1))
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-116, Class301.anInt3829)
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-116, HeightMapNoise.anInt3829)
                                 Class348_Sub42_Sub14.method3243(122, class348_sub47)
                                 PixelBlender.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-107).toByte(), npc.method2436(88.toByte()), 0, npc.method2436(108.toByte()), -2, 0)
                             }
@@ -656,7 +656,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 val class348_sub47 = method2148((Class52.aClass351_4907), (Class348_Sub23_Sub2.aClass77_9029), -93)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class301.anInt3829, 3.toByte())
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(HeightMapNoise.anInt3829, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-89).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -127)) 1 else 0))
                                 Class348_Sub42_Sub14.method3243(-33, class348_sub47)
@@ -749,7 +749,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Client.anInt5187++
                             val class348_sub47 = method2148(Class344.aClass351_4264, (Class348_Sub23_Sub2.aClass77_9029), -127)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(ArbVertexProgram.regionTileX - -i_74_, 3.toByte())
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-85, Class301.anInt3829)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-85, HeightMapNoise.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(127.toByte(), OrientationRotator.anInt2046)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-84, Class90.regionTileY + i_75_)
@@ -779,7 +779,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             SpriteArchiveLoader.anInt385 = i_73_
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub16_Sub1.aClass351_8857), (Class348_Sub23_Sub2.aClass77_9029), -105)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class301.anInt3829)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), HeightMapNoise.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, ArbVertexProgram.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntLittle(-128, OrientationRotator.anInt2046)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-82, Class90.regionTileY + i_75_)
@@ -897,7 +897,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 val class348_sub47 = method2148((Class52.aClass351_4907), (Class348_Sub23_Sub2.aClass77_9029), -127)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle((LocalPlayerState.aPlayer_1907!!.anInt10290), 3.toByte())
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class301.anInt3829, 3.toByte())
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(HeightMapNoise.anInt3829, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-29).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -121)) 1 else 0))
                                 Class348_Sub42_Sub14.method3243(-40, class348_sub47)

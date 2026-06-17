@@ -85,7 +85,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                         val class348_sub47 = WaterMaterialPass.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(`is`[i_4_], 3.toByte())
-                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class301.anInt3829, 3.toByte())
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(HeightMapNoise.anInt3829, 3.toByte())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-64).toByte(), 0)
                         Class348_Sub42_Sub14.method3243(116, class348_sub47)

@@ -229,7 +229,7 @@ import TextureCubeProvider.Companion.method2268
 import CubemapTextureImplSource.Companion.method2272
 import CacheStateResetter.method176
 import CircleHitbox.Companion.method322
-import Class301.method2281
+import HeightMapNoise.method2281
 import Class303.method2286
 import Class305.Companion.method2294
 import Class309.Companion.method2310

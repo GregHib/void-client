@@ -136,7 +136,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             MinimapStateReset.method1122(0)
             GlArrayBufferObject.anInt4718 = 0
             Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1314((-107).toByte())
-            Class301.method2282(-12648)
+            HeightMapNoise.method2282(-12648)
             Class50_Sub3.method465(i + -1636518175)
             FloatCameraTransform.aLong5745 = 0L
             LightingOptionState.aClass348_Sub26_5881 = null

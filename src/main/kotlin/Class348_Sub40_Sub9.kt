@@ -67,11 +67,11 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
                 RegionSceneLoader.aByteArrayArrayArray3700 = null
                 Class46.method440(0, (-61).toByte())
             } else if (i_0_ == 1) {
-                Class301.method2280(0.toByte(), 28587)
+                HeightMapNoise.method2280(0.toByte(), 28587)
                 Class46.method440(512, (-61).toByte())
                 if (Class348_Sub33.aByteArrayArrayArray6962 != null) Class318_Sub1_Sub3_Sub4.method2468(3613)
             } else {
-                Class301.method2280((-4 + TextureQualityOptionState.anInt6006 and 0xff).toByte(), 28587)
+                HeightMapNoise.method2280((-4 + TextureQualityOptionState.anInt6006 and 0xff).toByte(), 28587)
                 Class46.method440(2, (-61).toByte())
             }
             Class318_Sub1_Sub3_Sub5.anInt10395 = Class355.anInt4372

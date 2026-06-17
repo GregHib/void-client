@@ -159,7 +159,7 @@ class Class339 : Runnable {
                 Class362.anInt4458 = class46.anInt695
                 ParticleEmitterFactory.anInt3176 = i
                 Class38.anInt500 = i_13_
-                Class301.anInt3829 = class46.anInt812
+                HeightMapNoise.anInt3829 = class46.anInt812
                 RenderNode.aBoolean9722 = true
                 Class9.anInt169 = class46.anInt704
                 Class348_Sub49_Sub1.anInt9747 = class46.anInt824

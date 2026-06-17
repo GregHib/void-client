@@ -35,7 +35,7 @@ object ItemActionPacketSender {
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), class46.anInt830)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-123, Class9.anInt169)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class301.anInt3829)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), HeightMapNoise.anInt3829)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(92, class46.anInt704)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), class46.anInt812)
             Class348_Sub42_Sub14.method3243(-89, class348_sub47)

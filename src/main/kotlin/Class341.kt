@@ -87,7 +87,7 @@ class Class341 {
                     class348_sub36.anObjectArray6987 = class46.anObjectArray680
                     method705(class348_sub36)
                 }
-                Class301.anInt3829 = -1
+                HeightMapNoise.anInt3829 = -1
                 RenderNode.aBoolean9722 = false
                 Class362.anInt4458 = -1
                 if (class46 != null) method1916(-9343, class46)

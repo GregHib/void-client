@@ -36,7 +36,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.method3379(2, 11)
             anInt5802++
             if (i < 28) aLinkedQueueNode_5800 = null
-            Class301.method2282(-12648)
+            HeightMapNoise.method2282(-12648)
             System.gc()
         }
 
@@ -1815,7 +1815,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7906 = 0
             OpenGlRenderer.anInt7662 = 0
             Class348_Sub3.anInt6587 = 0
-            Class301.anInt3830 = 0
+            HeightMapNoise.anInt3830 = 0
             NativeRenderer.anInt7972 = 0
             ModelDefinitionLoader.anInt2049 = 0
             NativeRenderer.anInt7990 = 0
@@ -2655,7 +2655,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SeqDefinitionCache.anInt3353 = 0
             Class348_Sub40_Sub9.anInt9172 = 0
             LightDetailOptionState.anInt6036 = 0
-            Class301.anInt3827 = 0
+            HeightMapNoise.anInt3827 = 0
             AudioResampler.anInt2166 = 0
             Class348_Sub42_Sub16_Sub1.anInt10448 = 0
             SpriteSheetCache.anInt2566 = 0
@@ -3431,7 +3431,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub15.anInt9656 = 0
             Class64_Sub3.anInt5637 = 0
             Class325.anInt4066 = 0
-            Class301.anInt3828 = 0
+            HeightMapNoise.anInt3828 = 0
             LinkedNodeListIterator.anInt1643 = 0
             LinkedNodeListIterator.anInt1653 = 0
             Class348_Sub44.anInt7095 = 0
@@ -3585,7 +3585,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Client.anInt5187 = 0
             BufferToggleState.anInt3718 = 0
             FixedFunctionMaterialPass.anInt6213 = 0
-            Class301.anInt3826 = 0
+            HeightMapNoise.anInt3826 = 0
             Class66.anInt1156 = 0
             AnimatedModelRenderer.anInt8392 = 0
             SizeBoundedSoftCache.anInt2328 = 0
