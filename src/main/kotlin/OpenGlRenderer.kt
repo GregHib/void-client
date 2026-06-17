@@ -3593,7 +3593,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             if (i_324_ != -1) {
                                 var abstractModelRendererS_326_ = ((Class353.aClass60_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
                                 if (abstractModelRendererS_326_ == null) {
-                                    val spriteImages = SpriteImage.method1519(Class21.aClass45_322!!, i_324_, 0)
+                                    val spriteImages = SpriteImage.method1519(CameraRotationStub.aClass45_322!!, i_324_, 0)
                                     if (spriteImages != null) {
                                         abstractModelRendererS_326_ = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                         var i_327_ = 0
@@ -3633,7 +3633,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 if (i_333_ != -1) {
                                     var abstractModelRenderers = (Class328_Sub2.aClass60_6517!!.method583(i_333_.toLong(), -45) as? Array<AbstractModelRenderer?>)
                                     if (abstractModelRenderers == null) {
-                                        val spriteImages = SpriteImage.method1519((Class21.aClass45_322!!), i_333_, 0)
+                                        val spriteImages = SpriteImage.method1519((CameraRotationStub.aClass45_322!!), i_333_, 0)
                                         if (spriteImages != null) {
                                             abstractModelRenderers = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                             var i_334_ = 0

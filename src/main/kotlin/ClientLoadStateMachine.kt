@@ -119,7 +119,7 @@ object ClientLoadStateMachine {
             for (i_7_ in 0..3) Class348_Sub45.aClass361Array7108!![i_7_] = method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1030) {
-            Class21.aClass45_322 = Class369_Sub2.method3571(false, 8, (-23).toByte(), 1)
+            CameraRotationStub.aClass45_322 = Class369_Sub2.method3571(false, 8, (-23).toByte(), 1)
             Class348_Sub29.aClass45_6909 = Class369_Sub2.method3571(false, 0, (-23).toByte(), 1)
             TextureGenerator.aClass45_2490 = Class369_Sub2.method3571(false, 1, (-23).toByte(), 1)
             Class95.aClass45_1541 = Class369_Sub2.method3571(false, 2, (-23).toByte(), 1)
@@ -161,8 +161,8 @@ object ClientLoadStateMachine {
                 if (Class268.anInt3435 < 0) Class268.anInt3435 = i_8_
                 return ((i_8_ + -Class268.anInt3435) * 100 / (-Class268.anInt3435 + 100))
             }
-            Class286_Sub5.method2159((-109).toByte(), Class21.aClass45_322!!)
-            Class348_Sub42_Sub3.method3178(SoftwareSpriteRaster.aClass45_1627, -124, method184(i xor 0x40a46ff3.inv()), Class21.aClass45_322)
+            Class286_Sub5.method2159((-109).toByte(), CameraRotationStub.aClass45_322!!)
+            Class348_Sub42_Sub3.method3178(SoftwareSpriteRaster.aClass45_1627, -124, method184(i xor 0x40a46ff3.inv()), CameraRotationStub.aClass45_322)
         }
         if (Class56.aClass56_1032 == Class348_Sub42_Sub15.aClass56_9660) {
             if (Class345.anInt4270 == -1) Class345.anInt4270 = Class59_Sub2_Sub1.aClass45_8667!!.method417("scape main", 0)
@@ -179,20 +179,20 @@ object ClientLoadStateMachine {
         if (i != -28660) return 2
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1035) {
             if (Class348_Sub31.anInt6923 != -1 && !RasterSprite.aClass45_5207!!.method420(-10499, Class348_Sub31.anInt6923, 0)) return 99
-            Class348_Sub40_Sub4.aRenderConfig9113 = TextureMetadataProvider(Class348_Sub11.aClass45_4770, Class369_Sub2.aClass45_8589, Class21.aClass45_322)
+            Class348_Sub40_Sub4.aRenderConfig9113 = TextureMetadataProvider(Class348_Sub11.aClass45_4770, Class369_Sub2.aClass45_8589, CameraRotationStub.aClass45_322)
             ProjectionCameraTransform.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class239.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
+            Class239.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class247.aClass45_3183)
             Class229.aClass268_2979 = Class268(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class362.aParticleDefLoader_4460 = ParticleDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class73.aClass219_4782 = Class219(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
+            Class73.aClass219_4782 = Class219(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, RasterSprite.aClass45_5207)
             ScrollingWidgetComponentNode.aClass271_8378 = Class271(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub1.aMapSceneDefLoader_6559 = MapSceneDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub40_Sub12.aClass263_9195 = Class263(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class94.aClass45_1538, RasterSprite.aClass45_5207)
-            Class348_Sub23_Sub2.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
+            Class348_Sub23_Sub2.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
+            ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             MapAreaDefinition.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.aClass45_4975, RasterSprite.aClass45_5207)
             Exception_Sub1.aClass255_112 = Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, ProjectionCameraTransform.aClass326_5764, SpotAnimVector.aClass45_2306, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036 = LocTypeDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
@@ -205,7 +205,7 @@ object ClientLoadStateMachine {
             Class239_Sub14.aClass259_5995 = Class259(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class229.aVarbitDefLoader_2981 = VarbitDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
             Class269.aClass217_3453 = Class217(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class65.method699(SoftwareSpriteRaster.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, Class21.aClass45_322, RasterSprite.aClass45_5207)
+            Class65.method699(SoftwareSpriteRaster.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, CameraRotationStub.aClass45_322, RasterSprite.aClass45_5207)
             method85(0, Class262.aClass45_3323)
             ScriptResources.aClass226_2639 = Class226(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434)
             Class239_Sub6.aClass355_5900 = Class355(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, Class28())
@@ -226,7 +226,7 @@ object ClientLoadStateMachine {
             Class348_Sub40_Sub20.aClass348_Sub4_9264 = Class348_Sub4(true, Class348_Sub23_Sub1.aClass297_8992!!)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1037) {
-            val i_11_ = (Class348_Sub22.method2958(22388, Class21.aClass45_322!!) + Class348_Sub49_Sub2.method3405(2012104999, true))
+            val i_11_ = (Class348_Sub22.method2958(22388, CameraRotationStub.aClass45_322!!) + Class348_Sub49_Sub2.method3405(2012104999, true))
             val i_12_ = (Class288_Sub1.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
@@ -250,7 +250,7 @@ object ClientLoadStateMachine {
             Class54.anInt970 = Class348_Sub35.aClass45_6980!!.method417("lobbyscreen", 0)
             Class367_Sub10.aClass45_7382!!.method404(0, true, false)
             Class59_Sub2_Sub1.aClass45_8667!!.method404(0, true, true)
-            Class21.aClass45_322!!.method404(i + 28660, true, true)
+            CameraRotationStub.aClass45_322!!.method404(i + 28660, true, true)
             SoftwareSpriteRaster.aClass45_1627!!.method404(0, true, true)
             SceneTilePlaneManager.aClass45_233!!.method404(0, true, true)
             Class348_Sub35.aClass45_6980!!.method404(0, true, true)
@@ -268,7 +268,7 @@ object ClientLoadStateMachine {
             var bool = true
             for (i_14_ in (Class348_Sub40_Sub33.aClass46ArrayArray9427!![Class285.anInt4737])!!.indices) {
                 val class46: Class46 = (Class348_Sub40_Sub33.aClass46ArrayArray9427!![Class285.anInt4737]!![i_14_])!!
-                if (class46.anInt774 == 5 && class46.anInt756 != -1 && !Class21.aClass45_322!!.method420(-10499, (class46.anInt756), 0)) bool = false
+                if (class46.anInt774 == 5 && class46.anInt756 != -1 && !CameraRotationStub.aClass45_322!!.method420(-10499, (class46.anInt756), 0)) bool = false
             }
             if (!bool) return 0
         }
@@ -297,7 +297,7 @@ object ClientLoadStateMachine {
             method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             VarpStore.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, i xor 0x6ff7.inv())
-            Class255.method1933(Class21.aClass45_322, Class348_Sub8.aRenderer6654, true)
+            Class255.method1933(CameraRotationStub.aClass45_322, Class348_Sub8.aRenderer6654, true)
             method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
         }
         return method3063(false)

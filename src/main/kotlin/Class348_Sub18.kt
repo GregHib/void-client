@@ -120,7 +120,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class367_Sub10.aClass45_7382!!.method412((-110).toByte())
                 Class59_Sub2_Sub1.aClass45_8667!!.method412(64.toByte())
                 RasterSprite.aClass45_5207!!.method412(120.toByte())
-                Class21.aClass45_322!!.method412(98.toByte())
+                CameraRotationStub.aClass45_322!!.method412(98.toByte())
                 Class369_Sub2.aClass45_8589!!.method412(43.toByte())
                 SceneTilePlaneManager.aClass45_233!!.method412(20.toByte())
                 Class348_Sub23_Sub2.aClass45_9033!!.method412(89.toByte())

@@ -480,7 +480,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class239_Sub20.anInt6048 = 2
                             Class26.anInt385 = i_73_
                             Class348.anInt4292 = 0
-                            Class21.anInt321++
+                            CameraRotationStub.anInt321++
                             val class348_sub47 = method2148((Class348_Sub42_Sub8.aClass351_9553), (Class348_Sub23_Sub2.aClass77_9029), -113)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class90.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(120, i_74_ + ArbVertexProgram.regionTileX)

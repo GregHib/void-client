@@ -75,7 +75,7 @@ class Class277 {
         @JvmField
         var aIndexedFileCache_3568: IndexedFileCache? = null
         var anInt3571: Int = 0
-        var aClass21_3572: Class21? = Class21()
+        var aCameraRotationStub_3572: CameraRotationStub? = CameraRotationStub()
         fun method2068(l: Long, l_0_: Long): Long {
             try {
                 return l or l_0_
@@ -86,9 +86,9 @@ class Class277 {
 
         @JvmStatic
         fun method2071(i: Int) {
-            aClass21_3572 = null
+            aCameraRotationStub_3572 = null
             aIndexedFileCache_3568 = null
-            if (i > -126) aClass21_3572 = null
+            if (i > -126) aCameraRotationStub_3572 = null
         }
     }
 }

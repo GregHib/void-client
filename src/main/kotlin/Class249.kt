@@ -3,11 +3,11 @@
 */
 object Class249 {
     var anInt3216: Int = 0
-    var aClass21_3217: Class21? = Class21()
+    var aCameraRotationStub_3217: CameraRotationStub? = CameraRotationStub()
 
     @JvmStatic
     fun method1907(i: Byte) {
-        aClass21_3217 = null
+        aCameraRotationStub_3217 = null
         val i_0_ = -55 / ((i - -39) / 60)
     }
 
@@ -17,7 +17,7 @@ object Class249 {
         var i_4_ = i_4_
         i_2_ = i_2_ and 0x3
         anInt3216++
-        if (bool != true) aClass21_3217 = null
+        if (bool != true) aCameraRotationStub_3217 = null
         if ((i_5_ and 0x1) == 1) {
             val i_6_ = i_4_
             i_4_ = i_3_

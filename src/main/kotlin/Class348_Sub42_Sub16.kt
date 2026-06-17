@@ -17,7 +17,7 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
 
     companion object {
         @JvmField
-        var aClass21_9661: Class21?
+        var aCameraRotationStub_9661: CameraRotationStub?
         @JvmField
         var anInt9662: Int = 0
         @JvmField
@@ -29,9 +29,9 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
 
         @JvmStatic
         fun method3252(i: Int) {
-            aClass21_9661 = null
+            aCameraRotationStub_9661 = null
             aString9665 = null
-            if (i != 353) aClass21_9661 = null
+            if (i != 353) aCameraRotationStub_9661 = null
         }
 
         @JvmStatic
@@ -148,7 +148,7 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
         fun method3256(i: Int): Int {
             anInt9662++
             if (Class348_Sub1.anIntArray6547 == null) return 0
-            if (i != 2) aClass21_9661 = null
+            if (i != 2) aCameraRotationStub_9661 = null
             return 2 * Class348_Sub1.anIntArray6547!!.size
         }
 
@@ -161,7 +161,7 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
         }
 
         init {
-            aClass21_9661 = Class21()
+            aCameraRotationStub_9661 = CameraRotationStub()
         }
     }
 }

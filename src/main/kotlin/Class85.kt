@@ -185,18 +185,18 @@ class Class85 {
         fun method828(i: Byte, i_13_: Int, i_14_: Int) {
             if (i.toInt() != 38) method828(63.toByte(), 119, 33)
             anInt1467++
-            if (Class21.aRenderer326 != null) {
+            if (CameraRotationStub.aRenderer326 != null) {
                 val i_15_ = Class31.anInt425
                 val i_16_ = Class250.anInt3225
                 method1752(-1, i_13_, i_14_)
                 if (Class348_Sub49.anInt7207 == 0) {
                     WidgetDefinition.anInterface4_252 = null
-                    WidgetDefinition.anInterface4_252 = (Class21.aRenderer326!!.method3634(Class21.aRenderer326!!.method3665((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008), Class21.aRenderer326!!.method3624((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008)))
+                    WidgetDefinition.anInterface4_252 = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008), CameraRotationStub.aRenderer326!!.method3624((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008)))
                 } else if (Class348_Sub49.anInt7207 == 1 && (Class92.anInterface4Array1525 == null || i_15_ != Class31.anInt425 || i_16_ != Class250.anInt3225)) {
                     Class92.anInterface4Array1525 = arrayOfNulls<Interface4>(Class250.anInt3225 * Class31.anInt425)
                     var i_17_ = 0
                     while (Class92.anInterface4Array1525!!.size > i_17_) {
-                        Class92.anInterface4Array1525!![i_17_] = (Class21.aRenderer326!!.method3634(Class21.aRenderer326!!.method3665(Class58.anInt1067, Class344.anInt4267), Class21.aRenderer326!!.method3624(Class58.anInt1067, Class344.anInt4267)))
+                        Class92.anInterface4Array1525!![i_17_] = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665(Class58.anInt1067, Class344.anInt4267), CameraRotationStub.aRenderer326!!.method3624(Class58.anInt1067, Class344.anInt4267)))
                         i_17_++
                     }
                     LocalPlayerState.anIntArray1909 = IntArray(Class31.anInt425 * Class250.anInt3225)

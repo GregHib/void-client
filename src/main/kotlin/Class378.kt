@@ -239,9 +239,9 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         }
     }
 
-    override fun method3938(class21: Class21?, i: Int, interface5_impl2: Interface5_Impl2?, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
+    override fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: Interface5_Impl2?, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
         this.anIDirect3DDevice9810!!.SetIndices((interface5_impl2 as D3dIndexBuffer).anIDirect3DIndexBuffer8517)
-        this.anIDirect3DDevice9810!!.DrawIndexedPrimitive(Companion.method3953(class21, (-111).toByte()), 0, i_24_, i_26_, i_25_, i)
+        this.anIDirect3DDevice9810!!.DrawIndexedPrimitive(Companion.method3953(cameraRotationStub, (-111).toByte()), 0, i_24_, i_26_, i_25_, i)
         if (i_27_ < 46) method3931(true, null, null)
     }
 
@@ -480,8 +480,8 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         val i_44_ = 82 % ((i - 44) / 56)
     }
 
-    override fun method3899(i: Int, i_45_: Int, class21: Class21?, bool: Boolean) {
-        this.anIDirect3DDevice9810!!.DrawPrimitive(Companion.method3953(class21, (-111).toByte()), i_45_, i)
+    override fun method3899(i: Int, i_45_: Int, cameraRotationStub: CameraRotationStub?, bool: Boolean) {
+        this.anIDirect3DDevice9810!!.DrawPrimitive(Companion.method3953(cameraRotationStub, (-111).toByte()), i_45_, i)
         if (bool != true) aClass209Array9795 = null
     }
 
@@ -767,14 +767,14 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             throw IllegalArgumentException()
         }
 
-        private fun method3953(class21: Class21?, i: Byte): Int {
+        private fun method3953(cameraRotationStub: CameraRotationStub?, i: Byte): Int {
             if (i.toInt() != -111) Companion.method3952(null, (-118).toByte())
-            if (class21 == Class249.aClass21_3217) return 2
-            if (Class348_Sub5_Sub1.aClass21_8832 == class21) return 3
-            if (Class277.aClass21_3572 == class21) return 1
-            if (class21 == Class247.aClass21_3181) return 4
-            if (Class348_Sub42_Sub16.aClass21_9661 == class21) return 6
-            if (class21 == NativeTerrainTile.aClass21_8320) return 5
+            if (cameraRotationStub == Class249.aCameraRotationStub_3217) return 2
+            if (Class348_Sub5_Sub1.aCameraRotationStub_8832 == cameraRotationStub) return 3
+            if (Class277.aCameraRotationStub_3572 == cameraRotationStub) return 1
+            if (cameraRotationStub == Class247.aCameraRotationStub_3181) return 4
+            if (Class348_Sub42_Sub16.aCameraRotationStub_9661 == cameraRotationStub) return 6
+            if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) return 5
             throw IllegalArgumentException("")
         }
 

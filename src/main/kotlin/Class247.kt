@@ -6,7 +6,7 @@ import Class224.method1617
 object Class247 {
     var anInt3180: Int = 0
     @JvmField
-    var aClass21_3181: Class21? = Class21()
+    var aCameraRotationStub_3181: CameraRotationStub? = CameraRotationStub()
     var aDouble3182: Double = 0.0
     @JvmField
     var aClass45_3183: Class45? = null
@@ -15,7 +15,7 @@ object Class247 {
     @JvmStatic
     fun method1889(i: Int) {
         if (i != 255) method1889(-18)
-        aClass21_3181 = null
+        aCameraRotationStub_3181 = null
         aClass45_3183 = null
     }
 

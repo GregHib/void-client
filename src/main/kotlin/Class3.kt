@@ -16,7 +16,7 @@ object Class3 {
         RenderNode.aAbstractCameraTransform_9720 = null
         LocalPlayerState.anIntArray1909 = null
         Class92.anInterface4Array1525 = null
-        Class21.aRenderer326 = null
+        CameraRotationStub.aRenderer326 = null
         Class44.aAbstractCameraTransform_624 = null
         anInt124++
         val i_0_ = 9 / ((62 - i) / 47)

@@ -503,7 +503,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class325.anInt4067 = 0
             Class318_Sub1_Sub2_Sub1.anInt10192 = 0
             OpenGlRenderNode.anInt10485 = 0
-            Class21.anInt321 = 0
+            CameraRotationStub.anInt321 = 0
             Class377.anInt9836 = 0
             Class348_Sub16_Sub1.anInt8846 = 0
             NpcAppearanceFlags.anInt210 = 0
@@ -1436,7 +1436,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class48.anInt855 = 0
             Class318_Sub5.anInt6423 = 0
             GameAppletFrame.anInt11 = 0
-            Class21.anInt327 = 0
+            CameraRotationStub.anInt327 = 0
             Class318_Sub7.anInt6448 = 0
             ScriptOpcodeHolder.anInt2336 = 0
             Class239_Sub12.anInt5972 = 0
@@ -1820,7 +1820,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ModelDefinitionLoader.anInt2049 = 0
             NativeRenderer.anInt7990 = 0
             Class348_Sub40_Sub13.anInt9202 = 0
-            Class21.anInt324 = 0
+            CameraRotationStub.anInt324 = 0
             Class348_Sub47.anInt7120 = 0
             SizeBoundedSoftCache.anInt2318 = 0
             NativeRenderer.anInt8035 = 0

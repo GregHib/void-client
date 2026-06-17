@@ -697,25 +697,25 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         }
     }
 
-    override fun method3938(class21: Class21?, i: Int, interface5_impl2: Interface5_Impl2?, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int) {
+    override fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: Interface5_Impl2?, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int) {
         try {
             if (i_43_ <= 46) aClass262_9903 = null
             anInt9867++
             val i_44_: Int
             val i_45_: Int
-            if (Class249.aClass21_3217 == class21) {
+            if (Class249.aCameraRotationStub_3217 == cameraRotationStub) {
                 i_44_ = 1
                 i_45_ = i * 2
-            } else if (class21 == Class348_Sub5_Sub1.aClass21_8832) {
+            } else if (cameraRotationStub == Class348_Sub5_Sub1.aCameraRotationStub_8832) {
                 i_45_ = 1 + i
                 i_44_ = 3
-            } else if (class21 == Class247.aClass21_3181) {
+            } else if (cameraRotationStub == Class247.aCameraRotationStub_3181) {
                 i_44_ = 4
                 i_45_ = i * 3
-            } else if (Class348_Sub42_Sub16.aClass21_9661 == class21) {
+            } else if (Class348_Sub42_Sub16.aCameraRotationStub_9661 == cameraRotationStub) {
                 i_44_ = 6
                 i_45_ = 2 + i
-            } else if (class21 == NativeTerrainTile.aClass21_8320) {
+            } else if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) {
                 i_45_ = 2 + i
                 i_44_ = 5
             } else {
@@ -727,7 +727,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             class285_sub2.method2125(0)
             glDrawElements(i_44_, i_45_, ModelBatchBase.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.JC(" + (if (class21 != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.JC(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
         }
     }
 
@@ -789,25 +789,25 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         }
     }
 
-    override fun method3899(i: Int, i_50_: Int, class21: Class21?, bool: Boolean) {
+    override fun method3899(i: Int, i_50_: Int, cameraRotationStub: CameraRotationStub?, bool: Boolean) {
         try {
             anInt9854++
             if (bool != true) this.aBoolean9921 = true
             val i_51_: Int
             val i_52_: Int
-            if (class21 == Class249.aClass21_3217) {
+            if (cameraRotationStub == Class249.aCameraRotationStub_3217) {
                 i_51_ = 2 * i
                 i_52_ = 1
-            } else if (Class348_Sub5_Sub1.aClass21_8832 == class21) {
+            } else if (Class348_Sub5_Sub1.aCameraRotationStub_8832 == cameraRotationStub) {
                 i_51_ = i - -1
                 i_52_ = 3
-            } else if (Class247.aClass21_3181 == class21) {
+            } else if (Class247.aCameraRotationStub_3181 == cameraRotationStub) {
                 i_52_ = 4
                 i_51_ = i * 3
-            } else if (class21 == Class348_Sub42_Sub16.aClass21_9661) {
+            } else if (cameraRotationStub == Class348_Sub42_Sub16.aCameraRotationStub_9661) {
                 i_52_ = 6
                 i_51_ = 2 + i
-            } else if (NativeTerrainTile.aClass21_8320 == class21) {
+            } else if (NativeTerrainTile.aCameraRotationStub_8320 == cameraRotationStub) {
                 i_51_ = 2 + i
                 i_52_ = 5
             } else {
@@ -816,7 +816,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             }
             glDrawArrays(i_52_, i_50_, i_51_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.V(" + i + ',' + i_50_ + ',' + (if (class21 != null) "{...}" else "null") + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.V(" + i + ',' + i_50_ + ',' + (if (cameraRotationStub != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 

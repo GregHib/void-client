@@ -116,7 +116,7 @@ class OutputStream_Sub1 : OutputStream() {
                     Class348_Sub42_Sub20.method3282(0x3fff and -(Class348_Sub42_Sub19.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 and 0x3fff, Class286_Sub4.anInt6246, -Class338.anInt4186 and 0x3fff)
                     val i_16_ = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else Class239_Sub15.anInt6006.toByte())
                     if (Class59_Sub1.aBoolean5300) {
-                        Class21.method289(-15902, 0x3fff and -Class5.anInt4638, -Class338.anInt4186 and 0x3fff, (-Class348_Sub42_Sub19.anInt9701 and 0x3fff))
+                        CameraRotationStub.method289(-15902, 0x3fff and -Class5.anInt4638, -Class338.anInt4186 and 0x3fff, (-Class348_Sub42_Sub19.anInt9701 and 0x3fff))
                         Class230.method1634(
                             Class64.anIntArray1127,
                             -2,

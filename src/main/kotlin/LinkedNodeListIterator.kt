@@ -305,18 +305,18 @@ class LinkedNodeListIterator {
         }
 
         fun method1010(bool: Boolean, bool_42_: Boolean) {
-            RenderNode.aAbstractCameraTransform_9720!!.method898(Class21.aRenderer326!!.method3640())
+            RenderNode.aAbstractCameraTransform_9720!!.method898(CameraRotationStub.aRenderer326!!.method3640())
             anInt1642++
-            val `is` = Class21.aRenderer326!!.Y()
+            val `is` = CameraRotationStub.aRenderer326!!.Y()
             Gl3dTexture.anInt8630 = `is`[2]
             Class248.anInt3202 = `is`[0]
             Class27.anInt394 = `is`[3]
             Class239_Sub5.anInt5886 = `is`[1]
             if (bool_42_) {
-                Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
+                CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                 method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120)
             } else {
-                Class21.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
+                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
                 method3284(true, GlCubeMapTexture.aDouble8621)
             }
             if (bool != false) method1010(true, true)

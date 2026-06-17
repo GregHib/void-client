@@ -336,7 +336,7 @@ class Class280 internal constructor(var_ha_Sub3: NativeRenderer) {
                 var_ha_Sub3.method3925(66, anInterface5_Impl1_3638, 0)
                 var_ha_Sub3.method3925(68, anInterface5_Impl1_3630, 1)
                 var_ha_Sub3.method3862(0, aModelBatchBase_3637)
-                var_ha_Sub3.method3938(Class247.aClass21_3181, 2 * i_20_, anInterface5_Impl2_3635, 0, 0, i_20_ * 4, 118)
+                var_ha_Sub3.method3938(Class247.aCameraRotationStub_3181, 2 * i_20_, anInterface5_Impl2_3635, 0, 0, i_20_ * 4, 118)
             }
         }
     }

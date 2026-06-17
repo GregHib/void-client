@@ -4,7 +4,7 @@ import kotlin.math.sin
 /* Class21 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class21 {
+class CameraRotationStub {
     override fun toString(): String {
         anInt327++
         throw IllegalStateException()

@@ -309,7 +309,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
         @JvmField
         var anInt8831: Int = 0
         @JvmField
-        var aClass21_8832: Class21? = Class21()
+        var aCameraRotationStub_8832: CameraRotationStub? = CameraRotationStub()
         @JvmField
         var anInt8834: Int = 0
         @JvmField
@@ -320,7 +320,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
         var anInt8843: Int = 0
         @JvmStatic
         fun method2765(i: Int) {
-            aClass21_8832 = null
+            aCameraRotationStub_8832 = null
             if (i != 2048) method2765(52)
         }
 

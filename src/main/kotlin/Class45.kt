@@ -588,8 +588,8 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         @JvmStatic
         @Throws(Exception_Sub1::class)
         fun method395(i: Int) {
-            if (Class348_Sub49.anInt7207 == 1) Class21.aRenderer326!!.method3626(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157)
-            else Class21.aRenderer326!!.method3626(0, 0)
+            if (Class348_Sub49.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157)
+            else CameraRotationStub.aRenderer326!!.method3626(0, 0)
             if (i >= 73) anInt642++
         }
 

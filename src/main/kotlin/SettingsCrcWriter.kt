@@ -21,7 +21,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(90.toByte(), Class367_Sub10.aClass45_7382!!.method389(-122))
         class348_sub49_sub2.writeInt(92.toByte(), Class59_Sub2_Sub1.aClass45_8667!!.method389(9))
         class348_sub49_sub2.writeInt(90.toByte(), RasterSprite.aClass45_5207!!.method389(120))
-        class348_sub49_sub2.writeInt(99.toByte(), Class21.aClass45_322!!.method389(64))
+        class348_sub49_sub2.writeInt(99.toByte(), CameraRotationStub.aClass45_322!!.method389(64))
         class348_sub49_sub2.writeInt(90.toByte(), Class369_Sub2.aClass45_8589!!.method389(-123))
         class348_sub49_sub2.writeInt(115.toByte(), SceneTilePlaneManager.aClass45_233!!.method389(-113))
         class348_sub49_sub2.writeInt(94.toByte(), Class348_Sub23_Sub2.aClass45_9033!!.method389(-113))

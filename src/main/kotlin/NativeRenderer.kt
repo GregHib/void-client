@@ -995,14 +995,14 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3859(i: Int)
 
-    private fun method3860(class21: Class21?, i: Int, i_98_: Int) {
+    private fun method3860(cameraRotationStub: CameraRotationStub?, i: Int, i_98_: Int) {
         try {
             method3925(-96, anInterface5_Impl1_8193, 0)
             anInt8067++
             method3862(0, aModelBatchBase_8197)
-            method3899(i, 0, class21, true)
+            method3899(i, 0, cameraRotationStub, true)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.QI(" + (if (class21 != null) "{...}" else "null") + ',' + i + ',' + i_98_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.QI(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + i_98_ + ')'))
         }
     }
 
@@ -1224,7 +1224,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3926(75.toByte(), false)
         method3925(23, anInterface5_Impl1_8201, 0)
         method3862(0, aModelBatchBase_8190)
-        method3899(256, 0, Class348_Sub42_Sub16.aClass21_9661, true)
+        method3899(256, 0, Class348_Sub42_Sub16.aCameraRotationStub_9661, true)
         method3926(41.toByte(), true)
         method3885(0, true, Class342.aClass70_4247)
         method3849(47.toByte(), 0, Class342.aClass70_4247)
@@ -1529,7 +1529,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8068++
     }
 
-    abstract fun method3899(i: Int, i_178_: Int, class21: Class21?, bool: Boolean)
+    abstract fun method3899(i: Int, i_178_: Int, cameraRotationStub: CameraRotationStub?, bool: Boolean)
 
     override fun DA(i: Int, i_179_: Int, i_180_: Int, i_181_: Int) {
         this.anInt8130 = i_179_
@@ -1696,7 +1696,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7888++
         method3925(-128, anInterface5_Impl1_8203, 0)
         method3862(0, aModelBatchBase_8205)
-        method3899(1, 0, Class249.aClass21_3217, bool)
+        method3899(1, 0, Class249.aCameraRotationStub_3217, bool)
     }
 
     override fun Y(): IntArray {
@@ -2245,7 +2245,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     fun method3933(i: Int) {
         anInt7956++
         if (i >= -34) aClass299_Sub2_8171 = null
-        method3860(Class348_Sub42_Sub16.aClass21_9661, 2, 8)
+        method3860(Class348_Sub42_Sub16.aCameraRotationStub_9661, 2, 8)
     }
 
     override fun method3628(i: Int, i_268_: Int, i_269_: Int, i_270_: Int, i_271_: Int, i_272_: Int) {
@@ -2260,7 +2260,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aClass101_Sub2_8074.method920(-f + i_268_.toFloat(), false, 0.0f, i.toFloat() - f)
         method3915(0)
         method3926(98.toByte(), false)
-        method3860(Class348_Sub5_Sub1.aClass21_8832, 4, 8)
+        method3860(Class348_Sub5_Sub1.aCameraRotationStub_8832, 4, 8)
         method3926(104.toByte(), true)
         method3885(0, true, Class342.aClass70_4247)
         method3849(47.toByte(), 0, Class342.aClass70_4247)
@@ -2285,7 +2285,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3937(i: Byte)
 
-    abstract fun method3938(class21: Class21?, i: Int, interface5_impl2: Interface5_Impl2?, i_276_: Int, i_277_: Int, i_278_: Int, i_279_: Int)
+    abstract fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: Interface5_Impl2?, i_276_: Int, i_277_: Int, i_278_: Int, i_279_: Int)
 
     override fun method3667(i: Int, i_280_: Int): Int {
         anInt7997++
