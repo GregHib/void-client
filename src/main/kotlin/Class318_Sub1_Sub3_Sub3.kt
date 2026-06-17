@@ -733,7 +733,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         @JvmField
         var anInt10205: Int = 0
         @JvmField
-        var aClass170_10209: Class170? = null
+        var aVarpStore_10209: VarpStore? = null
         @JvmField
         var anInt10212: Int = 0
         @JvmField
@@ -798,7 +798,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
 
         @JvmStatic
         fun method2429(i: Int) {
-            aClass170_10209 = null
+            aVarpStore_10209 = null
             aShortArrayArray10246 = null
             anIntArray10266 = null
             aShortArrayArray10204 = null

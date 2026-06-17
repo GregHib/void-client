@@ -210,11 +210,11 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             method349(i + -6692)
                             method3150(true)
                             method1397(0)
-                            var i_15_ = Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1305((-126).toByte(), true)
+                            var i_15_ = Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1305((-126).toByte(), true)
                             while (i_15_ != -1) {
                                 method1767(true, i_15_)
                                 Class327.anIntArray4096!![method1166(31, Class287.anInt3695++)] = i_15_
-                                i_15_ = Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1305((-128).toByte(), false)
+                                i_15_ = Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1305((-128).toByte(), false)
                             }
                             var class348_sub42_sub15 = method3127(2681)
                             while (class348_sub42_sub15 != null) {

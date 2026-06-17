@@ -111,7 +111,7 @@ object ClientLoadStateMachine {
                 if (Class182.anInterface16Array2447!![0]!!.method60(-19079) < 100) return 0
                 if (Class182.anInterface16Array2447!!.size > 1 && Class186_Sub1.aCollisionMapRegion_5813!!.method1044(86) && (Class182.anInterface16Array2447!![1]!!.method60(i + 9581) < 100)) return 0
             }
-            Class170.method1311(5139, Class348_Sub8.aRenderer6654!!)
+            VarpStore.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, 4)
             Class348_Sub49.method3379(2, 1)
         }
@@ -211,7 +211,7 @@ object ClientLoadStateMachine {
             Class239_Sub6.aClass355_5900 = Class355(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, Class28())
             method1202(0)
             Class348_Sub40_Sub12.aClass263_9195!!.method2008(i + 28539, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
-            Class318_Sub1_Sub3_Sub3.aClass170_10209 = Class170()
+            Class318_Sub1_Sub3_Sub3.aVarpStore_10209 = VarpStore()
             method3038(-1)
             method4011(i + 29684, Class239.aClass45_3146)
             Class348_Sub29.method3004(RasterSprite.aClass45_5207, false, Class348_Sub40_Sub4.aRenderConfig9113)
@@ -230,7 +230,7 @@ object ClientLoadStateMachine {
             val i_12_ = (Class288_Sub1.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aClass183_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, Class2.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aClass170_10209)
+        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aClass183_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, Class2.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(Class239_Sub14.aClass259_5995!!.anInt3305 + 1000))
@@ -295,7 +295,7 @@ object ClientLoadStateMachine {
             if (Class348_Sub23_Sub2.aBoolean9038) method3553(false, 108.toByte(), 0)
             else method3553(false, 102.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350))
             method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
-            Class170.method1311(5139, Class348_Sub8.aRenderer6654!!)
+            VarpStore.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, i xor 0x6ff7.inv())
             Class255.method1933(Class21.aClass45_322, Class348_Sub8.aRenderer6654, true)
             method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)

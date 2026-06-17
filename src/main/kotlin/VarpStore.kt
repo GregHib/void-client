@@ -9,7 +9,7 @@ import NativeTerrainTile.Companion.method4004
 /* Class170 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class170 : Interface17 {
+class VarpStore : Interface17 {
     var anIntArray5063: IntArray
     private var aClass356_5070 = Class356(128)
     private val anIntArray5078: IntArray

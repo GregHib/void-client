@@ -485,7 +485,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         if (aBoolean5402) {
             aBoolean5402 = false
             if (aModelFacePriorityNodeArray5457 == null && aClass342Array5474 == null && aClass353Array5524 == null) {
-                if (anIntArray5511 != null && !Class170.method1317(anInt5472, (-91).toByte(), anInt5463)) {
+                if (anIntArray5511 != null && !VarpStore.method1317(anInt5472, (-91).toByte(), anInt5463)) {
                     if (aClass290_5520 == null || aClass290_5520!!.method2197((-62).toByte())) {
                         if (!aBoolean5477) method675(0)
                         anIntArray5511 = null

@@ -344,7 +344,7 @@ class Class239_Sub24 : Class239 {
                             if (class318_sub4.aClass318_Sub1_6410 is Interface10) {
                                 val interface10 = ((class318_sub4.aClass318_Sub1_6410) as Interface10)
                                 var class51: Class51? = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-100)))
-                                if (class51!!.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), 47.toByte()))
+                                if (class51!!.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte()))
                                 if (class51 != null) {
                                     if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
                                         val class254 = (if (Class246.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)

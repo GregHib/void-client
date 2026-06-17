@@ -80,7 +80,7 @@ class Class348_Sub9 : Class348() {
                     if (i_12_ != i_11_) {
                         this.anInt6685 = i_12_
                         var class79 = (this.aNpc_6691!!.aClass79_10505)
-                        if (class79!!.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1)
+                        if (class79!!.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1)
                         if (class79 == null) {
                             this.anInt6694 = 0
                             this.anInt6677 = this.anInt6694
@@ -97,7 +97,7 @@ class Class348_Sub9 : Class348() {
                     }
                 }
             } else {
-                val class51 = (this.aClass51_6695!!.method480(Class318_Sub1_Sub3_Sub3.aClass170_10209!!, 47.toByte()))
+                val class51 = (this.aClass51_6695!!.method480(Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!, 47.toByte()))
                 if (class51 == null) {
                     this.anInt6681 = 256
                     this.aBoolean6674 = false

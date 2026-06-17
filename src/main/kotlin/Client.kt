@@ -72,9 +72,9 @@ import ItemDefinitionLoader.Companion.method1284
 import ParticleSystemState.Companion.method1293
 import HeapDiagnosticsHolder.method1298
 import Class17.Companion.method265
-import Class170.Companion.method1309
-import Class170.Companion.method1310
-import Class170.Companion.method1315
+import VarpStore.Companion.method1309
+import VarpStore.Companion.method1310
+import VarpStore.Companion.method1315
 import Class172.method1325
 import Class173.Companion.method1329
 import Class175.Companion.method1343
@@ -2605,7 +2605,7 @@ class Client : GameAppletFrame() {
             }
             for (i_115_ in 0..<ModelDefinitionLoader.anInt2057) {
                 val npc = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_115_].toLong(), -6008) as Class348_Sub22).aNpc_6859)
-                if (!npc!!.method2445((-4).toByte()) || !(npc.aClass79_10505!!.method796(Class318_Sub1_Sub3_Sub3.aClass170_10209!!, 18627))) npc.anInt10285 = -1
+                if (!npc!!.method2445((-4).toByte()) || !(npc.aClass79_10505!!.method796(Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!, 18627))) npc.anInt10285 = -1
                 else {
                     npc.method2409((-118).toByte())
                     if ((npc.aShort8743) < 0 || (npc.aShort8750) < 0 || (npc.aShort8751) >= Class367_Sub4.anInt7319 || (npc.aShort8747) >= Class348_Sub40_Sub3.anInt9109) npc.anInt10285 = -1

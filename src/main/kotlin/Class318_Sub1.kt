@@ -112,7 +112,7 @@ abstract class Class318_Sub1 : Class318() {
                     anInt6390++
                     val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_4_, 98.toByte())
                     if (i_7_ < -52) {
-                        if (class42 == null || !class42.aBoolean569 || !class42.method373((Class318_Sub1_Sub3_Sub3.Companion.aClass170_10209!!), 69)) break
+                        if (class42 == null || !class42.aBoolean569 || !class42.method373((Class318_Sub1_Sub3_Sub3.Companion.aVarpStore_10209!!), 69)) break
                         if (class42.anIntArray591 != null) {
                             val `is` = (IntArray(class42.anIntArray591!!.size))
                             var i_9_ = 0

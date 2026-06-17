@@ -498,7 +498,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 var class79 = (npc.aClass79_10505)
-                                if (class79!!.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1))
+                                if (class79!!.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1))
                                 if (class79 != null) {
                                     Class306.anInt3874++
                                     val class348_sub47 = (method2148(Class318_Sub7.aClass351_6443, Class348_Sub23_Sub2.aClass77_9029, -111))

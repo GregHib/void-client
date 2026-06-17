@@ -182,7 +182,7 @@ class LinkedNodeListIterator {
                             val i_16_ = (-(i_3_ / 128) + Class348_Sub40_Sub37.anIntArray9458!![i_14_] * 4 - -2)
                             var class51: Class51? = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, Class263.anIntArray3347!![i_14_]))
                             if (class51!!.anIntArray945 != null) {
-                                class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), 47.toByte())
+                                class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte())
                                 if (class51 == null || (class51.anInt921 == -1)) {
                                     i_14_++
                                     continue
@@ -210,7 +210,7 @@ class LinkedNodeListIterator {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (LocalPlayerState.aPlayer_1907!!.plane))) {
                                     var class79 = (npc.aClass79_10505)
-                                    if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1))
+                                    if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1))
                                     if (class79 != null && class79.aBoolean1397 && class79.aBoolean1396) {
                                         val i_23_ = (-(i_4_ / 128) + (npc.x) / 128)
                                         val i_24_ = ((npc.y) / 128 + -(i_3_ / 128))

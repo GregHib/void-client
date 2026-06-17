@@ -27,7 +27,7 @@ object Class335 {
                 if (class348_sub9.anInt6675 != i_4_) {
                     val i_5_ = Class8.method214((class348_sub9.aNpc_6691!!), -1)
                     var class79 = (class348_sub9.aNpc_6691!!.aClass79_10505)
-                    if (class79!!.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1)
+                    if (class79!!.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1)
                     if (class79 == null || i_5_ == -1) {
                         class348_sub9.anInt6675 = i_4_
                         class348_sub9.aBoolean6674 = false

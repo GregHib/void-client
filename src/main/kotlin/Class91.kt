@@ -30,7 +30,7 @@ object Class91 {
         Class348_Sub23_Sub3.anInt9041++
         NpcSummaryDefinition.method1165(1)
         method204(-724138005)
-        Class170.method1318(-65536)
+        VarpStore.method1318(-65536)
         var bool = false
         for (i_2_ in 0..<Class358.anInt4411) {
             val i_3_ = Class5_Sub1_Sub1.anIntArray9932!![i_2_]

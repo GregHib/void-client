@@ -271,19 +271,19 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class348_Sub42_Sub3.method3175((-77).toByte())
                     if (bool_25_) {
                         Class243.method1879(true)
-                        Class170.aClass237_Sub1_5067 = Class237_Sub1(1, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, true)
+                        VarpStore.aClass237_Sub1_5067 = Class237_Sub1(1, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, true)
                         if (Class312.anInt3931 == 0) {
-                            Class348_Sub1_Sub1.method2727((-44).toByte(), (Class170.aClass237_Sub1_5067), (ModelFacePriorityNode.aByteArrayArray1887))
+                            Class348_Sub1_Sub1.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (ModelFacePriorityNode.aByteArrayArray1887))
                             Class289.method2193(true, (-119).toByte())
                         } else {
-                            Class44.method385(false, Class170.aClass237_Sub1_5067, ModelFacePriorityNode.aByteArrayArray1887)
+                            Class44.method385(false, VarpStore.aClass237_Sub1_5067, ModelFacePriorityNode.aByteArrayArray1887)
                             Class289.method2193(true, (-125).toByte())
                         }
-                        Class170.aClass237_Sub1_5067!!.method1679(0, 0, (Class338.aClass237_Sub1_4197!!.anIntArrayArrayArray3122[0]!!))
-                        Class170.aClass237_Sub1_5067!!.method1685(Class348_Sub8.aRenderer6654, null, 21407, null)
+                        VarpStore.aClass237_Sub1_5067!!.method1679(0, 0, (Class338.aClass237_Sub1_4197!!.anIntArrayArrayArray3122[0]!!))
+                        VarpStore.aClass237_Sub1_5067!!.method1685(Class348_Sub8.aRenderer6654, null, 21407, null)
                         Class243.method1879(false)
                     }
-                    Class338.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aRenderer6654, (if (!bool_25_) null else (Class170.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108)
+                    Class338.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aRenderer6654, (if (!bool_25_) null else (VarpStore.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108)
                     if (Class312.anInt3931 == 0) {
                         Class289.method2193(true, (-128).toByte())
                         ObjectSpawnDecoder.method1090(GlRectangleTexture.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)
@@ -301,12 +301,12 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (bool_25_) {
                         Class243.method1879(true)
                         Class289.method2193(true, (-124).toByte())
-                        if (Class312.anInt3931 != 0) ProjectionCameraTransform.method944(-8212, (Class348_Sub23_Sub1.aByteArrayArray8996), Class170.aClass237_Sub1_5067)
-                        else ObjectSpawnDecoder.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, Class170.aClass237_Sub1_5067)
+                        if (Class312.anInt3931 != 0) ProjectionCameraTransform.method944(-8212, (Class348_Sub23_Sub1.aByteArrayArray8996), VarpStore.aClass237_Sub1_5067)
+                        else ObjectSpawnDecoder.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, VarpStore.aClass237_Sub1_5067)
                         Class348_Sub18.method2938(73.toByte())
                         Class289.method2193(true, (-121).toByte())
-                        Class170.aClass237_Sub1_5067!!.method1680((Class348_Sub1_Sub1.aTerrainTileArray8801!![0]), (-127).toByte(), null, (Class348_Sub8.aRenderer6654))
-                        Class170.aClass237_Sub1_5067!!.method1697(true, Class348_Sub8.aRenderer6654, i + -60)
+                        VarpStore.aClass237_Sub1_5067!!.method1680((Class348_Sub1_Sub1.aTerrainTileArray8801!![0]), (-127).toByte(), null, (Class348_Sub8.aRenderer6654))
+                        VarpStore.aClass237_Sub1_5067!!.method1697(true, Class348_Sub8.aRenderer6654, i + -60)
                         Class289.method2193(true, (-126).toByte())
                         Class243.method1879(false)
                     }

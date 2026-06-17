@@ -524,12 +524,12 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.startsWith("getclientvarpbit")) {
                             val i_15_ = string.substring(17).toInt()
-                            method94("varpbit=" + Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method62(i_15_, i.toInt() xor 0xffb1), i + 198)
+                            method94("varpbit=" + Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method62(i_15_, i.toInt() xor 0xffb1), i + 198)
                             return
                         }
                         if (string.startsWith("getclientvarp")) {
                             val i_16_ = string.substring(14).toInt()
-                            method94("varp=" + Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method61(i_16_, (-16).toByte()), -68)
+                            method94("varp=" + Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method61(i_16_, (-16).toByte()), -68)
                             return
                         }
                         if (string.startsWith("directlogin")) {

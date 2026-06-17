@@ -11,7 +11,7 @@ class Class50_Sub2 internal constructor(private var anInt5231: Int, private val 
         val i_4_ = i_0_ * anInt5227 shr 12
         if (i_1_ > -98) aBoolean5233 = false
         val i_5_ = i_0_ * anInt5230 shr 12
-        Class170.method1308(this.anInt864, i_4_, i_2_, this.anInt865, (-123).toByte(), this.anInt862, i_3_, i_5_)
+        VarpStore.method1308(this.anInt864, i_4_, i_2_, this.anInt865, (-123).toByte(), this.anInt862, i_3_, i_5_)
     }
 
     public override fun method457(i: Int, i_12_: Int, i_13_: Int) {

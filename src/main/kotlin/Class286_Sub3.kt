@@ -223,7 +223,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             if (Class73.anInt4776 < 400) {
                 var class79 = (npc.aClass79_10505)
                 if (class79!!.anIntArray1377 != null) {
-                    class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1)
+                    class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1)
                     if (class79 == null) return
                 }
                 if (class79.aBoolean1396) {

@@ -5023,10 +5023,10 @@ object Class66 {
                     if (i_490_ == 0) anIntArray1149!![anInt1173++] = is_489_[i_488_]
                     else if (i_490_ == 1) {
                         val i_492_ = is_489_[i_488_]
-                        anIntArray1149!![anInt1173++] = (Class318_Sub1_Sub3_Sub3.aClass170_10209!!.anIntArray5063[i_492_])
+                        anIntArray1149!![anInt1173++] = (Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.anIntArray5063[i_492_])
                     } else if (i_490_ == 2) {
                         val i_493_ = is_489_[i_488_]
-                        Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1306((-78).toByte(), anIntArray1149!![--anInt1173], i_493_)
+                        Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1306((-78).toByte(), anIntArray1149!![--anInt1173], i_493_)
                     } else if (i_490_ == 3) aStringArray1152!![anInt1170++] = (class348_sub42_sub19.aStringArray9692!![i_488_])
                     else if (i_490_ == 6) i_488_ += is_489_[i_488_]
                     else if (i_490_ == 7) {
@@ -5052,10 +5052,10 @@ object Class66 {
                         aStringArray1155 = class184.aStringArray2473
                     } else if (i_490_ == 25) {
                         val i_494_ = is_489_[i_488_]
-                        anIntArray1149!![anInt1173++] = Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method62(i_494_, -65536)
+                        anIntArray1149!![anInt1173++] = Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method62(i_494_, -65536)
                     } else if (i_490_ == 27) {
                         val i_495_ = is_489_[i_488_]
-                        Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1307(i_495_, -1, anIntArray1149!![--anInt1173])
+                        Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1307(i_495_, -1, anIntArray1149!![--anInt1173])
                     } else if (i_490_ == 31) {
                         anInt1173 -= 2
                         if (anIntArray1149!![anInt1173] <= anIntArray1149!![anInt1173 + 1]) i_488_ += is_489_[i_488_]

@@ -121,7 +121,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         } else this.anInt10274 = (this.anInt10274 - this.anInt10274.toFloat() / 10.0f).toInt()
         class101.method891(this.x, (-this.anInt10274 + this.anInt6382 + -20), this.y)
         val class225 = this.method2422(72.toByte())
-        val class79 = (if (this.aClass79_10505!!.anIntArray1377 != null) this.aClass79_10505!!.method794(aClass170_10209!!, -1) else this.aClass79_10505)
+        val class79 = (if (this.aClass79_10505!!.anIntArray1377 != null) this.aClass79_10505!!.method794(aVarpStore_10209!!, -1) else this.aClass79_10505)
         this.aBoolean10324 = false
         var class318_sub4: Class318_Sub4? = null
         if (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == i && class79!!.aBoolean1369 && class225.aBoolean2913) {
@@ -189,7 +189,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
     public override fun method2421(i: Byte): Int {
         anInt10495++
         if ((this.aClass79_10505!!.anIntArray1377) != null) {
-            val class79 = this.aClass79_10505!!.method794(aClass170_10209!!, -1)
+            val class79 = this.aClass79_10505!!.method794(aVarpStore_10209!!, -1)
             if (class79 != null && class79.anInt1366 != -1) return class79.anInt1366
         }
         if (i < 113) method2448(null, 88)
@@ -264,7 +264,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
     public override fun method2425(i: Int): Int {
         anInt10496++
         if ((this.aClass79_10505!!.anIntArray1377) != null) {
-            val class79 = this.aClass79_10505!!.method794(aClass170_10209!!, -1)
+            val class79 = this.aClass79_10505!!.method794(aVarpStore_10209!!, -1)
             if (class79 != null && class79.anInt1336 != -1) return class79.anInt1336
         }
         if (i != -1) this.anInt10499 = -69
@@ -280,7 +280,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         anInt10504++
         if (i != 200) return 115
         if ((this.aClass79_10505!!.anIntArray1377) != null) {
-            val class79 = this.aClass79_10505!!.method794(aClass170_10209!!, -1)
+            val class79 = this.aClass79_10505!!.method794(aVarpStore_10209!!, -1)
             if (class79 != null && class79.anInt1390 != -1) return class79.anInt1390
         }
         if ((this.aClass79_10505!!.anInt1390) == -1) return super.method2426(200)
@@ -315,7 +315,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         val bool = (this.aByte10279.toInt() != 0 && (Class367_Sub11.anInt7396 >= this.anInt10248) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i_34_ = i_34_ or 0x80000
         val i_39_ = this.aClass264_10217.method2019((-25).toByte())
-        val class64 = (this.aClass79_10505!!.method800(i_39_, this.aClass182Array10308, ParticleEmitterNode.aClass87_191, false, class17_36_, this.anInt10203, Class64_Sub3.aClass261_5558, this.anInt10267, class17, aClass170_10209, var_renderer, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232).also { this.aClass64Array10323[0] = it })
+        val class64 = (this.aClass79_10505!!.method800(i_39_, this.aClass182Array10308, ParticleEmitterNode.aClass87_191, false, class17_36_, this.anInt10203, Class64_Sub3.aClass261_5558, this.anInt10267, class17, aVarpStore_10209, var_renderer, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232).also { this.aClass64Array10323[0] = it })
         if (class64 == null) return false
         this.anInt10207 = class64.fa()
         this.anInt10230 = class64.ma()

@@ -67,7 +67,7 @@ class Class239_Sub11 : Class239 {
             val i_0_ = (Class269.aClass217_3453!!.method1588(-51, i).anInt2125)
             if (i_0_ != 0) {
                 if (bool != true) method1769(-43)
-                val i_1_ = (Class318_Sub1_Sub3_Sub3.aClass170_10209!!.anIntArray5063[i])
+                val i_1_ = (Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.anIntArray5063[i])
                 if (i_0_ == 5) Class318_Sub1_Sub5.anInt8770 = i_1_
                 if (i_0_ == 6) Class348_Sub40_Sub31.anInt9408 = i_1_
             }

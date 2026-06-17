@@ -365,7 +365,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == Class298.aIntRange_3809) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_36_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
-                Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1313(42.toByte(), i, i_36_)
+                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1313(42.toByte(), i, i_36_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -700,7 +700,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class361.aIntRange_4433) {
-                Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1314(80.toByte())
+                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1314(80.toByte())
                 Class287.anInt3695 += 32
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1028,7 +1028,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub40_Sub19.aIntRange_9254) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-88).toByte())
                 val i_124_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool)
-                Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1316((-58).toByte(), i_124_, i)
+                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1316((-58).toByte(), i_124_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1326,7 +1326,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == Class239.aIntRange_3143) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_167_ = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-83)
-                Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1313(42.toByte(), i_167_.toInt(), i)
+                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1313(42.toByte(), i_167_.toInt(), i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1613,7 +1613,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == HeadIconRenderer.aIntRange_2068) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-103)
                 val i_213_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1316((-124).toByte(), i, i_213_)
+                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1316((-124).toByte(), i, i_213_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
