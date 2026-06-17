@@ -1,7 +1,7 @@
 /* Class101_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class101_Sub2 : Class101() {
+class FloatCameraTransform : AbstractCameraTransform() {
     @JvmField
     var aFloat5691: Float = 0f
     @JvmField
@@ -197,9 +197,9 @@ class Class101_Sub2 : Class101() {
         this.aFloat5724 += i_21_.toFloat()
     }
 
-    fun method917(class101: Class101, i: Byte) {
+    fun method917(abstractCameraTransform: AbstractCameraTransform, i: Byte) {
         anInt5698++
-        val class101_sub2_22_ = class101 as Class101_Sub2
+        val class101_sub2_22_ = abstractCameraTransform as FloatCameraTransform
         val f = this.aFloat5711
         val f_23_ = this.aFloat5708
         val f_24_ = this.aFloat5700
@@ -331,9 +331,9 @@ class Class101_Sub2 : Class101() {
         return fs
     }
 
-    override fun method907(): Class101 {
+    override fun method907(): AbstractCameraTransform {
         anInt5695++
-        val class101_sub2_50_ = Class101_Sub2()
+        val class101_sub2_50_ = FloatCameraTransform()
         class101_sub2_50_.aFloat5691 = this.aFloat5691
         class101_sub2_50_.aFloat5724 = this.aFloat5724
         class101_sub2_50_.aFloat5700 = this.aFloat5700
@@ -349,10 +349,10 @@ class Class101_Sub2 : Class101() {
         return class101_sub2_50_
     }
 
-    fun method926(i: Int, class101: Class101) {
+    fun method926(i: Int, abstractCameraTransform: AbstractCameraTransform) {
         anInt5737++
         if (i != -15699) this.aFloat5722 = 0.6372093f
-        val class101_sub2_51_ = class101 as Class101_Sub2
+        val class101_sub2_51_ = abstractCameraTransform as FloatCameraTransform
         this.aFloat5711 = class101_sub2_51_.aFloat5711
         this.aFloat5710 = 0.0f
         this.aFloat5722 = class101_sub2_51_.aFloat5722
@@ -367,11 +367,11 @@ class Class101_Sub2 : Class101() {
         this.aFloat5704 = class101_sub2_51_.aFloat5704
     }
 
-    fun method927(class101: Class101?, class101_52_: Class101?) {
+    fun method927(abstractCameraTransform: AbstractCameraTransform?, abstractCameraTransform_52_: AbstractCameraTransform?) {
         try {
             anInt5743++
-            val class101_sub2_53_ = class101 as Class101_Sub2?
-            val class101_sub2_54_ = class101_52_ as Class101_Sub2?
+            val class101_sub2_53_ = abstractCameraTransform as FloatCameraTransform?
+            val class101_sub2_54_ = abstractCameraTransform_52_ as FloatCameraTransform?
             this.aFloat5711 = ((class101_sub2_53_!!.aFloat5704 * class101_sub2_54_!!.aFloat5736) + ((class101_sub2_53_.aFloat5711 * class101_sub2_54_.aFloat5711) + (class101_sub2_54_.aFloat5708 * class101_sub2_53_.aFloat5700)))
             this.aFloat5708 = ((class101_sub2_53_.aFloat5722 * class101_sub2_54_.aFloat5708) + (class101_sub2_54_.aFloat5711 * class101_sub2_53_.aFloat5708) + (class101_sub2_53_.aFloat5732 * class101_sub2_54_.aFloat5736))
             this.aFloat5736 = ((class101_sub2_54_.aFloat5736 * class101_sub2_53_.aFloat5716) + ((class101_sub2_53_.aFloat5736 * class101_sub2_54_.aFloat5711) + (class101_sub2_54_.aFloat5708 * class101_sub2_53_.aFloat5691)))
@@ -385,7 +385,7 @@ class Class101_Sub2 : Class101() {
             this.aFloat5710 = (class101_sub2_53_.aFloat5710 + ((class101_sub2_53_.aFloat5732 * class101_sub2_54_.aFloat5724) + ((class101_sub2_54_.aFloat5710 * class101_sub2_53_.aFloat5722) + (class101_sub2_53_.aFloat5708 * (class101_sub2_54_.aFloat5729)))))
             this.aFloat5724 = ((class101_sub2_53_.aFloat5691 * class101_sub2_54_.aFloat5710) + (class101_sub2_53_.aFloat5736 * class101_sub2_54_.aFloat5729) + (class101_sub2_54_.aFloat5724 * class101_sub2_53_.aFloat5716) + class101_sub2_53_.aFloat5724)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("haa.HA(" + (if (class101 != null) "{...}" else "null") + ',' + (if (class101_52_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("haa.HA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (abstractCameraTransform_52_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -479,9 +479,9 @@ class Class101_Sub2 : Class101() {
         return fs
     }
 
-    fun method931(i: Int, class101: Class101) {
+    fun method931(i: Int, abstractCameraTransform: AbstractCameraTransform) {
         anInt5730++
-        val class101_sub2_68_ = class101 as Class101_Sub2
+        val class101_sub2_68_ = abstractCameraTransform as FloatCameraTransform
         this.aFloat5700 = class101_sub2_68_.aFloat5708
         this.aFloat5704 = class101_sub2_68_.aFloat5736
         this.aFloat5711 = class101_sub2_68_.aFloat5711
@@ -552,9 +552,9 @@ class Class101_Sub2 : Class101() {
         }
     }
 
-    override fun method898(class101: Class101?) {
+    override fun method898(abstractCameraTransform: AbstractCameraTransform?) {
         anInt5693++
-        val class101_sub2_78_ = class101 as Class101_Sub2?
+        val class101_sub2_78_ = abstractCameraTransform as FloatCameraTransform?
         this.aFloat5724 = class101_sub2_78_!!.aFloat5724
         this.aFloat5736 = class101_sub2_78_.aFloat5736
         this.aFloat5729 = class101_sub2_78_.aFloat5729

@@ -115,7 +115,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             Class74.aBoolean1236 = false
             Class267.anInt3428 = -1
             Class348_Sub40_Sub17_Sub1.Companion.method3093(i + 79)
-            Class101_Sub2.method921(99.toByte(), true)
+            FloatCameraTransform.method921(99.toByte(), true)
             Class90.regionTileY = 0
             ArbVertexProgram.regionTileX = 0
             Renderer.anInt4581 = 0
@@ -138,7 +138,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             Class318_Sub1_Sub3_Sub3.aClass170_10209!!.method1314((-107).toByte())
             Class301.method2282(-12648)
             Class50_Sub3.method465(i + -1636518175)
-            Class101_Sub2.aLong5745 = 0L
+            FloatCameraTransform.aLong5745 = 0L
             Class239_Sub4.aClass348_Sub26_5881 = null
             if (bool) Class348_Sub49.method3379(2, 12)
             else {

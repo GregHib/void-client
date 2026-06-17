@@ -555,11 +555,11 @@ class Class79 {
                 }
             }
             if (!bool_44_ && !bool_83_) return class64_82_
-            var class101s: Array<Class101?>? = null
-            if (class225 != null) class101s = class225.method1618(var_renderer, 0)
-            if (bool_83_ && class101s != null) {
+            var abstractCameraTransforms: Array<AbstractCameraTransform?>? = null
+            if (class225 != null) abstractCameraTransforms = class225.method1618(var_renderer, 0)
+            if (bool_83_ && abstractCameraTransforms != null) {
                 for (i_85_ in 0..11) {
-                    if (class101s[i_85_] != null) class64_82_!!.method610(class101s[i_85_]!!, 1 shl i_85_, true)
+                    if (abstractCameraTransforms[i_85_] != null) class64_82_!!.method610(abstractCameraTransforms[i_85_]!!, 1 shl i_85_, true)
                 }
             }
             var i_86_ = 0
@@ -592,9 +592,9 @@ class Class79 {
                     }
                 }
             }
-            if (bool_83_ && class101s != null) {
+            if (bool_83_ && abstractCameraTransforms != null) {
                 for (i_90_ in 0..11) {
-                    if (class101s[i_90_] != null) class64_82_!!.method610(class101s[i_90_]!!, 1 shl i_90_, false)
+                    if (abstractCameraTransforms[i_90_] != null) class64_82_!!.method610(abstractCameraTransforms[i_90_]!!, 1 shl i_90_, false)
                 }
             }
             if (class348_sub42_sub17 != null && class348_sub42_sub17_63_ != null) class64_82_!!.method625(class348_sub42_sub17_59_, i_58_, 122.toByte(), i_62_, class348_sub42_sub17_63_, i_56_, i_60_, -1 + i_41_, class348_sub42_sub17, (class17_36_!!.aBoolean242 or class17!!.aBoolean242), i_57_, class348_sub42_sub17_64_, -1 + i_34_, class17_36_.aBooleanArray263, i_61_)

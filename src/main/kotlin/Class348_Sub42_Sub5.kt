@@ -86,7 +86,7 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
     fun method3184(var_renderConfig: RenderConfig?, class45: Class45?, i: Int): Boolean {
         try {
             anInt9529++
-            if (Class101_Sub2.anInt5713 < 0) {
+            if (FloatCameraTransform.anInt5713 < 0) {
                 var i_17_ = 0
                 while ((anIntArray9524.size > i_17_)) {
                     if (!class45!!.method421(false, anIntArray9524[i_17_])) return false
@@ -95,7 +95,7 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
             } else {
                 var i_18_ = 0
                 while ((i_18_ < anIntArray9524.size)) {
-                    if (!class45!!.method420(-10499, Class101_Sub2.anInt5713, anIntArray9524[i_18_])) return false
+                    if (!class45!!.method420(-10499, FloatCameraTransform.anInt5713, anIntArray9524[i_18_])) return false
                     i_18_++
                 }
             }

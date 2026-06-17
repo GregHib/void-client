@@ -1,4 +1,4 @@
-import Class101_Sub1.Companion.method912
+import MatrixCameraTransform.Companion.method912
 import Class239_Sub16.Companion.method1788
 
 /* Class157 - Decompiled by JODE
@@ -8,10 +8,10 @@ object Class157 {
     var anInt2121: Int = 0
     var anInt2122: Int = 0
     @JvmField
-    var aClass101_2123: Class101? = null
+    var aAbstractCameraTransform_2123: AbstractCameraTransform? = null
 
     fun method1244(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2) {
-        if (i < 10) aClass101_2123 = null
+        if (i < 10) aAbstractCameraTransform_2123 = null
         class348_sub49_sub2.writeInt(121.toByte(), Class348_Sub29.aClass45_6909!!.method389(26))
         anInt2121++
         class348_sub49_sub2.writeInt(112.toByte(), Class186.aClass45_2490!!.method389(-106))
@@ -59,6 +59,6 @@ object Class157 {
 
     @JvmStatic
     fun method1246(i: Int) {
-        aClass101_2123 = null
+        aAbstractCameraTransform_2123 = null
     }
 }

@@ -12,7 +12,7 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
     var anInt4240: Int = 0
     var aClass342_4248: Class342? = null
     @JvmField
-    var aClass101_4252: Class101? = null
+    var aAbstractCameraTransform_4252: AbstractCameraTransform? = null
     fun method2685(i: Byte): Class174 {
         if (i.toInt() != -13) method2683(null, null, -120, 35, -33, null, 90, 71, null)
         anInt4243++

@@ -101,7 +101,7 @@ class Class190 {
 
         fun method1422(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Boolean {
             anInt2550++
-            Class348_Sub40_Sub4.aClass101_9114!!.method897(i_1_, i, i_0_, Class318_Sub1_Sub5_Sub2.anIntArray10172!!)
+            Class348_Sub40_Sub4.aAbstractCameraTransform_9114!!.method897(i_1_, i, i_0_, Class318_Sub1_Sub5_Sub2.anIntArray10172!!)
             val i_3_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![2]
             if (i_3_ < 50) return false
             Class318_Sub1_Sub5_Sub2.anIntArray10172!![2] = i_3_

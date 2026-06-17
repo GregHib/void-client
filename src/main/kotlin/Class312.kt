@@ -88,7 +88,7 @@ class Class312 {
                 for (i_2_ in 0..99) Class152.aBooleanArray2076!![i_2_] = true
                 method2145(-24498)
                 Class239_Sub4.aClass348_Sub26_5881 = null
-                Class101_Sub2.aLong5745 = 0L
+                FloatCameraTransform.aLong5745 = 0L
             }
         }
 

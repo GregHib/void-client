@@ -169,12 +169,12 @@ class Class64_Sub3 : Class64 {
         }
     }
 
-    public override fun method628(i: Int, i_14_: Int, class101: Class101?, bool: Boolean, i_15_: Int): Boolean {
+    public override fun method628(i: Int, i_14_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_15_: Int): Boolean {
         try {
             anInt5533++
-            return method684(bool, 1566382404, -1, i_14_, i_15_, i, class101)
+            return method684(bool, 1566382404, -1, i_14_, i_15_, i, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.MA(" + i + ',' + i_14_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + bool + ',' + i_15_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("paa.MA(" + i + ',' + i_14_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_15_ + ')'))
         }
     }
 
@@ -404,12 +404,12 @@ class Class64_Sub3 : Class64 {
         }
     }
 
-    public override fun method623(i: Int, i_87_: Int, class101: Class101?, bool: Boolean, i_88_: Int, i_89_: Int): Boolean {
+    public override fun method623(i: Int, i_87_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_88_: Int, i_89_: Int): Boolean {
         try {
             anInt5633++
-            return method684(bool, 1566382404, i_89_, i_87_, i_88_, i, class101)
+            return method684(bool, 1566382404, i_89_, i_87_, i_88_, i, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.OA(" + i + ',' + i_87_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + bool + ',' + i_88_ + ',' + i_89_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("paa.OA(" + i + ',' + i_87_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_88_ + ',' + i_89_ + ')'))
         }
     }
 
@@ -483,10 +483,10 @@ class Class64_Sub3 : Class64 {
         return aShort5629.toInt()
     }
 
-    private fun method684(bool: Boolean, i: Int, i_108_: Int, i_109_: Int, i_110_: Int, i_111_: Int, class101: Class101?): Boolean {
+    private fun method684(bool: Boolean, i: Int, i_108_: Int, i_109_: Int, i_110_: Int, i_111_: Int, abstractCameraTransform: AbstractCameraTransform?): Boolean {
         try {
             anInt5641++
-            val class101_sub3 = class101 as Class101_Sub3
+            val class101_sub3 = abstractCameraTransform as ProjectionCameraTransform
             val class101_sub3_112_ = aHa_Sub2_5598!!.aClass101_Sub3_7760
             val f = (class101_sub3_112_.aFloat5747 + ((class101_sub3.aFloat5751 * class101_sub3_112_.aFloat5781) + ((class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5747) + (class101_sub3.aFloat5772 * (class101_sub3_112_.aFloat5750)))))
             val f_113_ = (class101_sub3_112_.aFloat5772 + ((class101_sub3.aFloat5751 * class101_sub3_112_.aFloat5762) + ((class101_sub3.aFloat5747 * class101_sub3_112_.aFloat5761) + (class101_sub3.aFloat5772 * (class101_sub3_112_.aFloat5769)))))
@@ -619,7 +619,7 @@ class Class64_Sub3 : Class64 {
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.SA(" + bool + ',' + i + ',' + i_108_ + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + (if (class101 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("paa.SA(" + bool + ',' + i + ',' + i_108_ + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1091,12 +1091,12 @@ class Class64_Sub3 : Class64 {
         aBoolean5527 = false
     }
 
-    public override fun method608(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int, i_235_: Int) {
+    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_235_: Int) {
         try {
             anInt5639++
             if (anInt5529 != 0) {
                 val class101_sub3 = aHa_Sub2_5598!!.aClass101_Sub3_7760
-                val class101_sub3_236_ = class101 as Class101_Sub3
+                val class101_sub3_236_ = abstractCameraTransform as ProjectionCameraTransform
                 if (!aBoolean5527) method692((-123).toByte())
                 Class320.aFloat3994 = ((class101_sub3_236_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3.aFloat5754 * class101_sub3_236_.aFloat5769) + (class101_sub3.aFloat5784 * class101_sub3_236_.aFloat5754))
                 Class49.aFloat4720 = ((class101_sub3_236_.aFloat5751 * class101_sub3.aFloat5784) + ((class101_sub3.aFloat5756 * class101_sub3_236_.aFloat5747) + (class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5754)) + class101_sub3.aFloat5751)
@@ -1177,7 +1177,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.Q(" + (if (class101 != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_235_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("paa.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_235_ + ')'))
         }
     }
 
@@ -1594,13 +1594,13 @@ class Class64_Sub3 : Class64 {
         }
     }
 
-    public override fun method615(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int) {
+    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int) {
         try {
             anInt5611++
             if (anInt5529 != 0) {
                 val class101_sub3 = aHa_Sub2_5598!!.aClass101_Sub3_7760
                 if (!aBoolean5527) method692((-123).toByte())
-                val class101_sub3_350_ = class101 as Class101_Sub3
+                val class101_sub3_350_ = abstractCameraTransform as ProjectionCameraTransform
                 Class320.aFloat3994 = ((class101_sub3_350_.aFloat5754 * class101_sub3.aFloat5784) + ((class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3_350_.aFloat5769 * class101_sub3.aFloat5754)))
                 Class49.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)))
                 val f = (Class49.aFloat4720 + Class320.aFloat3994 * aShort5591.toFloat())
@@ -1703,7 +1703,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.KA(" + (if (class101 != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("paa.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1840,11 +1840,11 @@ class Class64_Sub3 : Class64 {
         return aBoolean5638
     }
 
-    public override fun method620(class101: Class101?) {
+    public override fun method620(abstractCameraTransform: AbstractCameraTransform?) {
         do {
             try {
                 anInt5548++
-                val class101_sub3 = class101 as Class101_Sub3
+                val class101_sub3 = abstractCameraTransform as ProjectionCameraTransform
                 if (aClass129Array5640 != null) {
                     for (i in aClass129Array5640!!.indices) {
                         val class129 = aClass129Array5640!![i]!!
@@ -1867,15 +1867,15 @@ class Class64_Sub3 : Class64 {
                     val class342 = aClass342Array5541!![i]!!
                     var class342_385_: Class342? = class342
                     if (class342.aClass342_4248 != null) class342_385_ = class342.aClass342_4248
-                    if (class342.aClass101_4252 == null) class342.aClass101_4252 = class101_sub3.method907()
-                    else class342.aClass101_4252!!.method898(class101_sub3)
+                    if (class342.aAbstractCameraTransform_4252 == null) class342.aAbstractCameraTransform_4252 = class101_sub3.method907()
+                    else class342.aAbstractCameraTransform_4252!!.method898(class101_sub3)
                     class342_385_!!.anInt4238 = (class101_sub3.aFloat5747 + (((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5781)) + (((anIntArray5543!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5750) * (anIntArray5593!![(class342.anInt4244)]).toFloat())))).toInt()
                     class342_385_.anInt4239 = (class101_sub3.aFloat5772 + (((anIntArray5593!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5769)) + ((class101_sub3.aFloat5761) * (anIntArray5543!![(class342.anInt4244)]).toFloat()) + ((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5762)))).toInt()
                     class342_385_.anInt4240 = (class101_sub3.aFloat5751 + (((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5784)) + (((anIntArray5543!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5756)) + ((anIntArray5593!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5754))))).toInt()
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "paa.J(" + (if (class101 != null) "{...}" else "null") + ')')
+                throw Class348_Sub17.method2929(runtimeexception, "paa.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -2391,15 +2391,15 @@ class Class64_Sub3 : Class64 {
         if (aClass123_5605 != null) aClass123_5605!!.anInterface2_1811 = null
     }
 
-    public override fun method610(class101: Class101, i: Int, bool: Boolean) {
+    public override fun method610(abstractCameraTransform: AbstractCameraTransform, i: Int, bool: Boolean) {
         try {
             anInt5550++
             if (aShortArray5608 != null) {
                 val `is` = IntArray(3)
                 for (i_509_ in 0..<anInt5557) {
                     if ((i and aShortArray5608!![i_509_].toInt()) != 0) {
-                        if (!bool) class101!!.method897(anIntArray5543!![i_509_], anIntArray5593!![i_509_], anIntArray5644!![i_509_], `is`)
-                        else class101!!.method892(anIntArray5543!![i_509_], anIntArray5593!![i_509_], anIntArray5644!![i_509_], `is`)
+                        if (!bool) abstractCameraTransform!!.method897(anIntArray5543!![i_509_], anIntArray5593!![i_509_], anIntArray5644!![i_509_], `is`)
+                        else abstractCameraTransform!!.method892(anIntArray5543!![i_509_], anIntArray5593!![i_509_], anIntArray5644!![i_509_], `is`)
                         anIntArray5543!![i_509_] = `is`[0]
                         anIntArray5593!![i_509_] = `is`[1]
                         anIntArray5644!![i_509_] = `is`[2]
@@ -2407,7 +2407,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.za(" + (if (class101 != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("paa.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
         }
     }
 

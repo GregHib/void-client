@@ -744,7 +744,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
-            if (Class348_Sub3.aClass114_6584 == Class101_Sub2.aClass114_5742) {
+            if (Class348_Sub3.aClass114_6584 == FloatCameraTransform.aClass114_5742) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
                 val i_85_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-104).toByte())
                 val i_86_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())

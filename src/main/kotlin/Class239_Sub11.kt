@@ -63,7 +63,7 @@ class Class239_Sub11 : Class239 {
         @JvmStatic
         fun method1767(bool: Boolean, i: Int) {
             anInt5953++
-            Class101_Sub3.method947(41.toByte())
+            ProjectionCameraTransform.method947(41.toByte())
             val i_0_ = (Class269.aClass217_3453!!.method1588(-51, i).anInt2125)
             if (i_0_ != 0) {
                 if (bool != true) method1769(-43)

@@ -10,11 +10,11 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     var nativeid: Long = 0L
     private val aClass262_5123: Class262
     private var aBoolean5124 = false
-    private var aClass101_5125: Class101? = null
+    private var aAbstractCameraTransform_5125: AbstractCameraTransform? = null
     private val aClass356_5126: Class356
     private var anInt5127: Int
     private var anInt5128: Int
-    private var aClass101_5131: Class101? = null
+    private var aAbstractCameraTransform_5131: AbstractCameraTransform? = null
     private var aP5137: p? = null
     var anInt5141: Int = 0
     private var aBoolean5142: Boolean
@@ -137,8 +137,8 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     private external fun t(var_p: p?)
 
-    override fun method3705(): Class101 {
-        return aClass101_5131!!
+    override fun method3705(): AbstractCameraTransform {
+        return aAbstractCameraTransform_5131!!
     }
 
     private fun WA(i: Short): Boolean { //
@@ -252,7 +252,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
             anAArray5143 = null
             aP5137 = null
             aYa5121 = null
-            aClass101_5131 = null
+            aAbstractCameraTransform_5131 = null
             aClass356_5126.method3481(0)
             var var_ya = aClass262_5123.method1995(4) as ya?
             while (var_ya != null) {
@@ -437,7 +437,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    override fun method3654(): Class101 {
+    override fun method3654(): AbstractCameraTransform {
         return ja()
     }
 
@@ -484,8 +484,8 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         return na(this, aYa5121, i, i_192_, `is`, is_193_)
     }
 
-    override fun method3640(): Class101? {
-        return aClass101_5125
+    override fun method3640(): AbstractCameraTransform? {
+        return aAbstractCameraTransform_5125
     }
 
     override fun method3709(i: Int, i_194_: Int, i_195_: Int, i_196_: Int, i_197_: Int, i_198_: Int) {
@@ -534,9 +534,9 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    override fun method3638(class101: Class101?) {
-        aClass101_5125 = class101
-        ma((class101 as ja).nativeid)
+    override fun method3638(abstractCameraTransform: AbstractCameraTransform?) {
+        aAbstractCameraTransform_5125 = abstractCameraTransform
+        ma((abstractCameraTransform as ja).nativeid)
     }
 
     override fun method3672() {
@@ -582,7 +582,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
                 MA(aRenderConfig4579, 0, 0)
                 Class59_Sub2_Sub1.method566(false, true, 23.toByte())
                 aBoolean5142 = true
-                aClass101_5131 = ja()
+                aAbstractCameraTransform_5131 = ja()
                 method3638(ja())
                 method3631(1)
                 method3659(0)

@@ -104,7 +104,7 @@ class Class239_Sub24 : Class239 {
             anInt6088++
             val i_6_ = 56 % ((68 - i_5_) / 58)
             if (i >= 0 && i_4_ >= 0 && Class18.anInt282 != 0 && Class305.anInt3861 != 0) {
-                val class101: Class101
+                val abstractCameraTransform: AbstractCameraTransform
                 val i_7_: Int
                 val i_8_: Int
                 var i_9_: Int
@@ -113,7 +113,7 @@ class Class239_Sub24 : Class239 {
                 val i_12_: Int
                 if (Class59_Sub1.aBoolean5300) {
                     Class107.method1010(false, false)
-                    class101 = var_renderer.method3640()!!
+                    abstractCameraTransform = var_renderer.method3640()!!
                     val `is` = var_renderer.Y()
                     i_7_ = `is`[0]
                     i_8_ = `is`[1]
@@ -128,9 +128,9 @@ class Class239_Sub24 : Class239 {
                     i_7_ = Class336.anInt4171
                     i_10_ = Class18.anInt282
                     var_renderer.KA(Class120.anInt4911, Class238_Sub1.anInt5832, Class18.anInt282, Class305.anInt3861)
-                    class101 = var_renderer.method3654()
-                    class101.method903(Class14_Sub4.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, Class348_Sub51.anInt7244)
-                    var_renderer.method3638(class101)
+                    abstractCameraTransform = var_renderer.method3654()
+                    abstractCameraTransform.method903(Class14_Sub4.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, Class348_Sub51.anInt7244)
+                    var_renderer.method3638(abstractCameraTransform)
                     i_12_ = i_4_
                     i_11_ = i
                 }
@@ -159,8 +159,8 @@ class Class239_Sub24 : Class239 {
                     }
                     val `is` = intArrayOf(i_17_, i_19_, i_15_)
                     val is_21_ = intArrayOf(i_18_, i_20_, i_16_)
-                    class101.method890(`is`)
-                    class101.method890(is_21_)
+                    abstractCameraTransform.method890(`is`)
+                    abstractCameraTransform.method890(is_21_)
                     val f = Class108.method1012(`is`[1].toFloat(), is_21_[0].toFloat(), `is`[2].toFloat(), is_21_[2].toFloat(), 4, `is`[0].toFloat(), 123.toByte(), is_21_[1].toFloat())
                     if (f > 0.0f) {
                         val i_22_ = is_21_[0] + -`is`[0]
@@ -310,7 +310,7 @@ class Class239_Sub24 : Class239 {
                                     while (class348_sub34 != null) {
                                         val class213 = (Exception_Sub1.aClass255_112!!.method1940(79, (class348_sub34.anInt6973)))
                                         if (RenderNode.aBoolean9722 && ((Class132.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
-                                            val class254 = (if (Class246.anInt3176 != -1) (Class101_Sub3.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
+                                            val class254 = (if (Class246.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
                                             if ((Class38.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, Class246.anInt3176))))) {
                                                 Class97.anInt1555++
                                                 Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=ff9040>" + (class213.aString2795)), i_32_, (-76).toByte(), false, i_33_, -1, true, 49, i_57_.toLong(), Class28.aString5001, class348_sub34.anInt6973.toLong(), (Class348_Sub49_Sub1.anInt9747))
@@ -347,7 +347,7 @@ class Class239_Sub24 : Class239 {
                                 if (class51!!.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), 47.toByte()))
                                 if (class51 != null) {
                                     if (RenderNode.aBoolean9722 && ((Class132.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
-                                        val class254 = (if (Class246.anInt3176 != -1) (Class101_Sub3.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
+                                        val class254 = (if (Class246.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
                                         if (((0x4 and Class38.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (class51.method487(Class246.anInt3176, (class254.anInt3256), 54))))) {
                                             Class220.anInt2877++
                                             Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=00ffff>" + (class51.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), Class28.aString5001, (Class348_Sub40_Sub21.method3107(95.toByte(), interface10, i_32_, i_33_)), Class348_Sub49_Sub1.anInt9747)

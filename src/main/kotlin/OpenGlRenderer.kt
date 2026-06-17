@@ -101,9 +101,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private val aClass18_7720: Class18?
     private var aClass348_Sub5_Sub1_7721: Class348_Sub5_Sub1? = null
     private val aClass354_7723: Class354
-    private val aClass101_Sub3_7725: Class101_Sub3
+    private val aClass101_Sub3_7725: ProjectionCameraTransform
     @JvmField
-    var aClass101_Sub3_7729: Class101_Sub3?
+    var aClass101_Sub3_7729: ProjectionCameraTransform?
     @JvmField
     var aNativeHeap7730: NativeHeap? = null
     @JvmField
@@ -142,16 +142,16 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var aBoolean7758 = false
     private var aBoolean7759 = false
     @JvmField
-    var aClass101_Sub3_7760: Class101_Sub3
+    var aClass101_Sub3_7760: ProjectionCameraTransform
     private var aBoolean7761 = false
     private var anInt7762 = 0
     private var aBoolean7763 = false
     private var anInt7764 = 0
     private var anInt7765 = 0
     @JvmField
-    var aClass101_Sub3_7766: Class101_Sub3
+    var aClass101_Sub3_7766: ProjectionCameraTransform
     @JvmField
-    var aClass101_Sub3_7767: Class101_Sub3
+    var aClass101_Sub3_7767: ProjectionCameraTransform
     @JvmField
     var aFloat7768: Float = 0f
     private var aClass299_Sub1_7769: Class299_Sub1? = null
@@ -781,18 +781,18 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         glTexEnvfv(8960, 8705, InputStream_Sub2.aFloatArray84, 0)
     }
 
-    override fun method3638(class101: Class101?) {
+    override fun method3638(abstractCameraTransform: AbstractCameraTransform?) {
         do {
             try {
                 anInt7549++
-                this.aClass101_Sub3_7760.method898(class101)
+                this.aClass101_Sub3_7760.method898(abstractCameraTransform)
                 this.aClass101_Sub3_7766.method898(this.aClass101_Sub3_7760)
                 this.aClass101_Sub3_7766.method942(3128)
                 this.aClass101_Sub3_7767.method946(this.aClass101_Sub3_7766, -7929)
                 if (anInt7865 == 1) break
                 method3754(89.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "qo.DE(" + (if (class101 != null) "{...}" else "null") + ')')
+                throw Class348_Sub17.method2929(runtimeexception, "qo.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1059,7 +1059,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (i_114_ > -43) method3768(85.toByte())
     }
 
-    fun method3758(bool: Boolean, class101_sub3: Class101_Sub3?) {
+    fun method3758(bool: Boolean, class101_sub3: ProjectionCameraTransform?) {
         try {
             glPushMatrix()
             if (bool != false) method3650(51)
@@ -1269,7 +1269,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         aClass262_7755.method1999(class348, -20180)
     }
 
-    fun method3766(i: Byte, class101_sub3: Class101_Sub3?) {
+    fun method3766(i: Byte, class101_sub3: ProjectionCameraTransform?) {
         do {
             try {
                 anInt7623++
@@ -2093,9 +2093,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    override fun method3654(): Class101 {
+    override fun method3654(): AbstractCameraTransform {
         anInt7716++
-        return Class101_Sub3()
+        return ProjectionCameraTransform()
     }
 
     override fun method3671(): Boolean {
@@ -2485,7 +2485,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    override fun method3640(): Class101 {
+    override fun method3640(): AbstractCameraTransform {
         anInt7650++
         return this.aClass101_Sub3_7760
     }
@@ -2496,7 +2496,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (i != -30199) K(null)
     }
 
-    override fun method3705(): Class101 {
+    override fun method3705(): AbstractCameraTransform {
         anInt7587++
         return aClass101_Sub3_7725
     }
@@ -2941,8 +2941,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
     init {
         aClass233_7711 = Class233()
-        aClass101_Sub3_7725 = Class101_Sub3()
-        this.aClass101_Sub3_7729 = Class101_Sub3()
+        aClass101_Sub3_7725 = ProjectionCameraTransform()
+        this.aClass101_Sub3_7729 = ProjectionCameraTransform()
         this.anInt7731 = 3
         aBoolean7734 = false
         this.anInt7733 = 8
@@ -2962,9 +2962,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         aClass262_7754 = Class262()
         aClass262_7755 = Class262()
         aClass262_7756 = Class262()
-        this.aClass101_Sub3_7760 = Class101_Sub3()
-        this.aClass101_Sub3_7766 = Class101_Sub3()
-        this.aClass101_Sub3_7767 = Class101_Sub3()
+        this.aClass101_Sub3_7760 = ProjectionCameraTransform()
+        this.aClass101_Sub3_7766 = ProjectionCameraTransform()
+        this.aClass101_Sub3_7767 = ProjectionCameraTransform()
         anInt7770 = 0
         aFloat7786 = 0.0f
         anInt7773 = 0

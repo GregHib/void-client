@@ -38,8 +38,8 @@ class i : Class64, Interface19 {
 
     public external override fun aa(i: Short, i_7_: Short)
 
-    public override fun method623(i: Int, i_8_: Int, class101: Class101?, bool: Boolean, i_9_: Int, i_10_: Int): Boolean {
-        return anOa5117.method3973()!!.method143(this, i, i_8_, class101, bool, i_10_)
+    public override fun method623(i: Int, i_8_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_9_: Int, i_10_: Int): Boolean {
+        return anOa5117.method3973()!!.method143(this, i, i_8_, abstractCameraTransform, bool, i_10_)
     }
 
     public external override fun EA(): Int
@@ -52,11 +52,11 @@ class i : Class64, Interface19 {
 
     public external override fun P(i: Int, i_11_: Int, i_12_: Int, i_13_: Int)
 
-    public override fun method608(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int, i_14_: Int) {
-        if (class318_sub3 == null) anOa5117.method3973()!!.method149(this, class101, null, i, i_14_)
+    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_14_: Int) {
+        if (class318_sub3 == null) anOa5117.method3973()!!.method149(this, abstractCameraTransform, null, i, i_14_)
         else {
             oa.Companion.anIntArray5132[5] = 0
-            anOa5117.method3973()!!.method149(this, class101, oa.Companion.anIntArray5132, i, i_14_)
+            anOa5117.method3973()!!.method149(this, abstractCameraTransform, oa.Companion.anIntArray5132, i, i_14_)
             class318_sub3.anInt6405 = oa.Companion.anIntArray5132[0]
             class318_sub3.anInt6402 = oa.Companion.anIntArray5132[1]
             class318_sub3.anInt6406 = oa.Companion.anIntArray5132[2]
@@ -85,8 +85,8 @@ class i : Class64, Interface19 {
 
     public external override fun VA(i: Int)
 
-    public override fun method628(i: Int, i_19_: Int, class101: Class101?, bool: Boolean, i_20_: Int): Boolean {
-        return anOa5117.method3973()!!.method146(this, i, i_19_, class101, bool)
+    public override fun method628(i: Int, i_19_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_20_: Int): Boolean {
+        return anOa5117.method3973()!!.method146(this, i, i_19_, abstractCameraTransform, bool)
     }
 
     public override fun method614(i: Byte, i_21_: Int, bool: Boolean): Class64 {
@@ -175,8 +175,8 @@ class i : Class64, Interface19 {
 
     public external override fun WA(): Int
 
-    public override fun method610(class101: Class101, i: Int, bool: Boolean) {
-        A((class101 as ja).nativeid, i, bool)
+    public override fun method610(abstractCameraTransform: AbstractCameraTransform, i: Int, bool: Boolean) {
+        A((abstractCameraTransform as ja).nativeid, i, bool)
     }
 
     public override fun method622() {
@@ -194,11 +194,11 @@ class i : Class64, Interface19 {
         }
     }
 
-    public override fun method615(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int) {
-        if (class318_sub3 == null) anOa5117.method3973()?.method145(this, class101!!, null, i)
+    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int) {
+        if (class318_sub3 == null) anOa5117.method3973()?.method145(this, abstractCameraTransform!!, null, i)
         else {
             oa.Companion.anIntArray5132[5] = 0
-            anOa5117.method3973()?.method145(this, class101!!, oa.Companion.anIntArray5132, i)
+            anOa5117.method3973()?.method145(this, abstractCameraTransform!!, oa.Companion.anIntArray5132, i)
             class318_sub3.anInt6405 = oa.Companion.anIntArray5132[0]
             class318_sub3.anInt6402 = oa.Companion.anIntArray5132[1]
             class318_sub3.anInt6406 = oa.Companion.anIntArray5132[2]
@@ -210,8 +210,8 @@ class i : Class64, Interface19 {
 
     public external override fun r(): Boolean
 
-    public override fun method620(class101: Class101?) {
-        method693(oa.Companion.anIntArray5140, class101)
+    public override fun method620(abstractCameraTransform: AbstractCameraTransform?) {
+        method693(oa.Companion.anIntArray5140, abstractCameraTransform)
         var i = 0
         if (this.aClass129Array5119 != null) {
             for (i_74_ in this.aClass129Array5119!!.indices) {
@@ -232,8 +232,8 @@ class i : Class64, Interface19 {
                 val class342 = this.aClass342Array5118!![i_75_]!!
                 var class342_76_: Class342? = class342
                 if (class342.aClass342_4248 != null) class342_76_ = class342.aClass342_4248
-                if (class342.aClass101_4252 != null) class342.aClass101_4252!!.method898(class101)
-                else class342.aClass101_4252 = class101!!.method907()
+                if (class342.aAbstractCameraTransform_4252 != null) class342.aAbstractCameraTransform_4252!!.method898(abstractCameraTransform)
+                else class342.aAbstractCameraTransform_4252 = abstractCameraTransform!!.method907()
                 class342_76_!!.anInt4238 = oa.Companion.anIntArray5140[i++]
                 class342_76_.anInt4239 = oa.Companion.anIntArray5140[i++]
                 class342_76_.anInt4240 = oa.Companion.anIntArray5140[i++]
@@ -247,8 +247,8 @@ class i : Class64, Interface19 {
         return this.aClass342Array5118
     }
 
-    private fun method693(`is`: IntArray?, class101: Class101?) {
-        anOa5117.method3973()!!.method151(this, `is`, class101)
+    private fun method693(`is`: IntArray?, abstractCameraTransform: AbstractCameraTransform?) {
+        anOa5117.method3973()!!.method151(this, `is`, abstractCameraTransform)
     }
 
     public external override fun ua(): Int

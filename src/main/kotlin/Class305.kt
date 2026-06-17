@@ -56,9 +56,9 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
         i_10_ = 0x3fff and i + i_10_
         anInt3860++
         if (anInt3858 != -1 && anInt3863 != 0) {
-            val class12 = Class101_Sub1.aRenderConfig5684!!.method3(anInt3858, -6662)
-            if (aClass105_3867 == null && Class101_Sub1.aRenderConfig5684!!.method4(-7953, anInt3858)) {
-                val `is` = (if (class12!!.anInt200 == 2) Class101_Sub1.aRenderConfig5684!!.method6(-21540, anInt3863, 0.7f, anInt3858, false, anInt3863) else Class101_Sub1.aRenderConfig5684!!.method5(false, anInt3858, 0.7f, anInt3863, anInt3863, -119))
+            val class12 = MatrixCameraTransform.aRenderConfig5684!!.method3(anInt3858, -6662)
+            if (aClass105_3867 == null && MatrixCameraTransform.aRenderConfig5684!!.method4(-7953, anInt3858)) {
+                val `is` = (if (class12!!.anInt200 == 2) MatrixCameraTransform.aRenderConfig5684!!.method6(-21540, anInt3863, 0.7f, anInt3858, false, anInt3863) else MatrixCameraTransform.aRenderConfig5684!!.method5(false, anInt3858, 0.7f, anInt3863, anInt3863, -119))
                 aClass105_3867 = var_renderer.method3662(anInt3863, `is`, 94.toByte(), 0, anInt3863, anInt3863)
             }
             if (class12!!.anInt200 == 2) var_renderer.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0)

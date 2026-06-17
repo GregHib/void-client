@@ -2245,7 +2245,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_219_ = anIntArray1149!![anInt1173]
                     val i_220_ = anIntArray1149!![anInt1173 + 1]
-                    val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_220_, 28364)
+                    val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_220_, 28364)
                     if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_219_, 79.toByte())!!.method376(class254.aString3258, i_220_, 126.toByte())!!)
                     else {
                         anIntArray1149!![anInt1173++] = (Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_219_, 50.toByte())!!.method378(class254.anInt3256, i_220_, false))
@@ -3073,7 +3073,7 @@ object Class66 {
                 anInt1173 -= 2
                 val i_275_ = anIntArray1149!![anInt1173]
                 val i_276_ = anIntArray1149!![anInt1173 + 1]
-                val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_275_, 28364)
+                val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_275_, 28364)
                 if (i_276_ == class254.anInt3256) {
                     class46!!.method435(i_275_, -3437)
                     return
@@ -3083,7 +3083,7 @@ object Class66 {
             if (i == 1128) {
                 val i_277_ = anIntArray1149!![--anInt1173]
                 val string = aStringArray1152!![--anInt1170]
-                val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_277_, 28364)
+                val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_277_, 28364)
                 if (class254.aString3258 == string) {
                     class46!!.method435(i_277_, -3437)
                     return
@@ -3473,7 +3473,7 @@ object Class66 {
                 }
                 if (i == 1613) {
                     val i_295_ = anIntArray1149!![--anInt1173]
-                    val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_295_, 28364)
+                    val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_295_, 28364)
                     if (class254.method1925(false)) aStringArray1152!![anInt1170++] = class46.method429(i_295_, (class254.aString3258), -1)!!
                     else {
                         anIntArray1149!![anInt1173++] = class46.method428((class254.anInt3256), i_295_, -126)
@@ -4874,7 +4874,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_466_ = anIntArray1149!![anInt1173]
                     val i_467_ = anIntArray1149!![anInt1173 + 1]
-                    val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_467_, 28364)
+                    val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_467_, 28364)
                     if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Exception_Sub1.aClass255_112!!.method1940(-96, i_466_).method1561(class254.aString3258, i_467_, -1511086397))
                     else {
                         anIntArray1149!![anInt1173++] = (Exception_Sub1.aClass255_112!!.method1940(-82, i_466_).method1567(class254.anInt3256, -106, i_467_))
@@ -4948,7 +4948,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_478_ = anIntArray1149!![anInt1173]
                     val i_479_ = anIntArray1149!![anInt1173 + 1]
-                    val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_479_, 28364)
+                    val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_479_, 28364)
                     if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class189.aClass278_2529!!.method2079(i_478_, -1).method801(17.toByte(), i_479_, class254.aString3258))
                     else {
                         anIntArray1149!![anInt1173++] = (Class189.aClass278_2529!!.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48))
@@ -4961,7 +4961,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_480_ = anIntArray1149!![anInt1173]
                     val i_481_ = anIntArray1149!![anInt1173 + 1]
-                    val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_481_, 28364)
+                    val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_481_, 28364)
                     if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16)!!)
                     else {
                         anIntArray1149!![anInt1173++] = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81))
@@ -4974,7 +4974,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_482_ = anIntArray1149!![anInt1173]
                     val i_483_ = anIntArray1149!![anInt1173 + 1]
-                    val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_483_, 28364)
+                    val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_483_, 28364)
                     if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class136.aClass65_4787!!.method700(i_482_, -121).method3170(-250, class254.aString3258, i_483_))
                     else {
                         anIntArray1149!![anInt1173++] = (Class136.aClass65_4787!!.method700(i_482_, 81).method3166(i_483_, class254.anInt3256, 124.toByte()))

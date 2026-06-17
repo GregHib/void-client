@@ -18,7 +18,7 @@ class Class64_Sub1 : Class64 {
     private lateinit var aShortArray5317: ShortArray
     private lateinit var anIntArray5318: IntArray
     private var aClass64_Sub1_5319: Class64_Sub1? = null
-    private var aClass101_Sub1_5320: Class101_Sub1? = null
+    private var aClass101_Sub1_5320: MatrixCameraTransform? = null
     private lateinit var anIntArray5321: IntArray
     private var aClass129Array5322: Array<Class129?>? = null
     private var aBoolean5323 = false
@@ -462,8 +462,8 @@ class Class64_Sub1 : Class64 {
         }
     }
 
-    public override fun method615(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int) {
-        method654(class101, class318_sub3, -1, i)
+    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int) {
+        method654(abstractCameraTransform, class318_sub3, -1, i)
     }
 
     public override fun HA(): Int {
@@ -1255,8 +1255,8 @@ class Class64_Sub1 : Class64 {
         return true
     }
 
-    public override fun method620(class101: Class101?) {
-        val class101_sub1 = class101 as Class101_Sub1
+    public override fun method620(abstractCameraTransform: AbstractCameraTransform?) {
+        val class101_sub1 = abstractCameraTransform as MatrixCameraTransform
         if (aClass129Array5322 != null) {
             for (i in aClass129Array5322!!.indices) {
                 val class129 = aClass129Array5322!![i]!!
@@ -1278,8 +1278,8 @@ class Class64_Sub1 : Class64 {
                 val class342 = aClass342Array5335!![i]!!
                 var class342_286_: Class342? = class342
                 if (class342.aClass342_4248 != null) class342_286_ = class342.aClass342_4248
-                if (class342.aClass101_4252 != null) class342.aClass101_4252!!.method898(class101_sub1)
-                else class342.aClass101_4252 = class101_sub1.method907()
+                if (class342.aAbstractCameraTransform_4252 != null) class342.aAbstractCameraTransform_4252!!.method898(class101_sub1)
+                else class342.aAbstractCameraTransform_4252 = class101_sub1.method907()
                 class342_286_!!.anInt4238 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
                 class342_286_.anInt4239 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
                 class342_286_.anInt4240 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
@@ -1351,13 +1351,13 @@ class Class64_Sub1 : Class64 {
         } else a(i)
     }
 
-    public override fun method610(class101: Class101, i: Int, bool: Boolean) {
+    public override fun method610(abstractCameraTransform: AbstractCameraTransform, i: Int, bool: Boolean) {
         if (aShortArray5333 != null) {
             val `is` = IntArray(3)
             for (i_301_ in 0..<anInt5387) {
                 if ((i and aShortArray5333!![i_301_].toInt()) != 0) {
-                    if (bool) class101.method892(anIntArray5356!![i_301_], anIntArray5332!![i_301_], anIntArray5312!![i_301_], `is`)
-                    else class101.method897(anIntArray5356!![i_301_], anIntArray5332!![i_301_], anIntArray5312!![i_301_], `is`)
+                    if (bool) abstractCameraTransform.method892(anIntArray5356!![i_301_], anIntArray5332!![i_301_], anIntArray5312!![i_301_], `is`)
+                    else abstractCameraTransform.method897(anIntArray5356!![i_301_], anIntArray5332!![i_301_], anIntArray5312!![i_301_], `is`)
                     anIntArray5356!![i_301_] = `is`[0]
                     anIntArray5332!![i_301_] = `is`[1]
                     anIntArray5312!![i_301_] = `is`[2]
@@ -1428,8 +1428,8 @@ class Class64_Sub1 : Class64 {
         return i_307_
     }
 
-    public override fun method608(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int, i_316_: Int) {
-        method654(class101, class318_sub3, i, i_316_)
+    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_316_: Int) {
+        method654(abstractCameraTransform, class318_sub3, i, i_316_)
     }
 
     public override fun NA(): Boolean {
@@ -1811,8 +1811,8 @@ class Class64_Sub1 : Class64 {
         return aShort5393.toInt()
     }
 
-    public override fun method623(i: Int, i_474_: Int, class101: Class101?, bool: Boolean, i_475_: Int, i_476_: Int): Boolean {
-        return method645(i, i_474_, class101, bool, i_475_, i_476_)
+    public override fun method623(i: Int, i_474_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_475_: Int, i_476_: Int): Boolean {
+        return method645(i, i_474_, abstractCameraTransform, bool, i_475_, i_476_)
     }
 
     public override fun method604(): Array<Class342?>? {
@@ -1866,8 +1866,8 @@ class Class64_Sub1 : Class64 {
         if (anInt5354 == 2) anInt5354 = 1
     }
 
-    public override fun method628(i: Int, i_486_: Int, class101: Class101?, bool: Boolean, i_487_: Int): Boolean {
-        return method645(i, i_486_, class101, bool, i_487_, -1)
+    public override fun method628(i: Int, i_486_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_487_: Int): Boolean {
+        return method645(i, i_486_, abstractCameraTransform, bool, i_487_, -1)
     }
 
     public override fun ma(): Int {
@@ -1875,8 +1875,8 @@ class Class64_Sub1 : Class64 {
         return aShort5348.toInt()
     }
 
-    private fun method645(i: Int, i_488_: Int, class101: Class101?, bool: Boolean, i_489_: Int, i_490_: Int): Boolean {
-        aClass101_Sub1_5320 = class101 as Class101_Sub1
+    private fun method645(i: Int, i_488_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_489_: Int, i_490_: Int): Boolean {
+        aClass101_Sub1_5320 = abstractCameraTransform as MatrixCameraTransform
         val class101_sub1 = aHa_Sub1_5353.aClass101_Sub1_7492
         val f = (class101_sub1!!.aFloat5686 + ((class101_sub1.aFloat5672 * aClass101_Sub1_5320!!.aFloat5686) + (class101_sub1.aFloat5673 * aClass101_Sub1_5320!!.aFloat5685) + (class101_sub1.aFloat5669 * aClass101_Sub1_5320!!.aFloat5681)))
         val f_491_ = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * aClass101_Sub1_5320!!.aFloat5686) + (class101_sub1.aFloat5678 * aClass101_Sub1_5320!!.aFloat5685) + (class101_sub1.aFloat5666 * aClass101_Sub1_5320!!.aFloat5681)))
@@ -2638,9 +2638,9 @@ class Class64_Sub1 : Class64 {
         }
     }
 
-    private fun method654(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int, i_632_: Int) {
+    private fun method654(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_632_: Int) {
         if (anInt5387 >= 1) {
-            aClass101_Sub1_5320 = class101 as Class101_Sub1
+            aClass101_Sub1_5320 = abstractCameraTransform as MatrixCameraTransform
             val class101_sub1 = aHa_Sub1_5353.aClass101_Sub1_7492
             if (!aBoolean5323) method655()
             var bool = false

@@ -1,5 +1,5 @@
 import GameAppletFrame.Companion.method85
-import Class101.Companion.method901
+import AbstractCameraTransform.Companion.method901
 import Class105_Sub1.Companion.method988
 import Class116.method1063
 import Class14_Sub2.Companion.method243
@@ -177,7 +177,7 @@ object Class164 {
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1035) {
             if (Class348_Sub31.anInt6923 != -1 && !RasterSprite.aClass45_5207!!.method420(-10499, Class348_Sub31.anInt6923, 0)) return 99
             Class348_Sub40_Sub4.aRenderConfig9113 = TextureMetadataProvider(Class348_Sub11.aClass45_4770, Class369_Sub2.aClass45_8589, Class21.aClass45_322)
-            Class101_Sub3.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            ProjectionCameraTransform.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class239.aClass166_3147 = Class166(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class247.aClass45_3183)
@@ -191,7 +191,7 @@ object Class164 {
             Class348_Sub23_Sub2.aClass153_9031 = Class153(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             Class2.aClass141_117 = Class141(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             Class189.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.aClass45_4975, RasterSprite.aClass45_5207)
-            Exception_Sub1.aClass255_112 = Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class101_Sub3.aClass326_5764, Class174.aClass45_2306, RasterSprite.aClass45_5207)
+            Exception_Sub1.aClass255_112 = Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, ProjectionCameraTransform.aClass326_5764, Class174.aClass45_2306, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aClass187_9036 = Class187(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             ParticleEmitterNode.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, OpenGlRenderNode.aClass45_10480, Class348_Sub29.aClass45_6909, Class186.aClass45_2490)
             Class30.aClass84_413 = Class84(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)

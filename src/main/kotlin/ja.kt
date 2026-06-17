@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeMatrix
 */
-class ja : Class101(), Interface19 {
+class ja : AbstractCameraTransform(), Interface19 {
     @JvmField
     var nativeid: Long = 0
 
@@ -74,8 +74,8 @@ class ja : Class101(), Interface19 {
 
     private external fun J(l: Long, i: Int)
 
-    public override fun method898(class101: Class101?) {
-        l(this.nativeid, (class101 as ja).nativeid)
+    public override fun method898(abstractCameraTransform: AbstractCameraTransform?) {
+        l(this.nativeid, (abstractCameraTransform as ja).nativeid)
     }
 
     private external fun b(l: Long, i: Int, i_18_: Int, i_19_: Int, `is`: IntArray?)
@@ -96,7 +96,7 @@ class ja : Class101(), Interface19 {
         m(this.nativeid, i)
     }
 
-    public override fun method907(): Class101 {
+    public override fun method907(): AbstractCameraTransform {
         val var_ja_29_ = ja()
         var_ja_29_.method898(this)
         return var_ja_29_

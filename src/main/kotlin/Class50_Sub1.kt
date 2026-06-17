@@ -32,7 +32,7 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
 
     companion object {
         @JvmField
-        var aClass101_5209: Class101? = null
+        var aAbstractCameraTransform_5209: AbstractCameraTransform? = null
         @JvmField
         var anInt5210: Int = 0
         @JvmField
@@ -61,7 +61,7 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
         @JvmStatic
         fun method460(i: Int) {
             if (i != 2) method460(-52)
-            aClass101_5209 = null
+            aAbstractCameraTransform_5209 = null
             aBooleanArrayArray5225 = null
             aStringArray5223 = null
             aClass351_5217 = null

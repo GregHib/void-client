@@ -3,7 +3,7 @@ import Class369_Sub1.Companion.method3570
 /* Class101_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class101_Sub3 : Class101() {
+class ProjectionCameraTransform : AbstractCameraTransform() {
     var aFloat5747: Float = 0f
     var aFloat5750: Float = 0f
     @JvmField
@@ -212,9 +212,9 @@ class Class101_Sub3 : Class101() {
         return Class288_Sub1.aFloatArray8575!!
     }
 
-    override fun method907(): Class101 {
+    override fun method907(): AbstractCameraTransform {
         anInt5748++
-        val class101_sub3_47_ = Class101_Sub3()
+        val class101_sub3_47_ = ProjectionCameraTransform()
         class101_sub3_47_.aFloat5747 = this.aFloat5747
         class101_sub3_47_.aFloat5750 = this.aFloat5750
         class101_sub3_47_.aFloat5769 = this.aFloat5769
@@ -257,9 +257,9 @@ class Class101_Sub3 : Class101() {
         `is`[1] = (i_50_.toFloat() * this.aFloat5754 + (this.aFloat5750 * i.toFloat() + i_49_.toFloat() * this.aFloat5769)).toInt()
     }
 
-    override fun method898(class101: Class101?) {
+    override fun method898(abstractCameraTransform: AbstractCameraTransform?) {
         anInt5758++
-        val class101_sub3_51_ = class101 as Class101_Sub3?
+        val class101_sub3_51_ = abstractCameraTransform as ProjectionCameraTransform?
         this.aFloat5751 = class101_sub3_51_!!.aFloat5751
         this.aFloat5769 = class101_sub3_51_.aFloat5769
         this.aFloat5770 = class101_sub3_51_.aFloat5770
@@ -358,9 +358,9 @@ class Class101_Sub3 : Class101() {
         return Class288_Sub1.aFloatArray8575!!
     }
 
-    fun method946(class101: Class101, i: Int) {
+    fun method946(abstractCameraTransform: AbstractCameraTransform, i: Int) {
         anInt5771++
-        val class101_sub3_67_ = class101 as Class101_Sub3
+        val class101_sub3_67_ = abstractCameraTransform as ProjectionCameraTransform
         this.aFloat5781 = class101_sub3_67_.aFloat5756
         if (i != -7929) method899(52)
         this.aFloat5750 = class101_sub3_67_.aFloat5761

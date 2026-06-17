@@ -112,7 +112,7 @@ class Class354 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_renderConf
 
         fun method3465(i: Int, i_0_: Int, class338: Class338): Boolean {
             anInt4358++
-            Class348_Sub40_Sub4.aClass101_9114!!.method897(class338.anIntArray4187!![i], class338.anIntArray4191[i], class338.anIntArray4184[i], Class318_Sub1_Sub5_Sub2.anIntArray10172!!)
+            Class348_Sub40_Sub4.aAbstractCameraTransform_9114!!.method897(class338.anIntArray4187!![i], class338.anIntArray4191[i], class338.anIntArray4184[i], Class318_Sub1_Sub5_Sub2.anIntArray10172!!)
             val i_1_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![2]
             if (i_1_ < 50) return false
             class338.aShortArray4194!![i] = (Class69.anInt1202 + (Class318_Sub1_Sub5_Sub2.anIntArray10172!![0] * Class140.anInt1962 / i_1_)).toShort()

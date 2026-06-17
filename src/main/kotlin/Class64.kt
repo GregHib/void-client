@@ -169,7 +169,7 @@ public abstract class Class64 {
 
     abstract fun LA(i: Int)
 
-    abstract fun method608(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int, i_71_: Int)
+    abstract fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_71_: Int)
 
     abstract fun ua(): Int
 
@@ -181,7 +181,7 @@ public abstract class Class64 {
 
     abstract fun O(i: Int, i_72_: Int, i_73_: Int)
 
-    abstract fun method610(class101: Class101, i: Int, bool: Boolean)
+    abstract fun method610(abstractCameraTransform: AbstractCameraTransform, i: Int, bool: Boolean)
 
     abstract fun EA(): Int
 
@@ -222,7 +222,7 @@ public abstract class Class64 {
 
     abstract fun method614(i: Byte, i_80_: Int, bool: Boolean): Class64?
 
-    abstract fun method615(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int)
+    abstract fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int)
 
     fun method617(i: Int, i_83_: Int, class348_sub42_sub17: Class348_Sub42_Sub17?, i_84_: Int, class348_sub42_sub17_85_: Class348_Sub42_Sub17?, bool: Boolean, bool_86_: Boolean, i_87_: Int, i_88_: Int) {
         try {
@@ -261,7 +261,7 @@ public abstract class Class64 {
 
     abstract fun H(i: Int, i_90_: Int, i_91_: Int)
 
-    abstract fun method620(class101: Class101?)
+    abstract fun method620(abstractCameraTransform: AbstractCameraTransform?)
 
     abstract fun method621()
 
@@ -269,7 +269,7 @@ public abstract class Class64 {
 
     abstract fun k(i: Int)
 
-    abstract fun method623(i: Int, i_92_: Int, class101: Class101?, bool: Boolean, i_93_: Int, i_94_: Int): Boolean
+    abstract fun method623(i: Int, i_92_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_93_: Int, i_94_: Int): Boolean
 
     abstract fun P(i: Int, i_95_: Int, i_96_: Int, i_97_: Int)
 
@@ -424,7 +424,7 @@ public abstract class Class64 {
         }
     }
 
-    abstract fun method628(i: Int, i_159_: Int, class101: Class101?, bool: Boolean, i_160_: Int): Boolean
+    abstract fun method628(i: Int, i_159_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_160_: Int): Boolean
 
     abstract fun aa(i: Short, i_161_: Short)
 

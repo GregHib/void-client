@@ -139,8 +139,8 @@ class Class341 {
                             for (i_15_ in (npc.aClass64Array10323).indices) npc.aClass64Array10323[i_15_] = null
                         }
                     }
-                    Class50_Sub1.aClass101_5209 = null
-                    Class157.aClass101_2123 = null
+                    Class50_Sub1.aAbstractCameraTransform_5209 = null
+                    Class157.aAbstractCameraTransform_2123 = null
                     Class348_Sub8.aRenderer6654!!.method3635(64.toByte())
                     Class348_Sub8.aRenderer6654 = null
                 }

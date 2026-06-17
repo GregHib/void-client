@@ -18,7 +18,7 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
         anInt9708++
         this.anInt9710 = (this.aClass342_9702!!.anInt4240)
         this.anInt9712 = (this.aClass342_9702!!.anInt4238)
-        if ((this.aClass342_9702!!.aClass101_4252) != null) this.aClass342_9702!!.aClass101_4252!!.method905((this.aClass174_9704!!.anInt2291), (this.aClass174_9704!!.anInt2290), (this.aClass174_9704!!.anInt2294), Class348_Sub8.anIntArray6666!!)
+        if ((this.aClass342_9702!!.aAbstractCameraTransform_4252) != null) this.aClass342_9702!!.aAbstractCameraTransform_4252!!.method905((this.aClass174_9704!!.anInt2291), (this.aClass174_9704!!.anInt2290), (this.aClass174_9704!!.anInt2294), Class348_Sub8.anIntArray6666!!)
         this.anInt9705 = Class348_Sub8.anIntArray6666!![0]
         this.anInt9707 = Class348_Sub8.anIntArray6666!![i]
     }

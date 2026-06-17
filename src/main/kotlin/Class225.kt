@@ -31,7 +31,7 @@ class Class225 {
     var anInt2923: Int
     @JvmField
     var anInt2924: Int
-    private var aClass101Array2925: Array<Class101?>? = null
+    private var aAbstractCameraTransformArray2925: Array<AbstractCameraTransform?>? = null
     @JvmField
     var anInt2926: Int = 0
     var anInt2927: Int
@@ -68,11 +68,11 @@ class Class225 {
     @JvmField
     var anInt2958: Int
 
-    fun method1618(var_renderer: Renderer, i: Int): Array<Class101?>? {
+    fun method1618(var_renderer: Renderer, i: Int): Array<AbstractCameraTransform?>? {
         anInt2952++
-        if (aClass101Array2925 != null && var_renderer.anInt4567 == anInt2942) return aClass101Array2925
+        if (aAbstractCameraTransformArray2925 != null && var_renderer.anInt4567 == anInt2942) return aAbstractCameraTransformArray2925
         if (this.anIntArrayArray2939 == null) return null
-        aClass101Array2925 = arrayOfNulls<Class101>(this.anIntArrayArray2939!!.size)
+        aAbstractCameraTransformArray2925 = arrayOfNulls<AbstractCameraTransform>(this.anIntArrayArray2939!!.size)
         var i_0_ = i
         while ((this.anIntArrayArray2939!!.size > i_0_)) {
             var i_1_ = 0
@@ -90,8 +90,8 @@ class Class225 {
                 i_6_ = (this.anIntArrayArray2939!![i_0_]!![5] shl 3)
             }
             if (i_1_ != 0 || i_2_ != 0 || i_3_ != 0 || i_4_ != 0 || i_5_ != 0 || i_6_ != 0) {
-                aClass101Array2925!![i_0_] = var_renderer.method3654()
-                val class101 = aClass101Array2925!![i_0_]!!
+                aAbstractCameraTransformArray2925!![i_0_] = var_renderer.method3654()
+                val class101 = aAbstractCameraTransformArray2925!![i_0_]!!
                 if (i_6_ != 0) class101.method908(i_6_)
                 if (i_4_ != 0) class101.method900(i_4_)
                 if (i_5_ != 0) class101.method896(i_5_)
@@ -99,7 +99,7 @@ class Class225 {
             }
             i_0_++
         }
-        return aClass101Array2925
+        return aAbstractCameraTransformArray2925
     }
 
     fun method1620(class348_sub49: Class348_Sub49, i: Int) {

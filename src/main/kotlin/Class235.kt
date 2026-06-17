@@ -195,7 +195,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
         return class64
     }
 
-    fun method1670(i: Int, class101: Class101?, i_7_: Int, var_renderer: Renderer?, i_8_: Int, class64: Class64?, bool: Boolean, i_9_: Byte, i_10_: Int) {
+    fun method1670(i: Int, abstractCameraTransform: AbstractCameraTransform?, i_7_: Int, var_renderer: Renderer?, i_8_: Int, class64: Class64?, bool: Boolean, i_9_: Byte, i_10_: Int) {
         do {
             try {
                 anInt3058++
@@ -208,12 +208,12 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
                     if (class51 != null) this.aClass318_Sub10_3081 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true)
                 }
                 if (this.aClass318_Sub10_3081 == null) break
-                class64.method620(class101)
+                class64.method620(abstractCameraTransform)
                 if (bool) this.aClass318_Sub10_3081!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
                 else this.aClass318_Sub10_3081!!.method2540(Class367_Sub11.anInt7396.toLong())
                 this.aClass318_Sub10_3081!!.method2533(aByte3085.toInt(), i_8_, i, i_10_, i_7_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (class101 != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
             }
             break
         } while (false)

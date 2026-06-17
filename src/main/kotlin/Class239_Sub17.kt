@@ -125,7 +125,7 @@ class Class239_Sub17 : Class239 {
         @JvmStatic
         fun method1797(i: Int, i_11_: Int, class46: Class46, i_12_: Byte) {
             if (RenderNode.aBoolean9722) {
-                val class254 = (if (Class246.anInt3176 != -1) Class101_Sub3.aClass326_5764!!.method2600(Class246.anInt3176, 28364) else null)
+                val class254 = (if (Class246.anInt3176 != -1) ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364) else null)
                 if (Client.method105(class46)!!.method3303(1) && (Class38.anInt500 and 0x20) != 0 && (class254 == null || (class46.method428(class254.anInt3256, Class246.anInt3176, -128) != class254.anInt3256))) {
                     Class31.anInt436++
                     Class50_Sub3.method466(false, (Class28.aString5000 + " -> " + class46.aString752) + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-90).toByte(), false, class46.anInt704, class46.anInt812, true, 6, (class46.anInt830 or (class46.anInt704 shl 0)).toLong(), Class28.aString5001, 0L, Class348_Sub49_Sub1.anInt9747)

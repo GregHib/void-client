@@ -287,7 +287,7 @@ class Class211 {
                 val i_2_ = class348_sub49_sub2.readBits((-24).toByte(), 6)
                 val i_3_ = class348_sub49_sub2.readBits((-24).toByte(), 6)
                 val bool = (class348_sub49_sub2.readBits((-24).toByte(), 1) == 1)
-                if (bool) Class18.anIntArray279!![Class101_Sub3.anInt5768++] = i
+                if (bool) Class18.anIntArray279!![ProjectionCameraTransform.anInt5768++] = i
                 if (Class294.aPlayerArray5058!![i] != null) throw RuntimeException("hr:lr")
                 val class359 = Class348_Sub17.aClass359Array6802!![i]!!
                 val player = (Player().also { Class294.aPlayerArray5058!![i] = it })

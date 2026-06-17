@@ -47,7 +47,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     @JvmField
     var anInt7491: Int
     @JvmField
-    var aClass101_Sub1_7492: Class101_Sub1? = null
+    var aClass101_Sub1_7492: MatrixCameraTransform? = null
     private var anInt7493 = 0
     @JvmField
     var anInt7494: Int
@@ -415,7 +415,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return this.anInt7482
     }
 
-    override fun method3705(): Class101 {
+    override fun method3705(): AbstractCameraTransform {
         val class167 = method3724(Thread.currentThread())
         return class167!!.aClass101_Sub1_2209!!
     }
@@ -537,8 +537,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         /* empty */
     }
 
-    override fun method3638(class101: Class101?) {
-        this.aClass101_Sub1_7492 = class101 as Class101_Sub1
+    override fun method3638(abstractCameraTransform: AbstractCameraTransform?) {
+        this.aClass101_Sub1_7492 = abstractCameraTransform as MatrixCameraTransform
     }
 
     override fun A(i: Int, var_sprite: Sprite?, i_145_: Int, i_146_: Int) {
@@ -1305,7 +1305,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         aBoolean7470 = true
     }
 
-    override fun method3640(): Class101 {
+    override fun method3640(): AbstractCameraTransform {
         return this.aClass101_Sub1_7492!!
     }
 
@@ -1355,8 +1355,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
     }
 
-    override fun method3654(): Class101 {
-        return Class101_Sub1()
+    override fun method3654(): AbstractCameraTransform {
+        return MatrixCameraTransform()
     }
 
     override fun la() {
@@ -2137,7 +2137,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         anInt7512 = -1
         try {
             aClass60_7498 = Class60(256)
-            this.aClass101_Sub1_7492 = Class101_Sub1()
+            this.aClass101_Sub1_7492 = MatrixCameraTransform()
             method3631(1)
             method3659(0)
             Class59_Sub2_Sub1.method566(true, true, (-126).toByte())

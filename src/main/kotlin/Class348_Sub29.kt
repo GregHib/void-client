@@ -24,7 +24,7 @@ class Class348_Sub29 : Class348 {
                 try {
                     Class260.aClass45_3309 = class45
                     anInt6910++
-                    Class101_Sub1.aRenderConfig5684 = var_renderConfig
+                    MatrixCameraTransform.aRenderConfig5684 = var_renderConfig
                     if (bool == false) break
                     method3004(null, false, null)
                 } catch (runtimeexception: RuntimeException) {

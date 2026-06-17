@@ -98,10 +98,10 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         return aBoolean10338
     }
 
-    private fun method2467(class64: Class64?, var_renderer: Renderer?, i: Int, class101: Class101?) {
+    private fun method2467(class64: Class64?, var_renderer: Renderer?, i: Int, abstractCameraTransform: AbstractCameraTransform?) {
         do {
             try {
-                class64!!.method620(class101)
+                class64!!.method620(abstractCameraTransform)
                 anInt10360++
                 val class129s = class64.method619()
                 val class342s = class64.method604()
@@ -112,7 +112,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                     aClass318_Sub10_10341!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (class101 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

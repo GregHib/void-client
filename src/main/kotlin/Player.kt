@@ -231,7 +231,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         }
     }
 
-    private fun method2453(i: Int, var_renderer: Renderer?, i_32_: Int, class64: Class64?, i_33_: Int, i_34_: Int, class101: Class101?, i_35_: Int) {
+    private fun method2453(i: Int, var_renderer: Renderer?, i_32_: Int, class64: Class64?, i_33_: Int, i_34_: Int, abstractCameraTransform: AbstractCameraTransform?, i_35_: Int) {
         do {
             try {
                 anInt10548++
@@ -242,18 +242,18 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                         val class64_38_ = (DelegatingRenderCanvas.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (-35).toByte(), var_renderer!!))
                         if (class64_38_ == null) break
                         var_renderer!!.C(false)
-                        class64_38_.method615(class101, null, 0)
+                        class64_38_.method615(abstractCameraTransform, null, 0)
                         var_renderer.C(true)
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + i_35_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_35_ + ')'))
             }
             break
         } while (false)
     }
 
-    private fun method2454(i: Int, i_39_: Int, i_40_: Int, i_41_: Int, class64: Class64?, i_42_: Int, class101: Class101?, var_renderer: Renderer?, i_43_: Int) {
+    private fun method2454(i: Int, i_39_: Int, i_40_: Int, i_41_: Int, class64: Class64?, i_42_: Int, abstractCameraTransform: AbstractCameraTransform?, var_renderer: Renderer?, i_43_: Int) {
         do {
             try {
                 if (i != 6253) this.aString10544 = null
@@ -264,11 +264,11 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     val class64_46_ = (DelegatingRenderCanvas.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (-35).toByte(), var_renderer!!))
                     if (class64_46_ == null) break
                     var_renderer!!.C(false)
-                    class64_46_.method608(class101, null, i_40_, 0)
+                    class64_46_.method608(abstractCameraTransform, null, i_40_, 0)
                     var_renderer.C(true)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
             }
             break
         } while (false)

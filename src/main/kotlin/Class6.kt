@@ -101,7 +101,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 if (i_22_ > 15) i_22_ -= 32
                 val i_23_ = 0x3d01 and (4 + Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3) shl 11)
                 val i_24_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
-                if (i_24_ == 1) Class13.anIntArray224!![Class101.anInt1597++] = i_18_
+                if (i_24_ == 1) Class13.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_18_
                 npc.method2448((Class189.aClass278_2529!!.method2079(Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
                 npc.method2434(111.toByte(), npc.aClass79_10505!!.anInt1399)
                 npc.anInt10310 = (npc.aClass79_10505!!.anInt1329) shl 3

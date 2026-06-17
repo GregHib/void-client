@@ -305,7 +305,7 @@ class Class107 {
         }
 
         fun method1010(bool: Boolean, bool_42_: Boolean) {
-            RenderNode.aClass101_9720!!.method898(Class21.aRenderer326!!.method3640())
+            RenderNode.aAbstractCameraTransform_9720!!.method898(Class21.aRenderer326!!.method3640())
             anInt1642++
             val `is` = Class21.aRenderer326!!.Y()
             Class14_Sub3.anInt8630 = `is`[2]

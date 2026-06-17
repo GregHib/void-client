@@ -371,9 +371,9 @@ class Class18 internal constructor(var_ha_Sub2: OpenGlRenderer) {
         fun method282(i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Byte, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int) {
             anInt274++
             Class21.aRenderer326 = var_renderer
-            Class51.aClass101_905 = Class21.aRenderer326!!.method3654()
-            Class44.aClass101_624 = Class21.aRenderer326!!.method3654()
-            RenderNode.aClass101_9720 = Class21.aRenderer326!!.method3654()
+            Class51.aAbstractCameraTransform_905 = Class21.aRenderer326!!.method3654()
+            Class44.aAbstractCameraTransform_624 = Class21.aRenderer326!!.method3654()
+            RenderNode.aAbstractCameraTransform_9720 = Class21.aRenderer326!!.method3654()
             Class73.anInt4784 = i_26_
             Class239_Sub24.anInt6095 = 0
             if (i_22_ <= 64) anIntArray279 = null

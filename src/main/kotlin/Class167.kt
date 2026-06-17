@@ -10,7 +10,7 @@ class Class167 internal constructor(var_ha_Sub1: SoftwareRenderer) {
     var aBoolean2201: Boolean = false
     var aBoolean2202: Boolean = true
     var anInt2205: Int = 0
-    var aClass101_Sub1_2209: Class101_Sub1?
+    var aClass101_Sub1_2209: MatrixCameraTransform?
     var anInt2210: Int
     var anInt2211: Int = 0
     var anIntArray2212: IntArray?
@@ -65,7 +65,7 @@ class Class167 internal constructor(var_ha_Sub1: SoftwareRenderer) {
     }
 
     init {
-        this.aClass101_Sub1_2209 = Class101_Sub1()
+        this.aClass101_Sub1_2209 = MatrixCameraTransform()
         this.anIntArray2213 = IntArray(Class64_Sub1.anInt5350)
         this.anIntArray2214 = IntArray(Class64_Sub1.anInt5350)
         this.anIntArray2212 = IntArray(64)

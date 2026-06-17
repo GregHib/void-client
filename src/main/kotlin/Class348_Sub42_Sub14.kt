@@ -602,7 +602,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                     Class14.anIntArray5091 = IntArray(Class86.anInt1480 * Class306.anInt3872)
                     Class69.anInt1202 = Class306.anInt3872 shr 1
                 }
-                Class348_Sub40_Sub4.aClass101_9114 = var_renderer.method3640()
+                Class348_Sub40_Sub4.aAbstractCameraTransform_9114 = var_renderer.method3640()
                 Class348_Sub42_Sub10.Companion.anInt9577 = 0
                 var i_8_ = 0
                 while ( /**/Class239_Sub26.anInt6115 > i_8_) {

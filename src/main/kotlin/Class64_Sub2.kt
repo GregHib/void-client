@@ -272,12 +272,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         aBoolean5477 = false
     }
 
-    public override fun method628(i: Int, i_22_: Int, class101: Class101?, bool: Boolean, i_23_: Int): Boolean {
+    public override fun method628(i: Int, i_22_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_23_: Int): Boolean {
         try {
             anInt5414++
-            return method662(i, i_23_, -1, 127, i_22_, bool, class101)
+            return method662(i, i_23_, -1, 127, i_22_, bool, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + bool + ',' + i_23_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_23_ + ')'))
         }
     }
 
@@ -340,10 +340,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         return anInt5509
     }
 
-    private fun method662(i: Int, i_30_: Int, i_31_: Int, i_32_: Int, i_33_: Int, bool: Boolean, class101: Class101?): Boolean {
+    private fun method662(i: Int, i_30_: Int, i_31_: Int, i_32_: Int, i_33_: Int, bool: Boolean, abstractCameraTransform: AbstractCameraTransform?): Boolean {
         try {
             anInt5450++
-            val class101_sub2 = class101 as Class101_Sub2
+            val class101_sub2 = abstractCameraTransform as FloatCameraTransform
             val class101_sub2_34_ = aHa_Sub3_5419!!.aClass101_Sub2_8080
             val f = (class101_sub2_34_.aFloat5729 + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5729) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5710) + (class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5724)))
             val f_35_ = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5724) + ((class101_sub2.aFloat5710 * class101_sub2_34_.aFloat5722) + (class101_sub2.aFloat5729 * class101_sub2_34_.aFloat5708)) + class101_sub2_34_.aFloat5710)
@@ -423,7 +423,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             if (bool_37_ && f_38_ < i.toFloat() && f_39_ > i.toFloat() && f_40_ < i_33_.toFloat() && f_41_ > i_33_.toFloat()) {
                 if (bool) return true
                 if (anInt5475 > Class318_Sub1_Sub1_Sub1.anIntArray9949!!.size) {
-                    Class101.anIntArray1593 = IntArray(anInt5475)
+                    AbstractCameraTransform.anIntArray1593 = IntArray(anInt5475)
                     Class318_Sub1_Sub1_Sub1.anIntArray9949 = IntArray(anInt5475)
                 }
                 for (i_65_ in 0..<anInt5433) {
@@ -443,7 +443,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             val i_77_ = -1 + aShortArray5439!![i_76_]
                             if (i_77_ == -1) break
                             Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_77_] = i_72_
-                            Class101.anIntArray1593!![i_77_] = i_73_
+                            AbstractCameraTransform.anIntArray1593!![i_77_] = i_73_
                         }
                     } else {
                         val i_78_ = anIntArray5455!![i_65_]
@@ -463,12 +463,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             i,
                             (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5512!![i_82_].toInt()]),
                             (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5495!![i_82_].toInt()]),
-                            (Class101.anIntArray1593!![aShortArray5512!![i_82_].toInt()]),
-                            (Class101.anIntArray1593!![aShortArray5508!![i_82_].toInt()]),
+                            (AbstractCameraTransform.anIntArray1593!![aShortArray5512!![i_82_].toInt()]),
+                            (AbstractCameraTransform.anIntArray1593!![aShortArray5508!![i_82_].toInt()]),
                             i_33_,
                             0,
                             (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5508!![i_82_].toInt()]),
-                            (Class101.anIntArray1593!![aShortArray5495!![i_82_].toInt()])
+                            (AbstractCameraTransform.anIntArray1593!![aShortArray5495!![i_82_].toInt()])
                         )
                     ) return true
                     i_82_++
@@ -476,7 +476,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (if (class101 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -779,7 +779,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private fun method665(i: Int, var_r_Sub1: NativeRenderNode) {
         try {
             if (anInt5475 > Class318_Sub1_Sub1_Sub1.anIntArray9949!!.size) {
-                Class101.anIntArray1593 = IntArray(anInt5475)
+                AbstractCameraTransform.anIntArray1593 = IntArray(anInt5475)
                 Class318_Sub1_Sub1_Sub1.anIntArray9949 = IntArray(anInt5475)
             }
             anInt5453++
@@ -794,7 +794,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         val i_129_ = aShortArray5439!![i_128_] - 1
                         if (i_129_ == -1) break
                         Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_129_] = i_124_
-                        Class101.anIntArray1593!![i_129_] = i_125_
+                        AbstractCameraTransform.anIntArray1593!![i_129_] = i_125_
                     }
                     i_123_++
                 }
@@ -807,9 +807,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         val i_134_ = Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_131_.toInt()]
                         val i_135_ = Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_132_.toInt()]
                         val i_136_ = Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_133_.toInt()]
-                        val i_137_ = Class101.anIntArray1593!![i_131_.toInt()]
-                        val i_138_ = Class101.anIntArray1593!![i_132_.toInt()]
-                        val i_139_ = Class101.anIntArray1593!![i_133_.toInt()]
+                        val i_137_ = AbstractCameraTransform.anIntArray1593!![i_131_.toInt()]
+                        val i_138_ = AbstractCameraTransform.anIntArray1593!![i_132_.toInt()]
+                        val i_139_ = AbstractCameraTransform.anIntArray1593!![i_133_.toInt()]
                         if ((-((i_136_ - i_135_) * (-i_137_ + i_138_)) + (i_138_ - i_139_) * (-i_135_ + i_134_)) > 0) var_r_Sub1.method3287(i_137_, 50, i_134_, i_135_, i_138_, i_139_, i_136_)
                     }
                     i_130_++
@@ -877,15 +877,15 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         return false
     }
 
-    public override fun method610(class101: Class101, i: Int, bool: Boolean) {
+    public override fun method610(abstractCameraTransform: AbstractCameraTransform, i: Int, bool: Boolean) {
         try {
             anInt5434++
             if (aShortArray5494 != null) {
                 val `is` = IntArray(3)
                 for (i_149_ in 0..<anInt5433) {
                     if ((i and aShortArray5494!![i_149_].toInt()) != 0) {
-                        if (!bool) class101.method897(anIntArray5511!![i_149_], anIntArray5519!![i_149_], anIntArray5429!![i_149_], `is`)
-                        else class101.method892(anIntArray5511!![i_149_], anIntArray5519!![i_149_], anIntArray5429!![i_149_], `is`)
+                        if (!bool) abstractCameraTransform.method897(anIntArray5511!![i_149_], anIntArray5519!![i_149_], anIntArray5429!![i_149_], `is`)
+                        else abstractCameraTransform.method892(anIntArray5511!![i_149_], anIntArray5519!![i_149_], anIntArray5429!![i_149_], `is`)
                         anIntArray5511!![i_149_] = `is`[0]
                         anIntArray5519!![i_149_] = `is`[1]
                         anIntArray5429!![i_149_] = `is`[2]
@@ -893,7 +893,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.za(" + (if (class101 != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
         }
     }
 
@@ -1190,11 +1190,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         return aShort5452.toInt()
     }
 
-    public override fun method620(class101: Class101?) {
+    public override fun method620(abstractCameraTransform: AbstractCameraTransform?) {
         do {
             try {
                 anInt5444++
-                val class101_sub2 = class101 as Class101_Sub2
+                val class101_sub2 = abstractCameraTransform as FloatCameraTransform
                 if (aClass129Array5457 != null) {
                     var i = 0
                     while ((aClass129Array5457!!.size > i)) {
@@ -1219,15 +1219,15 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val class342 = aClass342Array5474!![i]!!
                     var class342_178_: Class342? = class342
                     if (class342.aClass342_4248 != null) class342_178_ = class342.aClass342_4248
-                    if (class342.aClass101_4252 != null) class342.aClass101_4252!!.method898(class101_sub2)
-                    else class342.aClass101_4252 = class101_sub2.method907()
+                    if (class342.aAbstractCameraTransform_4252 != null) class342.aAbstractCameraTransform_4252!!.method898(class101_sub2)
+                    else class342.aAbstractCameraTransform_4252 = class101_sub2.method907()
                     class342_178_!!.anInt4238 = (((anIntArray5519!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5700) + ((anIntArray5511!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5711)) + ((anIntArray5429!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5704)) + class101_sub2.aFloat5729).toInt()
                     class342_178_.anInt4239 = (((anIntArray5429!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (anIntArray5519!![(class342.anInt4244)]).toFloat()) + ((anIntArray5511!![(class342.anInt4244)]).toFloat() * (class101_sub2.aFloat5708))) + class101_sub2.aFloat5710).toInt()
                     class342_178_.anInt4240 = (((anIntArray5519!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5691) + ((anIntArray5511!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5736)) + ((anIntArray5429!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5716)) + class101_sub2.aFloat5724).toInt()
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "nca.J(" + (if (class101 != null) "{...}" else "null") + ')')
+                throw Class348_Sub17.method2929(runtimeexception, "nca.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1239,12 +1239,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         return anInt5418
     }
 
-    public override fun method608(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int, i_179_: Int) {
+    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_179_: Int) {
         try {
             anInt5487++
             if (anInt5475 != 0) {
                 val class101_sub2 = aHa_Sub3_5419!!.aClass101_Sub2_8080
-                val class101_sub2_180_ = class101 as Class101_Sub2
+                val class101_sub2_180_ = abstractCameraTransform as FloatCameraTransform
                 if (!aBoolean5477) method675(0)
                 Class240.aFloat4673 = (class101_sub2.aFloat5724 + ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5691) + (class101_sub2_180_.aFloat5729 * class101_sub2.aFloat5736) + (class101_sub2_180_.aFloat5724 * class101_sub2.aFloat5716)))
                 Class353.aFloat4338 = ((class101_sub2.aFloat5691 * class101_sub2_180_.aFloat5722) + (class101_sub2.aFloat5736 * class101_sub2_180_.aFloat5700) + (class101_sub2.aFloat5716 * class101_sub2_180_.aFloat5691))
@@ -1324,7 +1324,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.Q(" + (if (class101 != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_179_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_179_ + ')'))
         }
     }
 
@@ -1714,12 +1714,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         }
     }
 
-    public override fun method615(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int) {
+    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int) {
         try {
             anInt5471++
             if (anInt5475 != 0) {
                 val class101_sub2 = aHa_Sub3_5419!!.aClass101_Sub2_8080
-                val class101_sub2_307_ = class101 as Class101_Sub2
+                val class101_sub2_307_ = abstractCameraTransform as FloatCameraTransform
                 if (!aBoolean5477) method675(0)
                 Class353.aFloat4338 = ((class101_sub2.aFloat5736 * class101_sub2_307_.aFloat5700) + (class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5722) + (class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5716))
                 Class240.aFloat4673 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5710) + (class101_sub2_307_.aFloat5729 * class101_sub2.aFloat5736)) + class101_sub2.aFloat5724)
@@ -1825,7 +1825,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.KA(" + (if (class101 != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -2418,12 +2418,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         }
     }
 
-    public override fun method623(i: Int, i_478_: Int, class101: Class101?, bool: Boolean, i_479_: Int, i_480_: Int): Boolean {
+    public override fun method623(i: Int, i_478_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_479_: Int, i_480_: Int): Boolean {
         try {
             anInt5517++
-            return method662(i, i_479_, i_480_, 126, i_478_, bool, class101)
+            return method662(i, i_479_, i_480_, 126, i_478_, bool, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'))
         }
     }
 

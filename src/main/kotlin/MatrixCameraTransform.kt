@@ -1,7 +1,7 @@
 /* Class101_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class101_Sub1 : Class101() {
+class MatrixCameraTransform : AbstractCameraTransform() {
     var aFloat5655: Float = 0f
     var aFloat5662: Float = 0f
     var aFloat5664: Float = 0f
@@ -70,9 +70,9 @@ class Class101_Sub1 : Class101() {
         this.aFloat5685 = (-(this.aFloat5666 * i_3_.toFloat()) + (this.aFloat5655 * -i.toFloat() - i_2_.toFloat() * this.aFloat5678))
     }
 
-    override fun method898(class101: Class101?) {
+    override fun method898(abstractCameraTransform: AbstractCameraTransform?) {
         anInt5683++
-        val class101_sub1_14_ = class101 as Class101_Sub1?
+        val class101_sub1_14_ = abstractCameraTransform as MatrixCameraTransform?
         this.aFloat5669 = class101_sub1_14_!!.aFloat5669
         this.aFloat5681 = class101_sub1_14_.aFloat5681
         this.aFloat5655 = class101_sub1_14_.aFloat5655
@@ -182,9 +182,9 @@ class Class101_Sub1 : Class101() {
         this.aFloat5673 = -this.aFloat5655
     }
 
-    override fun method907(): Class101 {
+    override fun method907(): AbstractCameraTransform {
         anInt5660++
-        val class101_sub1_31_ = Class101_Sub1()
+        val class101_sub1_31_ = MatrixCameraTransform()
         class101_sub1_31_.aFloat5664 = this.aFloat5664
         class101_sub1_31_.aFloat5681 = this.aFloat5681
         class101_sub1_31_.aFloat5662 = this.aFloat5662

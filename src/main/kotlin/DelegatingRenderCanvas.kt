@@ -249,7 +249,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     else Class348_Sub48.method3328(null)
                     for (i_28_ in 0..3) Class348_Sub45.aClass361Array7108!![i_28_]!!.method3500(i xor 0x2bc)
                     Class52.method491((-86).toByte())
-                    Class101_Sub2.method921(99.toByte(), false)
+                    FloatCameraTransform.method921(99.toByte(), false)
                     method3936(i + i)
                     Class259.aClass305_3304 = null
                     Class55_Sub1.aBoolean5265 = false
@@ -290,7 +290,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         if (Class348_Sub50.aByteArrayArray7212 != null) Class92.method859(i xor 0x7e.inv())
                     } else {
                         Class289.method2193(true, (-121).toByte())
-                        Class101_Sub3.method944(i + -8212, Class14_Sub4.aByteArrayArray8642, Class338.aClass237_Sub1_4197)
+                        ProjectionCameraTransform.method944(i + -8212, Class14_Sub4.aByteArrayArray8642, Class338.aClass237_Sub1_4197)
                     }
                     Class348_Sub18.method2938(66.toByte())
                     if (Class226.anInt2964 < 96) method2271(31268)
@@ -301,7 +301,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (bool_25_) {
                         Class243.method1879(true)
                         Class289.method2193(true, (-124).toByte())
-                        if (Class312.anInt3931 != 0) Class101_Sub3.method944(-8212, (Class348_Sub23_Sub1.aByteArrayArray8996), Class170.aClass237_Sub1_5067)
+                        if (Class312.anInt3931 != 0) ProjectionCameraTransform.method944(-8212, (Class348_Sub23_Sub1.aByteArrayArray8996), Class170.aClass237_Sub1_5067)
                         else Class122.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, Class170.aClass237_Sub1_5067)
                         Class348_Sub18.method2938(73.toByte())
                         Class289.method2193(true, (-121).toByte())

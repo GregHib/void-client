@@ -744,19 +744,19 @@ class Class46 {
         }
     }
 
-    fun method437(i: Int, class64: Class64?, var_renderer: Renderer?, i_63_: Int, class101: Class101?) {
+    fun method437(i: Int, class64: Class64?, var_renderer: Renderer?, i_63_: Int, abstractCameraTransform: AbstractCameraTransform?) {
         do {
             try {
                 if (i != -20154) method438(15, -50, null)
                 anInt718++
-                class64!!.method620(class101)
+                class64!!.method620(abstractCameraTransform)
                 val class129s = class64.method619()
                 val class342s = class64.method604()
                 if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740!!.aBoolean6470) && (class129s != null || class342s != null)) this.aClass318_Sub10_740 = Class318_Sub10.method2526(i_63_, false)
                 if (this.aClass318_Sub10_740 == null) break
                 this.aClass318_Sub10_740!!.method2536(var_renderer, i_63_.toLong(), class129s, class342s, false)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (class101 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -957,7 +957,7 @@ class Class46 {
             Class2.aClass141_117!!.method1174((-99).toByte())
             Class348_Sub23_Sub2.aClass153_9031!!.method1222(true)
             Class348_Sub23_Sub2.aClass187_9036!!.method1410(-27995)
-            Class101_Sub3.aClass326_5764!!.method2602(0)
+            ProjectionCameraTransform.aClass326_5764!!.method2602(0)
             Class30.aClass84_413!!.method816(false)
             Class123.aClass25_1813!!.method302(-797644856)
             Class348_Sub1.aClass185_6559!!.method1390(23)

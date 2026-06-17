@@ -221,7 +221,7 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
         fun method2177(i: Int, i_22_: Int, class348_sub49_sub2: Class348_Sub49_Sub2) {
             anInt6311++
             val bool = (class348_sub49_sub2.readBits((-24).toByte(), i) == 1)
-            if (bool) Class18.anIntArray279!![Class101_Sub3.anInt5768++] = i_22_
+            if (bool) Class18.anIntArray279!![ProjectionCameraTransform.anInt5768++] = i_22_
             val i_23_ = class348_sub49_sub2.readBits((-24).toByte(), 2)
             val player = Class294.aPlayerArray5058!![i_22_]!!
             if (i_23_ == 0) {

@@ -18,14 +18,14 @@ class Class348_Sub40_Sub4 : Class348_Sub40(0, true) {
         @JvmField
         var aRenderConfig9113: RenderConfig? = null
         @JvmField
-        var aClass101_9114: Class101? = null
+        var aAbstractCameraTransform_9114: AbstractCameraTransform? = null
         @JvmField
         var anInt9115: Int = 0
 
         @JvmStatic
         fun method3057(i: Byte) {
             if (i > -32) method3058(-76, 25, -12)
-            aClass101_9114 = null
+            aAbstractCameraTransform_9114 = null
             aClass262_9111 = null
             aRenderConfig9113 = null
         }

@@ -335,9 +335,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 method92(28740)
                 Class348_Sub8.aClass241_6660 = Class229.method1631(false)
                 while (Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739)) {
-                    Class101_Sub2.anInt5744 = Class348_Sub8.aClass241_6660!!.method1861(0, Class73.aLong4783)
+                    FloatCameraTransform.anInt5744 = Class348_Sub8.aClass241_6660!!.method1861(0, Class73.aLong4783)
                     var i = 0
-                    while (Class101_Sub2.anInt5744 > i) {
+                    while (FloatCameraTransform.anInt5744 > i) {
                         method84(-1)
                         i++
                     }

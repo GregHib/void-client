@@ -159,7 +159,7 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
         var anInt8859: Int = 0
 
         fun method2822(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2, i_3_: Int) {
-            Class101_Sub3.anInt5768 = 0
+            ProjectionCameraTransform.anInt5768 = 0
             anInt8846++
             Class55.aBoolean979 = false
             if (i < -17) {

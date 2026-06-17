@@ -99,8 +99,8 @@ class Class239_Sub14 : Class239 {
                 val class124 = Class300.method2277(0, RasterSprite.aClass45_5207!!, Class348_Sub31.anInt6923, -1)
                 val l = Class62.method599(-88)
                 Class348_Sub8.aRenderer6654!!.la()
-                Class157.aClass101_2123!!.method894(0, Class348_Sub23_Sub2.anInt9037, 0)
-                Class348_Sub8.aRenderer6654!!.method3638(Class157.aClass101_2123)
+                Class157.aAbstractCameraTransform_2123!!.method894(0, Class348_Sub23_Sub2.anInt9037, 0)
+                Class348_Sub8.aRenderer6654!!.method3638(Class157.aAbstractCameraTransform_2123)
                 Class348_Sub8.aRenderer6654!!.DA(dimension.width / 2, dimension.height / 2, 512, 512)
                 Class348_Sub8.aRenderer6654!!.xa(1.0f)
                 if (i_1_ >= -66) aClass190_5990 = null
@@ -112,9 +112,9 @@ class Class239_Sub14 : Class239 {
                     Class348_Sub8.aRenderer6654!!.ya()
                     for (i_5_ in 15 downTo 0) {
                         for (i_6_ in 0..i_5_) {
-                            Class50_Sub1.aClass101_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * Class270.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * Class270.anInt3465)
+                            Class50_Sub1.aAbstractCameraTransform_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * Class270.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * Class270.anInt3465)
                             i_3_++
-                            class64.method615(Class50_Sub1.aClass101_5209, null, 0)
+                            class64.method615(Class50_Sub1.aAbstractCameraTransform_5209, null, 0)
                             if (Class62.method599(-105) + -l >= i_2_.toLong()) break@while_80_
                         }
                     }

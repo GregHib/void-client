@@ -265,8 +265,8 @@ class Class230 internal constructor(string: String?, i: Int) {
                             Class21.aRenderer326!!.la()
                             Class21.aRenderer326!!.ya()
                             Class21.aRenderer326!!.GA(Class77.anInt1290)
-                            Class51.aClass101_905!!.method903(Class105_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396)
-                            Class21.aRenderer326!!.method3638(Class51.aClass101_905)
+                            Class51.aAbstractCameraTransform_905!!.method903(Class105_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396)
+                            Class21.aRenderer326!!.method3638(Class51.aAbstractCameraTransform_905)
                             if (Class348_Sub49.anInt7207 == 1) {
                                 Class328_Sub1_Sub1.anInt8799 = i_17_
                                 Class120.anInt4910 = i_16_

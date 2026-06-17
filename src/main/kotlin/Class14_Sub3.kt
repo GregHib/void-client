@@ -193,7 +193,7 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
                 Class321.aClass114_4015,
                 Class368.aClass114_4500,
                 Class209.aClass114_2717,
-                Class101_Sub2.aClass114_5742,
+                FloatCameraTransform.aClass114_5742,
                 Class176.aClass114_2331
             ))
         }

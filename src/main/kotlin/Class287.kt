@@ -15,7 +15,7 @@ class Class287 {
             anInt3692++
             if (Class219.aClass223_2868 == class223) return Class170.method1312(64.toByte(), class348_sub49!!)
             if (Class348_Sub49.aClass223_7175 == class223) return Class105_Sub1.method987(743571200, class348_sub49!!)
-            if (Class101_Sub1.aClass223_5689 == class223) return Class303.method2287(class348_sub49!!, (-112).toByte())
+            if (MatrixCameraTransform.aClass223_5689 == class223) return Class303.method2287(class348_sub49!!, (-112).toByte())
             if (class223 == Class28.aClass223_4997) return Class337.method2660(26.toByte(), class348_sub49!!)
             if (bool != true) Companion.method2180((-104).toByte())
             if (class223 == Class348_Sub40_Sub21.aClass223_9274) return Class288_Sub1.Companion.method2189(class348_sub49!!, 86)

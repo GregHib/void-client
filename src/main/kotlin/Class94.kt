@@ -30,6 +30,6 @@ object Class94 {
         anInt1535++
         for (i in 0..31) Class348_Sub49.aLongArray7206!![i] = 0L
         for (i in 0..31) Class328_Sub2_Sub1.aLongArray8800!![i] = 0L
-        Class101_Sub2.anInt5744 = 0
+        FloatCameraTransform.anInt5744 = 0
     }
 }

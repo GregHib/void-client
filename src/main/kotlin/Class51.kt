@@ -755,7 +755,7 @@ class Class51 {
         @JvmField
         var anInt901: Int = 0
         @JvmField
-        var aClass101_905: Class101? = null
+        var aAbstractCameraTransform_905: AbstractCameraTransform? = null
         @JvmField
         var anInt910: Int = 0
         @JvmField
@@ -778,7 +778,7 @@ class Class51 {
         fun method486(i: Int) {
             aStringArray932 = null
             if (i > -19) method486(-34)
-            aClass101_905 = null
+            aAbstractCameraTransform_905 = null
             aClass311_897 = null
         }
     }

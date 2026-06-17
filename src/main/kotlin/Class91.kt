@@ -25,7 +25,7 @@ object Class91 {
 
     fun method856(i: Byte) {
         Class358.anInt4411 = 0
-        Class101.anInt1597 = 0
+        AbstractCameraTransform.anInt1597 = 0
         anInt1522++
         Class348_Sub23_Sub3.anInt9041++
         Class139.method1165(1)

@@ -40,14 +40,14 @@ class Class139 {
                         if (i_5_ == 0) {
                             Class74.anIntArray1233!![Class150.anInt2057++] = i_3_
                             npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
-                            Class13.anIntArray224!![Class101.anInt1597++] = i_3_
+                            Class13.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_3_
                         } else if (i_5_ == 1) {
                             Class74.anIntArray1233!![Class150.anInt2057++] = i_3_
                             npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
                             val i_6_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3)
                             npc.method2443(i_6_, 1, -10)
                             val i_7_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
-                            if (i_7_ == 1) Class13.anIntArray224!![Class101.anInt1597++] = i_3_
+                            if (i_7_ == 1) Class13.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_3_
                         } else if (i_5_ == 2) {
                             Class74.anIntArray1233!![Class150.anInt2057++] = i_3_
                             npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
@@ -61,7 +61,7 @@ class Class139 {
                                 npc.method2443(i_8_, 0, i + -11)
                             }
                             val i_11_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
-                            if (i_11_ == 1) Class13.anIntArray224!![Class101.anInt1597++] = i_3_
+                            if (i_11_ == 1) Class13.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_3_
                         } else if (i_5_ == 3) Class5_Sub1_Sub1.anIntArray9932!![Class358.anInt4411++] = i_3_
                     }
                 }

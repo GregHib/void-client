@@ -368,7 +368,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         } while (false)
     }
 
-    fun method2432(var_renderer: Renderer?, i: Int, class101: Class101?, bool: Boolean, class64s: Array<Class64?>?) {
+    fun method2432(var_renderer: Renderer?, i: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, class64s: Array<Class64?>?) {
         do {
             try {
                 if (i == -15074) {
@@ -378,7 +378,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                         val class64_65_ = class64s[1]
                         val class64_66_ = class64s[2]
                         if (class64 != null) {
-                            class64.method620(class101)
+                            class64.method620(abstractCameraTransform)
                             var i_67_ = 0
                             var i_68_ = 0
                             var i_69_ = 0
@@ -396,7 +396,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                             var class129s_71_: Array<Class129?>? = null
                             var class342s_72_: Array<Class342?>? = null
                             if (class64_65_ != null) {
-                                class64_65_.method620(class101)
+                                class64_65_.method620(abstractCameraTransform)
                                 class129s_71_ = class64_65_.method619()
                                 class342s_72_ = class64_65_.method604()
                             }
@@ -411,7 +411,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                             var class129s_73_: Array<Class129?>? = null
                             var class342s_74_: Array<Class342?>? = null
                             if (class64_66_ != null) {
-                                class64_66_.method620(class101)
+                                class64_66_.method620(abstractCameraTransform)
                                 class129s_73_ = class64_66_.method619()
                                 class342s_74_ = class64_66_.method604()
                             }
@@ -470,7 +470,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                     this.aClass318_Sub10_10327!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (class101 != null) "{...}" else "null") + ',' + bool + ',' + (if (class64s != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + (if (class64s != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

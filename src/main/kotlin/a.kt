@@ -21,8 +21,8 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
 
     private external fun R(l: Long, l_1_: Long, i: Int, i_2_: Int, l_3_: Long, bool: Boolean): Boolean
 
-    fun method143(class64: Class64, i: Int, i_4_: Int, class101: Class101?, bool: Boolean, i_5_: Int): Boolean {
-        return n(this.nativeid, (class64 as i).nativeid, i, i_4_, (class101 as ja).nativeid, bool, i_5_)
+    fun method143(class64: Class64, i: Int, i_4_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_5_: Int): Boolean {
+        return n(this.nativeid, (class64 as i).nativeid, i, i_4_, (abstractCameraTransform as ja).nativeid, bool, i_5_)
     }
 
     fun method144(class64: Class64, class64_6_: Class64?, i: Int, i_7_: Int, i_8_: Int, bool: Boolean) {
@@ -39,14 +39,14 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
         if (this.nativeid != 0L) Class257.method1947(0, this)
     }
 
-    fun method145(class64: Class64?, class101: Class101, `is`: IntArray?, i: Int) {
-        UA(this.nativeid, (class64 as i).nativeid, (class101 as ja).nativeid, `is`, i)
+    fun method145(class64: Class64?, abstractCameraTransform: AbstractCameraTransform, `is`: IntArray?, i: Int) {
+        UA(this.nativeid, (class64 as i).nativeid, (abstractCameraTransform as ja).nativeid, `is`, i)
     }
 
     private external fun n(l: Long, l_11_: Long, i: Int, i_12_: Int, l_13_: Long, bool: Boolean, i_14_: Int): Boolean
 
-    fun method146(class64: Class64, i: Int, i_15_: Int, class101: Class101?, bool: Boolean): Boolean {
-        return R(this.nativeid, (class64 as i).nativeid, i, i_15_, (class101 as ja).nativeid, bool)
+    fun method146(class64: Class64, i: Int, i_15_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean): Boolean {
+        return R(this.nativeid, (class64 as i).nativeid, i, i_15_, (abstractCameraTransform as ja).nativeid, bool)
     }
 
     fun method147(var_terrainTile: TerrainTile, i: Int, i_16_: Int, i_17_: Int) {
@@ -61,8 +61,8 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
         ta(this.nativeid, (var_terrainTile as t).nativeid, i, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, bools)
     }
 
-    fun method149(class64: Class64, class101: Class101?, `is`: IntArray?, i: Int, i_24_: Int) {
-        f(this.nativeid, (class64 as i).nativeid, (class101 as ja).nativeid, `is`, i, i_24_)
+    fun method149(class64: Class64, abstractCameraTransform: AbstractCameraTransform?, `is`: IntArray?, i: Int, i_24_: Int) {
+        f(this.nativeid, (class64 as i).nativeid, (abstractCameraTransform as ja).nativeid, `is`, i, i_24_)
     }
 
     private external fun na(l: Long, var_renderer: Renderer?, i: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int)
@@ -77,8 +77,8 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
 
     private external fun r(l: Long, l_43_: Long, l_44_: Long, i: Int, i_45_: Int, i_46_: Int, bool: Boolean)
 
-    fun method151(class64: Class64, `is`: IntArray?, class101: Class101?) {
-        e(this.nativeid, (class64 as i).nativeid, `is`, (class101 as ja).nativeid)
+    fun method151(class64: Class64, `is`: IntArray?, abstractCameraTransform: AbstractCameraTransform?) {
+        e(this.nativeid, (class64 as i).nativeid, `is`, (abstractCameraTransform as ja).nativeid)
     }
 
     fun method152(var_i: i, i: Byte, i_47_: Int, bool: Boolean): Class64 {

@@ -35,15 +35,15 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var anInt8062: Int = 0
     var anInt8063: Int = 0
     var aBoolean8069: Boolean = true
-    var aClass101_Sub2_8074: Class101_Sub2 = Class101_Sub2()
+    var aClass101_Sub2_8074: FloatCameraTransform = FloatCameraTransform()
     var anInt8079: Int = 0
     @JvmField
-    var aClass101_Sub2_8080: Class101_Sub2 = Class101_Sub2()
+    var aClass101_Sub2_8080: FloatCameraTransform = FloatCameraTransform()
     @JvmField
-    var aClass101_Sub2_8082: Class101_Sub2 = Class101_Sub2()
-    var aClass101_Sub2_8083: Class101_Sub2 = Class101_Sub2()
-    private val aClass101_Sub2_8084 = Class101_Sub2()
-    private var aClass101_Sub2_8085: Class101_Sub2 = Class101_Sub2()
+    var aClass101_Sub2_8082: FloatCameraTransform = FloatCameraTransform()
+    var aClass101_Sub2_8083: FloatCameraTransform = FloatCameraTransform()
+    private val aClass101_Sub2_8084 = FloatCameraTransform()
+    private var aClass101_Sub2_8085: FloatCameraTransform = FloatCameraTransform()
     lateinit var aClass229Array8086: Array<Class229?>
     var aFloat8087: Float = 1.0f
     private var aStream8088: Stream?
@@ -100,7 +100,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var anInt8129: Int = 512
     @JvmField
     var anInt8130: Int = 0
-    lateinit var aClass101_Sub2Array8131: Array<Class101_Sub2?>
+    lateinit var aClass101_Sub2Array8131: Array<FloatCameraTransform?>
     lateinit var aClass348_Sub1Array8132: Array<Class348_Sub1?>
     @JvmField
     var anInt8133: Int = 0
@@ -178,7 +178,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     @JvmField
     var aClass64_Sub2_8194: Class64_Sub2? = null
     private var anInterface5_Impl2_8195: Interface5_Impl2? = null
-    private val aClass101_Sub2_8196: Class101_Sub2
+    private val aClass101_Sub2_8196: FloatCameraTransform
     private var aClass130_8197: Class130? = null
     @JvmField
     var aClass64_Sub2_8198: Class64_Sub2? = null
@@ -334,7 +334,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    fun method3815(i: Int, class101_sub2: Class101_Sub2?) {
+    fun method3815(i: Int, class101_sub2: FloatCameraTransform?) {
         try {
             anInt8029++
             if (i != 0) this.anInt8062 = -6
@@ -408,7 +408,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3819(i: Byte)
 
-    fun method3820(bool: Boolean): Class101_Sub2 {
+    fun method3820(bool: Boolean): FloatCameraTransform {
         anInt8004++
         if (bool != false) method3903(true)
         return (this.aClass101_Sub2Array8131[this.anInt8175])!!
@@ -515,10 +515,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3638(class101: Class101?) {
+    override fun method3638(abstractCameraTransform: AbstractCameraTransform?) {
         do {
             try {
-                this.aClass101_Sub2_8080 = class101 as Class101_Sub2
+                this.aClass101_Sub2_8080 = abstractCameraTransform as FloatCameraTransform
                 anInt7923++
                 this.aClass101_Sub2_8083.method898(this.aClass101_Sub2_8080)
                 this.aClass101_Sub2_8083.method934(64.toByte())
@@ -527,7 +527,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (!this.aClass196_8184.method1450(-112)) break
                 method3913(107.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "wga.DE(" + (if (class101 != null) "{...}" else "null") + ')')
+                throw Class348_Sub17.method2929(runtimeexception, "wga.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -814,7 +814,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7999++
     }
 
-    fun method3848(i: Int): Class101_Sub2 {
+    fun method3848(i: Int): FloatCameraTransform {
         anInt8031++
         if (i != 5) method3890(false, 95.toByte())
         return (this.aClass101_Sub2Array8131[this.anInt8175])!!
@@ -869,7 +869,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3640(): Class101 {
+    override fun method3640(): AbstractCameraTransform {
         anInt7945++
         return this.aClass101_Sub2_8080
     }
@@ -958,7 +958,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         return true
     }
 
-    fun method3854(i: Byte): Class101_Sub2 {
+    fun method3854(i: Byte): FloatCameraTransform {
         anInt7983++
         val i_91_ = 97 / ((i - 35) / 63)
         return aClass101_Sub2_8084
@@ -1042,7 +1042,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7930++
     }
 
-    override fun method3705(): Class101 {
+    override fun method3705(): AbstractCameraTransform {
         anInt8077++
         return aClass101_Sub2_8196
     }
@@ -1400,7 +1400,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    fun method3887(i: Byte): Class101_Sub2 {
+    fun method3887(i: Byte): FloatCameraTransform {
         val i_167_ = 62 / ((i - -58) / 33)
         anInt7941++
         return this.aClass101_Sub2_8083
@@ -1790,9 +1790,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3911(canvas: Canvas?, i: Int, `object`: Any?)
 
-    override fun method3654(): Class101 {
+    override fun method3654(): AbstractCameraTransform {
         anInt8060++
-        return Class101_Sub2()
+        return FloatCameraTransform()
     }
 
     private fun method3912(i: Int) {
@@ -2153,7 +2153,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     }
 
     fun method3930(i: Byte) {
-        this.aClass101_Sub2Array8131 = arrayOfNulls<Class101_Sub2>(this.anInt8090)
+        this.aClass101_Sub2Array8131 = arrayOfNulls<FloatCameraTransform>(this.anInt8090)
         anInterface18Array8098 = arrayOfNulls<Interface18>(this.anInt8090)
         this.aClass229Array8086 = arrayOfNulls<Class229>(this.anInt8090)
         this.aClass229Array8092 = arrayOfNulls<Class229>(this.anInt8090)
@@ -2164,7 +2164,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             this.aClass229Array8092[i_263_] = Class167.aClass229_2207
             this.aClass229Array8086[i_263_] = Class167.aClass229_2207
             this.aClass251Array8113[i_263_] = Class348_Sub42_Sub18.aClass251_9685
-            this.aClass101_Sub2Array8131[i_263_] = Class101_Sub2()
+            this.aClass101_Sub2Array8131[i_263_] = FloatCameraTransform()
             i_263_++
         }
         this.aClass348_Sub1Array8132 = arrayOfNulls<Class348_Sub1>(-2 + this.anInt8138)
@@ -2266,7 +2266,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3849(47.toByte(), 0, Class342.aClass70_4247)
     }
 
-    fun method3934(i: Int): Class101_Sub2 {
+    fun method3934(i: Int): FloatCameraTransform {
         anInt8055++
         return this.aClass101_Sub2_8074
     }
@@ -2401,7 +2401,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    fun method3948(i: Int): Class101_Sub2 {
+    fun method3948(i: Int): FloatCameraTransform {
         if (!aBoolean8121) {
             aClass101_Sub2_8085.method927(this.aClass101_Sub2_8083, (this.aClass101_Sub2_8074))
             aBoolean8121 = true
@@ -2492,7 +2492,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8172 = 16777215
         this.anInt8183 = 0
         aStream8088 = Stream()
-        aClass101_Sub2_8196 = Class101_Sub2()
+        aClass101_Sub2_8196 = FloatCameraTransform()
         try {
             try {
                 this.anInt8117 = i

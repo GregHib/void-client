@@ -59,7 +59,7 @@ object Class178 {
             var i_4_ = -1
             var string_5_: String? = null
             if (i_0_ != -1) {
-                val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_0_, 28364)
+                val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_0_, 28364)
                 if (class254 == null || bool != class254.method1925(!bool_3_)) return
                 if (class254.method1925(!bool_3_)) string_5_ = class254.aString3258
                 else i_4_ = class254.anInt3256
