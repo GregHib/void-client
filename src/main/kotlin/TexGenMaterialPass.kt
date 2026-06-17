@@ -203,9 +203,9 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
                 anInt6251++
                 if (l > 0L) {
                     if (l % 10L == 0L) {
-                        Class327.method2606(-125, -1L + l)
-                        Class327.method2606(-125, 1L)
-                    } else Class327.method2606(59, l)
+                        FileIoUtil.method2606(-125, -1L + l)
+                        FileIoUtil.method2606(-125, 1L)
+                    } else FileIoUtil.method2606(59, l)
                     val i_13_ = 70 % ((i - -52) / 32)
                 }
             } catch (runtimeexception: RuntimeException) {

@@ -984,7 +984,7 @@ class Class46 {
                 LinkedListIterator.anIntArray2117 = IntArray(i)
                 anInt825++
                 Class64.anIntArray1127 = IntArray(i)
-                Class327.anIntArray4097 = IntArray(i)
+                FileIoUtil.anIntArray4097 = IntArray(i)
             }
         }
 

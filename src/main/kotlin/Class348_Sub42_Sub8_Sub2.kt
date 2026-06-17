@@ -1063,7 +1063,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub42_Sub8.Companion.aIntRange_9550) {
-                method128(Class327.aClass74_4098, 8.toByte())
+                method128(FileIoUtil.aClass74_4098, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

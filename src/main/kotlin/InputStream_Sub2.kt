@@ -234,7 +234,7 @@ class InputStream_Sub2 : InputStream() {
                                 if (i_92_ >= 0 && i_90_ >= 0 && (i_92_ < Class367_Sub4.anInt7319) && (Class348_Sub40_Sub3.anInt9109 > i_90_)) ProjectileSpawner.method1479(i_90_, (-125).toByte(), i_92_, (Class348_Sub40_Sub12.anInt9200))
                             }
                         }
-                    } else if (class74 == Class327.aClass74_4098) {
+                    } else if (class74 == FileIoUtil.aClass74_4098) {
                         val i_97_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                         val i_98_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_99_ = (0x7 and i_98_) + Class73.anInt4786

@@ -86,7 +86,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
         fun method1821(i: Int, file: File): ByteArray? {
             anInt6086++
             val i_2_ = 34 % ((i - 31) / 39)
-            return Class327.method2607(file.length().toInt(), file, 121)
+            return FileIoUtil.method2607(file.length().toInt(), file, 121)
         }
 
         @JvmStatic

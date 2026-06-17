@@ -2,7 +2,10 @@ import Class374.method3610
 import java.io.File
 import java.io.IOException
 
-object Class327 {
+/*
+ * Class327
+ */
+object FileIoUtil {
     var anInt4090: Int = 0
     var aBoundsConstraintEntry_4091: BoundsConstraintEntry? = BoundsConstraintEntry("", 10)
     var anInt4092: Int = 0

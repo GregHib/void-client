@@ -132,7 +132,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
                 }
                 if (Class355.anInt4372 != 3) {
                     for (i_9_ in 0..1) {
-                        Class327.anIntArray4097!![i_9_] = -1000000
+                        FileIoUtil.anIntArray4097!![i_9_] = -1000000
                         LinkedListIterator.anIntArray2117!![i_9_] = 1000000
                         Class348_Sub40_Sub19.anIntArray9259!![i_9_] = 0
                         Class64.anIntArray1127!![i_9_] = 1000000

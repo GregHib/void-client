@@ -119,7 +119,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             Class90.regionTileY = 0
             ArbVertexProgram.regionTileX = 0
             Renderer.anInt4581 = 0
-            Class327.anInt4095 = 0
+            FileIoUtil.anInt4095 = 0
             WidgetRedrawTracker.anInt3931 = 0
             Class83.anInt1447 = WidgetRedrawTracker.anInt3931
             var i_3_ = 0

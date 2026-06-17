@@ -81,7 +81,7 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         @JvmStatic
         fun method696(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
             if (i_2_ == -1007) {
-                if (i == 1009) Class66.method701(Class327.aBoundsConstraintEntry_4091!!, i_1_, i_0_)
+                if (i == 1009) Class66.method701(FileIoUtil.aBoundsConstraintEntry_4091!!, i_1_, i_0_)
                 else if (i != 1012) {
                     if (i == 1002) Class66.method701(Class348_Sub40_Sub32.aBoundsConstraintEntry_9415!!, i_1_, i_0_)
                     else if (i == 1003) Class66.method701(Class348_Sub12.aBoundsConstraintEntry_6743!!, i_1_, i_0_)

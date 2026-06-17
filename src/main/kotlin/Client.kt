@@ -958,7 +958,7 @@ class Client : GameAppletFrame() {
         method2469(true)
         method2640(true)
         method869(3)
-        Class327.method2604((-102).toByte())
+        FileIoUtil.method2604((-102).toByte())
         method3217(61.toByte())
         RectangleRegion.method1164((-52).toByte())
         method2407(false)
@@ -2399,7 +2399,7 @@ class Client : GameAppletFrame() {
                                         Class348_Sub1_Sub2.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
                                         while_226_@ for (i_80_ in class46.anInt725..<TypedRecordTable.anInt3695) {
-                                            val i_81_ = (Class327.anIntArray4096!![i_80_ and 0x1f])
+                                            val i_81_ = (FileIoUtil.anIntArray4096!![i_80_ and 0x1f])
                                             for (i_82_ in (class46.anIntArray686!!).indices) {
                                                 if ((class46.anIntArray686!![i_82_]) == i_81_) {
                                                     val class348_sub36 = Class348_Sub36()

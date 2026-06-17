@@ -334,15 +334,15 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     FrameStatsReset.method1131(99)
                     if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {
                         Class352.anInt4335++
-                        val class348_sub47 = method2148(Class327.aClass351_4094, (Class348_Sub23_Sub2.aClass77_9029), i xor 0x55.inv())
+                        val class348_sub47 = method2148(FileIoUtil.aClass351_4094, (Class348_Sub23_Sub2.aClass77_9029), i xor 0x55.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), 1057001181)
                         Class348_Sub42_Sub14.method3243(-122, class348_sub47)
                     }
                     if (WidgetRedrawTracker.anInt3931 == 0) {
                         val i_33_ = ((Renderer.anInt4581 + -(Class367_Sub4.anInt7319 shr 4)) / 8)
                         val i_34_ = ((Renderer.anInt4581 - -(Class367_Sub4.anInt7319 shr 4)) / 8)
-                        val i_35_ = ((Class327.anInt4095 + -(Class348_Sub40_Sub3.anInt9109 shr 4)) / 8)
-                        val i_36_ = (((Class348_Sub40_Sub3.anInt9109 shr 4) + Class327.anInt4095) / 8)
+                        val i_35_ = ((FileIoUtil.anInt4095 + -(Class348_Sub40_Sub3.anInt9109 shr 4)) / 8)
+                        val i_36_ = (((Class348_Sub40_Sub3.anInt9109 shr 4) + FileIoUtil.anInt4095) / 8)
                         for (i_37_ in i_33_ - 1..i_34_ - -1) {
                             for (i_38_ in i_35_ + -1..i_36_ - -1) {
                                 if (i_33_ > i_37_ || i_34_ < i_37_ || i_38_ < i_35_ || i_38_ > i_36_) {

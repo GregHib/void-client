@@ -91,9 +91,9 @@ class Class348_Sub41 : Class348() {
 
         fun method3157(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, bool: Boolean) {
             anInt7049++
-            if (bool || i_16_ != Renderer.anInt4581 || Class327.anInt4095 != i || (Class355.anInt4372 != ParticleSystemState.anInt2204 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
+            if (bool || i_16_ != Renderer.anInt4581 || FileIoUtil.anInt4095 != i || (Class355.anInt4372 != ParticleSystemState.anInt2204 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
                 Renderer.anInt4581 = i_16_
-                Class327.anInt4095 = i
+                FileIoUtil.anInt4095 = i
                 ParticleSystemState.anInt2204 = Class355.anInt4372
                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) ParticleSystemState.anInt2204 = 0
                 Class348_Sub49.method3379(2, i_17_)
@@ -101,8 +101,8 @@ class Class348_Sub41 : Class348() {
                 val i_18_ = ArbVertexProgram.regionTileX
                 val i_19_ = Class90.regionTileY
                 ArbVertexProgram.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + Renderer.anInt4581) * 8
-                Class90.regionTileY = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.anInt9109 shr 4))
-                Class348_Sub26.Companion.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, Class327.anInt4095 * 8)
+                Class90.regionTileY = 8 * (FileIoUtil.anInt4095 - (Class348_Sub40_Sub3.anInt9109 shr 4))
+                Class348_Sub26.Companion.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, FileIoUtil.anInt4095 * 8)
                 OpenGlRenderNode.aSmoothingBuffer_10488 = null
                 val i_20_ = ArbVertexProgram.regionTileX - i_18_
                 val i_21_ = -i_19_ + Class90.regionTileY

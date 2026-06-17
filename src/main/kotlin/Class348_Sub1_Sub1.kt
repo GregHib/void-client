@@ -78,7 +78,7 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
                         method3570(false)
                         class237_sub1!!.method1681(class348_sub49, i_18_, Class348_Sub45.aClass361Array7108, Class90.regionTileY, ArbVertexProgram.regionTileX, i_19_, 110.toByte())
                         class237_sub1.method1691(i_19_, Class348_Sub8.aRenderer6654, class348_sub49, is_11_, i_18_, (-126).toByte())
-                        if (!class237_sub1.aBoolean3109 && i_16_ == Renderer.anInt4581 / 8 && (i_17_ == Class327.anInt4095 / 8) && is_11_[0] != -1) {
+                        if (!class237_sub1.aBoolean3109 && i_16_ == Renderer.anInt4581 / 8 && (i_17_ == FileIoUtil.anInt4095 / 8) && is_11_[0] != -1) {
                             KeyboardLayoutCache.aParticleSystemRenderer_3304 = CircleHitbox.aClass84_413!!.method823(is_11_[2], is_11_[3], is_11_[1], -66, (HoverActionEntry.aSpriteStore_1813!!), is_11_[0])
                             MapSceneDefLoader.anInt2481 = is_11_[4]
                         }
@@ -89,7 +89,7 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
                     val i_21_ = ((Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) * 64 - ArbVertexProgram.regionTileX)
                     val i_22_ = (-Class90.regionTileY + ((0xff and Class348_Sub23_Sub3.anIntArray9042!![i_20_]) * 64))
                     val is_23_ = `is`[i_20_]
-                    if (is_23_ == null && Class327.anInt4095 < 800) {
+                    if (is_23_ == null && FileIoUtil.anInt4095 < 800) {
                         method3570(false)
                         class237_sub1!!.method1688(i_22_, 64, 64, 125, i_21_)
                     }

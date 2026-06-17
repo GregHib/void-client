@@ -213,7 +213,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             var i_15_ = ProjectedGroundDecor.aVarpStore_10209!!.method1305((-126).toByte(), true)
                             while (i_15_ != -1) {
                                 method1767(true, i_15_)
-                                Class327.anIntArray4096!![method1166(31, TypedRecordTable.anInt3695++)] = i_15_
+                                FileIoUtil.anIntArray4096!![method1166(31, TypedRecordTable.anInt3695++)] = i_15_
                                 i_15_ = ProjectedGroundDecor.aVarpStore_10209!!.method1305((-128).toByte(), false)
                             }
                             var class348_sub42_sub15 = method3127(2681)

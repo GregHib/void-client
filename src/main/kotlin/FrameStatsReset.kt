@@ -624,7 +624,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FixedFunctionMaterialPass.anInt6203 = 0
             Class328.anInt4099 = 0
             TextureHandle.anInt2583 = 0
-            Class327.anInt4092 = 0
+            FileIoUtil.anInt4092 = 0
             WidgetDefinition.anInt257 = 0
             Gl2dTexture.anInt8606 = 0
             Class51.anInt891 = 0
@@ -1093,7 +1093,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlTerrainTile.anInt8259 = 0
             Class34.anInt466 = 0
             Class348_Sub42_Sub14.anInt9624 = 0
-            Class327.anInt4090 = 0
+            FileIoUtil.anInt4090 = 0
             ModelLightingConfig.anInt2553 = 0
             BufferedMessageQueue.anInt3587 = 0
             GlslMaterialPass.anInt6241 = 0
@@ -1773,7 +1773,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ArchiveResourceProvider.anInt6362 = 0
             FontDefinition.anInt1989 = 0
             SizeBoundedSoftCache.anInt2325 = 0
-            Class327.anInt4093 = 0
+            FileIoUtil.anInt4093 = 0
             PerlinTextureProvider.anInt5805 = 0
             OpenGlRenderer.anInt7584 = 0
             ModelFacePriorityNode.anInt1893 = 0
