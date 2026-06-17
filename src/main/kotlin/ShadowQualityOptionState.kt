@@ -126,7 +126,7 @@ class ShadowQualityOptionState : GraphicsOptionState {
                                 player.anInt10294 = 0
                                 player.anInt10218 = i_8_
                                 player.anInt10244 = 1
-                                if (!player.aBoolean10309) Class287.method2178(player, player.anInt10267, class17, i xor 0x5df4.inv())
+                                if (!player.aBoolean10309) TypedRecordTable.method2178(player, player.anInt10267, class17, i xor 0x5df4.inv())
                             }
                             if (i_10_ == 2) player.anInt10294 = 0
                         }

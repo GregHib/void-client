@@ -343,7 +343,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                 class318_sub1_sub3_sub3.anInt10312++
                                 class318_sub1_sub3_sub3.anInt10245++
                                 class318_sub1_sub3_sub3.anInt10203 = 1
-                                if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10245), class17, -58)
+                                if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10245), class17, -58)
                             }
                             if (class318_sub1_sub3_sub3.anInt10245 >= class17.anIntArray237.size) {
                                 class318_sub1_sub3_sub3.anInt10245 = 0
@@ -356,7 +356,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     }
                                     class17 = (ParticleEmitterNode.aClass87_191!!.method835(class318_sub1_sub3_sub3.anInt10268, 7))
                                 }
-                                if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10245), class17, -23)
+                                if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10245), class17, -23)
                             }
                             class318_sub1_sub3_sub3.anInt10312 = class318_sub1_sub3_sub3.anInt10245 + 1
                             if (class17.anIntArray237 == null) {
@@ -386,13 +386,13 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             if (class17 != null && class17.anIntArray237 != null) {
                                 if (class318_sub1_sub3_sub3.anInt10240 < 0) {
                                     class318_sub1_sub3_sub3.anInt10240 = 0
-                                    if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, 0, class17, -89)
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, 0, class17, -89)
                                 }
                                 class318_sub1_sub3_sub3.anInt10243++
                                 if ((class17.anIntArray237.size > class318_sub1_sub3_sub3.anInt10240) && ((class17.anIntArray267!![class318_sub1_sub3_sub3.anInt10240]) < class318_sub1_sub3_sub3.anInt10243)) {
                                     class318_sub1_sub3_sub3.anInt10240++
                                     class318_sub1_sub3_sub3.anInt10243 = 1
-                                    if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10240, class17, -17)
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10240, class17, -17)
                                 }
                                 if (class318_sub1_sub3_sub3.anInt10240 >= class17.anIntArray237.size) {
                                     if (class368.aBoolean4487) {
@@ -400,7 +400,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         class318_sub1_sub3_sub3.anInt10240 -= class17.anInt238
                                         if (class17.anInt244 <= (class318_sub1_sub3_sub3.anInt10305)) class318_sub1_sub3_sub3.anInt10269 = -1
                                         else if ((class318_sub1_sub3_sub3.anInt10240) >= 0 && ((class17.anIntArray237).size > (class318_sub1_sub3_sub3.anInt10240))) {
-                                            if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10240), class17, -70)
+                                            if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10240), class17, -70)
                                         } else class318_sub1_sub3_sub3.anInt10269 = -1
                                     } else class318_sub1_sub3_sub3.anInt10269 = -1
                                 }
@@ -437,13 +437,13 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             else {
                                 if (class318_sub1_sub3_sub3.anInt10224 < 0) {
                                     class318_sub1_sub3_sub3.anInt10224 = 0
-                                    if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, 0, class17, -70)
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, 0, class17, -70)
                                 }
                                 class318_sub1_sub3_sub3.anInt10273++
                                 if ((class17.anIntArray237.size > class318_sub1_sub3_sub3.anInt10224) && ((class17.anIntArray267!![class318_sub1_sub3_sub3.anInt10224]) < class318_sub1_sub3_sub3.anInt10273)) {
                                     class318_sub1_sub3_sub3.anInt10224++
                                     class318_sub1_sub3_sub3.anInt10273 = 1
-                                    if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10224, class17, -114)
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10224, class17, -114)
                                 }
                                 if (class17.anIntArray237.size <= class318_sub1_sub3_sub3.anInt10224) {
                                     if (class368.aBoolean4487) {
@@ -451,7 +451,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         class318_sub1_sub3_sub3.anInt10224 -= class17.anInt238
                                         if (class17.anInt244 <= (class318_sub1_sub3_sub3.anInt10265)) class318_sub1_sub3_sub3.anInt10291 = -1
                                         else if ((class318_sub1_sub3_sub3.anInt10224) >= 0 && ((class318_sub1_sub3_sub3.anInt10224) < (class17.anIntArray237).size)) {
-                                            if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10224), class17, -92)
+                                            if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10224), class17, -92)
                                         } else class318_sub1_sub3_sub3.anInt10291 = -1
                                     } else class318_sub1_sub3_sub3.anInt10291 = -1
                                 }
@@ -487,7 +487,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                         if ((class17.anIntArray237.size > (class318_sub1_sub3_sub3.anInt10267)) && (class318_sub1_sub3_sub3.anInt10232 > (class17.anIntArray267!![class318_sub1_sub3_sub3.anInt10267]))) {
                             class318_sub1_sub3_sub3.anInt10267++
                             class318_sub1_sub3_sub3.anInt10232 = 1
-                            if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10267), class17, -34)
+                            if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10267), class17, -34)
                         }
                         if (class17.anIntArray237.size <= (class318_sub1_sub3_sub3.anInt10267)) {
                             class318_sub1_sub3_sub3.anInt10267 -= class17.anInt238
@@ -498,7 +498,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             } else if (class318_sub1_sub3_sub3.anInt10267 < 0 || (class318_sub1_sub3_sub3.anInt10267 >= (class17.anIntArray237).size)) {
                                 class318_sub1_sub3_sub3.anIntArray10236 = null
                                 class318_sub1_sub3_sub3.anInt10286 = -1
-                            } else if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10267), class17, -88)
+                            } else if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10267), class17, -88)
                         }
                         class318_sub1_sub3_sub3.anInt10244 = (class318_sub1_sub3_sub3.anInt10267) + 1
                         if (class17.anIntArray237.size <= (class318_sub1_sub3_sub3.anInt10244)) {
@@ -523,14 +523,14 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                 if ((class17.anIntArray237.size > class182.anInt2451) && (class182.anInt2456 > (class17.anIntArray267!![class182.anInt2451]))) {
                                     class182.anInt2451++
                                     class182.anInt2456 = 1
-                                    if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, class182.anInt2451, class17, -108)
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class182.anInt2451, class17, -108)
                                 }
                                 if (class182.anInt2451 >= class17.anIntArray237.size) {
                                     class182.anInt2451 -= class17.anInt238
                                     class182.anInt2445++
                                     if (class17.anInt244 > class182.anInt2445) {
                                         if (class182.anInt2451 < 0 || ((class17.anIntArray237).size <= (class182.anInt2451))) class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_] = null
-                                        else if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, class182.anInt2451, class17, -46)
+                                        else if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class182.anInt2451, class17, -46)
                                     } else class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_] = null
                                 }
                                 class182.anInt2455 = 1 + class182.anInt2451

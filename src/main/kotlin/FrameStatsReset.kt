@@ -260,7 +260,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5484 = 0
             ItemDefinitionLoader.anInt2184 = 0
             Client.anInt5178 = 0
-            Class287.anInt3685 = 0
+            TypedRecordTable.anInt3685 = 0
             Class311.anInt3911 = 0
             Class64_Sub3.anInt5615 = 0
             FlickeringEffectsOptionState.anInt5917 = 0
@@ -913,7 +913,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class305.anInt3856 = 0
             SizeBoundedSoftCache.anInt2323 = 0
             OpenGlRenderer.anInt7569 = 0
-            Class287.anInt3689 = 0
+            TypedRecordTable.anInt3689 = 0
             OpenGlRenderer.anInt7728 = 0
             SoftwareSpriteRaster.anInt1621 = 0
             NativeTerrainTile.anInt8315 = 0
@@ -924,7 +924,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5547 = 0
             Class348_Sub16_Sub3.anInt8950 = 0
             TextureHandle.anInt2588 = 0
-            Class287.anInt3693 = 0
+            TypedRecordTable.anInt3693 = 0
             ConfigDefinitionLoader.anInt2080 = 0
             Class59.anInt1073 = 0
             SlotBinding.anInt3391 = 0
@@ -1410,7 +1410,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SoftwareSpriteRaster.anInt1628 = 0
             Class367_Sub4.anInt7316 = 0
             OpenGlRenderer.anInt7615 = 0
-            Class287.anInt3692 = 0
+            TypedRecordTable.anInt3692 = 0
             Class324.anInt4045 = 0
             Class348_Sub49.anInt7178 = 0
             Class333.anInt4149 = 0
@@ -2709,7 +2709,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub10.anInt9576 = 0
             Class363.anInt4464 = 0
             Class38.anInt505 = 0
-            Class287.anInt3694 = 0
+            TypedRecordTable.anInt3694 = 0
             ItemDefinition.anInt2754 = 0
             MapLabelMenuEntry.anInt5792 = 0
             OpenGlRenderer.anInt7591 = 0
@@ -2976,7 +2976,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SceneObjectAnimator.anInt3080 = 0
             SeqDefinitionCache.anInt3356 = 0
             Class31.anInt446 = 0
-            Class287.anInt3686 = 0
+            TypedRecordTable.anInt3686 = 0
             MediaStreamClient.anInt3191 = 0
             ChatEffectsOptionState.anInt5864 = 0
             Class300.anInt3816 = 0

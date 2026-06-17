@@ -969,7 +969,7 @@ class Client : GameAppletFrame() {
         method2705(i + 14537)
         method3609(48.toByte())
         ProjectileFactory.method1612((-9).toByte())
-        Class287.method2180((-72).toByte())
+        TypedRecordTable.method2180((-72).toByte())
         method1447(i.toInt() xor 0x20)
         method492(i + -216)
         method3574(i.toInt() xor 0x4c47)
@@ -2391,14 +2391,14 @@ class Client : GameAppletFrame() {
                                     }
                                     class46.anInt814 = Class348_Sub40_Sub30.anInt9385
                                 }
-                                if (class46.anObjectArray777 != null && (Class287.anInt3695 > class46.anInt725)) {
-                                    if (class46.anIntArray686 == null || (Class287.anInt3695 - class46.anInt725) > 32) {
+                                if (class46.anObjectArray777 != null && (TypedRecordTable.anInt3695 > class46.anInt725)) {
+                                    if (class46.anIntArray686 == null || (TypedRecordTable.anInt3695 - class46.anInt725) > 32) {
                                         val class348_sub36 = Class348_Sub36()
                                         class348_sub36.aClass46_6989 = class46
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray777
                                         Class348_Sub1_Sub2.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
-                                        while_226_@ for (i_80_ in class46.anInt725..<Class287.anInt3695) {
+                                        while_226_@ for (i_80_ in class46.anInt725..<TypedRecordTable.anInt3695) {
                                             val i_81_ = (Class327.anIntArray4096!![i_80_ and 0x1f])
                                             for (i_82_ in (class46.anIntArray686!!).indices) {
                                                 if ((class46.anIntArray686!![i_82_]) == i_81_) {
@@ -2411,7 +2411,7 @@ class Client : GameAppletFrame() {
                                             }
                                         }
                                     }
-                                    class46.anInt725 = Class287.anInt3695
+                                    class46.anInt725 = TypedRecordTable.anInt3695
                                 }
                                 if (class46.anObjectArray751 != null && (DualMaterialContainer.anInt1631 > class46.anInt723)) {
                                     if (class46.anIntArray771 == null || (DualMaterialContainer.anInt1631 - class46.anInt723) > 32) {

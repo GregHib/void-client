@@ -1,5 +1,5 @@
 import TexGenMaterialPass.Companion.method2161
-import Class287.Companion.method2178
+import TypedRecordTable.Companion.method2178
 import Class301.method2278
 import Class309.Companion.method2312
 import Class56.Companion.method527

@@ -571,7 +571,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 val i_97_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(98.toByte(), this.anInt10291).anInt4503)
                 if (i_97_ != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_97_, 7)
-                    if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) Class287.method2178(this, 0, class17, i_89_ + 1012294835)
+                    if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTable.method2178(this, 0, class17, i_89_ + 1012294835)
                 }
             }
         } else {
@@ -588,7 +588,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 val i_98_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(103.toByte(), this.anInt10269).anInt4503)
                 if (i_98_ != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_98_, 7)
-                    if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) Class287.method2178(this, 0, class17, -128)
+                    if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTable.method2178(this, 0, class17, -128)
                 }
             }
         }

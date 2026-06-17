@@ -178,7 +178,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
                                         class182.anInt2455 = 1
                                         class182.anInt2451 = 0
                                         class182.anInt2445 = 0
-                                        if (!npc.aBoolean10309) Class287.method2178(npc, 0, class17, -75)
+                                        if (!npc.aBoolean10309) TypedRecordTable.method2178(npc, 0, class17, -75)
                                     } else if (i_14_ == 2) class182.anInt2445 = 0
                                 }
                                 if (class182 == null) {
@@ -190,7 +190,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
                                     class182.anInt2445 = 0
                                     class182.anInt2451 = 0
                                     class182.anInt2448 = i_12_
-                                    if (!npc.aBoolean10309) Class287.method2178(npc, 0, class17, -19)
+                                    if (!npc.aBoolean10309) TypedRecordTable.method2178(npc, 0, class17, -19)
                                 }
                             } else npc.aLoadProgressCountersArray10308!![i_13_] = null
                         }

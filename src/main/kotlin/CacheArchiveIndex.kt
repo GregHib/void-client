@@ -35,7 +35,7 @@ class CacheArchiveIndex {
         if (this.aClass356_1767 == null) return false
         if (bool != false) aClass356_1770 = null
         if (aClass356_1770 == null) method1071(true)
-        var class348_sub46 = (aClass356_1770!!.method3480(Class287.method2179(string, 109.toByte()), -6008) as? Class348_Sub46)
+        var class348_sub46 = (aClass356_1770!!.method3480(TypedRecordTable.method2179(string, 109.toByte()), -6008) as? Class348_Sub46)
         while (class348_sub46 != null) {
             if (class348_sub46.aString7111 == string) return true
             class348_sub46 = aClass356_1770!!.method3476(true) as? Class348_Sub46
@@ -79,7 +79,7 @@ class CacheArchiveIndex {
         var class348_sub50 = (aClass356_1767!!.method3484(0) as? Class348_Sub50)
         while (class348_sub50 != null) {
             val class348_sub46 = Class348_Sub46((class348_sub50.aString7211), (class348_sub50.aLong4291).toInt())
-            aClass356_1770!!.method3483(102.toByte(), Class287.method2179((class348_sub50.aString7211!!), 120.toByte()), class348_sub46)
+            aClass356_1770!!.method3483(102.toByte(), TypedRecordTable.method2179((class348_sub50.aString7211!!), 120.toByte()), class348_sub46)
             class348_sub50 = aClass356_1767!!.method3482(0) as? Class348_Sub50
         }
     }

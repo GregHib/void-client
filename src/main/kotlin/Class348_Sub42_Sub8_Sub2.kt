@@ -423,7 +423,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                         val i_51_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(103.toByte(), (npc.anInt10291)).anInt4503)
                                         if (i_51_ != -1) {
                                             val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_51_, 7)
-                                            if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, class17, -17)
+                                            if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) TypedRecordTable.method2178(npc, 0, class17, -17)
                                         }
                                     }
                                 } else {
@@ -440,7 +440,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                         val i_50_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(87.toByte(), (npc.anInt10269)).anInt4503)
                                         if (i_50_ != -1) {
                                             val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_50_, 7)
-                                            if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, class17, -44)
+                                            if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) TypedRecordTable.method2178(npc, 0, class17, -44)
                                         }
                                     }
                                 }
@@ -491,7 +491,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                         val i_58_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(45.toByte(), (player.anInt10291)).anInt4503)
                                         if (i_58_ != -1) {
                                             val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_58_, 7)
-                                            if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, class17, -120)
+                                            if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) TypedRecordTable.method2178(player, 0, class17, -120)
                                         }
                                     }
                                 } else {
@@ -509,7 +509,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                         val i_59_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(81.toByte(), (player.anInt10269)).anInt4503)
                                         if (i_59_ != -1) {
                                             val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_59_, 7)
-                                            if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, class17, -101)
+                                            if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) TypedRecordTable.method2178(player, 0, class17, -101)
                                         }
                                     }
                                 }
@@ -701,7 +701,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub3.aIntRange_6584 == Class361.aIntRange_4433) {
                 Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1314(80.toByte())
-                Class287.anInt3695 += 32
+                TypedRecordTable.anInt3695 += 32
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

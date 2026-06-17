@@ -268,7 +268,7 @@ class LinkedNodeListIterator {
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         val i_34_ = (-(i_4_ / 128) + (npc.x) / 128)
                                         val i_35_ = (-(i_3_ / 128) + (npc.y) / 128)
-                                        Class287.method2181(360000L, i_1_, -125, i_35_, i, class46, i_34_, (class302.anInt3831), var_aa)
+                                        TypedRecordTable.method2181(360000L, i_1_, -125, i_35_, i, class46, i_34_, (class302.anInt3831), var_aa)
                                     }
                                 }
                                 if (class302.anInt3840 == 2) {
@@ -276,14 +276,14 @@ class LinkedNodeListIterator {
                                     val i_37_ = (-(i_3_ / 128) + (class302.anInt3832 / 128))
                                     var l = (class302.anInt3837 shl 7).toLong()
                                     l *= l
-                                    Class287.method2181(l, i_1_, -112, i_37_, i, class46, i_36_, (class302.anInt3831), var_aa)
+                                    TypedRecordTable.method2181(l, i_1_, -112, i_37_, i, class46, i_36_, (class302.anInt3831), var_aa)
                                 }
                                 if ((class302.anInt3840 == 10) && class302.anInt3833 >= 0 && (class302.anInt3833 < (Class294.aPlayerArray5058)!!.size)) {
                                     val player = (Class294.aPlayerArray5058!![class302.anInt3833])
                                     if (player != null) {
                                         val i_38_ = (-(i_4_ / 128) + (player.x) / 128)
                                         val i_39_ = (-(i_3_ / 128) + (player.y) / 128)
-                                        Class287.method2181(360000L, i_1_, -121, i_39_, i, class46, i_38_, (class302.anInt3831), var_aa)
+                                        TypedRecordTable.method2181(360000L, i_1_, -121, i_39_, i, class46, i_38_, (class302.anInt3831), var_aa)
                                     }
                                 }
                             }

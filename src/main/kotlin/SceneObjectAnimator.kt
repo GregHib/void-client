@@ -266,7 +266,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
             }
             while (true) {
                 if (aWidgetDefinition_3057!!.anIntArray267!![anInt3084] >= i) break@while_76_
-                Class287.method2178(class318_sub1, anInt3084, aWidgetDefinition_3057, -99)
+                TypedRecordTable.method2178(class318_sub1, anInt3084, aWidgetDefinition_3057, -99)
                 i -= aWidgetDefinition_3057!!.anIntArray267!![anInt3084]
                 anInt3084++
                 if (aWidgetDefinition_3057!!.anIntArray237.size <= anInt3084) {

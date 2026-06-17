@@ -229,9 +229,9 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
         if (class348_sub42_sub16 !is Class348_Sub42_Sub16_Sub2) {
             try {
                 if (`is` == null || `is`.size <= 2) throw RuntimeException()
-                Class287.aCRC32_3691!!.reset()
-                Class287.aCRC32_3691!!.update(`is`, 0, -2 + `is`.size)
-                val i_11_ = Class287.aCRC32_3691!!.getValue().toInt()
+                TypedRecordTable.aCRC32_3691!!.reset()
+                TypedRecordTable.aCRC32_3691!!.update(`is`, 0, -2 + `is`.size)
+                val i_11_ = TypedRecordTable.aCRC32_3691!!.getValue().toInt()
                 if (aClass291_6342!!.anIntArray3729[i] != i_11_) throw RuntimeException()
                 if (aClass291_6342!!.aByteArrayArray3730 != null && (aClass291_6342!!.aByteArrayArray3730!![i] != null)) {
                     val is_12_ = aClass291_6342!!.aByteArrayArray3730!![i]!!
@@ -265,9 +265,9 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
         }
         try {
             if (`is` == null || `is`.size <= 2) throw RuntimeException()
-            Class287.aCRC32_3691!!.reset()
-            Class287.aCRC32_3691!!.update(`is`, 0, `is`.size + -2)
-            val i_15_ = Class287.aCRC32_3691!!.getValue().toInt()
+            TypedRecordTable.aCRC32_3691!!.reset()
+            TypedRecordTable.aCRC32_3691!!.update(`is`, 0, `is`.size + -2)
+            val i_15_ = TypedRecordTable.aCRC32_3691!!.getValue().toInt()
             if (i_15_ != aClass291_6342!!.anIntArray3729[i]) throw RuntimeException()
             if (aClass291_6342!!.aByteArrayArray3730 != null && (aClass291_6342!!.aByteArrayArray3730!![i] != null)) {
                 val is_16_ = aClass291_6342!!.aByteArrayArray3730!![i]!!

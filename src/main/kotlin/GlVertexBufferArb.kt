@@ -97,7 +97,7 @@ class GlVertexBufferArb internal constructor(class377: Class377, bool: Boolean) 
             while (i_1_ > i_3_) {
                 val c = string.get(i_3_)
                 if (method1849(c, i + 108)) {
-                    val c_4_ = Class287.method2184(c, -10072)
+                    val c_4_ = TypedRecordTable.method2184(c, -10072)
                     if (c_4_.code != 0) stringbuffer.append(c_4_)
                 }
                 i_3_++

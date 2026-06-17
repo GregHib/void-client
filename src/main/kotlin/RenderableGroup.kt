@@ -3,8 +3,8 @@ import Class62.method599
 /* Class195 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class RenderableGroup internal constructor(class287: Class287?, dualMaterialContainer: DualMaterialContainer?) : Interface16 {
-    private val aClass287_5006: Class287?
+class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, dualMaterialContainer: DualMaterialContainer?) : Interface16 {
+    private val aTypedRecordTable_5006: TypedRecordTable?
     private var aRenderer5010: Renderer? = null
     private var aBoolean5011 = false
     private val anInterface1Array5012: Array<Interface1?>
@@ -48,14 +48,14 @@ class RenderableGroup internal constructor(class287: Class287?, dualMaterialCont
     override fun method55(i: Byte): Int {
         anInt5009++
         if (i.toInt() != -58) method58(false, -122)
-        return aClass287_5006!!.anInt3687
+        return aTypedRecordTable_5006!!.anInt3687
     }
 
     override fun method56(i: Byte, l: Long): Boolean {
         try {
             anInt5005++
             if (i < 30) method1449(-81, 10, -115)
-            return l - -aClass287_5006!!.anInt3690.toLong() <= method599(-97)
+            return l - -aTypedRecordTable_5006!!.anInt3690.toLong() <= method599(-97)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, "qt.I(" + i + ',' + l + ')')
         }
@@ -77,15 +77,15 @@ class RenderableGroup internal constructor(class287: Class287?, dualMaterialCont
 
     init {
         try {
-            aClass287_5006 = class287
-            anInterface1Array5012 = arrayOfNulls<Interface1>((aClass287_5006!!.anInterface12Array3688).size)
+            aTypedRecordTable_5006 = typedRecordTable
+            anInterface1Array5012 = arrayOfNulls<Interface1>((aTypedRecordTable_5006!!.anInterface12Array3688).size)
             var i = 0
             while ((i < anInterface1Array5012.size)) {
-                anInterface1Array5012[i] = dualMaterialContainer!!.method1000(true, (aClass287_5006.anInterface12Array3688[i]))
+                anInterface1Array5012[i] = dualMaterialContainer!!.method1000(true, (aTypedRecordTable_5006.anInterface12Array3688[i]))
                 i++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qt.<init>(" + (if (class287 != null) "{...}" else "null") + ',' + (if (dualMaterialContainer != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qt.<init>(" + (if (typedRecordTable != null) "{...}" else "null") + ',' + (if (dualMaterialContainer != null) "{...}" else "null") + ')'))
         }
     }
 

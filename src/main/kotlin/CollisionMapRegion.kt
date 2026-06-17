@@ -12,13 +12,13 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
     private var anIntArrayArray1724: Array<IntArray?>?
     private val aBooleanArray1725: BooleanArray
 
-    fun method1043(i: Int, i_0_: Byte): Class287? {
+    fun method1043(i: Int, i_0_: Byte): TypedRecordTable? {
         anInt1721++
         val `is` = aClass45_1718!!.method410(-1860, 1, i)
         if (i_0_ < 12) return null
-        val class287 = Class287()
-        class287.method2183(Class348_Sub49(`is`), 21890)
-        return class287
+        val typedRecordTable = TypedRecordTable()
+        typedRecordTable.method2183(Class348_Sub49(`is`), 21890)
+        return typedRecordTable
     }
 
     fun method1044(i: Int): Boolean {

@@ -6,7 +6,10 @@ import kotlin.math.cos
 import kotlin.math.min
 import kotlin.math.sin
 
-class Class287 {
+/*
+ * Class287
+ */
+class TypedRecordTable {
     var anInt3687: Int = 0
     var anInterface12Array3688: Array<Interface12?> = emptyArray()
     var anInt3690: Int = 0

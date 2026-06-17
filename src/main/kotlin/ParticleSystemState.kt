@@ -199,7 +199,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
                                             class182.anInt2456 = 0
                                             class182.anInt2451 = 0
                                             class182.anInt2445 = 0
-                                            if (!player.aBoolean10309) Class287.method2178(player, 0, class17, -54)
+                                            if (!player.aBoolean10309) TypedRecordTable.method2178(player, 0, class17, -54)
                                         } else if (i_14_ == 2) class182.anInt2445 = 0
                                     } else if (class17.anInt239 >= ParticleEmitterNode.aClass87_191!!.method835((class182.anInt2454), 7).anInt239) {
                                         player.aLoadProgressCountersArray10308!![i_13_] = null
@@ -215,7 +215,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
                                     class182.anInt2456 = 0
                                     class182.anInt2454 = i_10_
                                     class182.anInt2451 = 0
-                                    if (!player.aBoolean10309) Class287.method2178(player, 0, class17, -123)
+                                    if (!player.aBoolean10309) TypedRecordTable.method2178(player, 0, class17, -123)
                                 }
                             } else player.aLoadProgressCountersArray10308!![i_13_] = null
                         }
