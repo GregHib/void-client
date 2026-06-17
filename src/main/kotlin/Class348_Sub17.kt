@@ -9,7 +9,7 @@ class Class348_Sub17 : Class348 {
     lateinit var aByteArray6792: ByteArray
     private var anIntArray6793: IntArray? = null
     var aShortArray6795: ShortArray? = null
-    var aClass23Array6796: Array<Class23?>? = null
+    var aSkeletalAnimFrameDataArray6796: Array<SkeletalAnimFrameData?>? = null
     var anInt6797: Int = 0
     var aByteArray6798: ByteArray? = null
     lateinit var aByteArray6799: ByteArray
@@ -45,7 +45,7 @@ class Class348_Sub17 : Class348 {
 
     fun method2933(i: Byte) {
         anInt6794++
-        if (i >= -65) this.aClass23Array6796 = null
+        if (i >= -65) this.aSkeletalAnimFrameDataArray6796 = null
         anIntArray6793 = null
     }
 
@@ -57,7 +57,7 @@ class Class348_Sub17 : Class348 {
         this.aByteArray6798 = ByteArray(128)
         this.aByteArray6799 = ByteArray(128)
         this.aClass348_Sub19_Sub1Array6800 = arrayOfNulls<Class348_Sub19_Sub1>(128)
-        this.aClass23Array6796 = arrayOfNulls<Class23>(128)
+        this.aSkeletalAnimFrameDataArray6796 = arrayOfNulls<SkeletalAnimFrameData>(128)
         anIntArray6793 = IntArray(128)
         val class348_sub49 = Class348_Sub49(`is`)
         var i: Int
@@ -120,10 +120,10 @@ class Class348_Sub17 : Class348 {
                 i_22_++
             }
         } else i_20_ = i_16_
-        val class23s: Array<Class23?> = arrayOfNulls<Class23>(i_20_)
-        for (i_24_ in class23s.indices) {
-            class23s[i_24_] = Class23()
-            val class23 = class23s[i_24_]!!
+        val skeletalAnimFrameData: Array<SkeletalAnimFrameData?> = arrayOfNulls<SkeletalAnimFrameData>(i_20_)
+        for (i_24_ in skeletalAnimFrameData.indices) {
+            skeletalAnimFrameData[i_24_] = SkeletalAnimFrameData()
+            val class23 = skeletalAnimFrameData[i_24_]!!
             var i_25_ = class348_sub49.readUnsignedByte(255)
             if (i_25_ > 0) class23.aByteArray348 = ByteArray(i_25_ * 2)
             i_25_ = class348_sub49.readUnsignedByte(255)
@@ -202,16 +202,16 @@ class Class348_Sub17 : Class348 {
         }
         i_35_ = 0
         i_36_ = 0
-        var class23: Class23? = null
+        var skeletalAnimFrameData: SkeletalAnimFrameData? = null
         for (i_43_ in 0..127) {
             if (anIntArray6793!![i_43_] != 0) {
                 if (i_35_ == 0) {
-                    class23 = class23s[is_19_[i_36_].toInt()]
+                    skeletalAnimFrameData = skeletalAnimFrameData[is_19_[i_36_].toInt()]
                     if (i_36_ < is_17_.size) i_35_ = is_17_[i_36_++].toInt()
                     else i_35_ = -1
                 }
                 i_35_--
-                this.aClass23Array6796!![i_43_] = class23
+                this.aSkeletalAnimFrameDataArray6796!![i_43_] = skeletalAnimFrameData
             }
         }
         i_35_ = 0
@@ -229,7 +229,7 @@ class Class348_Sub17 : Class348 {
         this.anInt6797 = class348_sub49.readUnsignedByte(255) - -1
         var i_46_ = 0
         while (i_20_ > i_46_) {
-            val class23_47_ = class23s[i_46_]!!
+            val class23_47_ = skeletalAnimFrameData[i_46_]!!
             if (class23_47_.aByteArray348 != null) {
                 var i_48_ = 1
                 while (i_48_ < class23_47_.aByteArray348!!.size) {
@@ -261,7 +261,7 @@ class Class348_Sub17 : Class348 {
             }
         }
         for (i_52_ in 0..<i_20_) {
-            val class23_53_ = class23s[i_52_]!!
+            val class23_53_ = skeletalAnimFrameData[i_52_]!!
             if (class23_53_.aByteArray344 != null) {
                 i_32_ = 0
                 var i_54_ = 2
@@ -274,7 +274,7 @@ class Class348_Sub17 : Class348 {
         }
         var i_55_ = 0
         while (i_20_ > i_55_) {
-            val class23_56_ = class23s[i_55_]!!
+            val class23_56_ = skeletalAnimFrameData[i_55_]!!
             if (class23_56_.aByteArray348 != null) {
                 i_32_ = 0
                 var i_57_ = 2
@@ -367,27 +367,27 @@ class Class348_Sub17 : Class348 {
         }
         var i_83_ = 0
         while (i_20_ > i_83_) {
-            class23s[i_83_]!!.anInt347 = class348_sub49.readUnsignedByte(255)
+            skeletalAnimFrameData[i_83_]!!.anInt347 = class348_sub49.readUnsignedByte(255)
             i_83_++
         }
         for (i_84_ in 0..<i_20_) {
-            val class23_85_ = class23s[i_84_]!!
+            val class23_85_ = skeletalAnimFrameData[i_84_]!!
             if (class23_85_.aByteArray348 != null) class23_85_.anInt345 = class348_sub49.readUnsignedByte(255)
             if (class23_85_.aByteArray344 != null) class23_85_.anInt349 = class348_sub49.readUnsignedByte(255)
             if (class23_85_.anInt347 > 0) class23_85_.anInt350 = class348_sub49.readUnsignedByte(255)
         }
         var i_86_ = 0
         while (i_20_ > i_86_) {
-            class23s[i_86_]!!.anInt352 = class348_sub49.readUnsignedByte(255)
+            skeletalAnimFrameData[i_86_]!!.anInt352 = class348_sub49.readUnsignedByte(255)
             i_86_++
         }
         for (i_87_ in 0..<i_20_) {
-            val class23_88_ = class23s[i_87_]!!
+            val class23_88_ = skeletalAnimFrameData[i_87_]!!
             if (class23_88_.anInt352 > 0) class23_88_.anInt353 = class348_sub49.readUnsignedByte(255)
         }
         var i_89_ = 0
         while (i_20_ > i_89_) {
-            val class23_90_ = class23s[i_89_]!!
+            val class23_90_ = skeletalAnimFrameData[i_89_]!!
             if (class23_90_.anInt353 > 0) class23_90_.anInt346 = class348_sub49.readUnsignedByte(255)
             i_89_++
         }

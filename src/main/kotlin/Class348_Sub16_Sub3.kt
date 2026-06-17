@@ -173,7 +173,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             anInt8934++
             var i_30_ = (class348_sub43!!.anInt7080 - -((class348_sub43.anInt7072 * class348_sub43.anInt7089) shr 12))
             i_30_ += (((anIntArray8937!![class348_sub43.anInt7067]) - 8192) * anIntArray8902!![(class348_sub43.anInt7067)]) shr 12
-            val class23 = class348_sub43.aClass23_7075!!
+            val class23 = class348_sub43.aSkeletalAnimFrameData_7075!!
             if (class23.anInt352 > 0 && (class23.anInt353 > 0 || (anIntArray8899[class348_sub43.anInt7067]) > 0)) {
                 var i_31_ = class23.anInt353 shl 2
                 val i_32_ = class23.anInt346 shl 1
@@ -303,7 +303,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 class348_sub43.anInt7089 = i_48_
             }
             class348_sub43.aClass348_Sub16_Sub5_7081!!.method2901(method2845(0, class348_sub43))
-            val class23 = class348_sub43.aClass23_7075!!
+            val class23 = class348_sub43.aSkeletalAnimFrameData_7075!!
             var bool = false
             class348_sub43.anInt7076 += class23.anInt352
             class348_sub43.anInt7083++
@@ -375,7 +375,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 class348_sub43.anInt7067 = i_51_
                 class348_sub43.aClass348_Sub17_7085 = class348_sub17
                 class348_sub43.aClass348_Sub19_Sub1_7077 = class348_sub19_sub1
-                class348_sub43.aClass23_7075 = (class348_sub17.aClass23Array6796!![i_50_])
+                class348_sub43.aSkeletalAnimFrameData_7075 = (class348_sub17.aSkeletalAnimFrameDataArray6796!![i_50_])
                 class348_sub43.anInt7088 = class348_sub17.aByteArray6798!![i_50_].toInt()
                 class348_sub43.anInt7071 = i_50_
                 class348_sub43.anInt7066 = 1024 + ((class348_sub17.aByteArray6799[i_50_]) * (class348_sub17.anInt6797 * (i_49_ * i_49_))) shr 11
@@ -658,7 +658,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             if (i >= -16) method2879(-95, 66, 110)
             anInt8920++
             if (anIntArray8925[class348_sub43!!.anInt7067] == 0) return 0
-            val class23 = class348_sub43.aClass23_7075!!
+            val class23 = class348_sub43.aSkeletalAnimFrameData_7075!!
             var i_79_ = ((anIntArray8953[class348_sub43.anInt7067] * (anIntArray8896[class348_sub43.anInt7067])) + 4096 shr 13)
             i_79_ = 16384 + i_79_ * i_79_ shr 15
             i_79_ = (16384 + i_79_ * class348_sub43.anInt7066 shr 15)

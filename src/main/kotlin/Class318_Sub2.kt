@@ -214,7 +214,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
 
         fun method2499(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Byte, i_40_: Int): Boolean {
             anInt6398++
-            if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false
+            if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             if (i_38_ == i_40_ && i_36_ == i_35_) {
                 if (!IndexedSprite.method164(i, i_38_, (-97).toByte(), i_36_)) return false

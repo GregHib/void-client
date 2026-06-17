@@ -70,7 +70,7 @@ class Class258_Sub1 : Class258 {
 
         @JvmStatic
         fun method1960(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, `is`: Array<Array<ByteArray?>?>?, is_15_: IntArray?, is_16_: IntArray?, is_17_: IntArray?, is_18_: IntArray?, is_19_: IntArray?, i_20_: Int, i_21_: Byte, i_22_: Int, i_23_: Int, bool: Boolean, bool_24_: Boolean, i_25_: Int, i_26_: Int, bool_27_: Boolean) {
-            Class23.aBoolean351 = true
+            SkeletalAnimFrameData.aBoolean351 = true
             Class318_Sub1_Sub3_Sub3.aBoolean10221 = Class9.aRenderer171!!.method3704() > 0
             Class348_Sub40_Sub17.aBoolean9242 = bool_24_
             Class239_Sub25.anInt6111 = i_12_ shr Class362.anInt4459
@@ -122,7 +122,7 @@ class Class258_Sub1 : Class258 {
                     RefCountedHandle.anIntArray2272!![(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084)] = i_30_
                     RefCountedHandle.anIntArray2272!![(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)] = i_31_
                 }
-                if (i_25_ >= 0) Class23.aBoolean351 = false
+                if (i_25_ >= 0) SkeletalAnimFrameData.aBoolean351 = false
                 else {
                     Player.anIntArray10566 = is_15_
                     Class250.anIntArray3220 = is_16_
@@ -142,7 +142,7 @@ class Class258_Sub1 : Class258 {
                 Class348_Sub34.anInt6974 = 0
                 Class27.anInt387 = Class318_Sub7.anInt6451
                 Class59_Sub1.anInt5293 = Class348_Sub41.anInt7054
-                Class23.aBoolean351 = false
+                SkeletalAnimFrameData.aBoolean351 = false
             }
             Class243.method1877(Class9.aRenderer171, -69)
             if (!Class71.aClass76_1208!!.aBoolean1283) {

@@ -74,7 +74,7 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
 
         fun method1110(i: Int, i_0_: Int, i_1_: Int, i_2_: Byte, i_3_: Int): Boolean {
             anInt4916++
-            if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false
+            if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             if (!IndexedSprite.method164(i_1_, i_3_, (-97).toByte(), i)) return false
             val i_4_ = i_3_ shl Class362.anInt4459

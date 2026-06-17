@@ -585,7 +585,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
 
         fun method3241(i: Int, i_7_: Byte, var_renderer: Renderer) {
             anInt9637++
-            if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) Class348_Sub42_Sub10.Companion.anInt9577 = 0
+            if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) Class348_Sub42_Sub10.Companion.anInt9577 = 0
             else {
                 if (Class348_Sub40_Sub26.aBoolean9352) ItemDefinition.aLong2789 = Class50_Sub4.aClass47_5262!!.method446(1)
                 Class42.anInt562 = 0

@@ -40,7 +40,7 @@ class InputStream_Sub1 : InputStream() {
         @JvmStatic
         fun method125(i: Int, i_0_: Int, i_1_: Int, class318_sub1_sub4: Class318_Sub1_Sub4?, i_2_: Byte): Boolean {
             anInt72++
-            if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false
+            if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             if (!IndexedSprite.method164(i_1_, i_0_, (-97).toByte(), i)) return false
             val i_3_ = i_0_ shl Class362.anInt4459

@@ -1,7 +1,7 @@
 /* Class23 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class23 {
+class SkeletalAnimFrameData {
     @JvmField
     var aByteArray344: ByteArray? = null
     @JvmField

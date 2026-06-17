@@ -52,7 +52,7 @@ class IndexedSprite : Sprite {
         @JvmStatic
         fun method164(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int): Boolean {
             anInt5195++
-            if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false
+            if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             val i_3_ = Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
             if (i_3_ == -Class234.anInt3049) return false

@@ -13,7 +13,7 @@ class Class348_Sub43 : Class348() {
     var anInt7071: Int = 0
     var anInt7072: Int = 0
     var anInt7074: Int = 0
-    var aClass23_7075: Class23? = null
+    var aSkeletalAnimFrameData_7075: SkeletalAnimFrameData? = null
     var anInt7076: Int = 0
     var aClass348_Sub19_Sub1_7077: Class348_Sub19_Sub1? = null
     var anInt7080: Int = 0
@@ -33,7 +33,7 @@ class Class348_Sub43 : Class348() {
         this.aClass348_Sub16_Sub5_7081 = null
         this.aClass348_Sub19_Sub1_7077 = null
         val i_10_ = 71 / ((i - -26) / 58)
-        this.aClass23_7075 = null
+        this.aSkeletalAnimFrameData_7075 = null
         this.aClass348_Sub17_7085 = null
     }
 
