@@ -9,7 +9,7 @@ class Class369_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, class341: Cla
     override fun method51(i: Byte): ProjectileFactory? {
         if (i <= 116) method51((-95).toByte())
         anInt8581++
-        return Class313.aProjectileFactory_3934
+        return SkyboxGradient.aProjectileFactory_3934
     }
 
     init {

@@ -2875,7 +2875,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub4_Sub1.anInt10087 = 0
             Class346_Sub1.anInt6527 = 0
             ObjectSpawnDecoder.anInt1804 = 0
-            Class313.anInt3933 = 0
+            SkyboxGradient.anInt3933 = 0
             OpenGlRenderer.anInt7700 = 0
             Class314.anInt3940 = 0
             SplashImageLoadable.anInt4696 = 0

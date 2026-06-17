@@ -1059,14 +1059,14 @@ object Class66 {
                 HudTabPanel.anInt2996 = anIntArray1149!![anInt1173 + 4]
                 Class348_Sub40_Sub16.anInt9231 = anIntArray1149!![anInt1173 + 5]
                 Class318_Sub1_Sub3_Sub3.anInt10257 = anIntArray1149!![anInt1173 + 6]
-                Class313.anInt3937 = anIntArray1149!![anInt1173 + 7]
+                SkyboxGradient.anInt3937 = anIntArray1149!![anInt1173 + 7]
                 Class79.anInt1387 = anIntArray1149!![anInt1173 + 8]
                 Class348_Sub42_Sub11.anInt9586 = anIntArray1149!![anInt1173 + 9]
                 Class5_Sub2.anInt8363 = anIntArray1149!![anInt1173 + 10]
                 CameraRotationStub.aClass45_322!!.method421(false, HudTabPanel.anInt2996)
                 CameraRotationStub.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)
                 CameraRotationStub.aClass45_322!!.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257)
-                CameraRotationStub.aClass45_322!!.method421(false, Class313.anInt3937)
+                CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937)
                 CameraRotationStub.aClass45_322!!.method421(false, Class79.anInt1387)
                 SpotAnimVector.aAbstractModelRenderer_2309 = null
                 AbstractMenuEntry.aAbstractModelRenderer_1706 = SpotAnimVector.aAbstractModelRenderer_2309

@@ -35,10 +35,10 @@ class Class348_Sub47 : Class348() {
             do {
                 try {
                     ObjectSpawnDecoder.anInt1803 = 0
-                    MapArchiveSource.anInt4797 = Class313.anInt3936
+                    MapArchiveSource.anInt4797 = SkyboxGradient.anInt3936
                     Class318_Sub1_Sub5.anInt8780 = 0
                     anInt7120++
-                    Class313.anInt3936 = 0
+                    SkyboxGradient.anInt3936 = 0
                     val l_1_ = method599(-53)
                     var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as Class318_Sub10?
                     if (i > 40) {
@@ -48,7 +48,7 @@ class Class348_Sub47 : Class348() {
                         }
                         if (!Class348_Sub16_Sub2.aBoolean8874 || l % 100L != 0L) break
                         println("Particle system count: " + GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1874(0) + ", running: " + Class318_Sub1_Sub5.anInt8780)
-                        println("Emitters: " + ObjectSpawnDecoder.anInt1803 + " Particles: " + Class313.anInt3936 + ". Time taken: " + (-l_1_ + method599(-112)) + "ms")
+                        println("Emitters: " + ObjectSpawnDecoder.anInt1803 + " Particles: " + SkyboxGradient.anInt3936 + ". Time taken: " + (-l_1_ + method599(-112)) + "ms")
                     }
                 } catch (runtimeexception: RuntimeException) {
                     throw method2929(runtimeexception, ("wm.A(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ')'))

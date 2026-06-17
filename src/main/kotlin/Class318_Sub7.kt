@@ -220,7 +220,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                     this.anInt6447++
                     class318_sub9_sub2_sub1 = (this.aDoublyLinkedNodeList_6433!!.method1878(122.toByte()) as Class318_Sub9_Sub2_Sub1?)
                 }
-                Class313.anInt3936 += this.anInt6447
+                SkyboxGradient.anInt3936 += this.anInt6447
                 if (i_9_ == 3) break
                 method2508(124)
             } catch (runtimeexception: RuntimeException) {

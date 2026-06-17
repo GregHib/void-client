@@ -11,7 +11,7 @@ import CompassSmoother.Companion.method2017
 import SocketFactory.Companion.method2049
 import MaterialPass.Companion.method2138
 import WaterMaterialPass.Companion.method2148
-import Class313.method2334
+import SkyboxGradient.method2334
 import Class318_Sub1_Sub2.Companion.method2405
 import Class324.Companion.method2570
 import Class34.Companion.method349

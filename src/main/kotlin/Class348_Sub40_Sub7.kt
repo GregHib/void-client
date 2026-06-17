@@ -293,7 +293,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                         i_38_ += 12
                                                     }
                                                 }
-                                                if (Class313.anInt3936 > 0) WorldMapRenderer.aClass324_4684!!.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1)
+                                                if (SkyboxGradient.anInt3936 > 0) WorldMapRenderer.aClass324_4684!!.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + SkyboxGradient.anInt3936), i_38_, -256, i_37_, -121, -1)
                                                 i_38_ += 12
                                                 if (GlowPostProcessor.aBoolean2514) {
                                                     WorldMapRenderer.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)

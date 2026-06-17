@@ -3,7 +3,7 @@ import WaterMaterialPass.Companion.method2148
 /* Class313 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class313 {
+object SkyboxGradient {
     var anInt3933: Int = 0
     var aProjectileFactory_3934: ProjectileFactory? = ProjectileFactory(2, 2)
     var aFloat3935: Float = 0f

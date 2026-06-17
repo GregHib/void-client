@@ -161,8 +161,8 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
         @JvmStatic
         fun method826(i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, var_renderer: Renderer) {
-            if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9658 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aClass45_322!!.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257) && CameraRotationStub.aClass45_322!!.method421(false, Class313.anInt3937) && CameraRotationStub.aClass45_322!!.method421(false, Class79.Companion.anInt1387)) {
-                val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, Class313.anInt3937, 0)
+            if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9658 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aClass45_322!!.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257) && CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aClass45_322!!.method421(false, Class79.Companion.anInt1387)) {
+                val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, SkyboxGradient.anInt3937, 0)
                 Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = var_renderer.method3691(spriteImage, true)
                 spriteImage!!.method1518()
                 ConfigVarProgress.aAbstractModelRenderer_4808 = var_renderer.method3691(spriteImage, true)

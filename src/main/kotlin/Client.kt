@@ -236,7 +236,7 @@ import ConfigVarProgress.Companion.method2310
 import ItemModelDefinition.Companion.method328
 import ResourceLoaderThread.Companion.method2317
 import WidgetRedrawTracker.Companion.method2331
-import Class313.method2333
+import SkyboxGradient.method2333
 import Class314_Sub1.Companion.method2344
 import Class315.Companion.method2354
 import Class316.Companion.method2363
