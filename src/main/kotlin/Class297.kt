@@ -1,5 +1,5 @@
-import Class201.method1464
-import Class201.method1466
+import FileStoreLocator.method1464
+import FileStoreLocator.method1466
 import Class62.method599
 import java.awt.*
 import java.awt.datatransfer.Transferable
@@ -380,7 +380,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                 /* empty */
             }
         }
-        Class201.method1465((-121).toByte(), Companion.aString3789, anInt3792)
+        FileStoreLocator.method1465((-121).toByte(), Companion.aString3789, anInt3792)
         if (this.aBoolean3777) {
             this.aClass234_3788 = Class234(method1464(0, anInt3792, "random.dat", null), "rw", 25L)
             this.aClass234_3785 = Class234(method1466(-2, "main_file_cache.dat2"), "rw", 209715200L)

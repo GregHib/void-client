@@ -192,7 +192,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             val `object`: Any? = null
             val file: File?
             try {
-                file = Class201.method1466(i + -7470, string_52_)
+                file = FileStoreLocator.method1466(i + -7470, string_52_)
             } catch (runtimeexception: RuntimeException) {
                 if (Loader.trace) {
                     runtimeexception.printStackTrace()

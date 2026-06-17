@@ -2,7 +2,10 @@ import java.io.File
 import java.io.RandomAccessFile
 import java.util.*
 
-object Class201 {
+/*
+ * Class201
+ */
+object FileStoreLocator {
     private var anInt2641 = 0
     private val aHashtable2642: Hashtable<Any?, Any?>
     private var aString2643: String? = null
