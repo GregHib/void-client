@@ -405,7 +405,7 @@ import HslColorTableNode.Companion.method2768
 import RegionTileNode.Companion.method2773
 import FacingDirectionNode.Companion.method2774
 import CharacterRenderState.Companion.method2780
-import Class349.Companion.method3450
+import FormantSynthFilter.Companion.method3450
 import Class351.Companion.method3457
 import Class352.Companion.method3458
 import Class353.Companion.method3462

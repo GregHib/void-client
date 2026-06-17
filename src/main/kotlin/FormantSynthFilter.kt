@@ -4,7 +4,7 @@ import kotlin.math.pow
 /* Class349 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class349 {
+class FormantSynthFilter {
     var anIntArray4299: IntArray = IntArray(2)
     private val anIntArrayArrayArray4300: Array<Array<IntArray?>?>
     private val anIntArrayArrayArray4302: Array<Array<IntArray?>?>

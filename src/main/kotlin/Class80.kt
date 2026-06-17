@@ -13,7 +13,7 @@ class Class80 {
     private var aEnvelopeInterpolator_1415: EnvelopeInterpolator? = null
     private var aEnvelopeInterpolator_1417: EnvelopeInterpolator? = null
     private var aEnvelopeInterpolator_1418: EnvelopeInterpolator? = null
-    private var aClass349_1419: Class349? = null
+    private var aFormantSynthFilter_1419: FormantSynthFilter? = null
     private var aEnvelopeInterpolator_1420: EnvelopeInterpolator? = null
     @JvmField
     var anInt1421: Int = 500
@@ -73,9 +73,9 @@ class Class80 {
         anInt1422 = class348_sub49.readSmart(-122)
         this.anInt1421 = class348_sub49.readUnsignedShort(842397944)
         this.anInt1407 = class348_sub49.readUnsignedShort(842397944)
-        aClass349_1419 = Class349()
+        aFormantSynthFilter_1419 = FormantSynthFilter()
         aEnvelopeInterpolator_1417 = EnvelopeInterpolator()
-        aClass349_1419!!.method3446(class348_sub49, aEnvelopeInterpolator_1417!!)
+        aFormantSynthFilter_1419!!.method3446(class348_sub49, aEnvelopeInterpolator_1417!!)
     }
 
     fun method809(i: Int, i_4_: Int): IntArray? {
@@ -160,19 +160,19 @@ class Class80 {
             val i_27_ = (anInt1427.toDouble() * d).toInt()
             for (i_28_ in i_27_..<i) anIntArray1409!![i_28_] += anIntArray1409!![i_28_ - i_27_] * anInt1422 / 100
         }
-        if (aClass349_1419!!.anIntArray4299[0] > 0 || aClass349_1419!!.anIntArray4299[1] > 0) {
+        if (aFormantSynthFilter_1419!!.anIntArray4299[0] > 0 || aFormantSynthFilter_1419!!.anIntArray4299[1] > 0) {
             aEnvelopeInterpolator_1417!!.method1453()
             var i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
-            var i_30_ = aClass349_1419!!.method3451(0, i_29_.toFloat() / 65536.0f)
-            var i_31_ = aClass349_1419!!.method3451(1, i_29_.toFloat() / 65536.0f)
+            var i_30_ = aFormantSynthFilter_1419!!.method3451(0, i_29_.toFloat() / 65536.0f)
+            var i_31_ = aFormantSynthFilter_1419!!.method3451(1, i_29_.toFloat() / 65536.0f)
             if (i >= i_30_ + i_31_) {
                 var i_32_ = 0
                 var i_33_ = i_31_
                 if (i_33_ > i - i_30_) i_33_ = i - i_30_
                 while ( /**/i_32_ < i_33_) {
-                    var i_34_ = ((anIntArray1409!![i_32_ + i_30_].toLong() * Class349.anInt4303.toLong()) shr 16).toInt()
-                    for (i_35_ in 0..<i_30_) i_34_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_35_]).toLong() * (Class349.anIntArrayArray4301!![0]!![i_35_]).toLong()) shr 16).toInt()
-                    for (i_36_ in 0..<i_32_) i_34_ -= ((anIntArray1409!![i_32_ - 1 - i_36_].toLong() * (Class349.anIntArrayArray4301!![1]!![i_36_]).toLong()) shr 16).toInt()
+                    var i_34_ = ((anIntArray1409!![i_32_ + i_30_].toLong() * FormantSynthFilter.anInt4303.toLong()) shr 16).toInt()
+                    for (i_35_ in 0..<i_30_) i_34_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_35_]).toLong() * (FormantSynthFilter.anIntArrayArray4301!![0]!![i_35_]).toLong()) shr 16).toInt()
+                    for (i_36_ in 0..<i_32_) i_34_ -= ((anIntArray1409!![i_32_ - 1 - i_36_].toLong() * (FormantSynthFilter.anIntArrayArray4301!![1]!![i_36_]).toLong()) shr 16).toInt()
                     anIntArray1409!![i_32_] = i_34_
                     i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
                     i_32_++
@@ -181,22 +181,22 @@ class Class80 {
                 while (true) {
                     if (i_33_ > i - i_30_) i_33_ = i - i_30_
                     while ( /**/i_32_ < i_33_) {
-                        var i_37_ = ((anIntArray1409!![i_32_ + i_30_].toLong() * Class349.anInt4303.toLong()) shr 16).toInt()
-                        for (i_38_ in 0..<i_30_) i_37_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_38_]).toLong() * (Class349.anIntArrayArray4301!![0]!![i_38_]).toLong()) shr 16).toInt()
-                        for (i_39_ in 0..<i_31_) i_37_ -= (((anIntArray1409!![i_32_ - 1 - i_39_]).toLong() * (Class349.anIntArrayArray4301!![1]!![i_39_]).toLong()) shr 16).toInt()
+                        var i_37_ = ((anIntArray1409!![i_32_ + i_30_].toLong() * FormantSynthFilter.anInt4303.toLong()) shr 16).toInt()
+                        for (i_38_ in 0..<i_30_) i_37_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_38_]).toLong() * (FormantSynthFilter.anIntArrayArray4301!![0]!![i_38_]).toLong()) shr 16).toInt()
+                        for (i_39_ in 0..<i_31_) i_37_ -= (((anIntArray1409!![i_32_ - 1 - i_39_]).toLong() * (FormantSynthFilter.anIntArrayArray4301!![1]!![i_39_]).toLong()) shr 16).toInt()
                         anIntArray1409!![i_32_] = i_37_
                         i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
                         i_32_++
                     }
                     if (i_32_ >= i - i_30_) break
-                    i_30_ = aClass349_1419!!.method3451(0, i_29_.toFloat() / 65536.0f)
-                    i_31_ = aClass349_1419!!.method3451(1, i_29_.toFloat() / 65536.0f)
+                    i_30_ = aFormantSynthFilter_1419!!.method3451(0, i_29_.toFloat() / 65536.0f)
+                    i_31_ = aFormantSynthFilter_1419!!.method3451(1, i_29_.toFloat() / 65536.0f)
                     i_33_ += 128
                 }
                 while ( /**/i_32_ < i) {
                     var i_40_ = 0
-                    for (i_41_ in i_32_ + i_30_ - i..<i_30_) i_40_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_41_]).toLong() * (Class349.anIntArrayArray4301!![0]!![i_41_]).toLong()) shr 16).toInt()
-                    for (i_42_ in 0..<i_31_) i_40_ -= ((anIntArray1409!![i_32_ - 1 - i_42_].toLong() * (Class349.anIntArrayArray4301!![1]!![i_42_]).toLong()) shr 16).toInt()
+                    for (i_41_ in i_32_ + i_30_ - i..<i_30_) i_40_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_41_]).toLong() * (FormantSynthFilter.anIntArrayArray4301!![0]!![i_41_]).toLong()) shr 16).toInt()
+                    for (i_42_ in 0..<i_31_) i_40_ -= ((anIntArray1409!![i_32_ - 1 - i_42_].toLong() * (FormantSynthFilter.anIntArrayArray4301!![1]!![i_42_]).toLong()) shr 16).toInt()
                     anIntArray1409!![i_32_] = i_40_
                     i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
                     i_32_++
