@@ -351,7 +351,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         val i_28_ = -85 / ((41 - i) / 54)
         anInt7948++
         anInterface5_Impl1_8203!!.method20(24, 125.toByte(), 12)
-        aModelBatchBase_8205 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!))))
+        aModelBatchBase_8205 = method3812(0, (arrayOf<Class58>(Class58(SpriteMaskShape.aSpriteMaskShape_4073!!))))
     }
 
     fun method3817(i: Int, i_29_: Int) {
@@ -620,7 +620,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (anInterface5_Impl1_8193!!.method18(6331)) break
             }
         }
-        aModelBatchBase_8197 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4078)))))
+        aModelBatchBase_8197 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078, SpriteMaskShape.aSpriteMaskShape_4078)))))
     }
 
     abstract fun method3829(class70: Class70?, i: Int, i_56_: Byte, bool: Boolean)
@@ -1842,7 +1842,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     if (anInterface5_Impl1_8201!!.method18(6331)) break
                 }
             }
-            aModelBatchBase_8190 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!))))
+            aModelBatchBase_8190 = method3812(0, (arrayOf<Class58>(Class58(SpriteMaskShape.aSpriteMaskShape_4073!!))))
         }
     }
 
@@ -2170,10 +2170,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aClass348_Sub1Array8132 = arrayOfNulls<Class348_Sub1>(-2 + this.anInt8138)
         this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, Class68.aClass68_1183, GroundItemRenderState.aTextureFormatInfo_1662)
         method3651(ArbVertexProgram(262144))
-        this.aModelBatchBase_8204 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078)))))
-        this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076)))))
-        this.aModelBatchBase_8208 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!), Class58(Class325.aClass325_4076!!), Class58(Class325.aClass325_4078!!), Class58(Class325.aClass325_4075!!))))
-        this.aModelBatchBase_8191 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!), Class58(Class325.aClass325_4076!!), Class58(Class325.aClass325_4078!!))))
+        this.aModelBatchBase_8204 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078)))))
+        this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<Class58>(Class58(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4076)))))
+        this.aModelBatchBase_8208 = method3812(0, (arrayOf<Class58>(Class58(SpriteMaskShape.aSpriteMaskShape_4073!!), Class58(SpriteMaskShape.aSpriteMaskShape_4076!!), Class58(SpriteMaskShape.aSpriteMaskShape_4078!!), Class58(SpriteMaskShape.aSpriteMaskShape_4075!!))))
+        this.aModelBatchBase_8191 = method3812(0, (arrayOf<Class58>(Class58(SpriteMaskShape.aSpriteMaskShape_4073!!), Class58(SpriteMaskShape.aSpriteMaskShape_4076!!), Class58(SpriteMaskShape.aSpriteMaskShape_4078!!))))
         this.aClass64_Sub2_8206 = Class64_Sub2(this, 0, 0, false, false)
         this.aClass64_Sub2_8198 = Class64_Sub2(this, 0, 0, true, true)
         this.aClass64_Sub2_8192 = Class64_Sub2(this, 0, 0, false, false)

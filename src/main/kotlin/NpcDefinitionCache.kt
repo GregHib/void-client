@@ -222,7 +222,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                             var class348_sub42_sub12 = (linkedListIterator.method1240(98) as Class348_Sub42_Sub12?)
                             while (class348_sub42_sub12 != null) {
                                 if (i_29_ == i_25_) {
-                                    Class325.method2599(126.toByte(), class348_sub42_sub12, i_24_, i_23_)
+                                    SpriteMaskShape.method2599(126.toByte(), class348_sub42_sub12, i_24_, i_23_)
                                     break
                                 }
                                 i_29_++
@@ -254,7 +254,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                                 var class348_sub42_sub13 = (linkedListIterator.method1240(18) as Class348_Sub42_Sub13?)
                                 while (class348_sub42_sub13 != null) {
                                     if (i_34_ == i_30_) {
-                                        Class325.method2599(122.toByte(), ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?), i_24_, i_23_)
+                                        SpriteMaskShape.method2599(122.toByte(), ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?), i_24_, i_23_)
                                         method2146(118.toByte())
                                         break
                                     }
@@ -281,7 +281,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                                 var class348_sub42_sub12 = (widgetRedrawTracker.method2327((-53).toByte()) as Class348_Sub42_Sub12?)
                                 while (class348_sub42_sub12 != null) {
                                     if (i_35_ == i_39_) {
-                                        Class325.method2599(107.toByte(), class348_sub42_sub12, i_24_, i_23_)
+                                        SpriteMaskShape.method2599(107.toByte(), class348_sub42_sub12, i_24_, i_23_)
                                         break
                                     }
                                     i_39_++

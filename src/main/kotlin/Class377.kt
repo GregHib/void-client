@@ -991,25 +991,25 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 var i_80_ = 0
                 while ((i_80_ < class58.method538((-119).toByte()))) {
                     val class325 = class58.method537(i_80_, -119)!!
-                    if (class325 == Class325.aClass325_4073) {
+                    if (class325 == SpriteMaskShape.aSpriteMaskShape_4073) {
                         glVertexPointer(3, 5126, i_79_, i_78_.toLong() + l)
                         bool_76_ = true
-                    } else if (Class325.aClass325_4075 == class325) {
+                    } else if (SpriteMaskShape.aSpriteMaskShape_4075 == class325) {
                         bool_75_ = true
                         glNormalPointer(5126, i_79_, i_78_.toLong() + l)
-                    } else if (class325 == Class325.aClass325_4076) {
+                    } else if (class325 == SpriteMaskShape.aSpriteMaskShape_4076) {
                         glColorPointer(4, 5121, i_79_, i_78_.toLong() + l)
                         bool = true
-                    } else if (Class325.aClass325_4077 == class325) {
+                    } else if (SpriteMaskShape.aSpriteMaskShape_4077 == class325) {
                         glClientActiveTexture(33984 + i_74_++)
                         glTexCoordPointer(1, 5126, i_79_, i_78_.toLong() + l)
-                    } else if (Class325.aClass325_4078 == class325) {
+                    } else if (SpriteMaskShape.aSpriteMaskShape_4078 == class325) {
                         glClientActiveTexture(i_74_++ + 33984)
                         glTexCoordPointer(2, 5126, i_79_, i_78_.toLong() + l)
-                    } else if (Class325.aClass325_4079 == class325) {
+                    } else if (SpriteMaskShape.aSpriteMaskShape_4079 == class325) {
                         glClientActiveTexture(i_74_++ + 33984)
                         glTexCoordPointer(3, 5126, i_79_, i_78_.toLong() + l)
-                    } else if (class325 == Class325.aClass325_4080) {
+                    } else if (class325 == SpriteMaskShape.aSpriteMaskShape_4080) {
                         glClientActiveTexture(33984 - -i_74_++)
                         glTexCoordPointer(4, 5126, i_79_, l + i_78_.toLong())
                     }

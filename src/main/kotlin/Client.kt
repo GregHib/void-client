@@ -266,7 +266,7 @@ import ImageFrameCache.Companion.method2555
 import SystemFontGlyphs.Companion.method2562
 import Font.Companion.method2570
 import Font.Companion.method2572
-import Class325.Companion.method2597
+import SpriteMaskShape.Companion.method2597
 import Class328_Sub1.Companion.method2610
 import Class328_Sub1_Sub1.method2611
 import Class328_Sub2.Companion.method2613

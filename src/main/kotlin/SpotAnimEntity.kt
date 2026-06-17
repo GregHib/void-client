@@ -372,7 +372,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             Class75.aFloat1249 = Class75.aFloat1247
                         }
                         Class75.anInt1255 = Class75.aFloat1247.toInt() shr 1
-                        Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, 12871)
+                        Class75.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(Class75.anInt1255, 12871)
                         Class348_Sub15.method2811(false)
                         method760()
                         RegionSceneLoader.aNodeDeque_3705 = NodeDeque()

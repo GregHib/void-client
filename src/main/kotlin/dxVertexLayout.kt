@@ -14,13 +14,13 @@ class dxVertexLayout internal constructor(class378: Class378, class58s: Array<Cl
             var i_2_ = 0
             while ((i_2_ < class58.method538((-126).toByte()))) {
                 val class325 = class58.method537(i_2_, 126)!!
-                if (Class325.aClass325_4073 == class325) vertexelementcollection.addElement(i_0_, 2, 0, 0, 0, i_1_)
-                else if (class325 == Class325.aClass325_4075) vertexelementcollection.addElement(i_0_, 2, 0, 3, 0, i_1_)
-                else if (Class325.aClass325_4076 != class325) {
-                    if (class325 == Class325.aClass325_4077) vertexelementcollection.addElement(i_0_, 0, 0, 5, i++, i_1_)
-                    else if (Class325.aClass325_4078 == class325) vertexelementcollection.addElement(i_0_, 1, 0, 5, i++, i_1_)
-                    else if (Class325.aClass325_4079 != class325) {
-                        if (Class325.aClass325_4080 == class325) vertexelementcollection.addElement(i_0_, 3, 0, 5, i++, i_1_)
+                if (SpriteMaskShape.aSpriteMaskShape_4073 == class325) vertexelementcollection.addElement(i_0_, 2, 0, 0, 0, i_1_)
+                else if (class325 == SpriteMaskShape.aSpriteMaskShape_4075) vertexelementcollection.addElement(i_0_, 2, 0, 3, 0, i_1_)
+                else if (SpriteMaskShape.aSpriteMaskShape_4076 != class325) {
+                    if (class325 == SpriteMaskShape.aSpriteMaskShape_4077) vertexelementcollection.addElement(i_0_, 0, 0, 5, i++, i_1_)
+                    else if (SpriteMaskShape.aSpriteMaskShape_4078 == class325) vertexelementcollection.addElement(i_0_, 1, 0, 5, i++, i_1_)
+                    else if (SpriteMaskShape.aSpriteMaskShape_4079 != class325) {
+                        if (SpriteMaskShape.aSpriteMaskShape_4080 == class325) vertexelementcollection.addElement(i_0_, 3, 0, 5, i++, i_1_)
                     } else vertexelementcollection.addElement(i_0_, 2, 0, 5, i++, i_1_)
                 } else vertexelementcollection.addElement(i_0_, 4, 0, 10, 0, i_1_)
                 i_1_ += class325.anInt4069

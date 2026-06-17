@@ -10,7 +10,7 @@ import Class65.Companion.method696
 /* Class325 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
+class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?) {
     var anInt4069: Int = 0
     var anInt4070: Int = 0
     private val aClass68_4071: Class68?
@@ -36,14 +36,14 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
         var anInt4066: Int = 0
         var anInt4067: Int = 0
         var anInt4068: Int = 0
-        var aClass325_4073: Class325? = Class325(0, 3, Class68.aClass68_1187)
+        var aSpriteMaskShape_4073: SpriteMaskShape? = SpriteMaskShape(0, 3, Class68.aClass68_1187)
         var anInt4074: Int = 0
-        var aClass325_4075: Class325? = Class325(1, 3, Class68.aClass68_1187)
-        var aClass325_4076: Class325? = Class325(2, 4, Class68.aClass68_1183)
-        var aClass325_4077: Class325? = Class325(3, 1, Class68.aClass68_1187)
-        var aClass325_4078: Class325? = Class325(4, 2, Class68.aClass68_1187)
-        var aClass325_4079: Class325? = Class325(5, 3, Class68.aClass68_1187)
-        var aClass325_4080: Class325? = Class325(6, 4, Class68.aClass68_1187)
+        var aSpriteMaskShape_4075: SpriteMaskShape? = SpriteMaskShape(1, 3, Class68.aClass68_1187)
+        var aSpriteMaskShape_4076: SpriteMaskShape? = SpriteMaskShape(2, 4, Class68.aClass68_1183)
+        var aSpriteMaskShape_4077: SpriteMaskShape? = SpriteMaskShape(3, 1, Class68.aClass68_1187)
+        var aSpriteMaskShape_4078: SpriteMaskShape? = SpriteMaskShape(4, 2, Class68.aClass68_1187)
+        var aSpriteMaskShape_4079: SpriteMaskShape? = SpriteMaskShape(5, 3, Class68.aClass68_1187)
+        var aSpriteMaskShape_4080: SpriteMaskShape? = SpriteMaskShape(6, 4, Class68.aClass68_1187)
         var anInt4081: Int = method2253(16, 119)
         @JvmField
         var aRectangleRegion_4082: RectangleRegion? = RectangleRegion(8, 0, 4, 1)
@@ -85,7 +85,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                 }
                 i_9_++
             }
-            if (i_0_ != 12871) aClass325_4078 = null
+            if (i_0_ != 12871) aSpriteMaskShape_4078 = null
             `is`[0]!![2] = is_3_
             is_3_ = ByteArray(i_1_ * i_2_)
             i_4_ = 0
@@ -387,19 +387,19 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
 
         @JvmStatic
         fun method2597(i: Int) {
-            aClass325_4073 = null
-            aClass325_4080 = null
-            aClass325_4078 = null
+            aSpriteMaskShape_4073 = null
+            aSpriteMaskShape_4080 = null
+            aSpriteMaskShape_4078 = null
             aRectangleRegion_4082 = null
-            aClass325_4077 = null
-            aClass325_4079 = null
+            aSpriteMaskShape_4077 = null
+            aSpriteMaskShape_4079 = null
             if (i == -27327) {
-                aClass325_4076 = null
-                aClass325_4075 = null
+                aSpriteMaskShape_4076 = null
+                aSpriteMaskShape_4075 = null
             }
         }
 
-        fun method2598(i: Int, i_69_: Int): Class325? {
+        fun method2598(i: Int, i_69_: Int): SpriteMaskShape? {
             anInt4074++
             val i_70_ = -44 / ((-47 - i_69_) / 45)
             val i_71_ = i
@@ -424,18 +424,18 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                             } else break
                                             break@while_114_
                                         }
-                                    } else return aClass325_4073
-                                    return aClass325_4075
+                                    } else return aSpriteMaskShape_4073
+                                    return aSpriteMaskShape_4075
                                 } while (false)
-                                return aClass325_4076
+                                return aSpriteMaskShape_4076
                             } while (false)
-                            return aClass325_4077
+                            return aSpriteMaskShape_4077
                         } while (false)
-                        return aClass325_4078
+                        return aSpriteMaskShape_4078
                     } while (false)
-                    return aClass325_4079
+                    return aSpriteMaskShape_4079
                 } while (false)
-                return aClass325_4080
+                return aSpriteMaskShape_4080
             } while (false)
             return null
         }
