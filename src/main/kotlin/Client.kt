@@ -114,7 +114,7 @@ import CameraRotationStub.Companion.method288
 import VorbisFloorDecoder.Companion.method1536
 import SoundEnvelope.Companion.method1543
 import CompressedBlockDecoder.method1551
-import Class213.Companion.method1564
+import ItemDefinition.Companion.method1564
 import Class217.Companion.method1585
 import Class218.Companion.method1594
 import Class219.Companion.method1600

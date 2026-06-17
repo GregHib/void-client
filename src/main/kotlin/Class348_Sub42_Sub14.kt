@@ -587,7 +587,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
             anInt9637++
             if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) Class348_Sub42_Sub10.Companion.anInt9577 = 0
             else {
-                if (Class348_Sub40_Sub26.aBoolean9352) Class213.aLong2789 = Class50_Sub4.aClass47_5262!!.method446(1)
+                if (Class348_Sub40_Sub26.aBoolean9352) ItemDefinition.aLong2789 = Class50_Sub4.aClass47_5262!!.method446(1)
                 Class42.anInt562 = 0
                 Class348_Sub23_Sub2.anInt9039 = 0
                 Class348_Sub40_Sub4.anInt9112 = 0
@@ -637,7 +637,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                     }
                     Class350.anInt4319 = 2
                 }
-                if (Class348_Sub40_Sub26.aBoolean9352) Class286_Sub6.aLong6276 = (Class50_Sub4.aClass47_5262!!.method446(1) + -Class213.aLong2789)
+                if (Class348_Sub40_Sub26.aBoolean9352) Class286_Sub6.aLong6276 = (Class50_Sub4.aClass47_5262!!.method446(1) + -ItemDefinition.aLong2789)
             }
         }
 

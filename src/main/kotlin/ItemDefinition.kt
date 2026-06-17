@@ -3,7 +3,7 @@ import Class33.Companion.method340
 /* Class213 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class213 {
+class ItemDefinition {
     var anInt2752: Int = -1
     private var anInt2753 = 0
     @JvmField
@@ -128,51 +128,51 @@ class Class213 {
         return bool_8_
     }
 
-    fun method1556(class213_9_: Class213?, i: Byte, class213_10_: Class213?) {
+    fun method1556(itemDefinition_9_: ItemDefinition?, i: Byte, itemDefinition_10_: ItemDefinition?) {
         try {
-            anInt2808 = class213_9_!!.anInt2808
-            this.anInt2779 = class213_10_!!.anInt2779
+            anInt2808 = itemDefinition_9_!!.anInt2808
+            this.anInt2779 = itemDefinition_10_!!.anInt2779
             this.anInt2819 = 0
-            aShortArray2785 = class213_9_.aShortArray2785
-            this.anInt2788 = class213_9_.anInt2788
-            this.anInt2781 = class213_10_.anInt2781
-            this.aStringArray2811 = class213_9_.aStringArray2811
-            anInt2797 = class213_9_.anInt2797
-            aByteArray2821 = class213_9_.aByteArray2821
-            aShortArray2771 = class213_9_.aShortArray2771
-            this.aString2795 = class213_9_.aString2795
-            anInt2756 = class213_10_.anInt2756
-            anInt2770 = class213_9_.anInt2770
-            aShortArray2777 = class213_9_.aShortArray2777
-            this.anInt2815 = class213_9_.anInt2815
-            anInt2822 = class213_9_.anInt2822
-            anInt2804 = class213_9_.anInt2804
-            this.anInt2825 = class213_10_.anInt2825
-            anInt2767 = class213_9_.anInt2767
-            aShortArray2801 = class213_9_.aShortArray2801
-            this.aBoolean2783 = class213_9_.aBoolean2783
-            this.anInt2810 = class213_10_.anInt2810
+            aShortArray2785 = itemDefinition_9_.aShortArray2785
+            this.anInt2788 = itemDefinition_9_.anInt2788
+            this.anInt2781 = itemDefinition_10_.anInt2781
+            this.aStringArray2811 = itemDefinition_9_.aStringArray2811
+            anInt2797 = itemDefinition_9_.anInt2797
+            aByteArray2821 = itemDefinition_9_.aByteArray2821
+            aShortArray2771 = itemDefinition_9_.aShortArray2771
+            this.aString2795 = itemDefinition_9_.aString2795
+            anInt2756 = itemDefinition_10_.anInt2756
+            anInt2770 = itemDefinition_9_.anInt2770
+            aShortArray2777 = itemDefinition_9_.aShortArray2777
+            this.anInt2815 = itemDefinition_9_.anInt2815
+            anInt2822 = itemDefinition_9_.anInt2822
+            anInt2804 = itemDefinition_9_.anInt2804
+            this.anInt2825 = itemDefinition_10_.anInt2825
+            anInt2767 = itemDefinition_9_.anInt2767
+            aShortArray2801 = itemDefinition_9_.aShortArray2801
+            this.aBoolean2783 = itemDefinition_9_.aBoolean2783
+            this.anInt2810 = itemDefinition_10_.anInt2810
             this.aStringArray2763 = arrayOfNulls<String>(5)
             if (i > -5) method1554(false, -92)
-            anInt2823 = class213_9_.anInt2823
-            anInt2775 = class213_9_.anInt2775
+            anInt2823 = itemDefinition_9_.anInt2823
+            anInt2775 = itemDefinition_9_.anInt2775
             anInt2832++
-            anInt2807 = class213_9_.anInt2807
-            anInt2792 = class213_9_.anInt2792
-            this.aClass356_2757 = class213_9_.aClass356_2757
-            anInt2805 = class213_9_.anInt2805
-            this.anInt2827 = class213_9_.anInt2827
-            this.anInt2787 = class213_10_.anInt2787
-            anInt2760 = class213_9_.anInt2760
-            anInt2753 = class213_9_.anInt2753
-            anInt2803 = class213_9_.anInt2803
-            this.anInt2826 = class213_10_.anInt2826
-            if (class213_9_.aStringArray2763 != null) {
-                for (i_11_ in 0..3) this.aStringArray2763!![i_11_] = class213_9_.aStringArray2763!![i_11_]
+            anInt2807 = itemDefinition_9_.anInt2807
+            anInt2792 = itemDefinition_9_.anInt2792
+            this.aClass356_2757 = itemDefinition_9_.aClass356_2757
+            anInt2805 = itemDefinition_9_.anInt2805
+            this.anInt2827 = itemDefinition_9_.anInt2827
+            this.anInt2787 = itemDefinition_10_.anInt2787
+            anInt2760 = itemDefinition_9_.anInt2760
+            anInt2753 = itemDefinition_9_.anInt2753
+            anInt2803 = itemDefinition_9_.anInt2803
+            this.anInt2826 = itemDefinition_10_.anInt2826
+            if (itemDefinition_9_.aStringArray2763 != null) {
+                for (i_11_ in 0..3) this.aStringArray2763!![i_11_] = itemDefinition_9_.aStringArray2763!![i_11_]
             }
             this.aStringArray2763!![4] = Class274.aClass274_3489!!.method2063((this.aClass255_2761!!.anInt3286), 544)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.G(" + (if (class213_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (class213_10_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -298,7 +298,7 @@ class Class213 {
         }
     }
 
-    fun method1560(i: Int, i_33_: Byte): Class213 {
+    fun method1560(i: Int, i_33_: Byte): ItemDefinition {
         if (i_33_.toInt() != 97) this.anIntArray2762 = null
         anInt2768++
         if (this.anIntArray2762 != null && i > 1) {
@@ -601,27 +601,27 @@ class Class213 {
         }
     }
 
-    fun method1570(i: Int, class213_94_: Class213?, class213_95_: Class213?) {
+    fun method1570(i: Int, itemDefinition_94_: ItemDefinition?, itemDefinition_95_: ItemDefinition?) {
         try {
-            aShortArray2771 = class213_95_!!.aShortArray2771
-            aShortArray2785 = class213_95_.aShortArray2785
-            aByteArray2821 = class213_95_.aByteArray2821
-            this.aBoolean2783 = class213_94_!!.aBoolean2783
-            this.anInt2787 = class213_95_.anInt2787
-            this.anInt2810 = class213_95_.anInt2810
+            aShortArray2771 = itemDefinition_95_!!.aShortArray2771
+            aShortArray2785 = itemDefinition_95_.aShortArray2785
+            aByteArray2821 = itemDefinition_95_.aByteArray2821
+            this.aBoolean2783 = itemDefinition_94_!!.aBoolean2783
+            this.anInt2787 = itemDefinition_95_.anInt2787
+            this.anInt2810 = itemDefinition_95_.anInt2810
             anInt2776++
-            this.anInt2779 = class213_95_.anInt2779
-            aShortArray2801 = class213_95_.aShortArray2801
-            this.anInt2781 = class213_95_.anInt2781
-            this.anInt2819 = class213_94_.anInt2819
-            this.anInt2826 = class213_95_.anInt2826
+            this.anInt2779 = itemDefinition_95_.anInt2779
+            aShortArray2801 = itemDefinition_95_.aShortArray2801
+            this.anInt2781 = itemDefinition_95_.anInt2781
+            this.anInt2819 = itemDefinition_94_.anInt2819
+            this.anInt2826 = itemDefinition_95_.anInt2826
             this.anInt2820 = i
-            aShortArray2777 = class213_95_.aShortArray2777
-            this.anInt2825 = class213_95_.anInt2825
-            this.aString2795 = class213_94_.aString2795
-            anInt2756 = class213_95_.anInt2756
+            aShortArray2777 = itemDefinition_95_.aShortArray2777
+            this.anInt2825 = itemDefinition_95_.anInt2825
+            this.aString2795 = itemDefinition_94_.aString2795
+            anInt2756 = itemDefinition_95_.anInt2756
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (class213_94_ != null) "{...}" else "null") + ',' + (if (class213_95_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (itemDefinition_94_ != null) "{...}" else "null") + ',' + (if (itemDefinition_95_ != null) "{...}" else "null") + ')'))
         }
     }
 

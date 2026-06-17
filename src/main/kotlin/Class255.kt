@@ -121,50 +121,50 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         }
     }
 
-    fun method1940(i: Int, i_13_: Int): Class213 {
+    fun method1940(i: Int, i_13_: Int): ItemDefinition {
         anInt3283++
-        var class213: Class213?
+        var itemDefinition: ItemDefinition?
         synchronized(aClass60_3278) {
-            class213 = aClass60_3278.method583(i_13_.toLong(), 90) as Class213?
+            itemDefinition = aClass60_3278.method583(i_13_.toLong(), 90) as ItemDefinition?
         }
-        if (class213 != null) return class213
+        if (itemDefinition != null) return itemDefinition
         val `is`: ByteArray?
         synchronized(aClass45_3267!!) {
             `is` = aClass45_3267.method410(-1860, method500(7, i_13_), Class251.Companion.method1914(-23590, i_13_))
         }
-        class213 = Class213()
-        class213.aClass255_2761 = this
-        class213.anInt2769 = i_13_
-        class213.aStringArray2811 = arrayOf<String?>(null, null, Class274.aClass274_3490!!.method2063(this.anInt3286, 544), null, null)
-        class213.aStringArray2763 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491!!.method2063(this.anInt3286, 544)))
-        if (`is` != null) class213.method1569(768, Class348_Sub49(`is`))
-        class213.method1563(92.toByte())
+        itemDefinition = ItemDefinition()
+        itemDefinition.aClass255_2761 = this
+        itemDefinition.anInt2769 = i_13_
+        itemDefinition.aStringArray2811 = arrayOf<String?>(null, null, Class274.aClass274_3490!!.method2063(this.anInt3286, 544), null, null)
+        itemDefinition.aStringArray2763 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491!!.method2063(this.anInt3286, 544)))
+        if (`is` != null) itemDefinition.method1569(768, Class348_Sub49(`is`))
+        itemDefinition.method1563(92.toByte())
         val i_14_ = 4 / ((i - 13) / 59)
-        if (class213.anInt2833 != -1) class213.method1570(1, method1940(90, class213.anInt2758), method1940(101, class213.anInt2833))
-        if (class213.anInt2812 != -1) class213.method1556(method1940(-58, class213.anInt2778), (-29).toByte(), method1940(-82, class213.anInt2812))
-        if (!aBoolean3269 && class213.aBoolean2783) {
-            class213.aString2795 = Class274.aClass274_3488!!.method2063(this.anInt3286, 544)
-            class213.anInt2827 = 0
-            class213.aStringArray2811 = aStringArray3290
-            class213.aStringArray2763 = aStringArray3293
-            class213.aBoolean2755 = false
-            class213.anIntArray2772 = null
-            if (class213.aClass356_2757 != null) {
+        if (itemDefinition.anInt2833 != -1) itemDefinition.method1570(1, method1940(90, itemDefinition.anInt2758), method1940(101, itemDefinition.anInt2833))
+        if (itemDefinition.anInt2812 != -1) itemDefinition.method1556(method1940(-58, itemDefinition.anInt2778), (-29).toByte(), method1940(-82, itemDefinition.anInt2812))
+        if (!aBoolean3269 && itemDefinition.aBoolean2783) {
+            itemDefinition.aString2795 = Class274.aClass274_3488!!.method2063(this.anInt3286, 544)
+            itemDefinition.anInt2827 = 0
+            itemDefinition.aStringArray2811 = aStringArray3290
+            itemDefinition.aStringArray2763 = aStringArray3293
+            itemDefinition.aBoolean2755 = false
+            itemDefinition.anIntArray2772 = null
+            if (itemDefinition.aClass356_2757 != null) {
                 var bool = false
-                var class348 = class213.aClass356_2757!!.method3484(0)
+                var class348 = itemDefinition.aClass356_2757!!.method3484(0)
                 while (class348 != null) {
                     val class254 = aClass326_3292!!.method2600(class348.aLong4291.toInt(), 28364)
                     if (class254.aBoolean3261) class348.method2715(60.toByte())
                     else bool = true
-                    class348 = class213.aClass356_2757!!.method3482(0)
+                    class348 = itemDefinition.aClass356_2757!!.method3482(0)
                 }
-                if (!bool) class213.aClass356_2757 = null
+                if (!bool) itemDefinition.aClass356_2757 = null
             }
         }
         synchronized(aClass60_3278) {
-            aClass60_3278.method582(class213, i_13_.toLong(), (-118).toByte())
+            aClass60_3278.method582(itemDefinition, i_13_.toLong(), (-118).toByte())
         }
-        return class213
+        return itemDefinition
     }
 
     fun method1941(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, var_renderer: Renderer?, compositeNpcModelBuilder: CompositeNpcModelBuilder?): AbstractModelRenderer? {
