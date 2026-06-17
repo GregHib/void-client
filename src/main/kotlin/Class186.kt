@@ -45,7 +45,7 @@ abstract class Class186 {
                     if ((player.anInt10264) == 0) player.aString10292 = null
                 }
             }
-            for (i_2_ in i..<Class150.anInt2057) {
+            for (i_2_ in i..<ModelDefinitionLoader.anInt2057) {
                 val l = Class74.anIntArray1233!![i_2_].toLong()
                 val class348_sub22 = (Class282.aClass356_3654!!.method3480(l, -6008) as? Class348_Sub22?)
                 if (class348_sub22 != null) {

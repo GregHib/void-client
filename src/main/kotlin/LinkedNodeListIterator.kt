@@ -204,7 +204,7 @@ class LinkedNodeListIterator {
                             class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3482(0) as? Class348_Sub37)
                         }
                         var i_22_ = 0
-                        while ((i_22_ < Class150.anInt2057)) {
+                        while ((i_22_ < ModelDefinitionLoader.anInt2057)) {
                             val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_22_].toLong(), -6008)) as? Class348_Sub22)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!

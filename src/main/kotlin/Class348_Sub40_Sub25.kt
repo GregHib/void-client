@@ -71,10 +71,10 @@ class Class348_Sub40_Sub25 : Class348_Sub40(0, true) {
         @JvmField
         var anInt9341: Int = 0
         @JvmField
-        var aClass150_9342: Class150? = null
+        var aModelDefinitionLoader_9342: ModelDefinitionLoader? = null
         @JvmStatic
         fun method3117(i: Int) {
-            aClass150_9342 = null
+            aModelDefinitionLoader_9342 = null
             if (i < 10) anInt9335 = 113
         }
     }

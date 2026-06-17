@@ -54,7 +54,7 @@ import GlCubeMapTexture.Companion.method243
 import Gl3dTexture.Companion.method247
 import GlRectangleTexture.Companion.method251
 import CharCountUtil.method255
-import Class150.Companion.method1208
+import ModelDefinitionLoader.Companion.method1208
 import Class151.Companion.method1209
 import Class154.Companion.method1235
 import Class156.Companion.method1239
@@ -1877,7 +1877,7 @@ class Client : GameAppletFrame() {
         fun method104(i: Int) {
             val i_7_ = Class328_Sub1.anInt6513
             val `is` = Class286_Sub7.anIntArray6290
-            val i_8_ = if (Class373_Sub2.aBoolean7444) i_7_ else i_7_ + Class150.anInt2057
+            val i_8_ = if (Class373_Sub2.aBoolean7444) i_7_ else i_7_ + ModelDefinitionLoader.anInt2057
             for (i_9_ in 0..<i_8_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_9_]])
@@ -1940,7 +1940,7 @@ class Client : GameAppletFrame() {
 
         fun method106() {
             Class45.anInt669 = 0
-            for (i in 0..<Class150.anInt2057) {
+            for (i in 0..<ModelDefinitionLoader.anInt2057) {
                 val npc = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i].toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 if ((npc!!.aBoolean10309) && npc.method2425(-1) != -1) {
                     val i_20_ = ((npc.method2436(119.toByte()) - 1) * 256 + 252)
@@ -2556,7 +2556,7 @@ class Client : GameAppletFrame() {
         fun method112() {
             val i = Class328_Sub1.anInt6513
             val `is` = Class286_Sub7.anIntArray6290
-            val i_92_ = if (Class373_Sub2.aBoolean7444) i else i + Class150.anInt2057
+            val i_92_ = if (Class373_Sub2.aBoolean7444) i else i + ModelDefinitionLoader.anInt2057
             for (i_93_ in 0..<i_92_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_93_ < i) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_93_]])
@@ -2603,7 +2603,7 @@ class Client : GameAppletFrame() {
                     }
                 }
             }
-            for (i_115_ in 0..<Class150.anInt2057) {
+            for (i_115_ in 0..<ModelDefinitionLoader.anInt2057) {
                 val npc = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_115_].toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 if (!npc!!.method2445((-4).toByte()) || !(npc.aClass79_10505!!.method796(Class318_Sub1_Sub3_Sub3.aClass170_10209!!, 18627))) npc.anInt10285 = -1
                 else {
@@ -2647,7 +2647,7 @@ class Client : GameAppletFrame() {
         fun method117(i: Int) {
             val i_122_ = Class328_Sub1.anInt6513
             val `is` = Class286_Sub7.anIntArray6290
-            for (i_123_ in 0..<i_122_ + Class150.anInt2057) {
+            for (i_123_ in 0..<i_122_ + ModelDefinitionLoader.anInt2057) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_123_]])
                 else class318_sub1_sub3_sub3 = (Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as Class348_Sub22).aNpc_6859

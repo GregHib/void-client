@@ -3,7 +3,7 @@ import AbstractCameraTransform.Companion.method901
 import AnimatedModelRenderer.Companion.method988
 import InputSettingsState.method1063
 import GlCubeMapTexture.Companion.method243
-import Class150.Companion.method1202
+import ModelDefinitionLoader.Companion.method1202
 import Class30.Companion.method323
 import Class348_Sub23.Companion.method2965
 import Class348_Sub40.Companion.method3038
@@ -184,7 +184,7 @@ object Class164 {
             Class229.aClass268_2979 = Class268(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class362.aClass183_4460 = Class183(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class73.aClass219_4782 = Class219(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
-            Class348_Sub40_Sub25.aClass150_9342 = Class150(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, RasterSprite.aClass45_5207)
+            Class348_Sub40_Sub25.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, RasterSprite.aClass45_5207)
             ScrollingWidgetComponentNode.aClass271_8378 = Class271(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub1.aClass185_6559 = Class185(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub40_Sub12.aClass263_9195 = Class263(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class94.aClass45_1538, RasterSprite.aClass45_5207)

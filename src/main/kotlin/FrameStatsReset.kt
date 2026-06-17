@@ -588,7 +588,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub21.anInt6064 = 0
             Class300.anInt3815 = 0
             Class367_Sub4.anInt7310 = 0
-            Class150.anInt2053 = 0
+            ModelDefinitionLoader.anInt2053 = 0
             Class315.anInt3954 = 0
             MinimapDrawController.anInt1609 = 0
             Class292.anInt4802 = 0
@@ -1293,7 +1293,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class187.anInt2505 = 0
             CharCountUtil.anInt226 = 0
             PlayerUpdateDecoder.anInt1916 = 0
-            Class150.anInt2051 = 0
+            ModelDefinitionLoader.anInt2051 = 0
             Class64_Sub3.anInt5597 = 0
             Class46.anInt758 = 0
             LinkedNodeListIterator.anInt1644 = 0
@@ -1624,7 +1624,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             InputSettingsState.anInt1760 = 0
             Class280.anInt3633 = 0
             Class318_Sub1_Sub5_Sub1.anInt10135 = 0
-            Class150.anInt2052 = 0
+            ModelDefinitionLoader.anInt2052 = 0
             Class318_Sub1_Sub3_Sub2.anInt10053 = 0
             NativeRenderer.anInt7947 = 0
             MatrixCameraTransform.anInt5660 = 0
@@ -1817,7 +1817,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub3.anInt6587 = 0
             Class301.anInt3830 = 0
             NativeRenderer.anInt7972 = 0
-            Class150.anInt2049 = 0
+            ModelDefinitionLoader.anInt2049 = 0
             NativeRenderer.anInt7990 = 0
             Class348_Sub40_Sub13.anInt9202 = 0
             Class21.anInt324 = 0
@@ -1858,7 +1858,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class279.anInt3598 = 0
             Class42.anInt579 = 0
             Class243.anInt3164 = 0
-            Class150.anInt2055 = 0
+            ModelDefinitionLoader.anInt2055 = 0
             AnimatedModelRenderer.anInt8405 = 0
             Class348_Sub3.anInt6578 = 0
             Class286_Sub8.anInt6300 = 0
@@ -3524,7 +3524,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class87.anInt1486 = 0
             Class66.anInt1167 = 0
             Class299_Sub1_Sub2.anInt8700 = 0
-            Class150.anInt2056 = 0
+            ModelDefinitionLoader.anInt2056 = 0
             NativeShaderProgram.anInt9772 = 0
             Class92.anInt1527 = 0
             Class239_Sub20.anInt6049 = 0
@@ -4119,7 +4119,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             method3089(-126)
             for (k in 0..2047) Class294.aPlayerArray5058!![k] = null
 
-            Class150.anInt2057 = 0
+            ModelDefinitionLoader.anInt2057 = 0
             Class348_Sub32.anInt6930 = 0
             Class282.aClass356_3654!!.method3481(0)
             Class348_Sub40_Sub17.aClass262_9240!!.method1996(112)

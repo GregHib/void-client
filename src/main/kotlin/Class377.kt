@@ -346,7 +346,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             if (i == 0) {
                 anInt9836++
-                if (cameraNodeList == Class150.aCameraNodeList_2047) {
+                if (cameraNodeList == ModelDefinitionLoader.aCameraNodeList_2047) {
                     glDisable(3168)
                     glDisable(3169)
                     glDisable(3170)

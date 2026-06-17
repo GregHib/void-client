@@ -122,7 +122,7 @@ class Class348_Sub41 : Class348() {
                         i_22_++
                     }
                 } else {
-                    Class150.anInt2057 = 0
+                    ModelDefinitionLoader.anInt2057 = 0
                     var bool_24_ = false
                     val i_25_ = Class367_Sub4.anInt7319 * 512 - 512
                     val i_26_ = 512 * (-1 + Class348_Sub40_Sub3.anInt9109)
@@ -148,7 +148,7 @@ class Class348_Sub41 : Class348() {
                                     npc.method2448(null, -2)
                                     bool_24_ = true
                                     class348_sub22.method2715(113.toByte())
-                                } else Class74.anIntArray1233!![Class150.anInt2057++] = (npc.anInt10290)
+                                } else Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = (npc.anInt10290)
                             }
                         }
                         i_27_++

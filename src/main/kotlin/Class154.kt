@@ -10,7 +10,7 @@ class Class154 {
     var aBoolean2100: Boolean = false
     private var aLong2102: Long = 0
     private var anInt2103 = 0
-    fun method1226(interface17: Interface17?, class17: Class17?, class182s: Array<Class182?>?, bool: Boolean, class255: Class255?, i: Int, class17_0_: Class17?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, class150: Class150?, i_5_: Int, var_renderer: Renderer?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, class261: Class261?): Class64? {
+    fun method1226(interface17: Interface17?, class17: Class17?, class182s: Array<Class182?>?, bool: Boolean, class255: Class255?, i: Int, class17_0_: Class17?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, class261: Class261?): Class64? {
         try {
             anInt2097++
             if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method800(i, class182s, class87, !bool_2_, class17, i_8_, class261, i_7_, class17_0_, interface17, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
@@ -160,7 +160,7 @@ class Class154 {
                 for (i_38_ in 0..11) {
                     val i_39_ = is_10_!![i_38_]
                     if ((0x40000000 and i_39_) == 0) {
-                        if ((0x7fffffff.inv() and i_39_) != 0 && !class150!!.method1203(33.toByte(), i_39_ and 0x3fffffff).method348(34.toByte())) bool_37_ = true
+                        if ((0x7fffffff.inv() and i_39_) != 0 && !modelDefinitionLoader!!.method1203(33.toByte(), i_39_ and 0x3fffffff).method348(34.toByte())) bool_37_ = true
                     } else if (!class255!!.method1940(94, 0x3fffffff and i_39_).method1565(this.aBoolean2100, -1)) bool_37_ = true
                 }
                 if (bool_37_) {
@@ -176,7 +176,7 @@ class Class154 {
                         val i_41_ = is_10_!![i_40_]
                         if ((0x40000000 and i_41_) == 0) {
                             if ((0x7fffffff.inv() and i_41_) != 0) {
-                                val class124 = class150!!.method1203(33.toByte(), i_41_ and 0x3fffffff).method341(91)
+                                val class124 = modelDefinitionLoader!!.method1203(33.toByte(), i_41_ and 0x3fffffff).method341(91)
                                 if (class124 != null) modelDefinitions[i_40_] = class124
                             }
                         } else {
@@ -279,7 +279,7 @@ class Class154 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class182s != null) "{...}" else "null") + ',' + bool + ',' + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class17_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (class150 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (class261 != null) "{...}" else "null") + ')')
+                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class182s != null) "{...}" else "null") + ',' + bool + ',' + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class17_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (class261 != null) "{...}" else "null") + ')')
             )
         }
     }
@@ -321,7 +321,7 @@ class Class154 {
         method1234(-78)
     }
 
-    fun method1230(class255: Class255?, i: Int, class87: Class87?, class150: Class150?, interface17: Interface17?, class278: Class278?, i_66_: Int, i_67_: Int, i_68_: Int, class17: Class17?, i_69_: Int, var_renderer: Renderer?): Class64? {
+    fun method1230(class255: Class255?, i: Int, class87: Class87?, modelDefinitionLoader: ModelDefinitionLoader?, interface17: Interface17?, class278: Class278?, i_66_: Int, i_67_: Int, i_68_: Int, class17: Class17?, i_69_: Int, var_renderer: Renderer?): Class64? {
         try {
             anInt2107++
             if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method803(interface17, var_renderer, i_69_, i_67_, class17, class87, i_66_, 121, i_68_))
@@ -375,7 +375,7 @@ class Class154 {
                     val i_82_ = anIntArray2092!![i_81_]
                     if ((i_82_ and 0x40000000) != 0) {
                         if (!class255!!.method1940(i xor 0x17f6eb2c, 0x3fffffff and i_82_).method1555(97.toByte(), this.aBoolean2100)) bool = true
-                    } else if ((0x7fffffff.inv() and i_82_) != 0 && !class150!!.method1203(33.toByte(), i_82_ and 0x3fffffff).method342(110.toByte())) bool = true
+                    } else if ((0x7fffffff.inv() and i_82_) != 0 && !modelDefinitionLoader!!.method1203(33.toByte(), i_82_ and 0x3fffffff).method342(110.toByte())) bool = true
                 }
                 if (bool) return null
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(12)
@@ -384,7 +384,7 @@ class Class154 {
                     val i_85_ = anIntArray2092!![i_84_]
                     if ((i_85_ and 0x40000000) == 0) {
                         if ((i_85_ and 0x7fffffff.inv()) != 0) {
-                            val class124 = class150!!.method1203(33.toByte(), i_85_ and 0x3fffffff).method343((-73).toByte())
+                            val class124 = modelDefinitionLoader!!.method1203(33.toByte(), i_85_ and 0x3fffffff).method343((-73).toByte())
                             if (class124 != null) modelDefinitions[i_83_++] = class124
                         }
                     } else {
@@ -414,7 +414,7 @@ class Class154 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("oo.J(" + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (class150 != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (class17 != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
+                ("oo.J(" + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (class17 != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
             )
         }
     }
@@ -427,7 +427,7 @@ class Class154 {
         }
     }
 
-    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, class87: Class87?, class150: Class150?, i_94_: Int, i_95_: Int, i_96_: Int, var_renderer: Renderer?, i_97_: Int, class17: Class17?): Class64? {
+    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, class87: Class87?, modelDefinitionLoader: ModelDefinitionLoader?, i_94_: Int, i_95_: Int, i_96_: Int, var_renderer: Renderer?, i_97_: Int, class17: Class17?): Class64? {
         try {
             anInt2106++
             var i_98_ = i_91_
@@ -479,12 +479,12 @@ class Class154 {
                 var i_108_ = i_98_
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(3)
                 var i_109_ = 0
-                if (!class150!!.method1203(33.toByte(), i_95_).method342(114.toByte()) || !class150.method1203(33.toByte(), i_93_).method342(102.toByte()) || !class150.method1203(33.toByte(), i_92_).method342(94.toByte())) return null
-                var class124 = class150.method1203(33.toByte(), i_95_).method343((-50).toByte())
+                if (!modelDefinitionLoader!!.method1203(33.toByte(), i_95_).method342(114.toByte()) || !modelDefinitionLoader.method1203(33.toByte(), i_93_).method342(102.toByte()) || !modelDefinitionLoader.method1203(33.toByte(), i_92_).method342(94.toByte())) return null
+                var class124 = modelDefinitionLoader.method1203(33.toByte(), i_95_).method343((-50).toByte())
                 if (class124 != null) modelDefinitions[i_109_++] = class124
-                class124 = class150.method1203(33.toByte(), i_93_).method343((-105).toByte())
+                class124 = modelDefinitionLoader.method1203(33.toByte(), i_93_).method343((-105).toByte())
                 if (class124 != null) modelDefinitions[i_109_++] = class124
-                class124 = class150.method1203(33.toByte(), i_92_).method343((-30).toByte())
+                class124 = modelDefinitionLoader.method1203(33.toByte(), i_92_).method343((-30).toByte())
                 if (class124 != null) modelDefinitions[i_109_++] = class124
                 class124 = ModelDefinition(modelDefinitions, i_109_)
                 i_108_ = i_108_ or 0x4000
@@ -507,21 +507,21 @@ class Class154 {
             class64 = class17.method269(-32, class64!!, i, i_96_, i_91_, i_97_)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (class150 != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (class17 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (class17 != null) "{...}" else "null") + ')'))
         }
     }
 
-    fun method1233(class150: Class150?, i: Int, i_112_: Int, i_113_: Int) {
+    fun method1233(modelDefinitionLoader: ModelDefinitionLoader?, i: Int, i_112_: Int, i_113_: Int) {
         try {
             anInt2098++
             val i_114_ = Class283.anIntArray3661!![i_113_]
-            if (class150!!.method1203(33.toByte(), i) != null) {
+            if (modelDefinitionLoader!!.method1203(33.toByte(), i) != null) {
                 if (i_112_ != -1) aLong2094 = -53L
                 anIntArray2092!![i_114_] = Class273.method2057(i, -2147483648)
                 method1234(-54)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.D(" + (if (class150 != null) "{...}" else "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.D(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'))
         }
     }
 

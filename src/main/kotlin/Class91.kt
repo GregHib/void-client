@@ -51,11 +51,11 @@ object Class91 {
         if (Class348_Sub40_Sub25.anInt9341 != Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + Class348_Sub40_Sub25.anInt9341)
         if (i <= 47) aClass74_1519 = null
         var i_4_ = 0
-        while (Class150.anInt2057 > i_4_) {
-            if (Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + Class150.anInt2057)
+        while (ModelDefinitionLoader.anInt2057 > i_4_) {
+            if (Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + ModelDefinitionLoader.anInt2057)
             i_4_++
         }
-        if (Class348_Sub32.anInt6930 - Class150.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930 - Class150.anInt2057))
+        if (Class348_Sub32.anInt6930 - ModelDefinitionLoader.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930 - ModelDefinitionLoader.anInt2057))
         for (i_5_ in 0..<Class348_Sub32.anInt6930) {
             if (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10306 != Class348_Sub23_Sub3.anInt9041) throw RuntimeException("gnp4 uk:" + (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10290))
         }

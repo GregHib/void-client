@@ -3549,7 +3549,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             Class88.anInt1497 = 0
             val `is` = Class286_Sub7.anIntArray6290!!
             var i_322_ = 0
-            while ((i_322_ < Class150.anInt2057 + i_321_)) {
+            while ((i_322_ < ModelDefinitionLoader.anInt2057 + i_321_)) {
                 var class79: Class79? = null
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`[i_322_]]!!)

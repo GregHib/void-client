@@ -6,7 +6,7 @@ class Class34 {
     private var anIntArray472: IntArray? = null
     private var aShortArray474: ShortArray? = null
     @JvmField
-    var aClass150_475: Class150? = null
+    var aModelDefinitionLoader_475: ModelDefinitionLoader? = null
     private lateinit var aShortArray477: ShortArray
     private lateinit var aShortArray480: ShortArray
 
@@ -14,8 +14,8 @@ class Class34 {
         anInt468++
         if (anIntArray472 == null) return null
         val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray472!!.size)
-        synchronized(this.aClass150_475!!.aClass45_2054!!) {
-            for (i_0_ in anIntArray472!!.indices) modelDefinitions[i_0_] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray472!![i_0_], -1)
+        synchronized(this.aModelDefinitionLoader_475!!.aClass45_2054!!) {
+            for (i_0_ in anIntArray472!!.indices) modelDefinitions[i_0_] = Class300.method2277(0, (this.aModelDefinitionLoader_475!!.aClass45_2054!!), anIntArray472!![i_0_], -1)
         }
         var i_1_ = 0
         while (anIntArray472!!.size > i_1_) {
@@ -39,9 +39,9 @@ class Class34 {
     fun method342(i: Byte): Boolean {
         anInt470++
         var bool = true
-        synchronized(this.aClass150_475!!.aClass45_2054!!) {
+        synchronized(this.aModelDefinitionLoader_475!!.aClass45_2054!!) {
             for (i_4_ in 0..4) {
-                if (anIntArray464[i_4_] != -1 && !this.aClass150_475!!.aClass45_2054!!.method420(-10499, anIntArray464[i_4_], 0)) bool = false
+                if (anIntArray464[i_4_] != -1 && !this.aModelDefinitionLoader_475!!.aClass45_2054!!.method420(-10499, anIntArray464[i_4_], 0)) bool = false
             }
             if (i <= 87) method351(96)
         }
@@ -52,9 +52,9 @@ class Class34 {
         anInt471++
         val modelDefinitions = arrayOfNulls<ModelDefinition>(5)
         var i_5_ = 0
-        synchronized(this.aClass150_475!!.aClass45_2054!!) {
+        synchronized(this.aModelDefinitionLoader_475!!.aClass45_2054!!) {
             for (i_6_ in 0..4) {
-                if (anIntArray464[i_6_] != -1) modelDefinitions[i_5_++] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray464[i_6_], -1)
+                if (anIntArray464[i_6_] != -1) modelDefinitions[i_5_++] = Class300.method2277(0, (this.aModelDefinitionLoader_475!!.aClass45_2054!!), anIntArray464[i_6_], -1)
             }
         }
         for (i_7_ in 0..4) {
@@ -126,10 +126,10 @@ class Class34 {
         if (i.toInt() != 34) method348((-15).toByte())
         if (anIntArray472 == null) return true
         var bool = true
-        synchronized(this.aClass150_475!!.aClass45_2054!!) {
+        synchronized(this.aModelDefinitionLoader_475!!.aClass45_2054!!) {
             var i_31_ = 0
             while (anIntArray472!!.size > i_31_) {
-                if (!this.aClass150_475!!.aClass45_2054!!.method420(-10499, anIntArray472!![i_31_], 0)) bool = false
+                if (!this.aModelDefinitionLoader_475!!.aClass45_2054!!.method420(-10499, anIntArray472!![i_31_], 0)) bool = false
                 i_31_++
             }
         }

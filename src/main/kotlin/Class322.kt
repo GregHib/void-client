@@ -113,7 +113,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             anInt4030++
             if (Class312.anInt3931 == 1 || Class312.anInt3931 == 3 || (Class312.anInt3931 != Class83.anInt1447 && (Class312.anInt3931 == 0 || Class83.anInt1447 == 0))) {
                 Class348_Sub32.anInt6930 = 0
-                Class150.anInt2057 = 0
+                ModelDefinitionLoader.anInt2057 = 0
                 Class282.aClass356_3654!!.method3481(0)
             }
             Class83.anInt1447 = Class312.anInt3931

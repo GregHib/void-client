@@ -218,7 +218,7 @@ class Class239_Sub24 : Class239 {
                                     val i_35_ = (player.x - (-1 + player.method2436(82.toByte()) shl 8))
                                     val i_36_ = (player.y + -(-1 + player.method2436(105.toByte()) shl 8))
                                     var i_37_ = 0
-                                    while ((Class150.anInt2057 > i_37_)) {
+                                    while ((ModelDefinitionLoader.anInt2057 > i_37_)) {
                                         val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as? Class348_Sub22?)
                                         if (class348_sub22 != null) {
                                             val npc = (class348_sub22.aNpc_6859)!!
@@ -262,7 +262,7 @@ class Class239_Sub24 : Class239 {
                                     if (((npc.aClass79_10505!!.anInt1399 and 0x1) == 0 && (0x1ff and (npc.x)) == 0 && (0x1ff and (npc.y)) == 0) || ((0x1 and npc.aClass79_10505!!.anInt1399) == 1 && (0x1ff and (npc.x)) == 256 && ((npc.y) and 0x1ff) == 256)) {
                                         val i_45_ = ((npc.x) - ((-1 + npc.aClass79_10505!!.anInt1399) shl 8))
                                         val i_46_ = ((npc.y) - (npc.aClass79_10505!!.anInt1399 - 1 shl 8))
-                                        for (i_47_ in 0..<Class150.anInt2057) {
+                                        for (i_47_ in 0..<ModelDefinitionLoader.anInt2057) {
                                             val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_47_].toLong(), -6008)) as Class348_Sub22?)
                                             if (class348_sub22 != null) {
                                                 val npc_48_ = (class348_sub22.aNpc_6859)!!

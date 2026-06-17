@@ -129,7 +129,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             }
             Class348_Sub42.method3163((-114).toByte())
             for (i_4_ in 0..2047) Class294.aPlayerArray5058!![i_4_] = null
-            Class150.anInt2057 = 0
+            ModelDefinitionLoader.anInt2057 = 0
             Class282.aClass356_3654!!.method3481(i.toInt() xor 0xb)
             Class348_Sub32.anInt6930 = 0
             ModelBatchBase.aClass356_1895!!.method3481(0)

@@ -1,7 +1,7 @@
 /* Class150 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class150 internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_9_: Class45?) {
+class ModelDefinitionLoader internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_9_: Class45?) {
     private var aClass45_2048: Class45? = null
     private val aClass60_2050 = Class60(64)
     var aClass45_2054: Class45? = null
@@ -18,7 +18,7 @@ class Class150 internal constructor(class230: Class230?, i: Int, class45: Class4
             `is` = aClass45_2048!!.method410(i + -1893, 3, i_3_)
         }
         class34 = Class34()
-        class34.aClass150_475 = this
+        class34.aModelDefinitionLoader_475 = this
         if (`is` != null) class34.method346(i.toInt().inv(), Class348_Sub49(`is`))
         synchronized(aClass60_2050) {
             aClass60_2050.method582(class34, i_3_.toLong(), (-109).toByte())

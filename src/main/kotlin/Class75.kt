@@ -281,7 +281,7 @@ open class Class75 {
             val `is`: IntArray? = aClass45_1237!!.method396(i, 0)
             if (`is` != null) {
                 for (i_47_ in `is`.indices) {
-                    val class348_sub42_sub14 = Class150.method1205(`is`[i_47_], true, aClass45_1237!!, i)
+                    val class348_sub42_sub14 = ModelDefinitionLoader.method1205(`is`[i_47_], true, aClass45_1237!!, i)
                     aClass356_1241!!.method3483(25.toByte(), class348_sub42_sub14.anInt9628.toLong(), class348_sub42_sub14)
                 }
             }

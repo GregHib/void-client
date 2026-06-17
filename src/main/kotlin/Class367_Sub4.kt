@@ -105,7 +105,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
         if (aBoolean7317) {
             this.aHa_Sub3_4479.method3897(1, i.toInt() xor 0x114a.inv())
             this.aHa_Sub3_4479.method3850((-121).toByte(), null)
-            this.aHa_Sub3_4479.method3871(Class150.aCameraNodeList_2047, 0)
+            this.aHa_Sub3_4479.method3871(ModelDefinitionLoader.aCameraNodeList_2047, 0)
             this.aHa_Sub3_4479.method3879(-8629)
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 120, Class167.aClass229_2207)

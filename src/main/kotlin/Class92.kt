@@ -42,7 +42,7 @@ object Class92 {
                     val class348_sub49 = Class348_Sub49(Class348_Sub50.aByteArrayArray7212!![i_1_])
                     var i_4_ = 0
                     while (class348_sub49.anInt7197 < Class348_Sub50.aByteArrayArray7212!![i_1_]!!.size) {
-                        if (i_4_ >= 511 || Class150.anInt2057 >= 1023) break
+                        if (i_4_ >= 511 || ModelDefinitionLoader.anInt2057 >= 1023) break
                         val i_5_ = i_2_ or (i_4_++ shl 6)
                         val i_6_ = class348_sub49.readUnsignedShort(842397944)
                         val i_7_ = i_6_ shr 14
@@ -58,7 +58,7 @@ object Class92 {
                             val class348_sub22_12_ = (Class348_Sub22(npc))
                             Class282.aClass356_3654!!.method3483(91.toByte(), i_5_.toLong(), class348_sub22_12_)
                             Class348_Sub40_Sub23.aClass348_Sub22Array9319!![Class348_Sub32.anInt6930++] = class348_sub22_12_
-                            Class74.anIntArray1233!![Class150.anInt2057++] = i_5_
+                            Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_5_
                             npc.anInt10306 = Class367_Sub11.anInt7396
                             npc.method2448(class79, -2)
                             npc.method2434(120.toByte(), npc.aClass79_10505!!.anInt1399)

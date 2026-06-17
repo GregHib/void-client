@@ -2779,13 +2779,13 @@ object Class66 {
                 if ((LocalPlayerState.aPlayer_1907!!.aClass154_10536) != null) {
                     for (i_260_ in TextureDefinitionLoader.anIntArray1973!!.indices) {
                         if (TextureDefinitionLoader.anIntArray1973!![i_260_] == i_258_) {
-                            LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_260_)
+                            LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aModelDefinitionLoader_9342, i_259_, -1, i_260_)
                             return
                         }
                     }
                     for (i_261_ in Class91.anIntArray1521!!.indices) {
                         if (Class91.anIntArray1521!![i_261_] == i_258_) {
-                            LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_261_)
+                            LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aModelDefinitionLoader_9342, i_259_, -1, i_261_)
                             break
                         }
                     }

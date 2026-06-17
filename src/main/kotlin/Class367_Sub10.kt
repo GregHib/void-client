@@ -37,7 +37,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
         anInt7386++
         if (aBoolean7385) {
             this.aHa_Sub3_4479.method3897(1, -4382)
-            this.aHa_Sub3_4479.method3871(Class150.aCameraNodeList_2047, i.toInt() xor 0x57)
+            this.aHa_Sub3_4479.method3871(ModelDefinitionLoader.aCameraNodeList_2047, i.toInt() xor 0x57)
             this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 103, (Class167.aClass229_2207))
             this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
             this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
