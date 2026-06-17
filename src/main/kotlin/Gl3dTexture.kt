@@ -75,7 +75,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
             if (i != -11271) method249(39)
             return (arrayOf<IntRange?>(
                 ItemDefinitionLoader.aIntRange_2183,
-                Class295.aIntRange_3751,
+                LocalizedTextTriple.aIntRange_3751,
                 Class318_Sub1_Sub5_Sub2.aIntRange_10168,
                 Class356.aIntRange_4388,
                 WidgetDefinition.aIntRange_250,

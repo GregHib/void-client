@@ -13,7 +13,7 @@ import kotlin.concurrent.Volatile
 
 class Class339 : Runnable {
     private var aLinkedQueueNode_4201: LinkedQueueNode? = null
-    private var aClass295Array4204: Array<Class295?>? = null
+    private var aLocalizedTextTripleArray4204: Array<LocalizedTextTriple?>? = null
 
     @Volatile
     private var aBoolean4205 = false
@@ -30,10 +30,10 @@ class Class339 : Runnable {
             }
             val strings = class179.method1361(63)
             if (strings.size % 3 != 0) return
-            aClass295Array4204 = arrayOfNulls<Class295>(strings.size / 3)
+            aLocalizedTextTripleArray4204 = arrayOfNulls<LocalizedTextTriple>(strings.size / 3)
             var i = 0
             while (i < strings.size) {
-                aClass295Array4204!![i / 3] = Class295(strings[i], strings[i + 1], strings[2 + i])
+                aLocalizedTextTripleArray4204!![i / 3] = LocalizedTextTriple(strings[i], strings[i + 1], strings[2 + i])
                 i += 3
             }
         } catch (ioexception: IOException) {
@@ -42,11 +42,11 @@ class Class339 : Runnable {
         aBoolean4205 = true
     }
 
-    fun method2667(bool: Boolean, i: Int): Class295? {
+    fun method2667(bool: Boolean, i: Int): LocalizedTextTriple? {
         anInt4210++
         if (bool != false) return null
-        if (aClass295Array4204 == null || i < 0 || i >= aClass295Array4204!!.size) return null
-        return aClass295Array4204!![i]
+        if (aLocalizedTextTripleArray4204 == null || i < 0 || i >= aLocalizedTextTripleArray4204!!.size) return null
+        return aLocalizedTextTripleArray4204!![i]
     }
 
     fun method2668(i: Int): Boolean {

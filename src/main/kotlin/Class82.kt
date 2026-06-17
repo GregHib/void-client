@@ -676,7 +676,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.startsWith("fps ") && (Class8.aClass364_165 != Class55_Sub1.aClass364_5271)) {
-                            Class295.method2222((Class348_Sub41.method3156(true, string.substring(4))), (-124).toByte())
+                            LocalizedTextTriple.method2222((Class348_Sub41.method3156(true, string.substring(4))), (-124).toByte())
                             return
                         }
                     } catch (exception: Exception) {

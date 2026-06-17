@@ -166,8 +166,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         bool = false
                     }
                 }
-                if (Class295.anIntArray3759!![i_19_] != -1 && ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
-                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, Class295.anIntArray3759!![i_19_], 0)
+                if (LocalizedTextTriple.anIntArray3759!![i_19_] != -1 && ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
+                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
                     if (ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
                         LocDefinitionCache.anInt3441++
                         bool = false

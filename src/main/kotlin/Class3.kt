@@ -11,7 +11,7 @@ object Class3 {
 
     @JvmStatic
     fun method175(i: Byte) {
-        Class295.anInt3760 = -1
+        LocalizedTextTriple.anInt3760 = -1
         WidgetDefinition.anInterface4_252 = null
         RenderNode.aAbstractCameraTransform_9720 = null
         LocalPlayerState.anIntArray1909 = null

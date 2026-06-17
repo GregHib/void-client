@@ -25,8 +25,8 @@ class Class359 {
                 else bool_0_ = false
             }
             if (ScriptCompilerThread.aSpriteImage_1727 == null) {
-                if (!CameraRotationStub.aClass45_322!!.method421(false, Class295.anInt3762)) bool_0_ = false
-                else ScriptCompilerThread.aSpriteImage_1727 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, Class295.anInt3762)
+                if (!CameraRotationStub.aClass45_322!!.method421(false, LocalizedTextTriple.anInt3762)) bool_0_ = false
+                else ScriptCompilerThread.aSpriteImage_1727 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, LocalizedTextTriple.anInt3762)
             }
             if (ClanChatRequestSender.aFontDefinition_3649 == null) {
                 if (SoftwareSpriteRaster.aClass45_1627!!.method421(false, ConnectionStateRefs.anInt317)) ClanChatRequestSender.aFontDefinition_3649 = RangedGraphicsOptionState.method1766((-89).toByte(), ConnectionStateRefs.anInt317, SoftwareSpriteRaster.aClass45_1627!!)

@@ -219,7 +219,7 @@ import RegionSceneLoader.method2191
 import CutsceneSequenceData.Companion.method2199
 import MapArchiveSource.Companion.method2202
 import LoadingBarRenderer.Companion.method2214
-import Class295.Companion.method2223
+import LocalizedTextTriple.Companion.method2223
 import Class296.Companion.method2225
 import Class296.Companion.method2228
 import Class298.method2251

@@ -37,11 +37,11 @@ class CameraRotationStub {
 
         fun method289(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
             anInt324++
-            if (Class369_Sub1.anInt8583 != i_2_ || Class295.anInt3760 != i_0_ || i_1_ != ProjectileConfigUtil.anInt396) {
+            if (Class369_Sub1.anInt8583 != i_2_ || LocalizedTextTriple.anInt3760 != i_0_ || i_1_ != ProjectileConfigUtil.anInt396) {
                 Class369_Sub1.anInt8583 = i_2_
                 Class348_Sub16_Sub2.aBoolean8870 = true
                 ProjectileConfigUtil.anInt396 = i_1_
-                Class295.anInt3760 = i_0_
+                LocalizedTextTriple.anInt3760 = i_0_
                 val d = -((i_2_ * 2).toDouble() * 3.141592653589793) / 16384.0
                 val d_3_ = -(3.141592653589793 * (2 * i_0_).toDouble()) / 16384.0
                 val d_4_ = cos(d_3_)
@@ -50,7 +50,7 @@ class CameraRotationStub {
                 val d_7_ = sin(d)
                 VideoAdChecker.aDouble3182 = d_4_
                 Class348_Sub15.aDouble6774 = d_7_
-                Class295.aDouble3761 = d_6_
+                LocalizedTextTriple.aDouble3761 = d_6_
                 Class348_Sub16_Sub2.aDouble8869 = d_4_ * d_6_
                 if (i != -15902) Companion.method288((-120).toByte())
                 Class348_Sub42_Sub5.aDouble9531 = d_7_ * -d_4_

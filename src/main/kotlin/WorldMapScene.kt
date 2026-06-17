@@ -1153,7 +1153,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     val class361 = class361s!![i_272_]!!
                     for (i_281_ in 0..7) {
                         for (i_282_ in 0..7) {
-                            val i_283_ = i + Class295.method2220(0x7 and i_282_, i_277_, 0x7 and i_281_, 71.toByte())
+                            val i_283_ = i + LocalizedTextTriple.method2220(0x7 and i_282_, i_277_, 0x7 and i_281_, 71.toByte())
                             val i_284_ = (method837(i_281_ and 0x7, true, 0x7 and i_282_, i_277_) + i_275_)
                             if (i_283_ > 0 && i_283_ < -1 + this.anInt3117 && i_284_ > 0 && this.anInt3114 + -1 > i_284_) class361.method3501(124.toByte(), i_284_, i_283_)
                         }
@@ -1193,7 +1193,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     }
                                     method1682(true, 0, i_292_, 0, class348_sub49!!, 0, 1115212770, i_293_, i_290_ + i_285_, i_291_ + i_286_, i_272_)
                                 } else {
-                                    i_293_ = Class295.method2220(0x7 and i_291_, i_277_, i_290_ and 0x7, 71.toByte()) + i
+                                    i_293_ = LocalizedTextTriple.method2220(0x7 and i_291_, i_277_, i_290_ and 0x7, 71.toByte()) + i
                                     i_292_ = (i_275_ + method837(0x7 and i_290_, true, 0x7 and i_291_, i_277_))
                                     method1682(false, i_288_, i_292_, i_277_, class348_sub49!!, i_287_, 1115212770, i_293_, i_285_ - -i_290_, i_291_ + i_286_, i_272_)
                                 }

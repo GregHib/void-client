@@ -82,7 +82,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             RandomAccessFileOnDisk.anInt3047 = i_0_
             GroundDecorRenderer.anInt3643 = i_3_.toShort().toInt()
             WidgetComponentNode.anInt4656 = i_1_.toShort().toInt()
-            Class295.anInt3764 = i
+            LocalizedTextTriple.anInt3764 = i
             val i_11_ = -3 % ((-8 - i_2_) / 56)
         }
 

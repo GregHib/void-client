@@ -234,7 +234,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     else class359.anInt4423 = player.aCompassSmoother_10217.method2019((-91).toByte())
                     class359.aBoolean4426 = player.aBoolean10554
                     class359.anInt4425 = (player.anInt10275)
-                    if (player.anInt10553 > 0) Class295.method2221(player, -28482)
+                    if (player.anInt10553 > 0) LocalizedTextTriple.method2221(player, -28482)
                     LoadingBarRenderer.aPlayerArray5058!![i_22_] = null
                     if (class348_sub49_sub2.readBits((-24).toByte(), 1) != 0) SoundEnvelope.method1538(i_22_, 105.toByte(), class348_sub49_sub2)
                 }

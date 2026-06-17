@@ -1,7 +1,7 @@
 /* Class295 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class295 internal constructor(string: String?, string_4_: String?, string_5_: String?) {
+class LocalizedTextTriple internal constructor(string: String?, string_4_: String?, string_5_: String?) {
     var aString3754: String? = null
     var aString3756: String? = null
     var aString3758: String? = null

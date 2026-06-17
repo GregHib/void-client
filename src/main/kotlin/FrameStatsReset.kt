@@ -952,7 +952,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7917 = 0
             SceneRegionState.anInt195 = 0
             Class318_Sub1_Sub3_Sub3.anInt10251 = 0
-            Class295.anInt3757 = 0
+            LocalizedTextTriple.anInt3757 = 0
             Class318_Sub1_Sub4_Sub2.anInt10108 = 0
             Class5_Sub3.anInt8372 = 0
             Class373_Sub2.anInt7428 = 0
@@ -2906,7 +2906,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub4.anInt10343 = 0
             MediaStreamClient.anInt3187 = 0
             DefaultGraphicsOptionState.anInt6131 = 0
-            Class295.anInt3752 = 0
+            LocalizedTextTriple.anInt3752 = 0
             NativeRenderer.anInt7903 = 0
             BooleanGraphicsOptionState.anInt5843 = 0
             NativeRenderer.anInt7960 = 0
@@ -2917,7 +2917,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub47.anInt7121 = 0
             Class377.anInt9848 = 0
             SceneObjectAnimator.anInt3058 = 0
-            Class295.anInt3755 = 0
+            LocalizedTextTriple.anInt3755 = 0
             ModelHeaderCache.anInt3282 = 0
             GlTextureBase.anInt5086 = 0
             HostPingThread.anInt2263 = 0

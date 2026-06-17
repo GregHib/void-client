@@ -191,7 +191,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         }
         val i_23_ = this.anInt10553
         this.anInt10553 = class348_sub49.readUnsignedByte(255)
-        if (this.anInt10553 == 0) Class295.method2221(this, -28482)
+        if (this.anInt10553 == 0) LocalizedTextTriple.method2221(this, -28482)
         else {
             val i_24_ = this.anInt10535
             val i_25_ = this.anInt10526

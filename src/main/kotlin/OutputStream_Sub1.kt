@@ -52,7 +52,7 @@ class OutputStream_Sub1 : OutputStream() {
                 GroundItemRenderState.method1014(-4)
                 Class348_Sub42_Sub3.method3174(i_1_, i_3_, i_0_, true, (-82).toByte(), i_2_)
                 i_3_ = RandomAccessFileOnDisk.anInt3047
-                i_1_ = Class295.anInt3764
+                i_1_ = LocalizedTextTriple.anInt3764
                 i_2_ = GroundDecorRenderer.anInt3643
                 LocalPlayerState.anInt1906 = LocalPlayerState.anInt1911
                 i_0_ = WidgetComponentNode.anInt4656

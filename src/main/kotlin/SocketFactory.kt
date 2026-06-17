@@ -58,7 +58,7 @@ abstract class SocketFactory {
                 DefaultGraphicsOptionState.aClass341_6128 = class341
                 Class86.anInt1479 = i
                 Class348_Sub7.aSpriteImage_6643 = null
-                Class295.anInt3762 = i_8_
+                LocalizedTextTriple.anInt3762 = i_8_
                 Class348_Sub40_Sub1.aSpriteImage_9090 = null
                 RegionSceneLoader.anInt3704 = i_3_
                 ConnectionStateRefs.anInt317 = i_5_
@@ -70,7 +70,7 @@ abstract class SocketFactory {
                 Class348_Sub32.anInt6938 = i_1_
                 Class359.method3490(true)
                 val i_9_ = -77 % ((i_4_ - 29) / 34)
-                Class295.aBoolean3763 = true
+                LocalizedTextTriple.aBoolean3763 = true
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("uu.E(" + i + ',' + i_0_ + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
             }

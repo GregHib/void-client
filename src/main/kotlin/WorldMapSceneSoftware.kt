@@ -701,7 +701,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                                         var i_142_ = i_139_
                                                         while ((i_142_ < i_139_ - -4)) {
                                                             if ((i_141_ >= i_123_) && (i_141_ < 8 + i_123_) && (i_124_ <= i_142_) && (8 + i_124_ > i_124_)) {
-                                                                val i_143_ = (i_117_ - -(Class295.method2220((0x7 and i_142_), i_119_, (i_141_ and 0x7), 71.toByte())))
+                                                                val i_143_ = (i_117_ - -(LocalizedTextTriple.method2220((0x7 and i_142_), i_119_, (i_141_ and 0x7), 71.toByte())))
                                                                 val i_144_ = (i_120_ + (method837((i_141_ and 0x7), true, (0x7 and i_142_), i_119_)))
                                                                 if (i_143_ >= 0 && (this.anInt3117 > i_143_) && (i_144_ >= 0) && ((this.anInt3114) > i_144_)) this.aByteArrayArrayArray3104!![i_118_]!![i_143_]!![i_144_] = i_140_
                                                             }
