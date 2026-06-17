@@ -3,13 +3,13 @@ import GlTexture1D.Companion.method1974
 /* Class240 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class WorldMapRenderer internal constructor(class339: Class339?, minimapSpriteRenderer: MinimapSpriteRenderer?) : Interface1 {
-    private val aClass339_4682: Class339?
+class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoaderThread?, minimapSpriteRenderer: MinimapSpriteRenderer?) : Interface1 {
+    private val aMapRegionLoaderThread_4682: MapRegionLoaderThread?
     private val aMinimapSpriteRenderer_4685: MinimapSpriteRenderer?
     override fun method8(i: Byte): Boolean {
         anInt4678++
         val i_0_ = -50 / ((25 - i) / 52)
-        return aClass339_4682!!.method2668(-21913)
+        return aMapRegionLoaderThread_4682!!.method2668(-21913)
     }
 
     override fun method7(i: Int) {
@@ -18,7 +18,7 @@ class WorldMapRenderer internal constructor(class339: Class339?, minimapSpriteRe
 
     override fun method9(i: Byte, bool: Boolean) {
         anInt4676++
-        val class295 = aClass339_4682!!.method2667(false, aMinimapSpriteRenderer_4685!!.anInt4918)
+        val class295 = aMapRegionLoaderThread_4682!!.method2667(false, aMinimapSpriteRenderer_4685!!.anInt4918)
         if (class295 != null) {
             val i_7_ = ((aMinimapSpriteRenderer_4685.aScreenAnchorAlignment_4922!!.method1607(Class92.anInt1524, aMinimapSpriteRenderer_4685.anInt4929, (-118).toByte())) - -aMinimapSpriteRenderer_4685.anInt4924)
             var i_8_ = ((aMinimapSpriteRenderer_4685.aClass341_4925!!.method2679(OpenGlRenderer.anInt7666, aMinimapSpriteRenderer_4685.anInt4923, i.toInt() xor 0x60b.inv())) - -aMinimapSpriteRenderer_4685.anInt4920)
@@ -46,9 +46,9 @@ class WorldMapRenderer internal constructor(class339: Class339?, minimapSpriteRe
     init {
         try {
             aMinimapSpriteRenderer_4685 = minimapSpriteRenderer
-            aClass339_4682 = class339
+            aMapRegionLoaderThread_4682 = mapRegionLoaderThread
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ta.<init>(" + (if (class339 != null) "{...}" else "null") + ',' + (if (minimapSpriteRenderer != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ta.<init>(" + (if (mapRegionLoaderThread != null) "{...}" else "null") + ',' + (if (minimapSpriteRenderer != null) "{...}" else "null") + ')'))
         }
     }
 

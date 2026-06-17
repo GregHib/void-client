@@ -95,12 +95,12 @@ class IntHashSet internal constructor(`is`: IntArray) {
                         val i_31_ = i_22_ * i_23_
                         val i_32_ = i_1_ - -(i_26_ - (-i_28_ + -i_30_) shr 12)
                         val i_33_ = i_6_ - -(i_29_ + (i_27_ - -i_31_) shr 12)
-                        Class339.method2665(i_9_, 109.toByte(), i, i_10_, i_33_, i_32_)
+                        MapRegionLoaderThread.method2665(i_9_, 109.toByte(), i, i_10_, i_33_, i_32_)
                         i_9_ = i_32_
                         i_10_ = i_33_
                         i_23_ += 128
                     }
-                } else Class339.method2665(i_1_, 73.toByte(), i, i_6_, i_8_, i_5_)
+                } else MapRegionLoaderThread.method2665(i_1_, 73.toByte(), i, i_6_, i_8_, i_5_)
                 anInt3964++
             }
         }

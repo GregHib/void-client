@@ -2,14 +2,14 @@
 * Visit http://jode.sourceforge.net/
 */
 class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: Class45?) {
-    private var aClass339_1633: Class339? = null
+    private var aMapRegionLoaderThread_1633: MapRegionLoaderThread? = null
     private val aClass45_1637: Class45?
     private val aClass45_1641: Class45?
 
-    private fun method998(i: Int): Class339 {
+    private fun method998(i: Int): MapRegionLoaderThread {
         anInt1632++
-        if (aClass339_1633 == null) aClass339_1633 = Class339()
-        return aClass339_1633!!
+        if (aMapRegionLoaderThread_1633 == null) aMapRegionLoaderThread_1633 = MapRegionLoaderThread()
+        return aMapRegionLoaderThread_1633!!
     }
 
     fun method1000(bool: Boolean, interface12: Interface12?): Interface1? {

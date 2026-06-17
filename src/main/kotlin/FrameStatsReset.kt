@@ -164,7 +164,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub46.anInt7114 = 0
             Class5_Sub1.anInt8337 = 0
             Class348_Sub29.anInt6910 = 0
-            Class339.anInt4203 = 0
+            MapRegionLoaderThread.anInt4203 = 0
             MinimapPositionState.anInt3836 = 0
             Class64_Sub3.anInt5562 = 0
             Class348_Sub41.anInt7047 = 0
@@ -1042,7 +1042,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9893 = 0
             ParticleSortRenderer.anInt3023 = 0
             Class348_Sub40_Sub10.anInt9177 = 0
-            Class339.anInt4208 = 0
+            MapRegionLoaderThread.anInt4208 = 0
             OpenGlRenderer.anInt7583 = 0
             DelegatingRenderCanvas.anInt61 = 0
             Class45.anInt640 = 0
@@ -1339,7 +1339,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RangedGraphicsOptionState.anInt5940 = 0
             TextureQualityOptionState.anInt6001 = 0
             Class45.anInt652 = 0
-            Class339.anInt4199 = 0
+            MapRegionLoaderThread.anInt4199 = 0
             Player.anInt10534 = 0
             Class52.anInt4897 = 0
             Class5_Sub2.anInt8355 = 0
@@ -1493,7 +1493,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             DelegatingRenderCanvas.anInt63 = 0
             Crc64Hashable.anInt4988 = 0
             Class348_Sub27.anInt6901 = 0
-            Class339.anInt4198 = 0
+            MapRegionLoaderThread.anInt4198 = 0
             Class348_Sub49.anInt7187 = 0
             Class348_Sub51.anInt7237 = 0
             Class348_Sub40_Sub5.anInt9126 = 0
@@ -1992,7 +1992,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5426 = 0
             OpenGlRenderer.anInt7642 = 0
             Class367_Sub10.anInt7381 = 0
-            Class339.anInt4200 = 0
+            MapRegionLoaderThread.anInt4200 = 0
             SlotBinding.anInt3399 = 0
             BloomGraphicsOptionState.anInt5970 = 0
             PerlinTextureProvider.anInt5811 = 0
@@ -2155,7 +2155,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ConfigValueProvider.anInt4909 = 0
             SoftwareSpriteRaster.anInt1630 = 0
             Class348_Sub16_Sub3.anInt8913 = 0
-            Class339.anInt4210 = 0
+            MapRegionLoaderThread.anInt4210 = 0
             Class64_Sub2.anInt5441 = 0
             UnderlayDefinition.anInt2888 = 0
             Class348_Sub42_Sub12.anInt9594 = 0
@@ -2600,7 +2600,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CompositeNpcModelBuilder.anInt2097 = 0
             Class34.anInt462 = 0
             TrackedGroundDecor.anInt10402 = 0
-            Class339.anInt4209 = 0
+            MapRegionLoaderThread.anInt4209 = 0
             Class348_Sub49.anInt7164 = 0
             Class348_Sub40_Sub38.anInt9468 = 0
             AntialiasOptionState.anInt6078 = 0

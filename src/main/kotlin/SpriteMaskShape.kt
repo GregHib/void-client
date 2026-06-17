@@ -856,7 +856,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 Class348.anInt4292 = 0
                                 MaterialTypeMarker.anInt6516++
-                                val class348_sub47 = method2148((Class339.aClass351_4207), (Class348_Sub23_Sub2.aClass77_9029), -81)
+                                val class348_sub47 = method2148((MapRegionLoaderThread.aClass351_4207), (Class348_Sub23_Sub2.aClass77_9029), -81)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-119).toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -123)) 0 else 1))
                                 Class348_Sub42_Sub14.method3243(-85, class348_sub47)
@@ -908,7 +908,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                 if (class46 != null) {
                                     Class341.method2678(-2049)
                                     val class348_sub44 = Client.method105(class46)!!
-                                    Class339.method2666(class348_sub44.anInt7093, class348_sub44.method3307(14), class46, 21.toByte())
+                                    MapRegionLoaderThread.method2666(class348_sub44.anInt7093, class348_sub44.method3307(14), class46, 21.toByte())
                                     ItemNameResolver.aString5001 = method1753(0, class46)
                                     ItemNameResolver.aString5000 = (class46.aString752 + "<col=ffffff>")
                                     if (ItemNameResolver.aString5001 == null) ItemNameResolver.aString5001 = "Null"

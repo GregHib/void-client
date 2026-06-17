@@ -392,7 +392,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 ls[i_112_] = class348_sub20.aLong4291
                 class348_sub20.method2952(17795, anInt8246)
             }
-            Class339.method2669(aClass348_Sub20Array8282 as? Array<Any?>, ls, -21)
+            MapRegionLoaderThread.method2669(aClass348_Sub20Array8282 as? Array<Any?>, ls, -21)
             if (aSoftwareSpriteRaster_8266 != null) aSoftwareSpriteRaster_8266!!.method957(0)
         }
         anInt8247++

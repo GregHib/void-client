@@ -380,7 +380,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 class348_sub3.method2740(-84, anInt8303)
                 i_127_++
             }
-            Class339.method2669(aClass348_Sub3Array8328 as? Array<Any?>, ls, -101)
+            MapRegionLoaderThread.method2669(aClass348_Sub3Array8328 as? Array<Any?>, ls, -101)
             if (aVideoStreamDecoder_8307 != null) aVideoStreamDecoder_8307!!.method2632(128)
         }
         anInt8298++
@@ -828,7 +828,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         fun method4008(i: Byte): Int {
             anInt8289++
             if (i >= -121) aCameraRotationStub_8320 = null
-            if (Class348_Sub49.anInt7207 == 1) return Class339.anInt4211
+            if (Class348_Sub49.anInt7207 == 1) return MapRegionLoaderThread.anInt4211
             return 0
         }
     }

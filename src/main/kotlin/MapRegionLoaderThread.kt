@@ -11,7 +11,10 @@ import java.net.MalformedURLException
 import java.net.URL
 import kotlin.concurrent.Volatile
 
-class Class339 : Runnable {
+/*
+ * Class339
+ */
+class MapRegionLoaderThread : Runnable {
     private var aLinkedQueueNode_4201: LinkedQueueNode? = null
     private var aLocalizedTextTripleArray4204: Array<LocalizedTextTriple?>? = null
 

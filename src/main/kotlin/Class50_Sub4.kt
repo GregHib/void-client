@@ -13,7 +13,7 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
         val i_5_ = i_2_ * anInt5264 shr 12
         val i_6_ = anInt5259 * i shr 12
         val i_7_ = anInt5258 * i shr 12
-        Class339.method2665(i_4_, 118.toByte(), this.anInt865, i_6_, i_7_, i_5_)
+        MapRegionLoaderThread.method2665(i_4_, 118.toByte(), this.anInt865, i_6_, i_7_, i_5_)
     }
 
     public override fun method456(i: Int, i_8_: Int, i_9_: Int) {

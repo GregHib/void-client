@@ -32,12 +32,12 @@ object MinimapFlagRenderer {
             do {
                 if (i_1_ == 0) {
                     if (bool) return 0
-                    return Class339.anInt4211
+                    return MapRegionLoaderThread.anInt4211
                 } else if (i_1_ != 1) {
                     if (i_1_ == 2) break
                     break@while_44_
                 }
-                return Class339.anInt4211
+                return MapRegionLoaderThread.anInt4211
             } while (false)
             return 0
         } while (false)

@@ -230,7 +230,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     ShaderObject.anInt4100 += i_33_
                                     Class348_Sub42_Sub4.aDouble9517 += d_37_
                                     Class348_Sub40_Sub8.anInt9157 = (-Class348_Sub3.anInt6568 + i_26_ + Class348_Sub42_Sub9_Sub1.anInt10444)
-                                    Class339.anInt4211 = (-ShaderObject.anInt4100 + SoundEnvelope.anInt2747 + i_25_)
+                                    MapRegionLoaderThread.anInt4211 = (-ShaderObject.anInt4100 + SoundEnvelope.anInt2747 + i_25_)
                                     if (Class348_Sub49.anInt7207 == 1) {
                                         SceneryDetailOptionState.anInt6095 += i_35_
                                         MaterialPass.anInt3682 += i_36_
@@ -247,7 +247,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     }
                                 }
                             } else {
-                                Class339.anInt4211 = i_27_
+                                MapRegionLoaderThread.anInt4211 = i_27_
                                 Class348_Sub40_Sub8.anInt9157 = i_28_
                                 if (Class348_Sub49.anInt7207 == 2) Class348_Sub42_Sub4.aDouble9517 = -d
                             }
@@ -257,7 +257,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             ConfigIdPair.anInt403 = i_6_
                             Class348_Sub40_Sub8.anInt9157 = Class348_Sub42_Sub9_Sub1.anInt10444
                             ShaderObject.anInt4100 = 0
-                            Class339.anInt4211 = SoundEnvelope.anInt2747
+                            MapRegionLoaderThread.anInt4211 = SoundEnvelope.anInt2747
                             AnimatedModelRenderer.anInt8422 = i_4_
                             Class348_Sub3.anInt6568 = 0
                             Class348_Sub42_Sub4.aDouble9517 = 0.0
@@ -289,7 +289,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             if (Class348_Sub49.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
                             if (Class348_Sub49.anInt7207 == 1) method1469(-117)
                         }
-                        if (Class348_Sub49.anInt7207 == 0) WidgetDefinition.anInterface4_252!!.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
+                        if (Class348_Sub49.anInt7207 == 0) WidgetDefinition.anInterface4_252!!.method14(MapRegionLoaderThread.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
                         GroundDecorSceneEntity.anInt9997++
                         method3284(true, Class348_Sub42_Sub4.aDouble9517)
                         ModelWallEntity.aDouble10120 = Class348_Sub42_Sub4.aDouble9517
@@ -300,7 +300,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             }
                             TextureHandle.anInt2590 = i_20_
                             ModelFacePriorityNode.anInt1879 = i_21_
-                            Class94.anInt1537 = (-Class339.anInt4211 + -ShaderObject.anInt4100 + (i_16_ + SoundEnvelope.anInt2747))
+                            Class94.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObject.anInt4100 + (i_16_ + SoundEnvelope.anInt2747))
                             SceneTextLabel.anInt6417 = (-Class348_Sub40_Sub8.anInt9157 + (i_17_ + Class348_Sub42_Sub9_Sub1.anInt10444 + -Class348_Sub3.anInt6568))
                             CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                         } else if (Class348_Sub49.anInt7207 == 1) {
@@ -309,7 +309,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             SceneTextLabel.anInt6417 = -Class348_Sub3.anInt6568 + i_17_
                             ModelFacePriorityNode.anInt1879 = i_21_
                             CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
-                            CameraRotationStub.aRenderer326!!.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (LinkedNodeListIterator.anInt1651 + Class348_Sub40_Sub8.anInt9157))
+                            CameraRotationStub.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, Class348_Sub40_Sub8.anInt9157, (MapRegionLoaderThread.anInt4211 - -Class59_Sub1.anInt5283), (LinkedNodeListIterator.anInt1651 + Class348_Sub40_Sub8.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (Class348_Sub49.anInt7207 != 2) 2 else 0, Class348_Sub49.anInt7207 == 1)
                         CameraRotationStub.aRenderer326!!.la()

@@ -588,7 +588,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         @JvmStatic
         @Throws(Exception_Sub1::class)
         fun method395(i: Int) {
-            if (Class348_Sub49.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157)
+            if (Class348_Sub49.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, Class348_Sub40_Sub8.anInt9157)
             else CameraRotationStub.aRenderer326!!.method3626(0, 0)
             if (i >= 73) anInt642++
         }
