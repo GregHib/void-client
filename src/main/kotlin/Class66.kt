@@ -1052,9 +1052,9 @@ object Class66 {
             }
             if (i == 5424) {
                 anInt1173 -= 11
-                Class264.anInt3376 = anIntArray1149!![anInt1173]
+                CompassSmoother.anInt3376 = anIntArray1149!![anInt1173]
                 Class51.anInt948 = anIntArray1149!![anInt1173 + 1]
-                Class264.anInt3374 = anIntArray1149!![anInt1173 + 2]
+                CompassSmoother.anInt3374 = anIntArray1149!![anInt1173 + 2]
                 Class348_Sub42_Sub4.anInt9511 = anIntArray1149!![anInt1173 + 3]
                 HudTabPanel.anInt2996 = anIntArray1149!![anInt1173 + 4]
                 Class348_Sub40_Sub16.anInt9231 = anIntArray1149!![anInt1173 + 5]
@@ -1177,7 +1177,7 @@ object Class66 {
                 Class292.anInt4803 = i_134_
                 val i_135_ = anIntArray1149!![anInt1173 + 5]
                 if (i_135_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![Class292.anInt4803]!!).size shr 1) throw RuntimeException()
-                Class264.anInt3373 = i_135_
+                CompassSmoother.anInt3373 = i_135_
                 Class348_Sub40_Sub21.anInt9282 = 3
                 Class318_Sub1_Sub5_Sub2.anInt10163 = -1
                 Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
@@ -2973,7 +2973,7 @@ object Class66 {
                     class46.anInt730 = 1
                     class46.anInt841 = 0
                     val class17 = (if (class46.anInt699 == -1) null else ParticleEmitterNode.aClass87_191!!.method835(class46.anInt699, 7))
-                    if (class17 != null) Class264.method2017(class46.anInt795, class17, 46)
+                    if (class17 != null) CompassSmoother.method2017(class46.anInt795, class17, 46)
                     ConfigFlagUtil.method1916(-9343, class46)
                 }
                 if (class46.anInt704 == -1) Class64_Sub3.method687((-117).toByte(), class46.anInt830)
@@ -4110,7 +4110,7 @@ object Class66 {
                     return
                 }
                 if (i == 3349) {
-                    anIntArray1149!![anInt1173++] = LocalPlayerState.aPlayer_1907!!.aClass264_10217.method2019((-31).toByte()) shr 3
+                    anIntArray1149!![anInt1173++] = LocalPlayerState.aPlayer_1907!!.aCompassSmoother_10217.method2019((-31).toByte()) shr 3
                     return
                 }
                 if (i == 3351) {

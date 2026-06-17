@@ -59,7 +59,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         if (this.aCompositeNpcModelBuilder_10536 != null && (this.aBoolean10318 || method2459(0, var_renderer, -123))) {
             val class101 = var_renderer!!.method3705()!!
             if (i >= -125) method2457((-106).toByte())
-            class101.method895(this.aClass264_10217.method2019((-116).toByte()))
+            class101.method895(this.aCompassSmoother_10217.method2019((-116).toByte()))
             class101.method891(this.x, -5 + this.anInt6382, this.y)
             this.method2432(var_renderer, -15074, class101, this.aBoolean10318, (this.aClass64Array10323))
             this.aClass64Array10323!![2] = null
@@ -108,7 +108,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         anInt10562++
         if (this.aCompositeNpcModelBuilder_10536 == null || !method2459(131072, var_renderer, 113)) return false
         val class101 = var_renderer!!.method3705()
-        val i_9_ = this.aClass264_10217.method2019((-31).toByte())
+        val i_9_ = this.aCompassSmoother_10217.method2019((-31).toByte())
         class101.method895(i_9_)
         class101.method891(this.x, this.anInt6382, this.y)
         var bool = false
@@ -324,7 +324,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         anInt10527++
         if (this.aCompositeNpcModelBuilder_10536 == null || !method2459(2048, var_renderer, -95)) return null
         val class101 = var_renderer!!.method3705()
-        val i_53_ = this.aClass264_10217.method2019((-126).toByte())
+        val i_53_ = this.aCompassSmoother_10217.method2019((-126).toByte())
         class101.method895(i_53_)
         val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![this.plane.toInt()]!![this.x shr Class362.anInt4459]!![this.y shr Class362.anInt4459])
         if (class357 == null || class357.aClass318_Sub1_Sub1_4402 == null) this.anInt10274 = (this.anInt10274 - this.anInt10274.toFloat() / 10.0f).toInt()
@@ -474,7 +474,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         val i_72_ = class225.anInt2932
         val i_73_ = class225.anInt2941
         if (i_72_ != 0 || i_73_ != 0 || class225.anInt2950 != 0 || class225.anInt2926 != 0) i = i or 0x7
-        val i_74_ = this.aClass264_10217.method2019((-106).toByte())
+        val i_74_ = this.aCompassSmoother_10217.method2019((-106).toByte())
         val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =

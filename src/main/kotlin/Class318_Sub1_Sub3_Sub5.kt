@@ -163,7 +163,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
                             i_11_ += (class225.anIntArrayArray2910!![anInt10367]!![0])
                         }
                         if (i_11_ != 0 || i_12_ != 0) {
-                            val i_13_ = class318_sub1_sub3_sub3.aClass264_10217.method2019((-91).toByte())
+                            val i_13_ = class318_sub1_sub3_sub3.aCompassSmoother_10217.method2019((-91).toByte())
                             var i_14_ = i_13_
                             if ((class318_sub1_sub3_sub3.anIntArray10296 != null) && (class318_sub1_sub3_sub3.anIntArray10296!![anInt10367]) != -1) i_14_ = (class318_sub1_sub3_sub3.anIntArray10296!![anInt10367])
                             val i_15_ = 0x3fff and -i_13_ + i_14_

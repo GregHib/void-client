@@ -57,7 +57,7 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
                 Class305.anInt3855 = -1 * fs[1].toInt()
                 Class59_Sub2_Sub2.anInt8685 = fs[2].toInt() + -(Class90.regionTileY * 512)
                 val fs_10_ = FloatArray(3)
-                val i_11_ = 2 * Class264.anInt3373
+                val i_11_ = 2 * CompassSmoother.anInt3373
                 val i_12_ = -88 % ((-64 - i) / 57)
                 for (i_13_ in 0..2) {
                     val i_14_ = 3 * (Class348_Sub43.anIntArrayArrayArray7079!![Class292.anInt4803]!![i_11_]!![i_13_])

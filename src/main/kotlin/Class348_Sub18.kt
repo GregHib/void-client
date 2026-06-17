@@ -3,7 +3,7 @@ import PerlinTextureProvider.Companion.method1402
 import SocketGameConnection.Companion.method1707
 import DisplayModeOptionState.Companion.method1828
 import ModelDataCache.method297
-import Class264.Companion.method2017
+import CompassSmoother.Companion.method2017
 import Class316.Companion.method2368
 import Class318.Companion.method2375
 import Class369_Sub3.Companion.method3573

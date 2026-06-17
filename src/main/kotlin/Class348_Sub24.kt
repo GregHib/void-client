@@ -7,7 +7,7 @@ import BinaryGraphicsOptionState.Companion.method1767
 import LightDetailOptionState.Companion.method1802
 import ConfigFlagUtil.Companion.method1916
 import NpcDefinitionCache.Companion.method1987
-import Class264.Companion.method2017
+import CompassSmoother.Companion.method2017
 import Class272.Companion.method2049
 import Class286.Companion.method2138
 import Class286_Sub3.Companion.method2148

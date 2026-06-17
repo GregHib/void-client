@@ -5,7 +5,7 @@ import Class348_Sub40_Sub9.Companion.method3073
 /* Class264 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class264 {
+class CompassSmoother {
     private var anInt3365 = 0
     var anInt3370: Int = 0
     fun method2016(i: Int, i_2_: Int) {

@@ -260,7 +260,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     }
                                                     GameAppletFrame.aClass324_20!!.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1)
                                                     i_38_ += 15
-                                                    GameAppletFrame.aClass324_20!!.method2569(("In:" + Class264.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
+                                                    GameAppletFrame.aClass324_20!!.method2569(("In:" + CompassSmoother.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 15
                                                     val i_43_ = (Class348_Sub8.aRenderer6654!!.E() / 1024)
                                                     GameAppletFrame.aClass324_20!!.method2569("Offheap:" + i_43_ + "k", i_38_, (if (i_43_ <= 65536) -256 else -65536), i_37_, -125, -1)

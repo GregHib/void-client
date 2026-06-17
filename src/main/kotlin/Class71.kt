@@ -32,7 +32,7 @@ object Class71 {
         if (i_1_ < 60) method728(true)
         anInt1209++
         val class225 = class318_sub1_sub3_sub3.method2422(72.toByte())
-        val i_3_ = 0x3fff and ((class318_sub1_sub3_sub3.anInt10282) - class318_sub1_sub3_sub3.aClass264_10217.anInt3370)
+        val i_3_ = 0x3fff and ((class318_sub1_sub3_sub3.anInt10282) - class318_sub1_sub3_sub3.aCompassSmoother_10217.anInt3370)
         if (i != -1) {
             if ((class318_sub1_sub3_sub3.anInt10275 == -1) || (i_3_ < 10240 && i_3_ > 2048)) {
                 if (i_3_ == 0 && (class318_sub1_sub3_sub3.anInt10247) <= 25) {
@@ -56,7 +56,7 @@ object Class71 {
                     class318_sub1_sub3_sub3.aBoolean10213 = false
                 }
             } else {
-                val i_4_ = 0x3fff and (ParticleEmitterNode.anIntArray187!![i_2_] - class318_sub1_sub3_sub3.aClass264_10217.anInt3370)
+                val i_4_ = 0x3fff and (ParticleEmitterNode.anIntArray187!![i_2_] - class318_sub1_sub3_sub3.aCompassSmoother_10217.anInt3370)
                 if (i != 2 || class225.anInt2919 == -1) {
                     if (i == 0 && (class225.anInt2940 != -1)) {
                         if (i_4_ <= 2048 || i_4_ > 6144 || class225.anInt2947 == -1) {

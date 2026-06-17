@@ -685,7 +685,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class264.aIntRange_3371 == Class348_Sub3.aIntRange_6584) {
+            if (CompassSmoother.aIntRange_3371 == Class348_Sub3.aIntRange_6584) {
                 method128(Class59_Sub1_Sub2.aClass74_8662, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -785,7 +785,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class264.aIntRange_3368) {
+            if (Class348_Sub3.aIntRange_6584 == CompassSmoother.aIntRange_3368) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)

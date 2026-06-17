@@ -99,7 +99,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub5.anInt6619 = 0
             ProjectileSpawner.anInt2672 = 0
             Class348_Sub23_Sub2.anInt9026 = 0
-            Class264.anInt3377 = 0
+            CompassSmoother.anInt3377 = 0
             DetailLevelOptionState.anInt6123 = 0
             OpenGlRenderer.anInt7690 = 0
             Class348_Sub42_Sub8.anInt9546 = 0
@@ -874,7 +874,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8076 = 0
             ModelHeaderCache.anInt3281 = 0
             Class66.anInt1163 = 0
-            Class264.anInt3375 = 0
+            CompassSmoother.anInt3375 = 0
             Class318_Sub1_Sub3_Sub4.anInt10358 = 0
             Class318_Sub1_Sub3_Sub4.anInt10352 = 0
             Class314_Sub1.anInt6345 = 0
@@ -888,7 +888,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TerrainTile.anInt4591 = 0
             Class286_Sub2.anInt6204 = 0
             Class361.anInt4442 = 0
-            Class264.anInt3366 = 0
+            CompassSmoother.anInt3366 = 0
             Class348_Sub49.anInt7204 = 0
             Class348_Sub40.anInt7044 = 0
             Class79.anInt1357 = 0
@@ -1017,7 +1017,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub5.anInt10394 = 0
             NativeRenderer.anInt7892 = 0
             Class348.anInt4285 = 0
-            Class264.anInt3364 = 0
+            CompassSmoother.anInt3364 = 0
             GlRectangleTexture.anInt8651 = 0
             Class267.anInt3397 = 0
             NativeRenderer.anInt8073 = 0
@@ -2431,7 +2431,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub5_Sub1.anInt8827 = 0
             Client.anInt5181 = 0
             Class51.anInt870 = 0
-            Class264.anInt3369 = 0
+            CompassSmoother.anInt3369 = 0
             Class59_Sub1.anInt5282 = 0
             Class292.anInt4805 = 0
             MediaStreamClient.anInt3189 = 0
@@ -3069,7 +3069,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7999 = 0
             OpenGlRenderer.anInt7585 = 0
             Class348_Sub40_Sub10.anInt9179 = 0
-            Class264.anInt3367 = 0
+            CompassSmoother.anInt3367 = 0
             NativeRenderer.anInt7941 = 0
             Class348_Sub23_Sub1.anInt8991 = 0
             ClientLoadStateMachine.anInt2174 = 0

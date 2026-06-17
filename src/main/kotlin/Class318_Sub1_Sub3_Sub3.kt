@@ -25,7 +25,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
     var aBoolean10213: Boolean = false
     var anInt10215: Int
     @JvmField
-    var aClass264_10217: Class264
+    var aCompassSmoother_10217: CompassSmoother
     @JvmField
     var anInt10218: Int = 0
     var anIntArray10219: IntArray
@@ -160,8 +160,8 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
     var anInt10312: Int
     @JvmField
     var anInt10314: Int = 0
-    private val aClass264_10315: Class264
-    private val aClass264_10316: Class264
+    private val aCompassSmoother_10315: CompassSmoother
+    private val aCompassSmoother_10316: CompassSmoother
     @JvmField
     var anIntArray10317: IntArray?
     @JvmField
@@ -218,7 +218,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         if (class225.anIntArray2907 != null && class225.anIntArray2907!![i_3_] > 0) i_7_ = class225.anIntArray2907!![i_3_]
         if (i_4_ == -1) {
             if (this.anIntArray10296!![i_3_] == -1) return true
-            val i_8_ = this.aClass264_10217.method2019((-41).toByte())
+            val i_8_ = this.aCompassSmoother_10217.method2019((-41).toByte())
             val i_9_ = this.anIntArray10296!![i_3_]
             val i_10_ = -i_9_ + i_8_
             if (i_10_ >= -i_7_ && i_10_ <= i_7_) {
@@ -233,7 +233,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             else this.anIntArray10296!![i_3_] = NpcSummaryDefinition.method1166(-i_7_ + i_9_, 16383)
             return false
         }
-        if (this.anIntArray10296!![i_3_] == -1) this.anIntArray10296!![i_3_] = this.aClass264_10217.method2019((-104).toByte())
+        if (this.anIntArray10296!![i_3_] == -1) this.anIntArray10296!![i_3_] = this.aCompassSmoother_10217.method2019((-104).toByte())
         val i_12_ = this.anIntArray10296!![i_3_]
         val i_13_ = -i_12_ + i_4_
         if (i_13_ >= -i_7_ && i_7_ >= i_13_) {
@@ -317,26 +317,26 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         anInt10200++
         val class225 = method2422(72.toByte())
         if (i != 2) method2376(11)
-        val i_49_ = (this.aClass264_10217.anInt3370)
+        val i_49_ = (this.aCompassSmoother_10217.anInt3370)
         val bool: Boolean
-        if (class225.anInt2948 == 0) bool = (this.aClass264_10217.method2020(this.anInt10310, this.anInt10282, this.anInt10310, (-113).toByte()))
-        else bool = (this.aClass264_10217.method2020(class225.anInt2917, this.anInt10282, class225.anInt2948, (-107).toByte()))
-        val i_50_ = -i_49_ + this.aClass264_10217.anInt3370
+        if (class225.anInt2948 == 0) bool = (this.aCompassSmoother_10217.method2020(this.anInt10310, this.anInt10282, this.anInt10310, (-113).toByte()))
+        else bool = (this.aCompassSmoother_10217.method2020(class225.anInt2917, this.anInt10282, class225.anInt2948, (-107).toByte()))
+        val i_50_ = -i_49_ + this.aCompassSmoother_10217.anInt3370
         if (i_50_ == 0) {
             this.anInt10247 = 0
-            this.aClass264_10217.method2016(15615, this.anInt10282)
+            this.aCompassSmoother_10217.method2016(15615, this.anInt10282)
         } else this.anInt10247++
         if (bool) {
             if (class225.anInt2901 != 0) {
-                if (i_50_ <= 0) aClass264_10315.method2020(class225.anInt2935, -(class225.anInt2950), class225.anInt2901, (-47).toByte())
-                else aClass264_10315.method2020(class225.anInt2935, class225.anInt2950, class225.anInt2901, (-77).toByte())
+                if (i_50_ <= 0) aCompassSmoother_10315.method2020(class225.anInt2935, -(class225.anInt2950), class225.anInt2901, (-47).toByte())
+                else aCompassSmoother_10315.method2020(class225.anInt2935, class225.anInt2950, class225.anInt2901, (-77).toByte())
             }
-            if (class225.anInt2936 != 0) aClass264_10316.method2020(class225.anInt2904, class225.anInt2926, class225.anInt2936, (-127).toByte())
+            if (class225.anInt2936 != 0) aCompassSmoother_10316.method2020(class225.anInt2904, class225.anInt2926, class225.anInt2936, (-127).toByte())
         } else {
-            if (class225.anInt2901 == 0) aClass264_10315.method2016(15615, 0)
-            else aClass264_10315.method2020(class225.anInt2935, 0, class225.anInt2901, (-26).toByte())
-            if (class225.anInt2936 != 0) aClass264_10316.method2020(class225.anInt2904, 0, class225.anInt2936, (-66).toByte())
-            else aClass264_10316.method2016(15615, 0)
+            if (class225.anInt2901 == 0) aCompassSmoother_10315.method2016(15615, 0)
+            else aCompassSmoother_10315.method2020(class225.anInt2935, 0, class225.anInt2901, (-26).toByte())
+            if (class225.anInt2936 != 0) aCompassSmoother_10316.method2020(class225.anInt2904, 0, class225.anInt2936, (-66).toByte())
+            else aCompassSmoother_10316.method2016(15615, 0)
         }
         return i_50_
     }
@@ -493,7 +493,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         if (bool || class225.anInt2948 != 0 || this.anInt10310 != 0) {
             if (i.toInt() != -108) method2438(-11, -118, -110, -2, -57, -110, 126, 93.toByte())
             this.anInt10282 = 0x3fff and i_87_
-            this.aClass264_10217.method2016(15615, this.anInt10282)
+            this.aCompassSmoother_10217.method2016(15615, this.anInt10282)
         }
     }
 
@@ -657,9 +657,9 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
     fun method2439(i: Int, class64: Class64?) {
         try {
             anInt10205++
-            val i_115_ = aClass264_10315.anInt3370
+            val i_115_ = aCompassSmoother_10315.anInt3370
             if (i >= -110) this.anInt10325 = 90
-            val i_116_ = aClass264_10316.anInt3370
+            val i_116_ = aCompassSmoother_10316.anInt3370
             if (i_115_ != 0 || i_116_ != 0) {
                 val i_117_ = class64!!.fa() / 2
                 class64.H(0, -i_117_, 0)
@@ -676,11 +676,11 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         anInt10277++
         val class225 = method2422(72.toByte())
         if (class225.anInt2948 != 0 || this.anInt10310 != 0) {
-            this.aClass264_10217.method2021(119.toByte())
+            this.aCompassSmoother_10217.method2021(119.toByte())
             if (i.toInt() != 49) method2376(113)
-            val i_119_ = (0x3fff and i_118_ - this.aClass264_10217.anInt3370)
-            if (i_119_ <= 8192) this.anInt10282 = this.aClass264_10217.anInt3370 - -i_119_
-            else this.anInt10282 = (this.aClass264_10217.anInt3370 - 16384 - -i_119_)
+            val i_119_ = (0x3fff and i_118_ - this.aCompassSmoother_10217.anInt3370)
+            if (i_119_ <= 8192) this.anInt10282 = this.aCompassSmoother_10217.anInt3370 - -i_119_
+            else this.anInt10282 = (this.aCompassSmoother_10217.anInt3370 - 16384 - -i_119_)
         }
     }
 
@@ -711,9 +711,9 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         this.anIntArray10304 = IntArray(LocalPlayerState.anInt1905)
         this.anIntArray10284 = IntArray(LocalPlayerState.anInt1905)
         this.anInt10223 = -1000
-        this.aClass264_10217 = Class264()
-        aClass264_10315 = Class264()
-        aClass264_10316 = Class264()
+        this.aCompassSmoother_10217 = CompassSmoother()
+        aCompassSmoother_10315 = CompassSmoother()
+        aCompassSmoother_10316 = CompassSmoother()
         this.aBoolean10318 = false
         this.anIntArray10317 = IntArray(10)
         this.anInt10322 = 0

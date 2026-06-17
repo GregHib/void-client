@@ -51,7 +51,7 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: NativeR
                         MinimapFlagRenderer.aAbstractModelRenderer_1800 = var_renderer.method3691(spriteImage, true)
                         spriteImage!!.method1518()
                         Class348_Sub5.aAbstractModelRenderer_6627 = var_renderer.method3691(spriteImage, true)
-                    } else var_renderer!!.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 shl 24 or Class264.anInt3376), 1)
+                    } else var_renderer!!.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 shl 24 or CompassSmoother.anInt3376), 1)
                 }
                 anInt8709++
                 if (OutputStream_Sub2.aAbstractModelRenderer_106 != null && MinimapFlagRenderer.aAbstractModelRenderer_1800 != null) {
@@ -62,7 +62,7 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: NativeR
                 }
                 if (bool == false) {
                     NodeDeque.aClass324_3326!!.method2576(string, (Class348_Sub42_Sub11.anInt9586) or 0xffffff.inv(), 14 + i_5_, 3 + i_4_, -1, -127)
-                    var_renderer!!.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 or (255 + -Class51.anInt948 shl 24)), 1)
+                    var_renderer!!.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (CompassSmoother.anInt3376 or (255 + -Class51.anInt948 shl 24)), 1)
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))

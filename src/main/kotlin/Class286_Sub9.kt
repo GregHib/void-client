@@ -231,7 +231,7 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
                     val class359 = (Class359().also { Class348_Sub17.aClass359Array6802!![i_22_] = it })
                     class359.anInt4420 = ((Class90.regionTileY - -(player.anIntArray10317!![0]) shr 6) + ((player.anIntArray10320!![0] + ArbVertexProgram.regionTileX) shr 6 shl 14) + ((player.plane).toInt() shl 28))
                     if (player.anInt10524 != -1) class359.anInt4423 = player.anInt10524
-                    else class359.anInt4423 = player.aClass264_10217.method2019((-91).toByte())
+                    else class359.anInt4423 = player.aCompassSmoother_10217.method2019((-91).toByte())
                     class359.aBoolean4426 = player.aBoolean10554
                     class359.anInt4425 = (player.anInt10275)
                     if (player.anInt10553 > 0) Class295.method2221(player, -28482)

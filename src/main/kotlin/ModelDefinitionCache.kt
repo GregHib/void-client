@@ -180,7 +180,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                     var bool_8_ = true
                     if (class318_sub1_sub3_sub3 is Npc) bool_8_ = class318_sub1_sub3_sub3.aClass79_10505!!.aBoolean1331
                     if (bool_8_) {
-                        val i_9_ = ((class318_sub1_sub3_sub3.anInt10282) - class318_sub1_sub3_sub3.aClass264_10217.anInt3370)
+                        val i_9_ = ((class318_sub1_sub3_sub3.anInt10282) - class318_sub1_sub3_sub3.aCompassSmoother_10217.anInt3370)
                         if (i_9_ != 0 && class318_sub1_sub3_sub3.anInt10275 == -1 && (class318_sub1_sub3_sub3.anInt10310) != 0) i_7_ = 8
                         if (!bool && (class318_sub1_sub3_sub3.anInt10319) > 2) i_7_ = 24
                         if (!bool && (class318_sub1_sub3_sub3.anInt10319) > 3) i_7_ = 32

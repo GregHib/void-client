@@ -178,7 +178,7 @@ import WalkingTypeUtil.method1979
 import NpcDefinitionCache.Companion.method1980
 import NpcDefinitionCache.Companion.method1987
 import NodeDeque.Companion.method1994
-import Class264.Companion.method2018
+import CompassSmoother.Companion.method2018
 import Class267.Companion.method2026
 import Class267.Companion.method2029
 import Class268.Companion.method2036
@@ -1565,7 +1565,7 @@ class Client : GameAppletFrame() {
             if (Class367_Sub11.anInt7396 % 50 == 0) {
                 Class348_Sub48.anInt7134 = Class81.anInt1433
                 Class81.anInt1433 = 0
-                Class264.anInt3372 = MinimapRectClipper.anInt221
+                CompassSmoother.anInt3372 = MinimapRectClipper.anInt221
                 MinimapRectClipper.anInt221 = 0
             }
             method102(61.toByte())
