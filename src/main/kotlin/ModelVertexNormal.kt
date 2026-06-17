@@ -1,7 +1,7 @@
 /* Class266 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class266 {
+class ModelVertexNormal {
     var aShort3379: Short = 0
     var anInt3380: Int = 0
     var anInt3381: Int = 0

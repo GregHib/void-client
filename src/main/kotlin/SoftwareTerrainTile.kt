@@ -20,7 +20,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     private var aFloat8227 = 0f
     private var anInt8228 = -1
     private var aFloat8229 = 0f
-    private var aClass266ArrayArray8230: Array<Array<Class266?>?>? = null
+    private var aModelVertexNormalArrayArray8230: Array<Array<ModelVertexNormal?>?>? = null
     private var aFloat8231 = 0f
     private var aByteArrayArray8232: Array<ByteArray?>?
     private var aFloat8233 = 0f
@@ -31,8 +31,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
 
     override fun U(i: Int, i_0_: Int, `is`: IntArray?, is_1_: IntArray?, is_2_: IntArray, is_3_: IntArray?, is_4_: IntArray, is_5_: IntArray?, is_6_: IntArray, is_7_: IntArray, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean) {
         val bool_11_ = (anInt8223 and 0x20) == 0
-        if (aClass266ArrayArray8230 == null && !bool_11_) {
-            aClass266ArrayArray8230 = Array<Array<Class266?>?>(this.anInt4587) { arrayOfNulls<Class266?>(this.anInt4590) }
+        if (aModelVertexNormalArrayArray8230 == null && !bool_11_) {
+            aModelVertexNormalArrayArray8230 = Array<Array<ModelVertexNormal?>?>(this.anInt4587) { arrayOfNulls<ModelVertexNormal?>(this.anInt4590) }
             aTerrainTileDataArrayArray8225 = Array<Array<TerrainTileData?>?>(this.anInt4587) { arrayOfNulls<TerrainTileData?>(this.anInt4590) }
         } else if (aSpriteTextureDataArrayArray8219 == null && bool_11_) aSpriteTextureDataArrayArray8219 = Array<Array<SpriteTextureData?>?>(this.anInt4587) { arrayOfNulls<SpriteTextureData?>(this.anInt4590) }
         else check(aVertexNormalArrayArray8215 == null)
@@ -165,44 +165,44 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                     }
                 } else bool_28_ = false
                 if (bool_28_) {
-                    val class266 = Class266()
+                    val modelVertexNormal = ModelVertexNormal()
                     val i_36_ = is_4_[0]
                     val i_37_ = is_6_[0]
                     if (is_5_ != null) {
-                        class266.anInt3388 = is_5_[0] shr 8
-                        if (i_36_ == 0) class266.aByte3386 = (class266.aByte3386.toInt() or 0x2).toByte()
+                        modelVertexNormal.anInt3388 = is_5_[0] shr 8
+                        if (i_36_ == 0) modelVertexNormal.aByte3386 = (modelVertexNormal.aByte3386.toInt() or 0x2).toByte()
                     } else if (i_36_ == 0) return
-                    if ((this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i + 1]!![i_0_]) && (this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i + 1]!![i_0_ + 1]) && (this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i]!![i_0_ + 1])) class266.aByte3386 = (class266.aByte3386.toInt() or 0x1).toByte()
-                    if (i_37_ != -1 && (class266.aByte3386.toInt() and 0x2) == 0 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_37_, -6662)!!.aBoolean209)) {
+                    if ((this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i + 1]!![i_0_]) && (this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i + 1]!![i_0_ + 1]) && (this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i]!![i_0_ + 1])) modelVertexNormal.aByte3386 = (modelVertexNormal.aByte3386.toInt() or 0x1).toByte()
+                    if (i_37_ != -1 && (modelVertexNormal.aByte3386.toInt() and 0x2) == 0 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_37_, -6662)!!.aBoolean209)) {
                         var i_38_: Int
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_29_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        class266.anInt3389 = (Class298.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 88, i_38_, i_8_))
-                        if (class266.anInt3388 != 0) class266.anInt3389 = class266.anInt3389 or (255 - (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_]) shl 25)
+                        modelVertexNormal.anInt3389 = (Class298.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 88, i_38_, i_8_))
+                        if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3389 = modelVertexNormal.anInt3389 or (255 - (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_30_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        class266.anInt3387 = (Class298.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 97, i_38_, i_8_))
-                        if (class266.anInt3388 != 0) class266.anInt3387 = class266.anInt3387 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_] - aByteArrayArray8232!![i + 1]!![i_0_]) shl 25)
+                        modelVertexNormal.anInt3387 = (Class298.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 97, i_38_, i_8_))
+                        if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3387 = modelVertexNormal.anInt3387 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_] - aByteArrayArray8232!![i + 1]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_31_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        class266.anInt3380 = (Class298.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 103, i_38_, i_8_))
-                        if (class266.anInt3388 != 0) class266.anInt3380 = class266.anInt3380 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_ + 1] - (aByteArrayArray8232!![i + 1]!![i_0_ + 1])) shl 25)
+                        modelVertexNormal.anInt3380 = (Class298.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 103, i_38_, i_8_))
+                        if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3380 = modelVertexNormal.anInt3380 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_ + 1] - (aByteArrayArray8232!![i + 1]!![i_0_ + 1])) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_32_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        class266.anInt3381 = (Class298.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 42, i_38_, i_8_))
-                        class266.aShort3379 = i_37_.toShort()
+                        modelVertexNormal.anInt3381 = (Class298.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 42, i_38_, i_8_))
+                        modelVertexNormal.aShort3379 = i_37_.toShort()
                     } else {
                         var i_39_: Int
                         if (is_3_ != null && i_9_ != 0) {
@@ -210,38 +210,38 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        class266.anInt3389 = (Class298.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 68, i_39_, i_8_))
-                        if (class266.anInt3388 != 0) class266.anInt3389 = class266.anInt3389 or (255 - (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_]) shl 25)
+                        modelVertexNormal.anInt3389 = (Class298.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 68, i_39_, i_8_))
+                        if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3389 = modelVertexNormal.anInt3389 or (255 - (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_39_ = 255 * is_3_[i_30_] / i_9_
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        class266.anInt3387 = (Class298.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 112, i_39_, i_8_))
-                        if (class266.anInt3388 != 0) class266.anInt3387 = class266.anInt3387 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_] - aByteArrayArray8232!![i + 1]!![i_0_]) shl 25)
+                        modelVertexNormal.anInt3387 = (Class298.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 112, i_39_, i_8_))
+                        if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3387 = modelVertexNormal.anInt3387 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_] - aByteArrayArray8232!![i + 1]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_39_ = 255 * is_3_[i_31_] / i_9_
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        class266.anInt3380 = (Class298.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 62, i_39_, i_8_))
-                        if (class266.anInt3388 != 0) class266.anInt3380 = class266.anInt3380 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_ + 1] - (aByteArrayArray8232!![i + 1]!![i_0_ + 1])) shl 25)
+                        modelVertexNormal.anInt3380 = (Class298.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 62, i_39_, i_8_))
+                        if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3380 = modelVertexNormal.anInt3380 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_ + 1] - (aByteArrayArray8232!![i + 1]!![i_0_ + 1])) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_39_ = 255 * is_3_[i_32_] / i_9_
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        class266.anInt3381 = (Class298.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 84, i_39_, i_8_))
-                        if (class266.anInt3388 != 0) class266.anInt3381 = class266.anInt3381 or (255 - (aByteArrayArray8220!![i]!![i_0_ + 1] - aByteArrayArray8232!![i]!![i_0_ + 1]) shl 25)
-                        class266.aShort3379 = (-1).toShort()
+                        modelVertexNormal.anInt3381 = (Class298.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 84, i_39_, i_8_))
+                        if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3381 = modelVertexNormal.anInt3381 or (255 - (aByteArrayArray8220!![i]!![i_0_ + 1] - aByteArrayArray8232!![i]!![i_0_ + 1]) shl 25)
+                        modelVertexNormal.aShort3379 = (-1).toShort()
                     }
                     if (is_3_ != null) {
-                        class266.aShort3384 = is_3_[i_31_].toShort()
-                        class266.aShort3385 = is_3_[i_32_].toShort()
-                        class266.aShort3383 = is_3_[i_30_].toShort()
-                        class266.aShort3382 = is_3_[i_29_].toShort()
+                        modelVertexNormal.aShort3384 = is_3_[i_31_].toShort()
+                        modelVertexNormal.aShort3385 = is_3_[i_32_].toShort()
+                        modelVertexNormal.aShort3383 = is_3_[i_30_].toShort()
+                        modelVertexNormal.aShort3382 = is_3_[i_29_].toShort()
                     }
-                    aClass266ArrayArray8230!![i]!![i_0_] = class266
+                    aModelVertexNormalArrayArray8230!![i]!![i_0_] = modelVertexNormal
                 } else {
                     val terrainTileData = TerrainTileData()
                     terrainTileData.aShort2003 = `is`.size.toShort()
@@ -340,7 +340,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         if (aVertexNormalArrayArray8215 == null) {
             aVertexNormalArrayArray8215 = Array<Array<VertexNormal?>?>(this.anInt4587) { arrayOfNulls<VertexNormal?>(this.anInt4590) }
             aModelVertexDataArrayArray8222 = Array<Array<ModelVertexData?>?>(this.anInt4587) { arrayOfNulls<ModelVertexData?>(this.anInt4590) }
-        } else check(!(aClass266ArrayArray8230 != null || aSpriteTextureDataArrayArray8219 != null))
+        } else check(!(aModelVertexNormalArrayArray8230 != null || aSpriteTextureDataArrayArray8219 != null))
         var bool_74_ = false
         if (is_67_.size == 2 && is_64_.size == 2 && (is_67_[0] == is_67_[1] || is_69_[0] != -1 && is_69_[0] == is_69_[1])) {
             bool_74_ = true
@@ -485,7 +485,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     }
 
     private fun method3990(i: Int, i_105_: Int, bool: Boolean, particleSystemState: ParticleSystemState, shadowProjector: ShadowProjector, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
-        val class266 = aClass266ArrayArray8230!![i]!![i_105_]
+        val class266 = aModelVertexNormalArrayArray8230!![i]!![i_105_]
         if (class266 == null) {
             val class145 = aTerrainTileDataArrayArray8225!![i]!![i_105_]
             if (class145 != null) {
@@ -1189,7 +1189,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     private fun method3992(i: Int, i_255_: Int, i_256_: Int) {
         val class167 = aHa_Sub1_8217.method3724(Thread.currentThread())
         class167!!.aShadowProjector_2220!!.anInt1674 = 0
-        if (aClass266ArrayArray8230 != null) method3990(i, i_255_, class167.aBoolean2195, class167, class167.aShadowProjector_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
+        if (aModelVertexNormalArrayArray8230 != null) method3990(i, i_255_, class167.aBoolean2195, class167, class167.aShadowProjector_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
         else if (aVertexNormalArrayArray8215 != null) method3994(i, i_255_, class167.aShadowProjector_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232, i_256_)
         else if (aSpriteTextureDataArrayArray8219 != null) method3995(i, i_255_, class167.aBoolean2195, class167, class167.aShadowProjector_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
     }
@@ -1210,9 +1210,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         for (i_271_ in i_262_..<i_264_) {
             for (i_272_ in i_263_..<i_265_) {
                 if (bools[i_271_ - i_262_]!![i_272_ - i_263_]) {
-                    if (aClass266ArrayArray8230 != null) {
-                        if (aClass266ArrayArray8230!![i_271_]!![i_272_] != null) {
-                            val class266 = aClass266ArrayArray8230!![i_271_]!![i_272_]!!
+                    if (aModelVertexNormalArrayArray8230 != null) {
+                        if (aModelVertexNormalArrayArray8230!![i_271_]!![i_272_] != null) {
+                            val class266 = aModelVertexNormalArrayArray8230!![i_271_]!![i_272_]!!
                             if (class266.aShort3379.toInt() != -1 && (class266.aByte3386.toInt() and 0x2) == 0 && class266.anInt3388 == 0) {
                                 val i_273_ = aHa_Sub1_8217.method3722(class266.aShort3379.toInt())
                                 shadowProjector.method1022((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class291.method2198(0, (class266.anInt3380), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3381), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3387), i_273_).toFloat())
@@ -1745,7 +1745,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         class109.anInt1674 = 0
         class109.aBoolean1671 = true
         aHa_Sub1_8217.ya()
-        if (aClass266ArrayArray8230 != null || aSpriteTextureDataArrayArray8219 != null) method3993(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
+        if (aModelVertexNormalArrayArray8230 != null || aSpriteTextureDataArrayArray8219 != null) method3993(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
         else if (aVertexNormalArrayArray8215 != null) method3996(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
     }
 
