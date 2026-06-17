@@ -498,10 +498,10 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 var class79 = (npc.aClass79_10505)
-                                if (class79!!.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1))
+                                if (class79!!.anIntArray1377 != null) class79 = (class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1))
                                 if (class79 != null) {
                                     WorldMapToggle.anInt3874++
-                                    val class348_sub47 = (method2148(Class318_Sub7.aClass351_6443, Class348_Sub23_Sub2.aClass77_9029, -111))
+                                    val class348_sub47 = (method2148(SpotAnimEntity.aClass351_6443, Class348_Sub23_Sub2.aClass77_9029, -111))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), class79.anInt1344)
                                     Class348_Sub42_Sub14.method3243(-99, class348_sub47)
                                 }
@@ -566,7 +566,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 FogOptionState.anInt6048 = 2
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
-                                val class348_sub47 = (method2148(Class318_Sub1_Sub5_Sub1.aClass351_10134, Class348_Sub23_Sub2.aClass77_9029, -96))
+                                val class348_sub47 = (method2148(ModelWallEntity.aClass351_10134, Class348_Sub23_Sub2.aClass77_9029, -96))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(124.toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -121)) 1 else 0))
                                 Class348_Sub42_Sub14.method3243(117, class348_sub47)
@@ -680,7 +680,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i_76_ == 1007) {
                             FogOptionState.anInt6048 = 2
-                            Class318_Sub1_Sub5_Sub2.anInt10164++
+                            SequencedWallEntity.anInt10164++
                             SpriteArchiveLoader.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             Class93.anInt1534 = i_72_
@@ -696,7 +696,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 FogOptionState.anInt6048 = 2
-                                Class318_Sub1_Sub4_Sub1.anInt10073++
+                                NpcActorEntity.anInt10073++
                                 Class348.anInt4292 = 0
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
@@ -947,7 +947,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     }
                                 }
                                 if (i_76_ == 9) {
-                                    Class318_Sub1_Sub3_Sub4.anInt10364++
+                                    MapElementDecor.anInt10364++
                                     SpriteArchiveLoader.anInt385 = i_73_
                                     Class348.anInt4292 = 0
                                     FogOptionState.anInt6048 = 2

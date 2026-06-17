@@ -52,7 +52,7 @@ class i : Class64, Interface19 {
 
     public external override fun P(i: Int, i_11_: Int, i_12_: Int, i_13_: Int)
 
-    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_14_: Int) {
+    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int, i_14_: Int) {
         if (class318_sub3 == null) anOa5117.method3973()!!.method149(this, abstractCameraTransform, null, i, i_14_)
         else {
             oa.Companion.anIntArray5132[5] = 0
@@ -194,7 +194,7 @@ class i : Class64, Interface19 {
         }
     }
 
-    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int) {
+    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int) {
         if (class318_sub3 == null) anOa5117.method3973()?.method145(this, abstractCameraTransform!!, null, i)
         else {
             oa.Companion.anIntArray5132[5] = 0

@@ -358,7 +358,7 @@ class Class79 {
             var bool_48_ = bool
             val i_49_ = if (loadProgressCounters == null) 0 else loadProgressCounters.size
             for (i_50_ in 0..<i_49_) {
-                Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_50_] = null
+                ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = null
                 if (loadProgressCounters!![i_50_] != null) {
                     val class17_51_ = class87!!.method835((loadProgressCounters[i_50_]!!.anInt2454), 7)
                     if (class17_51_.anIntArray237 != null) {
@@ -367,13 +367,13 @@ class Class79 {
                         val i_52_ = loadProgressCounters[i_50_]!!.anInt2451
                         val i_53_ = loadProgressCounters[i_50_]!!.anInt2455
                         var i_54_ = class17_51_.anIntArray237[i_52_]
-                        Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_50_] = class87.method839(i_54_ ushr 16, 3)
+                        ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = class87.method839(i_54_ ushr 16, 3)
                         i_54_ = i_54_ and 0xffff
                         Class90.anIntArray1518!![i_50_] = i_54_
-                        if ((Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_50_]) != null) {
-                            bool_46_ = bool_46_ or Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3272(i_54_, 0)
-                            bool_45_ = bool_45_ or Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3271(i_54_, 14)
-                            bool_48_ = bool_48_ or Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3267((-92).toByte(), i_54_)
+                        if ((ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]) != null) {
+                            bool_46_ = bool_46_ or ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3272(i_54_, 0)
+                            bool_45_ = bool_45_ or ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3271(i_54_, 14)
+                            bool_48_ = bool_48_ or ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3267((-92).toByte(), i_54_)
                             bool_47_ = bool_47_ or class17_51_.aBoolean242
                         }
                         if ((class17_51_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_53_ != -1 && i_53_ < (class17_51_.anIntArray237).size) {
@@ -565,7 +565,7 @@ class Class79 {
             var i_86_ = 0
             var i_87_ = 1
             while (i_86_ < i_49_) {
-                if ((Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_86_]) != null) class64_82_!!.method603(
+                if ((ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_86_]) != null) class64_82_!!.method603(
                     (-55).toByte(),
                     -1 + Class67.anIntArray4648!![i_86_],
                     null,
@@ -574,7 +574,7 @@ class Class79 {
                     ParticleDefLoader.anIntArray2466!![i_86_],
                     (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
-                    (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_86_]),
+                    (ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_86_]),
                     (AudioResampler.aWidgetDefinitionArray2169s!![i_86_]!!.aBoolean242),
                     Class348_Sub23_Sub4.anIntArray9050!![i_86_]
                 )
@@ -602,7 +602,7 @@ class Class79 {
             else if (class348_sub42_sub17_63_ != null) class64_82_!!.method617(i_60_, i_62_, class348_sub42_sub17_64_, 0, class348_sub42_sub17_63_, false, widgetDefinition!!.aBoolean242, i_61_, i_34_ - 1)
             var i_91_ = 0
             while (i_49_ > i_91_) {
-                Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_91_] = null
+                ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_91_] = null
                 Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_91_] = null
                 AudioResampler.aWidgetDefinitionArray2169s!![i_91_] = null
                 i_91_++
@@ -779,8 +779,8 @@ class Class79 {
         fun method797(i: Int, i_29_: Int, i_30_: Byte) {
             anInt1379++
             if (Class348_Sub40_Sub6.anInt9139 != i_29_) {
-                Class318_Sub6.anIntArray6432 = IntArray(i_29_)
-                for (i_31_ in 0..<i_29_) Class318_Sub6.anIntArray6432!![i_31_] = (i_31_ shl 12) / i_29_
+                SceneEffectMarker.anIntArray6432 = IntArray(i_29_)
+                for (i_31_ in 0..<i_29_) SceneEffectMarker.anIntArray6432!![i_31_] = (i_31_ shl 12) / i_29_
                 SimpleBinaryOptionState.anInt6076 = i_29_ + -1
                 Class348_Sub40_Sub6.anInt9139 = i_29_
                 MediaStreamClient.anInt3201 = 32 * i_29_
@@ -790,7 +790,7 @@ class Class79 {
                 if (Class348_Sub40_Sub6.anInt9139 != i) {
                     LightDetailOptionState.anIntArray6035 = IntArray(i)
                     for (i_32_ in 0..<i) LightDetailOptionState.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
-                } else LightDetailOptionState.anIntArray6035 = Class318_Sub6.anIntArray6432
+                } else LightDetailOptionState.anIntArray6035 = SceneEffectMarker.anIntArray6432
                 FixedFunctionMaterialPass.anInt6212 = i
                 TextureCubeProvider.anInt6325 = -1 + i
             }

@@ -36,18 +36,18 @@ class Class348_Sub47 : Class348() {
                 try {
                     ObjectSpawnDecoder.anInt1803 = 0
                     MapArchiveSource.anInt4797 = SkyboxGradient.anInt3936
-                    Class318_Sub1_Sub5.anInt8780 = 0
+                    WallEntity.anInt8780 = 0
                     anInt7120++
                     SkyboxGradient.anInt3936 = 0
                     val l_1_ = method599(-53)
-                    var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as Class318_Sub10?
+                    var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?
                     if (i > 40) {
                         while ( /**/class318_sub10 != null) {
-                            if (class318_sub10.method2535(var_renderer, l)) Class318_Sub1_Sub5.anInt8780++
-                            class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1878((-64).toByte()) as Class318_Sub10?
+                            if (class318_sub10.method2535(var_renderer, l)) WallEntity.anInt8780++
+                            class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1878((-64).toByte()) as SceneGraphContainer?
                         }
                         if (!Class348_Sub16_Sub2.aBoolean8874 || l % 100L != 0L) break
-                        println("Particle system count: " + GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1874(0) + ", running: " + Class318_Sub1_Sub5.anInt8780)
+                        println("Particle system count: " + GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1874(0) + ", running: " + WallEntity.anInt8780)
                         println("Emitters: " + ObjectSpawnDecoder.anInt1803 + " Particles: " + SkyboxGradient.anInt3936 + ". Time taken: " + (-l_1_ + method599(-112)) + "ms")
                     }
                 } catch (runtimeexception: RuntimeException) {

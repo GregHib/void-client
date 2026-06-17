@@ -51,7 +51,7 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
         }
 
         @JvmStatic
-        fun method3254(i: Int, i_2_: Int, i_3_: Int, class318_sub1_sub4: Class318_Sub1_Sub4, class318_sub1_sub4_4_: Class318_Sub1_Sub4?) {
+        fun method3254(i: Int, i_2_: Int, i_3_: Int, class318_sub1_sub4: ActorEntity, class318_sub1_sub4_4_: ActorEntity?) {
             val class357 = Class348_Sub46.method3321(i, i_2_, i_3_)
             if (class357 != null) {
                 class357.aClass318_Sub1_Sub4_4406 = class318_sub1_sub4

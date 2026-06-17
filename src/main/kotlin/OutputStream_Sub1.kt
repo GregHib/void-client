@@ -76,7 +76,7 @@ class OutputStream_Sub1 : OutputStream() {
                 val i_12_ = Class5.anInt4638
                 for (i_13_ in 0..4) {
                     if (SpotAnimDefinition.aBooleanArray2374!![i_13_]) {
-                        val i_14_ = ((Math.random() * ((CollisionMapAccessor.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - CollisionMapAccessor.anIntArray3552!![i_13_].toDouble() + (sin((Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_13_]).toDouble() * ((Class338.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (ModelHeaderCache.anIntArray3273!![i_13_]).toDouble())).toInt()
+                        val i_14_ = ((Math.random() * ((CollisionMapAccessor.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - CollisionMapAccessor.anIntArray3552!![i_13_].toDouble() + (sin((GroundDecorSceneEntity.anIntArray9981!![i_13_]).toDouble() * ((Class338.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (ModelHeaderCache.anIntArray3273!![i_13_]).toDouble())).toInt()
                         if (i_13_ == 4) {
                             Class348_Sub42_Sub19.anInt9701 += i_14_
                             if (Class348_Sub42_Sub19.anInt9701 >= 1024) {
@@ -90,7 +90,7 @@ class OutputStream_Sub1 : OutputStream() {
                     }
                 }
                 if (GlslMaterialPass.anInt6246 < 0) GlslMaterialPass.anInt6246 = 0
-                if (-1 + (Class318_Sub7.anInt6451 shl 9) < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = -1 + (Class318_Sub7.anInt6451 shl 9)
+                if (-1 + (SpotAnimEntity.anInt6451 shl 9) < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = -1 + (SpotAnimEntity.anInt6451 shl 9)
                 if (Class59_Sub2_Sub2.anInt8685 < 0) Class59_Sub2_Sub2.anInt8685 = 0
                 if (Class59_Sub2_Sub2.anInt8685 > (Class348_Sub41.anInt7054 shl 9) + -1) Class59_Sub2_Sub2.anInt8685 = (Class348_Sub41.anInt7054 shl 9) - 1
                 Class348_Sub42_Sub11.method3225(114)
@@ -162,7 +162,7 @@ class OutputStream_Sub1 : OutputStream() {
                     if (WorldMapRenderer.anInt4674 == 10) {
                         WorldListEntry.method283(-127, i_0_, 256, i_2_, i_1_, i_3_, 256)
                         method3802(i_3_, i_2_, 2, i_1_, i_0_, 256, 256)
-                        Class318_Sub1_Sub1_Sub2.method2403(i_1_, 256, i_3_, i_0_, 19206, i_2_, 256)
+                        GroundDecorSceneEntity.method2403(i_1_, 256, i_3_, i_0_, 19206, i_2_, 256)
                         ItemDefinitionLoader.method1289(i_2_, i_0_, i_3_, 8, i_1_)
                     }
                     Class348_Sub42_Sub11.method3223()

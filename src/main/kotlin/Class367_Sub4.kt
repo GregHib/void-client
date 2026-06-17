@@ -80,11 +80,11 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                 this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
             } else {
                 this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), 117, (Class328_Sub3.aRenderConfigFactory_6519))
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, (Class318_Sub1_Sub2.aClass70_8737))
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntity.aClass70_8737))
                 this.aHa_Sub3_4479.method3897(2, -4382)
                 this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), 122, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, (Class318_Sub1_Sub2.aClass70_8737))
-                this.aHa_Sub3_4479.method3924(true, false, 1, (Class318_Sub1_Sub2.aClass70_8737), false)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntity.aClass70_8737))
+                this.aHa_Sub3_4479.method3924(true, false, 1, (SceneObjectEntity.aClass70_8737), false)
                 this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
                 this.aHa_Sub3_4479.method3850((-61).toByte(), (this.aHa_Sub3_4479.anInterface18_8147))
             }
@@ -117,7 +117,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                 this.aHa_Sub3_4479.method3897(2, i + -4469)
                 this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), i.toInt() xor 0x21, (ParticleSystemState.aRenderConfigFactory_2207))
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
-                this.aHa_Sub3_4479.method3849(47.toByte(), 1, (Class318_Sub1_Sub2.aClass70_8737))
+                this.aHa_Sub3_4479.method3849(47.toByte(), 1, (SceneObjectEntity.aClass70_8737))
                 this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
                 this.aHa_Sub3_4479.method3850(64.toByte(), null)
             }

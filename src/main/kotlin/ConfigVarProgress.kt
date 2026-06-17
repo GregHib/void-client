@@ -108,7 +108,7 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
 
         fun method2311(i: Byte, i_12_: Int) {
             anInt4820++
-            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_12_, 105.toByte(), 16)
+            val class348_sub42_sub15 = NamedTimedNode.method2516(i_12_, 105.toByte(), 16)
             class348_sub42_sub15.method3251(-16058)
             val i_13_ = 126 / ((i - -54) / 38)
         }

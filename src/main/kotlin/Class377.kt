@@ -351,7 +351,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                     glDisable(3169)
                     glDisable(3170)
                 } else {
-                    val i_16_ = Class318_Sub1_Sub3.method2411(cameraNodeList, 25602)
+                    val i_16_ = GroundDecorEntity.method2411(cameraNodeList, 25602)
                     glTexGeni(8192, 9472, i_16_)
                     glEnable(3168)
                     glTexGeni(8193, 9472, i_16_)
@@ -1370,7 +1370,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         fun method3965(string: String?, i: Int, i_1_: Int) {
             try {
                 anInt9841++
-                val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, 105.toByte(), i_1_) //2
+                val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), i_1_) //2
                 class348_sub42_sub15.method3246(-25490)
                 class348_sub42_sub15.aString9654 = string
             } catch (runtimeexception: RuntimeException) {

@@ -28,10 +28,10 @@ import GlslEnvMaterialPass.Companion.method2162
 import ScrollTexMaterialPass.Companion.method2165
 import CubeMapMaterialPass.Companion.method2172
 import ItemModelDefinition.Companion.method326
-import Class318_Sub1_Sub1.Companion.method2396
-import Class318_Sub1_Sub2.Companion.method2405
-import Class318_Sub1_Sub4.Companion.method2478
-import Class318_Sub1_Sub5.Companion.method2487
+import TileSceneEntity.Companion.method2396
+import SceneObjectEntity.Companion.method2405
+import ActorEntity.Companion.method2478
+import WallEntity.Companion.method2487
 import Class324.Companion.method2570
 import Class348_Sub16_Sub3.Companion.method2839
 import Class348_Sub1_Sub3.Companion.method2732
@@ -895,13 +895,13 @@ object Class66 {
                 return
             }
             if (i == 5302) {
-                val class57s = Class318_Sub9_Sub1.method2515(1494)!!
+                val class57s = NamedTimedNode.method2515(1494)!!
                 anIntArray1149!![anInt1173++] = class57s.size
                 return
             }
             if (i == 5303) {
                 val i_99_ = anIntArray1149!![--anInt1173]
-                val class57s = Class318_Sub9_Sub1.method2515(1494)!!
+                val class57s = NamedTimedNode.method2515(1494)!!
                 anIntArray1149!![anInt1173++] = class57s[i_99_]!!.anInt1047
                 anIntArray1149!![anInt1173++] = class57s[i_99_]!!.anInt1054
                 return
@@ -910,7 +910,7 @@ object Class66 {
                 val i_100_ = Class346.anInt4276
                 val i_101_ = FlickeringEffectsOptionState.anInt5911
                 var i_102_ = -1
-                val class57s = Class318_Sub9_Sub1.method2515(1494)!!
+                val class57s = NamedTimedNode.method2515(1494)!!
                 for (i_103_ in class57s.indices) {
                     val class57 = class57s[i_103_]!!
                     if (class57.anInt1047 == i_100_ && class57.anInt1054 == i_101_) {
@@ -964,7 +964,7 @@ object Class66 {
             }
             if (i == 5401) {
                 anInt1173 -= 2
-                Class318_Sub6.aShortArray6428!![anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
+                SceneEffectMarker.aShortArray6428!![anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
                 Exception_Sub1.aModelHeaderCache_112!!.method1930(-21804)
                 Exception_Sub1.aModelHeaderCache_112!!.method1936(-71)
                 MapAreaDefinition.aBufferedMessageQueue_2529!!.method2074(-118)
@@ -1058,14 +1058,14 @@ object Class66 {
                 Class348_Sub42_Sub4.anInt9511 = anIntArray1149!![anInt1173 + 3]
                 HudTabPanel.anInt2996 = anIntArray1149!![anInt1173 + 4]
                 Class348_Sub40_Sub16.anInt9231 = anIntArray1149!![anInt1173 + 5]
-                Class318_Sub1_Sub3_Sub3.anInt10257 = anIntArray1149!![anInt1173 + 6]
+                ProjectedGroundDecor.anInt10257 = anIntArray1149!![anInt1173 + 6]
                 SkyboxGradient.anInt3937 = anIntArray1149!![anInt1173 + 7]
                 Class79.anInt1387 = anIntArray1149!![anInt1173 + 8]
                 Class348_Sub42_Sub11.anInt9586 = anIntArray1149!![anInt1173 + 9]
                 Class5_Sub2.anInt8363 = anIntArray1149!![anInt1173 + 10]
                 CameraRotationStub.aClass45_322!!.method421(false, HudTabPanel.anInt2996)
                 CameraRotationStub.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)
-                CameraRotationStub.aClass45_322!!.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257)
+                CameraRotationStub.aClass45_322!!.method421(false, ProjectedGroundDecor.anInt10257)
                 CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937)
                 CameraRotationStub.aClass45_322!!.method421(false, Class79.anInt1387)
                 SpotAnimVector.aAbstractModelRenderer_2309 = null
@@ -1099,7 +1099,7 @@ object Class66 {
                 anInt1173 -= 2
                 val i_122_ = anIntArray1149!![anInt1173]
                 val i_123_ = anIntArray1149!![anInt1173 + 1]
-                anIntArray1149!![anInt1173++] = if (Class318_Sub1_Sub3.method2410((-49).toByte(), i_123_, i_122_)) 1 else 0
+                anIntArray1149!![anInt1173++] = if (GroundDecorEntity.method2410((-49).toByte(), i_123_, i_122_)) 1 else 0
                 return
             }
             if (i == 5429) {
@@ -1179,8 +1179,8 @@ object Class66 {
                 if (i_135_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![MapArchiveSource.anInt4803]!!).size shr 1) throw RuntimeException()
                 CompassSmoother.anInt3373 = i_135_
                 Class348_Sub40_Sub21.anInt9282 = 3
-                Class318_Sub1_Sub5_Sub2.anInt10163 = -1
-                Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
+                SequencedWallEntity.anInt10163 = -1
+                Class9.anInt167 = SequencedWallEntity.anInt10163
                 return
             }
             if (i == 5503) {
@@ -1229,8 +1229,8 @@ object Class66 {
                 Class348_Sub6.anInt6633 = (i_137_ shl 9) + 256
                 Class348_Sub7.anInt6652 = (i_138_ shl 9) + 256
                 Class348_Sub40_Sub21.anInt9282 = 4
-                Class318_Sub1_Sub5_Sub2.anInt10163 = -1
-                Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
+                SequencedWallEntity.anInt10163 = -1
+                Class9.anInt167 = SequencedWallEntity.anInt10163
                 return
             }
             if (i == 5512) {
@@ -1257,10 +1257,10 @@ object Class66 {
                     if (i_141_ < 0) i_141_ = 0
                     else if (i_141_ >= Class348_Sub40_Sub3.anInt9109) i_141_ = Class348_Sub40_Sub3.anInt9109
                     Class9.anInt167 = (i_140_ shl 9) + 256
-                    Class318_Sub1_Sub5_Sub2.anInt10163 = (i_141_ shl 9) + 256
+                    SequencedWallEntity.anInt10163 = (i_141_ shl 9) + 256
                 } else {
                     Class9.anInt167 = -1
-                    Class318_Sub1_Sub5_Sub2.anInt10163 = -1
+                    SequencedWallEntity.anInt10163 = -1
                     return
                 }
                 return
@@ -4102,7 +4102,7 @@ object Class66 {
                     return
                 }
                 if (i == 3346) {
-                    anIntArray1149!![anInt1173++] = Class318_Sub1_Sub5_Sub1.method2489((-106).toByte())
+                    anIntArray1149!![anInt1173++] = ModelWallEntity.method2489((-106).toByte())
                     return
                 }
                 if (i == 3347) {
@@ -4310,7 +4310,7 @@ object Class66 {
                 }
                 if (i == 3619) {
                     val string = aStringArray1152!![--anInt1170]!!
-                    Class318_Sub1_Sub1_Sub1.method2399(string, -117)
+                    WallSceneEntity.method2399(string, -117)
                     return
                 }
                 if (i == 3620) {
@@ -5023,10 +5023,10 @@ object Class66 {
                     if (i_490_ == 0) anIntArray1149!![anInt1173++] = is_489_[i_488_]
                     else if (i_490_ == 1) {
                         val i_492_ = is_489_[i_488_]
-                        anIntArray1149!![anInt1173++] = (Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.anIntArray5063[i_492_])
+                        anIntArray1149!![anInt1173++] = (ProjectedGroundDecor.aVarpStore_10209!!.anIntArray5063[i_492_])
                     } else if (i_490_ == 2) {
                         val i_493_ = is_489_[i_488_]
-                        Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1306((-78).toByte(), anIntArray1149!![--anInt1173], i_493_)
+                        ProjectedGroundDecor.aVarpStore_10209!!.method1306((-78).toByte(), anIntArray1149!![--anInt1173], i_493_)
                     } else if (i_490_ == 3) aStringArray1152!![anInt1170++] = (class348_sub42_sub19.aStringArray9692!![i_488_])
                     else if (i_490_ == 6) i_488_ += is_489_[i_488_]
                     else if (i_490_ == 7) {
@@ -5052,10 +5052,10 @@ object Class66 {
                         aStringArray1155 = class184.aStringArray2473
                     } else if (i_490_ == 25) {
                         val i_494_ = is_489_[i_488_]
-                        anIntArray1149!![anInt1173++] = Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method62(i_494_, -65536)
+                        anIntArray1149!![anInt1173++] = ProjectedGroundDecor.aVarpStore_10209!!.method62(i_494_, -65536)
                     } else if (i_490_ == 27) {
                         val i_495_ = is_489_[i_488_]
-                        Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1307(i_495_, -1, anIntArray1149!![--anInt1173])
+                        ProjectedGroundDecor.aVarpStore_10209!!.method1307(i_495_, -1, anIntArray1149!![--anInt1173])
                     } else if (i_490_ == 31) {
                         anInt1173 -= 2
                         if (anIntArray1149!![anInt1173] <= anIntArray1149!![anInt1173 + 1]) i_488_ += is_489_[i_488_]

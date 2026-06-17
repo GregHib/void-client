@@ -253,8 +253,8 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                                     }
                                     if (i_14_ < 0) i_14_ = 0
                                     i_6_ = ((i_8_ + -i_14_) * (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) * class10.anInt184) / i_8_) shr 2
-                                    if ((class10.aClass318_Sub1_172 != null) && (class10.aClass318_Sub1_172 is Class318_Sub1_Sub3)) {
-                                        val class318_sub1_sub3 = ((class10.aClass318_Sub1_172) as Class318_Sub1_Sub3)
+                                    if ((class10.aClass318_Sub1_172 != null) && (class10.aClass318_Sub1_172 is GroundDecorEntity)) {
+                                        val class318_sub1_sub3 = ((class10.aClass318_Sub1_172) as GroundDecorEntity)
                                         val i_15_ = (class318_sub1_sub3.aShort8743)
                                         val i_16_ = (class318_sub1_sub3.aShort8750)
                                     }
@@ -301,7 +301,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                 Class74.aBoolean1236 = false
                 UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null
             } else if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1 && !method1296(true)) {
-                Class318.anInt3973++
+                SceneLinkedListNode.anInt3973++
                 val class348_sub47 = method2148(OpenGlRenderer.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(118.toByte(), SlotBinding.anInt3428)
                 Class348_Sub42_Sub14.method3243(-54, class348_sub47)

@@ -74,7 +74,7 @@ class MapLabelMenuEntry : AbstractMenuEntry() {
         }
 
         @JvmStatic
-        fun method1041(i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3) {
+        fun method1041(i: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor) {
             anInt5790++
             var bool = false
             if ((Class367_Sub11.anInt7396 != class318_sub1_sub3_sub3.anInt10300) && class318_sub1_sub3_sub3.anInt10286 != -1 && class318_sub1_sub3_sub3.anInt10218 == 0) {

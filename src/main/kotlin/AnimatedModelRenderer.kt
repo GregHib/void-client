@@ -93,8 +93,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-44)
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, Class318_Sub1_Sub2.aClass70_8737)
-        aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aClass70_8737)
     }
 
     override fun method965(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int) {
@@ -224,8 +224,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             }
         }
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, Class318_Sub1_Sub2.aClass70_8737)
-        aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aClass70_8737)
     }
 
     override fun method983(f: Float, f_66_: Float, f_67_: Float, f_68_: Float, f_69_: Float, f_70_: Float, i: Int, var_sprite: Sprite?, i_71_: Int, i_72_: Int) {
@@ -253,7 +253,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3897(1, -4382)
         aHa_Sub3_8407.method3850(((-31).toByte()).toByte(), interface18_impl3)
         aHa_Sub3_8407.method3874(ParticleSystemState.aRenderConfigFactory_2207, 127, Class328_Sub3.aRenderConfigFactory_6519)
-        aHa_Sub3_8407.method3849(47.toByte(), 0, Class318_Sub1_Sub2.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 0, SceneObjectEntity.aClass70_8737)
         val class101_sub2_76_ = aHa_Sub3_8407.method3820(false)
         class101_sub2_76_.method898(class101_sub2)
         class101_sub2_76_.method891(-i_71_, -i_72_, 0)
@@ -339,8 +339,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-118)
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, Class318_Sub1_Sub2.aClass70_8737)
-        aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aClass70_8737)
     }
 
     override fun method984(`is`: IntArray?) {
@@ -374,8 +374,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-41)
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, Class318_Sub1_Sub2.aClass70_8737)
-        aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aClass70_8737)
     }
 
     override fun method971(): Int {
@@ -415,7 +415,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3897(1, -4382)
         aHa_Sub3_8407.method3850(101.toByte(), interface18_impl3)
         aHa_Sub3_8407.method3874(ParticleSystemState.aRenderConfigFactory_2207, 110, Class328_Sub3.aRenderConfigFactory_6519)
-        aHa_Sub3_8407.method3849(47.toByte(), 0, Class318_Sub1_Sub2.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 0, SceneObjectEntity.aClass70_8737)
         val class101_sub2_117_ = aHa_Sub3_8407.method3820(false)
         class101_sub2_117_.method932(1.0f, interface18_impl3!!.method71(((-108).toByte()).toByte(), anInt8417.toFloat()), interface18_impl3.method67(anInt8411.toFloat(), 95), ((-81).toByte()).toByte())
         class101_sub2_117_.method920(interface18_impl3.method71(((-27).toByte()).toByte(), (i_113_ + -i_115_).toFloat()), false, 0.0f, interface18_impl3.method67((i - i_114_).toFloat(), 122))

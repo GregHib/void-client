@@ -10,7 +10,7 @@ import ConfigVarProgress.Companion.method2308
 /* Class318_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
+class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedListNode() {
     companion object {
         var anIntArray6393: IntArray? = IntArray(8)
         var anInt6395: Int = 0
@@ -35,7 +35,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                                 if (class348_sub22 != null) {
                                     val npc = (class348_sub22.aNpc_6859)!!
                                     var class79 = (npc.aClass79_10505)
-                                    if (class79!!.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1))
+                                    if (class79!!.anIntArray1377 != null) class79 = (class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1))
                                     if (class79 != null) `is` = class79.anIntArray1342
                                 }
                             } else if (method1813(8806, (class348_sub42_sub12.anInt9608))) {
@@ -43,7 +43,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                                 var class51: Class51?
                                 if (class348_sub42_sub12.anInt9608 != 1001) class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
                                 else class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
-                                if (class51.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte()))
+                                if (class51.anIntArray945 != null) class51 = (class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
                                 if (class51 != null) `is` = class51.anIntArray917
                             }
                         } else `is` = Exception_Sub1.aModelHeaderCache_112!!.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772
@@ -119,13 +119,13 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                     }
                 }
                 if (class338!!.aByte4192.toInt() == 1) {
-                    val i_20_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (-DisplayModeOptionState.anInt6111 + class338.aShort4185))
-                    if (i_20_ >= 0 && i_20_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
-                        var i_21_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + class338.aShort4193 - GlIndexBufferArb.anInt8502)
+                    val i_20_: Int = (NpcActorEntity.Companion.anInt10084 + (-DisplayModeOptionState.anInt6111 + class338.aShort4185))
+                    if (i_20_ >= 0 && i_20_ <= (NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084)) {
+                        var i_21_: Int = (NpcActorEntity.Companion.anInt10084 + class338.aShort4193 - GlIndexBufferArb.anInt8502)
                         if (i_21_ < 0) i_21_ = 0
-                        else if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084) < i_21_) return
-                        var i_22_: Int = (-GlIndexBufferArb.anInt8502 + (class338.aShort4190 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
-                        if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084) < i_22_) i_22_ = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084)
+                        else if ((NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084) < i_21_) return
+                        var i_22_: Int = (-GlIndexBufferArb.anInt8502 + (class338.aShort4190 - -NpcActorEntity.Companion.anInt10084))
+                        if ((NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084) < i_22_) i_22_ = (NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084)
                         else if (i_22_ < 0) return
                         var bool = false
                         while (i_22_ >= i_21_) {
@@ -141,16 +141,16 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                         }
                     }
                 } else if (class338.aByte4192.toInt() == 2) {
-                    val i_23_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (class338.aShort4193 - GlIndexBufferArb.anInt8502))
-                    if (i_23_ >= 0 && i_23_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
-                        var i_24_: Int = (class338.aShort4185 + (-DisplayModeOptionState.anInt6111 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
+                    val i_23_: Int = (NpcActorEntity.Companion.anInt10084 + (class338.aShort4193 - GlIndexBufferArb.anInt8502))
+                    if (i_23_ >= 0 && i_23_ <= (NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084)) {
+                        var i_24_: Int = (class338.aShort4185 + (-DisplayModeOptionState.anInt6111 + NpcActorEntity.Companion.anInt10084))
                         if (i_24_ >= 0) {
-                            if (i_24_ > (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) return
+                            if (i_24_ > (NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084)) return
                         } else i_24_ = 0
-                        var i_25_: Int = (-DisplayModeOptionState.anInt6111 + (class338.aShort4182 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
-                        if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084) >= i_25_) {
+                        var i_25_: Int = (-DisplayModeOptionState.anInt6111 + (class338.aShort4182 - -NpcActorEntity.Companion.anInt10084))
+                        if ((NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084) >= i_25_) {
                             if (i_25_ < 0) return
-                        } else i_25_ = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)
+                        } else i_25_ = (NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084)
                         var bool = false
                         while (i_24_ <= i_25_) {
                             if (Class99.aBooleanArrayArray1572!![i_24_++]!![i_23_]) {
@@ -165,10 +165,10 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                         }
                     }
                 } else if (class338.aByte4192.toInt() == 16 || class338.aByte4192.toInt() == 8) {
-                    val i_26_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (-DisplayModeOptionState.anInt6111 + class338.aShort4185))
-                    if (i_26_ >= 0 && i_26_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
-                        val i_27_: Int = (class338.aShort4193 + (-GlIndexBufferArb.anInt8502 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
-                        if (i_27_ >= 0 && ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084) >= i_27_) && Class99.aBooleanArrayArray1572!![i_26_]!![i_27_]) {
+                    val i_26_: Int = (NpcActorEntity.Companion.anInt10084 + (-DisplayModeOptionState.anInt6111 + class338.aShort4185))
+                    if (i_26_ >= 0 && i_26_ <= (NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084)) {
+                        val i_27_: Int = (class338.aShort4193 + (-GlIndexBufferArb.anInt8502 - -NpcActorEntity.Companion.anInt10084))
+                        if (i_27_ >= 0 && ((NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084) >= i_27_) && Class99.aBooleanArrayArray1572!![i_26_]!![i_27_]) {
                             var f = (TextureDefinitionLoader.anInt1974 - (class338.anIntArray4187!![0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
                             var f_28_ = (Class348_Sub40_Sub27.anInt9360 + -(class338.anIntArray4184[0])).toFloat()
@@ -179,19 +179,19 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                 } else if (class338.aByte4192.toInt() == 4) {
                     val f = (-TerrainTileGeometry.anInt3006 + class338.anIntArray4191[0]).toFloat()
                     if (!(f <= OpenGlRenderer.anInt7714.toFloat())) {
-                        var i_29_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + -GlIndexBufferArb.anInt8502 + class338.aShort4193)
+                        var i_29_: Int = (NpcActorEntity.Companion.anInt10084 + -GlIndexBufferArb.anInt8502 + class338.aShort4193)
                         if (i_29_ >= 0) {
-                            if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084) < i_29_) return
+                            if ((NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084) < i_29_) return
                         } else i_29_ = 0
-                        var i_30_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + -GlIndexBufferArb.anInt8502 + class338.aShort4190)
-                        if (i_30_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
+                        var i_30_: Int = (NpcActorEntity.Companion.anInt10084 + -GlIndexBufferArb.anInt8502 + class338.aShort4190)
+                        if (i_30_ <= (NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084)) {
                             if (i_30_ < 0) return
-                        } else i_30_ = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084)
-                        var i_31_: Int = (-DisplayModeOptionState.anInt6111 + (class338.aShort4185 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
+                        } else i_30_ = (NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084)
+                        var i_31_: Int = (-DisplayModeOptionState.anInt6111 + (class338.aShort4185 + NpcActorEntity.Companion.anInt10084))
                         if (i_31_ < 0) i_31_ = 0
-                        else if (i_31_ > (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) return
-                        var i_32_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + class338.aShort4182 - DisplayModeOptionState.anInt6111)
-                        if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084) < i_32_) i_32_ = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)
+                        else if (i_31_ > (NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084)) return
+                        var i_32_: Int = (NpcActorEntity.Companion.anInt10084 + class338.aShort4182 - DisplayModeOptionState.anInt6111)
+                        if ((NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084) < i_32_) i_32_ = (NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084)
                         else if (i_32_ < 0) return
                         var bool = false
                         while_102_@ for (i_33_ in i_31_..i_32_) {

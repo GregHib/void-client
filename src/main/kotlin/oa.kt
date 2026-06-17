@@ -160,7 +160,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         var i_68_ = 0
         var i_69_ = 0
         var i_70_ = 0
-        var class318_sub9_sub2 = (class98.aClass88_1569.method848(8) as Class318_Sub9_Sub2?)
+        var class318_sub9_sub2 = (class98.aClass88_1569.method848(8) as PositionedSceneNode?)
         while (class318_sub9_sub2 != null) {
             anIntArray5136[i++] = class318_sub9_sub2.anInt8791
             anIntArray5136[i++] = class318_sub9_sub2.anInt8796
@@ -169,7 +169,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
             aShortArray5133[i_69_++] = class318_sub9_sub2.anInt8792.toShort()
             anIntArray5139[i_68_++] = class318_sub9_sub2.anInt8793
             if (bool) aByteArray5134[i_70_++] = class318_sub9_sub2.aByte8795
-            class318_sub9_sub2 = (class98.aClass88_1569.method846((-79).toByte()) as Class318_Sub9_Sub2?)
+            class318_sub9_sub2 = (class98.aClass88_1569.method846((-79).toByte()) as PositionedSceneNode?)
         }
     }
 

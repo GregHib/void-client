@@ -1,7 +1,7 @@
 /* Class318_Sub6 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub6 : Class318() {
+class SceneEffectMarker : SceneLinkedListNode() {
     @JvmField
     var anInt6425: Int = 0
     @JvmField
@@ -11,7 +11,7 @@ class Class318_Sub6 : Class318() {
     @JvmField
     var anInt6429: Int = 0
     @JvmField
-    var aClass318_Sub1_Sub3_Sub3_6431: Class318_Sub1_Sub3_Sub3? = null
+    var aClass318_Sub1_Sub3_Sub3_6431: ProjectedGroundDecor? = null
 
     companion object {
         var aIntRange_6424: IntRange? = IntRange(82, 4)

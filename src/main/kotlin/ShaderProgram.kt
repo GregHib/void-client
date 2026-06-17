@@ -16,7 +16,7 @@ abstract class ShaderProgram : Class348() {
                 val var_s = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_1_]
                 if (var_s != null) {
                     for (i_2_ in 0..<Class348_Sub41.anInt7054) {
-                        for (i_3_ in 0..<Class318_Sub7.anInt6451) {
+                        for (i_3_ in 0..<SpotAnimEntity.anInt6451) {
                             var_renderNode = var_s.fa(i_3_, i_2_, var_renderNode)
                             if (var_renderNode != null) {
                                 val i_4_ = i_3_ shl Class362.anInt4459

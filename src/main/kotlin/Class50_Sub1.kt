@@ -110,7 +110,7 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
             class348_sub49.writeInt(105.toByte(), `is`[3])
             for (i in 0..9) class348_sub49.writeInt(120.toByte(), (9.9999999E7 * Math.random()).toInt())
             class348_sub49.writeShort(107.toByte(), (9.9999999E7 * Math.random()).toInt())
-            class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (-98).toByte(), Class318_Sub1_Sub4.aBigInteger8762)
+            class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (-98).toByte(), ActorEntity.aBigInteger8762)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, 80)
             return `is`
         }

@@ -1,7 +1,7 @@
 /* Class318_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub3 : Class318() {
+class SceneOcculder : SceneLinkedListNode() {
     var aBoolean6401: Boolean = false
     var anInt6402: Int = 0
     var anInt6403: Int = 0

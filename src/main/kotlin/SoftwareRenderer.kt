@@ -280,7 +280,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)!!
         var class318_sub9_65_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_65_ !== class318_sub9) {
-            val class318_sub9_sub2 = class318_sub9_65_ as Class318_Sub9_Sub2
+            val class318_sub9_sub2 = class318_sub9_65_ as PositionedSceneNode
             val i_66_ = class318_sub9_sub2.anInt8791 shr 12
             val i_67_ = class318_sub9_sub2.anInt8796 shr 12
             val i_68_ = class318_sub9_sub2.anInt8789 shr 12
@@ -367,7 +367,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         /* empty */
     }
 
-    private fun method3712(class318_sub9_sub2: Class318_Sub9_Sub2, i: Int, i_91_: Int, i_92_: Int, i_93_: Int) {
+    private fun method3712(class318_sub9_sub2: PositionedSceneNode, i: Int, i_91_: Int, i_92_: Int, i_93_: Int) {
         var i_93_ = i_93_
         val i_94_ = class318_sub9_sub2.anInt8792
         val i_95_ = i_93_
@@ -751,7 +751,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)!!
         var class318_sub9_208_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_208_ !== class318_sub9) {
-            val class318_sub9_sub2 = class318_sub9_208_ as Class318_Sub9_Sub2
+            val class318_sub9_sub2 = class318_sub9_208_ as PositionedSceneNode
             val i = class318_sub9_sub2.anInt8791 shr 12
             val i_209_ = class318_sub9_sub2.anInt8796 shr 12
             val i_210_ = class318_sub9_sub2.anInt8789 shr 12

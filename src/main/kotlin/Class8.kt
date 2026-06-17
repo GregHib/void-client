@@ -32,7 +32,7 @@ class Class8 {
             anInt163++
             var class79 = (npc.aClass79_10505)
             if (class79!!.anIntArray1377 != null) {
-                class79 = class79.method794(Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!, i)
+                class79 = class79.method794(ProjectedGroundDecor.aVarpStore_10209!!, i)
                 if (class79 == null) return -1
             }
             var i_0_ = class79.anInt1364

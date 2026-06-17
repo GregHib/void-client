@@ -104,7 +104,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-75).toByte(), 0)
                                     Class348_Sub42_Sub14.method3243(i_5_ xor 0x1c2a, class348_sub47)
                                 } else if (i == 4) {
-                                    Class318_Sub1_Sub4_Sub1.anInt10073++
+                                    NpcActorEntity.anInt10073++
                                     val class348_sub47 = (method2148(Class52.aClass351_4905, Class348_Sub23_Sub2.aClass77_9029, -88))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-128).toByte(), 0)

@@ -1,12 +1,12 @@
 /* Class318_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
+class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLinkedListNode() {
     var aBoolean6470: Boolean = false
     private var aLong6471: Long = 0
     private var aLong6472: Long = 0
     private var aBoolean6473 = false
-    var aClass318_Sub9_Sub2_Sub1Array6475: Array<Class318_Sub9_Sub2_Sub1?>
+    var aClass318_Sub9_Sub2_Sub1Array6475: Array<ProjectileNode?>
     var anInt6476: Int = 0
     private var aDoublyLinkedNodeList_6478: DoublyLinkedNodeList
     var aNodeDeque_6479: NodeDeque
@@ -23,10 +23,10 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
 
     fun method2528(var_renderer: Renderer?) {
         this.aClass98_6481.aClass88_1569.method845(89.toByte())
-        var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as Class318_Sub7?
+        var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as SpotAnimEntity?
         while (class318_sub7 != null) {
             class318_sub7.method2511(true, var_renderer, aLong6471)
-            class318_sub7 = aDoublyLinkedNodeList_6478.method1878(126.toByte()) as Class318_Sub7?
+            class318_sub7 = aDoublyLinkedNodeList_6478.method1878(126.toByte()) as SpotAnimEntity?
         }
     }
 
@@ -67,7 +67,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
 
     private fun method2532(var_renderer: Renderer?, modelFacePriorityNodes: Array<ModelFacePriorityNode?>?, bool: Boolean) {
         for (i in 0..31) aBooleanArray6474!![i] = false
-        var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as Class318_Sub7?
+        var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as SpotAnimEntity?
         while_110_@ while (class318_sub7 != null) {
             if (modelFacePriorityNodes != null) {
                 for (i in modelFacePriorityNodes.indices) {
@@ -75,7 +75,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
                         aBooleanArray6474!![i] = true
                         class318_sub7.method2507(true)
                         class318_sub7.aBoolean6446 = false
-                        class318_sub7 = aDoublyLinkedNodeList_6478.method1878((-28).toByte()) as? Class318_Sub7?
+                        class318_sub7 = aDoublyLinkedNodeList_6478.method1878((-28).toByte()) as? SpotAnimEntity?
                         continue@while_110_
                     }
                 }
@@ -86,13 +86,13 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
                     anInt6480--
                 } else class318_sub7.aBoolean6446 = true
             }
-            class318_sub7 = aDoublyLinkedNodeList_6478.method1878((-28).toByte()) as? Class318_Sub7?
+            class318_sub7 = aDoublyLinkedNodeList_6478.method1878((-28).toByte()) as? SpotAnimEntity?
         }
         if (modelFacePriorityNodes != null) {
             for (i in modelFacePriorityNodes.indices) {
                 if (i == 32 || anInt6480 == 32) break
                 if (!aBooleanArray6474!![i]) {
-                    val class318_sub7 = Class318_Sub7(var_renderer, modelFacePriorityNodes[i], this, aLong6472)
+                    val class318_sub7 = SpotAnimEntity(var_renderer, modelFacePriorityNodes[i], this, aLong6472)
                     aDoublyLinkedNodeList_6478.method1869(-126, class318_sub7)
                     anInt6480++
                     aBooleanArray6474!![i] = true
@@ -118,17 +118,17 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         }
         val i = (l - aLong6471).toInt()
         if (aBoolean6484) {
-            var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as? Class318_Sub7?
+            var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as? SpotAnimEntity?
             while (class318_sub7 != null) {
                 for (i_4_ in 0..<class318_sub7.aSpotAnimDefinition_6441!!.anInt2422) class318_sub7.method2513(var_renderer, 1, l, 3, !aBoolean6473)
-                class318_sub7 = aDoublyLinkedNodeList_6478.method1878(122.toByte()) as? Class318_Sub7?
+                class318_sub7 = aDoublyLinkedNodeList_6478.method1878(122.toByte()) as? SpotAnimEntity?
             }
             aBoolean6484 = false
         }
-        var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as? Class318_Sub7?
+        var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as? SpotAnimEntity?
         while (class318_sub7 != null) {
             class318_sub7.method2513(var_renderer, i, l, 3, !aBoolean6473)
-            class318_sub7 = aDoublyLinkedNodeList_6478.method1878((-72).toByte()) as? Class318_Sub7?
+            class318_sub7 = aDoublyLinkedNodeList_6478.method1878((-72).toByte()) as? SpotAnimEntity?
         }
         aLong6471 = l
         return true
@@ -165,7 +165,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
                 anInt6485--
                 if (class348_sub42_sub20.method3164(1.toByte())) {
                     class348_sub42_sub20.method3162(true)
-                    Class318_Sub7.Companion.anInt6450--
+                    SpotAnimEntity.Companion.anInt6450--
                 }
             }
             class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as Class348_Sub42_Sub20?
@@ -175,10 +175,10 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
                 if (i == 8 || anInt6485 == 8) break
                 if (!aBooleanArray6477!![i]) {
                     var class348_sub42_sub20: Class348_Sub42_Sub20? = null
-                    if ((class342s[i]!!.method2685((-13).toByte()).anInt2296) == 1 && Class318_Sub7.Companion.anInt6450 < 32) {
+                    if ((class342s[i]!!.method2685((-13).toByte()).anInt2296) == 1 && SpotAnimEntity.Companion.anInt6450 < 32) {
                         class348_sub42_sub20 = Class348_Sub42_Sub20(class342s[i], this)
                         Class367_Sub11.aClass32_7415!!.method335(class348_sub42_sub20, -8098, class342s[i]!!.anInt4245.toLong())
-                        Class318_Sub7.Companion.anInt6450++
+                        SpotAnimEntity.Companion.anInt6450++
                     }
                     if (class348_sub42_sub20 == null) class348_sub42_sub20 = Class348_Sub42_Sub20(class342s[i], this)
                     this.aNodeDeque_6479.method1999(class348_sub42_sub20, -20180)
@@ -209,21 +209,21 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         anInt6485 = 0
         aBoolean6484 = false
         this.aClass98_6481 = Class98()
-        this.aClass318_Sub9_Sub2_Sub1Array6475 = arrayOfNulls<Class318_Sub9_Sub2_Sub1>(8192)
+        this.aClass318_Sub9_Sub2_Sub1Array6475 = arrayOfNulls<ProjectileNode>(8192)
         method2531(i, bool)
     }
 
     companion object {
         private var aBooleanArray6474: BooleanArray? = BooleanArray(32)
         private var aBooleanArray6477: BooleanArray? = BooleanArray(8)
-        fun method2526(i: Int, bool: Boolean): Class318_Sub10 {
+        fun method2526(i: Int, bool: Boolean): SceneGraphContainer {
             if (GlTexture2D.anInt8550 != Class376.anInt4559) {
                 val class318_sub10 = Class348_Sub51.aClass318_Sub10Array7249!![Class376.anInt4559]!!
                 Class376.anInt4559 = Class376.anInt4559 + 1 and (Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637])
                 class318_sub10.method2531(i, bool)
                 return class318_sub10
             }
-            return Class318_Sub10(i, bool)
+            return SceneGraphContainer(i, bool)
         }
 
         @JvmStatic

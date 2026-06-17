@@ -31,10 +31,10 @@ class AsyncTaskHandle internal constructor(var aBoolean2574: Boolean) {
 
         fun method1434(i: Int) {
             anInt2573++
-            var class318_sub6 = InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1875(60) as Class318_Sub6?
+            var class318_sub6 = InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1875(60) as SceneEffectMarker?
             while (class318_sub6 != null) {
-                Class318_Sub1_Sub3_Sub4.method2461(class318_sub6, true)
-                class318_sub6 = (InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1875(60) as Class318_Sub6?)
+                MapElementDecor.method2461(class318_sub6, true)
+                class318_sub6 = (InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1875(60) as SceneEffectMarker?)
             }
             val i_0_: Int
             val i_1_: Int

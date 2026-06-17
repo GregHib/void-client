@@ -1,6 +1,6 @@
 import SpotAnimDefCache.method1943
 import NodeDeque.Companion.method1992
-import Class318_Sub9_Sub2.Companion.method2519
+import PositionedSceneNode.Companion.method2519
 import java.awt.Image
 
 class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
@@ -83,7 +83,7 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
 
         fun method2686() {
             for (i in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {
-                for (i_8_ in 0..<Class318_Sub7.anInt6451) {
+                for (i_8_ in 0..<SpotAnimEntity.anInt6451) {
                     for (i_9_ in 0..<Class348_Sub41.anInt7054) {
                         val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_8_]!![i_9_]
                         if (class357 != null) {

@@ -15,7 +15,7 @@ object Class75_Sub1 : Class75() {
     }
 
     @JvmStatic
-    fun method770(i: Int, i_1_: Int, i_2_: Int, class318_sub1_sub1: Class318_Sub1_Sub1) {
+    fun method770(i: Int, i_1_: Int, i_2_: Int, class318_sub1_sub1: TileSceneEntity) {
         val class357 = Class348_Sub46.method3321(i, i_1_, i_2_)
         if (class357 != null) {
             class357.aClass318_Sub1_Sub1_4402 = class318_sub1_sub1

@@ -53,9 +53,9 @@ object Class62 {
         if (i > -52) return -121L
         anInt1113++
         val l = System.currentTimeMillis()
-        if (MatrixCameraTransform.aLong5663 > l) Class318_Sub1_Sub1.aLong8728 += MatrixCameraTransform.aLong5663 - l
+        if (MatrixCameraTransform.aLong5663 > l) TileSceneEntity.aLong8728 += MatrixCameraTransform.aLong5663 - l
         MatrixCameraTransform.aLong5663 = l
-        return l + Class318_Sub1_Sub1.aLong8728
+        return l + TileSceneEntity.aLong8728
     }
 
     fun method600(i: Byte, i_1_: Int, i_2_: Int): Int {

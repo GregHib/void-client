@@ -244,8 +244,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     else i_27_ = (CubeMapMaterialPass.anIntArray6296!![Class348_Sub15.anInt6769])
                     if (Class348_Sub8.aRenderer6654!!.method3670()) i_27_++
                     Class348_Sub42_Sub2.method3171(Class348_Sub8.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, i_27_, bool_25_, Class348_Sub8.aRenderer6654!!.method3704() > 0)
-                    Class348_Sub32.method3018(Class318_Sub1_Sub4_Sub2.anInt10096)
-                    if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(WorldMapRenderer.aClass324_4684)
+                    Class348_Sub32.method3018(SequencedActorEntity.anInt10096)
+                    if (SequencedActorEntity.anInt10096 != 0) Class348_Sub48.method3328(WorldMapRenderer.aClass324_4684)
                     else Class348_Sub48.method3328(null)
                     for (i_28_ in 0..3) Class348_Sub45.aClass361Array7108!![i_28_]!!.method3500(i xor 0x2bc)
                     Class52.method491((-86).toByte())

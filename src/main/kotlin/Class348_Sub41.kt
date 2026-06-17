@@ -218,8 +218,8 @@ class Class348_Sub41 : Class348() {
                         Class348_Sub6.anInt6633 -= i_20_ * 512
                     } else {
                         Class348_Sub40_Sub21.anInt9282 = 1
-                        Class318_Sub1_Sub5_Sub2.anInt10163 = -1
-                        Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
+                        SequencedWallEntity.anInt10163 = -1
+                        Class9.anInt167 = SequencedWallEntity.anInt10163
                     }
                     method3153(0)
                     method464(-1)

@@ -1,4 +1,4 @@
-import Class318_Sub9_Sub1.Companion.method2516
+import NamedTimedNode.Companion.method2516
 import kotlin.concurrent.Volatile
 
 /* Class348_Sub26 - Decompiled by JODE

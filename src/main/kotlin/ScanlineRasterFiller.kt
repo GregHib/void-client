@@ -46,7 +46,7 @@ class ScanlineRasterFiller {
                 ParticleSystemState.method1294((-113).toByte(), (CubemapTextureGlSource.aClass348_Sub49_8698!!.aByteArray7154))
                 Class65.aClass110_Sub1Array1146 = arrayOfNulls<MapLabelMenuEntry>(NpcDefinition.anInt2956)
                 var i_2_ = 0
-                var i_3_ = Class318_Sub1_Sub2.anInt8731
+                var i_3_ = SceneObjectEntity.anInt8731
                 while ((MultiLevelOptionState.anInt6151 >= i_3_)) {
                     val class110_sub1 = method1742(false, i_3_)
                     if (class110_sub1 != null) Class65.aClass110_Sub1Array1146!![i_2_++] = class110_sub1

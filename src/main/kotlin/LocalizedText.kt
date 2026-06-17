@@ -229,9 +229,9 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
                 HintArrowOrMessage.aClass338Array2034 = null
             }
             anInt3480++
-            if (Class318_Sub1_Sub3_Sub4.aClass338Array10330 != null) {
-                for (i_4_ in 0..<Class69.anInt1200) Class318_Sub1_Sub3_Sub4.aClass338Array10330!![i_4_] = null
-                Class318_Sub1_Sub3_Sub4.aClass338Array10330 = null
+            if (MapElementDecor.aClass338Array10330 != null) {
+                for (i_4_ in 0..<Class69.anInt1200) MapElementDecor.aClass338Array10330!![i_4_] = null
+                MapElementDecor.aClass338Array10330 = null
             }
             if (LoadingBarRenderer.aClass338Array5060 != null) {
                 for (i_5_ in 0..<Class348_Sub44.anInt7101) LoadingBarRenderer.aClass338Array5060!![i_5_] = null

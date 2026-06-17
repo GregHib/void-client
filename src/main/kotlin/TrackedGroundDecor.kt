@@ -7,15 +7,15 @@ import kotlin.math.tan
 /* Class318_Sub1_Sub3_Sub5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, private val anInt10393: Int, i_31_: Int, var anInt10412: Int, i_33_: Int, private val aBoolean10398: Boolean, private val anInt10367: Int) :
-    Class318_Sub1_Sub3(i_22_, i_23_, i_24_, method2064(i_24_, i_22_, 11219, i_25_) + -i_26_, i_25_, i_24_ shr 9, i_24_ shr 9, i_25_ shr 9, i_25_ shr 9, false, 0.toByte()) {
+class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, private val anInt10393: Int, i_31_: Int, var anInt10412: Int, i_33_: Int, private val aBoolean10398: Boolean, private val anInt10367: Int) :
+    GroundDecorEntity(i_22_, i_23_, i_24_, method2064(i_24_, i_22_, 11219, i_25_) + -i_26_, i_25_, i_24_ shr 9, i_24_ shr 9, i_25_ shr 9, i_25_ shr 9, false, 0.toByte()) {
     private var anInt10365 = 0
     var anInt10366: Int
     private var anInt10368 = 0
     private var anInt10369 = -1
     private var aDouble10371 = 0.0
     private val aWidgetDefinition_10375: WidgetDefinition?
-    private var aClass318_Sub10_10378: Class318_Sub10? = null
+    private var aClass318_Sub10_10378: SceneGraphContainer? = null
     private var anInt10381: Int
     private var aDouble10383 = 0.0
     private var aDouble10384 = 0.0
@@ -72,7 +72,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         } else aDouble10409 = (i_0_.toDouble() - aDouble10384) / d
     }
 
-    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_6_: Int, i_7_: Byte, i_8_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_6_: Int, i_7_: Byte, i_8_: Int) {
         try {
             if (i_7_ > -106) method2474(11.toByte())
             anInt10415++
@@ -106,7 +106,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
                 class64!!.method620(abstractCameraTransform)
                 val class129s = class64.method619()
                 val class342s = class64.method604()
-                if ((aClass318_Sub10_10378 == null || aClass318_Sub10_10378!!.aBoolean6470) && (class129s != null || class342s != null)) aClass318_Sub10_10378 = Class318_Sub10.Companion.method2526(Class367_Sub11.anInt7396, true)
+                if ((aClass318_Sub10_10378 == null || aClass318_Sub10_10378!!.aBoolean6470) && (class129s != null || class342s != null)) aClass318_Sub10_10378 = SceneGraphContainer.Companion.method2526(Class367_Sub11.anInt7396, true)
                 if (aClass318_Sub10_10378 != null) {
                     aClass318_Sub10_10378!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
                     aClass318_Sub10_10378!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
@@ -136,7 +136,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         anInt10394++
         if (!aBoolean10407 && i.toInt() == 121) {
             if (anInt10387 != 0) {
-                var class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3? = null
+                var class318_sub1_sub3_sub3: ProjectedGroundDecor? = null
                 if (anInt10387 < 0) {
                     val i_9_ = -1 + -anInt10387
                     if (i_9_ == Class348_Sub42_Sub11.anInt9591) class318_sub1_sub3_sub3 = LocalPlayerState.aPlayer_1907
@@ -187,7 +187,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         return null
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10397++
         val class64 = method2476(2048, var_renderer, 127.toByte())
         if (class64 == null) return null
@@ -323,11 +323,11 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         fun method2477(string: String?, string_37_: String?, i: Byte, i_38_: Int, string_39_: String?, string_40_: String?, i_41_: Int, i_42_: Int, string_43_: String?) {
             try {
                 anInt10382++
-                var hintArrowOrMessage: HintArrowOrMessage? = Class318_Sub2.Companion.aHintArrowOrMessageArray6400s!![99]
-                for (i_44_ in 99 downTo 1) Class318_Sub2.Companion.aHintArrowOrMessageArray6400s!![i_44_] = Class318_Sub2.Companion.aHintArrowOrMessageArray6400s!![i_44_ + -1]
+                var hintArrowOrMessage: HintArrowOrMessage? = SceneModelBuilder.Companion.aHintArrowOrMessageArray6400s!![99]
+                for (i_44_ in 99 downTo 1) SceneModelBuilder.Companion.aHintArrowOrMessageArray6400s!![i_44_] = SceneModelBuilder.Companion.aHintArrowOrMessageArray6400s!![i_44_ + -1]
                 if (hintArrowOrMessage == null) hintArrowOrMessage = HintArrowOrMessage(i_41_, i_42_, string_39_, string, string_43_, string_40_, i_38_, string_37_)
                 else hintArrowOrMessage.method1196(i_41_, i_42_, string_43_, string, string_40_, -18691, i_38_, string_39_, string_37_)
-                Class318_Sub2.Companion.aHintArrowOrMessageArray6400s!![0] = hintArrowOrMessage
+                SceneModelBuilder.Companion.aHintArrowOrMessageArray6400s!![0] = hintArrowOrMessage
                 Class348_Sub42_Sub3.anInt9501 = ResourceLoaderThread.anInt3918
                 if (i <= -109) NativeShaderProgram.anInt9774++
             } catch (runtimeexception: RuntimeException) {

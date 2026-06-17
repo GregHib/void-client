@@ -24,7 +24,7 @@ class ObjectByteSerializerHolder {
 
         fun method1330(i: Int, i_0_: Int, i_1_: Int) {
             anInt2284++
-            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_1_, 105.toByte(), 5)
+            val class348_sub42_sub15 = NamedTimedNode.method2516(i_1_, 105.toByte(), 5)
             class348_sub42_sub15.method3246(-25490)
             if (i_0_ != -19906) method1329(71)
             class348_sub42_sub15.anInt9652 = i

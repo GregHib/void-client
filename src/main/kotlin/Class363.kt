@@ -11,10 +11,10 @@ object Class363 {
     var anInt4465: Int = 0
 
     fun method3513(i: Int) {
-        synchronized(Class318.aDoublyLinkedNodeListArray3974s!!) {
+        synchronized(SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!) {
             var i_0_ = 0
-            while ((i_0_ < Class318.aDoublyLinkedNodeListArray3974s!!.size)) {
-                Class318.aDoublyLinkedNodeListArray3974s!![i_0_] = DoublyLinkedNodeList()
+            while ((i_0_ < SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size)) {
+                SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i_0_] = DoublyLinkedNodeList()
                 Class331.anIntArray4128!![i_0_] = 0
                 i_0_++
             }

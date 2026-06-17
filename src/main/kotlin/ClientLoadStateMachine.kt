@@ -211,7 +211,7 @@ object ClientLoadStateMachine {
             BrightnessOptionState.aClass355_5900 = Class355(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, ItemNameResolver())
             method1202(0)
             Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2008(i + 28539, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
-            Class318_Sub1_Sub3_Sub3.aVarpStore_10209 = VarpStore()
+            ProjectedGroundDecor.aVarpStore_10209 = VarpStore()
             method3038(-1)
             method4011(i + 29684, GraphicsOptionState.aClass45_3146)
             Class348_Sub29.method3004(RasterSprite.aClass45_5207, false, Class348_Sub40_Sub4.aRenderConfig9113)
@@ -230,7 +230,7 @@ object ClientLoadStateMachine {
             val i_12_ = (ParticleEmitterDefExt.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, RenderConfigFactory.aLocDefinitionCache_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aSeqDefinitionCache_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
+        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, RenderConfigFactory.aLocDefinitionCache_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aSeqDefinitionCache_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))

@@ -105,7 +105,7 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
                         var i_13_ = i_7_
                         while (i_8_ >= i_13_) {
                             val i_14_ = (i_12_ + Class350.method3452((SceneryDetailOptionState.anInt6095 + i_13_), (-15).toByte(), ItemModelDefinition.anInt425))
-                            LocalPlayerState.anIntArray1909!![i_14_] = Class318_Sub1_Sub1_Sub2.anInt9997
+                            LocalPlayerState.anIntArray1909!![i_14_] = GroundDecorSceneEntity.anInt9997
                             i_13_++
                         }
                     }

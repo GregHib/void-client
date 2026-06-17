@@ -79,8 +79,8 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         } else if (!aBoolean7399) {
             this.aHa_Sub3_4479.method3850(99.toByte(), (this.aHa_Sub3_4479.anInterface18_8147))
             this.aHa_Sub3_4479.method3923(true, 1)
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class318_Sub1_Sub2.aClass70_8737)
-            this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aClass70_8737)
+            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
             aBoolean7399 = true
         }
         if (i_3_ != -16776) method3525(16, true)
@@ -129,7 +129,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
         if (i == 15192) {
             this.aHa_Sub3_4479.method3924(true, false, 2, Class342.aClass70_4247, false)
-            this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737)
+            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
             this.aHa_Sub3_4479.method3897(0, i + -19574)
             method3528(75)
         }

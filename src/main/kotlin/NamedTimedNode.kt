@@ -3,7 +3,7 @@ import Class62.method599
 /* Class318_Sub9_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub9_Sub1 internal constructor(@JvmField var aString8783: String?, i: Int) : Class318_Sub9() {
+class NamedTimedNode internal constructor(@JvmField var aString8783: String?, i: Int) : SceneListNode() {
     @JvmField
     var aShort8786: Short
     @JvmField

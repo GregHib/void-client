@@ -54,17 +54,17 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 Class373_Sub2.aDataHolderArray7446!![i_1_]!!.aString3663 = class348_sub49.method3371(-13487)
                 i_1_++
             }
-            Class318_Sub1_Sub2.anInt8731 = class348_sub49.readSmart(-127)
+            SceneObjectEntity.anInt8731 = class348_sub49.readSmart(-127)
             MultiLevelOptionState.anInt6151 = class348_sub49.readSmart(-119)
             NpcDefinition.anInt2956 = class348_sub49.readSmart(-122)
-            OutputStream_Sub1.aClass110_Sub1Array97 = arrayOfNulls<MapLabelMenuEntry>(1 + (MultiLevelOptionState.anInt6151 + -Class318_Sub1_Sub2.anInt8731))
+            OutputStream_Sub1.aClass110_Sub1Array97 = arrayOfNulls<MapLabelMenuEntry>(1 + (MultiLevelOptionState.anInt6151 + -SceneObjectEntity.anInt8731))
             var i_2_ = 0
             while (NpcDefinition.anInt2956 > i_2_) {
                 val i_3_ = class348_sub49.readSmart(-126)
                 val class110_sub1 = (MapLabelMenuEntry().also { OutputStream_Sub1.aClass110_Sub1Array97!![i_3_] = it })
                 class110_sub1.anInt1711 = class348_sub49.readUnsignedByte(255)
                 class110_sub1.anInt1708 = class348_sub49.readInt((-126).toByte())
-                class110_sub1.anInt5786 = Class318_Sub1_Sub2.anInt8731 + i_3_
+                class110_sub1.anInt5786 = SceneObjectEntity.anInt8731 + i_3_
                 class110_sub1.aString5787 = class348_sub49.method3371(-13487)
                 class110_sub1.aString5794 = class348_sub49.method3371(-13487)
                 i_2_++

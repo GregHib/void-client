@@ -10,12 +10,12 @@ import kotlin.math.sqrt
 /* Class318_Sub7 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePriorityNode: ModelFacePriorityNode?, class318_sub10: Class318_Sub10?, l: Long) : Class318() {
+class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePriorityNode: ModelFacePriorityNode?, class318_sub10: SceneGraphContainer?, l: Long) : SceneLinkedListNode() {
     var aDoublyLinkedNodeList_6433: DoublyLinkedNodeList? = null
     private var anInt6434 = 0
     private val aLong6435: Long
     var aModelFacePriorityNode_6436: ModelFacePriorityNode? = null
-    var aClass318_Sub10_6439: Class318_Sub10? = null
+    var aClass318_Sub10_6439: SceneGraphContainer? = null
     var aSpotAnimDefinition_6441: SpotAnimDefinition? = null
     var aViewportTransform_6444: ViewportTransform
     var aBoolean6446: Boolean = false
@@ -63,10 +63,10 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
         try {
             anInt6437++
             if (bool != true) this.aDoublyLinkedNodeList_6433 = null
-            var class318_sub9_sub2_sub1 = (this.aDoublyLinkedNodeList_6433!!.method1872(8) as Class318_Sub9_Sub2_Sub1?)
+            var class318_sub9_sub2_sub1 = (this.aDoublyLinkedNodeList_6433!!.method1872(8) as ProjectileNode?)
             while (class318_sub9_sub2_sub1 != null) {
                 class318_sub9_sub2_sub1.method2522(var_renderer, l)
-                class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1878(126.toByte()) as Class318_Sub9_Sub2_Sub1?
+                class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1878(126.toByte()) as ProjectileNode?
             }
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + l + ')'))
@@ -187,7 +187,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             var i_53_ = (this.aSpotAnimDefinition_6441!!.anInt2414)
                             if (!var_renderer!!.method3644() && !(this.aSpotAnimDefinition_6441!!.aBoolean2382)) i_53_ = -1
                             if (Client.anInt5171 == Class348_Sub1_Sub1.anInt8808) {
-                                val class318_sub9_sub2_sub1 = (Class318_Sub9_Sub2_Sub1(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430)))
+                                val class318_sub9_sub2_sub1 = (ProjectileNode(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430)))
                             } else {
                                 val class318_sub9_sub2_sub1 = (DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103!![Class348_Sub1_Sub1.anInt8808])
                                 Class348_Sub1_Sub1.anInt8808 = 0x3ff and 1 + Class348_Sub1_Sub1.anInt8808
@@ -214,11 +214,11 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                     this.aViewportTransform_6444.anInt3668 = (this.aModelFacePriorityNode_6436!!.anInt1883)
                 }
                 this.anInt6447 = 0
-                var class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1872(i_9_ + 5) as Class318_Sub9_Sub2_Sub1?
+                var class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1872(i_9_ + 5) as ProjectileNode?
                 while (class318_sub9_sub2_sub1 != null) {
                     class318_sub9_sub2_sub1.method2524(l, i)
                     this.anInt6447++
-                    class318_sub9_sub2_sub1 = (this.aDoublyLinkedNodeList_6433!!.method1878(122.toByte()) as Class318_Sub9_Sub2_Sub1?)
+                    class318_sub9_sub2_sub1 = (this.aDoublyLinkedNodeList_6433!!.method1878(122.toByte()) as ProjectileNode?)
                 }
                 SkyboxGradient.anInt3936 += this.anInt6447
                 if (i_9_ == 3) break
@@ -286,7 +286,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
         @JvmStatic
         fun method2510(class45: Class45?, class348_sub16_sub3: Class348_Sub16_Sub3?, class45_5_: Class45?, bool: Boolean, soundChannelMixer: SoundChannelMixer?, class45_6_: Class45?): Boolean {
             try {
-                Class318_Sub1_Sub4.aSoundChannelMixer_8764 = soundChannelMixer
+                ActorEntity.aSoundChannelMixer_8764 = soundChannelMixer
                 Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                 Class43.aClass45_611 = class45
                 Class367_Sub9.aClass45_7371 = class45_6_

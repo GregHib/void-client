@@ -5,7 +5,7 @@ class WidgetNodeLink {
     @JvmField
     var aWidgetNodeLink_2038: WidgetNodeLink? = null
     @JvmField
-    var aClass318_Sub1_Sub3_2040: Class318_Sub1_Sub3? = null
+    var aClass318_Sub1_Sub3_2040: GroundDecorEntity? = null
     fun method1199(i: Byte) {
         anInt2043++
         if (i.toInt() == -106 && OpenGlRenderer.anInt7722 < 500) {

@@ -54,7 +54,7 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
         }
 
         @JvmStatic
-        fun method3443(bool: Boolean, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3) {
+        fun method3443(bool: Boolean, class318_sub1_sub3_sub3: ProjectedGroundDecor) {
             anInt9778++
             if ((class318_sub1_sub3_sub3.anIntArray10242) != null || (class318_sub1_sub3_sub3.anIntArray10296) != null) {
                 var bool_2_ = bool

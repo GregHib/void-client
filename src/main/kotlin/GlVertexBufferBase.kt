@@ -81,7 +81,7 @@ abstract class GlVertexBufferBase {
         @JvmStatic
         fun method1148(i: Int, i_0_: Int) {
             anInt1925++
-            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, 105.toByte(), i_0_) //6
+            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), i_0_) //6
             class348_sub42_sub15.method3251(i_0_ xor 0x3ebf.inv())
         }
 

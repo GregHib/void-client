@@ -4,7 +4,7 @@ import kotlin.math.min
 /* Class318_Sub1_Sub3_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0, 0, 0, false, 0.toByte()) {
+abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 0, false, 0.toByte()) {
     @JvmField
     var anInt10201: Int = 0
     @JvmField
@@ -183,7 +183,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
     @JvmField
     var anInt10326: Int
     @JvmField
-    var aClass318_Sub10_10327: Class318_Sub10? = null
+    var aClass318_Sub10_10327: SceneGraphContainer? = null
 
     abstract fun method2421(i: Byte): Int
 
@@ -423,7 +423,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                                 i_67_ += modelFacePriorityNodeS_73_.size
                                 i_68_++
                             }
-                            if (((this.aClass318_Sub10_10327) == null || this.aClass318_Sub10_10327!!.aBoolean6470) && (i_68_ > 0 || i_70_ > 0)) this.aClass318_Sub10_10327 = Class318_Sub10.method2526((Class367_Sub11.anInt7396), true)
+                            if (((this.aClass318_Sub10_10327) == null || this.aClass318_Sub10_10327!!.aBoolean6470) && (i_68_ > 0 || i_70_ > 0)) this.aClass318_Sub10_10327 = SceneGraphContainer.method2526((Class367_Sub11.anInt7396), true)
                             if ((this.aClass318_Sub10_10327) != null) {
                                 val `object`: Any? = null
                                 val modelFacePriorityNodeS_75_: Array<ModelFacePriorityNode?>?
@@ -825,7 +825,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         fun method2433() {
             if (Class65.aClass357ArrayArrayArray1148 != null) {
                 for (i in Class65.aClass357ArrayArrayArray1148!!.indices) {
-                    for (i_80_ in 0..<Class318_Sub7.anInt6451) {
+                    for (i_80_ in 0..<SpotAnimEntity.anInt6451) {
                         for (i_81_ in 0..<Class348_Sub41.anInt7054) {
                             if ((Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
                             Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
@@ -837,7 +837,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class348_Sub1_Sub1.aTerrainTileArray8801 = null
             if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
                 for (i in Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!!.indices) {
-                    for (i_82_ in 0..<Class318_Sub7.anInt6451) {
+                    for (i_82_ in 0..<SpotAnimEntity.anInt6451) {
                         for (i_83_ in 0..<Class348_Sub41.anInt7054) {
                             if ((Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]) != null) Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]!!.method3485(true)
                             Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_] = null
@@ -873,7 +873,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             if (WaterDetailOptionState.aSoundEnvelopeArray5993 != null) {
                 for (i in 0..<Class331.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i] = null
                 for (i in 0..<MapAreaDefinition.anInt2524) {
-                    for (i_84_ in 0..<Class318_Sub7.anInt6451) {
+                    for (i_84_ in 0..<SpotAnimEntity.anInt6451) {
                         for (i_85_ in 0..<Class348_Sub41.anInt7054) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
                     }
                 }

@@ -4,7 +4,7 @@ import Class348_Sub17.Companion.method2929
 * Visit http://jode.sourceforge.net/
 */
 class Class357 internal constructor(i: Int) {
-    var aClass318_Sub1_Sub5_4395: Class318_Sub1_Sub5? = null
+    var aClass318_Sub1_Sub5_4395: WallEntity? = null
     var aWidgetNodeLink_4396: WidgetNodeLink? = null
     var aShort4397: Short = 0
     var aShort4398: Short = 0
@@ -12,11 +12,11 @@ class Class357 internal constructor(i: Int) {
     var aClass357_4400: Class357? = null
     var aShort4401: Short = 0
     @JvmField
-    var aClass318_Sub1_Sub1_4402: Class318_Sub1_Sub1? = null
-    var aClass318_Sub1_Sub4_4403: Class318_Sub1_Sub4? = null
-    var aClass318_Sub1_Sub4_4406: Class318_Sub1_Sub4? = null
-    var aClass318_Sub1_Sub5_4407: Class318_Sub1_Sub5? = null
-    var aClass318_Sub1_Sub2_4408: Class318_Sub1_Sub2? = null
+    var aClass318_Sub1_Sub1_4402: TileSceneEntity? = null
+    var aClass318_Sub1_Sub4_4403: ActorEntity? = null
+    var aClass318_Sub1_Sub4_4406: ActorEntity? = null
+    var aClass318_Sub1_Sub5_4407: WallEntity? = null
+    var aClass318_Sub1_Sub2_4408: SceneObjectEntity? = null
     var aShort4409: Short = 0
     fun method3485(bool: Boolean) {
         var widgetNodeLink: WidgetNodeLink?

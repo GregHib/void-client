@@ -69,12 +69,12 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
             } else if (i_0_ == 1) {
                 HeightMapNoise.method2280(0.toByte(), 28587)
                 Class46.method440(512, (-61).toByte())
-                if (Class348_Sub33.aByteArrayArrayArray6962 != null) Class318_Sub1_Sub3_Sub4.method2468(3613)
+                if (Class348_Sub33.aByteArrayArrayArray6962 != null) MapElementDecor.method2468(3613)
             } else {
                 HeightMapNoise.method2280((-4 + TextureQualityOptionState.anInt6006 and 0xff).toByte(), 28587)
                 Class46.method440(2, (-61).toByte())
             }
-            Class318_Sub1_Sub3_Sub5.anInt10395 = Class355.anInt4372
+            TrackedGroundDecor.anInt10395 = Class355.anInt4372
         }
 
         @JvmStatic

@@ -1,7 +1,7 @@
 /* Class318_Sub1_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) : Class318_Sub1() {
+abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) : SceneEntity() {
     override fun method2382(i: Byte): Boolean {
         if (i > -51) return false
         anInt8733++
@@ -13,7 +13,7 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
     override fun method2378(i: Int): Boolean {
         if (i != 0) method2406(79)
         anInt8734++
-        return (Class99.aBooleanArrayArray1572!![(Class318_Sub1_Sub4_Sub1.anInt10084 + -DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459))]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459)))])
+        return (Class99.aBooleanArrayArray1572!![(NpcActorEntity.anInt10084 + -DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459))]!![(NpcActorEntity.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459)))])
     }
 
     override fun method2392(bool: Boolean) {
@@ -34,7 +34,7 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
         return false
     }
 
-    override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_3_: Int, i_4_: Byte, i_5_: Int) {
+    override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_3_: Int, i_4_: Byte, i_5_: Int) {
         try {
             if (i_4_ > -106) method2405(-8)
             anInt8736++

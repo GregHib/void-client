@@ -142,7 +142,7 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
         }
 
         @JvmStatic
-        fun method3620(class318_sub1_sub3: Class318_Sub1_Sub3?, i: Int): WidgetNodeLink {
+        fun method3620(class318_sub1_sub3: GroundDecorEntity?, i: Int): WidgetNodeLink {
             if (i < 9) anInt4559 = -27
             anInt4547++
             val widgetNodeLink: WidgetNodeLink

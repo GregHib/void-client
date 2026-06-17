@@ -12,7 +12,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
     @Volatile
     private var anInt3957 = 0
 
-    fun method2353(class318_sub1: Class318_Sub1, bool: Boolean) {
+    fun method2353(class318_sub1: SceneEntity, bool: Boolean) {
         class318_sub1.aBoolean6387 = bool
         anInt3944++
         synchronized(aDoublyLinkedNodeList_3946) {
@@ -32,7 +32,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
         anInt3949++
     }
 
-    fun method2359(class318_sub2: Class318_Sub2, i: Int) {
+    fun method2359(class318_sub2: SceneModelBuilder, i: Int) {
         if (i != -1) method2362(45)
         synchronized(aDoublyLinkedNodeList_3946) {
             aDoublyLinkedNodeList_3946.method1869(-127, class318_sub2)
@@ -52,7 +52,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
         return anInt3957 == 0
     }
 
-    fun method2361(i: Int, class318_sub1: Class318_Sub1) {
+    fun method2361(i: Int, class318_sub1: SceneEntity) {
         class318_sub1.aBoolean6387 = true
         anInt3950++
         synchronized(aDoublyLinkedNodeList_3946) {
@@ -67,16 +67,16 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
         }
     }
 
-    fun method2362(i: Int): Class318 {
+    fun method2362(i: Int): SceneLinkedListNode {
         anInt3952++
         val `object`: Any? = null
-        val class318: Class318?
+        val sceneLinkedListNode: SceneLinkedListNode?
         synchronized(aDoublyLinkedNodeList_3946) {
-            class318 = aDoublyLinkedNodeList_3946.method1872(8)
-            class318!!.method2373(false)
+            sceneLinkedListNode = aDoublyLinkedNodeList_3946.method1872(8)
+            sceneLinkedListNode!!.method2373(false)
             anInt3957--
         }
-        return class318!!
+        return sceneLinkedListNode!!
     }
 
     companion object {
@@ -103,10 +103,10 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
             anInt3948++
             Class346.aBoolean4275 = bool
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-            Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_
+            NpcActorEntity.anInt10074 = i_1_
             WaterDetailOptionState.anInt5994 = i_3_
             Class348_Sub43.anInt7068 = 1
-            Class318.anInt3971 = i_2_
+            SceneLinkedListNode.anInt3971 = i_2_
             ModelDefinition.aClass45_1848 = class45
         }
 

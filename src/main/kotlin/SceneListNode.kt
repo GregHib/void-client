@@ -1,9 +1,9 @@
 /* Class318_Sub9 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class318_Sub9 : Class318() {
-    var aClass318_Sub9_6468: Class318_Sub9? = null
-    var aClass318_Sub9_6469: Class318_Sub9? = null
+open class SceneListNode : SceneLinkedListNode() {
+    var aClass318_Sub9_6468: SceneListNode? = null
+    var aClass318_Sub9_6469: SceneListNode? = null
 
     fun method2514(i: Int) {
         anInt6467++

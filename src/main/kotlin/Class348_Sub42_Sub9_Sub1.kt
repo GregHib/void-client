@@ -44,7 +44,7 @@ class Class348_Sub42_Sub9_Sub1 internal constructor(interface14: Interface14?, `
         }
 
         @JvmStatic
-        fun method3208(class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3, i: Int, i_2_: Int) {
+        fun method3208(class318_sub1_sub3_sub3: ProjectedGroundDecor, i: Int, i_2_: Int) {
             anInt10439++
             if (class318_sub1_sub3_sub3.anIntArray10236 != null) {
                 val i_3_ = (class318_sub1_sub3_sub3.anIntArray10236!![1 + i])

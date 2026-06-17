@@ -23,7 +23,7 @@ object ObjectSpawnDecoder {
 
     fun method1085(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
         anInt1805++
-        val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_3_, 105.toByte(), 8)
+        val class348_sub42_sub15 = NamedTimedNode.method2516(i_3_, 105.toByte(), 8)
         class348_sub42_sub15.method3246(-25490)
         class348_sub42_sub15.anInt9652 = i_0_
         if (i_1_ < -57) {

@@ -275,11 +275,11 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                     }
                 }
                 spriteImages = SpriteImage.method1519(class45, Renderer.anInt4562, 0)
-                Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                WallSceneEntity.aAbstractModelRendererArray9959 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
                     while (spriteImages.size > i) {
-                        Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                        WallSceneEntity.aAbstractModelRendererArray9959!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }

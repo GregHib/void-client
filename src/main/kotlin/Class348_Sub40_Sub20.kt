@@ -17,7 +17,7 @@ class Class348_Sub40_Sub20 : Class348_Sub40(0, true) {
             val i_4_ = LightDetailOptionState.anIntArray6035!![i]
             var i_5_ = 0
             while ((i_5_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
-                `is`[i_5_] = method3103(i_4_, Class318_Sub6.anIntArray6432!![i_5_], 22) % 4096
+                `is`[i_5_] = method3103(i_4_, SceneEffectMarker.anIntArray6432!![i_5_], 22) % 4096
                 i_5_++
             }
         }

@@ -51,7 +51,7 @@ class Class348_Sub46 : Class348 {
             }
         }
 
-        fun method3320(class318_sub1_sub3: Class318_Sub1_Sub3, bool: Boolean) {
+        fun method3320(class318_sub1_sub3: GroundDecorEntity, bool: Boolean) {
             for (i in class318_sub1_sub3.aShort8743..class318_sub1_sub3.aShort8751) {
                 for (i_0_ in class318_sub1_sub3.aShort8750..class318_sub1_sub3.aShort8747) {
                     val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![class318_sub1_sub3.plane.toInt()]!![i]!![i_0_])

@@ -5,7 +5,7 @@ import Class348_Sub23_Sub1.Companion.method2972
 /* Class348_Sub42_Sub20 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_sub10: Class318_Sub10?) : Class348_Sub42() {
+class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_sub10: SceneGraphContainer?) : Class348_Sub42() {
     var aClass342_9702: Class342? = null
     var aSpotAnimVector_9704: SpotAnimVector? = null
     var anInt9705: Int = 0

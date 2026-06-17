@@ -38,7 +38,7 @@ class Class348_Sub40_Sub25 : Class348_Sub40(0, true) {
         if (i_2_ != 255) return null
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             for (i_3_ in 0..<Class348_Sub40_Sub6.Companion.anInt9139) {
-                val i_4_ = anInt9339 + (Class318_Sub6.anIntArray6432!![i_3_] shl 12) / anInt9340
+                val i_4_ = anInt9339 + (SceneEffectMarker.anIntArray6432!![i_3_] shl 12) / anInt9340
                 val i_5_ = anInt9338 + (LightDetailOptionState.anIntArray6035!![i] shl 12) / anInt9340
                 val i_6_ = i_4_
                 val i_7_ = i_5_

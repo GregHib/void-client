@@ -3,7 +3,7 @@ import Class324.Companion.method2570
 /* Class318_Sub1_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, bool: Boolean, i_18_: Byte) : Class318_Sub1() {
+abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, bool: Boolean, i_18_: Byte) : SceneEntity() {
     @JvmField
     var aBoolean8741: Boolean
     @JvmField
@@ -22,9 +22,9 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         for (i_0_ in this.aShort8743..this.aShort8751) {
             var i_1_ = this.aShort8750.toInt()
             while ((i_1_ <= this.aShort8747)) {
-                val i_2_ = (-DisplayModeOptionState.anInt6111 + i_0_ + Class318_Sub1_Sub4_Sub1.anInt10084)
+                val i_2_ = (-DisplayModeOptionState.anInt6111 + i_0_ + NpcActorEntity.anInt10084)
                 if (i_2_ >= 0 && (Class99.aBooleanArrayArray1572!!.size > i_2_)) {
-                    val i_3_ = (Class318_Sub1_Sub4_Sub1.anInt10084 + (i_1_ - GlIndexBufferArb.anInt8502))
+                    val i_3_ = (NpcActorEntity.anInt10084 + (i_1_ - GlIndexBufferArb.anInt8502))
                     if (i_3_ >= 0 && (Class99.aBooleanArrayArray1572!!.size > i_3_) && Class99.aBooleanArrayArray1572!![i_2_]!![i_3_]) return true
                 }
                 i_1_++
@@ -36,7 +36,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
     override fun method2382(i: Byte): Boolean {
         anInt8748++
         if (i > -51) return true
-        return Class318_Sub2.method2499(this.aByte6376.toInt(), this.aShort8747.toInt(), this.aShort8750.toInt(), this.method2394(true), this.aShort8743.toInt(), 116.toByte(), (this.aShort8751).toInt())
+        return SceneModelBuilder.method2499(this.aByte6376.toInt(), this.aShort8747.toInt(), this.aShort8750.toInt(), this.method2394(true), this.aShort8743.toInt(), 116.toByte(), (this.aShort8751).toInt())
     }
 
     open fun method2409(i: Byte) {

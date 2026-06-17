@@ -9,7 +9,7 @@ import jaggl.OpenGL.Companion.glGetInfoLogARB
 import jaggl.OpenGL.Companion.glGetObjectParameterivARB
 import jaggl.OpenGL.Companion.glLinkProgramARB
 
-class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int) : Class318_Sub1_Sub5(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_), Interface10 {
+class SequencedWallEntity internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int) : WallEntity(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_), Interface10 {
     private var aBoolean10148 = false
     private var aCircleHitbox_10150: CircleHitbox? = null
     private var aBoolean10153 = false
@@ -76,7 +76,7 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, clas
         return false
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10159++
         val class64 = this.aSceneObjectAnimator_10155!!.method1668(false, true, -127, 2048, var_renderer)
         if (class64 == null) return null

@@ -26,12 +26,12 @@ class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray
         var anInt6667: Int = 0
 
         @JvmStatic
-        fun method2774(i: Byte, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3): Int {
+        fun method2774(i: Byte, class318_sub1_sub3_sub3: ProjectedGroundDecor): Int {
             anInt6667++
             if (i.toInt() != 108) anApplet6662 = null
             if (class318_sub1_sub3_sub3.anInt10310 == 0) return 0
             if (class318_sub1_sub3_sub3.anInt10275 != -1) {
-                var class318_sub1_sub3_sub3_0_: Class318_Sub1_Sub3_Sub3? = null
+                var class318_sub1_sub3_sub3_0_: ProjectedGroundDecor? = null
                 if (class318_sub1_sub3_sub3.anInt10275 >= 32768) {
                     if ((class318_sub1_sub3_sub3.anInt10275) >= 32768) class318_sub1_sub3_sub3_0_ = (LoadingBarRenderer.aPlayerArray5058!![class318_sub1_sub3_sub3.anInt10275 + -32768])
                 } else {

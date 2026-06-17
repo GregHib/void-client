@@ -131,7 +131,7 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
         @JvmStatic
         fun method1402(i: Int) {
             if (i == 1) {
-                Class318_Sub1_Sub2.aClass60_8732!!.method590(0)
+                SceneObjectEntity.aClass60_8732!!.method590(0)
                 anInt5811++
             }
         }

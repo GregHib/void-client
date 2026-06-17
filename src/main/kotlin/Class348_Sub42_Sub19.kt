@@ -47,7 +47,7 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
                         var i_7_ = (((class348_sub1.method2724(-1) - class348_sub1.method2723(-1) + Class348_Sub23_Sub2.anInt9037) shr Class362.anInt4459) + (i_6_ ushr 8))
                         var i_8_ = i_7_ + (i_6_ and 0xff) - 1
                         if (i_7_ < 0) i_7_ = 0
-                        if (i_8_ >= Class318_Sub7.anInt6451) i_8_ = Class318_Sub7.anInt6451 - 1
+                        if (i_8_ >= SpotAnimEntity.anInt6451) i_8_ = SpotAnimEntity.anInt6451 - 1
                         for (i_9_ in i_7_..i_8_) {
                             val l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_])
                             if ((l and 0xffffL) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or Class331.anInt4135.toLong()

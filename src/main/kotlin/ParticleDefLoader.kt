@@ -74,10 +74,10 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         var anInt2467: Int = 0
 
         @JvmStatic
-        fun method1376(class318_sub1: Class318_Sub1?) {
+        fun method1376(class318_sub1: SceneEntity?) {
             if (class318_sub1 != null) {
                 for (i in 0..1) {
-                    var class318_sub1_0_: Class318_Sub1? = null
+                    var class318_sub1_0_: SceneEntity? = null
                     var class318_sub1_1_ = Class348.aClass318_Sub1Array4293!![i]
                     while (class318_sub1_1_ != null) {
                         if (class318_sub1_1_ === class318_sub1) {
@@ -102,7 +102,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
                         class318_sub1_2_ = (class318_sub1_2_.aClass318_Sub1_6379)
                     }
                     class318_sub1_0_ = null
-                    var class318_sub1_3_: Class318_Sub1? = OverlayColorTable.aClass318_Sub1Array1754!![i]
+                    var class318_sub1_3_: SceneEntity? = OverlayColorTable.aClass318_Sub1Array1754!![i]
                     while (class318_sub1_3_ != null) {
                         if (class318_sub1_3_ === class318_sub1) {
                             if (class318_sub1_0_ != null) class318_sub1_0_.aClass318_Sub1_6379 = (class318_sub1_3_.aClass318_Sub1_6379)

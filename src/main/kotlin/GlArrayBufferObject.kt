@@ -1,6 +1,6 @@
 import SceneTilePlaneManager.method260
 import CubemapTextureImplSource.Companion.method2270
-import Class318_Sub1_Sub3_Sub3.Companion.method2431
+import ProjectedGroundDecor.Companion.method2431
 import Class84.Companion.method826
 import jaclib.memory.Buffer
 
@@ -125,7 +125,7 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                 while (class348_sub42_sub13 != null) {
                     val i_21_ = i_10_ + (i_5_ + Class348_Sub42_Sub5.anInt9532 + 13 - -(16 * i_20_))
                     i_20_++
-                    if (class348_sub42_sub13.anInt9615 == 1) Class318_Sub2.method2494(Class348_Sub42_Sub5.anInt9532 - -i_5_, 0xffffff.inv() or Class5_Sub2.anInt8363, i_21_, var_renderer, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12?), Class63.anInt1117, i_12_, Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv(), 125.toByte(), WorldMapSceneSoftware.anInt5819, anInt4717 - -i_4_, i_11_)
+                    if (class348_sub42_sub13.anInt9615 == 1) SceneModelBuilder.method2494(Class348_Sub42_Sub5.anInt9532 - -i_5_, 0xffffff.inv() or Class5_Sub2.anInt8363, i_21_, var_renderer, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12?), Class63.anInt1117, i_12_, Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv(), 125.toByte(), WorldMapSceneSoftware.anInt5819, anInt4717 - -i_4_, i_11_)
                     else method2431(0xffffff.inv() or Class348_Sub42_Sub11.anInt9586, i_21_, class348_sub42_sub13, i_11_, Class63.anInt1117, 0xffffff.inv() or Class5_Sub2.anInt8363, i_12_, var_renderer, Class348_Sub42_Sub5.anInt9532 - -i_5_, i xor 0x60, i_4_ + anInt4717, WorldMapSceneSoftware.anInt5819)
                     class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(111.toByte()) as Class348_Sub42_Sub13?)
                 }
@@ -135,7 +135,7 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                     while (class348_sub42_sub12 != null) {
                         val i_22_ = i_20_ * 16 + 13 + (Class373.anInt4534 + i_10_)
                         i_20_++
-                        Class318_Sub2.method2494(Class373.anInt4534, Class5_Sub2.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, Class348_Sub1_Sub1.anInt8806, i_12_, (Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, Class50_Sub3.anInt5252, i_11_)
+                        SceneModelBuilder.method2494(Class373.anInt4534, Class5_Sub2.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, Class348_Sub1_Sub1.anInt8806, i_12_, (Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, Class50_Sub3.anInt5252, i_11_)
                         class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(111.toByte()) as? Class348_Sub42_Sub12?)
                     }
                     Class332.method2642(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, true, Class50_Sub3.anInt5252, ClickFeedbackTask.anInt4669)
@@ -146,7 +146,7 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                 while (class348_sub42_sub12 != null) {
                     val i_19_ = (i_7_ - -i_10_ - (-13 - (Class73.anInt4776 + (-1 + -i_18_)) * 16))
                     i_18_++
-                    Class318_Sub2.method2494(i_7_, 0xffffff.inv() or Class5_Sub2.anInt8363, i_19_, var_renderer, class348_sub42_sub12, i_8_, i_12_, (0xffffff.inv() or Class348_Sub42_Sub11.anInt9586), 125.toByte(), i_9_, i_6_, i_11_)
+                    SceneModelBuilder.method2494(i_7_, 0xffffff.inv() or Class5_Sub2.anInt8363, i_19_, var_renderer, class348_sub42_sub12, i_8_, i_12_, (0xffffff.inv() or Class348_Sub42_Sub11.anInt9586), 125.toByte(), i_9_, i_6_, i_11_)
                     class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(71.toByte()) as? Class348_Sub42_Sub12?
                 }
             }

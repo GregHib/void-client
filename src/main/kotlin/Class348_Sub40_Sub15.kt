@@ -39,7 +39,7 @@ class Class348_Sub40_Sub15 internal constructor(i: Int) : Class348_Sub40(0, true
 
         fun method3084(i: Int, i_2_: Byte, i_3_: Int) {
             anInt9218++
-            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_3_, 105.toByte(), 17)
+            val class348_sub42_sub15 = NamedTimedNode.method2516(i_3_, 105.toByte(), 17)
             class348_sub42_sub15.method3246(-25490)
             class348_sub42_sub15.anInt9652 = i
             val i_4_ = 59 / ((i_2_ - -7) / 49)

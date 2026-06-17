@@ -88,7 +88,7 @@ object GroundItemRenderState {
         if (class190 != null) {
             SingletonMarker.anInt2601 = class190.anInt2535
             CameraRotationStub.anInt325 = class190.anInt2538
-            Class318_Sub1_Sub3_Sub1.anInt10023 = class190.anInt2548
+            ModelGroundDecor.anInt10023 = class190.anInt2548
         }
         method2988(bool)
     }

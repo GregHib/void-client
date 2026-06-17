@@ -27,7 +27,7 @@ class Class348_Sub40_Sub24 : Class348_Sub40(0, true) {
                 for (i_2_ in 0..<Class348_Sub40_Sub6.Companion.anInt9139) {
                     var i_3_ = 0
                     var i_4_ = 0
-                    val i_5_ = Class318_Sub6.anIntArray6432!![i_2_]
+                    val i_5_ = SceneEffectMarker.anIntArray6432!![i_2_]
                     var i_6_ = anInt9325
                     while_197_@ do {
                         do {

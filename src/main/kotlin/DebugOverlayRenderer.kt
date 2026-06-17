@@ -14,17 +14,17 @@ object DebugOverlayRenderer {
         anIntArray3169 = null
     }
 
-    fun method1883(class318: Class318?, class318_0_: Class318?, bool: Boolean) {
+    fun method1883(sceneLinkedListNode: SceneLinkedListNode?, sceneLinkedListNode_0_: SceneLinkedListNode?, bool: Boolean) {
         try {
             anInt3171++
-            if (class318_0_!!.aClass318_3976 != null) class318_0_.method2373(false)
-            class318_0_.aClass318_3970 = class318
+            if (sceneLinkedListNode_0_!!.aSceneLinkedListNode_3976 != null) sceneLinkedListNode_0_.method2373(false)
+            sceneLinkedListNode_0_.aSceneLinkedListNode_3970 = sceneLinkedListNode
             if (bool != true) anIntArray3169 = null
-            class318_0_.aClass318_3976 = class318!!.aClass318_3976
-            class318_0_.aClass318_3976!!.aClass318_3970 = class318_0_
-            class318_0_.aClass318_3970!!.aClass318_3976 = class318_0_
+            sceneLinkedListNode_0_.aSceneLinkedListNode_3976 = sceneLinkedListNode!!.aSceneLinkedListNode_3976
+            sceneLinkedListNode_0_.aSceneLinkedListNode_3976!!.aSceneLinkedListNode_3970 = sceneLinkedListNode_0_
+            sceneLinkedListNode_0_.aSceneLinkedListNode_3970!!.aSceneLinkedListNode_3976 = sceneLinkedListNode_0_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("te.B(" + (if (class318 != null) "{...}" else "null") + ',' + (if (class318_0_ != null) "{...}" else "null") + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("te.B(" + (if (sceneLinkedListNode != null) "{...}" else "null") + ',' + (if (sceneLinkedListNode_0_ != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 

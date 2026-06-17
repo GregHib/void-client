@@ -99,7 +99,7 @@ object Class44 {
     }
 
     @JvmStatic
-    fun method388(i: Int, i_18_: Int, i_19_: Int, class318_sub1_sub5: Class318_Sub1_Sub5, class318_sub1_sub5_20_: Class318_Sub1_Sub5?) {
+    fun method388(i: Int, i_18_: Int, i_19_: Int, class318_sub1_sub5: WallEntity, class318_sub1_sub5_20_: WallEntity?) {
         val class357 = Class348_Sub46.method3321(i, i_18_, i_19_)
         if (class357 != null) {
             class357.aClass318_Sub1_Sub5_4395 = class318_sub1_sub5

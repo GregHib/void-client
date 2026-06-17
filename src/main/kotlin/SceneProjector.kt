@@ -151,7 +151,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         }
                                     }
                                     val class243 = (Class348_Sub42_Sub8_Sub2.aClass76_10436!!.aDoublyLinkedNodeList_1282)
-                                    var class318_sub4 = (class243.method1872(8) as Class318_Sub4?)
+                                    var class318_sub4 = (class243.method1872(8) as SceneEntityModel?)
                                     while (class318_sub4 != null) {
                                         val class318_sub3s = (class318_sub4.aClass318_Sub3Array6414)!!
                                         var bool_54_ = true
@@ -190,7 +190,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                             class318_sub4.method2373(false)
                                             method560(class318_sub4, i xor 0x4b)
                                         }
-                                        class318_sub4 = (class243.method1878(122.toByte()) as Class318_Sub4?)
+                                        class318_sub4 = (class243.method1878(122.toByte()) as SceneEntityModel?)
                                     }
                                     if (Class348_Sub49.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anInterface4_252)
                                     CameraRotationStub.aRenderer326!!.F(-i_33_, -i_34_)
@@ -290,9 +290,9 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             if (Class348_Sub49.anInt7207 == 1) method1469(-117)
                         }
                         if (Class348_Sub49.anInt7207 == 0) WidgetDefinition.anInterface4_252!!.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
-                        Class318_Sub1_Sub1_Sub2.anInt9997++
+                        GroundDecorSceneEntity.anInt9997++
                         method3284(true, Class348_Sub42_Sub4.aDouble9517)
-                        Class318_Sub1_Sub5_Sub1.aDouble10120 = Class348_Sub42_Sub4.aDouble9517
+                        ModelWallEntity.aDouble10120 = Class348_Sub42_Sub4.aDouble9517
                         if (Class348_Sub49.anInt7207 == 0 || Class348_Sub49.anInt7207 == 2) {
                             if (Class348_Sub49.anInt7207 == 2) {
                                 CameraRotationStub.aRenderer326!!.GA(Class77.anInt1290)
@@ -301,14 +301,14 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             TextureHandle.anInt2590 = i_20_
                             ModelFacePriorityNode.anInt1879 = i_21_
                             Class94.anInt1537 = (-Class339.anInt4211 + -Class328.anInt4100 + (i_16_ + SoundEnvelope.anInt2747))
-                            Class318_Sub5.anInt6417 = (-Class348_Sub40_Sub8.anInt9157 + (i_17_ + Class348_Sub42_Sub9_Sub1.anInt10444 + -Class348_Sub3.anInt6568))
-                            CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
+                            SceneTextLabel.anInt6417 = (-Class348_Sub40_Sub8.anInt9157 + (i_17_ + Class348_Sub42_Sub9_Sub1.anInt10444 + -Class348_Sub3.anInt6568))
+                            CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                         } else if (Class348_Sub49.anInt7207 == 1) {
                             TextureHandle.anInt2590 = i_20_
                             Class94.anInt1537 = i_16_ + -Class328.anInt4100
-                            Class318_Sub5.anInt6417 = -Class348_Sub3.anInt6568 + i_17_
+                            SceneTextLabel.anInt6417 = -Class348_Sub3.anInt6568 + i_17_
                             ModelFacePriorityNode.anInt1879 = i_21_
-                            CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
+                            CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                             CameraRotationStub.aRenderer326!!.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (LinkedNodeListIterator.anInt1651 + Class348_Sub40_Sub8.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (Class348_Sub49.anInt7207 != 2) 2 else 0, Class348_Sub49.anInt7207 == 1)
@@ -328,7 +328,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
         }
 
         @JvmStatic
-        fun method1635(i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?) {
+        fun method1635(i: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor?) {
             try {
                 anInt2983++
                 do {

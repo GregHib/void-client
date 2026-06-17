@@ -239,18 +239,18 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
             var i_17_ = i_17_
             anInt6281++
             if (!ModelLightingConfig.method1422(i_16_, i_11_, i, -7596)) return false
-            i_16_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![1]
-            i = Class318_Sub1_Sub5_Sub2.anIntArray10172!![0]
-            i_11_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![2]
+            i_16_ = SequencedWallEntity.anIntArray10172!![1]
+            i = SequencedWallEntity.anIntArray10172!![0]
+            i_11_ = SequencedWallEntity.anIntArray10172!![2]
             if (!ModelLightingConfig.method1422(i_15_, i_17_, i_10_, -7596)) return false
-            i_10_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![0]
-            i_17_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![2]
-            i_15_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![1]
+            i_10_ = SequencedWallEntity.anIntArray10172!![0]
+            i_17_ = SequencedWallEntity.anIntArray10172!![2]
+            i_15_ = SequencedWallEntity.anIntArray10172!![1]
             if (!ModelLightingConfig.method1422(i_14_, i_13_, i_12_, -7596)) return false
-            i_13_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![2]
+            i_13_ = SequencedWallEntity.anIntArray10172!![2]
             if (bool != false) return false
-            i_14_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![1]
-            i_12_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![0]
+            i_14_ = SequencedWallEntity.anIntArray10172!![1]
+            i_12_ = SequencedWallEntity.anIntArray10172!![0]
             return Class348_Sub40_Sub29.method3125(i_12_, i_16_, i_10_, i_13_, i_17_, (-76).toByte(), i_15_, i_11_, i, i_14_)
         }
     }

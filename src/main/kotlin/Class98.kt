@@ -41,7 +41,7 @@ class Class98 {
             else if (i_2_ <= i_3_ + -1 || method1399(7, string[i_3_ - 1]) == -1) i_4_--
             if (i > -92) method877(-51, -45, ((-74).toByte()).toByte())
             val `is` = ByteArray(i_4_)
-            Class318_Sub2.method2497(`is`, 0.toByte(), string, 0)
+            SceneModelBuilder.method2497(`is`, 0.toByte(), string, 0)
             return `is`
         }
 

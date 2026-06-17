@@ -27,8 +27,8 @@ object LocalPlayerState {
             anInt1908++
             Class64_Sub3.aString5600 = string
             TextureGenerator.aString2496 = string_0_
-            Class318_Sub1_Sub3_Sub3.aBoolean10238 = bool
-            if (!Class318_Sub1_Sub3_Sub3.aBoolean10238 && (Class64_Sub3.aString5600 == "" || TextureGenerator.aString2496 == "")) GlRectangleTexture.method254(3, (-100).toByte())
+            ProjectedGroundDecor.aBoolean10238 = bool
+            if (!ProjectedGroundDecor.aBoolean10238 && (Class64_Sub3.aString5600 == "" || TextureGenerator.aString2496 == "")) GlRectangleTexture.method254(3, (-100).toByte())
             else {
                 val i_1_ = 34 % ((16 - i) / 55)
                 if (BloomGraphicsOptionState.anInt5969 != 1) {
@@ -39,7 +39,7 @@ object LocalPlayerState {
                 GlRectangleTexture.method254(-3, (-94).toByte())
                 NpcDefinition.anInt2955 = 1
                 SceneRegionState.anInt197 = 0
-                Class318_Sub1_Sub1_Sub2.anInt9971 = 0
+                GroundDecorSceneEntity.anInt9971 = 0
             }
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("nr.A(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ')'))

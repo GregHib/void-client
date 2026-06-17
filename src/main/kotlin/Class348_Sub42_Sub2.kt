@@ -100,18 +100,18 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             Class348_Sub23_Sub2.anInt9037 = ArchiveFileConditionWrapper.anInt3465 shr 1
             sqrt(((Class348_Sub23_Sub2.anInt9037 * Class348_Sub23_Sub2.anInt9037) + (Class348_Sub23_Sub2.anInt9037 * Class348_Sub23_Sub2.anInt9037)).toDouble())
             MapAreaDefinition.anInt2524 = i_1_
-            Class318_Sub7.anInt6451 = i_2_
+            SpotAnimEntity.anInt6451 = i_2_
             Class348_Sub41.anInt7054 = i_3_
-            Class318_Sub1_Sub4_Sub1.anInt10084 = i_4_
+            NpcActorEntity.anInt10084 = i_4_
             Class50_Sub4.aClass47_5262 = method2826(15)
             method3309(-124)
-            Class65.aClass357ArrayArrayArray1148 = (Array<Array<Array<Class357?>?>?>(i_1_) { Array<Array<Class357?>?>(Class318_Sub7.anInt6451) { arrayOfNulls<Class357>(Class348_Sub41.anInt7054) } })
+            Class65.aClass357ArrayArrayArray1148 = (Array<Array<Array<Class357?>?>?>(i_1_) { Array<Array<Class357?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<Class357>(Class348_Sub41.anInt7054) } })
             Class348_Sub1_Sub1.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
             if (bool) {
-                Class342.anIntArrayArray4253 = Array<IntArray?>(Class318_Sub7.anInt6451) { IntArray(Class348_Sub41.anInt7054) }
-                Class348_Sub1_Sub2.aByteArrayArray8816 = Array<ByteArray?>(Class318_Sub7.anInt6451) { ByteArray(Class348_Sub41.anInt7054) }
-                BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(Class318_Sub7.anInt6451) { ShortArray(Class348_Sub41.anInt7054) }
-                Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = (Array<Array<Array<Class357?>?>?>(1) { Array<Array<Class357?>?>(Class318_Sub7.anInt6451) { arrayOfNulls<Class357>(Class348_Sub41.anInt7054) } })
+                Class342.anIntArrayArray4253 = Array<IntArray?>(SpotAnimEntity.anInt6451) { IntArray(Class348_Sub41.anInt7054) }
+                Class348_Sub1_Sub2.aByteArrayArray8816 = Array<ByteArray?>(SpotAnimEntity.anInt6451) { ByteArray(Class348_Sub41.anInt7054) }
+                BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(SpotAnimEntity.anInt6451) { ShortArray(Class348_Sub41.anInt7054) }
+                Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = (Array<Array<Array<Class357?>?>?>(1) { Array<Array<Class357?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<Class357>(Class348_Sub41.anInt7054) } })
                 Class332.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
             } else {
                 Class342.anIntArrayArray4253 = null
@@ -132,21 +132,21 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
                 Class331.anInt4135 = 0
             }
             method1879(false)
-            aClass318_Sub1Array4293 = arrayOfNulls<Class318_Sub1>(2)
-            BackgroundWorkerThread.aClass318_Sub1Array3226 = arrayOfNulls<Class318_Sub1>(2)
-            OverlayColorTable.aClass318_Sub1Array1754 = arrayOfNulls<Class318_Sub1>(2)
-            RemoveRoofsOptionState.aClass318_Sub1Array6066 = arrayOfNulls<Class318_Sub1>(10000)
+            aClass318_Sub1Array4293 = arrayOfNulls<SceneEntity>(2)
+            BackgroundWorkerThread.aClass318_Sub1Array3226 = arrayOfNulls<SceneEntity>(2)
+            OverlayColorTable.aClass318_Sub1Array1754 = arrayOfNulls<SceneEntity>(2)
+            RemoveRoofsOptionState.aClass318_Sub1Array6066 = arrayOfNulls<SceneEntity>(10000)
             Class5_Sub1_Sub1.anInt9930 = 0
-            CutsceneSequenceData.aClass318_Sub1Array3737 = arrayOfNulls<Class318_Sub1>(5000)
+            CutsceneSequenceData.aClass318_Sub1Array3737 = arrayOfNulls<SceneEntity>(5000)
             Class348_Sub42_Sub3.Companion.anInt9504 = 0
-            ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<Class318_Sub1_Sub3>(5000)
+            ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<GroundDecorEntity>(5000)
             Class86.anInt1477 = 0
-            Class99.aBooleanArrayArray1572 = (Array<BooleanArray?>((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) { BooleanArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) })
-            Class348_Sub8.aBooleanArrayArray6656 = (Array<BooleanArray?>((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2)) { BooleanArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2)) })
-            RefCountedHandle.anIntArray2272 = IntArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2))
+            Class99.aBooleanArrayArray1572 = (Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) })
+            Class348_Sub8.aBooleanArrayArray6656 = (Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) })
+            RefCountedHandle.anIntArray2272 = IntArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2))
             Class71.aClass76_1208 = Class71.aClass76_1210
             if (Class348_Sub40_Sub5.aBoolean9121) {
-                OverlayColorTable.aBooleanArrayArrayArray1751 = (Array<Array<BooleanArray?>?>(i_1_) { Array<BooleanArray?>((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) { BooleanArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) } })
+                OverlayColorTable.aBooleanArrayArrayArray1751 = (Array<Array<BooleanArray?>?>(i_1_) { Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) } })
                 Class5_Sub2.aBooleanArrayArrayArray8361 = arrayOfNulls<Array<BooleanArray?>>(i_1_)
                 if (Class348_Sub40_Sub34.aSceneLoaderThreadArray9432 != null) method1978()
                 Class348_Sub40_Sub34.aSceneLoaderThreadArray9432 = arrayOfNulls<SceneLoaderThread>(Npc.anInt10503)

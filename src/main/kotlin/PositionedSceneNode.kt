@@ -1,7 +1,7 @@
 /* Class318_Sub9_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class318_Sub9_Sub2 : Class318_Sub9() {
+open class PositionedSceneNode : SceneListNode() {
     var anInt8789: Int = 0
     var anInt8790: Int = 0
     var anInt8791: Int = 0
@@ -20,7 +20,7 @@ open class Class318_Sub9_Sub2 : Class318_Sub9() {
         }
 
         @JvmStatic
-        fun method2519(class318_sub1: Class318_Sub1, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
+        fun method2519(class318_sub1: SceneEntity, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             var bool = true
             var i_4_ = i_0_
             val i_5_ = i_0_ + i_2_
@@ -29,7 +29,7 @@ open class Class318_Sub9_Sub2 : Class318_Sub9() {
             for (i_8_ in i..i + 1) {
                 if (i_8_ != MapAreaDefinition.anInt2524) {
                     for (i_9_ in i_4_..i_5_) {
-                        if (i_9_ >= 0 && i_9_ < Class318_Sub7.Companion.anInt6451) {
+                        if (i_9_ >= 0 && i_9_ < SpotAnimEntity.Companion.anInt6451) {
                             for (i_10_ in i_6_..i_7_) {
                                 if (i_10_ >= 0 && i_10_ < Class348_Sub41.anInt7054 && (!bool || i_9_ >= i_5_ || i_10_ >= i_7_ || i_10_ < i_1_ && i_9_ != i_0_)) {
                                     val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_8_]!![i_9_]!![i_10_])

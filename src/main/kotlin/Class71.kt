@@ -28,7 +28,7 @@ object Class71 {
     }
 
     @JvmStatic
-    fun method729(i: Int, i_0_: Int, i_1_: Byte, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3, i_2_: Int) {
+    fun method729(i: Int, i_0_: Int, i_1_: Byte, class318_sub1_sub3_sub3: ProjectedGroundDecor, i_2_: Int) {
         if (i_1_ < 60) method728(true)
         anInt1209++
         val class225 = class318_sub1_sub3_sub3.method2422(72.toByte())

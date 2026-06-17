@@ -1,16 +1,16 @@
 /* Class318 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class318 {
-    var aClass318_3970: Class318? = null
-    var aClass318_3976: Class318? = null
+open class SceneLinkedListNode {
+    var aSceneLinkedListNode_3970: SceneLinkedListNode? = null
+    var aSceneLinkedListNode_3976: SceneLinkedListNode? = null
     fun method2373(bool: Boolean) {
         anInt3975++
-        if (this.aClass318_3976 != null) {
-            this.aClass318_3976!!.aClass318_3970 = this.aClass318_3970
-            this.aClass318_3970!!.aClass318_3976 = this.aClass318_3976
-            this.aClass318_3970 = null
-            if (bool == false) this.aClass318_3976 = null
+        if (this.aSceneLinkedListNode_3976 != null) {
+            this.aSceneLinkedListNode_3976!!.aSceneLinkedListNode_3970 = this.aSceneLinkedListNode_3970
+            this.aSceneLinkedListNode_3970!!.aSceneLinkedListNode_3976 = this.aSceneLinkedListNode_3976
+            this.aSceneLinkedListNode_3970 = null
+            if (bool == false) this.aSceneLinkedListNode_3976 = null
         }
     }
 

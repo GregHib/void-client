@@ -28,7 +28,7 @@ class Class57 {
         fun method529(i: Int, bool: Boolean) {
             anInt1053++
             if (bool != true) method530(-105)
-            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, 105.toByte(), 2)
+            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 2)
             class348_sub42_sub15.method3251(-16058)
         }
 
@@ -46,7 +46,7 @@ class Class57 {
             anInt1049++
             if (Class342.aClass70_4247 != class70) {
                 if (class70 != GlIndexBufferArb.aClass70_8503) {
-                    if (Class318_Sub1_Sub2.aClass70_8737 != class70) {
+                    if (SceneObjectEntity.aClass70_8737 != class70) {
                         if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 34166
                     } else return 34168
                 } else return 34167

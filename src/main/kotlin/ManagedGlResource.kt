@@ -40,7 +40,7 @@ class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Lo
         fun method1867(i: Int) {
             anInt3155++
             Class88.anInt1498++
-            val class348_sub47 = method2148(Class318_Sub1_Sub1.aClass351_8724, Class348_Sub23_Sub2.aClass77_9029, -99)
+            val class348_sub47 = method2148(TileSceneEntity.aClass351_8724, Class348_Sub23_Sub2.aClass77_9029, -99)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
             Class348_Sub42_Sub14.method3243(118, class348_sub47)
         }
@@ -52,7 +52,7 @@ class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Lo
             var bool = false
             var class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-85) as Class348_Sub42_Sub13?)
             while (class348_sub42_sub13_1_ != null) {
-                if (Class318_Sub2.method2496(class348_sub42_sub13_1_.method3235(-17937), class348_sub42_sub13.method3235(-17937), true)) {
+                if (SceneModelBuilder.method2496(class348_sub42_sub13_1_.method3235(-17937), class348_sub42_sub13.method3235(-17937), true)) {
                     method721(class348_sub42_sub13_1_, class348_sub42_sub13, -1)
                     bool = true
                     break

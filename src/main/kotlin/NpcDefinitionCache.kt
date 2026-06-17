@@ -2,7 +2,7 @@ import ChatEffectsOptionState.Companion.method1731
 import BrightnessOptionState.Companion.method1745
 import FixedFunctionMaterialPass.Companion.method2146
 import WaterMaterialPass.Companion.method2148
-import Class318_Sub1_Sub5.Companion.method2485
+import WallEntity.Companion.method2485
 import Class99.method881
 
 /* Class261 - Decompiled by JODE
@@ -150,7 +150,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = null
             }
             var i_14_ = -1
-            val class348_sub45 = Class318_Sub1_Sub3.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?
+            val class348_sub45 = GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?
             if (class348_sub45 != null) i_14_ = class348_sub45.method3310(58)
             if (Class5_Sub1.aBoolean8335) {
                 if (i_14_ == -1) {
@@ -293,7 +293,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     }
                 }
             } else {
-                if (i_14_ == 0 && ((Class318_Sub1_Sub5.anInt8770 == 1 && Class73.anInt4776 > 2) || method2485(-100))) i_14_ = 2
+                if (i_14_ == 0 && ((WallEntity.anInt8770 == 1 && Class73.anInt4776 > 2) || method2485(-100))) i_14_ = 2
                 if (i_14_ == 2 && Class73.anInt4776 > 0 && class348_sub45 != null) {
                     if (RegionSceneLoader.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) TextureFormatInfo.method2291((-124).toByte(), class348_sub45.method3308((-127).toByte()), class348_sub45.method3311(-104))
                     else NpcEntityUpdater.anInt3655 = 2

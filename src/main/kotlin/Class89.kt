@@ -53,13 +53,13 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
         }
 
         @JvmStatic
-        fun method850(class318_sub1_sub3: Class318_Sub1_Sub3, bool: Boolean): Boolean {
+        fun method850(class318_sub1_sub3: GroundDecorEntity, bool: Boolean): Boolean {
             val bool_13_ = NativeSprite.aTerrainTileArray5191 == Class332.aTerrainTileArray4142
             var i = 0
             var i_14_: Short = 0
             var i_15_: Byte = 0
             class318_sub1_sub3.method2409((-116).toByte())
-            if (class318_sub1_sub3.aShort8743 < 0 || class318_sub1_sub3.aShort8750 < 0 || (class318_sub1_sub3.aShort8751 >= Class318_Sub7.anInt6451) || (class318_sub1_sub3.aShort8747 >= Class348_Sub41.anInt7054)) return false
+            if (class318_sub1_sub3.aShort8743 < 0 || class318_sub1_sub3.aShort8750 < 0 || (class318_sub1_sub3.aShort8751 >= SpotAnimEntity.anInt6451) || (class318_sub1_sub3.aShort8747 >= Class348_Sub41.anInt7054)) return false
             var i_16_: Short = 0
             for (i_17_ in class318_sub1_sub3.aShort8743..class318_sub1_sub3.aShort8751) {
                 for (i_18_ in class318_sub1_sub3.aShort8750..class318_sub1_sub3.aShort8747) {

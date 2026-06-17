@@ -185,14 +185,14 @@ class VarpStore : Interface17 {
         @JvmStatic
         fun method1315(i: Int) {
             anInt5077++
-            if (Class318_Sub1_Sub5.aLinkedQueueNode_8766 != null) {
-                if (Class318_Sub1_Sub5.aLinkedQueueNode_8766!!.anInt1997 == 1) {
-                    Class318_Sub1_Sub5.aLinkedQueueNode_8766 = null
+            if (WallEntity.aLinkedQueueNode_8766 != null) {
+                if (WallEntity.aLinkedQueueNode_8766!!.anInt1997 == 1) {
+                    WallEntity.aLinkedQueueNode_8766 = null
                     return
                 }
-                if (Class318_Sub1_Sub5.aLinkedQueueNode_8766!!.anInt1997 == 2) {
+                if (WallEntity.aLinkedQueueNode_8766!!.anInt1997 == 2) {
                     method2862(RenderableGroup.aPrivilegedOperationWorker_5017, Class348_Sub42_Sub8.aString9554, -120, 2)
-                    Class318_Sub1_Sub5.aLinkedQueueNode_8766 = null
+                    WallEntity.aLinkedQueueNode_8766 = null
                     return
                 }
             }

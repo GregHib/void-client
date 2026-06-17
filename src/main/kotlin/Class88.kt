@@ -15,8 +15,8 @@ import java.net.URL
 
 class Class88 {
     @JvmField
-    var aClass318_Sub9_1503: Class318_Sub9? = Class318_Sub9()
-    private var aClass318_Sub9_1505: Class318_Sub9? = null
+    var aClass318_Sub9_1503: SceneListNode? = SceneListNode()
+    private var aClass318_Sub9_1505: SceneListNode? = null
 
     fun method840(i: Int): Int {
         anInt1496++
@@ -29,7 +29,7 @@ class Class88 {
         return i_0_
     }
 
-    fun method844(class318_sub9: Class318_Sub9?, bool: Boolean) {
+    fun method844(class318_sub9: SceneListNode?, bool: Boolean) {
         try {
             anInt1495++
             if (class318_sub9!!.aClass318_Sub9_6468 != null) class318_sub9.method2514(93)
@@ -54,7 +54,7 @@ class Class88 {
         aClass318_Sub9_1505 = null
     }
 
-    fun method846(i: Byte): Class318_Sub9? {
+    fun method846(i: Byte): SceneListNode? {
         anInt1494++
         val class318_sub9 = aClass318_Sub9_1505
         if (class318_sub9 === this.aClass318_Sub9_1503) {
@@ -66,7 +66,7 @@ class Class88 {
         return class318_sub9
     }
 
-    fun method848(i: Int): Class318_Sub9? {
+    fun method848(i: Int): SceneListNode? {
         if (i != 8) return null
         anInt1502++
         val class318_sub9 = (this.aClass318_Sub9_1503!!.aClass318_Sub9_6469)
@@ -136,21 +136,21 @@ class Class88 {
             if (NpcDefinition.anInt2955 != 0 && NpcDefinition.anInt2955 != 5) {
                 try {
                     val i_2_: Int
-                    if (Class318_Sub1_Sub1_Sub2.anInt9971 != 0) i_2_ = 2000
+                    if (GroundDecorSceneEntity.anInt9971 != 0) i_2_ = 2000
                     else i_2_ = 250
                     if (i_2_ < ++SceneRegionState.anInt197) {
                         if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
                             Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
                             Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                         }
-                        if (Class318_Sub1_Sub1_Sub2.anInt9971 >= 3) {
+                        if (GroundDecorSceneEntity.anInt9971 >= 3) {
                             NpcDefinition.anInt2955 = 0
                             GlRectangleTexture.method254(-5, (-111).toByte())
                             return
                         }
                         if (BloomGraphicsOptionState.anInt5969 != 2) ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
                         else CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
-                        Class318_Sub1_Sub1_Sub2.anInt9971++
+                        GroundDecorSceneEntity.anInt9971++
                         NpcDefinition.anInt2955 = 1
                         SceneRegionState.anInt197 = 0
                     }
@@ -199,7 +199,7 @@ class Class88 {
                         class348_sub49.writeString((-5).toByte(), TextureGenerator.aString2496!!)
                         class348_sub49.writeLong(Class348_Sub33.aLong6966, (-124).toByte())
                         class348_sub49.writeLong(OutputStream_Sub2.aLong108, (-112).toByte())
-                        class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (-76).toByte(), (Class318_Sub1_Sub4.aBigInteger8762))
+                        class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (-76).toByte(), (ActorEntity.aBigInteger8762))
                         method2739(0)
                         val class348_sub47 = ProjectileSpawner.method1478(true)
                         val class348_sub49_sub2 = (class348_sub47!!.aClass348_Sub49_Sub2_7116)!!
@@ -273,9 +273,9 @@ class Class88 {
                                 }
                                 if (i_11_ != 2) {
                                     if (i_11_ != 15) {
-                                        if (i_11_ == 23 && Class318_Sub1_Sub1_Sub2.anInt9971 < 3) {
+                                        if (i_11_ == 23 && GroundDecorSceneEntity.anInt9971 < 3) {
                                             NpcDefinition.anInt2955 = 1
-                                            Class318_Sub1_Sub1_Sub2.anInt9971++
+                                            GroundDecorSceneEntity.anInt9971++
                                             SceneRegionState.anInt197 = 0
                                             Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
                                             Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
@@ -396,7 +396,7 @@ class Class88 {
                                 try {
                                     JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "zap")
                                 } catch (throwable: Throwable) {
-                                    if (Class318_Sub1_Sub5.aBoolean8773) {
+                                    if (WallEntity.aBoolean8773) {
                                         try {
                                             Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), "blank.ws"), "tbi")
                                         } catch (exception: Exception) {
@@ -481,14 +481,14 @@ class Class88 {
                         Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
                         Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                     }
-                    if (Class318_Sub1_Sub1_Sub2.anInt9971 >= 3) {
+                    if (GroundDecorSceneEntity.anInt9971 >= 3) {
                         NpcDefinition.anInt2955 = 0
                         GlRectangleTexture.method254(-4, (-87).toByte())
                         GzipDecompressor.method1215(3.toByte())
                     } else {
                         if (BloomGraphicsOptionState.anInt5969 != 2) ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
                         else CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
-                        Class318_Sub1_Sub1_Sub2.anInt9971++
+                        GroundDecorSceneEntity.anInt9971++
                         SceneRegionState.anInt197 = 0
                         NpcDefinition.anInt2955 = 1
                     }

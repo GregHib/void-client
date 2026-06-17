@@ -5,7 +5,7 @@ import DisplayModeOptionState.Companion.method1828
 import ModelDataCache.method297
 import CompassSmoother.Companion.method2017
 import IntHashSet.Companion.method2368
-import Class318.Companion.method2375
+import SceneLinkedListNode.Companion.method2375
 import Class369_Sub3.Companion.method3573
 import Class84.Companion.method821
 import java.awt.Component
@@ -175,7 +175,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                     class46.anInt675 = 0x7ff and (256.0 * sin((Class367_Sub11.anInt7396).toDouble() / 40.0)).toInt()
                     class46.anInt770 = 5
                     class46.anInt753 = Class348_Sub42_Sub11.anInt9591
-                    class46.anInt779 = (Class318_Sub1_Sub3_Sub1.method2418((LocalPlayerState.aPlayer_1907!!.aString10544!!), (-41).toByte()))
+                    class46.anInt779 = (ModelGroundDecor.method2418((LocalPlayerState.aPlayer_1907!!.aString10544!!), (-41).toByte()))
                     class46.anInt699 = LocalPlayerState.aPlayer_1907!!.anInt10268
                     class46.anInt841 = 0
                     class46.anInt730 = LocalPlayerState.aPlayer_1907!!.anInt10312

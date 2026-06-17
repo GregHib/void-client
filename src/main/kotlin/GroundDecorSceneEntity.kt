@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub1_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, class51: Class51, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bool: Boolean, i_24_: Int, bool_25_: Boolean) : Class318_Sub1_Sub1(i_21_, i_22_, i_23_, i, i_20_, class51.anInt930), Interface10 {
+class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, class51: Class51, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bool: Boolean, i_24_: Int, bool_25_: Boolean) : TileSceneEntity(i_21_, i_22_, i_23_, i, i_20_, class51.anInt930), Interface10 {
     private val aBoolean9974: Boolean
     private var aRenderNode9976: RenderNode? = null
     private val aByte9980: Byte
@@ -16,12 +16,12 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
     private var aShort9991: Short = 0
     private var aClass64_9993: Class64? = null
     private var aCircleHitbox_9999: CircleHitbox? = null
-    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_0_: Int, i_1_: Byte, i_2_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_0_: Int, i_1_: Byte, i_2_: Int) {
         do {
             try {
                 anInt9970++
                 if (i_1_ > -106) method2402(-5, 56.toByte())
-                if (class318_sub1 !is Class318_Sub1_Sub1_Sub2) break
+                if (class318_sub1 !is GroundDecorSceneEntity) break
                 val class318_sub1_sub1_sub2_3_ = class318_sub1
                 if (aClass64_9993 == null || class318_sub1_sub1_sub2_3_.aClass64_9993 == null) break
                 aClass64_9993!!.method613((class318_sub1_sub1_sub2_3_.aClass64_9993), i_2_, i, i_0_, bool)
@@ -83,7 +83,7 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
         return aShort9991.toInt() and 0xffff
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt9990++
         if (aClass64_9993 == null) return null
         val class101 = var_renderer!!.method3705()
@@ -272,7 +272,7 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
             for (i_13_ in class302s.indices) {
                 val class302 = class302s[i_13_]
                 if (class302 != null && class302.anInt3840 == 2) {
-                    Class318_Sub5.Companion.method2505(i_9_ shr 1, 2 * class302.anInt3839, 0, i_12_, i_11_ shr 1, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835)
+                    SceneTextLabel.Companion.method2505(i_9_ shr 1, 2 * class302.anInt3839, 0, i_12_, i_11_ shr 1, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835)
                     if (RemoveRoofsOptionState.anIntArray6062!![0] > -1 && Class367_Sub11.anInt7396 % 20 < 10) {
                         val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])
                         val i_14_ = -12 + (i - -RemoveRoofsOptionState.anIntArray6062!![0])

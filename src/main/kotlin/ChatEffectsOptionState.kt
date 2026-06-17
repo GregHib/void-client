@@ -119,7 +119,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1731(i: Int) {
             anInt5863++
-            val class348_sub45 = (Class318_Sub1_Sub3.aNodeDeque_8744!!.method1995(i xor 0x5) as Class348_Sub45?)
+            val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(i xor 0x5) as Class348_Sub45?)
             val bool = (RegionSceneLoader.aClass46_3701 != null || Class348_Sub42.anInt7059 > 0)
             val i_19_ = class348_sub45!!.method3308((-128).toByte())
             val i_20_ = class348_sub45.method3311(119)
@@ -141,7 +141,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         fun method1733(i: Byte, i_23_: Int) {
             anInt5870++
             if (i.toInt() != -78) method1732(80.toByte(), -38)
-            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_23_, 105.toByte(), 11)
+            val class348_sub42_sub15 = NamedTimedNode.method2516(i_23_, 105.toByte(), 11)
             class348_sub42_sub15.method3251(-16058)
         }
 

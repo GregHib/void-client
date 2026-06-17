@@ -7,7 +7,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub3_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Npc : Class318_Sub1_Sub3_Sub3() {
+class Npc : ProjectedGroundDecor() {
     var anInt10499: Int = -1
     var aClass79_10505: Class79? = null
     var anInt10512: Int = -1
@@ -17,7 +17,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         return (this.aClass79_10505!!.aBoolean1396)
     }
 
-    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_6_: Int, i_7_: Byte, i_8_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_6_: Int, i_7_: Byte, i_8_: Int) {
         try {
             if (i_7_ > -106) this.aClass79_10505 = null
             anInt10513++
@@ -108,7 +108,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         this.aByteArray10321!![0] = i_15_.toByte()
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10501++
         if (this.aClass79_10505 == null || !method2447(i + 114, 2048, var_renderer)) return null
         val class101 = var_renderer!!.method3705()
@@ -123,7 +123,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         val class225 = this.method2422(72.toByte())
         val class79 = (if (this.aClass79_10505!!.anIntArray1377 != null) this.aClass79_10505!!.method794(aVarpStore_10209!!, -1) else this.aClass79_10505)
         this.aBoolean10324 = false
-        var class318_sub4: Class318_Sub4? = null
+        var class318_sub4: SceneEntityModel? = null
         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == i && class79!!.aBoolean1369 && class225.aBoolean2913) {
             val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7))
             val class17_22_ = (if (this.anInt10268 == -1 || (this.aBoolean10213 && class17 != null)) null else ParticleEmitterNode.aClass87_191!!.method835(this.anInt10268, 7))

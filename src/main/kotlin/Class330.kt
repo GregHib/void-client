@@ -1,4 +1,4 @@
-import Class318_Sub4.Companion.method2503
+import SceneEntityModel.Companion.method2503
 import Class99.method880
 import jaclib.memory.Stream.Companion.c
 

@@ -57,7 +57,7 @@ class GroundDecorOptionState : GraphicsOptionState {
         var anInt5981: Int = 0
 
         @JvmStatic
-        fun method1777(i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?) {
+        fun method1777(i: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor?) {
             if (i == -3) {
                 if (class318_sub1_sub3_sub3 is Npc) {
                     val npc = class318_sub1_sub3_sub3

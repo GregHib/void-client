@@ -1,5 +1,5 @@
 import GameAppletFrame.Companion.method94
-import Class318_Sub1_Sub5.Companion.method2483
+import WallEntity.Companion.method2483
 import Class348_Sub40_Sub23.Companion.method3113
 import Class367_Sub8.Companion.method3547
 import Class5_Sub2.Companion.method195
@@ -277,8 +277,8 @@ class Class38 {
         }
 
         @JvmStatic
-        fun method365(class318_sub1: Class318_Sub1, class348_sub1s: Array<Class348_Sub1?>?) {
-            if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
+        fun method365(class318_sub1: SceneEntity, class348_sub1s: Array<Class348_Sub1?>?) {
+            if (ProjectedGroundDecor.aBoolean10221) {
                 val i = class318_sub1.method2384(class348_sub1s, 49)
                 Class9.aRenderer171!!.method3642(i, class348_sub1s)
             }
@@ -287,7 +287,7 @@ class Class38 {
                 val bool_11_ = false
                 val i: Int
                 val i_12_: Int
-                if (class318_sub1 is Class318_Sub1_Sub3) {
+                if (class318_sub1 is GroundDecorEntity) {
                     i = (class318_sub1.aShort8743).toInt()
                     i_12_ = class318_sub1.aShort8750.toInt()
                 } else {

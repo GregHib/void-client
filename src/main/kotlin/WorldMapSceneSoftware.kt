@@ -74,27 +74,27 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     if (!Class49.aBoolean4728 || ((!ScreenBorderFiller.method1172((-85).toByte(), i_4_) || class51.anInt955 == 1) && (!method1639(i_4_, i_3_ xor 0x3918) || class51.anInt955 != 0))) {
                         if (i_4_ == 22) {
                             if ((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0) || (class51.anInt874 != 0) || (class51.anInt920 == 1) || class51.aBoolean947) {
-                                val class318_sub1_sub1: Class318_Sub1_Sub1?
+                                val class318_sub1_sub1: TileSceneEntity?
                                 if (bool_17_) {
-                                    val class318_sub1_sub1_sub2 = (Class318_Sub1_Sub1_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, bool))
+                                    val class318_sub1_sub1_sub2 = (GroundDecorSceneEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, bool))
                                     class318_sub1_sub1 = class318_sub1_sub1_sub2
                                     if (class318_sub1_sub1_sub2.method38(-18443)) class318_sub1_sub1_sub2.method44(836, var_renderer)
-                                } else class318_sub1_sub1 = (Class318_Sub1_Sub1_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, i_6_))
+                                } else class318_sub1_sub1 = (WallSceneEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, i_6_))
                                 method770(i_0_, i, i_5_, class318_sub1_sub1)
                                 if (class51.anInt920 == 1 && class361 != null) class361.method3496(i_5_, i, 1)
                             }
                         } else if (i_4_ == 10 || i_4_ == 11) {
-                            var class318_sub1_sub3_sub1: Class318_Sub1_Sub3_Sub1? = null
-                            val class318_sub1_sub3: Class318_Sub1_Sub3?
+                            var class318_sub1_sub3_sub1: ModelGroundDecor? = null
+                            val class318_sub1_sub3: GroundDecorEntity?
                             var i_18_: Int
                             if (bool_17_) {
-                                val class318_sub1_sub3_sub1_19_ = (Class318_Sub1_Sub3_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i_9_ + (i + -1), i_5_, -1 + (i_8_ + i_5_), i_4_, i_7_, bool))
+                                val class318_sub1_sub3_sub1_19_ = (ModelGroundDecor(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i_9_ + (i + -1), i_5_, -1 + (i_8_ + i_5_), i_4_, i_7_, bool))
                                 class318_sub1_sub3 = class318_sub1_sub3_sub1_19_
                                 class318_sub1_sub3_sub1 = class318_sub1_sub3_sub1_19_
                                 i_18_ = class318_sub1_sub3_sub1_19_.method2416(15)
                             } else {
                                 i_18_ = 15
-                                class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i_9_ + (i + -1), i_5_, -1 + (i_5_ + i_8_), i_4_, i_7_, i_6_))
+                                class318_sub1_sub3 = (SequencedGroundDecor(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i_9_ + (i + -1), i_5_, -1 + (i_5_ + i_8_), i_4_, i_7_, i_6_))
                             }
                             if (method850(class318_sub1_sub3, false)) {
                                 if (class318_sub1_sub3_sub1 != null && class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(836, var_renderer)
@@ -113,24 +113,24 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             }
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_)
                         } else if (i_4_ >= 12 && i_4_ <= 17 || (i_4_ >= 18 && i_4_ <= 21)) {
-                            val class318_sub1_sub3: Class318_Sub1_Sub3?
+                            val class318_sub1_sub3: GroundDecorEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub3_sub1 = (Class318_Sub1_Sub3_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, -1 + (i_9_ + i), i_5_, -1 + i_5_ + i_8_, i_4_, i_7_, bool))
+                                val class318_sub1_sub3_sub1 = (ModelGroundDecor(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, -1 + (i_9_ + i), i_5_, -1 + i_5_ + i_8_, i_4_, i_7_, bool))
                                 class318_sub1_sub3 = class318_sub1_sub3_sub1
                                 if (class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(i_3_ + 786, var_renderer)
-                            } else class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i + (i_9_ - 1), i_5_, i_5_ - (-i_8_ - -1), i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub3 = (SequencedGroundDecor(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i + (i_9_ - 1), i_5_, i_5_ - (-i_8_ - -1), i_4_, i_7_, i_6_))
                             method850(class318_sub1_sub3, false)
                             if (Class348_Sub42_Sub3.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (BoundsConstraintEntry.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_)
                         } else if (i_4_ == 0) {
                             var i_22_ = class51.anInt955
                             if (Class348_Sub40_Sub10.aBoolean9184 && (class51.anInt955 == -1)) i_22_ = 1
-                            val class318_sub1_sub4: Class318_Sub1_Sub4?
+                            val class318_sub1_sub4: ActorEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
+                                val class318_sub1_sub4_sub1 = (NpcActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
                                 if (class318_sub1_sub4_sub1.method38(-18443)) class318_sub1_sub4_sub1.method44(836, var_renderer)
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
-                            } else class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
                             if (i_7_ == 0) {
                                 if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
@@ -160,12 +160,12 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             if (class51.anInt920 != 0 && class361 != null) class361.method3510(i_5_, i, i_3_ xor 0x1b.inv(), i_4_, i_7_, !(class51.aBoolean876), (class51.aBoolean896))
                             if (class51.anInt883 != 64) WorldMapRenderer.method1852(i_0_, i, i_5_, (class51.anInt883))
                         } else if (i_4_ == 1) {
-                            val class318_sub1_sub4: Class318_Sub1_Sub4?
+                            val class318_sub1_sub4: ActorEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
+                                val class318_sub1_sub4_sub1 = (NpcActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
                                 if (class318_sub1_sub4_sub1.method38(-18443)) class318_sub1_sub4_sub1.method44(836, var_renderer)
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
-                            } else class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
                             if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
                                 if (i_7_ == 0) var_s.ka(i, i_5_ + 1, 50)
@@ -178,18 +178,18 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3510(i_5_, i, -63, i_4_, i_7_, !(class51.aBoolean876), (class51.aBoolean896))
                         } else if (i_4_ == 2) {
                             val i_23_ = i_7_ - -1 and 0x3
-                            val class318_sub1_sub4: Class318_Sub1_Sub4?
-                            val class318_sub1_sub4_24_: Class318_Sub1_Sub4?
+                            val class318_sub1_sub4: ActorEntity?
+                            val class318_sub1_sub4_24_: ActorEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, 4 + i_7_, bool))
-                                val class318_sub1_sub4_sub1_25_ = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_23_, bool))
+                                val class318_sub1_sub4_sub1 = (NpcActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, 4 + i_7_, bool))
+                                val class318_sub1_sub4_sub1_25_ = (NpcActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_23_, bool))
                                 if (class318_sub1_sub4_sub1.method38(-18443)) class318_sub1_sub4_sub1.method44(836, var_renderer)
                                 class318_sub1_sub4_24_ = class318_sub1_sub4_sub1_25_
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
                                 if (class318_sub1_sub4_sub1_25_.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub4_sub1_25_.method44(836, var_renderer)
                             } else {
-                                class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_ + 4, i_6_))
-                                class318_sub1_sub4_24_ = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_23_, i_6_))
+                                class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_ + 4, i_6_))
+                                class318_sub1_sub4_24_ = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_23_, i_6_))
                             }
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, class318_sub1_sub4_24_)
                             if (((class51.anInt955 == 1) || (Class348_Sub40_Sub10.aBoolean9184 && class51.anInt955 == -1)) && !this.aBoolean3109) {
@@ -210,12 +210,12 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3510(i_5_, i, -102, i_4_, i_7_, !(class51.aBoolean876), (class51.aBoolean896))
                             if (class51.anInt883 != 64) WorldMapRenderer.method1852(i_0_, i, i_5_, (class51.anInt883))
                         } else if (i_4_ == 3) {
-                            val class318_sub1_sub4: Class318_Sub1_Sub4?
+                            val class318_sub1_sub4: ActorEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
+                                val class318_sub1_sub4_sub1 = (NpcActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
                                 if (class318_sub1_sub4_sub1.method38(i_3_ + -18493)) class318_sub1_sub4_sub1.method44(836, var_renderer)
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
-                            } else class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
                             if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
                                 if (i_7_ == 0) var_s.ka(i, 1 + i_5_, 50)
@@ -226,12 +226,12 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             }
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3510(i_5_, i, i_3_ xor 0x46.inv(), i_4_, i_7_, !(class51.aBoolean876), (class51.aBoolean896))
                         } else if (i_4_ == 9) {
-                            val class318_sub1_sub3: Class318_Sub1_Sub3?
+                            val class318_sub1_sub3: GroundDecorEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub3_sub1 = (Class318_Sub1_Sub3_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i, i_5_, i_5_, i_4_, i_7_, bool))
+                                val class318_sub1_sub3_sub1 = (ModelGroundDecor(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i, i_5_, i_5_, i_4_, i_7_, bool))
                                 if (class318_sub1_sub3_sub1.method38(i_3_ + -18493)) class318_sub1_sub3_sub1.method44(836, var_renderer)
                                 class318_sub1_sub3 = class318_sub1_sub3_sub1
-                            } else class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, -1 + i + i_9_, i_5_, i_5_ + (i_8_ - 1), i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub3 = (SequencedGroundDecor(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, -1 + i + i_9_, i_5_, i_5_ + (i_8_ - 1), i_4_, i_7_, i_6_))
                             method850(class318_sub1_sub3, false)
                             if ((class51.anInt955 == 1) && !this.aBoolean3109) {
                                 val i_26_: Int
@@ -242,61 +242,61 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             if (class51.anInt920 != 0 && class361 != null) class361.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_)
                             if (class51.anInt883 != 64) WorldMapRenderer.method1852(i_0_, i, i_5_, (class51.anInt883))
                         } else if (i_4_ == 4) {
-                            val class318_sub1_sub5: Class318_Sub1_Sub5?
+                            val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_7_))
+                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_7_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(i_3_ + 786, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub5 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 5) {
                             var i_27_ = 65
                             val interface10 = (method3297(i_0_, i, i_5_) as Interface10?)
                             if (interface10 != null) i_27_ = 1 + (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-93)).anInt883)
-                            val class318_sub1_sub5: Class318_Sub1_Sub5?
+                            val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * WidgetNodeLink.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
+                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * WidgetNodeLink.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, WidgetNodeLink.anIntArray2039!![i_7_] * i_27_, i_27_ * (Class348_Sub40_Sub16.anIntArray9230!![i_7_]), i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub5 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, WidgetNodeLink.anIntArray2039!![i_7_] * i_27_, i_27_ * (Class348_Sub40_Sub16.anIntArray9230!![i_7_]), i_4_, i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 6) {
                             var i_28_ = 33
                             val interface10 = (method3297(i_0_, i, i_5_) as Interface10?)
                             if (interface10 != null) i_28_ = 1 + (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-117)).anInt883) / 2
-                            val class318_sub1_sub5: Class318_Sub1_Sub5?
+                            val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * WidgetNodeLink.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
+                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * WidgetNodeLink.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (OutputStream_Sub1.anIntArray99!![i_7_] * i_28_), i_28_ * BoundsConstraintEntry.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))
+                            } else class318_sub1_sub5 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (OutputStream_Sub1.anIntArray99!![i_7_] * i_28_), i_28_ * BoundsConstraintEntry.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 7) {
                             val i_29_ = 0x3 and 2 + i_7_
-                            val class318_sub1_sub5: Class318_Sub1_Sub5?
+                            val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_29_))
+                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_29_))
                                 if (class318_sub1_sub5_sub1.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_29_, i_6_))
+                            } else class318_sub1_sub5 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_29_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 8) {
                             val i_30_ = 2 + i_7_ and 0x3
                             var i_31_ = 33
                             val interface10 = (method3297(i_0_, i, i_5_) as Interface10?)
                             if (interface10 != null) i_31_ = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1
-                            val class318_sub1_sub5: Class318_Sub1_Sub5?
-                            val class318_sub1_sub5_32_: Class318_Sub1_Sub5?
+                            val class318_sub1_sub5: WallEntity?
+                            val class318_sub1_sub5_32_: WallEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), BoundsConstraintEntry.anIntArray5165!![i_7_] * i_31_, i_4_, 4 + i_7_))
-                                val class318_sub1_sub5_sub1_34_ = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_30_))
+                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), BoundsConstraintEntry.anIntArray5165!![i_7_] * i_31_, i_4_, 4 + i_7_))
+                                val class318_sub1_sub5_sub1_34_ = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_30_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 if (class318_sub1_sub5_sub1_34_.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub5_sub1_34_.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1_34_
                                 class318_sub1_sub5_32_ = class318_sub1_sub5_sub1
                             } else {
-                                val class318_sub1_sub5_sub2 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), i_31_ * BoundsConstraintEntry.anIntArray5165!![i_7_], i_4_, i_7_ - -4, i_6_))
-                                val class318_sub1_sub5_sub2_33_ = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_30_ + 4, i_6_))
+                                val class318_sub1_sub5_sub2 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), i_31_ * BoundsConstraintEntry.anIntArray5165!![i_7_], i_4_, i_7_ - -4, i_6_))
+                                val class318_sub1_sub5_sub2_33_ = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_30_ + 4, i_6_))
                                 class318_sub1_sub5_32_ = class318_sub1_sub5_sub2
                                 class318_sub1_sub5 = class318_sub1_sub5_sub2_33_
                             }

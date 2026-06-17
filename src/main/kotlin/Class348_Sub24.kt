@@ -12,7 +12,7 @@ import SocketFactory.Companion.method2049
 import MaterialPass.Companion.method2138
 import WaterMaterialPass.Companion.method2148
 import SkyboxGradient.method2334
-import Class318_Sub1_Sub2.Companion.method2405
+import SceneObjectEntity.Companion.method2405
 import Class324.Companion.method2570
 import Class34.Companion.method349
 import Class347.Companion.method2708
@@ -70,7 +70,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             FloatCameraTransform.aLong5745 = method599(-106) + 30000L
                         }
                     } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = Class76.aHostPingThread_1286!!.method1302(-5255, (CacheStateResetter.aServerConnectionInfo_125!!.aString2147!!))
-                    val class348_sub45 = (Class318_Sub1_Sub3.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?)
+                    val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?)
                     if (class348_sub45 != null || (Class355.aLong4367 < -2000L + method599(-97))) {
                         var class348_sub47: Class348_Sub47? = null
                         var i_2_ = 0
@@ -210,11 +210,11 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             method349(i + -6692)
                             method3150(true)
                             method1397(0)
-                            var i_15_ = Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1305((-126).toByte(), true)
+                            var i_15_ = ProjectedGroundDecor.aVarpStore_10209!!.method1305((-126).toByte(), true)
                             while (i_15_ != -1) {
                                 method1767(true, i_15_)
                                 Class327.anIntArray4096!![method1166(31, TypedRecordTable.anInt3695++)] = i_15_
-                                i_15_ = Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1305((-128).toByte(), false)
+                                i_15_ = ProjectedGroundDecor.aVarpStore_10209!!.method1305((-128).toByte(), false)
                             }
                             var class348_sub42_sub15 = method3127(2681)
                             while (class348_sub42_sub15 != null) {
@@ -349,7 +349,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     ResourceLoaderThread.aClass46_3913 = null
                                 }
                             }
-                            Class318_Sub1_Sub3_Sub4.aClass46_10336 = null
+                            MapElementDecor.aClass46_10336 = null
                             Class50_Sub1.aBoolean5221 = false
                             HeapDiagnosticsHolder.aClass46_2249 = null
                             ScrollingWidgetComponentNode.aBoolean8386 = false
@@ -414,29 +414,29 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             var i_31_ = 0
                             if (i == 11432) {
                                 while ( /**/i_31_ < 5) {
-                                    Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_31_] = Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_31_] + 1
+                                    GroundDecorSceneEntity.anIntArray9981!![i_31_] = GroundDecorSceneEntity.anIntArray9981!![i_31_] + 1
                                     i_31_++
                                 }
                                 if (ScanlineRasterFiller.aBoolean2469 && (-60000L + method599(-84) > Class34.aLong482)) method2405(i + -11313)
-                                var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(i + -11424) as? Class318_Sub9_Sub1?)
+                                var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(i + -11424) as? NamedTimedNode?)
                                 while (class318_sub9_sub1 != null) {
                                     if ((method599(i xor 0x2ce9.inv()) / 1000L + -5L) > class318_sub9_sub1.anInt8787.toLong()) {
                                         if (class318_sub9_sub1.aShort8786 > 0) FixedFunctionMaterialPass.method2144("", 5, (-128).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3502!!.method2063(Class348_Sub33.Companion.anInt6967, 544))), "", "")
                                         if (class318_sub9_sub1.aShort8786.toInt() == 0) FixedFunctionMaterialPass.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3503!!.method2063(Class348_Sub33.Companion.anInt6967, 544))), "", "")
                                         class318_sub9_sub1.method2373(false)
                                     }
-                                    class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878((-105).toByte()) as? Class318_Sub9_Sub1?)
+                                    class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878((-105).toByte()) as? NamedTimedNode?)
                                 }
                                 ItemNameResolver.anInt4999++
                                 if (ItemNameResolver.anInt4999 > 500) {
                                     ItemNameResolver.anInt4999 = 0
                                     val i_32_ = (8.0 * Math.random()).toInt()
                                     if ((0x4 and i_32_) == 4) RenderableGroup.anInt5016 += ProjectileDefinition.anInt3844
-                                    if ((i_32_ and 0x1) == 1) ConnectionStateRefs.anInt319 += Class318_Sub1_Sub5.anInt8775
+                                    if ((i_32_ and 0x1) == 1) ConnectionStateRefs.anInt319 += WallEntity.anInt8775
                                     if ((0x2 and i_32_) == 2) WalkingTypeUtil.anInt3310 += Class344.anInt4263
                                 }
-                                if (ConnectionStateRefs.anInt319 < -50) Class318_Sub1_Sub5.anInt8775 = 2
-                                if (ConnectionStateRefs.anInt319 > 50) Class318_Sub1_Sub5.anInt8775 = -2
+                                if (ConnectionStateRefs.anInt319 < -50) WallEntity.anInt8775 = 2
+                                if (ConnectionStateRefs.anInt319 > 50) WallEntity.anInt8775 = -2
                                 if (WalkingTypeUtil.anInt3310 < -55) Class344.anInt4263 = 2
                                 if (RenderableGroup.anInt5016 < -40) ProjectileDefinition.anInt3844 = 1
                                 if (WalkingTypeUtil.anInt3310 > 55) Class344.anInt4263 = -2

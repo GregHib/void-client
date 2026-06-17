@@ -462,7 +462,7 @@ class Class64_Sub1 : Class64 {
         }
     }
 
-    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int) {
+    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int) {
         method654(abstractCameraTransform, class318_sub3, -1, i)
     }
 
@@ -1428,7 +1428,7 @@ class Class64_Sub1 : Class64 {
         return i_307_
     }
 
-    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_316_: Int) {
+    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int, i_316_: Int) {
         method654(abstractCameraTransform, class318_sub3, i, i_316_)
     }
 
@@ -2638,7 +2638,7 @@ class Class64_Sub1 : Class64 {
         }
     }
 
-    private fun method654(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_632_: Int) {
+    private fun method654(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int, i_632_: Int) {
         if (anInt5387 >= 1) {
             aClass101_Sub1_5320 = abstractCameraTransform as MatrixCameraTransform
             val class101_sub1 = aHa_Sub1_5353.aClass101_Sub1_7492

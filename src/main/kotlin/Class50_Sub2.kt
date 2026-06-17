@@ -1,4 +1,4 @@
-import Class318_Sub1_Sub5.Companion.method2486
+import WallEntity.Companion.method2486
 
 /* Class50_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

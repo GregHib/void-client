@@ -1,4 +1,4 @@
-import Class318_Sub2.Companion.method2496
+import SceneModelBuilder.Companion.method2496
 import Class69.Companion.method721
 import kotlin.math.min
 import kotlin.math.pow
@@ -69,7 +69,7 @@ class Class348_Sub42_Sub13 internal constructor(var aString9617: String?) : Clas
                 if (d != CubemapTextureImplSource.aDouble8713) {
                     for (i_0_ in 0..255) {
                         val i_1_ = (255.0 * (i_0_.toDouble() / 255.0).pow(d)).toInt()
-                        Class318_Sub1_Sub3_Sub3.anIntArray10266!![i_0_] = min(i_1_, 255)
+                        ProjectedGroundDecor.anIntArray10266!![i_0_] = min(i_1_, 255)
                     }
                     CubemapTextureImplSource.aDouble8713 = d
                 }

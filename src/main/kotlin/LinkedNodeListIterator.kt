@@ -1,6 +1,6 @@
 import GlTextureBase.Companion.method235
 import GraphicsOptionState.Companion.method1713
-import Class318_Sub1.Companion.method2385
+import SceneEntity.Companion.method2385
 import Class66.method703
 import Class99.method882
 import RenderNode.Companion.method3284
@@ -166,7 +166,7 @@ class LinkedNodeListIterator {
                         val i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208
                         val i_8_ = (208 - (Class348_Sub40_Sub3.anInt9109 * 2 - 48) + 4 * Class348_Sub40_Sub3.anInt9109 - i_3_ / 128)
                         GroundItemRenderState.aAbstractModelRenderer_1664!!.method967((class46.anInt709.toFloat() / 2.0f + i.toFloat()), (class46.anInt789.toFloat() / 2.0f + i_1_.toFloat()), i_7_.toFloat(), i_8_.toFloat(), i_5_, i_6_ shl 2, var_aa, i, i_1_)
-                        var class348_sub35 = Class318_Sub1_Sub5_Sub1.aNodeDeque_10125!!.method1995(i_2_ xor 0x59b4) as? Class348_Sub35
+                        var class348_sub35 = ModelWallEntity.aNodeDeque_10125!!.method1995(i_2_ xor 0x59b4) as? Class348_Sub35
                         while (class348_sub35 != null) {
                             val i_9_ = class348_sub35.anInt6976
                             val i_10_ = (-ArbVertexProgram.regionTileX + ((0xfffe5b0 and (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_9_])) shr 14))
@@ -174,7 +174,7 @@ class LinkedNodeListIterator {
                             val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
                             val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
                             method2385(class46, i_1_, var_aa, (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_renderer)
-                            class348_sub35 = Class318_Sub1_Sub5_Sub1.aNodeDeque_10125!!.method1990(92.toByte()) as? Class348_Sub35
+                            class348_sub35 = ModelWallEntity.aNodeDeque_10125!!.method1990(92.toByte()) as? Class348_Sub35
                         }
                         var i_14_ = 0
                         while ((Class348_Sub40_Sub38.anInt9479 > i_14_)) {
@@ -182,7 +182,7 @@ class LinkedNodeListIterator {
                             val i_16_ = (-(i_3_ / 128) + Class348_Sub40_Sub37.anIntArray9458!![i_14_] * 4 - -2)
                             var class51: Class51? = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, SeqDefinitionCache.anIntArray3347!![i_14_]))
                             if (class51!!.anIntArray945 != null) {
-                                class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte())
+                                class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
                                 if (class51 == null || (class51.anInt921 == -1)) {
                                     i_14_++
                                     continue
@@ -210,7 +210,7 @@ class LinkedNodeListIterator {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (LocalPlayerState.aPlayer_1907!!.plane))) {
                                     var class79 = (npc.aClass79_10505)
-                                    if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1))
+                                    if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1))
                                     if (class79 != null && class79.aBoolean1397 && class79.aBoolean1396) {
                                         val i_23_ = (-(i_4_ / 128) + (npc.x) / 128)
                                         val i_24_ = ((npc.y) / 128 + -(i_3_ / 128))
@@ -313,8 +313,8 @@ class LinkedNodeListIterator {
             ProjectileConfigUtil.anInt394 = `is`[3]
             SimpleToggleOptionState.anInt5886 = `is`[1]
             if (bool_42_) {
-                CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
-                method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120)
+                CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
+                method3284(true, ModelWallEntity.aDouble10120)
             } else {
                 CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)
                 method3284(true, GlCubeMapTexture.aDouble8621)

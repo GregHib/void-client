@@ -197,16 +197,16 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         i_29_ += Class348_Sub23.method2960(bool, -48)
                     }
                     val class243 = class76!!.aDoublyLinkedNodeList_1282
-                    var class318_sub4 = class243.method1872(8) as Class318_Sub4?
+                    var class318_sub4 = class243.method1872(8) as SceneEntityModel?
                     while (class318_sub4 != null) {
                         if ((RuntimeException_Sub1.aBoolean4599 || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) && class318_sub4.method2504(i_29_, i_28_, var_renderer, -115)) {
                             val bool_30_ = false
                             val bool_31_ = false
                             val i_32_: Int
                             val i_33_: Int
-                            if (class318_sub4.aClass318_Sub1_6410 is Class318_Sub1_Sub3) {
-                                i_32_ = (class318_sub4.aClass318_Sub1_6410 as Class318_Sub1_Sub3).aShort8750.toInt()
-                                i_33_ = (class318_sub4.aClass318_Sub1_6410 as Class318_Sub1_Sub3).aShort8743.toInt()
+                            if (class318_sub4.aClass318_Sub1_6410 is GroundDecorEntity) {
+                                i_32_ = (class318_sub4.aClass318_Sub1_6410 as GroundDecorEntity).aShort8750.toInt()
+                                i_33_ = (class318_sub4.aClass318_Sub1_6410 as GroundDecorEntity).aShort8743.toInt()
                             } else {
                                 i_32_ = (class318_sub4.aClass318_Sub1_6410!!.y shr 9)
                                 i_33_ = (class318_sub4.aClass318_Sub1_6410!!.x shr 9)
@@ -250,7 +250,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     }
                                 }
                                 if (Class367_Sub11.anInt7396 == player.anInt10215) {
-                                    class318_sub4 = class243.method1878((-123).toByte()) as Class318_Sub4?
+                                    class318_sub4 = class243.method1878((-123).toByte()) as SceneEntityModel?
                                     continue
                                 }
                                 Class348_Sub43.method3298(96.toByte(), ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), player)
@@ -293,14 +293,14 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         }
                                     }
                                     if (Class367_Sub11.anInt7396 == npc.anInt10215) {
-                                        class318_sub4 = class243.method1878((-123).toByte()) as Class318_Sub4?
+                                        class318_sub4 = class243.method1878((-123).toByte()) as SceneEntityModel?
                                         continue
                                     }
                                     WaterMaterialPass.method2150((class318_sub4.aClass318_Sub1_6410!!.plane != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
                                     npc.anInt10215 = Class367_Sub11.anInt7396
                                 }
                             }
-                            if (class318_sub4.aClass318_Sub1_6410 is Class318_Sub1_Sub2_Sub1) {
+                            if (class318_sub4.aClass318_Sub1_6410 is DynamicSceneObjectEntity) {
                                 val i_55_ = ArbVertexProgram.regionTileX + i_33_
                                 val i_56_ = i_32_ - -Class90.regionTileY
                                 val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480(((class318_sub4.aClass318_Sub1_6410!!.plane).toInt() shl 28 or (i_56_ shl 14) or i_55_).toLong(), -6008)) as Class348_Sub37?)
@@ -344,7 +344,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                             if (class318_sub4.aClass318_Sub1_6410 is Interface10) {
                                 val interface10 = ((class318_sub4.aClass318_Sub1_6410) as Interface10)
                                 var class51: Class51? = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-100)))
-                                if (class51!!.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte()))
+                                if (class51!!.anIntArray945 != null) class51 = (class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
                                 if (class51 != null) {
                                     if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
                                         val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364)) else null)
@@ -394,7 +394,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                 }
                             }
                         }
-                        class318_sub4 = class243.method1878((-123).toByte()) as Class318_Sub4?
+                        class318_sub4 = class243.method1878((-123).toByte()) as SceneEntityModel?
                     }
                     if (Class59_Sub1.aBoolean5300) GlVertexBufferArb.method2129(86.toByte())
                     i_27_++

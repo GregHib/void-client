@@ -44,7 +44,7 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
                 HintArrowOrMessage.anInt2023 = GlArrayBufferObject.anInt4715
                 GameDisplayManager.anInt2835 = HintArrowOrMessage.anInt2023
                 Class348_Sub42_Sub20.anInt9715 = GameDisplayManager.anInt2835
-                val i_5_ = 2048 - -(Class318_Sub6.anIntArray6432!![i_4_] * anInt9129)
+                val i_5_ = 2048 - -(SceneEffectMarker.anIntArray6432!![i_4_] * anInt9129)
                 val i_6_ = i_5_ shr 12
                 val i_7_ = i_6_ + 1
                 for (i_8_ in i_2_ + -1..i_3_) {

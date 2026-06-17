@@ -66,7 +66,7 @@ class FixedFunctionMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer
         fun method2144(string: String?, i: Int, i_0_: Byte, i_1_: Int, string_2_: String?, string_3_: String?, string_4_: String?) {
             do {
                 try {
-                    Class318_Sub1_Sub3_Sub5.method2477(string, string_2_, (-110).toByte(), -1, string_3_, null, i, i_1_, string_4_)
+                    TrackedGroundDecor.method2477(string, string_2_, (-110).toByte(), -1, string_3_, null, i, i_1_, string_4_)
                     anInt6203++
                     if (i_0_ < -86) break
                     aStringArray6205 = null

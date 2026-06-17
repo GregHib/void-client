@@ -8,7 +8,7 @@ object OverlayColorTable {
     @JvmField
     var anInt1753: Int = 0
     @JvmField
-    var aClass318_Sub1Array1754: Array<Class318_Sub1?>? = null
+    var aClass318_Sub1Array1754: Array<SceneEntity?>? = null
     @JvmField
     var anInt1755: Int = 0
     @JvmField

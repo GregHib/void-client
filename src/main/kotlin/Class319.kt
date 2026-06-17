@@ -1,4 +1,4 @@
-import Class318_Sub1_Sub3_Sub1.Companion.method2419
+import ModelGroundDecor.Companion.method2419
 import Class348_Sub1_Sub2.Companion.method2729
 
 /* Class319 - Decompiled by JODE

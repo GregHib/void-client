@@ -55,10 +55,10 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
                     if (i_13_ < 0) i_13_ = 0
                     var i_14_ = is_5_!![i_11_] shr 4
                     if (i_14_ > 255) i_14_ = 255
-                    i_13_ = Class318_Sub1_Sub3_Sub3.anIntArray10266!![i_13_]
+                    i_13_ = ProjectedGroundDecor.anIntArray10266!![i_13_]
                     if (i_14_ < 0) i_14_ = 0
-                    i_12_ = Class318_Sub1_Sub3_Sub3.anIntArray10266!![i_12_]
-                    i_14_ = Class318_Sub1_Sub3_Sub3.anIntArray10266!![i_14_]
+                    i_12_ = ProjectedGroundDecor.anIntArray10266!![i_12_]
+                    i_14_ = ProjectedGroundDecor.anIntArray10266!![i_14_]
                     var i_15_: Int
                     if (i_12_ == 0 && i_13_ == 0 && i_14_ == 0) i_15_ = 0
                     else {
@@ -164,10 +164,10 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
                     if (i_37_ < 0) i_37_ = 0
                     var i_38_ = is_32_!![i_35_] shr 4
                     if (i_38_ > 255) i_38_ = 255
-                    i_37_ = Class318_Sub1_Sub3_Sub3.anIntArray10266!![i_37_]
-                    i_36_ = Class318_Sub1_Sub3_Sub3.anIntArray10266!![i_36_]
+                    i_37_ = ProjectedGroundDecor.anIntArray10266!![i_37_]
+                    i_36_ = ProjectedGroundDecor.anIntArray10266!![i_36_]
                     if (i_38_ < 0) i_38_ = 0
-                    i_38_ = Class318_Sub1_Sub3_Sub3.anIntArray10266!![i_38_]
+                    i_38_ = ProjectedGroundDecor.anIntArray10266!![i_38_]
                     var i_39_ = (i_37_ shl 8) + (i_36_ shl 16) + i_38_
                     if (i_39_ != 0) i_39_ = i_39_ or 0xffffff.inv()
                     `is`[i_28_++] = i_39_

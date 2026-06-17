@@ -36,20 +36,20 @@ class OutputStream_Sub2 : OutputStream() {
         }
 
         @JvmStatic
-        fun method136(i: Int, bool: Boolean, bool_2_: Boolean): Class318_Sub4 {
+        fun method136(i: Int, bool: Boolean, bool_2_: Boolean): SceneEntityModel {
             anInt105++
-            synchronized(Class318.aDoublyLinkedNodeListArray3974s!!) {
-                val class318_sub4: Class318_Sub4
-                if (Class318.aDoublyLinkedNodeListArray3974s!!.size > i && !Class318.aDoublyLinkedNodeListArray3974s!![i]!!.method1871(111.toByte())) {
-                    class318_sub4 = Class318.aDoublyLinkedNodeListArray3974s!![i]!!.method1870(-104) as Class318_Sub4
+            synchronized(SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!) {
+                val class318_sub4: SceneEntityModel
+                if (SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size > i && !SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i]!!.method1871(111.toByte())) {
+                    class318_sub4 = SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i]!!.method1870(-104) as SceneEntityModel
                     class318_sub4.method2373(false)
                     Class331.anIntArray4128!![i]--
                 } else {
-                    class318_sub4 = Class318_Sub4()
-                    class318_sub4.aClass318_Sub3Array6414 = arrayOfNulls<Class318_Sub3>(i)
+                    class318_sub4 = SceneEntityModel()
+                    class318_sub4.aClass318_Sub3Array6414 = arrayOfNulls<SceneOcculder>(i)
                     var i_3_ = 0
                     while (i > i_3_) {
-                        class318_sub4.aClass318_Sub3Array6414!![i_3_] = Class318_Sub3()
+                        class318_sub4.aClass318_Sub3Array6414!![i_3_] = SceneOcculder()
                         i_3_++
                     }
                 }
@@ -78,7 +78,7 @@ class OutputStream_Sub2 : OutputStream() {
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)!!
                             var class79 = (npc.aClass79_10505)
-                            if (class79!!.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1)
+                            if (class79!!.anIntArray1377 != null) class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1)
                             if (class79 != null) `is` = class79.anIntArray1342
                         }
                     } else if (RemoveRoofsOptionState.method1813(8806, (class348_sub42_sub12.anInt9608))) {
@@ -86,7 +86,7 @@ class OutputStream_Sub2 : OutputStream() {
                         var class51: Class51?
                         if ((class348_sub42_sub12.anInt9608) == 1001) class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
                         else class51 = (Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
-                        if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte())
+                        if (class51.anIntArray945 != null) class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
                         if (class51 != null) `is` = class51.anIntArray917
                     }
                 } else `is` = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-76, class348_sub42_sub12.anInt9599).anIntArray2772)

@@ -1,7 +1,7 @@
 /* Class318_Sub1_Sub5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int) : Class318_Sub1() {
+abstract class WallEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int) : SceneEntity() {
     @JvmField
     var aShort8769: Short
     @JvmField
@@ -10,7 +10,7 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
     override fun method2378(i: Int): Boolean {
         if (i != 0) method2378(29)
         anInt8767++
-        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + ((this.x shr Class362.anInt4459) - -Class318_Sub1_Sub4_Sub1.anInt10084))]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459)))])
+        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + ((this.x shr Class362.anInt4459) - -NpcActorEntity.anInt10084))]!![(NpcActorEntity.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459)))])
     }
 
     override fun method2382(i: Byte): Boolean {
@@ -19,7 +19,7 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
         return MinimapSpriteRenderer.method1110((this.y shr Class362.anInt4459), this.method2394(true), this.aByte6376.toInt(), (-79).toByte(), (this.x shr Class362.anInt4459))
     }
 
-    override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_2_: Int, i_3_: Byte, i_4_: Int) {
+    override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_2_: Int, i_3_: Byte, i_4_: Int) {
         try {
             anInt8768++
             if (i_3_ >= -106) method2384(null, 52)

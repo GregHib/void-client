@@ -1,5 +1,5 @@
 import SphereMapMaterialPass.Companion.method2177
-import Class318_Sub1_Sub3.Companion.method2413
+import GroundDecorEntity.Companion.method2413
 
 /* Class348_Sub40_Sub18 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

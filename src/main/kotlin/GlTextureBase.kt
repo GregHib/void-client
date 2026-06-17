@@ -49,7 +49,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
                 if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub38.aTextureFormatInfo_9471) {
                     if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub22.aTextureFormatInfo_9303) {
                         if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
-                            if (this.aTextureFormatInfo_5084 == Class318.aTextureFormatInfo_3977) return 6145
+                            if (this.aTextureFormatInfo_5084 == SceneLinkedListNode.aTextureFormatInfo_3977) return 6145
                         } else return 34847
                     } else return 34846
                 } else return 34844
@@ -59,7 +59,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
                     if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub38.aTextureFormatInfo_9471) {
                         if (Class348_Sub40_Sub22.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 34840
                         if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
-                            if (Class318.aTextureFormatInfo_3977 == this.aTextureFormatInfo_5084) return 6145
+                            if (SceneLinkedListNode.aTextureFormatInfo_3977 == this.aTextureFormatInfo_5084) return 6145
                         } else return 34841
                     } else return 34838
                 } else return 34837
@@ -69,7 +69,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
                 if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub38.aTextureFormatInfo_9471) {
                     if (Class348_Sub40_Sub22.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 6409
                     if (this.aTextureFormatInfo_5084 == SpriteSheetCache.aTextureFormatInfo_2571) return 6410
-                    if (this.aTextureFormatInfo_5084 == Class318.aTextureFormatInfo_3977) return 6145
+                    if (this.aTextureFormatInfo_5084 == SceneLinkedListNode.aTextureFormatInfo_3977) return 6145
                 } else return 6406
             } else return 6408
         } else return 6407

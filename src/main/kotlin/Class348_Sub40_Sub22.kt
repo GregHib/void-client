@@ -133,7 +133,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
                     var i_17_ = 0
                     val i_18_ = if (!bool) -anInt9288 else anInt9288
                     var i_19_: Int
-                    i_19_ = (Class318_Sub6.anIntArray6432!![i_16_] + (i_18_ * anInt9291 shr 12))
+                    i_19_ = (SceneEffectMarker.anIntArray6432!![i_16_] + (i_18_ * anInt9291 shr 12))
                     while (i_19_ < 0) {
                         i_19_ += 4096
                     }

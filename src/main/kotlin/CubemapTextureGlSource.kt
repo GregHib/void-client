@@ -221,7 +221,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
         fun method2264(bool: Boolean) {
             if (bool != false) aClass348_Sub49_8698 = null
             anInt8704++
-            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(0, 105.toByte(), 15)
+            val class348_sub42_sub15 = NamedTimedNode.method2516(0, 105.toByte(), 15)
             class348_sub42_sub15.method3251(-16058)
         }
 

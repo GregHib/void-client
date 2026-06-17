@@ -223,7 +223,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
             if (Class73.anInt4776 < 400) {
                 var class79 = (npc.aClass79_10505)
                 if (class79!!.anIntArray1377 != null) {
-                    class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1)
+                    class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1)
                     if (class79 == null) return
                 }
                 if (class79.aBoolean1396) {
@@ -294,13 +294,13 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
 
         @JvmStatic
         fun method2152(bool: Boolean) {
-            for (i in 0..<Class69.anInt1200) Class318_Sub1_Sub3_Sub4.aClass338Array10330!![i] = null
+            for (i in 0..<Class69.anInt1200) MapElementDecor.aClass338Array10330!![i] = null
             anInt6223++
             Class69.anInt1200 = 0
             run {
                 var i = 0
                 while (MapAreaDefinition.anInt2524 > i) {
-                    for (i_20_ in 0..<Class318_Sub7.anInt6451) {
+                    for (i_20_ in 0..<SpotAnimEntity.anInt6451) {
                         var i_21_ = 0
                         while ((i_21_ < Class348_Sub41.anInt7054)) {
                             val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_21_]!![i_20_])
@@ -317,7 +317,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
             if (bool != false) anIntArray6228 = null
             var i = 0
             while (MapAreaDefinition.anInt2524 > i) {
-                for (i_22_ in 0..<Class318_Sub7.anInt6451) {
+                for (i_22_ in 0..<SpotAnimEntity.anInt6451) {
                     var i_23_ = 0
                     while (Class348_Sub41.anInt7054 > i_23_) {
                         val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_23_]!![i_22_])
@@ -350,7 +350,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                                 val i_36_ = i_23_ shl Class362.anInt4459
                                 val i_37_ = i_25_ shl Class362.anInt4459
                                 val i_38_ = (ArchiveFileConditionWrapper.anInt3465 + (i_26_ shl Class362.anInt4459))
-                                Class318_Sub1_Sub3_Sub4.aClass338Array10330!![Class69.anInt1200++] = (Class338(1, i_28_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, i_32_, i_34_, i_35_, i_33_, i_37_, i_38_, i_38_, i_37_))
+                                MapElementDecor.aClass338Array10330!![Class69.anInt1200++] = (Class338(1, i_28_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, i_32_, i_34_, i_35_, i_33_, i_37_, i_38_, i_38_, i_37_))
                                 var i_39_ = i_27_
                                 while (i_28_ >= i_39_) {
                                     var i_40_ = i_25_
@@ -375,8 +375,8 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                                     class357_45_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_41_ - 1]!![i_22_])
                                 }
                                 class357_45_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_42_ - -1]!![i_22_])
-                                while ((i_42_ < Class318_Sub7.anInt6451 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357_45_.aShort4397 == class357.aShort4397) && ((Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_42_ + 1)) == i_46_))) {
-                                    if (Class318_Sub7.anInt6451 > i_42_ + 1 && ((Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, 2 + i_42_)) != i_46_)) break
+                                while ((i_42_ < SpotAnimEntity.anInt6451 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357_45_.aShort4397 == class357.aShort4397) && ((Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_42_ + 1)) == i_46_))) {
+                                    if (SpotAnimEntity.anInt6451 > i_42_ + 1 && ((Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, 2 + i_42_)) != i_46_)) break
                                     i_42_++
                                     class357_45_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![1 + i_42_]!![i_22_])
                                 }
@@ -388,7 +388,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                                 val i_52_ = i_41_ shl Class362.anInt4459
                                 val i_53_ = ((i_42_ shl Class362.anInt4459) + ArchiveFileConditionWrapper.anInt3465)
                                 val i_54_ = i_22_ shl Class362.anInt4459
-                                Class318_Sub1_Sub3_Sub4.aClass338Array10330!![Class69.anInt1200++] = (Class338(2, i_44_, i_52_, i_53_, i_53_, i_52_, i_48_, i_50_, i_51_, i_49_, i_54_ + class357.aShort4397, i_54_ + class357.aShort4397, class357.aShort4397 + i_54_, (i_54_ - -class357.aShort4397)))
+                                MapElementDecor.aClass338Array10330!![Class69.anInt1200++] = (Class338(2, i_44_, i_52_, i_53_, i_53_, i_52_, i_48_, i_50_, i_51_, i_49_, i_54_ + class357.aShort4397, i_54_ + class357.aShort4397, class357.aShort4397 + i_54_, (i_54_ - -class357.aShort4397)))
                                 for (i_55_ in i_43_..i_44_) {
                                     var i_56_ = i_41_
                                     while ((i_42_ >= i_56_)) {

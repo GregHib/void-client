@@ -68,7 +68,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
         this.aHa_Sub3_4479.method3897(1, i xor 0x2a45.inv())
         this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), 111, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
         this.aHa_Sub3_4479.method3924(true, false, 0, Class342.aClass70_4247, false)
-        this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737)
+        this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
         this.aHa_Sub3_4479.method3910((-26).toByte(), 0)
         this.aHa_Sub3_4479.method3897(0, -4382)
         this.aHa_Sub3_4479.method3894(-28186, -16777216)

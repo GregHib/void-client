@@ -16,7 +16,7 @@ object ProjectileSpawner {
 
     fun method1477(i: Int, i_0_: Int) {
         anInt2672++
-        val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, 105.toByte(), i_0_) //14
+        val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), i_0_) //14
         class348_sub42_sub15.method3251(-16058)
     }
 
@@ -43,8 +43,8 @@ object ProjectileSpawner {
                 val class348_sub34 = class348_sub37.aNodeDeque_6998.method1995(4) as? Class348_Sub34?
                 if (class348_sub34 == null) NpcEntityUpdater.method2110(i_3_, i_2_, i)
                 else {
-                    var class318_sub1_sub2_sub1 = (NpcEntityUpdater.method2110(i_3_, i_2_, i) as? Class318_Sub1_Sub2_Sub1?)
-                    if (class318_sub1_sub2_sub1 == null) class318_sub1_sub2_sub1 = (Class318_Sub1_Sub2_Sub1(i_2_ shl 9, NativeSprite.aTerrainTileArray5191!![i_3_]!!.method3982((-86).toByte(), i, i_2_), i shl 9, i_3_, i_3_))
+                    var class318_sub1_sub2_sub1 = (NpcEntityUpdater.method2110(i_3_, i_2_, i) as? DynamicSceneObjectEntity?)
+                    if (class318_sub1_sub2_sub1 == null) class318_sub1_sub2_sub1 = (DynamicSceneObjectEntity(i_2_ shl 9, NativeSprite.aTerrainTileArray5191!![i_3_]!!.method3982((-86).toByte(), i, i_2_), i shl 9, i_3_, i_3_))
                     else {
                         class318_sub1_sub2_sub1.anInt10180 = -1
                         class318_sub1_sub2_sub1.anInt10189 = class318_sub1_sub2_sub1.anInt10180

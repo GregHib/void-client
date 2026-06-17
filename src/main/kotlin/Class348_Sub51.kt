@@ -2934,7 +2934,7 @@ class Class348_Sub51 : Class348 {
         )
         var anInt7242: Int = 0
         var anInt7244: Int = 0
-        var aClass318_Sub10Array7249: Array<Class318_Sub10?>? = null
+        var aClass318_Sub10Array7249: Array<SceneGraphContainer?>? = null
         var anInt7252: Int
         var anInt7258: Int = 0
         @JvmField

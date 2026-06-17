@@ -143,7 +143,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
                     if (i >= 100) {
                         if (Class348_Sub40_Sub21.anInt9282 == 1 || Class9.anInt167 != -1) {
                             if (Class348_Sub40_Sub21.anInt9282 != 1) {
-                                i_11_ = Class318_Sub1_Sub5_Sub2.anInt10163
+                                i_11_ = SequencedWallEntity.anInt10163
                                 i_10_ = Class9.anInt167
                             }
                             if ((0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_10_ shr 9]!![i_11_ shr 9]).toInt()) != 0) method3542(i_11_ shr 9, HintArrowOrMessage.aClass357ArrayArrayArray2029, i_10_ shr 9, 0, 0, false)

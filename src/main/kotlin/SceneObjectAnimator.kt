@@ -4,8 +4,8 @@ import HostPingThread.Companion.method1301
 /* Class235 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, class318_sub1: Class318_Sub1?, bool: Boolean, i_18_: Int) {
-    private val aClass318_Sub1_3051: Class318_Sub1?
+class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, class318_sub1: SceneEntity?, bool: Boolean, i_18_: Int) {
+    private val aClass318_Sub1_3051: SceneEntity?
     @JvmField
     var anInt3052: Int = 0
     private var anInt3053: Int
@@ -28,7 +28,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
     @JvmField
     var anInt3079: Int = 0
     @JvmField
-    var aClass318_Sub10_3081: Class318_Sub10? = null
+    var aClass318_Sub10_3081: SceneGraphContainer? = null
     private var anInt3083 = 0
     private var anInt3084 = 0
     private val aByte3085: Byte
@@ -58,7 +58,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
         if (i_1_ == -1) {
             var class51: Class51? = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(i.toInt() xor 0x45, this.anInt3063)
             var class51_2_ = class51
-            if (class51!!.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte())
+            if (class51!!.anIntArray945 != null) class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
             if (class51 == null) return
             if (class51_2_ == class51) class51_2_ = null
             if (class51.anIntArray943 == null) {
@@ -114,7 +114,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
         var i_4_ = i_4_
         anInt3082++
         var class51: Class51? = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
-        if (class51!!.anIntArray945 != null) class51 = class51.method480(Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!, 47.toByte())
+        if (class51!!.anIntArray945 != null) class51 = class51.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte())
         if (class51 == null) {
             method1674(-1, var_renderer)
             anInt3073 = -1
@@ -204,8 +204,8 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
                 val class342s = class64.method604()
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081!!.aBoolean6470) && (class129s != null || class342s != null)) {
                     var class51: Class51? = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
-                    if (class51!!.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), 47.toByte())
-                    if (class51 != null) this.aClass318_Sub10_3081 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true)
+                    if (class51!!.anIntArray945 != null) class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
+                    if (class51 != null) this.aClass318_Sub10_3081 = SceneGraphContainer.method2526(Class367_Sub11.anInt7396, true)
                 }
                 if (this.aClass318_Sub10_3081 == null) break
                 class64.method620(abstractCameraTransform)
@@ -231,7 +231,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, class51:
         if (this.aClass318_Sub10_3081 != null) this.aClass318_Sub10_3081!!.method2534()
     }
 
-    private fun method1672(class318_sub1: Class318_Sub1?, bool: Boolean) {
+    private fun method1672(class318_sub1: SceneEntity?, bool: Boolean) {
         if (bool != true) method1674(-55, null)
         anInt3086++
         var i: Int

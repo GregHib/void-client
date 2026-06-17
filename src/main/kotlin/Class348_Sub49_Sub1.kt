@@ -94,12 +94,12 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                 ParticleSystemState.method1295(RemoveRoofsOptionState.aClass318_Sub1Array6066!!, 0, Class5_Sub1_Sub1.anInt9930 - 1)
                 for (i_6_ in 0..<Class5_Sub1_Sub1.anInt9930) MinimapRectClipper.method227(RemoveRoofsOptionState.aClass318_Sub1Array6066!![i_6_]!!, true, bool_3_)
             }
-            if (Class318_Sub1_Sub3_Sub3.aBoolean10221) Class9.aRenderer171!!.method3642(0, null)
+            if (ProjectedGroundDecor.aBoolean10221) Class9.aRenderer171!!.method3642(0, null)
             if ((i_2_ and 0x2) == 0) {
                 for (i_7_ in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {
                     if (i_7_ >= i && `is` != null) {
                         var i_8_ = Class99.aBooleanArrayArray1572!!.size
-                        if ((Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size) > Class318_Sub7.anInt6451) i_8_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size - Class318_Sub7.anInt6451)
+                        if ((Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size) > SpotAnimEntity.anInt6451) i_8_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size - SpotAnimEntity.anInt6451)
                         var i_9_ = Class99.aBooleanArrayArray1572!![0]!!.size
                         if ((Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572!![0]!!.size) > Class348_Sub41.anInt7054) i_9_ -= (Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572!![0]!!.size - Class348_Sub41.anInt7054)
                         var bools = Class348_Sub8.aBooleanArrayArray6656
@@ -124,12 +124,12 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                         if (Class348_Sub40_Sub5.aBoolean9121) {
                             if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
-                            for (i_15_ in 0..<Npc.anInt10503) Class319.aCacheIndexManagerArray3982!![i_15_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_1_, i_2_)
-                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_2_)
+                            for (i_15_ in 0..<Npc.anInt10503) Class319.aCacheIndexManagerArray3982!![i_15_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
+                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, NpcActorEntity.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_1_, i_2_)
+                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, NpcActorEntity.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_2_)
                     } else {
                         var i_16_ = Class99.aBooleanArrayArray1572!!.size
-                        if ((Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size) > Class318_Sub7.anInt6451) i_16_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size - Class318_Sub7.anInt6451)
+                        if ((Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size) > SpotAnimEntity.anInt6451) i_16_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size - SpotAnimEntity.anInt6451)
                         var i_17_ = Class99.aBooleanArrayArray1572!![0]!!.size
                         if ((Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572!![0]!!.size) > Class348_Sub41.anInt7054) i_17_ -= (Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572!![0]!!.size - Class348_Sub41.anInt7054)
                         var bools = Class348_Sub8.aBooleanArrayArray6656
@@ -145,9 +145,9 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                         if (Class348_Sub40_Sub5.aBoolean9121) {
                             if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
-                            for (i_21_ in 0..<Npc.anInt10503) Class319.aCacheIndexManagerArray3982!![i_21_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_1_, i_2_)
-                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_2_)
+                            for (i_21_ in 0..<Npc.anInt10503) Class319.aCacheIndexManagerArray3982!![i_21_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
+                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, NpcActorEntity.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_1_, i_2_)
+                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, NpcActorEntity.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_2_)
                     }
                 }
             }

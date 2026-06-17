@@ -106,7 +106,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             if (`is` != null) {
                 if (`is`.size <= 1) return null
                 try {
-                    class348_sub42_sub19 = Class318_Sub4.method2502(`is`, -85)
+                    class348_sub42_sub19 = SceneEntityModel.method2502(`is`, -85)
                 } catch (exception: Exception) {
                     throw RuntimeException(exception.message + " S: " + i_7_)
                 }
@@ -121,7 +121,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             if (`is` != null) {
                 if (`is`.size <= 1) return null
                 try {
-                    class348_sub42_sub19 = Class318_Sub4.method2502(`is`, -101)
+                    class348_sub42_sub19 = SceneEntityModel.method2502(`is`, -101)
                 } catch (exception: Exception) {
                     throw RuntimeException(exception.message + " S: " + i_7_)
                 }
@@ -136,7 +136,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             if (`is` != null) {
                 if (`is`.size <= 1) return null
                 try {
-                    class348_sub42_sub19 = Class318_Sub4.method2502(`is`, -110)
+                    class348_sub42_sub19 = SceneEntityModel.method2502(`is`, -110)
                 } catch (exception: Exception) {
                     throw RuntimeException(exception.message + " S: " + i_7_)
                 }

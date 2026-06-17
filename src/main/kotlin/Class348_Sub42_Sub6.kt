@@ -5,7 +5,7 @@ import Class62.method599
 /* Class348_Sub42_Sub6 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class348_Sub42_Sub6 internal constructor(var aClass318_Sub1_Sub3_Sub4_9538: Class318_Sub1_Sub3_Sub4?) : Class348_Sub42() {
+class Class348_Sub42_Sub6 internal constructor(var aClass318_Sub1_Sub3_Sub4_9538: MapElementDecor?) : Class348_Sub42() {
     companion object {
         var aBoolean9535: Boolean = false
         var aLinkedQueueNode_9536: LinkedQueueNode? = null

@@ -50,7 +50,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
                         var class79 = (npc.aClass79_10505)
                         if (class79!!.anIntArray1377 != null) {
                             class348_sub9.aBoolean6684 = true
-                            class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), i xor 0x3a5d4149.inv())
+                            class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), i xor 0x3a5d4149.inv())
                         }
                         if (class79 != null) {
                             class348_sub9.anInt6698 = (i_4_ + class79.anInt1399 shl 9)

@@ -137,7 +137,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
         var anInt3731: Int = 0
         var anInt3736: Int = 0
         @JvmField
-        var aClass318_Sub1Array3737: Array<Class318_Sub1?>? = null
+        var aClass318_Sub1Array3737: Array<SceneEntity?>? = null
         @JvmField
         var anInt3739: Int = 0
         var anInt3741: Int = 0

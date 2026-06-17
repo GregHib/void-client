@@ -200,7 +200,7 @@ class Class85 {
                         i_17_++
                     }
                     LocalPlayerState.anIntArray1909 = IntArray(ItemModelDefinition.anInt425 * BackgroundWorkerThread.anInt3225)
-                    Class318_Sub1_Sub1_Sub2.anInt9997 = 1
+                    GroundDecorSceneEntity.anInt9997 = 1
                 }
                 Class348_Sub16_Sub2.aBoolean8870 = true
             }

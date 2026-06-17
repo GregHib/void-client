@@ -7,7 +7,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, class51: Class51, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int) : Class318_Sub1_Sub1(i_8_, i_9_, i_10_, i, i_7_, class51.anInt930), Interface10 {
+class WallSceneEntity internal constructor(var_renderer: Renderer?, class51: Class51, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int) : TileSceneEntity(i_8_, i_9_, i_10_, i, i_7_, class51.anInt930), Interface10 {
     private var aBoolean9945 = false
     private var aCircleHitbox_9950: CircleHitbox? = null
     var aSceneObjectAnimator_9955: SceneObjectAnimator? = null
@@ -46,7 +46,7 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
         return (this.aSceneObjectAnimator_9955!!.anInt3052)
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt9968++
         val class64 = this.aSceneObjectAnimator_9955!!.method1668(false, true, -128, 2048, var_renderer)
         if (class64 == null) return null
@@ -69,7 +69,7 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
         return class318_sub4
     }
 
-    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_4_: Int, i_5_: Byte, i_6_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_4_: Int, i_5_: Byte, i_6_: Int) {
         try {
             anInt9946++
             if (i_5_ > -106) this.aSceneObjectAnimator_9955 = null

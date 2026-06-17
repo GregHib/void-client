@@ -9,7 +9,7 @@ import DisplayModeOptionState.Companion.method1825
 import TwoStateOptionState.Companion.method1844
 import MultiLevelOptionState.Companion.method1851
 import GlVertexBufferArb.Companion.method2127
-import Class318_Sub1_Sub1.Companion.method2396
+import TileSceneEntity.Companion.method2396
 import Class324.Companion.method2570
 import Class348_Sub42_Sub9.Companion.method3203
 import Class367_Sub8.Companion.method3546
@@ -152,7 +152,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class318_Sub6.aIntRange_6424) {
+            if (Class348_Sub3.aIntRange_6584 == SceneEffectMarker.aIntRange_6424) {
                 method128(Class348_Sub26.aClass74_6891, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -160,7 +160,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class356.aIntRange_4388 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-100)
                 val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-111)
-                Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
+                WallSceneEntity.method2397((-126).toByte())
                 Class50_Sub3.method467(i_8_, -18075, i.toInt())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -168,7 +168,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (GlArrayBufferObject.aIntRange_4707 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-123).toByte())
                 val i_9_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_9_.toLong(), -6008) as Class348_Sub41?)
                 val class348_sub41_10_ = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41_10_ != null) ScrollingWidgetComponentNode.method1118((class348_sub41 == null || (class348_sub41_10_.anInt7050 != class348_sub41.anInt7050)), false, class348_sub41_10_, 2533)
@@ -198,7 +198,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (GraphicsOptionState.aIntRange_3135 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(62.toByte())
                 val i_11_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-126).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 Class348_Sub15.method2813(true, i, i_11_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -208,7 +208,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_12_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 val i_13_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
                 val i_14_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
+                WallSceneEntity.method2397((-127).toByte())
                 method1703(7, i, i_13_ shl 16 or i_14_, 4, i_12_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -226,7 +226,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub3.aIntRange_6584 == ObjectByteSerializerHolder.aIntRange_2285) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 method1703(3, i, -1, 4, -1)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -258,16 +258,16 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class357.aLongArray4410!![Class79.anInt1359] = l_19_
                     Class79.anInt1359 = (1 + Class79.anInt1359) % 100
                     val string_22_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
-                    if (i == 2 || i == 3) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_16_, string_22_, (-126).toByte(), -1, "<img=1>" + string, ShadowQualityOptionState.method1788((-76).toByte(), l), 9, 0, string)
-                    else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_16_, string_22_, (-125).toByte(), -1, string, ShadowQualityOptionState.method1788((-83).toByte(), l), 9, 0, string)
-                    else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_16_, string_22_, (-126).toByte(), -1, "<img=0>" + string, ShadowQualityOptionState.method1788((-75).toByte(), l), 9, 0, string)
+                    if (i == 2 || i == 3) TrackedGroundDecor.method2477("<img=1>" + string_16_, string_22_, (-126).toByte(), -1, "<img=1>" + string, ShadowQualityOptionState.method1788((-76).toByte(), l), 9, 0, string)
+                    else if (i != 1) TrackedGroundDecor.method2477(string_16_, string_22_, (-125).toByte(), -1, string, ShadowQualityOptionState.method1788((-83).toByte(), l), 9, 0, string)
+                    else TrackedGroundDecor.method2477("<img=0>" + string_16_, string_22_, (-126).toByte(), -1, "<img=0>" + string, ShadowQualityOptionState.method1788((-75).toByte(), l), 9, 0, string)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == LocalizedTextTriple.aIntRange_3751) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool)
-                Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
+                WallSceneEntity.method2397((-126).toByte())
                 FontDefinition.method1189(-1, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -283,12 +283,12 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_24_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 val i_25_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-128).toByte())
                 val i_26_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
+                WallSceneEntity.method2397((-127).toByte())
                 SpotAnimDefinition.aBooleanArray2374!![i_23_] = true
                 CollisionMapAccessor.anIntArray3552!![i_23_] = i
                 ModelHeaderCache.anIntArray3273!![i_23_] = i_25_
                 Class338.anIntArray4196!![i_23_] = i_26_
-                Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_23_] = i_24_
+                GroundDecorSceneEntity.anIntArray9981!![i_23_] = i_24_
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -306,7 +306,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class345.aIntRange_4269 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(71.toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
+                WallSceneEntity.method2397((-128).toByte())
                 Class37.anInt495 = i
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -319,7 +319,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == SmoothingBuffer.aIntRange_3240) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
                 val i_27_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
-                Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
+                WallSceneEntity.method2397((-128).toByte())
                 method2396(i, i_27_, 0, 3)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -329,7 +329,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (i == 65535) i = -1
                 val i_28_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_29_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
+                WallSceneEntity.method2397((-128).toByte())
                 Class70.method727((-63).toByte(), i_29_, i, i_28_)
                 val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(-126, i)
                 ObjectSpawnDecoder.method1085(class213.anInt2825, class213.anInt2787, (-59).toByte(), class213.anInt2781, i_28_)
@@ -365,7 +365,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == PixelBlender.aIntRange_3809) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_36_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
-                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1313(42.toByte(), i, i_36_)
+                ProjectedGroundDecor.aVarpStore_10209!!.method1313(42.toByte(), i, i_36_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -525,7 +525,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         val i_64_ = 512 * i_62_ + 256
                         var i_65_ = i_60_
                         if (i_65_ < 3 && Class79.method802(i_62_, i_61_, true)) i_65_++
-                        val class318_sub1_sub3_sub4 = (Class318_Sub1_Sub3_Sub4(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + CollisionMapAccessor.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_))
+                        val class318_sub1_sub3_sub4 = (MapElementDecor(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + CollisionMapAccessor.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_))
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180)
                     }
                 }
@@ -535,7 +535,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == Class63.aIntRange_1120) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-116)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-85).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 method3965(string, i, 2)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -680,7 +680,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == DetailLevelOptionState.aIntRange_6121) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 val i_78_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
+                WallSceneEntity.method2397((-128).toByte())
                 Class91.method855(6, i, i_78_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -694,27 +694,27 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 val i_79_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-120)
                 val i_80_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 SoundEnvelope.method1540(-101, i, i_79_ + (i_80_ shl 16))
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class361.aIntRange_4433) {
-                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1314(80.toByte())
+                ProjectedGroundDecor.aVarpStore_10209!!.method1314(80.toByte())
                 TypedRecordTable.anInt3695 += 32
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == ProjectileDefinition.aIntRange_3842) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
+                WallSceneEntity.method2397((-128).toByte())
                 method1703(5, i, Class348_Sub42_Sub11.anInt9591, 4, 0)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class346_Sub1.aIntRange_6528 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-124)
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 Class64_Sub3.method690((-107).toByte(), i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -732,9 +732,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 }
                 if (!bool_83_ && BackgroundWorkerThread.anInt3227 == 0) {
                     val string_84_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
-                    if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_82_, string_84_, (-119).toByte(), -1, "<img=1>" + string, null, 24, 0, string)
-                    else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_82_, string_84_, (-119).toByte(), -1, "<img=0>" + string, null, 24, 0, string)
-                    else Class318_Sub1_Sub3_Sub5.method2477(string_82_, string_84_, (-115).toByte(), -1, string, null, 24, 0, string)
+                    if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_82_, string_84_, (-119).toByte(), -1, "<img=1>" + string, null, 24, 0, string)
+                    else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_82_, string_84_, (-119).toByte(), -1, "<img=0>" + string, null, 24, 0, string)
+                    else TrackedGroundDecor.method2477(string_82_, string_84_, (-115).toByte(), -1, string, null, 24, 0, string)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -750,7 +750,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_86_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_87_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_88_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(126) shl 2)
-                Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
+                WallSceneEntity.method2397((-127).toByte())
                 method1844(i_85_, i_86_, true, i_88_, !bool, i_87_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -763,7 +763,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     else objects[1 + i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(122.toByte())
                 }
                 objects[0] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
+                WallSceneEntity.method2397((-127).toByte())
                 val class348_sub36 = Class348_Sub36()
                 class348_sub36.anObjectArray6987 = objects
                 Class66.method705(class348_sub36)
@@ -771,7 +771,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (SimpleBinaryOptionState.aIntRange_6075 == Class348_Sub3.aIntRange_6584) {
-                Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
+                WallSceneEntity.method2397((-127).toByte())
                 method1851(125.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -780,14 +780,14 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
                 var i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 if (i_89_ == 65535) i_89_ = -1
-                Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
+                WallSceneEntity.method2397((-126).toByte())
                 method1703(2, i, i_89_, 4, -1)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == CompassSmoother.aIntRange_3368) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
                 if (Class49.aClass46_4730 != null) {
@@ -800,7 +800,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (InputStream_Sub1.aIntRange_79 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-86)
                 val i_90_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 Class348_Sub23.method2966(i_90_, i, false)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -851,9 +851,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         if (i_92_ != 1 && i_92_ != 2) i_96_ = if (!bool_93_) 2 else 17
                         else i_96_ = if (bool_93_) 17 else 1
                         if (i_92_ != 2) {
-                            if (i_92_ != 1) Class318_Sub1_Sub3_Sub5.method2477(player.method2450(false, -121), string, (-126).toByte(), i_95_, player.method2456(true, 255), null, i_96_, 0, player.aString10537)
-                            else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + player.method2450(false, -93), string, (-111).toByte(), i_95_, "<img=0>" + player.method2456(true, 255), null, i_96_, 0, player.aString10537)
-                        } else Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + player.method2450(false, -95), string, (-120).toByte(), i_95_, "<img=1>" + player.method2456(true, 255), null, i_96_, 0, player.aString10537)
+                            if (i_92_ != 1) TrackedGroundDecor.method2477(player.method2450(false, -121), string, (-126).toByte(), i_95_, player.method2456(true, 255), null, i_96_, 0, player.aString10537)
+                            else TrackedGroundDecor.method2477("<img=0>" + player.method2450(false, -93), string, (-111).toByte(), i_95_, "<img=0>" + player.method2456(true, 255), null, i_96_, 0, player.aString10537)
+                        } else TrackedGroundDecor.method2477("<img=1>" + player.method2450(false, -95), string, (-120).toByte(), i_95_, "<img=1>" + player.method2456(true, 255), null, i_96_, 0, player.aString10537)
                     }
                 }
                 Class348_Sub3.aIntRange_6584 = null
@@ -885,9 +885,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class357.aLongArray4410!![Class79.anInt1359] = l_100_
                     Class79.anInt1359 = (1 + Class79.anInt1359) % 100
                     val string_103_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
-                    if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_98_, string_103_, (-127).toByte(), -1, "<img=1>" + string, null, 7, 0, string)
-                    else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_98_, string_103_, (-115).toByte(), -1, "<img=0>" + string, null, 7, 0, string)
-                    else Class318_Sub1_Sub3_Sub5.method2477(string_98_, string_103_, (-128).toByte(), -1, string, null, 3, 0, string)
+                    if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_98_, string_103_, (-127).toByte(), -1, "<img=1>" + string, null, 7, 0, string)
+                    else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_98_, string_103_, (-115).toByte(), -1, "<img=0>" + string, null, 7, 0, string)
+                    else TrackedGroundDecor.method2477(string_98_, string_103_, (-128).toByte(), -1, string, null, 3, 0, string)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -903,7 +903,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_105_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_106_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool) shl 2)
                 val i_107_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 Class348_Sub42_Sub12.method3231(i_104_, i, i_106_, i_107_, i_105_, -127)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -929,7 +929,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == EmoteDefinition.aIntRange_3264) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_109_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3341(-8679)
-                Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
+                WallSceneEntity.method2397((-128).toByte())
                 Class348_Sub42_Sub14.method3244(i_109_.toInt(), i, 120)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -949,7 +949,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 val i_110_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 val i_111_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3375(84.toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 ConfigValueProvider.method1080(i_111_, -23697, i, i_110_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -957,15 +957,15 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (ScriptOpcodeHolder.aIntRange_2338 == Class348_Sub3.aIntRange_6584) {
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(100.toByte())
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
-                Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
+                WallSceneEntity.method2397((-127).toByte())
                 method3965(string, i, 2)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class318_Sub1_Sub5_Sub2.aIntRange_10168) {
+            if (Class348_Sub3.aIntRange_6584 == SequencedWallEntity.aIntRange_10168) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
                 val i_112_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
+                WallSceneEntity.method2397((-127).toByte())
                 Class348_Sub40_Sub15.method3084(i, (-88).toByte(), i_112_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -995,19 +995,19 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class357.aLongArray4410!![Class79.anInt1359] = l_118_
                     Class79.anInt1359 = (Class79.anInt1359 + 1) % 100
                     val string_121_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_117_, (-106).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
-                    if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_114_, string_121_, (-120).toByte(), i_117_, "<img=1>" + string, method1788(87.toByte(), l), 20, 0, string)
-                    else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_114_, string_121_, (-111).toByte(), i_117_, string, method1788(80.toByte(), l), 20, 0, string)
-                    else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_114_, string_121_, (-116).toByte(), i_117_, "<img=0>" + string, ShadowQualityOptionState.method1788((-98).toByte(), l), 20, 0, string)
+                    if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_114_, string_121_, (-120).toByte(), i_117_, "<img=1>" + string, method1788(87.toByte(), l), 20, 0, string)
+                    else if (i != 1) TrackedGroundDecor.method2477(string_114_, string_121_, (-111).toByte(), i_117_, string, method1788(80.toByte(), l), 20, 0, string)
+                    else TrackedGroundDecor.method2477("<img=0>" + string_114_, string_121_, (-116).toByte(), i_117_, "<img=0>" + string, ShadowQualityOptionState.method1788((-98).toByte(), l), 20, 0, string)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class348_Sub47.aIntRange_7124 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 if (i == -1) {
                     Class9.anInt167 = -1
-                    Class318_Sub1_Sub5_Sub2.anInt10163 = -1
+                    SequencedWallEntity.anInt10163 = -1
                 } else {
                     var i_122_ = 0x3fff and (i shr 14)
                     i_122_ -= ArbVertexProgram.regionTileX
@@ -1020,7 +1020,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     if (i_123_ >= 0) {
                         if (i_123_ >= Class348_Sub40_Sub3.anInt9109) i_123_ = Class348_Sub40_Sub3.anInt9109
                     } else i_123_ = 0
-                    Class318_Sub1_Sub5_Sub2.anInt10163 = 256 + (i_123_ shl 9)
+                    SequencedWallEntity.anInt10163 = 256 + (i_123_ shl 9)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1028,7 +1028,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub40_Sub19.aIntRange_9254) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-88).toByte())
                 val i_124_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool)
-                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1316((-58).toByte(), i_124_, i)
+                ProjectedGroundDecor.aVarpStore_10209!!.method1316((-58).toByte(), i_124_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1058,7 +1058,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-104).toByte())
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val string_133_ = (BrightnessOptionState.aClass355_5900!!.method3471(i, (-98).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
-                Class318_Sub1_Sub3_Sub5.method2477(string, string_133_, (-122).toByte(), i, string, null, 19, 0, string)
+                TrackedGroundDecor.method2477(string, string_133_, (-122).toByte(), i, string, null, 19, 0, string)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1088,7 +1088,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_134_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_135_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-109)
                 val i_136_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(16)
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 ObjectSpawnDecoder.method1085(i_136_, i_134_, (-86).toByte(), i_135_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1128,7 +1128,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_138_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(13.toByte())
                 if (i_137_ >= 1 && i_137_ <= 8) {
                     if (string.equals("null", ignoreCase = true)) string = null
-                    Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_137_ + -1] = string
+                    DynamicSceneObjectEntity.aStringArray10195!![i_137_ + -1] = string
                     DelegatingRenderCanvas.anIntArray60!![i_137_ + -1] = i
                     Class71.aBooleanArray1214!![i_137_ - 1] = i_138_ == 0
                 }
@@ -1173,7 +1173,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == AbstractMenuEntry.aIntRange_1702) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 val i_143_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
+                WallSceneEntity.method2397((-126).toByte())
                 ObjectByteSerializerHolder.method1330(i, -19906, i_143_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1184,7 +1184,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 var i_145_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i_145_ == 65535) i_145_ = -1
                 var i_146_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
-                Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
+                WallSceneEntity.method2397((-128).toByte())
                 if (i_146_ == 65535) i_146_ = -1
                 var i_147_ = i_146_
                 while (i_145_ >= i_147_) {
@@ -1223,7 +1223,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             if (string == Class83.aStringArray1441!![i_154_]) {
                                 if (i != Renderer.anIntArray4578!![i_154_]) {
                                     var bool_155_ = true
-                                    var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(8) as? Class318_Sub9_Sub1?)
+                                    var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(8) as? NamedTimedNode?)
                                     while (class318_sub9_sub1 != null) {
                                         if (class318_sub9_sub1.aString8783 == string) {
                                             if (i == 0 || (class318_sub9_sub1.aShort8786.toInt() != 0)) {
@@ -1236,9 +1236,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                                 class318_sub9_sub1.method2373(false)
                                             }
                                         }
-                                        class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878(124.toByte()) as? Class318_Sub9_Sub1?)
+                                        class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878(124.toByte()) as? NamedTimedNode?)
                                     }
-                                    if (bool_155_) Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1869(-95, Class318_Sub9_Sub1(string, i))
+                                    if (bool_155_) Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1869(-95, NamedTimedNode(string, i))
                                     Renderer.anIntArray4578!![i_154_] = i
                                 }
                                 FixedFunctionMaterialPass.aStringArray6205!![i_154_] = string_150_
@@ -1326,15 +1326,15 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == GraphicsOptionState.aIntRange_3143) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_167_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-83)
-                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1313(42.toByte(), i_167_.toInt(), i)
+                ProjectedGroundDecor.aVarpStore_10209!!.method1313(42.toByte(), i_167_.toInt(), i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class318_Sub1_Sub3.aIntRange_8756) {
+            if (Class348_Sub3.aIntRange_6584 == GroundDecorEntity.aIntRange_8756) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 if (i == 65535) i = -1
                 val i_168_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
+                WallSceneEntity.method2397((-127).toByte())
                 SpriteStore.method304(i, 437853543, i_168_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1364,7 +1364,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == Class345.aIntRange_4272) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-127)
                 val i_173_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
+                WallSceneEntity.method2397((-128).toByte())
                 Class55_Sub1.method524(i_173_, true, i, -127)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1393,9 +1393,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class357.aLongArray4410!![Class79.anInt1359] = l_178_
                     Class79.anInt1359 = (Class79.anInt1359 - -1) % 100
                     val string_181_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_177_, (-93).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 62.toByte()))
-                    if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_175_, string_181_, (-110).toByte(), i_177_, "<img=1>" + string, null, 18, 0, string)
-                    else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_175_, string_181_, (-112).toByte(), i_177_, "<img=0>" + string, null, 18, 0, string)
-                    else Class318_Sub1_Sub3_Sub5.method2477(string_175_, string_181_, (-118).toByte(), i_177_, string, null, 18, 0, string)
+                    if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_175_, string_181_, (-110).toByte(), i_177_, "<img=1>" + string, null, 18, 0, string)
+                    else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_175_, string_181_, (-112).toByte(), i_177_, "<img=0>" + string, null, 18, 0, string)
+                    else TrackedGroundDecor.method2477(string_175_, string_181_, (-118).toByte(), i_177_, string, null, 18, 0, string)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1404,7 +1404,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 val i_182_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-122).toByte())
                 val i_183_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-95).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_182_.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533)
                 Class338.method2661(i, i_182_, i_183_, false, 2)
@@ -1418,7 +1418,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == PingHostListHolder.aIntRange_2335) {
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 MinimapStateReset.method1122(0)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1427,7 +1427,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_184_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_185_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] != null) {
                     var i_186_ = i_184_
                     while (i_185_ > i_186_) {
@@ -1512,7 +1512,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == ScrollingWidgetComponentNode.aIntRange_8385) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-97).toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 method1803(i, string, -32394)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1521,14 +1521,14 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 val i_199_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_200_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
+                WallSceneEntity.method2397((-126).toByte())
                 method1703(5, i, i_200_, 4, i_199_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (Class368.aIntRange_4500 == Class348_Sub3.aIntRange_6584) {
                 val bool_201_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 ObjectSpawnDecoder.aBoolean1801 = bool_201_
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1547,7 +1547,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub40_Sub19.aIntRange_9257) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_202_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 if (i == 2) FrameStatsReset.method1134(92)
                 RenderNode.anInt9721 = i_202_
                 Class348_Sub7.method2772(i_202_, 123.toByte())
@@ -1564,7 +1564,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class318_Sub1.aIntRange_6383) {
+            if (Class348_Sub3.aIntRange_6584 == SceneEntity.aIntRange_6383) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
                 val i_204_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -1574,11 +1574,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class318_Sub1_Sub5_Sub2.aIntRange_10149 == Class348_Sub3.aIntRange_6584) {
+            if (SequencedWallEntity.aIntRange_10149 == Class348_Sub3.aIntRange_6584) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-16)
                 if (i == 65535) i = -1
                 val i_207_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
-                Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
+                WallSceneEntity.method2397((-125).toByte())
                 method1703(1, i_207_, i, 4, -1)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1595,7 +1595,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (i_208_ == 65535) i_208_ = -1
                 val i_209_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 val i_210_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
+                WallSceneEntity.method2397((-127).toByte())
                 for (i_211_ in i_208_..i) {
                     val l = i_211_.toLong() + (i_209_.toLong() shl 32)
                     val class348_sub44 = (TextureDefinitionCache.aClass356_2959!!.method3480(l, -6008) as Class348_Sub44?)
@@ -1613,7 +1613,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == HeadIconRenderer.aIntRange_2068) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-103)
                 val i_213_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
-                Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1316((-124).toByte(), i, i_213_)
+                ProjectedGroundDecor.aVarpStore_10209!!.method1316((-124).toByte(), i, i_213_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1692,7 +1692,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class367_Sub11.aIntRange_7398 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
                 val i_226_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 Class50_Sub3.method467(i_226_, -18075, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1713,9 +1713,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (i <= 1 && Class351.method3455(string_228_, 28280)) bool_230_ = true
                 if (!bool_230_ && BackgroundWorkerThread.anInt3227 == 0) {
                     val string_231_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_229_, (-108).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
-                    if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_228_, string_231_, (-127).toByte(), i_229_, "<img=1>" + string, null, 25, 0, string)
-                    else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_228_, string_231_, (-119).toByte(), i_229_, string, null, 25, 0, string)
-                    else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_228_, string_231_, (-125).toByte(), i_229_, "<img=0>" + string, null, 25, 0, string)
+                    if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_228_, string_231_, (-127).toByte(), i_229_, "<img=1>" + string, null, 25, 0, string)
+                    else if (i != 1) TrackedGroundDecor.method2477(string_228_, string_231_, (-119).toByte(), i_229_, string, null, 25, 0, string)
+                    else TrackedGroundDecor.method2477("<img=0>" + string_228_, string_231_, (-125).toByte(), i_229_, "<img=0>" + string, null, 25, 0, string)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1723,7 +1723,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (ScreenBorderFiller.aIntRange_1959 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_232_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-110)
-                Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
+                WallSceneEntity.method2397((-124).toByte())
                 Class348_Sub49_Sub2.method3411(i, 12, i_232_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true

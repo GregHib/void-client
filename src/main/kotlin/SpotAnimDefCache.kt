@@ -8,7 +8,7 @@ object SpotAnimDefCache {
     @JvmStatic
     fun method1943(bool: Boolean, i: Int): SpotAnimVector {
         anInt3294++
-        var spotAnimVector = (Class318_Sub1_Sub2.aClass60_8732!!.method583(i.toLong(), -78) as SpotAnimVector?)
+        var spotAnimVector = (SceneObjectEntity.aClass60_8732!!.method583(i.toLong(), -78) as SpotAnimVector?)
         if (spotAnimVector != null) return spotAnimVector
         val `is` = Class59_Sub2_Sub1.aClass45_8670!!.method410(-1860, 1, i)
         spotAnimVector = SpotAnimVector()
@@ -20,7 +20,7 @@ object SpotAnimDefCache {
             Class59_Sub2_Sub2.aClass356_8679!!.method3483(87.toByte(), i.toLong(), Class348_Sub35(GlVertexBufferArb.anInt8492))
             WorldListEntry.aSpotAnimVectorArray311s!![GlVertexBufferArb.anInt8492++] = spotAnimVector
         }
-        Class318_Sub1_Sub2.aClass60_8732!!.method582(spotAnimVector, i.toLong(), (-109).toByte())
+        SceneObjectEntity.aClass60_8732!!.method582(spotAnimVector, i.toLong(), (-109).toByte())
         return spotAnimVector
     }
 

@@ -148,7 +148,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                     if (ParticleConfigParser.aBoolean3819 && ScrollingWidgetComponentNode.aBoolean8386) {
                                         var i_29_ = (GlTexture1D.aClass373_8552!!.method3597(true) - -i_26_)
                                         var i_30_ = (GlTexture1D.aClass373_8552!!.method3594(101.toByte()) + i_27_)
-                                        i_29_ -= Class318_Sub4.anInt6411
+                                        i_29_ -= SceneEntityModel.anInt6411
                                         i_30_ -= ModelDefinitionCache.anInt2872
                                         if (Class348_Sub40_Sub37.Companion.anInt9461 > i_29_) i_29_ = Class348_Sub40_Sub37.Companion.anInt9461
                                         if (i_30_ < Class40.anInt558) i_30_ = Class40.anInt558
@@ -220,7 +220,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             continue
                                         }
                                         if (class46.anInt765 == Class348_Sub45.anInt7102) {
-                                            Class318_Sub1_Sub3_Sub4.method2464((-7).toByte(), i_24_, class46.anInt709, class46.anInt789, Class348_Sub8.aRenderer6654, i_25_, Class348_Sub40_Sub4.Companion.aRenderConfig9113)
+                                            MapElementDecor.method2464((-7).toByte(), i_24_, class46.anInt709, class46.anInt789, Class348_Sub8.aRenderer6654, i_25_, Class348_Sub40_Sub4.Companion.aRenderConfig9113)
                                             GzipDecompressor.aBooleanArray2076!![i_23_] = true
                                             Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                             i_18_++
@@ -293,7 +293,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                         i_38_ += 12
                                                     }
                                                 }
-                                                if (SkyboxGradient.anInt3936 > 0) WorldMapRenderer.aClass324_4684!!.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + SkyboxGradient.anInt3936), i_38_, -256, i_37_, -121, -1)
+                                                if (SkyboxGradient.anInt3936 > 0) WorldMapRenderer.aClass324_4684!!.method2569(("Particles: " + (WallEntity.anInt8780) + " / " + SkyboxGradient.anInt3936), i_38_, -256, i_37_, -121, -1)
                                                 i_38_ += 12
                                                 if (GlowPostProcessor.aBoolean2514) {
                                                     WorldMapRenderer.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
@@ -349,11 +349,11 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     string = (LocalizedText.aLocalizedText_3514!!.method2063((Class348_Sub33.anInt6967), 544))
                                                     i_50_ = (class46.anInt749)
                                                 }
-                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (class46.anInt789) + i_25_)
+                                                if (SequencedGroundDecor.aBoolean10046) Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (class46.anInt789) + i_25_)
                                                 class324.method2568(null, class46.anInt789, (-77).toByte(), null, 0, CameraNodeList.aAbstractModelRendererArray1744, (-(i_28_ and 0xff) + 255 shl 24) or i_50_, i_25_, class46.anInt709, class46.anInt700, string, 0, i_24_, class46.anInt762, (if (!(class46.aBoolean769)) -1 else (-(0xff and i_28_) + 255 shl 24)), class46.anInt773, class46.anInt673)
-                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
+                                                if (SequencedGroundDecor.aBoolean10046) Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (string!!.trim { it <= ' ' }.length > 0) {
-                                                    if (Class318_Sub1_Sub3_Sub2.aBoolean10046) {
+                                                    if (SequencedGroundDecor.aBoolean10046) {
                                                         if (Class59_Sub1.aBoolean5300) {
                                                             if (!bool) Class54.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
                                                             else Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
@@ -430,8 +430,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 if (i_61_ >= 0 && (i_61_ < 2048)) {
                                                     val player = (LoadingBarRenderer.aPlayerArray5058!![i_61_])
                                                     val class17 = (if ((class46.anInt699) == -1) null else (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7)))
-                                                    if ((player != null) && ((i_61_ == (Class348_Sub42_Sub11.anInt9591)) || ((class46.anInt779) == (Class318_Sub1_Sub3_Sub1.method2418((player.aString10544!!), (-50).toByte()))))) class64 =
-                                                        (player.aCompositeNpcModelBuilder_10536!!.method1226((Class318_Sub1_Sub3_Sub3.aVarpStore_10209), null, null, true, (Exception_Sub1.aModelHeaderCache_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), class46.anInt841, (Class348_Sub8.aRenderer6654), (MapAreaDefinition.aBufferedMessageQueue_2529), (ParticleEmitterNode.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aNpcDefinitionCache_5558)))
+                                                    if ((player != null) && ((i_61_ == (Class348_Sub42_Sub11.anInt9591)) || ((class46.anInt779) == (ModelGroundDecor.method2418((player.aString10544!!), (-50).toByte()))))) class64 =
+                                                        (player.aCompositeNpcModelBuilder_10536!!.method1226((ProjectedGroundDecor.aVarpStore_10209), null, null, true, (Exception_Sub1.aModelHeaderCache_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), class46.anInt841, (Class348_Sub8.aRenderer6654), (MapAreaDefinition.aBufferedMessageQueue_2529), (ParticleEmitterNode.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aNpcDefinitionCache_5558)))
                                                 }
                                             } else if ((class46.anInt770) == 8 || (class46.anInt770) == 9) {
                                                 val class348_sub13 = (GlTexture1D.method1974((-123).toByte(), (class46.anInt753), false))
@@ -441,11 +441,11 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     class64 = (class348_sub13.method2803(class17, class154, (class46.anInt779), (class46.anInt795), (class46.anInt841), (class46.anInt730), 2048, Class348_Sub8.aRenderer6654, (class46.anInt770) == 9, -1))
                                                 }
                                             } else if (class46.anInt699 == -1) {
-                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, -1, 0, (Exception_Sub1.aModelHeaderCache_112), (Class318_Sub1_Sub3_Sub3.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), null, (Class64_Sub3.aNpcDefinitionCache_5558), (MapAreaDefinition.aBufferedMessageQueue_2529), -1))
+                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, -1, 0, (Exception_Sub1.aModelHeaderCache_112), (ProjectedGroundDecor.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), null, (Class64_Sub3.aNpcDefinitionCache_5558), (MapAreaDefinition.aBufferedMessageQueue_2529), -1))
                                                 if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) ConfigFlagUtil.method1916(-9343, class46)
                                             } else {
                                                 val class17 = (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7))
-                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.aModelHeaderCache_112), (Class318_Sub1_Sub3_Sub3.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), class17, (Class64_Sub3.aNpcDefinitionCache_5558), (MapAreaDefinition.aBufferedMessageQueue_2529), (class46.anInt730)))
+                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.aModelHeaderCache_112), (ProjectedGroundDecor.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), class17, (Class64_Sub3.aNpcDefinitionCache_5558), (MapAreaDefinition.aBufferedMessageQueue_2529), (class46.anInt730)))
                                                 if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) ConfigFlagUtil.method1916(-9343, class46)
                                             }
                                             if (class64 != null) {
@@ -480,7 +480,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     Class50_Sub1.aAbstractCameraTransform_5209!!.method900((class46.anInt757) shl 3)
                                                 }
                                                 class46.method437(-20154, class64, Class348_Sub8.aRenderer6654, Class367_Sub11.anInt7396, Class50_Sub1.aAbstractCameraTransform_5209)
-                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (i_25_ + (class46.anInt789)))
+                                                if (SequencedGroundDecor.aBoolean10046) Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (i_25_ + (class46.anInt789)))
                                                 if (!class46.aBoolean784) {
                                                     if (!class46.aBoolean689) {
                                                         class64.method615((Class50_Sub1.aAbstractCameraTransform_5209), null, 1)
@@ -491,7 +491,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     class64.method615((Class50_Sub1.aAbstractCameraTransform_5209), null, 1)
                                                     if ((class46.aClass318_Sub10_740) != null) Class348_Sub8.aRenderer6654!!.method3684(class46.aClass318_Sub10_740!!.method2539())
                                                 }
-                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
+                                                if (SequencedGroundDecor.aBoolean10046) Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (class46.aBoolean754) Class348_Sub8.aRenderer6654!!.C(true)
                                             }
                                             if (Class59_Sub1.aBoolean5300) {
@@ -536,7 +536,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
 
         @JvmStatic
         fun method3065(i: Int, bool: Boolean, i_74_: Int) {
-            Class318_Sub1_Sub4.anInt8765++
+            ActorEntity.anInt8765++
             anInt9142++
             if (bool != false) method3065(-42, true, 43)
             val class348_sub47 = method2148(Class348_Sub40_Sub1.Companion.aClass351_9089, Class348_Sub23_Sub2.aClass77_9029, -97)

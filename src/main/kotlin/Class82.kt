@@ -8,8 +8,8 @@ import SimpleToggleOptionState.Companion.method1742
 import SocketFactory.Companion.method2049
 import WaterMaterialPass.Companion.method2148
 import CubemapTextureImplSource.Companion.method2271
-import Class318_Sub1_Sub2.Companion.method2405
-import Class318_Sub1_Sub4.Companion.method2478
+import SceneObjectEntity.Companion.method2405
+import ActorEntity.Companion.method2478
 import Class348.Companion.method2710
 import Class348_Sub23_Sub1.Companion.method2972
 import Class348_Sub40_Sub23.Companion.method3113
@@ -325,8 +325,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("clipcomponents", ignoreCase = true)) {
-                            Class318_Sub1_Sub3_Sub2.aBoolean10046 = !Class318_Sub1_Sub3_Sub2.aBoolean10046
-                            method94(("clipcomponents=" + (Class318_Sub1_Sub3_Sub2.aBoolean10046)), 88)
+                            SequencedGroundDecor.aBoolean10046 = !SequencedGroundDecor.aBoolean10046
+                            method94(("clipcomponents=" + (SequencedGroundDecor.aBoolean10046)), 88)
                             return
                         }
                         if (string.startsWith("bloom")) {
@@ -524,12 +524,12 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.startsWith("getclientvarpbit")) {
                             val i_15_ = string.substring(17).toInt()
-                            method94("varpbit=" + Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method62(i_15_, i.toInt() xor 0xffb1), i + 198)
+                            method94("varpbit=" + ProjectedGroundDecor.aVarpStore_10209!!.method62(i_15_, i.toInt() xor 0xffb1), i + 198)
                             return
                         }
                         if (string.startsWith("getclientvarp")) {
                             val i_16_ = string.substring(14).toInt()
-                            method94("varp=" + Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method61(i_16_, (-16).toByte()), -68)
+                            method94("varp=" + ProjectedGroundDecor.aVarpStore_10209!!.method61(i_16_, (-16).toByte()), -68)
                             return
                         }
                         if (string.startsWith("directlogin")) {
@@ -584,7 +584,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.startsWith("w2debug")) {
                             val i_19_ = string.substring(8, 9).toInt()
-                            Class318_Sub1_Sub4_Sub2.anInt10096 = i_19_
+                            SequencedActorEntity.anInt10096 = i_19_
                             Class348_Sub20.method2953((-103).toByte())
                             method94("Toggled!", -99)
                             return
@@ -702,7 +702,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
             }
         }
 
-        fun method813(i: Int, i_25_: Int, i_26_: Int): Class318_Sub1_Sub4? {
+        fun method813(i: Int, i_25_: Int, i_26_: Int): ActorEntity? {
             val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_25_]!![i_26_]
             if (class357 == null) return null
             return class357.aClass318_Sub1_Sub4_4403

@@ -8,7 +8,7 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
     override fun method3042(i: Int, i_3_: Int): IntArray? {
         if (i_3_ != 255) aIntRange_9254 = null
         anInt9256++
-        return Class318_Sub6.anIntArray6432
+        return SceneEffectMarker.anIntArray6432
     }
 
     companion object {

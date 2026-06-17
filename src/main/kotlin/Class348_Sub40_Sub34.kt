@@ -1,4 +1,4 @@
-import Class318_Sub1_Sub3_Sub3.Companion.method2433
+import ProjectedGroundDecor.Companion.method2433
 import Class348_Sub31.Companion.method3007
 import Sprite.Companion.method160
 import kotlin.math.sqrt
@@ -135,7 +135,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             ModelBatchBase.aClass356_1895!!.method3481(0)
             MinimapStateReset.method1122(0)
             GlArrayBufferObject.anInt4718 = 0
-            Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1314((-107).toByte())
+            ProjectedGroundDecor.aVarpStore_10209!!.method1314((-107).toByte())
             HeightMapNoise.method2282(-12648)
             Class50_Sub3.method465(i + -1636518175)
             FloatCameraTransform.aLong5745 = 0L

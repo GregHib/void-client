@@ -94,17 +94,17 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         @JvmField
         var anInt1459: Int = 0
         @JvmStatic
-        fun method817(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Class318_Sub1_Sub3_Sub3? {
+        fun method817(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): ProjectedGroundDecor? {
             anInt1456++
             val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_1_]!![i_0_]!![i_2_]
             if (class357 == null) return null
             if (i != 252) return null
-            var class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3? = null
+            var class318_sub1_sub3_sub3: ProjectedGroundDecor? = null
             var i_3_ = -1
             var class148 = class357.aWidgetNodeLink_4396
             while (class148 != null) {
                 val class318_sub1_sub3 = class148.aClass318_Sub1_Sub3_2040
-                if (class318_sub1_sub3 is Class318_Sub1_Sub3_Sub3) {
+                if (class318_sub1_sub3 is ProjectedGroundDecor) {
                     val class318_sub1_sub3_sub3_4_ = class318_sub1_sub3
                     val i_5_ = 252 + (-1 + class318_sub1_sub3_sub3_4_.method2436(88.toByte())) * 256
                     val i_6_ = (-i_5_ + (class318_sub1_sub3_sub3_4_.x) shr 9)
@@ -146,7 +146,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
         fun method824(i: Int) {
             DelegatingRenderCanvas.anInt67 = i
-            for (i_22_ in 0..<Class318_Sub7.anInt6451) {
+            for (i_22_ in 0..<SpotAnimEntity.anInt6451) {
                 for (i_23_ in 0..<Class348_Sub41.anInt7054) {
                     if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] == null) HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] = Class357(i)
                 }
@@ -161,12 +161,12 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
         @JvmStatic
         fun method826(i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, var_renderer: Renderer) {
-            if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9658 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aClass45_322!!.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257) && CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aClass45_322!!.method421(false, Class79.Companion.anInt1387)) {
+            if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9658 == null || Class348_Sub42_Sub15.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aClass45_322!!.method421(false, ProjectedGroundDecor.anInt10257) && CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aClass45_322!!.method421(false, Class79.Companion.anInt1387)) {
                 val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, SkyboxGradient.anInt3937, 0)
                 Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = var_renderer.method3691(spriteImage, true)
                 spriteImage!!.method1518()
                 ConfigVarProgress.aAbstractModelRenderer_4808 = var_renderer.method3691(spriteImage, true)
-                SpotAnimVector.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(CameraRotationStub.aClass45_322!!, Class318_Sub1_Sub3_Sub3.anInt10257, 0), true))
+                SpotAnimVector.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(CameraRotationStub.aClass45_322!!, ProjectedGroundDecor.anInt10257, 0), true))
                 val spriteImage_29_ = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, Class79.Companion.anInt1387, 0)
                 Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = var_renderer.method3691(spriteImage_29_, true)
                 spriteImage_29_!!.method1518()

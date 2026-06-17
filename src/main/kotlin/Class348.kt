@@ -41,7 +41,7 @@ open class Class348 {
         @JvmField
         var anInt4292: Int = 0
         @JvmField
-        var aClass318_Sub1Array4293: Array<Class318_Sub1?>? = null
+        var aClass318_Sub1Array4293: Array<SceneEntity?>? = null
         @JvmField
         var anInt4296: Int = 0
         @JvmField

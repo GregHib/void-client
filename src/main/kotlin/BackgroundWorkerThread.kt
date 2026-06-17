@@ -46,7 +46,7 @@ class BackgroundWorkerThread : Runnable {
         @JvmField
         var anInt3225: Int = 0
         @JvmField
-        var aClass318_Sub1Array3226: Array<Class318_Sub1?>? = null
+        var aClass318_Sub1Array3226: Array<SceneEntity?>? = null
         @JvmField
         var anInt3227: Int = 0
         fun method1909(i: Byte, string: String): String {
@@ -83,11 +83,11 @@ class BackgroundWorkerThread : Runnable {
             if (i.toInt() != 99) anIntArray3220 = null
             Class367_Sub11.aClass32_7415 = Class32(8)
             anInt3219++
-            Class318_Sub7.anInt6450 = 0
-            var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as Class318_Sub10?
+            SpotAnimEntity.anInt6450 = 0
+            var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?
             while (class318_sub10 != null) {
                 class318_sub10.method2530()
-                class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1878((-115).toByte()) as Class318_Sub10?
+                class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1878((-115).toByte()) as SceneGraphContainer?
             }
         }
     }

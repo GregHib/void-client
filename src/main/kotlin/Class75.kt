@@ -248,7 +248,7 @@ open class Class75 {
                             }
                         }
                         if ((aDoublyLinkedNodeListArrayArrayArray1269!![i_29_ - 1]!![i - (anInt1266 shr 6)]!![i_21_ - (anInt1263 shr 6)]) == null) aDoublyLinkedNodeListArrayArrayArray1269!![i_29_ - 1]!![i - (anInt1266 shr 6)]!![i_21_ - (anInt1263 shr 6)] = DoublyLinkedNodeList()
-                        val class318_sub8 = Class318_Sub8(i_22_ and 0x3f, i_23_ and 0x3f, i_30_, i_31_, i_32_, is_37_, is_38_)
+                        val class318_sub8 = TileUnderlayShadow(i_22_ and 0x3f, i_23_ and 0x3f, i_30_, i_31_, i_32_, is_37_, is_38_)
                         aDoublyLinkedNodeListArrayArrayArray1269!![i_29_ - 1]!![i - (anInt1266 shr 6)]!![i_21_ - (anInt1263 shr 6)]!!.method1869(-86, class318_sub8)
                     }
                 }
@@ -333,7 +333,7 @@ open class Class75 {
                     for (i_54_ in aDoublyLinkedNodeListArrayArrayArray1269!![0]!![0]!!.indices) {
                         val doublyLinkedNodeList: DoublyLinkedNodeList? = aDoublyLinkedNodeListArrayArrayArray1269!![i]!![i_53_]!![i_54_]
                         if (doublyLinkedNodeList != null) {
-                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as TileUnderlayShadow?
                             while (class318_sub8 != null) {
                                 if (class318_sub8.aShortArray6461 != null) {
                                     for (i_55_ in (class318_sub8.aShortArray6461!!).indices) {
@@ -351,7 +351,7 @@ open class Class75 {
                                         }
                                     }
                                 }
-                                class318_sub8 = (doublyLinkedNodeList.method1878(127.toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878(127.toByte()) as TileUnderlayShadow?)
                             }
                         }
                     }
@@ -472,10 +472,10 @@ open class Class75 {
                     for (i_98_ in aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!![0]!!.indices) {
                         val doublyLinkedNodeList: DoublyLinkedNodeList? = aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!![i_97_]!![i_98_]
                         if (doublyLinkedNodeList != null) {
-                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as TileUnderlayShadow?
                             while (class318_sub8 != null) {
                                 is_96_[(i_97_ * 64 + class318_sub8.aByte6466 + (i_98_ * 64 + (class318_sub8.aByte6464)) * anInt1259)] = (class318_sub8.anInt6465).toByte()
-                                class318_sub8 = (doublyLinkedNodeList.method1878(1.toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878(1.toByte()) as TileUnderlayShadow?)
                             }
                         }
                     }
@@ -485,12 +485,12 @@ open class Class75 {
                     for (i_100_ in aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!![0]!!.indices) {
                         val doublyLinkedNodeList: DoublyLinkedNodeList? = aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!![i_99_]!![i_100_]
                         if (doublyLinkedNodeList != null) {
-                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as TileUnderlayShadow?
                             while (class318_sub8 != null) {
                                 val i_101_: Int = (i_99_ * 64 + class318_sub8.aByte6466 + (i_100_ * 64 + (class318_sub8.aByte6464)) * anInt1259)
                                 class318_sub8.anInt6465 = ((aByteArray1264!![i_101_].toInt() and 0xff) shl 16 or (aShortArray1270!![i_101_].toInt() and 0xffff))
                                 if (class318_sub8.anInt6465 != 0) class318_sub8.anInt6465 = class318_sub8.anInt6465 or 0xffffff.inv()
-                                class318_sub8 = (doublyLinkedNodeList.method1878(122.toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878(122.toByte()) as TileUnderlayShadow?)
                             }
                         }
                     }
@@ -719,7 +719,7 @@ open class Class75 {
                         if (doublyLinkedNodeList != null) {
                             val i_173_: Int = (i_171_ + (anInt1266 shr 6)) * 64
                             val i_174_: Int = (i_172_ + (anInt1263 shr 6)) * 64
-                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as TileUnderlayShadow?
                             while (class318_sub8 != null) {
                                 val i_175_: Int = (i_173_ + class318_sub8.aByte6466 - anInt1266 - anInt1274)
                                 val i_176_: Int = (i_174_ + class318_sub8.aByte6464 - anInt1263 - anInt1257)
@@ -728,7 +728,7 @@ open class Class75 {
                                 val i_179_: Int = (anInt1268 - (i_133_ + i_131_ * (i_176_ + 1) shr 16))
                                 val i_180_: Int = anInt1268 - (i_133_ + i_131_ * i_176_ shr 16)
                                 method755(var_renderer, i_177_, i_179_, i_178_ - i_177_, i_180_ - i_179_, (class318_sub8.anInt6465), (class318_sub8.aByte6460).toInt() and 0xff, (class318_sub8.aByte6463).toInt(), (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462), false)
-                                class318_sub8 = (doublyLinkedNodeList.method1878((-79).toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878((-79).toByte()) as TileUnderlayShadow?)
                             }
                         }
                     }
@@ -739,7 +739,7 @@ open class Class75 {
                         if (doublyLinkedNodeList != null) {
                             val i_183_: Int = (i_181_ + (anInt1266 shr 6)) * 64
                             val i_184_: Int = (i_182_ + (anInt1263 shr 6)) * 64
-                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as TileUnderlayShadow?
                             while (class318_sub8 != null) {
                                 val i_185_: Int = (i_183_ + class318_sub8.aByte6466 - anInt1266 - anInt1274)
                                 val i_186_: Int = (i_184_ + class318_sub8.aByte6464 - anInt1263 - anInt1257)
@@ -748,7 +748,7 @@ open class Class75 {
                                 val i_189_: Int = (anInt1268 - (i_133_ + i_131_ * (i_186_ + 1) shr 16))
                                 val i_190_: Int = anInt1268 - (i_133_ + i_131_ * i_186_ shr 16)
                                 method763(var_renderer, i_187_, i_189_, i_188_ - i_187_, i_190_ - i_189_, (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462))
-                                class318_sub8 = (doublyLinkedNodeList.method1878((-75).toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878((-75).toByte()) as TileUnderlayShadow?)
                             }
                         }
                     }

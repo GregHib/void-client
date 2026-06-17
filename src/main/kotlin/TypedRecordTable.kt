@@ -59,7 +59,7 @@ class TypedRecordTable {
         var anInt3695: Int = 0
 
         @JvmStatic
-        fun method2178(class318_sub1: Class318_Sub1?, i: Int, widgetDefinition: WidgetDefinition?, i_0_: Int) {
+        fun method2178(class318_sub1: SceneEntity?, i: Int, widgetDefinition: WidgetDefinition?, i_0_: Int) {
             try {
                 anInt3694++
                 if (HintArrowOrMessage.anInt2021 < 50 && (widgetDefinition != null && widgetDefinition.anIntArrayArray264 != null && (widgetDefinition.anIntArrayArray264!!.size > i) && widgetDefinition.anIntArrayArray264!![i] != null)) {

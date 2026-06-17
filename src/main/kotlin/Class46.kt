@@ -129,7 +129,7 @@ class Class46 {
     var anInt738: Int = 0
     @JvmField
     var anInt739: Int = 0
-    var aClass318_Sub10_740: Class318_Sub10? = null
+    var aClass318_Sub10_740: SceneGraphContainer? = null
     @JvmField
     var anObjectArray741: Array<Any?>? = null
     @JvmField
@@ -306,7 +306,7 @@ class Class46 {
         anInt767++
         var var_sprite = SceneryDetailOptionState.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
         if (var_sprite != null) return var_sprite
-        val spriteImage = SpriteImage.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
+        val spriteImage = SpriteImage.method1521(GroundDecorEntity.aClass45_8755!!, this.anInt756, 0)
         if (spriteImage == null) return null
         val i_10_ = (spriteImage.anInt2703 + (spriteImage.anInt2702 + spriteImage.anInt2698))
         val i_11_ = (spriteImage.anInt2700 + (spriteImage.anInt2696 + spriteImage.anInt2701))
@@ -752,7 +752,7 @@ class Class46 {
                 class64!!.method620(abstractCameraTransform)
                 val class129s = class64.method619()
                 val class342s = class64.method604()
-                if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740!!.aBoolean6470) && (class129s != null || class342s != null)) this.aClass318_Sub10_740 = Class318_Sub10.method2526(i_63_, false)
+                if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740!!.aBoolean6470) && (class129s != null || class342s != null)) this.aClass318_Sub10_740 = SceneGraphContainer.method2526(i_63_, false)
                 if (this.aClass318_Sub10_740 == null) break
                 this.aClass318_Sub10_740!!.method2536(var_renderer, i_63_.toLong(), class129s, class342s, false)
             } catch (runtimeexception: RuntimeException) {
@@ -810,7 +810,7 @@ class Class46 {
         var abstractModelRenderer = Class351.aClass60_4327!!.method583(l, -71) as AbstractModelRenderer?
         if (i > -27) method434(true)
         if (abstractModelRenderer != null) return abstractModelRenderer
-        val spriteImage = SpriteImage.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
+        val spriteImage = SpriteImage.method1521(GroundDecorEntity.aClass45_8755!!, this.anInt756, 0)
         if (spriteImage == null) {
             Class348_Sub42_Sub13.aBoolean9616 = true
             return null

@@ -23,7 +23,7 @@ class Class348_Sub50 : Class348 {
 
         fun method3419(i: Int) {
             Class348_Sub24.anIntArray6878 = null
-            Class318_Sub9_Sub1.anIntArray8785 = null
+            NamedTimedNode.anIntArray8785 = null
             Class348_Sub40_Sub6.anIntArray9135 = null
             anInt7210++
             if (i != 13022) method3418(-79)

@@ -104,7 +104,7 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
             try {
                 Class348_Sub40_Sub28.aClass45_9365 = class45_6_
                 anInt1147++
-                Class318_Sub1_Sub3.aClass45_8755 = class45_5_
+                GroundDecorEntity.aClass45_8755 = class45_5_
                 RenderConfigFactory.aClass45_2978 = class45_4_
                 Class348_Sub40_Sub33.aClass46ArrayArray9427 = arrayOfNulls<Array<Class46?>>(RenderConfigFactory.aClass45_2978!!.method414(-1))
                 AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aClass45_2978!!.method414(-1))

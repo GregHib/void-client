@@ -26,7 +26,7 @@ object GameDisplayManager {
         anInt2839++
         val i_4_ = -33 / ((-74 - i) / 51)
         if (i_2_ == 3 && Class34.aFrame476 == null) {
-            Class34.aFrame476 = Class318_Sub1_Sub3_Sub4.method2463(i_3_, i_0_, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!), 0, 14199, 0)
+            Class34.aFrame476 = MapElementDecor.method2463(i_3_, i_0_, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!), 0, 14199, 0)
             if (Class34.aFrame476 != null) {
                 Class346.anInt4276 = i_0_
                 FlickeringEffectsOptionState.anInt5911 = i_3_

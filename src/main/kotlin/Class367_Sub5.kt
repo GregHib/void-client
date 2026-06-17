@@ -99,8 +99,8 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
             if (!aBoolean7326) {
                 this.aHa_Sub3_4479.method3850((-43).toByte(), (this.aHa_Sub3_4479.anInterface18_8147))
                 this.aHa_Sub3_4479.method3923(true, 1)
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class318_Sub1_Sub2.aClass70_8737)
-                this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aClass70_8737)
+                this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
                 aBoolean7326 = true
             }
         } else {
@@ -137,7 +137,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
         this.aHa_Sub3_4479.method3874(Class328_Sub3.aRenderConfigFactory_6519, 105, MediaStreamClient.aRenderConfigFactory_3196)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
         this.aHa_Sub3_4479.method3924(true, false, 2, Class342.aClass70_4247, false)
-        this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737)
+        this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
         this.aHa_Sub3_4479.method3897(0, -4382)
         method3528(106)
     }

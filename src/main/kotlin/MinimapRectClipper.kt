@@ -40,7 +40,7 @@ object MinimapRectClipper {
     }
 
     @JvmStatic
-    fun method227(class318_sub1: Class318_Sub1, bool: Boolean, bool_5_: Boolean) {
+    fun method227(class318_sub1: SceneEntity, bool: Boolean, bool_5_: Boolean) {
         class318_sub1.aBoolean6391 = bool_5_
         if (Class348_Sub40_Sub5.aBoolean9121) {
             if (bool) Class319.aCacheIndexManagerArray3982!![Class319.aCacheIndexManagerArray3982!!.size - 1]!!.method2353(class318_sub1, false)

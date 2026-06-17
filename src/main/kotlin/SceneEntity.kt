@@ -1,13 +1,13 @@
 /* Class318_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class318_Sub1 : Class318() {
+abstract class SceneEntity : SceneLinkedListNode() {
     @JvmField
     var aByte6376: Byte = 0
     @JvmField
     var x: Int = 0
     @JvmField
-    var aClass318_Sub1_6379: Class318_Sub1? = null
+    var aClass318_Sub1_6379: SceneEntity? = null
     @JvmField
     var anInt6380: Int = 0
     @JvmField
@@ -32,7 +32,7 @@ abstract class Class318_Sub1 : Class318() {
 
     abstract fun method2379(i: Int): Int
 
-    abstract fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1_0_: Class318_Sub1?, i_1_: Int, i_2_: Byte, i_3_: Int)
+    abstract fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1_0_: SceneEntity?, i_1_: Int, i_2_: Byte, i_3_: Int)
 
     abstract fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox?
 
@@ -40,7 +40,7 @@ abstract class Class318_Sub1 : Class318() {
 
     abstract fun method2384(class348_sub1s: Array<Class348_Sub1?>?, i: Int): Int
 
-    abstract fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4?
+    abstract fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel?
 
     abstract fun method2387(var_renderer: Renderer?, i: Int)
 
@@ -112,7 +112,7 @@ abstract class Class318_Sub1 : Class318() {
                     anInt6390++
                     val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_4_, 98.toByte())
                     if (i_7_ < -52) {
-                        if (class42 == null || !class42.aBoolean569 || !class42.method373((Class318_Sub1_Sub3_Sub3.Companion.aVarpStore_10209!!), 69)) break
+                        if (class42 == null || !class42.aBoolean569 || !class42.method373((ProjectedGroundDecor.Companion.aVarpStore_10209!!), 69)) break
                         if (class42.anIntArray591 != null) {
                             val `is` = (IntArray(class42.anIntArray591!!.size))
                             var i_9_ = 0

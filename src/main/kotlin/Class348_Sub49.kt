@@ -747,7 +747,7 @@ open class Class348_Sub49 : Class348 {
                     }
                 } else if (Class348_Sub23_Sub3.aString9043 == null) method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
                 else GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-99).toByte())
-                if (Class318_Sub1_Sub1_Sub2.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
+                if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
                     Class95.aClass45_1541!!.anInt634 = 2
                     VideoAdChecker.aClass45_3183!!.anInt634 = 2
                     Class94.aClass45_1538!!.anInt634 = 2
@@ -756,7 +756,7 @@ open class Class348_Sub49 : Class348 {
                     OpenGlRenderNode.aClass45_10480!!.anInt634 = 2
                     Class78.aClass45_1322!!.anInt634 = 2
                 }
-                if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (-119).toByte())) {
+                if (GroundDecorSceneEntity.method2402(i_71_, (-119).toByte())) {
                     ItemModelDefinition.anInt443 = 1
                     Class36.anInt489 = 0
                     Class348_Sub46.Companion.anInt7115 = 1
@@ -787,7 +787,7 @@ open class Class348_Sub49 : Class348 {
                         Class348_Sub4.aMediaStreamClient_6601!!.method1892(i xor 0x4b.inv(), true)
                     }
                 }
-                if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (-64).toByte()) || i_71_ == 13) Class348_Sub8.aRenderer6654!!.method3673()
+                if (GroundDecorSceneEntity.method2402(i_71_, (-64).toByte()) || i_71_ == 13) Class348_Sub8.aRenderer6654!!.method3673()
                 WorldMapRenderer.anInt4674 = i_71_
             }
         }

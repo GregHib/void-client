@@ -116,8 +116,8 @@ class TwoStateOptionState : GraphicsOptionState {
                     ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
                 }
                 Class348_Sub40_Sub21.anInt9282 = 2
-                Class318_Sub1_Sub5_Sub2.anInt10163 = -1
-                Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
+                SequencedWallEntity.anInt10163 = -1
+                Class9.anInt167 = SequencedWallEntity.anInt10163
             }
         }
 

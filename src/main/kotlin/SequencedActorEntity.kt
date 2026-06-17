@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub4_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub1_Sub4_Sub2 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int) : Class318_Sub1_Sub4(i_6_, i_7_, i_8_, i, i_5_, method868(i_9_, i_10_, false)), Interface10 {
+class SequencedActorEntity internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int) : ActorEntity(i_6_, i_7_, i_8_, i, i_5_, method868(i_9_, i_10_, false)), Interface10 {
     private var aBoolean10095 = false
     private var aBoolean10114 = false
     var aSceneObjectAnimator_10115: SceneObjectAnimator? = null
@@ -92,7 +92,7 @@ class Class318_Sub1_Sub4_Sub2 internal constructor(var_renderer: Renderer?, clas
         if (i != -14218) aBoolean10114 = true
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10111++
         val class64 = this.aSceneObjectAnimator_10115!!.method1668(false, true, i xor 0x7f.inv(), 2048, var_renderer)
         if (class64 == null) return null
@@ -150,7 +150,7 @@ class Class318_Sub1_Sub4_Sub2 internal constructor(var_renderer: Renderer?, clas
         return aBoolean10095
     }
 
-    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_14_: Int, i_15_: Byte, i_16_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_14_: Int, i_15_: Byte, i_16_: Int) {
         try {
             anInt10112++
             check(i_15_ >= -106)

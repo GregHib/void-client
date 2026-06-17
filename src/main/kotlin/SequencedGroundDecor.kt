@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub3_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub1_Sub3_Sub2 internal constructor(var_renderer: Renderer?, class51: Class51, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) : Class318_Sub1_Sub3(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, class51.anInt895 == 1, method1606(i_9_, -27939, i_8_)), Interface10 {
+class SequencedGroundDecor internal constructor(var_renderer: Renderer?, class51: Class51, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) : GroundDecorEntity(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, class51.anInt895 == 1, method1606(i_9_, -27939, i_8_)), Interface10 {
     var aSceneObjectAnimator_10045: SceneObjectAnimator? = null
     private var aCircleHitbox_10051: CircleHitbox? = null
     private var aBoolean10055 = false
@@ -78,7 +78,7 @@ class Class318_Sub1_Sub3_Sub2 internal constructor(var_renderer: Renderer?, clas
         this.aSceneObjectAnimator_10045!!.method1674(-1, var_renderer)
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10057++
         val class64 = this.aSceneObjectAnimator_10045!!.method1668(false, true, -127, 2048, var_renderer)
         if (class64 == null) return null
@@ -124,7 +124,7 @@ class Class318_Sub1_Sub3_Sub2 internal constructor(var_renderer: Renderer?, clas
         this.aSceneObjectAnimator_10045!!.method1667(116.toByte(), var_renderer)
     }
 
-    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_14_: Int, i_15_: Byte, i_16_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_14_: Int, i_15_: Byte, i_16_: Int) {
         try {
             anInt10054++
             if (i_15_ >= -106) method44(97, null)

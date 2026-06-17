@@ -10,7 +10,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub5_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) : Class318_Sub1_Sub5(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_), Interface10 {
+class ModelWallEntity internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) : WallEntity(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_), Interface10 {
     private val aByte10118: Byte
     private var aClass64_10124: Class64? = null
     private var aCircleHitbox_10127: CircleHitbox? = null
@@ -29,7 +29,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
         return class2.aClass64_119
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10122++
         if (aClass64_10124 == null) return null
         val class101 = var_renderer!!.method3705()

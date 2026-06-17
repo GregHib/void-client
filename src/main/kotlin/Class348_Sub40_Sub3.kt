@@ -66,7 +66,7 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
                 if (textureFormatInfo == Class348_Sub40_Sub38.Companion.aTextureFormatInfo_9471) return 6406
                 if (Class348_Sub40_Sub22.Companion.aTextureFormatInfo_9303 != textureFormatInfo) {
                     if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 6410
-                    if (textureFormatInfo == Class318.aTextureFormatInfo_3977) return 6145
+                    if (textureFormatInfo == SceneLinkedListNode.aTextureFormatInfo_3977) return 6145
                 } else return 6409
             } else return 6407
             throw IllegalStateException()

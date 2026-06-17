@@ -10,8 +10,8 @@ object MinimapStateReset {
     fun method1122(i: Int) {
         for (i_0_ in i..4) SpotAnimDefinition.aBooleanArray2374!![i_0_] = false
         anInt1870++
-        Class318_Sub1_Sub5_Sub2.anInt10163 = -1
-        Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
+        SequencedWallEntity.anInt10163 = -1
+        Class9.anInt167 = SequencedWallEntity.anInt10163
         Class348_Sub40_Sub21.anInt9282 = 1
         NativeShaderProgram.anInt9775 = -1
         BloomGraphicsOptionState.anInt5973 = 0

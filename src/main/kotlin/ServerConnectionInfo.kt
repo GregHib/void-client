@@ -78,7 +78,7 @@ class ServerConnectionInfo {
                 FrameBufferObject.anInt4889 = TexGenMaterialPass.anInt6248
                 if (FrameBufferObject.anInt4889 == 0) method3134(-1)
                 else {
-                    Class318_Sub1_Sub1.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137
+                    TileSceneEntity.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137
                     DelegatingRenderCanvas.anInt70 = LocTypeDefLoader.anInt2500
                     SceneryDetailOptionState.aCircleRasterizer_6098 = HeapInfoRecord.aCircleRasterizer_4938
                     Class64.aFloat1136 = TextureMetadataProvider.aFloat4626
@@ -86,7 +86,7 @@ class ServerConnectionInfo {
                     Class45.aFloat670 = Class348_Sub3.aFloat6586
                     GlTexture1D.aFloat8560 = RangedGraphicsOptionState.aFloat5945
                     ParticleEmitterFactory.aFloat3177 = Class361.aFloat4455
-                    Class318_Sub1_Sub3.anInt8739 = NativeIndexBuffer.anInt4703
+                    GroundDecorEntity.anInt8739 = NativeIndexBuffer.anInt4703
                     NoOpGraphicsOptionState.anInt6042 = Class36.anInt486
                 }
             }

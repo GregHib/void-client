@@ -110,8 +110,8 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
                 if (Class348_Sub42_Sub19.Companion.anInt9701 > 3072) Class348_Sub42_Sub19.Companion.anInt9701 = 3072
             }
             Class348_Sub40_Sub21.anInt9282 = 2
-            Class318_Sub1_Sub5_Sub2.anInt10163 = -1
-            Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
+            SequencedWallEntity.anInt10163 = -1
+            Class9.anInt167 = SequencedWallEntity.anInt10163
         }
 
         init {

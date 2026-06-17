@@ -10,12 +10,12 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
     private val anIntArray3627 = IntArray(64)
     private val anInterface5_Impl1_3630: Interface5_Impl1
     private var anIntArray3631: IntArray?
-    private val aClass318_Sub9_Sub2ArrayArray3632: Array<Array<Class318_Sub9_Sub2?>?>
+    private val aClass318_Sub9_Sub2ArrayArray3632: Array<Array<PositionedSceneNode?>?>
     private val anInterface5_Impl2_3635: Interface5_Impl2?
     private val anIntArray3636: IntArray
     private val aModelBatchBase_3637: ModelBatchBase
     private val anInterface5_Impl1_3638: Interface5_Impl1
-    private var aClass318_Sub9_Sub2ArrayArray3642: Array<Array<Class318_Sub9_Sub2?>?>?
+    private var aClass318_Sub9_Sub2ArrayArray3642: Array<Array<PositionedSceneNode?>?>?
     private fun method2098(var_ha_Sub3: NativeRenderer, i: Int, i_0_: Int) {
         anInt3629++
         Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093
@@ -58,7 +58,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                     val class318_sub9 = (class98!!.aClass88_1569.aClass318_Sub9_1503)
                     var class318_sub9_10_ = (class318_sub9!!.aClass318_Sub9_6469)
                     while (class318_sub9 !== class318_sub9_10_) {
-                        val class318_sub9_sub2 = class318_sub9_10_ as Class318_Sub9_Sub2
+                        val class318_sub9_sub2 = class318_sub9_10_ as PositionedSceneNode
                         val i_11_ = ((class318_sub9_sub2.anInt8791 shr 12).toFloat() * f + f_4_ * ((class318_sub9_sub2.anInt8796) shr 12).toFloat() + (class318_sub9_sub2.anInt8789 shr 12).toFloat() * f_5_ + f_6_).toInt()
                         if (i_9_ < i_11_) i_9_ = i_11_
                         anIntArray3631!![i_7_++] = i_11_
@@ -88,7 +88,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                         }
                         for (i_18_ in 0..63) anIntArray3627[i_18_] = 0
                         while ( /**/class318_sub9_14_ !== class318_sub9) {
-                            val class318_sub9_sub2 = class318_sub9_14_ as Class318_Sub9_Sub2
+                            val class318_sub9_sub2 = class318_sub9_14_ as PositionedSceneNode
                             if (bool_16_) {
                                 bool = class318_sub9_sub2.aBoolean8794
                                 i_15_ = class318_sub9_sub2.anInt8792
@@ -361,9 +361,9 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
     }
 
     init {
-        aClass318_Sub9_Sub2ArrayArray3632 = Array<Array<Class318_Sub9_Sub2?>?>(1600) { arrayOfNulls<Class318_Sub9_Sub2>(64) }
+        aClass318_Sub9_Sub2ArrayArray3632 = Array<Array<PositionedSceneNode?>?>(1600) { arrayOfNulls<PositionedSceneNode>(64) }
         anIntArray3631 = IntArray(8191)
-        aClass318_Sub9_Sub2ArrayArray3642 = Array<Array<Class318_Sub9_Sub2?>?>(64) { arrayOfNulls<Class318_Sub9_Sub2>(768) }
+        aClass318_Sub9_Sub2ArrayArray3642 = Array<Array<PositionedSceneNode?>?>(64) { arrayOfNulls<PositionedSceneNode>(768) }
         anIntArray3636 = IntArray(1600)
         aModelBatchBase_3637 = (var_ha_Sub3.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076, Class325.aClass325_4078)), Class58(Class325.aClass325_4075!!)))))
         anInterface5_Impl1_3638 = var_ha_Sub3.method3889(true, 16711680)

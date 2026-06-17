@@ -21,7 +21,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
             anInt7287++
             glBindProgramARB(34336, aTextureHandle_7293!!.anInt2584)
             glEnable(34336)
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class318_Sub1_Sub2.aClass70_8737)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aClass70_8737)
         }
     }
 
@@ -94,7 +94,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
         var anInt7297: Int = 0
 
         @JvmStatic
-        fun method3536(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, class318_sub1_sub2: Class318_Sub1_Sub2) {
+        fun method3536(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, class318_sub1_sub2: SceneObjectEntity) {
             val class357 = Class348_Sub46.method3321(i, i_0_, i_1_)
             if (class357 != null) {
                 class318_sub1_sub2.x = (i_0_ shl Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037

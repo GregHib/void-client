@@ -3,7 +3,7 @@ import ArchiveResourceProvider.Companion.method2348
 import InputStream_Sub1.Companion.method125
 import java.math.BigInteger
 
-abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) : Class318_Sub1() {
+abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) : SceneEntity() {
     var aShort8759: Short
     override fun method2384(class348_sub1s: Array<Class348_Sub1?>?, i: Int): Int {
         anInt8758++
@@ -15,16 +15,16 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
         else if (DisplayModeOptionState.anInt6111 < i_0_) i_3_ += 2
         if (i_1_ == GlIndexBufferArb.anInt8502) i_3_ += 3
         else if (i_1_ < GlIndexBufferArb.anInt8502) i_3_ += 6
-        val i_4_ = Class318_Sub9_Sub2.anIntArray8797!![i_3_]
+        val i_4_ = PositionedSceneNode.anIntArray8797!![i_3_]
         if ((this.aShort8759.toInt() and i_4_) != 0) return this.method2390(class348_sub1s!!, i_0_, -2, i_1_)
         if (this.aShort8759.toInt() == 1 && i_0_ > 0) return this.method2390(class348_sub1s!!, -1 + i_0_, -2, i_1_)
-        if (this.aShort8759.toInt() == 4 && i_0_ <= Class318_Sub7.anInt6451) return this.method2390(class348_sub1s!!, 1 + i_0_, -2, i_1_)
+        if (this.aShort8759.toInt() == 4 && i_0_ <= SpotAnimEntity.anInt6451) return this.method2390(class348_sub1s!!, 1 + i_0_, -2, i_1_)
         if (this.aShort8759.toInt() == 8 && i_1_ > 0) return this.method2390(class348_sub1s!!, i_0_, -2, -1 + i_1_)
         if (this.aShort8759.toInt() == 2 && i_1_ <= Class348_Sub41.anInt7054) return this.method2390(class348_sub1s!!, i_0_, -2, i_1_ + 1)
         if (this.aShort8759.toInt() == 16 && i_0_ > 0 && i_1_ <= Class348_Sub41.anInt7054) return this.method2390(class348_sub1s!!, -1 + i_0_, -2, i_1_ + 1)
-        if (this.aShort8759.toInt() == 32 && Class318_Sub7.anInt6451 >= i_0_ && Class348_Sub41.anInt7054 >= i_1_) return this.method2390(class348_sub1s!!, i_0_ + 1, -2, i_1_ + 1)
+        if (this.aShort8759.toInt() == 32 && SpotAnimEntity.anInt6451 >= i_0_ && Class348_Sub41.anInt7054 >= i_1_) return this.method2390(class348_sub1s!!, i_0_ + 1, -2, i_1_ + 1)
         if (this.aShort8759.toInt() == 128 && i_0_ > 0 && i_1_ > 0) return this.method2390(class348_sub1s!!, i_0_ - 1, -2, i_1_ - 1)
-        if (this.aShort8759.toInt() == 64 && i_0_ <= Class318_Sub7.anInt6451 && i_1_ > 0) return this.method2390(class348_sub1s!!, 1 + i_0_, -2, -1 + i_1_)
+        if (this.aShort8759.toInt() == 64 && i_0_ <= SpotAnimEntity.anInt6451 && i_1_ > 0) return this.method2390(class348_sub1s!!, 1 + i_0_, -2, -1 + i_1_)
         throw RuntimeException("")
     }
 
@@ -46,7 +46,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
     override fun method2378(i: Int): Boolean {
         anInt8757++
         if (i != 0) method2378(-104)
-        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + -GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459))])
+        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459) + NpcActorEntity.anInt10084)]!![(NpcActorEntity.anInt10084 + -GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459))])
     }
 
     companion object {

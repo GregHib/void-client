@@ -1,4 +1,4 @@
-import Class318_Sub4.Companion.method2502
+import SceneEntityModel.Companion.method2502
 import jaggl.OpenGL.Companion.glCompileShaderARB
 import jaggl.OpenGL.Companion.glCreateShaderObjectARB
 import jaggl.OpenGL.Companion.glDeleteObjectARB

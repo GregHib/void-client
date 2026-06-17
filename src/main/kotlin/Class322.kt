@@ -127,7 +127,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             aCacheLruCache_4036 = null
         }
 
-        fun method2556(bool: Boolean, i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3) {
+        fun method2556(bool: Boolean, i: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor) {
             anInt4028++
             var i_3_ = -1
             var i_4_ = 0

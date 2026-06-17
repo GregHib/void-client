@@ -104,9 +104,9 @@ class Class40 internal constructor() {
                 Class346.aBoolean4275 = bool
                 Class348_Sub43.anInt7068 = 1
                 ModelDefinition.aClass45_1848 = class45
-                Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_
+                NpcActorEntity.anInt10074 = i_1_
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-                Class318.anInt3971 = i_2_
+                SceneLinkedListNode.anInt3971 = i_2_
                 Class58.anInt1059 = i
                 WaterDetailOptionState.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564!!.method2844(103.toByte()) / i_3_)
                 if (WaterDetailOptionState.anInt5994 < 1) WaterDetailOptionState.anInt5994 = 1
@@ -133,7 +133,7 @@ class Class40 internal constructor() {
             CameraNodeList.aAbstractModelRendererArray1744 = null
             CompassSmoother.aAbstractModelRendererArray3378 = null
             Class59_Sub1.aAbstractModelRendererArray5294 = null
-            Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959 = null
+            WallSceneEntity.aAbstractModelRendererArray9959 = null
             anInt542++
         }
 

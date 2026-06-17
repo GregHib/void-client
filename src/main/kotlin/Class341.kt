@@ -3,7 +3,7 @@ import WaterDetailOptionState.Companion.method1779
 import ConfigFlagUtil.Companion.method1916
 import LocalizedText.Companion.method2061
 import TextureCubeProvider.Companion.method2269
-import Class318_Sub1_Sub3_Sub3.Companion.method2433
+import ProjectedGroundDecor.Companion.method2433
 import Class376.Companion.method3616
 import Class40.Companion.method369
 import Class50_Sub2.Companion.method464

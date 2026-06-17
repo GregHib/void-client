@@ -1,9 +1,9 @@
-import Class318_Sub7.Companion.method2510
+import SpotAnimEntity.Companion.method2510
 
 /* Class348_Sub42_Sub18 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class348_Sub42_Sub18 internal constructor(var aClass318_Sub1_Sub3_Sub5_9682: Class318_Sub1_Sub3_Sub5?) : Class348_Sub42() {
+class Class348_Sub42_Sub18 internal constructor(var aClass318_Sub1_Sub3_Sub5_9682: TrackedGroundDecor?) : Class348_Sub42() {
     companion object {
         var anInt9681: Int = 0
         var anInt9683: Int = 0

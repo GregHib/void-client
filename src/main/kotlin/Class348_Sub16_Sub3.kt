@@ -1051,7 +1051,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         }
 
         @JvmStatic
-        fun method2878(i: Int, i_103_: Int, i_104_: Int): Class318_Sub1_Sub1? {
+        fun method2878(i: Int, i_103_: Int, i_104_: Int): TileSceneEntity? {
             val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_103_]!![i_104_]
             if (class357 == null || class357.aClass318_Sub1_Sub1_4402 == null) return null
             return class357.aClass318_Sub1_Sub1_4402

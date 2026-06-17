@@ -1,4 +1,4 @@
-import Class318_Sub1_Sub3.Companion.method2408
+import GroundDecorEntity.Companion.method2408
 
 /* Class147 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -34,7 +34,7 @@ class HintArrowOrMessage internal constructor(i: Int, i_0_: Int, string: String?
 
     fun method1196(i: Int, i_6_: Int, string: String?, string_7_: String?, string_8_: String?, i_9_: Int, i_10_: Int, string_11_: String?, string_12_: String?) {
         try {
-            this.anInt2031 = Class318_Sub1_Sub3.method2408((-91).toByte())
+            this.anInt2031 = GroundDecorEntity.method2408((-91).toByte())
             anInt2036++
             this.aString2033 = string_7_
             this.aString2024 = string_11_

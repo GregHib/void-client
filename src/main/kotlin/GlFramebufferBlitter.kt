@@ -1,4 +1,4 @@
-import Class318_Sub1.Companion.method2383
+import SceneEntity.Companion.method2383
 import jaggl.OpenGL.Companion.glBegin
 import jaggl.OpenGL.Companion.glBlitFramebufferEXT
 import jaggl.OpenGL.Companion.glEnd

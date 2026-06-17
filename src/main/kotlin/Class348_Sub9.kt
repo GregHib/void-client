@@ -80,7 +80,7 @@ class Class348_Sub9 : Class348() {
                     if (i_12_ != i_11_) {
                         this.anInt6685 = i_12_
                         var class79 = (this.aNpc_6691!!.aClass79_10505)
-                        if (class79!!.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1)
+                        if (class79!!.anIntArray1377 != null) class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1)
                         if (class79 == null) {
                             this.anInt6694 = 0
                             this.anInt6677 = this.anInt6694
@@ -97,7 +97,7 @@ class Class348_Sub9 : Class348() {
                     }
                 }
             } else {
-                val class51 = (this.aClass51_6695!!.method480(Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!, 47.toByte()))
+                val class51 = (this.aClass51_6695!!.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte()))
                 if (class51 == null) {
                     this.anInt6681 = 256
                     this.aBoolean6674 = false
@@ -144,13 +144,13 @@ class Class348_Sub9 : Class348() {
         var anInt6690: Int = 0
 
         @JvmStatic
-        fun method2778(class318_sub1: Class318_Sub1, bool: Boolean, `is`: Array<Array<ByteArray?>?>?, i: Int, i_0_: Byte): Boolean {
+        fun method2778(class318_sub1: SceneEntity, bool: Boolean, `is`: Array<Array<ByteArray?>?>?, i: Int, i_0_: Byte): Boolean {
             if (!Class348_Sub40_Sub17.aBoolean9242) return false
             var i_1_ = class318_sub1.x shr Class362.anInt4459
             var i_2_ = i_1_
             var i_3_ = class318_sub1.y shr Class362.anInt4459
             var i_4_ = i_3_
-            if (class318_sub1 is Class318_Sub1_Sub3) {
+            if (class318_sub1 is GroundDecorEntity) {
                 i_2_ = (class318_sub1.aShort8751).toInt()
                 i_4_ = (class318_sub1.aShort8747).toInt()
                 i_1_ = (class318_sub1.aShort8743).toInt()

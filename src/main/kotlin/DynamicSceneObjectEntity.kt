@@ -6,7 +6,7 @@ import kotlin.math.min
 /* Class318_Sub1_Sub2_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) : Class318_Sub1_Sub2(i, i_3_, i_4_, i_5_, i_6_) {
+class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) : SceneObjectEntity(i, i_3_, i_4_, i_5_, i_6_) {
     var anInt10180: Int = -1
     var anInt10181: Int = 0
     private var anInt10184 = 0
@@ -69,7 +69,7 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
         return false
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4 {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel {
         if (i != 1) method2386(60, null)
         anInt10179++
         val class148 = method1449(this.plane.toInt(), (this.x shr Class362.anInt4459), (this.y shr Class362.anInt4459))

@@ -25,7 +25,7 @@ class Class348_Sub35 : Class348 {
             else {
                 Class348_Sub46.method3319(Class348_Sub8.aRenderer6654, (-121).toByte())
                 if (i.toInt() != 33) method3028(-79)
-                if (Class318_Sub1_Sub3_Sub5.anInt10395 != Class355.anInt4372) Class348_Sub40_Sub9.method3072((-96).toByte())
+                if (TrackedGroundDecor.anInt10395 != Class355.anInt4372) Class348_Sub40_Sub9.method3072((-96).toByte())
             }
         }
 

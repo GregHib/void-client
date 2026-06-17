@@ -42,7 +42,7 @@ class Class348_Sub40_Sub36 : Class348_Sub40(0, true) {
             val i_4_ = -2048 + i_3_ shr 1
             var i_5_ = 0
             while ((i_5_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
-                val i_6_ = Class318_Sub6.anIntArray6432!![i_5_]
+                val i_6_ = SceneEffectMarker.anIntArray6432!![i_5_]
                 val i_7_ = -2048 + i_6_ shr 1
                 var i_8_: Int
                 if (anInt9451 == 0) i_8_ = anInt9453 * (-i_3_ + i_6_)

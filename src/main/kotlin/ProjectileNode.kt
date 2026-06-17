@@ -4,7 +4,7 @@ import kotlin.math.sqrt
 /* Class318_Sub9_Sub2_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Class318_Sub7, i: Int, i_65_: Int, i_66_: Int, i_67_: Int, i_68_: Int, i_69_: Int, i_70_: Int, i_71_: Int, i_72_: Int, i_73_: Int, i_74_: Int, bool: Boolean, bool_75_: Boolean) : Class318_Sub9_Sub2() {
+class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEntity, i: Int, i_65_: Int, i_66_: Int, i_67_: Int, i_68_: Int, i_69_: Int, i_70_: Int, i_71_: Int, i_72_: Int, i_73_: Int, i_74_: Int, bool: Boolean, bool_75_: Boolean) : PositionedSceneNode() {
     private var aShort10416: Short = 0
     private var anInt10417 = 0
     private var aShort10418: Short
@@ -35,7 +35,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
         val i = this.anInt8791 shr 12 + Class362.anInt4459
         val i_0_ = this.anInt8789 shr 12 + Class362.anInt4459
         val i_1_ = this.anInt8796 shr 12
-        if (i_1_ > 0 || i_1_ < -262144 || i < 0 || i >= Class318_Sub7.Companion.anInt6451 || i_0_ < 0 || i_0_ >= Class348_Sub41.anInt7054) method2520()
+        if (i_1_ > 0 || i_1_ < -262144 || i < 0 || i >= SpotAnimEntity.Companion.anInt6451 || i_0_ < 0 || i_0_ >= Class348_Sub41.anInt7054) method2520()
         else {
             val class318_sub10 = (this.aClass318_Sub7_10419.aClass318_Sub10_6439)!!
             val class181 = (this.aClass318_Sub7_10419.aSpotAnimDefinition_6441)!!
@@ -131,7 +131,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
         }
     }
 
-    fun method2523(class318_sub7: Class318_Sub7, i: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, bool_19_: Boolean) {
+    fun method2523(class318_sub7: SpotAnimEntity, i: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, bool_19_: Boolean) {
         this.aClass318_Sub7_10419 = class318_sub7
         this.anInt8791 = i shl 12
         this.anInt8796 = i_9_ shl 12

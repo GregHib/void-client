@@ -67,7 +67,7 @@ class RemoveRoofsOptionState : GraphicsOptionState {
         @JvmField
         var anInt6065: Int = 0
         @JvmField
-        var aClass318_Sub1Array6066: Array<Class318_Sub1?>? = null
+        var aClass318_Sub1Array6066: Array<SceneEntity?>? = null
         @JvmField
         var anInt6067: Int = 0
         @JvmField

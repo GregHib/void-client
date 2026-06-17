@@ -3,11 +3,11 @@ import Class33.Companion.method340
 /* Class318_Sub4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub4 : Class318() {
+class SceneEntityModel : SceneLinkedListNode() {
     var aBoolean6409: Boolean = false
-    var aClass318_Sub1_6410: Class318_Sub1? = null
+    var aClass318_Sub1_6410: SceneEntity? = null
     @JvmField
-    var aClass318_Sub3Array6414: Array<Class318_Sub3?>? = null
+    var aClass318_Sub3Array6414: Array<SceneOcculder?>? = null
 
     fun method2504(i: Int, i_32_: Int, var_renderer: Renderer?, i_33_: Int): Boolean {
         if (i_33_ >= -37) method2502(null, -82)

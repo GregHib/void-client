@@ -845,7 +845,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
                     if (Class348_Sub40_Sub38.aTextureFormatInfo_9471 == textureFormatInfo) return 28
                     if (Class348_Sub40_Sub22.aTextureFormatInfo_9303 == textureFormatInfo) return 50
                     if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 51
-                    if (textureFormatInfo == Class318.aTextureFormatInfo_3977) return 77
+                    if (textureFormatInfo == SceneLinkedListNode.aTextureFormatInfo_3977) return 77
                 } else return 22
             }
             if (i != 22) anIntArray9790 = null
@@ -856,7 +856,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             if (i != 2) aFloatArray9797 = null
             if (Class342.aClass70_4247 == class70) return 2
             if (class70 == GlIndexBufferArb.aClass70_8503) return 0
-            if (Class318_Sub1_Sub2.aClass70_8737 != class70) {
+            if (SceneObjectEntity.aClass70_8737 != class70) {
                 if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 3
             } else return 1
             throw IllegalArgumentException()

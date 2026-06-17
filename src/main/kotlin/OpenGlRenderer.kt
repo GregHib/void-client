@@ -3551,13 +3551,13 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             var i_322_ = 0
             while ((i_322_ < ModelDefinitionLoader.anInt2057 + i_321_)) {
                 var class79: Class79? = null
-                val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3
+                val class318_sub1_sub3_sub3: ProjectedGroundDecor
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_322_]]!!)
                 else {
                     class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as Class348_Sub22).aNpc_6859!!)
                     class79 = class318_sub1_sub3_sub3.aClass79_10505!!
                     if (class79.anIntArray1377 != null) {
-                        class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), i_316_ + -3)
+                        class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), i_316_ + -3)
                         if (class79 == null) {
                             i_322_++
                             continue
@@ -3670,7 +3670,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 val player = (class318_sub1_sub3_sub3 as Player)
                                 if (player.anInt10540 != -1) {
                                     i_323_ -= 25
-                                    val class105 = (Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959!![(player.anInt10540)])!!
+                                    val class105 = (WallSceneEntity.aAbstractModelRendererArray9959!![(player.anInt10540)])!!
                                     class105.method974((-12 + i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0])), i_323_)
                                     Class338.method2663(-5590, i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -12), (i_317_ - -RemoveRoofsOptionState.anIntArray6062!![0] + (-12 + class105.method966())), i_323_, i_323_ + class105.method980())
                                     i_323_ -= 2
@@ -4005,11 +4005,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             }
             for (i_433_ in 0..<Class45.anInt669) {
                 val i_434_ = GlTexture1D.anIntArray8557!![i_433_]
-                val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
+                val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? Class348_Sub22)?.aNpc_6859)
                 else class318_sub1_sub3_sub3 = LoadingBarRenderer.aPlayerArray5058!![i_434_]
                 val i_435_ = LocDefinitionCache.anIntArray3432!![i_433_]
-                val class318_sub1_sub3_sub3_436_: Class318_Sub1_Sub3_Sub3?
+                val class318_sub1_sub3_sub3_436_: ProjectedGroundDecor?
                 if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((NpcEntityUpdater.aClass356_3654!!.method3480((-2048 + i_435_).toLong(), -6008) as? Class348_Sub22)?.aNpc_6859)
                 else class318_sub1_sub3_sub3_436_ = LoadingBarRenderer.aPlayerArray5058!![i_435_]
                 SpriteSheetCache.method1430(--class318_sub1_sub3_sub3!!.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)

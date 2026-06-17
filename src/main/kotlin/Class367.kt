@@ -57,15 +57,15 @@ abstract class Class367 internal constructor(var aHa_Sub3_4479: NativeRenderer) 
         var anInt4485: Int = 0
 
         @JvmStatic
-        fun method3529(i: Int): Class318_Sub6 {
+        fun method3529(i: Int): SceneEffectMarker {
             anInt4478++
-            val class318_sub6 = Class62.aDoublyLinkedNodeList_1114!!.method1875(60) as Class318_Sub6?
+            val class318_sub6 = Class62.aDoublyLinkedNodeList_1114!!.method1875(60) as SceneEffectMarker?
             if (i != 32564) method3529(-38)
             if (class318_sub6 != null) {
                 Class365.anInt4474--
                 return class318_sub6
             }
-            return Class318_Sub6()
+            return SceneEffectMarker()
         }
     }
 }

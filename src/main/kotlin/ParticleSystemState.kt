@@ -142,7 +142,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
         }
 
         @JvmStatic
-        fun method1295(class318_sub1s: Array<Class318_Sub1?>, i: Int, i_1_: Int) {
+        fun method1295(class318_sub1s: Array<SceneEntity?>, i: Int, i_1_: Int) {
             if (i < i_1_) {
                 val i_2_ = (i + i_1_) / 2
                 var i_3_ = i
@@ -152,7 +152,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
                 val i_4_ = class318_sub1.anInt6389
                 for (i_5_ in i..<i_1_) {
                     if (class318_sub1s[i_5_]!!.anInt6389 < i_4_ + (i_5_ and 0x1)) {
-                        val class318_sub1_6_: Class318_Sub1? = class318_sub1s[i_5_]
+                        val class318_sub1_6_: SceneEntity? = class318_sub1s[i_5_]
                         class318_sub1s[i_5_] = class318_sub1s[i_3_]
                         class318_sub1s[i_3_++] = class318_sub1_6_!!
                     }

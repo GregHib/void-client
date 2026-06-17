@@ -115,7 +115,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
         fun method205(i: Int, i_25_: Int, i_26_: Int, string: String?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int) {
             try {
                 anInt147++
-                val class318_sub5 = Class318_Sub5()
+                val class318_sub5 = SceneTextLabel()
                 class318_sub5.anInt6419 = i_25_
                 class318_sub5.anInt6418 = i_30_
                 class318_sub5.anInt6422 = i_29_

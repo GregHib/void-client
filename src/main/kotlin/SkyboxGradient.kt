@@ -18,7 +18,7 @@ object SkyboxGradient {
 
     @JvmStatic
     fun method2334(i: Int) {
-        Class318_Sub1_Sub3_Sub4.anInt10340++
+        MapElementDecor.anInt10340++
         if (i != 0) method2333(true)
         anInt3933++
         val class348_sub47 = method2148(RasterSprite.aClass351_5200, Class348_Sub23_Sub2.aClass77_9029, i xor 0x53.inv())

@@ -91,7 +91,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
         }
 
         @JvmStatic
-        fun method1600(bool: Boolean, i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3) {
+        fun method1600(bool: Boolean, i: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor) {
             anInt2867++
             val class225 = class318_sub1_sub3_sub3.method2422(72.toByte())
             if (class318_sub1_sub3_sub3.anInt10319 == 0) {

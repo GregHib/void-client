@@ -77,7 +77,7 @@ class DisplayModeOptionState : GraphicsOptionState {
         @JvmField
         var anInt6102: Int = 0
         @JvmField
-        var aClass318_Sub9_Sub2_Sub1Array6103: Array<Class318_Sub9_Sub2_Sub1?>? = null
+        var aClass318_Sub9_Sub2_Sub1Array6103: Array<ProjectileNode?>? = null
         @JvmField
         var anInt6104: Int = 0
         @JvmField
@@ -97,7 +97,7 @@ class DisplayModeOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1825(i: Int, i_3_: Int, i_4_: Int) {
             anInt6102++
-            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(0, 105.toByte(), 15)
+            val class348_sub42_sub15 = NamedTimedNode.method2516(0, 105.toByte(), 15)
             class348_sub42_sub15.method3246(-25490)
             class348_sub42_sub15.anInt9652 = i_4_
             class348_sub42_sub15.anInt9651 = i_3_

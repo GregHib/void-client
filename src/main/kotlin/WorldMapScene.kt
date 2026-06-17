@@ -4,7 +4,7 @@ import MapSceneDefLoader.Companion.method1394
 import LoadingScreenState.Companion.method1457
 import GraphicsOptionState.Companion.method1709
 import GlTexture2D.Companion.method1968
-import Class318_Sub1_Sub5.Companion.method2483
+import WallEntity.Companion.method2483
 import Class324.Companion.method2570
 import Class348_Sub45.Companion.method3313
 import Class367_Sub8.Companion.method3547
@@ -805,7 +805,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
             val `is` = (Array<IntArray?>(this.anInt3117) { IntArray(this.anInt3114) })
             if (i <= -122) {
                 if (Class348_Sub24.anIntArray6878 == null || (this.anInt3114 != Class348_Sub24.anIntArray6878!!.size)) {
-                    Class318_Sub9_Sub1.anIntArray8785 = IntArray(this.anInt3114)
+                    NamedTimedNode.anIntArray8785 = IntArray(this.anInt3114)
                     Class348_Sub40_Sub6.anIntArray9135 = IntArray(this.anInt3114)
                     SplashImageLoadable.anIntArray4692 = IntArray(this.anInt3114)
                     Class348_Sub24.anIntArray6878 = IntArray(this.anInt3114)
@@ -819,7 +819,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                         Class348_Sub40_Sub6.anIntArray9135!![i_181_] = 0
                         Class348_Sub8.anIntArray6655!![i_181_] = 0
                         SplashImageLoadable.anIntArray4692!![i_181_] = 0
-                        Class318_Sub9_Sub1.anIntArray8785!![i_181_] = 0
+                        NamedTimedNode.anIntArray8785!![i_181_] = 0
                         i_181_++
                     }
                     for (i_182_ in -5..<this.anInt3117) {
@@ -834,7 +834,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     Class348_Sub40_Sub6.anIntArray9135!![i_183_] += class22.anInt332
                                     Class348_Sub8.anIntArray6655!![i_183_] += class22.anInt335
                                     SplashImageLoadable.anIntArray4692!![i_183_] += class22.anInt343
-                                    Class318_Sub9_Sub1.anIntArray8785!![i_183_]++
+                                    NamedTimedNode.anIntArray8785!![i_183_]++
                                 }
                             }
                             val i_186_ = i_182_ - 5
@@ -846,7 +846,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     Class348_Sub40_Sub6.anIntArray9135!![i_183_] -= class22.anInt332
                                     Class348_Sub8.anIntArray6655!![i_183_] -= class22.anInt335
                                     SplashImageLoadable.anIntArray4692!![i_183_] -= class22.anInt343
-                                    Class318_Sub9_Sub1.anIntArray8785!![i_183_]--
+                                    NamedTimedNode.anIntArray8785!![i_183_]--
                                 }
                             }
                             i_183_++
@@ -864,7 +864,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     i_190_ += (Class348_Sub8.anIntArray6655!![i_194_])
                                     i_189_ += (Class348_Sub40_Sub6.anIntArray9135!![i_194_])
                                     i_188_ += (Class348_Sub24.anIntArray6878!![i_194_])
-                                    i_192_ += (Class318_Sub9_Sub1.anIntArray8785!![i_194_])
+                                    i_192_ += (NamedTimedNode.anIntArray8785!![i_194_])
                                     i_191_ += SplashImageLoadable.anIntArray4692!![i_194_]
                                 }
                                 val i_195_ = i_193_ + -5
@@ -872,7 +872,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     i_191_ -= SplashImageLoadable.anIntArray4692!![i_195_]
                                     i_188_ -= (Class348_Sub24.anIntArray6878!![i_195_])
                                     i_190_ -= (Class348_Sub8.anIntArray6655!![i_195_])
-                                    i_192_ -= (Class318_Sub9_Sub1.anIntArray8785!![i_195_])
+                                    i_192_ -= (NamedTimedNode.anIntArray8785!![i_195_])
                                     i_189_ -= (Class348_Sub40_Sub6.anIntArray9135!![i_195_])
                                 }
                                 if (i_193_ >= 0 && i_191_ > 0 && i_192_ > 0) `is`[i_182_]!![i_193_] = VideoAdChecker.method1890(i_190_ / i_192_, 66.toByte(), i_189_ / i_192_, (256 * i_188_ / i_191_))
@@ -960,7 +960,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 if (i_221_ == 0) {
                     if (this.aBoolean3109) this.anIntArrayArrayArray3122[0]!![i_214_ + i_216_]!![i + i_212_] = 0
                     else if (i_219_ != 0) this.anIntArrayArrayArray3122[i_219_]!![i_214_ + i_216_]!![i + i_212_] = -960 + (this.anIntArrayArrayArray3122[-1 + i_219_]!![i_214_ + i_216_]!![i + i_212_])
-                    else this.anIntArrayArrayArray3122[0]!![i_214_ + i_216_]!![i_212_ - -i] = (8 * -(Class318_Sub1_Sub3_Sub4.method2462(-113, i_217_ + 932731, i_218_ + 556238)) shl 2)
+                    else this.anIntArrayArrayArray3122[0]!![i_214_ + i_216_]!![i_212_ - -i] = (8 * -(MapElementDecor.method2462(-113, i_217_ + 932731, i_218_ + 556238)) shl 2)
                     break
                 }
                 if (i_221_ == 1) {

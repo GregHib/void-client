@@ -227,7 +227,7 @@ class Class34 {
 
         fun method350(i: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int) {
             anInt466++
-            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_36_, 105.toByte(), 10)
+            val class348_sub42_sub15 = NamedTimedNode.method2516(i_36_, 105.toByte(), 10)
             class348_sub42_sub15.method3246(-25490)
             class348_sub42_sub15.anInt9651 = i_34_
             val i_38_ = 112 % ((i_35_ - 76) / 44)

@@ -97,8 +97,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f = (0.3333333f * ((anIntArray5511!![class353.anInt4349]) - -(anIntArray5511!![class353.anInt4344]) + (anIntArray5511!![class353.anInt4339])).toFloat())
                     val f_1_ = (0.3333333f * ((anIntArray5519!![class353.anInt4344]) + (anIntArray5519!![class353.anInt4349]) + (anIntArray5519!![class353.anInt4339])).toFloat())
                     val f_2_ = (0.3333333f * ((anIntArray5429!![class353.anInt4339]) + (anIntArray5429!![class353.anInt4344]) + (anIntArray5429!![class353.anInt4349])).toFloat())
-                    val f_3_ = (f_2_ * Class348_Sub42_Sub4.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * Class318_Sub1_Sub2_Sub1.aFloat10199) + Class345.aFloat4268)
-                    val f_4_ = (Class348_Sub12.aFloat6752 + (Class318_Sub6.aFloat6430 * f_2_ + (Class348_Sub20.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
+                    val f_3_ = (f_2_ * Class348_Sub42_Sub4.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + Class345.aFloat4268)
+                    val f_4_ = (Class348_Sub12.aFloat6752 + (SceneEffectMarker.aFloat6430 * f_2_ + (Class348_Sub20.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
                     val f_5_ = WorldMapRenderer.aFloat4673 + (Class353.aFloat4338 * f_1_ + f * Class328_Sub3.aFloat6523 + f_2_ * Renderer.aFloat4582)
                     val f_6_ = ((1.0 / sqrt((f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_)).toDouble())).toFloat() * class353.anInt4347.toFloat())
                     val class101_sub2 = aHa_Sub3_5419!!.method3934(-96)
@@ -113,8 +113,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
                 i_0_++
             }
-            aHa_Sub3_5419!!.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737)
-            aHa_Sub3_5419!!.method3849(47.toByte(), 1, Class318_Sub1_Sub2.aClass70_8737)
+            aHa_Sub3_5419!!.method3885(1, true, SceneObjectEntity.aClass70_8737)
+            aHa_Sub3_5419!!.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
             aHa_Sub3_5419!!.C(true)
         }
         if (i < 70) ia(112.toShort(), 86.toShort())
@@ -351,11 +351,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             Class328_Sub3.aFloat6523 = ((class101_sub2.aFloat5736 * class101_sub2_34_.aFloat5716) + ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5736)))
             BufferToggleState.aFloat3710 = ((class101_sub2.aFloat5722 * class101_sub2_34_.aFloat5722) + (class101_sub2_34_.aFloat5708 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5691))
             Renderer.aFloat4582 = ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5736) + (class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5716))
-            Class318_Sub1_Sub2_Sub1.aFloat10199 = ((class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5704) + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5722)))
+            DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5704) + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5722)))
             Class348_Sub20.aFloat6835 = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5736) + ((class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5708 * class101_sub2_34_.aFloat5722)))
             Class55.aFloat1010 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5736) + ((class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5711)))
             val f_36_ = (class101_sub2_34_.aFloat5724 + ((class101_sub2_34_.aFloat5716 * class101_sub2.aFloat5724) + ((class101_sub2_34_.aFloat5736 * class101_sub2.aFloat5729) + (class101_sub2.aFloat5710 * (class101_sub2_34_.aFloat5691)))))
-            Class318_Sub6.aFloat6430 = ((class101_sub2_34_.aFloat5722 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5732))
+            SceneEffectMarker.aFloat6430 = ((class101_sub2_34_.aFloat5722 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5732))
             Class353.aFloat4338 = ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5722) + (class101_sub2.aFloat5700 * class101_sub2_34_.aFloat5736) + (class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5716))
             var bool_37_ = false
             var f_38_ = 3.4028235E38f
@@ -406,8 +406,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 val f_57_ = OpenGlTerrainTile.anIntArray8269!![i_56_].toFloat()
                 val f_58_ = Class363.anIntArray4463!![i_56_].toFloat()
                 val f_59_ = Class348_Sub42_Sub12.anIntArray9612!![i_56_].toFloat()
-                val f_60_ = (f_57_ * Class348_Sub20.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + Class318_Sub6.aFloat6430 * f_58_ + f_35_)
-                val f_61_ = (Class55.aFloat1010 * f_57_ + f_59_ * Class318_Sub1_Sub2_Sub1.aFloat10199 + f_58_ * Class348_Sub42_Sub4.aFloat9516 + f)
+                val f_60_ = (f_57_ * Class348_Sub20.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + SceneEffectMarker.aFloat6430 * f_58_ + f_35_)
+                val f_61_ = (Class55.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntity.aFloat10199 + f_58_ * Class348_Sub42_Sub4.aFloat9516 + f)
                 var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (Class353.aFloat4338 * f_59_ + Class328_Sub3.aFloat6523 * f_57_))
                 if (f_62_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                     if (i_31_ > 0) f_62_ = i_31_.toFloat()
@@ -422,17 +422,17 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             }
             if (bool_37_ && f_38_ < i.toFloat() && f_39_ > i.toFloat() && f_40_ < i_33_.toFloat() && f_41_ > i_33_.toFloat()) {
                 if (bool) return true
-                if (anInt5475 > Class318_Sub1_Sub1_Sub1.anIntArray9949!!.size) {
+                if (anInt5475 > WallSceneEntity.anIntArray9949!!.size) {
                     AbstractCameraTransform.anIntArray1593 = IntArray(anInt5475)
-                    Class318_Sub1_Sub1_Sub1.anIntArray9949 = IntArray(anInt5475)
+                    WallSceneEntity.anIntArray9949 = IntArray(anInt5475)
                 }
                 for (i_65_ in 0..<anInt5433) {
                     val f_66_ = anIntArray5429!![i_65_].toFloat()
                     val f_67_ = anIntArray5519!![i_65_].toFloat()
                     val f_68_ = anIntArray5511!![i_65_].toFloat()
                     var f_69_ = (Renderer.aFloat4582 * f_66_ + (f_68_ * Class328_Sub3.aFloat6523 + Class353.aFloat4338 * f_67_) + f_36_)
-                    val f_70_ = f + (Class318_Sub1_Sub2_Sub1.aFloat10199 * f_67_ + Class55.aFloat1010 * f_68_ + f_66_ * Class348_Sub42_Sub4.aFloat9516)
-                    val f_71_ = (Class318_Sub6.aFloat6430 * f_66_ + (f_68_ * Class348_Sub20.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
+                    val f_70_ = f + (DynamicSceneObjectEntity.aFloat10199 * f_67_ + Class55.aFloat1010 * f_68_ + f_66_ * Class348_Sub42_Sub4.aFloat9516)
+                    val f_71_ = (SceneEffectMarker.aFloat6430 * f_66_ + (f_68_ * Class348_Sub20.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
                     if (f_69_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                         if (i_31_ > 0) f_69_ = i_31_.toFloat()
                         val i_72_ = (i_42_.toFloat() * f_70_ / f_69_ + (aHa_Sub3_5419!!.anInt8094).toFloat()).toInt()
@@ -442,7 +442,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         for (i_76_ in i_74_..<i_75_) {
                             val i_77_ = -1 + aShortArray5439!![i_76_]
                             if (i_77_ == -1) break
-                            Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_77_] = i_72_
+                            WallSceneEntity.anIntArray9949!![i_77_] = i_72_
                             AbstractCameraTransform.anIntArray1593!![i_77_] = i_73_
                         }
                     } else {
@@ -452,22 +452,22 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         while (i_79_ > i_80_) {
                             val i_81_ = aShortArray5439!![i_80_] + -1
                             if (i_81_ == -1) break
-                            Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5439!![i_80_] - 1] = -999999
+                            WallSceneEntity.anIntArray9949!![aShortArray5439!![i_80_] - 1] = -999999
                             i_80_++
                         }
                     }
                 }
                 var i_82_ = 0
                 while (anInt5478 > i_82_) {
-                    if ((Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5508!![i_82_].toInt()]) != -999999 && (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5495!![i_82_].toInt()]) != -999999 && (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5512!![i_82_].toInt()]) != -999999 && method671(
+                    if ((WallSceneEntity.anIntArray9949!![aShortArray5508!![i_82_].toInt()]) != -999999 && (WallSceneEntity.anIntArray9949!![aShortArray5495!![i_82_].toInt()]) != -999999 && (WallSceneEntity.anIntArray9949!![aShortArray5512!![i_82_].toInt()]) != -999999 && method671(
                             i,
-                            (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5512!![i_82_].toInt()]),
-                            (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5495!![i_82_].toInt()]),
+                            (WallSceneEntity.anIntArray9949!![aShortArray5512!![i_82_].toInt()]),
+                            (WallSceneEntity.anIntArray9949!![aShortArray5495!![i_82_].toInt()]),
                             (AbstractCameraTransform.anIntArray1593!![aShortArray5512!![i_82_].toInt()]),
                             (AbstractCameraTransform.anIntArray1593!![aShortArray5508!![i_82_].toInt()]),
                             i_33_,
                             0,
-                            (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5508!![i_82_].toInt()]),
+                            (WallSceneEntity.anIntArray9949!![aShortArray5508!![i_82_].toInt()]),
                             (AbstractCameraTransform.anIntArray1593!![aShortArray5495!![i_82_].toInt()])
                         )
                     ) return true
@@ -778,9 +778,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
 
     private fun method665(i: Int, var_r_Sub1: NativeRenderNode) {
         try {
-            if (anInt5475 > Class318_Sub1_Sub1_Sub1.anIntArray9949!!.size) {
+            if (anInt5475 > WallSceneEntity.anIntArray9949!!.size) {
                 AbstractCameraTransform.anIntArray1593 = IntArray(anInt5475)
-                Class318_Sub1_Sub1_Sub1.anIntArray9949 = IntArray(anInt5475)
+                WallSceneEntity.anIntArray9949 = IntArray(anInt5475)
             }
             anInt5453++
             if (i >= 0) {
@@ -793,7 +793,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     for (i_128_ in i_126_..<i_127_) {
                         val i_129_ = aShortArray5439!![i_128_] - 1
                         if (i_129_ == -1) break
-                        Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_129_] = i_124_
+                        WallSceneEntity.anIntArray9949!![i_129_] = i_124_
                         AbstractCameraTransform.anIntArray1593!![i_129_] = i_125_
                     }
                     i_123_++
@@ -804,9 +804,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         val i_131_ = aShortArray5508!![i_130_]
                         val i_132_ = aShortArray5495!![i_130_]
                         val i_133_ = aShortArray5512!![i_130_]
-                        val i_134_ = Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_131_.toInt()]
-                        val i_135_ = Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_132_.toInt()]
-                        val i_136_ = Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_133_.toInt()]
+                        val i_134_ = WallSceneEntity.anIntArray9949!![i_131_.toInt()]
+                        val i_135_ = WallSceneEntity.anIntArray9949!![i_132_.toInt()]
+                        val i_136_ = WallSceneEntity.anIntArray9949!![i_133_.toInt()]
                         val i_137_ = AbstractCameraTransform.anIntArray1593!![i_131_.toInt()]
                         val i_138_ = AbstractCameraTransform.anIntArray1593!![i_132_.toInt()]
                         val i_139_ = AbstractCameraTransform.anIntArray1593!![i_133_.toInt()]
@@ -1239,7 +1239,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         return anInt5418
     }
 
-    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_179_: Int) {
+    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int, i_179_: Int) {
         try {
             anInt5487++
             if (anInt5475 != 0) {
@@ -1260,10 +1260,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     f_183_ = anInt5510.toFloat() + f_181_
                 }
                 if (!(aHa_Sub3_5419!!.aFloat8089 <= f_182_) && !(aHa_Sub3_5419!!.anInt8095.toFloat() >= f_183_)) {
-                    Class318_Sub1_Sub2_Sub1.aFloat10199 = ((class101_sub2.aFloat5711 * class101_sub2_180_.aFloat5700) + (class101_sub2_180_.aFloat5722 * class101_sub2.aFloat5700) + (class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5704))
+                    DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5711 * class101_sub2_180_.aFloat5700) + (class101_sub2_180_.aFloat5722 * class101_sub2.aFloat5700) + (class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5704))
                     Class345.aFloat4268 = ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5700) + (class101_sub2.aFloat5711 * (class101_sub2_180_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_180_.aFloat5724)) + class101_sub2.aFloat5729)
-                    val f_184_ = ((anInt5461.toFloat() * Class318_Sub1_Sub2_Sub1.aFloat10199) + Class345.aFloat4268)
-                    val f_185_ = ((Class318_Sub1_Sub2_Sub1.aFloat10199 * anInt5509.toFloat()) + Class345.aFloat4268)
+                    val f_184_ = ((anInt5461.toFloat() * DynamicSceneObjectEntity.aFloat10199) + Class345.aFloat4268)
+                    val f_185_ = ((DynamicSceneObjectEntity.aFloat10199 * anInt5509.toFloat()) + Class345.aFloat4268)
                     val f_186_: Float
                     val f_187_: Float
                     if (f_185_ < f_184_) {
@@ -1291,7 +1291,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             if (class318_sub3 != null || aClass353Array5524 != null) {
                                 Class55.aFloat1010 = (((class101_sub2.aFloat5700) * (class101_sub2_180_.aFloat5708)) + ((class101_sub2.aFloat5711) * class101_sub2_180_.aFloat5711) + ((class101_sub2.aFloat5704) * class101_sub2_180_.aFloat5736))
                                 Class348_Sub42_Sub4.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2_180_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5704)))
-                                Class318_Sub6.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
+                                SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
                                 Class328_Sub3.aFloat6523 = (((class101_sub2_180_.aFloat5736) * (class101_sub2.aFloat5716)) + (((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5708) + ((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5711))))
                                 Class348_Sub20.aFloat6835 = (((class101_sub2_180_.aFloat5711) * (class101_sub2.aFloat5708)) + ((class101_sub2_180_.aFloat5708) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5736))
                                 Renderer.aFloat4582 = (((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5732) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5716)))
@@ -1299,11 +1299,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             if (class318_sub3 != null) {
                                 val i_192_ = anInt5467 + anInt5507 shr 1
                                 val i_193_ = anInt5418 + anInt5443 shr 1
-                                val i_194_ = (Class345.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((Class318_Sub1_Sub2_Sub1.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
-                                val i_195_ = (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (Class318_Sub6.aFloat6430 * i_193_.toFloat())).toInt()
+                                val i_194_ = (Class345.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
+                                val i_195_ = (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (SceneEffectMarker.aFloat6430 * i_193_.toFloat())).toInt()
                                 val i_196_ = ((anInt5461.toFloat() * Class353.aFloat4338) + ((Class328_Sub3.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
-                                val i_197_ = ((anInt5509.toFloat() * (Class318_Sub1_Sub2_Sub1.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_193_.toFloat())).toInt()
-                                val i_198_ = ((Class318_Sub6.aFloat6430 * i_193_.toFloat()) + (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
+                                val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_193_.toFloat())).toInt()
+                                val i_198_ = ((SceneEffectMarker.aFloat6430 * i_193_.toFloat()) + (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
                                 class318_sub3.anInt6402 = ((i_195_ * aHa_Sub3_5419!!.anInt8134 / i) + aHa_Sub3_5419!!.anInt8130)
                                 class318_sub3.anInt6405 = (aHa_Sub3_5419!!.anInt8094 - -(i_194_ * (aHa_Sub3_5419!!.anInt8129) / i))
                                 class318_sub3.anInt6404 = (aHa_Sub3_5419!!.anInt8130 - -(aHa_Sub3_5419!!.anInt8134 * i_198_ / i))
@@ -1714,7 +1714,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         }
     }
 
-    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int) {
+    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int) {
         try {
             anInt5471++
             if (anInt5475 != 0) {
@@ -1736,9 +1736,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
                 if (!(aHa_Sub3_5419!!.aFloat8169 <= f_310_) && !(f_309_ <= aHa_Sub3_5419!!.anInt8095.toFloat())) {
                     Class345.aFloat4268 = (class101_sub2.aFloat5729 + ((class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5710)) + (class101_sub2.aFloat5711 * (class101_sub2_307_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_307_.aFloat5724))))
-                    Class318_Sub1_Sub2_Sub1.aFloat10199 = ((class101_sub2.aFloat5704 * class101_sub2_307_.aFloat5691) + ((class101_sub2_307_.aFloat5700 * class101_sub2.aFloat5711) + (class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5722))))
-                    val f_311_ = ((anInt5461.toFloat() * Class318_Sub1_Sub2_Sub1.aFloat10199) + Class345.aFloat4268)
-                    val f_312_ = (Class345.aFloat4268 + (Class318_Sub1_Sub2_Sub1.aFloat10199 * anInt5509.toFloat()))
+                    DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5704 * class101_sub2_307_.aFloat5691) + ((class101_sub2_307_.aFloat5700 * class101_sub2.aFloat5711) + (class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5722))))
+                    val f_311_ = ((anInt5461.toFloat() * DynamicSceneObjectEntity.aFloat10199) + Class345.aFloat4268)
+                    val f_312_ = (Class345.aFloat4268 + (DynamicSceneObjectEntity.aFloat10199 * anInt5509.toFloat()))
                     val f_313_: Float
                     val f_314_: Float
                     if (f_311_ > f_312_) {
@@ -1765,7 +1765,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         if (!(aHa_Sub3_5419!!.aFloat8185 <= f_318_ / f_309_) && !(f_317_ / f_309_ <= aHa_Sub3_5419!!.aFloat8103)) {
                             if (class318_sub3 != null || aClass353Array5524 != null) {
                                 Class328_Sub3.aFloat6523 = (((class101_sub2.aFloat5716) * (class101_sub2_307_.aFloat5736)) + ((class101_sub2_307_.aFloat5711 * (class101_sub2.aFloat5736)) + ((class101_sub2.aFloat5691) * (class101_sub2_307_.aFloat5708))))
-                                Class318_Sub6.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5716))
+                                SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5716))
                                 Class55.aFloat1010 = (((class101_sub2.aFloat5704) * (class101_sub2_307_.aFloat5736)) + (((class101_sub2.aFloat5700) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5711))))
                                 Class348_Sub42_Sub4.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2.aFloat5704) * class101_sub2_307_.aFloat5716))
                                 Class348_Sub20.aFloat6835 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5711)) + ((class101_sub2.aFloat5722) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5736))
@@ -1776,16 +1776,16 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 var bool_319_ = true
                                 val i_320_ = anInt5507 - -anInt5467 shr 1
                                 val i_321_ = anInt5418 + anInt5443 shr 1
-                                val i_322_ = ((anInt5461.toFloat() * (Class318_Sub1_Sub2_Sub1.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_321_.toFloat())).toInt()
-                                val i_323_ = ((Class318_Sub6.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * Class348_Sub20.aFloat6835) + Class348_Sub12.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
+                                val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_321_.toFloat())).toInt()
+                                val i_323_ = ((SceneEffectMarker.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * Class348_Sub20.aFloat6835) + Class348_Sub12.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
                                 val i_324_ = (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * Class328_Sub3.aFloat6523) + (anInt5461.toFloat() * Class353.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_324_) bool = true
                                 else {
                                     class318_sub3.anInt6402 = (aHa_Sub3_5419!!.anInt8130 - -(i_323_ * (aHa_Sub3_5419!!.anInt8134) / i_324_))
                                     class318_sub3.anInt6405 = ((aHa_Sub3_5419!!.anInt8129 * i_322_ / i_324_) + (aHa_Sub3_5419!!.anInt8094))
                                 }
-                                val i_325_ = ((Class318_Sub1_Sub2_Sub1.aFloat10199) * anInt5509.toFloat() + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
-                                val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (Class348_Sub12.aFloat6752 + (i_320_.toFloat() * (Class348_Sub20.aFloat6835))) + (i_321_.toFloat() * Class318_Sub6.aFloat6430)).toInt()
+                                val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
+                                val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (Class348_Sub12.aFloat6752 + (i_320_.toFloat() * (Class348_Sub20.aFloat6835))) + (i_321_.toFloat() * SceneEffectMarker.aFloat6430)).toInt()
                                 val i_327_ = ((anInt5509.toFloat() * Class353.aFloat4338) + (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * Class328_Sub3.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_327_) bool = true
                                 else {

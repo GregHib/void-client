@@ -8,19 +8,19 @@ import Class75.Companion.method758
 import OutputStream_Sub2.Companion.method136
 import java.awt.Frame
 
-class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int) : Class318_Sub1_Sub3(i_36_, i_37_, i_38_, i_39_, i_40_, i_41_, i_42_, i_43_, i_44_, false, 0.toByte()) {
+class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int) : GroundDecorEntity(i_36_, i_37_, i_38_, i_39_, i_40_, i_41_, i_42_, i_43_, i_44_, false, 0.toByte()) {
     private var anInt10331 = 0
     private var aWidgetDefinition_10332: WidgetDefinition? = null
     private var anInt10334 = 0
     private var anInt10335 = 0
     private var aBoolean10338 = true
     private var anInt10339 = 0
-    private var aClass318_Sub10_10341: Class318_Sub10? = null
+    private var aClass318_Sub10_10341: SceneGraphContainer? = null
     var aBoolean10345: Boolean = false
     var anInt10349: Int
     private val anInt10350: Int
     private var anInt10356 = 0
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10352++
         val class64 = method2465(var_renderer, anInt10355, (if (anInt10334 == 0) 0 else 5) or 0x800, (-82).toByte())
         if (class64 == null) return null
@@ -48,7 +48,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         return anInt10331
     }
 
-    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_0_: Int, i_1_: Byte, i_2_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_0_: Int, i_1_: Byte, i_2_: Int) {
         try {
             anInt10347++
             if (i_1_ > -106) this.aBoolean10345 = false
@@ -106,7 +106,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                 val class129s = class64.method619()
                 val class342s = class64.method604()
                 if (i == -1) {
-                    if ((aClass318_Sub10_10341 == null || (aClass318_Sub10_10341!!.aBoolean6470)) && (class129s != null || class342s != null)) aClass318_Sub10_10341 = Class318_Sub10.Companion.method2526(Class367_Sub11.anInt7396, true)
+                    if ((aClass318_Sub10_10341 == null || (aClass318_Sub10_10341!!.aBoolean6470)) && (class129s != null || class342s != null)) aClass318_Sub10_10341 = SceneGraphContainer.Companion.method2526(Class367_Sub11.anInt7396, true)
                     if (aClass318_Sub10_10341 == null) break
                     aClass318_Sub10_10341!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
                     aClass318_Sub10_10341!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
@@ -215,7 +215,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         @JvmField
         var anInt10364: Int = 0
 
-        fun method2461(class318_sub6: Class318_Sub6, bool: Boolean) {
+        fun method2461(class318_sub6: SceneEffectMarker, bool: Boolean) {
             if (bool != true) aClass46_10336 = null
             class318_sub6.aClass318_Sub1_Sub3_Sub3_6431 = null
             anInt10361++
@@ -269,7 +269,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             do {
                 try {
                     anInt10357++
-                    if (Class348.anInt4290 < 100) Class318_Sub7.Companion.method2512(var_renderConfig, var_renderer, i.toInt() xor 0x74)
+                    if (Class348.anInt4290 < 100) SpotAnimEntity.Companion.method2512(var_renderConfig, var_renderer, i.toInt() xor 0x74)
                     var_renderer!!.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_)
                     if (Class348.anInt4290 < 100) {
                         val i_15_ = 20

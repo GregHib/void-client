@@ -1,4 +1,4 @@
-import Class318_Sub9_Sub1.Companion.method2516
+import NamedTimedNode.Companion.method2516
 
 /* Class348_Sub15 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

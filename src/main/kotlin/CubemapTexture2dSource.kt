@@ -46,10 +46,10 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
                     WaterDetailOptionState.anInt5994 = 10000
                     ModelDefinition.aClass45_1848 = class45
                     Class58.anInt1059 = i_7_
-                    Class318_Sub1_Sub4_Sub1.anInt10074 = i
+                    NpcActorEntity.anInt10074 = i
                     Class346.aBoolean4275 = bool
                     GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-                    Class318.anInt3971 = i_4_
+                    SceneLinkedListNode.anInt3971 = i_4_
                     anInt8687++
                     BloomGraphicsOptionState.aLong5971 = l
                     Class348_Sub43.anInt7068 = 1

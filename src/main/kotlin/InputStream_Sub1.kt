@@ -38,7 +38,7 @@ class InputStream_Sub1 : InputStream() {
         }
 
         @JvmStatic
-        fun method125(i: Int, i_0_: Int, i_1_: Int, class318_sub1_sub4: Class318_Sub1_Sub4?, i_2_: Byte): Boolean {
+        fun method125(i: Int, i_0_: Int, i_1_: Int, class318_sub1_sub4: ActorEntity?, i_2_: Byte): Boolean {
             anInt72++
             if (!Class348_Sub40_Sub23.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
@@ -97,7 +97,7 @@ class InputStream_Sub1 : InputStream() {
 
         @JvmStatic
         fun method126(i: Int) {
-            Class318_Sub1_Sub3_Sub3.method2433()
+            ProjectedGroundDecor.method2433()
             anInt73++
             for (i_7_ in 0..3) Class348_Sub45.aClass361Array7108!![i_7_]!!.method3500(700)
             if (i != -16203) Companion.method125(125, -95, 109, null, (-52).toByte())

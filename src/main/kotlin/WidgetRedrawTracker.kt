@@ -81,8 +81,8 @@ class WidgetRedrawTracker {
                     i_1_++
                 }
                 Class363.method3515(i + 36)
-                Class318_Sub1_Sub5_Sub2.anInt10163 = -1
-                Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
+                SequencedWallEntity.anInt10163 = -1
+                Class9.anInt167 = SequencedWallEntity.anInt10163
                 Class348_Sub40_Sub21.anInt9282 = 1
                 Class348_Sub49.method3379(2, 10)
                 for (i_2_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_2_] = true

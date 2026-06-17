@@ -3,7 +3,7 @@ import Class348_Sub42_Sub8_Sub2.Companion.method3200
 /* Class10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @JvmField var anInt185: Int, @JvmField var anInt177: Int, @JvmField var anInt188: Int, @JvmField var anInt184: Int, @JvmField var anInt178: Int, @JvmField var anInt173: Int, @JvmField var aClass318_Sub1_172: Class318_Sub1?) {
+class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @JvmField var anInt185: Int, @JvmField var anInt177: Int, @JvmField var anInt188: Int, @JvmField var anInt184: Int, @JvmField var anInt178: Int, @JvmField var anInt173: Int, @JvmField var aClass318_Sub1_172: SceneEntity?) {
     @JvmField
     var aClass348_Sub16_Sub5_176: Class348_Sub16_Sub5? = null
     @JvmField

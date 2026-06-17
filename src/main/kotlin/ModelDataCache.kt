@@ -11,7 +11,7 @@ object ModelDataCache {
     @JvmField
     var anInt356: Int = 0
     @JvmField
-    var aClass318_Sub1_Sub3Array357: Array<Class318_Sub1_Sub3?>? = null
+    var aClass318_Sub1_Sub3Array357: Array<GroundDecorEntity?>? = null
     @JvmField
     var aByteArrayArray358: Array<ByteArray?>? = arrayOfNulls<ByteArray>(1000)
     @JvmField

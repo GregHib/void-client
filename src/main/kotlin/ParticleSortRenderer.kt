@@ -16,8 +16,8 @@ class ParticleSortRenderer internal constructor() {
     private var anInterface2_3027: Interface2? = null
     private var aHoverActionEntry_3028: HoverActionEntry? = null
     private var aHoverActionEntry_3029: HoverActionEntry? = null
-    private val aClass318_Sub9_Sub2ArrayArray3030: Array<Array<Class318_Sub9_Sub2?>?>
-    private val aClass318_Sub9_Sub2ArrayArray3031: Array<Array<Class318_Sub9_Sub2?>?>
+    private val aClass318_Sub9_Sub2ArrayArray3030: Array<Array<PositionedSceneNode?>?>
+    private val aClass318_Sub9_Sub2ArrayArray3031: Array<Array<PositionedSceneNode?>?>
     private val anIntArray3032: IntArray
     private val anIntArray3033: IntArray
     private var anInt3034: Int
@@ -60,7 +60,7 @@ class ParticleSortRenderer internal constructor() {
                     val class318_sub9 = (class98!!.aClass88_1569.aClass318_Sub9_1503)
                     var class318_sub9_8_ = (class318_sub9!!.aClass318_Sub9_6469)
                     while (class318_sub9_8_ !== class318_sub9) {
-                        val class318_sub9_sub2 = class318_sub9_8_ as Class318_Sub9_Sub2
+                        val class318_sub9_sub2 = class318_sub9_8_ as PositionedSceneNode
                         val i_9_ = (f_4_ + ((class318_sub9_sub2.anInt8796 shr 12).toFloat() * f_2_ + ((class318_sub9_sub2.anInt8791) shr 12).toFloat() * f + ((class318_sub9_sub2.anInt8789) shr 12).toFloat() * f_3_)).toInt()
                         if (i_7_ < i_9_) i_7_ = i_9_
                         if (i_6_ > i_9_) i_6_ = i_9_
@@ -91,7 +91,7 @@ class ParticleSortRenderer internal constructor() {
                         }
                         for (i_16_ in 0..63) anIntArray3035[i_16_] = 0
                         while ( /**/class318_sub9 !== class318_sub9_12_) {
-                            val class318_sub9_sub2 = class318_sub9_12_ as Class318_Sub9_Sub2
+                            val class318_sub9_sub2 = class318_sub9_12_ as PositionedSceneNode
                             if (bool_14_) {
                                 bool = class318_sub9_sub2.aBoolean8794
                                 i_13_ = class318_sub9_sub2.anInt8792
@@ -397,10 +397,10 @@ class ParticleSortRenderer internal constructor() {
         aClass348_Sub49_Sub1_3020 = Class348_Sub49_Sub1(786336)
         anInt3026 = method2253(1600, 124)
         anIntArray3032 = IntArray(8191)
-        aClass318_Sub9_Sub2ArrayArray3031 = Array<Array<Class318_Sub9_Sub2?>?>(1600) { arrayOfNulls<Class318_Sub9_Sub2>(64) }
+        aClass318_Sub9_Sub2ArrayArray3031 = Array<Array<PositionedSceneNode?>?>(1600) { arrayOfNulls<PositionedSceneNode>(64) }
         anIntArray3033 = IntArray(1600)
         anInt3034 = 0
-        aClass318_Sub9_Sub2ArrayArray3030 = Array<Array<Class318_Sub9_Sub2?>?>(64) { arrayOfNulls<Class318_Sub9_Sub2>(768) }
+        aClass318_Sub9_Sub2ArrayArray3030 = Array<Array<PositionedSceneNode?>?>(64) { arrayOfNulls<PositionedSceneNode>(768) }
         anIntArray3035 = IntArray(64)
     }
 

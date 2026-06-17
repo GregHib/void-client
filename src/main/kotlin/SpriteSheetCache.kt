@@ -99,7 +99,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
             anInt2560++
         }
 
-        fun method1430(i: Int, i_1_: Byte, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?, class318_sub1_sub3_sub3_8_: Class318_Sub1_Sub3_Sub3?) {
+        fun method1430(i: Int, i_1_: Byte, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor?, class318_sub1_sub3_sub3_8_: ProjectedGroundDecor?) {
             try {
                 anInt2567++
                 val i_9_ = class318_sub1_sub3_sub3!!.method2425(-1)

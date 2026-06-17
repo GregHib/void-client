@@ -69,7 +69,7 @@ class DetailLevelOptionState : GraphicsOptionState {
         }
 
         @JvmStatic
-        fun method1834(class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3, i: Byte) {
+        fun method1834(class318_sub1_sub3_sub3: ProjectedGroundDecor, i: Byte) {
             anInt6125++
             val i_2_ = (class318_sub1_sub3_sub3.anInt10239 - Class367_Sub11.anInt7396)
             if (i < 0) {

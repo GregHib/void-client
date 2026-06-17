@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub4_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, bool_6_: Boolean) : Class318_Sub1_Sub4(i_1_, i_2_, i_3_, i, i_0_, SphereMapMaterialPass.method2175(i_5_, (-34).toByte(), i_4_)), Interface10 {
+class NpcActorEntity internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, bool_6_: Boolean) : ActorEntity(i_1_, i_2_, i_3_, i, i_0_, SphereMapMaterialPass.method2175(i_5_, (-34).toByte(), i_4_)), Interface10 {
     private var aByte10062: Byte = 0
     private val aBoolean10064: Boolean
     private var aBoolean10066 = false
@@ -114,13 +114,13 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
         return aBoolean10064
     }
 
-    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_11_: Int, i_12_: Byte, i_13_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_11_: Int, i_12_: Byte, i_13_: Int) {
         try {
             if (i_12_ > -106) method2388(-102)
-            if (class318_sub1 is Class318_Sub1_Sub4_Sub1) {
+            if (class318_sub1 is NpcActorEntity) {
                 val class318_sub1_sub4_sub1_14_ = class318_sub1
                 if (this.aClass64_10071 != null && (class318_sub1_sub4_sub1_14_.aClass64_10071) != null) this.aClass64_10071!!.method613(class318_sub1_sub4_sub1_14_.aClass64_10071, i_13_, i, i_11_, bool)
-            } else if (class318_sub1 is Class318_Sub1_Sub3_Sub1) {
+            } else if (class318_sub1 is ModelGroundDecor) {
                 val class318_sub1_sub3_sub1 = class318_sub1
                 if (this.aClass64_10071 != null && (class318_sub1_sub3_sub1.aClass64_10028) != null) this.aClass64_10071!!.method613((class318_sub1_sub3_sub1.aClass64_10028), i_13_, i, i_11_, bool)
             }
@@ -163,7 +163,7 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
         return class51.method476(var_renderer, var_terrainTile, aByte10079.toInt(), i, this.x, bool, var_terrainTile_16_, this.anInt6382, this.y, aByte10062.toInt(), i_15_ + 132)
     }
 
-    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10069++
         if (this.aClass64_10071 == null) return null
         val class101 = var_renderer!!.method3705()

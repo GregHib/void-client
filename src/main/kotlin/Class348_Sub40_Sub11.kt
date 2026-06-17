@@ -11,7 +11,7 @@ class Class348_Sub40_Sub11 : Class348_Sub40(0, true) {
             val i_1_ = LightDetailOptionState.anIntArray6035!![i]
             var i_2_ = 0
             while ((i_2_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
-                val i_3_ = Class318_Sub6.anIntArray6432!![i_2_]
+                val i_3_ = SceneEffectMarker.anIntArray6432!![i_2_]
                 if (anInt9187 < i_3_ && 4096 - anInt9187 > i_3_ && i_1_ > 2048 + -anInt9187 && i_1_ < 2048 + anInt9187) {
                     var i_4_ = -i_3_ + 2048
                     i_4_ = if (i_4_ < 0) -i_4_ else i_4_

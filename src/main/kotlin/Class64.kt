@@ -169,7 +169,7 @@ public abstract class Class64 {
 
     abstract fun LA(i: Int)
 
-    abstract fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int, i_71_: Int)
+    abstract fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int, i_71_: Int)
 
     abstract fun ua(): Int
 
@@ -222,7 +222,7 @@ public abstract class Class64 {
 
     abstract fun method614(i: Byte, i_80_: Int, bool: Boolean): Class64?
 
-    abstract fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: Class318_Sub3?, i: Int)
+    abstract fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int)
 
     fun method617(i: Int, i_83_: Int, class348_sub42_sub17: Class348_Sub42_Sub17?, i_84_: Int, class348_sub42_sub17_85_: Class348_Sub42_Sub17?, bool: Boolean, bool_86_: Boolean, i_87_: Int, i_88_: Int) {
         try {

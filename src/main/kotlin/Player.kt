@@ -1,7 +1,7 @@
 import java.util.*
 import kotlin.math.atan2
 
-class Player : Class318_Sub1_Sub3_Sub3() {
+class Player : ProjectedGroundDecor() {
     @JvmField
     var anInt10516: Int = 0
     @JvmField
@@ -286,7 +286,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         throw IllegalStateException()
     }
 
-    override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_47_: Int, i_48_: Byte, i_49_: Int) {
+    override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_47_: Int, i_48_: Byte, i_49_: Int) {
         try {
             if (i_48_ >= -106) anInt10520 = 116
             anInt10545++
@@ -320,7 +320,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         } else method2449(i, i_52_, 112.toByte())
     }
 
-    override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
+    override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10527++
         if (this.aCompositeNpcModelBuilder_10536 == null || !method2459(2048, var_renderer, -95)) return null
         val class101 = var_renderer!!.method3705()
@@ -333,7 +333,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
             this.anInt10274 = (this.anInt10274 - i_54_.toFloat() / 10.0f).toInt()
         }
         class101.method891(this.x, (-20 + (this.anInt6382 - this.anInt10274)), this.y)
-        var class318_sub4: Class318_Sub4? = null
+        var class318_sub4: SceneEntityModel? = null
         this.aBoolean10324 = false
         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) {
             val class225 = this.method2422(72.toByte())

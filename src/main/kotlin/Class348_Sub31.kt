@@ -39,13 +39,13 @@ abstract class Class348_Sub31 : Class348() {
 
         @JvmStatic
         fun method3007(i: Int, i_0_: Int) {
-            Class318_Sub1_Sub4_Sub1.anInt10074 = -1
+            NpcActorEntity.anInt10074 = -1
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             if (i_0_ != 22684) anInt6913 = -117
             anInt6922++
             Class346.aBoolean4275 = false
             ModelDefinition.aClass45_1848 = null
-            Class318.anInt3971 = -1
+            SceneLinkedListNode.anInt3971 = -1
             WaterDetailOptionState.anInt5994 = i
             Class348_Sub43.anInt7068 = 1
             Class58.anInt1059 = 0

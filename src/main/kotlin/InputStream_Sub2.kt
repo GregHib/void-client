@@ -55,7 +55,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_16_ = 256 + 512 * i_10_
                         var i_17_ = Class348_Sub40_Sub12.anInt9200
                         if (i_17_ < 3 && Class79.method802(i_10_, i_9_, true)) i_17_++
-                        val class318_sub1_sub3_sub4 = (Class318_Sub1_Sub3_Sub4(i_11_, i_13_, Class367_Sub11.anInt7396, Class348_Sub40_Sub12.anInt9200, i_17_, i_15_, CollisionMapAccessor.method2064(i_15_, Class348_Sub40_Sub12.anInt9200, 11219, i_16_) + -i_12_, i_16_, i_9_, i_9_, i_10_, i_10_, i_14_))
+                        val class318_sub1_sub3_sub4 = (MapElementDecor(i_11_, i_13_, Class367_Sub11.anInt7396, Class348_Sub40_Sub12.anInt9200, i_17_, i_15_, CollisionMapAccessor.method2064(i_15_, Class348_Sub40_Sub12.anInt9200, 11219, i_16_) + -i_12_, i_16_, i_9_, i_9_, i_10_, i_10_, i_14_))
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180)
                     }
                 } else if (class74 == Class91.aClass74_1519) {
@@ -145,7 +145,7 @@ class InputStream_Sub2 : InputStream() {
                         i_61_ = i_61_ shl 2
                         i_52_ *= 256
                         if (i_58_ != 0 && i_55_ != -1) {
-                            var class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3? = null
+                            var class318_sub1_sub3_sub3: ProjectedGroundDecor? = null
                             if (i_58_ < 0) {
                                 val i_67_ = -i_58_ + -1
                                 if (Class348_Sub42_Sub11.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_67_])
@@ -161,7 +161,7 @@ class InputStream_Sub2 : InputStream() {
                                 if ((class225.anIntArrayArray2910 != null) && (class225.anIntArrayArray2910!![i_55_]) != null) i_61_ -= (class225.anIntArrayArray2910!![i_55_]!![1])
                             }
                         }
-                        val class318_sub1_sub3_sub5 = (Class318_Sub1_Sub3_Sub5(i_60_, Class348_Sub40_Sub12.anInt9200, Class348_Sub40_Sub12.anInt9200, i_51_, i_52_, i_61_, i_63_ - -Class367_Sub11.anInt7396, i_64_ + Class367_Sub11.anInt7396, i_65_, i_66_, i_58_, i_59_, i_62_, bool, i_55_))
+                        val class318_sub1_sub3_sub5 = (TrackedGroundDecor(i_60_, Class348_Sub40_Sub12.anInt9200, Class348_Sub40_Sub12.anInt9200, i_51_, i_52_, i_61_, i_63_ - -Class367_Sub11.anInt7396, i_64_ + Class367_Sub11.anInt7396, i_65_, i_66_, i_58_, i_59_, i_62_, bool, i_55_))
                         class318_sub1_sub3_sub5.method2471((-103).toByte(), (-i_62_ + CollisionMapAccessor.method2064(i_56_, Class348_Sub40_Sub12.anInt9200, 11219, i_57_)), i_57_, i_63_ + Class367_Sub11.anInt7396, i_56_)
                         Class348_Sub40_Sub17.aNodeDeque_9240!!.method1999(Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180)
                     }
@@ -274,7 +274,7 @@ class InputStream_Sub2 : InputStream() {
                             i_107_ = i_107_ * 512 + 256
                             i_106_ = i_106_ * 512 + 256
                             i_112_ = i_112_ shl 2
-                            val class318_sub1_sub3_sub5 = (Class318_Sub1_Sub3_Sub5(i_111_, Class348_Sub40_Sub12.anInt9200, Class348_Sub40_Sub12.anInt9200, i_106_, i_107_, i_112_, i_114_ + Class367_Sub11.anInt7396, Class367_Sub11.anInt7396 + i_115_, i_116_, i_117_, 0, i_110_, i_113_, bool, -1))
+                            val class318_sub1_sub3_sub5 = (TrackedGroundDecor(i_111_, Class348_Sub40_Sub12.anInt9200, Class348_Sub40_Sub12.anInt9200, i_106_, i_107_, i_112_, i_114_ + Class367_Sub11.anInt7396, Class367_Sub11.anInt7396 + i_115_, i_116_, i_117_, 0, i_110_, i_113_, bool, -1))
                             class318_sub1_sub3_sub5.method2471((-103).toByte(), CollisionMapAccessor.method2064(i_108_, (Class348_Sub40_Sub12.anInt9200), 11219, i_109_) + -i_113_, i_109_, i_114_ + Class367_Sub11.anInt7396, i_108_)
                             Class348_Sub40_Sub17.aNodeDeque_9240!!.method1999(Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180)
                         }
