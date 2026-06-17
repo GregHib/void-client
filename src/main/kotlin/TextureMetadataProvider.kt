@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class TextureMetadataProvider internal constructor(class45: Class45?, class45_12_: Class45?, class45_13_: Class45?) : RenderConfig {
-    private val aClass12Array4611: Array<Class12?>
+    private val aNpcAppearanceFlagsArray4611: Array<NpcAppearanceFlags?>
     private val aClass45_4619: Class45?
     private val aClass308_4622 = Class308(256)
     private val aClass45_4624: Class45?
@@ -10,7 +10,7 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
     override fun method6(i: Int, i_0_: Int, f: Float, i_1_: Int, bool: Boolean, i_2_: Int): IntArray {
         if (i != -21540) method3(-46, 6)
         anInt4617++
-        return method1881(i_1_, false)!!.method3183(this, i_2_, i_0_, (aClass12Array4611[i_1_]!!.aBoolean207), f.toDouble(), aClass45_4624, 11.toByte())
+        return method1881(i_1_, false)!!.method3183(this, i_2_, i_0_, (aNpcAppearanceFlagsArray4611[i_1_]!!.aBoolean207), f.toDouble(), aClass45_4624, 11.toByte())
     }
 
     private fun method1881(i: Int, bool: Boolean): Class348_Sub42_Sub5? {
@@ -25,16 +25,16 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
         return class348_sub42_sub5
     }
 
-    override fun method3(i: Int, i_3_: Int): Class12? {
+    override fun method3(i: Int, i_3_: Int): NpcAppearanceFlags? {
         anInt4621++
         if (i_3_ != -6662) return null
-        return aClass12Array4611[i]
+        return aNpcAppearanceFlagsArray4611[i]
     }
 
     override fun method5(bool: Boolean, i: Int, f: Float, i_4_: Int, i_5_: Int, i_6_: Int): IntArray {
         val i_7_ = 41 / ((i_6_ - -69) / 48)
         anInt4614++
-        return method1881(i, false)!!.method3185(i_4_, this, 0, aClass12Array4611[i]!!.aBoolean207, f.toDouble(), bool, aClass45_4624, i_5_)
+        return method1881(i, false)!!.method3185(i_4_, this, 0, aNpcAppearanceFlagsArray4611[i]!!.aBoolean207, f.toDouble(), bool, aClass45_4624, i_5_)
     }
 
     override fun method4(i: Int, i_8_: Int): Boolean {
@@ -47,7 +47,7 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
     override fun method1(i: Int, f: Float, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int): FloatArray? {
         if (i_9_ != -30824) return null
         anInt4612++
-        return method1881(i_11_, false)!!.method3186(i, this, (aClass12Array4611[i_11_]!!.aBoolean207), i_10_, aClass45_4624, -20)
+        return method1881(i_11_, false)!!.method3186(i, this, (aNpcAppearanceFlagsArray4611[i_11_]!!.aBoolean207), i_10_, aClass45_4624, -20)
     }
 
     override fun method2(bool: Boolean): Int {
@@ -62,103 +62,103 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
             aClass45_4624 = class45_13_
             val class348_sub49 = Class348_Sub49(class45!!.method410(-1860, 0, 0))
             anInt4625 = class348_sub49.readUnsignedShort(842397944)
-            aClass12Array4611 = arrayOfNulls<Class12>(anInt4625)
+            aNpcAppearanceFlagsArray4611 = arrayOfNulls<NpcAppearanceFlags>(anInt4625)
             run {
                 var i = 0
                 while (anInt4625 > i) {
-                    if (class348_sub49.readUnsignedByte(255) == 1) aClass12Array4611[i] = Class12()
+                    if (class348_sub49.readUnsignedByte(255) == 1) aNpcAppearanceFlagsArray4611[i] = NpcAppearanceFlags()
                     i++
                 }
             }
             for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aBoolean209 = class348_sub49.readUnsignedByte(255) == 0
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aBoolean209 = class348_sub49.readUnsignedByte(255) == 0
             }
             for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aBoolean199 = class348_sub49.readUnsignedByte(255) == 1
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aBoolean199 = class348_sub49.readUnsignedByte(255) == 1
             }
             run {
                 var i = 0
                 while (anInt4625 > i) {
-                    if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aBoolean204 = class348_sub49.readUnsignedByte(255) == 1
+                    if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aBoolean204 = class348_sub49.readUnsignedByte(255) == 1
                     i++
                 }
             }
             for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aByte216 = class348_sub49.readByte(-85)
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aByte216 = class348_sub49.readByte(-85)
             }
             for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aByte201 = class348_sub49.readByte(-113)
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aByte201 = class348_sub49.readByte(-113)
             }
             for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aByte213 = class348_sub49.readByte(-97)
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aByte213 = class348_sub49.readByte(-97)
             }
             for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aByte202 = class348_sub49.readByte(-82)
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aByte202 = class348_sub49.readByte(-82)
             }
             for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aShort208 = class348_sub49.readUnsignedShort(842397944).toShort()
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aShort208 = class348_sub49.readUnsignedShort(842397944).toShort()
             }
             run {
                 var i = 0
                 while (anInt4625 > i) {
-                    if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aByte198 = class348_sub49.readByte(-86)
-                    i++
-                }
-            }
-            run {
-                var i = 0
-                while (anInt4625 > i) {
-                    if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aByte211 = class348_sub49.readByte(-104)
+                    if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aByte198 = class348_sub49.readByte(-86)
                     i++
                 }
             }
             run {
                 var i = 0
                 while (anInt4625 > i) {
-                    if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aBoolean212 = class348_sub49.readUnsignedByte(255) == 1
+                    if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aByte211 = class348_sub49.readByte(-104)
                     i++
                 }
             }
             run {
                 var i = 0
                 while (anInt4625 > i) {
-                    if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aBoolean207 = class348_sub49.readUnsignedByte(255) == 1
-                    i++
-                }
-            }
-            for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aByte205 = class348_sub49.readByte(-77)
-            }
-            for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aBoolean217 = class348_sub49.readUnsignedByte(255) == 1
-            }
-            run {
-                var i = 0
-                while (anInt4625 > i) {
-                    if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aBoolean215 = class348_sub49.readUnsignedByte(255) == 1
+                    if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aBoolean212 = class348_sub49.readUnsignedByte(255) == 1
                     i++
                 }
             }
             run {
                 var i = 0
                 while (anInt4625 > i) {
-                    if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.aBoolean218 = class348_sub49.readUnsignedByte(255) == 1
+                    if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aBoolean207 = class348_sub49.readUnsignedByte(255) == 1
                     i++
                 }
             }
             for (i in 0..<anInt4625) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.anInt203 = class348_sub49.readUnsignedByte(255)
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aByte205 = class348_sub49.readByte(-77)
+            }
+            for (i in 0..<anInt4625) {
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aBoolean217 = class348_sub49.readUnsignedByte(255) == 1
             }
             run {
                 var i = 0
                 while (anInt4625 > i) {
-                    if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.anInt206 = class348_sub49.readInt((-126).toByte())
+                    if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aBoolean215 = class348_sub49.readUnsignedByte(255) == 1
+                    i++
+                }
+            }
+            run {
+                var i = 0
+                while (anInt4625 > i) {
+                    if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.aBoolean218 = class348_sub49.readUnsignedByte(255) == 1
+                    i++
+                }
+            }
+            for (i in 0..<anInt4625) {
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.anInt203 = class348_sub49.readUnsignedByte(255)
+            }
+            run {
+                var i = 0
+                while (anInt4625 > i) {
+                    if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.anInt206 = class348_sub49.readInt((-126).toByte())
                     i++
                 }
             }
             var i = 0
             while (anInt4625 > i) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i]!!.anInt200 = class348_sub49.readUnsignedByte(255)
+                if (aNpcAppearanceFlagsArray4611[i] != null) aNpcAppearanceFlagsArray4611[i]!!.anInt200 = class348_sub49.readUnsignedByte(255)
                 i++
             }
         } catch (runtimeexception: RuntimeException) {

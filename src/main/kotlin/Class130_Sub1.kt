@@ -506,7 +506,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class21.anInt321 = 0
             Class377.anInt9836 = 0
             Class348_Sub16_Sub1.anInt8846 = 0
-            Class12.anInt210 = 0
+            NpcAppearanceFlags.anInt210 = 0
             Class239_Sub27.anInt6129 = 0
             NativeTerrainTile.anInt8292 = 0
             Class285_Sub1.anInt8487 = 0
@@ -1127,7 +1127,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class140.anInt1956 = 0
             Class255.anInt3275 = 0
             Class215.anInt2838 = 0
-            Class12.anInt214 = 0
+            NpcAppearanceFlags.anInt214 = 0
             Class258_Sub3.anInt8542 = 0
             FloatCameraTransform.anInt5717 = 0
             Class373_Sub2.anInt7438 = 0

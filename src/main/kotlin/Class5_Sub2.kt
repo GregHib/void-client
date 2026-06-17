@@ -103,7 +103,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             if (Class132.anInt1910 <= i_15_ && Class38.anInt513 >= i_15_) {
                 i_14_ = Class85.method831(CameraNodeList.anInt1745, i_14_, Class369.anInt4960, 71)
                 i = Class85.method831(CameraNodeList.anInt1745, i, Class369.anInt4960, -87)
-                Class12.method223(i, i_13_, i_15_, i_14_, 39.toByte())
+                NpcAppearanceFlags.method223(i, i_13_, i_15_, i_14_, 39.toByte())
             }
             anInt8357++
         }

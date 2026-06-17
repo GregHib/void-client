@@ -433,15 +433,15 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                 if (i_92_ == -1) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x2).toByte()
             }
             if ((this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_ + 1]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i]!![i_60_ + 1])) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x1).toByte()
-            var class12: Class12? = null
-            if (i_93_ != -1) class12 = aHa_Sub1_8217.aRenderConfig4579!!.method3(i_93_, -6662)
-            if (class12 != null && (vertexNormal.aByte1606.toInt() and 0x2) == 0 && !class12.aBoolean209) {
+            var npcAppearanceFlags: NpcAppearanceFlags? = null
+            if (i_93_ != -1) npcAppearanceFlags = aHa_Sub1_8217.aRenderConfig4579!!.method3(i_93_, -6662)
+            if (npcAppearanceFlags != null && (vertexNormal.aByte1606.toInt() and 0x2) == 0 && !npcAppearanceFlags.aBoolean209) {
                 vertexNormal.aShort1601 = (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]).toShort()
                 vertexNormal.aShort1603 = (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]).toShort()
                 vertexNormal.aShort1602 = (aByteArrayArray8220!![i + 1]!![i_60_ + 1] - aByteArrayArray8232!![i + 1]!![i_60_ + 1]).toShort()
                 vertexNormal.aShort1604 = (aByteArrayArray8220!![i]!![i_60_ + 1] - aByteArrayArray8232!![i]!![i_60_ + 1]).toShort()
                 vertexNormal.aShort1605 = i_93_.toShort()
-                if (method3997(class12.aByte213.toInt()) || class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x4).toByte()
+                if (method3997(npcAppearanceFlags.aByte213.toInt()) || npcAppearanceFlags.aByte198.toInt() != 0 || npcAppearanceFlags.aByte211.toInt() != 0) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x4).toByte()
             } else {
                 val i_94_ = Class25.method303(i_92_, 30)
                 vertexNormal.aShort1601 = Class291.method2198(0, ((aByteArrayArray8220!![i]!![i_60_]) - (aByteArrayArray8232!![i]!![i_60_])), i_94_.toInt()).toShort()

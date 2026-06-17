@@ -2998,7 +2998,7 @@ class Class64_Sub3 : Class64 {
                 var i_699_ = 0
                 while (anInt5632 > i_699_) {
                     val i_700_ = `is`[i_699_]
-                    var class12: Class12? = null
+                    var npcAppearanceFlags: NpcAppearanceFlags? = null
                     var i_701_ = 0
                     var i_702_ = 0
                     var i_703_ = 0
@@ -3029,18 +3029,18 @@ class Class64_Sub3 : Class64 {
                     if (class124.aShortArray1822 != null) {
                         i_708_ = class124.aShortArray1822!![i_700_].toInt()
                         if (i_708_ != -1) {
-                            class12 = var_renderConfig.method3(i_708_ and 0xffff, -6662)
-                            if ((anInt5556 and 0x40) != 0 && class12!!.aBoolean209) {
+                            npcAppearanceFlags = var_renderConfig.method3(i_708_ and 0xffff, -6662)
+                            if ((anInt5556 and 0x40) != 0 && npcAppearanceFlags!!.aBoolean209) {
                                 i_708_ = -1
-                                class12 = null
+                                npcAppearanceFlags = null
                             } else {
-                                i_704_ = class12!!.aByte202.toInt()
-                                if (class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) aBoolean5638 = true
-                                i_703_ = class12.aByte213.toInt()
+                                i_704_ = npcAppearanceFlags!!.aByte202.toInt()
+                                if (npcAppearanceFlags.aByte198.toInt() != 0 || npcAppearanceFlags.aByte211.toInt() != 0) aBoolean5638 = true
+                                i_703_ = npcAppearanceFlags.aByte213.toInt()
                             }
                         }
                     }
-                    val bool_709_ = ((class124.aByteArray1834 != null && (class124.aByteArray1834!![i_700_].toInt() != 0)) || (class12 != null && class12.anInt200 != 0))
+                    val bool_709_ = ((class124.aByteArray1834 != null && (class124.aByteArray1834!![i_700_].toInt() != 0)) || (npcAppearanceFlags != null && npcAppearanceFlags.anInt200 != 0))
                     if ((bool || bool_709_) && class124.aByteArray1839 != null) i_701_ += (class124.aByteArray1839!![i_700_].toInt() shl 17)
                     if (bool_709_) i_701_ += 65536
                     i_701_ += (0xff and i_703_) shl 8
@@ -3049,7 +3049,7 @@ class Class64_Sub3 : Class64 {
                     i_702_ += i_699_ and 0xffff
                     ls[i_699_] = (i_701_.toLong() shl 32) - -i_702_.toLong()
                     val class64_sub3_710_ = this
-                    class64_sub3_710_.aBoolean5638 = (class64_sub3_710_.aBoolean5638 or (class12 != null && (class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0)))
+                    class64_sub3_710_.aBoolean5638 = (class64_sub3_710_.aBoolean5638 or (npcAppearanceFlags != null && (npcAppearanceFlags.aByte198.toInt() != 0 || npcAppearanceFlags.aByte211.toInt() != 0)))
                     aBoolean5595 = aBoolean5595 or bool_709_
                     i_699_++
                 }

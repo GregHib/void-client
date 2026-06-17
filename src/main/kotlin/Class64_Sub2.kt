@@ -1885,7 +1885,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 val bool = (0x100 and anInt5463) != 0
                 for (i_338_ in 0..<anInt5478) {
                     val i_339_ = `is`[i_338_]
-                    var class12: Class12? = null
+                    var npcAppearanceFlags: NpcAppearanceFlags? = null
                     var i_340_ = 0
                     var i_341_ = 0
                     var i_342_ = 0
@@ -1913,17 +1913,17 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     if (class124.aShortArray1822 != null) {
                         i_347_ = class124.aShortArray1822!![i_339_].toInt()
                         if (i_347_ != -1) {
-                            class12 = var_renderConfig.method3(0xffff and i_347_, -6662)
-                            if ((0x40 and anInt5472) != 0 && class12!!.aBoolean209) {
+                            npcAppearanceFlags = var_renderConfig.method3(0xffff and i_347_, -6662)
+                            if ((0x40 and anInt5472) != 0 && npcAppearanceFlags!!.aBoolean209) {
                                 i_347_ = -1
-                                class12 = null
+                                npcAppearanceFlags = null
                             } else {
-                                i_343_ = class12!!.aByte202.toInt()
-                                i_342_ = class12.aByte213.toInt()
+                                i_343_ = npcAppearanceFlags!!.aByte202.toInt()
+                                i_342_ = npcAppearanceFlags.aByte213.toInt()
                             }
                         }
                     }
-                    val bool_348_ = ((class124.aByteArray1834 != null && class124.aByteArray1834!![i_339_].toInt() != 0) || (class12 != null && class12.anInt200 != 0))
+                    val bool_348_ = ((class124.aByteArray1834 != null && class124.aByteArray1834!![i_339_].toInt() != 0) || (npcAppearanceFlags != null && npcAppearanceFlags.anInt200 != 0))
                     if ((bool || bool_348_) && class124.aByteArray1839 != null) i_340_ += (class124.aByteArray1839!![i_339_].toInt() shl 17)
                     if (bool_348_) i_340_ += 65536
                     i_340_ += 0xff00 and (i_342_ shl 8)
@@ -1932,7 +1932,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     i_341_ += 0xffff and i_338_
                     ls[i_338_] = (i_340_.toLong() shl 32) + i_341_.toLong()
                     val class64_sub2_349_ = this
-                    class64_sub2_349_.aBoolean5502 = (class64_sub2_349_.aBoolean5502 or (class12 != null && (class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0)))
+                    class64_sub2_349_.aBoolean5502 = (class64_sub2_349_.aBoolean5502 or (npcAppearanceFlags != null && (npcAppearanceFlags.aByte198.toInt() != 0 || npcAppearanceFlags.aByte211.toInt() != 0)))
                     aBoolean5428 = aBoolean5428 or bool_348_
                 }
                 method2832(`is`, ls, 0)

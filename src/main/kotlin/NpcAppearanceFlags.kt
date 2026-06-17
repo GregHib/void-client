@@ -1,7 +1,7 @@
 /* Class12 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class12 {
+class NpcAppearanceFlags {
     @JvmField
     var aByte198: Byte = 0
     @JvmField

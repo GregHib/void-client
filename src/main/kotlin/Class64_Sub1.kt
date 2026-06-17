@@ -3364,7 +3364,7 @@ class Class64_Sub1 : Class64 {
         val bool = (anInt5316 and 0x100) != 0
         for (i_789_ in 0..<anInt5351) {
             val i_790_ = `is`[i_789_]
-            var class12: Class12? = null
+            var npcAppearanceFlags: NpcAppearanceFlags? = null
             var i_791_ = 0
             var i_792_ = 0
             var i_793_ = 0
@@ -3388,14 +3388,14 @@ class Class64_Sub1 : Class64 {
             if (class124.aShortArray1822 != null) {
                 i_798_ = class124.aShortArray1822!![i_790_].toInt()
                 if (i_798_ != -1) {
-                    class12 = var_d!!.method3(i_798_ and 0xffff, -6662)
-                    if ((i_787_ and 0x40) == 0 || !class12!!.aBoolean209) {
-                        i_793_ = class12!!.aByte213.toInt()
-                        i_794_ = class12.aByte202.toInt()
+                    npcAppearanceFlags = var_d!!.method3(i_798_ and 0xffff, -6662)
+                    if ((i_787_ and 0x40) == 0 || !npcAppearanceFlags!!.aBoolean209) {
+                        i_793_ = npcAppearanceFlags!!.aByte213.toInt()
+                        i_794_ = npcAppearanceFlags.aByte202.toInt()
                     } else i_798_ = -1
                 }
             }
-            val bool_799_ = (aByteArray5325 != null && aByteArray5325!![i_790_].toInt() != 0 || class12 != null && class12.anInt200 == 2)
+            val bool_799_ = (aByteArray5325 != null && aByteArray5325!![i_790_].toInt() != 0 || npcAppearanceFlags != null && npcAppearanceFlags.anInt200 == 2)
             if ((bool || bool_799_) && aByteArray5358 != null) i_791_ += aByteArray5358!![i_790_].toInt() shl 17
             if (bool_799_) i_791_ += 65536
             i_791_ += (i_793_ and 0xff) shl 8

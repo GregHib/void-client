@@ -6,7 +6,7 @@ interface RenderConfig {
 
     fun method2(bool: Boolean): Int
 
-    fun method3(i: Int, i_3_: Int): Class12?
+    fun method3(i: Int, i_3_: Int): NpcAppearanceFlags?
 
     fun method4(i: Int, i_4_: Int): Boolean
 
