@@ -462,8 +462,8 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, OpenGlRenderNode.anInt10483)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, Class348_Sub49_Sub1.anInt9750)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 89)
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (Class132.aPlayer_1907!!.x))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (Class132.aPlayer_1907!!.y))
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (LocalPlayerState.aPlayer_1907!!.x))
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (LocalPlayerState.aPlayer_1907!!.y))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 63)
                                 } else {
                                     Class93.anInt1534 = i_72_
@@ -473,7 +473,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 }
                                 Class348_Sub42_Sub14.method3243(123, class348_sub47)
                                 Class298.method2252(true, i_74_, i_75_, (-120).toByte(), 1, 0, 1, -4, 0)
-                            } else Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
+                            } else Class361.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
                         }
                         if (i_76_ == 4) {
                             Class93.anInt1534 = i_72_
@@ -622,7 +622,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 12) {
-                            if (Class192.anInt2581 > 0 && Class182.aClass346_2449!!.method2696(82, -127) && Class182.aClass346_2449!!.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
+                            if (Class192.anInt2581 > 0 && Class182.aClass346_2449!!.method2696(82, -127) && Class182.aClass346_2449!!.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
                             else {
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
@@ -896,7 +896,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class228.anInt2975++
                                 val class348_sub47 = method2148((Class52.aClass351_4907), (Class348_Sub23_Sub2.aClass77_9029), -127)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle((Class132.aPlayer_1907!!.anInt10290), 3.toByte())
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle((LocalPlayerState.aPlayer_1907!!.anInt10290), 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class301.anInt3829, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(Class149.anInt2046, -4086)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-29).toByte(), (if (Class182.aClass346_2449!!.method2696(82, -121)) 1 else 0))

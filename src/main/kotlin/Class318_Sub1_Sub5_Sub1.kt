@@ -35,7 +35,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
         val class101 = var_renderer!!.method3705()
         class101.method894((this.x - -this.aShort8781), this.anInt6382, (this.y - -this.aShort8769))
         val class318_sub4 = method136(i, aBoolean10130, false)
-        if (Class305.aBoolean3870) aClass64_10124!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), Class132.anInt1906, 0)
+        if (Class305.aBoolean3870) aClass64_10124!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         else aClass64_10124!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         return class318_sub4
     }
@@ -72,7 +72,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
         if (class64 != null) {
             val class101 = var_renderer.method3705()
             class101.method894(this.x, this.anInt6382, this.y)
-            if (Class305.aBoolean3870) return class64.method623(i_2_, i, class101, false, 0, Class132.anInt1906)
+            if (Class305.aBoolean3870) return class64.method623(i_2_, i, class101, false, 0, LocalPlayerState.anInt1906)
             return class64.method628(i_2_, i, class101, false, 0)
         }
         return false

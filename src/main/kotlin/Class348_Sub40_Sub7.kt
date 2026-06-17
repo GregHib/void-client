@@ -283,9 +283,9 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     Class240.aClass324_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     if (Loader.showCoordinates) {
-                                                        val playerX = (Class132.aPlayer_1907!!.x shr 9) + ArbVertexProgram.regionTileX
-                                                        val playerY = (Class132.aPlayer_1907!!.y shr 9) + Class90.regionTileY
-                                                        Class240.aClass324_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + Class132.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
+                                                        val playerX = (LocalPlayerState.aPlayer_1907!!.x shr 9) + ArbVertexProgram.regionTileX
+                                                        val playerY = (LocalPlayerState.aPlayer_1907!!.y shr 9) + Class90.regionTileY
+                                                        Class240.aClass324_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + LocalPlayerState.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
                                                         Class240.aClass324_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
@@ -374,7 +374,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             else {
                                                 val abstractModelRenderer: AbstractModelRenderer?
                                                 if (class46.anInt812 != -1) {
-                                                    val class154 = (if (class46.aBoolean720) (Class132.aPlayer_1907!!.aClass154_10536) else null)
+                                                    val class154 = (if (class46.aBoolean720) (LocalPlayerState.aPlayer_1907!!.aClass154_10536) else null)
                                                     abstractModelRenderer = (Exception_Sub1.aClass255_112!!.method1941((class46.anInt672), (-74).toByte(), (class46.anInt812), (class46.anInt781), (0xffffff.inv() or (class46.anInt809)), (class46.anInt678), Class348_Sub8.aRenderer6654, class154))
                                                 } else if ((class46.anInt806) == -1) abstractModelRenderer = (class46.method443(Class348_Sub8.aRenderer6654!!, (-57).toByte()))
                                                 else abstractModelRenderer = (method2263(Class348_Sub8.aRenderer6654, 0, (class46.anInt806)))
@@ -420,7 +420,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 if (class213 != null) {
                                                     class213 = (class213.method1560((class46.anInt781), 97.toByte()))
                                                     val class17 = (if ((class46.anInt699) == -1) null else (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7)))
-                                                    val class154 = (if (!(class46.aBoolean720)) null else (Class132.aPlayer_1907!!.aClass154_10536))
+                                                    val class154 = (if (!(class46.aBoolean720)) null else (LocalPlayerState.aPlayer_1907!!.aClass154_10536))
                                                     class64 = (class213.method1559(class154, class17, Class348_Sub8.aRenderer6654, 2048, (class46.anInt841), 1, (class46.anInt795), 88.toByte(), (class46.anInt730)))
                                                     if (class64 != null) i_60_ = (-class64.fa() shr 1)
                                                     else Class251.method1916(-9343, class46)
@@ -437,15 +437,15 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 val class348_sub13 = (Class258_Sub4.method1974((-123).toByte(), (class46.anInt753), false))
                                                 val class17 = (if ((class46.anInt699) == -1) null else (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7)))
                                                 if (class348_sub13 != null) {
-                                                    val class154 = (if (class46.aBoolean720) (Class132.aPlayer_1907!!.aClass154_10536) else null)
+                                                    val class154 = (if (class46.aBoolean720) (LocalPlayerState.aPlayer_1907!!.aClass154_10536) else null)
                                                     class64 = (class348_sub13.method2803(class17, class154, (class46.anInt779), (class46.anInt795), (class46.anInt841), (class46.anInt730), 2048, Class348_Sub8.aRenderer6654, (class46.anInt770) == 9, -1))
                                                 }
                                             } else if (class46.anInt699 == -1) {
-                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, -1, 0, (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), null, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), -1))
+                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, -1, 0, (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (LocalPlayerState.aPlayer_1907!!.aClass154_10536), null, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), -1))
                                                 if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46)
                                             } else {
                                                 val class17 = (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7))
-                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), class17, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), (class46.anInt730)))
+                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (LocalPlayerState.aPlayer_1907!!.aClass154_10536), class17, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), (class46.anInt730)))
                                                 if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46)
                                             }
                                             if (class64 != null) {

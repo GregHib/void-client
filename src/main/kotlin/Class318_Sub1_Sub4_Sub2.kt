@@ -49,7 +49,7 @@ class Class318_Sub1_Sub4_Sub2 internal constructor(var_renderer: Renderer?, clas
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
         if (i_4_ != 0) return true
-        if (Class305.aBoolean3870) return class64.method623(i_3_, i, class101, false, 0, Class132.anInt1906)
+        if (Class305.aBoolean3870) return class64.method623(i_3_, i, class101, false, 0, LocalPlayerState.anInt1906)
         return class64.method628(i_3_, i, class101, false, 0)
     }
 
@@ -103,10 +103,10 @@ class Class318_Sub1_Sub4_Sub2 internal constructor(var_renderer: Renderer?, clas
         val i_13_ = this.y shr 9
         this.aClass235_10115!!.method1670(i_12_, class101, i_13_, var_renderer, i_12_, class64, true, (-73).toByte(), i_13_)
         if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
-        else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), Class132.anInt1906, 0)
+        else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         if ((this.aClass235_10115!!.aClass318_Sub10_3081) != null) {
             val class98 = this.aClass235_10115!!.aClass318_Sub10_3081!!.method2525()
-            if (Class305.aBoolean3870) var_renderer.method3685(class98, Class132.anInt1906)
+            if (Class305.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         aBoolean10095 = class64.F() || (this.aClass235_10115!!.aClass318_Sub10_3081) != null

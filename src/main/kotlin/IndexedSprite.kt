@@ -96,7 +96,7 @@ class IndexedSprite : Sprite {
                     Class348_Sub8.aRenderer6654!!.method3638(Class157.aAbstractCameraTransform_2123)
                 }
                 if (!Class305.aBoolean3870) Class348_Sub8.aRenderer6654!!.da(i_9_, i_15_, i_11_, Class239_Sub21.anIntArray6062)
-                else Class348_Sub8.aRenderer6654!!.HA(i_9_, i_15_, i_11_, Class132.anInt1906, Class239_Sub21.anIntArray6062)
+                else Class348_Sub8.aRenderer6654!!.HA(i_9_, i_15_, i_11_, LocalPlayerState.anInt1906, Class239_Sub21.anIntArray6062)
                 if (Class59_Sub1.aBoolean5300) Class285_Sub1.method2129(60.toByte())
                 else {
                     Class157.aAbstractCameraTransform_2123!!.method891(-i_10_, 0, 0)

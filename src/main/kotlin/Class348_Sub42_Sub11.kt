@@ -138,8 +138,8 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
                         Class64.anIntArray1127!![i_9_] = 1000000
                         Class56.anIntArray1045!![i_9_] = 0
                     }
-                    var i_10_ = (Class132.aPlayer_1907!!.x)
-                    var i_11_ = (Class132.aPlayer_1907!!.y)
+                    var i_10_ = (LocalPlayerState.aPlayer_1907!!.x)
+                    var i_11_ = (LocalPlayerState.aPlayer_1907!!.y)
                     if (i >= 100) {
                         if (Class348_Sub40_Sub21.anInt9282 == 1 || Class9.anInt167 != -1) {
                             if (Class348_Sub40_Sub21.anInt9282 != 1) {

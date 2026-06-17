@@ -60,7 +60,7 @@ class Class348_Sub11 : Class348(), Interface6 {
                 if (string.equals(Class83.aStringArray1441!![i_1_], ignoreCase = true)) return true
                 i_1_++
             }
-            if (string.equals(Class132.aPlayer_1907!!.aString10544, ignoreCase = true)) return true
+            if (string.equals(LocalPlayerState.aPlayer_1907!!.aString10544, ignoreCase = true)) return true
             if (i.toInt() != -63) return false
             return false
         }

@@ -56,9 +56,9 @@ public abstract class AbstractCameraTransform {
             anInt1595++
             val i_4_ = ((Class286_Sub4.anInt6246 shr 12) - -(ArbVertexProgram.regionTileX shr 3))
             val i_5_ = ((Class90.regionTileY shr 3) + (Class59_Sub2_Sub2.anInt8685 shr 12))
-            Class132.aPlayer_1907!!.plane = 0.toByte()
-            Class355.anInt4372 = Class132.aPlayer_1907!!.plane.toInt()
-            Class132.aPlayer_1907!!.method2449(8, 8, 118.toByte())
+            LocalPlayerState.aPlayer_1907!!.plane = 0.toByte()
+            Class355.anInt4372 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
+            LocalPlayerState.aPlayer_1907!!.method2449(8, 8, 118.toByte())
             if (i.toInt() != -49) anInt1597 = 115
             var i_6_ = 18
             Class322.anIntArray4031 = IntArray(i_6_)

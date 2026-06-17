@@ -73,14 +73,14 @@ class Class287 {
                     if (class17.anIntArray236 != null && class17.anIntArray265 != null) i_6_ = ((Math.random() * (-(class17.anIntArray236!![i]) + (class17.anIntArray265!![i])).toDouble()).toInt() + class17.anIntArray236!![i])
                     val i_7_ = (if (class17.anIntArray253 == null) 255 else class17.anIntArray253!![i])
                     if (i_5_ == 0) {
-                        if (Class132.aPlayer_1907 == class318_sub1) {
+                        if (LocalPlayerState.aPlayer_1907 == class318_sub1) {
                             if (!class17.aBoolean268) Class348_Sub20.method2947(true, i_7_, i_2_, i_3_, 0, i_6_)
                             else Class279.method2090(i_3_, i_6_, false, (-35).toByte(), i_7_, 0, i_2_)
                         }
                     } else if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) != 0) {
                         val i_8_ = (class318_sub1!!.x + -256 shr 9)
                         val i_9_ = (class318_sub1.y - 256 shr 9)
-                        val i_10_ = (if (Class132.aPlayer_1907 != class318_sub1) ((class318_sub1.plane.toInt() shl 24) + ((i_8_ shl 16) + (i_9_ shl 8)) + i_5_) else 0)
+                        val i_10_ = (if (LocalPlayerState.aPlayer_1907 != class318_sub1) ((class318_sub1.plane.toInt() shl 24) + ((i_8_ shl 16) + (i_9_ shl 8)) + i_5_) else 0)
                         Class258_Sub2.aParticleEmitterNodeArray8531s!![Class147.anInt2021++] = ParticleEmitterNode((if (class17.aBoolean268) 2.toByte() else 1.toByte()), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1)
                     }
                 }

@@ -67,7 +67,7 @@ class Class43 {
                 var i_5_ = 0
                 while (Class31.anInt425 > i_5_) {
                     val i_6_ = (Class350.method3452(i_5_ - -Class239_Sub24.anInt6095, (-15).toByte(), Class31.anInt425) + i_4_)
-                    if (Class132.anIntArray1909!![i_6_] == Class318_Sub1_Sub1_Sub2.anInt9997) Class92.anInterface4Array1525!![i_6_]!!.method14(0, 0, Class58.anInt1067, Class344.anInt4267, i_5_ * Class58.anInt1067, Class344.anInt4267 * i_3_, true, true)
+                    if (LocalPlayerState.anIntArray1909!![i_6_] == Class318_Sub1_Sub1_Sub2.anInt9997) Class92.anInterface4Array1525!![i_6_]!!.method14(0, 0, Class58.anInt1067, Class344.anInt4267, i_5_ * Class58.anInt1067, Class344.anInt4267 * i_3_, true, true)
                     i_5_++
                 }
                 i_3_++

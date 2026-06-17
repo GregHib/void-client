@@ -105,7 +105,7 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
                         var i_13_ = i_7_
                         while (i_8_ >= i_13_) {
                             val i_14_ = (i_12_ + Class350.method3452((Class239_Sub24.anInt6095 + i_13_), (-15).toByte(), Class31.anInt425))
-                            Class132.anIntArray1909!![i_14_] = Class318_Sub1_Sub1_Sub2.anInt9997
+                            LocalPlayerState.anIntArray1909!![i_14_] = Class318_Sub1_Sub1_Sub2.anInt9997
                             i_13_++
                         }
                     }

@@ -113,7 +113,7 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                     i_7_ -= 256
                     if (i_7_ < 0) i_7_ = 0
                     val i_9_ = ((class348_sub9.anInt6694 + -i_7_) * i_8_ / class348_sub9.anInt6694)
-                    Class132.aPlayer_1907!!.method2436(100.toByte())
+                    LocalPlayerState.aPlayer_1907!!.method2436(100.toByte())
                     if (i_6_.toInt() == -78) {
                         var i_10_ = 8192
                         val i_11_ = (-i_3_ + ((class348_sub9.anInt6678 + class348_sub9.anInt6698) / 2))

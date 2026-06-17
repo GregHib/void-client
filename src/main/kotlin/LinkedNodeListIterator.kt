@@ -159,9 +159,9 @@ class LinkedNodeListIterator {
                             i_6_ = 0x3fff and -Class314.aFloat3938.toInt()
                         } else {
                             i_5_ = 4096 - 16 * Class348_Sub49_Sub1.anInt9750
-                            i_3_ = (Class132.aPlayer_1907!!.y)
+                            i_3_ = (LocalPlayerState.aPlayer_1907!!.y)
                             i_6_ = (-Class314.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483 and 0x3fff)
-                            i_4_ = (Class132.aPlayer_1907!!.x)
+                            i_4_ = (LocalPlayerState.aPlayer_1907!!.x)
                         }
                         val i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208
                         val i_8_ = (208 - (Class348_Sub40_Sub3.anInt9109 * 2 - 48) + 4 * Class348_Sub40_Sub3.anInt9109 - i_3_ / 128)
@@ -208,7 +208,7 @@ class LinkedNodeListIterator {
                             val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_22_].toLong(), -6008)) as? Class348_Sub22)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
-                                if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (Class132.aPlayer_1907!!.plane))) {
+                                if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (LocalPlayerState.aPlayer_1907!!.plane))) {
                                     var class79 = (npc.aClass79_10505)
                                     if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1))
                                     if (class79 != null && class79.aBoolean1397 && class79.aBoolean1396) {
@@ -225,7 +225,7 @@ class LinkedNodeListIterator {
                         val `is` = Class286_Sub7.anIntArray6290
                         for (i_26_ in 0..<i_25_) {
                             val player = (Class294.aPlayerArray5058!![`is`!![i_26_]])
-                            if (player != null && player.method2457(37.toByte()) && !player.aBoolean10551 && (Class132.aPlayer_1907 != player) && (player.plane == (Class132.aPlayer_1907!!.plane))) {
+                            if (player != null && player.method2457(37.toByte()) && !player.aBoolean10551 && (LocalPlayerState.aPlayer_1907 != player) && (player.plane == (LocalPlayerState.aPlayer_1907!!.plane))) {
                                 val i_27_ = (-(i_4_ / 128) + (player.x) / 128)
                                 val i_28_ = (-(i_3_ / 128) + (player.y) / 128)
                                 var bool = false
@@ -247,7 +247,7 @@ class LinkedNodeListIterator {
                                     i_31_++
                                 }
                                 var bool_32_ = false
-                                if ((Class132.aPlayer_1907!!.anInt10542) != 0 && (player.anInt10542 != 0) && (player.anInt10542 == (Class132.aPlayer_1907!!.anInt10542))) bool_32_ = true
+                                if ((LocalPlayerState.aPlayer_1907!!.anInt10542) != 0 && (player.anInt10542 != 0) && (player.anInt10542 == (LocalPlayerState.aPlayer_1907!!.anInt10542))) bool_32_ = true
                                 if (!player.aBoolean10554) {
                                     if (!bool) {
                                         if (bool_30_) Class151.method1211(i_1_, (Class348_Sub12.aAbstractModelRendererArray6742!![5]), i, class46, var_aa, i_28_, i_2_ + -22958, i_27_)
@@ -291,11 +291,11 @@ class LinkedNodeListIterator {
                         }
                         if (Class348_Sub40_Sub21.anInt9282 != 4) {
                             if (Class248.anInt3203 != 0) {
-                                val i_40_ = (-(i_4_ / 128) + (Class248.anInt3203 * 4 + 2) - (-(2 * Class132.aPlayer_1907!!.method2436(77.toByte())) - -2))
-                                val i_41_ = (4 * Class97.anInt1548 - (-2 + i_3_ / 128) + (2 * (Class132.aPlayer_1907!!.method2436(59.toByte()) - 1)))
+                                val i_40_ = (-(i_4_ / 128) + (Class248.anInt3203 * 4 + 2) - (-(2 * LocalPlayerState.aPlayer_1907!!.method2436(77.toByte())) - -2))
+                                val i_41_ = (4 * Class97.anInt1548 - (-2 + i_3_ / 128) + (2 * (LocalPlayerState.aPlayer_1907!!.method2436(59.toByte()) - 1)))
                                 Class151.method1211(i_1_, (Class25.aAbstractModelRendererArray367!![(if (!Class348_Sub13.aBoolean6759) 0 else 1)]), i, class46, var_aa, i_41_, 2, i_40_)
                             }
-                            if (!Class132.aPlayer_1907!!.aBoolean10551) var_renderer.method3675(3, ((-125).toByte()).toByte(), -1 + (i - -((class46.anInt709) / 2)), -1 + ((class46.anInt789) / 2 + i_1_), 3, -1)
+                            if (!LocalPlayerState.aPlayer_1907!!.aBoolean10551) var_renderer.method3675(3, ((-125).toByte()).toByte(), -1 + (i - -((class46.anInt709) / 2)), -1 + ((class46.anInt789) / 2 + i_1_), 3, -1)
                         }
                     } else var_renderer.A(-16777216, var_aa, i, i_1_)
                 }

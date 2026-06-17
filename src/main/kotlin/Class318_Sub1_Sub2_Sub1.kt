@@ -55,16 +55,16 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
         class101.method894(this.x, -10 + this.anInt6382, this.y)
         val class213 = (Exception_Sub1.aClass255_112!!.method1940(i_8_ xor 0x6b, this.anInt10181))
         var class64 = class213.method1559(null, null, var_renderer, 131072, 0, this.anInt10185, 0, 88.toByte(), -1)
-        if (class64 != null && (if (Class305.aBoolean3870) class64.method623(i_7_, i, class101, true, class213.anInt2784, Class132.anInt1906) else class64.method628(i_7_, i, class101, true, class213.anInt2784))) return true
+        if (class64 != null && (if (Class305.aBoolean3870) class64.method623(i_7_, i, class101, true, class213.anInt2784, LocalPlayerState.anInt1906) else class64.method628(i_7_, i, class101, true, class213.anInt2784))) return true
         if ((this.anInt10189.inv()) != i_8_) {
             val class213_9_ = (Exception_Sub1.aClass255_112!!.method1940(-88, this.anInt10189))
             class64 = class213_9_.method1559(null, null, var_renderer, 131072, 0, (this.anInt10190), 0, 88.toByte(), -1)
-            if (class64 != null && (if (Class305.aBoolean3870) class64.method623(i_7_, i, class101, true, class213_9_.anInt2784, Class132.anInt1906) else class64.method628(i_7_, i, class101, true, class213_9_.anInt2784))) return true
+            if (class64 != null && (if (Class305.aBoolean3870) class64.method623(i_7_, i, class101, true, class213_9_.anInt2784, LocalPlayerState.anInt1906) else class64.method628(i_7_, i, class101, true, class213_9_.anInt2784))) return true
         }
         if (this.anInt10180 != -1) {
             val class213_10_ = (Exception_Sub1.aClass255_112!!.method1940(-99, this.anInt10180))
             class64 = class213_10_.method1559(null, null, var_renderer, 131072, 0, (this.anInt10186), 0, 88.toByte(), -1)
-            return class64 != null && (if (!Class305.aBoolean3870) class64.method628(i_7_, i, class101, true, class213_10_.anInt2784) else class64.method623(i_7_, i, class101, true, class213_10_.anInt2784, Class132.anInt1906))
+            return class64 != null && (if (!Class305.aBoolean3870) class64.method628(i_7_, i, class101, true, class213_10_.anInt2784) else class64.method623(i_7_, i, class101, true, class213_10_.anInt2784, LocalPlayerState.anInt1906))
         }
         return false
     }
@@ -126,7 +126,7 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
         if (this.anInt10180 != -1) {
             val class64 = (Exception_Sub1.aClass255_112!!.method1940(i xor 0x6c, this.anInt10180).method1559(null, null, var_renderer, 2048, 0, this.anInt10186, 0, 88.toByte(), -1))
             if (class64 != null) {
-                if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![2]), Class132.anInt1906, 0)
+                if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![2]), LocalPlayerState.anInt1906, 0)
                 else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![2]), 0)
                 aBoolean10191 = aBoolean10191 or class64.F()
                 anInt10184 = class64.ma()
@@ -136,7 +136,7 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
             val class64 = (Exception_Sub1.aClass255_112!!.method1940(i xor 0x3b.inv(), this.anInt10189).method1559(null, null, var_renderer, 2048, 0, this.anInt10190, 0, 88.toByte(), -1))
             if (class64 != null) {
                 if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![1]), 0)
-                else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![1]), Class132.anInt1906, 0)
+                else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![1]), LocalPlayerState.anInt1906, 0)
                 aBoolean10191 = aBoolean10191 or class64.F()
                 if (anInt10184 < class64.ma()) anInt10184 = class64.ma()
             }
@@ -144,7 +144,7 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
         val class64 = (Exception_Sub1.aClass255_112!!.method1940(-48, this.anInt10181).method1559(null, null, var_renderer, 2048, 0, this.anInt10185, 0, 88.toByte(), -1))
         if (class64 != null) {
             if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
-            else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), Class132.anInt1906, 0)
+            else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
             aBoolean10191 = aBoolean10191 or class64.F()
             if (anInt10184 < class64.ma()) anInt10184 = class64.ma()
         }

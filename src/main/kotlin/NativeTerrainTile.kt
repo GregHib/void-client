@@ -798,12 +798,12 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         @JvmStatic
         fun method4004(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
             anInt8292++
-            val i_10_ = Class85.method831(Class38.anInt513, i_4_, Class132.anInt1910, -118)
-            val i_11_ = Class85.method831(Class38.anInt513, i, Class132.anInt1910, 72)
+            val i_10_ = Class85.method831(Class38.anInt513, i_4_, LocalPlayerState.anInt1910, -118)
+            val i_11_ = Class85.method831(Class38.anInt513, i, LocalPlayerState.anInt1910, 72)
             val i_12_ = Class85.method831(CameraNodeList.anInt1745, i_8_, Class369.anInt4960, -80)
             val i_13_ = Class85.method831(CameraNodeList.anInt1745, i_3_, Class369.anInt4960, -101)
-            val i_14_ = Class85.method831(Class38.anInt513, i_4_ + i_6_, Class132.anInt1910, -110)
-            val i_15_ = Class85.method831(Class38.anInt513, i + -i_6_, Class132.anInt1910, 28)
+            val i_14_ = Class85.method831(Class38.anInt513, i_4_ + i_6_, LocalPlayerState.anInt1910, -110)
+            val i_15_ = Class85.method831(Class38.anInt513, i + -i_6_, LocalPlayerState.anInt1910, 28)
             if (i_7_ < -33) {
                 for (i_16_ in i_10_..<i_14_) Class135_Sub2.method1156(-27, i_13_, Class17.anIntArrayArray255!![i_16_]!!, i_12_, i_9_)
                 for (i_17_ in i_11_ downTo i_15_ + 1) Class135_Sub2.method1156(-27, i_13_, Class17.anIntArrayArray255!![i_17_]!!, i_12_, i_9_)

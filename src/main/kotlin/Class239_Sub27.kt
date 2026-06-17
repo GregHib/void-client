@@ -70,7 +70,7 @@ class Class239_Sub27 : Class239 {
             var i_16_ = i_9_ * (3 + (i_5_ shl 1))
             var i_17_ = i_10_ * (-3 + (i_6_ shl 1))
             var i_18_ = i_15_ * (i_5_ - -1)
-            if (Class132.anInt1910 <= i_1_ && Class38.anInt513 >= i_1_) {
+            if (LocalPlayerState.anInt1910 <= i_1_ && Class38.anInt513 >= i_1_) {
                 val i_19_ = Class85.method831(CameraNodeList.anInt1745, i + i_4_, Class369.anInt4960, -89)
                 val i_20_ = Class85.method831(CameraNodeList.anInt1745, -i_4_ + i, Class369.anInt4960, -116)
                 Class135_Sub2.method1156(-27, i_19_, Class17.anIntArrayArray255!![i_1_]!!, i_20_, i_3_)
@@ -100,10 +100,10 @@ class Class239_Sub27 : Class239 {
                 i_6_--
                 val i_22_ = i_1_ + -i_6_
                 val i_23_ = i_6_ + i_1_
-                if (i_23_ >= Class132.anInt1910 && i_22_ <= Class38.anInt513) {
+                if (i_23_ >= LocalPlayerState.anInt1910 && i_22_ <= Class38.anInt513) {
                     val i_24_ = Class85.method831(CameraNodeList.anInt1745, i + i_5_, Class369.anInt4960, 86)
                     val i_25_ = Class85.method831(CameraNodeList.anInt1745, -i_5_ + i, Class369.anInt4960, 32)
-                    if (Class132.anInt1910 <= i_22_) Class135_Sub2.method1156(i_2_ + -26, i_24_, Class17.anIntArrayArray255!![i_22_]!!, i_25_, i_3_)
+                    if (LocalPlayerState.anInt1910 <= i_22_) Class135_Sub2.method1156(i_2_ + -26, i_24_, Class17.anIntArrayArray255!![i_22_]!!, i_25_, i_3_)
                     if (Class38.anInt513 >= i_23_) Class135_Sub2.method1156(-27, i_24_, Class17.anIntArrayArray255!![i_23_]!!, i_25_, i_3_)
                 }
             }

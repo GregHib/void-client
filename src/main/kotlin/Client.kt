@@ -36,7 +36,7 @@ import ModelFacePriorityNode.Companion.method1126
 import MinimapRectClipper.method225
 import ModelBatchBase.Companion.method1127
 import FrameStatsReset.Companion.method1133
-import Class132.method1137
+import LocalPlayerState.method1137
 import Class133.method1139
 import Class135.Companion.method1149
 import Class135_Sub1.Companion.method1154
@@ -1779,7 +1779,7 @@ class Client : GameAppletFrame() {
         try {
             string = ("[1)" + ArbVertexProgram.regionTileX + "," + Class90.regionTileY + "," + Class367_Sub4.anInt7319 + "," + Class348_Sub40_Sub3.anInt9109 + "|")
             if (i < 40) aClass262_5185 = null
-            if (Class132.aPlayer_1907 != null) string += ("2)" + Class355.anInt4372 + "," + (ArbVertexProgram.regionTileX + (Class132.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (Class132.aPlayer_1907!!.anIntArray10317!![0])) + "|")
+            if (LocalPlayerState.aPlayer_1907 != null) string += ("2)" + Class355.anInt4372 + "," + (ArbVertexProgram.regionTileX + (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + "|")
             string += ("3)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + Class321.anInt4017 + "," + Class348_Sub42_Sub8_Sub2.anInt10432 + "|")
             string += "7)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
             string += "8)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"
@@ -2192,9 +2192,9 @@ class Client : GameAppletFrame() {
                                                     i_66_ = (Class348_Sub6.anInt6633 shr 9) + (i_64_ shr 2)
                                                     i_67_ = (Class348_Sub7.anInt6652 shr 9) - (i_65_ shr 2)
                                                 } else {
-                                                    val i_68_ = ((Class132.aPlayer_1907!!.method2436(51.toByte())) - 1) * 256
-                                                    i_66_ = ((Class132.aPlayer_1907!!.x) - i_68_ shr 9) + (i_64_ shr 2)
-                                                    i_67_ = ((Class132.aPlayer_1907!!.y) - i_68_ shr 9) - (i_65_ shr 2)
+                                                    val i_68_ = ((LocalPlayerState.aPlayer_1907!!.method2436(51.toByte())) - 1) * 256
+                                                    i_66_ = ((LocalPlayerState.aPlayer_1907!!.x) - i_68_ shr 9) + (i_64_ shr 2)
+                                                    i_67_ = ((LocalPlayerState.aPlayer_1907!!.y) - i_68_ shr 9) - (i_65_ shr 2)
                                                 }
                                                 if (RenderNode.aBoolean9722 && ((Class38.anInt500 and 0x40) != 0)) {
                                                     val class46_69_ = (Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), Class149.anInt2046))
@@ -2586,7 +2586,7 @@ class Client : GameAppletFrame() {
                     if ((player.aShort8743) < 0 || (player.aShort8750) < 0 || (player.aShort8751) >= Class367_Sub4.anInt7319 || (player.aShort8747) >= Class348_Sub40_Sub3.anInt9109) player.anInt10285 = -1
                     else {
                         player.aBoolean10521 = (player.aBoolean10213 && bool)
-                        if (player == Class132.aPlayer_1907) player.anInt10285 = 2147483647
+                        if (player == LocalPlayerState.aPlayer_1907) player.anInt10285 = 2147483647
                         else {
                             var i_114_ = 0
                             if (!player.aBoolean10309) i_114_++
@@ -2638,7 +2638,7 @@ class Client : GameAppletFrame() {
                         }
                     } else if (class302.anInt3840 == 10) {
                         val player = (Class294.aPlayerArray5058!![class302.anInt3833])
-                        if (player != null && (player != Class132.aPlayer_1907) && player.anInt10285 >= 0) player.anInt10285 += 2048
+                        if (player != null && (player != LocalPlayerState.aPlayer_1907) && player.anInt10285 >= 0) player.anInt10285 += 2048
                     }
                 }
             }

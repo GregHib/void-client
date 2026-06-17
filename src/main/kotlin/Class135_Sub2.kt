@@ -111,7 +111,7 @@ class Class135_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, `
                     l = class348_sub49.readLong(-456577760)
                     Class348_Sub33.aLong6966 = class348_sub49.readLong(-456577760)
                 }
-                Class132.method1138(method313(l, -95), true, "", 79.toByte())
+                LocalPlayerState.method1138(method313(l, -95), true, "", 79.toByte())
             }
         }
 

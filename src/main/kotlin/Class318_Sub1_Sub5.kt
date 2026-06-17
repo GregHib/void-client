@@ -110,7 +110,7 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
 
         @JvmStatic
         fun method2486(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
-            if (i_8_ >= Class369.anInt4960 && i_5_ <= CameraNodeList.anInt1745 && Class132.anInt1910 <= i_9_ && Class38.anInt513 >= i_7_) MinimapSpriteRenderer.method1111(i_7_, i, i_5_, i_8_, i_9_, i_6_)
+            if (i_8_ >= Class369.anInt4960 && i_5_ <= CameraNodeList.anInt1745 && LocalPlayerState.anInt1910 <= i_9_ && Class38.anInt513 >= i_7_) MinimapSpriteRenderer.method1111(i_7_, i, i_5_, i_8_, i_9_, i_6_)
             else Class239_Sub16.method1792(i_9_, i_8_, i_7_, i_5_, (-114).toByte(), i_6_)
             if (i != 0) anInt8780 = 42
             anInt8777++

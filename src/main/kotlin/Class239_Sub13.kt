@@ -61,10 +61,10 @@ class Class239_Sub13 : Class239 {
             if (i == -3) {
                 if (class318_sub1_sub3_sub3 is Npc) {
                     val npc = class318_sub1_sub3_sub3
-                    if (npc.aClass79_10505 != null) Class286_Sub3.method2150(((Class132.aPlayer_1907!!.plane) != (npc.plane)), false, npc)
+                    if (npc.aClass79_10505 != null) Class286_Sub3.method2150(((LocalPlayerState.aPlayer_1907!!.plane) != (npc.plane)), false, npc)
                 } else if (class318_sub1_sub3_sub3 is Player) {
                     val player = class318_sub1_sub3_sub3
-                    Class348_Sub43.method3298(105.toByte(), ((player.plane) != (Class132.aPlayer_1907!!.plane)), player)
+                    Class348_Sub43.method3298(105.toByte(), ((player.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player)
                 }
                 anInt5981++
             }

@@ -147,9 +147,9 @@ class Class239_Sub24 : Class239 {
                     val i_19_: Int
                     val i_20_: Int
                     if (Class305.aBoolean3870) {
-                        i_18_ = Class132.anInt1906 * (-i_7_ + i_11_) / i_10_
+                        i_18_ = LocalPlayerState.anInt1906 * (-i_7_ + i_11_) / i_10_
                         i_17_ = i_18_
-                        i_20_ = Class132.anInt1906 * (-i_8_ + i_12_) / i_9_
+                        i_20_ = LocalPlayerState.anInt1906 * (-i_8_ + i_12_) / i_9_
                         i_19_ = i_20_
                     } else {
                         i_17_ = i_15_ * (-i_7_ + i_11_) / i_10_
@@ -167,9 +167,9 @@ class Class239_Sub24 : Class239 {
                         val i_23_ = -`is`[2] + is_21_[2]
                         val i_24_ = (`is`[0].toFloat() + i_22_.toFloat() * f).toInt()
                         val i_25_ = (`is`[2].toFloat() + i_23_.toFloat() * f).toInt()
-                        i_13_ = (Class132.aPlayer_1907!!.method2436(71.toByte()) + -1 shl 8) + i_24_ shr 9
-                        i_14_ = i_25_ - -(Class132.aPlayer_1907!!.method2436(73.toByte()) + -1 shl 8) shr 9
-                        var i_26_ = (Class132.aPlayer_1907!!.plane).toInt()
+                        i_13_ = (LocalPlayerState.aPlayer_1907!!.method2436(71.toByte()) + -1 shl 8) + i_24_ shr 9
+                        i_14_ = i_25_ - -(LocalPlayerState.aPlayer_1907!!.method2436(73.toByte()) + -1 shl 8) shr 9
+                        var i_26_ = (LocalPlayerState.aPlayer_1907!!.plane).toInt()
                         if (i_26_ < 3 && ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_24_ shr 9]!![i_25_ shr 9]).toInt()) != 0)) i_26_++
                     }
                     if (i_13_ != -1 && i_14_ != -1) {
@@ -199,7 +199,7 @@ class Class239_Sub24 : Class239 {
                     val class243 = class76!!.aClass243_1282
                     var class318_sub4 = class243.method1872(8) as Class318_Sub4?
                     while (class318_sub4 != null) {
-                        if ((RuntimeException_Sub1.aBoolean4599 || ((Class132.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) && class318_sub4.method2504(i_29_, i_28_, var_renderer, -115)) {
+                        if ((RuntimeException_Sub1.aBoolean4599 || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) && class318_sub4.method2504(i_29_, i_28_, var_renderer, -115)) {
                             val bool_30_ = false
                             val bool_31_ = false
                             val i_32_: Int
@@ -226,7 +226,7 @@ class Class239_Sub24 : Class239 {
                                                 val i_38_ = ((npc.x) - ((npc.aClass79_10505!!.anInt1399) + -1 shl 8))
                                                 val i_39_ = (-((-1 + (npc.aClass79_10505!!.anInt1399)) shl 8) + (npc.y))
                                                 if (i_35_ <= i_38_ && ((-(i_38_ + -i_35_ shr 9) + (player.method2436(68.toByte()))) >= (npc.aClass79_10505!!.anInt1399)) && i_36_ <= i_39_ && ((-(-i_36_ + i_39_ shr 9) + (player.method2436(97.toByte()))) >= (npc.aClass79_10505!!.anInt1399))) {
-                                                    Class286_Sub3.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (Class132.aPlayer_1907!!.plane)), false, npc)
+                                                    Class286_Sub3.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
                                                     npc.anInt10215 = Class367_Sub11.anInt7396
                                                 }
                                             }
@@ -242,7 +242,7 @@ class Class239_Sub24 : Class239 {
                                             val i_43_ = ((player_42_.x) + -((player_42_.method2436(94.toByte()) - 1) shl 8))
                                             val i_44_ = ((player_42_.y) + -((-1 + (player_42_.method2436(82.toByte()))) shl 8))
                                             if ((i_43_ >= i_35_) && ((player.method2436(70.toByte()) - (-i_35_ + i_43_ shr 9)) >= player_42_.method2436(89.toByte())) && (i_44_ >= i_36_) && ((player.method2436(42.toByte()) - (i_44_ - i_36_ shr 9)) >= player_42_.method2436(127.toByte()))) {
-                                                Class348_Sub43.method3298(114.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (Class132.aPlayer_1907!!.plane)), player_42_)
+                                                Class348_Sub43.method3298(114.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player_42_)
                                                 player_42_.anInt10215 = Class367_Sub11.anInt7396
                                             }
                                         }
@@ -253,7 +253,7 @@ class Class239_Sub24 : Class239 {
                                     class318_sub4 = class243.method1878((-123).toByte()) as Class318_Sub4?
                                     continue
                                 }
-                                Class348_Sub43.method3298(96.toByte(), ((Class132.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), player)
+                                Class348_Sub43.method3298(96.toByte(), ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), player)
                                 player.anInt10215 = Class367_Sub11.anInt7396
                             }
                             if (class318_sub4.aClass318_Sub1_6410 is Npc) {
@@ -270,7 +270,7 @@ class Class239_Sub24 : Class239 {
                                                     val i_49_ = (-((npc_48_.aClass79_10505!!.anInt1399) - 1 shl 8) + (npc_48_.x))
                                                     val i_50_ = ((npc_48_.y) + -((npc_48_.aClass79_10505!!.anInt1399) - 1 shl 8))
                                                     if (i_49_ >= i_45_ && ((npc_48_.aClass79_10505!!.anInt1399) <= ((npc.aClass79_10505!!.anInt1399) - (-i_45_ + i_49_ shr 9))) && (i_46_ <= i_50_) && ((npc_48_.aClass79_10505!!.anInt1399) <= ((npc.aClass79_10505!!.anInt1399) + -(i_50_ + -i_46_ shr 9)))) {
-                                                        Class286_Sub3.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (Class132.aPlayer_1907!!.plane)), false, npc_48_)
+                                                        Class286_Sub3.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc_48_)
                                                         npc_48_.anInt10215 = (Class367_Sub11.anInt7396)
                                                     }
                                                 }
@@ -285,7 +285,7 @@ class Class239_Sub24 : Class239 {
                                                 val i_53_ = ((player.x) - ((-1 + (player.method2436(116.toByte()))) shl 8))
                                                 val i_54_ = ((player.y) + -((player.method2436(121.toByte())) + -1 shl 8))
                                                 if ((i_53_ >= i_45_) && ((-(-i_45_ + i_53_ shr 9) + (npc.aClass79_10505!!.anInt1399)) >= player.method2436(114.toByte())) && (i_54_ >= i_46_) && (player.method2436(58.toByte()) <= ((npc.aClass79_10505!!.anInt1399) - (i_54_ + -i_46_ shr 9)))) {
-                                                    Class348_Sub43.method3298(125.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (Class132.aPlayer_1907!!.plane)), player)
+                                                    Class348_Sub43.method3298(125.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player)
                                                     player.anInt10215 = Class367_Sub11.anInt7396
                                                 }
                                             }
@@ -296,7 +296,7 @@ class Class239_Sub24 : Class239 {
                                         class318_sub4 = class243.method1878((-123).toByte()) as Class318_Sub4?
                                         continue
                                     }
-                                    Class286_Sub3.method2150((class318_sub4.aClass318_Sub1_6410!!.plane != (Class132.aPlayer_1907!!.plane)), false, npc)
+                                    Class286_Sub3.method2150((class318_sub4.aClass318_Sub1_6410!!.plane != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
                                     npc.anInt10215 = Class367_Sub11.anInt7396
                                 }
                             }
@@ -309,14 +309,14 @@ class Class239_Sub24 : Class239 {
                                     var class348_sub34 = (class348_sub37.aClass262_6998.method1993(-92) as Class348_Sub34?)
                                     while (class348_sub34 != null) {
                                         val class213 = (Exception_Sub1.aClass255_112!!.method1940(79, (class348_sub34.anInt6973)))
-                                        if (RenderNode.aBoolean9722 && ((Class132.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
+                                        if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
                                             val class254 = (if (Class246.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
                                             if ((Class38.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, Class246.anInt3176))))) {
                                                 Class97.anInt1555++
                                                 Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=ff9040>" + (class213.aString2795)), i_32_, (-76).toByte(), false, i_33_, -1, true, 49, i_57_.toLong(), Class28.aString5001, class348_sub34.anInt6973.toLong(), (Class348_Sub49_Sub1.anInt9747))
                                             }
                                         }
-                                        if (class318_sub4.aClass318_Sub1_6410!!.plane == (Class132.aPlayer_1907!!.plane)) {
+                                        if (class318_sub4.aClass318_Sub1_6410!!.plane == (LocalPlayerState.aPlayer_1907!!.plane)) {
                                             val strings = (class213.aStringArray2811)
                                             for (i_58_ in 4 downTo 0) {
                                                 if (strings != null && strings[i_58_] != null) {
@@ -335,7 +335,7 @@ class Class239_Sub24 : Class239 {
                                             }
                                         }
                                         Class348_Sub33.anInt6956++
-                                        Class50_Sub3.method466(((Class132.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (Class274.aClass274_3505!!.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973.toLong(), Class286_Sub8.anInt6299)
+                                        Class50_Sub3.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (Class274.aClass274_3505!!.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973.toLong(), Class286_Sub8.anInt6299)
                                         class348_sub34 = (class348_sub37.aClass262_6998.method2003(-127) as Class348_Sub34?)
                                         i_57_++
                                     }
@@ -346,14 +346,14 @@ class Class239_Sub24 : Class239 {
                                 var class51: Class51? = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-100)))
                                 if (class51!!.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), 47.toByte()))
                                 if (class51 != null) {
-                                    if (RenderNode.aBoolean9722 && ((Class132.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
+                                    if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
                                         val class254 = (if (Class246.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
                                         if (((0x4 and Class38.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (class51.method487(Class246.anInt3176, (class254.anInt3256), 54))))) {
                                             Class220.anInt2877++
                                             Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=00ffff>" + (class51.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), Class28.aString5001, (Class348_Sub40_Sub21.method3107(95.toByte(), interface10, i_32_, i_33_)), Class348_Sub49_Sub1.anInt9747)
                                         }
                                     }
-                                    if (class318_sub4.aClass318_Sub1_6410!!.plane == (Class132.aPlayer_1907!!.plane)) {
+                                    if (class318_sub4.aClass318_Sub1_6410!!.plane == (LocalPlayerState.aPlayer_1907!!.plane)) {
                                         val strings = class51.aStringArray913
                                         if (strings != null) {
                                             for (i_61_ in 4 downTo 0) {
@@ -375,7 +375,7 @@ class Class239_Sub24 : Class239 {
                                         val x = i_33_ + ArbVertexProgram.regionTileX
                                         val y = i_32_ + Class90.regionTileY
                                         Class50_Sub3.method466(
-                                            ((Class132.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane),
+                                            ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane),
                                             ("<col=00ffff>" + class51.aString884 + Loader.getDebug(class51.anInt941, x, y, class318_sub4.aClass318_Sub1_6410!!.plane.toInt())),
                                             i_32_,
                                             (-120).toByte(),

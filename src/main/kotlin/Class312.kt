@@ -73,7 +73,7 @@ class Class312 {
                 method3153(0)
                 method3147(27.toByte())
                 for (i_0_ in 0..2047) Class294.aPlayerArray5058!![i_0_] = null
-                Class132.aPlayer_1907 = null
+                LocalPlayerState.aPlayer_1907 = null
                 var i_1_ = 0
                 while (Class348_Sub32.anInt6930 > i_1_) {
                     val npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_1_]!!.aNpc_6859)

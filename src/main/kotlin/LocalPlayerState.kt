@@ -1,7 +1,7 @@
 /* Class132 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class132 {
+object LocalPlayerState {
     var anInt1905: Int = 4
     @JvmField
     var anInt1906: Int

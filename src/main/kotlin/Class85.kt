@@ -199,7 +199,7 @@ class Class85 {
                         Class92.anInterface4Array1525!![i_17_] = (Class21.aRenderer326!!.method3634(Class21.aRenderer326!!.method3665(Class58.anInt1067, Class344.anInt4267), Class21.aRenderer326!!.method3624(Class58.anInt1067, Class344.anInt4267)))
                         i_17_++
                     }
-                    Class132.anIntArray1909 = IntArray(Class31.anInt425 * Class250.anInt3225)
+                    LocalPlayerState.anIntArray1909 = IntArray(Class31.anInt425 * Class250.anInt3225)
                     Class318_Sub1_Sub1_Sub2.anInt9997 = 1
                 }
                 Class348_Sub16_Sub2.aBoolean8870 = true

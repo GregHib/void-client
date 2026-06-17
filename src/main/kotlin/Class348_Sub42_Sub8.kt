@@ -80,11 +80,11 @@ abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545:
             Class195.method1448(-56)
             Class362.anInt4458 = -1
             Class33.method338(i + 45, Class348_Sub42_Sub16_Sub1.anInt10447)
-            Class132.aPlayer_1907 = Player()
-            Class132.aPlayer_1907!!.x = 512 * Class367_Sub4.anInt7319 / 2
-            Class132.aPlayer_1907!!.anIntArray10320!![0] = Class367_Sub4.anInt7319 / 2
-            Class132.aPlayer_1907!!.y = 512 * Class348_Sub40_Sub3.anInt9109 / 2
-            Class132.aPlayer_1907!!.anIntArray10317!![0] = Class348_Sub40_Sub3.anInt9109 / 2
+            LocalPlayerState.aPlayer_1907 = Player()
+            LocalPlayerState.aPlayer_1907!!.x = 512 * Class367_Sub4.anInt7319 / 2
+            LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0] = Class367_Sub4.anInt7319 / 2
+            LocalPlayerState.aPlayer_1907!!.y = 512 * Class348_Sub40_Sub3.anInt9109 / 2
+            LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0] = Class348_Sub40_Sub3.anInt9109 / 2
             Class59_Sub2_Sub2.anInt8685 = 0
             Class286_Sub4.anInt6246 = Class59_Sub2_Sub2.anInt8685
             if (Class348_Sub40_Sub21.anInt9282 == 2) {

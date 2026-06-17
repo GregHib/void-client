@@ -70,8 +70,8 @@ class Class302 {
                 if (i_4_ == -1) i_4_ = Class348_Sub42_Sub16_Sub1.anInt10447
                 method338(0, i_4_)
                 if (i.toInt() == -43) {
-                    val i_5_ = (Class132.aPlayer_1907!!.method2436(103.toByte()) shl 8)
-                    Class335.method2655(98, Class132.aPlayer_1907!!.plane.toInt(), Class348_Sub51.anInt7267, i_5_ + (Class132.aPlayer_1907!!.y), (Class132.aPlayer_1907!!.x - -i_5_))
+                    val i_5_ = (LocalPlayerState.aPlayer_1907!!.method2436(103.toByte()) shl 8)
+                    Class335.method2655(98, LocalPlayerState.aPlayer_1907!!.plane.toInt(), Class348_Sub51.anInt7267, i_5_ + (LocalPlayerState.aPlayer_1907!!.y), (LocalPlayerState.aPlayer_1907!!.x - -i_5_))
                     Class348_Sub51.anInt7267 = 0
                 }
             } catch (runtimeexception: RuntimeException) {

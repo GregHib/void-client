@@ -235,13 +235,13 @@ class Class206 internal constructor(var_ha_Sub2: OpenGlRenderer) : Interface11 {
                             if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (if (class10.aByte180.toInt() == 3) Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350))) shr 2)
                             else {
                                 val i_7_ = 0x3 and (class10.anInt178 shr 24)
-                                if ((Class132.aPlayer_1907!!.plane).toInt() == i_7_) {
+                                if ((LocalPlayerState.aPlayer_1907!!.plane).toInt() == i_7_) {
                                     val i_8_ = 0x1fe00 and (class10.anInt178 shl 9)
-                                    val i_9_ = (Class132.aPlayer_1907!!.method2436(52.toByte()) shl 8)
+                                    val i_9_ = (LocalPlayerState.aPlayer_1907!!.method2436(52.toByte()) shl 8)
                                     val i_10_ = ((class10.anInt178 and 0xff7e29) shr 16)
-                                    val i_11_ = (-(Class132.aPlayer_1907!!.x) + 256 + (i_10_ shl 9) + i_9_)
+                                    val i_11_ = (-(LocalPlayerState.aPlayer_1907!!.x) + 256 + (i_10_ shl 9) + i_9_)
                                     val i_12_ = ((class10.anInt178 and 0xffc1) shr 8)
-                                    val i_13_ = (256 + (i_12_ shl 9) - ((Class132.aPlayer_1907!!.y) - i_9_))
+                                    val i_13_ = (256 + (i_12_ shl 9) - ((LocalPlayerState.aPlayer_1907!!.y) - i_9_))
                                     var i_14_ = (abs(i_11_) + (abs(i_13_) + -512))
                                     if (i_8_ < i_14_) {
                                         class10.anInt188 = -99999

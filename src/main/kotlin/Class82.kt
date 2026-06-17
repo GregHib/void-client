@@ -363,11 +363,11 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string.equals("getcgcoord", ignoreCase = true)) {
-                            method94(("x:" + ((Class132.aPlayer_1907!!.x) shr 9) + " z:" + ((Class132.aPlayer_1907!!.y) shr 9)), -117)
+                            method94(("x:" + ((LocalPlayerState.aPlayer_1907!!.x) shr 9) + " z:" + ((LocalPlayerState.aPlayer_1907!!.y) shr 9)), -117)
                             return
                         }
                         if (string.equals("getheight", ignoreCase = true)) {
-                            method94(("Height: " + (NativeSprite.aTerrainTileArray5191!![(Class132.aPlayer_1907!!.plane).toInt()]!!.method3982((-86).toByte(), (Class132.aPlayer_1907!!.y) shr 9, (Class132.aPlayer_1907!!.x) shr 9))), i.toInt() xor 0x1)
+                            method94(("Height: " + (NativeSprite.aTerrainTileArray5191!![(LocalPlayerState.aPlayer_1907!!.plane).toInt()]!!.method3982((-86).toByte(), (LocalPlayerState.aPlayer_1907!!.y) shr 9, (LocalPlayerState.aPlayer_1907!!.x) shr 9))), i.toInt() xor 0x1)
                             return
                         }
                         if (string.equals("resetminimap", ignoreCase = true)) {
@@ -402,17 +402,17 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {
                             method94(
-                                ("Pos: " + (Class132.aPlayer_1907!!.plane) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((Class275.method2064(
+                                ("Pos: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((Class275.method2064(
                                     Class286_Sub4.anInt6246,
-                                    (Class132.aPlayer_1907!!.plane).toInt(),
+                                    (LocalPlayerState.aPlayer_1907!!.plane).toInt(),
                                     11219,
                                     Class59_Sub2_Sub2.anInt8685
                                 )) - Class305.anInt3855)), 126
                             )
                             method94(
-                                ("Look: " + (Class132.aPlayer_1907!!.plane) + "," + (Class352.anInt4336 - -ArbVertexProgram.regionTileX shr 6) + "," + (Class90.regionTileY + Class281.anInt3647 shr 6) + "," + (0x3f and Class352.anInt4336 - -ArbVertexProgram.regionTileX) + "," + (0x3f and Class281.anInt3647 - -Class90.regionTileY) + " Height: " + ((Class275.method2064(
+                                ("Look: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (Class352.anInt4336 - -ArbVertexProgram.regionTileX shr 6) + "," + (Class90.regionTileY + Class281.anInt3647 shr 6) + "," + (0x3f and Class352.anInt4336 - -ArbVertexProgram.regionTileX) + "," + (0x3f and Class281.anInt3647 - -Class90.regionTileY) + " Height: " + ((Class275.method2064(
                                     Class352.anInt4336,
-                                    (Class132.aPlayer_1907!!.plane).toInt(),
+                                    (LocalPlayerState.aPlayer_1907!!.plane).toInt(),
                                     11219,
                                     Class281.anInt3647
                                 )) - MinimapFlagRenderer.anInt1797)), -90
@@ -610,8 +610,8 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(i + -32271) == 0) method94("enable ortho mode first (use 'ortho <n>')", i + 182)
                             else {
                                 val i_22_ = (Class348_Sub41.method3156(true, string.substring(string.indexOf(' ') - -1)))
-                                Class132.anInt1911 = i_22_
-                                method94(("orthozoom=" + Class132.anInt1911), 68)
+                                LocalPlayerState.anInt1911 = i_22_
+                                method94(("orthozoom=" + LocalPlayerState.anInt1911), 68)
                                 return
                             }
                             return

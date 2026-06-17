@@ -127,21 +127,21 @@ class Class339 : Runnable {
                 i_11_ = Class369.anInt4960
                 i_12_ = (i_7_ * Class369.anInt4960 shr 12) + i_8_
             }
-            if (i_12_ < Class132.anInt1910) {
-                i_11_ = (Class132.anInt1910 + -i_8_ shl 12) / i_7_
-                i_12_ = Class132.anInt1910
+            if (i_12_ < LocalPlayerState.anInt1910) {
+                i_11_ = (LocalPlayerState.anInt1910 + -i_8_ shl 12) / i_7_
+                i_12_ = LocalPlayerState.anInt1910
             } else if (Class38.anInt513 < i_12_) {
                 i_11_ = (Class38.anInt513 - i_8_ shl 12) / i_7_
                 i_12_ = Class38.anInt513
             }
-            if (Class132.anInt1910 <= i_9_) {
+            if (LocalPlayerState.anInt1910 <= i_9_) {
                 if (Class38.anInt513 < i_9_) {
                     i_10_ = (Class38.anInt513 - i_8_ shl 12) / i_7_
                     i_9_ = Class38.anInt513
                 }
             } else {
-                i_10_ = (-i_8_ + Class132.anInt1910 shl 12) / i_7_
-                i_9_ = Class132.anInt1910
+                i_10_ = (-i_8_ + LocalPlayerState.anInt1910 shl 12) / i_7_
+                i_9_ = LocalPlayerState.anInt1910
             }
             method1783(i_10_, -1, i_9_, i_12_, i_11_, i_1_)
         }

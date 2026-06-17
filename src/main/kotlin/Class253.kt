@@ -71,7 +71,7 @@ class Class253 {
                     anInt3247++
                     RuntimeException_Sub1.anInt4596 = i
                     Class239_Sub12.anInt5969 = 2
-                    Class132.method1138(string_12_, false, string, (-45).toByte())
+                    LocalPlayerState.method1138(string_12_, false, string, (-45).toByte())
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("u.E(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_12_ != null) "{...}" else "null") + ',' + bool + ')'))

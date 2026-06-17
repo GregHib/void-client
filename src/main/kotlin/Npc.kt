@@ -46,7 +46,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
             if (this.aClass64Array10323[i_12_] != null) {
                 val bool_13_ = (this.aClass79_10505!!.anInt1337 > 0 || (if (this.aClass79_10505!!.anInt1333 != -1) this.aClass79_10505!!.anInt1333 == 1 else this.aClass79_10505!!.anInt1399 == 1))
                 val bool_14_: Boolean
-                if (Class305.aBoolean3870) bool_14_ = (this.aClass64Array10323[i_12_]!!.method623(i_9_, i, class101, bool_13_, this.aClass79_10505!!.anInt1337, Class132.anInt1906))
+                if (Class305.aBoolean3870) bool_14_ = (this.aClass64Array10323[i_12_]!!.method623(i_9_, i, class101, bool_13_, this.aClass79_10505!!.anInt1337, LocalPlayerState.anInt1906))
                 else bool_14_ = (this.aClass64Array10323[i_12_]!!.method628(i_9_, i, class101, bool_13_, this.aClass79_10505!!.anInt1337))
                 if (bool_14_) {
                     bool = true
@@ -148,7 +148,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
                 this.aBoolean10324 = true
                 var_renderer.C(false)
                 if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), 0)
-                else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), Class132.anInt1906, 0)
+                else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), LocalPlayerState.anInt1906, 0)
                 var_renderer.C(true)
             }
         }
@@ -159,7 +159,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         if (Class305.aBoolean3870) {
             var i_24_ = 0
             while ((this.aClass64Array10323.size > i_24_)) {
-                if (this.aClass64Array10323[i_24_] != null) this.aClass64Array10323[i_24_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![i_24_]), Class132.anInt1906, 0)
+                if (this.aClass64Array10323[i_24_] != null) this.aClass64Array10323[i_24_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![i_24_]), LocalPlayerState.anInt1906, 0)
                 i_24_++
             }
         } else {
@@ -171,7 +171,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         }
         if (this.aClass318_Sub10_10327 != null) {
             val class98 = this.aClass318_Sub10_10327!!.method2525()
-            if (Class305.aBoolean3870) var_renderer.method3685(class98, Class132.anInt1906)
+            if (Class305.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         var i_25_ = 0
@@ -457,7 +457,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
 
         fun method2441(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             if (i_2_ != -22728) anInt10503 = 121
-            if (i_5_ - i_0_ >= Class369.anInt4960 && CameraNodeList.anInt1745 >= i_0_ + i_5_ && -i_0_ + i_3_ >= Class132.anInt1910 && i_3_ + i_0_ <= Class38.anInt513) Class299.method2255(i_0_, i_5_, (-68).toByte(), i_1_, i_3_, i_4_, i)
+            if (i_5_ - i_0_ >= Class369.anInt4960 && CameraNodeList.anInt1745 >= i_0_ + i_5_ && -i_0_ + i_3_ >= LocalPlayerState.anInt1910 && i_3_ + i_0_ <= Class38.anInt513) Class299.method2255(i_0_, i_5_, (-68).toByte(), i_1_, i_3_, i_4_, i)
             else method1496(i, i_3_, i_4_, i_0_, 2, i_1_, i_5_)
             anInt10498++
         }

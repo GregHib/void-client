@@ -600,7 +600,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         var bool_106_ = true
         if (i_105_ > 91) {
             var i_107_ = 0
-            while (Class132.anInt1905 > i_107_) {
+            while (LocalPlayerState.anInt1905 > i_107_) {
                 if (this.anIntArray10219[i_107_] > i_99_) bool = false
                 else bool_106_ = false
                 i_107_++
@@ -620,7 +620,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 if (i_109_ != 0) {
                     if (i_109_ == 1) i_113_ = (this.anIntArray10229[0])
                 } else i_113_ = this.anIntArray10219[0]
-                for (i_114_ in 1..<Class132.anInt1905) {
+                for (i_114_ in 1..<LocalPlayerState.anInt1905) {
                     if (i_109_ == 0) {
                         if (i_113_ > (this.anIntArray10219[i_114_])) {
                             i_113_ = (this.anIntArray10219[i_114_])
@@ -634,9 +634,9 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 if (i_109_ == 1 && i_113_ >= i) return
             } else {
                 if (bool) aByte10222 = 0.toByte()
-                for (i_111_ in 0..<Class132.anInt1905) {
+                for (i_111_ in 0..<LocalPlayerState.anInt1905) {
                     val i_112_ = aByte10222.toInt()
-                    aByte10222 = ((aByte10222 + 1) % Class132.anInt1905).toByte()
+                    aByte10222 = ((aByte10222 + 1) % LocalPlayerState.anInt1905).toByte()
                     if (i_99_ >= (this.anIntArray10219[i_112_])) {
                         i_108_ = i_112_
                         break
@@ -689,10 +689,10 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         this.anInt10268 = -1
         this.anInt10215 = -1
         this.anInt10269 = -1
-        this.anIntArray10229 = IntArray(Class132.anInt1905)
+        this.anIntArray10229 = IntArray(LocalPlayerState.anInt1905)
         this.anInt10278 = -1
         this.anInt10244 = -1
-        this.anIntArray10259 = IntArray(Class132.anInt1905)
+        this.anIntArray10259 = IntArray(LocalPlayerState.anInt1905)
         this.anInt10287 = -1000
         this.anInt10291 = -1
         aByte10222 = 0.toByte()
@@ -701,15 +701,15 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         this.aByte10279 = 0.toByte()
         this.anInt10248 = -1
         this.anInt10275 = -1
-        this.anIntArray10219 = IntArray(Class132.anInt1905)
-        this.anIntArray10303 = IntArray(Class132.anInt1905)
+        this.anIntArray10219 = IntArray(LocalPlayerState.anInt1905)
+        this.anIntArray10303 = IntArray(LocalPlayerState.anInt1905)
         this.anInt10286 = -1
         this.anInt10283 = -1
         this.aClass182Array10308 = arrayOfNulls<Class182>(12)
         this.anInt10312 = -1
         this.anInt10207 = -32768
-        this.anIntArray10304 = IntArray(Class132.anInt1905)
-        this.anIntArray10284 = IntArray(Class132.anInt1905)
+        this.anIntArray10304 = IntArray(LocalPlayerState.anInt1905)
+        this.anIntArray10284 = IntArray(LocalPlayerState.anInt1905)
         this.anInt10223 = -1000
         this.aClass264_10217 = Class264()
         aClass264_10315 = Class264()

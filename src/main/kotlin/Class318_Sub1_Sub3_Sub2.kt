@@ -51,7 +51,7 @@ class Class318_Sub1_Sub3_Sub2 internal constructor(var_renderer: Renderer?, clas
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
         if (!Class305.aBoolean3870) return class64.method628(i_11_, i, class101, false, 0)
-        return class64.method623(i_11_, i, class101, false, 0, Class132.anInt1906)
+        return class64.method623(i_11_, i, class101, false, 0, LocalPlayerState.anInt1906)
     }
 
     override fun method41(i: Int): Int {
@@ -87,10 +87,10 @@ class Class318_Sub1_Sub3_Sub2 internal constructor(var_renderer: Renderer?, clas
         val class318_sub4 = method136(i, aBoolean10056, false)
         this.aClass235_10045!!.method1670(this.aShort8751.toInt(), class101, this.aShort8747.toInt(), var_renderer, this.aShort8743.toInt(), class64, true, (-73).toByte(), this.aShort8750.toInt())
         if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
-        else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), Class132.anInt1906, 0)
+        else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         if ((this.aClass235_10045!!.aClass318_Sub10_3081) != null) {
             val class98 = this.aClass235_10045!!.aClass318_Sub10_3081!!.method2525()
-            if (Class305.aBoolean3870) var_renderer.method3685(class98, Class132.anInt1906)
+            if (Class305.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         aBoolean10055 = class64.F() || (this.aClass235_10045!!.aClass318_Sub10_3081) != null

@@ -359,7 +359,7 @@ class Class17 {
             else if (i_43_ > 100) i_43_ = 100
             val i_44_ = (i_43_ * (-Class348_Sub23_Sub3.aShort9044 + Class320.aShort3992) / 100 + Class348_Sub23_Sub3.aShort9044)
             i_42_ = i_42_ * i_44_ shr 8
-            Class132.anInt1906 = Class132.anInt1911 * i_44_ shr 8
+            LocalPlayerState.anInt1906 = LocalPlayerState.anInt1911 * i_44_ shr 8
             val i_45_ = 16384 - i and 0x3fff
             val i_46_ = 0x3fff and 16384 - i_37_
             if (i_40_ != -19360) anInterface4_252 = null

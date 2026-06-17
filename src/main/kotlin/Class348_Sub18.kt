@@ -167,7 +167,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
         fun method2942(class46: Class46, i: Byte) {
             anInt6805++
             if (class46.anInt765 == TextureMetadataProvider.anInt4610) {
-                if (Class132.aPlayer_1907!!.aString10544 == null) {
+                if (LocalPlayerState.aPlayer_1907!!.aString10544 == null) {
                     class46.anInt779 = 0
                     class46.anInt753 = 0
                 } else {
@@ -175,11 +175,11 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                     class46.anInt675 = 0x7ff and (256.0 * sin((Class367_Sub11.anInt7396).toDouble() / 40.0)).toInt()
                     class46.anInt770 = 5
                     class46.anInt753 = Class348_Sub42_Sub11.anInt9591
-                    class46.anInt779 = (Class318_Sub1_Sub3_Sub1.method2418((Class132.aPlayer_1907!!.aString10544!!), (-41).toByte()))
-                    class46.anInt699 = Class132.aPlayer_1907!!.anInt10268
+                    class46.anInt779 = (Class318_Sub1_Sub3_Sub1.method2418((LocalPlayerState.aPlayer_1907!!.aString10544!!), (-41).toByte()))
+                    class46.anInt699 = LocalPlayerState.aPlayer_1907!!.anInt10268
                     class46.anInt841 = 0
-                    class46.anInt730 = Class132.aPlayer_1907!!.anInt10312
-                    class46.anInt795 = Class132.aPlayer_1907!!.anInt10245
+                    class46.anInt730 = LocalPlayerState.aPlayer_1907!!.anInt10312
+                    class46.anInt795 = LocalPlayerState.aPlayer_1907!!.anInt10245
                     val class17 = (if (class46.anInt699 != -1) ParticleEmitterNode.aClass87_191!!.method835(class46.anInt699, 7) else null)
                     if (class17 != null) method2017(class46.anInt795, class17, 50)
                 }

@@ -95,7 +95,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                         var i_7_ = 0
                         while (i_6_ > i_7_) {
                             val player = (Class294.aPlayerArray5058!![`is`!![i_7_]])
-                            if (player != null && (Class132.aPlayer_1907 != player) && (player.aString10544 != null) && player.aString10544.equals(string, ignoreCase = true)) {
+                            if (player != null && (LocalPlayerState.aPlayer_1907 != player) && (player.aString10544 != null) && player.aString10544.equals(string, ignoreCase = true)) {
                                 bool = true
                                 if (i == 1) {
                                     WidgetComponentNode.anInt4657++

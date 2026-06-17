@@ -75,7 +75,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
                 if (i_8_ == 1) {
                     if (MapSceneTileDefinition.anIntArray1786 == null) {
                         MapSceneTileDefinition.anIntArray1786 = IntArray(4)
-                        Class132.anInt1905 = 4
+                        LocalPlayerState.anInt1905 = 4
                         DualMaterialContainer.anIntArray1636 = IntArray(4)
                     }
                     for (i_9_ in MapSceneTileDefinition.anIntArray1786!!.indices) {
@@ -85,9 +85,9 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
                     bool = true
                 } else if (i_8_ != 2) {
                     if (i_8_ == 3) {
-                        Class132.anInt1905 = class348_sub49.readUnsignedByte(255)
-                        MapSceneTileDefinition.anIntArray1786 = IntArray(Class132.anInt1905)
-                        DualMaterialContainer.anIntArray1636 = IntArray(Class132.anInt1905)
+                        LocalPlayerState.anInt1905 = class348_sub49.readUnsignedByte(255)
+                        MapSceneTileDefinition.anIntArray1786 = IntArray(LocalPlayerState.anInt1905)
+                        DualMaterialContainer.anIntArray1636 = IntArray(LocalPlayerState.anInt1905)
                     }
                 } else Class348_Sub31.anInt6923 = class348_sub49.readUnsignedShort(842397944)
             }
@@ -95,7 +95,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
                 if (MapSceneTileDefinition.anIntArray1786 == null) {
                     MapSceneTileDefinition.anIntArray1786 = IntArray(4)
                     DualMaterialContainer.anIntArray1636 = IntArray(4)
-                    Class132.anInt1905 = 4
+                    LocalPlayerState.anInt1905 = 4
                 }
                 for (i_10_ in MapSceneTileDefinition.anIntArray1786!!.indices) {
                     MapSceneTileDefinition.anIntArray1786!![i_10_] = 0

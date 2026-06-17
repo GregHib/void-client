@@ -31,7 +31,7 @@ class Class348_Sub27 : Class348() {
             val i_4_ = -89 / ((i_3_ - 78) / 44)
             Class38.anInt513 = i_1_
             CameraNodeList.anInt1745 = i
-            Class132.anInt1910 = i_0_
+            LocalPlayerState.anInt1910 = i_0_
             anInt6906++
         }
 

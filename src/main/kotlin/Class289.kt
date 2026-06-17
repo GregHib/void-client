@@ -35,8 +35,8 @@ object Class289 {
     fun method2192(i: Byte) {
         Class250.anInt3227 = 0
         anInt3702++
-        val i_0_ = (((Class132.aPlayer_1907!!.x) shr 9) - -ArbVertexProgram.regionTileX)
-        val i_1_ = (Class90.regionTileY + (Class132.aPlayer_1907!!.y shr 9))
+        val i_0_ = (((LocalPlayerState.aPlayer_1907!!.x) shr 9) - -ArbVertexProgram.regionTileX)
+        val i_1_ = (Class90.regionTileY + (LocalPlayerState.aPlayer_1907!!.y shr 9))
         if (i.toInt() != 80) Class289.method2192((-34).toByte())
         if (i_0_ >= 3053 && i_0_ <= 3156 && i_1_ >= 3056 && i_1_ <= 3136) Class250.anInt3227 = 1
         if (i_0_ >= 3072 && i_0_ <= 3118 && i_1_ >= 9492 && i_1_ <= 9535) Class250.anInt3227 = 1

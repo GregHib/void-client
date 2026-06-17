@@ -156,8 +156,8 @@ class Class239_Sub16 : Class239 {
         @JvmStatic
         fun method1792(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Byte, i_16_: Int) {
             anInt6013++
-            val i_17_ = Class85.method831(Class38.anInt513, i, Class132.anInt1910, -90)
-            val i_18_ = Class85.method831(Class38.anInt513, i_13_, Class132.anInt1910, -94)
+            val i_17_ = Class85.method831(Class38.anInt513, i, LocalPlayerState.anInt1910, -90)
+            val i_18_ = Class85.method831(Class38.anInt513, i_13_, LocalPlayerState.anInt1910, -94)
             val i_19_ = Class85.method831(CameraNodeList.anInt1745, i_12_, Class369.anInt4960, 77)
             val i_20_ = Class85.method831(CameraNodeList.anInt1745, i_14_, Class369.anInt4960, 59)
             val i_21_ = -27 / ((i_15_ - -6) / 55)

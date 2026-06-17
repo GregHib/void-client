@@ -70,7 +70,7 @@ class Class239_Sub5 : Class239 {
             anInt5893++
             class348_sub49_sub2.startBitAccess(122)
             val i_3_ = Class348_Sub42_Sub11.anInt9591
-            val player = (Player().also { Class294.aPlayerArray5058!![i_3_] = it }.also { Class132.aPlayer_1907 = it })
+            val player = (Player().also { Class294.aPlayerArray5058!![i_3_] = it }.also { LocalPlayerState.aPlayer_1907 = it })
             player.anInt10290 = i_3_
             val i_4_ = class348_sub49_sub2.readBits((-24).toByte(), 30)
             if (i.toInt() != 118) anInt5886 = 111

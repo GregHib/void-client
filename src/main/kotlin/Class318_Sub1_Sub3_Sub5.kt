@@ -139,7 +139,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
                 var class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3? = null
                 if (anInt10387 < 0) {
                     val i_9_ = -1 + -anInt10387
-                    if (i_9_ == Class348_Sub42_Sub11.anInt9591) class318_sub1_sub3_sub3 = Class132.aPlayer_1907
+                    if (i_9_ == Class348_Sub42_Sub11.anInt9591) class318_sub1_sub3_sub3 = LocalPlayerState.aPlayer_1907
                     else class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![i_9_])
                 } else {
                     val i_10_ = -1 + anInt10387
@@ -198,10 +198,10 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         method2473(class101, class64, var_renderer, -2393)
         val class318_sub4 = method136(i, false, false)
         if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
-        else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), Class132.anInt1906, 0)
+        else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         if (aClass318_Sub10_10378 != null) {
             val class98 = aClass318_Sub10_10378!!.method2525()
-            if (Class305.aBoolean3870) var_renderer.method3685(class98, Class132.anInt1906)
+            if (Class305.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         aBoolean10399 = class64.F()

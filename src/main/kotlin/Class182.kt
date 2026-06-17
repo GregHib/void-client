@@ -41,7 +41,7 @@ class Class182 {
                 l = class348_sub49.readLong(-456577760)
                 Class348_Sub33.aLong6966 = class348_sub49.readLong(-456577760)
             }
-            Class132.method1138(method313(l, -100), true, "", (-115).toByte())
+            LocalPlayerState.method1138(method313(l, -100), true, "", (-115).toByte())
         }
 
         @JvmStatic

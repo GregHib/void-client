@@ -145,7 +145,7 @@ object Class27 {
                                 }
                             }
                         }
-                        if (method2127(2, (Class132.aPlayer_1907!!.aString10544)) == string_6_) method544((Class274.aClass274_3525!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
+                        if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_6_) method544((Class274.aClass274_3525!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
                         else {
                             Class5.anInt4628++
                             val class348_sub47 = (method2148(Class348_Sub42_Sub19.aClass351_9687, Class348_Sub23_Sub2.aClass77_9029, -94))
