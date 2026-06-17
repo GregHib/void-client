@@ -484,7 +484,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         if (aByteArrayArray8232!![i]!![i_103_] < i_104_) aByteArrayArray8232!![i]!![i_103_] = i_104_.toByte()
     }
 
-    private fun method3990(i: Int, i_105_: Int, bool: Boolean, class167: Class167, class109: Class109, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
+    private fun method3990(i: Int, i_105_: Int, bool: Boolean, class167: Class167, shadowProjector: ShadowProjector, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
         val class266 = aClass266ArrayArray8230!![i]!![i_105_]
         if (class266 == null) {
             val class145 = aClass145ArrayArray8225!![i]!![i_105_]
@@ -519,8 +519,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         }
                         val f_194_ = aFloat8213 + (aFloat8212 * i_188_.toFloat() + aFloat8216 * i_189_.toFloat() + aFloat8224 * i_190_.toFloat())
                         val f_195_ = aFloat8226 + (aFloat8214 * i_188_.toFloat() + aFloat8221 * i_189_.toFloat() + aFloat8229 * i_190_.toFloat())
-                        `is`[i_187_] = (class109.anInt1665 + (f_194_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
-                        is_106_[i_187_] = (class109.anInt1668 + (f_195_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
+                        `is`[i_187_] = (shadowProjector.anInt1665 + (f_194_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
+                        is_106_[i_187_] = (shadowProjector.anInt1668 + (f_195_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
                         is_107_[i_187_] = f.toInt()
                     }
                 } else {
@@ -547,8 +547,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         }
                         val f_203_ = aFloat8213 + (aFloat8212 * i_197_.toFloat() + aFloat8216 * i_198_.toFloat() + aFloat8224 * i_199_.toFloat())
                         val f_204_ = aFloat8226 + (aFloat8214 * i_197_.toFloat() + aFloat8221 * i_198_.toFloat() + aFloat8229 * i_199_.toFloat())
-                        `is`[i_196_] = (class109.anInt1665 + (f_203_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
-                        is_106_[i_196_] = (class109.anInt1668 + (f_204_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                        `is`[i_196_] = (shadowProjector.anInt1665 + (f_203_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                        is_106_[i_196_] = (shadowProjector.anInt1668 + (f_204_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                         is_107_[i_196_] = f.toInt()
                     }
                 }
@@ -565,10 +565,10 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         val i_242_ = is_106_[i_236_]
                         val i_243_ = (is_108_[i_234_] + is_108_[i_235_] + is_108_[i_236_])
                         if (((i_237_ - i_238_) * (i_242_ - i_241_) - (i_240_ - i_241_) * (i_239_ - i_238_)) > 0) {
-                            class109.aBoolean1671 = (i_237_ < 0 || i_238_ < 0 || i_239_ < 0 || i_237_ > class109.anInt1679 || i_238_ > class109.anInt1679 || (i_239_ > class109.anInt1679))
+                            shadowProjector.aBoolean1671 = (i_237_ < 0 || i_238_ < 0 || i_239_ < 0 || i_237_ > shadowProjector.anInt1679 || i_238_ > shadowProjector.anInt1679 || (i_239_ > shadowProjector.anInt1679))
                             if (i_243_ < 765) {
                                 if (i_243_ > 0) {
-                                    if (((class145.anIntArray2001!![i_234_]) and 0xffffff) != 0) class109.method1027(
+                                    if (((class145.anIntArray2001!![i_234_]) and 0xffffff) != 0) shadowProjector.method1027(
                                         i_240_.toFloat(),
                                         i_241_.toFloat(),
                                         i_242_.toFloat(),
@@ -582,8 +582,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                         (Class298.method2250((class145.anIntArray2001!![i_235_]), 60, is_108_[i_235_], (class167.anInt2192))),
                                         (Class298.method2250((class145.anIntArray2001!![i_236_]), 95, is_108_[i_236_], (class167.anInt2192)))
                                     )
-                                } else if (((class145.anIntArray2001!![i_234_]) and 0xffffff) != 0) class109.method1027(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (class145.anIntArray2001!![i_234_]), (class145.anIntArray2001!![i_235_]), (class145.anIntArray2001!![i_236_]))
-                            } else class109.method1018(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (class167.anInt2192))
+                                } else if (((class145.anIntArray2001!![i_234_]) and 0xffffff) != 0) shadowProjector.method1027(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (class145.anIntArray2001!![i_234_]), (class145.anIntArray2001!![i_235_]), (class145.anIntArray2001!![i_236_]))
+                            } else shadowProjector.method1018(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (class167.anInt2192))
                         }
                     }
                 } else if (anInt8228 == -1) {
@@ -599,14 +599,14 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         val i_214_ = is_106_[i_208_]
                         val i_215_ = (is_108_[i_206_] + is_108_[i_207_] + is_108_[i_208_])
                         if (((i_209_ - i_210_) * (i_214_ - i_213_) - (i_212_ - i_213_) * (i_211_ - i_210_)) > 0) {
-                            class109.aBoolean1671 = (i_209_ < 0 || i_210_ < 0 || i_211_ < 0 || (i_209_ > class109.anInt1679) || (i_210_ > class109.anInt1679) || (i_211_ > class109.anInt1679))
+                            shadowProjector.aBoolean1671 = (i_209_ < 0 || i_210_ < 0 || i_211_ < 0 || (i_209_ > shadowProjector.anInt1679) || (i_210_ > shadowProjector.anInt1679) || (i_211_ > shadowProjector.anInt1679))
                             val i_216_ = (class145.aShortArray2008!![i_205_])
                             if (i_215_ < 765) {
                                 if (i_215_ > 0) {
                                     if (i_216_.toInt() != -1) {
                                         var i_217_ = -16777216
                                         if (i_216_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt())) i_217_ = -1694498816
-                                        class109.method1024(
+                                        shadowProjector.method1024(
                                             i_212_.toFloat(),
                                             i_213_.toFloat(),
                                             i_214_.toFloat(),
@@ -632,8 +632,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             i_216_.toInt()
                                         )
                                     } else if (((class145.anIntArray2001!![i_206_]) and 0xffffff) != 0) {
-                                        if (i_216_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt())) class109.anInt1674 = -1694498816
-                                        class109.method1027(
+                                        if (i_216_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt())) shadowProjector.anInt1674 = -1694498816
+                                        shadowProjector.method1027(
                                             i_212_.toFloat(),
                                             i_213_.toFloat(),
                                             i_214_.toFloat(),
@@ -647,12 +647,12 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             (Class6.method206((class145.anIntArray2001!![i_207_]), (is_108_[i_207_] shl 24 or (class167.anInt2192)), 255)),
                                             (Class6.method206((class145.anIntArray2001!![i_208_]), (is_108_[i_208_] shl 24 or (class167.anInt2192)), 255))
                                         )
-                                        class109.anInt1674 = 0
+                                        shadowProjector.anInt1674 = 0
                                     }
                                 } else if (i_216_.toInt() != -1) {
                                     var i_218_ = -16777216
                                     if (i_216_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt()))) i_218_ = -1694498816
-                                    class109.method1024(
+                                    shadowProjector.method1024(
                                         i_212_.toFloat(),
                                         i_213_.toFloat(),
                                         i_214_.toFloat(),
@@ -678,11 +678,11 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                         i_216_.toInt()
                                     )
                                 } else if (((class145.anIntArray2001!![i_206_]) and 0xffffff) != 0) {
-                                    if (i_216_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt()))) class109.anInt1674 = -1694498816
-                                    class109.method1027(i_212_.toFloat(), i_213_.toFloat(), i_214_.toFloat(), i_209_.toFloat(), i_210_.toFloat(), i_211_.toFloat(), is_107_[i_206_].toFloat(), is_107_[i_207_].toFloat(), is_107_[i_208_].toFloat(), (class145.anIntArray2001!![i_206_]), (class145.anIntArray2001!![i_207_]), (class145.anIntArray2001!![i_208_]))
-                                    class109.anInt1674 = 0
+                                    if (i_216_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_216_.toInt(), -6662)!!.aByte213.toInt()))) shadowProjector.anInt1674 = -1694498816
+                                    shadowProjector.method1027(i_212_.toFloat(), i_213_.toFloat(), i_214_.toFloat(), i_209_.toFloat(), i_210_.toFloat(), i_211_.toFloat(), is_107_[i_206_].toFloat(), is_107_[i_207_].toFloat(), is_107_[i_208_].toFloat(), (class145.anIntArray2001!![i_206_]), (class145.anIntArray2001!![i_207_]), (class145.anIntArray2001!![i_208_]))
+                                    shadowProjector.anInt1674 = 0
                                 }
-                            } else class109.method1018(i_212_.toFloat(), i_213_.toFloat(), i_214_.toFloat(), i_209_.toFloat(), i_210_.toFloat(), i_211_.toFloat(), is_107_[i_206_].toFloat(), is_107_[i_207_].toFloat(), is_107_[i_208_].toFloat(), class167.anInt2192)
+                            } else shadowProjector.method1018(i_212_.toFloat(), i_213_.toFloat(), i_214_.toFloat(), i_209_.toFloat(), i_210_.toFloat(), i_211_.toFloat(), is_107_[i_206_].toFloat(), is_107_[i_207_].toFloat(), is_107_[i_208_].toFloat(), class167.anInt2192)
                         }
                     }
                 } else {
@@ -698,15 +698,15 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         val i_228_ = is_106_[i_222_]
                         val i_229_ = (is_108_[i_220_] + is_108_[i_221_] + is_108_[i_222_])
                         if (((i_223_ - i_224_) * (i_228_ - i_227_) - (i_226_ - i_227_) * (i_225_ - i_224_)) > 0) {
-                            class109.aBoolean1671 = (i_223_ < 0 || i_224_ < 0 || i_225_ < 0 || (i_223_ > class109.anInt1679) || (i_224_ > class109.anInt1679) || (i_225_ > class109.anInt1679))
+                            shadowProjector.aBoolean1671 = (i_223_ < 0 || i_224_ < 0 || i_225_ < 0 || (i_223_ > shadowProjector.anInt1679) || (i_224_ > shadowProjector.anInt1679) || (i_225_ > shadowProjector.anInt1679))
                             val i_230_ = (class145.aShortArray2008!![i_219_])
                             if (i_229_ < 765) {
-                                if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) class109.anInt1674 = -1694498816
+                                if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) shadowProjector.anInt1674 = -1694498816
                                 if (i_229_ > 0) {
                                     if (i_230_.toInt() != -1) {
                                         var i_231_ = -16777216
                                         if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) i_231_ = -1694498816
-                                        class109.method1024(
+                                        shadowProjector.method1024(
                                             i_226_.toFloat(),
                                             i_227_.toFloat(),
                                             i_228_.toFloat(),
@@ -732,8 +732,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             i_230_.toInt()
                                         )
                                     } else if (((class145.anIntArray2001!![i_220_]) and 0xffffff) != 0) {
-                                        if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) class109.anInt1674 = -1694498816
-                                        class109.method1027(
+                                        if (i_230_.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt())) shadowProjector.anInt1674 = -1694498816
+                                        shadowProjector.method1027(
                                             i_226_.toFloat(),
                                             i_227_.toFloat(),
                                             i_228_.toFloat(),
@@ -747,12 +747,12 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             (Class6.method206((class145.anIntArray2001!![i_221_]), (is_108_[i_221_] shl 24 or (class167.anInt2192)), 255)),
                                             (Class6.method206((class145.anIntArray2001!![i_222_]), (is_108_[i_222_] shl 24 or (class167.anInt2192)), 255))
                                         )
-                                        class109.anInt1674 = 0
+                                        shadowProjector.anInt1674 = 0
                                     }
                                 } else if (i_230_.toInt() != -1) {
                                     var i_232_ = -16777216
                                     if (i_230_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt()))) i_232_ = -1694498816
-                                    class109.method1024(
+                                    shadowProjector.method1024(
                                         i_226_.toFloat(),
                                         i_227_.toFloat(),
                                         i_228_.toFloat(),
@@ -778,12 +778,12 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                         i_230_.toInt()
                                     )
                                 } else if (((class145.anIntArray2001!![i_220_]) and 0xffffff) != 0) {
-                                    if (i_230_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt()))) class109.anInt1674 = -1694498816
-                                    class109.method1027(i_226_.toFloat(), i_227_.toFloat(), i_228_.toFloat(), i_223_.toFloat(), i_224_.toFloat(), i_225_.toFloat(), is_107_[i_220_].toFloat(), is_107_[i_221_].toFloat(), is_107_[i_222_].toFloat(), (class145.anIntArray2001!![i_220_]), (class145.anIntArray2001!![i_221_]), (class145.anIntArray2001!![i_222_]))
-                                    class109.anInt1674 = 0
+                                    if (i_230_.toInt() != -1 && (method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_230_.toInt(), -6662)!!.aByte213.toInt()))) shadowProjector.anInt1674 = -1694498816
+                                    shadowProjector.method1027(i_226_.toFloat(), i_227_.toFloat(), i_228_.toFloat(), i_223_.toFloat(), i_224_.toFloat(), i_225_.toFloat(), is_107_[i_220_].toFloat(), is_107_[i_221_].toFloat(), is_107_[i_222_].toFloat(), (class145.anIntArray2001!![i_220_]), (class145.anIntArray2001!![i_221_]), (class145.anIntArray2001!![i_222_]))
+                                    shadowProjector.anInt1674 = 0
                                 }
-                                class109.anInt1674 = 0
-                            } else class109.method1018(i_226_.toFloat(), i_227_.toFloat(), i_228_.toFloat(), i_223_.toFloat(), i_224_.toFloat(), i_225_.toFloat(), is_107_[i_220_].toFloat(), is_107_[i_221_].toFloat(), is_107_[i_222_].toFloat(), class167.anInt2192)
+                                shadowProjector.anInt1674 = 0
+                            } else shadowProjector.method1018(i_226_.toFloat(), i_227_.toFloat(), i_228_.toFloat(), i_223_.toFloat(), i_224_.toFloat(), i_225_.toFloat(), is_107_[i_220_].toFloat(), is_107_[i_221_].toFloat(), is_107_[i_222_].toFloat(), class167.anInt2192)
                         }
                     }
                 }
@@ -887,38 +887,38 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                 }
                 if (anInt8228 == -1) {
                     val f_160_ = aFloat8213 + (aFloat8212 * i_110_.toFloat() + aFloat8216 * i_150_.toFloat() + aFloat8224 * i_112_.toFloat())
-                    i_121_ = (class109.anInt1665 + (f_160_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
+                    i_121_ = (shadowProjector.anInt1665 + (f_160_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
                     val f_161_ = aFloat8226 + (aFloat8214 * i_110_.toFloat() + aFloat8221 * i_150_.toFloat() + aFloat8229 * i_112_.toFloat())
-                    i_122_ = (class109.anInt1668 + (f_161_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
+                    i_122_ = (shadowProjector.anInt1668 + (f_161_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
                     val f_162_ = aFloat8213 + (aFloat8212 * i_111_.toFloat() + aFloat8216 * i_151_.toFloat() + aFloat8224 * i_112_.toFloat())
-                    i_123_ = (class109.anInt1665 + (f_162_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_118_).toInt())
+                    i_123_ = (shadowProjector.anInt1665 + (f_162_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_118_).toInt())
                     val f_163_ = aFloat8226 + (aFloat8214 * i_111_.toFloat() + aFloat8221 * i_151_.toFloat() + aFloat8229 * i_112_.toFloat())
-                    i_124_ = (class109.anInt1668 + (f_163_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_118_).toInt())
+                    i_124_ = (shadowProjector.anInt1668 + (f_163_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_118_).toInt())
                     val f_164_ = aFloat8213 + (aFloat8212 * i_111_.toFloat() + aFloat8216 * i_152_.toFloat() + aFloat8224 * i_113_.toFloat())
-                    i_125_ = (class109.anInt1665 + (f_164_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_119_).toInt())
+                    i_125_ = (shadowProjector.anInt1665 + (f_164_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_119_).toInt())
                     val f_165_ = aFloat8226 + (aFloat8214 * i_111_.toFloat() + aFloat8221 * i_152_.toFloat() + aFloat8229 * i_113_.toFloat())
-                    i_126_ = (class109.anInt1668 + (f_165_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_119_).toInt())
+                    i_126_ = (shadowProjector.anInt1668 + (f_165_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_119_).toInt())
                     val f_166_ = aFloat8213 + (aFloat8212 * i_110_.toFloat() + aFloat8216 * i_153_.toFloat() + aFloat8224 * i_113_.toFloat())
-                    i_127_ = (class109.anInt1665 + (f_166_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_120_).toInt())
+                    i_127_ = (shadowProjector.anInt1665 + (f_166_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_120_).toInt())
                     val f_167_ = aFloat8226 + (aFloat8214 * i_110_.toFloat() + aFloat8221 * i_153_.toFloat() + aFloat8229 * i_113_.toFloat())
-                    i_128_ = (class109.anInt1668 + (f_167_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_120_).toInt())
+                    i_128_ = (shadowProjector.anInt1668 + (f_167_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_120_).toInt())
                 } else {
                     val f_168_ = aFloat8213 + (aFloat8212 * i_110_.toFloat() + aFloat8216 * i_150_.toFloat() + aFloat8224 * i_112_.toFloat())
-                    i_121_ = (class109.anInt1665 + (f_168_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_121_ = (shadowProjector.anInt1665 + (f_168_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_169_ = aFloat8226 + (aFloat8214 * i_110_.toFloat() + aFloat8221 * i_150_.toFloat() + aFloat8229 * i_112_.toFloat())
-                    i_122_ = (class109.anInt1668 + (f_169_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_122_ = (shadowProjector.anInt1668 + (f_169_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_170_ = aFloat8213 + (aFloat8212 * i_111_.toFloat() + aFloat8216 * i_151_.toFloat() + aFloat8224 * i_112_.toFloat())
-                    i_123_ = (class109.anInt1665 + (f_170_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_123_ = (shadowProjector.anInt1665 + (f_170_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_171_ = aFloat8226 + (aFloat8214 * i_111_.toFloat() + aFloat8221 * i_151_.toFloat() + aFloat8229 * i_112_.toFloat())
-                    i_124_ = (class109.anInt1668 + (f_171_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_124_ = (shadowProjector.anInt1668 + (f_171_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_172_ = aFloat8213 + (aFloat8212 * i_111_.toFloat() + aFloat8216 * i_152_.toFloat() + aFloat8224 * i_113_.toFloat())
-                    i_125_ = (class109.anInt1665 + (f_172_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_125_ = (shadowProjector.anInt1665 + (f_172_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_173_ = aFloat8226 + (aFloat8214 * i_111_.toFloat() + aFloat8221 * i_152_.toFloat() + aFloat8229 * i_113_.toFloat())
-                    i_126_ = (class109.anInt1668 + (f_173_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_126_ = (shadowProjector.anInt1668 + (f_173_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_174_ = aFloat8213 + (aFloat8212 * i_110_.toFloat() + aFloat8216 * i_153_.toFloat() + aFloat8224 * i_113_.toFloat())
-                    i_127_ = (class109.anInt1665 + (f_174_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_127_ = (shadowProjector.anInt1665 + (f_174_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_175_ = aFloat8226 + (aFloat8214 * i_110_.toFloat() + aFloat8221 * i_153_.toFloat() + aFloat8229 * i_113_.toFloat())
-                    i_128_ = (class109.anInt1668 + (f_175_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_128_ = (shadowProjector.anInt1668 + (f_175_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                 }
             } else {
                 val i_129_ = this.anIntArrayArray4584[i]!![i_105_]
@@ -964,54 +964,54 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                 val f_133_ = aFloat8221 * i_129_.toFloat()
                 if (anInt8228 == -1) {
                     val f_134_ = (aFloat8213 + (aFloat8212 * i_110_.toFloat() + f_132_ + aFloat8224 * i_112_.toFloat()))
-                    i_121_ = (class109.anInt1665 + (f_134_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
+                    i_121_ = (shadowProjector.anInt1665 + (f_134_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
                     val f_135_ = (aFloat8226 + (aFloat8214 * i_110_.toFloat() + f_133_ + aFloat8229 * i_112_.toFloat()))
-                    i_122_ = (class109.anInt1668 + (f_135_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
+                    i_122_ = (shadowProjector.anInt1668 + (f_135_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
                     val f_136_ = (aFloat8213 + (aFloat8212 * i_111_.toFloat() + f_132_ + aFloat8224 * i_112_.toFloat()))
-                    i_123_ = (class109.anInt1665 + (f_136_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_118_).toInt())
+                    i_123_ = (shadowProjector.anInt1665 + (f_136_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_118_).toInt())
                     val f_137_ = (aFloat8226 + (aFloat8214 * i_111_.toFloat() + f_133_ + aFloat8229 * i_112_.toFloat()))
-                    i_124_ = (class109.anInt1668 + (f_137_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_118_).toInt())
+                    i_124_ = (shadowProjector.anInt1668 + (f_137_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_118_).toInt())
                     val f_138_ = (aFloat8213 + (aFloat8212 * i_111_.toFloat() + f_132_ + aFloat8224 * i_113_.toFloat()))
-                    i_125_ = (class109.anInt1665 + (f_138_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_119_).toInt())
+                    i_125_ = (shadowProjector.anInt1665 + (f_138_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_119_).toInt())
                     val f_139_ = (aFloat8226 + (aFloat8214 * i_111_.toFloat() + f_133_ + aFloat8229 * i_113_.toFloat()))
-                    i_126_ = (class109.anInt1668 + (f_139_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_119_).toInt())
+                    i_126_ = (shadowProjector.anInt1668 + (f_139_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_119_).toInt())
                     val f_140_ = (aFloat8213 + (aFloat8212 * i_110_.toFloat() + f_132_ + aFloat8224 * i_113_.toFloat()))
-                    i_127_ = (class109.anInt1665 + (f_140_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_120_).toInt())
+                    i_127_ = (shadowProjector.anInt1665 + (f_140_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_120_).toInt())
                     val f_141_ = (aFloat8226 + (aFloat8214 * i_110_.toFloat() + f_133_ + aFloat8229 * i_113_.toFloat()))
-                    i_128_ = (class109.anInt1668 + (f_141_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_120_).toInt())
+                    i_128_ = (shadowProjector.anInt1668 + (f_141_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_120_).toInt())
                 } else {
                     val f_142_ = (aFloat8213 + (aFloat8212 * i_110_.toFloat() + f_132_ + aFloat8224 * i_112_.toFloat()))
-                    i_121_ = (class109.anInt1665 + (f_142_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_121_ = (shadowProjector.anInt1665 + (f_142_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_143_ = (aFloat8226 + (aFloat8214 * i_110_.toFloat() + f_133_ + aFloat8229 * i_112_.toFloat()))
-                    i_122_ = (class109.anInt1668 + (f_143_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_122_ = (shadowProjector.anInt1668 + (f_143_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_144_ = (aFloat8213 + (aFloat8212 * i_111_.toFloat() + f_132_ + aFloat8224 * i_112_.toFloat()))
-                    i_123_ = (class109.anInt1665 + (f_144_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_123_ = (shadowProjector.anInt1665 + (f_144_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_145_ = (aFloat8226 + (aFloat8214 * i_111_.toFloat() + f_133_ + aFloat8229 * i_112_.toFloat()))
-                    i_124_ = (class109.anInt1668 + (f_145_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_124_ = (shadowProjector.anInt1668 + (f_145_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_146_ = (aFloat8213 + (aFloat8212 * i_111_.toFloat() + f_132_ + aFloat8224 * i_113_.toFloat()))
-                    i_125_ = (class109.anInt1665 + (f_146_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_125_ = (shadowProjector.anInt1665 + (f_146_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_147_ = (aFloat8226 + (aFloat8214 * i_111_.toFloat() + f_133_ + aFloat8229 * i_113_.toFloat()))
-                    i_126_ = (class109.anInt1668 + (f_147_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_126_ = (shadowProjector.anInt1668 + (f_147_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_148_ = (aFloat8213 + (aFloat8212 * i_110_.toFloat() + f_132_ + aFloat8224 * i_113_.toFloat()))
-                    i_127_ = (class109.anInt1665 + (f_148_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_127_ = (shadowProjector.anInt1665 + (f_148_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_149_ = (aFloat8226 + (aFloat8214 * i_110_.toFloat() + f_133_ + aFloat8229 * i_113_.toFloat()))
-                    i_128_ = (class109.anInt1668 + (f_149_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_128_ = (shadowProjector.anInt1668 + (f_149_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                 }
             }
             val bool_176_ = (class266.aShort3379.toInt() != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(class266.aShort3379.toInt(), -6662)!!.aByte213.toInt()))
             if (anInt8228 == -1) {
                 var i_177_ = i_115_ + i_116_ + i_117_
                 if (((i_125_ - i_127_) * (i_124_ - i_128_) - (i_126_ - i_128_) * (i_123_ - i_127_)) > 0) {
-                    class109.aBoolean1671 = (i_125_ < 0 || i_127_ < 0 || i_123_ < 0 || i_125_ > class109.anInt1679 || i_127_ > class109.anInt1679 || i_123_ > class109.anInt1679)
+                    shadowProjector.aBoolean1671 = (i_125_ < 0 || i_127_ < 0 || i_123_ < 0 || i_125_ > shadowProjector.anInt1679 || i_127_ > shadowProjector.anInt1679 || i_123_ > shadowProjector.anInt1679)
                     if (i_177_ < 765) {
                         if (i_177_ > 0) {
                             if (class266.aShort3379 >= 0) {
                                 var i_178_ = -16777216
                                 if (bool_176_) i_178_ = -1694498816
-                                class109.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_178_ or ((class266.anInt3380) and 0xffffff), i_178_ or ((class266.anInt3381) and 0xffffff), i_178_ or ((class266.anInt3387) and 0xffffff), class167.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379.toInt())
+                                shadowProjector.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_178_ or ((class266.anInt3380) and 0xffffff), i_178_ or ((class266.anInt3381) and 0xffffff), i_178_ or ((class266.anInt3387) and 0xffffff), class167.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379.toInt())
                             } else {
-                                if (bool_176_) class109.anInt1674 = 100
-                                class109.method1027(
+                                if (bool_176_) shadowProjector.anInt1674 = 100
+                                shadowProjector.method1027(
                                     i_126_.toFloat(),
                                     i_128_.toFloat(),
                                     i_124_.toFloat(),
@@ -1025,32 +1025,32 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255)),
                                     (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255))
                                 )
-                                class109.anInt1674 = 0
+                                shadowProjector.anInt1674 = 0
                             }
                         } else if (class266.aShort3379 >= 0) {
                             var i_179_ = -16777216
                             if (bool_176_) i_179_ = -1694498816
-                            class109.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_179_ or (class266.anInt3380 and 0xffffff), i_179_ or (class266.anInt3381 and 0xffffff), i_179_ or (class266.anInt3387 and 0xffffff), 0, 0, 0, 0, class266.aShort3379.toInt())
+                            shadowProjector.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_179_ or (class266.anInt3380 and 0xffffff), i_179_ or (class266.anInt3381 and 0xffffff), i_179_ or (class266.anInt3387 and 0xffffff), 0, 0, 0, 0, class266.aShort3379.toInt())
                         } else {
-                            if (bool_176_) class109.anInt1674 = 100
-                            class109.method1027(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), class266.anInt3380, class266.anInt3381, class266.anInt3387)
-                            class109.anInt1674 = 0
+                            if (bool_176_) shadowProjector.anInt1674 = 100
+                            shadowProjector.method1027(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), class266.anInt3380, class266.anInt3381, class266.anInt3387)
+                            shadowProjector.anInt1674 = 0
                         }
-                    } else class109.method1018(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), (class167.anInt2192))
+                    } else shadowProjector.method1018(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), (class167.anInt2192))
                 }
                 i_177_ = i_114_ + i_115_ + i_117_
                 if (((i_121_ - i_123_) * (i_128_ - i_124_) - (i_122_ - i_124_) * (i_127_ - i_123_)) > 0) {
-                    class109.aBoolean1671 = (i_121_ < 0 || i_123_ < 0 || i_127_ < 0 || i_121_ > class109.anInt1679 || i_123_ > class109.anInt1679 || i_127_ > class109.anInt1679)
+                    shadowProjector.aBoolean1671 = (i_121_ < 0 || i_123_ < 0 || i_127_ < 0 || i_121_ > shadowProjector.anInt1679 || i_123_ > shadowProjector.anInt1679 || i_127_ > shadowProjector.anInt1679)
                     if (i_177_ < 765) {
-                        if (bool_176_) class109.anInt1674 = -1694498816
+                        if (bool_176_) shadowProjector.anInt1674 = -1694498816
                         if (i_177_ > 0) {
                             if (class266.aShort3379 >= 0) {
                                 var i_180_ = -16777216
                                 if (bool_176_) i_180_ = -1694498816
-                                class109.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_180_ or ((class266.anInt3389) and 0xffffff), i_180_ or ((class266.anInt3387) and 0xffffff), i_180_ or ((class266.anInt3381) and 0xffffff), class167.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379.toInt())
+                                shadowProjector.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_180_ or ((class266.anInt3389) and 0xffffff), i_180_ or ((class266.anInt3387) and 0xffffff), i_180_ or ((class266.anInt3381) and 0xffffff), class167.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379.toInt())
                             } else {
-                                if (bool_176_) class109.anInt1674 = 100
-                                class109.method1027(
+                                if (bool_176_) shadowProjector.anInt1674 = 100
+                                shadowProjector.method1027(
                                     i_122_.toFloat(),
                                     i_124_.toFloat(),
                                     i_128_.toFloat(),
@@ -1064,33 +1064,33 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255)),
                                     (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255))
                                 )
-                                class109.anInt1674 = 0
+                                shadowProjector.anInt1674 = 0
                             }
                         } else if (class266.aShort3379 >= 0) {
                             var i_181_ = -16777216
                             if (bool_176_) i_181_ = -1694498816
-                            class109.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_181_ or (class266.anInt3389 and 0xffffff), i_181_ or (class266.anInt3387 and 0xffffff), i_181_ or (class266.anInt3381 and 0xffffff), 0, 0, 0, 0, class266.aShort3379.toInt())
+                            shadowProjector.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_181_ or (class266.anInt3389 and 0xffffff), i_181_ or (class266.anInt3387 and 0xffffff), i_181_ or (class266.anInt3381 and 0xffffff), 0, 0, 0, 0, class266.aShort3379.toInt())
                         } else {
-                            if (bool_176_) class109.anInt1674 = 100
-                            class109.method1027(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), class266.anInt3389, class266.anInt3387, class266.anInt3381)
-                            class109.anInt1674 = 0
+                            if (bool_176_) shadowProjector.anInt1674 = 100
+                            shadowProjector.method1027(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), class266.anInt3389, class266.anInt3387, class266.anInt3381)
+                            shadowProjector.anInt1674 = 0
                         }
-                    } else class109.method1018(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), (class167.anInt2192))
+                    } else shadowProjector.method1018(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), (class167.anInt2192))
                 }
             } else {
                 var i_182_ = i_115_ + i_116_ + i_117_
                 if (((i_125_ - i_127_) * (i_124_ - i_128_) - (i_126_ - i_128_) * (i_123_ - i_127_)) > 0) {
-                    class109.aBoolean1671 = (i_125_ < 0 || i_127_ < 0 || i_123_ < 0 || i_125_ > class109.anInt1679 || i_127_ > class109.anInt1679 || i_123_ > class109.anInt1679)
+                    shadowProjector.aBoolean1671 = (i_125_ < 0 || i_127_ < 0 || i_123_ < 0 || i_125_ > shadowProjector.anInt1679 || i_127_ > shadowProjector.anInt1679 || i_123_ > shadowProjector.anInt1679)
                     if (i_182_ < 765) {
-                        if (bool_176_) class109.anInt1674 = -1694498816
+                        if (bool_176_) shadowProjector.anInt1674 = -1694498816
                         if (i_182_ > 0) {
                             if (class266.aShort3379 >= 0) {
                                 var i_183_ = -16777216
                                 if (bool_176_) i_183_ = -1694498816
-                                class109.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_183_ or ((class266.anInt3380) and 0xffffff), i_183_ or ((class266.anInt3381) and 0xffffff), i_183_ or ((class266.anInt3387) and 0xffffff), class167.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379.toInt())
+                                shadowProjector.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_183_ or ((class266.anInt3380) and 0xffffff), i_183_ or ((class266.anInt3381) and 0xffffff), i_183_ or ((class266.anInt3387) and 0xffffff), class167.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379.toInt())
                             } else {
-                                if (bool_176_) class109.anInt1674 = 100
-                                class109.method1027(
+                                if (bool_176_) shadowProjector.anInt1674 = 100
+                                shadowProjector.method1027(
                                     i_126_.toFloat(),
                                     i_128_.toFloat(),
                                     i_124_.toFloat(),
@@ -1104,32 +1104,32 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255)),
                                     (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255))
                                 )
-                                class109.anInt1674 = 0
+                                shadowProjector.anInt1674 = 0
                             }
                         } else if (class266.aShort3379 >= 0) {
                             var i_184_ = -16777216
                             if (bool_176_) i_184_ = -1694498816
-                            class109.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_184_ or (class266.anInt3380 and 0xffffff), i_184_ or (class266.anInt3381 and 0xffffff), i_184_ or (class266.anInt3387 and 0xffffff), 0, 0, 0, 0, class266.aShort3379.toInt())
+                            shadowProjector.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_184_ or (class266.anInt3380 and 0xffffff), i_184_ or (class266.anInt3381 and 0xffffff), i_184_ or (class266.anInt3387 and 0xffffff), 0, 0, 0, 0, class266.aShort3379.toInt())
                         } else {
-                            if (bool_176_) class109.anInt1674 = 100
-                            class109.method1027(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), class266.anInt3380, class266.anInt3381, class266.anInt3387)
-                            class109.anInt1674 = 0
+                            if (bool_176_) shadowProjector.anInt1674 = 100
+                            shadowProjector.method1027(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), class266.anInt3380, class266.anInt3381, class266.anInt3387)
+                            shadowProjector.anInt1674 = 0
                         }
-                    } else class109.method1018(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), (class167.anInt2192))
+                    } else shadowProjector.method1018(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), (class167.anInt2192))
                 }
                 i_182_ = i_114_ + i_115_ + i_117_
                 if (((i_121_ - i_123_) * (i_128_ - i_124_) - (i_122_ - i_124_) * (i_127_ - i_123_)) > 0) {
-                    class109.aBoolean1671 = (i_121_ < 0 || i_123_ < 0 || i_127_ < 0 || i_121_ > class109.anInt1679 || i_123_ > class109.anInt1679 || i_127_ > class109.anInt1679)
+                    shadowProjector.aBoolean1671 = (i_121_ < 0 || i_123_ < 0 || i_127_ < 0 || i_121_ > shadowProjector.anInt1679 || i_123_ > shadowProjector.anInt1679 || i_127_ > shadowProjector.anInt1679)
                     if (i_182_ < 765) {
-                        if (bool_176_) class109.anInt1674 = -1694498816
+                        if (bool_176_) shadowProjector.anInt1674 = -1694498816
                         if (i_182_ > 0) {
                             if (class266.aShort3379 >= 0) {
                                 var i_185_ = -16777216
                                 if (bool_176_) i_185_ = -1694498816
-                                class109.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_185_ or ((class266.anInt3389) and 0xffffff), i_185_ or ((class266.anInt3387) and 0xffffff), i_185_ or ((class266.anInt3381) and 0xffffff), class167.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379.toInt())
+                                shadowProjector.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_185_ or ((class266.anInt3389) and 0xffffff), i_185_ or ((class266.anInt3387) and 0xffffff), i_185_ or ((class266.anInt3381) and 0xffffff), class167.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379.toInt())
                             } else {
-                                if (bool_176_) class109.anInt1674 = 100
-                                class109.method1027(
+                                if (bool_176_) shadowProjector.anInt1674 = 100
+                                shadowProjector.method1027(
                                     i_122_.toFloat(),
                                     i_124_.toFloat(),
                                     i_128_.toFloat(),
@@ -1143,18 +1143,18 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255)),
                                     (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255))
                                 )
-                                class109.anInt1674 = 0
+                                shadowProjector.anInt1674 = 0
                             }
                         } else if (class266.aShort3379 >= 0) {
                             var i_186_ = -16777216
                             if (bool_176_) i_186_ = -1694498816
-                            class109.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_186_ or (class266.anInt3389 and 0xffffff), i_186_ or (class266.anInt3387 and 0xffffff), i_186_ or (class266.anInt3381 and 0xffffff), 0, 0, 0, 0, class266.aShort3379.toInt())
+                            shadowProjector.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_186_ or (class266.anInt3389 and 0xffffff), i_186_ or (class266.anInt3387 and 0xffffff), i_186_ or (class266.anInt3381 and 0xffffff), 0, 0, 0, 0, class266.aShort3379.toInt())
                         } else {
-                            if (bool_176_) class109.anInt1674 = 100
-                            class109.method1027(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), class266.anInt3389, class266.anInt3387, class266.anInt3381)
-                            class109.anInt1674 = 0
+                            if (bool_176_) shadowProjector.anInt1674 = 100
+                            shadowProjector.method1027(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), class266.anInt3389, class266.anInt3387, class266.anInt3381)
+                            shadowProjector.anInt1674 = 0
                         }
-                    } else class109.method1018(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), (class167.anInt2192))
+                    } else shadowProjector.method1018(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), (class167.anInt2192))
                 }
             }
         }
@@ -1188,23 +1188,23 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
 
     private fun method3992(i: Int, i_255_: Int, i_256_: Int) {
         val class167 = aHa_Sub1_8217.method3724(Thread.currentThread())
-        class167!!.aClass109_2220!!.anInt1674 = 0
-        if (aClass266ArrayArray8230 != null) method3990(i, i_255_, class167.aBoolean2195, class167, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
-        else if (aVertexNormalArrayArray8215 != null) method3994(i, i_255_, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232, i_256_)
-        else if (aClass198ArrayArray8219 != null) method3995(i, i_255_, class167.aBoolean2195, class167, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
+        class167!!.aShadowProjector_2220!!.anInt1674 = 0
+        if (aClass266ArrayArray8230 != null) method3990(i, i_255_, class167.aBoolean2195, class167, class167.aShadowProjector_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
+        else if (aVertexNormalArrayArray8215 != null) method3994(i, i_255_, class167.aShadowProjector_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232, i_256_)
+        else if (aClass198ArrayArray8219 != null) method3995(i, i_255_, class167.aBoolean2195, class167, class167.aShadowProjector_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
     }
 
     override fun wa(var_renderNode: RenderNode?, i: Int, i_257_: Int, i_258_: Int, i_259_: Int, bool: Boolean) {
         /* empty */
     }
 
-    private fun method3993(i: Int, i_260_: Int, i_261_: Int, i_262_: Int, i_263_: Int, i_264_: Int, i_265_: Int, bools: Array<BooleanArray?>, class167: Class167, class109: Class109, `is`: IntArray, is_266_: IntArray) {
+    private fun method3993(i: Int, i_260_: Int, i_261_: Int, i_262_: Int, i_263_: Int, i_264_: Int, i_265_: Int, bools: Array<BooleanArray?>, class167: Class167, shadowProjector: ShadowProjector, `is`: IntArray, is_266_: IntArray) {
         val i_267_ = (i_265_ - i_263_) * i_261_ / 256
         val i_268_ = i_261_ shr 8
         val bool = class167.aBoolean2202
         aHa_Sub1_8217.C(false)
-        class109.aBoolean1669 = false
-        class109.aBoolean1667 = false
+        shadowProjector.aBoolean1669 = false
+        shadowProjector.aBoolean1667 = false
         var i_269_ = i
         var i_270_ = i_260_ + i_267_
         for (i_271_ in i_262_..<i_264_) {
@@ -1215,15 +1215,15 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             val class266 = aClass266ArrayArray8230!![i_271_]!![i_272_]!!
                             if (class266.aShort3379.toInt() != -1 && (class266.aByte3386.toInt() and 0x2) == 0 && class266.anInt3388 == 0) {
                                 val i_273_ = aHa_Sub1_8217.method3722(class266.aShort3379.toInt())
-                                class109.method1022((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class291.method2198(0, (class266.anInt3380), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3381), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3387), i_273_).toFloat())
-                                class109.method1022(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, Class291.method2198(0, (class266.anInt3389), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3387), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3381), i_273_).toFloat())
+                                shadowProjector.method1022((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class291.method2198(0, (class266.anInt3380), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3381), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3387), i_273_).toFloat())
+                                shadowProjector.method1022(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, Class291.method2198(0, (class266.anInt3389), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3387), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3381), i_273_).toFloat())
                             } else if (class266.anInt3388 == 0) {
-                                class109.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, class266.anInt3380, class266.anInt3381, class266.anInt3387)
-                                class109.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, class266.anInt3389, class266.anInt3387, class266.anInt3381)
+                                shadowProjector.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, class266.anInt3380, class266.anInt3381, class266.anInt3387)
+                                shadowProjector.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, class266.anInt3389, class266.anInt3387, class266.anInt3381)
                             } else {
                                 val i_274_ = class266.anInt3388
-                                class109.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class6.method206(i_274_, (class266.anInt3380) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255))
-                                class109.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, Class6.method206(i_274_, (class266.anInt3389) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255))
+                                shadowProjector.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class6.method206(i_274_, (class266.anInt3380) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255))
+                                shadowProjector.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, Class6.method206(i_274_, (class266.anInt3389) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255))
                             }
                         } else if (aClass145ArrayArray8225!![i_271_]!![i_272_] != null) {
                             val class145 = aClass145ArrayArray8225!![i_271_]!![i_272_]!!
@@ -1243,7 +1243,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                 val i_285_ = is_266_[i_279_]
                                 if ((class145.anIntArray2011 != null) && (class145.anIntArray2011!![i_276_]) != 0 && ((class145.aShortArray2008 == null) || ((class145.aShortArray2008) != null && ((class145.aShortArray2008!![i_276_]).toInt() == -1)))) {
                                     val i_286_ = (class145.anIntArray2011!![i_276_])
-                                    class109.method1027(
+                                    shadowProjector.method1027(
                                         i_283_.toFloat(),
                                         i_284_.toFloat(),
                                         i_285_.toFloat(),
@@ -1259,8 +1259,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     )
                                 } else if ((class145.aShortArray2008) != null && ((class145.aShortArray2008!![i_276_]).toInt() != -1)) {
                                     val i_287_ = (aHa_Sub1_8217.method3722(class145.aShortArray2008!![i_276_].toInt()))
-                                    class109.method1022(i_283_.toFloat(), i_284_.toFloat(), i_285_.toFloat(), i_280_.toFloat(), i_281_.toFloat(), i_282_.toFloat(), 100.0f, 100.0f, 100.0f, i_287_.toFloat(), i_287_.toFloat(), i_287_.toFloat())
-                                } else class109.method1027(i_283_.toFloat(), i_284_.toFloat(), i_285_.toFloat(), i_280_.toFloat(), i_281_.toFloat(), i_282_.toFloat(), 100.0f, 100.0f, 100.0f, (class145.anIntArray2001!![i_277_]), (class145.anIntArray2001!![i_278_]), (class145.anIntArray2001!![i_279_]))
+                                    shadowProjector.method1022(i_283_.toFloat(), i_284_.toFloat(), i_285_.toFloat(), i_280_.toFloat(), i_281_.toFloat(), i_282_.toFloat(), 100.0f, 100.0f, 100.0f, i_287_.toFloat(), i_287_.toFloat(), i_287_.toFloat())
+                                } else shadowProjector.method1027(i_283_.toFloat(), i_284_.toFloat(), i_285_.toFloat(), i_280_.toFloat(), i_281_.toFloat(), i_282_.toFloat(), 100.0f, 100.0f, 100.0f, (class145.anIntArray2001!![i_277_]), (class145.anIntArray2001!![i_278_]), (class145.anIntArray2001!![i_279_]))
                             }
                         }
                     } else if (aClass198ArrayArray8219!![i_271_]!![i_272_] != null) {
@@ -1281,8 +1281,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             val i_298_ = is_266_[i_292_]
                             if (class198.anIntArray2615 != null && (class198.anIntArray2615!![i_289_]) != 0) {
                                 val i_299_ = (class198.anIntArray2615!![i_289_])
-                                class109.method1027(i_296_.toFloat(), i_297_.toFloat(), i_298_.toFloat(), i_293_.toFloat(), i_294_.toFloat(), i_295_.toFloat(), 100.0f, 100.0f, 100.0f, i_299_, i_299_, i_299_)
-                            } else class109.method1027(i_296_.toFloat(), i_297_.toFloat(), i_298_.toFloat(), i_293_.toFloat(), i_294_.toFloat(), i_295_.toFloat(), 100.0f, 100.0f, 100.0f, (class198.anIntArray2623!![i_290_]), (class198.anIntArray2623!![i_291_]), (class198.anIntArray2623!![i_292_]))
+                                shadowProjector.method1027(i_296_.toFloat(), i_297_.toFloat(), i_298_.toFloat(), i_293_.toFloat(), i_294_.toFloat(), i_295_.toFloat(), 100.0f, 100.0f, 100.0f, i_299_, i_299_, i_299_)
+                            } else shadowProjector.method1027(i_296_.toFloat(), i_297_.toFloat(), i_298_.toFloat(), i_293_.toFloat(), i_294_.toFloat(), i_295_.toFloat(), 100.0f, 100.0f, 100.0f, (class198.anIntArray2623!![i_290_]), (class198.anIntArray2623!![i_291_]), (class198.anIntArray2623!![i_292_]))
                         }
                     }
                 }
@@ -1291,11 +1291,11 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
             i_270_ = i_260_ + i_267_
             i_269_ += i_268_
         }
-        class109.aBoolean1669 = true
+        shadowProjector.aBoolean1669 = true
         aHa_Sub1_8217.C(bool)
     }
 
-    private fun method3994(i: Int, i_300_: Int, class109: Class109, `is`: IntArray, is_301_: IntArray, is_302_: IntArray, is_303_: IntArray?, i_304_: Int) {
+    private fun method3994(i: Int, i_300_: Int, shadowProjector: ShadowProjector, `is`: IntArray, is_301_: IntArray, is_302_: IntArray, is_303_: IntArray?, i_304_: Int) {
         val class102 = aVertexNormalArrayArray8215!![i]!![i_300_]
         if (class102 == null) {
             val class236 = aClass236ArrayArray8222!![i]!![i_300_]
@@ -1314,8 +1314,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         if (f <= aHa_Sub1_8217.anInt7482.toFloat()) return
                         val f_364_ = aFloat8213 + (aFloat8212 * i_361_.toFloat() + aFloat8216 * i_362_.toFloat() + aFloat8224 * i_363_.toFloat())
                         val f_365_ = aFloat8226 + (aFloat8214 * i_361_.toFloat() + aFloat8221 * i_362_.toFloat() + aFloat8229 * i_363_.toFloat())
-                        `is`[i_360_] = (class109.anInt1665 + (f_364_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
-                        is_301_[i_360_] = (class109.anInt1668 + (f_365_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
+                        `is`[i_360_] = (shadowProjector.anInt1665 + (f_364_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
+                        is_301_[i_360_] = (shadowProjector.anInt1668 + (f_365_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
                         is_302_[i_360_] = f.toInt()
                     }
                 } else {
@@ -1326,8 +1326,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         val f = aFloat8218 + (aFloat8233 * i_367_.toFloat() + aFloat8227 * i_368_.toFloat() + aFloat8231 * i_369_.toFloat())
                         val f_370_ = aFloat8213 + (aFloat8212 * i_367_.toFloat() + aFloat8216 * i_368_.toFloat() + aFloat8224 * i_369_.toFloat())
                         val f_371_ = aFloat8226 + (aFloat8214 * i_367_.toFloat() + aFloat8221 * i_368_.toFloat() + aFloat8229 * i_369_.toFloat())
-                        `is`[i_366_] = (class109.anInt1665 + (f_370_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
-                        is_301_[i_366_] = (class109.anInt1668 + (f_371_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                        `is`[i_366_] = (shadowProjector.anInt1665 + (f_370_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                        is_301_[i_366_] = (shadowProjector.anInt1668 + (f_371_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                         is_302_[i_366_] = f.toInt()
                     }
                 }
@@ -1345,8 +1345,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         if (((i_400_ - i_401_) * (i_405_ - i_404_) - (i_403_ - i_404_) * (i_402_ - i_401_)) > 0) {
                             val i_406_ = class236.anIntArray3093!![i_396_]
                             if (i_406_ != -1) {
-                                class109.aBoolean1671 = (i_400_ < 0 || i_401_ < 0 || i_402_ < 0 || (i_400_ > class109.anInt1679) || (i_401_ > class109.anInt1679) || (i_402_ > class109.anInt1679))
-                                class109.method1022(
+                                shadowProjector.aBoolean1671 = (i_400_ < 0 || i_401_ < 0 || i_402_ < 0 || (i_400_ > shadowProjector.anInt1679) || (i_401_ > shadowProjector.anInt1679) || (i_402_ > shadowProjector.anInt1679))
+                                shadowProjector.method1022(
                                     i_403_.toFloat(),
                                     i_404_.toFloat(),
                                     i_405_.toFloat(),
@@ -1375,11 +1375,11 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         val i_380_ = is_301_[i_374_.toInt()]
                         val i_381_ = is_301_[i_375_.toInt()]
                         if (((i_376_ - i_377_) * (i_381_ - i_380_) - (i_379_ - i_380_) * (i_378_ - i_377_)) > 0) {
-                            class109.aBoolean1671 = (i_376_ < 0 || i_377_ < 0 || i_378_ < 0 || (i_376_ > class109.anInt1679) || (i_377_ > class109.anInt1679) || (i_378_ > class109.anInt1679))
+                            shadowProjector.aBoolean1671 = (i_376_ < 0 || i_377_ < 0 || i_378_ < 0 || (i_376_ > shadowProjector.anInt1679) || (i_377_ > shadowProjector.anInt1679) || (i_378_ > shadowProjector.anInt1679))
                             val i_382_ = (class236.aShortArray3095!![i_372_])
                             if (i_382_.toInt() == -1) {
                                 val i_383_ = (class236.anIntArray3093!![i_372_])
-                                if (i_383_ != -1) class109.method1022(
+                                if (i_383_ != -1) shadowProjector.method1022(
                                     i_379_.toFloat(),
                                     i_380_.toFloat(),
                                     i_381_.toFloat(),
@@ -1393,7 +1393,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     (Class291.method2198(0, (class236.aShortArray3088!![i_374_.toInt()]).toInt(), i_383_)).toFloat(),
                                     (Class291.method2198(0, (class236.aShortArray3088!![i_375_.toInt()]).toInt(), i_383_)).toFloat()
                                 )
-                            } else class109.method1024(
+                            } else shadowProjector.method1024(
                                 i_379_.toFloat(),
                                 i_380_.toFloat(),
                                 i_381_.toFloat(),
@@ -1432,11 +1432,11 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         val i_392_ = is_301_[i_386_.toInt()]
                         val i_393_ = is_301_[i_387_.toInt()]
                         if (((i_388_ - i_389_) * (i_393_ - i_392_) - (i_391_ - i_392_) * (i_390_ - i_389_)) > 0) {
-                            class109.aBoolean1671 = (i_388_ < 0 || i_389_ < 0 || i_390_ < 0 || (i_388_ > class109.anInt1679) || (i_389_ > class109.anInt1679) || (i_390_ > class109.anInt1679))
+                            shadowProjector.aBoolean1671 = (i_388_ < 0 || i_389_ < 0 || i_390_ < 0 || (i_388_ > shadowProjector.anInt1679) || (i_389_ > shadowProjector.anInt1679) || (i_390_ > shadowProjector.anInt1679))
                             val i_394_ = (class236.aShortArray3095!![i_384_])
                             if (i_394_.toInt() == -1) {
                                 val i_395_ = (class236.anIntArray3093!![i_384_])
-                                if (i_395_ != -1) class109.method1022(
+                                if (i_395_ != -1) shadowProjector.method1022(
                                     i_391_.toFloat(),
                                     i_392_.toFloat(),
                                     i_393_.toFloat(),
@@ -1450,7 +1450,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     (Class291.method2198(0, (class236.aShortArray3088!![i_386_.toInt()]).toInt(), i_395_)).toFloat(),
                                     (Class291.method2198(0, (class236.aShortArray3088!![i_387_.toInt()]).toInt(), i_395_)).toFloat()
                                 )
-                            } else class109.method1024(
+                            } else shadowProjector.method1024(
                                 i_391_.toFloat(),
                                 i_392_.toFloat(),
                                 i_393_.toFloat(),
@@ -1516,42 +1516,42 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                     f_311_ = aFloat8218 + (aFloat8233 * i_305_.toFloat() + aFloat8227 * i_343_.toFloat() + aFloat8231 * i_308_.toFloat())
                     if (f_311_ <= aHa_Sub1_8217.anInt7482.toFloat()) return
                     val f_344_ = aFloat8213 + (aFloat8212 * i_305_.toFloat() + aFloat8216 * i_340_.toFloat() + aFloat8224 * i_307_.toFloat())
-                    i_312_ = (class109.anInt1665 + (f_344_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
+                    i_312_ = (shadowProjector.anInt1665 + (f_344_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
                     val f_345_ = aFloat8226 + (aFloat8214 * i_305_.toFloat() + aFloat8221 * i_340_.toFloat() + aFloat8229 * i_307_.toFloat())
-                    i_313_ = (class109.anInt1668 + (f_345_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
+                    i_313_ = (shadowProjector.anInt1668 + (f_345_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
                     val f_346_ = aFloat8213 + (aFloat8212 * i_306_.toFloat() + aFloat8216 * i_341_.toFloat() + aFloat8224 * i_307_.toFloat())
-                    i_314_ = (class109.anInt1665 + (f_346_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_309_).toInt())
+                    i_314_ = (shadowProjector.anInt1665 + (f_346_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_309_).toInt())
                     val f_347_ = aFloat8226 + (aFloat8214 * i_306_.toFloat() + aFloat8221 * i_341_.toFloat() + aFloat8229 * i_307_.toFloat())
-                    i_315_ = (class109.anInt1668 + (f_347_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_309_).toInt())
+                    i_315_ = (shadowProjector.anInt1668 + (f_347_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_309_).toInt())
                     val f_348_ = aFloat8213 + (aFloat8212 * i_306_.toFloat() + aFloat8216 * i_342_.toFloat() + aFloat8224 * i_308_.toFloat())
-                    i_316_ = (class109.anInt1665 + (f_348_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_310_).toInt())
+                    i_316_ = (shadowProjector.anInt1665 + (f_348_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_310_).toInt())
                     val f_349_ = aFloat8226 + (aFloat8214 * i_306_.toFloat() + aFloat8221 * i_342_.toFloat() + aFloat8229 * i_308_.toFloat())
-                    i_317_ = (class109.anInt1668 + (f_349_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_310_).toInt())
+                    i_317_ = (shadowProjector.anInt1668 + (f_349_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_310_).toInt())
                     val f_350_ = aFloat8213 + (aFloat8212 * i_305_.toFloat() + aFloat8216 * i_343_.toFloat() + aFloat8224 * i_308_.toFloat())
-                    i_318_ = (class109.anInt1665 + (f_350_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_311_).toInt())
+                    i_318_ = (shadowProjector.anInt1665 + (f_350_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_311_).toInt())
                     val f_351_ = aFloat8226 + (aFloat8214 * i_305_.toFloat() + aFloat8221 * i_343_.toFloat() + aFloat8229 * i_308_.toFloat())
-                    i_319_ = (class109.anInt1668 + (f_351_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_311_).toInt())
+                    i_319_ = (shadowProjector.anInt1668 + (f_351_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_311_).toInt())
                 } else {
                     f = aFloat8218 + (aFloat8233 * i_305_.toFloat() + aFloat8227 * i_340_.toFloat() + aFloat8231 * i_307_.toFloat())
                     f_309_ = aFloat8218 + (aFloat8233 * i_306_.toFloat() + aFloat8227 * i_341_.toFloat() + aFloat8231 * i_307_.toFloat())
                     f_310_ = aFloat8218 + (aFloat8233 * i_306_.toFloat() + aFloat8227 * i_342_.toFloat() + aFloat8231 * i_308_.toFloat())
                     f_311_ = aFloat8218 + (aFloat8233 * i_305_.toFloat() + aFloat8227 * i_343_.toFloat() + aFloat8231 * i_308_.toFloat())
                     val f_352_ = aFloat8213 + (aFloat8212 * i_305_.toFloat() + aFloat8216 * i_340_.toFloat() + aFloat8224 * i_307_.toFloat())
-                    i_312_ = (class109.anInt1665 + (f_352_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_312_ = (shadowProjector.anInt1665 + (f_352_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_353_ = aFloat8226 + (aFloat8214 * i_305_.toFloat() + aFloat8221 * i_340_.toFloat() + aFloat8229 * i_307_.toFloat())
-                    i_313_ = (class109.anInt1668 + (f_353_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_313_ = (shadowProjector.anInt1668 + (f_353_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_354_ = aFloat8213 + (aFloat8212 * i_306_.toFloat() + aFloat8216 * i_341_.toFloat() + aFloat8224 * i_307_.toFloat())
-                    i_314_ = (class109.anInt1665 + (f_354_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_314_ = (shadowProjector.anInt1665 + (f_354_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_355_ = aFloat8226 + (aFloat8214 * i_306_.toFloat() + aFloat8221 * i_341_.toFloat() + aFloat8229 * i_307_.toFloat())
-                    i_315_ = (class109.anInt1668 + (f_355_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_315_ = (shadowProjector.anInt1668 + (f_355_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_356_ = aFloat8213 + (aFloat8212 * i_306_.toFloat() + aFloat8216 * i_342_.toFloat() + aFloat8224 * i_308_.toFloat())
-                    i_316_ = (class109.anInt1665 + (f_356_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_316_ = (shadowProjector.anInt1665 + (f_356_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_357_ = aFloat8226 + (aFloat8214 * i_306_.toFloat() + aFloat8221 * i_342_.toFloat() + aFloat8229 * i_308_.toFloat())
-                    i_317_ = (class109.anInt1668 + (f_357_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_317_ = (shadowProjector.anInt1668 + (f_357_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_358_ = aFloat8213 + (aFloat8212 * i_305_.toFloat() + aFloat8216 * i_343_.toFloat() + aFloat8224 * i_308_.toFloat())
-                    i_318_ = (class109.anInt1665 + (f_358_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_318_ = (shadowProjector.anInt1665 + (f_358_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_359_ = aFloat8226 + (aFloat8214 * i_305_.toFloat() + aFloat8221 * i_343_.toFloat() + aFloat8229 * i_308_.toFloat())
-                    i_319_ = (class109.anInt1668 + (f_359_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_319_ = (shadowProjector.anInt1668 + (f_359_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                 }
             } else {
                 val i_320_ = this.anIntArrayArray4584[i]!![i_300_]
@@ -1575,44 +1575,44 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                 val f_323_ = aFloat8221 * i_320_.toFloat()
                 if (anInt8228 == -1) {
                     val f_324_ = (aFloat8213 + (aFloat8212 * i_305_.toFloat() + f_322_ + aFloat8224 * i_307_.toFloat()))
-                    i_312_ = (class109.anInt1665 + (f_324_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
+                    i_312_ = (shadowProjector.anInt1665 + (f_324_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
                     val f_325_ = (aFloat8226 + (aFloat8214 * i_305_.toFloat() + f_323_ + aFloat8229 * i_307_.toFloat()))
-                    i_313_ = (class109.anInt1668 + (f_325_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
+                    i_313_ = (shadowProjector.anInt1668 + (f_325_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
                     val f_326_ = (aFloat8213 + (aFloat8212 * i_306_.toFloat() + f_322_ + aFloat8224 * i_307_.toFloat()))
-                    i_314_ = (class109.anInt1665 + (f_326_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_309_).toInt())
+                    i_314_ = (shadowProjector.anInt1665 + (f_326_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_309_).toInt())
                     val f_327_ = (aFloat8226 + (aFloat8214 * i_306_.toFloat() + f_323_ + aFloat8229 * i_307_.toFloat()))
-                    i_315_ = (class109.anInt1668 + (f_327_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_309_).toInt())
+                    i_315_ = (shadowProjector.anInt1668 + (f_327_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_309_).toInt())
                     val f_328_ = (aFloat8213 + (aFloat8212 * i_306_.toFloat() + f_322_ + aFloat8224 * i_308_.toFloat()))
-                    i_316_ = (class109.anInt1665 + (f_328_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_310_).toInt())
+                    i_316_ = (shadowProjector.anInt1665 + (f_328_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_310_).toInt())
                     val f_329_ = (aFloat8226 + (aFloat8214 * i_306_.toFloat() + f_323_ + aFloat8229 * i_308_.toFloat()))
-                    i_317_ = (class109.anInt1668 + (f_329_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_310_).toInt())
+                    i_317_ = (shadowProjector.anInt1668 + (f_329_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_310_).toInt())
                     val f_330_ = (aFloat8213 + (aFloat8212 * i_305_.toFloat() + f_322_ + aFloat8224 * i_308_.toFloat()))
-                    i_318_ = (class109.anInt1665 + (f_330_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_311_).toInt())
+                    i_318_ = (shadowProjector.anInt1665 + (f_330_ * (aHa_Sub1_8217.anInt7491).toFloat() / f_311_).toInt())
                     val f_331_ = (aFloat8226 + (aFloat8214 * i_305_.toFloat() + f_323_ + aFloat8229 * i_308_.toFloat()))
-                    i_319_ = (class109.anInt1668 + (f_331_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_311_).toInt())
+                    i_319_ = (shadowProjector.anInt1668 + (f_331_ * (aHa_Sub1_8217.anInt7497).toFloat() / f_311_).toInt())
                 } else {
                     val f_332_ = (aFloat8213 + (aFloat8212 * i_305_.toFloat() + f_322_ + aFloat8224 * i_307_.toFloat()))
-                    i_312_ = (class109.anInt1665 + (f_332_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_312_ = (shadowProjector.anInt1665 + (f_332_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_333_ = (aFloat8226 + (aFloat8214 * i_305_.toFloat() + f_323_ + aFloat8229 * i_307_.toFloat()))
-                    i_313_ = (class109.anInt1668 + (f_333_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_313_ = (shadowProjector.anInt1668 + (f_333_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_334_ = (aFloat8213 + (aFloat8212 * i_306_.toFloat() + f_322_ + aFloat8224 * i_307_.toFloat()))
-                    i_314_ = (class109.anInt1665 + (f_334_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_314_ = (shadowProjector.anInt1665 + (f_334_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_335_ = (aFloat8226 + (aFloat8214 * i_306_.toFloat() + f_323_ + aFloat8229 * i_307_.toFloat()))
-                    i_315_ = (class109.anInt1668 + (f_335_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_315_ = (shadowProjector.anInt1668 + (f_335_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_336_ = (aFloat8213 + (aFloat8212 * i_306_.toFloat() + f_322_ + aFloat8224 * i_308_.toFloat()))
-                    i_316_ = (class109.anInt1665 + (f_336_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_316_ = (shadowProjector.anInt1665 + (f_336_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_337_ = (aFloat8226 + (aFloat8214 * i_306_.toFloat() + f_323_ + aFloat8229 * i_308_.toFloat()))
-                    i_317_ = (class109.anInt1668 + (f_337_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_317_ = (shadowProjector.anInt1668 + (f_337_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                     val f_338_ = (aFloat8213 + (aFloat8212 * i_305_.toFloat() + f_322_ + aFloat8224 * i_308_.toFloat()))
-                    i_318_ = (class109.anInt1665 + (f_338_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                    i_318_ = (shadowProjector.anInt1665 + (f_338_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
                     val f_339_ = (aFloat8226 + (aFloat8214 * i_305_.toFloat() + f_323_ + aFloat8229 * i_308_.toFloat()))
-                    i_319_ = (class109.anInt1668 + (f_339_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                    i_319_ = (shadowProjector.anInt1668 + (f_339_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                 }
             }
             if (anInt8228 == -1) {
                 if (((i_316_ - i_318_) * (i_315_ - i_319_) - (i_317_ - i_319_) * (i_314_ - i_318_)) > 0) {
-                    class109.aBoolean1671 = (i_316_ < 0 || i_318_ < 0 || i_314_ < 0 || i_316_ > class109.anInt1679 || i_318_ > class109.anInt1679 || i_314_ > class109.anInt1679)
-                    if (class102.aShort1605 >= 0) class109.method1024(
+                    shadowProjector.aBoolean1671 = (i_316_ < 0 || i_318_ < 0 || i_314_ < 0 || i_316_ > shadowProjector.anInt1679 || i_318_ > shadowProjector.anInt1679 || i_314_ > shadowProjector.anInt1679)
+                    if (class102.aShort1605 >= 0) shadowProjector.method1024(
                         i_317_.toFloat(),
                         i_319_.toFloat(),
                         i_315_.toFloat(),
@@ -1637,11 +1637,11 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         0,
                         class102.aShort1605.toInt()
                     )
-                    else class109.method1022(i_317_.toFloat(), i_319_.toFloat(), i_315_.toFloat(), i_316_.toFloat(), i_318_.toFloat(), i_314_.toFloat(), f_310_.toInt().toFloat(), f_311_.toInt().toFloat(), f_309_.toInt().toFloat(), (class102.aShort1602.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat())
+                    else shadowProjector.method1022(i_317_.toFloat(), i_319_.toFloat(), i_315_.toFloat(), i_316_.toFloat(), i_318_.toFloat(), i_314_.toFloat(), f_310_.toInt().toFloat(), f_311_.toInt().toFloat(), f_309_.toInt().toFloat(), (class102.aShort1602.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat())
                 }
                 if (((i_312_ - i_314_) * (i_319_ - i_315_) - (i_313_ - i_315_) * (i_318_ - i_314_)) > 0) {
-                    class109.aBoolean1671 = (i_312_ < 0 || i_314_ < 0 || i_318_ < 0 || i_312_ > class109.anInt1679 || i_314_ > class109.anInt1679 || i_318_ > class109.anInt1679)
-                    if (class102.aShort1605 >= 0) class109.method1024(
+                    shadowProjector.aBoolean1671 = (i_312_ < 0 || i_314_ < 0 || i_318_ < 0 || i_312_ > shadowProjector.anInt1679 || i_314_ > shadowProjector.anInt1679 || i_318_ > shadowProjector.anInt1679)
+                    if (class102.aShort1605 >= 0) shadowProjector.method1024(
                         i_313_.toFloat(),
                         i_315_.toFloat(),
                         i_319_.toFloat(),
@@ -1666,12 +1666,12 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         0,
                         class102.aShort1605.toInt()
                     )
-                    else class109.method1022(i_313_.toFloat(), i_315_.toFloat(), i_319_.toFloat(), i_312_.toFloat(), i_314_.toFloat(), i_318_.toFloat(), f.toInt().toFloat(), f_309_.toInt().toFloat(), f_311_.toInt().toFloat(), (class102.aShort1601.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat())
+                    else shadowProjector.method1022(i_313_.toFloat(), i_315_.toFloat(), i_319_.toFloat(), i_312_.toFloat(), i_314_.toFloat(), i_318_.toFloat(), f.toInt().toFloat(), f_309_.toInt().toFloat(), f_311_.toInt().toFloat(), (class102.aShort1601.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat())
                 }
             } else {
                 if (((i_316_ - i_318_) * (i_315_ - i_319_) - (i_317_ - i_319_) * (i_314_ - i_318_)) > 0) {
-                    class109.aBoolean1671 = (i_316_ < 0 || i_318_ < 0 || i_314_ < 0 || i_316_ > class109.anInt1679 || i_318_ > class109.anInt1679 || i_314_ > class109.anInt1679)
-                    if (class102.aShort1605 >= 0) class109.method1024(
+                    shadowProjector.aBoolean1671 = (i_316_ < 0 || i_318_ < 0 || i_314_ < 0 || i_316_ > shadowProjector.anInt1679 || i_318_ > shadowProjector.anInt1679 || i_314_ > shadowProjector.anInt1679)
+                    if (class102.aShort1605 >= 0) shadowProjector.method1024(
                         i_317_.toFloat(),
                         i_319_.toFloat(),
                         i_315_.toFloat(),
@@ -1696,11 +1696,11 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         0,
                         class102.aShort1605.toInt()
                     )
-                    else class109.method1022(i_317_.toFloat(), i_319_.toFloat(), i_315_.toFloat(), i_316_.toFloat(), i_318_.toFloat(), i_314_.toFloat(), f_310_.toInt().toFloat(), f_311_.toInt().toFloat(), f_309_.toInt().toFloat(), (class102.aShort1602.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat())
+                    else shadowProjector.method1022(i_317_.toFloat(), i_319_.toFloat(), i_315_.toFloat(), i_316_.toFloat(), i_318_.toFloat(), i_314_.toFloat(), f_310_.toInt().toFloat(), f_311_.toInt().toFloat(), f_309_.toInt().toFloat(), (class102.aShort1602.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat())
                 }
                 if (((i_312_ - i_314_) * (i_319_ - i_315_) - (i_313_ - i_315_) * (i_318_ - i_314_)) > 0) {
-                    class109.aBoolean1671 = (i_312_ < 0 || i_314_ < 0 || i_318_ < 0 || i_312_ > class109.anInt1679 || i_314_ > class109.anInt1679 || i_318_ > class109.anInt1679)
-                    if (class102.aShort1605 >= 0) class109.method1024(
+                    shadowProjector.aBoolean1671 = (i_312_ < 0 || i_314_ < 0 || i_318_ < 0 || i_312_ > shadowProjector.anInt1679 || i_314_ > shadowProjector.anInt1679 || i_318_ > shadowProjector.anInt1679)
+                    if (class102.aShort1605 >= 0) shadowProjector.method1024(
                         i_313_.toFloat(),
                         i_315_.toFloat(),
                         i_319_.toFloat(),
@@ -1725,7 +1725,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         0,
                         class102.aShort1605.toInt()
                     )
-                    else class109.method1022(i_313_.toFloat(), i_315_.toFloat(), i_319_.toFloat(), i_312_.toFloat(), i_314_.toFloat(), i_318_.toFloat(), f.toInt().toFloat(), f_309_.toInt().toFloat(), f_311_.toInt().toFloat(), (class102.aShort1601.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat())
+                    else shadowProjector.method1022(i_313_.toFloat(), i_315_.toFloat(), i_319_.toFloat(), i_312_.toFloat(), i_314_.toFloat(), i_318_.toFloat(), f.toInt().toFloat(), f_309_.toInt().toFloat(), f_311_.toInt().toFloat(), (class102.aShort1601.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat())
                 }
             }
         }
@@ -1741,7 +1741,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
 
     override fun method3987(i: Int, i_411_: Int, i_412_: Int, i_413_: Int, i_414_: Int, i_415_: Int, i_416_: Int, bools: Array<BooleanArray?>) {
         val class167 = aHa_Sub1_8217.method3724(Thread.currentThread())
-        val class109 = class167!!.aClass109_2220!!
+        val class109 = class167!!.aShadowProjector_2220!!
         class109.anInt1674 = 0
         class109.aBoolean1671 = true
         aHa_Sub1_8217.ya()
@@ -1749,7 +1749,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         else if (aVertexNormalArrayArray8215 != null) method3996(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
     }
 
-    private fun method3995(i: Int, i_417_: Int, bool: Boolean, class167: Class167, class109: Class109, `is`: IntArray, is_418_: IntArray, is_419_: IntArray, is_420_: IntArray, i_421_: Int) {
+    private fun method3995(i: Int, i_417_: Int, bool: Boolean, class167: Class167, shadowProjector: ShadowProjector, `is`: IntArray, is_418_: IntArray, is_419_: IntArray, is_420_: IntArray, i_421_: Int) {
         val class198 = aClass198ArrayArray8219!![i]!![i_417_]
         if (i_421_ == 0 || (i_421_ and 0x2) == 0) {
             if (class198 != null) {
@@ -1778,8 +1778,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         }
                         val f_429_ = aFloat8213 + (aFloat8212 * i_423_.toFloat() + aFloat8216 * i_424_.toFloat() + aFloat8224 * i_425_.toFloat())
                         val f_430_ = aFloat8226 + (aFloat8214 * i_423_.toFloat() + aFloat8221 * i_424_.toFloat() + aFloat8229 * i_425_.toFloat())
-                        `is`[i_422_] = (class109.anInt1665 + (f_429_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
-                        is_418_[i_422_] = (class109.anInt1668 + (f_430_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
+                        `is`[i_422_] = (shadowProjector.anInt1665 + (f_429_ * (aHa_Sub1_8217.anInt7491).toFloat() / f).toInt())
+                        is_418_[i_422_] = (shadowProjector.anInt1668 + (f_430_ * (aHa_Sub1_8217.anInt7497).toFloat() / f).toInt())
                         is_419_[i_422_] = f.toInt()
                     }
                 } else {
@@ -1806,8 +1806,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         }
                         val f_438_ = aFloat8213 + (aFloat8212 * i_432_.toFloat() + aFloat8216 * i_433_.toFloat() + aFloat8224 * i_434_.toFloat())
                         val f_439_ = aFloat8226 + (aFloat8214 * i_432_.toFloat() + aFloat8221 * i_433_.toFloat() + aFloat8229 * i_434_.toFloat())
-                        `is`[i_431_] = (class109.anInt1665 + (f_438_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
-                        is_418_[i_431_] = (class109.anInt1668 + (f_439_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
+                        `is`[i_431_] = (shadowProjector.anInt1665 + (f_438_ * (aHa_Sub1_8217.anInt7491).toFloat() / anInt8228.toFloat()).toInt())
+                        is_418_[i_431_] = (shadowProjector.anInt1668 + (f_439_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                         is_419_[i_431_] = f.toInt()
                     }
                 }
@@ -1823,12 +1823,12 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                     val i_448_ = is_418_[i_442_]
                     val i_449_ = is_418_[i_443_]
                     if (((i_444_ - i_445_) * (i_449_ - i_448_) - (i_447_ - i_448_) * (i_446_ - i_445_)) > 0) {
-                        class109.aBoolean1671 = (i_444_ < 0 || i_445_ < 0 || i_446_ < 0 || i_444_ > class109.anInt1679 || i_445_ > class109.anInt1679 || i_446_ > class109.anInt1679)
+                        shadowProjector.aBoolean1671 = (i_444_ < 0 || i_445_ < 0 || i_446_ < 0 || i_444_ > shadowProjector.anInt1679 || i_445_ > shadowProjector.anInt1679 || i_446_ > shadowProjector.anInt1679)
                         if (is_420_[i_441_] + is_420_[i_442_] + is_420_[i_443_] < 765) {
                             val i_450_ = i shl this.anInt4588
                             val i_451_ = i_417_ shl this.anInt4588
                             if ((class198.anIntArray2623!![i_441_] and 0xffffff) != 0) {
-                                if (((class198.aShortArray2616!![i_441_]) == (class198.aShortArray2616!![i_442_])) && ((class198.aShortArray2616!![i_441_]) == (class198.aShortArray2616!![i_443_])) && ((class198.aShortArray2614!![i_441_]) == (class198.aShortArray2614!![i_442_])) && ((class198.aShortArray2614!![i_441_]) == (class198.aShortArray2614!![i_443_]))) class109.method1024(
+                                if (((class198.aShortArray2616!![i_441_]) == (class198.aShortArray2616!![i_442_])) && ((class198.aShortArray2616!![i_441_]) == (class198.aShortArray2616!![i_443_])) && ((class198.aShortArray2614!![i_441_]) == (class198.aShortArray2614!![i_442_])) && ((class198.aShortArray2614!![i_441_]) == (class198.aShortArray2614!![i_443_]))) shadowProjector.method1024(
                                     i_447_.toFloat(),
                                     i_448_.toFloat(),
                                     i_449_.toFloat(),
@@ -1853,7 +1853,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     is_420_[i_443_],
                                     (class198.aShortArray2616!![i_441_]).toInt()
                                 )
-                                else class109.method1020(
+                                else shadowProjector.method1020(
                                     i_447_.toFloat(),
                                     i_448_.toFloat(),
                                     i_449_.toFloat(),
@@ -1884,7 +1884,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f / (class198.aShortArray2614!![i_443_]).toFloat()
                                 )
                             }
-                        } else class109.method1018(i_447_.toFloat(), i_448_.toFloat(), i_449_.toFloat(), i_444_.toFloat(), i_445_.toFloat(), i_446_.toFloat(), is_419_[i_441_].toFloat(), is_419_[i_442_].toFloat(), is_419_[i_443_].toFloat(), (class167.anInt2192))
+                        } else shadowProjector.method1018(i_447_.toFloat(), i_448_.toFloat(), i_449_.toFloat(), i_444_.toFloat(), i_445_.toFloat(), i_446_.toFloat(), is_419_[i_441_].toFloat(), is_419_[i_442_].toFloat(), is_419_[i_443_].toFloat(), (class167.anInt2192))
                     }
                 }
             }
@@ -1895,13 +1895,13 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         method3992(i, i_452_, 0)
     }
 
-    private fun method3996(i: Int, i_453_: Int, i_454_: Int, i_455_: Int, i_456_: Int, i_457_: Int, i_458_: Int, bools: Array<BooleanArray?>, class167: Class167, class109: Class109, `is`: IntArray, is_459_: IntArray) {
+    private fun method3996(i: Int, i_453_: Int, i_454_: Int, i_455_: Int, i_456_: Int, i_457_: Int, i_458_: Int, bools: Array<BooleanArray?>, class167: Class167, shadowProjector: ShadowProjector, `is`: IntArray, is_459_: IntArray) {
         val i_460_ = (i_458_ - i_456_) * i_454_ / 256
         val i_461_ = i_454_ shr 8
         val bool = class167.aBoolean2202
         aHa_Sub1_8217.C(false)
-        class109.aBoolean1669 = false
-        class109.aBoolean1667 = false
+        shadowProjector.aBoolean1669 = false
+        shadowProjector.aBoolean1667 = false
         var i_462_ = i
         var i_463_ = i_453_ + i_460_
         for (i_464_ in i_455_..<i_457_) {
@@ -1911,7 +1911,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         val class102 = aVertexNormalArrayArray8215!![i_464_]!![i_465_]!!
                         if (class102.aShort1605.toInt() != -1 && (class102.aByte1606.toInt() and 0x2) == 0 && class102.anInt1600 == -1) {
                             val i_466_ = aHa_Sub1_8217.method3722(class102.aShort1605.toInt())
-                            class109.method1022(
+                            shadowProjector.method1022(
                                 (i_463_ - i_461_).toFloat(),
                                 (i_463_ - i_461_).toFloat(),
                                 i_463_.toFloat(),
@@ -1925,7 +1925,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                 Class291.method2198(0, ((class102.aShort1604).toInt() and 0xffff), i_466_).toFloat(),
                                 Class291.method2198(0, ((class102.aShort1603).toInt() and 0xffff), i_466_).toFloat()
                             )
-                            class109.method1022(
+                            shadowProjector.method1022(
                                 i_463_.toFloat(),
                                 i_463_.toFloat(),
                                 (i_463_ - i_461_).toFloat(),
@@ -1940,12 +1940,12 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                 Class291.method2198(0, ((class102.aShort1604).toInt() and 0xffff), i_466_).toFloat()
                             )
                         } else if (class102.anInt1600 == -1) {
-                            class109.method1022((i_463_ - i_461_).toFloat(), (i_463_ - i_461_).toFloat(), i_463_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), 100.0f, 100.0f, 100.0f, (class102.aShort1602.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat())
-                            class109.method1022(i_463_.toFloat(), i_463_.toFloat(), (i_463_ - i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), 100.0f, 100.0f, 100.0f, (class102.aShort1601.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat())
+                            shadowProjector.method1022((i_463_ - i_461_).toFloat(), (i_463_ - i_461_).toFloat(), i_463_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), 100.0f, 100.0f, 100.0f, (class102.aShort1602.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat())
+                            shadowProjector.method1022(i_463_.toFloat(), i_463_.toFloat(), (i_463_ - i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), 100.0f, 100.0f, 100.0f, (class102.aShort1601.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat())
                         } else {
                             val i_467_ = class102.anInt1600
-                            class109.method1022((i_463_ - i_461_).toFloat(), (i_463_ - i_461_).toFloat(), i_463_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), 100.0f, 100.0f, 100.0f, i_467_.toFloat(), i_467_.toFloat(), i_467_.toFloat())
-                            class109.method1022(i_463_.toFloat(), i_463_.toFloat(), (i_463_ - i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), 100.0f, 100.0f, 100.0f, i_467_.toFloat(), i_467_.toFloat(), i_467_.toFloat())
+                            shadowProjector.method1022((i_463_ - i_461_).toFloat(), (i_463_ - i_461_).toFloat(), i_463_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), 100.0f, 100.0f, 100.0f, i_467_.toFloat(), i_467_.toFloat(), i_467_.toFloat())
+                            shadowProjector.method1022(i_463_.toFloat(), i_463_.toFloat(), (i_463_ - i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), 100.0f, 100.0f, 100.0f, i_467_.toFloat(), i_467_.toFloat(), i_467_.toFloat())
                         }
                     } else if (aClass236ArrayArray8222!![i_464_]!![i_465_] != null) {
                         val class236 = aClass236ArrayArray8222!![i_464_]!![i_465_]!!
@@ -1965,7 +1965,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             val i_478_ = is_459_[i_472_.toInt()]
                             if (class236.anIntArray3092 != null && (class236.anIntArray3092!![i_469_]) != -1) {
                                 val i_479_ = (class236.anIntArray3092!![i_469_])
-                                class109.method1022(
+                                shadowProjector.method1022(
                                     i_476_.toFloat(),
                                     i_477_.toFloat(),
                                     i_478_.toFloat(),
@@ -1981,7 +1981,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                 )
                             } else if ((class236.aShortArray3095 != null) && (class236.aShortArray3095!![i_469_]).toInt() != -1) {
                                 val i_480_ = aHa_Sub1_8217.method3722(class236.aShortArray3095!![i_469_].toInt())
-                                class109.method1022(
+                                shadowProjector.method1022(
                                     i_476_.toFloat(),
                                     i_477_.toFloat(),
                                     i_478_.toFloat(),
@@ -1997,7 +1997,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                 )
                             } else {
                                 val i_481_ = (class236.anIntArray3093!![i_469_])
-                                class109.method1022(
+                                shadowProjector.method1022(
                                     i_476_.toFloat(),
                                     i_477_.toFloat(),
                                     i_478_.toFloat(),
@@ -2020,7 +2020,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
             i_463_ = i_453_ + i_460_
             i_462_ += i_461_
         }
-        class109.aBoolean1669 = true
+        shadowProjector.aBoolean1669 = true
         aHa_Sub1_8217.C(bool)
     }
 

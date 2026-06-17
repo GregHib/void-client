@@ -21,7 +21,7 @@ class Class167 internal constructor(var_ha_Sub1: SoftwareRenderer) {
     var anIntArray2217: IntArray?
     var anIntArray2218: IntArray?
     var aClass64_Sub1_2219: Class64_Sub1?
-    var aClass109_2220: Class109?
+    var aShadowProjector_2220: ShadowProjector?
     var anInt2221: Int = 0
     var anIntArray2222: IntArray?
     var aClass64_Sub1_2223: Class64_Sub1?
@@ -60,7 +60,7 @@ class Class167 internal constructor(var_ha_Sub1: SoftwareRenderer) {
     fun method1292(i: Int) {
         if (i == 64) {
             anInt2194++
-            this.aClass109_2220 = Class109(aHa_Sub1_2191, this)
+            this.aShadowProjector_2220 = ShadowProjector(aHa_Sub1_2191, this)
         }
     }
 
@@ -89,7 +89,7 @@ class Class167 internal constructor(var_ha_Sub1: SoftwareRenderer) {
         this.anIntArray2234 = IntArray(Class64_Sub1.anInt5350)
         aHa_Sub1_2191 = var_ha_Sub1
         this.anInt2210 = aHa_Sub1_2191.anInt7494 + -255
-        this.aClass109_2220 = Class109(var_ha_Sub1, this)
+        this.aShadowProjector_2220 = ShadowProjector(var_ha_Sub1, this)
         this.aClass64_Sub1_2243 = Class64_Sub1(aHa_Sub1_2191)
         this.aClass64_Sub1_2224 = Class64_Sub1(aHa_Sub1_2191)
         this.aClass64_Sub1_2219 = Class64_Sub1(aHa_Sub1_2191)

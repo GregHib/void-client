@@ -78,7 +78,7 @@ class Class64_Sub1 : Class64 {
     private var aBoolean5380 = false
     private lateinit var anIntArray5381: IntArray
     private var aBoolean5382: Boolean
-    private var aClass109_5383: Class109? = null
+    private var aShadowProjector_5383: ShadowProjector? = null
     private lateinit var anIntArray5384: IntArray
     private var aClass41Array5385: Array<Class41?>? = null
     private var aByteArray5386: ByteArray? = null
@@ -123,7 +123,7 @@ class Class64_Sub1 : Class64 {
 
     private fun method632(thread: Thread?) {
         val class167: Class167 = aHa_Sub1_5353.method3724(thread)!!
-        aClass109_5383 = class167.aClass109_2220
+        aShadowProjector_5383 = class167.aShadowProjector_2220
         if (class167 != aClass167_5367) {
             aClass167_5367 = class167
             anIntArray5362 = aClass167_5367!!.anIntArray2222!!
@@ -376,9 +376,9 @@ class Class64_Sub1 : Class64 {
         val i_40_ = aShortArray5394[i]
         val i_41_ = aShortArray5364[i]
         if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
-            if (aByteArray5325 == null) aClass109_5383!!.anInt1674 = 0
-            else aClass109_5383!!.anInt1674 = aByteArray5325!![i].toInt() and 0xff
-            if (anIntArray5366!![i] == -1) aClass109_5383!!.method1018(
+            if (aByteArray5325 == null) aShadowProjector_5383!!.anInt1674 = 0
+            else aShadowProjector_5383!!.anInt1674 = aByteArray5325!![i].toInt() and 0xff
+            if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1018(
                 anIntArray5343[i_39_.toInt()].toFloat(),
                 anIntArray5343[i_40_.toInt()].toFloat(),
                 anIntArray5343[i_41_.toInt()].toFloat(),
@@ -390,7 +390,7 @@ class Class64_Sub1 : Class64 {
                 anIntArray5355[i_41_.toInt()].toFloat(),
                 (Class126.anIntArray4983!![anIntArray5368!![i] and 0xffff])
             )
-            else aClass109_5383!!.method1022(
+            else aShadowProjector_5383!!.method1022(
                 anIntArray5343[i_39_.toInt()].toFloat(),
                 anIntArray5343[i_40_.toInt()].toFloat(),
                 anIntArray5343[i_41_.toInt()].toFloat(),
@@ -409,7 +409,7 @@ class Class64_Sub1 : Class64 {
             if (aByteArray5325 != null) i_42_ = 255 - (aByteArray5325!![i].toInt() and 0xff) shl 24
             if (anIntArray5366!![i] == -1) {
                 val i_43_ = i_42_ or (anIntArray5368!![i] and 0xffffff)
-                aClass109_5383!!.method1024(
+                aShadowProjector_5383!!.method1024(
                     anIntArray5343[i_39_.toInt()].toFloat(),
                     anIntArray5343[i_40_.toInt()].toFloat(),
                     anIntArray5343[i_41_.toInt()].toFloat(),
@@ -434,7 +434,7 @@ class Class64_Sub1 : Class64 {
                     0,
                     aShortArray5388!![i].toInt()
                 )
-            } else aClass109_5383!!.method1024(
+            } else aShadowProjector_5383!!.method1024(
                 anIntArray5343[i_39_.toInt()].toFloat(),
                 anIntArray5343[i_40_.toInt()].toFloat(),
                 anIntArray5343[i_41_.toInt()].toFloat(),
@@ -1469,7 +1469,7 @@ class Class64_Sub1 : Class64 {
                 val i_335_ = i_324_ * i_329_ - i_327_ * i_326_
                 if (i_325_ * i_333_ + i_328_ * i_334_ + i_331_ * i_335_ > 0) method646(i)
             } else if (anIntArray5400!![i] != -1 || ((i_321_ - i_322_) * (anIntArray5343[i_320_.toInt()] - anIntArray5343[i_319_.toInt()]) - ((anIntArray5343[i_318_.toInt()] - anIntArray5343[i_319_.toInt()]) * (i_323_ - i_322_))) > 0) {
-                aClass109_5383!!.aBoolean1671 = i_321_ < 0 || i_322_ < 0 || i_323_ < 0 || i_321_ > aClass167_5367!!.anInt2221 || i_322_ > aClass167_5367!!.anInt2221 || i_323_ > aClass167_5367!!.anInt2221
+                aShadowProjector_5383!!.aBoolean1671 = i_321_ < 0 || i_322_ < 0 || i_323_ < 0 || i_321_ > aClass167_5367!!.anInt2221 || i_322_ > aClass167_5367!!.anInt2221 || i_323_ > aClass167_5367!!.anInt2221
                 if (bool_317_) {
                     val i_336_ = anIntArray5400!![i]
                     if (i_336_ == -1 || !aClass6Array5361!![i_336_]!!.aBoolean145) method658(i)
@@ -1996,8 +1996,8 @@ class Class64_Sub1 : Class64 {
         var i_545_ = anIntArray5392[i_542_.toInt()]
         var i_546_ = anIntArray5392[i_543_.toInt()]
         var i_547_ = anIntArray5392[i_544_.toInt()]
-        if (aByteArray5325 == null) aClass109_5383!!.anInt1674 = 0
-        else aClass109_5383!!.anInt1674 = aByteArray5325!![i].toInt() and 0xff
+        if (aByteArray5325 == null) aShadowProjector_5383!!.anInt1674 = 0
+        else aShadowProjector_5383!!.anInt1674 = aByteArray5325!![i].toInt() and 0xff
         if (i_545_ >= i_541_) {
             anIntArray5315[i_540_] = anIntArray5321[i_542_.toInt()]
             anIntArray5371[i_540_] = anIntArray5343[i_542_.toInt()]
@@ -2079,17 +2079,17 @@ class Class64_Sub1 : Class64 {
         i_545_ = anIntArray5381[0]
         i_546_ = anIntArray5381[1]
         i_547_ = anIntArray5381[2]
-        aClass109_5383!!.aBoolean1671 = false
+        aShadowProjector_5383!!.aBoolean1671 = false
         if (i_540_ == 3) {
-            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aClass167_5367!!.anInt2221 || i_564_ > aClass167_5367!!.anInt2221 || i_565_ > aClass167_5367!!.anInt2221) aClass109_5383!!.aBoolean1671 = true
+            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aClass167_5367!!.anInt2221 || i_564_ > aClass167_5367!!.anInt2221 || i_565_ > aClass167_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
-                if (anIntArray5366!![i] == -1) aClass109_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), (Class126.anIntArray4983!![anIntArray5368!![i] and 0xffff]))
-                else aClass109_5383!!.method1022(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), anIntArray5377[0].toFloat(), anIntArray5377[1].toFloat(), anIntArray5377[2].toFloat())
+                if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), (Class126.anIntArray4983!![anIntArray5368!![i] and 0xffff]))
+                else aShadowProjector_5383!!.method1022(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), anIntArray5377[0].toFloat(), anIntArray5377[1].toFloat(), anIntArray5377[2].toFloat())
             } else {
                 var i_569_ = -16777216
                 if (aByteArray5325 != null) i_569_ = 255 - (aByteArray5325!![i].toInt() and 0xff) shl 24
                 val i_570_ = i_569_ or (anIntArray5368!![i] and 0xffffff)
-                if (anIntArray5366!![i] == -1) aClass109_5383!!.method1024(
+                if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1024(
                     i_566_.toFloat(),
                     i_567_.toFloat(),
                     i_568_.toFloat(),
@@ -2114,7 +2114,7 @@ class Class64_Sub1 : Class64 {
                     0,
                     aShortArray5388!![i].toInt()
                 )
-                else aClass109_5383!!.method1024(
+                else aShadowProjector_5383!!.method1024(
                     i_566_.toFloat(),
                     i_567_.toFloat(),
                     i_568_.toFloat(),
@@ -2142,22 +2142,22 @@ class Class64_Sub1 : Class64 {
             }
         }
         if (i_540_ == 4) {
-            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aClass167_5367!!.anInt2221 || i_564_ > aClass167_5367!!.anInt2221 || i_565_ > aClass167_5367!!.anInt2221 || anIntArray5315[3] < 0 || anIntArray5315[3] > aClass167_5367!!.anInt2221) aClass109_5383!!.aBoolean1671 = true
+            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aClass167_5367!!.anInt2221 || i_564_ > aClass167_5367!!.anInt2221 || i_565_ > aClass167_5367!!.anInt2221 || anIntArray5315[3] < 0 || anIntArray5315[3] > aClass167_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
                 if (anIntArray5366!![i] == -1) {
                     val i_571_ = Class126.anIntArray4983!![anIntArray5368!![i] and 0xffff]
-                    aClass109_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), i_571_)
-                    aClass109_5383!!.method1018(i_566_.toFloat(), i_568_.toFloat(), anIntArray5371[3].toFloat(), i_563_.toFloat(), i_565_.toFloat(), anIntArray5315[3].toFloat(), i_545_.toFloat(), i_546_.toFloat(), anIntArray5381[3].toFloat(), i_571_)
+                    aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), i_571_)
+                    aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_568_.toFloat(), anIntArray5371[3].toFloat(), i_563_.toFloat(), i_565_.toFloat(), anIntArray5315[3].toFloat(), i_545_.toFloat(), i_546_.toFloat(), anIntArray5381[3].toFloat(), i_571_)
                 } else {
-                    aClass109_5383!!.method1022(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), anIntArray5377[0].toFloat(), anIntArray5377[1].toFloat(), anIntArray5377[2].toFloat())
-                    aClass109_5383!!.method1022(i_566_.toFloat(), i_568_.toFloat(), anIntArray5371[3].toFloat(), i_563_.toFloat(), i_565_.toFloat(), anIntArray5315[3].toFloat(), i_545_.toFloat(), i_546_.toFloat(), anIntArray5381[3].toFloat(), anIntArray5377[0].toFloat(), anIntArray5377[2].toFloat(), anIntArray5377[3].toFloat())
+                    aShadowProjector_5383!!.method1022(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), anIntArray5377[0].toFloat(), anIntArray5377[1].toFloat(), anIntArray5377[2].toFloat())
+                    aShadowProjector_5383!!.method1022(i_566_.toFloat(), i_568_.toFloat(), anIntArray5371[3].toFloat(), i_563_.toFloat(), i_565_.toFloat(), anIntArray5315[3].toFloat(), i_545_.toFloat(), i_546_.toFloat(), anIntArray5381[3].toFloat(), anIntArray5377[0].toFloat(), anIntArray5377[2].toFloat(), anIntArray5377[3].toFloat())
                 }
             } else {
                 var i_572_ = -16777216
                 if (aByteArray5325 != null) i_572_ = 255 - (aByteArray5325!![i].toInt() and 0xff) shl 24
                 val i_573_ = i_572_ or (anIntArray5368!![i] and 0xffffff)
                 if (anIntArray5366!![i] == -1) {
-                    aClass109_5383!!.method1024(
+                    aShadowProjector_5383!!.method1024(
                         i_566_.toFloat(),
                         i_567_.toFloat(),
                         i_568_.toFloat(),
@@ -2182,7 +2182,7 @@ class Class64_Sub1 : Class64 {
                         0,
                         aShortArray5388!![i].toInt()
                     )
-                    aClass109_5383!!.method1024(
+                    aShadowProjector_5383!!.method1024(
                         i_566_.toFloat(),
                         i_568_.toFloat(),
                         anIntArray5371[3].toFloat(),
@@ -2208,7 +2208,7 @@ class Class64_Sub1 : Class64 {
                         aShortArray5388!![i].toInt()
                     )
                 } else {
-                    aClass109_5383!!.method1024(
+                    aShadowProjector_5383!!.method1024(
                         i_566_.toFloat(),
                         i_567_.toFloat(),
                         i_568_.toFloat(),
@@ -2233,7 +2233,7 @@ class Class64_Sub1 : Class64 {
                         0,
                         aShortArray5388!![i].toInt()
                     )
-                    aClass109_5383!!.method1024(
+                    aShadowProjector_5383!!.method1024(
                         i_566_.toFloat(),
                         i_568_.toFloat(),
                         anIntArray5371[3].toFloat(),
@@ -2725,13 +2725,13 @@ class Class64_Sub1 : Class64 {
                     }
                 }
                 method632(Thread.currentThread())
-                aClass109_5383!!.method1023((i_632_ and 0x2) != 0)
+                aShadowProjector_5383!!.method1023((i_632_ and 0x2) != 0)
                 var bool_656_ = false
                 val bool_657_ = i_636_ <= aHa_Sub1_5353.anInt7482
                 val bool_658_ = (bool_657_ || aClass129Array5322 != null || aClass342Array5335 != null)
-                aClass167_5367!!.anInt2221 = aClass109_5383!!.anInt1679
-                aClass167_5367!!.anInt2229 = aClass109_5383!!.anInt1665
-                aClass167_5367!!.anInt2215 = aClass109_5383!!.anInt1668
+                aClass167_5367!!.anInt2221 = aShadowProjector_5383!!.anInt1679
+                aClass167_5367!!.anInt2229 = aShadowProjector_5383!!.anInt1665
+                aClass167_5367!!.anInt2215 = aShadowProjector_5383!!.anInt1668
                 val i_659_ = aHa_Sub1_5353.anInt7491
                 val i_660_ = aHa_Sub1_5353.anInt7497
                 val i_661_ = aHa_Sub1_5353.anInt7482
@@ -2885,8 +2885,8 @@ class Class64_Sub1 : Class64 {
                     }
                 }
                 method634(true)
-                aClass109_5383!!.aBoolean1669 = (i_632_ and 0x1) == 0
-                aClass109_5383!!.aBoolean1667 = false
+                aShadowProjector_5383!!.aBoolean1669 = (i_632_ and 0x1) == 0
+                aShadowProjector_5383!!.aBoolean1667 = false
                 try {
                     method650(bool_656_, ((aClass167_5367!!.aBoolean2201 && (i_637_ > aClass167_5367!!.anInt2210)) || aClass167_5367!!.aBoolean2195), i_636_, i_637_ - i_636_)
                 } catch (exception: Exception) {
@@ -2895,7 +2895,7 @@ class Class64_Sub1 : Class64 {
                 if (aClass6Array5361 != null) {
                     for (i_721_ in 0..<anInt5351) anIntArray5400!![i_721_] = -1
                 }
-                aClass109_5383 = null
+                aShadowProjector_5383 = null
                 if (aHa_Sub1_5353.anInt7485 > 1) {
                     synchronized(this) {
                         aBoolean5357 = false
@@ -3121,10 +3121,10 @@ class Class64_Sub1 : Class64 {
             else if (anIntArray5362[i_778_.toInt()] > aClass167_5367!!.anInt2211) i_781_ = ((aClass167_5367!!.anInt2211 - anIntArray5362[i_778_.toInt()]) * 255 / (aClass167_5367!!.anInt2211 - aClass167_5367!!.anInt2197))
             if (anIntArray5362[i_779_.toInt()] > aClass167_5367!!.anInt2197) i_782_ = 255
             else if (anIntArray5362[i_779_.toInt()] > aClass167_5367!!.anInt2211) i_782_ = ((aClass167_5367!!.anInt2211 - anIntArray5362[i_779_.toInt()]) * 255 / (aClass167_5367!!.anInt2211 - aClass167_5367!!.anInt2197))
-            if (aByteArray5325 == null) aClass109_5383!!.anInt1674 = 0
-            else aClass109_5383!!.anInt1674 = aByteArray5325!![i].toInt() and 0xff
+            if (aByteArray5325 == null) aShadowProjector_5383!!.anInt1674 = 0
+            else aShadowProjector_5383!!.anInt1674 = aByteArray5325!![i].toInt() and 0xff
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
-                if (anIntArray5366!![i] == -1) aClass109_5383!!.method1027(
+                if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1027(
                     anIntArray5343[i_777_.toInt()].toFloat(),
                     anIntArray5343[i_778_.toInt()].toFloat(),
                     anIntArray5343[i_779_.toInt()].toFloat(),
@@ -3138,7 +3138,7 @@ class Class64_Sub1 : Class64 {
                     method206((Class126.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_781_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
                     method206((Class126.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_782_ shl 24 or (aClass167_5367!!.anInt2192)), 255)
                 )
-                else aClass109_5383!!.method1027(
+                else aShadowProjector_5383!!.method1027(
                     anIntArray5343[i_777_.toInt()].toFloat(),
                     anIntArray5343[i_778_.toInt()].toFloat(),
                     anIntArray5343[i_779_.toInt()].toFloat(),
@@ -3157,7 +3157,7 @@ class Class64_Sub1 : Class64 {
                 if (aByteArray5325 != null) i_783_ = 255 - (aByteArray5325!![i].toInt() and 0xff) shl 24
                 if (anIntArray5366!![i] == -1) {
                     val i_784_ = i_783_ or (anIntArray5368!![i] and 0xffffff)
-                    aClass109_5383!!.method1024(
+                    aShadowProjector_5383!!.method1024(
                         anIntArray5343[i_777_.toInt()].toFloat(),
                         anIntArray5343[i_778_.toInt()].toFloat(),
                         anIntArray5343[i_779_.toInt()].toFloat(),
@@ -3182,7 +3182,7 @@ class Class64_Sub1 : Class64 {
                         i_782_,
                         aShortArray5388!![i].toInt()
                     )
-                } else aClass109_5383!!.method1024(
+                } else aShadowProjector_5383!!.method1024(
                     anIntArray5343[i_777_.toInt()].toFloat(),
                     anIntArray5343[i_778_.toInt()].toFloat(),
                     anIntArray5343[i_779_.toInt()].toFloat(),
@@ -3225,10 +3225,10 @@ class Class64_Sub1 : Class64 {
             if (i_774_ != 765) {
                 if (i_774_ == 0) method635(i)
                 else {
-                    if (aByteArray5325 == null) aClass109_5383!!.anInt1674 = 0
-                    else aClass109_5383!!.anInt1674 = aByteArray5325!![i].toInt() and 0xff
+                    if (aByteArray5325 == null) aShadowProjector_5383!!.anInt1674 = 0
+                    else aShadowProjector_5383!!.anInt1674 = aByteArray5325!![i].toInt() and 0xff
                     if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
-                        if (anIntArray5366!![i] == -1) aClass109_5383!!.method1027(
+                        if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1027(
                             anIntArray5343[i_768_.toInt()].toFloat(),
                             anIntArray5343[i_769_.toInt()].toFloat(),
                             anIntArray5343[i_770_.toInt()].toFloat(),
@@ -3242,7 +3242,7 @@ class Class64_Sub1 : Class64 {
                             method206((Class126.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_772_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
                             method206((Class126.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_773_ shl 24 or (aClass167_5367!!.anInt2192)), 255)
                         )
-                        else aClass109_5383!!.method1027(
+                        else aShadowProjector_5383!!.method1027(
                             anIntArray5343[i_768_.toInt()].toFloat(),
                             anIntArray5343[i_769_.toInt()].toFloat(),
                             anIntArray5343[i_770_.toInt()].toFloat(),
@@ -3261,7 +3261,7 @@ class Class64_Sub1 : Class64 {
                         if (aByteArray5325 != null) i_775_ = 255 - (aByteArray5325!![i].toInt() and 0xff) shl 24
                         if (anIntArray5366!![i] == -1) {
                             val i_776_ = i_775_ or (anIntArray5368!![i] and 0xffffff)
-                            aClass109_5383!!.method1024(
+                            aShadowProjector_5383!!.method1024(
                                 anIntArray5343[i_768_.toInt()].toFloat(),
                                 anIntArray5343[i_769_.toInt()].toFloat(),
                                 anIntArray5343[i_770_.toInt()].toFloat(),
@@ -3286,7 +3286,7 @@ class Class64_Sub1 : Class64 {
                                 i_773_,
                                 aShortArray5388!![i].toInt()
                             )
-                        } else aClass109_5383!!.method1024(
+                        } else aShadowProjector_5383!!.method1024(
                             anIntArray5343[i_768_.toInt()].toFloat(),
                             anIntArray5343[i_769_.toInt()].toFloat(),
                             anIntArray5343[i_770_.toInt()].toFloat(),

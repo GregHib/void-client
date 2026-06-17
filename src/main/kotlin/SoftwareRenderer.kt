@@ -398,7 +398,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         this.anInt7490 = this.anInt7476 - this.anInt7504
         this.anInt7506 = this.anInt7503 - this.anInt7504
         for (i in 0..<this.anInt7485) {
-            val class109 = aClass167Array7480!![i]!!.aClass109_2220!!
+            val class109 = aClass167Array7480!![i]!!.aShadowProjector_2220!!
             class109.anInt1665 = this.anInt7510 - this.anInt7496
             class109.anInt1668 = this.anInt7504 - this.anInt7476
             class109.anInt1679 = this.anInt7507 - this.anInt7496
@@ -406,7 +406,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
         var i = (this.anInt7476 * this.anInt7477 + this.anInt7496)
         for (i_97_ in this.anInt7476..<this.anInt7503) {
-            for (i_98_ in 0..<this.anInt7485) aClass167Array7480!![i_98_]!!.aClass109_2220!!.anIntArray1676[i_97_ - this.anInt7476] = i
+            for (i_98_ in 0..<this.anInt7485) aClass167Array7480!![i_98_]!!.aShadowProjector_2220!!.anIntArray1676[i_97_ - this.anInt7476] = i
             i += this.anInt7477
         }
     }
@@ -1001,7 +1001,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         var i_275_ = i_275_
         var i_276_ = i_276_
         val class167 = method3724(Thread.currentThread())
-        val class109 = class167!!.aClass109_2220!!
+        val class109 = class167!!.aShadowProjector_2220!!
         class109.aBoolean1669 = false
         i -= this.anInt7509
         i_272_ -= this.anInt7509
@@ -1812,7 +1812,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         var i = i
         var i_494_ = i_494_
         val class167 = method3724(Thread.currentThread())
-        val class109 = class167!!.aClass109_2220!!
+        val class109 = class167!!.aShadowProjector_2220!!
         var i_500_ = i_495_ - i
         var i_501_ = i_496_ - i_494_
         val i_502_ = if (i_500_ >= 0) i_500_ else -i_500_
