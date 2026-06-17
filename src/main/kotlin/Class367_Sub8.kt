@@ -59,14 +59,14 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
 
     override fun method3521(bool: Boolean, i: Byte) {
         if (i.toInt() != -103) anInt7365 = 86
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), i.toInt() xor 0x17.inv(), ParticleSystemState.aRenderConfigFactory_2207)
+        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), i.toInt() xor 0x17.inv(), ParticleSystemState.aRenderConfigFactory_2207)
         anInt7357++
     }
 
     override fun method3525(i: Int, bool: Boolean) {
         anInt7356++
         this.aHa_Sub3_4479.method3897(1, i xor 0x2a45.inv())
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), 111, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
+        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 111, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
         this.aHa_Sub3_4479.method3924(true, false, 0, Class342.aClass70_4247, false)
         this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
         this.aHa_Sub3_4479.method3910((-26).toByte(), 0)

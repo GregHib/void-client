@@ -21,7 +21,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
             this.aHa_Sub3_4479.method3850(96.toByte(), interface18_impl2)
             this.aHa_Sub3_4479.method3871(NpcDefinitionCache.aCameraNodeList_3314, i + -15192)
             this.aHa_Sub3_4479.method3897(1, -4382)
-            this.aHa_Sub3_4479.method3874(Class328_Sub3.aRenderConfigFactory_6519, 104, MediaStreamClient.aRenderConfigFactory_3196)
+            this.aHa_Sub3_4479.method3874(RenderQueueState.aRenderConfigFactory_6519, 104, MediaStreamClient.aRenderConfigFactory_3196)
             this.aHa_Sub3_4479.method3924(true, false, 2, (SceneObjectEntity.aClass70_8737), false)
             this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
             val class101_sub2 = this.aHa_Sub3_4479.method3820(false)
@@ -63,7 +63,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
     override fun method3521(bool: Boolean, i: Byte) {
         if (i.toInt() == -103) {
             anInt7383++
-            this.aHa_Sub3_4479.method3874(Class328_Sub3.aRenderConfigFactory_6519, 99, ParticleSystemState.aRenderConfigFactory_2207)
+            this.aHa_Sub3_4479.method3874(RenderQueueState.aRenderConfigFactory_6519, 99, ParticleSystemState.aRenderConfigFactory_2207)
         }
     }
 

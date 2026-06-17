@@ -38,7 +38,7 @@ open class Class348_Sub42 : Class348() {
         }
 
         fun method3163(i: Byte) {
-            Class328_Sub1.anInt6513 = 0
+            ShaderState.anInt6513 = 0
             anInt7062++
             if (i.toInt() == -114) {
                 for (i_0_ in 0..2047) {

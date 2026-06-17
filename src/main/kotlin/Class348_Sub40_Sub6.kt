@@ -100,7 +100,7 @@ class Class348_Sub40_Sub6 : Class348_Sub40(3, false) {
             anInt9132++
             val i = Class348_Sub42_Sub15.aClass56_9660!!.method525(-125)
             if (bool != false) anIntArray9135 = null
-            if (i < Class328_Sub2.aClass56Array6515!!.size + -1) Class348_Sub42_Sub15.aClass56_9660 = Class328_Sub2.aClass56Array6515!![1 + i]
+            if (i < MaterialTypeMarker.aClass56Array6515!!.size + -1) Class348_Sub42_Sub15.aClass56_9660 = MaterialTypeMarker.aClass56Array6515!![1 + i]
             return 100
         }
     }

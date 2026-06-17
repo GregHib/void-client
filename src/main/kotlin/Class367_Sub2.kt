@@ -38,7 +38,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
 
     override fun method3521(bool: Boolean, i: Byte) {
         if (i.toInt() != -103) aShortArrayArrayArray7290 = null
-        this.aHa_Sub3_4479.method3874((Class348_Sub23_Sub2.aRenderConfigFactory_9011), 106, (Class328_Sub3.aRenderConfigFactory_6519))
+        this.aHa_Sub3_4479.method3874((Class348_Sub23_Sub2.aRenderConfigFactory_9011), 106, (RenderQueueState.aRenderConfigFactory_6519))
         anInt7292++
     }
 

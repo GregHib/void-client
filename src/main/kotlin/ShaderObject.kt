@@ -6,7 +6,10 @@ import jaggl.OpenGL.Companion.glGetInfoLogARB
 import jaggl.OpenGL.Companion.glGetObjectParameterivARB
 import jaggl.OpenGL.Companion.glShaderSourceRawARB
 
-open class Class328 {
+/*
+ * Class328
+ */
+open class ShaderObject {
     companion object {
         var anInt4099: Int = 0
         var anInt4100: Int = 0

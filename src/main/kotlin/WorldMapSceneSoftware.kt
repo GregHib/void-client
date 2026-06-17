@@ -808,7 +808,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     }
                     i_151_++
                 }
-                Class328_Sub3.method2616(12)
+                RenderQueueState.method2616(12)
             }
             if (i < -6) this.aByteArrayArrayArray3108 = null
         } catch (runtimeexception: RuntimeException) {

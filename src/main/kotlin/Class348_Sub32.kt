@@ -308,7 +308,7 @@ class Class348_Sub32 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Su
 
         fun method3021(i: Byte, renderConfigFactory: RenderConfigFactory?): Int {
             anInt6931++
-            if (renderConfigFactory != Class328_Sub3.aRenderConfigFactory_6519) {
+            if (renderConfigFactory != RenderQueueState.aRenderConfigFactory_6519) {
                 if (ParticleSystemState.aRenderConfigFactory_2207 == renderConfigFactory) return 8448
                 if (renderConfigFactory == MediaStreamClient.aRenderConfigFactory_3196) return 34165
                 if (Class348_Sub23_Sub2.aRenderConfigFactory_9011 == renderConfigFactory) return 260

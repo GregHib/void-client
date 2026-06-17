@@ -125,7 +125,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         aBoolean7411 = bool
         this.aHa_Sub3_4479.method3897(1, i xor 0x2a45.inv())
         this.aHa_Sub3_4479.method3850((-32).toByte(), anInterface18_Impl3_7390)
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), 109, MediaStreamClient.aRenderConfigFactory_3196)
+        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 109, MediaStreamClient.aRenderConfigFactory_3196)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
         if (i == 15192) {
             this.aHa_Sub3_4479.method3924(true, false, 2, Class342.aClass70_4247, false)

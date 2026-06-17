@@ -88,7 +88,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
             do {
                 try {
                     anInt8372++
-                    val i_6_ = Class328_Sub1.anInt6513
+                    val i_6_ = ShaderState.anInt6513
                     val `is` = ScrollTexMaterialPass.anIntArray6290
                     if (i_5_ == -7257) {
                         var bool = false

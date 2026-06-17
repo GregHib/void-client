@@ -153,7 +153,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             method865(-8186, 5)
             method1323(5, 26603)
             Class353.aClass60_4346!!.method578(i + -3, 5)
-            Class328_Sub2.aClass60_6517!!.method578(2, 5)
+            MaterialTypeMarker.aClass60_6517!!.method578(2, 5)
             Class348_Sub1_Sub1.aClass60_8807!!.method578(i xor 0x7, 5)
             Class34.aClass60_463!!.method578(2, 5)
             Class66.aClass60_1174!!.method578(2, 5)

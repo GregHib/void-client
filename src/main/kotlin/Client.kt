@@ -267,11 +267,11 @@ import SystemFontGlyphs.Companion.method2562
 import Font.Companion.method2570
 import Font.Companion.method2572
 import SpriteMaskShape.Companion.method2597
-import Class328_Sub1.Companion.method2610
-import Class328_Sub1_Sub1.method2611
-import Class328_Sub2.Companion.method2613
-import Class328_Sub2_Sub1.method2614
-import Class328_Sub3.method2617
+import ShaderState.Companion.method2610
+import ShaderStateVariant.method2611
+import MaterialTypeMarker.Companion.method2613
+import MaterialTypeVariant.method2614
+import RenderQueueState.method2617
 import Class329.method2621
 import Class330.Companion.method2631
 import Class331.method2637
@@ -1875,7 +1875,7 @@ class Client : GameAppletFrame() {
         var anInt5190: Int = 0
 
         fun method104(i: Int) {
-            val i_7_ = Class328_Sub1.anInt6513
+            val i_7_ = ShaderState.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
             val i_8_ = if (Class373_Sub2.aBoolean7444) i_7_ else i_7_ + ModelDefinitionLoader.anInt2057
             for (i_9_ in 0..<i_8_) {
@@ -2554,7 +2554,7 @@ class Client : GameAppletFrame() {
         }
 
         fun method112() {
-            val i = Class328_Sub1.anInt6513
+            val i = ShaderState.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
             val i_92_ = if (Class373_Sub2.aBoolean7444) i else i + ModelDefinitionLoader.anInt2057
             for (i_93_ in 0..<i_92_) {
@@ -2573,7 +2573,7 @@ class Client : GameAppletFrame() {
         }
 
         fun method115() {
-            val i = Class328_Sub1.anInt6513
+            val i = ShaderState.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
             val i_112_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
             val bool = i_112_ == 1 && i > 200 || i_112_ == 0 && i > 50
@@ -2645,7 +2645,7 @@ class Client : GameAppletFrame() {
         }
 
         fun method117(i: Int) {
-            val i_122_ = Class328_Sub1.anInt6513
+            val i_122_ = ShaderState.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
             for (i_123_ in 0..<i_122_ + ModelDefinitionLoader.anInt2057) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?

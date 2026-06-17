@@ -855,7 +855,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 Class348.anInt4292 = 0
-                                Class328_Sub2.anInt6516++
+                                MaterialTypeMarker.anInt6516++
                                 val class348_sub47 = method2148((Class339.aClass351_4207), (Class348_Sub23_Sub2.aClass77_9029), -81)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-119).toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -123)) 0 else 1))

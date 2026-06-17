@@ -29,7 +29,7 @@ object Class94 {
         if (bool != true) aClass45_1538 = null
         anInt1535++
         for (i in 0..31) Class348_Sub49.aLongArray7206!![i] = 0L
-        for (i in 0..31) Class328_Sub2_Sub1.aLongArray8800!![i] = 0L
+        for (i in 0..31) MaterialTypeVariant.aLongArray8800!![i] = 0L
         FloatCameraTransform.anInt5744 = 0
     }
 }

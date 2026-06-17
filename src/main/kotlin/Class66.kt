@@ -2900,7 +2900,7 @@ object Class66 {
                 if (class46.anInt755 > (class46.anInt791 - class46.anInt789)) class46.anInt755 = (class46.anInt791 - class46.anInt789)
                 if (class46.anInt755 < 0) class46.anInt755 = 0
                 ConfigFlagUtil.method1916(-9343, class46)
-                if (class46.anInt704 == -1) Class328_Sub3.method2615(-91, class46.anInt830)
+                if (class46.anInt704 == -1) RenderQueueState.method2615(-91, class46.anInt830)
                 return
             }
             if (i == 1101) {
@@ -5075,7 +5075,7 @@ object Class66 {
                     else if (i_490_ == 39) anInt1170--
                     else if (i_490_ == 40) {
                         val i_497_ = is_489_[i_488_]
-                        val class348_sub42_sub19_498_ = Class328.method2609(-114, i_497_)
+                        val class348_sub42_sub19_498_ = ShaderObject.method2609(-114, i_497_)
                         if (class348_sub42_sub19_498_ == null) throw RuntimeException()
                         val is_499_ = IntArray(class348_sub42_sub19_498_.anInt9688)
                         val strings = (arrayOfNulls<String>(class348_sub42_sub19_498_.anInt9689))
@@ -5182,7 +5182,7 @@ object Class66 {
     private fun method712(class348_sub36: Class348_Sub36, i: Int) {
         val objects = class348_sub36.anObjectArray6987!!
         val i_515_ = (objects[0] as Int)
-        val class348_sub42_sub19 = Class328.method2609(-122, i_515_)
+        val class348_sub42_sub19 = ShaderObject.method2609(-122, i_515_)
         if (class348_sub42_sub19 != null) {
             anIntArray1164 = (IntArray(class348_sub42_sub19.anInt9688))
             var i_516_ = 0

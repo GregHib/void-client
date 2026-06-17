@@ -1097,53 +1097,53 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         i = i and 0x7fffffff
         while (!aNodeDeque_7751!!.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_7751!!.method1997(8) as Class348_Sub35?
-            Class328_Sub3.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
+            RenderQueueState.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt7747 -= class348_sub35.anInt6976
             if (i_122_ == 1000) {
-                glDeleteBuffersARB(i_122_, Class328_Sub3.anIntArray6522, 0)
+                glDeleteBuffersARB(i_122_, RenderQueueState.anIntArray6522, 0)
                 i_122_ = 0
             }
         }
         if (i_122_ > 0) {
-            glDeleteBuffersARB(i_122_, Class328_Sub3.anIntArray6522, 0)
+            glDeleteBuffersARB(i_122_, RenderQueueState.anIntArray6522, 0)
             i_122_ = 0
         }
         while (!aNodeDeque_7752.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_7752.method1997(8) as Class348_Sub35?
-            Class328_Sub3.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
+            RenderQueueState.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt7748 -= class348_sub35.anInt6976
             if (i_122_ == 1000) {
-                glDeleteTextures(i_122_, Class328_Sub3.anIntArray6522, 0)
+                glDeleteTextures(i_122_, RenderQueueState.anIntArray6522, 0)
                 i_122_ = 0
             }
         }
         if (i_122_ > 0) {
-            glDeleteTextures(i_122_, Class328_Sub3.anIntArray6522, 0)
+            glDeleteTextures(i_122_, RenderQueueState.anIntArray6522, 0)
             i_122_ = 0
         }
         while (!aNodeDeque_7753.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_7753.method1997(8) as Class348_Sub35?
-            Class328_Sub3.anIntArray6522!![i_122_++] = class348_sub35!!.anInt6976
+            RenderQueueState.anIntArray6522!![i_122_++] = class348_sub35!!.anInt6976
             if (i_122_ == 1000) {
-                glDeleteFramebuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0)
+                glDeleteFramebuffersEXT(i_122_, RenderQueueState.anIntArray6522, 0)
                 i_122_ = 0
             }
         }
         if (i_122_ > 0) {
-            glDeleteFramebuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0)
+            glDeleteFramebuffersEXT(i_122_, RenderQueueState.anIntArray6522, 0)
             i_122_ = 0
         }
         while (!aNodeDeque_7754.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_7754.method1997(8) as Class348_Sub35?
-            Class328_Sub3.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
+            RenderQueueState.anIntArray6522!![i_122_++] = class348_sub35!!.aLong4291.toInt()
             anInt7750 -= class348_sub35.anInt6976
             if (i_122_ == 1000) {
-                glDeleteRenderbuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0)
+                glDeleteRenderbuffersEXT(i_122_, RenderQueueState.anIntArray6522, 0)
                 i_122_ = 0
             }
         }
         if (i_122_ > 0) {
-            glDeleteRenderbuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0)
+            glDeleteRenderbuffersEXT(i_122_, RenderQueueState.anIntArray6522, 0)
             val bool = false
         }
         while (!aNodeDeque_7749.method2002(18.toByte())) {
@@ -2116,18 +2116,18 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         i_250_ = i
         while (anInt7862 > i_250_) {
             val class348_sub1 = aClass348_Sub1Array7858[i_250_]!!
-            Class328_Sub1.aFloatArray6514!![0] = class348_sub1.method2724(-1).toFloat()
+            ShaderState.aFloatArray6514!![0] = class348_sub1.method2724(-1).toFloat()
             val i_251_ = i_250_ + 16386
-            Class328_Sub1.aFloatArray6514!![1] = class348_sub1.method2722(127).toFloat()
-            Class328_Sub1.aFloatArray6514!![2] = class348_sub1.method2717(77.toByte()).toFloat()
-            Class328_Sub1.aFloatArray6514!![3] = 1.0f
-            glLightfv(i_251_, 4611, Class328_Sub1.aFloatArray6514, 0)
+            ShaderState.aFloatArray6514!![1] = class348_sub1.method2722(127).toFloat()
+            ShaderState.aFloatArray6514!![2] = class348_sub1.method2717(77.toByte()).toFloat()
+            ShaderState.aFloatArray6514!![3] = 1.0f
+            glLightfv(i_251_, 4611, ShaderState.aFloatArray6514, 0)
             val i_252_ = class348_sub1.method2720(-1)
             val f = class348_sub1.method2721(-76) / 255.0f
-            Class328_Sub1.aFloatArray6514!![2] = NpcSummaryDefinition.method1166(i_252_, 255).toFloat() * f
-            Class328_Sub1.aFloatArray6514!![0] = ((NpcSummaryDefinition.method1166(16762087, i_252_) shr 16).toFloat() * f)
-            Class328_Sub1.aFloatArray6514!![1] = ((NpcSummaryDefinition.method1166(i_252_, 65533) shr 8).toFloat() * f)
-            glLightfv(i_251_, 4609, Class328_Sub1.aFloatArray6514, 0)
+            ShaderState.aFloatArray6514!![2] = NpcSummaryDefinition.method1166(i_252_, 255).toFloat() * f
+            ShaderState.aFloatArray6514!![0] = ((NpcSummaryDefinition.method1166(16762087, i_252_) shr 16).toFloat() * f)
+            ShaderState.aFloatArray6514!![1] = ((NpcSummaryDefinition.method1166(i_252_, 65533) shr 8).toFloat() * f)
+            glLightfv(i_251_, 4609, ShaderState.aFloatArray6514, 0)
             glLightf(i_251_, 4617, 1.0f / (class348_sub1.method2723(-1) * class348_sub1.method2723(-1)).toFloat())
             glEnable(i_251_)
             i_250_++
@@ -3545,7 +3545,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         @JvmStatic
         fun method3802(i: Int, i_315_: Int, i_316_: Int, i_317_: Int, i_318_: Int, i_319_: Int, i_320_: Int) {
             anInt7572++
-            val i_321_ = Class328_Sub1.anInt6513
+            val i_321_ = ShaderState.anInt6513
             Class88.anInt1497 = 0
             val `is` = ScrollTexMaterialPass.anIntArray6290!!
             var i_322_ = 0
@@ -3631,7 +3631,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     if (i_333_ == -1) i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 } else i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 if (i_333_ != -1) {
-                                    var abstractModelRenderers = (Class328_Sub2.aClass60_6517!!.method583(i_333_.toLong(), -45) as? Array<AbstractModelRenderer?>)
+                                    var abstractModelRenderers = (MaterialTypeMarker.aClass60_6517!!.method583(i_333_.toLong(), -45) as? Array<AbstractModelRenderer?>)
                                     if (abstractModelRenderers == null) {
                                         val spriteImages = SpriteImage.method1519((CameraRotationStub.aClass45_322!!), i_333_, 0)
                                         if (spriteImages != null) {
@@ -3641,7 +3641,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 abstractModelRenderers[i_334_] = (Class348_Sub8.aRenderer6654!!.method3691(spriteImages[i_334_], true))
                                                 i_334_++
                                             }
-                                            Class328_Sub2.aClass60_6517!!.method582(abstractModelRenderers, i_333_.toLong(), (-101).toByte())
+                                            MaterialTypeMarker.aClass60_6517!!.method582(abstractModelRenderers, i_333_.toLong(), (-101).toByte())
                                         }
                                     }
                                     if (abstractModelRenderers != null && abstractModelRenderers.size == 4) {

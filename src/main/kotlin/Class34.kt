@@ -216,7 +216,7 @@ class Class34 {
         @JvmStatic
         fun method349(i: Int) {
             anInt462++
-            val i_32_ = Class328_Sub1.anInt6513
+            val i_32_ = ShaderState.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
             for (i_33_ in 0..<i_32_) {
                 val player = LoadingBarRenderer.aPlayerArray5058!![`is`!![i_33_]]

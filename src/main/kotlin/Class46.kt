@@ -970,7 +970,7 @@ class Class46 {
             Class44.method386((-106).toByte())
             AudioResampler.method1271(0)
             Class353.aClass60_4346!!.method587(-108)
-            Class328_Sub2.aClass60_6517!!.method587(-109)
+            MaterialTypeMarker.aClass60_6517!!.method587(-109)
             Class348_Sub1_Sub1.aClass60_8807!!.method587(-113)
             Class34.aClass60_463!!.method587(-83)
             Class66.aClass60_1174!!.method587(-91)

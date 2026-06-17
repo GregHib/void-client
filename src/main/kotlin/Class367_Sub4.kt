@@ -75,14 +75,14 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             class101_sub2.method899(1024)
             this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aConfigFlagUtil_9477)
             if (aBoolean7311) {
-                this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), 113, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
+                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 113, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
                 this.aHa_Sub3_4479.method3924(true, false, 0, Class342.aClass70_4247, false)
                 this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
             } else {
-                this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), 117, (Class328_Sub3.aRenderConfigFactory_6519))
+                this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), 117, (RenderQueueState.aRenderConfigFactory_6519))
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntity.aClass70_8737))
                 this.aHa_Sub3_4479.method3897(2, -4382)
-                this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), 122, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
+                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 122, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntity.aClass70_8737))
                 this.aHa_Sub3_4479.method3924(true, false, 1, (SceneObjectEntity.aClass70_8737), false)
                 this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
@@ -130,7 +130,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
     }
 
     override fun method3521(bool: Boolean, i: Byte) {
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), 126, ParticleSystemState.aRenderConfigFactory_2207)
+        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 126, ParticleSystemState.aRenderConfigFactory_2207)
         if (i.toInt() != -103) method3542(74, null, 65, 65, -77, true)
         anInt7308++
     }

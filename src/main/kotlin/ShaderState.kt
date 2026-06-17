@@ -1,7 +1,7 @@
 /* Class328_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class328_Sub1 : Class328() {
+open class ShaderState : ShaderObject() {
     companion object {
         @JvmField
         var anInt6513: Int = 0

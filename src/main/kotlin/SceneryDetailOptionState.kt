@@ -233,7 +233,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         }
                                         i_37_++
                                     }
-                                    val i_40_ = Class328_Sub1.anInt6513
+                                    val i_40_ = ShaderState.anInt6513
                                     val `is` = ScrollTexMaterialPass.anIntArray6290!!
                                     var i_41_ = 0
                                     while ((i_40_ > i_41_)) {
@@ -276,7 +276,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                 }
                                             }
                                         }
-                                        val i_51_ = Class328_Sub1.anInt6513
+                                        val i_51_ = ShaderState.anInt6513
                                         val `is` = ScrollTexMaterialPass.anIntArray6290!!
                                         var i_52_ = 0
                                         while ((i_51_ > i_52_)) {

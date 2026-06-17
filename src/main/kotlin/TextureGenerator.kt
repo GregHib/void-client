@@ -36,7 +36,7 @@ abstract class TextureGenerator {
         @JvmStatic
         fun method1397(i: Int) {
             anInt2493++
-            val i_0_ = Class328_Sub1.anInt6513
+            val i_0_ = ShaderState.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290!!
             for (i_1_ in 0..<i_0_) {
                 val player = LoadingBarRenderer.aPlayerArray5058!![`is`[i_1_]]

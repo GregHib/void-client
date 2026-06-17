@@ -149,7 +149,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                     }
                     if (CameraConfigDefinition.anInt3246 > 0) {
                         Class348_Sub40_Sub26.anInt9348++
-                        val class348_sub47 = method2148((Class328_Sub1_Sub1.aClass351_8798), (Class348_Sub23_Sub2.aClass77_9029), -111)
+                        val class348_sub47 = method2148((ShaderStateVariant.aClass351_8798), (Class348_Sub23_Sub2.aClass77_9029), -111)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinition.anInt3246)
                         var i_13_ = 0
                         while ((i_13_ < CameraConfigDefinition.anInt3246)) {

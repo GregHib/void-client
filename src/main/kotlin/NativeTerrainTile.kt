@@ -514,7 +514,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     this.aHa_Sub3_8322!!.method3817(60, 128)
                     this.aHa_Sub3_8322!!.method3814(false, false, -2, 100.toByte())
                     this.aHa_Sub3_8322!!.method3850(63.toByte(), (this.aHa_Sub3_8322!!.anInterface18_8147))
-                    this.aHa_Sub3_8322!!.method3874(Class328_Sub3.aRenderConfigFactory_6519, 116, ParticleSystemState.aRenderConfigFactory_2207)
+                    this.aHa_Sub3_8322!!.method3874(RenderQueueState.aRenderConfigFactory_6519, 116, ParticleSystemState.aRenderConfigFactory_2207)
                     this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
                     this.aHa_Sub3_8322!!.method3885(0, true, GlIndexBufferArb.aClass70_8503)
                     var class348 = aNodeDeque_8286.method1995(i_151_ + 5)

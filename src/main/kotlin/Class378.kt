@@ -779,7 +779,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         }
 
         private fun method3955(i: Int, renderConfigFactory: RenderConfigFactory?): Int {
-            if (Class328_Sub3.aRenderConfigFactory_6519 == renderConfigFactory) return 2
+            if (RenderQueueState.aRenderConfigFactory_6519 == renderConfigFactory) return 2
             if (ParticleSystemState.aRenderConfigFactory_2207 == renderConfigFactory) return 4
             if (MediaStreamClient.aRenderConfigFactory_3196 != renderConfigFactory) {
                 if (renderConfigFactory != Class348_Sub23_Sub2.aRenderConfigFactory_9011) {

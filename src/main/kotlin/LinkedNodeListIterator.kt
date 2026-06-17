@@ -221,7 +221,7 @@ class LinkedNodeListIterator {
                             }
                             i_22_++
                         }
-                        val i_25_ = Class328_Sub1.anInt6513
+                        val i_25_ = ShaderState.anInt6513
                         val `is` = ScrollTexMaterialPass.anIntArray6290
                         for (i_26_ in 0..<i_25_) {
                             val player = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_26_]])
@@ -316,7 +316,7 @@ class LinkedNodeListIterator {
                 CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                 method3284(true, ModelWallEntity.aDouble10120)
             } else {
-                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)
+                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)
                 method3284(true, GlCubeMapTexture.aDouble8621)
             }
             if (bool != false) method1010(true, true)

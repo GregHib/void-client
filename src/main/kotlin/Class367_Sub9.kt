@@ -65,8 +65,8 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
         try {
             aNormalMapGenerator_7375 = normalMapGenerator
             if (class45 != null && class377!!.aBoolean9921 && class377.aBoolean9922) {
-                val class39 = (Class328.method2608(class377, class45.method391("gl", "environment_mapped_water_v", -29832), -108, 35633))
-                val class39_13_ = (Class328.method2608(class377, class45.method391("gl", "environment_mapped_water_f", -29832), -122, 35632))
+                val class39 = (ShaderObject.method2608(class377, class45.method391("gl", "environment_mapped_water_v", -29832), -108, 35633))
+                val class39_13_ = (ShaderObject.method2608(class377, class45.method391("gl", "environment_mapped_water_f", -29832), -122, 35632))
                 aClass89_7369 = method2582(class377, arrayOf<Class39?>(class39, class39_13_), -2113)
                 aBoolean7376 = (aClass89_7369 != null && aNormalMapGenerator_7375!!.method2041(120.toByte()))
             } else aBoolean7376 = false

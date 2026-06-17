@@ -4,7 +4,7 @@ import NamedTimedNode.Companion.method2516
 /* Class328_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class328_Sub3 : Class328() {
+object RenderQueueState : ShaderObject() {
     @JvmField
     var aRenderConfigFactory_6519: RenderConfigFactory? = RenderConfigFactory()
     var anInt6520: Int = 0
@@ -16,7 +16,7 @@ object Class328_Sub3 : Class328() {
         anInt6521++
         val class348_sub42_sub15 = method2516(i_0_, 105.toByte(), 12)
         class348_sub42_sub15.method3251(-16058)
-        if (i >= -59) Class328_Sub3.method2617((-108).toByte())
+        if (i >= -59) RenderQueueState.method2617((-108).toByte())
     }
 
     fun method2616(i: Int) {

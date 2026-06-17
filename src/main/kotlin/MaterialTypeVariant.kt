@@ -1,7 +1,7 @@
 /* Class328_Sub2_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class328_Sub2_Sub1 : Class328_Sub2() {
+object MaterialTypeVariant : MaterialTypeMarker() {
     var aLongArray8800: LongArray? = LongArray(32)
 
     @JvmStatic

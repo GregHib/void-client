@@ -74,9 +74,9 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
 
         @JvmStatic
         fun method493(bool: Boolean) {
-            if (Class328_Sub2.aClass56Array6515 == null) {
-                Class328_Sub2.aClass56Array6515 = Class56.Companion.method528(-91)
-                Class348_Sub42_Sub15.aClass56_9660 = Class328_Sub2.aClass56Array6515!![0]
+            if (MaterialTypeMarker.aClass56Array6515 == null) {
+                MaterialTypeMarker.aClass56Array6515 = Class56.Companion.method528(-91)
+                Class348_Sub42_Sub15.aClass56_9660 = MaterialTypeMarker.aClass56Array6515!![0]
                 DataHolder.aLong3660 = Class62.method599(-119)
             }
             anInt4900++

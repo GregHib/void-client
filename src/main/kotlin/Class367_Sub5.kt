@@ -134,7 +134,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
         this.aHa_Sub3_4479.method3897(1, -4382)
         this.aHa_Sub3_4479.method3850(95.toByte(), anInterface18_Impl3_7331)
         if (i != 15192) method3520((-41).toByte())
-        this.aHa_Sub3_4479.method3874(Class328_Sub3.aRenderConfigFactory_6519, 105, MediaStreamClient.aRenderConfigFactory_3196)
+        this.aHa_Sub3_4479.method3874(RenderQueueState.aRenderConfigFactory_6519, 105, MediaStreamClient.aRenderConfigFactory_3196)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
         this.aHa_Sub3_4479.method3924(true, false, 2, Class342.aClass70_4247, false)
         this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)

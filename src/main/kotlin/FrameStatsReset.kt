@@ -256,7 +256,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SlotBinding.anInt3395 = 0
             Class69.anInt1192 = 0
             Class40.anInt547 = 0
-            Class328_Sub2.anInt6516 = 0
+            MaterialTypeMarker.anInt6516 = 0
             Class64_Sub2.anInt5484 = 0
             ItemDefinitionLoader.anInt2184 = 0
             Client.anInt5178 = 0
@@ -494,7 +494,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub2.anInt8568 = 0
             SimpleToggleOptionState.anInt5893 = 0
             NativeRenderer.anInt8064 = 0
-            Class328.anInt4101 = 0
+            ShaderObject.anInt4101 = 0
             AnimatedModelRenderer.anInt8420 = 0
             Class348_Sub32.anInt6931 = 0
             HostPingThread.anInt2266 = 0
@@ -622,7 +622,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub1_Sub2.anInt8811 = 0
             GroundDecorSceneEntity.anInt9979 = 0
             FixedFunctionMaterialPass.anInt6203 = 0
-            Class328.anInt4099 = 0
+            ShaderObject.anInt4099 = 0
             TextureHandle.anInt2583 = 0
             FileIoUtil.anInt4092 = 0
             WidgetDefinition.anInt257 = 0
@@ -1374,7 +1374,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9880 = 0
             Class64_Sub2.anInt5449 = 0
             Class377.anInt9839 = 0
-            Class328_Sub3.anInt6520 = 0
+            RenderQueueState.anInt6520 = 0
             Class377.anInt9829 = 0
             Class50.anInt861 = 0
             TrackedGroundDecor.anInt10380 = 0
@@ -2651,7 +2651,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             VarpStore.anInt5071 = 0
             Class60.anInt1090 = 0
             WidgetComponentNode.anInt4652 = 0
-            Class328_Sub3.anInt6521 = 0
+            RenderQueueState.anInt6521 = 0
             SeqDefinitionCache.anInt3353 = 0
             Class348_Sub40_Sub9.anInt9172 = 0
             LightDetailOptionState.anInt6036 = 0
@@ -3625,7 +3625,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class361.anInt4440 = 0
             TwoStateOptionState.anInt6135 = 0
             Class367_Sub9.anInt7368 = 0
-            Class328_Sub2.anInt6518 = 0
+            MaterialTypeMarker.anInt6518 = 0
             Class46.anInt736 = 0
             GlArrayBufferObject.anInt4712 = 0
             Class64_Sub2.anInt5521 = 0

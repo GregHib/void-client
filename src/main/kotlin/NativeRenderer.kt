@@ -882,7 +882,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3864(81)
             method3850((-47).toByte(), interface18_impl3)
             method3817(99, 1)
-            method3874(Class328_Sub3.aRenderConfigFactory_6519, 114, Class328_Sub3.aRenderConfigFactory_6519)
+            method3874(RenderQueueState.aRenderConfigFactory_6519, 114, RenderQueueState.aRenderConfigFactory_6519)
             method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
             method3894(-28186, i)
             this.aClass101_Sub2_8074.method932(0.0f, this.anInt7962.toFloat(), this.anInt7931.toFloat(), (-52).toByte())
@@ -2085,11 +2085,11 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     fun method3923(bool: Boolean, i: Int) {
         if (i != 1) {
             if (i != 0) {
-                if (i == 2) method3874(Class328_Sub3.aRenderConfigFactory_6519, 117, MediaStreamClient.aRenderConfigFactory_3196)
+                if (i == 2) method3874(RenderQueueState.aRenderConfigFactory_6519, 117, MediaStreamClient.aRenderConfigFactory_3196)
                 else if (i == 3) method3874(ParticleSystemState.aRenderConfigFactory_2207, 111, Class348_Sub23_Sub2.aRenderConfigFactory_9011)
                 else if (i == 4) method3874(Class348_Sub7.aRenderConfigFactory_6644, 126, Class348_Sub7.aRenderConfigFactory_6644)
             } else method3874(ParticleSystemState.aRenderConfigFactory_2207, 120, ParticleSystemState.aRenderConfigFactory_2207)
-        } else method3874(Class328_Sub3.aRenderConfigFactory_6519, 127, Class328_Sub3.aRenderConfigFactory_6519)
+        } else method3874(RenderQueueState.aRenderConfigFactory_6519, 127, RenderQueueState.aRenderConfigFactory_6519)
         anInt8034++
     }
 

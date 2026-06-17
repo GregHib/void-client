@@ -1,7 +1,7 @@
 /* Class328_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class328_Sub2 : Class328() {
+open class MaterialTypeMarker : ShaderObject() {
     companion object {
         var aClass56Array6515: Array<Class56?>? = null
         var anInt6516: Int = 0

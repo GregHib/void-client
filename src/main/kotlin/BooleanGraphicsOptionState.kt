@@ -75,7 +75,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
             if (RenderNode.aBoolean9722 && (0x18 and Class38.anInt500) != 0) {
                 val i_2_ = -88 / ((i - -33) / 37)
                 var bool = false
-                val i_3_ = Class328_Sub1.anInt6513
+                val i_3_ = ShaderState.anInt6513
                 val `is` = ScrollTexMaterialPass.anIntArray6290!!
                 var i_4_ = 0
                 while (i_3_ > i_4_) {
