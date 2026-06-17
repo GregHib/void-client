@@ -125,9 +125,9 @@ object Class66 {
             if ((class348_sub42_sub19.aClass273_9691 == Class90.aClass273_1512) || (class348_sub42_sub19.aClass273_9691) == Class59_Sub1_Sub2.aClass273_8664 || (class348_sub42_sub19.aClass273_9691) == Class77.aClass273_1298) {
                 var i_1_ = 0
                 var i_2_ = 0
-                if (Class168.aClass46_2249 != null) {
-                    i_1_ = Class168.aClass46_2249!!.anInt800
-                    i_2_ = Class168.aClass46_2249!!.anInt750
+                if (HeapDiagnosticsHolder.aClass46_2249 != null) {
+                    i_1_ = HeapDiagnosticsHolder.aClass46_2249!!.anInt800
+                    i_2_ = HeapDiagnosticsHolder.aClass46_2249!!.anInt750
                 }
                 anIntArray1164!![0] = Class258_Sub4.aClass373_8552!!.method3597(true) - i_1_
                 anIntArray1164!![1] = (Class258_Sub4.aClass373_8552!!.method3594(80.toByte()) - i_2_)
@@ -1826,8 +1826,8 @@ object Class66 {
                 anInt1173 -= 2
                 AbstractMenuEntry.aShort1700 = anIntArray1149!![anInt1173].toShort()
                 if (AbstractMenuEntry.aShort1700 <= 0) AbstractMenuEntry.aShort1700 = 256.toShort()
-                Class168.aShort2250 = anIntArray1149!![anInt1173 + 1].toShort()
-                if (Class168.aShort2250 <= 0) Class168.aShort2250 = 205.toShort()
+                HeapDiagnosticsHolder.aShort2250 = anIntArray1149!![anInt1173 + 1].toShort()
+                if (HeapDiagnosticsHolder.aShort2250 <= 0) HeapDiagnosticsHolder.aShort2250 = 205.toShort()
                 return
             }
             if (i == 6201) {
@@ -1868,7 +1868,7 @@ object Class66 {
             }
             if (i == 6205) {
                 anIntArray1149!![anInt1173++] = AbstractMenuEntry.aShort1700.toInt()
-                anIntArray1149!![anInt1173++] = Class168.aShort2250.toInt()
+                anIntArray1149!![anInt1173++] = HeapDiagnosticsHolder.aShort2250.toInt()
                 return
             }
         } else if (i < 6400) {

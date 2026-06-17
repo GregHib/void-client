@@ -56,7 +56,7 @@ class HeapInfoRecord internal constructor(string: String?, class221: Class221?, 
         var aClass4949: Class<*>? = null
 
         fun method1247(file: File, bool: Boolean, bool_0_: Boolean) {
-            if (Class168.anObject2256 == null) method1142(26.toByte())
+            if (HeapDiagnosticsHolder.anObject2256 == null) method1142(26.toByte())
             anInt4939++
             if (bool_0_ != false) aClass299_4938 = null
             try {

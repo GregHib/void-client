@@ -70,7 +70,7 @@ import AudioResampler.Companion.method1269
 import AudioResampler.Companion.method1276
 import ItemDefinitionLoader.Companion.method1284
 import ParticleSystemState.Companion.method1293
-import Class168.method1298
+import HeapDiagnosticsHolder.method1298
 import Class17.Companion.method265
 import Class170.Companion.method1309
 import Class170.Companion.method1310
@@ -2209,7 +2209,7 @@ class Client : GameAppletFrame() {
                                         continue
                                     }
                                     if (class46.anInt765 == Class348_Sub45.anInt7102) {
-                                        Class168.aClass46_2249 = class46
+                                        HeapDiagnosticsHolder.aClass46_2249 = class46
                                         if (bool) Class246.aBoolean3174 = true
                                         if (bool_54_) {
                                             val i_70_ = ((i_51_ + (class348_sub45!!.method3308((-127).toByte())) - i_43_ - ((class46.anInt709) / 2)).toDouble() * 2.0 / (Class75.aFloat1247).toDouble()).toInt()

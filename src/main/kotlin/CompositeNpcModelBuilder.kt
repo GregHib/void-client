@@ -210,7 +210,7 @@ class CompositeNpcModelBuilder {
                     }
                     val modelDefinition = ModelDefinition(modelDefinitions, modelDefinitions.size)
                     i_36_ = i_36_ or 0x4000
-                    class64 = var_renderer!!.method3625(modelDefinition, i_36_, Class168.anInt2251, 64, 850)
+                    class64 = var_renderer!!.method3625(modelDefinition, i_36_, HeapDiagnosticsHolder.anInt2251, 64, 850)
                     for (i_49_ in 0..4) {
                         var i_50_ = 0
                         while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_50_)) {
@@ -394,7 +394,7 @@ class CompositeNpcModelBuilder {
                 }
                 i_80_ = i_80_ or 0x4000
                 val modelDefinition = ModelDefinition(modelDefinitions, i_83_)
-                class64 = var_renderer!!.method3625(modelDefinition, i_80_, Class168.anInt2251, 64, 768)
+                class64 = var_renderer!!.method3625(modelDefinition, i_80_, HeapDiagnosticsHolder.anInt2251, 64, 768)
                 for (i_86_ in 0..4) {
                     var i_87_ = 0
                     while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_87_)) {
@@ -488,7 +488,7 @@ class CompositeNpcModelBuilder {
                 if (class124 != null) modelDefinitions[i_109_++] = class124
                 class124 = ModelDefinition(modelDefinitions, i_109_)
                 i_108_ = i_108_ or 0x4000
-                class64 = var_renderer!!.method3625(class124, i_108_, Class168.anInt2251, 64, 768)
+                class64 = var_renderer!!.method3625(class124, i_108_, HeapDiagnosticsHolder.anInt2251, 64, 768)
                 for (i_110_ in 0..4) {
                     var i_111_ = 0
                     while ((i_111_ < Class367_Sub2.aShortArrayArrayArray7290!!.size)) {

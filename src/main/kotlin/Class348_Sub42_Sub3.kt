@@ -41,7 +41,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             var i_4_ = i_3_ - 334
             if (i_4_ < 0) i_4_ = 0
             else if (i_4_ > 100) i_4_ = 100
-            var i_5_ = ((-AbstractMenuEntry.aShort1700 + Class168.aShort2250) * i_4_ / 100 + AbstractMenuEntry.aShort1700)
+            var i_5_ = ((-AbstractMenuEntry.aShort1700 + HeapDiagnosticsHolder.aShort2250) * i_4_ / 100 + AbstractMenuEntry.aShort1700)
             if (i_5_ < Class348_Sub42_Sub8.aShort9555) i_5_ = Class348_Sub42_Sub8.aShort9555.toInt()
             else if (Class48.aShort851 < i_5_) i_5_ = Class48.aShort851.toInt()
             var i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334)
@@ -115,13 +115,13 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             else Class239_Sub13.anInt5976 = (Class75.aClass348_Sub42_Sub14_1243!!.anInt9628)
             anInt9500++
             Class75.aClass348_Sub42_Sub14_1243 = null
-            Class168.aClass46_2249 = null
+            HeapDiagnosticsHolder.aClass46_2249 = null
             anInt4290 = 0
             Class289.aClass262_3705 = null
             method749()
             Class75.aClass262_1254!!.method1996(127)
             Class285.aClass323_4754 = null
-            Class168.aClass323_2252 = null
+            HeapDiagnosticsHolder.aClass323_2252 = null
             Class67.aAbstractModelRenderer_4643 = null
             MinimapSpriteRenderer.aClass323_4921 = null
             Class176.aClass323_2333 = null

@@ -420,7 +420,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             Class289.method2193(true, (-123).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 79) {
-                            Class168.aClass323_2252 = Class323(var_renderer!!, 17, true, Class305.aCanvas3869!!)
+                            HeapDiagnosticsHolder.aClass323_2252 = Class323(var_renderer!!, 17, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 82
                             Class289.method2193(true, (-124).toByte())
                             method867(true)

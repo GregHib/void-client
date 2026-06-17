@@ -113,7 +113,7 @@ class Class38 {
 
         @JvmStatic
         fun method363(i: Int) {
-            if (Class168.anInt2254 < 102) Class168.anInt2254 += 6
+            if (HeapDiagnosticsHolder.anInt2254 < 102) HeapDiagnosticsHolder.anInt2254 += 6
             anInt512++
             if (MinimapFlagRenderer.anInt1794 != -1 && (Class299_Sub1_Sub1.aLong8694 < Class62.method599(-127))) {
                 for (i_4_ in MinimapFlagRenderer.anInt1794..<Class50_Sub1.aStringArray5223!!.size) {

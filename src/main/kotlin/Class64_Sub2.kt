@@ -535,7 +535,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 else aShortArray5423 = null
             }
             if (i != 262144) method623(-95, 94, null, true, 116, 62)
-            if (aShortArray5508 != null && !Class168.method1299(i + 131072, anInt5463, anInt5472)) {
+            if (aShortArray5508 != null && !HeapDiagnosticsHolder.method1299(i + 131072, anInt5463, anInt5472)) {
                 if ((aClass192_5485 == null || aClass192_5485!!.method1437((-100).toByte())) && (aClass290_5482 == null || aClass290_5482!!.method2197((-56).toByte()))) {
                     aShortArray5512 = null
                     aShortArray5495 = aShortArray5512

@@ -897,7 +897,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class168.aIntRange_2248 == Class348_Sub3.aIntRange_6584) {
+            if (HeapDiagnosticsHolder.aIntRange_2248 == Class348_Sub3.aIntRange_6584) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_104_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-87).toByte())
                 val i_105_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -1054,7 +1054,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class168.aIntRange_2255) {
+            if (Class348_Sub3.aIntRange_6584 == HeapDiagnosticsHolder.aIntRange_2255) {
                 val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-104).toByte())
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val string_133_ = (Class239_Sub6.aClass355_5900!!.method3471(i, (-98).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 42.toByte()))

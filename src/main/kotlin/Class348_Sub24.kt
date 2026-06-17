@@ -351,7 +351,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             }
                             Class318_Sub1_Sub3_Sub4.aClass46_10336 = null
                             Class50_Sub1.aBoolean5221 = false
-                            Class168.aClass46_2249 = null
+                            HeapDiagnosticsHolder.aClass46_2249 = null
                             ScrollingWidgetComponentNode.aBoolean8386 = false
                             method198(null, false, -1, -1)
                             method1343(-1, null, 1, -1)
@@ -401,7 +401,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 }
                                 method705(class348_sub36)
                             }
-                            if (Class168.aClass46_2249 == null) Class348_Sub42.anInt7059 = 0
+                            if (HeapDiagnosticsHolder.aClass46_2249 == null) Class348_Sub42.anInt7059 = 0
                             if (Class289.aClass46_3701 != null) method2708(-30206)
                             if (Class192.anInt2581 > 0 && Class182.aClass346_2449!!.method2696(82, i xor 0x2cd5.inv()) && Class182.aClass346_2449!!.method2696(81, -121) && Class98.anInt1565 != 0) {
                                 var i_30_ = ((LocalPlayerState.aPlayer_1907!!.plane) - Class98.anInt1565)

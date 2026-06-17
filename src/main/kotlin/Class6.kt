@@ -153,7 +153,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                         i_36_ = Class16.method260(false)
                     }
                     var_renderer!!.KA(i_35_, i_36_, Class321.anInt4017 + i_35_, i_36_ + 350)
-                    var_renderer.aa(i_35_, i_36_, Class321.anInt4017, 350, 0x332277 or (Class168.anInt2254 shl 24), 1)
+                    var_renderer.aa(i_35_, i_36_, Class321.anInt4017, 350, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 1)
                     Class338.method2663(-5590, i_35_, Class321.anInt4017 + i_35_, i_36_, i_36_ + 350)
                     val i_37_ = 350 / Class68.anInt1188
                     if (Class369_Sub2.anInt8587 > 0) {
@@ -161,7 +161,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                         val i_39_ = (i_37_ * i_38_ / (-1 + (i_37_ - -Class369_Sub2.anInt8587)))
                         var i_40_ = 4
                         if (Class369_Sub2.anInt8587 > 1) i_40_ += ((Class369_Sub2.anInt8587 + (-1 + -Class284.anInt3676)) * (i_38_ - i_39_) / (Class369_Sub2.anInt8587 + -1))
-                        var_renderer.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (Class168.anInt2254 shl 24), 2)
+                        var_renderer.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 2)
                         var i_41_ = Class284.anInt3676
                         while (((i_41_ < i_37_ + Class284.anInt3676) && Class369_Sub2.anInt8587 > i_41_)) {
                             val strings = (Class348_Sub40_Sub23.method3113('\u0008', true, Class286_Sub1.aStringArray6200!![i_41_]!!))

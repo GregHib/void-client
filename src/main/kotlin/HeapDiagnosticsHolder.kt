@@ -4,7 +4,7 @@ import kotlin.concurrent.Volatile
 /* Class168 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class168 {
+object HeapDiagnosticsHolder {
     var aIntRange_2248: IntRange?
     @JvmField
     var aClass46_2249: Class46? = null

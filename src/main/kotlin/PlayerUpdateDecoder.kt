@@ -242,7 +242,7 @@ object PlayerUpdateDecoder {
     @Synchronized
     fun method1142(i: Byte) {
         anInt1913++
-        if (Class168.anObject2256 == null) {
+        if (HeapDiagnosticsHolder.anObject2256 == null) {
             try {
 //                Class168.anObject2256 = ManagementFactory.newPlatformMXBeanProxy<HotSpotDiagnosticMXBean?>(ManagementFactory.getPlatformMBeanServer(), "com.sun.management:type=HotSpotDiagnostic", HotSpotDiagnosticMXBean::class.java)
             } catch (exception: Exception) {

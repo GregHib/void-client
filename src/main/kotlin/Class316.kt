@@ -60,7 +60,7 @@ class Class316 internal constructor(`is`: IntArray) {
                 anInt3958++
                 if (method2066(106.toByte())) {
                     if (Class286_Sub1.aStringArray6200 == null) method249(2)
-                    Class168.anInt2254 = 0
+                    HeapDiagnosticsHolder.anInt2254 = 0
                     Class351.aBoolean4328 = true
                 }
             }
