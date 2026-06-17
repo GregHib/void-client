@@ -20,7 +20,7 @@ class Class51 {
     var anInt878: Int = 256
     private var aByte879: Byte = 0
     private var anInt880 = 0
-    private var aClass356_881: Class356? = null
+    private var aHashtable_881: Hashtable? = null
     private var anInt882 = 128
     @JvmField
     var anInt883: Int = 64
@@ -144,9 +144,9 @@ class Class51 {
 
     fun method475(string: String?, i: Int, i_3_: Int): String? {
         anInt866++
-        if (aClass356_881 == null) return string
+        if (aHashtable_881 == null) return string
         if (i_3_ != -16) return null
-        val class348_sub50 = aClass356_881!!.method3480(i.toLong(), -6008) as StringCacheNode?
+        val class348_sub50 = aHashtable_881!!.method3480(i.toLong(), -6008) as StringCacheNode?
         if (class348_sub50 == null) return string
         return class348_sub50.aString7211
     }
@@ -524,9 +524,9 @@ class Class51 {
                                                                                                                     this.anInt916 = class348_sub49.readUnsignedShort(842397944)
                                                                                                                 } else if (i == 249) {
                                                                                                                     val i_42_ = class348_sub49.readUnsignedByte(255)
-                                                                                                                    if (aClass356_881 == null) {
+                                                                                                                    if (aHashtable_881 == null) {
                                                                                                                         val i_43_ = method340(i_42_, 108.toByte())
-                                                                                                                        aClass356_881 = Class356(i_43_)
+                                                                                                                        aHashtable_881 = Hashtable(i_43_)
                                                                                                                     }
                                                                                                                     for (i_44_ in 0..<i_42_) {
                                                                                                                         val bool = class348_sub49.readUnsignedByte(255) == 1
@@ -534,7 +534,7 @@ class Class51 {
                                                                                                                         val linkedListNode: LinkedListNode?
                                                                                                                         if (!bool) linkedListNode = IntKeyNode(class348_sub49.readInt((-126).toByte()))
                                                                                                                         else linkedListNode = StringCacheNode(class348_sub49.readString((-87).toByte()))
-                                                                                                                        aClass356_881!!.method3483(86.toByte(), i_45_.toLong(), linkedListNode)
+                                                                                                                        aHashtable_881!!.method3483(86.toByte(), i_45_.toLong(), linkedListNode)
                                                                                                                     }
                                                                                                                 }
                                                                                                             } else this.anInt909 = class348_sub49.readSmart(-121)
@@ -678,8 +678,8 @@ class Class51 {
     fun method487(i: Int, i_79_: Int, i_80_: Int): Int {
         val i_81_ = 81 % ((i_80_ - -53) / 44)
         anInt898++
-        if (aClass356_881 == null) return i_79_
-        val class348_sub35 = aClass356_881!!.method3480(i.toLong(), -6008) as IntKeyNode?
+        if (aHashtable_881 == null) return i_79_
+        val class348_sub35 = aHashtable_881!!.method3480(i.toLong(), -6008) as IntKeyNode?
         if (class348_sub35 == null) return i_79_
         return class348_sub35.anInt6976
     }

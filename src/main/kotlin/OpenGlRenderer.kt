@@ -2954,7 +2954,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInterface11Array7743 = arrayOfNulls<Interface11>(4)
         anInt7746 = -1
         LinkedNodeListIterator()
-        Class356(16)
+        Hashtable(16)
         aNodeDeque_7749 = NodeDeque()
         aNodeDeque_7751 = NodeDeque()
         aNodeDeque_7752 = NodeDeque()
@@ -3519,16 +3519,16 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             Class8.anInt166++
                         } else {
                             val l = (class348_sub42_sub12.aLong9600)
-                            class348_sub42_sub13 = (ContactEntry.aClass356_9603!!.method3480(l, -6008) as? ContactList?)
+                            class348_sub42_sub13 = (ContactEntry.aHashtable_9603!!.method3480(l, -6008) as? ContactList?)
                             while (class348_sub42_sub13 != null) {
                                 if (class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601) break
-                                class348_sub42_sub13 = (ContactEntry.aClass356_9603!!.method3476(true) as? ContactList?)
+                                class348_sub42_sub13 = (ContactEntry.aHashtable_9603!!.method3476(true) as? ContactList?)
                             }
                             if (class348_sub42_sub13 == null) {
                                 class348_sub42_sub13 = (KeyboardLayoutCache.aClass60_3301!!.method583(l, i.toInt() xor 0x3a) as? ContactList?)
                                 if (class348_sub42_sub13 != null && !(class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601)) class348_sub42_sub13 = null
                                 if (class348_sub42_sub13 == null) class348_sub42_sub13 = (ContactList(class348_sub42_sub12.aString9601))
-                                ContactEntry.aClass356_9603!!.method3483(71.toByte(), l, class348_sub42_sub13)
+                                ContactEntry.aHashtable_9603!!.method3483(71.toByte(), l, class348_sub42_sub13)
                                 Class8.anInt166++
                             }
                         }
@@ -3554,7 +3554,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_322_]]!!)
                 else {
-                    class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as NpcReference).aNpc_6859!!)
+                    class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as NpcReference).aNpc_6859!!)
                     class79 = class318_sub1_sub3_sub3.aClass79_10505!!
                     if (class79.anIntArray1377 != null) {
                         class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), i_316_ + -3)
@@ -4006,11 +4006,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             for (i_433_ in 0..<Class45.anInt669) {
                 val i_434_ = GlTexture1D.anIntArray8557!![i_433_]
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
-                if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
+                if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
                 else class318_sub1_sub3_sub3 = LoadingBarRenderer.aPlayerArray5058!![i_434_]
                 val i_435_ = LocDefinitionCache.anIntArray3432!![i_433_]
                 val class318_sub1_sub3_sub3_436_: ProjectedGroundDecor?
-                if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((NpcEntityUpdater.aClass356_3654!!.method3480((-2048 + i_435_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
+                if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((NpcEntityUpdater.aHashtable_3654!!.method3480((-2048 + i_435_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
                 else class318_sub1_sub3_sub3_436_ = LoadingBarRenderer.aPlayerArray5058!![i_435_]
                 SpriteSheetCache.method1430(--class318_sub1_sub3_sub3!!.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)
             }

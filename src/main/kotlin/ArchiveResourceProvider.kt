@@ -11,7 +11,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
     private var anInt6352 = 0
     private val aScriptCompilerThread_6354: ScriptCompilerThread?
     private var aClass348_Sub42_Sub16_6355: AsyncResourceRequest? = null
-    private val aClass356_6360: Class356
+    private val aHashtable_6360: Hashtable
     private var anInt6361 = 0
     private val aIndexedFileCache_6364: IndexedFileCache?
     private val aIndexedFileCache_6365: IndexedFileCache?
@@ -121,7 +121,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
         }
         if (i == -1) {
             if (aBoolean6375 && Class62.method599(-94) >= aLong6374) {
-                var class348_sub42_sub16 = aClass356_6360.method3484(0) as AsyncResourceRequest?
+                var class348_sub42_sub16 = aHashtable_6360.method3484(0) as AsyncResourceRequest?
                 while (class348_sub42_sub16 != null) {
                     if (!class348_sub42_sub16.aBoolean9664) {
                         if (class348_sub42_sub16.aBoolean9667) {
@@ -129,7 +129,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                             class348_sub42_sub16.method2715(116.toByte())
                         } else class348_sub42_sub16.aBoolean9667 = true
                     }
-                    class348_sub42_sub16 = (aClass356_6360.method3482(0) as AsyncResourceRequest?)
+                    class348_sub42_sub16 = (aHashtable_6360.method3482(0) as AsyncResourceRequest?)
                 }
                 aLong6374 = Class62.method599(-82) - -1000L
             }
@@ -192,7 +192,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
 
     override fun method2335(i: Int, i_8_: Int): Int {
         anInt6341++
-        val class348_sub42_sub16 = (aClass356_6360.method3480(i.toLong(), -6008) as AsyncResourceRequest?)
+        val class348_sub42_sub16 = (aHashtable_6360.method3480(i.toLong(), -6008) as AsyncResourceRequest?)
         if (i_8_ != -22197) anInt6352 = 21
         if (class348_sub42_sub16 != null) return class348_sub42_sub16.method3257(16)
         return 0
@@ -201,7 +201,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
     private fun method2350(i: Int, i_9_: Byte, i_10_: Int): AsyncResourceRequest? {
         if (i_9_.toInt() != 65) aByteArray6351 = null
         anInt6362++
-        var class348_sub42_sub16 = (aClass356_6360.method3480(i.toLong(), -6008) as AsyncResourceRequest?)
+        var class348_sub42_sub16 = (aHashtable_6360.method3480(i.toLong(), -6008) as AsyncResourceRequest?)
         if (class348_sub42_sub16 != null && i_10_ == 0 && !class348_sub42_sub16.aBoolean9663 && class348_sub42_sub16.aBoolean9664) {
             class348_sub42_sub16.method2715(66.toByte())
             class348_sub42_sub16 = null
@@ -222,7 +222,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                 if (aMediaStreamClient_6347!!.method1899(-120)) return null
                 class348_sub42_sub16 = aMediaStreamClient_6347.method1906(97.toByte(), 2.toByte(), false, i, anInt6350)
             }
-            aClass356_6360.method3483(73.toByte(), i.toLong(), class348_sub42_sub16)
+            aHashtable_6360.method3483(73.toByte(), i.toLong(), class348_sub42_sub16)
         }
         if (class348_sub42_sub16!!.aBoolean9664) return null
         val `is` = class348_sub42_sub16.method3259(16)
@@ -247,7 +247,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                 class348_sub42_sub16.method2715(44.toByte())
                 if (class348_sub42_sub16.aBoolean9663 && !aMediaStreamClient_6347.method1900(i_9_.toInt() xor 0x1f)) {
                     val class348_sub42_sub16_sub1 = aMediaStreamClient_6347.method1906(111.toByte(), 2.toByte(), true, i, anInt6350)
-                    aClass356_6360.method3483(84.toByte(), i.toLong(), class348_sub42_sub16_sub1)
+                    aHashtable_6360.method3483(84.toByte(), i.toLong(), class348_sub42_sub16_sub1)
                 }
                 return null
             }
@@ -289,7 +289,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
             class348_sub42_sub16.method2715(121.toByte())
             if (class348_sub42_sub16.aBoolean9663 && !aMediaStreamClient_6347!!.method1900(-30)) {
                 val class348_sub42_sub16_sub1 = aMediaStreamClient_6347.method1906(99.toByte(), 2.toByte(), true, i, anInt6350)
-                aClass356_6360.method3483(66.toByte(), i.toLong(), class348_sub42_sub16_sub1)
+                aHashtable_6360.method3483(66.toByte(), i.toLong(), class348_sub42_sub16_sub1)
             }
             return null
         }
@@ -346,7 +346,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
     }
 
     init {
-        aClass356_6360 = Class356(16)
+        aHashtable_6360 = Hashtable(16)
         anInt6373 = 0
         aNodeDeque_6369 = NodeDeque()
         aLong6374 = 0L

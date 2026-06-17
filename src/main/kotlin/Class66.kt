@@ -661,7 +661,7 @@ object Class66 {
                 return
             }
             if (i == 5213) {
-                val class348_sub21 = Class356.method3479(-1)
+                val class348_sub21 = Hashtable.method3479(-1)
                 if (class348_sub21 == null) {
                     anIntArray1149!![anInt1173++] = -1
                     anIntArray1149!![anInt1173++] = -1
@@ -813,23 +813,23 @@ object Class66 {
                 anInt1173 -= 2
                 val i_86_ = anIntArray1149!![anInt1173]
                 val bool_87_ = anIntArray1149!![anInt1173 + 1] == 1
-                if (HardKeyedCacheEntryReference.aClass356_10442 != null) {
-                    var class348 = HardKeyedCacheEntryReference.aClass356_10442!!.method3480(i_86_.toLong(), -6008)
+                if (HardKeyedCacheEntryReference.aHashtable_10442 != null) {
+                    var class348 = HardKeyedCacheEntryReference.aHashtable_10442!!.method3480(i_86_.toLong(), -6008)
                     if (class348 != null && !bool_87_) class348.method2715(48.toByte())
                     else if (class348 == null && bool_87_) {
                         class348 = LinkedListNode()
-                        HardKeyedCacheEntryReference.aClass356_10442!!.method3483(29.toByte(), i_86_.toLong(), class348)
+                        HardKeyedCacheEntryReference.aHashtable_10442!!.method3483(29.toByte(), i_86_.toLong(), class348)
                     }
                 }
                 return
             }
             if (i == 5232) {
                 val i_88_ = anIntArray1149!![--anInt1173]
-                if (HardKeyedCacheEntryReference.aClass356_10442 == null) {
+                if (HardKeyedCacheEntryReference.aHashtable_10442 == null) {
                     anIntArray1149!![anInt1173++] = 0
                     return
                 } else {
-                    val class348 = HardKeyedCacheEntryReference.aClass356_10442!!.method3480(i_88_.toLong(), -6008)
+                    val class348 = HardKeyedCacheEntryReference.aHashtable_10442!!.method3480(i_88_.toLong(), -6008)
                     anIntArray1149!![anInt1173++] = if (class348 != null) 1 else 0
                 }
                 return
@@ -838,23 +838,23 @@ object Class66 {
                 anInt1173 -= 2
                 val i_89_ = anIntArray1149!![anInt1173]
                 val bool_90_ = anIntArray1149!![anInt1173 + 1] == 1
-                if (HeapInfoRecord.aClass356_4934 != null) {
-                    var class348 = HeapInfoRecord.aClass356_4934!!.method3480(i_89_.toLong(), -6008)
+                if (HeapInfoRecord.aHashtable_4934 != null) {
+                    var class348 = HeapInfoRecord.aHashtable_4934!!.method3480(i_89_.toLong(), -6008)
                     if (class348 != null && !bool_90_) class348.method2715(83.toByte())
                     else if (class348 == null && bool_90_) {
                         class348 = LinkedListNode()
-                        HeapInfoRecord.aClass356_4934!!.method3483(112.toByte(), i_89_.toLong(), class348)
+                        HeapInfoRecord.aHashtable_4934!!.method3483(112.toByte(), i_89_.toLong(), class348)
                     }
                 }
                 return
             }
             if (i == 5234) {
                 val i_91_ = anIntArray1149!![--anInt1173]
-                if (HeapInfoRecord.aClass356_4934 == null) {
+                if (HeapInfoRecord.aHashtable_4934 == null) {
                     anIntArray1149!![anInt1173++] = 0
                     return
                 } else {
-                    val class348 = HeapInfoRecord.aClass356_4934!!.method3480(i_91_.toLong(), -6008)
+                    val class348 = HeapInfoRecord.aHashtable_4934!!.method3480(i_91_.toLong(), -6008)
                     anIntArray1149!![anInt1173++] = if (class348 != null) 1 else 0
                 }
                 return
@@ -2051,7 +2051,7 @@ object Class66 {
         } else if (i >= 6700) {
             if (i < 6800 && SceneRegionState.aHudTabPanel_196 == ParticleEmitterDef.aHudTabPanel_4953) {
                 if (i == 6700) {
-                    var i_174_ = MinimapSpriteRenderer.aClass356_4915!!.method3474(1)
+                    var i_174_ = MinimapSpriteRenderer.aHashtable_4915!!.method3474(1)
                     if (RenderNode.anInt9721 != -1) i_174_++
                     anIntArray1149!![anInt1173++] = i_174_
                     return
@@ -2065,8 +2065,8 @@ object Class66 {
                         }
                         i_175_--
                     }
-                    var class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as RegionSceneShifter?)
-                    while (i_175_-- > 0) class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as RegionSceneShifter?)
+                    var class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?)
+                    while (i_175_-- > 0) class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?)
                     anIntArray1149!![anInt1173++] = class348_sub41!!.anInt7050
                     return
                 }
@@ -3657,7 +3657,7 @@ object Class66 {
                 }
                 if (i == 2702) {
                     val i_298_ = anIntArray1149!![--anInt1173]
-                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_298_.toLong(), -6008) as RegionSceneShifter?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i_298_.toLong(), -6008) as RegionSceneShifter?)
                     if (class348_sub41 == null) {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -3686,7 +3686,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_301_ = anIntArray1149!![anInt1173]
                     val i_302_ = anIntArray1149!![anInt1173 + 1]
-                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_301_.toLong(), -6008) as RegionSceneShifter?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i_301_.toLong(), -6008) as RegionSceneShifter?)
                     if (class348_sub41 != null && (class348_sub41.anInt7050 == i_302_)) anIntArray1149!![anInt1173++] = 1
                     else {
                         anIntArray1149!![anInt1173++] = 0
@@ -3796,7 +3796,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_312_ = anIntArray1149!![anInt1173]
                     val i_313_ = anIntArray1149!![anInt1173 + 1]
-                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_312_.toLong(), -6008) as RegionSceneShifter?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i_312_.toLong(), -6008) as RegionSceneShifter?)
                     if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118((class348_sub41.anInt7050 != i_313_), true, class348_sub41, 2533)
                     MapTileShape.method2661(i_313_, i_312_, 3, true, 2)
                     return
@@ -3804,7 +3804,7 @@ object Class66 {
                 if (i == 3112) {
                     anInt1173--
                     val i_314_ = anIntArray1149!![anInt1173]
-                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_314_.toLong(), -6008) as RegionSceneShifter?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i_314_.toLong(), -6008) as RegionSceneShifter?)
                     if (class348_sub41 != null && class348_sub41.anInt7053 == 3) ScrollingWidgetComponentNode.method1118(true, true, class348_sub41, 2533)
                     return
                 }
@@ -4166,7 +4166,7 @@ object Class66 {
                 if (i == 3411) {
                     val i_358_ = anIntArray1149!![--anInt1173]
                     val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_358_)
-                    anIntArray1149!![anInt1173++] = class117.aClass356_1767!!.method3474(1)
+                    anIntArray1149!![anInt1173++] = class117.aHashtable_1767!!.method3474(1)
                     return
                 }
             } else if (i < 3700) {
@@ -5131,7 +5131,7 @@ object Class66 {
                         GlTextureCubeMap.aStringArray8532!![i_512_] = aStringArray1152!![--anInt1170]
                         method529(i_512_, true)
                     } else if (i_490_ == 51) {
-                        val class356 = (class348_sub42_sub19.aClass356Array9693!![is_489_[i_488_]]!!)
+                        val class356 = (class348_sub42_sub19.aHashtableArray9693!![is_489_[i_488_]]!!)
                         val class348_sub35 = (class356.method3480(anIntArray1149!![--anInt1173].toLong(), -6008) as IntKeyNode?)
                         if (class348_sub35 != null) i_488_ += class348_sub35.anInt6976
                     } else if (i_490_ == 86) {

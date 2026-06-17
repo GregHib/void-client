@@ -58,7 +58,7 @@ class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_
             anInt8559++
             val i_4_ = -43 / ((-65 - i) / 55)
             val l = (i_3_ or (if (bool) -2147483648 else 0)).toLong()
-            return (AbstractProceduralTextureNode.aClass356_7041!!.method3480(l, -6008) as ModelKeyBuilder?)
+            return (AbstractProceduralTextureNode.aHashtable_7041!!.method3480(l, -6008) as ModelKeyBuilder?)
         }
 
         init {

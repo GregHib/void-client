@@ -57,17 +57,17 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
             if (i.toInt() != -45) aShort9555 = (-74).toShort()
             if (bool) {
                 if (RenderNode.anInt9721 != -1) GlTextureBase.method235(RenderNode.anInt9721, (-113).toByte())
-                var class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as RegionSceneShifter?
+                var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
                 while (class348_sub41 != null) {
                     if (!class348_sub41.method2712(4.toByte())) {
-                        class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3484(i.toInt() xor 0x2c.inv()) as RegionSceneShifter?)
+                        class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3484(i.toInt() xor 0x2c.inv()) as RegionSceneShifter?)
                         if (class348_sub41 == null) break
                     }
                     ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
-                    class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as RegionSceneShifter?)
+                    class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?)
                 }
                 RenderNode.anInt9721 = -1
-                MinimapSpriteRenderer.aClass356_4915 = Class356(8)
+                MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
                 Class99.method882(11.toByte())
                 RenderNode.anInt9721 = GlBufferObject.anInt4737
                 method1713(false, 520)

@@ -79,7 +79,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                     if (!WidgetNodeLink.method1197(-12081, class348_sub42_sub12.anInt9608)) {
                         if (class348_sub42_sub12.anInt9599 != -1) `is` = Exception_Sub1.aModelHeaderCache_112!!.method1940(98, (class348_sub42_sub12.anInt9599)).anIntArray2772
                         else if (method3549((class348_sub42_sub12.anInt9608), 107.toByte())) {
-                            val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as? NpcReference?)
+                            val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as? NpcReference?)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 var class79 = (npc.aClass79_10505)
@@ -112,7 +112,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                         OutputStream_Sub1.aRandom93,
                         WidgetActionEntry.aClass46_6990!!.anInt762,
                         LongHashTable.anInt451,
-                        Class356.anInt4383,
+                        Hashtable.anInt4383,
                         -33,
                         SoundCacheState.anInt4141,
                         string,
@@ -120,7 +120,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                     )
                     method226(RenderableGroup.anIntArray5007!![0], RenderableGroup.anIntArray5007!![2], RenderableGroup.anIntArray5007!![1], 0, RenderableGroup.anIntArray5007!![3])
                 } else if (CameraRotationStub.aClass46_323 != null && (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
-                    val i_1_ = (NodeDeque.aFont_3326!!.method2571(-1, Class356.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, OutputStream_Sub1.aRandom93))
+                    val i_1_ = (NodeDeque.aFont_3326!!.method2571(-1, Hashtable.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, OutputStream_Sub1.aRandom93))
                     method226(ConfigValueProvider.Companion.anInt4911 - -4, (Class369.aFontDefinition_4962!!.method1183(true, string) + i_1_), SocketGameConnection.anInt5832, 0, 16)
                 }
             }

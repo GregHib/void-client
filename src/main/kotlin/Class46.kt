@@ -80,7 +80,7 @@ class Class46 {
     var anInt709: Int = 0
     @JvmField
     var anInt710: Int = 1
-    private var aClass356_711: Class356? = null
+    private var aHashtable_711: Hashtable? = null
     @JvmField
     var anInt713: Int
     @JvmField
@@ -351,9 +351,9 @@ class Class46 {
 
     fun method428(i: Int, i_18_: Int, i_19_: Int): Int {
         anInt736++
-        if (aClass356_711 == null) return i
+        if (aHashtable_711 == null) return i
         if (i_19_ >= -124) this.anInt700 = 46
-        val class348_sub35 = aClass356_711!!.method3480(i_18_.toLong(), -6008) as IntKeyNode?
+        val class348_sub35 = aHashtable_711!!.method3480(i_18_.toLong(), -6008) as IntKeyNode?
         if (class348_sub35 == null) return i
         return class348_sub35.anInt6976
     }
@@ -361,8 +361,8 @@ class Class46 {
     fun method429(i: Int, string: String?, i_20_: Int): String? {
         anInt783++
         if (i_20_ != -1) method437(-123, null, null, -35, null)
-        if (aClass356_711 == null) return string
-        val class348_sub50 = aClass356_711!!.method3480(i.toLong(), -6008) as StringCacheNode?
+        if (aHashtable_711 == null) return string
+        val class348_sub50 = aHashtable_711!!.method3480(i.toLong(), -6008) as StringCacheNode?
         if (class348_sub50 == null) return string
         return class348_sub50.aString7211
     }
@@ -645,14 +645,14 @@ class Class46 {
             while (i_53_ > i_54_) {
                 val i_55_ = class348_sub49.readMedium(-1)
                 val i_56_ = class348_sub49.readInt((-126).toByte())
-                aClass356_711!!.method3483(120.toByte(), i_55_.toLong(), IntKeyNode(i_56_))
+                aHashtable_711!!.method3483(120.toByte(), i_55_.toLong(), IntKeyNode(i_56_))
                 i_54_++
             }
             val i_57_ = class348_sub49.readUnsignedByte(255)
             for (i_58_ in 0..<i_57_) {
                 val i_59_ = class348_sub49.readMedium(-1)
                 val string = class348_sub49.method3371(-13487)
-                aClass356_711!!.method3483(119.toByte(), i_59_.toLong(), StringCacheNode(string))
+                aHashtable_711!!.method3483(119.toByte(), i_59_.toLong(), StringCacheNode(string))
             }
         }
         this.anObjectArray815 = method432(class348_sub49, -1)
@@ -726,20 +726,20 @@ class Class46 {
 
     fun method435(i: Int, i_60_: Int) {
         anInt802++
-        if (aClass356_711 != null) {
-            val class348 = aClass356_711!!.method3480(i.toLong(), -6008)
+        if (aHashtable_711 != null) {
+            val class348 = aHashtable_711!!.method3480(i.toLong(), -6008)
             if (class348 != null) class348.method2715(63.toByte())
         }
     }
 
     fun method436(i: Int, i_61_: Int, i_62_: Int) {
         anInt694++
-        if (aClass356_711 == null) {
-            aClass356_711 = Class356(16)
-            aClass356_711!!.method3483(60.toByte(), i_61_.toLong(), IntKeyNode(i_62_))
+        if (aHashtable_711 == null) {
+            aHashtable_711 = Hashtable(16)
+            aHashtable_711!!.method3483(60.toByte(), i_61_.toLong(), IntKeyNode(i_62_))
         } else if (i < -38) {
-            val class348_sub35 = (aClass356_711!!.method3480(i_61_.toLong(), -6008) as IntKeyNode?)
-            if (class348_sub35 == null) aClass356_711!!.method3483(67.toByte(), i_61_.toLong(), IntKeyNode(i_62_))
+            val class348_sub35 = (aHashtable_711!!.method3480(i_61_.toLong(), -6008) as IntKeyNode?)
+            if (class348_sub35 == null) aHashtable_711!!.method3483(67.toByte(), i_61_.toLong(), IntKeyNode(i_62_))
             else class348_sub35.anInt6976 = i_62_
         }
     }
@@ -783,12 +783,12 @@ class Class46 {
     fun method439(i: Int, i_66_: Int, string: String?) {
         anInt758++
         if (i != 0) this.anInt756 = -106
-        if (aClass356_711 == null) {
-            aClass356_711 = Class356(16)
-            aClass356_711!!.method3483(86.toByte(), i_66_.toLong(), StringCacheNode(string))
+        if (aHashtable_711 == null) {
+            aHashtable_711 = Hashtable(16)
+            aHashtable_711!!.method3483(86.toByte(), i_66_.toLong(), StringCacheNode(string))
         } else {
-            val class348_sub50 = (aClass356_711!!.method3480(i_66_.toLong(), -6008) as StringCacheNode?)
-            if (class348_sub50 == null) aClass356_711!!.method3483(73.toByte(), i_66_.toLong(), StringCacheNode(string))
+            val class348_sub50 = (aHashtable_711!!.method3480(i_66_.toLong(), -6008) as StringCacheNode?)
+            if (class348_sub50 == null) aHashtable_711!!.method3483(73.toByte(), i_66_.toLong(), StringCacheNode(string))
             else class348_sub50.aString7211 = string
         }
     }

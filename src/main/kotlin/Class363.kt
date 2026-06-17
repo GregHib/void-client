@@ -38,7 +38,7 @@ object Class363 {
 
     fun method3515(i: Int) {
         val i_2_ = 52 / ((33 - i) / 40)
-        AbstractProceduralTextureNode.aClass356_7041!!.method3481(0)
+        AbstractProceduralTextureNode.aHashtable_7041!!.method3481(0)
         anInt4464++
     }
 

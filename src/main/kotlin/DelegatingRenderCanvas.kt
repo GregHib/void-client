@@ -98,10 +98,10 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             if (i_6_ != -364570972) anInt70 = -4
             anInt68++
             val l = (i or (if (!bool) 0 else -2147483648)).toLong()
-            var class348_sub13 = (AbstractProceduralTextureNode.aClass356_7041!!.method3480(l, -6008) as ModelKeyBuilder?)
+            var class348_sub13 = (AbstractProceduralTextureNode.aHashtable_7041!!.method3480(l, -6008) as ModelKeyBuilder?)
             if (class348_sub13 == null) {
                 class348_sub13 = ModelKeyBuilder()
-                AbstractProceduralTextureNode.aClass356_7041!!.method3483(109.toByte(), l, class348_sub13)
+                AbstractProceduralTextureNode.aHashtable_7041!!.method3483(109.toByte(), l, class348_sub13)
             }
             if (class348_sub13.anIntArray6757!!.size <= i_7_) {
                 val `is` = IntArray(1 + i_7_)

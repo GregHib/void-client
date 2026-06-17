@@ -3502,7 +3502,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             if (i < 92) method661(114.toByte())
             Class73.anInt4776 = 0
             SourceRowTextureNode.aNodeDeque_9111!!.method1996(115)
-            ContactEntry.aClass356_9603!!.method3481(0)
+            ContactEntry.aHashtable_9603!!.method3481(0)
             ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)
             method3743(6.toByte(), FlipTextureNode.aClass348_Sub42_Sub12_9144)
         }

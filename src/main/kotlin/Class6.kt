@@ -80,12 +80,12 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 val i_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 15)
                 if (i_18_ == 32767) break
                 var bool = false
-                var class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_18_.toLong(), -6008) as NpcReference?)
+                var class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_18_.toLong(), -6008) as NpcReference?)
                 if (class348_sub22 == null) {
                     val npc = Npc()
                     npc.anInt10290 = i_18_
                     class348_sub22 = NpcReference(npc)
-                    NpcEntityUpdater.aClass356_3654!!.method3483(57.toByte(), i_18_.toLong(), class348_sub22)
+                    NpcEntityUpdater.aHashtable_3654!!.method3483(57.toByte(), i_18_.toLong(), class348_sub22)
                     bool = true
                     TurbulenceTextureNode.aClass348_Sub22Array9319!![TerrainShadowBuilderGl2.anInt6930++] = class348_sub22
                 }

@@ -115,7 +115,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
         @JvmField
         var anInt7040: Int = 0
         @JvmField
-        var aClass356_7041: Class356? = Class356(32)
+        var aHashtable_7041: Hashtable? = Hashtable(32)
         @JvmField
         var aSoundChannelMixer_7042: SoundChannelMixer? = null
         @JvmField
@@ -155,7 +155,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
         @JvmStatic
         fun method3040(bool: Boolean) {
             aSoundChannelMixer_7042 = null
-            aClass356_7041 = null
+            aHashtable_7041 = null
         }
 
         fun method3041(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) {

@@ -5,11 +5,11 @@ class MidiFileBuilder private constructor(class348_sub49: Buffer) : LinkedListNo
     @JvmField
     var aByteArray6564: ByteArray?
     @JvmField
-    var aClass356_6565: Class356? = null
+    var aHashtable_6565: Hashtable? = null
 
     fun method2733() {
-        if (this.aClass356_6565 == null) {
-            this.aClass356_6565 = Class356(16)
+        if (this.aHashtable_6565 == null) {
+            this.aHashtable_6565 = Hashtable(16)
             val `is` = IntArray(16)
             val is_0_ = IntArray(16)
             is_0_[9] = 128
@@ -52,10 +52,10 @@ class MidiFileBuilder private constructor(class348_sub49: Buffer) : LinkedListNo
                         val i_13_ = i_4_ shr 16 and 0x7f
                         if (i_13_ > 0) {
                             val i_14_ = is_0_[i_11_]
-                            var class348_sub8 = (this.aClass356_6565!!.method3480(i_14_.toLong(), -6008) as? FacingDirectionNode?)
+                            var class348_sub8 = (this.aHashtable_6565!!.method3480(i_14_.toLong(), -6008) as? FacingDirectionNode?)
                             if (class348_sub8 == null) {
                                 class348_sub8 = FacingDirectionNode(ByteArray(128))
-                                this.aClass356_6565!!.method3483(21.toByte(), i_14_.toLong(), class348_sub8)
+                                this.aHashtable_6565!!.method3483(21.toByte(), i_14_.toLong(), class348_sub8)
                             }
                             class348_sub8.aByteArray6657!![i_12_] = 1.toByte()
                         }
@@ -68,7 +68,7 @@ class MidiFileBuilder private constructor(class348_sub49: Buffer) : LinkedListNo
     }
 
     fun method2735() {
-        this.aClass356_6565 = null
+        this.aHashtable_6565 = null
     }
 
     init {

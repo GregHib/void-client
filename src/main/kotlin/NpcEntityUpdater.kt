@@ -10,7 +10,7 @@ object NpcEntityUpdater {
     var aBoolean3652: Boolean = false
     var anInt3653: Int = 0
     @JvmField
-    var aClass356_3654: Class356?
+    var aHashtable_3654: Hashtable?
     var anInt3655: Int = 0
 
     fun method2109(i: Int) {
@@ -25,7 +25,7 @@ object NpcEntityUpdater {
             } else if ((class318_sub1_sub3_sub5.anInt10411) <= Class367_Sub11.anInt7396) {
                 class318_sub1_sub3_sub5.method2474(121.toByte())
                 if ((class318_sub1_sub3_sub5.anInt10412) > 0) {
-                    val class348_sub22 = ((aClass356_3654!!.method3480((-1 + class318_sub1_sub3_sub5.anInt10412).toLong(), -6008)) as NpcReference?)
+                    val class348_sub22 = ((aHashtable_3654!!.method3480((-1 + class318_sub1_sub3_sub5.anInt10412).toLong(), -6008)) as NpcReference?)
                     if (class348_sub22 != null) {
                         val npc = (class348_sub22.aNpc_6859)!!
                         if ((npc.x) >= 0 && (Class367_Sub4.anInt7319 * 512 > npc.x) && (npc.y) >= 0 && (512 * RangeThresholdTextureNode.anInt9109 > npc.y)) class318_sub1_sub3_sub5.method2471((-103).toByte(), ((method2064(npc.x, (class318_sub1_sub3_sub5.plane).toInt(), 11219, npc.y)) + -class318_sub1_sub3_sub5.anInt10366), npc.y, Class367_Sub11.anInt7396, npc.x)
@@ -56,7 +56,7 @@ object NpcEntityUpdater {
 
     @JvmStatic
     fun method2111(i: Byte) {
-        aClass356_3654 = null
+        aHashtable_3654 = null
         if (i <= 56) NpcEntityUpdater.method2111((-49).toByte())
     }
 
@@ -67,6 +67,6 @@ object NpcEntityUpdater {
     }
 
     init {
-        aClass356_3654 = Class356(64)
+        aHashtable_3654 = Hashtable(64)
     }
 }

@@ -11,7 +11,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     private val aNodeDeque_5123: NodeDeque
     private var aBoolean5124 = false
     private var aAbstractCameraTransform_5125: AbstractCameraTransform? = null
-    private val aClass356_5126: Class356
+    private val aHashtable_5126: Hashtable
     private var anInt5127: Int
     private var anInt5128: Int
     private var aAbstractCameraTransform_5131: AbstractCameraTransform? = null
@@ -211,7 +211,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     override fun method3701(canvas: Canvas?) {
         if (aP5137!!.aCanvas5147 === canvas) method3677(null)
-        val var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
+        val var_p = aHashtable_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
         if (var_p != null) {
             var_p.method2715(110.toByte())
             var_p.method3436()
@@ -253,7 +253,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
             aP5137 = null
             aYa5121 = null
             aAbstractCameraTransform_5131 = null
-            aClass356_5126.method3481(0)
+            aHashtable_5126.method3481(0)
             var var_ya = aNodeDeque_5123.method1995(4) as ya?
             while (var_ya != null) {
                 var_ya.ga()
@@ -272,7 +272,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     }
 
     override fun method3669(canvas: Canvas?, i: Int, i_108_: Int) {
-        val var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
+        val var_p = aHashtable_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
         var_p!!.method3435(canvas, i, i_108_)
         if (canvas != null && canvas === aP5137!!.aCanvas5147) method3677(canvas)
     }
@@ -365,11 +365,11 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     private external fun va(var_shaderProgram: ShaderProgram?)
 
     override fun method3643(canvas: Canvas?, i: Int, i_153_: Int) {
-        var var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
+        var var_p = aHashtable_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
         if (var_p == null) {
             canvas!!.setIgnoreRepaint(true)
             var_p = p(this, canvas, i, i_153_)
-            aClass356_5126.method3483(36.toByte(), canvas.hashCode().toLong(), var_p)
+            aHashtable_5126.method3483(36.toByte(), canvas.hashCode().toLong(), var_p)
         } else if (var_p.anInt5145 != i || var_p.anInt5148 != i_153_) var_p.method3435(canvas, i, i_153_)
     }
 
@@ -423,7 +423,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
             aP5137 = null
             t(null)
         } else {
-            val var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
+            val var_p = aHashtable_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
             aP5137 = var_p
             t(var_p)
         }
@@ -573,7 +573,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         aNodeDeque_5123 = NodeDeque()
         anInt5127 = 4096
         anInt5128 = 4096
-        aClass356_5126 = Class356(4)
+        aHashtable_5126 = Hashtable(4)
         aBoolean5142 = false
         do {
             try {

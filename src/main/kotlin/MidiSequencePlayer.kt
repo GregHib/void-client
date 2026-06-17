@@ -4,7 +4,7 @@ import kotlin.math.pow
 import kotlin.math.sin
 
 class MidiSequencePlayer : AudioStreamNode {
-    private val aClass356_8891: Class356
+    private val aHashtable_8891: Hashtable
     private val anIntArray8894: IntArray
     var anIntArray8895: IntArray
     private val anIntArray8896: IntArray
@@ -367,7 +367,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aNodeDeque_8848.method2003(-50) as? SpriteDefinition?)
             }
         }
-        val class348_sub17 = (aClass356_8891.method3480(anIntArray8916!![i_51_].toLong(), -6008) as? SoundBankPatch?)
+        val class348_sub17 = (aHashtable_8891.method3480(anIntArray8916!![i_51_].toLong(), -6008) as? SoundBankPatch?)
         if (class348_sub17 != null) {
             val class348_sub19_sub1 = (class348_sub17.aClass348_Sub19_Sub1Array6800[i_50_])
             if (class348_sub19_sub1 != null) {
@@ -576,10 +576,10 @@ class MidiSequencePlayer : AudioStreamNode {
     fun method2864(i: Byte) {
         anInt8924++
         if (i <= 46) aMidiTrackReader_8944 = null
-        var class348_sub17 = aClass356_8891.method3484(0) as SoundBankPatch?
+        var class348_sub17 = aHashtable_8891.method3484(0) as SoundBankPatch?
         while (class348_sub17 != null) {
             class348_sub17.method2933((-103).toByte())
-            class348_sub17 = aClass356_8891.method3482(0) as SoundBankPatch?
+            class348_sub17 = aHashtable_8891.method3482(0) as SoundBankPatch?
         }
     }
 
@@ -617,21 +617,21 @@ class MidiSequencePlayer : AudioStreamNode {
             var bool = true
             var `is`: IntArray? = null
             if (i > 0) `is` = intArrayOf(i)
-            var class348_sub8 = class348_sub2.aClass356_6565!!.method3484(0) as FacingDirectionNode?
+            var class348_sub8 = class348_sub2.aHashtable_6565!!.method3484(0) as FacingDirectionNode?
             while (class348_sub8 != null) {
                 val i_78_ = class348_sub8.aLong4291.toInt()
-                var class348_sub17 = (aClass356_8891.method3480(i_78_.toLong(), -6008) as SoundBankPatch?)
+                var class348_sub17 = (aHashtable_8891.method3480(i_78_.toLong(), -6008) as SoundBankPatch?)
                 if (class348_sub17 == null) {
                     class348_sub17 = GlowPostProcessor.method1417(0, class45!!, i_78_)
                     if (class348_sub17 == null) {
                         bool = false
-                        class348_sub8 = class348_sub2.aClass356_6565!!.method3482(0) as FacingDirectionNode?
+                        class348_sub8 = class348_sub2.aHashtable_6565!!.method3482(0) as FacingDirectionNode?
                         continue
                     }
-                    aClass356_8891.method3483(69.toByte(), i_78_.toLong(), class348_sub17)
+                    aHashtable_8891.method3483(69.toByte(), i_78_.toLong(), class348_sub17)
                 }
                 if (!class348_sub17.method2932(spriteArchiveLoader, `is`, (class348_sub8.aByteArray6657), 0)) bool = false
-                class348_sub8 = class348_sub2.aClass356_6565!!.method3482(0) as FacingDirectionNode?
+                class348_sub8 = class348_sub2.aHashtable_6565!!.method3482(0) as FacingDirectionNode?
             }
             if (i_77_ >= -13) return true
             if (bool) class348_sub2.method2735()
@@ -645,10 +645,10 @@ class MidiSequencePlayer : AudioStreamNode {
     fun method2867(i: Int) {
         anInt8903++
         if (i == 4) {
-            var class348_sub17 = aClass356_8891.method3484(0) as SoundBankPatch?
+            var class348_sub17 = aHashtable_8891.method3484(0) as SoundBankPatch?
             while (class348_sub17 != null) {
                 class348_sub17.method2715(53.toByte())
-                class348_sub17 = aClass356_8891.method3482(i xor 0x4) as SoundBankPatch?
+                class348_sub17 = aHashtable_8891.method3482(i xor 0x4) as SoundBankPatch?
             }
         }
     }
@@ -854,7 +854,7 @@ class MidiSequencePlayer : AudioStreamNode {
         anIntArray8947 = IntArray(16)
         aMidiTrackReader_8944 = MidiTrackReader()
         aClass348_Sub16_Sub1_8958 = SynthVoiceGroup(this)
-        aClass356_8891 = Class356(128)
+        aHashtable_8891 = Hashtable(128)
         method2843(256, -1, -7836)
         method2851(true, true)
     }
@@ -883,7 +883,7 @@ class MidiSequencePlayer : AudioStreamNode {
         aMidiTrackReader_8944 = MidiTrackReader()
         aClass348_Sub16_Sub1_8958 = SynthVoiceGroup(this)
         try {
-            aClass356_8891 = class348_sub16_sub3_107_!!.aClass356_8891
+            aHashtable_8891 = class348_sub16_sub3_107_!!.aHashtable_8891
             method2843(256, -1, -7836)
             method2851(true, true)
         } catch (runtimeexception: RuntimeException) {

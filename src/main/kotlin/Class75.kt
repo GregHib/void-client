@@ -14,7 +14,7 @@ open class Class75 {
         var aConfigDefinitionLoader_1238: ConfigDefinitionLoader? = null
         private var aLocDefinitionCache_1239: LocDefinitionCache? = null
         private var aParticleDefLoader_1240: ParticleDefLoader? = null
-        private var aClass356_1241: Class356? = Class356(16)
+        private var aHashtable_1241: Hashtable? = Hashtable(16)
         @JvmField
         var aTextureDefinitionLoader_1242: TextureDefinitionLoader? = null
         @JvmField
@@ -64,7 +64,7 @@ open class Class75 {
         var anInt1268: Int = 0
         private var aDoublyLinkedNodeListArrayArrayArray1269: Array<Array<Array<DoublyLinkedNodeList?>?>?>? = null
         private var aShortArray1270: ShortArray? = null
-        private var aClass356_1271: Class356? = null
+        private var aHashtable_1271: Hashtable? = null
         @JvmField
         var anInt1272: Int = 0
         private var aByteArray1273: ByteArray? = null
@@ -141,7 +141,7 @@ open class Class75 {
             anInterface17_1244 = null
             aClass348_Sub42_Sub14_1243 = null
             aClass45_1237 = null
-            aClass356_1241 = null
+            aHashtable_1241 = null
             aByteArrayArrayArray1251 = null
             aShortArray1252 = null
             aByteArray1248 = null
@@ -155,7 +155,7 @@ open class Class75 {
             aByteArray1275 = null
             aShortArray1261 = null
             aByteArray1258 = null
-            aClass356_1271 = null
+            aHashtable_1271 = null
             aDoublyLinkedNodeListArrayArrayArray1269 = null
         }
 
@@ -182,7 +182,7 @@ open class Class75 {
             aByteArray1275 = null
             aShortArray1261 = null
             aByteArray1258 = null
-            aClass356_1271 = null
+            aHashtable_1271 = null
             aDoublyLinkedNodeListArrayArrayArray1269 = null
             anIntArray1260 = null
         }
@@ -234,7 +234,7 @@ open class Class75 {
                                 is_34_[i_36_] = class348_sub49.readUnsignedShort(842397944).toShort()
                                 is_35_[i_36_] = class348_sub49.readByte(-120)
                             }
-                            aClass356_1271!!.method3483(33.toByte(), (i_22_ shl 16 or i_23_).toLong(), ShortByteArrayPair(is_34_, is_35_))
+                            aHashtable_1271!!.method3483(33.toByte(), (i_22_ shl 16 or i_23_).toLong(), ShortByteArrayPair(is_34_, is_35_))
                         }
                     } else {
                         var is_37_: ShortArray? = null
@@ -276,13 +276,13 @@ open class Class75 {
             aConfigDefinitionLoader_1238 = configDefinitionLoader
             aTextureDefinitionLoader_1242 = textureDefinitionLoader
             anInterface17_1244 = interface17
-            aClass356_1241!!.method3481(0)
+            aHashtable_1241!!.method3481(0)
             val i: Int = aClass45_1237!!.method417("details", 0)
             val `is`: IntArray? = aClass45_1237!!.method396(i, 0)
             if (`is` != null) {
                 for (i_47_ in `is`.indices) {
                     val class348_sub42_sub14 = ModelDefinitionLoader.method1205(`is`[i_47_], true, aClass45_1237!!, i)
-                    aClass356_1241!!.method3483(25.toByte(), class348_sub42_sub14.anInt9628.toLong(), class348_sub42_sub14)
+                    aHashtable_1241!!.method3483(25.toByte(), class348_sub42_sub14.anInt9628.toLong(), class348_sub42_sub14)
                 }
             }
             method566(true, false, 11.toByte())
@@ -294,7 +294,7 @@ open class Class75 {
                     val i_49_: Int = aShortArray1261!![i + i_48_ * anInt1259].toInt() and 0xffff
                     if (i_49_ != 0) {
                         if (i_49_ == 65535) {
-                            val class348_sub39 = (aClass356_1271!!.method3480((i shl 16 or i_48_).toLong(), -6008) as ShortByteArrayPair?)
+                            val class348_sub39 = (aHashtable_1271!!.method3480((i shl 16 or i_48_).toLong(), -6008) as ShortByteArrayPair?)
                             if (class348_sub39 != null) {
                                 for (i_50_ in (class348_sub39.aShortArray7024)!!.indices) {
                                     var class51: Class51? = (aSeqDefinitionCache_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
@@ -360,7 +360,7 @@ open class Class75 {
         }
 
         fun method754(i: Int) {
-            aClass348_Sub42_Sub14_1243 = aClass356_1241!!.method3480(i.toLong(), -6008) as InterfaceComponentGroup?
+            aClass348_Sub42_Sub14_1243 = aHashtable_1241!!.method3480(i.toLong(), -6008) as InterfaceComponentGroup?
         }
 
         private fun method755(var_renderer: Renderer, i: Int, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, i_61_: Int, i_62_: Int, `is`: ShortArray?, is_63_: ByteArray?, bool: Boolean) {
@@ -502,7 +502,7 @@ open class Class75 {
         }
 
         fun method757(i: Int): InterfaceComponentGroup? {
-            return (aClass356_1241!!.method3480(i.toLong(), -6008) as InterfaceComponentGroup?)
+            return (aHashtable_1241!!.method3480(i.toLong(), -6008) as InterfaceComponentGroup?)
         }
 
         @JvmStatic
@@ -547,7 +547,7 @@ open class Class75 {
             aByteArray1275 = ByteArray(anInt1259 * anInt1267)
             aShortArray1261 = ShortArray(anInt1259 * anInt1267)
             aByteArray1258 = ByteArray(anInt1259 * anInt1267)
-            aClass356_1271 = Class356(1024)
+            aHashtable_1271 = Hashtable(1024)
             aDoublyLinkedNodeListArrayArrayArray1269 = Array<Array<Array<DoublyLinkedNodeList?>?>?>(3) { Array<Array<DoublyLinkedNodeList?>?>(anInt1259 shr 6) { arrayOfNulls<DoublyLinkedNodeList>(anInt1267 shr 6) } }
             anIntArray1260 = IntArray(aLocDefinitionCache_1239!!.anInt3429 + 1)
         }
@@ -648,7 +648,7 @@ open class Class75 {
                                     var_renderer.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0)
                                 } else if (i_154_ > 0) {
                                     if (i_154_ == 65535) {
-                                        val class348_sub39 = ((aClass356_1271!!.method3480((i_140_ shl 16 or i_150_).toLong(), -6008)) as ShortByteArrayPair?)
+                                        val class348_sub39 = ((aHashtable_1271!!.method3480((i_140_ shl 16 or i_150_).toLong(), -6008)) as ShortByteArrayPair?)
                                         if (class348_sub39 != null) method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025), true)
                                     } else {
                                         aShortArray1252!![0] = (i_154_ - 1).toShort()
@@ -690,7 +690,7 @@ open class Class75 {
                                     val i_165_: Int = ((aShortArray1261!![i_159_ + i_164_ * anInt1259]).toInt() and 0xffff)
                                     if (i_165_ > 0) {
                                         if (i_165_ == 65535) {
-                                            val class348_sub39 = ((aClass356_1271!!.method3480((i_159_ shl 16 or i_164_).toLong(), -6008)) as ShortByteArrayPair?)
+                                            val class348_sub39 = ((aHashtable_1271!!.method3480((i_159_ shl 16 or i_164_).toLong(), -6008)) as ShortByteArrayPair?)
                                             if (class348_sub39 != null) method763(var_renderer, i_156_, i_161_, i_158_, i_163_, (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025))
                                         } else {
                                             aShortArray1252!![0] = (i_165_ - 1).toShort()
@@ -758,20 +758,20 @@ open class Class75 {
 
         @JvmStatic
         fun method766(i: Int, i_191_: Int): InterfaceComponentGroup? {
-            var class348_sub42_sub14 = aClass356_1241!!.method3484(0) as InterfaceComponentGroup?
+            var class348_sub42_sub14 = aHashtable_1241!!.method3484(0) as InterfaceComponentGroup?
             while (class348_sub42_sub14 != null) {
                 if (class348_sub42_sub14.aBoolean9639 && class348_sub42_sub14.method3238((-120).toByte(), i, i_191_)) return class348_sub42_sub14
-                class348_sub42_sub14 = aClass356_1241!!.method3482(0) as InterfaceComponentGroup?
+                class348_sub42_sub14 = aHashtable_1241!!.method3482(0) as InterfaceComponentGroup?
             }
             return null
         }
 
         fun method767(i: Int, i_192_: Int): LinkedNodeListIterator {
             val linkedNodeListIterator = LinkedNodeListIterator()
-            var class348_sub42_sub14 = aClass356_1241!!.method3484(0) as InterfaceComponentGroup?
+            var class348_sub42_sub14 = aHashtable_1241!!.method3484(0) as InterfaceComponentGroup?
             while (class348_sub42_sub14 != null) {
                 if (class348_sub42_sub14.aBoolean9639 && class348_sub42_sub14.method3238(29.toByte(), i, i_192_)) linkedNodeListIterator.method1005(true, class348_sub42_sub14)
-                class348_sub42_sub14 = aClass356_1241!!.method3482(0) as InterfaceComponentGroup?
+                class348_sub42_sub14 = aHashtable_1241!!.method3482(0) as InterfaceComponentGroup?
             }
             return linkedNodeListIterator
         }

@@ -73,7 +73,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
             val class42 = Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 50.toByte())
             if (i != 1) anInt8370 = -75
             if (class42 != null && class42.aBoolean609 && class42.method373(Class75.anInterface17_1244!!, 98)) return class348_sub21
-            return Class356.method3479(-1)
+            return Hashtable.method3479(-1)
         }
 
         @JvmStatic
@@ -171,10 +171,10 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                         } else {
                             val l = (class348_sub42_sub12.aLong9600)
                             var class348_sub42_sub13: ContactList?
-                            class348_sub42_sub13 = (ContactEntry.aClass356_9603!!.method3480(l, -6008) as? ContactList?)
+                            class348_sub42_sub13 = (ContactEntry.aHashtable_9603!!.method3480(l, -6008) as? ContactList?)
                             while (class348_sub42_sub13 != null) {
                                 if (class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601) break
-                                class348_sub42_sub13 = (ContactEntry.aClass356_9603!!.method3476(true) as? ContactList?)
+                                class348_sub42_sub13 = (ContactEntry.aHashtable_9603!!.method3476(true) as? ContactList?)
                             }
                             if (class348_sub42_sub13 == null || !(class348_sub42_sub13.method3234(15.toByte(), class348_sub42_sub12))) break
                             ManagedGlResource.method1868(120.toByte(), class348_sub42_sub13)

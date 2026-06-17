@@ -29,7 +29,7 @@ class HardKeyedCacheEntryReference internal constructor(interface14: Interface14
         @JvmField
         var anInt10441: Int = 0
         @JvmField
-        var aClass356_10442: Class356?
+        var aHashtable_10442: Hashtable?
         @JvmField
         var anInt10443: Int = 2
         @JvmField
@@ -40,7 +40,7 @@ class HardKeyedCacheEntryReference internal constructor(interface14: Interface14
         @JvmStatic
         fun method3207(i: Byte) {
             val i_1_ = -126 % ((i - -27) / 61)
-            aClass356_10442 = null
+            aHashtable_10442 = null
         }
 
         @JvmStatic
@@ -62,7 +62,7 @@ class HardKeyedCacheEntryReference internal constructor(interface14: Interface14
         }
 
         init {
-            aClass356_10442 = Class356(8)
+            aHashtable_10442 = Hashtable(8)
         }
     }
 }

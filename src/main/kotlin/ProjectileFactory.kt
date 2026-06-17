@@ -73,7 +73,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
                         class348_sub9.anInt6677 = player.anInt10558
                         class348_sub9.anInt6696 = 256
                         class348_sub9.aBoolean6674 = player.aBoolean10517
-                        CompletedResourceRequest.aClass356_10465!!.method3483(65.toByte(), player.anInt10290.toLong(), class348_sub9)
+                        CompletedResourceRequest.aHashtable_10465!!.method3483(65.toByte(), player.anInt10290.toLong(), class348_sub9)
                     }
                 } else {
                     class348_sub9.aClass51_6695 = class51

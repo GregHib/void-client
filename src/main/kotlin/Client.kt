@@ -412,7 +412,7 @@ import TextureMipDescriptor.Companion.method3462
 import TextureCache.Companion.method3466
 import TextureCache.Companion.method3468
 import CompiledScriptCache.Companion.method3473
-import Class356.Companion.method3478
+import Hashtable.Companion.method3478
 import Class357.Companion.method3487
 import Class358.Companion.method3488
 import Class359.Companion.method3491
@@ -1559,8 +1559,8 @@ class Client : GameAppletFrame() {
             Class367_Sub11.anInt7396++
             if (Class367_Sub11.anInt7396 % 1000 == 1) {
                 val gregoriancalendar = GregorianCalendar()
-                Class356.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6)
-                OutputStream_Sub1.aRandom93!!.setSeed(Class356.anInt4383.toLong())
+                Hashtable.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6)
+                OutputStream_Sub1.aRandom93!!.setSeed(Hashtable.anInt4383.toLong())
             }
             if (Class367_Sub11.anInt7396 % 50 == 0) {
                 ModelResourceBundle.anInt7134 = Class81.anInt1433
@@ -1881,7 +1881,7 @@ class Client : GameAppletFrame() {
             for (i_9_ in 0..<i_8_) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_9_]])
-                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_9_ - i_7_].toLong(), -6008) as NpcReference).aNpc_6859)
+                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_9_ - i_7_].toLong(), -6008) as NpcReference).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i) {
                     class318_sub1_sub3_sub3.anInt10261 = 0
                     if ((class318_sub1_sub3_sub3.anInt10285) < 0) class318_sub1_sub3_sub3.aBoolean10309 = false
@@ -1933,7 +1933,7 @@ class Client : GameAppletFrame() {
         }
 
         fun method105(class46: Class46): PackedFlagsAccessor? {
-            val class348_sub44 = (TextureDefinitionCache.aClass356_2959!!.method3480(((class46.anInt830.toLong() shl 32) + class46.anInt704.toLong()), -6008)) as PackedFlagsAccessor?
+            val class348_sub44 = (TextureDefinitionCache.aHashtable_2959!!.method3480(((class46.anInt830.toLong() shl 32) + class46.anInt704.toLong()), -6008)) as PackedFlagsAccessor?
             if (class348_sub44 != null) return class348_sub44
             return class46.aClass348_Sub44_748
         }
@@ -1941,7 +1941,7 @@ class Client : GameAppletFrame() {
         fun method106() {
             Class45.anInt669 = 0
             for (i in 0..<ModelDefinitionLoader.anInt2057) {
-                val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i].toLong(), -6008) as NpcReference).aNpc_6859)
+                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i].toLong(), -6008) as NpcReference).aNpc_6859)
                 if ((npc!!.aBoolean10309) && npc.method2425(-1) != -1) {
                     val i_20_ = ((npc.method2436(119.toByte()) - 1) * 256 + 252)
                     val i_21_ = (npc.x - i_20_) shr 9
@@ -2510,7 +2510,7 @@ class Client : GameAppletFrame() {
                             if (class46.anInt774 == 0) {
                                 method107(class46s, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
                                 if (class46.aClass46Array798 != null) Companion.method107(class46.aClass46Array798!!, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
-                                val class348_sub41 = ((MinimapSpriteRenderer.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
+                                val class348_sub41 = ((MinimapSpriteRenderer.aHashtable_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
                                 if (class348_sub41 != null) {
                                     if ((HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !TextureCubeProvider.aBoolean6327) method661(105.toByte())
                                     method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_)
@@ -2560,7 +2560,7 @@ class Client : GameAppletFrame() {
             for (i_93_ in 0..<i_92_) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_93_ < i) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_93_]])
-                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_93_ - i].toLong(), -6008) as NpcReference).aNpc_6859)
+                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_93_ - i].toLong(), -6008) as NpcReference).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.anInt10285 >= 0) {
                     val i_94_ = class318_sub1_sub3_sub3.method2436(74.toByte())
                     if ((i_94_ and 0x1) == 0) {
@@ -2604,7 +2604,7 @@ class Client : GameAppletFrame() {
                 }
             }
             for (i_115_ in 0..<ModelDefinitionLoader.anInt2057) {
-                val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_115_].toLong(), -6008) as NpcReference).aNpc_6859)
+                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_115_].toLong(), -6008) as NpcReference).aNpc_6859)
                 if (!npc!!.method2445((-4).toByte()) || !(npc.aClass79_10505!!.method796(ProjectedGroundDecor.aVarpStore_10209!!, 18627))) npc.anInt10285 = -1
                 else {
                     npc.method2409((-118).toByte())
@@ -2631,7 +2631,7 @@ class Client : GameAppletFrame() {
                 val class302 = MultiFieldRecord.aMinimapPositionStateArray6897s!![i_117_]
                 if (class302 != null) {
                     if (class302.anInt3840 == 1) {
-                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as NpcReference?)
+                        val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as NpcReference?)
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)
                             if (npc!!.anInt10285 >= 0) npc.anInt10285 += 2048
@@ -2650,7 +2650,7 @@ class Client : GameAppletFrame() {
             for (i_123_ in 0..<i_122_ + ModelDefinitionLoader.anInt2057) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_123_]])
-                else class318_sub1_sub3_sub3 = (NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as NpcReference).aNpc_6859
+                else class318_sub1_sub3_sub3 = (NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as NpcReference).aNpc_6859
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i && (class318_sub1_sub3_sub3.anInt10285) >= 0) {
                     val i_124_ = class318_sub1_sub3_sub3.method2436(114.toByte())
                     if ((i_124_ and 0x1) == 0) {

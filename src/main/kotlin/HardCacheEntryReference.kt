@@ -157,7 +157,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (Class356.aIntRange_4388 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (Hashtable.aIntRange_4388 == ModelVertexColorBuffer.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-100)
                 val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-111)
                 WallSceneEntity.method2397((-126).toByte())
@@ -169,12 +169,12 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-123).toByte())
                 val i_9_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 WallSceneEntity.method2397((-124).toByte())
-                val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_9_.toLong(), -6008) as RegionSceneShifter?)
-                val class348_sub41_10_ = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as RegionSceneShifter?)
+                val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i_9_.toLong(), -6008) as RegionSceneShifter?)
+                val class348_sub41_10_ = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i.toLong(), -6008) as RegionSceneShifter?)
                 if (class348_sub41_10_ != null) ScrollingWidgetComponentNode.method1118((class348_sub41 == null || (class348_sub41_10_.anInt7050 != class348_sub41.anInt7050)), false, class348_sub41_10_, 2533)
                 if (class348_sub41 != null) {
                     class348_sub41.method2715(32.toByte())
-                    MinimapSpriteRenderer.aClass356_4915!!.method3483(102.toByte(), i.toLong(), class348_sub41)
+                    MinimapSpriteRenderer.aHashtable_4915!!.method3483(102.toByte(), i.toLong(), class348_sub41)
                 }
                 var class46 = method2570(1512932720, i_9_)
                 if (class46 != null) ConfigFlagUtil.method1916(-9343, class46)
@@ -382,7 +382,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 if (i_40_ shr 30 == 0) {
                     if (i_40_ shr 29 != 0) {
                         val i_44_ = i_40_ and 0xffff
-                        val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_44_.toLong(), -6008) as NpcReference?)
+                        val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_44_.toLong(), -6008) as NpcReference?)
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)!!
                             if (i_38_ == 65535) i_38_ = -1
@@ -788,7 +788,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             if (ModelVertexColorBuffer.aIntRange_6584 == CompassSmoother.aIntRange_3368) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 WallSceneEntity.method2397((-124).toByte())
-                val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as RegionSceneShifter?)
+                val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i.toLong(), -6008) as RegionSceneShifter?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
                 if (Class49.aClass46_4730 != null) {
                     ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
@@ -1189,7 +1189,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 var i_147_ = i_146_
                 while (i_145_ >= i_147_) {
                     val l = (i.toLong() shl 32) - -i_147_.toLong()
-                    val class348_sub44 = (TextureDefinitionCache.aClass356_2959!!.method3480(l, -6008) as PackedFlagsAccessor?)
+                    val class348_sub44 = (TextureDefinitionCache.aHashtable_2959!!.method3480(l, -6008) as PackedFlagsAccessor?)
                     val class348_sub44_148_: PackedFlagsAccessor?
                     if (class348_sub44 == null) {
                         if (i_147_ == -1) class348_sub44_148_ = (PackedFlagsAccessor(method2570(1512932720, i)!!.aClass348_Sub44_748!!.anInt7098, i_144_))
@@ -1198,7 +1198,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         class348_sub44_148_ = PackedFlagsAccessor((class348_sub44.anInt7098), i_144_)
                         class348_sub44.method2715(91.toByte())
                     }
-                    TextureDefinitionCache.aClass356_2959!!.method3483(125.toByte(), l, class348_sub44_148_)
+                    TextureDefinitionCache.aHashtable_2959!!.method3483(125.toByte(), l, class348_sub44_148_)
                     i_147_++
                 }
                 ModelVertexColorBuffer.aIntRange_6584 = null
@@ -1405,7 +1405,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i_182_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-122).toByte())
                 val i_183_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-95).toByte())
                 WallSceneEntity.method2397((-125).toByte())
-                val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_182_.toLong(), -6008) as RegionSceneShifter?)
+                val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i_182_.toLong(), -6008) as RegionSceneShifter?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533)
                 MapTileShape.method2661(i, i_182_, i_183_, false, 2)
                 ModelVertexColorBuffer.aIntRange_6584 = null
@@ -1448,7 +1448,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 GradientLookupEffect.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(126.toByte())
                 Class73.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
-                var class348_sub37 = ModelBatchBase.aClass356_1895!!.method3484(0) as? HashTableContainer?
+                var class348_sub37 = ModelBatchBase.aHashtable_1895!!.method3484(0) as? HashTableContainer?
                 while (class348_sub37 != null) {
                     val i = ((class348_sub37.aLong4291 shr 28) and 0x3L).toInt()
                     val i_188_ = (class348_sub37.aLong4291 and 0x3fffL).toInt()
@@ -1459,7 +1459,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         class348_sub37.method2715(89.toByte())
                         if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.anInt7319 && (i_191_ < RangeThresholdTextureNode.anInt9109)) ProjectileSpawner.method1479(i_191_, (-118).toByte(), i_189_, GradientLookupEffect.anInt9200)
                     }
-                    class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3482(0) as? HashTableContainer?)
+                    class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3482(0) as? HashTableContainer?)
                 }
                 var class348_sub27 = (SpriteRenderEntry.aNodeDeque_9711!!.method1995(4) as? MultiFieldRecord?)
                 while (class348_sub27 != null) {
@@ -1474,7 +1474,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val `is` = IntArray(4)
                 for (i_192_ in 0..3) `is`[i_192_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_193_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_193_.toLong(), -6008) as NpcReference?)
+                val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_193_.toLong(), -6008) as NpcReference?)
                 if (class348_sub22 != null) SoundBankPatch.method2931(i, 110.toByte(), `is`, (class348_sub22.aNpc_6859))
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
@@ -1598,14 +1598,14 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 WallSceneEntity.method2397((-127).toByte())
                 for (i_211_ in i_208_..i) {
                     val l = i_211_.toLong() + (i_209_.toLong() shl 32)
-                    val class348_sub44 = (TextureDefinitionCache.aClass356_2959!!.method3480(l, -6008) as PackedFlagsAccessor?)
+                    val class348_sub44 = (TextureDefinitionCache.aHashtable_2959!!.method3480(l, -6008) as PackedFlagsAccessor?)
                     val class348_sub44_212_: PackedFlagsAccessor?
                     if (class348_sub44 != null) {
                         class348_sub44_212_ = PackedFlagsAccessor(i_210_, (class348_sub44.anInt7093))
                         class348_sub44.method2715(80.toByte())
                     } else if (i_211_ == -1) class348_sub44_212_ = (PackedFlagsAccessor(i_210_, method2570(1512932720, i_209_)!!.aClass348_Sub44_748!!.anInt7093))
                     else class348_sub44_212_ = PackedFlagsAccessor(i_210_, -1)
-                    TextureDefinitionCache.aClass356_2959!!.method3483(114.toByte(), l, class348_sub44_212_)
+                    TextureDefinitionCache.aHashtable_2959!!.method3483(114.toByte(), l, class348_sub44_212_)
                 }
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true

@@ -95,11 +95,11 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
         @JvmStatic
         fun method524(i: Int, bool: Boolean, i_2_: Int, i_3_: Int) {
             if (i_3_ > -108) aBoolean5265 = false
-            if (ProjectileConfigUtil.aClass356_389!!.method3480(i_2_.toLong(), -6008) == null) {
+            if (ProjectileConfigUtil.aHashtable_389!!.method3480(i_2_.toLong(), -6008) == null) {
                 if (Class38.aBoolean510) {
                     val class348_sub15 = MenuActionNode(i_2_, Class55_Sub1(4096, (HitsplatDefinition.aClass45_2015!!), i_2_), i, bool)
                     class348_sub15.aClass55_Sub1_6768!!.method509(-92, Class59_Sub2.aStringArray5305!![AnimationFrameDefinition.anInt6967])
-                    ProjectileConfigUtil.aClass356_389!!.method3483(35.toByte(), i_2_.toLong(), class348_sub15)
+                    ProjectileConfigUtil.aHashtable_389!!.method3483(35.toByte(), i_2_.toLong(), class348_sub15)
                 } else ProjectileDefinition.method2285(bool, (-90).toByte(), i_2_)
             }
             anInt5268++

@@ -3,7 +3,7 @@ import SoundBankPatch.Companion.method2929
 /* Class356 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class356 internal constructor(var anInt4377: Int) {
+class Hashtable internal constructor(var anInt4377: Int) {
     var aLinkedListNodeArray4374: Array<LinkedListNode>
     private var aLong4385: Long = 0
     private var aLinkedListNode_4389: LinkedListNode? = null

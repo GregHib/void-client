@@ -10,7 +10,7 @@ class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?,
     private var aFloatArrayArray7005: Array<FloatArray?>?
     private val aHa_Sub3_7007: NativeRenderer?
     private val anInt7010: Int
-    private var aClass356_7011: Class356? = null
+    private var aHashtable_7011: Hashtable? = null
     private var anInt7013 = 0
     private val anInt7014: Int
     private var aFloatArrayArray7016: Array<FloatArray?>?
@@ -55,14 +55,14 @@ class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?,
         val i_14_ = aS_Sub3_7019.method3986(i_12_, i_13_, (-127).toByte())
         if ((i_10_ and 0x7f) == 0 || (i_8_ and 0x7f) == 0) {
             l = (i_13_.toLong() and 0xffffL) shl 16 or (i_12_.toLong() and 0xffffL)
-            val class348 = aClass356_7011!!.method3480(l, i_7_ + 23335)
+            val class348 = aHashtable_7011!!.method3480(l, i_7_ + 23335)
             if (class348 != null) {
                 method3034(((class348 as ShortKeyNode).aShort6911), 49.toByte())
                 return
             }
         }
         val i_15_ = (anInt7013++).toShort()
-        if (l != -1L) aClass356_7011!!.method3483(101.toByte(), l, ShortKeyNode(i_15_))
+        if (l != -1L) aHashtable_7011!!.method3483(101.toByte(), l, ShortKeyNode(i_15_))
         val f: Float
         val f_16_: Float
         val f_17_: Float
@@ -213,7 +213,7 @@ class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?,
                 i_49_++
             }
             if (anInt7018 > 0) {
-                aClass356_7011 = Class356(method340(anInt7018, 108.toByte()))
+                aHashtable_7011 = Hashtable(method340(anInt7018, 108.toByte()))
                 anInterface5_Impl2_7002 = aHa_Sub3_7007!!.method3840(-28633, false)
                 anInterface5_Impl2_7002!!.method23(15959, anInt7018)
                 val nativeheapbuffer = aHa_Sub3_7007.method3869(86.toByte(), false, 16 * anInt7018)
@@ -279,7 +279,7 @@ class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?,
                         aStream7021!!.a()
                         if (anInterface5_Impl2_7002.method22(-23)) break
                         aStream7022!!.e(0)
-                        aClass356_7011!!.method3481(0)
+                        aHashtable_7011!!.method3481(0)
                     }
                 }
                 aStream7022!!.a()
@@ -294,7 +294,7 @@ class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?,
             aFloatArrayArray7005 = aFloatArrayArray7016
             aStream7022 = null
             aStream7021 = null
-            aClass356_7011 = null
+            aHashtable_7011 = null
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.Companion.method2929(runtimeexception, ("sea.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }

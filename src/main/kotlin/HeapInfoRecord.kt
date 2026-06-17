@@ -46,7 +46,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
 
     companion object {
         var anInt4933: Int = 0
-        var aClass356_4934: Class356? = Class356(8)
+        var aHashtable_4934: Hashtable? = Hashtable(8)
         @JvmField
         var aCircleRasterizer_4938: CircleRasterizer? = null
         var anInt4939: Int = 0
@@ -78,7 +78,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
         @JvmStatic
         fun method1249(bool: Boolean) {
             if (bool != true) method1248(-21)
-            aClass356_4934 = null
+            aHashtable_4934 = null
             aCircleRasterizer_4938 = null
         }
     }

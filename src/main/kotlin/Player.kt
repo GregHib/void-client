@@ -357,7 +357,7 @@ class Player : ProjectedGroundDecor() {
                 val class302 = MultiFieldRecord.aMinimapPositionStateArray6897s!![i_56_]
                 if (class302 != null && class302.anInt3834 != -1) {
                     if (class302.anInt3840 == 1) {
-                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? NpcReference?)
+                        val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? NpcReference?)
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)!!
                             val i_57_ = (-(LocalPlayerState.aPlayer_1907!!.x) + npc.x)

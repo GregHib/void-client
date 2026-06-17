@@ -193,14 +193,14 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
             Class5_Sub3.anInt8374++
             val class348_sub47 = method2148(IntPair.aFontMetaRef_6970, TheoraVideoStream.aClass77_9029, -109)
             InterfaceComponentGroup.method3243(37, class348_sub47)
-            var class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as RegionSceneShifter?
+            var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
             while (class348_sub41 != null) {
                 if (!class348_sub41.method2712(4.toByte())) {
-                    class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as RegionSceneShifter?
+                    class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
                     if (class348_sub41 == null) break
                 }
                 if (class348_sub41.anInt7053 == 0) method1118(true, bool, class348_sub41, 2533)
-                class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as RegionSceneShifter?
+                class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?
             }
             if (Class49.aClass46_4730 != null) {
                 ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)

@@ -1356,7 +1356,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
             anInt3110++
             if (class46.anInt834 != -1) return method2570(1512932720, class46.anInt834)
             val i_309_ = class46.anInt830 ushr 16
-            val mapElementLookup = MapElementLookup(MinimapSpriteRenderer.aClass356_4915!!)
+            val mapElementLookup = MapElementLookup(MinimapSpriteRenderer.aHashtable_4915!!)
             var class348_sub41 = mapElementLookup.method2644(123.toByte()) as RegionSceneShifter?
             while (class348_sub41 != null) {
                 if (i_309_ == class348_sub41.anInt7050) return method2570(1512932720, (class348_sub41.aLong4291).toInt())

@@ -3,7 +3,7 @@
 */
 class CacheLruCache internal constructor(private var anInt3891: Int) {
     private var aClass348_Sub42_3887 = HashLinkedListNode()
-    private val aClass356_3888: Class356
+    private val aHashtable_3888: Hashtable
     private var aLinkedNodeListIterator_3889: LinkedNodeListIterator? = LinkedNodeListIterator()
     private val anInt3890: Int
 
@@ -11,7 +11,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
         try {
             if (i > -25) aLinkedNodeListIterator_3889 = null
             anInt3885++
-            val class348_sub42 = aClass356_3888.method3480(l, -6008) as HashLinkedListNode?
+            val class348_sub42 = aHashtable_3888.method3480(l, -6008) as HashLinkedListNode?
             if (class348_sub42 != null) aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42)
             return class348_sub42
         } catch (runtimeexception: RuntimeException) {
@@ -23,7 +23,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
         anInt3879++
         if (bool != true) method2305(-121L, null, -1)
         aLinkedNodeListIterator_3889!!.method1009(2110355138)
-        aClass356_3888.method3481(0)
+        aHashtable_3888.method3481(0)
         aClass348_Sub42_3887 = HashLinkedListNode()
         anInt3891 = anInt3890
     }
@@ -32,7 +32,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
         do {
             try {
                 anInt3880++
-                val class348_sub42 = aClass356_3888.method3480(l, -6008) as HashLinkedListNode?
+                val class348_sub42 = aHashtable_3888.method3480(l, -6008) as HashLinkedListNode?
                 if (class348_sub42 != null) {
                     class348_sub42.method2715(73.toByte())
                     class348_sub42.method3162(true)
@@ -60,7 +60,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
                     class348_sub42_0_.method3162(true)
                 }
             } else anInt3891--
-            aClass356_3888.method3483(37.toByte(), l, class348_sub42)
+            aHashtable_3888.method3483(37.toByte(), l, class348_sub42)
             aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42!!)
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("wu.E(" + l + ',' + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ')'))
@@ -74,7 +74,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
         while (i_1_ + i_1_ < anInt3891) {
             i_1_ += i_1_
         }
-        aClass356_3888 = Class356(i_1_)
+        aHashtable_3888 = Hashtable(i_1_)
     }
 
     companion object {

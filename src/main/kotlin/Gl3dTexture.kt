@@ -77,7 +77,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 ItemDefinitionLoader.aIntRange_2183,
                 LocalizedTextTriple.aIntRange_3751,
                 SequencedWallEntity.aIntRange_10168,
-                Class356.aIntRange_4388,
+                Hashtable.aIntRange_4388,
                 WidgetDefinition.aIntRange_250,
                 VideoStreamDecoder.aIntRange_4126,
                 EmoteDefinition.aIntRange_3264,

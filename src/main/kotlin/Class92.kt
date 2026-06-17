@@ -14,7 +14,7 @@ object Class92 {
 
     fun method858(bool: Boolean, player: Player) {
         anInt1526++
-        val class348_sub9 = ((CompletedResourceRequest.aClass356_10465!!.method3480(player.anInt10290.toLong(), -6008)) as CharacterRenderState)
+        val class348_sub9 = ((CompletedResourceRequest.aHashtable_10465!!.method3480(player.anInt10290.toLong(), -6008)) as CharacterRenderState)
         if (bool == true) {
             if (class348_sub9 == null) ProjectileFactory.method1614(979190089, null, player.plane.toInt(), (player.anIntArray10317!![0]), (player.anIntArray10320!![0]), player, null, 0)
             else class348_sub9.method2781(21.toByte())
@@ -51,12 +51,12 @@ object Class92 {
                         val i_10_ = (i_8_ + (-ArbVertexProgram.regionTileX + (NullOggStream.anIntArray9042!![i_1_] shr 8) * 64))
                         val i_11_ = (-Class90.regionTileY + (64 * (0xff and (NullOggStream.anIntArray9042!![i_1_])) - -i_9_))
                         val class79 = (MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(class348_sub49.readUnsignedShort(842397944), -1))
-                        val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_5_.toLong(), -6008) as? NpcReference)
+                        val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_5_.toLong(), -6008) as? NpcReference)
                         if (class348_sub22 == null && (class79.aByte1325.toInt() and 0x1) > 0 && i_7_ == ParticleSystemState.anInt2204 && i_10_ >= 0 && (Class367_Sub4.anInt7319 > i_10_ - -class79.anInt1399) && i_11_ >= 0 && (RangeThresholdTextureNode.anInt9109 > i_11_ + class79.anInt1399)) {
                             val npc = Npc()
                             npc.anInt10290 = i_5_
                             val class348_sub22_12_ = (NpcReference(npc))
-                            NpcEntityUpdater.aClass356_3654!!.method3483(91.toByte(), i_5_.toLong(), class348_sub22_12_)
+                            NpcEntityUpdater.aHashtable_3654!!.method3483(91.toByte(), i_5_.toLong(), class348_sub22_12_)
                             TurbulenceTextureNode.aClass348_Sub22Array9319!![TerrainShadowBuilderGl2.anInt6930++] = class348_sub22_12_
                             Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_5_
                             npc.anInt10306 = Class367_Sub11.anInt7396

@@ -39,7 +39,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     var aHoverActionEntry_8276: HoverActionEntry? = null
     @JvmField
     var aHoverActionEntry_8277: HoverActionEntry? = null
-    private var aClass356_8278: Class356? = null
+    private var aHashtable_8278: Hashtable? = null
     private var anInterface2_8279: Interface2? = null
     private var anInt8280 = 0
     private var aFloatArrayArray8281: Array<FloatArray?>?
@@ -118,8 +118,8 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             for (i in 1..<this.anInt4587) {
                 for (i_33_ in 1..<this.anInt4590) `is`[i]!![i_33_] = ((aByteArrayArray8273!![i]!![1 + i_33_].toInt() shr 3) + (aByteArrayArray8273!![i]!![-1 + i_33_].toInt() shr 2) + ((aByteArrayArray8273!![i + 1]!![i_33_].toInt() shr 3) + ((aByteArrayArray8273!![i - 1]!![i_33_].toInt() shr 2) + (aByteArrayArray8273!![i]!![i_33_].toInt() shr 1)))).toByte()
             }
-            aClass348_Sub20Array8282 = arrayOfNulls<TextureTileRenderer>(aClass356_8278!!.method3474(1))
-            aClass356_8278!!.method3477(3, aClass348_Sub20Array8282 as Array<LinkedListNode?>)
+            aClass348_Sub20Array8282 = arrayOfNulls<TextureTileRenderer>(aHashtable_8278!!.method3474(1))
+            aHashtable_8278!!.method3477(3, aClass348_Sub20Array8282 as Array<LinkedListNode?>)
             run {
                 var i = 0
                 while (aClass348_Sub20Array8282!!.size > i) {
@@ -135,7 +135,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             val class348_sub20s = arrayOfNulls<TextureTileRenderer>(anInt8284)
             var i_34_ = ColorThresholdEffect.method3051(anInt8284 / 4, 4096)
             if (i_34_ < 1) i_34_ = 1
-            val class356 = Class356(i_34_)
+            val hashtable = Hashtable(i_34_)
             val class348_sub20s_35_ = arrayOfNulls<TextureTileRenderer>(anInt8280)
             var i_36_ = 0
             while (this.anInt4587 > i_36_) {
@@ -249,7 +249,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                 i_75_ = (ParticleEmitterNode.anIntArray179!![0xff80 and i_69_ or i_90_])
                             }
                             var linkedListNode: LinkedListNode? = null
-                            if ((i_65_ and -1 + anInt8260) == 0 && (anInt8260 + -1 and i_66_) == 0) linkedListNode = class356.method3480(l, -6008)
+                            if ((i_65_ and -1 + anInt8260) == 0 && (anInt8260 + -1 and i_66_) == 0) linkedListNode = hashtable.method3480(l, -6008)
                             val i_91_: Int
                             if (linkedListNode == null) {
                                 var i_92_: Int
@@ -313,7 +313,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                 i_91_ = anInt8246++
                                 is_63_[i_64_] = i_91_.toShort()
                                 if (i_69_ != -1) class348_sub20s[i_91_] = class348_sub20s_38_[i_64_]
-                                class356.method3483(114.toByte(), l, ShortKeyNode(is_63_[i_64_]))
+                                hashtable.method3483(114.toByte(), l, ShortKeyNode(is_63_[i_64_]))
                             } else {
                                 is_63_[i_64_] = (linkedListNode as ShortKeyNode).aShort6911
                                 i_91_ = 0xffff and is_63_[i_64_].toInt()
@@ -404,7 +404,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
         aClass348_Sub20ArrayArrayArray8243 = null
         this.anIntArrayArrayArray8253 = null
         aByteArrayArray8273 = null
-        aClass356_8278 = null
+        aHashtable_8278 = null
         anIntArrayArrayArray8245 = null
         this.anIntArrayArrayArray8234 = null
         this.anIntArrayArrayArray8268 = this.anIntArrayArrayArray8234
@@ -616,15 +616,15 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 }
                 val l = (i_184_.toLong() shl 28 or (i_185_.toLong() shl 42 or (i_186_.toLong() shl 48)) or (i_189_ shl 14).toLong() or i_188_.toLong())
                 var linkedListNode: LinkedListNode?
-                linkedListNode = aClass356_8278!!.method3480(l, -6008)
+                linkedListNode = aHashtable_8278!!.method3480(l, -6008)
                 while (linkedListNode != null) {
                     val class348_sub20 = linkedListNode as TextureTileRenderer
                     if (i_188_ == class348_sub20.anInt6841 && (class348_sub20.aFloat6832 == i_189_.toFloat()) && (class348_sub20.anInt6825 == i_184_) && (i_185_ == class348_sub20.anInt6833) && (class348_sub20.anInt6826 == i_186_)) break
-                    linkedListNode = aClass356_8278!!.method3476(true)
+                    linkedListNode = aHashtable_8278!!.method3476(true)
                 }
                 if (linkedListNode == null) {
                     class348_sub20s[i_187_] = TextureTileRenderer(this, i_188_, i_189_, i_184_, i_185_, i_186_)
-                    aClass356_8278!!.method3483(99.toByte(), l, class348_sub20s[i_187_])
+                    aHashtable_8278!!.method3483(99.toByte(), l, class348_sub20s[i_187_])
                 } else class348_sub20s[i_187_] = linkedListNode as TextureTileRenderer
             }
             if (bool) aByteArrayArray8240[i]!![i_176_] = BoundsConstraintEntry.method2057((aByteArrayArray8240[i]!![i_176_]).toInt(), 1).toByte()
@@ -749,7 +749,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                     }
                     i_138_++
                 }
-                aClass356_8278 = Class356(128)
+                aHashtable_8278 = Hashtable(128)
                 if ((0x10 and this.anInt8235) == 0) break
                 aSoftwareSpriteRaster_8266 = SoftwareSpriteRaster(this.aHa_Sub2_8272, this)
             } catch (runtimeexception: RuntimeException) {

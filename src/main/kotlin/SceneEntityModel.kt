@@ -83,15 +83,15 @@ class SceneEntityModel : SceneLinkedListNode() {
             class348_sub42_sub19.anInt9695 = class348_sub49.readUnsignedShort(842397944)
             val i_14_ = class348_sub49.readUnsignedByte(255)
             if (i_14_ > 0) {
-                class348_sub42_sub19.aClass356Array9693 = arrayOfNulls<Class356>(i_14_)
+                class348_sub42_sub19.aHashtableArray9693 = arrayOfNulls<Hashtable>(i_14_)
                 for (i_15_ in 0..<i_14_) {
                     var i_16_ = class348_sub49.readUnsignedShort(842397944)
-                    val class356 = Class356(method340(i_16_, 108.toByte()))
-                    class348_sub42_sub19.aClass356Array9693!![i_15_] = class356
+                    val hashtable = Hashtable(method340(i_16_, 108.toByte()))
+                    class348_sub42_sub19.aHashtableArray9693!![i_15_] = hashtable
                     while (i_16_-- > 0) {
                         val i_17_ = class348_sub49.readInt((-126).toByte())
                         val i_18_ = class348_sub49.readInt((-126).toByte())
-                        class356.method3483(124.toByte(), i_17_.toLong(), IntKeyNode(i_18_))
+                        hashtable.method3483(124.toByte(), i_17_.toLong(), IntKeyNode(i_18_))
                     }
                 }
             }

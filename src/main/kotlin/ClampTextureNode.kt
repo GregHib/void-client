@@ -110,7 +110,7 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
             if (bool != true) method3150(false)
             while ( /**/ModelDefinitionLoader.anInt2057 > i) {
                 val i_14_ = Class74.anIntArray1233!![i]
-                val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_14_.toLong(), -6008) as NpcReference?)
+                val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_14_.toLong(), -6008) as NpcReference?)
                 if (class348_sub22 != null) {
                     val npc = (class348_sub22.aNpc_6859)!!
                     ImageFrameCache.method2556(false, npc.aClass79_10505!!.anInt1399, npc)

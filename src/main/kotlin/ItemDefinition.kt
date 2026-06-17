@@ -10,7 +10,7 @@ class ItemDefinition {
     var aBoolean2755: Boolean = false
     private var anInt2756 = 0
     @JvmField
-    var aClass356_2757: Class356? = null
+    var aHashtable_2757: Hashtable? = null
     @JvmField
     var anInt2758: Int
     var anInt2759: Int
@@ -159,7 +159,7 @@ class ItemDefinition {
             anInt2832++
             anInt2807 = itemDefinition_9_.anInt2807
             anInt2792 = itemDefinition_9_.anInt2792
-            this.aClass356_2757 = itemDefinition_9_.aClass356_2757
+            this.aHashtable_2757 = itemDefinition_9_.aHashtable_2757
             anInt2805 = itemDefinition_9_.anInt2805
             this.anInt2827 = itemDefinition_9_.anInt2827
             this.anInt2787 = itemDefinition_10_.anInt2787
@@ -188,7 +188,7 @@ class ItemDefinition {
         anInt2809++
         var i = this.anInt2815
         var i_14_ = anInt2804
-        if (bool_13_ != false) this.aClass356_2757 = null
+        if (bool_13_ != false) this.aHashtable_2757 = null
         var i_15_ = anInt2805
         if (bool) {
             i = this.anInt2788
@@ -314,9 +314,9 @@ class ItemDefinition {
     fun method1561(string: String?, i: Int, i_36_: Int): String? {
         try {
             anInt2751++
-            if (this.aClass356_2757 == null) return string
+            if (this.aHashtable_2757 == null) return string
             if (i_36_ != -1511086397) method1569(25, null)
-            val class348_sub50 = (this.aClass356_2757!!.method3480(i.toLong(), i_36_ xor 0x5a114e4b) as StringCacheNode?)
+            val class348_sub50 = (this.aHashtable_2757!!.method3480(i.toLong(), i_36_ xor 0x5a114e4b) as StringCacheNode?)
             if (class348_sub50 == null) return string
             return class348_sub50.aString7211
         } catch (runtimeexception: RuntimeException) {
@@ -546,9 +546,9 @@ class ItemDefinition {
                                                                 } else if (i_57_ == 134) this.anInt2784 = class348_sub49!!.readUnsignedByte(255)
                                                                 else if (i_57_ == 249) {
                                                                     val i_64_ = class348_sub49!!.readUnsignedByte(255)
-                                                                    if (this.aClass356_2757 == null) {
+                                                                    if (this.aHashtable_2757 == null) {
                                                                         val i_65_ = method340(i_64_, 108.toByte())
-                                                                        this.aClass356_2757 = Class356(i_65_)
+                                                                        this.aHashtable_2757 = Hashtable(i_65_)
                                                                     }
                                                                     for (i_66_ in 0..<i_64_) {
                                                                         val bool = class348_sub49.readUnsignedByte(255) == 1
@@ -556,7 +556,7 @@ class ItemDefinition {
                                                                         val linkedListNode: LinkedListNode?
                                                                         if (bool) linkedListNode = StringCacheNode(class348_sub49.readString(107.toByte()))
                                                                         else linkedListNode = IntKeyNode(class348_sub49.readInt((-126).toByte()))
-                                                                        this.aClass356_2757!!.method3483(76.toByte(), i_67_.toLong(), linkedListNode)
+                                                                        this.aHashtable_2757!!.method3483(76.toByte(), i_67_.toLong(), linkedListNode)
                                                                     }
                                                                 }
                                                             } else this.anInt2812 = class348_sub49!!.readUnsignedShort(i + 842397940)
@@ -580,8 +580,8 @@ class ItemDefinition {
 
     fun method1567(i: Int, i_70_: Int, i_71_: Int): Int {
         anInt2793++
-        if (this.aClass356_2757 == null) return i
-        val class348_sub35 = (this.aClass356_2757!!.method3480(i_71_.toLong(), -6008) as IntKeyNode?)
+        if (this.aHashtable_2757 == null) return i
+        val class348_sub35 = (this.aHashtable_2757!!.method3480(i_71_.toLong(), -6008) as IntKeyNode?)
         if (class348_sub35 == null) return i
         val i_72_ = 56 % ((-32 - i_70_) / 50)
         return class348_sub35.anInt6976

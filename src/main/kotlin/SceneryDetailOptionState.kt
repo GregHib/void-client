@@ -219,7 +219,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     val i_36_ = (player.y + -(-1 + player.method2436(105.toByte()) shl 8))
                                     var i_37_ = 0
                                     while ((ModelDefinitionLoader.anInt2057 > i_37_)) {
-                                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as? NpcReference?)
+                                        val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as? NpcReference?)
                                         if (class348_sub22 != null) {
                                             val npc = (class348_sub22.aNpc_6859)!!
                                             if ((Class367_Sub11.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
@@ -263,7 +263,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val i_45_ = ((npc.x) - ((-1 + npc.aClass79_10505!!.anInt1399) shl 8))
                                         val i_46_ = ((npc.y) - (npc.aClass79_10505!!.anInt1399 - 1 shl 8))
                                         for (i_47_ in 0..<ModelDefinitionLoader.anInt2057) {
-                                            val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_47_].toLong(), -6008)) as NpcReference?)
+                                            val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_47_].toLong(), -6008)) as NpcReference?)
                                             if (class348_sub22 != null) {
                                                 val npc_48_ = (class348_sub22.aNpc_6859)!!
                                                 if (((npc_48_.anInt10215) != Class367_Sub11.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {
@@ -303,7 +303,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                             if (class318_sub4.aClass318_Sub1_6410 is DynamicSceneObjectEntity) {
                                 val i_55_ = ArbVertexProgram.regionTileX + i_33_
                                 val i_56_ = i_32_ - -Class90.regionTileY
-                                val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480(((class318_sub4.aClass318_Sub1_6410!!.plane).toInt() shl 28 or (i_56_ shl 14) or i_55_).toLong(), -6008)) as HashTableContainer?)
+                                val class348_sub37 = ((ModelBatchBase.aHashtable_1895!!.method3480(((class318_sub4.aClass318_Sub1_6410!!.plane).toInt() shl 28 or (i_56_ shl 14) or i_55_).toLong(), -6008)) as HashTableContainer?)
                                 if (class348_sub37 != null) {
                                     var i_57_ = 0
                                     var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1993(-92) as IntPair?)

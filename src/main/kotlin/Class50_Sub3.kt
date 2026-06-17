@@ -53,9 +53,9 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
 
         fun method465(i: Int) {
             if (i != -1636518164) anInt5252 = -40
-            HeapInfoRecord.aClass356_4934!!.method3481(0)
+            HeapInfoRecord.aHashtable_4934!!.method3481(0)
             anInt5251++
-            HardKeyedCacheEntryReference.aClass356_10442!!.method3481(0)
+            HardKeyedCacheEntryReference.aHashtable_10442!!.method3481(0)
         }
 
         @JvmStatic

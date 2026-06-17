@@ -9,7 +9,7 @@ class MinimapAreaMarkerNode : HashLinkedListNode() {
     var aString9690: String? = null
     var aBoundsConstraintEntry_9691: BoundsConstraintEntry? = null
     var aStringArray9692: Array<String?>? = null
-    var aClass356Array9693: Array<Class356?>? = null
+    var aHashtableArray9693: Array<Hashtable?>? = null
     var anIntArray9694: IntArray? = null
     var anInt9695: Int = 0
     var anIntArray9696: IntArray? = null

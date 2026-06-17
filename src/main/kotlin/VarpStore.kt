@@ -11,13 +11,13 @@ import NativeTerrainTile.Companion.method4004
 */
 class VarpStore : Interface17 {
     var anIntArray5063: IntArray
-    private var aClass356_5070 = Class356(128)
+    private var aHashtable_5070 = Hashtable(128)
     private val anIntArray5078: IntArray
     fun method1305(i: Byte, bool: Boolean): Int {
         anInt5071++
         if (i >= -124) method1308(-105, 89, -65, -52, 76.toByte(), 37, -61, 73)
         val l = method599(-79)
-        var class348_sub14 = (if (bool) aClass356_5070.method3484(0) as LongKeyNode? else aClass356_5070.method3482(0) as LongKeyNode?)
+        var class348_sub14 = (if (bool) aHashtable_5070.method3484(0) as LongKeyNode? else aHashtable_5070.method3482(0) as LongKeyNode?)
         while (class348_sub14 != null) {
             if (l > (class348_sub14.aLong6762 and 0x3fffffffffffffffL)) {
                 if ((0x4000000000000000L and class348_sub14.aLong6762) != 0L) {
@@ -28,7 +28,7 @@ class VarpStore : Interface17 {
                 }
                 class348_sub14.method2715(75.toByte())
             }
-            class348_sub14 = aClass356_5070.method3482(0) as LongKeyNode?
+            class348_sub14 = aHashtable_5070.method3482(0) as LongKeyNode?
         }
         return -1
     }
@@ -37,10 +37,10 @@ class VarpStore : Interface17 {
         if (i.toInt() == -78) {
             anInt5066++
             this.anIntArray5063[i_2_] = i_1_
-            var class348_sub14 = (aClass356_5070.method3480(i_2_.toLong(), -6008) as LongKeyNode?)
+            var class348_sub14 = (aHashtable_5070.method3480(i_2_.toLong(), -6008) as LongKeyNode?)
             if (class348_sub14 == null) {
                 class348_sub14 = LongKeyNode(500L + method599(-122))
-                aClass356_5070.method3483(73.toByte(), i_2_.toLong(), class348_sub14)
+                aHashtable_5070.method3483(73.toByte(), i_2_.toLong(), class348_sub14)
             } else class348_sub14.aLong6762 = method599(-88) - -500L
         }
     }
@@ -73,10 +73,10 @@ class VarpStore : Interface17 {
         anInt5073++
         if (i.toInt() != 42) anInt5065 = -16
         anIntArray5078[i_25_] = i_24_
-        var class348_sub14 = (aClass356_5070.method3480(i_25_.toLong(), i + -6050) as LongKeyNode?)
+        var class348_sub14 = (aHashtable_5070.method3480(i_25_.toLong(), i + -6050) as LongKeyNode?)
         if (class348_sub14 == null) {
             class348_sub14 = LongKeyNode(4611686018427387905L)
-            aClass356_5070.method3483(19.toByte(), i_25_.toLong(), class348_sub14)
+            aHashtable_5070.method3483(19.toByte(), i_25_.toLong(), class348_sub14)
         } else if (class348_sub14.aLong6762 != 4611686018427387905L) class348_sub14.aLong6762 = 0x4000000000000000L or 500L + method599(-108)
     }
 
@@ -91,7 +91,7 @@ class VarpStore : Interface17 {
             i_26_++
         }
         anInt5076++
-        aClass356_5070 = Class356(128)
+        aHashtable_5070 = Hashtable(128)
         val i_27_ = -69 % ((25 - i) / 39)
     }
 
@@ -209,7 +209,7 @@ class VarpStore : Interface17 {
             if (i != -65536) method1310(false)
             for (i_38_ in 0..<AbstractCameraTransform.anInt1597) {
                 val i_39_ = MinimapRectClipper.anIntArray224!![i_38_]
-                val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(i_39_.toLong(), -6008) as NpcReference).aNpc_6859)!!
+                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(i_39_.toLong(), -6008) as NpcReference).aNpc_6859)!!
                 var i_40_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if ((0x10 and i_40_) != 0) i_40_ += CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i xor 0xff00.inv()) shl 8
                 if ((0x2 and i_40_) != 0) {

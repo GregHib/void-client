@@ -7,19 +7,19 @@ import kotlin.math.sqrt
 * Visit http://jode.sourceforge.net/
 */
 class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
-    private val aClass356_2312: Class356
+    private val aHashtable_2312: Hashtable
     private var aLinkedNodeListIterator_2316: LinkedNodeListIterator? = LinkedNodeListIterator()
     private val anInt2324: Int
     private fun method1338(i: Int, interface14: Interface14) {
         anInt2321++
         val l = interface14.method52(117.toByte())
-        var class348_sub42_sub9 = aClass356_2312.method3480(l, -6008) as KeyedCacheEntryReference?
+        var class348_sub42_sub9 = aHashtable_2312.method3480(l, -6008) as KeyedCacheEntryReference?
         while (class348_sub42_sub9 != null) {
             if (class348_sub42_sub9.anInterface14_9559!!.method53(78, interface14)) {
                 method1342(class348_sub42_sub9, 79.toByte())
                 break
             }
-            class348_sub42_sub9 = aClass356_2312.method3476(true) as KeyedCacheEntryReference?
+            class348_sub42_sub9 = aHashtable_2312.method3476(true) as KeyedCacheEntryReference?
         }
     }
 
@@ -32,7 +32,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
     fun method1340(i: Int, interface14: Interface14): Any? {
         anInt2313++
         val l = interface14.method52(64.toByte())
-        var class348_sub42_sub9 = aClass356_2312.method3480(l, -6008) as KeyedCacheEntryReference?
+        var class348_sub42_sub9 = aHashtable_2312.method3480(l, -6008) as KeyedCacheEntryReference?
         while (class348_sub42_sub9 != null) {
             if (class348_sub42_sub9.anInterface14_9559!!.method53(94, interface14)) {
                 val `object` = class348_sub42_sub9.method3205(65536)
@@ -43,7 +43,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                 } else {
                     if (class348_sub42_sub9.method3206((-128).toByte())) {
                         val class348_sub42_sub9_sub1 = (HardKeyedCacheEntryReference(interface14, `object`, (class348_sub42_sub9.anInt9556)))
-                        aClass356_2312.method3483(125.toByte(), (class348_sub42_sub9.aLong4291), class348_sub42_sub9_sub1)
+                        aHashtable_2312.method3483(125.toByte(), (class348_sub42_sub9.aLong4291), class348_sub42_sub9_sub1)
                         aLinkedNodeListIterator_2316!!.method1005(true, class348_sub42_sub9_sub1)
                         class348_sub42_sub9_sub1.aLong7057 = 0L
                         class348_sub42_sub9.method2715(65.toByte())
@@ -55,7 +55,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                     return `object`
                 }
             }
-            class348_sub42_sub9 = aClass356_2312.method3476(true) as KeyedCacheEntryReference?
+            class348_sub42_sub9 = aHashtable_2312.method3476(true) as KeyedCacheEntryReference?
         }
         if (i < 66) return null
         return null
@@ -73,7 +73,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                     method1342(class348_sub42_sub9, 60.toByte())
                 }
                 val class348_sub42_sub9_sub1 = HardKeyedCacheEntryReference(interface14, `object`, i_0_)
-                aClass356_2312.method3483(120.toByte(), interface14.method52(120.toByte()), class348_sub42_sub9_sub1)
+                aHashtable_2312.method3483(120.toByte(), interface14.method52(120.toByte()), class348_sub42_sub9_sub1)
                 aLinkedNodeListIterator_2316!!.method1005(true, class348_sub42_sub9_sub1)
                 class348_sub42_sub9_sub1.aLong7057 = 0L
             }
@@ -109,7 +109,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
     fun method1345(i: Byte) {
         aLinkedNodeListIterator_2316!!.method1009(2110355138)
         anInt2325++
-        aClass356_2312.method3481(0)
+        aHashtable_2312.method3481(0)
         val i_3_ = 18 % ((i - -89) / 35)
         anInt2311 = anInt2324
     }
@@ -127,7 +127,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                     }
                 } else if (++class348_sub42_sub9.aLong7057 > i_4_.toLong()) {
                     val class348_sub42_sub9_5_ = MinimapDrawController.aParticleProcessor_1607!!.method2694(-1, class348_sub42_sub9)
-                    aClass356_2312.method3483(120.toByte(), (class348_sub42_sub9.aLong4291), class348_sub42_sub9_5_)
+                    aHashtable_2312.method3483(120.toByte(), (class348_sub42_sub9.aLong4291), class348_sub42_sub9_5_)
                     method573(class348_sub42_sub9_5_, class348_sub42_sub9, 63.toByte())
                     class348_sub42_sub9.method2715(70.toByte())
                     class348_sub42_sub9.method3162(true)
@@ -165,7 +165,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
         while (i_22_ + i_22_ < anInt2311) {
             i_22_ += i_22_
         }
-        aClass356_2312 = Class356(i_22_)
+        aHashtable_2312 = Hashtable(i_22_)
     }
 
     companion object {

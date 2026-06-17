@@ -136,7 +136,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
             Class8.anInt166 = 0
             Class73.anInt4776 = i
             SourceRowTextureNode.Companion.aNodeDeque_9111!!.method1996(125)
-            ContactEntry.aClass356_9603!!.method3481(0)
+            ContactEntry.aHashtable_9603!!.method3481(0)
             ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)
             Class5_Sub1.aBoolean8335 = false
         }

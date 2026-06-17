@@ -152,7 +152,7 @@ class InputStream_Sub2 : InputStream() {
                                 else class318_sub1_sub3_sub3 = (LocalPlayerState.aPlayer_1907)
                             } else {
                                 val i_68_ = i_58_ + -1
-                                val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_68_.toLong(), -6008) as? NpcReference?)
+                                val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_68_.toLong(), -6008) as? NpcReference?)
                                 if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aNpc_6859)
                             }
                             if (class318_sub1_sub3_sub3 != null) {
@@ -172,7 +172,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_72_ = Class90.regionTileY + i_71_
                     val i_73_ = BufferedMessageQueue.anInt3581 + (i_70_ shr 4 and 0x7)
                     val i_74_ = ArbVertexProgram.regionTileX + i_73_
-                    val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480((i_72_ shl 14 or (GradientLookupEffect.anInt9200 shl 28) or i_74_).toLong(), -6008)) as HashTableContainer?)
+                    val class348_sub37 = ((ModelBatchBase.aHashtable_1895!!.method3480((i_72_ shl 14 or (GradientLookupEffect.anInt9200 shl 28) or i_74_).toLong(), -6008)) as HashTableContainer?)
                     if (class348_sub37 != null) {
                         var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1995(4) as IntPair?)
                         while (class348_sub34 != null) {
@@ -218,8 +218,8 @@ class InputStream_Sub2 : InputStream() {
                         val i_94_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         val i_95_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
                         val i_96_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                        if (ModelBatchBase.aClass356_1895 != null) {
-                            val class348_sub37 = ((ModelBatchBase.aClass356_1895!!.method3480((i_93_ or ((GradientLookupEffect.anInt9200 shl 28) or (i_91_ shl 14))).toLong(), -6008)) as HashTableContainer?)
+                        if (ModelBatchBase.aHashtable_1895 != null) {
+                            val class348_sub37 = ((ModelBatchBase.aHashtable_1895!!.method3480((i_93_ or ((GradientLookupEffect.anInt9200 shl 28) or (i_91_ shl 14))).toLong(), -6008)) as HashTableContainer?)
                             if (class348_sub37 != null) {
                                 var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1995(4) as IntPair?)
                                 while (class348_sub34 != null) {

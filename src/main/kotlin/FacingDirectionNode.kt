@@ -35,7 +35,7 @@ class FacingDirectionNode internal constructor(@JvmField var aByteArray6657: Byt
                 if (class318_sub1_sub3_sub3.anInt10275 >= 32768) {
                     if ((class318_sub1_sub3_sub3.anInt10275) >= 32768) class318_sub1_sub3_sub3_0_ = (LoadingBarRenderer.aPlayerArray5058!![class318_sub1_sub3_sub3.anInt10275 + -32768])
                 } else {
-                    val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class318_sub1_sub3_sub3.anInt10275.toLong(), -6008)) as NpcReference?)
+                    val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class318_sub1_sub3_sub3.anInt10275.toLong(), -6008)) as NpcReference?)
                     if (class348_sub22 != null) class318_sub1_sub3_sub3_0_ = (class348_sub22.aNpc_6859)
                 }
                 if (class318_sub1_sub3_sub3_0_ != null) {

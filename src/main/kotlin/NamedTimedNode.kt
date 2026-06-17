@@ -62,11 +62,11 @@ class NamedTimedNode internal constructor(@JvmField var aString8783: String?, i:
         @JvmStatic
         fun method2516(i: Int, i_7_: Byte, i_8_: Int): TimedTileQueueEntry {
             anInt8788++
-            var class348_sub42_sub15 = (MinimapRenderer.aClass356_1585!!.method3480((i_8_.toLong() shl 32 or i.toLong()), i_7_.toInt() xor 0x171e.inv()) as TimedTileQueueEntry?)
+            var class348_sub42_sub15 = (MinimapRenderer.aHashtable_1585!!.method3480((i_8_.toLong() shl 32 or i.toLong()), i_7_.toInt() xor 0x171e.inv()) as TimedTileQueueEntry?)
             if (i_7_.toInt() != 105) aFloat8784 = 0.99212307f
             if (class348_sub42_sub15 == null) {
                 class348_sub42_sub15 = TimedTileQueueEntry(i_8_, i)
-                MinimapRenderer.aClass356_1585!!.method3483(91.toByte(), (class348_sub42_sub15.aLong4291), class348_sub42_sub15)
+                MinimapRenderer.aHashtable_1585!!.method3483(91.toByte(), (class348_sub42_sub15.aLong4291), class348_sub42_sub15)
             }
             return class348_sub42_sub15
         }

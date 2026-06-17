@@ -4,11 +4,11 @@ import CacheArchiveIndexLoader.Companion.method340
 * Visit http://jode.sourceforge.net/
 */
 class ParamMap : HashLinkedListNode() {
-    private var aClass356_9494: Class356? = null
+    private var aHashtable_9494: Hashtable? = null
     fun method3166(i: Int, i_0_: Int, i_1_: Byte): Int {
         anInt9490++
-        if (aClass356_9494 == null) return i_0_
-        val class348_sub35 = aClass356_9494!!.method3480(i.toLong(), -6008) as IntKeyNode?
+        if (aHashtable_9494 == null) return i_0_
+        val class348_sub35 = aHashtable_9494!!.method3480(i.toLong(), -6008) as IntKeyNode?
         if (i_1_ < 91) return 72
         if (class348_sub35 == null) return i_0_
         return class348_sub35.anInt6976
@@ -19,9 +19,9 @@ class ParamMap : HashLinkedListNode() {
             anInt9489++
             if (i == 249) {
                 val i_3_ = class348_sub49.readUnsignedByte(255)
-                if (aClass356_9494 == null) {
+                if (aHashtable_9494 == null) {
                     val i_4_ = method340(i_3_, 108.toByte())
-                    aClass356_9494 = Class356(i_4_)
+                    aHashtable_9494 = Hashtable(i_4_)
                 }
                 for (i_5_ in 0..<i_3_) {
                     val bool = class348_sub49.readUnsignedByte(i_2_ + 341) == 1
@@ -29,7 +29,7 @@ class ParamMap : HashLinkedListNode() {
                     val linkedListNode: LinkedListNode?
                     if (bool) linkedListNode = StringCacheNode(class348_sub49.readString((-39).toByte()))
                     else linkedListNode = IntKeyNode(class348_sub49.readInt((-126).toByte()))
-                    aClass356_9494!!.method3483(29.toByte(), i_6_.toLong(), linkedListNode)
+                    aHashtable_9494!!.method3483(29.toByte(), i_6_.toLong(), linkedListNode)
                 }
             }
         }
@@ -47,9 +47,9 @@ class ParamMap : HashLinkedListNode() {
 
     fun method3170(i: Int, string: String?, i_9_: Int): String? {
         anInt9493++
-        if (aClass356_9494 == null) return string
+        if (aHashtable_9494 == null) return string
         if (i != -250) method3165(0.toByte())
-        val class348_sub50 = aClass356_9494!!.method3480(i_9_.toLong(), -6008) as StringCacheNode?
+        val class348_sub50 = aHashtable_9494!!.method3480(i_9_.toLong(), -6008) as StringCacheNode?
         if (class348_sub50 == null) return string
         return class348_sub50.aString7211
     }

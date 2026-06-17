@@ -8,7 +8,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
     private val aHoverActionEntry_6927: HoverActionEntry?
     private var aFloatArrayArray6928: Array<FloatArray?>?
     private val aS_Sub2_6929: OpenGlTerrainTile?
-    private var aClass356_6932: Class356? = null
+    private var aHashtable_6932: Hashtable? = null
     private var anInt6934 = 0
     private val anInt6935: Int
     private var aClass348_Sub49_6936: Buffer? = null
@@ -33,14 +33,14 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
         val i_8_ = aS_Sub2_6929.method3986(i_6_, i_7_, (-17).toByte())
         if ((i_3_ and 0x7f) == 0 || (i and 0x7f) == 0) {
             l = (i_7_.toLong() shl 16 and (65535L shl 16) or (0xffffL and i_6_.toLong()))
-            val class348 = aClass356_6932!!.method3480(l, -6008)
+            val class348 = aHashtable_6932!!.method3480(l, -6008)
             if (class348 != null) {
                 method3022((-46).toByte(), ((class348 as ShortKeyNode).aShort6911))
                 return
             }
         }
         val i_9_ = (anInt6940++).toShort()
-        if (l != -1L) aClass356_6932!!.method3483(107.toByte(), l, ShortKeyNode(i_9_))
+        if (l != -1L) aHashtable_6932!!.method3483(107.toByte(), l, ShortKeyNode(i_9_))
         val f: Float
         val f_10_: Float
         val f_11_: Float
@@ -209,7 +209,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
             if (anInt6934 > 0) {
                 aClass348_Sub49_6936 = Buffer(anInt6934 * 2)
                 aClass348_Sub49_Sub1_6953 = FloatBuffer(anInt6934 * 16)
-                aClass356_6932 = Class356(method340(anInt6934, 108.toByte()))
+                aHashtable_6932 = Hashtable(method340(anInt6934, 108.toByte()))
                 var i_56_ = 0
                 i_50_ = 0
                 var i_57_ = anInt6948
@@ -277,7 +277,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
             aFloatArrayArray6947 = aFloatArrayArray6928
             aFloatArrayArray6949 = aFloatArrayArray6947
             aClass348_Sub49_6936 = null
-            aClass356_6932 = null
+            aHashtable_6932 = null
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.Companion.method2929(runtimeexception, ("qw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }

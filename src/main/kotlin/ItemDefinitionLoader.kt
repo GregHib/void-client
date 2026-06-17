@@ -109,10 +109,10 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
 
         fun method1288(i: Int, i_2_: Int) {
             anInt2186++
-            var class348 = TextureDefinitionCache.aClass356_2959!!.method3484(0)
+            var class348 = TextureDefinitionCache.aHashtable_2959!!.method3484(0)
             while (class348 != null) {
                 if ((class348.aLong4291 shr 48 and 0xffffL) == i_2_.toLong()) class348.method2715(119.toByte())
-                class348 = TextureDefinitionCache.aClass356_2959!!.method3482(0)
+                class348 = TextureDefinitionCache.aHashtable_2959!!.method3482(0)
             }
         }
 

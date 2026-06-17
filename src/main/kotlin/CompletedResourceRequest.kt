@@ -35,7 +35,7 @@ class CompletedResourceRequest : AsyncResourceRequest() {
         @JvmField
         var anInt10464: Int = 0
         @JvmField
-        var aClass356_10465: Class356? = Class356(16)
+        var aHashtable_10465: Hashtable? = Hashtable(16)
 
         @JvmStatic
         fun method3263(bool: Boolean): Boolean {
@@ -46,7 +46,7 @@ class CompletedResourceRequest : AsyncResourceRequest() {
 
         @JvmStatic
         fun method3264(i: Byte) {
-            aClass356_10465 = null
+            aHashtable_10465 = null
             if (i.toInt() != -24) method3265(-70, null, null)
         }
 

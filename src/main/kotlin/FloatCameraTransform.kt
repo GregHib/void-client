@@ -737,14 +737,14 @@ class FloatCameraTransform : AbstractCameraTransform() {
                             class348_sub9 = (Client.aNodeDeque_5185!!.method1990(69.toByte()) as? CharacterRenderState)
                         }
                     }
-                    var class348_sub9 = CompletedResourceRequest.aClass356_10465!!.method3484(0) as? CharacterRenderState
+                    var class348_sub9 = CompletedResourceRequest.aHashtable_10465!!.method3484(0) as? CharacterRenderState
                     while (class348_sub9 != null) {
                         if ((class348_sub9!!.aClass348_Sub16_Sub5_6676) != null) {
                             SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9!!.aClass348_Sub16_Sub5_6676!!)
                             class348_sub9!!.aClass348_Sub16_Sub5_6676 = null
                         }
                         class348_sub9!!.method2715(112.toByte())
-                        class348_sub9 = CompletedResourceRequest.aClass356_10465!!.method3482(0) as? CharacterRenderState
+                        class348_sub9 = CompletedResourceRequest.aHashtable_10465!!.method3482(0) as? CharacterRenderState
                     }
                 }
             }

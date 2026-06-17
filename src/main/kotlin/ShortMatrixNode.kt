@@ -30,7 +30,7 @@ class ShortMatrixNode internal constructor(var aShortArrayArray9518: Array<Short
                         if (class46.anInt774 == 0) {
                             method3180(class46.anInt830, class46s, 24235)
                             if (class46.aClass46Array798 != null) Companion.method3180(class46.anInt830, class46.aClass46Array798!!, i_0_)
-                            val class348_sub41 = ((MinimapSpriteRenderer.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
+                            val class348_sub41 = ((MinimapSpriteRenderer.aHashtable_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
                             if (class348_sub41 != null) method769(class348_sub41.anInt7050, 116.toByte())
                         }
                         if (class46.anInt774 == 6 && class46.anInt699 != -1) {

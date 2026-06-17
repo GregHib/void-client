@@ -46,7 +46,7 @@ class LocalizedTextTriple internal constructor(string: String?, string_4_: Strin
         fun method2221(player: Player, i: Int) {
             anInt3752++
             if (i != -28482) aClass348_Sub42_Sub17Array3753 = null
-            val class348_sub9 = ((CompletedResourceRequest.aClass356_10465!!.method3480(player.anInt10290.toLong(), -6008)) as CharacterRenderState?)
+            val class348_sub9 = ((CompletedResourceRequest.aHashtable_10465!!.method3480(player.anInt10290.toLong(), -6008)) as CharacterRenderState?)
             if (class348_sub9 != null) {
                 if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
                     SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)

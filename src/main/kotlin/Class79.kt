@@ -79,7 +79,7 @@ class Class79 {
     var anInt1383: Int
     var aByte1384: Byte
     var anInt1385: Int
-    private var aClass356_1386: Class356? = null
+    private var aHashtable_1386: Hashtable? = null
     private var anIntArrayArray1388: Array<IntArray?>? = null
     @JvmField
     var anInt1390: Int
@@ -270,9 +270,9 @@ class Class79 {
                                                                                     } else if (i != 165) {
                                                                                         if (i == 249) {
                                                                                             val i_17_ = class348_sub49.readUnsignedByte(255)
-                                                                                            if (aClass356_1386 == null) {
+                                                                                            if (aHashtable_1386 == null) {
                                                                                                 val i_18_ = method340(i_17_, 108.toByte())
-                                                                                                aClass356_1386 = Class356(i_18_)
+                                                                                                aHashtable_1386 = Hashtable(i_18_)
                                                                                             }
                                                                                             var i_19_ = 0
                                                                                             while (i_17_ > i_19_) {
@@ -281,7 +281,7 @@ class Class79 {
                                                                                                 val linkedListNode: LinkedListNode?
                                                                                                 if (!bool) linkedListNode = IntKeyNode(class348_sub49.readInt((-126).toByte()))
                                                                                                 else linkedListNode = StringCacheNode(class348_sub49.readString((-120).toByte()))
-                                                                                                aClass356_1386!!.method3483(61.toByte(), i_20_.toLong(), linkedListNode)
+                                                                                                aHashtable_1386!!.method3483(61.toByte(), i_20_.toLong(), linkedListNode)
                                                                                                 i_19_++
                                                                                             }
                                                                                         }
@@ -620,9 +620,9 @@ class Class79 {
 
     fun method801(i: Byte, i_92_: Int, string: String?): String? {
         anInt1378++
-        if (aClass356_1386 == null) return string
+        if (aHashtable_1386 == null) return string
         if (i.toInt() != 17) method801((-115).toByte(), -68, null)
-        val class348_sub50 = (aClass356_1386!!.method3480(i_92_.toLong(), i + -6025) as StringCacheNode?)
+        val class348_sub50 = (aHashtable_1386!!.method3480(i_92_.toLong(), i + -6025) as StringCacheNode?)
         if (class348_sub50 == null) return string
         return class348_sub50.aString7211
     }
@@ -705,9 +705,9 @@ class Class79 {
 
     fun method805(i: Int, i_106_: Int, i_107_: Int): Int {
         anInt1326++
-        if (aClass356_1386 == null) return i
+        if (aHashtable_1386 == null) return i
         if (i_107_ <= 12) method805(46, 116, 126)
-        val class348_sub35 = aClass356_1386!!.method3480(i_106_.toLong(), -6008) as IntKeyNode?
+        val class348_sub35 = aHashtable_1386!!.method3480(i_106_.toLong(), -6008) as IntKeyNode?
         if (class348_sub35 == null) return i
         return class348_sub35.anInt6976
     }

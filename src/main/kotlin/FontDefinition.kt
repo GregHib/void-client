@@ -396,7 +396,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
         fun method1189(i: Int, i_41_: Int) {
             anInt1991++
             if (i != -1) aFontMetaRef_1987 = null
-            val class348_sub15 = (ProjectileConfigUtil.aClass356_389!!.method3480(i_41_.toLong(), -6008) as? MenuActionNode?)
+            val class348_sub15 = (ProjectileConfigUtil.aHashtable_389!!.method3480(i_41_.toLong(), -6008) as? MenuActionNode?)
             if (class348_sub15 != null) {
                 class348_sub15.aBoolean6781 = !class348_sub15.aBoolean6781
                 class348_sub15.aClass55_Sub1_6768!!.method514(116.toByte(), class348_sub15.aBoolean6781)

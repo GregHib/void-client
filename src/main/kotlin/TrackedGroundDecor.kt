@@ -143,7 +143,7 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
                     else class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_9_])
                 } else {
                     val i_10_ = -1 + anInt10387
-                    val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_10_.toLong(), -6008) as NpcReference?)
+                    val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_10_.toLong(), -6008) as NpcReference?)
                     if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aNpc_6859)
                 }
                 if (class318_sub1_sub3_sub3 != null) {

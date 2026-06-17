@@ -11,7 +11,7 @@ object ProjectileConfigUtil {
     @JvmField
     var anInt388: Int = 0
     @JvmField
-    var aClass356_389: Class356? = Class356(4)
+    var aHashtable_389: Hashtable? = Hashtable(4)
     @JvmField
     var anInt390: Int = 0
     @JvmField
@@ -99,7 +99,7 @@ object ProjectileConfigUtil {
 
     @JvmStatic
     fun method316(i: Byte) {
-        aClass356_389 = null
+        aHashtable_389 = null
         aFontMetaRef_398 = null
         aTileRenderState_399 = null
         if (i.toInt() != -94) method313(98L, -24)

@@ -149,16 +149,16 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             itemDefinition.aStringArray2763 = aStringArray3293
             itemDefinition.aBoolean2755 = false
             itemDefinition.anIntArray2772 = null
-            if (itemDefinition.aClass356_2757 != null) {
+            if (itemDefinition.aHashtable_2757 != null) {
                 var bool = false
-                var class348 = itemDefinition.aClass356_2757!!.method3484(0)
+                var class348 = itemDefinition.aHashtable_2757!!.method3484(0)
                 while (class348 != null) {
                     val class254 = aEmoteDefCache_3292!!.method2600(class348.aLong4291.toInt(), 28364)
                     if (class254.aBoolean3261) class348.method2715(60.toByte())
                     else bool = true
-                    class348 = itemDefinition.aClass356_2757!!.method3482(0)
+                    class348 = itemDefinition.aHashtable_2757!!.method3482(0)
                 }
-                if (!bool) itemDefinition.aClass356_2757 = null
+                if (!bool) itemDefinition.aHashtable_2757 = null
             }
         }
         synchronized(aClass60_3278) {

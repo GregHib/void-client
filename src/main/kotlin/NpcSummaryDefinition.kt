@@ -30,7 +30,7 @@ class NpcSummaryDefinition {
                 ModelDefinitionLoader.anInt2057 = 0
                 for (i_2_ in 0..<i_0_) {
                     val i_3_ = Class74.anIntArray1233!![i_2_]
-                    val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as NpcReference).aNpc_6859)!!
+                    val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(i_3_.toLong(), -6008) as NpcReference).aNpc_6859)!!
                     val i_4_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                     if (i_4_ == 0) {
                         Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_3_

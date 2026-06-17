@@ -12,7 +12,7 @@ class LocTypeDefinition {
     private lateinit var anIntArrayArray4002: Array<IntArray?>
     private lateinit var anIntArray4003: IntArray
     private lateinit var anIntArray4004: IntArray
-    private var aClass356_4006: Class356? = null
+    private var aHashtable_4006: Hashtable? = null
     private lateinit var anIntArray4007: IntArray
     private lateinit var anIntArray4008: IntArray
     private lateinit var anIntArray4009: IntArray
@@ -108,9 +108,9 @@ class LocTypeDefinition {
                                 }
                             } else if (i == 249) {
                                 val i_9_ = class348_sub49.readUnsignedByte(255)
-                                if (aClass356_4006 == null) {
+                                if (aHashtable_4006 == null) {
                                     val i_10_ = (method340(i_9_, 108.toByte()))
-                                    aClass356_4006 = Class356(i_10_)
+                                    aHashtable_4006 = Hashtable(i_10_)
                                 }
                                 var i_11_ = 0
                                 while (i_9_ > i_11_) {
@@ -119,7 +119,7 @@ class LocTypeDefinition {
                                     val linkedListNode: LinkedListNode?
                                     if (!bool) linkedListNode = (IntKeyNode(class348_sub49.readInt((-126).toByte())))
                                     else linkedListNode = (StringCacheNode(class348_sub49.readString((-98).toByte())))
-                                    aClass356_4006!!.method3483(123.toByte(), i_12_.toLong(), linkedListNode)
+                                    aHashtable_4006!!.method3483(123.toByte(), i_12_.toLong(), linkedListNode)
                                     i_11_++
                                 }
                             }

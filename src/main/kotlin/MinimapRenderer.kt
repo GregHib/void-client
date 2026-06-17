@@ -84,7 +84,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         @JvmField
         var anIntArray1583: IntArray? = IntArray(14)
         @JvmField
-        var aClass356_1585: Class356? = Class356(16)
+        var aHashtable_1585: Hashtable? = Hashtable(16)
         @JvmField
         var anInt1587: Int = 0
         @JvmField
@@ -94,7 +94,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         var aBoxedIntHolder_1591: BoxedIntHolder? = BoxedIntHolder(1)
         @JvmStatic
         fun method886(i: Int) {
-            aClass356_1585 = null
+            aHashtable_1585 = null
             aClass78Array1579 = null
             if (i != 16) aClass78Array1579 = null
             anIntArray1583 = null

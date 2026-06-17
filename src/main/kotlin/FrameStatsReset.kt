@@ -418,7 +418,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5481 = 0
             LocalPlayerState.anInt1908 = 0
             Client.anInt5180 = 0
-            Class356.anInt4387 = 0
+            Hashtable.anInt4387 = 0
             SceneObjectEntity.anInt8738 = 0
             NativeIndexBuffer.anInt4705 = 0
             DynamicSceneObjectEntity.anInt10188 = 0
@@ -869,7 +869,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CharCodeMap.anInt9581 = 0
             OpenGlRenderer.anInt7592 = 0
             KaraokeSubtitleStream.anInt9063 = 0
-            Class356.anInt4382 = 0
+            Hashtable.anInt4382 = 0
             AbstractCameraTransform.anInt1595 = 0
             NativeRenderer.anInt8076 = 0
             ModelHeaderCache.anInt3281 = 0
@@ -2454,7 +2454,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Buffer.anInt7147 = 0
             DisplaceTextureNode.anInt9131 = 0
             WaterDetailOptionState.anInt5983 = 0
-            Class356.anInt4381 = 0
+            Hashtable.anInt4381 = 0
             Class368.anInt4486 = 0
             OpenGlRenderer.anInt7671 = 0
             GameAppletFrame.anInt16 = 0
@@ -2971,7 +2971,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7528 = 0
             NativeRenderer.anInt8067 = 0
             BufferedOutputStreamWorker.anInt2714 = 0
-            Class356.anInt4380 = 0
+            Hashtable.anInt4380 = 0
             ModelHeaderCache.anInt3277 = 0
             SceneObjectAnimator.anInt3080 = 0
             SeqDefinitionCache.anInt3356 = 0
@@ -3027,7 +3027,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ModelGroundDecor.anInt10033 = 0
             OpenGlRenderer.anInt7558 = 0
             FlipTextureNode.anInt9142 = 0
-            Class356.anInt4384 = 0
+            Hashtable.anInt4384 = 0
             VideoStreamDecoder.anInt4119 = 0
             ConfigFlagUtil.anInt3233 = 0
             GameAppletFrame.anInt9 = 0
@@ -3044,7 +3044,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RegionSceneLoader.anInt3703 = 0
             ProjectedGroundDecor.anInt10205 = 0
             SceneryDetailOptionState.anInt6085 = 0
-            Class356.anInt4375 = 0
+            Hashtable.anInt4375 = 0
             Npc.anInt10498 = 0
             RangedGraphicsOptionState.anInt5944 = 0
             ModelHeaderCache.anInt3272 = 0
@@ -3381,7 +3381,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             AbstractBloomEffect.anInt6623 = 0
             TileRenderState.anInt4230 = 0
             Class377.anInt9878 = 0
-            Class356.anInt4378 = 0
+            Hashtable.anInt4378 = 0
             LightDetailOptionState.anInt6037 = 0
             PcmStreamBuffer.anInt8880 = 0
             TextureQualityOptionState.anInt6000 = 0
@@ -3675,7 +3675,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FlickeringEffectsOptionState.anInt5915 = 0
             SequencedGroundDecor.anInt10050 = 0
             Class64_Sub2.anInt5471 = 0
-            Class356.anInt4379 = 0
+            Hashtable.anInt4379 = 0
             PixelBlender.anInt3810 = 0
             TheoraVideoStream.anInt9012 = 0
             BrightnessOptionState.anInt5903 = 0
@@ -3753,7 +3753,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FrameBufferObject.anInt4866 = 0
             WaterDetailOptionState.anInt5986 = 0
             BoxBlurTextureNode.anInt9462 = 0
-            Class356.anInt4386 = 0
+            Hashtable.anInt4386 = 0
             LoadingScreenImageNode.anInt9506 = 0
             ResourceLoaderThread.anInt3903 = 0
             AntialiasOptionState.anInt6083 = 0
@@ -3873,7 +3873,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class55_Sub1.anInt5273 = 0
             OpenGlRenderer.anInt7676 = 0
             DisplayModeOptionState.anInt6109 = 0
-            Class356.anInt4376 = 0
+            Hashtable.anInt4376 = 0
             GlVertexBufferArb.anInt8484 = 0
             LinkedNodeListIterator.anInt1646 = 0
             ImageFrameCache.anInt4030 = 0
@@ -4121,11 +4121,11 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
 
             ModelDefinitionLoader.anInt2057 = 0
             TerrainShadowBuilderGl2.anInt6930 = 0
-            NpcEntityUpdater.aClass356_3654!!.method3481(0)
+            NpcEntityUpdater.aHashtable_3654!!.method3481(0)
             SpriteTextureNode.aNodeDeque_9240!!.method1996(112)
             OpenGlRenderNode.aNodeDeque_10492!!.method1996(109)
             NpcDefinition.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
-            aClass356_1895!!.method3481(0)
+            aHashtable_1895!!.method3481(0)
             SpriteRenderEntry.aNodeDeque_9711 = NodeDeque()
             ProjectedGroundDecor.aVarpStore_10209!!.method1314(74.toByte())
             CalendarUtil.method2636(i + 69)
@@ -4142,18 +4142,18 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             for (l in Class77.anIntArray1303!!.indices) if (!GlslEnvMaterialPass.aBooleanArray6270!![l]) Class77.anIntArray1303!![l] = -1
 
             if (RenderNode.anInt9721 != -1) GlTextureBase.method235(RenderNode.anInt9721, (-105).toByte())
-            var class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as RegionSceneShifter?
+            var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
             while (class348_sub41 != null) {
                 if (!class348_sub41.method2712(4.toByte())) {
-                    class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as RegionSceneShifter?
+                    class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
                     if (class348_sub41 == null) break
                 }
                 method1118(true, false, class348_sub41, 2533)
-                class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as RegionSceneShifter?
+                class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?
             }
 
             RenderNode.anInt9721 = -1
-            MinimapSpriteRenderer.aClass356_4915 = Class356(8)
+            MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
             method882(11.toByte())
             Class49.aClass46_4730 = null
             for (i1 in 0..7) {

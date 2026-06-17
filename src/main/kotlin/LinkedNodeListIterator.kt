@@ -119,17 +119,17 @@ class LinkedNodeListIterator {
             anInt1655++
             if (bool) {
                 if (RenderNode.anInt9721 != -1) method235(RenderNode.anInt9721, ((-108).toByte()).toByte())
-                var class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as? RegionSceneShifter
+                var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as? RegionSceneShifter
                 while (class348_sub41 != null) {
                     if (!class348_sub41.method2712(4.toByte())) {
-                        class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as? RegionSceneShifter)
+                        class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as? RegionSceneShifter)
                         if (class348_sub41 == null) break
                     }
                     ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
-                    class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as? RegionSceneShifter)
+                    class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as? RegionSceneShifter)
                 }
                 RenderNode.anInt9721 = -1
-                MinimapSpriteRenderer.aClass356_4915 = Class356(8)
+                MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
                 method882(11.toByte())
                 RenderNode.anInt9721 = Class54.anInt970
                 method1713(false, 520)
@@ -191,7 +191,7 @@ class LinkedNodeListIterator {
                             method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, ((-113).toByte()).toByte(), i_16_, var_renderer)
                             i_14_++
                         }
-                        var class348_sub37 = ModelBatchBase.aClass356_1895!!.method3484(i_2_ xor 0x59b0) as? HashTableContainer
+                        var class348_sub37 = ModelBatchBase.aHashtable_1895!!.method3484(i_2_ xor 0x59b0) as? HashTableContainer
                         while (class348_sub37 != null) {
                             val i_17_ = (0x3L and ((class348_sub37.aLong4291) shr 28)).toInt()
                             if (CameraOrModelTransform.anInt4155 == i_17_) {
@@ -201,11 +201,11 @@ class LinkedNodeListIterator {
                                 val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)
                                 HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![0]), i, class46, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
                             }
-                            class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3482(0) as? HashTableContainer)
+                            class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3482(0) as? HashTableContainer)
                         }
                         var i_22_ = 0
                         while ((i_22_ < ModelDefinitionLoader.anInt2057)) {
-                            val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_22_].toLong(), -6008)) as? NpcReference)
+                            val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_22_].toLong(), -6008)) as? NpcReference)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (LocalPlayerState.aPlayer_1907!!.plane))) {
@@ -263,7 +263,7 @@ class LinkedNodeListIterator {
                             val class302 = class302s[i_33_]
                             if (class302 != null && (class302.anInt3840 != 0) && Class367_Sub11.anInt7396 % 20 < 10) {
                                 if (class302.anInt3840 == 1) {
-                                    val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? NpcReference)
+                                    val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? NpcReference)
                                     if (class348_sub22 != null) {
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         val i_34_ = (-(i_4_ / 128) + (npc.x) / 128)

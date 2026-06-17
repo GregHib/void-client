@@ -39,7 +39,7 @@ class StreamingResourceRequest : AsyncResourceRequest() {
         var anInt10455: Int = 0
         @JvmStatic
         fun method3260(i: Int) {
-            var class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3484(0) as? MenuActionNode?
+            var class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3484(0) as? MenuActionNode?
             while (class348_sub15 != null) {
                 if (class348_sub15.aClass55_Sub1_6768!!.method510((-125).toByte())) Class64_Sub3.method690(70.toByte(), (class348_sub15.anInt6773))
                 else {
@@ -62,7 +62,7 @@ class StreamingResourceRequest : AsyncResourceRequest() {
                         }
                     }
                 }
-                class348_sub15 = ProjectileConfigUtil.aClass356_389!!.method3482(0) as? MenuActionNode?
+                class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3482(0) as? MenuActionNode?
             }
             val i_0_ = 48 % ((-17 - i) / 63)
             anInt10448++

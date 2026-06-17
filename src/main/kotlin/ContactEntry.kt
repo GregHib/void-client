@@ -46,7 +46,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
         var anInt9594: Int = 0
         var anInt9596: Int = 0
         var anInt9598: Int = 0
-        var aClass356_9603: Class356?
+        var aHashtable_9603: Hashtable?
         @JvmField
         var anInt9604: Int = 0
         var anInt9606: Int = 0
@@ -56,7 +56,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
         fun method3228(i: Int) {
             anIntArray9612 = null
             val i_0_ = 29 / ((31 - i) / 43)
-            aClass356_9603 = null
+            aHashtable_9603 = null
         }
 
         @JvmStatic
@@ -115,7 +115,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
         }
 
         init {
-            aClass356_9603 = Class356(16)
+            aHashtable_9603 = Hashtable(16)
             anIntArray9612 = IntArray(8)
         }
     }

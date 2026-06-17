@@ -38,15 +38,15 @@ class TextureDefinitionCache internal constructor(i: Int, class45: Class45?, cla
 
     companion object {
         @JvmField
-        var aClass356_2959: Class356? = Class356(512)
+        var aHashtable_2959: Hashtable? = Hashtable(512)
         var anInt2962: Int = 0
         var anInt2963: Int = 0
         @JvmField
         var anInt2964: Int = 64
         @JvmStatic
         fun method1624(i: Int) {
-            aClass356_2959 = null
-            if (i != 28962) aClass356_2959 = null
+            aHashtable_2959 = null
+            if (i != 28962) aHashtable_2959 = null
         }
 
         @JvmStatic

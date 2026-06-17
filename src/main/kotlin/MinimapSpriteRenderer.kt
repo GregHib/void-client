@@ -52,7 +52,7 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
 
     companion object {
         @JvmField
-        var aClass356_4915: Class356?
+        var aHashtable_4915: Hashtable?
         @JvmField
         var anInt4916: Int = 0
         var anInt4919: Int = 0
@@ -69,7 +69,7 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
         fun method1109(i: Byte) {
             aSystemFontGlyphs_4921 = null
             if (i.toInt() != -22) method1111(127, -73, -7, -77, -85, 79)
-            aClass356_4915 = null
+            aHashtable_4915 = null
         }
 
         fun method1110(i: Int, i_0_: Int, i_1_: Int, i_2_: Byte, i_3_: Int): Boolean {
@@ -98,7 +98,7 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
         }
 
         init {
-            aClass356_4915 = Class356(8)
+            aHashtable_4915 = Hashtable(8)
         }
     }
 }

@@ -31,7 +31,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         @JvmField
         var anInt8678: Int = 0
         @JvmField
-        var aClass356_8679: Class356? = Class356(16)
+        var aHashtable_8679: Hashtable? = Hashtable(16)
         @JvmField
         var anInt8680: Int = 0
         @JvmField
@@ -78,13 +78,13 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             if (i < 51) method570(-85)
             aIntRange_8683 = null
             anIntArray8684 = null
-            aClass356_8679 = null
+            aHashtable_8679 = null
         }
 
         @JvmStatic
         fun method572(string: String, i: Int): String {
             anInt8677++
-            if (i != 23034) aClass356_8679 = null
+            if (i != 23034) aHashtable_8679 = null
             val i_11_ = string.length
             var i_12_ = 0
             var i_13_ = 0
