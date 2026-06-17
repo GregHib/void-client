@@ -130,7 +130,7 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
                 i_41_ = i_41_ and 0xfff
                 if (i_45_ >= i_43_) i_45_ = 0
                 val i_46_ = aByteArray9152[0xff and i_45_].toInt() and 0xff
-                val i_47_ = Class199.anIntArray2631!![i_41_]
+                val i_47_ = LoadingScreenState.anIntArray2631!![i_41_]
                 val i_48_ = aByteArray9152[0xff and i_44_].toInt() and 0xff
                 if (this.aBoolean9160) {
                     var i_52_ = 0
@@ -161,7 +161,7 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
                     i_12_ = i_12_ and 0xfff
                     val i_17_ = aByteArray9152[0xff and i_16_].toInt() and 0xff
                     val i_18_ = aByteArray9152[0xff and i_15_].toInt() and 0xff
-                    val i_19_ = Class199.anIntArray2631!![i_12_]
+                    val i_19_ = LoadingScreenState.anIntArray2631!![i_12_]
                     var i_20_ = 0
                     while (Class348_Sub40_Sub6.Companion.anInt9139 > i_20_) {
                         val i_21_ = (Class318_Sub6.anIntArray6432!![i_20_] * this.anInt9158)
@@ -183,7 +183,7 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
                         i_25_ = i_25_ and 0xfff
                         if (i_29_ >= i_27_) i_29_ = 0
                         val i_30_ = aByteArray9152[i_28_ and 0xff].toInt() and 0xff
-                        val i_31_ = Class199.anIntArray2631!![i_25_]
+                        val i_31_ = LoadingScreenState.anIntArray2631!![i_25_]
                         val i_32_ = 0xff and aByteArray9152[i_29_ and 0xff].toInt()
                         if (this.aBoolean9160 && (this.anInt9150 - 1 == i_23_)) {
                             var i_33_ = 0
@@ -222,7 +222,7 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
         val i_62_ = -4096 + i_57_
         val i_63_ = i_55_ + -4096
         var i_64_ = 0x3 and aByteArray9152[i_59_ + i_60_].toInt()
-        val i_65_ = Class199.anIntArray2631!![i_57_]
+        val i_65_ = LoadingScreenState.anIntArray2631!![i_57_]
         var i_66_: Int
         if (i_64_ > 1) i_66_ = if (i_64_ == 2) i_57_ - i_55_ else -i_55_ + -i_57_
         else i_66_ = if (i_64_ != 0) i_55_ - i_57_ else i_57_ + i_55_

@@ -1,7 +1,10 @@
 import java.awt.Color
 import java.awt.Font
 
-class Class199 internal constructor(private val aBoolean2629: Boolean, private val anInt2635: Int, private var anInt2626: Int, private val aBoolean2625: Boolean) {
+/*
+ * Class199
+ */
+class LoadingScreenState internal constructor(private val aBoolean2629: Boolean, private val anInt2635: Int, private var anInt2626: Int, private val aBoolean2625: Boolean) {
     fun method1456(i: Byte): Boolean {
         if (i < 49) return true
         anInt2634++

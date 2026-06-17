@@ -151,7 +151,7 @@ class Class239_Sub3 : Class239 {
                 if (i == -1) return null
                 if (Class348_Sub1.anIntArray6547 != null) {
                     for (i_26_ in Class348_Sub1.anIntArray6547!!.indices) {
-                        if (Class348_Sub1.anIntArray6547!![i_26_] == i) return Class199.aClass352Array2636!![i_26_]
+                        if (Class348_Sub1.anIntArray6547!![i_26_] == i) return LoadingScreenState.aClass352Array2636!![i_26_]
                     }
                 }
                 var class352 = Class332.aClass60_4139!!.method583(i.toLong(), -92) as? Class352?

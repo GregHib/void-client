@@ -2961,7 +2961,7 @@ object Class66 {
                 Class251.method1916(-9343, class46)
                 if (class46.anInt704 == -1) {
                     method1787(class46.anInt830, 8)
-                    Class199.method1459(class46.anInt830, 2)
+                    LoadingScreenState.method1459(class46.anInt830, 2)
                 }
                 return
             }
@@ -3116,7 +3116,7 @@ object Class66 {
                 if (class46!!.anInt704 == -1) {
                     Class73.Companion.method743(9, class46.anInt830)
                     method1787(class46.anInt830, 8)
-                    Class199.method1459(class46.anInt830, 2)
+                    LoadingScreenState.method1459(class46.anInt830, 2)
                 }
                 if (i_279_ == -1) {
                     class46.anInt770 = 1

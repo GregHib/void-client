@@ -294,7 +294,7 @@ class Class38 {
                     i = (class318_sub1.x shr Class362.anInt4459)
                     i_12_ = (class318_sub1.y shr Class362.anInt4459)
                 }
-                Class9.aRenderer171!!.EA((Class348_Sub1_Sub1.aTerrainTileArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), Class199.method1457(i, i_12_))
+                Class9.aRenderer171!!.EA((Class348_Sub1_Sub1.aTerrainTileArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), LoadingScreenState.method1457(i, i_12_))
             }
             val class318_sub4 = class318_sub1.method2386(1, Class9.aRenderer171)
             if (class318_sub4 != null) {

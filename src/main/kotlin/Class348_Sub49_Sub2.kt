@@ -104,7 +104,7 @@ class Class348_Sub49_Sub2 internal constructor(i: Int) : Class348_Sub49(i) {
         fun method3405(i: Int, bool: Boolean): Int {
             anInt9765++
             if (Class348_Sub1.anIntArray6547 == null) return 0
-            if (!bool && Class199.aClass352Array2636 != null) return Class348_Sub1.anIntArray6547!!.size * 2
+            if (!bool && LoadingScreenState.aClass352Array2636 != null) return Class348_Sub1.anIntArray6547!!.size * 2
             var i_1_ = 0
             if (i != 2012104999) method3405(118, false)
             var i_2_ = 0

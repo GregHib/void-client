@@ -8,7 +8,7 @@ class Class348_Sub51 : Class348 {
     @JvmField
     var aClass239_Sub20_7216: Class239_Sub20? = null
     var aClass239_Sub4_7220: Class239_Sub4? = null
-    private var aClass199_7221: Class199? = null
+    private var aLoadingScreenState_7221: LoadingScreenState? = null
     var aClass239_Sub3_7222: Class239_Sub3? = null
     var aClass239_Sub15_7224: Class239_Sub15? = null
     var aClass239_Sub6_7226: Class239_Sub6? = null
@@ -243,14 +243,14 @@ class Class348_Sub51 : Class348 {
     fun method3425(i: Int): Boolean {
         if (i > -61) method3424(21, null)
         anInt7217++
-        return this.aClass239_Sub25_7271!!.method1830((-120).toByte()) && (this.aClass239_Sub25_7271!!.method1829(-32350) == 0) && aClass199_7221!!.method1458(-23688) < 96
+        return this.aClass239_Sub25_7271!!.method1830((-120).toByte()) && (this.aClass239_Sub25_7271!!.method1829(-32350) == 0) && aLoadingScreenState_7221!!.method1458(-23688) < 96
     }
 
     private fun method3426(i: Byte) {
         anInt7219++
         try {
             val fields = this.javaClass.getDeclaredFields()
-            if (i.toInt() != 36) aClass199_7221 = null
+            if (i.toInt() != 36) aLoadingScreenState_7221 = null
             val fields_5_ = fields
             var i_6_ = 0
             while (fields_5_.size > i_6_) {
@@ -309,10 +309,10 @@ class Class348_Sub51 : Class348 {
         return class348_sub49
     }
 
-    fun method3428(i: Byte): Class199? {
+    fun method3428(i: Byte): LoadingScreenState? {
         anInt7225++
         if (i >= -73) method3430(false)
-        return aClass199_7221
+        return aLoadingScreenState_7221
     }
 
     fun method3429(i: Byte, class239: Class239?, i_7_: Int) {
@@ -329,7 +329,7 @@ class Class348_Sub51 : Class348 {
     internal constructor(class230: Class230?, i: Int) {
         try {
             aClass230_7269 = class230
-            aClass199_7221 = Class199((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.lowercase(Locale.getDefault()).indexOf("arm") != -1)
+            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.lowercase(Locale.getDefault()).indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = Class239_Sub25(i, this)
             method3423(true, 31286)
         } catch (runtimeexception: RuntimeException) {
@@ -340,7 +340,7 @@ class Class348_Sub51 : Class348 {
     internal constructor(class348_sub49: Class348_Sub49?, class230: Class230?, i: Int) {
         try {
             aClass230_7269 = class230
-            aClass199_7221 = Class199((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.indexOf("arm") != -1)
+            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = Class239_Sub25(i, this)
             method3424(925, class348_sub49)
         } catch (runtimeexception: RuntimeException) {

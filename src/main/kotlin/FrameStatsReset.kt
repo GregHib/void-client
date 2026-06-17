@@ -168,7 +168,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class302.anInt3836 = 0
             Class64_Sub3.anInt5562 = 0
             Class348_Sub41.anInt7047 = 0
-            Class199.anInt2628 = 0
+            LoadingScreenState.anInt2628 = 0
             HeapDiagnosticsHolder.anInt2253 = 0
             Class348_Sub16_Sub2.anInt8865 = 0
             Class367_Sub11.anInt7410 = 0
@@ -1253,7 +1253,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class99.anInt1573 = 0
             Class348_Sub1_Sub2.anInt8814 = 0
             Class348_Sub24.anInt6874 = 0
-            Class199.anInt2624 = 0
+            LoadingScreenState.anInt2624 = 0
             OpenGlRenderer.anInt7562 = 0
             ModelDefinition.anInt1831 = 0
             AbstractMenuEntry.anInt1703 = 0
@@ -2405,7 +2405,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class87.anInt1490 = 0
             Class351.anInt4325 = 0
             PerlinTextureProvider.anInt5809 = 0
-            Class199.anInt2634 = 0
+            LoadingScreenState.anInt2634 = 0
             OpenGlRenderer.anInt7698 = 0
             ModelDefinition.anInt1854 = 0
             Class286_Sub2.anInt6211 = 0
@@ -2540,7 +2540,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7677 = 0
             Class76.anInt1284 = 0
             Class368.anInt4495 = 0
-            Class199.anInt2627 = 0
+            LoadingScreenState.anInt2627 = 0
             Class377.anInt9874 = 0
             Class348_Sub23_Sub2.anInt9022 = 0
             Class348_Sub49_Sub2.anInt9755 = 0
@@ -2611,7 +2611,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class237.anInt3116 = 0
             NativeRenderer.anInt8036 = 0
             NativeRenderer.anInt7996 = 0
-            Class199.anInt2630 = 0
+            LoadingScreenState.anInt2630 = 0
             Class348_Sub42_Sub18.anInt9686 = 0
             NpcSummaryDefinition.anInt1950 = 0
             Class65.anInt1139 = 0
@@ -3976,7 +3976,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5454 = 0
             Class239_Sub3.anInt5858 = 0
             Class348_Sub40_Sub24.anInt9326 = 0
-            Class199.anInt2637 = 0
+            LoadingScreenState.anInt2637 = 0
             Class239_Sub24.anInt6092 = 0
             Gl2dTexture.anInt8608 = 0
             Class237_Sub1.anInt5823 = 0

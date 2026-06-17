@@ -252,7 +252,7 @@ class Class294 : Interface16 {
 
     private fun method2219(i: Int) {
         anInt5031++
-        Class199.method1455(Class51.aClass311_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![Class222.anInt2884], Class51.aClass311_897!!.method2318(-9324), (Class348_Sub40_Sub8.aColorArray9163!![Class222.anInt2884]), (-100).toByte(), Class50_Sub3.aColorArray5242!![Class222.anInt2884])
+        LoadingScreenState.method1455(Class51.aClass311_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![Class222.anInt2884], Class51.aClass311_897!!.method2318(-9324), (Class348_Sub40_Sub8.aColorArray9163!![Class222.anInt2884]), (-100).toByte(), Class50_Sub3.aColorArray5242!![Class222.anInt2884])
         if (i != 33) method55(1.toByte())
     }
 
