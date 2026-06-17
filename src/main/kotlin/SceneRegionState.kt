@@ -11,14 +11,14 @@ object SceneRegionState {
     @JvmField
     var anInt195: Int = 0
     @JvmField
-    var aClass231_196: Class231? = null
+    var aHudTabPanel_196: HudTabPanel? = null
     @JvmField
     var anInt197: Int = 0
 
     @JvmStatic
     fun method221(i: Int) {
         if (i != 0) anInt197 = -100
-        aClass231_196 = null
+        aHudTabPanel_196 = null
     }
 
     @JvmStatic

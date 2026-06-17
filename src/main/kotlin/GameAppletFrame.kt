@@ -281,7 +281,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 === this && !Class26.aBoolean384) {
             CameraNodeList.aLong1739 = Class62.method599(-108)
             Class286_Sub5.method2161(77.toByte(), 5000L)
-            Class231.aClass297_2993 = null
+            HudTabPanel.aClass297_2993 = null
             method90(false, false)
         }
     }
@@ -371,7 +371,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530
                 Class348_Sub23_Sub1.aClass297_8992 = Class297(i_17_, string, i_18_, Class93.anApplet1530 != null)
-                Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
+                HudTabPanel.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
                 val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
                 while (class144.anInt1997 == 0) Class286_Sub5.method2161((-126).toByte(), 10L)
@@ -407,7 +407,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             val insets = Class52.aFrame4904!!.getInsets()
             Class52.aFrame4904!!.setSize(insets.right + (insets.left + Class272.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)))
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
-            Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
+            HudTabPanel.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, i_23_ + -33739, 1)
             while (class144.anInt1997 == 0) Class286_Sub5.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {

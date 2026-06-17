@@ -160,7 +160,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class283.anInt3656 = 0
             Class348_Sub40_Sub22.anInt9295 = 0
             Class64.anInt1132 = 0
-            Class231.anInt2990 = 0
+            HudTabPanel.anInt2990 = 0
             Class348_Sub46.anInt7114 = 0
             Class5_Sub1.anInt8337 = 0
             Class348_Sub29.anInt6910 = 0
@@ -1504,7 +1504,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class262.anInt3324 = 0
             Class348_Sub42_Sub15.anInt9655 = 0
             Class248.anInt3190 = 0
-            Class231.anInt2992 = 0
+            HudTabPanel.anInt2992 = 0
             Class286_Sub8.anInt6295 = 0
             Class3.anInt124 = 0
             FloatCameraTransform.anInt5709 = 0
@@ -1898,7 +1898,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub1.anInt7279 = 0
             ModelOrSpriteHolder.anInt116 = 0
             Class88.anInt1496 = 0
-            Class231.anInt2991 = 0
+            HudTabPanel.anInt2991 = 0
             Class311.anInt3912 = 0
             InputStream_Sub1.anInt72 = 0
             Class318_Sub2.anInt6398 = 0
@@ -2037,7 +2037,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub8.anInt7354 = 0
             Class348_Sub26.anInt6886 = 0
             Class367_Sub2.anInt7286 = 0
-            Class231.anInt2994 = 0
+            HudTabPanel.anInt2994 = 0
             MapAreaDefinition.anInt2532 = 0
             Npc.anInt10514 = 0
             Class296.anInt3765 = 0
@@ -2733,7 +2733,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class90.anInt1513 = 0
             Class239_Sub7.anInt5906 = 0
             Class239_Sub24.anInt6090 = 0
-            Class231.anInt2997 = 0
+            HudTabPanel.anInt2997 = 0
             RenderConfigFactory.anInt2980 = 0
             GlTextureBase.anInt5094 = 0
             Player.anInt10528 = 0

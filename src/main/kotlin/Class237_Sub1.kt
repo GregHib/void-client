@@ -5,7 +5,7 @@ import OrientationRotator.method1201
 import SceneTilePlaneManager.method258
 import ClickFeedbackTask.Companion.method1353
 import ProjectileFactory.Companion.method1614
-import Class231.Companion.method1639
+import HudTabPanel.Companion.method1639
 import Class239_Sub21.Companion.method1810
 import Class258_Sub3.Companion.method1966
 import Class286_Sub7.Companion.method2168

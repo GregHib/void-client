@@ -45,8 +45,8 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: NativeR
         fun method2270(i: Int, i_4_: Int, var_renderer: Renderer?, string: String?, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int) {
             try {
                 if (OutputStream_Sub2.aAbstractModelRenderer_106 == null || MinimapFlagRenderer.aAbstractModelRenderer_1800 == null) {
-                    if (CameraRotationStub.aClass45_322!!.method421(false, Class231.anInt2996) && CameraRotationStub.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)) {
-                        OutputStream_Sub2.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(CameraRotationStub.aClass45_322!!, Class231.anInt2996, 0), true))
+                    if (CameraRotationStub.aClass45_322!!.method421(false, HudTabPanel.anInt2996) && CameraRotationStub.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)) {
+                        OutputStream_Sub2.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(CameraRotationStub.aClass45_322!!, HudTabPanel.anInt2996, 0), true))
                         val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, Class348_Sub40_Sub16.anInt9231, 0)
                         MinimapFlagRenderer.aAbstractModelRenderer_1800 = var_renderer.method3691(spriteImage, true)
                         spriteImage!!.method1518()

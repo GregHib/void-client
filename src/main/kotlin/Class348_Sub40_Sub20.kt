@@ -31,7 +31,7 @@ class Class348_Sub40_Sub20 : Class348_Sub40(0, true) {
         @JvmField
         var anInt9262: Int = 0
         @JvmField
-        var aClass231_9263: Class231? = Class231("RC", 1)
+        var aHudTabPanel_9263: HudTabPanel? = HudTabPanel("RC", 1)
         @JvmField
         var aClass348_Sub4_9264: Class348_Sub4? = null
         @JvmField
@@ -48,7 +48,7 @@ class Class348_Sub40_Sub20 : Class348_Sub40(0, true) {
         fun method3104(bool: Boolean) {
             if (bool == false) {
                 aClass348_Sub4_9264 = null
-                aClass231_9263 = null
+                aHudTabPanel_9263 = null
             }
         }
 

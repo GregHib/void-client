@@ -126,7 +126,7 @@ import BoxedIntHolder.Companion.method1627
 import NativeLibraryUnloader.method1628
 import RenderConfigFactory.Companion.method1632
 import SceneProjector.Companion.method1635
-import Class231.Companion.method1641
+import HudTabPanel.Companion.method1641
 import Class232.Companion.method1645
 import Class233.Companion.method1653
 import Class235.Companion.method1673
@@ -1322,8 +1322,8 @@ class Client : GameAppletFrame() {
             } else if (!method2354(Class8.aClass364_165, -1) && Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                 Class8.aClass364_165 = Class55_Sub1.aClass364_5271
             }
-            SceneRegionState.aClass231_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
-            if (SceneRegionState.aClass231_196 != Class288.aClass231_4953 && SceneRegionState.aClass231_196 != Class348_Sub40_Sub20.aClass231_9263 && Class68.aClass231_1189 != SceneRegionState.aClass231_196) SceneRegionState.aClass231_196 = Class68.aClass231_1189
+            SceneRegionState.aHudTabPanel_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
+            if (SceneRegionState.aHudTabPanel_196 != Class288.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != Class348_Sub40_Sub20.aHudTabPanel_9263 && Class68.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
             try {
                 Class348_Sub33.anInt6967 = this.getParameter("lang")!!.toInt()
             } catch (exception: Exception) {
@@ -1398,7 +1398,7 @@ class Client : GameAppletFrame() {
                 OpenGlRenderer.anInt7666 = 480
             }
             Class79.aClient1367 = this
-            this.method95(Class92.anInt1524, 634, OpenGlRenderer.anInt7666, SceneRegionState.aClass231_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.aString2985, 50)
+            this.method95(Class92.anInt1524, 634, OpenGlRenderer.anInt7666, SceneRegionState.aHudTabPanel_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.aString2985, 50)
         }
     }
 
@@ -1978,11 +1978,11 @@ class Client : GameAppletFrame() {
                     Class348_Sub40_Sub35.aServerConnectionInfo_9443 = ServerConnectionInfo()
                     Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143 = strings[2].toInt()
                     Class8.aClass364_165 = Class76.aClass364_1279
-                    if (strings[3] == "live") SceneRegionState.aClass231_196 = Class68.aClass231_1189
+                    if (strings[3] == "live") SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
                     else if (strings[3] != "rc") {
-                        if (strings[3] == "wip") SceneRegionState.aClass231_196 = Class288.aClass231_4953
+                        if (strings[3] == "wip") SceneRegionState.aHudTabPanel_196 = Class288.aHudTabPanel_4953
                         else method518("modewhat", 41.toByte())
-                    } else SceneRegionState.aClass231_196 = Class348_Sub40_Sub20.aClass231_9263
+                    } else SceneRegionState.aHudTabPanel_196 = Class348_Sub40_Sub20.aHudTabPanel_9263
                     Class348_Sub33.anInt6967 = method315(103.toByte(), strings[4])
                     if (Class348_Sub33.anInt6967 == -1) {
                         if (strings[4] != "english") {
@@ -2014,7 +2014,7 @@ class Client : GameAppletFrame() {
                     Gl2dTexture.aString8605 = null
                     val var_client = Client()
                     Class79.aClient1367 = var_client
-                    var_client.method96(SceneRegionState.aClass231_196!!.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.aString2985), 23499, 768)
+                    var_client.method96(SceneRegionState.aHudTabPanel_196!!.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.aString2985), 23499, 768)
                     Class52.aFrame4904!!.setLocation(40, 40)
                 } catch (exception: Exception) {
                     method1242(null, exception, 15004)

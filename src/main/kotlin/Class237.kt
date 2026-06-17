@@ -1333,12 +1333,12 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
         var anInt3131: Int = 0
 
         @JvmStatic
-        fun method1677(i: Int, i_164_: Int): Class231? {
+        fun method1677(i: Int, i_164_: Int): HudTabPanel? {
             anInt3116++
-            val class231s: Array<Class231?> = method1709(-126)
+            val hudTabPanels: Array<HudTabPanel?> = method1709(-126)
             if (i >= -111) return null
-            for (i_165_ in class231s.indices) {
-                val class231 = class231s[i_165_]!!
+            for (i_165_ in hudTabPanels.indices) {
+                val class231 = hudTabPanels[i_165_]!!
                 if (class231.anInt2995 == i_164_) return class231
             }
             return null

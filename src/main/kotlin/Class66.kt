@@ -1056,14 +1056,14 @@ object Class66 {
                 Class51.anInt948 = anIntArray1149!![anInt1173 + 1]
                 Class264.anInt3374 = anIntArray1149!![anInt1173 + 2]
                 Class348_Sub42_Sub4.anInt9511 = anIntArray1149!![anInt1173 + 3]
-                Class231.anInt2996 = anIntArray1149!![anInt1173 + 4]
+                HudTabPanel.anInt2996 = anIntArray1149!![anInt1173 + 4]
                 Class348_Sub40_Sub16.anInt9231 = anIntArray1149!![anInt1173 + 5]
                 Class318_Sub1_Sub3_Sub3.anInt10257 = anIntArray1149!![anInt1173 + 6]
                 Class313.anInt3937 = anIntArray1149!![anInt1173 + 7]
                 Class79.anInt1387 = anIntArray1149!![anInt1173 + 8]
                 Class348_Sub42_Sub11.anInt9586 = anIntArray1149!![anInt1173 + 9]
                 Class5_Sub2.anInt8363 = anIntArray1149!![anInt1173 + 10]
-                CameraRotationStub.aClass45_322!!.method421(false, Class231.anInt2996)
+                CameraRotationStub.aClass45_322!!.method421(false, HudTabPanel.anInt2996)
                 CameraRotationStub.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)
                 CameraRotationStub.aClass45_322!!.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257)
                 CameraRotationStub.aClass45_322!!.method421(false, Class313.anInt3937)
@@ -2049,7 +2049,7 @@ object Class66 {
                 return
             }
         } else if (i >= 6700) {
-            if (i < 6800 && SceneRegionState.aClass231_196 == Class288.aClass231_4953) {
+            if (i < 6800 && SceneRegionState.aHudTabPanel_196 == Class288.aHudTabPanel_4953) {
                 if (i == 6700) {
                     var i_174_ = MinimapSpriteRenderer.aClass356_4915!!.method3474(1)
                     if (RenderNode.anInt9721 != -1) i_174_++

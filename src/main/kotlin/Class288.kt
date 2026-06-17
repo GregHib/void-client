@@ -37,14 +37,14 @@ open class Class288 internal constructor(i: Int, screenAnchorAlignment: ScreenAn
 
     companion object {
         @JvmField
-        var aClass231_4953: Class231? = Class231("WIP", 2)
+        var aHudTabPanel_4953: HudTabPanel? = HudTabPanel("WIP", 2)
         var anInt4954: Int = 0
         var anInt4956: Int = 0
         var anInt4957: Int = 0
         @JvmStatic
         fun method2185(i: Int) {
-            aClass231_4953 = null
-            if (i != 2) aClass231_4953 = null
+            aHudTabPanel_4953 = null
+            if (i != 2) aHudTabPanel_4953 = null
         }
 
         fun method2186(i: Byte, string: String): Int {
