@@ -3,7 +3,7 @@ import kotlin.math.sqrt
 /* s_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class s_Sub1(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, private val anInt8223: Int, i_486_: Int, i_487_: Int, `is`: Array<IntArray?>, is_488_: Array<IntArray?>, i_489_: Int) : s(i_486_, i_487_, i_489_, `is`) {
+class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, private val anInt8223: Int, i_486_: Int, i_487_: Int, `is`: Array<IntArray?>, is_488_: Array<IntArray?>, i_489_: Int) : TerrainTile(i_486_, i_487_, i_489_, `is`) {
     private var aFloat8212 = 0f
     private var aFloat8213 = 0f
     private var aFloat8214 = 0f

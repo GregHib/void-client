@@ -1,6 +1,9 @@
 import java.awt.Canvas
 
-abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Array<IntArray?>) {
+/*
+ * s
+ */
+abstract class TerrainTile internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Array<IntArray?>) {
     @JvmField
     var anIntArrayArray4584: Array<IntArray?>
     @JvmField

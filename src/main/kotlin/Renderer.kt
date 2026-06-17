@@ -86,7 +86,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3647(bool: Boolean)
 
-    abstract fun method3648(i: Int, i_46_: Int, `is`: Array<IntArray?>, is_47_: Array<IntArray?>?, i_48_: Int, i_49_: Int, i_50_: Int): s?
+    abstract fun method3648(i: Int, i_46_: Int, `is`: Array<IntArray?>, is_47_: Array<IntArray?>?, i_48_: Int, i_49_: Int, i_50_: Int): TerrainTile?
 
     fun method3649(i: Byte, i_51_: Int, i_52_: Int, i_53_: Int, i_54_: Int) {
         anInt4569++

@@ -2,7 +2,7 @@ import jaclib.memory.Stream
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt
 
-class s_Sub3(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140_: Int, i_141_: Int, `is`: Array<IntArray?>, is_142_: Array<IntArray?>?, i_143_: Int) : s(i_140_, i_141_, i_143_, `is`) {
+class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140_: Int, i_141_: Int, `is`: Array<IntArray?>, is_142_: Array<IntArray?>?, i_143_: Int) : TerrainTile(i_140_, i_141_, i_143_, `is`) {
     private val aClass262_8286: Class262
     private var anIntArrayArrayArray8291: Array<Array<IntArray?>?>?
     @JvmField
