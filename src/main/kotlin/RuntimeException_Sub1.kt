@@ -59,7 +59,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
             Class348_Sub51.aClass318_Sub10Array7249 = arrayOfNulls<Class318_Sub10>((Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637]) + 1)
             Class258_Sub3.anInt8550 = 0
             Class376.anInt4559 = 0
-            Class117.method1072(class45, (-107).toByte())
+            CacheArchiveIndex.method1072(class45, (-107).toByte())
             Class2.method172(30284, class45)
         }
 

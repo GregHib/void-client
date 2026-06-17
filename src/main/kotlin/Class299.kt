@@ -47,7 +47,7 @@ abstract class Class299 {
 
         @JvmStatic
         fun method2255(i: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
-            Class117.method1070(117.toByte(), i)
+            CacheArchiveIndex.method1070(117.toByte(), i)
             anInt3812++
             if (i_4_ >= -65) Companion.method2255(-118, -20, (-121).toByte(), 100, -62, 77, -119)
             var i_9_ = 0

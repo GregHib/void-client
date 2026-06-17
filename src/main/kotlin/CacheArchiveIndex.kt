@@ -4,7 +4,7 @@ import Class50_Sub1.Companion.method462
 /* Class117 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class117 {
+class CacheArchiveIndex {
     private var anInt1764 = 0
     var aClass356_1767: Class356? = null
     private var aClass356_1770: Class356? = null

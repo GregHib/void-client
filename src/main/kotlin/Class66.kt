@@ -1169,7 +1169,7 @@ object Class66 {
                 val i_133_ = anIntArray1149!![anInt1173 + 1]
                 if (i_133_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775])!!.size shr 1) throw RuntimeException()
                 Class213.anInt2798 = i_133_
-                Class117.anInt1780 = 0
+                CacheArchiveIndex.anInt1780 = 0
                 Class195.anInt5019 = anIntArray1149!![anInt1173 + 2]
                 Class331.anInt4133 = anIntArray1149!![anInt1173 + 3]
                 val i_134_ = anIntArray1149!![anInt1173 + 4]

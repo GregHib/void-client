@@ -974,7 +974,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class64_Sub3.anInt5534 = 0
             Class348_Sub14.anInt6765 = 0
             Class318_Sub1_Sub3_Sub1.anInt10031 = 0
-            Class117.anInt1773 = 0
+            CacheArchiveIndex.anInt1773 = 0
             Class367_Sub2.anInt7295 = 0
             Class348_Sub40_Sub10.anInt9178 = 0
             Class348_Sub40_Sub1.anInt9088 = 0
@@ -1825,7 +1825,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class175.anInt2318 = 0
             NativeRenderer.anInt8035 = 0
             Class254.anInt3263 = 0
-            Class117.anInt1768 = 0
+            CacheArchiveIndex.anInt1768 = 0
             Class348_Sub42_Sub10.anInt9575 = 0
             Class318_Sub1_Sub5_Sub1.anInt10126 = 0
             ArbVertexProgram.anInt9779 = 0
@@ -2010,7 +2010,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class213.anInt2780 = 0
             Class312.anInt3927 = 0
             Class348_Sub40_Sub16.anInt9223 = 0
-            Class117.anInt1772 = 0
+            CacheArchiveIndex.anInt1772 = 0
             Class318_Sub1_Sub1_Sub2.anInt9990 = 0
             Class225.anInt2952 = 0
             Class239_Sub9.anInt5928 = 0
@@ -2113,7 +2113,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class124.anInt1828 = 0
             IndexedSprite.anInt5194 = 0
             RuntimeException_Sub1.anInt4605 = 0
-            Class117.anInt1775 = 0
+            CacheArchiveIndex.anInt1775 = 0
             Class348_Sub49.anInt7169 = 0
             Class27.anInt390 = 0
             Class348_Sub42_Sub16_Sub1.anInt10455 = 0
@@ -2276,7 +2276,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub16_Sub3.anInt8917 = 0
             Class318_Sub1_Sub4_Sub1.anInt10080 = 0
             Class348_Sub49.anInt7185 = 0
-            Class117.anInt1769 = 0
+            CacheArchiveIndex.anInt1769 = 0
             Class361.anInt4439 = 0
             Class239_Sub18.anInt6033 = 0
             Class174.anInt2295 = 0
@@ -2631,7 +2631,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class45.anInt651 = 0
             Class258.anInt4852 = 0
             Class161.anInt2142 = 0
-            Class117.anInt1776 = 0
+            CacheArchiveIndex.anInt1776 = 0
             Class5_Sub2.anInt8353 = 0
             NativeRenderer.anInt7952 = 0
             Class46.anInt827 = 0
@@ -2682,10 +2682,10 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             OpenGlRenderer.anInt7514 = 0
             Player.anInt10529 = 0
             Class318_Sub1_Sub3_Sub5.anInt10374 = 0
-            Class117.anInt1765 = 0
+            CacheArchiveIndex.anInt1765 = 0
             Player.anInt10532 = 0
             Class47.anInt844 = 0
-            Class117.anInt1777 = 0
+            CacheArchiveIndex.anInt1777 = 0
             Class122.anInt1809 = 0
             Class348_Sub17.anInt6801 = 0
             AnimatedModelRenderer.anInt8394 = 0
@@ -3159,7 +3159,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub3.anInt6570 = 0
             Class77.anInt1299 = 0
             Class318_Sub1_Sub1_Sub2.anInt9986 = 0
-            Class117.anInt1763 = 0
+            CacheArchiveIndex.anInt1763 = 0
             Class64_Sub3.anInt5549 = 0
             Class285_Sub1.anInt8486 = 0
             Class158.anInt4941 = 0
@@ -3328,7 +3328,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class258.anInt4862 = 0
             Class348_Sub5_Sub1.anInt8831 = 0
             Class27.anInt391 = 0
-            Class117.anInt1771 = 0
+            CacheArchiveIndex.anInt1771 = 0
             Class239_Sub10.anInt5942 = 0
             DelegatingRenderCanvas.anInt62 = 0
             Class262.anInt3338 = 0

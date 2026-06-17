@@ -30,17 +30,17 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
         fun method2954(i: Byte) {
             anInt6856++
             if (NativeShaderProgram.anInt9775 != -1 && Class292.anInt4803 != -1) {
-                val i_0_ = ((Class117.anInt1780 * (Class331.anInt4133 + -Class195.anInt5019) shr 16) + Class195.anInt5019)
-                Class117.anInt1780 += i_0_
-                if (Class117.anInt1780 < 65535) {
+                val i_0_ = ((CacheArchiveIndex.anInt1780 * (Class331.anInt4133 + -Class195.anInt5019) shr 16) + Class195.anInt5019)
+                CacheArchiveIndex.anInt1780 += i_0_
+                if (CacheArchiveIndex.anInt1780 < 65535) {
                     Class347.aBoolean4284 = false
                     Class25.aBoolean368 = false
                 } else {
                     Class347.aBoolean4284 = !Class25.aBoolean368
-                    Class117.anInt1780 = 65535
+                    CacheArchiveIndex.anInt1780 = 65535
                     Class25.aBoolean368 = true
                 }
-                val f = Class117.anInt1780.toFloat() / 65535.0f
+                val f = CacheArchiveIndex.anInt1780.toFloat() / 65535.0f
                 val fs = FloatArray(3)
                 val i_1_ = 2 * Class213.anInt2798
                 for (i_2_ in 0..2) {
@@ -75,7 +75,7 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
                 val d = sqrt((f_21_ * f_21_ + f_23_ * f_23_).toDouble())
                 Class348_Sub42_Sub19.anInt9701 = 0x3fff and (2607.5945876176133 * atan2(f_22_.toDouble(), d)).toInt()
                 Class5.anInt4638 = 0x3fff and (2607.5945876176133 * -atan2(f_21_.toDouble(), f_23_.toDouble())).toInt()
-                Class338.anInt4186 = ((Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (((-(Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![3])) * Class117.anInt1780) shr 16))
+                Class338.anInt4186 = ((Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (((-(Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![3])) * CacheArchiveIndex.anInt1780) shr 16))
             }
         }
 

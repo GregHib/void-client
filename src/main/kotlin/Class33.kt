@@ -5,20 +5,20 @@ import java.awt.Point
 class Class33 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
     private val aClass45_458: Class45?
     private val aClass60_460 = Class60(128)
-    fun method337(bool: Boolean, i: Int): Class117 {
+    fun method337(bool: Boolean, i: Int): CacheArchiveIndex {
         anInt457++
-        var class117: Class117?
+        var cacheArchiveIndex: CacheArchiveIndex?
         synchronized(aClass60_460) {
-            class117 = aClass60_460.method583(i.toLong(), 111) as Class117?
+            cacheArchiveIndex = aClass60_460.method583(i.toLong(), 111) as CacheArchiveIndex?
         }
-        if (class117 != null) return class117
+        if (cacheArchiveIndex != null) return cacheArchiveIndex
         val `is` = aClass45_458!!.method410(-1860, method200(-107, i), method3013(i, bool))
-        class117 = Class117()
-        if (`is` != null) class117.method1069(0, Class348_Sub49(`is`))
+        cacheArchiveIndex = CacheArchiveIndex()
+        if (`is` != null) cacheArchiveIndex.method1069(0, Class348_Sub49(`is`))
         synchronized(aClass60_460) {
-            aClass60_460.method582(class117, i.toLong(), (-102).toByte())
+            aClass60_460.method582(cacheArchiveIndex, i.toLong(), (-102).toByte())
         }
-        return class117
+        return cacheArchiveIndex
     }
 
     init {

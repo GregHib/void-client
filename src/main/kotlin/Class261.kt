@@ -113,7 +113,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
         fun method1982(i: Int, i_8_: Int, string: String) {
             Class348_Sub42_Sub12.anInt9594++
             anInt3318++
-            val class348_sub47 = method2148(Class117.aClass351_1766, Class348_Sub23_Sub2.aClass77_9029, i + -107)
+            val class348_sub47 = method2148(CacheArchiveIndex.aClass351_1766, Class348_Sub23_Sub2.aClass77_9029, i + -107)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1 - -method1745(string, -65))
             if (i == 16) {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-70).toByte(), i_8_)

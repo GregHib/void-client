@@ -22,7 +22,7 @@ import CollisionMapRegion.Companion.method1047
 import CameraNodeList.Companion.method1057
 import OverlayColorTable.method1061
 import InputSettingsState.method1062
-import Class117.Companion.method1064
+import CacheArchiveIndex.Companion.method1064
 import Class118.Companion.method1075
 import Class121.method1081
 import Class122.method1086
