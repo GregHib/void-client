@@ -164,8 +164,8 @@ class LoadingBarRenderer : Interface16 {
                 try {
                     val i_5_ = Class51.aResourceLoaderThread_897!!.method2320(103.toByte())
                     val string = Class51.aResourceLoaderThread_897!!.method2318(-9324)
-                    if (Class342.anImage4249 == null) Class342.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
-                    val graphics_6_ = Class342.anImage4249!!.getGraphics()
+                    if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
+                    val graphics_6_ = WidgetRedrawRegion.anImage4249!!.getGraphics()
                     graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                     val i_7_ = anImage5030!!.getWidth(null)
                     val i_8_ = anImage5026!!.getWidth(null)
@@ -238,7 +238,7 @@ class LoadingBarRenderer : Interface16 {
                     graphics_6_.setFont(aFont5053)
                     graphics_6_.setColor(aColor5034)
                     graphics_6_.drawString(string, i_26_ + (anInt5023 + -aFontMetrics5024!!.stringWidth(string)) / 2, anInt5046 + (4 + anInt5036 / 2 + i_27_))
-                    graphics.drawImage(Class342.anImage4249, 0, 0, null)
+                    graphics.drawImage(WidgetRedrawRegion.anImage4249, 0, 0, null)
                 } catch (exception: Exception) {
                     aBoolean5022 = true
                 }

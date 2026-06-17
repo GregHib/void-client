@@ -134,10 +134,10 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         return true
     }
 
-    fun method2536(var_renderer: Renderer?, l: Long, modelFacePriorityNodes: Array<ModelFacePriorityNode?>?, class342s: Array<Class342?>?, bool: Boolean) {
+    fun method2536(var_renderer: Renderer?, l: Long, modelFacePriorityNodes: Array<ModelFacePriorityNode?>?, widgetRedrawRegions: Array<WidgetRedrawRegion?>?, bool: Boolean) {
         if (!this.aBoolean6470) {
             method2532(var_renderer, modelFacePriorityNodes, bool)
-            method2538(class342s, bool)
+            method2538(widgetRedrawRegions, bool)
             aLong6472 = l
         }
     }
@@ -146,13 +146,13 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         aBoolean6473 = false
     }
 
-    private fun method2538(class342s: Array<Class342?>?, bool: Boolean) {
+    private fun method2538(widgetRedrawRegions: Array<WidgetRedrawRegion?>?, bool: Boolean) {
         for (i in 0..7) aBooleanArray6477!![i] = false
         var class348_sub42_sub20 = (this.aNodeDeque_6479.method1995(4) as Class348_Sub42_Sub20?)
         while_112_@ while (class348_sub42_sub20 != null) {
-            if (class342s != null) {
-                for (i in class342s.indices) {
-                    if ((class348_sub42_sub20!!.aClass342_9702) == class342s[i] || ((class348_sub42_sub20.aClass342_9702) == class342s[i]!!.aClass342_4248)) {
+            if (widgetRedrawRegions != null) {
+                for (i in widgetRedrawRegions.indices) {
+                    if ((class348_sub42_sub20!!.aWidgetRedrawRegion_9702) == widgetRedrawRegions[i] || ((class348_sub42_sub20.aWidgetRedrawRegion_9702) == widgetRedrawRegions[i]!!.aWidgetRedrawRegion_4248)) {
                         aBooleanArray6477!![i] = true
                         class348_sub42_sub20.method3279(2)
                         class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as Class348_Sub42_Sub20?
@@ -170,17 +170,17 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
             }
             class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as Class348_Sub42_Sub20?
         }
-        if (class342s != null) {
-            for (i in class342s.indices) {
+        if (widgetRedrawRegions != null) {
+            for (i in widgetRedrawRegions.indices) {
                 if (i == 8 || anInt6485 == 8) break
                 if (!aBooleanArray6477!![i]) {
                     var class348_sub42_sub20: Class348_Sub42_Sub20? = null
-                    if ((class342s[i]!!.method2685((-13).toByte()).anInt2296) == 1 && SpotAnimEntity.Companion.anInt6450 < 32) {
-                        class348_sub42_sub20 = Class348_Sub42_Sub20(class342s[i], this)
-                        Class367_Sub11.aLongHashTable_7415!!.method335(class348_sub42_sub20, -8098, class342s[i]!!.anInt4245.toLong())
+                    if ((widgetRedrawRegions[i]!!.method2685((-13).toByte()).anInt2296) == 1 && SpotAnimEntity.Companion.anInt6450 < 32) {
+                        class348_sub42_sub20 = Class348_Sub42_Sub20(widgetRedrawRegions[i], this)
+                        Class367_Sub11.aLongHashTable_7415!!.method335(class348_sub42_sub20, -8098, widgetRedrawRegions[i]!!.anInt4245.toLong())
                         SpotAnimEntity.Companion.anInt6450++
                     }
-                    if (class348_sub42_sub20 == null) class348_sub42_sub20 = Class348_Sub42_Sub20(class342s[i], this)
+                    if (class348_sub42_sub20 == null) class348_sub42_sub20 = Class348_Sub42_Sub20(widgetRedrawRegions[i], this)
                     this.aNodeDeque_6479.method1999(class348_sub42_sub20, -20180)
                     anInt6485++
                     aBooleanArray6477!![i] = true

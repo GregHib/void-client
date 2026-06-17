@@ -74,8 +74,8 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                             }
                             class148_19_.aWidgetNodeLink_2038 = class148
                         }
-                        if (bool_13_ && (Class342.anIntArrayArray4253!![i_17_]!![i_18_] and 0xffffff.inv()) != 0) {
-                            i = Class342.anIntArrayArray4253!![i_17_]!![i_18_]
+                        if (bool_13_ && (WidgetRedrawRegion.anIntArrayArray4253!![i_17_]!![i_18_] and 0xffffff.inv()) != 0) {
+                            i = WidgetRedrawRegion.anIntArrayArray4253!![i_17_]!![i_18_]
                             i_14_ = BooleanGraphicsOptionState.aShortArrayArray5847!![i_17_]!![i_18_]
                             i_15_ = (Class348_Sub1_Sub2.aByteArrayArray8816!![i_17_]!![i_18_])
                         }
@@ -87,8 +87,8 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                 for (i_20_ in class318_sub1_sub3.aShort8743..class318_sub1_sub3.aShort8751) {
                     var i_21_ = (class318_sub1_sub3.aShort8750).toInt()
                     while ((i_21_ <= class318_sub1_sub3.aShort8747)) {
-                        if ((Class342.anIntArrayArray4253!![i_20_]!![i_21_] and 0xffffff.inv()) == 0) {
-                            Class342.anIntArrayArray4253!![i_20_]!![i_21_] = i
+                        if ((WidgetRedrawRegion.anIntArrayArray4253!![i_20_]!![i_21_] and 0xffffff.inv()) == 0) {
+                            WidgetRedrawRegion.anIntArrayArray4253!![i_20_]!![i_21_] = i
                             BooleanGraphicsOptionState.aShortArrayArray5847!![i_20_]!![i_21_] = i_14_
                             Class348_Sub1_Sub2.aByteArrayArray8816!![i_20_]!![i_21_] = i_15_
                         }

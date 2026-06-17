@@ -44,13 +44,13 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         this.aHa_Sub3_4479.method3897(1, -4382)
         this.aHa_Sub3_4479.method3850((-128).toByte(), null)
         this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 116, ParticleSystemState.aRenderConfigFactory_2207)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
         this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
-        this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
+        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
         this.aHa_Sub3_4479.method3897(0, -4382)
         if (aBoolean7399) {
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
-            this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+            this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
             aBoolean7399 = false
         }
         if (i.toInt() != 87) aLongHashTable_7415 = null
@@ -70,8 +70,8 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
     override fun method3527(i: Int, interface18: Interface18?, i_3_: Int) {
         if (interface18 != null) {
             if (aBoolean7399) {
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
-                this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
                 aBoolean7399 = false
             }
             this.aHa_Sub3_4479.method3850((-122).toByte(), interface18)
@@ -128,7 +128,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 109, MediaStreamClient.aRenderConfigFactory_3196)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
         if (i == 15192) {
-            this.aHa_Sub3_4479.method3924(true, false, 2, Class342.aClass70_4247, false)
+            this.aHa_Sub3_4479.method3924(true, false, 2, WidgetRedrawRegion.aClass70_4247, false)
             this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
             this.aHa_Sub3_4479.method3897(0, i + -19574)
             method3528(75)

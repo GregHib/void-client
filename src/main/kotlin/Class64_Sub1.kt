@@ -33,7 +33,7 @@ class Class64_Sub1 : Class64 {
     private var anIntArray5332: IntArray? = null
     private var aShortArray5333: ShortArray? = null
     private var anIntArrayArray5334: Array<IntArray?>? = null
-    private var aClass342Array5335: Array<Class342?>? = null
+    private var aWidgetRedrawRegionArray5335: Array<WidgetRedrawRegion?>? = null
     private var aParticleSystemState_5336: ParticleSystemState? = null
     private var anIntArray5337: IntArray? = null
     private var anInt5338 = 0
@@ -347,7 +347,7 @@ class Class64_Sub1 : Class64 {
         class64_sub1_7_.aShortArray5394 = aShortArray5394
         class64_sub1_7_.aShortArray5364 = aShortArray5364
         class64_sub1_7_.aModelFacePriorityNodeArray5322 = aModelFacePriorityNodeArray5322
-        class64_sub1_7_.aClass342Array5335 = aClass342Array5335
+        class64_sub1_7_.aWidgetRedrawRegionArray5335 = aWidgetRedrawRegionArray5335
         class64_sub1_7_.aClass6Array5361 = aClass6Array5361
         class64_sub1_7_.aShortArray5327 = aShortArray5327
         class64_sub1_7_.anInt5316 = i
@@ -1273,16 +1273,16 @@ class Class64_Sub1 : Class64 {
                 modelFacePriorityNode_285_.anInt1884 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class129.anInt1892]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class129.anInt1892)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class129.anInt1892)]).toFloat()))).toInt()
             }
         }
-        if (aClass342Array5335 != null) {
-            for (i in aClass342Array5335!!.indices) {
-                val class342 = aClass342Array5335!![i]!!
-                var class342_286_: Class342? = class342
-                if (class342.aClass342_4248 != null) class342_286_ = class342.aClass342_4248
+        if (aWidgetRedrawRegionArray5335 != null) {
+            for (i in aWidgetRedrawRegionArray5335!!.indices) {
+                val class342 = aWidgetRedrawRegionArray5335!![i]!!
+                var widgetRedrawRegion_286_: WidgetRedrawRegion? = class342
+                if (class342.aWidgetRedrawRegion_4248 != null) widgetRedrawRegion_286_ = class342.aWidgetRedrawRegion_4248
                 if (class342.aAbstractCameraTransform_4252 != null) class342.aAbstractCameraTransform_4252!!.method898(class101_sub1)
                 else class342.aAbstractCameraTransform_4252 = class101_sub1.method907()
-                class342_286_!!.anInt4238 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
-                class342_286_.anInt4239 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
-                class342_286_.anInt4240 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
+                widgetRedrawRegion_286_!!.anInt4238 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
+                widgetRedrawRegion_286_.anInt4239 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
+                widgetRedrawRegion_286_.anInt4240 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
             }
         }
     }
@@ -1815,8 +1815,8 @@ class Class64_Sub1 : Class64 {
         return method645(i, i_474_, abstractCameraTransform, bool, i_475_, i_476_)
     }
 
-    public override fun method604(): Array<Class342?>? {
-        return aClass342Array5335
+    public override fun method604(): Array<WidgetRedrawRegion?>? {
+        return aWidgetRedrawRegionArray5335
     }
 
     public override fun WA(): Int {
@@ -2728,7 +2728,7 @@ class Class64_Sub1 : Class64 {
                 aShadowProjector_5383!!.method1023((i_632_ and 0x2) != 0)
                 var bool_656_ = false
                 val bool_657_ = i_636_ <= aHa_Sub1_5353.anInt7482
-                val bool_658_ = (bool_657_ || aModelFacePriorityNodeArray5322 != null || aClass342Array5335 != null)
+                val bool_658_ = (bool_657_ || aModelFacePriorityNodeArray5322 != null || aWidgetRedrawRegionArray5335 != null)
                 aParticleSystemState_5367!!.anInt2221 = aShadowProjector_5383!!.anInt1679
                 aParticleSystemState_5367!!.anInt2229 = aShadowProjector_5383!!.anInt1665
                 aParticleSystemState_5367!!.anInt2215 = aShadowProjector_5383!!.anInt1668
@@ -3356,7 +3356,7 @@ class Class64_Sub1 : Class64 {
         aShortArray5370 = modelDefinition.aShortArray1856
         aByteArray5386 = modelDefinition.aByteArray1843
         aModelFacePriorityNodeArray5322 = modelDefinition.aModelFacePriorityNodeArray1846
-        aClass342Array5335 = modelDefinition.aClass342Array1866
+        aWidgetRedrawRegionArray5335 = modelDefinition.aWidgetRedrawRegionArray1866
         aShortArray5333 = modelDefinition.aShortArray1842
         val `is` = IntArray(anInt5351)
         for (i_788_ in 0..<anInt5351) `is`[i_788_] = i_788_

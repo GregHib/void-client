@@ -738,7 +738,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
 
     fun method1697(bool: Boolean, var_renderer: Renderer?, i: Int) {
         try {
-            Class342.method2686()
+            WidgetRedrawRegion.method2686()
             anInt5816++
             if (!bool) {
                 if (this.anInt3130 > 1) {

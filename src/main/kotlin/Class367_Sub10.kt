@@ -40,12 +40,12 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
             this.aHa_Sub3_4479.method3871(ModelDefinitionLoader.aCameraNodeList_2047, i.toInt() xor 0x57)
             this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 103, (ParticleSystemState.aRenderConfigFactory_2207))
             this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
-            this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
+            this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
             this.aHa_Sub3_4479.method3879(-8629)
             this.aHa_Sub3_4479.method3850((-111).toByte(), null)
             this.aHa_Sub3_4479.method3897(0, -4382)
             aBoolean7385 = false
-        } else this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
+        } else this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
         this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, i.toInt() xor 0x2c, ParticleSystemState.aRenderConfigFactory_2207)
     }
 

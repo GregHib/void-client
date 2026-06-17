@@ -5,7 +5,7 @@
 class i : Class64, Interface19 {
     private val anOa5117: oa
     @JvmField
-    var aClass342Array5118: Array<Class342?>? = null
+    var aWidgetRedrawRegionArray5118: Array<WidgetRedrawRegion?>? = null
     @JvmField
     var nativeid: Long = 0
     @JvmField
@@ -227,24 +227,24 @@ class i : Class64, Interface19 {
                 class129.anInt1884 = oa.Companion.anIntArray5140[i++]
             }
         }
-        if (this.aClass342Array5118 != null) {
-            for (i_75_ in this.aClass342Array5118!!.indices) {
-                val class342 = this.aClass342Array5118!![i_75_]!!
-                var class342_76_: Class342? = class342
-                if (class342.aClass342_4248 != null) class342_76_ = class342.aClass342_4248
+        if (this.aWidgetRedrawRegionArray5118 != null) {
+            for (i_75_ in this.aWidgetRedrawRegionArray5118!!.indices) {
+                val class342 = this.aWidgetRedrawRegionArray5118!![i_75_]!!
+                var widgetRedrawRegion_76_: WidgetRedrawRegion? = class342
+                if (class342.aWidgetRedrawRegion_4248 != null) widgetRedrawRegion_76_ = class342.aWidgetRedrawRegion_4248
                 if (class342.aAbstractCameraTransform_4252 != null) class342.aAbstractCameraTransform_4252!!.method898(abstractCameraTransform)
                 else class342.aAbstractCameraTransform_4252 = abstractCameraTransform!!.method907()
-                class342_76_!!.anInt4238 = oa.Companion.anIntArray5140[i++]
-                class342_76_.anInt4239 = oa.Companion.anIntArray5140[i++]
-                class342_76_.anInt4240 = oa.Companion.anIntArray5140[i++]
+                widgetRedrawRegion_76_!!.anInt4238 = oa.Companion.anIntArray5140[i++]
+                widgetRedrawRegion_76_.anInt4239 = oa.Companion.anIntArray5140[i++]
+                widgetRedrawRegion_76_.anInt4240 = oa.Companion.anIntArray5140[i++]
             }
         }
     }
 
     public external override fun a(i: Int)
 
-    public override fun method604(): Array<Class342?>? {
-        return this.aClass342Array5118
+    public override fun method604(): Array<WidgetRedrawRegion?>? {
+        return this.aWidgetRedrawRegionArray5118
     }
 
     private fun method693(`is`: IntArray?, abstractCameraTransform: AbstractCameraTransform?) {
@@ -259,9 +259,9 @@ class i : Class64, Interface19 {
         anOa5117 = var_oa
         aYa5120 = var_ya
         this.aModelFacePriorityNodeArray5119 = modelDefinition.aModelFacePriorityNodeArray1846
-        this.aClass342Array5118 = modelDefinition.aClass342Array1866
+        this.aWidgetRedrawRegionArray5118 = modelDefinition.aWidgetRedrawRegionArray1866
         val i_82_ = (if (modelDefinition.aModelFacePriorityNodeArray1846 == null) 0 else modelDefinition.aModelFacePriorityNodeArray1846!!.size)
-        val i_83_ = (if (modelDefinition.aClass342Array1866 == null) 0 else modelDefinition.aClass342Array1866!!.size)
+        val i_83_ = (if (modelDefinition.aWidgetRedrawRegionArray1866 == null) 0 else modelDefinition.aWidgetRedrawRegionArray1866!!.size)
         var i_84_ = 0
         val `is` = IntArray(i_82_ * 3 + i_83_)
         for (i_85_ in 0..<i_82_) {
@@ -269,7 +269,7 @@ class i : Class64, Interface19 {
             `is`[i_84_++] = this.aModelFacePriorityNodeArray5119!![i_85_]!!.anInt1877
             `is`[i_84_++] = this.aModelFacePriorityNodeArray5119!![i_85_]!!.anInt1892
         }
-        for (i_86_ in 0..<i_83_) `is`[i_84_++] = this.aClass342Array5118!![i_86_]!!.anInt4244
+        for (i_86_ in 0..<i_83_) `is`[i_84_++] = this.aWidgetRedrawRegionArray5118!![i_86_]!!.anInt4244
         val i_87_ = (if (modelDefinition.aRectangleBoundsArray1832 == null) 0 else modelDefinition.aRectangleBoundsArray1832!!.size)
         val is_88_ = IntArray(i_87_ * 8)
         var i_89_ = 0

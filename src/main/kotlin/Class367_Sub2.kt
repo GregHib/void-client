@@ -45,7 +45,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
     override fun method3520(i: Byte) {
         anInt7295++
         if (i.toInt() == 87) {
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
             glBindProgramARB(34336, 0)
             glDisable(34820)
             glDisable(34336)

@@ -523,8 +523,8 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                         class348_sub38.method3032(i_149_, i_153_, bools, false, i)
                         class348 = aNodeDeque_8286.method1990(106.toByte())
                     }
-                    this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, Class342.aClass70_4247)
-                    this.aHa_Sub3_8322!!.method3885(0, true, Class342.aClass70_4247)
+                    this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+                    this.aHa_Sub3_8322!!.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
                     this.aHa_Sub3_8322!!.method3850(90.toByte(), null)
                     this.aHa_Sub3_8322!!.L(i_165_, i_166_, this.aHa_Sub3_8322!!.anInt8105)
                 }

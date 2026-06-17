@@ -22,7 +22,7 @@ class Class64_Sub3 : Class64 {
     private var anInt5537 = 0
     private var anIntArrayArray5539: Array<IntArray?>? = null
     private var aShort5540: Short = 0
-    private var aClass342Array5541: Array<Class342?>? = null
+    private var aWidgetRedrawRegionArray5541: Array<WidgetRedrawRegion?>? = null
     private var aByteArray5542: ByteArray? = null
     private var anIntArray5543: IntArray? = null
     private var aShort5544: Short = 0
@@ -1046,7 +1046,7 @@ class Class64_Sub3 : Class64 {
                 }
             } else class64_sub3_211_.aClass48Array5596 = aClass48Array5596
             class64_sub3_211_.anIntArray5528 = anIntArray5528
-            class64_sub3_211_.aClass342Array5541 = aClass342Array5541
+            class64_sub3_211_.aWidgetRedrawRegionArray5541 = aWidgetRedrawRegionArray5541
             class64_sub3_211_.anIntArray5626 = anIntArray5626
             if (aBoolean5527) {
                 class64_sub3_211_.aShort5540 = aShort5540
@@ -1716,7 +1716,7 @@ class Class64_Sub3 : Class64 {
         anInt5531++
         if (aBoolean5555) {
             aBoolean5555 = false
-            if (aModelFacePriorityNodeArray5640 == null && aClass342Array5541 == null && aMapSceneTileDefinitionArray5621 == null) {
+            if (aModelFacePriorityNodeArray5640 == null && aWidgetRedrawRegionArray5541 == null && aMapSceneTileDefinitionArray5621 == null) {
                 if (anIntArray5543 != null && !GlShaderProgramHandle.method2659(123.toByte(), anInt5648, anInt5556)) {
                     if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anInterface2_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
@@ -1824,9 +1824,9 @@ class Class64_Sub3 : Class64 {
         return aModelFacePriorityNodeArray5640
     }
 
-    public override fun method604(): Array<Class342?>? {
+    public override fun method604(): Array<WidgetRedrawRegion?>? {
         anInt5569++
-        return aClass342Array5541
+        return aWidgetRedrawRegionArray5541
     }
 
     public override fun V(): Int {
@@ -1861,17 +1861,17 @@ class Class64_Sub3 : Class64 {
                         modelFacePriorityNode_384_.anInt1884 = (((class101_sub3.aFloat5754) * (anIntArray5593!![(class129.anInt1892)]).toFloat()) + ((class101_sub3.aFloat5756) * (anIntArray5543!![(class129.anInt1892)]).toFloat()) + ((anIntArray5644!![(class129.anInt1892)]).toFloat() * (class101_sub3.aFloat5784)) + (class101_sub3.aFloat5751)).toInt()
                     }
                 }
-                if (aClass342Array5541 == null) break
+                if (aWidgetRedrawRegionArray5541 == null) break
                 var i = 0
-                while (aClass342Array5541!!.size > i) {
-                    val class342 = aClass342Array5541!![i]!!
-                    var class342_385_: Class342? = class342
-                    if (class342.aClass342_4248 != null) class342_385_ = class342.aClass342_4248
+                while (aWidgetRedrawRegionArray5541!!.size > i) {
+                    val class342 = aWidgetRedrawRegionArray5541!![i]!!
+                    var widgetRedrawRegion_385_: WidgetRedrawRegion? = class342
+                    if (class342.aWidgetRedrawRegion_4248 != null) widgetRedrawRegion_385_ = class342.aWidgetRedrawRegion_4248
                     if (class342.aAbstractCameraTransform_4252 == null) class342.aAbstractCameraTransform_4252 = class101_sub3.method907()
                     else class342.aAbstractCameraTransform_4252!!.method898(class101_sub3)
-                    class342_385_!!.anInt4238 = (class101_sub3.aFloat5747 + (((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5781)) + (((anIntArray5543!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5750) * (anIntArray5593!![(class342.anInt4244)]).toFloat())))).toInt()
-                    class342_385_.anInt4239 = (class101_sub3.aFloat5772 + (((anIntArray5593!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5769)) + ((class101_sub3.aFloat5761) * (anIntArray5543!![(class342.anInt4244)]).toFloat()) + ((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5762)))).toInt()
-                    class342_385_.anInt4240 = (class101_sub3.aFloat5751 + (((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5784)) + (((anIntArray5543!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5756)) + ((anIntArray5593!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5754))))).toInt()
+                    widgetRedrawRegion_385_!!.anInt4238 = (class101_sub3.aFloat5747 + (((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5781)) + (((anIntArray5543!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5750) * (anIntArray5593!![(class342.anInt4244)]).toFloat())))).toInt()
+                    widgetRedrawRegion_385_.anInt4239 = (class101_sub3.aFloat5772 + (((anIntArray5593!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5769)) + ((class101_sub3.aFloat5761) * (anIntArray5543!![(class342.anInt4244)]).toFloat()) + ((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5762)))).toInt()
+                    widgetRedrawRegion_385_.anInt4240 = (class101_sub3.aFloat5751 + (((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5784)) + (((anIntArray5543!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5756)) + ((anIntArray5593!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5754))))).toInt()
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
@@ -3060,7 +3060,7 @@ class Class64_Sub3 : Class64 {
                 anIntArray5543 = modelDefinition.anIntArray1841
                 aShortArray5608 = modelDefinition.aShortArray1842
                 anInt5557 = modelDefinition.anInt1821
-                aClass342Array5541 = modelDefinition.aClass342Array1866
+                aWidgetRedrawRegionArray5541 = modelDefinition.aWidgetRedrawRegionArray1866
                 val class8s: Array<Class8?> = arrayOfNulls<Class8>(anInt5557)
                 aModelFacePriorityNodeArray5640 = modelDefinition.aModelFacePriorityNodeArray1846
                 if (modelDefinition.aRectangleBoundsArray1832 != null) {

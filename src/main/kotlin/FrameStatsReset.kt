@@ -442,7 +442,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LocTypeConfig.anInt3567 = 0
             OpenGlRenderer.anInt7529 = 0
             GroundDecorSceneEntity.anInt9977 = 0
-            Class342.anInt4242 = 0
+            WidgetRedrawRegion.anInt4242 = 0
             Class348_Sub49.anInt7179 = 0
             Class66.anInt1153 = 0
             TileRenderState.anInt4237 = 0
@@ -1693,7 +1693,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Font.anInt4058 = 0
             FloatCameraTransform.anInt5721 = 0
             Class348_Sub40_Sub33.anInt9428 = 0
-            Class342.anInt4243 = 0
+            WidgetRedrawRegion.anInt4243 = 0
             Class348_Sub40_Sub28.anInt9363 = 0
             WallSceneEntity.anInt9960 = 0
             NativeRenderNode.anInt10476 = 0
@@ -2020,7 +2020,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7582 = 0
             NativeRenderer.anInt7988 = 0
             SoundChannelMixer.anInt3596 = 0
-            Class342.anInt4241 = 0
+            WidgetRedrawRegion.anInt4241 = 0
             FloatCameraTransform.anInt5741 = 0
             WallEntity.anInt8779 = 0
             Renderer.anInt4580 = 0
@@ -2858,7 +2858,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub4.anInt7308 = 0
             Class46.anInt691 = 0
             Class348_Sub20.anInt6845 = 0
-            Class342.anInt4251 = 0
+            WidgetRedrawRegion.anInt4251 = 0
             GlSpriteRenderer.anInt8439 = 0
             BrightnessOptionState.anInt5897 = 0
             Class367_Sub2.anInt7289 = 0

@@ -199,7 +199,7 @@ class ModelLightingConfig {
                     }
                     abstractModelRenderer.method974((class348_sub21.anInt6853 + -(abstractModelRenderer.method966() shr 1)), (class348_sub21.anInt6855 + -(abstractModelRenderer.method980() shr 1)))
                 }
-                if (class42.aString597 != null && systemFontGlyphs != null) Class342.method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, class42)
+                if (class42.aString597 != null && systemFontGlyphs != null) WidgetRedrawRegion.method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, class42)
                 if (class42.anInt578 != -1 || class42.aString597 != null) {
                     val class348_sub12 = Class348_Sub12(class348_sub21)
                     class348_sub12.anInt6746 = i_13_

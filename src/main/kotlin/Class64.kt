@@ -153,7 +153,7 @@ public abstract class Class64 {
         }
     }
 
-    abstract fun method604(): Array<Class342?>?
+    abstract fun method604(): Array<WidgetRedrawRegion?>?
 
     abstract fun C(i: Int)
 

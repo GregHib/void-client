@@ -105,7 +105,7 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
         }
         var_i.ZA(var_i_49_, var_i_48_, i_47_, i.toInt() != 0, bool)
         var_i_49_.aModelFacePriorityNodeArray5119 = var_i.aModelFacePriorityNodeArray5119
-        var_i_49_.aClass342Array5118 = var_i.aClass342Array5118
+        var_i_49_.aWidgetRedrawRegionArray5118 = var_i.aWidgetRedrawRegionArray5118
         return var_i_49_
     }
 

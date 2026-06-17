@@ -58,8 +58,8 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                     if (color_0_ == null) color_0_ = Color(140, 17, 17)
                     if (color_2_ == null) color_2_ = Color(255, 255, 255)
                     try {
-                        if (Class342.anImage4249 == null) Class342.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
-                        val graphics_3_ = Class342.anImage4249!!.getGraphics()
+                        if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
+                        val graphics_3_ = WidgetRedrawRegion.anImage4249!!.getGraphics()
                         graphics_3_.setColor(Color.black)
                         graphics_3_.fillRect(0, 0, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                         val i_4_ = -152 + LocTypeDefinition.anInt4017 / 2
@@ -80,7 +80,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                             graphics_3_.setColor(color_2_)
                             graphics_3_.drawString(Class348_Sub42_Sub16.aString9665, (LocTypeDefinition.anInt4017 / 2 - (Class348_Sub42_Sub16.aString9665!!.length * 6 / 2)), -26 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2)
                         }
-                        graphics.drawImage(Class342.anImage4249, 0, 0, null)
+                        graphics.drawImage(WidgetRedrawRegion.anImage4249, 0, 0, null)
                     } catch (exception: Exception) {
                         graphics.setColor(Color.black)
                         graphics.fillRect(0, 0, LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)

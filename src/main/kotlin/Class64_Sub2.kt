@@ -55,7 +55,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var aShortArray5470: ShortArray? = null
     private var anInt5472 = 0
     private var anIntArray5473: IntArray? = null
-    private var aClass342Array5474: Array<Class342?>? = null
+    private var aWidgetRedrawRegionArray5474: Array<WidgetRedrawRegion?>? = null
     private var anInt5475 = 0
     private var aFloatArray5476: FloatArray? = null
     private var aBoolean5477 = false
@@ -245,9 +245,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         anInt5456++
     }
 
-    public override fun method604(): Array<Class342?>? {
+    public override fun method604(): Array<WidgetRedrawRegion?>? {
         anInt5449++
-        return aClass342Array5474
+        return aWidgetRedrawRegionArray5474
     }
 
     public override fun LA(i: Int) {
@@ -484,7 +484,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         anInt5500++
         if (aBoolean5402) {
             aBoolean5402 = false
-            if (aModelFacePriorityNodeArray5457 == null && aClass342Array5474 == null && aClass353Array5524 == null) {
+            if (aModelFacePriorityNodeArray5457 == null && aWidgetRedrawRegionArray5474 == null && aClass353Array5524 == null) {
                 if (anIntArray5511 != null && !VarpStore.method1317(anInt5472, (-91).toByte(), anInt5463)) {
                     if (aBufferToggleState_5520 == null || aBufferToggleState_5520!!.method2197((-62).toByte())) {
                         if (!aBoolean5477) method675(0)
@@ -1157,7 +1157,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 class64_sub2_154_.anInt5507 = anInt5507
                 class64_sub2_154_.anInt5443 = anInt5443
             } else class64_sub2_154_.aBoolean5477 = false
-            class64_sub2_154_.aClass342Array5474 = aClass342Array5474
+            class64_sub2_154_.aWidgetRedrawRegionArray5474 = aWidgetRedrawRegionArray5474
             class64_sub2_154_.aShortArray5432 = aShortArray5432
             class64_sub2_154_.anIntArrayArray5492 = anIntArrayArray5492
             class64_sub2_154_.anIntArray5455 = anIntArray5455
@@ -1213,17 +1213,17 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         i++
                     }
                 }
-                if (aClass342Array5474 == null) break
+                if (aWidgetRedrawRegionArray5474 == null) break
                 var i = 0
-                while (aClass342Array5474!!.size > i) {
-                    val class342 = aClass342Array5474!![i]!!
-                    var class342_178_: Class342? = class342
-                    if (class342.aClass342_4248 != null) class342_178_ = class342.aClass342_4248
+                while (aWidgetRedrawRegionArray5474!!.size > i) {
+                    val class342 = aWidgetRedrawRegionArray5474!![i]!!
+                    var widgetRedrawRegion_178_: WidgetRedrawRegion? = class342
+                    if (class342.aWidgetRedrawRegion_4248 != null) widgetRedrawRegion_178_ = class342.aWidgetRedrawRegion_4248
                     if (class342.aAbstractCameraTransform_4252 != null) class342.aAbstractCameraTransform_4252!!.method898(class101_sub2)
                     else class342.aAbstractCameraTransform_4252 = class101_sub2.method907()
-                    class342_178_!!.anInt4238 = (((anIntArray5519!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5700) + ((anIntArray5511!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5711)) + ((anIntArray5429!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5704)) + class101_sub2.aFloat5729).toInt()
-                    class342_178_.anInt4239 = (((anIntArray5429!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (anIntArray5519!![(class342.anInt4244)]).toFloat()) + ((anIntArray5511!![(class342.anInt4244)]).toFloat() * (class101_sub2.aFloat5708))) + class101_sub2.aFloat5710).toInt()
-                    class342_178_.anInt4240 = (((anIntArray5519!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5691) + ((anIntArray5511!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5736)) + ((anIntArray5429!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5716)) + class101_sub2.aFloat5724).toInt()
+                    widgetRedrawRegion_178_!!.anInt4238 = (((anIntArray5519!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5700) + ((anIntArray5511!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5711)) + ((anIntArray5429!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5704)) + class101_sub2.aFloat5729).toInt()
+                    widgetRedrawRegion_178_.anInt4239 = (((anIntArray5429!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (anIntArray5519!![(class342.anInt4244)]).toFloat()) + ((anIntArray5511!![(class342.anInt4244)]).toFloat() * (class101_sub2.aFloat5708))) + class101_sub2.aFloat5710).toInt()
+                    widgetRedrawRegion_178_.anInt4240 = (((anIntArray5519!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5691) + ((anIntArray5511!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5736)) + ((anIntArray5429!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5716)) + class101_sub2.aFloat5724).toInt()
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
@@ -1942,7 +1942,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 aShortArray5494 = modelDefinition.aShortArray1842
                 anInt5433 = modelDefinition.anInt1821
                 anIntArray5511 = modelDefinition.anIntArray1841
-                aClass342Array5474 = modelDefinition.aClass342Array1866
+                aWidgetRedrawRegionArray5474 = modelDefinition.aWidgetRedrawRegionArray1866
                 val class371s: Array<Class371?> = arrayOfNulls<Class371>(anInt5433)
                 aModelFacePriorityNodeArray5457 = modelDefinition.aModelFacePriorityNodeArray1846
                 if (modelDefinition.aRectangleBoundsArray1832 != null) {

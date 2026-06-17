@@ -3,14 +3,17 @@ import NodeDeque.Companion.method1992
 import PositionedSceneNode.Companion.method2519
 import java.awt.Image
 
-class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
+/*
+ * Class342
+ */
+class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244: Int) {
     @JvmField
     var anInt4238: Int = 0
     @JvmField
     var anInt4239: Int = 0
     @JvmField
     var anInt4240: Int = 0
-    var aClass342_4248: Class342? = null
+    var aWidgetRedrawRegion_4248: WidgetRedrawRegion? = null
     @JvmField
     var aAbstractCameraTransform_4252: AbstractCameraTransform? = null
     fun method2685(i: Byte): SpotAnimVector {
@@ -19,10 +22,10 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
         return method1943(false, this.anInt4245)
     }
 
-    fun method2687(i: Byte, i_11_: Int): Class342? {
+    fun method2687(i: Byte, i_11_: Int): WidgetRedrawRegion? {
         anInt4241++
         if (i < 61) return null
-        return Class342(this.anInt4245, i_11_)
+        return WidgetRedrawRegion(this.anInt4245, i_11_)
     }
 
     companion object {

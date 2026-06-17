@@ -394,30 +394,30 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                                 i_68_++
                             }
                             var modelFacePriorityNodeS_71_: Array<ModelFacePriorityNode?>? = null
-                            var class342s_72_: Array<Class342?>? = null
+                            var widgetRedrawRegionS_72_: Array<WidgetRedrawRegion?>? = null
                             if (class64_65_ != null) {
                                 class64_65_.method620(abstractCameraTransform)
                                 modelFacePriorityNodeS_71_ = class64_65_.method619()
-                                class342s_72_ = class64_65_.method604()
+                                widgetRedrawRegionS_72_ = class64_65_.method604()
                             }
-                            if (class342s_72_ != null) {
+                            if (widgetRedrawRegionS_72_ != null) {
                                 i_70_++
-                                i_69_ += class342s_72_.size
+                                i_69_ += widgetRedrawRegionS_72_.size
                             }
                             if (modelFacePriorityNodeS_71_ != null) {
                                 i_68_++
                                 i_67_ += modelFacePriorityNodeS_71_.size
                             }
                             var modelFacePriorityNodeS_73_: Array<ModelFacePriorityNode?>? = null
-                            var class342s_74_: Array<Class342?>? = null
+                            var widgetRedrawRegionS_74_: Array<WidgetRedrawRegion?>? = null
                             if (class64_66_ != null) {
                                 class64_66_.method620(abstractCameraTransform)
                                 modelFacePriorityNodeS_73_ = class64_66_.method619()
-                                class342s_74_ = class64_66_.method604()
+                                widgetRedrawRegionS_74_ = class64_66_.method604()
                             }
-                            if (class342s_74_ != null) {
+                            if (widgetRedrawRegionS_74_ != null) {
                                 i_70_++
-                                i_69_ += class342s_74_.size
+                                i_69_ += widgetRedrawRegionS_74_.size
                             }
                             if (modelFacePriorityNodeS_73_ != null) {
                                 i_67_ += modelFacePriorityNodeS_73_.size
@@ -443,25 +443,25 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                                 else if (modelFacePriorityNodeS_73_ != null) modelFacePriorityNodeS_75_ = modelFacePriorityNodeS_73_
                                 else modelFacePriorityNodeS_75_ = class129s
                                 val object_77_: Any? = null
-                                val class342s_78_: Array<Class342?>?
+                                val widgetRedrawRegionS_78_: Array<WidgetRedrawRegion?>?
                                 if (i_70_ == 1) {
-                                    if (class342s_72_ != null) class342s_78_ = class342s_72_
-                                    else if (class342s_74_ == null) class342s_78_ = class342s
-                                    else class342s_78_ = class342s_74_
+                                    if (widgetRedrawRegionS_72_ != null) widgetRedrawRegionS_78_ = widgetRedrawRegionS_72_
+                                    else if (widgetRedrawRegionS_74_ == null) widgetRedrawRegionS_78_ = class342s
+                                    else widgetRedrawRegionS_78_ = widgetRedrawRegionS_74_
                                 } else {
-                                    class342s_78_ = arrayOfNulls<Class342>(i_69_)
+                                    widgetRedrawRegionS_78_ = arrayOfNulls<WidgetRedrawRegion>(i_69_)
                                     var i_79_ = 0
                                     if (class342s != null) {
-                                        ArrayCopyUtil.method1575(class342s, 0, class342s_78_, i_79_, class342s.size)
+                                        ArrayCopyUtil.method1575(class342s, 0, widgetRedrawRegionS_78_, i_79_, class342s.size)
                                         i_79_ += class342s.size
                                     }
-                                    if (class342s_72_ != null) {
-                                        ArrayCopyUtil.method1575(class342s_72_, 0, class342s_78_, i_79_, class342s_72_.size)
-                                        i_79_ += class342s_72_.size
+                                    if (widgetRedrawRegionS_72_ != null) {
+                                        ArrayCopyUtil.method1575(widgetRedrawRegionS_72_, 0, widgetRedrawRegionS_78_, i_79_, widgetRedrawRegionS_72_.size)
+                                        i_79_ += widgetRedrawRegionS_72_.size
                                     }
-                                    if (class342s_74_ != null) ArrayCopyUtil.method1575(class342s_74_, 0, class342s_78_, i_79_, class342s_74_.size)
+                                    if (widgetRedrawRegionS_74_ != null) ArrayCopyUtil.method1575(widgetRedrawRegionS_74_, 0, widgetRedrawRegionS_78_, i_79_, widgetRedrawRegionS_74_.size)
                                 }
-                                this.aClass318_Sub10_10327!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), modelFacePriorityNodeS_75_, class342s_78_, false)
+                                this.aClass318_Sub10_10327!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), modelFacePriorityNodeS_75_, widgetRedrawRegionS_78_, false)
                             }
                             this.aBoolean10318 = true
                         }
@@ -883,7 +883,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             Class71.aClass76_1208 = Class71.aClass76_1210
             Class71.aClass76_1208!!.method775(69.toByte())
             Class348_Sub1_Sub2.aByteArrayArray8816 = null
-            Class342.anIntArrayArray4253 = null
+            WidgetRedrawRegion.anIntArrayArray4253 = null
             BooleanGraphicsOptionState.aShortArrayArray5847 = null
             if (Class348_Sub40_Sub34.aSceneLoaderThreadArray9432 != null) {
                 WalkingTypeUtil.method1978()

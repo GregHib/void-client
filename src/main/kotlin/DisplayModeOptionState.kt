@@ -169,8 +169,8 @@ class DisplayModeOptionState : GraphicsOptionState {
         fun method1828(i: Int) {
             if (i < 20) method1832(47)
             anInt6104++
-            synchronized(Class342.aClass60_4254!!) {
-                Class342.aClass60_4254!!.method590(0)
+            synchronized(WidgetRedrawRegion.aClass60_4254!!) {
+                WidgetRedrawRegion.aClass60_4254!!.method590(0)
             }
         }
 

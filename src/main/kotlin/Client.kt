@@ -291,7 +291,7 @@ import RsaPacketDecoder.Companion.method2672
 import TileRenderState.Companion.method2676
 import TileRenderState.Companion.method2677
 import TileRenderState.Companion.method2678
-import Class342.Companion.method2682
+import WidgetRedrawRegion.Companion.method2682
 import Class344.Companion.method2690
 import Class345.Companion.method2693
 import Class346_Sub1.Companion.method2705

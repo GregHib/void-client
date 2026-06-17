@@ -38,7 +38,7 @@ class ModelDefinition {
     var aShortArray1862: ShortArray = shortArrayOf()
     var aShortArray1863: ShortArray = shortArrayOf()
     var anIntArray1865: IntArray = intArrayOf()
-    var aClass342Array1866: Array<Class342?>? = null
+    var aWidgetRedrawRegionArray1866: Array<WidgetRedrawRegion?>? = null
     var anIntArray1867: IntArray = intArrayOf()
     var anIntArray1868: IntArray? = null
 
@@ -755,12 +755,12 @@ class ModelDefinition {
             }
             val i_189_ = class348_sub49.readUnsignedByte(255)
             if (i_189_ > 0) {
-                this.aClass342Array1866 = arrayOfNulls<Class342>(i_189_)
+                this.aWidgetRedrawRegionArray1866 = arrayOfNulls<WidgetRedrawRegion>(i_189_)
                 var i_190_ = 0
                 while (i_189_ > i_190_) {
                     val i_191_ = class348_sub49.readUnsignedShort(842397944)
                     val i_192_ = class348_sub49.readUnsignedShort(842397944)
-                    this.aClass342Array1866!![i_190_] = Class342(i_191_, i_192_)
+                    this.aWidgetRedrawRegionArray1866!![i_190_] = WidgetRedrawRegion(i_191_, i_192_)
                     i_190_++
                 }
             }
@@ -895,7 +895,7 @@ class ModelDefinition {
                 bool = bool or (class124_225_.aByteArray1843 != null)
                 if (class124_225_.aRectangleBoundsArray1832 != null) i_218_ += (class124_225_.aRectangleBoundsArray1832!!).size
                 if (class124_225_.aModelFacePriorityNodeArray1846 != null) i_216_ += (class124_225_.aModelFacePriorityNodeArray1846!!).size
-                if (class124_225_.aClass342Array1866 != null) i_217_ += (class124_225_.aClass342Array1866!!).size
+                if (class124_225_.aWidgetRedrawRegionArray1866 != null) i_217_ += (class124_225_.aWidgetRedrawRegionArray1866!!).size
                 bool_222_ = (bool_222_ or (class124_225_.aShortArray1822 != null))
                 bool_221_ = (bool_221_ or (class124_225_.aByteArray1820 != null))
                 if (class124_225_.aByteArray1839 == null) {
@@ -929,7 +929,7 @@ class ModelDefinition {
         if (bool_219_) this.aByteArray1839 = ByteArray(this.anInt1817)
         if (bool) this.aByteArray1843 = ByteArray(this.anInt1817)
         if (i_218_ > 0) this.aRectangleBoundsArray1832 = arrayOfNulls<RectangleBounds>(i_218_)
-        if (i_217_ > 0) this.aClass342Array1866 = arrayOfNulls<Class342>(i_217_)
+        if (i_217_ > 0) this.aWidgetRedrawRegionArray1866 = arrayOfNulls<WidgetRedrawRegion>(i_217_)
         this.anIntArray1868 = IntArray(this.anInt1836)
         if (bool_221_) this.aByteArray1820 = ByteArray(this.anInt1817)
         this.anIntArray1852 = IntArray(this.anInt1836)
@@ -994,11 +994,11 @@ class ModelDefinition {
                         i_231_++
                     }
                 }
-                if (class124_228_.aClass342Array1866 != null) {
+                if (class124_228_.aWidgetRedrawRegionArray1866 != null) {
                     var i_235_ = 0
-                    while ((class124_228_.aClass342Array1866!!).size > i_235_) {
-                        val i_236_ = method1104(class124_228_, 0, class124_228_.aClass342Array1866!![i_235_]!!.anInt4244, i_227_)
-                        this.aClass342Array1866!![i_217_] = class124_228_.aClass342Array1866!![i_235_]!!.method2687(94.toByte(), i_236_)
+                    while ((class124_228_.aWidgetRedrawRegionArray1866!!).size > i_235_) {
+                        val i_236_ = method1104(class124_228_, 0, class124_228_.aWidgetRedrawRegionArray1866!![i_235_]!!.anInt4244, i_227_)
+                        this.aWidgetRedrawRegionArray1866!![i_217_] = class124_228_.aWidgetRedrawRegionArray1866!![i_235_]!!.method2687(94.toByte(), i_236_)
                         i_217_++
                         i_235_++
                     }

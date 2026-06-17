@@ -108,13 +108,13 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             Class65.aClass357ArrayArrayArray1148 = (Array<Array<Array<Class357?>?>?>(i_1_) { Array<Array<Class357?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<Class357>(Class348_Sub41.anInt7054) } })
             Class348_Sub1_Sub1.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
             if (bool) {
-                Class342.anIntArrayArray4253 = Array<IntArray?>(SpotAnimEntity.anInt6451) { IntArray(Class348_Sub41.anInt7054) }
+                WidgetRedrawRegion.anIntArrayArray4253 = Array<IntArray?>(SpotAnimEntity.anInt6451) { IntArray(Class348_Sub41.anInt7054) }
                 Class348_Sub1_Sub2.aByteArrayArray8816 = Array<ByteArray?>(SpotAnimEntity.anInt6451) { ByteArray(Class348_Sub41.anInt7054) }
                 BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(SpotAnimEntity.anInt6451) { ShortArray(Class348_Sub41.anInt7054) }
                 Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = (Array<Array<Array<Class357?>?>?>(1) { Array<Array<Class357?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<Class357>(Class348_Sub41.anInt7054) } })
                 SoundCacheState.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
             } else {
-                Class342.anIntArrayArray4253 = null
+                WidgetRedrawRegion.anIntArrayArray4253 = null
                 Class348_Sub1_Sub2.aByteArrayArray8816 = null
                 BooleanGraphicsOptionState.aShortArrayArray5847 = null
                 Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null

@@ -44,7 +44,7 @@ class Class57 {
         fun method531(i: Byte, class70: Class70?): Int {
             val i_0_ = -45 / ((i - 54) / 43)
             anInt1049++
-            if (Class342.aClass70_4247 != class70) {
+            if (WidgetRedrawRegion.aClass70_4247 != class70) {
                 if (class70 != GlIndexBufferArb.aClass70_8503) {
                     if (SceneObjectEntity.aClass70_8737 != class70) {
                         if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 34166

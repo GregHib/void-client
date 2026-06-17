@@ -76,7 +76,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aConfigFlagUtil_9477)
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 113, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
-                this.aHa_Sub3_4479.method3924(true, false, 0, Class342.aClass70_4247, false)
+                this.aHa_Sub3_4479.method3924(true, false, 0, WidgetRedrawRegion.aClass70_4247, false)
                 this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aClass70_8503)
             } else {
                 this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), 117, (RenderQueueState.aRenderConfigFactory_6519))
@@ -109,21 +109,21 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             this.aHa_Sub3_4479.method3879(-8629)
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 120, ParticleSystemState.aRenderConfigFactory_2207)
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
-                this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
             } else {
                 this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 115, ParticleSystemState.aRenderConfigFactory_2207)
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
                 this.aHa_Sub3_4479.method3897(2, i + -4469)
                 this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), i.toInt() xor 0x21, (ParticleSystemState.aRenderConfigFactory_2207))
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
                 this.aHa_Sub3_4479.method3849(47.toByte(), 1, (SceneObjectEntity.aClass70_8737))
-                this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
+                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
                 this.aHa_Sub3_4479.method3850(64.toByte(), null)
             }
             this.aHa_Sub3_4479.method3897(0, i.toInt() xor 0x114a.inv())
             aBoolean7317 = false
-        } else this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
+        } else this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
         anInt7312++
         if (i.toInt() != 87) aBoolean7311 = true
         this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, i + 13, ParticleSystemState.aRenderConfigFactory_2207)

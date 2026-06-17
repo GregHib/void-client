@@ -44,7 +44,7 @@ class MapElementLookup {
         var aClass45_4147: Class45? = null
         var anInt4149: Int = 0
         fun method2643(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
-            if (Class342.anIntArrayArray4253 != null) Class342.anIntArrayArray4253!![i]!![i_0_] = 0xffffff.inv() or i_1_
+            if (WidgetRedrawRegion.anIntArrayArray4253 != null) WidgetRedrawRegion.anIntArrayArray4253!![i]!![i_0_] = 0xffffff.inv() or i_1_
             if (BooleanGraphicsOptionState.aShortArrayArray5847 != null) BooleanGraphicsOptionState.aShortArrayArray5847!![i]!![i_0_] = i_2_.toShort()
             if (Class348_Sub1_Sub2.aByteArrayArray8816 != null) Class348_Sub1_Sub2.aByteArrayArray8816!![i]!![i_0_] = i_3_.toByte()
         }

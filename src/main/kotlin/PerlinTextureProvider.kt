@@ -18,7 +18,7 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
         var i_13_ = i_12_ + 1
         val f_14_ = f_11_ - i_12_.toFloat()
         val f_15_ = i_4_.toFloat() - f_14_
-        val f_16_ = Class342.method2684(6, f_14_)
+        val f_16_ = WidgetRedrawRegion.method2684(6, f_14_)
         i_13_ = i_13_ and i_10_
         i_12_ = i_12_ and i_10_
         val i_17_ = anIntArray5804[i_12_]
@@ -30,7 +30,7 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
             var i_22_ = i_21_ + 1
             val f_23_ = -i_21_.toFloat() + f_20_
             val f_24_ = -f_23_ + 1.0f
-            val f_25_ = Class342.method2684(i_4_ xor 0x7, f_23_)
+            val f_25_ = WidgetRedrawRegion.method2684(i_4_ xor 0x7, f_23_)
             i_21_ = i_21_ and i_9_
             i_22_ = i_22_ and i_9_
             val i_26_ = anIntArray5804[i_17_ + i_21_]
@@ -45,7 +45,7 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
                 val f_35_ = 1.0f - f_34_
                 i_32_ = i_32_ and i_8_
                 i_33_ = i_33_ and i_8_
-                val f_36_ = Class342.method2684(i_4_ xor 0x7, f_34_)
+                val f_36_ = WidgetRedrawRegion.method2684(i_4_ xor 0x7, f_34_)
                 fs[i_2_++] = f_3_ * (ResourceProvider.method2337(
                     (ResourceProvider.method2337(
                         (ResourceProvider.method2337((GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_26_ + i_32_]), 7), f_15_, -70, f_35_)), true, (GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166(7, (anIntArray5804[i_33_ - -i_26_])), f_15_, -73, f_34_)), f_36_)),
