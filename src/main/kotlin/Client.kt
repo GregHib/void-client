@@ -9,8 +9,8 @@ import MatrixCameraTransform.Companion.method911
 import MatrixCameraTransform.Companion.method913
 import FloatCameraTransform.Companion.method925
 import ProjectionCameraTransform.Companion.method938
-import Class103.method948
-import Class103.method949
+import MinimapDrawController.method948
+import MinimapDrawController.method949
 import Class104.Companion.method953
 import Class106.Companion.method999
 import Class107.Companion.method1004

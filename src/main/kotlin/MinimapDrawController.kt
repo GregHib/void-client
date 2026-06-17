@@ -4,7 +4,7 @@ import Class59_Sub1_Sub1.Companion.method558
 /* Class103 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class103 {
+object MinimapDrawController {
     @JvmField
     var aClass345_1607: Class345? = method558(96)
     @JvmField

@@ -590,7 +590,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class367_Sub4.anInt7310 = 0
             Class150.anInt2053 = 0
             Class315.anInt3954 = 0
-            Class103.anInt1609 = 0
+            MinimapDrawController.anInt1609 = 0
             Class292.anInt4802 = 0
             Class218.anInt2850 = 0
             Class377.anInt9864 = 0
@@ -4039,7 +4039,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub3_Sub5.anInt10405 = 0
             Class348_Sub16_Sub3.anInt8922 = 0
             ProjectionCameraTransform.anInt5758 = 0
-            Class103.anInt1608 = 0
+            MinimapDrawController.anInt1608 = 0
             Class348_Sub49.anInt7142 = 0
             Class189.anInt2521 = 0
             Class258_Sub1.anInt8526 = 0

@@ -1,5 +1,5 @@
 import DelegatingRenderCanvas.Companion.method119
-import Class103.method950
+import MinimapDrawController.method950
 import Class112.Companion.method1053
 import Class175.Companion.method1343
 import Class33.Companion.method338
