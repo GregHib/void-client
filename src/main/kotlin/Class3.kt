@@ -7,7 +7,7 @@ object Class3 {
     @JvmField
     var anInt124: Int = 0
     @JvmField
-    var aClass161_125: Class161? = null
+    var aServerConnectionInfo_125: ServerConnectionInfo? = null
 
     @JvmStatic
     fun method175(i: Byte) {
@@ -30,7 +30,7 @@ object Class3 {
     @JvmStatic
     fun method176(i: Int) {
         aIntRange_123 = null
-        aClass161_125 = null
+        aServerConnectionInfo_125 = null
         if (i != -1) method176(-19)
     }
 }

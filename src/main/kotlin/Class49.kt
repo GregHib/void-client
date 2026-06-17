@@ -88,7 +88,7 @@ class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModel
                 method3076(0, true)
             } else {
                 i_2_ = 2
-                Class161.method1263(true)
+                ServerConnectionInfo.method1263(true)
             }
             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 2) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)

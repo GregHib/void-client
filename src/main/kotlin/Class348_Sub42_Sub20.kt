@@ -68,7 +68,7 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
         }
 
         fun method3283(i: Int) {
-            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777 && (IndexedSprite.aClass161_5199!!.anInt2143 != -1)) method2972((IndexedSprite.aClass161_5199!!.aString2147), (IndexedSprite.aClass161_5199!!.anInt2143), -54)
+            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777 && (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 != -1)) method2972((IndexedSprite.aServerConnectionInfo_5199!!.aString2147), (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143), -54)
             anInt9713++
             val i_7_ = 9 / ((i - 60) / 50)
         }

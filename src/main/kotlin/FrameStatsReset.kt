@@ -196,7 +196,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class48.anInt849 = 0
             Class377.anInt9818 = 0
             Class64_Sub2.anInt5409 = 0
-            Class161.anInt2140 = 0
+            ServerConnectionInfo.anInt2140 = 0
             Player.anInt10559 = 0
             TextureDefinitionLoader.anInt1969 = 0
             Class254.anInt3260 = 0
@@ -246,7 +246,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5577 = 0
             OpenGlRenderer.anInt7647 = 0
             Class286_Sub2.anInt6209 = 0
-            Class161.anInt2149 = 0
+            ServerConnectionInfo.anInt2149 = 0
             Class318_Sub1_Sub2.anInt8734 = 0
             Class294.anInt5027 = 0
             Class34.anInt471 = 0
@@ -1882,7 +1882,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub2.anInt10049 = 0
             Class239_Sub5.anInt5888 = 0
             Class5_Sub1.anInt8336 = 0
-            Class161.anInt2141 = 0
+            ServerConnectionInfo.anInt2141 = 0
             Class318_Sub1_Sub3_Sub1.anInt10016 = 0
             Class348_Sub40_Sub8.anInt9148 = 0
             NativeRenderer.anInt8071 = 0
@@ -2630,7 +2630,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeIndexBuffer.anInt4704 = 0
             Class45.anInt651 = 0
             Class258.anInt4852 = 0
-            Class161.anInt2142 = 0
+            ServerConnectionInfo.anInt2142 = 0
             CacheArchiveIndex.anInt1776 = 0
             Class5_Sub2.anInt8353 = 0
             NativeRenderer.anInt7952 = 0
@@ -3299,7 +3299,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class369_Sub2.anInt8593 = 0
             Class243.anInt3168 = 0
             Class247.anInt3180 = 0
-            Class161.anInt2150 = 0
+            ServerConnectionInfo.anInt2150 = 0
             Class64_Sub3.anInt5606 = 0
             OpenGlRenderer.anInt7654 = 0
             Class318_Sub1_Sub4_Sub2.anInt10103 = 0
@@ -3323,7 +3323,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7192 = 0
             MapLabelMenuEntry.anInt5793 = 0
             Class32.anInt447 = 0
-            Class161.anInt2144 = 0
+            ServerConnectionInfo.anInt2144 = 0
             Class348_Sub1_Sub1.anInt8802 = 0
             Class258.anInt4862 = 0
             Class348_Sub5_Sub1.anInt8831 = 0
@@ -4169,7 +4169,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             for (k1 in 0..5) Class239_Sub26.aClass54Array6114!![k1] = Class54()
 
             for (l1 in 0..24) {
-                Class161.anIntArray2145!![l1] = 0
+                ServerConnectionInfo.anIntArray2145!![l1] = 0
                 Class256.anIntArray3295!![l1] = 0
                 Class186.anIntArray2497!![l1] = 0
             }

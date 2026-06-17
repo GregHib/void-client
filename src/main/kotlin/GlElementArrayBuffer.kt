@@ -9,7 +9,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
     public override fun method1152(i: Int) {
         anInt4840++
         this.aHa_Sub2_1927!!.method3793(1, this)
-        if (i >= -78) aClass161_4839 = null
+        if (i >= -78) aServerConnectionInfo_4839 = null
     }
 
     override fun method34(i: Int): Int {
@@ -53,7 +53,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         var anInt4836: Int = 0
         var anInt4838: Int = 0
         @JvmField
-        var aClass161_4839: Class161? = null
+        var aServerConnectionInfo_4839: ServerConnectionInfo? = null
         var anInt4840: Int = 0
         var anInt4841: Int = 0
         var anInt4842: Int = 0
@@ -67,7 +67,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         @JvmStatic
         fun method1155(i: Byte) {
             aClass251_4835 = null
-            aClass161_4839 = null
+            aServerConnectionInfo_4839 = null
             val i_2_ = -29 / ((i - -49) / 43)
             aClass45_4843 = null
             aCharArray4845 = null
@@ -116,7 +116,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         }
 
         fun method1158(i: Int, i_9_: Int, i_10_: Int): Boolean {
-            if (i_9_ != -1) aClass161_4839 = null
+            if (i_9_ != -1) aServerConnectionInfo_4839 = null
             anInt4844++
             return (i_10_ and 0x180) != 0
         }

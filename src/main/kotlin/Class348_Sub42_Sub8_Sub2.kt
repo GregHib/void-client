@@ -1275,7 +1275,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     bool_156_ = true
                     var i_157_ = 0
                     while (i > i_157_) {
-                        if (((Class3.aClass161_125!!.anInt2143 != Renderer.anIntArray4578!![i_157_]) && (Renderer.anIntArray4578!![i_157_ - -1] == Class3.aClass161_125!!.anInt2143)) || (Renderer.anIntArray4578!![i_157_] == 0 && (Renderer.anIntArray4578!![1 + i_157_] != 0))) {
+                        if (((Class3.aServerConnectionInfo_125!!.anInt2143 != Renderer.anIntArray4578!![i_157_]) && (Renderer.anIntArray4578!![i_157_ - -1] == Class3.aServerConnectionInfo_125!!.anInt2143)) || (Renderer.anIntArray4578!![i_157_] == 0 && (Renderer.anIntArray4578!![1 + i_157_] != 0))) {
                             val i_158_ = Renderer.anIntArray4578!![i_157_]
                             Renderer.anIntArray4578!![i_157_] = Renderer.anIntArray4578!![1 + i_157_]
                             Renderer.anIntArray4578!![i_157_ - -1] = i_158_
@@ -1634,7 +1634,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_214_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_215_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 Class186.anIntArray2497!![i_214_] = i_215_
-                Class161.anIntArray2145!![i_214_] = i
+                ServerConnectionInfo.anIntArray2145!![i_214_] = i
                 Class256.anIntArray3295!![i_214_] = 1
                 val i_216_ = OutputStream_Sub1.anIntArray100!![i_214_] + -1
                 var i_217_ = 0

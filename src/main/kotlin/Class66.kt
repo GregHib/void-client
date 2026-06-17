@@ -2337,7 +2337,7 @@ object Class66 {
                     return
                 }
                 if (i == 7003) {
-                    Class161.method1263(true)
+                    ServerConnectionInfo.method1263(true)
                     Class348_Sub20.method2953((-106).toByte())
                     method243(37)
                     RenderNode.aBoolean9719 = false
@@ -3910,7 +3910,7 @@ object Class66 {
                 }
                 if (i == 3305) {
                     val i_324_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class161.anIntArray2145!![i_324_]
+                    anIntArray1149!![anInt1173++] = ServerConnectionInfo.anIntArray2145!![i_324_]
                     return
                 }
                 if (i == 3306) {
@@ -3983,7 +3983,7 @@ object Class66 {
                     return
                 }
                 if (i == 3318) {
-                    anIntArray1149!![anInt1173++] = Class3.aClass161_125!!.anInt2143
+                    anIntArray1149!![anInt1173++] = Class3.aServerConnectionInfo_125!!.anInt2143
                     return
                 }
                 if (i == 3321) {

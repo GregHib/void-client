@@ -33,13 +33,13 @@ class IndexedSprite : Sprite {
         @JvmField
         var anInt5198: Int = 0
         @JvmField
-        var aClass161_5199: Class161? = null
+        var aServerConnectionInfo_5199: ServerConnectionInfo? = null
 
         @JvmStatic
         fun method162(i: Byte) {
             aStringArray5197 = null
-            if (i >= -67) aClass161_5199 = null
-            aClass161_5199 = null
+            if (i >= -67) aServerConnectionInfo_5199 = null
+            aServerConnectionInfo_5199 = null
         }
 
         @JvmStatic

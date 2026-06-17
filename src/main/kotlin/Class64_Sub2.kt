@@ -975,7 +975,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 class64_sub2_154_.aClass290_5520!!.anInterface5_Impl1_3711 = aClass290_5520!!.anInterface5_Impl1_3711
                 class64_sub2_154_.aClass290_5520!!.aBoolean3714 = aClass290_5520!!.aBoolean3714
                 class64_sub2_154_.aClass290_5520!!.aBoolean3709 = true
-            } else if (!Class161.method1258(i, -9301, anInt5472)) class64_sub2_154_.aClass290_5520 = null
+            } else if (!ServerConnectionInfo.method1258(i, -9301, anInt5472)) class64_sub2_154_.aClass290_5520 = null
             else class64_sub2_154_.aClass290_5520 = aClass290_5520
             if (Class239_Sub26.method1833((-122).toByte(), i, anInt5472)) {
                 if (class64_sub2_153_!!.aShortArray5486 != null && (anInt5478 <= class64_sub2_153_.aShortArray5486!!.size)) class64_sub2_154_.aShortArray5486 = class64_sub2_153_.aShortArray5486
@@ -3345,7 +3345,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             aBoolean5462 = bool_765_
             anInt5472 = i_764_
             aHa_Sub3_5419 = var_ha_Sub3
-            if (bool || Class161.method1258(anInt5463, -9301, anInt5472)) aClass290_5520 = Class290(Class264.method2015(anInt5463, anInt5472, 7))
+            if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aClass290_5520 = Class290(Class264.method2015(anInt5463, anInt5472, 7))
             if (bool || method1837(anInt5472, 102, anInt5463)) aClass290_5460 = Class290(Class183.method1379(4, anInt5472, anInt5463))
             if (bool || Class296.method2224(anInt5463, 110.toByte(), anInt5472)) aClass290_5482 = Class290(Class348_Sub42_Sub8_Sub2.method3200(anInt5463, anInt5472, (-82).toByte()))
             if (bool || Class188.method1412((-35).toByte(), anInt5472, anInt5463)) aClass290_5424 = Class290(Crc64Hashable.method1113(anInt5463, anInt5472, -21))

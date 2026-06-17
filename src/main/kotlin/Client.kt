@@ -63,7 +63,7 @@ import SettingsCrcWriter.method1246
 import HeapInfoRecord.Companion.method1249
 import Class16.method260
 import KeyboardLayoutConfig.Companion.method1254
-import Class161.Companion.method1261
+import ServerConnectionInfo.Companion.method1261
 import Class162.Companion.method1265
 import Class162.Companion.method1267
 import Class163.Companion.method1269
@@ -551,7 +551,7 @@ class Client : GameAppletFrame() {
     private fun method101(i: Byte) {
         anInt5179++
         if (Class348_Sub4.aClass248_6601!!.anInt3213 > Class239_Sub11.anInt5959) {
-            Class3.aClass161_125!!.method1259(0)
+            Class3.aServerConnectionInfo_125!!.method1259(0)
             Class341.anInt4235 = (Class348_Sub4.aClass248_6601!!.anInt3213 * 50 + -50) * 5
             if (Class341.anInt4235 > 3000) Class341.anInt4235 = 3000
             if (Class348_Sub4.aClass248_6601!!.anInt3213 >= 2 && Class348_Sub4.aClass248_6601!!.anInt3214 == 6) {
@@ -579,7 +579,7 @@ class Client : GameAppletFrame() {
         else {
             try {
                 if (Class47.anInt846 == 0) {
-                    Sprite.aLinkedQueueNode_114 = Class3.aClass161_125!!.method1262((Class348_Sub23_Sub1.aClass297_8992!!), 36.toByte())
+                    Sprite.aLinkedQueueNode_114 = Class3.aServerConnectionInfo_125!!.method1262((Class348_Sub23_Sub1.aClass297_8992!!), 36.toByte())
                     Class47.anInt846++
                 }
                 if (Class47.anInt846 == 1) {
@@ -631,7 +631,7 @@ class Client : GameAppletFrame() {
     }
 
     public override fun method92(i: Int) {
-        if (Class161.aBoolean2151) Class226.anInt2964 = 64
+        if (ServerConnectionInfo.aBoolean2151) Class226.anInt2964 = 64
         anInt5177++
         val frame = Frame("Jagex")
         frame.pack()
@@ -642,25 +642,25 @@ class Client : GameAppletFrame() {
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         Class316.aClass348_Sub51_3959 = method247(24916)
-        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) GlElementArrayBuffer.aClass161_4839!!.aString2147 = this.getCodeBase()!!.getHost()
+        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
         else if (method2354(Class8.aClass364_165, i xor 0x7044.inv())) {
-            GlElementArrayBuffer.aClass161_4839!!.aString2147 = this.getCodeBase()!!.getHost()
-            GlElementArrayBuffer.aClass161_4839!!.anInt2148 = 40000 - -GlElementArrayBuffer.aClass161_4839!!.anInt2143
-            Class255.aClass161_3285!!.anInt2148 = Class255.aClass161_3285!!.anInt2143 + 40000
-            GlElementArrayBuffer.aClass161_4839!!.anInt2138 = 50000 - -GlElementArrayBuffer.aClass161_4839!!.anInt2143
-            Class348_Sub40_Sub35.aClass161_9443!!.anInt2148 = (Class348_Sub40_Sub35.aClass161_9443!!.anInt2143 + 40000)
-            Class255.aClass161_3285!!.anInt2138 = 50000 - -Class255.aClass161_3285!!.anInt2143
-            Class348_Sub40_Sub35.aClass161_9443!!.anInt2138 = (Class348_Sub40_Sub35.aClass161_9443!!.anInt2143 + 50000)
+            GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
+            GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2148 = 40000 - -GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143
+            Class255.aServerConnectionInfo_3285!!.anInt2148 = Class255.aServerConnectionInfo_3285!!.anInt2143 + 40000
+            GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2138 = 50000 - -GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143
+            Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2148 = (Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143 + 40000)
+            Class255.aServerConnectionInfo_3285!!.anInt2138 = 50000 - -Class255.aServerConnectionInfo_3285!!.anInt2143
+            Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2138 = (Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143 + 50000)
         } else if (Class76.aClass364_1279 == Class8.aClass364_165) {
-            GlElementArrayBuffer.aClass161_4839!!.aString2147 = "127.0.0.1"
-            Class255.aClass161_3285!!.aString2147 = "127.0.0.1"
-            GlElementArrayBuffer.aClass161_4839!!.anInt2148 = (40000 + GlElementArrayBuffer.aClass161_4839!!.anInt2143)
-            Class348_Sub40_Sub35.aClass161_9443!!.aString2147 = "127.0.0.1"
-            Class255.aClass161_3285!!.anInt2148 = 40000 - -Class255.aClass161_3285!!.anInt2143
-            Class348_Sub40_Sub35.aClass161_9443!!.anInt2148 = 40000 - -Class348_Sub40_Sub35.aClass161_9443!!.anInt2143
-            GlElementArrayBuffer.aClass161_4839!!.anInt2138 = (GlElementArrayBuffer.aClass161_4839!!.anInt2143 + 50000)
-            Class255.aClass161_3285!!.anInt2138 = Class255.aClass161_3285!!.anInt2143 + 50000
-            Class348_Sub40_Sub35.aClass161_9443!!.anInt2138 = 50000 - -Class348_Sub40_Sub35.aClass161_9443!!.anInt2143
+            GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = "127.0.0.1"
+            Class255.aServerConnectionInfo_3285!!.aString2147 = "127.0.0.1"
+            GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2148 = (40000 + GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143)
+            Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.aString2147 = "127.0.0.1"
+            Class255.aServerConnectionInfo_3285!!.anInt2148 = 40000 - -Class255.aServerConnectionInfo_3285!!.anInt2143
+            Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2148 = 40000 - -Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143
+            GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2138 = (GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143 + 50000)
+            Class255.aServerConnectionInfo_3285!!.anInt2138 = Class255.aServerConnectionInfo_3285!!.anInt2143 + 50000
+            Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2138 = 50000 - -Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143
         }
         Class336.aShortArray4172 = ShortArray(256)
         Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172
@@ -680,7 +680,7 @@ class Client : GameAppletFrame() {
             SpriteLoadValidator.aShortArrayArray4791 = Class348_Sub40_Sub32.aShortArrayArray9424
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub12.aShortArrayArrayArray6736
         }
-        Class3.aClass161_125 = GlElementArrayBuffer.aClass161_4839
+        Class3.aServerConnectionInfo_125 = GlElementArrayBuffer.aServerConnectionInfo_4839
         try {
             Class348_Sub40_Sub27.aClipboard9357 = Class79.aClient1367!!.getToolkit().getSystemClipboard()
         } catch (exception: Exception) {
@@ -1308,14 +1308,14 @@ class Client : GameAppletFrame() {
     public override fun init() {
         anInt5180++
         if (this.method89(48)) {
-            GlElementArrayBuffer.aClass161_4839 = Class161()
-            GlElementArrayBuffer.aClass161_4839!!.anInt2143 = this.getParameter("worldid")!!.toInt()
-            Class255.aClass161_3285 = Class161()
-            Class255.aClass161_3285!!.anInt2143 = this.getParameter("lobbyid")!!.toInt()
-            Class255.aClass161_3285!!.aString2147 = this.getParameter("lobbyaddress")
-            Class348_Sub40_Sub35.aClass161_9443 = Class161()
-            Class348_Sub40_Sub35.aClass161_9443!!.anInt2143 = this.getParameter("demoid")!!.toInt()
-            Class348_Sub40_Sub35.aClass161_9443!!.aString2147 = this.getParameter("demoaddress")
+            GlElementArrayBuffer.aServerConnectionInfo_4839 = ServerConnectionInfo()
+            GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143 = this.getParameter("worldid")!!.toInt()
+            Class255.aServerConnectionInfo_3285 = ServerConnectionInfo()
+            Class255.aServerConnectionInfo_3285!!.anInt2143 = this.getParameter("lobbyid")!!.toInt()
+            Class255.aServerConnectionInfo_3285!!.aString2147 = this.getParameter("lobbyaddress")
+            Class348_Sub40_Sub35.aServerConnectionInfo_9443 = ServerConnectionInfo()
+            Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143 = this.getParameter("demoid")!!.toInt()
+            Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.aString2147 = this.getParameter("demoaddress")
             Class8.aClass364_165 = (Class348_Sub8.method2776((-93).toByte(), this.getParameter("modewhere")!!.toInt()))
             if (Class76.aClass364_1279 == Class8.aClass364_165) {
                 Class8.aClass364_165 = GroundItemRenderState.aClass364_1657
@@ -1371,7 +1371,7 @@ class Client : GameAppletFrame() {
             Class348_Sub23_Sub3.aString9043 = this.getParameter("sskey")
             if (Class348_Sub23_Sub3.aString9043 != null && Class348_Sub23_Sub3.aString9043!!.length < 2) Class348_Sub23_Sub3.aString9043 = null
             val string_29_ = this.getParameter("force64mb")
-            if (string_29_ != null && string_29_ == "true") Class161.aBoolean2151 = true
+            if (string_29_ != null && string_29_ == "true") ServerConnectionInfo.aBoolean2151 = true
             val string_30_ = this.getParameter("worldflags")
             if (string_30_ != null) {
                 try {
@@ -1971,12 +1971,12 @@ class Client : GameAppletFrame() {
             try {
                 try {
                     if (strings.size != 6) method518("Argument count", 44.toByte())
-                    GlElementArrayBuffer.aClass161_4839 = Class161()
-                    GlElementArrayBuffer.aClass161_4839!!.anInt2143 = strings[0].toInt()
-                    Class255.aClass161_3285 = Class161()
-                    Class255.aClass161_3285!!.anInt2143 = strings[1].toInt()
-                    Class348_Sub40_Sub35.aClass161_9443 = Class161()
-                    Class348_Sub40_Sub35.aClass161_9443!!.anInt2143 = strings[2].toInt()
+                    GlElementArrayBuffer.aServerConnectionInfo_4839 = ServerConnectionInfo()
+                    GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143 = strings[0].toInt()
+                    Class255.aServerConnectionInfo_3285 = ServerConnectionInfo()
+                    Class255.aServerConnectionInfo_3285!!.anInt2143 = strings[1].toInt()
+                    Class348_Sub40_Sub35.aServerConnectionInfo_9443 = ServerConnectionInfo()
+                    Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143 = strings[2].toInt()
                     Class8.aClass364_165 = Class76.aClass364_1279
                     if (strings[3] == "live") SceneRegionState.aClass231_196 = Class68.aClass231_1189
                     else if (strings[3] != "rc") {
@@ -2000,7 +2000,7 @@ class Client : GameAppletFrame() {
                             } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class286_Sub6.aClass230_6262
                         } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = GlRectangleTexture.aClass230_8638
                     } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = ParticleEmitterNode.aClass230_186
-                    Class161.aBoolean2151 = false
+                    ServerConnectionInfo.aBoolean2151 = false
                     Class239_Sub12.aString5966 = ""
                     TextureMetadataProvider.aLong4615 = 0L
                     Class348_Sub23_Sub3.aString9043 = null

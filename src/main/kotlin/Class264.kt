@@ -1,4 +1,4 @@
-import Class161.Companion.method1258
+import ServerConnectionInfo.Companion.method1258
 import Class348_Sub40_Sub3.Companion.method3056
 import Class348_Sub40_Sub9.Companion.method3073
 

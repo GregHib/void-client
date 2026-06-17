@@ -85,7 +85,7 @@ class Class348_Sub40_Sub35 : Class348_Sub40(1, true) {
             anInt9445 = class348_sub49.readUnsignedShort(842397944)
         } while (false)
         anInt9442++
-        if (i_18_ != 31015) aClass161_9443 = null
+        if (i_18_ != 31015) aServerConnectionInfo_9443 = null
     }
 
     companion object {
@@ -96,14 +96,14 @@ class Class348_Sub40_Sub35 : Class348_Sub40(1, true) {
         @JvmField
         var anInt9442: Int = 0
         @JvmField
-        var aClass161_9443: Class161? = null
+        var aServerConnectionInfo_9443: ServerConnectionInfo? = null
         @JvmField
         var anInt9444: Int = 0
         @JvmField
         var anInt9446: Int = 0
         @JvmStatic
         fun method3144(i: Byte) {
-            aClass161_9443 = null
+            aServerConnectionInfo_9443 = null
             if (i < 34) method3144(127.toByte())
         }
     }

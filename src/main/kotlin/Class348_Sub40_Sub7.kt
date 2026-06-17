@@ -251,7 +251,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     var i_41_ = -256
                                                     if (i_40_ > 98304) {
                                                         i_41_ = -65536
-                                                        if (Class161.aBoolean2151) {
+                                                        if (ServerConnectionInfo.aBoolean2151) {
                                                             Class46.method427(-35)
                                                             for (i_42_ in 0..9) System.gc()
                                                             i_40_ = (((runtime.totalMemory()) - (runtime.freeMemory())) / 1024L).toInt()

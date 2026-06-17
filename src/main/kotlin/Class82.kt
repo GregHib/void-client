@@ -174,7 +174,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string.equals("rotateconnectmethods", ignoreCase = true)) {
-                            Class3.aClass161_125!!.method1259(0)
+                            Class3.aServerConnectionInfo_125!!.method1259(0)
                             method94("Rotated connection methods", i.toInt() xor 0x13.inv())
                             return
                         }
@@ -469,7 +469,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string == "getworld") {
-                            method94(("w: " + (Class3.aClass161_125!!.anInt2143)), -120)
+                            method94(("w: " + (Class3.aServerConnectionInfo_125!!.anInt2143)), -120)
                             return
                         }
                         if (string.startsWith("pc")) {

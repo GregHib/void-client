@@ -437,7 +437,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                         Class47.method447((-59).toByte())
                     } else if (i_7_ <= 1000) {
                         i_6_ = 2
-                        Class161.method1263(true)
+                        ServerConnectionInfo.method1263(true)
                     } else {
                         Class348_Sub40_Sub12.method3076(0, true)
                         i_6_ = 1

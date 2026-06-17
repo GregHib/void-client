@@ -6,7 +6,7 @@ import Class76.Companion.method773
 /* Class161 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class161 {
+class ServerConnectionInfo {
     @JvmField
     var anInt2138: Int
     private var aBoolean2139 = false
@@ -33,11 +33,11 @@ class Class161 {
         return class297.method2235(aBoolean2139, (if (aBoolean2146) this.anInt2138 else this.anInt2148), this.aString2147, i.toInt() xor 0x6e65)
     }
 
-    fun method1264(i: Byte, class161_2_: Class161?): Boolean {
+    fun method1264(i: Byte, serverConnectionInfo_2_: ServerConnectionInfo?): Boolean {
         if (i <= 69) return false
         anInt2141++
-        if (class161_2_ != null) {
-            return (this.anInt2143 == class161_2_.anInt2143) && this.aString2147 == class161_2_.aString2147
+        if (serverConnectionInfo_2_ != null) {
+            return (this.anInt2143 == serverConnectionInfo_2_.anInt2143) && this.aString2147 == serverConnectionInfo_2_.aString2147
         }
         return false
     }

@@ -229,7 +229,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         var anInt3283: Int = 0
         var anInt3284: Int = 0
         @JvmField
-        var aClass161_3285: Class161? = null
+        var aServerConnectionInfo_3285: ServerConnectionInfo? = null
         fun method1929(i: Byte): Array<Class74?> {
             if (i.toInt() != -19) method1933(null, null, false)
             anInt3280++
@@ -241,7 +241,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             anIntArray3273 = null
             if (bool != true) aIntRange_3265 = null
             aIntRange_3265 = null
-            aClass161_3285 = null
+            aServerConnectionInfo_3285 = null
         }
 
         fun method1933(class45: Class45?, var_renderer: Renderer?, bool: Boolean) {

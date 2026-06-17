@@ -68,7 +68,7 @@ object Class62 {
                     i_3_ = 1
                 } else {
                     i_3_ = 2
-                    Class161.method1263(true)
+                    ServerConnectionInfo.method1263(true)
                 }
             } else {
                 i_3_ = 3

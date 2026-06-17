@@ -148,15 +148,15 @@ class Class88 {
                             GlRectangleTexture.method254(-5, (-111).toByte())
                             return
                         }
-                        if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285!!.method1259(0)
-                        else Class3.aClass161_125!!.method1259(0)
+                        if (Class239_Sub12.anInt5969 != 2) Class255.aServerConnectionInfo_3285!!.method1259(0)
+                        else Class3.aServerConnectionInfo_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         Class225.anInt2955 = 1
                         SceneRegionState.anInt197 = 0
                     }
                     if (Class225.anInt2955 == 1) {
-                        if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (Class3.aClass161_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
-                        else FrameStatsReset.aLinkedQueueNode_5800 = (Class255.aClass161_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (Class3.aServerConnectionInfo_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        else FrameStatsReset.aLinkedQueueNode_5800 = (Class255.aServerConnectionInfo_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
                         Class225.anInt2955 = 2
                     }
                     if (Class225.anInt2955 == 2) {
@@ -376,15 +376,15 @@ class Class88 {
                                 LocalPlayerState.aPlayer_1907!!.aString10544 = LocalPlayerState.aPlayer_1907!!.aString10537
                                 GameAppletFrame.anInt37 = class348_sub49_sub2.readUnsignedByte(255)
                                 Class348_Sub1.anInt6551 = class348_sub49_sub2.readInt((-126).toByte())
-                                IndexedSprite.aClass161_5199 = Class161()
-                                IndexedSprite.aClass161_5199!!.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944)
-                                if (IndexedSprite.aClass161_5199!!.anInt2143 == 65535) IndexedSprite.aClass161_5199!!.anInt2143 = -1
-                                IndexedSprite.aClass161_5199!!.aString2147 = class348_sub49_sub2.method3371(-13487)
+                                IndexedSprite.aServerConnectionInfo_5199 = ServerConnectionInfo()
+                                IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944)
+                                if (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 == 65535) IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 = -1
+                                IndexedSprite.aServerConnectionInfo_5199!!.aString2147 = class348_sub49_sub2.method3371(-13487)
                                 if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-                                    IndexedSprite.aClass161_5199!!.anInt2138 = (50000 + (IndexedSprite.aClass161_5199!!.anInt2143))
-                                    IndexedSprite.aClass161_5199!!.anInt2148 = (40000 + (IndexedSprite.aClass161_5199!!.anInt2143))
+                                    IndexedSprite.aServerConnectionInfo_5199!!.anInt2138 = (50000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
+                                    IndexedSprite.aServerConnectionInfo_5199!!.anInt2148 = (40000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
                                 }
-                                if (Class8.aClass364_165 != Class76.Companion.aClass364_1279 && ((Class3.aClass161_125!!.method1264(94.toByte(), GlElementArrayBuffer.aClass161_4839)) || (Class3.aClass161_125!!.method1264(112.toByte(), (Class348_Sub40_Sub35.aClass161_9443))))) Class348_Sub42_Sub20.method3283(114)
+                                if (Class8.aClass364_165 != Class76.Companion.aClass364_1279 && ((Class3.aServerConnectionInfo_125!!.method1264(94.toByte(), GlElementArrayBuffer.aServerConnectionInfo_4839)) || (Class3.aServerConnectionInfo_125!!.method1264(112.toByte(), (Class348_Sub40_Sub35.aServerConnectionInfo_9443))))) Class348_Sub42_Sub20.method3283(114)
                             }
                             if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !Class206.aBoolean4888) {
                                 try {
@@ -486,8 +486,8 @@ class Class88 {
                         GlRectangleTexture.method254(-4, (-87).toByte())
                         GzipDecompressor.method1215(3.toByte())
                     } else {
-                        if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285!!.method1259(0)
-                        else Class3.aClass161_125!!.method1259(0)
+                        if (Class239_Sub12.anInt5969 != 2) Class255.aServerConnectionInfo_3285!!.method1259(0)
+                        else Class3.aServerConnectionInfo_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         SceneRegionState.anInt197 = 0
                         Class225.anInt2955 = 1
