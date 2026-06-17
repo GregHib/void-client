@@ -1388,17 +1388,17 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             val fs = this.aFloatArray7511
             if (i_371_ < 0) {
                 val i_373_ = `is`!!.size + i_371_
-                Class214.method1578(`is`, -i_371_, `is`, 0, i_373_)
+                ArrayCopyUtil.method1578(`is`, -i_371_, `is`, 0, i_373_)
             } else if (i_371_ > 0) {
                 val i_374_ = `is`!!.size - i_371_
-                Class214.method1578(`is`, 0, `is`, i_371_, i_374_)
+                ArrayCopyUtil.method1578(`is`, 0, `is`, i_371_, i_374_)
             }
             if (i_372_ < 0) {
                 val i_375_ = fs!!.size + i_372_
-                Class214.method1574(fs, -i_372_, fs, 0, i_375_)
+                ArrayCopyUtil.method1574(fs, -i_372_, fs, 0, i_375_)
             } else if (i_372_ > 0) {
                 val i_376_ = fs!!.size - i_372_
-                Class214.method1574(fs, 0, fs, i_372_, i_376_)
+                ArrayCopyUtil.method1574(fs, 0, fs, i_372_, i_376_)
             }
         }
     }

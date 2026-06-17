@@ -24,7 +24,7 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
         anInt2359++
         val i_7_ = 95 % ((15 - i) / 32)
         val strings = arrayOfNulls<String>(1 + anInt2364)
-        Class214.method1575(aStringArray2367, 0, strings, 0, anInt2364 - -1)
+        ArrayCopyUtil.method1575(aStringArray2367, 0, strings, 0, anInt2364 - -1)
         return strings
     }
 
@@ -40,7 +40,7 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
         val i_10_ = 50 % ((3 - i_9_) / 63)
         anInt2358++
         val strings = arrayOfNulls<String>(method1358(i, 108))
-        Class214.method1575(aStringArray2367, 0, strings, 0, aStringArray2367.size)
+        ArrayCopyUtil.method1575(aStringArray2367, 0, strings, 0, aStringArray2367.size)
         aStringArray2367 = strings
     }
 

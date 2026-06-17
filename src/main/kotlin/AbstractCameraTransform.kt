@@ -118,7 +118,7 @@ public abstract class AbstractCameraTransform {
                 Class239_Sub1.anInt5850 = abstractModelRenderers!!.size
                 SizeBoundedSoftCache.anIntArray2330 = IntArray(Class239_Sub1.anInt5850 + 10)
                 Class341.aAbstractModelRendererArray4234 = arrayOfNulls<AbstractModelRenderer>(Class239_Sub1.anInt5850 + 10)
-                Class214.method1575(abstractModelRenderers, 0, Class341.aAbstractModelRendererArray4234!!, 0, Class239_Sub1.anInt5850)
+                ArrayCopyUtil.method1575(abstractModelRenderers, 0, Class341.aAbstractModelRendererArray4234!!, 0, Class239_Sub1.anInt5850)
                 var i_17_ = 0
                 while (Class239_Sub1.anInt5850 > i_17_) {
                     SizeBoundedSoftCache.anIntArray2330!![i_17_] = Class341.aAbstractModelRendererArray4234!![i_17_]!!.method980()

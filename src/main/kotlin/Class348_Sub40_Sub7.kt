@@ -85,7 +85,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                     `is`[i_77_] = is_76_[Class239_Sub22.anInt6076 + -i_77_]
                     i_77_++
                 }
-            } else Class214.method1578(is_76_, 0, `is`, 0, Class348_Sub40_Sub6.Companion.anInt9139)
+            } else ArrayCopyUtil.method1578(is_76_, 0, `is`, 0, Class348_Sub40_Sub6.Companion.anInt9139)
         }
         return `is`
     }

@@ -69,7 +69,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         glGetTexImagei(this.anInt5093, 0, 32993, 5121, is_31_, 0)
         var i_32_ = 0
         while (i_28_ > i_32_) {
-            Class214.method1578(is_31_, anInt8640 * (i_28_ + -1 + (i_27_ + -i_32_)), `is`, i_32_ * i_26_ + i_30_, i_26_)
+            ArrayCopyUtil.method1578(is_31_, anInt8640 * (i_28_ + -1 + (i_27_ + -i_32_)), `is`, i_32_ * i_26_ + i_30_, i_26_)
             i_32_++
         }
     }

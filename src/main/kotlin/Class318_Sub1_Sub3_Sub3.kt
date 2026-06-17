@@ -431,14 +431,14 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                                     modelFacePriorityNodeS_75_ = arrayOfNulls<ModelFacePriorityNode>(i_67_)
                                     var i_76_ = 0
                                     if (class129s != null) {
-                                        Class214.method1575(class129s, 0, modelFacePriorityNodeS_75_, i_76_, class129s.size)
+                                        ArrayCopyUtil.method1575(class129s, 0, modelFacePriorityNodeS_75_, i_76_, class129s.size)
                                         i_76_ += class129s.size
                                     }
                                     if (modelFacePriorityNodeS_71_ != null) {
-                                        Class214.method1575(modelFacePriorityNodeS_71_, 0, modelFacePriorityNodeS_75_, i_76_, modelFacePriorityNodeS_71_.size)
+                                        ArrayCopyUtil.method1575(modelFacePriorityNodeS_71_, 0, modelFacePriorityNodeS_75_, i_76_, modelFacePriorityNodeS_71_.size)
                                         i_76_ += modelFacePriorityNodeS_71_.size
                                     }
-                                    if (modelFacePriorityNodeS_73_ != null) Class214.method1575(modelFacePriorityNodeS_73_, 0, modelFacePriorityNodeS_75_, i_76_, modelFacePriorityNodeS_73_.size)
+                                    if (modelFacePriorityNodeS_73_ != null) ArrayCopyUtil.method1575(modelFacePriorityNodeS_73_, 0, modelFacePriorityNodeS_75_, i_76_, modelFacePriorityNodeS_73_.size)
                                 } else if (modelFacePriorityNodeS_71_ != null) modelFacePriorityNodeS_75_ = modelFacePriorityNodeS_71_
                                 else if (modelFacePriorityNodeS_73_ != null) modelFacePriorityNodeS_75_ = modelFacePriorityNodeS_73_
                                 else modelFacePriorityNodeS_75_ = class129s
@@ -452,14 +452,14 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                                     class342s_78_ = arrayOfNulls<Class342>(i_69_)
                                     var i_79_ = 0
                                     if (class342s != null) {
-                                        Class214.method1575(class342s, 0, class342s_78_, i_79_, class342s.size)
+                                        ArrayCopyUtil.method1575(class342s, 0, class342s_78_, i_79_, class342s.size)
                                         i_79_ += class342s.size
                                     }
                                     if (class342s_72_ != null) {
-                                        Class214.method1575(class342s_72_, 0, class342s_78_, i_79_, class342s_72_.size)
+                                        ArrayCopyUtil.method1575(class342s_72_, 0, class342s_78_, i_79_, class342s_72_.size)
                                         i_79_ += class342s_72_.size
                                     }
-                                    if (class342s_74_ != null) Class214.method1575(class342s_74_, 0, class342s_78_, i_79_, class342s_74_.size)
+                                    if (class342s_74_ != null) ArrayCopyUtil.method1575(class342s_74_, 0, class342s_78_, i_79_, class342s_74_.size)
                                 }
                                 this.aClass318_Sub10_10327!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), modelFacePriorityNodeS_75_, class342s_78_, false)
                             }

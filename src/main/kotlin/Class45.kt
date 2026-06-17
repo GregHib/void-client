@@ -137,7 +137,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
                         if (is_11_ != null) i_43_ = is_11_[i_42_]
                         else i_43_ = i_42_
                         if (i_43_ == i) {
-                            Class214.method1577(is_15_, i_39_, is_38_, i_32_, i_41_)
+                            ArrayCopyUtil.method1577(is_15_, i_39_, is_38_, i_32_, i_41_)
                             i_32_ += i_41_
                         }
                         i_39_ += i_41_
@@ -172,7 +172,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
                     var i_27_ = 0
                     while (i_10_ > i_27_) {
                         i_26_ += class348_sub49.readInt((-126).toByte())
-                        Class214.method1577(is_15_, i_24_, is_22_[i_27_]!!, is_18_[i_27_], i_26_)
+                        ArrayCopyUtil.method1577(is_15_, i_24_, is_22_[i_27_]!!, is_18_[i_27_], i_26_)
                         i_24_ += i_26_
                         is_18_[i_27_] += i_26_
                         i_27_++

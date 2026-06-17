@@ -156,7 +156,7 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
         fun method3258(i: Int, i_11_: Int, fs: FloatArray?): FloatArray {
             anInt9668++
             val fs_12_ = FloatArray(i_11_)
-            Class214.method1574(fs!!, 0, fs_12_, i, i_11_)
+            ArrayCopyUtil.method1574(fs!!, 0, fs_12_, i, i_11_)
             return fs_12_
         }
 

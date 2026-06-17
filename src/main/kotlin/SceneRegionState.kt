@@ -26,7 +26,7 @@ object SceneRegionState {
         anInt195++
         if (i_0_.toInt() != 4) anInt194 = -100
         val `is` = IntArray(4)
-        Class214.method1579(`is`, 0, `is`.size, i)
+        ArrayCopyUtil.method1579(`is`, 0, `is`.size, i)
         method1791(23946, `is`, i_1_, player)
     }
 }

@@ -96,7 +96,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         if (i_36_.toInt() == 112) {
             var i_39_ = 0
             while (i_35_ > i_39_) {
-                Class214.method1578(is_38_, ((-i_39_ + i_35_ + (-1 + i_34_)) * anInt8612), `is`, i_33_ * i_39_ + i_37_, i_33_)
+                ArrayCopyUtil.method1578(is_38_, ((-i_39_ + i_35_ + (-1 + i_34_)) * anInt8612), `is`, i_33_ * i_39_ + i_37_, i_33_)
                 i_39_++
             }
         }

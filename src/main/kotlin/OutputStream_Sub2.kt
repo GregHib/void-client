@@ -31,7 +31,7 @@ class OutputStream_Sub2 : OutputStream() {
             anInt103++
             if (i < 101) method139(34)
             val is_1_ = ByteArray(i_0_)
-            Class214.method1577(`is`!!, 0, is_1_, 0, i_0_)
+            ArrayCopyUtil.method1577(`is`!!, 0, is_1_, 0, i_0_)
             return is_1_
         }
 

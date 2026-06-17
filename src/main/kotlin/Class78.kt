@@ -24,7 +24,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
             if (aLong1321 != -1L && (aLong1321 > aLong1324 || (aLong1324 > anInt1314.toLong() + aLong1321))) method791(-1)
             if (aLong1321 != -1L && (aLong1324 + i_0_.toLong() > aByteArray1305.size.toLong() + aLong1321)) {
                 val i_1_ = (aByteArray1305.size.toLong() + (aLong1321 + -aLong1324)).toInt()
-                Class214.method1577(`is`!!, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_1_)
+                ArrayCopyUtil.method1577(`is`!!, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_1_)
                 i += i_1_
                 i_0_ -= i_1_
                 aLong1324 += i_1_.toLong()
@@ -47,14 +47,14 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
                 else if ((aLong1324 < anInt1320.toLong() + aLong1319) && (i_0_.toLong() + aLong1324 >= aLong1319 + anInt1320.toLong())) l_2_ = anInt1320.toLong() + aLong1319
                 if (l > -1L && l_2_ > l) {
                     val i_3_ = (l_2_ + -l).toInt()
-                    Class214.method1577(`is`!!, (-aLong1324 + l + i.toLong()).toInt(), aByteArray1311, (-aLong1319 + l).toInt(), i_3_)
+                    ArrayCopyUtil.method1577(`is`!!, (-aLong1324 + l + i.toLong()).toInt(), aByteArray1311, (-aLong1319 + l).toInt(), i_3_)
                 }
                 aLong1324 += i_0_.toLong()
                 return
             }
             if (i_0_ > 0) {
                 if (aLong1321 == -1L) aLong1321 = aLong1324
-                Class214.method1577(`is`!!, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_0_)
+                ArrayCopyUtil.method1577(`is`!!, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_0_)
                 aLong1324 += i_0_.toLong()
                 if (aLong1324 + -aLong1321 > anInt1314.toLong()) anInt1314 = (-aLong1321 + aLong1324).toInt()
                 return
@@ -94,7 +94,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
             if (i_5_ + i > `is`.size) throw ArrayIndexOutOfBoundsException(i + (i_5_ - `is`.size))
             if (i_6_ != -16717) return
             if (aLong1321 != -1L && aLong1324 >= aLong1321 && (aLong1324 - -i_5_.toLong() <= anInt1314.toLong() + aLong1321)) {
-                Class214.method1577(aByteArray1305, (-aLong1321 + aLong1324).toInt(), `is`, i, i_5_)
+                ArrayCopyUtil.method1577(aByteArray1305, (-aLong1321 + aLong1324).toInt(), `is`, i, i_5_)
                 aLong1324 += i_5_.toLong()
                 return
             }
@@ -104,7 +104,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
             if (aLong1324 >= aLong1319 && (aLong1319 - -anInt1320.toLong() > aLong1324)) {
                 var i_9_ = (anInt1320.toLong() - (-aLong1319 + aLong1324)).toInt()
                 if (i_5_ < i_9_) i_9_ = i_5_
-                Class214.method1577(aByteArray1311, (aLong1324 + -aLong1319).toInt(), `is`, i, i_9_)
+                ArrayCopyUtil.method1577(aByteArray1311, (aLong1324 + -aLong1319).toInt(), `is`, i, i_9_)
                 aLong1324 += i_9_.toLong()
                 i_5_ -= i_9_
                 i += i_9_
@@ -125,7 +125,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
                 method792((-46).toByte())
                 var i_11_ = i_5_
                 if (anInt1320 < i_11_) i_11_ = anInt1320
-                Class214.method1577(aByteArray1311, 0, `is`, i, i_11_)
+                ArrayCopyUtil.method1577(aByteArray1311, 0, `is`, i, i_11_)
                 i += i_11_
                 aLong1324 += i_11_.toLong()
                 i_5_ -= i_11_
@@ -150,7 +150,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
                 } else l_14_ = aLong1321 - -anInt1314.toLong()
                 if (l_13_ > -1L && (l_13_ < l_14_)) {
                     val i_15_ = (l_14_ + -l_13_).toInt()
-                    Class214.method1577(aByteArray1305, (l_13_ + -aLong1321).toInt(), `is`, i_7_ - -(l_13_ - l).toInt(), i_15_)
+                    ArrayCopyUtil.method1577(aByteArray1305, (l_13_ + -aLong1321).toInt(), `is`, i_7_ - -(l_13_ - l).toInt(), i_15_)
                     if (l_14_ > aLong1324) {
                         i_5_ -= (-aLong1324 + l_14_).toInt()
                         aLong1324 = l_14_
@@ -203,7 +203,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
             else if ((aLong1321 < aLong1319 + anInt1320.toLong()) && (aLong1319 + anInt1320.toLong() <= anInt1314.toLong() + aLong1321)) l_18_ = anInt1320.toLong() + aLong1319
             if (l > -1 && l < l_18_) {
                 val i_19_ = (-l + l_18_).toInt()
-                Class214.method1577(aByteArray1305, (l - aLong1321).toInt(), aByteArray1311, (-aLong1319 + l).toInt(), i_19_)
+                ArrayCopyUtil.method1577(aByteArray1305, (l - aLong1321).toInt(), aByteArray1311, (-aLong1319 + l).toInt(), i_19_)
             }
             aLong1321 = -1L
             anInt1314 = 0

@@ -22,7 +22,7 @@ class Class348_Sub40_Sub24 : Class348_Sub40(0, true) {
                         break
                     }
                 }
-                Class214.method1579(`is`, 0, Class348_Sub40_Sub6.Companion.anInt9139, i_7_)
+                ArrayCopyUtil.method1579(`is`, 0, Class348_Sub40_Sub6.Companion.anInt9139, i_7_)
             } else {
                 for (i_2_ in 0..<Class348_Sub40_Sub6.Companion.anInt9139) {
                     var i_3_ = 0

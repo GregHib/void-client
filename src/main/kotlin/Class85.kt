@@ -137,7 +137,7 @@ class Class85 {
             anInt1468 = 0
         }
         while (anInt1468 < 32) aByteArray1475[anInt1468++] = 0.toByte()
-        Class214.method1577(aByteArray1465, 0, aByteArray1475, 32, 32)
+        ArrayCopyUtil.method1577(aByteArray1465, 0, aByteArray1475, 32, 32)
         method827(0)
         var i_38_ = 0
         if (bool != true) method830(-1, -123, 39.toByte(), false, 61)

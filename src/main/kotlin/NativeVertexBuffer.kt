@@ -54,7 +54,7 @@ class NativeVertexBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i: I
             anInt4829++
             if (i_0_ < 87) method1078(null, 22, -24)
             val is_1_ = ShortArray(i)
-            Class214.method1576(`is`!!, 0, is_1_, 0, i)
+            ArrayCopyUtil.method1576(`is`!!, 0, is_1_, 0, i)
             return is_1_
         }
 

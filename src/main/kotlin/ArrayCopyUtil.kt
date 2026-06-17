@@ -1,7 +1,7 @@
 /* Class214 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class214 {
+object ArrayCopyUtil {
     @JvmStatic
     fun method1573(`is`: IntArray, i: Int, i_0_: Int) {
         var i = i

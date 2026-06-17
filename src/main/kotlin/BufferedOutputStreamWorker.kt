@@ -81,9 +81,9 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
             if (i < 4) method1527(65)
             if (i_1_ + anInt2713 > anInt2715) {
                 val i_4_ = anInt2715 - anInt2713
-                Class214.method1577(`is`, i_2_, aByteArray2706, anInt2713, i_4_)
-                Class214.method1577(`is`, i_2_ - -i_4_, aByteArray2706, 0, -i_4_ + i_1_)
-            } else Class214.method1577(`is`, i_2_, aByteArray2706, anInt2713, i_1_)
+                ArrayCopyUtil.method1577(`is`, i_2_, aByteArray2706, anInt2713, i_4_)
+                ArrayCopyUtil.method1577(`is`, i_2_ - -i_4_, aByteArray2706, 0, -i_4_ + i_1_)
+            } else ArrayCopyUtil.method1577(`is`, i_2_, aByteArray2706, anInt2713, i_1_)
             anInt2713 = (i_1_ + anInt2713) % anInt2715
             (this as Object).notifyAll()
         }

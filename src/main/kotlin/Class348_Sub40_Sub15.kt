@@ -18,7 +18,7 @@ class Class348_Sub40_Sub15 internal constructor(i: Int) : Class348_Sub40(0, true
     override fun method3042(i: Int, i_8_: Int): IntArray? {
         anInt9221++
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
-        if (this.aSpriteSheetCache_7032!!.aBoolean2570) Class214.method1579(`is`, 0, Class348_Sub40_Sub6.Companion.anInt9139, anInt9220)
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) ArrayCopyUtil.method1579(`is`, 0, Class348_Sub40_Sub6.Companion.anInt9139, anInt9220)
         if (i_8_ != 255) method3085(63)
         return `is`
     }

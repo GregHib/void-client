@@ -79,7 +79,7 @@ class Class80 {
     }
 
     fun method809(i: Int, i_4_: Int): IntArray? {
-        Class214.method1573(anIntArray1409!!, 0, i)
+        ArrayCopyUtil.method1573(anIntArray1409!!, 0, i)
         if (i_4_ < 10) return anIntArray1409
         val d = i.toDouble() / (i_4_.toDouble() + 0.0)
         aEnvelopeInterpolator_1418!!.method1453()

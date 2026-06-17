@@ -91,13 +91,13 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
                     val i_10_: Int = Class348_Sub40_Sub6.Companion.anInt9139 + -i_3_
                     for (i_11_ in 0..<i_2_) {
                         val is_12_: IntArray = `is`!![i_11_ + i_4_]!!
-                        Class214.method1579(is_12_, i_3_, i_10_, i_6_)
-                        Class214.method1579(is_12_, 0, i_5_ - i_10_, i_6_)
+                        ArrayCopyUtil.method1579(is_12_, i_3_, i_10_, i_6_)
+                        ArrayCopyUtil.method1579(is_12_, 0, i_5_ - i_10_, i_6_)
                     }
                 } else {
                     var i_13_ = 0
                     while (i_2_ > i_13_) {
-                        Class214.method1579(`is`!![i_13_ + i_4_]!!, i_3_, i_5_, i_6_)
+                        ArrayCopyUtil.method1579(`is`!![i_13_ + i_4_]!!, i_3_, i_5_, i_6_)
                         i_13_++
                     }
                 }
@@ -127,11 +127,11 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
                                 i_25_++
                             }
                         }
-                        if (Class348_Sub40_Sub6.Companion.anInt9139 >= i_19_ + i_18_) Class214.method1579(is_21_, i_18_, i_19_, i_22_)
+                        if (Class348_Sub40_Sub6.Companion.anInt9139 >= i_19_ + i_18_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_22_)
                         else {
                             val i_27_: Int = -i_18_ + Class348_Sub40_Sub6.Companion.anInt9139
-                            Class214.method1579(is_21_, i_18_, i_27_, i_22_)
-                            Class214.method1579(is_21_, 0, i_19_ - i_27_, i_22_)
+                            ArrayCopyUtil.method1579(is_21_, i_18_, i_27_, i_22_)
+                            ArrayCopyUtil.method1579(is_21_, 0, i_19_ - i_27_, i_22_)
                         }
                     } else {
                         val i_28_ = -1 + (-i_20_ + i_2_)
@@ -154,22 +154,22 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
                                     i_32_++
                                 }
                             }
-                            if (i_19_ + i_18_ <= Class348_Sub40_Sub6.Companion.anInt9139) Class214.method1579(is_21_, i_18_, i_19_, i_29_)
+                            if (i_19_ + i_18_ <= Class348_Sub40_Sub6.Companion.anInt9139) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_29_)
                             else {
                                 val i_34_: Int = -i_18_ + Class348_Sub40_Sub6.Companion.anInt9139
-                                Class214.method1579(is_21_, i_18_, i_34_, i_29_)
-                                Class214.method1579(is_21_, 0, -i_34_ + i_19_, i_29_)
+                                ArrayCopyUtil.method1579(is_21_, i_18_, i_34_, i_29_)
+                                ArrayCopyUtil.method1579(is_21_, 0, -i_34_ + i_19_, i_29_)
                             }
                         } else {
                             for (i_35_ in 0..<i_16_) {
                                 is_21_[(NpcSummaryDefinition.method1166(Class239_Sub22.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_
                                 is_21_[NpcSummaryDefinition.method1166(i_35_ + i_3_, (Class239_Sub22.anInt6076))] = is_21_[(NpcSummaryDefinition.method1166(Class239_Sub22.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))]
                             }
-                            if (Class348_Sub40_Sub6.Companion.anInt9139 >= i_18_ - -i_19_) Class214.method1579(is_21_, i_18_, i_19_, i_6_)
+                            if (Class348_Sub40_Sub6.Companion.anInt9139 >= i_18_ - -i_19_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_6_)
                             else {
                                 val i_36_: Int = -i_18_ + Class348_Sub40_Sub6.Companion.anInt9139
-                                Class214.method1579(is_21_, i_18_, i_36_, i_6_)
-                                Class214.method1579(is_21_, 0, i_19_ - i_36_, i_6_)
+                                ArrayCopyUtil.method1579(is_21_, i_18_, i_36_, i_6_)
+                                ArrayCopyUtil.method1579(is_21_, 0, i_19_ - i_36_, i_6_)
                             }
                         }
                     }

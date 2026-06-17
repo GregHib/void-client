@@ -37,7 +37,7 @@ class CollisionMapRegion internal constructor(class230: Class230?, i: Int, class
         val i_9_ = if (i_8_ == (anInt1715.inv())) 0 else 1
         val random = Random()
         val `is` = IntArray(anIntArrayArray1724!![i]!!.size)
-        Class214.method1578(anIntArrayArray1724!![i]!!, 0, `is`, 0, `is`.size)
+        ArrayCopyUtil.method1578(anIntArrayArray1724!![i]!!, 0, `is`, 0, `is`.size)
         var i_10_ = i_9_
         while (`is`.size > i_10_) {
             val i_11_ = i_9_ + ModelDefinition.method1097(80.toByte(), `is`.size - i_9_, random)

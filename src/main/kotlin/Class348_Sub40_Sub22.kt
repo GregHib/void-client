@@ -151,7 +151,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
                     else `is`[i_16_] = anIntArrayArray9286[i_13_]!![i_20_]
                     i_16_++
                 }
-            } else Class214.method1579(`is`, 0, Class348_Sub40_Sub6.Companion.anInt9139, 0)
+            } else ArrayCopyUtil.method1579(`is`, 0, Class348_Sub40_Sub6.Companion.anInt9139, 0)
         }
         if (i_10_ != 255) method3110(44)
         return `is`

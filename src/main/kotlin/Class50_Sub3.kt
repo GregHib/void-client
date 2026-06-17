@@ -102,7 +102,7 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
             anInt5253++
             if (`is` == null) return null
             val is_34_ = ShortArray(`is`.size)
-            Class214.method1576(`is`, 0, is_34_, 0, `is`.size)
+            ArrayCopyUtil.method1576(`is`, 0, is_34_, 0, `is`.size)
             if (i >= -103) Companion.method470(null, (-35).toByte())
             return is_34_
         }

@@ -114,7 +114,7 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
                 while ((Class348_Sub44.anInt7101 > i_11_)) {
                     val class338 = Class294.aClass338Array5060!![i_11_]!!
                     if ((class338.aByte4192.toInt() == i_7_ && i_10_ == class338.aShort4185.toInt() && i_8_ == class338.aShort4193.toInt()) || ((class338.aShort4182.toInt() == i_10_) && (class338.aShort4193.toInt() == i_8_))) {
-                        if (i_11_ != Class348_Sub44.anInt7101) Class214.method1575(Class294.aClass338Array5060!!, 1 + i_11_, Class294.aClass338Array5060!!, i_11_, (Class294.aClass338Array5060!!.size + -i_11_ - 1))
+                        if (i_11_ != Class348_Sub44.anInt7101) ArrayCopyUtil.method1575(Class294.aClass338Array5060!!, 1 + i_11_, Class294.aClass338Array5060!!, i_11_, (Class294.aClass338Array5060!!.size + -i_11_ - 1))
                         Class348_Sub44.anInt7101--
                         return
                     }

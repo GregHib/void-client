@@ -146,7 +146,7 @@ object Class66 {
                 val i_5_ = class46s_4_.size
                 Class369_Sub2.aClass46ArrayArray8584!![i_3_] = arrayOfNulls<Class46>(i_5_)
                 class46s = Class369_Sub2.aClass46ArrayArray8584!![i_3_]!!
-                Class214.method1575(class46s_4_, 0, class46s, 0, class46s_4_.size)
+                ArrayCopyUtil.method1575(class46s_4_, 0, class46s, 0, class46s_4_.size)
             }
             var i_6_: Int
             i_6_ = 0
@@ -155,7 +155,7 @@ object Class66 {
                 i_6_++
             }
             if (i_6_ < class46s.size) {
-                Class214.method1575(class46s, 0, class46s, 1, i_6_)
+                ArrayCopyUtil.method1575(class46s, 0, class46s, 1, i_6_)
                 class46s[0] = class46
             }
         }
@@ -5240,7 +5240,7 @@ object Class66 {
                 val i_522_ = class46s_521_.size
                 Class369_Sub2.aClass46ArrayArray8584!![i_520_] = arrayOfNulls<Class46>(i_522_)
                 class46s = Class369_Sub2.aClass46ArrayArray8584!![i_520_]!!
-                Class214.method1575(class46s_521_, 0, class46s, 0, class46s_521_.size)
+                ArrayCopyUtil.method1575(class46s_521_, 0, class46s, 0, class46s_521_.size)
             }
             var i_523_: Int
             i_523_ = 0
@@ -5249,7 +5249,7 @@ object Class66 {
                 i_523_++
             }
             if (i_523_ < class46s.size) {
-                Class214.method1575(class46s, i_523_ + 1, class46s, i_523_, class46s.size - i_523_ - 1)
+                ArrayCopyUtil.method1575(class46s, i_523_ + 1, class46s, i_523_, class46s.size - i_523_ - 1)
                 class46s[class46s.size - 1] = class46
             }
         }

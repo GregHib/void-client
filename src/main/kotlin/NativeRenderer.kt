@@ -2951,7 +2951,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 anInt8015++
                 val i_127_ = `is`!!.size
                 val is_128_ = ByteArray(i_127_)
-                Class214.method1577(`is`, i, is_128_, 0, i_127_)
+                ArrayCopyUtil.method1577(`is`, i, is_128_, 0, i_127_)
                 return is_128_
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("wga.GI(" + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))

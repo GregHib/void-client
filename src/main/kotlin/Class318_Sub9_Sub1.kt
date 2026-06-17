@@ -46,7 +46,7 @@ class Class318_Sub9_Sub1 internal constructor(@JvmField var aString8783: String?
                     i_3_++
                 }
                 Class228.aClass57Array2974 = arrayOfNulls<Class57>(i_1_)
-                Class214.method1575<Class57?>(class57s_0_, 0, Class228.aClass57Array2974!!, 0, i_1_)
+                ArrayCopyUtil.method1575<Class57?>(class57s_0_, 0, Class228.aClass57Array2974!!, 0, i_1_)
                 val `is` = IntArray(Class228.aClass57Array2974!!.size)
                 var i_6_ = 0
                 while ((Class228.aClass57Array2974!!.size > i_6_)) {

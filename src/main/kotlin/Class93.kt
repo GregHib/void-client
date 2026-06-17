@@ -44,7 +44,7 @@ object Class93 {
         if (i_2_ < 64) return null
         anInt1529++
         val is_3_ = ByteArray(i)
-        Class214.method1577(`is`!!, 0, is_3_, 0, i)
+        ArrayCopyUtil.method1577(`is`!!, 0, is_3_, 0, i)
         return is_3_
     }
 
@@ -53,7 +53,7 @@ object Class93 {
         anInt1533++
         if (i_5_ >= -30) aStringArray1531 = null
         val is_6_ = ByteArray(i_4_)
-        Class214.method1577(`is`!!, i, is_6_, 0, i_4_)
+        ArrayCopyUtil.method1577(`is`!!, i, is_6_, 0, i_4_)
         return is_6_
     }
 }
