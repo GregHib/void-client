@@ -85,7 +85,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1404((-82).toByte())
             ProjectionCameraTransform.aClass326_5764!!.method2601((-44).toByte())
             Class30.aClass84_413!!.method822((-120).toByte())
-            HoverActionEntry.aClass25_1813!!.method300((-123).toByte())
+            HoverActionEntry.aSpriteStore_1813!!.method300((-123).toByte())
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1393((-13).toByte())
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1290(-8)
             SpriteLoadValidator.aClass65_4787!!.method695(true)

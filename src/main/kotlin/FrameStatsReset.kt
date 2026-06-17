@@ -783,7 +783,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class84.anInt1458 = 0
             CustomCursorsOptionState.anInt5930 = 0
             Class348_Sub16_Sub3.anInt8932 = 0
-            Class25.anInt371 = 0
+            SpriteStore.anInt371 = 0
             MapSceneDefLoader.anInt2486 = 0
             TileTransform.anInt3216 = 0
             OpenGlRenderer.anInt7675 = 0
@@ -1542,7 +1542,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub15.anInt9646 = 0
             Class59_Sub2.anInt5310 = 0
             Class39.anInt516 = 0
-            Class25.anInt362 = 0
+            SpriteStore.anInt362 = 0
             Class361.anInt4431 = 0
             SoftwareSpriteRaster.anInt1610 = 0
             NativeRenderer.anInt8075 = 0
@@ -2359,7 +2359,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class279.anInt3595 = 0
             Class348_Sub5.anInt6626 = 0
             TerrainTileGeometry.anInt3007 = 0
-            Class25.anInt372 = 0
+            SpriteStore.anInt372 = 0
             MapSceneIconDef.anInt2852 = 0
             Class55.anInt992 = 0
             Npc.anInt10509 = 0
@@ -3226,7 +3226,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class269.anInt3461 = 0
             Class348_Sub49.anInt7158 = 0
             BloomGraphicsOptionState.anInt5960 = 0
-            Class25.anInt365 = 0
+            SpriteStore.anInt365 = 0
             Class350.anInt4315 = 0
             ClientLoadStateMachine.anInt2172 = 0
             Class59_Sub1.anInt5284 = 0
@@ -3410,7 +3410,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class59_Sub2_Sub2.anInt8675 = 0
             Class50_Sub3.anInt5240 = 0
             Class336.anInt4170 = 0
-            Class25.anInt361 = 0
+            SpriteStore.anInt361 = 0
             FloatCameraTransform.anInt5697 = 0
             Class286_Sub1.anInt6191 = 0
             Class348_Sub40_Sub35.anInt9442 = 0
@@ -3729,7 +3729,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub9_Sub1.anInt10441 = 0
             Class348_Sub40_Sub12.anInt9190 = 0
             ParticleAmountCache.anInt2841 = 0
-            Class25.anInt363 = 0
+            SpriteStore.anInt363 = 0
             Class348_Sub16_Sub1.anInt8856 = 0
             Class348_Sub49.anInt7168 = 0
             Class258_Sub1.anInt8524 = 0

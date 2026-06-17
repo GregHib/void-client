@@ -34,11 +34,11 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
                 CacheArchiveIndex.anInt1780 += i_0_
                 if (CacheArchiveIndex.anInt1780 < 65535) {
                     Class347.aBoolean4284 = false
-                    Class25.aBoolean368 = false
+                    SpriteStore.aBoolean368 = false
                 } else {
-                    Class347.aBoolean4284 = !Class25.aBoolean368
+                    Class347.aBoolean4284 = !SpriteStore.aBoolean368
                     CacheArchiveIndex.anInt1780 = 65535
-                    Class25.aBoolean368 = true
+                    SpriteStore.aBoolean368 = true
                 }
                 val f = CacheArchiveIndex.anInt1780.toFloat() / 65535.0f
                 val fs = FloatArray(3)

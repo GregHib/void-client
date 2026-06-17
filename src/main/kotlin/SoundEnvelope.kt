@@ -1,5 +1,5 @@
 import TextureDefinitionLoader.Companion.method1177
-import Class25.Companion.method303
+import SpriteStore.Companion.method303
 import Class79.Companion.method802
 
 /* Class211 - Decompiled by JODE

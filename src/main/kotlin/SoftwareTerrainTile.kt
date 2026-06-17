@@ -39,12 +39,12 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         if (`is` != null && `is`.size != 0) {
             for (i_12_ in is_4_.indices) {
                 if (is_4_[i_12_] == -1) is_4_[i_12_] = 0
-                else is_4_[i_12_] = ((Crc64Hashable.anIntArray4983!![Class25.method303(is_4_[i_12_], 30).toInt() and 0xffff]) shl 8) or 0xff
+                else is_4_[i_12_] = ((Crc64Hashable.anIntArray4983!![SpriteStore.method303(is_4_[i_12_], 30).toInt() and 0xffff]) shl 8) or 0xff
             }
             if (is_5_ != null) {
                 for (i_13_ in is_5_.indices) {
                     if (is_5_[i_13_] == -1) is_5_[i_13_] = 0
-                    else is_5_[i_13_] = ((Crc64Hashable.anIntArray4983!![Class25.method303(is_5_[i_13_], 30).toInt() and 0xffff]) shl 8) or 0xff
+                    else is_5_[i_13_] = ((Crc64Hashable.anIntArray4983!![SpriteStore.method303(is_5_[i_13_], 30).toInt() and 0xffff]) shl 8) or 0xff
                 }
             }
             if (bool_11_) {
@@ -320,11 +320,11 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             } else {
                                 if (bool_57_) {
                                     i_59_ = is_6_[i_54_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) terrainTileData.anIntArray2001!![i_54_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) terrainTileData.anIntArray2001!![i_54_] = (Crc64Hashable.anIntArray4983!![(SpriteStore.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_55_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) terrainTileData.anIntArray2001!![i_55_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) terrainTileData.anIntArray2001!![i_55_] = (Crc64Hashable.anIntArray4983!![(SpriteStore.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_56_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) terrainTileData.anIntArray2001!![i_56_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) terrainTileData.anIntArray2001!![i_56_] = (Crc64Hashable.anIntArray4983!![(SpriteStore.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                 }
                                 terrainTileData.aShortArray2008!![i_53_] = (-1).toShort()
                             }
@@ -405,10 +405,10 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
             }
             for (i_91_ in 0..<i_79_) {
                 if (is_67_[i_91_] >= 0 || is_68_ != null && is_68_[i_91_] >= 0) {
-                    if (is_67_[i_91_] >= 0) modelVertexData.anIntArray3093!![modelVertexData.aShort3099.toInt()] = Class25.method303(is_67_[i_91_], 30).toInt()
+                    if (is_67_[i_91_] >= 0) modelVertexData.anIntArray3093!![modelVertexData.aShort3099.toInt()] = SpriteStore.method303(is_67_[i_91_], 30).toInt()
                     else modelVertexData.anIntArray3093!![modelVertexData.aShort3099.toInt()] = -1
                     if (is_68_ != null) {
-                        if (is_68_[i_91_] != -1) modelVertexData.anIntArray3092!![modelVertexData.aShort3099.toInt()] = Class25.method303(is_68_[i_91_], 30).toInt()
+                        if (is_68_[i_91_] != -1) modelVertexData.anIntArray3092!![modelVertexData.aShort3099.toInt()] = SpriteStore.method303(is_68_[i_91_], 30).toInt()
                         else modelVertexData.anIntArray3092!![modelVertexData.aShort3099.toInt()] = -1
                     }
                     modelVertexData.aShortArray3091!![modelVertexData.aShort3099.toInt()] = is_64_[i_91_].toShort()
@@ -429,7 +429,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
             val i_92_ = is_67_[0]
             val i_93_ = is_69_[0]
             if (is_68_ != null) {
-                vertexNormal.anInt1600 = Class291.method2198(0, (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]), Class25.method303(is_68_[0], 30).toInt())
+                vertexNormal.anInt1600 = Class291.method2198(0, (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]), SpriteStore.method303(is_68_[0], 30).toInt())
                 if (i_92_ == -1) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x2).toByte()
             }
             if ((this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_ + 1]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i]!![i_60_ + 1])) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x1).toByte()
@@ -443,7 +443,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                 vertexNormal.aShort1605 = i_93_.toShort()
                 if (method3997(npcAppearanceFlags.aByte213.toInt()) || npcAppearanceFlags.aByte198.toInt() != 0 || npcAppearanceFlags.aByte211.toInt() != 0) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x4).toByte()
             } else {
-                val i_94_ = Class25.method303(i_92_, 30)
+                val i_94_ = SpriteStore.method303(i_92_, 30)
                 vertexNormal.aShort1601 = Class291.method2198(0, ((aByteArrayArray8220!![i]!![i_60_]) - (aByteArrayArray8232!![i]!![i_60_])), i_94_.toInt()).toShort()
                 vertexNormal.aShort1603 = Class291.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_]) - (aByteArrayArray8232!![i + 1]!![i_60_])), i_94_.toInt()).toShort()
                 vertexNormal.aShort1602 = Class291.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_60_ + 1])), i_94_.toInt()).toShort()

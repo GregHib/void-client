@@ -14,7 +14,7 @@ class HoverActionEntry internal constructor(var anInterface2_1811: Interface2?, 
 
     companion object {
         @JvmField
-        var aClass25_1813: Class25? = null
+        var aSpriteStore_1813: SpriteStore? = null
         @JvmField
         var aClass45_1815: Class45? = null
 
@@ -22,7 +22,7 @@ class HoverActionEntry internal constructor(var anInterface2_1811: Interface2?, 
         fun method1091(i: Int) {
             if (i != -9341) method1091(-16)
             aClass45_1815 = null
-            aClass25_1813 = null
+            aSpriteStore_1813 = null
         }
     }
 }

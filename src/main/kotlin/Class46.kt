@@ -827,7 +827,7 @@ class Class46 {
         return abstractModelRenderer
     }
 
-    fun method444(bool: Boolean, class25: Class25?, class84: Class84?): Class305? {
+    fun method444(bool: Boolean, spriteStore: SpriteStore?, class84: Class84?): Class305? {
         try {
             if (bool != false) method424(122, -123, null, -111, 40, 28, -109, null, 76, 127, -66, 8, -45)
             anInt804++
@@ -835,12 +835,12 @@ class Class46 {
             val l = ((this.anInt693.toLong() shl 16 and (65535L shl 16)) or ((this.anInt733.toLong() shl 32 and (65535L shl 32)) or (this.anInt674.toLong() shl 48 and (65535L shl 48))) or (this.anInt705.toLong() and 0xffffL))
             var class305 = (Class348_Sub40_Sub9.aClass60_9171!!.method583(l, 78) as Class305?)
             if (class305 == null) {
-                class305 = class84!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, class25!!, this.anInt705)
+                class305 = class84!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, spriteStore!!, this.anInt705)
                 Class348_Sub40_Sub9.aClass60_9171!!.method582(class305, l, (-120).toByte())
             }
             return class305
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (class25 != null) "{...}" else "null") + ',' + (if (class84 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (class84 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -959,7 +959,7 @@ class Class46 {
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1410(-27995)
             ProjectionCameraTransform.aClass326_5764!!.method2602(0)
             Class30.aClass84_413!!.method816(false)
-            HoverActionEntry.aClass25_1813!!.method302(-797644856)
+            HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1390(23)
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)
             SpriteLoadValidator.aClass65_4787!!.method694(-1007)

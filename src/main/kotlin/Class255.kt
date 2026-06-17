@@ -305,11 +305,11 @@ class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
                     }
                 }
                 spriteImages = SpriteImage.method1519(class45, Class86.anInt1481, 0)
-                Class25.aAbstractModelRendererArray367 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                SpriteStore.aAbstractModelRendererArray367 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
                     while (spriteImages.size > i) {
-                        Class25.aAbstractModelRendererArray367!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                        SpriteStore.aAbstractModelRendererArray367!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }

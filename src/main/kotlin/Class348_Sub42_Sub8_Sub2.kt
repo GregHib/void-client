@@ -1335,7 +1335,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (i == 65535) i = -1
                 val i_168_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
-                Class25.method304(i, 437853543, i_168_)
+                SpriteStore.method304(i, 437853543, i_168_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

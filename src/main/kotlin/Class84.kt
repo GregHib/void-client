@@ -47,7 +47,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         anInt1452++
     }
 
-    fun method823(i: Int, i_17_: Int, i_18_: Int, i_19_: Int, class25: Class25, i_20_: Int): Class305? {
+    fun method823(i: Int, i_17_: Int, i_18_: Int, i_19_: Int, spriteStore: SpriteStore, i_20_: Int): Class305? {
         anInt1453++
         var class72s: Array<Class72?>? = null
         val class300 = method820(i_20_, 29)
@@ -56,7 +56,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
             class72s = arrayOfNulls<Class72>(class300.anIntArray3821!!.size)
             var i_21_ = 0
             while (class72s.size > i_21_) {
-                val class38 = class25.method301((class300.anIntArray3821!![i_21_]), 29)
+                val class38 = spriteStore.method301((class300.anIntArray3821!![i_21_]), 29)
                 class72s[i_21_] = Class72(class38.anInt498, class38.anInt504, class38.anInt499, class38.anInt502, class38.anInt508, class38.anInt501, class38.anInt503, class38.aBoolean507)
                 i_21_++
             }

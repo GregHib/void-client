@@ -159,7 +159,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     break
                 }
                 if (i_18_ >= 32768) {
-                    i_18_ = Class25.anIntArray369!![-32768 + i_18_]
+                    i_18_ = SpriteStore.anIntArray369!![-32768 + i_18_]
                     `is`[i_15_] = Class273.method2057(1073741824, i_18_)
                     val i_19_ = (Exception_Sub1.aClass255_112!!.method1940(-111, i_18_).anInt2827)
                     if (i_19_ != 0) this.anInt10542 = i_19_

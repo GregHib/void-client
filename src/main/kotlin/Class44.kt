@@ -72,7 +72,7 @@ object Class44 {
                     i++
                 }
                 if (is_5_[0] != -1) {
-                    Class259.aClass305_3304 = Class30.aClass84_413!!.method823(is_5_[2], is_5_[3], is_5_[1], -109, (HoverActionEntry.aClass25_1813!!), is_5_[0])
+                    Class259.aClass305_3304 = Class30.aClass84_413!!.method823(is_5_[2], is_5_[3], is_5_[1], -109, (HoverActionEntry.aSpriteStore_1813!!), is_5_[0])
                     MapSceneDefLoader.anInt2481 = is_5_[4]
                 }
                 if (bool == false) break

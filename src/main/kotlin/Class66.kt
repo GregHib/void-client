@@ -612,7 +612,7 @@ object Class66 {
                 return
             }
             if (i == 5208) {
-                anIntArray1149!![anInt1173++] = Class25.anInt370
+                anIntArray1149!![anInt1173++] = SpriteStore.anInt370
                 anIntArray1149!![anInt1173++] = LoadProgressCounters.anInt2446
                 return
             }

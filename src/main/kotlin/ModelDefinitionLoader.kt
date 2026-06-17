@@ -83,8 +83,8 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
                 if (class213.anInt2815 >= 0 || class213.anInt2788 >= 0) `is`[i_0_++] = i_1_
                 i_1_++
             }
-            Class25.anIntArray369 = IntArray(i_0_)
-            for (i_2_ in 0..<i_0_) Class25.anIntArray369!![i_2_] = `is`[i_2_]
+            SpriteStore.anIntArray369 = IntArray(i_0_)
+            for (i_2_ in 0..<i_0_) SpriteStore.anIntArray369!![i_2_] = `is`[i_2_]
         }
 
         fun method1205(i: Int, bool: Boolean, class45: Class45, i_4_: Int): Class348_Sub42_Sub14 {

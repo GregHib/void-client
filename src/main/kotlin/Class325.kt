@@ -812,7 +812,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Gl3dTexture.anInt8625++
                                 Class26.anInt385 = i_73_
                                 Class348.anInt4292 = 0
-                                val class348_sub47 = method2148((Class25.aClass351_364), (Class348_Sub23_Sub2.aClass77_9029), -113)
+                                val class348_sub47 = method2148((SpriteStore.aClass351_364), (Class348_Sub23_Sub2.aClass77_9029), -113)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 Class348_Sub42_Sub14.method3243(121, class348_sub47)

@@ -791,7 +791,7 @@ class Class361 {
                             Class67.aAbstractModelRenderer_4643 = var_renderer.method3683(i_39_, i_41_, i_42_, i_43_, false)
                         }
                         Class67.aAbstractModelRenderer_4643!!.method974(i_39_, i_41_)
-                        val i_44_ = Class25.anInt370 * i_42_ / Class75.anInt1259
+                        val i_44_ = SpriteStore.anInt370 * i_42_ / Class75.anInt1259
                         val i_45_ = i_43_ * LoadProgressCounters.anInt2446 / Class75.anInt1267
                         val i_46_ = i_39_ - -(i_42_ * Class368.anInt4509 / Class75.anInt1259)
                         if (bool != true) method3498(44, null, -27, -91, true, -26)

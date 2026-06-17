@@ -142,7 +142,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             ProjectionCameraTransform.aClass326_5764!!.method2603(5, 11)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1409(5, -20721)
             Class30.aClass84_413!!.method819(74.toByte(), 5)
-            HoverActionEntry.aClass25_1813!!.method299(5, 16)
+            HoverActionEntry.aSpriteStore_1813!!.method299(5, 16)
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1392(88, 5)
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1285(i, 8)
             SpriteLoadValidator.aClass65_4787!!.method697(5, 26)

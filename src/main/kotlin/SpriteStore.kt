@@ -1,7 +1,7 @@
 /* Class25 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class25 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private var aClass60_360: Class60? = Class60(16)
     private var aClass45_366: Class45? = null
     fun method299(i: Int, i_0_: Int) {

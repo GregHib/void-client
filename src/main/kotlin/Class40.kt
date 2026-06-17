@@ -121,7 +121,7 @@ class Class40 internal constructor() {
             WorldMapRenderer.aAbstractModelRendererArray4679 = null
             if (i != -29776) method370(true)
             Class79.aAbstractModelRenderer_1365 = null
-            Class25.aAbstractModelRendererArray367 = null
+            SpriteStore.aAbstractModelRendererArray367 = null
             CustomCursorsOptionState.aAbstractModelRendererArray5933 = null
             ScriptResources.aAbstractModelRendererArray2640 = null
             Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = null
