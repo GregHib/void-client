@@ -611,7 +611,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 Class239_Sub20.anInt6048 = 2
                                 Class348_Sub7.anInt6646++
-                                val class348_sub47 = method2148((Class131.aClass351_1904), (Class348_Sub23_Sub2.aClass77_9029), -119)
+                                val class348_sub47 = method2148((ParserSpecialCharsHolder.aClass351_1904), (Class348_Sub23_Sub2.aClass77_9029), -119)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), Class149.anInt2046)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())

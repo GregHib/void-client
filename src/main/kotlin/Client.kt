@@ -874,7 +874,7 @@ class Client : GameAppletFrame() {
         Class16.method261((-120).toByte())
         method1880(i + -221)
         method2225(i + -76)
-        Class131.method1136((-98).toByte())
+        ParserSpecialCharsHolder.method1136((-98).toByte())
         method999(21745)
         method318(122)
         method1047(1)

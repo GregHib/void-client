@@ -71,7 +71,7 @@ class Class239_Sub29 : Class239 {
                 i_2_++
             }
             val i_4_ = -127 / ((i - 44) / 45)
-            val cs_5_ = Class131.aCharArray1903!!
+            val cs_5_ = ParserSpecialCharsHolder.aCharArray1903!!
             var i_6_ = 0
             while (cs_5_.size > i_6_) {
                 val i_7_ = cs_5_[i_6_].code

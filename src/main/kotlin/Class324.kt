@@ -76,8 +76,8 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                             if (c.code != 32) {
                                 if ((Class20.anInt320 and 0xffffff.inv()) != 0) fa(c, 1 + i - -i_14_, i_2_ - -1 + i_15_, Class20.anInt320, true)
                                 fa(c, i + i_14_, i_2_ + i_15_, Class348_Sub42_Sub1.anInt9492, false)
-                            } else if (Class131.anInt1902 > 0) {
-                                Class258.anInt4848 += Class131.anInt1902
+                            } else if (ParserSpecialCharsHolder.anInt1902 > 0) {
+                                Class258.anInt4848 += ParserSpecialCharsHolder.anInt1902
                                 i += Class258.anInt4848 shr 8
                                 Class258.anInt4848 = Class258.anInt4848 and 0xff
                             }
@@ -149,7 +149,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 else if (i_38_ != i_34_ - 1) {
                     method2580(Class156.aStringArray2113!![i_38_]!!, 0, i_25_)
                     method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
-                    Class131.anInt1902 = 0
+                    ParserSpecialCharsHolder.anInt1902 = 0
                 } else method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
                 i_36_ += i_32_
             }
@@ -288,7 +288,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
         Class186_Sub1.anInt5807 = i_86_
         Class348_Sub42_Sub1.anInt9492 = Class186_Sub1.anInt5807
         Class258.anInt4848 = 0
-        Class131.anInt1902 = 0
+        ParserSpecialCharsHolder.anInt1902 = 0
         val i_87_ = -28 / ((56 - i_85_) / 49)
         anInt4053++
         Player.anInt10567 = -1
@@ -307,7 +307,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 else if (!bool && i_91_ == 32) i_89_++
             } else bool = true
         }
-        if (i_89_ > 0) Class131.anInt1902 = (-aClass143_4063!!.method1183(true, string) + i_88_ shl 8) / i_89_
+        if (i_89_ > 0) ParserSpecialCharsHolder.anInt1902 = (-aClass143_4063!!.method1183(true, string) + i_88_ shl 8) / i_89_
     }
 
     fun method2581(string: String?, i: Int, i_92_: Int, i_93_: Int, i_94_: Byte, i_95_: Int, i_96_: Int) {
@@ -385,8 +385,8 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                                     if ((0xffffff.inv() and Class20.anInt320) != 0) method2578(c, 1 + i_106_, i_103_ + 1, Class20.anInt320, true, var_sprite, i_104_, i)
                                     method2578(c, i_106_, i_103_, Class348_Sub42_Sub1.anInt9492, false, var_sprite, i_104_, i)
                                 }
-                            } else if (Class131.anInt1902 > 0) {
-                                Class258.anInt4848 += Class131.anInt1902
+                            } else if (ParserSpecialCharsHolder.anInt1902 > 0) {
+                                Class258.anInt4848 += ParserSpecialCharsHolder.anInt1902
                                 i_106_ += Class258.anInt4848 shr 8
                                 Class258.anInt4848 = Class258.anInt4848 and 0xff
                             }

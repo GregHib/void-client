@@ -816,7 +816,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class131.aIntRange_1901) {
+            if (Class348_Sub3.aIntRange_6584 == ParserSpecialCharsHolder.aIntRange_1901) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val player: Player?
                 if (i != Class348_Sub42_Sub11.anInt9591) player = Class294.aPlayerArray5058!![i]

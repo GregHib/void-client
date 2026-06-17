@@ -1,7 +1,7 @@
 /* Class131 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class131 {
+object ParserSpecialCharsHolder {
     var aIntRange_1901: IntRange? = IntRange(38, -1)
     var anInt1902: Int
     var aCharArray1903: CharArray? = charArrayOf('[', ']', '#')
