@@ -33,7 +33,7 @@ class Class369_Sub1(class221: Class221?, class341: Class341?, i: Int, i_0_: Int,
         fun method3570(bool: Boolean) {
             if (Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042!!.method2084(-6858)
             anInt8579++
-            if (Class194.aClass279_2596 != null) Class194.aClass279_2596!!.method2084(-6858)
+            if (VarbitDefLoader.aClass279_2596 != null) VarbitDefLoader.aClass279_2596!!.method2084(-6858)
             if (bool != false) anInt8583 = 30
         }
     }

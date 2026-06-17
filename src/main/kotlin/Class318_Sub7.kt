@@ -386,7 +386,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                         Class75.aConfigDefinitionLoader_1238!!.method1220(73.toByte(), 256, 1024)
                         Class75.aTextureDefinitionLoader_1242!!.method1178(256, 1, 256)
                         Class75.aClass263_1245!!.method2014(4096, true)
-                        Class229.aClass194_2981!!.method1444(256, 123)
+                        Class229.aVarbitDefLoader_2981!!.method1444(256, 123)
                         Class348.anInt4290 = 20
                     } else if (Class348.anInt4290 == 20) {
                         Class289.method2193(true, (-123).toByte())

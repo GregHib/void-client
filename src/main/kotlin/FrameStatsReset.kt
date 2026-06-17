@@ -206,7 +206,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub29.anInt9371 = 0
             Class205.anInt2689 = 0
             Class318_Sub1_Sub1_Sub1.anInt9962 = 0
-            Class194.anInt2598 = 0
+            VarbitDefLoader.anInt2598 = 0
             Class377.anInt9824 = 0
             Class324.anInt4051 = 0
             Class348_Sub42_Sub7.anInt9540 = 0
@@ -900,7 +900,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class299_Sub2.anInt6326 = 0
             Class369_Sub3.anInt8598 = 0
             Class377.anInt9816 = 0
-            Class194.anInt2593 = 0
+            VarbitDefLoader.anInt2593 = 0
             MatrixCameraTransform.anInt5656 = 0
             Class348_Sub27.anInt6906 = 0
             Class318_Sub1_Sub4_Sub1.anInt10070 = 0
@@ -1442,7 +1442,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub12.anInt5972 = 0
             SpotAnimDefinition.anInt2400 = 0
             Class64.anInt1137 = 0
-            Class194.anInt2595 = 0
+            VarbitDefLoader.anInt2595 = 0
             Class348_Sub40_Sub30.anInt9387 = 0
             Class367_Sub2.anInt7288 = 0
             Class256.anInt3294 = 0
@@ -2936,7 +2936,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40.anInt7030 = 0
             NativeRenderer.anInt7921 = 0
             Class218.anInt2855 = 0
-            Class194.anInt2592 = 0
+            VarbitDefLoader.anInt2592 = 0
             Class341.anInt4232 = 0
             Class262.anInt3329 = 0
             Class348_Sub40_Sub12.anInt9196 = 0
@@ -3780,7 +3780,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class97.anInt1555 = 0
             Class64_Sub3.anInt5548 = 0
             Class233.anInt3018 = 0
-            Class194.anInt2591 = 0
+            VarbitDefLoader.anInt2591 = 0
             Class361.anInt4445 = 0
             Class348_Sub31_Sub2.anInt9071 = 0
             Class272.anInt3472 = 0

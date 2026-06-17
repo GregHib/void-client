@@ -18,7 +18,7 @@ class RectangleBounds internal constructor(var anInt2153: Int, var anInt2155: In
             anInt2152++
             if (i != 16) aClass74_2157 = null
             if (Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042!!.method2093(true)
-            if (Class194.aClass279_2596 != null) Class194.aClass279_2596!!.method2093(true)
+            if (VarbitDefLoader.aClass279_2596 != null) VarbitDefLoader.aClass279_2596!!.method2093(true)
         }
 
         @JvmStatic

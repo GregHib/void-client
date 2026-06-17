@@ -77,7 +77,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             Exception_Sub1.aClass255_112!!.method1939(-110)
             ParticleEmitterNode.aClass87_191!!.method834((-116).toByte())
             Class348_Sub40_Sub18.aClass319_9245!!.method2546(60)
-            Class229.aClass194_2981!!.method1445(64)
+            Class229.aVarbitDefLoader_2981!!.method1445(64)
             Class269.aClass217_3453!!.method1589(127.toByte())
             Class64_Sub3.aClass261_5558!!.method1985(0)
             Class2.aTextureDefinitionLoader_117!!.method1175(125.toByte())

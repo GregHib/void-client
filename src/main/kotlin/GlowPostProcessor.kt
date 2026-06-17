@@ -134,7 +134,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             Exception_Sub1.aClass255_112!!.method1937(5, false)
             ParticleEmitterNode.aClass87_191!!.method836(5, 93)
             Class348_Sub40_Sub18.aClass319_9245!!.method2544(5, (-41).toByte())
-            Class229.aClass194_2981!!.method1442(5, 1.toByte())
+            Class229.aVarbitDefLoader_2981!!.method1442(5, 1.toByte())
             Class269.aClass217_3453!!.method1587(5, i xor 0xeab)
             Class64_Sub3.aClass261_5558!!.method1984(119.toByte(), 5)
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())

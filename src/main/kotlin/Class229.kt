@@ -11,11 +11,11 @@ class Class229 {
         var aClass268_2979: Class268? = null
         var anInt2980: Int = 0
         @JvmField
-        var aClass194_2981: Class194? = null
+        var aVarbitDefLoader_2981: VarbitDefLoader? = null
 
         fun method1631(bool: Boolean): Class241 {
             anInt2980++
-            if (bool != false) aClass194_2981 = null
+            if (bool != false) aVarbitDefLoader_2981 = null
             try {
                 return Class241_Sub2()
             } catch (throwable: Throwable) {
@@ -31,7 +31,7 @@ class Class229 {
         fun method1632(i: Int) {
             aClass45_2978 = null
             val i_1_ = -20 / ((-87 - i) / 34)
-            aClass194_2981 = null
+            aVarbitDefLoader_2981 = null
             aClass268_2979 = null
         }
 

@@ -951,7 +951,7 @@ class Class46 {
             Exception_Sub1.aClass255_112!!.method1938(126)
             ParticleEmitterNode.aClass87_191!!.method838(7)
             Class348_Sub40_Sub18.aClass319_9245!!.method2542(-101)
-            Class229.aClass194_2981!!.method1443(83)
+            Class229.aVarbitDefLoader_2981!!.method1443(83)
             Class269.aClass217_3453!!.method1590(0)
             Class64_Sub3.aClass261_5558!!.method1986((-91).toByte())
             Class2.aTextureDefinitionLoader_117!!.method1174((-99).toByte())

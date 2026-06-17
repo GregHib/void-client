@@ -3,7 +3,7 @@ import GrowableStringList.Companion.method1359
 /* Class194 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class194 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class VarbitDefLoader internal constructor(class230: Class230?, i: Int, class45: Class45?) {
     private var aClass60_2594: Class60? = Class60(64)
     private val aClass45_2597: Class45?
     fun method1442(i: Int, i_0_: Byte) {

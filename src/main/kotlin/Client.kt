@@ -98,7 +98,7 @@ import ModelLightingConfig.Companion.method1426
 import SpriteSheetCache.Companion.method1431
 import AsyncTaskHandle.Companion.method1438
 import TextureHandle.Companion.method1440
-import Class194.Companion.method1441
+import VarbitDefLoader.Companion.method1441
 import Class195.Companion.method1447
 import Class199.Companion.method1461
 import Class2.Companion.method171
