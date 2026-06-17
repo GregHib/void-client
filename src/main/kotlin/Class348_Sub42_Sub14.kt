@@ -611,7 +611,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                 }
                 for (i_9_ in 0..<Class69.anInt1200) Class318_Sub2.method2498((Class318_Sub1_Sub3_Sub4.aClass338Array10330!![i_9_]), var_renderer, (-127).toByte(), i)
                 for (i_10_ in 0..<Class348_Sub44.anInt7101) Class318_Sub2.method2498(Class294.aClass338Array5060!![i_10_], var_renderer, (-128).toByte(), i)
-                Class225.anInt2946 = 0
+                NpcDefinition.anInt2946 = 0
                 if (Class348_Sub42_Sub10.Companion.anInt9577 > 0) {
                     val i_11_ = GlTextureBase.anIntArray5091!!.size
                     val i_12_ = i_11_ + -i_11_ and 0x7

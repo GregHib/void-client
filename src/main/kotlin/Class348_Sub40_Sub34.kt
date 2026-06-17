@@ -104,7 +104,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
                 Class348_Sub40_Sub8.Companion.aClass238_9165 = null
             }
             anInt9437++
-            Class225.anInt2955 = 0
+            NpcDefinition.anInt2955 = 0
             Class348_Sub18.method2938(87.toByte())
             method2433()
             if (i.toInt() != 11) anIntArray9436 = null

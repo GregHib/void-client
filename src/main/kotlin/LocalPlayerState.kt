@@ -37,7 +37,7 @@ object LocalPlayerState {
                 }
                 AbstractMenuEntry.aBoolean1712 = false
                 GlRectangleTexture.method254(-3, (-94).toByte())
-                Class225.anInt2955 = 1
+                NpcDefinition.anInt2955 = 1
                 SceneRegionState.anInt197 = 0
                 Class318_Sub1_Sub1_Sub2.anInt9971 = 0
             }

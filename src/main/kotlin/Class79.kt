@@ -469,8 +469,8 @@ class Class79 {
             synchronized(this.aClass278_1348!!.aClass60_3590!!) {
                 class64 = this.aClass278_1348!!.aClass60_3590!!.method583(l, 80) as Class64?
             }
-            var class225: Class225? = null
-            if (this.anInt1366 != -1) class225 = class261!!.method1983(this.anInt1366, 32)
+            var npcDefinition: NpcDefinition? = null
+            if (this.anInt1366 != -1) npcDefinition = class261!!.method1983(this.anInt1366, 32)
             if (class64 == null || i_43_ != (i_43_ and class64.ua())) {
                 if (class64 != null) i_43_ = i_43_ or class64.ua()
                 var i_69_ = i_43_
@@ -495,9 +495,9 @@ class Class79 {
                         }
                     }
                 }
-                if (class225 != null && class225.anIntArrayArray2939 != null) {
+                if (npcDefinition != null && npcDefinition.anIntArrayArray2939 != null) {
                     var i_73_ = 0
-                    while ((i_73_ < class225.anIntArrayArray2939!!.size)) {
+                    while ((i_73_ < npcDefinition.anIntArrayArray2939!!.size)) {
                         if (modelDefinitions.size > i_73_ && modelDefinitions[i_73_] != null) {
                             var i_74_ = 0
                             var i_75_ = 0
@@ -505,13 +505,13 @@ class Class79 {
                             var i_77_ = 0
                             var i_78_ = 0
                             var i_79_ = 0
-                            if ((class225.anIntArrayArray2939!![i_73_]) != null) {
-                                i_78_ = ((class225.anIntArrayArray2939!![i_73_]!![4]) shl 3)
-                                i_79_ = ((class225.anIntArrayArray2939!![i_73_]!![5]) shl 3)
-                                i_75_ = (class225.anIntArrayArray2939!![i_73_]!![1])
-                                i_76_ = (class225.anIntArrayArray2939!![i_73_]!![2])
-                                i_77_ = ((class225.anIntArrayArray2939!![i_73_]!![3]) shl 3)
-                                i_74_ = (class225.anIntArrayArray2939!![i_73_]!![0])
+                            if ((npcDefinition.anIntArrayArray2939!![i_73_]) != null) {
+                                i_78_ = ((npcDefinition.anIntArrayArray2939!![i_73_]!![4]) shl 3)
+                                i_79_ = ((npcDefinition.anIntArrayArray2939!![i_73_]!![5]) shl 3)
+                                i_75_ = (npcDefinition.anIntArrayArray2939!![i_73_]!![1])
+                                i_76_ = (npcDefinition.anIntArrayArray2939!![i_73_]!![2])
+                                i_77_ = ((npcDefinition.anIntArrayArray2939!![i_73_]!![3]) shl 3)
+                                i_74_ = (npcDefinition.anIntArrayArray2939!![i_73_]!![0])
                             }
                             if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) modelDefinitions[i_73_]!!.method1107(6875, i_78_, i_79_, i_77_)
                             if (i_74_ != 0 || i_75_ != 0 || i_76_ != 0) modelDefinitions[i_73_]!!.method1099(93.toByte(), i_76_, i_74_, i_75_)
@@ -556,7 +556,7 @@ class Class79 {
             }
             if (!bool_44_ && !bool_83_) return class64_82_
             var abstractCameraTransforms: Array<AbstractCameraTransform?>? = null
-            if (class225 != null) abstractCameraTransforms = class225.method1618(var_renderer, 0)
+            if (npcDefinition != null) abstractCameraTransforms = npcDefinition.method1618(var_renderer, 0)
             if (bool_83_ && abstractCameraTransforms != null) {
                 for (i_85_ in 0..11) {
                     if (abstractCameraTransforms[i_85_] != null) class64_82_!!.method610(abstractCameraTransforms[i_85_]!!, 1 shl i_85_, true)

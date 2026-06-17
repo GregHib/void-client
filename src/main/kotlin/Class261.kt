@@ -11,23 +11,23 @@ import Class99.method881
 class Class261 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
     private val aClass45_3319: Class45?
     private val aClass60_3321 = Class60(64)
-    fun method1983(i: Int, i_9_: Int): Class225 {
+    fun method1983(i: Int, i_9_: Int): NpcDefinition {
         anInt3320++
-        var class225: Class225?
+        var npcDefinition: NpcDefinition?
         synchronized(aClass60_3321) {
-            class225 = aClass60_3321.method583(i.toLong(), 69) as Class225?
+            npcDefinition = aClass60_3321.method583(i.toLong(), 69) as NpcDefinition?
         }
-        if (class225 != null) return class225
+        if (npcDefinition != null) return npcDefinition
         val `is`: ByteArray?
         synchronized(aClass45_3319!!) {
             `is` = aClass45_3319.method410(-1860, i_9_, i)
         }
-        class225 = Class225()
-        if (`is` != null) class225.method1620(Class348_Sub49(`is`), -108)
+        npcDefinition = NpcDefinition()
+        if (`is` != null) npcDefinition.method1620(Class348_Sub49(`is`), -108)
         synchronized(aClass60_3321) {
-            aClass60_3321.method582(class225, i.toLong(), (-109).toByte())
+            aClass60_3321.method582(npcDefinition, i.toLong(), (-109).toByte())
         }
-        return class225
+        return npcDefinition
     }
 
     fun method1984(i: Byte, i_10_: Int) {

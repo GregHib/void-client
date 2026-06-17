@@ -225,7 +225,7 @@ class Class348_Sub41 : Class348() {
                     method464(-1)
                     OpenGlRenderNode.aClass262_10492!!.method1996(107)
                     Class348_Sub40_Sub17.aClass262_9240!!.method1996(103)
-                    Class225.aClass243_2957!!.method1876((-45).toByte())
+                    NpcDefinition.aClass243_2957!!.method1876((-45).toByte())
                     method1911(99.toByte())
                 }
             }

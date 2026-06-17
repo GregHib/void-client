@@ -37,14 +37,14 @@ class Class348_Sub13 : Class348() {
             anInt6756++
             var class64: Class64? = null
             var i_15_ = i_13_
-            var class225: Class225? = null
-            if (i != -1) class225 = Class64_Sub3.aClass261_5558!!.method1983(i, 32)
+            var npcDefinition: NpcDefinition? = null
+            if (i != -1) npcDefinition = Class64_Sub3.aClass261_5558!!.method1983(i, 32)
             var `is` = this.anIntArray6757
-            if (class225 != null && class225.anIntArray2906 != null) {
-                `is` = IntArray(class225.anIntArray2906.size)
+            if (npcDefinition != null && npcDefinition.anIntArray2906 != null) {
+                `is` = IntArray(npcDefinition.anIntArray2906.size)
                 var i_16_ = 0
-                while ((i_16_ < class225.anIntArray2906.size)) {
-                    val i_17_ = class225.anIntArray2906[i_16_]
+                while ((i_16_ < npcDefinition.anIntArray2906.size)) {
+                    val i_17_ = npcDefinition.anIntArray2906[i_16_]
                     if (i_17_ >= 0 && i_17_ < this.anIntArray6757!!.size) `is`[i_16_] = this.anIntArray6757!![i_17_]
                     else `is`[i_16_] = -1
                     i_16_++
@@ -105,16 +105,16 @@ class Class348_Sub13 : Class348() {
                 for (i_31_ in `is`.indices) {
                     if (`is`[i_31_] != -1) modelDefinitions[i_31_] = Exception_Sub1.aClass255_112!!.method1940(Class348_Sub21.Companion.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
                 }
-                if (class225 != null && class225.anIntArrayArray2939 != null) {
+                if (npcDefinition != null && npcDefinition.anIntArrayArray2939 != null) {
                     var i_32_ = 0
-                    while ((class225.anIntArrayArray2939!!.size > i_32_)) {
-                        if ((class225.anIntArrayArray2939!![i_32_] != null) && modelDefinitions[i_32_] != null) {
-                            val i_33_ = (class225.anIntArrayArray2939!![i_32_]!![0])
-                            val i_34_ = (class225.anIntArrayArray2939!![i_32_]!![1])
-                            val i_35_ = (class225.anIntArrayArray2939!![i_32_]!![2])
-                            val i_36_ = (class225.anIntArrayArray2939!![i_32_]!![3])
-                            val i_37_ = (class225.anIntArrayArray2939!![i_32_]!![4])
-                            val i_38_ = (class225.anIntArrayArray2939!![i_32_]!![5])
+                    while ((npcDefinition.anIntArrayArray2939!!.size > i_32_)) {
+                        if ((npcDefinition.anIntArrayArray2939!![i_32_] != null) && modelDefinitions[i_32_] != null) {
+                            val i_33_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![0])
+                            val i_34_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![1])
+                            val i_35_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![2])
+                            val i_36_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![3])
+                            val i_37_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![4])
+                            val i_38_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![5])
                             if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) modelDefinitions[i_32_]!!.method1107(6875, i_37_, i_38_, i_36_)
                             if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0) modelDefinitions[i_32_]!!.method1099((-91).toByte(), i_35_, i_33_, i_34_)
                         }

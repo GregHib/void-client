@@ -151,8 +151,8 @@ class CompositeNpcModelBuilder {
             synchronized(Class24.aClass60_355!!) {
                 class64 = Class24.aClass60_355!!.method583(l, -47) as Class64?
             }
-            var class225: Class225? = null
-            if (anInt2103 != -1) class225 = class261!!.method1983(anInt2103, 32)
+            var npcDefinition: NpcDefinition? = null
+            if (anInt2103 != -1) npcDefinition = class261!!.method1983(anInt2103, 32)
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_9_) != 0) {
                 if (class64 != null) i_9_ = var_renderer!!.method3679(i_9_, class64.ua())
                 var i_36_ = i_9_
@@ -184,9 +184,9 @@ class CompositeNpcModelBuilder {
                             if (class124 != null) modelDefinitions[i_40_] = class124
                         }
                     }
-                    if (class225 != null && class225.anIntArrayArray2939 != null) {
+                    if (npcDefinition != null && npcDefinition.anIntArrayArray2939 != null) {
                         var i_42_ = 0
-                        while (((class225.anIntArrayArray2939!!).size > i_42_)) {
+                        while (((npcDefinition.anIntArrayArray2939!!).size > i_42_)) {
                             if (modelDefinitions[i_42_] != null) {
                                 var i_43_ = 0
                                 var i_44_ = 0
@@ -194,13 +194,13 @@ class CompositeNpcModelBuilder {
                                 var i_46_ = 0
                                 var i_47_ = 0
                                 var i_48_ = 0
-                                if ((class225.anIntArrayArray2939!![i_42_]) != null) {
-                                    i_47_ = ((class225.anIntArrayArray2939!![i_42_]!![4]) shl 3)
-                                    i_44_ = (class225.anIntArrayArray2939!![i_42_]!![1])
-                                    i_48_ = ((class225.anIntArrayArray2939!![i_42_]!![5]) shl 3)
-                                    i_43_ = (class225.anIntArrayArray2939!![i_42_]!![0])
-                                    i_46_ = ((class225.anIntArrayArray2939!![i_42_]!![3]) shl 3)
-                                    i_45_ = (class225.anIntArrayArray2939!![i_42_]!![2])
+                                if ((npcDefinition.anIntArrayArray2939!![i_42_]) != null) {
+                                    i_47_ = ((npcDefinition.anIntArrayArray2939!![i_42_]!![4]) shl 3)
+                                    i_44_ = (npcDefinition.anIntArrayArray2939!![i_42_]!![1])
+                                    i_48_ = ((npcDefinition.anIntArrayArray2939!![i_42_]!![5]) shl 3)
+                                    i_43_ = (npcDefinition.anIntArrayArray2939!![i_42_]!![0])
+                                    i_46_ = ((npcDefinition.anIntArrayArray2939!![i_42_]!![3]) shl 3)
+                                    i_45_ = (npcDefinition.anIntArrayArray2939!![i_42_]!![2])
                                 }
                                 if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) modelDefinitions[i_42_]!!.method1107(6875, i_47_, i_48_, i_46_)
                                 if (i_43_ != 0 || i_44_ != 0 || i_45_ != 0) modelDefinitions[i_42_]!!.method1099((-82).toByte(), i_45_, i_43_, i_44_)
@@ -236,7 +236,7 @@ class CompositeNpcModelBuilder {
             }
             if (!bool_15_ && !bool_52_) return class64_51_
             var abstractCameraTransforms: Array<AbstractCameraTransform?>? = null
-            if (class225 != null) abstractCameraTransforms = class225.method1618(var_renderer, 0) as Array<AbstractCameraTransform?>?
+            if (npcDefinition != null) abstractCameraTransforms = npcDefinition.method1618(var_renderer, 0) as Array<AbstractCameraTransform?>?
             if (bool_52_ && abstractCameraTransforms != null) {
                 for (i_54_ in 0..11) {
                     if (abstractCameraTransforms[i_54_] != null) class64_51_!!.method610(abstractCameraTransforms[i_54_]!!, 1 shl i_54_, true)

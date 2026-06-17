@@ -1,7 +1,7 @@
 /* Class225 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class225 {
+class NpcDefinition {
     var anInt2901: Int = 0
     var anInt2904: Int = 0
     var anInt2905: Int
@@ -271,7 +271,7 @@ class Class225 {
         var anInt2902: Int = 0
         var anInt2903: Int = 0
         var anInt2921: Int = 0
-        var aClass225_2931: Class225? = Class225()
+        var aNpcDefinition_2931: NpcDefinition? = NpcDefinition()
         var anInt2933: Int = 0
         var aObjectByteSerializerHolder_2944: ObjectByteSerializerHolder?
         @JvmField
@@ -285,7 +285,7 @@ class Class225 {
         var aClass243_2957: Class243?
         @JvmStatic
         fun method1619(i: Byte) {
-            aClass225_2931 = null
+            aNpcDefinition_2931 = null
             aObjectByteSerializerHolder_2944 = null
             val i_7_ = 86 / ((i - 41) / 40)
             aClass243_2957 = null

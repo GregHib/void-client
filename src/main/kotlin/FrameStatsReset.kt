@@ -45,7 +45,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             anInt5798++
             Class348_Sub42_Sub10.method3211((-119).toByte())
             FloatCameraTransform.anInt5740 = 0
-            Class225.anInt2933 = 0
+            NpcDefinition.anInt2933 = 0
             OpenGlRenderer.anInt7661 = 0
             FontDefinition.anInt1991 = 0
             Class246.anInt3175 = 0
@@ -485,7 +485,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub5_Sub2.anInt10161 = 0
             Class348_Sub51.anInt7242 = 0
             Class238_Sub1.anInt5835 = 0
-            Class225.anInt2903 = 0
+            NpcDefinition.anInt2903 = 0
             TextureMetadataProvider.anInt4616 = 0
             Class286_Sub5.anInt6250 = 0
             OpenGlRenderer.anInt7527 = 0
@@ -1832,7 +1832,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9835 = 0
             KeyboardLayoutConfig.anInt2136 = 0
             Class64_Sub2.anInt5431 = 0
-            Class225.anInt2921 = 0
+            NpcDefinition.anInt2921 = 0
             Class239_Sub25.anInt6112 = 0
             Class348_Sub16_Sub3.anInt8900 = 0
             Class318_Sub1_Sub3_Sub4.anInt10353 = 0
@@ -2012,7 +2012,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub16.anInt9223 = 0
             CacheArchiveIndex.anInt1772 = 0
             Class318_Sub1_Sub1_Sub2.anInt9990 = 0
-            Class225.anInt2952 = 0
+            NpcDefinition.anInt2952 = 0
             Class239_Sub9.anInt5928 = 0
             OpenGlRenderer.anInt7717 = 0
             GlElementArrayBuffer.anInt4838 = 0
@@ -3562,7 +3562,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub8.anInt5913 = 0
             Class348_Sub49_Sub1.anInt9745 = 0
             GlArrayBufferObject.anInt4710 = 0
-            Class225.anInt2902 = 0
+            NpcDefinition.anInt2902 = 0
             Class55.anInt985 = 0
             Class59_Sub1_Sub1.anInt8656 = 0
             GameAppletFrame.anInt29 = 0
@@ -4124,7 +4124,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class282.aClass356_3654!!.method3481(0)
             Class348_Sub40_Sub17.aClass262_9240!!.method1996(112)
             OpenGlRenderNode.aClass262_10492!!.method1996(109)
-            Class225.aClass243_2957!!.method1876((-45).toByte())
+            NpcDefinition.aClass243_2957!!.method1876((-45).toByte())
             aClass356_1895!!.method3481(0)
             Class348_Sub42_Sub20.aClass262_9711 = Class262()
             Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1314(74.toByte())

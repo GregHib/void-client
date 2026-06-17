@@ -14,7 +14,7 @@ class Class348_Sub42_Sub6 internal constructor(var aClass318_Sub1_Sub3_Sub4_9538
 
         fun method3188(i: Byte, class348_sub49: Class348_Sub49) {
             anInt9539++
-            for (i_0_ in 0..<Class225.anInt2956) {
+            for (i_0_ in 0..<NpcDefinition.anInt2956) {
                 val i_1_ = class348_sub49.readSmart(-127)
                 var i_2_ = class348_sub49.readUnsignedShort(842397944)
                 if (i_2_ == 65535) i_2_ = -1

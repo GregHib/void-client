@@ -187,12 +187,12 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
 
     abstract fun method2421(i: Byte): Int
 
-    fun method2422(i: Byte): Class225 {
+    fun method2422(i: Byte): NpcDefinition {
         if (i.toInt() != 72) method2438(-88, 93, -127, 68, 7, -76, 116, 122.toByte())
         anInt10249++
         val i_1_ = method2421(127.toByte())
         if (i_1_ != -1) return Class64_Sub3.aClass261_5558!!.method1983(i_1_, 32)
-        return Class225.aClass225_2931!!
+        return NpcDefinition.aNpcDefinition_2931!!
     }
 
     override fun method2409(i: Byte) {

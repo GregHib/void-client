@@ -1275,7 +1275,7 @@ object Class66 {
                 val string = aStringArray1152!![anInt1170]!!
                 val string_142_ = aStringArray1152!![anInt1170 + 1]
                 val i_143_ = anIntArray1149!![--anInt1173]
-                if (string.length <= 320 && Class240.anInt4674 == 3 && (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (string.length <= 320 && Class240.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     Class64_Sub3.aString5600 = string
                     TextureGenerator.aString2496 = string_142_
                     RuntimeException_Sub1.anInt4596 = i_143_
@@ -1289,7 +1289,7 @@ object Class66 {
                 return
             }
             if (i == 5602) {
-                if (Class225.anInt2955 == 0) {
+                if (NpcDefinition.anInt2955 == 0) {
                     LinkedNodeListIterator.anInt1645 = -2
                     Class348_Sub6.anInt6634 = -2
                 }
@@ -1297,7 +1297,7 @@ object Class66 {
             }
             if (i == 5604) {
                 anInt1170--
-                if (Class240.anInt4674 == 3 && (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (Class240.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     Class281.method2106(aStringArray1152!![anInt1170], 101)
                     return
                 }
@@ -1306,7 +1306,7 @@ object Class66 {
             if (i == 5605) {
                 anInt1170 -= 2
                 anInt1173 -= 2
-                if (Class240.anInt4674 == 3 && (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (Class240.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     method449(aStringArray1152!![anInt1170 + 1], aStringArray1152!![anInt1170], false, anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1] == 1)
                     return
                 }
@@ -1334,7 +1334,7 @@ object Class66 {
             }
             if (i == 5612) {
                 val i_144_ = anIntArray1149!![--anInt1173]
-                if (Class240.anInt4674 == 7 && (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (Class240.anInt4674 == 7 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     if (Class348_Sub40_Sub8.aClass238_9165 != null) {
                         Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                         Class348_Sub40_Sub8.aClass238_9165 = null
@@ -1353,7 +1353,7 @@ object Class66 {
                 anInt1170 -= 2
                 val string = aStringArray1152!![anInt1170]!!
                 val string_145_ = aStringArray1152!![anInt1170 + 1]
-                if (string.length <= 320 && Class240.anInt4674 == 3 && (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (string.length <= 320 && Class240.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
                     if (Class348_Sub40_Sub8.aClass238_9165 != null) {
                         Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                         Class348_Sub40_Sub8.aClass238_9165 = null
@@ -1921,7 +1921,7 @@ object Class66 {
             }
         } else if (i < 6600) {
             if (i == 6500) {
-                if (Class240.anInt4674 != 7 || Class225.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
+                if (Class240.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
                 else {
                     if (ModelBatchBase.aBoolean1899) anIntArray1149!![anInt1173++] = 0
                     else {
@@ -1993,7 +1993,7 @@ object Class66 {
             if (i == 6503) {
                 val i_168_ = anIntArray1149!![--anInt1173]
                 val string = aStringArray1152!![--anInt1170]
-                if (Class240.anInt4674 != 7 || Class225.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 0
+                if (Class240.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 0
                 else {
                     anIntArray1149!![anInt1173++] = (if (method2972(string, i_168_, -42)) 1 else 0)
                     return

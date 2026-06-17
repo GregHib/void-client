@@ -105,6 +105,6 @@ object Class90 {
 
     fun method854(i: Byte) {
         anInt1513++
-        if (Class225.anInt2955 == 5 && i < -48) Class225.anInt2955 = 6
+        if (NpcDefinition.anInt2955 == 5 && i < -48) NpcDefinition.anInt2955 = 6
     }
 }

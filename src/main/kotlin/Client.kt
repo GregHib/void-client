@@ -120,7 +120,7 @@ import MapSceneIconDef.Companion.method1594
 import ModelDefinitionCache.Companion.method1600
 import ModelDefinitionCache.Companion.method1604
 import HslColorConfig.Companion.method294
-import Class225.Companion.method1619
+import NpcDefinition.Companion.method1619
 import Class226.Companion.method1624
 import Class227.Companion.method1627
 import Class228.method1628
@@ -1417,7 +1417,7 @@ class Client : GameAppletFrame() {
     }
 
     private fun method113(i: Byte) {
-        if (Class240.anInt4674 == 7 && Class225.anInt2955 == 0) {
+        if (Class240.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) {
             if (Class289.anInt3699 > 1) {
                 Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
                 Class289.anInt3699--
@@ -1474,7 +1474,7 @@ class Client : GameAppletFrame() {
             }
             i_96_++
         }
-        if (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
+        if (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
             if (Class348_Sub40_Sub21.anInt9282 == 2) method241(127.toByte())
             else Class348_Sub21.method2954((-127).toByte())
             if (Class286_Sub4.anInt6246 shr 9 < 14 || (Class286_Sub4.anInt6246 shr 9 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) AbstractCameraTransform.method893((-49).toByte())
@@ -1518,7 +1518,7 @@ class Client : GameAppletFrame() {
         }
         if (Class289.aClass46_3701 != null) method2708(-30206)
         if (Class367_Sub11.anInt7396 % 1500 == 0) method3088(9)
-        if (Class240.anInt4674 == 7 && Class225.anInt2955 == 0) method1987(-124)
+        if (Class240.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) method1987(-124)
         method909(3553)
         if (ScanlineRasterFiller.aBoolean2469 && (Class34.aLong482 < method599(-107) + -60000L)) method2405(41)
         var class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1872(8) as Class318_Sub9_Sub1?)
@@ -1531,7 +1531,7 @@ class Client : GameAppletFrame() {
             class318_sub9_sub1 = Class348_Sub42_Sub14.aClass243_9642!!.method1878((-43).toByte()) as Class318_Sub9_Sub1?
         }
         do {
-            if (Class240.anInt4674 == 7 && Class225.anInt2955 == 0) {
+            if (Class240.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) {
                 if (Class348_Sub40_Sub8.aClass238_9165 == null) method3141(false, 11.toByte())
                 else {
                     SceneRegionState.anInt193++

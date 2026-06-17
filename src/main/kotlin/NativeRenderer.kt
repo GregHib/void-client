@@ -374,7 +374,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 bool_30_ = true
             } else {
                 bool_30_ = false
-                objectByteSerializerHolder = Class225.aObjectByteSerializerHolder_2944
+                objectByteSerializerHolder = NpcDefinition.aObjectByteSerializerHolder_2944
                 bool = false
             }
             if (bool != this.aBoolean8141) {
