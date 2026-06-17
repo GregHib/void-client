@@ -162,7 +162,7 @@ public abstract class AbstractCameraTransform {
                     val class110_sub1 = Class65.aClass110_Sub1Array1146!![Class215.anInt2834]
                     if (class110_sub1 == null || class110_sub1.anInt5788 != -1) Class215.anInt2834++
                     else {
-                        if (Class176.aClass348_Sub26_2332 == null) Class176.aClass348_Sub26_2332 = (Class76.aClass169_1286!!.method1302(i xor 0x1967.inv(), class110_sub1.aString5794!!))
+                        if (Class176.aClass348_Sub26_2332 == null) Class176.aClass348_Sub26_2332 = (Class76.aHostPingThread_1286!!.method1302(i xor 0x1967.inv(), class110_sub1.aString5794!!))
                         val i_29_ = (Class176.aClass348_Sub26_2332!!.anInt6887)
                         if (i_29_ == -1) break
                         class110_sub1.anInt5788 = i_29_

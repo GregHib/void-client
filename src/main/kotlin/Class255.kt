@@ -248,11 +248,11 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             try {
                 anInt3279++
                 var class207s: Array<Class207>? = Class207.method1519(class45!!, Class348_Sub22.anInt6862, 0)
-                Class169.aAbstractModelRendererArray2260 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                HostPingThread.aAbstractModelRendererArray2260 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class169.aAbstractModelRendererArray2260!![i] = var_renderer!!.method3691(class207s[i], true)
+                        HostPingThread.aAbstractModelRendererArray2260!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }

@@ -1,5 +1,5 @@
 import ModelBatchBase.Companion.method1130
-import Class169.Companion.method1301
+import HostPingThread.Companion.method1301
 
 /* Class235 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

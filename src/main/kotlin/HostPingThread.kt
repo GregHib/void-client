@@ -2,7 +2,10 @@ import Class299.Companion.method2253
 import jagex3.jagmisc.jagmisc.ping
 import java.net.InetAddress
 
-class Class169 : Runnable {
+/*
+ * Class169
+ */
+class HostPingThread : Runnable {
     private var aClass262_2258: Class262? = Class262()
     private var aThread2259: Thread? = Thread(this)
     override fun run() {

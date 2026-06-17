@@ -565,16 +565,16 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     var i_71_: Int
                     i_71_ = 0
                     while (Class37.anInt496 > i_71_) {
-                        if (Class169.aClass19Array2261!![i_71_]!!.aString306 == string_67_ && i == (Class169.aClass19Array2261!![i_71_]!!.anInt308)) break
+                        if (HostPingThread.aClass19Array2261!![i_71_]!!.aString306 == string_67_ && i == (HostPingThread.aClass19Array2261!![i_71_]!!.anInt308)) break
                         i_71_++
                     }
                     if (Class37.anInt496 > i_71_) {
                         while ( /**/-1 + Class37.anInt496 > i_71_) {
-                            Class169.aClass19Array2261!![i_71_] = Class169.aClass19Array2261!![i_71_ - -1]
+                            HostPingThread.aClass19Array2261!![i_71_] = HostPingThread.aClass19Array2261!![i_71_ - -1]
                             i_71_++
                         }
                         Class37.anInt496--
-                        Class169.aClass19Array2261!![Class37.anInt496] = null
+                        HostPingThread.aClass19Array2261!![Class37.anInt496] = null
                     }
                 } else {
                     val string_72_ = Class299.aClass348_Sub49_Sub2_3813!!.readString((-74).toByte())
@@ -588,11 +588,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     var i_73_: Int
                     i_73_ = -1 + Class37.anInt496
                     while (i_73_ >= 0) {
-                        val i_74_ = Class169.aClass19Array2261!![i_73_]!!.aString312!!.compareTo(class19.aString312!!)
+                        val i_74_ = HostPingThread.aClass19Array2261!![i_73_]!!.aString312!!.compareTo(class19.aString312!!)
                         if (i_74_ == 0) {
-                            Class169.aClass19Array2261!![i_73_]!!.anInt308 = i
-                            Class169.aClass19Array2261!![i_73_]!!.aByte310 = i_68_
-                            Class169.aClass19Array2261!![i_73_]!!.aString313 = string_72_
+                            HostPingThread.aClass19Array2261!![i_73_]!!.anInt308 = i
+                            HostPingThread.aClass19Array2261!![i_73_]!!.aByte310 = i_68_
+                            HostPingThread.aClass19Array2261!![i_73_]!!.aString313 = string_72_
                             if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                             Class230.anInt2986 = Class311.anInt3918
                             Class348_Sub3.aIntRange_6584 = null
@@ -601,13 +601,13 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         if (i_74_ < 0) break
                         i_73_--
                     }
-                    if (Class169.aClass19Array2261!!.size <= Class37.anInt496) {
+                    if (HostPingThread.aClass19Array2261!!.size <= Class37.anInt496) {
                         Class348_Sub3.aIntRange_6584 = null
                         return true
                     }
-                    for (i_75_ in Class37.anInt496 - 1 downTo i_73_ + 1) Class169.aClass19Array2261!![1 + i_75_] = Class169.aClass19Array2261!![i_75_]
-                    if (Class37.anInt496 == 0) Class169.aClass19Array2261 = arrayOfNulls<Class19>(100)
-                    Class169.aClass19Array2261!![i_73_ - -1] = class19
+                    for (i_75_ in Class37.anInt496 - 1 downTo i_73_ + 1) HostPingThread.aClass19Array2261!![1 + i_75_] = HostPingThread.aClass19Array2261!![i_75_]
+                    if (Class37.anInt496 == 0) HostPingThread.aClass19Array2261 = arrayOfNulls<Class19>(100)
+                    HostPingThread.aClass19Array2261!![i_73_ - -1] = class19
                     Class37.anInt496++
                     if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                 }
@@ -1733,7 +1733,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (Class348_Sub40_Sub25.anInt9341 == 0) {
                     Class37.anInt496 = 0
                     Class50.aString863 = null
-                    Class169.aClass19Array2261 = null
+                    HostPingThread.aClass19Array2261 = null
                     Class348_Sub21.aString6854 = null
                     Class348_Sub3.aIntRange_6584 = null
                     return true
@@ -1782,7 +1782,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                     if (bool_235_) break
                 }
-                Class169.aClass19Array2261 = class19s
+                HostPingThread.aClass19Array2261 = class19s
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

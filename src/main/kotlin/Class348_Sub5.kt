@@ -105,7 +105,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
             if (Class367_Sub2.anInt7297 != 0) {
                 try {
                     if (i >= 82) {
-                        if (++Class169.anInt2264 > 2000) {
+                        if (++HostPingThread.anInt2264 > 2000) {
                             if (Class348_Sub40_Sub8.aClass238_9165 != null) {
                                 Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                                 Class348_Sub40_Sub8.aClass238_9165 = null
@@ -117,7 +117,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                             }
                             Class255.aServerConnectionInfo_3285!!.method1259(0)
                             Class367_Sub2.anInt7297 = 1
-                            Class169.anInt2264 = 0
+                            HostPingThread.anInt2264 = 0
                             AnimatedModelRenderer.anInt8398++
                         }
                         if (Class367_Sub2.anInt7297 == 1) {
@@ -150,7 +150,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                     }
                     if (AnimatedModelRenderer.anInt8398 < 2) {
                         Class255.aServerConnectionInfo_3285!!.method1259(0)
-                        Class169.anInt2264 = 0
+                        HostPingThread.anInt2264 = 0
                         AnimatedModelRenderer.anInt8398++
                         Class367_Sub2.anInt7297 = 1
                     } else {

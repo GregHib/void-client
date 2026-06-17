@@ -23,7 +23,7 @@ object Class306 {
 
     fun method2298(i: Byte, string: String) {
         anInt3876++
-        if (Class169.aClass19Array2261 != null) {
+        if (HostPingThread.aClass19Array2261 != null) {
             NativeIndexBuffer.anInt4698++
             val class348_sub47 = method2148(Class357.aClass351_4405, Class348_Sub23_Sub2.aClass77_9029, -97)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))

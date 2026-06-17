@@ -172,7 +172,7 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
             Class348_Sub40_Sub30.anInt9383 = 0
             Class50.aString863 = null
             Class37.anInt496 = 0
-            Class169.aClass19Array2261 = null
+            HostPingThread.aClass19Array2261 = null
             MinimapSpriteRenderer.anInt4930 = 0
         }
 

@@ -33,7 +33,7 @@ object Class281 {
         Class348_Sub42_Sub14.method3243(118, class348_sub47)
         Class367_Sub2.anInt7297 = 1
         Class352.anInt4337 = -3
-        Class169.anInt2264 = 0
+        HostPingThread.anInt2264 = 0
         AnimatedModelRenderer.anInt8398 = 0
     }
 

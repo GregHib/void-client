@@ -39,7 +39,7 @@ class Class76 internal constructor(bool: Boolean) {
                 }
                 class318_sub4_8_ = this.aClass243_1282.method1878((-44).toByte()) as? Class318_Sub4?
             }
-            if (i != 18802) aClass169_1286 = null
+            if (i != 18802) aHostPingThread_1286 = null
             this.aClass243_1282.method1869(-107, class318_sub4)
         }
     }
@@ -73,7 +73,7 @@ class Class76 internal constructor(bool: Boolean) {
         @JvmField
         var anInt1285: Int = 0
         @JvmField
-        var aClass169_1286: Class169?
+        var aHostPingThread_1286: HostPingThread?
         @JvmField
         var aFloat1287: Float = 1024.0f
         var anInt1288: Int = 0
@@ -132,7 +132,7 @@ class Class76 internal constructor(bool: Boolean) {
 
         @JvmStatic
         fun method772(i: Byte) {
-            aClass169_1286 = null
+            aHostPingThread_1286 = null
             aClass364_1279 = null
         }
 
@@ -143,7 +143,7 @@ class Class76 internal constructor(bool: Boolean) {
         }
 
         init {
-            aClass169_1286 = Class169()
+            aHostPingThread_1286 = HostPingThread()
         }
     }
 }

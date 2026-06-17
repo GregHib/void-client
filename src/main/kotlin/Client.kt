@@ -768,7 +768,7 @@ class Client : GameAppletFrame() {
         Class238.method1704((-95).toByte())
         method782(1)
         method3414(21515)
-        Class169.method1300((-128).toByte())
+        HostPingThread.method1300((-128).toByte())
         Class348_Sub26.method2998((-35).toByte())
         method3508(2)
         method1698(1)
@@ -1276,9 +1276,9 @@ class Client : GameAppletFrame() {
         method1265(16)
         Class348_Sub4.aClass248_6601!!.method1901(i xor 0x44.inv())
         Class39.aScriptCompilerThread_520!!.method1051(true)
-        if (Class76.aClass169_1286 != null) {
-            Class76.aClass169_1286!!.method1303(16.toByte())
-            Class76.aClass169_1286 = null
+        if (Class76.aHostPingThread_1286 != null) {
+            Class76.aHostPingThread_1286!!.method1303(16.toByte())
+            Class76.aHostPingThread_1286 = null
         }
         try {
             Class299_Sub2.aClass78_6328!!.method790((-62).toByte())

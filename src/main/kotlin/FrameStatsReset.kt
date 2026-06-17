@@ -497,7 +497,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class328.anInt4101 = 0
             AnimatedModelRenderer.anInt8420 = 0
             Class348_Sub32.anInt6931 = 0
-            Class169.anInt2266 = 0
+            HostPingThread.anInt2266 = 0
             Class314.anInt3942 = 0
             Class235.anInt3076 = 0
             Class325.anInt4067 = 0
@@ -2920,7 +2920,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class295.anInt3755 = 0
             Class255.anInt3282 = 0
             GlTextureBase.anInt5086 = 0
-            Class169.anInt2263 = 0
+            HostPingThread.anInt2263 = 0
             Class318_Sub1_Sub3_Sub3.anInt10228 = 0
             Client.anInt5170 = 0
             OpenGlRenderer.anInt7535 = 0
@@ -3101,7 +3101,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub15.anInt5998 = 0
             Class239_Sub3.anInt5867 = 0
             Class258_Sub2.anInt8533 = 0
-            Class169.anInt2257 = 0
+            HostPingThread.anInt2257 = 0
             Class277.anInt3571 = 0
             Class84.anInt1451 = 0
             LinkedListIterator.anInt2120 = 0
@@ -3733,7 +3733,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub1.anInt8856 = 0
             Class348_Sub49.anInt7168 = 0
             Class258_Sub1.anInt8524 = 0
-            Class169.anInt2262 = 0
+            HostPingThread.anInt2262 = 0
             IndexedSprite.anInt5195 = 0
             Class318_Sub1_Sub1_Sub1.anInt9948 = 0
             Class348_Sub42_Sub10.anInt9573 = 0

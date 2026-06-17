@@ -65,7 +65,7 @@ class Class280 internal constructor(var_ha_Sub3: NativeRenderer) {
                     var i_12_ = -i_8_ + i_9_
                     val i_13_: Int
                     if (2 + i_12_ > 1600) {
-                        i_13_ = (method2253(i_12_, i_3_ + 119) + 1 + -Class169.anInt2265)
+                        i_13_ = (method2253(i_12_, i_3_ + 119) + 1 + -HostPingThread.anInt2265)
                         i_12_ = 2 + (i_12_ shr i_13_)
                     } else {
                         i_13_ = 0
