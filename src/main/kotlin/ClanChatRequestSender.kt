@@ -19,7 +19,7 @@ object ClanChatRequestSender {
     fun method2106(string: String?, i: Int) {
         anInt3645++
         val class348_sub47 = method1478(true)
-        class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeByte(false, ScriptOpcodeHolder.aClass29_2353!!.anInt400)
+        class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeByte(false, ScriptOpcodeHolder.aConfigIdPair_2353!!.anInt400)
         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 0)
         val i_0_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 634)

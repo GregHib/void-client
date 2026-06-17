@@ -166,7 +166,7 @@ class Class88 {
                         FrameStatsReset.aLinkedQueueNode_5800 = null
                         method2739(0)
                         val class348_sub47 = ProjectileSpawner.method1478(true)
-                        class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeByte(false, ScriptOpcodeHolder.aClass29_2339!!.anInt400)
+                        class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeByte(false, ScriptOpcodeHolder.aConfigIdPair_2339!!.anInt400)
                         Class348_Sub42_Sub14.method3243(9, class348_sub47)
                         method1802(0)
                         NpcDefinition.anInt2955 = 3
@@ -204,8 +204,8 @@ class Class88 {
                         val class348_sub47 = ProjectileSpawner.method1478(true)
                         val class348_sub49_sub2 = (class348_sub47!!.aClass348_Sub49_Sub2_7116)!!
                         if (BloomGraphicsOptionState.anInt5969 == 2) {
-                            if (WorldMapRenderer.anInt4674 != 13) class348_sub49_sub2.writeByte(false, ScriptOpcodeHolder.aClass29_2342!!.anInt400)
-                            else class348_sub49_sub2.writeByte(false, ScriptOpcodeHolder.aClass29_2344!!.anInt400)
+                            if (WorldMapRenderer.anInt4674 != 13) class348_sub49_sub2.writeByte(false, ScriptOpcodeHolder.aConfigIdPair_2342!!.anInt400)
+                            else class348_sub49_sub2.writeByte(false, ScriptOpcodeHolder.aConfigIdPair_2344!!.anInt400)
                             class348_sub49_sub2.writeShort(107.toByte(), 0)
                             val i_6_ = class348_sub49_sub2.anInt7197
                             class348_sub49_sub2.writeInt(117.toByte(), 634)
@@ -236,7 +236,7 @@ class Class88 {
                             class348_sub49_sub2.method3350(i_7_, true, `is`, (class348_sub49_sub2.anInt7197))
                             class348_sub49_sub2.method3383(1809639944, -i_6_ + (class348_sub49_sub2.anInt7197))
                         } else {
-                            class348_sub49_sub2.writeByte(false, ScriptOpcodeHolder.aClass29_2345!!.anInt400)
+                            class348_sub49_sub2.writeByte(false, ScriptOpcodeHolder.aConfigIdPair_2345!!.anInt400)
                             class348_sub49_sub2.writeShort(107.toByte(), 0)
                             val i_4_ = class348_sub49_sub2.anInt7197
                             class348_sub49_sub2.writeInt(119.toByte(), 634)
@@ -300,7 +300,7 @@ class Class88 {
                         val class348_sub47 = ProjectileSpawner.method1478(true)
                         val class348_sub49_sub2 = (class348_sub47!!.aClass348_Sub49_Sub2_7116)!!
                         class348_sub49_sub2.method3416(-18, Class348_Sub23_Sub2.aClass77_9029!!)
-                        class348_sub49_sub2.method3408((ScriptOpcodeHolder.aClass29_2351!!.anInt400), 18676)
+                        class348_sub49_sub2.method3408((ScriptOpcodeHolder.aConfigIdPair_2351!!.anInt400), 18676)
                         Class348_Sub42_Sub14.method3243(-87, class348_sub47)
                         method1802(0)
                         NpcDefinition.anInt2955 = 4

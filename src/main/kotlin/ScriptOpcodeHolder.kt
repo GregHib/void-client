@@ -9,44 +9,44 @@ object ScriptOpcodeHolder {
     var anInt2336: Int = 0
     var anInt2337: Int = 0
     var aIntRange_2338: IntRange? = IntRange(92, -1)
-    var aClass29_2339: Class29? = Class29(14, 0)
+    var aConfigIdPair_2339: ConfigIdPair? = ConfigIdPair(14, 0)
     var anInt2340: Int = 0
     @JvmField
-    var aClass29_2341: Class29? = Class29(15, 4)
-    var aClass29_2342: Class29? = Class29(16, -2)
-    var aClass29_2343: Class29? = Class29(17, 0)
-    var aClass29_2344: Class29? = Class29(18, -2)
-    var aClass29_2345: Class29? = Class29(19, -2)
-    var aClass29_2346: Class29? = Class29(20, 6)
-    var aClass29_2347: Class29? = Class29(21, 9)
-    var aClass29_2348: Class29? = Class29(22, -2)
-    var aClass29_2349: Class29? = Class29(23, 4)
-    var aClass29_2350: Class29? = Class29(24, -1)
-    var aClass29_2351: Class29? = Class29(26, 0)
-    var aClass29_2352: Class29? = Class29(27, 0)
+    var aConfigIdPair_2341: ConfigIdPair? = ConfigIdPair(15, 4)
+    var aConfigIdPair_2342: ConfigIdPair? = ConfigIdPair(16, -2)
+    var aConfigIdPair_2343: ConfigIdPair? = ConfigIdPair(17, 0)
+    var aConfigIdPair_2344: ConfigIdPair? = ConfigIdPair(18, -2)
+    var aConfigIdPair_2345: ConfigIdPair? = ConfigIdPair(19, -2)
+    var aConfigIdPair_2346: ConfigIdPair? = ConfigIdPair(20, 6)
+    var aConfigIdPair_2347: ConfigIdPair? = ConfigIdPair(21, 9)
+    var aConfigIdPair_2348: ConfigIdPair? = ConfigIdPair(22, -2)
+    var aConfigIdPair_2349: ConfigIdPair? = ConfigIdPair(23, 4)
+    var aConfigIdPair_2350: ConfigIdPair? = ConfigIdPair(24, -1)
+    var aConfigIdPair_2351: ConfigIdPair? = ConfigIdPair(26, 0)
+    var aConfigIdPair_2352: ConfigIdPair? = ConfigIdPair(27, 0)
     @JvmField
-    var aClass29_2353: Class29? = Class29(28, -2)
-    private var aClass29Array2354: Array<Class29?>? = arrayOfNulls<Class29>(32)
+    var aConfigIdPair_2353: ConfigIdPair? = ConfigIdPair(28, -2)
+    private var aConfigIdPairArray2354s: Array<ConfigIdPair?>? = arrayOfNulls<ConfigIdPair>(32)
 
     @JvmStatic
     fun method1355(i: Int) {
-        aClass29_2346 = null
-        aClass29_2349 = null
-        aClass29_2344 = null
-        aClass29_2352 = null
+        aConfigIdPair_2346 = null
+        aConfigIdPair_2349 = null
+        aConfigIdPair_2344 = null
+        aConfigIdPair_2352 = null
         aIntRange_2338 = null
         if (i > -74) method1356(true, null, -116, -47, true, null, true)
-        aClass29_2350 = null
-        aClass29Array2354 = null
-        aClass29_2353 = null
-        aClass29_2351 = null
-        aClass29_2339 = null
-        aClass29_2343 = null
-        aClass29_2341 = null
-        aClass29_2345 = null
-        aClass29_2342 = null
-        aClass29_2348 = null
-        aClass29_2347 = null
+        aConfigIdPair_2350 = null
+        aConfigIdPairArray2354s = null
+        aConfigIdPair_2353 = null
+        aConfigIdPair_2351 = null
+        aConfigIdPair_2339 = null
+        aConfigIdPair_2343 = null
+        aConfigIdPair_2341 = null
+        aConfigIdPair_2345 = null
+        aConfigIdPair_2342 = null
+        aConfigIdPair_2348 = null
+        aConfigIdPair_2347 = null
     }
 
     fun method1356(bool: Boolean, string: String?, i: Int, i_0_: Int, bool_1_: Boolean, string_2_: String?, bool_3_: Boolean) {
@@ -66,7 +66,7 @@ object ScriptOpcodeHolder {
             }
             var i_6_ = 0
             var i_7_ = 0
-            if (bool_3_ != true) aClass29_2352 = null
+            if (bool_3_ != true) aConfigIdPair_2352 = null
             while ( /**/i_7_ < Exception_Sub1.aModelHeaderCache_112!!.anInt3271) {
                 val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(-74, i_7_)
                 if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795!!.lowercase(Locale.getDefault()).indexOf(string_2_) != -1) {
@@ -114,6 +114,6 @@ object ScriptOpcodeHolder {
 
     init {
         val class29s = method188(59.toByte())
-        for (i in class29s.indices) aClass29Array2354!![class29s[i]!!.anInt400] = class29s[i]
+        for (i in class29s.indices) aConfigIdPairArray2354s!![class29s[i]!!.anInt400] = class29s[i]
     }
 }

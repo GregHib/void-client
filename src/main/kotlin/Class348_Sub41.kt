@@ -236,12 +236,12 @@ class Class348_Sub41 : Class348() {
             val class348_sub49 = Class348_Sub49(`is`)
             val i_37_ = class348_sub49.readUnsignedByte(255)
             val i_38_ = class348_sub49.readInt((-126).toByte())
-            if (i_38_ < 0 || (Class29.anInt401 != 0 && i_38_ > Class29.anInt401)) {
+            if (i_38_ < 0 || (ConfigIdPair.anInt401 != 0 && i_38_ > ConfigIdPair.anInt401)) {
                 throw RuntimeException()
             }
             if (i_37_ != 0) {
                 val i_39_ = class348_sub49.readInt((-126).toByte())
-                if (i_39_ < 0 || (Class29.anInt401 != 0 && i_39_ > Class29.anInt401) || i_39_ > 10000000) {
+                if (i_39_ < 0 || (ConfigIdPair.anInt401 != 0 && i_39_ > ConfigIdPair.anInt401) || i_39_ > 10000000) {
                     return ByteArray(4)
                 }
                 val is_40_ = ByteArray(i_39_)

@@ -593,7 +593,7 @@ class Client : GameAppletFrame() {
                 if (Class47.anInt846 == 2) {
                     TextureHandle.aSocketStreamWorker_2589 = SocketStreamWorker(Sprite.aLinkedQueueNode_114!!.anObject1998 as Socket?, Class348_Sub23_Sub1.aClass297_8992, 25000)
                     val class348_sub49 = Class348_Sub49(5)
-                    class348_sub49.writeByte(false, (ScriptOpcodeHolder.aClass29_2341!!.anInt400))
+                    class348_sub49.writeByte(false, (ScriptOpcodeHolder.aConfigIdPair_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)
                     TextureHandle.aSocketStreamWorker_2589!!.method1470((class348_sub49.aByteArray7154!!), 5, 0, -1)
                     Class47.anInt846++

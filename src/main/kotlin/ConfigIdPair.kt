@@ -1,7 +1,7 @@
 /* Class29 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class29 internal constructor(@JvmField var anInt400: Int, i_0_: Int) {
+class ConfigIdPair internal constructor(@JvmField var anInt400: Int, i_0_: Int) {
     override fun toString(): String {
         anInt402++
         throw IllegalStateException()

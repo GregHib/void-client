@@ -269,10 +269,10 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
         }
 
         @JvmStatic
-        fun method188(i: Byte): Array<Class29?> {
+        fun method188(i: Byte): Array<ConfigIdPair?> {
             anInt8345++
             val i_34_ = -7 / ((-67 - i) / 44)
-            return (arrayOf<Class29?>(ScriptOpcodeHolder.aClass29_2339, ScriptOpcodeHolder.aClass29_2341, ScriptOpcodeHolder.aClass29_2342, ScriptOpcodeHolder.aClass29_2343, ScriptOpcodeHolder.aClass29_2344, ScriptOpcodeHolder.aClass29_2345, ScriptOpcodeHolder.aClass29_2346, ScriptOpcodeHolder.aClass29_2347, ScriptOpcodeHolder.aClass29_2348, ScriptOpcodeHolder.aClass29_2349, ScriptOpcodeHolder.aClass29_2350, ScriptOpcodeHolder.aClass29_2351, ScriptOpcodeHolder.aClass29_2352, ScriptOpcodeHolder.aClass29_2353))
+            return (arrayOf<ConfigIdPair?>(ScriptOpcodeHolder.aConfigIdPair_2339, ScriptOpcodeHolder.aConfigIdPair_2341, ScriptOpcodeHolder.aConfigIdPair_2342, ScriptOpcodeHolder.aConfigIdPair_2343, ScriptOpcodeHolder.aConfigIdPair_2344, ScriptOpcodeHolder.aConfigIdPair_2345, ScriptOpcodeHolder.aConfigIdPair_2346, ScriptOpcodeHolder.aConfigIdPair_2347, ScriptOpcodeHolder.aConfigIdPair_2348, ScriptOpcodeHolder.aConfigIdPair_2349, ScriptOpcodeHolder.aConfigIdPair_2350, ScriptOpcodeHolder.aConfigIdPair_2351, ScriptOpcodeHolder.aConfigIdPair_2352, ScriptOpcodeHolder.aConfigIdPair_2353))
         }
 
         @JvmStatic
