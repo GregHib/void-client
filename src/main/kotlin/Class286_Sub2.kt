@@ -96,7 +96,7 @@ class Class286_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
             anInt6213++
             Class348_Sub42_Sub19.method3277((-48).toByte())
             Class5_Sub1.aBoolean8335 = false
-            MinimapRectClipper.method226(GlArrayBufferObject.anInt4717, Class63.anInt1117, Class348_Sub42_Sub5.anInt9532, 0, Class237_Sub1.anInt5819)
+            MinimapRectClipper.method226(GlArrayBufferObject.anInt4717, Class63.anInt1117, Class348_Sub42_Sub5.anInt9532, 0, WorldMapSceneSoftware.anInt5819)
         }
 
         @JvmStatic

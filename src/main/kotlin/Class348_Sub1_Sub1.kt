@@ -60,7 +60,7 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
         }
 
         @JvmStatic
-        fun method2727(i: Byte, class237_sub1: Class237_Sub1?, `is`: Array<ByteArray?>?) {
+        fun method2727(i: Byte, class237_sub1: WorldMapSceneSoftware?, `is`: Array<ByteArray?>?) {
             try {
                 anInt8802++
                 val is_11_ = intArrayOf(-1, 0, 0, 0, 0)

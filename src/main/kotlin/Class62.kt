@@ -25,7 +25,7 @@ object Class62 {
     fun method596(i: Int): Array<Class341?> {
         if (i != 20000) anIntArrayArrayArray1116 = null
         anInt1112++
-        return (arrayOf<Class341?>(PerlinTextureProvider.aClass341_5808, Class27.aClass341_399, Class237_Sub1.aClass341_5821))
+        return (arrayOf<Class341?>(PerlinTextureProvider.aClass341_5808, Class27.aClass341_399, WorldMapSceneSoftware.aClass341_5821))
     }
 
     @JvmStatic

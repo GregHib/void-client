@@ -81,9 +81,9 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
             val i_6_: Int = i_4_ + anInt4717
             val i_7_ = Class348_Sub42_Sub5.anInt9532 + i_5_
             val i_8_ = Class63.anInt1117
-            val i_9_ = -3 + Class237_Sub1.anInt5819
+            val i_9_ = -3 + WorldMapSceneSoftware.anInt5819
             val i_10_ = 20
-            method2270(Class63.anInt1117, i_4_ + anInt4717, var_renderer, Class274.aClass274_3507!!.method2063(Class348_Sub33.anInt6967, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_)
+            method2270(Class63.anInt1117, i_4_ + anInt4717, var_renderer, Class274.aClass274_3507!!.method2063(Class348_Sub33.anInt6967, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, WorldMapSceneSoftware.anInt5819, i_10_)
             val i_11_ = i_4_ + Class258_Sub4.aClass373_8552!!.method3597(true)
             if (i != 16) method1154(9.toByte())
             val i_12_ = i_5_ + Class258_Sub4.aClass373_8552!!.method3594(95.toByte())
@@ -118,15 +118,15 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                     class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(101.toByte()) as? Class348_Sub42_Sub12?
                 }
             }
-            method826(i_10_, anInt4717 + i_4_, Class63.anInt1117, Class237_Sub1.anInt5819, -75, Class348_Sub42_Sub5.anInt9532 - -i_5_, var_renderer)
+            method826(i_10_, anInt4717 + i_4_, Class63.anInt1117, WorldMapSceneSoftware.anInt5819, -75, Class348_Sub42_Sub5.anInt9532 - -i_5_, var_renderer)
             if (Class348_Sub42_Sub6.aBoolean9535) {
                 var i_20_ = 0
                 var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-77) as Class348_Sub42_Sub13?)
                 while (class348_sub42_sub13 != null) {
                     val i_21_ = i_10_ + (i_5_ + Class348_Sub42_Sub5.anInt9532 + 13 - -(16 * i_20_))
                     i_20_++
-                    if (class348_sub42_sub13.anInt9615 == 1) Class318_Sub2.method2494(Class348_Sub42_Sub5.anInt9532 - -i_5_, 0xffffff.inv() or Class5_Sub2.anInt8363, i_21_, var_renderer, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12?), Class63.anInt1117, i_12_, Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv(), 125.toByte(), Class237_Sub1.anInt5819, anInt4717 - -i_4_, i_11_)
-                    else method2431(0xffffff.inv() or Class348_Sub42_Sub11.anInt9586, i_21_, class348_sub42_sub13, i_11_, Class63.anInt1117, 0xffffff.inv() or Class5_Sub2.anInt8363, i_12_, var_renderer, Class348_Sub42_Sub5.anInt9532 - -i_5_, i xor 0x60, i_4_ + anInt4717, Class237_Sub1.anInt5819)
+                    if (class348_sub42_sub13.anInt9615 == 1) Class318_Sub2.method2494(Class348_Sub42_Sub5.anInt9532 - -i_5_, 0xffffff.inv() or Class5_Sub2.anInt8363, i_21_, var_renderer, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12?), Class63.anInt1117, i_12_, Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv(), 125.toByte(), WorldMapSceneSoftware.anInt5819, anInt4717 - -i_4_, i_11_)
+                    else method2431(0xffffff.inv() or Class348_Sub42_Sub11.anInt9586, i_21_, class348_sub42_sub13, i_11_, Class63.anInt1117, 0xffffff.inv() or Class5_Sub2.anInt8363, i_12_, var_renderer, Class348_Sub42_Sub5.anInt9532 - -i_5_, i xor 0x60, i_4_ + anInt4717, WorldMapSceneSoftware.anInt5819)
                     class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(111.toByte()) as Class348_Sub42_Sub13?)
                 }
                 if (Class242.aClass348_Sub42_Sub13_3152 != null) {
@@ -150,7 +150,7 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                     class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(71.toByte()) as? Class348_Sub42_Sub12?
                 }
             }
-            Class332.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_5_, true, i_4_ + anInt4717, Class237_Sub1.anInt5819)
+            Class332.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_5_, true, i_4_ + anInt4717, WorldMapSceneSoftware.anInt5819)
         }
 
         @JvmStatic

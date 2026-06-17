@@ -358,12 +358,12 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             if (!RenderNode.aBoolean9722) Class362.anInt4458 = -1
                             FloatGrid.method1583((-73).toByte())
                             Class311.anInt3918++
-                            if (Class237.aBoolean3103) {
+                            if (WorldMapScene.aBoolean3103) {
                                 Class98.anInt1568++
                                 val class348_sub47 = method2148((OpenGlRenderer.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(117.toByte(), (InputStream_Sub2.anInt85 shl 14 or (Class348_Sub40_Sub26.anInt9349 shl 28) or Class79.anInt1404))
                                 Class348_Sub42_Sub14.method3243(30, class348_sub47)
-                                Class237.aBoolean3103 = false
+                                WorldMapScene.aBoolean3103 = false
                             }
                             while (true) {
                                 val class348_sub36 = (BufferedOutputStreamWorker.aClass262_2707!!.method1997(8) as? Class348_Sub36?)

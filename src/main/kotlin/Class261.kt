@@ -162,7 +162,7 @@ class Class261 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
                         else bool = true
                     }
                     if (!bool) {
-                        if (GlArrayBufferObject.anInt4717 - 10 <= i_15_ && i_15_ <= (10 + GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_16_ >= -10 + Class348_Sub42_Sub5.anInt9532 && i_16_ <= (10 + Class348_Sub42_Sub5.anInt9532 - -Class237_Sub1.anInt5819)) {
+                        if (GlArrayBufferObject.anInt4717 - 10 <= i_15_ && i_15_ <= (10 + GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_16_ >= -10 + Class348_Sub42_Sub5.anInt9532 && i_16_ <= (10 + Class348_Sub42_Sub5.anInt9532 - -WorldMapSceneSoftware.anInt5819)) {
                             if (Class348_Sub42_Sub6.aBoolean9535) {
                                 var i_17_ = -1
                                 var i_18_ = -1
@@ -230,7 +230,7 @@ class Class261 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
                             }
                         }
                         method2146(78.toByte())
-                    } else if (GlArrayBufferObject.anInt4717 <= i_23_ && (i_23_ <= GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_24_ >= Class348_Sub42_Sub5.anInt9532 && ((Class348_Sub42_Sub5.anInt9532 - -Class237_Sub1.anInt5819) >= i_24_)) {
+                    } else if (GlArrayBufferObject.anInt4717 <= i_23_ && (i_23_ <= GlArrayBufferObject.anInt4717 - -Class63.anInt1117) && i_24_ >= Class348_Sub42_Sub5.anInt9532 && ((Class348_Sub42_Sub5.anInt9532 - -WorldMapSceneSoftware.anInt5819) >= i_24_)) {
                         if (Class348_Sub42_Sub6.aBoolean9535) {
                             var i_30_ = -1
                             for (i_31_ in 0..<Class8.anInt166) {

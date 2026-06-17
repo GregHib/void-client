@@ -16,7 +16,7 @@ import Class87.Companion.method837
 /* Class237 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: Class268?, particleDefLoader: ParticleDefLoader?) {
+open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: Class268?, particleDefLoader: ParticleDefLoader?) {
     var aByteArrayArrayArray3104: Array<Array<ByteArray?>?>? = null
     var aByteArrayArrayArray3108: Array<Array<ByteArray?>?>?
     var aBoolean3109: Boolean = false

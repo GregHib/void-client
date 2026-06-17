@@ -423,7 +423,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeIndexBuffer.anInt4705 = 0
             Class318_Sub1_Sub2_Sub1.anInt10188 = 0
             DelegatingRenderCanvas.anInt66 = 0
-            Class237_Sub1.anInt5818 = 0
+            WorldMapSceneSoftware.anInt5818 = 0
             GzipDecompressor.anInt2074 = 0
             Class348_Sub1_Sub2.anInt8812 = 0
             Class348_Sub40_Sub23.anInt9316 = 0
@@ -694,7 +694,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class353.anInt4351 = 0
             GlTextureBase.anInt5104 = 0
             Class286_Sub1.anInt6184 = 0
-            Class237.anInt3105 = 0
+            WorldMapScene.anInt3105 = 0
             ModelDefinition.anInt1840 = 0
             Class77.anInt1295 = 0
             GlFramebufferBlitter.anInt278 = 0
@@ -809,7 +809,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class238.anInt3132 = 0
             Class239_Sub15.anInt6003 = 0
             Class348_Sub15.anInt6777 = 0
-            Class237.anInt3118 = 0
+            WorldMapScene.anInt3118 = 0
             Class5_Sub2.anInt8359 = 0
             Class318.anInt3975 = 0
             NativeRenderer.anInt7956 = 0
@@ -1673,7 +1673,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub9_Sub1.anInt8788 = 0
             ProjectionCameraTransform.anInt5782 = 0
             Class285_Sub1.anInt8485 = 0
-            Class237.anInt3127 = 0
+            WorldMapScene.anInt3127 = 0
             Class318_Sub1.anInt6385 = 0
             Class331.anInt4134 = 0
             BufferedOutputStreamWorker.anInt2711 = 0
@@ -1703,7 +1703,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7564 = 0
             Class248.anInt3198 = 0
             GrowableStringList.anInt2368 = 0
-            Class237_Sub1.anInt5820 = 0
+            WorldMapSceneSoftware.anInt5820 = 0
             GameAppletFrame.anInt28 = 0
             OpenGlRenderer.anInt7605 = 0
             Class348_Sub49.anInt7188 = 0
@@ -1862,7 +1862,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             AnimatedModelRenderer.anInt8405 = 0
             Class348_Sub3.anInt6578 = 0
             Class286_Sub8.anInt6300 = 0
-            Class237_Sub1.anInt5815 = 0
+            WorldMapSceneSoftware.anInt5815 = 0
             Class348_Sub40_Sub34.anInt9437 = 0
             RenderableGroup.anInt5018 = 0
             Class318_Sub1_Sub1_Sub2.anInt9982 = 0
@@ -2378,7 +2378,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class242.anInt3151 = 0
             Class37.anInt494 = 0
             Class318_Sub1_Sub5_Sub1.anInt10141 = 0
-            Class237.anInt3106 = 0
+            WorldMapScene.anInt3106 = 0
             SpotAnimDefinition.anInt2396 = 0
             Class318_Sub1_Sub3.anInt8742 = 0
             Class77.anInt1297 = 0
@@ -2500,7 +2500,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7589 = 0
             Class348_Sub13.anInt6754 = 0
             RenderableGroup.anInt5005 = 0
-            Class237.anInt3115 = 0
+            WorldMapScene.anInt3115 = 0
             Class361.anInt4432 = 0
             Player.anInt10563 = 0
             Class348_Sub16_Sub3.anInt8908 = 0
@@ -2608,7 +2608,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5693 = 0
             Renderer.anInt4570 = 0
             Class273.anInt5168 = 0
-            Class237.anInt3116 = 0
+            WorldMapScene.anInt3116 = 0
             NativeRenderer.anInt8036 = 0
             NativeRenderer.anInt7996 = 0
             LoadingScreenState.anInt2630 = 0
@@ -3035,7 +3035,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class62.anInt1112 = 0
             GameAppletFrame.anInt10 = 0
             WorldListEntry.anInt309 = 0
-            Class237.anInt3107 = 0
+            WorldMapScene.anInt3107 = 0
             OpenGlRenderer.anInt7539 = 0
             Class261.anInt3316 = 0
             Class376.anInt4552 = 0
@@ -3111,7 +3111,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             VarpStore.anInt5062 = 0
             Class348_Sub49.anInt7196 = 0
             Class331.anInt4137 = 0
-            Class237.anInt3110 = 0
+            WorldMapScene.anInt3110 = 0
             Class348_Sub40_Sub31.anInt9409 = 0
             Class279.anInt3612 = 0
             Class348_Sub16_Sub2.anInt8867 = 0
@@ -3151,7 +3151,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class30.anInt410 = 0
             FloatCameraTransform.anInt5733 = 0
             Class285.anInt4749 = 0
-            Class237.anInt3125 = 0
+            WorldMapScene.anInt3125 = 0
             Class348_Sub40_Sub19.anInt9255 = 0
             Class348_Sub42_Sub7.anInt9544 = 0
             Class348_Sub23_Sub2.anInt9030 = 0
@@ -3289,7 +3289,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class5.anInt4641 = 0
             Class307.anInt3877 = 0
             SocketStreamWorker.anInt2647 = 0
-            Class237.anInt3112 = 0
+            WorldMapScene.anInt3112 = 0
             Class318_Sub1_Sub4_Sub1.anInt10067 = 0
             Class348_Sub16_Sub1.anInt8851 = 0
             Class348_Sub49.anInt7177 = 0
@@ -3345,7 +3345,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7542 = 0
             Class79.anInt1400 = 0
             Class252.anInt3243 = 0
-            Class237_Sub1.anInt5825 = 0
+            WorldMapSceneSoftware.anInt5825 = 0
             Class318_Sub1_Sub1_Sub1.anInt9953 = 0
             Class246.anInt3178 = 0
             Class38.anInt509 = 0
@@ -3370,7 +3370,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub14.anInt5988 = 0
             VarpStore.anInt5068 = 0
             Class316.anInt3962 = 0
-            Class237_Sub1.anInt5816 = 0
+            WorldMapSceneSoftware.anInt5816 = 0
             Class318_Sub1_Sub3_Sub2.anInt10044 = 0
             Class45.anInt661 = 0
             MinimapSpriteRenderer.anInt4927 = 0
@@ -3491,7 +3491,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             anInt5796 = 0
             Class239_Sub8.anInt5920 = 0
             Class73.anInt4774 = 0
-            Class237.anInt3121 = 0
+            WorldMapScene.anInt3121 = 0
             Class55.anInt997 = 0
             AnimatedModelRenderer.anInt8395 = 0
             Class369_Sub1.anInt8579 = 0
@@ -3548,7 +3548,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub23.anInt6864 = 0
             Class64_Sub3.anInt5639 = 0
             Class348_Sub40_Sub29.anInt9373 = 0
-            Class237_Sub1.anInt5817 = 0
+            WorldMapSceneSoftware.anInt5817 = 0
             GameAppletFrame.anInt3 = 0
             Class375.anInt4541 = 0
             Class64.anInt1128 = 0
@@ -3576,7 +3576,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SceneProjector.anInt2989 = 0
             Class318_Sub1_Sub3_Sub1.anInt10018 = 0
             Class377.anInt9877 = 0
-            Class237.anInt3102 = 0
+            WorldMapScene.anInt3102 = 0
             Class318_Sub1_Sub3_Sub1.anInt10009 = 0
             Class45.anInt638 = 0
             WorldListEntry.anInt305 = 0
@@ -3592,7 +3592,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5525 = 0
             Class348_Sub49.anInt7184 = 0
             Class66.anInt1158 = 0
-            Class237_Sub1.anInt5826 = 0
+            WorldMapSceneSoftware.anInt5826 = 0
             Class348_Sub4.anInt6611 = 0
             Class58.anInt1065 = 0
             NativeRenderer.anInt7887 = 0
@@ -3844,7 +3844,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class27.anInt392 = 0
             Class348_Sub49.anInt7193 = 0
             Class326.anInt4083 = 0
-            Class237.anInt3111 = 0
+            WorldMapScene.anInt3111 = 0
             ClickFeedbackTask.anInt4665 = 0
             Class292.anInt4801 = 0
             SceneObjectAnimator.anInt3078 = 0
@@ -3895,7 +3895,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7138 = 0
             Class318_Sub1_Sub5_Sub2.anInt10151 = 0
             Class367.anInt4480 = 0
-            Class237_Sub1.anInt5822 = 0
+            WorldMapSceneSoftware.anInt5822 = 0
             Class348_Sub40_Sub28.anInt9366 = 0
             GameAppletFrame.anInt14 = 0
             Class239_Sub4.anInt5880 = 0
@@ -3979,7 +3979,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LoadingScreenState.anInt2637 = 0
             Class239_Sub24.anInt6092 = 0
             Gl2dTexture.anInt8608 = 0
-            Class237_Sub1.anInt5823 = 0
+            WorldMapSceneSoftware.anInt5823 = 0
             ProjectionCameraTransform.anInt5776 = 0
             Class348_Sub40_Sub37.anInt9459 = 0
             Class239_Sub10.anInt5937 = 0
@@ -4084,7 +4084,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class298.anInt3808 = 0
             ConfigDefinitionLoader.anInt2079 = 0
             GlCubeMapTexture.anInt8622 = 0
-            Class237.anInt3131 = 0
+            WorldMapScene.anInt3131 = 0
             Class239_Sub4.anInt5879 = 0
             Class91.anInt1520 = 0
             Class348_Sub49.anInt7146 = 0

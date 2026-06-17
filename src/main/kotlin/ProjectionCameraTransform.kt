@@ -464,7 +464,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
             return Class98.aClass348_Sub16_Sub3_1564
         }
 
-        fun method944(i: Int, `is`: Array<ByteArray?>?, class237_sub1: Class237_Sub1?) {
+        fun method944(i: Int, `is`: Array<ByteArray?>?, class237_sub1: WorldMapSceneSoftware?) {
             try {
                 if (i != -8212) method944(65, null, null)
                 anInt5752++

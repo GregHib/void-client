@@ -195,7 +195,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
                         var class46_9_ = method2570(1512932720, (class348_sub42_sub12.anInt9607))
                         while (class46_9_ != null) {
                             if (class46_9_.anInt830 == class46!!.anInt830) return true
-                            class46_9_ = Class237.method1687(class46_9_, 3)
+                            class46_9_ = WorldMapScene.method1687(class46_9_, 3)
                         }
                     }
                     class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(56.toByte()) as? Class348_Sub42_Sub12?

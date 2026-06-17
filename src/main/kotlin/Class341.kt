@@ -24,7 +24,7 @@ class Class341 {
         if (i_8_ != 1595) return 38
         val i_9_ = (max(Class348_Sub42_Sub8_Sub2.anInt10432, i))
         if (PerlinTextureProvider.aClass341_5808 == this) return 0
-        if (this == Class237_Sub1.aClass341_5821) return i_9_ - i_7_
+        if (this == WorldMapSceneSoftware.aClass341_5821) return i_9_ - i_7_
         if (Class27.aClass341_399 == this) return (i_9_ - i_7_) / 2
         return 0
     }

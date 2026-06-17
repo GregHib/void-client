@@ -41,7 +41,7 @@ abstract class Class47 {
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub15_7224), 1)
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226), 0)
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243), 0)
-            Class237.method1686(-126)
+            WorldMapScene.method1686(-126)
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231), 1)
             if (i.toInt() == -59) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 3)

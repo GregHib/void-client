@@ -264,14 +264,14 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     OutputStream_Sub2.anInt101 = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
                     IOException_Sub1.aBoolean86 = Class316.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
                     Class47.aBoolean845 = Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
-                    Class338.aClass237_Sub1_4197 = Class237_Sub1(4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, false)
+                    Class338.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, false)
                     if (Class312.anInt3931 != 0) Class44.method385(false, Class338.aClass237_Sub1_4197, Class347.aByteArrayArray4281)
                     else Class348_Sub1_Sub1.method2727((-65).toByte(), Class338.aClass237_Sub1_4197, (Class347.aByteArrayArray4281))
                     GroundItemRenderState.method1015(Class367_Sub4.anInt7319 shr 4, (Class348_Sub40_Sub3.anInt9109 shr 4), true)
                     Class348_Sub42_Sub3.method3175((-77).toByte())
                     if (bool_25_) {
                         Class243.method1879(true)
-                        VarpStore.aClass237_Sub1_5067 = Class237_Sub1(1, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, true)
+                        VarpStore.aClass237_Sub1_5067 = WorldMapSceneSoftware(1, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, true)
                         if (Class312.anInt3931 == 0) {
                             Class348_Sub1_Sub1.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (ModelFacePriorityNode.aByteArrayArray1887))
                             Class289.method2193(true, (-119).toByte())

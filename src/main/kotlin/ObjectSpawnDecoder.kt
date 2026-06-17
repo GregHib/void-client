@@ -70,7 +70,7 @@ object ObjectSpawnDecoder {
         return false
     }
 
-    fun method1090(`is`: Array<ByteArray?>?, i: Int, class237_sub1: Class237_Sub1?) {
+    fun method1090(`is`: Array<ByteArray?>?, i: Int, class237_sub1: WorldMapSceneSoftware?) {
         try {
             anInt1802++
             val i_13_ = Class347.aByteArrayArray4281!!.size

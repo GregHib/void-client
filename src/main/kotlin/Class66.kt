@@ -2675,7 +2675,7 @@ object Class66 {
     }
 
     private fun method708(c: Char): Int {
-        if (Class237_Sub1.method1693(c, -114)) return 1
+        if (WorldMapSceneSoftware.method1693(c, -114)) return 1
         return 0
     }
 
@@ -3413,7 +3413,7 @@ object Class66 {
                     return
                 }
                 if (i == 1506) {
-                    val class46_294_ = Class237.method1687(class46, 3)
+                    val class46_294_ = WorldMapScene.method1687(class46, 3)
                     anIntArray1149!![anInt1173++] = (if (class46_294_ == null) -1 else class46_294_.anInt830)
                     return
                 }
@@ -3575,7 +3575,7 @@ object Class66 {
                     return
                 }
                 if (i == 1506) {
-                    val class46_297_ = Class237.method1687(class46!!, 3)
+                    val class46_297_ = WorldMapScene.method1687(class46!!, 3)
                     anIntArray1149!![anInt1173++] = (if (class46_297_ == null) -1 else class46_297_.anInt830)
                     return
                 }

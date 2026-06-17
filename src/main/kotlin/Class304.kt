@@ -104,7 +104,7 @@ class Class304 internal constructor(var anInt3850: Int) {
                 }
                 i_6_ += 8
                 i_7_ = 21 + 16 * Class8.anInt166
-                Class237_Sub1.anInt5819 = (if (Class71.aBoolean1211) 26 else 22) + 16 * Class8.anInt166
+                WorldMapSceneSoftware.anInt5819 = (if (Class71.aBoolean1211) 26 else 22) + 16 * Class8.anInt166
             } else {
                 var class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as? Class348_Sub42_Sub12?)
                 while (class348_sub42_sub12 != null) {
@@ -113,7 +113,7 @@ class Class304 internal constructor(var anInt3850: Int) {
                     class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(69.toByte()) as? Class348_Sub42_Sub12?
                 }
                 i_6_ += 8
-                Class237_Sub1.anInt5819 = (if (!Class71.aBoolean1211) 22 else 26) + 16 * Class73.anInt4776
+                WorldMapSceneSoftware.anInt5819 = (if (!Class71.aBoolean1211) 22 else 26) + 16 * Class73.anInt4776
                 i_7_ = 21 + Class73.anInt4776 * 16
             }
             var i_10_ = -(i_6_ / 2) + i_4_

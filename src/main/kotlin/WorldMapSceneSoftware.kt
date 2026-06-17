@@ -27,7 +27,7 @@ import OpenGlRenderNode.Companion.method3297
 /* Class237_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool: Boolean) : Class237(i, i_114_, i_115_, bool, RenderConfigFactory.aClass268_2979, Class362.aParticleDefLoader_4460) {
+class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: Int, bool: Boolean) : WorldMapScene(i, i_114_, i_115_, bool, RenderConfigFactory.aClass268_2979, Class362.aParticleDefLoader_4460) {
     var anInt5824: Int = 99
     fun method1689(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, class361: Class361?) {
         try {
@@ -547,7 +547,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                     } else {
                         if (i != 1) {
                             if (i == 2) {
-                                Class348_Sub42_Sub16.method3253(i_93_, i_94_, i_95_, ((if (Class237_Sub1.Companion.aClass5827 != null) Class237_Sub1.Companion.aClass5827 else (Interface10::class.java.also { Class237_Sub1.Companion.aClass5827 = it }))!!))
+                                Class348_Sub42_Sub16.method3253(i_93_, i_94_, i_95_, ((if (WorldMapSceneSoftware.Companion.aClass5827 != null) WorldMapSceneSoftware.Companion.aClass5827 else (Interface10::class.java.also { WorldMapSceneSoftware.Companion.aClass5827 = it }))!!))
                                 if (class51.anInt920 != 0 && (class51.anInt961 + i_94_ < this.anInt3117) && (i_95_ - -class51.anInt961 < this.anInt3114) && (class51.anInt926 + i_94_ < this.anInt3117) && (this.anInt3114 > (i_95_ + class51.anInt926))) class361!!.method3509(i_98_, !class51.aBoolean876, class51.aBoolean896, i_94_, i_95_, class51.anInt926, 84, class51.anInt961)
                                 if (i_97_ != 9) break
                                 if ((0x1 and i_98_) != 0) method2987(i_93_, 16, i_95_, -3951, i_94_)

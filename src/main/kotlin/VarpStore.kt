@@ -126,7 +126,7 @@ class VarpStore : Interface17 {
         var anInt5064: Int = 0
         var anInt5065: Int = 0
         var anInt5066: Int = 0
-        var aClass237_Sub1_5067: Class237_Sub1? = null
+        var aClass237_Sub1_5067: WorldMapSceneSoftware? = null
         var anInt5068: Int = 0
         var anInt5069: Int = 0
         var anInt5071: Int = 0

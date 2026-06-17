@@ -58,7 +58,7 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
         var anInt4189: Int = 0
         var anInt4195: Int = 0
         var anIntArray4196: IntArray? = IntArray(5)
-        var aClass237_Sub1_4197: Class237_Sub1? = null
+        var aClass237_Sub1_4197: WorldMapSceneSoftware? = null
 
         fun method2661(i: Int, i_0_: Int, i_1_: Int, bool: Boolean, i_2_: Int): Class348_Sub41 {
             if (i_2_ != 2) method2661(31, -43, 32, true, -110)

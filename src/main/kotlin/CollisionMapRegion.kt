@@ -165,7 +165,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
         fun method1048(class46: Class46, i: Int) {
             anInt1723++
             val i_13_ = 113 % ((-25 - i) / 59)
-            val class46_14_ = Class237.method1687(class46, 3)
+            val class46_14_ = WorldMapScene.method1687(class46, 3)
             val i_15_: Int
             val i_16_: Int
             if (class46_14_ == null) {

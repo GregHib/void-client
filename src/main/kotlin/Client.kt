@@ -130,8 +130,8 @@ import HudTabPanel.Companion.method1641
 import TerrainTileGeometry.Companion.method1645
 import ParticleSortRenderer.Companion.method1653
 import SceneObjectAnimator.Companion.method1673
-import Class237.Companion.method1677
-import Class237_Sub1.Companion.method1698
+import WorldMapScene.Companion.method1677
+import WorldMapSceneSoftware.Companion.method1698
 import Class239.Companion.method1715
 import Class239_Sub1.Companion.method1723
 import Class239_Sub10.Companion.method1761
@@ -2082,7 +2082,7 @@ class Client : GameAppletFrame() {
                                 }
                                 Class348_Sub42.anInt7059 = 0
                                 Class246.aBoolean3174 = false
-                                Class237.aBoolean3103 = false
+                                WorldMapScene.aBoolean3103 = false
                                 if (!Class5_Sub1.aBoolean8335) method661(111.toByte())
                             }
                             var bool: Boolean
@@ -2225,7 +2225,7 @@ class Client : GameAppletFrame() {
                                                         method3502(`is`[2], 2, `is`[0], `is`[1])
                                                         continue
                                                     }
-                                                    Class237.aBoolean3103 = true
+                                                    WorldMapScene.aBoolean3103 = true
                                                     Class348_Sub40_Sub26.anInt9349 = `is`[0]
                                                     InputStream_Sub2.anInt85 = `is`[1]
                                                     Class79.anInt1404 = `is`[2]

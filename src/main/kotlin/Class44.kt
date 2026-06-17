@@ -24,7 +24,7 @@ object Class44 {
         return i_4_ / 4 + i_3_ / 8 + i_2_ / 16
     }
 
-    fun method385(bool: Boolean, class237_sub1: Class237_Sub1?, `is`: Array<ByteArray?>?) {
+    fun method385(bool: Boolean, class237_sub1: WorldMapSceneSoftware?, `is`: Array<ByteArray?>?) {
         do {
             try {
                 anInt622++
