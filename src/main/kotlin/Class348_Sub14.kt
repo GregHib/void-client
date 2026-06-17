@@ -220,7 +220,7 @@ class Class348_Sub14 : Class348 {
                                             if (i_40_ >= 0) {
                                                 var bool_43_ = false
                                                 if (i_40_ >= 0) {
-                                                    val class42 = (Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_40_, 126.toByte()))
+                                                    val class42 = (Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_40_, 126.toByte()))
                                                     if (class42 != null && (class42.aBoolean599)) bool_43_ = true
                                                 }
                                                 var i_44_ = i_37_
@@ -253,7 +253,7 @@ class Class348_Sub14 : Class348 {
                     }
                     if (OpenGlRenderNode.aClass252_10488 != null) {
                         Class95.aClass45_1541!!.anInt634 = 1
-                        Class348_Sub23_Sub2.aClass153_9031!!.method1220(116.toByte(), 64, 1024)
+                        Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1220(116.toByte(), 64, 1024)
                         for (i_51_ in 0..<OpenGlRenderNode.aClass252_10488!!.anInt3241) {
                             val i_52_ = (OpenGlRenderNode.aClass252_10488!!.anIntArray3238!![i_51_])
                             if ((LocalPlayerState.aPlayer_1907!!.plane).toInt() == i_52_ shr 28) {
@@ -261,12 +261,12 @@ class Class348_Sub14 : Class348 {
                                 val i_54_ = (i_52_ and 0x3fff) + -Class90.regionTileY
                                 if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319 && i_54_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_54_)) Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1999(Class348_Sub35(i_51_), -20180)
                                 else {
-                                    val class42 = (Class348_Sub23_Sub2.aClass153_9031!!.method1225((OpenGlRenderNode.aClass252_10488!!.anIntArray3239!![i_51_]), 120.toByte()))
+                                    val class42 = (Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225((OpenGlRenderNode.aClass252_10488!!.anIntArray3239!![i_51_]), 120.toByte()))
                                     if (class42!!.anIntArray591 != null && (i_53_ + class42.anInt595 >= 0) && (Class367_Sub4.anInt7319 > class42.anInt603 + i_53_) && i_54_ + class42.anInt570 >= 0 && (Class348_Sub40_Sub3.anInt9109 > (i_54_ - -class42.anInt607))) Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1999(Class348_Sub35(i_51_), -20180)
                                 }
                             }
                         }
-                        Class348_Sub23_Sub2.aClass153_9031!!.method1220(13.toByte(), 64, 128)
+                        Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1220(13.toByte(), 64, 128)
                         Class95.aClass45_1541!!.anInt634 = 2
                         Class95.aClass45_1541!!.method412((-126).toByte())
                     }

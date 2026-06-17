@@ -3,7 +3,7 @@ import Class299_Sub1.Companion.method2259
 /* Class153 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class153 internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_10_: Class45?) {
+class ConfigDefinitionLoader internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_10_: Class45?) {
     private var aClass60_2083 = Class60(128)
     private val aClass45_2084: Class45?
     var aClass45_2087: Class45? = null
@@ -63,7 +63,7 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
             `is` = aClass45_2084.method410(-1860, 36, i)
         }
         class42 = Class42()
-        class42.aClass153_593 = this
+        class42.aConfigDefinitionLoader_593 = this
         class42.anInt581 = i
         if (`is` != null) class42.method379(Class348_Sub49(`is`), 109)
         class42.method372(-25359)

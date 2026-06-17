@@ -70,7 +70,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
             RenderNode.aClass312_9716!!.method2328(Class75.aClass262_1254!!, 75)
             val class348_sub21 = RenderNode.aClass312_9716!!.method2327((-53).toByte()) as Class348_Sub21?
             if (class348_sub21 == null) return null
-            val class42 = Class75.aClass153_1238!!.method1225(class348_sub21.anInt6847, 50.toByte())
+            val class42 = Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 50.toByte())
             if (i != 1) anInt8370 = -75
             if (class42 != null && class42.aBoolean609 && class42.method373(Class75.anInterface17_1244!!, 98)) return class348_sub21
             return Class356.method3479(-1)

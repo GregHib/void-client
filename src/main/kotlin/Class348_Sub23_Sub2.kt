@@ -142,7 +142,7 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
         @JvmField
         var anInt9030: Int = 0
         @JvmField
-        var aClass153_9031: Class153? = null
+        var aConfigDefinitionLoader_9031: ConfigDefinitionLoader? = null
         @JvmField
         var aClass45_9033: Class45? = null
         @JvmField
@@ -163,7 +163,7 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
             aClass45_9033 = null
             aClass229_9011 = null
             aClass77_9029 = null
-            aClass153_9031 = null
+            aConfigDefinitionLoader_9031 = null
             aClass187_9036 = null
         }
     }

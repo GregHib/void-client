@@ -806,7 +806,7 @@ class Class361 {
                         else i_49_ = -(5 * Class164.anInt2173) + 500
                         var class348_sub21 = (Class75.aClass262_1254!!.method1995(4) as Class348_Sub21?)
                         while (class348_sub21 != null) {
-                            val class42 = (Class75.aClass153_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
+                            val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
                             if (method589(class42, -4)) {
                                 if (Class348_Sub40_Sub30.anInt9399 == (class348_sub21.anInt6847)) {
                                     val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259))

@@ -48,7 +48,7 @@ class Class42 {
     var anIntArray591: IntArray? = null
     private var anInt592 = 0
     @JvmField
-    var aClass153_593: Class153? = null
+    var aConfigDefinitionLoader_593: ConfigDefinitionLoader? = null
     @JvmField
     var anInt595: Int
     @JvmField
@@ -113,26 +113,26 @@ class Class42 {
         val i_3_ = if (bool) this.anInt605 else this.anInt578
         if (i.toInt() != 127) return null
         val i_4_ = i_3_ or (var_renderer.anInt4567 shl 29)
-        var abstractModelRenderer = this.aClass153_593!!.aClass60_2089.method583(i_4_.toLong(), 64) as AbstractModelRenderer?
+        var abstractModelRenderer = this.aConfigDefinitionLoader_593!!.aClass60_2089.method583(i_4_.toLong(), 64) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
-        if (!this.aClass153_593!!.aClass45_2087!!.method421(false, i_3_)) return null
-        val class207 = Class207.method1521((this.aClass153_593!!.aClass45_2087!!), i_3_, 0)
+        if (!this.aConfigDefinitionLoader_593!!.aClass45_2087!!.method421(false, i_3_)) return null
+        val class207 = Class207.method1521((this.aConfigDefinitionLoader_593!!.aClass45_2087!!), i_3_, 0)
         if (class207 != null) {
             abstractModelRenderer = var_renderer.method3691(class207, true)
-            this.aClass153_593!!.aClass60_2089.method582(abstractModelRenderer, i_4_.toLong(), (-111).toByte())
+            this.aConfigDefinitionLoader_593!!.aClass60_2089.method582(abstractModelRenderer, i_4_.toLong(), (-111).toByte())
         }
         return abstractModelRenderer
     }
 
     fun method375(var_renderer: Renderer, bool: Boolean): AbstractModelRenderer? {
         anInt563++
-        var abstractModelRenderer = (this.aClass153_593!!.aClass60_2089.method583((anInt598 or 0x20000 or (var_renderer.anInt4567 shl 29)).toLong(), -75)) as AbstractModelRenderer?
+        var abstractModelRenderer = (this.aConfigDefinitionLoader_593!!.aClass60_2089.method583((anInt598 or 0x20000 or (var_renderer.anInt4567 shl 29)).toLong(), -75)) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
-        this.aClass153_593!!.aClass45_2087!!.method421(bool, anInt598)
-        val class207 = Class207.method1521((this.aClass153_593!!.aClass45_2087!!), anInt598, 0)
+        this.aConfigDefinitionLoader_593!!.aClass45_2087!!.method421(bool, anInt598)
+        val class207 = Class207.method1521((this.aConfigDefinitionLoader_593!!.aClass45_2087!!), anInt598, 0)
         if (class207 != null) {
             abstractModelRenderer = var_renderer.method3691(class207, true)
-            this.aClass153_593!!.aClass60_2089.method582(abstractModelRenderer, (var_renderer.anInt4567 shl 29 or (anInt598 or 0x20000)).toLong(), (-121).toByte())
+            this.aConfigDefinitionLoader_593!!.aClass60_2089.method582(abstractModelRenderer, (var_renderer.anInt4567 shl 29 or (anInt598 or 0x20000)).toLong(), (-121).toByte())
         }
         return abstractModelRenderer
     }

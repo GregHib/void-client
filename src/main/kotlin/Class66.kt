@@ -118,7 +118,7 @@ object Class66 {
 
     @JvmStatic
     fun method701(class273: Class273, i: Int, i_0_: Int) {
-        val class348_sub42_sub19 = Class153.method1223(i, i_0_, 96837648, class273)
+        val class348_sub42_sub19 = ConfigDefinitionLoader.method1223(i, i_0_, 96837648, class273)
         if (class348_sub42_sub19 != null) {
             anIntArray1164 = (IntArray(class348_sub42_sub19.anInt9688))
             aStringArray1155 = (arrayOfNulls<String>(class348_sub42_sub19.anInt9689))
@@ -2215,7 +2215,7 @@ object Class66 {
             } else if (i < 6900) {
                 if (i == 6800) {
                     val i_215_ = anIntArray1149!![--anInt1173]
-                    val class42 = Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_215_, 96.toByte())
+                    val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_215_, 96.toByte())
                     if (class42!!.aString597 == null) aStringArray1152!![anInt1170++] = ""
                     else {
                         aStringArray1152!![anInt1170++] = class42.aString597!!
@@ -2225,19 +2225,19 @@ object Class66 {
                 }
                 if (i == 6801) {
                     val i_216_ = anIntArray1149!![--anInt1173]
-                    val class42 = Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_216_, 111.toByte())
+                    val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_216_, 111.toByte())
                     anIntArray1149!![anInt1173++] = class42!!.anInt578
                     return
                 }
                 if (i == 6802) {
                     val i_217_ = anIntArray1149!![--anInt1173]
-                    val class42 = Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_217_, 91.toByte())
+                    val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_217_, 91.toByte())
                     anIntArray1149!![anInt1173++] = class42!!.anInt576
                     return
                 }
                 if (i == 6803) {
                     val i_218_ = anIntArray1149!![--anInt1173]
-                    val class42 = Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_218_, 44.toByte())
+                    val class42 = Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_218_, 44.toByte())
                     anIntArray1149!![anInt1173++] = class42!!.anInt596
                     return
                 }
@@ -2246,9 +2246,9 @@ object Class66 {
                     val i_219_ = anIntArray1149!![anInt1173]
                     val i_220_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_220_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_219_, 79.toByte())!!.method376(class254.aString3258, i_220_, 126.toByte())!!)
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_219_, 79.toByte())!!.method376(class254.aString3258, i_220_, 126.toByte())!!)
                     else {
-                        anIntArray1149!![anInt1173++] = (Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_219_, 50.toByte())!!.method378(class254.anInt3256, i_220_, false))
+                        anIntArray1149!![anInt1173++] = (Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1225(i_219_, 50.toByte())!!.method378(class254.anInt3256, i_220_, false))
                         return
                     }
                     return

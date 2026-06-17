@@ -11,7 +11,7 @@ open class Class75 {
         @JvmField
         var aClass45_1237: Class45? = null
         @JvmField
-        var aClass153_1238: Class153? = null
+        var aConfigDefinitionLoader_1238: ConfigDefinitionLoader? = null
         private var aClass268_1239: Class268? = null
         private var aClass183_1240: Class183? = null
         private var aClass356_1241: Class356? = Class356(16)
@@ -136,7 +136,7 @@ open class Class75 {
             aClass268_1239 = null
             aClass183_1240 = null
             aClass263_1245 = null
-            aClass153_1238 = null
+            aConfigDefinitionLoader_1238 = null
             aTextureDefinitionLoader_1242 = null
             anInterface17_1244 = null
             aClass348_Sub42_Sub14_1243 = null
@@ -268,12 +268,12 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method752(class45: Class45?, class268: Class268?, class183: Class183?, class263: Class263?, class153: Class153?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
+        fun method752(class45: Class45?, class268: Class268?, class183: Class183?, class263: Class263?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
             aClass45_1237 = class45
             aClass268_1239 = class268
             aClass183_1240 = class183
             aClass263_1245 = class263
-            aClass153_1238 = class153
+            aConfigDefinitionLoader_1238 = configDefinitionLoader
             aTextureDefinitionLoader_1242 = textureDefinitionLoader
             anInterface17_1244 = interface17
             aClass356_1241!!.method3481(0)

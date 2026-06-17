@@ -1730,7 +1730,7 @@ class Class64_Sub3 : Class64 {
                         anIntArray5593 = null
                     }
                 }
-                if (anIntArray5644 != null && !Class153.method1221(-3157, anInt5648, anInt5556)) {
+                if (anIntArray5644 != null && !ConfigDefinitionLoader.method1221(-3157, anInt5648, anInt5556)) {
                     if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anInterface2_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5644 = null

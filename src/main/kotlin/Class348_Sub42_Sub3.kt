@@ -133,9 +133,9 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             if (i <= -44) {
                 TextureMetadataProvider.anInt4609 = -1
                 Class240.aClass323_4672 = null
-                if (Class75.aClass153_1238 != null) {
-                    Class75.aClass153_1238!!.method1219(7851)
-                    Class75.aClass153_1238!!.method1220((-100).toByte(), 64, 128)
+                if (Class75.aConfigDefinitionLoader_1238 != null) {
+                    Class75.aConfigDefinitionLoader_1238!!.method1219(7851)
+                    Class75.aConfigDefinitionLoader_1238!!.method1220((-100).toByte(), 64, 128)
                 }
                 if (Class75.aTextureDefinitionLoader_1242 != null) Class75.aTextureDefinitionLoader_1242!!.method1178(64, 1, 64)
                 if (Class75.aClass263_1245 != null) Class75.aClass263_1245!!.method2014(64, true)

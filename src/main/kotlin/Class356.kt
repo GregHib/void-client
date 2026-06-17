@@ -179,7 +179,7 @@ class Class356 internal constructor(var anInt4377: Int) {
             if (Class75.aClass262_1254 == null || RenderNode.aClass312_9716 == null) return null
             var class348_sub21 = RenderNode.aClass312_9716!!.method2329(10) as Class348_Sub21?
             while (class348_sub21 != null) {
-                val class42 = Class75.aClass153_1238!!.method1225(class348_sub21.anInt6847, 92.toByte())
+                val class42 = Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 92.toByte())
                 if (class42 != null && class42.aBoolean609 && class42.method373(Class75.anInterface17_1244!!, 127)) return class348_sub21
                 class348_sub21 = RenderNode.aClass312_9716!!.method2329(i xor 0xa.inv()) as Class348_Sub21?
             }
