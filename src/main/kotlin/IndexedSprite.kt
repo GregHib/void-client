@@ -46,7 +46,7 @@ class IndexedSprite : Sprite {
         fun method163(i: Int): Int {
             anInt5198++
             if (i != 512) method165(122, 62, -125, 72, -74, 116, 43, 104.toByte(), 62, -115)
-            return Class51.aClass311_897!!.method2325((-98).toByte())
+            return Class51.aResourceLoaderThread_897!!.method2325((-98).toByte())
         }
 
         @JvmStatic

@@ -148,7 +148,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class367_Sub3.aBooleanArray7304!![Class348_Sub42_Sub12.anInt9604] = NpcSummaryDefinition.method1166(i, 2) == 2
                     Class348_Sub42_Sub12.anInt9604++
                 }
-                Crc64Hashable.anInt4985 = Class311.anInt3918
+                Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -216,7 +216,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub40_Sub15.aIntRange_9216 == Class348_Sub3.aIntRange_6584) {
                 MinimapStateReset.anInt1872 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 Class348_Sub3.aIntRange_6584 = null
-                Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
+                Class348_Sub40_Sub23.anInt9313 = ResourceLoaderThread.anInt3918
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class330.aIntRange_4126) {
@@ -594,7 +594,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aByte310 = i_68_
                             HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aString313 = string_72_
                             if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
-                            SceneProjector.anInt2986 = Class311.anInt3918
+                            SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
                             Class348_Sub3.aIntRange_6584 = null
                             return true
                         }
@@ -611,7 +611,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class37.anInt496++
                     if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                 }
-                SceneProjector.anInt2986 = Class311.anInt3918
+                SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1116,7 +1116,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class367_Sub3.aBooleanArray7304!![i] = false
                     i++
                 }
-                Crc64Hashable.anInt4985 = Class311.anInt3918
+                Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1167,7 +1167,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     DetailLevelOptionState.aClass54Array6114!![i] = Class54(CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
                 }
                 Class348_Sub3.aIntRange_6584 = null
-                MapAreaDefinition.anInt2523 = Class311.anInt3918
+                MapAreaDefinition.anInt2523 = ResourceLoaderThread.anInt3918
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == AbstractMenuEntry.aIntRange_1702) {
@@ -1267,7 +1267,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                 }
                 MinimapSpriteRenderer.anInt4930 = 2
-                Crc64Hashable.anInt4985 = Class311.anInt3918
+                Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
                 var bool_156_ = false
                 var i = Class348_Sub40_Sub30.anInt9383
                 while (i > 0) {
@@ -1414,7 +1414,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == ScrollingWidgetComponentNode.aIntRange_8384) {
                 Class348_Sub3.aIntRange_6584 = null
                 MinimapSpriteRenderer.anInt4930 = 1
-                Crc64Hashable.anInt4985 = Class311.anInt3918
+                Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == PingHostListHolder.aIntRange_2335) {
@@ -1560,7 +1560,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == WalkingTypeUtil.aIntRange_3307) {
                 if (!Class340.method2672(WorldMapRenderer.anInt4674, -105)) RegionSceneLoader.anInt3699 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) * 30)
                 else RegionSceneLoader.anInt3699 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toFloat() * 2.5f).toInt()
-                Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
+                Class348_Sub40_Sub23.anInt9313 = ResourceLoaderThread.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1625,7 +1625,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub3.aIntRange_6584 == WidgetDefinition.aIntRange_250) {
                 ConfigVarProgress.anInt4816 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
+                Class348_Sub40_Sub23.anInt9313 = ResourceLoaderThread.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1729,7 +1729,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class359.aIntRange_4421) {
-                SceneProjector.anInt2986 = Class311.anInt3918
+                SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
                 if (Class348_Sub40_Sub25.anInt9341 == 0) {
                     Class37.anInt496 = 0
                     Class50.aString863 = null

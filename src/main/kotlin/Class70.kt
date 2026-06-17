@@ -34,9 +34,9 @@ class Class70 {
             if (i <= 88) anIntArray1204 = null
             anInt1206++
             if (Class348_Sub42_Sub15.aClass56_9660 != null) {
-                Class51.aClass311_897 = Class311()
-                Class51.aClass311_897!!.method2316(Class348_Sub42_Sub15.aClass56_9660, Class348_Sub42_Sub15.aClass56_9660!!.aLocalizedText_1012!!.method2063(Class348_Sub33.anInt6967, 544), Class348_Sub42_Sub15.aClass56_9660!!.anInt1025, DataHolder.aLong3660, false)
-                Class348_Sub32.aThread6946 = Thread(Class51.aClass311_897, "")
+                Class51.aResourceLoaderThread_897 = ResourceLoaderThread()
+                Class51.aResourceLoaderThread_897!!.method2316(Class348_Sub42_Sub15.aClass56_9660, Class348_Sub42_Sub15.aClass56_9660!!.aLocalizedText_1012!!.method2063(Class348_Sub33.anInt6967, 544), Class348_Sub42_Sub15.aClass56_9660!!.anInt1025, DataHolder.aLong3660, false)
+                Class348_Sub32.aThread6946 = Thread(Class51.aResourceLoaderThread_897, "")
                 Class348_Sub32.aThread6946!!.start()
             }
         }

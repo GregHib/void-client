@@ -328,7 +328,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
                 if (hintArrowOrMessage == null) hintArrowOrMessage = HintArrowOrMessage(i_41_, i_42_, string_39_, string, string_43_, string_40_, i_38_, string_37_)
                 else hintArrowOrMessage.method1196(i_41_, i_42_, string_43_, string, string_40_, -18691, i_38_, string_39_, string_37_)
                 Class318_Sub2.Companion.aHintArrowOrMessageArray6400s!![0] = hintArrowOrMessage
-                Class348_Sub42_Sub3.anInt9501 = Class311.anInt3918
+                Class348_Sub42_Sub3.anInt9501 = ResourceLoaderThread.anInt3918
                 if (i <= -109) NativeShaderProgram.anInt9774++
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("to.K(" + (if (string != null) "{...}" else "null") + ',' + (if (string_37_ != null) "{...}" else "null") + ',' + i + ',' + i_38_ + ',' + (if (string_39_ != null) "{...}" else "null") + ',' + (if (string_40_ != null) "{...}" else "null") + ',' + i_41_ + ',' + i_42_ + ',' + (if (string_43_ != null) "{...}" else "null") + ')'))

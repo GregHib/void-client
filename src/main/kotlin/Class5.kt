@@ -34,15 +34,15 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
     fun method183(i: Int): Int {
         anInt4633++
         if (i <= 16) this.aClass369_4635 = null
-        val i_8_ = Class51.aClass311_897!!.method2320(106.toByte())
+        val i_8_ = Class51.aResourceLoaderThread_897!!.method2320(106.toByte())
         var i_9_ = 100 * i_8_
         if (anInt4630 != i_8_ || i_8_ == 0) {
             anInt4630 = i_8_
             aLong4640 = Class62.method599(-125)
         } else {
-            val i_10_ = Class51.aClass311_897!!.method2315(121.toByte())
+            val i_10_ = Class51.aResourceLoaderThread_897!!.method2315(121.toByte())
             if (i_8_ < i_10_) {
-                val l = aLong4640 - Class51.aClass311_897!!.method2323(0)
+                val l = aLong4640 - Class51.aResourceLoaderThread_897!!.method2323(0)
                 if (l > 0L) {
                     val l_11_ = (i_10_ - i_8_).toLong() * (10000L * l / i_8_.toLong())
                     val l_12_ = (-aLong4640 + Class62.method599(-89)) * 10000L
@@ -61,8 +61,8 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
             val i_14_ = ((this.aClass369_4635!!.aClass341_4973!!.method2679(OpenGlRenderer.anInt7666, this.aClass369_4635!!.anInt4963, i.toInt() xor 0x60b.inv())) + this.aClass369_4635!!.anInt4959)
             method178(i_13_, bool, (-84).toByte(), i_14_)
             method182(63, i_14_, i_13_, bool)
-            var string = Class51.aClass311_897!!.method2318(i.toInt() xor 0x245b)
-            if (-aLong4640 + Class62.method599(-100) > 10000L) string += " (" + Class51.aClass311_897!!.method2324(i + 149)!!.method525(-117) + ")"
+            var string = Class51.aResourceLoaderThread_897!!.method2318(i.toInt() xor 0x245b)
+            if (-aLong4640 + Class62.method599(-100) > 10000L) string += " (" + Class51.aResourceLoaderThread_897!!.method2324(i + 149)!!.method525(-117) + ")"
             aClass324_4637!!.method2575(115.toByte(), (i_13_ + this.aClass369_4635!!.anInt4971 / 2), this.aClass369_4635!!.anInt4961, string, -1, (this.aClass369_4635!!.anInt4966 + 4 + (i_14_ - -(this.aClass369_4635!!.anInt4963 / 2))))
         }
     }

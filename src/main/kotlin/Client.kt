@@ -234,7 +234,7 @@ import ProjectileDefinition.method2286
 import ParticleSystemRenderer.Companion.method2294
 import ConfigVarProgress.Companion.method2310
 import ItemModelDefinition.Companion.method328
-import Class311.Companion.method2317
+import ResourceLoaderThread.Companion.method2317
 import Class312.Companion.method2331
 import Class313.method2333
 import Class314_Sub1.Companion.method2344
@@ -1419,7 +1419,7 @@ class Client : GameAppletFrame() {
     private fun method113(i: Byte) {
         if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) {
             if (RegionSceneLoader.anInt3699 > 1) {
-                Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
+                Class348_Sub40_Sub23.anInt9313 = ResourceLoaderThread.anInt3918
                 RegionSceneLoader.anInt3699--
             }
             if (!Class5_Sub1.aBoolean8335) method661(111.toByte())
@@ -1432,7 +1432,7 @@ class Client : GameAppletFrame() {
         method198(null, false, -1, -1)
         method1343(-1, null, 1, -1)
         FloatGrid.method1583((-73).toByte())
-        Class311.anInt3918++
+        ResourceLoaderThread.anInt3918++
         var i_96_ = 0
         while (Class348_Sub32.anInt6930 > i_96_) {
             val npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_96_]!!.aNpc_6859)
@@ -2487,7 +2487,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray836
                                     Class348_Sub1_Sub2.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                class46.anInt726 = Class311.anInt3918
+                                class46.anInt726 = ResourceLoaderThread.anInt3918
                                 if (class46.anObjectArray822 != null) {
                                     for (i_89_ in 0..<Class348_Sub42_Sub19.anInt9699) {
                                         val class348_sub36 = Class348_Sub36()

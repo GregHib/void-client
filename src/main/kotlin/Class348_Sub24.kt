@@ -40,7 +40,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
         @JvmStatic
         fun method2991(i: Int) {
             if (RegionSceneLoader.anInt3699 > 1) {
-                Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
+                Class348_Sub40_Sub23.anInt9313 = ResourceLoaderThread.anInt3918
                 RegionSceneLoader.anInt3699--
             }
             anInt6874++
@@ -342,11 +342,11 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 anInt4292 += 20
                                 if (anInt4292 >= 400) FogOptionState.anInt6048 = 0
                             }
-                            if (Class311.aClass46_3913 != null) {
+                            if (ResourceLoaderThread.aClass46_3913 != null) {
                                 GroundItemRenderState.anInt1656++
                                 if (GroundItemRenderState.anInt1656 >= 15) {
-                                    ConfigFlagUtil.method1916(-9343, Class311.aClass46_3913!!)
-                                    Class311.aClass46_3913 = null
+                                    ConfigFlagUtil.method1916(-9343, ResourceLoaderThread.aClass46_3913!!)
+                                    ResourceLoaderThread.aClass46_3913 = null
                                 }
                             }
                             Class318_Sub1_Sub3_Sub4.aClass46_10336 = null
@@ -357,7 +357,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             method1343(-1, null, 1, -1)
                             if (!RenderNode.aBoolean9722) Class362.anInt4458 = -1
                             FloatGrid.method1583((-73).toByte())
-                            Class311.anInt3918++
+                            ResourceLoaderThread.anInt3918++
                             if (WorldMapScene.aBoolean3103) {
                                 Class98.anInt1568++
                                 val class348_sub47 = method2148((OpenGlRenderer.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525)

@@ -274,7 +274,7 @@ object ClientLoadStateMachine {
         }
         if (Class56.aClass56_1041 == Class348_Sub42_Sub15.aClass56_9660) Class348_Sub42_Sub8.method3198(true, (-45).toByte())
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1042) {
-            Class51.aClass311_897!!.method2319((-56).toByte())
+            Class51.aResourceLoaderThread_897!!.method2319((-56).toByte())
             try {
                 Class348_Sub32.aThread6946!!.join()
             } catch (interruptedexception: InterruptedException) {
@@ -282,7 +282,7 @@ object ClientLoadStateMachine {
             }
             PerlinTextureProvider.aCollisionMapRegion_5813 = null
             Class348_Sub40_Sub17_Sub1.aClass45_10426 = null
-            Class51.aClass311_897 = null
+            Class51.aResourceLoaderThread_897 = null
             LoadProgressCounters.anInterface16Array2447 = null
             Class348_Sub32.aThread6946 = null
             ScrollTexMaterialPass.aClass45_6277 = null

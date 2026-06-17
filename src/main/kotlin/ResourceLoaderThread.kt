@@ -8,7 +8,7 @@ import kotlin.concurrent.Volatile
 /* Class311 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class311 : Runnable {
+class ResourceLoaderThread : Runnable {
     private var anInterface16_3907: Interface16 = LoadingBarRenderer()
     private var aBoolean3908 = false
 

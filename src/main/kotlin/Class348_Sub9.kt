@@ -252,7 +252,7 @@ class Class348_Sub9 : Class348() {
                             }
                             if (i_8_ == 9) {
                                 Class339.anInt4198++
-                                val class348_sub47 = method2148((Class311.aClass351_3898), (Class348_Sub23_Sub2.aClass77_9029), -107)
+                                val class348_sub47 = method2148((ResourceLoaderThread.aClass351_3898), (Class348_Sub23_Sub2.aClass77_9029), -107)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 Class348_Sub42_Sub14.method3243(119, class348_sub47)
                             }
