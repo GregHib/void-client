@@ -2186,7 +2186,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GrowableStringList.anInt2362 = 0
             NativeRenderer.anInt8028 = 0
             NativeRenderer.anInt7953 = 0
-            Class303.anInt3845 = 0
+            ProjectileDefinition.anInt3845 = 0
             NativeRenderNode.anInt10473 = 0
             Class348_Sub1_Sub3.anInt8821 = 0
             Class348_Sub46.anInt7112 = 0
@@ -2703,7 +2703,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NpcCountAccessor.anInt2281 = 0
             OpenGlRenderer.anInt7537 = 0
             SlotBinding.anInt3393 = 0
-            Class303.anInt3846 = 0
+            ProjectileDefinition.anInt3846 = 0
             Class97.anInt1549 = 0
             MatrixCameraTransform.anInt5688 = 0
             Class348_Sub42_Sub10.anInt9576 = 0
@@ -3638,7 +3638,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9819 = 0
             GlSpriteRenderer.anInt8424 = 0
             Class367_Sub2.anInt7292 = 0
-            Class303.anInt3843 = 0
+            ProjectileDefinition.anInt3843 = 0
             Class31.anInt428 = 0
             AnimatedModelRenderer.anInt8404 = 0
             Class348_Sub49.anInt7174 = 0

@@ -705,7 +705,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class303.aIntRange_3842) {
+            if (Class348_Sub3.aIntRange_6584 == ProjectileDefinition.aIntRange_3842) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 method1703(5, i, Class348_Sub42_Sub11.anInt9591, 4, 0)

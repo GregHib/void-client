@@ -1,4 +1,4 @@
-import Class303.method2288
+import ProjectileDefinition.method2288
 import Class348_Sub17.Companion.method2929
 import Class348_Sub23_Sub1.Companion.method2972
 

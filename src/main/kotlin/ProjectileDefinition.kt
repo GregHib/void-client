@@ -7,7 +7,7 @@ import Class62.method596
 /* Class303 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class303 {
+object ProjectileDefinition {
     var aIntRange_3842: IntRange?
     var anInt3843: Int = 0
     @JvmField
