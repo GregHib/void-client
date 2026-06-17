@@ -235,7 +235,7 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
         fun method1475(i: Byte, i_12_: Int, i_13_: Int): Boolean {
             anInt2653++
             if (i > -95) method1469(-48)
-            return (Class286_Sub9.method2174((-115).toByte(), i_13_, i_12_) and Class137.method1163(i_12_, (-72).toByte(), i_13_))
+            return (Class286_Sub9.method2174((-115).toByte(), i_13_, i_12_) and IndexedFileCache.method1163(i_12_, (-72).toByte(), i_13_))
         }
     }
 }

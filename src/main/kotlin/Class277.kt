@@ -73,7 +73,7 @@ class Class277 {
         var anInt3565: Int = 0
         var anInt3567: Int = 0
         @JvmField
-        var aClass137_3568: Class137? = null
+        var aIndexedFileCache_3568: IndexedFileCache? = null
         var anInt3571: Int = 0
         var aClass21_3572: Class21? = Class21()
         fun method2068(l: Long, l_0_: Long): Long {
@@ -87,7 +87,7 @@ class Class277 {
         @JvmStatic
         fun method2071(i: Int) {
             aClass21_3572 = null
-            aClass137_3568 = null
+            aIndexedFileCache_3568 = null
             if (i > -126) aClass21_3572 = null
         }
     }

@@ -43,9 +43,9 @@ class Class369_Sub2(class221: Class221?, class341: Class341?, i: Int, i_2_: Int,
         fun method3571(bool: Boolean, i: Int, i_0_: Byte, i_1_: Int): Class45? {
             anInt8593++
             if (i_0_.toInt() != -23) return null
-            var class137: Class137? = null
-            if (Class299_Sub2.aClass78_6328 != null) class137 = Class137(i, Class299_Sub2.aClass78_6328, MinimapRenderer.aClass78Array1579!![i], 1000000)
-            MinimapRectClipper.aClass314_Sub1Array223!![i] = Class175.aClass340_2327!!.method2673(class137, i, Class277.aClass137_3568, 255)
+            var indexedFileCache: IndexedFileCache? = null
+            if (Class299_Sub2.aClass78_6328 != null) indexedFileCache = IndexedFileCache(i, Class299_Sub2.aClass78_6328, MinimapRenderer.aClass78Array1579!![i], 1000000)
+            MinimapRectClipper.aClass314_Sub1Array223!![i] = Class175.aClass340_2327!!.method2673(indexedFileCache, i, Class277.aIndexedFileCache_3568, 255)
             MinimapRectClipper.aClass314_Sub1Array223!![i]!!.method2346(27872)
             return Class45(MinimapRectClipper.aClass314_Sub1Array223!![i]!!, bool, i_1_)
         }

@@ -23,13 +23,13 @@ class Class340 internal constructor(class248: Class248?, scriptCompilerThread: S
         }
     }
 
-    fun method2673(class137: Class137?, i: Int, class137_3_: Class137?, i_4_: Int): Class314_Sub1? {
+    fun method2673(indexedFileCache: IndexedFileCache?, i: Int, indexedFileCache_3_: IndexedFileCache?, i_4_: Int): Class314_Sub1? {
         try {
             anInt4219++
             if (i_4_ != 255) method2671(-43)
-            return method2675((-123).toByte(), true, i, class137, class137_3_)
+            return method2675((-123).toByte(), true, i, indexedFileCache, indexedFileCache_3_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eb.D(" + (if (class137 != null) "{...}" else "null") + ',' + i + ',' + (if (class137_3_ != null) "{...}" else "null") + ',' + i_4_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("eb.D(" + (if (indexedFileCache != null) "{...}" else "null") + ',' + i + ',' + (if (indexedFileCache_3_ != null) "{...}" else "null") + ',' + i_4_ + ')'))
         }
     }
 
@@ -75,7 +75,7 @@ class Class340 internal constructor(class248: Class248?, scriptCompilerThread: S
         return true
     }
 
-    private fun method2675(i: Byte, bool: Boolean, i_10_: Int, class137: Class137?, class137_11_: Class137?): Class314_Sub1? {
+    private fun method2675(i: Byte, bool: Boolean, i_10_: Int, indexedFileCache: IndexedFileCache?, indexedFileCache_11_: IndexedFileCache?): Class314_Sub1? {
         try {
             anInt4221++
             if (aClass348_Sub49_4215 == null) throw RuntimeException()
@@ -87,11 +87,11 @@ class Class340 internal constructor(class248: Class248?, scriptCompilerThread: S
             val `is` = ByteArray(64)
             aClass348_Sub49_4215!!.method3389(2147483647, 0, 64, `is`)
             if (i >= -18) method2671(103)
-            val class314_sub1 = Class314_Sub1(i_10_, class137, class137_11_, aClass248_4212, aScriptCompilerThread_4217, i_12_, `is`, i_13_, bool)
+            val class314_sub1 = Class314_Sub1(i_10_, indexedFileCache, indexedFileCache_11_, aClass248_4212, aScriptCompilerThread_4217, i_12_, `is`, i_13_, bool)
             aClass314_Sub1Array4216!![i_10_] = class314_sub1
             return class314_sub1
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eb.E(" + i + ',' + bool + ',' + i_10_ + ',' + (if (class137 != null) "{...}" else "null") + ',' + (if (class137_11_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("eb.E(" + i + ',' + bool + ',' + i_10_ + ',' + (if (indexedFileCache != null) "{...}" else "null") + ',' + (if (indexedFileCache_11_ != null) "{...}" else "null") + ')'))
         }
     }
 

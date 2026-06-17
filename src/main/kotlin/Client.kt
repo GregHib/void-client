@@ -693,7 +693,7 @@ class Client : GameAppletFrame() {
             Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785!!), 5200, 0)
             for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234Array3795!![i_3_]!!), 6000, 0)
             Class235.aClass78_3075 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3779!!), 6000, 0)
-            Class277.aClass137_3568 = Class137(255, Class299_Sub2.aClass78_6328, Class235.aClass78_3075, 500000)
+            Class277.aIndexedFileCache_3568 = IndexedFileCache(255, Class299_Sub2.aClass78_6328, Class235.aClass78_3075, 500000)
             Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3788!!), 24, 0)
             Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3779 = null
             Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785 = null

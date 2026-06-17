@@ -984,7 +984,7 @@ class Class64_Sub3 : Class64 {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x8).toByte()
                 class64_sub3_211_.aHoverActionEntry_5620!!.anInterface2_1811 = aHoverActionEntry_5620!!.anInterface2_1811
                 class64_sub3_211_.aHoverActionEntry_5620!!.aByte1812 = aHoverActionEntry_5620!!.aByte1812
-            } else if (Class137.method1163(anInt5556, (-60).toByte(), i)) class64_sub3_211_.aHoverActionEntry_5620 = aHoverActionEntry_5620
+            } else if (IndexedFileCache.method1163(anInt5556, (-60).toByte(), i)) class64_sub3_211_.aHoverActionEntry_5620 = aHoverActionEntry_5620
             else class64_sub3_211_.aHoverActionEntry_5620 = null
             if (method2352(-19, anInt5556, i)) {
                 if (class64_sub3_213_!!.aShortArray5592 != null && (anInt5632 <= class64_sub3_213_.aShortArray5592!!.size)) {
@@ -2968,7 +2968,7 @@ class Class64_Sub3 : Class64 {
                 anInt5648 = i
                 aHa_Sub2_5598 = var_ha_Sub2
                 if (method616(2, i, i_697_)) aHoverActionEntry_5605 = HoverActionEntry(null, 5126, 3, 0)
-                if (Class137.method1163(i_697_, 78.toByte(), i)) aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
+                if (IndexedFileCache.method1163(i_697_, 78.toByte(), i)) aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
                 if (method166(69.toByte(), i_697_, i)) aHoverActionEntry_5563 = HoverActionEntry(null, 5126, 3, 0)
                 if (Class146.method1193(i_697_, i, true)) aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
                 if (Class156.method1238(i, i_697_, -31)) aClass270_5575 = Class270()

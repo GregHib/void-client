@@ -4,7 +4,7 @@ import java.io.IOException
 /* Class137 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class137 internal constructor(i: Int, class78: Class78?, class78_26_: Class78?, i_27_: Int) {
+class IndexedFileCache internal constructor(i: Int, class78: Class78?, class78_26_: Class78?, i_27_: Int) {
     private var anInt1932 = 0
     private var aClass78_1933: Class78? = null
     private var aClass78_1938: Class78? = null

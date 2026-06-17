@@ -1569,7 +1569,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub2.anInt10048 = 0
             Class60.anInt1099 = 0
             Crc64Hashable.anInt4995 = 0
-            Class137.anInt1937 = 0
+            IndexedFileCache.anInt1937 = 0
             Class223.anInt2894 = 0
             Class64_Sub3.anInt5531 = 0
             Class172.anInt2278 = 0
@@ -2190,7 +2190,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderNode.anInt10473 = 0
             Class348_Sub1_Sub3.anInt8821 = 0
             Class348_Sub46.anInt7112 = 0
-            Class137.anInt1934 = 0
+            IndexedFileCache.anInt1934 = 0
             OpenGlRenderer.anInt7557 = 0
             NativeRenderer.anInt7965 = 0
             Class239_Sub27.anInt6127 = 0
@@ -2592,7 +2592,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class240.anInt4676 = 0
             Class239_Sub16.anInt6010 = 0
             Class318_Sub1_Sub5_Sub2.anInt10160 = 0
-            Class137.anInt1935 = 0
+            IndexedFileCache.anInt1935 = 0
             Class348_Sub49.anInt7162 = 0
             Class307.anInt3878 = 0
             anInt5795 = 0
@@ -3634,7 +3634,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class5.anInt4633 = 0
             Class367_Sub8.anInt7364 = 0
             OpenGlTerrainTile.anInt8249 = 0
-            Class137.anInt1931 = 0
+            IndexedFileCache.anInt1931 = 0
             Class377.anInt9819 = 0
             GlSpriteRenderer.anInt8424 = 0
             Class367_Sub2.anInt7292 = 0
@@ -3992,7 +3992,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             PlayerUpdateDecoder.anInt1912 = 0
             Class318_Sub1_Sub5_Sub1.anInt10140 = 0
             Class56.anInt1020 = 0
-            Class137.anInt1936 = 0
+            IndexedFileCache.anInt1936 = 0
             Class348_Sub40_Sub5.anInt9127 = 0
             Class369_Sub3_Sub1.anInt10176 = 0
             NativeTerrainTile.anInt8316 = 0

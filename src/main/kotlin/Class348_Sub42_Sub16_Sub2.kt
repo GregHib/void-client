@@ -5,13 +5,13 @@ class Class348_Sub42_Sub16_Sub2 : Class348_Sub42_Sub16() {
     @JvmField
     var anInt10457: Int = 0
     @JvmField
-    var aClass137_10458: Class137? = null
+    var aIndexedFileCache_10458: IndexedFileCache? = null
     @JvmField
     var aByteArray10461: ByteArray? = null
 
     override fun method3257(i: Int): Int {
         anInt10460++
-        if (i != 16) this.aClass137_10458 = null
+        if (i != 16) this.aIndexedFileCache_10458 = null
         if (this.aBoolean9664) return 0
         return 100
     }
