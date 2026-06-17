@@ -335,7 +335,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         class101.method891(this.x, (-20 + (this.anInt6382 - this.anInt10274)), this.y)
         var class318_sub4: Class318_Sub4? = null
         this.aBoolean10324 = false
-        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) {
+        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) {
             val class225 = this.method2422(72.toByte())
             if (class225.aBoolean2913 && (this.aCompositeNpcModelBuilder_10536!!.anInt2093 == -1 || MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, i + -2).aBoolean1369)) {
                 val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7)) else null)

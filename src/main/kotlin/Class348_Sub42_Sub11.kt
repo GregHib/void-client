@@ -120,7 +120,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
 
         fun method3225(i: Int) {
             anInt9589++
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) == 2) {
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) == 2) {
                 val i_5_ = (0xff and -4 + TextureQualityOptionState.anInt6006).toByte()
                 val i_6_ = TextureQualityOptionState.anInt6006 % Class367_Sub4.anInt7319
                 for (i_7_ in 0..3) {

@@ -237,9 +237,9 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("tk0", ignoreCase = true)) {
                             method3553(false, 104.toByte(), 0)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
+                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
                                 method94("Entered tk0", 101)
-                                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
+                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
                                 method243(37)
                                 RenderNode.aBoolean9719 = false
                                 return
@@ -248,9 +248,9 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("tk1", ignoreCase = true)) {
                             method3553(false, 109.toByte(), 1)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1) {
+                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1) {
                                 method94("Entered tk1", -65)
-                                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 1)
+                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 1)
                                 method243(i.toInt() xor 0x6b.inv())
                                 RenderNode.aBoolean9719 = false
                                 return
@@ -259,9 +259,9 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("tk2", ignoreCase = true)) {
                             method3553(false, 115.toByte(), 2)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
+                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
                                 method94("Entered tk2", i + 151)
-                                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)
+                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)
                                 method243(37)
                                 RenderNode.aBoolean9719 = false
                             } else {
@@ -272,9 +272,9 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("tk3", ignoreCase = true)) {
                             method3553(false, 107.toByte(), 3)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 3) {
+                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 3) {
                                 method94("Entered tk3", 78)
-                                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 3)
+                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 3)
                                 method243(37)
                                 RenderNode.aBoolean9719 = false
                                 return
@@ -283,9 +283,9 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("tk5", ignoreCase = true)) {
                             method3553(false, 113.toByte(), 5)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i.toInt() xor 0x7e13) == 5) {
+                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i.toInt() xor 0x7e13) == 5) {
                                 method94("Entered tk5", -108)
-                                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 5)
+                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 5)
                                 method243(37)
                                 RenderNode.aBoolean9719 = false
                             } else {
@@ -300,10 +300,10 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                                 val i_6_ = (Class348_Sub41.method3156(true, string.substring(6)))
                                 if (i_6_ < 0 || (method2710(-126, TextureDefinitionCache.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
                                 else {
-                                    Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
+                                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
                                     method243(37)
                                     RenderNode.aBoolean9719 = false
-                                    method94(("maxbuildarea=" + Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)), 98)
+                                    method94(("maxbuildarea=" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)), 98)
                                     return
                                 }
                                 return
@@ -563,7 +563,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string == "autosetup") {
                             method2478(1000)
-                            method94(("Complete. Toolkit now: " + Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -32271)), -97)
+                            method94(("Complete. Toolkit now: " + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -32271)), -97)
                             return
                         }
                         if (string == "errormessage") {
@@ -594,11 +594,11 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             if (i_20_ < 0) method94("Syntax: ortho <n>", 66)
                             else {
                                 val i_21_ = (Class348_Sub41.method3156(true, string.substring(1 + i_20_)))
-                                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_21_)
+                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_21_)
                                 method243(37)
                                 RenderNode.aBoolean9719 = false
                                 Class348_Sub42_Sub3.method3179(i + 79)
-                                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350) == i_21_) {
+                                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350) == i_21_) {
                                     method94("Successfully changed ortho mode", -82)
                                     return
                                 } else method94("Failed to change ortho mode", -112)
@@ -607,7 +607,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.startsWith("orthozoom ")) {
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(i + -32271) == 0) method94("enable ortho mode first (use 'ortho <n>')", i + 182)
+                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(i + -32271) == 0) method94("enable ortho mode first (use 'ortho <n>')", i + 182)
                             else {
                                 val i_22_ = (Class348_Sub41.method3156(true, string.substring(string.indexOf(' ') - -1)))
                                 LocalPlayerState.anInt1911 = i_22_

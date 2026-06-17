@@ -1346,8 +1346,8 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
 
         fun method1686(i: Int) {
             val i_308_ = -110 / ((i - -74) / 44)
-            if (Class348_Sub40_Sub29.anInt9372 > 1) Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub17_7263), 4)
-            else Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub17_7263), 2)
+            if (Class348_Sub40_Sub29.anInt9372 > 1) IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub17_7263), 4)
+            else IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub17_7263), 2)
             anInt3106++
         }
 

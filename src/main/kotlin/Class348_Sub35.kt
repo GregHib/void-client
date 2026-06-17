@@ -21,7 +21,7 @@ class Class348_Sub35 : Class348 {
 
         fun method3027(i: Byte) {
             anInt6975++
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && Class355.anInt4372 != ParticleSystemState.anInt2204) Class348_Sub41.Companion.method3157(Class327.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && Class355.anInt4372 != ParticleSystemState.anInt2204) Class348_Sub41.Companion.method3157(Class327.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
             else {
                 Class348_Sub46.method3319(Class348_Sub8.aRenderer6654, (-121).toByte())
                 if (i.toInt() != 33) method3028(-79)

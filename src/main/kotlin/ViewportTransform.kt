@@ -47,7 +47,7 @@ class ViewportTransform {
             anInt3665++
             var var_ha = Class348_Sub8.aRenderer6654
             var bool = false
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -5766) != 0) {
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -5766) != 0) {
                 val canvas = Canvas()
                 canvas.setSize(100, 100)
                 var_ha = method958(true, 0, null, 0, canvas, null)

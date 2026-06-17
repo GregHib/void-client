@@ -114,7 +114,7 @@ class OutputStream_Sub1 : OutputStream() {
                     Class348_Sub8.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 shl 1, Class97.anInt1550 shl 1)
                     CircleHitbox.method319(Class97.anInt1550 shl 1, Class97.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
                     Class348_Sub42_Sub20.method3282(0x3fff and -(Class348_Sub42_Sub19.anInt9701), Class59_Sub2_Sub2.anInt8685, ParticleSystemRenderer.anInt3855, 0, -Class5.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -Class338.anInt4186 and 0x3fff)
-                    val i_16_ = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
+                    val i_16_ = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (Class59_Sub1.aBoolean5300) {
                         CameraRotationStub.method289(-15902, 0x3fff and -Class5.anInt4638, -Class338.anInt4186 and 0x3fff, (-Class348_Sub42_Sub19.anInt9701 and 0x3fff))
                         SceneProjector.method1634(
@@ -126,7 +126,7 @@ class OutputStream_Sub1 : OutputStream() {
                             Class327.anIntArray4097,
                             GlslMaterialPass.anInt6246,
                             Class59_Sub2_Sub2.anInt8685,
-                            Class316.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
+                            IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
                             ParticleSystemRenderer.anInt3855,
                             (LocalPlayerState.aPlayer_1907!!.x) shr 9,
                             LinkedListIterator.anIntArray2117,
@@ -152,7 +152,7 @@ class OutputStream_Sub1 : OutputStream() {
                         i_16_,
                         (LocalPlayerState.aPlayer_1907!!.x) shr 9,
                         (LocalPlayerState.aPlayer_1907!!.y) shr 9,
-                        Class316.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
+                        IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
                         true,
                         if (!ParticleSystemRenderer.aBoolean3870) -1 else LocalPlayerState.anInt1906,
                         0,

@@ -27,7 +27,7 @@ class Class318_Sub9_Sub1 internal constructor(@JvmField var aString8783: String?
                 val class57s: Array<Class57?> = WorldListEntry.method286((-107).toByte(), Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!)
                 val class57s_0_: Array<Class57?> = arrayOfNulls<Class57>(class57s.size)
                 var i_1_ = 0
-                val i_2_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
+                val i_2_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
                 var i_3_ = 0
                 while_108_@ while (class57s.size > i_3_) {
                     val class57 = class57s[i_3_]!!

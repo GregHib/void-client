@@ -216,11 +216,11 @@ class Class88 {
                             class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub12.method3229(-71))
                             class348_sub49_sub2.writeShort(107.toByte(), Class321.anInt4017)
                             class348_sub49_sub2.writeShort(107.toByte(), Class348_Sub42_Sub8_Sub2.anInt10432)
-                            class348_sub49_sub2.writeByte(false, Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350))
+                            class348_sub49_sub2.writeByte(false, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350))
                             method4002(class348_sub49_sub2, 55.toByte())
                             class348_sub49_sub2.writeString((-5).toByte(), BloomGraphicsOptionState.aString5966!!)
                             class348_sub49_sub2.writeInt(120.toByte(), SocketStreamWorker.anInt2670)
-                            val class348_sub49_8_ = Class316.aClass348_Sub51_3959!!.method3427(24)
+                            val class348_sub49_8_ = IntHashSet.aClass348_Sub51_3959!!.method3427(24)
                             class348_sub49_sub2.writeByte(false, (class348_sub49_8_.anInt7197))
                             class348_sub49_sub2.writeBytes(class348_sub49_8_.anInt7197, 0, (class348_sub49_8_.aByteArray7154!!), 74)
                             RenderNode.aBoolean9719 = true

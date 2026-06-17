@@ -33,7 +33,7 @@ object GameDisplayManager {
                 method243(37)
             }
         }
-        if (i_2_ == 3 && Class34.aFrame476 == null) GameDisplayManager.method1580((-126).toByte(), true, -1, i_1_, Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1)
+        if (i_2_ == 3 && Class34.aFrame476 == null) GameDisplayManager.method1580((-126).toByte(), true, -1, i_1_, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1)
         else {
             val container: Container?
             if (Class34.aFrame476 != null) {

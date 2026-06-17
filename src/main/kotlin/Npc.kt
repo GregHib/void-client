@@ -124,7 +124,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         val class79 = (if (this.aClass79_10505!!.anIntArray1377 != null) this.aClass79_10505!!.method794(aVarpStore_10209!!, -1) else this.aClass79_10505)
         this.aBoolean10324 = false
         var class318_sub4: Class318_Sub4? = null
-        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == i && class79!!.aBoolean1369 && class225.aBoolean2913) {
+        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == i && class79!!.aBoolean1369 && class225.aBoolean2913) {
             val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7))
             val class17_22_ = (if (this.anInt10268 == -1 || (this.aBoolean10213 && class17 != null)) null else ParticleEmitterNode.aClass87_191!!.method835(this.anInt10268, 7))
             val class64 = (method2711(

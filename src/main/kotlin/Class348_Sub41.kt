@@ -62,7 +62,7 @@ class Class348_Sub41 : Class348() {
                         val i_14_ = i_2_ + i_10_
                         if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
                             val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_4_)
-                            if (i_12_ != 22 || Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
+                            if (i_12_ != 22 || IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 bool_7_ = true
                                 if (!class51.method485(9773)) {
                                     CompositeNpcModelBuilder.anInt2101++
@@ -91,11 +91,11 @@ class Class348_Sub41 : Class348() {
 
         fun method3157(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, bool: Boolean) {
             anInt7049++
-            if (bool || i_16_ != Renderer.anInt4581 || Class327.anInt4095 != i || (Class355.anInt4372 != ParticleSystemState.anInt2204 && Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
+            if (bool || i_16_ != Renderer.anInt4581 || Class327.anInt4095 != i || (Class355.anInt4372 != ParticleSystemState.anInt2204 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
                 Renderer.anInt4581 = i_16_
                 Class327.anInt4095 = i
                 ParticleSystemState.anInt2204 = Class355.anInt4372
-                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) ParticleSystemState.anInt2204 = 0
+                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) ParticleSystemState.anInt2204 = 0
                 Class348_Sub49.method3379(2, i_17_)
                 Class362.method3511(true, GameAppletFrame.aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.Companion.anInt6967, 544), 2, Class348_Sub8.aRenderer6654)
                 val i_18_ = ArbVertexProgram.regionTileX

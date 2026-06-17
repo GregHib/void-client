@@ -52,7 +52,7 @@ public abstract class AbstractCameraTransform {
 
         @JvmStatic
         fun method893(i: Byte) {
-            Class348_Sub40_Sub22.method3111(91, Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350))
+            Class348_Sub40_Sub22.method3111(91, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350))
             anInt1595++
             val i_4_ = ((GlslMaterialPass.anInt6246 shr 12) - -(ArbVertexProgram.regionTileX shr 3))
             val i_5_ = ((Class90.regionTileY shr 3) + (Class59_Sub2_Sub2.anInt8685 shr 12))

@@ -32,10 +32,10 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
     fun method1689(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, class361: Class361?) {
         try {
             anInt5823++
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i_3_ xor 0x7e6f.inv()) != 0 || method536(i_5_, false, i, ParticleSystemState.anInt2204, i_2_)) {
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i_3_ xor 0x7e6f.inv()) != 0 || method536(i_5_, false, i, ParticleSystemState.anInt2204, i_2_)) {
                 if (this.anInt5824 > i_0_) this.anInt5824 = i_0_
                 val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_1_)
-                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
+                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
                     val i_8_: Int
                     val i_9_: Int
                     if (i_7_ == 1 || i_7_ == 3) {
@@ -73,7 +73,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val bool_17_ = (i_6_ == -1 && class51.anInt868 == -1 && class51.anIntArray943 == null && class51.anIntArray945 == null && !class51.aBoolean929)
                     if (!Class49.aBoolean4728 || ((!ScreenBorderFiller.method1172((-85).toByte(), i_4_) || class51.anInt955 == 1) && (!method1639(i_4_, i_3_ xor 0x3918) || class51.anInt955 != 0))) {
                         if (i_4_ == 22) {
-                            if ((Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0) || (class51.anInt874 != 0) || (class51.anInt920 == 1) || class51.aBoolean947) {
+                            if ((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0) || (class51.anInt874 != 0) || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 val class318_sub1_sub1: Class318_Sub1_Sub1?
                                 if (bool_17_) {
                                     val class318_sub1_sub1_sub2 = (Class318_Sub1_Sub1_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, bool))

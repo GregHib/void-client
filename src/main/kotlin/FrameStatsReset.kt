@@ -17,7 +17,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
         fun method1131(i: Int) {
             val j = 64 / ((11 - i) / 54)
             anInt5795++
-            Class60.aRenderer1098!!.L(LocTypeDefLoader.anInt2500, if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) -1 else Class36.anInt486 - -256 shl 2, 0)
+            Class60.aRenderer1098!!.L(LocTypeDefLoader.anInt2500, if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) -1 else Class36.anInt486 - -256 shl 2, 0)
         }
 
         fun method1132(i: Int, j: Int, k: Int): Boolean {
@@ -1524,7 +1524,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LocDefinitionCache.anInt3440 = 0
             GlIndexBufferArb.anInt8501 = 0
             GlslEnvMaterialPass.anInt6264 = 0
-            Class316.anInt3966 = 0
+            IntHashSet.anInt3966 = 0
             WidgetRedrawTracker.anInt3929 = 0
             WidgetDefinition.anInt258 = 0
             OpenGlRenderer.anInt7522 = 0
@@ -2054,7 +2054,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7171 = 0
             GlowPostProcessor.anInt2517 = 0
             Class348_Sub42_Sub20.anInt9708 = 0
-            Class316.anInt3958 = 0
+            IntHashSet.anInt3958 = 0
             Class64_Sub2.anInt5425 = 0
             SocketStreamWorker.anInt2667 = 0
             NativeRenderer.anInt7923 = 0
@@ -2228,7 +2228,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OutputStream_Sub1.anInt96 = 0
             CameraConfigDefinition.anInt3252 = 0
             OpenGlRenderer.anInt7550 = 0
-            Class316.anInt3965 = 0
+            IntHashSet.anInt3965 = 0
             Class318_Sub1_Sub5_Sub2.anInt10158 = 0
             Class348_Sub31.anInt6914 = 0
             DualMaterialContainer.anInt1634 = 0
@@ -2832,7 +2832,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub32.anInt6939 = 0
             AudioResampler.anInt2171 = 0
             Class40.anInt542 = 0
-            Class316.anInt3964 = 0
+            IntHashSet.anInt3964 = 0
             Class348_Sub23_Sub4.anInt9060 = 0
             OpenGlRenderer.anInt7652 = 0
             BloomGraphicsOptionState.anInt5967 = 0
@@ -3369,7 +3369,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub32.anInt9418 = 0
             WaterDetailOptionState.anInt5988 = 0
             VarpStore.anInt5068 = 0
-            Class316.anInt3962 = 0
+            IntHashSet.anInt3962 = 0
             WorldMapSceneSoftware.anInt5816 = 0
             Class318_Sub1_Sub3_Sub2.anInt10044 = 0
             Class45.anInt661 = 0
@@ -3984,7 +3984,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub37.anInt9459 = 0
             RangedGraphicsOptionState.anInt5937 = 0
             Class348_Sub23_Sub3.anInt9046 = 0
-            Class316.anInt3960 = 0
+            IntHashSet.anInt3960 = 0
             Class45.anInt642 = 0
             Class318_Sub1_Sub3_Sub5.anInt10382 = 0
             Class367_Sub11.anInt7414 = 0
@@ -4181,8 +4181,8 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502
             Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889
             LightingOptionState.aString5882 = LocalizedText.aLocalizedText_3509!!.method2063(Class348_Sub33.anInt6967, 544)
-            Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264, Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(i + -32350))
-            Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350))
+            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(i + -32350))
+            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350))
             GlArrayBufferObject.anInt4718 = 0
             method3153(0)
             method2145(-24498)

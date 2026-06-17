@@ -416,9 +416,9 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
         fun method2347(i: Byte): String? {
             if (i.toInt() != -119) return null
             anInt6343++
-            if (Class5_Sub1.aBoolean8335 || Class316.aClass348_Sub42_Sub12_3963 == null) return ""
-            if (((Class316.aClass348_Sub42_Sub12_3963!!.aString9601) == null || Class316.aClass348_Sub42_Sub12_3963!!.aString9601!!.length == 0) && (Class316.aClass348_Sub42_Sub12_3963!!.aString9595) != null && Class316.aClass348_Sub42_Sub12_3963!!.aString9595!!.length > 0) return (Class316.aClass348_Sub42_Sub12_3963!!.aString9595)
-            return (Class316.aClass348_Sub42_Sub12_3963!!.aString9601)
+            if (Class5_Sub1.aBoolean8335 || IntHashSet.aClass348_Sub42_Sub12_3963 == null) return ""
+            if (((IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9601) == null || IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9601!!.length == 0) && (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9595) != null && IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9595!!.length > 0) return (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9595)
+            return (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9601)
         }
 
         @JvmStatic
@@ -447,8 +447,8 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                     PlayerUpdateDecoder.method1140(58)
                 }
             }
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 0) {
-                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 0) {
+                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
                 Class367_Sub10.method3553(false, 120.toByte(), 0)
             }
             GlCubeMapTexture.method243(37)

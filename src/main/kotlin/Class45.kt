@@ -26,10 +26,10 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
             if (!method399(false)) return null
             string = string!!.lowercase(Locale.getDefault())
             string_1_ = string_1_!!.lowercase(Locale.getDefault())
-            val i_2_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+            val i_2_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             if (!method392(i_2_, (-40).toByte())) return null
             if (i != -29832) method392(22, 12.toByte())
-            val i_3_ = (aCutsceneSequenceData_629!!.aClass316Array3728!![i_2_]!!.method2365(i xor 0x7486.inv(), ClanChatRequestSender.method2108(string_1_, -29286)))
+            val i_3_ = (aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_2_]!!.method2365(i xor 0x7486.inv(), ClanChatRequestSender.method2108(string_1_, -29286)))
             return method410(-1860, i_2_, i_3_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("in.EA(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + i + ')'))
@@ -215,7 +215,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         anInt633++
         if (!method399(false)) return 0
         string = string.lowercase(Locale.getDefault())
-        val i_47_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, i xor 0x7265.inv()))
+        val i_47_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, i xor 0x7265.inv()))
         return method419(i, i_47_)
     }
 
@@ -255,7 +255,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         if (!method399(false)) return false
         if (i != -18308) return false
         string = string.lowercase(Locale.getDefault())
-        val i_52_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+        val i_52_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
         return i_52_ >= 0
     }
 
@@ -289,10 +289,10 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
             if (!method399(false)) return false
             string = string!!.lowercase(Locale.getDefault())
             string_56_ = string_56_!!.lowercase(Locale.getDefault())
-            val i_57_ = (aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(i xor 0x1c1a, ClanChatRequestSender.method2108(string, -29286)))
+            val i_57_ = (aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(i xor 0x1c1a, ClanChatRequestSender.method2108(string, -29286)))
             if (i != 7195) method403(null, -20, null)
             if (!method392(i_57_, (-40).toByte())) return false
-            val i_58_ = aCutsceneSequenceData_629!!.aClass316Array3728!![i_57_]!!.method2365(1, ClanChatRequestSender.method2108(string_56_, -29286))
+            val i_58_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_57_]!!.method2365(1, ClanChatRequestSender.method2108(string_56_, -29286))
             return method420(i + -17694, i_57_, i_58_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("in.Q(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_56_ != null) "{...}" else "null") + ')'))
@@ -305,11 +305,11 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         if (method399(false)) {
             if (bool_59_) {
                 aCutsceneSequenceData_629!!.anIntArray3733 = null
-                aCutsceneSequenceData_629!!.aClass316_3723 = null
+                aCutsceneSequenceData_629!!.aIntHashSet_3723 = null
             }
             if (bool) {
                 aCutsceneSequenceData_629!!.anIntArrayArray3735 = null
-                aCutsceneSequenceData_629!!.aClass316Array3728 = null
+                aCutsceneSequenceData_629!!.aIntHashSetArray3728 = null
             }
         }
     }
@@ -351,7 +351,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         anInt663++
         if (bool == true && method399(false)) {
             string = string.lowercase(Locale.getDefault())
-            val i = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+            val i = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             method402((-86).toByte(), i)
         }
     }
@@ -387,7 +387,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         anInt636++
         if (!method399(false)) return false
         string = string.lowercase(Locale.getDefault())
-        val i_69_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(i + -99, ClanChatRequestSender.method2108(string, -29286))
+        val i_69_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(i + -99, ClanChatRequestSender.method2108(string, -29286))
         if (i != 100) aFloat670 = 0.37849286f
         return method408((-120).toByte(), i_69_)
     }
@@ -423,7 +423,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         anInt654++
         if (!method399(false)) return -1
         string = string.lowercase(Locale.getDefault())
-        val i_72_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+        val i_72_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
         if (!method392(i_72_, (-40).toByte())) return -1
         return i_72_
     }
@@ -475,9 +475,9 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
             string_78_ = string_78_!!.lowercase(Locale.getDefault())
             if (i > -18) anInt669 = 40
             string = string!!.lowercase(Locale.getDefault())
-            val i_79_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, ClanChatRequestSender.method2108(string_78_, -29286))
+            val i_79_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string_78_, -29286))
             if (i_79_ < 0) return false
-            val i_80_ = aCutsceneSequenceData_629!!.aClass316Array3728!![i_79_]!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+            val i_80_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_79_]!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             return i_80_ >= 0
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("in.M(" + (if (string != null) "{...}" else "null") + ',' + (if (string_78_ != null) "{...}" else "null") + ',' + i + ')'))
@@ -487,7 +487,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
     fun method423(i: Int, i_81_: Byte): Int {
         anInt649++
         if (!method399(false)) return -1
-        val i_82_ = aCutsceneSequenceData_629!!.aClass316_3723!!.method2365(1, i)
+        val i_82_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, i)
         if (!method392(i_82_, (-40).toByte())) return -1
         val i_83_ = -60 / ((i_81_ - -4) / 56)
         return i_82_

@@ -65,7 +65,7 @@ class HeadIconRenderer {
         fun method1212(i: Int, i_13_: Int, i_14_: Int, i_15_: Int) {
             var i = i
             anInt2059++
-            i = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) * i shr 8
+            i = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) * i shr 8
             if (i_14_ == i_13_ && !Class74.aBoolean1236) method960(1)
             else if (i_13_ != -1 && (i_13_ != SlotBinding.anInt3428 || !ParticleSystemState.method1296(true)) && i != 0 && !Class74.aBoolean1236) {
                 method368(i, 18002, false, i_13_, Class59_Sub2_Sub1.aClass45_8667, 0, i_15_)

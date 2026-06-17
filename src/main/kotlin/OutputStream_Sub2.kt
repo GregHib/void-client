@@ -69,7 +69,7 @@ class OutputStream_Sub2 : OutputStream() {
         @JvmStatic
         fun method138(class348_sub42_sub12: Class348_Sub42_Sub12, bool: Boolean): Int {
             anInt107++
-            var string = Class316.method2367((-126).toByte(), class348_sub42_sub12)
+            var string = IntHashSet.method2367((-126).toByte(), class348_sub42_sub12)
             var `is`: IntArray? = null
             if (!WidgetNodeLink.method1197(-12081, (class348_sub42_sub12.anInt9608))) {
                 if (class348_sub42_sub12.anInt9599 == -1) {

@@ -90,8 +90,8 @@ class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModel
                 i_2_ = 2
                 ServerConnectionInfo.method1263(true)
             }
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 2) {
-                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 2) {
+                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)
                 method3553(false, 119.toByte(), 2)
             }
             method243(37)

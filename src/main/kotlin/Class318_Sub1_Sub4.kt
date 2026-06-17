@@ -99,7 +99,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
                 if (bool_6_) {
                     try {
                         i_9_ = method1781(3, -70, 1000)
-                        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -33350) == 3) {
+                        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -33350) == 3) {
                             val class365 = Class348_Sub8.aRenderer6654!!.c()
                             val l = (0xffffffffffffL and class365.aLong4471)
                             val i_10_ = class365.anInt4476

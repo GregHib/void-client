@@ -48,7 +48,7 @@ class Class33 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         @JvmStatic
         fun method338(i: Int, i_0_: Int) {
             var i_0_ = i_0_
-            if (i == Class316.aClass348_Sub51_3959!!.aClass239_Sub22_7253!!.method1815(-32350)) i_0_ = -1
+            if (i == IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub22_7253!!.method1815(-32350)) i_0_ = -1
             anInt456++
             if (i_0_ != Class337.anInt4179) {
                 if (i_0_ != -1) {

@@ -4,7 +4,7 @@ import CollisionMapAccessor.method2066
 /* Class316 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class316 internal constructor(`is`: IntArray) {
+class IntHashSet internal constructor(`is`: IntArray) {
     private val anIntArray3961: IntArray
 
     init {

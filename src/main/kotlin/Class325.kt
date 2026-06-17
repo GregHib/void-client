@@ -823,7 +823,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             SpriteArchiveLoader.anInt385 = i_73_
                             FogOptionState.anInt6048 = 2
                             Class348.anInt4292 = 0
-                            Class316.anInt3966++
+                            IntHashSet.anInt3966++
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub49_Sub1.aClass351_9749), (Class348_Sub23_Sub2.aClass77_9029), -81)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)

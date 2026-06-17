@@ -239,8 +239,8 @@ import WidgetRedrawTracker.Companion.method2331
 import SkyboxGradient.method2333
 import ArchiveResourceProvider.Companion.method2344
 import CacheIndexManager.Companion.method2354
-import Class316.Companion.method2363
-import Class316.Companion.method2366
+import IntHashSet.Companion.method2363
+import IntHashSet.Companion.method2366
 import Class318_Sub1.Companion.method2389
 import Class318_Sub10.Companion.method2527
 import Class318_Sub1_Sub1.Companion.method2395
@@ -641,7 +641,7 @@ class Client : GameAppletFrame() {
         Class348_Sub4.aMediaStreamClient_6601 = MediaStreamClient()
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
-        Class316.aClass348_Sub51_3959 = method247(24916)
+        IntHashSet.aClass348_Sub51_3959 = method247(24916)
         if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
         else if (method2354(Class8.aClass364_165, i xor 0x7044.inv())) {
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
@@ -1294,7 +1294,7 @@ class Client : GameAppletFrame() {
     public override fun method99(i: Byte) {
         if (i.toInt() != 93) anIntArray5176 = null
         anInt5183++
-        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
+        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
             try {
                 method114(i.toInt() xor 0x66)
             } catch (throwable: Throwable) {
@@ -1405,7 +1405,7 @@ class Client : GameAppletFrame() {
     public override fun method93(i: Int) {
         if (i != -11018) method80(9)
         anInt5186++
-        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
+        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
             try {
                 method116(true)
             } catch (throwable: Throwable) {
@@ -1690,7 +1690,7 @@ class Client : GameAppletFrame() {
                     RuntimeException_Sub1.aBoolean4604 = false
                 }
             }
-            if (Class34.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+            if (Class34.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             var bool_120_ = false
             if (Class49.aBoolean4726) {
                 bool_120_ = true
@@ -1758,7 +1758,7 @@ class Client : GameAppletFrame() {
                 }
             }
             method598(9013)
-            val i = Class316.aClass348_Sub51_3959!!.aClass239_Sub17_7263!!.method1798(-32350)
+            val i = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub17_7263!!.method1798(-32350)
             if (i == 0) TexGenMaterialPass.method2161((-127).toByte(), 15L)
             else if (i != 1) {
                 if (i != 2) {
@@ -1766,8 +1766,8 @@ class Client : GameAppletFrame() {
                 } else TexGenMaterialPass.method2161((-97).toByte(), 5L)
             } else TexGenMaterialPass.method2161((-104).toByte(), 10L)
             if (Class319.aBoolean3988) method1416(5)
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1 && WorldMapRenderer.anInt4674 == 3 && RenderNode.anInt9721 != -1) {
-                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 0)
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1 && WorldMapRenderer.anInt4674 == 3 && RenderNode.anInt9721 != -1) {
+                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 0)
                 method243(37)
             }
         }
@@ -1780,18 +1780,18 @@ class Client : GameAppletFrame() {
             string = ("[1)" + ArbVertexProgram.regionTileX + "," + Class90.regionTileY + "," + Class367_Sub4.anInt7319 + "," + Class348_Sub40_Sub3.anInt9109 + "|")
             if (i < 40) aNodeDeque_5185 = null
             if (LocalPlayerState.aPlayer_1907 != null) string += ("2)" + Class355.anInt4372 + "," + (ArbVertexProgram.regionTileX + (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + "|")
-            string += ("3)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + Class321.anInt4017 + "," + Class348_Sub42_Sub8_Sub2.anInt10432 + "|")
-            string += "7)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
-            string += "8)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"
-            string += "9)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) + "|"
-            string += "10)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350) + "|"
-            string += "11)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) + "|"
-            string += "12)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) + "|"
+            string += ("3)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + Class321.anInt4017 + "," + Class348_Sub42_Sub8_Sub2.anInt10432 + "|")
+            string += "7)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
+            string += "8)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"
+            string += "9)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) + "|"
+            string += "10)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350) + "|"
+            string += "11)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) + "|"
+            string += "12)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) + "|"
             string += "13)" + TextureDefinitionCache.anInt2964 + "|"
             string += "14)" + WorldMapRenderer.anInt4674
             if (Class348_Sub40_Sub20.aClass348_Sub4_9264 != null) string += "|15)" + (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609)
             try {
-                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
+                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
                     val field = ClassLoader::class.java.getDeclaredField("nativeLibraries")
                     field.setAccessible(true)
                     val vector = (field.get((if (aClass5189 != null) aClass5189 else (Client::class.java.also { aClass5189 = it }))!!.getClassLoader()) as Vector<*>)
@@ -2575,7 +2575,7 @@ class Client : GameAppletFrame() {
         fun method115() {
             val i = Class328_Sub1.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
-            val i_112_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
+            val i_112_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
             val bool = i_112_ == 1 && i > 200 || i_112_ == 0 && i > 50
             for (i_113_ in 0..<i) {
                 val player = LoadingBarRenderer.aPlayerArray5058!![`is`!![i_113_]]

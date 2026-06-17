@@ -78,8 +78,8 @@ object Class62 {
             PlayerUpdateDecoder.method1140(120)
             i_3_ = 4
         }
-        if (i_1_ != Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {
-            Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), i_1_)
+        if (i_1_ != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {
+            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), i_1_)
             method3553(false, 122.toByte(), i_1_)
         }
         if (i >= -20) aDoublyLinkedNodeList_1114 = null

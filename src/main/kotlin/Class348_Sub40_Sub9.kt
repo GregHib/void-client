@@ -61,7 +61,7 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
         @JvmStatic
         fun method3072(i: Byte) {
             anInt9168++
-            val i_0_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350)
+            val i_0_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350)
             val i_1_ = 14 / ((i - -34) / 61)
             if (i_0_ == 0) {
                 RegionSceneLoader.aByteArrayArrayArray3700 = null

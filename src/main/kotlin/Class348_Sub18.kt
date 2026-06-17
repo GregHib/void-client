@@ -4,7 +4,7 @@ import SocketGameConnection.Companion.method1707
 import DisplayModeOptionState.Companion.method1828
 import ModelDataCache.method297
 import CompassSmoother.Companion.method2017
-import Class316.Companion.method2368
+import IntHashSet.Companion.method2368
 import Class318.Companion.method2375
 import Class369_Sub3.Companion.method3573
 import Class84.Companion.method821

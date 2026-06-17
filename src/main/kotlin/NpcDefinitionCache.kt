@@ -142,11 +142,11 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             ItemDefinitionLoader.aNodeDeque_2187!!.method1988(Class348_Sub40_Sub4.aNodeDeque_9111, (-115).toByte())
             Class348_Sub40_Sub38.aNodeDeque_9478!!.method1988(Class348_Sub40_Sub4.aNodeDeque_9111, (-115).toByte())
             if (Class73.anInt4776 > 1) {
-                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aClass346_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
-                else Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295!!.aClass348_4295 as Class348_Sub42_Sub12?)
+                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aClass346_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) IntHashSet.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
+                else IntHashSet.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295!!.aClass348_4295 as Class348_Sub42_Sub12?)
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (Class348_Sub40_Sub4.aNodeDeque_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
             } else {
-                Class316.aClass348_Sub42_Sub12_3963 = null
+                IntHashSet.aClass348_Sub42_Sub12_3963 = null
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = null
             }
             var i_14_ = -1
@@ -299,7 +299,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     else NpcEntityUpdater.anInt3655 = 2
                 }
                 if (i_14_ == 0) {
-                    if (Class316.aClass348_Sub42_Sub12_3963 != null) method1731(1)
+                    if (IntHashSet.aClass348_Sub42_Sub12_3963 != null) method1731(1)
                     else if (RenderNode.aBoolean9722) Class341.method2678(-2049)
                 }
                 if (RegionSceneLoader.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) {

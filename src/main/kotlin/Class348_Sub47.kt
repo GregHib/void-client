@@ -74,7 +74,7 @@ class Class348_Sub47 : Class348() {
                         Class348_Sub8.aRenderer6654!!.method3643(ParticleSystemRenderer.aCanvas3869, dimension.width, dimension.height)
                     } else ModelDefinition.method1108((-99).toByte(), ParticleSystemRenderer.aCanvas3869!!)
                     Class348_Sub8.aRenderer6654!!.method3677(ParticleSystemRenderer.aCanvas3869)
-                } else method3553(false, 100.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
+                } else method3553(false, 100.toByte(), IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
                 anInt7123++
                 Class354.method3466(i + -1347)
                 Class348_Sub16_Sub2.aBoolean8870 = true

@@ -229,7 +229,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class348_Sub18.method2938(102.toByte())
                     method1772(i xor 0x41)
                     var bool_25_ = false
-                    if (Class348_Sub8.aRenderer6654!!.method3639() && Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) {
+                    if (Class348_Sub8.aRenderer6654!!.method3639() && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) {
                         var i_26_ = 0
                         while ((i_26_ < Class347.aByteArrayArray4281!!.size)) {
                             if ((Class348_Sub23_Sub1.aByteArrayArray8996!![i_26_] != null) || ModelFacePriorityNode.aByteArrayArray1887!![i_26_] != null) {
@@ -240,7 +240,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         }
                     }
                     var i_27_: Int
-                    if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) i_27_ = Class9.anIntArray168!![Class348_Sub15.anInt6769]
+                    if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) i_27_ = Class9.anIntArray168!![Class348_Sub15.anInt6769]
                     else i_27_ = (CubeMapMaterialPass.anIntArray6296!![Class348_Sub15.anInt6769])
                     if (Class348_Sub8.aRenderer6654!!.method3670()) i_27_++
                     Class348_Sub42_Sub2.method3171(Class348_Sub8.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, i_27_, bool_25_, Class348_Sub8.aRenderer6654!!.method3704() > 0)
@@ -257,13 +257,13 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     System.gc()
                     RegionSceneLoader.method2193(true, (-128).toByte())
                     Class36.method354(2)
-                    CutsceneSequenceData.anInt3720 = Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
+                    CutsceneSequenceData.anInt3720 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
                     HuffmanCodec.aBoolean3767 = TextureDefinitionCache.anInt2964 >= 96
-                    Class369.aBoolean4972 = Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
-                    TextureGenerator.aBoolean2492 = Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1
-                    OutputStream_Sub2.anInt101 = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
-                    IOException_Sub1.aBoolean86 = Class316.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
-                    Class47.aBoolean845 = Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
+                    Class369.aBoolean4972 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
+                    TextureGenerator.aBoolean2492 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1
+                    OutputStream_Sub2.anInt101 = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
+                    IOException_Sub1.aBoolean86 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
+                    Class47.aBoolean845 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
                     Class338.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, false)
                     if (WidgetRedrawTracker.anInt3931 != 0) Class44.method385(false, Class338.aClass237_Sub1_4197, Class347.aByteArrayArray4281)
                     else Class348_Sub1_Sub1.method2727((-65).toByte(), Class338.aClass237_Sub1_4197, (Class347.aByteArrayArray4281))
@@ -314,7 +314,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     var i_29_ = Class338.aClass237_Sub1_4197!!.anInt5824
                     if (i_29_ > Class355.anInt4372) i_29_ = Class355.anInt4372
                     if (i_29_ < -1 + Class355.anInt4372) i_29_ = Class355.anInt4372 - 1
-                    if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) Class84.method824(i_29_)
+                    if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) Class84.method824(i_29_)
                     else Class84.method824(0)
                     for (i_30_ in 0..3) {
                         var i_31_ = 0

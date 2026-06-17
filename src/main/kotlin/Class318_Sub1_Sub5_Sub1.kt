@@ -168,7 +168,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
                 aBoolean10138 = bool
                 this.x = i_8_
                 aByte10118 = i_14_.toByte()
-                aBoolean10137 = (var_renderer!!.method3682() && class51.aBoolean894 && !aBoolean10138 && Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean10137 = (var_renderer!!.method3682() && class51.aBoolean894 && !aBoolean10138 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 val class2 = method2491((-51).toByte(), aBoolean10137, 2048, var_renderer)
                 if (class2 == null) break
                 aClass64_10124 = class2.aClass64_119
@@ -220,9 +220,9 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_renderer: Renderer?, clas
         fun method2489(i: Byte): Int {
             anInt10135++
             if (Class5_Sub1.aBoolean8335) return 6
-            if (Class316.aClass348_Sub42_Sub12_3963 == null) return 0
+            if (IntHashSet.aClass348_Sub42_Sub12_3963 == null) return 0
             if (i >= -11) return -42
-            val i_1_ = (Class316.aClass348_Sub42_Sub12_3963!!.anInt9608)
+            val i_1_ = (IntHashSet.aClass348_Sub42_Sub12_3963!!.anInt9608)
             if (method1796(80, i_1_)) return 1
             if (method1197(-12081, i_1_)) return 2
             if (method1813(8806, i_1_)) return 3

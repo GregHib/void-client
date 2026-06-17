@@ -7,11 +7,11 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
     var anInt3719: Int = 0
     lateinit var anIntArrayArray3721: Array<IntArray?>
     lateinit var anIntArray3722: IntArray
-    var aClass316_3723: Class316? = null
+    var aIntHashSet_3723: IntHashSet? = null
     lateinit var anIntArray3724: IntArray
     lateinit var anIntArray3725: IntArray
     var anInt3727: Int = 0
-    var aClass316Array3728: Array<Class316?>? = null
+    var aIntHashSetArray3728: Array<IntHashSet?>? = null
     lateinit var anIntArray3729: IntArray
     var aByteArrayArray3730: Array<ByteArray?>? = null
     var anInt3732: Int = 0
@@ -55,7 +55,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
                 this.anIntArray3733!![(this.anIntArray3738[i_9_])] = class348_sub49.readInt((-126).toByte())
                 i_9_++
             }
-            this.aClass316_3723 = Class316(this.anIntArray3733!!)
+            this.aIntHashSet_3723 = IntHashSet(this.anIntArray3733!!)
         }
         if (i >= -83) method2200(42.toByte(), null)
         for (i_10_ in 0..<this.anInt3727) this.anIntArray3729[(this.anIntArray3738[i_10_])] = class348_sub49.readInt((-126).toByte())
@@ -91,7 +91,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
         }
         if (bool) {
             this.anIntArrayArray3735 = arrayOfNulls<IntArray>(i_6_ + 1)
-            this.aClass316Array3728 = arrayOfNulls<Class316>(1 + i_6_)
+            this.aIntHashSetArray3728 = arrayOfNulls<IntHashSet>(1 + i_6_)
             for (i_21_ in 0..<this.anInt3727) {
                 val i_22_ = this.anIntArray3738[i_21_]
                 val i_23_ = this.anIntArray3725[i_22_]
@@ -109,7 +109,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
                     this.anIntArrayArray3735!![i_22_]!![i_26_] = class348_sub49.readInt((-126).toByte())
                     i_25_++
                 }
-                this.aClass316Array3728!![i_22_] = Class316(this.anIntArrayArray3735!![i_22_]!!)
+                this.aIntHashSetArray3728!![i_22_] = IntHashSet(this.anIntArrayArray3735!![i_22_]!!)
             }
         }
     }

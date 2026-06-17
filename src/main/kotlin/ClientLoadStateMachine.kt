@@ -42,11 +42,11 @@ object ClientLoadStateMachine {
     }
 
     fun method1278(i: Int): Int {
-        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(i + -3690) == 0) {
+        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(i + -3690) == 0) {
             var i_0_ = 0
             while ((i_0_ < Class348_Sub42_Sub19.anInt9699)) {
                 if (Class348_Sub42_Sub5.anInterface6Array9534!![i_0_]!!.method28(31.toByte()).code == 115 || Class348_Sub42_Sub5.anInterface6Array9534!![i_0_]!!.method28(71.toByte()).code == 83) {
-                    Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 1)
+                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 1)
                     TextureFormatInfo.aBoolean3847 = true
                     break
                 }
@@ -86,7 +86,7 @@ object ClientLoadStateMachine {
             Class348_Sub31.anInt6924 = ScrollTexMaterialPass.aClass45_6277!!.method389(77)
             GroundItemRenderState.anInt1663 = Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method389(i + 28561)
             DualMaterialContainer.method1001(ScrollTexMaterialPass.aClass45_6277!!, 0)
-            val i_3_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(i xor 0x11ae)
+            val i_3_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(i xor 0x11ae)
             PerlinTextureProvider.aCollisionMapRegion_5813 = CollisionMapRegion(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class348_Sub40_Sub17_Sub1.aClass45_10426)
             var `is` = PerlinTextureProvider.aCollisionMapRegion_5813!!.method1046(i_3_, 0)
             if (`is`!!.size == 0) `is` = PerlinTextureProvider.aCollisionMapRegion_5813!!.method1046(0, 0)
@@ -210,7 +210,7 @@ object ClientLoadStateMachine {
             ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434)
             BrightnessOptionState.aClass355_5900 = Class355(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, ItemNameResolver())
             method1202(0)
-            Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2008(i + 28539, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
+            Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2008(i + 28539, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
             Class318_Sub1_Sub3_Sub3.aVarpStore_10209 = VarpStore()
             method3038(-1)
             method4011(i + 29684, GraphicsOptionState.aClass45_3146)
@@ -287,14 +287,14 @@ object ClientLoadStateMachine {
             Class348_Sub32.aThread6946 = null
             ScrollTexMaterialPass.aClass45_6277 = null
             method3886(i + 28556)
-            Class348_Sub23_Sub2.aBoolean9038 = Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1
-            Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 1)
-            if (Class348_Sub23_Sub2.aBoolean9038) Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
-            else if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.aBoolean6113 && Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609 < 512 && Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609 != 0) Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
+            Class348_Sub23_Sub2.aBoolean9038 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1
+            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 1)
+            if (Class348_Sub23_Sub2.aBoolean9038) IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
+            else if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.aBoolean6113 && Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609 < 512 && Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609 != 0) IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
             method243(i xor 0x6fd6.inv())
             if (Class348_Sub23_Sub2.aBoolean9038) method3553(false, 108.toByte(), 0)
-            else method3553(false, 102.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350))
-            method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+            else method3553(false, 102.toByte(), IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350))
+            method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             VarpStore.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, i xor 0x6ff7.inv())
             ModelHeaderCache.method1933(CameraRotationStub.aClass45_322, Class348_Sub8.aRenderer6654, true)

@@ -777,8 +777,8 @@ open class Class348_Sub49 : Class348 {
                 if (bool != bool_72_) {
                     if (bool) {
                         SlotBinding.anInt3428 = Class345.anInt4270
-                        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350) != 0) {
-                            method2355(Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, Class59_Sub2_Sub1.aClass45_8667, Class345.anInt4270, 0, 2)
+                        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350) != 0) {
+                            method2355(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, Class59_Sub2_Sub1.aClass45_8667, Class345.anInt4270, 0, 2)
                             method3093(i xor 0x66)
                         } else method3007(2, 22684)
                         Class348_Sub4.aMediaStreamClient_6601!!.method1892(-117, false)

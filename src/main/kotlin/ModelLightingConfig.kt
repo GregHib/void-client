@@ -46,7 +46,7 @@ class ModelLightingConfig {
 
     internal constructor(class348_sub49: Class348_Sub49) {
         val i = class348_sub49.readUnsignedByte(255)
-        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) != 1 || Class60.aRenderer1098!!.method3704() <= 0) {
+        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) != 1 || Class60.aRenderer1098!!.method3704() <= 0) {
             if ((0x1 and i) != 0) class348_sub49.readInt((-126).toByte())
             if ((0x2 and i) != 0) class348_sub49.readUnsignedShort(842397944)
             if ((i and 0x4) != 0) class348_sub49.readUnsignedShort(842397944)
