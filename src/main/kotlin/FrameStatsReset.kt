@@ -198,7 +198,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5409 = 0
             Class161.anInt2140 = 0
             Player.anInt10559 = 0
-            Class141.anInt1969 = 0
+            TextureDefinitionLoader.anInt1969 = 0
             Class254.anInt3260 = 0
             Gl2dTexture.anInt8609 = 0
             Class318_Sub4.anInt6413 = 0
@@ -1957,7 +1957,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub2_Sub1.anInt10197 = 0
             Class64_Sub3.anInt5631 = 0
             Class314_Sub1.anInt6353 = 0
-            Class141.anInt1968 = 0
+            TextureDefinitionLoader.anInt1968 = 0
             Class377.anInt9865 = 0
             Class285.anInt4758 = 0
             Class195.anInt5003 = 0
@@ -3091,7 +3091,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub7.anInt5910 = 0
             Class235.anInt3077 = 0
             LinkedNodeListIterator.anInt1642 = 0
-            Class141.anInt1970 = 0
+            TextureDefinitionLoader.anInt1970 = 0
             Class239_Sub23.anInt6080 = 0
             Class367_Sub8.anInt7357 = 0
             Class318_Sub1_Sub3_Sub2.anInt10057 = 0
@@ -3313,7 +3313,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8017 = 0
             Class318_Sub1_Sub3_Sub3.anInt10297 = 0
             Class50_Sub2.anInt5234 = 0
-            Class141.anInt1967 = 0
+            TextureDefinitionLoader.anInt1967 = 0
             Class351.anInt4324 = 0
             Class45.anInt658 = 0
             Class87.anInt1485 = 0
@@ -3508,7 +3508,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49_Sub2.anInt9762 = 0
             Class50_Sub3.anInt5248 = 0
             Class319.anInt3986 = 0
-            Class141.anInt1972 = 0
+            TextureDefinitionLoader.anInt1972 = 0
             Class314_Sub1.anInt6358 = 0
             Class143.anInt1980 = 0
             GameAppletFrame.anInt40 = 0
@@ -4055,7 +4055,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42.anInt7061 = 0
             GlArrayBufferObject.anInt4711 = 0
             Class318_Sub1_Sub1.anInt8723 = 0
-            Class141.anInt1964 = 0
+            TextureDefinitionLoader.anInt1964 = 0
             Class314_Sub1.anInt6343 = 0
             Class234.anInt3040 = 0
             Class348_Sub40_Sub3.anInt9108 = 0

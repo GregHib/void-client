@@ -112,7 +112,7 @@ class Class267 private constructor(private val aClass69_3392: Class69?) {
             var i_1_ = i_1_
             try {
                 anInt3395++
-                val class218 = Class2.aClass141_117!!.method1173(31.toByte(), class51!!.anInt875)
+                val class218 = Class2.aTextureDefinitionLoader_117!!.method1173(31.toByte(), class51!!.anInt875)
                 if (class218!!.anInt2853 != -1) {
                     if (class51.aBoolean912) {
                         i_1_ += class51.anInt923

@@ -137,7 +137,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
                     Class75.aClass153_1238!!.method1219(7851)
                     Class75.aClass153_1238!!.method1220((-100).toByte(), 64, 128)
                 }
-                if (Class75.aClass141_1242 != null) Class75.aClass141_1242!!.method1178(64, 1, 64)
+                if (Class75.aTextureDefinitionLoader_1242 != null) Class75.aTextureDefinitionLoader_1242!!.method1178(64, 1, 64)
                 if (Class75.aClass263_1245 != null) Class75.aClass263_1245!!.method2014(64, true)
                 Class229.aClass194_2981!!.method1444(64, -124)
             }

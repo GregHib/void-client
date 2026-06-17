@@ -1,4 +1,4 @@
-import Class141.Companion.method1177
+import TextureDefinitionLoader.Companion.method1177
 import Class25.Companion.method303
 import Class79.Companion.method802
 

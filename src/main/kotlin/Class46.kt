@@ -954,7 +954,7 @@ class Class46 {
             Class229.aClass194_2981!!.method1443(83)
             Class269.aClass217_3453!!.method1590(0)
             Class64_Sub3.aClass261_5558!!.method1986((-91).toByte())
-            Class2.aClass141_117!!.method1174((-99).toByte())
+            Class2.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
             Class348_Sub23_Sub2.aClass153_9031!!.method1222(true)
             Class348_Sub23_Sub2.aClass187_9036!!.method1410(-27995)
             ProjectionCameraTransform.aClass326_5764!!.method2602(0)

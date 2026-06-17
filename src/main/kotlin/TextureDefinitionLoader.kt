@@ -3,7 +3,7 @@ import Class367_Sub1.Companion.method3533
 /* Class141 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class141 internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_4_: Class45?) {
+class TextureDefinitionLoader internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_4_: Class45?) {
     private var aClass60_1963 = Class60(64)
     @JvmField
     var aClass45_1965: Class45? = null
@@ -23,7 +23,7 @@ class Class141 internal constructor(class230: Class230?, i: Int, class45: Class4
         }
         class218 = Class218()
         if (i.toInt() != 31) return null
-        class218.aClass141_2851 = this
+        class218.aTextureDefinitionLoader_2851 = this
         if (`is` != null) class218.method1597((-114).toByte(), Class348_Sub49(`is`))
         synchronized(aClass60_1963) {
             aClass60_1963.method582(class218, i_0_.toLong(), (-108).toByte())

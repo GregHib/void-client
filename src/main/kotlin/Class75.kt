@@ -16,7 +16,7 @@ open class Class75 {
         private var aClass183_1240: Class183? = null
         private var aClass356_1241: Class356? = Class356(16)
         @JvmField
-        var aClass141_1242: Class141? = null
+        var aTextureDefinitionLoader_1242: TextureDefinitionLoader? = null
         @JvmField
         var aClass348_Sub42_Sub14_1243: Class348_Sub42_Sub14? = null
         @JvmField
@@ -137,7 +137,7 @@ open class Class75 {
             aClass183_1240 = null
             aClass263_1245 = null
             aClass153_1238 = null
-            aClass141_1242 = null
+            aTextureDefinitionLoader_1242 = null
             anInterface17_1244 = null
             aClass348_Sub42_Sub14_1243 = null
             aClass45_1237 = null
@@ -268,13 +268,13 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method752(class45: Class45?, class268: Class268?, class183: Class183?, class263: Class263?, class153: Class153?, class141: Class141?, interface17: Interface17?) {
+        fun method752(class45: Class45?, class268: Class268?, class183: Class183?, class263: Class263?, class153: Class153?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
             aClass45_1237 = class45
             aClass268_1239 = class268
             aClass183_1240 = class183
             aClass263_1245 = class263
             aClass153_1238 = class153
-            aClass141_1242 = class141
+            aTextureDefinitionLoader_1242 = textureDefinitionLoader
             anInterface17_1244 = interface17
             aClass356_1241!!.method3481(0)
             val i: Int = aClass45_1237!!.method417("details", 0)
@@ -581,7 +581,7 @@ open class Class75 {
                     val class51: Class51 = aClass263_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
                     val i_123_ = class51.anInt875
                     if (i_123_ != -1) {
-                        val class218: Class218? = aClass141_1242!!.method1173(31.toByte(), i_123_)
+                        val class218: Class218? = aTextureDefinitionLoader_1242!!.method1173(31.toByte(), i_123_)
                         val class105 = class218!!.method1596((if (class51.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_renderer!!)
                         if (class105 != null) {
                             var i_124_ = i_119_ * class105.method966() shr 2

@@ -6,7 +6,7 @@ import Class79.Companion.method802
 * Visit http://jode.sourceforge.net/
 */
 class Class218 {
-    var aClass141_2851: Class141? = null
+    var aTextureDefinitionLoader_2851: TextureDefinitionLoader? = null
     @JvmField
     var anInt2853: Int = 0
     @JvmField
@@ -14,9 +14,9 @@ class Class218 {
     @JvmField
     var anInt2856: Int = 0
     fun method1593(i: Int): Boolean {
-        if (i != 106) this.aClass141_2851 = null
+        if (i != 106) this.aTextureDefinitionLoader_2851 = null
         anInt2858++
-        return this.aClass141_2851!!.aClass45_1965!!.method421(false, this.anInt2853)
+        return this.aTextureDefinitionLoader_2851!!.aClass45_1965!!.method421(false, this.anInt2853)
     }
 
     private fun method1595(i: Byte, i_17_: Int, class348_sub49: Class348_Sub49) {
@@ -34,10 +34,10 @@ class Class218 {
         anInt2857++
         if (i_18_ < 51) aIntRange_2860 = null
         val l = (var_renderer.anInt4567 shl 19 or (this.anInt2853 or (i shl 16) or (if (!bool) 0 else 262144))).toLong()
-        var abstractModelRenderer = this.aClass141_2851!!.aClass60_1976.method583(l, -87) as AbstractModelRenderer?
+        var abstractModelRenderer = this.aTextureDefinitionLoader_2851!!.aClass60_1976.method583(l, -87) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
-        if (!this.aClass141_2851!!.aClass45_1965!!.method421(false, this.anInt2853)) return null
-        val class207 = Class207.method1521(this.aClass141_2851!!.aClass45_1965!!, this.anInt2853, 0)
+        if (!this.aTextureDefinitionLoader_2851!!.aClass45_1965!!.method421(false, this.anInt2853)) return null
+        val class207 = Class207.method1521(this.aTextureDefinitionLoader_2851!!.aClass45_1965!!, this.anInt2853, 0)
         if (class207 != null) {
             class207.anInt2700 = 0
             class207.anInt2698 = class207.anInt2700
@@ -47,7 +47,7 @@ class Class218 {
             for (i_19_ in 0..<i) class207.method1520()
         }
         abstractModelRenderer = var_renderer.method3691(class207, true)
-        if (abstractModelRenderer != null) this.aClass141_2851!!.aClass60_1976.method582(abstractModelRenderer, l, (-101).toByte())
+        if (abstractModelRenderer != null) this.aTextureDefinitionLoader_2851!!.aClass60_1976.method582(abstractModelRenderer, l, (-101).toByte())
         return abstractModelRenderer
     }
 

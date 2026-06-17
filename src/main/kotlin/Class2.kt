@@ -13,7 +13,7 @@ class Class2 {
         @JvmField
         var anInt116: Int = 0
         @JvmField
-        var aClass141_117: Class141? = null
+        var aTextureDefinitionLoader_117: TextureDefinitionLoader? = null
         @JvmField
         var anInt120: Int = 0
         @JvmField
@@ -31,7 +31,7 @@ class Class2 {
 
         @JvmStatic
         fun method171(i: Byte) {
-            aClass141_117 = null
+            aTextureDefinitionLoader_117 = null
             if (i.toInt() != 72) method173(39, null, null)
         }
 
@@ -53,7 +53,7 @@ class Class2 {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), class46_0_.anInt812)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, class46.anInt704)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, class46.anInt812)
-                if (i > -50) aClass141_117 = null
+                if (i > -50) aTextureDefinitionLoader_117 = null
                 Class348_Sub42_Sub14.method3243(-100, class348_sub47)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ak.E(" + i + ',' + (if (class46 != null) "{...}" else "null") + ',' + (if (class46_0_ != null) "{...}" else "null") + ')'))
@@ -62,7 +62,7 @@ class Class2 {
 
         @JvmStatic
         fun method174(i: Int, i_1_: Int) {
-            if (i_1_ != -30742) aClass141_117 = null
+            if (i_1_ != -30742) aTextureDefinitionLoader_117 = null
             anInt121++
             Class332.aClass60_4139!!.method578(2, i)
         }

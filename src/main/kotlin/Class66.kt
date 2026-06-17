@@ -2777,8 +2777,8 @@ object Class66 {
                 val i_258_ = anIntArray1149!![anInt1173]
                 val i_259_ = anIntArray1149!![anInt1173 + 1]
                 if ((LocalPlayerState.aPlayer_1907!!.aClass154_10536) != null) {
-                    for (i_260_ in Class141.anIntArray1973!!.indices) {
-                        if (Class141.anIntArray1973!![i_260_] == i_258_) {
+                    for (i_260_ in TextureDefinitionLoader.anIntArray1973!!.indices) {
+                        if (TextureDefinitionLoader.anIntArray1973!![i_260_] == i_258_) {
                             LocalPlayerState.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_260_)
                             return
                         }

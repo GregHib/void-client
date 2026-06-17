@@ -312,8 +312,8 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
             this.aClass68_5088 = class68
             aBoolean5099 = bool
             this.anInt5093 = i
-            glGenTextures(1, Class141.anIntArray1975, 0)
-            anInt5096 = Class141.anIntArray1975!![0]
+            glGenTextures(1, TextureDefinitionLoader.anIntArray1975, 0)
+            anInt5096 = TextureDefinitionLoader.anIntArray1975!![0]
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {

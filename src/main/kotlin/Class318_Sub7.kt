@@ -384,7 +384,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                         if (Class75.anInt1253 > 16) Class75.anInt1253 = 16
                         Class75.method764(var_renderConfig!!, (Class75.anInt1250 shr 2 shl 10), Class75.anInt1253 shr 1)
                         Class75.aClass153_1238!!.method1220(73.toByte(), 256, 1024)
-                        Class75.aClass141_1242!!.method1178(256, 1, 256)
+                        Class75.aTextureDefinitionLoader_1242!!.method1178(256, 1, 256)
                         Class75.aClass263_1245!!.method2014(4096, true)
                         Class229.aClass194_2981!!.method1444(256, 123)
                         Class348.anInt4290 = 20
