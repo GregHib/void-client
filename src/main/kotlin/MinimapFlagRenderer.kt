@@ -54,7 +54,7 @@ object MinimapFlagRenderer {
         RenderNode.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
         Class348_Sub42_Sub9_Sub1.anInt10444 = i_4_
         Class348_Sub49.anInt7207 = 0
-        Class211.anInt2747 = i
+        SoundEnvelope.anInt2747 = i
         LocalPlayerState.anIntArray1909 = null
         Class92.anInterface4Array1525 = null
         method828(38.toByte(), i_3_, i_5_)

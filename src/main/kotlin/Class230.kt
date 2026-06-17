@@ -62,14 +62,14 @@ class Class230 internal constructor(string: String?, i: Int) {
                             val i_25_ = ((Class247.aDouble3182 * i_22_.toDouble() + i_23_.toDouble() * Class319.aDouble3980 + i_24_.toDouble() * Class357.aDouble4404) * i_20_.toDouble() / i_14_.toDouble()).toInt()
                             val i_26_ = (((i_24_.toDouble() * Class348_Sub42_Sub5.aDouble9531) + ((i_22_.toDouble() * Class348_Sub23_Sub2.aDouble9023) + (i_23_.toDouble() * Class295.aDouble3761))) * i_21_.toDouble() / i_14_.toDouble()).toInt()
                             val d = (i_24_.toDouble() * Class348_Sub16_Sub2.aDouble8869 + (Class348_Sub15.aDouble6774 * i_23_.toDouble() + i_22_.toDouble() * Class59.aDouble1083))
-                            val i_27_ = i_25_ + Class211.anInt2747 - Class328.anInt4100
+                            val i_27_ = i_25_ + SoundEnvelope.anInt2747 - Class328.anInt4100
                             val i_28_ = (Class348_Sub42_Sub9_Sub1.anInt10444 + i_26_ + -Class348_Sub3.anInt6568)
                             val i_29_ = Class59_Sub1.anInt5283 + i_27_
                             val i_30_ = LinkedNodeListIterator.anInt1651 + i_28_
                             if ((i_27_ < 0 || i_28_ < 0 || i_29_ > Class348_Sub16_Sub1.anInt8854 || (i_30_ > Class239_Sub16.anInt6008)) && Class348_Sub49.anInt7207 != 2) {
                                 if (i_29_ <= 0 || i_30_ <= 0 || (Class348_Sub16_Sub1.anInt8854 <= i_27_) || (i_28_ >= Class239_Sub16.anInt6008)) Class348_Sub16_Sub2.aBoolean8870 = true
                                 else {
-                                    val i_31_ = i_27_ - Class211.anInt2747
+                                    val i_31_ = i_27_ - SoundEnvelope.anInt2747
                                     val i_32_ = (i_28_ - Class348_Sub42_Sub9_Sub1.anInt10444)
                                     var i_33_ = 0
                                     var i_34_ = 0
@@ -206,7 +206,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                                     } else {
                                         Class286_Sub5.anInt6255 = i_20_
                                         Class328_Sub1_Sub1.anInt8799 = (-Class348_Sub3.anInt6568 + i_17_ - (-(Class348_Sub42_Sub9_Sub1.anInt10444) - -i_34_))
-                                        ConfigValueProvider.anInt4910 = (-Class328.anInt4100 + i_16_ + (Class211.anInt2747 + -i_33_))
+                                        ConfigValueProvider.anInt4910 = (-Class328.anInt4100 + i_16_ + (SoundEnvelope.anInt2747 + -i_33_))
                                         OutputStream_Sub1.anInt95 = i_21_
                                         CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95))
                                     }
@@ -230,7 +230,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                                     Class328.anInt4100 += i_33_
                                     Class348_Sub42_Sub4.aDouble9517 += d_37_
                                     Class348_Sub40_Sub8.anInt9157 = (-Class348_Sub3.anInt6568 + i_26_ + Class348_Sub42_Sub9_Sub1.anInt10444)
-                                    Class339.anInt4211 = (-Class328.anInt4100 + Class211.anInt2747 + i_25_)
+                                    Class339.anInt4211 = (-Class328.anInt4100 + SoundEnvelope.anInt2747 + i_25_)
                                     if (Class348_Sub49.anInt7207 == 1) {
                                         Class239_Sub24.anInt6095 += i_35_
                                         Class286.anInt3682 += i_36_
@@ -257,7 +257,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                             Class29.anInt403 = i_6_
                             Class348_Sub40_Sub8.anInt9157 = Class348_Sub42_Sub9_Sub1.anInt10444
                             Class328.anInt4100 = 0
-                            Class339.anInt4211 = Class211.anInt2747
+                            Class339.anInt4211 = SoundEnvelope.anInt2747
                             AnimatedModelRenderer.anInt8422 = i_4_
                             Class348_Sub3.anInt6568 = 0
                             Class348_Sub42_Sub4.aDouble9517 = 0.0
@@ -274,7 +274,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                                 Class286_Sub5.anInt6255 = i_20_
                                 CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
                             } else {
-                                ConfigValueProvider.anInt4910 = i_16_ - -Class211.anInt2747
+                                ConfigValueProvider.anInt4910 = i_16_ - -SoundEnvelope.anInt2747
                                 Class328_Sub1_Sub1.anInt8799 = Class348_Sub42_Sub9_Sub1.anInt10444 + i_17_
                                 Class286_Sub5.anInt6255 = i_20_
                                 OutputStream_Sub1.anInt95 = i_21_
@@ -300,7 +300,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                             }
                             TextureHandle.anInt2590 = i_20_
                             ModelFacePriorityNode.anInt1879 = i_21_
-                            Class94.anInt1537 = (-Class339.anInt4211 + -Class328.anInt4100 + (i_16_ + Class211.anInt2747))
+                            Class94.anInt1537 = (-Class339.anInt4211 + -Class328.anInt4100 + (i_16_ + SoundEnvelope.anInt2747))
                             Class318_Sub5.anInt6417 = (-Class348_Sub40_Sub8.anInt9157 + (i_17_ + Class348_Sub42_Sub9_Sub1.anInt10444 + -Class348_Sub3.anInt6568))
                             CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                         } else if (Class348_Sub49.anInt7207 == 1) {

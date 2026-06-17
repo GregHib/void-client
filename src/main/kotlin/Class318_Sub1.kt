@@ -55,7 +55,7 @@ abstract class Class318_Sub1 : Class318() {
         while ( /**/l_32_ <= 48) {
             val i_34_ = (0xffffL and (l shr l_32_.toInt())).toInt()
             if (i_34_ <= 0) break
-            class348_sub1s[i_33_++] = (Class239_Sub14.aClass211Array5993!![i_34_ + -1]!!.aClass348_Sub1_2745)
+            class348_sub1s[i_33_++] = (Class239_Sub14.aSoundEnvelopeArray5993!![i_34_ + -1]!!.aClass348_Sub1_2745)
             l_32_ += 16L
         }
         for (i_35_ in i_33_..3) class348_sub1s[i_35_] = null

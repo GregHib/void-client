@@ -155,7 +155,7 @@ class Class258_Sub1 : Class258 {
                 }
             }
             if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
-                for (i_42_ in 0..<Class331.anInt4135) Class239_Sub14.aClass211Array5993!![i_42_]!!.method1544(8688, bool, i)
+                for (i_42_ in 0..<Class331.anInt4135) Class239_Sub14.aSoundEnvelopeArray5993!![i_42_]!!.method1544(8688, bool, i)
             }
             if (Class348_Sub40_Sub5.aBoolean9121) {
                 Class52.anIntArray4906 = Class9.aRenderer171!!.Y()

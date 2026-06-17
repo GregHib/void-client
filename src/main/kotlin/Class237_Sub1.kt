@@ -338,20 +338,20 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             if (i_58_ > 0) {
                                 var i_59_ = 0
                                 while (i_58_ > i_59_) {
-                                    val class211 = Class211(var_renderer, class348_sub49, 2)
-                                    if (class211.anInt2734 == 31) {
+                                    val soundEnvelope = SoundEnvelope(var_renderer, class348_sub49, 2)
+                                    if (soundEnvelope.anInt2734 == 31) {
                                         val class253 = (Class348_Sub1.aMapSceneDefLoader_6559!!.method1391((-1).toByte(), class348_sub49.readUnsignedShort(842397944)))
-                                        class211.method1539(class253.anInt3251, 115.toByte(), class253.anInt3249, class253.anInt3245, class253.anInt3244)
+                                        soundEnvelope.method1539(class253.anInt3251, 115.toByte(), class253.anInt3249, class253.anInt3245, class253.anInt3244)
                                     }
                                     if (var_renderer!!.method3704() > 0) {
-                                        val class348_sub1 = (class211.aClass348_Sub1_2745)
+                                        val class348_sub1 = (soundEnvelope.aClass348_Sub1_2745)
                                         val i_60_ = ((i_39_ shl 9) + class348_sub1!!.method2724(-1))
                                         val i_61_ = (class348_sub1.method2717(93.toByte()) + (i shl 9))
                                         val i_62_ = i_60_ shr 9
                                         val i_63_ = i_61_ shr 9
                                         if (i_62_ >= 0 && i_63_ >= 0 && (this.anInt3117 > i_62_) && (this.anInt3114 > i_63_)) {
-                                            class348_sub1.method2725(i_60_, 70.toByte(), i_61_, ((this.anIntArrayArrayArray3122!![(class211.anInt2731)]!![i_62_]!![i_63_]) + -class348_sub1.method2722(120)))
-                                            Class348_Sub42_Sub19.method3276(class211)
+                                            class348_sub1.method2725(i_60_, 70.toByte(), i_61_, ((this.anIntArrayArrayArray3122!![(soundEnvelope.anInt2731)]!![i_62_]!![i_63_]) + -class348_sub1.method2722(120)))
+                                            Class348_Sub42_Sub19.method3276(soundEnvelope)
                                         }
                                     }
                                     i_59_++
@@ -626,23 +626,23 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                                 if (i_126_ > 0) {
                                     var i_127_ = 0
                                     while ((i_126_ > i_127_)) {
-                                        val class211 = Class211(var_renderer, class348_sub49, 2)
-                                        if (class211.anInt2734 == 31) {
+                                        val soundEnvelope = SoundEnvelope(var_renderer, class348_sub49, 2)
+                                        if (soundEnvelope.anInt2734 == 31) {
                                             val class253 = (Class348_Sub1.aMapSceneDefLoader_6559!!.method1391(111.toByte(), (class348_sub49.readUnsignedShort(842397944))))
-                                            class211.method1539((class253.anInt3251), 124.toByte(), (class253.anInt3249), (class253.anInt3245), (class253.anInt3244))
+                                            soundEnvelope.method1539((class253.anInt3251), 124.toByte(), (class253.anInt3249), (class253.anInt3245), (class253.anInt3244))
                                         }
                                         if (var_renderer!!.method3704() > 0) {
-                                            val class348_sub1 = (class211.aClass348_Sub1_2745)
+                                            val class348_sub1 = (soundEnvelope.aClass348_Sub1_2745)
                                             var i_128_ = (class348_sub1!!.method2724(-1) shr 9)
                                             var i_129_ = (class348_sub1.method2717(79.toByte()) shr 9)
-                                            if ((i_121_ == (class211.anInt2731)) && (i_123_ <= i_128_) && (i_123_ + 8 > i_128_) && i_124_ <= i_129_ && (i_124_ - -8 > i_129_)) {
+                                            if ((i_121_ == (soundEnvelope.anInt2731)) && (i_123_ <= i_128_) && (i_123_ + 8 > i_128_) && i_124_ <= i_129_ && (i_124_ - -8 > i_129_)) {
                                                 val i_130_ = ((i_117_ shl 9) + (method1201((0xfff and (class348_sub1.method2717(95.toByte()))), (0xfff and (class348_sub1.method2724(-1))), -2, i_119_)))
                                                 val i_131_ = ((i_120_ shl 9) + (method1079(4095, i_119_, (0xfff and (class348_sub1.method2717(119.toByte()))), (0xfff and (class348_sub1.method2724(-1))))))
                                                 i_128_ = i_130_ shr 9
                                                 i_129_ = i_131_ shr 9
                                                 if (i_128_ >= 0 && (i_129_ >= 0) && (i_128_ < (this.anInt3117)) && ((this.anInt3114) > i_129_)) {
                                                     class348_sub1.method2725(i_130_, 70.toByte(), i_131_, ((this.anIntArrayArrayArray3122!![i_121_]!![i_128_]!![i_129_]) - (class348_sub1.method2722(124))))
-                                                    Class348_Sub42_Sub19.method3276(class211)
+                                                    Class348_Sub42_Sub19.method3276(soundEnvelope)
                                                 }
                                             }
                                         }

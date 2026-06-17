@@ -695,7 +695,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_79_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-120)
                 val i_80_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
-                Class211.method1540(-101, i, i_79_ + (i_80_ shl 16))
+                SoundEnvelope.method1540(-101, i, i_79_ + (i_80_ shl 16))
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

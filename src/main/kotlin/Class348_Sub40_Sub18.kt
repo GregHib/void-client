@@ -114,7 +114,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                         if (i_9_ == 0) {
                             i_0_ = method2413(i + 21479, class348_sub49_sub2)
                             Class348_Sub5.aByteArray6624!![i_8_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
-                        } else if (Class211.method1538(i_8_, 105.toByte(), class348_sub49_sub2)) Class348_Sub5.aByteArray6624!![i_8_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
+                        } else if (SoundEnvelope.method1538(i_8_, 105.toByte(), class348_sub49_sub2)) Class348_Sub5.aByteArray6624!![i_8_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_8_]).toInt(), 2).toByte()
                     }
                 }
                 i_7_++
@@ -135,7 +135,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                             if (i_12_ == 0) {
                                 i_0_ = method2413(1, class348_sub49_sub2)
                                 Class348_Sub5.aByteArray6624!![i_11_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
-                            } else if (Class211.method1538(i_11_, 105.toByte(), class348_sub49_sub2)) Class348_Sub5.aByteArray6624!![i_11_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
+                            } else if (SoundEnvelope.method1538(i_11_, 105.toByte(), class348_sub49_sub2)) Class348_Sub5.aByteArray6624!![i_11_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_11_]).toInt(), 2).toByte()
                         }
                     }
                     i_10_++

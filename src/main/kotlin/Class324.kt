@@ -546,16 +546,16 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                     i_101_++
                 }
                 glLinkProgramARB(l)
-                glGetObjectParameterivARB(l, 35714, Class211.anIntArray2744, 0)
-                if (Class211.anIntArray2744!![0] == 0) {
-                    if (Class211.anIntArray2744!![0] == 0) println("Shader linking failed:")
-                    glGetObjectParameterivARB(l, 35716, Class211.anIntArray2744, 1)
-                    if (Class211.anIntArray2744!![1] > 1) {
-                        val `is` = ByteArray(Class211.anIntArray2744!![1])
-                        glGetInfoLogARB(l, Class211.anIntArray2744!![1], Class211.anIntArray2744, 0, `is`, 0)
+                glGetObjectParameterivARB(l, 35714, SoundEnvelope.anIntArray2744, 0)
+                if (SoundEnvelope.anIntArray2744!![0] == 0) {
+                    if (SoundEnvelope.anIntArray2744!![0] == 0) println("Shader linking failed:")
+                    glGetObjectParameterivARB(l, 35716, SoundEnvelope.anIntArray2744, 1)
+                    if (SoundEnvelope.anIntArray2744!![1] > 1) {
+                        val `is` = ByteArray(SoundEnvelope.anIntArray2744!![1])
+                        glGetInfoLogARB(l, SoundEnvelope.anIntArray2744!![1], SoundEnvelope.anIntArray2744, 0, `is`, 0)
                         println(String(`is`))
                     }
-                    if (Class211.anIntArray2744!![0] == 0) {
+                    if (SoundEnvelope.anIntArray2744!![0] == 0) {
                         var i_102_ = 0
                         while (class39s.size > i_102_) {
                             glDetachObjectARB(l, (class39s[i_102_]!!.aLong517))

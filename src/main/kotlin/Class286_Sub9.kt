@@ -236,7 +236,7 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
                     class359.anInt4425 = (player.anInt10275)
                     if (player.anInt10553 > 0) Class295.method2221(player, -28482)
                     Class294.aPlayerArray5058!![i_22_] = null
-                    if (class348_sub49_sub2.readBits((-24).toByte(), 1) != 0) Class211.method1538(i_22_, 105.toByte(), class348_sub49_sub2)
+                    if (class348_sub49_sub2.readBits((-24).toByte(), 1) != 0) SoundEnvelope.method1538(i_22_, 105.toByte(), class348_sub49_sub2)
                 }
             } else if (i_23_ == 1) {
                 val i_24_ = class348_sub49_sub2.readBits((-24).toByte(), 3)

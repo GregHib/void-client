@@ -122,12 +122,12 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             }
             if (bool_5_) {
                 Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = Array<Array<LongArray?>?>(i_1_) { Array<LongArray?>(i_2_) { LongArray(i_3_) } }
-                Class239_Sub14.aClass211Array5993 = arrayOfNulls<Class211>(65535)
+                Class239_Sub14.aSoundEnvelopeArray5993 = arrayOfNulls<SoundEnvelope>(65535)
                 RenderNode.aBooleanArray9718 = BooleanArray(65535)
                 Class331.anInt4135 = 0
             } else {
                 Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = null
-                Class239_Sub14.aClass211Array5993 = null
+                Class239_Sub14.aSoundEnvelopeArray5993 = null
                 RenderNode.aBooleanArray9718 = null
                 Class331.anInt4135 = 0
             }

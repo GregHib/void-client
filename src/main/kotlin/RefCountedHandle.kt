@@ -37,7 +37,7 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
         fun method1320() {
             for (i in 0..<Class331.anInt4135) {
                 if (!RenderNode.aBooleanArray9718!![i]) {
-                    val class211 = Class239_Sub14.aClass211Array5993!![i]
+                    val class211 = Class239_Sub14.aSoundEnvelopeArray5993!![i]
                     val class348_sub1 = class211!!.aClass348_Sub1_2745!!
                     val i_3_ = class211.anInt2731
                     val i_4_ = (class348_sub1.method2723(-1) - Class348_Sub23_Sub2.anInt9037)

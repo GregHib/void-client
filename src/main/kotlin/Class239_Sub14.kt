@@ -23,7 +23,7 @@ class Class239_Sub14 : Class239 {
 
     override fun method1710(i: Int): Int {
         anInt5982++
-        if (i != 20014) aClass211Array5993 = null
+        if (i != 20014) aSoundEnvelopeArray5993 = null
         return 2
     }
 
@@ -56,7 +56,7 @@ class Class239_Sub14 : Class239 {
         @JvmField
         var aIntRange_5992: IntRange? = IntRange(17, 4)
         @JvmField
-        var aClass211Array5993: Array<Class211?>? = null
+        var aSoundEnvelopeArray5993: Array<SoundEnvelope?>? = null
         @JvmField
         var anInt5994: Int = 0
         @JvmField
@@ -81,7 +81,7 @@ class Class239_Sub14 : Class239 {
             aClass251_5989 = null
             anIntArrayArray5991 = null
             aClass259_5995 = null
-            aClass211Array5993 = null
+            aSoundEnvelopeArray5993 = null
             aModelLightingConfig_5990 = null
         }
 

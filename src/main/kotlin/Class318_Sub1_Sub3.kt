@@ -69,7 +69,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
                 while_103_@ while (l_22_ <= 48L) {
                     val i_23_ = (l ushr l_22_.toInt() and 0xffffL).toInt()
                     if (i_23_ <= 0) break
-                    val class211 = Class239_Sub14.aClass211Array5993!![-1 + i_23_]
+                    val class211 = Class239_Sub14.aSoundEnvelopeArray5993!![-1 + i_23_]
                     var i_24_ = 0
                     while (i_19_ > i_24_) {
                         if (class211!!.aClass348_Sub1_2745 === class348_sub1s!![i_24_]) {
@@ -122,7 +122,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
             while_106_@ while ( /**/i_19_ > i_33_) {
                 var l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_32_.toInt()]!![i_31_])
                 while (l != 0L) {
-                    val class211 = (Class239_Sub14.aClass211Array5993!![(-1L + (l and 0xffffL)).toInt()])
+                    val class211 = (Class239_Sub14.aSoundEnvelopeArray5993!![(-1L + (l and 0xffffL)).toInt()])
                     l = l ushr 16
                     if (class211!!.aClass348_Sub1_2745 === class348_sub1s!![i_33_]) {
                         i_33_++
@@ -131,7 +131,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
                 }
                 l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_29_]!![i_30_.toInt()])
                 while (l != 0L) {
-                    val class211 = (Class239_Sub14.aClass211Array5993!![(-1L + (0xffffL and l)).toInt()])
+                    val class211 = (Class239_Sub14.aSoundEnvelopeArray5993!![(-1L + (0xffffL and l)).toInt()])
                     l = l ushr 16
                     if (class348_sub1s!![i_33_] === class211!!.aClass348_Sub1_2745) {
                         i_33_++

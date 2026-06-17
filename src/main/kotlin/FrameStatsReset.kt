@@ -377,7 +377,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8046 = 0
             ObjectByteSerializerHolder.anInt2284 = 0
             Class348_Sub31_Sub2.anInt9070 = i
-            Class211.anInt2748 = 0
+            SoundEnvelope.anInt2748 = 0
             Class318_Sub1_Sub3_Sub2.anInt10059 = 0
             Class5.anInt4629 = 0
             Class274.anInt3482 = 0
@@ -892,7 +892,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7204 = 0
             Class348_Sub40.anInt7044 = 0
             Class79.anInt1357 = 0
-            Class211.anInt2733 = 0
+            SoundEnvelope.anInt2733 = 0
             Class348_Sub42_Sub14.anInt9633 = 0
             Class64_Sub2.anInt5422 = 0
             FrameBufferObject.anInt4893 = 0
@@ -1104,7 +1104,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class59_Sub2_Sub2.anInt8680 = 0
             Class348_Sub3.anInt6583 = 0
             NativeRenderer.anInt8055 = 0
-            Class211.anInt2741 = 0
+            SoundEnvelope.anInt2741 = 0
             Class239_Sub26.anInt6122 = 0
             Class84.anInt1452 = 0
             Class239_Sub19.anInt6046 = 0
@@ -1404,7 +1404,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Sprite.anInt115 = 0
             Class348_Sub40_Sub25.anInt9336 = 0
             Class239_Sub17.anInt6028 = 0
-            Class211.anInt2736 = 0
+            SoundEnvelope.anInt2736 = 0
             OutputStream_Sub1.anInt92 = 0
             Class59_Sub2_Sub2.anInt8678 = 0
             SoftwareSpriteRaster.anInt1628 = 0
@@ -1589,7 +1589,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub8.anInt9548 = 0
             Class318_Sub1_Sub3_Sub1.anInt10030 = 0
             SpotAnimVector.anInt2287 = 0
-            Class211.anInt2732 = 0
+            SoundEnvelope.anInt2732 = 0
             Class288.anInt4954 = 0
             Class60.anInt1096 = 0
             Renderer.anInt4572 = 0
@@ -2060,7 +2060,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7923 = 0
             Class348_Sub40_Sub38.anInt9472 = 0
             Class288_Sub1.anInt8574 = 0
-            Class211.anInt2746 = 0
+            SoundEnvelope.anInt2746 = 0
             Class348_Sub40_Sub14.anInt9206 = 0
             Class34.anInt469 = 0
             Class367_Sub1.anInt7278 = 0

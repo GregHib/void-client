@@ -870,8 +870,8 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 for (i in Class291.aClass318_Sub1Array3737!!.indices) Class291.aClass318_Sub1Array3737!![i] = null
                 Class348_Sub42_Sub3.anInt9504 = 0
             }
-            if (Class239_Sub14.aClass211Array5993 != null) {
-                for (i in 0..<Class331.anInt4135) Class239_Sub14.aClass211Array5993!![i] = null
+            if (Class239_Sub14.aSoundEnvelopeArray5993 != null) {
+                for (i in 0..<Class331.anInt4135) Class239_Sub14.aSoundEnvelopeArray5993!![i] = null
                 for (i in 0..<MapAreaDefinition.anInt2524) {
                     for (i_84_ in 0..<Class318_Sub7.anInt6451) {
                         for (i_85_ in 0..<Class348_Sub41.anInt7054) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L

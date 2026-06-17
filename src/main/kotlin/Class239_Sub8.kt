@@ -158,13 +158,13 @@ class Class239_Sub8 : Class239 {
             if (i == -1) {
                 if (Class348_Sub49.anInt7207 == 0) {
                     Class239_Sub16.anInt6008 = (2 * Class348_Sub42_Sub9_Sub1.anInt10444 + LinkedNodeListIterator.anInt1651)
-                    Class348_Sub16_Sub1.anInt8854 = Class211.anInt2747 * 2 + Class59_Sub1.anInt5283
+                    Class348_Sub16_Sub1.anInt8854 = SoundEnvelope.anInt2747 * 2 + Class59_Sub1.anInt5283
                 } else if (Class348_Sub49.anInt7207 == 1) {
                     Class31.anInt425 = (Class239_Sub12.anInt5965 + Class59_Sub1.anInt5283 / Class58.anInt1067 - -2)
                     Class250.anInt3225 = (Class73.anInt4784 + LinkedNodeListIterator.anInt1651 / Class344.anInt4267 - -2)
                     Class348_Sub16_Sub1.anInt8854 = Class58.anInt1067 * Class31.anInt425
                     Class239_Sub16.anInt6008 = Class344.anInt4267 * Class250.anInt3225
-                    Class211.anInt2747 = (-Class59_Sub1.anInt5283 + Class348_Sub16_Sub1.anInt8854 shr 1)
+                    SoundEnvelope.anInt2747 = (-Class59_Sub1.anInt5283 + Class348_Sub16_Sub1.anInt8854 shr 1)
                     Class348_Sub42_Sub9_Sub1.anInt10444 = (Class239_Sub16.anInt6008 - LinkedNodeListIterator.anInt1651 shr 1)
                 } else if (Class348_Sub49.anInt7207 == 2) {
                     Class348_Sub16_Sub1.anInt8854 = Class59_Sub1.anInt5283

@@ -112,7 +112,7 @@ import BufferedOutputStreamWorker.Companion.method1525
 import UnusedToStringStub.Companion.method1529
 import CameraRotationStub.Companion.method288
 import VorbisFloorDecoder.Companion.method1536
-import Class211.Companion.method1543
+import SoundEnvelope.Companion.method1543
 import Class212.method1551
 import Class213.Companion.method1564
 import Class217.Companion.method1585
