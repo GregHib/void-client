@@ -25,27 +25,27 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         }
     }
 
-    fun method2034(i: Int, bool: Boolean): Class277 {
+    fun method2034(i: Int, bool: Boolean): LocTypeConfig {
         if (bool != false) aShortArray3437 = null
         anInt3431++
-        var class277: Class277?
+        var locTypeConfig: LocTypeConfig?
         synchronized(aClass60_3433) {
-            class277 = aClass60_3433.method583(i.toLong(), 64) as Class277?
+            locTypeConfig = aClass60_3433.method583(i.toLong(), 64) as LocTypeConfig?
         }
-        if (class277 != null) return class277
+        if (locTypeConfig != null) return locTypeConfig
         val `is`: ByteArray?
         synchronized(aClass45_3442!!) {
             `is` = aClass45_3442.method410(-1860, 4, i)
         }
-        class277 = Class277()
-        class277.anInt3573 = i
-        class277.aLocDefinitionCache_3562 = this
-        if (`is` != null) class277.method2070(true, Class348_Sub49(`is`))
-        class277.method2067(-4860)
+        locTypeConfig = LocTypeConfig()
+        locTypeConfig.anInt3573 = i
+        locTypeConfig.aLocDefinitionCache_3562 = this
+        if (`is` != null) locTypeConfig.method2070(true, Class348_Sub49(`is`))
+        locTypeConfig.method2067(-4860)
         synchronized(aClass60_3433) {
-            aClass60_3433.method582(class277, i.toLong(), (-111).toByte())
+            aClass60_3433.method582(locTypeConfig, i.toLong(), (-111).toByte())
         }
-        return class277
+        return locTypeConfig
     }
 
     fun method2037(i: Int) {

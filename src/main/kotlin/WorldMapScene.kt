@@ -32,11 +32,11 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
     private val anIntArray3128 = intArrayOf(0, 0, 0, 256, 512, 512, 512, 256, 256, 384, 128, 128, 256)
     private val aByteArrayArrayArray3129: Array<Array<ByteArray?>?>
     var anInt3130: Int = 0
-    private fun method1675(i: Int, i_0_: Int, `is`: Array<ByteArray?>?, i_1_: Int, is_2_: Array<ByteArray?>?, i_3_: Int, class277: Class277?, hslColorConfig: HslColorConfig?, bools: BooleanArray?, i_4_: Int, is_5_: Array<ByteArray?>?, i_6_: Int, i_7_: Int, var_renderer: Renderer?) {
+    private fun method1675(i: Int, i_0_: Int, `is`: Array<ByteArray?>?, i_1_: Int, is_2_: Array<ByteArray?>?, i_3_: Int, locTypeConfig: LocTypeConfig?, hslColorConfig: HslColorConfig?, bools: BooleanArray?, i_4_: Int, is_5_: Array<ByteArray?>?, i_6_: Int, i_7_: Int, var_renderer: Renderer?) {
         do {
             try {
                 anInt3112++
-                val bools_8_: BooleanArray = (if (class277 != null && class277.aBoolean3560) Class50_Sub1.aBooleanArrayArray5225!![i_7_] else SplashImageLoadable.aBooleanArrayArray4693!![i_7_])!!
+                val bools_8_: BooleanArray = (if (locTypeConfig != null && locTypeConfig.aBoolean3560) Class50_Sub1.aBooleanArrayArray5225!![i_7_] else SplashImageLoadable.aBooleanArrayArray4693!![i_7_])!!
                 if (i_1_ > 0) {
                     if (i > 0) {
                         val i_9_ = is_5_!![i + -1]!![i_1_ - 1].toInt() and 0xff
@@ -241,25 +241,25 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                         }
                     }
                 }
-                if (class277 == null) break
-                val i_61_ = Class348_Sub42_Sub17.method3266(var_renderer, i_3_ xor 0x7e.inv(), class277)
-                if (!class277.aBoolean3560) break
+                if (locTypeConfig == null) break
+                val i_61_ = Class348_Sub42_Sub17.method3266(var_renderer, i_3_ xor 0x7e.inv(), locTypeConfig)
+                if (!locTypeConfig.aBoolean3560) break
                 for (i_62_ in 0..7) {
                     val i_63_ = -(i_4_ * 2) + i_62_ and 0x7
-                    if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_7_]!![i_62_] && (Class306.anIntArray3873!![i_63_] <= class277.anInt3564)) {
-                        Class348_Sub15.anIntArray6775!![i_63_] = class277.anInt3563
+                    if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_7_]!![i_62_] && (Class306.anIntArray3873!![i_63_] <= locTypeConfig.anInt3564)) {
+                        Class348_Sub15.anIntArray6775!![i_63_] = locTypeConfig.anInt3563
                         Class348_Sub40_Sub38.anIntArray9480!![i_63_] = i_61_
-                        ProjectileFactory.anIntArray2899!![i_63_] = class277.anInt3575
-                        Class348_Sub6.anIntArray6631!![i_63_] = class277.anInt3570
-                        if (Class306.anIntArray3873!![i_63_] != class277.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
+                        ProjectileFactory.anIntArray2899!![i_63_] = locTypeConfig.anInt3575
+                        Class348_Sub6.anIntArray6631!![i_63_] = locTypeConfig.anInt3570
+                        if (Class306.anIntArray3873!![i_63_] != locTypeConfig.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
                         else HintIconState.anIntArray2370!![i_63_] = BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_63_]), 2)
-                        Class306.anIntArray3873!![i_63_] = class277.anInt3564
+                        Class306.anIntArray3873!![i_63_] = locTypeConfig.anInt3564
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(
                     runtimeexception,
-                    ("sr.M(" + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (class277 != null) "{...}" else "null") + ',' + (if (hslColorConfig != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
+                    ("sr.M(" + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (locTypeConfig != null) "{...}" else "null") + ',' + (if (hslColorConfig != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
                 )
             }
             break

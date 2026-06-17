@@ -191,7 +191,7 @@ import LocalizedText.Companion.method2059
 import CollisionMapAccessor.method2064
 import CollisionMapAccessor.method2065
 import CollisionMapAccessor.method2066
-import Class277.Companion.method2071
+import LocTypeConfig.Companion.method2071
 import Class279_Sub2.Companion.method2097
 import Class28.Companion.method318
 import Class280.Companion.method2104
@@ -693,7 +693,7 @@ class Client : GameAppletFrame() {
             Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
             for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
             SceneObjectAnimator.aClass78_3075 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
-            Class277.aIndexedFileCache_3568 = IndexedFileCache(255, Class299_Sub2.aClass78_6328, SceneObjectAnimator.aClass78_3075, 500000)
+            LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, Class299_Sub2.aClass78_6328, SceneObjectAnimator.aClass78_3075, 500000)
             Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
             Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3779 = null
             Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785 = null

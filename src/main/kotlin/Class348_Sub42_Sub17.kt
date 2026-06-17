@@ -94,19 +94,19 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
         var aClass351_9679: Class351? = Class351(27, 7)
         var anInt9680: Int = 0
 
-        fun method3266(var_renderer: Renderer?, i: Int, class277: Class277?): Int {
+        fun method3266(var_renderer: Renderer?, i: Int, locTypeConfig: LocTypeConfig?): Int {
             try {
                 anInt9674++
-                if (class277!!.anInt3569 == -1) {
-                    if (class277.anInt3575 != -1) {
-                        val class12 = var_renderer!!.aRenderConfig4579!!.method3(class277.anInt3575, -6662)
+                if (locTypeConfig!!.anInt3569 == -1) {
+                    if (locTypeConfig.anInt3575 != -1) {
+                        val class12 = var_renderer!!.aRenderConfig4579!!.method3(locTypeConfig.anInt3575, -6662)
                         if (!class12!!.aBoolean209) return class12.aShort208.toInt()
                     }
-                } else return class277.anInt3569
+                } else return locTypeConfig.anInt3569
                 if (i <= 123) return -68
-                return class277.anInt3563
+                return locTypeConfig.anInt3563
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("gw.F(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (class277 != null) "{...}" else "null") + ')'))
+                throw method2929(runtimeexception, ("gw.F(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (locTypeConfig != null) "{...}" else "null") + ')'))
             }
         }
 

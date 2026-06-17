@@ -124,8 +124,8 @@ class InputStream_Sub1 : InputStream() {
                 var l_12_ = l_10_ shl 1
                 if (l_12_ >= 256L) l_12_ = l_12_ xor 0x11dL
                 val l_13_ = l_12_ xor l
-                aLongArrayArray75!![0]!![i] = (Class277.method2068(l_13_, (Class277.method2068(l_9_ shl 8, (Class277.method2068(l_11_ shl 16, (Class277.method2068(l_12_ shl 24, (Class277.method2068(l shl 32, (Class277.method2068(Class277.method2068(l shl 56, l shl 48), l_10_ shl 40))))))))))))
-                for (i_14_ in 1..7) aLongArrayArray75!![i_14_]!![i] = Class277.method2068((aLongArrayArray75!![i_14_ + -1]!![i] ushr 8), (aLongArrayArray75!![i_14_ - 1]!![i] shl 56))
+                aLongArrayArray75!![0]!![i] = (LocTypeConfig.method2068(l_13_, (LocTypeConfig.method2068(l_9_ shl 8, (LocTypeConfig.method2068(l_11_ shl 16, (LocTypeConfig.method2068(l_12_ shl 24, (LocTypeConfig.method2068(l shl 32, (LocTypeConfig.method2068(LocTypeConfig.method2068(l shl 56, l shl 48), l_10_ shl 40))))))))))))
+                for (i_14_ in 1..7) aLongArrayArray75!![i_14_]!![i] = LocTypeConfig.method2068((aLongArrayArray75!![i_14_ + -1]!![i] ushr 8), (aLongArrayArray75!![i_14_ - 1]!![i] shl 56))
             }
             aLongArray76!![0] = 0L
             for (i in 1..10) {

@@ -439,7 +439,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub1_Sub2.anInt10002 = 0
             Class348_Sub40_Sub14.anInt9205 = 0
             Class348_Sub40_Sub11.anInt9186 = 0
-            Class277.anInt3567 = 0
+            LocTypeConfig.anInt3567 = 0
             OpenGlRenderer.anInt7529 = 0
             Class318_Sub1_Sub1_Sub2.anInt9977 = 0
             Class342.anInt4242 = 0
@@ -3102,7 +3102,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ChatEffectsOptionState.anInt5867 = 0
             GlTextureCubeMap.anInt8533 = 0
             HostPingThread.anInt2257 = 0
-            Class277.anInt3571 = 0
+            LocTypeConfig.anInt3571 = 0
             Class84.anInt1451 = 0
             LinkedListIterator.anInt2120 = 0
             Class299_Sub2.anInt6324 = 0
@@ -3438,7 +3438,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8909 = 0
             Class318_Sub1_Sub3_Sub3.anInt10200 = 0
             GlTexture.anInt4850 = 0
-            Class277.anInt3565 = 0
+            LocTypeConfig.anInt3565 = 0
             Class48.anInt850 = 0
             Class348_Sub4.anInt6615 = 0
             FontDefinition.anInt1978 = 0

@@ -3,7 +3,7 @@ import Class348_Sub40_Sub34.Companion.method3140
 /* Class277 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class277 {
+class LocTypeConfig {
     var anInt3558: Int = 64
     var anInt3559: Int = 1190717
     var aBoolean3560: Boolean = false
