@@ -3409,7 +3409,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BloomGraphicsOptionState.anInt5968 = 0
             Class59_Sub2_Sub2.anInt8675 = 0
             Class50_Sub3.anInt5240 = 0
-            Class336.anInt4170 = 0
+            HslPaletteState.anInt4170 = 0
             SpriteStore.anInt361 = 0
             FloatCameraTransform.anInt5697 = 0
             ArbFogMaterialPass.anInt6191 = 0
@@ -4176,8 +4176,8 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
 
             method773(true)
             Class369_Sub3_Sub1.aBoolean10174 = true
-            Class336.aShortArray4172 = ShortArray(256)
-            Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172
+            HslPaletteState.aShortArray4172 = ShortArray(256)
+            Class348_Sub42_Sub3.aShortArray9502 = HslPaletteState.aShortArray4172
             Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502
             SceneEffectMarker.aShortArray6428 = Class348_Sub26.aShortArray6889
             LightingOptionState.aString5882 = LocalizedText.aLocalizedText_3509!!.method2063(Class348_Sub33.anInt6967, 544)

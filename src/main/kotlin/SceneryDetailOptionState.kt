@@ -122,10 +122,10 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     i_11_ = i + MinimapFlagRenderer.method1082(-81, false)
                     i_12_ = Class348_Sub23.method2960(false, -52) + i_4_
                 } else {
-                    var_renderer.DA(Class336.anInt4171, CircleDrawer.anInt2688, GlFramebufferBlitter.anInt282, ParticleSystemRenderer.anInt3861)
+                    var_renderer.DA(HslPaletteState.anInt4171, CircleDrawer.anInt2688, GlFramebufferBlitter.anInt282, ParticleSystemRenderer.anInt3861)
                     i_8_ = CircleDrawer.anInt2688
                     i_9_ = ParticleSystemRenderer.anInt3861
-                    i_7_ = Class336.anInt4171
+                    i_7_ = HslPaletteState.anInt4171
                     i_10_ = GlFramebufferBlitter.anInt282
                     var_renderer.KA(ConfigValueProvider.anInt4911, SocketGameConnection.anInt5832, GlFramebufferBlitter.anInt282, ParticleSystemRenderer.anInt3861)
                     abstractCameraTransform = var_renderer.method3654()

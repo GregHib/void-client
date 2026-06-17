@@ -3,7 +3,7 @@ import Class85.Companion.method831
 /* Class336 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class336 {
+object HslPaletteState {
     var anInt4170: Int = 0
     var anInt4171: Int = 0
     @JvmField
@@ -13,7 +13,7 @@ object Class336 {
         var i = i
         var i_3_ = i_3_
         anInt4170++
-        if (i_1_ < 66) Class336.method2656(119, -53, (-62).toByte(), 54, -62)
+        if (i_1_ < 66) HslPaletteState.method2656(119, -53, (-62).toByte(), 54, -62)
         if (i_0_ >= Class369.anInt4960 && CameraNodeList.anInt1745 >= i_0_) {
             i = method831(Class38.anInt513, i, LocalPlayerState.anInt1910, -123)
             i_3_ = method831(Class38.anInt513, i_3_, LocalPlayerState.anInt1910, 123)

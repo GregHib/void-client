@@ -279,7 +279,7 @@ import SoundCacheState.method2640
 import MapElementLookup.Companion.method2645
 import CameraOrModelTransform.Companion.method2653
 import CameraOrModelTransform.Companion.method2654
-import Class336.method2657
+import HslPaletteState.method2657
 import Class337.Companion.method2658
 import Class338.Companion.method2662
 import Class339.Companion.method2664
@@ -662,8 +662,8 @@ class Client : GameAppletFrame() {
             ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2138 = ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143 + 50000
             Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2138 = 50000 - -Class348_Sub40_Sub35.aServerConnectionInfo_9443!!.anInt2143
         }
-        Class336.aShortArray4172 = ShortArray(256)
-        Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172
+        HslPaletteState.aShortArray4172 = ShortArray(256)
+        Class348_Sub42_Sub3.aShortArray9502 = HslPaletteState.aShortArray4172
         Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502
         SceneEffectMarker.aShortArray6428 = Class348_Sub26.aShortArray6889
         if (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) RuntimeException_Sub1.aBoolean4599 = false

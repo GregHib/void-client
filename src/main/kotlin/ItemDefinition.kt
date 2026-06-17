@@ -265,7 +265,7 @@ class ItemDefinition {
                     var i_29_ = 0
                     while ((i_29_ < aShortArray2777!!.size)) {
                         if (aByteArray2821 == null || aByteArray2821!!.size <= i_29_) class64.ia(aShortArray2777!![i_29_], aShortArray2771[i_29_])
-                        else class64.ia(aShortArray2777!![i_29_], (Class336.aShortArray4172!![aByteArray2821!![i_29_].toInt() and 0xff]))
+                        else class64.ia(aShortArray2777!![i_29_], (HslPaletteState.aShortArray4172!![aByteArray2821!![i_29_].toInt() and 0xff]))
                         i_29_++
                     }
                 }
@@ -334,7 +334,7 @@ class ItemDefinition {
                 var i_42_ = 0
                 while ((aShortArray2777!!.size > i_42_)) {
                     if (aByteArray2821 == null || i_42_ >= aByteArray2821!!.size) class124.method1098(aShortArray2777!![i_42_], 126.toByte(), aShortArray2771[i_42_])
-                    else class124.method1098(aShortArray2777!![i_42_], 126.toByte(), (Class336.aShortArray4172!![aByteArray2821!![i_42_].toInt() and 0xff]))
+                    else class124.method1098(aShortArray2777!![i_42_], 126.toByte(), (HslPaletteState.aShortArray4172!![aByteArray2821!![i_42_].toInt() and 0xff]))
                     i_42_++
                 }
             }

@@ -92,7 +92,7 @@ class Class339 : Runnable {
             val i_5_ = i_4_ - i
             val i_6_ = -i_2_ + i_3_
             if (i_5_ == 0) {
-                if (i_6_ != 0) Class336.method2656(i_2_, i, 124.toByte(), i_1_, i_3_)
+                if (i_6_ != 0) HslPaletteState.method2656(i_2_, i, 124.toByte(), i_1_, i_3_)
                 return
             } else if (i_6_ == 0) {
                 method196(true, i_4_, i_1_, i, i_2_)

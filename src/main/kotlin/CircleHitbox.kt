@@ -61,7 +61,7 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
         fun method319(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
             if (i_1_.toInt() != -18) method322(73)
             anInt414++
-            Class336.anInt4171 = i_2_
+            HslPaletteState.anInt4171 = i_2_
             ParticleSystemRenderer.anInt3861 = i_0_
             GlFramebufferBlitter.anInt282 = i
             CircleDrawer.anInt2688 = i_3_
