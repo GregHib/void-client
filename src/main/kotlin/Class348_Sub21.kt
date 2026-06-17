@@ -29,7 +29,7 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
         @JvmStatic
         fun method2954(i: Byte) {
             anInt6856++
-            if (za_Sub1.anInt9775 != -1 && Class292.anInt4803 != -1) {
+            if (NativeShaderProgram.anInt9775 != -1 && Class292.anInt4803 != -1) {
                 val i_0_ = ((Class117.anInt1780 * (Class331.anInt4133 + -Class195.anInt5019) shr 16) + Class195.anInt5019)
                 Class117.anInt1780 += i_0_
                 if (Class117.anInt1780 < 65535) {
@@ -44,16 +44,16 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
                 val fs = FloatArray(3)
                 val i_1_ = 2 * Class213.anInt2798
                 for (i_2_ in 0..2) {
-                    val i_3_ = 3 * (Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![i_1_]!![i_2_])
-                    val i_4_ = ((Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![1 + i_1_]!![i_2_]) * 3)
-                    val i_5_ = 3 * ((Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![2 + i_1_]!![i_2_]) + ((Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![2 + i_1_]!![i_2_]) + -(Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![i_1_ - -3]!![i_2_])))
-                    val i_6_ = (Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![i_1_]!![i_2_])
+                    val i_3_ = 3 * (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![i_2_])
+                    val i_4_ = ((Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![1 + i_1_]!![i_2_]) * 3)
+                    val i_5_ = 3 * ((Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![i_2_]) + ((Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![i_2_]) + -(Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_ - -3]!![i_2_])))
+                    val i_6_ = (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![i_2_])
                     val i_7_ = i_4_ - i_3_
                     val i_8_ = -(2 * i_4_) + i_3_ - -i_5_
-                    val i_9_ = -i_6_ + ((Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![i_1_ - -2]!![i_2_]) + i_4_) + -i_5_
+                    val i_9_ = -i_6_ + ((Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_ - -2]!![i_2_]) + i_4_) + -i_5_
                     fs[i_2_] = i_6_.toFloat() + f * (i_7_.toFloat() + f * (f * i_9_.toFloat() + i_8_.toFloat()))
                 }
-                Class286_Sub4.anInt6246 = fs[0].toInt() - 512 * za_Sub2.regionTileX
+                Class286_Sub4.anInt6246 = fs[0].toInt() - 512 * ArbVertexProgram.regionTileX
                 Class305.anInt3855 = -1 * fs[1].toInt()
                 Class59_Sub2_Sub2.anInt8685 = fs[2].toInt() + -(Class90.regionTileY * 512)
                 val fs_10_ = FloatArray(3)
@@ -75,7 +75,7 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
                 val d = sqrt((f_21_ * f_21_ + f_23_ * f_23_).toDouble())
                 Class348_Sub42_Sub19.anInt9701 = 0x3fff and (2607.5945876176133 * atan2(f_22_.toDouble(), d)).toInt()
                 Class5.anInt4638 = 0x3fff and (2607.5945876176133 * -atan2(f_21_.toDouble(), f_23_.toDouble())).toInt()
-                Class338.anInt4186 = ((Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![i_1_]!![3]) + (((-(Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![i_1_]!![3]) + (Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![2 + i_1_]!![3])) * Class117.anInt1780) shr 16))
+                Class338.anInt4186 = ((Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (((-(Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![3])) * Class117.anInt1780) shr 16))
             }
         }
 

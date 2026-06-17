@@ -97,10 +97,10 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
                         } catch (throwable: Throwable) {
                             /* empty */
                         }
-                        val var_za: za?
-                        if (!bool_2_) var_za = Class348_Sub8.aRenderer6654!!.method3702(104857600)
-                        else var_za = Class348_Sub8.aRenderer6654!!.method3702(146800640)
-                        Class348_Sub8.aRenderer6654!!.method3651(var_za)
+                        val var_shaderProgram: ShaderProgram?
+                        if (!bool_2_) var_shaderProgram = Class348_Sub8.aRenderer6654!!.method3702(104857600)
+                        else var_shaderProgram = Class348_Sub8.aRenderer6654!!.method3702(146800640)
+                        Class348_Sub8.aRenderer6654!!.method3651(var_shaderProgram)
                     }
                 } catch (throwable: Throwable) {
                     val i_3_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)

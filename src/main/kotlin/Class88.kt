@@ -8,7 +8,7 @@ import Class348_Sub40_Sub31.Companion.method3131
 import Class348_Sub40_Sub7.Companion.method3064
 import OutputStream_Sub1.Companion.method132
 import OpenGlTerrainTile.Companion.method4002
-import za_Sub1.Companion.method3439
+import NativeShaderProgram.Companion.method3439
 import java.io.IOException
 import java.net.Socket
 import java.net.URL

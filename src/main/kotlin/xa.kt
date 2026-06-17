@@ -1,5 +1,6 @@
 /* xa - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
+* NativeTextureHandle
 */
 class xa(i: Int, i_1_: Int) : Interface13, Interface19 {
     @JvmField

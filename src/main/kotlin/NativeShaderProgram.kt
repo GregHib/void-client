@@ -1,6 +1,6 @@
 import jaclib.memory.heap.NativeHeap
 
-class za_Sub1(i: Int) : za() {
+class NativeShaderProgram(i: Int) : ShaderProgram() {
     @JvmField
     var aNativeHeap9770: NativeHeap
 

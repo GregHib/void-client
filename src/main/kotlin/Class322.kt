@@ -5,7 +5,7 @@ import Class258_Sub4.Companion.method1974
 import Class348_Sub42_Sub9_Sub1.Companion.method3208
 import Class348_Sub8.Companion.method2774
 import Class71.method729
-import za_Sub2.Companion.method3443
+import ArbVertexProgram.Companion.method3443
 
 /* Class322 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

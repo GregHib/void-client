@@ -1,7 +1,7 @@
 /* za - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class za : Class348() {
+abstract class ShaderProgram : Class348() {
     companion object {
         @JvmField
         var aClass138_7274: Class138? = Class138(10, 2, 2, 0)

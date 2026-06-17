@@ -9,7 +9,7 @@ class Class28 : Interface15 {
                 val class117 = Class348_Sub7.aClass33_6653!!.method337(true, `is`!![0])
                 return class117.method1074(l.toInt(), 91)
             }
-            if (Class299_Sub1.aClass138_6321 == class138 || za.aClass138_7274 == class138) {
+            if (Class299_Sub1.aClass138_6321 == class138 || ShaderProgram.aClass138_7274 == class138) {
                 val class213 = Exception_Sub1.aClass255_112!!.method1940(i + -99, l.toInt())
                 return class213.aString2795
             }

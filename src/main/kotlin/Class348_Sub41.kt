@@ -98,13 +98,13 @@ class Class348_Sub41 : Class348() {
                 if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) Class167.anInt2204 = 0
                 Class348_Sub49.method3379(2, i_17_)
                 Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3495!!.method2063(Class348_Sub33.Companion.anInt6967, 544), 2, Class348_Sub8.aRenderer6654)
-                val i_18_ = za_Sub2.regionTileX
+                val i_18_ = ArbVertexProgram.regionTileX
                 val i_19_ = Class90.regionTileY
-                za_Sub2.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + Renderer.anInt4581) * 8
+                ArbVertexProgram.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + Renderer.anInt4581) * 8
                 Class90.regionTileY = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.anInt9109 shr 4))
                 Class348_Sub26.Companion.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, Class327.anInt4095 * 8)
                 OpenGlRenderNode.aClass252_10488 = null
-                val i_20_ = za_Sub2.regionTileX - i_18_
+                val i_20_ = ArbVertexProgram.regionTileX - i_18_
                 val i_21_ = -i_19_ + Class90.regionTileY
                 if (i_17_ == 11) {
                     var i_22_ = 0
@@ -191,7 +191,7 @@ class Class348_Sub41 : Class348() {
                         var class348_sub37 = (Class130.aClass356_1895!!.method3484(0) as? Class348_Sub37?)
                         while (class348_sub37 != null) {
                             val i_33_ = (0x3fffL and class348_sub37.aLong4291).toInt()
-                            val i_34_ = -za_Sub2.regionTileX + i_33_
+                            val i_34_ = -ArbVertexProgram.regionTileX + i_33_
                             val i_35_ = (0x3fffL and (class348_sub37.aLong4291 shr 14)).toInt()
                             val i_36_ = i_35_ + -Class90.regionTileY
                             if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.anInt7319) || i_36_ >= Class348_Sub40_Sub3.anInt9109) class348_sub37.method2715(37.toByte())

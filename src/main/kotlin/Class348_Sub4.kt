@@ -192,7 +192,7 @@ class Class348_Sub4 : Class348 {
         fun method2749(i: Int): Int {
             if (i != -1) method2749(20)
             anInt6593++
-            return za_Sub1.anInt9774
+            return NativeShaderProgram.anInt9774
         }
     }
 }

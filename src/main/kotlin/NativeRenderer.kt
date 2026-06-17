@@ -221,13 +221,13 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3651(var_za: za?) {
+    override fun method3651(var_shaderProgram: ShaderProgram?) {
         try {
             anInt8005++
-            this.aNativeHeap7891 = (var_za as za_Sub2).aNativeHeap9782
+            this.aNativeHeap7891 = (var_shaderProgram as ArbVertexProgram).aNativeHeap9782
             this.aNativeHeapBuffer7974 = this.aNativeHeap7891!!.a(32768, false)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "wga.PF(" + (if (var_za != null) "{...}" else "null") + ')')
+            throw Class348_Sub17.method2929(runtimeexception, "wga.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
         }
     }
 
@@ -462,7 +462,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         if (!aBoolean8176) {
             var class348 = aClass262_7927!!.method1995(4)
             while (class348 != null) {
-                (class348 as za_Sub2).method3445(-9503)
+                (class348 as ArbVertexProgram).method3445(-9503)
                 class348 = aClass262_7927!!.method1990(102.toByte())
             }
             val enumeration = aHashtable8014!!.keys()
@@ -2169,7 +2169,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
         this.aClass348_Sub1Array8132 = arrayOfNulls<Class348_Sub1>(-2 + this.anInt8138)
         this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, Class68.aClass68_1183, Class108.aClass304_1662)
-        method3651(za_Sub2(262144))
+        method3651(ArbVertexProgram(262144))
         this.aClass130_8204 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078)))))
         this.aClass130_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076)))))
         this.aClass130_8208 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!), Class58(Class325.aClass325_4076!!), Class58(Class325.aClass325_4078!!), Class58(Class325.aClass325_4075!!))))
@@ -2323,9 +2323,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         return false
     }
 
-    override fun method3702(i: Int): za {
+    override fun method3702(i: Int): ShaderProgram {
         anInt8049++
-        val var_za_Sub2 = za_Sub2(i)
+        val var_za_Sub2 = ArbVertexProgram(i)
         aClass262_7927!!.method1999(var_za_Sub2, -20180)
         return var_za_Sub2
     }

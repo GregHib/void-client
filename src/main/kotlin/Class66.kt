@@ -180,18 +180,18 @@ object Class66 {
     private fun method704(i: Int, bool: Boolean) {
         if (i < 5100) {
             if (i == 5000) {
-                anIntArray1149!![anInt1173++] = za.anInt7276
+                anIntArray1149!![anInt1173++] = ShaderProgram.anInt7276
                 return
             }
             if (i == 5001) {
                 anInt1173 -= 3
-                za.anInt7276 = anIntArray1149!![anInt1173]
+                ShaderProgram.anInt7276 = anIntArray1149!![anInt1173]
                 Class57.aClass227_1055 = Class38.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
                 if (Class57.aClass227_1055 == null) Class57.aClass227_1055 = Class100.aClass227_1591
                 Class290.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
                 val class348_sub47 = method2148(Class348_Sub14.aClass351_6766, (Class348_Sub23_Sub2.aClass77_9029), -111)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, za.anInt7276)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, ShaderProgram.anInt7276)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, Class57.aClass227_1055!!.anInt2970)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, Class290.anInt3713)
                 Class348_Sub42_Sub14.method3243(-77, class348_sub47)
@@ -1149,7 +1149,7 @@ object Class66 {
                 val i_125_ = anIntArray1149!![anInt1173 + 1]
                 val i_126_ = anIntArray1149!![anInt1173 + 2]
                 val i_127_ = anIntArray1149!![anInt1173 + 3]
-                method1844(i_126_, ((i_124_ shr 14 and 0x3fff) - za_Sub2.regionTileX), false, i_125_ shl 2, false, i_127_, ((i_124_ and 0x3fff) - Class90.regionTileY))
+                method1844(i_126_, ((i_124_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), false, i_125_ shl 2, false, i_127_, ((i_124_ and 0x3fff) - Class90.regionTileY))
                 return
             }
             if (i == 5501) {
@@ -1158,16 +1158,16 @@ object Class66 {
                 val i_129_ = anIntArray1149!![anInt1173 + 1]
                 val i_130_ = anIntArray1149!![anInt1173 + 2]
                 val i_131_ = anIntArray1149!![anInt1173 + 3]
-                Class348_Sub42_Sub12.method3231(((i_128_ and 0x3fff) - Class90.regionTileY), ((i_128_ shr 14 and 0x3fff) - za_Sub2.regionTileX), i_129_ shl 2, i_131_, i_130_, -128)
+                Class348_Sub42_Sub12.method3231(((i_128_ and 0x3fff) - Class90.regionTileY), ((i_128_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), i_129_ shl 2, i_131_, i_130_, -128)
                 return
             }
             if (i == 5502) {
                 anInt1173 -= 6
                 val i_132_ = anIntArray1149!![anInt1173]
                 if (i_132_ >= 2) throw RuntimeException()
-                za_Sub1.anInt9775 = i_132_
+                NativeShaderProgram.anInt9775 = i_132_
                 val i_133_ = anIntArray1149!![anInt1173 + 1]
-                if (i_133_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775])!!.size shr 1) throw RuntimeException()
+                if (i_133_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775])!!.size shr 1) throw RuntimeException()
                 Class213.anInt2798 = i_133_
                 Class117.anInt1780 = 0
                 Class195.anInt5019 = anIntArray1149!![anInt1173 + 2]
@@ -1220,7 +1220,7 @@ object Class66 {
                 val i_136_ = anIntArray1149!![--anInt1173]
                 var i_137_ = i_136_ shr 14 and 0x3fff
                 var i_138_ = i_136_ and 0x3fff
-                i_137_ -= za_Sub2.regionTileX
+                i_137_ -= ArbVertexProgram.regionTileX
                 if (i_137_ < 0) i_137_ = 0
                 else if (i_137_ >= Class367_Sub4.anInt7319) i_137_ = Class367_Sub4.anInt7319
                 i_138_ -= Class90.regionTileY
@@ -1250,7 +1250,7 @@ object Class66 {
                 if (i_139_ == -1) {
                     var i_140_ = i_139_ shr 14 and 0x3fff
                     var i_141_ = i_139_ and 0x3fff
-                    i_140_ -= za_Sub2.regionTileX
+                    i_140_ -= ArbVertexProgram.regionTileX
                     if (i_140_ < 0) i_140_ = 0
                     else if (i_140_ >= Class367_Sub4.anInt7319) i_140_ = Class367_Sub4.anInt7319
                     i_141_ -= Class90.regionTileY
@@ -3925,7 +3925,7 @@ object Class66 {
                 }
                 if (i == 3308) {
                     val i_327_ = (Class132.aPlayer_1907!!.plane).toInt()
-                    val i_328_ = (((Class132.aPlayer_1907!!.x) shr 9) + za_Sub2.regionTileX)
+                    val i_328_ = (((Class132.aPlayer_1907!!.x) shr 9) + ArbVertexProgram.regionTileX)
                     val i_329_ = (((Class132.aPlayer_1907!!.y) shr 9) + Class90.regionTileY)
                     anIntArray1149!![anInt1173++] = (i_327_ shl 28) + (i_328_ shl 14) + i_329_
                     return

@@ -158,7 +158,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
                                 val i_17_: Int
                                 if (i_15_ <= i_13_) i_17_ = -i_15_ + i_13_
                                 else i_17_ = i_15_ + -i_13_
-                                if (i_16_ == 0 && i_17_ == 0 || -Class367_Sub4.anInt7319 >= i_16_ || (Class367_Sub4.anInt7319 <= i_16_) || i_17_ <= -Class348_Sub40_Sub3.anInt9109 || Class348_Sub40_Sub3.anInt9109 <= i_17_) method1242(("RC: " + i_12_ + "," + i_13_ + " " + i_14_ + "," + i_15_ + " " + za_Sub2.regionTileX + "," + Class90.regionTileY), null, 15004)
+                                if (i_16_ == 0 && i_17_ == 0 || -Class367_Sub4.anInt7319 >= i_16_ || (Class367_Sub4.anInt7319 <= i_16_) || i_17_ <= -Class348_Sub40_Sub3.anInt9109 || Class348_Sub40_Sub3.anInt9109 <= i_17_) method1242(("RC: " + i_12_ + "," + i_13_ + " " + i_14_ + "," + i_15_ + " " + ArbVertexProgram.regionTileX + "," + Class90.regionTileY), null, 15004)
                                 else if (i_16_ <= i_17_) {
                                     val i_18_ = i_16_ * 65536 / i_17_
                                     var i_19_ = 32768

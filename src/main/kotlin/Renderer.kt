@@ -95,7 +95,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3650(i: Int)
 
-    abstract fun method3651(var_za: za?)
+    abstract fun method3651(var_shaderProgram: ShaderProgram?)
 
     abstract fun P(i: Int, i_55_: Int, i_56_: Int, i_57_: Int, i_58_: Int)
 
@@ -270,7 +270,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3701(canvas: Canvas?)
 
-    abstract fun method3702(i: Int): za?
+    abstract fun method3702(i: Int): ShaderProgram?
 
     abstract fun method3703(i: Int, i_184_: Int, i_185_: Int, i_186_: Int, i_187_: Int, i_188_: Int, var_sprite: Sprite?, i_189_: Int, i_190_: Int, i_191_: Int, i_192_: Int, i_193_: Int)
 

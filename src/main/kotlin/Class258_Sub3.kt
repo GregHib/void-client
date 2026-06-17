@@ -242,7 +242,7 @@ open class Class258_Sub3 : Class258 {
 
         @JvmStatic
         fun method1968() {
-            za.method3437(1, Class189.anInt2524)
+            ShaderProgram.method3437(1, Class189.anInt2524)
         }
 
         @JvmStatic

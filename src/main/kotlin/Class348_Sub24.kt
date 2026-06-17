@@ -408,7 +408,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 if (i_30_ >= 0) {
                                     if (i_30_ > 3) i_30_ = 3
                                 } else i_30_ = 0
-                                Class361.method3502((Class132.aPlayer_1907!!.anIntArray10317!![0]) + Class90.regionTileY, i xor 0x2caa, i_30_, (Class132.aPlayer_1907!!.anIntArray10320!![0]) + za_Sub2.regionTileX)
+                                Class361.method3502((Class132.aPlayer_1907!!.anIntArray10317!![0]) + Class90.regionTileY, i xor 0x2caa, i_30_, (Class132.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX)
                             }
                             method1987(-120)
                             var i_31_ = 0

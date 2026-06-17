@@ -402,7 +402,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {
                             method94(
-                                ("Pos: " + (Class132.aPlayer_1907!!.plane) + "," + (((Class286_Sub4.anInt6246 shr 9) - -za_Sub2.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((Class286_Sub4.anInt6246 shr 9) - -za_Sub2.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((Class275.method2064(
+                                ("Pos: " + (Class132.aPlayer_1907!!.plane) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((Class275.method2064(
                                     Class286_Sub4.anInt6246,
                                     (Class132.aPlayer_1907!!.plane).toInt(),
                                     11219,
@@ -410,7 +410,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                 )) - Class305.anInt3855)), 126
                             )
                             method94(
-                                ("Look: " + (Class132.aPlayer_1907!!.plane) + "," + (Class352.anInt4336 - -za_Sub2.regionTileX shr 6) + "," + (Class90.regionTileY + Class281.anInt3647 shr 6) + "," + (0x3f and Class352.anInt4336 - -za_Sub2.regionTileX) + "," + (0x3f and Class281.anInt3647 - -Class90.regionTileY) + " Height: " + ((Class275.method2064(
+                                ("Look: " + (Class132.aPlayer_1907!!.plane) + "," + (Class352.anInt4336 - -ArbVertexProgram.regionTileX shr 6) + "," + (Class90.regionTileY + Class281.anInt3647 shr 6) + "," + (0x3f and Class352.anInt4336 - -ArbVertexProgram.regionTileX) + "," + (0x3f and Class281.anInt3647 - -Class90.regionTileY) + " Height: " + ((Class275.method2064(
                                     Class352.anInt4336,
                                     (Class132.aPlayer_1907!!.plane).toInt(),
                                     11219,

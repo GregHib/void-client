@@ -169,7 +169,7 @@ class Class107 {
                         var class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1995(i_2_ xor 0x59b4) as? Class348_Sub35
                         while (class348_sub35 != null) {
                             val i_9_ = class348_sub35.anInt6976
-                            val i_10_ = (-za_Sub2.regionTileX + ((0xfffe5b0 and (OpenGlRenderNode.aClass252_10488!!.anIntArray3238!![i_9_])) shr 14))
+                            val i_10_ = (-ArbVertexProgram.regionTileX + ((0xfffe5b0 and (OpenGlRenderNode.aClass252_10488!!.anIntArray3238!![i_9_])) shr 14))
                             val i_11_ = (-Class90.regionTileY + (0x3fff and (OpenGlRenderNode.aClass252_10488!!.anIntArray3238!![i_9_])))
                             val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
                             val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
@@ -195,7 +195,7 @@ class Class107 {
                         while (class348_sub37 != null) {
                             val i_17_ = (0x3L and ((class348_sub37.aLong4291) shr 28)).toInt()
                             if (Class334.anInt4155 == i_17_) {
-                                val i_18_ = (-za_Sub2.regionTileX + ((class348_sub37.aLong4291) and 0x3fffL).toInt())
+                                val i_18_ = (-ArbVertexProgram.regionTileX + ((class348_sub37.aLong4291) and 0x3fffL).toInt())
                                 val i_19_ = (-Class90.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
                                 val i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4)
                                 val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)

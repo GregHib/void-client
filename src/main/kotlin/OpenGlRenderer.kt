@@ -1382,7 +1382,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     override fun method3652() {
         var class348 = aClass262_7732.method1995(4)
         while (class348 != null) {
-            (class348 as za_Sub1).method3440(-82)
+            (class348 as NativeShaderProgram).method3440(-82)
             class348 = aClass262_7732.method1990(55.toByte())
         }
         anInt7563++
@@ -1601,9 +1601,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         this.aFloat7830 = (anInt7787 + -this.anInt7810).toFloat()
     }
 
-    override fun method3702(i: Int): za {
+    override fun method3702(i: Int): ShaderProgram {
         anInt7538++
-        val var_za_Sub1 = za_Sub1(i)
+        val var_za_Sub1 = NativeShaderProgram(i)
         aClass262_7732.method1999(var_za_Sub1, -20180)
         return var_za_Sub1
     }
@@ -1796,10 +1796,10 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    override fun method3651(var_za: za?) {
+    override fun method3651(var_shaderProgram: ShaderProgram?) {
         do {
             try {
-                this.aNativeHeap7730 = (var_za as za_Sub1).aNativeHeap9770
+                this.aNativeHeap7730 = (var_shaderProgram as NativeShaderProgram).aNativeHeap9770
                 anInt7573++
                 if (anInterface2_7797 != null) break
                 val class348_sub49_sub1 = Class348_Sub49_Sub1(80)
@@ -1851,7 +1851,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 this.aClass123_7833 = Class123(anInterface2_7797, 5126, 2, 12)
                 aClass233_7711.method1654(643267468, this)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "qo.PF(" + (if (var_za != null) "{...}" else "null") + ')')
+                throw Class348_Sub17.method2929(runtimeexception, "qo.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -3567,7 +3567,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == Class239_Sub15.anInt6006) || ((Class132.aPlayer_1907!!.plane) == class318_sub1_sub3_sub3.plane))) {
                     Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, 100.toByte())
                     if (Class239_Sub21.anIntArray6062!![0] >= 0) {
-                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || za.anInt7276 == 0 || za.anInt7276 == 3 || (za.anInt7276 == 1 && (Class348_Sub11.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < Class309.anInt4814) {
+                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (Class348_Sub11.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < Class309.anInt4814) {
                             Class309.anIntArray4819!![Class88.anInt1497] = ((Class369.aClass143_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
                             Class309.anIntArray4822!![Class88.anInt1497] = Class239_Sub21.anIntArray6062!![0]
                             Class309.anIntArray4813!![Class88.anInt1497] = Class239_Sub21.anIntArray6062!![1]

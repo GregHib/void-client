@@ -75,7 +75,7 @@ class Class348_Sub14 : Class348 {
             }
             class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i + Class90.regionTileY, 3.toByte())
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(78.toByte(), if (!Class182.aClass346_2449!!.method2696(82, -124)) 0 else 1)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-124, za_Sub2.regionTileX + i_2_)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-124, ArbVertexProgram.regionTileX + i_2_)
             Class248.anInt3203 = i_2_
             if (i_3_ >= -88) aClass351_6764 = null
             Class97.anInt1548 = i
@@ -257,7 +257,7 @@ class Class348_Sub14 : Class348 {
                         for (i_51_ in 0..<OpenGlRenderNode.aClass252_10488!!.anInt3241) {
                             val i_52_ = (OpenGlRenderNode.aClass252_10488!!.anIntArray3238!![i_51_])
                             if ((Class132.aPlayer_1907!!.plane).toInt() == i_52_ shr 28) {
-                                val i_53_ = ((i_52_ shr 14 and 0x3fff) - za_Sub2.regionTileX)
+                                val i_53_ = ((i_52_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX)
                                 val i_54_ = (i_52_ and 0x3fff) + -Class90.regionTileY
                                 if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319 && i_54_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_54_)) Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1999(Class348_Sub35(i_51_), -20180)
                                 else {

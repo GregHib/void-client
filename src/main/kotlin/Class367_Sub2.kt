@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
-import za_Sub2.Companion.method3442
+import ArbVertexProgram.Companion.method3442
 
 class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, class269: Class269?) : Class367(class377) {
     private val aClass193_7293: Class193?

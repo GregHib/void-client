@@ -613,7 +613,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class119_Sub1.anInt4701 = 0
             Class64_Sub3.anInt5560 = 0
             Class87.anInt1489 = 0
-            za_Sub1.anInt9771 = 0
+            NativeShaderProgram.anInt9771 = 0
             Class348_Sub42_Sub8_Sub2.anInt10433 = 0
             RenderNode.anInt9717 = 0
             Class348_Sub40_Sub26.anInt9355 = 0
@@ -1828,7 +1828,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class117.anInt1768 = 0
             Class348_Sub42_Sub10.anInt9575 = 0
             Class318_Sub1_Sub5_Sub1.anInt10126 = 0
-            za_Sub2.anInt9779 = 0
+            ArbVertexProgram.anInt9779 = 0
             Class377.anInt9835 = 0
             Class160.anInt2136 = 0
             Class64_Sub2.anInt5431 = 0
@@ -1930,7 +1930,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class374.anInt4536 = 0
             Class239_Sub3.anInt5863 = 0
             Class6.anInt152 = 0
-            za_Sub2.anInt9777 = 0
+            ArbVertexProgram.anInt9777 = 0
             Class239_Sub28.anInt6137 = 0
             Class318_Sub1_Sub3_Sub1.anInt10029 = 0
             Class170.anInt5064 = 0
@@ -3335,7 +3335,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub18.anInt6034 = 0
             Class60.anInt1095 = 0
             Class59_Sub2.anInt5307 = 0
-            za_Sub2.anInt9778 = 0
+            ArbVertexProgram.anInt9778 = 0
             Class357.anInt4392 = 0
             Class14.anInt5102 = 0
             Class101_Sub3.anInt5765 = 0
@@ -3525,7 +3525,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class66.anInt1167 = 0
             Class299_Sub1_Sub2.anInt8700 = 0
             Class150.anInt2056 = 0
-            za_Sub1.anInt9772 = 0
+            NativeShaderProgram.anInt9772 = 0
             Class92.anInt1527 = 0
             Class239_Sub20.anInt6049 = 0
             Class175.anInt2317 = 0

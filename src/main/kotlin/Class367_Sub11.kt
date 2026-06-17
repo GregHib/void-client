@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
-import za_Sub2.Companion.method3442
+import ArbVertexProgram.Companion.method3442
 import java.awt.Container
 
 class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?) : Class367(class377) {

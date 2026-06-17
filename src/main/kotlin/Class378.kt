@@ -628,7 +628,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
     override fun method3871(class113: Class113?, i: Int) {
         var i_68_ = i
         if (Class31.aClass113_430 == class113) i_68_ = 65536
-        else if (za_Sub1.aClass113_9773 == class113) i_68_ = 131072
+        else if (NativeShaderProgram.aClass113_9773 == class113) i_68_ = 131072
         else if (class113 == Class261.aClass113_3314) i_68_ = 196608
         this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 11, this.anInt8175 or i_68_)
     }

@@ -532,10 +532,10 @@ import OpenGlRenderNode.Companion.method3295
 import TerrainTile.Companion.method3988
 import OpenGlTerrainTile.Companion.method4000
 import NativeTerrainTile.Companion.method4006
-import za.Companion.method3438
-import za_Sub1.Companion.method3441
-import za_Sub2.Companion.method3443
-import za_Sub2.Companion.method3444
+import ShaderProgram.Companion.method3438
+import NativeShaderProgram.Companion.method3441
+import ArbVertexProgram.Companion.method3443
+import ArbVertexProgram.Companion.method3444
 import java.awt.Canvas
 import java.awt.Component
 import java.awt.Container
@@ -1777,9 +1777,9 @@ class Client : Applet_Sub1() {
         anInt5175++
         var string: String? = null
         try {
-            string = ("[1)" + za_Sub2.regionTileX + "," + Class90.regionTileY + "," + Class367_Sub4.anInt7319 + "," + Class348_Sub40_Sub3.anInt9109 + "|")
+            string = ("[1)" + ArbVertexProgram.regionTileX + "," + Class90.regionTileY + "," + Class367_Sub4.anInt7319 + "," + Class348_Sub40_Sub3.anInt9109 + "|")
             if (i < 40) aClass262_5185 = null
-            if (Class132.aPlayer_1907 != null) string += ("2)" + Class355.anInt4372 + "," + (za_Sub2.regionTileX + (Class132.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (Class132.aPlayer_1907!!.anIntArray10317!![0])) + "|")
+            if (Class132.aPlayer_1907 != null) string += ("2)" + Class355.anInt4372 + "," + (ArbVertexProgram.regionTileX + (Class132.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (Class132.aPlayer_1907!!.anIntArray10317!![0])) + "|")
             string += ("3)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + Class321.anInt4017 + "," + Class348_Sub42_Sub8_Sub2.anInt10432 + "|")
             string += "7)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
             string += "8)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"

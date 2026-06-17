@@ -139,7 +139,7 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
             anInt3868++
             if (i < -46) {
                 for (i_22_ in 0..99) Class318_Sub2.aClass147Array6400!![i_22_] = null
-                za_Sub1.anInt9774 = 0
+                NativeShaderProgram.anInt9774 = 0
             }
         }
     }

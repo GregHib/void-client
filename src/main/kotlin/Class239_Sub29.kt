@@ -104,7 +104,7 @@ class Class239_Sub29 : Class239 {
             Class253.anInt3253 = Class5.anInt4638
             Class367_Sub11.anInt7403 = 0
             Class348_Sub40_Sub21.anInt9282 = 5
-            za_Sub1.anInt9775 = -1
+            NativeShaderProgram.anInt9775 = -1
             Class292.anInt4803 = -1
         }
     }

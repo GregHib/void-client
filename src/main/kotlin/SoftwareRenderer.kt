@@ -363,7 +363,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
     }
 
-    override fun method3651(var_za: za?) {
+    override fun method3651(var_shaderProgram: ShaderProgram?) {
         /* empty */
     }
 
@@ -2161,7 +2161,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         `is`!![3] = this.anInt7503
     }
 
-    override fun method3702(i: Int): za? {
+    override fun method3702(i: Int): ShaderProgram? {
         return null
     }
 

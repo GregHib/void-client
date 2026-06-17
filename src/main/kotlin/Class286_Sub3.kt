@@ -241,7 +241,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                     }
                     if (!bool) {
                         var strings: Array<String?>? = class79.aStringArray1349
-                        if (za_Sub2.aBoolean9783) strings = method1847(strings, 0)
+                        if (ArbVertexProgram.aBoolean9783) strings = method1847(strings, 0)
                         if (strings != null) {
                             for (i in 4 downTo 0) {
                                 if (strings[i] != null && (class79.aByte1384.toInt() == 0 || !(strings[i].equals(Class274.aClass274_3506!!.method2063(Class348_Sub33.anInt6967, 544), ignoreCase = true)))) {
@@ -278,7 +278,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                         }
                     }
                     Class205.anInt2690++
-                    val npcX = (npc.x shr 9) + za_Sub2.regionTileX - npc.aClass79_10505!!.anInt1399 + 1
+                    val npcX = (npc.x shr 9) + ArbVertexProgram.regionTileX - npc.aClass79_10505!!.anInt1399 + 1
                     val npcY = (npc.y shr 9) + Class90.regionTileY - npc.aClass79_10505!!.anInt1399 + 1
                     Class50_Sub3.method466(bool, "<col=ffff00>" + string + Loader.getDebug(class79.anInt1344, npcX, npcY, npc.plane.toInt()), 0, (-105).toByte(), bool_14_, 0, -1, true, 1008, npc.anInt10290.toLong(), Class274.aClass274_3505!!.method2063(Class348_Sub33.anInt6967, 544), npc.anInt10290.toLong(), Class286_Sub8.Companion.anInt6299)
                 }

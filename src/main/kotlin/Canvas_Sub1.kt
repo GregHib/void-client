@@ -201,7 +201,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                 for (i_20_ in Class347.aByteArrayArray4281!!.indices) {
                     var `is` = Class14_Sub4.aByteArrayArray8642!![i_20_]
                     if (`is` != null) {
-                        var i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - za_Sub2.regionTileX
+                        var i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - ArbVertexProgram.regionTileX
                         var i_22_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] and 0xff) - Class90.regionTileY
                         if (Class312.anInt3931 != 0) {
                             i_22_ = 10
@@ -211,7 +211,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                     }
                     `is` = Class348_Sub23_Sub1.aByteArrayArray8996!![i_20_]
                     if (`is` != null) {
-                        var i_23_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - za_Sub2.regionTileX
+                        var i_23_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - ArbVertexProgram.regionTileX
                         var i_24_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] and 0xff) + -Class90.regionTileY
                         if (Class312.anInt3931 != 0) {
                             i_24_ = 10

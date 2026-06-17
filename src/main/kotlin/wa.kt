@@ -1,5 +1,6 @@
 /* wa - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
+* NativeBillboardRenderer
 */
 class wa(var_oa: oa, var_j: j, var_xa: xa) : Interface4 {
     @JvmField

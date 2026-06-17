@@ -171,7 +171,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_71_ = Class73.anInt4786 + (i_70_ and 0x7)
                     val i_72_ = Class90.regionTileY + i_71_
                     val i_73_ = Class278.anInt3581 + (i_70_ shr 4 and 0x7)
-                    val i_74_ = za_Sub2.regionTileX + i_73_
+                    val i_74_ = ArbVertexProgram.regionTileX + i_73_
                     val class348_sub37 = ((Class130.aClass356_1895!!.method3480((i_72_ shl 14 or (Class348_Sub40_Sub12.anInt9200 shl 28) or i_74_).toLong(), -6008)) as Class348_Sub37?)
                     if (class348_sub37 != null) {
                         var class348_sub34 = (class348_sub37.aClass262_6998.method1995(4) as Class348_Sub34?)
@@ -192,7 +192,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_78_ = Class73.anInt4786 - -(0x7 and i_77_)
                     val i_79_ = i_78_ + Class90.regionTileY
                     val i_80_ = Class278.anInt3581 - -((i_77_ and 0x79) shr 4)
-                    val i_81_ = za_Sub2.regionTileX - -i_80_
+                    val i_81_ = ArbVertexProgram.regionTileX - -i_80_
                     val bool = (i_80_ >= 0 && i_78_ >= 0 && Class367_Sub4.anInt7319 > i_80_ && Class348_Sub40_Sub3.anInt9109 > i_78_)
                     if (bool || Class282.method2112(124, Class312.anInt3931)) {
                         Class352.method3459(Class348_Sub34(i_76_, i_75_), Class348_Sub40_Sub12.anInt9200, i_79_, i_81_, -2)
@@ -214,7 +214,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_90_ = Class73.anInt4786 + (0x7 and i_89_)
                         val i_91_ = i_90_ + Class90.regionTileY
                         val i_92_ = (Class278.anInt3581 - -((i_89_ and 0x7a) shr 4))
-                        val i_93_ = za_Sub2.regionTileX + i_92_
+                        val i_93_ = ArbVertexProgram.regionTileX + i_92_
                         val i_94_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         val i_95_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
                         val i_96_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -240,7 +240,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_99_ = (0x7 and i_98_) + Class73.anInt4786
                         val i_100_ = Class90.regionTileY + i_99_
                         val i_101_ = Class278.anInt3581 - -((i_98_ and 0x7b) shr 4)
-                        val i_102_ = za_Sub2.regionTileX + i_101_
+                        val i_102_ = ArbVertexProgram.regionTileX + i_101_
                         val i_103_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-25)
                         val i_104_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(123)
                         if (i_104_ != Class348_Sub42_Sub11.anInt9591) {

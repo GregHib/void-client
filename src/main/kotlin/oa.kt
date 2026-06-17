@@ -35,9 +35,9 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         return null
     }
 
-    override fun method3651(var_za: za?) {
-        aYa5121 = var_za as ya?
-        va(var_za)
+    override fun method3651(var_shaderProgram: ShaderProgram?) {
+        aYa5121 = var_shaderProgram as ya?
+        va(var_shaderProgram)
     }
 
     external override fun w(bool: Boolean)
@@ -187,7 +187,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun DA(i: Int, i_89_: Int, i_90_: Int, i_91_: Int)
 
-    override fun method3702(i: Int): za {
+    override fun method3702(i: Int): ShaderProgram {
         val var_ya = ya(this, i)
         aClass262_5123.method1999(var_ya, -20180)
         return var_ya
@@ -362,7 +362,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun r(i: Int, i_147_: Int, i_148_: Int, i_149_: Int, i_150_: Int, i_151_: Int, i_152_: Int): Int
 
-    private external fun va(var_za: za?)
+    private external fun va(var_shaderProgram: ShaderProgram?)
 
     override fun method3643(canvas: Canvas?, i: Int, i_153_: Int) {
         var var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
