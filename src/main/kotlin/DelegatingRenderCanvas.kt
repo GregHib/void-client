@@ -10,7 +10,10 @@ import java.awt.Canvas
 import java.awt.Component
 import java.awt.Graphics
 
-class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Canvas() {
+/*
+ * Canvas_Sub1
+ */
+class DelegatingRenderCanvas internal constructor(private val aComponent64: Component) : Canvas() {
     override fun update(graphics: Graphics?) {
         anInt61++
         aComponent64.update(graphics)

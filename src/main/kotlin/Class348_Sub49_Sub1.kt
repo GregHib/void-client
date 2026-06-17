@@ -96,7 +96,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
             }
             if (Class318_Sub1_Sub3_Sub3.aBoolean10221) Class9.aRenderer171!!.method3642(0, null)
             if ((i_2_ and 0x2) == 0) {
-                for (i_7_ in Canvas_Sub1.anInt67..<Class189.anInt2524) {
+                for (i_7_ in DelegatingRenderCanvas.anInt67..<Class189.anInt2524) {
                     if (i_7_ >= i && `is` != null) {
                         var i_8_ = Class99.aBooleanArrayArray1572!!.size
                         if ((Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size) > Class318_Sub7.anInt6451) i_8_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size - Class318_Sub7.anInt6451)

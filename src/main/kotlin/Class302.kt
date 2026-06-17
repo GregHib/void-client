@@ -1,4 +1,4 @@
-import Canvas_Sub1.Companion.method119
+import DelegatingRenderCanvas.Companion.method119
 import Class103.method950
 import Class112.Companion.method1053
 import Class175.Companion.method1343

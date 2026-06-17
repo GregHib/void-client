@@ -145,7 +145,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
         }
 
         fun method824(i: Int) {
-            Canvas_Sub1.anInt67 = i
+            DelegatingRenderCanvas.anInt67 = i
             for (i_22_ in 0..<Class318_Sub7.anInt6451) {
                 for (i_23_ in 0..<Class348_Sub41.anInt7054) {
                     if (Class147.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] == null) Class147.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] = Class357(i)

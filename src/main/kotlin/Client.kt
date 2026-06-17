@@ -1,5 +1,5 @@
-import Canvas_Sub1.Companion.method120
-import Canvas_Sub1.Companion.method123
+import DelegatingRenderCanvas.Companion.method120
+import DelegatingRenderCanvas.Companion.method123
 import Class10.Companion.method218
 import Class100.Companion.method886
 import Class100.Companion.method887

@@ -351,7 +351,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         i_34_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                     }
                     val i_35_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-78)
-                    Canvas_Sub1.method121(i, -364570972, bool_31_, i_33_, i_34_, i_35_ - 1)
+                    DelegatingRenderCanvas.method121(i, -364570972, bool_31_, i_33_, i_34_, i_35_ - 1)
                 }
                 Class199.anIntArray2633!![Class139.method1166(31, Class106.anInt1631++)] = i
                 Class348_Sub3.aClass114_6584 = null
@@ -1129,7 +1129,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (i_137_ >= 1 && i_137_ <= 8) {
                     if (string.equals("null", ignoreCase = true)) string = null
                     Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_137_ + -1] = string
-                    Canvas_Sub1.anIntArray60!![i_137_ + -1] = i
+                    DelegatingRenderCanvas.anIntArray60!![i_137_ + -1] = i
                     Class71.aBooleanArray1214!![i_137_ - 1] = i_138_ == 0
                 }
                 Class348_Sub3.aClass114_6584 = null
@@ -1672,7 +1672,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         i_224_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         if (i_224_ == 255) i_224_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                     }
-                    Canvas_Sub1.method121(i, -364570972, bool_221_, i_222_, i_224_, -1 + i_223_)
+                    DelegatingRenderCanvas.method121(i, -364570972, bool_221_, i_222_, i_224_, -1 + i_223_)
                 }
                 Class199.anIntArray2633!![Class139.method1166(31, Class106.anInt1631++)] = i
                 Class348_Sub3.aClass114_6584 = null

@@ -88,9 +88,9 @@ class Class348_Sub43 : Class348() {
                                     }
                                 }
                                 val i_8_ = (i_7_ + (Class348_Sub49_Sub2.Companion.aShortArray9768!![i_6_])).toShort()
-                                val i_9_ = (if (Canvas_Sub1.anIntArray60!![i_6_] == -1) Class38.anInt506 else Canvas_Sub1.anIntArray60!![i_6_])
+                                val i_9_ = (if (DelegatingRenderCanvas.anIntArray60!![i_6_] == -1) Class38.anInt506 else DelegatingRenderCanvas.anIntArray60!![i_6_])
                                 Class50_Sub3.method466(false, "<col=ffffff>" + string, 0, (-105).toByte(), false, 0, -1, true, i_8_.toInt(), player.anInt10290.toLong(), (Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_6_]), player.anInt10290.toLong(), i_9_)
-                                Canvas_Sub1.anInt69++
+                                DelegatingRenderCanvas.anInt69++
                             }
                         }
                     }

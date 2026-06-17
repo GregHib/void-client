@@ -239,7 +239,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     val i_36_ = i * i + i_34_ * i_34_
                     if (i_36_ >= 262144 && i_32_ >= i_36_) {
                         val i_37_ = 0x3fff and (atan2(i.toDouble(), i_34_.toDouble()) * 2607.5945876176133).toInt()
-                        val class64_38_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (-35).toByte(), var_renderer!!))
+                        val class64_38_ = (DelegatingRenderCanvas.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (-35).toByte(), var_renderer!!))
                         if (class64_38_ == null) break
                         var_renderer!!.C(false)
                         class64_38_.method615(class101, null, 0)
@@ -261,7 +261,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                 val i_44_ = i_43_ * i_43_ + i_39_ * i_39_
                 if (i_44_ >= 262144 && i_44_ <= i_42_) {
                     val i_45_ = ((2607.5945876176133 * atan2(i_39_.toDouble(), i_43_.toDouble())).toInt() and 0x3fff)
-                    val class64_46_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (-35).toByte(), var_renderer!!))
+                    val class64_46_ = (DelegatingRenderCanvas.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (-35).toByte(), var_renderer!!))
                     if (class64_46_ == null) break
                     var_renderer!!.C(false)
                     class64_46_.method608(class101, null, i_40_, 0)
