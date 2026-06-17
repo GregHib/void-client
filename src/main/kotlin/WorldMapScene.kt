@@ -36,7 +36,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
         do {
             try {
                 anInt3112++
-                val bools_8_: BooleanArray = (if (class277 != null && class277.aBoolean3560) Class50_Sub1.aBooleanArrayArray5225!![i_7_] else Class265.aBooleanArrayArray4693!![i_7_])!!
+                val bools_8_: BooleanArray = (if (class277 != null && class277.aBoolean3560) Class50_Sub1.aBooleanArrayArray5225!![i_7_] else SplashImageLoadable.aBooleanArrayArray4693!![i_7_])!!
                 if (i_1_ > 0) {
                     if (i > 0) {
                         val i_9_ = is_5_!![i + -1]!![i_1_ - 1].toInt() and 0xff
@@ -144,7 +144,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                     i_33_--
                                 }
                                 if (!bools_8_[0x3 and i_4_]) bools!![0] = (Class50_Sub1.aBooleanArrayArray5225!![i_31_.toInt()]!![method1166(i_32_ + 2, 3)])
-                            } else if (!bools_8_[0x3 and i_4_]) bools!![0] = (Class265.aBooleanArrayArray4693!![i_31_.toInt()]!![method1166(3, i_32_ + 2)])
+                            } else if (!bools_8_[0x3 and i_4_]) bools!![0] = (SplashImageLoadable.aBooleanArrayArray4693!![i_31_.toInt()]!![method1166(3, i_32_ + 2)])
                         }
                     }
                 }
@@ -175,7 +175,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                     i_41_++
                                 }
                                 if (!bools_8_[0x3 and i_4_ + 2]) bools!![2] = (Class50_Sub1.aBooleanArrayArray5225!![i_39_.toInt()]!![method1166(3, --i_40_)])
-                            } else if (!bools_8_[0x3 and 2 + i_4_]) bools!![2] = (Class265.aBooleanArrayArray4693!![i_39_.toInt()]!![method1166(3, i_40_)])
+                            } else if (!bools_8_[0x3 and 2 + i_4_]) bools!![2] = (SplashImageLoadable.aBooleanArrayArray4693!![i_39_.toInt()]!![method1166(3, i_40_)])
                         }
                     }
                 }
@@ -206,7 +206,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                     i_50_--
                                 }
                                 if (!bools_8_[3 - -i_4_ and 0x3]) bools!![3] = (Class50_Sub1.aBooleanArrayArray5225!![i_47_.toInt()]!![method1166(3, 1 + i_48_)])
-                            } else if (!bools_8_[0x3 and 3 - -i_4_]) bools!![3] = (Class265.aBooleanArrayArray4693!![i_47_.toInt()]!![method1166(3, 1 + i_48_)])
+                            } else if (!bools_8_[0x3 and 3 - -i_4_]) bools!![3] = (SplashImageLoadable.aBooleanArrayArray4693!![i_47_.toInt()]!![method1166(3, 1 + i_48_)])
                         }
                     }
                 }
@@ -237,7 +237,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                     i_57_--
                                 }
                                 if (!bools_8_[1 + i_4_ and 0x3]) bools!![1] = (Class50_Sub1.aBooleanArrayArray5225!![i_55_.toInt()]!![method1166(3, i_56_ + 3)])
-                            } else if (!bools_8_[1 - -i_4_ and 0x3]) bools!![1] = (Class265.aBooleanArrayArray4693!![i_55_.toInt()]!![method1166(3, 3 - -i_56_)])
+                            } else if (!bools_8_[1 - -i_4_ and 0x3]) bools!![1] = (SplashImageLoadable.aBooleanArrayArray4693!![i_55_.toInt()]!![method1166(3, 3 - -i_56_)])
                         }
                     }
                 }
@@ -356,7 +356,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                 Class306.anIntArray3873!![i_90_] = -1
                                 HintIconState.anIntArray2370!![i_90_] = 1
                             }
-                            val bools_91_: BooleanArray = (if (class277 == null || !class277.aBoolean3560) Class265.aBooleanArrayArray4693!![i_76_.toInt()] else (Class50_Sub1.aBooleanArrayArray5225!![i_76_.toInt()]))!!
+                            val bools_91_: BooleanArray = (if (class277 == null || !class277.aBoolean3560) SplashImageLoadable.aBooleanArrayArray4693!![i_76_.toInt()] else (Class50_Sub1.aBooleanArrayArray5225!![i_76_.toInt()]))!!
                             method1675(i_71_, this.anInt3114, is_67_, i_73_, is_68_, -1, class277, class22, bools, i_77_, is_70_, this.anInt3117, i_76_.toInt(), var_renderer)
                             var bool_92_ = (class277 != null && (class277.anInt3563 != class277.anInt3569))
                             if (!bool_92_) {
@@ -807,7 +807,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                 if (Class348_Sub24.anIntArray6878 == null || (this.anInt3114 != Class348_Sub24.anIntArray6878!!.size)) {
                     Class318_Sub9_Sub1.anIntArray8785 = IntArray(this.anInt3114)
                     Class348_Sub40_Sub6.anIntArray9135 = IntArray(this.anInt3114)
-                    Class265.anIntArray4692 = IntArray(this.anInt3114)
+                    SplashImageLoadable.anIntArray4692 = IntArray(this.anInt3114)
                     Class348_Sub24.anIntArray6878 = IntArray(this.anInt3114)
                     Class348_Sub8.anIntArray6655 = IntArray(this.anInt3114)
                 }
@@ -818,7 +818,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                         Class348_Sub24.anIntArray6878!![i_181_] = 0
                         Class348_Sub40_Sub6.anIntArray9135!![i_181_] = 0
                         Class348_Sub8.anIntArray6655!![i_181_] = 0
-                        Class265.anIntArray4692!![i_181_] = 0
+                        SplashImageLoadable.anIntArray4692!![i_181_] = 0
                         Class318_Sub9_Sub1.anIntArray8785!![i_181_] = 0
                         i_181_++
                     }
@@ -833,7 +833,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                     Class348_Sub24.anIntArray6878!![i_183_] += class22!!.anInt341
                                     Class348_Sub40_Sub6.anIntArray9135!![i_183_] += class22.anInt332
                                     Class348_Sub8.anIntArray6655!![i_183_] += class22.anInt335
-                                    Class265.anIntArray4692!![i_183_] += class22.anInt343
+                                    SplashImageLoadable.anIntArray4692!![i_183_] += class22.anInt343
                                     Class318_Sub9_Sub1.anIntArray8785!![i_183_]++
                                 }
                             }
@@ -845,7 +845,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                     Class348_Sub24.anIntArray6878!![i_183_] -= class22!!.anInt341
                                     Class348_Sub40_Sub6.anIntArray9135!![i_183_] -= class22.anInt332
                                     Class348_Sub8.anIntArray6655!![i_183_] -= class22.anInt335
-                                    Class265.anIntArray4692!![i_183_] -= class22.anInt343
+                                    SplashImageLoadable.anIntArray4692!![i_183_] -= class22.anInt343
                                     Class318_Sub9_Sub1.anIntArray8785!![i_183_]--
                                 }
                             }
@@ -865,11 +865,11 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                     i_189_ += (Class348_Sub40_Sub6.anIntArray9135!![i_194_])
                                     i_188_ += (Class348_Sub24.anIntArray6878!![i_194_])
                                     i_192_ += (Class318_Sub9_Sub1.anIntArray8785!![i_194_])
-                                    i_191_ += Class265.anIntArray4692!![i_194_]
+                                    i_191_ += SplashImageLoadable.anIntArray4692!![i_194_]
                                 }
                                 val i_195_ = i_193_ + -5
                                 if (i_195_ >= 0) {
-                                    i_191_ -= Class265.anIntArray4692!![i_195_]
+                                    i_191_ -= SplashImageLoadable.anIntArray4692!![i_195_]
                                     i_188_ -= (Class348_Sub24.anIntArray6878!![i_195_])
                                     i_190_ -= (Class348_Sub8.anIntArray6655!![i_195_])
                                     i_192_ -= (Class318_Sub9_Sub1.anIntArray8785!![i_195_])

@@ -65,7 +65,7 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
                     i_7_++
                     continue@while_216_
                 } while (false)
-                aClass50Array9481!![i_7_] = Class265.method2022(class348_sub49, 0)
+                aClass50Array9481!![i_7_] = SplashImageLoadable.method2022(class348_sub49, 0)
                 i_7_++
             }
         } else if (i == 1) this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1

@@ -1440,7 +1440,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == WaterDetailOptionState.aIntRange_5992) {
-                method128(Class265.aClass74_4689, 8.toByte())
+                method128(SplashImageLoadable.aClass74_4689, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

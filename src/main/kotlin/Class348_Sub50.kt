@@ -28,7 +28,7 @@ class Class348_Sub50 : Class348 {
             anInt7210++
             if (i != 13022) method3418(-79)
             Class348_Sub42_Sub3.aBoolean9498 = false
-            Class265.anIntArray4692 = null
+            SplashImageLoadable.anIntArray4692 = null
             Class348_Sub8.anIntArray6655 = null
         }
 

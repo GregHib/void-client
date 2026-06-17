@@ -1037,7 +1037,7 @@ class Client : GameAppletFrame() {
         method3567(i.toInt() xor 0x24.inv())
         method189(121.toByte())
         method716(1)
-        Class265.method2023((-78).toByte())
+        SplashImageLoadable.method2023((-78).toByte())
         method190(32.toByte())
         method2223(i.toInt() xor 0x5)
         method728(true)

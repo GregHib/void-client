@@ -103,7 +103,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_41_ = i_36_ + 1
                         if ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_32_ - i_41_ && (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) <= i_41_ + i_32_ && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_41_ + i_33_) && (i_33_ - -i_41_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]))) Class37.method358(i_37_, (i_36_ + (i_33_ shl 8) + ((Class348_Sub40_Sub12.anInt9200 shl 24) + (i_32_ shl 16))), i_38_, i_39_, i_40_, i_34_, -29494)
                     }
-                } else if (Class265.aClass74_4689 == class74) {
+                } else if (SplashImageLoadable.aClass74_4689 == class74) {
                     var i_42_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     if (i_42_ == 65535) i_42_ = -1
                     val i_43_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(65.toByte())

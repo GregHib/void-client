@@ -126,7 +126,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SocketStreamWorker.anInt2646 = 0
             Class64_Sub2.anInt5480 = 0
             Class367_Sub10.anInt7384 = 0
-            Class265.anInt4690 = 0
+            SplashImageLoadable.anInt4690 = 0
             LinkedNodeListIterator.anInt1648 = 0
             Class84.anInt1455 = 0
             Class348_Sub16_Sub3.anInt8940 = 0
@@ -282,7 +282,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub23_Sub2.anInt9021 = 0
             Class348_Sub49.anInt7160 = 0
             Class348_Sub44.anInt7097 = 0
-            Class265.anInt4695 = 0
+            SplashImageLoadable.anInt4695 = 0
             Class69.anInt1196 = 0
             SpotAnimDefinition.anInt2378 = 0
             Class318_Sub1_Sub3_Sub5.anInt10404 = 0
@@ -542,7 +542,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class5_Sub3.anInt8376 = 0
             GlTexture.anInt4857 = 0
             OpenGlRenderer.anInt7544 = 0
-            Class265.anInt4691 = 0
+            SplashImageLoadable.anInt4691 = 0
             Class321.anInt3999 = 0
             UnderlayDefinition.anInt2887 = 0
             Class348_Sub5.anInt6622 = 0
@@ -2878,7 +2878,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class313.anInt3933 = 0
             OpenGlRenderer.anInt7700 = 0
             Class314.anInt3940 = 0
-            Class265.anInt4696 = 0
+            SplashImageLoadable.anInt4696 = 0
             Class318_Sub2.anInt6399 = 0
             Renderer.anInt4573 = 0
             Class79.anInt1334 = 0
