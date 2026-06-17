@@ -256,7 +256,7 @@ object Class66 {
                 anInt1170 -= 2
                 val string = aStringArray1152!![anInt1170]
                 val string_15_ = aStringArray1152!![anInt1170 + 1]
-                if (Class192.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || Class133.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+                if (Class192.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
                     anInt1159++
                     val class348_sub47 = method2148((Class348_Sub40_Sub22.aClass351_9304), (Class348_Sub23_Sub2.aClass77_9029), -116)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -2255,7 +2255,7 @@ object Class66 {
                 }
             } else if (i < 7000) {
                 if (i == 6900) {
-                    anIntArray1149!![anInt1173++] = if (Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) 1 else 0
                     return
                 }
                 if (i == 6901) {
@@ -2323,7 +2323,7 @@ object Class66 {
                     return
                 }
                 if (i == 7001) {
-                    Class133.method1140(47)
+                    PlayerUpdateDecoder.method1140(47)
                     Class348_Sub20.method2953((-126).toByte())
                     method243(37)
                     RenderNode.aBoolean9719 = false
@@ -2549,7 +2549,7 @@ object Class66 {
 
     private fun method707(string: String, i: Int) {
         var string = string
-        if (Class192.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || Class133.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+        if (Class192.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
             var string_240_ = string.lowercase(Locale.getDefault())
             var i_241_ = 0
             if (string_240_.startsWith(Class274.aClass274_3530!!.method2063(0, 544)!!)) {

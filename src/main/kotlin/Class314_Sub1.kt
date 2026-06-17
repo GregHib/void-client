@@ -444,7 +444,7 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
                     }
                 } else {
                     i_6_ = 4
-                    Class133.method1140(58)
+                    PlayerUpdateDecoder.method1140(58)
                 }
             }
             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 0) {

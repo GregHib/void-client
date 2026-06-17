@@ -78,7 +78,7 @@ class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModel
             anInt4727++
             val i_2_: Int
             if (i > 12000) {
-                Class133.method1140(73)
+                PlayerUpdateDecoder.method1140(73)
                 i_2_ = 4
             } else if (i > 5000) {
                 Class47.method447((-59).toByte())

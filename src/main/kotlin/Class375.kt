@@ -25,7 +25,7 @@ internal object Class375 {
             var i_2_ = class348_sub49_sub2!!.readUnsignedByte(255)
             if ((i_2_ and 0x40) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) shl 8
             if ((i_2_ and 0x4000) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) shl 16
-            Class133.method1141(class348_sub49_sub2, i_1_, i_2_, 123, player)
+            PlayerUpdateDecoder.method1141(class348_sub49_sub2, i_1_, i_2_, 123, player)
         }
         anInt4541++
     }

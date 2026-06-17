@@ -37,7 +37,7 @@ import MinimapRectClipper.method225
 import ModelBatchBase.Companion.method1127
 import FrameStatsReset.Companion.method1133
 import LocalPlayerState.method1137
-import Class133.method1139
+import PlayerUpdateDecoder.method1139
 import Class135.Companion.method1149
 import Class135_Sub1.Companion.method1154
 import Class136.Companion.method1159

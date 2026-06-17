@@ -1292,7 +1292,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class154.anInt2091 = 0
             Class187.anInt2505 = 0
             Class15.anInt226 = 0
-            Class133.anInt1916 = 0
+            PlayerUpdateDecoder.anInt1916 = 0
             Class150.anInt2051 = 0
             Class64_Sub3.anInt5597 = 0
             Class46.anInt758 = 0
@@ -1381,7 +1381,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ScrollingWidgetComponentNode.anInt8380 = 0
             Class367_Sub4.anInt7314 = 0
             Class263.anInt3354 = 0
-            Class133.anInt1913 = 0
+            PlayerUpdateDecoder.anInt1913 = 0
             Class337.anInt4175 = 0
             Class174.anInt2293 = 0
             Class239_Sub13.anInt5979 = 0
@@ -3989,7 +3989,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub5.anInt10382 = 0
             Class367_Sub11.anInt7414 = 0
             ScriptCompilerThread.anInt1732 = 0
-            Class133.anInt1912 = 0
+            PlayerUpdateDecoder.anInt1912 = 0
             Class318_Sub1_Sub5_Sub1.anInt10140 = 0
             Class56.anInt1020 = 0
             Class137.anInt1936 = 0

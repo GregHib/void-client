@@ -38,7 +38,7 @@ object Class37 {
         if (`is`.size == 100 && Class348_Sub40_Sub31.anInt9412 < 1000) Class24.aByteArrayArray358!![Class348_Sub40_Sub31.anInt9412++] = `is`
         else {
             if (i != 0) method359(-119, -101)
-            if (`is`.size == 5000 && Class348_Sub40_Sub21.anInt9280 < 250) Class133.aByteArrayArray1918!![Class348_Sub40_Sub21.anInt9280++] = `is`
+            if (`is`.size == 5000 && Class348_Sub40_Sub21.anInt9280 < 250) PlayerUpdateDecoder.aByteArrayArray1918!![Class348_Sub40_Sub21.anInt9280++] = `is`
             else if (`is`.size == 30000 && Class348_Sub31.anInt6913 < 50) Class285_Sub2.aByteArrayArray8505!![Class348_Sub31.anInt6913++] = `is`
             else if (Class348_Sub40_Sub6.aByteArrayArrayArray9134 != null) {
                 var i_2_ = 0
@@ -69,8 +69,8 @@ object Class37 {
             return `is`
         }
         if (i == 5000 && Class348_Sub40_Sub21.anInt9280 > 0) {
-            val `is` = (Class133.aByteArrayArray1918!![--Class348_Sub40_Sub21.anInt9280])
-            Class133.aByteArrayArray1918!![Class348_Sub40_Sub21.anInt9280] = null
+            val `is` = (PlayerUpdateDecoder.aByteArrayArray1918!![--Class348_Sub40_Sub21.anInt9280])
+            PlayerUpdateDecoder.aByteArrayArray1918!![Class348_Sub40_Sub21.anInt9280] = null
             return `is`
         }
         if (i_9_ != -1) method359(-88, -45)

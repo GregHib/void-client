@@ -341,7 +341,7 @@ class Class88 {
                                 Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
                                 Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
+                                PlayerUpdateDecoder.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class50_Sub2.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class348_Sub42_Sub11.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944)
@@ -358,7 +358,7 @@ class Class88 {
                                 Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
                                 Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
+                                PlayerUpdateDecoder.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 InputSettingsState.anInt1758 = class348_sub49_sub2.readShort(13638)
                                 Class206.aBoolean4888 = InputSettingsState.anInt1758 > 0

@@ -2,7 +2,10 @@ import Class239_Sub16.Companion.method1791
 import Class348_Sub40.Companion.method3038
 import Class76.Companion.method773
 
-object Class133 {
+/*
+ * Class133
+ */
+object PlayerUpdateDecoder {
     var anInt1912: Int = 0
     var anInt1913: Int = 0
     var aIntRange_1914: IntRange? = IntRange(84, 7)

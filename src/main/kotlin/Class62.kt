@@ -75,7 +75,7 @@ object Class62 {
                 Class47.method447((-59).toByte())
             }
         } else {
-            Class133.method1140(120)
+            PlayerUpdateDecoder.method1140(120)
             i_3_ = 4
         }
         if (i_1_ != Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {

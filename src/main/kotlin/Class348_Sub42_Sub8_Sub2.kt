@@ -250,7 +250,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         }
                     }
                     if (i <= 1) {
-                        if ((Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_20_ = true
+                        if ((Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_20_ = true
                         else if (Class351.method3455(string_16_, 28280)) bool_20_ = true
                     }
                 } while (false)
@@ -337,7 +337,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class133.aIntRange_1917 == Class348_Sub3.aIntRange_6584) {
+            if (PlayerUpdateDecoder.aIntRange_1917 == Class348_Sub3.aIntRange_6584) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_30_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_31_ = (0x1 and i_30_) == 1
@@ -727,7 +727,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var bool_83_ = false
                 if (i <= 1) {
-                    if (Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915 || Class50_Sub2.aBoolean5233) bool_83_ = true
+                    if (Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915 || Class50_Sub2.aBoolean5233) bool_83_ = true
                     else if (i <= 1 && Class351.method3455(string_82_, 28280)) bool_83_ = true
                 }
                 if (!bool_83_ && Class250.anInt3227 == 0) {
@@ -831,7 +831,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if ((player.aString10544) != null && player.aClass154_10536 != null) {
                     var bool_94_ = false
                     if (i_92_ <= 1) {
-                        if (!bool_93_ && ((Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915) || Class50_Sub2.aBoolean5233)) bool_94_ = true
+                        if (!bool_93_ && ((Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233)) bool_94_ = true
                         else if (Class351.method3455(player.aString10544, 28280)) bool_94_ = true
                     }
                     if (!bool_94_ && Class250.anInt3227 == 0) {
@@ -877,7 +877,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         }
                     }
                     if (i <= 1) {
-                        if ((Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_101_ = true
+                        if ((Class348_Sub40_Sub3.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_101_ = true
                         else if (Class351.method3455(string_98_, 28280)) bool_101_ = true
                     }
                 } while (false)
@@ -1032,7 +1032,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class133.aIntRange_1914 == Class348_Sub3.aIntRange_6584) {
+            if (PlayerUpdateDecoder.aIntRange_1914 == Class348_Sub3.aIntRange_6584) {
                 method128(Class348_Sub40_Sub38.aClass74_9475, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
