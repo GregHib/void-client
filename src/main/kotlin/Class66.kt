@@ -838,23 +838,23 @@ object Class66 {
                 anInt1173 -= 2
                 val i_89_ = anIntArray1149!![anInt1173]
                 val bool_90_ = anIntArray1149!![anInt1173 + 1] == 1
-                if (Class158.aClass356_4934 != null) {
-                    var class348 = Class158.aClass356_4934!!.method3480(i_89_.toLong(), -6008)
+                if (HeapInfoRecord.aClass356_4934 != null) {
+                    var class348 = HeapInfoRecord.aClass356_4934!!.method3480(i_89_.toLong(), -6008)
                     if (class348 != null && !bool_90_) class348.method2715(83.toByte())
                     else if (class348 == null && bool_90_) {
                         class348 = Class348()
-                        Class158.aClass356_4934!!.method3483(112.toByte(), i_89_.toLong(), class348)
+                        HeapInfoRecord.aClass356_4934!!.method3483(112.toByte(), i_89_.toLong(), class348)
                     }
                 }
                 return
             }
             if (i == 5234) {
                 val i_91_ = anIntArray1149!![--anInt1173]
-                if (Class158.aClass356_4934 == null) {
+                if (HeapInfoRecord.aClass356_4934 == null) {
                     anIntArray1149!![anInt1173++] = 0
                     return
                 } else {
-                    val class348 = Class158.aClass356_4934!!.method3480(i_91_.toLong(), -6008)
+                    val class348 = HeapInfoRecord.aClass356_4934!!.method3480(i_91_.toLong(), -6008)
                     anIntArray1149!![anInt1173++] = if (class348 != null) 1 else 0
                 }
                 return
@@ -3822,7 +3822,7 @@ object Class66 {
                 }
                 if (i == 3115) {
                     anInt1173 -= 11
-                    val class221s = Class158.method1248(20)
+                    val class221s = HeapInfoRecord.method1248(20)
                     val class341s = method596(20000)
                     method2051(anIntArray1149!![anInt1173 + 9], anIntArray1149!![anInt1173 + 5], class221s[anIntArray1149!![anInt1173]], (class341s[anIntArray1149!![anInt1173 + 1]]), anIntArray1149!![anInt1173 + 7], anIntArray1149!![anInt1173 + 6], anIntArray1149!![anInt1173 + 4], 111.toByte(), anIntArray1149!![anInt1173 + 10], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173 + 8])
                     return

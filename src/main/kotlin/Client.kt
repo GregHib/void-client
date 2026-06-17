@@ -60,7 +60,7 @@ import CompositeNpcModelBuilder.Companion.method1235
 import LinkedListIterator.Companion.method1239
 import LinkedListIterator.Companion.method1242
 import SettingsCrcWriter.method1246
-import Class158.Companion.method1249
+import HeapInfoRecord.Companion.method1249
 import Class16.method260
 import Class160.Companion.method1254
 import Class161.Companion.method1261

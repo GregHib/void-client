@@ -53,7 +53,7 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
 
         fun method465(i: Int) {
             if (i != -1636518164) anInt5252 = -40
-            Class158.aClass356_4934!!.method3481(0)
+            HeapInfoRecord.aClass356_4934!!.method3481(0)
             anInt5251++
             Class348_Sub42_Sub9_Sub1.aClass356_10442!!.method3481(0)
         }

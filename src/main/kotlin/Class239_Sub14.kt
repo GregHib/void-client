@@ -70,7 +70,7 @@ class Class239_Sub14 : Class239 {
             Class60.aRenderer1098 = null
             if (i <= 89) anInt5994 = -75
             Class239_Sub24.aClass299_6098 = null
-            Class158.aClass299_4938 = null
+            HeapInfoRecord.aClass299_4938 = null
             Class348_Sub42_Sub10.aClass299_9571 = null
         }
 

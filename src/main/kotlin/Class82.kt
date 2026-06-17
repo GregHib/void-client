@@ -571,8 +571,8 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string == "heapdump") {
-                            if (!Class297.aString3803.startsWith("win")) Class158.method1247(File("/tmp/heap.dump"), false, false)
-                            else Class158.method1247(File("C:\\Temp\\heap.dump"), false, false)
+                            if (!Class297.aString3803.startsWith("win")) HeapInfoRecord.method1247(File("/tmp/heap.dump"), false, false)
+                            else HeapInfoRecord.method1247(File("C:\\Temp\\heap.dump"), false, false)
                             method94("Done", 74)
                             return
                         }

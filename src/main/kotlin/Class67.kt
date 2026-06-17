@@ -1,17 +1,17 @@
 /* Class67 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, class158: Class158?) : Interface1 {
-    private val aClass158_4646: Class158?
+class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heapInfoRecord: HeapInfoRecord?) : Interface1 {
+    private val aHeapInfoRecord_4646: HeapInfoRecord?
     private var aClass324_4649: Class324? = null
     private val aClass45_4650: Class45?
     private val aClass45_4651: Class45?
 
     override fun method9(i: Byte, bool: Boolean) {
         if (bool) {
-            val i_0_ = ((aClass158_4646!!.aClass221_4948!!.method1607(Class92.anInt1524, aClass158_4646.anInt4931, (-119).toByte())) + aClass158_4646.anInt4947)
-            val i_1_ = ((aClass158_4646.aClass341_4945!!.method2679(OpenGlRenderer.anInt7666, aClass158_4646.anInt4936, i + 1644)) + aClass158_4646.anInt4932)
-            aClass324_4649!!.method2584(null, aClass158_4646.anInt4937, aClass158_4646.anInt4940, null, aClass158_4646.anInt4935, aClass158_4646.anInt4946, aClass158_4646.anInt4936, null, i_1_, 0, 0, aClass158_4646.anInt4931, i_0_, false, aClass158_4646.anInt4943, aClass158_4646.aString4942)
+            val i_0_ = ((aHeapInfoRecord_4646!!.aClass221_4948!!.method1607(Class92.anInt1524, aHeapInfoRecord_4646.anInt4931, (-119).toByte())) + aHeapInfoRecord_4646.anInt4947)
+            val i_1_ = ((aHeapInfoRecord_4646.aClass341_4945!!.method2679(OpenGlRenderer.anInt7666, aHeapInfoRecord_4646.anInt4936, i + 1644)) + aHeapInfoRecord_4646.anInt4932)
+            aClass324_4649!!.method2584(null, aHeapInfoRecord_4646.anInt4937, aHeapInfoRecord_4646.anInt4940, null, aHeapInfoRecord_4646.anInt4935, aHeapInfoRecord_4646.anInt4946, aHeapInfoRecord_4646.anInt4936, null, i_1_, 0, 0, aHeapInfoRecord_4646.anInt4931, i_0_, false, aHeapInfoRecord_4646.anInt4943, aHeapInfoRecord_4646.aString4942)
         }
         if (i.toInt() == -49) anInt4642++
     }
@@ -19,25 +19,25 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, clas
     override fun method8(i: Byte): Boolean {
         anInt4644++
         var bool = true
-        if (!aClass45_4650!!.method421(false, aClass158_4646!!.anInt4944)) bool = false
-        if (!aClass45_4651!!.method421(false, aClass158_4646.anInt4944)) bool = false
+        if (!aClass45_4650!!.method421(false, aHeapInfoRecord_4646!!.anInt4944)) bool = false
+        if (!aClass45_4651!!.method421(false, aHeapInfoRecord_4646.anInt4944)) bool = false
         val i_2_ = -53 % ((i - 25) / 52)
         return bool
     }
 
     override fun method7(i: Int) {
         anInt4647++
-        val class143 = Class239_Sub10.method1766((-45).toByte(), aClass158_4646!!.anInt4944, aClass45_4651!!)
-        if (i == 10286) aClass324_4649 = (Class348_Sub8.aRenderer6654!!.method3686(class143, Class207.method1523(aClass45_4650!!, aClass158_4646.anInt4944), true))
+        val class143 = Class239_Sub10.method1766((-45).toByte(), aHeapInfoRecord_4646!!.anInt4944, aClass45_4651!!)
+        if (i == 10286) aClass324_4649 = (Class348_Sub8.aRenderer6654!!.method3686(class143, Class207.method1523(aClass45_4650!!, aHeapInfoRecord_4646.anInt4944), true))
     }
 
     init {
         try {
             aClass45_4651 = class45_3_
-            aClass158_4646 = class158
+            aHeapInfoRecord_4646 = heapInfoRecord
             aClass45_4650 = class45
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kd.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ',' + (if (class158 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("kd.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ',' + (if (heapInfoRecord != null) "{...}" else "null") + ')'))
         }
     }
 

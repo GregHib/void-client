@@ -114,9 +114,9 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
                     Class187.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (Class239_Sub14.aClass190_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (Class239_Sub14.aClass190_5990!!.anInt2549)))))) ushr 8
                     Class361.aFloat4455 = (Class246.aFloat3177 + f_6_ * (-Class246.aFloat3177 + (Class239_Sub14.aClass190_5990!!.aFloat2536)))
                     Class269.aFloat3462 = (Class245.aFloat3172 + (Class239_Sub14.aClass190_5990!!.aFloat2542 - Class245.aFloat3172) * f_6_)
-                    if (Class239_Sub24.aClass299_6098 !== (Class239_Sub14.aClass190_5990!!.aClass299_2541)) Class158.aClass299_4938 = (Class60.aRenderer1098!!.method3706(Class239_Sub24.aClass299_6098, (Class239_Sub14.aClass190_5990!!.aClass299_2541), f_6_, Class158.aClass299_4938))
+                    if (Class239_Sub24.aClass299_6098 !== (Class239_Sub14.aClass190_5990!!.aClass299_2541)) HeapInfoRecord.aClass299_4938 = (Class60.aRenderer1098!!.method3706(Class239_Sub24.aClass299_6098, (Class239_Sub14.aClass190_5990!!.aClass299_2541), f_6_, HeapInfoRecord.aClass299_4938))
                 } else {
-                    Class158.aClass299_4938 = (Class239_Sub14.aClass190_5990!!.aClass299_2541)
+                    HeapInfoRecord.aClass299_4938 = (Class239_Sub14.aClass190_5990!!.aClass299_2541)
                     TextureMetadataProvider.aFloat4626 = Class239_Sub14.aClass190_5990!!.aFloat2544
                     Class348_Sub3.aFloat6586 = Class239_Sub14.aClass190_5990!!.aFloat2545
                     Class239_Sub10.aFloat5945 = Class239_Sub14.aClass190_5990!!.aFloat2551

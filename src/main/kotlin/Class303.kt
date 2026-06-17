@@ -1,5 +1,5 @@
 import GlArrayBufferObject.Companion.method1153
-import Class158.Companion.method1248
+import HeapInfoRecord.Companion.method1248
 import Class231.Companion.method1642
 import Class286_Sub3.Companion.method2148
 import Class62.method596

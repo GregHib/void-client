@@ -1,4 +1,4 @@
-import Class158.Companion.method1248
+import HeapInfoRecord.Companion.method1248
 import Class62.method596
 
 /* Class288_Sub1 - Decompiled by JODE

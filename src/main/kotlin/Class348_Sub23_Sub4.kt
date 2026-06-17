@@ -137,7 +137,7 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
             Class60.aRenderer1098!!.xa((Class316.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350).toFloat() * 0.1f + 0.7f) * Class160.aFloat2137)
             anInt9049++
             Class60.aRenderer1098!!.ZA(NativeIndexBuffer.anInt4703, TextureMetadataProvider.aFloat4626, Class361.aFloat4455, (Class21.anInt325 shl 2).toFloat(), (Class318_Sub1_Sub3_Sub1.anInt10023 shl 2).toFloat(), (Class196.anInt2601 shl 2).toFloat())
-            Class60.aRenderer1098!!.method3653(Class158.aClass299_4938)
+            Class60.aRenderer1098!!.method3653(HeapInfoRecord.aClass299_4938)
             if (bool != true) anIntArray9050 = null
         }
 

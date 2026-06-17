@@ -40,10 +40,10 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
         }
 
         @JvmStatic
-        fun method472(i: Int, class348_sub49: Class348_Sub49): Class158? {
+        fun method472(i: Int, class348_sub49: Class348_Sub49): HeapInfoRecord? {
             anInt5263++
             val string = class348_sub49.readString(90.toByte())
-            val class221 = Class158.method1248(127)[class348_sub49.readUnsignedByte(i xor 0x6c6e.inv())]
+            val class221 = HeapInfoRecord.method1248(127)[class348_sub49.readUnsignedByte(i xor 0x6c6e.inv())]
             if (i != -27794) return null
             val class341 = Class62.method596(i + 47794)[class348_sub49.readUnsignedByte(255)]
             val i_15_ = class348_sub49.readShort(13638)
@@ -56,7 +56,7 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
             val i_22_ = class348_sub49.readInt((-126).toByte())
             val i_23_ = class348_sub49.readInt((-126).toByte())
             val i_24_ = class348_sub49.readInt((-126).toByte())
-            return Class158(string, class221, class341, i_15_, i_16_, i_17_, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, i_24_)
+            return HeapInfoRecord(string, class221, class341, i_15_, i_16_, i_17_, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, i_24_)
         }
 
         @JvmStatic

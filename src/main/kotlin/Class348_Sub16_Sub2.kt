@@ -228,7 +228,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
         @JvmStatic
         fun method2834(i: Byte, class348_sub49: Class348_Sub49): Class369 {
             anInt8876++
-            val class221 = Class158.method1248(15)[class348_sub49.readUnsignedByte(255)]
+            val class221 = HeapInfoRecord.method1248(15)[class348_sub49.readUnsignedByte(255)]
             if (i > -113) aDouble8869 = -1.5911312034627048
             val class341 = Class62.method596(20000)[class348_sub49.readUnsignedByte(255)]
             val i_7_ = class348_sub49.readShort(13638)
