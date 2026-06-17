@@ -4,7 +4,7 @@ import Class66.method705
 /* Class155 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class155 {
+object ItemActionPacketSender {
     var anInt2108: Int = 0
     var aClass351_2109: Class351? = Class351(19, -1)
     @JvmField
@@ -18,7 +18,7 @@ object Class155 {
     @JvmStatic
     fun method1237(i: Byte, class46: Class46) {
         anInt2108++
-        if (i < 69) Class155.method1236((-52).toByte())
+        if (i < 69) ItemActionPacketSender.method1236((-52).toByte())
         if (RenderNode.aBoolean9722) {
             Class296.anInt3775++
             if (class46.anObjectArray679 != null) {

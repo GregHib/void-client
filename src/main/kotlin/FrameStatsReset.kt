@@ -1309,7 +1309,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7724 = 0
             Class64_Sub3.anInt5614 = 0
             Class286_Sub7.anInt6280 = 0
-            Class155.anInt2108 = 0
+            ItemActionPacketSender.anInt2108 = 0
             OrientationRotator.anInt2044 = 0
             Class348_Sub42_Sub16_Sub1.anInt10454 = 0
             CompositeNpcModelBuilder.anInt2090 = 0

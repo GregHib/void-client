@@ -952,7 +952,7 @@ class Client : GameAppletFrame() {
         method1195(127.toByte())
         method857(126)
         method2191(0)
-        Class155.method1236((-110).toByte())
+        ItemActionPacketSender.method1236((-110).toByte())
         method1463(25.toByte())
         Class318_Sub6.method2506((-46).toByte())
         method2469(true)
@@ -1363,8 +1363,8 @@ class Client : GameAppletFrame() {
             Class222.anInt2884 = this.getParameter("colourid")!!.toInt()
             if (Class222.anInt2884 < 0 || GlVertexBufferBase.aColorArray1928!!.size <= Class222.anInt2884) Class222.anInt2884 = 0
             if (this.getParameter("sitesettings_member")!!.toInt() == 1) {
-                Class155.aBoolean2110 = true
-                Class206.aBoolean4888 = Class155.aBoolean2110
+                ItemActionPacketSender.aBoolean2110 = true
+                Class206.aBoolean4888 = ItemActionPacketSender.aBoolean2110
             }
             val string_28_ = this.getParameter("frombilling")
             if (string_28_ != null && string_28_ == "true") Class375.aBoolean4540 = true
@@ -2005,8 +2005,8 @@ class Client : GameAppletFrame() {
                     TextureMetadataProvider.aLong4615 = 0L
                     Class348_Sub23_Sub3.aString9043 = null
                     Class202.anInt2670 = 0
-                    Class155.aBoolean2110 = true
-                    Class206.aBoolean4888 = Class155.aBoolean2110
+                    ItemActionPacketSender.aBoolean2110 = true
+                    Class206.aBoolean4888 = ItemActionPacketSender.aBoolean2110
                     Class375.aBoolean4540 = false
                     Class251.anInt3234 = 0
                     Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987)
