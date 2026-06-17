@@ -2294,12 +2294,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3939(i: Byte)
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(fontDefinition: FontDefinition?, class207s: Array<Class207>?, bool: Boolean): Class324 {
         try {
             anInt7952++
-            return Class324_Sub2(this, class143, class207s as Array<Class207>, bool)
+            return Class324_Sub2(this, fontDefinition, class207s as Array<Class207>, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.JE(" + (if (class143 != null) "{...}" else "null") + ',' + (if (class207s != null) "{...}" else "null") + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (class207s != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 

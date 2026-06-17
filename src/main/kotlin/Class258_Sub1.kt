@@ -20,7 +20,7 @@ class Class258_Sub1 : Class258 {
         anInt8526++
         glCopyTexSubImage3D(this.anInt4849, 0, i_2_, i_6_, i_4_, i_3_, i_0_, i_1_, i_5_)
         glFlush()
-        if (i != -26823) aClass143_8527 = null
+        if (i != -26823) aFontDefinition_8527 = null
     }
 
     override fun method37(i: Int) {
@@ -61,11 +61,11 @@ class Class258_Sub1 : Class258 {
         @JvmField
         var anInt8526: Int = 0
         @JvmField
-        var aClass143_8527: Class143? = null
+        var aFontDefinition_8527: FontDefinition? = null
         @JvmStatic
         fun method1959(i: Int) {
             val i_11_ = -121 / ((-52 - i) / 60)
-            aClass143_8527 = null
+            aFontDefinition_8527 = null
         }
 
         @JvmStatic

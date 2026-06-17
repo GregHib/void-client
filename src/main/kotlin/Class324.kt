@@ -8,14 +8,14 @@ import jaggl.OpenGL.Companion.glLinkProgramARB
 import java.util.*
 import kotlin.math.sin
 
-abstract class Class324 internal constructor(var_renderer: Renderer?, class143: Class143?) {
+abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefinition: FontDefinition?) {
     private var aRenderer4048: Renderer? = null
-    private var aClass143_4063: Class143? = null
+    private var aFontDefinition_4063: FontDefinition? = null
     private fun method2566(abstractModelRenderers: Array<AbstractModelRenderer?>?, `is`: IntArray?, i: Int, is_0_: IntArray?, is_1_: IntArray?, i_2_: Int, string: String?, i_3_: Int) {
         var i = i
         var i_2_ = i_2_
         try {
-            i_2_ -= aClass143_4063!!.anInt1992
+            i_2_ -= aFontDefinition_4063!!.anInt1992
             anInt4058++
             var i_4_ = -1
             var i_5_ = -1
@@ -51,7 +51,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                                                     val i_12_ = (Class348_Sub41.method3156(true, (string_9_.substring(4))))
                                                     val class105 = abstractModelRenderers!![i_12_]!!
                                                     val i_13_ = (if (is_0_ == null) class105.method980() else is_0_[i_12_])
-                                                    class105.method964(i + i_10_, (-i_13_ + (aClass143_4063!!.anInt1992) + (i_2_ - -i_11_)), 1, 0, 1)
+                                                    class105.method964(i + i_10_, (-i_13_ + (aFontDefinition_4063!!.anInt1992) + (i_2_ - -i_11_)), 1, 0, 1)
                                                     i += abstractModelRenderers[i_12_]!!.method966()
                                                     i_5_ = -1
                                                 } catch (exception: Exception) {
@@ -66,7 +66,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                             } else c = '>'
                         }
                         if (i_4_ == -1) {
-                            if (i_5_ != -1) i += aClass143_4063!!.method1182(i_5_, (-104).toByte(), c)
+                            if (i_5_ != -1) i += aFontDefinition_4063!!.method1182(i_5_, (-104).toByte(), c)
                             val i_14_: Int
                             if (is_1_ == null) i_14_ = 0
                             else i_14_ = is_1_[i_6_]
@@ -82,9 +82,9 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                                 Class258.anInt4848 = Class258.anInt4848 and 0xff
                             }
                             i_6_++
-                            val i_16_ = aClass143_4063!!.method1184((-48).toByte(), c.code)
-                            if (Player.anInt10567 != -1) aRenderer4048!!.method3649((-103).toByte(), i_16_, i_2_ - -((aClass143_4063!!.anInt1992).toDouble() * 0.7).toInt(), Player.anInt10567, i)
-                            if (Class348_Sub40_Sub2.anInt9101 != -1) aRenderer4048!!.method3649((-96).toByte(), i_16_, (aClass143_4063!!.anInt1992) + i_2_, (Class348_Sub40_Sub2.anInt9101), i)
+                            val i_16_ = aFontDefinition_4063!!.method1184((-48).toByte(), c.code)
+                            if (Player.anInt10567 != -1) aRenderer4048!!.method3649((-103).toByte(), i_16_, i_2_ - -((aFontDefinition_4063!!.anInt1992).toDouble() * 0.7).toInt(), Player.anInt10567, i)
+                            if (Class348_Sub40_Sub2.anInt9101 != -1) aRenderer4048!!.method3649((-96).toByte(), i_16_, (aFontDefinition_4063!!.anInt1992) + i_2_, (Class348_Sub40_Sub2.anInt9101), i)
                             i_5_ = c.code
                             i += i_16_
                         }
@@ -117,35 +117,35 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
             anInt4054++
             if (string == null) return 0
             method2579(i_30_, -76, i_23_)
-            if (i_32_ == 0) i_32_ = aClass143_4063!!.anInt1992
+            if (i_32_ == 0) i_32_ = aFontDefinition_4063!!.anInt1992
             val is_33_: IntArray?
-            if ((aClass143_4063!!.anInt1993 + aClass143_4063!!.anInt1988 - -i_32_) <= i || i_32_ + i_32_ <= i) is_33_ = intArrayOf(i_25_)
+            if ((aFontDefinition_4063!!.anInt1993 + aFontDefinition_4063!!.anInt1988 - -i_32_) <= i || i_32_ + i_32_ <= i) is_33_ = intArrayOf(i_25_)
             else is_33_ = null
-            var i_34_ = aClass143_4063!!.method1188(string, is_33_, Class156.aStringArray2113, 87.toByte(), abstractModelRenderers)
+            var i_34_ = aFontDefinition_4063!!.method1188(string, is_33_, Class156.aStringArray2113, 87.toByte(), abstractModelRenderers)
             if (i_31_ == -1) {
                 i_31_ = i / i_32_
                 if (i_31_ <= 0) i_31_ = 1
             }
             if (i_31_ > 0 && i_31_ <= i_34_) {
-                Class156.aStringArray2113!![i_31_ - 1] = aClass143_4063!!.method1181(abstractModelRenderers, i_25_, (Class156.aStringArray2113!![i_31_ - 1]), 55.toByte())
+                Class156.aStringArray2113!![i_31_ - 1] = aFontDefinition_4063!!.method1181(abstractModelRenderers, i_25_, (Class156.aStringArray2113!![i_31_ - 1]), 55.toByte())
                 i_34_ = i_31_
             }
             if (i_26_ == 3 && i_34_ == 1) i_26_ = 1
             val i_35_ = -116 % ((i_21_ - -28) / 43)
             var i_36_: Int
-            if (i_26_ == 0) i_36_ = aClass143_4063!!.anInt1988 + i_24_
+            if (i_26_ == 0) i_36_ = aFontDefinition_4063!!.anInt1988 + i_24_
             else if (i_26_ != 1) {
                 if (i_26_ != 2) {
-                    var i_37_ = ((-(i_32_ * (i_34_ + -1)) + (i + (-aClass143_4063!!.anInt1988 + -aClass143_4063!!.anInt1993))) / (1 + i_34_))
+                    var i_37_ = ((-(i_32_ * (i_34_ + -1)) + (i + (-aFontDefinition_4063!!.anInt1988 + -aFontDefinition_4063!!.anInt1993))) / (1 + i_34_))
                     if (i_37_ < 0) i_37_ = 0
                     i_32_ += i_37_
-                    i_36_ = aClass143_4063!!.anInt1988 + (i_24_ - -i_37_)
-                } else i_36_ = (-aClass143_4063!!.anInt1993 + i + (i_24_ - (i_34_ + -1) * i_32_))
-            } else i_36_ = ((-aClass143_4063!!.anInt1993 + (-aClass143_4063!!.anInt1988 + i + -(i_32_ * (-1 + i_34_)))) / 2 + (aClass143_4063!!.anInt1988 + i_24_))
+                    i_36_ = aFontDefinition_4063!!.anInt1988 + (i_24_ - -i_37_)
+                } else i_36_ = (-aFontDefinition_4063!!.anInt1993 + i + (i_24_ - (i_34_ + -1) * i_32_))
+            } else i_36_ = ((-aFontDefinition_4063!!.anInt1993 + (-aFontDefinition_4063!!.anInt1988 + i + -(i_32_ * (-1 + i_34_)))) / 2 + (aFontDefinition_4063!!.anInt1988 + i_24_))
             for (i_38_ in 0..<i_34_) {
                 if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
-                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
-                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
+                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
+                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
                 else if (i_38_ != i_34_ - 1) {
                     method2580(Class156.aStringArray2113!![i_38_]!!, 0, i_25_)
                     method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
@@ -169,7 +169,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
         if (i_43_ >= -119) method2571(-128, -30, null, null, -107, -80, null, -6, -122, null)
         if (string != null) {
             method2579(i_44_, 122, i_41_)
-            method2583(0, i, 0, null, null, string, null, 25625, -aClass143_4063!!.method1183(true, string) + i_42_)
+            method2583(0, i, 0, null, null, string, null, 25625, -aFontDefinition_4063!!.method1183(true, string) + i_42_)
         }
     }
 
@@ -238,7 +238,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
             val `is` = IntArray(i_62_)
             if (bool != false) aRenderer4048 = null
             for (i_63_ in 0..<i_62_) `is`[i_63_] = (5.0 * sin(i_63_.toDouble() / 2.0 + i_61_.toDouble() / 5.0)).toInt()
-            method2566(null, `is`, -(aClass143_4063!!.method1183(!bool, string) / 2) + i_59_, null, null, i_58_, string, 174)
+            method2566(null, `is`, -(aFontDefinition_4063!!.method1183(!bool, string) / 2) + i_59_, null, null, i_58_, string, 174)
         }
     }
 
@@ -246,7 +246,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
         anInt4060++
         if (string != null) {
             method2579(i_66_, 115, i_65_)
-            method2583(0, i_67_, 0, null, null, string, null, 25625, -(aClass143_4063!!.method1183(true, string) / 2) + i_64_)
+            method2583(0, i_67_, 0, null, null, string, null, 25625, -(aFontDefinition_4063!!.method1183(true, string) / 2) + i_64_)
             val i_68_ = 7 % ((66 - i) / 44)
         }
     }
@@ -275,7 +275,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 `is`[i_80_] = (sin(i.toDouble() + i_80_.toDouble() / 1.5) * d).toInt()
                 i_80_++
             }
-            method2566(null, `is`, i_77_ + -(aClass143_4063!!.method1183(true, string) / 2), null, null, i_73_, string, 174)
+            method2566(null, `is`, i_77_ + -(aFontDefinition_4063!!.method1183(true, string) / 2), null, null, i_73_, string, 174)
         }
     }
 
@@ -307,14 +307,14 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 else if (!bool && i_91_ == 32) i_89_++
             } else bool = true
         }
-        if (i_89_ > 0) ParserSpecialCharsHolder.anInt1902 = (-aClass143_4063!!.method1183(true, string) + i_88_ shl 8) / i_89_
+        if (i_89_ > 0) ParserSpecialCharsHolder.anInt1902 = (-aFontDefinition_4063!!.method1183(true, string) + i_88_ shl 8) / i_89_
     }
 
     fun method2581(string: String?, i: Int, i_92_: Int, i_93_: Int, i_94_: Byte, i_95_: Int, i_96_: Int) {
         anInt4049++
         if (string != null) {
             method2579(i_95_, 117, i)
-            if (i_94_ > -12) aClass143_4063 = null
+            if (i_94_ > -12) aFontDefinition_4063 = null
             val i_97_ = string.length
             val `is` = IntArray(i_97_)
             val is_98_ = IntArray(i_97_)
@@ -324,7 +324,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 is_98_[i_99_] = (5.0 * sin(i_99_.toDouble() / 3.0 + i_92_.toDouble() / 5.0)).toInt()
                 i_99_++
             }
-            method2566(null, is_98_, -(aClass143_4063!!.method1183(true, string) / 2) + i_96_, null, `is`, i_93_, string, 174)
+            method2566(null, is_98_, -(aFontDefinition_4063!!.method1183(true, string) / 2) + i_96_, null, `is`, i_93_, string, 174)
         }
     }
 
@@ -332,7 +332,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
         var i_103_ = i_103_
         var i_106_ = i_106_
         try {
-            i_103_ -= aClass143_4063!!.anInt1992
+            i_103_ -= aFontDefinition_4063!!.anInt1992
             anInt4061++
             var i_107_ = -1
             var i_108_ = -1
@@ -360,8 +360,8 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                                                     val i_112_ = (Class348_Sub41.method3156(true, (string_111_.substring(4))))
                                                     val class105 = abstractModelRenderers!![i_112_]!!
                                                     val i_113_ = (if (`is` == null) class105.method980() else `is`[i_112_])
-                                                    if (((Class348_Sub42_Sub1.anInt9492) and 0xffffff.inv()) != -16777216) class105.method964(i_106_, (-i_113_ + (aClass143_4063!!.anInt1992) + i_103_), 0, (0xffffff or (0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492))), 1)
-                                                    else class105.method964(i_106_, ((aClass143_4063!!.anInt1992) + (i_103_ - i_113_)), 1, 0, 1)
+                                                    if (((Class348_Sub42_Sub1.anInt9492) and 0xffffff.inv()) != -16777216) class105.method964(i_106_, (-i_113_ + (aFontDefinition_4063!!.anInt1992) + i_103_), 0, (0xffffff or (0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492))), 1)
+                                                    else class105.method964(i_106_, ((aFontDefinition_4063!!.anInt1992) + (i_103_ - i_113_)), 1, 0, 1)
                                                     i_108_ = -1
                                                     i_106_ += abstractModelRenderers[i_112_]!!.method966()
                                                 } catch (exception: Exception) {
@@ -376,7 +376,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                             } else c = '\u00a0'
                         }
                         if (i_107_ == -1) {
-                            if (i_108_ != -1) i_106_ += aClass143_4063!!.method1182(i_108_, (-90).toByte(), c)
+                            if (i_108_ != -1) i_106_ += aFontDefinition_4063!!.method1182(i_108_, (-90).toByte(), c)
                             if (c.code != 32) {
                                 if (var_sprite == null) {
                                     if ((Class20.anInt320 and 0xffffff.inv()) != 0) fa(c, i_106_ + 1, 1 + i_103_, Class20.anInt320, true)
@@ -390,9 +390,9 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                                 i_106_ += Class258.anInt4848 shr 8
                                 Class258.anInt4848 = Class258.anInt4848 and 0xff
                             }
-                            val i_114_ = aClass143_4063!!.method1184((-48).toByte(), c.code)
-                            if (Player.anInt10567 != -1) aRenderer4048!!.method3649((-119).toByte(), i_114_, (aClass143_4063!!.anInt1992.toDouble() * 0.7).toInt() + i_103_, Player.anInt10567, i_106_)
-                            if (Class348_Sub40_Sub2.anInt9101 != -1) aRenderer4048!!.method3649((-114).toByte(), i_114_, (aClass143_4063!!.anInt1992) + (i_103_ + 1), (Class348_Sub40_Sub2.anInt9101), i_106_)
+                            val i_114_ = aFontDefinition_4063!!.method1184((-48).toByte(), c.code)
+                            if (Player.anInt10567 != -1) aRenderer4048!!.method3649((-119).toByte(), i_114_, (aFontDefinition_4063!!.anInt1992.toDouble() * 0.7).toInt() + i_103_, Player.anInt10567, i_106_)
+                            if (Class348_Sub40_Sub2.anInt9101 != -1) aRenderer4048!!.method3649((-114).toByte(), i_114_, (aFontDefinition_4063!!.anInt1992) + (i_103_ + 1), (Class348_Sub40_Sub2.anInt9101), i_106_)
                             i_106_ += i_114_
                             i_108_ = c.code
                         }
@@ -407,10 +407,10 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
 
     init {
         try {
-            aClass143_4063 = class143
+            aFontDefinition_4063 = fontDefinition
             aRenderer4048 = var_renderer
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class143 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("da.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -441,25 +441,25 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 i_139_++
             }
             var i_140_ = i_133_
-            var i_141_ = aClass143_4063!!.anInt1988 + i_130_
+            var i_141_ = aFontDefinition_4063!!.anInt1988 + i_130_
             var i_142_ = -1
-            if (i_125_ == 1) i_141_ += (-aClass143_4063!!.anInt1988 + i_127_ + -aClass143_4063!!.anInt1993) / 2
-            else if (i_125_ == 2) i_141_ = -aClass143_4063!!.anInt1993 + (i_127_ + i_130_)
+            if (i_125_ == 1) i_141_ += (-aFontDefinition_4063!!.anInt1988 + i_127_ + -aFontDefinition_4063!!.anInt1993) / 2
+            else if (i_125_ == 2) i_141_ = -aFontDefinition_4063!!.anInt1993 + (i_127_ + i_130_)
             if (i_132_ != -33) method2578('\ufffe', 83, -110, 26, true, null, 113, 97)
             if (i_129_ == 1) {
-                i_142_ = aClass143_4063!!.method1183(true, string) + i_138_
+                i_142_ = aFontDefinition_4063!!.method1183(true, string) + i_138_
                 i_140_ += (i + -i_142_) / 2
             } else if (i_129_ == 2) {
-                i_142_ = aClass143_4063!!.method1183(true, string) - -i_138_
+                i_142_ = aFontDefinition_4063!!.method1183(true, string) - -i_138_
                 i_140_ += -i_142_ + i
             }
             method2566(abstractModelRenderers, null, i_140_, `is`, is_137_, i_141_, string, 174)
             if (is_134_ != null) {
-                if (i_142_ == -1) i_142_ = aClass143_4063!!.method1183(true, string) - -i_138_
+                if (i_142_ == -1) i_142_ = aFontDefinition_4063!!.method1183(true, string) - -i_138_
                 is_134_[2] = i_142_
-                is_134_[3] = (aClass143_4063!!.anInt1993 + aClass143_4063!!.anInt1988)
+                is_134_[3] = (aFontDefinition_4063!!.anInt1993 + aFontDefinition_4063!!.anInt1988)
                 is_134_[0] = i_140_
-                is_134_[1] = -aClass143_4063!!.anInt1988 + i_141_
+                is_134_[1] = -aFontDefinition_4063!!.anInt1988 + i_141_
             }
             return i_138_
         } catch (runtimeexception: RuntimeException) {

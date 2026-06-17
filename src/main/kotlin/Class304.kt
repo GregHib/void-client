@@ -91,7 +91,7 @@ class Class304 internal constructor(var anInt3850: Int) {
 
         fun method2291(i: Byte, i_4_: Int, i_5_: Int) {
             anInt3849++
-            var i_6_ = (Class369.aClass143_4962!!.method1183(true, Class274.aClass274_3507!!.method2063(Class348_Sub33.anInt6967, 544)))
+            var i_6_ = (Class369.aFontDefinition_4962!!.method1183(true, Class274.aClass274_3507!!.method2063(Class348_Sub33.anInt6967, 544)))
             val i_7_: Int
             if (Class348_Sub42_Sub6.aBoolean9535) {
                 var class348_sub42_sub13 = (Class233.aLinkedNodeListIterator_3022!!.method1011(-87) as? Class348_Sub42_Sub13?)

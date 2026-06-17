@@ -12,7 +12,7 @@ object Class281 {
     @JvmField
     var aClass351_3648: Class351? = Class351(55, 4)
     @JvmField
-    var aClass143_3649: Class143? = null
+    var aFontDefinition_3649: FontDefinition? = null
     @JvmField
     var anInt3650: Int = 0
 
@@ -40,7 +40,7 @@ object Class281 {
     @JvmStatic
     fun method2107(i: Byte) {
         aClass351_3648 = null
-        aClass143_3649 = null
+        aFontDefinition_3649 = null
         aClass351_3644 = null
         if (i.toInt() != 77) Class281.method2107((-107).toByte())
     }

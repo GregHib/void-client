@@ -52,7 +52,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                     if (`is` != null) string += method1273(`is`, true)
                     Class262.aClass324_3326!!.method2567(i_1_, string, 116.toByte(), i_4_, 0, i_7_ - -3, Class341.aAbstractModelRendererArray4234, Class175.anIntArray2330)
                     if (!class348_sub42_sub12.aBoolean9597) break
-                    Class239_Sub24.aAbstractModelRenderer_6097!!.method974(Class369.aClass143_4962!!.method1183(true, string) + (i_7_ - -5), -12 + i_1_)
+                    Class239_Sub24.aAbstractModelRenderer_6097!!.method974(Class369.aFontDefinition_4962!!.method1183(true, string) + (i_7_ - -5), -12 + i_1_)
                 } catch (runtimeexception: RuntimeException) {
                     throw Class348_Sub17.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
                 }

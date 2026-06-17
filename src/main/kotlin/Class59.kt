@@ -246,7 +246,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     var i_61_ = 0
                     var i_62_ = 0
                     if (class42.aString597 != null) {
-                        i_60_ = (Class258_Sub1.aClass143_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
+                        i_60_ = (Class258_Sub1.aFontDefinition_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
                         var i_63_ = 0
                         while (i_60_ > i_63_) {
                             var string = NativeRenderer.aStringArray8019!![i_63_]!!

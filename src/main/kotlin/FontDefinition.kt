@@ -1,7 +1,7 @@
 /* Class143 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class143 internal constructor(`is`: ByteArray?) {
+class FontDefinition internal constructor(`is`: ByteArray?) {
     private var aByteArrayArray1979: Array<ByteArray?>? = null
     private val aByteArray1986: ByteArray
     var anInt1988: Int

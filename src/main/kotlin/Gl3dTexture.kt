@@ -202,8 +202,8 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
         fun method249(i: Int) {
             anInt8627++
             Class286_Sub1.aStringArray6200 = arrayOfNulls<String>(500)
-            Class348_Sub31_Sub2.anInt9077 = 2 + (Class369.aClass143_4962!!.anInt1993 + Class369.aClass143_4962!!.anInt1988)
-            Class68.anInt1188 = (Class246.aClass143_3179!!.anInt1988 - (-Class246.aClass143_3179!!.anInt1993 - i))
+            Class348_Sub31_Sub2.anInt9077 = 2 + (Class369.aFontDefinition_4962!!.anInt1993 + Class369.aFontDefinition_4962!!.anInt1988)
+            Class68.anInt1188 = (Class246.aFontDefinition_3179!!.anInt1988 - (-Class246.aFontDefinition_3179!!.anInt1993 - i))
             var i_4_ = 0
             while ((i_4_ < Class286_Sub1.aStringArray6200!!.size)) {
                 Class286_Sub1.aStringArray6200!![i_4_] = ""

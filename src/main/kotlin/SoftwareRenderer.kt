@@ -1027,7 +1027,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         class109.aBoolean1669 = true
     }
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(fontDefinition: FontDefinition?, class207s: Array<Class207>?, bool: Boolean): Class324 {
         val `is` = IntArray(class207s!!.size)
         val is_283_ = IntArray(class207s.size)
         var bool_284_ = false
@@ -1037,11 +1037,11 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             if (class207s[i]!!.aByteArray2695 != null) bool_284_ = true
         }
         if (bool) {
-            if (bool_284_) return Class324_Sub4(this, class143, class207s, `is`, is_283_)
-            return Class324_Sub1(this, class143, class207s, `is`, is_283_)
+            if (bool_284_) return Class324_Sub4(this, fontDefinition, class207s, `is`, is_283_)
+            return Class324_Sub1(this, fontDefinition, class207s, `is`, is_283_)
         }
         require(!bool_284_) { "" }
-        return Class324_Sub3(this, class143, class207s, `is`, is_283_)
+        return Class324_Sub3(this, fontDefinition, class207s, `is`, is_283_)
     }
 
     override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {

@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeFontRendererAlt
 */
-class n(var_oa: oa?, var_ya: ya?, class143: Class143?, class207s: Array<Class207>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : Class324(var_oa, class143), Interface19 {
+class n(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, class207s: Array<Class207>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : Class324(var_oa, fontDefinition), Interface19 {
     var nativeid: Long = 0
 
     private external fun S(var_oa: oa?, var_ya: ya?, `is`: Array<ByteArray?>?, is_0_: IntArray?, is_1_: IntArray?, is_2_: IntArray?, is_3_: IntArray?, is_4_: IntArray?)

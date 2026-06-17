@@ -47,7 +47,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5740 = 0
             Class225.anInt2933 = 0
             OpenGlRenderer.anInt7661 = 0
-            Class143.anInt1991 = 0
+            FontDefinition.anInt1991 = 0
             Class246.anInt3175 = 0
             Class348_Sub51.anInt7266 = 0
             GameAppletFrame.anInt6 = 0
@@ -1771,7 +1771,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub1_Sub2.anInt9984 = 0
             Class377.anInt9896 = 0
             Class314_Sub1.anInt6362 = 0
-            Class143.anInt1989 = 0
+            FontDefinition.anInt1989 = 0
             Class175.anInt2325 = 0
             Class327.anInt4093 = 0
             Class186_Sub1.anInt5805 = 0
@@ -1914,7 +1914,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Npc.anInt10502 = 0
             Class348_Sub46.anInt7109 = 0
             Class284.anInt3665 = 0
-            Class143.anInt1984 = 0
+            FontDefinition.anInt1984 = 0
             Class239_Sub6.anInt5896 = 0
             NativeRenderer.anInt8015 = 0
             OpenGlRenderNode.anInt10481 = 0
@@ -2364,7 +2364,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class55.anInt992 = 0
             Npc.anInt10509 = 0
             NativeRenderer.anInt7913 = 0
-            Class143.anInt1990 = 0
+            FontDefinition.anInt1990 = 0
             Class64_Sub3.anInt5633 = 0
             OpenGlRenderer.anInt7563 = 0
             OpenGlRenderer.anInt7520 = 0
@@ -2518,7 +2518,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5690 = 0
             DelegatingRenderCanvas.anInt65 = 0
             Class318_Sub1_Sub5.anInt8768 = 0
-            Class143.anInt1983 = 0
+            FontDefinition.anInt1983 = 0
             Class318_Sub1_Sub3_Sub2.anInt10039 = 0
             Class348_Sub40_Sub16.anInt9224 = 0
             Class64_Sub3.anInt5589 = 0
@@ -2802,7 +2802,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8946 = 0
             NativeRenderer.anInt7897 = 0
             OpenGlRenderer.anInt7689 = 0
-            Class143.anInt1982 = 0
+            FontDefinition.anInt1982 = 0
             FloatCameraTransform.anInt5718 = 0
             MatrixCameraTransform.anInt5659 = 0
             Class51.anInt866 = 0
@@ -3425,7 +3425,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class369.anInt4967 = 0
             Class179.anInt2359 = 0
             Class351.anInt4322 = 0
-            Class143.anInt1981 = 0
+            FontDefinition.anInt1981 = 0
             Class348_Sub42_Sub18.anInt9683 = 0
             Class377.anInt9849 = 0
             Class348_Sub42_Sub15.anInt9656 = 0
@@ -3441,7 +3441,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class277.anInt3565 = 0
             Class48.anInt850 = 0
             Class348_Sub4.anInt6615 = 0
-            Class143.anInt1978 = 0
+            FontDefinition.anInt1978 = 0
             Class364.anInt4468 = 0
             Class348_Sub42_Sub3.anInt9508 = 0
             NativeRenderer.anInt7912 = 0
@@ -3510,7 +3510,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class319.anInt3986 = 0
             TextureDefinitionLoader.anInt1972 = 0
             Class314_Sub1.anInt6358 = 0
-            Class143.anInt1980 = 0
+            FontDefinition.anInt1980 = 0
             GameAppletFrame.anInt40 = 0
             Renderer.anInt4563 = 0
             NativeVertexBuffer.anInt4828 = 0
@@ -4011,7 +4011,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7948 = 0
             SoftwareSpriteRaster.anInt1614 = 0
             Class318_Sub9.anInt6467 = 0
-            Class143.anInt1985 = 0
+            FontDefinition.anInt1985 = 0
             Class54.anInt968 = 0
             Class239_Sub5.anInt5884 = 0
             Class187.anInt2499 = 0

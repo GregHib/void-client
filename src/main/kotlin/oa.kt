@@ -105,7 +105,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(fontDefinition: FontDefinition?, class207s: Array<Class207>?, bool: Boolean): Class324 {
         val `is` = IntArray(class207s!!.size)
         val is_60_ = IntArray(class207s.size)
         var bool_61_ = false
@@ -116,10 +116,10 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         }
         if (bool) {
             require(!bool_61_) { "Cannot specify alpha with non-mono font unless someone writes it" }
-            return h(this, aYa5121, class143, class207s, null)
+            return h(this, aYa5121, fontDefinition, class207s, null)
         }
         require(!bool_61_) { "Cannot specify alpha with non-mono font unless someone writes it" }
-        return n(this, aYa5121, class143, class207s, null)
+        return n(this, aYa5121, fontDefinition, class207s, null)
     }
 
     private external fun wa(i: Int, i_62_: Int, i_63_: Int, i_64_: Int, i_65_: Int, i_66_: Int)

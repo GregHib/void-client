@@ -157,7 +157,7 @@ class Class190 {
                 if (class42.aString597 != null) {
                     class323 = method1782(class42.anInt576, 10144)
                     if (class323 != null) {
-                        i_15_ = (Class258_Sub1.aClass143_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
+                        i_15_ = (Class258_Sub1.aFontDefinition_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
                         i_17_ = (class348_sub21!!.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)))
                         i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * class42.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)))
                         if (abstractModelRenderer == null) i_17_ -= i_15_ * class323.method2560() / 2

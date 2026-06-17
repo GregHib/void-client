@@ -28,8 +28,8 @@ class Class359 {
                 if (!Class21.aClass45_322!!.method421(false, Class295.anInt3762)) bool_0_ = false
                 else ScriptCompilerThread.aClass207_1727 = Class207.method1512(Class21.aClass45_322!!, Class295.anInt3762)
             }
-            if (Class281.aClass143_3649 == null) {
-                if (SoftwareSpriteRaster.aClass45_1627!!.method421(false, Class20.anInt317)) Class281.aClass143_3649 = Class239_Sub10.method1766((-89).toByte(), Class20.anInt317, SoftwareSpriteRaster.aClass45_1627!!)
+            if (Class281.aFontDefinition_3649 == null) {
+                if (SoftwareSpriteRaster.aClass45_1627!!.method421(false, Class20.anInt317)) Class281.aFontDefinition_3649 = Class239_Sub10.method1766((-89).toByte(), Class20.anInt317, SoftwareSpriteRaster.aClass45_1627!!)
                 else bool_0_ = false
             }
             if (Class5_Sub1_Sub1.aClass207Array9929 == null) {

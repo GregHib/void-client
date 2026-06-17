@@ -47,7 +47,7 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
         @JvmField
         var anInt4960: Int = 0
         @JvmField
-        var aClass143_4962: Class143? = null
+        var aFontDefinition_4962: FontDefinition? = null
         @JvmField
         var anInt4964: Int = 0
         @JvmField
@@ -58,7 +58,7 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
         var aBoolean4972: Boolean = false
         @JvmStatic
         fun method3567(i: Int) {
-            aClass143_4962 = null
+            aFontDefinition_4962 = null
             val i_0_ = 105 % ((-15 - i) / 36)
         }
 
@@ -66,12 +66,12 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
         fun method3568(var_renderer: Renderer?, i: Int) {
             anInt4964++
             Class240.aClass324_4684 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class56.anInt1044)
-            Class258_Sub1.aClass143_8527 = GlVertexBufferBase.method1151(-25411, var_renderer, Class56.anInt1044)
-            if (i != 4) aClass143_4962 = null
+            Class258_Sub1.aFontDefinition_8527 = GlVertexBufferBase.method1151(-25411, var_renderer, Class56.anInt1044)
+            if (i != 4) aFontDefinition_4962 = null
             GameAppletFrame.aClass324_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class17.anInt235)
-            Class246.aClass143_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, Class17.anInt235)
+            Class246.aFontDefinition_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, Class17.anInt235)
             Class262.aClass324_3326 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class291.anInt3736)
-            aClass143_4962 = GlVertexBufferBase.method1151(-25411, var_renderer, Class291.anInt3736)
+            aFontDefinition_4962 = GlVertexBufferBase.method1151(-25411, var_renderer, Class291.anInt3736)
         }
 
         @JvmStatic

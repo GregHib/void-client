@@ -850,7 +850,7 @@ class Client : GameAppletFrame() {
         Exception_Sub1.method140((-126).toByte())
         Sprite.method158((-67).toByte())
         method3438(59.toByte())
-        Class143.method1180((-76).toByte())
+        FontDefinition.method1180((-76).toByte())
         method879(96)
         method2719(11339)
         method2412(true)
@@ -1705,14 +1705,14 @@ class Client : GameAppletFrame() {
                         if (Class36.anInt489 == 1) {
                             if (Class268.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = Class268.anInt3441
                             val i = ((-Class268.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115)
-                            method3511(true, aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
+                            method3511(true, aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
                         } else if (Class36.anInt489 == 2) {
                             if (Class31.anInt443 < Class154.anInt2101) Class31.anInt443 = Class154.anInt2101
                             val i = (((Class31.anInt443 - Class154.anInt2101) * 50 / Class31.anInt443) + 50)
-                            method3511(true, aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
-                        } else method3511(true, aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
+                            method3511(true, aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
+                        } else method3511(true, aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
                     } else if (Class240.anInt4674 != 10) {
-                        if (Class240.anInt4674 == 13) method3511(false, aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3497!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498!!.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aRenderer6654)
+                        if (Class240.anInt4674 == 13) method3511(false, aClass324_20, Class246.aFontDefinition_3179, ((Class274.aClass274_3497!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498!!.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aRenderer6654)
                     } else Class302.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)

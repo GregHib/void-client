@@ -169,7 +169,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                             for (i_43_ in strings.indices) {
                                 val i_44_ = i_42_ * i_43_ + 8
                                 var_renderer.KA(i_35_ + i_44_, i_36_, i_42_ + i_35_ - (-i_44_ - -8), i_36_ + 350)
-                                GameAppletFrame.aClass324_20!!.method2576(Class250.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-Class284.anInt3676 + i_41_) * Class68.anInt1188) + (-Class348_Sub31_Sub2.anInt9077 + i_36_ - (-350 - (-2 + -(Class246.aClass143_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
+                                GameAppletFrame.aClass324_20!!.method2576(Class250.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-Class284.anInt3676 + i_41_) * Class68.anInt1188) + (-Class348_Sub31_Sub2.anInt9077 + i_36_ - (-350 - (-2 + -(Class246.aFontDefinition_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
                             }
                             i_41_++
                         }
@@ -177,11 +177,11 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     Class240.aClass324_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (Class321.anInt4017 + i_35_ + -25), -121, -16777216)
                     var_renderer.KA(i_35_, i_36_, i_35_ - -Class321.anInt4017, i_36_ - -350)
                     var_renderer.method3649((-80).toByte(), Class321.anInt4017, -Class348_Sub31_Sub2.anInt9077 + (350 + i_36_), -1, i_35_)
-                    Class262.aClass324_3326!!.method2576("--> " + Class250.method1909(31.toByte(), Class363.aString4461!!), -1, (i_36_ - (-350 + Class369.aClass143_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
+                    Class262.aClass324_3326!!.method2576("--> " + Class250.method1909(31.toByte(), Class363.aString4461!!), -1, (i_36_ - (-350 + Class369.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
                     if (!Class175.aBoolean2329) break
                     var i_45_ = -1
                     if (Class367_Sub11.anInt7396 % 30 > 15) i_45_ = 16777215
-                    var_renderer.method3660(10 + (i_35_ - -(Class369.aClass143_4962!!.method1183(true, "--> " + (Class250.method1909(31.toByte(), Class363.aString4461!!).substring(0, Class348_Sub38.anInt7006))))), i_45_, 12, 350 + (i_36_ + -Class369.aClass143_4962!!.anInt1993 - 11), true)
+                    var_renderer.method3660(10 + (i_35_ - -(Class369.aFontDefinition_4962!!.method1183(true, "--> " + (Class250.method1909(31.toByte(), Class363.aString4461!!).substring(0, Class348_Sub38.anInt7006))))), i_45_, 12, 350 + (i_36_ + -Class369.aFontDefinition_4962!!.anInt1993 - 11), true)
                 } catch (runtimeexception: RuntimeException) {
                     throw Class348_Sub17.method2929(runtimeexception, ("go.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
                 }

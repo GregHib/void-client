@@ -207,7 +207,7 @@ object Class66 {
                 if (string_8_ == null) string_8_ = ""
                 if (string_8_.length > 80) string_8_ = string_8_.substring(0, 80)
                 anInt1157++
-                val class348_sub47 = method2148(Class143.aClass351_1987, (Class348_Sub23_Sub2.aClass77_9029), -117)
+                val class348_sub47 = method2148(FontDefinition.aClass351_1987, (Class348_Sub23_Sub2.aClass77_9029), -117)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, (method1745(string, -65) + 2 + method1745(string_8_, -65)))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeString((-5).toByte(), string)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, i_9_ - 1)
@@ -2391,7 +2391,7 @@ object Class66 {
                 }
                 if (i == 7102) {
                     val i_225_ = anIntArray1149!![--anInt1173]
-                    if (i_225_ != -1) Class143.method1189(-1, i_225_)
+                    if (i_225_ != -1) FontDefinition.method1189(-1, i_225_)
                     return
                 }
                 if (i == 7103) {

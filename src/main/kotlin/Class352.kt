@@ -6,20 +6,20 @@ import Class348_Sub42_Sub16_Sub2.Companion.method3265
 */
 class Class352 {
     var aClass324_4332: Class324?
-    var aClass143_4333: Class143? = null
+    var aFontDefinition_4333: FontDefinition? = null
 
     internal constructor(class324: Class324?) {
         this.aClass324_4332 = null
         this.aClass324_4332 = class324
     }
 
-    internal constructor(class324: Class324?, class143: Class143?) {
+    internal constructor(class324: Class324?, fontDefinition: FontDefinition?) {
         this.aClass324_4332 = null
         try {
-            this.aClass143_4333 = class143
+            this.aFontDefinition_4333 = fontDefinition
             this.aClass324_4332 = class324
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("el.<init>(" + (if (class324 != null) "{...}" else "null") + ',' + (if (class143 != null) "{...}" else "null") + ')'))
+            throw method2929(runtimeexception, ("el.<init>(" + (if (class324 != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -142,12 +142,12 @@ class Class239_Sub10 : Class239 {
         }
 
         @JvmStatic
-        fun method1766(i: Byte, i_16_: Int, class45: Class45): Class143? {
+        fun method1766(i: Byte, i_16_: Int, class45: Class45): FontDefinition? {
             anInt5944++
             if (i >= -24) return null
             val `is` = class45.method415(73.toByte(), i_16_)
             if (`is` == null) return null
-            return Class143(`is`)
+            return FontDefinition(`is`)
         }
     }
 }
