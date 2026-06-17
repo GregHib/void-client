@@ -24,9 +24,9 @@ class Class359 {
                 if (Class21.aClass45_322!!.method421(!bool, Class348_Sub32.anInt6938)) Class348_Sub7.aClass207_6643 = Class207.method1512(Class21.aClass45_322!!, Class348_Sub32.anInt6938)
                 else bool_0_ = false
             }
-            if (Class112.aClass207_1727 == null) {
+            if (ScriptCompilerThread.aClass207_1727 == null) {
                 if (!Class21.aClass45_322!!.method421(false, Class295.anInt3762)) bool_0_ = false
-                else Class112.aClass207_1727 = Class207.method1512(Class21.aClass45_322!!, Class295.anInt3762)
+                else ScriptCompilerThread.aClass207_1727 = Class207.method1512(Class21.aClass45_322!!, Class295.anInt3762)
             }
             if (Class281.aClass143_3649 == null) {
                 if (SoftwareSpriteRaster.aClass45_1627!!.method421(false, Class20.anInt317)) Class281.aClass143_3649 = Class239_Sub10.method1766((-89).toByte(), Class20.anInt317, SoftwareSpriteRaster.aClass45_1627!!)

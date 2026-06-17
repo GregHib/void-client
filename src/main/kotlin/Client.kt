@@ -637,7 +637,7 @@ class Client : GameAppletFrame() {
         frame.pack()
         frame.dispose()
         method3556(false)
-        Class39.aClass112_520 = Class112(Class348_Sub23_Sub1.aClass297_8992!!)
+        Class39.aScriptCompilerThread_520 = ScriptCompilerThread(Class348_Sub23_Sub1.aClass297_8992!!)
         Class348_Sub4.aClass248_6601 = Class248()
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
@@ -738,7 +738,7 @@ class Client : GameAppletFrame() {
         method1994(-13722)
         method1471(124.toByte())
         method1897(119.toByte())
-        Class112.method1052((-124).toByte())
+        ScriptCompilerThread.method1052((-124).toByte())
         method2671(0)
         method2344(i + -108)
         method390(10.toByte())
@@ -1275,7 +1275,7 @@ class Client : GameAppletFrame() {
         }
         method1265(16)
         Class348_Sub4.aClass248_6601!!.method1901(i xor 0x44.inv())
-        Class39.aClass112_520!!.method1051(true)
+        Class39.aScriptCompilerThread_520!!.method1051(true)
         if (Class76.aClass169_1286 != null) {
             Class76.aClass169_1286!!.method1303(16.toByte())
             Class76.aClass169_1286 = null

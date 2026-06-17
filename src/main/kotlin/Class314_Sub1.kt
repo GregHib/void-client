@@ -1,7 +1,7 @@
 /* Class314_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_23_: Class137?, class248: Class248?, class112: Class112?, i_24_: Int, `is`: ByteArray?, i_25_: Int, bool: Boolean) : Class314() {
+class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_23_: Class137?, class248: Class248?, scriptCompilerThread: ScriptCompilerThread?, i_24_: Int, `is`: ByteArray?, i_25_: Int, bool: Boolean) : Class314() {
     private var aClass291_6342: Class291? = null
     private val anInt6344: Int
     private val aByteArray6346: ByteArray?
@@ -9,7 +9,7 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
     private val anInt6350: Int
     private var aByteArray6351: ByteArray? = null
     private var anInt6352 = 0
-    private val aClass112_6354: Class112?
+    private val aScriptCompilerThread_6354: ScriptCompilerThread?
     private var aClass348_Sub42_Sub16_6355: Class348_Sub42_Sub16? = null
     private val aClass356_6360: Class356
     private var anInt6361 = 0
@@ -68,7 +68,7 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
                 while (aClass291_6342!!.anIntArray3725.size > anInt6373) {
                     if (aClass291_6342!!.anIntArray3725[anInt6373] == 0) anInt6373++
                     else {
-                        if (aClass112_6354!!.anInt1734 >= 250) {
+                        if (aScriptCompilerThread_6354!!.anInt1734 >= 250) {
                             bool = false
                             break
                         }
@@ -211,10 +211,10 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
                 if (aClass137_6365 == null || aByteArray6351!![i].toInt() == -1) {
                     if (aClass248_6347!!.method1900(-9)) return null
                     class348_sub42_sub16 = aClass248_6347.method1906((-125).toByte(), 2.toByte(), true, i, anInt6350)
-                } else class348_sub42_sub16 = aClass112_6354!!.method1055(aClass137_6365, i, (-110).toByte())
+                } else class348_sub42_sub16 = aScriptCompilerThread_6354!!.method1055(aClass137_6365, i, (-110).toByte())
             } else if (i_10_ == 1) {
                 if (aClass137_6365 == null) throw RuntimeException()
-                class348_sub42_sub16 = aClass112_6354!!.method1054(aClass137_6365, i, (-112).toByte())
+                class348_sub42_sub16 = aScriptCompilerThread_6354!!.method1054(aClass137_6365, i, (-112).toByte())
             } else {
                 if (i_10_ != 2) throw RuntimeException()
                 if (aClass137_6365 == null) throw RuntimeException()
@@ -254,7 +254,7 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
             `is`[`is`.size - 2] = (aClass291_6342!!.anIntArray3722[i] ushr 8).toByte()
             `is`[`is`.size - 1] = aClass291_6342!!.anIntArray3722[i].toByte()
             if (aClass137_6365 != null) {
-                aClass112_6354!!.method1049(`is`, aClass137_6365, 10.toByte(), i)
+                aScriptCompilerThread_6354!!.method1049(`is`, aClass137_6365, 10.toByte(), i)
                 if (aByteArray6351!![i].toInt() != 1) {
                     anInt6361++
                     aByteArray6351!![i] = 1.toByte()
@@ -335,7 +335,7 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
                 else aClass348_Sub42_Sub16_6355 = aClass248_6347.method1906(47.toByte(), 0.toByte(), true, anInt6350, 255)
                 return null
             }
-            if (aClass137_6364 != null) aClass112_6354!!.method1049(`is`, aClass137_6364, 10.toByte(), anInt6350)
+            if (aClass137_6364 != null) aScriptCompilerThread_6354!!.method1049(`is`, aClass137_6364, 10.toByte(), anInt6350)
         } while (false)
         aClass348_Sub42_Sub16_6355 = null
         if (aClass137_6365 != null) {
@@ -364,11 +364,11 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
                 aClass137_6364 = class137_23_
                 aBoolean6375 = bool
                 aClass248_6347 = class248
-                aClass112_6354 = class112
+                aScriptCompilerThread_6354 = scriptCompilerThread
                 if (aClass137_6364 == null) break
-                aClass348_Sub42_Sub16_6355 = aClass112_6354!!.method1055(aClass137_6364, anInt6350, (-112).toByte())
+                aClass348_Sub42_Sub16_6355 = aScriptCompilerThread_6354!!.method1055(aClass137_6364, anInt6350, (-112).toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bja.<init>(" + i + ',' + (if (class137 != null) "{...}" else "null") + ',' + (if (class137_23_ != null) "{...}" else "null") + ',' + (if (class248 != null) "{...}" else "null") + ',' + (if (class112 != null) "{...}" else "null") + ',' + i_24_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("bja.<init>(" + i + ',' + (if (class137 != null) "{...}" else "null") + ',' + (if (class137_23_ != null) "{...}" else "null") + ',' + (if (class248 != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + i_24_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
             }
             break
         } while (false)

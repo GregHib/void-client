@@ -1,12 +1,12 @@
 import Class348_Sub1_Sub2.Companion.method2730
 import java.math.BigInteger
 
-class Class340 internal constructor(class248: Class248?, class112: Class112?, biginteger: BigInteger?, biginteger_14_: BigInteger?) {
+class Class340 internal constructor(class248: Class248?, scriptCompilerThread: ScriptCompilerThread?, biginteger: BigInteger?, biginteger_14_: BigInteger?) {
     private val aClass248_4212: Class248?
     private val aBigInteger4213: BigInteger?
     private var aClass348_Sub49_4215: Class348_Sub49? = null
     private var aClass314_Sub1Array4216: Array<Class314_Sub1?>? = null
-    private var aClass112_4217: Class112? = null
+    private var aScriptCompilerThread_4217: ScriptCompilerThread? = null
     private val aBigInteger4218: BigInteger?
     private var aClass348_Sub42_Sub16_Sub1_4220: Class348_Sub42_Sub16_Sub1? = null
     fun method2670(i: Int) {
@@ -87,7 +87,7 @@ class Class340 internal constructor(class248: Class248?, class112: Class112?, bi
             val `is` = ByteArray(64)
             aClass348_Sub49_4215!!.method3389(2147483647, 0, 64, `is`)
             if (i >= -18) method2671(103)
-            val class314_sub1 = Class314_Sub1(i_10_, class137, class137_11_, aClass248_4212, aClass112_4217, i_12_, `is`, i_13_, bool)
+            val class314_sub1 = Class314_Sub1(i_10_, class137, class137_11_, aClass248_4212, aScriptCompilerThread_4217, i_12_, `is`, i_13_, bool)
             aClass314_Sub1Array4216!![i_10_] = class314_sub1
             return class314_sub1
         } catch (runtimeexception: RuntimeException) {
@@ -98,14 +98,14 @@ class Class340 internal constructor(class248: Class248?, class112: Class112?, bi
     init {
         do {
             try {
-                aClass112_4217 = class112
+                aScriptCompilerThread_4217 = scriptCompilerThread
                 aBigInteger4218 = biginteger_14_
                 aBigInteger4213 = biginteger
                 aClass248_4212 = class248
                 if (aClass248_4212!!.method1900(-31)) break
                 aClass348_Sub42_Sub16_Sub1_4220 = aClass248_4212.method1906((-80).toByte(), 0.toByte(), true, 255, 255)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("eb.<init>(" + (if (class248 != null) "{...}" else "null") + ',' + (if (class112 != null) "{...}" else "null") + ',' + (if (biginteger != null) "{...}" else "null") + ',' + (if (biginteger_14_ != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("eb.<init>(" + (if (class248 != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + (if (biginteger != null) "{...}" else "null") + ',' + (if (biginteger_14_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

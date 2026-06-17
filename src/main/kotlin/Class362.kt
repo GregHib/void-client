@@ -42,7 +42,7 @@ object Class362 {
                         i_5_ += NativeTerrainTile.method4008((-124).toByte())
                         i_6_ += method260(false)
                     }
-                    var_renderer.method3691(Class112.aClass207_1727, false)!!.method965((Class348_Sub40_Sub1.aClass207_9090!!.anInt2702) + i_5_, (Class348_Sub40_Sub1.aClass207_9090!!.anInt2696) + i_6_, -(2 * (Class348_Sub40_Sub1.aClass207_9090!!.anInt2702)) + i_1_, -((Class348_Sub40_Sub1.aClass207_9090!!.anInt2696) * 2) + i_2_, 1, 0, 0)
+                    var_renderer.method3691(ScriptCompilerThread.aClass207_1727, false)!!.method965((Class348_Sub40_Sub1.aClass207_9090!!.anInt2702) + i_5_, (Class348_Sub40_Sub1.aClass207_9090!!.anInt2696) + i_6_, -(2 * (Class348_Sub40_Sub1.aClass207_9090!!.anInt2702)) + i_1_, -((Class348_Sub40_Sub1.aClass207_9090!!.anInt2696) * 2) + i_2_, 1, 0, 0)
                     var_renderer.method3691(Class348_Sub40_Sub1.aClass207_9090, true)!!.method974(i_5_, i_6_)
                     Class348_Sub40_Sub1.aClass207_9090!!.method1518()
                     var_renderer.method3691(Class348_Sub40_Sub1.aClass207_9090, true)!!.method974(i_5_ + i_1_ - i_3_, i_6_)

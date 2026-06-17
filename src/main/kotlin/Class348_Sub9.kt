@@ -245,7 +245,7 @@ class Class348_Sub9 : Class348() {
                                 Class348_Sub42_Sub14.method3243(118, class348_sub47)
                             }
                             if (i_8_ == 8) {
-                                Class112.anInt1726++
+                                ScriptCompilerThread.anInt1726++
                                 val class348_sub47 = method2148((Class243.aClass351_3165), (Class348_Sub23_Sub2.aClass77_9029), -117)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 Class348_Sub42_Sub14.method3243(-96, class348_sub47)

@@ -92,7 +92,7 @@ class Class239_Sub10 : Class239 {
             }
             Class348_Sub8.aRenderer6654!!.la()
             Class348_Sub42_Sub20.method3281(77.toByte(), Class348_Sub8.aRenderer6654!!)
-            var i_7_ = Class112.method1053(3112)
+            var i_7_ = ScriptCompilerThread.method1053(3112)
             if (i_7_ == -1) i_7_ = Class362.anInt4458
             if (i_7_ == -1) i_7_ = Class348_Sub42_Sub16_Sub1.anInt10447
             Class33.method338(0, i_7_)

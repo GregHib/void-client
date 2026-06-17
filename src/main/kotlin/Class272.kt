@@ -63,7 +63,7 @@ abstract class Class272 {
                 Class269.anInt3451 = i_0_
                 OutputStream_Sub1.anInt98 = i_2_
                 Class290.anInt3712 = i_6_
-                Class112.aClass207_1727 = null
+                ScriptCompilerThread.aClass207_1727 = null
                 Class348_Sub32.anInt6938 = i_1_
                 Class359.method3490(true)
                 val i_9_ = -77 % ((i_4_ - 29) / 34)

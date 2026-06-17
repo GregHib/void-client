@@ -3,7 +3,7 @@ import Class286_Sub5.Companion.method2161
 /* Class112 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class112 internal constructor(class297: Class297) : Runnable {
+class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
     private val aLinkedNodeListIterator_1730 = LinkedNodeListIterator()
     private var aThread1733: Thread?
     var anInt1734: Int = 0
