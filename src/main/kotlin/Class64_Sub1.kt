@@ -58,7 +58,7 @@ class Class64_Sub1 : Class64 {
     private var aClass360Array5360: Array<Class360?>? = null
     private var aClass6Array5361: Array<Class6?>? = null
     private lateinit var anIntArray5362: IntArray
-    private var aClass350Array5363: Array<Class350?>? = null
+    private var aModelTransformParamsArray5363: Array<ModelTransformParams?>? = null
     private lateinit var aShortArray5364: ShortArray
     private var aShort5365: Short = 0
     private var anIntArray5366: IntArray? = null
@@ -298,16 +298,16 @@ class Class64_Sub1 : Class64 {
             }
         } else class64_sub1_7_.aByteArray5386 = aByteArray5386
         if ((i and 0xc580) != 0) {
-            if (class64_sub1_8_.aClass350Array5363 == null || class64_sub1_8_.aClass350Array5363!!.size < anInt5389) {
+            if (class64_sub1_8_.aModelTransformParamsArray5363 == null || class64_sub1_8_.aModelTransformParamsArray5363!!.size < anInt5389) {
                 val i_32_ = anInt5389
-                class64_sub1_8_.aClass350Array5363 = arrayOfNulls<Class350>(i_32_)
-                class64_sub1_7_.aClass350Array5363 = class64_sub1_8_.aClass350Array5363
-                for (i_33_ in 0..<anInt5389) class64_sub1_7_.aClass350Array5363!![i_33_] = aClass350Array5363!![i_33_]!!.method3453(true)
+                class64_sub1_8_.aModelTransformParamsArray5363 = arrayOfNulls<ModelTransformParams>(i_32_)
+                class64_sub1_7_.aModelTransformParamsArray5363 = class64_sub1_8_.aModelTransformParamsArray5363
+                for (i_33_ in 0..<anInt5389) class64_sub1_7_.aModelTransformParamsArray5363!![i_33_] = aModelTransformParamsArray5363!![i_33_]!!.method3453(true)
             } else {
-                class64_sub1_7_.aClass350Array5363 = class64_sub1_8_.aClass350Array5363
-                for (i_34_ in 0..<anInt5389) class64_sub1_7_.aClass350Array5363!![i_34_]!!.method3454(aClass350Array5363!![i_34_]!!, true)
+                class64_sub1_7_.aModelTransformParamsArray5363 = class64_sub1_8_.aModelTransformParamsArray5363
+                for (i_34_ in 0..<anInt5389) class64_sub1_7_.aModelTransformParamsArray5363!![i_34_]!!.method3454(aModelTransformParamsArray5363!![i_34_]!!, true)
             }
-        } else class64_sub1_7_.aClass350Array5363 = aClass350Array5363
+        } else class64_sub1_7_.aModelTransformParamsArray5363 = aModelTransformParamsArray5363
         if (aFloatArrayArray5314 == null || (i and 0x10) == 0) {
             class64_sub1_7_.aFloatArrayArray5314 = aFloatArrayArray5314
             class64_sub1_7_.aFloatArrayArray5345 = aFloatArrayArray5345
@@ -645,7 +645,7 @@ class Class64_Sub1 : Class64 {
                 if (aClass6Array5361 != null) {
                     for (i_98_ in 0..<anInt5389) {
                         val class6 = aClass6Array5361!![i_98_]!!
-                        val class350 = aClass350Array5363!![i_98_]!!
+                        val class350 = aModelTransformParamsArray5363!![i_98_]!!
                         class350.anInt4313 = (class350.anInt4313 and 0xffffff or ((255 - (aByteArray5325!![class6.anInt144].toInt() and 0xff)) shl 24))
                     }
                 }
@@ -677,7 +677,7 @@ class Class64_Sub1 : Class64 {
                 if (aClass6Array5361 != null) {
                     for (i_108_ in 0..<anInt5389) {
                         val class6 = aClass6Array5361!![i_108_]!!
-                        val class350 = aClass350Array5363!![i_108_]!!
+                        val class350 = aModelTransformParamsArray5363!![i_108_]!!
                         class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
                     }
                 }
@@ -689,7 +689,7 @@ class Class64_Sub1 : Class64 {
                     if (i_110_ < anIntArrayArray5379!!.size) {
                         val is_111_ = anIntArrayArray5379!![i_110_]!!
                         for (i_112_ in is_111_.indices) {
-                            val class350 = aClass350Array5363!![is_111_[i_112_]]!!
+                            val class350 = aModelTransformParamsArray5363!![is_111_[i_112_]]!!
                             class350.anInt4316 += i_44_
                             class350.anInt4317 += i_45_
                         }
@@ -703,7 +703,7 @@ class Class64_Sub1 : Class64 {
                     if (i_114_ < anIntArrayArray5379!!.size) {
                         val is_115_ = anIntArrayArray5379!![i_114_]!!
                         for (i_116_ in is_115_.indices) {
-                            val class350 = aClass350Array5363!![is_115_[i_116_]]!!
+                            val class350 = aModelTransformParamsArray5363!![is_115_[i_116_]]!!
                             class350.anInt4314 = class350.anInt4314 * i_44_ shr 7
                             class350.anInt4311 = class350.anInt4311 * i_45_ shr 7
                         }
@@ -716,7 +716,7 @@ class Class64_Sub1 : Class64 {
                 if (i_118_ < anIntArrayArray5379!!.size) {
                     val is_119_ = anIntArrayArray5379!![i_118_]!!
                     for (i_120_ in is_119_.indices) {
-                        val class350 = aClass350Array5363!![is_119_[i_120_]]!!
+                        val class350 = aModelTransformParamsArray5363!![is_119_[i_120_]]!!
                         class350.anInt4308 = class350.anInt4308 + i_44_ and 0x3fff
                     }
                 }
@@ -1107,7 +1107,7 @@ class Class64_Sub1 : Class64 {
                 if (aClass6Array5361 != null) {
                     for (i_260_ in 0..<anInt5389) {
                         val class6 = aClass6Array5361!![i_260_]!!
-                        val class350 = aClass350Array5363!![i_260_]!!
+                        val class350 = aModelTransformParamsArray5363!![i_260_]!!
                         class350.anInt4313 = (class350.anInt4313 and 0xffffff or ((255 - (aByteArray5325!![class6.anInt144].toInt() and 0xff)) shl 24))
                     }
                 }
@@ -1141,7 +1141,7 @@ class Class64_Sub1 : Class64 {
                 if (aClass6Array5361 != null) {
                     for (i_270_ in 0..<anInt5389) {
                         val class6 = aClass6Array5361!![i_270_]!!
-                        val class350 = aClass350Array5363!![i_270_]!!
+                        val class350 = aModelTransformParamsArray5363!![i_270_]!!
                         class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
                     }
                 }
@@ -1153,7 +1153,7 @@ class Class64_Sub1 : Class64 {
                     if (i_272_ < anIntArrayArray5379!!.size) {
                         val is_273_ = anIntArrayArray5379!![i_272_]!!
                         for (i_274_ in is_273_.indices) {
-                            val class350 = aClass350Array5363!![is_273_[i_274_]]!!
+                            val class350 = aModelTransformParamsArray5363!![is_273_[i_274_]]!!
                             class350.anInt4316 += i_125_
                             class350.anInt4317 += i_126_
                         }
@@ -1167,7 +1167,7 @@ class Class64_Sub1 : Class64 {
                     if (i_276_ < anIntArrayArray5379!!.size) {
                         val is_277_ = anIntArrayArray5379!![i_276_]!!
                         for (i_278_ in is_277_.indices) {
-                            val class350 = aClass350Array5363!![is_277_[i_278_]]!!
+                            val class350 = aModelTransformParamsArray5363!![is_277_[i_278_]]!!
                             class350.anInt4314 = (class350.anInt4314 * i_125_ shr 7)
                             class350.anInt4311 = (class350.anInt4311 * i_126_ shr 7)
                         }
@@ -1180,7 +1180,7 @@ class Class64_Sub1 : Class64 {
                 if (i_280_ < anIntArrayArray5379!!.size) {
                     val is_281_ = anIntArrayArray5379!![i_280_]!!
                     for (i_282_ in is_281_.indices) {
-                        val class350 = aClass350Array5363!![is_281_[i_282_]]!!
+                        val class350 = aModelTransformParamsArray5363!![is_281_[i_282_]]!!
                         class350.anInt4308 = (class350.anInt4308 + i_125_ and 0x3fff)
                     }
                 }
@@ -1477,7 +1477,7 @@ class Class64_Sub1 : Class64 {
                     val i_337_ = anIntArray5400!![i]
                     if (i_337_ != -1) {
                         val class6 = aClass6Array5361!![i_337_]!!
-                        val class350 = aClass350Array5363!![i_337_]!!
+                        val class350 = aModelTransformParamsArray5363!![i_337_]!!
                         if (!class6.aBoolean145) method635(i)
                         aHa_Sub1_5353.method3720(class350.anInt4312, class350.anInt4310, class350.anInt4320, class350.anInt4309, class350.anInt4307, class350.anInt4308, class6.aShort146.toInt() and 0xffff, class350.anInt4313, class6.aByte148.toInt(), class6.aByte156.toInt())
                     } else method635(i)
@@ -1569,7 +1569,7 @@ class Class64_Sub1 : Class64 {
             if (aClass6Array5361 != null) {
                 for (i_357_ in 0..<anInt5389) {
                     val class6 = aClass6Array5361!![i_357_]!!
-                    val class350 = aClass350Array5363!![i_357_]!!
+                    val class350 = aModelTransformParamsArray5363!![i_357_]!!
                     class350.anInt4313 = (class350.anInt4313 and 0xffffff or (255 - (aByteArray5325!![class6.anInt144].toInt() and 0xff) shl 24))
                 }
             }
@@ -1592,25 +1592,25 @@ class Class64_Sub1 : Class64 {
             if (aClass6Array5361 != null) {
                 for (i_363_ in 0..<anInt5389) {
                     val class6 = aClass6Array5361!![i_363_]!!
-                    val class350 = aClass350Array5363!![i_363_]!!
+                    val class350 = aModelTransformParamsArray5363!![i_363_]!!
                     class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
                 }
             }
         } else if (i == 8) {
             for (i_364_ in 0..<anInt5389) {
-                val class350 = aClass350Array5363!![i_364_]!!
+                val class350 = aModelTransformParamsArray5363!![i_364_]!!
                 class350.anInt4316 += i_338_
                 class350.anInt4317 += i_339_
             }
         } else if (i == 10) {
             for (i_365_ in 0..<anInt5389) {
-                val class350 = aClass350Array5363!![i_365_]!!
+                val class350 = aModelTransformParamsArray5363!![i_365_]!!
                 class350.anInt4314 = class350.anInt4314 * i_338_ shr 7
                 class350.anInt4311 = class350.anInt4311 * i_339_ shr 7
             }
         } else if (i == 9) {
             for (i_366_ in 0..<anInt5389) {
-                val class350 = aClass350Array5363!![i_366_]!!
+                val class350 = aModelTransformParamsArray5363!![i_366_]!!
                 class350.anInt4308 = class350.anInt4308 + i_338_ and 0x3fff
             }
         }
@@ -1859,7 +1859,7 @@ class Class64_Sub1 : Class64 {
         if (aClass6Array5361 != null) {
             for (i_485_ in 0..<anInt5389) {
                 val class6 = aClass6Array5361!![i_485_]!!
-                val class350 = aClass350Array5363!![i_485_]!!
+                val class350 = aModelTransformParamsArray5363!![i_485_]!!
                 class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303(((aShortArray5311!![class6.anInt144]).toInt() and 0xffff), 30).toInt()]) and 0xffffff))
             }
         }
@@ -2573,7 +2573,7 @@ class Class64_Sub1 : Class64 {
         if (aClass6Array5361 != null) {
             for (i_628_ in 0..<anInt5389) {
                 val class6 = aClass6Array5361!![i_628_]!!
-                val class350 = aClass350Array5363!![i_628_]!!
+                val class350 = aModelTransformParamsArray5363!![i_628_]!!
                 class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![class6.anInt144]).toInt(), 30).toInt() and 0xffff]) and 0xffffff))
             }
         }
@@ -2761,7 +2761,7 @@ class Class64_Sub1 : Class64 {
                     if (aClass6Array5361 != null) {
                         for (i_669_ in 0..<anInt5389) {
                             val class6 = aClass6Array5361!![i_669_]!!
-                            val class350 = aClass350Array5363!![i_669_]!!
+                            val class350 = aModelTransformParamsArray5363!![i_669_]!!
                             val i_670_ = aShortArray5317[class6.anInt144]
                             val i_671_ = aShortArray5394[class6.anInt144]
                             val i_672_ = aShortArray5364[class6.anInt144]
@@ -2804,7 +2804,7 @@ class Class64_Sub1 : Class64 {
                     if (aClass6Array5361 != null) {
                         for (i_686_ in 0..<anInt5389) {
                             val class6 = aClass6Array5361!![i_686_]!!
-                            val class350 = aClass350Array5363!![i_686_]!!
+                            val class350 = aModelTransformParamsArray5363!![i_686_]!!
                             val i_687_ = aShortArray5317[class6.anInt144]
                             val i_688_ = aShortArray5394[class6.anInt144]
                             val i_689_ = aShortArray5364[class6.anInt144]
@@ -3409,14 +3409,14 @@ class Class64_Sub1 : Class64 {
         if (modelDefinition.aRectangleBoundsArray1832 != null) {
             anInt5389 = modelDefinition.aRectangleBoundsArray1832!!.size
             aClass6Array5361 = arrayOfNulls<Class6>(anInt5389)
-            aClass350Array5363 = arrayOfNulls<Class350>(anInt5389)
+            aModelTransformParamsArray5363 = arrayOfNulls<ModelTransformParams>(anInt5389)
             for (i_800_ in modelDefinition.aRectangleBoundsArray1832!!.indices) {
                 val class162 = modelDefinition.aRectangleBoundsArray1832!![i_800_]!!
                 val class189 = Class73.method742(104, class162.anInt2153)
                 var i_801_ = ((Crc64Hashable.anIntArray4983!![(modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff]) and 0xffffff)
                 i_801_ = (i_801_ or (255 - (if (modelDefinition.aByteArray1834 != null) (modelDefinition.aByteArray1834!![class162.anInt2155]).toInt() and 0xff else 0) shl 24))
                 aClass6Array5361!![i_800_] = Class6(class162.anInt2155, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class162.anInt2158)
-                aClass350Array5363!![i_800_] = Class350(i_801_)
+                aModelTransformParamsArray5363!![i_800_] = ModelTransformParams(i_801_)
             }
         }
         aFloatArrayArray5314 = arrayOfNulls<FloatArray>(anInt5351)

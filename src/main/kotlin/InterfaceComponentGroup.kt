@@ -627,7 +627,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                         GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
                     }
                     while (i_11_ > i_13_) GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
-                    Class350.anInt4319 = 1
+                    ModelTransformParams.anInt4319 = 1
                     var i_14_ = 0
                     while ((i_14_ < ParameterizedText.Companion.anInt9577)) {
                         val mapTileShape: MapTileShape = MinimapAreaMarkerNode.Companion.aMapTileShapeArray9700!![i_14_]!!
@@ -635,7 +635,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                         TextureMapImageNode.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4194!![2].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![2].toInt(), (-118).toByte(), mapTileShape.aShortArray4183!![2].toInt(), mapTileShape.aShortArray4188!![1].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4183!![3].toInt())
                         i_14_++
                     }
-                    Class350.anInt4319 = 2
+                    ModelTransformParams.anInt4319 = 2
                 }
                 if (ColourKeyTextureNode.aBoolean9352) GlslEnvMaterialPass.aLong6276 = (Class50_Sub4.aClass47_5262!!.method446(1) + -ItemDefinition.aLong2789)
             }

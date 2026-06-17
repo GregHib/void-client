@@ -235,10 +235,10 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         SceneryDetailOptionState.anInt6095 += i_35_
                                         MaterialPass.anInt3682 += i_36_
                                         for (i_65_ in 0..<BackgroundWorkerThread.anInt3225) {
-                                            val i_66_ = ((Class350.method3452(i_65_ - -MaterialPass.anInt3682, (-15).toByte(), BackgroundWorkerThread.anInt3225)) * ItemModelDefinition.anInt425)
+                                            val i_66_ = ((ModelTransformParams.method3452(i_65_ - -MaterialPass.anInt3682, (-15).toByte(), BackgroundWorkerThread.anInt3225)) * ItemModelDefinition.anInt425)
                                             var i_67_ = 0
                                             while ((ItemModelDefinition.anInt425 > i_67_)) {
-                                                val i_68_ = ((Class350.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), ItemModelDefinition.anInt425)) + i_66_)
+                                                val i_68_ = ((ModelTransformParams.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), ItemModelDefinition.anInt425)) + i_66_)
                                                 val bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)))
                                                 Class92.anInterface4Array1525!![i_68_]!!.method15(Class58.anInt1067 * i_67_, i_65_ * ByteStore.anInt4267, Class58.anInt1067, ByteStore.anInt4267, 0, 0, bool_69_, true)
                                                 i_67_++

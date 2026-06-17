@@ -92,7 +92,7 @@ class Class76 internal constructor(bool: Boolean) {
             i_5_ += -1 + i_4_
             i_1_ += i * i_4_
             i_2_ = -i_4_ + i_3_ shr 2
-            if (Class350.anInt4319 == 1) {
+            if (ModelTransformParams.anInt4319 == 1) {
                 NpcDefinition.anInt2946 += i_2_
                 while (--i_2_ >= 0) {
                     if (`is`!![++i_5_] > i_1_) `is`[i_5_] = i_1_

@@ -109,7 +109,7 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
             anInt9377++
             if (i_16_ > 2000 || i_21_ > 2000 || i_24_ > 2000 || i_23_ > 2000 || i_17_ > 2000 || i > 2000) return false
             if (i_16_ < -2000 || i_21_ < -2000 || i_24_ < -2000 || i_23_ < -2000 || i_17_ < -2000 || i < -2000) return false
-            if (Class350.anInt4319 == 2) {
+            if (ModelTransformParams.anInt4319 == 2) {
                 var i_25_ = i_23_ + i_16_ * WorldMapToggle.anInt3872
                 if (i_25_ >= 0 && GlTextureBase.anIntArray5091!!.size > i_25_ && GlTextureBase.anIntArray5091!![i_25_] > -38400 + (i_22_ shl 8)) return false
                 i_25_ = i_17_ + i_21_ * WorldMapToggle.anInt3872

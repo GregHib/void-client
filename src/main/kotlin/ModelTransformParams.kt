@@ -1,7 +1,7 @@
 /* Class350 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class350 {
+class ModelTransformParams {
     var anInt4307: Int = 0
     var anInt4308: Int = 0
     var anInt4309: Int = 0
@@ -13,21 +13,21 @@ class Class350 {
     var anInt4316: Int = 0
     var anInt4317: Int = 0
     var anInt4320: Int = 0
-    fun method3453(bool: Boolean): Class350 {
+    fun method3453(bool: Boolean): ModelTransformParams {
         anInt4318++
         if (bool != true) method3453(false)
-        return Class350(this.anInt4313, this.anInt4314, this.anInt4311, this.anInt4316, this.anInt4317, this.anInt4308)
+        return ModelTransformParams(this.anInt4313, this.anInt4314, this.anInt4311, this.anInt4316, this.anInt4317, this.anInt4308)
     }
 
-    fun method3454(class350_3_: Class350, bool: Boolean) {
-        this.anInt4308 = class350_3_.anInt4308
-        this.anInt4314 = class350_3_.anInt4314
+    fun method3454(modelTransformParams_3_: ModelTransformParams, bool: Boolean) {
+        this.anInt4308 = modelTransformParams_3_.anInt4308
+        this.anInt4314 = modelTransformParams_3_.anInt4314
         if (bool == true) {
-            this.anInt4316 = class350_3_.anInt4316
-            this.anInt4317 = class350_3_.anInt4317
+            this.anInt4316 = modelTransformParams_3_.anInt4316
+            this.anInt4317 = modelTransformParams_3_.anInt4317
             anInt4321++
-            this.anInt4313 = class350_3_.anInt4313
-            this.anInt4311 = class350_3_.anInt4311
+            this.anInt4313 = modelTransformParams_3_.anInt4313
+            this.anInt4311 = modelTransformParams_3_.anInt4311
         }
     }
 

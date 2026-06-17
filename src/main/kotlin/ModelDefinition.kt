@@ -1098,7 +1098,7 @@ class ModelDefinition {
             if (i < 78) aClass45_1848 = null
             var i_22_: Int
             do i_22_ = random.nextInt() while (i_22_ >= i_21_)
-            return Class350.method3452(i_22_, (-15).toByte(), i_20_)
+            return ModelTransformParams.method3452(i_22_, (-15).toByte(), i_20_)
         }
 
         @JvmStatic

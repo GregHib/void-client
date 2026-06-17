@@ -1030,7 +1030,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CharacterRenderState.anInt6671 = 0
             NpcCountAccessor.anInt2277 = 0
             ItemDefinition.anInt2768 = 0
-            Class350.anInt4321 = 0
+            ModelTransformParams.anInt4321 = 0
             OpenGlRenderer.anInt7621 = 0
             MatrixCameraTransform.anInt5687 = 0
             OpenGlRenderer.anInt7586 = 0
@@ -2729,7 +2729,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Npc.anInt10511 = 0
             Class5_Sub3.anInt8369 = 0
             WallEntity.anInt8778 = 0
-            Class350.anInt4318 = 0
+            ModelTransformParams.anInt4318 = 0
             Class90.anInt1513 = 0
             IdleAnimationsOptionState.anInt5906 = 0
             SceneryDetailOptionState.anInt6090 = 0
@@ -3227,7 +3227,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Buffer.anInt7158 = 0
             BloomGraphicsOptionState.anInt5960 = 0
             SpriteStore.anInt365 = 0
-            Class350.anInt4315 = 0
+            ModelTransformParams.anInt4315 = 0
             ClientLoadStateMachine.anInt2172 = 0
             Class59_Sub1.anInt5284 = 0
             SimpleToggleOptionState.anInt5889 = 0
