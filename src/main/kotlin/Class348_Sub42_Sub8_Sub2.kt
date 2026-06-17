@@ -1223,7 +1223,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             if (string == Class83.aStringArray1441!![i_154_]) {
                                 if (i != Renderer.anIntArray4578!![i_154_]) {
                                     var bool_155_ = true
-                                    var class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1872(8) as? Class318_Sub9_Sub1?)
+                                    var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(8) as? Class318_Sub9_Sub1?)
                                     while (class318_sub9_sub1 != null) {
                                         if (class318_sub9_sub1.aString8783 == string) {
                                             if (i == 0 || (class318_sub9_sub1.aShort8786.toInt() != 0)) {
@@ -1236,9 +1236,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                                 class318_sub9_sub1.method2373(false)
                                             }
                                         }
-                                        class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1878(124.toByte()) as? Class318_Sub9_Sub1?)
+                                        class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878(124.toByte()) as? Class318_Sub9_Sub1?)
                                     }
-                                    if (bool_155_) Class348_Sub42_Sub14.aClass243_9642!!.method1869(-95, Class318_Sub9_Sub1(string, i))
+                                    if (bool_155_) Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1869(-95, Class318_Sub9_Sub1(string, i))
                                     Renderer.anIntArray4578!![i_154_] = i
                                 }
                                 Class286_Sub2.aStringArray6205!![i_154_] = string_150_

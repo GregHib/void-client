@@ -5,7 +5,7 @@ import Class59_Sub1_Sub1.Companion.method560
 */
 class Class76 internal constructor(bool: Boolean) {
     @JvmField
-    var aClass243_1282: Class243 = Class243()
+    var aDoublyLinkedNodeList_1282: DoublyLinkedNodeList = DoublyLinkedNodeList()
     var aBoolean1283: Boolean = false
     fun method774(class318_sub4: Class318_Sub4, i: Int) {
         anInt1280++
@@ -22,31 +22,31 @@ class Class76 internal constructor(bool: Boolean) {
         }
         if (!bool) {
             if (this.aBoolean1283) {
-                var class318_sub4_7_ = (this.aClass243_1282.method1872(8) as? Class318_Sub4?)
+                var class318_sub4_7_ = (this.aDoublyLinkedNodeList_1282.method1872(8) as? Class318_Sub4?)
                 while (class318_sub4_7_ != null) {
                     if (class318_sub1 === (class318_sub4_7_.aClass318_Sub1_6410)) {
                         class318_sub4_7_.method2373(false)
                         method560(class318_sub4_7_, -41)
                     }
-                    class318_sub4_7_ = this.aClass243_1282.method1878((-103).toByte()) as? Class318_Sub4?
+                    class318_sub4_7_ = this.aDoublyLinkedNodeList_1282.method1878((-103).toByte()) as? Class318_Sub4?
                 }
             }
-            var class318_sub4_8_ = (this.aClass243_1282.method1872(8) as? Class318_Sub4?)
+            var class318_sub4_8_ = (this.aDoublyLinkedNodeList_1282.method1872(8) as? Class318_Sub4?)
             while (class318_sub4_8_ != null) {
                 if (class318_sub1!!.anInt6389 >= class318_sub4_8_.aClass318_Sub1_6410!!.anInt6389) {
                     Class245.method1883(class318_sub4_8_, class318_sub4, true)
                     return
                 }
-                class318_sub4_8_ = this.aClass243_1282.method1878((-44).toByte()) as? Class318_Sub4?
+                class318_sub4_8_ = this.aDoublyLinkedNodeList_1282.method1878((-44).toByte()) as? Class318_Sub4?
             }
             if (i != 18802) aHostPingThread_1286 = null
-            this.aClass243_1282.method1869(-107, class318_sub4)
+            this.aDoublyLinkedNodeList_1282.method1869(-107, class318_sub4)
         }
     }
 
     fun method775(i: Byte) {
         while (true) {
-            val class318_sub4 = (this.aClass243_1282.method1875(60) as? Class318_Sub4?)
+            val class318_sub4 = (this.aDoublyLinkedNodeList_1282.method1875(60) as? Class318_Sub4?)
             if (class318_sub4 == null) break
             class318_sub4.method2373(false)
             method560(class318_sub4, 123)

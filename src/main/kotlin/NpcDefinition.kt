@@ -282,19 +282,19 @@ class NpcDefinition {
         @JvmField
         var anInt2956: Int = 0
         @JvmField
-        var aClass243_2957: Class243?
+        var aDoublyLinkedNodeList_2957: DoublyLinkedNodeList?
         @JvmStatic
         fun method1619(i: Byte) {
             aNpcDefinition_2931 = null
             aObjectByteSerializerHolder_2944 = null
             val i_7_ = 86 / ((i - 41) / 40)
-            aClass243_2957 = null
+            aDoublyLinkedNodeList_2957 = null
         }
 
         init {
             aObjectByteSerializerHolder_2944 = ObjectByteSerializerHolder()
             anInt2955 = 0
-            aClass243_2957 = Class243()
+            aDoublyLinkedNodeList_2957 = DoublyLinkedNodeList()
         }
     }
 }

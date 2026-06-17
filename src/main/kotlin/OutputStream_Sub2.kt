@@ -38,10 +38,10 @@ class OutputStream_Sub2 : OutputStream() {
         @JvmStatic
         fun method136(i: Int, bool: Boolean, bool_2_: Boolean): Class318_Sub4 {
             anInt105++
-            synchronized(Class318.aClass243Array3974!!) {
+            synchronized(Class318.aDoublyLinkedNodeListArray3974s!!) {
                 val class318_sub4: Class318_Sub4
-                if (Class318.aClass243Array3974!!.size > i && !Class318.aClass243Array3974!![i]!!.method1871(111.toByte())) {
-                    class318_sub4 = Class318.aClass243Array3974!![i]!!.method1870(-104) as Class318_Sub4
+                if (Class318.aDoublyLinkedNodeListArray3974s!!.size > i && !Class318.aDoublyLinkedNodeListArray3974s!![i]!!.method1871(111.toByte())) {
+                    class318_sub4 = Class318.aDoublyLinkedNodeListArray3974s!![i]!!.method1870(-104) as Class318_Sub4
                     class318_sub4.method2373(false)
                     Class331.anIntArray4128!![i]--
                 } else {

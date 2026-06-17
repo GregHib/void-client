@@ -144,9 +144,9 @@ class Class258_Sub1 : Class258 {
                 Class59_Sub1.anInt5293 = Class348_Sub41.anInt7054
                 SkeletalAnimFrameData.aBoolean351 = false
             }
-            Class243.method1877(Class9.aRenderer171, -69)
+            DoublyLinkedNodeList.method1877(Class9.aRenderer171, -69)
             if (!Class71.aClass76_1208!!.aBoolean1283) {
-                val class243 = Class71.aClass76_1208!!.aClass243_1282
+                val class243 = Class71.aClass76_1208!!.aDoublyLinkedNodeList_1282
                 var class318_sub4 = class243.method1872(8) as Class318_Sub4?
                 while (class318_sub4 != null) {
                     class318_sub4.method2373(false)
@@ -166,12 +166,12 @@ class Class258_Sub1 : Class258 {
             }
             if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
                 if (Class348_Sub40_Sub5.aBoolean9121) method2131(0)
-                Class243.method1879(true)
+                DoublyLinkedNodeList.method1879(true)
                 Class9.aRenderer171!!.ra(-1, 1583160, 40, 127)
                 Class348_Sub49_Sub1.method3398(true, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)
                 if (Class348_Sub40_Sub5.aBoolean9121) Class304.method2290()
                 Class9.aRenderer171!!.pa()
-                Class243.method1879(false)
+                DoublyLinkedNodeList.method1879(false)
             }
             Class348_Sub49_Sub1.method3398(false, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)
             if (Class348_Sub40_Sub5.aBoolean9121) {

@@ -28,7 +28,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
         this.aClass318_Sub7_10419.aClass318_Sub10_6439!!.aClass318_Sub9_Sub2_Sub1Array6475[i] = this
         aShort10416 = this.aClass318_Sub7_10419.aClass318_Sub10_6439!!.anInt6476.toShort()
         this.aClass318_Sub7_10419.aClass318_Sub10_6439!!.anInt6476 = i + 1 and 0x1fff
-        this.aClass318_Sub7_10419.aClass243_6433!!.method1869(-98, this)
+        this.aClass318_Sub7_10419.aDoublyLinkedNodeList_6433!!.method1869(-98, this)
     }
 
     fun method2522(var_renderer: Renderer?, l: Long) {

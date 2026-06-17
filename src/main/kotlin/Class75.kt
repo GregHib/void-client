@@ -62,7 +62,7 @@ open class Class75 {
         var anInt1267: Int = 0
         @JvmField
         var anInt1268: Int = 0
-        private var aClass243ArrayArrayArray1269: Array<Array<Array<Class243?>?>?>? = null
+        private var aDoublyLinkedNodeListArrayArrayArray1269: Array<Array<Array<DoublyLinkedNodeList?>?>?>? = null
         private var aShortArray1270: ShortArray? = null
         private var aClass356_1271: Class356? = null
         @JvmField
@@ -156,7 +156,7 @@ open class Class75 {
             aShortArray1261 = null
             aByteArray1258 = null
             aClass356_1271 = null
-            aClass243ArrayArrayArray1269 = null
+            aDoublyLinkedNodeListArrayArrayArray1269 = null
         }
 
         private fun method747(var_renderer: Renderer?, class348_sub21: Class348_Sub21, i: Int, i_15_: Int, i_16_: Int, i_17_: Int) {
@@ -183,7 +183,7 @@ open class Class75 {
             aShortArray1261 = null
             aByteArray1258 = null
             aClass356_1271 = null
-            aClass243ArrayArrayArray1269 = null
+            aDoublyLinkedNodeListArrayArrayArray1269 = null
             anIntArray1260 = null
         }
 
@@ -247,9 +247,9 @@ open class Class75 {
                                 is_38_[i_39_] = class348_sub49.readByte(-92)
                             }
                         }
-                        if ((aClass243ArrayArrayArray1269!![i_29_ - 1]!![i - (anInt1266 shr 6)]!![i_21_ - (anInt1263 shr 6)]) == null) aClass243ArrayArrayArray1269!![i_29_ - 1]!![i - (anInt1266 shr 6)]!![i_21_ - (anInt1263 shr 6)] = Class243()
+                        if ((aDoublyLinkedNodeListArrayArrayArray1269!![i_29_ - 1]!![i - (anInt1266 shr 6)]!![i_21_ - (anInt1263 shr 6)]) == null) aDoublyLinkedNodeListArrayArrayArray1269!![i_29_ - 1]!![i - (anInt1266 shr 6)]!![i_21_ - (anInt1263 shr 6)] = DoublyLinkedNodeList()
                         val class318_sub8 = Class318_Sub8(i_22_ and 0x3f, i_23_ and 0x3f, i_30_, i_31_, i_32_, is_37_, is_38_)
-                        aClass243ArrayArrayArray1269!![i_29_ - 1]!![i - (anInt1266 shr 6)]!![i_21_ - (anInt1263 shr 6)]!!.method1869(-86, class318_sub8)
+                        aDoublyLinkedNodeListArrayArrayArray1269!![i_29_ - 1]!![i - (anInt1266 shr 6)]!![i_21_ - (anInt1263 shr 6)]!!.method1869(-86, class318_sub8)
                     }
                 }
             }
@@ -329,11 +329,11 @@ open class Class75 {
                 }
             }
             for (i in 0..2) {
-                for (i_53_ in aClass243ArrayArrayArray1269!![0]!!.indices) {
-                    for (i_54_ in aClass243ArrayArrayArray1269!![0]!![0]!!.indices) {
-                        val class243: Class243? = aClass243ArrayArrayArray1269!![i]!![i_53_]!![i_54_]
-                        if (class243 != null) {
-                            var class318_sub8 = class243.method1872(8) as Class318_Sub8?
+                for (i_53_ in aDoublyLinkedNodeListArrayArrayArray1269!![0]!!.indices) {
+                    for (i_54_ in aDoublyLinkedNodeListArrayArrayArray1269!![0]!![0]!!.indices) {
+                        val doublyLinkedNodeList: DoublyLinkedNodeList? = aDoublyLinkedNodeListArrayArrayArray1269!![i]!![i_53_]!![i_54_]
+                        if (doublyLinkedNodeList != null) {
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
                             while (class318_sub8 != null) {
                                 if (class318_sub8.aShortArray6461 != null) {
                                     for (i_55_ in (class318_sub8.aShortArray6461!!).indices) {
@@ -351,7 +351,7 @@ open class Class75 {
                                         }
                                     }
                                 }
-                                class318_sub8 = (class243.method1878(127.toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878(127.toByte()) as Class318_Sub8?)
                             }
                         }
                     }
@@ -468,29 +468,29 @@ open class Class75 {
             aShortArray1270 = ShortArray(anInt1259 * anInt1267)
             for (i_95_ in 0..2) {
                 val is_96_ = ByteArray(anInt1259 * anInt1267)
-                for (i_97_ in aClass243ArrayArrayArray1269!![i_95_]!!.indices) {
-                    for (i_98_ in aClass243ArrayArrayArray1269!![i_95_]!![0]!!.indices) {
-                        val class243: Class243? = aClass243ArrayArrayArray1269!![i_95_]!![i_97_]!![i_98_]
-                        if (class243 != null) {
-                            var class318_sub8 = class243.method1872(8) as Class318_Sub8?
+                for (i_97_ in aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!!.indices) {
+                    for (i_98_ in aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!![0]!!.indices) {
+                        val doublyLinkedNodeList: DoublyLinkedNodeList? = aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!![i_97_]!![i_98_]
+                        if (doublyLinkedNodeList != null) {
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
                             while (class318_sub8 != null) {
                                 is_96_[(i_97_ * 64 + class318_sub8.aByte6466 + (i_98_ * 64 + (class318_sub8.aByte6464)) * anInt1259)] = (class318_sub8.anInt6465).toByte()
-                                class318_sub8 = (class243.method1878(1.toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878(1.toByte()) as Class318_Sub8?)
                             }
                         }
                     }
                 }
                 Companion.method768(is_96_, aByteArray1264!!, aShortArray1270!!, i, i_75_)
-                for (i_99_ in aClass243ArrayArrayArray1269!![i_95_]!!.indices) {
-                    for (i_100_ in aClass243ArrayArrayArray1269!![i_95_]!![0]!!.indices) {
-                        val class243: Class243? = aClass243ArrayArrayArray1269!![i_95_]!![i_99_]!![i_100_]
-                        if (class243 != null) {
-                            var class318_sub8 = class243.method1872(8) as Class318_Sub8?
+                for (i_99_ in aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!!.indices) {
+                    for (i_100_ in aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!![0]!!.indices) {
+                        val doublyLinkedNodeList: DoublyLinkedNodeList? = aDoublyLinkedNodeListArrayArrayArray1269!![i_95_]!![i_99_]!![i_100_]
+                        if (doublyLinkedNodeList != null) {
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
                             while (class318_sub8 != null) {
                                 val i_101_: Int = (i_99_ * 64 + class318_sub8.aByte6466 + (i_100_ * 64 + (class318_sub8.aByte6464)) * anInt1259)
                                 class318_sub8.anInt6465 = ((aByteArray1264!![i_101_].toInt() and 0xff) shl 16 or (aShortArray1270!![i_101_].toInt() and 0xffff))
                                 if (class318_sub8.anInt6465 != 0) class318_sub8.anInt6465 = class318_sub8.anInt6465 or 0xffffff.inv()
-                                class318_sub8 = (class243.method1878(122.toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878(122.toByte()) as Class318_Sub8?)
                             }
                         }
                     }
@@ -548,7 +548,7 @@ open class Class75 {
             aShortArray1261 = ShortArray(anInt1259 * anInt1267)
             aByteArray1258 = ByteArray(anInt1259 * anInt1267)
             aClass356_1271 = Class356(1024)
-            aClass243ArrayArrayArray1269 = Array<Array<Array<Class243?>?>?>(3) { Array<Array<Class243?>?>(anInt1259 shr 6) { arrayOfNulls<Class243>(anInt1267 shr 6) } }
+            aDoublyLinkedNodeListArrayArrayArray1269 = Array<Array<Array<DoublyLinkedNodeList?>?>?>(3) { Array<Array<DoublyLinkedNodeList?>?>(anInt1259 shr 6) { arrayOfNulls<DoublyLinkedNodeList>(anInt1267 shr 6) } }
             anIntArray1260 = IntArray(aClass268_1239!!.anInt3429 + 1)
         }
 
@@ -710,16 +710,16 @@ open class Class75 {
             if (i_167_ < 0) i_167_ = 0
             var i_168_: Int = anInt1265 shr 6
             var i_169_: Int = anInt1277 shr 6
-            if (i_168_ >= aClass243ArrayArrayArray1269!![0]!!.size) i_168_ = aClass243ArrayArrayArray1269!![0]!!.size - 1
-            if (i_169_ >= aClass243ArrayArrayArray1269!![0]!![0]!!.size) i_169_ = aClass243ArrayArrayArray1269!![0]!![0]!!.size - 1
+            if (i_168_ >= aDoublyLinkedNodeListArrayArrayArray1269!![0]!!.size) i_168_ = aDoublyLinkedNodeListArrayArrayArray1269!![0]!!.size - 1
+            if (i_169_ >= aDoublyLinkedNodeListArrayArrayArray1269!![0]!![0]!!.size) i_169_ = aDoublyLinkedNodeListArrayArrayArray1269!![0]!![0]!!.size - 1
             for (i_170_ in 0..2) {
                 for (i_171_ in i_166_..i_168_) {
                     for (i_172_ in i_167_..i_169_) {
-                        val class243: Class243? = aClass243ArrayArrayArray1269!![i_170_]!![i_171_]!![i_172_]
-                        if (class243 != null) {
+                        val doublyLinkedNodeList: DoublyLinkedNodeList? = aDoublyLinkedNodeListArrayArrayArray1269!![i_170_]!![i_171_]!![i_172_]
+                        if (doublyLinkedNodeList != null) {
                             val i_173_: Int = (i_171_ + (anInt1266 shr 6)) * 64
                             val i_174_: Int = (i_172_ + (anInt1263 shr 6)) * 64
-                            var class318_sub8 = class243.method1872(8) as Class318_Sub8?
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
                             while (class318_sub8 != null) {
                                 val i_175_: Int = (i_173_ + class318_sub8.aByte6466 - anInt1266 - anInt1274)
                                 val i_176_: Int = (i_174_ + class318_sub8.aByte6464 - anInt1263 - anInt1257)
@@ -728,18 +728,18 @@ open class Class75 {
                                 val i_179_: Int = (anInt1268 - (i_133_ + i_131_ * (i_176_ + 1) shr 16))
                                 val i_180_: Int = anInt1268 - (i_133_ + i_131_ * i_176_ shr 16)
                                 method755(var_renderer, i_177_, i_179_, i_178_ - i_177_, i_180_ - i_179_, (class318_sub8.anInt6465), (class318_sub8.aByte6460).toInt() and 0xff, (class318_sub8.aByte6463).toInt(), (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462), false)
-                                class318_sub8 = (class243.method1878((-79).toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878((-79).toByte()) as Class318_Sub8?)
                             }
                         }
                     }
                 }
                 for (i_181_ in i_166_..i_168_) {
                     for (i_182_ in i_167_..i_169_) {
-                        val class243: Class243? = aClass243ArrayArrayArray1269!![i_170_]!![i_181_]!![i_182_]
-                        if (class243 != null) {
+                        val doublyLinkedNodeList: DoublyLinkedNodeList? = aDoublyLinkedNodeListArrayArrayArray1269!![i_170_]!![i_181_]!![i_182_]
+                        if (doublyLinkedNodeList != null) {
                             val i_183_: Int = (i_181_ + (anInt1266 shr 6)) * 64
                             val i_184_: Int = (i_182_ + (anInt1263 shr 6)) * 64
-                            var class318_sub8 = class243.method1872(8) as Class318_Sub8?
+                            var class318_sub8 = doublyLinkedNodeList.method1872(8) as Class318_Sub8?
                             while (class318_sub8 != null) {
                                 val i_185_: Int = (i_183_ + class318_sub8.aByte6466 - anInt1266 - anInt1274)
                                 val i_186_: Int = (i_184_ + class318_sub8.aByte6464 - anInt1263 - anInt1257)
@@ -748,7 +748,7 @@ open class Class75 {
                                 val i_189_: Int = (anInt1268 - (i_133_ + i_131_ * (i_186_ + 1) shr 16))
                                 val i_190_: Int = anInt1268 - (i_133_ + i_131_ * i_186_ shr 16)
                                 method763(var_renderer, i_187_, i_189_, i_188_ - i_187_, i_190_ - i_189_, (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462))
-                                class318_sub8 = (class243.method1878((-75).toByte()) as Class318_Sub8?)
+                                class318_sub8 = (doublyLinkedNodeList.method1878((-75).toByte()) as Class318_Sub8?)
                             }
                         }
                     }

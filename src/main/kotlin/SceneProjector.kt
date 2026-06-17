@@ -150,7 +150,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                             i_41_ = i_39_
                                         }
                                     }
-                                    val class243 = (Class348_Sub42_Sub8_Sub2.aClass76_10436!!.aClass243_1282)
+                                    val class243 = (Class348_Sub42_Sub8_Sub2.aClass76_10436!!.aDoublyLinkedNodeList_1282)
                                     var class318_sub4 = (class243.method1872(8) as Class318_Sub4?)
                                     while (class318_sub4 != null) {
                                         val class318_sub3s = (class318_sub4.aClass318_Sub3Array6414)!!

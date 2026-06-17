@@ -46,7 +46,7 @@ class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
         @JvmField
         var aBooleanArray2076: BooleanArray? = BooleanArray(100)
         @JvmField
-        var aClass243_2077: Class243? = null
+        var aDoublyLinkedNodeList_2077: DoublyLinkedNodeList? = null
         var anInt2078: Int = 0
 
         fun method1215(i: Byte) {
@@ -60,7 +60,7 @@ class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
         @JvmStatic
         fun method1216(i: Byte) {
             if (i.toInt() != -97) aFloatArray2075 = null
-            aClass243_2077 = null
+            aDoublyLinkedNodeList_2077 = null
             aBooleanArray2076 = null
             aFloatArray2075 = null
         }

@@ -418,14 +418,14 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     i_31_++
                                 }
                                 if (ScanlineRasterFiller.aBoolean2469 && (-60000L + method599(-84) > Class34.aLong482)) method2405(i + -11313)
-                                var class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1872(i + -11424) as? Class318_Sub9_Sub1?)
+                                var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(i + -11424) as? Class318_Sub9_Sub1?)
                                 while (class318_sub9_sub1 != null) {
                                     if ((method599(i xor 0x2ce9.inv()) / 1000L + -5L) > class318_sub9_sub1.anInt8787.toLong()) {
                                         if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (-128).toByte(), 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3502!!.method2063(Class348_Sub33.Companion.anInt6967, 544))), "", "")
                                         if (class318_sub9_sub1.aShort8786.toInt() == 0) Class286_Sub2.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3503!!.method2063(Class348_Sub33.Companion.anInt6967, 544))), "", "")
                                         class318_sub9_sub1.method2373(false)
                                     }
-                                    class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1878((-105).toByte()) as? Class318_Sub9_Sub1?)
+                                    class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878((-105).toByte()) as? Class318_Sub9_Sub1?)
                                 }
                                 Class28.anInt4999++
                                 if (Class28.anInt4999 > 500) {

@@ -220,7 +220,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             class318_sub6.aClass318_Sub1_Sub3_Sub3_6431 = null
             anInt10361++
             if (Class365.anInt4474 < 20) {
-                Class62.aClass243_1114!!.method1869(-89, class318_sub6)
+                Class62.aDoublyLinkedNodeList_1114!!.method1869(-89, class318_sub6)
                 Class365.anInt4474++
             }
         }

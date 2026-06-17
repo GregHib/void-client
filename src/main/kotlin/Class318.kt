@@ -19,7 +19,7 @@ open class Class318 {
         var anInt3972: Int = 0
         var anInt3973: Int = 0
         @JvmField
-        var aClass243Array3974: Array<Class243?>? = arrayOfNulls<Class243>(5)
+        var aDoublyLinkedNodeListArray3974s: Array<DoublyLinkedNodeList?>? = arrayOfNulls<DoublyLinkedNodeList>(5)
         var anInt3975: Int = 0
         var aClass304_3977: Class304?
 
@@ -27,7 +27,7 @@ open class Class318 {
         fun method2374(i: Byte) {
             aClass304_3977 = null
             val i_0_ = 108 / ((i - -83) / 41)
-            aClass243Array3974 = null
+            aDoublyLinkedNodeListArray3974s = null
         }
 
         @JvmStatic
@@ -39,8 +39,8 @@ open class Class318 {
 
         init {
             var i = 0
-            while (aClass243Array3974!!.size > i) {
-                aClass243Array3974!![i] = Class243()
+            while (aDoublyLinkedNodeListArray3974s!!.size > i) {
+                aDoublyLinkedNodeListArray3974s!![i] = DoublyLinkedNodeList()
                 i++
             }
             aClass304_3977 = Class304(1)

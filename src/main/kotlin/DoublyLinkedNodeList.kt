@@ -1,7 +1,7 @@
 /* Class243 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class243 {
+class DoublyLinkedNodeList {
     private val aClass318_3166 = Class318()
     private var aClass318_3167: Class318? = null
     fun method1869(i: Int, class318: Class318) {
@@ -114,10 +114,10 @@ class Class243 {
         fun method1877(var_renderer: Renderer?, i: Int) {
             anInt3164++
             if (i >= -20) method1877(null, -112)
-            var class318_sub10 = GzipDecompressor.aClass243_2077!!.method1872(8) as Class318_Sub10?
+            var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as Class318_Sub10?
             while (class318_sub10 != null) {
                 if (class318_sub10.aBoolean6482) class318_sub10.method2528(var_renderer)
-                class318_sub10 = GzipDecompressor.aClass243_2077!!.method1878(124.toByte()) as Class318_Sub10?
+                class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1878(124.toByte()) as Class318_Sub10?
             }
         }
 

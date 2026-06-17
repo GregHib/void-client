@@ -572,12 +572,12 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
         var anInt9638: Int = 0
         var anInt9641: Int = 0
         @JvmField
-        var aClass243_9642: Class243? = Class243()
+        var aDoublyLinkedNodeList_9642: DoublyLinkedNodeList? = DoublyLinkedNodeList()
         var anInt9645: Int = 1
 
         @JvmStatic
         fun method3237(i: Byte) {
-            aClass243_9642 = null
+            aDoublyLinkedNodeList_9642 = null
             anIntArray9626 = null
             aByteArray9622 = null
             if (i.toInt() != 42) anInt9645 = -112

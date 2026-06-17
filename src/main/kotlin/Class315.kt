@@ -6,7 +6,7 @@ import kotlin.concurrent.Volatile
 * Visit http://jode.sourceforge.net/
 */
 class Class315 internal constructor(var aString3953: String?) {
-    private val aClass243_3946 = Class243()
+    private val aDoublyLinkedNodeList_3946 = DoublyLinkedNodeList()
     private var aClass293_3956: Class293? = null
 
     @Volatile
@@ -15,8 +15,8 @@ class Class315 internal constructor(var aString3953: String?) {
     fun method2353(class318_sub1: Class318_Sub1, bool: Boolean) {
         class318_sub1.aBoolean6387 = bool
         anInt3944++
-        synchronized(aClass243_3946) {
-            aClass243_3946.method1869(-90, class318_sub1)
+        synchronized(aDoublyLinkedNodeList_3946) {
+            aDoublyLinkedNodeList_3946.method1869(-90, class318_sub1)
             anInt3957++
         }
         if (aClass293_3956 != null) {
@@ -34,8 +34,8 @@ class Class315 internal constructor(var aString3953: String?) {
 
     fun method2359(class318_sub2: Class318_Sub2, i: Int) {
         if (i != -1) method2362(45)
-        synchronized(aClass243_3946) {
-            aClass243_3946.method1869(-127, class318_sub2)
+        synchronized(aDoublyLinkedNodeList_3946) {
+            aDoublyLinkedNodeList_3946.method1869(-127, class318_sub2)
             anInt3957++
         }
         anInt3947++
@@ -55,8 +55,8 @@ class Class315 internal constructor(var aString3953: String?) {
     fun method2361(i: Int, class318_sub1: Class318_Sub1) {
         class318_sub1.aBoolean6387 = true
         anInt3950++
-        synchronized(aClass243_3946) {
-            aClass243_3946.method1869(-122, class318_sub1)
+        synchronized(aDoublyLinkedNodeList_3946) {
+            aDoublyLinkedNodeList_3946.method1869(-122, class318_sub1)
             anInt3957++
         }
         if (i != -15481) this.aString3953 = null
@@ -71,8 +71,8 @@ class Class315 internal constructor(var aString3953: String?) {
         anInt3952++
         val `object`: Any? = null
         val class318: Class318?
-        synchronized(aClass243_3946) {
-            class318 = aClass243_3946.method1872(8)
+        synchronized(aDoublyLinkedNodeList_3946) {
+            class318 = aDoublyLinkedNodeList_3946.method1872(8)
             class318!!.method2373(false)
             anInt3957--
         }

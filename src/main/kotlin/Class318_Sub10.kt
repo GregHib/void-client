@@ -8,7 +8,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
     private var aBoolean6473 = false
     var aClass318_Sub9_Sub2_Sub1Array6475: Array<Class318_Sub9_Sub2_Sub1?>
     var anInt6476: Int = 0
-    private var aClass243_6478: Class243
+    private var aDoublyLinkedNodeList_6478: DoublyLinkedNodeList
     var aClass262_6479: Class262
     private var anInt6480: Int
     var aClass98_6481: Class98
@@ -23,10 +23,10 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
 
     fun method2528(var_renderer: Renderer?) {
         this.aClass98_6481.aClass88_1569.method845(89.toByte())
-        var class318_sub7 = aClass243_6478.method1872(8) as Class318_Sub7?
+        var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as Class318_Sub7?
         while (class318_sub7 != null) {
             class318_sub7.method2511(true, var_renderer, aLong6471)
-            class318_sub7 = aClass243_6478.method1878(126.toByte()) as Class318_Sub7?
+            class318_sub7 = aDoublyLinkedNodeList_6478.method1878(126.toByte()) as Class318_Sub7?
         }
     }
 
@@ -48,7 +48,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
             }
         }
         this.anInt6476 = 0
-        aClass243_6478 = Class243()
+        aDoublyLinkedNodeList_6478 = DoublyLinkedNodeList()
         anInt6480 = 0
         this.aClass262_6479 = Class262()
         anInt6485 = 0
@@ -58,7 +58,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
     }
 
     private fun method2531(i: Int, bool: Boolean) {
-        GzipDecompressor.aClass243_2077!!.method1869(-88, this)
+        GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1869(-88, this)
         aLong6472 = i.toLong()
         aLong6471 = i.toLong()
         aBoolean6484 = true
@@ -67,7 +67,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
 
     private fun method2532(var_renderer: Renderer?, modelFacePriorityNodes: Array<ModelFacePriorityNode?>?, bool: Boolean) {
         for (i in 0..31) aBooleanArray6474!![i] = false
-        var class318_sub7 = aClass243_6478.method1872(8) as Class318_Sub7?
+        var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as Class318_Sub7?
         while_110_@ while (class318_sub7 != null) {
             if (modelFacePriorityNodes != null) {
                 for (i in modelFacePriorityNodes.indices) {
@@ -75,7 +75,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
                         aBooleanArray6474!![i] = true
                         class318_sub7.method2507(true)
                         class318_sub7.aBoolean6446 = false
-                        class318_sub7 = aClass243_6478.method1878((-28).toByte()) as? Class318_Sub7?
+                        class318_sub7 = aDoublyLinkedNodeList_6478.method1878((-28).toByte()) as? Class318_Sub7?
                         continue@while_110_
                     }
                 }
@@ -86,14 +86,14 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
                     anInt6480--
                 } else class318_sub7.aBoolean6446 = true
             }
-            class318_sub7 = aClass243_6478.method1878((-28).toByte()) as? Class318_Sub7?
+            class318_sub7 = aDoublyLinkedNodeList_6478.method1878((-28).toByte()) as? Class318_Sub7?
         }
         if (modelFacePriorityNodes != null) {
             for (i in modelFacePriorityNodes.indices) {
                 if (i == 32 || anInt6480 == 32) break
                 if (!aBooleanArray6474!![i]) {
                     val class318_sub7 = Class318_Sub7(var_renderer, modelFacePriorityNodes[i], this, aLong6472)
-                    aClass243_6478.method1869(-126, class318_sub7)
+                    aDoublyLinkedNodeList_6478.method1869(-126, class318_sub7)
                     anInt6480++
                     aBooleanArray6474!![i] = true
                 }
@@ -118,17 +118,17 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         }
         val i = (l - aLong6471).toInt()
         if (aBoolean6484) {
-            var class318_sub7 = aClass243_6478.method1872(8) as? Class318_Sub7?
+            var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as? Class318_Sub7?
             while (class318_sub7 != null) {
                 for (i_4_ in 0..<class318_sub7.aSpotAnimDefinition_6441!!.anInt2422) class318_sub7.method2513(var_renderer, 1, l, 3, !aBoolean6473)
-                class318_sub7 = aClass243_6478.method1878(122.toByte()) as? Class318_Sub7?
+                class318_sub7 = aDoublyLinkedNodeList_6478.method1878(122.toByte()) as? Class318_Sub7?
             }
             aBoolean6484 = false
         }
-        var class318_sub7 = aClass243_6478.method1872(8) as? Class318_Sub7?
+        var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as? Class318_Sub7?
         while (class318_sub7 != null) {
             class318_sub7.method2513(var_renderer, i, l, 3, !aBoolean6473)
-            class318_sub7 = aClass243_6478.method1878((-72).toByte()) as? Class318_Sub7?
+            class318_sub7 = aDoublyLinkedNodeList_6478.method1878((-72).toByte()) as? Class318_Sub7?
         }
         aLong6471 = l
         return true
@@ -202,7 +202,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
     }
 
     init {
-        aClass243_6478 = Class243()
+        aDoublyLinkedNodeList_6478 = DoublyLinkedNodeList()
         anInt6480 = 0
         this.aClass262_6479 = Class262()
         this.aBoolean6482 = false

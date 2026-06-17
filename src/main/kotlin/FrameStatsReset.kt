@@ -133,9 +133,9 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlElementArrayBuffer.anInt4833 = 0
             Class46.anInt825 = 0
             Class59_Sub2.anInt5304 = 0
-            Class243.anInt3162 = 0
+            DoublyLinkedNodeList.anInt3162 = 0
             Class348_Sub23_Sub1.anInt8999 = 0
-            Class243.anInt3160 = 0
+            DoublyLinkedNodeList.anInt3160 = 0
             Class324.anInt4054 = 0
             Class367_Sub10.anInt7389 = 0
             Npc.anInt10496 = 0
@@ -292,7 +292,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7172 = 0
             Class376.anInt4547 = 0
             Class88.anInt1504 = 0
-            Class243.anInt3163 = 0
+            DoublyLinkedNodeList.anInt3163 = 0
             FrameBufferObject.anInt4867 = 0
             Class5_Sub1.anInt8351 = 0
             OutputStream_Sub2.anInt105 = 0
@@ -313,7 +313,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class45.anInt646 = 0
             SocketGameConnection.anInt5829 = 0
             Class64_Sub2.anInt5408 = 0
-            Class243.anInt3157 = 0
+            DoublyLinkedNodeList.anInt3157 = 0
             Class348_Sub49.anInt7161 = 0
             ParticleDetailOptionState.anInt6025 = 0
             SocketStreamWorker.anInt2666 = 0
@@ -455,7 +455,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8066 = 0
             Class55.anInt978 = 0
             Class318_Sub1_Sub3_Sub5.anInt10406 = 0
-            Class243.anInt3158 = 0
+            DoublyLinkedNodeList.anInt3158 = 0
             Class88.anInt1492 = 0
             VarpStore.anInt5073 = 0
             Class279.anInt3608 = 0
@@ -1857,7 +1857,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7929 = 0
             Class279.anInt3598 = 0
             Class42.anInt579 = 0
-            Class243.anInt3164 = 0
+            DoublyLinkedNodeList.anInt3164 = 0
             ModelDefinitionLoader.anInt2055 = 0
             AnimatedModelRenderer.anInt8405 = 0
             Class348_Sub3.anInt6578 = 0
@@ -3128,7 +3128,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatGrid.anInt4979 = 0
             NativeTerrainTile.anInt8297 = 0
             Class288_Sub1.anInt8576 = 0
-            Class243.anInt3159 = 0
+            DoublyLinkedNodeList.anInt3159 = 0
             CompositeNpcModelBuilder.anInt2099 = 0
             Class286_Sub9.anInt6318 = 0
             Class318_Sub1_Sub1.anInt8726 = 0
@@ -3297,7 +3297,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BinaryGraphicsOptionState.anInt5957 = 0
             Class51.anInt927 = 0
             Class369_Sub2.anInt8593 = 0
-            Class243.anInt3168 = 0
+            DoublyLinkedNodeList.anInt3168 = 0
             Class247.anInt3180 = 0
             ServerConnectionInfo.anInt2150 = 0
             Class64_Sub3.anInt5606 = 0
@@ -3927,7 +3927,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LoadProgressCounters.anInt2450 = 0
             ObjectSpawnDecoder.anInt1802 = 0
             WidgetComponentNode.anInt4658 = 0
-            Class243.anInt3161 = 0
+            DoublyLinkedNodeList.anInt3161 = 0
             Class346_Sub1.anInt6540 = 0
             Class319.anInt3978 = 0
             Class369_Sub3_Sub1.anInt10175 = 0
@@ -4124,7 +4124,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class282.aClass356_3654!!.method3481(0)
             Class348_Sub40_Sub17.aClass262_9240!!.method1996(112)
             OpenGlRenderNode.aClass262_10492!!.method1996(109)
-            NpcDefinition.aClass243_2957!!.method1876((-45).toByte())
+            NpcDefinition.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
             aClass356_1895!!.method3481(0)
             Class348_Sub42_Sub20.aClass262_9711 = Class262()
             Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1314(74.toByte())

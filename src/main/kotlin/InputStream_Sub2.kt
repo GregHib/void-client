@@ -15,7 +15,7 @@ class InputStream_Sub2 : InputStream() {
         @JvmField
         var aIntRange_82: IntRange? = IntRange(71, 7)
         @JvmField
-        var aClass243_83: Class243? = Class243()
+        var aDoublyLinkedNodeList_83: DoublyLinkedNodeList? = DoublyLinkedNodeList()
         var aFloatArray84: FloatArray? = FloatArray(4)
         @JvmField
         var anInt85: Int = 0
@@ -24,7 +24,7 @@ class InputStream_Sub2 : InputStream() {
         fun method127(i: Byte) {
             if (i.toInt() != 118) Companion.method128(null, (-48).toByte())
             aFloatArray84 = null
-            aClass243_83 = null
+            aDoublyLinkedNodeList_83 = null
             aIntRange_82 = null
         }
 

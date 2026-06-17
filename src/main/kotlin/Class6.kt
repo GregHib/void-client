@@ -124,7 +124,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 class318_sub5.aString6416 = string
                 class318_sub5.anInt6415 = i_26_
                 class318_sub5.anInt6420 = i_27_
-                NpcDefinition.aClass243_2957!!.method1869(-103, class318_sub5)
+                NpcDefinition.aDoublyLinkedNodeList_2957!!.method1869(-103, class318_sub5)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("go.F(" + i + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ')'))
             }

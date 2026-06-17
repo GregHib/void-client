@@ -15,7 +15,7 @@ object Class62 {
     @JvmField
     var anInt1113: Int = 0
     @JvmField
-    var aClass243_1114: Class243? = Class243()
+    var aDoublyLinkedNodeList_1114: DoublyLinkedNodeList? = DoublyLinkedNodeList()
     @JvmField
     var anInt1115: Int = 0
     @JvmField
@@ -30,7 +30,7 @@ object Class62 {
 
     @JvmStatic
     fun method597(i: Byte) {
-        aClass243_1114 = null
+        aDoublyLinkedNodeList_1114 = null
         anIntArrayArrayArray1116 = null
         val i_0_ = -116 / ((6 - i) / 60)
     }
@@ -82,7 +82,7 @@ object Class62 {
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), i_1_)
             method3553(false, 122.toByte(), i_1_)
         }
-        if (i >= -20) aClass243_1114 = null
+        if (i >= -20) aDoublyLinkedNodeList_1114 = null
         method243(37)
         return i_3_
     }

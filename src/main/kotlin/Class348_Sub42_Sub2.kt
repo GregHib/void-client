@@ -1,4 +1,4 @@
-import Class243.Companion.method1879
+import DoublyLinkedNodeList.Companion.method1879
 import Class260.method1978
 import Class348_Sub16_Sub1.Companion.method2826
 import Class348_Sub17.Companion.method2929

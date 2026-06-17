@@ -196,7 +196,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         i_28_ += MinimapFlagRenderer.method1082(-92, bool)
                         i_29_ += Class348_Sub23.method2960(bool, -48)
                     }
-                    val class243 = class76!!.aClass243_1282
+                    val class243 = class76!!.aDoublyLinkedNodeList_1282
                     var class318_sub4 = class243.method1872(8) as Class318_Sub4?
                     while (class318_sub4 != null) {
                         if ((RuntimeException_Sub1.aBoolean4599 || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) && class318_sub4.method2504(i_29_, i_28_, var_renderer, -115)) {

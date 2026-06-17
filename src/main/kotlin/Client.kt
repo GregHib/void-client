@@ -775,7 +775,7 @@ class Client : GameAppletFrame() {
         method3237(42.toByte())
         method1917(40960)
         method2294(126)
-        Class243.method1873((-120).toByte())
+        DoublyLinkedNodeList.method1873((-120).toByte())
         Class46.method442((-84).toByte())
         method530(14)
         method2458(true)
@@ -1521,14 +1521,14 @@ class Client : GameAppletFrame() {
         if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) method1987(-124)
         method909(3553)
         if (ScanlineRasterFiller.aBoolean2469 && (Class34.aLong482 < method599(-107) + -60000L)) method2405(41)
-        var class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1872(8) as Class318_Sub9_Sub1?)
+        var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(8) as Class318_Sub9_Sub1?)
         while (class318_sub9_sub1 != null) {
             if (class318_sub9_sub1.anInt8787.toLong() < -5L + method599(-80) / 1000L) {
                 if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (-91).toByte(), 0, (class318_sub9_sub1.aString8783 + Class274.aClass274_3502!!.method2063(Class348_Sub33.anInt6967, 544)), "", "")
                 if (class318_sub9_sub1.aShort8786.toInt() == 0) Class286_Sub2.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + Class274.aClass274_3503!!.method2063((Class348_Sub33.anInt6967), i.toInt() xor 0x250)), "", "")
                 class318_sub9_sub1.method2373(false)
             }
-            class318_sub9_sub1 = Class348_Sub42_Sub14.aClass243_9642!!.method1878((-43).toByte()) as Class318_Sub9_Sub1?
+            class318_sub9_sub1 = Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878((-43).toByte()) as Class318_Sub9_Sub1?
         }
         do {
             if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) {
@@ -2155,13 +2155,13 @@ class Client : GameAppletFrame() {
                                         if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {
                                             if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                                 SceneryDetailOptionState.method1823(Class348_Sub8.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
-                                                var class318_sub6 = (InputStream_Sub2.aClass243_83!!.method1872(8) as Class318_Sub6?)
+                                                var class318_sub6 = (InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1872(8) as Class318_Sub6?)
                                                 while (class318_sub6 != null) {
                                                     if (i_40_ >= (class318_sub6.anInt6429) && (i_40_ < (class318_sub6.anInt6426)) && (i_41_ >= (class318_sub6.anInt6427)) && (i_41_ < (class318_sub6.anInt6425))) {
                                                         method661(107.toByte())
                                                         method1777(-3, (class318_sub6.aClass318_Sub1_Sub3_Sub3_6431))
                                                     }
-                                                    class318_sub6 = ((InputStream_Sub2.aClass243_83!!.method1878((-67).toByte())) as Class318_Sub6?)
+                                                    class318_sub6 = ((InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1878((-67).toByte())) as Class318_Sub6?)
                                                 }
                                             }
                                             continue

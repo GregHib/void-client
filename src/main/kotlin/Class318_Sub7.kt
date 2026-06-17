@@ -11,7 +11,7 @@ import kotlin.math.sqrt
 * Visit http://jode.sourceforge.net/
 */
 class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePriorityNode: ModelFacePriorityNode?, class318_sub10: Class318_Sub10?, l: Long) : Class318() {
-    var aClass243_6433: Class243? = null
+    var aDoublyLinkedNodeList_6433: DoublyLinkedNodeList? = null
     private var anInt6434 = 0
     private val aLong6435: Long
     var aModelFacePriorityNode_6436: ModelFacePriorityNode? = null
@@ -62,11 +62,11 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
     fun method2511(bool: Boolean, var_renderer: Renderer?, l: Long) {
         try {
             anInt6437++
-            if (bool != true) this.aClass243_6433 = null
-            var class318_sub9_sub2_sub1 = (this.aClass243_6433!!.method1872(8) as Class318_Sub9_Sub2_Sub1?)
+            if (bool != true) this.aDoublyLinkedNodeList_6433 = null
+            var class318_sub9_sub2_sub1 = (this.aDoublyLinkedNodeList_6433!!.method1872(8) as Class318_Sub9_Sub2_Sub1?)
             while (class318_sub9_sub2_sub1 != null) {
                 class318_sub9_sub2_sub1.method2522(var_renderer, l)
-                class318_sub9_sub2_sub1 = this.aClass243_6433!!.method1878(126.toByte()) as Class318_Sub9_Sub2_Sub1?
+                class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1878(126.toByte()) as Class318_Sub9_Sub2_Sub1?
             }
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + l + ')'))
@@ -214,11 +214,11 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                     this.aClass284_6444.anInt3668 = (this.aModelFacePriorityNode_6436!!.anInt1883)
                 }
                 this.anInt6447 = 0
-                var class318_sub9_sub2_sub1 = this.aClass243_6433!!.method1872(i_9_ + 5) as Class318_Sub9_Sub2_Sub1?
+                var class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1872(i_9_ + 5) as Class318_Sub9_Sub2_Sub1?
                 while (class318_sub9_sub2_sub1 != null) {
                     class318_sub9_sub2_sub1.method2524(l, i)
                     this.anInt6447++
-                    class318_sub9_sub2_sub1 = (this.aClass243_6433!!.method1878(122.toByte()) as Class318_Sub9_Sub2_Sub1?)
+                    class318_sub9_sub2_sub1 = (this.aDoublyLinkedNodeList_6433!!.method1878(122.toByte()) as Class318_Sub9_Sub2_Sub1?)
                 }
                 Class313.anInt3936 += this.anInt6447
                 if (i_9_ == 3) break
@@ -240,7 +240,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
             this.aClass318_Sub10_6439 = class318_sub10
             this.aSpotAnimDefinition_6441 = this.aModelFacePriorityNode_6436!!.method1125(59.toByte())
             if (!var_renderer!!.method3644() && (this.aSpotAnimDefinition_6441!!.anInt2387) != -1) this.aSpotAnimDefinition_6441 = method3591((this.aSpotAnimDefinition_6441!!.anInt2387), 0)
-            this.aClass243_6433 = Class243()
+            this.aDoublyLinkedNodeList_6433 = DoublyLinkedNodeList()
             anInt6434 = (anInt6434 + 64.0 * Math.random()).toInt()
             method2507(true)
             aClass284_6449.anInt3680 = this.aClass284_6444.anInt3680

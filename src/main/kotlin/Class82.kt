@@ -135,7 +135,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("cleartext", ignoreCase = true)) {
-                            NpcDefinition.aClass243_2957!!.method1876((-45).toByte())
+                            NpcDefinition.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
                             method94("Text coords cleared", i + 21)
                             return
                         }
