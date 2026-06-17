@@ -45,7 +45,7 @@ class Class57 {
             val i_0_ = -45 / ((i - 54) / 43)
             anInt1049++
             if (Class342.aClass70_4247 != class70) {
-                if (class70 != Class285_Sub2.aClass70_8503) {
+                if (class70 != GlIndexBufferArb.aClass70_8503) {
                     if (Class318_Sub1_Sub2.aClass70_8737 != class70) {
                         if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 34166
                     } else return 34168

@@ -47,8 +47,8 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
         anInt6538++
         var i_3_ = keyevent.getKeyCode()
         if (i_3_ != 0) {
-            if (i_3_ >= 0 && Class285_Sub2.anIntArray8507!!.size > i_3_) {
-                i_3_ = Class285_Sub2.anIntArray8507!![i_3_]
+            if (i_3_ >= 0 && GlIndexBufferArb.anIntArray8507!!.size > i_3_) {
+                i_3_ = GlIndexBufferArb.anIntArray8507!![i_3_]
                 if (i_2_ == 0 && (i_3_ and 0x80) != 0) i_3_ = 0
                 else i_3_ = i_3_ and 0x80.inv()
             } else i_3_ = 0

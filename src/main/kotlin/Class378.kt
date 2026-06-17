@@ -855,7 +855,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         private fun method3961(class70: Class70?, i: Int): Int {
             if (i != 2) aFloatArray9797 = null
             if (Class342.aClass70_4247 == class70) return 2
-            if (class70 == Class285_Sub2.aClass70_8503) return 0
+            if (class70 == GlIndexBufferArb.aClass70_8503) return 0
             if (Class318_Sub1_Sub2.aClass70_8737 != class70) {
                 if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 3
             } else return 1

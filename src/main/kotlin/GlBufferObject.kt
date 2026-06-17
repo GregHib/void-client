@@ -8,7 +8,10 @@ import jaggl.OpenGL.Companion.glBufferDataARBub
 import jaggl.OpenGL.Companion.glBufferSubDataARBa
 import jaggl.OpenGL.Companion.glGenBuffersARB
 
-abstract class Class285 internal constructor(var aClass377_4759: Class377, private val anInt4755: Int, private val aBoolean4750: Boolean) : Interface5 {
+/*
+ * Class285
+ */
+abstract class GlBufferObject internal constructor(var aClass377_4759: Class377, private val anInt4755: Int, private val aBoolean4750: Boolean) : Interface5 {
     private var anInt4736 = 0
     private var anInt4739 = 0
     private var anInt4746 = -1

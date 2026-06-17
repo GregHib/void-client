@@ -200,8 +200,8 @@ import NpcEntityUpdater.method2111
 import DataHolder.Companion.method2113
 import DataHolder.Companion.method2114
 import ViewportTransform.Companion.method2117
-import Class285.Companion.method2124
-import Class285_Sub2.Companion.method2132
+import GlBufferObject.Companion.method2124
+import GlIndexBufferArb.Companion.method2132
 import Class286.Companion.method2135
 import Class286_Sub2.Companion.method2147
 import Class286_Sub3.Companion.method2148

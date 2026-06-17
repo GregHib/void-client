@@ -57,7 +57,7 @@ class Class348_Sub40_Sub15 internal constructor(i: Int) : Class348_Sub40(0, true
                 anInt9219++
                 if (i != 2) aIntRange_9216 = null
                 method2732(i_6_, i_7_, bool, 96, class45, i_5_)
-                Class285.aClass348_Sub16_Sub3_4743 = class348_sub16_sub3
+                GlBufferObject.aClass348_Sub16_Sub3_4743 = class348_sub16_sub3
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("pba.D(" + i + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + bool + ',' + i_6_ + ',' + i_7_ + ')'))
             }

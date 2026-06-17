@@ -4247,7 +4247,7 @@ object Class66 {
                 }
                 if (i == 3610) {
                     val i_363_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_363_ < Class348_Sub40_Sub30.anInt9383) aStringArray1152!![anInt1170++] = Class285.aStringArray4744!![i_363_]!!
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_363_ < Class348_Sub40_Sub30.anInt9383) aStringArray1152!![anInt1170++] = GlBufferObject.aStringArray4744!![i_363_]!!
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return

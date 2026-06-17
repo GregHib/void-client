@@ -102,7 +102,7 @@ class Class315 internal constructor(var aString3953: String?) {
             Class58.anInt1059 = i
             anInt3948++
             Class346.aBoolean4275 = bool
-            Class285.aClass348_Sub16_Sub3_4743 = null
+            GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_
             WaterDetailOptionState.anInt5994 = i_3_
             Class348_Sub43.anInt7068 = 1

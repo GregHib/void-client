@@ -40,7 +40,7 @@ abstract class Class348_Sub31 : Class348() {
         @JvmStatic
         fun method3007(i: Int, i_0_: Int) {
             Class318_Sub1_Sub4_Sub1.anInt10074 = -1
-            Class285.aClass348_Sub16_Sub3_4743 = null
+            GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             if (i_0_ != 22684) anInt6913 = -117
             anInt6922++
             Class346.aBoolean4275 = false

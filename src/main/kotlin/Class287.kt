@@ -23,7 +23,7 @@ class Class287 {
             if (MapSceneDefLoader.aProjectileFactory_2489 == projectileFactory) return Class348_Sub46.method3322(0, class348_sub49!!)
             if (projectileFactory == SpotAnimVector.aProjectileFactory_2307) return Class50_Sub4.method472(-27794, class348_sub49!!)
             if (OrientationRotator.aProjectileFactory_2045 == projectileFactory) return Class328_Sub2.method2612(class348_sub49!!, true)
-            if (LocTypeDefLoader.aProjectileFactory_2507 == projectileFactory) return Class285_Sub1.method2128(-1730, class348_sub49!!)
+            if (LocTypeDefLoader.aProjectileFactory_2507 == projectileFactory) return GlVertexBufferArb.method2128(-1730, class348_sub49!!)
             return null
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("vp.F(" + bool + ',' + (if (projectileFactory != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))

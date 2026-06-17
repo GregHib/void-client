@@ -48,7 +48,7 @@ class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: OpenGlR
                     Class58.anInt1059 = i_7_
                     Class318_Sub1_Sub4_Sub1.anInt10074 = i
                     Class346.aBoolean4275 = bool
-                    Class285.aClass348_Sub16_Sub3_4743 = null
+                    GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                     Class318.anInt3971 = i_4_
                     anInt8687++
                     BloomGraphicsOptionState.aLong5971 = l

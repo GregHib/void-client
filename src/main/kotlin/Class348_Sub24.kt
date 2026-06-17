@@ -440,10 +440,10 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 if (WalkingTypeUtil.anInt3310 < -55) Class344.anInt4263 = 2
                                 if (RenderableGroup.anInt5016 < -40) Class303.anInt3844 = 1
                                 if (WalkingTypeUtil.anInt3310 > 55) Class344.anInt4263 = -2
-                                Class285.anInt4753++
+                                GlBufferObject.anInt4753++
                                 if (RenderableGroup.anInt5016 > 40) Class303.anInt3844 = -1
-                                if (Class285.anInt4753 > 500) {
-                                    Class285.anInt4753 = 0
+                                if (GlBufferObject.anInt4753 > 500) {
+                                    GlBufferObject.anInt4753 = 0
                                     val i_33_ = (Math.random() * 8.0).toInt()
                                     if ((i_33_ and 0x2) == 2) Class348_Sub49_Sub1.anInt9750 += Class348_Sub42_Sub14.anInt9645
                                     if ((i_33_ and 0x1) == 1) OpenGlRenderNode.anInt10483 += Class348_Sub42_Sub9_Sub1.anInt10443

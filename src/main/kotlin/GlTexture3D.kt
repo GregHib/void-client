@@ -1,4 +1,4 @@
-import Class285_Sub1.Companion.method2131
+import GlVertexBufferArb.Companion.method2131
 import jaggl.OpenGL.Companion.glCopyTexSubImage3D
 import jaggl.OpenGL.Companion.glFlush
 import jaggl.OpenGL.Companion.glFramebufferTexture3DEXT
@@ -74,7 +74,7 @@ class GlTexture3D : GlTexture {
             Class318_Sub1_Sub3_Sub3.aBoolean10221 = Class9.aRenderer171!!.method3704() > 0
             Class348_Sub40_Sub17.aBoolean9242 = bool_24_
             DisplayModeOptionState.anInt6111 = i_12_ shr Class362.anInt4459
-            Class285_Sub2.anInt8502 = i_14_ shr Class362.anInt4459
+            GlIndexBufferArb.anInt8502 = i_14_ shr Class362.anInt4459
             TextureDefinitionLoader.anInt1974 = i_12_
             Class348_Sub40_Sub27.anInt9360 = i_14_
             TerrainTileGeometry.anInt3006 = i_13_
@@ -83,14 +83,14 @@ class GlTexture3D : GlTexture {
                 AnimatedModelRenderer.anInt8412 = -Class37.anInt492
                 Class37.anInt492 = 0
             } else AnimatedModelRenderer.anInt8412 = 0
-            Class348_Sub34.anInt6974 = Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084
+            Class348_Sub34.anInt6974 = GlIndexBufferArb.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084
             if (Class348_Sub34.anInt6974 < 0) {
                 WorldMapRenderer.anInt4686 = -Class348_Sub34.anInt6974
                 Class348_Sub34.anInt6974 = 0
             } else WorldMapRenderer.anInt4686 = 0
             ProjectileConfigUtil.anInt387 = DisplayModeOptionState.anInt6111 + Class318_Sub1_Sub4_Sub1.anInt10084
             if (ProjectileConfigUtil.anInt387 > Class318_Sub7.anInt6451) ProjectileConfigUtil.anInt387 = Class318_Sub7.anInt6451
-            Class59_Sub1.anInt5293 = Class285_Sub2.anInt8502 + Class318_Sub1_Sub4_Sub1.anInt10084
+            Class59_Sub1.anInt5293 = GlIndexBufferArb.anInt8502 + Class318_Sub1_Sub4_Sub1.anInt10084
             if (Class59_Sub1.anInt5293 > Class348_Sub41.anInt7054) Class59_Sub1.anInt5293 = Class348_Sub41.anInt7054
             val bools = Class99.aBooleanArrayArray1572
             val bools_28_ = Class348_Sub8.aBooleanArrayArray6656
@@ -102,7 +102,7 @@ class GlTexture3D : GlTexture {
                         if (i_32_ > 1) RefCountedHandle.anIntArray2272!![i_32_ - 2] = i_30_
                         i_30_ = i_31_
                         val i_33_ = (DisplayModeOptionState.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_29_)
-                        val i_34_ = (Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_32_)
+                        val i_34_ = (GlIndexBufferArb.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_32_)
                         if (i_33_ >= 0 && i_34_ >= 0 && i_33_ < Class318_Sub7.anInt6451 && i_34_ < Class348_Sub41.anInt7054) {
                             val i_35_ = i_33_ shl Class362.anInt4459
                             val i_36_ = i_34_ shl Class362.anInt4459

@@ -516,7 +516,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     this.aHa_Sub3_8322!!.method3850(63.toByte(), (this.aHa_Sub3_8322!!.anInterface18_8147))
                     this.aHa_Sub3_8322!!.method3874(Class328_Sub3.aRenderConfigFactory_6519, 116, ParticleSystemState.aRenderConfigFactory_2207)
                     this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
-                    this.aHa_Sub3_8322!!.method3885(0, true, Class285_Sub2.aClass70_8503)
+                    this.aHa_Sub3_8322!!.method3885(0, true, GlIndexBufferArb.aClass70_8503)
                     var class348 = aNodeDeque_8286.method1995(i_151_ + 5)
                     while (class348 != null) {
                         val class348_sub38 = class348 as Class348_Sub38

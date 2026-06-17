@@ -109,7 +109,7 @@ class ModelLightingConfig {
             if (i_3_ < 50) return false
             Class318_Sub1_Sub5_Sub2.anIntArray10172!![2] = i_3_
             Class318_Sub1_Sub5_Sub2.anIntArray10172!![0] = (ScreenBorderFiller.anInt1962 * Class318_Sub1_Sub5_Sub2.anIntArray10172!![0] / i_3_) + Class69.anInt1202
-            Class318_Sub1_Sub5_Sub2.anIntArray10172!![1] = (Class348_Sub49_Sub2.anInt9759 + (Class318_Sub1_Sub5_Sub2.anIntArray10172!![1] * Class285_Sub2.anInt8498 / i_3_))
+            Class318_Sub1_Sub5_Sub2.anIntArray10172!![1] = (Class348_Sub49_Sub2.anInt9759 + (Class318_Sub1_Sub5_Sub2.anIntArray10172!![1] * GlIndexBufferArb.anInt8498 / i_3_))
             if (i_2_ != -7596) aRectangleArray2554 = null
             return true
         }

@@ -732,7 +732,7 @@ open class Class348_Sub49 : Class348 {
                     ItemDefinition.aAbstractGameSocket_2773!!.method1700(36.toByte())
                     ItemDefinition.aAbstractGameSocket_2773 = null
                 }
-                if (i_71_ == 3) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != RenderNode.anInt9721), (-45).toByte())
+                if (i_71_ == 3) Class348_Sub42_Sub8.method3198((GlBufferObject.anInt4737 != RenderNode.anInt9721), (-45).toByte())
                 if (i_71_ == 7) method1006((RenderNode.anInt9721 != Class54.anInt970), 102.toByte())
                 if (i_71_ == 5) {
                     if (Class348_Sub23_Sub3.aString9043 == null) method1213(Class64_Sub3.aString5600, TextureGenerator.aString2496, -124)

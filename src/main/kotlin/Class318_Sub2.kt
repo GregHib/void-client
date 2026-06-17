@@ -121,10 +121,10 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                 if (class338!!.aByte4192.toInt() == 1) {
                     val i_20_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (-DisplayModeOptionState.anInt6111 + class338.aShort4185))
                     if (i_20_ >= 0 && i_20_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
-                        var i_21_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + class338.aShort4193 - Class285_Sub2.anInt8502)
+                        var i_21_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + class338.aShort4193 - GlIndexBufferArb.anInt8502)
                         if (i_21_ < 0) i_21_ = 0
                         else if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084) < i_21_) return
-                        var i_22_: Int = (-Class285_Sub2.anInt8502 + (class338.aShort4190 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
+                        var i_22_: Int = (-GlIndexBufferArb.anInt8502 + (class338.aShort4190 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
                         if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084) < i_22_) i_22_ = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084)
                         else if (i_22_ < 0) return
                         var bool = false
@@ -141,7 +141,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                         }
                     }
                 } else if (class338.aByte4192.toInt() == 2) {
-                    val i_23_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (class338.aShort4193 - Class285_Sub2.anInt8502))
+                    val i_23_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (class338.aShort4193 - GlIndexBufferArb.anInt8502))
                     if (i_23_ >= 0 && i_23_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
                         var i_24_: Int = (class338.aShort4185 + (-DisplayModeOptionState.anInt6111 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
                         if (i_24_ >= 0) {
@@ -167,7 +167,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                 } else if (class338.aByte4192.toInt() == 16 || class338.aByte4192.toInt() == 8) {
                     val i_26_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (-DisplayModeOptionState.anInt6111 + class338.aShort4185))
                     if (i_26_ >= 0 && i_26_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
-                        val i_27_: Int = (class338.aShort4193 + (-Class285_Sub2.anInt8502 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
+                        val i_27_: Int = (class338.aShort4193 + (-GlIndexBufferArb.anInt8502 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
                         if (i_27_ >= 0 && ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084) >= i_27_) && Class99.aBooleanArrayArray1572!![i_26_]!![i_27_]) {
                             var f = (TextureDefinitionLoader.anInt1974 - (class338.anIntArray4187!![0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
@@ -179,11 +179,11 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                 } else if (class338.aByte4192.toInt() == 4) {
                     val f = (-TerrainTileGeometry.anInt3006 + class338.anIntArray4191[0]).toFloat()
                     if (!(f <= OpenGlRenderer.anInt7714.toFloat())) {
-                        var i_29_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + -Class285_Sub2.anInt8502 + class338.aShort4193)
+                        var i_29_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + -GlIndexBufferArb.anInt8502 + class338.aShort4193)
                         if (i_29_ >= 0) {
                             if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084) < i_29_) return
                         } else i_29_ = 0
-                        var i_30_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + -Class285_Sub2.anInt8502 + class338.aShort4190)
+                        var i_30_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + -GlIndexBufferArb.anInt8502 + class338.aShort4190)
                         if (i_30_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
                             if (i_30_ < 0) return
                         } else i_30_ = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084)

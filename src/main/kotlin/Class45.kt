@@ -40,7 +40,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt646++
         if (!method399(false)) return false
         if (i < 0 || aClass291_629!!.anIntArray3724.size <= i || (aClass291_629!!.anIntArray3724[i] == 0)) {
-            require(!Class285.aBoolean4741) { i.toString() }
+            require(!GlBufferObject.aBoolean4741) { i.toString() }
             return false
         }
         return i_4_.toInt() == -40
@@ -432,7 +432,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt662++
         if (!method399(false)) return false
         if (i_74_ < i_73_ || i < 0 || (aClass291_629!!.anIntArray3724.size <= i_74_) || (aClass291_629!!.anIntArray3724[i_74_] <= i)) {
-            require(!Class285.aBoolean4741) { i_74_.toString() + "," + i }
+            require(!GlBufferObject.aBoolean4741) { i_74_.toString() + "," + i }
             return false
         }
         return true

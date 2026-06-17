@@ -246,7 +246,7 @@ object ClientLoadStateMachine {
                 i_13_++
             }
             method1063(1)
-            Class285.anInt4737 = Class348_Sub35.aClass45_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
+            GlBufferObject.anInt4737 = Class348_Sub35.aClass45_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
             Class54.anInt970 = Class348_Sub35.aClass45_6980!!.method417("lobbyscreen", 0)
             Class367_Sub10.aClass45_7382!!.method404(0, true, false)
             Class59_Sub2_Sub1.aClass45_8667!!.method404(0, true, true)
@@ -264,10 +264,10 @@ object ClientLoadStateMachine {
             Class78.aClass45_1322!!.anInt634 = 2
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1040) {
-            if (!Class320.method2547(Class285.anInt4737, 84.toByte())) return 0
+            if (!Class320.method2547(GlBufferObject.anInt4737, 84.toByte())) return 0
             var bool = true
-            for (i_14_ in (Class348_Sub40_Sub33.aClass46ArrayArray9427!![Class285.anInt4737])!!.indices) {
-                val class46: Class46 = (Class348_Sub40_Sub33.aClass46ArrayArray9427!![Class285.anInt4737]!![i_14_])!!
+            for (i_14_ in (Class348_Sub40_Sub33.aClass46ArrayArray9427!![GlBufferObject.anInt4737])!!.indices) {
+                val class46: Class46 = (Class348_Sub40_Sub33.aClass46ArrayArray9427!![GlBufferObject.anInt4737]!![i_14_])!!
                 if (class46.anInt774 == 5 && class46.anInt756 != -1 && !CameraRotationStub.aClass45_322!!.method420(-10499, (class46.anInt756), 0)) bool = false
             }
             if (!bool) return 0

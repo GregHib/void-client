@@ -430,7 +430,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             Class289.method2193(true, (-128).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 85) {
-                            Class285.aClass323_4754 = Class323(var_renderer!!, 22, true, Class305.aCanvas3869!!)
+                            GlBufferObject.aClass323_4754 = Class323(var_renderer!!, 22, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 88
                             Class289.method2193(true, (-124).toByte())
                             method867(true)

@@ -1,5 +1,5 @@
 import BrightnessOptionState.Companion.method1745
-import Class285_Sub1.Companion.method2127
+import GlVertexBufferArb.Companion.method2127
 import Class286_Sub3.Companion.method2148
 import Class59.Companion.method544
 

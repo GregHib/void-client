@@ -1,4 +1,4 @@
-import Class285_Sub1.Companion.method2131
+import GlVertexBufferArb.Companion.method2131
 import Class286_Sub5.Companion.method2161
 import Class289.method2194
 import OutputStream_Sub2.Companion.method138

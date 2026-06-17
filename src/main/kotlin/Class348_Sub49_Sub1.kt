@@ -125,8 +125,8 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                             if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_15_ in 0..<Npc.anInt10503) Class319.aClass315Array3982!![i_15_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_1_, i_2_)
-                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_2_)
+                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_1_, i_2_)
+                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_2_)
                     } else {
                         var i_16_ = Class99.aBooleanArrayArray1572!!.size
                         if ((Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size) > Class318_Sub7.anInt6451) i_16_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size - Class318_Sub7.anInt6451)
@@ -146,8 +146,8 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                             if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_21_ in 0..<Npc.anInt10503) Class319.aClass315Array3982!![i_21_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_1_, i_2_)
-                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_2_)
+                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_1_, i_2_)
+                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_2_)
                     }
                 }
             }
@@ -170,36 +170,36 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
 
         fun method3402(i: Byte) {
             if (Class297.aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") == -1) {
-                Class285_Sub2.anIntArray8507!![46] = 72
-                Class285_Sub2.anIntArray8507!![92] = 74
-                Class285_Sub2.anIntArray8507!![44] = 71
-                Class285_Sub2.anIntArray8507!![61] = 27
-                Class285_Sub2.anIntArray8507!![91] = 42
+                GlIndexBufferArb.anIntArray8507!![46] = 72
+                GlIndexBufferArb.anIntArray8507!![92] = 74
+                GlIndexBufferArb.anIntArray8507!![44] = 71
+                GlIndexBufferArb.anIntArray8507!![61] = 27
+                GlIndexBufferArb.anIntArray8507!![91] = 42
                 if (Class297.aMethod3783 == null) {
-                    Class285_Sub2.anIntArray8507!![192] = 58
-                    Class285_Sub2.anIntArray8507!![222] = 59
+                    GlIndexBufferArb.anIntArray8507!![192] = 58
+                    GlIndexBufferArb.anIntArray8507!![222] = 59
                 } else {
-                    Class285_Sub2.anIntArray8507!![520] = 59
-                    Class285_Sub2.anIntArray8507!![192] = 28
-                    Class285_Sub2.anIntArray8507!![222] = 58
+                    GlIndexBufferArb.anIntArray8507!![520] = 59
+                    GlIndexBufferArb.anIntArray8507!![192] = 28
+                    GlIndexBufferArb.anIntArray8507!![222] = 58
                 }
-                Class285_Sub2.anIntArray8507!![45] = 26
-                Class285_Sub2.anIntArray8507!![47] = 73
-                Class285_Sub2.anIntArray8507!![59] = 57
-                Class285_Sub2.anIntArray8507!![93] = 43
+                GlIndexBufferArb.anIntArray8507!![45] = 26
+                GlIndexBufferArb.anIntArray8507!![47] = 73
+                GlIndexBufferArb.anIntArray8507!![59] = 57
+                GlIndexBufferArb.anIntArray8507!![93] = 43
             } else {
-                Class285_Sub2.anIntArray8507!![222] = 59
-                Class285_Sub2.anIntArray8507!![187] = 27
-                Class285_Sub2.anIntArray8507!![186] = 57
-                Class285_Sub2.anIntArray8507!![221] = 43
-                Class285_Sub2.anIntArray8507!![219] = 42
-                Class285_Sub2.anIntArray8507!![191] = 73
-                Class285_Sub2.anIntArray8507!![190] = 72
-                Class285_Sub2.anIntArray8507!![220] = 74
-                Class285_Sub2.anIntArray8507!![188] = 71
-                Class285_Sub2.anIntArray8507!![189] = 26
-                Class285_Sub2.anIntArray8507!![192] = 58
-                Class285_Sub2.anIntArray8507!![223] = 28
+                GlIndexBufferArb.anIntArray8507!![222] = 59
+                GlIndexBufferArb.anIntArray8507!![187] = 27
+                GlIndexBufferArb.anIntArray8507!![186] = 57
+                GlIndexBufferArb.anIntArray8507!![221] = 43
+                GlIndexBufferArb.anIntArray8507!![219] = 42
+                GlIndexBufferArb.anIntArray8507!![191] = 73
+                GlIndexBufferArb.anIntArray8507!![190] = 72
+                GlIndexBufferArb.anIntArray8507!![220] = 74
+                GlIndexBufferArb.anIntArray8507!![188] = 71
+                GlIndexBufferArb.anIntArray8507!![189] = 26
+                GlIndexBufferArb.anIntArray8507!![192] = 58
+                GlIndexBufferArb.anIntArray8507!![223] = 28
             }
             anInt9742++
             if (i > -20) aBoolean9746 = false

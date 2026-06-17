@@ -120,7 +120,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             Class289.aNodeDeque_3705 = null
             method749()
             Class75.aNodeDeque_1254!!.method1996(127)
-            Class285.aClass323_4754 = null
+            GlBufferObject.aClass323_4754 = null
             HeapDiagnosticsHolder.aClass323_2252 = null
             Class67.aAbstractModelRenderer_4643 = null
             MinimapSpriteRenderer.aClass323_4921 = null

@@ -159,7 +159,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                     }
                     if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(Class43.aClass45_611, Class333.aClass45_4147)
                     var class348_sub16_sub3 = Class98.aClass348_Sub16_Sub3_1564!!
-                    if (Class285.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = Class285.aClass348_Sub16_Sub3_4743!!
+                    if (GlBufferObject.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = GlBufferObject.aClass348_Sub16_Sub3_4743!!
                     if (class348_sub16_sub3.method2866((Class286.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, Class367_Sub9.aClass45_7371, -35)) {
                         Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                         Class98.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
@@ -180,7 +180,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                                 i++
                             }
                         }
-                        if (Class285.aClass348_Sub16_Sub3_4743 == null) {
+                        if (GlBufferObject.aClass348_Sub16_Sub3_4743 == null) {
                             if (BloomGraphicsOptionState.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564!!.method2869(Class286.Companion.aClass348_Sub2_3683, Class346.aBoolean4275, false)
                             else Class98.aClass348_Sub16_Sub3_1564!!.method2870(Class286.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, Class346.aBoolean4275, true, 24.toByte())
                         }
@@ -189,7 +189,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                         Class286.Companion.aClass348_Sub2_3683 = null
                         BloomGraphicsOptionState.aLong5971 = 0L
                         TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
-                        Class285.aClass348_Sub16_Sub3_4743 = null
+                        GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                         return true
                     }
                 }
@@ -197,7 +197,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             } catch (exception: Exception) {
                 exception.printStackTrace()
                 Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
-                Class285.aClass348_Sub16_Sub3_4743 = null
+                GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                 TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                 Class286.Companion.aClass348_Sub2_3683 = null
                 ModelDefinition.aClass45_1848 = null

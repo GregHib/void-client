@@ -13,8 +13,8 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
         var i_3_ = 0
         if (DisplayModeOptionState.anInt6111 == i_0_) i_3_++
         else if (DisplayModeOptionState.anInt6111 < i_0_) i_3_ += 2
-        if (i_1_ == Class285_Sub2.anInt8502) i_3_ += 3
-        else if (i_1_ < Class285_Sub2.anInt8502) i_3_ += 6
+        if (i_1_ == GlIndexBufferArb.anInt8502) i_3_ += 3
+        else if (i_1_ < GlIndexBufferArb.anInt8502) i_3_ += 6
         val i_4_ = Class318_Sub9_Sub2.anIntArray8797!![i_3_]
         if ((this.aShort8759.toInt() and i_4_) != 0) return this.method2390(class348_sub1s!!, i_0_, -2, i_1_)
         if (this.aShort8759.toInt() == 1 && i_0_ > 0) return this.method2390(class348_sub1s!!, -1 + i_0_, -2, i_1_)
@@ -46,7 +46,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
     override fun method2378(i: Int): Boolean {
         anInt8757++
         if (i != 0) method2378(-104)
-        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + (this.y shr Class362.anInt4459))])
+        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + -GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459))])
     }
 
     companion object {

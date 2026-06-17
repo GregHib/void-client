@@ -1,5 +1,5 @@
 import BrightnessOptionState.Companion.method1745
-import Class285_Sub1.Companion.method2127
+import GlVertexBufferArb.Companion.method2127
 import Class286_Sub3.Companion.method2148
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable
@@ -148,7 +148,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                                 Class367_Sub3.Companion.aBooleanArray7304!![i_10_] = Class367_Sub3.Companion.aBooleanArray7304!![i_10_ - -1]
                                 i_10_++
                             }
-                            Class285_Sub1.anInt8493++
+                            GlVertexBufferArb.anInt8493++
                             Crc64Hashable.anInt4985 = Class311.anInt3918
                             val class348_sub47 = method2148(Renderer.aClass351_4571, (Class348_Sub23_Sub2.aClass77_9029), -123)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))

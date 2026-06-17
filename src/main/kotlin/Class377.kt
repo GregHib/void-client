@@ -75,7 +75,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     private val aNodeDeque_9904 = NodeDeque()
     private var aNodeDeque_9905: NodeDeque? = NodeDeque()
     private var aLong9906: Long = 0
-    private var aClass285_Sub1Array9907: Array<Class285_Sub1?>? = arrayOfNulls<Class285_Sub1>(16)
+    private var aClass285_Sub1Array9907: Array<GlVertexBufferArb?>? = arrayOfNulls<GlVertexBufferArb>(16)
     private var aBoolean9908 = false
     private var anInt9909 = 0
     private var aBoolean9910 = false
@@ -385,7 +385,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         try {
             anInt9814++
             val i_18_ = 86 / ((i - -26) / 39)
-            aClass285_Sub1Array9907!![i_17_] = (interface5_impl1 as Class285_Sub1?)!!
+            aClass285_Sub1Array9907!![i_17_] = (interface5_impl1 as GlVertexBufferArb?)!!
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.WB(" + i + ',' + (if (interface5_impl1 != null) "{...}" else "null") + ',' + i_17_ + ')'))
         }
@@ -723,7 +723,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 i_44_ = 0
             }
             val class68 = interface5_impl2!!.method25(51.toByte())
-            val class285_sub2 = interface5_impl2 as Class285_Sub2
+            val class285_sub2 = interface5_impl2 as GlIndexBufferArb
             class285_sub2.method2125(0)
             glDrawElements(i_44_, i_45_, ModelBatchBase.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
         } catch (runtimeexception: RuntimeException) {
@@ -1061,7 +1061,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     override fun method3840(i: Int, bool: Boolean): Interface5_Impl2? {
         anInt9826++
         if (i != -28633) return null
-        return Class285_Sub2(this, Class68.aClass68_1184, bool)
+        return GlIndexBufferArb(this, Class68.aClass68_1184, bool)
     }
 
     override fun I(): Int {
@@ -1169,7 +1169,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
 
     override fun method3889(bool: Boolean, i: Int): Interface5_Impl1 {
         anInt9815++
-        return Class285_Sub1(this, bool)
+        return GlVertexBufferArb(this, bool)
     }
 
     override fun method3858(bool: Boolean): Float {

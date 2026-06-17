@@ -122,7 +122,7 @@ object GameDisplayManager {
                     Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                     ModelDefinition.aClass45_1848 = null
                     Class286.aClass348_Sub2_3683 = null
-                    Class285.aClass348_Sub16_Sub3_4743 = null
+                    GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                     TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                     Class348_Sub43.anInt7068 = 0
                     break

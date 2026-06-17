@@ -13,7 +13,7 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
     override fun method2378(i: Int): Boolean {
         if (i != 0) method2406(79)
         anInt8734++
-        return (Class99.aBooleanArrayArray1572!![(Class318_Sub1_Sub4_Sub1.anInt10084 + -DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459))]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + (-Class285_Sub2.anInt8502 + (this.y shr Class362.anInt4459)))])
+        return (Class99.aBooleanArrayArray1572!![(Class318_Sub1_Sub4_Sub1.anInt10084 + -DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459))]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459)))])
     }
 
     override fun method2392(bool: Boolean) {

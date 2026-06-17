@@ -43,7 +43,7 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
         if (i.toInt() == 87) {
             aClass378_7340!!.method3957(null, (-89).toByte())
             this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
-            this.aHa_Sub3_4479.method3849(47.toByte(), 1, Class285_Sub2.aClass70_8503)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 1, GlIndexBufferArb.aClass70_8503)
             this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
             this.aHa_Sub3_4479.method3852(9, true)
         }
@@ -105,7 +105,7 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
         if (i != 15192) method3531(true)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
         this.aHa_Sub3_4479.method3849(47.toByte(), 1, Class348_Sub40_Sub39.aClass70_9485)
-        this.aHa_Sub3_4479.method3924(false, false, 2, Class285_Sub2.aClass70_8503, true)
+        this.aHa_Sub3_4479.method3924(false, false, 2, GlIndexBufferArb.aClass70_8503, true)
         this.aHa_Sub3_4479.method3852(9, false)
         aClass378_7340!!.method3957(anIDirect3DVertexShader7341, (-89).toByte())
         method3523(12.toByte())

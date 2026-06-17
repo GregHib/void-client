@@ -69,7 +69,7 @@ abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545:
                 RenderNode.anInt9721 = -1
                 MinimapSpriteRenderer.aClass356_4915 = Class356(8)
                 Class99.method882(11.toByte())
-                RenderNode.anInt9721 = Class285.anInt4737
+                RenderNode.anInt9721 = GlBufferObject.anInt4737
                 method1713(false, 520)
                 Class354.method3466(100)
                 Class66.method703(RenderNode.anInt9721)

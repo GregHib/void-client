@@ -354,7 +354,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         fun method960(i: Int) {
             Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
             anInt1611++
-            Class285.aClass348_Sub16_Sub3_4743 = null
+            GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             Class348_Sub43.anInt7068 = i
             ModelDefinition.aClass45_1848 = null
         }

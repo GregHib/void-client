@@ -184,7 +184,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         }
                     }
                 }
-                if (Class59_Sub1.aBoolean5300) Class285_Sub1.method2129(86.toByte())
+                if (Class59_Sub1.aBoolean5300) GlVertexBufferArb.method2129(86.toByte())
                 var i_27_ = 0
                 while ((i_27_ < (if (!Class59_Sub1.aBoolean5300) 1 else 2))) {
                     val bool = i_27_ == 0
@@ -396,7 +396,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         }
                         class318_sub4 = class243.method1878((-123).toByte()) as Class318_Sub4?
                     }
-                    if (Class59_Sub1.aBoolean5300) Class285_Sub1.method2129(86.toByte())
+                    if (Class59_Sub1.aBoolean5300) GlVertexBufferArb.method2129(86.toByte())
                     i_27_++
                 }
                 TextureDefinitionCache.method1626(1, false)

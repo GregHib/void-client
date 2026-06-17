@@ -8,7 +8,7 @@ import NoOpGraphicsOptionState.Companion.method1803
 import DisplayModeOptionState.Companion.method1825
 import TwoStateOptionState.Companion.method1844
 import MultiLevelOptionState.Companion.method1851
-import Class285_Sub1.Companion.method2127
+import GlVertexBufferArb.Companion.method2127
 import Class318_Sub1_Sub1.Companion.method2396
 import Class324.Companion.method2570
 import Class348_Sub42_Sub9.Companion.method3203
@@ -1242,7 +1242,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     Renderer.anIntArray4578!![i_154_] = i
                                 }
                                 Class286_Sub2.aStringArray6205!![i_154_] = string_150_
-                                Class285.aStringArray4744!![i_154_] = string_152_
+                                GlBufferObject.aStringArray4744!![i_154_] = string_152_
                                 NpcCountAccessor.anIntArray2280!![i_154_] = i_151_
                                 string = null
                                 ObjectSpawnDecoder.aBooleanArray1806!![i_154_] = bool_153_
@@ -1260,7 +1260,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         Class83.aStringArray1441!![Class348_Sub40_Sub30.anInt9383] = string
                         Class286_Sub2.aStringArray6205!![(Class348_Sub40_Sub30.anInt9383)] = string_150_
                         Renderer.anIntArray4578!![Class348_Sub40_Sub30.anInt9383] = i
-                        Class285.aStringArray4744!![Class348_Sub40_Sub30.anInt9383] = string_152_
+                        GlBufferObject.aStringArray4744!![Class348_Sub40_Sub30.anInt9383] = string_152_
                         NpcCountAccessor.anIntArray2280!![Class348_Sub40_Sub30.anInt9383] = i_151_
                         ObjectSpawnDecoder.aBooleanArray1806!![Class348_Sub40_Sub30.anInt9383] = bool_153_
                         Class348_Sub40_Sub30.anInt9383++
@@ -1279,9 +1279,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             val i_158_ = Renderer.anIntArray4578!![i_157_]
                             Renderer.anIntArray4578!![i_157_] = Renderer.anIntArray4578!![1 + i_157_]
                             Renderer.anIntArray4578!![i_157_ - -1] = i_158_
-                            val string = Class285.aStringArray4744!![i_157_]
-                            Class285.aStringArray4744!![i_157_] = Class285.aStringArray4744!![1 + i_157_]
-                            Class285.aStringArray4744!![1 + i_157_] = string
+                            val string = GlBufferObject.aStringArray4744!![i_157_]
+                            GlBufferObject.aStringArray4744!![i_157_] = GlBufferObject.aStringArray4744!![1 + i_157_]
+                            GlBufferObject.aStringArray4744!![1 + i_157_] = string
                             val string_159_ = Class83.aStringArray1441!![i_157_]
                             Class83.aStringArray1441!![i_157_] = Class83.aStringArray1441!![i_157_ + 1]
                             Class83.aStringArray1441!![i_157_ + 1] = string_159_

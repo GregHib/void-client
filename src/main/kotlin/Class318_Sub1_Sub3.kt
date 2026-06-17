@@ -24,7 +24,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
             while ((i_1_ <= this.aShort8747)) {
                 val i_2_ = (-DisplayModeOptionState.anInt6111 + i_0_ + Class318_Sub1_Sub4_Sub1.anInt10084)
                 if (i_2_ >= 0 && (Class99.aBooleanArrayArray1572!!.size > i_2_)) {
-                    val i_3_ = (Class318_Sub1_Sub4_Sub1.anInt10084 + (i_1_ - Class285_Sub2.anInt8502))
+                    val i_3_ = (Class318_Sub1_Sub4_Sub1.anInt10084 + (i_1_ - GlIndexBufferArb.anInt8502))
                     if (i_3_ >= 0 && (Class99.aBooleanArrayArray1572!!.size > i_3_) && Class99.aBooleanArrayArray1572!![i_2_]!![i_3_]) return true
                 }
                 i_1_++
@@ -90,7 +90,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         for (i_26_ in i_19_..3) class348_sub1s!![i_26_] = null
         if (this.aByte8745.toInt() != 0) {
             val i_27_ = (this.aShort8743 + -DisplayModeOptionState.anInt6111)
-            val i_28_ = (-Class285_Sub2.anInt8502 + this.aShort8750)
+            val i_28_ = (-GlIndexBufferArb.anInt8502 + this.aShort8750)
             val i_29_: Int
             val i_30_: Short
             val i_31_: Int

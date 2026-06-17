@@ -116,7 +116,7 @@ class Class354 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_renderConf
             val i_1_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![2]
             if (i_1_ < 50) return false
             class338.aShortArray4194!![i] = (Class69.anInt1202 + (Class318_Sub1_Sub5_Sub2.anIntArray10172!![0] * ScreenBorderFiller.anInt1962 / i_1_)).toShort()
-            class338.aShortArray4183!![i] = ((Class285_Sub2.anInt8498 * Class318_Sub1_Sub5_Sub2.anIntArray10172!![i_0_] / i_1_) + Class348_Sub49_Sub2.anInt9759).toShort()
+            class338.aShortArray4183!![i] = ((GlIndexBufferArb.anInt8498 * Class318_Sub1_Sub5_Sub2.anIntArray10172!![i_0_] / i_1_) + Class348_Sub49_Sub2.anInt9759).toShort()
             class338.aShortArray4188!![i] = i_1_.toShort()
             return true
         }

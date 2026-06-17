@@ -105,7 +105,7 @@ class Class40 internal constructor() {
                 Class348_Sub43.anInt7068 = 1
                 ModelDefinition.aClass45_1848 = class45
                 Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_
-                Class285.aClass348_Sub16_Sub3_4743 = null
+                GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                 Class318.anInt3971 = i_2_
                 Class58.anInt1059 = i
                 WaterDetailOptionState.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564!!.method2844(103.toByte()) / i_3_)

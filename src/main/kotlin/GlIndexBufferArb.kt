@@ -1,6 +1,6 @@
 import jaclib.memory.Buffer
 
-class Class285_Sub2 internal constructor(class377: Class377, class68: Class68?, bool: Boolean) : Class285(class377, 34963, bool), Interface5_Impl2 {
+class GlIndexBufferArb internal constructor(class377: Class377, class68: Class68?, bool: Boolean) : GlBufferObject(class377, 34963, bool), Interface5_Impl2 {
     private val aClass68_8504: Class68?
     override fun method23(i: Int, i_0_: Int) {
         super.method23(i, i_0_ * aClass68_8504!!.anInt1178)
