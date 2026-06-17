@@ -3,9 +3,9 @@ import Class258_Sub4.Companion.method1974
 /* Class240 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class240 internal constructor(class339: Class339?, class125: Class125?) : Interface1 {
+class Class240 internal constructor(class339: Class339?, minimapSpriteRenderer: MinimapSpriteRenderer?) : Interface1 {
     private val aClass339_4682: Class339?
-    private val aClass125_4685: Class125?
+    private val aMinimapSpriteRenderer_4685: MinimapSpriteRenderer?
     override fun method8(i: Byte): Boolean {
         anInt4678++
         val i_0_ = -50 / ((25 - i) / 52)
@@ -18,14 +18,14 @@ class Class240 internal constructor(class339: Class339?, class125: Class125?) : 
 
     override fun method9(i: Byte, bool: Boolean) {
         anInt4676++
-        val class295 = aClass339_4682!!.method2667(false, aClass125_4685!!.anInt4918)
+        val class295 = aClass339_4682!!.method2667(false, aMinimapSpriteRenderer_4685!!.anInt4918)
         if (class295 != null) {
-            val i_7_ = ((aClass125_4685.aClass221_4922!!.method1607(Class92.anInt1524, aClass125_4685.anInt4929, (-118).toByte())) - -aClass125_4685.anInt4924)
-            var i_8_ = ((aClass125_4685.aClass341_4925!!.method2679(OpenGlRenderer.anInt7666, aClass125_4685.anInt4923, i.toInt() xor 0x60b.inv())) - -aClass125_4685.anInt4920)
-            if (aClass125_4685.aBoolean4914) Class348_Sub8.aRenderer6654!!.method3628(i_7_, i_8_, aClass125_4685.anInt4929, aClass125_4685.anInt4923, aClass125_4685.anInt4917, 0)
+            val i_7_ = ((aMinimapSpriteRenderer_4685.aClass221_4922!!.method1607(Class92.anInt1524, aMinimapSpriteRenderer_4685.anInt4929, (-118).toByte())) - -aMinimapSpriteRenderer_4685.anInt4924)
+            var i_8_ = ((aMinimapSpriteRenderer_4685.aClass341_4925!!.method2679(OpenGlRenderer.anInt7666, aMinimapSpriteRenderer_4685.anInt4923, i.toInt() xor 0x60b.inv())) - -aMinimapSpriteRenderer_4685.anInt4920)
+            if (aMinimapSpriteRenderer_4685.aBoolean4914) Class348_Sub8.aRenderer6654!!.method3628(i_7_, i_8_, aMinimapSpriteRenderer_4685.anInt4929, aMinimapSpriteRenderer_4685.anInt4923, aMinimapSpriteRenderer_4685.anInt4917, 0)
             i_8_ += method1855(5, class295.aString3756, true, Class262.aClass324_3326, i_7_, i_8_) * 12
             i_8_ += 8
-            if (aClass125_4685.aBoolean4914) Class348_Sub8.aRenderer6654!!.method3709(i_7_, i_8_, i_7_ + aClass125_4685.anInt4929 + -1, i_8_, aClass125_4685.anInt4917, 0)
+            if (aMinimapSpriteRenderer_4685.aBoolean4914) Class348_Sub8.aRenderer6654!!.method3709(i_7_, i_8_, i_7_ + aMinimapSpriteRenderer_4685.anInt4929 + -1, i_8_, aMinimapSpriteRenderer_4685.anInt4917, 0)
             i_8_ = ++i_8_ + method1855(5, class295.aString3754, true, Class262.aClass324_3326, i_7_, i_8_) * 12
             i_8_ += 5
             i_8_ += method1855(5, class295.aString3758, true, Class262.aClass324_3326, i_7_, i_8_) * 12
@@ -37,7 +37,7 @@ class Class240 internal constructor(class339: Class339?, class125: Class125?) : 
         try {
             if (bool != true) return -62
             anInt4677++
-            return (class324!!.method2584(null, 0, aClass125_4685!!.anInt4928, null, aClass125_4685.anInt4913, 0, -(i * 2) + aClass125_4685.anInt4923, null, i + i_10_, 0, 0, -(i * 2) + aClass125_4685.anInt4929, i_9_ + i, false, 0, string))
+            return (class324!!.method2584(null, 0, aMinimapSpriteRenderer_4685!!.anInt4928, null, aMinimapSpriteRenderer_4685.anInt4913, 0, -(i * 2) + aMinimapSpriteRenderer_4685.anInt4923, null, i + i_10_, 0, 0, -(i * 2) + aMinimapSpriteRenderer_4685.anInt4929, i_9_ + i, false, 0, string))
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ta.A(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (class324 != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ')'))
         }
@@ -45,10 +45,10 @@ class Class240 internal constructor(class339: Class339?, class125: Class125?) : 
 
     init {
         try {
-            aClass125_4685 = class125
+            aMinimapSpriteRenderer_4685 = minimapSpriteRenderer
             aClass339_4682 = class339
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ta.<init>(" + (if (class339 != null) "{...}" else "null") + ',' + (if (class125 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ta.<init>(" + (if (class339 != null) "{...}" else "null") + ',' + (if (minimapSpriteRenderer != null) "{...}" else "null") + ')'))
         }
     }
 

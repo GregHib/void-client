@@ -1356,7 +1356,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
             anInt3110++
             if (class46.anInt834 != -1) return method2570(1512932720, class46.anInt834)
             val i_309_ = class46.anInt830 ushr 16
-            val class333 = Class333(Class125.aClass356_4915!!)
+            val class333 = Class333(MinimapSpriteRenderer.aClass356_4915!!)
             var class348_sub41 = class333.method2644(123.toByte()) as Class348_Sub41?
             while (class348_sub41 != null) {
                 if (i_309_ == class348_sub41.anInt7050) return method2570(1512932720, (class348_sub41.aLong4291).toInt())

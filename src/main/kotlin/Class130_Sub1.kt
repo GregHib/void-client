@@ -2450,7 +2450,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class26.anInt375 = 0
             Class42.anInt589 = 0
             Class348_Sub31_Sub2.anInt9072 = 0
-            Class125.anInt4926 = 0
+            MinimapSpriteRenderer.anInt4926 = 0
             Class348_Sub49.anInt7147 = 0
             Class348_Sub40_Sub6.anInt9131 = 0
             Class239_Sub14.anInt5983 = 0
@@ -3373,7 +3373,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class237_Sub1.anInt5816 = 0
             Class318_Sub1_Sub3_Sub2.anInt10044 = 0
             Class45.anInt661 = 0
-            Class125.anInt4927 = 0
+            MinimapSpriteRenderer.anInt4927 = 0
             Class45.anInt650 = 0
             NativeRenderer.anInt8029 = 0
             Class361.anInt4449 = 0
@@ -3816,7 +3816,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class255.anInt3266 = 0
             Class79.anInt1394 = 0
             NativeRenderer.anInt8032 = 0
-            Class125.anInt4916 = 0
+            MinimapSpriteRenderer.anInt4916 = 0
             Class42.anInt571 = 0
             AbstractMenuEntry.anInt1701 = 0
             Class348_Sub42_Sub14.anInt9636 = 0
@@ -4142,18 +4142,18 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             for (l in Class77.anIntArray1303!!.indices) if (!Class286_Sub6.aBooleanArray6270!![l]) Class77.anIntArray1303!![l] = -1
 
             if (RenderNode.anInt9721 != -1) Class14.method235(RenderNode.anInt9721, (-105).toByte())
-            var class348_sub41 = Class125.aClass356_4915!!.method3484(0) as Class348_Sub41?
+            var class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as Class348_Sub41?
             while (class348_sub41 != null) {
                 if (!class348_sub41.method2712(4.toByte())) {
-                    class348_sub41 = Class125.aClass356_4915!!.method3484(0) as Class348_Sub41?
+                    class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as Class348_Sub41?
                     if (class348_sub41 == null) break
                 }
                 method1118(true, false, class348_sub41, 2533)
-                class348_sub41 = Class125.aClass356_4915!!.method3482(0) as Class348_Sub41?
+                class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as Class348_Sub41?
             }
 
             RenderNode.anInt9721 = -1
-            Class125.aClass356_4915 = Class356(8)
+            MinimapSpriteRenderer.aClass356_4915 = Class356(8)
             method882(11.toByte())
             Class49.aClass46_4730 = null
             for (i1 in 0..7) {

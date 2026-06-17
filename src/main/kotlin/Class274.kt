@@ -193,14 +193,14 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
             Class5_Sub3.anInt8374++
             val class348_sub47 = method2148(Class348_Sub34.aClass351_6970, Class348_Sub23_Sub2.aClass77_9029, -109)
             Class348_Sub42_Sub14.method3243(37, class348_sub47)
-            var class348_sub41 = Class125.aClass356_4915!!.method3484(0) as Class348_Sub41?
+            var class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as Class348_Sub41?
             while (class348_sub41 != null) {
                 if (!class348_sub41.method2712(4.toByte())) {
-                    class348_sub41 = Class125.aClass356_4915!!.method3484(0) as Class348_Sub41?
+                    class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as Class348_Sub41?
                     if (class348_sub41 == null) break
                 }
                 if (class348_sub41.anInt7053 == 0) method1118(true, bool, class348_sub41, 2533)
-                class348_sub41 = Class125.aClass356_4915!!.method3482(0) as Class348_Sub41?
+                class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as Class348_Sub41?
             }
             if (Class49.aClass46_4730 != null) {
                 Class251.method1916(-9343, Class49.aClass46_4730!!)

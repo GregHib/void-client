@@ -66,7 +66,7 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
             val class348_sub41 = Class348_Sub41()
             class348_sub41.anInt7050 = i
             class348_sub41.anInt7053 = i_1_
-            Class125.aClass356_4915!!.method3483(109.toByte(), i_0_.toLong(), class348_sub41)
+            MinimapSpriteRenderer.aClass356_4915!!.method3483(109.toByte(), i_0_.toLong(), class348_sub41)
             method2772(i, 110.toByte())
             val class46 = method2570(i_2_ + 1512932718, i_0_)
             if (class46 != null) method1916(-9343, class46)

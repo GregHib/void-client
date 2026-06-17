@@ -17,7 +17,7 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
         if (interface12 == null) return null
         val class223 = interface12.method51(120.toByte())
         if (Class219.aClass223_2868 == class223) return Class177(interface12 as Class52)
-        if (MatrixCameraTransform.aClass223_5689 == class223) return Class240(method998(-107), interface12 as Class125)
+        if (MatrixCameraTransform.aClass223_5689 == class223) return Class240(method998(-107), interface12 as MinimapSpriteRenderer)
         if (class223 == Class348_Sub40_Sub21.aClass223_9274) return Class127(aClass45_1637, interface12 as Class288)
         if (class223 == Class28.aClass223_4997) return Class127_Sub1(aClass45_1637, interface12 as Class288_Sub1)
         if (class223 == Class348_Sub49.aClass223_7175) return Class5_Sub2(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub2)

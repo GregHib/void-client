@@ -47,7 +47,7 @@ class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class
                 if (class46 != null) Class251.method1916(-9343, class46)
                 Class348_Sub42_Sub17.method3270(119.toByte())
                 if (!bool_2_ && RenderNode.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), RenderNode.anInt9721, 1)
-                val class333 = Class333(Class125.Companion.aClass356_4915!!)
+                val class333 = Class333(MinimapSpriteRenderer.Companion.aClass356_4915!!)
                 var class348_sub41_5_ = class333.method2644(123.toByte()) as? Class348_Sub41?
                 while (class348_sub41_5_ != null) {
                     if (!class348_sub41_5_.method2712(4.toByte())) {

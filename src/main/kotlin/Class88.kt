@@ -339,7 +339,7 @@ class Class88 {
                                 Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class76.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
                                 class348_sub49_sub2.anInt7197 = 0
                                 Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
-                                Class125.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
+                                MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
                                 Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
@@ -356,7 +356,7 @@ class Class88 {
                                 Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class76.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
                                 class348_sub49_sub2.anInt7197 = 0
                                 Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
-                                Class125.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
+                                MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
                                 Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1

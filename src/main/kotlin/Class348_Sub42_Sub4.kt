@@ -30,7 +30,7 @@ class Class348_Sub42_Sub4 internal constructor(var aShortArrayArray9518: Array<S
                         if (class46.anInt774 == 0) {
                             method3180(class46.anInt830, class46s, 24235)
                             if (class46.aClass46Array798 != null) Companion.method3180(class46.anInt830, class46.aClass46Array798!!, i_0_)
-                            val class348_sub41 = ((Class125.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as Class348_Sub41?)
+                            val class348_sub41 = ((MinimapSpriteRenderer.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as Class348_Sub41?)
                             if (class348_sub41 != null) method769(class348_sub41.anInt7050, 116.toByte())
                         }
                         if (class46.anInt774 == 6 && class46.anInt699 != -1) {

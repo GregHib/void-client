@@ -2051,7 +2051,7 @@ object Class66 {
         } else if (i >= 6700) {
             if (i < 6800 && SceneRegionState.aClass231_196 == Class288.aClass231_4953) {
                 if (i == 6700) {
-                    var i_174_ = Class125.aClass356_4915!!.method3474(1)
+                    var i_174_ = MinimapSpriteRenderer.aClass356_4915!!.method3474(1)
                     if (RenderNode.anInt9721 != -1) i_174_++
                     anIntArray1149!![anInt1173++] = i_174_
                     return
@@ -2065,8 +2065,8 @@ object Class66 {
                         }
                         i_175_--
                     }
-                    var class348_sub41 = (Class125.aClass356_4915!!.method3484(0) as Class348_Sub41?)
-                    while (i_175_-- > 0) class348_sub41 = (Class125.aClass356_4915!!.method3482(0) as Class348_Sub41?)
+                    var class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as Class348_Sub41?)
+                    while (i_175_-- > 0) class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as Class348_Sub41?)
                     anIntArray1149!![anInt1173++] = class348_sub41!!.anInt7050
                     return
                 }
@@ -3657,7 +3657,7 @@ object Class66 {
                 }
                 if (i == 2702) {
                     val i_298_ = anIntArray1149!![--anInt1173]
-                    val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_298_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_298_.toLong(), -6008) as Class348_Sub41?)
                     if (class348_sub41 == null) {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -3686,7 +3686,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_301_ = anIntArray1149!![anInt1173]
                     val i_302_ = anIntArray1149!![anInt1173 + 1]
-                    val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_301_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_301_.toLong(), -6008) as Class348_Sub41?)
                     if (class348_sub41 != null && (class348_sub41.anInt7050 == i_302_)) anIntArray1149!![anInt1173++] = 1
                     else {
                         anIntArray1149!![anInt1173++] = 0
@@ -3796,7 +3796,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_312_ = anIntArray1149!![anInt1173]
                     val i_313_ = anIntArray1149!![anInt1173 + 1]
-                    val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_312_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_312_.toLong(), -6008) as Class348_Sub41?)
                     if (class348_sub41 != null) Class127_Sub1.method1118((class348_sub41.anInt7050 != i_313_), true, class348_sub41, 2533)
                     Class338.method2661(i_313_, i_312_, 3, true, 2)
                     return
@@ -3804,7 +3804,7 @@ object Class66 {
                 if (i == 3112) {
                     anInt1173--
                     val i_314_ = anIntArray1149!![anInt1173]
-                    val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_314_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_314_.toLong(), -6008) as Class348_Sub41?)
                     if (class348_sub41 != null && class348_sub41.anInt7053 == 3) Class127_Sub1.method1118(true, true, class348_sub41, 2533)
                     return
                 }
@@ -3995,7 +3995,7 @@ object Class66 {
                     return
                 }
                 if (i == 3323) {
-                    if (Class125.anInt4919 >= 5 && Class125.anInt4919 <= 9) anIntArray1149!![anInt1173++] = 1
+                    if (MinimapSpriteRenderer.anInt4919 >= 5 && MinimapSpriteRenderer.anInt4919 <= 9) anIntArray1149!![anInt1173++] = 1
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4003,7 +4003,7 @@ object Class66 {
                     return
                 }
                 if (i == 3324) {
-                    if (Class125.anInt4919 >= 5 && Class125.anInt4919 <= 9) anIntArray1149!![anInt1173++] = Class125.anInt4919
+                    if (MinimapSpriteRenderer.anInt4919 >= 5 && MinimapSpriteRenderer.anInt4919 <= 9) anIntArray1149!![anInt1173++] = MinimapSpriteRenderer.anInt4919
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4171,9 +4171,9 @@ object Class66 {
                 }
             } else if (i < 3700) {
                 if (i == 3600) {
-                    if (Class125.anInt4930 == 0) anIntArray1149!![anInt1173++] = -2
+                    if (MinimapSpriteRenderer.anInt4930 == 0) anIntArray1149!![anInt1173++] = -2
                     else {
-                        if (Class125.anInt4930 == 1) anIntArray1149!![anInt1173++] = -1
+                        if (MinimapSpriteRenderer.anInt4930 == 1) anIntArray1149!![anInt1173++] = -1
                         else {
                             anIntArray1149!![anInt1173++] = Class348_Sub40_Sub30.anInt9383
                             return
@@ -4184,7 +4184,7 @@ object Class66 {
                 }
                 if (i == 3601) {
                     val i_359_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 == 2 && i_359_ < Class348_Sub40_Sub30.anInt9383) {
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_359_ < Class348_Sub40_Sub30.anInt9383) {
                         aStringArray1152!![anInt1170++] = Class83.aStringArray1441!![i_359_]
                         if (Class286_Sub2.aStringArray6205!![i_359_] != null) aStringArray1152!![anInt1170++] = Class286_Sub2.aStringArray6205!![i_359_]!!
                         else aStringArray1152!![anInt1170++] = ""
@@ -4197,7 +4197,7 @@ object Class66 {
                 }
                 if (i == 3602) {
                     val i_360_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 == 2 && i_360_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = Renderer.anIntArray4578!![i_360_]
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_360_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = Renderer.anIntArray4578!![i_360_]
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4206,7 +4206,7 @@ object Class66 {
                 }
                 if (i == 3603) {
                     val i_361_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 == 2 && i_361_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = Class172.anIntArray2280!![i_361_]
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_361_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = Class172.anIntArray2280!![i_361_]
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4247,7 +4247,7 @@ object Class66 {
                 }
                 if (i == 3610) {
                     val i_363_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 == 2 && i_363_ < Class348_Sub40_Sub30.anInt9383) aStringArray1152!![anInt1170++] = Class285.aStringArray4744!![i_363_]!!
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_363_ < Class348_Sub40_Sub30.anInt9383) aStringArray1152!![anInt1170++] = Class285.aStringArray4744!![i_363_]!!
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4318,7 +4318,7 @@ object Class66 {
                     return
                 }
                 if (i == 3621) {
-                    if (Class125.anInt4930 == 0) anIntArray1149!![anInt1173++] = -1
+                    if (MinimapSpriteRenderer.anInt4930 == 0) anIntArray1149!![anInt1173++] = -1
                     else {
                         anIntArray1149!![anInt1173++] = Class348_Sub42_Sub12.anInt9604
                         return
@@ -4327,7 +4327,7 @@ object Class66 {
                 }
                 if (i == 3622) {
                     val i_367_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 != 0 && i_367_ < Class348_Sub42_Sub12.anInt9604) {
+                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_367_ < Class348_Sub42_Sub12.anInt9604) {
                         aStringArray1152!![anInt1170++] = Class51.aStringArray932!![i_367_]!!
                         if (Class348_Sub40_Sub21.aStringArray9275!![i_367_] != null) aStringArray1152!![anInt1170++] = (Class348_Sub40_Sub21.aStringArray9275!![i_367_]!!)
                         else aStringArray1152!![anInt1170++] = ""
@@ -4371,7 +4371,7 @@ object Class66 {
                 }
                 if (i == 3627) {
                     val i_370_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 == 2 && i_370_ >= 0 && i_370_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = if (ObjectSpawnDecoder.aBooleanArray1806!![i_370_]) 1 else 0
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_370_ >= 0 && i_370_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = if (ObjectSpawnDecoder.aBooleanArray1806!![i_370_]) 1 else 0
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4409,7 +4409,7 @@ object Class66 {
                 }
                 if (i == 3633) {
                     val i_373_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 != 0 && i_373_ < Class348_Sub42_Sub12.anInt9604) aStringArray1152!![anInt1170++] = ObjectSpawnDecoder.aStringArray1808!![i_373_]
+                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_373_ < Class348_Sub42_Sub12.anInt9604) aStringArray1152!![anInt1170++] = ObjectSpawnDecoder.aStringArray1808!![i_373_]
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return

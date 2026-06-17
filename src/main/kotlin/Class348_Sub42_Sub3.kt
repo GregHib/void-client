@@ -123,7 +123,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             Class285.aClass323_4754 = null
             Class168.aClass323_2252 = null
             Class67.aAbstractModelRenderer_4643 = null
-            Class125.aClass323_4921 = null
+            MinimapSpriteRenderer.aClass323_4921 = null
             Class176.aClass323_2333 = null
             Class348_Sub3.aClass323_6581 = null
             Class39.aClass323_521 = null

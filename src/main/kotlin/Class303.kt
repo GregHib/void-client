@@ -31,7 +31,7 @@ object Class303 {
         if (i != 114) anInt3844 = 87
     }
 
-    fun method2287(class348_sub49: Class348_Sub49, i: Byte): Class125 {
+    fun method2287(class348_sub49: Class348_Sub49, i: Byte): MinimapSpriteRenderer {
         anInt3846++
         val i_1_ = class348_sub49.readUnsignedByte(255)
         val class221 = method1248(87)[class348_sub49.readUnsignedByte(255)]
@@ -45,7 +45,7 @@ object Class303 {
         val i_8_ = class348_sub49.readInt((-126).toByte())
         val i_9_ = -54 / ((i - -45) / 61)
         val bool = class348_sub49.readUnsignedByte(255) == 1
-        return Class125(i_1_, class221, class341, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, bool)
+        return MinimapSpriteRenderer(i_1_, class221, class341, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, bool)
     }
 
     @JvmStatic

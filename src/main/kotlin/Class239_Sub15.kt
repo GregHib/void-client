@@ -79,7 +79,7 @@ class Class239_Sub15 : Class239 {
             if (i_0_ != 10144) return null
             anInt6004++
             if (i == 0) {
-                if (Class75.aFloat1247.toDouble() == 3.0) return Class125.aClass323_4921
+                if (Class75.aFloat1247.toDouble() == 3.0) return MinimapSpriteRenderer.aClass323_4921
                 if (Class75.aFloat1247.toDouble() == 4.0) return Class14_Sub4.aClass323_8644
                 if (Class75.aFloat1247.toDouble() == 6.0) return Class39.aClass323_521
                 if (Class75.aFloat1247.toDouble() >= 8.0) return Class168.aClass323_2252

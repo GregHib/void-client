@@ -973,7 +973,7 @@ class Client : GameAppletFrame() {
         method1447(i.toInt() xor 0x20)
         method492(i + -216)
         method3574(i.toInt() xor 0x4c47)
-        Class125.method1109((-22).toByte())
+        MinimapSpriteRenderer.method1109((-22).toByte())
         method2190(true)
         method3572(1000000)
         method2185(2)
@@ -2510,7 +2510,7 @@ class Client : GameAppletFrame() {
                             if (class46.anInt774 == 0) {
                                 method107(class46s, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
                                 if (class46.aClass46Array798 != null) Companion.method107(class46.aClass46Array798!!, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
-                                val class348_sub41 = ((Class125.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as Class348_Sub41?)
+                                val class348_sub41 = ((MinimapSpriteRenderer.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as Class348_Sub41?)
                                 if (class348_sub41 != null) {
                                     if ((Class348_Sub42_Sub8_Sub2.aClass230_10434 == ParticleEmitterNode.aClass230_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !Class299_Sub2.aBoolean6327) method661(105.toByte())
                                     method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_)

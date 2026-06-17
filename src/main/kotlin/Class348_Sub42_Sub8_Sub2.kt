@@ -169,12 +169,12 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-123).toByte())
                 val i_9_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
-                val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_9_.toLong(), -6008) as Class348_Sub41?)
-                val class348_sub41_10_ = (Class125.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
+                val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_9_.toLong(), -6008) as Class348_Sub41?)
+                val class348_sub41_10_ = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41_10_ != null) Class127_Sub1.method1118((class348_sub41 == null || (class348_sub41_10_.anInt7050 != class348_sub41.anInt7050)), false, class348_sub41_10_, 2533)
                 if (class348_sub41 != null) {
                     class348_sub41.method2715(32.toByte())
-                    Class125.aClass356_4915!!.method3483(102.toByte(), i.toLong(), class348_sub41)
+                    MinimapSpriteRenderer.aClass356_4915!!.method3483(102.toByte(), i.toLong(), class348_sub41)
                 }
                 var class46 = method2570(1512932720, i_9_)
                 if (class46 != null) Class251.method1916(-9343, class46)
@@ -788,7 +788,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == Class264.aIntRange_3368) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
-                val class348_sub41 = (Class125.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
+                val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41 != null) Class127_Sub1.method1118(true, false, class348_sub41, 2533)
                 if (Class49.aClass46_4730 != null) {
                     Class251.method1916(-9343, Class49.aClass46_4730!!)
@@ -1266,7 +1266,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         Class348_Sub40_Sub30.anInt9383++
                     }
                 }
-                Class125.anInt4930 = 2
+                MinimapSpriteRenderer.anInt4930 = 2
                 Class126.anInt4985 = Class311.anInt3918
                 var bool_156_ = false
                 var i = Class348_Sub40_Sub30.anInt9383
@@ -1405,7 +1405,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_182_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-122).toByte())
                 val i_183_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-95).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
-                val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_182_.toLong(), -6008) as Class348_Sub41?)
+                val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_182_.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41 != null) Class127_Sub1.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533)
                 Class338.method2661(i, i_182_, i_183_, false, 2)
                 Class348_Sub3.aIntRange_6584 = null
@@ -1413,7 +1413,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub3.aIntRange_6584 == Class127_Sub1.aIntRange_8384) {
                 Class348_Sub3.aIntRange_6584 = null
-                Class125.anInt4930 = 1
+                MinimapSpriteRenderer.anInt4930 = 1
                 Class126.anInt4985 = Class311.anInt3918
                 return true
             }
