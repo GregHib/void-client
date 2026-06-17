@@ -1,7 +1,7 @@
 /* Class120 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class120 internal constructor(@JvmField var anInt4912: Int) : Interface12 {
+class ConfigValueProvider internal constructor(@JvmField var anInt4912: Int) : Interface12 {
     override fun method51(i: Byte): Class223? {
         if (i < 116) method1080(81, 13, -51, -26)
         anInt4909++

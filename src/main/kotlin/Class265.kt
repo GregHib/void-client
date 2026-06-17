@@ -3,12 +3,12 @@ import kotlin.math.max
 /* Class265 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class265 internal constructor(class45: Class45?, class120: Class120?) : Interface1 {
-    private val aClass120_4687: Class120?
+class Class265 internal constructor(class45: Class45?, configValueProvider: ConfigValueProvider?) : Interface1 {
+    private val aConfigValueProvider_4687: ConfigValueProvider?
     private var aAbstractModelRenderer_4688: AbstractModelRenderer? = null
     private val aClass45_4694: Class45?
     override fun method7(i: Int) {
-        aAbstractModelRenderer_4688 = Class369_Sub3_Sub1.method3577((aClass120_4687!!.anInt4912), 116.toByte(), aClass45_4694!!)
+        aAbstractModelRenderer_4688 = Class369_Sub3_Sub1.method3577((aConfigValueProvider_4687!!.anInt4912), 116.toByte(), aClass45_4694!!)
         if (i != 10286) aBooleanArrayArray4693 = null
         anInt4695++
     }
@@ -37,16 +37,16 @@ class Class265 internal constructor(class45: Class45?, class120: Class120?) : In
     init {
         try {
             aClass45_4694 = class45
-            aClass120_4687 = class120
+            aConfigValueProvider_4687 = configValueProvider
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uk.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class120 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("uk.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (configValueProvider != null) "{...}" else "null") + ')'))
         }
     }
 
     override fun method8(i: Byte): Boolean {
         val i_8_ = -105 % ((25 - i) / 52)
         anInt4690++
-        return aClass45_4694!!.method421(false, aClass120_4687!!.anInt4912)
+        return aClass45_4694!!.method421(false, aConfigValueProvider_4687!!.anInt4912)
     }
 
     companion object {

@@ -118,7 +118,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
         @JvmStatic
         fun method198(class46: Class46?, bool: Boolean, i: Int, i_22_: Int) {
             Class238_Sub1.anInt5832 = i
-            Class120.anInt4911 = i_22_
+            ConfigValueProvider.anInt4911 = i_22_
             Class21.aClass46_323 = class46
             anInt8359++
             if (bool != false) anInt8363 = 112

@@ -950,7 +950,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_110_ = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 val i_111_ = Class299.aClass348_Sub49_Sub2_3813!!.method3375(84.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
-                Class120.method1080(i_111_, -23697, i, i_110_)
+                ConfigValueProvider.method1080(i_111_, -23697, i, i_110_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

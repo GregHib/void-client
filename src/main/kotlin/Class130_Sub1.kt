@@ -2152,7 +2152,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class5_Sub1.anInt8341 = 0
             GlSpriteRenderer.anInt8435 = 0
             Class45.anInt630 = 0
-            Class120.anInt4909 = 0
+            ConfigValueProvider.anInt4909 = 0
             SoftwareSpriteRaster.anInt1630 = 0
             Class348_Sub16_Sub3.anInt8913 = 0
             Class339.anInt4210 = 0
@@ -3388,7 +3388,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub8.anInt9153 = 0
             Class280.anInt3625 = 0
             Class46.anInt767 = 0
-            Class120.anInt4908 = 0
+            ConfigValueProvider.anInt4908 = 0
             Class348_Sub16_Sub3.anInt8941 = 0
             Class240.anInt4681 = 0
             OpenGlRenderer.anInt7588 = 0
