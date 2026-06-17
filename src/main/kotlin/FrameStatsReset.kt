@@ -311,7 +311,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class60.anInt1091 = 0
             VarpStore.anInt5081 = 0
             Class45.anInt646 = 0
-            Class238_Sub1.anInt5829 = 0
+            SocketGameConnection.anInt5829 = 0
             Class64_Sub2.anInt5408 = 0
             Class243.anInt3157 = 0
             Class348_Sub49.anInt7161 = 0
@@ -484,7 +484,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ModelDefinition.anInt1837 = 0
             Class318_Sub1_Sub5_Sub2.anInt10161 = 0
             Class348_Sub51.anInt7242 = 0
-            Class238_Sub1.anInt5835 = 0
+            SocketGameConnection.anInt5835 = 0
             NpcDefinition.anInt2903 = 0
             TextureMetadataProvider.anInt4616 = 0
             Class286_Sub5.anInt6250 = 0
@@ -687,7 +687,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class258.anInt4853 = 0
             Npc.anInt10513 = 0
             Class355.anInt4371 = 0
-            Class238_Sub1.anInt5828 = 0
+            SocketGameConnection.anInt5828 = 0
             NativeRenderer.anInt7945 = 0
             Class308.anInt3885 = 0
             Class348_Sub40_Sub27.anInt9359 = 0
@@ -806,7 +806,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7635 = 0
             ClientLoadStateMachine.anInt2175 = 0
             Class31.anInt442 = 0
-            Class238.anInt3132 = 0
+            AbstractGameSocket.anInt3132 = 0
             Class239_Sub15.anInt6003 = 0
             Class348_Sub15.anInt6777 = 0
             WorldMapScene.anInt3118 = 0
@@ -940,7 +940,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7976 = 0
             Class286_Sub4.anInt6236 = 0
             OpenGlRenderer.anInt7565 = 0
-            Class238_Sub1.anInt5830 = 0
+            SocketGameConnection.anInt5830 = 0
             Class299_Sub1_Sub2.anInt8704 = 0
             Class242.anInt3154 = 0
             Class318_Sub1_Sub1_Sub1.anInt9963 = 0
@@ -981,7 +981,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub22.anInt6073 = 0
             NativeRenderer.anInt7920 = 0
             Class348_Sub4.anInt6600 = 0
-            Class238_Sub1.anInt5839 = 0
+            SocketGameConnection.anInt5839 = 0
             Class64_Sub3.anInt5565 = 0
             NativeRenderer.anInt8043 = 0
             MinimapRenderer.anInt1590 = 0
@@ -1465,7 +1465,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7144 = 0
             Class348_Sub42_Sub9.anInt9557 = 0
             ModelDefinition.anInt1864 = 0
-            Class238_Sub1.anInt5838 = 0
+            SocketGameConnection.anInt5838 = 0
             Class240.anInt4675 = 0
             NativeRenderer.anInt8058 = 0
             Class5_Sub2.anInt8354 = 0
@@ -1809,7 +1809,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7609 = 0
             OpenGlRenderer.anInt7604 = 0
             Class348_Sub42_Sub16.anInt9666 = 0
-            Class238_Sub1.anInt5831 = 0
+            SocketGameConnection.anInt5831 = 0
             ModelDefinitionCache.anInt2874 = 0
             Class348_Sub49.anInt7205 = 0
             NativeRenderer.anInt7906 = 0
@@ -1948,7 +1948,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ModelDefinition.anInt1860 = 0
             Class318_Sub1_Sub3_Sub1.anInt10022 = 0
             MinimapFlagRenderer.anInt1799 = 0
-            Class238_Sub1.anInt5833 = 0
+            SocketGameConnection.anInt5833 = 0
             Class348_Sub16_Sub3.anInt8907 = 0
             Class373_Sub2.anInt7447 = 0
             Class6.anInt153 = 0
@@ -4163,7 +4163,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             }
 
             Class363.method3515(-45)
-            Class238_Sub1.aBoolean5840 = true
+            SocketGameConnection.aBoolean5840 = true
             for (j1 in 0..99) GzipDecompressor.aBooleanArray2076!![j1] = true
 
             for (k1 in 0..5) Class239_Sub26.aClass54Array6114!![k1] = Class54()

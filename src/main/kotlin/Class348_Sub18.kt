@@ -1,6 +1,6 @@
 import ClientLoadStateMachine.method1277
 import PerlinTextureProvider.Companion.method1402
-import Class238_Sub1.Companion.method1707
+import SocketGameConnection.Companion.method1707
 import Class239_Sub25.Companion.method1828
 import Class24.method297
 import Class264.Companion.method2017

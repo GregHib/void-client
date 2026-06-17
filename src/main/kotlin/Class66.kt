@@ -1335,9 +1335,9 @@ object Class66 {
             if (i == 5612) {
                 val i_144_ = anIntArray1149!![--anInt1173]
                 if (Class240.anInt4674 == 7 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
-                    if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                        Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                        Class348_Sub40_Sub8.aClass238_9165 = null
+                    if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                     }
                     RuntimeException_Sub1.anInt4596 = i_144_
                     Class348_Sub49.method3379(2, 9)
@@ -1354,9 +1354,9 @@ object Class66 {
                 val string = aStringArray1152!![anInt1170]!!
                 val string_145_ = aStringArray1152!![anInt1170 + 1]
                 if (string.length <= 320 && Class240.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
-                    if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                        Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                        Class348_Sub40_Sub8.aClass238_9165 = null
+                    if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                     }
                     Class64_Sub3.aString5600 = string
                     TextureGenerator.aString2496 = string_145_

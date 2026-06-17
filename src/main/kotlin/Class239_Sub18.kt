@@ -77,12 +77,12 @@ class Class239_Sub18 : Class239 {
         @JvmStatic
         @Throws(IOException::class)
         fun method1802(i: Int) {
-            if (Class348_Sub40_Sub8.aClass238_9165 != null && Class348_Sub34.anInt6969 > 0) {
+            if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null && Class348_Sub34.anInt6969 > 0) {
                 var i_2_ = 0
                 while (true) {
                     val class348_sub47 = Class348_Sub40_Sub13.aClass262_9201!!.method1995(i xor 0x4) as Class348_Sub47?
                     if (class348_sub47 == null) break
-                    Class348_Sub40_Sub8.aClass238_9165!!.method1706(0, i xor 0x77, class348_sub47.anInt7119, (class348_sub47.aClass348_Sub49_Sub2_7116!!.aByteArray7154!!))
+                    Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1706(0, i xor 0x77, class348_sub47.anInt7119, (class348_sub47.aClass348_Sub49_Sub2_7116!!.aByteArray7154!!))
                     i_2_ += class348_sub47.anInt7119
                     Class348_Sub34.anInt6969 -= class348_sub47.anInt7119
                     class348_sub47.method2715(74.toByte())

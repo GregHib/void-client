@@ -139,9 +139,9 @@ class Class88 {
                     if (Class318_Sub1_Sub1_Sub2.anInt9971 != 0) i_2_ = 2000
                     else i_2_ = 250
                     if (i_2_ < ++SceneRegionState.anInt197) {
-                        if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                            Class348_Sub40_Sub8.aClass238_9165 = null
+                        if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                         }
                         if (Class318_Sub1_Sub1_Sub2.anInt9971 >= 3) {
                             NpcDefinition.anInt2955 = 0
@@ -162,7 +162,7 @@ class Class88 {
                     if (NpcDefinition.anInt2955 == 2) {
                         if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 == 2) throw IOException()
                         if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 != 1) return
-                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982((((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165 = Class348_Sub23_Sub3.method2982((((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
                         FrameStatsReset.aLinkedQueueNode_5800 = null
                         method2739(0)
                         val class348_sub47 = ProjectileSpawner.method1478(true)
@@ -172,14 +172,14 @@ class Class88 {
                         NpcDefinition.anInt2955 = 3
                     }
                     if (NpcDefinition.anInt2955 == 3) {
-                        if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 107)) return
-                        Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-118).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 107)) return
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                         val i_3_ = ((Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
                         if (i_3_ != 0) {
                             NpcDefinition.anInt2955 = 0
                             GlRectangleTexture.method254(i_3_, (-113).toByte())
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                            Class348_Sub40_Sub8.aClass238_9165 = null
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                             GzipDecompressor.method1215(3.toByte())
                             return
                         }
@@ -260,8 +260,8 @@ class Class88 {
                         NpcDefinition.anInt2955 = 4
                     }
                     if (NpcDefinition.anInt2955 == 4) {
-                        if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 94)) return
-                        Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-117).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 94)) return
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-117).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                         val i_11_ = ((Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
                         if (i_11_ != 21) {
                             if (i_11_ == 29) NpcDefinition.anInt2955 = 13
@@ -277,13 +277,13 @@ class Class88 {
                                             NpcDefinition.anInt2955 = 1
                                             Class318_Sub1_Sub1_Sub2.anInt9971++
                                             SceneRegionState.anInt197 = 0
-                                            Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                                            Class348_Sub40_Sub8.aClass238_9165 = null
+                                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                                            Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                                         } else {
                                             NpcDefinition.anInt2955 = 0
                                             GlRectangleTexture.method254(i_11_, (-87).toByte())
-                                            Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                                            Class348_Sub40_Sub8.aClass238_9165 = null
+                                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                                            Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                                             GzipDecompressor.method1215(3.toByte())
                                             return
                                         }
@@ -305,29 +305,29 @@ class Class88 {
                         method1802(0)
                         NpcDefinition.anInt2955 = 4
                     } else if (NpcDefinition.anInt2955 == 7) {
-                        if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 118)) {
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-109).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 118)) {
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-109).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             val i_12_ = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             NpcDefinition.anInt2955 = 0
                             Class63.anInt1121 = (3 + i_12_) * 60
                             GlRectangleTexture.method254(21, (-95).toByte())
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                            Class348_Sub40_Sub8.aClass238_9165 = null
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                             GzipDecompressor.method1215(3.toByte())
                         }
                     } else if (NpcDefinition.anInt2955 == 13) {
-                        if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 102)) {
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-128).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 102)) {
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-128).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             NpcDefinition.anInt2955 = 0
                             Class348_Sub42_Sub7.anInt9541 = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             GlRectangleTexture.method254(29, (-97).toByte())
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                            Class348_Sub40_Sub8.aClass238_9165 = null
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                             GzipDecompressor.method1215(3.toByte())
                         }
                     } else if (NpcDefinition.anInt2955 == 8) {
-                        if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 107)) {
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-107).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 107)) {
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-107).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             Class76.Companion.anInt1288 = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             NpcDefinition.anInt2955 = 9
                         }
@@ -335,8 +335,8 @@ class Class88 {
                         if (NpcDefinition.anInt2955 == 9) {
                             val class348_sub49_sub2 = Class299.aClass348_Sub49_Sub2_3813
                             if (Class239_Sub12.anInt5969 == 2) {
-                                if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class76.Companion.anInt1288, 93)) return
-                                Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class76.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
+                                if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(Class76.Companion.anInt1288, 93)) return
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(Class76.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
                                 class348_sub49_sub2.anInt7197 = 0
                                 AsyncTaskHandle.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
@@ -352,8 +352,8 @@ class Class88 {
                                 Exception_Sub1.aClass255_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
                                 MapAreaDefinition.aClass278_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
                             } else {
-                                if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class76.Companion.anInt1288, 107)) return
-                                Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class76.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
+                                if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(Class76.Companion.anInt1288, 107)) return
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(Class76.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
                                 class348_sub49_sub2.anInt7197 = 0
                                 AsyncTaskHandle.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
@@ -423,24 +423,24 @@ class Class88 {
                             }
                         }
                         if (NpcDefinition.anInt2955 == 11) {
-                            if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(3, 94)) return
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(3, 0, 11.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(3, 94)) return
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(3, 0, 11.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             NpcDefinition.anInt2955 = 12
                         }
                         if (NpcDefinition.anInt2955 == 12) {
                             val class348_sub49_sub2 = Class299.aClass348_Sub49_Sub2_3813
                             class348_sub49_sub2!!.anInt7197 = 0
                             if (class348_sub49_sub2.method3404(-1510)) {
-                                if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 110)) return
-                                Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 3, (-127).toByte(), (class348_sub49_sub2.aByteArray7154!!))
+                                if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 110)) return
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 3, (-127).toByte(), (class348_sub49_sub2.aByteArray7154!!))
                             }
                             Class348_Sub3.aIntRange_6584 = (method248(-11271)[class348_sub49_sub2.method3407(15295)])
                             Class348_Sub40_Sub25.anInt9341 = class348_sub49_sub2.readUnsignedShort(842397944)
                             NpcDefinition.anInt2955 = 10
                         }
                         if (NpcDefinition.anInt2955 == 10) {
-                            if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 96)) {
-                                Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, 28.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            if (Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 96)) {
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, 28.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                 NpcDefinition.anInt2955 = 0
                                 val i_13_ = Class348_Sub40_Sub25.anInt9341
@@ -457,13 +457,13 @@ class Class88 {
                             val i_14_ = -128 / (-i / 53)
                             if (NpcDefinition.anInt2955 == 14) {
                                 if (Class348_Sub40_Sub25.anInt9341 == -2) {
-                                    if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(2, 106)) return
-                                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(2, 0, (-128).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                    if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(2, 106)) return
+                                    Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(2, 0, (-128).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                                     Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                     Class348_Sub40_Sub25.anInt9341 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                                 }
-                                if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 117)) {
-                                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-104).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                if (Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 117)) {
+                                    Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-104).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                                     Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                     val i_15_ = Class348_Sub40_Sub25.anInt9341
                                     NpcDefinition.anInt2955 = 0
@@ -477,9 +477,9 @@ class Class88 {
                         }
                     }
                 } catch (ioexception: IOException) {
-                    if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                        Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                        Class348_Sub40_Sub8.aClass238_9165 = null
+                    if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                     }
                     if (Class318_Sub1_Sub1_Sub2.anInt9971 >= 3) {
                         NpcDefinition.anInt2955 = 0

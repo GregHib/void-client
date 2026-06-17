@@ -39,10 +39,10 @@ class Class348_Sub23_Sub3 internal constructor(oggstreamstate: OggStreamState) :
 
         @JvmStatic
         @Throws(IOException::class)
-        fun method2982(socket: Socket, i: Byte, i_0_: Int): Class238 {
+        fun method2982(socket: Socket, i: Byte, i_0_: Int): AbstractGameSocket {
             val i_1_ = -41 / ((i - -40) / 42)
             anInt9040++
-            return Class238_Sub1(socket, i_0_)
+            return SocketGameConnection(socket, i_0_)
         }
     }
 }

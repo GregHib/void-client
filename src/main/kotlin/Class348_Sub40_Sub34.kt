@@ -99,9 +99,9 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
 
         @JvmStatic
         fun method3141(bool: Boolean, i: Byte) {
-            if (Class348_Sub40_Sub8.Companion.aClass238_9165 != null) {
-                Class348_Sub40_Sub8.Companion.aClass238_9165!!.method1700(36.toByte())
-                Class348_Sub40_Sub8.Companion.aClass238_9165 = null
+            if (Class348_Sub40_Sub8.Companion.aAbstractGameSocket_9165 != null) {
+                Class348_Sub40_Sub8.Companion.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                Class348_Sub40_Sub8.Companion.aAbstractGameSocket_9165 = null
             }
             anInt9437++
             NpcDefinition.anInt2955 = 0

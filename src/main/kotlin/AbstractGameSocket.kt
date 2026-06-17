@@ -1,6 +1,9 @@
 import java.io.IOException
 
-abstract class Class238 {
+/*
+ * Class238
+ */
+abstract class AbstractGameSocket {
     abstract fun method1700(i: Byte)
 
     @Throws(IOException::class)

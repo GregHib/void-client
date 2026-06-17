@@ -74,7 +74,7 @@ object GameDisplayManager {
             }
             Class50_Sub1.aBoolean5219 = i_2_ >= 2
             if (RenderNode.anInt9721 != -1) method1713(true, 520)
-            if (Class348_Sub40_Sub8.aClass238_9165 != null && Class334.method2653(true, Class240.anInt4674)) method2145(-24498)
+            if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null && Class334.method2653(true, Class240.anInt4674)) method2145(-24498)
             for (i_5_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_5_] = true
             Class49.aBoolean4726 = true
         }

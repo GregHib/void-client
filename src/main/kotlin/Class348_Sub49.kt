@@ -728,9 +728,9 @@ open class Class348_Sub49 : Class348 {
                     if (Class348_Sub23_Sub3.aString9043 != null) GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-81).toByte())
                     else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
                 }
-                if (i_71_ != 13 && ItemDefinition.aClass238_2773 != null) {
-                    ItemDefinition.aClass238_2773!!.method1700(36.toByte())
-                    ItemDefinition.aClass238_2773 = null
+                if (i_71_ != 13 && ItemDefinition.aAbstractGameSocket_2773 != null) {
+                    ItemDefinition.aAbstractGameSocket_2773!!.method1700(36.toByte())
+                    ItemDefinition.aAbstractGameSocket_2773 = null
                 }
                 if (i_71_ == 3) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != RenderNode.anInt9721), (-45).toByte())
                 if (i_71_ == 7) method1006((RenderNode.anInt9721 != Class54.anInt970), 102.toByte())

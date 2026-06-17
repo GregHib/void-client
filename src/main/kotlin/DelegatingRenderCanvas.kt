@@ -332,7 +332,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class363.method3514((-105).toByte())
                     Class348_Sub18.method2938(62.toByte())
                     FrameStatsReset.method1131(99)
-                    if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aClass238_9165 != null && Class240.anInt4674 == 11) {
+                    if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null && Class240.anInt4674 == 11) {
                         Class352.anInt4335++
                         val class348_sub47 = method2148(Class327.aClass351_4094, (Class348_Sub23_Sub2.aClass77_9029), i xor 0x55.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), 1057001181)
@@ -355,7 +355,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (Class240.anInt4674 != 4) {
                         if (Class240.anInt4674 != 8) {
                             Class348_Sub49.method3379(2, 10)
-                            if (Class348_Sub40_Sub8.aClass238_9165 != null) {
+                            if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
                                 val class348_sub47 = method2148((Class340.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106)
                                 Class348_Sub42_Sub14.method3243(127, class348_sub47)
                             }

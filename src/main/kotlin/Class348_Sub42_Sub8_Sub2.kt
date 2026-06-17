@@ -1,7 +1,7 @@
 import GameAppletFrame.Companion.method94
 import GameAppletFrame.Companion.set
 import AbstractMenuEntry.Companion.method1034
-import Class238.Companion.method1703
+import AbstractGameSocket.Companion.method1703
 import Class239.Companion.method1713
 import Class239_Sub16.Companion.method1788
 import Class239_Sub19.Companion.method1803
@@ -63,19 +63,19 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
         @Throws(IOException::class)
         fun method3201(bool: Boolean): Boolean {
             anInt10430++
-            if (Class348_Sub40_Sub8.aClass238_9165 == null) return false
+            if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 == null) return false
             if (Class348_Sub3.aIntRange_6584 == null) {
                 if (GroundItemRenderState.aBoolean1661) {
-                    if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 119)) return false
-                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, 6.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                    if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
+                    Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, 6.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                     Class348_Sub50.anInt7213 = 0
                     GroundItemRenderState.aBoolean1661 = false
                     MinimapRectClipper.anInt221++
                 }
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 if (Class299.aClass348_Sub49_Sub2_3813!!.method3404(-1510)) {
-                    if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 119)) return false
-                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 1, 26.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                    if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
+                    Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 1, 26.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                     MinimapRectClipper.anInt221++
                     Class348_Sub50.anInt7213 = 0
                 }
@@ -90,30 +90,30 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub40_Sub25.anInt9341 = Class348_Sub3.aIntRange_6584!!.anInt1749
             }
             if (Class348_Sub40_Sub25.anInt9341 == -1) {
-                if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 116)) return false
-                Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-118).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 116)) return false
+                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                 Class348_Sub40_Sub25.anInt9341 = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                 MinimapRectClipper.anInt221++
                 Class348_Sub50.anInt7213 = 0
             }
             if (Class348_Sub40_Sub25.anInt9341 == -2) {
-                if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(2, 120)) return false
-                Class348_Sub40_Sub8.aClass238_9165!!.method1701(2, 0, 127.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(2, 120)) return false
+                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(2, 0, 127.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 Class348_Sub40_Sub25.anInt9341 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 MinimapRectClipper.anInt221 += 2
                 Class348_Sub50.anInt7213 = 0
             }
             if (Class348_Sub40_Sub25.anInt9341 > 0) {
-                if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 104)) return false
+                if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 104)) return false
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-123).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-123).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                 MinimapRectClipper.anInt221 += Class348_Sub40_Sub25.anInt9341
                 Class348_Sub50.anInt7213 = 0
             }
             Class348_Sub40_Sub36.aIntRange_9456 = Class239.aIntRange_3145
-            Class239.aIntRange_3145 = Class238.aIntRange_3133
-            Class238.aIntRange_3133 = Class348_Sub3.aIntRange_6584
+            Class239.aIntRange_3145 = AbstractGameSocket.aIntRange_3133
+            AbstractGameSocket.aIntRange_3133 = Class348_Sub3.aIntRange_6584
             if (IOException_Sub1.aIntRange_90 == Class348_Sub3.aIntRange_6584) {
                 Class43.method382(Class299.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
                 Class348_Sub3.aIntRange_6584 = null

@@ -190,7 +190,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("breakcon", ignoreCase = true)) {
                             Class348_Sub23_Sub1.aClass297_8992!!.method2239(-95)
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1702(i + 123)
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1702(i + 123)
                             Class348_Sub4.aClass248_6601!!.method1898(true)
                             method94("Breaking new connections for 5 seconds", i + -4)
                             return

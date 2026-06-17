@@ -765,7 +765,7 @@ class Client : GameAppletFrame() {
         method1585(-1)
         method1624(28962)
         method3473(12949)
-        Class238.method1704((-95).toByte())
+        AbstractGameSocket.method1704((-95).toByte())
         method782(1)
         method3414(21515)
         HostPingThread.method1300((-128).toByte())
@@ -1269,9 +1269,9 @@ class Client : GameAppletFrame() {
             method527(Class34.aFrame476, Class348_Sub23_Sub1.aClass297_8992, false)
             Class34.aFrame476 = null
         }
-        if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-            Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-            Class348_Sub40_Sub8.aClass238_9165 = null
+        if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
+            Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+            Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
         }
         method1265(16)
         Class348_Sub4.aClass248_6601!!.method1901(i xor 0x44.inv())
@@ -1532,7 +1532,7 @@ class Client : GameAppletFrame() {
         }
         do {
             if (Class240.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) {
-                if (Class348_Sub40_Sub8.aClass238_9165 == null) method3141(false, 11.toByte())
+                if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 == null) method3141(false, 11.toByte())
                 else {
                     SceneRegionState.anInt193++
                     if (SceneRegionState.anInt193 > 50) {

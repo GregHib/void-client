@@ -106,9 +106,9 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                 try {
                     if (i >= 82) {
                         if (++HostPingThread.anInt2264 > 2000) {
-                            if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                                Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                                Class348_Sub40_Sub8.aClass238_9165 = null
+                            if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                             }
                             if (AnimatedModelRenderer.anInt8398 >= 2) {
                                 Class367_Sub2.anInt7297 = 0
@@ -127,26 +127,26 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                         if (Class367_Sub2.anInt7297 == 2) {
                             if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 == 2) throw IOException()
                             if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 != 1) return
-                            Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982(((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket), 24.toByte(), 7500)
+                            Class348_Sub40_Sub8.aAbstractGameSocket_9165 = Class348_Sub23_Sub3.method2982(((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket), 24.toByte(), 7500)
                             FrameStatsReset.aLinkedQueueNode_5800 = null
                             method1802(0)
                             Class367_Sub2.anInt7297 = 4
                         }
                         if (Class367_Sub2.anInt7297 == 4) {
-                            if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 104)) {
-                                Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-116).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            if (Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(1, 104)) {
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(1, 0, (-116).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                                 val i_11_ = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                                 Class352.anInt4337 = i_11_
                                 Class367_Sub2.anInt7297 = 0
-                                Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                                Class348_Sub40_Sub8.aClass238_9165 = null
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                                Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                             }
                         }
                     }
                 } catch (ioexception: IOException) {
-                    if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                        Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
-                        Class348_Sub40_Sub8.aClass238_9165 = null
+                    if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                        Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
                     }
                     if (AnimatedModelRenderer.anInt8398 < 2) {
                         Class255.aServerConnectionInfo_3285!!.method1259(0)

@@ -51,7 +51,7 @@ object Class289 {
             SceneRegionState.anInt193++
             if (i < -118 && (SceneRegionState.anInt193 >= 50 || bool)) {
                 SceneRegionState.anInt193 = 0
-                if (!AbstractMenuEntry.aBoolean1712 && Class348_Sub40_Sub8.aClass238_9165 != null) {
+                if (!AbstractMenuEntry.aBoolean1712 && Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
                     IOException_Sub1.anInt88++
                     val class348_sub47 = method2148((Class239_Sub10.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -106)
                     Class348_Sub42_Sub14.method3243(122, class348_sub47)

@@ -83,7 +83,7 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
         anInt9148++
         method3067((-98).toByte())
         var i_3_ = this.anInt9150 + -1
-        if (i < 108) aClass238_9165 = null
+        if (i < 108) aAbstractGameSocket_9165 = null
         while ( /**/i_3_ >= 1) {
             val i_4_ = aShortArray9159!![i_3_]
             if (i_4_ > 8) break
@@ -260,13 +260,13 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
         @JvmField
         var aColorArray9163: Array<Color?>? = arrayOf<Color?>(Color(9179409), Color(16777215), Color(16726277), Color(16726277))
         @JvmField
-        var aClass238_9165: Class238? = null
+        var aAbstractGameSocket_9165: AbstractGameSocket? = null
 
         @JvmStatic
         fun method3068(i: Int) {
             aColorArray9163 = null
-            if (i != 13715) aClass238_9165 = null
-            aClass238_9165 = null
+            if (i != 13715) aAbstractGameSocket_9165 = null
+            aAbstractGameSocket_9165 = null
         }
     }
 }

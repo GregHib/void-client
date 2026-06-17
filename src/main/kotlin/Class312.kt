@@ -65,7 +65,7 @@ class Class312 {
                 Class348_Sub40_Sub25.anInt9341 = 0
                 Class348_Sub40_Sub36.aIntRange_9456 = null
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                Class238.aIntRange_3133 = null
+                AbstractGameSocket.aIntRange_3133 = null
                 Class239.aIntRange_3145 = null
                 Class348_Sub50.anInt7213 = 0
                 Class348_Sub3.aIntRange_6584 = null

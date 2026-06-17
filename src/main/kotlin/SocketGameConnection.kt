@@ -2,7 +2,7 @@ import java.io.IOException
 import java.net.Socket
 import kotlin.math.atan2
 
-class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int) : Class238() {
+class SocketGameConnection internal constructor(private val aSocket5836: Socket, i: Int) : AbstractGameSocket() {
     private var aClass376_5834: Class376?
     private val aBufferedOutputStreamWorker_5837: BufferedOutputStreamWorker
 
