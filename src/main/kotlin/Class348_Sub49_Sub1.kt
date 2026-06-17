@@ -124,7 +124,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                         if (Class348_Sub40_Sub5.aBoolean9121) {
                             if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
-                            for (i_15_ in 0..<Npc.anInt10503) Class319.aClass315Array3982!![i_15_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
+                            for (i_15_ in 0..<Npc.anInt10503) Class319.aCacheIndexManagerArray3982!![i_15_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
                         } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_1_, i_2_)
                         else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_2_)
                     } else {
@@ -145,7 +145,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                         if (Class348_Sub40_Sub5.aBoolean9121) {
                             if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
-                            for (i_21_ in 0..<Npc.anInt10503) Class319.aClass315Array3982!![i_21_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
+                            for (i_21_ in 0..<Npc.anInt10503) Class319.aCacheIndexManagerArray3982!![i_21_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
                         } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_1_, i_2_)
                         else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_2_)
                     }

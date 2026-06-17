@@ -67,7 +67,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
                         class348_sub9.aPlayer_6679 = player
                         class348_sub9.anInt6698 = (player.method2436(74.toByte()) + i_4_) shl 9
                         class348_sub9.anInt6687 = (player.method2436(86.toByte()) + i_3_) shl 9
-                        class348_sub9.anInt6685 = Class315.method2357(-1, player)
+                        class348_sub9.anInt6685 = CacheIndexManager.method2357(-1, player)
                         class348_sub9.anInt6681 = 256
                         class348_sub9.anInt6694 = (player.anInt10553 shl 9)
                         class348_sub9.anInt6677 = player.anInt10558

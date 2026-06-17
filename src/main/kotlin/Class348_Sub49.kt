@@ -2,7 +2,7 @@ import LinkedNodeListIterator.Companion.method1006
 import HeadIconRenderer.Companion.method1213
 import LoadProgressCounters.Companion.method1372
 import CameraConfigDefinition.Companion.method1922
-import Class315.Companion.method2355
+import CacheIndexManager.Companion.method2355
 import Class340.Companion.method2672
 import Class348_Sub17.Companion.method2929
 import Class348_Sub31.Companion.method3007

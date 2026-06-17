@@ -17,7 +17,7 @@ class Class319 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
         synchronized(this.aClass60_3990) {
             this.aClass60_3990.method590(0)
         }
-        if (i < 72) aClass315Array3982 = null
+        if (i < 72) aCacheIndexManagerArray3982 = null
     }
 
     fun method2542(i: Int) {
@@ -89,7 +89,7 @@ class Class319 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
         var anInt3978: Int = 0
         var aDouble3980: Double = 0.0
         @JvmField
-        var aClass315Array3982: Array<Class315?>? = null
+        var aCacheIndexManagerArray3982: Array<CacheIndexManager?>? = null
         var anInt3983: Int = 0
         var anInt3984: Int = 0
         @JvmField
@@ -101,7 +101,7 @@ class Class319 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
         @JvmStatic
         fun method2545(bool: Boolean) {
             if (bool == true) {
-                aClass315Array3982 = null
+                aCacheIndexManagerArray3982 = null
                 anObject3985 = null
             }
         }

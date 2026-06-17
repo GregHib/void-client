@@ -7,7 +7,7 @@ import kotlin.concurrent.Volatile
 */
 class SceneLoaderThread internal constructor(private val anInt3749: Int, private val aRenderer3746: Renderer) : Runnable {
     private var aLong3742: Long = 0
-    private var aClass315_3743: Class315? = null
+    private var aCacheIndexManager_3743: CacheIndexManager? = null
 
     @Volatile
     private var aBoolean3744 = false
@@ -36,16 +36,16 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
         }
     }
 
-    fun method2206(class315: Class315?) {
-        if (aClass315_3743 != null) aClass315_3743!!.method2356(null, (-108).toByte())
-        aClass315_3743 = class315
-        if (aClass315_3743 != null) aClass315_3743!!.method2356(this, (-108).toByte())
+    fun method2206(cacheIndexManager: CacheIndexManager?) {
+        if (aCacheIndexManager_3743 != null) aCacheIndexManager_3743!!.method2356(null, (-108).toByte())
+        aCacheIndexManager_3743 = cacheIndexManager
+        if (aCacheIndexManager_3743 != null) aCacheIndexManager_3743!!.method2356(this, (-108).toByte())
     }
 
     private fun method2207() {
         aRenderer3746.method3659(anInt3749)
         while (!aBoolean3750 && aBoolean3745) {
-            if (aClass315_3743 == null || aClass315_3743!!.method2360(-112)) {
+            if (aCacheIndexManager_3743 == null || aCacheIndexManager_3743!!.method2360(-112)) {
                 aBoolean3744 = false
                 aLong3742 = Class50_Sub4.aClass47_5262!!.method446(1)
                 synchronized(this) {
@@ -57,13 +57,13 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
                 }
             } else {
                 aBoolean3744 = true
-                val class318 = aClass315_3743!!.method2362(25061)
+                val class318 = aCacheIndexManager_3743!!.method2362(25061)
                 if (class318 is Class318_Sub1) {
                     val class318_sub1 = class318
                     if (class318_sub1.aBoolean6387) class318_sub1.method2387(Class9.aRenderer171, -127)
                     else {
                         method365(class318_sub1, aClass348_Sub1Array3748)
-                        if (Class362.aClass324_4456 != null) Class362.aClass324_4456!!.method2576(aClass315_3743!!.aString3953, -256, class318_sub1.anInt6380, class318_sub1.anInt6386, -16777216, -114)
+                        if (Class362.aClass324_4456 != null) Class362.aClass324_4456!!.method2576(aCacheIndexManager_3743!!.aString3953, -256, class318_sub1.anInt6380, class318_sub1.anInt6386, -16777216, -114)
                     }
                 } else {
                     val i = (class318 as Class318_Sub2).anInt6394
@@ -112,7 +112,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
     }
 
     fun method2210(): Boolean {
-        return aClass315_3743 == null || (!aBoolean3744 && aClass315_3743!!.method2360(70))
+        return aCacheIndexManager_3743 == null || (!aBoolean3744 && aCacheIndexManager_3743!!.method2360(70))
     }
 
     init {

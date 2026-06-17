@@ -238,7 +238,7 @@ import ResourceLoaderThread.Companion.method2317
 import WidgetRedrawTracker.Companion.method2331
 import SkyboxGradient.method2333
 import ArchiveResourceProvider.Companion.method2344
-import Class315.Companion.method2354
+import CacheIndexManager.Companion.method2354
 import Class316.Companion.method2363
 import Class316.Companion.method2366
 import Class318_Sub1.Companion.method2389

@@ -1757,7 +1757,7 @@ class Class64_Sub3 : Class64 {
                     aShortArray5564 = aShortArray5583
                 }
             }
-            if (aShortArray5580 != null && !Class315.method2358(-116, anInt5648, anInt5556)) {
+            if (aShortArray5580 != null && !CacheIndexManager.method2358(-116, anInt5648, anInt5556)) {
                 if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anInterface2_1811 != null) aShortArray5580 = null
                 else aBoolean5555 = true
             }

@@ -890,7 +890,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 Class9.aRenderer171!!.method3631(1)
                 Class9.aRenderer171!!.method3659(0)
             }
-            if (Class319.aClass315Array3982 != null) Class319.aClass315Array3982 = null
+            if (Class319.aCacheIndexManagerArray3982 != null) Class319.aCacheIndexManagerArray3982 = null
             Class9.aRenderer171 = null
         }
 

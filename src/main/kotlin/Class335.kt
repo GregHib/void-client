@@ -75,7 +75,7 @@ object Class335 {
                 } else i_7_ = 2
             } else i_7_ = 0
             if (class348_sub9.anInt6675 != i_7_) {
-                val i_8_ = (Class315.method2357(-1, (class348_sub9.aPlayer_6679!!)))
+                val i_8_ = (CacheIndexManager.method2357(-1, (class348_sub9.aPlayer_6679!!)))
                 if (i_8_ == class348_sub9.anInt6685 && (class348_sub9.aPlayer_6679!!.aBoolean10517 == class348_sub9.aBoolean6674)) {
                     class348_sub9.anInt6677 = class348_sub9.aPlayer_6679!!.anInt10558
                     class348_sub9.anInt6675 = i_7_

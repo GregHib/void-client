@@ -68,7 +68,7 @@ class Class348_Sub9 : Class348() {
             if (this.aClass51_6695 == null) {
                 if (this.aNpc_6691 == null) {
                     if ((this.aPlayer_6679) != null) {
-                        this.anInt6685 = (Class315.method2357(-1, (this.aPlayer_6679!!)))
+                        this.anInt6685 = (CacheIndexManager.method2357(-1, (this.aPlayer_6679!!)))
                         this.anInt6694 = (this.aPlayer_6679!!.anInt10553) shl 9
                         this.anInt6677 = (this.aPlayer_6679!!.anInt10558)
                         this.anInt6681 = 256
@@ -162,7 +162,7 @@ class Class348_Sub9 : Class348() {
                         if ((`is` != null && class318_sub1.plane >= i && (`is`[class318_sub1.plane.toInt()]!![i_5_]!![i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((-79).toByte())) {
                             if (!bool && i_5_ >= DisplayModeOptionState.anInt6111 - 16 && i_5_ <= DisplayModeOptionState.anInt6111 + 16 && i_6_ >= GlIndexBufferArb.anInt8502 - 16 && i_6_ <= GlIndexBufferArb.anInt8502 + 16) {
                                 if (Class348_Sub40_Sub5.aBoolean9121) {
-                                    Class319.aClass315Array3982!![NpcSummaryDefinition.anInt1949++]!!.method2361(-15481, class318_sub1)
+                                    Class319.aCacheIndexManagerArray3982!![NpcSummaryDefinition.anInt1949++]!!.method2361(-15481, class318_sub1)
                                     NpcSummaryDefinition.anInt1949 %= Class75_Sub1.anInt5652
                                 } else class318_sub1.method2387(Class9.aRenderer171, -128)
                             }

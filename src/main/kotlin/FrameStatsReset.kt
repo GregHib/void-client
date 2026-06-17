@@ -461,7 +461,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SoundChannelMixer.anInt3608 = 0
             Class346_Sub1.anInt6532 = 0
             OpenGlTerrainTile.anInt8238 = 0
-            Class315.anInt3951 = 0
+            CacheIndexManager.anInt3951 = 0
             FloatCameraTransform.anInt5738 = 0
             Class334.anInt4157 = 0
             GraphicsOptionState.anInt3137 = 0
@@ -589,7 +589,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ParticleConfigParser.anInt3815 = 0
             Class367_Sub4.anInt7310 = 0
             ModelDefinitionLoader.anInt2053 = 0
-            Class315.anInt3954 = 0
+            CacheIndexManager.anInt3954 = 0
             MinimapDrawController.anInt1609 = 0
             MapArchiveSource.anInt4802 = 0
             MapSceneIconDef.anInt2850 = 0
@@ -1264,7 +1264,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9882 = 0
             ResourceLoaderThread.anInt3906 = 0
             ScrollTexMaterialPass.anInt6282 = 0
-            Class315.anInt3949 = 0
+            CacheIndexManager.anInt3949 = 0
             Class45.anInt644 = 0
             GameDisplayManager.anInt2837 = 0
             NativeRenderer.anInt8031 = 0
@@ -1451,7 +1451,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ObjectByteSerializerHolder.anInt2282 = 0
             Class55.anInt980 = 0
             FloatCameraTransform.anInt5698 = 0
-            Class315.anInt3952 = 0
+            CacheIndexManager.anInt3952 = 0
             GlTextureBase.anInt5095 = 0
             Class361.anInt4454 = 0
             SceneObjectAnimator.anInt3050 = 0
@@ -2128,7 +2128,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class97.anInt1557 = 0
             GlTextureBase.anInt5100 = 0
             OpenGlRenderNode.anInt10490 = 0
-            Class315.anInt3950 = 0
+            CacheIndexManager.anInt3950 = 0
             Class340.anInt4219 = 0
             Class348_Sub18.anInt6817 = 0
             NativeRenderer.anInt8021 = 0
@@ -2173,7 +2173,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class78.anInt1310 = 0
             Class324.anInt4055 = 0
             WidgetNodeLink.anInt2043 = 0
-            Class315.anInt3947 = 0
+            CacheIndexManager.anInt3947 = 0
             NativeRenderer.anInt8024 = 0
             Class348_Sub40_Sub12.anInt9191 = 0
             TerrainTileGeometry.anInt3013 = 0
@@ -2675,7 +2675,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7631 = 0
             Class318_Sub1_Sub4_Sub1.anInt10086 = 0
             MultiLevelOptionState.anInt6144 = 0
-            Class315.anInt3955 = 0
+            CacheIndexManager.anInt3955 = 0
             Class348_Sub40_Sub28.anInt9361 = 0
             Class318_Sub1_Sub3_Sub3.anInt10313 = 0
             GroundItemRenderState.anInt1658 = 0
@@ -2815,7 +2815,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeIndexBuffer.anInt4700 = 0
             BackgroundWorkerThread.anInt3219 = 0
             NativeRenderer.anInt7939 = 0
-            Class315.anInt3945 = 0
+            CacheIndexManager.anInt3945 = 0
             GlTextureBase.anInt5092 = 0
             NodeDeque.anInt3328 = 0
             Class335.anInt4166 = 0
@@ -3662,7 +3662,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeLibraryUnloader.anInt2975 = 0
             Class348_Sub40_Sub32.anInt9419 = 0
             Class64_Sub2.anInt5518 = 0
-            Class315.anInt3944 = 0
+            CacheIndexManager.anInt3944 = 0
             Class348_Sub40_Sub8.anInt9154 = 0
             Class318_Sub1_Sub3.anInt8752 = 0
             NativeRenderNode.anInt10475 = 0
@@ -3955,7 +3955,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlRectangleTexture.anInt8639 = 0
             Class348_Sub1.anInt6549 = 0
             ItemModelDefinition.anInt436 = 0
-            Class315.anInt3948 = 0
+            CacheIndexManager.anInt3948 = 0
             SceneProjector.anInt2988 = 0
             Renderer.anInt4574 = 0
             Class46.anInt819 = 0

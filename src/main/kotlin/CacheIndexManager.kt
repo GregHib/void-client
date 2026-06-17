@@ -5,7 +5,7 @@ import kotlin.concurrent.Volatile
 /* Class315 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class315 internal constructor(var aString3953: String?) {
+class CacheIndexManager internal constructor(var aString3953: String?) {
     private val aDoublyLinkedNodeList_3946 = DoublyLinkedNodeList()
     private var aSceneLoaderThread_3956: SceneLoaderThread? = null
 
