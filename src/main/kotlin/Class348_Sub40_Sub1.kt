@@ -50,9 +50,9 @@ class Class348_Sub40_Sub1 : Class348_Sub40(1, false) {
                 return
             } while (false)
             val i_2_ = class348_sub49.readMedium(-1)
-            anIntArray9086[2] = Class139.method1166(0, i_2_ shr 12)
-            anIntArray9086[1] = Class139.method1166(i_2_, 65280) shr 4
-            anIntArray9086[0] = Class139.method1166(i_2_ shl 4, 267386880)
+            anIntArray9086[2] = NpcSummaryDefinition.method1166(0, i_2_ shr 12)
+            anIntArray9086[1] = NpcSummaryDefinition.method1166(i_2_, 65280) shr 4
+            anIntArray9086[0] = NpcSummaryDefinition.method1166(i_2_ shl 4, 267386880)
         } while (false)
     }
 

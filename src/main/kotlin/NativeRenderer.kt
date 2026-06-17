@@ -1760,7 +1760,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     for (i_215_ in 0..<class207.anInt2696) {
                         var i_216_ = 0
                         while (class207.anInt2702 > i_216_) {
-                            `is`[i_211_++] = (Class273.method2057((class207.anIntArray2697[Class139.method1166((class207.aByteArray2699[i]).toInt(), 255)]), (class207.aByteArray2695!![i].toInt() shl 24)))
+                            `is`[i_211_++] = (Class273.method2057((class207.anIntArray2697[NpcSummaryDefinition.method1166((class207.aByteArray2699[i]).toInt(), 255)]), (class207.aByteArray2695!![i].toInt() shl 24)))
                             i++
                             i_216_++
                         }

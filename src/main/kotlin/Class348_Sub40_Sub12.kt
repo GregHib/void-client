@@ -37,9 +37,9 @@ class Class348_Sub40_Sub12 : Class348_Sub40(1, false) {
                 if (i_9_ < 0) i_9_ = 0
                 if (i_9_ > 256) i_9_ = 256
                 i_9_ = anIntArray9199[i_9_]
-                is_5_[i_8_] = Class139.method1166(i_9_, 16711680) shr 12
-                is_6_[i_8_] = Class139.method1166(65280, i_9_) shr 4
-                is_7_[i_8_] = Class139.method1166(4080, i_9_ shl 4)
+                is_5_[i_8_] = NpcSummaryDefinition.method1166(i_9_, 16711680) shr 12
+                is_6_[i_8_] = NpcSummaryDefinition.method1166(65280, i_9_) shr 4
+                is_7_[i_8_] = NpcSummaryDefinition.method1166(4080, i_9_ shl 4)
                 i_8_++
             }
         }

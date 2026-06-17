@@ -124,7 +124,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                                 f_22_ = (modelDefinition.anIntArray1844[i_20_]).toFloat() / 1024.0f
                                 f_23_ = (modelDefinition.anIntArray1859!![i_20_]).toFloat() / 1024.0f
                             }
-                            fs[i_20_] = (Class175.method1347(modelDefinition.aShortArray1825[i_20_].toInt(), modelDefinition.aShortArray1849[i_20_].toInt(), f_22_, f_23_, 126, f, modelDefinition.aShortArray1829[i_20_].toInt(), Class139.method1166(255, (modelDefinition.aByteArray1833[i_20_]).toInt())))
+                            fs[i_20_] = (Class175.method1347(modelDefinition.aShortArray1825[i_20_].toInt(), modelDefinition.aShortArray1849[i_20_].toInt(), f_22_, f_23_, 126, f, modelDefinition.aShortArray1829[i_20_].toInt(), NpcSummaryDefinition.method1166(255, (modelDefinition.aByteArray1833[i_20_]).toInt())))
                         }
                         i_20_++
                     }

@@ -39,7 +39,7 @@ class Class85 {
                 var i_5_ = 0
                 var i_6_ = 56
                 while ( /**/i_5_ < 8) {
-                    aLongArray1471[i_4_] = (GlSpriteRenderer.method993(aLongArray1471[i_4_], (InputStream_Sub1.aLongArrayArray75!![i_5_]!![(Class139.method1166(255, ((aLongArray1472[Class139.method1166(7, i_4_ - i_5_)]) ushr i_6_).toInt()))])))
+                    aLongArray1471[i_4_] = (GlSpriteRenderer.method993(aLongArray1471[i_4_], (InputStream_Sub1.aLongArrayArray75!![i_5_]!![(NpcSummaryDefinition.method1166(255, ((aLongArray1472[NpcSummaryDefinition.method1166(7, i_4_ - i_5_)]) ushr i_6_).toInt()))])))
                     i_6_ -= 8
                     i_5_++
                 }
@@ -51,7 +51,7 @@ class Class85 {
                 var i_9_ = 0
                 var i_10_ = 56
                 while ( /**/i_9_ < 8) {
-                    aLongArray1471[i_8_] = (GlSpriteRenderer.method993(aLongArray1471[i_8_], (InputStream_Sub1.aLongArrayArray75!![i_9_]!![(Class139.method1166(255, ((aLongArray1469[Class139.method1166(-i_9_ + i_8_, 7)]) ushr i_10_).toInt()))])))
+                    aLongArray1471[i_8_] = (GlSpriteRenderer.method993(aLongArray1471[i_8_], (InputStream_Sub1.aLongArrayArray75!![i_9_]!![(NpcSummaryDefinition.method1166(255, ((aLongArray1469[NpcSummaryDefinition.method1166(-i_9_ + i_8_, 7)]) ushr i_10_).toInt()))])))
                     i_10_ -= 8
                     i_9_++
                 }
@@ -100,7 +100,7 @@ class Class85 {
                     anInt1468 = 0
                     anInt1463 = anInt1468
                 }
-                aByteArray1475[anInt1468] = Class139.method1166(i_36_ shl -i_31_ + 8, 255).toByte()
+                aByteArray1475[anInt1468] = NpcSummaryDefinition.method1166(i_36_ shl -i_31_ + 8, 255).toByte()
                 i_29_++
                 l -= 8L
                 anInt1463 += i_31_
@@ -119,7 +119,7 @@ class Class85 {
                     anInt1468 = 0
                     anInt1463 = anInt1468
                 }
-                aByteArray1475[anInt1468] = Class139.method1166(i_37_ shl 8 + -i_31_, 255).toByte()
+                aByteArray1475[anInt1468] = NpcSummaryDefinition.method1166(i_37_ shl 8 + -i_31_, 255).toByte()
                 anInt1463 += l.toInt()
             } else anInt1463 += l.toInt()
         } catch (runtimeexception: RuntimeException) {
@@ -129,7 +129,7 @@ class Class85 {
 
     fun method833(bool: Boolean, i: Int, `is`: ByteArray) {
         anInt1470++
-        aByteArray1475[anInt1468] = Class273.method2057(aByteArray1475[anInt1468].toInt(), 128 ushr Class139.method1166(anInt1463, 7)).toByte()
+        aByteArray1475[anInt1468] = Class273.method2057(aByteArray1475[anInt1468].toInt(), 128 ushr NpcSummaryDefinition.method1166(anInt1463, 7)).toByte()
         anInt1468++
         if (anInt1468 > 32) {
             while (anInt1468 < 64) aByteArray1475[anInt1468++] = 0.toByte()

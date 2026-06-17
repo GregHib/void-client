@@ -564,7 +564,7 @@ class Client : GameAppletFrame() {
                 Class240.anInt4674 = 14
                 return
             }
-            if (Class348_Sub4.aClass248_6601!!.anInt3213 >= 4 && Class139.method1167(Class240.anInt4674, (-81).toByte())) {
+            if (Class348_Sub4.aClass248_6601!!.anInt3213 >= 4 && NpcSummaryDefinition.method1167(Class240.anInt4674, (-81).toByte())) {
                 if (Class348_Sub4.aClass248_6601!!.anInt3214 != 7 && Class348_Sub4.aClass248_6601!!.anInt3214 != 9) {
                     if (Class348_Sub4.aClass248_6601!!.anInt3214 <= 0) this.method82(72, "js5io")
                     else if (Class348_Sub31.aString6926 == null) this.method82(-116, "js5connect")
@@ -600,7 +600,7 @@ class Client : GameAppletFrame() {
                     Class45.aLong667 = method599(-70)
                 }
                 if (Class47.anInt846 == 3) {
-                    if (Class139.method1167(Class240.anInt4674, (-100).toByte()) || Class193.aClass202_2589!!.method1467(83.toByte()) > 0) {
+                    if (NpcSummaryDefinition.method1167(Class240.anInt4674, (-100).toByte()) || Class193.aClass202_2589!!.method1467(83.toByte()) > 0) {
                         val i_0_ = Class193.aClass202_2589!!.method1473(0)
                         if (i_0_ != 0) {
                             method103(i_0_, 111.toByte())
@@ -613,7 +613,7 @@ class Client : GameAppletFrame() {
                     }
                 }
                 if (Class47.anInt846 == 4) {
-                    val bool = (Class139.method1167(Class240.anInt4674, (-100).toByte()) || method3196(Class240.anInt4674, -87) || method2672(Class240.anInt4674, -127))
+                    val bool = (NpcSummaryDefinition.method1167(Class240.anInt4674, (-100).toByte()) || method3196(Class240.anInt4674, -87) || method2672(Class240.anInt4674, -127))
                     val class267s = method2029(105)
                     val class348_sub49 = Class348_Sub49(class267s!!.size * 4)
                     Class193.aClass202_2589!!.method1474(class348_sub49.aByteArray7154!!, 0, (-72).toByte(), (class348_sub49.aByteArray7154)!!.size)
@@ -1299,7 +1299,7 @@ class Client : GameAppletFrame() {
                 method114(i.toInt() xor 0x66)
             } catch (throwable: Throwable) {
                 method1242((throwable.message + " (Recovered) " + method81(115.toByte())), throwable, 15004)
-                Class139.aBoolean1952 = true
+                NpcSummaryDefinition.aBoolean1952 = true
                 method3553(false, 102.toByte(), 0)
             }
         } else method114(123)
@@ -1410,7 +1410,7 @@ class Client : GameAppletFrame() {
                 method116(true)
             } catch (throwable: Throwable) {
                 method1242((throwable.message + " (Recovered) " + method81(52.toByte())), throwable, 15004)
-                Class139.aBoolean1952 = true
+                NpcSummaryDefinition.aBoolean1952 = true
                 method3553(false, 123.toByte(), 0)
             }
         } else method116(true)
@@ -1611,7 +1611,7 @@ class Client : GameAppletFrame() {
                 class348_sub45 = Class258_Sub4.aClass373_8552!!.method3596(0)
             }
             if (method3263(true)) method363(125)
-            if (Class139.method1167(Class240.anInt4674, (-51).toByte())) {
+            if (NpcSummaryDefinition.method1167(Class240.anInt4674, (-51).toByte())) {
                 method493(true)
                 method867(true)
             } else if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (-120).toByte())) method123(0)
@@ -1698,7 +1698,7 @@ class Client : GameAppletFrame() {
             }
             if (bool_120_) Class140.method1170((-116).toByte())
             if ((Class348_Sub8.aRenderer6654 != null && Class348_Sub8.aRenderer6654!!.method3655()) || method3229(-91) != 1) method3466(-77)
-            if (Class139.method1167(Class240.anInt4674, (-113).toByte())) method1309(bool_120_, 117)
+            if (NpcSummaryDefinition.method1167(Class240.anInt4674, (-113).toByte())) method1309(bool_120_, 117)
             else if (!method2114(Class240.anInt4674, bool)) {
                 if (!method3197(Class240.anInt4674, 56.toByte())) {
                     if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (-78).toByte())) {
@@ -1743,7 +1743,7 @@ class Client : GameAppletFrame() {
                 } catch (exception_sub1: Exception_Sub1) {
                     /* empty */
                 }
-            } else if (!Class139.method1167(Class240.anInt4674, (-59).toByte())) {
+            } else if (!NpcSummaryDefinition.method1167(Class240.anInt4674, (-59).toByte())) {
                 var i = 0
                 while (Class348_Sub38.anInt7008 > i) {
                     Class268.aBooleanArray3438!![i] = false

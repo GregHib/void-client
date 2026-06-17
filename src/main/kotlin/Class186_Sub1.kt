@@ -48,16 +48,16 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
                 val f_36_ = Class342.method2684(i_4_ xor 0x7, f_34_)
                 fs[i_2_++] = f_3_ * (Class314.method2337(
                     (Class314.method2337(
-                        (Class314.method2337((Class285.method2119(f_24_, Class139.method1166((anIntArray5804[i_26_ + i_32_]), 7), f_15_, -70, f_35_)), true, (Class285.method2119(f_24_, Class139.method1166(7, (anIntArray5804[i_33_ - -i_26_])), f_15_, -73, f_34_)), f_36_)),
+                        (Class314.method2337((Class285.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_26_ + i_32_]), 7), f_15_, -70, f_35_)), true, (Class285.method2119(f_24_, NpcSummaryDefinition.method1166(7, (anIntArray5804[i_33_ - -i_26_])), f_15_, -73, f_34_)), f_36_)),
                         true,
-                        (Class314.method2337((Class285.method2119(f_23_, Class139.method1166(7, (anIntArray5804[i_32_ + i_27_])), f_15_, -75, f_35_)), true, (Class285.method2119(f_23_, Class139.method1166((anIntArray5804[i_27_ + i_33_]), 7), f_15_, -91, f_34_)), f_36_)),
+                        (Class314.method2337((Class285.method2119(f_23_, NpcSummaryDefinition.method1166(7, (anIntArray5804[i_32_ + i_27_])), f_15_, -75, f_35_)), true, (Class285.method2119(f_23_, NpcSummaryDefinition.method1166((anIntArray5804[i_27_ + i_33_]), 7), f_15_, -91, f_34_)), f_36_)),
                         f_25_
                     )),
                     true,
                     (Class314.method2337(
-                        (Class314.method2337((Class285.method2119(f_24_, Class139.method1166((anIntArray5804[i_28_ + i_32_]), 7), f_14_, -72, f_35_)), true, (Class285.method2119(f_24_, Class139.method1166((anIntArray5804[i_28_ + i_33_]), 7), f_14_, -75, f_34_)), f_36_)),
+                        (Class314.method2337((Class285.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_28_ + i_32_]), 7), f_14_, -72, f_35_)), true, (Class285.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_28_ + i_33_]), 7), f_14_, -75, f_34_)), f_36_)),
                         true,
-                        (Class314.method2337((Class285.method2119(f_23_, Class139.method1166((anIntArray5804[i_29_ + i_32_]), 7), f_14_, -100, f_35_)), true, (Class285.method2119(f_23_, Class139.method1166((anIntArray5804[i_29_ + i_33_]), 7), f_14_, -72, f_34_)), f_36_)),
+                        (Class314.method2337((Class285.method2119(f_23_, NpcSummaryDefinition.method1166((anIntArray5804[i_29_ + i_32_]), 7), f_14_, -100, f_35_)), true, (Class285.method2119(f_23_, NpcSummaryDefinition.method1166((anIntArray5804[i_29_ + i_33_]), 7), f_14_, -72, f_34_)), f_36_)),
                         f_25_
                     )),
                     f_16_

@@ -1814,7 +1814,7 @@ object Class66 {
                 return
             }
             if (i == 6147) {
-                anIntArray1149!![anInt1173++] = if (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609 < 512 || Class348_Sub23_Sub2.aBoolean9038 || Class139.aBoolean1952) 1 else 0
+                anIntArray1149!![anInt1173++] = if (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609 < 512 || Class348_Sub23_Sub2.aBoolean9038 || NpcSummaryDefinition.aBoolean1952) 1 else 0
                 return
             }
             if (i == 6148) {

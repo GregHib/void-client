@@ -278,7 +278,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             var i_80_ = 0
             while (anInt8417 > i_80_) {
                 val i_81_ = i_80_ * anInt8411
-                for (i_82_ in 0..<anInt8411) is_79_[i_81_ + i_82_] = (Class273.method2057((Class139.method1166(1828651008, `is`!![i_81_ - -i_82_]) shl 8), Class139.method1166(is_79_[i_81_ - -i_82_], 16777215)))
+                for (i_82_ in 0..<anInt8411) is_79_[i_81_ + i_82_] = (Class273.method2057((NpcSummaryDefinition.method1166(1828651008, `is`!![i_81_ - -i_82_]) shl 8), NpcSummaryDefinition.method1166(is_79_[i_81_ - -i_82_], 16777215)))
                 i_80_++
             }
         } else if (i_78_ == 1) {
@@ -287,7 +287,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
                 val i_84_ = i_83_ * anInt8411
                 var i_85_ = 0
                 while (anInt8411 > i_85_) {
-                    is_79_[i_85_ + i_84_] = (Class273.method2057(Class139.method1166(is_79_[i_85_ + i_84_], 16777215), (Class139.method1166(`is`!![i_84_ - -i_85_], 743571200) shl 16)))
+                    is_79_[i_85_ + i_84_] = (Class273.method2057(NpcSummaryDefinition.method1166(is_79_[i_85_ + i_84_], 16777215), (NpcSummaryDefinition.method1166(`is`!![i_84_ - -i_85_], 743571200) shl 16)))
                     i_85_++
                 }
                 i_83_++
@@ -296,14 +296,14 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             var i_89_ = 0
             while (anInt8417 > i_89_) {
                 val i_90_ = i_89_ * anInt8411
-                for (i_91_ in 0..<anInt8411) is_79_[i_90_ + i_91_] = (Class273.method2057(Class139.method1166(is_79_[i_90_ + i_91_], 16777215), Class139.method1166(-3725444, (`is`!![i_91_ + i_90_] shl 24))))
+                for (i_91_ in 0..<anInt8411) is_79_[i_90_ + i_91_] = (Class273.method2057(NpcSummaryDefinition.method1166(is_79_[i_90_ + i_91_], 16777215), NpcSummaryDefinition.method1166(-3725444, (`is`!![i_91_ + i_90_] shl 24))))
                 i_89_++
             }
         } else if (i_78_ == 3) {
             var i_86_ = 0
             while (anInt8417 > i_86_) {
                 val i_87_ = i_86_ * anInt8411
-                for (i_88_ in 0..<anInt8411) is_79_[i_88_ + i_87_] = (Class273.method2057(if (`is`!![i_88_ + i_87_] != 0) -16777216 else 0, Class139.method1166(16777215, is_79_[i_88_ + i_87_])))
+                for (i_88_ in 0..<anInt8411) is_79_[i_88_ + i_87_] = (Class273.method2057(if (`is`!![i_88_ + i_87_] != 0) -16777216 else 0, NpcSummaryDefinition.method1166(16777215, is_79_[i_88_ + i_87_])))
                 i_86_++
             }
         }

@@ -21,18 +21,18 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                 var i_8_ = 0
                 while ((Class348_Sub40_Sub6.Companion.anInt9139 > i_8_)) {
                     val i_9_ = anIntArray9375!![i_1_++]
-                    is_4_[i_8_] = Class139.method1166(255, i_9_) shl 4
-                    is_3_[i_8_] = Class139.method1166(i_9_ shr 4, 4080)
-                    is_2_[i_8_] = Class139.method1166(16711680, i_9_) shr 12
+                    is_4_[i_8_] = NpcSummaryDefinition.method1166(255, i_9_) shl 4
+                    is_3_[i_8_] = NpcSummaryDefinition.method1166(i_9_ shr 4, 4080)
+                    is_2_[i_8_] = NpcSummaryDefinition.method1166(16711680, i_9_) shr 12
                     i_8_++
                 }
             } else {
                 for (i_5_ in 0..<Class348_Sub40_Sub6.Companion.anInt9139) {
                     val i_6_: Int = anInt9374 * i_5_ / Class348_Sub40_Sub6.Companion.anInt9139
                     val i_7_ = anIntArray9375!![i_6_ + i_1_]
-                    is_4_[i_5_] = Class139.method1166(i_7_, 255) shl 4
-                    is_3_[i_5_] = Class139.method1166(65280, i_7_) shr 4
-                    is_2_[i_5_] = Class139.method1166(i_7_ shr 12, 4080)
+                    is_4_[i_5_] = NpcSummaryDefinition.method1166(i_7_, 255) shl 4
+                    is_3_[i_5_] = NpcSummaryDefinition.method1166(65280, i_7_) shr 4
+                    is_2_[i_5_] = NpcSummaryDefinition.method1166(i_7_ shr 12, 4080)
                 }
             }
         }

@@ -1,4 +1,4 @@
-import Class139.Companion.method1166
+import NpcSummaryDefinition.Companion.method1166
 import Class254.Companion.method1928
 import Class287.Companion.method2178
 

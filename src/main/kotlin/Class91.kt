@@ -28,7 +28,7 @@ object Class91 {
         AbstractCameraTransform.anInt1597 = 0
         anInt1522++
         Class348_Sub23_Sub3.anInt9041++
-        Class139.method1165(1)
+        NpcSummaryDefinition.method1165(1)
         method204(-724138005)
         Class170.method1318(-65536)
         var bool = false

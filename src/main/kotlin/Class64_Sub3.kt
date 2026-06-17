@@ -37,7 +37,7 @@ class Class64_Sub3 : Class64 {
     private var aShortArray5564: ShortArray? = null
     private var aShortArray5566: ShortArray? = null
     private var aFloatArray5571: FloatArray? = null
-    private var aClass139_5572: Class139? = null
+    private var aNpcSummaryDefinition_5572: NpcSummaryDefinition? = null
     private var aShortArray5573: ShortArray? = null
     private var aClass270_5575: Class270? = null
     private var aShortArray5576: ShortArray? = null
@@ -262,31 +262,31 @@ class Class64_Sub3 : Class64 {
                 var is_53_: ShortArray?
                 var is_54_: ByteArray?
                 var is_55_: ShortArray?
-                if (aClass139_5572 == null) {
+                if (aNpcSummaryDefinition_5572 == null) {
                     is_52_ = null
                     is_53_ = null
                     is_54_ = null
                     is_55_ = null
                 } else {
-                    is_55_ = aClass139_5572!!.aShortArray1954
-                    is_54_ = aClass139_5572!!.aByteArray1948
-                    is_53_ = aClass139_5572!!.aShortArray1951
-                    is_52_ = aClass139_5572!!.aShortArray1953
+                    is_55_ = aNpcSummaryDefinition_5572!!.aShortArray1954
+                    is_54_ = aNpcSummaryDefinition_5572!!.aByteArray1948
+                    is_53_ = aNpcSummaryDefinition_5572!!.aShortArray1951
+                    is_52_ = aNpcSummaryDefinition_5572!!.aShortArray1953
                 }
                 var is_56_: ByteArray?
                 var is_57_: ShortArray?
                 var is_58_: ShortArray?
                 var is_59_: ShortArray?
-                if (class64_sub3_44_.aClass139_5572 == null) {
+                if (class64_sub3_44_.aNpcSummaryDefinition_5572 == null) {
                     is_56_ = null
                     is_57_ = null
                     is_58_ = null
                     is_59_ = null
                 } else {
-                    is_59_ = (class64_sub3_44_.aClass139_5572!!.aShortArray1953)
-                    is_56_ = (class64_sub3_44_.aClass139_5572!!.aByteArray1948)
-                    is_58_ = (class64_sub3_44_.aClass139_5572!!.aShortArray1954)
-                    is_57_ = (class64_sub3_44_.aClass139_5572!!.aShortArray1951)
+                    is_59_ = (class64_sub3_44_.aNpcSummaryDefinition_5572!!.aShortArray1953)
+                    is_56_ = (class64_sub3_44_.aNpcSummaryDefinition_5572!!.aByteArray1948)
+                    is_58_ = (class64_sub3_44_.aNpcSummaryDefinition_5572!!.aShortArray1954)
+                    is_57_ = (class64_sub3_44_.aNpcSummaryDefinition_5572!!.aShortArray1951)
                 }
                 val is_60_ = class64_sub3_44_.anIntArray5528
                 val is_61_ = class64_sub3_44_.aShortArray5649
@@ -328,26 +328,26 @@ class Class64_Sub3 : Class64 {
                                             }
                                             if (i_77_ != -1) {
                                                 if (is_55_ == null) {
-                                                    aClass139_5572 = Class139()
-                                                    aClass139_5572!!.aShortArray1954 = (Class50_Sub3.method470(aShortArray5564, (-120).toByte()))
-                                                    is_55_ = aClass139_5572!!.aShortArray1954
-                                                    aClass139_5572!!.aShortArray1951 = (Class50_Sub3.method470(aShortArray5583, (-109).toByte()))
-                                                    is_53_ = aClass139_5572!!.aShortArray1951
-                                                    aClass139_5572!!.aShortArray1953 = (Class50_Sub3.method470(aShortArray5576, (-107).toByte()))
-                                                    is_52_ = aClass139_5572!!.aShortArray1953
-                                                    aClass139_5572!!.aByteArray1948 = (Class309.method2309(-37, aByteArray5594))
-                                                    is_54_ = aClass139_5572!!.aByteArray1948
+                                                    aNpcSummaryDefinition_5572 = NpcSummaryDefinition()
+                                                    aNpcSummaryDefinition_5572!!.aShortArray1954 = (Class50_Sub3.method470(aShortArray5564, (-120).toByte()))
+                                                    is_55_ = aNpcSummaryDefinition_5572!!.aShortArray1954
+                                                    aNpcSummaryDefinition_5572!!.aShortArray1951 = (Class50_Sub3.method470(aShortArray5583, (-109).toByte()))
+                                                    is_53_ = aNpcSummaryDefinition_5572!!.aShortArray1951
+                                                    aNpcSummaryDefinition_5572!!.aShortArray1953 = (Class50_Sub3.method470(aShortArray5576, (-107).toByte()))
+                                                    is_52_ = aNpcSummaryDefinition_5572!!.aShortArray1953
+                                                    aNpcSummaryDefinition_5572!!.aByteArray1948 = (Class309.method2309(-37, aByteArray5594))
+                                                    is_54_ = aNpcSummaryDefinition_5572!!.aByteArray1948
                                                 }
                                                 if (is_58_ == null) {
-                                                    val class139 = (Class139().also { class64_sub3_44_.aClass139_5572 = it })
-                                                    class139.aShortArray1954 = (Class50_Sub3.method470(is_48_, (-127).toByte()))
-                                                    is_58_ = class139.aShortArray1954
-                                                    class139.aShortArray1951 = (Class50_Sub3.method470(is_49_, (-111).toByte()))
-                                                    is_57_ = class139.aShortArray1951
-                                                    class139.aShortArray1953 = (Class50_Sub3.method470(is_50_, (-120).toByte()))
-                                                    is_59_ = class139.aShortArray1953
-                                                    class139.aByteArray1948 = (Class309.method2309(-91, is_51_))
-                                                    is_56_ = class139.aByteArray1948
+                                                    val npcSummaryDefinition = (NpcSummaryDefinition().also { class64_sub3_44_.aNpcSummaryDefinition_5572 = it })
+                                                    npcSummaryDefinition.aShortArray1954 = (Class50_Sub3.method470(is_48_, (-127).toByte()))
+                                                    is_58_ = npcSummaryDefinition.aShortArray1954
+                                                    npcSummaryDefinition.aShortArray1951 = (Class50_Sub3.method470(is_49_, (-111).toByte()))
+                                                    is_57_ = npcSummaryDefinition.aShortArray1951
+                                                    npcSummaryDefinition.aShortArray1953 = (Class50_Sub3.method470(is_50_, (-120).toByte()))
+                                                    is_59_ = npcSummaryDefinition.aShortArray1953
+                                                    npcSummaryDefinition.aByteArray1948 = (Class309.method2309(-91, is_51_))
+                                                    is_56_ = npcSummaryDefinition.aByteArray1948
                                                 }
                                                 var i_79_ = aShortArray5564!![i_72_]
                                                 var i_80_ = aShortArray5583!![i_72_]
@@ -917,15 +917,15 @@ class Class64_Sub3 : Class64 {
                     class64_sub3_213_.aShortArray5576 = ShortArray(i_222_)
                     class64_sub3_211_.aShortArray5576 = class64_sub3_213_.aShortArray5576
                 }
-                if (aClass139_5572 == null) {
+                if (aNpcSummaryDefinition_5572 == null) {
                     for (i_223_ in 0..<anInt5529) {
                         class64_sub3_211_.aShortArray5564!![i_223_] = aShortArray5564!![i_223_]
                         class64_sub3_211_.aShortArray5583!![i_223_] = aShortArray5583!![i_223_]
                         class64_sub3_211_.aShortArray5576!![i_223_] = aShortArray5576!![i_223_]
                     }
                 } else {
-                    if (class64_sub3_213_.aClass139_5572 == null) class64_sub3_213_.aClass139_5572 = Class139()
-                    val class139 = (class64_sub3_213_.aClass139_5572.also { class64_sub3_211_.aClass139_5572 = it })!!
+                    if (class64_sub3_213_.aNpcSummaryDefinition_5572 == null) class64_sub3_213_.aNpcSummaryDefinition_5572 = NpcSummaryDefinition()
+                    val class139 = (class64_sub3_213_.aNpcSummaryDefinition_5572.also { class64_sub3_211_.aNpcSummaryDefinition_5572 = it })!!
                     if (class139.aShortArray1954 == null || (anInt5529 > class139.aShortArray1954!!.size)) {
                         val i_224_ = anInt5529
                         class139.aShortArray1951 = ShortArray(i_224_)
@@ -938,10 +938,10 @@ class Class64_Sub3 : Class64 {
                         class64_sub3_211_.aShortArray5564!![i_225_] = aShortArray5564!![i_225_]
                         class64_sub3_211_.aShortArray5583!![i_225_] = aShortArray5583!![i_225_]
                         class64_sub3_211_.aShortArray5576!![i_225_] = aShortArray5576!![i_225_]
-                        class139.aShortArray1954!![i_225_] = (aClass139_5572!!.aShortArray1954!![i_225_])
-                        class139.aShortArray1951!![i_225_] = (aClass139_5572!!.aShortArray1951!![i_225_])
-                        class139.aShortArray1953!![i_225_] = (aClass139_5572!!.aShortArray1953!![i_225_])
-                        class139.aByteArray1948!![i_225_] = (aClass139_5572!!.aByteArray1948!![i_225_])
+                        class139.aShortArray1954!![i_225_] = (aNpcSummaryDefinition_5572!!.aShortArray1954!![i_225_])
+                        class139.aShortArray1951!![i_225_] = (aNpcSummaryDefinition_5572!!.aShortArray1951!![i_225_])
+                        class139.aShortArray1953!![i_225_] = (aNpcSummaryDefinition_5572!!.aShortArray1953!![i_225_])
+                        class139.aByteArray1948!![i_225_] = (aNpcSummaryDefinition_5572!!.aByteArray1948!![i_225_])
                         i_225_++
                     }
                 }
@@ -949,7 +949,7 @@ class Class64_Sub3 : Class64 {
             } else {
                 class64_sub3_211_.aShortArray5564 = aShortArray5564
                 class64_sub3_211_.aShortArray5583 = aShortArray5583
-                class64_sub3_211_.aClass139_5572 = aClass139_5572
+                class64_sub3_211_.aNpcSummaryDefinition_5572 = aNpcSummaryDefinition_5572
                 class64_sub3_211_.aByteArray5594 = aByteArray5594
                 class64_sub3_211_.aShortArray5576 = aShortArray5576
             }
@@ -1394,16 +1394,16 @@ class Class64_Sub3 : Class64 {
                         val is_316_: ByteArray?
                         val is_317_: ShortArray?
                         val is_318_: ShortArray?
-                        if (aClass139_5572 == null) {
+                        if (aNpcSummaryDefinition_5572 == null) {
                             `is` = aShortArray5576
                             is_316_ = aByteArray5594
                             is_317_ = aShortArray5583
                             is_318_ = aShortArray5564
                         } else {
-                            is_318_ = aClass139_5572!!.aShortArray1954
-                            `is` = aClass139_5572!!.aShortArray1953
-                            is_317_ = aClass139_5572!!.aShortArray1951
-                            is_316_ = aClass139_5572!!.aByteArray1948
+                            is_318_ = aNpcSummaryDefinition_5572!!.aShortArray1954
+                            `is` = aNpcSummaryDefinition_5572!!.aShortArray1953
+                            is_317_ = aNpcSummaryDefinition_5572!!.aShortArray1951
+                            is_316_ = aNpcSummaryDefinition_5572!!.aByteArray1948
                         }
                         val f = aHa_Sub2_5598.aFloatArray7825[0]
                         val f_319_ = aHa_Sub2_5598.aFloatArray7825[1]
@@ -1499,16 +1499,16 @@ class Class64_Sub3 : Class64 {
                     val is_338_: ShortArray?
                     val is_339_: ShortArray?
                     val is_340_: ShortArray?
-                    if (aClass139_5572 == null) {
+                    if (aNpcSummaryDefinition_5572 == null) {
                         is_340_ = aShortArray5564
                         is_338_ = aShortArray5583
                         `is` = aByteArray5594
                         is_339_ = aShortArray5576
                     } else {
-                        `is` = aClass139_5572!!.aByteArray1948
-                        is_338_ = aClass139_5572!!.aShortArray1951
-                        is_339_ = aClass139_5572!!.aShortArray1953
-                        is_340_ = aClass139_5572!!.aShortArray1954
+                        `is` = aNpcSummaryDefinition_5572!!.aByteArray1948
+                        is_338_ = aNpcSummaryDefinition_5572!!.aShortArray1951
+                        is_339_ = aNpcSummaryDefinition_5572!!.aShortArray1953
+                        is_340_ = aNpcSummaryDefinition_5572!!.aShortArray1954
                     }
                     val f = 3.0f / aShort5645.toFloat()
                     class348_sub49_sub1.anInt7197 = i_298_.toInt()
@@ -2344,12 +2344,12 @@ class Class64_Sub3 : Class64 {
     public override fun s(i: Int) {
         anInt5648 = i
         anInt5597++
-        if (aClass139_5572 != null && (0x10000 and anInt5648) == 0) {
-            aShortArray5576 = aClass139_5572!!.aShortArray1953
-            aByteArray5594 = aClass139_5572!!.aByteArray1948
-            aShortArray5564 = aClass139_5572!!.aShortArray1954
-            aShortArray5583 = aClass139_5572!!.aShortArray1951
-            aClass139_5572 = null
+        if (aNpcSummaryDefinition_5572 != null && (0x10000 and anInt5648) == 0) {
+            aShortArray5576 = aNpcSummaryDefinition_5572!!.aShortArray1953
+            aByteArray5594 = aNpcSummaryDefinition_5572!!.aByteArray1948
+            aShortArray5564 = aNpcSummaryDefinition_5572!!.aShortArray1954
+            aShortArray5583 = aNpcSummaryDefinition_5572!!.aShortArray1951
+            aNpcSummaryDefinition_5572 = null
         }
         aBoolean5555 = true
         method691((-62).toByte())

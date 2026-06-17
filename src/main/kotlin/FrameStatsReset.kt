@@ -1416,7 +1416,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class333.anInt4149 = 0
             Client.anInt5173 = 0
             Class28.anInt4996 = 0
-            Class139.anInt1955 = 0
+            NpcSummaryDefinition.anInt1955 = 0
             Class234.anInt3048 = 0
             Class278.anInt3580 = 0
             Class352.anInt4330 = 0
@@ -2613,7 +2613,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7996 = 0
             Class199.anInt2630 = 0
             Class348_Sub42_Sub18.anInt9686 = 0
-            Class139.anInt1950 = 0
+            NpcSummaryDefinition.anInt1950 = 0
             Class65.anInt1139 = 0
             Class348_Sub47.anInt7123 = 0
             MapLabelMenuEntry.anInt5789 = 0
