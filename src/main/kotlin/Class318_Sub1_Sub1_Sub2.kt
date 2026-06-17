@@ -268,7 +268,7 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
         fun method2403(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int) {
             anInt9977++
             if (i_10_ != 19206) method2402(-3, 46.toByte())
-            val class302s = Class348_Sub27.aClass302Array6897!!
+            val class302s = Class348_Sub27.aMinimapPositionStateArray6897s!!
             for (i_13_ in class302s.indices) {
                 val class302 = class302s[i_13_]
                 if (class302 != null && class302.anInt3840 == 2) {

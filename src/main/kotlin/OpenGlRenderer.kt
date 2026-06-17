@@ -3693,7 +3693,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         if (class318_sub1_sub3_sub3 is Player) {
                             if (i_322_ >= 0) {
                                 var i_340_ = 0
-                                val class302s = Class348_Sub27.aClass302Array6897!!
+                                val class302s = Class348_Sub27.aMinimapPositionStateArray6897s!!
                                 var i_341_ = 0
                                 while ((i_341_ < class302s.size)) {
                                     val class302 = class302s[i_341_]
@@ -3709,7 +3709,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             }
                         } else {
                             var i_342_ = 0
-                            val class302s = Class348_Sub27.aClass302Array6897!!
+                            val class302s = Class348_Sub27.aMinimapPositionStateArray6897s!!
                             var i_343_ = 0
                             while (class302s.size > i_343_) {
                                 val class302 = class302s[i_343_]

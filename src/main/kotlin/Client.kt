@@ -1713,7 +1713,7 @@ class Client : GameAppletFrame() {
                         } else method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
                     } else if (WorldMapRenderer.anInt4674 != 10) {
                         if (WorldMapRenderer.anInt4674 == 13) method3511(false, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aRenderer6654)
-                    } else Class302.method2284((-43).toByte(), l)
+                    } else MinimapPositionState.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)
             if (NativeRenderer.anInt8045 == 3) {
@@ -2627,8 +2627,8 @@ class Client : GameAppletFrame() {
                     }
                 }
             }
-            for (i_117_ in Class348_Sub27.aClass302Array6897!!.indices) {
-                val class302 = Class348_Sub27.aClass302Array6897!![i_117_]
+            for (i_117_ in Class348_Sub27.aMinimapPositionStateArray6897s!!.indices) {
+                val class302 = Class348_Sub27.aMinimapPositionStateArray6897s!![i_117_]
                 if (class302 != null) {
                     if (class302.anInt3840 == 1) {
                         val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as Class348_Sub22?)

@@ -123,8 +123,8 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             Class312.anInt3931 = 0
             Class83.anInt1447 = Class312.anInt3931
             var i_3_ = 0
-            while ((i_3_ < Class348_Sub27.aClass302Array6897!!.size)) {
-                Class348_Sub27.aClass302Array6897!![i_3_] = null
+            while ((i_3_ < Class348_Sub27.aMinimapPositionStateArray6897s!!.size)) {
+                Class348_Sub27.aMinimapPositionStateArray6897s!![i_3_] = null
                 i_3_++
             }
             Class348_Sub42.method3163((-114).toByte())

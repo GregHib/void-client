@@ -165,7 +165,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class5_Sub1.anInt8337 = 0
             Class348_Sub29.anInt6910 = 0
             Class339.anInt4203 = 0
-            Class302.anInt3836 = 0
+            MinimapPositionState.anInt3836 = 0
             Class64_Sub3.anInt5562 = 0
             Class348_Sub41.anInt7047 = 0
             LoadingScreenState.anInt2628 = 0
@@ -2413,7 +2413,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub2.anInt8729 = 0
             OpenGlRenderer.anInt7685 = 0
             Class348_Sub16_Sub2.anInt8875 = 0
-            Class302.anInt3841 = 0
+            MinimapPositionState.anInt3841 = 0
             Class34.anInt467 = 0
             Class348_Sub49.anInt7202 = 0
             OpenGlRenderer.anInt7547 = 0
@@ -4103,8 +4103,8 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SizeBoundedSoftCache.aBoolean2329 = true
             method2480(i.inv())
             var j = 0
-            while (Class348_Sub27.aClass302Array6897!!.size > j) {
-                Class348_Sub27.aClass302Array6897!![j] = null
+            while (Class348_Sub27.aMinimapPositionStateArray6897s!!.size > j) {
+                Class348_Sub27.aMinimapPositionStateArray6897s!![j] = null
                 j++
             }
 

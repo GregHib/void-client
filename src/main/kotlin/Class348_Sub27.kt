@@ -21,7 +21,7 @@ class Class348_Sub27 : Class348() {
 
     companion object {
         @JvmField
-        var aClass302Array6897: Array<Class302?>? = arrayOfNulls<Class302>(8)
+        var aMinimapPositionStateArray6897s: Array<MinimapPositionState?>? = arrayOfNulls<MinimapPositionState>(8)
         @JvmField
         var aFloat6898: Float = 0.0f
         var anInt6901: Int = 0
@@ -37,12 +37,12 @@ class Class348_Sub27 : Class348() {
 
         @JvmStatic
         fun method3001(i: Int) {
-            aClass302Array6897 = null
-            if (i != 0) aClass302Array6897 = null
+            aMinimapPositionStateArray6897s = null
+            if (i != 0) aMinimapPositionStateArray6897s = null
         }
 
         fun method3002(i: Byte): Array<RectangleRegion?> {
-            if (i.toInt() != -97) aClass302Array6897 = null
+            if (i.toInt() != -97) aMinimapPositionStateArray6897s = null
             anInt6901++
             return (arrayOf<RectangleRegion?>(RandomAccessFileOnDisk.aRectangleRegion_3044, Texture2DProvider.aRectangleRegion_6321, Class324.aRectangleRegion_4062, UnderlayDefinition.aRectangleRegion_2885, Class348_Sub42_Sub5.aRectangleRegion_9530, Class348_Sub49_Sub1.aRectangleRegion_9748, Class325.aRectangleRegion_4082, GlTexture1D.aRectangleRegion_8553, ShaderProgram.aRectangleRegion_7274, Class71.aRectangleRegion_1213, Class52.aRectangleRegion_4901, Class318_Sub1_Sub2_Sub1.aRectangleRegion_10194, ArbVertexProgram.aRectangleRegion_9781, Class377.aRectangleRegion_9860))
         }

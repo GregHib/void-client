@@ -170,10 +170,10 @@ class Class348_Sub41 : Class348() {
                             player.y -= 512 * i_21_
                         }
                     }
-                    val class302s: Array<Class302?> = Class348_Sub27.Companion.aClass302Array6897!!
+                    val minimapPositionStates: Array<MinimapPositionState?> = Class348_Sub27.Companion.aMinimapPositionStateArray6897s!!
                     var i_32_ = 0
-                    while (class302s.size > i_32_) {
-                        val class302 = class302s[i_32_]
+                    while (minimapPositionStates.size > i_32_) {
+                        val class302 = minimapPositionStates[i_32_]
                         if (class302 != null) {
                             class302.anInt3832 -= i_21_ * 512
                             class302.anInt3835 -= 512 * i_20_

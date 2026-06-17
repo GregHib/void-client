@@ -353,8 +353,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         }
         if (this == LocalPlayerState.aPlayer_1907) {
             class101.method894(this.x, this.anInt6382, this.y)
-            for (i_56_ in -1 + Class348_Sub27.aClass302Array6897!!.size downTo 0) {
-                val class302 = Class348_Sub27.aClass302Array6897!![i_56_]
+            for (i_56_ in -1 + Class348_Sub27.aMinimapPositionStateArray6897s!!.size downTo 0) {
+                val class302 = Class348_Sub27.aMinimapPositionStateArray6897s!![i_56_]
                 if (class302 != null && class302.anInt3834 != -1) {
                     if (class302.anInt3840 == 1) {
                         val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? Class348_Sub22?)

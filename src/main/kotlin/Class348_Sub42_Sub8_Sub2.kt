@@ -620,48 +620,48 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_76_ = i shr 5
                 val i_77_ = 0x1f and i
                 if (i_77_ == 0) {
-                    Class348_Sub27.aClass302Array6897!![i_76_] = null
+                    Class348_Sub27.aMinimapPositionStateArray6897s!![i_76_] = null
                     Class348_Sub3.aIntRange_6584 = null
                     return true
                 }
-                val class302 = Class302()
-                class302.anInt3840 = i_77_
-                class302.anInt3831 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                if (class302.anInt3831 >= 0 && (class302.anInt3831 < CustomCursorsOptionState.aAbstractModelRendererArray5933!!.size)) {
-                    if (class302.anInt3840 == 1 || class302.anInt3840 == 10) {
-                        class302.anInt3833 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                val minimapPositionState = MinimapPositionState()
+                minimapPositionState.anInt3840 = i_77_
+                minimapPositionState.anInt3831 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                if (minimapPositionState.anInt3831 >= 0 && (minimapPositionState.anInt3831 < CustomCursorsOptionState.aAbstractModelRendererArray5933!!.size)) {
+                    if (minimapPositionState.anInt3840 == 1 || minimapPositionState.anInt3840 == 10) {
+                        minimapPositionState.anInt3833 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 += 6
-                    } else if (class302.anInt3840 >= 2 && class302.anInt3840 <= 6) {
-                        if (class302.anInt3840 == 2) {
-                            class302.anInt3832 = 256
-                            class302.anInt3835 = 256
+                    } else if (minimapPositionState.anInt3840 >= 2 && minimapPositionState.anInt3840 <= 6) {
+                        if (minimapPositionState.anInt3840 == 2) {
+                            minimapPositionState.anInt3832 = 256
+                            minimapPositionState.anInt3835 = 256
                         }
-                        if (class302.anInt3840 == 3) {
-                            class302.anInt3835 = 0
-                            class302.anInt3832 = 256
+                        if (minimapPositionState.anInt3840 == 3) {
+                            minimapPositionState.anInt3835 = 0
+                            minimapPositionState.anInt3832 = 256
                         }
-                        if (class302.anInt3840 == 4) {
-                            class302.anInt3835 = 512
-                            class302.anInt3832 = 256
+                        if (minimapPositionState.anInt3840 == 4) {
+                            minimapPositionState.anInt3835 = 512
+                            minimapPositionState.anInt3832 = 256
                         }
-                        if (class302.anInt3840 == 5) {
-                            class302.anInt3835 = 256
-                            class302.anInt3832 = 0
+                        if (minimapPositionState.anInt3840 == 5) {
+                            minimapPositionState.anInt3835 = 256
+                            minimapPositionState.anInt3832 = 0
                         }
-                        if (class302.anInt3840 == 6) {
-                            class302.anInt3835 = 256
-                            class302.anInt3832 = 512
+                        if (minimapPositionState.anInt3840 == 6) {
+                            minimapPositionState.anInt3835 = 256
+                            minimapPositionState.anInt3832 = 512
                         }
-                        class302.anInt3840 = 2
-                        class302.anInt3838 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                        class302.anInt3835 += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) + -ArbVertexProgram.regionTileX shl 9)
-                        class302.anInt3832 += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) - Class90.regionTileY shl 9)
-                        class302.anInt3839 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) shl 2
-                        class302.anInt3837 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                        minimapPositionState.anInt3840 = 2
+                        minimapPositionState.anInt3838 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                        minimapPositionState.anInt3835 += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) + -ArbVertexProgram.regionTileX shl 9)
+                        minimapPositionState.anInt3832 += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) - Class90.regionTileY shl 9)
+                        minimapPositionState.anInt3839 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) shl 2
+                        minimapPositionState.anInt3837 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     }
-                    class302.anInt3834 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    if (class302.anInt3834 == 65535) class302.anInt3834 = -1
-                    Class348_Sub27.aClass302Array6897!![i_76_] = class302
+                    minimapPositionState.anInt3834 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    if (minimapPositionState.anInt3834 == 65535) minimapPositionState.anInt3834 = -1
+                    Class348_Sub27.aMinimapPositionStateArray6897s!![i_76_] = minimapPositionState
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true

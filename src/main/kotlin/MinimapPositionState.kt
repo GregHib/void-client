@@ -11,7 +11,7 @@ import Class88.Companion.method842
 /* Class302 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class302 {
+class MinimapPositionState {
     @JvmField
     var anInt3831: Int = 0
     @JvmField

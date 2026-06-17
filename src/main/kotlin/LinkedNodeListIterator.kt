@@ -257,7 +257,7 @@ class LinkedNodeListIterator {
                                 } else HeadIconRenderer.method1211(i_1_, (Class348_Sub12.aAbstractModelRendererArray6742!![6]), i, class46, var_aa, i_28_, i_2_ + -22958, i_27_)
                             }
                         }
-                        val class302s = Class348_Sub27.aClass302Array6897
+                        val class302s = Class348_Sub27.aMinimapPositionStateArray6897s
                         var i_33_ = 0
                         while ((i_33_ < class302s!!.size)) {
                             val class302 = class302s[i_33_]
