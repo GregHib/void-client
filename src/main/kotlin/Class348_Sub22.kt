@@ -24,7 +24,7 @@ class Class348_Sub22 internal constructor(@JvmField var aNpc_6859: Npc?) : Class
             anInt6861++
             var i_2_ = 0
             if (class45.method421(false, anInt6862)) i_2_++
-            if (class45.method421(false, Class106.anInt1639)) i_2_++
+            if (class45.method421(false, DualMaterialContainer.anInt1639)) i_2_++
             if (class45.method421(false, Class373_Sub2.anInt7429)) i_2_++
             if (class45.method421(false, Renderer.anInt4562)) i_2_++
             if (class45.method421(false, Class82.anInt1435)) i_2_++

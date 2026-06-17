@@ -82,17 +82,17 @@ object Class164 {
             if (i_2_ != 400) return i_2_ / 4
             Class348_Sub31.anInt6924 = Class286_Sub7.aClass45_6277!!.method389(77)
             Class108.anInt1663 = Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method389(i + 28561)
-            Class106.method1001(Class286_Sub7.aClass45_6277!!, 0)
+            DualMaterialContainer.method1001(Class286_Sub7.aClass45_6277!!, 0)
             val i_3_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(i xor 0x11ae)
             Class186_Sub1.aClass111_5813 = Class111(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub40_Sub17_Sub1.aClass45_10426)
             var `is` = Class186_Sub1.aClass111_5813!!.method1046(i_3_, 0)
             if (`is`!!.size == 0) `is` = Class186_Sub1.aClass111_5813!!.method1046(0, 0)
-            val class106 = Class106(Class286_Sub7.aClass45_6277, SoftwareSpriteRaster.aClass45_1627)
+            val dualMaterialContainer = DualMaterialContainer(Class286_Sub7.aClass45_6277, SoftwareSpriteRaster.aClass45_1627)
             if (`is`!!.size > 0) {
                 Class182.anInterface16Array2447 = arrayOfNulls<Interface16>(`is`.size)
                 var i_4_ = 0
                 while ((Class182.anInterface16Array2447!!.size > i_4_)) {
-                    Class182.anInterface16Array2447!![i_4_] = Class195(Class186_Sub1.aClass111_5813!!.method1043(`is`[i_4_], 102.toByte()), class106)
+                    Class182.anInterface16Array2447!![i_4_] = Class195(Class186_Sub1.aClass111_5813!!.method1043(`is`[i_4_], 102.toByte()), dualMaterialContainer)
                     i_4_++
                 }
             }

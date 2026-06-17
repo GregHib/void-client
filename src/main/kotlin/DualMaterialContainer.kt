@@ -1,7 +1,7 @@
 /* Class106 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class106 internal constructor(class45: Class45?, class45_0_: Class45?) {
+class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: Class45?) {
     private var aClass339_1633: Class339? = null
     private val aClass45_1637: Class45?
     private val aClass45_1641: Class45?

@@ -171,7 +171,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
         fun method2159(i: Byte, class45: Class45) {
             Class348_Sub22.anInt6862 = class45.method417("hitmarks", 0)
             anInt6258++
-            Class106.anInt1639 = class45.method417("hitbar_default", 0)
+            DualMaterialContainer.anInt1639 = class45.method417("hitbar_default", 0)
             Class373_Sub2.anInt7429 = class45.method417("timerbar_default", 0)
             Renderer.anInt4562 = class45.method417("headicons_pk", 0)
             Class82.anInt1435 = class45.method417("headicons_prayer", 0)

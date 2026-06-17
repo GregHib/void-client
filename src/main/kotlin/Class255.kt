@@ -256,7 +256,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, Class106.anInt1639, 0)
+                class207s = Class207.method1519(class45, DualMaterialContainer.anInt1639, 0)
                 Class348_Sub45.aAbstractModelRendererArray7107 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
                 run {
                     var i = 0

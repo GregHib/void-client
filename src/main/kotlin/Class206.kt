@@ -164,8 +164,8 @@ class Class206 internal constructor(var_ha_Sub2: OpenGlRenderer) : Interface11 {
         anInt4873 = -1
         check(var_ha_Sub2.aBoolean7820) { "" }
         aHa_Sub2_4883 = var_ha_Sub2
-        glGenFramebuffersEXT(1, Class106.anIntArray1635, 0)
-        anInt4891 = Class106.anIntArray1635!![0]
+        glGenFramebuffersEXT(1, DualMaterialContainer.anIntArray1635, 0)
+        anInt4891 = DualMaterialContainer.anIntArray1635!![0]
     }
 
     companion object {

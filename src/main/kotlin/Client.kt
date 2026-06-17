@@ -12,7 +12,7 @@ import ProjectionCameraTransform.Companion.method938
 import MinimapDrawController.method948
 import MinimapDrawController.method949
 import SoftwareSpriteRaster.Companion.method953
-import Class106.Companion.method999
+import DualMaterialContainer.Companion.method999
 import Class107.Companion.method1004
 import Class108.method1013
 import Class11.method221
@@ -2413,14 +2413,14 @@ class Client : GameAppletFrame() {
                                     }
                                     class46.anInt725 = Class287.anInt3695
                                 }
-                                if (class46.anObjectArray751 != null && (Class106.anInt1631 > class46.anInt723)) {
-                                    if (class46.anIntArray771 == null || (Class106.anInt1631 - class46.anInt723) > 32) {
+                                if (class46.anObjectArray751 != null && (DualMaterialContainer.anInt1631 > class46.anInt723)) {
+                                    if (class46.anIntArray771 == null || (DualMaterialContainer.anInt1631 - class46.anInt723) > 32) {
                                         val class348_sub36 = Class348_Sub36()
                                         class348_sub36.aClass46_6989 = class46
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray751
                                         Class348_Sub1_Sub2.aClass262_8810!!.method1999(class348_sub36, -20180)
                                     } else {
-                                        while_227_@ for (i_83_ in class46.anInt723..<Class106.anInt1631) {
+                                        while_227_@ for (i_83_ in class46.anInt723..<DualMaterialContainer.anInt1631) {
                                             val i_84_ = (Class199.anIntArray2633!![i_83_ and 0x1f])
                                             for (i_85_ in (class46.anIntArray771!!).indices) {
                                                 if ((class46.anIntArray771!![i_85_]) == i_84_) {
@@ -2433,7 +2433,7 @@ class Client : GameAppletFrame() {
                                             }
                                         }
                                     }
-                                    class46.anInt723 = Class106.anInt1631
+                                    class46.anInt723 = DualMaterialContainer.anInt1631
                                 }
                                 if (class46.anObjectArray671 != null && (Class326.anInt4086 > class46.anInt715)) {
                                     if (class46.anIntArray731 == null || (Class326.anInt4086 - class46.anInt715) > 32) {

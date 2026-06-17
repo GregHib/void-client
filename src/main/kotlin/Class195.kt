@@ -3,7 +3,7 @@ import Class62.method599
 /* Class195 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class195 internal constructor(class287: Class287?, class106: Class106?) : Interface16 {
+class Class195 internal constructor(class287: Class287?, dualMaterialContainer: DualMaterialContainer?) : Interface16 {
     private val aClass287_5006: Class287?
     private var aRenderer5010: Renderer? = null
     private var aBoolean5011 = false
@@ -81,11 +81,11 @@ class Class195 internal constructor(class287: Class287?, class106: Class106?) : 
             anInterface1Array5012 = arrayOfNulls<Interface1>((aClass287_5006!!.anInterface12Array3688).size)
             var i = 0
             while ((i < anInterface1Array5012.size)) {
-                anInterface1Array5012[i] = class106!!.method1000(true, (aClass287_5006.anInterface12Array3688[i]))
+                anInterface1Array5012[i] = dualMaterialContainer!!.method1000(true, (aClass287_5006.anInterface12Array3688[i]))
                 i++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qt.<init>(" + (if (class287 != null) "{...}" else "null") + ',' + (if (class106 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qt.<init>(" + (if (class287 != null) "{...}" else "null") + ',' + (if (dualMaterialContainer != null) "{...}" else "null") + ')'))
         }
     }
 
