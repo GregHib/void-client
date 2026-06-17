@@ -21,11 +21,11 @@ open class Class318 {
         @JvmField
         var aDoublyLinkedNodeListArray3974s: Array<DoublyLinkedNodeList?>? = arrayOfNulls<DoublyLinkedNodeList>(5)
         var anInt3975: Int = 0
-        var aClass304_3977: Class304?
+        var aTextureFormatInfo_3977: TextureFormatInfo?
 
         @JvmStatic
         fun method2374(i: Byte) {
-            aClass304_3977 = null
+            aTextureFormatInfo_3977 = null
             val i_0_ = 108 / ((i - -83) / 41)
             aDoublyLinkedNodeListArray3974s = null
         }
@@ -43,7 +43,7 @@ open class Class318 {
                 aDoublyLinkedNodeListArray3974s!![i] = DoublyLinkedNodeList()
                 i++
             }
-            aClass304_3977 = Class304(1)
+            aTextureFormatInfo_3977 = TextureFormatInfo(1)
         }
     }
 }

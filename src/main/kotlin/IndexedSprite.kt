@@ -7,7 +7,7 @@ class IndexedSprite : Sprite {
 
     constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_16_: Int, `is`: ByteArray?) {
         try {
-            this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, Class348_Sub40_Sub38.aClass304_9471, 2, false, i_16_)
+            this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, Class348_Sub40_Sub38.aTextureFormatInfo_9471, 2, false, i_16_)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))

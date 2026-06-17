@@ -12,7 +12,7 @@ interface Interface18_Impl3 : Interface18 {
 
     fun method69(bool: Boolean): Int
 
-    fun method70(i: Int, i_12_: Int, i_13_: Byte, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, `is`: ByteArray?, class304: Class304?)
+    fun method70(i: Int, i_12_: Int, i_13_: Byte, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?)
 
     fun method71(i: Byte, f: Float): Float
 

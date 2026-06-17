@@ -58,15 +58,15 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
         }
 
         @JvmStatic
-        fun method3055(i: Int, class304: Class304?): Int {
+        fun method3055(i: Int, textureFormatInfo: TextureFormatInfo?): Int {
             anInt9106++
             if (i < 94) method3054(false, -98, -116)
-            if (class304 != Class348_Sub45.aClass304_7103) {
-                if (GroundItemRenderState.aClass304_1662 == class304) return 6408
-                if (class304 == Class348_Sub40_Sub38.Companion.aClass304_9471) return 6406
-                if (Class348_Sub40_Sub22.Companion.aClass304_9303 != class304) {
-                    if (class304 == SpriteSheetCache.aClass304_2571) return 6410
-                    if (class304 == Class318.aClass304_3977) return 6145
+            if (textureFormatInfo != Class348_Sub45.aTextureFormatInfo_7103) {
+                if (GroundItemRenderState.aTextureFormatInfo_1662 == textureFormatInfo) return 6408
+                if (textureFormatInfo == Class348_Sub40_Sub38.Companion.aTextureFormatInfo_9471) return 6406
+                if (Class348_Sub40_Sub22.Companion.aTextureFormatInfo_9303 != textureFormatInfo) {
+                    if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 6410
+                    if (textureFormatInfo == Class318.aTextureFormatInfo_3977) return 6145
                 } else return 6409
             } else return 6407
             throw IllegalStateException()

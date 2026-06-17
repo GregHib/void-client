@@ -2,7 +2,7 @@ import jagdx.IDirect3DBaseTexture
 import jagdx.IDirect3DCubeTexture
 import jagdx.ue.a
 
-class Class310_Sub1 internal constructor(class378: Class378, private val anInt6329: Int, bool: Boolean, `is`: Array<IntArray?>?) : Class310(class378, GroundItemRenderState.aClass304_1662!!, Class68.aClass68_1183!!, bool && class378.aBoolean9802, 6 * anInt6329 * anInt6329), Interface18_Impl2 {
+class Class310_Sub1 internal constructor(class378: Class378, private val anInt6329: Int, bool: Boolean, `is`: Array<IntArray?>?) : Class310(class378, GroundItemRenderState.aTextureFormatInfo_1662!!, Class68.aClass68_1183!!, bool && class378.aBoolean9802, 6 * anInt6329 * anInt6329), Interface18_Impl2 {
     private val anIDirect3DCubeTexture6330: IDirect3DCubeTexture
 
     override fun method63(i: Byte) {

@@ -1,6 +1,6 @@
 import jagdx.IDirect3DBaseTexture
 
-abstract class Class310 internal constructor(var aClass378_3893: Class378, var aClass304_3896: Class304, var aClass68_3895: Class68, var aBoolean3892: Boolean, i: Int) {
+abstract class Class310 internal constructor(var aClass378_3893: Class378, var aTextureFormatInfo_3896: TextureFormatInfo, var aClass68_3895: Class68, var aBoolean3892: Boolean, i: Int) {
     var aClass209_3894: UnusedToStringStub? = Class71.aClass209_1212
 
     open fun method64(class209: UnusedToStringStub?, i: Int) {

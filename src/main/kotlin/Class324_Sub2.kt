@@ -41,11 +41,11 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRender
                     }
                 }
             }
-            if (!aHa_Sub3_6494.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aClass304_9471, 126.toByte())) {
+            if (!aHa_Sub3_6494.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aTextureFormatInfo_9471, 126.toByte())) {
                 val is_19_ = IntArray(`is`.size)
                 for (i_20_ in `is`.indices) is_19_[i_20_] = `is`[i_20_].toInt() shl 24
                 anInterface18_Impl3_6492 = aHa_Sub3_6494.method3839(i_5_, i_5_, -15137, false, is_19_)
-            } else anInterface18_Impl3_6492 = aHa_Sub3_6494.method3944(`is`, i_5_, (Class348_Sub40_Sub38.aClass304_9471), 2, false, i_5_)
+            } else anInterface18_Impl3_6492 = aHa_Sub3_6494.method3944(`is`, i_5_, (Class348_Sub40_Sub38.aTextureFormatInfo_9471), 2, false, i_5_)
             aBoolean6493 = true
         } else {
             val `is` = IntArray(i_5_ * i_5_)

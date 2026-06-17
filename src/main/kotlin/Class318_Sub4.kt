@@ -39,7 +39,7 @@ class Class318_Sub4 : Class318() {
             try {
                 if (i_0_ >= -32) method2502(null, -18)
                 anInt6412++
-                if (var_ha_Sub3!!.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aClass304_9471, 125.toByte())) {
+                if (var_ha_Sub3!!.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aTextureFormatInfo_9471, 125.toByte())) {
                     val is_3_ = ByteArray(i * i_2_)
                     var i_4_ = 0
                     while (i > i_4_) {

@@ -169,7 +169,7 @@ class GlTexture3D : GlTexture {
                 DoublyLinkedNodeList.method1879(true)
                 Class9.aRenderer171!!.ra(-1, 1583160, 40, 127)
                 Class348_Sub49_Sub1.method3398(true, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)
-                if (Class348_Sub40_Sub5.aBoolean9121) Class304.method2290()
+                if (Class348_Sub40_Sub5.aBoolean9121) TextureFormatInfo.method2290()
                 Class9.aRenderer171!!.pa()
                 DoublyLinkedNodeList.method1879(false)
             }
@@ -180,7 +180,7 @@ class GlTexture3D : GlTexture {
                 for (i_47_ in Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.indices) Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i_47_]!!.method2209()
             }
             if (Class348_Sub40_Sub5.aBoolean9121) {
-                Class304.method2290()
+                TextureFormatInfo.method2290()
                 for (i_48_ in 0..<MapAreaDefinition.anInt2524) OverlayColorTable.aBooleanArrayArrayArray1751!![i_48_] = Class5_Sub2.aBooleanArrayArrayArray8361!![i_48_]!!
                 if (Npc.anInt10503 == 2) {
                     if (HitsplatDefinition.aLongArray2013!![0] < HitsplatDefinition.aLongArray2013!![1]) {

@@ -1818,7 +1818,7 @@ object Class66 {
                 return
             }
             if (i == 6148) {
-                anIntArray1149!![anInt1173++] = if (Class304.aBoolean3847) 1 else 0
+                anIntArray1149!![anInt1173++] = if (TextureFormatInfo.aBoolean3847) 1 else 0
                 return
             }
         } else if (i < 6300) {

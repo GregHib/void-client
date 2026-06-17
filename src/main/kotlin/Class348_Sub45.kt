@@ -16,7 +16,7 @@ abstract class Class348_Sub45 : Class348() {
         @JvmField
         var anInt7102: Int = 1400
         @JvmField
-        var aClass304_7103: Class304? = Class304(3)
+        var aTextureFormatInfo_7103: TextureFormatInfo? = TextureFormatInfo(3)
         @JvmField
         var anInt7104: Int = 0
         @JvmField
@@ -41,7 +41,7 @@ abstract class Class348_Sub45 : Class348() {
             Class69.anInt1200 = 0
             DetailLevelOptionState.anInt6115 = 0
             LoadingBarRenderer.aClass338Array5060 = arrayOfNulls<Class338>(1000)
-            if (i > -113) aClass304_7103 = null
+            if (i > -113) aTextureFormatInfo_7103 = null
             Class348_Sub42_Sub10.anInt9577 = 0
             Class348_Sub42_Sub19.aClass338Array9700 = arrayOfNulls<Class338>(500)
             Class348_Sub40_Sub23.aBoolean9307 = Class9.aRenderer171 !is oa
@@ -59,7 +59,7 @@ abstract class Class348_Sub45 : Class348() {
             aIntRange_7105 = null
             aClass361Array7108 = null
             aAbstractModelRendererArray7107 = null
-            aClass304_7103 = null
+            aTextureFormatInfo_7103 = null
         }
     }
 }

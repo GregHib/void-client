@@ -747,7 +747,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3842(bool: Boolean)
 
-    abstract fun method3843(i: Int, i_66_: Int, i_67_: Int, i_68_: Int, `is`: ByteArray?, class304: Class304?, i_69_: Int, bool: Boolean): Interface18_Impl3?
+    abstract fun method3843(i: Int, i_66_: Int, i_67_: Int, i_68_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_69_: Int, bool: Boolean): Interface18_Impl3?
 
     override fun X(i: Int) {
         var i = i
@@ -964,7 +964,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         return aClass101_Sub2_8084
     }
 
-    abstract fun method3855(class304: Class304?, i: Int, i_92_: Int, fs: FloatArray?, bool: Boolean, i_93_: Int, i_94_: Int, i_95_: Int): Interface18_Impl3?
+    abstract fun method3855(textureFormatInfo: TextureFormatInfo?, i: Int, i_92_: Int, fs: FloatArray?, bool: Boolean, i_93_: Int, i_94_: Int, i_95_: Int): Interface18_Impl3?
 
     private fun method3856(i: Byte) {
         anInt8044++
@@ -1006,7 +1006,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    abstract fun method3861(i: Int, i_99_: Byte, i_100_: Int, class68: Class68?, class304: Class304?): Interface18_Impl3?
+    abstract fun method3861(i: Int, i_99_: Byte, i_100_: Int, class68: Class68?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3?
 
     abstract fun method3862(i: Int, modelBatchBase: ModelBatchBase?)
 
@@ -1108,7 +1108,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3871(cameraNodeList: CameraNodeList?, i: Int)
 
-    abstract fun method3872(i: Int, i_117_: Int, class304: Class304?, bool: Boolean, i_118_: Int, `is`: ByteArray?): Interface18_Impl1?
+    abstract fun method3872(i: Int, i_117_: Int, textureFormatInfo: TextureFormatInfo?, bool: Boolean, i_118_: Int, `is`: ByteArray?): Interface18_Impl1?
 
     override fun KA(i: Int, i_119_: Int, i_120_: Int, i_121_: Int) {
         anInt7972++
@@ -1315,7 +1315,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8162 = i
     }
 
-    abstract fun method3880(class68: Class68?, class304: Class304?, i: Byte): Boolean
+    abstract fun method3880(class68: Class68?, textureFormatInfo: TextureFormatInfo?, i: Byte): Boolean
 
     abstract fun method3881(`object`: Any?, i: Byte, canvas: Canvas?)
 
@@ -1425,13 +1425,13 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8072++
     }
 
-    fun method3891(fs: FloatArray?, i: Int, i_168_: Int, class304: Class304?, i_169_: Int, bool: Boolean): Interface18_Impl3? {
+    fun method3891(fs: FloatArray?, i: Int, i_168_: Int, textureFormatInfo: TextureFormatInfo?, i_169_: Int, bool: Boolean): Interface18_Impl3? {
         try {
             val i_170_ = 97 / ((i_169_ - -38) / 57)
             anInt8052++
-            return method3855(class304, i, 0, fs, bool, 0, 2, i_168_)
+            return method3855(textureFormatInfo, i, 0, fs, bool, 0, 2, i_168_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.LI(" + (if (fs != null) "{...}" else "null") + ',' + i + ',' + i_168_ + ',' + (if (class304 != null) "{...}" else "null") + ',' + i_169_ + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.LI(" + (if (fs != null) "{...}" else "null") + ',' + i + ',' + i_168_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_169_ + ',' + bool + ')'))
         }
     }
 
@@ -2168,7 +2168,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             i_263_++
         }
         this.aClass348_Sub1Array8132 = arrayOfNulls<Class348_Sub1>(-2 + this.anInt8138)
-        this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, Class68.aClass68_1183, GroundItemRenderState.aClass304_1662)
+        this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, Class68.aClass68_1183, GroundItemRenderState.aTextureFormatInfo_1662)
         method3651(ArbVertexProgram(262144))
         this.aModelBatchBase_8204 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078)))))
         this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076)))))
@@ -2207,7 +2207,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.method3673()
     }
 
-    abstract fun method3931(bool: Boolean, class304: Class304?, class68: Class68?): Boolean
+    abstract fun method3931(bool: Boolean, textureFormatInfo: TextureFormatInfo?, class68: Class68?): Boolean
 
     fun method3932(i: Byte) {
         if (this.aSingletonMarker_8184 != ModelDefinitionCache.aSingletonMarker_2864) {
@@ -2364,13 +2364,13 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    fun method3944(`is`: ByteArray?, i: Int, class304: Class304?, i_287_: Int, bool: Boolean, i_288_: Int): Interface18_Impl3? {
+    fun method3944(`is`: ByteArray?, i: Int, textureFormatInfo: TextureFormatInfo?, i_287_: Int, bool: Boolean, i_288_: Int): Interface18_Impl3? {
         try {
             if (i_287_ != 2) return null
             anInt7929++
-            return method3843(i_288_, 0, i, 0, `is`, class304, i_287_ xor 0x22, bool)
+            return method3843(i_288_, 0, i, 0, `is`, textureFormatInfo, i_287_ xor 0x22, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.MG(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class304 != null) "{...}" else "null") + ',' + i_287_ + ',' + bool + ',' + i_288_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.MG(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_287_ + ',' + bool + ',' + i_288_ + ')'))
         }
     }
 

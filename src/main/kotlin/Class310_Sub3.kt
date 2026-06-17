@@ -3,7 +3,7 @@ import jagdx.IDirect3DBaseTexture
 import jagdx.IDirect3DVolumeTexture
 import jagdx.ue.a
 
-class Class310_Sub3 internal constructor(class378: Class378, class304: Class304, private var anInt6338: Int, private val anInt6339: Int, private val anInt6337: Int, `is`: ByteArray?) : Class310(class378, class304, Class68.aClass68_1183!!, false, anInt6337 * anInt6339 * anInt6338), Interface18_Impl1 {
+class Class310_Sub3 internal constructor(class378: Class378, textureFormatInfo: TextureFormatInfo, private var anInt6338: Int, private val anInt6339: Int, private val anInt6337: Int, `is`: ByteArray?) : Class310(class378, textureFormatInfo, Class68.aClass68_1183!!, false, anInt6337 * anInt6339 * anInt6338), Interface18_Impl1 {
     private val anIDirect3DVolumeTexture6336: IDirect3DVolumeTexture
 
     override fun method63(i: Byte) {
@@ -21,11 +21,11 @@ class Class310_Sub3 internal constructor(class378: Class378, class304: Class304,
     }
 
     init {
-        anIDirect3DVolumeTexture6336 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6338, anInt6339, anInt6337, 1, 0, method3958(22, this.aClass68_3895, class304), 1))
+        anIDirect3DVolumeTexture6336 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6338, anInt6339, anInt6337, 1, 0, method3958(22, this.aClass68_3895, textureFormatInfo), 1))
         val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
         val i_2_ = anIDirect3DVolumeTexture6336.LockBox(0, 0, 0, 0, anInt6338, anInt6339, anInt6337, 0, pixelbuffer)
         if (a(i_2_, false)) {
-            val i_3_ = (this.aClass304_3896.anInt3850 * anInt6338)
+            val i_3_ = (this.aTextureFormatInfo_3896.anInt3850 * anInt6338)
             val i_4_ = i_3_ * anInt6339
             val i_5_ = pixelbuffer!!.slicePitch
             if (i_5_ == i_4_) pixelbuffer.a(`is`, 0, 0, anInt6337 * (i_3_ * anInt6339))

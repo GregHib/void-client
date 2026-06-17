@@ -76,7 +76,7 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
         @JvmField
         var anInt9469: Int = 0
         @JvmField
-        var aClass304_9471: Class304? = Class304(1)
+        var aTextureFormatInfo_9471: TextureFormatInfo? = TextureFormatInfo(1)
         @JvmField
         var anInt9472: Int = 0
         @JvmField
@@ -97,7 +97,7 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
         fun method3149(i: Int) {
             aClass74_9475 = null
             anIntArray9480 = null
-            aClass304_9471 = null
+            aTextureFormatInfo_9471 = null
             aConfigFlagUtil_9477 = null
             aNodeDeque_9478 = null
             if (i < 32) method3149(58)

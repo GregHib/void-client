@@ -119,9 +119,9 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         /* empty */
     }
 
-    override fun method3872(i: Int, i_10_: Int, class304: Class304?, bool: Boolean, i_11_: Int, `is`: ByteArray?): Interface18_Impl1? {
+    override fun method3872(i: Int, i_10_: Int, textureFormatInfo: TextureFormatInfo?, bool: Boolean, i_11_: Int, `is`: ByteArray?): Interface18_Impl1? {
         if (bool != true) return null
-        return Class310_Sub3(this, class304!!, i_10_, i_11_, i, `is`)
+        return Class310_Sub3(this, textureFormatInfo!!, i_10_, i_11_, i, `is`)
     }
 
     override fun method3827(i: Byte) {
@@ -263,10 +263,10 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         method3626(i_28_, i_29_)
     }
 
-    override fun method3931(bool: Boolean, class304: Class304?, class68: Class68?): Boolean {
+    override fun method3931(bool: Boolean, textureFormatInfo: TextureFormatInfo?, class68: Class68?): Boolean {
         val d3ddisplaymode = D3DDISPLAYMODE()
         if (bool != true) aBooleanArray9786 = null
-        return (a(anIDirect3D9793!!.a(anInt9799, d3ddisplaymode), !bool) && a((anIDirect3D9793!!.CheckDeviceFormat(anInt9799, anInt9807, d3ddisplaymode.Format, 0, 4, method3958(22, class68, class304))), false))
+        return (a(anIDirect3D9793!!.a(anInt9799, d3ddisplaymode), !bool) && a((anIDirect3D9793!!.CheckDeviceFormat(anInt9799, anInt9807, d3ddisplaymode.Format, 0, 4, method3958(22, class68, textureFormatInfo))), false))
     }
 
     override fun method3881(`object`: Any?, i: Byte, canvas: Canvas?) {
@@ -440,7 +440,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         this.anIDirect3DDevice9810!!.SetRenderState(34, this.anInt8144)
     }
 
-    override fun method3855(class304: Class304?, i: Int, i_40_: Int, fs: FloatArray?, bool: Boolean, i_41_: Int, i_42_: Int, i_43_: Int): Interface18_Impl3? {
+    override fun method3855(textureFormatInfo: TextureFormatInfo?, i: Int, i_40_: Int, fs: FloatArray?, bool: Boolean, i_41_: Int, i_42_: Int, i_43_: Int): Interface18_Impl3? {
         if (i_42_ != 2) aD3DLIGHT9796 = null
         return null
     }
@@ -508,9 +508,9 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i != 3) method3882(51.toByte())
     }
 
-    override fun method3843(i: Int, i_49_: Int, i_50_: Int, i_51_: Int, `is`: ByteArray?, class304: Class304?, i_52_: Int, bool: Boolean): Interface18_Impl3 {
+    override fun method3843(i: Int, i_49_: Int, i_50_: Int, i_51_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_52_: Int, bool: Boolean): Interface18_Impl3 {
         if (i_52_ != 32) anInt9785 = 94
-        return Class310_Sub2(this, class304!!, i_50_, i, bool, `is`, i_49_, i_51_)
+        return Class310_Sub2(this, textureFormatInfo!!, i_50_, i, bool, `is`, i_49_, i_51_)
     }
 
     @Synchronized
@@ -633,10 +633,10 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 11, this.anInt8175 or i_68_)
     }
 
-    override fun method3880(class68: Class68?, class304: Class304?, i: Byte): Boolean {
+    override fun method3880(class68: Class68?, textureFormatInfo: TextureFormatInfo?, i: Byte): Boolean {
         val d3ddisplaymode = D3DDISPLAYMODE()
         val i_69_ = 96 / ((i - 85) / 37)
-        return (a(anIDirect3D9793!!.a(anInt9799, d3ddisplaymode), false) && a((anIDirect3D9793!!.CheckDeviceFormat(anInt9799, anInt9807, d3ddisplaymode.Format, 0, 3, method3958(22, class68, class304))), false))
+        return (a(anIDirect3D9793!!.a(anInt9799, d3ddisplaymode), false) && a((anIDirect3D9793!!.CheckDeviceFormat(anInt9799, anInt9807, d3ddisplaymode.Format, 0, 3, method3958(22, class68, textureFormatInfo))), false))
     }
 
     override fun method3882(i: Byte) {
@@ -697,8 +697,8 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i != 1) aBoolean9801 = true
     }
 
-    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, class68: Class68?, class304: Class304?): Interface18_Impl3 {
-        return Class310_Sub2(this, class304!!, class68!!, i_74_, i)
+    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, class68: Class68?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3 {
+        return Class310_Sub2(this, textureFormatInfo!!, class68!!, i_74_, i)
     }
 
     override fun method3844(i: Int, canvas: Canvas?, `object`: Any?) {
@@ -838,14 +838,14 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         }
 
         @JvmStatic
-        fun method3958(i: Int, class68: Class68?, class304: Class304?): Int {
+        fun method3958(i: Int, class68: Class68?, textureFormatInfo: TextureFormatInfo?): Int {
             if (class68 == Class68.aClass68_1183) {
-                if (Class348_Sub45.aClass304_7103 != class304) {
-                    if (GroundItemRenderState.aClass304_1662 == class304) return 21
-                    if (Class348_Sub40_Sub38.aClass304_9471 == class304) return 28
-                    if (Class348_Sub40_Sub22.aClass304_9303 == class304) return 50
-                    if (class304 == SpriteSheetCache.aClass304_2571) return 51
-                    if (class304 == Class318.aClass304_3977) return 77
+                if (Class348_Sub45.aTextureFormatInfo_7103 != textureFormatInfo) {
+                    if (GroundItemRenderState.aTextureFormatInfo_1662 == textureFormatInfo) return 21
+                    if (Class348_Sub40_Sub38.aTextureFormatInfo_9471 == textureFormatInfo) return 28
+                    if (Class348_Sub40_Sub22.aTextureFormatInfo_9303 == textureFormatInfo) return 50
+                    if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 51
+                    if (textureFormatInfo == Class318.aTextureFormatInfo_3977) return 77
                 } else return 22
             }
             if (i != 22) anIntArray9790 = null

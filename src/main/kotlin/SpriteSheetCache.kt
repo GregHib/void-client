@@ -84,7 +84,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         var aBoxedIntHolder_2568: BoxedIntHolder? = BoxedIntHolder(0)
         var anInt2569: Int = 0
         @JvmField
-        var aClass304_2571: Class304? = Class304(2)
+        var aTextureFormatInfo_2571: TextureFormatInfo? = TextureFormatInfo(2)
 
         @JvmStatic
         fun method1428(bool: Boolean) {
@@ -136,7 +136,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
 
         @JvmStatic
         fun method1431(i: Int) {
-            aClass304_2571 = null
+            aTextureFormatInfo_2571 = null
             aBoxedIntHolder_2568 = null
             if (i != 0) aBoxedIntHolder_2568 = null
         }

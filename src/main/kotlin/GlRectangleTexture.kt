@@ -17,7 +17,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         return anInt8634
     }
 
-    internal constructor(class377: Class377?, i: Int, i_3_: Int, `is`: IntArray?, i_4_: Int, i_5_: Int) : super(class377, 34037, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, i * i_3_, false) {
+    internal constructor(class377: Class377?, i: Int, i_3_: Int, `is`: IntArray?, i_4_: Int, i_5_: Int) : super(class377, 34037, GroundItemRenderState.aTextureFormatInfo_1662, Class68.aClass68_1183, i * i_3_, false) {
         try {
             anInt8640 = i
             anInt8634 = i_3_
@@ -30,18 +30,18 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         }
     }
 
-    internal constructor(class377: Class377?, class304: Class304?, i: Int, i_6_: Int, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(class377, 34037, class304, Class68.aClass68_1183, i * i_6_, false) {
+    internal constructor(class377: Class377?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(class377, 34037, textureFormatInfo, Class68.aClass68_1183, i * i_6_, false) {
         try {
             anInt8634 = i_6_
             anInt8640 = i
             this.aClass377_5082!!.method3850((-127).toByte(), this)
             glPixelStorei(3317, 1)
             glPixelStorei(3314, i_8_)
-            glTexImage2Dub(this.anInt5093, 0, this.method228(126), i, i_6_, 0, (method3055(111, this.aClass304_5084)), 5121, `is`, i_7_)
+            glTexImage2Dub(this.anInt5093, 0, this.method228(126), i, i_6_, 0, (method3055(111, this.aTextureFormatInfo_5084)), 5121, `is`, i_7_)
             glPixelStorei(3314, 0)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tw.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("tw.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 
@@ -50,14 +50,14 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         anInt8639++
     }
 
-    internal constructor(class377: Class377?, class304: Class304?, class68: Class68?, i: Int, i_10_: Int) : super(class377, 34037, class304, class68, i_10_ * i, false) {
+    internal constructor(class377: Class377?, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i: Int, i_10_: Int) : super(class377, 34037, textureFormatInfo, class68, i_10_ * i, false) {
         try {
             anInt8634 = i_10_
             anInt8640 = i
             this.aClass377_5082!!.method3850(115.toByte(), this)
-            glTexImage2Dub(this.anInt5093, 0, this.method228(109), i, i_10_, 0, method3055(105, this.aClass304_5084), method1128(-54, this.aClass68_5088), null, 0)
+            glTexImage2Dub(this.anInt5093, 0, this.method228(109), i, i_10_, 0, method3055(105, this.aTextureFormatInfo_5084), method1128(-54, this.aClass68_5088), null, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tw.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("tw.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ')'))
         }
     }
 
@@ -80,16 +80,16 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         return f
     }
 
-    internal constructor(class377: Class377?, class304: Class304?, i: Int, i_33_: Int, fs: FloatArray?, i_34_: Int, i_35_: Int) : super(class377, 34037, class304, Class68.aClass68_1187, i_33_ * i, false) {
+    internal constructor(class377: Class377?, textureFormatInfo: TextureFormatInfo?, i: Int, i_33_: Int, fs: FloatArray?, i_34_: Int, i_35_: Int) : super(class377, 34037, textureFormatInfo, Class68.aClass68_1187, i_33_ * i, false) {
         try {
             anInt8640 = i
             anInt8634 = i_33_
             this.aClass377_5082!!.method3850((-45).toByte(), this)
             glPixelStorei(3314, i_35_)
-            glTexImage2Df(this.anInt5093, 0, this.method228(107), i, i_33_, 0, (method3055(126, this.aClass304_5084)), 5126, fs, i_34_ * 4)
+            glTexImage2Df(this.anInt5093, 0, this.method228(107), i, i_33_, 0, (method3055(126, this.aTextureFormatInfo_5084)), 5126, fs, i_34_ * 4)
             glPixelStorei(3314, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tw.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ',' + i + ',' + i_33_ + ',' + (if (fs != null) "{...}" else "null") + ',' + i_34_ + ',' + i_35_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("tw.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_33_ + ',' + (if (fs != null) "{...}" else "null") + ',' + i_34_ + ',' + i_35_ + ')'))
         }
     }
 
@@ -122,7 +122,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         if (i_36_ != 22809) anInt8634 = 115
     }
 
-    override fun method70(i: Int, i_42_: Int, i_43_: Byte, i_44_: Int, i_45_: Int, i_46_: Int, i_47_: Int, `is`: ByteArray?, class304: Class304?) {
+    override fun method70(i: Int, i_42_: Int, i_43_: Byte, i_44_: Int, i_45_: Int, i_46_: Int, i_47_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?) {
         var i_44_ = i_44_
         try {
             this.aClass377_5082!!.method3850((-39).toByte(), this)
@@ -131,11 +131,11 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
             glPixelStorei(3317, 1)
             if (i_43_ >= -4) method250(74, false, -106)
             if (i_46_ != i_44_) glPixelStorei(3314, i_44_)
-            glTexSubImage2Dub(this.anInt5093, 0, i_47_, i, i_46_, i_45_, method3055(120, class304), 5121, `is`, i_42_)
+            glTexSubImage2Dub(this.anInt5093, 0, i_47_, i, i_46_, i_45_, method3055(120, textureFormatInfo), 5121, `is`, i_42_)
             if (i_46_ != i_44_) glPixelStorei(3314, 0)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tw.T(" + i + ',' + i_42_ + ',' + i_43_ + ',' + i_44_ + ',' + i_45_ + ',' + i_46_ + ',' + i_47_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("tw.T(" + i + ',' + i_42_ + ',' + i_43_ + ',' + i_44_ + ',' + i_45_ + ',' + i_46_ + ',' + i_47_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
         }
     }
 

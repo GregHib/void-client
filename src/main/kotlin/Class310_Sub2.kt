@@ -10,7 +10,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
     var aBoolean6334: Boolean = false
     var aBoolean6335: Boolean = false
 
-    internal constructor(class378: Class378, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class378, GroundItemRenderState.aClass304_1662!!, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i_0_ * i) {
+    internal constructor(class378: Class378, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class378, GroundItemRenderState.aTextureFormatInfo_1662!!, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i_0_ * i) {
         var i_2_ = i_2_
         if (this.aClass378_3893.aBoolean9792) {
             anInt6331 = i_0_
@@ -38,7 +38,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
         }
     }
 
-    internal constructor(class378: Class378, class304: Class304, class68: Class68, i: Int, i_6_: Int) : super(class378, class304, class68, false, i_6_ * i) {
+    internal constructor(class378: Class378, textureFormatInfo: TextureFormatInfo, class68: Class68, i: Int, i_6_: Int) : super(class378, textureFormatInfo, class68, false, i_6_ * i) {
         if (this.aClass378_3893.aBoolean9792) {
             anInt6333 = i
             anInt6331 = i_6_
@@ -46,7 +46,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
             anInt6333 = Class33.method340(i, 108.toByte())
             anInt6331 = Class33.method340(i_6_, 108.toByte())
         }
-        anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(i, i_6_, 1, 0, method3958(22, this.aClass68_3895, this.aClass304_3896), 1))
+        anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(i, i_6_, 1, 0, method3958(22, this.aClass68_3895, this.aTextureFormatInfo_3896), 1))
     }
 
     override fun method64(class209: UnusedToStringStub?, i: Int) {
@@ -69,7 +69,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
     }
 
     override fun method65(i: Int, `is`: IntArray, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Byte, i_12_: Int) {
-        if (GroundItemRenderState.aClass304_1662 != this.aClass304_3896 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
+        if (GroundItemRenderState.aTextureFormatInfo_1662 != this.aTextureFormatInfo_3896 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
         if (i_11_.toInt() != 112) this.aBoolean6334 = false
         val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
         val i_13_ = anIDirect3DTexture6332.LockRect(0, i, i_9_, i_8_, i_10_, 16, pixelbuffer)
@@ -82,7 +82,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
         }
     }
 
-    internal constructor(class378: Class378, class304: Class304, i: Int, i_16_: Int, bool: Boolean, `is`: ByteArray?, i_17_: Int, i_18_: Int) : super(class378, class304, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i * i_16_) {
+    internal constructor(class378: Class378, textureFormatInfo: TextureFormatInfo, i: Int, i_16_: Int, bool: Boolean, `is`: ByteArray?, i_17_: Int, i_18_: Int) : super(class378, textureFormatInfo, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i * i_16_) {
         var i = i
         var i_18_ = i_18_
         if (this.aClass378_3893.aBoolean9792) {
@@ -92,14 +92,14 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
             anInt6333 = Class33.method340(i, 108.toByte())
             anInt6331 = Class33.method340(i_16_, 108.toByte())
         }
-        if (bool) anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 0, 1024, method3958(22, Class68.aClass68_1183, this.aClass304_3896), 1))
-        else anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 1, 0, method3958(22, Class68.aClass68_1183, this.aClass304_3896), 1))
+        if (bool) anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 0, 1024, method3958(22, Class68.aClass68_1183, this.aTextureFormatInfo_3896), 1))
+        else anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 1, 0, method3958(22, Class68.aClass68_1183, this.aTextureFormatInfo_3896), 1))
         val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
         val i_19_ = anIDirect3DTexture6332.LockRect(0, 0, 0, i, i_16_, 0, pixelbuffer)
         if (a(i_19_, false)) {
             if (0 == i_18_) i_18_ = i
-            i *= this.aClass304_3896.anInt3850
-            i_18_ *= (this.aClass304_3896.anInt3850)
+            i *= this.aTextureFormatInfo_3896.anInt3850
+            i_18_ *= (this.aTextureFormatInfo_3896.anInt3850)
             val i_20_ = pixelbuffer!!.rowPitch
             if (i != i_20_ || i != i_18_) {
                 var i_21_ = 0
@@ -118,7 +118,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
     }
 
     override fun method68(i: Int, i_22_: Int, `is`: IntArray?, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
-        if (this.aClass304_3896 != GroundItemRenderState.aClass304_1662 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
+        if (this.aTextureFormatInfo_3896 != GroundItemRenderState.aTextureFormatInfo_1662 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
         val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
         val i_28_ = anIDirect3DTexture6332.LockRect(0, i_23_, i_26_, i_25_, i_27_, 0, pixelbuffer)
         if (a(i_28_, false)) {
@@ -145,16 +145,16 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
         this.aClass378_3893.method3954(13700, this)
     }
 
-    override fun method70(i: Int, i_31_: Int, i_32_: Byte, i_33_: Int, i_34_: Int, i_35_: Int, i_36_: Int, `is`: ByteArray?, class304: Class304?) {
+    override fun method70(i: Int, i_31_: Int, i_32_: Byte, i_33_: Int, i_34_: Int, i_35_: Int, i_36_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?) {
         var i_33_ = i_33_
         var i_35_ = i_35_
-        if (this.aClass304_3896 != class304 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
+        if (this.aTextureFormatInfo_3896 != textureFormatInfo || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
         if (i_32_ < -4) {
             val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
             val i_37_ = anIDirect3DTexture6332.LockRect(0, i_36_, i, i_35_, i_34_, 0, pixelbuffer)
             if (a(i_37_, false)) {
-                i_33_ *= (this.aClass304_3896.anInt3850)
-                i_35_ *= (this.aClass304_3896.anInt3850)
+                i_33_ *= (this.aTextureFormatInfo_3896.anInt3850)
+                i_35_ *= (this.aTextureFormatInfo_3896.anInt3850)
                 val i_38_ = pixelbuffer!!.rowPitch
                 if (i_38_ == i_35_ && i_33_ == i_35_) pixelbuffer.a(`is`, i_31_, 0, i_35_ * i_34_)
                 else {

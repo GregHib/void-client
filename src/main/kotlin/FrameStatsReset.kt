@@ -1132,7 +1132,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5717 = 0
             Class373_Sub2.anInt7438 = 0
             NativeRenderer.anInt8007 = 0
-            Class304.anInt3848 = 0
+            TextureFormatInfo.anInt3848 = 0
             WaterMaterialPass.anInt6215 = 0
             MinimapFlagRenderer.anInt1798 = 0
             Class312.anInt3926 = 0
@@ -1777,7 +1777,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             PerlinTextureProvider.anInt5805 = 0
             OpenGlRenderer.anInt7584 = 0
             ModelFacePriorityNode.anInt1893 = 0
-            Class304.anInt3849 = 0
+            TextureFormatInfo.anInt3849 = 0
             Class88.anInt1501 = 0
             BrightnessOptionState.anInt5898 = 0
             SizeBoundedSoftCache.anInt2320 = 0
@@ -3807,7 +3807,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7934 = 0
             Class348_Sub40_Sub7.anInt9143 = 0
             ChatEffectsOptionState.anInt5869 = 0
-            Class304.anInt3851 = 0
+            TextureFormatInfo.anInt3851 = 0
             SocketFactory.anInt3471 = 0
             Class348_Sub5_Sub1.anInt8843 = 0
             Class79.anInt1403 = 0

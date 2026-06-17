@@ -176,14 +176,14 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
         var anInt9295: Int = 0
         @JvmField
         var anInt9296: Int = 0
-        var aClass304_9303: Class304? = Class304(1)
+        var aTextureFormatInfo_9303: TextureFormatInfo? = TextureFormatInfo(1)
         @JvmField
         var aClass351_9304: Class351? = Class351(20, -1)
         @JvmStatic
         fun method3110(i: Int) {
             aClass351_9304 = null
-            aClass304_9303 = null
-            if (i != -1633784916) aClass304_9303 = null
+            aTextureFormatInfo_9303 = null
+            if (i != -1633784916) aTextureFormatInfo_9303 = null
             aIntRange_9285 = null
         }
 
@@ -191,7 +191,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
         fun method3111(i: Int, i_23_: Int) {
             anInt9290++
             if (i_23_ != Class348_Sub15.anInt6769) {
-                if (i < 18) aClass304_9303 = null
+                if (i < 18) aTextureFormatInfo_9303 = null
                 Class348_Sub40_Sub3.Companion.anInt9109 = Class73.anIntArray4780!![i_23_]
                 Class367_Sub4.anInt7319 = Class348_Sub40_Sub3.Companion.anInt9109
                 BufferToggleState.method2196((-9).toByte())

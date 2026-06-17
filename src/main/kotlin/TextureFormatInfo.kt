@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method138
 /* Class304 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class304 internal constructor(var anInt3850: Int) {
+class TextureFormatInfo internal constructor(var anInt3850: Int) {
     override fun toString(): String {
         anInt3851++
         throw IllegalStateException()

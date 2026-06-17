@@ -11,11 +11,11 @@ import kotlin.math.min
 /*
  * Class14
  */
-abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, class68: Class68?, i_66_: Int, bool: Boolean) : Interface18 {
+abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i_66_: Int, bool: Boolean) : Interface18 {
     @JvmField
     var aClass377_5082: Class377? = null
     @JvmField
-    var aClass304_5084: Class304? = null
+    var aTextureFormatInfo_5084: TextureFormatInfo? = null
     @JvmField
     var aClass68_5088: Class68? = null
     private val anInt5090: Int
@@ -44,32 +44,32 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         anInt5085++
         if (Class68.aClass68_1183 != this.aClass68_5088) {
             if (Class68.aClass68_1186 == this.aClass68_5088) {
-                if (this.aClass304_5084 == Class348_Sub45.aClass304_7103) return 34843
-                if (GroundItemRenderState.aClass304_1662 == this.aClass304_5084) return 34842
-                if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
-                    if (this.aClass304_5084 != Class348_Sub40_Sub22.aClass304_9303) {
-                        if (SpriteSheetCache.aClass304_2571 != this.aClass304_5084) {
-                            if (this.aClass304_5084 == Class318.aClass304_3977) return 6145
+                if (this.aTextureFormatInfo_5084 == Class348_Sub45.aTextureFormatInfo_7103) return 34843
+                if (GroundItemRenderState.aTextureFormatInfo_1662 == this.aTextureFormatInfo_5084) return 34842
+                if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub38.aTextureFormatInfo_9471) {
+                    if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub22.aTextureFormatInfo_9303) {
+                        if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
+                            if (this.aTextureFormatInfo_5084 == Class318.aTextureFormatInfo_3977) return 6145
                         } else return 34847
                     } else return 34846
                 } else return 34844
             } else if (this.aClass68_5088 == Class68.aClass68_1187) {
-                if (Class348_Sub45.aClass304_7103 != this.aClass304_5084) {
-                    if (this.aClass304_5084 == GroundItemRenderState.aClass304_1662) return 34836
-                    if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
-                        if (Class348_Sub40_Sub22.aClass304_9303 == this.aClass304_5084) return 34840
-                        if (SpriteSheetCache.aClass304_2571 != this.aClass304_5084) {
-                            if (Class318.aClass304_3977 == this.aClass304_5084) return 6145
+                if (Class348_Sub45.aTextureFormatInfo_7103 != this.aTextureFormatInfo_5084) {
+                    if (this.aTextureFormatInfo_5084 == GroundItemRenderState.aTextureFormatInfo_1662) return 34836
+                    if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub38.aTextureFormatInfo_9471) {
+                        if (Class348_Sub40_Sub22.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 34840
+                        if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
+                            if (Class318.aTextureFormatInfo_3977 == this.aTextureFormatInfo_5084) return 6145
                         } else return 34841
                     } else return 34838
                 } else return 34837
             }
-        } else if (this.aClass304_5084 != Class348_Sub45.aClass304_7103) {
-            if (this.aClass304_5084 != GroundItemRenderState.aClass304_1662) {
-                if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
-                    if (Class348_Sub40_Sub22.aClass304_9303 == this.aClass304_5084) return 6409
-                    if (this.aClass304_5084 == SpriteSheetCache.aClass304_2571) return 6410
-                    if (this.aClass304_5084 == Class318.aClass304_3977) return 6145
+        } else if (this.aTextureFormatInfo_5084 != Class348_Sub45.aTextureFormatInfo_7103) {
+            if (this.aTextureFormatInfo_5084 != GroundItemRenderState.aTextureFormatInfo_1662) {
+                if (this.aTextureFormatInfo_5084 != Class348_Sub40_Sub38.aTextureFormatInfo_9471) {
+                    if (Class348_Sub40_Sub22.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 6409
+                    if (this.aTextureFormatInfo_5084 == SpriteSheetCache.aTextureFormatInfo_2571) return 6410
+                    if (this.aTextureFormatInfo_5084 == Class318.aTextureFormatInfo_3977) return 6145
                 } else return 6406
             } else return 6408
         } else return 6407
@@ -96,7 +96,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         anInt5100++
         require(!(i_2_ > 0 && !AsyncTaskHandle.method1436(66, i_2_))) { "" }
         require(!(i_3_ > 0 && !AsyncTaskHandle.method1436(i xor 0x1cb6, i_3_))) { "" }
-        val i_5_ = this.aClass304_5084!!.anInt3850
+        val i_5_ = this.aTextureFormatInfo_5084!!.anInt3850
         var i_6_ = 0
         var i_7_ = min(i_2_, i_3_)
         var i_8_ = i_2_ shr 1
@@ -105,7 +105,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         var is_10_ = `is`
         var is_11_ = ByteArray(i_9_ * (i_8_ * i_5_))
         while (true) {
-            glTexImage2Dub(i_4_, i_6_, method228(108), i_2_, i_3_, 0, Class348_Sub40_Sub3.method3055(i + -7265, this.aClass304_5084), 5121, is_10_, 0)
+            glTexImage2Dub(i_4_, i_6_, method228(108), i_2_, i_3_, 0, Class348_Sub40_Sub3.method3055(i + -7265, this.aTextureFormatInfo_5084), 5121, is_10_, 0)
             if (i_7_ <= 1) break
             val i_12_ = i_2_ * i_5_
             var i_13_ = 0
@@ -147,7 +147,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
 
     private fun method231(i: Int): Int {
         anInt5095++
-        val i_21_ = (anInt5090 * (this.aClass68_5088!!.anInt1178 * this.aClass304_5084!!.anInt3850))
+        val i_21_ = (anInt5090 * (this.aClass68_5088!!.anInt1178 * this.aTextureFormatInfo_5084!!.anInt3850))
         if (i >= -105) method232(null, 118.toByte(), true, 16)
         if (aBoolean5099) return 4 * i_21_ / 3
         return i_21_
@@ -159,7 +159,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         anInt5092++
         require(!(i > 0 && !AsyncTaskHandle.method1436(-43, i))) { "" }
         require(!(i_23_ > 0 && !AsyncTaskHandle.method1436(i_25_ xor 0xd2.inv(), i_23_))) { "" }
-        require(GroundItemRenderState.aClass304_1662 == this.aClass304_5084) { "" }
+        require(GroundItemRenderState.aTextureFormatInfo_1662 == this.aTextureFormatInfo_5084) { "" }
         var i_26_ = 0
         var i_27_ = min(i, i_23_)
         var i_28_ = i shr 1
@@ -235,7 +235,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
 
     override fun method64(class209: UnusedToStringStub?, i: Int) {
         anInt5086++
-        if (i != -22095) this.aClass304_5084 = null
+        if (i != -22095) this.aTextureFormatInfo_5084 = null
         if (class209 != aClass209_5101) {
             aClass209_5101 = class209
             method229(true)
@@ -248,7 +248,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         anInt5102++
         require(!(i_49_ > 0 && !AsyncTaskHandle.method1436(100, i_49_))) { "" }
         require(!(i_50_ > 0 && !AsyncTaskHandle.method1436(i_48_ + 109, i_50_))) { "" }
-        val i_51_ = this.aClass304_5084!!.anInt3850
+        val i_51_ = this.aTextureFormatInfo_5084!!.anInt3850
         var i_52_ = 0
         if (i_48_ != 1) method228(107)
         var i_53_ = min(i_50_, i_49_)
@@ -257,7 +257,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         var fs_56_ = fs!!
         var fs_57_ = FloatArray(i_54_ * (i_55_ * i_51_))
         while (true) {
-            glTexImage2Df(i, i_52_, method228(123), i_49_, i_50_, 0, (Class348_Sub40_Sub3.method3055(124, this.aClass304_5084)), 5126, fs_56_, 0)
+            glTexImage2Df(i, i_52_, method228(123), i_49_, i_50_, 0, (Class348_Sub40_Sub3.method3055(124, this.aTextureFormatInfo_5084)), 5126, fs_56_, 0)
             if (i_53_ <= 1) break
             val i_58_ = i_49_ * i_51_
             var i_59_ = 0
@@ -308,7 +308,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         try {
             anInt5090 = i_66_
             this.aClass377_5082 = class377
-            this.aClass304_5084 = class304
+            this.aTextureFormatInfo_5084 = textureFormatInfo
             this.aClass68_5088 = class68
             aBoolean5099 = bool
             this.anInt5093 = i
@@ -317,7 +317,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("hda.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + (if (class304 != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("hda.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
         }
     }
 

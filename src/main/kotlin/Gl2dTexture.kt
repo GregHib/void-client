@@ -21,7 +21,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         return f / anInt8604.toFloat()
     }
 
-    internal constructor(class377: Class377?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class377, 3553, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, i * i_0_, bool) {
+    internal constructor(class377: Class377?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class377, 3553, GroundItemRenderState.aTextureFormatInfo_1662, Class68.aClass68_1183, i * i_0_, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_0_
@@ -37,7 +37,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         }
     }
 
-    internal constructor(class377: Class377?, class304: Class304?, i: Int, i_6_: Int, bool: Boolean, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(class377, 3553, class304, Class68.aClass68_1183, i_6_ * i, bool) {
+    internal constructor(class377: Class377?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, bool: Boolean, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(class377, 3553, textureFormatInfo, Class68.aClass68_1183, i_6_ * i, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_6_
@@ -45,12 +45,12 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             glPixelStorei(3317, 1)
             if (!bool || i_8_ != 0 || i_7_ != 0) {
                 glPixelStorei(3314, i_8_)
-                glTexImage2Dub(this.anInt5093, 0, this.method228(109), i, i_6_, 0, (method3055(121, this.aClass304_5084)), 5121, `is`, i_7_)
+                glTexImage2Dub(this.anInt5093, 0, this.method228(109), i, i_6_, 0, (method3055(121, this.aTextureFormatInfo_5084)), 5121, `is`, i_7_)
                 glPixelStorei(3314, 0)
             } else this.method230(7365, i, `is`!!, i_6_, this.anInt5093)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 
@@ -60,31 +60,31 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         return f / anInt8612.toFloat()
     }
 
-    fun method240(i: Int, i_9_: Byte, fs: FloatArray?, class304: Class304?, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) {
+    fun method240(i: Int, i_9_: Byte, fs: FloatArray?, textureFormatInfo: TextureFormatInfo?, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) {
         try {
             val i_15_ = 108 / ((-45 - i_9_) / 49)
             anInt8614++
             this.aClass377_5082!!.method3850((-106).toByte(), this)
             glPixelStorei(3314, i)
-            glTexSubImage2Df(this.anInt5093, 0, i_12_, i_10_, i_13_, i_14_, method3055(106, class304), 5121, fs, i_11_)
+            glTexSubImage2Df(this.anInt5093, 0, i_12_, i_10_, i_13_, i_14_, method3055(106, textureFormatInfo), 5121, fs, i_11_)
             glPixelStorei(3314, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.CA(" + i + ',' + i_9_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bm.CA(" + i + ',' + i_9_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
         }
     }
 
-    override fun method70(i: Int, i_27_: Int, i_28_: Byte, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int, `is`: ByteArray?, class304: Class304?) {
+    override fun method70(i: Int, i_27_: Int, i_28_: Byte, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?) {
         try {
             anInt8608++
             this.aClass377_5082!!.method3850((-24).toByte(), this)
             glPixelStorei(3317, 1)
             glPixelStorei(3314, i_29_)
-            glTexSubImage2Dub(this.anInt5093, 0, i_32_, i, i_31_, i_30_, method3055(103, class304), 5121, `is`, i_27_)
+            glTexSubImage2Dub(this.anInt5093, 0, i_32_, i, i_31_, i_30_, method3055(103, textureFormatInfo), 5121, `is`, i_27_)
             if (i_28_ >= -4) anInt8612 = 33
             glPixelStorei(3314, 0)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.T(" + i + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bm.T(" + i + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -128,14 +128,14 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         glPixelStorei(3314, 0)
     }
 
-    internal constructor(class377: Class377?, class304: Class304?, class68: Class68?, i: Int, i_47_: Int) : super(class377, 3553, class304, class68, i_47_ * i, false) {
+    internal constructor(class377: Class377?, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i: Int, i_47_: Int) : super(class377, 3553, textureFormatInfo, class68, i_47_ * i, false) {
         try {
             anInt8612 = i
             anInt8604 = i_47_
             this.aClass377_5082!!.method3850(110.toByte(), this)
-            glTexImage2Dub(this.anInt5093, 0, this.method228(113), i, i_47_, 0, method3055(113, this.aClass304_5084), method1128(-112, this.aClass68_5088), null, 0)
+            glTexImage2Dub(this.anInt5093, 0, this.method228(113), i, i_47_, 0, method3055(113, this.aTextureFormatInfo_5084), method1128(-112, this.aClass68_5088), null, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
         }
     }
 
@@ -147,18 +147,18 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         if (i != 25688) anInt8604 = -90
     }
 
-    internal constructor(class377: Class377?, class304: Class304?, i: Int, i_49_: Int, bool: Boolean, fs: FloatArray?, i_50_: Int, i_51_: Int) : super(class377, 3553, class304, Class68.aClass68_1187, i * i_49_, bool) {
+    internal constructor(class377: Class377?, textureFormatInfo: TextureFormatInfo?, i: Int, i_49_: Int, bool: Boolean, fs: FloatArray?, i_50_: Int, i_51_: Int) : super(class377, 3553, textureFormatInfo, Class68.aClass68_1187, i * i_49_, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_49_
             this.aClass377_5082!!.method3850((-67).toByte(), this)
             if (bool || i_51_ != 0 || i_50_ != 0) {
                 glPixelStorei(3314, i_51_)
-                glTexImage2Df(this.anInt5093, 0, this.method228(111), i, i_49_, 0, (method3055(106, this.aClass304_5084)), 5126, fs, 4 * i_50_)
+                glTexImage2Df(this.anInt5093, 0, this.method228(111), i, i_49_, 0, (method3055(106, this.aTextureFormatInfo_5084)), 5126, fs, 4 * i_50_)
                 glPixelStorei(3314, 0)
             } else this.method238(this.anInt5093, 1, i, fs, i_49_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class304 != null) "{...}" else "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_50_ + ',' + i_51_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_50_ + ',' + i_51_ + ')'))
         }
     }
 

@@ -45,7 +45,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
                 if (i != -12763) anInt1546 = -8
                 var i_13_ = 0
                 i_10_ = anInt1544 + anInt1559 * i_9_
-                if (aHa_Sub3_1561!!.method3880(Class68.aClass68_1183, (Class348_Sub40_Sub38.aClass304_9471), 122.toByte())) {
+                if (aHa_Sub3_1561!!.method3880(Class68.aClass68_1183, (Class348_Sub40_Sub38.aTextureFormatInfo_9471), 122.toByte())) {
                     if (Class367_Sub11.aByteArray7394 == null) Class367_Sub11.aByteArray7394 = ByteArray(16384)
                     val is_14_ = Class367_Sub11.aByteArray7394!!
                     for (i_15_ in -128..-1) {
@@ -63,9 +63,9 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class
                         i_10_ += -128 + aClass330_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
-                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((Class367_Sub11.aByteArray7394), 128, (Class348_Sub40_Sub38.aClass304_9471), i xor 0x31d8.inv(), false, 128)
+                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((Class367_Sub11.aByteArray7394), 128, (Class348_Sub40_Sub38.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
                         anInterface18_Impl3_1556!!.method66(false, false, i xor 0x5582.inv())
-                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (Class367_Sub11.aByteArray7394), (Class348_Sub40_Sub38.aClass304_9471))
+                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (Class367_Sub11.aByteArray7394), (Class348_Sub40_Sub38.aTextureFormatInfo_9471))
                 } else {
                     if (Class40.anIntArray543 == null) Class40.anIntArray543 = IntArray(16384)
                     val is_18_ = Class40.anIntArray543!!

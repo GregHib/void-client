@@ -17,7 +17,7 @@ object GroundItemRenderState {
     var anInt1660: Int = 0
     var aBoolean1661: Boolean = true
     @JvmField
-    var aClass304_1662: Class304? = Class304(4)
+    var aTextureFormatInfo_1662: TextureFormatInfo? = TextureFormatInfo(4)
     @JvmField
     var anInt1663: Int = 0
     @JvmField
@@ -60,7 +60,7 @@ object GroundItemRenderState {
     fun method1013(i: Byte) {
         aClass364_1657 = null
         if (i < 111) method1013(17.toByte())
-        aClass304_1662 = null
+        aTextureFormatInfo_1662 = null
         aAbstractModelRenderer_1664 = null
     }
 
