@@ -16,24 +16,24 @@ class Class217 internal constructor(class230: Class230?, i: Int, class45: Class4
         anInt2841++
     }
 
-    fun method1588(i: Int, i_1_: Int): Class159 {
+    fun method1588(i: Int, i_1_: Int): ParticleAmountConfig {
         anInt2847++
-        var class159: Class159?
+        var particleAmountConfig: ParticleAmountConfig?
         synchronized(aClass60_2848!!) {
-            class159 = aClass60_2848!!.method583(i_1_.toLong(), -126) as Class159?
+            particleAmountConfig = aClass60_2848!!.method583(i_1_.toLong(), -126) as ParticleAmountConfig?
         }
-        if (class159 != null) return class159
+        if (particleAmountConfig != null) return particleAmountConfig
         val `is`: ByteArray?
         synchronized(aClass45_2842!!) {
             `is` = aClass45_2842.method410(-1860, 16, i_1_)
             if (i >= -17) aClass60_2848 = null
         }
-        class159 = Class159()
-        if (`is` != null) class159.method1253(Class348_Sub49(`is`), true)
+        particleAmountConfig = ParticleAmountConfig()
+        if (`is` != null) particleAmountConfig.method1253(Class348_Sub49(`is`), true)
         synchronized(aClass60_2848!!) {
-            aClass60_2848!!.method582(class159, i_1_.toLong(), (-124).toByte())
+            aClass60_2848!!.method582(particleAmountConfig, i_1_.toLong(), (-124).toByte())
         }
-        return class159
+        return particleAmountConfig
     }
 
     fun method1589(i: Byte) {

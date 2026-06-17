@@ -169,8 +169,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             Class239_Sub5.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
         }
         GzipDecompressor.anInt2071 = GzipDecompressor.anInt2071 - -1 and 0x1f
-        if (Class159.anInt2127++ > 50) {
-            Class159.anInt2127 -= 50
+        if (ParticleAmountConfig.anInt2127++ > 50) {
+            ParticleAmountConfig.anInt2127 -= 50
             Class49.aBoolean4726 = true
             Class305.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
             Class305.aCanvas3869!!.setVisible(true)

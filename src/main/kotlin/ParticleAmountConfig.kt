@@ -3,7 +3,7 @@ import Class348_Sub40_Sub7.Companion.method3064
 /* Class159 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class159 {
+class ParticleAmountConfig {
     @JvmField
     var anInt2125: Int = 0
     private fun method1251(class348_sub49: Class348_Sub49, i: Int, i_0_: Int) {
