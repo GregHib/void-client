@@ -1800,7 +1800,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub46.anInt7110 = 0
             Class45.anInt660 = 0
             OpenGlRenderer.anInt7560 = 0
-            Class32.anInt450 = 0
+            LongHashTable.anInt450 = 0
             GroundDecorSceneEntity.anInt9994 = 0
             SimpleToggleOptionState.anInt5885 = 0
             Class35.anInt484 = 0
@@ -2390,7 +2390,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7650 = 0
             Class348_Sub49.anInt7152 = 0
             Class348_Sub23_Sub2.anInt9017 = 0
-            Class32.anInt455 = 0
+            LongHashTable.anInt455 = 0
             Class74.anInt1235 = 0
             OpenGlRenderer.anInt7530 = 0
             ItemDefinition.anInt2813 = 0
@@ -3322,7 +3322,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FlickeringEffectsOptionState.anInt5914 = 0
             Class348_Sub49.anInt7192 = 0
             MapLabelMenuEntry.anInt5793 = 0
-            Class32.anInt447 = 0
+            LongHashTable.anInt447 = 0
             ServerConnectionInfo.anInt2144 = 0
             Class348_Sub1_Sub1.anInt8802 = 0
             GlTexture.anInt4862 = 0
@@ -4059,7 +4059,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ArchiveResourceProvider.anInt6343 = 0
             RandomAccessFileOnDisk.anInt3040 = 0
             Class348_Sub40_Sub3.anInt9108 = 0
-            Class32.anInt449 = 0
+            LongHashTable.anInt449 = 0
             Class60.anInt1103 = 0
             Class35.anInt483 = 0
             Class348_Sub42_Sub4.anInt9514 = 0

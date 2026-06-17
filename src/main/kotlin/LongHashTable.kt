@@ -1,7 +1,7 @@
 /* Class32 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class32 internal constructor(private val anInt448: Int) {
+class LongHashTable internal constructor(private val anInt448: Int) {
     private val aClass348_Sub42Array452: Array<Class348_Sub42?>
     private var aLong453: Long = 0
     private var aClass348_Sub42_454: Class348_Sub42? = null

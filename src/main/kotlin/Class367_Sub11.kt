@@ -53,7 +53,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
             this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
             aBoolean7399 = false
         }
-        if (i.toInt() != 87) aClass32_7415 = null
+        if (i.toInt() != 87) aLongHashTable_7415 = null
         if (aBoolean7406) {
             glBindProgramARB(34336, 0)
             glDisable(34820)
@@ -172,7 +172,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         @JvmField
         var anInt7414: Int = 0
         @JvmField
-        var aClass32_7415: Class32? = Class32(8)
+        var aLongHashTable_7415: LongHashTable? = LongHashTable(8)
 
         @JvmStatic
         fun method3555(class45: Class45?, i: Int, bool: Boolean, l: Long, i_7_: Int, i_8_: Int, i_9_: Int) {
@@ -234,7 +234,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         @JvmStatic
         fun method3557(bool: Boolean) {
             anIntArray7397 = null
-            aClass32_7415 = null
+            aLongHashTable_7415 = null
             if (bool == true) {
                 aIntRange_7398 = null
                 aByteArray7394 = null

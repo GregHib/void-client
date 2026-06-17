@@ -177,7 +177,7 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
                     var class348_sub42_sub20: Class348_Sub42_Sub20? = null
                     if ((class342s[i]!!.method2685((-13).toByte()).anInt2296) == 1 && SpotAnimEntity.Companion.anInt6450 < 32) {
                         class348_sub42_sub20 = Class348_Sub42_Sub20(class342s[i], this)
-                        Class367_Sub11.aClass32_7415!!.method335(class348_sub42_sub20, -8098, class342s[i]!!.anInt4245.toLong())
+                        Class367_Sub11.aLongHashTable_7415!!.method335(class348_sub42_sub20, -8098, class342s[i]!!.anInt4245.toLong())
                         SpotAnimEntity.Companion.anInt6450++
                     }
                     if (class348_sub42_sub20 == null) class348_sub42_sub20 = Class348_Sub42_Sub20(class342s[i], this)

@@ -48,7 +48,7 @@ class Class348_Sub43 : Class348() {
             if (Class73.anInt4776 < 400) {
                 if (LocalPlayerState.aPlayer_1907 == player) {
                     if (RenderNode.aBoolean9722 && (Class38.anInt500 and 0x10) != 0) {
-                        Class32.anInt450++
+                        LongHashTable.anInt450++
                         Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> <col=ffffff>" + LocalizedText.aLocalizedText_3520!!.method2063(Class348_Sub33.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), ItemNameResolver.aString5001, 0L, Class348_Sub49_Sub1.Companion.anInt9747)
                     }
                 } else {

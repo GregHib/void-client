@@ -194,7 +194,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
 
         @JvmStatic
         fun method1343(i: Int, class46: Class46?, i_1_: Int, i_2_: Int) {
-            Class32.anInt451 = i
+            LongHashTable.anInt451 = i
             Class348_Sub36.aClass46_6990 = class46
             Class332.anInt4141 = i_2_
             anInt2328++

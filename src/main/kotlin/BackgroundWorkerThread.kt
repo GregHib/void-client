@@ -81,7 +81,7 @@ class BackgroundWorkerThread : Runnable {
         @JvmStatic
         fun method1911(i: Byte) {
             if (i.toInt() != 99) anIntArray3220 = null
-            Class367_Sub11.aClass32_7415 = Class32(8)
+            Class367_Sub11.aLongHashTable_7415 = LongHashTable(8)
             anInt3219++
             SpotAnimEntity.anInt6450 = 0
             var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?

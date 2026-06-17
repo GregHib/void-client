@@ -111,7 +111,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                         Class348_Sub36.aClass46_6990!!.anInt809,
                         OutputStream_Sub1.aRandom93,
                         Class348_Sub36.aClass46_6990!!.anInt762,
-                        Class32.anInt451,
+                        LongHashTable.anInt451,
                         Class356.anInt4383,
                         -33,
                         Class332.anInt4141,
