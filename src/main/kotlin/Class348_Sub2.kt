@@ -14,23 +14,23 @@ class Class348_Sub2 private constructor(class348_sub49: Class348_Sub49) : Class3
             val is_0_ = IntArray(16)
             is_0_[9] = 128
             `is`[9] = is_0_[9]
-            val class204 = Class204(this.aByteArray6564)
-            val i = class204.method1483()
+            val midiTrackReader = MidiTrackReader(this.aByteArray6564)
+            val i = midiTrackReader.method1483()
             for (i_1_ in 0..<i) {
-                class204.method1492(i_1_)
-                class204.method1485(i_1_)
-                class204.method1486(i_1_)
+                midiTrackReader.method1492(i_1_)
+                midiTrackReader.method1485(i_1_)
+                midiTrackReader.method1486(i_1_)
             }
             while_123_@ while (true) {
-                val i_2_ = class204.method1490()
-                val i_3_ = class204.anIntArray2681!![i_2_]
-                while (class204.anIntArray2681!![i_2_] == i_3_) {
-                    class204.method1492(i_2_)
-                    val i_4_ = class204.method1494(i_2_)
+                val i_2_ = midiTrackReader.method1490()
+                val i_3_ = midiTrackReader.anIntArray2681!![i_2_]
+                while (midiTrackReader.anIntArray2681!![i_2_] == i_3_) {
+                    midiTrackReader.method1492(i_2_)
+                    val i_4_ = midiTrackReader.method1494(i_2_)
                     if (i_4_ == 1) {
-                        class204.method1495()
-                        class204.method1486(i_2_)
-                        if (!class204.method1480()) break
+                        midiTrackReader.method1495()
+                        midiTrackReader.method1486(i_2_)
+                        if (!midiTrackReader.method1480()) break
                         break@while_123_
                     }
                     val i_5_ = i_4_ and 0xf0
@@ -60,8 +60,8 @@ class Class348_Sub2 private constructor(class348_sub49: Class348_Sub49) : Class3
                             class348_sub8.aByteArray6657!![i_12_] = 1.toByte()
                         }
                     }
-                    class204.method1485(i_2_)
-                    class204.method1486(i_2_)
+                    midiTrackReader.method1485(i_2_)
+                    midiTrackReader.method1486(i_2_)
                 }
             }
         }

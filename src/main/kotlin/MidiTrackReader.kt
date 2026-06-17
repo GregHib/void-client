@@ -1,7 +1,7 @@
 /* Class204 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class204 {
+class MidiTrackReader {
     private val aClass348_Sub49_2677: Class348_Sub49
     private var anIntArray2678: IntArray? = null
     private var anIntArray2679: IntArray? = null

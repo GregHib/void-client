@@ -105,7 +105,7 @@ import ModelOrSpriteHolder.Companion.method171
 import ConnectionStateRefs.method287
 import ScriptResources.method1463
 import SocketStreamWorker.Companion.method1471
-import Class204.Companion.method1493
+import MidiTrackReader.Companion.method1493
 import Class205.method1497
 import Class206.Companion.method1499
 import Class208.Companion.method1525

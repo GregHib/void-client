@@ -22,7 +22,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
     private var anIntArray8937: IntArray?
     private val anIntArray8939: IntArray
     private var anIntArray8942: IntArray?
-    private var aClass204_8944: Class204?
+    private var aMidiTrackReader_8944: MidiTrackReader?
     private val anIntArray8945: IntArray
     private var anIntArray8947: IntArray?
     private val anIntArray8953: IntArray
@@ -44,7 +44,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
 
     @Synchronized
     private fun method2840(bool: Boolean, i: Byte) {
-        aClass204_8944!!.method1487()
+        aMidiTrackReader_8944!!.method1487()
         anInt8950++
         aClass348_Sub2_8963 = null
         method2851(true, bool)
@@ -195,18 +195,18 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             try {
                 method2840(bool_34_, (-127).toByte())
                 anInt8889++
-                aClass204_8944!!.method1482(class348_sub2!!.aByteArray6564)
+                aMidiTrackReader_8944!!.method1482(class348_sub2!!.aByteArray6564)
                 aLong8959 = 0L
                 aBoolean8961 = bool_35_
-                val i = aClass204_8944!!.method1483()
+                val i = aMidiTrackReader_8944!!.method1483()
                 for (i_36_ in 0..<i) {
-                    aClass204_8944!!.method1492(i_36_)
-                    aClass204_8944!!.method1485(i_36_)
-                    aClass204_8944!!.method1486(i_36_)
+                    aMidiTrackReader_8944!!.method1492(i_36_)
+                    aMidiTrackReader_8944!!.method1485(i_36_)
+                    aMidiTrackReader_8944!!.method1486(i_36_)
                 }
-                anInt8960 = aClass204_8944!!.method1490()
-                anInt8956 = aClass204_8944!!.anIntArray2681!![anInt8960]
-                aLong8957 = aClass204_8944!!.method1488(anInt8956)
+                anInt8960 = aMidiTrackReader_8944!!.method1490()
+                anInt8956 = aMidiTrackReader_8944!!.anIntArray2681!![anInt8960]
+                aLong8957 = aMidiTrackReader_8944!!.method1488(anInt8956)
                 if (bool == false) break
                 aClass348_Sub16_Sub1_8958 = null
             } catch (runtimeexception: RuntimeException) {
@@ -438,34 +438,34 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             method2856(124.toByte())
         } else {
             while (i_58_ == anInt8956) {
-                while (aClass204_8944!!.anIntArray2681!![i_57_] == i_58_) {
-                    aClass204_8944!!.method1492(i_57_)
-                    val i_59_ = aClass204_8944!!.method1494(i_57_)
+                while (aMidiTrackReader_8944!!.anIntArray2681!![i_57_] == i_58_) {
+                    aMidiTrackReader_8944!!.method1492(i_57_)
+                    val i_59_ = aMidiTrackReader_8944!!.method1494(i_57_)
                     if (i_59_ == 1) {
-                        aClass204_8944!!.method1495()
-                        aClass204_8944!!.method1486(i_57_)
-                        if (aClass204_8944!!.method1480()) {
+                        aMidiTrackReader_8944!!.method1495()
+                        aMidiTrackReader_8944!!.method1486(i_57_)
+                        if (aMidiTrackReader_8944!!.method1480()) {
                             if (aClass348_Sub2_8963 != null) {
                                 method2869(aClass348_Sub2_8963, aBoolean8961, false)
                                 method2856(124.toByte())
                                 return
                             }
-                            if (aBoolean8961 && i_58_ != 0) aClass204_8944!!.method1484(l)
+                            if (aBoolean8961 && i_58_ != 0) aMidiTrackReader_8944!!.method1484(l)
                             else {
                                 method2851(true, true)
-                                aClass204_8944!!.method1487()
+                                aMidiTrackReader_8944!!.method1487()
                                 return
                             }
                         }
                         break
                     }
                     if ((0x80 and i_59_) != 0) method2842(i.toInt() xor 0x40, i_59_)
-                    aClass204_8944!!.method1485(i_57_)
-                    aClass204_8944!!.method1486(i_57_)
+                    aMidiTrackReader_8944!!.method1485(i_57_)
+                    aMidiTrackReader_8944!!.method1486(i_57_)
                 }
-                i_57_ = aClass204_8944!!.method1490()
-                i_58_ = aClass204_8944!!.anIntArray2681!![i_57_]
-                l = aClass204_8944!!.method1488(i_58_)
+                i_57_ = aMidiTrackReader_8944!!.method1490()
+                i_58_ = aMidiTrackReader_8944!!.anIntArray2681!![i_57_]
+                l = aMidiTrackReader_8944!!.method1488(i_58_)
             }
             if (i.toInt() != 124) method2879(-127, -46, -96)
             aLong8957 = l
@@ -474,7 +474,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             if (aClass348_Sub2_8963 != null && i_58_ > anInt8962) {
                 anInt8960 = -1
                 anInt8956 = anInt8962
-                aLong8957 = aClass204_8944!!.method1488(anInt8956)
+                aLong8957 = aMidiTrackReader_8944!!.method1488(anInt8956)
             }
         }
     }
@@ -502,8 +502,8 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
     override fun method2819(i: Int) {
         var i = i
         anInt8908++
-        if (aClass204_8944!!.method1491()) {
-            val i_63_ = (aClass204_8944!!.anInt2683 * anInt8921 / Class22.anInt339)
+        if (aMidiTrackReader_8944!!.method1491()) {
+            val i_63_ = (aMidiTrackReader_8944!!.anInt2683 * anInt8921 / Class22.anInt339)
             do {
                 val l = aLong8959 + i_63_.toLong() * i.toLong()
                 if (-l + aLong8957 >= 0L) {
@@ -515,7 +515,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 aClass348_Sub16_Sub1_8958!!.method2819(i_64_)
                 i -= i_64_
                 method2856(124.toByte())
-            } while (aClass204_8944!!.method1491())
+            } while (aMidiTrackReader_8944!!.method1491())
         }
         aClass348_Sub16_Sub1_8958!!.method2819(i)
     }
@@ -529,7 +529,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
     fun method2860(i: Int): Boolean {
         if (i <= 94) method2818()
         anInt8949++
-        return aClass204_8944!!.method1491()
+        return aMidiTrackReader_8944!!.method1491()
     }
 
     @Synchronized
@@ -538,8 +538,8 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         var i_67_ = i_67_
         try {
             anInt8898++
-            if (aClass204_8944!!.method1491()) {
-                val i_68_ = (anInt8921 * aClass204_8944!!.anInt2683 / Class22.anInt339)
+            if (aMidiTrackReader_8944!!.method1491()) {
+                val i_68_ = (anInt8921 * aMidiTrackReader_8944!!.anInt2683 / Class22.anInt339)
                 do {
                     val l = aLong8959 + i_67_.toLong() * i_68_.toLong()
                     if (aLong8957 + -l >= 0L) {
@@ -552,7 +552,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     i += i_69_
                     i_67_ -= i_69_
                     method2856(124.toByte())
-                } while (aClass204_8944!!.method1491())
+                } while (aMidiTrackReader_8944!!.method1491())
             }
             aClass348_Sub16_Sub1_8958!!.method2817(`is`, i, i_67_)
         } catch (runtimeexception: RuntimeException) {
@@ -575,7 +575,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
     @Synchronized
     fun method2864(i: Byte) {
         anInt8924++
-        if (i <= 46) aClass204_8944 = null
+        if (i <= 46) aMidiTrackReader_8944 = null
         var class348_sub17 = aClass356_8891.method3484(0) as Class348_Sub17?
         while (class348_sub17 != null) {
             class348_sub17.method2933((-103).toByte())
@@ -707,7 +707,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             method2846(false, bool_89_, class348_sub2, bool)
             if (i > 17) {
                 anInt8930++
-                method2876(aClass204_8944!!.anInt2683.toLong() * l, -125)
+                method2876(aMidiTrackReader_8944!!.anInt2683.toLong() * l, -125)
             }
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ma.O(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + l + ',' + bool + ',' + bool_89_ + ',' + i + ')'))
@@ -783,30 +783,30 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     var i_100_ = anInt8956
                     var l_101_ = aLong8957
                     while (anInt8956 == i_100_) {
-                        while ((aClass204_8944!!.anIntArray2681!![i_99_]) == i_100_) {
-                            aClass204_8944!!.method1492(i_99_)
-                            val i_102_ = aClass204_8944!!.method1494(i_99_)
+                        while ((aMidiTrackReader_8944!!.anIntArray2681!![i_99_]) == i_100_) {
+                            aMidiTrackReader_8944!!.method1492(i_99_)
+                            val i_102_ = aMidiTrackReader_8944!!.method1494(i_99_)
                             if (i_102_ == 1) {
-                                aClass204_8944!!.method1495()
-                                aClass204_8944!!.method1486(i_99_)
-                                if (aClass204_8944!!.method1480()) {
-                                    if (aBoolean8961 && i_100_ != 0) aClass204_8944!!.method1484(l_101_)
+                                aMidiTrackReader_8944!!.method1495()
+                                aMidiTrackReader_8944!!.method1486(i_99_)
+                                if (aMidiTrackReader_8944!!.method1480()) {
+                                    if (aBoolean8961 && i_100_ != 0) aMidiTrackReader_8944!!.method1484(l_101_)
                                     else {
                                         method2851(true, true)
-                                        aClass204_8944!!.method1487()
+                                        aMidiTrackReader_8944!!.method1487()
                                         return
                                     }
                                 }
                                 break
                             }
                             if ((i_102_ and 0x80) != 0 && (0xf0 and i_102_) != 144) method2842(65, i_102_)
-                            aClass204_8944!!.method1485(i_99_)
-                            aClass204_8944!!.method1486(i_99_)
+                            aMidiTrackReader_8944!!.method1485(i_99_)
+                            aMidiTrackReader_8944!!.method1486(i_99_)
                         }
                         aLong8959 = l_101_
-                        i_99_ = aClass204_8944!!.method1490()
-                        i_100_ = (aClass204_8944!!.anIntArray2681!![i_99_])
-                        l_101_ = aClass204_8944!!.method1488(i_100_)
+                        i_99_ = aMidiTrackReader_8944!!.method1490()
+                        i_100_ = (aMidiTrackReader_8944!!.anIntArray2681!![i_99_])
+                        l_101_ = aMidiTrackReader_8944!!.method1488(i_100_)
                     }
                     anInt8960 = i_99_
                     aLong8957 = l_101_
@@ -852,7 +852,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         anInt8933 = 256
         anIntArray8953 = IntArray(16)
         anIntArray8947 = IntArray(16)
-        aClass204_8944 = Class204()
+        aMidiTrackReader_8944 = MidiTrackReader()
         aClass348_Sub16_Sub1_8958 = Class348_Sub16_Sub1(this)
         aClass356_8891 = Class356(128)
         method2843(256, -1, -7836)
@@ -880,7 +880,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         anInt8933 = 256
         anIntArray8953 = IntArray(16)
         anIntArray8947 = IntArray(16)
-        aClass204_8944 = Class204()
+        aMidiTrackReader_8944 = MidiTrackReader()
         aClass348_Sub16_Sub1_8958 = Class348_Sub16_Sub1(this)
         try {
             aClass356_8891 = class348_sub16_sub3_107_!!.aClass356_8891
