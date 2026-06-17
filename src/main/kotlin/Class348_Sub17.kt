@@ -1,5 +1,5 @@
 import NpcSummaryDefinition.Companion.method1166
-import Class254.Companion.method1928
+import EmoteDefinition.Companion.method1928
 import Class287.Companion.method2178
 
 /* Class348_Sub17 - Decompiled by JODE

@@ -167,7 +167,7 @@ import SpriteStore.Companion.method305
 import BackgroundWorkerThread.Companion.method1910
 import ConfigFlagUtil.Companion.method1912
 import SmoothingBuffer.Companion.method1917
-import Class254.Companion.method1926
+import EmoteDefinition.Companion.method1926
 import Class255.Companion.method1931
 import Class256.method1944
 import Class258_Sub1.Companion.method1959

@@ -4,24 +4,24 @@
 class Class326 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_4085: Class45?
     private var aClass60_4087: Class60? = Class60(64)
-    fun method2600(i: Int, i_0_: Int): Class254 {
+    fun method2600(i: Int, i_0_: Int): EmoteDefinition {
         anInt4084++
-        var class254: Class254?
+        var emoteDefinition: EmoteDefinition?
         synchronized(aClass60_4087!!) {
-            class254 = aClass60_4087!!.method583(i.toLong(), -67) as Class254?
+            emoteDefinition = aClass60_4087!!.method583(i.toLong(), -67) as EmoteDefinition?
         }
-        if (class254 != null) return class254
+        if (emoteDefinition != null) return emoteDefinition
         if (i_0_ != 28364) anInt4086 = 117
         val `is`: ByteArray?
         synchronized(aClass45_4085!!) {
             `is` = aClass45_4085.method410(-1860, 11, i)
         }
-        class254 = Class254()
-        if (`is` != null) class254.method1924(Class348_Sub49(`is`), (-127).toByte())
+        emoteDefinition = EmoteDefinition()
+        if (`is` != null) emoteDefinition.method1924(Class348_Sub49(`is`), (-127).toByte())
         synchronized(aClass60_4087!!) {
-            aClass60_4087!!.method582(class254, i.toLong(), (-114).toByte())
+            aClass60_4087!!.method582(emoteDefinition, i.toLong(), (-114).toByte())
         }
-        return class254
+        return emoteDefinition
     }
 
     fun method2601(i: Byte) {

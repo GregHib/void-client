@@ -199,7 +199,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ServerConnectionInfo.anInt2140 = 0
             Player.anInt10559 = 0
             TextureDefinitionLoader.anInt1969 = 0
-            Class254.anInt3260 = 0
+            EmoteDefinition.anInt3260 = 0
             Gl2dTexture.anInt8609 = 0
             Class318_Sub4.anInt6413 = 0
             Class79.anInt1351 = 0
@@ -1824,7 +1824,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub47.anInt7120 = 0
             SizeBoundedSoftCache.anInt2318 = 0
             NativeRenderer.anInt8035 = 0
-            Class254.anInt3263 = 0
+            EmoteDefinition.anInt3263 = 0
             CacheArchiveIndex.anInt1768 = 0
             Class348_Sub42_Sub10.anInt9575 = 0
             Class318_Sub1_Sub5_Sub1.anInt10126 = 0
@@ -2988,7 +2988,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367.anInt4485 = 0
             WidgetDefinition.anInt266 = 0
             Class348_Sub16_Sub3.anInt8936 = 0
-            Class254.anInt3262 = 0
+            EmoteDefinition.anInt3262 = 0
             Class318_Sub1_Sub3_Sub3.anInt10277 = 0
             Class348_Sub40_Sub4.anInt9115 = 0
             Class285.anInt4751 = 0
@@ -3015,7 +3015,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub39.anInt9483 = 0
             SoftwareSpriteRaster.anInt1611 = 0
             Class348_Sub5_Sub1.anInt8839 = 0
-            Class254.anInt3257 = 0
+            EmoteDefinition.anInt3257 = 0
             Class46.anInt743 = 0
             Class318_Sub1_Sub4_Sub1.anInt10092 = 0
             Class318_Sub1_Sub1_Sub2.anInt9975 = 0

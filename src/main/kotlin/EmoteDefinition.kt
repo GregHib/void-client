@@ -3,7 +3,7 @@ import Class50_Sub1.Companion.method462
 /* Class254 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class254 {
+class EmoteDefinition {
     var anInt3256: Int = 0
     var aString3258: String? = null
     private var aChar3259 = 0.toChar()

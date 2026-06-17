@@ -926,7 +926,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class254.aIntRange_3264) {
+            if (Class348_Sub3.aIntRange_6584 == EmoteDefinition.aIntRange_3264) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_109_ = Class299.aClass348_Sub49_Sub2_3813!!.method3341(-8679)
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
