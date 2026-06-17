@@ -58,7 +58,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun c(): Class365 //c
 
-    abstract fun method3638(class101: Class101?)
+    abstract fun method3638(abstractCameraTransform: AbstractCameraTransform?)
 
     abstract fun na(i: Int, i_23_: Int, i_24_: Int, i_25_: Int): IntArray?
 
@@ -68,7 +68,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3639(): Boolean
 
-    abstract fun method3640(): Class101?
+    abstract fun method3640(): AbstractCameraTransform?
 
     abstract fun method3642(i: Int, class348_sub1s: Array<Class348_Sub1?>?)
 
@@ -105,7 +105,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3653(class299: Class299?)
 
-    abstract fun method3654(): Class101
+    abstract fun method3654(): AbstractCameraTransform
 
     abstract fun JA(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, i_66_: Int, i_67_: Int): Int
 
@@ -276,7 +276,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3704(): Int
 
-    abstract fun method3705(): Class101
+    abstract fun method3705(): AbstractCameraTransform
 
     abstract fun XA(): Int
 

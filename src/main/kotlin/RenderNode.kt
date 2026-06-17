@@ -14,7 +14,7 @@ abstract class RenderNode : Class348_Sub42() {
         @JvmField
         var aBoolean9719: Boolean = true
         @JvmField
-        var aClass101_9720: Class101? = null
+        var aAbstractCameraTransform_9720: AbstractCameraTransform? = null
         @JvmField
         @Volatile
         var anInt9721: Int = -1
@@ -27,17 +27,17 @@ abstract class RenderNode : Class348_Sub42() {
 
         @JvmStatic
         fun method3284(bool: Boolean, d: Double) {
-            Class44.aClass101_624!!.method898(Class51.aClass101_905)
+            Class44.aAbstractCameraTransform_624!!.method898(Class51.aAbstractCameraTransform_905)
             anInt9717++
             if (bool != true) method3285(10)
-            Class44.aClass101_624!!.method891(0, 0, d.toInt())
-            Class21.aRenderer326!!.method3638(Class44.aClass101_624)
+            Class44.aAbstractCameraTransform_624!!.method891(0, 0, d.toInt())
+            Class21.aRenderer326!!.method3638(Class44.aAbstractCameraTransform_624)
         }
 
         @JvmStatic
         fun method3285(i: Int) {
             val i_0_ = -61 % ((i - -73) / 32)
-            aClass101_9720 = null
+            aAbstractCameraTransform_9720 = null
             anIntArray9724 = null
             aBooleanArray9718 = null
             aClass312_9716 = null
