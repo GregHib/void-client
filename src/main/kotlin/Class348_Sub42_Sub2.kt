@@ -171,7 +171,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
                 for (i_8_ in 0..<i_7_) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_8_] = CacheIndexManager(SceneryDetailOptionState.aStringArrayArray6093!![(Npc.anInt10503 - 2)]!![i_8_])
             } else Class75_Sub1.anInt5652 = 1
             WidgetDefinition.anIntArray256 = IntArray(Class75_Sub1.anInt5652 - 1)
-            Class345.anIntArray4271 = IntArray(Class75_Sub1.anInt5652 - 1)
+            ParticleProcessor.anIntArray4271 = IntArray(Class75_Sub1.anInt5652 - 1)
         }
     }
 }

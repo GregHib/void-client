@@ -97,7 +97,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f = (0.3333333f * ((anIntArray5511!![class353.anInt4349]) - -(anIntArray5511!![class353.anInt4344]) + (anIntArray5511!![class353.anInt4339])).toFloat())
                     val f_1_ = (0.3333333f * ((anIntArray5519!![class353.anInt4344]) + (anIntArray5519!![class353.anInt4349]) + (anIntArray5519!![class353.anInt4339])).toFloat())
                     val f_2_ = (0.3333333f * ((anIntArray5429!![class353.anInt4339]) + (anIntArray5429!![class353.anInt4344]) + (anIntArray5429!![class353.anInt4349])).toFloat())
-                    val f_3_ = (f_2_ * Class348_Sub42_Sub4.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + Class345.aFloat4268)
+                    val f_3_ = (f_2_ * Class348_Sub42_Sub4.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
                     val f_4_ = (Class348_Sub12.aFloat6752 + (SceneEffectMarker.aFloat6430 * f_2_ + (Class348_Sub20.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
                     val f_5_ = WorldMapRenderer.aFloat4673 + (Class353.aFloat4338 * f_1_ + f * RenderQueueState.aFloat6523 + f_2_ * Renderer.aFloat4582)
                     val f_6_ = ((1.0 / sqrt((f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_)).toDouble())).toFloat() * class353.anInt4347.toFloat())
@@ -1261,9 +1261,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
                 if (!(aHa_Sub3_5419!!.aFloat8089 <= f_182_) && !(aHa_Sub3_5419!!.anInt8095.toFloat() >= f_183_)) {
                     DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5711 * class101_sub2_180_.aFloat5700) + (class101_sub2_180_.aFloat5722 * class101_sub2.aFloat5700) + (class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5704))
-                    Class345.aFloat4268 = ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5700) + (class101_sub2.aFloat5711 * (class101_sub2_180_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_180_.aFloat5724)) + class101_sub2.aFloat5729)
-                    val f_184_ = ((anInt5461.toFloat() * DynamicSceneObjectEntity.aFloat10199) + Class345.aFloat4268)
-                    val f_185_ = ((DynamicSceneObjectEntity.aFloat10199 * anInt5509.toFloat()) + Class345.aFloat4268)
+                    ParticleProcessor.aFloat4268 = ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5700) + (class101_sub2.aFloat5711 * (class101_sub2_180_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_180_.aFloat5724)) + class101_sub2.aFloat5729)
+                    val f_184_ = ((anInt5461.toFloat() * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
+                    val f_185_ = ((DynamicSceneObjectEntity.aFloat10199 * anInt5509.toFloat()) + ParticleProcessor.aFloat4268)
                     val f_186_: Float
                     val f_187_: Float
                     if (f_185_ < f_184_) {
@@ -1299,10 +1299,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             if (class318_sub3 != null) {
                                 val i_192_ = anInt5467 + anInt5507 shr 1
                                 val i_193_ = anInt5418 + anInt5443 shr 1
-                                val i_194_ = (Class345.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
+                                val i_194_ = (ParticleProcessor.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
                                 val i_195_ = (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (SceneEffectMarker.aFloat6430 * i_193_.toFloat())).toInt()
                                 val i_196_ = ((anInt5461.toFloat() * Class353.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
-                                val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_193_.toFloat())).toInt()
+                                val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_193_.toFloat())).toInt()
                                 val i_198_ = ((SceneEffectMarker.aFloat6430 * i_193_.toFloat()) + (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
                                 class318_sub3.anInt6402 = ((i_195_ * aHa_Sub3_5419!!.anInt8134 / i) + aHa_Sub3_5419!!.anInt8130)
                                 class318_sub3.anInt6405 = (aHa_Sub3_5419!!.anInt8094 - -(i_194_ * (aHa_Sub3_5419!!.anInt8129) / i))
@@ -1735,10 +1735,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     f_310_ = f - anInt5510.toFloat()
                 }
                 if (!(aHa_Sub3_5419!!.aFloat8169 <= f_310_) && !(f_309_ <= aHa_Sub3_5419!!.anInt8095.toFloat())) {
-                    Class345.aFloat4268 = (class101_sub2.aFloat5729 + ((class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5710)) + (class101_sub2.aFloat5711 * (class101_sub2_307_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_307_.aFloat5724))))
+                    ParticleProcessor.aFloat4268 = (class101_sub2.aFloat5729 + ((class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5710)) + (class101_sub2.aFloat5711 * (class101_sub2_307_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_307_.aFloat5724))))
                     DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5704 * class101_sub2_307_.aFloat5691) + ((class101_sub2_307_.aFloat5700 * class101_sub2.aFloat5711) + (class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5722))))
-                    val f_311_ = ((anInt5461.toFloat() * DynamicSceneObjectEntity.aFloat10199) + Class345.aFloat4268)
-                    val f_312_ = (Class345.aFloat4268 + (DynamicSceneObjectEntity.aFloat10199 * anInt5509.toFloat()))
+                    val f_311_ = ((anInt5461.toFloat() * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
+                    val f_312_ = (ParticleProcessor.aFloat4268 + (DynamicSceneObjectEntity.aFloat10199 * anInt5509.toFloat()))
                     val f_313_: Float
                     val f_314_: Float
                     if (f_311_ > f_312_) {
@@ -1776,7 +1776,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 var bool_319_ = true
                                 val i_320_ = anInt5507 - -anInt5467 shr 1
                                 val i_321_ = anInt5418 + anInt5443 shr 1
-                                val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_321_.toFloat())).toInt()
+                                val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_321_.toFloat())).toInt()
                                 val i_323_ = ((SceneEffectMarker.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * Class348_Sub20.aFloat6835) + Class348_Sub12.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
                                 val i_324_ = (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523) + (anInt5461.toFloat() * Class353.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_324_) bool = true
@@ -1784,7 +1784,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                     class318_sub3.anInt6402 = (aHa_Sub3_5419!!.anInt8130 - -(i_323_ * (aHa_Sub3_5419!!.anInt8134) / i_324_))
                                     class318_sub3.anInt6405 = ((aHa_Sub3_5419!!.anInt8129 * i_322_ / i_324_) + (aHa_Sub3_5419!!.anInt8094))
                                 }
-                                val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
+                                val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
                                 val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (Class348_Sub12.aFloat6752 + (i_320_.toFloat() * (Class348_Sub20.aFloat6835))) + (i_321_.toFloat() * SceneEffectMarker.aFloat6430)).toInt()
                                 val i_327_ = ((anInt5509.toFloat() * Class353.aFloat4338) + (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_327_) bool = true

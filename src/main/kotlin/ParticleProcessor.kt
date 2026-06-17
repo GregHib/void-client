@@ -1,7 +1,7 @@
 /* Class345 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-abstract class Class345 {
+abstract class ParticleProcessor {
     abstract fun method2694(i: Int, class348_sub42_sub9: Class348_Sub42_Sub9): Class348_Sub42_Sub9?
 
     companion object {

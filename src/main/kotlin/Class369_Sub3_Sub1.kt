@@ -87,12 +87,12 @@ class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, tileRend
         @JvmStatic
         fun method3577(i: Int, i_10_: Byte, class45: Class45): AbstractModelRenderer? {
             anInt10176++
-            var abstractModelRenderer = Class345.aClass60_4273!!.method583(i.toLong(), -68) as AbstractModelRenderer?
+            var abstractModelRenderer = ParticleProcessor.aClass60_4273!!.method583(i.toLong(), -68) as AbstractModelRenderer?
             val i_11_ = -86 / ((55 - i_10_) / 51)
             if (abstractModelRenderer == null) {
                 if (ScrollTexMaterialPass.aBoolean6289) abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(SpriteImage.method1512(class45, i), true)
                 else abstractModelRenderer = GlTexture2D.method1969(class45.method415(73.toByte(), i)!!, -5901)
-                Class345.aClass60_4273!!.method582(abstractModelRenderer, i.toLong(), (-108).toByte())
+                ParticleProcessor.aClass60_4273!!.method582(abstractModelRenderer, i.toLong(), (-108).toByte())
             }
             return abstractModelRenderer
         }

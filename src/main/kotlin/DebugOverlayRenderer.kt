@@ -33,7 +33,7 @@ object DebugOverlayRenderer {
         val i_1_ = 30
         if (Class348_Sub18.anInt6818 != 0 && Class362.aFont_4456 != null) {
             Class9.aRenderer171!!.K(Class348_Sub40_Sub10.anIntArray9183)
-            for (i_2_ in WidgetDefinition.anIntArray256!!.indices) Class9.aRenderer171!!.method3660((WidgetDefinition.anIntArray256!![i_2_] + Class345.anIntArray4271!![i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183!![3] - Class348_Sub40_Sub10.anIntArray9183!![1]), Class348_Sub40_Sub10.anIntArray9183!![1], true)
+            for (i_2_ in WidgetDefinition.anIntArray256!!.indices) Class9.aRenderer171!!.method3660((WidgetDefinition.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183!![3] - Class348_Sub40_Sub10.anIntArray9183!![1]), Class348_Sub40_Sub10.anIntArray9183!![1], true)
             for (i_3_ in 0..<Class348_Sub42_Sub10.anInt9577) {
                 val class338 = Class348_Sub42_Sub19.aMapTileShapeArray9700!![i_3_]!!
                 Class9.aRenderer171!!.H(class338.anIntArray4187!![0], class338.anIntArray4191[0], class338.anIntArray4184[0], ClickFeedbackTask.anIntArray4670)

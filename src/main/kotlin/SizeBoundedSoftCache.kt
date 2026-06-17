@@ -116,7 +116,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
 
     fun method1346(i: Int, i_4_: Int) {
         anInt2322++
-        if (MinimapDrawController.aClass345_1607 != null) {
+        if (MinimapDrawController.aParticleProcessor_1607 != null) {
             var class348_sub42_sub9 = aLinkedNodeListIterator_2316!!.method1011(-72) as Class348_Sub42_Sub9?
             while (class348_sub42_sub9 != null) {
                 if (class348_sub42_sub9.method3206((-124).toByte())) {
@@ -126,7 +126,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                         anInt2311 += (class348_sub42_sub9.anInt9556)
                     }
                 } else if (++class348_sub42_sub9.aLong7057 > i_4_.toLong()) {
-                    val class348_sub42_sub9_5_ = MinimapDrawController.aClass345_1607!!.method2694(-1, class348_sub42_sub9)
+                    val class348_sub42_sub9_5_ = MinimapDrawController.aParticleProcessor_1607!!.method2694(-1, class348_sub42_sub9)
                     aClass356_2312.method3483(120.toByte(), (class348_sub42_sub9.aLong4291), class348_sub42_sub9_5_)
                     method573(class348_sub42_sub9_5_, class348_sub42_sub9, 63.toByte())
                     class348_sub42_sub9.method2715(70.toByte())

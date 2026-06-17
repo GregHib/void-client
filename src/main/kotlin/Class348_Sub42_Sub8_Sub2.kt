@@ -304,7 +304,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return false
             }
-            if (Class345.aIntRange_4269 == Class348_Sub3.aIntRange_6584) {
+            if (ParticleProcessor.aIntRange_4269 == Class348_Sub3.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(71.toByte())
                 WallSceneEntity.method2397((-128).toByte())
                 Class37.anInt495 = i
@@ -1361,7 +1361,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return false
             }
-            if (Class348_Sub3.aIntRange_6584 == Class345.aIntRange_4272) {
+            if (Class348_Sub3.aIntRange_6584 == ParticleProcessor.aIntRange_4272) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-127)
                 val i_173_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 WallSceneEntity.method2397((-128).toByte())

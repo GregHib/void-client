@@ -161,7 +161,7 @@ class GlTexture3D : GlTexture {
                 Class52.anIntArray4906 = Class9.aRenderer171!!.Y()
                 Class9.aRenderer171!!.K(Class348_Sub40_Sub10.anIntArray9183)
                 val i_43_ = ((Class348_Sub40_Sub10.anIntArray9183!![2] - Class348_Sub40_Sub10.anIntArray9183!![0]) / Class75_Sub1.anInt5652)
-                for (i_44_ in 0..<Class75_Sub1.anInt5652 - 1) WidgetDefinition.anIntArray256!![i_44_] = i_43_ * (i_44_ + 1) + Class345.anIntArray4271!![i_44_]
+                for (i_44_ in 0..<Class75_Sub1.anInt5652 - 1) WidgetDefinition.anIntArray256!![i_44_] = i_43_ * (i_44_ + 1) + ParticleProcessor.anIntArray4271!![i_44_]
                 for (i_45_ in Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!!.indices) Class348_Sub40_Sub34.aSceneLoaderThreadArray9432!![i_45_]!!.method2209()
             }
             if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
@@ -184,8 +184,8 @@ class GlTexture3D : GlTexture {
                 for (i_48_ in 0..<MapAreaDefinition.anInt2524) OverlayColorTable.aBooleanArrayArrayArray1751!![i_48_] = Class5_Sub2.aBooleanArrayArrayArray8361!![i_48_]!!
                 if (Npc.anInt10503 == 2) {
                     if (HitsplatDefinition.aLongArray2013!![0] < HitsplatDefinition.aLongArray2013!![1]) {
-                        if (WidgetDefinition.anIntArray256!![0] + Class345.anIntArray4271!![0] > Class348_Sub40_Sub10.anIntArray9183!![0]) Class345.anIntArray4271!![0]++
-                    } else if ((HitsplatDefinition.aLongArray2013!![0] > HitsplatDefinition.aLongArray2013!![1]) && ((WidgetDefinition.anIntArray256!![0] + Class345.anIntArray4271!![0]) < Class348_Sub40_Sub10.anIntArray9183!![2])) Class345.anIntArray4271!![0]--
+                        if (WidgetDefinition.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0] > Class348_Sub40_Sub10.anIntArray9183!![0]) ParticleProcessor.anIntArray4271!![0]++
+                    } else if ((HitsplatDefinition.aLongArray2013!![0] > HitsplatDefinition.aLongArray2013!![1]) && ((WidgetDefinition.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0]) < Class348_Sub40_Sub10.anIntArray9183!![2])) ParticleProcessor.anIntArray4271!![0]--
                 }
             }
             if (!Class348_Sub40_Sub17.aBoolean9242) {

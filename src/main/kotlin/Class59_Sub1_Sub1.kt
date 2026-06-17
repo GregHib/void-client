@@ -276,7 +276,7 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
         }
 
         @JvmStatic
-        fun method558(i: Int): Class345? {
+        fun method558(i: Int): ParticleProcessor? {
             val i_7_ = -98 % ((i - -34) / 33)
             anInt8658++
             try {

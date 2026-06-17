@@ -2960,7 +2960,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
         @JvmStatic
         fun method3886(i: Int) {
-            Class345.aClass60_4273!!.method590(0)
+            ParticleProcessor.aClass60_4273!!.method590(0)
             if (i >= -58) method3824(43, 63, -121, -1, 72, 77, -11, 22)
             anInt8018++
         }

@@ -293,7 +293,7 @@ import TileRenderState.Companion.method2677
 import TileRenderState.Companion.method2678
 import WidgetRedrawRegion.Companion.method2682
 import ByteStore.Companion.method2690
-import Class345.Companion.method2693
+import ParticleProcessor.Companion.method2693
 import Class346_Sub1.Companion.method2705
 import Class347.Companion.method2707
 import Class347.Companion.method2708

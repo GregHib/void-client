@@ -6,7 +6,7 @@ import Class59_Sub1_Sub1.Companion.method558
 */
 object MinimapDrawController {
     @JvmField
-    var aClass345_1607: Class345? = method558(96)
+    var aParticleProcessor_1607: ParticleProcessor? = method558(96)
     @JvmField
     var anInt1608: Int = 0
     @JvmField
@@ -14,13 +14,13 @@ object MinimapDrawController {
 
     @JvmStatic
     fun method948(bool: Boolean) {
-        aClass345_1607 = null
-        if (bool != false) aClass345_1607 = null
+        aParticleProcessor_1607 = null
+        if (bool != false) aParticleProcessor_1607 = null
     }
 
     @JvmStatic
     fun method949(i: Int, i_0_: Int, i_1_: Int, i_2_: Byte, i_3_: Int, i_4_: Int): Boolean {
-        if (i_2_ < 117) aClass345_1607 = null
+        if (i_2_ < 117) aParticleProcessor_1607 = null
         anInt1609++
         var i_5_ = i_3_
         while (i_0_ >= i_5_) {

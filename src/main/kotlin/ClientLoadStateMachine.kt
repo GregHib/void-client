@@ -165,7 +165,7 @@ object ClientLoadStateMachine {
             Class348_Sub42_Sub3.method3178(SoftwareSpriteRaster.aClass45_1627, -124, method184(i xor 0x40a46ff3.inv()), CameraRotationStub.aClass45_322)
         }
         if (Class56.aClass56_1032 == Class348_Sub42_Sub15.aClass56_9660) {
-            if (Class345.anInt4270 == -1) Class345.anInt4270 = Class59_Sub2_Sub1.aClass45_8667!!.method417("scape main", 0)
+            if (ParticleProcessor.anInt4270 == -1) ParticleProcessor.anInt4270 = Class59_Sub2_Sub1.aClass45_8667!!.method417("scape main", 0)
             method3290(56)
             Class348_Sub49.method3379(2, 2)
         }
