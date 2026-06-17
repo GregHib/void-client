@@ -255,7 +255,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var aFloat7832: Float
     @JvmField
-    var aClass123_7833: Class123? = null
+    var aHoverActionEntry_7833: HoverActionEntry? = null
     @JvmField
     var aClass64_Sub3_7834: Class64_Sub3? = null
     @JvmField
@@ -283,7 +283,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var anInt7848: Int
     @JvmField
-    var aClass123_7849: Class123? = null
+    var aHoverActionEntry_7849: HoverActionEntry? = null
     private val aFloatArray7850: FloatArray
     private var aFloat7851: Float
     private var anInterface2_7852: Interface2? = null
@@ -1847,8 +1847,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     class348_sub49_sub1.method3399(18291, 0.0f)
                 }
                 anInterface2_7797 = method3731(2, false, 20, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
-                this.aClass123_7849 = Class123(anInterface2_7797, 5126, 3, 0)
-                this.aClass123_7833 = Class123(anInterface2_7797, 5126, 2, 12)
+                this.aHoverActionEntry_7849 = HoverActionEntry(anInterface2_7797, 5126, 3, 0)
+                this.aHoverActionEntry_7833 = HoverActionEntry(anInterface2_7797, 5126, 2, 12)
                 aClass233_7711.method1654(643267468, this)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, "qo.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
@@ -2441,33 +2441,33 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         } while (false)
     }
 
-    fun method3794(class123: Class123?, class123_279_: Class123?, i: Int, class123_280_: Class123?, class123_281_: Class123?) {
+    fun method3794(hoverActionEntry: HoverActionEntry?, hoverActionEntry_279_: HoverActionEntry?, i: Int, hoverActionEntry_280_: HoverActionEntry?, hoverActionEntry_281_: HoverActionEntry?) {
         try {
-            if (class123 != null) {
-                method3750(i + 26493, class123.anInterface2_1811)
-                glVertexPointer(class123.aByte1814.toInt(), class123.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) - -(class123.aByte1812).toLong()))
+            if (hoverActionEntry != null) {
+                method3750(i + 26493, hoverActionEntry.anInterface2_1811)
+                glVertexPointer(hoverActionEntry.aByte1814.toInt(), hoverActionEntry.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) - -(hoverActionEntry.aByte1812).toLong()))
                 glEnableClientState(32884)
             } else glDisableClientState(32884)
             anInt7529++
-            if (class123_281_ != null) {
-                method3750(56, class123_281_.anInterface2_1811)
-                glNormalPointer(class123_281_.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) - -(class123_281_.aByte1812).toLong()))
+            if (hoverActionEntry_281_ != null) {
+                method3750(56, hoverActionEntry_281_.anInterface2_1811)
+                glNormalPointer(hoverActionEntry_281_.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) - -(hoverActionEntry_281_.aByte1812).toLong()))
                 glEnableClientState(32885)
             } else glDisableClientState(32885)
-            if (class123_279_ != null) {
-                method3750(67, class123_279_.anInterface2_1811)
-                glColorPointer(class123_279_.aByte1814.toInt(), class123_279_.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) + (class123_279_.aByte1812).toLong()))
+            if (hoverActionEntry_279_ != null) {
+                method3750(67, hoverActionEntry_279_.anInterface2_1811)
+                glColorPointer(hoverActionEntry_279_.aByte1814.toInt(), hoverActionEntry_279_.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) + (hoverActionEntry_279_.aByte1812).toLong()))
                 glEnableClientState(32886)
             } else glDisableClientState(32886)
             if (i == -26411) {
-                if (class123_280_ != null) {
-                    method3750(119, class123_280_.anInterface2_1811)
-                    glTexCoordPointer(class123_280_.aByte1814.toInt(), class123_280_.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) - -class123_280_.aByte1812.toLong()))
+                if (hoverActionEntry_280_ != null) {
+                    method3750(119, hoverActionEntry_280_.anInterface2_1811)
+                    glTexCoordPointer(hoverActionEntry_280_.aByte1814.toInt(), hoverActionEntry_280_.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) - -hoverActionEntry_280_.aByte1812.toLong()))
                     glEnableClientState(32888)
                 } else glDisableClientState(32888)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.KB(" + (if (class123 != null) "{...}" else "null") + ',' + (if (class123_279_ != null) "{...}" else "null") + ',' + i + ',' + (if (class123_280_ != null) "{...}" else "null") + ',' + (if (class123_281_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.KB(" + (if (hoverActionEntry != null) "{...}" else "null") + ',' + (if (hoverActionEntry_279_ != null) "{...}" else "null") + ',' + i + ',' + (if (hoverActionEntry_280_ != null) "{...}" else "null") + ',' + (if (hoverActionEntry_281_ != null) "{...}" else "null") + ')'))
         }
     }
 

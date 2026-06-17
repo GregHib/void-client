@@ -32,13 +32,13 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     @JvmField
     var aHa_Sub2_8272: OpenGlRenderer? = null
     private var aByteArrayArray8273: Array<ByteArray?>?
-    private var aClass123_8274: Class123? = null
+    private var aHoverActionEntry_8274: HoverActionEntry? = null
     @JvmField
-    var aClass123_8275: Class123? = null
+    var aHoverActionEntry_8275: HoverActionEntry? = null
     @JvmField
-    var aClass123_8276: Class123? = null
+    var aHoverActionEntry_8276: HoverActionEntry? = null
     @JvmField
-    var aClass123_8277: Class123? = null
+    var aHoverActionEntry_8277: HoverActionEntry? = null
     private var aClass356_8278: Class356? = null
     private var anInterface2_8279: Interface2? = null
     private var anInt8280 = 0
@@ -375,17 +375,17 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             }
             stream.a()
             anInterface2_8279 = this.aHa_Sub2_8272!!.method3739(8448, nativeheapbuffer, false, i, stream.b())
-            this.aClass123_8276 = Class123(anInterface2_8279, 5126, 3, 0)
-            aClass123_8274 = Class123(anInterface2_8279, 5121, 4, 12)
+            this.aHoverActionEntry_8276 = HoverActionEntry(anInterface2_8279, 5126, 3, 0)
+            aHoverActionEntry_8274 = HoverActionEntry(anInterface2_8279, 5121, 4, 12)
             val i_111_: Int
             if (anIntArrayArrayArray8252 == null) {
                 i_111_ = 24
-                this.aClass123_8277 = Class123(anInterface2_8279, 5126, 2, 16)
+                this.aHoverActionEntry_8277 = HoverActionEntry(anInterface2_8279, 5126, 2, 16)
             } else {
                 i_111_ = 28
-                this.aClass123_8277 = Class123(anInterface2_8279, 5126, 3, 16)
+                this.aHoverActionEntry_8277 = HoverActionEntry(anInterface2_8279, 5126, 3, 16)
             }
-            if ((0x7 and this.anInt8235) != 0) this.aClass123_8275 = Class123(anInterface2_8279, 5126, 3, i_111_)
+            if ((0x7 and this.anInt8235) != 0) this.aHoverActionEntry_8275 = HoverActionEntry(anInterface2_8279, 5126, 3, i_111_)
             val ls = LongArray(aClass348_Sub20Array8282!!.size)
             for (i_112_ in aClass348_Sub20Array8282!!.indices) {
                 val class348_sub20 = aClass348_Sub20Array8282!![i_112_]!!
@@ -515,7 +515,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 this.aHa_Sub2_8272!!.method3728(true, 91)
                 this.aHa_Sub2_8272!!.method3796(16384)
             }
-            this.aHa_Sub2_8272!!.method3794(this.aClass123_8276, aClass123_8274, -26411, this.aClass123_8277, this.aClass123_8275)
+            this.aHa_Sub2_8272!!.method3794(this.aHoverActionEntry_8276, aHoverActionEntry_8274, -26411, this.aHoverActionEntry_8277, this.aHoverActionEntry_8275)
             if (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154!!.size < anInt8257 * 2) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(anInt8257 * 2)
             else this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.anInt7197 = 0
             var i_158_ = 0
@@ -709,7 +709,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             if (aSoftwareSpriteRaster_8266 != null) {
                 glPushMatrix()
                 glTranslatef(0.0f, -1.0f, 0.0f)
-                this.aHa_Sub2_8272!!.method3794(this.aClass123_8276, null, -26411, this.aClass123_8277, null)
+                this.aHa_Sub2_8272!!.method3794(this.aHoverActionEntry_8276, null, -26411, this.aHoverActionEntry_8277, null)
                 aSoftwareSpriteRaster_8266!!.method956(bool, 112, bools, i_192_, i_196_, i_194_)
                 glPopMatrix()
             }

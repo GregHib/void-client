@@ -8,11 +8,11 @@ import kotlin.math.min
 class Class233 internal constructor() {
     private val aClass348_Sub49_Sub1_3020: Class348_Sub49_Sub1
     private val aFloatArray3024 = FloatArray(16)
-    private var aClass123_3025: Class123? = null
+    private var aHoverActionEntry_3025: HoverActionEntry? = null
     private val anInt3026: Int
     private var anInterface2_3027: Interface2? = null
-    private var aClass123_3028: Class123? = null
-    private var aClass123_3029: Class123? = null
+    private var aHoverActionEntry_3028: HoverActionEntry? = null
+    private var aHoverActionEntry_3029: HoverActionEntry? = null
     private val aClass318_Sub9_Sub2ArrayArray3030: Array<Array<Class318_Sub9_Sub2?>?>
     private val aClass318_Sub9_Sub2ArrayArray3031: Array<Array<Class318_Sub9_Sub2?>?>
     private val anIntArray3032: IntArray
@@ -145,9 +145,9 @@ class Class233 internal constructor() {
         if (i == 643267468) {
             anInt3023++
             anInterface2_3027 = var_ha_Sub2.method3731(2, true, 24, null, 196584)
-            aClass123_3025 = Class123(anInterface2_3027, 5126, 2, 0)
-            aClass123_3029 = Class123(anInterface2_3027, 5126, 3, 8)
-            aClass123_3028 = Class123(anInterface2_3027, 5121, 4, 20)
+            aHoverActionEntry_3025 = HoverActionEntry(anInterface2_3027, 5126, 2, 0)
+            aHoverActionEntry_3029 = HoverActionEntry(anInterface2_3027, 5126, 3, 8)
+            aHoverActionEntry_3028 = HoverActionEntry(anInterface2_3027, 5121, 4, 20)
         }
     }
 
@@ -384,7 +384,7 @@ class Class233 internal constructor() {
             }
             if (aClass348_Sub49_Sub1_3020.anInt7197 != 0) {
                 anInterface2_3027!!.method11(24, aClass348_Sub49_Sub1_3020.anInt7197, (aClass348_Sub49_Sub1_3020.aByteArray7154), -9894)
-                var_ha_Sub2.method3794(aClass123_3029, aClass123_3028, i_18_ + -786006967, aClass123_3025, null)
+                var_ha_Sub2.method3794(aHoverActionEntry_3029, aHoverActionEntry_3028, i_18_ + -786006967, aHoverActionEntry_3025, null)
                 var_ha_Sub2.method3756((aClass348_Sub49_Sub1_3020.anInt7197 / 24), 7, 0, 120)
             }
         }

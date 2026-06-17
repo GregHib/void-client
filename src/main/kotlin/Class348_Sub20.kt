@@ -12,7 +12,7 @@ class Class348_Sub20 internal constructor(private val aS_Sub2_6839: OpenGlTerrai
     private var aNativeHeapBuffer6840: NativeHeapBuffer? = null
     private val anIntArray6842: IntArray
     private val aClass119_Sub2_6843: NativeVertexBuffer
-    private var aClass123_6844: Class123? = null
+    private var aHoverActionEntry_6844: HoverActionEntry? = null
     private var aStream6846: Stream? = null
 
     fun method2945(i: Int, i_0_: Byte, i_1_: Int, i_2_: Int) {
@@ -82,14 +82,14 @@ class Class348_Sub20 internal constructor(private val aS_Sub2_6839: OpenGlTerrai
         }
         if (i_9_ > 0) {
             aClass119_Sub2_6843.method35(class348_sub49_sub1.aByteArray7154, 5123, 64, class348_sub49_sub1.anInt7197)
-            aHa_Sub2_6831!!.method3794(aS_Sub2_6839.aClass123_8276, aClass123_6844, -26411, aS_Sub2_6839.aClass123_8277, aS_Sub2_6839.aClass123_8275)
+            aHa_Sub2_6831!!.method3794(aS_Sub2_6839.aHoverActionEntry_8276, aHoverActionEntry_6844, -26411, aS_Sub2_6839.aHoverActionEntry_8277, aS_Sub2_6839.aHoverActionEntry_8275)
             aHa_Sub2_6831!!.method3746(((0x7 and aS_Sub2_6839.anInt8235) != 0), this.anInt6841, ((aS_Sub2_6839.anInt8235 and 0x8) != 0), 112)
             if (aHa_Sub2_6831!!.aBoolean7846) aHa_Sub2_6831!!.EA(2147483647, this.anInt6825, this.anInt6833, this.anInt6826)
             glMatrixMode(5890)
             glPushMatrix()
             glScalef(1.0f / this.aFloat6832, 1.0f / this.aFloat6832, 1.0f)
             glMatrixMode(5888)
-            aHa_Sub2_6831!!.method3794(aS_Sub2_6839.aClass123_8276, aClass123_6844, -26411, aS_Sub2_6839.aClass123_8277, aS_Sub2_6839.aClass123_8275)
+            aHa_Sub2_6831!!.method3794(aS_Sub2_6839.aHoverActionEntry_8276, aHoverActionEntry_6844, -26411, aS_Sub2_6839.aHoverActionEntry_8277, aS_Sub2_6839.aHoverActionEntry_8275)
             aHa_Sub2_6831!!.method3759(i_9_, -128, 4, aClass119_Sub2_6843, 0)
             glMatrixMode(5890)
             glPopMatrix()
@@ -162,7 +162,7 @@ class Class348_Sub20 internal constructor(private val aS_Sub2_6839: OpenGlTerrai
             aStream6846!!.a()
             anInt6828++
             val interface2 = aHa_Sub2_6831!!.method3739(8448, aNativeHeapBuffer6840, false, 4, i_37_ * 4)
-            aClass123_6844 = Class123(interface2, 5121, 4, 0)
+            aHoverActionEntry_6844 = HoverActionEntry(interface2, 5121, 4, 0)
             aStream6846 = null
             aNativeHeapBuffer6840 = null
         }

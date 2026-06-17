@@ -5,7 +5,7 @@ import kotlin.math.sqrt
 * Visit http://jode.sourceforge.net/
 */
 class Class348_Sub32 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: OpenGlTerrainTile?, class348_sub1: Class348_Sub1?, `is`: IntArray?) : Class348() {
-    private val aClass123_6927: Class123?
+    private val aHoverActionEntry_6927: HoverActionEntry?
     private var aFloatArrayArray6928: Array<FloatArray?>?
     private val aS_Sub2_6929: OpenGlTerrainTile?
     private var aClass356_6932: Class356? = null
@@ -15,7 +15,7 @@ class Class348_Sub32 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Su
     private val aClass348_Sub1_6937: Class348_Sub1?
     private var anInt6940 = 0
     private var anInt6942 = 0
-    private val aClass123_6943: Class123?
+    private val aHoverActionEntry_6943: HoverActionEntry?
     private val anInt6944: Int
     private val anInterface8_6945: Interface8?
     private var aFloatArrayArray6947: Array<FloatArray?>?
@@ -140,7 +140,7 @@ class Class348_Sub32 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Su
                     val i_41_ = -i_36_ + i_38_
                     if (i_40_ > -i_37_ && i_37_ > i_40_ && i_41_ > -i_37_ && i_37_ > i_41_ && bools[i_40_ + i_37_]!![i_37_ + i_41_]) {
                         aHa_Sub2_6951!!.method3808(((255.0f * aClass348_Sub1_6937!!.method2721(-66)).toInt() shl 24), i + -136)
-                        aHa_Sub2_6951.method3794(aClass123_6927, aClass123_6943, i + -26666, null, null)
+                        aHa_Sub2_6951.method3794(aHoverActionEntry_6927, aHoverActionEntry_6943, i + -26666, null, null)
                         aHa_Sub2_6951.method3759(anInt6934, -128, 4, anInterface8_6945, 0)
                         return
                     }
@@ -264,13 +264,13 @@ class Class348_Sub32 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Su
                 }
                 anInterface8_6945 = (aHa_Sub2_6951!!.method3733(5123, -49, aClass348_Sub49_6936!!.anInt7197, aClass348_Sub49_6936!!.aByteArray7154, false))
                 anInterface2_6952 = aHa_Sub2_6951.method3731(2, false, 16, (aClass348_Sub49_Sub1_6953!!.aByteArray7154), (aClass348_Sub49_Sub1_6953!!.anInt7197))
-                aClass123_6927 = Class123(anInterface2_6952, 5126, 3, 0)
-                aClass123_6943 = Class123(anInterface2_6952, 5121, 4, 12)
+                aHoverActionEntry_6927 = HoverActionEntry(anInterface2_6952, 5126, 3, 0)
+                aHoverActionEntry_6943 = HoverActionEntry(anInterface2_6952, 5121, 4, 12)
             } else {
                 anInterface2_6952 = null
                 anInterface8_6945 = null
-                aClass123_6927 = null
-                aClass123_6943 = null
+                aHoverActionEntry_6927 = null
+                aHoverActionEntry_6943 = null
             }
             aClass348_Sub49_Sub1_6953 = null
             aFloatArrayArray6928 = null

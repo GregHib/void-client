@@ -33,7 +33,7 @@ class Class64_Sub3 : Class64 {
     private var anInt5556 = 0
     private var anInt5557: Int
     private var aShort5559: Short = 0
-    private var aClass123_5563: Class123? = null
+    private var aHoverActionEntry_5563: HoverActionEntry? = null
     private var aShortArray5564: ShortArray? = null
     private var aShortArray5566: ShortArray? = null
     private var aFloatArray5571: FloatArray? = null
@@ -54,11 +54,11 @@ class Class64_Sub3 : Class64 {
     private var aClass48Array5596: Array<Class48?>? = null
     private val aHa_Sub2_5598: OpenGlRenderer?
     private var aShortArray5601: ShortArray? = null
-    private var aClass123_5605: Class123? = null
+    private var aHoverActionEntry_5605: HoverActionEntry? = null
     private var aShortArray5608: ShortArray? = null
-    private var aClass123_5610: Class123? = null
+    private var aHoverActionEntry_5610: HoverActionEntry? = null
     private var aShort5617: Short = 0
-    private var aClass123_5620: Class123? = null
+    private var aHoverActionEntry_5620: HoverActionEntry? = null
     private var aMapSceneTileDefinitionArray5621: Array<MapSceneTileDefinition?>? = null
     private var anIntArray5626: IntArray? = null
     private var anIntArrayArray5627: Array<IntArray?>? = null
@@ -83,7 +83,7 @@ class Class64_Sub3 : Class64 {
             anIntArray5644!![i_2_] = (anIntArray5593!![i_2_] * i_0_ - -(anIntArray5644!![i_2_] * i_1_) shr 14)
             anIntArray5593!![i_2_] = i_3_
         }
-        if (aClass123_5605 != null) aClass123_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
         aBoolean5527 = false
     }
 
@@ -121,8 +121,8 @@ class Class64_Sub3 : Class64 {
             if (aClass270_5575 != null) {
                 if (aClass270_5575!!.anInterface8_3463 == null) method678((aByte5581.toInt() and 0x10) != 0, 27.toByte())
                 if (aClass270_5575!!.anInterface8_3463 != null) {
-                    aHa_Sub2_5598!!.method3728(aClass123_5563 != null, 118)
-                    aHa_Sub2_5598.method3794(aClass123_5605, aClass123_5610, -26411, aClass123_5620, aClass123_5563)
+                    aHa_Sub2_5598!!.method3728(aHoverActionEntry_5563 != null, 118)
+                    aHa_Sub2_5598.method3794(aHoverActionEntry_5605, aHoverActionEntry_5610, -26411, aHoverActionEntry_5620, aHoverActionEntry_5563)
                     val i_7_ = -1 + anIntArray5626!!.size
                     var i_8_ = 0
                     while (i_7_ > i_8_) {
@@ -130,7 +130,7 @@ class Class64_Sub3 : Class64 {
                         val i_10_ = anIntArray5626!![i_8_ + 1]
                         var i_11_ = aShortArray5601!![i_9_].toInt() and 0xffff
                         if (i_11_ == 65535) i_11_ = -1
-                        aHa_Sub2_5598.method3801(aClass123_5563 != null, i_11_, 125)
+                        aHa_Sub2_5598.method3801(aHoverActionEntry_5563 != null, i_11_, 125)
                         aHa_Sub2_5598.method3759((-i_9_ + i_10_) * 3, -128, 4, (aClass270_5575!!.anInterface8_3463), i_9_ * 3)
                         i_8_++
                     }
@@ -198,7 +198,7 @@ class Class64_Sub3 : Class64 {
             anIntArray5543!![i_27_] = i_28_
             i_27_++
         }
-        if (aClass123_5605 != null) aClass123_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
         aBoolean5527 = false
     }
 
@@ -385,10 +385,10 @@ class Class64_Sub3 : Class64 {
                                                     }
                                                     i_85_++
                                                 }
-                                                if (aClass123_5563 == null && aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
-                                                if (aClass123_5563 != null) aClass123_5563!!.anInterface2_1811 = null
-                                                if ((class64_sub3_44_.aClass123_5563) == null && ((class64_sub3_44_.aClass123_5610) != null)) class64_sub3_44_.aClass123_5610!!.anInterface2_1811 = null
-                                                if ((class64_sub3_44_.aClass123_5563) != null) class64_sub3_44_.aClass123_5563!!.anInterface2_1811 = null
+                                                if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+                                                if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
+                                                if ((class64_sub3_44_.aHoverActionEntry_5563) == null && ((class64_sub3_44_.aHoverActionEntry_5610) != null)) class64_sub3_44_.aHoverActionEntry_5610!!.anInterface2_1811 = null
+                                                if ((class64_sub3_44_.aHoverActionEntry_5563) != null) class64_sub3_44_.aHoverActionEntry_5563!!.anInterface2_1811 = null
                                             }
                                         }
                                         i_76_++
@@ -419,7 +419,7 @@ class Class64_Sub3 : Class64 {
             aHa_Sub2_5598.method3788(-18516)
             aHa_Sub2_5598.C(!aBoolean5595)
             aHa_Sub2_5598.method3728(false, 35)
-            aHa_Sub2_5598.method3794(aHa_Sub2_5598.aClass123_7849, null, -26411, aHa_Sub2_5598.aClass123_7833, null)
+            aHa_Sub2_5598.method3794(aHa_Sub2_5598.aHoverActionEntry_7849, null, -26411, aHa_Sub2_5598.aHoverActionEntry_7833, null)
             for (i in 0..<anInt5536) {
                 val class118 = aMapSceneTileDefinitionArray5621!![i]!!
                 val class48 = aClass48Array5596!![i]!!
@@ -632,7 +632,7 @@ class Class64_Sub3 : Class64 {
             if (i_163_ != 128) anIntArray5644!![i_164_] = anIntArray5644!![i_164_] * i_163_ shr 7
             i_164_++
         }
-        if (aClass123_5605 != null) aClass123_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
         aBoolean5527 = false
     }
 
@@ -705,9 +705,9 @@ class Class64_Sub3 : Class64 {
             aShortArray5576!![i_175_] = ((i_172_ * aShortArray5576!![i_175_] + -(i_171_ * aShortArray5564!![i_175_])) shr 14).toShort()
             aShortArray5564!![i_175_] = i_176_.toShort()
         }
-        if (aClass123_5563 == null && aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
-        if (aClass123_5563 != null) aClass123_5563!!.anInterface2_1811 = null
-        if (aClass123_5605 != null) aClass123_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
         aBoolean5527 = false
     }
 
@@ -777,7 +777,7 @@ class Class64_Sub3 : Class64 {
                 class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
             }
         }
-        if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
     }
 
     public override fun H(i: Int, i_204_: Int, i_205_: Int) {
@@ -790,7 +790,7 @@ class Class64_Sub3 : Class64 {
             i_206_++
         }
         aBoolean5527 = false
-        if (aClass123_5605 != null) aClass123_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
     }
 
     public override fun a(i: Int) {
@@ -805,7 +805,7 @@ class Class64_Sub3 : Class64 {
             i_209_++
         }
         aBoolean5527 = false
-        if (aClass123_5605 != null) aClass123_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
     }
 
     public override fun F(): Boolean {
@@ -871,12 +871,12 @@ class Class64_Sub3 : Class64 {
                 class64_sub3_211_.anIntArray5543 = anIntArray5543
             }
             if (Class288.method2187(i, -79, anInt5556)) {
-                class64_sub3_211_.aClass123_5605 = class64_sub3_213_!!.aClass123_5605
+                class64_sub3_211_.aHoverActionEntry_5605 = class64_sub3_213_!!.aHoverActionEntry_5605
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x1).toByte()
-                class64_sub3_211_.aClass123_5605!!.anInterface2_1811 = aClass123_5605!!.anInterface2_1811
-                class64_sub3_211_.aClass123_5605!!.aByte1812 = aClass123_5605!!.aByte1812
-            } else if (!method616(i_212_ + 2, i, anInt5556)) class64_sub3_211_.aClass123_5605 = null
-            else class64_sub3_211_.aClass123_5605 = aClass123_5605
+                class64_sub3_211_.aHoverActionEntry_5605!!.anInterface2_1811 = aHoverActionEntry_5605!!.anInterface2_1811
+                class64_sub3_211_.aHoverActionEntry_5605!!.aByte1812 = aHoverActionEntry_5605!!.aByte1812
+            } else if (!method616(i_212_ + 2, i, anInt5556)) class64_sub3_211_.aHoverActionEntry_5605 = null
+            else class64_sub3_211_.aHoverActionEntry_5605 = aHoverActionEntry_5605
             if (ObjectSpawnDecoder.method1087(12644, anInt5556, i)) {
                 if (class64_sub3_213_!!.aShortArray5580 != null && (class64_sub3_213_.aShortArray5580!!.size >= anInt5632)) class64_sub3_211_.aShortArray5580 = class64_sub3_213_.aShortArray5580
                 else {
@@ -897,12 +897,12 @@ class Class64_Sub3 : Class64 {
                 }
             } else class64_sub3_211_.aByteArray5542 = aByteArray5542
             if (Class273.method2056(i, 108, anInt5556)) {
-                class64_sub3_211_.aClass123_5610 = class64_sub3_213_!!.aClass123_5610
+                class64_sub3_211_.aHoverActionEntry_5610 = class64_sub3_213_!!.aHoverActionEntry_5610
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x2).toByte()
-                class64_sub3_211_.aClass123_5610!!.anInterface2_1811 = aClass123_5610!!.anInterface2_1811
-                class64_sub3_211_.aClass123_5610!!.aByte1812 = aClass123_5610!!.aByte1812
-            } else if (Class146.method1193(anInt5556, i, true)) class64_sub3_211_.aClass123_5610 = aClass123_5610
-            else class64_sub3_211_.aClass123_5610 = null
+                class64_sub3_211_.aHoverActionEntry_5610!!.anInterface2_1811 = aHoverActionEntry_5610!!.anInterface2_1811
+                class64_sub3_211_.aHoverActionEntry_5610!!.aByte1812 = aHoverActionEntry_5610!!.aByte1812
+            } else if (Class146.method1193(anInt5556, i, true)) class64_sub3_211_.aHoverActionEntry_5610 = aHoverActionEntry_5610
+            else class64_sub3_211_.aHoverActionEntry_5610 = null
             if (Class156.method1241(anInt5556, i, -119)) {
                 if (class64_sub3_213_!!.aShortArray5564 != null && class64_sub3_213_.aShortArray5564!!.size >= anInt5529) {
                     class64_sub3_211_.aShortArray5564 = class64_sub3_213_.aShortArray5564
@@ -955,11 +955,11 @@ class Class64_Sub3 : Class64 {
             }
             if (Class348_Sub47.method3325(i, anInt5556, true)) {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x4).toByte()
-                class64_sub3_211_.aClass123_5563 = class64_sub3_213_!!.aClass123_5563
-                class64_sub3_211_.aClass123_5563!!.anInterface2_1811 = aClass123_5563!!.anInterface2_1811
-                class64_sub3_211_.aClass123_5563!!.aByte1812 = aClass123_5563!!.aByte1812
-            } else if (!method166(108.toByte(), anInt5556, i)) class64_sub3_211_.aClass123_5563 = null
-            else class64_sub3_211_.aClass123_5563 = aClass123_5563
+                class64_sub3_211_.aHoverActionEntry_5563 = class64_sub3_213_!!.aHoverActionEntry_5563
+                class64_sub3_211_.aHoverActionEntry_5563!!.anInterface2_1811 = aHoverActionEntry_5563!!.anInterface2_1811
+                class64_sub3_211_.aHoverActionEntry_5563!!.aByte1812 = aHoverActionEntry_5563!!.aByte1812
+            } else if (!method166(108.toByte(), anInt5556, i)) class64_sub3_211_.aHoverActionEntry_5563 = null
+            else class64_sub3_211_.aHoverActionEntry_5563 = aHoverActionEntry_5563
             if (method2174(121.toByte(), i, anInt5556)) {
                 if (class64_sub3_213_!!.aFloatArray5552 != null && (class64_sub3_213_.aFloatArray5552!!.size >= anInt5632)) {
                     class64_sub3_211_.aFloatArray5571 = class64_sub3_213_.aFloatArray5571
@@ -980,12 +980,12 @@ class Class64_Sub3 : Class64 {
                 class64_sub3_211_.aFloatArray5552 = aFloatArray5552
             }
             if (Class202.method1475((-96).toByte(), anInt5556, i)) {
-                class64_sub3_211_.aClass123_5620 = class64_sub3_213_!!.aClass123_5620
+                class64_sub3_211_.aHoverActionEntry_5620 = class64_sub3_213_!!.aHoverActionEntry_5620
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x8).toByte()
-                class64_sub3_211_.aClass123_5620!!.anInterface2_1811 = aClass123_5620!!.anInterface2_1811
-                class64_sub3_211_.aClass123_5620!!.aByte1812 = aClass123_5620!!.aByte1812
-            } else if (Class137.method1163(anInt5556, (-60).toByte(), i)) class64_sub3_211_.aClass123_5620 = aClass123_5620
-            else class64_sub3_211_.aClass123_5620 = null
+                class64_sub3_211_.aHoverActionEntry_5620!!.anInterface2_1811 = aHoverActionEntry_5620!!.anInterface2_1811
+                class64_sub3_211_.aHoverActionEntry_5620!!.aByte1812 = aHoverActionEntry_5620!!.aByte1812
+            } else if (Class137.method1163(anInt5556, (-60).toByte(), i)) class64_sub3_211_.aHoverActionEntry_5620 = aHoverActionEntry_5620
+            else class64_sub3_211_.aHoverActionEntry_5620 = null
             if (method2352(-19, anInt5556, i)) {
                 if (class64_sub3_213_!!.aShortArray5592 != null && (anInt5632 <= class64_sub3_213_.aShortArray5592!!.size)) {
                     class64_sub3_211_.aShortArray5579 = class64_sub3_213_.aShortArray5579
@@ -1074,10 +1074,10 @@ class Class64_Sub3 : Class64 {
     }
 
     public override fun LA(i: Int) {
-        if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
         anInt5623++
         aShort5645 = i.toShort()
-        if (aClass123_5563 != null) aClass123_5563!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
     }
 
     public override fun wa() {
@@ -1087,7 +1087,7 @@ class Class64_Sub3 : Class64 {
             anIntArray5644!![i] = anIntArray5644!![i] - -7 shr 4
         }
         anInt5585++
-        if (aClass123_5605 != null) aClass123_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
         aBoolean5527 = false
     }
 
@@ -1268,8 +1268,8 @@ class Class64_Sub3 : Class64 {
                         }
                     }
                     aBoolean5527 = false
-                    if (aClass123_5605 == null) break
-                    aClass123_5605!!.anInterface2_1811 = null
+                    if (aHoverActionEntry_5605 == null) break
+                    aHoverActionEntry_5605!!.anInterface2_1811 = null
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
@@ -1307,16 +1307,16 @@ class Class64_Sub3 : Class64 {
                     class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
                 }
             }
-            if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+            if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
         }
     }
 
     private fun method688(i: Int, bool: Boolean) {
         anInt5588++
-        var bool_291_ = (aClass123_5610 != null && aClass123_5610!!.anInterface2_1811 == null)
-        var bool_292_ = (aClass123_5563 != null && aClass123_5563!!.anInterface2_1811 == null)
-        var bool_293_ = (aClass123_5605 != null && aClass123_5605!!.anInterface2_1811 == null)
-        var bool_294_ = (aClass123_5620 != null && aClass123_5620!!.anInterface2_1811 == null)
+        var bool_291_ = (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anInterface2_1811 == null)
+        var bool_292_ = (aHoverActionEntry_5563 != null && aHoverActionEntry_5563!!.anInterface2_1811 == null)
+        var bool_293_ = (aHoverActionEntry_5605 != null && aHoverActionEntry_5605!!.anInterface2_1811 == null)
+        var bool_294_ = (aHoverActionEntry_5620 != null && aHoverActionEntry_5620!!.anInterface2_1811 == null)
         if (bool) {
             bool_294_ = bool_294_ and ((aByte5581.toInt() and 0x8) != 0)
             bool_292_ = bool_292_ and ((aByte5581.toInt() and 0x4) != 0)
@@ -1389,7 +1389,7 @@ class Class64_Sub3 : Class64 {
                     }
                 }
                 if (bool_291_) {
-                    if (aClass123_5563 == null) {
+                    if (aHoverActionEntry_5563 == null) {
                         val `is`: ShortArray?
                         val is_316_: ByteArray?
                         val is_317_: ShortArray?
@@ -1575,20 +1575,20 @@ class Class64_Sub3 : Class64 {
                     aBoolean5555 = true
                 }
                 if (bool_293_) {
-                    aClass123_5605!!.aByte1812 = i_296_
-                    aClass123_5605!!.anInterface2_1811 = interface2
+                    aHoverActionEntry_5605!!.aByte1812 = i_296_
+                    aHoverActionEntry_5605!!.anInterface2_1811 = interface2
                 }
                 if (bool_294_) {
-                    aClass123_5620!!.aByte1812 = i_299_
-                    aClass123_5620!!.anInterface2_1811 = interface2
+                    aHoverActionEntry_5620!!.aByte1812 = i_299_
+                    aHoverActionEntry_5620!!.anInterface2_1811 = interface2
                 }
                 if (bool_291_) {
-                    aClass123_5610!!.aByte1812 = i_297_
-                    aClass123_5610!!.anInterface2_1811 = interface2
+                    aHoverActionEntry_5610!!.aByte1812 = i_297_
+                    aHoverActionEntry_5610!!.anInterface2_1811 = interface2
                 }
                 if (bool_292_) {
-                    aClass123_5563!!.aByte1812 = i_298_
-                    aClass123_5563!!.anInterface2_1811 = interface2
+                    aHoverActionEntry_5563!!.aByte1812 = i_298_
+                    aHoverActionEntry_5563!!.anInterface2_1811 = interface2
                 }
             }
         }
@@ -1718,20 +1718,20 @@ class Class64_Sub3 : Class64 {
             aBoolean5555 = false
             if (aClass129Array5640 == null && aClass342Array5541 == null && aMapSceneTileDefinitionArray5621 == null) {
                 if (anIntArray5543 != null && !Class337.method2659(123.toByte(), anInt5648, anInt5556)) {
-                    if (aClass123_5605 == null || (aClass123_5605!!.anInterface2_1811 != null)) {
+                    if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anInterface2_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5543 = null
                     } else aBoolean5555 = true
                 }
                 if (anIntArray5593 != null && !method3999(anInt5556, anInt5648, 458752)) {
-                    if (aClass123_5605 != null && (aClass123_5605!!.anInterface2_1811 == null)) aBoolean5555 = true
+                    if (aHoverActionEntry_5605 != null && (aHoverActionEntry_5605!!.anInterface2_1811 == null)) aBoolean5555 = true
                     else {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5593 = null
                     }
                 }
                 if (anIntArray5644 != null && !Class153.method1221(-3157, anInt5648, anInt5556)) {
-                    if (aClass123_5605 == null || (aClass123_5605!!.anInterface2_1811 != null)) {
+                    if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anInterface2_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5644 = null
                     } else aBoolean5555 = true
@@ -1742,14 +1742,14 @@ class Class64_Sub3 : Class64 {
                 anIntArray5528 = null
             }
             if (aByteArray5594 != null && !AnimatedModelRenderer.method989(anInt5648, -385, anInt5556)) {
-                if (aClass123_5563 == null) {
-                    if (aClass123_5610 == null || (aClass123_5610!!.anInterface2_1811 != null)) {
+                if (aHoverActionEntry_5563 == null) {
+                    if (aHoverActionEntry_5610 == null || (aHoverActionEntry_5610!!.anInterface2_1811 != null)) {
                         aByteArray5594 = null
                         aShortArray5576 = null
                         aShortArray5583 = aShortArray5576
                         aShortArray5564 = aShortArray5583
                     } else aBoolean5555 = true
-                } else if (aClass123_5563!!.anInterface2_1811 == null) aBoolean5555 = true
+                } else if (aHoverActionEntry_5563!!.anInterface2_1811 == null) aBoolean5555 = true
                 else {
                     aByteArray5594 = null
                     aShortArray5576 = null
@@ -1758,15 +1758,15 @@ class Class64_Sub3 : Class64 {
                 }
             }
             if (aShortArray5580 != null && !Class315.method2358(-116, anInt5648, anInt5556)) {
-                if (aClass123_5610 == null || aClass123_5610!!.anInterface2_1811 != null) aShortArray5580 = null
+                if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anInterface2_1811 != null) aShortArray5580 = null
                 else aBoolean5555 = true
             }
             if (aByteArray5542 != null && !method1846(anInt5556, anInt5648, 74)) {
-                if (aClass123_5610 == null || aClass123_5610!!.anInterface2_1811 != null) aByteArray5542 = null
+                if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anInterface2_1811 != null) aByteArray5542 = null
                 else aBoolean5555 = true
             }
             if (aFloatArray5552 != null && !Class98.method877(anInt5648, anInt5556, (-127).toByte())) {
-                if (aClass123_5620 != null && aClass123_5620!!.anInterface2_1811 == null) aBoolean5555 = true
+                if (aHoverActionEntry_5620 != null && aHoverActionEntry_5620!!.anInterface2_1811 == null) aBoolean5555 = true
                 else {
                     aFloatArray5571 = null
                     aFloatArray5552 = aFloatArray5571
@@ -1774,11 +1774,11 @@ class Class64_Sub3 : Class64 {
             }
             val i_380_ = -117 / ((69 - i) / 41)
             if (aShortArray5601 != null && !method3100(anInt5556, false, anInt5648)) {
-                if (aClass123_5610 != null && aClass123_5610!!.anInterface2_1811 == null) aBoolean5555 = true
+                if (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anInterface2_1811 == null) aBoolean5555 = true
                 else aShortArray5601 = null
             }
             if (aShortArray5592 != null && !Class69.method724(anInt5648, anInt5556, 393216)) {
-                if ((aClass270_5575 != null && aClass270_5575!!.anInterface8_3463 == null) || aClass123_5610 != null && (aClass123_5610!!.anInterface2_1811) == null) aBoolean5555 = true
+                if ((aClass270_5575 != null && aClass270_5575!!.anInterface8_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anInterface2_1811) == null) aBoolean5555 = true
                 else {
                     aShortArray5566 = null
                     aShortArray5579 = aShortArray5566
@@ -1816,7 +1816,7 @@ class Class64_Sub3 : Class64 {
                 class48.anInt858 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5580!![class118.anInt1783].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class48.anInt858))
             }
         }
-        if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
     }
 
     public override fun method619(): Array<Class129?>? {
@@ -2059,8 +2059,8 @@ class Class64_Sub3 : Class64 {
                             }
                         }
                     }
-                    if (aClass123_5563 == null && aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
-                    if (aClass123_5563 != null) aClass123_5563!!.anInterface2_1811 = null
+                    if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+                    if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
                 }
             } else if (i == 3) {
                 for (i_445_ in 0..<i_390_) {
@@ -2095,7 +2095,7 @@ class Class64_Sub3 : Class64 {
                                 else if (i_455_ > 255) i_455_ = 255
                                 aByteArray5542!![i_454_] = i_455_.toByte()
                             }
-                            if (is_452_.size > 0 && aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+                            if (is_452_.size > 0 && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
                         }
                         i_450_++
                     }
@@ -2130,7 +2130,7 @@ class Class64_Sub3 : Class64 {
                                 else if (i_465_ > 127) i_465_ = 127
                                 aShortArray5580!![i_461_] = (Class273.method2057((Class273.method2057(i_464_ shl 7, i_463_ shl 10)), i_465_)).toShort()
                             }
-                            if (is_459_.size > 0 && aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+                            if (is_459_.size > 0 && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
                         }
                         i_457_++
                     }
@@ -2284,7 +2284,7 @@ class Class64_Sub3 : Class64 {
                 } else i_497_ = 0
                 aByteArray5542!![i_496_] = i_497_.toByte()
             }
-            if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+            if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
             if (aMapSceneTileDefinitionArray5621 != null) {
                 for (i_498_ in 0..<anInt5536) {
                     val class118 = aMapSceneTileDefinitionArray5621!![i_498_]!!
@@ -2311,7 +2311,7 @@ class Class64_Sub3 : Class64 {
                 aShortArray5580!![i_499_] = (Class273.method2057(i_503_, Class273.method2057(i_502_ shl 7, i_501_ shl 10))).toShort()
                 i_499_++
             }
-            if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+            if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
             if (aMapSceneTileDefinitionArray5621 != null) {
                 for (i_504_ in 0..<anInt5536) {
                     val class118 = aMapSceneTileDefinitionArray5621!![i_504_]!!
@@ -2358,7 +2358,7 @@ class Class64_Sub3 : Class64 {
     public override fun C(i: Int) {
         anInt5602++
         aShort5544 = i.toShort()
-        if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
     }
 
     public override fun v() {
@@ -2384,11 +2384,11 @@ class Class64_Sub3 : Class64 {
             aShortArray5566!![i] = i_508_
             i++
         }
-        if (aClass123_5563 == null && aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
-        if (aClass123_5563 != null) aClass123_5563!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
         aBoolean5527 = false
         if (aClass270_5575 != null) aClass270_5575!!.anInterface8_3463 = null
-        if (aClass123_5605 != null) aClass123_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
     }
 
     public override fun method610(abstractCameraTransform: AbstractCameraTransform, i: Int, bool: Boolean) {
@@ -2568,8 +2568,8 @@ class Class64_Sub3 : Class64 {
                                 }
                             }
                         }
-                        if (aClass123_5563 == null && aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
-                        if (aClass123_5563 != null) aClass123_5563!!.anInterface2_1811 = null
+                        if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+                        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
                     }
                 } else {
                     val i_562_ = is_514_[9] shl 4
@@ -2786,7 +2786,7 @@ class Class64_Sub3 : Class64 {
                                     if (i_658_ < 0) i_658_ = 0
                                     else if (i_658_ > 255) i_658_ = 255
                                     aByteArray5542!![i_657_] = i_658_.toByte()
-                                    if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+                                    if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
                                 }
                                 i_656_++
                             }
@@ -2823,7 +2823,7 @@ class Class64_Sub3 : Class64 {
                                     if (i_668_ < 0) i_668_ = 0
                                     else if (i_668_ > 127) i_668_ = 127
                                     aShortArray5580!![i_664_] = (Class273.method2057(i_668_, (Class273.method2057(i_666_ shl 10, i_667_ shl 7)))).toShort()
-                                    if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
+                                    if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
                                 }
                                 i_663_++
                             }
@@ -2945,10 +2945,10 @@ class Class64_Sub3 : Class64 {
         aBoolean5638 = false
         try {
             aHa_Sub2_5598 = var_ha_Sub2
-            aClass123_5605 = Class123(null, 5126, 3, 0)
-            aClass123_5620 = Class123(null, 5126, 2, 0)
-            aClass123_5563 = Class123(null, 5126, 3, 0)
-            aClass123_5610 = Class123(null, 5121, 4, 0)
+            aHoverActionEntry_5605 = HoverActionEntry(null, 5126, 3, 0)
+            aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
+            aHoverActionEntry_5563 = HoverActionEntry(null, 5126, 3, 0)
+            aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
             aClass270_5575 = Class270()
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ')'))
@@ -2967,10 +2967,10 @@ class Class64_Sub3 : Class64 {
                 anInt5556 = i_697_
                 anInt5648 = i
                 aHa_Sub2_5598 = var_ha_Sub2
-                if (method616(2, i, i_697_)) aClass123_5605 = Class123(null, 5126, 3, 0)
-                if (Class137.method1163(i_697_, 78.toByte(), i)) aClass123_5620 = Class123(null, 5126, 2, 0)
-                if (method166(69.toByte(), i_697_, i)) aClass123_5563 = Class123(null, 5126, 3, 0)
-                if (Class146.method1193(i_697_, i, true)) aClass123_5610 = Class123(null, 5121, 4, 0)
+                if (method616(2, i, i_697_)) aHoverActionEntry_5605 = HoverActionEntry(null, 5126, 3, 0)
+                if (Class137.method1163(i_697_, 78.toByte(), i)) aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
+                if (method166(69.toByte(), i_697_, i)) aHoverActionEntry_5563 = HoverActionEntry(null, 5126, 3, 0)
+                if (Class146.method1193(i_697_, i, true)) aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
                 if (Class156.method1238(i, i_697_, -31)) aClass270_5575 = Class270()
                 val var_renderConfig: RenderConfig = var_ha_Sub2!!.aRenderConfig4579!!
                 anIntArray5528 = IntArray(class124!!.anInt1821 + 1)

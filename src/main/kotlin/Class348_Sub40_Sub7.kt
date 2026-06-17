@@ -370,7 +370,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 }
                                             }
                                         } else if (class46.anInt774 == 5) {
-                                            if (class46.anInt705 >= 0) class46.method444(bool_15_, Class123.aClass25_1813, Class30.aClass84_413)!!.method2293(0, Class348_Sub8.aRenderer6654!!, (-35).toByte(), i_24_, class46.anInt709, i_25_, (class46.anInt835 shl 3), (class46.anInt759 shl 3), 0, class46.anInt789)
+                                            if (class46.anInt705 >= 0) class46.method444(bool_15_, HoverActionEntry.aClass25_1813, Class30.aClass84_413)!!.method2293(0, Class348_Sub8.aRenderer6654!!, (-35).toByte(), i_24_, class46.anInt709, i_25_, (class46.anInt835 shl 3), (class46.anInt759 shl 3), 0, class46.anInt789)
                                             else {
                                                 val abstractModelRenderer: AbstractModelRenderer?
                                                 if (class46.anInt812 != -1) {

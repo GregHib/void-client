@@ -959,7 +959,7 @@ class Class46 {
             Class348_Sub23_Sub2.aClass187_9036!!.method1410(-27995)
             ProjectionCameraTransform.aClass326_5764!!.method2602(0)
             Class30.aClass84_413!!.method816(false)
-            Class123.aClass25_1813!!.method302(-797644856)
+            HoverActionEntry.aClass25_1813!!.method302(-797644856)
             Class348_Sub1.aClass185_6559!!.method1390(23)
             Class239.aClass166_3147!!.method1283(1)
             Class136.aClass65_4787!!.method694(-1007)
