@@ -12,7 +12,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
     private var anInt3054 = 0
     private var anInt3055 = 0
     private var anInt3056: Int
-    private var aClass17_3057: Class17? = null
+    private var aWidgetDefinition_3057: WidgetDefinition? = null
     private var aClass64_3059: Class64? = null
     private var anInt3060 = 0
     @JvmField
@@ -68,7 +68,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
                         bool = class51.aBoolean924
                     }
                 } else if (class51_2_ != null && class51_2_.anIntArray943 != null) {
-                    if (aClass17_3057 != null && class51_2_.method481(105.toByte(), (aClass17_3057!!.anInt269))) return
+                    if (aWidgetDefinition_3057 != null && class51_2_.method481(105.toByte(), (aWidgetDefinition_3057!!.anInt269))) return
                     i_1_ = class51_2_.method489(i.toInt() xor 0x45.inv())
                     if (anInt3053 != class51_2_.anInt941) bool = class51_2_.aBoolean924
                 } else if (class51_2_ != null && (class51_2_.anInt868 != -1) && (anInt3053 != class51_2_.anInt941)) {
@@ -76,28 +76,28 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
                     i_1_ = class51_2_.anInt868
                 }
             } else {
-                if (aClass17_3057 != null && class51.method481(73.toByte(), aClass17_3057!!.anInt269)) return
+                if (aWidgetDefinition_3057 != null && class51.method481(73.toByte(), aWidgetDefinition_3057!!.anInt269)) return
                 i_1_ = class51.method489(i + -70)
                 if (anInt3053 != class51.anInt941) bool = class51.aBoolean924
             }
         }
-        if (i_1_ == -1) aClass17_3057 = null
+        if (i_1_ == -1) aWidgetDefinition_3057 = null
         else {
             aClass64_3059 = null
-            if (aClass17_3057 != null && i_1_ == aClass17_3057!!.anInt269) {
-                if (aClass17_3057!!.anInt248 == 0) return
-            } else aClass17_3057 = ParticleEmitterNode.aClass87_191!!.method835(i_1_, i + -62)
-            if (aClass17_3057!!.anIntArray237 == null) aClass17_3057 = null
+            if (aWidgetDefinition_3057 != null && i_1_ == aWidgetDefinition_3057!!.anInt269) {
+                if (aWidgetDefinition_3057!!.anInt248 == 0) return
+            } else aWidgetDefinition_3057 = ParticleEmitterNode.aClass87_191!!.method835(i_1_, i + -62)
+            if (aWidgetDefinition_3057!!.anIntArray237 == null) aWidgetDefinition_3057 = null
             else {
                 if (bool) {
-                    anInt3084 = ((aClass17_3057!!.anIntArray237).size.toDouble() * Math.random()).toInt()
-                    anInt3054 = 1 + ((aClass17_3057!!.anIntArray267!![anInt3084]).toDouble() * Math.random()).toInt()
+                    anInt3084 = ((aWidgetDefinition_3057!!.anIntArray237).size.toDouble() * Math.random()).toInt()
+                    anInt3054 = 1 + ((aWidgetDefinition_3057!!.anIntArray267!![anInt3084]).toDouble() * Math.random()).toInt()
                 } else {
                     anInt3084 = 0
                     anInt3054 = 1
                 }
                 anInt3083 = anInt3084 - -1
-                if (anInt3083 < 0 || anInt3083 >= aClass17_3057!!.anIntArray237.size) anInt3083 = -1
+                if (anInt3083 < 0 || anInt3083 >= aWidgetDefinition_3057!!.anIntArray237.size) anInt3083 = -1
                 anInt3074 = -anInt3054 + Class367_Sub11.anInt7396
             }
         }
@@ -129,7 +129,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
         method1672(aClass318_Sub1_3051, true)
         if (bool_3_) {
             bool_3_ = bool_3_ and (aBoolean3065 and (Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0))
-            bool_3_ = (bool_3_ and (class51.anInt941 != anInt3056 || (aClass17_3057 != null && Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aClass17_3057!!.aBoolean254 || Class28.aBoolean5002) && (anInt3083 != anInt3084))))))
+            bool_3_ = (bool_3_ and (class51.anInt941 != anInt3056 || (aWidgetDefinition_3057 != null && Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aWidgetDefinition_3057!!.aBoolean254 || Class28.aBoolean5002) && (anInt3083 != anInt3084))))))
         }
         if (bool && !bool_3_) {
             anInt3053 = class51.anInt941
@@ -146,7 +146,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
         if (!aBoolean3069) var_terrainTile_5_ = if (aByte3067 >= 3) null else NativeSprite.aTerrainTileArray5191!![1 + aByte3067]
         else var_terrainTile_5_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![0]
         var class64: Class64? = null
-        if (aClass17_3057 == null) {
+        if (aWidgetDefinition_3057 == null) {
             if (aClass64_3059 == null || i_4_ != (i_4_ and aClass64_3059!!.ua()) || (anInt3053 != class51.anInt941)) {
                 if (aClass64_3059 != null) i_4_ = i_4_ or aClass64_3059!!.ua()
                 val class2 = (class51.method476(var_renderer, var_terrainTile_5_, (if (this.anInt3079 != 11) this.anInt3079 else 10), i_4_, aClass318_Sub1_3051!!.x, bool_3_, var_s, var_s!!.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (-114).toByte()), aClass318_Sub1_3051.y, (if (this.anInt3079 == 11) 4 + this.anInt3052 else this.anInt3052), 128))
@@ -172,7 +172,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
             } else class64 = aClass64_3059
         } else {
             if (bool_3_) i_4_ = i_4_ or 0x40000
-            class64 = (class51.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_renderer, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_terrainTile_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aClass17_3057, var_s))
+            class64 = (class51.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_renderer, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_terrainTile_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aWidgetDefinition_3057, var_s))
             if (class64 == null) {
                 anInt3055 = 0
                 aBooleanArray3072 = null
@@ -236,50 +236,50 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
         anInt3086++
         var i: Int
         while_76_@ while (true) {
-            if (aClass17_3057 == null) {
+            if (aWidgetDefinition_3057 == null) {
                 if (aBoolean3064) return
                 method1666(69.toByte(), -1)
-                if (aClass17_3057 == null) return
+                if (aWidgetDefinition_3057 == null) return
             }
             i = -anInt3074 + Class367_Sub11.anInt7396
-            if (i > 100 && aClass17_3057!!.anInt238 > 0) {
+            if (i > 100 && aWidgetDefinition_3057!!.anInt238 > 0) {
                 val i_12_: Int
-                i_12_ = (-aClass17_3057!!.anInt238 + aClass17_3057!!.anIntArray237.size)
-                while ((anInt3084 < i_12_ && (aClass17_3057!!.anIntArray267!![anInt3084] < i))) {
-                    i -= aClass17_3057!!.anIntArray267!![anInt3084]
+                i_12_ = (-aWidgetDefinition_3057!!.anInt238 + aWidgetDefinition_3057!!.anIntArray237.size)
+                while ((anInt3084 < i_12_ && (aWidgetDefinition_3057!!.anIntArray267!![anInt3084] < i))) {
+                    i -= aWidgetDefinition_3057!!.anIntArray267!![anInt3084]
                     anInt3084++
                 }
                 if (i_12_ <= anInt3084) {
                     var i_13_ = 0
                     var i_14_ = i_12_
-                    while ((aClass17_3057!!.anIntArray237.size > i_14_)) {
-                        i_13_ += aClass17_3057!!.anIntArray267!![i_14_]
+                    while ((aWidgetDefinition_3057!!.anIntArray237.size > i_14_)) {
+                        i_13_ += aWidgetDefinition_3057!!.anIntArray267!![i_14_]
                         i_14_++
                     }
                     i %= i_13_
                 }
                 anInt3083 = 1 + anInt3084
-                if (anInt3083 >= aClass17_3057!!.anIntArray237.size) {
-                    anInt3083 -= aClass17_3057!!.anInt238
-                    if (anInt3083 < 0 || anInt3083 >= aClass17_3057!!.anIntArray237.size) anInt3083 = -1
+                if (anInt3083 >= aWidgetDefinition_3057!!.anIntArray237.size) {
+                    anInt3083 -= aWidgetDefinition_3057!!.anInt238
+                    if (anInt3083 < 0 || anInt3083 >= aWidgetDefinition_3057!!.anIntArray237.size) anInt3083 = -1
                 }
             }
             while (true) {
-                if (aClass17_3057!!.anIntArray267!![anInt3084] >= i) break@while_76_
-                Class287.method2178(class318_sub1, anInt3084, aClass17_3057, -99)
-                i -= aClass17_3057!!.anIntArray267!![anInt3084]
+                if (aWidgetDefinition_3057!!.anIntArray267!![anInt3084] >= i) break@while_76_
+                Class287.method2178(class318_sub1, anInt3084, aWidgetDefinition_3057, -99)
+                i -= aWidgetDefinition_3057!!.anIntArray267!![anInt3084]
                 anInt3084++
-                if (aClass17_3057!!.anIntArray237.size <= anInt3084) {
-                    anInt3084 -= aClass17_3057!!.anInt238
-                    if (anInt3084 < 0 || anInt3084 >= aClass17_3057!!.anIntArray237.size) {
-                        aClass17_3057 = null
+                if (aWidgetDefinition_3057!!.anIntArray237.size <= anInt3084) {
+                    anInt3084 -= aWidgetDefinition_3057!!.anInt238
+                    if (anInt3084 < 0 || anInt3084 >= aWidgetDefinition_3057!!.anIntArray237.size) {
+                        aWidgetDefinition_3057 = null
                         break
                     }
                 }
                 anInt3083 = anInt3084 + 1
-                if (aClass17_3057!!.anIntArray237.size <= anInt3083) {
-                    anInt3083 -= aClass17_3057!!.anInt238
-                    if (anInt3083 < 0 || (anInt3083 >= aClass17_3057!!.anIntArray237.size)) anInt3083 = -1
+                if (aWidgetDefinition_3057!!.anIntArray237.size <= anInt3083) {
+                    anInt3083 -= aWidgetDefinition_3057!!.anInt238
+                    if (anInt3083 < 0 || (anInt3083 >= aWidgetDefinition_3057!!.anIntArray237.size)) anInt3083 = -1
                 }
             }
         }

@@ -68,8 +68,8 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
             Class240.aClass324_4684 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class56.anInt1044)
             Class258_Sub1.aFontDefinition_8527 = GlVertexBufferBase.method1151(-25411, var_renderer, Class56.anInt1044)
             if (i != 4) aFontDefinition_4962 = null
-            GameAppletFrame.aClass324_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class17.anInt235)
-            Class246.aFontDefinition_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, Class17.anInt235)
+            GameAppletFrame.aClass324_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, WidgetDefinition.anInt235)
+            Class246.aFontDefinition_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, WidgetDefinition.anInt235)
             Class262.aClass324_3326 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class291.anInt3736)
             aFontDefinition_4962 = GlVertexBufferBase.method1151(-25411, var_renderer, Class291.anInt3736)
         }

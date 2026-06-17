@@ -66,7 +66,7 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
         fun method1001(class45: Class45, i: Int) {
             anInt1634++
             Class56.anInt1044 = class45.method417("p11_full", i)
-            Class17.anInt235 = class45.method417("p12_full", i)
+            WidgetDefinition.anInt235 = class45.method417("p12_full", i)
             Class291.anInt3736 = class45.method417("b12_full", 0)
         }
     }

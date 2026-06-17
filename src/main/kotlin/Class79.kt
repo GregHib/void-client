@@ -340,18 +340,18 @@ class Class79 {
         }
     }
 
-    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, class87: Class87?, bool: Boolean, class17: Class17?, i_34_: Int, class261: Class261?, i_35_: Int, class17_36_: Class17?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): Class64? {
+    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, class87: Class87?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, class261: Class261?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): Class64? {
         try {
             anInt1341++
             if (this.anIntArray1377 != null) {
                 val class79_42_ = method794(interface17!!, -1)
                 if (class79_42_ == null) return null
-                return class79_42_.method800(i, loadProgressCounters, class87, false, class17, i_34_, class261, i_35_, class17_36_, interface17, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
+                return class79_42_.method800(i, loadProgressCounters, class87, false, widgetDefinition, i_34_, class261, i_35_, widgetDefinition_36_, interface17, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
             }
             var i_43_ = i_40_
             if (anInt1358 != 128) i_43_ = i_43_ or 0x2
             if (anInt1346 != 128) i_43_ = i_43_ or 0x5
-            var bool_44_ = class17_36_ != null || class17 != null
+            var bool_44_ = widgetDefinition_36_ != null || widgetDefinition != null
             var bool_45_ = false
             var bool_46_ = false
             var bool_47_ = false
@@ -363,7 +363,7 @@ class Class79 {
                     val class17_51_ = class87!!.method835((loadProgressCounters[i_50_]!!.anInt2454), 7)
                     if (class17_51_.anIntArray237 != null) {
                         bool_44_ = true
-                        AudioResampler.aClass17Array2169!![i_50_] = class17_51_
+                        AudioResampler.aWidgetDefinitionArray2169s!![i_50_] = class17_51_
                         val i_52_ = loadProgressCounters[i_50_]!!.anInt2451
                         val i_53_ = loadProgressCounters[i_50_]!!.anInt2455
                         var i_54_ = class17_51_.anIntArray237[i_52_]
@@ -409,8 +409,8 @@ class Class79 {
             var class348_sub42_sub17_64_: Class348_Sub42_Sub17? = null
             if (bool_44_) {
                 i_43_ = i_43_ or 0x20
-                if (class17_36_ != null) {
-                    i_56_ = class17_36_.anIntArray237[i_35_]
+                if (widgetDefinition_36_ != null) {
+                    i_56_ = widgetDefinition_36_.anIntArray237[i_35_]
                     val i_65_ = i_56_ ushr 16
                     i_56_ = i_56_ and 0xffff
                     class348_sub42_sub17 = class87!!.method839(i_65_, 3)
@@ -418,11 +418,11 @@ class Class79 {
                         bool_46_ = bool_46_ or class348_sub42_sub17.method3272(i_56_, 0)
                         bool_45_ = bool_45_ or class348_sub42_sub17.method3271(i_56_, 14)
                         bool_48_ = bool_48_ or class348_sub42_sub17.method3267((-125).toByte(), i_56_)
-                        bool_47_ = bool_47_ or class17_36_.aBoolean242
+                        bool_47_ = bool_47_ or widgetDefinition_36_.aBoolean242
                     }
-                    if ((class17_36_.aBoolean241 || Class28.aBoolean5002) && i_38_ != -1 && (class17_36_.anIntArray237.size > i_38_)) {
-                        i_57_ = class17_36_.anIntArray237[i_38_]
-                        i_58_ = class17_36_.anIntArray267!![i_35_]
+                    if ((widgetDefinition_36_.aBoolean241 || Class28.aBoolean5002) && i_38_ != -1 && (widgetDefinition_36_.anIntArray237.size > i_38_)) {
+                        i_57_ = widgetDefinition_36_.anIntArray237[i_38_]
+                        i_58_ = widgetDefinition_36_.anIntArray267!![i_35_]
                         val i_66_ = i_57_ ushr 16
                         if (i_65_ == i_66_) class348_sub42_sub17_59_ = class348_sub42_sub17
                         else class348_sub42_sub17_59_ = class87.method839(i_66_, 3)
@@ -434,8 +434,8 @@ class Class79 {
                         }
                     }
                 }
-                if (class17 != null) {
-                    i_60_ = class17.anIntArray237[i_39_]
+                if (widgetDefinition != null) {
+                    i_60_ = widgetDefinition.anIntArray237[i_39_]
                     val i_67_ = i_60_ ushr 16
                     class348_sub42_sub17_63_ = class87!!.method839(i_67_, 3)
                     i_60_ = i_60_ and 0xffff
@@ -443,11 +443,11 @@ class Class79 {
                         bool_46_ = bool_46_ or class348_sub42_sub17_63_.method3272(i_60_, 0)
                         bool_45_ = bool_45_ or class348_sub42_sub17_63_.method3271(i_60_, 14)
                         bool_48_ = bool_48_ or class348_sub42_sub17_63_.method3267((-102).toByte(), i_60_)
-                        bool_47_ = bool_47_ or class17.aBoolean242
+                        bool_47_ = bool_47_ or widgetDefinition.aBoolean242
                     }
-                    if ((class17.aBoolean241 || Class28.aBoolean5002) && i_37_ != -1 && class17.anIntArray237.size > i_37_) {
-                        i_62_ = class17.anIntArray267!![i_39_]
-                        i_61_ = class17.anIntArray237[i_37_]
+                    if ((widgetDefinition.aBoolean241 || Class28.aBoolean5002) && i_37_ != -1 && widgetDefinition.anIntArray237.size > i_37_) {
+                        i_62_ = widgetDefinition.anIntArray267!![i_39_]
+                        i_61_ = widgetDefinition.anIntArray237[i_37_]
                         val i_68_ = i_61_ ushr 16
                         if (i_68_ == i_67_) class348_sub42_sub17_64_ = class348_sub42_sub17_63_
                         else class348_sub42_sub17_64_ = class87.method839(i_68_, 3)
@@ -575,7 +575,7 @@ class Class79 {
                     (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
                     (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_86_]),
-                    (AudioResampler.aClass17Array2169!![i_86_]!!.aBoolean242),
+                    (AudioResampler.aWidgetDefinitionArray2169s!![i_86_]!!.aBoolean242),
                     Class348_Sub23_Sub4.anIntArray9050!![i_86_]
                 )
                 i_86_++
@@ -597,14 +597,14 @@ class Class79 {
                     if (abstractCameraTransforms[i_90_] != null) class64_82_!!.method610(abstractCameraTransforms[i_90_]!!, 1 shl i_90_, false)
                 }
             }
-            if (class348_sub42_sub17 != null && class348_sub42_sub17_63_ != null) class64_82_!!.method625(class348_sub42_sub17_59_, i_58_, 122.toByte(), i_62_, class348_sub42_sub17_63_, i_56_, i_60_, -1 + i_41_, class348_sub42_sub17, (class17_36_!!.aBoolean242 or class17!!.aBoolean242), i_57_, class348_sub42_sub17_64_, -1 + i_34_, class17_36_.aBooleanArray263, i_61_)
-            else if (class348_sub42_sub17 != null) class64_82_!!.method617(i_56_, i_58_, class348_sub42_sub17_59_, 0, class348_sub42_sub17, bool, class17_36_!!.aBoolean242, i_57_, i_41_ + -1)
-            else if (class348_sub42_sub17_63_ != null) class64_82_!!.method617(i_60_, i_62_, class348_sub42_sub17_64_, 0, class348_sub42_sub17_63_, false, class17!!.aBoolean242, i_61_, i_34_ - 1)
+            if (class348_sub42_sub17 != null && class348_sub42_sub17_63_ != null) class64_82_!!.method625(class348_sub42_sub17_59_, i_58_, 122.toByte(), i_62_, class348_sub42_sub17_63_, i_56_, i_60_, -1 + i_41_, class348_sub42_sub17, (widgetDefinition_36_!!.aBoolean242 or widgetDefinition!!.aBoolean242), i_57_, class348_sub42_sub17_64_, -1 + i_34_, widgetDefinition_36_.aBooleanArray263, i_61_)
+            else if (class348_sub42_sub17 != null) class64_82_!!.method617(i_56_, i_58_, class348_sub42_sub17_59_, 0, class348_sub42_sub17, bool, widgetDefinition_36_!!.aBoolean242, i_57_, i_41_ + -1)
+            else if (class348_sub42_sub17_63_ != null) class64_82_!!.method617(i_60_, i_62_, class348_sub42_sub17_64_, 0, class348_sub42_sub17_63_, false, widgetDefinition!!.aBoolean242, i_61_, i_34_ - 1)
             var i_91_ = 0
             while (i_49_ > i_91_) {
                 Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_91_] = null
                 Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_91_] = null
-                AudioResampler.aClass17Array2169!![i_91_] = null
+                AudioResampler.aWidgetDefinitionArray2169s!![i_91_] = null
                 i_91_++
             }
             if (anInt1346 != 128 || anInt1358 != 128) class64_82_!!.O(anInt1346, anInt1358, anInt1346)
@@ -613,7 +613,7 @@ class Class79 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + bool + ',' + (if (class17 != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (class261 != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (class17_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
+                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (class261 != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
             )
         }
     }
@@ -627,17 +627,17 @@ class Class79 {
         return class348_sub50.aString7211
     }
 
-    fun method803(interface17: Interface17?, var_renderer: Renderer?, i: Int, i_94_: Int, class17: Class17?, class87: Class87?, i_95_: Int, i_96_: Int, i_97_: Int): Class64? {
+    fun method803(interface17: Interface17?, var_renderer: Renderer?, i: Int, i_94_: Int, widgetDefinition: WidgetDefinition?, class87: Class87?, i_95_: Int, i_96_: Int, i_97_: Int): Class64? {
         try {
             anInt1389++
             if (this.anIntArray1377 != null) {
                 val class79_98_ = method794(interface17!!, -1)
                 if (class79_98_ == null) return null
-                return class79_98_.method803(interface17, var_renderer, i, i_94_, class17, class87, i_95_, 104, i_97_)
+                return class79_98_.method803(interface17, var_renderer, i, i_94_, widgetDefinition, class87, i_95_, 104, i_97_)
             }
             if (anIntArray1380 == null) return null
             var i_99_ = i_97_
-            if (class17 != null && i_95_ != -1) i_99_ = i_99_ or class17.method263(i_94_, 97, i_95_, true)
+            if (widgetDefinition != null && i_95_ != -1) i_99_ = i_99_ or widgetDefinition.method263(i_94_, 97, i_95_, true)
             var class64: Class64?
             synchronized(this.aClass278_1348!!.aClass60_3592) {
                 class64 = ((this.aClass278_1348!!.aClass60_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as Class64?)
@@ -695,11 +695,11 @@ class Class79 {
                     this.aClass278_1348!!.aClass60_3592.method582(class64, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
                 }
             }
-            if (class17 != null && i_95_ != -1) class64 = class17.method269(-9, class64, i_94_, i, i_99_, i_95_)
+            if (widgetDefinition != null && i_95_ != -1) class64 = widgetDefinition.method269(-9, class64, i_94_, i, i_99_, i_95_)
             class64!!.s(i_97_)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
         }
     }
 

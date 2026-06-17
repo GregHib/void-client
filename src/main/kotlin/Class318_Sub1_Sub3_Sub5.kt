@@ -14,7 +14,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
     private var anInt10368 = 0
     private var anInt10369 = -1
     private var aDouble10371 = 0.0
-    private val aClass17_10375: Class17?
+    private val aWidgetDefinition_10375: WidgetDefinition?
     private var aClass318_Sub10_10378: Class318_Sub10? = null
     private var anInt10381: Int
     private var aDouble10383 = 0.0
@@ -230,19 +230,19 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         anInt10386 = 0x3fff and 8192 + (atan2(aDouble10401, aDouble10414) * 2607.5945876176133).toInt()
         anInt10396 = (atan2(aDouble10409, aDouble10400) * 2607.5945876176133).toInt() and 0x3fff
         if (i <= 33) method2379(-27)
-        if (aClass17_10375 != null) {
+        if (aWidgetDefinition_10375 != null) {
             anInt10403 += i_21_
-            while (aClass17_10375.anIntArray267!![anInt10365] < anInt10403) {
-                anInt10403 -= aClass17_10375.anIntArray267!![anInt10365]
+            while (aWidgetDefinition_10375.anIntArray267!![anInt10365] < anInt10403) {
+                anInt10403 -= aWidgetDefinition_10375.anIntArray267!![anInt10365]
                 anInt10365++
-                if (anInt10365 >= aClass17_10375.anIntArray237.size) {
-                    anInt10365 -= aClass17_10375.anInt238
-                    if (anInt10365 < 0 || anInt10365 >= (aClass17_10375.anIntArray237).size) anInt10365 = 0
+                if (anInt10365 >= aWidgetDefinition_10375.anIntArray237.size) {
+                    anInt10365 -= aWidgetDefinition_10375.anInt238
+                    if (anInt10365 < 0 || anInt10365 >= (aWidgetDefinition_10375.anIntArray237).size) anInt10365 = 0
                 }
                 anInt10369 = anInt10365 - -1
-                if (aClass17_10375.anIntArray237.size <= anInt10369) {
-                    anInt10369 -= aClass17_10375.anInt238
-                    if (anInt10369 < 0 || anInt10369 >= aClass17_10375.anIntArray237.size) anInt10369 = -1
+                if (aWidgetDefinition_10375.anIntArray237.size <= anInt10369) {
+                    anInt10369 -= aWidgetDefinition_10375.anInt238
+                    if (anInt10369 < 0 || anInt10369 >= aWidgetDefinition_10375.anIntArray237.size) anInt10369 = -1
                 }
             }
         }
@@ -264,8 +264,8 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         this.anInt10411 = i_27_
         anInt10387 = i_31_
         val i_35_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(72.toByte(), anInt10391).anInt4503)
-        if (i_35_ != -1) aClass17_10375 = ParticleEmitterNode.aClass87_191!!.method835(i_35_, 7)
-        else aClass17_10375 = null
+        if (i_35_ != -1) aWidgetDefinition_10375 = ParticleEmitterNode.aClass87_191!!.method835(i_35_, 7)
+        else aWidgetDefinition_10375 = null
     }
 
     public override fun method2376(i: Int): Boolean {

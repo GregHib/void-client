@@ -190,8 +190,8 @@ class Class85 {
                 val i_16_ = Class250.anInt3225
                 method1752(-1, i_13_, i_14_)
                 if (Class348_Sub49.anInt7207 == 0) {
-                    Class17.anInterface4_252 = null
-                    Class17.anInterface4_252 = (Class21.aRenderer326!!.method3634(Class21.aRenderer326!!.method3665((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008), Class21.aRenderer326!!.method3624((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008)))
+                    WidgetDefinition.anInterface4_252 = null
+                    WidgetDefinition.anInterface4_252 = (Class21.aRenderer326!!.method3634(Class21.aRenderer326!!.method3665((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008), Class21.aRenderer326!!.method3624((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008)))
                 } else if (Class348_Sub49.anInt7207 == 1 && (Class92.anInterface4Array1525 == null || i_15_ != Class31.anInt425 || i_16_ != Class250.anInt3225)) {
                     Class92.anInterface4Array1525 = arrayOfNulls<Interface4>(Class250.anInt3225 * Class31.anInt425)
                     var i_17_ = 0

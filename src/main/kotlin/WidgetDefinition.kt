@@ -1,7 +1,7 @@
 /* Class17 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class17 {
+class WidgetDefinition {
     @JvmField
     var anIntArray236: IntArray? = null
     @JvmField

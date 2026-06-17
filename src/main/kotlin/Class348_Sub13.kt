@@ -32,7 +32,7 @@ class Class348_Sub13 : Class348() {
         }
     }
 
-    fun method2803(class17: Class17?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_renderer: Renderer?, bool: Boolean, i_14_: Int): Class64? {
+    fun method2803(widgetDefinition: WidgetDefinition?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_renderer: Renderer?, bool: Boolean, i_14_: Int): Class64? {
         try {
             anInt6756++
             var class64: Class64? = null
@@ -59,8 +59,8 @@ class Class348_Sub13 : Class348() {
             var i_24_ = 0
             var class348_sub42_sub17: Class348_Sub42_Sub17? = null
             var class348_sub42_sub17_25_: Class348_Sub42_Sub17? = null
-            if (class17 != null) {
-                i_22_ = class17.anIntArray237[i_10_]
+            if (widgetDefinition != null) {
+                i_22_ = widgetDefinition.anIntArray237[i_10_]
                 i_15_ = i_15_ or 0x20
                 val i_26_ = i_22_ ushr 16
                 class348_sub42_sub17 = ParticleEmitterNode.aClass87_191!!.method839(i_26_, i_14_ + 4)
@@ -69,11 +69,11 @@ class Class348_Sub13 : Class348() {
                     bool_19_ = bool_19_ or class348_sub42_sub17.method3272(i_22_, 0)
                     bool_18_ = bool_18_ or class348_sub42_sub17.method3271(i_22_, 14)
                     bool_21_ = bool_21_ or class348_sub42_sub17.method3267((-112).toByte(), i_22_)
-                    bool_20_ = bool_20_ or class17.aBoolean242
+                    bool_20_ = bool_20_ or widgetDefinition.aBoolean242
                 }
-                if ((class17.aBoolean241 || Class28.aBoolean5002) && i_12_ != -1 && class17.anIntArray237.size > i_12_) {
-                    i_23_ = class17.anIntArray237[i_12_]
-                    i_24_ = class17.anIntArray267!![i_10_]
+                if ((widgetDefinition.aBoolean241 || Class28.aBoolean5002) && i_12_ != -1 && widgetDefinition.anIntArray237.size > i_12_) {
+                    i_23_ = widgetDefinition.anIntArray237[i_12_]
+                    i_24_ = widgetDefinition.anIntArray267!![i_10_]
                     val i_27_ = i_23_ ushr 16
                     i_23_ = i_23_ and 0xffff
                     if (i_27_ == i_26_) class348_sub42_sub17_25_ = class348_sub42_sub17
@@ -136,12 +136,12 @@ class Class348_Sub13 : Class348() {
                     Class202.aClass60_2671!!.method582(class64, l, (-128).toByte())
                 }
             }
-            if (class17 == null || class348_sub42_sub17 == null) return class64
+            if (widgetDefinition == null || class348_sub42_sub17 == null) return class64
             val class64_41_ = class64.method614(1.toByte(), i_15_, true)
-            class64_41_!!.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, class17.aBoolean242, i_23_, i_11_ + i_14_)
+            class64_41_!!.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, widgetDefinition.aBoolean242, i_23_, i_11_ + i_14_)
             return class64_41_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.Companion.method2929(runtimeexception, ("ie.B(" + (if (class17 != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ',' + i_14_ + ')'))
+            throw Class348_Sub17.Companion.method2929(runtimeexception, ("ie.B(" + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ',' + i_14_ + ')'))
         }
     }
 

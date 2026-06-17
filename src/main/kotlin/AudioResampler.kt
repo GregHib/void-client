@@ -127,7 +127,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
         var anInt2166: Int = 0
         var anInt2167: Int = 0
         var anInt2168: Int = 0
-        var aClass17Array2169: Array<Class17?>? = arrayOfNulls<Class17>(14)
+        var aWidgetDefinitionArray2169s: Array<WidgetDefinition?>? = arrayOfNulls<WidgetDefinition>(14)
         var anInt2170: Int = 0
         var anInt2171: Int = 0
 
@@ -183,7 +183,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
         @JvmStatic
         fun method1276(i: Int) {
             val i_35_ = 101 % ((i - -20) / 49)
-            aClass17Array2169 = null
+            aWidgetDefinitionArray2169s = null
             anIntArrayArray2165 = null
             aBooleanArray2162 = null
         }

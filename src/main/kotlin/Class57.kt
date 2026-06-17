@@ -13,7 +13,7 @@ class Class57 {
 
     companion object {
         @JvmField
-        var aClass17Array1048: Array<Class17?>? = arrayOfNulls<Class17>(14)
+        var aWidgetDefinitionArray1048s: Array<WidgetDefinition?>? = arrayOfNulls<WidgetDefinition>(14)
         @JvmField
         var anInt1049: Int = 0
         @JvmField
@@ -34,7 +34,7 @@ class Class57 {
 
         @JvmStatic
         fun method530(i: Int) {
-            aClass17Array1048 = null
+            aWidgetDefinitionArray1048s = null
             aClass227_1055 = null
             aAudioResampler_1050 = null
             aClass251_1051 = null

@@ -20,13 +20,13 @@ object Class332 {
         if (i < i_0_) {
             var i_4_ = i
             while (i_0_ > i_4_) {
-                Class17.anIntArrayArray255!![i_4_]!![i_2_] = i_3_
+                WidgetDefinition.anIntArrayArray255!![i_4_]!![i_2_] = i_3_
                 i_4_++
             }
         } else {
             var i_5_ = i_0_
             while (i > i_5_) {
-                Class17.anIntArrayArray255!![i_5_]!![i_2_] = i_3_
+                WidgetDefinition.anIntArrayArray255!![i_5_]!![i_2_] = i_3_
                 i_5_++
             }
         }

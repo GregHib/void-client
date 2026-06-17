@@ -192,7 +192,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                                         }
                                         class318_sub4 = (class243.method1878(122.toByte()) as Class318_Sub4?)
                                     }
-                                    if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3687(Class17.anInterface4_252)
+                                    if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3687(WidgetDefinition.anInterface4_252)
                                     Class21.aRenderer326!!.F(-i_33_, -i_34_)
                                     Class21.aRenderer326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
                                     method3284(true, (Class348_Sub42_Sub4.aDouble9517 + d_37_))
@@ -261,7 +261,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                             AnimatedModelRenderer.anInt8422 = i_4_
                             Class348_Sub3.anInt6568 = 0
                             Class348_Sub42_Sub4.aDouble9517 = 0.0
-                            if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3687(Class17.anInterface4_252)
+                            if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3687(WidgetDefinition.anInterface4_252)
                             Class21.aRenderer326!!.la()
                             Class21.aRenderer326!!.ya()
                             Class21.aRenderer326!!.GA(Class77.anInt1290)
@@ -289,7 +289,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                             if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3672()
                             if (Class348_Sub49.anInt7207 == 1) method1469(-117)
                         }
-                        if (Class348_Sub49.anInt7207 == 0) Class17.anInterface4_252!!.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
+                        if (Class348_Sub49.anInt7207 == 0) WidgetDefinition.anInterface4_252!!.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
                         Class318_Sub1_Sub1_Sub2.anInt9997++
                         method3284(true, Class348_Sub42_Sub4.aDouble9517)
                         Class318_Sub1_Sub5_Sub1.aDouble10120 = Class348_Sub42_Sub4.aDouble9517

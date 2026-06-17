@@ -21,27 +21,27 @@ class Class87 internal constructor(class230: Class230?, i: Int, class45: Class45
         }
     }
 
-    fun method835(i: Int, i_0_: Int): Class17 {
+    fun method835(i: Int, i_0_: Int): WidgetDefinition {
         anInt1483++
-        var class17: Class17?
+        var widgetDefinition: WidgetDefinition?
         synchronized(aClass60_1487!!) {
-            class17 = aClass60_1487!!.method583(i.toLong(), i_0_ + -68) as Class17?
+            widgetDefinition = aClass60_1487!!.method583(i.toLong(), i_0_ + -68) as WidgetDefinition?
         }
         if (i_0_ != 7) aClass60_1491 = null
-        if (class17 != null) return class17
+        if (widgetDefinition != null) return widgetDefinition
         val `is`: ByteArray?
         synchronized(aClass45_1488!!) {
             `is` = aClass45_1488.method410(-1860, method256(i, 125.toByte()), method494(i_0_ xor 0x55, i))
         }
-        class17 = Class17()
-        class17.anInt269 = i
-        class17.aClass87_251 = this
-        if (`is` != null) class17.method267(Class348_Sub49(`is`), false)
-        class17.method270(124.toByte())
+        widgetDefinition = WidgetDefinition()
+        widgetDefinition.anInt269 = i
+        widgetDefinition.aClass87_251 = this
+        if (`is` != null) widgetDefinition.method267(Class348_Sub49(`is`), false)
+        widgetDefinition.method270(124.toByte())
         synchronized(aClass60_1487!!) {
-            aClass60_1487!!.method582(class17, i.toLong(), (-126).toByte())
+            aClass60_1487!!.method582(widgetDefinition, i.toLong(), (-126).toByte())
         }
-        return class17
+        return widgetDefinition
     }
 
     fun method836(i: Int, i_1_: Int) {

@@ -585,7 +585,7 @@ class Class51 {
         if (i_38_ >= -93) aByteArray885 = null
     }
 
-    fun method483(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, var_renderer: Renderer?, i_66_: Int, i_67_: Int, i_68_: Byte, var_terrainTile: TerrainTile?, i_69_: Int, i_70_: Int, i_71_: Int, class17: Class17?, var_terrainTile_72_: TerrainTile?): Class64? {
+    fun method483(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, var_renderer: Renderer?, i_66_: Int, i_67_: Int, i_68_: Byte, var_terrainTile: TerrainTile?, i_69_: Int, i_70_: Int, i_71_: Int, widgetDefinition: WidgetDefinition?, var_terrainTile_72_: TerrainTile?): Class64? {
         var i_64_ = i_64_
         var i_67_ = i_67_
         try {
@@ -594,7 +594,7 @@ class Class51 {
             var l = ((this.anInt941 shl 10) + ((i_64_ shl 3) - -i_66_)).toLong()
             val i_73_ = i_67_
             l = l or (var_renderer!!.anInt4567 shl 29).toLong()
-            if (class17 != null) i_67_ = i_67_ or class17.method263(i, 123, i_70_, false)
+            if (widgetDefinition != null) i_67_ = i_67_ or widgetDefinition.method263(i, 123, i_70_, false)
             if (aByte886.toInt() != 3) {
                 if (aByte886.toInt() != 0 || anInt954 != 0) i_67_ = i_67_ or 0x2
                 if (anInt893 != 0) i_67_ = i_67_ or 0x1
@@ -615,8 +615,8 @@ class Class51 {
             }
             var bool = false
             if (i_68_ <= 38) return null
-            if (class17 != null) {
-                class64 = class17.method266(class64, 0x3 and i_66_, i, 1.toByte(), i_70_, i_63_, 663780816, i_67_)
+            if (widgetDefinition != null) {
+                class64 = widgetDefinition.method266(class64, 0x3 and i_66_, i, 1.toByte(), i_70_, i_63_, 663780816, i_67_)
                 bool = true
             }
             if (i_64_ == 10 && i_66_ > 3) {
@@ -643,7 +643,7 @@ class Class51 {
             if (bool) class64!!.s(i_73_)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -1623,7 +1623,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class17.aIntRange_250) {
+            if (Class348_Sub3.aIntRange_6584 == WidgetDefinition.aIntRange_250) {
                 Class309.anInt4816 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
                 Class348_Sub3.aIntRange_6584 = null

@@ -231,7 +231,7 @@ class Class213 {
         return class124
     }
 
-    fun method1559(compositeNpcModelBuilder: CompositeNpcModelBuilder?, class17: Class17?, var_renderer: Renderer?, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Byte, i_24_: Int): Class64? {
+    fun method1559(compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, var_renderer: Renderer?, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Byte, i_24_: Int): Class64? {
         try {
             anInt2813++
             if (this.anIntArray2762 != null && i_21_ > 1) {
@@ -239,11 +239,11 @@ class Class213 {
                 for (i_26_ in 0..9) {
                     if (i_21_ >= this.anIntArray2831[i_26_] && this.anIntArray2831[i_26_] != 0) i_25_ = this.anIntArray2762!![i_26_]
                 }
-                if (i_25_ != -1) return (this.aClass255_2761!!.method1940(103, i_25_).method1559(compositeNpcModelBuilder, class17, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
+                if (i_25_ != -1) return (this.aClass255_2761!!.method1940(103, i_25_).method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
             }
             if (i_23_.toInt() != 88) this.aString2795 = null
             var i_27_ = i
-            if (class17 != null) i_27_ = i_27_ or class17.method263(i_24_, 105, i_22_, true)
+            if (widgetDefinition != null) i_27_ = i_27_ or widgetDefinition.method263(i_24_, 105, i_22_, true)
             var class64: Class64?
             synchronized(this.aClass255_2761!!.aClass60_3287) {
                 class64 = (this.aClass255_2761!!.aClass60_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as Class64?
@@ -290,11 +290,11 @@ class Class213 {
                     this.aClass255_2761!!.aClass60_3287.method582(class64, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
                 }
             }
-            if (class17 != null) class64 = class17.method269(116, class64, i_24_, i_20_, i_27_, i_22_)
+            if (widgetDefinition != null) class64 = widgetDefinition.method269(116, class64, i_24_, i_20_, i_27_, i_22_)
             class64!!.s(i)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
         }
     }
 

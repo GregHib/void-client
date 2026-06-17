@@ -131,7 +131,7 @@ abstract class Class348_Sub31 : Class348() {
             val i_80_ = 51 / ((i_48_ - -63) / 44)
             var i_81_ = i_73_
             var i_82_ = (-1 + i_55_) * i_72_
-            val `is` = Class17.anIntArrayArray255!![i_49_]!!
+            val `is` = WidgetDefinition.anIntArrayArray255!![i_49_]!!
             GlElementArrayBuffer.method1156(-27, i_47_ - i_54_, `is`, -i_45_ + i_47_, i_46_)
             GlElementArrayBuffer.method1156(-27, i_47_ + i_54_, `is`, -i_54_ + i_47_, i_44_)
             GlElementArrayBuffer.method1156(-27, i_45_ + i_47_, `is`, i_47_ + i_54_, i_46_)
@@ -187,15 +187,15 @@ abstract class Class348_Sub31 : Class348() {
                 if (bool) {
                     val i_87_ = i_47_ + i_53_
                     val i_88_ = -i_53_ + i_47_
-                    GlElementArrayBuffer.method1156(-27, i_88_, Class17.anIntArrayArray255!![i_83_]!!, i_86_, i_46_)
-                    GlElementArrayBuffer.method1156(-27, i_87_, Class17.anIntArrayArray255!![i_83_]!!, i_88_, i_44_)
-                    GlElementArrayBuffer.method1156(-27, i_85_, Class17.anIntArrayArray255!![i_83_]!!, i_87_, i_46_)
-                    GlElementArrayBuffer.method1156(-27, i_88_, Class17.anIntArrayArray255!![i_84_]!!, i_86_, i_46_)
-                    GlElementArrayBuffer.method1156(-27, i_87_, Class17.anIntArrayArray255!![i_84_]!!, i_88_, i_44_)
-                    GlElementArrayBuffer.method1156(-27, i_85_, Class17.anIntArrayArray255!![i_84_]!!, i_87_, i_46_)
+                    GlElementArrayBuffer.method1156(-27, i_88_, WidgetDefinition.anIntArrayArray255!![i_83_]!!, i_86_, i_46_)
+                    GlElementArrayBuffer.method1156(-27, i_87_, WidgetDefinition.anIntArrayArray255!![i_83_]!!, i_88_, i_44_)
+                    GlElementArrayBuffer.method1156(-27, i_85_, WidgetDefinition.anIntArrayArray255!![i_83_]!!, i_87_, i_46_)
+                    GlElementArrayBuffer.method1156(-27, i_88_, WidgetDefinition.anIntArrayArray255!![i_84_]!!, i_86_, i_46_)
+                    GlElementArrayBuffer.method1156(-27, i_87_, WidgetDefinition.anIntArrayArray255!![i_84_]!!, i_88_, i_44_)
+                    GlElementArrayBuffer.method1156(-27, i_85_, WidgetDefinition.anIntArrayArray255!![i_84_]!!, i_87_, i_46_)
                 } else {
-                    GlElementArrayBuffer.method1156(-27, i_85_, Class17.anIntArrayArray255!![i_83_]!!, i_86_, i_46_)
-                    GlElementArrayBuffer.method1156(-27, i_85_, Class17.anIntArrayArray255!![i_84_]!!, i_86_, i_46_)
+                    GlElementArrayBuffer.method1156(-27, i_85_, WidgetDefinition.anIntArrayArray255!![i_83_]!!, i_86_, i_46_)
+                    GlElementArrayBuffer.method1156(-27, i_85_, WidgetDefinition.anIntArrayArray255!![i_84_]!!, i_86_, i_46_)
                 }
             }
         }

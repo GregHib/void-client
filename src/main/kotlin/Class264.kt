@@ -97,20 +97,20 @@ class Class264 {
         }
 
         @JvmStatic
-        fun method2017(i: Int, class17: Class17?, i_3_: Int) {
+        fun method2017(i: Int, widgetDefinition: WidgetDefinition?, i_3_: Int) {
             anInt3367++
-            if (HintArrowOrMessage.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264!!.size > i) && class17.anIntArrayArray264!![i] != null)) {
-                val i_4_ = class17.anIntArrayArray264!![i]!![0]
+            if (HintArrowOrMessage.anInt2021 < 50 && (widgetDefinition != null && widgetDefinition.anIntArrayArray264 != null && (widgetDefinition.anIntArrayArray264!!.size > i) && widgetDefinition.anIntArrayArray264!![i] != null)) {
+                val i_4_ = widgetDefinition.anIntArrayArray264!![i]!![0]
                 var i_5_ = i_4_ shr 8
-                if (class17.anIntArrayArray264!![i]!!.size > 1) {
-                    val i_6_ = (Math.random() * (class17.anIntArrayArray264!![i])!!.size.toDouble()).toInt()
-                    if (i_6_ > 0) i_5_ = class17.anIntArrayArray264!![i]!![i_6_]
+                if (widgetDefinition.anIntArrayArray264!![i]!!.size > 1) {
+                    val i_6_ = (Math.random() * (widgetDefinition.anIntArrayArray264!![i])!!.size.toDouble()).toInt()
+                    if (i_6_ > 0) i_5_ = widgetDefinition.anIntArrayArray264!![i]!![i_6_]
                 }
                 val i_7_ = 0x7 and (i_4_ shr 5)
                 if (i_3_ > 8) {
                     var i_8_ = 256
-                    if (class17.anIntArray236 != null && class17.anIntArray265 != null) i_8_ = Class299_Sub1.method2257((class17.anIntArray265!![i]), (class17.anIntArray236!![i]), (-125).toByte())
-                    if (class17.aBoolean268) Class279.method2090(i_7_, i_8_, false, (-35).toByte(), 255, 0, i_5_)
+                    if (widgetDefinition.anIntArray236 != null && widgetDefinition.anIntArray265 != null) i_8_ = Class299_Sub1.method2257((widgetDefinition.anIntArray265!![i]), (widgetDefinition.anIntArray236!![i]), (-125).toByte())
+                    if (widgetDefinition.aBoolean268) Class279.method2090(i_7_, i_8_, false, (-35).toByte(), 255, 0, i_5_)
                     else Class348_Sub20.method2947(true, 255, i_5_, i_7_, 0, i_8_)
                 }
             }

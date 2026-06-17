@@ -380,7 +380,7 @@ class Class18 internal constructor(var_ha_Sub2: OpenGlRenderer) {
             Class344.anInt4267 = i_23_
             Class286.anInt3682 = 0
             Class58.anInt1067 = i_24_
-            Class17.Companion.anInterface4_252 = null
+            WidgetDefinition.Companion.anInterface4_252 = null
             Class348_Sub49.anInt7207 = 1
             Class239_Sub12.anInt5965 = i
             Class85.method828(38.toByte(), i_25_, i_21_)

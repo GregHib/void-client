@@ -1,4 +1,4 @@
-import Class17.Companion.method268
+import WidgetDefinition.Companion.method268
 
 /* Class268 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

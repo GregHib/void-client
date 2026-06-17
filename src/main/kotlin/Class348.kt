@@ -66,15 +66,15 @@ open class Class348 {
         }
 
         @JvmStatic
-        fun method2711(i: Int, i_3_: Int, class64: Class64?, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, var_renderer: Renderer?, i_9_: Int, i_10_: Int, i_11_: Int, class17: Class17?): Class64? {
+        fun method2711(i: Int, i_3_: Int, class64: Class64?, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, var_renderer: Renderer?, i_9_: Int, i_10_: Int, i_11_: Int, widgetDefinition: WidgetDefinition?): Class64? {
             var i_5_ = i_5_
             try {
                 anInt4298++
                 if (class64 == null) return null
                 var i_12_ = 2055
                 if (bool != false) return null
-                if (class17 != null) {
-                    i_12_ = i_12_ or class17.method263(-1, 103, i_5_, false)
+                if (widgetDefinition != null) {
+                    i_12_ = i_12_ or widgetDefinition.method263(-1, 103, i_5_, false)
                     i_12_ = i_12_ and 0x200.inv()
                 }
                 val l = ((i_10_.toLong() shl 48) + (i_7_ + ((i_9_ shl 16) + (i_11_ shl 24))).toLong() - -(i_6_.toLong() shl 32))
@@ -134,8 +134,8 @@ open class Class348 {
                 val i_33_ = class64.HA()
                 val i_34_ = class64.G()
                 var class348_sub42_sub17: Class348_Sub42_Sub17? = null
-                if (class17 != null) {
-                    i_5_ = class17.anIntArray237[i_5_]
+                if (widgetDefinition != null) {
+                    i_5_ = widgetDefinition.anIntArray237[i_5_]
                     class348_sub42_sub17 = ParticleEmitterNode.aClass87_191!!.method839(i_5_ shr 16, 3)
                     i_5_ = i_5_ and 0xffff
                 }
@@ -154,7 +154,7 @@ open class Class348 {
                 if (i_8_ != 0) class64_13_.H(0, i_8_, 0)
                 return class64_13_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (class17 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
             }
         }
 

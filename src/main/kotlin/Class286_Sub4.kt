@@ -139,7 +139,7 @@ class Class286_Sub4 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
         fun method2154(i: Int): Int {
             var i_1_ = -1
             for (i_2_ in 0..<Class75_Sub1.anInt5652 - 1) {
-                if (i < (Class17.anIntArray256!![i_2_] + Class345.anIntArray4271!![i_2_])) {
+                if (i < (WidgetDefinition.anIntArray256!![i_2_] + Class345.anIntArray4271!![i_2_])) {
                     i_1_ = i_2_
                     break
                 }

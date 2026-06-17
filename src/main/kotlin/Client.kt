@@ -71,7 +71,7 @@ import AudioResampler.Companion.method1276
 import ItemDefinitionLoader.Companion.method1284
 import ParticleSystemState.Companion.method1293
 import HeapDiagnosticsHolder.method1298
-import Class17.Companion.method265
+import WidgetDefinition.Companion.method265
 import VarpStore.Companion.method1309
 import VarpStore.Companion.method1310
 import VarpStore.Companion.method1315

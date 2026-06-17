@@ -161,7 +161,7 @@ class Class239_Sub16 : Class239 {
             val i_19_ = Class85.method831(CameraNodeList.anInt1745, i_12_, Class369.anInt4960, 77)
             val i_20_ = Class85.method831(CameraNodeList.anInt1745, i_14_, Class369.anInt4960, 59)
             val i_21_ = -27 / ((i_15_ - -6) / 55)
-            for (i_22_ in i_17_..i_18_) GlElementArrayBuffer.method1156(-27, i_20_, Class17.anIntArrayArray255!![i_22_]!!, i_19_, i_16_)
+            for (i_22_ in i_17_..i_18_) GlElementArrayBuffer.method1156(-27, i_20_, WidgetDefinition.anIntArrayArray255!![i_22_]!!, i_19_, i_16_)
         }
     }
 }

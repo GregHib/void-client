@@ -114,7 +114,7 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
         fun method184(i: Int): IntArray {
             anInt8346++
             if (i != 1084489728) method189(33.toByte())
-            return (intArrayOf(Class56.anInt1044, Class17.anInt235, Class291.anInt3736))
+            return (intArrayOf(Class56.anInt1044, WidgetDefinition.anInt235, Class291.anInt3736))
         }
 
         @JvmStatic

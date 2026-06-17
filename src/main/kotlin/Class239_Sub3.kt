@@ -100,16 +100,16 @@ class Class239_Sub3 : Class239 {
             anInt5868++
             val i_12_ = -i_9_ + i_5_
             val i_13_ = i_9_ + i_6_
-            for (i_14_ in i_6_..<i_13_) GlElementArrayBuffer.method1156(-27, i_7_, Class17.anIntArrayArray255!![i_14_]!!, i_11_, i)
+            for (i_14_ in i_6_..<i_13_) GlElementArrayBuffer.method1156(-27, i_7_, WidgetDefinition.anIntArrayArray255!![i_14_]!!, i_11_, i)
             val i_15_ = i_7_ + -i_9_
             val i_16_ = i_9_ + i_11_
             var i_17_ = i_5_
             while (i_12_ < i_17_) {
-                GlElementArrayBuffer.method1156(i_10_ + 101, i_7_, Class17.anIntArrayArray255!![i_17_]!!, i_11_, i)
+                GlElementArrayBuffer.method1156(i_10_ + 101, i_7_, WidgetDefinition.anIntArrayArray255!![i_17_]!!, i_11_, i)
                 i_17_--
             }
             for (i_18_ in i_13_..i_12_) {
-                val `is` = Class17.anIntArrayArray255!![i_18_]!!
+                val `is` = WidgetDefinition.anIntArrayArray255!![i_18_]!!
                 GlElementArrayBuffer.method1156(-27, i_16_, `is`, i_11_, i)
                 GlElementArrayBuffer.method1156(-27, i_15_, `is`, i_16_, i_8_)
                 GlElementArrayBuffer.method1156(-27, i_7_, `is`, i_15_, i)

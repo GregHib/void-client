@@ -59,7 +59,7 @@ abstract class Class299 {
             var i_14_ = -i_10_
             var i_15_ = -1
             var i_16_ = -1
-            val `is` = Class17.anIntArrayArray255!![i_6_]!!
+            val `is` = WidgetDefinition.anIntArrayArray255!![i_6_]!!
             val i_17_ = i_3_ + -i_10_
             val i_18_ = i_10_ + i_3_
             GlElementArrayBuffer.method1156(-27, i_17_, `is`, -i + i_3_, i_8_)
@@ -80,15 +80,15 @@ abstract class Class299 {
                     i_11_--
                     i_12_ -= i_11_ shl 1
                     if (i_10_ <= i_11_) {
-                        val is_19_ = Class17.anIntArrayArray255!![i_11_ + i_6_]!!
-                        val is_20_ = Class17.anIntArrayArray255!![i_6_ + -i_11_]!!
+                        val is_19_ = WidgetDefinition.anIntArrayArray255!![i_11_ + i_6_]!!
+                        val is_20_ = WidgetDefinition.anIntArrayArray255!![i_6_ + -i_11_]!!
                         val i_21_ = i_3_ - -i_9_
                         val i_22_ = -i_9_ + i_3_
                         GlElementArrayBuffer.method1156(-27, i_21_, is_19_, i_22_, i_8_)
                         GlElementArrayBuffer.method1156(-27, i_21_, is_20_, i_22_, i_8_)
                     } else {
-                        val is_23_ = Class17.anIntArrayArray255!![i_6_ - -i_11_]!!
-                        val is_24_ = Class17.anIntArrayArray255!![-i_11_ + i_6_]!!
+                        val is_23_ = WidgetDefinition.anIntArrayArray255!![i_6_ - -i_11_]!!
+                        val is_24_ = WidgetDefinition.anIntArrayArray255!![-i_11_ + i_6_]!!
                         val i_25_ = Class348_Sub49_Sub2.anIntArray9757!![i_11_]
                         val i_26_ = i_9_ + i_3_
                         val i_27_ = i_3_ - i_9_
@@ -102,8 +102,8 @@ abstract class Class299 {
                         GlElementArrayBuffer.method1156(-27, i_26_, is_24_, i_28_, i_8_)
                     }
                 }
-                val is_30_ = Class17.anIntArrayArray255!![i_6_ + i_9_]!!
-                val is_31_ = Class17.anIntArrayArray255!![-i_9_ + i_6_]!!
+                val is_30_ = WidgetDefinition.anIntArrayArray255!![i_6_ + i_9_]!!
+                val is_31_ = WidgetDefinition.anIntArrayArray255!![-i_9_ + i_6_]!!
                 val i_32_ = i_3_ - -i_11_
                 val i_33_ = i_3_ - i_11_
                 if (i_10_ > i_9_) {

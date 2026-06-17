@@ -10,7 +10,7 @@ import java.awt.Frame
 
 class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int) : Class318_Sub1_Sub3(i_36_, i_37_, i_38_, i_39_, i_40_, i_41_, i_42_, i_43_, i_44_, false, 0.toByte()) {
     private var anInt10331 = 0
-    private var aClass17_10332: Class17? = null
+    private var aWidgetDefinition_10332: WidgetDefinition? = null
     private var anInt10334 = 0
     private var anInt10335 = 0
     private var aBoolean10338 = true
@@ -65,7 +65,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
 
     public override fun method2392(bool: Boolean) {
         anInt10343++
-        if (bool != true) aClass17_10332 = null
+        if (bool != true) aWidgetDefinition_10332 = null
         throw IllegalStateException()
     }
 
@@ -161,10 +161,10 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         val i_46_ = class368.anInt4503
         if (i_46_ == -1) this.aBoolean10345 = true
         else {
-            aClass17_10332 = ParticleEmitterNode.aClass87_191!!.method835(i_46_, 7)
+            aWidgetDefinition_10332 = ParticleEmitterNode.aClass87_191!!.method835(i_46_, 7)
             this.aBoolean10345 = false
         }
-        if (this.anInt10349 == i_35_) method2178(this, anInt10335, aClass17_10332, -99)
+        if (this.anInt10349 == i_35_) method2178(this, anInt10335, aWidgetDefinition_10332, -99)
     }
 
     fun method2470(i: Int, i_47_: Byte) {
@@ -172,15 +172,15 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             anInt10333++
             if (!this.aBoolean10345) {
                 anInt10339 += i
-                while (aClass17_10332!!.anIntArray267!![anInt10335] < anInt10339) {
-                    anInt10339 -= (aClass17_10332!!.anIntArray267!![anInt10335])
+                while (aWidgetDefinition_10332!!.anIntArray267!![anInt10335] < anInt10339) {
+                    anInt10339 -= (aWidgetDefinition_10332!!.anIntArray267!![anInt10335])
                     anInt10335++
-                    if (aClass17_10332!!.anIntArray237.size <= anInt10335) {
+                    if (aWidgetDefinition_10332!!.anIntArray237.size <= anInt10335) {
                         this.aBoolean10345 = true
                         break
                     }
                 }
-                if (!this.aBoolean10345) method2178(this, anInt10335, aClass17_10332, -59)
+                if (!this.aBoolean10345) method2178(this, anInt10335, aWidgetDefinition_10332, -59)
             }
         }
     }

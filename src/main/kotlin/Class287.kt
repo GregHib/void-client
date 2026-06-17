@@ -56,36 +56,36 @@ class Class287 {
         var anInt3695: Int = 0
 
         @JvmStatic
-        fun method2178(class318_sub1: Class318_Sub1?, i: Int, class17: Class17?, i_0_: Int) {
+        fun method2178(class318_sub1: Class318_Sub1?, i: Int, widgetDefinition: WidgetDefinition?, i_0_: Int) {
             try {
                 anInt3694++
-                if (HintArrowOrMessage.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264!!.size > i) && class17.anIntArrayArray264!![i] != null)) {
-                    val i_1_ = class17.anIntArrayArray264!![i]!![0]
+                if (HintArrowOrMessage.anInt2021 < 50 && (widgetDefinition != null && widgetDefinition.anIntArrayArray264 != null && (widgetDefinition.anIntArrayArray264!!.size > i) && widgetDefinition.anIntArrayArray264!![i] != null)) {
+                    val i_1_ = widgetDefinition.anIntArrayArray264!![i]!![0]
                     var i_2_ = i_1_ shr 8
                     val i_3_ = (i_1_ and 0xf1) shr 5
                     if (i_0_ > -13) anInt3695 = 0
-                    if (class17.anIntArrayArray264!![i]!!.size > 1) {
-                        val i_4_ = ((class17.anIntArrayArray264!![i])!!.size.toDouble() * Math.random()).toInt()
-                        if (i_4_ > 0) i_2_ = class17.anIntArrayArray264!![i]!![i_4_]
+                    if (widgetDefinition.anIntArrayArray264!![i]!!.size > 1) {
+                        val i_4_ = ((widgetDefinition.anIntArrayArray264!![i])!!.size.toDouble() * Math.random()).toInt()
+                        if (i_4_ > 0) i_2_ = widgetDefinition.anIntArrayArray264!![i]!![i_4_]
                     }
                     val i_5_ = i_1_ and 0x1f
                     var i_6_ = 256
-                    if (class17.anIntArray236 != null && class17.anIntArray265 != null) i_6_ = ((Math.random() * (-(class17.anIntArray236!![i]) + (class17.anIntArray265!![i])).toDouble()).toInt() + class17.anIntArray236!![i])
-                    val i_7_ = (if (class17.anIntArray253 == null) 255 else class17.anIntArray253!![i])
+                    if (widgetDefinition.anIntArray236 != null && widgetDefinition.anIntArray265 != null) i_6_ = ((Math.random() * (-(widgetDefinition.anIntArray236!![i]) + (widgetDefinition.anIntArray265!![i])).toDouble()).toInt() + widgetDefinition.anIntArray236!![i])
+                    val i_7_ = (if (widgetDefinition.anIntArray253 == null) 255 else widgetDefinition.anIntArray253!![i])
                     if (i_5_ == 0) {
                         if (LocalPlayerState.aPlayer_1907 == class318_sub1) {
-                            if (!class17.aBoolean268) Class348_Sub20.method2947(true, i_7_, i_2_, i_3_, 0, i_6_)
+                            if (!widgetDefinition.aBoolean268) Class348_Sub20.method2947(true, i_7_, i_2_, i_3_, 0, i_6_)
                             else Class279.method2090(i_3_, i_6_, false, (-35).toByte(), i_7_, 0, i_2_)
                         }
                     } else if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) != 0) {
                         val i_8_ = (class318_sub1!!.x + -256 shr 9)
                         val i_9_ = (class318_sub1.y - 256 shr 9)
                         val i_10_ = (if (LocalPlayerState.aPlayer_1907 != class318_sub1) ((class318_sub1.plane.toInt() shl 24) + ((i_8_ shl 16) + (i_9_ shl 8)) + i_5_) else 0)
-                        Class258_Sub2.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode((if (class17.aBoolean268) 2.toByte() else 1.toByte()), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1)
+                        Class258_Sub2.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode((if (widgetDefinition.aBoolean268) 2.toByte() else 1.toByte()), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1)
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vp.A(" + (if (class318_sub1 != null) "{...}" else "null") + ',' + i + ',' + (if (class17 != null) "{...}" else "null") + ',' + i_0_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("vp.A(" + (if (class318_sub1 != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_0_ + ')'))
             }
         }
 

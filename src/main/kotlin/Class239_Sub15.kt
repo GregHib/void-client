@@ -141,7 +141,7 @@ class Class239_Sub15 : Class239 {
             if (bool) {
                 var i_19_ = i
                 while (i_5_ >= i_19_) {
-                    Class17.anIntArrayArray255!![i_19_]!![i_13_] = i_6_
+                    WidgetDefinition.anIntArrayArray255!![i_19_]!![i_13_] = i_6_
                     i_16_ += i_15_
                     if (i_16_ > 0) {
                         i_13_ += i_17_
@@ -152,7 +152,7 @@ class Class239_Sub15 : Class239 {
             } else {
                 for (i_18_ in i..i_5_) {
                     i_16_ += i_15_
-                    Class17.anIntArrayArray255!![i_13_]!![i_18_] = i_6_
+                    WidgetDefinition.anIntArrayArray255!![i_13_]!![i_18_] = i_6_
                     if (i_16_ > 0) {
                         i_13_ += i_17_
                         i_16_ -= i_14_

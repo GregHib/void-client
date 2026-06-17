@@ -61,13 +61,13 @@ class OutputStream_Sub1 : OutputStream() {
                     if (Class348_Sub35.anInt6979 shr 8 > i_4_) i_4_ = Class348_Sub35.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && Class255.anIntArray3273!![4] + 128 > i_4_) i_4_ = Class255.anIntArray3273!![4] + 128
                     val i_5_ = Class314.aFloat3938.toInt() + RenderableGroup.anInt5016 and 0x3fff
-                    Class17.method268(i_4_, -200 + (Class275.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
+                    WidgetDefinition.method268(i_4_, -200 + (Class275.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
                 } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
                     var i_6_ = Class76.aFloat1287.toInt()
                     if (i_6_ < Class348_Sub35.anInt6979 shr 8) i_6_ = Class348_Sub35.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && (i_6_ < Class255.anIntArray3273!![4] + 128)) i_6_ = 128 + Class255.anIntArray3273!![4]
                     val i_7_ = Class314.aFloat3938.toInt() and 0x3fff
-                    Class17.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, Class355.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
+                    WidgetDefinition.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, Class355.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
                 } else if (Class348_Sub40_Sub21.anInt9282 == 5) Class268.method2035(i_2_, 0)
                 val i_8_ = Class286_Sub4.anInt6246
                 val i_9_ = Class305.anInt3855
