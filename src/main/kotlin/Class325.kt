@@ -513,7 +513,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
-                                Class216.anInt4979++
+                                FloatGrid.anInt4979++
                                 Class239_Sub20.anInt6048 = 2
                                 val class348_sub47 = (method2148(Class348_Sub42_Sub18.aClass351_9684, Class348_Sub23_Sub2.aClass77_9029, -126))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(81, i_77_)

@@ -3125,7 +3125,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub25.anInt9337 = 0
             Class348_Sub40_Sub23.anInt9321 = 0
             Class217.anInt2840 = 0
-            Class216.anInt4979 = 0
+            FloatGrid.anInt4979 = 0
             NativeTerrainTile.anInt8297 = 0
             Class288_Sub1.anInt8576 = 0
             Class243.anInt3159 = 0
@@ -3801,7 +3801,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7959 = 0
             Class280.anInt3634 = 0
             ProjectionCameraTransform.anInt5771 = 0
-            Class216.anInt4977 = 0
+            FloatGrid.anInt4977 = 0
             WidgetComponentNode.anInt4657 = 0
             Class368.anInt4511 = 0
             NativeRenderer.anInt7934 = 0

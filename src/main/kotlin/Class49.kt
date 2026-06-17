@@ -6,10 +6,10 @@ import kotlin.concurrent.Volatile
 /* Class49 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModelRenderer: AbstractModelRenderer?, class216: Class216?) : Interface4 {
+class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModelRenderer: AbstractModelRenderer?, floatGrid: FloatGrid?) : Interface4 {
     var aFloatArray4719: FloatArray? = null
     var anInt4722: Int = 0
-    private var aClass216_4724: Class216? = null
+    private var aFloatGrid_4724: FloatGrid? = null
     var anInt4725: Int = 0
     private val aHa_Sub1_4729: SoftwareRenderer?
     var anIntArray4731: IntArray?
@@ -40,12 +40,12 @@ class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModel
                     this.anInt4722 = class105_sub3_sub3.anInt8470
                     this.anIntArray4731 = (class105_sub3_sub3.anIntArray9936)
                 }
-                if (class216 == null) break
-                aClass216_4724 = class216
-                if ((aClass216_4724!!.anInt4974 != this.anInt4725) || (this.anInt4722 != aClass216_4724!!.anInt4978)) throw RuntimeException()
-                this.aFloatArray4719 = aClass216_4724!!.aFloatArray4980
+                if (floatGrid == null) break
+                aFloatGrid_4724 = floatGrid
+                if ((aFloatGrid_4724!!.anInt4974 != this.anInt4725) || (this.anInt4722 != aFloatGrid_4724!!.anInt4978)) throw RuntimeException()
+                this.aFloatArray4719 = aFloatGrid_4724!!.aFloatArray4980
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("it.<init>(" + (if (var_ha_Sub1 != null) "{...}" else "null") + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + (if (class216 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("it.<init>(" + (if (var_ha_Sub1 != null) "{...}" else "null") + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + (if (floatGrid != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

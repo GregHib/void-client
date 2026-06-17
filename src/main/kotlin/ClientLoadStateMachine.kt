@@ -136,7 +136,7 @@ object ClientLoadStateMachine {
             HoverActionEntry.aClass45_1815 = Class369_Sub2.method3571(false, 15, (-23).toByte(), 1)
             Class94.aClass45_1538 = Class369_Sub2.method3571(false, 16, (-23).toByte(), 1)
             Class247.aClass45_3183 = Class369_Sub2.method3571(false, 17, (-23).toByte(), 1)
-            Class216.aClass45_4975 = Class369_Sub2.method3571(false, 18, (-23).toByte(), 1)
+            FloatGrid.aClass45_4975 = Class369_Sub2.method3571(false, 18, (-23).toByte(), 1)
             SpotAnimVector.aClass45_2306 = Class369_Sub2.method3571(false, 19, (-23).toByte(), 1)
             OpenGlRenderNode.aClass45_10480 = Class369_Sub2.method3571(false, 20, (-23).toByte(), 1)
             Class78.aClass45_1322 = Class369_Sub2.method3571(false, 21, (-23).toByte(), 1)
@@ -193,7 +193,7 @@ object ClientLoadStateMachine {
             Class348_Sub40_Sub12.aClass263_9195 = Class263(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class94.aClass45_1538, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
-            MapAreaDefinition.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.aClass45_4975, RasterSprite.aClass45_5207)
+            MapAreaDefinition.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, FloatGrid.aClass45_4975, RasterSprite.aClass45_5207)
             Exception_Sub1.aClass255_112 = Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, ProjectionCameraTransform.aClass326_5764, SpotAnimVector.aClass45_2306, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036 = LocTypeDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             ParticleEmitterNode.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, OpenGlRenderNode.aClass45_10480, Class348_Sub29.aClass45_6909, TextureGenerator.aClass45_2490)
@@ -258,7 +258,7 @@ object ClientLoadStateMachine {
             Class319.aBoolean3988 = true
             Class247.aClass45_3183!!.anInt634 = 2
             Class94.aClass45_1538!!.anInt634 = 2
-            Class216.aClass45_4975!!.anInt634 = 2
+            FloatGrid.aClass45_4975!!.anInt634 = 2
             SpotAnimVector.aClass45_2306!!.anInt634 = 2
             OpenGlRenderNode.aClass45_10480!!.anInt634 = 2
             Class78.aClass45_1322!!.anInt634 = 2

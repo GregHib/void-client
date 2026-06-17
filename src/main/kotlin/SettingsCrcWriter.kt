@@ -31,7 +31,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(115.toByte(), HoverActionEntry.aClass45_1815!!.method389(-115))
         class348_sub49_sub2.writeInt(126.toByte(), Class94.aClass45_1538!!.method389(104))
         class348_sub49_sub2.writeInt(93.toByte(), Class247.aClass45_3183!!.method389(28))
-        class348_sub49_sub2.writeInt(115.toByte(), Class216.aClass45_4975!!.method389(-96))
+        class348_sub49_sub2.writeInt(115.toByte(), FloatGrid.aClass45_4975!!.method389(-96))
         class348_sub49_sub2.writeInt(102.toByte(), SpotAnimVector.aClass45_2306!!.method389(98))
         class348_sub49_sub2.writeInt(97.toByte(), OpenGlRenderNode.aClass45_10480!!.method389(114))
         class348_sub49_sub2.writeInt(123.toByte(), Class78.aClass45_1322!!.method389(-104))

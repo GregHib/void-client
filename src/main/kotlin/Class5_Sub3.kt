@@ -110,7 +110,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-128).toByte(), 0)
                                     Class348_Sub42_Sub14.method3243(126, class348_sub47)
                                 } else if (i == 5) {
-                                    Class216.anInt4979++
+                                    FloatGrid.anInt4979++
                                     val class348_sub47 = (method2148(Class348_Sub42_Sub18.aClass351_9684, Class348_Sub23_Sub2.aClass77_9029, -83))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(81, `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)

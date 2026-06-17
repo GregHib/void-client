@@ -1045,7 +1045,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {
-        return Class49(this, interface3 as AbstractModelRenderer?, interface13 as Class216?)
+        return Class49(this, interface3 as AbstractModelRenderer?, interface13 as FloatGrid?)
     }
 
     public override fun C(bool: Boolean) {
@@ -1372,7 +1372,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3624(i: Int, i_369_: Int): Interface13 {
-        return Class216(i, i_369_)
+        return FloatGrid(i, i_369_)
     }
 
     override fun method3632(`is`: IntArray?) {

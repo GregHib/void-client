@@ -751,7 +751,7 @@ open class Class348_Sub49 : Class348 {
                     Class95.aClass45_1541!!.anInt634 = 2
                     Class247.aClass45_3183!!.anInt634 = 2
                     Class94.aClass45_1538!!.anInt634 = 2
-                    Class216.aClass45_4975!!.anInt634 = 2
+                    FloatGrid.aClass45_4975!!.anInt634 = 2
                     SpotAnimVector.aClass45_2306!!.anInt634 = 2
                     OpenGlRenderNode.aClass45_10480!!.anInt634 = 2
                     Class78.aClass45_1322!!.anInt634 = 2
@@ -766,7 +766,7 @@ open class Class348_Sub49 : Class348 {
                     Class95.aClass45_1541!!.anInt634 = 1
                     Class247.aClass45_3183!!.anInt634 = 1
                     Class94.aClass45_1538!!.anInt634 = 1
-                    Class216.aClass45_4975!!.anInt634 = 1
+                    FloatGrid.aClass45_4975!!.anInt634 = 1
                     SpotAnimVector.aClass45_2306!!.anInt634 = 1
                     OpenGlRenderNode.aClass45_10480!!.anInt634 = 1
                     Class78.aClass45_1322!!.anInt634 = 1
