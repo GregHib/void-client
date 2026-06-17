@@ -59,7 +59,7 @@ class Class64_Sub3 : Class64 {
     private var aClass123_5610: Class123? = null
     private var aShort5617: Short = 0
     private var aClass123_5620: Class123? = null
-    private var aClass118Array5621: Array<Class118?>? = null
+    private var aMapSceneTileDefinitionArray5621: Array<MapSceneTileDefinition?>? = null
     private var anIntArray5626: IntArray? = null
     private var anIntArrayArray5627: Array<IntArray?>? = null
     private var aShort5629: Short = 0
@@ -414,14 +414,14 @@ class Class64_Sub3 : Class64 {
     }
 
     private fun method682(bool: Boolean) {
-        if (aClass118Array5621 != null) {
+        if (aMapSceneTileDefinitionArray5621 != null) {
             val class101_sub3 = aHa_Sub2_5598!!.aClass101_Sub3_7729
             aHa_Sub2_5598.method3788(-18516)
             aHa_Sub2_5598.C(!aBoolean5595)
             aHa_Sub2_5598.method3728(false, 35)
             aHa_Sub2_5598.method3794(aHa_Sub2_5598.aClass123_7849, null, -26411, aHa_Sub2_5598.aClass123_7833, null)
             for (i in 0..<anInt5536) {
-                val class118 = aClass118Array5621!![i]!!
+                val class118 = aMapSceneTileDefinitionArray5621!![i]!!
                 val class48 = aClass48Array5596!![i]!!
                 if (!class118.aBoolean1791 || !aHa_Sub2_5598.method3666()) {
                     val f = (((anIntArray5543!![class118.anInt1782]) + ((anIntArray5543!![class118.anInt1788]) + (anIntArray5543!![class118.anInt1781]))).toFloat() * 0.3333333f)
@@ -770,9 +770,9 @@ class Class64_Sub3 : Class64 {
             aShortArray5580!![i_198_] = (Class273.method2057(Class273.method2057(i_201_ shl 7, i_200_ shl 10), i_202_)).toShort()
             i_198_++
         }
-        if (aClass118Array5621 != null) {
+        if (aMapSceneTileDefinitionArray5621 != null) {
             for (i_203_ in 0..<anInt5536) {
-                val class118 = aClass118Array5621!![i_203_]!!
+                val class118 = aMapSceneTileDefinitionArray5621!![i_203_]!!
                 val class48 = aClass48Array5596!![i_203_]!!
                 class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
             }
@@ -1059,7 +1059,7 @@ class Class64_Sub3 : Class64 {
                 class64_sub3_211_.aShort5634 = aShort5634
                 class64_sub3_211_.aShort5646 = aShort5646
             } else class64_sub3_211_.aBoolean5527 = false
-            class64_sub3_211_.aClass118Array5621 = aClass118Array5621
+            class64_sub3_211_.aMapSceneTileDefinitionArray5621 = aMapSceneTileDefinitionArray5621
             class64_sub3_211_.aShortArray5608 = aShortArray5608
             class64_sub3_211_.anIntArrayArray5539 = anIntArrayArray5539
             class64_sub3_211_.aShortArray5649 = aShortArray5649
@@ -1140,7 +1140,7 @@ class Class64_Sub3 : Class64 {
                             f_247_ = (aHa_Sub2_5598.anInt7794.toFloat() * (f_244_ - aShort5634.toFloat()))
                         }
                         if (!(f_247_ / i.toFloat() >= aHa_Sub2_5598.aFloat7830) && !(aHa_Sub2_5598.aFloat7836 >= f_246_ / i.toFloat())) {
-                            if (class318_sub3 != null || aClass118Array5621 != null) {
+                            if (class318_sub3 != null || aMapSceneTileDefinitionArray5621 != null) {
                                 Class314.aFloat3943 = (((class101_sub3_236_.aFloat5770) * (class101_sub3.aFloat5761)) + ((class101_sub3.aFloat5769) * class101_sub3_236_.aFloat5761) + ((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5762)))
                                 Class313.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_236_.aFloat5784)) + ((class101_sub3_236_.aFloat5781 * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5750) * (class101_sub3_236_.aFloat5762))))
                                 Class318_Sub9_Sub1.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_236_.aFloat5756)) + ((class101_sub3_236_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_236_.aFloat5761))))
@@ -1300,9 +1300,9 @@ class Class64_Sub3 : Class64 {
             i_289_ = class12.aByte216
         }
         if ((i_287_ != i_289_) or (i_286_ != i_288_)) {
-            if (aClass118Array5621 != null) {
+            if (aMapSceneTileDefinitionArray5621 != null) {
                 for (i_290_ in 0..<anInt5536) {
-                    val class118 = aClass118Array5621!![i_290_]!!
+                    val class118 = aMapSceneTileDefinitionArray5621!![i_290_]!!
                     val class48 = aClass48Array5596!![i_290_]!!
                     class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
                 }
@@ -1643,7 +1643,7 @@ class Class64_Sub3 : Class64 {
                             f_361_ = (aHa_Sub2_5598.anInt7794.toFloat() * (f_358_ - aShort5634.toFloat()))
                         }
                         if (!(f_361_ / f_353_ >= aHa_Sub2_5598.aFloat7830) && !(aHa_Sub2_5598.aFloat7836 >= f_360_ / f_353_)) {
-                            if (class318_sub3 != null || aClass118Array5621 != null) {
+                            if (class318_sub3 != null || aMapSceneTileDefinitionArray5621 != null) {
                                 Class286_Sub8.aFloat6304 = (((class101_sub3_350_.aFloat5762) * (class101_sub3.aFloat5754)) + ((class101_sub3_350_.aFloat5781) * (class101_sub3.aFloat5756)) + ((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5784)))
                                 Class318_Sub9_Sub1.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_350_.aFloat5756)) + ((class101_sub3_350_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_350_.aFloat5761))))
                                 Class313.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_350_.aFloat5784)) + ((class101_sub3_350_.aFloat5762 * (class101_sub3.aFloat5750)) + (class101_sub3_350_.aFloat5781 * (class101_sub3.aFloat5770))))
@@ -1716,7 +1716,7 @@ class Class64_Sub3 : Class64 {
         anInt5531++
         if (aBoolean5555) {
             aBoolean5555 = false
-            if (aClass129Array5640 == null && aClass342Array5541 == null && aClass118Array5621 == null) {
+            if (aClass129Array5640 == null && aClass342Array5541 == null && aMapSceneTileDefinitionArray5621 == null) {
                 if (anIntArray5543 != null && !Class337.method2659(123.toByte(), anInt5648, anInt5556)) {
                     if (aClass123_5605 == null || (aClass123_5605!!.anInterface2_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
@@ -1809,9 +1809,9 @@ class Class64_Sub3 : Class64 {
             if (i == aShortArray5580!![i_382_]) aShortArray5580!![i_382_] = i_381_
             i_382_++
         }
-        if (aClass118Array5621 != null) {
+        if (aMapSceneTileDefinitionArray5621 != null) {
             for (i_383_ in 0..<anInt5536) {
-                val class118 = aClass118Array5621!![i_383_]!!
+                val class118 = aMapSceneTileDefinitionArray5621!![i_383_]!!
                 val class48 = aClass48Array5596!![i_383_]!!
                 class48.anInt858 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5580!![class118.anInt1783].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class48.anInt858))
             }
@@ -2099,9 +2099,9 @@ class Class64_Sub3 : Class64 {
                         }
                         i_450_++
                     }
-                    if (aClass118Array5621 != null) {
+                    if (aMapSceneTileDefinitionArray5621 != null) {
                         for (i_456_ in 0..<anInt5536) {
-                            val class118 = aClass118Array5621!![i_456_]!!
+                            val class118 = aMapSceneTileDefinitionArray5621!![i_456_]!!
                             val class48 = aClass48Array5596!![i_456_]!!
                             class48.anInt858 = (255 + -((aByteArray5542!![class118.anInt1783]).toInt() and 0xff) shl 24 or (0xffffff and class48.anInt858))
                         }
@@ -2134,10 +2134,10 @@ class Class64_Sub3 : Class64 {
                         }
                         i_457_++
                     }
-                    if (aClass118Array5621 != null) {
+                    if (aMapSceneTileDefinitionArray5621 != null) {
                         var i_466_ = 0
                         while (anInt5536 > i_466_) {
-                            val class118 = aClass118Array5621!![i_466_]!!
+                            val class118 = aMapSceneTileDefinitionArray5621!![i_466_]!!
                             val class48 = aClass48Array5596!![i_466_]!!
                             class48.anInt858 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (0xffffff.inv() and class48.anInt858))
                             i_466_++
@@ -2285,9 +2285,9 @@ class Class64_Sub3 : Class64 {
                 aByteArray5542!![i_496_] = i_497_.toByte()
             }
             if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
-            if (aClass118Array5621 != null) {
+            if (aMapSceneTileDefinitionArray5621 != null) {
                 for (i_498_ in 0..<anInt5536) {
-                    val class118 = aClass118Array5621!![i_498_]!!
+                    val class118 = aMapSceneTileDefinitionArray5621!![i_498_]!!
                     val class48 = aClass48Array5596!![i_498_]!!
                     class48.anInt858 = (0xffffff and class48.anInt858 or (-(0xff and aByteArray5542!![(class118.anInt1783)].toInt()) + 255 shl 24))
                 }
@@ -2312,9 +2312,9 @@ class Class64_Sub3 : Class64 {
                 i_499_++
             }
             if (aClass123_5610 != null) aClass123_5610!!.anInterface2_1811 = null
-            if (aClass118Array5621 != null) {
+            if (aMapSceneTileDefinitionArray5621 != null) {
                 for (i_504_ in 0..<anInt5536) {
-                    val class118 = aClass118Array5621!![i_504_]!!
+                    val class118 = aMapSceneTileDefinitionArray5621!![i_504_]!!
                     val class48 = aClass48Array5596!![i_504_]!!
                     class48.anInt858 = (((ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()]) and 0xffffff) or (class48.anInt858 and 0xffffff.inv()))
                 }
@@ -2792,9 +2792,9 @@ class Class64_Sub3 : Class64 {
                             }
                         }
                     }
-                    if (aClass118Array5621 != null) {
+                    if (aMapSceneTileDefinitionArray5621 != null) {
                         for (i_659_ in 0..<anInt5536) {
-                            val class118 = aClass118Array5621!![i_659_]!!
+                            val class118 = aMapSceneTileDefinitionArray5621!![i_659_]!!
                             val class48 = aClass48Array5596!![i_659_]!!
                             class48.anInt858 = ((255 + -(0xff and (aByteArray5542!![(class118.anInt1783)]).toInt()) shl 24) or (class48.anInt858 and 0xffffff))
                         }
@@ -2830,10 +2830,10 @@ class Class64_Sub3 : Class64 {
                         }
                         i_660_++
                     }
-                    if (aClass118Array5621 != null) {
+                    if (aMapSceneTileDefinitionArray5621 != null) {
                         var i_669_ = 0
                         while (anInt5536 > i_669_) {
-                            val class118 = aClass118Array5621!![i_669_]!!
+                            val class118 = aMapSceneTileDefinitionArray5621!![i_669_]!!
                             val class48 = aClass48Array5596!![i_669_]!!
                             class48.anInt858 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (class48.anInt858 and 0xffffff.inv()))
                             i_669_++
@@ -3066,7 +3066,7 @@ class Class64_Sub3 : Class64 {
                 if (class124.aClass162Array1832 != null) {
                     anInt5536 = class124.aClass162Array1832!!.size
                     aClass48Array5596 = arrayOfNulls<Class48>(anInt5536)
-                    aClass118Array5621 = arrayOfNulls<Class118>(anInt5536)
+                    aMapSceneTileDefinitionArray5621 = arrayOfNulls<MapSceneTileDefinition>(anInt5536)
                     var i_711_ = 0
                     while (anInt5536 > i_711_) {
                         val class162 = class124.aClass162Array1832!![i_711_]!!
@@ -3081,7 +3081,7 @@ class Class64_Sub3 : Class64 {
                         if (i_712_ == -1) throw RuntimeException()
                         var i_714_ = ((ParticleEmitterNode.anIntArray179!![0xffff and (class124.aShortArray1862[class162.anInt2155]).toInt()]) and 0xffffff)
                         i_714_ = i_714_ or (255 + -(if ((class124.aByteArray1834) == null) 0 else (class124.aByteArray1834!![(class162.anInt2155)])) shl 24)
-                        aClass118Array5621!![i_711_] = Class118(i_712_, (class124.aShortArray1863[class162.anInt2155]).toInt(), (class124.aShortArray1835!![class162.anInt2155]).toInt(), (class124.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
+                        aMapSceneTileDefinitionArray5621!![i_711_] = MapSceneTileDefinition(i_712_, (class124.aShortArray1863[class162.anInt2155]).toInt(), (class124.aShortArray1835!![class162.anInt2155]).toInt(), (class124.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
                         aClass48Array5596!![i_711_] = Class48(i_714_)
                         i_711_++
                     }

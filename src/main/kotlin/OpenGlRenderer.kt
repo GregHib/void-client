@@ -3757,7 +3757,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     val i_351_ = (class318_sub1_sub3_sub3.method2426(200) / 2)
                                     Class348_Sub13.method2801(i_351_, i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, (-107).toByte())
                                     if (Class239_Sub21.anIntArray6062!![0] > -1) {
-                                        Class239_Sub21.anIntArray6062!![0] += Class118.anIntArray1786!![i_344_]
+                                        Class239_Sub21.anIntArray6062!![0] += MapSceneTileDefinition.anIntArray1786!![i_344_]
                                         Class239_Sub21.anIntArray6062!![1] += DualMaterialContainer.anIntArray1636!![i_344_]
                                         val `object`: Any? = null
                                         val object_352_: Any? = null
