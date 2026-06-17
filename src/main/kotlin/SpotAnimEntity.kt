@@ -405,42 +405,42 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             RegionSceneLoader.method2193(true, (-127).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 70) {
-                            MinimapSpriteRenderer.aClass323_4921 = Class323(var_renderer!!, 11, true, ParticleSystemRenderer.aCanvas3869!!)
+                            MinimapSpriteRenderer.aSystemFontGlyphs_4921 = SystemFontGlyphs(var_renderer!!, 11, true, ParticleSystemRenderer.aCanvas3869!!)
                             Class348.anInt4290 = 73
                             RegionSceneLoader.method2193(true, (-123).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 73) {
-                            GlRectangleTexture.aClass323_8644 = Class323(var_renderer!!, 12, true, ParticleSystemRenderer.aCanvas3869!!)
+                            GlRectangleTexture.aSystemFontGlyphs_8644 = SystemFontGlyphs(var_renderer!!, 12, true, ParticleSystemRenderer.aCanvas3869!!)
                             Class348.anInt4290 = 76
                             RegionSceneLoader.method2193(true, (-125).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 76) {
-                            Class39.aClass323_521 = Class323(var_renderer!!, 14, true, ParticleSystemRenderer.aCanvas3869!!)
+                            Class39.aSystemFontGlyphs_521 = SystemFontGlyphs(var_renderer!!, 14, true, ParticleSystemRenderer.aCanvas3869!!)
                             Class348.anInt4290 = 79
                             RegionSceneLoader.method2193(true, (-123).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 79) {
-                            HeapDiagnosticsHolder.aClass323_2252 = Class323(var_renderer!!, 17, true, ParticleSystemRenderer.aCanvas3869!!)
+                            HeapDiagnosticsHolder.aSystemFontGlyphs_2252 = SystemFontGlyphs(var_renderer!!, 17, true, ParticleSystemRenderer.aCanvas3869!!)
                             Class348.anInt4290 = 82
                             RegionSceneLoader.method2193(true, (-124).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 82) {
-                            PingHostListHolder.aClass323_2333 = Class323(var_renderer!!, 19, true, ParticleSystemRenderer.aCanvas3869!!)
+                            PingHostListHolder.aSystemFontGlyphs_2333 = SystemFontGlyphs(var_renderer!!, 19, true, ParticleSystemRenderer.aCanvas3869!!)
                             Class348.anInt4290 = 85
                             RegionSceneLoader.method2193(true, (-128).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 85) {
-                            GlBufferObject.aClass323_4754 = Class323(var_renderer!!, 22, true, ParticleSystemRenderer.aCanvas3869!!)
+                            GlBufferObject.aSystemFontGlyphs_4754 = SystemFontGlyphs(var_renderer!!, 22, true, ParticleSystemRenderer.aCanvas3869!!)
                             Class348.anInt4290 = 88
                             RegionSceneLoader.method2193(true, (-124).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 88) {
-                            Class348_Sub3.aClass323_6581 = Class323(var_renderer!!, 26, true, ParticleSystemRenderer.aCanvas3869!!)
+                            Class348_Sub3.aSystemFontGlyphs_6581 = SystemFontGlyphs(var_renderer!!, 26, true, ParticleSystemRenderer.aCanvas3869!!)
                             Class348.anInt4290 = 91
                             RegionSceneLoader.method2193(true, (-125).toByte())
                             method867(true)
                         } else {
-                            WorldMapRenderer.aClass323_4672 = Class323(var_renderer!!, 30, true, ParticleSystemRenderer.aCanvas3869!!)
+                            WorldMapRenderer.aSystemFontGlyphs_4672 = SystemFontGlyphs(var_renderer!!, 30, true, ParticleSystemRenderer.aCanvas3869!!)
                             Class348.anInt4290 = 100
                             RegionSceneLoader.method2193(true, (-119).toByte())
                             method867(true)

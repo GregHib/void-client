@@ -120,19 +120,19 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             RegionSceneLoader.aNodeDeque_3705 = null
             method749()
             Class75.aNodeDeque_1254!!.method1996(127)
-            GlBufferObject.aClass323_4754 = null
-            HeapDiagnosticsHolder.aClass323_2252 = null
+            GlBufferObject.aSystemFontGlyphs_4754 = null
+            HeapDiagnosticsHolder.aSystemFontGlyphs_2252 = null
             Class67.aAbstractModelRenderer_4643 = null
-            MinimapSpriteRenderer.aClass323_4921 = null
-            PingHostListHolder.aClass323_2333 = null
-            Class348_Sub3.aClass323_6581 = null
-            Class39.aClass323_521 = null
+            MinimapSpriteRenderer.aSystemFontGlyphs_4921 = null
+            PingHostListHolder.aSystemFontGlyphs_2333 = null
+            Class348_Sub3.aSystemFontGlyphs_6581 = null
+            Class39.aSystemFontGlyphs_521 = null
             Class75.aSmoothingBuffer_1246 = null
-            GlRectangleTexture.aClass323_8644 = null
+            GlRectangleTexture.aSystemFontGlyphs_8644 = null
             Class48.anInt859 = -1
             if (i <= -44) {
                 TextureMetadataProvider.anInt4609 = -1
-                WorldMapRenderer.aClass323_4672 = null
+                WorldMapRenderer.aSystemFontGlyphs_4672 = null
                 if (Class75.aConfigDefinitionLoader_1238 != null) {
                     Class75.aConfigDefinitionLoader_1238!!.method1219(7851)
                     Class75.aConfigDefinitionLoader_1238!!.method1220((-100).toByte(), 64, 128)

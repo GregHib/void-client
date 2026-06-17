@@ -57,7 +57,7 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
         var anInt4916: Int = 0
         var anInt4919: Int = 0
         @JvmField
-        var aClass323_4921: Class323? = null
+        var aSystemFontGlyphs_4921: SystemFontGlyphs? = null
         @JvmField
         var anInt4926: Int = 0
         @JvmField
@@ -67,7 +67,7 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
 
         @JvmStatic
         fun method1109(i: Byte) {
-            aClass323_4921 = null
+            aSystemFontGlyphs_4921 = null
             if (i.toInt() != -22) method1111(127, -73, -7, -77, -85, 79)
             aClass356_4915 = null
         }

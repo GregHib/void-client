@@ -62,7 +62,7 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
     }
 
     open fun method21(i: Int) {
-        if (i != 23315) aClass323_4754 = null
+        if (i != 23315) aSystemFontGlyphs_4754 = null
         anInt4749++
         if (anInt4746 > 0) {
             this.aClass377_4759.method3969(anInt4747, anInt4746, 3089)
@@ -167,7 +167,7 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
         @JvmField
         var anInt4753: Int = 0
         @JvmField
-        var aClass323_4754: Class323? = null
+        var aSystemFontGlyphs_4754: SystemFontGlyphs? = null
         @JvmField
         var anInt4756: Int = 0
         @JvmField
@@ -184,7 +184,7 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
         @JvmStatic
         fun method2124(i: Int) {
             aClass348_Sub16_Sub3_4743 = null
-            aClass323_4754 = null
+            aSystemFontGlyphs_4754 = null
             aStringArray4744 = null
             if (i != 0) method2119(-1.1717526f, -45, -2.0738192f, 18, -0.4863547f)
         }

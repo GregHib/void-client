@@ -159,7 +159,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         @JvmField
         var anInt8643: Int = 0
         @JvmField
-        var aClass323_8644: Class323? = null
+        var aSystemFontGlyphs_8644: SystemFontGlyphs? = null
         @JvmField
         var anInt8645: Int = 0
         @JvmField
@@ -194,7 +194,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         @JvmStatic
         fun method251(i: Byte) {
             if (i.toInt() != 2) method250(-45, false, -102)
-            aClass323_8644 = null
+            aSystemFontGlyphs_8644 = null
             aSceneProjector_8638 = null
             aByteArrayArray8642 = null
         }
@@ -208,7 +208,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         @JvmStatic
         fun method253(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) {
             anInt8648++
-            if (i_13_ != -648) aClass323_8644 = null
+            if (i_13_ != -648) aSystemFontGlyphs_8644 = null
             var i_16_ = 0
             var i_17_ = i_15_
             var i_18_ = -i_15_

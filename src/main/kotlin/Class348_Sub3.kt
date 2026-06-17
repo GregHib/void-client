@@ -193,7 +193,7 @@ class Class348_Sub3 internal constructor(private val aS_Sub3_6566: NativeTerrain
         @JvmField
         var anInt6580: Int = 0
         @JvmField
-        var aClass323_6581: Class323? = null
+        var aSystemFontGlyphs_6581: SystemFontGlyphs? = null
         @JvmField
         var anInt6583: Int = 0
         @JvmField
@@ -209,7 +209,7 @@ class Class348_Sub3 internal constructor(private val aS_Sub3_6566: NativeTerrain
         @JvmStatic
         fun method2738(i: Byte) {
             aIntRange_6584 = null
-            aClass323_6581 = null
+            aSystemFontGlyphs_6581 = null
             val i_21_ = 89 / ((19 - i) / 43)
         }
 

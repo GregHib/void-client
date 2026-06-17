@@ -54,7 +54,7 @@ class WorldMapRenderer internal constructor(class339: Class339?, minimapSpriteRe
 
     companion object {
         @JvmField
-        var aClass323_4672: Class323? = null
+        var aSystemFontGlyphs_4672: SystemFontGlyphs? = null
         var aFloat4673: Float = 0f
         @JvmField
         var anInt4674: Int = 0
@@ -91,7 +91,7 @@ class WorldMapRenderer internal constructor(class339: Class339?, minimapSpriteRe
         fun method1853(i: Byte) {
             aAbstractModelRendererArray4679 = null
             if (i.toInt() != 48) anInt4674 = -62
-            aClass323_4672 = null
+            aSystemFontGlyphs_4672 = null
             aClass324_4684 = null
         }
 

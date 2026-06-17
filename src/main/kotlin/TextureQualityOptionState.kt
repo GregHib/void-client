@@ -75,24 +75,24 @@ class TextureQualityOptionState : GraphicsOptionState {
         var anInt6006: Int = 0
 
         @JvmStatic
-        fun method1782(i: Int, i_0_: Int): Class323? {
+        fun method1782(i: Int, i_0_: Int): SystemFontGlyphs? {
             if (i_0_ != 10144) return null
             anInt6004++
             if (i == 0) {
-                if (Class75.aFloat1247.toDouble() == 3.0) return MinimapSpriteRenderer.aClass323_4921
-                if (Class75.aFloat1247.toDouble() == 4.0) return GlRectangleTexture.aClass323_8644
-                if (Class75.aFloat1247.toDouble() == 6.0) return Class39.aClass323_521
-                if (Class75.aFloat1247.toDouble() >= 8.0) return HeapDiagnosticsHolder.aClass323_2252
+                if (Class75.aFloat1247.toDouble() == 3.0) return MinimapSpriteRenderer.aSystemFontGlyphs_4921
+                if (Class75.aFloat1247.toDouble() == 4.0) return GlRectangleTexture.aSystemFontGlyphs_8644
+                if (Class75.aFloat1247.toDouble() == 6.0) return Class39.aSystemFontGlyphs_521
+                if (Class75.aFloat1247.toDouble() >= 8.0) return HeapDiagnosticsHolder.aSystemFontGlyphs_2252
             } else if (i == 1) {
-                if (Class75.aFloat1247.toDouble() == 3.0) return Class39.aClass323_521
-                if (Class75.aFloat1247.toDouble() == 4.0) return HeapDiagnosticsHolder.aClass323_2252
-                if (Class75.aFloat1247.toDouble() == 6.0) return PingHostListHolder.aClass323_2333
-                if (Class75.aFloat1247.toDouble() >= 8.0) return GlBufferObject.aClass323_4754
+                if (Class75.aFloat1247.toDouble() == 3.0) return Class39.aSystemFontGlyphs_521
+                if (Class75.aFloat1247.toDouble() == 4.0) return HeapDiagnosticsHolder.aSystemFontGlyphs_2252
+                if (Class75.aFloat1247.toDouble() == 6.0) return PingHostListHolder.aSystemFontGlyphs_2333
+                if (Class75.aFloat1247.toDouble() >= 8.0) return GlBufferObject.aSystemFontGlyphs_4754
             } else if (i == 2) {
-                if (Class75.aFloat1247.toDouble() == 3.0) return PingHostListHolder.aClass323_2333
-                if (Class75.aFloat1247.toDouble() == 4.0) return GlBufferObject.aClass323_4754
-                if (Class75.aFloat1247.toDouble() == 6.0) return Class348_Sub3.aClass323_6581
-                if (Class75.aFloat1247.toDouble() >= 8.0) return WorldMapRenderer.aClass323_4672
+                if (Class75.aFloat1247.toDouble() == 3.0) return PingHostListHolder.aSystemFontGlyphs_2333
+                if (Class75.aFloat1247.toDouble() == 4.0) return GlBufferObject.aSystemFontGlyphs_4754
+                if (Class75.aFloat1247.toDouble() == 6.0) return Class348_Sub3.aSystemFontGlyphs_6581
+                if (Class75.aFloat1247.toDouble() >= 8.0) return WorldMapRenderer.aSystemFontGlyphs_4672
             }
             return null
         }

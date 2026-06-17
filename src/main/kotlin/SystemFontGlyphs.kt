@@ -4,7 +4,10 @@ import java.awt.Font
 import java.awt.FontMetrics
 import java.awt.image.PixelGrabber
 
-class Class323 internal constructor(var_renderer: Renderer, i: Int, bool: Boolean, component: Component) {
+/*
+ * Class323
+ */
+class SystemFontGlyphs internal constructor(var_renderer: Renderer, i: Int, bool: Boolean, component: Component) {
     private var aBoolean4037 = false
     private val anIntArray4039: IntArray
     private var anInt4040 = 0

@@ -6,7 +6,7 @@ object PingHostListHolder {
     @JvmField
     var aClass348_Sub26_2332: Class348_Sub26?
     @JvmField
-    var aClass323_2333: Class323? = null
+    var aSystemFontGlyphs_2333: SystemFontGlyphs? = null
     @JvmField
     var aClass348_Sub47Array2334: Array<Class348_Sub47?>? = arrayOfNulls<Class348_Sub47>(300)
     var aIntRange_2335: IntRange?
@@ -18,7 +18,7 @@ object PingHostListHolder {
         aIntRange_2335 = null
         if (i != 1) aIntRange_2331 = null
         aClass348_Sub47Array2334 = null
-        aClass323_2333 = null
+        aSystemFontGlyphs_2333 = null
     }
 
     init {

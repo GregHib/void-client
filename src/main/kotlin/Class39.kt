@@ -33,7 +33,7 @@ class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
         @JvmField
         var aScriptCompilerThread_520: ScriptCompilerThread? = null
         @JvmField
-        var aClass323_521: Class323? = null
+        var aSystemFontGlyphs_521: SystemFontGlyphs? = null
 
         @JvmStatic
         fun method366(objects: Array<Any?>?, i: Byte, `is`: IntArray?) {
@@ -54,7 +54,7 @@ class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
         fun method367(i: Int) {
             aClass45_518 = null
             aClass74_515 = null
-            aClass323_521 = null
+            aSystemFontGlyphs_521 = null
             if (i == -15833) aScriptCompilerThread_520 = null
         }
     }

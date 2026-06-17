@@ -148,7 +148,7 @@ class ModelLightingConfig {
                         if (i_14_ > i_10_) i_10_ = i_14_
                     }
                 }
-                var class323: Class323? = null
+                var systemFontGlyphs: SystemFontGlyphs? = null
                 var i_15_ = 0
                 var i_16_ = 0
                 var i_17_ = 0
@@ -158,18 +158,18 @@ class ModelLightingConfig {
                 var i_21_ = 0
                 var i_22_ = 0
                 if (class42.aString597 != null) {
-                    class323 = method1782(class42.anInt576, 10144)
-                    if (class323 != null) {
+                    systemFontGlyphs = method1782(class42.anInt576, 10144)
+                    if (systemFontGlyphs != null) {
                         i_15_ = (GlTexture3D.aFontDefinition_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
                         i_17_ = (class348_sub21!!.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)))
                         i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * class42.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)))
-                        if (abstractModelRenderer == null) i_17_ -= i_15_ * class323.method2560() / 2
-                        else i_17_ -= ((abstractModelRenderer.method980() shr 1) - -(i_15_ * class323.method2565()))
+                        if (abstractModelRenderer == null) i_17_ -= i_15_ * systemFontGlyphs.method2560() / 2
+                        else i_17_ -= ((abstractModelRenderer.method980() shr 1) - -(i_15_ * systemFontGlyphs.method2565()))
                         var i_23_ = 0
                         while (i_15_ > i_23_) {
                             var string = NativeRenderer.aStringArray8019!![i_23_]!!
                             if (i_23_ < -1 + i_15_) string = string.substring(0, -4 + string.length)
-                            val i_24_ = class323.method2564(string)
+                            val i_24_ = systemFontGlyphs.method2564(string)
                             if (i_18_ < i_24_) i_18_ = i_24_
                             i_23_++
                         }
@@ -178,7 +178,7 @@ class ModelLightingConfig {
                         if (i_7_ > i_19_) i_7_ = i_19_
                         i_21_ = i_17_ + i_5_
                         if (i_20_ > i_8_) i_8_ = i_20_
-                        i_22_ = i_5_ + (i_17_ + class323.method2565() * i_15_)
+                        i_22_ = i_5_ + (i_17_ + systemFontGlyphs.method2565() * i_15_)
                         if (i_9_ > i_21_) i_9_ = i_21_
                         if (i_10_ < i_22_) i_10_ = i_22_
                     }
@@ -199,7 +199,7 @@ class ModelLightingConfig {
                     }
                     abstractModelRenderer.method974((class348_sub21.anInt6853 + -(abstractModelRenderer.method966() shr 1)), (class348_sub21.anInt6855 + -(abstractModelRenderer.method980() shr 1)))
                 }
-                if (class42.aString597 != null && class323 != null) Class342.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, class42)
+                if (class42.aString597 != null && systemFontGlyphs != null) Class342.method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, class42)
                 if (class42.anInt578 != -1 || class42.aString597 != null) {
                     val class348_sub12 = Class348_Sub12(class348_sub21)
                     class348_sub12.anInt6746 = i_13_

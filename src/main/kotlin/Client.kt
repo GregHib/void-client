@@ -263,7 +263,7 @@ import NamedTimedNode.Companion.method2517
 import PositionedSceneNode.Companion.method2518
 import MapElementDefinitionCache.Companion.method2545
 import ImageFrameCache.Companion.method2555
-import Class323.Companion.method2562
+import SystemFontGlyphs.Companion.method2562
 import Class324.Companion.method2570
 import Class324.Companion.method2572
 import Class325.Companion.method2597

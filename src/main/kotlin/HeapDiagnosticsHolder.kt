@@ -12,7 +12,7 @@ object HeapDiagnosticsHolder {
     var aShort2250: Short = 205
     var anInt2251: Int = 0
     @JvmField
-    var aClass323_2252: Class323? = null
+    var aSystemFontGlyphs_2252: SystemFontGlyphs? = null
     var anInt2253: Int = 0
     @JvmField
     var anInt2254: Int = 0
@@ -28,7 +28,7 @@ object HeapDiagnosticsHolder {
         aIntRange_2255 = null
         aClass46_2249 = null
         aIntRange_2248 = null
-        aClass323_2252 = null
+        aSystemFontGlyphs_2252 = null
     }
 
     fun method1299(i: Int, i_0_: Int, i_1_: Int): Boolean {
