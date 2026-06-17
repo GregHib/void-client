@@ -3097,7 +3097,7 @@ object Class66 {
                         class46.anInt806 = i_278_
                         Class251.method1916(-9343, class46)
                     }
-                    if (class46.anInt704 == -1) Class188.method1415(class46.anInt830, 117)
+                    if (class46.anInt704 == -1) GlowPostProcessor.method1415(class46.anInt830, 117)
                     return
                 }
                 return

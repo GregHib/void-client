@@ -420,10 +420,10 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string == "renderprofile" || string == "rp") {
-                            Class188.aBoolean2514 = !Class188.aBoolean2514
-                            Class348_Sub8.aRenderer6654!!.method3647(Class188.aBoolean2514)
+                            GlowPostProcessor.aBoolean2514 = !GlowPostProcessor.aBoolean2514
+                            Class348_Sub8.aRenderer6654!!.method3647(GlowPostProcessor.aBoolean2514)
                             MapLabelMenuEntry.method1042(23.toByte())
-                            method94(("showprofiling=" + Class188.aBoolean2514), 106)
+                            method94(("showprofiling=" + GlowPostProcessor.aBoolean2514), 106)
                             return
                         }
                         if (string.startsWith("performancetest")) {

@@ -115,7 +115,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var anInt7735: Int = 0
     @JvmField
-    var aClass188_7736: Class188? = null
+    var aGlowPostProcessor_7736: GlowPostProcessor? = null
     private val anInterface11Array7737: Array<Interface11?>
     private var anInt7738: Int
     private val aClass206_7739: Class206? = null
@@ -3078,7 +3078,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 aBoolean7734 = true
                 aClass354_7723 = Class354(this, this.aRenderConfig4579)
                 method3786(false)
-                this.aClass188_7736 = Class188(this)
+                this.aGlowPostProcessor_7736 = GlowPostProcessor(this)
                 aClass18_7720 = Class18(this)
                 if (aClass18_7720.method280(1)) {
                     aClass348_Sub5_Sub1_7721 = Class348_Sub5_Sub1(this)

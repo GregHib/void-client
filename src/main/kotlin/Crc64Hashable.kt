@@ -82,7 +82,7 @@ class Crc64Hashable : Interface14 {
         fun method1113(i: Int, i_0_: Int, i_1_: Int): Boolean {
             anInt4995++
             if (i_1_ >= -3) aClass45_4984 = null
-            return (Class188.method1412((-35).toByte(), i_0_, i) and (Class274.method2058(i, i_0_, 72) or ((i and 0x2000) != 0) or method3203(i_0_, 114.toByte(), i)))
+            return (GlowPostProcessor.method1412((-35).toByte(), i_0_, i) and (Class274.method2058(i, i_0_, 72) or ((i and 0x2000) != 0) or method3203(i_0_, 114.toByte(), i)))
         }
 
         fun method1114(i: Int, i_2_: Int) {

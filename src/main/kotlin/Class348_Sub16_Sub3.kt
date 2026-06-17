@@ -622,7 +622,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 val i_78_ = class348_sub8.aLong4291.toInt()
                 var class348_sub17 = (aClass356_8891.method3480(i_78_.toLong(), -6008) as Class348_Sub17?)
                 if (class348_sub17 == null) {
-                    class348_sub17 = Class188.method1417(0, class45!!, i_78_)
+                    class348_sub17 = GlowPostProcessor.method1417(0, class45!!, i_78_)
                     if (class348_sub17 == null) {
                         bool = false
                         class348_sub8 = class348_sub2.aClass356_6565!!.method3482(0) as Class348_Sub8?

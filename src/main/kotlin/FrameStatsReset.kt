@@ -55,7 +55,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class278.anInt3584 = 0
             Class60.anInt1085 = 0
             ModelDefinition.anInt1827 = 0
-            Class188.anInt2519 = 0
+            GlowPostProcessor.anInt2519 = 0
             Class376.anInt4551 = 0
             GlTextureBase.anInt5098 = 0
             Class286_Sub4.anInt6245 = 0
@@ -2052,7 +2052,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8927 = 0
             NativeTerrainTile.anInt8318 = 0
             Class348_Sub49.anInt7171 = 0
-            Class188.anInt2517 = 0
+            GlowPostProcessor.anInt2517 = 0
             Class348_Sub42_Sub20.anInt9708 = 0
             Class316.anInt3958 = 0
             Class64_Sub2.anInt5425 = 0
@@ -2690,7 +2690,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub17.anInt6801 = 0
             AnimatedModelRenderer.anInt8394 = 0
             Class348_Sub49.anInt7176 = 0
-            Class188.anInt2520 = 0
+            GlowPostProcessor.anInt2520 = 0
             Class318_Sub1_Sub3_Sub1.anInt10013 = 0
             ScrollingWidgetComponentNode.anInt8379 = 0
             ParticleEmitterNode.anInt181 = 0
@@ -3241,7 +3241,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             AudioResampler.anInt2161 = 0
             Class239_Sub29.anInt6150 = 0
             OpenGlRenderer.anInt7573 = 0
-            Class188.anInt2516 = 0
+            GlowPostProcessor.anInt2516 = 0
             Class64_Sub2.anInt5411 = 0
             RefCountedHandle.anInt2274 = 0
             Class348_Sub49.anInt7159 = 0
@@ -3607,7 +3607,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlRectangleTexture.anInt8649 = 0
             Class348_Sub42_Sub16.anInt9662 = 0
             Class348_Sub40_Sub2.anInt9100 = 0
-            Class188.anInt2518 = 0
+            GlowPostProcessor.anInt2518 = 0
             Class50_Sub1.anInt5211 = 0
             RuntimeException_Sub1.anInt4597 = 0
             Class45.anInt665 = 0
@@ -3711,7 +3711,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7980 = 0
             Class348_Sub42_Sub9_Sub1.anInt10445 = 0
             Class51.anInt910 = 0
-            Class188.anInt2515 = 0
+            GlowPostProcessor.anInt2515 = 0
             Class239_Sub16.anInt6016 = 0
             Class358.anInt4413 = 0
             ModelDefinition.anInt1838 = 0

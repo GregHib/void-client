@@ -234,7 +234,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             continue
                                         }
                                         if (SpriteLoadValidator.anInt4793 == class46.anInt765) {
-                                            if (Class298.aBoolean3811 || Class188.aBoolean2514) {
+                                            if (Class298.aBoolean3811 || GlowPostProcessor.aBoolean2514) {
                                                 val i_37_ = (class46.anInt709 + i_24_)
                                                 var i_38_ = 15 + i_25_
                                                 if (Class59_Sub1.aBoolean5300) {
@@ -295,7 +295,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 }
                                                 if (Class313.anInt3936 > 0) Class240.aClass324_4684!!.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1)
                                                 i_38_ += 12
-                                                if (Class188.aBoolean2514) {
+                                                if (GlowPostProcessor.aBoolean2514) {
                                                     Class240.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     Class240.aClass324_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + Class227.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)

@@ -21,7 +21,10 @@ import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import jaggl.OpenGL.Companion.glVertex2f
 import jaggl.OpenGL.Companion.glViewport
 
-class Class188 internal constructor(private val aHa_Sub2_2511: OpenGlRenderer) {
+/*
+ * Class188
+ */
+class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRenderer) {
     private var aClass337_2513: Class337? = null
     fun method1413(class258_sub1: Class258_Sub1?, class258_sub1_2_: Class258_Sub1?, i: Int, f: Float): Boolean {
         try {

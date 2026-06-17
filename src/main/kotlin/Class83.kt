@@ -19,7 +19,7 @@ class Class83 internal constructor(var_ha_Sub2: OpenGlRenderer) {
             this.aClass258_Sub1_1440 = Class258_Sub1(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
             `is` = method461(false, Class319.anObject3985, 53146732)
             this.aClass258_Sub1_1446 = Class258_Sub1(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
-            val class188 = var_ha_Sub2.aClass188_7736
+            val class188 = var_ha_Sub2.aGlowPostProcessor_7736
             if (class188!!.method1414(35632)) {
                 `is` = method461(false, Class369_Sub2.anObject8592, 53146732)
                 this.aClass258_Sub1_1443 = Class258_Sub1(var_ha_Sub2, 6408, 128, 128, 16)

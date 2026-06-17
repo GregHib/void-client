@@ -1059,7 +1059,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 class64_sub2_154_.aClass290_5424!!.anInterface5_Impl1_3711 = aClass290_5424!!.anInterface5_Impl1_3711
                 class64_sub2_154_.aClass290_5424!!.aBoolean3709 = true
                 class64_sub2_154_.aClass290_5424!!.aBoolean3714 = aClass290_5424!!.aBoolean3714
-            } else if (!Class188.method1412((-35).toByte(), anInt5472, i)) class64_sub2_154_.aClass290_5424 = null
+            } else if (!GlowPostProcessor.method1412((-35).toByte(), anInt5472, i)) class64_sub2_154_.aClass290_5424 = null
             else class64_sub2_154_.aClass290_5424 = aClass290_5424
             if (method3194(i, anInt5472, 121.toByte())) {
                 if (class64_sub2_153_!!.aFloatArray5476 == null || (class64_sub2_153_.aFloatArray5476!!.size < anInt5478)) {
@@ -3348,7 +3348,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aClass290_5520 = Class290(Class264.method2015(anInt5463, anInt5472, 7))
             if (bool || method1837(anInt5472, 102, anInt5463)) aClass290_5460 = Class290(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
             if (bool || Class296.method2224(anInt5463, 110.toByte(), anInt5472)) aClass290_5482 = Class290(Class348_Sub42_Sub8_Sub2.method3200(anInt5463, anInt5472, (-82).toByte()))
-            if (bool || Class188.method1412((-35).toByte(), anInt5472, anInt5463)) aClass290_5424 = Class290(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
+            if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aClass290_5424 = Class290(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
             if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aClass192_5485 = Class192(Class348_Sub9.method2783(anInt5472, (-97).toByte(), anInt5463))
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))
