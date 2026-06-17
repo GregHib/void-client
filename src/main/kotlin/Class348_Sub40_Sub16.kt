@@ -398,7 +398,7 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
             anInt9228++
             if (Class76.aClass364_1279 != Class8.aClass364_165 && i == 9) {
                 try {
-                    Class224.method1617(125.toByte(), Class79.aClient1367, "tbrefresh")
+                    JavaScriptBridge.method1617(125.toByte(), Class79.aClient1367, "tbrefresh")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

@@ -52,7 +52,7 @@ class Class43 {
                     var string_2_ = (string_0_ + "settings=" + string + "; version=1; path=/; domain=" + string_1_)
                     if (string.length == 0) string_2_ += "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0"
                     else string_2_ += ("; Expires=" + (method3261(Class62.method599(-53) + 94608000000L, 63)) + "; Max-Age=" + 94608000L)
-                    Class224.method1615(Class93.anApplet1530, -15092, "document.cookie=\"" + string_2_ + "\"")
+                    JavaScriptBridge.method1615(Class93.anApplet1530, -15092, "document.cookie=\"" + string_2_ + "\"")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

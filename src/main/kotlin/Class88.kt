@@ -388,13 +388,13 @@ class Class88 {
                             }
                             if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !FrameBufferObject.aBoolean4888) {
                                 try {
-                                    Class224.method1617(125.toByte(), Class93.anApplet1530, "unzap")
+                                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "unzap")
                                 } catch (throwable: Throwable) {
                                     /* empty */
                                 }
                             } else {
                                 try {
-                                    Class224.method1617(125.toByte(), Class93.anApplet1530, "zap")
+                                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "zap")
                                 } catch (throwable: Throwable) {
                                     if (Class318_Sub1_Sub5.aBoolean8773) {
                                         try {
@@ -407,7 +407,7 @@ class Class88 {
                             }
                             if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) {
                                 try {
-                                    Class224.method1617(125.toByte(), Class93.anApplet1530, "loggedin")
+                                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "loggedin")
                                 } catch (throwable: Throwable) {
                                     /* empty */
                                 }

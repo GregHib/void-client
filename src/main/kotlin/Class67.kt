@@ -66,7 +66,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heap
             anInt4645++
             if (Class289.aBoolean3697) {
                 try {
-                    Class224.method1617(125.toByte(), Class93.anApplet1530, "showVideoAd")
+                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "showVideoAd")
                     return true
                 } catch (throwable: Throwable) {
                     /* empty */

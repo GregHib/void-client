@@ -1108,7 +1108,7 @@ object Class66 {
             }
             if (i == 5430) {
                 try {
-                    Class224.method1617(125.toByte(), Class93.anApplet1530, "accountcreated")
+                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "accountcreated")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }
@@ -1116,7 +1116,7 @@ object Class66 {
             }
             if (i == 5431) {
                 try {
-                    Class224.method1617(125.toByte(), Class93.anApplet1530, "accountcreatestarted")
+                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "accountcreatestarted")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

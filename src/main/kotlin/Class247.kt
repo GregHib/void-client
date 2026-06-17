@@ -1,4 +1,4 @@
-import Class224.method1617
+import JavaScriptBridge.method1617
 
 /* Class247 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

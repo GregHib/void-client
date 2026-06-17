@@ -1,4 +1,7 @@
-object Class224 {
+/*
+ * Class224
+ */
+object JavaScriptBridge {
     @Throws(Throwable::class)
     fun method1615(applet: GameApplet?, i: Int, string: String?) {
 //        JSObject.getWindow(applet).eval(string)

@@ -45,7 +45,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             aBoolean27 = true
             println("error_game_" + string)
             try {
-                Class224.method1617(125.toByte(), Class93.anApplet1530, "loggedout")
+                JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "loggedout")
             } catch (throwable: Throwable) {
                 /* empty */
             }

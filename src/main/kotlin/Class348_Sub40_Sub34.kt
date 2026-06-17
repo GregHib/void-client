@@ -144,7 +144,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             else {
                 Class348_Sub49.method3379(i + -9, 3)
                 try {
-                    Class224.method1617(125.toByte(), Class93.anApplet1530, "loggedout")
+                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "loggedout")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

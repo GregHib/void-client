@@ -998,7 +998,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 if (i_71_ == 0) return class297!!.method2245(string, 16)
                 if (i_71_ == 1) {
                     try {
-                        Class224.method1616("openjs", (arrayOf<Any?>(URL(Class93.anApplet1530!!.getCodeBase(), string).toString())), Class93.anApplet1530, 38.toByte())
+                        JavaScriptBridge.method1616("openjs", (arrayOf<Any?>(URL(Class93.anApplet1530!!.getCodeBase(), string).toString())), Class93.anApplet1530, 38.toByte())
                         val linkedQueueNode = LinkedQueueNode()
                         linkedQueueNode.anInt1997 = 1
                         return linkedQueueNode
@@ -1022,7 +1022,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 }
                 if (i_71_ == 3) {
                     try {
-                        Class224.method1617(125.toByte(), Class93.anApplet1530, "loggedout")
+                        JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "loggedout")
                     } catch (throwable: Throwable) {
                         /* empty */
                     }
