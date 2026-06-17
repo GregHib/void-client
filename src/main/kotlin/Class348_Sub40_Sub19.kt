@@ -1,4 +1,4 @@
-import Class324.Companion.method2570
+import Font.Companion.method2570
 import Class348_Sub6.Companion.method2769
 
 /* Class348_Sub40_Sub19 - Decompiled by JODE

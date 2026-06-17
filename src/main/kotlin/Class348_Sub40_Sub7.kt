@@ -244,7 +244,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 if (PixelBlender.aBoolean3811) {
                                                     var i_39_ = -256
                                                     if (SimpleToggleOptionState.anInt5891 < 20) i_39_ = -65536
-                                                    GameAppletFrame.aClass324_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_38_, i_39_, i_37_, -128, -1)
+                                                    GameAppletFrame.aFont_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_38_, i_39_, i_37_, -128, -1)
                                                     i_38_ += 15
                                                     val runtime = Runtime.getRuntime()
                                                     var i_40_ = (((runtime.totalMemory()) + -(runtime.freeMemory())) / 1024L).toInt()
@@ -258,12 +258,12 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                             if (i_40_ > 65536) method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4)
                                                         }
                                                     }
-                                                    GameAppletFrame.aClass324_20!!.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1)
+                                                    GameAppletFrame.aFont_20!!.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1)
                                                     i_38_ += 15
-                                                    GameAppletFrame.aClass324_20!!.method2569(("In:" + CompassSmoother.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
+                                                    GameAppletFrame.aFont_20!!.method2569(("In:" + CompassSmoother.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 15
                                                     val i_43_ = (Class348_Sub8.aRenderer6654!!.E() / 1024)
-                                                    GameAppletFrame.aClass324_20!!.method2569("Offheap:" + i_43_ + "k", i_38_, (if (i_43_ <= 65536) -256 else -65536), i_37_, -125, -1)
+                                                    GameAppletFrame.aFont_20!!.method2569("Offheap:" + i_43_ + "k", i_38_, (if (i_43_ <= 65536) -256 else -65536), i_37_, -125, -1)
                                                     i_38_ += 15
                                                     var i_44_ = 0
                                                     var i_45_ = 0
@@ -280,25 +280,25 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     val i_48_ = i_46_ * 100 / i_44_
                                                     val i_49_ = 10000 * i_45_ / i_44_
                                                     val string = ("Cache:" + (Class357.method3486(2, true, 0, i_49_.toLong(), 16980)) + "% (" + i_48_ + "%)")
-                                                    WorldMapRenderer.aClass324_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
+                                                    WorldMapRenderer.aFont_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     if (Loader.showCoordinates) {
                                                         val playerX = (LocalPlayerState.aPlayer_1907!!.x shr 9) + ArbVertexProgram.regionTileX
                                                         val playerY = (LocalPlayerState.aPlayer_1907!!.y shr 9) + Class90.regionTileY
-                                                        WorldMapRenderer.aClass324_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + LocalPlayerState.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aFont_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + LocalPlayerState.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
-                                                        WorldMapRenderer.aClass324_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aFont_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
-                                                        WorldMapRenderer.aClass324_4684!!.method2569("Chunk: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aFont_4684!!.method2569("Chunk: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
                                                     }
                                                 }
-                                                if (SkyboxGradient.anInt3936 > 0) WorldMapRenderer.aClass324_4684!!.method2569(("Particles: " + (WallEntity.anInt8780) + " / " + SkyboxGradient.anInt3936), i_38_, -256, i_37_, -121, -1)
+                                                if (SkyboxGradient.anInt3936 > 0) WorldMapRenderer.aFont_4684!!.method2569(("Particles: " + (WallEntity.anInt8780) + " / " + SkyboxGradient.anInt3936), i_38_, -256, i_37_, -121, -1)
                                                 i_38_ += 12
                                                 if (GlowPostProcessor.aBoolean2514) {
-                                                    WorldMapRenderer.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
+                                                    WorldMapRenderer.aFont_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
-                                                    WorldMapRenderer.aClass324_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + BoxedIntHolder.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
+                                                    WorldMapRenderer.aFont_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + BoxedIntHolder.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
                                                     MapLabelMenuEntry.method1042((-123).toByte())
                                                     i_38_ += 12
                                                 }

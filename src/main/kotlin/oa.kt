@@ -105,7 +105,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Class324 {
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Font {
         val `is` = IntArray(spriteImages!!.size)
         val is_60_ = IntArray(spriteImages.size)
         var bool_61_ = false

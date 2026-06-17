@@ -5,7 +5,7 @@ import LoadingScreenState.Companion.method1457
 import GraphicsOptionState.Companion.method1709
 import GlTexture2D.Companion.method1968
 import WallEntity.Companion.method2483
-import Class324.Companion.method2570
+import Font.Companion.method2570
 import Class348_Sub45.Companion.method3313
 import Class367_Sub8.Companion.method3547
 import Class369_Sub3_Sub1.Companion.method3576

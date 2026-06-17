@@ -32,7 +32,7 @@ import TileSceneEntity.Companion.method2396
 import SceneObjectEntity.Companion.method2405
 import ActorEntity.Companion.method2478
 import WallEntity.Companion.method2487
-import Class324.Companion.method2570
+import Font.Companion.method2570
 import Class348_Sub16_Sub3.Companion.method2839
 import Class348_Sub1_Sub3.Companion.method2732
 import Class348_Sub23_Sub1.Companion.method2972

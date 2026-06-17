@@ -1027,7 +1027,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         class109.aBoolean1669 = true
     }
 
-    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Class324 {
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Font {
         val `is` = IntArray(spriteImages!!.size)
         val is_283_ = IntArray(spriteImages.size)
         var bool_284_ = false
@@ -1037,11 +1037,11 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             if (spriteImages[i]!!.aByteArray2695 != null) bool_284_ = true
         }
         if (bool) {
-            if (bool_284_) return Class324_Sub4(this, fontDefinition, spriteImages, `is`, is_283_)
-            return Class324_Sub1(this, fontDefinition, spriteImages, `is`, is_283_)
+            if (bool_284_) return SoftwareFontAlpha(this, fontDefinition, spriteImages, `is`, is_283_)
+            return SoftwareFontPlain(this, fontDefinition, spriteImages, `is`, is_283_)
         }
         require(!bool_284_) { "" }
-        return Class324_Sub3(this, fontDefinition, spriteImages, `is`, is_283_)
+        return SoftwareFontPalette(this, fontDefinition, spriteImages, `is`, is_283_)
     }
 
     override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {

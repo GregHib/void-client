@@ -1,6 +1,6 @@
 import jaclib.memory.Stream.Companion.c
 
-class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : Class324(aHa_Sub3_6494, fontDefinition) {
+class GlFontTextured internal constructor(private val aHa_Sub3_6494: NativeRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : Font(aHa_Sub3_6494, fontDefinition) {
     private val anInterface18_Impl3_6492: Interface18_Impl3?
     private val aBoolean6493: Boolean
     private val anInterface5_Impl1_6495: Interface5_Impl1

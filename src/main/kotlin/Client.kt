@@ -264,8 +264,8 @@ import PositionedSceneNode.Companion.method2518
 import MapElementDefinitionCache.Companion.method2545
 import ImageFrameCache.Companion.method2555
 import SystemFontGlyphs.Companion.method2562
-import Class324.Companion.method2570
-import Class324.Companion.method2572
+import Font.Companion.method2570
+import Font.Companion.method2572
 import Class325.Companion.method2597
 import Class328_Sub1.Companion.method2610
 import Class328_Sub1_Sub1.method2611
@@ -1705,14 +1705,14 @@ class Client : GameAppletFrame() {
                         if (Class36.anInt489 == 1) {
                             if (LocDefinitionCache.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = LocDefinitionCache.anInt3441
                             val i = ((-LocDefinitionCache.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115)
-                            method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
+                            method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
                         } else if (Class36.anInt489 == 2) {
                             if (ItemModelDefinition.anInt443 < CompositeNpcModelBuilder.anInt2101) ItemModelDefinition.anInt443 = CompositeNpcModelBuilder.anInt2101
                             val i = (((ItemModelDefinition.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / ItemModelDefinition.anInt443) + 50)
-                            method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
-                        } else method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
+                            method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
+                        } else method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
                     } else if (WorldMapRenderer.anInt4674 != 10) {
-                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aRenderer6654)
+                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aRenderer6654)
                     } else MinimapPositionState.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)

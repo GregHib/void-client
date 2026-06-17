@@ -189,15 +189,15 @@ abstract class SceneEntity : SceneLinkedListNode() {
                         if (class42.aString597 == null) break
                         var i_29_ = 0
                         if (abstractModelRenderer != null) i_29_ = abstractModelRenderer.method969()
-                        var class324 = WorldMapRenderer.aClass324_4684
+                        var class324 = WorldMapRenderer.aFont_4684
                         var class143 = GlTexture3D.aFontDefinition_8527
                         if (class42.anInt576 == 1) {
-                            class324 = GameAppletFrame.aClass324_20
+                            class324 = GameAppletFrame.aFont_20
                             class143 = ParticleEmitterFactory.aFontDefinition_3179
                         }
                         if (class42.anInt576 == 2) {
                             class143 = Class369.aFontDefinition_4962
-                            class324 = NodeDeque.aClass324_3326
+                            class324 = NodeDeque.aFont_3326
                         }
                         Class334.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, class46, i_5_, 100)
                     }

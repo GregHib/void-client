@@ -26,7 +26,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         anInt3275++
     }
 
-    fun method1932(var_renderer: Renderer?, i: Int, i_0_: Int, class324: Class324?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_1_: Int, bool: Boolean, i_2_: Byte, var_renderer_3_: Renderer?, i_4_: Int, bool_5_: Boolean, i_6_: Int): AbstractModelRenderer? {
+    fun method1932(var_renderer: Renderer?, i: Int, i_0_: Int, font: Font?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_1_: Int, bool: Boolean, i_2_: Byte, var_renderer_3_: Renderer?, i_4_: Int, bool_5_: Boolean, i_6_: Int): AbstractModelRenderer? {
         try {
             anInt3266++
             val class105 = method1941(i_6_, (-74).toByte(), i_4_, i_0_, i, i_1_, var_renderer_3_, compositeNpcModelBuilder)
@@ -40,7 +40,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 if (i_7_ != -1) class213 = method1940(127, i_7_)
             }
             if (i_2_.toInt() != 83) method1935(-83, -37, null, null, false, -49)
-            val `is` = class213.method1562(i_0_, bool_5_, i, var_renderer_3_, var_renderer, class324, compositeNpcModelBuilder, i_1_, (-102).toByte(), i_6_)
+            val `is` = class213.method1562(i_0_, bool_5_, i, var_renderer_3_, var_renderer, font, compositeNpcModelBuilder, i_1_, (-102).toByte(), i_6_)
             if (`is` == null) return null
             val abstractModelRenderer_9_: AbstractModelRenderer?
             if (bool) abstractModelRenderer_9_ = var_renderer!!.method3662(36, `is`, 94.toByte(), 0, 36, 32)
@@ -58,7 +58,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             }
             return abstractModelRenderer_9_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
         }
     }
 

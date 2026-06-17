@@ -8,7 +8,10 @@ import jaggl.OpenGL.Companion.glLinkProgramARB
 import java.util.*
 import kotlin.math.sin
 
-abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefinition: FontDefinition?) {
+/*
+ * Class324
+ */
+abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition: FontDefinition?) {
     private var aRenderer4048: Renderer? = null
     private var aFontDefinition_4063: FontDefinition? = null
     private fun method2566(abstractModelRenderers: Array<AbstractModelRenderer?>?, `is`: IntArray?, i: Int, is_0_: IntArray?, is_1_: IntArray?, i_2_: Int, string: String?, i_3_: Int) {

@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeFontRenderer
 */
-class h(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : Class324(var_oa, fontDefinition), Interface19 {
+class h(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : Font(var_oa, fontDefinition), Interface19 {
     var nativeid: Long = 0
 
     init {

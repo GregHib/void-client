@@ -125,10 +125,10 @@ class Class40 internal constructor() {
             CustomCursorsOptionState.aAbstractModelRendererArray5933 = null
             ScriptResources.aAbstractModelRendererArray2640 = null
             Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = null
-            NodeDeque.aClass324_3326 = null
+            NodeDeque.aFont_3326 = null
             SceneryDetailOptionState.aAbstractModelRenderer_6097 = null
-            GameAppletFrame.aClass324_20 = null
-            WorldMapRenderer.aClass324_4684 = null
+            GameAppletFrame.aFont_20 = null
+            WorldMapRenderer.aFont_4684 = null
             HostPingThread.aAbstractModelRendererArray2260 = null
             CameraNodeList.aAbstractModelRendererArray1744 = null
             CompassSmoother.aAbstractModelRendererArray3378 = null

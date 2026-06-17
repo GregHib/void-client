@@ -224,7 +224,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (bool) {
-                    if (Class36.anInt489 != 0) Class362.method3511(true, GameAppletFrame.aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aRenderer6654)
+                    if (Class36.anInt489 != 0) Class362.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aRenderer6654)
                     method3570(false)
                     Class348_Sub18.method2938(102.toByte())
                     method1772(i xor 0x41)
@@ -245,7 +245,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (Class348_Sub8.aRenderer6654!!.method3670()) i_27_++
                     Class348_Sub42_Sub2.method3171(Class348_Sub8.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, i_27_, bool_25_, Class348_Sub8.aRenderer6654!!.method3704() > 0)
                     Class348_Sub32.method3018(SequencedActorEntity.anInt10096)
-                    if (SequencedActorEntity.anInt10096 != 0) Class348_Sub48.method3328(WorldMapRenderer.aClass324_4684)
+                    if (SequencedActorEntity.anInt10096 != 0) Class348_Sub48.method3328(WorldMapRenderer.aFont_4684)
                     else Class348_Sub48.method3328(null)
                     for (i_28_ in 0..3) Class348_Sub45.aClass361Array7108!![i_28_]!!.method3500(i xor 0x2bc)
                     Class52.method491((-86).toByte())

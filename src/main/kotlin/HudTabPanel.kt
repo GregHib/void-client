@@ -58,7 +58,7 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
             val i_5_ = -10660793
             SpotAnimEntity.method2509(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, var_renderer!!, GlArrayBufferObject.anInt4717 - -i_3_, i_5_, true, WorldMapSceneSoftware.anInt5819, -16777216)
             if (i > 98) {
-                NodeDeque.aClass324_3326!!.method2576(LocalizedText.aLocalizedText_3507!!.method2063(Class348_Sub33.anInt6967, 544), i_5_, i_4_ + (Class348_Sub42_Sub5.anInt9532 - -14), i_3_ + (GlArrayBufferObject.anInt4717 + 3), -1, -125)
+                NodeDeque.aFont_3326!!.method2576(LocalizedText.aLocalizedText_3507!!.method2063(Class348_Sub33.anInt6967, 544), i_5_, i_4_ + (Class348_Sub42_Sub5.anInt9532 - -14), i_3_ + (GlArrayBufferObject.anInt4717 + 3), -1, -125)
                 val i_6_ = GlTexture1D.aClass373_8552!!.method3597(true) - -i_3_
                 val i_7_ = i_4_ + GlTexture1D.aClass373_8552!!.method3594(127.toByte())
                 if (Class348_Sub42_Sub6.aBoolean9535) {
@@ -74,7 +74,7 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
                     if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
                         SpotAnimEntity.method2509(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, var_renderer, Class50_Sub3.anInt5252, i_5_, true, ClickFeedbackTask.anInt4669, -16777216)
                         i_8_ = 0
-                        NodeDeque.aClass324_3326!!.method2576(ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aString9617, i_5_, Class373.anInt4534 - -14, 3 + Class50_Sub3.anInt5252, -1, -126)
+                        NodeDeque.aFont_3326!!.method2576(ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aString9617, i_5_, Class373.anInt4534 - -14, 3 + Class50_Sub3.anInt5252, -1, -126)
                         var class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1011(-84) as? Class348_Sub42_Sub12?)
                         while (class348_sub42_sub12 != null) {
                             val i_10_ = 31 + (Class373.anInt4534 + i_8_ * 16)

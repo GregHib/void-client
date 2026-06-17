@@ -16,8 +16,8 @@ class Class348_Sub48 : Class348() {
         var anInt7133: Int = 0
         @JvmField
         var anInt7134: Int = 0
-        fun method3328(class324: Class324?) {
-            Class362.aClass324_4456 = class324
+        fun method3328(font: Font?) {
+            Class362.aFont_4456 = font
         }
     }
 }

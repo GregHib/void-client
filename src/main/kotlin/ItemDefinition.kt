@@ -324,7 +324,7 @@ class ItemDefinition {
         }
     }
 
-    fun method1562(i: Int, bool: Boolean, i_37_: Int, var_renderer: Renderer?, var_renderer_38_: Renderer?, class324: Class324?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_39_: Int, i_40_: Byte, i_41_: Int): IntArray? {
+    fun method1562(i: Int, bool: Boolean, i_37_: Int, var_renderer: Renderer?, var_renderer_38_: Renderer?, font: Font?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_39_: Int, i_40_: Byte, i_41_: Int): IntArray? {
         try {
             anInt2806++
             val class124 = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aClass45_3268!!), anInt2756, i_40_.toInt() xor 0x65)
@@ -366,11 +366,11 @@ class ItemDefinition {
             var abstractModelRenderer: AbstractModelRenderer? = null
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
-                    abstractModelRenderer = (this.aModelHeaderCache_2761!!.method1932(var_renderer_38_, i_37_, i, class324, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
+                    abstractModelRenderer = (this.aModelHeaderCache_2761!!.method1932(var_renderer_38_, i_37_, i, font, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
                     if (abstractModelRenderer == null) return null
                 }
             } else {
-                abstractModelRenderer = (this.aModelHeaderCache_2761!!.method1932(var_renderer_38_, 0, 10, class324, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
+                abstractModelRenderer = (this.aModelHeaderCache_2761!!.method1932(var_renderer_38_, 0, 10, font, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
                 if (abstractModelRenderer == null) return null
             }
             val i_48_: Int
@@ -408,7 +408,7 @@ class ItemDefinition {
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) abstractModelRenderer!!.method974(0, 0)
             } else abstractModelRenderer!!.method974(0, 0)
-            if (i_39_ == 1 || (i_39_ == 2 && (this.anInt2820 == 1 || i != 1) && i != -1)) class324!!.method2576(method1557(i, i_40_ + -11517), -256, 9, 0, -16777215, i_40_ + -15)
+            if (i_39_ == 1 || (i_39_ == 2 && (this.anInt2820 == 1 || i != 1) && i != -1)) font!!.method2576(method1557(i, i_40_ + -11517), -256, 9, 0, -16777215, i_40_ + -15)
             `is` = var_renderer_38_.na(0, 0, 36, 32)
             for (i_52_ in `is`!!.indices) {
                 if ((0xffffff and `is`[i_52_]) != 0) `is`[i_52_] = BoundsConstraintEntry.method2057(`is`[i_52_], -16777216)
@@ -416,7 +416,7 @@ class ItemDefinition {
             }
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
         }
     }
 

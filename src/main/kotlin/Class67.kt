@@ -3,7 +3,7 @@
 */
 class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heapInfoRecord: HeapInfoRecord?) : Interface1 {
     private val aHeapInfoRecord_4646: HeapInfoRecord?
-    private var aClass324_4649: Class324? = null
+    private var aFont_4649: Font? = null
     private val aClass45_4650: Class45?
     private val aClass45_4651: Class45?
 
@@ -11,7 +11,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heap
         if (bool) {
             val i_0_ = ((aHeapInfoRecord_4646!!.aScreenAnchorAlignment_4948!!.method1607(Class92.anInt1524, aHeapInfoRecord_4646.anInt4931, (-119).toByte())) + aHeapInfoRecord_4646.anInt4947)
             val i_1_ = ((aHeapInfoRecord_4646.aClass341_4945!!.method2679(OpenGlRenderer.anInt7666, aHeapInfoRecord_4646.anInt4936, i + 1644)) + aHeapInfoRecord_4646.anInt4932)
-            aClass324_4649!!.method2584(null, aHeapInfoRecord_4646.anInt4937, aHeapInfoRecord_4646.anInt4940, null, aHeapInfoRecord_4646.anInt4935, aHeapInfoRecord_4646.anInt4946, aHeapInfoRecord_4646.anInt4936, null, i_1_, 0, 0, aHeapInfoRecord_4646.anInt4931, i_0_, false, aHeapInfoRecord_4646.anInt4943, aHeapInfoRecord_4646.aString4942)
+            aFont_4649!!.method2584(null, aHeapInfoRecord_4646.anInt4937, aHeapInfoRecord_4646.anInt4940, null, aHeapInfoRecord_4646.anInt4935, aHeapInfoRecord_4646.anInt4946, aHeapInfoRecord_4646.anInt4936, null, i_1_, 0, 0, aHeapInfoRecord_4646.anInt4931, i_0_, false, aHeapInfoRecord_4646.anInt4943, aHeapInfoRecord_4646.aString4942)
         }
         if (i.toInt() == -49) anInt4642++
     }
@@ -28,7 +28,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heap
     override fun method7(i: Int) {
         anInt4647++
         val class143 = RangedGraphicsOptionState.method1766((-45).toByte(), aHeapInfoRecord_4646!!.anInt4944, aClass45_4651!!)
-        if (i == 10286) aClass324_4649 = (Class348_Sub8.aRenderer6654!!.method3686(class143, SpriteImage.method1523(aClass45_4650!!, aHeapInfoRecord_4646.anInt4944), true))
+        if (i == 10286) aFont_4649 = (Class348_Sub8.aRenderer6654!!.method3686(class143, SpriteImage.method1523(aClass45_4650!!, aHeapInfoRecord_4646.anInt4944), true))
     }
 
     init {

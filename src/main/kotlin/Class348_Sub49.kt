@@ -707,7 +707,7 @@ open class Class348_Sub49 : Class348 {
         fun method3354(i: Int) {
             if (Class348_Sub34.aRenderer6968 != null) {
                 Class348_Sub34.aRenderer6968!!.method3635((-44).toByte())
-                Class348_Sub40_Sub9.aClass324_9173 = null
+                Class348_Sub40_Sub9.aFont_9173 = null
                 Class348_Sub34.aRenderer6968 = null
             }
             val i_37_ = -97 % ((i - -14) / 37)

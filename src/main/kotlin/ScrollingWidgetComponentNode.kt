@@ -1,4 +1,4 @@
-import Class324.Companion.method2570
+import Font.Companion.method2570
 
 class ScrollingWidgetComponentNode internal constructor(class45: Class45?, class288_sub1: ParticleEmitterDefExt?) : WidgetComponentNode(class45, class288_sub1) {
     private var anInt8383 = 0

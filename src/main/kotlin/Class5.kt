@@ -8,7 +8,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
     var aClass45_4632: Class45? = null
     @JvmField
     var aClass369_4635: Class369? = null
-    private var aClass324_4637: Class324? = null
+    private var aFont_4637: Font? = null
     private var aLong4640: Long = 0
     abstract fun method178(i: Int, bool: Boolean, i_0_: Byte, i_1_: Int)
 
@@ -25,7 +25,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         anInt4639++
         if (i == 10286) {
             val class143 = RangedGraphicsOptionState.method1766((-85).toByte(), (this.aClass369_4635!!.anInt4965), aClass45_4631)
-            aClass324_4637 = (Class348_Sub8.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aClass45_4632!!, (this.aClass369_4635!!.anInt4965)), true))
+            aFont_4637 = (Class348_Sub8.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aClass45_4632!!, (this.aClass369_4635!!.anInt4965)), true))
         }
     }
 
@@ -63,7 +63,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
             method182(63, i_14_, i_13_, bool)
             var string = Class51.aResourceLoaderThread_897!!.method2318(i.toInt() xor 0x245b)
             if (-aLong4640 + Class62.method599(-100) > 10000L) string += " (" + Class51.aResourceLoaderThread_897!!.method2324(i + 149)!!.method525(-117) + ")"
-            aClass324_4637!!.method2575(115.toByte(), (i_13_ + this.aClass369_4635!!.anInt4971 / 2), this.aClass369_4635!!.anInt4961, string, -1, (this.aClass369_4635!!.anInt4966 + 4 + (i_14_ - -(this.aClass369_4635!!.anInt4963 / 2))))
+            aFont_4637!!.method2575(115.toByte(), (i_13_ + this.aClass369_4635!!.anInt4971 / 2), this.aClass369_4635!!.anInt4961, string, -1, (this.aClass369_4635!!.anInt4966 + 4 + (i_14_ - -(this.aClass369_4635!!.anInt4963 / 2))))
         }
     }
 

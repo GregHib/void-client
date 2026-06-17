@@ -2294,10 +2294,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3939(i: Byte)
 
-    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Class324 {
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Font {
         try {
             anInt7952++
-            return Class324_Sub2(this, fontDefinition, spriteImages as Array<SpriteImage>, bool)
+            return GlFontTextured(this, fontDefinition, spriteImages as Array<SpriteImage>, bool)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
         }

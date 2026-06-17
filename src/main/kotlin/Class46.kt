@@ -341,7 +341,7 @@ class Class46 {
         return var_sprite
     }
 
-    fun method426(var_renderer: Renderer?, i: Byte): Class324? {
+    fun method426(var_renderer: Renderer?, i: Byte): Font? {
         anInt827++
         val class324 = GlTextureBase.method232(var_renderer, (-53).toByte(), false, this.anInt702)
         if (i.toInt() != 68) method436(-71, -56, -125)

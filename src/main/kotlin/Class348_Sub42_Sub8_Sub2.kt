@@ -10,7 +10,7 @@ import TwoStateOptionState.Companion.method1844
 import MultiLevelOptionState.Companion.method1851
 import GlVertexBufferArb.Companion.method2127
 import TileSceneEntity.Companion.method2396
-import Class324.Companion.method2570
+import Font.Companion.method2570
 import Class348_Sub42_Sub9.Companion.method3203
 import Class367_Sub8.Companion.method3546
 import Class377.Companion.method3965

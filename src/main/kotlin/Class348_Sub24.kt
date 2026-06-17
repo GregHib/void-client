@@ -13,7 +13,7 @@ import MaterialPass.Companion.method2138
 import WaterMaterialPass.Companion.method2148
 import SkyboxGradient.method2334
 import SceneObjectEntity.Companion.method2405
-import Class324.Companion.method2570
+import Font.Companion.method2570
 import Class34.Companion.method349
 import Class347.Companion.method2708
 import Class348_Sub40_Sub30.Companion.method3127

@@ -5,21 +5,21 @@ import Class348_Sub42_Sub16_Sub2.Companion.method3265
 * Visit http://jode.sourceforge.net/
 */
 class Class352 {
-    var aClass324_4332: Class324?
+    var aFont_4332: Font?
     var aFontDefinition_4333: FontDefinition? = null
 
-    internal constructor(class324: Class324?) {
-        this.aClass324_4332 = null
-        this.aClass324_4332 = class324
+    internal constructor(font: Font?) {
+        this.aFont_4332 = null
+        this.aFont_4332 = font
     }
 
-    internal constructor(class324: Class324?, fontDefinition: FontDefinition?) {
-        this.aClass324_4332 = null
+    internal constructor(font: Font?, fontDefinition: FontDefinition?) {
+        this.aFont_4332 = null
         try {
             this.aFontDefinition_4333 = fontDefinition
-            this.aClass324_4332 = class324
+            this.aFont_4332 = font
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("el.<init>(" + (if (class324 != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
+            throw method2929(runtimeexception, ("el.<init>(" + (if (font != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
         }
     }
 

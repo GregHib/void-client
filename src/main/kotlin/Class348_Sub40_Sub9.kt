@@ -49,13 +49,13 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
         @JvmField
         var anInt9172: Int = 0
         @JvmField
-        var aClass324_9173: Class324? = null
+        var aFont_9173: Font? = null
 
         @JvmStatic
         fun method3071(i: Byte) {
             if (i.toInt() != 59) anGameApplet_Frame_9169 = null
             aClass60_9171 = null
-            aClass324_9173 = null
+            aFont_9173 = null
         }
 
         @JvmStatic

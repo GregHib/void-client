@@ -8,7 +8,7 @@ import Class45.Companion.method395
 * Visit http://jode.sourceforge.net/
 */
 object Class362 {
-    var aClass324_4456: Class324? = null
+    var aFont_4456: Font? = null
     var anInt4457: Int = 0
     @JvmField
     var anInt4458: Int = -1
@@ -17,11 +17,11 @@ object Class362 {
     var aParticleDefLoader_4460: ParticleDefLoader? = null
 
     @JvmStatic
-    fun method3511(bool: Boolean, class324: Class324?, fontDefinition: FontDefinition?, string: String?, i: Int, var_renderer: Renderer?) {
-        var class324 = class324
+    fun method3511(bool: Boolean, font: Font?, fontDefinition: FontDefinition?, string: String?, i: Int, var_renderer: Renderer?) {
+        var class324 = font
         var class143 = fontDefinition
         try {
-            if (i != 2) aClass324_4456 = null
+            if (i != 2) aFont_4456 = null
             anInt4457++
             val bool_0_ = !LocalizedTextTriple.aBoolean3763 || method3490(true)
             if (bool_0_) {
@@ -90,6 +90,6 @@ object Class362 {
     fun method3512(i: Int) {
         aParticleDefLoader_4460 = null
         if (i != 4) anInt4458 = 96
-        aClass324_4456 = null
+        aFont_4456 = null
     }
 }

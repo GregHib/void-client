@@ -1,6 +1,6 @@
 import ConfigFlagUtil.Companion.method1913
 import ConfigFlagUtil.Companion.method1916
-import Class324.Companion.method2570
+import Font.Companion.method2570
 import Class348_Sub7.Companion.method2772
 import Class66.method703
 

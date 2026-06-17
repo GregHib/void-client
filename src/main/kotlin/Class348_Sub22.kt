@@ -1,4 +1,4 @@
-import Class324.Companion.method2570
+import Font.Companion.method2570
 import Class348_Sub3.Companion.method2743
 import java.awt.Color
 
