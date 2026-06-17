@@ -116,14 +116,14 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
                             return
                         }
                     }
-                    var class148 = class357.aClass148_4396
+                    var class148 = class357.aWidgetNodeLink_4396
                     while (class148 != null) {
                         val class30 = class148.aClass318_Sub1_Sub3_2040!!.method2381(var_renderer, 7)
                         if (class30 != null && class30.method321(-14735, i_8_, i_1_, i_7_)) {
                             method2520()
                             return
                         }
-                        class148 = class148.aClass148_2038
+                        class148 = class148.aWidgetNodeLink_2038
                     }
                 }
                 class318_sub10.aClass98_6481.aClass88_1569.method844(this, true)

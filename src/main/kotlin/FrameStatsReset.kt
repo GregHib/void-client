@@ -2172,7 +2172,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub17.anInt6803 = 0
             Class78.anInt1310 = 0
             Class324.anInt4055 = 0
-            Class148.anInt2043 = 0
+            WidgetNodeLink.anInt2043 = 0
             Class315.anInt3947 = 0
             NativeRenderer.anInt8024 = 0
             Class348_Sub40_Sub12.anInt9191 = 0
@@ -2786,7 +2786,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class59_Sub1_Sub2.anInt8661 = 0
             Class162.anInt2152 = 0
             Class294.anInt5033 = 0
-            Class148.anInt2041 = 0
+            WidgetNodeLink.anInt2041 = 0
             Class348_Sub23_Sub1.anInt8997 = 0
             Class348_Sub40.anInt7027 = 0
             Class55.anInt988 = 0

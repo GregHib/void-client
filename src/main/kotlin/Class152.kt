@@ -76,11 +76,11 @@ class Class152 private constructor(i: Int, i_6_: Int, i_7_: Int) {
                             if (class357.aClass318_Sub1_Sub5_4407 is Interface10) (class357.aClass318_Sub1_Sub5_4407 as Interface10).method40(-12031)
                             if (class357.aClass318_Sub1_Sub4_4406 is Interface10) (class357.aClass318_Sub1_Sub4_4406 as Interface10).method40(-12031)
                             if (class357.aClass318_Sub1_Sub4_4403 is Interface10) (class357.aClass318_Sub1_Sub4_4403 as Interface10).method40(-12031)
-                            var class148 = class357.aClass148_4396
+                            var class148 = class357.aWidgetNodeLink_4396
                             while (class148 != null) {
                                 val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)
                                 if (class318_sub1_sub3 is Interface10) (class318_sub1_sub3 as Interface10).method40(i xor 0x2efe.inv())
-                                class148 = class148.aClass148_2038
+                                class148 = class148.aWidgetNodeLink_2038
                             }
                         }
                         i_5_++

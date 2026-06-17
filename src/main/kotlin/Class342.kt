@@ -98,14 +98,14 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
                                 }
                                 class318_sub1_sub4.method2392(true)
                             }
-                            var class148 = class357.aClass148_4396
+                            var class148 = class357.aWidgetNodeLink_4396
                             while (class148 != null) {
                                 val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)
                                 if (class318_sub1_sub3 != null && class318_sub1_sub3.method2388(-71)) {
                                     method2519(class318_sub1_sub3, i, i_8_, i_9_, (class318_sub1_sub3.aShort8751 - class318_sub1_sub3.aShort8743 + 1), (class318_sub1_sub3.aShort8747 - class318_sub1_sub3.aShort8750 + 1))
                                     class318_sub1_sub3.method2392(true)
                                 }
-                                class148 = class148.aClass148_2038
+                                class148 = class148.aWidgetNodeLink_2038
                             }
                             val class318_sub1_sub1 = class357.aClass318_Sub1_Sub1_4402
                             if (class318_sub1_sub1 != null && class318_sub1_sub1.method2388(-85)) {

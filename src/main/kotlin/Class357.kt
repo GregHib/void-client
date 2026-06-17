@@ -5,7 +5,7 @@ import Class348_Sub17.Companion.method2929
 */
 class Class357 internal constructor(i: Int) {
     var aClass318_Sub1_Sub5_4395: Class318_Sub1_Sub5? = null
-    var aClass148_4396: Class148? = null
+    var aWidgetNodeLink_4396: WidgetNodeLink? = null
     var aShort4397: Short = 0
     var aShort4398: Short = 0
     var aByte4399: Byte
@@ -19,11 +19,11 @@ class Class357 internal constructor(i: Int) {
     var aClass318_Sub1_Sub2_4408: Class318_Sub1_Sub2? = null
     var aShort4409: Short = 0
     fun method3485(bool: Boolean) {
-        var class148: Class148?
-        while ( /**/this.aClass148_4396 != null) {
-            class148 = this.aClass148_4396!!.aClass148_2038
-            this.aClass148_4396!!.method1199((-106).toByte())
-            this.aClass148_4396 = class148
+        var widgetNodeLink: WidgetNodeLink?
+        while ( /**/this.aWidgetNodeLink_4396 != null) {
+            widgetNodeLink = this.aWidgetNodeLink_4396!!.aWidgetNodeLink_2038
+            this.aWidgetNodeLink_4396!!.method1199((-106).toByte())
+            this.aWidgetNodeLink_4396 = widgetNodeLink
         }
         anInt4393++
         if (bool != true) method3486(41, false, -64, 33L, -50)

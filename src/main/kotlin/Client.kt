@@ -46,7 +46,7 @@ import ScreenBorderFiller.method1168
 import ScreenBorderFiller.method1169
 import HitsplatDefinition.Companion.method1194
 import HintArrowOrMessage.Companion.method1195
-import Class148.Companion.method1198
+import WidgetNodeLink.Companion.method1198
 import Class149.method1200
 import Gl2dTexture.Companion.method241
 import Gl2dTexture.Companion.method242

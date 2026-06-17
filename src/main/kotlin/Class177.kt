@@ -57,11 +57,11 @@ class Class177 internal constructor(private val aClass52_4671: Class52) : Interf
         fun method1353(i: Int, i_4_: Int, i_5_: Int, var_class: Class<out Any>?): Class318_Sub1_Sub3? {
             val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_4_]!![i_5_]
             if (class357 == null) return null
-            var class148 = class357.aClass148_4396
+            var class148 = class357.aWidgetNodeLink_4396
             while (class148 != null) {
                 val class318_sub1_sub3 = class148.aClass318_Sub1_Sub3_2040
                 if (var_class!!.isAssignableFrom(class318_sub1_sub3!!.javaClass) && class318_sub1_sub3.aShort8743.toInt() == i_4_ && (class318_sub1_sub3.aShort8750.toInt() == i_5_)) return class318_sub1_sub3
-                class148 = class148.aClass148_2038
+                class148 = class148.aWidgetNodeLink_2038
             }
             return null
         }

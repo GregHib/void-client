@@ -38,14 +38,14 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
         fun method3253(i: Int, i_0_: Int, i_1_: Int, var_class: Class<*>) {
             val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_0_]!![i_1_]
             if (class357 != null) {
-                var class148 = class357.aClass148_4396
+                var class148 = class357.aWidgetNodeLink_4396
                 while (class148 != null) {
                     val class318_sub1_sub3 = class148.aClass318_Sub1_Sub3_2040!!
                     if (var_class.isAssignableFrom(class318_sub1_sub3.javaClass) && (class318_sub1_sub3.aShort8743.toInt() == i_0_) && (class318_sub1_sub3.aShort8750.toInt() == i_1_)) {
                         Class348_Sub46.method3320(class318_sub1_sub3, false)
                         break
                     }
-                    class148 = class148.aClass148_2038
+                    class148 = class148.aWidgetNodeLink_2038
                 }
             }
         }

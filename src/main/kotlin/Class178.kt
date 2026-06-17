@@ -97,7 +97,7 @@ object Class178 {
             }
             Class192.aShortArray2579 = `is`
             Class76.anInt1285 = i_6_
-            Class148.anInt2037 = 0
+            WidgetNodeLink.anInt2037 = 0
             val strings = arrayOfNulls<String>(Class76.anInt1285)
             var i_10_ = 0
             while (Class76.anInt1285 > i_10_) {

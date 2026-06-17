@@ -255,10 +255,10 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             if (interface10 != null) i_27_ = 1 + (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-93)).anInt883)
                             val class318_sub1_sub5: Class318_Sub1_Sub5?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * Class148.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
+                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * WidgetNodeLink.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, Class148.anIntArray2039!![i_7_] * i_27_, i_27_ * (Class348_Sub40_Sub16.anIntArray9230!![i_7_]), i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, WidgetNodeLink.anIntArray2039!![i_7_] * i_27_, i_27_ * (Class348_Sub40_Sub16.anIntArray9230!![i_7_]), i_4_, i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 6) {
                             var i_28_ = 33
@@ -266,7 +266,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             if (interface10 != null) i_28_ = 1 + (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-117)).anInt883) / 2
                             val class318_sub1_sub5: Class318_Sub1_Sub5?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * Class148.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
+                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * WidgetNodeLink.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
                             } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (OutputStream_Sub1.anIntArray99!![i_7_] * i_28_), i_28_ * Class273.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))

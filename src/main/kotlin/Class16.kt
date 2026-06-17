@@ -5,7 +5,7 @@ object Class16 {
     @JvmField
     var anInt230: Int = 0
     @JvmField
-    var aClass148_231: Class148? = null
+    var aWidgetNodeLink_231: WidgetNodeLink? = null
     @JvmField
     var anInt232: Int = 0
     @JvmField
@@ -19,11 +19,11 @@ object Class16 {
         for (i_1_ in 0..2) {
             val class357_2_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_1_ + 1]!![i]!![i_0_].also { HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_1_]!![i]!![i_0_] = it })
             if (class357_2_ != null) {
-                var class148 = class357_2_.aClass148_4396
+                var class148 = class357_2_.aWidgetNodeLink_4396
                 while (class148 != null) {
                     val class318_sub1_sub3 = class148.aClass318_Sub1_Sub3_2040!!
                     if ((class318_sub1_sub3.aShort8743.toInt() == i) && (class318_sub1_sub3.aShort8750).toInt() == i_0_) class318_sub1_sub3.plane--
-                    class148 = class148.aClass148_2038
+                    class148 = class148.aWidgetNodeLink_2038
                 }
                 if (class357_2_.aClass318_Sub1_Sub1_4402 != null) class357_2_.aClass318_Sub1_Sub1_4402!!.plane--
                 if (class357_2_.aClass318_Sub1_Sub4_4406 != null) class357_2_.aClass318_Sub1_Sub4_4406!!.plane--
@@ -58,14 +58,14 @@ object Class16 {
     @JvmStatic
     fun method261(i: Byte) {
         aClass45_233 = null
-        aClass148_231 = null
+        aWidgetNodeLink_231 = null
         if (i.toInt() != -120) method262(-23)
     }
 
     @JvmStatic
     fun method262(i: Int) {
         anInt234++
-        if (i != 0) aClass148_231 = null
+        if (i != 0) aWidgetNodeLink_231 = null
         if (!Class160.aBoolean2130) {
             Class160.aBoolean2130 = true
             Class205.aFloat2687 += (-Class205.aFloat2687 + -24.0f) / 2.0f

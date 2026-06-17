@@ -142,18 +142,18 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
         }
 
         @JvmStatic
-        fun method3620(class318_sub1_sub3: Class318_Sub1_Sub3?, i: Int): Class148 {
+        fun method3620(class318_sub1_sub3: Class318_Sub1_Sub3?, i: Int): WidgetNodeLink {
             if (i < 9) anInt4559 = -27
             anInt4547++
-            val class148: Class148
-            if (Class16.aClass148_231 != null) {
-                class148 = Class16.aClass148_231!!
-                Class16.aClass148_231 = Class16.aClass148_231!!.aClass148_2038
-                class148.aClass148_2038 = null
+            val widgetNodeLink: WidgetNodeLink
+            if (Class16.aWidgetNodeLink_231 != null) {
+                widgetNodeLink = Class16.aWidgetNodeLink_231!!
+                Class16.aWidgetNodeLink_231 = Class16.aWidgetNodeLink_231!!.aWidgetNodeLink_2038
+                widgetNodeLink.aWidgetNodeLink_2038 = null
                 OpenGlRenderer.anInt7722--
-            } else class148 = Class148()
-            class148.aClass318_Sub1_Sub3_2040 = class318_sub1_sub3
-            return class148
+            } else widgetNodeLink = WidgetNodeLink()
+            widgetNodeLink.aClass318_Sub1_Sub3_2040 = class318_sub1_sub3
+            return widgetNodeLink
         }
     }
 }

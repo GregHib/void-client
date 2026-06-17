@@ -488,7 +488,7 @@ public abstract class Class64 {
                 }
             }
             Class76.anInt1285 = i_52_
-            Class148.anInt2037 = 0
+            WidgetNodeLink.anInt2037 = 0
             Class192.aShortArray2579 = `is`
             val strings = arrayOfNulls<String>(Class76.anInt1285)
             var i_58_ = 0

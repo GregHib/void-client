@@ -704,7 +704,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     }
 
     private fun method3836(i: Int) {
-        if (Class148.aClass196_2042 == this.aClass196_8184) {
+        if (WidgetNodeLink.aClass196_2042 == this.aClass196_8184) {
             val f = method3858(false)
             this.aClass101_Sub2_8074.method920(f, false, 0.0f, f)
         }
@@ -780,9 +780,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     }
 
     private fun method3845(i: Byte) {
-        if (Class148.aClass196_2042 != this.aClass196_8184) {
+        if (WidgetNodeLink.aClass196_2042 != this.aClass196_8184) {
             val class196 = this.aClass196_8184
-            this.aClass196_8184 = Class148.aClass196_2042!!
+            this.aClass196_8184 = WidgetNodeLink.aClass196_2042!!
             if (class196.method1450(-48)) method3913((-121).toByte())
             method3919(20794)
             this.aFloatArray8135 = aFloatArray8120
@@ -1909,7 +1909,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7904++
         if (i != 1) aStream8088 = null
         aBoolean8127 = false
-        if (Class148.aClass196_2042 == this.aClass196_8184) {
+        if (WidgetNodeLink.aClass196_2042 == this.aClass196_8184) {
             method3919(i + 20793)
             method3929(true)
         }

@@ -101,7 +101,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
             if (i != 252) return null
             var class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3? = null
             var i_3_ = -1
-            var class148 = class357.aClass148_4396
+            var class148 = class357.aWidgetNodeLink_4396
             while (class148 != null) {
                 val class318_sub1_sub3 = class148.aClass318_Sub1_Sub3_2040
                 if (class318_sub1_sub3 is Class318_Sub1_Sub3_Sub3) {
@@ -119,7 +119,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                     }
                 }
-                class148 = class148.aClass148_2038
+                class148 = class148.aWidgetNodeLink_2038
             }
             return class318_sub1_sub3_sub3
         }

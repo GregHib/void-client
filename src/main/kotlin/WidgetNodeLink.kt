@@ -1,17 +1,17 @@
 /* Class148 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class148 {
+class WidgetNodeLink {
     @JvmField
-    var aClass148_2038: Class148? = null
+    var aWidgetNodeLink_2038: WidgetNodeLink? = null
     @JvmField
     var aClass318_Sub1_Sub3_2040: Class318_Sub1_Sub3? = null
     fun method1199(i: Byte) {
         anInt2043++
         if (i.toInt() == -106 && OpenGlRenderer.anInt7722 < 500) {
             this.aClass318_Sub1_Sub3_2040 = null
-            this.aClass148_2038 = Class16.aClass148_231
-            Class16.aClass148_231 = this
+            this.aWidgetNodeLink_2038 = Class16.aWidgetNodeLink_231
+            Class16.aWidgetNodeLink_231 = this
             OpenGlRenderer.anInt7722++
         }
     }

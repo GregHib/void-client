@@ -56,17 +56,17 @@ class Class348_Sub46 : Class348 {
                 for (i_0_ in class318_sub1_sub3.aShort8750..class318_sub1_sub3.aShort8747) {
                     val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![class318_sub1_sub3.plane.toInt()]!![i]!![i_0_])
                     if (class357 != null) {
-                        var class148 = class357.aClass148_4396
-                        var class148_1_: Class148? = null
+                        var class148 = class357.aWidgetNodeLink_4396
+                        var widgetNodeLink_1_: WidgetNodeLink? = null
                         while ( /**/class148 != null) {
                             if (class148.aClass318_Sub1_Sub3_2040 === class318_sub1_sub3) {
-                                if (class148_1_ != null) class148_1_.aClass148_2038 = class148.aClass148_2038
-                                else class357.aClass148_4396 = class148.aClass148_2038
+                                if (widgetNodeLink_1_ != null) widgetNodeLink_1_.aWidgetNodeLink_2038 = class148.aWidgetNodeLink_2038
+                                else class357.aWidgetNodeLink_4396 = class148.aWidgetNodeLink_2038
                                 class148.method1199((-106).toByte())
                                 break
                             }
-                            class148_1_ = class148
-                            class148 = class148.aClass148_2038
+                            widgetNodeLink_1_ = class148
+                            class148 = class148.aWidgetNodeLink_2038
                         }
                     }
                 }

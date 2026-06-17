@@ -232,8 +232,8 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                                     }
                                 }
                                 val class357 = class357s[i_26_]!![i_19_]!![i_22_]!!
-                                if (class357.aClass148_4396 != null) {
-                                    var class148 = (class357.aClass148_4396)
+                                if (class357.aWidgetNodeLink_4396 != null) {
+                                    var class148 = (class357.aWidgetNodeLink_4396)
                                     while (class148 != null) {
                                         val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)
                                         if (class318_sub1_sub3 is Interface10) {
@@ -247,13 +247,13 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                                                 continue@while_223_
                                             }
                                         }
-                                        class148 = (class148.aClass148_2038)
+                                        class148 = (class148.aWidgetNodeLink_2038)
                                     }
                                 }
                             }
                             val class357: Class357? = class357s[i_26_]!![i_19_]!![i_22_]
-                            if (class357 != null && class357.aClass148_4396 != null) {
-                                var class148 = class357.aClass148_4396
+                            if (class357 != null && class357.aWidgetNodeLink_4396 != null) {
+                                var class148 = class357.aWidgetNodeLink_4396
                                 while (class148 != null) {
                                     val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)!!
                                     if (((class318_sub1_sub3.aShort8743) != class318_sub1_sub3.aShort8751) || (class318_sub1_sub3.aShort8750 != class318_sub1_sub3.aShort8747)) {
@@ -267,7 +267,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                                             i_33_++
                                         }
                                     }
-                                    class148 = class148.aClass148_2038
+                                    class148 = class148.aWidgetNodeLink_2038
                                 }
                             }
                             Class289.aByteArrayArrayArray3700!![i_26_]!![i_19_]!![i_22_] = i_16_

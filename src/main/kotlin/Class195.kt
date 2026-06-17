@@ -122,10 +122,10 @@ class Class195 internal constructor(class287: Class287?, dualMaterialContainer: 
         }
 
         @JvmStatic
-        fun method1449(i: Int, i_2_: Int, i_3_: Int): Class148? {
+        fun method1449(i: Int, i_2_: Int, i_3_: Int): WidgetNodeLink? {
             val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_]
             if (class357 == null) return null
-            return class357.aClass148_4396
+            return class357.aWidgetNodeLink_4396
         }
 
         init {

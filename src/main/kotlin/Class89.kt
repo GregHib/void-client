@@ -66,13 +66,13 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                     val class357 = Class348_Sub46.method3321(class318_sub1_sub3.plane.toInt(), i_17_, i_18_)
                     if (class357 != null) {
                         val class148 = method3620(class318_sub1_sub3, 118)
-                        var class148_19_ = class357.aClass148_4396
-                        if (class148_19_ == null) class357.aClass148_4396 = class148
+                        var class148_19_ = class357.aWidgetNodeLink_4396
+                        if (class148_19_ == null) class357.aWidgetNodeLink_4396 = class148
                         else {
-                            while ( /**/class148_19_!!.aClass148_2038 != null) {
-                                class148_19_ = class148_19_.aClass148_2038
+                            while ( /**/class148_19_!!.aWidgetNodeLink_2038 != null) {
+                                class148_19_ = class148_19_.aWidgetNodeLink_2038
                             }
-                            class148_19_.aClass148_2038 = class148
+                            class148_19_.aWidgetNodeLink_2038 = class148
                         }
                         if (bool_13_ && (Class342.anIntArrayArray4253!![i_17_]!![i_18_] and 0xffffff.inv()) != 0) {
                             i = Class342.anIntArrayArray4253!![i_17_]!![i_18_]
