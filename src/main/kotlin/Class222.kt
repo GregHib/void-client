@@ -3,7 +3,7 @@
 */
 class Class222 {
     var anInt2883: Int = 0
-    var aClass166_2886: Class166? = null
+    var aItemDefinitionLoader_2886: ItemDefinitionLoader? = null
     var anInt2890: Int = 0
     private var anInt2891 = 0
     private fun method1608(i: Int, class348_sub49: Class348_Sub49, i_0_: Byte) {
@@ -18,11 +18,11 @@ class Class222 {
     @Synchronized
     fun method1610(i: Byte): Class207? {
         anInt2888++
-        var class207 = this.aClass166_2886!!.aClass60_2190!!.method583(anInt2891.toLong(), -70) as? Class207?
+        var class207 = this.aItemDefinitionLoader_2886!!.aClass60_2190!!.method583(anInt2891.toLong(), -70) as? Class207?
         if (class207 != null) return class207
-        class207 = Class207.method1521(this.aClass166_2886!!.aClass45_2180!!, anInt2891, 0)
+        class207 = Class207.method1521(this.aItemDefinitionLoader_2886!!.aClass45_2180!!, anInt2891, 0)
         if (i < 49) method1609(93.toByte())
-        if (class207 != null) this.aClass166_2886!!.aClass60_2190!!.method582(class207, anInt2891.toLong(), (-120).toByte())
+        if (class207 != null) this.aItemDefinitionLoader_2886!!.aClass60_2190!!.method582(class207, anInt2891.toLong(), (-120).toByte())
         return class207
     }
 

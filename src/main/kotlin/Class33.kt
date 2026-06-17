@@ -52,7 +52,7 @@ class Class33 internal constructor(class230: Class230?, i: Int, class45: Class45
             anInt456++
             if (i_0_ != Class337.anInt4179) {
                 if (i_0_ != -1) {
-                    val class222 = Class239.aClass166_3147!!.method1287((-104).toByte(), i_0_)
+                    val class222 = Class239.aItemDefinitionLoader_3147!!.method1287((-104).toByte(), i_0_)
                     val class207 = class222.method1610(71.toByte())
                     if (class207 == null) i_0_ = -1
                     else {

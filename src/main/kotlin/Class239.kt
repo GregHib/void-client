@@ -54,7 +54,7 @@ abstract class Class239 {
         @JvmField
         var aClass45_3146: Class45? = null
         @JvmField
-        var aClass166_3147: Class166? = null
+        var aItemDefinitionLoader_3147: ItemDefinitionLoader? = null
 
         @JvmStatic
         fun method1709(i: Int): Array<Class231?> {
@@ -88,7 +88,7 @@ abstract class Class239 {
             aClass45_3146 = null
             aIntRange_3135 = null
             aByteArray3144 = null
-            aClass166_3147 = null
+            aItemDefinitionLoader_3147 = null
             if (i < 13) method1709(-99)
         }
 

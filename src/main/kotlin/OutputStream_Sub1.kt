@@ -163,7 +163,7 @@ class OutputStream_Sub1 : OutputStream() {
                         Class19.method283(-127, i_0_, 256, i_2_, i_1_, i_3_, 256)
                         method3802(i_3_, i_2_, 2, i_1_, i_0_, 256, 256)
                         Class318_Sub1_Sub1_Sub2.method2403(i_1_, 256, i_3_, i_0_, 19206, i_2_, 256)
-                        Class166.method1289(i_2_, i_0_, i_3_, 8, i_1_)
+                        ItemDefinitionLoader.method1289(i_2_, i_0_, i_3_, 8, i_1_)
                     }
                     Class348_Sub42_Sub11.method3223()
                     Class286_Sub4.anInt6246 = i_8_

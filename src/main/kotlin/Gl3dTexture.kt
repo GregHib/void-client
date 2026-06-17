@@ -74,7 +74,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
             anInt8624++
             if (i != -11271) method249(39)
             return (arrayOf<IntRange?>(
-                Class166.aIntRange_2183,
+                ItemDefinitionLoader.aIntRange_2183,
                 Class295.aIntRange_3751,
                 Class318_Sub1_Sub5_Sub2.aIntRange_10168,
                 Class356.aIntRange_4388,

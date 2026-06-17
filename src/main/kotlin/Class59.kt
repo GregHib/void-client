@@ -219,7 +219,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     }
                     return -1
                 }
-                Class166.method1286(file, 64, string)
+                ItemDefinitionLoader.method1286(file, 64, string)
                 return 100
             }
             return -1

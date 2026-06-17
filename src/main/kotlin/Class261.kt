@@ -127,7 +127,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
             val i_12_ = 81 % ((i - -70) / 35)
             anInt3313++
             if (!Class5_Sub1.aBoolean8335) Class348_Sub42_Sub6.aBoolean9535 = ((Class332.anInt4143 != -1 && Class73.anInt4776 >= Class332.anInt4143) || (Class348_Sub42_Sub8_Sub2.anInt10432 < 16 * Class73.anInt4776 - -(if (!Class71.aBoolean1211) 22 else 26)))
-            Class166.aClass262_2187!!.method1996(103)
+            ItemDefinitionLoader.aClass262_2187!!.method1996(103)
             Class348_Sub40_Sub38.aClass262_9478!!.method1996(104)
             var class348_sub42_sub12 = (Class348_Sub40_Sub4.aClass262_9111!!.method1995(4) as Class348_Sub42_Sub12?)
             while (class348_sub42_sub12 != null) {
@@ -135,11 +135,11 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                 if (i_13_ < 1000) {
                     class348_sub42_sub12.method2715(97.toByte())
                     if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) Class348_Sub40_Sub38.aClass262_9478!!.method1999(class348_sub42_sub12, -20180)
-                    else Class166.aClass262_2187!!.method1999(class348_sub42_sub12, -20180)
+                    else ItemDefinitionLoader.aClass262_2187!!.method1999(class348_sub42_sub12, -20180)
                 }
                 class348_sub42_sub12 = Class348_Sub40_Sub4.aClass262_9111!!.method1990(83.toByte()) as Class348_Sub42_Sub12?
             }
-            Class166.aClass262_2187!!.method1988(Class348_Sub40_Sub4.aClass262_9111, (-115).toByte())
+            ItemDefinitionLoader.aClass262_2187!!.method1988(Class348_Sub40_Sub4.aClass262_9111, (-115).toByte())
             Class348_Sub40_Sub38.aClass262_9478!!.method1988(Class348_Sub40_Sub4.aClass262_9111, (-115).toByte())
             if (Class73.anInt4776 > 1) {
                 if (!InputSettingsState.shiftClick || !Class182.aClass346_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)

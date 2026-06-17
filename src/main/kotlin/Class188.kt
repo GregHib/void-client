@@ -141,7 +141,7 @@ class Class188 internal constructor(private val aHa_Sub2_2511: OpenGlRenderer) {
             Class30.aClass84_413!!.method819(74.toByte(), 5)
             HoverActionEntry.aClass25_1813!!.method299(5, 16)
             Class348_Sub1.aClass185_6559!!.method1392(88, 5)
-            Class239.aClass166_3147!!.method1285(i, 8)
+            Class239.aItemDefinitionLoader_3147!!.method1285(i, 8)
             SpriteLoadValidator.aClass65_4787!!.method697(5, 26)
             Class73.aClass219_4782!!.method1603(5, -66)
             method876(5, 0)

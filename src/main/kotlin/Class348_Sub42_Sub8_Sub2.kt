@@ -1120,7 +1120,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class166.aIntRange_2183) {
+            if (Class348_Sub3.aIntRange_6584 == ItemDefinitionLoader.aIntRange_2183) {
                 var i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
                 if (i == 65535) i = -1
                 var string: String? = Class299.aClass348_Sub49_Sub2_3813!!.readString(103.toByte())

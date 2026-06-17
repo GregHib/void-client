@@ -1,7 +1,10 @@
 import Class16.method260
 import java.io.File
 
-class Class166 internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_9_: Class45?) {
+/*
+ * Class166
+ */
+class ItemDefinitionLoader internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_9_: Class45?) {
     @JvmField
     var aClass45_2180: Class45? = null
     private val aClass60_2185 = Class60(64)
@@ -44,7 +47,7 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
             `is` = aClass45_2188.method410(-1860, 33, i_1_)
         }
         class222 = Class222()
-        class222.aClass166_2886 = this
+        class222.aItemDefinitionLoader_2886 = this
         if (`is` != null) class222.method1611(Class348_Sub49(`is`), false)
         synchronized(aClass60_2185) {
             aClass60_2185.method582(class222, i_1_.toLong(), (-116).toByte())

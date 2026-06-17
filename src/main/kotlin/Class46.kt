@@ -961,7 +961,7 @@ class Class46 {
             Class30.aClass84_413!!.method816(false)
             HoverActionEntry.aClass25_1813!!.method302(-797644856)
             Class348_Sub1.aClass185_6559!!.method1390(23)
-            Class239.aClass166_3147!!.method1283(1)
+            Class239.aItemDefinitionLoader_3147!!.method1283(1)
             SpriteLoadValidator.aClass65_4787!!.method694(-1007)
             Class73.aClass219_4782!!.method1598(111)
             Class331.method2638(-4631)
