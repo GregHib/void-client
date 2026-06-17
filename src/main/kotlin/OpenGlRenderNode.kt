@@ -357,7 +357,7 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
         @JvmField
         var anInt10485: Int = 0
         @JvmField
-        var aClass252_10488: Class252? = null
+        var aSmoothingBuffer_10488: SmoothingBuffer? = null
         @JvmField
         var anInt10490: Int = 0
         @JvmField
@@ -368,7 +368,7 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
         @JvmStatic
         fun method3295(i: Int) {
             aClass45_10480 = null
-            aClass252_10488 = null
+            aSmoothingBuffer_10488 = null
             aClass262_10492 = null
             if (i != -1) method3295(109)
         }

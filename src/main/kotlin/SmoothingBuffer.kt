@@ -1,7 +1,7 @@
 /* Class252 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class252 internal constructor(@JvmField var anInt3241: Int) {
+class SmoothingBuffer internal constructor(@JvmField var anInt3241: Int) {
     @JvmField
     var anIntArray3238: IntArray? = IntArray(this.anInt3241)
 

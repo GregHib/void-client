@@ -103,7 +103,7 @@ class Class348_Sub41 : Class348() {
                 ArbVertexProgram.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + Renderer.anInt4581) * 8
                 Class90.regionTileY = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.anInt9109 shr 4))
                 Class348_Sub26.Companion.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, Class327.anInt4095 * 8)
-                OpenGlRenderNode.aClass252_10488 = null
+                OpenGlRenderNode.aSmoothingBuffer_10488 = null
                 val i_20_ = ArbVertexProgram.regionTileX - i_18_
                 val i_21_ = -i_19_ + Class90.regionTileY
                 if (i_17_ == 11) {

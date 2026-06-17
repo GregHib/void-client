@@ -952,7 +952,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     Class348.anInt4292 = 0
                                     FogOptionState.anInt6048 = 2
                                     Class93.anInt1534 = i_72_
-                                    val class348_sub47 = (method2148(Class252.aClass351_3237, Class348_Sub23_Sub2.aClass77_9029, -125))
+                                    val class348_sub47 = (method2148(SmoothingBuffer.aClass351_3237, Class348_Sub23_Sub2.aClass77_9029, -125))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-96, Class90.regionTileY + i_75_)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, 0x7fffffff and (l ushr 32).toInt())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ - -ArbVertexProgram.regionTileX, 3.toByte())

@@ -127,7 +127,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             PingHostListHolder.aClass323_2333 = null
             Class348_Sub3.aClass323_6581 = null
             Class39.aClass323_521 = null
-            Class75.aClass252_1246 = null
+            Class75.aSmoothingBuffer_1246 = null
             GlRectangleTexture.aClass323_8644 = null
             Class48.anInt859 = -1
             if (i <= -44) {

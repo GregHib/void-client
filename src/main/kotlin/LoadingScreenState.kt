@@ -133,7 +133,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
         }
 
         init {
-            for (i in 0..4095) anIntArray2631!![i] = Class252.method1918(-3358, i)
+            for (i in 0..4095) anIntArray2631!![i] = SmoothingBuffer.method1918(-3358, i)
             anIntArray2632 = IntArray(32)
             anIntArray2633 = IntArray(32)
             aClass352Array2636 = null

@@ -316,7 +316,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class252.aIntRange_3240) {
+            if (Class348_Sub3.aIntRange_6584 == SmoothingBuffer.aIntRange_3240) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
                 val i_27_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())

@@ -166,7 +166,7 @@ import TileTransform.method1907
 import SpriteStore.Companion.method305
 import BackgroundWorkerThread.Companion.method1910
 import ConfigFlagUtil.Companion.method1912
-import Class252.Companion.method1917
+import SmoothingBuffer.Companion.method1917
 import Class254.Companion.method1926
 import Class255.Companion.method1931
 import Class256.method1944

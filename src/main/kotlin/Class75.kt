@@ -24,7 +24,7 @@ open class Class75 {
         @JvmField
         var aClass263_1245: Class263? = null
         @JvmField
-        var aClass252_1246: Class252? = null
+        var aSmoothingBuffer_1246: SmoothingBuffer? = null
         @JvmField
         var aFloat1247: Float = 0f
         private var aByteArray1248: ByteArray?
@@ -145,7 +145,7 @@ open class Class75 {
             aByteArrayArrayArray1251 = null
             aShortArray1252 = null
             aByteArray1248 = null
-            aClass252_1246 = null
+            aSmoothingBuffer_1246 = null
             aClass262_1254 = null
             anIntArray1260 = null
             aByteArray1273 = null
@@ -555,10 +555,10 @@ open class Class75 {
         @JvmStatic
         fun method761() {
             val `is` = IntArray(3)
-            for (i in 0..<aClass252_1246!!.anInt3241) {
-                val bool: Boolean = (aClass348_Sub42_Sub14_1243!!.method3236(`is`, (aClass252_1246!!.anIntArray3238!![i] shr 14 and 0x3fff), aClass252_1246!!.anIntArray3238!![i] and 0x3fff, aClass252_1246!!.anIntArray3238!![i] shr 28 and 0x3, (-28).toByte()))
+            for (i in 0..<aSmoothingBuffer_1246!!.anInt3241) {
+                val bool: Boolean = (aClass348_Sub42_Sub14_1243!!.method3236(`is`, (aSmoothingBuffer_1246!!.anIntArray3238!![i] shr 14 and 0x3fff), aSmoothingBuffer_1246!!.anIntArray3238!![i] and 0x3fff, aSmoothingBuffer_1246!!.anIntArray3238!![i] shr 28 and 0x3, (-28).toByte()))
                 if (bool) {
-                    val class348_sub21 = Class348_Sub21(aClass252_1246!!.anIntArray3239!![i])
+                    val class348_sub21 = Class348_Sub21(aSmoothingBuffer_1246!!.anIntArray3239!![i])
                     class348_sub21.anInt6852 = `is`[1] - anInt1266
                     class348_sub21.anInt6851 = `is`[2] - anInt1263
                     aClass262_1254!!.method1999(class348_sub21, -20180)

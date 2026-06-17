@@ -6,29 +6,29 @@ object Class307 {
     var anInt3878: Int = 0
 
     @JvmStatic
-    fun method2300(class45: Class45?, string: String?, bool: Boolean, i: Byte): Class252? {
+    fun method2300(class45: Class45?, string: String?, bool: Boolean, i: Byte): SmoothingBuffer? {
         try {
             anInt3877++
             val i_0_ = class45!!.method417(string!!, 0)
             if (i.toInt() != -91) return null
-            if (i_0_ == -1) return Class252(0)
+            if (i_0_ == -1) return SmoothingBuffer(0)
             val `is` = class45.method396(i_0_, i.toInt() xor 0x5a.inv())
-            val class252 = Class252(`is`!!.size)
+            val smoothingBuffer = SmoothingBuffer(`is`!!.size)
             var i_1_ = 0
             var i_2_ = 0
-            while (i_1_ < class252.anInt3241) {
+            while (i_1_ < smoothingBuffer.anInt3241) {
                 val class348_sub49 = Class348_Sub49(class45.method410(-1860, i_0_, `is`[i_2_++]))
                 val i_3_ = class348_sub49.readInt((-126).toByte())
                 val i_4_ = class348_sub49.readUnsignedShort(i.toInt() xor 0x3235f8a2.inv())
                 val i_5_ = class348_sub49.readUnsignedByte(255)
-                if (!bool && i_5_ == 1) class252.anInt3241--
+                if (!bool && i_5_ == 1) smoothingBuffer.anInt3241--
                 else {
-                    class252.anIntArray3238!![i_1_] = i_3_
-                    class252.anIntArray3239!![i_1_] = i_4_
+                    smoothingBuffer.anIntArray3238!![i_1_] = i_3_
+                    smoothingBuffer.anIntArray3239!![i_1_] = i_4_
                     i_1_++
                 }
             }
-            return class252
+            return smoothingBuffer
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("wt.A(" + (if (class45 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ')'))
         }

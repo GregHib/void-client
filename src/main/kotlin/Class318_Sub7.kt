@@ -398,8 +398,8 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                         if (Class348.anInt4290 == 60) {
                             if (Class75.aClass45_1237!!.method400(-18308, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) {
                                 if (!Class75.aClass45_1237!!.method413(100, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) return
-                                Class75.aClass252_1246 = (Class307.method2300(Class75.aClass45_1237, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", ModelBatchBase.aBoolean1900, (-91).toByte()))
-                            } else Class75.aClass252_1246 = Class252(0)
+                                Class75.aSmoothingBuffer_1246 = (Class307.method2300(Class75.aClass45_1237, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", ModelBatchBase.aBoolean1900, (-91).toByte()))
+                            } else Class75.aSmoothingBuffer_1246 = SmoothingBuffer(0)
                             method761()
                             Class348.anInt4290 = 70
                             Class289.method2193(true, (-127).toByte())
