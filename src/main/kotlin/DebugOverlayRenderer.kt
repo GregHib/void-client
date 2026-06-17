@@ -55,7 +55,7 @@ object DebugOverlayRenderer {
             Class362.aClass324_4456!!.method2576(("Total Trans Onscreen: " + Class348_Sub42_Sub3.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111)
             Class362.aClass324_4456!!.method2576(("Occluders: " + (DetailLevelOptionState.anInt6115 + Class69.anInt1200) + " Active: " + (Class348_Sub42_Sub10.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
             Class362.aClass324_4456!!.method2576(("Occluded: Ground:" + Class348_Sub23_Sub2.anInt9039 + " Walls: " + Class42.anInt562 + " CPs: " + Class348_Sub40_Sub4.anInt9112 + " Pixels: " + NpcDefinition.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
-            Class362.aClass324_4456!!.method2576(("Occlude Calc Took: " + (Class286_Sub6.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123)
+            Class362.aClass324_4456!!.method2576(("Occlude Calc Took: " + (GlslEnvMaterialPass.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123)
             if (Class348_Sub18.anInt6818 == 2 && GlTextureBase.anIntArray5091 != null) {
                 for (i_5_ in GlTextureBase.anIntArray5091!!.indices) {
                     var f = GlTextureBase.anIntArray5091!![i_5_].toFloat()

@@ -76,13 +76,13 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                 val i_2_ = -88 / ((i - -33) / 37)
                 var bool = false
                 val i_3_ = Class328_Sub1.anInt6513
-                val `is` = Class286_Sub7.anIntArray6290!!
+                val `is` = ScrollTexMaterialPass.anIntArray6290!!
                 var i_4_ = 0
                 while (i_3_ > i_4_) {
                     val player = (Class294.aPlayerArray5058!![`is`[i_4_]])!!
                     if (player.aString10544 != null && player.aString10544.equals(string, ignoreCase = true) && (((player == LocalPlayerState.aPlayer_1907) && (0x10 and Class38.anInt500) != 0) || (player != null && (Class38.anInt500 and 0x8) != 0))) {
                         NativeLibraryUnloader.anInt2975++
-                        val class348_sub47 = Class286_Sub3.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102)
+                        val class348_sub47 = WaterMaterialPass.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(`is`[i_4_], 3.toByte())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class301.anInt3829, 3.toByte())

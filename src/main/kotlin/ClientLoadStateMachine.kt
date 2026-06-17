@@ -71,26 +71,26 @@ object ClientLoadStateMachine {
             if (SizeBoundedSoftCache.aClass340_2327 == null) SizeBoundedSoftCache.aClass340_2327 = Class340(Class348_Sub4.aMediaStreamClient_6601, Class39.aScriptCompilerThread_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657)
             if (!SizeBoundedSoftCache.aClass340_2327!!.method2674(7)) return 0
             method2965(null, 0, true, 0)
-            Class286_Sub7.aBoolean6289 = !Class348_Sub14.method2804((-63).toByte())
-            Class286_Sub7.aClass45_6277 = Class369_Sub2.method3571(false, (if (Class286_Sub7.aBoolean6289) 34 else 32), (-23).toByte(), 1)
+            ScrollTexMaterialPass.aBoolean6289 = !Class348_Sub14.method2804((-63).toByte())
+            ScrollTexMaterialPass.aClass45_6277 = Class369_Sub2.method3571(false, (if (ScrollTexMaterialPass.aBoolean6289) 34 else 32), (-23).toByte(), 1)
             Class348_Sub40_Sub17_Sub1.aClass45_10426 = Class369_Sub2.method3571(false, 33, (-23).toByte(), 1)
             SoftwareSpriteRaster.aClass45_1627 = Class369_Sub2.method3571(false, 13, (-23).toByte(), 1)
         }
         if (Class56.aClass56_1024 == Class348_Sub42_Sub15.aClass56_9660) {
             val bool = Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method401(89)
             var i_2_ = MinimapRectClipper.aClass314_Sub1Array223!![33]!!.method2349(1)
-            i_2_ = i_2_ + MinimapRectClipper.aClass314_Sub1Array223!![if (!Class286_Sub7.aBoolean6289) 32 else 34]!!.method2349(1)
+            i_2_ = i_2_ + MinimapRectClipper.aClass314_Sub1Array223!![if (!ScrollTexMaterialPass.aBoolean6289) 32 else 34]!!.method2349(1)
             i_2_ += MinimapRectClipper.aClass314_Sub1Array223!![13]!!.method2349(1)
             i_2_ = i_2_ + (if (!bool) Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method398((-31).toByte()) else 100)
             if (i_2_ != 400) return i_2_ / 4
-            Class348_Sub31.anInt6924 = Class286_Sub7.aClass45_6277!!.method389(77)
+            Class348_Sub31.anInt6924 = ScrollTexMaterialPass.aClass45_6277!!.method389(77)
             GroundItemRenderState.anInt1663 = Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method389(i + 28561)
-            DualMaterialContainer.method1001(Class286_Sub7.aClass45_6277!!, 0)
+            DualMaterialContainer.method1001(ScrollTexMaterialPass.aClass45_6277!!, 0)
             val i_3_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(i xor 0x11ae)
             PerlinTextureProvider.aCollisionMapRegion_5813 = CollisionMapRegion(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class348_Sub40_Sub17_Sub1.aClass45_10426)
             var `is` = PerlinTextureProvider.aCollisionMapRegion_5813!!.method1046(i_3_, 0)
             if (`is`!!.size == 0) `is` = PerlinTextureProvider.aCollisionMapRegion_5813!!.method1046(0, 0)
-            val dualMaterialContainer = DualMaterialContainer(Class286_Sub7.aClass45_6277, SoftwareSpriteRaster.aClass45_1627)
+            val dualMaterialContainer = DualMaterialContainer(ScrollTexMaterialPass.aClass45_6277, SoftwareSpriteRaster.aClass45_1627)
             if (`is`!!.size > 0) {
                 LoadProgressCounters.anInterface16Array2447 = arrayOfNulls<Interface16>(`is`.size)
                 var i_4_ = 0
@@ -100,7 +100,7 @@ object ClientLoadStateMachine {
                 }
             }
         }
-        if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1026) Class348_Sub42_Sub3.method3178(SoftwareSpriteRaster.aClass45_1627, -81, method184(1084489728), Class286_Sub7.aClass45_6277)
+        if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1026) Class348_Sub42_Sub3.method3178(SoftwareSpriteRaster.aClass45_1627, -81, method184(1084489728), ScrollTexMaterialPass.aClass45_6277)
         if (Class56.aClass56_1027 == Class348_Sub42_Sub15.aClass56_9660) {
             val i_5_ = Class348_Sub50.method3420(0)
             val i_6_ = method3256(2)
@@ -161,7 +161,7 @@ object ClientLoadStateMachine {
                 if (LocDefinitionCache.anInt3435 < 0) LocDefinitionCache.anInt3435 = i_8_
                 return ((i_8_ + -LocDefinitionCache.anInt3435) * 100 / (-LocDefinitionCache.anInt3435 + 100))
             }
-            Class286_Sub5.method2159((-109).toByte(), CameraRotationStub.aClass45_322!!)
+            TexGenMaterialPass.method2159((-109).toByte(), CameraRotationStub.aClass45_322!!)
             Class348_Sub42_Sub3.method3178(SoftwareSpriteRaster.aClass45_1627, -124, method184(i xor 0x40a46ff3.inv()), CameraRotationStub.aClass45_322)
         }
         if (Class56.aClass56_1032 == Class348_Sub42_Sub15.aClass56_9660) {
@@ -234,12 +234,12 @@ object ClientLoadStateMachine {
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
-            Class286_Sub6.aBooleanArray6270 = (BooleanArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
+            GlslEnvMaterialPass.aBooleanArray6270 = (BooleanArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
             GlTextureCubeMap.aStringArray8532 = arrayOfNulls<String>(Class91.aClass82_1523!!.anInt1439)
             var i_13_ = 0
             while (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000 > i_13_) {
                 if (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
-                    Class286_Sub6.aBooleanArray6270!![i_13_] = true
+                    GlslEnvMaterialPass.aBooleanArray6270!![i_13_] = true
                     Class335.anInt4168++
                 }
                 Class77.anIntArray1303!![i_13_] = -1
@@ -285,7 +285,7 @@ object ClientLoadStateMachine {
             Class51.aClass311_897 = null
             LoadProgressCounters.anInterface16Array2447 = null
             Class348_Sub32.aThread6946 = null
-            Class286_Sub7.aClass45_6277 = null
+            ScrollTexMaterialPass.aClass45_6277 = null
             method3886(i + 28556)
             Class348_Sub23_Sub2.aBoolean9038 = Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 1)

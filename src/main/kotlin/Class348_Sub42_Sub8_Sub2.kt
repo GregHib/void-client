@@ -740,7 +740,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (CharCountUtil.aIntRange_229 == Class348_Sub3.aIntRange_6584) {
-                method128(Class286_Sub1.aClass74_6201, 8.toByte())
+                method128(ArbFogMaterialPass.aClass74_6201, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1154,7 +1154,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         Class348_Sub3.aIntRange_6584 = null
                         return true
                     }
-                    Class286_Sub2.method2144(string_141_, i, (-92).toByte(), i_139_, string_142_, string, string)
+                    FixedFunctionMaterialPass.method2144(string_141_, i, (-92).toByte(), i_139_, string_142_, string, string)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1241,7 +1241,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     if (bool_155_) Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1869(-95, Class318_Sub9_Sub1(string, i))
                                     Renderer.anIntArray4578!![i_154_] = i
                                 }
-                                Class286_Sub2.aStringArray6205!![i_154_] = string_150_
+                                FixedFunctionMaterialPass.aStringArray6205!![i_154_] = string_150_
                                 GlBufferObject.aStringArray4744!![i_154_] = string_152_
                                 NpcCountAccessor.anIntArray2280!![i_154_] = i_151_
                                 string = null
@@ -1250,7 +1250,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             }
                         } else if (string_150_ == Class83.aStringArray1441!![i_154_]) {
                             Class83.aStringArray1441!![i_154_] = string
-                            Class286_Sub2.aStringArray6205!![i_154_] = string_150_
+                            FixedFunctionMaterialPass.aStringArray6205!![i_154_] = string_150_
                             string = null
                             break
                         }
@@ -1258,7 +1258,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                     if (string != null && Class348_Sub40_Sub30.anInt9383 < 200) {
                         Class83.aStringArray1441!![Class348_Sub40_Sub30.anInt9383] = string
-                        Class286_Sub2.aStringArray6205!![(Class348_Sub40_Sub30.anInt9383)] = string_150_
+                        FixedFunctionMaterialPass.aStringArray6205!![(Class348_Sub40_Sub30.anInt9383)] = string_150_
                         Renderer.anIntArray4578!![Class348_Sub40_Sub30.anInt9383] = i
                         GlBufferObject.aStringArray4744!![Class348_Sub40_Sub30.anInt9383] = string_152_
                         NpcCountAccessor.anIntArray2280!![Class348_Sub40_Sub30.anInt9383] = i_151_
@@ -1285,9 +1285,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             val string_159_ = Class83.aStringArray1441!![i_157_]
                             Class83.aStringArray1441!![i_157_] = Class83.aStringArray1441!![i_157_ + 1]
                             Class83.aStringArray1441!![i_157_ + 1] = string_159_
-                            val string_160_ = Class286_Sub2.aStringArray6205!![i_157_]
-                            Class286_Sub2.aStringArray6205!![i_157_] = Class286_Sub2.aStringArray6205!![i_157_ + 1]
-                            Class286_Sub2.aStringArray6205!![i_157_ - -1] = string_160_
+                            val string_160_ = FixedFunctionMaterialPass.aStringArray6205!![i_157_]
+                            FixedFunctionMaterialPass.aStringArray6205!![i_157_] = FixedFunctionMaterialPass.aStringArray6205!![i_157_ + 1]
+                            FixedFunctionMaterialPass.aStringArray6205!![i_157_ - -1] = string_160_
                             val i_161_ = NpcCountAccessor.anIntArray2280!![i_157_]
                             NpcCountAccessor.anIntArray2280!![i_157_] = NpcCountAccessor.anIntArray2280!![1 + i_157_]
                             NpcCountAccessor.anIntArray2280!![i_157_ + 1] = i_161_
@@ -1505,7 +1505,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub40_Sub12.aIntRange_9197 == Class348_Sub3.aIntRange_6584) {
                 val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-43).toByte())
                 val string_198_ = Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), (Class299.aClass348_Sub49_Sub2_3813))), 23034)
-                Class286_Sub2.method2144(string, 6, (-101).toByte(), 0, string_198_, string, string)
+                FixedFunctionMaterialPass.method2144(string, 6, (-101).toByte(), 0, string_198_, string, string)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

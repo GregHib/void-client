@@ -2,7 +2,7 @@ import java.io.InputStream
 
 class InputStream_Sub2 : InputStream() {
     override fun read(): Int {
-        Class286_Sub5.method2161((-118).toByte(), 30000L)
+        TexGenMaterialPass.method2161((-118).toByte(), 30000L)
         anInt80++
         return -1
     }
@@ -114,7 +114,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_48_ = i_46_ and 0x3
                     val i_49_ = Class36.anIntArray487!![i_47_]
                     NativeRenderer.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, Class348_Sub40_Sub12.anInt9200, i_49_)
-                } else if (class74 == Class286_Sub1.aClass74_6201) {
+                } else if (class74 == ArbFogMaterialPass.aClass74_6201) {
                     val i_50_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     var i_51_ = (i_50_ shr 4 and 0xf) + BufferedMessageQueue.anInt3581 * 2
                     var i_52_ = (i_50_ and 0xf) + Class73.anInt4786 * 2

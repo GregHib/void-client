@@ -1,6 +1,6 @@
 import GlVertexBufferBase.Companion.method1151
-import Class286_Sub3.Companion.method2148
-import Class286_Sub4.Companion.method2157
+import WaterMaterialPass.Companion.method2148
+import GlslMaterialPass.Companion.method2157
 import Class299_Sub1_Sub2.Companion.method2263
 import Class369_Sub1.Companion.method3570
 import Class59.Companion.method544

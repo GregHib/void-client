@@ -205,7 +205,7 @@ class Class348_Sub41 : Class348() {
                     Class348_Sub17.Companion.method2928(true)
                     if (i_17_ != 11) {
                         CollisionMapAccessor.anInt3550 -= i_21_
-                        Class286_Sub4.anInt6246 -= 512 * i_20_
+                        GlslMaterialPass.anInt6246 -= 512 * i_20_
                         Class352.anInt4336 -= i_20_
                         ClanChatRequestSender.anInt3647 -= i_21_
                         Class348_Sub35.Companion.anInt6981 -= i_20_

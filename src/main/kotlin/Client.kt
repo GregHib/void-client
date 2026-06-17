@@ -202,17 +202,17 @@ import DataHolder.Companion.method2114
 import ViewportTransform.Companion.method2117
 import GlBufferObject.Companion.method2124
 import GlIndexBufferArb.Companion.method2132
-import Class286.Companion.method2135
-import Class286_Sub2.Companion.method2147
-import Class286_Sub3.Companion.method2148
-import Class286_Sub3.Companion.method2151
-import Class286_Sub4.Companion.method2156
-import Class286_Sub5.Companion.method2160
-import Class286_Sub6.Companion.method2163
-import Class286_Sub6.Companion.method2164
-import Class286_Sub7.Companion.method2166
-import Class286_Sub8.Companion.method2170
-import Class286_Sub8.Companion.method2171
+import MaterialPass.Companion.method2135
+import FixedFunctionMaterialPass.Companion.method2147
+import WaterMaterialPass.Companion.method2148
+import WaterMaterialPass.Companion.method2151
+import GlslMaterialPass.Companion.method2156
+import TexGenMaterialPass.Companion.method2160
+import GlslEnvMaterialPass.Companion.method2163
+import GlslEnvMaterialPass.Companion.method2164
+import ScrollTexMaterialPass.Companion.method2166
+import CubeMapMaterialPass.Companion.method2170
+import CubeMapMaterialPass.Companion.method2171
 import Class288.Companion.method2185
 import Class288_Sub1.Companion.method2190
 import Class289.method2191
@@ -1141,7 +1141,7 @@ class Client : GameAppletFrame() {
         method2762(108)
         method2135(0)
         method815(false)
-        Class286_Sub1.method2142((-126).toByte())
+        ArbFogMaterialPass.method2142((-126).toByte())
         method1075(17.toByte())
         Class48.method448((-16).toByte())
         method3295(i + -109)
@@ -1341,7 +1341,7 @@ class Client : GameAppletFrame() {
                 else if (string_26_ == "1") Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = GlRectangleTexture.aSceneProjector_8638
                 else if (string_26_ != "2") {
                     if (string_26_ == "3") Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = CustomCursorsOptionState.aSceneProjector_5932
-                } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class286_Sub6.aSceneProjector_6262
+                } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = GlslEnvMaterialPass.aSceneProjector_6262
             }
             try {
                 SocketStreamWorker.anInt2670 = this.getParameter("affid")!!.toInt()
@@ -1477,7 +1477,7 @@ class Client : GameAppletFrame() {
         if (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
             if (Class348_Sub40_Sub21.anInt9282 == 2) method241(127.toByte())
             else Class348_Sub21.method2954((-127).toByte())
-            if (Class286_Sub4.anInt6246 shr 9 < 14 || (Class286_Sub4.anInt6246 shr 9 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) AbstractCameraTransform.method893((-49).toByte())
+            if (GlslMaterialPass.anInt6246 shr 9 < 14 || (GlslMaterialPass.anInt6246 shr 9 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) AbstractCameraTransform.method893((-49).toByte())
         }
         if (i.toInt() != 112) anInt5171 = 22
         while (true) {
@@ -1524,8 +1524,8 @@ class Client : GameAppletFrame() {
         var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(8) as Class318_Sub9_Sub1?)
         while (class318_sub9_sub1 != null) {
             if (class318_sub9_sub1.anInt8787.toLong() < -5L + method599(-80) / 1000L) {
-                if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (-91).toByte(), 0, (class318_sub9_sub1.aString8783 + LocalizedText.aLocalizedText_3502!!.method2063(Class348_Sub33.anInt6967, 544)), "", "")
-                if (class318_sub9_sub1.aShort8786.toInt() == 0) Class286_Sub2.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + LocalizedText.aLocalizedText_3503!!.method2063((Class348_Sub33.anInt6967), i.toInt() xor 0x250)), "", "")
+                if (class318_sub9_sub1.aShort8786 > 0) FixedFunctionMaterialPass.method2144("", 5, (-91).toByte(), 0, (class318_sub9_sub1.aString8783 + LocalizedText.aLocalizedText_3502!!.method2063(Class348_Sub33.anInt6967, 544)), "", "")
+                if (class318_sub9_sub1.aShort8786.toInt() == 0) FixedFunctionMaterialPass.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + LocalizedText.aLocalizedText_3503!!.method2063((Class348_Sub33.anInt6967), i.toInt() xor 0x250)), "", "")
                 class318_sub9_sub1.method2373(false)
             }
             class318_sub9_sub1 = Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878((-43).toByte()) as Class318_Sub9_Sub1?
@@ -1759,12 +1759,12 @@ class Client : GameAppletFrame() {
             }
             method598(9013)
             val i = Class316.aClass348_Sub51_3959!!.aClass239_Sub17_7263!!.method1798(-32350)
-            if (i == 0) Class286_Sub5.method2161((-127).toByte(), 15L)
+            if (i == 0) TexGenMaterialPass.method2161((-127).toByte(), 15L)
             else if (i != 1) {
                 if (i != 2) {
-                    if (i == 3) Class286_Sub5.method2161((-102).toByte(), 2L)
-                } else Class286_Sub5.method2161((-97).toByte(), 5L)
-            } else Class286_Sub5.method2161((-104).toByte(), 10L)
+                    if (i == 3) TexGenMaterialPass.method2161((-102).toByte(), 2L)
+                } else TexGenMaterialPass.method2161((-97).toByte(), 5L)
+            } else TexGenMaterialPass.method2161((-104).toByte(), 10L)
             if (Class319.aBoolean3988) method1416(5)
             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1 && WorldMapRenderer.anInt4674 == 3 && RenderNode.anInt9721 != -1) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 0)
@@ -1876,7 +1876,7 @@ class Client : GameAppletFrame() {
 
         fun method104(i: Int) {
             val i_7_ = Class328_Sub1.anInt6513
-            val `is` = Class286_Sub7.anIntArray6290
+            val `is` = ScrollTexMaterialPass.anIntArray6290
             val i_8_ = if (Class373_Sub2.aBoolean7444) i_7_ else i_7_ + ModelDefinitionLoader.anInt2057
             for (i_9_ in 0..<i_8_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
@@ -1997,7 +1997,7 @@ class Client : GameAppletFrame() {
                             if (strings[5] != "game2") {
                                 if (strings[5] != "game3") Class55.method518("game", (-124).toByte())
                                 else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = CustomCursorsOptionState.aSceneProjector_5932
-                            } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class286_Sub6.aSceneProjector_6262
+                            } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = GlslEnvMaterialPass.aSceneProjector_6262
                         } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = GlRectangleTexture.aSceneProjector_8638
                     } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = ParticleEmitterNode.aSceneProjector_186
                     ServerConnectionInfo.aBoolean2151 = false
@@ -2555,7 +2555,7 @@ class Client : GameAppletFrame() {
 
         fun method112() {
             val i = Class328_Sub1.anInt6513
-            val `is` = Class286_Sub7.anIntArray6290
+            val `is` = ScrollTexMaterialPass.anIntArray6290
             val i_92_ = if (Class373_Sub2.aBoolean7444) i else i + ModelDefinitionLoader.anInt2057
             for (i_93_ in 0..<i_92_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
@@ -2574,7 +2574,7 @@ class Client : GameAppletFrame() {
 
         fun method115() {
             val i = Class328_Sub1.anInt6513
-            val `is` = Class286_Sub7.anIntArray6290
+            val `is` = ScrollTexMaterialPass.anIntArray6290
             val i_112_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
             val bool = i_112_ == 1 && i > 200 || i_112_ == 0 && i > 50
             for (i_113_ in 0..<i) {
@@ -2646,7 +2646,7 @@ class Client : GameAppletFrame() {
 
         fun method117(i: Int) {
             val i_122_ = Class328_Sub1.anInt6513
-            val `is` = Class286_Sub7.anIntArray6290
+            val `is` = ScrollTexMaterialPass.anIntArray6290
             for (i_123_ in 0..<i_122_ + ModelDefinitionLoader.anInt2057) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_123_]])

@@ -11,7 +11,7 @@ import jaggl.OpenGL.Companion.glTexEnvf
 import jaggl.OpenGL.Companion.glTexGenfv
 import jaggl.OpenGL.Companion.glTexGeni
 
-class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : Class286(var_ha_Sub2) {
+class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
     private val aClass83_6278: Class83?
     private var aClass61_6284: Class61? = null
     private var aClass258_Sub4_6285: GlTexture1D? = null
@@ -186,7 +186,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                             Class348_Sub40_Sub30.anInt9383--
                             for (i_2_ in i..<Class348_Sub40_Sub30.anInt9383) {
                                 Class83.aStringArray1441!![i_2_] = Class83.aStringArray1441!![i_2_ - -1]
-                                Class286_Sub2.Companion.aStringArray6205!![i_2_] = Class286_Sub2.Companion.aStringArray6205!![1 + i_2_]
+                                FixedFunctionMaterialPass.Companion.aStringArray6205!![i_2_] = FixedFunctionMaterialPass.Companion.aStringArray6205!![1 + i_2_]
                                 Renderer.anIntArray4578!![i_2_] = Renderer.anIntArray4578!![i_2_ - -1]
                                 GlBufferObject.aStringArray4744!![i_2_] = GlBufferObject.aStringArray4744!![1 + i_2_]
                                 NpcCountAccessor.anIntArray2280!![i_2_] = NpcCountAccessor.anIntArray2280!![i_2_ - -1]
@@ -194,7 +194,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                             }
                             Crc64Hashable.anInt4985 = Class311.anInt3918
                             Class348_Sub42_Sub7.anInt9540++
-                            val class348_sub47: Class348_Sub47 = Class286_Sub3.Companion.method2148(Class357.aClass351_4394, (Class348_Sub23_Sub2.aClass77_9029), -99)
+                            val class348_sub47: Class348_Sub47 = WaterMaterialPass.Companion.method2148(Class357.aClass351_4394, (Class348_Sub23_Sub2.aClass77_9029), -99)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                             Class348_Sub42_Sub14.method3243(117, class348_sub47)

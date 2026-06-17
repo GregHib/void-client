@@ -1,4 +1,4 @@
-import Class286_Sub2.Companion.method2146
+import FixedFunctionMaterialPass.Companion.method2146
 import Class5.Companion.method181
 import Class6.Companion.method204
 

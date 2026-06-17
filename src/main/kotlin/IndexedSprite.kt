@@ -61,7 +61,7 @@ class IndexedSprite : Sprite {
             val i_4_ = i_0_ shl Class362.anInt4459
             val i_5_ = i_2_ shl Class362.anInt4459
             if (i_1_.toInt() != -97) method163(-4)
-            if ((Class286_Sub7.method2169(i_4_ - -1, i_4_ - (-ArchiveFileConditionWrapper.anInt3465 - -1), 1 + i_5_, 1 + i_4_, -1 + (i_5_ - -ArchiveFileConditionWrapper.anInt3465), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, i_0_), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, 1 + i_0_), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_), -1 + ArchiveFileConditionWrapper.anInt3465 + i_5_, false)) && (Class286_Sub7.method2169(
+            if ((ScrollTexMaterialPass.method2169(i_4_ - -1, i_4_ - (-ArchiveFileConditionWrapper.anInt3465 - -1), 1 + i_5_, 1 + i_4_, -1 + (i_5_ - -ArchiveFileConditionWrapper.anInt3465), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, i_0_), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, 1 + i_0_), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_), -1 + ArchiveFileConditionWrapper.anInt3465 + i_5_, false)) && (ScrollTexMaterialPass.method2169(
                     1 + i_4_,
                     ArchiveFileConditionWrapper.anInt3465 + (i_4_ + -1),
                     i_5_ + 1,

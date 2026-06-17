@@ -1,4 +1,4 @@
-import Class286_Sub4.Companion.method2155
+import GlslMaterialPass.Companion.method2155
 import Class33.Companion.method340
 import java.awt.Component
 import java.util.*

@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import kotlin.math.abs
 import kotlin.math.min
 
-class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : Class286(var_ha_Sub2) {
+class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
     private var aBoolean6266 = false
     private val aClass83_6268: Class83?
     private var aBoolean6272 = false
@@ -153,14 +153,14 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             anInt6273++
             try {
                 if (Class348_Sub43.anInt7068 == 2) {
-                    if (Class286.Companion.aClass348_Sub2_3683 == null) {
-                        Class286.Companion.aClass348_Sub2_3683 = Class348_Sub2.method2734(ModelDefinition.aClass45_1848!!, (Class318_Sub1_Sub4_Sub1.anInt10074), Class318.anInt3971)
-                        if (Class286.Companion.aClass348_Sub2_3683 == null) return false
+                    if (MaterialPass.Companion.aClass348_Sub2_3683 == null) {
+                        MaterialPass.Companion.aClass348_Sub2_3683 = Class348_Sub2.method2734(ModelDefinition.aClass45_1848!!, (Class318_Sub1_Sub4_Sub1.anInt10074), Class318.anInt3971)
+                        if (MaterialPass.Companion.aClass348_Sub2_3683 == null) return false
                     }
                     if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(Class43.aClass45_611, Class333.aClass45_4147)
                     var class348_sub16_sub3 = Class98.aClass348_Sub16_Sub3_1564!!
                     if (GlBufferObject.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = GlBufferObject.aClass348_Sub16_Sub3_4743!!
-                    if (class348_sub16_sub3.method2866((Class286.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, Class367_Sub9.aClass45_7371, -35)) {
+                    if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, Class367_Sub9.aClass45_7371, -35)) {
                         Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                         Class98.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
                         if (Class348_Sub40_Sub35.anInt9444 <= 0) {
@@ -181,12 +181,12 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                             }
                         }
                         if (GlBufferObject.aClass348_Sub16_Sub3_4743 == null) {
-                            if (BloomGraphicsOptionState.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564!!.method2869(Class286.Companion.aClass348_Sub2_3683, Class346.aBoolean4275, false)
-                            else Class98.aClass348_Sub16_Sub3_1564!!.method2870(Class286.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, Class346.aBoolean4275, true, 24.toByte())
+                            if (BloomGraphicsOptionState.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564!!.method2869(MaterialPass.Companion.aClass348_Sub2_3683, Class346.aBoolean4275, false)
+                            else Class98.aClass348_Sub16_Sub3_1564!!.method2870(MaterialPass.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, Class346.aBoolean4275, true, 24.toByte())
                         }
                         if (Class318_Sub1_Sub4.aSoundChannelMixer_8764 != null) Class318_Sub1_Sub4.aSoundChannelMixer_8764!!.method2088(bool, Class98.aClass348_Sub16_Sub3_1564)
                         ModelDefinition.aClass45_1848 = null
-                        Class286.Companion.aClass348_Sub2_3683 = null
+                        MaterialPass.Companion.aClass348_Sub2_3683 = null
                         BloomGraphicsOptionState.aLong5971 = 0L
                         TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                         GlBufferObject.aClass348_Sub16_Sub3_4743 = null
@@ -199,7 +199,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                 Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                 TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
-                Class286.Companion.aClass348_Sub2_3683 = null
+                MaterialPass.Companion.aClass348_Sub2_3683 = null
                 ModelDefinition.aClass45_1848 = null
                 Class348_Sub43.anInt7068 = 0
             }

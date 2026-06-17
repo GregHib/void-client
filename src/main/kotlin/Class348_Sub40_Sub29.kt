@@ -13,7 +13,7 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
         anInt9378++
         val `is` = this.aClass322_7033!!.method2557(-94, i)!!
         if (this.aClass322_7033!!.aBoolean4035) {
-            var i_1_ = (anInt9374 * (if (Class286_Sub2.anInt6212 == anInt9379) i else anInt9379 * i / Class286_Sub2.anInt6212))
+            var i_1_ = (anInt9374 * (if (FixedFunctionMaterialPass.anInt6212 == anInt9379) i else anInt9379 * i / FixedFunctionMaterialPass.anInt6212))
             val is_2_ = `is`[0]!!
             val is_3_ = `is`[1]!!
             val is_4_ = `is`[2]!!
@@ -42,9 +42,9 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
     override fun method3045(i: Int, i_10_: Int, i_11_: Int) {
         super.method3045(i, i_10_, i_11_)
         anInt9382++
-        if (anInt9380 >= 0 && Class286_Sub5.aRenderConfig6247 != null) {
-            val i_12_ = (if (!(Class286_Sub5.aRenderConfig6247!!.method3(anInt9380, -6662)!!.aBoolean199)) 128 else 64)
-            anIntArray9375 = Class286_Sub5.aRenderConfig6247!!.method5(false, anInt9380, 1.0f, i_12_, i_12_, -123)
+        if (anInt9380 >= 0 && TexGenMaterialPass.aRenderConfig6247 != null) {
+            val i_12_ = (if (!(TexGenMaterialPass.aRenderConfig6247!!.method3(anInt9380, -6662)!!.aBoolean199)) 128 else 64)
+            anIntArray9375 = TexGenMaterialPass.aRenderConfig6247!!.method5(false, anInt9380, 1.0f, i_12_, i_12_, -123)
             anInt9379 = i_12_
             anInt9374 = i_12_
         }

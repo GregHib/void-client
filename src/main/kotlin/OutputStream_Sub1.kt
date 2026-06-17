@@ -69,7 +69,7 @@ class OutputStream_Sub1 : OutputStream() {
                     val i_7_ = Class314.aFloat3938.toInt() and 0x3fff
                     WidgetDefinition.method268(i_6_, -200 + CollisionMapAccessor.method2064(Class348_Sub6.anInt6633, Class355.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
                 } else if (Class348_Sub40_Sub21.anInt9282 == 5) LocDefinitionCache.method2035(i_2_, 0)
-                val i_8_ = Class286_Sub4.anInt6246
+                val i_8_ = GlslMaterialPass.anInt6246
                 val i_9_ = Class305.anInt3855
                 val i_10_ = Class59_Sub2_Sub2.anInt8685
                 val i_11_ = Class348_Sub42_Sub19.anInt9701
@@ -83,14 +83,14 @@ class OutputStream_Sub1 : OutputStream() {
                                 if (Class348_Sub42_Sub19.anInt9701 > 3072) Class348_Sub42_Sub19.anInt9701 = 3072
                             } else Class348_Sub42_Sub19.anInt9701 = 1024
                         }
-                        if (i_13_ == 0) Class286_Sub4.anInt6246 += i_14_ shl 2
+                        if (i_13_ == 0) GlslMaterialPass.anInt6246 += i_14_ shl 2
                         if (i_13_ == 3) Class5.anInt4638 = 0x3fff and i_14_ + Class5.anInt4638
                         if (i_13_ == 1) Class305.anInt3855 += i_14_ shl 2
                         if (i_13_ == 2) Class59_Sub2_Sub2.anInt8685 += i_14_ shl 2
                     }
                 }
-                if (Class286_Sub4.anInt6246 < 0) Class286_Sub4.anInt6246 = 0
-                if (-1 + (Class318_Sub7.anInt6451 shl 9) < Class286_Sub4.anInt6246) Class286_Sub4.anInt6246 = -1 + (Class318_Sub7.anInt6451 shl 9)
+                if (GlslMaterialPass.anInt6246 < 0) GlslMaterialPass.anInt6246 = 0
+                if (-1 + (Class318_Sub7.anInt6451 shl 9) < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = -1 + (Class318_Sub7.anInt6451 shl 9)
                 if (Class59_Sub2_Sub2.anInt8685 < 0) Class59_Sub2_Sub2.anInt8685 = 0
                 if (Class59_Sub2_Sub2.anInt8685 > (Class348_Sub41.anInt7054 shl 9) + -1) Class59_Sub2_Sub2.anInt8685 = (Class348_Sub41.anInt7054 shl 9) - 1
                 Class348_Sub42_Sub11.method3225(114)
@@ -109,11 +109,11 @@ class OutputStream_Sub1 : OutputStream() {
                 }
                 Class369_Sub1.method3570(false)
                 if (i >= 80) {
-                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -Class348_Sub42_Sub19.anInt9701 and 0x3fff, -Class5.anInt4638 and 0x3fff, 0x3fff and -Class338.anInt4186)
+                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -Class348_Sub42_Sub19.anInt9701 and 0x3fff, -Class5.anInt4638 and 0x3fff, 0x3fff and -Class338.anInt4186)
                     Class348_Sub8.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                     Class348_Sub8.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 shl 1, Class97.anInt1550 shl 1)
                     Class30.method319(Class97.anInt1550 shl 1, Class97.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
-                    Class348_Sub42_Sub20.method3282(0x3fff and -(Class348_Sub42_Sub19.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 and 0x3fff, Class286_Sub4.anInt6246, -Class338.anInt4186 and 0x3fff)
+                    Class348_Sub42_Sub20.method3282(0x3fff and -(Class348_Sub42_Sub19.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -Class338.anInt4186 and 0x3fff)
                     val i_16_ = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (Class59_Sub1.aBoolean5300) {
                         CameraRotationStub.method289(-15902, 0x3fff and -Class5.anInt4638, -Class338.anInt4186 and 0x3fff, (-Class348_Sub42_Sub19.anInt9701 and 0x3fff))
@@ -124,7 +124,7 @@ class OutputStream_Sub1 : OutputStream() {
                             (LocalPlayerState.aPlayer_1907!!.y) shr 9,
                             (LocalPlayerState.aPlayer_1907!!.plane) - -1,
                             Class327.anIntArray4097,
-                            Class286_Sub4.anInt6246,
+                            GlslMaterialPass.anInt6246,
                             Class59_Sub2_Sub2.anInt8685,
                             Class316.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
                             Class305.anInt3855,
@@ -139,7 +139,7 @@ class OutputStream_Sub1 : OutputStream() {
                         )
                     } else GlTexture3D.method1960(
                         Class367_Sub11.anInt7396,
-                        Class286_Sub4.anInt6246,
+                        GlslMaterialPass.anInt6246,
                         Class305.anInt3855,
                         Class59_Sub2_Sub2.anInt8685,
                         Class289.aByteArrayArrayArray3700,
@@ -166,7 +166,7 @@ class OutputStream_Sub1 : OutputStream() {
                         ItemDefinitionLoader.method1289(i_2_, i_0_, i_3_, 8, i_1_)
                     }
                     Class348_Sub42_Sub11.method3223()
-                    Class286_Sub4.anInt6246 = i_8_
+                    GlslMaterialPass.anInt6246 = i_8_
                     Class348_Sub42_Sub19.anInt9701 = i_11_
                     Class5.anInt4638 = i_12_
                     Class305.anInt3855 = i_9_

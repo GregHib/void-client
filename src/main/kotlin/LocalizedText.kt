@@ -1,5 +1,5 @@
 import ScrollingWidgetComponentNode.Companion.method1118
-import Class286_Sub3.Companion.method2148
+import WaterMaterialPass.Companion.method2148
 
 /* Class274 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

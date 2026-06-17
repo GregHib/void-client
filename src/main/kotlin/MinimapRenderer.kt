@@ -7,8 +7,8 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
     private var anInt1578 = 0
     private var aClass83_1582: Class83?
     private var anInt1584 = 0
-    var aClass286_Sub1_1586: Class286_Sub1
-    private val aClass286Array1588: Array<Class286?>
+    var aClass286_Sub1_1586: ArbFogMaterialPass
+    private val aMaterialPassArray1588: Array<MaterialPass?>
     private var anInt1592 = 0
 
     fun method884(i: Int, bool: Boolean, i_0_: Int, i_1_: Int, i_2_: Byte, bool_3_: Boolean) {
@@ -23,19 +23,19 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         }
         if (i_0_ != 0 && bool) i_0_ = i_0_ or 0x7fffffff.inv()
         if (anInt1578 != i_0_) {
-            if (anInt1578 != 0) aClass286Array1588[0x7fffffff and anInt1578]!!.method2133(-93)
+            if (anInt1578 != 0) aMaterialPassArray1588[0x7fffffff and anInt1578]!!.method2133(-93)
             if (i_0_ != 0) {
-                aClass286Array1588[i_0_ and 0x7fffffff]!!.method2134(bool, false)
-                aClass286Array1588[0x7fffffff and i_0_]!!.method2139(bool, ((-115).toByte()).toByte())
-                aClass286Array1588[i_0_ and 0x7fffffff]!!.method2136(i, i_1_, ((-106).toByte()).toByte())
+                aMaterialPassArray1588[i_0_ and 0x7fffffff]!!.method2134(bool, false)
+                aMaterialPassArray1588[0x7fffffff and i_0_]!!.method2139(bool, ((-115).toByte()).toByte())
+                aMaterialPassArray1588[i_0_ and 0x7fffffff]!!.method2136(i, i_1_, ((-106).toByte()).toByte())
             }
             anInt1578 = i_0_
             anInt1584 = i_1_
             anInt1592 = i
         } else if (anInt1578 != 0) {
-            aClass286Array1588[0x7fffffff and anInt1578]!!.method2139(bool, ((-101).toByte()).toByte())
+            aMaterialPassArray1588[0x7fffffff and anInt1578]!!.method2139(bool, ((-101).toByte()).toByte())
             if (i != anInt1592 || anInt1584 != i_1_) {
-                aClass286Array1588[0x7fffffff and anInt1578]!!.method2136(i, i_1_, ((-98).toByte()).toByte())
+                aMaterialPassArray1588[0x7fffffff and anInt1578]!!.method2136(i, i_1_, ((-98).toByte()).toByte())
                 anInt1592 = i
                 anInt1584 = i_1_
             }
@@ -47,31 +47,31 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         anInt1590++
         if (anInt1578 == 0) return false
         if (i_4_.toInt() != -124) method889(99.toByte(), 7)
-        aClass286Array1588[0x7fffffff and anInt1578]!!.method2140(glTexture, ((-98).toByte()).toByte(), i)
+        aMaterialPassArray1588[0x7fffffff and anInt1578]!!.method2140(glTexture, ((-98).toByte()).toByte(), i)
         return true
     }
 
     fun method889(i: Byte, i_8_: Int): Boolean {
         if (i >= -45) method885(7, ((-70).toByte()).toByte(), null)
         anInt1577++
-        return aClass286Array1588[i_8_]!!.method2137(-112)
+        return aMaterialPassArray1588[i_8_]!!.method2137(-112)
     }
 
     init {
         aClass83_1582 = Class83(aHa_Sub2_1581)
-        aClass286Array1588 = arrayOfNulls(10)
-        aClass286Array1588[1] = Class286_Sub9(aHa_Sub2_1581)
-        aClass286Array1588[2] = Class286_Sub3(aHa_Sub2_1581, aClass83_1582)
-        aClass286Array1588[4] = Class286_Sub7(aHa_Sub2_1581, aClass83_1582)
-        aClass286Array1588[5] = Class286_Sub5(aHa_Sub2_1581, aClass83_1582)
-        aClass286Array1588[6] = Class286_Sub2(aHa_Sub2_1581)
-        aClass286Array1588[7] = Class286_Sub8(aHa_Sub2_1581)
-        this.aClass286_Sub1_1586 = Class286_Sub1(aHa_Sub2_1581)
-        aClass286Array1588[3] = this.aClass286_Sub1_1586
-        aClass286Array1588[8] = Class286_Sub6(aHa_Sub2_1581, aClass83_1582)
-        aClass286Array1588[9] = Class286_Sub4(aHa_Sub2_1581, aClass83_1582)
-        if (!aClass286Array1588[8]!!.method2137(-33)) aClass286Array1588[8] = aClass286Array1588[4]
-        if (!aClass286Array1588[9]!!.method2137(-82)) aClass286Array1588[9] = aClass286Array1588[8]
+        aMaterialPassArray1588 = arrayOfNulls(10)
+        aMaterialPassArray1588[1] = SphereMapMaterialPass(aHa_Sub2_1581)
+        aMaterialPassArray1588[2] = WaterMaterialPass(aHa_Sub2_1581, aClass83_1582)
+        aMaterialPassArray1588[4] = ScrollTexMaterialPass(aHa_Sub2_1581, aClass83_1582)
+        aMaterialPassArray1588[5] = TexGenMaterialPass(aHa_Sub2_1581, aClass83_1582)
+        aMaterialPassArray1588[6] = FixedFunctionMaterialPass(aHa_Sub2_1581)
+        aMaterialPassArray1588[7] = CubeMapMaterialPass(aHa_Sub2_1581)
+        this.aClass286_Sub1_1586 = ArbFogMaterialPass(aHa_Sub2_1581)
+        aMaterialPassArray1588[3] = this.aClass286_Sub1_1586
+        aMaterialPassArray1588[8] = GlslEnvMaterialPass(aHa_Sub2_1581, aClass83_1582)
+        aMaterialPassArray1588[9] = GlslMaterialPass(aHa_Sub2_1581, aClass83_1582)
+        if (!aMaterialPassArray1588[8]!!.method2137(-33)) aMaterialPassArray1588[8] = aMaterialPassArray1588[4]
+        if (!aMaterialPassArray1588[9]!!.method2137(-82)) aMaterialPassArray1588[9] = aMaterialPassArray1588[8]
     }
 
     companion object {

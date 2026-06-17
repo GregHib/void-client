@@ -472,7 +472,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             if (aClass348_Sub3Array8328 != null) {
                 var i_154_ = i_153_ - -i_153_ + 1
                 i_154_ *= i_154_
-                if (i_154_ > Class286_Sub1.anIntArray6189!!.size) Class286_Sub1.anIntArray6189 = IntArray(i_154_)
+                if (i_154_ > ArbFogMaterialPass.anIntArray6189!!.size) ArbFogMaterialPass.anIntArray6189 = IntArray(i_154_)
                 var i_155_ = -i_153_ + i
                 val i_156_ = i_155_
                 if (i_155_ < 0) i_155_ = 0
@@ -488,7 +488,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     val bools_162_ = bools[i_161_ - i_156_]!!
                     var i_163_ = i_157_
                     while (i_160_ >= i_163_) {
-                        if (bools_162_[i_163_ - i_158_]) Class286_Sub1.anIntArray6189!![Class348_Sub48.anInt7133++] = i_161_ + this.anInt4587 * i_163_
+                        if (bools_162_[i_163_ - i_158_]) ArbFogMaterialPass.anIntArray6189!![Class348_Sub48.anInt7133++] = i_161_ + this.anInt4587 * i_163_
                         i_163_++
                     }
                 }
@@ -501,7 +501,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 this.aHa_Sub3_8322!!.method3866(((this.anInt8294) and 0x7) != 0, true)
                 this.aHa_Sub3_8322!!.method3814(false, false, -1, 101.toByte())
                 this.aHa_Sub3_8322!!.method3925(112, anInterface5_Impl1_8327, 0)
-                for (i_164_ in aClass348_Sub3Array8328!!.indices) aClass348_Sub3Array8328!![i_164_]!!.method2737((-30).toByte(), Class286_Sub1.anIntArray6189!!, Class348_Sub48.anInt7133)
+                for (i_164_ in aClass348_Sub3Array8328!!.indices) aClass348_Sub3Array8328!![i_164_]!!.method2737((-30).toByte(), ArbFogMaterialPass.anIntArray6189!!, Class348_Sub48.anInt7133)
                 val class101_sub2 = this.aHa_Sub3_8322!!.method3934(-97)
                 class101_sub2!!.method894(0, -1, 0)
                 this.aHa_Sub3_8322!!.method3915(0)

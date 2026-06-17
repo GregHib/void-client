@@ -86,7 +86,7 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
                 val i_0_ = -4 % ((-12 - i) / 38)
                 var i_1_ = 0
                 while ((i_1_ < Class77.anIntArray1303!!.size)) {
-                    if (Class286_Sub6.aBooleanArray6270!![i_1_]) {
+                    if (GlslEnvMaterialPass.aBooleanArray6270!![i_1_]) {
                         class348_sub49.writeShort(107.toByte(), i_1_)
                         class348_sub49.writeInt(124.toByte(), Class77.anIntArray1303!![i_1_])
                     }

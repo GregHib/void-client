@@ -1,5 +1,5 @@
 import ArrayCopyUtil.method1573
-import Class286_Sub5.Companion.method2161
+import TexGenMaterialPass.Companion.method2161
 import Class62.method599
 import java.awt.Component
 import kotlin.math.min

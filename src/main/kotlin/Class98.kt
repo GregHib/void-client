@@ -1,5 +1,5 @@
 import PerlinTextureProvider.Companion.method1399
-import Class286_Sub9.Companion.method2174
+import SphereMapMaterialPass.Companion.method2174
 
 /* Class98 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

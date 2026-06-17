@@ -4,7 +4,7 @@ import jaggl.OpenGL.Companion.glTexGenfv
 import jaggl.OpenGL.Companion.glTexGeni
 import kotlin.math.min
 
-class Class286_Sub5 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : Class286(var_ha_Sub2) {
+class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
     private val aClass61_6254: Class61
     private val aClass83_6259: Class83?
     override fun method2136(i: Int, i_5_: Int, i_6_: Byte) {

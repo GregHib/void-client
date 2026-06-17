@@ -1,7 +1,7 @@
 import ChatEffectsOptionState.Companion.method1731
 import BrightnessOptionState.Companion.method1745
-import Class286_Sub2.Companion.method2146
-import Class286_Sub3.Companion.method2148
+import FixedFunctionMaterialPass.Companion.method2146
+import WaterMaterialPass.Companion.method2148
 import Class318_Sub1_Sub5.Companion.method2485
 import Class99.method881
 
@@ -288,7 +288,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                                     class348_sub42_sub12 = (class312.method2329(10) as Class348_Sub42_Sub12?)
                                 }
                             }
-                            Class286_Sub2.method2146((-46).toByte())
+                            FixedFunctionMaterialPass.method2146((-46).toByte())
                         }
                     }
                 }

@@ -1,7 +1,7 @@
 /* Class286_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class286_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286(var_ha_Sub2) {
+class FixedFunctionMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : MaterialPass(var_ha_Sub2) {
     override fun method2133(i: Int) {
         if (i < -75) {
             this.aHa_Sub2_3684.method3804(false, (-61).toByte())
@@ -81,7 +81,7 @@ class Class286_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
         fun method2145(i: Int) {
             anInt6210++
             Class368.anInt4494++
-            val class348_sub47: Class348_Sub47 = Class286_Sub3.Companion.method2148(Class59_Sub1.aClass351_5288, Class348_Sub23_Sub2.aClass77_9029, -124)
+            val class348_sub47: Class348_Sub47 = WaterMaterialPass.Companion.method2148(Class59_Sub1.aClass351_5288, Class348_Sub23_Sub2.aClass77_9029, -124)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, Class348_Sub42_Sub12.method3229(-96))
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class321.anInt4017)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class348_Sub42_Sub8_Sub2.anInt10432)

@@ -1,7 +1,7 @@
 /* Class286 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class286 internal constructor(var aHa_Sub2_3684: OpenGlRenderer) {
+abstract class MaterialPass internal constructor(var aHa_Sub2_3684: OpenGlRenderer) {
     abstract fun method2133(i: Int)
 
     abstract fun method2134(bool: Boolean, bool_0_: Boolean)

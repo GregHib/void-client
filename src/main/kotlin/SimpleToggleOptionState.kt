@@ -87,7 +87,7 @@ class SimpleToggleOptionState : GraphicsOptionState {
             if (Class79.method802((player.anIntArray10317!![0]), (player.anIntArray10320!![0]), true)) player.aByte6376++
             if (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_] != null) player.method2452(84.toByte(), (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_]!!))
             Class328_Sub1.anInt6513 = 0
-            Class286_Sub7.anIntArray6290!![Class328_Sub1.anInt6513++] = i_3_
+            ScrollTexMaterialPass.anIntArray6290!![Class328_Sub1.anInt6513++] = i_3_
             Class348_Sub5.aByteArray6624!![i_3_] = 0.toByte()
             Class348_Sub42_Sub4.anInt9513 = 0
             for (i_8_ in 1..2047) {

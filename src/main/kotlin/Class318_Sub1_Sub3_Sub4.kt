@@ -1,4 +1,4 @@
-import Class286_Sub5.Companion.method2161
+import TexGenMaterialPass.Companion.method2161
 import Class287.Companion.method2178
 import Class301.method2278
 import Class309.Companion.method2312

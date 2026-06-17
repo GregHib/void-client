@@ -1,5 +1,5 @@
 import BrightnessOptionState.Companion.method1745
-import Class286_Sub3.Companion.method2148
+import WaterMaterialPass.Companion.method2148
 import java.awt.Canvas
 
 object Class306 {

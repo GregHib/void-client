@@ -59,7 +59,7 @@ class Class316 internal constructor(`is`: IntArray) {
             if (i <= -39) {
                 anInt3958++
                 if (method2066(106.toByte())) {
-                    if (Class286_Sub1.aStringArray6200 == null) method249(2)
+                    if (ArbFogMaterialPass.aStringArray6200 == null) method249(2)
                     HeapDiagnosticsHolder.anInt2254 = 0
                     Class351.aBoolean4328 = true
                 }

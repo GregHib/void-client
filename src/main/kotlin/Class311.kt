@@ -56,7 +56,7 @@ class Class311 : Runnable {
             }
             val l_3_ = method599(-73)
             val i = (-l_3_ - -l + 20L).toInt()
-            if (i > 0) Class286_Sub5.method2161((-3).toByte(), i.toLong())
+            if (i > 0) TexGenMaterialPass.method2161((-3).toByte(), i.toLong())
         }
     }
 

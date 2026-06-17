@@ -280,7 +280,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         anInt21++
         if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 === this && !SpriteArchiveLoader.aBoolean384) {
             CameraNodeList.aLong1739 = Class62.method599(-108)
-            Class286_Sub5.method2161(77.toByte(), 5000L)
+            TexGenMaterialPass.method2161(77.toByte(), 5000L)
             HudTabPanel.aClass297_2993 = null
             method90(false, false)
         }
@@ -374,7 +374,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 HudTabPanel.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
                 val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
-                while (class144.anInt1997 == 0) Class286_Sub5.method2161((-126).toByte(), 10L)
+                while (class144.anInt1997 == 0) TexGenMaterialPass.method2161((-126).toByte(), 10L)
             } else {
                 Class348_Sub51.anInt7252++
                 if (Class348_Sub51.anInt7252 >= 3) method82(112, "alreadyloaded")
@@ -409,7 +409,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
             HudTabPanel.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, i_23_ + -33739, 1)
-            while (class144.anInt1997 == 0) Class286_Sub5.method2161(21.toByte(), 10L)
+            while (class144.anInt1997 == 0) TexGenMaterialPass.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {
             LinkedListIterator.method1242(null, exception, i_23_ + -8495)
         }
@@ -548,24 +548,24 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         @JvmStatic
         fun method94(string: String, i: Int) {
             anInt6++
-            if (Class286_Sub1.aStringArray6200 == null) Gl3dTexture.method249(2)
-            Class286_Sub3.aCalendar6221!!.setTime(Date(Class62.method599(-102)))
-            val i_8_ = Class286_Sub3.aCalendar6221!!.get(11)
-            val i_9_ = Class286_Sub3.aCalendar6221!!.get(12)
-            val i_10_ = Class286_Sub3.aCalendar6221!!.get(13)
+            if (ArbFogMaterialPass.aStringArray6200 == null) Gl3dTexture.method249(2)
+            WaterMaterialPass.aCalendar6221!!.setTime(Date(Class62.method599(-102)))
+            val i_8_ = WaterMaterialPass.aCalendar6221!!.get(11)
+            val i_9_ = WaterMaterialPass.aCalendar6221!!.get(12)
+            val i_10_ = WaterMaterialPass.aCalendar6221!!.get(13)
             val string_11_ = ((i_8_ / 10).toString() + i_8_ % 10 + ":" + i_9_ / 10 + i_9_ % 10 + ":" + i_10_ / 10 + i_10_ % 10)
             val strings = Class348_Sub40_Sub23.method3113('\n', true, string)
             for (i_12_ in strings.indices) {
-                for (i_13_ in Class369_Sub2.anInt8587 downTo 1) Class286_Sub1.aStringArray6200!![i_13_] = Class286_Sub1.aStringArray6200!![-1 + i_13_]
-                Class286_Sub1.aStringArray6200!![0] = string_11_ + ": " + strings[i_12_]
+                for (i_13_ in Class369_Sub2.anInt8587 downTo 1) ArbFogMaterialPass.aStringArray6200!![i_13_] = ArbFogMaterialPass.aStringArray6200!![-1 + i_13_]
+                ArbFogMaterialPass.aStringArray6200!![0] = string_11_ + ": " + strings[i_12_]
                 if (Class299_Sub1.aFileOutputStream6323 != null) {
                     try {
-                        Class299_Sub1.aFileOutputStream6323!!.write(Class348_Sub24.method2992(((Class286_Sub1.aStringArray6200!![0]) + "\n"), (-20).toByte()))
+                        Class299_Sub1.aFileOutputStream6323!!.write(Class348_Sub24.method2992(((ArbFogMaterialPass.aStringArray6200!![0]) + "\n"), (-20).toByte()))
                     } catch (ioexception: IOException) {
                         /* empty */
                     }
                 }
-                if (-1 + Class286_Sub1.aStringArray6200!!.size > Class369_Sub2.anInt8587) {
+                if (-1 + ArbFogMaterialPass.aStringArray6200!!.size > Class369_Sub2.anInt8587) {
                     Class369_Sub2.anInt8587++
                     if (ViewportTransform.anInt3676 > 0) ViewportTransform.anInt3676++
                 }

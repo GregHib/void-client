@@ -1,4 +1,4 @@
-import Class286_Sub3.Companion.method2148
+import WaterMaterialPass.Companion.method2148
 import Class59.Companion.method544
 
 /* Class5_Sub3 - Decompiled by JODE
@@ -89,7 +89,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                 try {
                     anInt8372++
                     val i_6_ = Class328_Sub1.anInt6513
-                    val `is` = Class286_Sub7.anIntArray6290
+                    val `is` = ScrollTexMaterialPass.anIntArray6290
                     if (i_5_ == -7257) {
                         var bool = false
                         var i_7_ = 0

@@ -9,8 +9,8 @@ import ConfigFlagUtil.Companion.method1916
 import NpcDefinitionCache.Companion.method1987
 import CompassSmoother.Companion.method2017
 import SocketFactory.Companion.method2049
-import Class286.Companion.method2138
-import Class286_Sub3.Companion.method2148
+import MaterialPass.Companion.method2138
+import WaterMaterialPass.Companion.method2148
 import Class313.method2334
 import Class318_Sub1_Sub2.Companion.method2405
 import Class324.Companion.method2570
@@ -222,7 +222,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 val i_17_ = class348_sub42_sub15.method3248(1)
                                 if (i_16_ == 1) {
                                     Class77.anIntArray1303!![i_17_] = class348_sub42_sub15.anInt9652
-                                    ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or Class286_Sub6.aBooleanArray6270!![i_17_]
+                                    ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or GlslEnvMaterialPass.aBooleanArray6270!![i_17_]
                                     Class348_Sub26.Companion.anIntArray6890!![method1166(31, Class5_Sub1.anInt8352++)] = i_17_
                                 } else if (i_16_ == 2) {
                                     GlTextureCubeMap.aStringArray8532!![i_17_] = class348_sub42_sub15.aString9654
@@ -421,8 +421,8 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(i + -11424) as? Class318_Sub9_Sub1?)
                                 while (class318_sub9_sub1 != null) {
                                     if ((method599(i xor 0x2ce9.inv()) / 1000L + -5L) > class318_sub9_sub1.anInt8787.toLong()) {
-                                        if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (-128).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3502!!.method2063(Class348_Sub33.Companion.anInt6967, 544))), "", "")
-                                        if (class318_sub9_sub1.aShort8786.toInt() == 0) Class286_Sub2.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3503!!.method2063(Class348_Sub33.Companion.anInt6967, 544))), "", "")
+                                        if (class318_sub9_sub1.aShort8786 > 0) FixedFunctionMaterialPass.method2144("", 5, (-128).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3502!!.method2063(Class348_Sub33.Companion.anInt6967, 544))), "", "")
+                                        if (class318_sub9_sub1.aShort8786.toInt() == 0) FixedFunctionMaterialPass.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3503!!.method2063(Class348_Sub33.Companion.anInt6967, 544))), "", "")
                                         class318_sub9_sub1.method2373(false)
                                     }
                                     class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1878((-105).toByte()) as? Class318_Sub9_Sub1?)

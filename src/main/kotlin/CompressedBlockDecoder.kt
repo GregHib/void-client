@@ -71,7 +71,7 @@ object CompressedBlockDecoder {
         var i_19_ = class40.anInt533
         var i_20_ = class40.anInt555
         var i_21_ = class40.anInt537
-        val `is` = Class286_Sub3.anIntArray6228
+        val `is` = WaterMaterialPass.anIntArray6228
         var i_22_ = class40.anInt552
         val is_23_ = class40.aByteArray527
         var i_24_ = class40.anInt548
@@ -158,7 +158,7 @@ object CompressedBlockDecoder {
         class40.anInt533 = i_19_
         class40.anInt555 = i_20_
         class40.anInt537 = i_21_
-        Class286_Sub3.anIntArray6228 = `is`
+        WaterMaterialPass.anIntArray6228 = `is`
         class40.anInt552 = i_22_
         class40.aByteArray527 = is_23_
         class40.anInt548 = i_24_
@@ -204,7 +204,7 @@ object CompressedBlockDecoder {
         var is_48_: IntArray? = null
         var is_49_: IntArray? = null
         class40.anInt526 = 1
-        if (Class286_Sub3.anIntArray6228 == null) Class286_Sub3.anIntArray6228 = IntArray(class40.anInt526 * 100000)
+        if (WaterMaterialPass.anIntArray6228 == null) WaterMaterialPass.anIntArray6228 = IntArray(class40.anInt526 * 100000)
         var bool_50_ = true
         while (bool_50_) {
             var i_51_ = method1548(class40)
@@ -351,7 +351,7 @@ object CompressedBlockDecoder {
                     i_52_ = (class40.aByteArray528!![(class40.aByteArray545!![class40.anIntArray540!![0]]).toInt() and 0xff]).toInt()
                     class40.anIntArray535!![i_52_ and 0xff] += i_87_
                     while ( /**/i_87_ > 0) {
-                        Class286_Sub3.anIntArray6228!![i_81_] = i_52_ and 0xff
+                        WaterMaterialPass.anIntArray6228!![i_81_] = i_52_ and 0xff
                         i_81_++
                         i_87_--
                     }
@@ -402,7 +402,7 @@ object CompressedBlockDecoder {
                         }
                     }
                     class40.anIntArray535!![(class40.aByteArray528!![i_51_.toInt() and 0xff].toInt() and 0xff)] = class40.anIntArray535!![(class40.aByteArray528!![i_51_.toInt() and 0xff].toInt() and 0xff)] + 1
-                    Class286_Sub3.anIntArray6228!![i_81_] = (class40.aByteArray528!![i_51_.toInt() and 0xff].toInt() and 0xff)
+                    WaterMaterialPass.anIntArray6228!![i_81_] = (class40.aByteArray528!![i_51_.toInt() and 0xff].toInt() and 0xff)
                     i_81_++
                     if (i_76_ == 0) {
                         i_75_++
@@ -430,13 +430,13 @@ object CompressedBlockDecoder {
             for (i_100_ in 1..256) class40.anIntArray557!![i_100_] = class40.anIntArray535!![i_100_ - 1]
             for (i_101_ in 1..256) class40.anIntArray557!![i_101_] += class40.anIntArray557!![i_101_ - 1]
             for (i_102_ in 0..<i_81_) {
-                i_52_ = (Class286_Sub3.anIntArray6228!![i_102_] and 0xff).toByte().toInt()
-                Class286_Sub3.anIntArray6228!![(class40.anIntArray557!![i_52_ and 0xff])] = Class286_Sub3.anIntArray6228!![(class40.anIntArray557!![i_52_ and 0xff])] or (i_102_ shl 8)
+                i_52_ = (WaterMaterialPass.anIntArray6228!![i_102_] and 0xff).toByte().toInt()
+                WaterMaterialPass.anIntArray6228!![(class40.anIntArray557!![i_52_ and 0xff])] = WaterMaterialPass.anIntArray6228!![(class40.anIntArray557!![i_52_ and 0xff])] or (i_102_ shl 8)
                 class40.anIntArray557!![i_52_ and 0xff] = class40.anIntArray557!![i_52_ and 0xff] + 1
             }
-            class40.anInt552 = (Class286_Sub3.anIntArray6228!![class40.anInt530] shr 8)
+            class40.anInt552 = (WaterMaterialPass.anIntArray6228!![class40.anInt530] shr 8)
             class40.anInt555 = 0
-            class40.anInt552 = Class286_Sub3.anIntArray6228!![class40.anInt552]
+            class40.anInt552 = WaterMaterialPass.anIntArray6228!![class40.anInt552]
             class40.anInt537 = (class40.anInt552 and 0xff).toByte().toInt()
             class40.anInt552 = class40.anInt552 shr 8
             class40.anInt555++

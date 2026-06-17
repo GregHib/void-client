@@ -1,4 +1,4 @@
-import Class286_Sub5.Companion.method2161
+import TexGenMaterialPass.Companion.method2161
 import java.awt.Frame
 
 class Class56 private constructor(i: Int, localizedText: LocalizedText?, localizedText_5_: LocalizedText?, i_6_: Int, i_7_: Int, bool: Boolean, bool_8_: Boolean) {
@@ -131,7 +131,7 @@ class Class56 private constructor(i: Int, localizedText: LocalizedText?, localiz
                 anInt1020++
                 while (true) {
                     val class144 = class297!!.method2248(89.toByte(), frame)
-                    while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-124).toByte(), 10L)
+                    while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-124).toByte(), 10L)
                     if (class144.anInt1997 == 1) break
                     method2161(33.toByte(), 100L)
                 }

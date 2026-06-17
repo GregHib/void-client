@@ -1,5 +1,5 @@
 import ParticleDetailOptionState.Companion.method1793
-import Class286_Sub3.Companion.method2152
+import WaterMaterialPass.Companion.method2152
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
 

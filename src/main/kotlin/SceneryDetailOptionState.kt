@@ -226,7 +226,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                 val i_38_ = ((npc.x) - ((npc.aClass79_10505!!.anInt1399) + -1 shl 8))
                                                 val i_39_ = (-((-1 + (npc.aClass79_10505!!.anInt1399)) shl 8) + (npc.y))
                                                 if (i_35_ <= i_38_ && ((-(i_38_ + -i_35_ shr 9) + (player.method2436(68.toByte()))) >= (npc.aClass79_10505!!.anInt1399)) && i_36_ <= i_39_ && ((-(-i_36_ + i_39_ shr 9) + (player.method2436(97.toByte()))) >= (npc.aClass79_10505!!.anInt1399))) {
-                                                    Class286_Sub3.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
+                                                    WaterMaterialPass.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
                                                     npc.anInt10215 = Class367_Sub11.anInt7396
                                                 }
                                             }
@@ -234,7 +234,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         i_37_++
                                     }
                                     val i_40_ = Class328_Sub1.anInt6513
-                                    val `is` = Class286_Sub7.anIntArray6290!!
+                                    val `is` = ScrollTexMaterialPass.anIntArray6290!!
                                     var i_41_ = 0
                                     while ((i_40_ > i_41_)) {
                                         val player_42_ = (Class294.aPlayerArray5058!![`is`[i_41_]])
@@ -270,14 +270,14 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                     val i_49_ = (-((npc_48_.aClass79_10505!!.anInt1399) - 1 shl 8) + (npc_48_.x))
                                                     val i_50_ = ((npc_48_.y) + -((npc_48_.aClass79_10505!!.anInt1399) - 1 shl 8))
                                                     if (i_49_ >= i_45_ && ((npc_48_.aClass79_10505!!.anInt1399) <= ((npc.aClass79_10505!!.anInt1399) - (-i_45_ + i_49_ shr 9))) && (i_46_ <= i_50_) && ((npc_48_.aClass79_10505!!.anInt1399) <= ((npc.aClass79_10505!!.anInt1399) + -(i_50_ + -i_46_ shr 9)))) {
-                                                        Class286_Sub3.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc_48_)
+                                                        WaterMaterialPass.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc_48_)
                                                         npc_48_.anInt10215 = (Class367_Sub11.anInt7396)
                                                     }
                                                 }
                                             }
                                         }
                                         val i_51_ = Class328_Sub1.anInt6513
-                                        val `is` = Class286_Sub7.anIntArray6290!!
+                                        val `is` = ScrollTexMaterialPass.anIntArray6290!!
                                         var i_52_ = 0
                                         while ((i_51_ > i_52_)) {
                                             val player = (Class294.aPlayerArray5058!![`is`[i_52_]])
@@ -296,7 +296,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         class318_sub4 = class243.method1878((-123).toByte()) as Class318_Sub4?
                                         continue
                                     }
-                                    Class286_Sub3.method2150((class318_sub4.aClass318_Sub1_6410!!.plane != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
+                                    WaterMaterialPass.method2150((class318_sub4.aClass318_Sub1_6410!!.plane != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
                                     npc.anInt10215 = Class367_Sub11.anInt7396
                                 }
                             }
@@ -335,7 +335,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             }
                                         }
                                         Class348_Sub33.anInt6956++
-                                        Class50_Sub3.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973.toLong(), Class286_Sub8.anInt6299)
+                                        Class50_Sub3.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973.toLong(), CubeMapMaterialPass.anInt6299)
                                         class348_sub34 = (class348_sub37.aNodeDeque_6998.method2003(-127) as Class348_Sub34?)
                                         i_57_++
                                     }
@@ -387,7 +387,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             interface10.hashCode().toLong(),
                                             (LocalizedText.aLocalizedText_3505!!.method2063(Class348_Sub33.anInt6967, 544)),
                                             class51.anInt941.toLong(),
-                                            Class286_Sub8.anInt6299
+                                            CubeMapMaterialPass.anInt6299
                                         )
                                         anInt6094++
                                     }

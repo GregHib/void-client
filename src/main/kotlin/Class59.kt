@@ -164,7 +164,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
         @JvmStatic
         fun method544(string: String?, bool: Boolean, i: Int) {
             anInt1075++
-            Class286_Sub2.method2144("", i, (-96).toByte(), 0, string, "", "")
+            FixedFunctionMaterialPass.method2144("", i, (-96).toByte(), 0, string, "", "")
             if (bool != false) method547(null, -103)
         }
 

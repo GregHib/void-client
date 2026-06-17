@@ -1,4 +1,4 @@
-import Class286_Sub5.Companion.method2161
+import TexGenMaterialPass.Companion.method2161
 
 /* Class112 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

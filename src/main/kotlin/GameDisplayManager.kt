@@ -1,7 +1,7 @@
 import GlCubeMapTexture.Companion.method243
 import GraphicsOptionState.Companion.method1713
-import Class286_Sub2.Companion.method2145
-import Class286_Sub5.Companion.method2158
+import FixedFunctionMaterialPass.Companion.method2145
+import TexGenMaterialPass.Companion.method2158
 import Class56.Companion.method527
 import TerrainTile.Companion.method3980
 import java.awt.Container
@@ -105,7 +105,7 @@ object GameDisplayManager {
                         TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                         if (ModelDefinition.aClass45_1848 != null) Class348_Sub43.anInt7068 = 2
                         else Class348_Sub43.anInt7068 = 0
-                        Class286.aClass348_Sub2_3683 = null
+                        MaterialPass.aClass348_Sub2_3683 = null
                     }
                     if (Class348_Sub43.anInt7068 != 3) break
                     var i_7_ = Class98.aClass348_Sub16_Sub3_1564!!.method2844((-87).toByte())
@@ -121,7 +121,7 @@ object GameDisplayManager {
                     exception.printStackTrace()
                     Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                     ModelDefinition.aClass45_1848 = null
-                    Class286.aClass348_Sub2_3683 = null
+                    MaterialPass.aClass348_Sub2_3683 = null
                     GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                     TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                     Class348_Sub43.anInt7068 = 0

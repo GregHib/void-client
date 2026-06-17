@@ -6,7 +6,7 @@ import CameraDistanceOptionState.Companion.method1725
 import SceneryDetailOptionState.Companion.method1821
 import SimpleToggleOptionState.Companion.method1742
 import SocketFactory.Companion.method2049
-import Class286_Sub3.Companion.method2148
+import WaterMaterialPass.Companion.method2148
 import Class299_Sub2_Sub1.Companion.method2271
 import Class318_Sub1_Sub2.Companion.method2405
 import Class318_Sub1_Sub4.Companion.method2478
@@ -402,8 +402,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {
                             method94(
-                                ("Pos: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((Class286_Sub4.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((CollisionMapAccessor.method2064(
-                                    Class286_Sub4.anInt6246,
+                                ("Pos: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((CollisionMapAccessor.method2064(
+                                    GlslMaterialPass.anInt6246,
                                     (LocalPlayerState.aPlayer_1907!!.plane).toInt(),
                                     11219,
                                     Class59_Sub2_Sub2.anInt8685
@@ -491,7 +491,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         if (string == "scramblevarcs") {
                             var i_14_ = 0
                             while ((i_14_ < Class77.Companion.anIntArray1303!!.size)) {
-                                if (Class286_Sub6.aBooleanArray6270!![i_14_]) {
+                                if (GlslEnvMaterialPass.aBooleanArray6270!![i_14_]) {
                                     Class77.Companion.anIntArray1303!![i_14_] = (Math.random() * 99999.0).toInt()
                                     if (Math.random() > 0.5) Class77.Companion.anIntArray1303!![i_14_] *= -1
                                 }

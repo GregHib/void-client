@@ -381,7 +381,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             SceneryDetailOptionState.anInt6095 = 0
             if (i_22_ <= 64) anIntArray279 = null
             Class344.anInt4267 = i_23_
-            Class286.anInt3682 = 0
+            MaterialPass.anInt3682 = 0
             Class58.anInt1067 = i_24_
             WidgetDefinition.Companion.anInterface4_252 = null
             Class348_Sub49.anInt7207 = 1

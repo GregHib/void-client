@@ -1,5 +1,5 @@
 import GlVertexBufferArb.Companion.method2131
-import Class286_Sub5.Companion.method2161
+import TexGenMaterialPass.Companion.method2161
 import Class289.method2194
 import OutputStream_Sub2.Companion.method138
 
@@ -50,7 +50,7 @@ class Class304 internal constructor(var anInt3850: Int) {
                 }
                 if (bool) break
                 try {
-                    Class286_Sub5.method2161((-18).toByte(), 1L)
+                    TexGenMaterialPass.method2161((-18).toByte(), 1L)
                 } catch (exception: Exception) {
                     /* empty */
                 }

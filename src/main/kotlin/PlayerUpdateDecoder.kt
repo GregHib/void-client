@@ -97,8 +97,8 @@ object PlayerUpdateDecoder {
                         player!!.aString10292 = class348_sub49_sub2!!.readString(110.toByte())
                         if (player.aString10292!!.get(0) == '~') {
                             player.aString10292 = player.aString10292!!.substring(1)
-                            Class286_Sub2.method2144(player.method2450(false, -70), 2, (-116).toByte(), 0, player.aString10292, player.method2456(true, 255), player.aString10537)
-                        } else if (LocalPlayerState.aPlayer_1907 == player) Class286_Sub2.method2144(player.method2450(false, -88), 2, (-102).toByte(), 0, (player.aString10292), player.method2456(true, 255), (player.aString10537))
+                            FixedFunctionMaterialPass.method2144(player.method2450(false, -70), 2, (-116).toByte(), 0, player.aString10292, player.method2456(true, 255), player.aString10537)
+                        } else if (LocalPlayerState.aPlayer_1907 == player) FixedFunctionMaterialPass.method2144(player.method2450(false, -88), 2, (-102).toByte(), 0, (player.aString10292), player.method2456(true, 255), (player.aString10537))
                         player.anInt10264 = 150
                         player.anInt10234 = 0
                         player.anInt10201 = 0

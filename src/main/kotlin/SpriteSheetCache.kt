@@ -95,7 +95,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         }
 
         fun method1429(string: String?, i: Int) {
-            Class286_Sub2.method2144("", i, (-125).toByte(), 0, string, "", "")
+            FixedFunctionMaterialPass.method2144("", i, (-125).toByte(), 0, string, "", "")
             anInt2560++
         }
 

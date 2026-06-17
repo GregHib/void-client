@@ -201,14 +201,14 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         Class328_Sub1_Sub1.anInt8799 = (i_17_ + -Class348_Sub3.anInt6568 - i_34_)
                                         OutputStream_Sub1.anInt95 = i_21_
                                         ConfigValueProvider.anInt4910 = -Class328.anInt4100 + (i_16_ - i_33_)
-                                        Class286_Sub5.anInt6255 = i_20_
-                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95))
+                                        TexGenMaterialPass.anInt6255 = i_20_
+                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (Class328_Sub1_Sub1.anInt8799), TexGenMaterialPass.anInt6255, (OutputStream_Sub1.anInt95))
                                     } else {
-                                        Class286_Sub5.anInt6255 = i_20_
+                                        TexGenMaterialPass.anInt6255 = i_20_
                                         Class328_Sub1_Sub1.anInt8799 = (-Class348_Sub3.anInt6568 + i_17_ - (-(Class348_Sub42_Sub9_Sub1.anInt10444) - -i_34_))
                                         ConfigValueProvider.anInt4910 = (-Class328.anInt4100 + i_16_ + (SoundEnvelope.anInt2747 + -i_33_))
                                         OutputStream_Sub1.anInt95 = i_21_
-                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95))
+                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (Class328_Sub1_Sub1.anInt8799), TexGenMaterialPass.anInt6255, (OutputStream_Sub1.anInt95))
                                     }
                                     method1274(Class348_Sub42_Sub8_Sub2.aClass76_10436)
                                     if (i_51_ > 0) {
@@ -233,9 +233,9 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     Class339.anInt4211 = (-Class328.anInt4100 + SoundEnvelope.anInt2747 + i_25_)
                                     if (Class348_Sub49.anInt7207 == 1) {
                                         SceneryDetailOptionState.anInt6095 += i_35_
-                                        Class286.anInt3682 += i_36_
+                                        MaterialPass.anInt3682 += i_36_
                                         for (i_65_ in 0..<BackgroundWorkerThread.anInt3225) {
-                                            val i_66_ = ((Class350.method3452(i_65_ - -Class286.anInt3682, (-15).toByte(), BackgroundWorkerThread.anInt3225)) * Class31.anInt425)
+                                            val i_66_ = ((Class350.method3452(i_65_ - -MaterialPass.anInt3682, (-15).toByte(), BackgroundWorkerThread.anInt3225)) * Class31.anInt425)
                                             var i_67_ = 0
                                             while ((Class31.anInt425 > i_67_)) {
                                                 val i_68_ = ((Class350.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), Class31.anInt425)) + i_66_)
@@ -271,14 +271,14 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                 Class328_Sub1_Sub1.anInt8799 = i_17_
                                 ConfigValueProvider.anInt4910 = i_16_
                                 OutputStream_Sub1.anInt95 = i_21_
-                                Class286_Sub5.anInt6255 = i_20_
-                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
+                                TexGenMaterialPass.anInt6255 = i_20_
+                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)
                             } else {
                                 ConfigValueProvider.anInt4910 = i_16_ - -SoundEnvelope.anInt2747
                                 Class328_Sub1_Sub1.anInt8799 = Class348_Sub42_Sub9_Sub1.anInt10444 + i_17_
-                                Class286_Sub5.anInt6255 = i_20_
+                                TexGenMaterialPass.anInt6255 = i_20_
                                 OutputStream_Sub1.anInt95 = i_21_
-                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
+                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)
                             }
                             GlCubeMapTexture.aDouble8621 = 0.0
                             Class348_Sub42_Sub8_Sub2.aClass76_10436!!.method775(69.toByte())

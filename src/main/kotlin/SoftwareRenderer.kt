@@ -1294,7 +1294,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     override fun method3652() {
         if (aBoolean7471) {
-            Class286_Sub8.method2173(false, -101, true)
+            CubeMapMaterialPass.method2173(false, -101, true)
             aBoolean7471 = false
         }
         this.aClass348_Sub31_7469 = null

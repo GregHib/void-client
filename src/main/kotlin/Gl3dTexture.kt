@@ -44,7 +44,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
             var class348_sub51 = Class348_Sub51(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, 0)
             try {
                 val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233((-46).toByte(), "", true)
-                while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-85).toByte(), 1L)
+                while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-85).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
                     randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk?
                     val `is` = ByteArray(randomAccessFileOnDisk!!.method1662((-46).toByte()).toInt())
@@ -201,12 +201,12 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
         @JvmStatic
         fun method249(i: Int) {
             anInt8627++
-            Class286_Sub1.aStringArray6200 = arrayOfNulls<String>(500)
+            ArbFogMaterialPass.aStringArray6200 = arrayOfNulls<String>(500)
             Class348_Sub31_Sub2.anInt9077 = 2 + (Class369.aFontDefinition_4962!!.anInt1993 + Class369.aFontDefinition_4962!!.anInt1988)
             Class68.anInt1188 = (ParticleEmitterFactory.aFontDefinition_3179!!.anInt1988 - (-ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993 - i))
             var i_4_ = 0
-            while ((i_4_ < Class286_Sub1.aStringArray6200!!.size)) {
-                Class286_Sub1.aStringArray6200!![i_4_] = ""
+            while ((i_4_ < ArbFogMaterialPass.aStringArray6200!!.size)) {
+                ArbFogMaterialPass.aStringArray6200!![i_4_] = ""
                 i_4_++
             }
             method94(LocalizedText.aLocalizedText_3483!!.method2063(Class348_Sub33.anInt6967, 544)!!, 67)

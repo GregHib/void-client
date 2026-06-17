@@ -1399,7 +1399,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anOpenGL7664 = null
         }
         if (aBoolean7734) {
-            Class286_Sub8.method2173(true, 12, false)
+            CubeMapMaterialPass.method2173(true, 12, false)
             aBoolean7734 = false
         }
     }
@@ -1909,7 +1909,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         var i_218_ = 0
         while (!anOpenGL7664!!.b()) {
             if (i_218_++ > 5) throw RuntimeException("")
-            Class286_Sub5.method2161((-3).toByte(), 1000L)
+            TexGenMaterialPass.method2161((-3).toByte(), 1000L)
         }
     }
 
@@ -3547,7 +3547,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7572++
             val i_321_ = Class328_Sub1.anInt6513
             Class88.anInt1497 = 0
-            val `is` = Class286_Sub7.anIntArray6290!!
+            val `is` = ScrollTexMaterialPass.anIntArray6290!!
             var i_322_ = 0
             while ((i_322_ < ModelDefinitionLoader.anInt2057 + i_321_)) {
                 var class79: Class79? = null

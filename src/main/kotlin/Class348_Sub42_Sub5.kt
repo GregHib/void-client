@@ -15,7 +15,7 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
     fun method3183(var_renderConfig: RenderConfig?, i: Int, i_0_: Int, bool: Boolean, d: Double, class45: Class45?, i_1_: Byte): IntArray {
         try {
             anInt9522++
-            Class286_Sub5.aRenderConfig6247 = var_renderConfig
+            TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
             aClass45_4286 = class45
             var i_2_ = 0
             while (aClass348_Sub40Array9520.size > i_2_) {
@@ -113,7 +113,7 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
 
     fun method3185(i: Int, var_renderConfig: RenderConfig?, i_21_: Int, bool: Boolean, d: Double, bool_22_: Boolean, class45: Class45?, i_23_: Int): IntArray {
         try {
-            Class286_Sub5.aRenderConfig6247 = var_renderConfig
+            TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
             aClass45_4286 = class45
             anInt9526++
             var i_24_ = 0
@@ -191,7 +191,7 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
         try {
             anInt9525++
             aClass45_4286 = class45
-            Class286_Sub5.aRenderConfig6247 = var_renderConfig
+            TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
             if (i_42_ >= -1) method3183(null, -60, 98, false, -0.11623531533038078, null, (-72).toByte())
             var i_43_ = 0
             while (aClass348_Sub40Array9520.size > i_43_) {

@@ -37,7 +37,7 @@ class GlCubeMapTexture internal constructor(class377: Class377?, i: Int, bool: B
             var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
             try {
                 val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233((-46).toByte(), "", true)
-                while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-122).toByte(), 1L)
+                while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-122).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
                     randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk?
                     val class348_sub49 = Class316.aClass348_Sub51_3959!!.method3427(24)

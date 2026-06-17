@@ -1,6 +1,6 @@
 import BrightnessOptionState.Companion.method1745
 import GlVertexBufferArb.Companion.method2127
-import Class286_Sub3.Companion.method2148
+import WaterMaterialPass.Companion.method2148
 import Class59.Companion.method544
 import kotlin.math.max
 import kotlin.math.min
@@ -248,8 +248,8 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
                                         method544((string + (LocalizedText.aLocalizedText_3521!!.method2063((Class348_Sub33.anInt6967), 544))), false, 4)
                                         return
                                     }
-                                    if (Class286_Sub2.aStringArray6205!![i_2_] != null) {
-                                        val string_4_ = (method2127(2, (Class286_Sub2.aStringArray6205!![i_2_])))
+                                    if (FixedFunctionMaterialPass.aStringArray6205!![i_2_] != null) {
+                                        val string_4_ = (method2127(2, (FixedFunctionMaterialPass.aStringArray6205!![i_2_])))
                                         if (string_4_ != null && string_4_ == string_1_) {
                                             method544((string + (LocalizedText.aLocalizedText_3521!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                             return

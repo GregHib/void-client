@@ -164,7 +164,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                         var_renderer.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 2)
                         var i_41_ = ViewportTransform.anInt3676
                         while (((i_41_ < i_37_ + ViewportTransform.anInt3676) && Class369_Sub2.anInt8587 > i_41_)) {
-                            val strings = (Class348_Sub40_Sub23.method3113('\u0008', true, Class286_Sub1.aStringArray6200!![i_41_]!!))
+                            val strings = (Class348_Sub40_Sub23.method3113('\u0008', true, ArbFogMaterialPass.aStringArray6200!![i_41_]!!))
                             val i_42_ = (-16 + Class321.anInt4017 + -8) / strings.size
                             for (i_43_ in strings.indices) {
                                 val i_44_ = i_42_ * i_43_ + 8

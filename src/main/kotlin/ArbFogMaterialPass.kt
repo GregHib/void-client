@@ -4,7 +4,7 @@ import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 
-class Class286_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286(var_ha_Sub2) {
+class ArbFogMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : MaterialPass(var_ha_Sub2) {
     private var aBoolean6183 = false
     private var aRefCountedHandle_6187: RefCountedHandle? = null
     private var aRefCountedHandle_6188: RefCountedHandle? = null

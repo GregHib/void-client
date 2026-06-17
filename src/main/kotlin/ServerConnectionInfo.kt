@@ -74,8 +74,8 @@ class ServerConnectionInfo {
             if (WaterDetailOptionState.aModelLightingConfig_5990 == null || !WaterDetailOptionState.aModelLightingConfig_5990!!.method1424(modelLightingConfig!!, 84.toByte())) {
                 WaterDetailOptionState.aModelLightingConfig_5990 = modelLightingConfig
                 Class348_Sub33.aLong6963 = method599(-78)
-                Class286_Sub5.anInt6248 = i
-                FrameBufferObject.anInt4889 = Class286_Sub5.anInt6248
+                TexGenMaterialPass.anInt6248 = i
+                FrameBufferObject.anInt4889 = TexGenMaterialPass.anInt6248
                 if (FrameBufferObject.anInt4889 == 0) method3134(-1)
                 else {
                     Class318_Sub1_Sub1.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137

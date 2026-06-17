@@ -637,7 +637,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                     }
                     Class350.anInt4319 = 2
                 }
-                if (Class348_Sub40_Sub26.aBoolean9352) Class286_Sub6.aLong6276 = (Class50_Sub4.aClass47_5262!!.method446(1) + -ItemDefinition.aLong2789)
+                if (Class348_Sub40_Sub26.aBoolean9352) GlslEnvMaterialPass.aLong6276 = (Class50_Sub4.aClass47_5262!!.method446(1) + -ItemDefinition.aLong2789)
             }
         }
 

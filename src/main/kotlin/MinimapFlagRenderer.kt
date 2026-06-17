@@ -1,4 +1,4 @@
-import Class286_Sub7.Companion.method2169
+import ScrollTexMaterialPass.Companion.method2169
 import Class85.Companion.method828
 
 /* Class121 - Decompiled by JODE

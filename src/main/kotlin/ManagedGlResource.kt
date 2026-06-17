@@ -1,4 +1,4 @@
-import Class286_Sub3.Companion.method2148
+import WaterMaterialPass.Companion.method2148
 import Class69.Companion.method721
 
 /* Class242 - Decompiled by JODE

@@ -8,7 +8,7 @@ import ProjectileFactory.Companion.method1614
 import HudTabPanel.Companion.method1639
 import RemoveRoofsOptionState.Companion.method1810
 import GlTexture2D.Companion.method1966
-import Class286_Sub7.Companion.method2168
+import ScrollTexMaterialPass.Companion.method2168
 import Class314.Companion.method2336
 import Class348_Sub16_Sub3.Companion.method2878
 import Class348_Sub16_Sub3.Companion.method2879

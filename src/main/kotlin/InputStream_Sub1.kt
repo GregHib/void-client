@@ -3,7 +3,7 @@ import java.io.InputStream
 class InputStream_Sub1 : InputStream() {
     override fun read(): Int {
         anInt74++
-        Class286_Sub5.method2161(31.toByte(), 30000L)
+        TexGenMaterialPass.method2161(31.toByte(), 30000L)
         return -1
     }
 
@@ -49,26 +49,26 @@ class InputStream_Sub1 : InputStream() {
             val i_5_ = -1 + NativeSprite.aTerrainTileArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_0_)
             val i_6_ = i_5_ + class318_sub1_sub4!!.method2394(true)
             if (class318_sub1_sub4.aShort8759.toInt() == 1) {
-                if (!Class286_Sub7.method2169(i_3_, i_3_, i_4_, i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_6_, i_6_, i_5_, i_4_, false)) return false
-                if (!Class286_Sub7.method2169(i_3_, i_3_, i_4_, i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_5_, i_6_, i_5_, i_4_ + ArchiveFileConditionWrapper.anInt3465, false)) return false
+                if (!ScrollTexMaterialPass.method2169(i_3_, i_3_, i_4_, i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_6_, i_6_, i_5_, i_4_, false)) return false
+                if (!ScrollTexMaterialPass.method2169(i_3_, i_3_, i_4_, i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_5_, i_6_, i_5_, i_4_ + ArchiveFileConditionWrapper.anInt3465, false)) return false
                 Class42.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 2) {
-                if (!Class286_Sub7.method2169(i_3_, i_3_ - -ArchiveFileConditionWrapper.anInt3465, i_4_ - -ArchiveFileConditionWrapper.anInt3465, i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_6_, i_6_, i_5_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, false)) return false
-                if (!Class286_Sub7.method2169(i_3_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_ + ArchiveFileConditionWrapper.anInt3465, ArchiveFileConditionWrapper.anInt3465 + i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_6_, i_5_, i_5_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, false)) return false
+                if (!ScrollTexMaterialPass.method2169(i_3_, i_3_ - -ArchiveFileConditionWrapper.anInt3465, i_4_ - -ArchiveFileConditionWrapper.anInt3465, i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_6_, i_6_, i_5_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, false)) return false
+                if (!ScrollTexMaterialPass.method2169(i_3_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_ + ArchiveFileConditionWrapper.anInt3465, ArchiveFileConditionWrapper.anInt3465 + i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_6_, i_5_, i_5_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, false)) return false
                 Class42.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 4) {
-                if (!Class286_Sub7.method2169(i_3_ + ArchiveFileConditionWrapper.anInt3465, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, i_6_, i_6_, i_5_, i_4_, false)) return false
-                if (!Class286_Sub7.method2169(i_3_ + ArchiveFileConditionWrapper.anInt3465, i_3_ - -ArchiveFileConditionWrapper.anInt3465, i_4_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, i_5_, i_6_, i_5_, ArchiveFileConditionWrapper.anInt3465 + i_4_, false)) return false
+                if (!ScrollTexMaterialPass.method2169(i_3_ + ArchiveFileConditionWrapper.anInt3465, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, i_6_, i_6_, i_5_, i_4_, false)) return false
+                if (!ScrollTexMaterialPass.method2169(i_3_ + ArchiveFileConditionWrapper.anInt3465, i_3_ - -ArchiveFileConditionWrapper.anInt3465, i_4_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, i_5_, i_6_, i_5_, ArchiveFileConditionWrapper.anInt3465 + i_4_, false)) return false
                 Class42.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 8) {
-                if (!Class286_Sub7.method2169(i_3_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_, i_3_, i_4_, i_6_, i_6_, i_5_, i_4_, false)) return false
-                if (!Class286_Sub7.method2169(i_3_, i_3_ + ArchiveFileConditionWrapper.anInt3465, i_4_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_, i_6_, i_5_, i_5_, i_4_, false)) return false
+                if (!ScrollTexMaterialPass.method2169(i_3_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_, i_3_, i_4_, i_6_, i_6_, i_5_, i_4_, false)) return false
+                if (!ScrollTexMaterialPass.method2169(i_3_, i_3_ + ArchiveFileConditionWrapper.anInt3465, i_4_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_, i_6_, i_5_, i_5_, i_4_, false)) return false
                 Class42.anInt562++
                 return true
             }

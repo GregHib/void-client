@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub4_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, bool_6_: Boolean) : Class318_Sub1_Sub4(i_1_, i_2_, i_3_, i, i_0_, Class286_Sub9.method2175(i_5_, (-34).toByte(), i_4_)), Interface10 {
+class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, bool_6_: Boolean) : Class318_Sub1_Sub4(i_1_, i_2_, i_3_, i, i_0_, SphereMapMaterialPass.method2175(i_5_, (-34).toByte(), i_4_)), Interface10 {
     private var aByte10062: Byte = 0
     private val aBoolean10064: Boolean
     private var aBoolean10066 = false

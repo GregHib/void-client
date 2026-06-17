@@ -60,7 +60,7 @@ class WorldListEntry {
             if (!class297.method2247(-4)) return arrayOfNulls<Class57>(0)
             val i_6_ = 52 / ((39 - i) / 61)
             val class144 = class297.method2240(972476528)
-            while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-97).toByte(), 10L)
+            while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-97).toByte(), 10L)
             if (class144.anInt1997 == 2) return arrayOfNulls<Class57>(0)
             val `is` = class144.anObject1998 as IntArray
             val class57s = arrayOfNulls<Class57>(`is`.size shr 2)

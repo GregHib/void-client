@@ -262,7 +262,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
             aNodeDeque_5123.method1996(117)
             FA()
             if (aBoolean5142) {
-                Class286_Sub8.method2173(true, -110, false)
+                CubeMapMaterialPass.method2173(true, -110, false)
                 aBoolean5142 = false
             }
             g()

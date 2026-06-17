@@ -90,7 +90,7 @@ class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, class341
             var abstractModelRenderer = Class345.aClass60_4273!!.method583(i.toLong(), -68) as AbstractModelRenderer?
             val i_11_ = -86 / ((55 - i_10_) / 51)
             if (abstractModelRenderer == null) {
-                if (Class286_Sub7.aBoolean6289) abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(SpriteImage.method1512(class45, i), true)
+                if (ScrollTexMaterialPass.aBoolean6289) abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(SpriteImage.method1512(class45, i), true)
                 else abstractModelRenderer = GlTexture2D.method1969(class45.method415(73.toByte(), i)!!, -5901)
                 Class345.aClass60_4273!!.method582(abstractModelRenderer, i.toLong(), (-108).toByte())
             }
@@ -106,7 +106,7 @@ class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, class341
                         var i_12_ = 0
                         if (i.toInt() != -42) method3578(95.toByte(), null, null)
                         while ( /**/i_12_ < 50 && class297.anEventQueue3799!!.peekEvent() != null) {
-                            Class286_Sub5.method2161(30.toByte(), 1L)
+                            TexGenMaterialPass.method2161(30.toByte(), 1L)
                             i_12_++
                         }
                         try {

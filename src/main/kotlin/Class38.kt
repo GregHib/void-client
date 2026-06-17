@@ -149,11 +149,11 @@ class Class38 {
                     val c = interface6.method28(46.toByte())
                     val i_8_ = interface6.method26(-7616)
                     if (i_7_ == 98) {
-                        for (index in HISTORY_INDEX..<Class286_Sub1.aStringArray6200!!.size) {
+                        for (index in HISTORY_INDEX..<ArbFogMaterialPass.aStringArray6200!!.size) {
                             if (index == -1) {
                                 continue
                             }
-                            val line = Class286_Sub1.aStringArray6200!![index]
+                            val line = ArbFogMaterialPass.aStringArray6200!![index]
                             if (line!!.isEmpty()) {
                                 continue
                             }
@@ -170,7 +170,7 @@ class Class38 {
                     } else if (i_7_ == 99) {
                         var found = false
                         for (index in HISTORY_INDEX - 1 downTo 0) {
-                            val line = Class286_Sub1.aStringArray6200!![index]
+                            val line = ArbFogMaterialPass.aStringArray6200!![index]
                             if (line!!.isEmpty()) {
                                 continue
                             }
@@ -194,8 +194,8 @@ class Class38 {
                         if (i_7_ == 66 && (0x4 and i_8_) != 0) {
                             if (Class348_Sub40_Sub27.aClipboard9357 != null) {
                                 var string = ""
-                                for (i_9_ in -1 + (Class286_Sub1.aStringArray6200)!!.size downTo 0) {
-                                    if ((Class286_Sub1.aStringArray6200!![i_9_] != null) && Class286_Sub1.aStringArray6200!![i_9_]!!.length > 0) string += (Class286_Sub1.aStringArray6200!![i_9_]) + '\n'
+                                for (i_9_ in -1 + (ArbFogMaterialPass.aStringArray6200)!!.size downTo 0) {
+                                    if ((ArbFogMaterialPass.aStringArray6200!![i_9_] != null) && ArbFogMaterialPass.aStringArray6200!![i_9_]!!.length > 0) string += (ArbFogMaterialPass.aStringArray6200!![i_9_]) + '\n'
                                 }
                                 Class348_Sub40_Sub27.aClipboard9357!!.setContents(StringSelection(string), null)
                             }
@@ -221,7 +221,7 @@ class Class38 {
                                         }
                                     } else if (i_7_ == 102) Class348_Sub38.anInt7006 = 0
                                     else if (i_7_ == 103) Class348_Sub38.anInt7006 = Class363.aString4461!!.length
-                                    else if (i_7_ != 104 || (WalkingTypeUtil.anInt3312 >= (Class286_Sub1.aStringArray6200)!!.size)) {
+                                    else if (i_7_ != 104 || (WalkingTypeUtil.anInt3312 >= (ArbFogMaterialPass.aStringArray6200)!!.size)) {
                                         if (i_7_ == 105 && WalkingTypeUtil.anInt3312 > 0) {
                                             WalkingTypeUtil.anInt3312--
                                             method159(-615751774)

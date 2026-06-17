@@ -71,16 +71,16 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
         @JvmStatic
         fun method3261(l: Long, i: Int): String {
             try {
-                Class286_Sub3.aCalendar6221!!.setTime(Date(l))
+                WaterMaterialPass.aCalendar6221!!.setTime(Date(l))
                 anInt10455++
-                val i_1_ = Class286_Sub3.aCalendar6221!!.get(7)
-                val i_2_ = Class286_Sub3.aCalendar6221!!.get(5)
+                val i_1_ = WaterMaterialPass.aCalendar6221!!.get(7)
+                val i_2_ = WaterMaterialPass.aCalendar6221!!.get(5)
                 if (i <= 53) aBoolean10450 = false
-                val i_3_ = Class286_Sub3.aCalendar6221!!.get(2)
-                val i_4_ = Class286_Sub3.aCalendar6221!!.get(1)
-                val i_5_ = Class286_Sub3.aCalendar6221!!.get(11)
-                val i_6_ = Class286_Sub3.aCalendar6221!!.get(12)
-                val i_7_ = Class286_Sub3.aCalendar6221!!.get(13)
+                val i_3_ = WaterMaterialPass.aCalendar6221!!.get(2)
+                val i_4_ = WaterMaterialPass.aCalendar6221!!.get(1)
+                val i_5_ = WaterMaterialPass.aCalendar6221!!.get(11)
+                val i_6_ = WaterMaterialPass.aCalendar6221!!.get(12)
+                val i_7_ = WaterMaterialPass.aCalendar6221!!.get(13)
                 return (Class93.aStringArray1531!![i_1_ - 1] + ", " + i_2_ / 10 + i_2_ % 10 + "-" + Class331.aStringArray4129!![i_3_] + "-" + i_4_ + " " + i_5_ / 10 + i_5_ % 10 + ":" + i_6_ / 10 + i_6_ % 10 + ":" + i_7_ / 10 + i_7_ % 10 + " GMT")
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, "mba.I(" + l + ',' + i + ')')

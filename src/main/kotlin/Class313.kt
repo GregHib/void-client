@@ -1,4 +1,4 @@
-import Class286_Sub3.Companion.method2148
+import WaterMaterialPass.Companion.method2148
 
 /* Class313 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

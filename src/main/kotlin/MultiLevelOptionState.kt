@@ -98,7 +98,7 @@ class MultiLevelOptionState : GraphicsOptionState {
             Class348_Sub49_Sub1.anInt9751 = Class367_Sub11.anInt7396
             Class318_Sub1_Sub5_Sub2.anInt10163 = -1
             Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
-            Class318_Sub1_Sub3_Sub2.anInt10047 = Class286_Sub4.anInt6246
+            Class318_Sub1_Sub3_Sub2.anInt10047 = GlslMaterialPass.anInt6246
             val i_12_ = -99 % ((i - 11) / 56)
             BloomGraphicsOptionState.anInt5973 = 0
             CameraConfigDefinition.anInt3253 = Class5.anInt4638

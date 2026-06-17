@@ -228,16 +228,16 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             var i_18_ = (CollisionMapAccessor.method2064(i_16_, Class355.anInt4372, 11219, i_17_) + -Class348_Sub42_Sub4.anInt9515)
             if (GlTextureCubeMap.anInt8537 >= 100) {
                 Class59_Sub2_Sub2.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
-                Class286_Sub4.anInt6246 = Class348_Sub35.anInt6981 * 512 + 256
-                Class305.anInt3855 = (CollisionMapAccessor.method2064(Class286_Sub4.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
+                GlslMaterialPass.anInt6246 = Class348_Sub35.anInt6981 * 512 + 256
+                Class305.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
             } else {
-                if (Class286_Sub4.anInt6246 < i_16_) {
-                    Class286_Sub4.anInt6246 += (Class348_Sub40_Sub31.anInt9406 + (GlTextureCubeMap.anInt8537 * (i_16_ + -Class286_Sub4.anInt6246) / 1000))
-                    if (i_16_ < Class286_Sub4.anInt6246) Class286_Sub4.anInt6246 = i_16_
+                if (GlslMaterialPass.anInt6246 < i_16_) {
+                    GlslMaterialPass.anInt6246 += (Class348_Sub40_Sub31.anInt9406 + (GlTextureCubeMap.anInt8537 * (i_16_ + -GlslMaterialPass.anInt6246) / 1000))
+                    if (i_16_ < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = i_16_
                 }
-                if (Class286_Sub4.anInt6246 > i_16_) {
-                    Class286_Sub4.anInt6246 -= (Class348_Sub40_Sub31.anInt9406 - -(GlTextureCubeMap.anInt8537 * (-i_16_ + Class286_Sub4.anInt6246) / 1000))
-                    if (Class286_Sub4.anInt6246 < i_16_) Class286_Sub4.anInt6246 = i_16_
+                if (GlslMaterialPass.anInt6246 > i_16_) {
+                    GlslMaterialPass.anInt6246 -= (Class348_Sub40_Sub31.anInt9406 - -(GlTextureCubeMap.anInt8537 * (-i_16_ + GlslMaterialPass.anInt6246) / 1000))
+                    if (GlslMaterialPass.anInt6246 < i_16_) GlslMaterialPass.anInt6246 = i_16_
                 }
                 if (Class305.anInt3855 < i_18_) {
                     Class305.anInt3855 += ((-Class305.anInt3855 + i_18_) * GlTextureCubeMap.anInt8537 / 1000) + Class348_Sub40_Sub31.anInt9406
@@ -259,7 +259,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             i_17_ = 256 + ClanChatRequestSender.anInt3647 * 512
             i_16_ = 256 + 512 * Class352.anInt4336
             i_18_ = (CollisionMapAccessor.method2064(i_16_, Class355.anInt4372, 11219, i_17_) - MinimapFlagRenderer.anInt1797)
-            val i_19_ = -Class286_Sub4.anInt6246 + i_16_
+            val i_19_ = -GlslMaterialPass.anInt6246 + i_16_
             val i_20_ = -Class305.anInt3855 + i_18_
             val i_21_ = -Class59_Sub2_Sub2.anInt8685 + i_17_
             val i_22_ = sqrt((i_19_ * i_19_ - -(i_21_ * i_21_)).toDouble()).toInt()

@@ -22,11 +22,11 @@ import ModelDataCache.method298
 import ProjectileConfigUtil.method312
 import ProjectileConfigUtil.method317
 import SocketFactory.Companion.method2051
-import Class286_Sub3.Companion.method2148
-import Class286_Sub3.Companion.method2153
-import Class286_Sub6.Companion.method2162
-import Class286_Sub7.Companion.method2165
-import Class286_Sub8.Companion.method2172
+import WaterMaterialPass.Companion.method2148
+import WaterMaterialPass.Companion.method2153
+import GlslEnvMaterialPass.Companion.method2162
+import ScrollTexMaterialPass.Companion.method2165
+import CubeMapMaterialPass.Companion.method2172
 import Class31.Companion.method326
 import Class318_Sub1_Sub1.Companion.method2396
 import Class318_Sub1_Sub2.Companion.method2405
@@ -1092,7 +1092,7 @@ object Class66 {
             }
             if (i == 5427) {
                 anInt1173 -= 2
-                Class286_Sub8.anInt6299 = anIntArray1149!![anInt1173 + 1]
+                CubeMapMaterialPass.anInt6299 = anIntArray1149!![anInt1173 + 1]
                 return
             }
             if (i == 5428) {
@@ -3817,7 +3817,7 @@ object Class66 {
                     val i_315_ = anIntArray1149!![anInt1173]
                     val i_316_ = anIntArray1149!![anInt1173 + 1]
                     val string = aStringArray1152!![--anInt1170]
-                    Class286_Sub2.method2144("", i_315_, (-87).toByte(), i_316_, string, "", "")
+                    FixedFunctionMaterialPass.method2144("", i_315_, (-87).toByte(), i_316_, string, "", "")
                     return
                 }
                 if (i == 3115) {
@@ -4186,7 +4186,7 @@ object Class66 {
                     val i_359_ = anIntArray1149!![--anInt1173]
                     if (MinimapSpriteRenderer.anInt4930 == 2 && i_359_ < Class348_Sub40_Sub30.anInt9383) {
                         aStringArray1152!![anInt1170++] = Class83.aStringArray1441!![i_359_]
-                        if (Class286_Sub2.aStringArray6205!![i_359_] != null) aStringArray1152!![anInt1170++] = Class286_Sub2.aStringArray6205!![i_359_]!!
+                        if (FixedFunctionMaterialPass.aStringArray6205!![i_359_] != null) aStringArray1152!![anInt1170++] = FixedFunctionMaterialPass.aStringArray6205!![i_359_]!!
                         else aStringArray1152!![anInt1170++] = ""
                     } else {
                         aStringArray1152!![anInt1170++] = ""
@@ -5101,7 +5101,7 @@ object Class66 {
                         val i_502_ = is_489_[i_488_]
                         Class77.anIntArray1303!![i_502_] = anIntArray1149!![--anInt1173]
                         TerrainTileGeometry.method1647(-128, i_502_)
-                        ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or Class286_Sub6.aBooleanArray6270!![i_502_]
+                        ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or GlslEnvMaterialPass.aBooleanArray6270!![i_502_]
                     } else if (i_490_ == 44) {
                         val i_503_ = is_489_[i_488_] shr 16
                         val i_504_ = is_489_[i_488_] and 0xffff

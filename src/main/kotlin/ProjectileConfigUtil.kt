@@ -1,6 +1,6 @@
 import BrightnessOptionState.Companion.method1745
 import GlVertexBufferArb.Companion.method2127
-import Class286_Sub3.Companion.method2148
+import WaterMaterialPass.Companion.method2148
 import Class59.Companion.method544
 
 /* Class27 - Decompiled by JODE
@@ -137,8 +137,8 @@ object ProjectileConfigUtil {
                                 method544(((LocalizedText.aLocalizedText_3528!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3529!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                 return
                             }
-                            if (Class286_Sub2.aStringArray6205!![i_10_] != null) {
-                                val string_12_ = (method2127(2, (Class286_Sub2.aStringArray6205!![i_10_])))
+                            if (FixedFunctionMaterialPass.aStringArray6205!![i_10_] != null) {
+                                val string_12_ = (method2127(2, (FixedFunctionMaterialPass.aStringArray6205!![i_10_])))
                                 if (string_12_ != null && string_12_ == string_6_) {
                                     method544(((LocalizedText.aLocalizedText_3528!!.method2063(Class348_Sub33.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3529!!.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                     return

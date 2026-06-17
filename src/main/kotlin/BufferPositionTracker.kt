@@ -12,7 +12,7 @@ abstract class BufferPositionTracker {
         try {
             anInt3149++
             val l_1_ = method1858(-73)
-            if (i.toLong() < l_1_) Class286_Sub5.method2161(61.toByte(), l_1_)
+            if (i.toLong() < l_1_) TexGenMaterialPass.method2161(61.toByte(), l_1_)
             return method1859(71, l)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, "tb.H(" + i + ',' + l + ')')

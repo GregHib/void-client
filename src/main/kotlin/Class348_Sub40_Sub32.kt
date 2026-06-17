@@ -97,11 +97,11 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
         @JvmStatic
         fun method3134(i: Int) {
             anInt9419++
-            if ((Class286_Sub5.anInt6248.inv()) <= i) {
+            if ((TexGenMaterialPass.anInt6248.inv()) <= i) {
                 val l = Class62.method599(i xor 0x3c)
-                Class286_Sub5.anInt6248 -= (-Class348_Sub33.aLong6963 + l).toInt()
-                if (Class286_Sub5.anInt6248 > 0) {
-                    val i_4_ = ((Class286_Sub5.anInt6248 shl 8) / FrameBufferObject.anInt4889)
+                TexGenMaterialPass.anInt6248 -= (-Class348_Sub33.aLong6963 + l).toInt()
+                if (TexGenMaterialPass.anInt6248 > 0) {
+                    val i_4_ = ((TexGenMaterialPass.anInt6248 shl 8) / FrameBufferObject.anInt4889)
                     val i_5_ = -i_4_ + 255
                     val f = i_4_.toFloat() / 255.0f
                     val f_6_ = 1.0f - f
@@ -123,7 +123,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
                     Class36.anInt486 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546
                     NormalMapGenerator.aFloat3462 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542
                     Class361.aFloat4455 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536
-                    Class286_Sub5.anInt6248 = -1
+                    TexGenMaterialPass.anInt6248 = -1
                     LocTypeDefLoader.anInt2500 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549
                     NativeIndexBuffer.anInt4703 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540
                     KeyboardLayoutConfig.aFloat2137 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2547

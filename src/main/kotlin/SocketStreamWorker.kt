@@ -1,5 +1,5 @@
 import LinkedListIterator.Companion.method1242
-import Class286_Sub5.Companion.method2161
+import TexGenMaterialPass.Companion.method2161
 import java.io.EOFException
 import java.io.IOException
 import java.io.InputStream
@@ -212,7 +212,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, class297: Class29
         @JvmStatic
         fun method1469(i: Int) {
             anInt2662++
-            Class286.anInt3682 = 0
+            MaterialPass.anInt3682 = 0
             SceneryDetailOptionState.anInt6095 = 0
             val i_0_ = 29 % ((-42 - i) / 63)
             var i_1_ = 0
@@ -238,7 +238,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, class297: Class29
         fun method1475(i: Byte, i_12_: Int, i_13_: Int): Boolean {
             anInt2653++
             if (i > -95) method1469(-48)
-            return (Class286_Sub9.method2174((-115).toByte(), i_13_, i_12_) and IndexedFileCache.method1163(i_12_, (-72).toByte(), i_13_))
+            return (SphereMapMaterialPass.method2174((-115).toByte(), i_13_, i_12_) and IndexedFileCache.method1163(i_12_, (-72).toByte(), i_13_))
         }
     }
 }

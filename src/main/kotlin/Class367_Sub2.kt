@@ -1,6 +1,6 @@
 import BrightnessOptionState.Companion.method1745
 import GlVertexBufferArb.Companion.method2127
-import Class286_Sub3.Companion.method2148
+import WaterMaterialPass.Companion.method2148
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable

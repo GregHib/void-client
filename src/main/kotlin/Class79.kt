@@ -786,12 +786,12 @@ class Class79 {
                 MediaStreamClient.anInt3201 = 32 * i_29_
             }
             if (i_30_ <= 108) aClient1367 = null
-            if (Class286_Sub2.anInt6212 != i) {
+            if (FixedFunctionMaterialPass.anInt6212 != i) {
                 if (Class348_Sub40_Sub6.anInt9139 != i) {
                     LightDetailOptionState.anIntArray6035 = IntArray(i)
                     for (i_32_ in 0..<i) LightDetailOptionState.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
                 } else LightDetailOptionState.anIntArray6035 = Class318_Sub6.anIntArray6432
-                Class286_Sub2.anInt6212 = i
+                FixedFunctionMaterialPass.anInt6212 = i
                 Class299_Sub2.anInt6325 = -1 + i
             }
         }

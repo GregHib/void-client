@@ -1,4 +1,4 @@
-import Class286_Sub8.Companion.method2173
+import CubeMapMaterialPass.Companion.method2173
 import Class348_Sub16_Sub3.Companion.method2878
 import Class348_Sub40_Sub32.Companion.method3135
 import jaclib.memory.Buffer

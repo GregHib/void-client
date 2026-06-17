@@ -1,4 +1,4 @@
-import Class286_Sub4.Companion.method2154
+import GlslMaterialPass.Companion.method2154
 import Class38.Companion.method365
 import kotlin.concurrent.Volatile
 

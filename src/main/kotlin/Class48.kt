@@ -1,5 +1,5 @@
 import DetailLevelOptionState.Companion.method1836
-import Class286_Sub8.Companion.method2172
+import CubeMapMaterialPass.Companion.method2172
 import OpenGlTerrainTile.Companion.method4002
 
 /* Class48 - Decompiled by JODE

@@ -233,7 +233,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         fun method1929(i: Byte): Array<Class74?> {
             if (i.toInt() != -19) method1933(null, null, false)
             anInt3280++
-            return (arrayOf<Class74?>(Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, SplashImageLoadable.aClass74_4689, Class374.aClass74_4537, Class327.aClass74_4098, RectangleBounds.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, Class286_Sub1.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, Class348_Sub40_Sub38.aClass74_9475, TextureGenerator.aClass74_2491))
+            return (arrayOf<Class74?>(Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, SplashImageLoadable.aClass74_4689, Class374.aClass74_4537, Class327.aClass74_4098, RectangleBounds.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, ArbFogMaterialPass.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, Class348_Sub40_Sub38.aClass74_9475, TextureGenerator.aClass74_2491))
         }
 
         @JvmStatic

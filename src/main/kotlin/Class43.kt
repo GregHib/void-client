@@ -63,7 +63,7 @@ class Class43 {
         fun method383(i: Int) {
             var i_3_ = i
             while (BackgroundWorkerThread.anInt3225 > i_3_) {
-                val i_4_ = (Class350.method3452(Class286.anInt3682 + i_3_, (-15).toByte(), BackgroundWorkerThread.anInt3225) * Class31.anInt425)
+                val i_4_ = (Class350.method3452(MaterialPass.anInt3682 + i_3_, (-15).toByte(), BackgroundWorkerThread.anInt3225) * Class31.anInt425)
                 var i_5_ = 0
                 while (Class31.anInt425 > i_5_) {
                     val i_6_ = (Class350.method3452(i_5_ - -SceneryDetailOptionState.anInt6095, (-15).toByte(), Class31.anInt425) + i_4_)
