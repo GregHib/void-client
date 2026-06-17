@@ -127,7 +127,7 @@ class Class348_Sub13 : Class348() {
                 if (class154 != null) {
                     for (i_39_ in 0..4) {
                         for (i_40_ in (Class367_Sub2.aShortArrayArrayArray7290)!!.indices) {
-                            if (class154.anIntArray2095!![i_39_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) class64.ia((Class136.aShortArrayArray4791!![i_40_]!![i_39_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(class154.anIntArray2095!![i_39_])]))
+                            if (class154.anIntArray2095!![i_39_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) class64.ia((SpriteLoadValidator.aShortArrayArray4791!![i_40_]!![i_39_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(class154.anIntArray2095!![i_39_])]))
                         }
                     }
                 }

@@ -139,7 +139,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                 if (Class299_Sub2.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127
                                 if (class46 == Class289.aClass46_3701) {
                                     if (i_16_ != -1412584499 && ((Class312.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
-                                        Class136.anInt4792 = i_10_
+                                        SpriteLoadValidator.anInt4792 = i_10_
                                         Class348_Sub1.anInt6555 = i_11_
                                         Class138.aClass46Array1942 = class46s
                                         i_18_++
@@ -233,7 +233,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             i_18_++
                                             continue
                                         }
-                                        if (Class136.anInt4793 == class46.anInt765) {
+                                        if (SpriteLoadValidator.anInt4793 == class46.anInt765) {
                                             if (Class298.aBoolean3811 || Class188.aBoolean2514) {
                                                 val i_37_ = (class46.anInt709 + i_24_)
                                                 var i_38_ = 15 + i_25_

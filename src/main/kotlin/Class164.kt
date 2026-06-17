@@ -146,7 +146,7 @@ object Class164 {
             Class367_Sub8.aClass45_7362 = Class369_Sub2.method3571(true, 28, (-23).toByte(), 1)
             Class262.aClass45_3323 = Class369_Sub2.method3571(false, 29, (-23).toByte(), 1)
             Crc64Hashable.aClass45_4984 = Class369_Sub2.method3571(true, 30, (-23).toByte(), 1)
-            Class136.aClass45_4796 = Class369_Sub2.method3571(true, 31, (-23).toByte(), 1)
+            SpriteLoadValidator.aClass45_4796 = Class369_Sub2.method3571(true, 31, (-23).toByte(), 1)
             Class146.aClass45_2015 = Class369_Sub2.method3571(true, 36, (-23).toByte(), 2)
         }
         if (Class56.aClass56_1031 == Class348_Sub42_Sub15.aClass56_9660) {
@@ -197,7 +197,7 @@ object Class164 {
             Class30.aClass84_413 = Class84(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             HoverActionEntry.aClass25_1813 = Class25(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub40_Sub18.aClass319_9245 = Class319(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class78.aClass45_1322, RasterSprite.aClass45_5207)
-            Class136.aClass65_4787 = Class65(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            SpriteLoadValidator.aClass65_4787 = Class65(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class91.aClass82_1523 = Class82(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class239_Sub14.aClass259_5995 = Class259(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class229.aClass194_2981 = Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)

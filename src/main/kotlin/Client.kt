@@ -40,7 +40,7 @@ import LocalPlayerState.method1137
 import PlayerUpdateDecoder.method1139
 import GlVertexBufferBase.Companion.method1149
 import GlArrayBufferObject.Companion.method1154
-import Class136.Companion.method1159
+import SpriteLoadValidator.Companion.method1159
 import Class14.Companion.method237
 import Class140.method1168
 import Class140.method1169
@@ -669,15 +669,15 @@ class Client : GameAppletFrame() {
         if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == ParticleEmitterNode.aClass230_186) RuntimeException_Sub1.aBoolean4599 = false
         if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
             InputSettingsState.shiftClick = true
-            Class136.aShortArrayArray4791 = Class348_Sub8.aShortArrayArray6664
+            SpriteLoadValidator.aShortArrayArray4791 = Class348_Sub8.aShortArrayArray6664
             Class268.anInt3439 = 16777215
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub51.aShortArrayArrayArray7262
             Class268.anInt3444 = 0
         } else if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class239_Sub9.aClass230_5932) {
-            Class136.aShortArrayArray4791 = Class268.aShortArrayArray3443
+            SpriteLoadValidator.aShortArrayArray4791 = Class268.aShortArrayArray3443
             Class367_Sub2.aShortArrayArrayArray7290 = Class318_Sub1_Sub3_Sub3.aShortArrayArrayArray10253
         } else {
-            Class136.aShortArrayArray4791 = Class348_Sub40_Sub32.aShortArrayArray9424
+            SpriteLoadValidator.aShortArrayArray4791 = Class348_Sub40_Sub32.aShortArrayArray9424
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub12.aShortArrayArrayArray6736
         }
         Class3.aClass161_125 = GlElementArrayBuffer.aClass161_4839

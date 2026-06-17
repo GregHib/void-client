@@ -818,7 +818,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub11.anInt5954 = 0
             GlSpriteRenderer.anInt8445 = 0
             Class368.anInt4505 = 0
-            Class136.anInt4790 = 0
+            SpriteLoadValidator.anInt4790 = 0
             Class348_Sub40_Sub17.anInt9236 = 0
             Class5_Sub3.anInt8375 = 0
             Class348_Sub1.anInt6546 = 0
@@ -3272,7 +3272,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class361.anInt4446 = 0
             Class85.anInt1464 = 0
             MatrixCameraTransform.anInt5657 = 0
-            Class136.anInt4794 = 0
+            SpriteLoadValidator.anInt4794 = 0
             Class318_Sub1_Sub3_Sub3.anInt10299 = 0
             AnimatedModelRenderer.anInt8390 = 0
             Class377.anInt9843 = 0

@@ -4975,9 +4975,9 @@ object Class66 {
                     val i_482_ = anIntArray1149!![anInt1173]
                     val i_483_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_483_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class136.aClass65_4787!!.method700(i_482_, -121).method3170(-250, class254.aString3258, i_483_))
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (SpriteLoadValidator.aClass65_4787!!.method700(i_482_, -121).method3170(-250, class254.aString3258, i_483_))
                     else {
-                        anIntArray1149!![anInt1173++] = (Class136.aClass65_4787!!.method700(i_482_, 81).method3166(i_483_, class254.anInt3256, 124.toByte()))
+                        anIntArray1149!![anInt1173++] = (SpriteLoadValidator.aClass65_4787!!.method700(i_482_, 81).method3166(i_483_, class254.anInt3256, 124.toByte()))
                         return
                     }
                     return

@@ -1,7 +1,7 @@
 /* Class136 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class136 internal constructor(class45: Class45?, string: String?) : Interface7 {
+class SpriteLoadValidator internal constructor(class45: Class45?, string: String?) : Interface7 {
     private val aString4788: String?
     private val aClass45_4789: Class45?
 

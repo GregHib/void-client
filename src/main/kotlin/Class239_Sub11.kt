@@ -98,7 +98,7 @@ class Class239_Sub11 : Class239 {
                 Class267.aClass267_3405!!.method2025(Class309("sw3d"), false)
                 Class267.aClass267_3406!!.method2025(Class309("hw3d"), false)
                 Class267.aClass267_3407!!.method2025(Class309("jagtheora"), false)
-                Class267.aClass267_3408!!.method2025(Class292(Class136.aClass45_4796!!), false)
+                Class267.aClass267_3408!!.method2025(Class292(SpriteLoadValidator.aClass45_4796!!), false)
                 Class267.aClass267_3409!!.method2025(Class292(Class348_Sub11.aClass45_4770!!), false)
                 Class267.aClass267_3410!!.method2025(Class292(Class95.aClass45_1541!!), false)
                 Class267.aClass267_3411!!.method2025(Class292(Class94.aClass45_1538!!), false)
@@ -116,7 +116,7 @@ class Class239_Sub11 : Class239 {
                 Class267.aClass267_3423!!.method2025(Class292(Class348_Sub35.aClass45_6980!!), false)
                 Class267.aClass267_3424!!.method2025(Class292(CameraNodeList.aClass45_1743!!), false)
                 Class267.aClass267_3425!!.method2025(Class292(SoftwareSpriteRaster.aClass45_1627!!), false)
-                Class267.aClass267_3426!!.method2025(Class136((Class348_Sub32.aClass45_6950), "details"), false)
+                Class267.aClass267_3426!!.method2025(SpriteLoadValidator((Class348_Sub32.aClass45_6950), "details"), false)
                 for (i_4_ in Crc64Hashable.aClass267Array4987!!.indices) {
                     if (Crc64Hashable.aClass267Array4987!![i_4_]!!.method2027(78) == null) throw RuntimeException()
                 }
