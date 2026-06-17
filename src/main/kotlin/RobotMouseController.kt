@@ -3,7 +3,10 @@ import java.awt.Point
 import java.awt.Robot
 import java.awt.image.BufferedImage
 
-class Class165 internal constructor() {
+/*
+ * Class165
+ */
+class RobotMouseController internal constructor() {
     private val aRobot2176: Robot
     private var aComponent2177: Component? = null
 

@@ -146,15 +146,15 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                             val i_5_ = (linkedQueueNode.anInt2000)
                             val i_6_ = (linkedQueueNode.anInt1999)
                             if (this.aBoolean3794) aNativeCursorCallback__3776!!.method3621(i_5_, 115.toByte(), i_6_)
-                            else (anObject3791 as Class165).method1280((i_5_), (i_6_))
+                            else (anObject3791 as RobotMouseController).method1280((i_5_), (i_6_))
                         } else if ((this.aBoolean3777) && (i == 15)) {
                             val bool = ((linkedQueueNode.anInt2000) != 0)
                             val component = ((linkedQueueNode.anObject1996) as Component?)
                             if (this.aBoolean3794) aNativeCursorCallback__3776!!.method3622(bool, 13259, component!!)
-                            else (anObject3791 as Class165).method1281(component, (bool))
+                            else (anObject3791 as RobotMouseController).method1281(component, (bool))
                         } else if (!(this.aBoolean3794) && (i == 17)) {
                             val objects = ((linkedQueueNode.anObject1996) as Array<Any?>?)
-                            (anObject3791 as Class165).method1282((objects!![0] as java.awt.Component?)!!, objects[1] as IntArray?, (linkedQueueNode.anInt2000), (linkedQueueNode.anInt1999), objects[2] as Point?)
+                            (anObject3791 as RobotMouseController).method1282((objects!![0] as java.awt.Component?)!!, objects[1] as IntArray?, (linkedQueueNode.anInt2000), (linkedQueueNode.anInt1999), objects[2] as Point?)
                         } else if (i == 16) {
                             try {
                                 if (!aString3803.startsWith("win")) throw Exception()
@@ -405,7 +405,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                 /* empty */
             }
             try {
-                if (!this.aBoolean3794) anObject3791 = Class165()
+                if (!this.aBoolean3794) anObject3791 = RobotMouseController()
                 else aNativeCursorCallback__3776 = NativeCursorCallback()
             } catch (throwable: Throwable) {
                 /* empty */
