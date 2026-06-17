@@ -4,7 +4,7 @@
 class TextureMetadataProvider internal constructor(class45: Class45?, class45_12_: Class45?, class45_13_: Class45?) : RenderConfig {
     private val aNpcAppearanceFlagsArray4611: Array<NpcAppearanceFlags?>
     private val aClass45_4619: Class45?
-    private val aClass308_4622 = Class308(256)
+    private val aCacheLruCache_4622 = CacheLruCache(256)
     private val aClass45_4624: Class45?
     private val anInt4625: Int
     override fun method6(i: Int, i_0_: Int, f: Float, i_1_: Int, bool: Boolean, i_2_: Int): IntArray {
@@ -15,13 +15,13 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
 
     private fun method1881(i: Int, bool: Boolean): Class348_Sub42_Sub5? {
         anInt4620++
-        val class348_sub42 = aClass308_4622.method2302(i.toLong(), (-34).toByte())
+        val class348_sub42 = aCacheLruCache_4622.method2302(i.toLong(), (-34).toByte())
         if (class348_sub42 != null) return class348_sub42 as Class348_Sub42_Sub5
         val `is` = aClass45_4619!!.method415(73.toByte(), i)
         if (`is` == null) return null
         if (bool != false) method1(-58, 1.9039171f, false, -106, -22, -18)
         val class348_sub42_sub5 = Class348_Sub42_Sub5(Class348_Sub49(`is`))
-        aClass308_4622.method2305(i.toLong(), class348_sub42_sub5, -1)
+        aCacheLruCache_4622.method2305(i.toLong(), class348_sub42_sub5, -1)
         return class348_sub42_sub5
     }
 

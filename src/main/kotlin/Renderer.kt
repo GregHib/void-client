@@ -367,7 +367,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
         fun method3664(i: Int, i_88_: Int): ByteArray {
             anInt4564++
             if (i_88_ <= 21) anInt4583 = 60
-            var class348_sub42_sub3 = (Class348_Sub1_Sub2.aClass308_8815!!.method2302(i.toLong(), (-120).toByte()) as Class348_Sub42_Sub3?)
+            var class348_sub42_sub3 = (Class348_Sub1_Sub2.aCacheLruCache_8815!!.method2302(i.toLong(), (-120).toByte()) as Class348_Sub42_Sub3?)
             if (class348_sub42_sub3 == null) {
                 val `is` = ByteArray(512)
                 val random = Random(i.toLong())
@@ -381,7 +381,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
                     `is`[i_91_] = `is`[511 + -i_90_]
                 }
                 class348_sub42_sub3 = Class348_Sub42_Sub3(`is`)
-                Class348_Sub1_Sub2.aClass308_8815!!.method2305(i.toLong(), class348_sub42_sub3, -1)
+                Class348_Sub1_Sub2.aCacheLruCache_8815!!.method2305(i.toLong(), class348_sub42_sub3, -1)
             }
             return class348_sub42_sub3.aByteArray9499!!
         }

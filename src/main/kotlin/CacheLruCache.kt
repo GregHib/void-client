@@ -1,7 +1,7 @@
 /* Class308 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class308 internal constructor(private var anInt3891: Int) {
+class CacheLruCache internal constructor(private var anInt3891: Int) {
     private var aClass348_Sub42_3887 = Class348_Sub42()
     private val aClass356_3888: Class356
     private var aLinkedNodeListIterator_3889: LinkedNodeListIterator? = LinkedNodeListIterator()

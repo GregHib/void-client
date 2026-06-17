@@ -640,7 +640,7 @@ class Client : GameAppletFrame() {
         Class39.aScriptCompilerThread_520 = ScriptCompilerThread(Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!)
         Class348_Sub4.aMediaStreamClient_6601 = MediaStreamClient()
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
-        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
+        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         Class316.aClass348_Sub51_3959 = method247(24916)
         if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
         else if (method2354(Class8.aClass364_165, i xor 0x7044.inv())) {
@@ -945,7 +945,7 @@ class Client : GameAppletFrame() {
         method1369(2.toByte())
         SpotAnimVector.method1334((-110).toByte())
         method1061(16711680)
-        Class308.method2306((-90).toByte())
+        CacheLruCache.method2306((-90).toByte())
         method948(false)
         method2107(77.toByte())
         method2111(68.toByte())
@@ -1591,7 +1591,7 @@ class Client : GameAppletFrame() {
                     } else if (!method3263(true)) method2363(-84)
                     else Class367_Sub4.method3543((-89).toByte())
                 } else if (i_109_ == 0 && CameraConfigDefinition.anInt3246 < 75) {
-                    Class308.anInterface6Array3884!![CameraConfigDefinition.anInt3246] = interface6
+                    CacheLruCache.anInterface6Array3884!![CameraConfigDefinition.anInt3246] = interface6
                     CameraConfigDefinition.anInt3246++
                 }
                 interface6 = LoadProgressCounters.aClass346_2449!!.method2697(0)

@@ -153,7 +153,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinition.anInt3246)
                         var i_13_ = 0
                         while ((i_13_ < CameraConfigDefinition.anInt3246)) {
-                            val interface6 = Class308.anInterface6Array3884!![i_13_]
+                            val interface6 = CacheLruCache.anInterface6Array3884!![i_13_]
                             var l = ((interface6!!.method29((-29).toByte()) + -Class348_Sub7.aLong6651) / 50L)
                             Class348_Sub7.aLong6651 = interface6.method29(106.toByte())
                             if (l > 65535L) l = 65535L

@@ -80,7 +80,7 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
 
         @JvmStatic
         fun method1707(i: Int) {
-            Class322.aClass308_4036!!.method2303(true)
+            Class322.aCacheLruCache_4036!!.method2303(true)
             anInt5829++
         }
 

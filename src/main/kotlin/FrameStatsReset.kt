@@ -689,7 +689,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class355.anInt4371 = 0
             SocketGameConnection.anInt5828 = 0
             NativeRenderer.anInt7945 = 0
-            Class308.anInt3885 = 0
+            CacheLruCache.anInt3885 = 0
             Class348_Sub40_Sub27.anInt9359 = 0
             Class353.anInt4351 = 0
             GlTextureBase.anInt5104 = 0
@@ -826,7 +826,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ScriptCompilerThread.anInt1735 = 0
             Class377.anInt9888 = 0
             Class64_Sub3.anInt5624 = 0
-            Class308.anInt3886 = 0
+            CacheLruCache.anInt3886 = 0
             Class367_Sub10.anInt7388 = 0
             NativeRenderer.anInt8061 = 0
             ArbFogMaterialPass.anInt6190 = 0
@@ -1850,7 +1850,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub22.anInt9290 = 0
             OpenGlRenderer.anInt7620 = 0
             Class348_Sub40_Sub32.anInt9417 = 0
-            Class308.anInt3881 = 0
+            CacheLruCache.anInt3881 = 0
             AntialiasOptionState.anInt6079 = 0
             CameraNodeList.anInt1740 = 0
             Class64_Sub2.anInt5469 = 0
@@ -2346,7 +2346,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GrowableStringList.anInt2355 = 0
             Class367_Sub1.anInt7277 = 0
             Class348_Sub41.anInt7049 = 0
-            Class308.anInt3879 = 0
+            CacheLruCache.anInt3879 = 0
             Class377.anInt9889 = 0
             Class348_Sub15.anInt6778 = 0
             Class65.anInt1143 = 0
@@ -2462,7 +2462,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3.anInt8748 = 0
             GlVertexBufferArb.anInt8489 = 0
             SocketStreamWorker.anInt2653 = 0
-            Class308.anInt3880 = 0
+            CacheLruCache.anInt3880 = 0
             Class43.anInt613 = 0
             TerrainTile.anInt4593 = 0
             Class324.anInt4049 = 0

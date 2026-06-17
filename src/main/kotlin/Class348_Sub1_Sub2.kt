@@ -26,7 +26,7 @@ class Class348_Sub1_Sub2 internal constructor(i: Int, i_9_: Int, i_10_: Int, i_1
         @JvmField
         var anInt8814: Int = 0
         @JvmField
-        var aClass308_8815: Class308? = Class308(16)
+        var aCacheLruCache_8815: CacheLruCache? = CacheLruCache(16)
         @JvmField
         var aByteArrayArray8816: Array<ByteArray?>? = null
         @JvmField
@@ -63,7 +63,7 @@ class Class348_Sub1_Sub2 internal constructor(i: Int, i_9_: Int, i_10_: Int, i_1
         fun method2731(i: Byte) {
             aByteArrayArray8816 = null
             aNodeDeque_8810 = null
-            aClass308_8815 = null
+            aCacheLruCache_8815 = null
             aIntRange_8817 = null
         }
     }

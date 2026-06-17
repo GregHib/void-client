@@ -9,22 +9,22 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
         if (i.toInt() != -121) method2256(33.toByte())
         if (aClass258_Sub2_8688 == null) {
             val var_d = aHa_Sub2_8693.aRenderConfig4579!!
-            Class308.anIntArray3883!![3] = anInt8690
-            Class308.anIntArray3883!![4] = anInt8686
-            Class308.anIntArray3883!![2] = anInt8691
-            Class308.anIntArray3883!![5] = anInt8697
-            Class308.anIntArray3883!![1] = anInt8695
-            Class308.anIntArray3883!![0] = anInt8689
+            CacheLruCache.anIntArray3883!![3] = anInt8690
+            CacheLruCache.anIntArray3883!![4] = anInt8686
+            CacheLruCache.anIntArray3883!![2] = anInt8691
+            CacheLruCache.anIntArray3883!![5] = anInt8697
+            CacheLruCache.anIntArray3883!![1] = anInt8695
+            CacheLruCache.anIntArray3883!![0] = anInt8689
             var bool = false
             var i_0_ = 0
             for (i_1_ in 0..5) {
-                if (!var_d.method4(i.toInt() xor 0x1f68, Class308.anIntArray3883!![i_1_])) return null
-                val class12 = var_d.method3(Class308.anIntArray3883!![i_1_], -6662)
+                if (!var_d.method4(i.toInt() xor 0x1f68, CacheLruCache.anIntArray3883!![i_1_])) return null
+                val class12 = var_d.method3(CacheLruCache.anIntArray3883!![i_1_], -6662)
                 val i_2_ = if (!class12!!.aBoolean199) 128 else 64
                 if (i_0_ < i_2_) i_0_ = i_2_
                 if (class12.aByte205 > 0) bool = true
             }
-            for (i_3_ in 0..5) Class341.anIntArrayArray4233!![i_3_] = var_d.method5(false, Class308.anIntArray3883!![i_3_], 1.0f, i_0_, i_0_, i + 192)
+            for (i_3_ in 0..5) Class341.anIntArrayArray4233!![i_3_] = var_d.method5(false, CacheLruCache.anIntArray3883!![i_3_], 1.0f, i_0_, i_0_, i + 192)
             aClass258_Sub2_8688 = GlTextureCubeMap(aHa_Sub2_8693, 6407, i_0_, bool, Class341.anIntArrayArray4233)
         }
         return aClass258_Sub2_8688

@@ -76,7 +76,7 @@ class Class348_Sub40_Sub10 : Class348_Sub40(1, false) {
         var anInt9178: Int = 0
         @JvmField
         var anInt9179: Int = 0
-        var aClass308_9180: Class308?
+        var aCacheLruCache_9180: CacheLruCache?
         @JvmField
         var aBoolean9181: Boolean = false
         @JvmField
@@ -87,12 +87,12 @@ class Class348_Sub40_Sub10 : Class348_Sub40(1, false) {
         @JvmStatic
         fun method3074(i: Int) {
             anIntArray9183 = null
-            aClass308_9180 = null
+            aCacheLruCache_9180 = null
             if (i != 0) anIntArray9183 = null
         }
 
         init {
-            aClass308_9180 = Class308(64)
+            aCacheLruCache_9180 = CacheLruCache(64)
             anIntArray9183 = IntArray(4)
             aBoolean9184 = false
         }

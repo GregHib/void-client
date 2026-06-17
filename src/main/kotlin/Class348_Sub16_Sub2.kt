@@ -46,7 +46,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
             class348_sub42_sub4.method2715(71.toByte())
             anInt8888--
             anInt8883 = 0
-            Class348_Sub40_Sub10.aClass308_9180!!.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1)
+            Class348_Sub40_Sub10.aCacheLruCache_9180!!.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1)
         }
     }
 
@@ -58,7 +58,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
             if (method2828(-23076) == null) {
                 if (aBoolean8884) {
                     this.method2715(23.toByte())
-                    Class348_Sub40_Sub10.aClass308_9180!!.method2303(true)
+                    Class348_Sub40_Sub10.aCacheLruCache_9180!!.method2303(true)
                 }
             } else {
                 var i_3_ = i - -i_2_
@@ -129,12 +129,12 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
     fun method2838(i: Int, d: Double, i_14_: Int): Class348_Sub42_Sub4? {
         anInt8860++
         val l = (i or (anInt8879 shl 0)).toLong()
-        var class348_sub42_sub4 = (Class348_Sub40_Sub10.aClass308_9180!!.method2302(l, (-31).toByte()) as Class348_Sub42_Sub4?)
+        var class348_sub42_sub4 = (Class348_Sub40_Sub10.aCacheLruCache_9180!!.method2302(l, (-31).toByte()) as Class348_Sub42_Sub4?)
         if (i_14_ != 1401320384) return null
         if (class348_sub42_sub4 == null) class348_sub42_sub4 = Class348_Sub42_Sub4(Array<ShortArray?>(anInt8879) { ShortArray(i) }, d)
         else {
             class348_sub42_sub4.aDouble9512 = d
-            Class348_Sub40_Sub10.aClass308_9180!!.method2304(-121, l)
+            Class348_Sub40_Sub10.aCacheLruCache_9180!!.method2304(-121, l)
         }
         return class348_sub42_sub4
     }
@@ -149,7 +149,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
                 if (class348_sub42_sub4 == null) {
                     if (aBoolean8884) {
                         this.method2715(108.toByte())
-                        Class348_Sub40_Sub10.aClass308_9180!!.method2303(true)
+                        Class348_Sub40_Sub10.aCacheLruCache_9180!!.method2303(true)
                     }
                     break
                 }

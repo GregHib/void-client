@@ -96,8 +96,8 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             method2375(16127)
             if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                 var i_6_ = 0
-                while (Class308.aByteArrayArray3882!!.size > i_6_) {
-                    Class308.aByteArrayArray3882!![i_6_] = null
+                while (CacheLruCache.aByteArrayArray3882!!.size > i_6_) {
+                    CacheLruCache.aByteArrayArray3882!![i_6_] = null
                     i_6_++
                 }
                 ScrollingWidgetComponentNode.anInt8388 = 0

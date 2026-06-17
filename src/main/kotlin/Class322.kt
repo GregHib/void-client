@@ -97,7 +97,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
         var anInt4032: Int = -1
         var anInt4034: Int = 0
         @JvmField
-        var aClass308_4036: Class308?
+        var aCacheLruCache_4036: CacheLruCache?
 
         fun method2552(bool: Boolean, i: Int, i_0_: Int, i_1_: Int): Int {
             if (i_1_ != -24667) method2554(95.toByte())
@@ -124,7 +124,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             if (i.toInt() != 28) method2554(21.toByte())
             anIntArray4031 = null
             aIntRange_4027 = null
-            aClass308_4036 = null
+            aCacheLruCache_4036 = null
         }
 
         fun method2556(bool: Boolean, i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3) {
@@ -174,7 +174,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
 
         init {
             aIntRange_4027 = IntRange(90, 10)
-            aClass308_4036 = Class308(128)
+            aCacheLruCache_4036 = CacheLruCache(128)
         }
     }
 }
