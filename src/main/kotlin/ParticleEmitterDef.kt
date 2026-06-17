@@ -6,7 +6,7 @@ import Class64.Companion.method616
 /* Class288 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class288 internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_2_: Int, i_3_: Int) : Interface12 {
+open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_2_: Int, i_3_: Int) : Interface12 {
     @JvmField
     var anInt4950: Int = 0
     @JvmField

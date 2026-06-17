@@ -870,7 +870,7 @@ class Class64_Sub3 : Class64 {
                 class64_sub3_211_.anIntArray5593 = anIntArray5593
                 class64_sub3_211_.anIntArray5543 = anIntArray5543
             }
-            if (Class288.method2187(i, -79, anInt5556)) {
+            if (ParticleEmitterDef.method2187(i, -79, anInt5556)) {
                 class64_sub3_211_.aHoverActionEntry_5605 = class64_sub3_213_!!.aHoverActionEntry_5605
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x1).toByte()
                 class64_sub3_211_.aHoverActionEntry_5605!!.anInterface2_1811 = aHoverActionEntry_5605!!.anInterface2_1811

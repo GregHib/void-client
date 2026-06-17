@@ -1,5 +1,5 @@
-import Class288.Companion.method2187
-import Class288_Sub1.Companion.method2189
+import ParticleEmitterDef.Companion.method2187
+import ParticleEmitterDefExt.Companion.method2189
 import Class348.Companion.method2709
 
 /* Class337 - Decompiled by JODE
@@ -49,12 +49,12 @@ class Class337 internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, manag
             return ((0x70000 and i_0_) != 0) or method2709(i_1_, i_0_, -1) || method2187(i_0_, -84, i_1_)
         }
 
-        fun method2660(i: Byte, class348_sub49: Class348_Sub49): Class288_Sub1? {
+        fun method2660(i: Byte, class348_sub49: Class348_Sub49): ParticleEmitterDefExt? {
             anInt4180++
             if (i.toInt() != 26) return null
             val class288 = method2189(class348_sub49, i + 59)
             val i_3_ = class348_sub49.method3369(125.toByte())
-            return Class288_Sub1(class288.anInt4958, class288.aScreenAnchorAlignment_4955, class288.aClass341_4952, class288.anInt4950, class288.anInt4951, i_3_)
+            return ParticleEmitterDefExt(class288.anInt4958, class288.aScreenAnchorAlignment_4955, class288.aClass341_4952, class288.anInt4950, class288.anInt4951, i_3_)
         }
     }
 }

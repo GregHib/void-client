@@ -36,11 +36,11 @@ class Class348_Sub4 : Class348 {
     fun method2746(i: Byte): Int {
         anInt6600++
         var i_0_ = 23
-        i_0_ += Class288.method2186((-114).toByte(), aString6604!!)
-        i_0_ += Class288.method2186((-114).toByte(), aString6614!!)
-        i_0_ += Class288.method2186((-114).toByte(), aString6610!!)
+        i_0_ += ParticleEmitterDef.method2186((-114).toByte(), aString6604!!)
+        i_0_ += ParticleEmitterDef.method2186((-114).toByte(), aString6614!!)
+        i_0_ += ParticleEmitterDef.method2186((-114).toByte(), aString6610!!)
         val i_1_ = 42 % ((44 - i) / 49)
-        i_0_ += Class288.method2186((-114).toByte(), aString6597!!)
+        i_0_ += ParticleEmitterDef.method2186((-114).toByte(), aString6597!!)
         return i_0_
     }
 

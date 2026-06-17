@@ -94,7 +94,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
         fun method1221(i: Int, i_3_: Int, i_4_: Int): Boolean {
             if (i != -3157) return false
             anInt2088++
-            return method2259(0, i_4_, i_3_) or ((i_3_ and 0x70000) != 0) || Class288.method2187(i_3_, -79, i_4_)
+            return method2259(0, i_4_, i_3_) or ((i_3_ and 0x70000) != 0) || ParticleEmitterDef.method2187(i_3_, -79, i_4_)
         }
 
         fun method1223(i: Int, i_5_: Int, i_6_: Int, boundsConstraintEntry: BoundsConstraintEntry): Class348_Sub42_Sub19? {

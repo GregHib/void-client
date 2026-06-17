@@ -213,8 +213,8 @@ import GlslEnvMaterialPass.Companion.method2164
 import ScrollTexMaterialPass.Companion.method2166
 import CubeMapMaterialPass.Companion.method2170
 import CubeMapMaterialPass.Companion.method2171
-import Class288.Companion.method2185
-import Class288_Sub1.Companion.method2190
+import ParticleEmitterDef.Companion.method2185
+import ParticleEmitterDefExt.Companion.method2190
 import Class289.method2191
 import Class291.Companion.method2199
 import Class292.Companion.method2202
@@ -1323,7 +1323,7 @@ class Client : GameAppletFrame() {
                 Class8.aClass364_165 = Class55_Sub1.aClass364_5271
             }
             SceneRegionState.aHudTabPanel_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
-            if (SceneRegionState.aHudTabPanel_196 != Class288.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != Class348_Sub40_Sub20.aHudTabPanel_9263 && Class68.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
+            if (SceneRegionState.aHudTabPanel_196 != ParticleEmitterDef.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != Class348_Sub40_Sub20.aHudTabPanel_9263 && Class68.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
             try {
                 Class348_Sub33.anInt6967 = this.getParameter("lang")!!.toInt()
             } catch (exception: Exception) {
@@ -1980,7 +1980,7 @@ class Client : GameAppletFrame() {
                     Class8.aClass364_165 = Class76.aClass364_1279
                     if (strings[3] == "live") SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
                     else if (strings[3] != "rc") {
-                        if (strings[3] == "wip") SceneRegionState.aHudTabPanel_196 = Class288.aHudTabPanel_4953
+                        if (strings[3] == "wip") SceneRegionState.aHudTabPanel_196 = ParticleEmitterDef.aHudTabPanel_4953
                         else method518("modewhat", 41.toByte())
                     } else SceneRegionState.aHudTabPanel_196 = Class348_Sub40_Sub20.aHudTabPanel_9263
                     Class348_Sub33.anInt6967 = method315(103.toByte(), strings[4])

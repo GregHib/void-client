@@ -4,21 +4,21 @@ import Class6.Companion.method203
 /* Class127 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class WidgetComponentNode(class45: Class45?, class288: Class288?) : Interface1 {
+open class WidgetComponentNode(class45: Class45?, particleEmitterDef: ParticleEmitterDef?) : Interface1 {
     var aAbstractModelRenderer_4655: AbstractModelRenderer? = null
-    var aClass288_4659: Class288? = null
+    var aParticleEmitterDef_4659: ParticleEmitterDef? = null
     private val aClass45_4661: Class45?
     override fun method8(i: Byte): Boolean {
         val i_0_ = -79 / ((i - 25) / 52)
         anInt4658++
-        return aClass45_4661!!.method421(false, (this.aClass288_4659!!.anInt4958))
+        return aClass45_4661!!.method421(false, (this.aParticleEmitterDef_4659!!.anInt4958))
     }
 
     override fun method9(i: Byte, bool: Boolean) {
         anInt4653++
         if (bool) {
-            val i_1_ = ((this.aClass288_4659!!.aScreenAnchorAlignment_4955!!.method1607(Class92.anInt1524, this.aAbstractModelRenderer_4655!!.method966(), (-117).toByte())) + this.aClass288_4659!!.anInt4950)
-            val i_2_ = ((this.aClass288_4659!!.aClass341_4952!!.method2679(OpenGlRenderer.anInt7666, this.aAbstractModelRenderer_4655!!.method980(), 1595)) - -this.aClass288_4659!!.anInt4951)
+            val i_1_ = ((this.aParticleEmitterDef_4659!!.aScreenAnchorAlignment_4955!!.method1607(Class92.anInt1524, this.aAbstractModelRenderer_4655!!.method966(), (-117).toByte())) + this.aParticleEmitterDef_4659!!.anInt4950)
+            val i_2_ = ((this.aParticleEmitterDef_4659!!.aClass341_4952!!.method2679(OpenGlRenderer.anInt7666, this.aAbstractModelRenderer_4655!!.method980(), 1595)) - -this.aParticleEmitterDef_4659!!.anInt4951)
             this.aAbstractModelRenderer_4655!!.method974(i_1_, i_2_)
         }
         if (i.toInt() != -49) anInt4656 = 26
@@ -26,16 +26,16 @@ open class WidgetComponentNode(class45: Class45?, class288: Class288?) : Interfa
 
     override fun method7(i: Int) {
         if (i != 10286) anInt4656 = -123
-        this.aAbstractModelRenderer_4655 = Class369_Sub3_Sub1.method3577((this.aClass288_4659!!.anInt4958), (-60).toByte(), aClass45_4661!!)
+        this.aAbstractModelRenderer_4655 = Class369_Sub3_Sub1.method3577((this.aParticleEmitterDef_4659!!.anInt4958), (-60).toByte(), aClass45_4661!!)
         anInt4660++
     }
 
     init {
         try {
             aClass45_4661 = class45
-            this.aClass288_4659 = class288
+            this.aParticleEmitterDef_4659 = particleEmitterDef
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class288 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (particleEmitterDef != null) "{...}" else "null") + ')'))
         }
     }
 

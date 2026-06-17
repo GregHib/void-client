@@ -196,20 +196,20 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
     }
 
     fun method940(i: Int): FloatArray {
-        Class288_Sub1.aFloatArray8575!![0] = this.aFloat5770
-        Class288_Sub1.aFloatArray8575!![9] = this.aFloat5762
-        Class288_Sub1.aFloatArray8575!![12] = this.aFloat5747
+        ParticleEmitterDefExt.aFloatArray8575!![0] = this.aFloat5770
+        ParticleEmitterDefExt.aFloatArray8575!![9] = this.aFloat5762
+        ParticleEmitterDefExt.aFloatArray8575!![12] = this.aFloat5747
         anInt5777++
-        Class288_Sub1.aFloatArray8575!![i] = this.aFloat5761
-        Class288_Sub1.aFloatArray8575!![6] = this.aFloat5754
-        Class288_Sub1.aFloatArray8575!![4] = this.aFloat5750
-        Class288_Sub1.aFloatArray8575!![10] = this.aFloat5784
-        Class288_Sub1.aFloatArray8575!![8] = this.aFloat5781
-        Class288_Sub1.aFloatArray8575!![14] = this.aFloat5751
-        Class288_Sub1.aFloatArray8575!![13] = this.aFloat5772
-        Class288_Sub1.aFloatArray8575!![2] = this.aFloat5756
-        Class288_Sub1.aFloatArray8575!![5] = this.aFloat5769
-        return Class288_Sub1.aFloatArray8575!!
+        ParticleEmitterDefExt.aFloatArray8575!![i] = this.aFloat5761
+        ParticleEmitterDefExt.aFloatArray8575!![6] = this.aFloat5754
+        ParticleEmitterDefExt.aFloatArray8575!![4] = this.aFloat5750
+        ParticleEmitterDefExt.aFloatArray8575!![10] = this.aFloat5784
+        ParticleEmitterDefExt.aFloatArray8575!![8] = this.aFloat5781
+        ParticleEmitterDefExt.aFloatArray8575!![14] = this.aFloat5751
+        ParticleEmitterDefExt.aFloatArray8575!![13] = this.aFloat5772
+        ParticleEmitterDefExt.aFloatArray8575!![2] = this.aFloat5756
+        ParticleEmitterDefExt.aFloatArray8575!![5] = this.aFloat5769
+        return ParticleEmitterDefExt.aFloatArray8575!!
     }
 
     override fun method907(): AbstractCameraTransform {
@@ -342,20 +342,20 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     fun method945(bool: Boolean): FloatArray {
         if (bool != true) this.aFloat5756 = 0.66213727f
-        Class288_Sub1.aFloatArray8575!![14] = 0.0f
-        Class288_Sub1.aFloatArray8575!![0] = this.aFloat5770
-        Class288_Sub1.aFloatArray8575!![13] = 0.0f
-        Class288_Sub1.aFloatArray8575!![1] = this.aFloat5761
-        Class288_Sub1.aFloatArray8575!![12] = 0.0f
-        Class288_Sub1.aFloatArray8575!![10] = this.aFloat5784
-        Class288_Sub1.aFloatArray8575!![5] = this.aFloat5769
-        Class288_Sub1.aFloatArray8575!![6] = this.aFloat5754
-        Class288_Sub1.aFloatArray8575!![9] = this.aFloat5762
+        ParticleEmitterDefExt.aFloatArray8575!![14] = 0.0f
+        ParticleEmitterDefExt.aFloatArray8575!![0] = this.aFloat5770
+        ParticleEmitterDefExt.aFloatArray8575!![13] = 0.0f
+        ParticleEmitterDefExt.aFloatArray8575!![1] = this.aFloat5761
+        ParticleEmitterDefExt.aFloatArray8575!![12] = 0.0f
+        ParticleEmitterDefExt.aFloatArray8575!![10] = this.aFloat5784
+        ParticleEmitterDefExt.aFloatArray8575!![5] = this.aFloat5769
+        ParticleEmitterDefExt.aFloatArray8575!![6] = this.aFloat5754
+        ParticleEmitterDefExt.aFloatArray8575!![9] = this.aFloat5762
         anInt5778++
-        Class288_Sub1.aFloatArray8575!![2] = this.aFloat5756
-        Class288_Sub1.aFloatArray8575!![4] = this.aFloat5750
-        Class288_Sub1.aFloatArray8575!![8] = this.aFloat5781
-        return Class288_Sub1.aFloatArray8575!!
+        ParticleEmitterDefExt.aFloatArray8575!![2] = this.aFloat5756
+        ParticleEmitterDefExt.aFloatArray8575!![4] = this.aFloat5750
+        ParticleEmitterDefExt.aFloatArray8575!![8] = this.aFloat5781
+        return ParticleEmitterDefExt.aFloatArray8575!!
     }
 
     fun method946(abstractCameraTransform: AbstractCameraTransform, i: Int) {

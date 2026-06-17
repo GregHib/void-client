@@ -113,7 +113,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ClickFeedbackTask.anInt4667 = 0
             GlRectangleTexture.anInt8641 = 0
             FrameBufferObject.anInt4880 = 0
-            Class288.anInt4957 = 0
+            ParticleEmitterDef.anInt4957 = 0
             Class45.anInt657 = 0
             GameAppletFrame.anInt12 = 0
             Class318_Sub1_Sub5_Sub1.anInt10123 = 0
@@ -1137,7 +1137,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MinimapFlagRenderer.anInt1798 = 0
             Class312.anInt3926 = 0
             SizeBoundedSoftCache.anInt2321 = 0
-            Class288.anInt4956 = 0
+            ParticleEmitterDef.anInt4956 = 0
             OpenGlRenderer.anInt7556 = 0
             ObjectSpawnDecoder.anInt1807 = 0
             GroundDecorOptionState.anInt5977 = 0
@@ -1499,7 +1499,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub5.anInt9126 = 0
             Class373_Sub2.anInt7445 = 0
             Class51.anInt898 = 0
-            Class288_Sub1.anInt8578 = 0
+            ParticleEmitterDefExt.anInt8578 = 0
             Class348_Sub40_Sub29.anInt9381 = 0
             NodeDeque.anInt3324 = 0
             Class348_Sub42_Sub15.anInt9655 = 0
@@ -1590,7 +1590,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub1.anInt10030 = 0
             SpotAnimVector.anInt2287 = 0
             SoundEnvelope.anInt2732 = 0
-            Class288.anInt4954 = 0
+            ParticleEmitterDef.anInt4954 = 0
             Class60.anInt1096 = 0
             Renderer.anInt4572 = 0
             DisplayModeOptionState.anInt6108 = 0
@@ -2059,7 +2059,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SocketStreamWorker.anInt2667 = 0
             NativeRenderer.anInt7923 = 0
             Class348_Sub40_Sub38.anInt9472 = 0
-            Class288_Sub1.anInt8574 = 0
+            ParticleEmitterDefExt.anInt8574 = 0
             SoundEnvelope.anInt2746 = 0
             Class348_Sub40_Sub14.anInt9206 = 0
             Class34.anInt469 = 0
@@ -3127,7 +3127,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ParticleAmountCache.anInt2840 = 0
             FloatGrid.anInt4979 = 0
             NativeTerrainTile.anInt8297 = 0
-            Class288_Sub1.anInt8576 = 0
+            ParticleEmitterDefExt.anInt8576 = 0
             DoublyLinkedNodeList.anInt3159 = 0
             CompositeNpcModelBuilder.anInt2099 = 0
             SphereMapMaterialPass.anInt6318 = 0

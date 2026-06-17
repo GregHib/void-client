@@ -227,7 +227,7 @@ object ClientLoadStateMachine {
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1037) {
             val i_11_ = (Class348_Sub22.method2958(22388, CameraRotationStub.aClass45_322!!) + Class348_Sub49_Sub2.method3405(2012104999, true))
-            val i_12_ = (Class288_Sub1.method2188(-30477) - -method3256(2))
+            val i_12_ = (ParticleEmitterDefExt.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
         if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, RenderConfigFactory.aLocDefinitionCache_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aSeqDefinitionCache_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)

@@ -2049,7 +2049,7 @@ object Class66 {
                 return
             }
         } else if (i >= 6700) {
-            if (i < 6800 && SceneRegionState.aHudTabPanel_196 == Class288.aHudTabPanel_4953) {
+            if (i < 6800 && SceneRegionState.aHudTabPanel_196 == ParticleEmitterDef.aHudTabPanel_4953) {
                 if (i == 6700) {
                     var i_174_ = MinimapSpriteRenderer.aClass356_4915!!.method3474(1)
                     if (RenderNode.anInt9721 != -1) i_174_++

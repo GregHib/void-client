@@ -4,7 +4,7 @@ import Class62.method596
 /* Class288_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class288_Sub1 internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_0_: Int, i_1_: Int, i_2_: Int) : Class288(i, screenAnchorAlignment, class341, i_0_, i_1_) {
+class ParticleEmitterDefExt internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_0_: Int, i_1_: Int, i_2_: Int) : ParticleEmitterDef(i, screenAnchorAlignment, class341, i_0_, i_1_) {
     var anInt8577: Int = 0
 
     init {
@@ -34,14 +34,14 @@ class Class288_Sub1 internal constructor(i: Int, screenAnchorAlignment: ScreenAn
         }
 
         @JvmStatic
-        fun method2189(class348_sub49: Class348_Sub49, i: Int): Class288 {
+        fun method2189(class348_sub49: Class348_Sub49, i: Int): ParticleEmitterDef {
             anInt8576++
             val i_3_ = class348_sub49.readUnsignedShort(842397944)
             val class221 = method1248(48)[class348_sub49.readUnsignedByte(255)]
             val class341 = method596(20000)[class348_sub49.readUnsignedByte(255)]
             val i_4_ = class348_sub49.readShort(13638)
             val i_5_ = class348_sub49.readShort(13638)
-            return Class288(i_3_, class221, class341, i_4_, i_5_)
+            return ParticleEmitterDef(i_3_, class221, class341, i_4_, i_5_)
         }
 
         @JvmStatic
