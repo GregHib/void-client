@@ -123,7 +123,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
         if (i != -21987) method2818()
         val class348_sub42_sub4 = aClass262_8861!!.method1995(4) as Class348_Sub42_Sub4?
         if (class348_sub42_sub4 == null) return -1.0
-        return (-((class348_sub42_sub4.aShortArrayArray9518[0])!!.size.toFloat() / Class22.anInt339.toFloat()).toDouble() + class348_sub42_sub4.aDouble9512)
+        return (-((class348_sub42_sub4.aShortArrayArray9518[0])!!.size.toFloat() / HslColorConfig.anInt339.toFloat()).toDouble() + class348_sub42_sub4.aDouble9512)
     }
 
     fun method2838(i: Int, d: Double, i_14_: Int): Class348_Sub42_Sub4? {

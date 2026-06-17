@@ -150,7 +150,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ParticleDefLoader.anInt2460 = 0
             Class88.anInt1493 = 0
             Class348_Sub23_Sub1.anInt8998 = 0
-            Class22.anInt329 = 0
+            HslColorConfig.anInt329 = 0
             OpenGlRenderer.anInt7596 = 0
             Class79.anInt1341 = 0
             Class318_Sub1_Sub3_Sub3.anInt10311 = 0
@@ -834,7 +834,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5505 = 0
             Class255.anInt3276 = 0
             Class292.anInt4800 = 0
-            Class22.anInt333 = 0
+            HslColorConfig.anInt333 = 0
             Class348_Sub42_Sub1.anInt9497 = 0
             Class60.anInt1088 = 0
             ProjectionCameraTransform.anInt5760 = 0
@@ -1003,7 +1003,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub8.anInt5918 = 0
             HitsplatDefinition.anInt2012 = 0
             Class285_Sub2.anInt8506 = 0
-            Class22.anInt338 = 0
+            HslColorConfig.anInt338 = 0
             Class64_Sub3.anInt5641 = 0
             Class45.anInt649 = 0
             GameAppletFrame.anInt2 = 0
@@ -2211,7 +2211,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class79.anInt1389 = 0
             Class58.anInt1063 = 0
             Class348_Sub40_Sub15.anInt9218 = 0
-            Class22.anInt340 = 0
+            HslColorConfig.anInt340 = 0
             Class239_Sub6.anInt5895 = 0
             MinimapRenderer.anInt1589 = 0
             Class239_Sub22.anInt6074 = 0
@@ -2236,7 +2236,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9841 = 0
             Class64_Sub3.anInt5569 = 0
             Class239_Sub24.anInt6084 = 0
-            Class22.anInt328 = 0
+            HslColorConfig.anInt328 = 0
             Class271.anInt3469 = 0
             ParticleSystemState.anInt2206 = 0
             NativeRenderer.anInt7995 = 0

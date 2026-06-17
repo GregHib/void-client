@@ -1,4 +1,4 @@
-import Class22.Companion.method295
+import HslColorConfig.Companion.method295
 import Class59_Sub1.Companion.method552
 import Renderer.Companion.method3692
 import jaggl.OpenGL.Companion.glLoadIdentity

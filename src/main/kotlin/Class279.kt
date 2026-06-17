@@ -49,7 +49,7 @@ open class Class279 {
                 if (i != -6858) anInt3616 = 114
                 while ( /**/aLong3602 + 5000L < l) {
                     method2089(256, (-99).toByte())
-                    aLong3602 += (256000 / Class22.anInt339).toLong()
+                    aLong3602 += (256000 / HslColorConfig.anInt339).toLong()
                     l = method599(-96)
                 }
             } catch (exception: Exception) {
@@ -123,7 +123,7 @@ open class Class279 {
         method1573(`is`, 0, i_5_)
         anInt3615 -= i
         if (aClass348_Sub16_3604 != null && anInt3615 <= 0) {
-            anInt3615 += Class22.anInt339 shr 4
+            anInt3615 += HslColorConfig.anInt339 shr 4
             Class348_Sub15.method2814(aClass348_Sub16_3604!!, 112)
             method2085(-1846918107, aClass348_Sub16_3604!!, aClass348_Sub16_3604!!.method2820())
             var i_6_ = 0

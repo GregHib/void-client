@@ -43,7 +43,7 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
     private fun method2824(i: Int, i_4_: Byte, class348_sub43: Class348_Sub43) {
         var i = i
         if (((aClass348_Sub16_Sub3_8852.anIntArray8895[class348_sub43.anInt7067]) and 0x4) != 0 && (class348_sub43.anInt7087 < 0)) {
-            val i_5_ = ((aClass348_Sub16_Sub3_8852.anIntArray8906!![class348_sub43.anInt7067]) / Class22.anInt339)
+            val i_5_ = ((aClass348_Sub16_Sub3_8852.anIntArray8906!![class348_sub43.anInt7067]) / HslColorConfig.anInt339)
             val i_6_ = ((-class348_sub43.anInt7082 + (1048575 + i_5_)) / i_5_)
             class348_sub43.anInt7082 = (i_5_ * i + class348_sub43.anInt7082 and 0xfffff)
             if (i_6_ <= i) {
@@ -94,7 +94,7 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
             anInt8859++
             if (i_10_.toInt() != -114) method2821()
             if ((0x4 and (aClass348_Sub16_Sub3_8852.anIntArray8895[class348_sub43!!.anInt7067])) != 0 && (class348_sub43.anInt7087 < 0)) {
-                val i_12_ = ((aClass348_Sub16_Sub3_8852.anIntArray8906!![class348_sub43.anInt7067]) / Class22.anInt339)
+                val i_12_ = ((aClass348_Sub16_Sub3_8852.anIntArray8906!![class348_sub43.anInt7067]) / HslColorConfig.anInt339)
                 while (true) {
                     val i_13_ = ((i_12_ + (1048575 + -class348_sub43.anInt7082)) / i_12_)
                     if (i_13_ > i_11_) break
@@ -102,7 +102,7 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
                     i_9_ += i_13_
                     class348_sub43.anInt7082 += -1048576 + i_12_ * i_13_
                     i_11_ -= i_13_
-                    var i_14_ = Class22.anInt339 / 100
+                    var i_14_ = HslColorConfig.anInt339 / 100
                     val i_15_ = 262144 / i_12_
                     if (i_15_ < i_14_) i_14_ = i_15_
                     val class348_sub16_sub5 = (class348_sub43.aClass348_Sub16_Sub5_7081)!!

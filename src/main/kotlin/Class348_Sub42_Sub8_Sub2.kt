@@ -231,7 +231,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class22.aIntRange_330) {
+            if (Class348_Sub3.aIntRange_6584 == HslColorConfig.aIntRange_330) {
                 val bool_15_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-34).toByte())
                 var string_16_ = string

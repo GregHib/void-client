@@ -32,7 +32,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
     private val anIntArray3128 = intArrayOf(0, 0, 0, 256, 512, 512, 512, 256, 256, 384, 128, 128, 256)
     private val aByteArrayArrayArray3129: Array<Array<ByteArray?>?>
     var anInt3130: Int = 0
-    private fun method1675(i: Int, i_0_: Int, `is`: Array<ByteArray?>?, i_1_: Int, is_2_: Array<ByteArray?>?, i_3_: Int, class277: Class277?, class22: Class22?, bools: BooleanArray?, i_4_: Int, is_5_: Array<ByteArray?>?, i_6_: Int, i_7_: Int, var_renderer: Renderer?) {
+    private fun method1675(i: Int, i_0_: Int, `is`: Array<ByteArray?>?, i_1_: Int, is_2_: Array<ByteArray?>?, i_3_: Int, class277: Class277?, hslColorConfig: HslColorConfig?, bools: BooleanArray?, i_4_: Int, is_5_: Array<ByteArray?>?, i_6_: Int, i_7_: Int, var_renderer: Renderer?) {
         do {
             try {
                 anInt3112++
@@ -259,7 +259,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(
                     runtimeexception,
-                    ("sr.M(" + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (class277 != null) "{...}" else "null") + ',' + (if (class22 != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
+                    ("sr.M(" + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (class277 != null) "{...}" else "null") + ',' + (if (hslColorConfig != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
                 )
             }
             break

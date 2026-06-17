@@ -789,22 +789,22 @@ open class Class75 {
                     if (i_202_ < anInt1259) {
                         val i_205_ = `is`[i_202_ + i_204_ * anInt1259].toInt() and 0xff
                         if (i_205_ > 0) {
-                            val class22: Class22? = aParticleDefLoader_1240!!.method1380(true, i_205_ - 1)
-                            is_196_[i_204_] += class22!!.anInt341
-                            is_197_[i_204_] += class22.anInt332
-                            is_198_[i_204_] += class22.anInt335
-                            is_199_[i_204_] += class22.anInt343
+                            val hslColorConfig: HslColorConfig? = aParticleDefLoader_1240!!.method1380(true, i_205_ - 1)
+                            is_196_[i_204_] += hslColorConfig!!.anInt341
+                            is_197_[i_204_] += hslColorConfig.anInt332
+                            is_198_[i_204_] += hslColorConfig.anInt335
+                            is_199_[i_204_] += hslColorConfig.anInt343
                             is_200_[i_204_]++
                         }
                     }
                     if (i_203_ >= 0) {
                         val i_206_ = `is`[i_203_ + i_204_ * anInt1259].toInt() and 0xff
                         if (i_206_ > 0) {
-                            val class22: Class22? = aParticleDefLoader_1240!!.method1380(true, i_206_ - 1)
-                            is_196_[i_204_] -= class22!!.anInt341
-                            is_197_[i_204_] -= class22.anInt332
-                            is_198_[i_204_] -= class22.anInt335
-                            is_199_[i_204_] -= class22.anInt343
+                            val hslColorConfig: HslColorConfig? = aParticleDefLoader_1240!!.method1380(true, i_206_ - 1)
+                            is_196_[i_204_] -= hslColorConfig!!.anInt341
+                            is_197_[i_204_] -= hslColorConfig.anInt332
+                            is_198_[i_204_] -= hslColorConfig.anInt335
+                            is_199_[i_204_] -= hslColorConfig.anInt343
                             is_200_[i_204_]--
                         }
                     }

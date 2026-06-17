@@ -71,7 +71,7 @@ class IOException_Sub1(string: String?) : IOException(string) {
             anInt87++
             require(!(i_10_ < 8000 || i_10_ > 48000))
             Class253.anInt3248 = i
-            Class22.anInt339 = i_10_
+            HslColorConfig.anInt339 = i_10_
             Class282.aBoolean3652 = bool
             if (bool_9_ != true) method130(-125)
         }

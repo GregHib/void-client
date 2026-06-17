@@ -45,7 +45,7 @@ class Class279_Sub1 : Class279() {
                 }
             }
         }
-        anAudioFormat6179 = AudioFormat(Class22.anInt339.toFloat(), 16, if (Class282.aBoolean3652) 2 else 1, true, false)
+        anAudioFormat6179 = AudioFormat(HslColorConfig.anInt339.toFloat(), 16, if (Class282.aBoolean3652) 2 else 1, true, false)
         aByteArray6176 = ByteArray(256 shl (if (!Class282.aBoolean3652) 1 else 2))
     }
 

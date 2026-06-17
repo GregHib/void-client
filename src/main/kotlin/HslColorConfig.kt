@@ -1,7 +1,10 @@
 import Class239_Sub23.Companion.method1819
 import java.awt.Canvas
 
-class Class22 {
+/*
+ * Class22
+ */
+class HslColorConfig {
     @JvmField
     var anInt331: Int = -1
     @JvmField

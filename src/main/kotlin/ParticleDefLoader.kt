@@ -15,24 +15,24 @@ class ParticleDefLoader internal constructor(class230: Class230?, i: Int, class4
         }
     }
 
-    fun method1380(bool: Boolean, i: Int): Class22? {
+    fun method1380(bool: Boolean, i: Int): HslColorConfig? {
         anInt2460++
         if (bool != true) return null
-        var class22: Class22?
+        var hslColorConfig: HslColorConfig?
         synchronized(aClass60_2458) {
-            class22 = aClass60_2458.method583(i.toLong(), 77) as Class22?
+            hslColorConfig = aClass60_2458.method583(i.toLong(), 77) as HslColorConfig?
         }
-        if (class22 != null) return class22
+        if (hslColorConfig != null) return hslColorConfig
         val `is`: ByteArray?
         synchronized(aClass45_2461!!) {
             `is` = aClass45_2461.method410(-1860, 1, i)
         }
-        class22 = Class22()
-        if (`is` != null) class22.method290(Class348_Sub49(`is`), -1)
+        hslColorConfig = HslColorConfig()
+        if (`is` != null) hslColorConfig.method290(Class348_Sub49(`is`), -1)
         synchronized(aClass60_2458) {
-            aClass60_2458.method582(class22, i.toLong(), (-124).toByte())
+            aClass60_2458.method582(hslColorConfig, i.toLong(), (-124).toByte())
         }
-        return class22
+        return hslColorConfig
     }
 
     fun method1381(bool: Boolean) {

@@ -26,7 +26,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
             var i = i
             try {
                 anInt2583++
-                check(Class22.anInt339 != 0)
+                check(HslColorConfig.anInt339 != 0)
                 require(!(i_0_ < 0 || i_0_ >= 2))
                 if (i < 256) i = 256
                 try {

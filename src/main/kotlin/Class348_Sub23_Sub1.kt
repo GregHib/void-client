@@ -42,7 +42,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
             d = aClass348_Sub16_Sub2_8995!!.method2837(i.toInt() xor 0x5599.inv())
             if (d < 0.0) d = aDouble9005
         }
-        return -(256.0f / Class22.anInt339.toFloat()).toDouble() + d
+        return -(256.0f / HslColorConfig.anInt339.toFloat()).toDouble() + d
     }
 
     override fun method2961(i: Byte) {
@@ -64,7 +64,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
                 if (aVorbisInfo9006.channels > 2 || aVorbisInfo9006.channels < 1) throw RuntimeException(aVorbisInfo9006.channels.toString())
                 aDSPState8993 = DSPState(aVorbisInfo9006)
                 aVorbisBlock9000 = VorbisBlock(aDSPState8993)
-                aAudioResampler_8994 = AudioResampler(aVorbisInfo9006.rate, Class22.anInt339)
+                aAudioResampler_8994 = AudioResampler(aVorbisInfo9006.rate, HslColorConfig.anInt339)
                 aClass348_Sub16_Sub2_8995 = Class348_Sub16_Sub2(aVorbisInfo9006.channels)
             }
         } else {
