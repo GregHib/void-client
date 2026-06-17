@@ -146,7 +146,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
         aShort10423 = i_12_.toShort()
         aShort10422 = i_13_.toShort()
         anInt10421 = i_14_
-        this.aByte8795 = this.aClass318_Sub7_10419.aClass129_6436!!.aByte1875
+        this.aByte8795 = this.aClass318_Sub7_10419.aModelFacePriorityNode_6436!!.aByte1875
         method2521()
     }
 
@@ -372,7 +372,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
         aShort10423 = i_68_.toShort()
         aShort10422 = i_69_.toShort()
         anInt10421 = i_70_
-        this.aByte8795 = this.aClass318_Sub7_10419.aClass129_6436!!.aByte1875
+        this.aByte8795 = this.aClass318_Sub7_10419.aModelFacePriorityNode_6436!!.aByte1875
         method2521()
     }
 }

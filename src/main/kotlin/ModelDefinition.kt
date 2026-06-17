@@ -25,7 +25,7 @@ class ModelDefinition {
     var aShortArray1842: ShortArray = shortArrayOf()
     var aByteArray1843: ByteArray? = null
     var anIntArray1844: IntArray = intArrayOf()
-    var aClass129Array1846: Array<Class129?>? = null
+    var aModelFacePriorityNodeArray1846: Array<ModelFacePriorityNode?>? = null
     var anIntArray1847: IntArray = intArrayOf()
     var aShortArray1849: ShortArray = shortArrayOf()
     var aByte1851: Byte
@@ -741,7 +741,7 @@ class ModelDefinition {
         if (bool_125_) {
             val i_184_ = class348_sub49.readUnsignedByte(255)
             if (i_184_ > 0) {
-                this.aClass129Array1846 = arrayOfNulls<Class129>(i_184_)
+                this.aModelFacePriorityNodeArray1846 = arrayOfNulls<ModelFacePriorityNode>(i_184_)
                 var i_185_ = 0
                 while (i_184_ > i_185_) {
                     val i_186_ = class348_sub49.readUnsignedShort(842397944)
@@ -749,7 +749,7 @@ class ModelDefinition {
                     val i_188_: Byte
                     if (i_128_ != 255) i_188_ = i_128_.toByte()
                     else i_188_ = this.aByteArray1839!![i_187_]
-                    this.aClass129Array1846!![i_185_] = (Class129(i_186_, this.aShortArray1863[i_187_].toInt(), this.aShortArray1835!![i_187_].toInt(), this.aShortArray1855[i_187_].toInt(), i_188_))
+                    this.aModelFacePriorityNodeArray1846!![i_185_] = (ModelFacePriorityNode(i_186_, this.aShortArray1863[i_187_].toInt(), this.aShortArray1835!![i_187_].toInt(), this.aShortArray1855[i_187_].toInt(), i_188_))
                     i_185_++
                 }
             }
@@ -894,7 +894,7 @@ class ModelDefinition {
                 this.anInt1818 += class124_225_.anInt1818
                 bool = bool or (class124_225_.aByteArray1843 != null)
                 if (class124_225_.aClass162Array1832 != null) i_218_ += (class124_225_.aClass162Array1832!!).size
-                if (class124_225_.aClass129Array1846 != null) i_216_ += (class124_225_.aClass129Array1846!!).size
+                if (class124_225_.aModelFacePriorityNodeArray1846 != null) i_216_ += (class124_225_.aModelFacePriorityNodeArray1846!!).size
                 if (class124_225_.aClass342Array1866 != null) i_217_ += (class124_225_.aClass342Array1866!!).size
                 bool_222_ = (bool_222_ or (class124_225_.aShortArray1822 != null))
                 bool_221_ = (bool_221_ or (class124_225_.aByteArray1820 != null))
@@ -936,7 +936,7 @@ class ModelDefinition {
         this.aShortArray1862 = ShortArray(this.anInt1817)
         this.anIntArray1841 = IntArray(this.anInt1836)
         this.anIntArray1847 = IntArray(this.anInt1836)
-        if (i_216_ > 0) this.aClass129Array1846 = arrayOfNulls<Class129>(i_216_)
+        if (i_216_ > 0) this.aModelFacePriorityNodeArray1846 = arrayOfNulls<ModelFacePriorityNode>(i_216_)
         this.aShortArray1855 = ShortArray(this.anInt1817)
         if (bool_220_) this.aByteArray1834 = ByteArray(this.anInt1817)
         this.aShortArray1842 = ShortArray(this.anInt1836)
@@ -983,13 +983,13 @@ class ModelDefinition {
                     this.anInt1817++
                     i_230_++
                 }
-                if (class124_228_.aClass129Array1846 != null) {
+                if (class124_228_.aModelFacePriorityNodeArray1846 != null) {
                     var i_231_ = 0
-                    while ((class124_228_.aClass129Array1846!!.size > i_231_)) {
-                        val i_232_ = method1104(class124_228_, 0, class124_228_.aClass129Array1846!![i_231_]!!.anInt1881, i_227_)
-                        val i_233_ = method1104(class124_228_, 0, class124_228_.aClass129Array1846!![i_231_]!!.anInt1877, i_227_)
-                        val i_234_ = method1104(class124_228_, 0, class124_228_.aClass129Array1846!![i_231_]!!.anInt1892, i_227_)
-                        this.aClass129Array1846!![i_216_] = class124_228_.aClass129Array1846!![i_231_]!!.method1124(i_233_, -1, i_234_, i_232_)
+                    while ((class124_228_.aModelFacePriorityNodeArray1846!!.size > i_231_)) {
+                        val i_232_ = method1104(class124_228_, 0, class124_228_.aModelFacePriorityNodeArray1846!![i_231_]!!.anInt1881, i_227_)
+                        val i_233_ = method1104(class124_228_, 0, class124_228_.aModelFacePriorityNodeArray1846!![i_231_]!!.anInt1877, i_227_)
+                        val i_234_ = method1104(class124_228_, 0, class124_228_.aModelFacePriorityNodeArray1846!![i_231_]!!.anInt1892, i_227_)
+                        this.aModelFacePriorityNodeArray1846!![i_216_] = class124_228_.aModelFacePriorityNodeArray1846!![i_231_]!!.method1124(i_233_, -1, i_234_, i_232_)
                         i_216_++
                         i_231_++
                     }

@@ -65,13 +65,13 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         this.aBoolean6482 = bool
     }
 
-    private fun method2532(var_renderer: Renderer?, class129s: Array<Class129?>?, bool: Boolean) {
+    private fun method2532(var_renderer: Renderer?, modelFacePriorityNodes: Array<ModelFacePriorityNode?>?, bool: Boolean) {
         for (i in 0..31) aBooleanArray6474!![i] = false
         var class318_sub7 = aClass243_6478.method1872(8) as Class318_Sub7?
         while_110_@ while (class318_sub7 != null) {
-            if (class129s != null) {
-                for (i in class129s.indices) {
-                    if ((class318_sub7!!.aClass129_6436 == class129s[i]) || (class318_sub7.aClass129_6436 == class129s[i]!!.aClass129_1888)) {
+            if (modelFacePriorityNodes != null) {
+                for (i in modelFacePriorityNodes.indices) {
+                    if ((class318_sub7!!.aModelFacePriorityNode_6436 == modelFacePriorityNodes[i]) || (class318_sub7.aModelFacePriorityNode_6436 == modelFacePriorityNodes[i]!!.aModelFacePriorityNode_1888)) {
                         aBooleanArray6474!![i] = true
                         class318_sub7.method2507(true)
                         class318_sub7.aBoolean6446 = false
@@ -88,11 +88,11 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
             }
             class318_sub7 = aClass243_6478.method1878((-28).toByte()) as? Class318_Sub7?
         }
-        if (class129s != null) {
-            for (i in class129s.indices) {
+        if (modelFacePriorityNodes != null) {
+            for (i in modelFacePriorityNodes.indices) {
                 if (i == 32 || anInt6480 == 32) break
                 if (!aBooleanArray6474!![i]) {
-                    val class318_sub7 = Class318_Sub7(var_renderer, class129s[i], this, aLong6472)
+                    val class318_sub7 = Class318_Sub7(var_renderer, modelFacePriorityNodes[i], this, aLong6472)
                     aClass243_6478.method1869(-126, class318_sub7)
                     anInt6480++
                     aBooleanArray6474!![i] = true
@@ -134,9 +134,9 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         return true
     }
 
-    fun method2536(var_renderer: Renderer?, l: Long, class129s: Array<Class129?>?, class342s: Array<Class342?>?, bool: Boolean) {
+    fun method2536(var_renderer: Renderer?, l: Long, modelFacePriorityNodes: Array<ModelFacePriorityNode?>?, class342s: Array<Class342?>?, bool: Boolean) {
         if (!this.aBoolean6470) {
-            method2532(var_renderer, class129s, bool)
+            method2532(var_renderer, modelFacePriorityNodes, bool)
             method2538(class342s, bool)
             aLong6472 = l
         }

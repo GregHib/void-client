@@ -10,11 +10,11 @@ import kotlin.math.sqrt
 /* Class318_Sub7 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub7 internal constructor(var_renderer: Renderer?, class129: Class129?, class318_sub10: Class318_Sub10?, l: Long) : Class318() {
+class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePriorityNode: ModelFacePriorityNode?, class318_sub10: Class318_Sub10?, l: Long) : Class318() {
     var aClass243_6433: Class243? = null
     private var anInt6434 = 0
     private val aLong6435: Long
-    var aClass129_6436: Class129? = null
+    var aModelFacePriorityNode_6436: ModelFacePriorityNode? = null
     var aClass318_Sub10_6439: Class318_Sub10? = null
     var aClass181_6441: Class181? = null
     var aClass284_6444: Class284
@@ -31,17 +31,17 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, class129: Clas
     private var anInt6459 = 0
 
     fun method2507(bool: Boolean) {
-        this.aClass284_6444.anInt3670 = this.aClass129_6436!!.anInt1890
+        this.aClass284_6444.anInt3670 = this.aModelFacePriorityNode_6436!!.anInt1890
         anInt6448++
-        this.aClass284_6444.anInt3666 = this.aClass129_6436!!.anInt1889
-        this.aClass284_6444.anInt3668 = this.aClass129_6436!!.anInt1883
-        this.aClass284_6444.anInt3669 = this.aClass129_6436!!.anInt1874
-        this.aClass284_6444.anInt3680 = this.aClass129_6436!!.anInt1876
-        this.aClass284_6444.anInt3679 = this.aClass129_6436!!.anInt1880
-        this.aClass284_6444.anInt3678 = this.aClass129_6436!!.anInt1891
-        this.aClass284_6444.anInt3672 = this.aClass129_6436!!.anInt1884
+        this.aClass284_6444.anInt3666 = this.aModelFacePriorityNode_6436!!.anInt1889
+        this.aClass284_6444.anInt3668 = this.aModelFacePriorityNode_6436!!.anInt1883
+        this.aClass284_6444.anInt3669 = this.aModelFacePriorityNode_6436!!.anInt1874
+        this.aClass284_6444.anInt3680 = this.aModelFacePriorityNode_6436!!.anInt1876
+        this.aClass284_6444.anInt3679 = this.aModelFacePriorityNode_6436!!.anInt1880
+        this.aClass284_6444.anInt3678 = this.aModelFacePriorityNode_6436!!.anInt1891
+        this.aClass284_6444.anInt3672 = this.aModelFacePriorityNode_6436!!.anInt1884
         if (bool == true) {
-            this.aClass284_6444.anInt3675 = this.aClass129_6436!!.anInt1882
+            this.aClass284_6444.anInt3675 = this.aModelFacePriorityNode_6436!!.anInt1882
             if ((this.aClass284_6444.anInt3675 == (this.aClass284_6444.anInt3668)) && ((this.aClass284_6444.anInt3680) == (this.aClass284_6444.anInt3668)) && ((this.aClass284_6444.anInt3670) == (this.aClass284_6444.anInt3678)) && ((this.aClass284_6444.anInt3669) == (this.aClass284_6444.anInt3670)) && ((this.aClass284_6444.anInt3679) == (this.aClass284_6444.anInt3666)) && ((this.aClass284_6444.anInt3679) == (this.aClass284_6444.anInt3672))) aBoolean6453 =
                 true
             else if (aBoolean6453) {
@@ -200,18 +200,18 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, class129: Clas
                     val class284 = aClass284_6449
                     aClass284_6449 = this.aClass284_6444
                     this.aClass284_6444 = class284
-                    this.aClass284_6444.anInt3678 = (this.aClass129_6436!!.anInt1891)
-                    this.aClass284_6444.anInt3675 = (this.aClass129_6436!!.anInt1882)
-                    this.aClass284_6444.anInt3670 = (this.aClass129_6436!!.anInt1890)
-                    this.aClass284_6444.anInt3672 = (this.aClass129_6436!!.anInt1884)
-                    this.aClass284_6444.anInt3680 = (this.aClass129_6436!!.anInt1876)
-                    this.aClass284_6444.anInt3679 = (this.aClass129_6436!!.anInt1880)
-                    this.aClass284_6444.anInt3666 = (this.aClass129_6436!!.anInt1889)
+                    this.aClass284_6444.anInt3678 = (this.aModelFacePriorityNode_6436!!.anInt1891)
+                    this.aClass284_6444.anInt3675 = (this.aModelFacePriorityNode_6436!!.anInt1882)
+                    this.aClass284_6444.anInt3670 = (this.aModelFacePriorityNode_6436!!.anInt1890)
+                    this.aClass284_6444.anInt3672 = (this.aModelFacePriorityNode_6436!!.anInt1884)
+                    this.aClass284_6444.anInt3680 = (this.aModelFacePriorityNode_6436!!.anInt1876)
+                    this.aClass284_6444.anInt3679 = (this.aModelFacePriorityNode_6436!!.anInt1880)
+                    this.aClass284_6444.anInt3666 = (this.aModelFacePriorityNode_6436!!.anInt1889)
                     this.aClass284_6444.anInt3673 = aClass284_6449.anInt3673
-                    this.aClass284_6444.anInt3669 = (this.aClass129_6436!!.anInt1874)
+                    this.aClass284_6444.anInt3669 = (this.aModelFacePriorityNode_6436!!.anInt1874)
                     this.aClass284_6444.anInt3671 = aClass284_6449.anInt3671
                     this.aClass284_6444.anInt3667 = aClass284_6449.anInt3667
-                    this.aClass284_6444.anInt3668 = (this.aClass129_6436!!.anInt1883)
+                    this.aClass284_6444.anInt3668 = (this.aModelFacePriorityNode_6436!!.anInt1883)
                 }
                 this.anInt6447 = 0
                 var class318_sub9_sub2_sub1 = this.aClass243_6433!!.method1872(i_9_ + 5) as Class318_Sub9_Sub2_Sub1?
@@ -236,9 +236,9 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, class129: Clas
         aBoolean6453 = false
         try {
             aLong6435 = l
-            this.aClass129_6436 = class129
+            this.aModelFacePriorityNode_6436 = modelFacePriorityNode
             this.aClass318_Sub10_6439 = class318_sub10
-            this.aClass181_6441 = this.aClass129_6436!!.method1125(59.toByte())
+            this.aClass181_6441 = this.aModelFacePriorityNode_6436!!.method1125(59.toByte())
             if (!var_renderer!!.method3644() && (this.aClass181_6441!!.anInt2387) != -1) this.aClass181_6441 = method3591((this.aClass181_6441!!.anInt2387), 0)
             this.aClass243_6433 = Class243()
             anInt6434 = (anInt6434 + 64.0 * Math.random()).toInt()
@@ -253,7 +253,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, class129: Clas
             aClass284_6449.anInt3672 = this.aClass284_6444.anInt3672
             aClass284_6449.anInt3679 = this.aClass284_6444.anInt3679
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class129 != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (modelFacePriorityNode != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 

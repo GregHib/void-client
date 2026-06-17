@@ -296,7 +296,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class206.anInt4867 = 0
             Class5_Sub1.anInt8351 = 0
             OutputStream_Sub2.anInt105 = 0
-            Class129.anInt1873 = 0
+            ModelFacePriorityNode.anInt1873 = 0
             Class348_Sub13.anInt6755 = 0
             Class348_Sub44.anInt7096 = 0
             Class239_Sub11.anInt5958 = 0
@@ -1776,7 +1776,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class327.anInt4093 = 0
             Class186_Sub1.anInt5805 = 0
             OpenGlRenderer.anInt7584 = 0
-            Class129.anInt1893 = 0
+            ModelFacePriorityNode.anInt1893 = 0
             Class304.anInt3849 = 0
             Class88.anInt1501 = 0
             Class239_Sub6.anInt5898 = 0

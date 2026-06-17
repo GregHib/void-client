@@ -66,7 +66,7 @@ class Class64_Sub3 : Class64 {
     private var anInt5632: Int
     private var aShort5634: Short = 0
     private var aBoolean5638: Boolean
-    private var aClass129Array5640: Array<Class129?>? = null
+    private var aModelFacePriorityNodeArray5640: Array<ModelFacePriorityNode?>? = null
     private var anInt5642: Int
     private var anIntArray5644: IntArray? = null
     private var aShort5645: Short = 0
@@ -1066,7 +1066,7 @@ class Class64_Sub3 : Class64 {
             class64_sub3_211_.anIntArrayArray5553 = anIntArrayArray5553
             class64_sub3_211_.aShortArray5573 = aShortArray5573
             class64_sub3_211_.anIntArrayArray5627 = anIntArrayArray5627
-            class64_sub3_211_.aClass129Array5640 = aClass129Array5640
+            class64_sub3_211_.aModelFacePriorityNodeArray5640 = aModelFacePriorityNodeArray5640
             return class64_sub3_211_
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("paa.K(" + (if (class64_sub3_211_ != null) "{...}" else "null") + ',' + i + ',' + i_212_ + ',' + bool + ',' + (if (class64_sub3_213_ != null) "{...}" else "null") + ',' + bool_214_ + ')'))
@@ -1716,7 +1716,7 @@ class Class64_Sub3 : Class64 {
         anInt5531++
         if (aBoolean5555) {
             aBoolean5555 = false
-            if (aClass129Array5640 == null && aClass342Array5541 == null && aMapSceneTileDefinitionArray5621 == null) {
+            if (aModelFacePriorityNodeArray5640 == null && aClass342Array5541 == null && aMapSceneTileDefinitionArray5621 == null) {
                 if (anIntArray5543 != null && !Class337.method2659(123.toByte(), anInt5648, anInt5556)) {
                     if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anInterface2_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
@@ -1819,9 +1819,9 @@ class Class64_Sub3 : Class64 {
         if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
     }
 
-    public override fun method619(): Array<Class129?>? {
+    public override fun method619(): Array<ModelFacePriorityNode?>? {
         anInt5625++
-        return aClass129Array5640
+        return aModelFacePriorityNodeArray5640
     }
 
     public override fun method604(): Array<Class342?>? {
@@ -1845,20 +1845,20 @@ class Class64_Sub3 : Class64 {
             try {
                 anInt5548++
                 val class101_sub3 = abstractCameraTransform as ProjectionCameraTransform
-                if (aClass129Array5640 != null) {
-                    for (i in aClass129Array5640!!.indices) {
-                        val class129 = aClass129Array5640!![i]!!
-                        var class129_384_: Class129? = class129
-                        if (class129.aClass129_1888 != null) class129_384_ = class129.aClass129_1888
-                        class129_384_!!.anInt1882 = (class101_sub3.aFloat5747 + (((anIntArray5593!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5750)) + ((class101_sub3.aFloat5770) * (anIntArray5543!![(class129.anInt1881)]).toFloat()) + ((anIntArray5644!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5781)))).toInt()
-                        class129_384_.anInt1891 = (class101_sub3.aFloat5772 + (((anIntArray5593!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5769)) + ((class101_sub3.aFloat5761) * (anIntArray5543!![(class129.anInt1881)]).toFloat()) + ((anIntArray5644!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5762)))).toInt()
-                        class129_384_.anInt1889 = (class101_sub3.aFloat5751 + (((anIntArray5543!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (anIntArray5593!![(class129.anInt1881)]).toFloat()) + ((anIntArray5644!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5784)))).toInt()
-                        class129_384_.anInt1883 = (class101_sub3.aFloat5747 + (((class101_sub3.aFloat5770) * (anIntArray5543!![(class129.anInt1877)]).toFloat()) + ((anIntArray5593!![(class129.anInt1877)]).toFloat() * (class101_sub3.aFloat5750)) + ((anIntArray5644!![(class129.anInt1877)]).toFloat() * (class101_sub3.aFloat5781)))).toInt()
-                        class129_384_.anInt1890 = (class101_sub3.aFloat5772 + (((class101_sub3.aFloat5762) * (anIntArray5644!![(class129.anInt1877)]).toFloat()) + (((anIntArray5543!![(class129.anInt1877)]).toFloat() * (class101_sub3.aFloat5761)) + ((anIntArray5593!![(class129.anInt1877)]).toFloat() * class101_sub3.aFloat5769)))).toInt()
-                        class129_384_.anInt1880 = (class101_sub3.aFloat5751 + (((class101_sub3.aFloat5784) * (anIntArray5644!![(class129.anInt1877)]).toFloat()) + (((class101_sub3.aFloat5754) * (anIntArray5593!![(class129.anInt1877)]).toFloat()) + ((anIntArray5543!![(class129.anInt1877)]).toFloat() * class101_sub3.aFloat5756)))).toInt()
-                        class129_384_.anInt1876 = (class101_sub3.aFloat5747 + (((anIntArray5593!![(class129.anInt1892)]).toFloat() * (class101_sub3.aFloat5750)) + ((anIntArray5543!![(class129.anInt1892)]).toFloat() * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5781) * (anIntArray5644!![(class129.anInt1892)]).toFloat()))).toInt()
-                        class129_384_.anInt1874 = (class101_sub3.aFloat5772 + (((anIntArray5644!![(class129.anInt1892)]).toFloat() * (class101_sub3.aFloat5762)) + (((class101_sub3.aFloat5761) * (anIntArray5543!![(class129.anInt1892)]).toFloat()) + ((class101_sub3.aFloat5769) * (anIntArray5593!![(class129.anInt1892)]).toFloat())))).toInt()
-                        class129_384_.anInt1884 = (((class101_sub3.aFloat5754) * (anIntArray5593!![(class129.anInt1892)]).toFloat()) + ((class101_sub3.aFloat5756) * (anIntArray5543!![(class129.anInt1892)]).toFloat()) + ((anIntArray5644!![(class129.anInt1892)]).toFloat() * (class101_sub3.aFloat5784)) + (class101_sub3.aFloat5751)).toInt()
+                if (aModelFacePriorityNodeArray5640 != null) {
+                    for (i in aModelFacePriorityNodeArray5640!!.indices) {
+                        val class129 = aModelFacePriorityNodeArray5640!![i]!!
+                        var modelFacePriorityNode_384_: ModelFacePriorityNode? = class129
+                        if (class129.aModelFacePriorityNode_1888 != null) modelFacePriorityNode_384_ = class129.aModelFacePriorityNode_1888
+                        modelFacePriorityNode_384_!!.anInt1882 = (class101_sub3.aFloat5747 + (((anIntArray5593!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5750)) + ((class101_sub3.aFloat5770) * (anIntArray5543!![(class129.anInt1881)]).toFloat()) + ((anIntArray5644!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5781)))).toInt()
+                        modelFacePriorityNode_384_.anInt1891 = (class101_sub3.aFloat5772 + (((anIntArray5593!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5769)) + ((class101_sub3.aFloat5761) * (anIntArray5543!![(class129.anInt1881)]).toFloat()) + ((anIntArray5644!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5762)))).toInt()
+                        modelFacePriorityNode_384_.anInt1889 = (class101_sub3.aFloat5751 + (((anIntArray5543!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (anIntArray5593!![(class129.anInt1881)]).toFloat()) + ((anIntArray5644!![(class129.anInt1881)]).toFloat() * (class101_sub3.aFloat5784)))).toInt()
+                        modelFacePriorityNode_384_.anInt1883 = (class101_sub3.aFloat5747 + (((class101_sub3.aFloat5770) * (anIntArray5543!![(class129.anInt1877)]).toFloat()) + ((anIntArray5593!![(class129.anInt1877)]).toFloat() * (class101_sub3.aFloat5750)) + ((anIntArray5644!![(class129.anInt1877)]).toFloat() * (class101_sub3.aFloat5781)))).toInt()
+                        modelFacePriorityNode_384_.anInt1890 = (class101_sub3.aFloat5772 + (((class101_sub3.aFloat5762) * (anIntArray5644!![(class129.anInt1877)]).toFloat()) + (((anIntArray5543!![(class129.anInt1877)]).toFloat() * (class101_sub3.aFloat5761)) + ((anIntArray5593!![(class129.anInt1877)]).toFloat() * class101_sub3.aFloat5769)))).toInt()
+                        modelFacePriorityNode_384_.anInt1880 = (class101_sub3.aFloat5751 + (((class101_sub3.aFloat5784) * (anIntArray5644!![(class129.anInt1877)]).toFloat()) + (((class101_sub3.aFloat5754) * (anIntArray5593!![(class129.anInt1877)]).toFloat()) + ((anIntArray5543!![(class129.anInt1877)]).toFloat() * class101_sub3.aFloat5756)))).toInt()
+                        modelFacePriorityNode_384_.anInt1876 = (class101_sub3.aFloat5747 + (((anIntArray5593!![(class129.anInt1892)]).toFloat() * (class101_sub3.aFloat5750)) + ((anIntArray5543!![(class129.anInt1892)]).toFloat() * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5781) * (anIntArray5644!![(class129.anInt1892)]).toFloat()))).toInt()
+                        modelFacePriorityNode_384_.anInt1874 = (class101_sub3.aFloat5772 + (((anIntArray5644!![(class129.anInt1892)]).toFloat() * (class101_sub3.aFloat5762)) + (((class101_sub3.aFloat5761) * (anIntArray5543!![(class129.anInt1892)]).toFloat()) + ((class101_sub3.aFloat5769) * (anIntArray5593!![(class129.anInt1892)]).toFloat())))).toInt()
+                        modelFacePriorityNode_384_.anInt1884 = (((class101_sub3.aFloat5754) * (anIntArray5593!![(class129.anInt1892)]).toFloat()) + ((class101_sub3.aFloat5756) * (anIntArray5543!![(class129.anInt1892)]).toFloat()) + ((anIntArray5644!![(class129.anInt1892)]).toFloat() * (class101_sub3.aFloat5784)) + (class101_sub3.aFloat5751)).toInt()
                     }
                 }
                 if (aClass342Array5541 == null) break
@@ -3062,7 +3062,7 @@ class Class64_Sub3 : Class64 {
                 anInt5557 = modelDefinition.anInt1821
                 aClass342Array5541 = modelDefinition.aClass342Array1866
                 val class8s: Array<Class8?> = arrayOfNulls<Class8>(anInt5557)
-                aClass129Array5640 = modelDefinition.aClass129Array1846
+                aModelFacePriorityNodeArray5640 = modelDefinition.aModelFacePriorityNodeArray1846
                 if (modelDefinition.aClass162Array1832 != null) {
                     anInt5536 = modelDefinition.aClass162Array1832!!.size
                     aClass48Array5596 = arrayOfNulls<Class48>(anInt5536)

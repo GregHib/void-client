@@ -46,7 +46,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var anInt5443 = 0
     private var aShort5452: Short = 0
     private var anIntArray5455: IntArray? = null
-    private var aClass129Array5457: Array<Class129?>? = null
+    private var aModelFacePriorityNodeArray5457: Array<ModelFacePriorityNode?>? = null
     private var aClass290_5460: Class290? = null
     private var anInt5461 = 0
     private var aBoolean5462 = false
@@ -484,7 +484,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         anInt5500++
         if (aBoolean5402) {
             aBoolean5402 = false
-            if (aClass129Array5457 == null && aClass342Array5474 == null && aClass353Array5524 == null) {
+            if (aModelFacePriorityNodeArray5457 == null && aClass342Array5474 == null && aClass353Array5524 == null) {
                 if (anIntArray5511 != null && !Class170.method1317(anInt5472, (-91).toByte(), anInt5463)) {
                     if (aClass290_5520 == null || aClass290_5520!!.method2197((-62).toByte())) {
                         if (!aBoolean5477) method675(0)
@@ -616,9 +616,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         if (aClass192_5485 != null) aClass192_5485!!.method1435((-95).toByte())
     }
 
-    public override fun method619(): Array<Class129?>? {
+    public override fun method619(): Array<ModelFacePriorityNode?>? {
         anInt5469++
-        return aClass129Array5457
+        return aModelFacePriorityNodeArray5457
     }
 
     public override fun P(i: Int, i_91_: Int, i_92_: Int, i_93_: Int) {
@@ -1170,7 +1170,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             class64_sub2_154_.aClass353Array5524 = aClass353Array5524
             class64_sub2_154_.anIntArrayArray5413 = anIntArrayArray5413
             class64_sub2_154_.anIntArray5415 = anIntArray5415
-            class64_sub2_154_.aClass129Array5457 = aClass129Array5457
+            class64_sub2_154_.aModelFacePriorityNodeArray5457 = aModelFacePriorityNodeArray5457
             class64_sub2_154_.anIntArrayArray5412 = anIntArrayArray5412
             class64_sub2_154_.aShortArray5470 = aShortArray5470
             return class64_sub2_154_
@@ -1195,21 +1195,21 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             try {
                 anInt5444++
                 val class101_sub2 = abstractCameraTransform as FloatCameraTransform
-                if (aClass129Array5457 != null) {
+                if (aModelFacePriorityNodeArray5457 != null) {
                     var i = 0
-                    while ((aClass129Array5457!!.size > i)) {
-                        val class129 = aClass129Array5457!![i]!!
-                        var class129_177_: Class129? = class129
-                        if (class129.aClass129_1888 != null) class129_177_ = class129.aClass129_1888
-                        class129_177_!!.anInt1882 = (class101_sub2.aFloat5729 + (((anIntArray5429!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5704)) + (((anIntArray5511!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5711)) + ((class101_sub2.aFloat5700) * (anIntArray5519!![(class129.anInt1881)]).toFloat())))).toInt()
-                        class129_177_.anInt1891 = (class101_sub2.aFloat5710 + (((anIntArray5429!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5732)) + (((anIntArray5511!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5708)) + ((anIntArray5519!![(class129.anInt1881)]).toFloat() * class101_sub2.aFloat5722)))).toInt()
-                        class129_177_.anInt1889 = (((anIntArray5519!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5691)) + ((class101_sub2.aFloat5736) * (anIntArray5511!![(class129.anInt1881)]).toFloat()) + ((anIntArray5429!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5716)) + (class101_sub2.aFloat5724)).toInt()
-                        class129_177_.anInt1883 = (((class101_sub2.aFloat5711) * (anIntArray5511!![(class129.anInt1877)]).toFloat()) + ((anIntArray5519!![(class129.anInt1877)]).toFloat() * (class101_sub2.aFloat5700)) + ((anIntArray5429!![(class129.anInt1877)]).toFloat() * (class101_sub2.aFloat5704)) + (class101_sub2.aFloat5729)).toInt()
-                        class129_177_.anInt1890 = (class101_sub2.aFloat5710 + (((anIntArray5429!![(class129.anInt1877)]).toFloat() * (class101_sub2.aFloat5732)) + (((class101_sub2.aFloat5708) * (anIntArray5511!![(class129.anInt1877)]).toFloat()) + ((class101_sub2.aFloat5722) * (anIntArray5519!![(class129.anInt1877)]).toFloat())))).toInt()
-                        class129_177_.anInt1880 = (class101_sub2.aFloat5724 + (((class101_sub2.aFloat5716) * (anIntArray5429!![(class129.anInt1877)]).toFloat()) + (((class101_sub2.aFloat5691) * (anIntArray5519!![(class129.anInt1877)]).toFloat()) + ((class101_sub2.aFloat5736) * (anIntArray5511!![(class129.anInt1877)]).toFloat())))).toInt()
-                        class129_177_.anInt1876 = (class101_sub2.aFloat5729 + (((class101_sub2.aFloat5700) * (anIntArray5519!![(class129.anInt1892)]).toFloat()) + ((anIntArray5511!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5711)) + ((anIntArray5429!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5704)))).toInt()
-                        class129_177_.anInt1874 = (((anIntArray5429!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5732)) + (((anIntArray5519!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5708) * (anIntArray5511!![(class129.anInt1892)]).toFloat())) + (class101_sub2.aFloat5710)).toInt()
-                        class129_177_.anInt1884 = (((class101_sub2.aFloat5736) * (anIntArray5511!![(class129.anInt1892)]).toFloat()) + ((class101_sub2.aFloat5691) * (anIntArray5519!![(class129.anInt1892)]).toFloat()) + ((anIntArray5429!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5716)) + (class101_sub2.aFloat5724)).toInt()
+                    while ((aModelFacePriorityNodeArray5457!!.size > i)) {
+                        val class129 = aModelFacePriorityNodeArray5457!![i]!!
+                        var modelFacePriorityNode_177_: ModelFacePriorityNode? = class129
+                        if (class129.aModelFacePriorityNode_1888 != null) modelFacePriorityNode_177_ = class129.aModelFacePriorityNode_1888
+                        modelFacePriorityNode_177_!!.anInt1882 = (class101_sub2.aFloat5729 + (((anIntArray5429!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5704)) + (((anIntArray5511!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5711)) + ((class101_sub2.aFloat5700) * (anIntArray5519!![(class129.anInt1881)]).toFloat())))).toInt()
+                        modelFacePriorityNode_177_.anInt1891 = (class101_sub2.aFloat5710 + (((anIntArray5429!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5732)) + (((anIntArray5511!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5708)) + ((anIntArray5519!![(class129.anInt1881)]).toFloat() * class101_sub2.aFloat5722)))).toInt()
+                        modelFacePriorityNode_177_.anInt1889 = (((anIntArray5519!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5691)) + ((class101_sub2.aFloat5736) * (anIntArray5511!![(class129.anInt1881)]).toFloat()) + ((anIntArray5429!![(class129.anInt1881)]).toFloat() * (class101_sub2.aFloat5716)) + (class101_sub2.aFloat5724)).toInt()
+                        modelFacePriorityNode_177_.anInt1883 = (((class101_sub2.aFloat5711) * (anIntArray5511!![(class129.anInt1877)]).toFloat()) + ((anIntArray5519!![(class129.anInt1877)]).toFloat() * (class101_sub2.aFloat5700)) + ((anIntArray5429!![(class129.anInt1877)]).toFloat() * (class101_sub2.aFloat5704)) + (class101_sub2.aFloat5729)).toInt()
+                        modelFacePriorityNode_177_.anInt1890 = (class101_sub2.aFloat5710 + (((anIntArray5429!![(class129.anInt1877)]).toFloat() * (class101_sub2.aFloat5732)) + (((class101_sub2.aFloat5708) * (anIntArray5511!![(class129.anInt1877)]).toFloat()) + ((class101_sub2.aFloat5722) * (anIntArray5519!![(class129.anInt1877)]).toFloat())))).toInt()
+                        modelFacePriorityNode_177_.anInt1880 = (class101_sub2.aFloat5724 + (((class101_sub2.aFloat5716) * (anIntArray5429!![(class129.anInt1877)]).toFloat()) + (((class101_sub2.aFloat5691) * (anIntArray5519!![(class129.anInt1877)]).toFloat()) + ((class101_sub2.aFloat5736) * (anIntArray5511!![(class129.anInt1877)]).toFloat())))).toInt()
+                        modelFacePriorityNode_177_.anInt1876 = (class101_sub2.aFloat5729 + (((class101_sub2.aFloat5700) * (anIntArray5519!![(class129.anInt1892)]).toFloat()) + ((anIntArray5511!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5711)) + ((anIntArray5429!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5704)))).toInt()
+                        modelFacePriorityNode_177_.anInt1874 = (((anIntArray5429!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5732)) + (((anIntArray5519!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5708) * (anIntArray5511!![(class129.anInt1892)]).toFloat())) + (class101_sub2.aFloat5710)).toInt()
+                        modelFacePriorityNode_177_.anInt1884 = (((class101_sub2.aFloat5736) * (anIntArray5511!![(class129.anInt1892)]).toFloat()) + ((class101_sub2.aFloat5691) * (anIntArray5519!![(class129.anInt1892)]).toFloat()) + ((anIntArray5429!![(class129.anInt1892)]).toFloat() * (class101_sub2.aFloat5716)) + (class101_sub2.aFloat5724)).toInt()
                         i++
                     }
                 }
@@ -1944,7 +1944,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 anIntArray5511 = modelDefinition.anIntArray1841
                 aClass342Array5474 = modelDefinition.aClass342Array1866
                 val class371s: Array<Class371?> = arrayOfNulls<Class371>(anInt5433)
-                aClass129Array5457 = modelDefinition.aClass129Array1846
+                aModelFacePriorityNodeArray5457 = modelDefinition.aModelFacePriorityNodeArray1846
                 if (modelDefinition.aClass162Array1832 != null) {
                     anInt5406 = modelDefinition.aClass162Array1832!!.size
                     aClass353Array5524 = arrayOfNulls<Class353>(anInt5406)

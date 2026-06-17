@@ -255,7 +255,7 @@ public abstract class Class64 {
 
     abstract fun a(i: Int)
 
-    abstract fun method619(): Array<Class129?>?
+    abstract fun method619(): Array<ModelFacePriorityNode?>?
 
     abstract fun V(): Int
 

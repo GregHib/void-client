@@ -166,9 +166,9 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         bool = false
                     }
                 }
-                if (Class295.anIntArray3759!![i_19_] != -1 && Class129.aByteArrayArray1887!![i_19_] == null) {
-                    Class129.aByteArrayArray1887!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, Class295.anIntArray3759!![i_19_], 0)
-                    if (Class129.aByteArrayArray1887!![i_19_] == null) {
+                if (Class295.anIntArray3759!![i_19_] != -1 && ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
+                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, Class295.anIntArray3759!![i_19_], 0)
+                    if (ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
                         Class268.anInt3441++
                         bool = false
                     }
@@ -232,7 +232,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (Class348_Sub8.aRenderer6654!!.method3639() && Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) {
                         var i_26_ = 0
                         while ((i_26_ < Class347.aByteArrayArray4281!!.size)) {
-                            if ((Class348_Sub23_Sub1.aByteArrayArray8996!![i_26_] != null) || Class129.aByteArrayArray1887!![i_26_] != null) {
+                            if ((Class348_Sub23_Sub1.aByteArrayArray8996!![i_26_] != null) || ModelFacePriorityNode.aByteArrayArray1887!![i_26_] != null) {
                                 bool_25_ = true
                                 break
                             }
@@ -273,10 +273,10 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         Class243.method1879(true)
                         Class170.aClass237_Sub1_5067 = Class237_Sub1(1, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, true)
                         if (Class312.anInt3931 == 0) {
-                            Class348_Sub1_Sub1.method2727((-44).toByte(), (Class170.aClass237_Sub1_5067), (Class129.aByteArrayArray1887))
+                            Class348_Sub1_Sub1.method2727((-44).toByte(), (Class170.aClass237_Sub1_5067), (ModelFacePriorityNode.aByteArrayArray1887))
                             Class289.method2193(true, (-119).toByte())
                         } else {
-                            Class44.method385(false, Class170.aClass237_Sub1_5067, Class129.aByteArrayArray1887)
+                            Class44.method385(false, Class170.aClass237_Sub1_5067, ModelFacePriorityNode.aByteArrayArray1887)
                             Class289.method2193(true, (-125).toByte())
                         }
                         Class170.aClass237_Sub1_5067!!.method1679(0, 0, (Class338.aClass237_Sub1_4197!!.anIntArrayArrayArray3122[0]!!))

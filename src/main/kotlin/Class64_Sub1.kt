@@ -20,7 +20,7 @@ class Class64_Sub1 : Class64 {
     private var aClass64_Sub1_5319: Class64_Sub1? = null
     private var aClass101_Sub1_5320: MatrixCameraTransform? = null
     private lateinit var anIntArray5321: IntArray
-    private var aClass129Array5322: Array<Class129?>? = null
+    private var aModelFacePriorityNodeArray5322: Array<ModelFacePriorityNode?>? = null
     private var aBoolean5323 = false
     private var aShort5324: Short = 0
     private var aByteArray5325: ByteArray? = null
@@ -346,7 +346,7 @@ class Class64_Sub1 : Class64 {
         class64_sub1_7_.aShortArray5317 = aShortArray5317
         class64_sub1_7_.aShortArray5394 = aShortArray5394
         class64_sub1_7_.aShortArray5364 = aShortArray5364
-        class64_sub1_7_.aClass129Array5322 = aClass129Array5322
+        class64_sub1_7_.aModelFacePriorityNodeArray5322 = aModelFacePriorityNodeArray5322
         class64_sub1_7_.aClass342Array5335 = aClass342Array5335
         class64_sub1_7_.aClass6Array5361 = aClass6Array5361
         class64_sub1_7_.aShortArray5327 = aShortArray5327
@@ -362,8 +362,8 @@ class Class64_Sub1 : Class64 {
         } else method657(bool)
     }
 
-    public override fun method619(): Array<Class129?>? {
-        return aClass129Array5322
+    public override fun method619(): Array<ModelFacePriorityNode?>? {
+        return aModelFacePriorityNodeArray5322
     }
 
     public override fun V(): Int {
@@ -1257,20 +1257,20 @@ class Class64_Sub1 : Class64 {
 
     public override fun method620(abstractCameraTransform: AbstractCameraTransform?) {
         val class101_sub1 = abstractCameraTransform as MatrixCameraTransform
-        if (aClass129Array5322 != null) {
-            for (i in aClass129Array5322!!.indices) {
-                val class129 = aClass129Array5322!![i]!!
-                var class129_285_: Class129? = class129
-                if (class129.aClass129_1888 != null) class129_285_ = class129.aClass129_1888
-                class129_285_!!.anInt1882 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class129.anInt1881]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class129.anInt1881)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class129.anInt1881)]).toFloat()))).toInt()
-                class129_285_.anInt1891 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class129.anInt1881]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class129.anInt1881)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class129.anInt1881)]).toFloat()))).toInt()
-                class129_285_.anInt1889 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class129.anInt1881]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class129.anInt1881)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class129.anInt1881)]).toFloat()))).toInt()
-                class129_285_.anInt1883 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class129.anInt1877]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class129.anInt1877)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class129.anInt1877)]).toFloat()))).toInt()
-                class129_285_.anInt1890 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class129.anInt1877]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class129.anInt1877)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class129.anInt1877)]).toFloat()))).toInt()
-                class129_285_.anInt1880 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class129.anInt1877]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class129.anInt1877)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class129.anInt1877)]).toFloat()))).toInt()
-                class129_285_.anInt1876 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class129.anInt1892]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class129.anInt1892)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class129.anInt1892)]).toFloat()))).toInt()
-                class129_285_.anInt1874 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class129.anInt1892]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class129.anInt1892)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class129.anInt1892)]).toFloat()))).toInt()
-                class129_285_.anInt1884 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class129.anInt1892]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class129.anInt1892)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class129.anInt1892)]).toFloat()))).toInt()
+        if (aModelFacePriorityNodeArray5322 != null) {
+            for (i in aModelFacePriorityNodeArray5322!!.indices) {
+                val class129 = aModelFacePriorityNodeArray5322!![i]!!
+                var modelFacePriorityNode_285_: ModelFacePriorityNode? = class129
+                if (class129.aModelFacePriorityNode_1888 != null) modelFacePriorityNode_285_ = class129.aModelFacePriorityNode_1888
+                modelFacePriorityNode_285_!!.anInt1882 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class129.anInt1881]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class129.anInt1881)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class129.anInt1881)]).toFloat()))).toInt()
+                modelFacePriorityNode_285_.anInt1891 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class129.anInt1881]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class129.anInt1881)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class129.anInt1881)]).toFloat()))).toInt()
+                modelFacePriorityNode_285_.anInt1889 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class129.anInt1881]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class129.anInt1881)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class129.anInt1881)]).toFloat()))).toInt()
+                modelFacePriorityNode_285_.anInt1883 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class129.anInt1877]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class129.anInt1877)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class129.anInt1877)]).toFloat()))).toInt()
+                modelFacePriorityNode_285_.anInt1890 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class129.anInt1877]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class129.anInt1877)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class129.anInt1877)]).toFloat()))).toInt()
+                modelFacePriorityNode_285_.anInt1880 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class129.anInt1877]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class129.anInt1877)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class129.anInt1877)]).toFloat()))).toInt()
+                modelFacePriorityNode_285_.anInt1876 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class129.anInt1892]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class129.anInt1892)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class129.anInt1892)]).toFloat()))).toInt()
+                modelFacePriorityNode_285_.anInt1874 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class129.anInt1892]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class129.anInt1892)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class129.anInt1892)]).toFloat()))).toInt()
+                modelFacePriorityNode_285_.anInt1884 = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (anIntArray5356!![class129.anInt1892]).toFloat()) + (class101_sub1.aFloat5680 * (anIntArray5332!![(class129.anInt1892)]).toFloat()) + (class101_sub1.aFloat5664 * (anIntArray5312!![(class129.anInt1892)]).toFloat()))).toInt()
             }
         }
         if (aClass342Array5335 != null) {
@@ -2728,7 +2728,7 @@ class Class64_Sub1 : Class64 {
                 aShadowProjector_5383!!.method1023((i_632_ and 0x2) != 0)
                 var bool_656_ = false
                 val bool_657_ = i_636_ <= aHa_Sub1_5353.anInt7482
-                val bool_658_ = (bool_657_ || aClass129Array5322 != null || aClass342Array5335 != null)
+                val bool_658_ = (bool_657_ || aModelFacePriorityNodeArray5322 != null || aClass342Array5335 != null)
                 aClass167_5367!!.anInt2221 = aShadowProjector_5383!!.anInt1679
                 aClass167_5367!!.anInt2229 = aShadowProjector_5383!!.anInt1665
                 aClass167_5367!!.anInt2215 = aShadowProjector_5383!!.anInt1668
@@ -3355,7 +3355,7 @@ class Class64_Sub1 : Class64 {
         aByteArray5325 = modelDefinition.aByteArray1834
         aShortArray5370 = modelDefinition.aShortArray1856
         aByteArray5386 = modelDefinition.aByteArray1843
-        aClass129Array5322 = modelDefinition.aClass129Array1846
+        aModelFacePriorityNodeArray5322 = modelDefinition.aModelFacePriorityNodeArray1846
         aClass342Array5335 = modelDefinition.aClass342Array1866
         aShortArray5333 = modelDefinition.aShortArray1842
         val `is` = IntArray(anInt5351)

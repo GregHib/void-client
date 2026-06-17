@@ -115,7 +115,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
                 for (i_20_ in 0..3) Class239_Sub6.anIntArrayArray5894!![i_19_]!![i_20_] = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             }
             Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
-            Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)
+            ModelFacePriorityNode.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)
             NativeSprite.anIntArray5192 = IntArray(i_18_)
             Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
             GameAppletFrame.anIntArray38 = IntArray(i_18_)

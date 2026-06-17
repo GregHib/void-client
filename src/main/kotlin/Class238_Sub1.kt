@@ -144,7 +144,7 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                                     }
                                 }
                             } else {
-                                val class317 = Class317.method2372(Class129.aClass45_1878!!, (class348_sub9.anInt6685), 0)
+                                val class317 = Class317.method2372(ModelFacePriorityNode.aClass45_1878!!, (class348_sub9.anInt6685), 0)
                                 if (class317 != null) {
                                     val class348_sub19_sub1 = class317.method2369().method2944(Class57.aClass163_1050!!)
                                     val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1, i_15_, i_9_ shl 6, i_10_))
@@ -175,7 +175,7 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                                         }
                                     } else {
                                         val i_18_ = (Math.random() * (class348_sub9.anIntArray6697!!).size.toDouble()).toInt()
-                                        val class317 = Class317.method2372((Class129.aClass45_1878!!), (class348_sub9.anIntArray6697!![i_18_]), 0)
+                                        val class317 = Class317.method2372((ModelFacePriorityNode.aClass45_1878!!), (class348_sub9.anIntArray6697!![i_18_]), 0)
                                         if (class317 == null) break
                                         val class348_sub19_sub1 = (class317.method2369().method2944(Class57.aClass163_1050!!))
                                         val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1, i_16_, i_9_ shl 6, i_10_))

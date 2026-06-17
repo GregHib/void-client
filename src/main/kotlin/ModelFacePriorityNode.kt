@@ -3,7 +3,7 @@ import Class373.Companion.method3591
 /* Class129 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class129 internal constructor(private val anInt1886: Int, var anInt1881: Int, var anInt1877: Int, var anInt1892: Int, @JvmField var aByte1875: Byte) {
+class ModelFacePriorityNode internal constructor(private val anInt1886: Int, var anInt1881: Int, var anInt1877: Int, var anInt1892: Int, @JvmField var aByte1875: Byte) {
     @JvmField
     var anInt1874: Int = 0
     @JvmField
@@ -17,17 +17,17 @@ class Class129 internal constructor(private val anInt1886: Int, var anInt1881: I
     @JvmField
     var anInt1884: Int = 0
     @JvmField
-    var aClass129_1888: Class129? = null
+    var aModelFacePriorityNode_1888: ModelFacePriorityNode? = null
     @JvmField
     var anInt1889: Int = 0
     @JvmField
     var anInt1890: Int = 0
     @JvmField
     var anInt1891: Int = 0
-    fun method1124(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Class129? {
+    fun method1124(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): ModelFacePriorityNode? {
         anInt1893++
         if (i_0_ != -1) return null
-        return Class129(anInt1886, i_2_, i, i_1_, this.aByte1875)
+        return ModelFacePriorityNode(anInt1886, i_2_, i, i_1_, this.aByte1875)
     }
 
     fun method1125(i: Byte): Class181 {

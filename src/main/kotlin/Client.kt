@@ -32,7 +32,7 @@ import Crc64Hashable.Companion.method1112
 import WidgetComponentNode.Companion.method1117
 import ScrollingWidgetComponentNode.Companion.method1120
 import MinimapStateReset.method1123
-import Class129.Companion.method1126
+import ModelFacePriorityNode.Companion.method1126
 import Class13.method225
 import Class130.Companion.method1127
 import Class130_Sub1.Companion.method1133

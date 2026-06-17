@@ -209,7 +209,7 @@ class Class206 internal constructor(var_ha_Sub2: OpenGlRenderer) : Interface11 {
                     class10.anInt188--
                     if (class10.anInt188 >= (if (!class10.method220((-66).toByte())) -10 else -1500)) {
                         if (class10.aByte180.toInt() == 1 && class10.aClass317_183 == null) {
-                            class10.aClass317_183 = Class317.method2372(Class129.aClass45_1878!!, class10.anInt185, 0)
+                            class10.aClass317_183 = Class317.method2372(ModelFacePriorityNode.aClass45_1878!!, class10.anInt185, 0)
                             if (class10.aClass317_183 == null) {
                                 i_4_++
                                 continue

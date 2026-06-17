@@ -121,7 +121,7 @@ object Class164 {
             Class186.aClass45_2490 = Class369_Sub2.method3571(false, 1, (-23).toByte(), 1)
             Class95.aClass45_1541 = Class369_Sub2.method3571(false, 2, (-23).toByte(), 1)
             Class348_Sub35.aClass45_6980 = Class369_Sub2.method3571(false, 3, (-23).toByte(), 1)
-            Class129.aClass45_1878 = Class369_Sub2.method3571(false, 4, (-23).toByte(), 1)
+            ModelFacePriorityNode.aClass45_1878 = Class369_Sub2.method3571(false, 4, (-23).toByte(), 1)
             Class367_Sub10.aClass45_7382 = Class369_Sub2.method3571(true, 5, (-23).toByte(), 1)
             Class59_Sub2_Sub1.aClass45_8667 = Class369_Sub2.method3571(true, 6, (-23).toByte(), 1)
             RasterSprite.aClass45_5207 = Class369_Sub2.method3571(false, 7, (-23).toByte(), 1)

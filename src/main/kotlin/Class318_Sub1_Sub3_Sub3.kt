@@ -393,55 +393,55 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                                 i_67_ += class129s.size
                                 i_68_++
                             }
-                            var class129s_71_: Array<Class129?>? = null
+                            var modelFacePriorityNodeS_71_: Array<ModelFacePriorityNode?>? = null
                             var class342s_72_: Array<Class342?>? = null
                             if (class64_65_ != null) {
                                 class64_65_.method620(abstractCameraTransform)
-                                class129s_71_ = class64_65_.method619()
+                                modelFacePriorityNodeS_71_ = class64_65_.method619()
                                 class342s_72_ = class64_65_.method604()
                             }
                             if (class342s_72_ != null) {
                                 i_70_++
                                 i_69_ += class342s_72_.size
                             }
-                            if (class129s_71_ != null) {
+                            if (modelFacePriorityNodeS_71_ != null) {
                                 i_68_++
-                                i_67_ += class129s_71_.size
+                                i_67_ += modelFacePriorityNodeS_71_.size
                             }
-                            var class129s_73_: Array<Class129?>? = null
+                            var modelFacePriorityNodeS_73_: Array<ModelFacePriorityNode?>? = null
                             var class342s_74_: Array<Class342?>? = null
                             if (class64_66_ != null) {
                                 class64_66_.method620(abstractCameraTransform)
-                                class129s_73_ = class64_66_.method619()
+                                modelFacePriorityNodeS_73_ = class64_66_.method619()
                                 class342s_74_ = class64_66_.method604()
                             }
                             if (class342s_74_ != null) {
                                 i_70_++
                                 i_69_ += class342s_74_.size
                             }
-                            if (class129s_73_ != null) {
-                                i_67_ += class129s_73_.size
+                            if (modelFacePriorityNodeS_73_ != null) {
+                                i_67_ += modelFacePriorityNodeS_73_.size
                                 i_68_++
                             }
                             if (((this.aClass318_Sub10_10327) == null || this.aClass318_Sub10_10327!!.aBoolean6470) && (i_68_ > 0 || i_70_ > 0)) this.aClass318_Sub10_10327 = Class318_Sub10.method2526((Class367_Sub11.anInt7396), true)
                             if ((this.aClass318_Sub10_10327) != null) {
                                 val `object`: Any? = null
-                                val class129s_75_: Array<Class129?>?
+                                val modelFacePriorityNodeS_75_: Array<ModelFacePriorityNode?>?
                                 if (i_68_ != 1) {
-                                    class129s_75_ = arrayOfNulls<Class129>(i_67_)
+                                    modelFacePriorityNodeS_75_ = arrayOfNulls<ModelFacePriorityNode>(i_67_)
                                     var i_76_ = 0
                                     if (class129s != null) {
-                                        Class214.method1575(class129s, 0, class129s_75_, i_76_, class129s.size)
+                                        Class214.method1575(class129s, 0, modelFacePriorityNodeS_75_, i_76_, class129s.size)
                                         i_76_ += class129s.size
                                     }
-                                    if (class129s_71_ != null) {
-                                        Class214.method1575(class129s_71_, 0, class129s_75_, i_76_, class129s_71_.size)
-                                        i_76_ += class129s_71_.size
+                                    if (modelFacePriorityNodeS_71_ != null) {
+                                        Class214.method1575(modelFacePriorityNodeS_71_, 0, modelFacePriorityNodeS_75_, i_76_, modelFacePriorityNodeS_71_.size)
+                                        i_76_ += modelFacePriorityNodeS_71_.size
                                     }
-                                    if (class129s_73_ != null) Class214.method1575(class129s_73_, 0, class129s_75_, i_76_, class129s_73_.size)
-                                } else if (class129s_71_ != null) class129s_75_ = class129s_71_
-                                else if (class129s_73_ != null) class129s_75_ = class129s_73_
-                                else class129s_75_ = class129s
+                                    if (modelFacePriorityNodeS_73_ != null) Class214.method1575(modelFacePriorityNodeS_73_, 0, modelFacePriorityNodeS_75_, i_76_, modelFacePriorityNodeS_73_.size)
+                                } else if (modelFacePriorityNodeS_71_ != null) modelFacePriorityNodeS_75_ = modelFacePriorityNodeS_71_
+                                else if (modelFacePriorityNodeS_73_ != null) modelFacePriorityNodeS_75_ = modelFacePriorityNodeS_73_
+                                else modelFacePriorityNodeS_75_ = class129s
                                 val object_77_: Any? = null
                                 val class342s_78_: Array<Class342?>?
                                 if (i_70_ == 1) {
@@ -461,7 +461,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                                     }
                                     if (class342s_74_ != null) Class214.method1575(class342s_74_, 0, class342s_78_, i_79_, class342s_74_.size)
                                 }
-                                this.aClass318_Sub10_10327!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s_75_, class342s_78_, false)
+                                this.aClass318_Sub10_10327!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), modelFacePriorityNodeS_75_, class342s_78_, false)
                             }
                             this.aBoolean10318 = true
                         }

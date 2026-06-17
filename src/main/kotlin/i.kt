@@ -9,7 +9,7 @@ class i : Class64, Interface19 {
     @JvmField
     var nativeid: Long = 0
     @JvmField
-    var aClass129Array5119: Array<Class129?>? = null
+    var aModelFacePriorityNodeArray5119: Array<ModelFacePriorityNode?>? = null
     private val aYa5120: ya?
 
     public external override fun C(i: Int)
@@ -44,8 +44,8 @@ class i : Class64, Interface19 {
 
     public external override fun EA(): Int
 
-    public override fun method619(): Array<Class129?>? {
-        return this.aClass129Array5119
+    public override fun method619(): Array<ModelFacePriorityNode?>? {
+        return this.aModelFacePriorityNodeArray5119
     }
 
     public external override fun wa()
@@ -213,9 +213,9 @@ class i : Class64, Interface19 {
     public override fun method620(abstractCameraTransform: AbstractCameraTransform?) {
         method693(oa.Companion.anIntArray5140, abstractCameraTransform)
         var i = 0
-        if (this.aClass129Array5119 != null) {
-            for (i_74_ in this.aClass129Array5119!!.indices) {
-                val class129 = this.aClass129Array5119!![i_74_]!!
+        if (this.aModelFacePriorityNodeArray5119 != null) {
+            for (i_74_ in this.aModelFacePriorityNodeArray5119!!.indices) {
+                val class129 = this.aModelFacePriorityNodeArray5119!![i_74_]!!
                 class129.anInt1882 = oa.Companion.anIntArray5140[i++]
                 class129.anInt1891 = oa.Companion.anIntArray5140[i++]
                 class129.anInt1889 = oa.Companion.anIntArray5140[i++]
@@ -258,16 +258,16 @@ class i : Class64, Interface19 {
     constructor(var_oa: oa, var_ya: ya?, modelDefinition: ModelDefinition, i: Int, i_79_: Int, i_80_: Int, i_81_: Int) {
         anOa5117 = var_oa
         aYa5120 = var_ya
-        this.aClass129Array5119 = modelDefinition.aClass129Array1846
+        this.aModelFacePriorityNodeArray5119 = modelDefinition.aModelFacePriorityNodeArray1846
         this.aClass342Array5118 = modelDefinition.aClass342Array1866
-        val i_82_ = (if (modelDefinition.aClass129Array1846 == null) 0 else modelDefinition.aClass129Array1846!!.size)
+        val i_82_ = (if (modelDefinition.aModelFacePriorityNodeArray1846 == null) 0 else modelDefinition.aModelFacePriorityNodeArray1846!!.size)
         val i_83_ = (if (modelDefinition.aClass342Array1866 == null) 0 else modelDefinition.aClass342Array1866!!.size)
         var i_84_ = 0
         val `is` = IntArray(i_82_ * 3 + i_83_)
         for (i_85_ in 0..<i_82_) {
-            `is`[i_84_++] = this.aClass129Array5119!![i_85_]!!.anInt1881
-            `is`[i_84_++] = this.aClass129Array5119!![i_85_]!!.anInt1877
-            `is`[i_84_++] = this.aClass129Array5119!![i_85_]!!.anInt1892
+            `is`[i_84_++] = this.aModelFacePriorityNodeArray5119!![i_85_]!!.anInt1881
+            `is`[i_84_++] = this.aModelFacePriorityNodeArray5119!![i_85_]!!.anInt1877
+            `is`[i_84_++] = this.aModelFacePriorityNodeArray5119!![i_85_]!!.anInt1892
         }
         for (i_86_ in 0..<i_83_) `is`[i_84_++] = this.aClass342Array5118!![i_86_]!!.anInt4244
         val i_87_ = (if (modelDefinition.aClass162Array1832 == null) 0 else modelDefinition.aClass162Array1832!!.size)

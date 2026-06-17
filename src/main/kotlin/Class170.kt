@@ -52,7 +52,7 @@ class Class170 : Interface17 {
         if (i_3_ != -65536) return -52
         val i_5_ = class146.anInt2016
         val i_6_ = class146.anInt2020
-        val i_7_ = Class129.anIntArray1885!![-i_5_ + i_6_]
+        val i_7_ = ModelFacePriorityNode.anIntArray1885!![-i_5_ + i_6_]
         return this.anIntArray5063[i_4_] shr i_5_ and i_7_
     }
 
@@ -63,7 +63,7 @@ class Class170 : Interface17 {
         val i_10_ = class146!!.anInt2019
         val i_11_ = class146.anInt2016
         val i_12_ = class146.anInt2020
-        var i_13_ = Class129.anIntArray1885!![-i_11_ + i_12_]
+        var i_13_ = ModelFacePriorityNode.anIntArray1885!![-i_11_ + i_12_]
         if (i_8_ < (i_9_.inv()) || i_13_ < i_9_) i_9_ = 0
         i_13_ = i_13_ shl i_11_
         method1306((-78).toByte(), i_9_ shl i_11_ and i_13_ or ((this.anIntArray5063[i_10_]) and (i_13_.inv())), i_10_)
@@ -109,7 +109,7 @@ class Class170 : Interface17 {
         val i_33_ = class146.anInt2016
         if (i < -56) {
             val i_34_ = class146.anInt2020
-            var i_35_ = Class129.anIntArray1885!![i_34_ - i_33_]
+            var i_35_ = ModelFacePriorityNode.anIntArray1885!![i_34_ - i_33_]
             if (i_31_ < 0 || i_35_ < i_31_) i_31_ = 0
             i_35_ = i_35_ shl i_33_
             method1313(42.toByte(), (i_31_ shl i_33_ and i_35_ or ((i_35_.inv()) and anIntArray5078[i_32_])), i_32_)

@@ -64,7 +64,7 @@ object Class90 {
         Class295.anIntArray3759 = IntArray(i_7_)
         Class348_Sub50.aByteArrayArray7212 = null
         Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_7_)
-        Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_7_)
+        ModelFacePriorityNode.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_7_)
         Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_7_)
         Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_7_)
         i_7_ = 0
