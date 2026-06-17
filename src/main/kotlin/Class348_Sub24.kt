@@ -222,7 +222,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 val i_17_ = class348_sub42_sub15.method3248(1)
                                 if (i_16_ == 1) {
                                     Class77.anIntArray1303!![i_17_] = class348_sub42_sub15.anInt9652
-                                    Class184.aBoolean2469 = Class184.aBoolean2469 or Class286_Sub6.aBooleanArray6270!![i_17_]
+                                    ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or Class286_Sub6.aBooleanArray6270!![i_17_]
                                     Class348_Sub26.Companion.anIntArray6890!![method1166(31, Class5_Sub1.anInt8352++)] = i_17_
                                 } else if (i_16_ == 2) {
                                     Class258_Sub2.aStringArray8532!![i_17_] = class348_sub42_sub15.aString9654
@@ -417,7 +417,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_31_] = Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_31_] + 1
                                     i_31_++
                                 }
-                                if (Class184.aBoolean2469 && (-60000L + method599(-84) > Class34.aLong482)) method2405(i + -11313)
+                                if (ScanlineRasterFiller.aBoolean2469 && (-60000L + method599(-84) > Class34.aLong482)) method2405(i + -11313)
                                 var class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1872(i + -11424) as? Class318_Sub9_Sub1?)
                                 while (class318_sub9_sub1 != null) {
                                     if ((method599(i xor 0x2ce9.inv()) / 1000L + -5L) > class318_sub9_sub1.anInt8787.toLong()) {

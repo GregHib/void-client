@@ -102,7 +102,7 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
                 /* empty */
             }
             Class34.aLong482 = Class62.method599(-117)
-            Class184.aBoolean2469 = false
+            ScanlineRasterFiller.aBoolean2469 = false
         }
 
         @JvmStatic

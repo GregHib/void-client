@@ -1,4 +1,4 @@
-import Class184.Companion.method1387
+import ScanlineRasterFiller.Companion.method1387
 import kotlin.concurrent.Volatile
 
 /* Class348_Sub12 - Decompiled by JODE

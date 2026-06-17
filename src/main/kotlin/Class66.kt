@@ -103,7 +103,7 @@ object Class66 {
     var anInt1166: Int = 0
     @JvmField
     var anInt1167: Int = 0
-    private var aClass184Array1168: Array<Class184?>?
+    private var aScanlineRasterFillerArray1168: Array<ScanlineRasterFiller?>?
     private var aClass46_1169: Class46? = null
     private var anInt1170 = 0
     @JvmField
@@ -5043,7 +5043,7 @@ object Class66 {
                         if (anIntArray1149!![anInt1173] > anIntArray1149!![anInt1173 + 1]) i_488_ += is_489_[i_488_]
                     } else if (i_490_ == 21) {
                         if (anInt1154 == 0) return
-                        val class184 = aClass184Array1168!![--anInt1154]!!
+                        val class184 = aScanlineRasterFillerArray1168!![--anInt1154]!!
                         class348_sub42_sub19 = class184.aClass348_Sub42_Sub19_2474!!
                         `is` = (class348_sub42_sub19.anIntArray9696!!)
                         is_489_ = (class348_sub42_sub19.anIntArray9694!!)
@@ -5083,13 +5083,13 @@ object Class66 {
                         for (i_501_ in 0..<class348_sub42_sub19_498_.anInt9695) strings[i_501_] = (aStringArray1152!![anInt1170 - (class348_sub42_sub19_498_.anInt9695) + i_501_])
                         anInt1173 -= class348_sub42_sub19_498_.anInt9697
                         anInt1170 -= class348_sub42_sub19_498_.anInt9695
-                        val class184 = Class184()
-                        class184.aClass348_Sub42_Sub19_2474 = class348_sub42_sub19
-                        class184.anInt2477 = i_488_
-                        class184.anIntArray2468 = anIntArray1164
-                        class184.aStringArray2473 = aStringArray1155
-                        if (anInt1154 >= aClass184Array1168!!.size) throw RuntimeException()
-                        aClass184Array1168!![anInt1154++] = class184
+                        val scanlineRasterFiller = ScanlineRasterFiller()
+                        scanlineRasterFiller.aClass348_Sub42_Sub19_2474 = class348_sub42_sub19
+                        scanlineRasterFiller.anInt2477 = i_488_
+                        scanlineRasterFiller.anIntArray2468 = anIntArray1164
+                        scanlineRasterFiller.aStringArray2473 = aStringArray1155
+                        if (anInt1154 >= aScanlineRasterFillerArray1168!!.size) throw RuntimeException()
+                        aScanlineRasterFillerArray1168!![anInt1154++] = scanlineRasterFiller
                         class348_sub42_sub19 = class348_sub42_sub19_498_
                         `is` = (class348_sub42_sub19.anIntArray9696!!)
                         is_489_ = (class348_sub42_sub19.anIntArray9694!!)
@@ -5101,7 +5101,7 @@ object Class66 {
                         val i_502_ = is_489_[i_488_]
                         Class77.anIntArray1303!![i_502_] = anIntArray1149!![--anInt1173]
                         Class232.method1647(-128, i_502_)
-                        Class184.aBoolean2469 = Class184.aBoolean2469 or Class286_Sub6.aBooleanArray6270!![i_502_]
+                        ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or Class286_Sub6.aBooleanArray6270!![i_502_]
                     } else if (i_490_ == 44) {
                         val i_503_ = is_489_[i_488_] shr 16
                         val i_504_ = is_489_[i_488_] and 0xffff
@@ -5156,7 +5156,7 @@ object Class66 {
                 stringbuffer.append("CS2: ").append(class348_sub42_sub19.aLong4291).append(" ")
                 var i_514_ = anInt1154 - 1
                 while (i_514_ >= 0) {
-                    stringbuffer.append("v: ").append(aClass184Array1168!![i_514_]!!.aClass348_Sub42_Sub19_2474!!.aLong4291).append(" ")
+                    stringbuffer.append("v: ").append(aScanlineRasterFillerArray1168!![i_514_]!!.aClass348_Sub42_Sub19_2474!!.aLong4291).append(" ")
                     i_514_--
                 }
                 stringbuffer.append("op: ").append(i_490_)
@@ -5167,7 +5167,7 @@ object Class66 {
                 stringbuffer.append("Clientscript error in: ").append(class348_sub42_sub19.aString9690).append("\n")
                 var i_513_ = anInt1154 - 1
                 while (i_513_ >= 0) {
-                    stringbuffer.append("via: ").append(aClass184Array1168!![i_513_]!!.aClass348_Sub42_Sub19_2474!!.aString9690).append("\n")
+                    stringbuffer.append("via: ").append(aScanlineRasterFillerArray1168!![i_513_]!!.aClass348_Sub42_Sub19_2474!!.aString9690).append("\n")
                     i_513_--
                 }
                 stringbuffer.append("Op: ").append(i_490_).append("\n")
@@ -5220,7 +5220,7 @@ object Class66 {
         anIntArrayArray1161 = null
         anIntArray1149 = null
         aStringArray1152 = null
-        aClass184Array1168 = null
+        aScanlineRasterFillerArray1168 = null
         aClass46_1150 = null
         aClass46_1169 = null
         aClass43_1151 = null
@@ -5261,7 +5261,7 @@ object Class66 {
     }
 
     init {
-        aClass184Array1168 = arrayOfNulls<Class184>(50)
+        aScanlineRasterFillerArray1168 = arrayOfNulls<ScanlineRasterFiller>(50)
         aCalendar1160 = Calendar.getInstance()
         anIntArray1175 = IntArray(3)
         aStringArray1176 = arrayOf<String>("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")

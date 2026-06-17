@@ -9,7 +9,7 @@ import OpenGlRenderNode.Companion.method3297
 /* Class184 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class184 {
+class ScanlineRasterFiller {
     var anIntArray2468: IntArray? = null
     var aStringArray2473: Array<String?>? = null
     var aClass348_Sub42_Sub19_2474: Class348_Sub42_Sub19? = null

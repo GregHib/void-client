@@ -205,7 +205,7 @@ class Class64_Sub3 : Class64 {
     private fun method680(i: Int, i_29_: Int, i_30_: Byte, i_31_: Short, i_32_: Int): Int {
         if (i != 19995) return -13
         anInt5582++
-        var i_33_ = (ParticleEmitterNode.anIntArray179!![Class184.method1384(i_32_, i xor 0x54b313bc, i_29_)])
+        var i_33_ = (ParticleEmitterNode.anIntArray179!![ScanlineRasterFiller.method1384(i_32_, i xor 0x54b313bc, i_29_)])
         if (i_31_.toInt() != -1) {
             val class12 = aHa_Sub2_5598!!.aRenderConfig4579!!.method3(i_31_.toInt() and 0xffff, -6662)
             val i_34_ = 0xff and class12!!.aByte201.toInt()

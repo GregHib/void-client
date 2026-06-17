@@ -86,7 +86,7 @@ import SpotAnimDefinition.Companion.method1369
 import LoadProgressCounters.Companion.method1373
 import LoadProgressCounters.Companion.method1375
 import ParticleDefLoader.Companion.method1378
-import Class184.Companion.method1386
+import ScanlineRasterFiller.Companion.method1386
 import Class185.Companion.method1395
 import Class186.Companion.method1396
 import Class186_Sub1.Companion.method1400
@@ -1261,7 +1261,7 @@ class Client : GameAppletFrame() {
     }
 
     public override fun method80(i: Int) {
-        if (Class184.aBoolean2469) method2405(i + -110)
+        if (ScanlineRasterFiller.aBoolean2469) method2405(i + -110)
         anInt5170++
         method556(false)
         if (Class348_Sub8.aRenderer6654 != null) Class348_Sub8.aRenderer6654!!.method3635(89.toByte())
@@ -1520,7 +1520,7 @@ class Client : GameAppletFrame() {
         if (Class367_Sub11.anInt7396 % 1500 == 0) method3088(9)
         if (Class240.anInt4674 == 7 && Class225.anInt2955 == 0) method1987(-124)
         method909(3553)
-        if (Class184.aBoolean2469 && (Class34.aLong482 < method599(-107) + -60000L)) method2405(41)
+        if (ScanlineRasterFiller.aBoolean2469 && (Class34.aLong482 < method599(-107) + -60000L)) method2405(41)
         var class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1872(8) as Class318_Sub9_Sub1?)
         while (class318_sub9_sub1 != null) {
             if (class318_sub9_sub1.anInt8787.toLong() < -5L + method599(-80) / 1000L) {

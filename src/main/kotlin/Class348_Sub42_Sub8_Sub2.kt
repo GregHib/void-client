@@ -922,7 +922,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val bool_108_ = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val `is` = ByteArray(Class348_Sub40_Sub25.anInt9341 - 1)
                 Class299.aClass348_Sub49_Sub2_3813!!.method3389(2147483647, 0, (Class348_Sub40_Sub25.anInt9341) + -1, `is`)
-                Class184.method1385(bool_108_, `is`, (-104).toByte())
+                ScanlineRasterFiller.method1385(bool_108_, `is`, (-104).toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

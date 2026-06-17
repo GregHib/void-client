@@ -286,7 +286,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class69.anInt1196 = 0
             SpotAnimDefinition.anInt2378 = 0
             Class318_Sub1_Sub3_Sub5.anInt10404 = 0
-            Class184.anInt2475 = 0
+            ScanlineRasterFiller.anInt2475 = 0
             Class82.anInt1438 = 0
             Class239_Sub25.anInt6104 = 0
             Class348_Sub49.anInt7172 = 0
@@ -1785,7 +1785,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub39.anInt9486 = 0
             Class239_Sub29.anInt6145 = 0
             Class50_Sub3.anInt5253 = 0
-            Class184.anInt2476 = 0
+            ScanlineRasterFiller.anInt2476 = 0
             Class376.anInt4550 = 0
             Client.anInt5174 = 0
             OpenGlRenderer.anInt7518 = 0
@@ -3307,7 +3307,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9881 = 0
             Class59_Sub1.anInt5281 = 0
             Class377.anInt9853 = 0
-            Class184.anInt2472 = 0
+            ScanlineRasterFiller.anInt2472 = 0
             Class348_Sub16_Sub2.anInt8873 = 0
             Npc.anInt10493 = 0
             NativeRenderer.anInt8017 = 0
@@ -3773,7 +3773,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub23_Sub4.anInt9059 = 0
             Class367_Sub1.anInt7283 = 0
             Class286_Sub6.anInt6263 = 0
-            Class184.anInt2470 = 0
+            ScanlineRasterFiller.anInt2470 = 0
             Class5_Sub2.anInt8360 = 0
             Class318_Sub1_Sub3_Sub5.anInt10390 = 0
             Class239_Sub22.anInt6072 = 0

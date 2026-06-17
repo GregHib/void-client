@@ -57,7 +57,7 @@ class CompositeNpcModelBuilder {
                         var i_21_ = class17_18_.anIntArray237[i_19_]
                         Class95.aClass348_Sub42_Sub17Array1543!![i_17_] = class87.method839(i_21_ ushr 16, 3)
                         i_21_ = i_21_ and 0xffff
-                        Class184.anIntArray2471!![i_17_] = i_21_
+                        ScanlineRasterFiller.anIntArray2471!![i_17_] = i_21_
                         if (Class95.aClass348_Sub42_Sub17Array1543!![i_17_] != null) {
                             bool_13_ = bool_13_ or Class95.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3272(i_21_, 0)
                             bool_12_ = bool_12_ or Class95.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3271(i_21_, 14)
@@ -245,7 +245,7 @@ class CompositeNpcModelBuilder {
             var i_55_ = 0
             var i_56_ = 1
             while ( /**/i_16_ > i_55_) {
-                if (Class95.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + Class50_Sub3.anIntArray5241!![i_55_], null, i_56_, Class184.anIntArray2471!![i_55_], Class227.anIntArray2967!![i_55_], Class295.aClass348_Sub42_Sub17Array3753!![i_55_], 0, Class95.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRenderer.anIntArray1583!![i_55_])
+                if (Class95.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + Class50_Sub3.anIntArray5241!![i_55_], null, i_56_, ScanlineRasterFiller.anIntArray2471!![i_55_], Class227.anIntArray2967!![i_55_], Class295.aClass348_Sub42_Sub17Array3753!![i_55_], 0, Class95.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRenderer.anIntArray1583!![i_55_])
                 i_56_ = i_56_ shl 1
                 i_55_++
             }
