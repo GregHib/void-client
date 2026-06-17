@@ -441,7 +441,7 @@
 "Class348_Sub25","ImageBoxBlurScroller","Pixel IntArray and dimension; scroll/wrap and box-blur the pixel grid","Class348 node holding an image buffer with blur and offset operations"
 "Class348_Sub26","NamedIdEntry","Volatile String name and volatile int id (-1 default)","Simple Class348 record node pairing a name with an integer id"
 "Class348_Sub27","MultiFieldRecord","Flat record of ~12 int fields, no methods","Plain data-holder Class348 node; coordinate/state values"
-"Class348_Sub28","Interface19Holder","Holds a single Interface19 reference","Thin wrapper Class348 node carrying one Interface19 instance"
+"Class348_Sub28","DisposableHolder","Holds a single Interface19 reference","Thin wrapper Class348 node carrying one Interface19 instance"
 "Class348_Sub29","ShortKeyNode","Holds one Short; hashtable value keyed by terrain tile in Sub32/Sub38","Class348 node; stores a vertex/index short"
 "Class348_Sub3","ModelVertexColorBuffer","Builds native vertex/color stream for s_Sub3 model via ha_Sub3 hardware buffers","Class348 node; uploads per-face colors to GPU NativeHeapBuffer/Stream"
 "Class348_Sub30","AbstractEffectNode","Abstract Class348 node with int field and abstract apply(Class348_Sub16_Sub4) + reset","Base for effect/processor nodes operating on audio mixer input"
