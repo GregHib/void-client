@@ -77,7 +77,7 @@ class Class258_Sub1 : Class258 {
             Class285_Sub2.anInt8502 = i_14_ shr Class362.anInt4459
             TextureDefinitionLoader.anInt1974 = i_12_
             Class348_Sub40_Sub27.anInt9360 = i_14_
-            Class232.anInt3006 = i_13_
+            TerrainTileGeometry.anInt3006 = i_13_
             Class37.anInt492 = Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084
             if (Class37.anInt492 < 0) {
                 AnimatedModelRenderer.anInt8412 = -Class37.anInt492

@@ -127,7 +127,7 @@ import NativeLibraryUnloader.method1628
 import RenderConfigFactory.Companion.method1632
 import SceneProjector.Companion.method1635
 import HudTabPanel.Companion.method1641
-import Class232.Companion.method1645
+import TerrainTileGeometry.Companion.method1645
 import Class233.Companion.method1653
 import Class235.Companion.method1673
 import Class237.Companion.method1677

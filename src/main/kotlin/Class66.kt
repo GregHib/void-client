@@ -5100,7 +5100,7 @@ object Class66 {
                     else if (i_490_ == 43) {
                         val i_502_ = is_489_[i_488_]
                         Class77.anIntArray1303!![i_502_] = anIntArray1149!![--anInt1173]
-                        Class232.method1647(-128, i_502_)
+                        TerrainTileGeometry.method1647(-128, i_502_)
                         ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or Class286_Sub6.aBooleanArray6270!![i_502_]
                     } else if (i_490_ == 44) {
                         val i_503_ = is_489_[i_488_] shr 16

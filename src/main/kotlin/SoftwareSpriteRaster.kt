@@ -15,7 +15,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
     var aByteArray1617: ByteArray
     private val anInt1618: Int
     private val aS_Sub2_1622: OpenGlTerrainTile?
-    private var aClass232ArrayArray1623: Array<Array<Class232?>>? = null
+    private var aTerrainTileGeometryArrayArray1623: Array<Array<TerrainTileGeometry?>>? = null
     @JvmField
     var anInt1624: Int = 0
     private val anInt1625: Int
@@ -67,14 +67,14 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
 
     private fun method952(i: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int) {
         anInt1629++
-        if (aClass232ArrayArray1623 != null) {
+        if (aTerrainTileGeometryArrayArray1623 != null) {
             val i_17_ = i_14_ + -1 shr 7
             val i_18_ = -1 + i_14_ - 1 - -i_13_ shr 7
             val i_19_ = i_15_ + i_16_ shr 7
             val i_20_ = -1 + i + i_16_ - 1 shr 7
             var i_21_ = i_17_
             while (i_18_ >= i_21_) {
-                val class232s = aClass232ArrayArray1623!![i_21_]
+                val class232s = aTerrainTileGeometryArrayArray1623!![i_21_]
                 for (i_22_ in i_19_..i_20_) class232s[i_22_]!!.aBoolean3009 = true
                 i_21_++
             }
@@ -87,7 +87,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         anInt1630++
         val var_r_Sub2 = var_renderNode as OpenGlRenderNode
         i_24_ += 1 + var_r_Sub2.anInt10484
-        if (i_23_.toInt() != 88) aClass232ArrayArray1623 = null
+        if (i_23_.toInt() != 88) aTerrainTileGeometryArrayArray1623 = null
         i += 1 + var_r_Sub2.anInt10489
         var i_25_ = i_24_ * this.anInt1624 + i
         var i_26_ = var_r_Sub2.anInt10487
@@ -148,7 +148,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
                                     glScalef(f, f, 1.0f)
                                     glTranslatef(-i_54_.toFloat() / f, -i_51_.toFloat() / f, 1.0f)
                                     glMatrixMode(5888)
-                                    aClass232ArrayArray1623!![i_54_][i_51_]!!.method1644(((-121).toByte()).toByte())
+                                    aTerrainTileGeometryArrayArray1623!![i_54_][i_51_]!!.method1644(((-121).toByte()).toByte())
                                     break@while_43_
                                 }
                                 i_58_++
@@ -208,7 +208,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
                         glScalef(f, f, 1.0f)
                         glTranslatef(-i_42_.toFloat() / f, -i_39_.toFloat() / f, 1.0f)
                         glMatrixMode(5888)
-                        aClass232ArrayArray1623!![i_42_][i_39_]!!.method1643((class348_sub49_sub1.aByteArray7154), 5123, i_43_, 70.toByte())
+                        aTerrainTileGeometryArrayArray1623!![i_42_][i_39_]!!.method1643((class348_sub49_sub1.aByteArray7154), 5123, i_43_, 70.toByte())
                     }
                     i_42_++
                 }
@@ -222,11 +222,11 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
 
     fun method957(i: Int) {
         anInt1628++
-        aClass232ArrayArray1623 = Array(anInt1618) { arrayOfNulls(anInt1625) }
+        aTerrainTileGeometryArrayArray1623 = Array(anInt1618) { arrayOfNulls(anInt1625) }
         for (i_59_ in i..<anInt1625) {
             var i_60_ = 0
             while (anInt1618 > i_60_) {
-                aClass232ArrayArray1623!![i_60_][i_59_] = Class232(aHa_Sub2_1616, this, aS_Sub2_1622, i_60_, i_59_, anInt1613, 1 + 128 * i_60_, 128 * i_59_ + 1)
+                aTerrainTileGeometryArrayArray1623!![i_60_][i_59_] = TerrainTileGeometry(aHa_Sub2_1616, this, aS_Sub2_1622, i_60_, i_59_, anInt1613, 1 + 128 * i_60_, 128 * i_59_ + 1)
                 i_60_++
             }
         }

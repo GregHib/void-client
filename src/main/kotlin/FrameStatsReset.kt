@@ -1099,7 +1099,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class286_Sub4.anInt6241 = 0
             Class286_Sub2.anInt6208 = 0
             Class377.anInt9866 = 0
-            Class232.anInt3004 = 0
+            TerrainTileGeometry.anInt3004 = 0
             Class59.anInt1076 = 0
             Class59_Sub2_Sub2.anInt8680 = 0
             Class348_Sub3.anInt6583 = 0
@@ -1923,7 +1923,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub7.anInt9543 = 0
             Class50_Sub3.anInt5239 = 0
             Class44.anInt621 = 0
-            Class232.anInt3012 = 0
+            TerrainTileGeometry.anInt3012 = 0
             Class369_Sub3_Sub1.anInt10178 = 0
             NativeTerrainTile.anInt8300 = 0
             Class286_Sub8.anInt6298 = 0
@@ -2176,7 +2176,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class315.anInt3947 = 0
             NativeRenderer.anInt8024 = 0
             Class348_Sub40_Sub12.anInt9191 = 0
-            Class232.anInt3013 = 0
+            TerrainTileGeometry.anInt3013 = 0
             NativeRenderer.anInt8000 = 0
             SizeBoundedSoftCache.anInt2313 = 0
             Class268.anInt3434 = 0
@@ -2358,7 +2358,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub26.anInt9348 = 0
             Class279.anInt3595 = 0
             Class348_Sub5.anInt6626 = 0
-            Class232.anInt3007 = 0
+            TerrainTileGeometry.anInt3007 = 0
             Class25.anInt372 = 0
             MapSceneIconDef.anInt2852 = 0
             Class55.anInt992 = 0
@@ -3855,7 +3855,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class37.anInt490 = 0
             Class51.anInt871 = 0
             Class348_Sub40_Sub27.anInt9358 = 0
-            Class232.anInt3005 = 0
+            TerrainTileGeometry.anInt3005 = 0
             Class239_Sub11.anInt5955 = 0
             Class377.anInt9825 = 0
             Class64_Sub2.anInt5451 = 0

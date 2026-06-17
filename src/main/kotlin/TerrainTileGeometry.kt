@@ -1,7 +1,7 @@
 /* Class232 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, softwareSpriteRaster: SoftwareSpriteRaster?, var_s_Sub2: OpenGlTerrainTile?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
+class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, softwareSpriteRaster: SoftwareSpriteRaster?, var_s_Sub2: OpenGlTerrainTile?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
     private var aClass258_Sub3_2998: Class258_Sub3? = null
     private val aSoftwareSpriteRaster_2999: SoftwareSpriteRaster?
     private val aHa_Sub2_3000: OpenGlRenderer?

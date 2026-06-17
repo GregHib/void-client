@@ -177,7 +177,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                         }
                     }
                 } else if (class338.aByte4192.toInt() == 4) {
-                    val f = (-Class232.anInt3006 + class338.anIntArray4191[0]).toFloat()
+                    val f = (-TerrainTileGeometry.anInt3006 + class338.anIntArray4191[0]).toFloat()
                     if (!(f <= OpenGlRenderer.anInt7714.toFloat())) {
                         var i_29_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + -Class285_Sub2.anInt8502 + class338.aShort4193)
                         if (i_29_ >= 0) {
