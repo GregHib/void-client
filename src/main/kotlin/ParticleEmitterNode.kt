@@ -60,7 +60,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
         fun method219(i: Int, bool: Boolean, i_0_: Int): Boolean {
             if (bool != false) return false
             anInt190++
-            return ((i and 0x800) != 0) or Class278.method2077(-106, i_0_, i) || method3200(i, i_0_, 88.toByte())
+            return ((i and 0x800) != 0) or BufferedMessageQueue.method2077(-106, i_0_, i) || method3200(i, i_0_, 88.toByte())
         }
 
         init {

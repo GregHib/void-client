@@ -36,7 +36,7 @@ class Class79 {
     @JvmField
     var aByte1347: Byte
     @JvmField
-    var aClass278_1348: Class278? = null
+    var aBufferedMessageQueue_1348: BufferedMessageQueue? = null
     var aStringArray1349: Array<String?>
     @JvmField
     var aShort1350: Short = 0
@@ -108,7 +108,7 @@ class Class79 {
         var i_0_ = i
         while (this.anIntArray1377!!.size > i_0_) {
             if (this.anIntArray1377!![i_0_] != -1) {
-                val class79_1_ = (this.aClass278_1348!!.method2079(this.anIntArray1377!![i_0_], -1))
+                val class79_1_ = (this.aBufferedMessageQueue_1348!!.method2079(this.anIntArray1377!![i_0_], -1))
                 if (class79_1_.anInt1343 != -1 || class79_1_.anInt1364 != -1 || class79_1_.anInt1327 != -1) return true
             }
             i_0_++
@@ -125,9 +125,9 @@ class Class79 {
         if (i_2_ < 0 || (-1 + this.anIntArray1377!!.size <= i_2_) || this.anIntArray1377!![i_2_] == -1) {
             val i_3_ = (this.anIntArray1377!![this.anIntArray1377!!.size - 1])
             if (i_3_ == -1) return null
-            return this.aClass278_1348!!.method2079(i_3_, i)
+            return this.aBufferedMessageQueue_1348!!.method2079(i_3_, i)
         }
-        return this.aClass278_1348!!.method2079(this.anIntArray1377!![i_2_], -1)
+        return this.aBufferedMessageQueue_1348!!.method2079(this.anIntArray1377!![i_2_], -1)
     }
 
     private fun method795(class348_sub49: Class348_Sub49, i: Int, i_4_: Int) {
@@ -250,7 +250,7 @@ class Class79 {
                                                                         else if (i != 143) {
                                                                             if (i >= 150 && i < 155) {
                                                                                 this.aStringArray1349[-150 + i] = class348_sub49.readString((-73).toByte())
-                                                                                if (!this.aClass278_1348!!.aBoolean3583) this.aStringArray1349[i + -150] = null
+                                                                                if (!this.aBufferedMessageQueue_1348!!.aBoolean3583) this.aStringArray1349[i + -150] = null
                                                                             } else if (i == 155) {
                                                                                 aByte1376 = class348_sub49.readByte(i_4_ xor 0x16.inv())
                                                                                 aByte1360 = class348_sub49.readByte(-113)
@@ -335,7 +335,7 @@ class Class79 {
         if (i >= -75) aByte1376 = 102.toByte()
         anInt1334++
         if (this.aByte1384.toInt() == -1) {
-            if (ParticleEmitterNode.aSceneProjector_186 == this.aClass278_1348!!.aSceneProjector_3578) this.aByte1384 = 1.toByte()
+            if (ParticleEmitterNode.aSceneProjector_186 == this.aBufferedMessageQueue_1348!!.aSceneProjector_3578) this.aByte1384 = 1.toByte()
             else this.aByte1384 = 0.toByte()
         }
     }
@@ -466,8 +466,8 @@ class Class79 {
             }
             val l = (var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong()
             var class64: Class64?
-            synchronized(this.aClass278_1348!!.aClass60_3590!!) {
-                class64 = this.aClass278_1348!!.aClass60_3590!!.method583(l, 80) as Class64?
+            synchronized(this.aBufferedMessageQueue_1348!!.aClass60_3590!!) {
+                class64 = this.aBufferedMessageQueue_1348!!.aClass60_3590!!.method583(l, 80) as Class64?
             }
             var npcDefinition: NpcDefinition? = null
             if (this.anInt1366 != -1) npcDefinition = npcDefinitionCache!!.method1983(this.anInt1366, 32)
@@ -475,10 +475,10 @@ class Class79 {
                 if (class64 != null) i_43_ = i_43_ or class64.ua()
                 var i_69_ = i_43_
                 var bool_70_ = false
-                synchronized(this.aClass278_1348!!.aClass45_3576!!) {
+                synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
                     var i_71_ = 0
                     while ((anIntArray1402!!.size > i_71_)) {
-                        if (anIntArray1402!![i_71_] != -1 && !(this.aClass278_1348!!.aClass45_3576!!.method420(-10499, anIntArray1402!![i_71_], 0))) bool_70_ = true
+                        if (anIntArray1402!![i_71_] != -1 && !(this.aBufferedMessageQueue_1348!!.aClass45_3576!!.method420(-10499, anIntArray1402!![i_71_], 0))) bool_70_ = true
                         i_71_++
                     }
                 }
@@ -486,8 +486,8 @@ class Class79 {
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1402!!.size)
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
-                        synchronized(this.aClass278_1348!!.aClass45_3576!!) {
-                            modelDefinitions[i_72_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1402!![i_72_], -1)
+                        synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
+                            modelDefinitions[i_72_] = Class300.method2277(0, (this.aBufferedMessageQueue_1348!!.aClass45_3576!!), anIntArray1402!![i_72_], -1)
                         }
                         if (modelDefinitions[i_72_] != null) {
                             if (modelDefinitions[i_72_]!!.anInt1830 < 13) modelDefinitions[i_72_]!!.method1092(2, 115)
@@ -525,7 +525,7 @@ class Class79 {
                 if (aShortArray1328 != null) i_69_ = i_69_ or 0x4000
                 if (aShortArray1393 != null) i_69_ = i_69_ or 0x8000
                 if (aByte1405.toInt() != 0) i_69_ = i_69_ or 0x80000
-                class64 = var_renderer.method3625(modelDefinition, i_69_, (this.aClass278_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406)
+                class64 = var_renderer.method3625(modelDefinition, i_69_, (this.aBufferedMessageQueue_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406)
                 if (aShortArray1328 != null) {
                     var i_80_ = 0
                     while ((i_80_ < aShortArray1328!!.size)) {
@@ -543,8 +543,8 @@ class Class79 {
                 }
                 if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 class64.s(i_43_)
-                synchronized(this.aClass278_1348!!.aClass60_3590!!) {
-                    this.aClass278_1348!!.aClass60_3590!!.method582(class64, (this.anInt1344 or (var_renderer.anInt4567 shl 16)).toLong(), (-125).toByte())
+                synchronized(this.aBufferedMessageQueue_1348!!.aClass60_3590!!) {
+                    this.aBufferedMessageQueue_1348!!.aClass60_3590!!.method582(class64, (this.anInt1344 or (var_renderer.anInt4567 shl 16)).toLong(), (-125).toByte())
                 }
             }
             val class64_82_ = class64.method614(4.toByte(), i_43_, true)
@@ -639,26 +639,26 @@ class Class79 {
             var i_99_ = i_97_
             if (widgetDefinition != null && i_95_ != -1) i_99_ = i_99_ or widgetDefinition.method263(i_94_, 97, i_95_, true)
             var class64: Class64?
-            synchronized(this.aClass278_1348!!.aClass60_3592) {
-                class64 = ((this.aClass278_1348!!.aClass60_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as Class64?)
+            synchronized(this.aBufferedMessageQueue_1348!!.aClass60_3592) {
+                class64 = ((this.aBufferedMessageQueue_1348!!.aClass60_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as Class64?)
             }
             if (class64 == null || i_99_ != (class64.ua() and i_99_)) {
                 if (class64 != null) i_99_ = i_99_ or class64.ua()
                 var i_100_ = i_99_
                 var bool = false
-                synchronized(this.aClass278_1348!!.aClass45_3576!!) {
+                synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
                     var i_101_ = 0
                     while ((anIntArray1380!!.size > i_101_)) {
-                        if (!this.aClass278_1348!!.aClass45_3576!!.method420(-10499, anIntArray1380!![i_101_], 0)) bool = true
+                        if (!this.aBufferedMessageQueue_1348!!.aClass45_3576!!.method420(-10499, anIntArray1380!![i_101_], 0)) bool = true
                         i_101_++
                     }
                 }
                 if (bool) return null
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1380!!.size)
-                synchronized(this.aClass278_1348!!.aClass45_3576!!) {
+                synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
-                        modelDefinitions[i_102_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1380!![i_102_], -1)
+                        modelDefinitions[i_102_] = Class300.method2277(0, (this.aBufferedMessageQueue_1348!!.aClass45_3576!!), anIntArray1380!![i_102_], -1)
                         i_102_++
                     }
                 }
@@ -673,7 +673,7 @@ class Class79 {
                 if (aShortArray1328 != null) i_100_ = i_100_ or 0x4000
                 if (aShortArray1393 != null) i_100_ = i_100_ or 0x8000
                 if (aByte1405.toInt() != 0) i_100_ = i_100_ or 0x80000
-                class64 = var_renderer!!.method3625(modelDefinition, i_100_, (this.aClass278_1348!!.anInt3593), 64, 768)
+                class64 = var_renderer!!.method3625(modelDefinition, i_100_, (this.aBufferedMessageQueue_1348!!.anInt3593), 64, 768)
                 if (aShortArray1328 != null) {
                     var i_104_ = 0
                     while ((aShortArray1328!!.size > i_104_)) {
@@ -691,8 +691,8 @@ class Class79 {
                 }
                 if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 class64.s(i_99_)
-                synchronized(this.aClass278_1348!!.aClass60_3592) {
-                    this.aClass278_1348!!.aClass60_3592.method582(class64, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
+                synchronized(this.aBufferedMessageQueue_1348!!.aClass60_3592) {
+                    this.aBufferedMessageQueue_1348!!.aClass60_3592.method582(class64, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
                 }
             }
             if (widgetDefinition != null && i_95_ != -1) class64 = widgetDefinition.method269(-9, class64, i_94_, i, i_99_, i_95_)

@@ -4,7 +4,7 @@ import CameraConfigDefinition.Companion.method1920
 /* Class278 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class278 internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class45: Class45?, class45_7_: Class45?) {
+class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class45: Class45?, class45_7_: Class45?) {
     var aClass45_3576: Class45? = null
     private var aClass60_3577: Class60? = Class60(64)
     var aSceneProjector_3578: SceneProjector? = null
@@ -89,7 +89,7 @@ class Class278 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
         }
         class79 = Class79()
         class79.anInt1344 = i
-        class79.aClass278_1348 = this
+        class79.aBufferedMessageQueue_1348 = this
         if (`is` != null) class79.method798(111, Class348_Sub49(`is`))
         class79.method799(-117)
         synchronized(aClass60_3577!!) {

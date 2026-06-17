@@ -967,7 +967,7 @@ object Class66 {
                 Class318_Sub6.aShortArray6428!![anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
                 Exception_Sub1.aModelHeaderCache_112!!.method1930(-21804)
                 Exception_Sub1.aModelHeaderCache_112!!.method1936(-71)
-                MapAreaDefinition.aClass278_2529!!.method2074(-118)
+                MapAreaDefinition.aBufferedMessageQueue_2529!!.method2074(-118)
                 Class354.method3466(125)
                 return
             }
@@ -4949,9 +4949,9 @@ object Class66 {
                     val i_478_ = anIntArray1149!![anInt1173]
                     val i_479_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aClass326_5764!!.method2600(i_479_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (MapAreaDefinition.aClass278_2529!!.method2079(i_478_, -1).method801(17.toByte(), i_479_, class254.aString3258))
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(i_478_, -1).method801(17.toByte(), i_479_, class254.aString3258))
                     else {
-                        anIntArray1149!![anInt1173++] = (MapAreaDefinition.aClass278_2529!!.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48))
+                        anIntArray1149!![anInt1173++] = (MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48))
                         return
                     }
                     return

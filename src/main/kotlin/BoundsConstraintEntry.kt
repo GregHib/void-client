@@ -30,7 +30,7 @@ class BoundsConstraintEntry internal constructor(string: String?, var anInt5167:
             if (i_0_ < 80) method2055(17)
             anInt5168++
             if (!method1193(i_1_, i, true)) return false
-            if (method1087(12644, i_1_, i) or ((i and 0xb000) != 0) or Class278.Companion.method2075(i, -128, i_1_)) return true
+            if (method1087(12644, i_1_, i) or ((i and 0xb000) != 0) or BufferedMessageQueue.Companion.method2075(i, -128, i_1_)) return true
             return ((method1241(i_1_, i, -128) or method1722(i, i_1_, 92.toByte())) and ((0x37 and i_1_) == 0))
         }
 

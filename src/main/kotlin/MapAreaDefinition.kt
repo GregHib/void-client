@@ -53,7 +53,7 @@ class MapAreaDefinition {
         var aIntRange_2527: IntRange? = IntRange(98, -2)
         var anInt2528: Int = 0
         @JvmField
-        var aClass278_2529: Class278? = null
+        var aBufferedMessageQueue_2529: BufferedMessageQueue? = null
         var anInt2532: Int = 0
         fun method1420(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, class361: Class361, i_13_: Int, i_14_: Int): Boolean {
             anInt2521++
@@ -251,7 +251,7 @@ class MapAreaDefinition {
 
         @JvmStatic
         fun method1421(i: Byte) {
-            aClass278_2529 = null
+            aBufferedMessageQueue_2529 = null
             if (i.toInt() != -85) method1421(39.toByte())
             aIntRange_2527 = null
         }

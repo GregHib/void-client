@@ -102,7 +102,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 val i_23_ = 0x3d01 and (4 + Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3) shl 11)
                 val i_24_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                 if (i_24_ == 1) MinimapRectClipper.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_18_
-                npc.method2448((MapAreaDefinition.aClass278_2529!!.method2079(Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
+                npc.method2448((MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
                 npc.method2434(111.toByte(), npc.aClass79_10505!!.anInt1399)
                 npc.anInt10310 = (npc.aClass79_10505!!.anInt1329) shl 3
                 if (bool) npc.method2435((-108).toByte(), i_23_, true)
