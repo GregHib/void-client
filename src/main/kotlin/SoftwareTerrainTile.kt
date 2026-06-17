@@ -15,7 +15,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     private var aFloat8221 = 0f
     private var aClass236ArrayArray8222: Array<Array<Class236?>?>? = null
     private var aFloat8224 = 0f
-    private var aClass145ArrayArray8225: Array<Array<Class145?>?>? = null
+    private var aTerrainTileDataArrayArray8225: Array<Array<TerrainTileData?>?>? = null
     private var aFloat8226 = 0f
     private var aFloat8227 = 0f
     private var anInt8228 = -1
@@ -33,7 +33,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         val bool_11_ = (anInt8223 and 0x20) == 0
         if (aClass266ArrayArray8230 == null && !bool_11_) {
             aClass266ArrayArray8230 = Array<Array<Class266?>?>(this.anInt4587) { arrayOfNulls<Class266?>(this.anInt4590) }
-            aClass145ArrayArray8225 = Array<Array<Class145?>?>(this.anInt4587) { arrayOfNulls<Class145?>(this.anInt4590) }
+            aTerrainTileDataArrayArray8225 = Array<Array<TerrainTileData?>?>(this.anInt4587) { arrayOfNulls<TerrainTileData?>(this.anInt4590) }
         } else if (aClass198ArrayArray8219 == null && bool_11_) aClass198ArrayArray8219 = Array<Array<Class198?>?>(this.anInt4587) { arrayOfNulls<Class198?>(this.anInt4590) }
         else check(aVertexNormalArrayArray8215 == null)
         if (`is` != null && `is`.size != 0) {
@@ -243,15 +243,15 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                     }
                     aClass266ArrayArray8230!![i]!![i_0_] = class266
                 } else {
-                    val class145 = Class145()
-                    class145.aShort2003 = `is`.size.toShort()
-                    class145.aShort2010 = (`is`.size / 3).toShort()
-                    class145.aShortArray2009 = ShortArray(class145.aShort2003.toInt())
-                    class145.aShortArray2007 = ShortArray(class145.aShort2003.toInt())
-                    class145.aShortArray2002 = ShortArray(class145.aShort2003.toInt())
-                    class145.anIntArray2001 = IntArray(class145.aShort2003.toInt())
-                    if (is_3_ != null) class145.aShortArray2006 = ShortArray(class145.aShort2003.toInt())
-                    for (i_40_ in 0..<class145.aShort2003) {
+                    val terrainTileData = TerrainTileData()
+                    terrainTileData.aShort2003 = `is`.size.toShort()
+                    terrainTileData.aShort2010 = (`is`.size / 3).toShort()
+                    terrainTileData.aShortArray2009 = ShortArray(terrainTileData.aShort2003.toInt())
+                    terrainTileData.aShortArray2007 = ShortArray(terrainTileData.aShort2003.toInt())
+                    terrainTileData.aShortArray2002 = ShortArray(terrainTileData.aShort2003.toInt())
+                    terrainTileData.anIntArray2001 = IntArray(terrainTileData.aShort2003.toInt())
+                    if (is_3_ != null) terrainTileData.aShortArray2006 = ShortArray(terrainTileData.aShort2003.toInt())
+                    for (i_40_ in 0..<terrainTileData.aShort2003) {
                         val i_41_ = `is`[i_40_]
                         val i_42_ = is_2_[i_40_]
                         val bool_43_ = false
@@ -267,39 +267,39 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         }
                         val i_47_ = (i shl this.anInt4588) + i_41_
                         val i_48_ = (i_0_ shl this.anInt4588) + i_42_
-                        class145.aShortArray2009!![i_40_] = i_41_.toShort()
-                        class145.aShortArray2002!![i_40_] = i_42_.toShort()
-                        class145.aShortArray2007!![i_40_] = (this.method3986(i_47_, i_48_, 126.toByte()) + (if (is_1_ != null) is_1_[i_40_] else 0)).toShort()
+                        terrainTileData.aShortArray2009!![i_40_] = i_41_.toShort()
+                        terrainTileData.aShortArray2002!![i_40_] = i_42_.toShort()
+                        terrainTileData.aShortArray2007!![i_40_] = (this.method3986(i_47_, i_48_, 126.toByte()) + (if (is_1_ != null) is_1_[i_40_] else 0)).toShort()
                         if (i_44_ < 0) i_44_ = 0
                         if (is_4_[i_40_] == 0) {
-                            if (is_5_ != null) class145.anIntArray2001!![i_40_] = i_44_ shl 25
-                            else class145.anIntArray2001!![i_40_] = 0
+                            if (is_5_ != null) terrainTileData.anIntArray2001!![i_40_] = i_44_ shl 25
+                            else terrainTileData.anIntArray2001!![i_40_] = 0
                         } else {
                             var i_49_ = 0
                             if (is_3_ != null) {
-                                val i_50_ = (is_3_[i_40_].toShort().also { class145.aShortArray2006!![i_40_] = it }).toInt()
+                                val i_50_ = (is_3_[i_40_].toShort().also { terrainTileData.aShortArray2006!![i_40_] = it }).toInt()
                                 if (i_9_ != 0) {
                                     i_49_ = 255 * i_50_ / i_9_
                                     if (i_49_ < 0) i_49_ = 0
                                     else if (i_49_ > 255) i_49_ = 255
                                 }
                             }
-                            class145.anIntArray2001!![i_40_] = Class298.method2250(method3991((is_4_[i_40_] shr 8), i_44_), 40, i_49_, i_8_)
-                            if (is_5_ != null) class145.anIntArray2001!![i_40_] = class145.anIntArray2001!![i_40_] or (i_44_ shl 25)
+                            terrainTileData.anIntArray2001!![i_40_] = Class298.method2250(method3991((is_4_[i_40_] shr 8), i_44_), 40, i_49_, i_8_)
+                            if (is_5_ != null) terrainTileData.anIntArray2001!![i_40_] = terrainTileData.anIntArray2001!![i_40_] or (i_44_ shl 25)
                         }
                     }
                     var bool_51_ = false
-                    for (i_52_ in 0..<class145.aShort2010) {
+                    for (i_52_ in 0..<terrainTileData.aShort2010) {
                         if (is_6_[i_52_ * 3] != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(is_6_[i_52_ * 3], -6662)!!.aBoolean209)) bool_51_ = true
                     }
-                    if (is_5_ != null) class145.anIntArray2011 = IntArray(class145.aShort2010.toInt())
+                    if (is_5_ != null) terrainTileData.anIntArray2011 = IntArray(terrainTileData.aShort2010.toInt())
                     if (bool_51_) {
-                        class145.aShortArray2008 = ShortArray(class145.aShort2010.toInt())
-                        class145.aShortArray2005 = ShortArray(class145.aShort2010.toInt())
+                        terrainTileData.aShortArray2008 = ShortArray(terrainTileData.aShort2010.toInt())
+                        terrainTileData.aShortArray2005 = ShortArray(terrainTileData.aShort2010.toInt())
                     }
-                    for (i_53_ in 0..<class145.aShort2010) {
+                    for (i_53_ in 0..<terrainTileData.aShort2010) {
                         val i_54_ = i_53_ * 3
-                        if (is_5_ != null && is_5_[i_54_] != 0) class145.anIntArray2011!![i_53_] = is_5_[i_54_] shr 8
+                        if (is_5_ != null && is_5_[i_54_] != 0) terrainTileData.anIntArray2011!![i_53_] = is_5_[i_54_] shr 8
                         if (bool_51_) {
                             val i_55_ = i_54_ + 1
                             val i_56_ = i_55_ + 1
@@ -315,22 +315,22 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             if (i_59_ == -1 || (aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) bool_58_ = false
                             else bool_57_ = true
                             if (bool_58_) {
-                                class145.aShortArray2008!![i_53_] = i_59_.toShort()
-                                class145.aShortArray2005!![i_53_] = is_7_[i_54_].toShort()
+                                terrainTileData.aShortArray2008!![i_53_] = i_59_.toShort()
+                                terrainTileData.aShortArray2005!![i_53_] = is_7_[i_54_].toShort()
                             } else {
                                 if (bool_57_) {
                                     i_59_ = is_6_[i_54_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_54_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) terrainTileData.anIntArray2001!![i_54_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_55_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_55_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) terrainTileData.anIntArray2001!![i_55_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_56_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_56_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aBoolean209)) terrainTileData.anIntArray2001!![i_56_] = (Crc64Hashable.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aRenderConfig4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                 }
-                                class145.aShortArray2008!![i_53_] = (-1).toShort()
+                                terrainTileData.aShortArray2008!![i_53_] = (-1).toShort()
                             }
                         }
                     }
-                    aClass145ArrayArray8225!![i]!![i_0_] = class145
+                    aTerrainTileDataArrayArray8225!![i]!![i_0_] = terrainTileData
                 }
             }
         }
@@ -487,7 +487,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     private fun method3990(i: Int, i_105_: Int, bool: Boolean, class167: Class167, shadowProjector: ShadowProjector, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
         val class266 = aClass266ArrayArray8230!![i]!![i_105_]
         if (class266 == null) {
-            val class145 = aClass145ArrayArray8225!![i]!![i_105_]
+            val class145 = aTerrainTileDataArrayArray8225!![i]!![i_105_]
             if (class145 != null) {
                 if (i_109_ != 0) {
                     if ((class145.aByte2004.toInt() and 0x4) != 0) {
@@ -1225,8 +1225,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                 shadowProjector.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class6.method206(i_274_, (class266.anInt3380) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255))
                                 shadowProjector.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, Class6.method206(i_274_, (class266.anInt3389) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255))
                             }
-                        } else if (aClass145ArrayArray8225!![i_271_]!![i_272_] != null) {
-                            val class145 = aClass145ArrayArray8225!![i_271_]!![i_272_]!!
+                        } else if (aTerrainTileDataArrayArray8225!![i_271_]!![i_272_] != null) {
+                            val class145 = aTerrainTileDataArrayArray8225!![i_271_]!![i_272_]!!
                             for (i_275_ in 0..<class145.aShort2003) {
                                 `is`[i_275_] = i_269_ + ((class145.aShortArray2009!![i_275_]) * i_268_ / this.anInt4592)
                                 is_266_[i_275_] = i_270_ - ((class145.aShortArray2002!![i_275_]) * i_268_ / this.anInt4592)

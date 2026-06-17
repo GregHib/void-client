@@ -1,7 +1,7 @@
 /* Class145 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class145 {
+class TerrainTileData {
     var anIntArray2001: IntArray? = null
     var aShortArray2002: ShortArray? = null
     var aShort2003: Short = 0
