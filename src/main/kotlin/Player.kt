@@ -326,7 +326,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         val class101 = var_renderer!!.method3705()
         val i_53_ = this.aClass264_10217.method2019((-126).toByte())
         class101.method895(i_53_)
-        val class357 = (Class147.aClass357ArrayArrayArray2029!![this.plane.toInt()]!![this.x shr Class362.anInt4459]!![this.y shr Class362.anInt4459])
+        val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![this.plane.toInt()]!![this.x shr Class362.anInt4459]!![this.y shr Class362.anInt4459])
         if (class357 == null || class357.aClass318_Sub1_Sub1_4402 == null) this.anInt10274 = (this.anInt10274 - this.anInt10274.toFloat() / 10.0f).toInt()
         else {
             val i_54_ = (this.anInt10274 + -(class357.aClass318_Sub1_Sub1_4402!!.aShort8727))

@@ -36,7 +36,7 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
 
         @JvmStatic
         fun method3253(i: Int, i_0_: Int, i_1_: Int, var_class: Class<*>) {
-            val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_0_]!![i_1_]
+            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_0_]!![i_1_]
             if (class357 != null) {
                 var class148 = class357.aClass148_4396
                 while (class148 != null) {

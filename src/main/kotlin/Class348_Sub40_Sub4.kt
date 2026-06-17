@@ -32,7 +32,7 @@ class Class348_Sub40_Sub4 : Class348_Sub40(0, true) {
 
         @JvmStatic
         fun method3058(i: Int, i_1_: Int, i_2_: Int) {
-            val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_1_]!![i_2_]
+            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_1_]!![i_2_]
             if (class357 != null) {
                 Class183.method1376(class357.aClass318_Sub1_Sub4_4406)
                 Class183.method1376(class357.aClass318_Sub1_Sub4_4403)

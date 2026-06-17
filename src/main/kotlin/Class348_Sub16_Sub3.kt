@@ -1052,14 +1052,14 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
 
         @JvmStatic
         fun method2878(i: Int, i_103_: Int, i_104_: Int): Class318_Sub1_Sub1? {
-            val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_103_]!![i_104_]
+            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_103_]!![i_104_]
             if (class357 == null || class357.aClass318_Sub1_Sub1_4402 == null) return null
             return class357.aClass318_Sub1_Sub1_4402
         }
 
         @JvmStatic
         fun method2879(i: Int, i_105_: Int, i_106_: Int) {
-            val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_105_]!![i_106_]
+            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_105_]!![i_106_]
             if (class357 != null) {
                 Class183.method1376(class357.aClass318_Sub1_Sub1_4402)
                 if (class357.aClass318_Sub1_Sub1_4402 != null) class357.aClass318_Sub1_Sub1_4402 = null

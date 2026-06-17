@@ -323,11 +323,11 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         fun method2477(string: String?, string_37_: String?, i: Byte, i_38_: Int, string_39_: String?, string_40_: String?, i_41_: Int, i_42_: Int, string_43_: String?) {
             try {
                 anInt10382++
-                var class147: Class147? = Class318_Sub2.Companion.aClass147Array6400!![99]
-                for (i_44_ in 99 downTo 1) Class318_Sub2.Companion.aClass147Array6400!![i_44_] = Class318_Sub2.Companion.aClass147Array6400!![i_44_ + -1]
-                if (class147 == null) class147 = Class147(i_41_, i_42_, string_39_, string, string_43_, string_40_, i_38_, string_37_)
-                else class147.method1196(i_41_, i_42_, string_43_, string, string_40_, -18691, i_38_, string_39_, string_37_)
-                Class318_Sub2.Companion.aClass147Array6400!![0] = class147
+                var hintArrowOrMessage: HintArrowOrMessage? = Class318_Sub2.Companion.aHintArrowOrMessageArray6400s!![99]
+                for (i_44_ in 99 downTo 1) Class318_Sub2.Companion.aHintArrowOrMessageArray6400s!![i_44_] = Class318_Sub2.Companion.aHintArrowOrMessageArray6400s!![i_44_ + -1]
+                if (hintArrowOrMessage == null) hintArrowOrMessage = HintArrowOrMessage(i_41_, i_42_, string_39_, string, string_43_, string_40_, i_38_, string_37_)
+                else hintArrowOrMessage.method1196(i_41_, i_42_, string_43_, string, string_40_, -18691, i_38_, string_39_, string_37_)
+                Class318_Sub2.Companion.aHintArrowOrMessageArray6400s!![0] = hintArrowOrMessage
                 Class348_Sub42_Sub3.anInt9501 = Class311.anInt3918
                 if (i <= -109) NativeShaderProgram.anInt9774++
             } catch (runtimeexception: RuntimeException) {

@@ -163,11 +163,11 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         }
                         Class348_Sub42_Sub14.method3243(-49, class348_sub47)
                     }
-                    if (Class147.anInt2035 > 0) Class147.anInt2035--
-                    if (Class369_Sub3_Sub1.aBoolean10174 && Class147.anInt2035 <= 0) {
+                    if (HintArrowOrMessage.anInt2035 > 0) HintArrowOrMessage.anInt2035--
+                    if (Class369_Sub3_Sub1.aBoolean10174 && HintArrowOrMessage.anInt2035 <= 0) {
                         Class239_Sub18.anInt6033++
                         Class369_Sub3_Sub1.aBoolean10174 = false
-                        Class147.anInt2035 = 20
+                        HintArrowOrMessage.anInt2035 = 20
                         val class348_sub47 = method2148(Class281.aClass351_3648, (Class348_Sub23_Sub2.aClass77_9029), i + -11549)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, Class314.aFloat3938.toInt() shr 3)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class76.aFloat1287.toInt() shr 3)
@@ -191,7 +191,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         Class348_Sub42_Sub14.method3243(i + -11473, class348_sub47)
                         RenderNode.aBoolean9719 = true
                     }
-                    if (Class147.aClass357ArrayArrayArray2029 != null) {
+                    if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
                         if (Class348_Sub40_Sub21.anInt9282 == 2) method241(127.toByte())
                         else if (Class348_Sub40_Sub21.anInt9282 == 3) Class348_Sub21.Companion.method2954((-4).toByte())
                     }

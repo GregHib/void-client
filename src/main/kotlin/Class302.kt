@@ -44,7 +44,7 @@ class Class302 {
         fun method2284(i: Byte, l: Long) {
             try {
                 anInt3841++
-                if (Class147.aClass357ArrayArrayArray2029 != null) {
+                if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
                     if (Class348_Sub40_Sub21.anInt9282 != 1 && Class348_Sub40_Sub21.anInt9282 != 5) {
                         if (Class348_Sub40_Sub21.anInt9282 == 4) method814(125.toByte(), l)
                     } else method119(-1, l)

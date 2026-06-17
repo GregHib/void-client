@@ -85,7 +85,7 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
             for (i in DelegatingRenderCanvas.anInt67..<Class189.anInt2524) {
                 for (i_8_ in 0..<Class318_Sub7.anInt6451) {
                     for (i_9_ in 0..<Class348_Sub41.anInt7054) {
-                        val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_8_]!![i_9_]
+                        val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_8_]!![i_9_]
                         if (class357 != null) {
                             val class318_sub1_sub4 = class357.aClass318_Sub1_Sub4_4406
                             val class318_sub1_sub4_10_ = class357.aClass318_Sub1_Sub4_4403

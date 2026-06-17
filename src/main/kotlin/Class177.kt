@@ -55,7 +55,7 @@ class Class177 internal constructor(private val aClass52_4671: Class52) : Interf
 
         @JvmStatic
         fun method1353(i: Int, i_4_: Int, i_5_: Int, var_class: Class<out Any>?): Class318_Sub1_Sub3? {
-            val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_4_]!![i_5_]
+            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_4_]!![i_5_]
             if (class357 == null) return null
             var class148 = class357.aClass148_4396
             while (class148 != null) {

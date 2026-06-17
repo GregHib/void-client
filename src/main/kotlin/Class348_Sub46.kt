@@ -46,7 +46,7 @@ class Class348_Sub46 : Class348 {
         fun method3319(var_renderer: Renderer?, i: Byte) {
             if (i > -108) method3321(19, 60, 108)
             anInt7114++
-            if (((LocalPlayerState.aPlayer_1907!!.plane).toInt() != Class334.anInt4155) && Class147.aClass357ArrayArrayArray2029 != null) {
+            if (((LocalPlayerState.aPlayer_1907!!.plane).toInt() != Class334.anInt4155) && HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
                 if (method2808((LocalPlayerState.aPlayer_1907!!.plane).toInt(), var_renderer, true)) Class334.anInt4155 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
             }
         }
@@ -54,7 +54,7 @@ class Class348_Sub46 : Class348 {
         fun method3320(class318_sub1_sub3: Class318_Sub1_Sub3, bool: Boolean) {
             for (i in class318_sub1_sub3.aShort8743..class318_sub1_sub3.aShort8751) {
                 for (i_0_ in class318_sub1_sub3.aShort8750..class318_sub1_sub3.aShort8747) {
-                    val class357 = (Class147.aClass357ArrayArrayArray2029!![class318_sub1_sub3.plane.toInt()]!![i]!![i_0_])
+                    val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![class318_sub1_sub3.plane.toInt()]!![i]!![i_0_])
                     if (class357 != null) {
                         var class148 = class357.aClass148_4396
                         var class148_1_: Class148? = null
@@ -75,12 +75,12 @@ class Class348_Sub46 : Class348 {
         }
 
         fun method3321(i: Int, i_2_: Int, i_3_: Int): Class357? {
-            if (Class147.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_] == null) {
-                val bool = (Class147.aClass357ArrayArrayArray2029!![0]!![i_2_]!![i_3_] != null && Class147.aClass357ArrayArrayArray2029!![0]!![i_2_]!![i_3_]!!.aClass357_4400 != null)
+            if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_] == null) {
+                val bool = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_2_]!![i_3_] != null && HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_2_]!![i_3_]!!.aClass357_4400 != null)
                 if (bool && i >= Class189.anInt2524 - 1) return null
                 method1394(i, i_2_, i_3_)
             }
-            return Class147.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_]
+            return HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_]
         }
 
         fun method3322(i: Int, class348_sub49: Class348_Sub49): Class369_Sub3 {

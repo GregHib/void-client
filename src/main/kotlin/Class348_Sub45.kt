@@ -37,7 +37,7 @@ abstract class Class348_Sub45 : Class348() {
             Class318_Sub1_Sub3_Sub4.aClass338Array10330 = arrayOfNulls<Class338>(2000)
             OpenGlRenderer.anInt7714 = Class270.anInt3465
             Class50_Sub1.aBoolean5226 = false
-            Class147.aClass338Array2034 = arrayOfNulls<Class338>(500)
+            HintArrowOrMessage.aClass338Array2034 = arrayOfNulls<Class338>(500)
             Class69.anInt1200 = 0
             Class239_Sub26.anInt6115 = 0
             Class294.aClass338Array5060 = arrayOfNulls<Class338>(1000)

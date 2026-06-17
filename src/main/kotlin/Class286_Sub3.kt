@@ -303,7 +303,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                     for (i_20_ in 0..<Class318_Sub7.anInt6451) {
                         var i_21_ = 0
                         while ((i_21_ < Class348_Sub41.anInt7054)) {
-                            val class357 = (Class147.aClass357ArrayArrayArray2029!![i]!![i_21_]!![i_20_])
+                            val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_21_]!![i_20_])
                             if (class357 != null) {
                                 if (class357.aShort4398 > 0) class357.aShort4398 = (class357.aShort4398 * -1).toShort()
                                 if (class357.aShort4409 > 0) class357.aShort4409 = (class357.aShort4409 * -1).toShort()
@@ -320,27 +320,27 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                 for (i_22_ in 0..<Class318_Sub7.anInt6451) {
                     var i_23_ = 0
                     while (Class348_Sub41.anInt7054 > i_23_) {
-                        val class357 = (Class147.aClass357ArrayArrayArray2029!![i]!![i_23_]!![i_22_])
+                        val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_23_]!![i_22_])
                         if (class357 != null) {
-                            val bool_24_ = ((Class147.aClass357ArrayArrayArray2029!![0]!![i_23_]!![i_22_]) != null && (Class147.aClass357ArrayArrayArray2029!![0]!![i_23_]!![i_22_]!!.aClass357_4400) != null)
+                            val bool_24_ = ((HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_23_]!![i_22_]) != null && (HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_23_]!![i_22_]!!.aClass357_4400) != null)
                             if (class357.aShort4409 < 0) {
                                 var i_25_ = i_22_
                                 var i_26_ = i_22_
                                 val i_27_ = i
                                 val i_28_ = i
-                                var class357_29_ = (Class147.aClass357ArrayArrayArray2029!![i]!![i_23_]!![i_25_ + -1])
+                                var class357_29_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_23_]!![i_25_ + -1])
                                 val i_30_: Int
                                 i_30_ = (Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_23_))
                                 while ((i_25_ > 0 && class357_29_ != null && class357_29_.aShort4409 < 0 && (class357_29_.aShort4409 == class357.aShort4409) && (class357.aShort4401 == class357_29_.aShort4401) && ((Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), -1 + i_25_, i_23_)) == i_30_))) {
                                     if (-1 + i_25_ > 0 && i_30_ != (Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_25_ + -2, i_23_))) break
                                     i_25_--
-                                    class357_29_ = (Class147.aClass357ArrayArrayArray2029!![i]!![i_23_]!![i_25_ + -1])
+                                    class357_29_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_23_]!![i_25_ + -1])
                                 }
-                                class357_29_ = (Class147.aClass357ArrayArrayArray2029!![i]!![i_23_]!![1 + i_26_])
+                                class357_29_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_23_]!![1 + i_26_])
                                 while (((Class348_Sub41.anInt7054 > i_26_) && class357_29_ != null && class357_29_.aShort4409 < 0 && (class357_29_.aShort4409 == class357.aShort4409) && (class357.aShort4401 == class357_29_.aShort4401) && i_30_ == (Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ - -1, i_23_)))) {
                                     if ((Class348_Sub41.anInt7054 > 1 + i_26_) && i_30_ != (Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ + 2, i_23_))) break
                                     i_26_++
-                                    class357_29_ = (Class147.aClass357ArrayArrayArray2029!![i]!![i_23_]!![i_26_ + 1])
+                                    class357_29_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_23_]!![i_26_ + 1])
                                 }
                                 val i_31_ = 1 + (-i_27_ + i_28_)
                                 val i_32_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![if (bool_24_) 1 + i_27_ else i_27_]!!.method3982((-86).toByte(), i_25_, i_23_)
@@ -355,7 +355,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                                 while (i_28_ >= i_39_) {
                                     var i_40_ = i_25_
                                     while (i_26_ >= i_40_) {
-                                        Class147.aClass357ArrayArrayArray2029!![i_39_]!![i_23_]!![i_40_]!!.aShort4409 = (Class147.aClass357ArrayArrayArray2029!![i_39_]!![i_23_]!![i_40_]!!.aShort4409 * -1).toShort()
+                                        HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_39_]!![i_23_]!![i_40_]!!.aShort4409 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_39_]!![i_23_]!![i_40_]!!.aShort4409 * -1).toShort()
                                         i_40_++
                                     }
                                     i_39_++
@@ -366,19 +366,19 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                                 var i_42_ = i_23_
                                 val i_43_ = i
                                 val i_44_ = i
-                                var class357_45_ = (Class147.aClass357ArrayArrayArray2029!![i]!![i_41_ - 1]!![i_22_])
+                                var class357_45_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_41_ - 1]!![i_22_])
                                 val i_46_: Int
                                 i_46_ = (Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_23_))
                                 while ((i_41_ > 0 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357.aShort4397 == class357_45_.aShort4397) && ((Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, -1 + i_41_)) == i_46_))) {
                                     if (i_41_ + -1 > 0 && ((Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, -2 + i_41_)) != i_46_)) break
                                     i_41_--
-                                    class357_45_ = (Class147.aClass357ArrayArrayArray2029!![i]!![i_41_ - 1]!![i_22_])
+                                    class357_45_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_41_ - 1]!![i_22_])
                                 }
-                                class357_45_ = (Class147.aClass357ArrayArrayArray2029!![i]!![i_42_ - -1]!![i_22_])
+                                class357_45_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_42_ - -1]!![i_22_])
                                 while ((i_42_ < Class318_Sub7.anInt6451 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357_45_.aShort4397 == class357.aShort4397) && ((Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_42_ + 1)) == i_46_))) {
                                     if (Class318_Sub7.anInt6451 > i_42_ + 1 && ((Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, 2 + i_42_)) != i_46_)) break
                                     i_42_++
-                                    class357_45_ = (Class147.aClass357ArrayArrayArray2029!![i]!![1 + i_42_]!![i_22_])
+                                    class357_45_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![1 + i_42_]!![i_22_])
                                 }
                                 val i_47_ = 1 + -i_43_ + i_44_
                                 val i_48_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![if (!bool_24_) i_43_ else 1 + i_43_]!!.method3982((-86).toByte(), i_22_, i_41_)
@@ -392,7 +392,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                                 for (i_55_ in i_43_..i_44_) {
                                     var i_56_ = i_41_
                                     while ((i_42_ >= i_56_)) {
-                                        Class147.aClass357ArrayArrayArray2029!![i_55_]!![i_56_]!![i_22_]!!.aShort4398 = (Class147.aClass357ArrayArrayArray2029!![i_55_]!![i_56_]!![i_22_]!!.aShort4398 * -1).toShort()
+                                        HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_55_]!![i_56_]!![i_22_]!!.aShort4398 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_55_]!![i_56_]!![i_22_]!!.aShort4398 * -1).toShort()
                                         i_56_++
                                     }
                                 }

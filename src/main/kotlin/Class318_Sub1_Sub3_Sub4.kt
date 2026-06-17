@@ -327,7 +327,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                 while (Class367_Sub4.anInt7319 > i_32_) {
                     var i_33_ = 0
                     while (Class348_Sub40_Sub3.anInt9109 > i_33_) {
-                        if (Class367_Sub4.method3542(i_33_, Class147.aClass357ArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++
+                        if (Class367_Sub4.method3542(i_33_, HintArrowOrMessage.aClass357ArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++
                         if (i_31_ >= 512) return
                         i_33_++
                     }

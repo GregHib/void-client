@@ -112,7 +112,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                                     if (Class99.aBooleanArrayArray1572!![i_10_]!![i_12_]) {
                                         val i_13_ = (i_12_ + Class348_Sub34.anInt6974 - Class240.anInt4686)
                                         for (i_14_ in i_7_ downTo 0) {
-                                            if ((Class147.aClass357ArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]) != null && (Class147.aClass357ArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]!!.aByte4399).toInt() == i_7_) {
+                                            if ((HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]) != null && (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]!!.aByte4399).toInt() == i_7_) {
                                                 bools[i_10_]!![i_12_] = (i_14_ < i || (`is`[i_14_]!![i_11_]!![i_13_]) != i_0_) && (!IndexedSprite.method164(i_7_, i_11_, (-97).toByte(), i_13_))
                                                 break
                                             }

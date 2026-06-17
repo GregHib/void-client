@@ -41,7 +41,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
             val class181 = (this.aClass318_Sub7_10419.aClass181_6441)!!
             val var_ses = NativeSprite.aTerrainTileArray5191
             var i_2_ = class318_sub10.anInt6483
-            var class357 = (Class147.aClass357ArrayArrayArray2029!![class318_sub10.anInt6483]!![i]!![i_0_])
+            var class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![class318_sub10.anInt6483]!![i]!![i_0_])
             if (class357 != null) i_2_ = class357.aByte4399.toInt()
             val i_3_ = var_ses!![i_2_]!!.method3982((-86).toByte(), i_0_, i)
             val i_4_: Int
@@ -73,21 +73,21 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
             if (class181.aBoolean2376 && i_5_ == 0 && i_1_ > var_ses[0]!!.method3982((-86).toByte(), i_0_, i)) method2520()
             else if (i_5_ == Class189.anInt2524 - 1 && (var_ses[i_5_]!!.method3982((-86).toByte(), i_0_, i) - i_1_ > 8 shl Class362.anInt4459)) method2520()
             else {
-                class357 = Class147.aClass357ArrayArrayArray2029!![i_5_]!![i]!![i_0_]
+                class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_5_]!![i]!![i_0_]
                 if (class357 == null) {
-                    if (i_5_ == 0 || (Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_] == null)) {
-                        Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_] = Class357(0)
-                        class357 = Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]
+                    if (i_5_ == 0 || (HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_] == null)) {
+                        HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_] = Class357(0)
+                        class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]
                     }
-                    val bool = (Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]!!.aClass357_4400 != null)
+                    val bool = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]!!.aClass357_4400 != null)
                     if (i_5_ == 3 && bool) {
                         method2520()
                         return
                     }
                     for (i_6_ in 1..i_5_) {
-                        if ((Class147.aClass357ArrayArrayArray2029!![i_6_]!![i]!![i_0_]) == null) {
-                            Class147.aClass357ArrayArrayArray2029!![i_6_]!![i]!![i_0_] = Class357(i_6_)
-                            class357 = Class147.aClass357ArrayArrayArray2029!![i_6_]!![i]!![i_0_]
+                        if ((HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_6_]!![i]!![i_0_]) == null) {
+                            HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_6_]!![i]!![i_0_] = Class357(i_6_)
+                            class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_6_]!![i]!![i_0_]
                             if (bool) class357!!.aByte4399++
                         }
                     }

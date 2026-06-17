@@ -78,7 +78,7 @@ class Class239_Sub21 : Class239 {
         @JvmStatic
         fun method1810(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             if (i_5_ != 8 && i_5_ != 16) {
-                var class357 = Class147.aClass357ArrayArrayArray2029!![i_4_]!![i]!![i_2_]
+                var class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_4_]!![i]!![i_2_]
                 if (class357 == null) class357 = Class357(i_4_)
                 if (i_5_ == 1) {
                     class357.aShort4401 = i_0_.toShort()

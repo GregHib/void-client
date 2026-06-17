@@ -606,7 +606,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                 Class348_Sub42_Sub10.Companion.anInt9577 = 0
                 var i_8_ = 0
                 while ( /**/Class239_Sub26.anInt6115 > i_8_) {
-                    Class318_Sub2.method2498(Class147.aClass338Array2034!![i_8_], var_renderer, (-112).toByte(), i)
+                    Class318_Sub2.method2498(HintArrowOrMessage.aClass338Array2034!![i_8_], var_renderer, (-112).toByte(), i)
                     i_8_++
                 }
                 for (i_9_ in 0..<Class69.anInt1200) Class318_Sub2.method2498((Class318_Sub1_Sub3_Sub4.aClass338Array10330!![i_9_]), var_renderer, (-127).toByte(), i)

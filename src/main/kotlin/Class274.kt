@@ -224,9 +224,9 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
         }
 
         fun method2062(i: Byte) {
-            if (Class147.aClass338Array2034 != null) {
-                for (i_3_ in 0..<Class239_Sub26.anInt6115) Class147.aClass338Array2034!![i_3_] = null
-                Class147.aClass338Array2034 = null
+            if (HintArrowOrMessage.aClass338Array2034 != null) {
+                for (i_3_ in 0..<Class239_Sub26.anInt6115) HintArrowOrMessage.aClass338Array2034!![i_3_] = null
+                HintArrowOrMessage.aClass338Array2034 = null
             }
             anInt3480++
             if (Class318_Sub1_Sub3_Sub4.aClass338Array10330 != null) {

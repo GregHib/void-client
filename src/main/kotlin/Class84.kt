@@ -96,7 +96,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
         @JvmStatic
         fun method817(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Class318_Sub1_Sub3_Sub3? {
             anInt1456++
-            val class357 = Class147.aClass357ArrayArrayArray2029!![i_1_]!![i_0_]!![i_2_]
+            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_1_]!![i_0_]!![i_2_]
             if (class357 == null) return null
             if (i != 252) return null
             var class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3? = null
@@ -148,7 +148,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
             DelegatingRenderCanvas.anInt67 = i
             for (i_22_ in 0..<Class318_Sub7.anInt6451) {
                 for (i_23_ in 0..<Class348_Sub41.anInt7054) {
-                    if (Class147.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] == null) Class147.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] = Class357(i)
+                    if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] == null) HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] = Class357(i)
                 }
             }
         }

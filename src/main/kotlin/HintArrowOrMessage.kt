@@ -3,7 +3,7 @@ import Class318_Sub1_Sub3.Companion.method2408
 /* Class147 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class147 internal constructor(i: Int, i_0_: Int, string: String?, string_1_: String?, string_2_: String?, string_3_: String?, i_4_: Int, string_5_: String?) {
+class HintArrowOrMessage internal constructor(i: Int, i_0_: Int, string: String?, string_1_: String?, string_2_: String?, string_3_: String?, i_4_: Int, string_5_: String?) {
     var aString2022: String? = null
     var aString2024: String? = null
     var aString2025: String? = null

@@ -134,7 +134,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
 
         @JvmStatic
         fun method3135(i: Int, i_7_: Int, i_8_: Int): Class318_Sub1_Sub5? {
-            val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_7_]!![i_8_]
+            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_7_]!![i_8_]
             if (class357 == null) return null
             return class357.aClass318_Sub1_Sub5_4395
         }

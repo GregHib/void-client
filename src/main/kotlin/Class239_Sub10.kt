@@ -69,7 +69,7 @@ class Class239_Sub10 : Class239 {
         fun method1760(i: Int, i_0_: Int, bool: Boolean, i_1_: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {
             if (i_2_ > -85) method1762(-14, 70, 13, -100)
             anInt5940++
-            if ((if (bool) Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)) != 0 && i_3_ != 0 && Class147.anInt2021 < 50 && i != -1) Class258_Sub2.aParticleEmitterNodeArray8531s!![Class147.anInt2021++] = ParticleEmitterNode(if (!bool) 2.toByte() else 3.toByte(), i, i_3_, i_5_, i_0_, i_1_, i_4_, null)
+            if ((if (bool) Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)) != 0 && i_3_ != 0 && HintArrowOrMessage.anInt2021 < 50 && i != -1) Class258_Sub2.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(if (!bool) 2.toByte() else 3.toByte(), i, i_3_, i_5_, i_0_, i_1_, i_4_, null)
         }
 
         @JvmStatic

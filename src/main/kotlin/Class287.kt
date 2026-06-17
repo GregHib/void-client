@@ -59,7 +59,7 @@ class Class287 {
         fun method2178(class318_sub1: Class318_Sub1?, i: Int, class17: Class17?, i_0_: Int) {
             try {
                 anInt3694++
-                if (Class147.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264!!.size > i) && class17.anIntArrayArray264!![i] != null)) {
+                if (HintArrowOrMessage.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264!!.size > i) && class17.anIntArrayArray264!![i] != null)) {
                     val i_1_ = class17.anIntArrayArray264!![i]!![0]
                     var i_2_ = i_1_ shr 8
                     val i_3_ = (i_1_ and 0xf1) shr 5
@@ -81,7 +81,7 @@ class Class287 {
                         val i_8_ = (class318_sub1!!.x + -256 shr 9)
                         val i_9_ = (class318_sub1.y - 256 shr 9)
                         val i_10_ = (if (LocalPlayerState.aPlayer_1907 != class318_sub1) ((class318_sub1.plane.toInt() shl 24) + ((i_8_ shl 16) + (i_9_ shl 8)) + i_5_) else 0)
-                        Class258_Sub2.aParticleEmitterNodeArray8531s!![Class147.anInt2021++] = ParticleEmitterNode((if (class17.aBoolean268) 2.toByte() else 1.toByte()), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1)
+                        Class258_Sub2.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode((if (class17.aBoolean268) 2.toByte() else 1.toByte()), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1)
                     }
                 }
             } catch (runtimeexception: RuntimeException) {

@@ -121,7 +121,7 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
                     i_11_++
                 }
             } else {
-                val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_10_]!![i_8_]
+                val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_10_]!![i_8_]
                 if (class357 != null) {
                     if (i_7_ != 1) {
                         if (i_7_ == 2) class357.aShort4398 = 0.toShort()

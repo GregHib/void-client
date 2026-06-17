@@ -125,10 +125,10 @@ class Class185 internal constructor(class230: Class230?, i: Int, class45: Class4
 
         @JvmStatic
         fun method1394(i: Int, i_5_: Int, i_6_: Int) {
-            val bool = (Class147.aClass357ArrayArrayArray2029!![0]!![i_5_]!![i_6_] != null && Class147.aClass357ArrayArrayArray2029!![0]!![i_5_]!![i_6_]!!.aClass357_4400 != null)
+            val bool = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_5_]!![i_6_] != null && HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_5_]!![i_6_]!!.aClass357_4400 != null)
             for (i_7_ in i downTo 0) {
-                if (Class147.aClass357ArrayArrayArray2029!![i_7_]!![i_5_]!![i_6_] == null) {
-                    val class357 = (Class357(i_7_).also { Class147.aClass357ArrayArrayArray2029!![i_7_]!![i_5_]!![i_6_] = it })
+                if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_7_]!![i_5_]!![i_6_] == null) {
+                    val class357 = (Class357(i_7_).also { HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_7_]!![i_5_]!![i_6_] = it })
                     if (bool) class357.aByte4399++
                 }
             }

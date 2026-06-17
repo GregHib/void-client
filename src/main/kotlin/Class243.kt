@@ -124,13 +124,13 @@ class Class243 {
         @JvmStatic
         fun method1879(bool: Boolean) {
             if (bool) {
-                Class147.aClass357ArrayArrayArray2029 = Class348_Sub31_Sub2.aClass357ArrayArrayArray9082
+                HintArrowOrMessage.aClass357ArrayArrayArray2029 = Class348_Sub31_Sub2.aClass357ArrayArrayArray9082
                 NativeSprite.aTerrainTileArray5191 = Class332.aTerrainTileArray4142
             } else {
-                Class147.aClass357ArrayArrayArray2029 = Class65.aClass357ArrayArrayArray1148
+                HintArrowOrMessage.aClass357ArrayArrayArray2029 = Class65.aClass357ArrayArrayArray1148
                 NativeSprite.aTerrainTileArray5191 = Class348_Sub1_Sub1.aTerrainTileArray8801
             }
-            Class189.anInt2524 = Class147.aClass357ArrayArrayArray2029!!.size
+            Class189.anInt2524 = HintArrowOrMessage.aClass357ArrayArrayArray2029!!.size
         }
     }
 }

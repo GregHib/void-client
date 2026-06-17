@@ -703,7 +703,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
         }
 
         fun method813(i: Int, i_25_: Int, i_26_: Int): Class318_Sub1_Sub4? {
-            val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_25_]!![i_26_]
+            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_25_]!![i_26_]
             if (class357 == null) return null
             return class357.aClass318_Sub1_Sub4_4403
         }

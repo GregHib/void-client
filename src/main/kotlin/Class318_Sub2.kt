@@ -18,7 +18,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
         var anInt6397: Int = 0
         var anInt6398: Int = 0
         var anInt6399: Int = 0
-        var aClass147Array6400: Array<Class147?>? = arrayOfNulls<Class147>(100)
+        var aHintArrowOrMessageArray6400s: Array<HintArrowOrMessage?>? = arrayOfNulls<HintArrowOrMessage>(100)
 
         fun method2494(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, class348_sub42_sub12: Class348_Sub42_Sub12?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Byte, i_6_: Int, i_7_: Int, i_8_: Int) {
             var i_4_ = i_4_
@@ -64,7 +64,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
         fun method2495(i: Byte) {
             if (i <= 110) anIntArray6393 = null
             anIntArray6393 = null
-            aClass147Array6400 = null
+            aHintArrowOrMessageArray6400s = null
         }
 
         @JvmStatic

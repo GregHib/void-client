@@ -15,9 +15,9 @@ object Class16 {
 
     @JvmStatic
     fun method258(i: Int, i_0_: Int) {
-        val class357 = Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]
+        val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]
         for (i_1_ in 0..2) {
-            val class357_2_ = (Class147.aClass357ArrayArrayArray2029!![i_1_ + 1]!![i]!![i_0_].also { Class147.aClass357ArrayArrayArray2029!![i_1_]!![i]!![i_0_] = it })
+            val class357_2_ = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_1_ + 1]!![i]!![i_0_].also { HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_1_]!![i]!![i_0_] = it })
             if (class357_2_ != null) {
                 var class148 = class357_2_.aClass148_4396
                 while (class148 != null) {
@@ -32,12 +32,12 @@ object Class16 {
                 if (class357_2_.aClass318_Sub1_Sub5_4407 != null) class357_2_.aClass318_Sub1_Sub5_4407!!.plane--
             }
         }
-        if (Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_] == null) {
-            Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_] = Class357(0)
-            Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]!!.aByte4399 = 1.toByte()
+        if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_] == null) {
+            HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_] = Class357(0)
+            HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]!!.aByte4399 = 1.toByte()
         }
-        Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]!!.aClass357_4400 = class357
-        Class147.aClass357ArrayArrayArray2029!![3]!![i]!![i_0_] = null
+        HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]!!.aClass357_4400 = class357
+        HintArrowOrMessage.aClass357ArrayArrayArray2029!![3]!![i]!![i_0_] = null
     }
 
     @JvmStatic

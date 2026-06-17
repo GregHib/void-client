@@ -409,7 +409,7 @@ class Class348_Sub17 : Class348 {
             if (bool == true) {
                 Class258_Sub2.aParticleEmitterNodeArray8531s = arrayOfNulls<ParticleEmitterNode>(50)
                 anInt6790++
-                Class147.anInt2021 = 0
+                HintArrowOrMessage.anInt2021 = 0
             }
         }
 

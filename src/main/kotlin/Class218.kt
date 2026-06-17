@@ -79,7 +79,7 @@ class Class218 {
             if (i >= 1 && i_5_ >= 1 && -2 + Class367_Sub4.anInt7319 >= i && i_5_ <= -2 + Class348_Sub40_Sub3.anInt9109) {
                 var i_8_ = i_7_
                 if (i_8_ < 3 && method802(i_5_, i, true)) i_8_++
-                if ((Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && !method536(i_5_, false, i, Class167.anInt2204, i_8_)) || Class147.aClass357ArrayArrayArray2029 == null) return
+                if ((Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && !method536(i_5_, false, i, Class167.anInt2204, i_8_)) || HintArrowOrMessage.aClass357ArrayArrayArray2029 == null) return
                 Class338.aClass237_Sub1_4197!!.method1694((Class348_Sub45.aClass361Array7108!![i_7_]), i_1_, i_7_, Class348_Sub8.aRenderer6654, i, i_5_, 106.toByte())
                 if (i_3_ >= 0) {
                     val i_9_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350)

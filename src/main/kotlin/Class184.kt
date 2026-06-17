@@ -68,7 +68,7 @@ class Class184 {
         @JvmStatic
         fun method1387(i: Int, class348_sub27: Class348_Sub27) {
             anInt2470++
-            if (Class147.aClass357ArrayArrayArray2029 != null) {
+            if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
                 if (i >= -38) method1384(-77, 22, 77)
                 var interface10: Interface10? = null
                 if (class348_sub27.anInt6904 == 0) interface10 = (method3297((class348_sub27.anInt6899), (class348_sub27.anInt6905), (class348_sub27.anInt6896)) as Interface10?)
