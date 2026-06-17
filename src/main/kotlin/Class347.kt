@@ -1,6 +1,6 @@
 import MatrixCameraTransform.Companion.method913
 import SceneTilePlaneManager.method260
-import Class2.Companion.method173
+import ModelOrSpriteHolder.Companion.method173
 import Class318_Sub1_Sub5.Companion.method2485
 import Class5_Sub2.Companion.method191
 import Class66.method705

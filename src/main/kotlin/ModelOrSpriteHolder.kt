@@ -3,7 +3,7 @@ import Class286_Sub3.Companion.method2148
 /* Class2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class2 {
+class ModelOrSpriteHolder {
     @JvmField
     var aRenderNode118: RenderNode? = null
     @JvmField

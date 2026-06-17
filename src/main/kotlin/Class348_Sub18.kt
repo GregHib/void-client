@@ -80,7 +80,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             Class229.aVarbitDefLoader_2981!!.method1445(64)
             Class269.aClass217_3453!!.method1589(127.toByte())
             Class64_Sub3.aClass261_5558!!.method1985(0)
-            Class2.aTextureDefinitionLoader_117!!.method1175(125.toByte())
+            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1175(125.toByte())
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1219(7851)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1404((-82).toByte())
             ProjectionCameraTransform.aClass326_5764!!.method2601((-44).toByte())

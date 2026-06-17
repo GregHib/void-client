@@ -1,5 +1,5 @@
 import RefCountedHandle.Companion.method1323
-import Class2.Companion.method174
+import ModelOrSpriteHolder.Companion.method174
 import Class59.Companion.method545
 import Class94.method865
 import Class97.Companion.method876
@@ -138,7 +138,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             Class269.aClass217_3453!!.method1587(5, i xor 0xeab)
             Class64_Sub3.aClass261_5558!!.method1984(119.toByte(), 5)
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
-            Class2.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
+            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
             ProjectionCameraTransform.aClass326_5764!!.method2603(5, 11)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1409(5, -20721)
             Class30.aClass84_413!!.method819(74.toByte(), 5)

@@ -192,7 +192,7 @@ object ClientLoadStateMachine {
             Class348_Sub1.aMapSceneDefLoader_6559 = MapSceneDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class348_Sub40_Sub12.aClass263_9195 = Class263(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class94.aClass45_1538, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
-            Class2.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
+            ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             MapAreaDefinition.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.aClass45_4975, RasterSprite.aClass45_5207)
             Exception_Sub1.aClass255_112 = Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, ProjectionCameraTransform.aClass326_5764, SpotAnimVector.aClass45_2306, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036 = LocTypeDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
@@ -230,7 +230,7 @@ object ClientLoadStateMachine {
             val i_12_ = (Class288_Sub1.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, Class2.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
+        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(Class239_Sub14.aClass259_5995!!.anInt3305 + 1000))

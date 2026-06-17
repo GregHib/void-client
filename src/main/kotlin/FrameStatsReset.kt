@@ -1712,7 +1712,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class338.anInt4189 = 0
             ProjectionCameraTransform.anInt5755 = 0
             Npc.anInt10501 = 0
-            Class2.anInt120 = 0
+            ModelOrSpriteHolder.anInt120 = 0
             Class46.anInt722 = 0
             Class377.anInt9890 = 0
             Class348_Sub16_Sub3.anInt8905 = 0
@@ -1896,7 +1896,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub2.anInt8864 = 0
             Class213.anInt2790 = 0
             Class367_Sub1.anInt7279 = 0
-            Class2.anInt116 = 0
+            ModelOrSpriteHolder.anInt116 = 0
             Class88.anInt1496 = 0
             Class231.anInt2991 = 0
             Class311.anInt3912 = 0
@@ -2247,7 +2247,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             AbstractMenuEntry.anInt1707 = 0
             Class239_Sub22.anInt6070 = 0
             Class348_Sub42_Sub17.anInt9680 = 0
-            Class2.anInt121 = 0
+            ModelOrSpriteHolder.anInt121 = 0
             GroundItemRenderState.anInt1660 = 0
             NativeRenderer.anInt8068 = 0
             Gl2dTexture.anInt8615 = 0
@@ -3618,7 +3618,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub10.anInt7383 = 0
             Gl2dTexture.anInt8611 = 0
             Class325.anInt4068 = 0
-            Class2.anInt122 = 0
+            ModelOrSpriteHolder.anInt122 = 0
             Class348_Sub40_Sub3.anInt9102 = 0
             ProjectionCameraTransform.anInt5752 = 0
             OpenGlRenderer.anInt7555 = 0

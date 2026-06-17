@@ -121,7 +121,7 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
             anInt8778++
             Class348_Sub36.anInt6985 = 0
             if (i >= -91) anInt8775 = -63
-            return Class2.method170(true)
+            return ModelOrSpriteHolder.method170(true)
         }
     }
 }

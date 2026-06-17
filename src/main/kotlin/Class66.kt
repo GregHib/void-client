@@ -7,7 +7,7 @@ import GlCubeMapTexture.Companion.method243
 import GlCubeMapTexture.Companion.method244
 import SceneTilePlaneManager.method259
 import SceneTilePlaneManager.method262
-import Class2.Companion.method170
+import ModelOrSpriteHolder.Companion.method170
 import Class239_Sub1.Companion.method1719
 import Class239_Sub14.Companion.method1781
 import Class239_Sub15.Companion.method1787

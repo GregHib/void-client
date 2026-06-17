@@ -171,7 +171,7 @@ class Class318_Sub1_Sub3_Sub1 internal constructor(var_renderer: Renderer?, clas
         return aClass30_10025
     }
 
-    private fun method2417(i: Int, var_renderer: Renderer?, i_20_: Int, bool: Boolean): Class2? {
+    private fun method2417(i: Int, var_renderer: Renderer?, i_20_: Int, bool: Boolean): ModelOrSpriteHolder? {
         anInt10007++
         val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(i, 0xffff and aShort10032.toInt())
         val var_terrainTile: TerrainTile?

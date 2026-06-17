@@ -146,7 +146,7 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_renderer: Renderer?, clas
         if (i != 836) aRenderNode10094 = null
     }
 
-    private fun method2481(bool: Boolean, i: Int, i_15_: Int, var_renderer: Renderer?): Class2? {
+    private fun method2481(bool: Boolean, i: Int, i_15_: Int, var_renderer: Renderer?): ModelOrSpriteHolder? {
         if (i_15_ != -4) aClass30_10082 = null
         anInt10086++
         val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, aShort10081.toInt() and 0xffff)

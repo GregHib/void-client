@@ -373,7 +373,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         if (string.equals("resetminimap", ignoreCase = true)) {
                             Class21.aClass45_322!!.method405(i.toInt() xor 0x4e.inv())
                             Class21.aClass45_322!!.method412(127.toByte())
-                            Class2.aTextureDefinitionLoader_117!!.method1175(125.toByte())
+                            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1175(125.toByte())
                             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1219(7851)
                             method464(-1)
                             method94("Minimap reset", 70)

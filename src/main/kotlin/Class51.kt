@@ -151,7 +151,7 @@ class Class51 {
         return class348_sub50.aString7211
     }
 
-    fun method476(var_renderer: Renderer?, var_terrainTile: TerrainTile?, i: Int, i_4_: Int, i_5_: Int, bool: Boolean, var_terrainTile_6_: TerrainTile?, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): Class2? {
+    fun method476(var_renderer: Renderer?, var_terrainTile: TerrainTile?, i: Int, i_4_: Int, i_5_: Int, bool: Boolean, var_terrainTile_6_: TerrainTile?, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): ModelOrSpriteHolder? {
         var i = i
         try {
             if (SoftwareSpriteRaster.method955(22311, i)) i = 4
@@ -166,11 +166,11 @@ class Class51 {
                 if (anInt890 != 0) i_11_ = i_11_ or 0x4
             }
             if (bool) i_11_ = i_11_ or 0x40000
-            var class2: Class2?
+            var modelOrSpriteHolder: ModelOrSpriteHolder?
             synchronized(this.aClass263_933!!.aClass60_3361!!) {
-                class2 = this.aClass263_933!!.aClass60_3361!!.method583(l, i_10_ + -25) as Class2?
+                modelOrSpriteHolder = this.aClass263_933!!.aClass60_3361!!.method583(l, i_10_ + -25) as ModelOrSpriteHolder?
             }
-            var class64 = if (class2 == null) null else class2.aClass64_119
+            var class64 = if (modelOrSpriteHolder == null) null else modelOrSpriteHolder.aClass64_119
             var var_renderNode: RenderNode? = null
             if (class64 == null || var_renderer.method3667(class64.ua(), i_11_) != 0) {
                 if (class64 != null) i_11_ = var_renderer.method3679(i_11_, class64.ua())
@@ -181,18 +181,18 @@ class Class51 {
                 if (i == 10 && i_9_ > 3) class64.a(2048)
                 if (bool) var_renderNode = class64.ba(null)
                 class64.s(i_11_)
-                class2 = Class2()
-                class2.aClass64_119 = class64
-                class2.aRenderNode118 = var_renderNode
+                modelOrSpriteHolder = ModelOrSpriteHolder()
+                modelOrSpriteHolder.aClass64_119 = class64
+                modelOrSpriteHolder.aRenderNode118 = var_renderNode
                 synchronized(this.aClass263_933!!.aClass60_3361!!) {
-                    this.aClass263_933!!.aClass60_3361!!.method582(class2, l, (-120).toByte())
+                    this.aClass263_933!!.aClass60_3361!!.method582(modelOrSpriteHolder, l, (-120).toByte())
                 }
             } else {
-                class64 = class2!!.aClass64_119
-                var_renderNode = class2.aRenderNode118
+                class64 = modelOrSpriteHolder!!.aClass64_119
+                var_renderNode = modelOrSpriteHolder.aRenderNode118
                 if (bool && var_renderNode == null) {
-                    class2.aRenderNode118 = class64!!.ba(null)
-                    var_renderNode = class2.aRenderNode118
+                    modelOrSpriteHolder.aRenderNode118 = class64!!.ba(null)
+                    var_renderNode = modelOrSpriteHolder.aRenderNode118
                 }
             }
             val bool_13_ = (aByte886.toInt() != 0 && (var_terrainTile_6_ != null || var_terrainTile != null))
@@ -203,9 +203,9 @@ class Class51 {
                 if (bool_14_) class64!!.H(anInt893, anInt954, anInt890)
                 class64!!.s(i_4_)
             } else class64 = class64!!.method614(0.toByte(), i_4_, true)
-            Class348_Sub42.aClass2_7058!!.aClass64_119 = class64
-            Class348_Sub42.aClass2_7058!!.aRenderNode118 = var_renderNode
-            return Class348_Sub42.aClass2_7058
+            Class348_Sub42.aModelOrSpriteHolder_7058!!.aClass64_119 = class64
+            Class348_Sub42.aModelOrSpriteHolder_7058!!.aRenderNode118 = var_renderNode
+            return Class348_Sub42.aModelOrSpriteHolder_7058
         } catch (runtimeexception: RuntimeException) {
             runtimeexception.printStackTrace()
             throw Class348_Sub17.method2929(runtimeexception, ("iv.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (if (var_terrainTile_6_ != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))

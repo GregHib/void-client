@@ -53,7 +53,7 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
         if (var_renderNode != null) method1301(var_renderNode, this.aByte6376.toInt(), this.x, this.y, null)
     }
 
-    private fun method2401(var_renderer: Renderer?, i: Int, bool: Boolean, i_4_: Int): Class2? {
+    private fun method2401(var_renderer: Renderer?, i: Int, bool: Boolean, i_4_: Int): ModelOrSpriteHolder? {
         anInt9985++
         val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, aShort9991.toInt() and 0xffff)
         val var_terrainTile: TerrainTile?

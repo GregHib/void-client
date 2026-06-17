@@ -60,7 +60,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
             Class258_Sub3.anInt8550 = 0
             Class376.anInt4559 = 0
             CacheArchiveIndex.method1072(class45, (-107).toByte())
-            Class2.method172(30284, class45)
+            ModelOrSpriteHolder.method172(30284, class45)
         }
 
         @JvmStatic

@@ -24,7 +24,7 @@ open class Class348_Sub42 : Class348() {
     }
 
     companion object {
-        var aClass2_7058: Class2?
+        var aModelOrSpriteHolder_7058: ModelOrSpriteHolder?
         @JvmField
         var anInt7059: Int = 0
         var anInt7061: Int = 0
@@ -34,7 +34,7 @@ open class Class348_Sub42 : Class348() {
         @JvmStatic
         fun method3161(i: Int) {
             if (i != 0) method3161(-27)
-            aClass2_7058 = null
+            aModelOrSpriteHolder_7058 = null
         }
 
         fun method3163(i: Byte) {
@@ -50,7 +50,7 @@ open class Class348_Sub42 : Class348() {
         }
 
         init {
-            aClass2_7058 = Class2()
+            aModelOrSpriteHolder_7058 = ModelOrSpriteHolder()
         }
     }
 }
