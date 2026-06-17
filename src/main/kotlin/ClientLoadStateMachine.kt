@@ -264,7 +264,7 @@ object ClientLoadStateMachine {
             Class78.aClass45_1322!!.anInt634 = 2
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1040) {
-            if (!Class320.method2547(GlBufferObject.anInt4737, 84.toByte())) return 0
+            if (!TextureLoaderUtil.method2547(GlBufferObject.anInt4737, 84.toByte())) return 0
             var bool = true
             for (i_14_ in (Class348_Sub40_Sub33.aClass46ArrayArray9427!![GlBufferObject.anInt4737])!!.indices) {
                 val class46: Class46 = (Class348_Sub40_Sub33.aClass46ArrayArray9427!![GlBufferObject.anInt4737]!![i_14_])!!

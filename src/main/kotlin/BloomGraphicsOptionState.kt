@@ -95,7 +95,7 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1775(i: Byte, i_4_: Int, i_5_: Int) {
             anInt5967++
-            if (i.toInt() == -8 && Class320.method2547(i_4_, 84.toByte())) Class348_Sub40_Sub19.method3097((Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_4_]!!), i_5_, 119)
+            if (i.toInt() == -8 && TextureLoaderUtil.method2547(i_4_, 84.toByte())) Class348_Sub40_Sub19.method3097((Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_4_]!!), i_5_, 119)
         }
     }
 }

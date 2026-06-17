@@ -163,7 +163,7 @@ object Class66 {
 
     @JvmStatic
     fun method703(i: Int) {
-        if (i != -1 && Class320.method2547(i, 84.toByte())) {
+        if (i != -1 && TextureLoaderUtil.method2547(i, 84.toByte())) {
             val class46s: Array<Class46?> = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!!
             for (i_7_ in class46s.indices) {
                 val class46 = class46s[i_7_]!!
@@ -1834,8 +1834,8 @@ object Class66 {
                 anInt1173 -= 2
                 Class348_Sub23_Sub3.aShort9044 = anIntArray1149!![anInt1173].toShort()
                 if (Class348_Sub23_Sub3.aShort9044 <= 0) Class348_Sub23_Sub3.aShort9044 = 256.toShort()
-                Class320.aShort3992 = anIntArray1149!![anInt1173 + 1].toShort()
-                if (Class320.aShort3992 <= 0) Class320.aShort3992 = 320.toShort()
+                TextureLoaderUtil.aShort3992 = anIntArray1149!![anInt1173 + 1].toShort()
+                if (TextureLoaderUtil.aShort3992 <= 0) TextureLoaderUtil.aShort3992 = 320.toShort()
                 return
             }
             if (i == 6202) {
@@ -1863,7 +1863,7 @@ object Class66 {
             }
             if (i == 6204) {
                 anIntArray1149!![anInt1173++] = Class348_Sub23_Sub3.aShort9044.toInt()
-                anIntArray1149!![anInt1173++] = Class320.aShort3992.toInt()
+                anIntArray1149!![anInt1173++] = TextureLoaderUtil.aShort3992.toInt()
                 return
             }
             if (i == 6205) {

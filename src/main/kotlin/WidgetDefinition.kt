@@ -357,7 +357,7 @@ class WidgetDefinition {
             var i_43_ = -334 + i_39_
             if (i_43_ < 0) i_43_ = 0
             else if (i_43_ > 100) i_43_ = 100
-            val i_44_ = (i_43_ * (-Class348_Sub23_Sub3.aShort9044 + Class320.aShort3992) / 100 + Class348_Sub23_Sub3.aShort9044)
+            val i_44_ = (i_43_ * (-Class348_Sub23_Sub3.aShort9044 + TextureLoaderUtil.aShort3992) / 100 + Class348_Sub23_Sub3.aShort9044)
             i_42_ = i_42_ * i_44_ shr 8
             LocalPlayerState.anInt1906 = LocalPlayerState.anInt1911 * i_44_ shr 8
             val i_45_ = 16384 - i and 0x3fff

@@ -517,7 +517,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
             val i_46_ = i_45_ shr 16
             val i_47_ = i_45_ and 0xffff
             if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_46_] == null || (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_46_]!![i_47_] == null)) {
-                val bool = Class320.method2547(i_46_, 84.toByte())
+                val bool = TextureLoaderUtil.method2547(i_46_, 84.toByte())
                 if (!bool) return null
             }
             return Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_46_]!![i_47_]

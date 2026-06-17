@@ -91,7 +91,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1728(i: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int) {
             anInt5860++
-            if (Class320.method2547(i_3_, 84.toByte())) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_3_]!!))
+            if (TextureLoaderUtil.method2547(i_3_, 84.toByte())) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_3_]!!))
         }
 
         @JvmStatic

@@ -1761,7 +1761,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class364.anInt4467 = 0
             UnusedToStringStub.anInt2716 = 0
             Class367_Sub11.anInt7412 = 0
-            Class320.anInt3993 = 0
+            TextureLoaderUtil.anInt3993 = 0
             Class348_Sub51.anInt7219 = 0
             ActorEntity.anInt8757 = 0
             GlRectangleTexture.anInt8637 = 0

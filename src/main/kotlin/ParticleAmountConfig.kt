@@ -30,7 +30,7 @@ class ParticleAmountConfig {
 
         fun method1252(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Byte, i_9_: Int) {
             anInt2124++
-            if (Class320.method2547(i_2_, 84.toByte())) {
+            if (TextureLoaderUtil.method2547(i_2_, 84.toByte())) {
                 var i_11_ = 0
                 var i_12_ = 0
                 var i_13_ = 0

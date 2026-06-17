@@ -11,7 +11,7 @@ object Class75_Sub1 : Class75() {
     @JvmStatic
     fun method769(i: Int, i_0_: Byte) {
         anInt5653++
-        if (i_0_ > 109 && Class320.method2547(i, 84.toByte())) Class348_Sub42_Sub4.method3180(-1, (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!!), 24235)
+        if (i_0_ > 109 && TextureLoaderUtil.method2547(i, 84.toByte())) Class348_Sub42_Sub4.method3180(-1, (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!!), 24235)
     }
 
     @JvmStatic

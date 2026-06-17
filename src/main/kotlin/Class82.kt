@@ -672,7 +672,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.startsWith("zoom ")) {
                             val i_24_ = (Class348_Sub41.method3156(true, string.substring(5))).toShort()
-                            if (i_24_ > 0) Class320.aShort3992 = i_24_
+                            if (i_24_ > 0) TextureLoaderUtil.aShort3992 = i_24_
                             return
                         }
                         if (string.startsWith("fps ") && (Class8.aClass364_165 != Class55_Sub1.aClass364_5271)) {
