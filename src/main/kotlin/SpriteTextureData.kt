@@ -1,7 +1,7 @@
 /* Class198 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class198 {
+class SpriteTextureData {
     var aShortArray2613: ShortArray? = null
     var aShortArray2614: ShortArray? = null
     var anIntArray2615: IntArray? = null
