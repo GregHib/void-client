@@ -144,7 +144,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class262.aClass45_3323!!.method412(112.toByte())
                 Crc64Hashable.aClass45_4984!!.method412(85.toByte())
                 SpriteLoadValidator.aClass45_4796!!.method412(93.toByte())
-                Class146.aClass45_2015!!.method412((-122).toByte())
+                HitsplatDefinition.aClass45_2015!!.method412((-122).toByte())
                 Class353.aClass60_4346!!.method590(0)
                 Class328_Sub2.aClass60_6517!!.method590(0)
                 Class348_Sub1_Sub1.aClass60_8807!!.method590(0)

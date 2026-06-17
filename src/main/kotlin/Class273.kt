@@ -1,5 +1,5 @@
 import ObjectSpawnDecoder.method1087
-import Class146.Companion.method1193
+import HitsplatDefinition.Companion.method1193
 import Class156.Companion.method1241
 import Class239_Sub1.Companion.method1722
 

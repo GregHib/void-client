@@ -47,7 +47,7 @@ object Class157 {
         class348_sub49_sub2.writeInt(125.toByte(), SpriteLoadValidator.aClass45_4796!!.method389(-118))
         class348_sub49_sub2.writeInt(90.toByte(), Class172.method1327(31))
         class348_sub49_sub2.writeInt(120.toByte(), method912(0))
-        class348_sub49_sub2.writeInt(87.toByte(), Class146.aClass45_2015!!.method389(-94))
+        class348_sub49_sub2.writeInt(87.toByte(), HitsplatDefinition.aClass45_2015!!.method389(-94))
     }
 
     fun method1245(string: String, bool: Boolean): String {

@@ -147,7 +147,7 @@ object Class164 {
             Class262.aClass45_3323 = Class369_Sub2.method3571(false, 29, (-23).toByte(), 1)
             Crc64Hashable.aClass45_4984 = Class369_Sub2.method3571(true, 30, (-23).toByte(), 1)
             SpriteLoadValidator.aClass45_4796 = Class369_Sub2.method3571(true, 31, (-23).toByte(), 1)
-            Class146.aClass45_2015 = Class369_Sub2.method3571(true, 36, (-23).toByte(), 2)
+            HitsplatDefinition.aClass45_2015 = Class369_Sub2.method3571(true, 36, (-23).toByte(), 2)
         }
         if (Class56.aClass56_1031 == Class348_Sub42_Sub15.aClass56_9660) {
             var i_8_ = 0

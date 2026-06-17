@@ -1,7 +1,7 @@
 /* Class146 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class146 {
+class HitsplatDefinition {
     @JvmField
     var anInt2016: Int = 0
     @JvmField

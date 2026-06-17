@@ -273,7 +273,7 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
                                 }
                                 if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_1_) method544((Class274.aClass274_3524!!.method2063(Class348_Sub33.anInt6967, 544)), false, 4)
                                 else {
-                                    Class146.anInt2012++
+                                    HitsplatDefinition.anInt2012++
                                     val class348_sub47 = (method2148(Class294.aClass351_5057, Class348_Sub23_Sub2.aClass77_9029, -85))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)

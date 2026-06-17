@@ -40,24 +40,24 @@ class Class194 internal constructor(class230: Class230?, i: Int, class45: Class4
         }
     }
 
-    fun method1446(i: Int, i_4_: Int): Class146? {
+    fun method1446(i: Int, i_4_: Int): HitsplatDefinition? {
         anInt2593++
-        var class146: Class146?
+        var hitsplatDefinition: HitsplatDefinition?
         synchronized(aClass60_2594!!) {
-            class146 = aClass60_2594!!.method583(i.toLong(), 76) as Class146?
+            hitsplatDefinition = aClass60_2594!!.method583(i.toLong(), 76) as HitsplatDefinition?
         }
-        if (class146 != null) return class146
+        if (hitsplatDefinition != null) return hitsplatDefinition
         val `is`: ByteArray?
         synchronized(aClass45_2597!!) {
             `is` = aClass45_2597.method410(i_4_ xor 0x743, method1359(true, i), Class348_Sub14.method2806(false, i))
         }
-        class146 = Class146()
+        hitsplatDefinition = HitsplatDefinition()
         if (i_4_ != -1) return null
-        if (`is` != null) class146.method1191(i_4_ xor 0x800.inv(), Class348_Sub49(`is`))
+        if (`is` != null) hitsplatDefinition.method1191(i_4_ xor 0x800.inv(), Class348_Sub49(`is`))
         synchronized(aClass60_2594!!) {
-            aClass60_2594!!.method582(class146, i.toLong(), (-105).toByte())
+            aClass60_2594!!.method582(hitsplatDefinition, i.toLong(), (-105).toByte())
         }
-        return class146
+        return hitsplatDefinition
     }
 
     init {

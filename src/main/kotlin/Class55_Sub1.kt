@@ -97,7 +97,7 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
             if (i_3_ > -108) aBoolean5265 = false
             if (Class27.aClass356_389!!.method3480(i_2_.toLong(), -6008) == null) {
                 if (Class38.aBoolean510) {
-                    val class348_sub15 = Class348_Sub15(i_2_, Class55_Sub1(4096, (Class146.aClass45_2015!!), i_2_), i, bool)
+                    val class348_sub15 = Class348_Sub15(i_2_, Class55_Sub1(4096, (HitsplatDefinition.aClass45_2015!!), i_2_), i, bool)
                     class348_sub15.aClass55_Sub1_6768!!.method509(-92, Class59_Sub2.aStringArray5305!![Class348_Sub33.anInt6967])
                     Class27.aClass356_389!!.method3483(35.toByte(), i_2_.toLong(), class348_sub15)
                 } else Class303.method2285(bool, (-90).toByte(), i_2_)

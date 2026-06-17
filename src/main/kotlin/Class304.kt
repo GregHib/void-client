@@ -46,7 +46,7 @@ class Class304 internal constructor(var anInt3850: Int) {
                             (Class348_Sub40_Sub34.aClass293Array9432!![i] as Object).notify()
                         }
                         bool = false
-                    } else Class146.aLongArray2013!![i] = Class348_Sub40_Sub34.aClass293Array9432!![i]!!.method2204()
+                    } else HitsplatDefinition.aLongArray2013!![i] = Class348_Sub40_Sub34.aClass293Array9432!![i]!!.method2204()
                 }
                 if (bool) break
                 try {

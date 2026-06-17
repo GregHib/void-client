@@ -852,7 +852,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class286_Sub6.anInt6267 = 0
             Class239_Sub26.anInt6124 = 0
             Class205.anInt2685 = 0
-            Class146.anInt2014 = 0
+            HitsplatDefinition.anInt2014 = 0
             NativeRenderer.anInt8072 = 0
             Class318_Sub1_Sub4_Sub2.anInt10117 = 0
             ProjectionCameraTransform.anInt5753 = 0
@@ -1001,7 +1001,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9827 = 0
             Class151.anInt2063 = 0
             Class239_Sub8.anInt5918 = 0
-            Class146.anInt2012 = 0
+            HitsplatDefinition.anInt2012 = 0
             Class285_Sub2.anInt8506 = 0
             Class22.anInt338 = 0
             Class64_Sub3.anInt5641 = 0
@@ -1429,7 +1429,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class248.anInt3200 = 0
             TextureMetadataProvider.anInt4617 = 0
             Class286_Sub9.anInt6312 = 0
-            Class146.anInt2018 = 0
+            HitsplatDefinition.anInt2018 = 0
             OpenGlRenderer.anInt7538 = 0
             Class318_Sub1_Sub5.anInt8772 = 0
             Class348_Sub40_Sub8.anInt9151 = 0
@@ -1648,7 +1648,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class187.anInt2502 = 0
             OpenGlRenderer.anInt7606 = 0
             Class348_Sub49_Sub2.anInt9766 = 0
-            Class146.anInt2017 = 0
+            HitsplatDefinition.anInt2017 = 0
             Class195.anInt5014 = 0
             Class64_Sub3.anInt5582 = 0
             Class239_Sub11.anInt5952 = 0
