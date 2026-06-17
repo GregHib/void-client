@@ -213,7 +213,7 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
             Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = null
             Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = null
             SpotAnimVector.aAbstractModelRenderer_2309 = null
-            Class341.aAbstractModelRendererArray4234 = null
+            TileRenderState.aAbstractModelRendererArray4234 = null
             MinimapFlagRenderer.aAbstractModelRenderer_1800 = null
             anInt3477++
             val i_2_ = 89 / ((-74 - i) / 42)

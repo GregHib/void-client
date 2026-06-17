@@ -111,7 +111,7 @@ class GlVertexBufferArb internal constructor(class377: Class377, bool: Boolean) 
             anInt8495++
             val class369_sub3 = Class348_Sub46.method3322(0, class348_sub49)
             val i_5_ = class348_sub49.readShort(13638)
-            return (Class369_Sub3_Sub1(class369_sub3.aScreenAnchorAlignment_4968, class369_sub3.aClass341_4973, class369_sub3.anInt4970, class369_sub3.anInt4959, class369_sub3.anInt4971, class369_sub3.anInt4963, class369_sub3.anInt4966, class369_sub3.anInt4965, class369_sub3.anInt4961, class369_sub3.anInt8599, class369_sub3.anInt8595, class369_sub3.anInt8603, class369_sub3.anInt8602, class369_sub3.anInt8600, class369_sub3.anInt8597, i_5_))
+            return (Class369_Sub3_Sub1(class369_sub3.aScreenAnchorAlignment_4968, class369_sub3.aTileRenderState_4973, class369_sub3.anInt4970, class369_sub3.anInt4959, class369_sub3.anInt4971, class369_sub3.anInt4963, class369_sub3.anInt4966, class369_sub3.anInt4965, class369_sub3.anInt4961, class369_sub3.anInt8599, class369_sub3.anInt8595, class369_sub3.anInt8603, class369_sub3.anInt8602, class369_sub3.anInt8600, class369_sub3.anInt8597, i_5_))
         }
 
         fun method2129(i: Byte) {

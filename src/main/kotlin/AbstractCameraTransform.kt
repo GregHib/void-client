@@ -117,16 +117,16 @@ public abstract class AbstractCameraTransform {
                 anInt1599++
                 BooleanGraphicsOptionState.anInt5850 = abstractModelRenderers!!.size
                 SizeBoundedSoftCache.anIntArray2330 = IntArray(BooleanGraphicsOptionState.anInt5850 + 10)
-                Class341.aAbstractModelRendererArray4234 = arrayOfNulls<AbstractModelRenderer>(BooleanGraphicsOptionState.anInt5850 + 10)
-                ArrayCopyUtil.method1575(abstractModelRenderers, 0, Class341.aAbstractModelRendererArray4234!!, 0, BooleanGraphicsOptionState.anInt5850)
+                TileRenderState.aAbstractModelRendererArray4234 = arrayOfNulls<AbstractModelRenderer>(BooleanGraphicsOptionState.anInt5850 + 10)
+                ArrayCopyUtil.method1575(abstractModelRenderers, 0, TileRenderState.aAbstractModelRendererArray4234!!, 0, BooleanGraphicsOptionState.anInt5850)
                 var i_17_ = 0
                 while (BooleanGraphicsOptionState.anInt5850 > i_17_) {
-                    SizeBoundedSoftCache.anIntArray2330!![i_17_] = Class341.aAbstractModelRendererArray4234!![i_17_]!!.method980()
+                    SizeBoundedSoftCache.anIntArray2330!![i_17_] = TileRenderState.aAbstractModelRendererArray4234!![i_17_]!!.method980()
                     i_17_++
                 }
                 if (i != 515880227) anInt1597 = 49
                 var i_18_ = BooleanGraphicsOptionState.anInt5850
-                while ((i_18_ < Class341.aAbstractModelRendererArray4234!!.size)) {
+                while ((i_18_ < TileRenderState.aAbstractModelRendererArray4234!!.size)) {
                     SizeBoundedSoftCache.anIntArray2330!![i_18_] = 12
                     i_18_++
                 }

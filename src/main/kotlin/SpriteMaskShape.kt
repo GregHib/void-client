@@ -906,7 +906,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                             if (i_76_ == 13) {
                                 val class46 = Class348_Sub22.method2957(i_74_, (-54).toByte(), i_75_)
                                 if (class46 != null) {
-                                    Class341.method2678(-2049)
+                                    TileRenderState.method2678(-2049)
                                     val class348_sub44 = Client.method105(class46)!!
                                     MapRegionLoaderThread.method2666(class348_sub44.anInt7093, class348_sub44.method3307(14), class46, 21.toByte())
                                     ItemNameResolver.aString5001 = method1753(0, class46)
@@ -990,7 +990,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                     Class348_Sub42_Sub14.method3243(-22, class348_sub47)
                                     Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)
                                 }
-                                if (RenderNode.aBoolean9722) Class341.method2678(-2049)
+                                if (RenderNode.aBoolean9722) TileRenderState.method2678(-2049)
                                 if (ResourceLoaderThread.aClass46_3913 == null || GroundItemRenderState.anInt1656 != 0) break
                                 ConfigFlagUtil.method1916(-9343, ResourceLoaderThread.aClass46_3913!!)
                             }

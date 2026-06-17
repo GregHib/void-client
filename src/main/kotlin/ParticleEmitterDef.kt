@@ -6,13 +6,13 @@ import Class64.Companion.method616
 /* Class288 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_2_: Int, i_3_: Int) : Interface12 {
+open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_2_: Int, i_3_: Int) : Interface12 {
     @JvmField
     var anInt4950: Int = 0
     @JvmField
     var anInt4951: Int = 0
     @JvmField
-    var aClass341_4952: Class341? = null
+    var aTileRenderState_4952: TileRenderState? = null
     @JvmField
     var aScreenAnchorAlignment_4955: ScreenAnchorAlignment? = null
     @JvmField
@@ -29,9 +29,9 @@ open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment
             this.anInt4958 = i
             this.anInt4951 = i_3_
             this.aScreenAnchorAlignment_4955 = screenAnchorAlignment
-            this.aClass341_4952 = class341
+            this.aTileRenderState_4952 = tileRenderState
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vr.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("vr.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ')'))
         }
     }
 

@@ -164,7 +164,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
                         }
                     }
                     if (abstractModelRenderer != null) {
-                        Class341.aAbstractModelRendererArray4234!![i] = abstractModelRenderer
+                        TileRenderState.aAbstractModelRendererArray4234!![i] = abstractModelRenderer
                         stringbuffer.append(" <img=").append(i).append(">")
                         i++
                     }

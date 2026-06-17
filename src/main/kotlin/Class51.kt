@@ -261,16 +261,16 @@ class Class51 {
                 var i_25_ = i_17_ or 0x1f01f
                 if (class64 != null) i_25_ = var_renderer.method3679(i_25_, class64.ua())
                 var modelDefinition: ModelDefinition? = null
-                synchronized(Class341.aModelDefinitionArray4236s!!) {
+                synchronized(TileRenderState.aModelDefinitionArray4236s!!) {
                     for (i_26_ in 0..<i_23_) {
                         synchronized(this.aSeqDefinitionCache_933!!.aClass45_3345!!) {
                             modelDefinition = ParticleConfigParser.method2277(0, (this.aSeqDefinitionCache_933!!.aClass45_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (modelDefinition == null) return null
                         if (modelDefinition.anInt1830 < 13) modelDefinition.method1092(2, 96)
-                        if (i_23_ > 1) Class341.aModelDefinitionArray4236s!![i_26_] = modelDefinition
+                        if (i_23_ > 1) TileRenderState.aModelDefinitionArray4236s!![i_26_] = modelDefinition
                     }
-                    if (i_23_ > 1) modelDefinition = ModelDefinition(Class341.aModelDefinitionArray4236s!!, i_23_)
+                    if (i_23_ > 1) modelDefinition = ModelDefinition(TileRenderState.aModelDefinitionArray4236s!!, i_23_)
                 }
                 class64 = var_renderer.method3625(modelDefinition, i_25_, (this.aSeqDefinitionCache_933!!.anInt3363), i_18_, i_19_)
                 synchronized(this.aSeqDefinitionCache_933!!.aClass60_3360) {

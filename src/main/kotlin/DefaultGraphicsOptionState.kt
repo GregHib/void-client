@@ -4,7 +4,7 @@
 class DefaultGraphicsOptionState : GraphicsOptionState {
     fun method1840(i: Int): Int {
         anInt6127++
-        if (i != -32350) aClass341_6128 = null
+        if (i != -32350) aTileRenderState_6128 = null
         return this.anInt3138
     }
 
@@ -15,7 +15,7 @@ class DefaultGraphicsOptionState : GraphicsOptionState {
     }
 
     override fun method1714(i: Int, i_28_: Int): Int {
-        if (i != 3) aClass341_6128 = null
+        if (i != 3) aTileRenderState_6128 = null
         anInt6130++
         return 3
     }
@@ -41,7 +41,7 @@ class DefaultGraphicsOptionState : GraphicsOptionState {
         @JvmField
         var anInt6127: Int = 0
         @JvmField
-        var aClass341_6128: Class341? = null
+        var aTileRenderState_6128: TileRenderState? = null
         @JvmField
         var anInt6129: Int = 0
         @JvmField
@@ -112,7 +112,7 @@ class DefaultGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1841(i: Int) {
             if (i != 16878) method1839(-83, -10, 27, 111, 41, 109)
-            aClass341_6128 = null
+            aTileRenderState_6128 = null
         }
     }
 }

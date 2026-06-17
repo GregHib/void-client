@@ -1,7 +1,7 @@
 /* Class369_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-public open class Class369_Sub3(screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) : Class369(screenAnchorAlignment, class341, i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_) {
+public open class Class369_Sub3(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) : Class369(screenAnchorAlignment, tileRenderState, i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_) {
     @JvmField
     var anInt8595: Int = 0
     @JvmField
@@ -30,7 +30,7 @@ public open class Class369_Sub3(screenAnchorAlignment: ScreenAnchorAlignment?, c
             this.anInt8597 = i_11_
             this.anInt8595 = i_7_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("um.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("um.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
         }
     }
 

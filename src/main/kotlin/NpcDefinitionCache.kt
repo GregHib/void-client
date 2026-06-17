@@ -300,7 +300,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 }
                 if (i_14_ == 0) {
                     if (IntHashSet.aClass348_Sub42_Sub12_3963 != null) method1731(1)
-                    else if (RenderNode.aBoolean9722) Class341.method2678(-2049)
+                    else if (RenderNode.aBoolean9722) TileRenderState.method2678(-2049)
                 }
                 if (RegionSceneLoader.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) {
                     RectangleRegion.aClass348_Sub42_Sub12_1946 = null

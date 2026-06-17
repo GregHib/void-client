@@ -91,7 +91,7 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
         @JvmField
         var anInt5807: Int = 0
         @JvmField
-        var aClass341_5808: Class341? = Class341()
+        var aTileRenderState_5808: TileRenderState? = TileRenderState()
         @JvmField
         var anInt5809: Int = 0
         @JvmField
@@ -115,14 +115,14 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
 
         @JvmStatic
         fun method1400(i: Int) {
-            aClass341_5808 = null
+            aTileRenderState_5808 = null
             aCollisionMapRegion_5813 = null
         }
 
         @JvmStatic
         fun method1401(var_ha_Sub2: OpenGlRenderer, i: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int): GlTexture2DRegion {
             anInt5809++
-            if (i_37_ != 34037) aClass341_5808 = null
+            if (i_37_ != 34037) aTileRenderState_5808 = null
             if (var_ha_Sub2.aBoolean7793 || AsyncTaskHandle.method1436(-20, i_38_) && AsyncTaskHandle.method1436(-119, i_40_)) return GlTexture2DRegion(var_ha_Sub2, 3553, i, i_39_, i_38_, i_40_, true)
             if (!var_ha_Sub2.aBoolean7837) return GlTexture2DRegion(var_ha_Sub2, i, i_39_, i_38_, i_40_, CacheArchiveIndexLoader.method340(i_38_, 108.toByte()), CacheArchiveIndexLoader.method340(i_40_, 108.toByte()), true)
             return GlTexture2DRegion(var_ha_Sub2, 34037, i, i_39_, i_38_, i_40_, true)

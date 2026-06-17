@@ -54,7 +54,7 @@ class GlShaderProgramHandle internal constructor(var_ha_Sub2: OpenGlRenderer?, l
             if (i.toInt() != 26) return null
             val class288 = method2189(class348_sub49, i + 59)
             val i_3_ = class348_sub49.method3369(125.toByte())
-            return ParticleEmitterDefExt(class288.anInt4958, class288.aScreenAnchorAlignment_4955, class288.aClass341_4952, class288.anInt4950, class288.anInt4951, i_3_)
+            return ParticleEmitterDefExt(class288.anInt4958, class288.aScreenAnchorAlignment_4955, class288.aTileRenderState_4952, class288.anInt4950, class288.anInt4951, i_3_)
         }
     }
 }

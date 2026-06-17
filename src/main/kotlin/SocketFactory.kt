@@ -51,11 +51,11 @@ abstract class SocketFactory {
         }
 
         @JvmStatic
-        fun method2051(i: Int, i_0_: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
+        fun method2051(i: Int, i_0_: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
             try {
                 Class95.aScreenAnchorAlignment_1542 = screenAnchorAlignment
                 ChatEffectsOptionState.anInt5871 = i_7_
-                DefaultGraphicsOptionState.aClass341_6128 = class341
+                DefaultGraphicsOptionState.aTileRenderState_6128 = tileRenderState
                 Class86.anInt1479 = i
                 Class348_Sub7.aSpriteImage_6643 = null
                 LocalizedTextTriple.anInt3762 = i_8_
@@ -72,7 +72,7 @@ abstract class SocketFactory {
                 val i_9_ = -77 % ((i_4_ - 29) / 34)
                 LocalizedTextTriple.aBoolean3763 = true
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uu.E(" + i + ',' + i_0_ + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("uu.E(" + i + ',' + i_0_ + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
             }
         }
     }

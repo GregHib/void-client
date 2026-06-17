@@ -30,7 +30,7 @@ object ProjectileConfigUtil {
     var anInt397: Int = 0
     var aClass351_398: Class351? = Class351(23, 8)
     @JvmField
-    var aClass341_399: Class341? = Class341()
+    var aTileRenderState_399: TileRenderState? = TileRenderState()
 
     @JvmStatic
     fun method312(i: Int, i_0_: Byte) {
@@ -101,7 +101,7 @@ object ProjectileConfigUtil {
     fun method316(i: Byte) {
         aClass356_389 = null
         aClass351_398 = null
-        aClass341_399 = null
+        aTileRenderState_399 = null
         if (i.toInt() != -94) method313(98L, -24)
         aClass351_395 = null
     }

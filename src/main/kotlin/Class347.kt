@@ -68,7 +68,7 @@ class Class347 {
                         }
                     } else {
                         if (ParticleConfigParser.aBoolean3819) {
-                            Class341.Companion.method2678(-2049)
+                            TileRenderState.Companion.method2678(-2049)
                             if (RegionSceneLoader.aClass46_3701!!.anObjectArray692 != null) {
                                 val class348_sub36 = Class348_Sub36()
                                 class348_sub36.aClass46_6983 = MapElementDecor.aClass46_10336

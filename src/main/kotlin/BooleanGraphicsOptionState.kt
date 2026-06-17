@@ -96,7 +96,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                     i_4_++
                 }
                 if (!bool) method544((LocalizedText.aLocalizedText_3504!!.method2063(Class348_Sub33.anInt6967, 544)) + string, false, 4)
-                if (RenderNode.aBoolean9722) Class341.method2678(-2049)
+                if (RenderNode.aBoolean9722) TileRenderState.method2678(-2049)
             }
         }
 

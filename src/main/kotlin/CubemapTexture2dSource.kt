@@ -24,8 +24,8 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
                 if (i_0_ < i_2_) i_0_ = i_2_
                 if (class12.aByte205 > 0) bool = true
             }
-            for (i_3_ in 0..5) Class341.anIntArrayArray4233!![i_3_] = var_d.method5(false, CacheLruCache.anIntArray3883!![i_3_], 1.0f, i_0_, i_0_, i + 192)
-            aClass258_Sub2_8688 = GlTextureCubeMap(aHa_Sub2_8693, 6407, i_0_, bool, Class341.anIntArrayArray4233)
+            for (i_3_ in 0..5) TileRenderState.anIntArrayArray4233!![i_3_] = var_d.method5(false, CacheLruCache.anIntArray3883!![i_3_], 1.0f, i_0_, i_0_, i + 192)
+            aClass258_Sub2_8688 = GlTextureCubeMap(aHa_Sub2_8693, 6407, i_0_, bool, TileRenderState.anIntArrayArray4233)
         }
         return aClass258_Sub2_8688
     }

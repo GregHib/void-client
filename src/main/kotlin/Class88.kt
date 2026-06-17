@@ -498,7 +498,7 @@ class Class88 {
 
         @JvmStatic
         fun method847(string: String, i: Int) {
-            println("Error: " + Class341.method2680("\n", true, "%0a", string))
+            println("Error: " + TileRenderState.method2680("\n", true, "%0a", string))
             anInt1492++
             if (i != -5192) method843(17.toByte())
         }

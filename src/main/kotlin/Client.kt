@@ -288,9 +288,9 @@ import SkeletalAnimFrameLoader.Companion.method347
 import SkeletalAnimFrameLoader.Companion.method351
 import RsaPacketDecoder.Companion.method2671
 import RsaPacketDecoder.Companion.method2672
-import Class341.Companion.method2676
-import Class341.Companion.method2677
-import Class341.Companion.method2678
+import TileRenderState.Companion.method2676
+import TileRenderState.Companion.method2677
+import TileRenderState.Companion.method2678
 import Class342.Companion.method2682
 import Class344.Companion.method2690
 import Class345.Companion.method2693
@@ -552,8 +552,8 @@ class Client : GameAppletFrame() {
         anInt5179++
         if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 > BinaryGraphicsOptionState.anInt5959) {
             CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
-            Class341.anInt4235 = (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 * 50 + -50) * 5
-            if (Class341.anInt4235 > 3000) Class341.anInt4235 = 3000
+            TileRenderState.anInt4235 = (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 * 50 + -50) * 5
+            if (TileRenderState.anInt4235 > 3000) TileRenderState.anInt4235 = 3000
             if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 >= 2 && Class348_Sub4.aMediaStreamClient_6601!!.anInt3214 == 6) {
                 this.method82(-80, "js5connect_outofdate")
                 WorldMapRenderer.anInt4674 = 14
@@ -575,7 +575,7 @@ class Client : GameAppletFrame() {
             }
         }
         BinaryGraphicsOptionState.anInt5959 = Class348_Sub4.aMediaStreamClient_6601!!.anInt3213
-        if (Class341.anInt4235 > 0) Class341.anInt4235--
+        if (TileRenderState.anInt4235 > 0) TileRenderState.anInt4235--
         else {
             try {
                 if (Class47.anInt846 == 0) {

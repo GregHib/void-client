@@ -13,7 +13,7 @@ import kotlin.math.max
 /* Class341 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class341 {
+class TileRenderState {
     override fun toString(): String {
         anInt4227++
         throw IllegalStateException()
@@ -23,9 +23,9 @@ class Class341 {
         anInt4232++
         if (i_8_ != 1595) return 38
         val i_9_ = (max(Class348_Sub42_Sub8_Sub2.anInt10432, i))
-        if (PerlinTextureProvider.aClass341_5808 == this) return 0
-        if (this == WorldMapSceneSoftware.aClass341_5821) return i_9_ - i_7_
-        if (ProjectileConfigUtil.aClass341_399 == this) return (i_9_ - i_7_) / 2
+        if (PerlinTextureProvider.aTileRenderState_5808 == this) return 0
+        if (this == WorldMapSceneSoftware.aTileRenderState_5821) return i_9_ - i_7_
+        if (ProjectileConfigUtil.aTileRenderState_399 == this) return (i_9_ - i_7_) / 2
         return 0
     }
 

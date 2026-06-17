@@ -22,10 +22,10 @@ object Class62 {
     var anIntArrayArrayArray1116: Array<Array<IntArray?>?>? = null
 
     @JvmStatic
-    fun method596(i: Int): Array<Class341?> {
+    fun method596(i: Int): Array<TileRenderState?> {
         if (i != 20000) anIntArrayArrayArray1116 = null
         anInt1112++
-        return (arrayOf<Class341?>(PerlinTextureProvider.aClass341_5808, ProjectileConfigUtil.aClass341_399, WorldMapSceneSoftware.aClass341_5821))
+        return (arrayOf<TileRenderState?>(PerlinTextureProvider.aTileRenderState_5808, ProjectileConfigUtil.aTileRenderState_399, WorldMapSceneSoftware.aTileRenderState_5821))
     }
 
     @JvmStatic

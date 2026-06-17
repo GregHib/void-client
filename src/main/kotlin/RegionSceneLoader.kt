@@ -71,7 +71,7 @@ object RegionSceneLoader {
         anInt3696++
         if (i != -1) return -42
         val string = Class348_Sub15.method2812(i + -43, class348_sub42_sub13!!)
-        return Class369.aFontDefinition_4962!!.method1186(string, Class341.aAbstractModelRendererArray4234, false)
+        return Class369.aFontDefinition_4962!!.method1186(string, TileRenderState.aAbstractModelRendererArray4234, false)
     }
 
     init {

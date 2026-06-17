@@ -3,7 +3,7 @@ import MinimapFlagRenderer.method1084
 /* Class125 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) : Interface12 {
+class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) : Interface12 {
     @JvmField
     var anInt4913: Int = 0
     @JvmField
@@ -21,7 +21,7 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
     @JvmField
     var anInt4924: Int = 0
     @JvmField
-    var aClass341_4925: Class341? = null
+    var aTileRenderState_4925: TileRenderState? = null
     @JvmField
     var anInt4928: Int = 0
     @JvmField
@@ -42,11 +42,11 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
             this.anInt4929 = i_14_
             this.anInt4920 = i_13_
             this.anInt4917 = i_18_
-            this.aClass341_4925 = class341
+            this.aTileRenderState_4925 = tileRenderState
             this.anInt4928 = i_17_
             this.aScreenAnchorAlignment_4922 = screenAnchorAlignment
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nha.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (class341 != null) "{...}" else "null") + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("nha.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ')'))
         }
     }
 

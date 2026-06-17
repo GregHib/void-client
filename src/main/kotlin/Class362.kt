@@ -37,7 +37,7 @@ object Class362 {
                     if (i_2_ < NormalMapGenerator.anInt3451) i_2_ = NormalMapGenerator.anInt3451
                     if (i_1_ < RegionSceneLoader.anInt3704) i_1_ = RegionSceneLoader.anInt3704
                     var i_5_ = (Class95.aScreenAnchorAlignment_1542!!.method1607(Class92.anInt1524, i_1_, (-107).toByte()) - -BufferToggleState.anInt3712)
-                    var i_6_ = (DefaultGraphicsOptionState.aClass341_6128!!.method2679(OpenGlRenderer.anInt7666, i_2_, 1595) + ChatEffectsOptionState.anInt5871)
+                    var i_6_ = (DefaultGraphicsOptionState.aTileRenderState_6128!!.method2679(OpenGlRenderer.anInt7666, i_2_, 1595) + ChatEffectsOptionState.anInt5871)
                     if (Class59_Sub1.aBoolean5300) {
                         i_5_ += NativeTerrainTile.method4008((-124).toByte())
                         i_6_ += method260(false)
