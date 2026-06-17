@@ -1,7 +1,7 @@
 import CollisionMapRegion.Companion.method1045
 import NativeVertexBuffer.Companion.method1079
 import NpcSummaryDefinition.Companion.method1166
-import Class149.method1201
+import OrientationRotator.method1201
 import Class16.method258
 import Class177.Companion.method1353
 import Class223.Companion.method1614

@@ -22,7 +22,7 @@ object Class155 {
         if (RenderNode.aBoolean9722) {
             Class296.anInt3775++
             if (class46.anObjectArray679 != null) {
-                val class46_0_ = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), Class149.anInt2046)
+                val class46_0_ = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                 if (class46_0_ != null) {
                     val class348_sub36 = Class348_Sub36()
                     class348_sub36.aClass46_6989 = class46
@@ -33,7 +33,7 @@ object Class155 {
             }
             val class348_sub47 = method2148(Class344.aClass351_4266, Class348_Sub23_Sub2.aClass77_9029, -120)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), class46.anInt830)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(Class149.anInt2046, -4086)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-123, Class9.anInt169)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class301.anInt3829)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(92, class46.anInt704)

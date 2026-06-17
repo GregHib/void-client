@@ -80,7 +80,7 @@ class Class341 {
             if (i != -2049) anIntArrayArray4233 = null
             anInt4229++
             if (RenderNode.aBoolean9722) {
-                val class46 = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), Class149.anInt2046)
+                val class46 = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                 if (class46 != null && class46.anObjectArray680 != null) {
                     val class348_sub36 = Class348_Sub36()
                     class348_sub36.aClass46_6989 = class46

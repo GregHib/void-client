@@ -22,7 +22,7 @@ class Class287 {
             if (class223 == Class313.aClass223_3934) return Class5.method179(16533, class348_sub49!!)
             if (Class185.aClass223_2489 == class223) return Class348_Sub46.method3322(0, class348_sub49!!)
             if (class223 == Class174.aClass223_2307) return Class50_Sub4.method472(-27794, class348_sub49!!)
-            if (Class149.aClass223_2045 == class223) return Class328_Sub2.method2612(class348_sub49!!, true)
+            if (OrientationRotator.aClass223_2045 == class223) return Class328_Sub2.method2612(class348_sub49!!, true)
             if (Class187.aClass223_2507 == class223) return Class285_Sub1.method2128(-1730, class348_sub49!!)
             return null
         } catch (runtimeexception: RuntimeException) {

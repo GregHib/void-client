@@ -86,7 +86,7 @@ class Class239_Sub1 : Class239 {
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(`is`[i_4_], 3.toByte())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class301.anInt3829, 3.toByte())
-                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(Class149.anInt2046, -4086)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-64).toByte(), 0)
                         Class348_Sub42_Sub14.method3243(116, class348_sub47)
                         bool = true

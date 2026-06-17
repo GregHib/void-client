@@ -5,7 +5,7 @@ class ConfigValueProvider internal constructor(@JvmField var anInt4912: Int) : I
     override fun method51(i: Byte): Class223? {
         if (i < 116) method1080(81, 13, -51, -26)
         anInt4909++
-        return Class149.aClass223_2045
+        return OrientationRotator.aClass223_2045
     }
 
     companion object {

@@ -164,7 +164,7 @@ class Class339 : Runnable {
                 Class9.anInt169 = class46.anInt704
                 Class348_Sub49_Sub1.anInt9747 = class46.anInt824
                 if (i_14_.toInt() != 21) Companion.method2665(-99, (-106).toByte(), 10, -37, 26, -123)
-                Class149.anInt2046 = class46.anInt830
+                OrientationRotator.anInt2046 = class46.anInt830
                 method1916(-9343, class46)
             }
         }

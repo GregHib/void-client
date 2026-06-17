@@ -47,7 +47,7 @@ import ScreenBorderFiller.method1169
 import HitsplatDefinition.Companion.method1194
 import HintArrowOrMessage.Companion.method1195
 import WidgetNodeLink.Companion.method1198
-import Class149.method1200
+import OrientationRotator.method1200
 import Gl2dTexture.Companion.method241
 import Gl2dTexture.Companion.method242
 import GlCubeMapTexture.Companion.method243
@@ -2197,7 +2197,7 @@ class Client : GameAppletFrame() {
                                                     i_67_ = ((LocalPlayerState.aPlayer_1907!!.y) - i_68_ shr 9) - (i_65_ shr 2)
                                                 }
                                                 if (RenderNode.aBoolean9722 && ((Class38.anInt500 and 0x40) != 0)) {
-                                                    val class46_69_ = (Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), Class149.anInt2046))
+                                                    val class46_69_ = (Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046))
                                                     if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), Class28.aString5001, 1L, (Class348_Sub49_Sub1.anInt9747))
                                                     else method2678(-2049)
                                                 } else {

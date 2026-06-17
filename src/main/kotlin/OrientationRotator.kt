@@ -1,7 +1,7 @@
 /* Class149 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class149 {
+object OrientationRotator {
     var anInt2044: Int = 0
     @JvmField
     var aClass223_2045: Class223? = Class223(8, 1)
