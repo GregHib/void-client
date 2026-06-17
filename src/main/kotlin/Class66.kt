@@ -4028,7 +4028,7 @@ object Class66 {
                 }
                 if (i == 3330) {
                     val i_339_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class307.method2301(35.toByte(), i_339_, false)
+                    anIntArray1149!![anInt1173++] = SkeletonSequenceLoader.method2301(35.toByte(), i_339_, false)
                     return
                 }
                 if (i == 3331) {

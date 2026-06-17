@@ -1,7 +1,7 @@
 /* Class307 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class307 {
+object SkeletonSequenceLoader {
     var anInt3877: Int = 0
     var anInt3878: Int = 0
 
@@ -45,7 +45,7 @@ object Class307 {
             if (class348_sub13.anIntArray6757!![i_8_] == -1) i_7_++
             i_8_++
         }
-        if (i.toInt() != 35) Class307.method2301((-102).toByte(), 43, true)
+        if (i.toInt() != 35) SkeletonSequenceLoader.method2301((-102).toByte(), 43, true)
         i_7_ += (ScrollingWidgetComponentNode.aParticleEffectCache_8378!!.method2044(82, i_6_).anInt9542 + -class348_sub13.anIntArray6757!!.size)
         return i_7_
     }

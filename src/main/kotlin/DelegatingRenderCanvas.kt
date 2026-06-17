@@ -191,7 +191,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             }
             if (OpenGlRenderNode.aSmoothingBuffer_10488 == null) {
                 if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.aClass45_6950!!.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"))) {
-                    if (Class348_Sub32.aClass45_6950!!.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aSmoothingBuffer_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBase.aBoolean1900, (-91).toByte())
+                    if (Class348_Sub32.aClass45_6950!!.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aSmoothingBuffer_10488 = SkeletonSequenceLoader.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBase.aBoolean1900, (-91).toByte())
                     else {
                         bool = false
                         LocDefinitionCache.anInt3441++

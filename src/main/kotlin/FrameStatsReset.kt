@@ -2594,7 +2594,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub5_Sub2.anInt10160 = 0
             IndexedFileCache.anInt1935 = 0
             Class348_Sub49.anInt7162 = 0
-            Class307.anInt3878 = 0
+            SkeletonSequenceLoader.anInt3878 = 0
             anInt5795 = 0
             Class64_Sub2.anInt5446 = 0
             CompositeNpcModelBuilder.anInt2097 = 0
@@ -3287,7 +3287,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ConfigFlagUtil.anInt3229 = 0
             NativeRenderer.anInt8030 = 0
             Class5.anInt4641 = 0
-            Class307.anInt3877 = 0
+            SkeletonSequenceLoader.anInt3877 = 0
             SocketStreamWorker.anInt2647 = 0
             WorldMapScene.anInt3112 = 0
             Class318_Sub1_Sub4_Sub1.anInt10067 = 0
