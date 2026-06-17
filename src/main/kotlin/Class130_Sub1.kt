@@ -1,4 +1,4 @@
-import Class127_Sub1.Companion.method1118
+import ScrollingWidgetComponentNode.Companion.method1118
 import Class286_Sub2.Companion.method2145
 import Class318_Sub1_Sub4.Companion.method2480
 import Class348_Sub40_Sub16.Companion.method3089
@@ -332,7 +332,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             AbstractMenuEntry.anInt1699 = 0
             Class64_Sub2.anInt5453 = 0
             Class64_Sub2.anInt5526 = 0
-            Class127.anInt4653 = 0
+            WidgetComponentNode.anInt4653 = 0
             Class367_Sub3.anInt7298 = 0
             Class291.anInt3741 = 0
             Class175.anInt2322 = 0
@@ -512,7 +512,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class285_Sub1.anInt8487 = 0
             Class239_Sub14.anInt5982 = 0
             OpenGlRenderer.anInt7659 = 0
-            Class127.anInt4662 = 0
+            WidgetComponentNode.anInt4662 = 0
             Class348_Sub35.anInt6975 = 0
             Class258_Sub3.anInt8544 = 0
             Class377.anInt9873 = 0
@@ -734,7 +734,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub42_Sub12.anInt9596 = 0
             Class318_Sub1_Sub1_Sub2.anInt9992 = 0
             Class348_Sub18.anInt6805 = 0
-            Class127.anInt4660 = 0
+            WidgetComponentNode.anInt4660 = 0
             GameAppletFrame.anInt18 = 0
             Class258_Sub4.anInt8554 = 0
             Class64_Sub3.anInt5588 = 0
@@ -767,7 +767,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub42.anInt7062 = 0
             OpenGlRenderer.anInt7599 = 0
             Class318_Sub4.anInt6407 = 0
-            Class127_Sub1.anInt8382 = 0
+            ScrollingWidgetComponentNode.anInt8382 = 0
             Class348_Sub1_Sub1.anInt8803 = 0
             Class263.anInt3346 = 0
             Class5.anInt4628 = 0
@@ -1378,7 +1378,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class377.anInt9829 = 0
             Class50.anInt861 = 0
             Class318_Sub1_Sub3_Sub5.anInt10380 = 0
-            Class127_Sub1.anInt8380 = 0
+            ScrollingWidgetComponentNode.anInt8380 = 0
             Class367_Sub4.anInt7314 = 0
             Class263.anInt3354 = 0
             Class133.anInt1913 = 0
@@ -2650,7 +2650,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub16.anInt6013 = 0
             Class170.anInt5071 = 0
             Class60.anInt1090 = 0
-            Class127.anInt4652 = 0
+            WidgetComponentNode.anInt4652 = 0
             Class328_Sub3.anInt6521 = 0
             Class263.anInt3353 = 0
             Class348_Sub40_Sub9.anInt9172 = 0
@@ -2692,7 +2692,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub49.anInt7176 = 0
             Class188.anInt2520 = 0
             Class318_Sub1_Sub3_Sub1.anInt10013 = 0
-            Class127_Sub1.anInt8379 = 0
+            ScrollingWidgetComponentNode.anInt8379 = 0
             ParticleEmitterNode.anInt181 = 0
             Class348_Sub40_Sub6.anInt9136 = 0
             Class294.anInt5039 = 0
@@ -3011,7 +3011,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             OpenGlRenderer.anInt7726 = 0
             Class318_Sub1_Sub3_Sub3.anInt10307 = 0
             ModelDefinition.anInt1826 = 0
-            Class127_Sub1.anInt8381 = 0
+            ScrollingWidgetComponentNode.anInt8381 = 0
             Class348_Sub40_Sub39.anInt9483 = 0
             SoftwareSpriteRaster.anInt1611 = 0
             Class348_Sub5_Sub1.anInt8839 = 0
@@ -3802,7 +3802,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class280.anInt3634 = 0
             ProjectionCameraTransform.anInt5771 = 0
             Class216.anInt4977 = 0
-            Class127.anInt4657 = 0
+            WidgetComponentNode.anInt4657 = 0
             Class368.anInt4511 = 0
             NativeRenderer.anInt7934 = 0
             Class348_Sub40_Sub7.anInt9143 = 0
@@ -3926,7 +3926,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub5_Sub1.anInt10144 = 0
             Class182.anInt2450 = 0
             ObjectSpawnDecoder.anInt1802 = 0
-            Class127.anInt4658 = 0
+            WidgetComponentNode.anInt4658 = 0
             Class243.anInt3161 = 0
             Class346_Sub1.anInt6540 = 0
             Class319.anInt3978 = 0

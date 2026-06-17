@@ -145,7 +145,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         i_18_++
                                         continue
                                     }
-                                    if (Class300.aBoolean3819 && Class127_Sub1.aBoolean8386) {
+                                    if (Class300.aBoolean3819 && ScrollingWidgetComponentNode.aBoolean8386) {
                                         var i_29_ = (Class258_Sub4.aClass373_8552!!.method3597(true) - -i_26_)
                                         var i_30_ = (Class258_Sub4.aClass373_8552!!.method3594(101.toByte()) + i_27_)
                                         i_29_ -= Class318_Sub4.anInt6411

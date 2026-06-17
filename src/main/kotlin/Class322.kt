@@ -136,7 +136,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             else {
                 method1600(false, 0, class318_sub1_sub3_sub3)
                 i_3_ = Class235.anInt3062
-                i_4_ = Class127_Sub1.anInt8387
+                i_4_ = ScrollingWidgetComponentNode.anInt8387
             }
             if (bool != false) aIntRange_4027 = null
             if ((class318_sub1_sub3_sub3.x < 512) || class318_sub1_sub3_sub3.y < 512 || (-512 + Class367_Sub4.anInt7319 * 512 <= class318_sub1_sub3_sub3.x) || (-512 + Class348_Sub40_Sub3.anInt9109 * 512 <= class318_sub1_sub3_sub3.y)) {

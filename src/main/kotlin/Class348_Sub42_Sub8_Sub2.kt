@@ -171,7 +171,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_9_.toLong(), -6008) as Class348_Sub41?)
                 val class348_sub41_10_ = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
-                if (class348_sub41_10_ != null) Class127_Sub1.method1118((class348_sub41 == null || (class348_sub41_10_.anInt7050 != class348_sub41.anInt7050)), false, class348_sub41_10_, 2533)
+                if (class348_sub41_10_ != null) ScrollingWidgetComponentNode.method1118((class348_sub41 == null || (class348_sub41_10_.anInt7050 != class348_sub41.anInt7050)), false, class348_sub41_10_, 2533)
                 if (class348_sub41 != null) {
                     class348_sub41.method2715(32.toByte())
                     MinimapSpriteRenderer.aClass356_4915!!.method3483(102.toByte(), i.toLong(), class348_sub41)
@@ -789,7 +789,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
-                if (class348_sub41 != null) Class127_Sub1.method1118(true, false, class348_sub41, 2533)
+                if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
                 if (Class49.aClass46_4730 != null) {
                     Class251.method1916(-9343, Class49.aClass46_4730!!)
                     Class49.aClass46_4730 = null
@@ -1406,12 +1406,12 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_183_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-95).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_182_.toLong(), -6008) as Class348_Sub41?)
-                if (class348_sub41 != null) Class127_Sub1.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533)
+                if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533)
                 Class338.method2661(i, i_182_, i_183_, false, 2)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class127_Sub1.aIntRange_8384) {
+            if (Class348_Sub3.aIntRange_6584 == ScrollingWidgetComponentNode.aIntRange_8384) {
                 Class348_Sub3.aIntRange_6584 = null
                 MinimapSpriteRenderer.anInt4930 = 1
                 Crc64Hashable.anInt4985 = Class311.anInt3918
@@ -1509,7 +1509,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class127_Sub1.aIntRange_8385) {
+            if (Class348_Sub3.aIntRange_6584 == ScrollingWidgetComponentNode.aIntRange_8385) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
                 val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-97).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())

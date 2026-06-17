@@ -32,7 +32,7 @@ class Class347 {
             Class251.method1916(-9343, Class289.aClass46_3701!!)
             anInt4280++
             Class318_Sub1.anInt6392++
-            if (!Class50_Sub1.aBoolean5221 || !Class127_Sub1.aBoolean8386) {
+            if (!Class50_Sub1.aBoolean5221 || !ScrollingWidgetComponentNode.aBoolean8386) {
                 if (Class318_Sub1.anInt6392 > 1) Class289.aClass46_3701 = null
             } else {
                 var i_0_ = 0

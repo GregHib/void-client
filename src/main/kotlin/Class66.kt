@@ -1857,7 +1857,7 @@ object Class66 {
             }
             if (i == 6203) {
                 Class348_Sub42_Sub3.method3174(0, 0, Class348_Sub1.aClass46_6561!!.anInt709, false, 74.toByte(), Class348_Sub1.aClass46_6561!!.anInt789)
-                anIntArray1149!![anInt1173++] = Class127.anInt4656
+                anIntArray1149!![anInt1173++] = WidgetComponentNode.anInt4656
                 anIntArray1149!![anInt1173++] = Class280.anInt3643
                 return
             }
@@ -3797,7 +3797,7 @@ object Class66 {
                     val i_312_ = anIntArray1149!![anInt1173]
                     val i_313_ = anIntArray1149!![anInt1173 + 1]
                     val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_312_.toLong(), -6008) as Class348_Sub41?)
-                    if (class348_sub41 != null) Class127_Sub1.method1118((class348_sub41.anInt7050 != i_313_), true, class348_sub41, 2533)
+                    if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118((class348_sub41.anInt7050 != i_313_), true, class348_sub41, 2533)
                     Class338.method2661(i_313_, i_312_, 3, true, 2)
                     return
                 }
@@ -3805,7 +3805,7 @@ object Class66 {
                     anInt1173--
                     val i_314_ = anIntArray1149!![anInt1173]
                     val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i_314_.toLong(), -6008) as Class348_Sub41?)
-                    if (class348_sub41 != null && class348_sub41.anInt7053 == 3) Class127_Sub1.method1118(true, true, class348_sub41, 2533)
+                    if (class348_sub41 != null && class348_sub41.anInt7053 == 3) ScrollingWidgetComponentNode.method1118(true, true, class348_sub41, 2533)
                     return
                 }
                 if (i == 3113) {
@@ -3905,7 +3905,7 @@ object Class66 {
                 }
                 if (i == 3304) {
                     val i_323_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (Class127_Sub1.aClass271_8378!!.method2044(106, i_323_).anInt9542)
+                    anIntArray1149!![anInt1173++] = (ScrollingWidgetComponentNode.aClass271_8378!!.method2044(106, i_323_).anInt9542)
                     return
                 }
                 if (i == 3305) {

@@ -4,7 +4,7 @@ import Class6.Companion.method203
 /* Class127 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class127(class45: Class45?, class288: Class288?) : Interface1 {
+open class WidgetComponentNode(class45: Class45?, class288: Class288?) : Interface1 {
     var aAbstractModelRenderer_4655: AbstractModelRenderer? = null
     var aClass288_4659: Class288? = null
     private val aClass45_4661: Class45?

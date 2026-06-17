@@ -97,18 +97,18 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
             if (class318_sub1_sub3_sub3.anInt10319 == 0) {
                 class318_sub1_sub3_sub3.anInt10326 = 0
                 Class235.anInt3062 = -1
-                Class127_Sub1.anInt8387 = 0
+                ScrollingWidgetComponentNode.anInt8387 = 0
             } else {
                 if (i != ((class318_sub1_sub3_sub3.anInt10286).inv()) && (class318_sub1_sub3_sub3.anInt10218) == 0) {
                     val class17 = (ParticleEmitterNode.aClass87_191!!.method835((class318_sub1_sub3_sub3.anInt10286), i + 7))
                     if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
                         Class235.anInt3062 = -1
-                        Class127_Sub1.anInt8387 = 0
+                        ScrollingWidgetComponentNode.anInt8387 = 0
                         class318_sub1_sub3_sub3.anInt10326++
                         return
                     }
                     if ((class318_sub1_sub3_sub3.anInt10322) <= 0 && class17.anInt245 == 0) {
-                        Class127_Sub1.anInt8387 = 0
+                        ScrollingWidgetComponentNode.anInt8387 = 0
                         Class235.anInt3062 = -1
                         class318_sub1_sub3_sub3.anInt10326++
                         return
@@ -119,14 +119,14 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                         val class17 = ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7)
                         if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
-                            Class127_Sub1.anInt8387 = 0
+                            ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++
                             Class235.anInt3062 = -1
                             return
                         }
                         if ((class318_sub1_sub3_sub3.anInt10322) <= 0 && class17.anInt245 == 0) {
                             Class235.anInt3062 = -1
-                            Class127_Sub1.anInt8387 = 0
+                            ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++
                             return
                         }
@@ -137,14 +137,14 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                         val class17 = ParticleEmitterNode.aClass87_191!!.method835((class368.anInt4503), i xor 0x7)
                         if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
-                            Class127_Sub1.anInt8387 = 0
+                            ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++
                             Class235.anInt3062 = -1
                             return
                         }
                         if ((class318_sub1_sub3_sub3.anInt10322) <= 0 && class17.anInt245 == 0) {
                             Class235.anInt3062 = -1
-                            Class127_Sub1.anInt8387 = 0
+                            ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++
                             return
                         }
@@ -174,7 +174,7 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
                     Class235.anInt3062 = -1
                     class318_sub1_sub3_sub3.anInt10319--
                     if ((class318_sub1_sub3_sub3.anInt10322) > 0) class318_sub1_sub3_sub3.anInt10322--
-                    Class127_Sub1.anInt8387 = 0
+                    ScrollingWidgetComponentNode.anInt8387 = 0
                 } else {
                     var i_7_ = 16
                     var bool_8_ = true
@@ -194,7 +194,7 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
                     }
                     if (i_6_.toInt() == 2) i_7_ = i_7_ shl 1
                     else if (i_6_.toInt() == 0) i_7_ = i_7_ shr 1
-                    Class127_Sub1.anInt8387 = 0
+                    ScrollingWidgetComponentNode.anInt8387 = 0
                     if (class225.anInt2945 != -1) {
                         i_7_ = i_7_ shl 9
                         if ((class318_sub1_sub3_sub3.anInt10319) == 1) {
@@ -227,22 +227,22 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
                     if (i_2_ == i_4_ && i_5_ == i_3_) Class235.anInt3062 = -1
                     else {
                         if (i_4_ > i_2_) {
-                            Class127_Sub1.anInt8387 = Class127_Sub1.anInt8387 or 0x4
+                            ScrollingWidgetComponentNode.anInt8387 = ScrollingWidgetComponentNode.anInt8387 or 0x4
                             class318_sub1_sub3_sub3.x += i_7_
                             if (i_4_ < (class318_sub1_sub3_sub3.x)) class318_sub1_sub3_sub3.x = i_4_
                         } else if (i_4_ < i_2_) {
-                            Class127_Sub1.anInt8387 = Class127_Sub1.anInt8387 or 0x8
+                            ScrollingWidgetComponentNode.anInt8387 = ScrollingWidgetComponentNode.anInt8387 or 0x8
                             class318_sub1_sub3_sub3.x -= i_7_
                             if (class318_sub1_sub3_sub3.x < i_4_) class318_sub1_sub3_sub3.x = i_4_
                         }
                         if (i_7_ >= 32) Class235.anInt3062 = 2
                         else Class235.anInt3062 = i_6_.toInt()
                         if (i_3_ < i_5_) {
-                            Class127_Sub1.anInt8387 = Class127_Sub1.anInt8387 or 0x1
+                            ScrollingWidgetComponentNode.anInt8387 = ScrollingWidgetComponentNode.anInt8387 or 0x1
                             class318_sub1_sub3_sub3.y += i_7_
                             if (i_5_ < (class318_sub1_sub3_sub3.y)) class318_sub1_sub3_sub3.y = i_5_
                         } else if (i_5_ < i_3_) {
-                            Class127_Sub1.anInt8387 = Class127_Sub1.anInt8387 or 0x2
+                            ScrollingWidgetComponentNode.anInt8387 = ScrollingWidgetComponentNode.anInt8387 or 0x2
                             class318_sub1_sub3_sub3.y -= i_7_
                             if (i_5_ > (class318_sub1_sub3_sub3.y)) class318_sub1_sub3_sub3.y = i_5_
                         }

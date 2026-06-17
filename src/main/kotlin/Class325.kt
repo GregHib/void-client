@@ -577,7 +577,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 Class348.anInt4292 = 0
-                                Class127.anInt4657++
+                                WidgetComponentNode.anInt4657++
                                 Class93.anInt1534 = i_72_
                                 Class239_Sub20.anInt6048 = 2
                                 Class26.anInt385 = i_73_

@@ -12,7 +12,7 @@ class Class348_Sub40_Sub6 : Class348_Sub40(3, false) {
             for (i_3_ in 0..<anInt9139) {
                 val i_4_ = 0xff and (is_1_[i_3_] shr 4)
                 val i_5_ = anInt9133 * is_2_[i_3_] shr 12
-                val i_6_ = Class127.anIntArray4654!![i_4_] * i_5_ shr 12
+                val i_6_ = WidgetComponentNode.anIntArray4654!![i_4_] * i_5_ shr 12
                 val i_7_ = Class235.anIntArray3068!![i_4_] * i_5_ shr 12
                 val i_8_ = i_3_ - -(i_6_ shr 12) and Class239_Sub22.anInt6076
                 val i_9_ = i - -(i_7_ shr 12) and Class299_Sub2.anInt6325
@@ -56,7 +56,7 @@ class Class348_Sub40_Sub6 : Class348_Sub40(3, false) {
             while (anInt9139 > i_19_) {
                 val i_20_ = 0xff and (255 * is_14_[i_19_] shr 12)
                 val i_21_ = anInt9133 * is_15_[i_19_] shr 12
-                val i_22_ = i_21_ * Class127.anIntArray4654!![i_20_] shr 12
+                val i_22_ = i_21_ * WidgetComponentNode.anIntArray4654!![i_20_] shr 12
                 val i_23_ = i_21_ * Class235.anIntArray3068!![i_20_] shr 12
                 val i_24_ = i_19_ + (i_22_ shr 12) and Class239_Sub22.anInt6076
                 val i_25_ = (i_23_ shr 12) + i and Class299_Sub2.anInt6325

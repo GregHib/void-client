@@ -352,7 +352,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             Class318_Sub1_Sub3_Sub4.aClass46_10336 = null
                             Class50_Sub1.aBoolean5221 = false
                             Class168.aClass46_2249 = null
-                            Class127_Sub1.aBoolean8386 = false
+                            ScrollingWidgetComponentNode.aBoolean8386 = false
                             method198(null, false, -1, -1)
                             method1343(-1, null, 1, -1)
                             if (!RenderNode.aBoolean9722) Class362.anInt4458 = -1

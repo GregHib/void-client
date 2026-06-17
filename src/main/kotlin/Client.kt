@@ -29,8 +29,8 @@ import ObjectSpawnDecoder.method1086
 import HoverActionEntry.Companion.method1091
 import ModelDefinition.Companion.method1096
 import Crc64Hashable.Companion.method1112
-import Class127.Companion.method1117
-import Class127_Sub1.Companion.method1120
+import WidgetComponentNode.Companion.method1117
+import ScrollingWidgetComponentNode.Companion.method1120
 import Class128.method1123
 import Class129.Companion.method1126
 import Class13.method225
@@ -1467,7 +1467,7 @@ class Client : GameAppletFrame() {
                     method1600(true, 0, npc)
                     val i_105_ = (method2774(108.toByte(), npc))
                     method3443(true, npc)
-                    method729(Class235.anInt3062, i_105_, 122.toByte(), npc, Class127_Sub1.anInt8387)
+                    method729(Class235.anInt3062, i_105_, 122.toByte(), npc, ScrollingWidgetComponentNode.anInt8387)
                     method3208(npc, Class235.anInt3062, -84)
                     method1635(-106, npc)
                 }
@@ -2130,7 +2130,7 @@ class Client : GameAppletFrame() {
                             if (bool_54_) method887(class46, (i_51_ + class348_sub45!!.method3308((-127).toByte()) - i_43_), (i_52_ + class348_sub45.method3311(-114) - i_44_), 2147483647)
                             if (Class289.aClass46_3701 != null && Class289.aClass46_3701 != class46 && bool && method105(class46)!!.method3302(17356)) Class318_Sub1_Sub3_Sub4.aClass46_10336 = class46
                             if (class46 == Class331.aClass46_4130) {
-                                Class127_Sub1.aBoolean8386 = true
+                                ScrollingWidgetComponentNode.aBoolean8386 = true
                                 Class348_Sub40_Sub37.anInt9461 = i_43_
                                 Class40.anInt558 = i_44_
                             }

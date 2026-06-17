@@ -330,7 +330,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                     }
                 }
                 RasterSprite.method168(103.toByte())
-                Class127_Sub1.method1119(false)
+                ScrollingWidgetComponentNode.method1119(false)
                 method87((-97).toByte())
                 method92(28740)
                 Class348_Sub8.aClass241_6660 = Class229.method1631(false)

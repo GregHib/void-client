@@ -18,9 +18,9 @@ object Class44 {
     @JvmStatic
     fun method384(i: Int, i_0_: Int, i_1_: Int): Int {
         anInt623++
-        val i_2_ = (Class127.method1115(i - 1, i_1_ - 1, 91.toByte()) - (-Class127.method1115(i - -1, i_1_ + -1, (-53).toByte()) + -Class127.method1115(-1 + i, 1 + i_1_, (-90).toByte())) + Class127.method1115(i - -1, i_1_ - -1, (-82).toByte()))
-        val i_3_ = (Class127.method1115(i + -1, i_1_, (-118).toByte()) + (Class127.method1115(i - i_0_, i_1_, 118.toByte()) - (-Class127.method1115(i, -1 + i_1_, 109.toByte()) + -Class127.method1115(i, 1 + i_1_, 89.toByte()))))
-        val i_4_ = Class127.method1115(i, i_1_, (-59).toByte())
+        val i_2_ = (WidgetComponentNode.method1115(i - 1, i_1_ - 1, 91.toByte()) - (-WidgetComponentNode.method1115(i - -1, i_1_ + -1, (-53).toByte()) + -WidgetComponentNode.method1115(-1 + i, 1 + i_1_, (-90).toByte())) + WidgetComponentNode.method1115(i - -1, i_1_ - -1, (-82).toByte()))
+        val i_3_ = (WidgetComponentNode.method1115(i + -1, i_1_, (-118).toByte()) + (WidgetComponentNode.method1115(i - i_0_, i_1_, 118.toByte()) - (-WidgetComponentNode.method1115(i, -1 + i_1_, 109.toByte()) + -WidgetComponentNode.method1115(i, 1 + i_1_, 89.toByte()))))
+        val i_4_ = WidgetComponentNode.method1115(i, i_1_, (-59).toByte())
         return i_4_ / 4 + i_3_ / 8 + i_2_ / 16
     }
 

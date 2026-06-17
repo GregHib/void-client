@@ -485,16 +485,16 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165 && i_75_ < 50) {
             val i_77_: Int
             i_77_ = -i_75_ + 50
-            while (Class127_Sub1.anInt8388 < i_77_) {
-                Class308.aByteArrayArray3882!![Class127_Sub1.anInt8388] = ByteArray(102400)
-                Class127_Sub1.anInt8388++
+            while (ScrollingWidgetComponentNode.anInt8388 < i_77_) {
+                Class308.aByteArrayArray3882!![ScrollingWidgetComponentNode.anInt8388] = ByteArray(102400)
+                ScrollingWidgetComponentNode.anInt8388++
             }
-            while (Class127_Sub1.anInt8388 > i_77_) {
-                Class127_Sub1.anInt8388--
-                Class308.aByteArrayArray3882!![Class127_Sub1.anInt8388] = null
+            while (ScrollingWidgetComponentNode.anInt8388 > i_77_) {
+                ScrollingWidgetComponentNode.anInt8388--
+                Class308.aByteArrayArray3882!![ScrollingWidgetComponentNode.anInt8388] = null
             }
         } else if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) {
-            Class127_Sub1.anInt8388 = 0
+            ScrollingWidgetComponentNode.anInt8388 = 0
             Class308.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         }
         if (class64 == null) return false

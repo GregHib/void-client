@@ -100,7 +100,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                     Class308.aByteArrayArray3882!![i_6_] = null
                     i_6_++
                 }
-                Class127_Sub1.anInt8388 = 0
+                ScrollingWidgetComponentNode.anInt8388 = 0
             }
             Class364.method3517(83)
             method2368(-1)

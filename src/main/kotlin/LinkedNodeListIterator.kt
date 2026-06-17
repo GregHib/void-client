@@ -125,7 +125,7 @@ class LinkedNodeListIterator {
                         class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3484(0) as? Class348_Sub41)
                         if (class348_sub41 == null) break
                     }
-                    Class127_Sub1.method1118(true, false, class348_sub41, 2533)
+                    ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
                     class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as? Class348_Sub41)
                 }
                 RenderNode.anInt9721 = -1

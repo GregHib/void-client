@@ -55,7 +55,7 @@ class OutputStream_Sub1 : OutputStream() {
                 i_1_ = Class295.anInt3764
                 i_2_ = Class280.anInt3643
                 Class132.anInt1906 = Class132.anInt1911
-                i_0_ = Class127.anInt4656
+                i_0_ = WidgetComponentNode.anInt4656
                 if (Class348_Sub40_Sub21.anInt9282 == 1) {
                     var i_4_ = Class76.aFloat1287.toInt()
                     if (Class348_Sub35.anInt6979 shr 8 > i_4_) i_4_ = Class348_Sub35.anInt6979 shr 8

@@ -1,6 +1,6 @@
 import Class324.Companion.method2570
 
-class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class288_Sub1?) : Class127(class45, class288_sub1) {
+class ScrollingWidgetComponentNode internal constructor(class45: Class45?, class288_sub1: Class288_Sub1?) : WidgetComponentNode(class45, class288_sub1) {
     private var anInt8383 = 0
     override fun method9(i: Byte, bool: Boolean) {
         anInt8379++

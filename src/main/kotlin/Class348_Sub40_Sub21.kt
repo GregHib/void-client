@@ -46,7 +46,7 @@ class Class348_Sub40_Sub21 : Class348_Sub40(0, true) {
     private fun method3105(i: Int, i_8_: Int, i_9_: Int): Boolean {
         anInt9273++
         val i_10_ = (i_9_ + i) * anInt9279 shr 12
-        var i_11_ = Class127.anIntArray4654!![(i_10_ * 255 and 0xfff2f) shr 12]
+        var i_11_ = WidgetComponentNode.anIntArray4654!![(i_10_ * 255 and 0xfff2f) shr 12]
         if (i_8_ != -7981) anInt9266 = -52
         i_11_ = (i_11_ shl 12) / anInt9279
         i_11_ = (i_11_ shl 12) / anInt9277
@@ -104,7 +104,7 @@ class Class348_Sub40_Sub21 : Class348_Sub40(0, true) {
         if (i_20_ != 9619) return true
         anInt9271++
         val i_22_ = anInt9279 * (i - i_21_) shr 12
-        var i_23_ = Class127.anIntArray4654!![(0xff530 and 255 * i_22_) shr 12]
+        var i_23_ = WidgetComponentNode.anIntArray4654!![(0xff530 and 255 * i_22_) shr 12]
         i_23_ = (i_23_ shl 12) / anInt9279
         i_23_ = (i_23_ shl 12) / anInt9277
         i_23_ = anInt9276 * i_23_ shr 12
