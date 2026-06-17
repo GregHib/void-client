@@ -194,7 +194,7 @@ import CollisionMapAccessor.method2066
 import LocTypeConfig.Companion.method2071
 import NativeSoundOutput.Companion.method2097
 import ItemNameResolver.Companion.method318
-import Class280.Companion.method2104
+import GroundDecorRenderer.Companion.method2104
 import Class281.method2107
 import Class282.method2111
 import Class283.Companion.method2113

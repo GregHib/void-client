@@ -107,7 +107,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     @JvmField
     var anInt8134: Int = 512
     var aFloatArray8135: FloatArray
-    private var aClass280_8136: Class280? = null
+    private var aGroundDecorRenderer_8136: GroundDecorRenderer? = null
     private val aClass372_8137: Class372?
     var anInt8138: Int = 0
     private val aClass367Array8139: Array<Class367?>
@@ -1562,7 +1562,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3828(false)
         method3816((-87).toByte())
         method3914((-107).toByte())
-        aClass280_8136!!.method2100(124.toByte(), this)
+        aGroundDecorRenderer_8136!!.method2100(124.toByte(), this)
     }
 
     private fun method3903(bool: Boolean) {
@@ -1731,7 +1731,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     override fun method3685(class98: Class98, i: Int) {
         try {
-            aClass280_8136!!.method2101(this, class98, i, 0)
+            aGroundDecorRenderer_8136!!.method2101(this, class98, i, 0)
             anInt7968++
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.FG(" + (if (class98 != null) "{...}" else "null") + ',' + i + ')'))
@@ -2078,7 +2078,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aClass64_Sub2_8187!!.method664(-23755)
         this.aClass64_Sub2_8199!!.method664(-23755)
         this.aClass64_Sub2_8189!!.method664(-23755)
-        aClass280_8136!!.method2105(-122)
+        aGroundDecorRenderer_8136!!.method2105(-122)
         anInterface5_Impl2_8195!!.method21(23315)
     }
 
@@ -2184,7 +2184,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aClass64_Sub2_8199 = Class64_Sub2(this, 0, 0, true, true)
         this.aClass64_Sub2_8207 = Class64_Sub2(this, 0, 0, false, false)
         this.aClass64_Sub2_8189 = Class64_Sub2(this, 0, 0, true, true)
-        aClass280_8136 = Class280(this)
+        aGroundDecorRenderer_8136 = GroundDecorRenderer(this)
         anInterface5_Impl2_8195 = method3840(-28633, true)
         method3902((-42).toByte())
         this.aNormalMapGenerator_7937 = NormalMapGenerator(this)
@@ -2394,7 +2394,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     override fun method3684(class98: Class98) {
         try {
-            aClass280_8136!!.method2101(this, class98, -1, 0)
+            aGroundDecorRenderer_8136!!.method2101(this, class98, -1, 0)
             anInt7984++
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, "wga.EF(" + (if (class98 != null) "{...}" else "null") + ')')

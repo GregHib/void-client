@@ -2,7 +2,10 @@ import Class299.Companion.method2253
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.min
 
-class Class280 internal constructor(var_ha_Sub3: NativeRenderer) {
+/*
+ * Class280
+ */
+class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
     private var anInt3626 = 0
     private val anIntArray3627 = IntArray(64)
     private val anInterface5_Impl1_3630: Interface5_Impl1

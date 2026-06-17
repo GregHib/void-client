@@ -1858,7 +1858,7 @@ object Class66 {
             if (i == 6203) {
                 Class348_Sub42_Sub3.method3174(0, 0, Class348_Sub1.aClass46_6561!!.anInt709, false, 74.toByte(), Class348_Sub1.aClass46_6561!!.anInt789)
                 anIntArray1149!![anInt1173++] = WidgetComponentNode.anInt4656
-                anIntArray1149!![anInt1173++] = Class280.anInt3643
+                anIntArray1149!![anInt1173++] = GroundDecorRenderer.anInt3643
                 return
             }
             if (i == 6204) {

@@ -1339,7 +1339,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class280.aIntRange_3641) {
+            if (Class348_Sub3.aIntRange_6584 == GroundDecorRenderer.aIntRange_3641) {
                 method128(Class348_Sub35.aClass74_6977, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
