@@ -3,7 +3,7 @@ import Class6.Companion.method206
 /* Class109 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRenderer, private val aClass167_1670: Class167) {
+class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRenderer, private val aParticleSystemState_1670: ParticleSystemState) {
     var anInt1665: Int = 0
     var aBoolean1667: Boolean = false
     var anInt1668: Int = 0
@@ -500,7 +500,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
             i += i_63_ - 1
             f += f_65_ * i_63_.toFloat()
             f_66_ += f_67_ * i_63_.toFloat()
-            if (aClass167_1670.aBoolean2202) {
+            if (aParticleSystemState_1670.aBoolean2202) {
                 do {
                     if (this.aBoolean1669) {
                         i_62_ = i_64_ - i_63_ shr 2
@@ -2043,7 +2043,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                 f_173_ += f_174_ * i_170_.toFloat()
                 f_175_ += f_176_ * i_170_.toFloat()
                 f_177_ += f_178_ * i_170_.toFloat()
-                if (aClass167_1670.aBoolean2202) {
+                if (aParticleSystemState_1670.aBoolean2202) {
                     if (this.aBoolean1669) {
                         i_169_ = i_171_ - i_170_ shr 2
                         f_174_ *= 4.0f
@@ -3919,7 +3919,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
             i += i_452_ - 1
             i_451_ = i_453_ - i_452_ shr 2
             f += f_454_ * i_452_.toFloat()
-            if (aClass167_1670.aBoolean2202) {
+            if (aParticleSystemState_1670.aBoolean2202) {
                 if (this.anInt1674 == 0) {
                     while (--i_451_ >= 0) {
                         if (f < fs[++i]) {

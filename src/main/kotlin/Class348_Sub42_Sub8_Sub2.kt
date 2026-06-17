@@ -970,7 +970,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class167.aIntRange_2196 == Class348_Sub3.aIntRange_6584) {
+            if (ParticleSystemState.aIntRange_2196 == Class348_Sub3.aIntRange_6584) {
                 val bool_113_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-81).toByte())
                 var string_114_ = string

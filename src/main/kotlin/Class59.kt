@@ -186,9 +186,9 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             val string_52_ = Class334.method2651(string, 3)
             if (string_52_ == null) return -1
             val string_53_ = Class348_Sub41.aString7048 + string_52_
-            if (!Class167.aClass45_2208!!.method422("", string_53_, -88)) return -1
-            if (!Class167.aClass45_2208!!.method413(i xor 0x1d48, string_53_)) return Class167.aClass45_2208!!.method397(string_53_, 0)
-            val `is` = Class167.aClass45_2208!!.method391(string_53_, "", -29832)
+            if (!ParticleSystemState.aClass45_2208!!.method422("", string_53_, -88)) return -1
+            if (!ParticleSystemState.aClass45_2208!!.method413(i xor 0x1d48, string_53_)) return ParticleSystemState.aClass45_2208!!.method397(string_53_, 0)
+            val `is` = ParticleSystemState.aClass45_2208!!.method391(string_53_, "", -29832)
             val `object`: Any? = null
             val file: File?
             try {

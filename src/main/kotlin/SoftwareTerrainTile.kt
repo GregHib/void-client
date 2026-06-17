@@ -484,7 +484,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         if (aByteArrayArray8232!![i]!![i_103_] < i_104_) aByteArrayArray8232!![i]!![i_103_] = i_104_.toByte()
     }
 
-    private fun method3990(i: Int, i_105_: Int, bool: Boolean, class167: Class167, shadowProjector: ShadowProjector, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
+    private fun method3990(i: Int, i_105_: Int, bool: Boolean, particleSystemState: ParticleSystemState, shadowProjector: ShadowProjector, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
         val class266 = aClass266ArrayArray8230!![i]!![i_105_]
         if (class266 == null) {
             val class145 = aTerrainTileDataArrayArray8225!![i]!![i_105_]
@@ -503,15 +503,15 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         if (f <= aHa_Sub1_8217.anInt7482.toFloat()) return
                         is_108_[i_187_] = 0
                         if (bool) {
-                            var i_191_ = (f - (class167.anInt2210).toFloat()).toInt()
+                            var i_191_ = (f - (particleSystemState.anInt2210).toFloat()).toInt()
                             if (i_191_ > 255) i_191_ = 255
                             if (i_191_ > 0) {
                                 is_108_[i_187_] = i_191_
                                 val i_192_ = ((class145.aShortArray2006!![i_187_]) * i_191_ / 255)
                                 if (i_192_ > 0) i_189_ -= i_192_
                             }
-                        } else if (class167.aBoolean2201) {
-                            val i_193_ = (f - (class167.anInt2210).toFloat()).toInt()
+                        } else if (particleSystemState.aBoolean2201) {
+                            val i_193_ = (f - (particleSystemState.anInt2210).toFloat()).toInt()
                             if (i_193_ > 0) {
                                 is_108_[i_187_] = i_193_
                                 if (is_108_[i_187_] > 255) is_108_[i_187_] = 255
@@ -531,15 +531,15 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         val f = aFloat8218 + (aFloat8233 * i_197_.toFloat() + aFloat8227 * i_198_.toFloat() + aFloat8231 * i_199_.toFloat())
                         is_108_[i_196_] = 0
                         if (bool) {
-                            var i_200_ = anInt8228 - class167.anInt2210
+                            var i_200_ = anInt8228 - particleSystemState.anInt2210
                             if (i_200_ > 255) i_200_ = 255
                             if (i_200_ > 0) {
                                 is_108_[i_196_] = i_200_
                                 val i_201_ = ((class145.aShortArray2006!![i_196_]) * i_200_ / 255)
                                 if (i_201_ > 0) i_198_ -= i_201_
                             }
-                        } else if (class167.aBoolean2201) {
-                            val i_202_ = anInt8228 - class167.anInt2210
+                        } else if (particleSystemState.aBoolean2201) {
+                            val i_202_ = anInt8228 - particleSystemState.anInt2210
                             if (i_202_ > 0) {
                                 is_108_[i_196_] = i_202_
                                 if (is_108_[i_196_] > 255) is_108_[i_196_] = 255
@@ -578,12 +578,12 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                         is_107_[i_234_].toFloat(),
                                         is_107_[i_235_].toFloat(),
                                         is_107_[i_236_].toFloat(),
-                                        (Class298.method2250((class145.anIntArray2001!![i_234_]), 117, is_108_[i_234_], (class167.anInt2192))),
-                                        (Class298.method2250((class145.anIntArray2001!![i_235_]), 60, is_108_[i_235_], (class167.anInt2192))),
-                                        (Class298.method2250((class145.anIntArray2001!![i_236_]), 95, is_108_[i_236_], (class167.anInt2192)))
+                                        (Class298.method2250((class145.anIntArray2001!![i_234_]), 117, is_108_[i_234_], (particleSystemState.anInt2192))),
+                                        (Class298.method2250((class145.anIntArray2001!![i_235_]), 60, is_108_[i_235_], (particleSystemState.anInt2192))),
+                                        (Class298.method2250((class145.anIntArray2001!![i_236_]), 95, is_108_[i_236_], (particleSystemState.anInt2192)))
                                     )
                                 } else if (((class145.anIntArray2001!![i_234_]) and 0xffffff) != 0) shadowProjector.method1027(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (class145.anIntArray2001!![i_234_]), (class145.anIntArray2001!![i_235_]), (class145.anIntArray2001!![i_236_]))
-                            } else shadowProjector.method1018(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (class167.anInt2192))
+                            } else shadowProjector.method1018(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (particleSystemState.anInt2192))
                         }
                     }
                 } else if (anInt8228 == -1) {
@@ -625,7 +625,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             (i_217_ or ((class145.anIntArray2001!![i_206_]) and 0xffffff)),
                                             (i_217_ or ((class145.anIntArray2001!![i_207_]) and 0xffffff)),
                                             (i_217_ or ((class145.anIntArray2001!![i_208_]) and 0xffffff)),
-                                            (class167.anInt2192),
+                                            (particleSystemState.anInt2192),
                                             is_108_[i_206_],
                                             is_108_[i_207_],
                                             is_108_[i_208_],
@@ -643,9 +643,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             is_107_[i_206_].toFloat(),
                                             is_107_[i_207_].toFloat(),
                                             is_107_[i_208_].toFloat(),
-                                            (Class6.method206((class145.anIntArray2001!![i_206_]), (is_108_[i_206_] shl 24 or (class167.anInt2192)), 255)),
-                                            (Class6.method206((class145.anIntArray2001!![i_207_]), (is_108_[i_207_] shl 24 or (class167.anInt2192)), 255)),
-                                            (Class6.method206((class145.anIntArray2001!![i_208_]), (is_108_[i_208_] shl 24 or (class167.anInt2192)), 255))
+                                            (Class6.method206((class145.anIntArray2001!![i_206_]), (is_108_[i_206_] shl 24 or (particleSystemState.anInt2192)), 255)),
+                                            (Class6.method206((class145.anIntArray2001!![i_207_]), (is_108_[i_207_] shl 24 or (particleSystemState.anInt2192)), 255)),
+                                            (Class6.method206((class145.anIntArray2001!![i_208_]), (is_108_[i_208_] shl 24 or (particleSystemState.anInt2192)), 255))
                                         )
                                         shadowProjector.anInt1674 = 0
                                     }
@@ -682,7 +682,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     shadowProjector.method1027(i_212_.toFloat(), i_213_.toFloat(), i_214_.toFloat(), i_209_.toFloat(), i_210_.toFloat(), i_211_.toFloat(), is_107_[i_206_].toFloat(), is_107_[i_207_].toFloat(), is_107_[i_208_].toFloat(), (class145.anIntArray2001!![i_206_]), (class145.anIntArray2001!![i_207_]), (class145.anIntArray2001!![i_208_]))
                                     shadowProjector.anInt1674 = 0
                                 }
-                            } else shadowProjector.method1018(i_212_.toFloat(), i_213_.toFloat(), i_214_.toFloat(), i_209_.toFloat(), i_210_.toFloat(), i_211_.toFloat(), is_107_[i_206_].toFloat(), is_107_[i_207_].toFloat(), is_107_[i_208_].toFloat(), class167.anInt2192)
+                            } else shadowProjector.method1018(i_212_.toFloat(), i_213_.toFloat(), i_214_.toFloat(), i_209_.toFloat(), i_210_.toFloat(), i_211_.toFloat(), is_107_[i_206_].toFloat(), is_107_[i_207_].toFloat(), is_107_[i_208_].toFloat(), particleSystemState.anInt2192)
                         }
                     }
                 } else {
@@ -725,7 +725,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             (i_231_ or ((class145.anIntArray2001!![i_220_]) and 0xffffff)),
                                             (i_231_ or ((class145.anIntArray2001!![i_221_]) and 0xffffff)),
                                             (i_231_ or ((class145.anIntArray2001!![i_222_]) and 0xffffff)),
-                                            (class167.anInt2192),
+                                            (particleSystemState.anInt2192),
                                             is_108_[i_220_],
                                             is_108_[i_221_],
                                             is_108_[i_222_],
@@ -743,9 +743,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             is_107_[i_220_].toFloat(),
                                             is_107_[i_221_].toFloat(),
                                             is_107_[i_222_].toFloat(),
-                                            (Class6.method206((class145.anIntArray2001!![i_220_]), (is_108_[i_220_] shl 24 or (class167.anInt2192)), 255)),
-                                            (Class6.method206((class145.anIntArray2001!![i_221_]), (is_108_[i_221_] shl 24 or (class167.anInt2192)), 255)),
-                                            (Class6.method206((class145.anIntArray2001!![i_222_]), (is_108_[i_222_] shl 24 or (class167.anInt2192)), 255))
+                                            (Class6.method206((class145.anIntArray2001!![i_220_]), (is_108_[i_220_] shl 24 or (particleSystemState.anInt2192)), 255)),
+                                            (Class6.method206((class145.anIntArray2001!![i_221_]), (is_108_[i_221_] shl 24 or (particleSystemState.anInt2192)), 255)),
+                                            (Class6.method206((class145.anIntArray2001!![i_222_]), (is_108_[i_222_] shl 24 or (particleSystemState.anInt2192)), 255))
                                         )
                                         shadowProjector.anInt1674 = 0
                                     }
@@ -783,7 +783,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     shadowProjector.anInt1674 = 0
                                 }
                                 shadowProjector.anInt1674 = 0
-                            } else shadowProjector.method1018(i_226_.toFloat(), i_227_.toFloat(), i_228_.toFloat(), i_223_.toFloat(), i_224_.toFloat(), i_225_.toFloat(), is_107_[i_220_].toFloat(), is_107_[i_221_].toFloat(), is_107_[i_222_].toFloat(), class167.anInt2192)
+                            } else shadowProjector.method1018(i_226_.toFloat(), i_227_.toFloat(), i_228_.toFloat(), i_223_.toFloat(), i_224_.toFloat(), i_225_.toFloat(), is_107_[i_220_].toFloat(), is_107_[i_221_].toFloat(), is_107_[i_222_].toFloat(), particleSystemState.anInt2192)
                         }
                     }
                 }
@@ -835,51 +835,51 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                     f_120_ = aFloat8218 + (aFloat8233 * i_110_.toFloat() + aFloat8227 * i_153_.toFloat() + aFloat8231 * i_113_.toFloat())
                 }
                 if (bool) {
-                    var i_154_ = (f - (class167.anInt2210).toFloat()).toInt()
+                    var i_154_ = (f - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_154_ > 255) i_154_ = 255
                     if (i_154_ > 0) {
                         i_114_ = i_154_
                         val i_155_ = (class266.aShort3382 * i_154_ / 255)
                         if (i_155_ > 0) i_150_ -= i_155_
                     }
-                    i_154_ = (f_118_ - (class167.anInt2210).toFloat()).toInt()
+                    i_154_ = (f_118_ - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_154_ > 255) i_154_ = 255
                     if (i_154_ > 0) {
                         i_115_ = i_154_
                         val i_156_ = (class266.aShort3383 * i_154_ / 255)
                         if (i_156_ > 0) i_151_ -= i_156_
                     }
-                    i_154_ = (f_119_ - (class167.anInt2210).toFloat()).toInt()
+                    i_154_ = (f_119_ - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_154_ > 255) i_154_ = 255
                     if (i_154_ > 0) {
                         i_116_ = i_154_
                         val i_157_ = (class266.aShort3384 * i_154_ / 255)
                         if (i_157_ > 0) i_152_ -= i_157_
                     }
-                    i_154_ = (f_120_ - (class167.anInt2210).toFloat()).toInt()
+                    i_154_ = (f_120_ - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_154_ > 255) i_154_ = 255
                     if (i_154_ > 0) {
                         i_117_ = i_154_
                         val i_158_ = (class266.aShort3385 * i_154_ / 255)
                         if (i_158_ > 0) i_153_ -= i_158_
                     }
-                } else if (class167.aBoolean2201) {
-                    var i_159_ = (f - (class167.anInt2210).toFloat()).toInt()
+                } else if (particleSystemState.aBoolean2201) {
+                    var i_159_ = (f - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_159_ > 0) {
                         i_114_ = i_159_
                         if (i_114_ > 255) i_114_ = 255
                     }
-                    i_159_ = (f_118_ - (class167.anInt2210).toFloat()).toInt()
+                    i_159_ = (f_118_ - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_159_ > 0) {
                         i_115_ = i_159_
                         if (i_115_ > 255) i_115_ = 255
                     }
-                    i_159_ = (f_119_ - (class167.anInt2210).toFloat()).toInt()
+                    i_159_ = (f_119_ - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_159_ > 0) {
                         i_116_ = i_159_
                         if (i_116_ > 255) i_116_ = 255
                     }
-                    i_159_ = (f_120_ - (class167.anInt2210).toFloat()).toInt()
+                    i_159_ = (f_120_ - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_159_ > 0) {
                         i_117_ = i_159_
                         if (i_117_ > 255) i_117_ = 255
@@ -938,23 +938,23 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                     f_119_ = aFloat8218 + (aFloat8233 * i_111_.toFloat() + f_130_ + aFloat8231 * i_113_.toFloat())
                     f_120_ = aFloat8218 + (aFloat8233 * i_110_.toFloat() + f_130_ + aFloat8231 * i_113_.toFloat())
                 }
-                if (class167.aBoolean2201) {
-                    var i_131_ = (f - (class167.anInt2210).toFloat()).toInt()
+                if (particleSystemState.aBoolean2201) {
+                    var i_131_ = (f - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_131_ > 0) {
                         i_114_ = i_131_
                         if (i_114_ > 255) i_114_ = 255
                     }
-                    i_131_ = (f_118_ - (class167.anInt2210).toFloat()).toInt()
+                    i_131_ = (f_118_ - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_131_ > 0) {
                         i_115_ = i_131_
                         if (i_115_ > 255) i_115_ = 255
                     }
-                    i_131_ = (f_119_ - (class167.anInt2210).toFloat()).toInt()
+                    i_131_ = (f_119_ - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_131_ > 0) {
                         i_116_ = i_131_
                         if (i_116_ > 255) i_116_ = 255
                     }
-                    i_131_ = (f_120_ - (class167.anInt2210).toFloat()).toInt()
+                    i_131_ = (f_120_ - (particleSystemState.anInt2210).toFloat()).toInt()
                     if (i_131_ > 0) {
                         i_117_ = i_131_
                         if (i_117_ > 255) i_117_ = 255
@@ -1008,7 +1008,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             if (class266.aShort3379 >= 0) {
                                 var i_178_ = -16777216
                                 if (bool_176_) i_178_ = -1694498816
-                                shadowProjector.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_178_ or ((class266.anInt3380) and 0xffffff), i_178_ or ((class266.anInt3381) and 0xffffff), i_178_ or ((class266.anInt3387) and 0xffffff), class167.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379.toInt())
+                                shadowProjector.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_178_ or ((class266.anInt3380) and 0xffffff), i_178_ or ((class266.anInt3381) and 0xffffff), i_178_ or ((class266.anInt3387) and 0xffffff), particleSystemState.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379.toInt())
                             } else {
                                 if (bool_176_) shadowProjector.anInt1674 = 100
                                 shadowProjector.method1027(
@@ -1021,9 +1021,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f_119_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
-                                    (Class6.method206(class266.anInt3380, (i_116_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255))
+                                    (Class6.method206(class266.anInt3380, (i_116_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255))
                                 )
                                 shadowProjector.anInt1674 = 0
                             }
@@ -1036,7 +1036,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             shadowProjector.method1027(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), class266.anInt3380, class266.anInt3381, class266.anInt3387)
                             shadowProjector.anInt1674 = 0
                         }
-                    } else shadowProjector.method1018(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), (class167.anInt2192))
+                    } else shadowProjector.method1018(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), (particleSystemState.anInt2192))
                 }
                 i_177_ = i_114_ + i_115_ + i_117_
                 if (((i_121_ - i_123_) * (i_128_ - i_124_) - (i_122_ - i_124_) * (i_127_ - i_123_)) > 0) {
@@ -1047,7 +1047,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             if (class266.aShort3379 >= 0) {
                                 var i_180_ = -16777216
                                 if (bool_176_) i_180_ = -1694498816
-                                shadowProjector.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_180_ or ((class266.anInt3389) and 0xffffff), i_180_ or ((class266.anInt3387) and 0xffffff), i_180_ or ((class266.anInt3381) and 0xffffff), class167.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379.toInt())
+                                shadowProjector.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_180_ or ((class266.anInt3389) and 0xffffff), i_180_ or ((class266.anInt3387) and 0xffffff), i_180_ or ((class266.anInt3381) and 0xffffff), particleSystemState.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379.toInt())
                             } else {
                                 if (bool_176_) shadowProjector.anInt1674 = 100
                                 shadowProjector.method1027(
@@ -1060,9 +1060,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
-                                    (Class6.method206(class266.anInt3389, (i_114_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255))
+                                    (Class6.method206(class266.anInt3389, (i_114_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255))
                                 )
                                 shadowProjector.anInt1674 = 0
                             }
@@ -1075,7 +1075,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             shadowProjector.method1027(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), class266.anInt3389, class266.anInt3387, class266.anInt3381)
                             shadowProjector.anInt1674 = 0
                         }
-                    } else shadowProjector.method1018(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), (class167.anInt2192))
+                    } else shadowProjector.method1018(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), (particleSystemState.anInt2192))
                 }
             } else {
                 var i_182_ = i_115_ + i_116_ + i_117_
@@ -1087,7 +1087,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             if (class266.aShort3379 >= 0) {
                                 var i_183_ = -16777216
                                 if (bool_176_) i_183_ = -1694498816
-                                shadowProjector.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_183_ or ((class266.anInt3380) and 0xffffff), i_183_ or ((class266.anInt3381) and 0xffffff), i_183_ or ((class266.anInt3387) and 0xffffff), class167.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379.toInt())
+                                shadowProjector.method1024(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_, f_120_, f_118_, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f, i_183_ or ((class266.anInt3380) and 0xffffff), i_183_ or ((class266.anInt3381) and 0xffffff), i_183_ or ((class266.anInt3387) and 0xffffff), particleSystemState.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379.toInt())
                             } else {
                                 if (bool_176_) shadowProjector.anInt1674 = 100
                                 shadowProjector.method1027(
@@ -1100,9 +1100,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f_119_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
-                                    (Class6.method206(class266.anInt3380, (i_116_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255))
+                                    (Class6.method206(class266.anInt3380, (i_116_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255))
                                 )
                                 shadowProjector.anInt1674 = 0
                             }
@@ -1115,7 +1115,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             shadowProjector.method1027(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), class266.anInt3380, class266.anInt3381, class266.anInt3387)
                             shadowProjector.anInt1674 = 0
                         }
-                    } else shadowProjector.method1018(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), (class167.anInt2192))
+                    } else shadowProjector.method1018(i_126_.toFloat(), i_128_.toFloat(), i_124_.toFloat(), i_125_.toFloat(), i_127_.toFloat(), i_123_.toFloat(), f_119_.toInt().toFloat(), f_120_.toInt().toFloat(), f_118_.toInt().toFloat(), (particleSystemState.anInt2192))
                 }
                 i_182_ = i_114_ + i_115_ + i_117_
                 if (((i_121_ - i_123_) * (i_128_ - i_124_) - (i_122_ - i_124_) * (i_127_ - i_123_)) > 0) {
@@ -1126,7 +1126,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             if (class266.aShort3379 >= 0) {
                                 var i_185_ = -16777216
                                 if (bool_176_) i_185_ = -1694498816
-                                shadowProjector.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_185_ or ((class266.anInt3389) and 0xffffff), i_185_ or ((class266.anInt3387) and 0xffffff), i_185_ or ((class266.anInt3381) and 0xffffff), class167.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379.toInt())
+                                shadowProjector.method1024(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f, f_118_, f_120_, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, i_185_ or ((class266.anInt3389) and 0xffffff), i_185_ or ((class266.anInt3387) and 0xffffff), i_185_ or ((class266.anInt3381) and 0xffffff), particleSystemState.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379.toInt())
                             } else {
                                 if (bool_176_) shadowProjector.anInt1674 = 100
                                 shadowProjector.method1027(
@@ -1139,9 +1139,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
-                                    (Class6.method206(class266.anInt3389, (i_114_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255))
+                                    (Class6.method206(class266.anInt3389, (i_114_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255))
                                 )
                                 shadowProjector.anInt1674 = 0
                             }
@@ -1154,7 +1154,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             shadowProjector.method1027(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), class266.anInt3389, class266.anInt3387, class266.anInt3381)
                             shadowProjector.anInt1674 = 0
                         }
-                    } else shadowProjector.method1018(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), (class167.anInt2192))
+                    } else shadowProjector.method1018(i_122_.toFloat(), i_124_.toFloat(), i_128_.toFloat(), i_121_.toFloat(), i_123_.toFloat(), i_127_.toFloat(), f.toInt().toFloat(), f_118_.toInt().toFloat(), f_120_.toInt().toFloat(), (particleSystemState.anInt2192))
                 }
             }
         }
@@ -1198,10 +1198,10 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         /* empty */
     }
 
-    private fun method3993(i: Int, i_260_: Int, i_261_: Int, i_262_: Int, i_263_: Int, i_264_: Int, i_265_: Int, bools: Array<BooleanArray?>, class167: Class167, shadowProjector: ShadowProjector, `is`: IntArray, is_266_: IntArray) {
+    private fun method3993(i: Int, i_260_: Int, i_261_: Int, i_262_: Int, i_263_: Int, i_264_: Int, i_265_: Int, bools: Array<BooleanArray?>, particleSystemState: ParticleSystemState, shadowProjector: ShadowProjector, `is`: IntArray, is_266_: IntArray) {
         val i_267_ = (i_265_ - i_263_) * i_261_ / 256
         val i_268_ = i_261_ shr 8
-        val bool = class167.aBoolean2202
+        val bool = particleSystemState.aBoolean2202
         aHa_Sub1_8217.C(false)
         shadowProjector.aBoolean1669 = false
         shadowProjector.aBoolean1667 = false
@@ -1749,7 +1749,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         else if (aVertexNormalArrayArray8215 != null) method3996(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
     }
 
-    private fun method3995(i: Int, i_417_: Int, bool: Boolean, class167: Class167, shadowProjector: ShadowProjector, `is`: IntArray, is_418_: IntArray, is_419_: IntArray, is_420_: IntArray, i_421_: Int) {
+    private fun method3995(i: Int, i_417_: Int, bool: Boolean, particleSystemState: ParticleSystemState, shadowProjector: ShadowProjector, `is`: IntArray, is_418_: IntArray, is_419_: IntArray, is_420_: IntArray, i_421_: Int) {
         val class198 = aClass198ArrayArray8219!![i]!![i_417_]
         if (i_421_ == 0 || (i_421_ and 0x2) == 0) {
             if (class198 != null) {
@@ -1762,15 +1762,15 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         if (f <= aHa_Sub1_8217.anInt7482.toFloat()) return
                         is_420_[i_422_] = 0
                         if (bool) {
-                            var i_426_ = (f - (class167.anInt2210).toFloat()).toInt()
+                            var i_426_ = (f - (particleSystemState.anInt2210).toFloat()).toInt()
                             if (i_426_ > 255) i_426_ = 255
                             if (i_426_ > 0) {
                                 is_420_[i_422_] = i_426_
                                 val i_427_ = ((class198.aShortArray2621!![i_422_]) * i_426_ / 255)
                                 if (i_427_ > 0) i_424_ -= i_427_
                             }
-                        } else if (class167.aBoolean2201) {
-                            val i_428_ = (f - (class167.anInt2210).toFloat()).toInt()
+                        } else if (particleSystemState.aBoolean2201) {
+                            val i_428_ = (f - (particleSystemState.anInt2210).toFloat()).toInt()
                             if (i_428_ > 0) {
                                 is_420_[i_422_] = i_428_
                                 if (is_420_[i_422_] > 255) is_420_[i_422_] = 255
@@ -1790,15 +1790,15 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         val f = aFloat8218 + (aFloat8233 * i_432_.toFloat() + aFloat8227 * i_433_.toFloat() + aFloat8231 * i_434_.toFloat())
                         is_420_[i_431_] = 0
                         if (bool) {
-                            var i_435_ = anInt8228 - class167.anInt2210
+                            var i_435_ = anInt8228 - particleSystemState.anInt2210
                             if (i_435_ > 255) i_435_ = 255
                             if (i_435_ > 0) {
                                 is_420_[i_431_] = i_435_
                                 val i_436_ = ((class198.aShortArray2621!![i_431_]) * i_435_ / 255)
                                 if (i_436_ > 0) i_433_ -= i_436_
                             }
-                        } else if (class167.aBoolean2201) {
-                            val i_437_ = anInt8228 - class167.anInt2210
+                        } else if (particleSystemState.aBoolean2201) {
+                            val i_437_ = anInt8228 - particleSystemState.anInt2210
                             if (i_437_ > 0) {
                                 is_420_[i_431_] = i_437_
                                 if (is_420_[i_431_] > 255) is_420_[i_431_] = 255
@@ -1847,7 +1847,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     (class198.anIntArray2623!![i_441_]),
                                     (class198.anIntArray2623!![i_442_]),
                                     (class198.anIntArray2623!![i_443_]),
-                                    class167.anInt2192,
+                                    particleSystemState.anInt2192,
                                     is_420_[i_441_],
                                     is_420_[i_442_],
                                     is_420_[i_443_],
@@ -1872,7 +1872,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     (class198.anIntArray2623!![i_441_]),
                                     (class198.anIntArray2623!![i_442_]),
                                     (class198.anIntArray2623!![i_443_]),
-                                    class167.anInt2192,
+                                    particleSystemState.anInt2192,
                                     is_420_[i_441_],
                                     is_420_[i_442_],
                                     is_420_[i_443_],
@@ -1884,7 +1884,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f / (class198.aShortArray2614!![i_443_]).toFloat()
                                 )
                             }
-                        } else shadowProjector.method1018(i_447_.toFloat(), i_448_.toFloat(), i_449_.toFloat(), i_444_.toFloat(), i_445_.toFloat(), i_446_.toFloat(), is_419_[i_441_].toFloat(), is_419_[i_442_].toFloat(), is_419_[i_443_].toFloat(), (class167.anInt2192))
+                        } else shadowProjector.method1018(i_447_.toFloat(), i_448_.toFloat(), i_449_.toFloat(), i_444_.toFloat(), i_445_.toFloat(), i_446_.toFloat(), is_419_[i_441_].toFloat(), is_419_[i_442_].toFloat(), is_419_[i_443_].toFloat(), (particleSystemState.anInt2192))
                     }
                 }
             }
@@ -1895,10 +1895,10 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         method3992(i, i_452_, 0)
     }
 
-    private fun method3996(i: Int, i_453_: Int, i_454_: Int, i_455_: Int, i_456_: Int, i_457_: Int, i_458_: Int, bools: Array<BooleanArray?>, class167: Class167, shadowProjector: ShadowProjector, `is`: IntArray, is_459_: IntArray) {
+    private fun method3996(i: Int, i_453_: Int, i_454_: Int, i_455_: Int, i_456_: Int, i_457_: Int, i_458_: Int, bools: Array<BooleanArray?>, particleSystemState: ParticleSystemState, shadowProjector: ShadowProjector, `is`: IntArray, is_459_: IntArray) {
         val i_460_ = (i_458_ - i_456_) * i_454_ / 256
         val i_461_ = i_454_ shr 8
-        val bool = class167.aBoolean2202
+        val bool = particleSystemState.aBoolean2202
         aHa_Sub1_8217.C(false)
         shadowProjector.aBoolean1669 = false
         shadowProjector.aBoolean1667 = false

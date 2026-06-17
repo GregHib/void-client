@@ -2086,9 +2086,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         if (i != 1) {
             if (i != 0) {
                 if (i == 2) method3874(Class328_Sub3.aClass229_6519, 117, Class248.aClass229_3196)
-                else if (i == 3) method3874(Class167.aClass229_2207, 111, Class348_Sub23_Sub2.aClass229_9011)
+                else if (i == 3) method3874(ParticleSystemState.aClass229_2207, 111, Class348_Sub23_Sub2.aClass229_9011)
                 else if (i == 4) method3874(Class348_Sub7.aClass229_6644, 126, Class348_Sub7.aClass229_6644)
-            } else method3874(Class167.aClass229_2207, 120, Class167.aClass229_2207)
+            } else method3874(ParticleSystemState.aClass229_2207, 120, ParticleSystemState.aClass229_2207)
         } else method3874(Class328_Sub3.aClass229_6519, 127, Class328_Sub3.aClass229_6519)
         anInt8034++
     }
@@ -2161,8 +2161,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7889++
         var i_263_ = 0
         while (this.anInt8090 > i_263_) {
-            this.aClass229Array8092[i_263_] = Class167.aClass229_2207
-            this.aClass229Array8086[i_263_] = Class167.aClass229_2207
+            this.aClass229Array8092[i_263_] = ParticleSystemState.aClass229_2207
+            this.aClass229Array8086[i_263_] = ParticleSystemState.aClass229_2207
             this.aClass251Array8113[i_263_] = Class348_Sub42_Sub18.aClass251_9685
             this.aClass101_Sub2Array8131[i_263_] = FloatCameraTransform()
             i_263_++

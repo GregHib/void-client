@@ -42,7 +42,7 @@ class Class192 internal constructor(var aBoolean2574: Boolean) {
                 i_0_ = 0
                 i_1_ = 3
             } else {
-                i_1_ = Class167.anInt2204
+                i_1_ = ParticleSystemState.anInt2204
                 i_0_ = i_1_
             }
             Client.method115()

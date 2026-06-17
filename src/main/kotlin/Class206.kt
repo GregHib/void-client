@@ -1,4 +1,4 @@
-import Class167.Companion.method1296
+import ParticleSystemState.Companion.method1296
 import Class286_Sub3.Companion.method2148
 import Class348_Sub1_Sub3.Companion.method2732
 import Class348_Sub40_Sub15.Companion.method3086

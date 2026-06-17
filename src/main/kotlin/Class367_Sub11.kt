@@ -43,7 +43,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         anInt7408++
         this.aHa_Sub3_4479.method3897(1, -4382)
         this.aHa_Sub3_4479.method3850((-128).toByte(), null)
-        this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 116, Class167.aClass229_2207)
+        this.aHa_Sub3_4479.method3874(ParticleSystemState.aClass229_2207, 116, ParticleSystemState.aClass229_2207)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
         this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
         this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)

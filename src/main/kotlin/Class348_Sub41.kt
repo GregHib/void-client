@@ -91,11 +91,11 @@ class Class348_Sub41 : Class348() {
 
         fun method3157(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, bool: Boolean) {
             anInt7049++
-            if (bool || i_16_ != Renderer.anInt4581 || Class327.anInt4095 != i || (Class355.anInt4372 != Class167.anInt2204 && Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
+            if (bool || i_16_ != Renderer.anInt4581 || Class327.anInt4095 != i || (Class355.anInt4372 != ParticleSystemState.anInt2204 && Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
                 Renderer.anInt4581 = i_16_
                 Class327.anInt4095 = i
-                Class167.anInt2204 = Class355.anInt4372
-                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) Class167.anInt2204 = 0
+                ParticleSystemState.anInt2204 = Class355.anInt4372
+                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) ParticleSystemState.anInt2204 = 0
                 Class348_Sub49.method3379(2, i_17_)
                 Class362.method3511(true, GameAppletFrame.aClass324_20, Class246.aFontDefinition_3179, Class274.aClass274_3495!!.method2063(Class348_Sub33.Companion.anInt6967, 544), 2, Class348_Sub8.aRenderer6654)
                 val i_18_ = ArbVertexProgram.regionTileX

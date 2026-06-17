@@ -8,7 +8,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: 
         this.aHa_Sub3_4479.method3897(1, -4382)
         if (i.toInt() != 87) Companion.method3549(-29, (-5).toByte())
         anInt7364++
-        this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 120, Class167.aClass229_2207)
+        this.aHa_Sub3_4479.method3874(ParticleSystemState.aClass229_2207, 120, ParticleSystemState.aClass229_2207)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
         this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
         this.aHa_Sub3_4479.method3910((-26).toByte(), 1)
@@ -59,7 +59,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: 
 
     override fun method3521(bool: Boolean, i: Byte) {
         if (i.toInt() != -103) anInt7365 = 86
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), i.toInt() xor 0x17.inv(), Class167.aClass229_2207)
+        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), i.toInt() xor 0x17.inv(), ParticleSystemState.aClass229_2207)
         anInt7357++
     }
 

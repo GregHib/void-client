@@ -309,7 +309,7 @@ class Class348_Sub32 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Su
         fun method3021(i: Byte, class229: Class229?): Int {
             anInt6931++
             if (class229 != Class328_Sub3.aClass229_6519) {
-                if (Class167.aClass229_2207 == class229) return 8448
+                if (ParticleSystemState.aClass229_2207 == class229) return 8448
                 if (class229 == Class248.aClass229_3196) return 34165
                 if (Class348_Sub23_Sub2.aClass229_9011 == class229) return 260
                 if (class229 == Class348_Sub7.aClass229_6644) return 34023

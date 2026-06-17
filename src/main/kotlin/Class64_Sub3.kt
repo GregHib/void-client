@@ -427,7 +427,7 @@ class Class64_Sub3 : Class64 {
                     val f = (((anIntArray5543!![class118.anInt1782]) + ((anIntArray5543!![class118.anInt1788]) + (anIntArray5543!![class118.anInt1781]))).toFloat() * 0.3333333f)
                     val f_90_ = (((anIntArray5593!![class118.anInt1788]) + ((anIntArray5593!![class118.anInt1781]) + (anIntArray5593!![class118.anInt1782]))).toFloat() * 0.3333333f)
                     val f_91_ = (((anIntArray5644!![class118.anInt1788]) + (anIntArray5644!![class118.anInt1781]) + (anIntArray5644!![class118.anInt1782])).toFloat() * 0.3333333f)
-                    val f_92_ = (Class190.aFloat2555 + (f_91_ * Class313.aFloat3935 + (f_90_ * Class299_Sub1_Sub1.aFloat8696 + Class167.aFloat2203 * f)))
+                    val f_92_ = (Class190.aFloat2555 + (f_91_ * Class313.aFloat3935 + (f_90_ * Class299_Sub1_Sub1.aFloat8696 + ParticleSystemState.aFloat2203 * f)))
                     val f_93_ = (LinkedListIterator.aFloat2111 + (Class215.aFloat2836 * f_91_ + (f_90_ * Class252.aFloat3242 + Class314.aFloat3943 * f)))
                     val f_94_ = (f * Class318_Sub9_Sub1.aFloat8784 + f_90_ * Class320.aFloat3994 + f_91_ * Class286_Sub8.aFloat6304 + Class49.aFloat4720)
                     val f_95_ = ((1.0 / sqrt((f_94_ * f_94_ + (f_93_ * f_93_ + (f_92_ * f_92_))).toDouble())).toFloat() * class118.anInt1784.toFloat())
@@ -498,7 +498,7 @@ class Class64_Sub3 : Class64 {
             Class252.aFloat3242 = ((class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5750) + (class101_sub3_112_.aFloat5769 * class101_sub3.aFloat5769) + (class101_sub3_112_.aFloat5762 * class101_sub3.aFloat5754))
             Class314.aFloat3943 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5762) + ((class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5769) + (class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5770)))
             Class313.aFloat3935 = ((class101_sub3_112_.aFloat5750 * class101_sub3.aFloat5762) + (class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5781) + (class101_sub3.aFloat5784 * class101_sub3_112_.aFloat5781))
-            Class167.aFloat2203 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5781) + ((class101_sub3.aFloat5770 * class101_sub3_112_.aFloat5770) + (class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5750)))
+            ParticleSystemState.aFloat2203 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5781) + ((class101_sub3.aFloat5770 * class101_sub3_112_.aFloat5770) + (class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5750)))
             Class320.aFloat3994 = ((class101_sub3_112_.aFloat5784 * class101_sub3.aFloat5754) + ((class101_sub3.aFloat5769 * class101_sub3_112_.aFloat5754) + (class101_sub3.aFloat5750 * class101_sub3_112_.aFloat5756)))
             var bool_115_ = false
             var f_116_ = 3.4028235E38f
@@ -551,7 +551,7 @@ class Class64_Sub3 : Class64 {
                 val f_137_ = Class318_Sub2.anIntArray6393!![i_134_].toFloat()
                 var f_138_ = (Class286_Sub8.aFloat6304 * f_135_ + (f_137_ * Class318_Sub9_Sub1.aFloat8784 + Class320.aFloat3994 * f_136_) + f_114_)
                 val f_139_ = f_113_ + (Class314.aFloat3943 * f_137_ + Class252.aFloat3242 * f_136_ + Class215.aFloat2836 * f_135_)
-                val f_140_ = f + (Class299_Sub1_Sub1.aFloat8696 * f_136_ + f_137_ * Class167.aFloat2203 + Class313.aFloat3935 * f_135_)
+                val f_140_ = f + (Class299_Sub1_Sub1.aFloat8696 * f_136_ + f_137_ * ParticleSystemState.aFloat2203 + Class313.aFloat3935 * f_135_)
                 if (aHa_Sub2_5598.anInt7826.toFloat() <= f_138_) {
                     if (i_108_ > 0) f_138_ = i_108_.toFloat()
                     val f_141_ = (f_140_ * i_120_.toFloat() / f_138_ + aHa_Sub2_5598.anInt7853.toFloat())
@@ -576,7 +576,7 @@ class Class64_Sub3 : Class64 {
                     val f_146_ = anIntArray5644!![i_144_].toFloat()
                     val f_147_ = anIntArray5593!![i_144_].toFloat()
                     var f_148_ = f_114_ + (f_146_ * Class286_Sub8.aFloat6304 + (Class318_Sub9_Sub1.aFloat8784 * f_145_ + f_147_ * Class320.aFloat3994))
-                    val f_149_ = f + (f_147_ * Class299_Sub1_Sub1.aFloat8696 + f_145_ * Class167.aFloat2203 + Class313.aFloat3935 * f_146_)
+                    val f_149_ = f + (f_147_ * Class299_Sub1_Sub1.aFloat8696 + f_145_ * ParticleSystemState.aFloat2203 + Class313.aFloat3935 * f_146_)
                     val f_150_ = f_113_ + (Class252.aFloat3242 * f_147_ + f_145_ * Class314.aFloat3943 + f_146_ * Class215.aFloat2836)
                     if (f_148_ >= aHa_Sub2_5598.anInt7826.toFloat()) {
                         if (i_108_ > 0) f_148_ = i_108_.toFloat()
@@ -1146,15 +1146,15 @@ class Class64_Sub3 : Class64 {
                                 Class318_Sub9_Sub1.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_236_.aFloat5756)) + ((class101_sub3_236_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_236_.aFloat5761))))
                                 Class215.aFloat2836 = (((class101_sub3_236_.aFloat5762) * (class101_sub3.aFloat5769)) + ((class101_sub3_236_.aFloat5781) * (class101_sub3.aFloat5761)) + ((class101_sub3.aFloat5762) * class101_sub3_236_.aFloat5784))
                                 Class286_Sub8.aFloat6304 = (((class101_sub3.aFloat5784) * (class101_sub3_236_.aFloat5784)) + ((class101_sub3_236_.aFloat5762 * (class101_sub3.aFloat5754)) + (class101_sub3_236_.aFloat5781 * (class101_sub3.aFloat5756))))
-                                Class167.aFloat2203 = (((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5781)) + ((class101_sub3_236_.aFloat5761 * (class101_sub3.aFloat5750)) + (class101_sub3_236_.aFloat5770 * (class101_sub3.aFloat5770))))
+                                ParticleSystemState.aFloat2203 = (((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5781)) + ((class101_sub3_236_.aFloat5761 * (class101_sub3.aFloat5750)) + (class101_sub3_236_.aFloat5770 * (class101_sub3.aFloat5770))))
                             }
                             if (class318_sub3 != null) {
                                 val i_248_ = aShort5586 + aShort5540 shr 1
                                 val i_249_ = aShort5617 + aShort5646 shr 1
-                                val i_250_ = ((aShort5591.toFloat() * Class299_Sub1_Sub1.aFloat8696) + ((i_248_.toFloat() * Class167.aFloat2203) + Class190.aFloat2555) + (Class313.aFloat3935 * i_249_.toFloat())).toInt()
+                                val i_250_ = ((aShort5591.toFloat() * Class299_Sub1_Sub1.aFloat8696) + ((i_248_.toFloat() * ParticleSystemState.aFloat2203) + Class190.aFloat2555) + (Class313.aFloat3935 * i_249_.toFloat())).toInt()
                                 val i_251_ = (LinkedListIterator.aFloat2111 + (i_248_.toFloat() * Class314.aFloat3943) + (Class252.aFloat3242 * aShort5591.toFloat()) + (Class215.aFloat2836 * i_249_.toFloat())).toInt()
                                 val i_252_ = (Class49.aFloat4720 + (i_248_.toFloat() * (Class318_Sub9_Sub1.aFloat8784)) + (Class320.aFloat3994 * aShort5591.toFloat()) + (Class286_Sub8.aFloat6304 * i_249_.toFloat())).toInt()
-                                val i_253_ = ((Class313.aFloat3935 * i_249_.toFloat()) + ((Class299_Sub1_Sub1.aFloat8696 * aShort5629.toFloat()) + (Class190.aFloat2555 + (Class167.aFloat2203 * i_248_.toFloat())))).toInt()
+                                val i_253_ = ((Class313.aFloat3935 * i_249_.toFloat()) + ((Class299_Sub1_Sub1.aFloat8696 * aShort5629.toFloat()) + (Class190.aFloat2555 + (ParticleSystemState.aFloat2203 * i_248_.toFloat())))).toInt()
                                 val i_254_ = (LinkedListIterator.aFloat2111 + (Class314.aFloat3943 * i_248_.toFloat()) + (Class252.aFloat3242 * aShort5629.toFloat()) + (i_249_.toFloat() * Class215.aFloat2836)).toInt()
                                 class318_sub3.anInt6405 = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i))
                                 class318_sub3.anInt6402 = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810)
@@ -1648,7 +1648,7 @@ class Class64_Sub3 : Class64 {
                                 Class318_Sub9_Sub1.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_350_.aFloat5756)) + ((class101_sub3_350_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_350_.aFloat5761))))
                                 Class313.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_350_.aFloat5784)) + ((class101_sub3_350_.aFloat5762 * (class101_sub3.aFloat5750)) + (class101_sub3_350_.aFloat5781 * (class101_sub3.aFloat5770))))
                                 Class314.aFloat3943 = (((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5770)) + ((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5769)) + ((class101_sub3_350_.aFloat5756) * (class101_sub3.aFloat5762)))
-                                Class167.aFloat2203 = (((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5750)) + ((class101_sub3.aFloat5770) * class101_sub3_350_.aFloat5770) + ((class101_sub3.aFloat5781) * class101_sub3_350_.aFloat5756))
+                                ParticleSystemState.aFloat2203 = (((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5750)) + ((class101_sub3.aFloat5770) * class101_sub3_350_.aFloat5770) + ((class101_sub3.aFloat5781) * class101_sub3_350_.aFloat5756))
                                 Class215.aFloat2836 = (((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5762)) + (((class101_sub3.aFloat5769) * class101_sub3_350_.aFloat5762) + ((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5781))))
                             }
                             if (class318_sub3 != null) {
@@ -1656,14 +1656,14 @@ class Class64_Sub3 : Class64 {
                                 var bool_362_ = true
                                 val i_363_ = aShort5540 - -aShort5586 shr 1
                                 val i_364_ = aShort5617 - -aShort5646 shr 1
-                                val i_365_ = ((i_364_.toFloat() * Class313.aFloat3935) + ((Class167.aFloat2203 * i_363_.toFloat()) + Class190.aFloat2555 + (aShort5591.toFloat() * (Class299_Sub1_Sub1.aFloat8696)))).toInt()
+                                val i_365_ = ((i_364_.toFloat() * Class313.aFloat3935) + ((ParticleSystemState.aFloat2203 * i_363_.toFloat()) + Class190.aFloat2555 + (aShort5591.toFloat() * (Class299_Sub1_Sub1.aFloat8696)))).toInt()
                                 val i_366_ = (LinkedListIterator.aFloat2111 + (i_363_.toFloat() * Class314.aFloat3943) + (aShort5591.toFloat() * Class252.aFloat3242) + (i_364_.toFloat() * Class215.aFloat2836)).toInt()
                                 val i_367_ = ((Class318_Sub9_Sub1.aFloat8784 * i_363_.toFloat()) + Class49.aFloat4720 + (Class320.aFloat3994 * aShort5591.toFloat()) + (Class286_Sub8.aFloat6304 * i_364_.toFloat())).toInt()
                                 if (aHa_Sub2_5598.anInt7826 <= i_367_) {
                                     class318_sub3.anInt6405 = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853))
                                     class318_sub3.anInt6402 = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810))
                                 } else bool = true
-                                val i_368_ = (Class190.aFloat2555 + (Class167.aFloat2203 * i_363_.toFloat()) + (Class299_Sub1_Sub1.aFloat8696 * aShort5629.toFloat()) + (Class313.aFloat3935 * i_364_.toFloat())).toInt()
+                                val i_368_ = (Class190.aFloat2555 + (ParticleSystemState.aFloat2203 * i_363_.toFloat()) + (Class299_Sub1_Sub1.aFloat8696 * aShort5629.toFloat()) + (Class313.aFloat3935 * i_364_.toFloat())).toInt()
                                 val i_369_ = ((i_364_.toFloat() * Class215.aFloat2836) + ((Class252.aFloat3242 * aShort5629.toFloat()) + (LinkedListIterator.aFloat2111 + (Class314.aFloat3943 * i_363_.toFloat())))).toInt()
                                 val i_370_ = ((Class286_Sub8.aFloat6304 * i_364_.toFloat()) + ((i_363_.toFloat() * (Class318_Sub9_Sub1.aFloat8784)) + Class49.aFloat4720 + (aShort5629.toFloat() * Class320.aFloat3994))).toInt()
                                 if (i_370_ >= aHa_Sub2_5598.anInt7826) {

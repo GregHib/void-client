@@ -56,7 +56,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
         if (i.toInt() != 87) method3527(55, null, -69)
         this.aHa_Sub3_4479.method3897(1, -4382)
         this.aHa_Sub3_4479.method3850(82.toByte(), null)
-        this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, i + 25, Class167.aClass229_2207)
+        this.aHa_Sub3_4479.method3874(ParticleSystemState.aClass229_2207, i + 25, ParticleSystemState.aClass229_2207)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
         this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
         this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)

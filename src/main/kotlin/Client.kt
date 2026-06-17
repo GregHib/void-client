@@ -69,7 +69,7 @@ import RectangleBounds.Companion.method1267
 import AudioResampler.Companion.method1269
 import AudioResampler.Companion.method1276
 import ItemDefinitionLoader.Companion.method1284
-import Class167.Companion.method1293
+import ParticleSystemState.Companion.method1293
 import Class168.method1298
 import Class17.Companion.method265
 import Class170.Companion.method1309

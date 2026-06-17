@@ -34,7 +34,7 @@ class Class64_Sub1 : Class64 {
     private var aShortArray5333: ShortArray? = null
     private var anIntArrayArray5334: Array<IntArray?>? = null
     private var aClass342Array5335: Array<Class342?>? = null
-    private var aClass167_5336: Class167? = null
+    private var aParticleSystemState_5336: ParticleSystemState? = null
     private var anIntArray5337: IntArray? = null
     private var anInt5338 = 0
     private var aClass64_Sub1_5339: Class64_Sub1? = null
@@ -62,7 +62,7 @@ class Class64_Sub1 : Class64 {
     private lateinit var aShortArray5364: ShortArray
     private var aShort5365: Short = 0
     private var anIntArray5366: IntArray? = null
-    private var aClass167_5367: Class167? = null
+    private var aParticleSystemState_5367: ParticleSystemState? = null
     private var anIntArray5368: IntArray? = null
     private var aBoolean5369: Boolean
     private var aShortArray5370: ShortArray? = null
@@ -122,27 +122,27 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method632(thread: Thread?) {
-        val class167: Class167 = aHa_Sub1_5353.method3724(thread)!!
-        aShadowProjector_5383 = class167.aShadowProjector_2220
-        if (class167 != aClass167_5367) {
-            aClass167_5367 = class167
-            anIntArray5362 = aClass167_5367!!.anIntArray2222!!
-            anIntArray5399 = aClass167_5367!!.anIntArray2244!!
-            anIntArray5384 = aClass167_5367!!.anIntArray2214!!
-            anIntArray5392 = aClass167_5367!!.anIntArray2237!!
-            anIntArray5321 = aClass167_5367!!.anIntArray2234!!
-            anIntArray5343 = aClass167_5367!!.anIntArray2230!!
-            anIntArray5355 = aClass167_5367!!.anIntArray2213!!
-            anIntArray5359 = aClass167_5367!!.anIntArray2218!!
-            anIntArray5373 = aClass167_5367!!.anIntArray2241!!
-            anIntArray5398 = aClass167_5367!!.anIntArray2245!!
-            anIntArray5315 = aClass167_5367!!.anIntArray2238!!
-            anIntArray5371 = aClass167_5367!!.anIntArray2247!!
-            anIntArray5381 = aClass167_5367!!.anIntArray2235!!
-            anIntArray5377 = aClass167_5367!!.anIntArray2240!!
-            anIntArray5326 = aClass167_5367!!.anIntArray2236!!
-            anIntArray5318 = aClass167_5367!!.anIntArray2216!!
-            anIntArray5400 = aClass167_5367!!.anIntArray2242!!
+        val particleSystemState: ParticleSystemState = aHa_Sub1_5353.method3724(thread)!!
+        aShadowProjector_5383 = particleSystemState.aShadowProjector_2220
+        if (particleSystemState != aParticleSystemState_5367) {
+            aParticleSystemState_5367 = particleSystemState
+            anIntArray5362 = aParticleSystemState_5367!!.anIntArray2222!!
+            anIntArray5399 = aParticleSystemState_5367!!.anIntArray2244!!
+            anIntArray5384 = aParticleSystemState_5367!!.anIntArray2214!!
+            anIntArray5392 = aParticleSystemState_5367!!.anIntArray2237!!
+            anIntArray5321 = aParticleSystemState_5367!!.anIntArray2234!!
+            anIntArray5343 = aParticleSystemState_5367!!.anIntArray2230!!
+            anIntArray5355 = aParticleSystemState_5367!!.anIntArray2213!!
+            anIntArray5359 = aParticleSystemState_5367!!.anIntArray2218!!
+            anIntArray5373 = aParticleSystemState_5367!!.anIntArray2241!!
+            anIntArray5398 = aParticleSystemState_5367!!.anIntArray2245!!
+            anIntArray5315 = aParticleSystemState_5367!!.anIntArray2238!!
+            anIntArray5371 = aParticleSystemState_5367!!.anIntArray2247!!
+            anIntArray5381 = aParticleSystemState_5367!!.anIntArray2235!!
+            anIntArray5377 = aParticleSystemState_5367!!.anIntArray2240!!
+            anIntArray5326 = aParticleSystemState_5367!!.anIntArray2236!!
+            anIntArray5318 = aParticleSystemState_5367!!.anIntArray2216!!
+            anIntArray5400 = aParticleSystemState_5367!!.anIntArray2242!!
         }
     }
 
@@ -428,7 +428,7 @@ class Class64_Sub1 : Class64 {
                     i_43_,
                     i_43_,
                     i_43_,
-                    aClass167_5367!!.anInt2192,
+                    aParticleSystemState_5367!!.anInt2192,
                     0,
                     0,
                     0,
@@ -453,7 +453,7 @@ class Class64_Sub1 : Class64 {
                 i_42_ or (anIntArray5368!![i] and 0xffffff),
                 i_42_ or (anIntArray5337!![i] and 0xffffff),
                 i_42_ or (anIntArray5366!![i] and 0xffffff),
-                (aClass167_5367!!.anInt2192),
+                (aParticleSystemState_5367!!.anInt2192),
                 0,
                 0,
                 0,
@@ -1469,7 +1469,7 @@ class Class64_Sub1 : Class64 {
                 val i_335_ = i_324_ * i_329_ - i_327_ * i_326_
                 if (i_325_ * i_333_ + i_328_ * i_334_ + i_331_ * i_335_ > 0) method646(i)
             } else if (anIntArray5400!![i] != -1 || ((i_321_ - i_322_) * (anIntArray5343[i_320_.toInt()] - anIntArray5343[i_319_.toInt()]) - ((anIntArray5343[i_318_.toInt()] - anIntArray5343[i_319_.toInt()]) * (i_323_ - i_322_))) > 0) {
-                aShadowProjector_5383!!.aBoolean1671 = i_321_ < 0 || i_322_ < 0 || i_323_ < 0 || i_321_ > aClass167_5367!!.anInt2221 || i_322_ > aClass167_5367!!.anInt2221 || i_323_ > aClass167_5367!!.anInt2221
+                aShadowProjector_5383!!.aBoolean1671 = i_321_ < 0 || i_322_ < 0 || i_323_ < 0 || i_321_ > aParticleSystemState_5367!!.anInt2221 || i_322_ > aParticleSystemState_5367!!.anInt2221 || i_323_ > aParticleSystemState_5367!!.anInt2221
                 if (bool_317_) {
                     val i_336_ = anIntArray5400!![i]
                     if (i_336_ == -1 || !aClass6Array5361!![i_336_]!!.aBoolean145) method658(i)
@@ -2009,15 +2009,15 @@ class Class64_Sub1 : Class64 {
             val i_550_ = anIntArray5368!![i] and 0xffff
             if (i_547_ >= i_541_) {
                 val i_551_ = (i_541_ - i_545_) * (65536 / (i_547_ - i_545_))
-                anIntArray5315[i_540_] = (aClass167_5367!!.anInt2229 + ((i_548_ + ((anIntArray5399[i_544_.toInt()] - i_548_) * i_551_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
-                anIntArray5371[i_540_] = (aClass167_5367!!.anInt2215 + ((i_549_ + ((anIntArray5384[i_544_.toInt()] - i_549_) * i_551_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
+                anIntArray5315[i_540_] = (aParticleSystemState_5367!!.anInt2229 + ((i_548_ + ((anIntArray5399[i_544_.toInt()] - i_548_) * i_551_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
+                anIntArray5371[i_540_] = (aParticleSystemState_5367!!.anInt2215 + ((i_549_ + ((anIntArray5384[i_544_.toInt()] - i_549_) * i_551_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
                 anIntArray5381[i_540_] = i_541_
                 anIntArray5377[i_540_++] = (i_550_ + (((anIntArray5366!![i] and 0xffff) - i_550_) * i_551_ shr 16))
             }
             if (i_546_ >= i_541_) {
                 val i_552_ = (i_541_ - i_545_) * (65536 / (i_546_ - i_545_))
-                anIntArray5315[i_540_] = (aClass167_5367!!.anInt2229 + ((i_548_ + ((anIntArray5399[i_543_.toInt()] - i_548_) * i_552_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
-                anIntArray5371[i_540_] = (aClass167_5367!!.anInt2215 + ((i_549_ + ((anIntArray5384[i_543_.toInt()] - i_549_) * i_552_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
+                anIntArray5315[i_540_] = (aParticleSystemState_5367!!.anInt2229 + ((i_548_ + ((anIntArray5399[i_543_.toInt()] - i_548_) * i_552_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
+                anIntArray5371[i_540_] = (aParticleSystemState_5367!!.anInt2215 + ((i_549_ + ((anIntArray5384[i_543_.toInt()] - i_549_) * i_552_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
                 anIntArray5381[i_540_] = i_541_
                 anIntArray5377[i_540_++] = (i_550_ + (((anIntArray5337!![i] and 0xffff) - i_550_) * i_552_ shr 16))
             }
@@ -2033,15 +2033,15 @@ class Class64_Sub1 : Class64 {
             val i_555_ = anIntArray5337!![i] and 0xffff
             if (i_545_ >= i_541_) {
                 val i_556_ = (i_541_ - i_546_) * (65536 / (i_545_ - i_546_))
-                anIntArray5315[i_540_] = (aClass167_5367!!.anInt2229 + ((i_553_ + ((anIntArray5399[i_542_.toInt()] - i_553_) * i_556_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
-                anIntArray5371[i_540_] = (aClass167_5367!!.anInt2215 + ((i_554_ + ((anIntArray5384[i_542_.toInt()] - i_554_) * i_556_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
+                anIntArray5315[i_540_] = (aParticleSystemState_5367!!.anInt2229 + ((i_553_ + ((anIntArray5399[i_542_.toInt()] - i_553_) * i_556_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
+                anIntArray5371[i_540_] = (aParticleSystemState_5367!!.anInt2215 + ((i_554_ + ((anIntArray5384[i_542_.toInt()] - i_554_) * i_556_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
                 anIntArray5381[i_540_] = i_541_
                 anIntArray5377[i_540_++] = (i_555_ + (((anIntArray5368!![i] and 0xffff) - i_555_) * i_556_ shr 16))
             }
             if (i_547_ >= i_541_) {
                 val i_557_ = (i_541_ - i_546_) * (65536 / (i_547_ - i_546_))
-                anIntArray5315[i_540_] = (aClass167_5367!!.anInt2229 + ((i_553_ + ((anIntArray5399[i_544_.toInt()] - i_553_) * i_557_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
-                anIntArray5371[i_540_] = (aClass167_5367!!.anInt2215 + ((i_554_ + ((anIntArray5384[i_544_.toInt()] - i_554_) * i_557_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
+                anIntArray5315[i_540_] = (aParticleSystemState_5367!!.anInt2229 + ((i_553_ + ((anIntArray5399[i_544_.toInt()] - i_553_) * i_557_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
+                anIntArray5371[i_540_] = (aParticleSystemState_5367!!.anInt2215 + ((i_554_ + ((anIntArray5384[i_544_.toInt()] - i_554_) * i_557_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
                 anIntArray5381[i_540_] = i_541_
                 anIntArray5377[i_540_++] = (i_555_ + (((anIntArray5366!![i] and 0xffff) - i_555_) * i_557_ shr 16))
             }
@@ -2057,15 +2057,15 @@ class Class64_Sub1 : Class64 {
             val i_560_ = anIntArray5366!![i] and 0xffff
             if (i_546_ >= i_541_) {
                 val i_561_ = (i_541_ - i_547_) * (65536 / (i_546_ - i_547_))
-                anIntArray5315[i_540_] = (aClass167_5367!!.anInt2229 + ((i_558_ + ((anIntArray5399[i_543_.toInt()] - i_558_) * i_561_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
-                anIntArray5371[i_540_] = (aClass167_5367!!.anInt2215 + ((i_559_ + ((anIntArray5384[i_543_.toInt()] - i_559_) * i_561_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
+                anIntArray5315[i_540_] = (aParticleSystemState_5367!!.anInt2229 + ((i_558_ + ((anIntArray5399[i_543_.toInt()] - i_558_) * i_561_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
+                anIntArray5371[i_540_] = (aParticleSystemState_5367!!.anInt2215 + ((i_559_ + ((anIntArray5384[i_543_.toInt()] - i_559_) * i_561_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
                 anIntArray5381[i_540_] = i_541_
                 anIntArray5377[i_540_++] = (i_560_ + (((anIntArray5337!![i] and 0xffff) - i_560_) * i_561_ shr 16))
             }
             if (i_545_ >= i_541_) {
                 val i_562_ = (i_541_ - i_547_) * (65536 / (i_545_ - i_547_))
-                anIntArray5315[i_540_] = (aClass167_5367!!.anInt2229 + ((i_558_ + ((anIntArray5399[i_542_.toInt()] - i_558_) * i_562_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
-                anIntArray5371[i_540_] = (aClass167_5367!!.anInt2215 + ((i_559_ + ((anIntArray5384[i_542_.toInt()] - i_559_) * i_562_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
+                anIntArray5315[i_540_] = (aParticleSystemState_5367!!.anInt2229 + ((i_558_ + ((anIntArray5399[i_542_.toInt()] - i_558_) * i_562_ shr 16)) * aHa_Sub1_5353.anInt7491 / i_541_))
+                anIntArray5371[i_540_] = (aParticleSystemState_5367!!.anInt2215 + ((i_559_ + ((anIntArray5384[i_542_.toInt()] - i_559_) * i_562_ shr 16)) * aHa_Sub1_5353.anInt7497 / i_541_))
                 anIntArray5381[i_540_] = i_541_
                 anIntArray5377[i_540_++] = (i_560_ + (((anIntArray5368!![i] and 0xffff) - i_560_) * i_562_ shr 16))
             }
@@ -2081,7 +2081,7 @@ class Class64_Sub1 : Class64 {
         i_547_ = anIntArray5381[2]
         aShadowProjector_5383!!.aBoolean1671 = false
         if (i_540_ == 3) {
-            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aClass167_5367!!.anInt2221 || i_564_ > aClass167_5367!!.anInt2221 || i_565_ > aClass167_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
+            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aParticleSystemState_5367!!.anInt2221 || i_564_ > aParticleSystemState_5367!!.anInt2221 || i_565_ > aParticleSystemState_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
                 if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), (Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]))
                 else aShadowProjector_5383!!.method1022(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), anIntArray5377[0].toFloat(), anIntArray5377[1].toFloat(), anIntArray5377[2].toFloat())
@@ -2108,7 +2108,7 @@ class Class64_Sub1 : Class64 {
                     i_570_,
                     i_570_,
                     i_570_,
-                    (aClass167_5367!!.anInt2192),
+                    (aParticleSystemState_5367!!.anInt2192),
                     0,
                     0,
                     0,
@@ -2133,7 +2133,7 @@ class Class64_Sub1 : Class64 {
                     i_570_,
                     i_570_,
                     i_570_,
-                    (aClass167_5367!!.anInt2192),
+                    (aParticleSystemState_5367!!.anInt2192),
                     0,
                     0,
                     0,
@@ -2142,7 +2142,7 @@ class Class64_Sub1 : Class64 {
             }
         }
         if (i_540_ == 4) {
-            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aClass167_5367!!.anInt2221 || i_564_ > aClass167_5367!!.anInt2221 || i_565_ > aClass167_5367!!.anInt2221 || anIntArray5315[3] < 0 || anIntArray5315[3] > aClass167_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
+            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aParticleSystemState_5367!!.anInt2221 || i_564_ > aParticleSystemState_5367!!.anInt2221 || i_565_ > aParticleSystemState_5367!!.anInt2221 || anIntArray5315[3] < 0 || anIntArray5315[3] > aParticleSystemState_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
                 if (anIntArray5366!![i] == -1) {
                     val i_571_ = Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]
@@ -2176,7 +2176,7 @@ class Class64_Sub1 : Class64 {
                         i_573_,
                         i_573_,
                         i_573_,
-                        (aClass167_5367!!.anInt2192),
+                        (aParticleSystemState_5367!!.anInt2192),
                         0,
                         0,
                         0,
@@ -2201,7 +2201,7 @@ class Class64_Sub1 : Class64 {
                         i_573_,
                         i_573_,
                         i_573_,
-                        (aClass167_5367!!.anInt2192),
+                        (aParticleSystemState_5367!!.anInt2192),
                         0,
                         0,
                         0,
@@ -2227,7 +2227,7 @@ class Class64_Sub1 : Class64 {
                         i_573_,
                         i_573_,
                         i_573_,
-                        (aClass167_5367!!.anInt2192),
+                        (aParticleSystemState_5367!!.anInt2192),
                         0,
                         0,
                         0,
@@ -2252,7 +2252,7 @@ class Class64_Sub1 : Class64 {
                         i_573_,
                         i_573_,
                         i_573_,
-                        (aClass167_5367!!.anInt2192),
+                        (aParticleSystemState_5367!!.anInt2192),
                         0,
                         0,
                         0,
@@ -2273,19 +2273,19 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method648(thread: Thread?) {
-        val class167: Class167 = aHa_Sub1_5353.method3724(thread)!!
-        if (class167 != aClass167_5336) {
-            aClass167_5336 = class167
-            aClass64_Sub1_5378 = aClass167_5336!!.aClass64_Sub1_2243
-            aClass64_Sub1_5339 = aClass167_5336!!.aClass64_Sub1_2224
-            aClass64_Sub1_5396 = aClass167_5336!!.aClass64_Sub1_2219
-            aClass64_Sub1_5347 = aClass167_5336!!.aClass64_Sub1_2239
-            aClass64_Sub1_5390 = aClass167_5336!!.aClass64_Sub1_2233
-            aClass64_Sub1_5374 = aClass167_5336!!.aClass64_Sub1_2231
-            aClass64_Sub1_5328 = aClass167_5336!!.aClass64_Sub1_2223
-            aClass64_Sub1_5376 = aClass167_5336!!.aClass64_Sub1_2227
-            aClass64_Sub1_5397 = aClass167_5336!!.aClass64_Sub1_2246
-            aClass64_Sub1_5319 = aClass167_5336!!.aClass64_Sub1_2225
+        val particleSystemState: ParticleSystemState = aHa_Sub1_5353.method3724(thread)!!
+        if (particleSystemState != aParticleSystemState_5336) {
+            aParticleSystemState_5336 = particleSystemState
+            aClass64_Sub1_5378 = aParticleSystemState_5336!!.aClass64_Sub1_2243
+            aClass64_Sub1_5339 = aParticleSystemState_5336!!.aClass64_Sub1_2224
+            aClass64_Sub1_5396 = aParticleSystemState_5336!!.aClass64_Sub1_2219
+            aClass64_Sub1_5347 = aParticleSystemState_5336!!.aClass64_Sub1_2239
+            aClass64_Sub1_5390 = aParticleSystemState_5336!!.aClass64_Sub1_2233
+            aClass64_Sub1_5374 = aParticleSystemState_5336!!.aClass64_Sub1_2231
+            aClass64_Sub1_5328 = aParticleSystemState_5336!!.aClass64_Sub1_2223
+            aClass64_Sub1_5376 = aParticleSystemState_5336!!.aClass64_Sub1_2227
+            aClass64_Sub1_5397 = aParticleSystemState_5336!!.aClass64_Sub1_2246
+            aClass64_Sub1_5319 = aParticleSystemState_5336!!.aClass64_Sub1_2225
         }
     }
 
@@ -2729,9 +2729,9 @@ class Class64_Sub1 : Class64 {
                 var bool_656_ = false
                 val bool_657_ = i_636_ <= aHa_Sub1_5353.anInt7482
                 val bool_658_ = (bool_657_ || aModelFacePriorityNodeArray5322 != null || aClass342Array5335 != null)
-                aClass167_5367!!.anInt2221 = aShadowProjector_5383!!.anInt1679
-                aClass167_5367!!.anInt2229 = aShadowProjector_5383!!.anInt1665
-                aClass167_5367!!.anInt2215 = aShadowProjector_5383!!.anInt1668
+                aParticleSystemState_5367!!.anInt2221 = aShadowProjector_5383!!.anInt1679
+                aParticleSystemState_5367!!.anInt2229 = aShadowProjector_5383!!.anInt1665
+                aParticleSystemState_5367!!.anInt2215 = aShadowProjector_5383!!.anInt1668
                 val i_659_ = aHa_Sub1_5353.anInt7491
                 val i_660_ = aHa_Sub1_5353.anInt7497
                 val i_661_ = aHa_Sub1_5353.anInt7482
@@ -2745,8 +2745,8 @@ class Class64_Sub1 : Class64 {
                         val f_668_ = (f + f_652_ * i_663_.toFloat() + f_633_ * i_664_.toFloat() + f_655_ * i_665_.toFloat())
                         anIntArray5355[i_662_] = f_668_.toInt()
                         if (f_668_ >= i_661_.toFloat()) {
-                            anIntArray5321[i_662_] = (aClass167_5367!!.anInt2229 + (f_666_ * i_659_.toFloat() / f_668_).toInt())
-                            anIntArray5343[i_662_] = (aClass167_5367!!.anInt2215 + (f_667_ * i_660_.toFloat() / f_668_).toInt())
+                            anIntArray5321[i_662_] = (aParticleSystemState_5367!!.anInt2229 + (f_666_ * i_659_.toFloat() / f_668_).toInt())
+                            anIntArray5343[i_662_] = (aParticleSystemState_5367!!.anInt2215 + (f_667_ * i_660_.toFloat() / f_668_).toInt())
                         } else {
                             anIntArray5321[i_662_] = -5000
                             bool_656_ = true
@@ -2756,7 +2756,7 @@ class Class64_Sub1 : Class64 {
                             anIntArray5384[i_662_] = f_667_.toInt()
                             anIntArray5392[i_662_] = f_668_.toInt()
                         }
-                        if (aClass167_5367!!.aBoolean2195) anIntArray5362[i_662_] = ((aClass101_Sub1_5320!!.aFloat5685) + ((aClass101_Sub1_5320!!.aFloat5655 * i_663_.toFloat()) + (aClass101_Sub1_5320!!.aFloat5678 * i_664_.toFloat()) + (aClass101_Sub1_5320!!.aFloat5666 * i_665_.toFloat()))).toInt()
+                        if (aParticleSystemState_5367!!.aBoolean2195) anIntArray5362[i_662_] = ((aClass101_Sub1_5320!!.aFloat5685) + ((aClass101_Sub1_5320!!.aFloat5655 * i_663_.toFloat()) + (aClass101_Sub1_5320!!.aFloat5678 * i_664_.toFloat()) + (aClass101_Sub1_5320!!.aFloat5666 * i_665_.toFloat()))).toInt()
                     }
                     if (aClass6Array5361 != null) {
                         for (i_669_ in 0..<anInt5389) {
@@ -2792,14 +2792,14 @@ class Class64_Sub1 : Class64 {
                         val f_684_ = (f_644_ + f_651_ * i_680_.toFloat() + f_645_ * i_681_.toFloat() + f_654_ * i_682_.toFloat())
                         val f_685_ = (f + f_652_ * i_680_.toFloat() + f_633_ * i_681_.toFloat() + f_655_ * i_682_.toFloat())
                         anIntArray5355[i_679_] = f_685_.toInt()
-                        anIntArray5321[i_679_] = (aClass167_5367!!.anInt2229 + (f_683_ * i_659_.toFloat() / i.toFloat()).toInt())
-                        anIntArray5343[i_679_] = (aClass167_5367!!.anInt2215 + (f_684_ * i_660_.toFloat() / i.toFloat()).toInt())
+                        anIntArray5321[i_679_] = (aParticleSystemState_5367!!.anInt2229 + (f_683_ * i_659_.toFloat() / i.toFloat()).toInt())
+                        anIntArray5343[i_679_] = (aParticleSystemState_5367!!.anInt2215 + (f_684_ * i_660_.toFloat() / i.toFloat()).toInt())
                         if (bool_658_) {
                             anIntArray5399[i_679_] = f_683_.toInt()
                             anIntArray5384[i_679_] = f_684_.toInt()
                             anIntArray5392[i_679_] = i
                         }
-                        if (aClass167_5367!!.aBoolean2195) anIntArray5362[i_679_] = ((aClass101_Sub1_5320!!.aFloat5685) + ((aClass101_Sub1_5320!!.aFloat5655 * i_680_.toFloat()) + (aClass101_Sub1_5320!!.aFloat5678 * i_681_.toFloat()) + (aClass101_Sub1_5320!!.aFloat5666 * i_682_.toFloat()))).toInt()
+                        if (aParticleSystemState_5367!!.aBoolean2195) anIntArray5362[i_679_] = ((aClass101_Sub1_5320!!.aFloat5685) + ((aClass101_Sub1_5320!!.aFloat5655 * i_680_.toFloat()) + (aClass101_Sub1_5320!!.aFloat5678 * i_681_.toFloat()) + (aClass101_Sub1_5320!!.aFloat5666 * i_682_.toFloat()))).toInt()
                     }
                     if (aClass6Array5361 != null) {
                         for (i_686_ in 0..<anInt5389) {
@@ -2888,7 +2888,7 @@ class Class64_Sub1 : Class64 {
                 aShadowProjector_5383!!.aBoolean1669 = (i_632_ and 0x1) == 0
                 aShadowProjector_5383!!.aBoolean1667 = false
                 try {
-                    method650(bool_656_, ((aClass167_5367!!.aBoolean2201 && (i_637_ > aClass167_5367!!.anInt2210)) || aClass167_5367!!.aBoolean2195), i_636_, i_637_ - i_636_)
+                    method650(bool_656_, ((aParticleSystemState_5367!!.aBoolean2201 && (i_637_ > aParticleSystemState_5367!!.anInt2210)) || aParticleSystemState_5367!!.aBoolean2195), i_636_, i_637_ - i_636_)
                 } catch (exception: Exception) {
                     /* empty */
                 }
@@ -3108,19 +3108,19 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method658(i: Int) {
-        if (aClass167_5367!!.aBoolean2195) {
+        if (aParticleSystemState_5367!!.aBoolean2195) {
             val i_777_ = aShortArray5317[i]
             val i_778_ = aShortArray5394[i]
             val i_779_ = aShortArray5364[i]
             var i_780_ = 0
             var i_781_ = 0
             var i_782_ = 0
-            if (anIntArray5362[i_777_.toInt()] > aClass167_5367!!.anInt2197) i_780_ = 255
-            else if (anIntArray5362[i_777_.toInt()] > aClass167_5367!!.anInt2211) i_780_ = ((aClass167_5367!!.anInt2211 - anIntArray5362[i_777_.toInt()]) * 255 / (aClass167_5367!!.anInt2211 - aClass167_5367!!.anInt2197))
-            if (anIntArray5362[i_778_.toInt()] > aClass167_5367!!.anInt2197) i_781_ = 255
-            else if (anIntArray5362[i_778_.toInt()] > aClass167_5367!!.anInt2211) i_781_ = ((aClass167_5367!!.anInt2211 - anIntArray5362[i_778_.toInt()]) * 255 / (aClass167_5367!!.anInt2211 - aClass167_5367!!.anInt2197))
-            if (anIntArray5362[i_779_.toInt()] > aClass167_5367!!.anInt2197) i_782_ = 255
-            else if (anIntArray5362[i_779_.toInt()] > aClass167_5367!!.anInt2211) i_782_ = ((aClass167_5367!!.anInt2211 - anIntArray5362[i_779_.toInt()]) * 255 / (aClass167_5367!!.anInt2211 - aClass167_5367!!.anInt2197))
+            if (anIntArray5362[i_777_.toInt()] > aParticleSystemState_5367!!.anInt2197) i_780_ = 255
+            else if (anIntArray5362[i_777_.toInt()] > aParticleSystemState_5367!!.anInt2211) i_780_ = ((aParticleSystemState_5367!!.anInt2211 - anIntArray5362[i_777_.toInt()]) * 255 / (aParticleSystemState_5367!!.anInt2211 - aParticleSystemState_5367!!.anInt2197))
+            if (anIntArray5362[i_778_.toInt()] > aParticleSystemState_5367!!.anInt2197) i_781_ = 255
+            else if (anIntArray5362[i_778_.toInt()] > aParticleSystemState_5367!!.anInt2211) i_781_ = ((aParticleSystemState_5367!!.anInt2211 - anIntArray5362[i_778_.toInt()]) * 255 / (aParticleSystemState_5367!!.anInt2211 - aParticleSystemState_5367!!.anInt2197))
+            if (anIntArray5362[i_779_.toInt()] > aParticleSystemState_5367!!.anInt2197) i_782_ = 255
+            else if (anIntArray5362[i_779_.toInt()] > aParticleSystemState_5367!!.anInt2211) i_782_ = ((aParticleSystemState_5367!!.anInt2211 - anIntArray5362[i_779_.toInt()]) * 255 / (aParticleSystemState_5367!!.anInt2211 - aParticleSystemState_5367!!.anInt2197))
             if (aByteArray5325 == null) aShadowProjector_5383!!.anInt1674 = 0
             else aShadowProjector_5383!!.anInt1674 = aByteArray5325!![i].toInt() and 0xff
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
@@ -3134,9 +3134,9 @@ class Class64_Sub1 : Class64 {
                     anIntArray5355[i_777_.toInt()].toFloat(),
                     anIntArray5355[i_778_.toInt()].toFloat(),
                     anIntArray5355[i_779_.toInt()].toFloat(),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_781_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_782_ shl 24 or (aClass167_5367!!.anInt2192)), 255)
+                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                 )
                 else aShadowProjector_5383!!.method1027(
                     anIntArray5343[i_777_.toInt()].toFloat(),
@@ -3148,9 +3148,9 @@ class Class64_Sub1 : Class64 {
                     anIntArray5355[i_777_.toInt()].toFloat(),
                     anIntArray5355[i_778_.toInt()].toFloat(),
                     anIntArray5355[i_779_.toInt()].toFloat(),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5337!![i] and 0xffff]), (i_781_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5366!![i] and 0xffff]), (i_782_ shl 24 or (aClass167_5367!!.anInt2192)), 255)
+                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((Crc64Hashable.anIntArray4983!![anIntArray5337!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((Crc64Hashable.anIntArray4983!![anIntArray5366!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                 )
             } else {
                 var i_783_ = -16777216
@@ -3176,7 +3176,7 @@ class Class64_Sub1 : Class64 {
                         i_784_,
                         i_784_,
                         i_784_,
-                        (aClass167_5367!!.anInt2192),
+                        (aParticleSystemState_5367!!.anInt2192),
                         i_780_,
                         i_781_,
                         i_782_,
@@ -3201,7 +3201,7 @@ class Class64_Sub1 : Class64 {
                     i_783_ or (anIntArray5368!![i] and 0xffffff),
                     i_783_ or (anIntArray5337!![i] and 0xffffff),
                     i_783_ or (anIntArray5366!![i] and 0xffffff),
-                    aClass167_5367!!.anInt2192,
+                    aParticleSystemState_5367!!.anInt2192,
                     i_780_,
                     i_781_,
                     i_782_,
@@ -3212,13 +3212,13 @@ class Class64_Sub1 : Class64 {
             val i_768_ = aShortArray5317[i]
             val i_769_ = aShortArray5394[i]
             val i_770_ = aShortArray5364[i]
-            var i_771_ = (anIntArray5355[i_768_.toInt()] - aClass167_5367!!.anInt2210)
+            var i_771_ = (anIntArray5355[i_768_.toInt()] - aParticleSystemState_5367!!.anInt2210)
             if (i_771_ > 255) i_771_ = 255
             else if (i_771_ < 0) i_771_ = 0
-            var i_772_ = (anIntArray5355[i_769_.toInt()] - aClass167_5367!!.anInt2210)
+            var i_772_ = (anIntArray5355[i_769_.toInt()] - aParticleSystemState_5367!!.anInt2210)
             if (i_772_ > 255) i_772_ = 255
             else if (i_772_ < 0) i_772_ = 0
-            var i_773_ = (anIntArray5355[i_770_.toInt()] - aClass167_5367!!.anInt2210)
+            var i_773_ = (anIntArray5355[i_770_.toInt()] - aParticleSystemState_5367!!.anInt2210)
             if (i_773_ > 255) i_773_ = 255
             else if (i_773_ < 0) i_773_ = 0
             val i_774_ = i_771_ + i_772_ + i_773_
@@ -3238,9 +3238,9 @@ class Class64_Sub1 : Class64 {
                             anIntArray5355[i_768_.toInt()].toFloat(),
                             anIntArray5355[i_769_.toInt()].toFloat(),
                             anIntArray5355[i_770_.toInt()].toFloat(),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_772_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_773_ shl 24 or (aClass167_5367!!.anInt2192)), 255)
+                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                         )
                         else aShadowProjector_5383!!.method1027(
                             anIntArray5343[i_768_.toInt()].toFloat(),
@@ -3252,9 +3252,9 @@ class Class64_Sub1 : Class64 {
                             anIntArray5355[i_768_.toInt()].toFloat(),
                             anIntArray5355[i_769_.toInt()].toFloat(),
                             anIntArray5355[i_770_.toInt()].toFloat(),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5337!![i] and 0xffff)]), (i_772_ shl 24 or (aClass167_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5366!![i] and 0xffff)]), (i_773_ shl 24 or (aClass167_5367!!.anInt2192)), 255)
+                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5337!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5366!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                         )
                     } else {
                         var i_775_ = -16777216
@@ -3280,7 +3280,7 @@ class Class64_Sub1 : Class64 {
                                 i_776_,
                                 i_776_,
                                 i_776_,
-                                aClass167_5367!!.anInt2192,
+                                aParticleSystemState_5367!!.anInt2192,
                                 i_771_,
                                 i_772_,
                                 i_773_,
@@ -3305,7 +3305,7 @@ class Class64_Sub1 : Class64 {
                             i_775_ or (anIntArray5368!![i] and 0xffffff),
                             i_775_ or (anIntArray5337!![i] and 0xffffff),
                             i_775_ or (anIntArray5366!![i] and 0xffffff),
-                            aClass167_5367!!.anInt2192,
+                            aParticleSystemState_5367!!.anInt2192,
                             i_771_,
                             i_772_,
                             i_773_,
@@ -3422,8 +3422,8 @@ class Class64_Sub1 : Class64 {
         aFloatArrayArray5314 = arrayOfNulls<FloatArray>(anInt5351)
         aFloatArrayArray5345 = arrayOfNulls<FloatArray>(anInt5351)
         val class358 = method565(255, anInt5351, modelDefinition, `is`)!!
-        val class167: Class167 = aHa_Sub1_5353.method3724(Thread.currentThread())!!
-        val fs = class167.aFloatArray2226!!
+        val particleSystemState: ParticleSystemState = aHa_Sub1_5353.method3724(Thread.currentThread())!!
+        val fs = particleSystemState.aFloatArray2226!!
         var bool_802_ = false
         for (i_803_ in 0..<anInt5351) {
             val i_804_ = `is`[i_803_]

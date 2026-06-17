@@ -780,7 +780,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
         private fun method3955(i: Int, class229: Class229?): Int {
             if (Class328_Sub3.aClass229_6519 == class229) return 2
-            if (Class167.aClass229_2207 == class229) return 4
+            if (ParticleSystemState.aClass229_2207 == class229) return 4
             if (Class248.aClass229_3196 != class229) {
                 if (class229 != Class348_Sub23_Sub2.aClass229_9011) {
                     if (class229 == Class348_Sub7.aClass229_6644) return 10

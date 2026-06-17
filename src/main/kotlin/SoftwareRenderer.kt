@@ -28,7 +28,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     var anInt7478: Int
     @JvmField
     var anInt7479: Int = 0
-    private var aClass167Array7480: Array<Class167?>? = null
+    private var aParticleSystemStateArray7480: Array<ParticleSystemState?>? = null
     private var anInt7481 = 0
     @JvmField
     var anInt7482: Int
@@ -110,9 +110,9 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun pa() {
-        for (i in aClass167Array7480!!.indices) {
-            aClass167Array7480!![i]!!.anInt2192 = aClass167Array7480!![i]!!.anInt2205
-            aClass167Array7480!![i]!!.aBoolean2195 = false
+        for (i in aParticleSystemStateArray7480!!.indices) {
+            aParticleSystemStateArray7480!![i]!!.anInt2192 = aParticleSystemStateArray7480!![i]!!.anInt2205
+            aParticleSystemStateArray7480!![i]!!.aBoolean2195 = false
         }
     }
 
@@ -354,12 +354,12 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun ra(i: Int, i_87_: Int, i_88_: Int, i_89_: Int) {
-        for (i_90_ in aClass167Array7480!!.indices) {
-            aClass167Array7480!![i_90_]!!.anInt2205 = aClass167Array7480!![i_90_]!!.anInt2192
-            aClass167Array7480!![i_90_]!!.anInt2211 = i
-            aClass167Array7480!![i_90_]!!.anInt2192 = i_87_
-            aClass167Array7480!![i_90_]!!.anInt2197 = i_88_
-            aClass167Array7480!![i_90_]!!.aBoolean2195 = true
+        for (i_90_ in aParticleSystemStateArray7480!!.indices) {
+            aParticleSystemStateArray7480!![i_90_]!!.anInt2205 = aParticleSystemStateArray7480!![i_90_]!!.anInt2192
+            aParticleSystemStateArray7480!![i_90_]!!.anInt2211 = i
+            aParticleSystemStateArray7480!![i_90_]!!.anInt2192 = i_87_
+            aParticleSystemStateArray7480!![i_90_]!!.anInt2197 = i_88_
+            aParticleSystemStateArray7480!![i_90_]!!.aBoolean2195 = true
         }
     }
 
@@ -398,7 +398,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         this.anInt7490 = this.anInt7476 - this.anInt7504
         this.anInt7506 = this.anInt7503 - this.anInt7504
         for (i in 0..<this.anInt7485) {
-            val class109 = aClass167Array7480!![i]!!.aShadowProjector_2220!!
+            val class109 = aParticleSystemStateArray7480!![i]!!.aShadowProjector_2220!!
             class109.anInt1665 = this.anInt7510 - this.anInt7496
             class109.anInt1668 = this.anInt7504 - this.anInt7476
             class109.anInt1679 = this.anInt7507 - this.anInt7496
@@ -406,7 +406,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
         var i = (this.anInt7476 * this.anInt7477 + this.anInt7496)
         for (i_97_ in this.anInt7476..<this.anInt7503) {
-            for (i_98_ in 0..<this.anInt7485) aClass167Array7480!![i_98_]!!.aShadowProjector_2220!!.anIntArray1676[i_97_ - this.anInt7476] = i
+            for (i_98_ in 0..<this.anInt7485) aParticleSystemStateArray7480!![i_98_]!!.aShadowProjector_2220!!.anIntArray1676[i_97_ - this.anInt7476] = i
             i += this.anInt7477
         }
     }
@@ -786,7 +786,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     private fun method3717() {
-        for (i in 0..<this.anInt7485) aClass167Array7480!![i]!!.method1292(64)
+        for (i in 0..<this.anInt7485) aParticleSystemStateArray7480!![i]!!.method1292(64)
         la()
     }
 
@@ -813,8 +813,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun L(i: Int, i_226_: Int, i_227_: Int) {
-        for (i_228_ in aClass167Array7480!!.indices) {
-            val class167 = aClass167Array7480!![i_228_]!!
+        for (i_228_ in aParticleSystemStateArray7480!!.indices) {
+            val class167 = aParticleSystemStateArray7480!![i_228_]!!
             class167.anInt2192 = i and 0xffffff
             var i_229_ = class167.anInt2192 ushr 16 and 0xff
             if (i_229_ < 2) i_229_ = 2
@@ -863,8 +863,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     override fun method3631(i: Int) {
         this.anInt7485 = i
-        aClass167Array7480 = arrayOfNulls<Class167>(this.anInt7485)
-        for (i_240_ in 0..<this.anInt7485) aClass167Array7480!![i_240_] = Class167(this)
+        aParticleSystemStateArray7480 = arrayOfNulls<ParticleSystemState>(this.anInt7485)
+        for (i_240_ in 0..<this.anInt7485) aParticleSystemStateArray7480!![i_240_] = ParticleSystemState(this)
     }
 
     override fun method3709(i: Int, i_241_: Int, i_242_: Int, i_243_: Int, i_244_: Int, i_245_: Int) {
@@ -1550,7 +1550,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3678(i: Int) {
-        aClass167Array7480!![i]!!.method1291(10000, null)
+        aParticleSystemStateArray7480!![i]!!.method1291(10000, null)
     }
 
     override fun method3672() {
@@ -2032,9 +2032,9 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         } else throw IllegalArgumentException()
     }
 
-    fun method3724(runnable: Runnable?): Class167? {
+    fun method3724(runnable: Runnable?): ParticleSystemState? {
         for (i in 0..<this.anInt7485) {
-            if (aClass167Array7480!![i]!!.aRunnable2198 === runnable) return aClass167Array7480!![i]!!
+            if (aParticleSystemStateArray7480!![i]!!.aRunnable2198 === runnable) return aParticleSystemStateArray7480!![i]!!
         }
         return null
     }
@@ -2335,7 +2335,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3659(i: Int) {
-        aClass167Array7480!![i]!!.method1291(10000, Thread.currentThread())
+        aParticleSystemStateArray7480!![i]!!.method1291(10000, Thread.currentThread())
     }
 
     @Throws(Exception_Sub1::class)

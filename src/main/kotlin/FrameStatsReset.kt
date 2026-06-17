@@ -353,7 +353,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class300.anInt3818 = 0
             Class58.anInt1056 = 0
             Class64_Sub3.anInt5532 = 0
-            Class167.anInt2194 = 0
+            ParticleSystemState.anInt2194 = 0
             Class92.anInt1526 = 0
             Class314_Sub1.anInt6366 = 0
             Class348_Sub1.anInt6556 = 0
@@ -744,7 +744,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5616 = 0
             OpenGlRenderer.anInt7686 = 0
             Class60.anInt1087 = 0
-            Class167.anInt2199 = 0
+            ParticleSystemState.anInt2199 = 0
             Class239_Sub8.anInt5912 = 0
             Class64_Sub3.anInt5587 = 0
             Class239_Sub24.anInt6094 = 0
@@ -1560,7 +1560,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class263.anInt3357 = 0
             Class50_Sub4.anInt5260 = 0
             OpenGlTerrainTile.anInt8250 = 0
-            Class167.anInt2200 = 0
+            ParticleSystemState.anInt2200 = 0
             Class318_Sub1_Sub1_Sub1.anInt9967 = 0
             LinkedListIterator.anInt2114 = 0
             NativeRenderer.anInt8065 = 0
@@ -2238,7 +2238,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub24.anInt6084 = 0
             Class22.anInt328 = 0
             Class271.anInt3469 = 0
-            Class167.anInt2206 = 0
+            ParticleSystemState.anInt2206 = 0
             NativeRenderer.anInt7995 = 0
             Class18.anInt272 = 0
             Class30.anInt411 = 0
@@ -2984,7 +2984,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class251.anInt3231 = 0
             Class348_Sub42_Sub19.anInt9698 = 0
             Class318_Sub1_Sub2.anInt8733 = 0
-            Class167.anInt2193 = 0
+            ParticleSystemState.anInt2193 = 0
             Class367.anInt4485 = 0
             Class17.anInt266 = 0
             Class348_Sub16_Sub3.anInt8936 = 0

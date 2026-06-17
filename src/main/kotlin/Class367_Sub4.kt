@@ -79,7 +79,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                 this.aHa_Sub3_4479.method3924(true, false, 0, Class342.aClass70_4247, false)
                 this.aHa_Sub3_4479.method3885(0, true, Class285_Sub2.aClass70_8503)
             } else {
-                this.aHa_Sub3_4479.method3874((Class167.aClass229_2207), 117, (Class328_Sub3.aClass229_6519))
+                this.aHa_Sub3_4479.method3874((ParticleSystemState.aClass229_2207), 117, (Class328_Sub3.aClass229_6519))
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, (Class318_Sub1_Sub2.aClass70_8737))
                 this.aHa_Sub3_4479.method3897(2, -4382)
                 this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 122, (Class348_Sub23_Sub2.aClass229_9011))
@@ -108,14 +108,14 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             this.aHa_Sub3_4479.method3871(ModelDefinitionLoader.aCameraNodeList_2047, 0)
             this.aHa_Sub3_4479.method3879(-8629)
             if (aBoolean7311) {
-                this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 120, Class167.aClass229_2207)
+                this.aHa_Sub3_4479.method3874(ParticleSystemState.aClass229_2207, 120, ParticleSystemState.aClass229_2207)
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
                 this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
             } else {
-                this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 115, Class167.aClass229_2207)
+                this.aHa_Sub3_4479.method3874(ParticleSystemState.aClass229_2207, 115, ParticleSystemState.aClass229_2207)
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
                 this.aHa_Sub3_4479.method3897(2, i + -4469)
-                this.aHa_Sub3_4479.method3874((Class167.aClass229_2207), i.toInt() xor 0x21, (Class167.aClass229_2207))
+                this.aHa_Sub3_4479.method3874((ParticleSystemState.aClass229_2207), i.toInt() xor 0x21, (ParticleSystemState.aClass229_2207))
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
                 this.aHa_Sub3_4479.method3849(47.toByte(), 1, (Class318_Sub1_Sub2.aClass70_8737))
                 this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
@@ -126,11 +126,11 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
         } else this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
         anInt7312++
         if (i.toInt() != 87) aBoolean7311 = true
-        this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, i + 13, Class167.aClass229_2207)
+        this.aHa_Sub3_4479.method3874(ParticleSystemState.aClass229_2207, i + 13, ParticleSystemState.aClass229_2207)
     }
 
     override fun method3521(bool: Boolean, i: Byte) {
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 126, Class167.aClass229_2207)
+        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 126, ParticleSystemState.aClass229_2207)
         if (i.toInt() != -103) method3542(74, null, 65, 65, -77, true)
         anInt7308++
     }

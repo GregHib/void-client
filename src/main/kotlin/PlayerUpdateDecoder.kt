@@ -148,7 +148,7 @@ object PlayerUpdateDecoder {
                             is_19_[i_21_] = class348_sub49_sub2.readByteInverse(21.toByte())
                             is_20_[i_21_] = class348_sub49_sub2.readUnsignedShort(842397944)
                         }
-                        Class167.method1297((-116).toByte(), player, is_20_, `is`, is_19_)
+                        ParticleSystemState.method1297((-116).toByte(), player, is_20_, `is`, is_19_)
                     }
                     if ((0x2000 and i_0_) != 0) {
                         player!!.anInt10293 = class348_sub49_sub2!!.readByte(-121).toInt()
