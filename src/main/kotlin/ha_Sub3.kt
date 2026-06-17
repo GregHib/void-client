@@ -395,7 +395,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         anInt7938++
     }
 
-    override fun method3661(i: Int, i_31_: Int, `is`: IntArray?, is_32_: IntArray?): aa {
+    override fun method3661(i: Int, i_31_: Int, `is`: IntArray?, is_32_: IntArray?): Sprite {
         try {
             anInt7957++
             return Class318_Sub4.method2501(i_31_, this, `is`, (-42).toByte(), is_32_, i)
@@ -874,10 +874,10 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         return this.aClass101_Sub2_8080
     }
 
-    override fun A(i: Int, var_aa: aa?, i_85_: Int, i_86_: Int) {
+    override fun A(i: Int, var_sprite: Sprite?, i_85_: Int, i_86_: Int) {
         try {
             anInt7940++
-            val var_aa_Sub2 = var_aa as aa_Sub2
+            val var_aa_Sub2 = var_sprite as IndexedSprite
             val interface18_impl3 = var_aa_Sub2.anInterface18_Impl3_5196
             method3864(81)
             method3850((-47).toByte(), interface18_impl3)
@@ -895,7 +895,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
             method3879(-8629)
             method3849(47.toByte(), 0, Class342.aClass70_4247)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.A(" + i + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_85_ + ',' + i_86_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_85_ + ',' + i_86_ + ')'))
         }
     }
 
@@ -1071,11 +1071,11 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         if (bool_103_ != true) this.anInt8095 = 22
     }
 
-    override fun method3703(i: Int, i_104_: Int, i_105_: Int, i_106_: Int, i_107_: Int, i_108_: Int, var_aa: aa?, i_109_: Int, i_110_: Int, i_111_: Int, i_112_: Int, i_113_: Int) {
+    override fun method3703(i: Int, i_104_: Int, i_105_: Int, i_106_: Int, i_107_: Int, i_108_: Int, var_sprite: Sprite?, i_109_: Int, i_110_: Int, i_111_: Int, i_112_: Int, i_113_: Int) {
         try {
             anInt7914++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.IF(" + i + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + i_107_ + ',' + i_108_ + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + i_112_ + ',' + i_113_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.IF(" + i + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + i_107_ + ',' + i_108_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + i_112_ + ',' + i_113_ + ')'))
         }
     }
 
@@ -1775,11 +1775,11 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         }
     }
 
-    override fun method3636(i: Int, i_217_: Int, i_218_: Int, i_219_: Int, i_220_: Int, i_221_: Int, var_aa: aa?, i_222_: Int, i_223_: Int) {
+    override fun method3636(i: Int, i_217_: Int, i_218_: Int, i_219_: Int, i_220_: Int, i_221_: Int, var_sprite: Sprite?, i_222_: Int, i_223_: Int) {
         try {
             anInt7918++
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.ME(" + i + ',' + i_217_ + ',' + i_218_ + ',' + i_219_ + ',' + i_220_ + ',' + i_221_ + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_222_ + ',' + i_223_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.ME(" + i + ',' + i_217_ + ',' + i_218_ + ',' + i_219_ + ',' + i_220_ + ',' + i_221_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_222_ + ',' + i_223_ + ')'))
         }
     }
 

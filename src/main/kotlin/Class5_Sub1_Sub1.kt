@@ -1,4 +1,4 @@
-import aa_Sub2.Companion.method163
+import IndexedSprite.Companion.method163
 
 /* Class5_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

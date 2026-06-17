@@ -521,8 +521,8 @@ import InputStream_Sub2.Companion.method127
 import OutputStream_Sub2.Companion.method139
 import Player.Companion.method2458
 import RuntimeException_Sub1.Companion.method4010
-import aa_Sub1.Companion.method161
-import aa_Sub3.Companion.method167
+import NativeSprite.Companion.method161
+import RasterSprite.Companion.method167
 import ha.Companion.method3680
 import ha_Sub2.Companion.method3736
 import ha_Sub3.Companion.method3870
@@ -579,19 +579,19 @@ class Client : Applet_Sub1() {
         else {
             try {
                 if (Class47.anInt846 == 0) {
-                    aa.aClass144_114 = Class3.aClass161_125!!.method1262((Class348_Sub23_Sub1.aClass297_8992!!), 36.toByte())
+                    Sprite.aClass144_114 = Class3.aClass161_125!!.method1262((Class348_Sub23_Sub1.aClass297_8992!!), 36.toByte())
                     Class47.anInt846++
                 }
                 if (Class47.anInt846 == 1) {
-                    if (aa.aClass144_114!!.anInt1997 == 2) {
-                        if (aa.aClass144_114!!.anObject1998 != null) Class348_Sub31.aString6926 = aa.aClass144_114!!.anObject1998 as String?
+                    if (Sprite.aClass144_114!!.anInt1997 == 2) {
+                        if (Sprite.aClass144_114!!.anObject1998 != null) Class348_Sub31.aString6926 = Sprite.aClass144_114!!.anObject1998 as String?
                         method103(1000, 100.toByte())
                         return
                     }
-                    if (aa.aClass144_114!!.anInt1997 == 1) Class47.anInt846++
+                    if (Sprite.aClass144_114!!.anInt1997 == 1) Class47.anInt846++
                 }
                 if (Class47.anInt846 == 2) {
-                    Class193.aClass202_2589 = Class202(aa.aClass144_114!!.anObject1998 as Socket?, Class348_Sub23_Sub1.aClass297_8992, 25000)
+                    Class193.aClass202_2589 = Class202(Sprite.aClass144_114!!.anObject1998 as Socket?, Class348_Sub23_Sub1.aClass297_8992, 25000)
                     val class348_sub49 = Class348_Sub49(5)
                     class348_sub49.writeByte(false, (Class178.aClass29_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)
@@ -620,7 +620,7 @@ class Client : Applet_Sub1() {
                     for (i_1_ in class267s.indices) class267s[i_1_]!!.method2030(1, class348_sub49.readInt((-126).toByte()))
                     Class348_Sub4.aClass248_6601!!.method1903(false, !bool, Class193.aClass202_2589)
                     Class47.anInt846 = 0
-                    aa.aClass144_114 = null
+                    Sprite.aClass144_114 = null
                     Class193.aClass202_2589 = null
                 }
                 val i_2_ = 127 / ((1 - i) / 60)
@@ -848,7 +848,7 @@ class Client : Applet_Sub1() {
         method852(6)
         method3518(i.toInt() xor 0x34)
         Exception_Sub1.method140((-126).toByte())
-        aa.method158((-67).toByte())
+        Sprite.method158((-67).toByte())
         method3438(59.toByte())
         Class143.method1180((-76).toByte())
         method879(96)
@@ -1171,7 +1171,7 @@ class Client : Applet_Sub1() {
         method3288(74.toByte())
         method3512(4)
         method1400(i + -107)
-        aa_Sub2.method162((-112).toByte())
+        IndexedSprite.method162((-112).toByte())
         method4006(-43)
         method2738(82.toByte())
         method2631(127)
@@ -1252,7 +1252,7 @@ class Client : Applet_Sub1() {
     private fun method103(i: Int, i_5_: Byte) {
         anInt5182++
         Class348_Sub4.aClass248_6601!!.anInt3213++
-        aa.aClass144_114 = null
+        Sprite.aClass144_114 = null
         Class348_Sub4.aClass248_6601!!.anInt3214 = i
         if (i_5_ > 74) {
             Class47.anInt846 = 0

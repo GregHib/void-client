@@ -469,10 +469,10 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         return anInt7814
     }
 
-    override fun method3636(i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, var_aa: aa?, i_25_: Int, i_26_: Int) {
+    override fun method3636(i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, var_sprite: Sprite?, i_25_: Int, i_26_: Int) {
         try {
             anInt7727++
-            val var_aa_Sub1 = var_aa as aa_Sub1
+            val var_aa_Sub1 = var_sprite as NativeSprite
             val class258_sub3_sub1 = var_aa_Sub1.aClass258_Sub3_Sub1_5193
             method3792(110)
             method3771((-88).toByte(), var_aa_Sub1.aClass258_Sub3_Sub1_5193)
@@ -495,7 +495,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             glEnd()
             method3762(5890, 768, (-87).toByte(), 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.ME(" + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_25_ + ',' + i_26_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.ME(" + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_25_ + ',' + i_26_ + ')'))
         }
     }
 
@@ -1695,12 +1695,12 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         return i_183_
     }
 
-    override fun method3703(i: Int, i_186_: Int, i_187_: Int, i_188_: Int, i_189_: Int, i_190_: Int, var_aa: aa?, i_191_: Int, i_192_: Int, i_193_: Int, i_194_: Int, i_195_: Int) {
+    override fun method3703(i: Int, i_186_: Int, i_187_: Int, i_188_: Int, i_189_: Int, i_190_: Int, var_sprite: Sprite?, i_191_: Int, i_192_: Int, i_193_: Int, i_194_: Int, i_195_: Int) {
         var i_195_ = i_195_
         try {
             anInt7618++
             if (i_187_ != i || i_188_ != i_186_) {
-                val var_aa_Sub1 = var_aa as aa_Sub1
+                val var_aa_Sub1 = var_sprite as NativeSprite
                 val class258_sub3_sub1 = var_aa_Sub1.aClass258_Sub3_Sub1_5193
                 method3792(90)
                 method3771((-122).toByte(), var_aa_Sub1.aClass258_Sub3_Sub1_5193)
@@ -1762,7 +1762,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 method3762(5890, 768, (-87).toByte(), 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.IF(" + i + ',' + i_186_ + ',' + i_187_ + ',' + i_188_ + ',' + i_189_ + ',' + i_190_ + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_191_ + ',' + i_192_ + ',' + i_193_ + ',' + i_194_ + ',' + i_195_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.IF(" + i + ',' + i_186_ + ',' + i_187_ + ',' + i_188_ + ',' + i_189_ + ',' + i_190_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_191_ + ',' + i_192_ + ',' + i_193_ + ',' + i_194_ + ',' + i_195_ + ')'))
         }
     }
 
@@ -1777,7 +1777,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         this.anInt7733 = 1 shl this.anInt7731
     }
 
-    override fun method3661(i: Int, i_210_: Int, `is`: IntArray?, is_211_: IntArray?): aa {
+    override fun method3661(i: Int, i_210_: Int, `is`: IntArray?, is_211_: IntArray?): Sprite {
         try {
             anInt7589++
             return method4009(i, `is`, is_211_, 0, this, i_210_)
@@ -1857,10 +1857,10 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         } while (false)
     }
 
-    override fun A(i: Int, var_aa: aa?, i_212_: Int, i_213_: Int) {
+    override fun A(i: Int, var_sprite: Sprite?, i_212_: Int, i_213_: Int) {
         try {
             anInt7695++
-            val var_aa_Sub1 = var_aa as aa_Sub1
+            val var_aa_Sub1 = var_sprite as NativeSprite
             val class258_sub3_sub1 = var_aa_Sub1.aClass258_Sub3_Sub1_5193
             method3792(119)
             method3771((-88).toByte(), var_aa_Sub1.aClass258_Sub3_Sub1_5193)
@@ -1882,7 +1882,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             glEnd()
             method3762(5890, 768, (-87).toByte(), 0)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.A(" + i + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ')'))
         }
     }
 

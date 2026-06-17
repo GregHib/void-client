@@ -67,10 +67,10 @@ class Class324_Sub1 internal constructor(private val aHa_Sub1_6486: ha_Sub1, cla
         }
     }
 
-    private fun method2587(`is`: ByteArray, is_25_: IntArray, i: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int, i_33_: Int, i_34_: Int, var_aa: aa?, i_35_: Int, i_36_: Int) {
+    private fun method2587(`is`: ByteArray, is_25_: IntArray, i: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int, i_33_: Int, i_34_: Int, var_sprite: Sprite?, i_35_: Int, i_36_: Int) {
         var i_26_ = i_26_
         var i_27_ = i_27_
-        val var_aa_Sub3 = var_aa as aa_Sub3
+        val var_aa_Sub3 = var_sprite as RasterSprite
         val is_37_ = var_aa_Sub3.anIntArray5201
         val is_38_ = var_aa_Sub3.anIntArray5202
         var i_39_ = i_33_
@@ -141,10 +141,10 @@ class Class324_Sub1 internal constructor(private val aHa_Sub1_6486: ha_Sub1, cla
         }
     }
 
-    override fun method2578(c: Char, i: Int, i_60_: Int, i_61_: Int, bool: Boolean, var_aa: aa?, i_62_: Int, i_63_: Int) {
+    override fun method2578(c: Char, i: Int, i_60_: Int, i_61_: Int, bool: Boolean, var_sprite: Sprite?, i_62_: Int, i_63_: Int) {
         var i = i
         var i_60_ = i_60_
-        if (var_aa == null) fa(c, i, i_60_, i_61_, bool)
+        if (var_sprite == null) fa(c, i, i_60_, i_61_, bool)
         else {
             i += anIntArray6491[c.code]
             i_60_ += anIntArray6487[c.code]
@@ -179,16 +179,16 @@ class Class324_Sub1 internal constructor(private val aHa_Sub1_6486: ha_Sub1, cla
                 i_68_ += i_73_
             }
             if (i_64_ > 0 && i_65_ > 0) {
-                if ((i_61_ and 0xffffff.inv()) == -16777216) method2587(aByteArrayArray6490[c.code]!!, aHa_Sub1_6486.anIntArray7483!!, i_61_, i_70_, i_67_, i_64_, i_65_, i_68_, i_69_, i, i_60_, anIntArray6489[c.code], var_aa, i_62_, i_63_)
-                else method2589(aByteArrayArray6490[c.code]!!, aHa_Sub1_6486.anIntArray7483!!, i_61_, i_70_, i_67_, i_64_, i_65_, i_68_, i_69_, i, i_60_, anIntArray6489[c.code], var_aa, i_62_, i_63_)
+                if ((i_61_ and 0xffffff.inv()) == -16777216) method2587(aByteArrayArray6490[c.code]!!, aHa_Sub1_6486.anIntArray7483!!, i_61_, i_70_, i_67_, i_64_, i_65_, i_68_, i_69_, i, i_60_, anIntArray6489[c.code], var_sprite, i_62_, i_63_)
+                else method2589(aByteArrayArray6490[c.code]!!, aHa_Sub1_6486.anIntArray7483!!, i_61_, i_70_, i_67_, i_64_, i_65_, i_68_, i_69_, i, i_60_, anIntArray6489[c.code], var_sprite, i_62_, i_63_)
             }
         }
     }
 
-    private fun method2589(`is`: ByteArray, is_74_: IntArray, i: Int, i_75_: Int, i_76_: Int, i_77_: Int, i_78_: Int, i_79_: Int, i_80_: Int, i_81_: Int, i_82_: Int, i_83_: Int, var_aa: aa?, i_84_: Int, i_85_: Int) {
+    private fun method2589(`is`: ByteArray, is_74_: IntArray, i: Int, i_75_: Int, i_76_: Int, i_77_: Int, i_78_: Int, i_79_: Int, i_80_: Int, i_81_: Int, i_82_: Int, i_83_: Int, var_sprite: Sprite?, i_84_: Int, i_85_: Int) {
         var i_75_ = i_75_
         var i_76_ = i_76_
-        val var_aa_Sub3 = var_aa as aa_Sub3
+        val var_aa_Sub3 = var_sprite as RasterSprite
         val is_86_ = var_aa_Sub3.anIntArray5201
         val is_87_ = var_aa_Sub3.anIntArray5202
         val i_88_ = i_81_ - aHa_Sub1_6486.anInt7496

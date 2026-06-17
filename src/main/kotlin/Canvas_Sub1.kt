@@ -127,7 +127,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
             var class64 = Class15.aClass60_225!!.method583(l, 81) as Class64?
             val i_18_ = 2055
             if (class64 == null) {
-                val class124 = Class300.method2277(0, aa_Sub3.aClass45_5207!!, i_16_, -1)
+                val class124 = Class300.method2277(0, RasterSprite.aClass45_5207!!, i_16_, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 105)
                 class64 = var_ha.method3625(class124, i_18_, Class171.anInt2275, 64, 768)
@@ -149,8 +149,8 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
             var bool = true
             var i_19_ = 0
             while (Class347.aByteArrayArray4281!!.size > i_19_) {
-                if (aa_Sub1.anIntArray5192!![i_19_] != -1 && Class347.aByteArrayArray4281!![i_19_] == null) {
-                    Class347.aByteArrayArray4281!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, aa_Sub1.anIntArray5192!![i_19_], 0)
+                if (NativeSprite.anIntArray5192!![i_19_] != -1 && Class347.aByteArrayArray4281!![i_19_] == null) {
+                    Class347.aByteArrayArray4281!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
                     if (Class347.aByteArrayArray4281!![i_19_] == null) {
                         bool = false
                         Class268.anInt3441++

@@ -30,9 +30,9 @@ class n(var_oa: oa?, var_ya: ya?, class143: Class143?, class207s: Array<Class207
 
     external override fun fa(c: Char, i: Int, i_9_: Int, i_10_: Int, bool: Boolean)
 
-    private external fun PA(c: Char, i: Int, i_11_: Int, i_12_: Int, bool: Boolean, var_aa: aa?, i_13_: Int, i_14_: Int)
+    private external fun PA(c: Char, i: Int, i_11_: Int, i_12_: Int, bool: Boolean, var_sprite: Sprite?, i_13_: Int, i_14_: Int)
 
-    override fun method2578(c: Char, i: Int, i_15_: Int, i_16_: Int, bool: Boolean, var_aa: aa?, i_17_: Int, i_18_: Int) {
-        PA(c, i, i_15_, i_16_, bool, var_aa, i_17_, i_18_)
+    override fun method2578(c: Char, i: Int, i_15_: Int, i_16_: Int, bool: Boolean, var_sprite: Sprite?, i_17_: Int, i_18_: Int) {
+        PA(c, i, i_15_, i_16_, bool, var_sprite, i_17_, i_18_)
     }
 }

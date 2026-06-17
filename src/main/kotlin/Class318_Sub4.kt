@@ -35,7 +35,7 @@ class Class318_Sub4 : Class318() {
         var anInt6411: Int = 0
         var anInt6412: Int = 0
         var anInt6413: Int = 0
-        fun method2501(i: Int, var_ha_Sub3: ha_Sub3?, `is`: IntArray?, i_0_: Byte, is_1_: IntArray?, i_2_: Int): aa_Sub2 {
+        fun method2501(i: Int, var_ha_Sub3: ha_Sub3?, `is`: IntArray?, i_0_: Byte, is_1_: IntArray?, i_2_: Int): IndexedSprite {
             try {
                 if (i_0_ >= -32) method2502(null, -18)
                 anInt6412++
@@ -51,7 +51,7 @@ class Class318_Sub4 : Class318() {
                         }
                         i_4_++
                     }
-                    return aa_Sub2(var_ha_Sub3, i_2_, i, is_3_)
+                    return IndexedSprite(var_ha_Sub3, i_2_, i, is_3_)
                 }
                 val is_7_ = IntArray(i * i_2_)
                 var i_8_ = 0
@@ -60,7 +60,7 @@ class Class318_Sub4 : Class318() {
                     for (i_10_ in 0..<is_1_!![i_8_]) is_7_[i_9_++] = -16777216
                     i_8_++
                 }
-                return aa_Sub2(var_ha_Sub3, i_2_, i, is_7_)
+                return IndexedSprite(var_ha_Sub3, i_2_, i, is_7_)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("jda.A(" + i + ',' + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ')'))
             }

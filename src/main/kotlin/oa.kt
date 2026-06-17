@@ -39,7 +39,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     external override fun w(bool: Boolean)
 
-    external override fun A(i: Int, var_aa: aa?, i_11_: Int, i_12_: Int)
+    external override fun A(i: Int, var_sprite: Sprite?, i_11_: Int, i_12_: Int)
 
     external override fun aa(i: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int)
 
@@ -215,8 +215,8 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         }
     }
 
-    override fun method3636(i: Int, i_95_: Int, i_96_: Int, i_97_: Int, i_98_: Int, i_99_: Int, var_aa: aa?, i_100_: Int, i_101_: Int) {
-        Z(i, i_95_, i_96_, i_97_, i_98_, i_99_, var_aa, i_100_, i_101_)
+    override fun method3636(i: Int, i_95_: Int, i_96_: Int, i_97_: Int, i_98_: Int, i_99_: Int, var_sprite: Sprite?, i_100_: Int, i_101_: Int) {
+        Z(i, i_95_, i_96_, i_97_, i_98_, i_99_, var_sprite, i_100_, i_101_)
     }
 
     @Synchronized
@@ -477,7 +477,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     external override fun da(i: Int, i_190_: Int, i_191_: Int, `is`: IntArray?)
 
-    override fun method3661(i: Int, i_192_: Int, `is`: IntArray?, is_193_: IntArray?): aa {
+    override fun method3661(i: Int, i_192_: Int, `is`: IntArray?, is_193_: IntArray?): Sprite {
         return na(this, aYa5121, i, i_192_, `is`, is_193_)
     }
 
@@ -489,7 +489,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         wa(i, i_194_, i_195_, i_196_, i_197_, i_198_)
     }
 
-    private external fun Z(i: Int, i_199_: Int, i_200_: Int, i_201_: Int, i_202_: Int, i_203_: Int, var_aa: aa?, i_204_: Int, i_205_: Int)
+    private external fun Z(i: Int, i_199_: Int, i_200_: Int, i_201_: Int, i_202_: Int, i_203_: Int, var_sprite: Sprite?, i_204_: Int, i_205_: Int)
 
     external override fun C(bool: Boolean)
 
@@ -527,7 +527,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         return true
     }
 
-    override fun method3703(i: Int, i_212_: Int, i_213_: Int, i_214_: Int, i_215_: Int, i_216_: Int, var_aa: aa?, i_217_: Int, i_218_: Int, i_219_: Int, i_220_: Int, i_221_: Int) {
+    override fun method3703(i: Int, i_212_: Int, i_213_: Int, i_214_: Int, i_215_: Int, i_216_: Int, var_sprite: Sprite?, i_217_: Int, i_218_: Int, i_219_: Int, i_220_: Int, i_221_: Int) {
         /* empty */
     }
 

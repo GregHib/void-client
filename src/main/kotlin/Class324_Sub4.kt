@@ -30,10 +30,10 @@ class Class324_Sub4 internal constructor(private var aHa_Sub1_6506: ha_Sub1, cla
         }
     }
 
-    private fun method2594(`is`: ByteArray, is_4_: IntArray, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_aa: aa?, i_14_: Int, i_15_: Int) {
+    private fun method2594(`is`: ByteArray, is_4_: IntArray, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_sprite: Sprite?, i_14_: Int, i_15_: Int) {
         var i_5_ = i_5_
         var i_6_ = i_6_
-        val var_aa_Sub3 = var_aa as aa_Sub3
+        val var_aa_Sub3 = var_sprite as RasterSprite
         val is_16_ = var_aa_Sub3.anIntArray5201
         val is_17_ = var_aa_Sub3.anIntArray5202
         val i_18_ = i_11_ - aHa_Sub1_6506.anInt7496
@@ -102,10 +102,10 @@ class Class324_Sub4 internal constructor(private var aHa_Sub1_6506: ha_Sub1, cla
         }
     }
 
-    override fun method2578(c: Char, i: Int, i_44_: Int, i_45_: Int, bool: Boolean, var_aa: aa?, i_46_: Int, i_47_: Int) {
+    override fun method2578(c: Char, i: Int, i_44_: Int, i_45_: Int, bool: Boolean, var_sprite: Sprite?, i_46_: Int, i_47_: Int) {
         var i = i
         var i_44_ = i_44_
-        if (var_aa == null) fa(c, i, i_44_, i_45_, bool)
+        if (var_sprite == null) fa(c, i, i_44_, i_45_, bool)
         else {
             i += anIntArray6507[c.code]
             i_44_ += anIntArray6508[c.code]
@@ -139,7 +139,7 @@ class Class324_Sub4 internal constructor(private var aHa_Sub1_6506: ha_Sub1, cla
                 i_53_ += i_57_
                 i_52_ += i_57_
             }
-            if (i_48_ > 0 && i_49_ > 0) method2594(aByteArrayArray6504[c.code]!!, aHa_Sub1_6506.anIntArray7483!!, i_45_, i_54_, i_51_, i_48_, i_49_, i_52_, i_53_, i, i_44_, anIntArray6503[c.code], var_aa, i_46_, i_47_)
+            if (i_48_ > 0 && i_49_ > 0) method2594(aByteArrayArray6504[c.code]!!, aHa_Sub1_6506.anIntArray7483!!, i_45_, i_54_, i_51_, i_48_, i_49_, i_52_, i_53_, i, i_44_, anIntArray6503[c.code], var_sprite, i_46_, i_47_)
         }
     }
 

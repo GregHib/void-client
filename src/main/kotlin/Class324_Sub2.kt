@@ -5,7 +5,7 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: ha_Sub3, cla
     private val aBoolean6493: Boolean
     private val anInterface5_Impl1_6495: Interface5_Impl1
 
-    override fun method2578(c: Char, i: Int, i_0_: Int, i_1_: Int, bool: Boolean, var_aa: aa?, i_2_: Int, i_3_: Int) {
+    override fun method2578(c: Char, i: Int, i_0_: Int, i_1_: Int, bool: Boolean, var_sprite: Sprite?, i_2_: Int, i_3_: Int) {
         /* empty */
     }
 

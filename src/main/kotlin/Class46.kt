@@ -302,10 +302,10 @@ class Class46 {
     @JvmField
     var anInt842: Int = 0
 
-    fun method425(var_ha: ha, i: Byte): aa? {
+    fun method425(var_ha: ha, i: Byte): Sprite? {
         anInt767++
-        var var_aa = Class239_Sub24.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as aa?
-        if (var_aa != null) return var_aa
+        var var_sprite = Class239_Sub24.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
+        if (var_sprite != null) return var_sprite
         val class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
         if (class207 == null) return null
         val i_10_ = (class207.anInt2703 + (class207.anInt2702 + class207.anInt2698))
@@ -336,9 +336,9 @@ class Class46 {
             this.anIntArray772!![(i_12_ + class207.anInt2700)] = i_15_ + -i_13_
             i_12_++
         }
-        var_aa = var_ha.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772)
-        Class239_Sub24.aClass60_6096!!.method582(var_aa, this.anInt830.toLong(), (-104).toByte())
-        return var_aa
+        var_sprite = var_ha.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772)
+        Class239_Sub24.aClass60_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
+        return var_sprite
     }
 
     fun method426(var_ha: ha?, i: Byte): Class324? {

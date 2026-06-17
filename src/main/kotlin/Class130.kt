@@ -57,7 +57,7 @@ abstract class Class130 {
         @JvmStatic
         fun method1130(var_r: r?, i: Int, i_1_: Int, i_2_: Int, bools: BooleanArray?): Boolean {
             var bool = false
-            if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {
+            if (NativeSprite.aSArray5191 != Class332.aSArray4142) {
                 val i_3_ = Class348_Sub1_Sub1.aSArray8801!![i]!!.method3986(i_1_, i_2_, (-109).toByte())
                 var i_4_ = 0
                 while ( /**/i_4_ <= i) {

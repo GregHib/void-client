@@ -1,7 +1,7 @@
 /* aa - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-abstract class aa {
+abstract class Sprite {
     companion object {
         @JvmField
         var anInt113: Int = 0

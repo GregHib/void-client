@@ -64,7 +64,7 @@ public abstract class Class101 {
             Class322.anIntArray4031 = IntArray(i_6_)
             Class348_Sub50.aByteArrayArray7212 = arrayOfNulls<ByteArray>(i_6_)
             Class239_Sub6.anIntArrayArray5894 = Array<IntArray?>(i_6_) { IntArray(4) }
-            aa_Sub1.anIntArray5192 = IntArray(i_6_)
+            NativeSprite.anIntArray5192 = IntArray(i_6_)
             Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)
             Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_6_)
             r.anIntArray9724 = IntArray(i_6_)
@@ -80,13 +80,13 @@ public abstract class Class101 {
                 while (((i_5_ + (Class348_Sub40_Sub3.anInt9109 shr 4)) / 8 >= i_8_)) {
                     val i_9_ = i_8_ + (i_7_ shl 8)
                     Class348_Sub23_Sub3.anIntArray9042!![i_6_] = i_9_
-                    aa_Sub1.anIntArray5192!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
+                    NativeSprite.anIntArray5192!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
                     Applet_Sub1.anIntArray38!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
                     Class322.anIntArray4031!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
                     Class295.anIntArray3759!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
                     r.anIntArray9724!![i_6_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i.toInt(), -49)))
                     if (Class322.anIntArray4031!![i_6_] == -1) {
-                        aa_Sub1.anIntArray5192!![i_6_] = -1
+                        NativeSprite.anIntArray5192!![i_6_] = -1
                         Applet_Sub1.anIntArray38!![i_6_] = -1
                         Class295.anIntArray3759!![i_6_] = -1
                         r.anIntArray9724!![i_6_] = -1
@@ -99,7 +99,7 @@ public abstract class Class101 {
             var i_10_ = i_6_
             while (Class322.anIntArray4031!!.size > i_10_) {
                 Class322.anIntArray4031!![i_10_] = -1
-                aa_Sub1.anIntArray5192!![i_10_] = -1
+                NativeSprite.anIntArray5192!![i_10_] = -1
                 Applet_Sub1.anIntArray38!![i_10_] = -1
                 Class295.anIntArray3759!![i_10_] = -1
                 r.anIntArray9724!![i_10_] = -1

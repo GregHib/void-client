@@ -880,8 +880,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             }
                         }
                     }
-                    if (!IOException_Sub1.aBoolean86) method1683(var_ha, if (i_180_ != 0) null else var_s, i_180_, 127.toByte(), `is`, aa_Sub1.aSArray5191!![i_180_], if (i_180_ != 0) null else var_s_179_)
-                    else method1676(if (i_180_ != 0) null else var_s, aa_Sub1.aSArray5191!![i_180_], -26833, if (i_180_ == 0) var_s_179_ else null, `is`, var_ha, i_180_)
+                    if (!IOException_Sub1.aBoolean86) method1683(var_ha, if (i_180_ != 0) null else var_s, i_180_, 127.toByte(), `is`, NativeSprite.aSArray5191!![i_180_], if (i_180_ != 0) null else var_s_179_)
+                    else method1676(if (i_180_ != 0) null else var_s, NativeSprite.aSArray5191!![i_180_], -26833, if (i_180_ == 0) var_s_179_ else null, `is`, var_ha, i_180_)
                     aByteArrayArrayArray3113[i_180_] = null
                     aByteArrayArrayArray3123[i_180_] = null
                     aByteArrayArrayArray3126[i_180_] = null
@@ -894,7 +894,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                 }
                 var i_196_ = 0
                 while ((this.anInt3130 > i_196_)) {
-                    aa_Sub1.aSArray5191!![i_196_]!!.YA()
+                    NativeSprite.aSArray5191!![i_196_]!!.YA()
                     i_196_++
                 }
             }

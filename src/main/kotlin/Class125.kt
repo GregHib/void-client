@@ -76,11 +76,11 @@ class Class125 internal constructor(i: Int, class221: Class221?, class341: Class
             anInt4916++
             if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false
             if (Class225.anInt2946 < 100) return false
-            if (!aa_Sub2.method164(i_1_, i_3_, (-97).toByte(), i)) return false
+            if (!IndexedSprite.method164(i_1_, i_3_, (-97).toByte(), i)) return false
             val i_4_ = i_3_ shl Class362.anInt4459
             val i_5_ = i shl Class362.anInt4459
             if (i_2_.toInt() != -79) anInt4919 = 64
-            if (method1084(i_0_, Class270.anInt3465, i_5_, i_4_, aa_Sub1.aSArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_3_), Class270.anInt3465, 18507)) {
+            if (method1084(i_0_, Class270.anInt3465, i_5_, i_4_, NativeSprite.aSArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_3_), Class270.anInt3465, 18507)) {
                 Class348_Sub40_Sub4.anInt9112++
                 return true
             }

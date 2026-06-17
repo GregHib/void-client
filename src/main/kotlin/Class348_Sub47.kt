@@ -4,7 +4,7 @@ import Class348_Sub17.Companion.method2929
 import Class348_Sub22.Companion.method2959
 import Class367_Sub10.Companion.method3553
 import Class62.method599
-import aa_Sub3.Companion.method166
+import RasterSprite.Companion.method166
 
 class Class348_Sub47 : Class348() {
     var aClass348_Sub49_Sub2_7116: Class348_Sub49_Sub2? = null

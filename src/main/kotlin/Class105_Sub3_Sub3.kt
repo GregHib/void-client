@@ -767,7 +767,7 @@ class Class105_Sub3_Sub3 : Class105_Sub3 {
         }
     }
 
-    override fun method963(i: Int, i_265_: Int, var_aa: aa?, i_266_: Int, i_267_: Int) {
+    override fun method963(i: Int, i_265_: Int, var_sprite: Sprite?, i_266_: Int, i_267_: Int) {
         var i = i
         var i_265_ = i_265_
         check(!aHa_Sub1_8460.method3716())
@@ -804,7 +804,7 @@ class Class105_Sub3_Sub3 : Class105_Sub3 {
             i_272_ += i_277_
         }
         if (i_270_ > 0 && i_271_ > 0) {
-            val var_aa_Sub3 = var_aa as aa_Sub3?
+            val var_aa_Sub3 = var_sprite as RasterSprite?
             val `is` = var_aa_Sub3!!.anIntArray5201
             val is_278_ = var_aa_Sub3.anIntArray5202
             val is_279_ = (aHa_Sub1_8460.anIntArray7483)

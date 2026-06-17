@@ -116,7 +116,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         }
     }
 
-    override fun method3703(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, var_aa: aa?, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int) {
+    override fun method3703(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, var_sprite: Sprite?, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int) {
         var i = i
         var i_12_ = i_12_
         var i_13_ = i_13_
@@ -125,7 +125,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         var i_19_ = i_19_
         var i_20_ = i_20_
         var i_21_ = i_21_
-        val var_aa_Sub3 = var_aa as aa_Sub3
+        val var_aa_Sub3 = var_sprite as RasterSprite
         val `is` = var_aa_Sub3.anIntArray5201
         val is_22_ = var_aa_Sub3.anIntArray5202
         val i_23_ = (max(this.anInt7476, i_18_))
@@ -271,8 +271,8 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         } else throw IllegalArgumentException()
     }
 
-    override fun method3661(i: Int, i_63_: Int, `is`: IntArray?, is_64_: IntArray?): aa {
-        return aa_Sub3(i, i_63_, `is`, is_64_)
+    override fun method3661(i: Int, i_63_: Int, `is`: IntArray?, is_64_: IntArray?): Sprite {
+        return RasterSprite(i, i_63_, `is`, is_64_)
     }
 
     override fun method3685(class98: Class98, i: Int) {
@@ -541,9 +541,9 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         this.aClass101_Sub1_7492 = class101 as Class101_Sub1
     }
 
-    override fun A(i: Int, var_aa: aa?, i_145_: Int, i_146_: Int) {
+    override fun A(i: Int, var_sprite: Sprite?, i_145_: Int, i_146_: Int) {
         var i_146_ = i_146_
-        val var_aa_Sub3 = var_aa as aa_Sub3
+        val var_aa_Sub3 = var_sprite as RasterSprite
         val `is` = var_aa_Sub3.anIntArray5201
         val is_147_ = var_aa_Sub3.anIntArray5202
         val i_148_: Int
@@ -1053,13 +1053,13 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         class167!!.aBoolean2202 = bool
     }
 
-    override fun method3636(i: Int, i_285_: Int, i_286_: Int, i_287_: Int, i_288_: Int, i_289_: Int, var_aa: aa?, i_290_: Int, i_291_: Int) {
+    override fun method3636(i: Int, i_285_: Int, i_286_: Int, i_287_: Int, i_288_: Int, i_289_: Int, var_sprite: Sprite?, i_290_: Int, i_291_: Int) {
         var i = i
         var i_285_ = i_285_
         var i_286_ = i_286_
         var i_287_ = i_287_
         var i_288_ = i_288_
-        val var_aa_Sub3 = var_aa as aa_Sub3
+        val var_aa_Sub3 = var_sprite as RasterSprite
         val `is` = var_aa_Sub3.anIntArray5201
         val is_292_ = var_aa_Sub3.anIntArray5202
         val i_293_ = (max(this.anInt7476, i_291_))

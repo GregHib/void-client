@@ -1,7 +1,7 @@
 /* na - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-class na(var_oa: oa?, var_ya: ya?, i: Int, i_2_: Int, `is`: IntArray?, is_3_: IntArray?) : aa(), Interface19 {
+class na(var_oa: oa?, var_ya: ya?, i: Int, i_2_: Int, `is`: IntArray?, is_3_: IntArray?) : Sprite(), Interface19 {
     @JvmField
     var nativeid: Long = 0
 

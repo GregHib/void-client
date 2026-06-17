@@ -88,8 +88,8 @@ class Class239_Sub2 : Class239 {
                         if (i_9_ < 3 && Class79.method802(i_8_, i_7_, true)) i_9_++
                         var i_10_ = 0
                         if ((Class338.aClass237_Sub1_4197!!.aByteArrayArrayArray3104) != null && (Class338.aClass237_Sub1_4197!!.aByteArrayArrayArray3104!![i_9_]) != null) i_10_ = 8 * ((Class338.aClass237_Sub1_4197!!.aByteArrayArrayArray3104!![i_9_]!![i_7_]!![i_8_]).toInt() and 0xff) shl 2
-                        if (aa_Sub1.aSArray5191 != null && aa_Sub1.aSArray5191!![i_9_] != null) {
-                            val i_11_ = (i_5_ + i_10_ + -aa_Sub1.aSArray5191!![i_9_]!!.method3982((-86).toByte(), i_8_, i_7_))
+                        if (NativeSprite.aSArray5191 != null && NativeSprite.aSArray5191!![i_9_] != null) {
+                            val i_11_ = (i_5_ + i_10_ + -NativeSprite.aSArray5191!![i_9_]!!.method3982((-86).toByte(), i_8_, i_7_))
                             if (i_6_ < i_11_) i_6_ = i_11_
                         }
                     }

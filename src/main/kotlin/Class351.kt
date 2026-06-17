@@ -26,7 +26,7 @@ class Class351 internal constructor(private var anInt4326: Int, var anInt4323: I
             var i_0_ = 0
             while ((i_0_ < Class348_Sub42_Sub12.anInt9604)) {
                 if (string.equals(Class122.aStringArray1808!![i_0_], ignoreCase = true)) return true
-                if (string.equals(aa_Sub2.aStringArray5197!![i_0_], ignoreCase = true)) return true
+                if (string.equals(IndexedSprite.aStringArray5197!![i_0_], ignoreCase = true)) return true
                 i_0_++
             }
             if (i != 28280) aBoolean4328 = false

@@ -101,7 +101,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                 class318_sub1_sub2.anInt6382 = i_2_
                 class318_sub1_sub2.y = (i_1_ shl Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037
                 class357.aClass318_Sub1_Sub2_4408 = class318_sub1_sub2
-                val i_3_ = if (aa_Sub1.aSArray5191 == Class332.aSArray4142) 1 else 0
+                val i_3_ = if (NativeSprite.aSArray5191 == Class332.aSArray4142) 1 else 0
                 if (class318_sub1_sub2.method2376(-52)) {
                     if (class318_sub1_sub2.method2377(122.toByte())) {
                         class318_sub1_sub2.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_3_]
@@ -144,7 +144,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                                 Class51.aStringArray932!![i_10_] = Class51.aStringArray932!![i_10_ + 1]
                                 Class122.aStringArray1808!![i_10_] = Class122.aStringArray1808!![1 + i_10_]
                                 Class348_Sub40_Sub21.aStringArray9275!![i_10_] = (Class348_Sub40_Sub21.aStringArray9275!![1 + i_10_])
-                                aa_Sub2.aStringArray5197!![i_10_] = aa_Sub2.aStringArray5197!![1 + i_10_]
+                                IndexedSprite.aStringArray5197!![i_10_] = IndexedSprite.aStringArray5197!![1 + i_10_]
                                 Class367_Sub3.Companion.aBooleanArray7304!![i_10_] = Class367_Sub3.Companion.aBooleanArray7304!![i_10_ - -1]
                                 i_10_++
                             }

@@ -1,7 +1,7 @@
 /* aa_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class aa_Sub2 : aa {
+class IndexedSprite : Sprite {
     @JvmField
     var anInterface18_Impl3_5196: Interface18_Impl3? = null
 
@@ -57,19 +57,19 @@ class aa_Sub2 : aa {
             val i_3_ = Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
             if (i_3_ == -Class234.anInt3049) return false
             if (Class234.anInt3049 == i_3_) return true
-            if (Class332.aSArray4142 == aa_Sub1.Companion.aSArray5191) return false
+            if (Class332.aSArray4142 == NativeSprite.Companion.aSArray5191) return false
             val i_4_ = i_0_ shl Class362.anInt4459
             val i_5_ = i_2_ shl Class362.anInt4459
             if (i_1_.toInt() != -97) method163(-4)
-            if ((Class286_Sub7.method2169(i_4_ - -1, i_4_ - (-Class270.anInt3465 - -1), 1 + i_5_, 1 + i_4_, -1 + (i_5_ - -Class270.anInt3465), aa_Sub1.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, i_0_), aa_Sub1.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, 1 + i_0_), aa_Sub1.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_), -1 + Class270.anInt3465 + i_5_, false)) && (Class286_Sub7.method2169(
+            if ((Class286_Sub7.method2169(i_4_ - -1, i_4_ - (-Class270.anInt3465 - -1), 1 + i_5_, 1 + i_4_, -1 + (i_5_ - -Class270.anInt3465), NativeSprite.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, i_0_), NativeSprite.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, 1 + i_0_), NativeSprite.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_), -1 + Class270.anInt3465 + i_5_, false)) && (Class286_Sub7.method2169(
                     1 + i_4_,
                     Class270.anInt3465 + (i_4_ + -1),
                     i_5_ + 1,
                     Class270.anInt3465 + (i_4_ - 1),
                     i_5_ + Class270.anInt3465 - 1,
-                    aa_Sub1.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), i_2_ - -1, 1 + i_0_),
-                    aa_Sub1.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_ + 1),
-                    aa_Sub1.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_),
+                    NativeSprite.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), i_2_ - -1, 1 + i_0_),
+                    NativeSprite.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_ + 1),
+                    NativeSprite.Companion.aSArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_),
                     1 + i_5_,
                     false
                 ))

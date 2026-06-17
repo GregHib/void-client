@@ -20,8 +20,8 @@ class j : Class105, Interface19 {
 
     private external fun M(l: Long): Int
 
-    public override fun method963(i: Int, i_25_: Int, var_aa: aa?, i_26_: Int, i_27_: Int) {
-        V(this.nativeid, i, i_25_, (var_aa as na).nativeid, i_26_, i_27_)
+    public override fun method963(i: Int, i_25_: Int, var_sprite: Sprite?, i_26_: Int, i_27_: Int) {
+        V(this.nativeid, i, i_25_, (var_sprite as na).nativeid, i_26_, i_27_)
     }
 
     public override fun method984(`is`: IntArray?) {
@@ -48,8 +48,8 @@ class j : Class105, Interface19 {
         N(this.nativeid, i, i_37_, i_38_)
     }
 
-    public override fun method983(f: Float, f_39_: Float, f_40_: Float, f_41_: Float, f_42_: Float, f_43_: Float, i: Int, var_aa: aa?, i_44_: Int, i_45_: Int) {
-        UA(this.nativeid, f, f_39_, f_40_, f_41_, f_42_, f_43_, i, (var_aa as na).nativeid, i_44_, i_45_)
+    public override fun method983(f: Float, f_39_: Float, f_40_: Float, f_41_: Float, f_42_: Float, f_43_: Float, i: Int, var_sprite: Sprite?, i_44_: Int, i_45_: Int) {
+        UA(this.nativeid, f, f_39_, f_40_, f_41_, f_42_, f_43_, i, (var_sprite as na).nativeid, i_44_, i_45_)
     }
 
     public override fun method969(): Int {

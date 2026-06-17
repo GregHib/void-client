@@ -116,11 +116,11 @@ class Class105_Sub2 : Class105 {
         aClass258_Sub3_Sub1_8434.method1967(i, i_28_, i_30_, i_26_, i_29_, ((-120).toByte()).toByte(), i_27_)
     }
 
-    override fun method963(i: Int, i_31_: Int, var_aa: aa?, i_32_: Int, i_33_: Int) {
+    override fun method963(i: Int, i_31_: Int, var_sprite: Sprite?, i_32_: Int, i_33_: Int) {
         var i = i
         var i_31_ = i_31_
         anInt8424++
-        val var_aa_Sub1 = var_aa as aa_Sub1?
+        val var_aa_Sub1 = var_sprite as NativeSprite?
         val class258_sub3_sub1 = var_aa_Sub1!!.aClass258_Sub3_Sub1_5193
         aClass258_Sub3_Sub1_8434.method1957(9728, false)
         aHa_Sub2_8430!!.method3792(75)
@@ -184,7 +184,7 @@ class Class105_Sub2 : Class105 {
         }
     }
 
-    override fun method983(f: Float, f_44_: Float, f_45_: Float, f_46_: Float, f_47_: Float, f_48_: Float, i: Int, var_aa: aa?, i_49_: Int, i_50_: Int) {
+    override fun method983(f: Float, f_44_: Float, f_45_: Float, f_46_: Float, f_47_: Float, f_48_: Float, i: Int, var_sprite: Sprite?, i_49_: Int, i_50_: Int) {
         var f = f
         var f_44_ = f_44_
         var f_45_ = f_45_
@@ -192,7 +192,7 @@ class Class105_Sub2 : Class105 {
         var f_47_ = f_47_
         var f_48_ = f_48_
         anInt8448++
-        val class258_sub3_sub1 = (var_aa as aa_Sub1).aClass258_Sub3_Sub1_5193
+        val class258_sub3_sub1 = (var_sprite as NativeSprite).aClass258_Sub3_Sub1_5193
         if (aBoolean8427) {
             val f_51_ = method966().toFloat()
             val f_52_ = method980().toFloat()

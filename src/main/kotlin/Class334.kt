@@ -57,7 +57,7 @@ class Class334 {
             return c >= '0' && c <= '9'
         }
 
-        fun method2650(class143: Class143?, i: Int, var_aa: aa?, i_1_: Int, i_2_: Int, string: String?, i_3_: Int, class324: Class324?, i_4_: Int, class46: Class46?, i_5_: Int, i_6_: Int) {
+        fun method2650(class143: Class143?, i: Int, var_sprite: Sprite?, i_1_: Int, i_2_: Int, string: String?, i_3_: Int, class324: Class324?, i_4_: Int, class46: Class46?, i_5_: Int, i_6_: Int) {
             try {
                 anInt4153++
                 val i_7_: Int
@@ -77,10 +77,10 @@ class Class334 {
                     val i_14_ = class143!!.method1187(string, false, 100, null)
                     val i_15_ = class143.method1185(null, 0, 0, i_6_, string)
                     i_12_ -= i_14_ / 2
-                    if (-class46.anInt709 <= i_12_ && class46.anInt709 >= i_12_ && (i_13_ >= -class46.anInt789) && class46.anInt789 >= i_13_) class324!!.method2584(null, 0, 0, null, i, 0, 50, var_aa, (-i_4_ + (i_3_ + (class46.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (class46.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string)
+                    if (-class46.anInt709 <= i_12_ && class46.anInt709 >= i_12_ && (i_13_ >= -class46.anInt789) && class46.anInt789 >= i_13_) class324!!.method2584(null, 0, 0, null, i, 0, 50, var_sprite, (-i_4_ + (i_3_ + (class46.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (class46.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dk.H(" + (if (class143 != null) "{...}" else "null") + ',' + i + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (class324 != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("dk.H(" + (if (class143 != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (class324 != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
             }
         }
 

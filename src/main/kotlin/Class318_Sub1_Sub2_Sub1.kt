@@ -87,7 +87,7 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
             val bool = false
             val bool_12_ = false
             val bool_13_ = false
-            val var_s = aa_Sub1.aSArray5191!![this.aByte6376.toInt()]
+            val var_s = NativeSprite.aSArray5191!![this.aByte6376.toInt()]
             val i_14_ = anInt10184 shl 1
             val i_15_ = i_14_
             val i_16_ = -i_14_ / 2

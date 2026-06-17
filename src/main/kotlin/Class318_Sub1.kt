@@ -106,7 +106,7 @@ abstract class Class318_Sub1 : Class318() {
         }
 
         @JvmStatic
-        fun method2385(class46: Class46?, i: Int, var_aa: aa?, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Byte, i_8_: Int, var_ha: ha?) {
+        fun method2385(class46: Class46?, i: Int, var_sprite: Sprite?, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Byte, i_8_: Int, var_ha: ha?) {
             do {
                 try {
                     anInt6390++
@@ -152,7 +152,7 @@ abstract class Class318_Sub1 : Class318() {
                                         i_16_ = i_19_
                                         i_17_ = i_20_
                                     }
-                                    var_ha!!.method3703(i_14_, i_15_, i_16_, i_17_, (class42.anIntArray572[((class42.aByteArray564[i_13_]).toInt() and 0xff)]), 1, var_aa, i_6_, i, class42.anInt584, class42.anInt575, (class42.anInt601))
+                                    var_ha!!.method3703(i_14_, i_15_, i_16_, i_17_, (class42.anIntArray572[((class42.aByteArray564[i_13_]).toInt() and 0xff)]), 1, var_sprite, i_6_, i, class42.anInt584, class42.anInt575, (class42.anInt601))
                                     i_13_++
                                 }
                                 var i_21_ = `is`[-2 + `is`.size]
@@ -171,20 +171,20 @@ abstract class Class318_Sub1 : Class318() {
                                     i_22_ = i_24_
                                     i_24_ = i_27_
                                 }
-                                var_ha!!.method3703(i_21_, i_22_, i_23_, i_24_, (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size - 1)]).toInt() and 0xff]), 1, var_aa, i_6_, i, class42.anInt584, class42.anInt575, class42.anInt601)
+                                var_ha!!.method3703(i_21_, i_22_, i_23_, i_24_, (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size - 1)]).toInt() and 0xff]), 1, var_sprite, i_6_, i, class42.anInt584, class42.anInt575, class42.anInt601)
                             } else {
                                 var i_28_ = 0
                                 while (-1 + `is`.size / 2 > i_28_) {
-                                    var_ha!!.method3636(`is`[i_28_ * 2], `is`[2 * i_28_ + 1], `is`[2 * (i_28_ - -1)], `is`[2 * i_28_ + 3], (class42.anIntArray572[((class42.aByteArray564[i_28_]).toInt() and 0xff)]), 1, var_aa, i_6_, i)
+                                    var_ha!!.method3636(`is`[i_28_ * 2], `is`[2 * i_28_ + 1], `is`[2 * (i_28_ - -1)], `is`[2 * i_28_ + 3], (class42.anIntArray572[((class42.aByteArray564[i_28_]).toInt() and 0xff)]), 1, var_sprite, i_6_, i)
                                     i_28_++
                                 }
-                                var_ha!!.method3636(`is`[`is`.size + -2], `is`[-1 + `is`.size], `is`[0], `is`[1], (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size + -1)]).toInt() and 0xff]), 1, var_aa, i_6_, i)
+                                var_ha!!.method3636(`is`[`is`.size + -2], `is`[-1 + `is`.size], `is`[0], `is`[1], (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size + -1)]).toInt() and 0xff]), 1, var_sprite, i_6_, i)
                             }
                         }
                         var class105: Class105? = null
                         if (class42.anInt578 != -1) {
                             class105 = class42.method374(false, var_ha!!, 127.toByte())
-                            if (class105 != null) Class151.method1211(i, class105, i_6_, class46, var_aa, i_8_, 2, i_5_)
+                            if (class105 != null) Class151.method1211(i, class105, i_6_, class46, var_sprite, i_8_, 2, i_5_)
                         }
                         if (class42.aString597 == null) break
                         var i_29_ = 0
@@ -199,10 +199,10 @@ abstract class Class318_Sub1 : Class318() {
                             class143 = Class369.aClass143_4962
                             class324 = Class262.aClass324_3326
                         }
-                        Class334.method2650(class143, class42.anInt580, var_aa, i_8_, i_6_, class42.aString597, i, class324, i_29_, class46, i_5_, 100)
+                        Class334.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, class46, i_5_, 100)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("ga.KA(" + (if (class46 != null) "{...}" else "null") + ',' + i + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_ha != null) "{...}" else "null") + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("ga.KA(" + (if (class46 != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_ha != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

@@ -848,7 +848,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null
             Class332.aSArray4142 = null
             Class147.aClass357ArrayArrayArray2029 = null
-            aa_Sub1.aSArray5191 = null
+            NativeSprite.aSArray5191 = null
             Class99.aBooleanArrayArray1572 = null
             Class348_Sub8.aBooleanArrayArray6656 = null
             Class171.anIntArray2272 = null

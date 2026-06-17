@@ -376,13 +376,13 @@ class Class88 {
                                 Class132.aPlayer_1907!!.aString10544 = Class132.aPlayer_1907!!.aString10537
                                 Applet_Sub1.anInt37 = class348_sub49_sub2.readUnsignedByte(255)
                                 Class348_Sub1.anInt6551 = class348_sub49_sub2.readInt((-126).toByte())
-                                aa_Sub2.aClass161_5199 = Class161()
-                                aa_Sub2.aClass161_5199!!.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944)
-                                if (aa_Sub2.aClass161_5199!!.anInt2143 == 65535) aa_Sub2.aClass161_5199!!.anInt2143 = -1
-                                aa_Sub2.aClass161_5199!!.aString2147 = class348_sub49_sub2.method3371(-13487)
+                                IndexedSprite.aClass161_5199 = Class161()
+                                IndexedSprite.aClass161_5199!!.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944)
+                                if (IndexedSprite.aClass161_5199!!.anInt2143 == 65535) IndexedSprite.aClass161_5199!!.anInt2143 = -1
+                                IndexedSprite.aClass161_5199!!.aString2147 = class348_sub49_sub2.method3371(-13487)
                                 if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-                                    aa_Sub2.aClass161_5199!!.anInt2138 = (50000 + (aa_Sub2.aClass161_5199!!.anInt2143))
-                                    aa_Sub2.aClass161_5199!!.anInt2148 = (40000 + (aa_Sub2.aClass161_5199!!.anInt2143))
+                                    IndexedSprite.aClass161_5199!!.anInt2138 = (50000 + (IndexedSprite.aClass161_5199!!.anInt2143))
+                                    IndexedSprite.aClass161_5199!!.anInt2148 = (40000 + (IndexedSprite.aClass161_5199!!.anInt2143))
                                 }
                                 if (Class8.aClass364_165 != Class76.Companion.aClass364_1279 && ((Class3.aClass161_125!!.method1264(94.toByte(), Class135_Sub2.aClass161_4839)) || (Class3.aClass161_125!!.method1264(112.toByte(), (Class348_Sub40_Sub35.aClass161_9443))))) Class348_Sub42_Sub20.method3283(114)
                             }

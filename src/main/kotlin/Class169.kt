@@ -101,7 +101,7 @@ class Class169 : Runnable {
 
         @JvmStatic
         fun method1301(var_r: r?, i: Int, i_0_: Int, i_1_: Int, bools: BooleanArray?) {
-            if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {
+            if (NativeSprite.aSArray5191 != Class332.aSArray4142) {
                 val i_2_ = Class348_Sub1_Sub1.aSArray8801!![i]!!.method3986(i_0_, i_1_, (-93).toByte())
                 for (i_3_ in 0..i) {
                     if (bools == null || bools[i_3_]) {

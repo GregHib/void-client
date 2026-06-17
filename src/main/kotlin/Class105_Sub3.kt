@@ -40,10 +40,10 @@ abstract class Class105_Sub3(@JvmField var aHa_Sub1_8460: ha_Sub1, @JvmField var
         this.aHa_Sub1_8460.KA(anIntArray8462!![0], anIntArray8462!![1], anIntArray8462!![2], anIntArray8462!![3])
     }
 
-    override fun method983(f: Float, f_17_: Float, f_18_: Float, f_19_: Float, f_20_: Float, f_21_: Float, i: Int, var_aa: aa?, i_22_: Int, i_23_: Int) {
+    override fun method983(f: Float, f_17_: Float, f_18_: Float, f_19_: Float, f_20_: Float, f_21_: Float, i: Int, var_sprite: Sprite?, i_22_: Int, i_23_: Int) {
         check(!this.aHa_Sub1_8460.method3716())
         if (method997(f, f_17_, f_18_, f_19_, f_20_, f_21_)) {
-            val var_aa_Sub3 = var_aa as aa_Sub3
+            val var_aa_Sub3 = var_sprite as RasterSprite
             method995(var_aa_Sub3.anIntArray5201, var_aa_Sub3.anIntArray5202, anInt8473 - i_22_, -i_23_ - (anInt8468 - anInt8466))
         }
     }
@@ -114,7 +114,7 @@ abstract class Class105_Sub3(@JvmField var aHa_Sub1_8460: ha_Sub1, @JvmField var
         return (this.anInt8461 + this.anInt8471 + this.anInt8454)
     }
 
-    abstract override fun method963(i: Int, i_56_: Int, var_aa: aa?, i_57_: Int, i_58_: Int)
+    abstract override fun method963(i: Int, i_56_: Int, var_sprite: Sprite?, i_57_: Int, i_58_: Int)
 
     private fun method997(f: Float, f_59_: Float, f_60_: Float, f_61_: Float, f_62_: Float, f_63_: Float): Boolean {
         var f = f

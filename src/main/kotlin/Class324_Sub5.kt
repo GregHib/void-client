@@ -116,8 +116,8 @@ class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: ha_Sub2, cla
         }
     }
 
-    override fun method2578(c: Char, i: Int, i_42_: Int, i_43_: Int, bool: Boolean, var_aa: aa?, i_44_: Int, i_45_: Int) {
-        val var_aa_Sub1 = var_aa as aa_Sub1
+    override fun method2578(c: Char, i: Int, i_42_: Int, i_43_: Int, bool: Boolean, var_sprite: Sprite?, i_44_: Int, i_45_: Int) {
+        val var_aa_Sub1 = var_sprite as NativeSprite
         val class258_sub3_sub1 = var_aa_Sub1.aClass258_Sub3_Sub1_5193
         aHa_Sub2_6509.method3735(9473)
         aHa_Sub2_6509.method3771((-109).toByte(), aClass258_Sub3_Sub1_6511)

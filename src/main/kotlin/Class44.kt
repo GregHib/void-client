@@ -104,7 +104,7 @@ object Class44 {
         if (class357 != null) {
             class357.aClass318_Sub1_Sub5_4395 = class318_sub1_sub5
             class357.aClass318_Sub1_Sub5_4407 = class318_sub1_sub5_20_
-            val i_21_ = if (aa_Sub1.aSArray5191 == Class332.aSArray4142) 1 else 0
+            val i_21_ = if (NativeSprite.aSArray5191 == Class332.aSArray4142) 1 else 0
             if (class318_sub1_sub5.method2376(-62)) {
                 if (class318_sub1_sub5.method2377(122.toByte())) {
                     class318_sub1_sub5.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_21_]

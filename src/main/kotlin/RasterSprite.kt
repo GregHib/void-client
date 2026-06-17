@@ -1,4 +1,4 @@
-class aa_Sub3(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : aa() {
+class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprite() {
     @JvmField
     var anIntArray5201: IntArray?
     @JvmField

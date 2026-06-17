@@ -64,7 +64,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                         i_12_ = (1 + i_8_ shr 1) + i_5_
                         i_13_ = (i_8_ shr 1) + i_5_
                     }
-                    val var_s = aa_Sub1.aSArray5191!![i_2_]
+                    val var_s = NativeSprite.aSArray5191!![i_2_]
                     val i_14_ = ((var_s!!.method3982((-86).toByte(), i_13_, i_10_) + var_s.method3982((-86).toByte(), i_13_, i_11_) - (-var_s.method3982((-86).toByte(), i_12_, i_10_) - var_s.method3982((-86).toByte(), i_12_, i_11_))) shr 2)
                     val i_15_ = (i shl 9) - -(i_9_ shl 8)
                     val i_16_ = (i_8_ shl 8) + (i_5_ shl 9)

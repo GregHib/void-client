@@ -228,11 +228,11 @@ class Class105_Sub1 : Class105 {
         aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737)
     }
 
-    override fun method983(f: Float, f_66_: Float, f_67_: Float, f_68_: Float, f_69_: Float, f_70_: Float, i: Int, var_aa: aa?, i_71_: Int, i_72_: Int) {
+    override fun method983(f: Float, f_66_: Float, f_67_: Float, f_68_: Float, f_69_: Float, f_70_: Float, i: Int, var_sprite: Sprite?, i_71_: Int, i_72_: Int) {
         anInt8390++
         val class101_sub2 = aHa_Sub3_8407!!.method3934(-121)
         val class101_sub2_73_ = aHa_Sub3_8407.method3820(false)
-        val var_aa_Sub2 = var_aa as aa_Sub2?
+        val var_aa_Sub2 = var_sprite as IndexedSprite?
         val interface18_impl3 = var_aa_Sub2!!.anInterface18_Impl3_5196
         anInterface18_Impl3_8403!!.method64((if (aBoolean8410 || aBoolean8408 || (0x1 and i) == 0) Class206.aClass209_4874 else Class71.aClass209_1212), -22095)
         aHa_Sub3_8407.method3864(101)
@@ -392,11 +392,11 @@ class Class105_Sub1 : Class105 {
         }
     }
 
-    override fun method963(i: Int, i_113_: Int, var_aa: aa?, i_114_: Int, i_115_: Int) {
+    override fun method963(i: Int, i_113_: Int, var_sprite: Sprite?, i_114_: Int, i_115_: Int) {
         var i = i
         var i_113_ = i_113_
         anInt8414++
-        val var_aa_Sub2 = var_aa as aa_Sub2?
+        val var_aa_Sub2 = var_sprite as IndexedSprite?
         i_113_ += anInt8419
         i += anInt8400
         val interface18_impl3 = var_aa_Sub2!!.anInterface18_Impl3_5196

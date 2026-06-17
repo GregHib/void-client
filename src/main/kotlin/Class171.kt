@@ -108,7 +108,7 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
                         i_6_++
                     }
                     r.aBooleanArray9718!![i] = true
-                    aa_Sub1.aSArray5191!![i_3_]!!.method3981(class348_sub1, `is`)
+                    NativeSprite.aSArray5191!![i_3_]!!.method3981(class348_sub1, `is`)
                 }
             }
         }
@@ -117,7 +117,7 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
             var i_35_ = i_35_
             val i_37_ = 4 / ((-51 - i) / 63)
             anInt2273++
-            if (aa_Sub1.aSArray5191 == null) return 0
+            if (NativeSprite.aSArray5191 == null) return 0
             if (i_35_ < 3) {
                 val i_38_ = i_32_ shr 9
                 val i_39_ = i_33_ shr 9
@@ -136,7 +136,7 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
                 }
                 if (bool) i_35_++
             }
-            return aa_Sub1.aSArray5191!![i_35_]!!.method3986(i_32_, i_33_, 22.toByte())
+            return NativeSprite.aSArray5191!![i_35_]!!.method3986(i_32_, i_33_, 22.toByte())
         }
 
         @JvmStatic

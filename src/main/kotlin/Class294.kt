@@ -1,5 +1,5 @@
 import Class191.Companion.method1428
-import aa_Sub2.Companion.method163
+import IndexedSprite.Companion.method163
 import java.awt.Color
 import java.awt.Font
 import java.awt.FontMetrics

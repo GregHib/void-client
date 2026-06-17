@@ -49,7 +49,7 @@ abstract class Class348_Sub45 : Class348() {
 
         @JvmStatic
         fun method3313(i: Int, var_s: s?) {
-            aa_Sub1.aSArray5191!![i] = var_s
+            NativeSprite.aSArray5191!![i] = var_s
         }
 
         @JvmStatic

@@ -141,9 +141,9 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
             anInt3073 = -1
         }
         if (i > -126) return null
-        val var_s = aa_Sub1.aSArray5191!![aByte3067.toInt()]
+        val var_s = NativeSprite.aSArray5191!![aByte3067.toInt()]
         val var_s_5_: s?
-        if (!aBoolean3069) var_s_5_ = if (aByte3067 >= 3) null else aa_Sub1.aSArray5191!![1 + aByte3067]
+        if (!aBoolean3069) var_s_5_ = if (aByte3067 >= 3) null else NativeSprite.aSArray5191!![1 + aByte3067]
         else var_s_5_ = Class348_Sub1_Sub1.aSArray8801!![0]
         var class64: Class64? = null
         if (aClass17_3057 == null) {

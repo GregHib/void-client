@@ -54,7 +54,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
         method3652()
     }
 
-    abstract fun method3636(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, var_aa: aa?, i_21_: Int, i_22_: Int)
+    abstract fun method3636(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, var_sprite: Sprite?, i_21_: Int, i_22_: Int)
 
     abstract fun c(): Class365 //c
 
@@ -142,7 +142,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
         P(i, i_81_, i_80_, i_79_, 1)
     }
 
-    abstract fun method3661(i: Int, i_82_: Int, `is`: IntArray?, is_83_: IntArray?): aa?
+    abstract fun method3661(i: Int, i_82_: Int, `is`: IntArray?, is_83_: IntArray?): Sprite?
 
     fun method3662(i: Int, `is`: IntArray?, i_84_: Byte, i_85_: Int, i_86_: Int, i_87_: Int): Class105 {
         anInt4565++
@@ -266,13 +266,13 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
 
     abstract fun method3700(f: Float, f_180_: Float, f_181_: Float)
 
-    abstract fun A(i: Int, var_aa: aa?, i_182_: Int, i_183_: Int)
+    abstract fun A(i: Int, var_sprite: Sprite?, i_182_: Int, i_183_: Int)
 
     abstract fun method3701(canvas: Canvas?)
 
     abstract fun method3702(i: Int): za?
 
-    abstract fun method3703(i: Int, i_184_: Int, i_185_: Int, i_186_: Int, i_187_: Int, i_188_: Int, var_aa: aa?, i_189_: Int, i_190_: Int, i_191_: Int, i_192_: Int, i_193_: Int)
+    abstract fun method3703(i: Int, i_184_: Int, i_185_: Int, i_186_: Int, i_187_: Int, i_188_: Int, var_sprite: Sprite?, i_189_: Int, i_190_: Int, i_191_: Int, i_192_: Int, i_193_: Int)
 
     abstract fun method3704(): Int
 

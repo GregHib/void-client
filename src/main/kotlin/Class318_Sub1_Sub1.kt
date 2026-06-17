@@ -9,7 +9,7 @@ abstract class Class318_Sub1_Sub1 internal constructor(i: Int, i_4_: Int, i_5_: 
     override fun method2382(i: Byte): Boolean {
         if (i > -51) aClass351_8724 = null
         anInt8723++
-        return aa_Sub2.method164(this.aByte6376.toInt(), (this.x shr Class362.anInt4459), (-97).toByte(), (this.y shr Class362.anInt4459))
+        return IndexedSprite.method164(this.aByte6376.toInt(), (this.x shr Class362.anInt4459), (-97).toByte(), (this.y shr Class362.anInt4459))
     }
 
     override fun method2384(class348_sub1s: Array<Class348_Sub1?>?, i: Int): Int {

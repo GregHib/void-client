@@ -326,7 +326,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
                         /* empty */
                     }
                 }
-                aa_Sub3.method168(103.toByte())
+                RasterSprite.method168(103.toByte())
                 Class127_Sub1.method1119(false)
                 method87((-97).toByte())
                 method92(28740)

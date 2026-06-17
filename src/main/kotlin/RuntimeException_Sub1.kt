@@ -25,7 +25,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
         var anInt4605: Int = 0
 
         @JvmStatic
-        fun method4009(i: Int, `is`: IntArray?, is_0_: IntArray?, i_1_: Int, var_ha_Sub2: ha_Sub2?, i_2_: Int): aa_Sub1 {
+        fun method4009(i: Int, `is`: IntArray?, is_0_: IntArray?, i_1_: Int, var_ha_Sub2: ha_Sub2?, i_2_: Int): NativeSprite {
             try {
                 anInt4597++
                 val is_3_ = ByteArray(i * i_2_)
@@ -33,7 +33,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
                     var i_5_ = i * i_4_ - -`is`!![i_4_]
                     for (i_6_ in 0..<is_0_!![i_4_]) is_3_[i_5_++] = (-1).toByte()
                 }
-                return aa_Sub1(var_ha_Sub2, i, i_2_, is_3_)
+                return NativeSprite(var_ha_Sub2, i, i_2_, is_3_)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("kg.C(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i_2_ + ')'))
             }

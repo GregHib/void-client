@@ -113,7 +113,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                                         val i_13_ = (i_12_ + Class348_Sub34.anInt6974 - Class240.anInt4686)
                                         for (i_14_ in i_7_ downTo 0) {
                                             if ((Class147.aClass357ArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]) != null && (Class147.aClass357ArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]!!.aByte4399).toInt() == i_7_) {
-                                                bools[i_10_]!![i_12_] = (i_14_ < i || (`is`[i_14_]!![i_11_]!![i_13_]) != i_0_) && (!aa_Sub2.method164(i_7_, i_11_, (-97).toByte(), i_13_))
+                                                bools[i_10_]!![i_12_] = (i_14_ < i || (`is`[i_14_]!![i_11_]!![i_13_]) != i_0_) && (!IndexedSprite.method164(i_7_, i_11_, (-97).toByte(), i_13_))
                                                 break
                                             }
                                         }
@@ -122,11 +122,11 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                             }
                         }
                         if (Class348_Sub40_Sub5.aBoolean9121) {
-                            if (i_1_ >= 0) aa_Sub1.aSArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
-                            else aa_Sub1.aSArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
+                            if (i_1_ >= 0) NativeSprite.aSArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
+                            else NativeSprite.aSArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_15_ in 0..<Npc.anInt10503) Class319.aClass315Array3982!![i_15_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) aa_Sub1.aSArray5191!![i_7_]!!.method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_1_, i_2_)
-                        else aa_Sub1.aSArray5191!![i_7_]!!.method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_2_)
+                        } else if (i_1_ >= 0) NativeSprite.aSArray5191!![i_7_]!!.method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_1_, i_2_)
+                        else NativeSprite.aSArray5191!![i_7_]!!.method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, false, i_2_)
                     } else {
                         var i_16_ = Class99.aBooleanArrayArray1572!!.size
                         if ((Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size) > Class318_Sub7.anInt6451) i_16_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572!!.size - Class318_Sub7.anInt6451)
@@ -138,16 +138,16 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                             for (i_18_ in Class105_Sub1.anInt8412..<i_16_) {
                                 val i_19_ = (i_18_ + Class37.anInt492 - Class105_Sub1.anInt8412)
                                 for (i_20_ in Class240.anInt4686..<i_17_) {
-                                    bools!![i_18_]!![i_20_] = (Class99.aBooleanArrayArray1572!![i_18_]!![i_20_]) && !aa_Sub2.method164(i_7_, i_19_, (-97).toByte(), (i_20_ + (Class348_Sub34.anInt6974) - (Class240.anInt4686)))
+                                    bools!![i_18_]!![i_20_] = (Class99.aBooleanArrayArray1572!![i_18_]!![i_20_]) && !IndexedSprite.method164(i_7_, i_19_, (-97).toByte(), (i_20_ + (Class348_Sub34.anInt6974) - (Class240.anInt4686)))
                                 }
                             }
                         }
                         if (Class348_Sub40_Sub5.aBoolean9121) {
-                            if (i_1_ >= 0) aa_Sub1.aSArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
-                            else aa_Sub1.aSArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
+                            if (i_1_ >= 0) NativeSprite.aSArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
+                            else NativeSprite.aSArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_21_ in 0..<Npc.anInt10503) Class319.aClass315Array3982!![i_21_]!!.method2359(Class318_Sub2(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) aa_Sub1.aSArray5191!![i_7_]!!.method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_1_, i_2_)
-                        else aa_Sub1.aSArray5191!![i_7_]!!.method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_2_)
+                        } else if (i_1_ >= 0) NativeSprite.aSArray5191!![i_7_]!!.method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_1_, i_2_)
+                        else NativeSprite.aSArray5191!![i_7_]!!.method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656!!, true, i_2_)
                     }
                 }
             }

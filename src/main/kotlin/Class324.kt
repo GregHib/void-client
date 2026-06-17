@@ -109,7 +109,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    fun method2568(`is`: IntArray?, i: Int, i_21_: Byte, var_aa: aa?, i_22_: Int, class105s: Array<Class105?>?, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, string: String?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int): Int {
+    fun method2568(`is`: IntArray?, i: Int, i_21_: Byte, var_sprite: Sprite?, i_22_: Int, class105s: Array<Class105?>?, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, string: String?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int): Int {
         var i_26_ = i_26_
         var i_31_ = i_31_
         var i_32_ = i_32_
@@ -143,21 +143,21 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
                 } else i_36_ = (-aClass143_4063!!.anInt1993 + i + (i_24_ - (i_34_ + -1) * i_32_))
             } else i_36_ = ((-aClass143_4063!!.anInt1993 + (-aClass143_4063!!.anInt1988 + i + -(i_32_ * (-1 + i_34_)))) / 2 + (aClass143_4063!!.anInt1988 + i_24_))
             for (i_38_ in 0..<i_34_) {
-                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
-                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
-                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
+                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
+                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
                 else if (i_38_ != i_34_ - 1) {
                     method2580(Class156.aStringArray2113!![i_38_]!!, 0, i_25_)
-                    method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                    method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
                     Class131.anInt1902 = 0
-                } else method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                } else method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
                 i_36_ += i_32_
             }
             return i_34_
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("da.W(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')')
+                ("da.W(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')')
             )
         }
     }
@@ -279,7 +279,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    abstract fun method2578(c: Char, i: Int, i_81_: Int, i_82_: Int, bool: Boolean, var_aa: aa?, i_83_: Int, i_84_: Int)
+    abstract fun method2578(c: Char, i: Int, i_81_: Int, i_82_: Int, bool: Boolean, var_sprite: Sprite?, i_83_: Int, i_84_: Int)
 
     private fun method2579(i: Int, i_85_: Int, i_86_: Int) {
         var i = i
@@ -328,7 +328,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    private fun method2583(i: Int, i_103_: Int, i_104_: Int, class105s: Array<Class105?>?, var_aa: aa?, string: String?, `is`: IntArray?, i_105_: Int, i_106_: Int) {
+    private fun method2583(i: Int, i_103_: Int, i_104_: Int, class105s: Array<Class105?>?, var_sprite: Sprite?, string: String?, `is`: IntArray?, i_105_: Int, i_106_: Int) {
         var i_103_ = i_103_
         var i_106_ = i_106_
         try {
@@ -378,12 +378,12 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
                         if (i_107_ == -1) {
                             if (i_108_ != -1) i_106_ += aClass143_4063!!.method1182(i_108_, (-90).toByte(), c)
                             if (c.code != 32) {
-                                if (var_aa == null) {
+                                if (var_sprite == null) {
                                     if ((Class20.anInt320 and 0xffffff.inv()) != 0) fa(c, i_106_ + 1, 1 + i_103_, Class20.anInt320, true)
                                     fa(c, i_106_, i_103_, Class348_Sub42_Sub1.anInt9492, false)
                                 } else {
-                                    if ((0xffffff.inv() and Class20.anInt320) != 0) method2578(c, 1 + i_106_, i_103_ + 1, Class20.anInt320, true, var_aa, i_104_, i)
-                                    method2578(c, i_106_, i_103_, Class348_Sub42_Sub1.anInt9492, false, var_aa, i_104_, i)
+                                    if ((0xffffff.inv() and Class20.anInt320) != 0) method2578(c, 1 + i_106_, i_103_ + 1, Class20.anInt320, true, var_sprite, i_104_, i)
+                                    method2578(c, i_106_, i_103_, Class348_Sub42_Sub1.anInt9492, false, var_sprite, i_104_, i)
                                 }
                             } else if (Class131.anInt1902 > 0) {
                                 Class258.anInt4848 += Class131.anInt1902
@@ -401,7 +401,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + (if (var_aa != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_105_ + ',' + i_106_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_105_ + ',' + i_106_ + ')'))
         }
     }
 
@@ -414,13 +414,13 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    fun method2584(`is`: IntArray?, i: Int, i_115_: Int, class105s: Array<Class105?>?, i_116_: Int, i_117_: Int, i_118_: Int, var_aa: aa?, i_119_: Int, i_120_: Int, i_121_: Int, i_122_: Int, i_123_: Int, bool: Boolean, i_124_: Int, string: String?): Int {
+    fun method2584(`is`: IntArray?, i: Int, i_115_: Int, class105s: Array<Class105?>?, i_116_: Int, i_117_: Int, i_118_: Int, var_sprite: Sprite?, i_119_: Int, i_120_: Int, i_121_: Int, i_122_: Int, i_123_: Int, bool: Boolean, i_124_: Int, string: String?): Int {
         try {
             if (bool != false) method2570(-23, 41)
             anInt4057++
-            return method2568(`is`, i_118_, 97.toByte(), var_aa, i_120_, class105s, i_116_, i_119_, i_122_, i_117_, string, i_121_, i_123_, i_124_, i_115_, 0, i)
+            return method2568(`is`, i_118_, 97.toByte(), var_sprite, i_120_, class105s, i_116_, i_119_, i_122_, i_117_, string, i_121_, i_123_, i_124_, i_115_, 0, i)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.J(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_115_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (if (var_aa != null) "{...}" else "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("da.J(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_115_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 

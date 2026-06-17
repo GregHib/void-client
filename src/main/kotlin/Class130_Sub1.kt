@@ -104,7 +104,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             ha_Sub2.anInt7690 = 0
             Class348_Sub42_Sub8.anInt9546 = 0
             Class239_Sub16.anInt6017 = 0
-            aa_Sub3.anInt5203 = 0
+            RasterSprite.anInt5203 = 0
             Class186_Sub1.anInt5810 = 0
             Class286_Sub5.anInt6251 = 0
             Class170.anInt5080 = 0
@@ -301,7 +301,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub44.anInt7096 = 0
             Class239_Sub11.anInt5958 = 0
             Class348_Sub16_Sub3.anInt8897 = 0
-            aa_Sub3.anInt5205 = 0
+            RasterSprite.anInt5205 = 0
             Class239_Sub28.anInt6139 = 0
             Class348_Sub49.anInt7150 = 0
             Class318_Sub1_Sub1_Sub1.anInt9944 = 0
@@ -363,7 +363,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class73.anInt4773 = 0
             Class31.anInt427 = 0
             Client.anInt5183 = 0
-            aa_Sub2.anInt5198 = 0
+            IndexedSprite.anInt5198 = 0
             Class5_Sub2.anInt8364 = 0
             Class255.anInt3280 = 0
             Class348_Sub42_Sub15.anInt9647 = 0
@@ -1401,7 +1401,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             ha_Sub3.anInt7884 = 0
             Class348_Sub49.anInt7157 = 0
             ha_Sub2.anInt7597 = 0
-            aa.anInt115 = 0
+            Sprite.anInt115 = 0
             Class348_Sub40_Sub25.anInt9336 = 0
             Class239_Sub17.anInt6028 = 0
             Class211.anInt2736 = 0
@@ -1455,7 +1455,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class14.anInt5095 = 0
             Class361.anInt4454 = 0
             Class235.anInt3050 = 0
-            aa.anInt113 = 0
+            Sprite.anInt113 = 0
             Class332.anInt4140 = 0
             Class64_Sub3.anInt5567 = 0
             Class239_Sub1.anInt5842 = 0
@@ -2111,7 +2111,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             ha_Sub2.anInt7637 = 0
             ha.anInt4575 = 0
             Class124.anInt1828 = 0
-            aa_Sub2.anInt5194 = 0
+            IndexedSprite.anInt5194 = 0
             RuntimeException_Sub1.anInt4605 = 0
             Class117.anInt1775 = 0
             Class348_Sub49.anInt7169 = 0
@@ -3734,7 +3734,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub49.anInt7168 = 0
             Class258_Sub1.anInt8524 = 0
             Class169.anInt2262 = 0
-            aa_Sub2.anInt5195 = 0
+            IndexedSprite.anInt5195 = 0
             Class318_Sub1_Sub1_Sub1.anInt9948 = 0
             Class348_Sub42_Sub10.anInt9573 = 0
             ha_Sub3.anInt8070 = 0

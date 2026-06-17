@@ -135,7 +135,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             Class51.aStringArray932!![i_7_] = string
                             Class122.aStringArray1808!![i_7_] = string_4_
                             Class348_Sub40_Sub21.aStringArray9275!![i_7_] = string_5_
-                            aa_Sub2.aStringArray5197!![i_7_] = string_6_
+                            IndexedSprite.aStringArray5197!![i_7_] = string_6_
                             break
                         }
                         i_7_++
@@ -144,7 +144,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class51.aStringArray932!![Class348_Sub42_Sub12.anInt9604] = string
                     Class122.aStringArray1808!![Class348_Sub42_Sub12.anInt9604] = string_4_
                     Class348_Sub40_Sub21.aStringArray9275!![(Class348_Sub42_Sub12.anInt9604)] = string_5_
-                    aa_Sub2.aStringArray5197!![Class348_Sub42_Sub12.anInt9604] = string_6_
+                    IndexedSprite.aStringArray5197!![Class348_Sub42_Sub12.anInt9604] = string_6_
                     Class367_Sub3.aBooleanArray7304!![Class348_Sub42_Sub12.anInt9604] = Class139.method1166(i, 2) == 2
                     Class348_Sub42_Sub12.anInt9604++
                 }
@@ -1111,8 +1111,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class122.aStringArray1808!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(112.toByte())
                     if (Class122.aStringArray1808!![i] == "") Class122.aStringArray1808!![i] = Class51.aStringArray932!![i]
                     Class348_Sub40_Sub21.aStringArray9275!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(84.toByte())
-                    aa_Sub2.aStringArray5197!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-111).toByte())
-                    if (aa_Sub2.aStringArray5197!![i] == "") aa_Sub2.aStringArray5197!![i] = Class348_Sub40_Sub21.aStringArray9275!![i]
+                    IndexedSprite.aStringArray5197!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-111).toByte())
+                    if (IndexedSprite.aStringArray5197!![i] == "") IndexedSprite.aStringArray5197!![i] = Class348_Sub40_Sub21.aStringArray9275!![i]
                     Class367_Sub3.aBooleanArray7304!![i] = false
                     i++
                 }

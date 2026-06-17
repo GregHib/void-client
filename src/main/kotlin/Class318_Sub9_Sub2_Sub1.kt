@@ -39,7 +39,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
         else {
             val class318_sub10 = (this.aClass318_Sub7_10419.aClass318_Sub10_6439)!!
             val class181 = (this.aClass318_Sub7_10419.aClass181_6441)!!
-            val var_ses = aa_Sub1.aSArray5191
+            val var_ses = NativeSprite.aSArray5191
             var i_2_ = class318_sub10.anInt6483
             var class357 = (Class147.aClass357ArrayArrayArray2029!![class318_sub10.anInt6483]!![i]!![i_0_])
             if (class357 != null) i_2_ = class357.aByte4399.toInt()
