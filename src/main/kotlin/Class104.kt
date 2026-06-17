@@ -1,16 +1,16 @@
 import Class22.Companion.method295
 import Class59_Sub1.Companion.method552
-import ha.Companion.method3692
+import Renderer.Companion.method3692
 import jaggl.OpenGL.Companion.glLoadIdentity
 import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glScalef
 import jaggl.OpenGL.Companion.glTranslatef
 import java.awt.Canvas
 
-class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) {
+class Class104 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: s_Sub2?) {
     private val anInt1612: Int
     private val anInt1613: Int
-    private val aHa_Sub2_1616: ha_Sub2?
+    private val aHa_Sub2_1616: OpenGlRenderer?
     @JvmField
     var aByteArray1617: ByteArray
     private val anInt1618: Int
@@ -333,7 +333,7 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
         }
 
         @JvmStatic
-        fun method958(bool: Boolean, i: Int, var_renderConfig: RenderConfig?, i_61_: Int, canvas: Canvas?, class45: Class45?): ha? {
+        fun method958(bool: Boolean, i: Int, var_renderConfig: RenderConfig?, i_61_: Int, canvas: Canvas?, class45: Class45?): Renderer? {
             try {
                 if (bool != true) aClass221_1620 = null
                 anInt1610++

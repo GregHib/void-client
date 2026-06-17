@@ -116,9 +116,9 @@ class Class285_Sub1 internal constructor(class377: Class377, bool: Boolean) : Cl
 
         fun method2129(i: Byte) {
             anInt8494++
-            Class21.aHa326!!.method3638(r.aClass101_9720)
+            Class21.aRenderer326!!.method3638(r.aClass101_9720)
             if (i < 9) anInt8492 = -40
-            Class21.aHa326!!.DA(Class248.anInt3202, Class239_Sub5.anInt5886, Class14_Sub3.anInt8630, Class27.anInt394)
+            Class21.aRenderer326!!.DA(Class248.anInt3202, Class239_Sub5.anInt5886, Class14_Sub3.anInt8630, Class27.anInt394)
         }
 
         @JvmStatic

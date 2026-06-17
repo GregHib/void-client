@@ -65,12 +65,12 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
         f(this.nativeid, (class64 as i).nativeid, (class101 as ja).nativeid, `is`, i, i_24_)
     }
 
-    private external fun na(l: Long, var_ha: ha?, i: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int)
+    private external fun na(l: Long, var_renderer: Renderer?, i: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int)
 
-    private external fun O(l: Long, var_ha: ha?, `is`: IntArray?, is_31_: IntArray?, is_32_: IntArray?, is_33_: ShortArray?, i: Int)
+    private external fun O(l: Long, var_renderer: Renderer?, `is`: IntArray?, is_31_: IntArray?, is_32_: IntArray?, is_33_: ShortArray?, i: Int)
 
-    fun method150(var_ha: ha?, i: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int) {
-        na(this.nativeid, var_ha, i, i_34_, i_35_, i_36_, i_37_, i_38_, i_39_)
+    fun method150(var_renderer: Renderer?, i: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int) {
+        na(this.nativeid, var_renderer, i, i_34_, i_35_, i_36_, i_37_, i_38_, i_39_)
     }
 
     private external fun f(l: Long, l_40_: Long, l_41_: Long, `is`: IntArray?, i: Int, i_42_: Int)
@@ -128,11 +128,11 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
 
     private external fun UA(l: Long, l_62_: Long, l_63_: Long, `is`: IntArray?, i: Int)
 
-    fun method155(var_ha: ha?, `is`: IntArray?, is_64_: IntArray?, is_65_: IntArray?, is_66_: ShortArray?, i: Int) {
-        O(this.nativeid, var_ha, `is`, is_64_, is_65_, is_66_, i)
+    fun method155(var_renderer: Renderer?, `is`: IntArray?, is_64_: IntArray?, is_65_: IntArray?, is_66_: ShortArray?, i: Int) {
+        O(this.nativeid, var_renderer, `is`, is_64_, is_65_, is_66_, i)
     }
 
-    private external fun HA(l: Long, var_ha: ha?, i: Int, i_67_: Int)
+    private external fun HA(l: Long, var_renderer: Renderer?, i: Int, i_67_: Int)
 
     fun method156() {
         this.aRunnable5112 = null

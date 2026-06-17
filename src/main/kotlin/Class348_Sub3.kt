@@ -10,7 +10,7 @@ class Class348_Sub3 internal constructor(private val aS_Sub3_6566: s_Sub3, var a
     private var anInterface5_Impl1_6577: Interface5_Impl1? = null
     var aFloat6582: Float
     var anInt6589: Int = 0
-    private val aHa_Sub3_6590: ha_Sub3?
+    private val aHa_Sub3_6590: NativeRenderer?
 
     fun method2736(i: Byte, i_0_: Int) {
         if (i.toInt() != -57) method2736(25.toByte(), -39)

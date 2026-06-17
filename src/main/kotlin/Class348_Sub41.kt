@@ -91,18 +91,18 @@ class Class348_Sub41 : Class348() {
 
         fun method3157(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, bool: Boolean) {
             anInt7049++
-            if (bool || i_16_ != ha.anInt4581 || Class327.anInt4095 != i || (Class355.anInt4372 != Class167.anInt2204 && Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
-                ha.anInt4581 = i_16_
+            if (bool || i_16_ != Renderer.anInt4581 || Class327.anInt4095 != i || (Class355.anInt4372 != Class167.anInt2204 && Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
+                Renderer.anInt4581 = i_16_
                 Class327.anInt4095 = i
                 Class167.anInt2204 = Class355.anInt4372
                 if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) Class167.anInt2204 = 0
                 Class348_Sub49.method3379(2, i_17_)
-                Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3495!!.method2063(Class348_Sub33.Companion.anInt6967, 544), 2, Class348_Sub8.aHa6654)
+                Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3495!!.method2063(Class348_Sub33.Companion.anInt6967, 544), 2, Class348_Sub8.aRenderer6654)
                 val i_18_ = za_Sub2.regionTileX
                 val i_19_ = Class90.regionTileY
-                za_Sub2.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + ha.anInt4581) * 8
+                za_Sub2.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + Renderer.anInt4581) * 8
                 Class90.regionTileY = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.anInt9109 shr 4))
-                Class348_Sub26.Companion.aClass348_Sub42_Sub14_6885 = method766(ha.anInt4581 * 8, Class327.anInt4095 * 8)
+                Class348_Sub26.Companion.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, Class327.anInt4095 * 8)
                 r_Sub2.aClass252_10488 = null
                 val i_20_ = za_Sub2.regionTileX - i_18_
                 val i_21_ = -i_19_ + Class90.regionTileY
@@ -258,7 +258,7 @@ class Class348_Sub41 : Class348() {
             return is_41_
         }
 
-        fun method3159(i: Int, i_42_: Int, bool: Boolean, i_43_: Int, i_44_: Int, i_45_: Int, var_ha: ha, i_46_: Int, i_47_: Int) {
+        fun method3159(i: Int, i_42_: Int, bool: Boolean, i_43_: Int, i_44_: Int, i_45_: Int, var_renderer: Renderer, i_46_: Int, i_47_: Int) {
             anInt7051++
             var interface10 = method3297(i_43_, i_45_, i_44_) as Interface10?
             if (interface10 != null) {
@@ -270,28 +270,28 @@ class Class348_Sub41 : Class348() {
                     if (class51.anInt874 > 0) i_50_ = i
                     if (i_49_ == 0 || i_49_ == 2) {
                         if (i_48_ != 0) {
-                            if (i_48_ == 1) var_ha.method3649((-79).toByte(), 4, i_42_, i_50_, i_46_)
-                            else if (i_48_ == 2) var_ha.method3660(3 + i_46_, i_50_, 4, i_42_, true)
-                            else if (i_48_ == 3) var_ha.method3649((-121).toByte(), 4, i_42_ + 3, i_50_, i_46_)
-                        } else var_ha.method3660(i_46_, i_50_, 4, i_42_, !bool)
+                            if (i_48_ == 1) var_renderer.method3649((-79).toByte(), 4, i_42_, i_50_, i_46_)
+                            else if (i_48_ == 2) var_renderer.method3660(3 + i_46_, i_50_, 4, i_42_, true)
+                            else if (i_48_ == 3) var_renderer.method3649((-121).toByte(), 4, i_42_ + 3, i_50_, i_46_)
+                        } else var_renderer.method3660(i_46_, i_50_, 4, i_42_, !bool)
                     }
                     if (i_49_ == 3) {
                         if (i_48_ != 0) {
-                            if (i_48_ == 1) var_ha.method3675(1, (-125).toByte(), 3 + i_46_, i_42_, 1, i_50_)
+                            if (i_48_ == 1) var_renderer.method3675(1, (-125).toByte(), 3 + i_46_, i_42_, 1, i_50_)
                             else if (i_48_ != 2) {
-                                if (i_48_ == 3) var_ha.method3675(1, (-125).toByte(), i_46_, 3 + i_42_, 1, i_50_)
-                            } else var_ha.method3675(1, (-125).toByte(), 3 + i_46_, 3 + i_42_, 1, i_50_)
-                        } else var_ha.method3675(1, (-125).toByte(), i_46_, i_42_, 1, i_50_)
+                                if (i_48_ == 3) var_renderer.method3675(1, (-125).toByte(), i_46_, 3 + i_42_, 1, i_50_)
+                            } else var_renderer.method3675(1, (-125).toByte(), 3 + i_46_, 3 + i_42_, 1, i_50_)
+                        } else var_renderer.method3675(1, (-125).toByte(), i_46_, i_42_, 1, i_50_)
                     }
                     if (i_49_ == 2) {
                         if (i_48_ != 0) {
-                            if (i_48_ == 1) var_ha.method3660(3 + i_46_, i_50_, 4, i_42_, true)
+                            if (i_48_ == 1) var_renderer.method3660(3 + i_46_, i_50_, 4, i_42_, true)
                             else if (i_48_ != 2) {
-                                if (i_48_ == 3) var_ha.method3660(i_46_, i_50_, 4, i_42_, true)
-                            } else var_ha.method3649((-106).toByte(), 4, 3 + i_42_, i_50_, i_46_)
-                        } else var_ha.method3649((-96).toByte(), 4, i_42_, i_50_, i_46_)
+                                if (i_48_ == 3) var_renderer.method3660(i_46_, i_50_, 4, i_42_, true)
+                            } else var_renderer.method3649((-106).toByte(), 4, 3 + i_42_, i_50_, i_46_)
+                        } else var_renderer.method3649((-96).toByte(), 4, i_42_, i_50_, i_46_)
                     }
-                } else method2028(i_46_, class51, i_42_, var_ha, i_48_, 126)
+                } else method2028(i_46_, class51, i_42_, var_renderer, i_48_, 126)
             }
             if (bool != false) anInt7054 = 122
             interface10 = (method1353(i_43_, i_45_, i_44_, (if (aClass7056 != null) aClass7056 else (Interface10::class.java.also { aClass7056 = it }))) as Interface10?)
@@ -299,19 +299,19 @@ class Class348_Sub41 : Class348() {
                 val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-88))
                 val i_51_ = interface10.method41(-32228) and 0x3
                 val i_52_ = interface10.method39(-126)
-                if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_ha, i_51_, -86)
+                if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_renderer, i_51_, -86)
                 else if (i_52_ == 9) {
                     var i_53_ = -1118482
                     if (class51.anInt874 > 0) i_53_ = -1179648
-                    if (i_51_ != 0 && i_51_ != 2) var_ha.method3645(i_42_, i_46_, 3 + i_46_, -8003, i_53_, i_42_ + 3)
-                    else var_ha.method3645(i_42_ + 3, i_46_, 3 + i_46_, -8003, i_53_, i_42_)
+                    if (i_51_ != 0 && i_51_ != 2) var_renderer.method3645(i_42_, i_46_, 3 + i_46_, -8003, i_53_, i_42_ + 3)
+                    else var_renderer.method3645(i_42_ + 3, i_46_, 3 + i_46_, -8003, i_53_, i_42_)
                 }
             }
             interface10 = method2878(i_43_, i_45_, i_44_) as Interface10?
             if (interface10 != null) {
                 val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-118))
                 val i_54_ = interface10.method41(-32228) and 0x3
-                if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_ha, i_54_, -5)
+                if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_renderer, i_54_, -5)
             }
         }
     }

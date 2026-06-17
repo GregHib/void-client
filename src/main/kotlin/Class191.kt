@@ -109,7 +109,7 @@ class Class191 internal constructor(i: Int, i_16_: Int, i_17_: Int) {
                     if (class105 == null) {
                         val class207s = Class207.method1519(Class21.aClass45_322!!, i_9_, 0)
                         if (class207s == null) return
-                        class105 = Class348_Sub8.aHa6654!!.method3691(class207s[0], true)
+                        class105 = Class348_Sub8.aRenderer6654!!.method3691(class207s[0], true)
                         Class348_Sub1_Sub1.aClass60_8807!!.method582(class105, i_9_.toLong(), (-115).toByte())
                     }
                     method165(class318_sub1_sub3_sub3_8_!!.plane.toInt(), i_5_, 0, i_3_ shr 1, class318_sub1_sub3_sub3_8_.x, class318_sub1_sub3_sub3_8_.method2436(126.toByte()) * 256, class318_sub1_sub3_sub3_8_.y, 92.toByte(), i_6_ shr 1, i_2_)
@@ -119,7 +119,7 @@ class Class191 internal constructor(i: Int, i_16_: Int, i_17_: Int) {
                     i_11_ += 18 * (i % 4)
                     val i_12_ = -76 / ((i_1_ - 3) / 38)
                     class105!!.method974(i_10_, i_11_)
-                    if (class318_sub1_sub3_sub3 === class318_sub1_sub3_sub3_8_) Class348_Sub8.aHa6654!!.method3668(18, -1 + i_11_, -256, i_10_ - 1, 18, 57)
+                    if (class318_sub1_sub3_sub3 === class318_sub1_sub3_sub3_8_) Class348_Sub8.aRenderer6654!!.method3668(18, -1 + i_11_, -256, i_10_ - 1, 18, 57)
                     Class338.method2663(-5590, i_10_ + -1, 18 + i_10_, i_11_ + -1, i_11_ - -18)
                     val class318_sub6 = method3529(32564)
                     class318_sub6.anInt6426 = 16 + i_10_

@@ -3,7 +3,7 @@ import kotlin.math.atan2
 class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray?) : Class348() {
     companion object {
         @JvmField
-        var aHa6654: ha? = null
+        var aRenderer6654: Renderer? = null
         @JvmField
         var anIntArray6655: IntArray? = null
         @JvmField
@@ -65,7 +65,7 @@ class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray
         @JvmStatic
         fun method2775(i: Byte) {
             aShortArray6658 = null
-            aHa6654 = null
+            aRenderer6654 = null
             aShortArray6665 = null
             anIntArray6666 = null
             aShortArray6663 = null

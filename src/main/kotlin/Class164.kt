@@ -16,8 +16,8 @@ import Class62.method599
 import Class75.Companion.method752
 import Class85.Companion.method830
 import RuntimeException_Sub1.Companion.method4011
-import ha_Sub3.Companion.method3886
-import ha_Sub3.Companion.method3896
+import NativeRenderer.Companion.method3886
+import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init
 import r_Sub1.Companion.method3290
 
@@ -108,8 +108,8 @@ object Class164 {
                 if (Class182.anInterface16Array2447!![0]!!.method60(-19079) < 100) return 0
                 if (Class182.anInterface16Array2447!!.size > 1 && Class186_Sub1.aClass111_5813!!.method1044(86) && (Class182.anInterface16Array2447!![1]!!.method60(i + 9581) < 100)) return 0
             }
-            Class170.method1311(5139, Class348_Sub8.aHa6654!!)
-            method3568(Class348_Sub8.aHa6654, 4)
+            Class170.method1311(5139, Class348_Sub8.aRenderer6654!!)
+            method3568(Class348_Sub8.aRenderer6654, 4)
             Class348_Sub49.method3379(2, 1)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1029) {
@@ -292,9 +292,9 @@ object Class164 {
             if (Class348_Sub23_Sub2.aBoolean9038) method3553(false, 108.toByte(), 0)
             else method3553(false, 102.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350))
             method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
-            Class170.method1311(5139, Class348_Sub8.aHa6654!!)
-            method3568(Class348_Sub8.aHa6654, i xor 0x6ff7.inv())
-            Class255.method1933(Class21.aClass45_322, Class348_Sub8.aHa6654, true)
+            Class170.method1311(5139, Class348_Sub8.aRenderer6654!!)
+            method3568(Class348_Sub8.aRenderer6654, i xor 0x6ff7.inv())
+            Class255.method1933(Class21.aClass45_322, Class348_Sub8.aRenderer6654, true)
             method901(Class113.aClass105Array1744, 515880227)
         }
         return method3063(false)

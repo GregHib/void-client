@@ -4,7 +4,7 @@ import java.awt.Font
 import java.awt.FontMetrics
 import java.awt.image.PixelGrabber
 
-class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component: Component) {
+class Class323 internal constructor(var_renderer: Renderer, i: Int, bool: Boolean, component: Component) {
     private var aBoolean4037 = false
     private val anIntArray4039: IntArray
     private var anInt4040 = 0
@@ -12,7 +12,7 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
     private val aClass105Array4042: Array<Class105?>
     private val anIntArray4044 = IntArray(4)
 
-    private fun method2559(var_ha: ha, font: Font?, fontmetrics: FontMetrics, c: Char, i: Int, bool: Boolean) {
+    private fun method2559(var_renderer: Renderer, font: Font?, fontmetrics: FontMetrics, c: Char, i: Int, bool: Boolean) {
         var bool = bool
         var i_0_ = fontmetrics.charWidth(c)
         val i_1_ = i_0_
@@ -60,14 +60,14 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
         anInt4041 = i_2_ - i_5_
         anInt4040 = i_4_
         anIntArray4039[i] = i_1_
-        aClass105Array4042[i] = var_ha.method3662(i_0_, `is`, 94.toByte(), 0, i_0_, i_3_)
+        aClass105Array4042[i] = var_renderer.method3662(i_0_, `is`, 94.toByte(), 0, i_0_, i_3_)
     }
 
     fun method2560(): Int {
         return anInt4041
     }
 
-    private fun method2561(var_ha: ha?, string: String, `is`: IntArray?, i: Int, i_10_: Int, i_11_: Int, bool: Boolean) {
+    private fun method2561(var_renderer: Renderer?, string: String, `is`: IntArray?, i: Int, i_10_: Int, i_11_: Int, bool: Boolean) {
         var i = i
         var i_11_ = i_11_
         var bool = bool
@@ -81,10 +81,10 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
         }
     }
 
-    fun method2563(var_ha: ha, string: String, i: Int, i_14_: Int, i_15_: Int, bool: Boolean) {
+    fun method2563(var_renderer: Renderer, string: String, i: Int, i_14_: Int, i_15_: Int, bool: Boolean) {
         val i_16_ = method2564(string) / 2
-        var_ha.K(anIntArray4044)
-        if (i - i_16_ <= anIntArray4044[2] && i + i_16_ >= anIntArray4044[0] && i_14_ - anInt4041 <= anIntArray4044[3] && i_14_ + anInt4040 >= anIntArray4044[1]) method2561(var_ha, string, anIntArray4044, i - i_16_, i_14_, i_15_, bool)
+        var_renderer.K(anIntArray4044)
+        if (i - i_16_ <= anIntArray4044[2] && i + i_16_ >= anIntArray4044[0] && i_14_ - anInt4041 <= anIntArray4044[3] && i_14_ + anInt4040 >= anIntArray4044[1]) method2561(var_renderer, string, anIntArray4044, i - i_16_, i_14_, i_15_, bool)
     }
 
     fun method2564(string: String): Int {
@@ -107,7 +107,7 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
         var font = Font("Helvetica", if (bool) 1 else 0, i)
         var fontmetrics = component.getFontMetrics(font)
         for (i_19_ in 0..<anInt4038) method2559(
-            var_ha,
+            var_renderer,
             font,
             fontmetrics,
             "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".get(i_19_),
@@ -119,7 +119,7 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
             font = Font("Helvetica", 0, i)
             fontmetrics = component.getFontMetrics(font)
             for (i_20_ in 0..<anInt4038) method2559(
-                var_ha,
+                var_renderer,
                 font,
                 fontmetrics,
                 "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".get(i_20_),
@@ -129,7 +129,7 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
             if (!aBoolean4037) {
                 aBoolean4037 = false
                 for (i_21_ in 0..<anInt4038) method2559(
-                    var_ha,
+                    var_renderer,
                     font,
                     fontmetrics,
                     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".get(i_21_),

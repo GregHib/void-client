@@ -10,9 +10,9 @@ import jaggl.OpenGL.Companion.glTexCoord3i
 import jaggl.OpenGL.Companion.glVertex2f
 import jaggl.OpenGL.Companion.glViewport
 
-class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: ha_Sub2, i: Int) : Class299_Sub1() {
+class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int) : Class299_Sub1() {
     private val aClass258_Sub2_8701: Class258_Sub2
-    private var aHa_Sub2_8707: ha_Sub2
+    private var aHa_Sub2_8707: OpenGlRenderer
 
     fun method2261(class258_sub2: Class258_Sub2?, f: Float, i: Int, class258_sub2_0_: Class258_Sub2?): Boolean {
         try {
@@ -205,13 +205,13 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: ha_Sub2, i: Int) : Cl
         @JvmField
         var aClass351_8706: Class351? = Class351(79, 3)
         @JvmStatic
-        fun method2263(var_ha: ha?, i: Int, i_4_: Int): Class105? {
+        fun method2263(var_renderer: Renderer?, i: Int, i_4_: Int): Class105? {
             anInt8705++
             val class348_sub15 = (Class27.aClass356_389!!.method3480(i_4_.toLong(), -6008) as Class348_Sub15?)
             if (class348_sub15 != null) {
                 val class348_sub23_sub2 = class348_sub15.aClass55_Sub1_6768!!.method506(false)
                 class348_sub15.aBoolean6772 = true
-                if (class348_sub23_sub2 != null) return class348_sub23_sub2.method2975(var_ha!!, 0)
+                if (class348_sub23_sub2 != null) return class348_sub23_sub2.method2975(var_renderer!!, 0)
             }
             if (i != 0) aClass351_8706 = null
             return null

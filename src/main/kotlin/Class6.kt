@@ -141,7 +141,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
         }
 
         @JvmStatic
-        fun method207(var_ha: ha?, i: Byte) {
+        fun method207(var_renderer: Renderer?, i: Byte) {
             do {
                 try {
                     anInt153++
@@ -152,8 +152,8 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                         i_35_ = s_Sub3.method4008((-127).toByte())
                         i_36_ = Class16.method260(false)
                     }
-                    var_ha!!.KA(i_35_, i_36_, Class321.anInt4017 + i_35_, i_36_ + 350)
-                    var_ha.aa(i_35_, i_36_, Class321.anInt4017, 350, 0x332277 or (Class168.anInt2254 shl 24), 1)
+                    var_renderer!!.KA(i_35_, i_36_, Class321.anInt4017 + i_35_, i_36_ + 350)
+                    var_renderer.aa(i_35_, i_36_, Class321.anInt4017, 350, 0x332277 or (Class168.anInt2254 shl 24), 1)
                     Class338.method2663(-5590, i_35_, Class321.anInt4017 + i_35_, i_36_, i_36_ + 350)
                     val i_37_ = 350 / Class68.anInt1188
                     if (Class369_Sub2.anInt8587 > 0) {
@@ -161,29 +161,29 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                         val i_39_ = (i_37_ * i_38_ / (-1 + (i_37_ - -Class369_Sub2.anInt8587)))
                         var i_40_ = 4
                         if (Class369_Sub2.anInt8587 > 1) i_40_ += ((Class369_Sub2.anInt8587 + (-1 + -Class284.anInt3676)) * (i_38_ - i_39_) / (Class369_Sub2.anInt8587 + -1))
-                        var_ha.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (Class168.anInt2254 shl 24), 2)
+                        var_renderer.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (Class168.anInt2254 shl 24), 2)
                         var i_41_ = Class284.anInt3676
                         while (((i_41_ < i_37_ + Class284.anInt3676) && Class369_Sub2.anInt8587 > i_41_)) {
                             val strings = (Class348_Sub40_Sub23.method3113('\u0008', true, Class286_Sub1.aStringArray6200!![i_41_]!!))
                             val i_42_ = (-16 + Class321.anInt4017 + -8) / strings.size
                             for (i_43_ in strings.indices) {
                                 val i_44_ = i_42_ * i_43_ + 8
-                                var_ha.KA(i_35_ + i_44_, i_36_, i_42_ + i_35_ - (-i_44_ - -8), i_36_ + 350)
+                                var_renderer.KA(i_35_ + i_44_, i_36_, i_42_ + i_35_ - (-i_44_ - -8), i_36_ + 350)
                                 Applet_Sub1.aClass324_20!!.method2576(Class250.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-Class284.anInt3676 + i_41_) * Class68.anInt1188) + (-Class348_Sub31_Sub2.anInt9077 + i_36_ - (-350 - (-2 + -(Class246.aClass143_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
                             }
                             i_41_++
                         }
                     }
                     Class240.aClass324_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (Class321.anInt4017 + i_35_ + -25), -121, -16777216)
-                    var_ha.KA(i_35_, i_36_, i_35_ - -Class321.anInt4017, i_36_ - -350)
-                    var_ha.method3649((-80).toByte(), Class321.anInt4017, -Class348_Sub31_Sub2.anInt9077 + (350 + i_36_), -1, i_35_)
+                    var_renderer.KA(i_35_, i_36_, i_35_ - -Class321.anInt4017, i_36_ - -350)
+                    var_renderer.method3649((-80).toByte(), Class321.anInt4017, -Class348_Sub31_Sub2.anInt9077 + (350 + i_36_), -1, i_35_)
                     Class262.aClass324_3326!!.method2576("--> " + Class250.method1909(31.toByte(), Class363.aString4461!!), -1, (i_36_ - (-350 + Class369.aClass143_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
                     if (!Class175.aBoolean2329) break
                     var i_45_ = -1
                     if (Class367_Sub11.anInt7396 % 30 > 15) i_45_ = 16777215
-                    var_ha.method3660(10 + (i_35_ - -(Class369.aClass143_4962!!.method1183(true, "--> " + (Class250.method1909(31.toByte(), Class363.aString4461!!).substring(0, Class348_Sub38.anInt7006))))), i_45_, 12, 350 + (i_36_ + -Class369.aClass143_4962!!.anInt1993 - 11), true)
+                    var_renderer.method3660(10 + (i_35_ - -(Class369.aClass143_4962!!.method1183(true, "--> " + (Class250.method1909(31.toByte(), Class363.aString4461!!).substring(0, Class348_Sub38.anInt7006))))), i_45_, 12, 350 + (i_36_ + -Class369.aClass143_4962!!.anInt1993 - 11), true)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("go.B(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("go.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
                 }
                 break
             } while (false)

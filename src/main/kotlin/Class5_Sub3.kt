@@ -9,8 +9,8 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
     public override fun method178(i: Int, bool: Boolean, i_0_: Byte, i_1_: Int) {
         if (i_0_ >= -6) method202(-4, null)
         anInt8376++
-        Class348_Sub8.aHa6654!!.method3628(-2 + i, i_1_, 4 + this.aClass369_4635!!.anInt4971, this.aClass369_4635!!.anInt4963 + 2, ((this.aClass369_4635 as Class369_Sub1).anInt8580), 0)
-        Class348_Sub8.aHa6654!!.method3628(i + -1, i_1_ + 1, this.aClass369_4635!!.anInt4971 + 2, this.aClass369_4635!!.anInt4963, 0, 0)
+        Class348_Sub8.aRenderer6654!!.method3628(-2 + i, i_1_, 4 + this.aClass369_4635!!.anInt4971, this.aClass369_4635!!.anInt4963 + 2, ((this.aClass369_4635 as Class369_Sub1).anInt8580), 0)
+        Class348_Sub8.aRenderer6654!!.method3628(i + -1, i_1_ + 1, this.aClass369_4635!!.anInt4971 + 2, this.aClass369_4635!!.anInt4963, 0, 0)
     }
 
     public override fun method8(i: Byte): Boolean {
@@ -33,10 +33,10 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
         val i_10_ = (this.method183(48) * this.aClass369_4635!!.anInt4971 / 10000)
         val `is` = IntArray(4)
         val i_11_ = -50 % ((-20 - i) / 57)
-        Class348_Sub8.aHa6654!!.K(`is`)
-        Class348_Sub8.aHa6654!!.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aClass369_4635!!.anInt4963))
+        Class348_Sub8.aRenderer6654!!.K(`is`)
+        Class348_Sub8.aRenderer6654!!.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aClass369_4635!!.anInt4963))
         aClass105_8366!!.method972(i_9_, 2 + i_8_, (this.aClass369_4635!!.anInt4971), (this.aClass369_4635!!.anInt4963))
-        Class348_Sub8.aHa6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
+        Class348_Sub8.aRenderer6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
     }
 
     companion object {

@@ -1,7 +1,7 @@
 /* Class105_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class105_Sub3(@JvmField var aHa_Sub1_8460: ha_Sub1, @JvmField var anInt8471: Int, @JvmField var anInt8470: Int) : Class105() {
+abstract class Class105_Sub3(@JvmField var aHa_Sub1_8460: SoftwareRenderer, @JvmField var anInt8471: Int, @JvmField var anInt8470: Int) : Class105() {
     @JvmField
     var anInt8454: Int = 0
     @JvmField

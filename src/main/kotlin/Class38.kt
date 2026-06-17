@@ -280,7 +280,7 @@ class Class38 {
         fun method365(class318_sub1: Class318_Sub1, class348_sub1s: Array<Class348_Sub1?>?) {
             if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
                 val i = class318_sub1.method2384(class348_sub1s, 49)
-                Class9.aHa171!!.method3642(i, class348_sub1s)
+                Class9.aRenderer171!!.method3642(i, class348_sub1s)
             }
             if (Class332.aSArray4142 == NativeSprite.aSArray5191) {
                 val bool = false
@@ -294,9 +294,9 @@ class Class38 {
                     i = (class318_sub1.x shr Class362.anInt4459)
                     i_12_ = (class318_sub1.y shr Class362.anInt4459)
                 }
-                Class9.aHa171!!.EA((Class348_Sub1_Sub1.aSArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), Class199.method1457(i, i_12_))
+                Class9.aRenderer171!!.EA((Class348_Sub1_Sub1.aSArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), Class199.method1457(i, i_12_))
             }
-            val class318_sub4 = class318_sub1.method2386(1, Class9.aHa171)
+            val class318_sub4 = class318_sub1.method2386(1, Class9.aRenderer171)
             if (class318_sub4 != null) {
                 if (class318_sub1.aBoolean6391) {
                     val class318_sub3s = class318_sub4.aClass318_Sub3Array6414!!

@@ -72,7 +72,7 @@ class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Su
             aBigInteger9657 = null
         }
 
-        fun method3249(i: Int, i_0_: Int, var_ha_Sub2: ha_Sub2?, string: String?): Class242? {
+        fun method3249(i: Int, i_0_: Int, var_ha_Sub2: OpenGlRenderer?, string: String?): Class242? {
             try {
                 anInt9656++
                 val i_1_ = -89 / ((29 - i_0_) / 47)

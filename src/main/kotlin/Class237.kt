@@ -32,7 +32,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
     private val anIntArray3128 = intArrayOf(0, 0, 0, 256, 512, 512, 512, 256, 256, 384, 128, 128, 256)
     private val aByteArrayArrayArray3129: Array<Array<ByteArray?>?>
     var anInt3130: Int = 0
-    private fun method1675(i: Int, i_0_: Int, `is`: Array<ByteArray?>?, i_1_: Int, is_2_: Array<ByteArray?>?, i_3_: Int, class277: Class277?, class22: Class22?, bools: BooleanArray?, i_4_: Int, is_5_: Array<ByteArray?>?, i_6_: Int, i_7_: Int, var_ha: ha?) {
+    private fun method1675(i: Int, i_0_: Int, `is`: Array<ByteArray?>?, i_1_: Int, is_2_: Array<ByteArray?>?, i_3_: Int, class277: Class277?, class22: Class22?, bools: BooleanArray?, i_4_: Int, is_5_: Array<ByteArray?>?, i_6_: Int, i_7_: Int, var_renderer: Renderer?) {
         do {
             try {
                 anInt3112++
@@ -45,7 +45,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (class277_10_.anInt3563 != -1 && class277_10_.aBoolean3560) {
                                 val i_11_ = `is`!![-1 + i]!![i_1_ - 1]
                                 val i_12_ = 4 + is_2_!![i + -1]!![-1 + i_1_] * 2 and 0x7
-                                val i_13_ = (Class348_Sub42_Sub17.method3266(var_ha, 127, class277_10_))
+                                val i_13_ = (Class348_Sub42_Sub17.method3266(var_renderer, 127, class277_10_))
                                 if (Class160.aBooleanArrayArray2133!![i_11_.toInt()]!![i_12_]) {
                                     Class348_Sub15.anIntArray6775!![0] = class277_10_.anInt3563
                                     Class348_Sub40_Sub38.anIntArray9480!![0] = i_13_
@@ -64,7 +64,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (class277_15_.anInt3563 != -1 && class277_15_.aBoolean3560) {
                                 val i_16_ = `is`!![i + 1]!![-1 + i_1_]
                                 val i_17_ = 0x7 and 2 * is_2_!![1 + i]!![i_1_ + -1] + 6
-                                val i_18_ = (Class348_Sub42_Sub17.method3266(var_ha, 125, class277_15_))
+                                val i_18_ = (Class348_Sub42_Sub17.method3266(var_renderer, 125, class277_15_))
                                 if (Class160.aBooleanArrayArray2133!![i_16_.toInt()]!![i_17_]) {
                                     Class348_Sub15.anIntArray6775!![2] = class277_15_.anInt3563
                                     Class348_Sub40_Sub38.anIntArray9480!![2] = i_18_
@@ -85,7 +85,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (class277_20_.anInt3563 != -1 && class277_20_.aBoolean3560) {
                                 val i_21_ = `is`!![-1 + i]!![1 + i_1_]
                                 val i_22_ = 2 * is_2_!![-1 + i]!![1 + i_1_] + 2 and 0x7
-                                val i_23_ = (Class348_Sub42_Sub17.method3266(var_ha, i_3_ xor 0x7c.inv(), class277_20_))
+                                val i_23_ = (Class348_Sub42_Sub17.method3266(var_renderer, i_3_ xor 0x7c.inv(), class277_20_))
                                 if (Class160.aBooleanArrayArray2133!![i_21_.toInt()]!![i_22_]) {
                                     Class348_Sub15.anIntArray6775!![6] = class277_20_.anInt3563
                                     Class348_Sub40_Sub38.anIntArray9480!![6] = i_23_
@@ -104,7 +104,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (class277_25_.anInt3563 != -1 && class277_25_.aBoolean3560) {
                                 val i_26_ = `is`!![1 + i]!![i_1_ - -1]
                                 val i_27_ = 0x7 and  /*--*/(is_2_!![i - -1]!![1 + i_1_] * 2)
-                                val i_28_ = (Class348_Sub42_Sub17.method3266(var_ha, i_3_ + 127, class277_25_))
+                                val i_28_ = (Class348_Sub42_Sub17.method3266(var_renderer, i_3_ + 127, class277_25_))
                                 if (Class160.aBooleanArrayArray2133!![i_26_.toInt()]!![i_27_]) {
                                     Class348_Sub15.anIntArray6775!![4] = class277_25_.anInt3563
                                     Class348_Sub40_Sub38.anIntArray9480!![4] = i_28_
@@ -127,7 +127,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (class277_30_.aBoolean3560) {
                                 var i_33_ = 2
                                 var i_34_ = 4 + i_32_ * 2
-                                val i_35_ = (Class348_Sub42_Sub17.method3266(var_ha, 125, class277_30_))
+                                val i_35_ = (Class348_Sub42_Sub17.method3266(var_renderer, 125, class277_30_))
                                 for (i_36_ in 0..2) {
                                     i_33_ = i_33_ and 0x7
                                     i_34_ = 0x7 and i_34_
@@ -158,7 +158,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (class277_38_.aBoolean3560) {
                                 var i_41_ = 4
                                 var i_42_ = 2 * i_40_ + 2
-                                val i_43_ = (Class348_Sub42_Sub17.method3266(var_ha, 124, class277_38_))
+                                val i_43_ = (Class348_Sub42_Sub17.method3266(var_renderer, 124, class277_38_))
                                 for (i_44_ in 0..2) {
                                     i_41_ = i_41_ and 0x7
                                     i_42_ = 0x7 and i_42_
@@ -189,7 +189,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (class277_46_.aBoolean3560) {
                                 var i_49_ = 6
                                 var i_50_ = 2 * i_48_ + 4
-                                val i_51_ = (Class348_Sub42_Sub17.method3266(var_ha, 127, class277_46_))
+                                val i_51_ = (Class348_Sub42_Sub17.method3266(var_renderer, 127, class277_46_))
                                 for (i_52_ in 0..2) {
                                     i_50_ = i_50_ and 0x7
                                     i_49_ = 0x7 and i_49_
@@ -220,7 +220,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (class277_54_.aBoolean3560) {
                                 var i_57_ = 4
                                 var i_58_ = 6 + i_56_ * 2
-                                val i_59_ = (Class348_Sub42_Sub17.method3266(var_ha, 127, class277_54_))
+                                val i_59_ = (Class348_Sub42_Sub17.method3266(var_renderer, 127, class277_54_))
                                 for (i_60_ in 0..2) {
                                     i_57_ = 0x7 and i_57_
                                     i_58_ = 0x7 and i_58_
@@ -242,7 +242,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                     }
                 }
                 if (class277 == null) break
-                val i_61_ = Class348_Sub42_Sub17.method3266(var_ha, i_3_ xor 0x7e.inv(), class277)
+                val i_61_ = Class348_Sub42_Sub17.method3266(var_renderer, i_3_ xor 0x7e.inv(), class277)
                 if (!class277.aBoolean3560) break
                 for (i_62_ in 0..7) {
                     val i_63_ = -(i_4_ * 2) + i_62_ and 0x7
@@ -259,14 +259,14 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(
                     runtimeexception,
-                    ("sr.M(" + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (class277 != null) "{...}" else "null") + ',' + (if (class22 != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + (if (var_ha != null) "{...}" else "null") + ')')
+                    ("sr.M(" + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (class277 != null) "{...}" else "null") + ',' + (if (class22 != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
                 )
             }
             break
         } while (false)
     }
 
-    private fun method1676(var_s: s?, var_s_64_: s?, i: Int, var_s_65_: s?, `is`: Array<IntArray?>?, var_ha: ha?, i_66_: Int) {
+    private fun method1676(var_s: s?, var_s_64_: s?, i: Int, var_s_65_: s?, `is`: Array<IntArray?>?, var_renderer: Renderer?, i_66_: Int) {
         try {
             anInt3102++
             val is_67_ = aByteArrayArrayArray3126[i_66_]!!
@@ -357,7 +357,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 Class180.anIntArray2370!![i_90_] = 1
                             }
                             val bools_91_: BooleanArray = (if (class277 == null || !class277.aBoolean3560) Class265.aBooleanArrayArray4693!![i_76_.toInt()] else (Class50_Sub1.aBooleanArrayArray5225!![i_76_.toInt()]))!!
-                            method1675(i_71_, this.anInt3114, is_67_, i_73_, is_68_, -1, class277, class22, bools, i_77_, is_70_, this.anInt3117, i_76_.toInt(), var_ha)
+                            method1675(i_71_, this.anInt3114, is_67_, i_73_, is_68_, -1, class277, class22, bools, i_77_, is_70_, this.anInt3117, i_76_.toInt(), var_renderer)
                             var bool_92_ = (class277 != null && (class277.anInt3563 != class277.anInt3569))
                             if (!bool_92_) {
                                 for (i_93_ in 0..7) {
@@ -451,7 +451,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     i_114_ = class277.anInt3575
                                     i_115_ = class277.anInt3570
                                     i_113_ = class277.anInt3563
-                                    val i_116_ = (Class348_Sub42_Sub17.method3266(var_ha, i xor 0x68ad.inv(), class277))
+                                    val i_116_ = (Class348_Sub42_Sub17.method3266(var_renderer, i xor 0x68ad.inv(), class277))
                                     for (i_117_ in 0..<i_100_) {
                                         val bool_118_ = false
                                         val i_119_: Int
@@ -745,7 +745,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                 i_71_++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sr.B(" + (if (var_s != null) "{...}" else "null") + ',' + (if (var_s_64_ != null) "{...}" else "null") + ',' + i + ',' + (if (var_s_65_ != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_66_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("sr.B(" + (if (var_s != null) "{...}" else "null") + ',' + (if (var_s_64_ != null) "{...}" else "null") + ',' + i + ',' + (if (var_s_65_ != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ')'))
         }
     }
 
@@ -799,7 +799,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
         }
     }
 
-    fun method1680(var_s: s?, i: Byte, var_s_179_: s?, var_ha: ha?) {
+    fun method1680(var_s: s?, i: Byte, var_s_179_: s?, var_renderer: Renderer?) {
         try {
             anInt3131++
             val `is` = (Array<IntArray?>(this.anInt3117) { IntArray(this.anInt3114) })
@@ -880,8 +880,8 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             }
                         }
                     }
-                    if (!IOException_Sub1.aBoolean86) method1683(var_ha, if (i_180_ != 0) null else var_s, i_180_, 127.toByte(), `is`, NativeSprite.aSArray5191!![i_180_], if (i_180_ != 0) null else var_s_179_)
-                    else method1676(if (i_180_ != 0) null else var_s, NativeSprite.aSArray5191!![i_180_], -26833, if (i_180_ == 0) var_s_179_ else null, `is`, var_ha, i_180_)
+                    if (!IOException_Sub1.aBoolean86) method1683(var_renderer, if (i_180_ != 0) null else var_s, i_180_, 127.toByte(), `is`, NativeSprite.aSArray5191!![i_180_], if (i_180_ != 0) null else var_s_179_)
+                    else method1676(if (i_180_ != 0) null else var_s, NativeSprite.aSArray5191!![i_180_], -26833, if (i_180_ == 0) var_s_179_ else null, `is`, var_renderer, i_180_)
                     aByteArrayArrayArray3113[i_180_] = null
                     aByteArrayArrayArray3123[i_180_] = null
                     aByteArrayArrayArray3126[i_180_] = null
@@ -899,7 +899,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sr.L(" + (if (var_s != null) "{...}" else "null") + ',' + i + ',' + (if (var_s_179_ != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("sr.L(" + (if (var_s != null) "{...}" else "null") + ',' + i + ',' + (if (var_s_179_ != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -988,7 +988,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
         if (i_215_ != 1115212770) this.aByteArrayArrayArray3104 = null
     }
 
-    private fun method1683(var_ha: ha?, var_s: s?, i: Int, i_223_: Byte, `is`: Array<IntArray?>?, var_s_224_: s?, var_s_225_: s?) {
+    private fun method1683(var_renderer: Renderer?, var_s: s?, i: Int, i_223_: Byte, `is`: Array<IntArray?>?, var_s_224_: s?, var_s_225_: s?) {
         do {
             try {
                 anInt3111++
@@ -1137,7 +1137,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                 if (i_223_ >= 115) break
                 this.anInt3117 = 57
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("sr.H(" + (if (var_ha != null) "{...}" else "null") + ',' + (if (var_s != null) "{...}" else "null") + ',' + i + ',' + i_223_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_s_224_ != null) "{...}" else "null") + ',' + (if (var_s_225_ != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("sr.H(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_s != null) "{...}" else "null") + ',' + i + ',' + i_223_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_s_224_ != null) "{...}" else "null") + ',' + (if (var_s_225_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1239,7 +1239,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
         }
     }
 
-    fun method1685(var_ha: ha?, `is`: Array<Array<IntArray?>?>?, i: Int, class361s: Array<Class361?>?) {
+    fun method1685(var_renderer: Renderer?, `is`: Array<Array<IntArray?>?>?, i: Int, class361s: Array<Class361?>?) {
         try {
             anInt3118++
             if (i != 21407) method1680(null, (-116).toByte(), null, null)
@@ -1275,11 +1275,11 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                 if (Class186.aBoolean2492) i_306_ = i_306_ or 0x7
                 if (!Class47.aBoolean845) i_306_ = i_306_ or 0x20
                 val is_307_ = (if (`is` == null || `is`.size <= i_304_) this.anIntArrayArrayArray3122[i_304_] else `is`[i_304_])
-                method3313(i_304_, var_ha!!.method3648(this.anInt3117, this.anInt3114, (this.anIntArrayArrayArray3122[i_304_]!!), is_307_, 512, i_305_, i_306_))
+                method3313(i_304_, var_renderer!!.method3648(this.anInt3117, this.anInt3114, (this.anIntArrayArrayArray3122[i_304_]!!), is_307_, 512, i_305_, i_306_))
                 i_304_++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sr.J(" + (if (var_ha != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class361s != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("sr.J(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class361s != null) "{...}" else "null") + ')'))
         }
     }
 

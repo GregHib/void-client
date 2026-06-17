@@ -109,7 +109,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 method297(false)
                 method1402(1)
                 Class66.aClass60_1174!!.method590(0)
-                Class348_Sub8.aHa6654!!.method3663()
+                Class348_Sub8.aRenderer6654!!.method3663()
                 method1707(26469)
                 Class348_Sub49.method3354(-52)
                 Class348_Sub29.Companion.aClass45_6909!!.method412((-124).toByte())

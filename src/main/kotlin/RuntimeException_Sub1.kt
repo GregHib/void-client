@@ -25,7 +25,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
         var anInt4605: Int = 0
 
         @JvmStatic
-        fun method4009(i: Int, `is`: IntArray?, is_0_: IntArray?, i_1_: Int, var_ha_Sub2: ha_Sub2?, i_2_: Int): NativeSprite {
+        fun method4009(i: Int, `is`: IntArray?, is_0_: IntArray?, i_1_: Int, var_ha_Sub2: OpenGlRenderer?, i_2_: Int): NativeSprite {
             try {
                 anInt4597++
                 val is_3_ = ByteArray(i * i_2_)

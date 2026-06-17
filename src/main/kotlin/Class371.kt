@@ -17,7 +17,7 @@ class Class371 {
         @JvmField
         var anInt4523: Int = 0
         @JvmStatic
-        fun method3583(bool: Boolean, `is`: ByteArray?, i: Int, i_0_: Int, var_ha_Sub2: ha_Sub2?, i_1_: Int, i_2_: Int, i_3_: Int): Class258_Sub3_Sub1? {
+        fun method3583(bool: Boolean, `is`: ByteArray?, i: Int, i_0_: Int, var_ha_Sub2: OpenGlRenderer?, i_1_: Int, i_2_: Int, i_3_: Int): Class258_Sub3_Sub1? {
             try {
                 anInt4521++
                 if (i_1_ > -17) return null

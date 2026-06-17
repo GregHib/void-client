@@ -8,11 +8,11 @@ class Class148 {
     var aClass318_Sub1_Sub3_2040: Class318_Sub1_Sub3? = null
     fun method1199(i: Byte) {
         anInt2043++
-        if (i.toInt() == -106 && ha_Sub2.anInt7722 < 500) {
+        if (i.toInt() == -106 && OpenGlRenderer.anInt7722 < 500) {
             this.aClass318_Sub1_Sub3_2040 = null
             this.aClass148_2038 = Class16.aClass148_231
             Class16.aClass148_231 = this
-            ha_Sub2.anInt7722++
+            OpenGlRenderer.anInt7722++
         }
     }
 

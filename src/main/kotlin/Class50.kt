@@ -22,7 +22,7 @@ abstract class Class50(@JvmField var anInt864: Int, @JvmField var anInt865: Int,
         }
 
         @JvmStatic
-        fun method459(i: Int, var_ha_Sub2: ha_Sub2?, string: String?, bool: Boolean): Class171? {
+        fun method459(i: Int, var_ha_Sub2: OpenGlRenderer?, string: String?, bool: Boolean): Class171? {
             try {
                 anInt861++
                 val i_6_ = glGenProgramARB()

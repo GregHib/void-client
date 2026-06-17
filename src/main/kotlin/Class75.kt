@@ -77,7 +77,7 @@ open class Class75 {
         var anInt1277: Int = 0
 
         @JvmStatic
-        fun method745(var_ha: ha, class348_sub21: Class348_Sub21, class42: Class42) {
+        fun method745(var_renderer: Renderer, class348_sub21: Class348_Sub21, class42: Class42) {
             if (class42.anIntArray591 != null) {
                 val `is` = IntArray(class42.anIntArray591!!.size)
                 for (i in 0..<`is`.size / 2) {
@@ -86,7 +86,7 @@ open class Class75 {
                     `is`[i * 2] = anInt1272 + ((anInt1276 - anInt1272) * (i_0_ - anInt1274) / (anInt1265 - anInt1274))
                     `is`[i * 2 + 1] = anInt1268 - ((anInt1268 - anInt1262) * (i_1_ - anInt1257) / (anInt1277 - anInt1257))
                 }
-                Class329.method2620(var_ha, `is`, class42.anInt582)
+                Class329.method2620(var_renderer, `is`, class42.anInt582)
                 if (class42.anInt584 > 0) {
                     for (i in 0..<`is`.size / 2 - 1) {
                         var i_2_ = `is`[i * 2]
@@ -105,7 +105,7 @@ open class Class75 {
                             i_3_ = i_5_
                             i_5_ = i_8_
                         }
-                        var_ha.method3674(i_2_, i_3_, i_4_, i_5_, (class42.anIntArray572[(class42.aByteArray564[i].toInt() and 0xff)]), 1, class42.anInt584, class42.anInt575, class42.anInt601)
+                        var_renderer.method3674(i_2_, i_3_, i_4_, i_5_, (class42.anIntArray572[(class42.aByteArray564[i].toInt() and 0xff)]), 1, class42.anInt584, class42.anInt575, class42.anInt601)
                     }
                     var i = `is`[`is`.size - 2]
                     var i_9_ = `is`[`is`.size - 1]
@@ -123,10 +123,10 @@ open class Class75 {
                         i_9_ = i_11_
                         i_11_ = i_14_
                     }
-                    var_ha.method3674(i, i_9_, i_10_, i_11_, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.size - 1)]).toInt() and 0xff]), 1, class42.anInt584, class42.anInt575, class42.anInt601)
+                    var_renderer.method3674(i, i_9_, i_10_, i_11_, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.size - 1)]).toInt() and 0xff]), 1, class42.anInt584, class42.anInt575, class42.anInt601)
                 } else {
-                    for (i in 0..<`is`.size / 2 - 1) var_ha.method3645(`is`[i * 2 + 1], `is`[i * 2], `is`[(i + 1) * 2], -8003, (class42.anIntArray572[(class42.aByteArray564[i].toInt() and 0xff)]), `is`[(i + 1) * 2 + 1])
-                    var_ha.method3645(`is`[`is`.size - 1], `is`[`is`.size - 2], `is`[0], -8003, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.size - 1)]).toInt() and 0xff]), `is`[1])
+                    for (i in 0..<`is`.size / 2 - 1) var_renderer.method3645(`is`[i * 2 + 1], `is`[i * 2], `is`[(i + 1) * 2], -8003, (class42.anIntArray572[(class42.aByteArray564[i].toInt() and 0xff)]), `is`[(i + 1) * 2 + 1])
+                    var_renderer.method3645(`is`[`is`.size - 1], `is`[`is`.size - 2], `is`[0], -8003, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.size - 1)]).toInt() and 0xff]), `is`[1])
                 }
             }
         }
@@ -159,18 +159,18 @@ open class Class75 {
             aClass243ArrayArrayArray1269 = null
         }
 
-        private fun method747(var_ha: ha?, class348_sub21: Class348_Sub21, i: Int, i_15_: Int, i_16_: Int, i_17_: Int) {
+        private fun method747(var_renderer: Renderer?, class348_sub21: Class348_Sub21, i: Int, i_15_: Int, i_16_: Int, i_17_: Int) {
             class348_sub21.anInt6853 = (anInt1272 + (i_16_ + i * (class348_sub21.anInt6852 - anInt1274) shr 16))
             class348_sub21.anInt6855 = (anInt1268 - (i_17_ + i_15_ * (class348_sub21.anInt6851 - anInt1257) shr 16))
         }
 
         @JvmStatic
-        fun method748(var_ha: ha) {
+        fun method748(var_renderer: Renderer) {
             val i: Int = anInt1265 - anInt1274
             val i_18_: Int = anInt1277 - anInt1257
             val i_19_: Int = (anInt1276 - anInt1272 shl 16) / i
             val i_20_: Int = (anInt1268 - anInt1262 shl 16) / i_18_
-            method765(var_ha, i_19_, i_20_, 0, 0)
+            method765(var_renderer, i_19_, i_20_, 0, 0)
         }
 
         @JvmStatic
@@ -187,7 +187,7 @@ open class Class75 {
             anIntArray1260 = null
         }
 
-        private fun method750(var_ha: ha?, class348_sub49: Class348_Sub49, i: Int, i_21_: Int, i_22_: Int, i_23_: Int, `is`: IntArray, is_24_: IntArray) {
+        private fun method750(var_renderer: Renderer?, class348_sub49: Class348_Sub49, i: Int, i_21_: Int, i_22_: Int, i_23_: Int, `is`: IntArray, is_24_: IntArray) {
             val i_25_ = class348_sub49.readUnsignedByte(255)
             if ((i_25_ and 0x1) == 0) {
                 val bool = (i_25_ and 0x2) == 0
@@ -363,17 +363,17 @@ open class Class75 {
             aClass348_Sub42_Sub14_1243 = aClass356_1241!!.method3480(i.toLong(), -6008) as Class348_Sub42_Sub14?
         }
 
-        private fun method755(var_ha: ha, i: Int, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, i_61_: Int, i_62_: Int, `is`: ShortArray?, is_63_: ByteArray?, bool: Boolean) {
+        private fun method755(var_renderer: Renderer, i: Int, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, i_61_: Int, i_62_: Int, `is`: ShortArray?, is_63_: ByteArray?, bool: Boolean) {
             if (bool || i_60_ != 0 || i_61_ > 0) {
-                if (i_61_ == 0) var_ha.aa(i, i_57_, i_58_, i_59_, i_60_, 0)
+                if (i_61_ == 0) var_renderer.aa(i, i_57_, i_58_, i_59_, i_60_, 0)
                 else {
                     val i_64_ = i_62_ and 0x3f
                     if (i_64_ == 0 || i_58_ <= 1 || i_59_ <= 1) {
                         val i_65_: Int = anIntArray1260!![i_61_]
-                        if (bool || i_65_ != 0) var_ha.aa(i, i_57_, i_58_, i_59_, i_65_, 0)
+                        if (bool || i_65_ != 0) var_renderer.aa(i, i_57_, i_58_, i_59_, i_65_, 0)
                     } else {
                         val i_66_ = if (bool) 0 else 1
-                        method424(anIntArray1260!![i_61_], i_60_, var_ha, 0, i_66_, anInt1255, i_62_ shr 6 and 0x3, aByteArrayArrayArray1251, i_58_, i, i_64_, i_59_, i_57_)
+                        method424(anIntArray1260!![i_61_], i_60_, var_renderer, 0, i_66_, anInt1255, i_62_ shr 6 and 0x3, aByteArrayArrayArray1251, i_58_, i, i_64_, i_59_, i_57_)
                     }
                 }
             }
@@ -393,34 +393,34 @@ open class Class75 {
                             if (class51.anInt874 == 1) i_71_ = -3407872
                             val i_72_ = is_63_[i_69_].toInt() shr 6 and 0x3
                             if (i_70_ == 0) {
-                                if (i_72_ == 0) var_ha.P(i, i_57_, i_59_, i_71_, 0)
-                                else if (i_72_ == 1) var_ha.U(i, i_57_, i_58_, i_71_, 0)
-                                else if (i_72_ == 2) var_ha.P(i_67_, i_57_, i_59_, i_71_, 0)
-                                else var_ha.U(i, i_68_, i_58_, i_71_, 0)
+                                if (i_72_ == 0) var_renderer.P(i, i_57_, i_59_, i_71_, 0)
+                                else if (i_72_ == 1) var_renderer.U(i, i_57_, i_58_, i_71_, 0)
+                                else if (i_72_ == 2) var_renderer.P(i_67_, i_57_, i_59_, i_71_, 0)
+                                else var_renderer.U(i, i_68_, i_58_, i_71_, 0)
                             } else if (i_70_ == 2) {
                                 if (i_72_ == 0) {
-                                    var_ha.P(i, i_57_, i_59_, -1, 0)
-                                    var_ha.U(i, i_57_, i_58_, i_71_, 0)
+                                    var_renderer.P(i, i_57_, i_59_, -1, 0)
+                                    var_renderer.U(i, i_57_, i_58_, i_71_, 0)
                                 } else if (i_72_ == 1) {
-                                    var_ha.P(i_67_, i_57_, i_59_, -1, 0)
-                                    var_ha.U(i, i_57_, i_58_, i_71_, 0)
+                                    var_renderer.P(i_67_, i_57_, i_59_, -1, 0)
+                                    var_renderer.U(i, i_57_, i_58_, i_71_, 0)
                                 } else if (i_72_ == 2) {
-                                    var_ha.P(i_67_, i_57_, i_59_, -1, 0)
-                                    var_ha.U(i, i_68_, i_58_, i_71_, 0)
+                                    var_renderer.P(i_67_, i_57_, i_59_, -1, 0)
+                                    var_renderer.U(i, i_68_, i_58_, i_71_, 0)
                                 } else {
-                                    var_ha.P(i, i_57_, i_59_, -1, 0)
-                                    var_ha.U(i, i_68_, i_58_, i_71_, 0)
+                                    var_renderer.P(i, i_57_, i_59_, -1, 0)
+                                    var_renderer.U(i, i_68_, i_58_, i_71_, 0)
                                 }
                             } else if (i_70_ == 3) {
-                                if (i_72_ == 0) var_ha.U(i, i_57_, 1, i_71_, 0)
-                                else if (i_72_ == 1) var_ha.U(i_67_, i_57_, 1, i_71_, 0)
-                                else if (i_72_ == 2) var_ha.U(i_67_, i_68_, 1, i_71_, 0)
-                                else var_ha.U(i, i_68_, 1, i_71_, 0)
+                                if (i_72_ == 0) var_renderer.U(i, i_57_, 1, i_71_, 0)
+                                else if (i_72_ == 1) var_renderer.U(i_67_, i_57_, 1, i_71_, 0)
+                                else if (i_72_ == 2) var_renderer.U(i_67_, i_68_, 1, i_71_, 0)
+                                else var_renderer.U(i, i_68_, 1, i_71_, 0)
                             } else if (i_70_ == 9) {
                                 if (i_72_ == 0 || i_72_ == 2) {
-                                    for (i_73_ in 0..<i_59_) var_ha.U(i + i_73_, i_68_ - i_73_, 1, i_71_, 0)
+                                    for (i_73_ in 0..<i_59_) var_renderer.U(i + i_73_, i_68_ - i_73_, 1, i_71_, 0)
                                 } else {
-                                    for (i_74_ in 0..<i_59_) var_ha.U(i + i_74_, i_57_ + i_74_, 1, i_71_, 0)
+                                    for (i_74_ in 0..<i_59_) var_renderer.U(i + i_74_, i_57_ + i_74_, 1, i_71_, 0)
                                 }
                             }
                         }
@@ -430,7 +430,7 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method756(var_ha: ha?, i: Int, i_75_: Int) {
+        fun method756(var_renderer: Renderer?, i: Int, i_75_: Int) {
             val class348_sub49: Class348_Sub49 = (Class348_Sub49(aClass45_1237!!.method391((aClass348_Sub42_Sub14_1243!!.aString9625), "area", -29832)))
             val i_76_ = class348_sub49.readUnsignedByte(255)
             val `is` = IntArray(i_76_)
@@ -446,7 +446,7 @@ open class Class75 {
                         for (i_84_ in 0..63) {
                             val i_85_: Int = i_81_ * 64 + i_83_ - anInt1266
                             val i_86_: Int = i_82_ * 64 + i_84_ - anInt1263
-                            method750(var_ha, class348_sub49, i_81_, i_82_, i_85_, i_86_, `is`, is_79_)
+                            method750(var_renderer, class348_sub49, i_81_, i_82_, i_85_, i_86_, `is`, is_79_)
                         }
                     }
                 } else {
@@ -458,7 +458,7 @@ open class Class75 {
                         for (i_92_ in 0..7) {
                             val i_93_: Int = i_87_ * 64 + i_89_ * 8 + i_91_ - anInt1266
                             val i_94_: Int = i_88_ * 64 + i_90_ * 8 + i_92_ - anInt1263
-                            method750(var_ha, class348_sub49, i_87_, i_88_, i_93_, i_94_, `is`, is_79_)
+                            method750(var_renderer, class348_sub49, i_87_, i_88_, i_93_, i_94_, `is`, is_79_)
                         }
                     }
                 }
@@ -506,12 +506,12 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method758(var_ha: ha?): Class262? {
+        fun method758(var_renderer: Renderer?): Class262? {
             val i: Int = anInt1265 - anInt1274
             val i_102_: Int = anInt1277 - anInt1257
             val i_103_: Int = (anInt1276 - anInt1272 shl 16) / i
             val i_104_: Int = (anInt1268 - anInt1262 shl 16) / i_102_
-            return method762(var_ha, i_103_, i_104_, 0, 0)
+            return method762(var_renderer, i_103_, i_104_, 0, 0)
         }
 
         private fun method759(var_renderConfig: RenderConfig, i: Int, i_105_: Int, i_106_: Int): Int {
@@ -566,23 +566,23 @@ open class Class75 {
             }
         }
 
-        private fun method762(var_ha: ha?, i: Int, i_115_: Int, i_116_: Int, i_117_: Int): Class262? {
+        private fun method762(var_renderer: Renderer?, i: Int, i_115_: Int, i_116_: Int, i_117_: Int): Class262? {
             var class348_sub21 = aClass262_1254!!.method1995(4) as Class348_Sub21?
             while (class348_sub21 != null) {
-                method747(var_ha, class348_sub21, i, i_115_, i_116_, i_117_)
+                method747(var_renderer, class348_sub21, i, i_115_, i_116_, i_117_)
                 class348_sub21 = aClass262_1254!!.method1990(74.toByte()) as Class348_Sub21?
             }
             return aClass262_1254
         }
 
-        private fun method763(var_ha: ha?, i: Int, i_118_: Int, i_119_: Int, i_120_: Int, `is`: ShortArray?, is_121_: ByteArray?) {
+        private fun method763(var_renderer: Renderer?, i: Int, i_118_: Int, i_119_: Int, i_120_: Int, `is`: ShortArray?, is_121_: ByteArray?) {
             if (`is` != null) {
                 for (i_122_ in `is`.indices) {
                     val class51: Class51 = aClass263_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
                     val i_123_ = class51.anInt875
                     if (i_123_ != -1) {
                         val class218: Class218? = aClass141_1242!!.method1173(31.toByte(), i_123_)
-                        val class105 = class218!!.method1596((if (class51.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_ha!!)
+                        val class105 = class218!!.method1596((if (class51.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_renderer!!)
                         if (class105 != null) {
                             var i_124_ = i_119_ * class105.method966() shr 2
                             var i_125_ = i_120_ * class105.method980() shr 2
@@ -612,7 +612,7 @@ open class Class75 {
             for (i_130_ in 0..<aClass268_1239!!.anInt3429) anIntArray1260!![i_130_ + 1] = method759(var_renderConfig, i_130_, i, i_129_)
         }
 
-        private fun method765(var_ha: ha, i: Int, i_131_: Int, i_132_: Int, i_133_: Int) {
+        private fun method765(var_renderer: Renderer, i: Int, i_131_: Int, i_132_: Int, i_133_: Int) {
             var i_134_: Int = anInt1265 - anInt1274
             var i_135_: Int = anInt1277 - anInt1257
             if (anInt1265 < anInt1259) i_134_++
@@ -645,17 +645,17 @@ open class Class75 {
                                     else if ((i_136_ + anInt1274 and 0x4) != (i_146_ + anInt1277 and 0x4)) i_152_ = -11840664
                                     else i_152_ = (anIntArray1260!![(aClass268_1239!!.anInt3447) + 1])
                                     if (i_152_ == 0) i_152_ = -16777216
-                                    var_ha.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0)
+                                    var_renderer.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0)
                                 } else if (i_154_ > 0) {
                                     if (i_154_ == 65535) {
                                         val class348_sub39 = ((aClass356_1271!!.method3480((i_140_ shl 16 or i_150_).toLong(), -6008)) as Class348_Sub39?)
-                                        if (class348_sub39 != null) method755(var_ha, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025), true)
+                                        if (class348_sub39 != null) method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025), true)
                                     } else {
                                         aShortArray1252!![0] = (i_154_ - 1).toShort()
                                         aByteArray1248!![0] = aByteArray1258!![i_151_]
-                                        Companion.method755(var_ha, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), aShortArray1252, aByteArray1248!!, true)
+                                        Companion.method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), aShortArray1252, aByteArray1248!!, true)
                                     }
-                                } else Companion.method755(var_ha, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), null, null, true)
+                                } else Companion.method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), null, null, true)
                             }
                         }
                     } else {
@@ -668,7 +668,7 @@ open class Class75 {
                             else if ((i_136_ + anInt1274 and 0x4) != (i_141_ + anInt1277 and 0x4)) i_145_ = -11840664
                             else i_145_ = anIntArray1260!![(aClass268_1239!!.anInt3447) + 1]
                             if (i_145_ == 0) i_145_ = -16777216
-                            var_ha.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0)
+                            var_renderer.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0)
                         }
                     }
                 }
@@ -691,13 +691,13 @@ open class Class75 {
                                     if (i_165_ > 0) {
                                         if (i_165_ == 65535) {
                                             val class348_sub39 = ((aClass356_1271!!.method3480((i_159_ shl 16 or i_164_).toLong(), -6008)) as Class348_Sub39?)
-                                            if (class348_sub39 != null) method763(var_ha, i_156_, i_161_, i_158_, i_163_, (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025))
+                                            if (class348_sub39 != null) method763(var_renderer, i_156_, i_161_, i_158_, i_163_, (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025))
                                         } else {
                                             aShortArray1252!![0] = (i_165_ - 1).toShort()
                                             aByteArray1248!![0] = (aByteArray1258!![i_159_ + i_164_ * anInt1259])
-                                            Companion.method763(var_ha, i_156_, i_161_, i_158_, i_163_, aShortArray1252, aByteArray1248!!)
+                                            Companion.method763(var_renderer, i_156_, i_161_, i_158_, i_163_, aShortArray1252, aByteArray1248!!)
                                         }
-                                    } else Companion.method763(var_ha, i_156_, i_161_, i_158_, i_163_, null, null)
+                                    } else Companion.method763(var_renderer, i_156_, i_161_, i_158_, i_163_, null, null)
                                 }
                             }
                         }
@@ -727,7 +727,7 @@ open class Class75 {
                                 val i_178_: Int = ((i_132_ + i * (i_175_ + 1) shr 16) + anInt1272)
                                 val i_179_: Int = (anInt1268 - (i_133_ + i_131_ * (i_176_ + 1) shr 16))
                                 val i_180_: Int = anInt1268 - (i_133_ + i_131_ * i_176_ shr 16)
-                                method755(var_ha, i_177_, i_179_, i_178_ - i_177_, i_180_ - i_179_, (class318_sub8.anInt6465), (class318_sub8.aByte6460).toInt() and 0xff, (class318_sub8.aByte6463).toInt(), (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462), false)
+                                method755(var_renderer, i_177_, i_179_, i_178_ - i_177_, i_180_ - i_179_, (class318_sub8.anInt6465), (class318_sub8.aByte6460).toInt() and 0xff, (class318_sub8.aByte6463).toInt(), (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462), false)
                                 class318_sub8 = (class243.method1878((-79).toByte()) as Class318_Sub8?)
                             }
                         }
@@ -747,7 +747,7 @@ open class Class75 {
                                 val i_188_: Int = ((i_132_ + i * (i_185_ + 1) shr 16) + anInt1272)
                                 val i_189_: Int = (anInt1268 - (i_133_ + i_131_ * (i_186_ + 1) shr 16))
                                 val i_190_: Int = anInt1268 - (i_133_ + i_131_ * i_186_ shr 16)
-                                method763(var_ha, i_187_, i_189_, i_188_ - i_187_, i_190_ - i_189_, (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462))
+                                method763(var_renderer, i_187_, i_189_, i_188_ - i_187_, i_190_ - i_189_, (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462))
                                 class318_sub8 = (class243.method1878((-75).toByte()) as Class318_Sub8?)
                             }
                         }

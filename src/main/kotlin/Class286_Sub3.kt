@@ -10,7 +10,7 @@ import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fvARB
 import java.util.*
 
-class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?) : Class286(var_ha_Sub2) {
+class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : Class286(var_ha_Sub2) {
     private var aFloatArray6218: FloatArray? = null
     private var anInt6219 = 0
     private var aClass171_6220: Class171? = null

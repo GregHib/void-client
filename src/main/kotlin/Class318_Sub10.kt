@@ -21,11 +21,11 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         return this.aClass98_6481
     }
 
-    fun method2528(var_ha: ha?) {
+    fun method2528(var_renderer: Renderer?) {
         this.aClass98_6481.aClass88_1569.method845(89.toByte())
         var class318_sub7 = aClass243_6478.method1872(8) as Class318_Sub7?
         while (class318_sub7 != null) {
-            class318_sub7.method2511(true, var_ha, aLong6471)
+            class318_sub7.method2511(true, var_renderer, aLong6471)
             class318_sub7 = aClass243_6478.method1878(126.toByte()) as Class318_Sub7?
         }
     }
@@ -65,7 +65,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         this.aBoolean6482 = bool
     }
 
-    private fun method2532(var_ha: ha?, class129s: Array<Class129?>?, bool: Boolean) {
+    private fun method2532(var_renderer: Renderer?, class129s: Array<Class129?>?, bool: Boolean) {
         for (i in 0..31) aBooleanArray6474!![i] = false
         var class318_sub7 = aClass243_6478.method1872(8) as Class318_Sub7?
         while_110_@ while (class318_sub7 != null) {
@@ -92,7 +92,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
             for (i in class129s.indices) {
                 if (i == 32 || anInt6480 == 32) break
                 if (!aBooleanArray6474!![i]) {
-                    val class318_sub7 = Class318_Sub7(var_ha, class129s[i], this, aLong6472)
+                    val class318_sub7 = Class318_Sub7(var_renderer, class129s[i], this, aLong6472)
                     aClass243_6478.method1869(-126, class318_sub7)
                     anInt6480++
                     aBooleanArray6474!![i] = true
@@ -109,7 +109,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         aBoolean6473 = true
     }
 
-    fun method2535(var_ha: ha?, l: Long): Boolean {
+    fun method2535(var_renderer: Renderer?, l: Long): Boolean {
         if (aLong6472 != aLong6471) method2534()
         else method2537()
         if (l - aLong6472 > 750L) {
@@ -120,23 +120,23 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         if (aBoolean6484) {
             var class318_sub7 = aClass243_6478.method1872(8) as? Class318_Sub7?
             while (class318_sub7 != null) {
-                for (i_4_ in 0..<class318_sub7.aClass181_6441!!.anInt2422) class318_sub7.method2513(var_ha, 1, l, 3, !aBoolean6473)
+                for (i_4_ in 0..<class318_sub7.aClass181_6441!!.anInt2422) class318_sub7.method2513(var_renderer, 1, l, 3, !aBoolean6473)
                 class318_sub7 = aClass243_6478.method1878(122.toByte()) as? Class318_Sub7?
             }
             aBoolean6484 = false
         }
         var class318_sub7 = aClass243_6478.method1872(8) as? Class318_Sub7?
         while (class318_sub7 != null) {
-            class318_sub7.method2513(var_ha, i, l, 3, !aBoolean6473)
+            class318_sub7.method2513(var_renderer, i, l, 3, !aBoolean6473)
             class318_sub7 = aClass243_6478.method1878((-72).toByte()) as? Class318_Sub7?
         }
         aLong6471 = l
         return true
     }
 
-    fun method2536(var_ha: ha?, l: Long, class129s: Array<Class129?>?, class342s: Array<Class342?>?, bool: Boolean) {
+    fun method2536(var_renderer: Renderer?, l: Long, class129s: Array<Class129?>?, class342s: Array<Class342?>?, bool: Boolean) {
         if (!this.aBoolean6470) {
-            method2532(var_ha, class129s, bool)
+            method2532(var_renderer, class129s, bool)
             method2538(class342s, bool)
             aLong6472 = l
         }

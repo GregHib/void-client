@@ -9,7 +9,7 @@ class Class318_Sub4 : Class318() {
     @JvmField
     var aClass318_Sub3Array6414: Array<Class318_Sub3?>? = null
 
-    fun method2504(i: Int, i_32_: Int, var_ha: ha?, i_33_: Int): Boolean {
+    fun method2504(i: Int, i_32_: Int, var_renderer: Renderer?, i_33_: Int): Boolean {
         if (i_33_ >= -37) method2502(null, -82)
         anInt6407++
         val i_34_ = this.aClass318_Sub1_6410!!.method2393(-117)
@@ -17,7 +17,7 @@ class Class318_Sub4 : Class318() {
             var i_35_ = 0
             while (this.aClass318_Sub3Array6414!!.size > i_35_) {
                 this.aClass318_Sub3Array6414!![i_35_]!!.anInt6403 = this.aClass318_Sub3Array6414!![i_35_]!!.anInt6403 shl i_34_
-                if (this.aClass318_Sub3Array6414!![i_35_]!!.method2500(i_32_, i) && this.aClass318_Sub1_6410!!.method2391(var_ha, i, i_32_, 0)) {
+                if (this.aClass318_Sub3Array6414!![i_35_]!!.method2500(i_32_, i) && this.aClass318_Sub1_6410!!.method2391(var_renderer, i, i_32_, 0)) {
                     this.aClass318_Sub3Array6414!![i_35_]!!.anInt6403 = this.aClass318_Sub3Array6414!![i_35_]!!.anInt6403 shr i_34_
                     return true
                 }
@@ -35,7 +35,7 @@ class Class318_Sub4 : Class318() {
         var anInt6411: Int = 0
         var anInt6412: Int = 0
         var anInt6413: Int = 0
-        fun method2501(i: Int, var_ha_Sub3: ha_Sub3?, `is`: IntArray?, i_0_: Byte, is_1_: IntArray?, i_2_: Int): IndexedSprite {
+        fun method2501(i: Int, var_ha_Sub3: NativeRenderer?, `is`: IntArray?, i_0_: Byte, is_1_: IntArray?, i_2_: Int): IndexedSprite {
             try {
                 if (i_0_ >= -32) method2502(null, -18)
                 anInt6412++

@@ -206,7 +206,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                             Class321.anInt4017 = Class92.anInt1524
                             Class335.anInt4167 = 0
                             Class348_Sub48.anInt7129 = (Class272.anInt3473 - Class92.anInt1524) / 2
-                            Class348_Sub42_Sub8_Sub2.anInt10432 = ha_Sub2.anInt7666
+                            Class348_Sub42_Sub8_Sub2.anInt10432 = OpenGlRenderer.anInt7666
                         } else method2158(56.toByte())
                         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                             if (Class321.anInt4017 < 1024 && Class348_Sub42_Sub8_Sub2.anInt10432 < 768) {
@@ -214,9 +214,9 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                             }
                         }
                         Class305.aCanvas3869!!.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432))
-                        if (Class348_Sub8.aHa6654 != null) {
+                        if (Class348_Sub8.aRenderer6654 != null) {
                             if (Class59_Sub1.aBoolean5300) s.method3980(120, Class305.aCanvas3869!!)
-                            else Class348_Sub8.aHa6654!!.method3669(Class305.aCanvas3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+                            else Class348_Sub8.aRenderer6654!!.method3669(Class305.aCanvas3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                         }
                         if (Class52.aFrame4904 === container) {
                             val insets = Class52.aFrame4904!!.getInsets()

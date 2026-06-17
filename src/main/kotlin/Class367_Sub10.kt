@@ -3,7 +3,7 @@ import Class258_Sub3_Sub1.Companion.method1971
 /* Class367_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class367_Sub10 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha_Sub3) {
+class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class367(var_ha_Sub3) {
     private var aBoolean7385 = false
     override fun method3527(i: Int, interface18: Interface18?, i_0_: Int) {
         this.aHa_Sub3_4479.method3850(79.toByte(), interface18)

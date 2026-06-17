@@ -4,7 +4,7 @@
 class Class348_Sub34 internal constructor(@JvmField var anInt6973: Int, @JvmField var anInt6971: Int) : Class348() {
     companion object {
         @JvmField
-        var aHa6968: ha? = null
+        var aRenderer6968: Renderer? = null
         @JvmField
         var anInt6969: Int
         var aClass351_6970: Class351?
@@ -18,7 +18,7 @@ class Class348_Sub34 internal constructor(@JvmField var anInt6973: Int, @JvmFiel
             anIntArray6972 = null
             if (bool != true) method3026(false)
             aClass351_6970 = null
-            aHa6968 = null
+            aRenderer6968 = null
         }
 
         init {

@@ -3,7 +3,7 @@ import Class6.Companion.method206
 /* Class109 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class109 internal constructor(private val aHa_Sub1_1666: ha_Sub1, private val aClass167_1670: Class167) {
+class Class109 internal constructor(private val aHa_Sub1_1666: SoftwareRenderer, private val aClass167_1670: Class167) {
     var anInt1665: Int = 0
     var aBoolean1667: Boolean = false
     var anInt1668: Int = 0

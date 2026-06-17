@@ -9,7 +9,7 @@ abstract class Class135 {
     private var anInt1921 = 0
     private val aBoolean1923: Boolean
     @JvmField
-    var aHa_Sub2_1927: ha_Sub2? = null
+    var aHa_Sub2_1927: OpenGlRenderer? = null
     @JvmField
     var anInt1929: Int = 0
     private val anInt1930: Int
@@ -35,7 +35,7 @@ abstract class Class135 {
 
     abstract fun method1152(i: Int)
 
-    internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: ByteArray?, i_4_: Int, bool: Boolean) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, `is`: ByteArray?, i_4_: Int, bool: Boolean) {
         try {
             aBoolean1923 = bool
             this.aHa_Sub2_1927 = var_ha_Sub2
@@ -51,7 +51,7 @@ abstract class Class135 {
         }
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, buffer: Buffer?, i_5_: Int, bool: Boolean) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, buffer: Buffer?, i_5_: Int, bool: Boolean) {
         try {
             anInt1930 = i
             anInt1921 = i_5_
@@ -92,10 +92,10 @@ abstract class Class135 {
         }
 
         @JvmStatic
-        fun method1151(i: Int, var_ha: ha?, i_3_: Int): Class143? {
+        fun method1151(i: Int, var_renderer: Renderer?, i_3_: Int): Class143? {
             anInt1924++
             if (i != -25411) return null
-            val class352 = Class239_Sub3.method1734(i_3_, var_ha, (-81).toByte(), true)
+            val class352 = Class239_Sub3.method1734(i_3_, var_renderer, (-81).toByte(), true)
             if (class352 == null) return null
             return class352.aClass143_4333
         }

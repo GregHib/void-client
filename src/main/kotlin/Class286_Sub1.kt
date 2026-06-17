@@ -4,7 +4,7 @@ import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 
-class Class286_Sub1 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha_Sub2) {
+class Class286_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286(var_ha_Sub2) {
     private var aBoolean6183 = false
     private var aClass171_6187: Class171? = null
     private var aClass171_6188: Class171? = null

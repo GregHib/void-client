@@ -302,7 +302,7 @@ class Class46 {
     @JvmField
     var anInt842: Int = 0
 
-    fun method425(var_ha: ha, i: Byte): Sprite? {
+    fun method425(var_renderer: Renderer, i: Byte): Sprite? {
         anInt767++
         var var_sprite = Class239_Sub24.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
         if (var_sprite != null) return var_sprite
@@ -336,14 +336,14 @@ class Class46 {
             this.anIntArray772!![(i_12_ + class207.anInt2700)] = i_15_ + -i_13_
             i_12_++
         }
-        var_sprite = var_ha.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772)
+        var_sprite = var_renderer.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772)
         Class239_Sub24.aClass60_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
         return var_sprite
     }
 
-    fun method426(var_ha: ha?, i: Byte): Class324? {
+    fun method426(var_renderer: Renderer?, i: Byte): Class324? {
         anInt827++
-        val class324 = Class14.method232(var_ha, (-53).toByte(), false, this.anInt702)
+        val class324 = Class14.method232(var_renderer, (-53).toByte(), false, this.anInt702)
         if (i.toInt() != 68) method436(-71, -56, -125)
         Class348_Sub42_Sub13.aBoolean9616 = class324 == null
         return class324
@@ -367,7 +367,7 @@ class Class46 {
         return class348_sub50.aString7211
     }
 
-    fun method430(class150: Class150?, class87: Class87?, i: Int, var_ha: ha?, i_21_: Int, i_22_: Int, class255: Class255?, interface17: Interface17?, i_23_: Int, class154: Class154?, class17: Class17?, class261: Class261?, class278: Class278?, i_24_: Int): Class64? {
+    fun method430(class150: Class150?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, class255: Class255?, interface17: Interface17?, i_23_: Int, class154: Class154?, class17: Class17?, class261: Class261?, class278: Class278?, i_24_: Int): Class64? {
         var i = i
         try {
             anInt684++
@@ -377,17 +377,17 @@ class Class46 {
             if (this.anInt770 == 1) {
                 val i_25_ = i
                 if (class17 != null) i = i or class17.method263(i_24_, 106, i_21_, true)
-                val l = (this.anInt753 + ((this.anInt770 shl 16) + (var_ha!!.anInt4567 shl 29))).toLong()
+                val l = (this.anInt753 + ((this.anInt770 shl 16) + (var_renderer!!.anInt4567 shl 29))).toLong()
                 var class64 = Class358.aClass60_4417!!.method583(l, -90) as Class64?
-                if (class64 == null || var_ha.method3667(class64.ua(), i) != 0) {
-                    if (class64 != null) i = var_ha.method3679(i, class64.ua())
+                if (class64 == null || var_renderer.method3667(class64.ua(), i) != 0) {
+                    if (class64 != null) i = var_renderer.method3679(i, class64.ua())
                     val class124 = Class300.method2277(0, (Class348_Sub40_Sub28.aClass45_9365!!), this.anInt753, -1)
                     if (class124 == null) {
                         Class348_Sub42_Sub13.aBoolean9616 = true
                         return null
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
-                    class64 = var_ha.method3625(class124, i, Class14_Sub3.anInt8628, 64, 768)
+                    class64 = var_renderer.method3625(class124, i, Class14_Sub3.anInt8628, 64, 768)
                     Class358.aClass60_4417!!.method582(class64, l, (-125).toByte())
                 }
                 if (class17 != null) class64 = class17.method269(-101, class64, i_24_, i_22_, i, i_21_)
@@ -395,7 +395,7 @@ class Class46 {
                 return class64
             }
             if (this.anInt770 == 2) {
-                val class64 = (class278!!.method2079(this.anInt753, -1).method803(interface17, var_ha, i_22_, i_24_, class17, class87, i_21_, 104, i))
+                val class64 = (class278!!.method2079(this.anInt753, -1).method803(interface17, var_renderer, i_22_, i_24_, class17, class87, i_21_, 104, i))
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -404,7 +404,7 @@ class Class46 {
             }
             if (this.anInt770 == 3) {
                 if (class154 == null) return null
-                val class64 = class154.method1230(class255, -402058072, class87, class150, interface17, class278, i_21_, i_24_, i, class17, i_22_, var_ha)
+                val class64 = class154.method1230(class255, -402058072, class87, class150, interface17, class278, i_21_, i_24_, i, class17, i_22_, var_renderer)
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -413,7 +413,7 @@ class Class46 {
             }
             if (this.anInt770 == 4) {
                 val class213 = class255!!.method1940(i_23_ + -365, this.anInt753)
-                val class64 = class213.method1559(class154, class17, var_ha, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
+                val class64 = class213.method1559(class154, class17, var_renderer, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -421,7 +421,7 @@ class Class46 {
                 return class64
             }
             if (this.anInt770 == 6) {
-                val class64 = (class278!!.method2079(this.anInt753, -1).method800(0, null, class87, false, null, 0, class261, i_21_, class17, interface17, var_ha, 0, null, i_24_, 0, i, i_22_))
+                val class64 = (class278!!.method2079(this.anInt753, -1).method800(0, null, class87, false, null, 0, class261, i_21_, class17, interface17, var_renderer, 0, null, i_24_, 0, i, i_22_))
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -433,7 +433,7 @@ class Class46 {
                 val i_26_ = this.anInt753 ushr 16
                 val i_27_ = 0xffff and this.anInt753
                 val i_28_ = this.anInt779
-                val class64 = class154.method1232(i_24_, i, i_28_, i_27_, class87, class150, -15331, i_26_, i_22_, var_ha, i_21_, class17)
+                val class64 = class154.method1232(i_24_, i, i_28_, i_27_, class87, class150, -15331, i_26_, i_22_, var_renderer, i_21_, class17)
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -444,7 +444,7 @@ class Class46 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("at.G(" + (if (class150 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (class255 != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (class154 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class261 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_24_ + ')')
+                ("at.G(" + (if (class150 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (class255 != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (class154 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class261 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
         }
     }
@@ -744,7 +744,7 @@ class Class46 {
         }
     }
 
-    fun method437(i: Int, class64: Class64?, var_ha: ha?, i_63_: Int, class101: Class101?) {
+    fun method437(i: Int, class64: Class64?, var_renderer: Renderer?, i_63_: Int, class101: Class101?) {
         do {
             try {
                 if (i != -20154) method438(15, -50, null)
@@ -754,9 +754,9 @@ class Class46 {
                 val class342s = class64.method604()
                 if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740!!.aBoolean6470) && (class129s != null || class342s != null)) this.aClass318_Sub10_740 = Class318_Sub10.method2526(i_63_, false)
                 if (this.aClass318_Sub10_740 == null) break
-                this.aClass318_Sub10_740!!.method2536(var_ha, i_63_.toLong(), class129s, class342s, false)
+                this.aClass318_Sub10_740!!.method2536(var_renderer, i_63_.toLong(), class129s, class342s, false)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (class101 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (class101 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -803,7 +803,7 @@ class Class46 {
         return `is`
     }
 
-    fun method443(var_ha: ha, i: Byte): Class105? {
+    fun method443(var_renderer: Renderer, i: Byte): Class105? {
         anInt819++
         Class348_Sub42_Sub13.aBoolean9616 = false
         val l = ((this.anInt809.toLong() shl 40) + (((if (this.aBoolean790) 1L else 0L) shl 38) + ((this.anInt672.toLong() shl 36) + ((if (this.aBoolean745) 1L else 0L) shl 35))) + (this.anInt756.toLong() + ((if (!this.aBoolean735) 0L else 1L) shl 39)))
@@ -822,7 +822,7 @@ class Class46 {
         if (this.anInt672 >= 1) class207.method1515(1)
         if (this.anInt672 >= 2) class207.method1515(16777215)
         if (this.anInt809 != 0) class207.method1511(0xffffff.inv() or this.anInt809)
-        class105 = var_ha.method3691(class207, true)
+        class105 = var_renderer.method3691(class207, true)
         Class351.aClass60_4327!!.method580(31902, class105, l, (class105!!.method971() * class105.method969() * 4))
         return class105
     }
@@ -915,7 +915,7 @@ class Class46 {
         var aClass196_838: Class196?
 
         @JvmStatic
-        fun method424(i: Int, i_0_: Int, var_ha: ha?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, `is`: Array<Array<ByteArray?>?>?, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
+        fun method424(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, `is`: Array<Array<ByteArray?>?>?, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
             var i_4_ = i_4_
             var i_7_ = i_7_
             try {
@@ -933,10 +933,10 @@ class Class46 {
                         i_4_ = i_4_ + 3 and 0x3
                         i_7_ = 8
                     }
-                    var_ha!!.Q(i_6_, i_9_, i_5_, i_8_, i_0_, i, `is`!![i_7_ - 1]!![i_4_], i_3_, i_2_)
+                    var_renderer!!.Q(i_6_, i_9_, i_5_, i_8_, i_0_, i, `is`!![i_7_ - 1]!![i_4_], i_3_, i_2_)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("at.S(" + i + ',' + i_0_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("at.S(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
             }
         }
 

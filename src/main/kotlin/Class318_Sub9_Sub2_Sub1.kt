@@ -31,7 +31,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
         this.aClass318_Sub7_10419.aClass243_6433!!.method1869(-98, this)
     }
 
-    fun method2522(var_ha: ha?, l: Long) {
+    fun method2522(var_renderer: Renderer?, l: Long) {
         val i = this.anInt8791 shr 12 + Class362.anInt4459
         val i_0_ = this.anInt8789 shr 12 + Class362.anInt4459
         val i_1_ = this.anInt8796 shr 12
@@ -96,21 +96,21 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
                     val i_7_ = this.anInt8791 shr 12
                     val i_8_ = this.anInt8789 shr 12
                     if (class357!!.aClass318_Sub1_Sub4_4406 != null) {
-                        val class30 = class357.aClass318_Sub1_Sub4_4406!!.method2381(var_ha, 7)
+                        val class30 = class357.aClass318_Sub1_Sub4_4406!!.method2381(var_renderer, 7)
                         if (class30 != null && class30.method321(-14735, i_8_, i_1_, i_7_)) {
                             method2520()
                             return
                         }
                     }
                     if (class357.aClass318_Sub1_Sub4_4403 != null) {
-                        val class30 = class357.aClass318_Sub1_Sub4_4403!!.method2381(var_ha, 7)
+                        val class30 = class357.aClass318_Sub1_Sub4_4403!!.method2381(var_renderer, 7)
                         if (class30 != null && class30.method321(-14735, i_8_, i_1_, i_7_)) {
                             method2520()
                             return
                         }
                     }
                     if (class357.aClass318_Sub1_Sub1_4402 != null) {
-                        val class30 = class357.aClass318_Sub1_Sub1_4402!!.method2381(var_ha, 7)
+                        val class30 = class357.aClass318_Sub1_Sub1_4402!!.method2381(var_renderer, 7)
                         if (class30 != null && class30.method321(-14735, i_8_, i_1_, i_7_)) {
                             method2520()
                             return
@@ -118,7 +118,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
                     }
                     var class148 = class357.aClass148_4396
                     while (class148 != null) {
-                        val class30 = class148.aClass318_Sub1_Sub3_2040!!.method2381(var_ha, 7)
+                        val class30 = class148.aClass318_Sub1_Sub3_2040!!.method2381(var_renderer, 7)
                         if (class30 != null && class30.method321(-14735, i_8_, i_1_, i_7_)) {
                             method2520()
                             return

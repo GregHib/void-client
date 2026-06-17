@@ -8,8 +8,8 @@ import jaggl.OpenGL.Companion.glLinkProgramARB
 import java.util.*
 import kotlin.math.sin
 
-abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
-    private var aHa4048: ha? = null
+abstract class Class324 internal constructor(var_renderer: Renderer?, class143: Class143?) {
+    private var aRenderer4048: Renderer? = null
     private var aClass143_4063: Class143? = null
     private fun method2566(class105s: Array<Class105?>?, `is`: IntArray?, i: Int, is_0_: IntArray?, is_1_: IntArray?, i_2_: Int, string: String?, i_3_: Int) {
         var i = i
@@ -83,8 +83,8 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
                             }
                             i_6_++
                             val i_16_ = aClass143_4063!!.method1184((-48).toByte(), c.code)
-                            if (Player.anInt10567 != -1) aHa4048!!.method3649((-103).toByte(), i_16_, i_2_ - -((aClass143_4063!!.anInt1992).toDouble() * 0.7).toInt(), Player.anInt10567, i)
-                            if (Class348_Sub40_Sub2.anInt9101 != -1) aHa4048!!.method3649((-96).toByte(), i_16_, (aClass143_4063!!.anInt1992) + i_2_, (Class348_Sub40_Sub2.anInt9101), i)
+                            if (Player.anInt10567 != -1) aRenderer4048!!.method3649((-103).toByte(), i_16_, i_2_ - -((aClass143_4063!!.anInt1992).toDouble() * 0.7).toInt(), Player.anInt10567, i)
+                            if (Class348_Sub40_Sub2.anInt9101 != -1) aRenderer4048!!.method3649((-96).toByte(), i_16_, (aClass143_4063!!.anInt1992) + i_2_, (Class348_Sub40_Sub2.anInt9101), i)
                             i_5_ = c.code
                             i += i_16_
                         }
@@ -236,7 +236,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
             method2579(i_60_, 108, i)
             val i_62_ = string.length
             val `is` = IntArray(i_62_)
-            if (bool != false) aHa4048 = null
+            if (bool != false) aRenderer4048 = null
             for (i_63_ in 0..<i_62_) `is`[i_63_] = (5.0 * sin(i_63_.toDouble() / 2.0 + i_61_.toDouble() / 5.0)).toInt()
             method2566(null, `is`, -(aClass143_4063!!.method1183(!bool, string) / 2) + i_59_, null, null, i_58_, string, 174)
         }
@@ -391,8 +391,8 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
                                 Class258.anInt4848 = Class258.anInt4848 and 0xff
                             }
                             val i_114_ = aClass143_4063!!.method1184((-48).toByte(), c.code)
-                            if (Player.anInt10567 != -1) aHa4048!!.method3649((-119).toByte(), i_114_, (aClass143_4063!!.anInt1992.toDouble() * 0.7).toInt() + i_103_, Player.anInt10567, i_106_)
-                            if (Class348_Sub40_Sub2.anInt9101 != -1) aHa4048!!.method3649((-114).toByte(), i_114_, (aClass143_4063!!.anInt1992) + (i_103_ + 1), (Class348_Sub40_Sub2.anInt9101), i_106_)
+                            if (Player.anInt10567 != -1) aRenderer4048!!.method3649((-119).toByte(), i_114_, (aClass143_4063!!.anInt1992.toDouble() * 0.7).toInt() + i_103_, Player.anInt10567, i_106_)
+                            if (Class348_Sub40_Sub2.anInt9101 != -1) aRenderer4048!!.method3649((-114).toByte(), i_114_, (aClass143_4063!!.anInt1992) + (i_103_ + 1), (Class348_Sub40_Sub2.anInt9101), i_106_)
                             i_106_ += i_114_
                             i_108_ = c.code
                         }
@@ -408,9 +408,9 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
     init {
         try {
             aClass143_4063 = class143
-            aHa4048 = var_ha
+            aRenderer4048 = var_renderer
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.<init>(" + (if (var_ha != null) "{...}" else "null") + ',' + (if (class143 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("da.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class143 != null) "{...}" else "null") + ')'))
         }
     }
 

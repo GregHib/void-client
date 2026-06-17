@@ -3,7 +3,7 @@ import kotlin.math.min
 /* Class105_Sub3_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class105_Sub3_Sub2 internal constructor(var_ha_Sub1: ha_Sub1, private val aByteArray9934: ByteArray, private val anIntArray9935: IntArray, i: Int, i_417_: Int) : Class105_Sub3(var_ha_Sub1, i, i_417_) {
+class Class105_Sub3_Sub2 internal constructor(var_ha_Sub1: SoftwareRenderer, private val aByteArray9934: ByteArray, private val anIntArray9935: IntArray, i: Int, i_417_: Int) : Class105_Sub3(var_ha_Sub1, i, i_417_) {
     override fun method979(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int) {
         throw IllegalStateException()
     }

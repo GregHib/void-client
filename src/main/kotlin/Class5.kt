@@ -25,7 +25,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         anInt4639++
         if (i == 10286) {
             val class143 = Class239_Sub10.method1766((-85).toByte(), (this.aClass369_4635!!.anInt4965), aClass45_4631)
-            aClass324_4637 = (Class348_Sub8.aHa6654!!.method3686(class143, Class207.method1523(this.aClass45_4632!!, (this.aClass369_4635!!.anInt4965)), true))
+            aClass324_4637 = (Class348_Sub8.aRenderer6654!!.method3686(class143, Class207.method1523(this.aClass45_4632!!, (this.aClass369_4635!!.anInt4965)), true))
         }
     }
 
@@ -58,7 +58,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         if (i.toInt() == -49) {
             anInt4634++
             val i_13_ = ((this.aClass369_4635!!.aClass221_4968!!.method1607(Class92.anInt1524, this.aClass369_4635!!.anInt4971, (-123).toByte())) + this.aClass369_4635!!.anInt4970)
-            val i_14_ = ((this.aClass369_4635!!.aClass341_4973!!.method2679(ha_Sub2.anInt7666, this.aClass369_4635!!.anInt4963, i.toInt() xor 0x60b.inv())) + this.aClass369_4635!!.anInt4959)
+            val i_14_ = ((this.aClass369_4635!!.aClass341_4973!!.method2679(OpenGlRenderer.anInt7666, this.aClass369_4635!!.anInt4963, i.toInt() xor 0x60b.inv())) + this.aClass369_4635!!.anInt4959)
             method178(i_13_, bool, (-84).toByte(), i_14_)
             method182(63, i_14_, i_13_, bool)
             var string = Class51.aClass311_897!!.method2318(i.toInt() xor 0x245b)

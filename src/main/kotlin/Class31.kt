@@ -17,36 +17,36 @@ class Class31 {
     var aClass219_438: Class219? = null
     private var anInt439: Int
     var anInt444: Int = 16777215
-    fun method324(var_ha: ha, bool: Boolean): Class105? {
+    fun method324(var_renderer: Renderer, bool: Boolean): Class105? {
         anInt440++
         if (bool != true) return null
         if (anInt429 < 0) return null
         var class105 = this.aClass219_438!!.aClass60_2862.method583(anInt429.toLong(), -62) as Class105?
         if (class105 == null) {
-            method330(var_ha, -41)
+            method330(var_renderer, -41)
             class105 = this.aClass219_438!!.aClass60_2862.method583(anInt429.toLong(), 53) as Class105?
         }
         return class105
     }
 
-    fun method325(var_ha: ha, i: Int): Class105? {
+    fun method325(var_renderer: Renderer, i: Int): Class105? {
         anInt428++
         if (anInt439 < 0) return null
         var class105 = this.aClass219_438!!.aClass60_2862.method583(anInt439.toLong(), -59) as Class105?
         if (i < 23) return null
         if (class105 == null) {
-            method330(var_ha, -118)
+            method330(var_renderer, -118)
             class105 = this.aClass219_438!!.aClass60_2862.method583(anInt439.toLong(), 123) as Class105?
         }
         return class105
     }
 
-    fun method327(var_ha: ha, i: Byte): Class105? {
+    fun method327(var_renderer: Renderer, i: Byte): Class105? {
         anInt432++
         if (anInt421 < 0) return null
         var class105 = this.aClass219_438!!.aClass60_2862.method583(anInt421.toLong(), 118) as Class105?
         if (class105 == null) {
-            method330(var_ha, -66)
+            method330(var_renderer, -66)
             class105 = this.aClass219_438!!.aClass60_2862.method583(anInt421.toLong(), 119) as Class105?
         }
         val i_0_ = 20 % ((i - 19) / 51)
@@ -79,35 +79,35 @@ class Class31 {
         anInt437++
     }
 
-    private fun method330(var_ha: ha, i: Int) {
+    private fun method330(var_renderer: Renderer, i: Int) {
         anInt446++
         val class45 = this.aClass219_438!!.aClass45_2873!!
         if (anInt421 >= 0 && this.aClass219_438!!.aClass60_2862.method583(anInt421.toLong(), 121) == null && class45.method421(false, anInt421)) {
             val class207 = Class207.method1512(class45, anInt421)
-            this.aClass219_438!!.aClass60_2862.method582(var_ha.method3691(class207, true), anInt421.toLong(), (-112).toByte())
+            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(class207, true), anInt421.toLong(), (-112).toByte())
         }
         if (anInt433 >= 0 && this.aClass219_438!!.aClass60_2862.method583(anInt433.toLong(), -99) == null && class45.method421(false, anInt433)) {
             val class207 = Class207.method1512(class45, anInt433)
-            this.aClass219_438!!.aClass60_2862.method582(var_ha.method3691(class207, true), anInt433.toLong(), (-128).toByte())
+            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(class207, true), anInt433.toLong(), (-128).toByte())
         }
         if (anInt429 >= 0 && this.aClass219_438!!.aClass60_2862.method583(anInt429.toLong(), 86) == null && class45.method421(false, anInt429)) {
             val class207 = Class207.method1512(class45, anInt429)
-            this.aClass219_438!!.aClass60_2862.method582(var_ha.method3691(class207, true), anInt429.toLong(), (-108).toByte())
+            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(class207, true), anInt429.toLong(), (-108).toByte())
         }
         if (i > -7) this.anInt434 = -14
         if (anInt439 >= 0 && this.aClass219_438!!.aClass60_2862.method583(anInt439.toLong(), -83) == null && class45.method421(false, anInt439)) {
             val class207 = Class207.method1512(class45, anInt439)
-            this.aClass219_438!!.aClass60_2862.method582(var_ha.method3691(class207, true), anInt439.toLong(), (-101).toByte())
+            this.aClass219_438!!.aClass60_2862.method582(var_renderer.method3691(class207, true), anInt439.toLong(), (-101).toByte())
         }
     }
 
-    fun method331(var_ha: ha, i: Byte): Class105? {
+    fun method331(var_renderer: Renderer, i: Byte): Class105? {
         anInt441++
         if (anInt433 < 0) return null
         val i_2_ = -84 % ((i - 32) / 35)
         var class105 = this.aClass219_438!!.aClass60_2862.method583(anInt433.toLong(), -50) as Class105?
         if (class105 == null) {
-            method330(var_ha, -89)
+            method330(var_renderer, -89)
             class105 = this.aClass219_438!!.aClass60_2862.method583(anInt433.toLong(), -117) as Class105?
         }
         return class105

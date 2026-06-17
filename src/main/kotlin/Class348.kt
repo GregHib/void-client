@@ -66,7 +66,7 @@ open class Class348 {
         }
 
         @JvmStatic
-        fun method2711(i: Int, i_3_: Int, class64: Class64?, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, var_ha: ha?, i_9_: Int, i_10_: Int, i_11_: Int, class17: Class17?): Class64? {
+        fun method2711(i: Int, i_3_: Int, class64: Class64?, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, var_renderer: Renderer?, i_9_: Int, i_10_: Int, i_11_: Int, class17: Class17?): Class64? {
             var i_5_ = i_5_
             try {
                 anInt4298++
@@ -82,8 +82,8 @@ open class Class348 {
                 synchronized(Class342.aClass60_4254!!) {
                     class64_13_ = Class342.aClass60_4254!!.method583(l, -64) as Class64?
                 }
-                if (class64_13_ == null || (var_ha!!.method3667(class64_13_.ua(), i_12_) != 0)) {
-                    if (class64_13_ != null) i_12_ = var_ha!!.method3679(i_12_, class64_13_.ua())
+                if (class64_13_ == null || (var_renderer!!.method3667(class64_13_.ua(), i_12_) != 0)) {
+                    if (class64_13_ != null) i_12_ = var_renderer!!.method3679(i_12_, class64_13_.ua())
                     val i_14_: Int
                     if (i_7_ != 1) {
                         if (i_7_ == 2) i_14_ = 12
@@ -124,7 +124,7 @@ open class Class348 {
                         }
                         i_25_++
                     }
-                    class64_13_ = var_ha!!.method3625(class124, i_12_, Class185.anInt2482, 64, 768)
+                    class64_13_ = var_renderer!!.method3625(class124, i_12_, Class185.anInt2482, 64, 768)
                     synchronized(Class342.aClass60_4254!!) {
                         Class342.aClass60_4254!!.method582(class64_13_, l, (-103).toByte())
                     }
@@ -154,7 +154,7 @@ open class Class348 {
                 if (i_8_ != 0) class64_13_.H(0, i_8_, 0)
                 return class64_13_
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (class17 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (class17 != null) "{...}" else "null") + ')'))
             }
         }
 

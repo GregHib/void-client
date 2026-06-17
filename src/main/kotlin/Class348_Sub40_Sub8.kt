@@ -79,7 +79,7 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
     }
 
     public override fun method3044(i: Int) {
-        aByteArray9152 = ha.method3664(this.anInt9156, 95)
+        aByteArray9152 = Renderer.method3664(this.anInt9156, 95)
         anInt9148++
         method3067((-98).toByte())
         var i_3_ = this.anInt9150 + -1

@@ -21,7 +21,7 @@ open class Class258_Sub3 : Class258 {
     @JvmField
     var anInt8551: Int = 0
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_0_: Int, i_1_: Int, i_2_: Int) : super(var_ha_Sub2, i, i_0_, i_1_ * i_2_, false) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_: Int, i_1_: Int, i_2_: Int) : super(var_ha_Sub2, i, i_0_, i_1_ * i_2_, false) {
         anInt8545 = -1
         this.anInt8547 = i_1_
         this.anInt8551 = i_2_
@@ -38,7 +38,7 @@ open class Class258_Sub3 : Class258 {
         anInt8545 = i_5_
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, fs: FloatArray, i_9_: Int) : super(var_ha_Sub2, i, i_6_, i_8_ * i_7_, bool) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, fs: FloatArray, i_9_: Int) : super(var_ha_Sub2, i, i_6_, i_8_ * i_7_, bool) {
         anInt8545 = -1
         try {
             this.anInt8547 = i_7_
@@ -78,7 +78,7 @@ open class Class258_Sub3 : Class258 {
         if (i_12_ > -65) this.anInt8547 = 101
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_21_: Int, i_22_: Int, i_23_: Int, bool: Boolean, `is`: IntArray?, i_24_: Int, i_25_: Int, bool_26_: Boolean) : super(var_ha_Sub2, i, i_21_, i_23_ * i_22_, bool) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_21_: Int, i_22_: Int, i_23_: Int, bool: Boolean, `is`: IntArray?, i_24_: Int, i_25_: Int, bool_26_: Boolean) : super(var_ha_Sub2, i, i_21_, i_23_ * i_22_, bool) {
         var `is` = `is`
         anInt8545 = -1
         try {
@@ -111,7 +111,7 @@ open class Class258_Sub3 : Class258 {
         }
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_32_: Int, i_33_: Int, i_34_: Int, bool: Boolean, `is`: ByteArray?, i_35_: Int, bool_36_: Boolean) : super(var_ha_Sub2, i, i_32_, i_33_ * i_34_, bool) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_32_: Int, i_33_: Int, i_34_: Int, bool: Boolean, `is`: ByteArray?, i_35_: Int, bool_36_: Boolean) : super(var_ha_Sub2, i, i_32_, i_33_ * i_34_, bool) {
         var `is` = `is`
         anInt8545 = -1
         try {
@@ -203,7 +203,7 @@ open class Class258_Sub3 : Class258 {
         val i_76_ = -17 % ((46 - i_66_) / 59)
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_77_: Int, i_78_: Int, i_79_: Int, i_80_: Int) : super(var_ha_Sub2, i, 6407, i_80_ * i_79_, false) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_77_: Int, i_78_: Int, i_79_: Int, i_80_: Int) : super(var_ha_Sub2, i, 6407, i_80_ * i_79_, false) {
         anInt8545 = -1
         this.anInt8547 = i_79_
         this.anInt8551 = i_80_
@@ -262,7 +262,7 @@ open class Class258_Sub3 : Class258 {
                     val is_60_ = IntArray(i_59_ * i_58_)
                     val pixelgrabber = PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_)
                     pixelgrabber.grabPixels()
-                    return Class348_Sub8.aHa6654!!.method3662(i_58_, is_60_, 94.toByte(), 0, i_58_, i_59_)
+                    return Class348_Sub8.aRenderer6654!!.method3662(i_58_, is_60_, 94.toByte(), 0, i_58_, i_59_)
                 } catch (interruptedexception: InterruptedException) {
                     /* empty */
                 }

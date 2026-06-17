@@ -105,7 +105,7 @@ class InputStream_Sub1 : InputStream() {
             Class348_Sub18.method2938(98.toByte())
             Class239_Sub12.method1772(28)
             System.gc()
-            Class348_Sub8.aHa6654!!.ya()
+            Class348_Sub8.aRenderer6654!!.ya()
         }
 
         init {

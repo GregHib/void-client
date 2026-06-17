@@ -1,5 +1,5 @@
 import Class348_Sub16_Sub3.Companion.method2862
-import ha_Sub3.Companion.method3873
+import NativeRenderer.Companion.method3873
 
 /* Class179 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

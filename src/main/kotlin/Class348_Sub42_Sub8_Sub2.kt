@@ -1050,7 +1050,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 var i_132_ = 0x3fff and i_129_
                 i_131_ -= za_Sub2.regionTileX
                 i_132_ -= Class90.regionTileY
-                ha_Sub3.method3824(i_132_, i, i_126_, i_131_, i_127_, 102, i_130_, i_128_)
+                NativeRenderer.method3824(i_132_, i, i_126_, i_131_, i_127_, 102, i_130_, i_128_)
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
@@ -1221,7 +1221,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     while ((i_154_ < Class348_Sub40_Sub30.anInt9383)) {
                         if (!bool_149_) {
                             if (string == Class83.aStringArray1441!![i_154_]) {
-                                if (i != ha.anIntArray4578!![i_154_]) {
+                                if (i != Renderer.anIntArray4578!![i_154_]) {
                                     var bool_155_ = true
                                     var class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1872(8) as? Class318_Sub9_Sub1?)
                                     while (class318_sub9_sub1 != null) {
@@ -1239,7 +1239,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                         class318_sub9_sub1 = (Class348_Sub42_Sub14.aClass243_9642!!.method1878(124.toByte()) as? Class318_Sub9_Sub1?)
                                     }
                                     if (bool_155_) Class348_Sub42_Sub14.aClass243_9642!!.method1869(-95, Class318_Sub9_Sub1(string, i))
-                                    ha.anIntArray4578!![i_154_] = i
+                                    Renderer.anIntArray4578!![i_154_] = i
                                 }
                                 Class286_Sub2.aStringArray6205!![i_154_] = string_150_
                                 Class285.aStringArray4744!![i_154_] = string_152_
@@ -1259,7 +1259,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     if (string != null && Class348_Sub40_Sub30.anInt9383 < 200) {
                         Class83.aStringArray1441!![Class348_Sub40_Sub30.anInt9383] = string
                         Class286_Sub2.aStringArray6205!![(Class348_Sub40_Sub30.anInt9383)] = string_150_
-                        ha.anIntArray4578!![Class348_Sub40_Sub30.anInt9383] = i
+                        Renderer.anIntArray4578!![Class348_Sub40_Sub30.anInt9383] = i
                         Class285.aStringArray4744!![Class348_Sub40_Sub30.anInt9383] = string_152_
                         Class172.anIntArray2280!![Class348_Sub40_Sub30.anInt9383] = i_151_
                         Class122.aBooleanArray1806!![Class348_Sub40_Sub30.anInt9383] = bool_153_
@@ -1275,10 +1275,10 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     bool_156_ = true
                     var i_157_ = 0
                     while (i > i_157_) {
-                        if (((Class3.aClass161_125!!.anInt2143 != ha.anIntArray4578!![i_157_]) && (ha.anIntArray4578!![i_157_ - -1] == Class3.aClass161_125!!.anInt2143)) || (ha.anIntArray4578!![i_157_] == 0 && (ha.anIntArray4578!![1 + i_157_] != 0))) {
-                            val i_158_ = ha.anIntArray4578!![i_157_]
-                            ha.anIntArray4578!![i_157_] = ha.anIntArray4578!![1 + i_157_]
-                            ha.anIntArray4578!![i_157_ - -1] = i_158_
+                        if (((Class3.aClass161_125!!.anInt2143 != Renderer.anIntArray4578!![i_157_]) && (Renderer.anIntArray4578!![i_157_ - -1] == Class3.aClass161_125!!.anInt2143)) || (Renderer.anIntArray4578!![i_157_] == 0 && (Renderer.anIntArray4578!![1 + i_157_] != 0))) {
+                            val i_158_ = Renderer.anIntArray4578!![i_157_]
+                            Renderer.anIntArray4578!![i_157_] = Renderer.anIntArray4578!![1 + i_157_]
+                            Renderer.anIntArray4578!![i_157_ - -1] = i_158_
                             val string = Class285.aStringArray4744!![i_157_]
                             Class285.aStringArray4744!![i_157_] = Class285.aStringArray4744!![1 + i_157_]
                             Class285.aStringArray4744!![1 + i_157_] = string

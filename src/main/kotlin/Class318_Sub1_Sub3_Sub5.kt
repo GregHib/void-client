@@ -35,18 +35,18 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
     var anInt10411: Int
     private val anInt10413: Int
     private var aDouble10414 = 0.0
-    public override fun method2387(var_ha: ha?, i: Int) {
+    public override fun method2387(var_renderer: Renderer?, i: Int) {
         anInt10379++
-        val class64 = method2476(0, var_ha, 127.toByte())
+        val class64 = method2476(0, var_renderer, 127.toByte())
         if (class64 != null) {
             if (i >= -125) this.anInt10366 = 56
-            val class101 = var_ha!!.method3705()
+            val class101 = var_renderer!!.method3705()
             class101.method899(anInt10396)
             class101.method896(anInt10386)
             class101.method891(aDouble10408.toInt(), aDouble10384.toInt(), aDouble10371.toInt())
             anInt10410 = class64.fa()
             anInt10368 = class64.ma()
-            method2473(class101, class64, var_ha, -2393)
+            method2473(class101, class64, var_renderer, -2393)
         }
     }
 
@@ -72,13 +72,13 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         } else aDouble10409 = (i_0_.toDouble() - aDouble10384) / d
     }
 
-    public override fun method2380(var_ha: ha?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_6_: Int, i_7_: Byte, i_8_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_6_: Int, i_7_: Byte, i_8_: Int) {
         try {
             if (i_7_ > -106) method2474(11.toByte())
             anInt10415++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("to.N(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("to.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 
@@ -99,7 +99,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         return false
     }
 
-    private fun method2473(class101: Class101?, class64: Class64?, var_ha: ha?, i: Int) {
+    private fun method2473(class101: Class101?, class64: Class64?, var_renderer: Renderer?, i: Int) {
         do {
             try {
                 anInt10406++
@@ -108,13 +108,13 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
                 val class342s = class64.method604()
                 if ((aClass318_Sub10_10378 == null || aClass318_Sub10_10378!!.aBoolean6470) && (class129s != null || class342s != null)) aClass318_Sub10_10378 = Class318_Sub10.Companion.method2526(Class367_Sub11.anInt7396, true)
                 if (aClass318_Sub10_10378 != null) {
-                    aClass318_Sub10_10378!!.method2536(var_ha, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
+                    aClass318_Sub10_10378!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
                     aClass318_Sub10_10378!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
                 if (i == -2393) break
                 finalize()
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("to.L(" + (if (class101 != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("to.L(" + (if (class101 != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
             }
             break
         } while (false)
@@ -181,28 +181,28 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         }
     }
 
-    public override fun method2381(var_ha: ha?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
         if (i != 7) aBoolean10407 = true
         anInt10376++
         return null
     }
 
-    public override fun method2386(i: Int, var_ha: ha?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
         anInt10397++
-        val class64 = method2476(2048, var_ha, 127.toByte())
+        val class64 = method2476(2048, var_renderer, 127.toByte())
         if (class64 == null) return null
-        val class101 = var_ha!!.method3705()
+        val class101 = var_renderer!!.method3705()
         class101.method899(anInt10396)
         class101.method896(anInt10386)
         class101.method891(aDouble10408.toInt(), aDouble10384.toInt(), aDouble10371.toInt())
-        method2473(class101, class64, var_ha, -2393)
+        method2473(class101, class64, var_renderer, -2393)
         val class318_sub4 = method136(i, false, false)
         if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), Class132.anInt1906, 0)
         if (aClass318_Sub10_10378 != null) {
             val class98 = aClass318_Sub10_10378!!.method2525()
-            if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906)
-            else var_ha.method3684(class98)
+            if (Class305.aBoolean3870) var_renderer.method3685(class98, Class132.anInt1906)
+            else var_renderer.method3684(class98)
         }
         aBoolean10399 = class64.F()
         anInt10410 = class64.fa()
@@ -210,7 +210,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         return class318_sub4
     }
 
-    public override fun method2391(var_ha: ha?, i: Int, i_19_: Int, i_20_: Int): Boolean {
+    public override fun method2391(var_renderer: Renderer?, i: Int, i_19_: Int, i_20_: Int): Boolean {
         if (i_20_ != 0) return true
         anInt10380++
         return false
@@ -283,11 +283,11 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         anInt10370++
     }
 
-    private fun method2476(i: Int, var_ha: ha?, i_36_: Byte): Class64? {
+    private fun method2476(i: Int, var_renderer: Renderer?, i_36_: Byte): Class64? {
         anInt10377++
         val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(75.toByte(), anInt10391)
         if (i_36_ < 126) aClass318_Sub10_10378 = null
-        return class368.method3562(anInt10365, var_ha, anInt10403, i, anInt10369, Class10.aClass87_191, 121.toByte())
+        return class368.method3562(anInt10365, var_renderer, anInt10403, i, anInt10369, Class10.aClass87_191, 121.toByte())
     }
 
     public override fun method2377(i: Byte): Boolean {

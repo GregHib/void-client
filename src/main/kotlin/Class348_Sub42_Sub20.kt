@@ -50,9 +50,9 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
             val i_0_ = 112 / ((i - 16) / 57)
         }
 
-        fun method3281(i: Byte, var_ha: ha) {
-            if (Class5_Sub1.aBoolean8335) method2288(false, var_ha)
-            else Class119_Sub1.method1077(var_ha, (-123).toByte())
+        fun method3281(i: Byte, var_renderer: Renderer) {
+            if (Class5_Sub1.aBoolean8335) method2288(false, var_renderer)
+            else Class119_Sub1.method1077(var_renderer, (-123).toByte())
             anInt9709++
             if (i < 29) method3280(81)
         }

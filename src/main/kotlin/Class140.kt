@@ -18,8 +18,8 @@ object Class140 {
     @JvmStatic
     fun method1168(i: Int, i_0_: Int, rectangles: Array<Rectangle?>?) {
         anInt1957++
-        if (Class348_Sub49.anInt7207 != 1) Class21.aHa326!!.method3707(rectangles, i, 0, 0)
-        else Class21.aHa326!!.method3707(rectangles, i, Class339.anInt4211, Class348_Sub40_Sub8.anInt9157)
+        if (Class348_Sub49.anInt7207 != 1) Class21.aRenderer326!!.method3707(rectangles, i, 0, 0)
+        else Class21.aRenderer326!!.method3707(rectangles, i, Class339.anInt4211, Class348_Sub40_Sub8.anInt9157)
         if (i_0_ != 0) aClass351_1961 = null
     }
 

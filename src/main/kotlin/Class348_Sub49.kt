@@ -705,10 +705,10 @@ open class Class348_Sub49 : Class348 {
         }
 
         fun method3354(i: Int) {
-            if (Class348_Sub34.aHa6968 != null) {
-                Class348_Sub34.aHa6968!!.method3635((-44).toByte())
+            if (Class348_Sub34.aRenderer6968 != null) {
+                Class348_Sub34.aRenderer6968!!.method3635((-44).toByte())
                 Class348_Sub40_Sub9.aClass324_9173 = null
-                Class348_Sub34.aHa6968 = null
+                Class348_Sub34.aRenderer6968 = null
             }
             val i_37_ = -97 % ((i - -14) / 37)
             anInt7173++
@@ -787,7 +787,7 @@ open class Class348_Sub49 : Class348 {
                         Class348_Sub4.aClass248_6601!!.method1892(i xor 0x4b.inv(), true)
                     }
                 }
-                if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (-64).toByte()) || i_71_ == 13) Class348_Sub8.aHa6654!!.method3673()
+                if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (-64).toByte()) || i_71_ == 13) Class348_Sub8.aRenderer6654!!.method3673()
                 Class240.anInt4674 = i_71_
             }
         }

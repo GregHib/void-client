@@ -54,9 +54,9 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
                         val i_7_ = i_6_ * (i_1_ * 334) / (i_5_ * 512)
                         val i_8_ = (-i_7_ + i_3_) / 2
                         if (bool) {
-                            Class348_Sub8.aHa6654!!.la()
-                            Class348_Sub8.aHa6654!!.method3675(i_1_, (-125).toByte(), i, i_0_, i_8_, -16777216)
-                            Class348_Sub8.aHa6654!!.method3675(i_1_, (-125).toByte(), i, i_3_ + i_0_ - i_8_, i_8_, -16777216)
+                            Class348_Sub8.aRenderer6654!!.la()
+                            Class348_Sub8.aRenderer6654!!.method3675(i_1_, (-125).toByte(), i, i_0_, i_8_, -16777216)
+                            Class348_Sub8.aRenderer6654!!.method3675(i_1_, (-125).toByte(), i, i_3_ + i_0_ - i_8_, i_8_, -16777216)
                         }
                         i_0_ += i_8_
                         i_3_ -= 2 * i_8_
@@ -70,9 +70,9 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
                     val i_9_ = i_5_ * i_3_ * 512 / (334 * i_6_)
                     val i_10_ = (i_1_ + -i_9_) / 2
                     if (bool) {
-                        Class348_Sub8.aHa6654!!.la()
-                        Class348_Sub8.aHa6654!!.method3675(i_10_, (-125).toByte(), i, i_0_, i_3_, -16777216)
-                        Class348_Sub8.aHa6654!!.method3675(i_10_, (-125).toByte(), -i_10_ + i + i_1_, i_0_, i_3_, -16777216)
+                        Class348_Sub8.aRenderer6654!!.la()
+                        Class348_Sub8.aRenderer6654!!.method3675(i_10_, (-125).toByte(), i, i_0_, i_3_, -16777216)
+                        Class348_Sub8.aRenderer6654!!.method3675(i_10_, (-125).toByte(), -i_10_ + i + i_1_, i_0_, i_3_, -16777216)
                     }
                     i += i_10_
                     i_1_ -= i_10_ * 2
@@ -161,13 +161,13 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             val i_16_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
             do {
                 if (i_16_ == 2) {
-                    method1083(Class348_Sub8.aHa6654, 100, 9.toByte(), Class348_Sub42_Sub8_Sub2.anInt10432, 100, Class321.anInt4017)
+                    method1083(Class348_Sub8.aRenderer6654, 100, 9.toByte(), Class348_Sub42_Sub8_Sub2.anInt10432, 100, Class321.anInt4017)
                     break
                 } else if (i_16_ != 3) break
-                method282(2, Class348_Sub8.aHa6654, Class321.anInt4017, 73.toByte(), Class45.anInt666, Class186_Sub1.anInt5812, Class348_Sub42_Sub8_Sub2.anInt10432, 2)
+                method282(2, Class348_Sub8.aRenderer6654, Class321.anInt4017, 73.toByte(), Class45.anInt666, Class186_Sub1.anInt5812, Class348_Sub42_Sub8_Sub2.anInt10432, 2)
             } while (false)
             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) s.method3980(i + 93, Class305.aCanvas3869!!)
-            if (Class348_Sub8.aHa6654 != null) Class290.method2196((-9).toByte())
+            if (Class348_Sub8.aRenderer6654 != null) Class290.method2196((-9).toByte())
             Class305.aBoolean3870 = i != Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
             Class59_Sub1.aBoolean5300 = Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)
         }

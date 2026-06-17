@@ -50,28 +50,28 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
             }
         }
 
-        fun method2683(class323: Class323?, class348_sub21: Class348_Sub21?, i: Int, i_0_: Int, i_1_: Int, var_ha: ha?, i_2_: Int, i_3_: Int, class42: Class42?) {
+        fun method2683(class323: Class323?, class348_sub21: Class348_Sub21?, i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, class42: Class42?) {
             var i_2_ = i_2_
             try {
                 if (i_0_ == 64) {
                     anInt4242++
                     val i_4_ = -5 + i - i_3_ / 2
                     val i_5_ = i_2_ - -2
-                    if (class42!!.anInt602 != 0) var_ha!!.method3675(i_3_ + 10, (-125).toByte(), i_4_, i_5_, (i_2_ - -(class323!!.method2565() * i_1_) - (i_5_ - 1)), class42.anInt602)
-                    if (class42.anInt604 != 0) var_ha!!.method3668(i_3_ + 10, i_5_, class42.anInt604, i_4_, (i_1_ * class323!!.method2565() + i_2_ - (i_5_ + -1)), 92)
+                    if (class42!!.anInt602 != 0) var_renderer!!.method3675(i_3_ + 10, (-125).toByte(), i_4_, i_5_, (i_2_ - -(class323!!.method2565() * i_1_) - (i_5_ - 1)), class42.anInt602)
+                    if (class42.anInt604 != 0) var_renderer!!.method3668(i_3_ + 10, i_5_, class42.anInt604, i_4_, (i_1_ * class323!!.method2565() + i_2_ - (i_5_ + -1)), 92)
                     var i_6_ = class42.anInt580
                     if (class348_sub21!!.aBoolean6848 && class42.anInt567 != -1) i_6_ = class42.anInt567
                     var i_7_ = 0
                     while (i_1_ > i_7_) {
-                        var string = ha_Sub3.aStringArray8019!![i_7_]
+                        var string = NativeRenderer.aStringArray8019!![i_7_]
                         if (-1 + i_1_ > i_7_) string = string!!.substring(0, -4 + string.length)
-                        class323!!.method2563(var_ha!!, string!!, i, i_2_, i_6_, true)
+                        class323!!.method2563(var_renderer!!, string!!, i, i_2_, i_6_, true)
                         i_2_ += class323.method2565()
                         i_7_++
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("eca.A(" + (if (class323 != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (class42 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("eca.A(" + (if (class323 != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (class42 != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -93,7 +93,7 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
                                 method2519(class318_sub1_sub4, i, i_8_, i_9_, 1, 1)
                                 if (class318_sub1_sub4_10_ != null && class318_sub1_sub4_10_.method2388(-125)) {
                                     method2519(class318_sub1_sub4_10_, i, i_8_, i_9_, 1, 1)
-                                    class318_sub1_sub4_10_.method2380(Class9.aHa171, 0, false, class318_sub1_sub4, 0, (-110).toByte(), 0)
+                                    class318_sub1_sub4_10_.method2380(Class9.aRenderer171, 0, false, class318_sub1_sub4, 0, (-110).toByte(), 0)
                                     class318_sub1_sub4_10_.method2392(true)
                                 }
                                 class318_sub1_sub4.method2392(true)

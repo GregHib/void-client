@@ -1,7 +1,7 @@
 /* Class286_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class286_Sub2 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha_Sub2) {
+class Class286_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286(var_ha_Sub2) {
     override fun method2133(i: Int) {
         if (i < -75) {
             this.aHa_Sub2_3684.method3804(false, (-61).toByte())

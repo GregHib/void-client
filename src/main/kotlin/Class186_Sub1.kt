@@ -120,7 +120,7 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
         }
 
         @JvmStatic
-        fun method1401(var_ha_Sub2: ha_Sub2, i: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int): Class258_Sub3_Sub1 {
+        fun method1401(var_ha_Sub2: OpenGlRenderer, i: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int): Class258_Sub3_Sub1 {
             anInt5809++
             if (i_37_ != 34037) aClass341_5808 = null
             if (var_ha_Sub2.aBoolean7793 || Class192.method1436(-20, i_38_) && Class192.method1436(-119, i_40_)) return Class258_Sub3_Sub1(var_ha_Sub2, 3553, i, i_39_, i_38_, i_40_, true)

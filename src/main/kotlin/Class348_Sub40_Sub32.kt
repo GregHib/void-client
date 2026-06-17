@@ -70,7 +70,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
         var aShortArrayArray9424: Array<ShortArray?>? = arrayOf<ShortArray?>(aShortArray9423, aShortArray9421, aShortArray9422)
 
         @JvmStatic
-        fun method3132(`is`: IntArray?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, var_ha_Sub2: ha_Sub2?, bool: Boolean, i_3_: Byte): Class258_Sub3_Sub1 {
+        fun method3132(`is`: IntArray?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, var_ha_Sub2: OpenGlRenderer?, bool: Boolean, i_3_: Byte): Class258_Sub3_Sub1 {
             try {
                 if (i_3_.toInt() != 12) method3134(9)
                 anInt9418++
@@ -114,7 +114,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
                     Class187.anInt2500 = (((i_4_ * (0xff00 and Canvas_Sub1.anInt70) + (0xff00 and (Class239_Sub14.aClass190_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and Canvas_Sub1.anInt70) - -(i_5_ * (0xff00ff and (Class239_Sub14.aClass190_5990!!.anInt2549)))))) ushr 8
                     Class361.aFloat4455 = (Class246.aFloat3177 + f_6_ * (-Class246.aFloat3177 + (Class239_Sub14.aClass190_5990!!.aFloat2536)))
                     Class269.aFloat3462 = (Class245.aFloat3172 + (Class239_Sub14.aClass190_5990!!.aFloat2542 - Class245.aFloat3172) * f_6_)
-                    if (Class239_Sub24.aClass299_6098 !== (Class239_Sub14.aClass190_5990!!.aClass299_2541)) Class158.aClass299_4938 = (Class60.aHa1098!!.method3706(Class239_Sub24.aClass299_6098, (Class239_Sub14.aClass190_5990!!.aClass299_2541), f_6_, Class158.aClass299_4938))
+                    if (Class239_Sub24.aClass299_6098 !== (Class239_Sub14.aClass190_5990!!.aClass299_2541)) Class158.aClass299_4938 = (Class60.aRenderer1098!!.method3706(Class239_Sub24.aClass299_6098, (Class239_Sub14.aClass190_5990!!.aClass299_2541), f_6_, Class158.aClass299_4938))
                 } else {
                     Class158.aClass299_4938 = (Class239_Sub14.aClass190_5990!!.aClass299_2541)
                     TextureMetadataProvider.aFloat4626 = Class239_Sub14.aClass190_5990!!.aFloat2544

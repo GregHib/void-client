@@ -164,7 +164,7 @@ class Class348_Sub9 : Class348() {
                                 if (Class348_Sub40_Sub5.aBoolean9121) {
                                     Class319.aClass315Array3982!![Class139.anInt1949++]!!.method2361(-15481, class318_sub1)
                                     Class139.anInt1949 %= Class75_Sub1.anInt5652
-                                } else class318_sub1.method2387(Class9.aHa171, -128)
+                                } else class318_sub1.method2387(Class9.aRenderer171, -128)
                             }
                         } else return false
                     }

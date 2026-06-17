@@ -68,9 +68,9 @@ class Class225 {
     @JvmField
     var anInt2958: Int
 
-    fun method1618(var_ha: ha, i: Int): Array<Class101?>? {
+    fun method1618(var_renderer: Renderer, i: Int): Array<Class101?>? {
         anInt2952++
-        if (aClass101Array2925 != null && var_ha.anInt4567 == anInt2942) return aClass101Array2925
+        if (aClass101Array2925 != null && var_renderer.anInt4567 == anInt2942) return aClass101Array2925
         if (this.anIntArrayArray2939 == null) return null
         aClass101Array2925 = arrayOfNulls<Class101>(this.anIntArrayArray2939!!.size)
         var i_0_ = i
@@ -90,7 +90,7 @@ class Class225 {
                 i_6_ = (this.anIntArrayArray2939!![i_0_]!![5] shl 3)
             }
             if (i_1_ != 0 || i_2_ != 0 || i_3_ != 0 || i_4_ != 0 || i_5_ != 0 || i_6_ != 0) {
-                aClass101Array2925!![i_0_] = var_ha.method3654()
+                aClass101Array2925!![i_0_] = var_renderer.method3654()
                 val class101 = aClass101Array2925!![i_0_]!!
                 if (i_6_ != 0) class101.method908(i_6_)
                 if (i_4_ != 0) class101.method900(i_4_)

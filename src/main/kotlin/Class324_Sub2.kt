@@ -1,6 +1,6 @@
 import jaclib.memory.Stream.Companion.c
 
-class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: ha_Sub3, class143: Class143?, class207s: Array<Class207>, bool: Boolean) : Class324(aHa_Sub3_6494, class143) {
+class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRenderer, class143: Class143?, class207s: Array<Class207>, bool: Boolean) : Class324(aHa_Sub3_6494, class143) {
     private val anInterface18_Impl3_6492: Interface18_Impl3?
     private val aBoolean6493: Boolean
     private val anInterface5_Impl1_6495: Interface5_Impl1

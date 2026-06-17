@@ -224,19 +224,19 @@ class Class262 {
         fun method1992(class318_sub1: Class318_Sub1, i: Int, i_20_: Int, i_21_: Int) {
             if (i_20_ < Class318_Sub7.anInt6451) {
                 val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_20_ + 1]!![i_21_]
-                if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402!!.method2388(-107)) class318_sub1.method2380(Class9.aHa171, 0, true, (class357.aClass318_Sub1_Sub1_4402), 0, (-116).toByte(), Class270.anInt3465)
+                if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402!!.method2388(-107)) class318_sub1.method2380(Class9.aRenderer171, 0, true, (class357.aClass318_Sub1_Sub1_4402), 0, (-116).toByte(), Class270.anInt3465)
             }
             if (i_21_ < Class318_Sub7.anInt6451) {
                 val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_20_]!![i_21_ + 1]
-                if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402!!.method2388(-92)) class318_sub1.method2380(Class9.aHa171, 0, true, (class357.aClass318_Sub1_Sub1_4402), Class270.anInt3465, (-128).toByte(), 0)
+                if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402!!.method2388(-92)) class318_sub1.method2380(Class9.aRenderer171, 0, true, (class357.aClass318_Sub1_Sub1_4402), Class270.anInt3465, (-128).toByte(), 0)
             }
             if (i_20_ < Class318_Sub7.anInt6451 && i_21_ < Class348_Sub41.anInt7054) {
                 val class357 = (Class147.aClass357ArrayArrayArray2029!![i]!![i_20_ + 1]!![i_21_ + 1])
-                if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402!!.method2388(-107)) class318_sub1.method2380(Class9.aHa171, 0, true, (class357.aClass318_Sub1_Sub1_4402), Class270.anInt3465, (-117).toByte(), Class270.anInt3465)
+                if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402!!.method2388(-107)) class318_sub1.method2380(Class9.aRenderer171, 0, true, (class357.aClass318_Sub1_Sub1_4402), Class270.anInt3465, (-117).toByte(), Class270.anInt3465)
             }
             if (i_20_ < Class318_Sub7.anInt6451 && i_21_ > 0) {
                 val class357 = (Class147.aClass357ArrayArrayArray2029!![i]!![i_20_ + 1]!![i_21_ - 1])
-                if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402!!.method2388(-90)) class318_sub1.method2380(Class9.aHa171, 0, true, (class357.aClass318_Sub1_Sub1_4402), -Class270.anInt3465, (-116).toByte(), Class270.anInt3465)
+                if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402!!.method2388(-90)) class318_sub1.method2380(Class9.aRenderer171, 0, true, (class357.aClass318_Sub1_Sub1_4402), -Class270.anInt3465, (-116).toByte(), Class270.anInt3465)
             }
         }
 
@@ -249,10 +249,10 @@ class Class262 {
             aClass324_3326 = null
         }
 
-        fun method2000(i: Int, i_23_: Int, canvas: Canvas?, var_renderConfig: RenderConfig?): ha {
+        fun method2000(i: Int, i_23_: Int, canvas: Canvas?, var_renderConfig: RenderConfig?): Renderer {
             try {
                 anInt3324++
-                return ha_Sub2(canvas, var_renderConfig, i_23_)
+                return OpenGlRenderer(canvas, var_renderConfig, i_23_)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("uh.D(" + i + ',' + i_23_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
             }

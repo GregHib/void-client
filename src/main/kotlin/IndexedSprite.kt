@@ -5,7 +5,7 @@ class IndexedSprite : Sprite {
     @JvmField
     var anInterface18_Impl3_5196: Interface18_Impl3? = null
 
-    constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_16_: Int, `is`: ByteArray?) {
+    constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_16_: Int, `is`: ByteArray?) {
         try {
             this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, Class348_Sub40_Sub38.aClass304_9471, 2, false, i_16_)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
@@ -14,7 +14,7 @@ class IndexedSprite : Sprite {
         }
     }
 
-    constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_17_: Int, `is`: IntArray?) {
+    constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_17_: Int, `is`: IntArray?) {
         try {
             this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3839(i_17_, i, -15137, false, `is`)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
@@ -93,14 +93,14 @@ class IndexedSprite : Sprite {
                 if (Class59_Sub1.aBoolean5300) Class107.method1010(false, true)
                 else {
                     Class157.aClass101_2123!!.method891(i_10_, 0, 0)
-                    Class348_Sub8.aHa6654!!.method3638(Class157.aClass101_2123)
+                    Class348_Sub8.aRenderer6654!!.method3638(Class157.aClass101_2123)
                 }
-                if (!Class305.aBoolean3870) Class348_Sub8.aHa6654!!.da(i_9_, i_15_, i_11_, Class239_Sub21.anIntArray6062)
-                else Class348_Sub8.aHa6654!!.HA(i_9_, i_15_, i_11_, Class132.anInt1906, Class239_Sub21.anIntArray6062)
+                if (!Class305.aBoolean3870) Class348_Sub8.aRenderer6654!!.da(i_9_, i_15_, i_11_, Class239_Sub21.anIntArray6062)
+                else Class348_Sub8.aRenderer6654!!.HA(i_9_, i_15_, i_11_, Class132.anInt1906, Class239_Sub21.anIntArray6062)
                 if (Class59_Sub1.aBoolean5300) Class285_Sub1.method2129(60.toByte())
                 else {
                     Class157.aClass101_2123!!.method891(-i_10_, 0, 0)
-                    Class348_Sub8.aHa6654!!.method3638(Class157.aClass101_2123)
+                    Class348_Sub8.aRenderer6654!!.method3638(Class157.aClass101_2123)
                 }
             }
         }

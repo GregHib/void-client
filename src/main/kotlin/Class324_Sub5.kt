@@ -11,7 +11,7 @@ import jaggl.OpenGL.Companion.glTexGeni
 import jaggl.OpenGL.Companion.glTranslatef
 import jaggl.OpenGL.Companion.glVertex2i
 
-class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: ha_Sub2, class143: Class143?, class207s: Array<Class207>, bool: Boolean) : Class324(aHa_Sub2_6509, class143) {
+class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: OpenGlRenderer, class143: Class143?, class207s: Array<Class207>, bool: Boolean) : Class324(aHa_Sub2_6509, class143) {
     private val aClass61_6510: Class61
     private val aClass258_Sub3_Sub1_6511: Class258_Sub3_Sub1?
     private val aBoolean6512: Boolean

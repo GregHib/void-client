@@ -10,12 +10,12 @@ import jaggl.OpenGL.Companion.glReadBuffer
 import kotlin.math.abs
 import kotlin.math.atan2
 
-class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
+class Class206 internal constructor(var_ha_Sub2: OpenGlRenderer) : Interface11 {
     private var anInt4872 = 0
     private var anInt4873: Int
     private val anInterface9Array4875 = arrayOfNulls<Interface9>(9)
     private var anInt4882 = 0
-    private val aHa_Sub2_4883: ha_Sub2
+    private val aHa_Sub2_4883: OpenGlRenderer
     private var anInt4884 = 0
     private var anInt4886 = 0
     private var anInt4891: Int
@@ -299,7 +299,7 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
                 Class209.Companion.aClass348_Sub16_Sub3_2718 = null
             } else if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && Class267.anInt3428 != -1 && !method1296(true)) {
                 Class318.anInt3973++
-                val class348_sub47 = method2148(ha_Sub2.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107)
+                val class348_sub47 = method2148(OpenGlRenderer.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(118.toByte(), Class267.anInt3428)
                 Class348_Sub42_Sub14.method3243(-54, class348_sub47)
                 Class267.anInt3428 = -1

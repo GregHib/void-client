@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glTranslatef
 import java.io.IOException
 import kotlin.math.sqrt
 
-class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: Int, `is`: Array<IntArray?>, is_136_: Array<IntArray?>?, i_137_: Int) : s(i_134_, i_135_, i_137_, `is`) {
+class s_Sub2(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134_: Int, i_135_: Int, `is`: Array<IntArray?>, is_136_: Array<IntArray?>?, i_137_: Int) : s(i_134_, i_135_, i_137_, `is`) {
     @JvmField
     var anIntArrayArrayArray8234: Array<Array<IntArray?>?>?
     @JvmField
@@ -30,7 +30,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
     @JvmField
     var anIntArrayArrayArray8268: Array<Array<IntArray?>?>?
     @JvmField
-    var aHa_Sub2_8272: ha_Sub2? = null
+    var aHa_Sub2_8272: OpenGlRenderer? = null
     private var aByteArrayArray8273: Array<ByteArray?>?
     private var aClass123_8274: Class123? = null
     @JvmField
@@ -821,7 +821,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
 
         @JvmStatic
         fun method4001(class318_sub1: Class318_Sub1) {
-            Class9.aHa171!!.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, Class348_Sub42_Sub3.anIntArray9505)
+            Class9.aRenderer171!!.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, Class348_Sub42_Sub3.anIntArray9505)
             class318_sub1.anInt6386 = Class348_Sub42_Sub3.anIntArray9505!![0]
             class318_sub1.anInt6380 = Class348_Sub42_Sub3.anIntArray9505!![1]
             class318_sub1.anInt6389 = Class348_Sub42_Sub3.anIntArray9505!![2]

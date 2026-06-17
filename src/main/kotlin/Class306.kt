@@ -11,7 +11,7 @@ object Class306 {
     var anInt3875: Int = 0
     var anInt3876: Int = 0
 
-    fun method2297(i: Int, i_0_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_1_: Int): ha {
+    fun method2297(i: Int, i_0_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_1_: Int): Renderer {
         try {
             if (i != -6) method2297(23, -44, null, null, -57)
             anInt3875++

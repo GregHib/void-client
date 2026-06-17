@@ -10,7 +10,7 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
     private var aClass105_3867: Class105? = null
     private val aClass72_3871: Class72?
 
-    fun method2292(i: Int, var_ha: ha, i_0_: Int): Boolean {
+    fun method2292(i: Int, var_renderer: Renderer, i_0_: Int): Boolean {
         if (anInt3859 != i_0_) {
             anInt3859 = i_0_
             var i_1_ = method3051(i_0_, 4096)
@@ -42,7 +42,7 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
         if (aBoolean3857) {
             aBoolean3857 = false
             for (i_3_ in -1 + anInt3852 downTo 0) {
-                val bool_4_ = aClass72Array3865!![i_3_]!!.method736(var_ha, aClass72_3871)
+                val bool_4_ = aClass72Array3865!![i_3_]!!.method736(var_renderer, aClass72_3871)
                 bool = bool or bool_4_
                 val class305_5_ = this
                 class305_5_.aBoolean3857 = class305_5_.aBoolean3857 or !bool_4_
@@ -51,7 +51,7 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
         return bool
     }
 
-    fun method2293(i: Int, var_ha: ha, i_6_: Byte, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int) {
+    fun method2293(i: Int, var_renderer: Renderer, i_6_: Byte, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int) {
         var i_10_ = i_10_
         i_10_ = 0x3fff and i + i_10_
         anInt3860++
@@ -59,9 +59,9 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
             val class12 = Class101_Sub1.aRenderConfig5684!!.method3(anInt3858, -6662)
             if (aClass105_3867 == null && Class101_Sub1.aRenderConfig5684!!.method4(-7953, anInt3858)) {
                 val `is` = (if (class12!!.anInt200 == 2) Class101_Sub1.aRenderConfig5684!!.method6(-21540, anInt3863, 0.7f, anInt3858, false, anInt3863) else Class101_Sub1.aRenderConfig5684!!.method5(false, anInt3858, 0.7f, anInt3863, anInt3863, -119))
-                aClass105_3867 = var_ha.method3662(anInt3863, `is`, 94.toByte(), 0, anInt3863, anInt3863)
+                aClass105_3867 = var_renderer.method3662(anInt3863, `is`, 94.toByte(), 0, anInt3863, anInt3863)
             }
-            if (class12!!.anInt200 == 2) var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0)
+            if (class12!!.anInt200 == 2) var_renderer.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0)
             if (aClass105_3867 != null) {
                 val i_14_ = if (class12.anInt200 == 2) 1 else 0
                 var i_15_ = i_13_ * i_11_ / -4096
@@ -89,8 +89,8 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
                     i_17_ += i_13_
                 }
             }
-        } else var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0)
-        for (i_19_ in -1 + anInt3852 downTo 0) aClass72Array3865!![i_19_]!!.method737(var_ha, i_7_, i_9_, i_8_, i_13_, i_11_, i_10_)
+        } else var_renderer.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0)
+        for (i_19_ in -1 + anInt3852 downTo 0) aClass72Array3865!![i_19_]!!.method737(var_renderer, i_7_, i_9_, i_8_, i_13_, i_11_, i_10_)
         val i_20_ = 103 % ((i_6_ - 14) / 32)
     }
 

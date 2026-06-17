@@ -10,10 +10,10 @@ class Class154 {
     var aBoolean2100: Boolean = false
     private var aLong2102: Long = 0
     private var anInt2103 = 0
-    fun method1226(interface17: Interface17?, class17: Class17?, class182s: Array<Class182?>?, bool: Boolean, class255: Class255?, i: Int, class17_0_: Class17?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, class150: Class150?, i_5_: Int, var_ha: ha?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, class261: Class261?): Class64? {
+    fun method1226(interface17: Interface17?, class17: Class17?, class182s: Array<Class182?>?, bool: Boolean, class255: Class255?, i: Int, class17_0_: Class17?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, class150: Class150?, i_5_: Int, var_renderer: Renderer?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, class261: Class261?): Class64? {
         try {
             anInt2097++
-            if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method800(i, class182s, class87, !bool_2_, class17, i_8_, class261, i_7_, class17_0_, interface17, var_ha, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
+            if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method800(i, class182s, class87, !bool_2_, class17, i_8_, class261, i_7_, class17_0_, interface17, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
             var i_9_ = i_4_
             var l = aLong2102
             var is_10_ = anIntArray2092
@@ -153,8 +153,8 @@ class Class154 {
             }
             var class225: Class225? = null
             if (anInt2103 != -1) class225 = class261!!.method1983(anInt2103, 32)
-            if (class64 == null || var_ha!!.method3667(class64.ua(), i_9_) != 0) {
-                if (class64 != null) i_9_ = var_ha!!.method3679(i_9_, class64.ua())
+            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_9_) != 0) {
+                if (class64 != null) i_9_ = var_renderer!!.method3679(i_9_, class64.ua())
                 var i_36_ = i_9_
                 var bool_37_ = false
                 for (i_38_ in 0..11) {
@@ -169,7 +169,7 @@ class Class154 {
                             class64 = Class24.aClass60_355!!.method583(aLong2094, -92) as Class64?
                         }
                     }
-                    if (class64 == null || var_ha!!.method3667(class64.ua(), i_9_) != 0) return null
+                    if (class64 == null || var_renderer!!.method3667(class64.ua(), i_9_) != 0) return null
                 } else {
                     val class124s = arrayOfNulls<Class124>(12)
                     for (i_40_ in 0..11) {
@@ -210,7 +210,7 @@ class Class154 {
                     }
                     val class124 = Class124(class124s, class124s.size)
                     i_36_ = i_36_ or 0x4000
-                    class64 = var_ha!!.method3625(class124, i_36_, Class168.anInt2251, 64, 850)
+                    class64 = var_renderer!!.method3625(class124, i_36_, Class168.anInt2251, 64, 850)
                     for (i_49_ in 0..4) {
                         var i_50_ = 0
                         while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_50_)) {
@@ -236,7 +236,7 @@ class Class154 {
             }
             if (!bool_15_ && !bool_52_) return class64_51_
             var class101s: Array<Class101?>? = null
-            if (class225 != null) class101s = class225.method1618(var_ha, 0) as Array<Class101?>?
+            if (class225 != null) class101s = class225.method1618(var_renderer, 0) as Array<Class101?>?
             if (bool_52_ && class101s != null) {
                 for (i_54_ in 0..11) {
                     if (class101s[i_54_] != null) class64_51_!!.method610(class101s[i_54_]!!, 1 shl i_54_, true)
@@ -254,7 +254,7 @@ class Class154 {
                     if (`is`!![i_57_] != -1) {
                         var i_58_ = `is`[i_57_] - i
                         i_58_ = i_58_ and 0x3fff
-                        val class101 = var_ha.method3654()
+                        val class101 = var_renderer.method3654()
                         class101.method895(i_58_)
                         class64_51_!!.method610(class101, 1 shl i_57_, false)
                     }
@@ -279,7 +279,7 @@ class Class154 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class182s != null) "{...}" else "null") + ',' + bool + ',' + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class17_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (class150 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (class261 != null) "{...}" else "null") + ')')
+                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class182s != null) "{...}" else "null") + ',' + bool + ',' + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class17_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (class150 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (class261 != null) "{...}" else "null") + ')')
             )
         }
     }
@@ -321,10 +321,10 @@ class Class154 {
         method1234(-78)
     }
 
-    fun method1230(class255: Class255?, i: Int, class87: Class87?, class150: Class150?, interface17: Interface17?, class278: Class278?, i_66_: Int, i_67_: Int, i_68_: Int, class17: Class17?, i_69_: Int, var_ha: ha?): Class64? {
+    fun method1230(class255: Class255?, i: Int, class87: Class87?, class150: Class150?, interface17: Interface17?, class278: Class278?, i_66_: Int, i_67_: Int, i_68_: Int, class17: Class17?, i_69_: Int, var_renderer: Renderer?): Class64? {
         try {
             anInt2107++
-            if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method803(interface17, var_ha, i_69_, i_67_, class17, class87, i_66_, 121, i_68_))
+            if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method803(interface17, var_renderer, i_69_, i_67_, class17, class87, i_66_, 121, i_68_))
             var i_70_ = i_68_
             if (class17 != null) {
                 var bool = false
@@ -367,8 +367,8 @@ class Class154 {
             synchronized(Class130.aClass60_1894!!) {
                 class64 = Class130.aClass60_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as Class64?
             }
-            if (class64 == null || var_ha!!.method3667(class64.ua(), i_70_) != 0) {
-                if (class64 != null) i_70_ = var_ha!!.method3679(i_70_, class64.ua())
+            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_70_) != 0) {
+                if (class64 != null) i_70_ = var_renderer!!.method3679(i_70_, class64.ua())
                 var i_80_ = i_70_
                 var bool = false
                 for (i_81_ in 0..11) {
@@ -394,7 +394,7 @@ class Class154 {
                 }
                 i_80_ = i_80_ or 0x4000
                 val class124 = Class124(class124s, i_83_)
-                class64 = var_ha!!.method3625(class124, i_80_, Class168.anInt2251, 64, 768)
+                class64 = var_renderer!!.method3625(class124, i_80_, Class168.anInt2251, 64, 768)
                 for (i_86_ in 0..4) {
                     var i_87_ = 0
                     while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_87_)) {
@@ -414,7 +414,7 @@ class Class154 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("oo.J(" + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (class150 != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (class17 != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_ha != null) "{...}" else "null") + ')')
+                ("oo.J(" + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (class150 != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (class17 != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
             )
         }
     }
@@ -427,7 +427,7 @@ class Class154 {
         }
     }
 
-    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, class87: Class87?, class150: Class150?, i_94_: Int, i_95_: Int, i_96_: Int, var_ha: ha?, i_97_: Int, class17: Class17?): Class64? {
+    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, class87: Class87?, class150: Class150?, i_94_: Int, i_95_: Int, i_96_: Int, var_renderer: Renderer?, i_97_: Int, class17: Class17?): Class64? {
         try {
             anInt2106++
             var i_98_ = i_91_
@@ -474,8 +474,8 @@ class Class154 {
             synchronized(Class130.aClass60_1894!!) {
                 class64 = Class130.aClass60_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as Class64?
             }
-            if (class64 == null || var_ha!!.method3667(class64.ua(), i_98_) != 0) {
-                if (class64 != null) i_98_ = var_ha!!.method3679(i_98_, class64.ua())
+            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_98_) != 0) {
+                if (class64 != null) i_98_ = var_renderer!!.method3679(i_98_, class64.ua())
                 var i_108_ = i_98_
                 val class124s = arrayOfNulls<Class124>(3)
                 var i_109_ = 0
@@ -488,7 +488,7 @@ class Class154 {
                 if (class124 != null) class124s[i_109_++] = class124
                 class124 = Class124(class124s, i_109_)
                 i_108_ = i_108_ or 0x4000
-                class64 = var_ha!!.method3625(class124, i_108_, Class168.anInt2251, 64, 768)
+                class64 = var_renderer!!.method3625(class124, i_108_, Class168.anInt2251, 64, 768)
                 for (i_110_ in 0..4) {
                     var i_111_ = 0
                     while ((i_111_ < Class367_Sub2.aShortArrayArrayArray7290!!.size)) {
@@ -507,7 +507,7 @@ class Class154 {
             class64 = class17.method269(-32, class64!!, i, i_96_, i_91_, i_97_)
             return class64
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (class150 != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (class17 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (class150 != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (class17 != null) "{...}" else "null") + ')'))
         }
     }
 

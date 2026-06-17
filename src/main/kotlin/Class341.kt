@@ -109,7 +109,7 @@ class Class341 {
         fun method2681(i: Int) {
             if (i == 9864) {
                 anInt4230++
-                if (Class348_Sub8.aHa6654 != null) {
+                if (Class348_Sub8.aRenderer6654 != null) {
                     if (Class59_Sub1.aBoolean5300) method1406(true)
                     Class71.aClass76_1208!!.method775(69.toByte())
                     method2433()
@@ -141,8 +141,8 @@ class Class341 {
                     }
                     Class50_Sub1.aClass101_5209 = null
                     Class157.aClass101_2123 = null
-                    Class348_Sub8.aHa6654!!.method3635(64.toByte())
-                    Class348_Sub8.aHa6654 = null
+                    Class348_Sub8.aRenderer6654!!.method3635(64.toByte())
+                    Class348_Sub8.aRenderer6654 = null
                 }
             }
         }

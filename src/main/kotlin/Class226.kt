@@ -59,7 +59,7 @@ class Class226 internal constructor(i: Int, class45: Class45?, class45_3_: Class
                     i_1_ = i_1_ shl 1
                     i_2_ = -i_1_
                 }
-                Class348_Sub8.aHa6654!!.f(i_2_, i_1_)
+                Class348_Sub8.aRenderer6654!!.f(i_2_, i_1_)
             }
         }
     }

@@ -20,21 +20,21 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
     var anInt10349: Int
     private val anInt10350: Int
     private var anInt10356 = 0
-    public override fun method2386(i: Int, var_ha: ha?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
         anInt10352++
-        val class64 = method2465(var_ha, anInt10355, (if (anInt10334 == 0) 0 else 5) or 0x800, (-82).toByte())
+        val class64 = method2465(var_renderer, anInt10355, (if (anInt10334 == 0) 0 else 5) or 0x800, (-82).toByte())
         if (class64 == null) return null
         if (anInt10334 != 0) class64.a(anInt10334 * 2048)
-        val class101 = var_ha!!.method3705()
+        val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
-        method2467(class64, var_ha, -1, class101)
+        method2467(class64, var_renderer, -1, class101)
         val class318_sub4 = method136(i, false, false)
         if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), Class132.anInt1906, 0)
         else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         if (aClass318_Sub10_10341 != null) {
             val class98 = aClass318_Sub10_10341!!.method2525()
-            if (!Class305.aBoolean3870) var_ha.method3684(class98)
-            else var_ha.method3685(class98, Class132.anInt1906)
+            if (!Class305.aBoolean3870) var_renderer.method3684(class98)
+            else var_renderer.method3685(class98, Class132.anInt1906)
         }
         aBoolean10338 = class64.F()
         anInt10331 = class64.fa()
@@ -48,13 +48,13 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         return anInt10331
     }
 
-    public override fun method2380(var_ha: ha?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_0_: Int, i_1_: Byte, i_2_: Int) {
+    public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_0_: Int, i_1_: Byte, i_2_: Int) {
         try {
             anInt10347++
             if (i_1_ > -106) this.aBoolean10345 = false
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lf.N(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("lf.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
         }
     }
 
@@ -75,14 +75,14 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         return false
     }
 
-    private fun method2465(var_ha: ha?, i: Int, i_26_: Int, i_27_: Byte): Class64? {
+    private fun method2465(var_renderer: Renderer?, i: Int, i_26_: Int, i_27_: Byte): Class64? {
         anInt10353++
         if (i_27_.toInt() != -82) return null
         val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(122.toByte(), i)
         val var_s = Class348_Sub1_Sub1.aSArray8801!![this.plane.toInt()]
         val var_s_28_ = (if (this.aByte6376 < 3) (Class348_Sub1_Sub1.aSArray8801!![1 + this.aByte6376]) else null)
-        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_ha, anInt10350, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s)
-        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_ha, -1, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s)
+        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_renderer, anInt10350, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s)
+        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_renderer, -1, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s)
     }
 
     fun method2466(bool: Boolean) {
@@ -98,7 +98,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         return aBoolean10338
     }
 
-    private fun method2467(class64: Class64?, var_ha: ha?, i: Int, class101: Class101?) {
+    private fun method2467(class64: Class64?, var_renderer: Renderer?, i: Int, class101: Class101?) {
         do {
             try {
                 class64!!.method620(class101)
@@ -108,11 +108,11 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                 if (i == -1) {
                     if ((aClass318_Sub10_10341 == null || (aClass318_Sub10_10341!!.aBoolean6470)) && (class129s != null || class342s != null)) aClass318_Sub10_10341 = Class318_Sub10.Companion.method2526(Class367_Sub11.anInt7396, true)
                     if (aClass318_Sub10_10341 == null) break
-                    aClass318_Sub10_10341!!.method2536(var_ha, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
+                    aClass318_Sub10_10341!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
                     aClass318_Sub10_10341!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (if (class64 != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + (if (class101 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (class101 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -124,7 +124,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         return anInt10356
     }
 
-    public override fun method2381(var_ha: ha?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
         if (i != 7) method2387(null, -106)
         anInt10363++
         return null
@@ -136,18 +136,18 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         return false
     }
 
-    public override fun method2387(var_ha: ha?, i: Int) {
+    public override fun method2387(var_renderer: Renderer?, i: Int) {
         if (i >= -125) anInt10331 = 38
         anInt10354++
-        val class64 = method2465(var_ha, anInt10355, 0, (-82).toByte())
+        val class64 = method2465(var_renderer, anInt10355, 0, (-82).toByte())
         if (class64 != null) {
-            val class101 = var_ha!!.method3705()
+            val class101 = var_renderer!!.method3705()
             class101.method894(this.x, this.anInt6382, this.y)
-            method2467(class64, var_ha, -1, class101)
+            method2467(class64, var_renderer, -1, class101)
         }
     }
 
-    public override fun method2391(var_ha: ha?, i: Int, i_29_: Int, i_30_: Int): Boolean {
+    public override fun method2391(var_renderer: Renderer?, i: Int, i_29_: Int, i_30_: Int): Boolean {
         anInt10346++
         if (i_30_ != 0) return false
         return false
@@ -265,19 +265,19 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             return frame
         }
 
-        fun method2464(i: Byte, i_11_: Int, i_12_: Int, i_13_: Int, var_ha: ha?, i_14_: Int, var_renderConfig: RenderConfig?) {
+        fun method2464(i: Byte, i_11_: Int, i_12_: Int, i_13_: Int, var_renderer: Renderer?, i_14_: Int, var_renderConfig: RenderConfig?) {
             do {
                 try {
                     anInt10357++
-                    if (Class348.anInt4290 < 100) Class318_Sub7.Companion.method2512(var_renderConfig, var_ha, i.toInt() xor 0x74)
-                    var_ha!!.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_)
+                    if (Class348.anInt4290 < 100) Class318_Sub7.Companion.method2512(var_renderConfig, var_renderer, i.toInt() xor 0x74)
+                    var_renderer!!.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_)
                     if (Class348.anInt4290 < 100) {
                         val i_15_ = 20
                         val i_16_ = i_12_ / 2 + i_11_
                         val i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_
-                        var_ha.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
-                        var_ha.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163!![Class222.anInt2884]!!.getRGB(), 0)
-                        var_ha.aa(i_16_ - 150, 2 + i_17_, Class348.anInt4290 * 3, 30, Class135.aColorArray1928!![Class222.anInt2884]!!.getRGB(), 0)
+                        var_renderer.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
+                        var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163!![Class222.anInt2884]!!.getRGB(), 0)
+                        var_renderer.aa(i_16_ - 150, 2 + i_17_, Class348.anInt4290 * 3, 30, Class135.aColorArray1928!![Class222.anInt2884]!!.getRGB(), 0)
                         Class262.aClass324_3326!!.method2575((-116).toByte(), i_16_, Class50_Sub3.aColorArray5242!![Class222.anInt2884]!!.getRGB(), Class274.aClass274_3501!!.method2063(Class348_Sub33.anInt6967, i + 551), -1, i_15_ + i_17_)
                     } else {
                         val i_18_ = (Class348_Sub36.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())
@@ -289,10 +289,10 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                         Class182.anInt2446 = ((2 * i_13_).toFloat() / Class75.aFloat1247).toInt()
                         Class25.anInt370 = ((i_12_ * 2).toFloat() / Class75.aFloat1247).toInt()
                         method751(i_18_ + Class75.anInt1266, i_19_ + Class75.anInt1263, i_20_ - -Class75.anInt1266, Class75.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1)
-                        Class75.method748(var_ha)
+                        Class75.method748(var_renderer)
                         if (i.toInt() != -7) method2462(63, -7, -14)
-                        val class262 = method758(var_ha)
-                        method2312(-13084, 0, class262, 0, var_ha)
+                        val class262 = method758(var_renderer)
+                        method2312(-13084, 0, class262, 0, var_renderer)
                         if (Class367_Sub9.anInt7379 > 0) {
                             Class164.anInt2173--
                             if (Class164.anInt2173 == 0) {
@@ -313,7 +313,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                         i_23_ -= 15
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_14_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_14_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

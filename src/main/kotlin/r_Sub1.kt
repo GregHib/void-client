@@ -3,7 +3,7 @@ import IOException_Sub1.Companion.method131
 /* r_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class r_Sub1(var_ha_Sub3: ha_Sub3?, i: Int, i_19_: Int) : r() {
+class r_Sub1(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : r() {
     @JvmField
     var anInt10466: Int = 0
     @JvmField

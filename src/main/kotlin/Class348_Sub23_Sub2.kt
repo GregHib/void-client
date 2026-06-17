@@ -18,11 +18,11 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
     private val aBoolean9028 = false
     private var aDecoderContext9032: DecoderContext? = null
     private val aSetupInfo9035 = SetupInfo()
-    fun method2975(var_ha: ha, i: Int): Class105? {
+    fun method2975(var_renderer: Renderer, i: Int): Class105? {
         anInt9026++
         if (aFrame9024 == null) return null
         if (!aBoolean9014 && aClass105_9020 != null) return aClass105_9020
-        aClass105_9020 = var_ha.method3711(aFrame9024!!.pixels, i, aFrame9024!!.a, aFrame9024!!.a, aFrame9024!!.b, false)
+        aClass105_9020 = var_renderer.method3711(aFrame9024!!.pixels, i, aFrame9024!!.a, aFrame9024!!.a, aFrame9024!!.b, false)
         aBoolean9014 = false
         return aClass105_9020
     }

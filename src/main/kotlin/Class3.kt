@@ -16,7 +16,7 @@ object Class3 {
         r.aClass101_9720 = null
         Class132.anIntArray1909 = null
         Class92.anInterface4Array1525 = null
-        Class21.aHa326 = null
+        Class21.aRenderer326 = null
         Class44.aClass101_624 = null
         anInt124++
         val i_0_ = 9 / ((62 - i) / 47)

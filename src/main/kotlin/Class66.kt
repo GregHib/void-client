@@ -2416,7 +2416,7 @@ object Class66 {
                     return
                 }
                 if (i == 7205) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1806(108) && Class348_Sub8.aHa6654!!.method3699()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1806(108) && Class348_Sub8.aRenderer6654!!.method3699()) 1 else 0
                     return
                 }
                 if (i == 7206) {
@@ -2428,7 +2428,7 @@ object Class66 {
                     return
                 }
                 if (i == 7208) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1774(120) && Class348_Sub8.aHa6654!!.method3627()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1774(120) && Class348_Sub8.aRenderer6654!!.method3627()) 1 else 0
                     return
                 }
                 if (i == 7209) {
@@ -2478,7 +2478,7 @@ object Class66 {
                 }
                 if (i == 7305) {
                     val i_230_ = anIntArray1149!![--anInt1173]
-                    if (Class348_Sub8.aHa6654!!.method3699()) {
+                    if (Class348_Sub8.aRenderer6654!!.method3699()) {
                         anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1714(3, i_230_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
@@ -2496,7 +2496,7 @@ object Class66 {
                 }
                 if (i == 7308) {
                     val i_233_ = anIntArray1149!![--anInt1173]
-                    if (Class348_Sub8.aHa6654!!.method3627()) {
+                    if (Class348_Sub8.aRenderer6654!!.method3627()) {
                         anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1714(3, i_233_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
@@ -4197,7 +4197,7 @@ object Class66 {
                 }
                 if (i == 3602) {
                     val i_360_ = anIntArray1149!![--anInt1173]
-                    if (Class125.anInt4930 == 2 && i_360_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = ha.anIntArray4578!![i_360_]
+                    if (Class125.anInt4930 == 2 && i_360_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149!![anInt1173++] = Renderer.anIntArray4578!![i_360_]
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4385,7 +4385,7 @@ object Class66 {
                     return
                 }
                 if (i == 3629) {
-                    anIntArray1149!![anInt1173++] = ha.anInt4583
+                    anIntArray1149!![anInt1173++] = Renderer.anInt4583
                     return
                 }
                 if (i == 3630) {

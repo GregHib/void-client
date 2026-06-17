@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glTexGeni
 import kotlin.math.pow
 import kotlin.math.sqrt
 
-class Class286_Sub9 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha_Sub2) {
+class Class286_Sub9 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286(var_ha_Sub2) {
     private var aBoolean6308 = false
     private var aClass61_6310: Class61? = null
     private var aBoolean6316 = false

@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glLoadMatrixf
 import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glTexGeni
 
-class Class286_Sub8 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha_Sub2) {
+class Class286_Sub8 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286(var_ha_Sub2) {
     private var aBoolean6301 = false
     private var aClass61_6302: Class61? = null
     override fun method2133(i: Int) {

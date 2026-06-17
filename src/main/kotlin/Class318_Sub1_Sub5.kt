@@ -19,13 +19,13 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
         return Class125.method1110((this.y shr Class362.anInt4459), this.method2394(true), this.aByte6376.toInt(), (-79).toByte(), (this.x shr Class362.anInt4459))
     }
 
-    override fun method2380(var_ha: ha?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_2_: Int, i_3_: Byte, i_4_: Int) {
+    override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_2_: Int, i_3_: Byte, i_4_: Int) {
         try {
             anInt8768++
             if (i_3_ >= -106) method2384(null, 52)
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("un.N(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("un.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
         }
     }
 

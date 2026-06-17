@@ -5,7 +5,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-class ha_Sub1 private constructor(var_renderConfig: RenderConfig?) : ha(var_renderConfig) {
+class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Renderer(var_renderConfig) {
     private var anInt7465 = 0
     private var anInt7466 = 0
     private var aClass356_7467: Class356?

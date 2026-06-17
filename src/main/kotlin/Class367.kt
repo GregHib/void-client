@@ -1,7 +1,7 @@
 /* Class367 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class367 internal constructor(var aHa_Sub3_4479: ha_Sub3) {
+abstract class Class367 internal constructor(var aHa_Sub3_4479: NativeRenderer) {
     abstract fun method3520(i: Byte)
 
     abstract fun method3521(bool: Boolean, i: Byte)

@@ -3,7 +3,7 @@ import kotlin.math.min
 /* Class324_Sub4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class324_Sub4 internal constructor(private var aHa_Sub1_6506: ha_Sub1, class143: Class143?, class207s: Array<Class207>, `is`: IntArray, is_0_: IntArray) : Class324(aHa_Sub1_6506, class143) {
+class Class324_Sub4 internal constructor(private var aHa_Sub1_6506: SoftwareRenderer, class143: Class143?, class207s: Array<Class207>, `is`: IntArray, is_0_: IntArray) : Class324(aHa_Sub1_6506, class143) {
     private val anIntArray6503: IntArray
     private val aByteArrayArray6504: Array<ByteArray?>
     private val anIntArray6505: IntArray

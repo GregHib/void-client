@@ -75,7 +75,7 @@ class Class239_Sub10 : Class239 {
         @JvmStatic
         fun method1761(i: Int) {
             anInt5935++
-            Class348_Sub47.method3324(Class348_Sub8.aHa6654, 105.toByte(), Class367_Sub11.anInt7396.toLong())
+            Class348_Sub47.method3324(Class348_Sub8.aRenderer6654, 105.toByte(), Class367_Sub11.anInt7396.toLong())
             if (i != 85) anInt5943 = -99
             if (r.anInt9721 != -1) Class75_Sub1.method769(r.anInt9721, 118.toByte())
             var i_6_ = 0
@@ -90,8 +90,8 @@ class Class239_Sub10 : Class239 {
                 Class348_Sub38.anInt7008 = 0
                 Class88.method842(false)
             }
-            Class348_Sub8.aHa6654!!.la()
-            Class348_Sub42_Sub20.method3281(77.toByte(), Class348_Sub8.aHa6654!!)
+            Class348_Sub8.aRenderer6654!!.la()
+            Class348_Sub42_Sub20.method3281(77.toByte(), Class348_Sub8.aRenderer6654!!)
             var i_7_ = Class112.method1053(3112)
             if (i_7_ == -1) i_7_ = Class362.anInt4458
             if (i_7_ == -1) i_7_ = Class348_Sub42_Sub16_Sub1.anInt10447

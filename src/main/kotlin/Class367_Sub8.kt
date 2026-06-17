@@ -1,7 +1,7 @@
 /* Class367_Sub8 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class367_Sub8 internal constructor(var_ha_Sub3: ha_Sub3, class269: Class269?) : Class367(var_ha_Sub3) {
+class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: Class269?) : Class367(var_ha_Sub3) {
     private var aFloat7350 = 0.0f
     private val aClass269_7353: Class269?
     override fun method3520(i: Byte) {

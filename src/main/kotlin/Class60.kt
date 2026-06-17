@@ -61,7 +61,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
             class348_sub42_sub8_4_.method3162(true)
             anInt1086 += class348_sub42_sub8_4_.anInt9545
         }
-        if (i > -67) aHa1098 = null
+        if (i > -67) aRenderer1098 = null
         return null
     }
 
@@ -224,7 +224,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         @JvmField
         var anInt1097: Int = 0
         @JvmField
-        var aHa1098: ha? = null
+        var aRenderer1098: Renderer? = null
         @JvmField
         var anInt1099: Int = 0
         @JvmField
@@ -242,7 +242,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
 
         @JvmStatic
         fun method584(i: Byte) {
-            aHa1098 = null
+            aRenderer1098 = null
             val i_7_ = -19 % ((i - 59) / 55)
         }
 

@@ -43,11 +43,11 @@ class Class348_Sub46 : Class348 {
             aClass114_7113 = null
         }
 
-        fun method3319(var_ha: ha?, i: Byte) {
+        fun method3319(var_renderer: Renderer?, i: Byte) {
             if (i > -108) method3321(19, 60, 108)
             anInt7114++
             if (((Class132.aPlayer_1907!!.plane).toInt() != Class334.anInt4155) && Class147.aClass357ArrayArrayArray2029 != null) {
-                if (method2808((Class132.aPlayer_1907!!.plane).toInt(), var_ha, true)) Class334.anInt4155 = Class132.aPlayer_1907!!.plane.toInt()
+                if (method2808((Class132.aPlayer_1907!!.plane).toInt(), var_renderer, true)) Class334.anInt4155 = Class132.aPlayer_1907!!.plane.toInt()
             }
         }
 

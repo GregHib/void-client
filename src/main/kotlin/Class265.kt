@@ -17,7 +17,7 @@ class Class265 internal constructor(class45: Class45?, class120: Class120?) : In
         anInt4696++
         if (bool) {
             val i_0_ = (max(Class321.anInt4017, Class92.anInt1524))
-            val i_1_ = (max(Class348_Sub42_Sub8_Sub2.anInt10432, ha_Sub2.anInt7666))
+            val i_1_ = (max(Class348_Sub42_Sub8_Sub2.anInt10432, OpenGlRenderer.anInt7666))
             val i_2_ = aClass105_4688!!.method966()
             val i_3_ = aClass105_4688!!.method980()
             var i_4_ = 0

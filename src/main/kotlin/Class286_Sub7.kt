@@ -11,7 +11,7 @@ import jaggl.OpenGL.Companion.glTexEnvf
 import jaggl.OpenGL.Companion.glTexGenfv
 import jaggl.OpenGL.Companion.glTexGeni
 
-class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?) : Class286(var_ha_Sub2) {
+class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : Class286(var_ha_Sub2) {
     private val aClass83_6278: Class83?
     private var aClass61_6284: Class61? = null
     private var aClass258_Sub4_6285: Class258_Sub4? = null
@@ -187,7 +187,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                             for (i_2_ in i..<Class348_Sub40_Sub30.anInt9383) {
                                 Class83.aStringArray1441!![i_2_] = Class83.aStringArray1441!![i_2_ - -1]
                                 Class286_Sub2.Companion.aStringArray6205!![i_2_] = Class286_Sub2.Companion.aStringArray6205!![1 + i_2_]
-                                ha.anIntArray4578!![i_2_] = ha.anIntArray4578!![i_2_ - -1]
+                                Renderer.anIntArray4578!![i_2_] = Renderer.anIntArray4578!![i_2_ - -1]
                                 Class285.aStringArray4744!![i_2_] = Class285.aStringArray4744!![1 + i_2_]
                                 Class172.anIntArray2280!![i_2_] = Class172.anIntArray2280!![i_2_ - -1]
                                 Class122.aBooleanArray1806!![i_2_] = Class122.aBooleanArray1806!![1 + i_2_]

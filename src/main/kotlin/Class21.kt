@@ -22,7 +22,7 @@ class Class21 {
         @JvmField
         var anInt325: Int = -50
         @JvmField
-        var aHa326: ha? = null
+        var aRenderer326: Renderer? = null
         @JvmField
         var anInt327: Int = 0
 
@@ -30,7 +30,7 @@ class Class21 {
         fun method288(i: Byte) {
             aClass45_322 = null
             if (i > 93) {
-                aHa326 = null
+                aRenderer326 = null
                 aClass46_323 = null
             }
         }

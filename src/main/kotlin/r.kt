@@ -31,7 +31,7 @@ abstract class r : Class348_Sub42() {
             anInt9717++
             if (bool != true) method3285(10)
             Class44.aClass101_624!!.method891(0, 0, d.toInt())
-            Class21.aHa326!!.method3638(Class44.aClass101_624)
+            Class21.aRenderer326!!.method3638(Class44.aClass101_624)
         }
 
         @JvmStatic

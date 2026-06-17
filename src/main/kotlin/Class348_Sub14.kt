@@ -85,7 +85,7 @@ class Class348_Sub14 : Class348 {
         }
 
         @JvmStatic
-        fun method2808(i: Int, var_ha: ha?, bool: Boolean): Boolean {
+        fun method2808(i: Int, var_renderer: Renderer?, bool: Boolean): Boolean {
             try {
                 anInt6763++
                 val i_5_ = (-104 + Class367_Sub4.anInt7319) / 2
@@ -111,7 +111,7 @@ class Class348_Sub14 : Class348 {
                     `is`[i_12_] = -16777216
                     i_12_++
                 }
-                Class108.aClass105_1664 = var_ha!!.method3662(512, `is`, 94.toByte(), 0, 512, 512)
+                Class108.aClass105_1664 = var_renderer!!.method3662(512, `is`, 94.toByte(), 0, 512, 512)
                 Class358.method3489(-3)
                 val i_13_ = (((-10 + (238 + (20.0 * Math.random()).toInt()) shl 8) + (-10 + (Math.random() * 20.0).toInt() + 238 shl 16) - (-(Math.random() * 20.0).toInt() + -228)) or 0xffffff.inv())
                 val i_14_ = (228 - -(20.0 * Math.random()).toInt() shl 16 or 0xffffff.inv())
@@ -137,8 +137,8 @@ class Class348_Sub14 : Class348 {
                             i_23_++
                             i_19_ += 4
                         }
-                        var_ha.KA(0, 0, RuntimeException_Sub1.anInt4600 * 4 + i_18_, RuntimeException_Sub1.anInt4600 * 4 + i_19_)
-                        var_ha.GA(-16777216)
+                        var_renderer.KA(0, 0, RuntimeException_Sub1.anInt4600 * 4 + i_18_, RuntimeException_Sub1.anInt4600 * 4 + i_19_)
+                        var_renderer.GA(-16777216)
                         for (i_24_ in i..3) {
                             for (i_25_ in 0..RuntimeException_Sub1.anInt4600) {
                                 var i_26_ = 0
@@ -156,7 +156,7 @@ class Class348_Sub14 : Class348 {
                                         if (i_5_ <= i_29_ && i_6_ <= i_30_ && method536(i_30_, false, i_29_, i, i_24_)) {
                                             var i_31_ = i_24_
                                             if (method802(i_30_, i_29_, true)) i_31_--
-                                            if (i_31_ >= 0) Class348_Sub41.Companion.method3159(i_14_, ((-i_28_ + (RuntimeException_Sub1.anInt4600)) * 4 + i_19_ + -4), false, i_31_, i_30_, i_29_, var_ha, 4 * i_27_ + i_18_, i_13_)
+                                            if (i_31_ >= 0) Class348_Sub41.Companion.method3159(i_14_, ((-i_28_ + (RuntimeException_Sub1.anInt4600)) * 4 + i_19_ + -4), false, i_31_, i_30_, i_29_, var_renderer, 4 * i_27_ + i_18_, i_13_)
                                         }
                                     }
                                 }
@@ -170,24 +170,24 @@ class Class348_Sub14 : Class348 {
                                     val i_34_ = i_16_ + i_32_
                                     val i_35_ = i_33_ + i_17_
                                     val i_36_ = (class361!!.anIntArrayArray4438!![(-class361.anInt4453 + i_34_)]!![(-class361.anInt4441 + i_35_)])
-                                    if ((0x40240000 and i_36_) != 0) var_ha.method3675(4, (-125).toByte(), i_32_ * 4 + i_18_, -4 + (RuntimeException_Sub1.anInt4600 + -i_33_) * 4 + i_19_, 4, -1713569622)
+                                    if ((0x40240000 and i_36_) != 0) var_renderer.method3675(4, (-125).toByte(), i_32_ * 4 + i_18_, -4 + (RuntimeException_Sub1.anInt4600 + -i_33_) * 4 + i_19_, 4, -1713569622)
                                     else if ((0x800000 and i_36_) == 0) {
-                                        if ((i_36_ and 0x2000000) != 0) var_ha.method3660(3 + (i_18_ - -(i_32_ * 4)), -1713569622, 4, (-4 + (4 * (-i_33_ + (RuntimeException_Sub1.anInt4600)) + i_19_)), true)
-                                        else if ((i_36_ and 0x8000000) != 0) var_ha.method3649((-126).toByte(), 4, 3 + (i_19_ + ((RuntimeException_Sub1.anInt4600) - i_33_) * 4) + -4, -1713569622, i_18_ + 4 * i_32_)
-                                        else if ((0x20000000 and i_36_) != 0) var_ha.method3660(i_18_ + 4 * i_32_, -1713569622, 4, (4 * (-i_33_ + (RuntimeException_Sub1.anInt4600)) + (i_19_ - 4)), bool)
-                                    } else var_ha.method3649((-113).toByte(), 4, (-4 + i_19_ + 4 * (-i_33_ + (RuntimeException_Sub1.anInt4600))), -1713569622, i_32_ * 4 + i_18_)
+                                        if ((i_36_ and 0x2000000) != 0) var_renderer.method3660(3 + (i_18_ - -(i_32_ * 4)), -1713569622, 4, (-4 + (4 * (-i_33_ + (RuntimeException_Sub1.anInt4600)) + i_19_)), true)
+                                        else if ((i_36_ and 0x8000000) != 0) var_renderer.method3649((-126).toByte(), 4, 3 + (i_19_ + ((RuntimeException_Sub1.anInt4600) - i_33_) * 4) + -4, -1713569622, i_18_ + 4 * i_32_)
+                                        else if ((0x20000000 and i_36_) != 0) var_renderer.method3660(i_18_ + 4 * i_32_, -1713569622, 4, (4 * (-i_33_ + (RuntimeException_Sub1.anInt4600)) + (i_19_ - 4)), bool)
+                                    } else var_renderer.method3649((-113).toByte(), 4, (-4 + i_19_ + 4 * (-i_33_ + (RuntimeException_Sub1.anInt4600))), -1713569622, i_32_ * 4 + i_18_)
                                     i_33_++
                                 }
                             }
                         }
-                        var_ha.aa(i_18_, i_19_, 4 * RuntimeException_Sub1.anInt4600, RuntimeException_Sub1.anInt4600 * 4, i_15_, 2)
+                        var_renderer.aa(i_18_, i_19_, 4 * RuntimeException_Sub1.anInt4600, RuntimeException_Sub1.anInt4600 * 4, i_15_, 2)
                         Class108.aClass105_1664!!.method979((-i_5_ + i_16_) * 4 + 48, (-(4 * (i_17_ - i_6_)) + 464 + -(RuntimeException_Sub1.anInt4600 * 4)), RuntimeException_Sub1.anInt4600 * 4, 4 * RuntimeException_Sub1.anInt4600, i_18_, i_19_)
                         i_17_ += RuntimeException_Sub1.anInt4600
                     }
                     i_16_ += RuntimeException_Sub1.anInt4600
                 }
-                var_ha.la()
-                var_ha.GA(-16777215)
+                var_renderer.la()
+                var_renderer.GA(-16777215)
                 Class354.method3466(-86)
                 Class348_Sub40_Sub38.anInt9479 = 0
                 Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1996(116)
@@ -273,7 +273,7 @@ class Class348_Sub14 : Class348 {
                 }
                 return true
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.Companion.method2929(runtimeexception, ("ij.E(" + i + ',' + (if (var_ha != null) "{...}" else "null") + ',' + bool + ')'))
+                throw Class348_Sub17.Companion.method2929(runtimeexception, ("ij.E(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
     }

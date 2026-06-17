@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glTexCoord2f
 import jaggl.OpenGL.Companion.glVertex2i
 import kotlin.math.min
 
-class Class18 internal constructor(var_ha_Sub2: ha_Sub2) {
+class Class18 internal constructor(var_ha_Sub2: OpenGlRenderer) {
     private var anInt275 = 1
     private var anInt276 = 0
     private var aClass206_281: Class206? = null
@@ -16,7 +16,7 @@ class Class18 internal constructor(var_ha_Sub2: ha_Sub2) {
     private var anInt286 = 1
     private var anInt287 = 0
     private var aBoolean289 = false
-    private val aHa_Sub2_290: ha_Sub2
+    private val aHa_Sub2_290: OpenGlRenderer
     private val aClass262_292: Class262
     private var aBoolean293: Boolean
     private var aBoolean294: Boolean
@@ -348,10 +348,10 @@ class Class18 internal constructor(var_ha_Sub2: ha_Sub2) {
         var anInt291: Int = 0
         fun method271(i: Int, class46: Class46, i_0_: Byte, i_1_: Int) {
             anInt278++
-            val var_aa = class46.method425(Class348_Sub8.aHa6654!!, 19.toByte())
+            val var_aa = class46.method425(Class348_Sub8.aRenderer6654!!, 19.toByte())
             if (var_aa != null) {
-                Class348_Sub8.aHa6654!!.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789)
-                if (Class259.anInt3306 >= 3) Class348_Sub8.aHa6654!!.A(-16777216, var_aa, i_1_, i)
+                Class348_Sub8.aRenderer6654!!.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789)
+                if (Class259.anInt3306 >= 3) Class348_Sub8.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
                 else Class79.aClass105_1365!!.method976((class46.anInt709.toFloat() / 2.0f + i_1_.toFloat()), i.toFloat() + class46.anInt789.toFloat() / 2.0f, 4096, (0x3fff and -Class314.aFloat3938.toInt()) shl 2, var_aa, i_1_, i)
             }
         }
@@ -359,7 +359,7 @@ class Class18 internal constructor(var_ha_Sub2: ha_Sub2) {
         @JvmStatic
         fun method273(class46: Class46, i: Int) {
             anInt288++
-            if (class46.anInt774 == 5 && class46.anInt812 != -1) method2383(Class348_Sub8.aHa6654, -2, class46)
+            if (class46.anInt774 == 5 && class46.anInt812 != -1) method2383(Class348_Sub8.aRenderer6654, -2, class46)
         }
 
         @JvmStatic
@@ -368,12 +368,12 @@ class Class18 internal constructor(var_ha_Sub2: ha_Sub2) {
         }
 
         @JvmStatic
-        fun method282(i: Int, var_ha: ha?, i_21_: Int, i_22_: Byte, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int) {
+        fun method282(i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Byte, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int) {
             anInt274++
-            Class21.aHa326 = var_ha
-            Class51.aClass101_905 = Class21.aHa326!!.method3654()
-            Class44.aClass101_624 = Class21.aHa326!!.method3654()
-            r.aClass101_9720 = Class21.aHa326!!.method3654()
+            Class21.aRenderer326 = var_renderer
+            Class51.aClass101_905 = Class21.aRenderer326!!.method3654()
+            Class44.aClass101_624 = Class21.aRenderer326!!.method3654()
+            r.aClass101_9720 = Class21.aRenderer326!!.method3654()
             Class73.anInt4784 = i_26_
             Class239_Sub24.anInt6095 = 0
             if (i_22_ <= 64) anIntArray279 = null

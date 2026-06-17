@@ -1,10 +1,10 @@
 /* Class232 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class232 internal constructor(var_ha_Sub2: ha_Sub2?, class104: Class104?, var_s_Sub2: s_Sub2?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
+class Class232 internal constructor(var_ha_Sub2: OpenGlRenderer?, class104: Class104?, var_s_Sub2: s_Sub2?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
     private var aClass258_Sub3_2998: Class258_Sub3? = null
     private val aClass104_2999: Class104?
-    private val aHa_Sub2_3000: ha_Sub2?
+    private val aHa_Sub2_3000: OpenGlRenderer?
     private var anInterface8_3001: Interface8? = null
     private val anInt3002: Int
     private val anInt3003: Int

@@ -23,7 +23,7 @@ object Class93 {
         anApplet1530 = null
     }
 
-    fun method862(canvas: Canvas?, var_renderConfig: RenderConfig?, class45: Class45?, i: Int, i_1_: Int): ha? {
+    fun method862(canvas: Canvas?, var_renderConfig: RenderConfig?, class45: Class45?, i: Int, i_1_: Int): Renderer? {
         try {
             anInt1532++
             if (!method215(27165)) throw RuntimeException("")

@@ -16,7 +16,7 @@ import jaggl.OpenGL.Companion.glVertex2i
 import jaggl.OpenGL.Companion.glViewport
 import java.io.*
 
-class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: ha_Sub2) : Class348_Sub5(var_ha_Sub2) {
+class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class348_Sub5(var_ha_Sub2) {
     private var aClass337_8822: Class337? = null
     private var aClass337_8824: Class337? = null
     private var aClass206_8825: Class206? = null

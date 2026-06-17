@@ -12,7 +12,7 @@ interface Interface10 {
 
     fun method42(i: Int): Int
 
-    fun method43(var_ha: ha?, i: Int)
+    fun method43(var_renderer: Renderer?, i: Int)
 
-    fun method44(i: Int, var_ha: ha?)
+    fun method44(i: Int, var_renderer: Renderer?)
 }

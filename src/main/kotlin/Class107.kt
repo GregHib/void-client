@@ -140,13 +140,13 @@ class Class107 {
             if (i < 49) anInt1651 = 10
         }
 
-        fun method1007(class46: Class46?, var_ha: ha?, i: Int, i_1_: Int, i_2_: Int) {
+        fun method1007(class46: Class46?, var_renderer: Renderer?, i: Int, i_1_: Int, i_2_: Int) {
             try {
                 anInt1648++
-                val var_aa = class46!!.method425(var_ha!!, 40.toByte())
+                val var_aa = class46!!.method425(var_renderer!!, 40.toByte())
                 if (var_aa != null) {
                     if (i_2_ != 22960) anIntArray1650 = null
-                    var_ha.KA(i, i_1_, i + class46.anInt709, class46.anInt789 + i_1_)
+                    var_renderer.KA(i, i_1_, i + class46.anInt709, class46.anInt789 + i_1_)
                     if (Class259.anInt3306 != 2 && Class259.anInt3306 != 5 && Class108.aClass105_1664 != null) {
                         val i_3_: Int
                         val i_4_: Int
@@ -173,7 +173,7 @@ class Class107 {
                             val i_11_ = (-Class90.regionTileY + (0x3fff and (r_Sub2.aClass252_10488!!.anIntArray3238!![i_9_])))
                             val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
                             val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
-                            method2385(class46, i_1_, var_aa, (r_Sub2.aClass252_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_ha)
+                            method2385(class46, i_1_, var_aa, (r_Sub2.aClass252_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_renderer)
                             class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1990(92.toByte()) as? Class348_Sub35
                         }
                         var i_14_ = 0
@@ -188,7 +188,7 @@ class Class107 {
                                     continue
                                 }
                             }
-                            method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, ((-113).toByte()).toByte(), i_16_, var_ha)
+                            method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, ((-113).toByte()).toByte(), i_16_, var_renderer)
                             i_14_++
                         }
                         var class348_sub37 = Class130.aClass356_1895!!.method3484(i_2_ xor 0x59b0) as? Class348_Sub37
@@ -214,7 +214,7 @@ class Class107 {
                                     if (class79 != null && class79.aBoolean1397 && class79.aBoolean1396) {
                                         val i_23_ = (-(i_4_ / 128) + (npc.x) / 128)
                                         val i_24_ = ((npc.y) / 128 + -(i_3_ / 128))
-                                        if (class79.anInt1383 != -1) method2385(class46, i_1_, var_aa, class79.anInt1383, i_23_, i, ((-73).toByte()).toByte(), i_24_, var_ha)
+                                        if (class79.anInt1383 != -1) method2385(class46, i_1_, var_aa, class79.anInt1383, i_23_, i, ((-73).toByte()).toByte(), i_24_, var_renderer)
                                         else Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742!![1]), i, class46, var_aa, i_24_, 2, i_23_)
                                     }
                                 }
@@ -231,7 +231,7 @@ class Class107 {
                                 var bool = false
                                 var i_29_ = 0
                                 while ((Class348_Sub40_Sub30.anInt9383 > i_29_)) {
-                                    if ((player.aString10544 == Class83.aStringArray1441!![i_29_]) && (ha.anIntArray4578!![i_29_] != 0)) {
+                                    if ((player.aString10544 == Class83.aStringArray1441!![i_29_]) && (Renderer.anIntArray4578!![i_29_] != 0)) {
                                         bool = true
                                         break
                                     }
@@ -295,28 +295,28 @@ class Class107 {
                                 val i_41_ = (4 * Class97.anInt1548 - (-2 + i_3_ / 128) + (2 * (Class132.aPlayer_1907!!.method2436(59.toByte()) - 1)))
                                 Class151.method1211(i_1_, (Class25.aClass105Array367!![(if (!Class348_Sub13.aBoolean6759) 0 else 1)]), i, class46, var_aa, i_41_, 2, i_40_)
                             }
-                            if (!Class132.aPlayer_1907!!.aBoolean10551) var_ha.method3675(3, ((-125).toByte()).toByte(), -1 + (i - -((class46.anInt709) / 2)), -1 + ((class46.anInt789) / 2 + i_1_), 3, -1)
+                            if (!Class132.aPlayer_1907!!.aBoolean10551) var_renderer.method3675(3, ((-125).toByte()).toByte(), -1 + (i - -((class46.anInt709) / 2)), -1 + ((class46.anInt789) / 2 + i_1_), 3, -1)
                         }
-                    } else var_ha.A(-16777216, var_aa, i, i_1_)
+                    } else var_renderer.A(-16777216, var_aa, i, i_1_)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("mn.F(" + (if (class46 != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("mn.F(" + (if (class46 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ')'))
             }
         }
 
         fun method1010(bool: Boolean, bool_42_: Boolean) {
-            r.aClass101_9720!!.method898(Class21.aHa326!!.method3640())
+            r.aClass101_9720!!.method898(Class21.aRenderer326!!.method3640())
             anInt1642++
-            val `is` = Class21.aHa326!!.Y()
+            val `is` = Class21.aRenderer326!!.Y()
             Class14_Sub3.anInt8630 = `is`[2]
             Class248.anInt3202 = `is`[0]
             Class27.anInt394 = `is`[3]
             Class239_Sub5.anInt5886 = `is`[1]
             if (bool_42_) {
-                Class21.aHa326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879)
+                Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879)
                 method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120)
             } else {
-                Class21.aHa326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
+                Class21.aRenderer326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
                 method3284(true, Class14_Sub2.aDouble8621)
             }
             if (bool != false) method1010(true, true)

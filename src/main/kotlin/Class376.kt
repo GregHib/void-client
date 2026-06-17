@@ -150,7 +150,7 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
                 class148 = Class16.aClass148_231!!
                 Class16.aClass148_231 = Class16.aClass148_231!!.aClass148_2038
                 class148.aClass148_2038 = null
-                ha_Sub2.anInt7722--
+                OpenGlRenderer.anInt7722--
             } else class148 = Class148()
             class148.aClass318_Sub1_Sub3_2040 = class318_sub1_sub3
             return class148

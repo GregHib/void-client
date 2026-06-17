@@ -1,7 +1,7 @@
 /* Class299_Sub2_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3, private val anInt8716: Int, private val anInt8717: Int, private val anInt8715: Int, private val anInt8711: Int, private val anInt8708: Int, private val anInt8714: Int) : Class299_Sub2() {
+class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: NativeRenderer, private val anInt8716: Int, private val anInt8717: Int, private val anInt8715: Int, private val anInt8711: Int, private val anInt8708: Int, private val anInt8714: Int) : Class299_Sub2() {
     private var anInterface18_Impl2_8719: Interface18_Impl2? = null
     override fun method2266(bool: Boolean): Interface18_Impl2? {
         if (bool != true) return null
@@ -42,16 +42,16 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3
         var anInt8720: Int = 0
 
         @JvmStatic
-        fun method2270(i: Int, i_4_: Int, var_ha: ha?, string: String?, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int) {
+        fun method2270(i: Int, i_4_: Int, var_renderer: Renderer?, string: String?, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int) {
             try {
                 if (OutputStream_Sub2.aClass105_106 == null || Class121.aClass105_1800 == null) {
                     if (Class21.aClass45_322!!.method421(false, Class231.anInt2996) && Class21.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)) {
-                        OutputStream_Sub2.aClass105_106 = (var_ha!!.method3691(Class207.method1521(Class21.aClass45_322!!, Class231.anInt2996, 0), true))
+                        OutputStream_Sub2.aClass105_106 = (var_renderer!!.method3691(Class207.method1521(Class21.aClass45_322!!, Class231.anInt2996, 0), true))
                         val class207 = Class207.method1521(Class21.aClass45_322!!, Class348_Sub40_Sub16.anInt9231, 0)
-                        Class121.aClass105_1800 = var_ha.method3691(class207, true)
+                        Class121.aClass105_1800 = var_renderer.method3691(class207, true)
                         class207!!.method1518()
-                        Class348_Sub5.aClass105_6627 = var_ha.method3691(class207, true)
-                    } else var_ha!!.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 shl 24 or Class264.anInt3376), 1)
+                        Class348_Sub5.aClass105_6627 = var_renderer.method3691(class207, true)
+                    } else var_renderer!!.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 shl 24 or Class264.anInt3376), 1)
                 }
                 anInt8709++
                 if (OutputStream_Sub2.aClass105_106 != null && Class121.aClass105_1800 != null) {
@@ -62,10 +62,10 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3
                 }
                 if (bool == false) {
                     Class262.aClass324_3326!!.method2576(string, (Class348_Sub42_Sub11.anInt9586) or 0xffffff.inv(), 14 + i_5_, 3 + i_4_, -1, -127)
-                    var_ha!!.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 or (255 + -Class51.anInt948 shl 24)), 1)
+                    var_renderer!!.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 or (255 + -Class51.anInt948 shl 24)), 1)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
             }
         }
 

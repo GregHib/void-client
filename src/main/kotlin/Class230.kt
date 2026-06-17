@@ -43,7 +43,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                 try {
                     anInt2982++
                     if (Class348_Sub49.anInt7207 != -1) {
-                        val is_15_ = Class21.aHa326!!.Y()
+                        val is_15_ = Class21.aRenderer326!!.Y()
                         val i_16_ = is_15_[0]
                         val i_17_ = is_15_[1]
                         val i_18_ = is_15_[2]
@@ -192,9 +192,9 @@ class Class230 internal constructor(string: String?, i: Int) {
                                         }
                                         class318_sub4 = (class243.method1878(122.toByte()) as Class318_Sub4?)
                                     }
-                                    if (Class348_Sub49.anInt7207 == 0) Class21.aHa326!!.method3687(Class17.anInterface4_252)
-                                    Class21.aHa326!!.F(-i_33_, -i_34_)
-                                    Class21.aHa326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
+                                    if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3687(Class17.anInterface4_252)
+                                    Class21.aRenderer326!!.F(-i_33_, -i_34_)
+                                    Class21.aRenderer326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
                                     method3284(true, (Class348_Sub42_Sub4.aDouble9517 + d_37_))
                                     Class14_Sub2.aDouble8621 = d_37_ + Class348_Sub42_Sub4.aDouble9517
                                     if (Class348_Sub49.anInt7207 == 1) {
@@ -202,30 +202,30 @@ class Class230 internal constructor(string: String?, i: Int) {
                                         OutputStream_Sub1.anInt95 = i_21_
                                         Class120.anInt4910 = -Class328.anInt4100 + (i_16_ - i_33_)
                                         Class286_Sub5.anInt6255 = i_20_
-                                        Class21.aHa326!!.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95))
+                                        Class21.aRenderer326!!.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95))
                                     } else {
                                         Class286_Sub5.anInt6255 = i_20_
                                         Class328_Sub1_Sub1.anInt8799 = (-Class348_Sub3.anInt6568 + i_17_ - (-(Class348_Sub42_Sub9_Sub1.anInt10444) - -i_34_))
                                         Class120.anInt4910 = (-Class328.anInt4100 + i_16_ + (Class211.anInt2747 + -i_33_))
                                         OutputStream_Sub1.anInt95 = i_21_
-                                        Class21.aHa326!!.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95))
+                                        Class21.aRenderer326!!.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95))
                                     }
                                     method1274(Class348_Sub42_Sub8_Sub2.aClass76_10436)
                                     if (i_51_ > 0) {
-                                        Class21.aHa326!!.KA(0, i_49_, (Class348_Sub16_Sub1.anInt8854), i_51_ + i_49_)
-                                        Class21.aHa326!!.ya()
-                                        Class21.aHa326!!.GA(Class77.anInt1290)
+                                        Class21.aRenderer326!!.KA(0, i_49_, (Class348_Sub16_Sub1.anInt8854), i_51_ + i_49_)
+                                        Class21.aRenderer326!!.ya()
+                                        Class21.aRenderer326!!.GA(Class77.anInt1290)
                                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                                     }
                                     if (i_46_ > 0) {
-                                        Class21.aHa326!!.KA(i_44_, i_53_, i_44_ - -i_46_, i_53_ + i_52_)
-                                        Class21.aHa326!!.ya()
-                                        Class21.aHa326!!.GA(Class77.anInt1290)
+                                        Class21.aRenderer326!!.KA(i_44_, i_53_, i_44_ - -i_46_, i_53_ + i_52_)
+                                        Class21.aRenderer326!!.ya()
+                                        Class21.aRenderer326!!.GA(Class77.anInt1290)
                                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                                     }
-                                    Class21.aHa326!!.la()
+                                    Class21.aRenderer326!!.la()
                                     Class271.method2046()
-                                    if (Class348_Sub49.anInt7207 == 0) Class21.aHa326!!.method3672()
+                                    if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3672()
                                     Class348_Sub3.anInt6568 += i_34_
                                     Class328.anInt4100 += i_33_
                                     Class348_Sub42_Sub4.aDouble9517 += d_37_
@@ -261,24 +261,24 @@ class Class230 internal constructor(string: String?, i: Int) {
                             Class105_Sub1.anInt8422 = i_4_
                             Class348_Sub3.anInt6568 = 0
                             Class348_Sub42_Sub4.aDouble9517 = 0.0
-                            if (Class348_Sub49.anInt7207 == 0) Class21.aHa326!!.method3687(Class17.anInterface4_252)
-                            Class21.aHa326!!.la()
-                            Class21.aHa326!!.ya()
-                            Class21.aHa326!!.GA(Class77.anInt1290)
+                            if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3687(Class17.anInterface4_252)
+                            Class21.aRenderer326!!.la()
+                            Class21.aRenderer326!!.ya()
+                            Class21.aRenderer326!!.GA(Class77.anInt1290)
                             Class51.aClass101_905!!.method903(Class105_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396)
-                            Class21.aHa326!!.method3638(Class51.aClass101_905)
+                            Class21.aRenderer326!!.method3638(Class51.aClass101_905)
                             if (Class348_Sub49.anInt7207 == 1) {
                                 Class328_Sub1_Sub1.anInt8799 = i_17_
                                 Class120.anInt4910 = i_16_
                                 OutputStream_Sub1.anInt95 = i_21_
                                 Class286_Sub5.anInt6255 = i_20_
-                                Class21.aHa326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
+                                Class21.aRenderer326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
                             } else {
                                 Class120.anInt4910 = i_16_ - -Class211.anInt2747
                                 Class328_Sub1_Sub1.anInt8799 = Class348_Sub42_Sub9_Sub1.anInt10444 + i_17_
                                 Class286_Sub5.anInt6255 = i_20_
                                 OutputStream_Sub1.anInt95 = i_21_
-                                Class21.aHa326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
+                                Class21.aRenderer326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)
                             }
                             Class14_Sub2.aDouble8621 = 0.0
                             Class348_Sub42_Sub8_Sub2.aClass76_10436!!.method775(69.toByte())
@@ -286,7 +286,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                             method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                             Class271.method2046()
                             Class348_Sub16_Sub2.aBoolean8870 = false
-                            if (Class348_Sub49.anInt7207 == 0) Class21.aHa326!!.method3672()
+                            if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3672()
                             if (Class348_Sub49.anInt7207 == 1) method1469(-117)
                         }
                         if (Class348_Sub49.anInt7207 == 0) Class17.anInterface4_252!!.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, Class107.anInt1651, 0, 0, true, true)
@@ -295,25 +295,25 @@ class Class230 internal constructor(string: String?, i: Int) {
                         Class318_Sub1_Sub5_Sub1.aDouble10120 = Class348_Sub42_Sub4.aDouble9517
                         if (Class348_Sub49.anInt7207 == 0 || Class348_Sub49.anInt7207 == 2) {
                             if (Class348_Sub49.anInt7207 == 2) {
-                                Class21.aHa326!!.GA(Class77.anInt1290)
-                                Class21.aHa326!!.ya()
+                                Class21.aRenderer326!!.GA(Class77.anInt1290)
+                                Class21.aRenderer326!!.ya()
                             }
                             Class193.anInt2590 = i_20_
                             Class129.anInt1879 = i_21_
                             Class94.anInt1537 = (-Class339.anInt4211 + -Class328.anInt4100 + (i_16_ + Class211.anInt2747))
                             Class318_Sub5.anInt6417 = (-Class348_Sub40_Sub8.anInt9157 + (i_17_ + Class348_Sub42_Sub9_Sub1.anInt10444 + -Class348_Sub3.anInt6568))
-                            Class21.aHa326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879)
+                            Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879)
                         } else if (Class348_Sub49.anInt7207 == 1) {
                             Class193.anInt2590 = i_20_
                             Class94.anInt1537 = i_16_ + -Class328.anInt4100
                             Class318_Sub5.anInt6417 = -Class348_Sub3.anInt6568 + i_17_
                             Class129.anInt1879 = i_21_
-                            Class21.aHa326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879)
-                            Class21.aHa326!!.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (Class107.anInt1651 + Class348_Sub40_Sub8.anInt9157))
+                            Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879)
+                            Class21.aRenderer326!!.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (Class107.anInt1651 + Class348_Sub40_Sub8.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (Class348_Sub49.anInt7207 != 2) 2 else 0, Class348_Sub49.anInt7207 == 1)
-                        Class21.aHa326!!.la()
-                        Class21.aHa326!!.DA(i_16_, i_17_, i_18_, i_19_)
+                        Class21.aRenderer326!!.la()
+                        Class21.aRenderer326!!.DA(i_16_, i_17_, i_18_, i_19_)
                         if (i == -2) break
                         anInt2986 = -82
                     }
@@ -555,7 +555,7 @@ class Class230 internal constructor(string: String?, i: Int) {
             val l = (i_76_.toLong() * 76724863L xor (i.toLong() * 32147369L xor (i_74_.toLong() * 986053L xor (i_75_.toLong() * 67481L xor i_77_.toLong() * 97549L xor i_79_.toLong() * 475427L))))
             var class299 = Class375.aClass60_4543!!.method583(l, 90) as Class299?
             if (class299 != null) return class299
-            class299 = Class60.aHa1098!!.method3697(i_75_, i_77_, i_79_, i_74_, i, i_76_)
+            class299 = Class60.aRenderer1098!!.method3697(i_75_, i_77_, i_79_, i_74_, i, i_76_)
             if (i_78_ != -1) method1636(58, 63, -99, -89, -7, 18, 71)
             Class375.aClass60_4543!!.method582(class299, l, (-106).toByte())
             return class299

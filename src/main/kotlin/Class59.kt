@@ -232,10 +232,10 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
         }
 
         @JvmStatic
-        fun method549(i: Byte, class348_sub21: Class348_Sub21?, var_ha: ha, class42: Class42?) {
+        fun method549(i: Byte, class348_sub21: Class348_Sub21?, var_renderer: Renderer, class42: Class42?) {
             try {
                 anInt1080++
-                val class105 = class42!!.method375(var_ha, false)
+                val class105 = class42!!.method375(var_renderer, false)
                 if (class105 != null) {
                     var i_56_ = class105.method971()
                     if (i_56_ < class105.method969()) i_56_ = class105.method969()
@@ -246,10 +246,10 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     var i_61_ = 0
                     var i_62_ = 0
                     if (class42.aString597 != null) {
-                        i_60_ = (Class258_Sub1.aClass143_8527!!.method1188(class42.aString597, null, ha_Sub3.aStringArray8019, 87.toByte(), null))
+                        i_60_ = (Class258_Sub1.aClass143_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
                         var i_63_ = 0
                         while (i_60_ > i_63_) {
-                            var string = ha_Sub3.aStringArray8019!![i_63_]!!
+                            var string = NativeRenderer.aStringArray8019!![i_63_]!!
                             if (i_60_ + -1 > i_63_) string = string.substring(0, string.length - 4)
                             val i_64_ = Class39.aClass323_521!!.method2564(string)
                             if (i_61_ < i_64_) i_61_ = i_64_
@@ -287,13 +287,13 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                         i_68_ = i_65_ + -(i_61_ / 2) - 5
                         i_71_ = 3 + (i_60_ * Class39.aClass323_521!!.method2565() + i_69_)
                         i_70_ = i_61_ + (i_68_ + 10)
-                        if (class42.anInt602 != 0) var_ha!!.method3675(-i_68_ + i_70_, (-125).toByte(), i_68_, i_69_, i_71_ - i_69_, class42.anInt602)
-                        if (class42.anInt604 != 0) var_ha!!.method3668(-i_68_ + i_70_, i_69_, class42.anInt604, i_68_, -i_69_ + i_71_, 67)
+                        if (class42.anInt602 != 0) var_renderer!!.method3675(-i_68_ + i_70_, (-125).toByte(), i_68_, i_69_, i_71_ - i_69_, class42.anInt602)
+                        if (class42.anInt604 != 0) var_renderer!!.method3668(-i_68_ + i_70_, i_69_, class42.anInt604, i_68_, -i_69_ + i_71_, 67)
                         var i_72_ = 0
                         while (i_60_ > i_72_) {
-                            var string = ha_Sub3.aStringArray8019!![i_72_]!!
+                            var string = NativeRenderer.aStringArray8019!![i_72_]!!
                             if (i_72_ < i_60_ + -1) string = string.substring(0, -4 + string.length)
-                            Class39.aClass323_521!!.method2563(var_ha, string, i_65_, i_66_, (class42.anInt580), true)
+                            Class39.aClass323_521!!.method2563(var_renderer, string, i_65_, i_66_, (class42.anInt580), true)
                             i_66_ += Class39.aClass323_521!!.method2565()
                             i_72_++
                         }
@@ -313,7 +313,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("jp.I(" + i + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ',' + (if (class42 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("jp.I(" + i + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class42 != null) "{...}" else "null") + ')'))
             }
         }
     }

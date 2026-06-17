@@ -12,7 +12,7 @@ object Class9 {
     @JvmField
     var anInt170: Int = 0
     @JvmField
-    var aHa171: ha? = null
+    var aRenderer171: Renderer? = null
 
     @JvmStatic
     fun method215(i: Int): Boolean {
@@ -26,6 +26,6 @@ object Class9 {
     fun method216(bool: Boolean) {
         anIntArray168 = null
         if (bool != false) method216(true)
-        aHa171 = null
+        aRenderer171 = null
     }
 }

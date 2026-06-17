@@ -52,7 +52,7 @@ class Class64_Sub3 : Class64 {
     private var aByteArray5594: ByteArray? = null
     private var aBoolean5595 = false
     private var aClass48Array5596: Array<Class48?>? = null
-    private val aHa_Sub2_5598: ha_Sub2?
+    private val aHa_Sub2_5598: OpenGlRenderer?
     private var aShortArray5601: ShortArray? = null
     private var aClass123_5605: Class123? = null
     private var aShortArray5608: ShortArray? = null
@@ -2936,7 +2936,7 @@ class Class64_Sub3 : Class64 {
         return aShort5591.toInt()
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2?) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?) {
         aBoolean5527 = false
         anInt5529 = 0
         anInt5632 = 0
@@ -2955,7 +2955,7 @@ class Class64_Sub3 : Class64 {
         }
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2?, class124: Class124?, i: Int, i_695_: Int, i_696_: Int, i_697_: Int) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?, class124: Class124?, i: Int, i_695_: Int, i_696_: Int, i_697_: Int) {
         aBoolean5527 = false
         anInt5529 = 0
         anInt5632 = 0

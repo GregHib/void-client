@@ -6,7 +6,7 @@ import jaclib.memory.Buffer
 class Class119_Sub1 : Class119, Interface2 {
     private var anInt4697 = 0
 
-    internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: ByteArray?, i_0_: Int) : super(var_ha_Sub2, `is`, i_0_) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, `is`: ByteArray?, i_0_: Int) : super(var_ha_Sub2, `is`, i_0_) {
         try {
             anInt4697 = i
         } catch (runtimeexception: RuntimeException) {
@@ -14,7 +14,7 @@ class Class119_Sub1 : Class119, Interface2 {
         }
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, buffer: Buffer?) : super(var_ha_Sub2, buffer) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, buffer: Buffer?) : super(var_ha_Sub2, buffer) {
         try {
             anInt4697 = i
         } catch (runtimeexception: RuntimeException) {
@@ -65,7 +65,7 @@ class Class119_Sub1 : Class119, Interface2 {
         var anInt4705: Int = 0
 
         @JvmStatic
-        fun method1077(var_ha: ha?, i: Byte) {
+        fun method1077(var_renderer: Renderer?, i: Byte) {
             anInt4700++
             if ((Class73.anInt4776 >= 2 || r.aBoolean9722) && Class289.aClass46_3701 == null) {
                 if (i >= -71) Companion.method1077(null, (-41).toByte())
@@ -99,7 +99,7 @@ class Class119_Sub1 : Class119, Interface2 {
                 } else string = Class316.method2367(125.toByte(), Class316.aClass348_Sub42_Sub12_3963!!)
                 if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508!!.method2063(Class348_Sub33.anInt6967, 544))
                 if (Class348_Sub36.aClass46_6990 != null) {
-                    var class324 = Class348_Sub36.aClass46_6990!!.method426(var_ha, 68.toByte())
+                    var class324 = Class348_Sub36.aClass46_6990!!.method426(var_renderer, 68.toByte())
                     if (class324 == null) class324 = Class262.aClass324_3326!!
                     class324.method2585(
                         Class175.anIntArray2330,

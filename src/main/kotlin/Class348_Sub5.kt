@@ -3,7 +3,7 @@ import java.awt.Canvas
 import java.io.IOException
 import java.net.Socket
 
-abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : Class348() {
+abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRenderer) : Class348() {
     @JvmField
     var aBoolean6621: Boolean = false
     abstract fun method2750(class258_sub3: Class258_Sub3?, class258_sub3_0_: Class258_Sub3?, i: Int, i_1_: Byte)
@@ -77,11 +77,11 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
         }
 
         @JvmStatic
-        fun method2753(bool: Boolean, i: Int, i_4_: Int, canvas: Canvas?, var_renderConfig: RenderConfig?): ha {
+        fun method2753(bool: Boolean, i: Int, i_4_: Int, canvas: Canvas?, var_renderConfig: RenderConfig?): Renderer {
             try {
                 anInt6628++
                 if (bool != true) aByteArray6624 = null
-                return ha_Sub1(canvas!!, var_renderConfig, i_4_, i)
+                return SoftwareRenderer(canvas!!, var_renderConfig, i_4_, i)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("fba.M(" + bool + ',' + i + ',' + i_4_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
             }

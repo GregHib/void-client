@@ -107,7 +107,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
         @JvmStatic
         fun method3064(i: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, bool_15_: Boolean, class46s: Array<Class46?>?, i_16_: Int, i_17_: Int) {
             try {
-                Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
+                Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                 if (bool_15_ == false) {
                     anInt9145++
                     var i_18_ = 0
@@ -186,18 +186,18 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             Class5_Sub2.method198(class46, false, i_25_, i_24_)
                                             if (!Class59_Sub1.aBoolean5300) {
                                                 method132(124, (Class312.anInt3932 == (class46.anInt765)), class46.anInt709, i_24_, class46.anInt789, i_25_)
-                                                Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
+                                                Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                             }
                                             Class152.aBooleanArray2076!![i_23_] = true
                                             i_18_++
                                             continue
                                         }
                                         if (class46.anInt765 == Class290.anInt3717) {
-                                            if (class46.method425((Class348_Sub8.aHa6654!!), 8.toByte()) != null) {
+                                            if (class46.method425((Class348_Sub8.aRenderer6654!!), 8.toByte()) != null) {
                                                 method3570(false)
-                                                Class107.method1007(class46, (Class348_Sub8.aHa6654), i_24_, i_25_, 22960)
+                                                Class107.method1007(class46, (Class348_Sub8.aRenderer6654), i_24_, i_25_, 22960)
                                                 Class268.aBooleanArray3438!![i_23_] = true
-                                                Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
+                                                Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (Class59_Sub1.aBoolean5300) {
                                                     if (bool) Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                     else Class54.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
@@ -207,10 +207,10 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             continue
                                         }
                                         if (class46.anInt765 == Class239_Sub11.anInt5951) {
-                                            if (class46.method425((Class348_Sub8.aHa6654!!), 26.toByte()) != null) {
+                                            if (class46.method425((Class348_Sub8.aRenderer6654!!), 26.toByte()) != null) {
                                                 Class18.method271(i_25_, class46, (-98).toByte(), i_24_)
                                                 Class268.aBooleanArray3438!![i_23_] = true
-                                                Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
+                                                Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (Class59_Sub1.aBoolean5300) {
                                                     if (!bool) Class54.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
                                                     else Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
@@ -220,16 +220,16 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             continue
                                         }
                                         if (class46.anInt765 == Class348_Sub45.anInt7102) {
-                                            Class318_Sub1_Sub3_Sub4.method2464((-7).toByte(), i_24_, class46.anInt709, class46.anInt789, Class348_Sub8.aHa6654, i_25_, Class348_Sub40_Sub4.Companion.aRenderConfig9113)
+                                            Class318_Sub1_Sub3_Sub4.method2464((-7).toByte(), i_24_, class46.anInt709, class46.anInt789, Class348_Sub8.aRenderer6654, i_25_, Class348_Sub40_Sub4.Companion.aRenderConfig9113)
                                             Class152.aBooleanArray2076!![i_23_] = true
-                                            Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
+                                            Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                             i_18_++
                                             continue
                                         }
                                         if (Class218.anInt2861 == class46.anInt765) {
-                                            Class361.method3498(class46.anInt789, Class348_Sub8.aHa6654, i_24_, class46.anInt709, true, i_25_)
+                                            Class361.method3498(class46.anInt789, Class348_Sub8.aRenderer6654, i_24_, class46.anInt709, true, i_25_)
                                             Class152.aBooleanArray2076!![i_23_] = true
-                                            Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
+                                            Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                             i_18_++
                                             continue
                                         }
@@ -262,7 +262,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     i_38_ += 15
                                                     Applet_Sub1.aClass324_20!!.method2569(("In:" + Class264.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 15
-                                                    val i_43_ = (Class348_Sub8.aHa6654!!.E() / 1024)
+                                                    val i_43_ = (Class348_Sub8.aRenderer6654!!.E() / 1024)
                                                     Applet_Sub1.aClass324_20!!.method2569("Offheap:" + i_43_ + "k", i_38_, (if (i_43_ <= 65536) -256 else -65536), i_37_, -125, -1)
                                                     i_38_ += 15
                                                     var i_44_ = 0
@@ -296,7 +296,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 if (Class313.anInt3936 > 0) Class240.aClass324_4684!!.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1)
                                                 i_38_ += 12
                                                 if (Class188.aBoolean2514) {
-                                                    Class240.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aHa6654!!.I() + " Models: " + Class348_Sub8.aHa6654!!.M()), i_38_, -256, i_37_, -127, -1)
+                                                    Class240.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     Class240.aClass324_4684!!.method2569(("Ls: " + Class177.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + Class227.anInt2968 + " Pl: " + za_Sub1.anInt9776), i_38_, -256, i_37_, -122, -1)
                                                     Class110_Sub1.method1042((-123).toByte())
@@ -309,27 +309,27 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         }
                                     }
                                     if (class46.anInt774 == 0) {
-                                        if ((class46.anInt765 == Class372.anInt4532) && Class348_Sub8.aHa6654!!.method3666()) Class348_Sub8.aHa6654!!.method3658(i_24_, i_25_, class46.anInt709, class46.anInt789)
+                                        if ((class46.anInt765 == Class372.anInt4532) && Class348_Sub8.aRenderer6654!!.method3666()) Class348_Sub8.aRenderer6654!!.method3658(i_24_, i_25_, class46.anInt709, class46.anInt789)
                                         method3064(i_31_, -class46.anInt755 + i_25_, bool, i_24_ - class46.anInt747, i_32_, i_23_, i_34_, false, class46s, class46.anInt830, i_33_)
                                         if (class46.aClass46Array798 != null) method3064(i_31_, -(class46.anInt755) + i_25_, bool, i_24_ - (class46.anInt747), i_32_, i_23_, i_34_, false, (class46.aClass46Array798), (class46.anInt830), i_33_)
                                         val class348_sub41 = ((Class125.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as Class348_Sub41?)
                                         if (class348_sub41 != null) Class159.method1252(i_25_, (class348_sub41.anInt7050), i_32_, i_23_, i_24_, i_34_, i_33_, 60.toByte(), i_31_)
-                                        if ((class46.anInt765 == Class372.anInt4532) && Class348_Sub8.aHa6654!!.method3666()) Class348_Sub8.aHa6654!!.method3698()
-                                        Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
+                                        if ((class46.anInt765 == Class372.anInt4532) && Class348_Sub8.aRenderer6654!!.method3666()) Class348_Sub8.aRenderer6654!!.method3698()
+                                        Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                     }
-                                    if (Class175.aBooleanArray2326!![i_23_] || ha_Sub3.anInt8045 > 1) {
+                                    if (Class175.aBooleanArray2326!![i_23_] || NativeRenderer.anInt8045 > 1) {
                                         if (class46.anInt774 == 3) {
                                             if (i_28_ == 0) {
-                                                if (class46.aBoolean810) Class348_Sub8.aHa6654!!.aa(i_24_, i_25_, (class46.anInt709), (class46.anInt789), (class46.anInt749), 0)
-                                                else Class348_Sub8.aHa6654!!.method3628(i_24_, i_25_, (class46.anInt709), (class46.anInt789), (class46.anInt749), 0)
-                                            } else if (!class46.aBoolean810) Class348_Sub8.aHa6654!!.method3628(i_24_, i_25_, class46.anInt709, class46.anInt789, (0xffffff and class46.anInt749 or (-(i_28_ and 0xff) + 255 shl 24)), 1)
-                                            else Class348_Sub8.aHa6654!!.aa(i_24_, i_25_, class46.anInt709, class46.anInt789, (0xffffff and class46.anInt749 or (-(0xff and i_28_) + 255 shl 24)), 1)
+                                                if (class46.aBoolean810) Class348_Sub8.aRenderer6654!!.aa(i_24_, i_25_, (class46.anInt709), (class46.anInt789), (class46.anInt749), 0)
+                                                else Class348_Sub8.aRenderer6654!!.method3628(i_24_, i_25_, (class46.anInt709), (class46.anInt789), (class46.anInt749), 0)
+                                            } else if (!class46.aBoolean810) Class348_Sub8.aRenderer6654!!.method3628(i_24_, i_25_, class46.anInt709, class46.anInt789, (0xffffff and class46.anInt749 or (-(i_28_ and 0xff) + 255 shl 24)), 1)
+                                            else Class348_Sub8.aRenderer6654!!.aa(i_24_, i_25_, class46.anInt709, class46.anInt789, (0xffffff and class46.anInt749 or (-(0xff and i_28_) + 255 shl 24)), 1)
                                             if (Class59_Sub1.aBoolean5300) {
                                                 if (bool) Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                 else Class54.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
                                             }
                                         } else if (class46.anInt774 == 4) {
-                                            val class324 = class46.method426((Class348_Sub8.aHa6654), 68.toByte())
+                                            val class324 = class46.method426((Class348_Sub8.aRenderer6654), 68.toByte())
                                             if (class324 == null) {
                                                 if (Class348_Sub42_Sub13.aBoolean9616) Class251.method1916(-9343, class46)
                                             } else {
@@ -349,9 +349,9 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     string = (Class274.aClass274_3514!!.method2063((Class348_Sub33.anInt6967), 544))
                                                     i_50_ = (class46.anInt749)
                                                 }
-                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aHa6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (class46.anInt789) + i_25_)
+                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (class46.anInt789) + i_25_)
                                                 class324.method2568(null, class46.anInt789, (-77).toByte(), null, 0, Class113.aClass105Array1744, (-(i_28_ and 0xff) + 255 shl 24) or i_50_, i_25_, class46.anInt709, class46.anInt700, string, 0, i_24_, class46.anInt762, (if (!(class46.aBoolean769)) -1 else (-(0xff and i_28_) + 255 shl 24)), class46.anInt773, class46.anInt673)
-                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
+                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (string!!.trim { it <= ' ' }.length > 0) {
                                                     if (Class318_Sub1_Sub3_Sub2.aBoolean10046) {
                                                         if (Class59_Sub1.aBoolean5300) {
@@ -359,7 +359,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                             else Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                         }
                                                     } else {
-                                                        val class143 = (method1151(-25411, (Class348_Sub8.aHa6654), (class46.anInt702)))
+                                                        val class143 = (method1151(-25411, (Class348_Sub8.aRenderer6654), (class46.anInt702)))
                                                         val i_51_ = (class143!!.method1187(string, bool_15_, class46.anInt709, (Class113.aClass105Array1744)))
                                                         val i_52_ = (class143.method1185((Class113.aClass105Array1744), 0, class46.anInt673, class46.anInt709, string))
                                                         if (Class59_Sub1.aBoolean5300) {
@@ -370,14 +370,14 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 }
                                             }
                                         } else if (class46.anInt774 == 5) {
-                                            if (class46.anInt705 >= 0) class46.method444(bool_15_, Class123.aClass25_1813, Class30.aClass84_413)!!.method2293(0, Class348_Sub8.aHa6654!!, (-35).toByte(), i_24_, class46.anInt709, i_25_, (class46.anInt835 shl 3), (class46.anInt759 shl 3), 0, class46.anInt789)
+                                            if (class46.anInt705 >= 0) class46.method444(bool_15_, Class123.aClass25_1813, Class30.aClass84_413)!!.method2293(0, Class348_Sub8.aRenderer6654!!, (-35).toByte(), i_24_, class46.anInt709, i_25_, (class46.anInt835 shl 3), (class46.anInt759 shl 3), 0, class46.anInt789)
                                             else {
                                                 val class105: Class105?
                                                 if (class46.anInt812 != -1) {
                                                     val class154 = (if (class46.aBoolean720) (Class132.aPlayer_1907!!.aClass154_10536) else null)
-                                                    class105 = (Exception_Sub1.aClass255_112!!.method1941((class46.anInt672), (-74).toByte(), (class46.anInt812), (class46.anInt781), (0xffffff.inv() or (class46.anInt809)), (class46.anInt678), Class348_Sub8.aHa6654, class154))
-                                                } else if ((class46.anInt806) == -1) class105 = (class46.method443(Class348_Sub8.aHa6654!!, (-57).toByte()))
-                                                else class105 = (method2263(Class348_Sub8.aHa6654, 0, (class46.anInt806)))
+                                                    class105 = (Exception_Sub1.aClass255_112!!.method1941((class46.anInt672), (-74).toByte(), (class46.anInt812), (class46.anInt781), (0xffffff.inv() or (class46.anInt809)), (class46.anInt678), Class348_Sub8.aRenderer6654, class154))
+                                                } else if ((class46.anInt806) == -1) class105 = (class46.method443(Class348_Sub8.aRenderer6654!!, (-57).toByte()))
+                                                else class105 = (method2263(Class348_Sub8.aRenderer6654, 0, (class46.anInt806)))
                                                 if (class105 == null) {
                                                     if (Class348_Sub42_Sub13.aBoolean9616) Class251.method1916(-9343, class46)
                                                 } else {
@@ -385,7 +385,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     val i_54_ = class105.method980()
                                                     val i_55_ = ((-(i_28_ and 0xff) + 255 shl 24) or (if ((class46.anInt749) != 0) (class46.anInt749 and 0xffffff) else 16777215))
                                                     if (class46.aBoolean697) {
-                                                        Class348_Sub8.aHa6654!!.T(i_24_, i_25_, i_24_ - -(class46.anInt709), (class46.anInt789) + i_25_)
+                                                        Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, i_24_ - -(class46.anInt709), (class46.anInt789) + i_25_)
                                                         if ((class46.anInt828) != 0) {
                                                             val i_56_ = ((i_53_ - 1 + (class46.anInt709)) / i_53_)
                                                             val i_57_ = ((i_54_ - 1 + (class46.anInt789)) / i_54_)
@@ -397,7 +397,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                             }
                                                         } else if ((class46.anInt749) != 0 || (i_28_ != 0)) class105.method965(i_24_, i_25_, (class46.anInt709), (class46.anInt789), 0, i_55_, 1)
                                                         else class105.method972(i_24_, i_25_, (class46.anInt709), (class46.anInt789))
-                                                        Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
+                                                        Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                     } else if ((class46.anInt749) == 0 && i_28_ == 0) {
                                                         if ((class46.anInt828) != 0) class105.method981((i_24_.toFloat() + ((class46.anInt709).toFloat() / 2.0f)), (((class46.anInt789).toFloat() / 2.0f) + i_25_.toFloat()), (4096 * (class46.anInt709) / i_53_), (class46.anInt828))
                                                         else if ((i_53_ == (class46.anInt709)) && ((class46.anInt789) == i_54_)) class105.method974(i_24_, i_25_)
@@ -421,7 +421,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     class213 = (class213.method1560((class46.anInt781), 97.toByte()))
                                                     val class17 = (if ((class46.anInt699) == -1) null else (Class10.aClass87_191!!.method835((class46.anInt699), 7)))
                                                     val class154 = (if (!(class46.aBoolean720)) null else (Class132.aPlayer_1907!!.aClass154_10536))
-                                                    class64 = (class213.method1559(class154, class17, Class348_Sub8.aHa6654, 2048, (class46.anInt841), 1, (class46.anInt795), 88.toByte(), (class46.anInt730)))
+                                                    class64 = (class213.method1559(class154, class17, Class348_Sub8.aRenderer6654, 2048, (class46.anInt841), 1, (class46.anInt795), 88.toByte(), (class46.anInt730)))
                                                     if (class64 != null) i_60_ = (-class64.fa() shr 1)
                                                     else Class251.method1916(-9343, class46)
                                                 }
@@ -431,21 +431,21 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     val player = (Class294.aPlayerArray5058!![i_61_])
                                                     val class17 = (if ((class46.anInt699) == -1) null else (Class10.aClass87_191!!.method835((class46.anInt699), 7)))
                                                     if ((player != null) && ((i_61_ == (Class348_Sub42_Sub11.anInt9591)) || ((class46.anInt779) == (Class318_Sub1_Sub3_Sub1.method2418((player.aString10544!!), (-50).toByte()))))) class64 =
-                                                        (player.aClass154_10536!!.method1226((Class318_Sub1_Sub3_Sub3.aClass170_10209), null, null, true, (Exception_Sub1.aClass255_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.Companion.aClass150_9342), class46.anInt841, (Class348_Sub8.aHa6654), (Class189.aClass278_2529), (Class10.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aClass261_5558)))
+                                                        (player.aClass154_10536!!.method1226((Class318_Sub1_Sub3_Sub3.aClass170_10209), null, null, true, (Exception_Sub1.aClass255_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.Companion.aClass150_9342), class46.anInt841, (Class348_Sub8.aRenderer6654), (Class189.aClass278_2529), (Class10.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aClass261_5558)))
                                                 }
                                             } else if ((class46.anInt770) == 8 || (class46.anInt770) == 9) {
                                                 val class348_sub13 = (Class258_Sub4.method1974((-123).toByte(), (class46.anInt753), false))
                                                 val class17 = (if ((class46.anInt699) == -1) null else (Class10.aClass87_191!!.method835((class46.anInt699), 7)))
                                                 if (class348_sub13 != null) {
                                                     val class154 = (if (class46.aBoolean720) (Class132.aPlayer_1907!!.aClass154_10536) else null)
-                                                    class64 = (class348_sub13.method2803(class17, class154, (class46.anInt779), (class46.anInt795), (class46.anInt841), (class46.anInt730), 2048, Class348_Sub8.aHa6654, (class46.anInt770) == 9, -1))
+                                                    class64 = (class348_sub13.method2803(class17, class154, (class46.anInt779), (class46.anInt795), (class46.anInt841), (class46.anInt730), 2048, Class348_Sub8.aRenderer6654, (class46.anInt770) == 9, -1))
                                                 }
                                             } else if (class46.anInt699 == -1) {
-                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), Class10.aClass87_191, 2048, Class348_Sub8.aHa6654, -1, 0, (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), null, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), -1))
+                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), Class10.aClass87_191, 2048, Class348_Sub8.aRenderer6654, -1, 0, (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), null, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), -1))
                                                 if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46)
                                             } else {
                                                 val class17 = (Class10.aClass87_191!!.method835((class46.anInt699), 7))
-                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), Class10.aClass87_191, 2048, Class348_Sub8.aHa6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), class17, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), (class46.anInt730)))
+                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), Class10.aClass87_191, 2048, Class348_Sub8.aRenderer6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), class17, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), (class46.anInt730)))
                                                 if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46)
                                             }
                                             if (class64 != null) {
@@ -462,10 +462,10 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     i_65_ += (i_63_ * (class46.anInt799) shr 9)
                                                 }
                                                 Class157.aClass101_2123!!.method910()
-                                                Class348_Sub8.aHa6654!!.method3638(Class157.aClass101_2123)
-                                                Class348_Sub8.aHa6654!!.DA(i_64_, i_65_, i_62_, i_63_)
-                                                Class348_Sub8.aHa6654!!.ya()
-                                                if (class46.aBoolean754) Class348_Sub8.aHa6654!!.C(false)
+                                                Class348_Sub8.aRenderer6654!!.method3638(Class157.aClass101_2123)
+                                                Class348_Sub8.aRenderer6654!!.DA(i_64_, i_65_, i_62_, i_63_)
+                                                Class348_Sub8.aRenderer6654!!.ya()
+                                                if (class46.aBoolean754) Class348_Sub8.aRenderer6654!!.C(false)
                                                 if (class46.aBoolean784) {
                                                     Class50_Sub1.aClass101_5209!!.method899(class46.anInt757)
                                                     Class50_Sub1.aClass101_5209!!.method896(class46.anInt675)
@@ -479,20 +479,20 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     Class50_Sub1.aClass101_5209!!.method891(((class46.anInt808) shl 2), (((class46.anInt786) shl 2) + (i_66_ + i_60_)), ((class46.anInt786) shl 2) + i_67_)
                                                     Class50_Sub1.aClass101_5209!!.method900((class46.anInt757) shl 3)
                                                 }
-                                                class46.method437(-20154, class64, Class348_Sub8.aHa6654, Class367_Sub11.anInt7396, Class50_Sub1.aClass101_5209)
-                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aHa6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (i_25_ + (class46.anInt789)))
+                                                class46.method437(-20154, class64, Class348_Sub8.aRenderer6654, Class367_Sub11.anInt7396, Class50_Sub1.aClass101_5209)
+                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (i_25_ + (class46.anInt789)))
                                                 if (!class46.aBoolean784) {
                                                     if (!class46.aBoolean689) {
                                                         class64.method615((Class50_Sub1.aClass101_5209), null, 1)
-                                                        if ((class46.aClass318_Sub10_740) != null) Class348_Sub8.aHa6654!!.method3684(class46.aClass318_Sub10_740!!.method2539())
+                                                        if ((class46.aClass318_Sub10_740) != null) Class348_Sub8.aRenderer6654!!.method3684(class46.aClass318_Sub10_740!!.method2539())
                                                     } else class64.method608((Class50_Sub1.aClass101_5209), null, ((class46.anInt716) shl 2), 1)
                                                 } else if (class46.aBoolean689) class64.method608((Class50_Sub1.aClass101_5209), null, (class46.anInt716), 1)
                                                 else {
                                                     class64.method615((Class50_Sub1.aClass101_5209), null, 1)
-                                                    if ((class46.aClass318_Sub10_740) != null) Class348_Sub8.aHa6654!!.method3684(class46.aClass318_Sub10_740!!.method2539())
+                                                    if ((class46.aClass318_Sub10_740) != null) Class348_Sub8.aRenderer6654!!.method3684(class46.aClass318_Sub10_740!!.method2539())
                                                 }
-                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
-                                                if (class46.aBoolean754) Class348_Sub8.aHa6654!!.C(true)
+                                                if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
+                                                if (class46.aBoolean754) Class348_Sub8.aRenderer6654!!.C(true)
                                             }
                                             if (Class59_Sub1.aBoolean5300) {
                                                 if (bool) Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
@@ -514,8 +514,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 i_68_ = i_25_
                                                 i_69_ = i_24_
                                             }
-                                            if (class46.anInt690 != 1) Class348_Sub8.aHa6654!!.method3688(i_69_, i_68_, i_70_, i_71_, class46.anInt749, class46.anInt690, 0)
-                                            else Class348_Sub8.aHa6654!!.method3709(i_69_, i_68_, i_70_, i_71_, class46.anInt749, 0)
+                                            if (class46.anInt690 != 1) Class348_Sub8.aRenderer6654!!.method3688(i_69_, i_68_, i_70_, i_71_, class46.anInt749, class46.anInt690, 0)
+                                            else Class348_Sub8.aRenderer6654!!.method3709(i_69_, i_68_, i_70_, i_71_, class46.anInt749, 0)
                                             if (Class59_Sub1.aBoolean5300) {
                                                 if (bool) Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                 else Class54.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)

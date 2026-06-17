@@ -16,7 +16,7 @@ class Class258_Sub2 : Class258 {
         anInt8535 = i_1_
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_4_: Int) : super(var_ha_Sub2, 34067, i, i_4_ * (i_4_ * 6), false) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_4_: Int) : super(var_ha_Sub2, 34067, i, i_4_ * (i_4_ * 6), false) {
         this.anInt8538 = i_4_
         this.aHa_Sub2_4851.method3771((-81).toByte(), this)
         for (i_5_ in 0..5) glTexImage2Dub(i_5_ + 34069, 0, this.anInt4858, i_4_, i_4_, 0, Class348_Sub9.method2779(true, (this.anInt4858)), 5121, null, 0)
@@ -31,7 +31,7 @@ class Class258_Sub2 : Class258 {
         anInt8536 = -1
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_6_: Int, bool: Boolean, `is`: Array<ByteArray?>?, i_7_: Int) : super(var_ha_Sub2, 34067, i, i_6_ * (i_6_ * 6), bool) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_6_: Int, bool: Boolean, `is`: Array<ByteArray?>?, i_7_: Int) : super(var_ha_Sub2, 34067, i, i_6_ * (i_6_ * 6), bool) {
         try {
             this.anInt8538 = i_6_
             this.aHa_Sub2_4851.method3771((-127).toByte(), this)
@@ -42,7 +42,7 @@ class Class258_Sub2 : Class258 {
         }
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_9_: Int, bool: Boolean, `is`: Array<IntArray?>?) : super(var_ha_Sub2, 34067, i, 6 * i_9_ * i_9_, bool) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_9_: Int, bool: Boolean, `is`: Array<IntArray?>?) : super(var_ha_Sub2, 34067, i, 6 * i_9_ * i_9_, bool) {
         try {
             this.anInt8538 = i_9_
             this.aHa_Sub2_4851.method3771((-77).toByte(), this)

@@ -20,7 +20,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
         var anInt6399: Int = 0
         var aClass147Array6400: Array<Class147?>? = arrayOfNulls<Class147>(100)
 
-        fun method2494(i: Int, i_0_: Int, i_1_: Int, var_ha: ha?, class348_sub42_sub12: Class348_Sub42_Sub12?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Byte, i_6_: Int, i_7_: Int, i_8_: Int) {
+        fun method2494(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, class348_sub42_sub12: Class348_Sub42_Sub12?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Byte, i_6_: Int, i_7_: Int, i_8_: Int) {
             var i_4_ = i_4_
             do {
                 try {
@@ -54,7 +54,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                     if (!class348_sub42_sub12.aBoolean9597) break
                     Class239_Sub24.aClass105_6097!!.method974(Class369.aClass143_4962!!.method1183(true, string) + (i_7_ - -5), -12 + i_1_)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
                 }
                 break
             } while (false)
@@ -106,7 +106,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
         }
 
         @JvmStatic
-        fun method2498(class338: Class338?, var_ha: ha?, i: Byte, i_18_: Int) {
+        fun method2498(class338: Class338?, var_renderer: Renderer?, i: Byte, i_18_: Int) {
             try {
                 anInt6395++
                 if (i > -101) anIntArray6393 = null
@@ -178,7 +178,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                     }
                 } else if (class338.aByte4192.toInt() == 4) {
                     val f = (-Class232.anInt3006 + class338.anIntArray4191[0]).toFloat()
-                    if (!(f <= ha_Sub2.anInt7714.toFloat())) {
+                    if (!(f <= OpenGlRenderer.anInt7714.toFloat())) {
                         var i_29_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + -Class285_Sub2.anInt8502 + class338.aShort4193)
                         if (i_29_ >= 0) {
                             if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084) < i_29_) return
@@ -208,7 +208,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vo.A(" + (if (class338 != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + i_18_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("vo.A(" + (if (class338 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_18_ + ')'))
             }
         }
 

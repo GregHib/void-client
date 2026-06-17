@@ -49,7 +49,7 @@ class Class302 {
                         if (Class348_Sub40_Sub21.anInt9282 == 4) method814(125.toByte(), l)
                     } else method119(-1, l)
                 }
-                Class348_Sub47.method3324(Class348_Sub8.aHa6654, 83.toByte(), Class367_Sub11.anInt7396.toLong())
+                Class348_Sub47.method3324(Class348_Sub8.aRenderer6654, 83.toByte(), Class367_Sub11.anInt7396.toLong())
                 if (r.anInt9721 != -1) method769(r.anInt9721, 118.toByte())
                 for (i_3_ in 0..<Class348_Sub38.anInt7008) {
                     if (Class152.aBooleanArray2076!![i_3_]) Class268.aBooleanArray3438!![i_3_] = true
@@ -63,8 +63,8 @@ class Class302 {
                     Class348_Sub38.anInt7008 = 0
                     method842(false)
                 }
-                Class348_Sub8.aHa6654!!.la()
-                Class348_Sub42_Sub20.method3281(46.toByte(), Class348_Sub8.aHa6654!!)
+                Class348_Sub8.aRenderer6654!!.la()
+                Class348_Sub42_Sub20.method3281(46.toByte(), Class348_Sub8.aRenderer6654!!)
                 var i_4_ = method1053(3112)
                 if (i_4_ == -1) i_4_ = Class362.anInt4458
                 if (i_4_ == -1) i_4_ = Class348_Sub42_Sub16_Sub1.anInt10447

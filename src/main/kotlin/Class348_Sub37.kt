@@ -14,7 +14,7 @@ class Class348_Sub37 : Class348() {
         var aBoolean6997: Boolean = false
         var anInt6999: Int = 0
 
-        fun method3030(i: Int, var_ha_Sub2: ha_Sub2) {
+        fun method3030(i: Int, var_ha_Sub2: OpenGlRenderer) {
             anInt6999++
             if (Class337.anObject4177 == null) {
                 val class59_sub1_sub2 = Class59_Sub1_Sub2()

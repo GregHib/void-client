@@ -84,7 +84,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         return
                     }
                     if (string == "renderer") {
-                        val class365 = Class348_Sub8.aHa6654!!.c()
+                        val class365 = Class348_Sub8.aRenderer6654!!.c()
                         method94("Vendor: " + class365.anInt4476, 89)
                         method94("Name: " + (class365.aString4470), 71)
                         method94(("Version: " + (class365.anInt4475)), -110)
@@ -313,8 +313,8 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         if (string.startsWith("rect_debug")) {
                             if (string.length < 10) method94("Invalid rect_debug value", -94)
                             else {
-                                ha_Sub3.anInt8045 = Class348_Sub41.method3156(true, string.substring(10).trim { it <= ' ' })
-                                method94(("rect_debug=" + ha_Sub3.anInt8045), -124)
+                                NativeRenderer.anInt8045 = Class348_Sub41.method3156(true, string.substring(10).trim { it <= ' ' })
+                                method94(("rect_debug=" + NativeRenderer.anInt8045), -124)
                                 return
                             }
                             return
@@ -330,7 +330,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string.startsWith("bloom")) {
-                            val bool_7_ = Class348_Sub8.aHa6654!!.method3666()
+                            val bool_7_ = Class348_Sub8.aRenderer6654!!.method3666()
                             if (Class348_Sub40_Sub33.method3137(!bool_7_, (-24).toByte())) {
                                 if (bool_7_) {
                                     method94("Bloom disabled", i + -49)
@@ -380,7 +380,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string.startsWith("mc")) {
-                            if (Class348_Sub8.aHa6654!!.method3708()) {
+                            if (Class348_Sub8.aRenderer6654!!.method3708()) {
                                 var i_8_ = string.substring(3).toInt()
                                 if (i_8_ >= 1) {
                                     if (i_8_ > 4) i_8_ = 4
@@ -421,7 +421,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string == "renderprofile" || string == "rp") {
                             Class188.aBoolean2514 = !Class188.aBoolean2514
-                            Class348_Sub8.aHa6654!!.method3647(Class188.aBoolean2514)
+                            Class348_Sub8.aRenderer6654!!.method3647(Class188.aBoolean2514)
                             Class110_Sub1.method1042(23.toByte())
                             method94(("showprofiling=" + Class188.aBoolean2514), 106)
                             return
@@ -554,7 +554,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.startsWith("texsize")) {
                             val i_18_ = string.substring(8).toInt()
-                            Class348_Sub8.aHa6654!!.method3696(i_18_)
+                            Class348_Sub8.aRenderer6654!!.method3696(i_18_)
                             return
                         }
                         if (string == "soundstreamcount") {

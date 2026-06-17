@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import kotlin.math.abs
 import kotlin.math.min
 
-class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?) : Class286(var_ha_Sub2) {
+class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : Class286(var_ha_Sub2) {
     private var aBoolean6266 = false
     private val aClass83_6268: Class83?
     private var aBoolean6272 = false

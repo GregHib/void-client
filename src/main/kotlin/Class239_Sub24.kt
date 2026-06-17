@@ -100,7 +100,7 @@ class Class239_Sub24 : Class239 {
         }
 
         @JvmStatic
-        fun method1823(var_ha: ha, i: Int, i_4_: Int, i_5_: Byte) {
+        fun method1823(var_renderer: Renderer, i: Int, i_4_: Int, i_5_: Byte) {
             anInt6088++
             val i_6_ = 56 % ((68 - i_5_) / 58)
             if (i >= 0 && i_4_ >= 0 && Class18.anInt282 != 0 && Class305.anInt3861 != 0) {
@@ -113,8 +113,8 @@ class Class239_Sub24 : Class239 {
                 val i_12_: Int
                 if (Class59_Sub1.aBoolean5300) {
                     Class107.method1010(false, false)
-                    class101 = var_ha.method3640()!!
-                    val `is` = var_ha.Y()
+                    class101 = var_renderer.method3640()!!
+                    val `is` = var_renderer.Y()
                     i_7_ = `is`[0]
                     i_8_ = `is`[1]
                     i_9_ = `is`[3]
@@ -122,15 +122,15 @@ class Class239_Sub24 : Class239 {
                     i_11_ = i + Class121.method1082(-81, false)
                     i_12_ = Class348_Sub23.method2960(false, -52) + i_4_
                 } else {
-                    var_ha.DA(Class336.anInt4171, Class205.anInt2688, Class18.anInt282, Class305.anInt3861)
+                    var_renderer.DA(Class336.anInt4171, Class205.anInt2688, Class18.anInt282, Class305.anInt3861)
                     i_8_ = Class205.anInt2688
                     i_9_ = Class305.anInt3861
                     i_7_ = Class336.anInt4171
                     i_10_ = Class18.anInt282
-                    var_ha.KA(Class120.anInt4911, Class238_Sub1.anInt5832, Class18.anInt282, Class305.anInt3861)
-                    class101 = var_ha.method3654()
+                    var_renderer.KA(Class120.anInt4911, Class238_Sub1.anInt5832, Class18.anInt282, Class305.anInt3861)
+                    class101 = var_renderer.method3654()
                     class101.method903(Class14_Sub4.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, Class348_Sub51.anInt7244)
-                    var_ha.method3638(class101)
+                    var_renderer.method3638(class101)
                     i_12_ = i_4_
                     i_11_ = i
                 }
@@ -140,8 +140,8 @@ class Class239_Sub24 : Class239 {
                 if (Class348_Sub1_Sub1.aSArray8801 != null && (!r.aBoolean9722 || (0x40 and Class38.anInt500) != 0)) {
                     var i_13_ = -1
                     var i_14_ = -1
-                    val i_15_ = var_ha.i()
-                    val i_16_ = var_ha.XA()
+                    val i_15_ = var_renderer.i()
+                    val i_16_ = var_renderer.XA()
                     val i_17_: Int
                     val i_18_: Int
                     val i_19_: Int
@@ -199,7 +199,7 @@ class Class239_Sub24 : Class239 {
                     val class243 = class76!!.aClass243_1282
                     var class318_sub4 = class243.method1872(8) as Class318_Sub4?
                     while (class318_sub4 != null) {
-                        if ((RuntimeException_Sub1.aBoolean4599 || ((Class132.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) && class318_sub4.method2504(i_29_, i_28_, var_ha, -115)) {
+                        if ((RuntimeException_Sub1.aBoolean4599 || ((Class132.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) && class318_sub4.method2504(i_29_, i_28_, var_renderer, -115)) {
                             val bool_30_ = false
                             val bool_31_ = false
                             val i_32_: Int

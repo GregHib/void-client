@@ -136,7 +136,7 @@ public abstract class Class101 {
         }
 
         @JvmStatic
-        fun method904(i: Int, var_ha_Sub2: ha_Sub2?, i_24_: Int, i_25_: Int, i_26_: Int): Class258_Sub3_Sub1 {
+        fun method904(i: Int, var_ha_Sub2: OpenGlRenderer?, i_24_: Int, i_25_: Int, i_26_: Int): Class258_Sub3_Sub1 {
             try {
                 anInt1594++
                 if (i <= 42) method906(123)

@@ -32,7 +32,7 @@ class Class348_Sub13 : Class348() {
         }
     }
 
-    fun method2803(class17: Class17?, class154: Class154?, i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_ha: ha?, bool: Boolean, i_14_: Int): Class64? {
+    fun method2803(class17: Class17?, class154: Class154?, i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_renderer: Renderer?, bool: Boolean, i_14_: Int): Class64? {
         try {
             anInt6756++
             var class64: Class64? = null
@@ -91,8 +91,8 @@ class Class348_Sub13 : Class348() {
             }
             val l = method2802((if (class154 != null) class154.anIntArray2095 else null), i, bool, `is`, (-74).toByte())
             if (Class202.aClass60_2671 != null) class64 = Class202.aClass60_2671!!.method583(l, i_14_ xor 0x56) as Class64?
-            if (class64 == null || var_ha!!.method3667(class64.ua(), i_15_) != 0) {
-                if (class64 != null) i_15_ = var_ha!!.method3679(i_15_, class64.ua())
+            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_15_) != 0) {
+                if (class64 != null) i_15_ = var_renderer!!.method3679(i_15_, class64.ua())
                 var i_28_ = i_15_
                 var bool_29_ = false
                 var i_30_ = 0
@@ -123,7 +123,7 @@ class Class348_Sub13 : Class348() {
                 }
                 if (class154 != null) i_28_ = i_28_ or 0x4000
                 val class124 = Class124(class124s, class124s.size)
-                class64 = var_ha!!.method3625(class124, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850)
+                class64 = var_renderer!!.method3625(class124, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850)
                 if (class154 != null) {
                     for (i_39_ in 0..4) {
                         for (i_40_ in (Class367_Sub2.aShortArrayArrayArray7290)!!.indices) {
@@ -141,7 +141,7 @@ class Class348_Sub13 : Class348() {
             class64_41_!!.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, class17.aBoolean242, i_23_, i_11_ + i_14_)
             return class64_41_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.Companion.method2929(runtimeexception, ("ie.B(" + (if (class17 != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + bool + ',' + i_14_ + ')'))
+            throw Class348_Sub17.Companion.method2929(runtimeexception, ("ie.B(" + (if (class17 != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ',' + i_14_ + ')'))
         }
     }
 

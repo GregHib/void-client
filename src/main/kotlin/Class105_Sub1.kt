@@ -9,7 +9,7 @@ class Class105_Sub1 : Class105 {
     private var anInt8397 = 0
     private var anInt8400: Int
     private val anInterface18_Impl3_8403: Interface18_Impl3?
-    private val aHa_Sub3_8407: ha_Sub3?
+    private val aHa_Sub3_8407: NativeRenderer?
     private val aBoolean8408: Boolean
     private val aBoolean8410: Boolean
     private val anInt8411: Int
@@ -429,7 +429,7 @@ class Class105_Sub1 : Class105 {
         aHa_Sub3_8407.method3879(-8629)
     }
 
-    internal constructor(var_ha_Sub3: ha_Sub3, i: Int, i_118_: Int, bool: Boolean) {
+    internal constructor(var_ha_Sub3: NativeRenderer, i: Int, i_118_: Int, bool: Boolean) {
         aBoolean8418 = false
         anInt8400 = 0
         anInt8417 = i_118_
@@ -443,7 +443,7 @@ class Class105_Sub1 : Class105 {
         aBoolean8391 = !aBoolean8408 && anInterface18_Impl3_8403.method73(119)
     }
 
-    internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_119_: Int, `is`: IntArray?, i_120_: Int, i_121_: Int) {
+    internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_119_: Int, `is`: IntArray?, i_120_: Int, i_121_: Int) {
         aBoolean8418 = false
         anInt8400 = 0
         try {

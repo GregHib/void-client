@@ -13,7 +13,7 @@ import kotlin.math.sqrt
 class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
     private var anInt8562 = -1
     private var anInt8563 = -1
-    private val aHa_Sub2_8564: ha_Sub2?
+    private val aHa_Sub2_8564: OpenGlRenderer?
     var anInt8565: Int = 0
     private val anInt8567: Int
     private var anInt8569 = 0
@@ -51,7 +51,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
         anInt8563 = -1
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, i_11_: Int, i_12_: Int) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, i_11_: Int, i_12_: Int) {
         try {
             this.anInt8572 = i_11_
             aHa_Sub2_8564 = var_ha_Sub2
@@ -67,7 +67,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
         }
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, i_13_: Int, i_14_: Int, i_15_: Int) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, i_13_: Int, i_14_: Int, i_15_: Int) {
         try {
             this.anInt8572 = i_13_
             anInt8567 = i
@@ -91,10 +91,10 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
         @JvmField
         var aLong8573: Long = 0L
 
-        fun method3171(var_ha: ha?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, bool: Boolean, bool_5_: Boolean) {
-            Class9.aHa171 = var_ha
+        fun method3171(var_renderer: Renderer?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, bool: Boolean, bool_5_: Boolean) {
+            Class9.aRenderer171 = var_renderer
             Npc.anInt10503 = i
-            Class348_Sub40_Sub5.aBoolean9121 = (Npc.anInt10503 > 1 && Class9.aHa171!!.method3708())
+            Class348_Sub40_Sub5.aBoolean9121 = (Npc.anInt10503 > 1 && Class9.aRenderer171!!.method3708())
             Class362.anInt4459 = i_0_
             Class270.anInt3465 = 1 shl Class362.anInt4459
             Class348_Sub23_Sub2.anInt9037 = Class270.anInt3465 shr 1
@@ -150,10 +150,10 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
                 Class5_Sub2.aBooleanArrayArrayArray8361 = arrayOfNulls<Array<BooleanArray?>>(i_1_)
                 if (Class348_Sub40_Sub34.aClass293Array9432 != null) method1978()
                 Class348_Sub40_Sub34.aClass293Array9432 = arrayOfNulls<Class293>(Npc.anInt10503)
-                Class9.aHa171!!.method3631((Class348_Sub40_Sub34.aClass293Array9432)!!.size + 1)
-                Class9.aHa171!!.method3659(0)
+                Class9.aRenderer171!!.method3631((Class348_Sub40_Sub34.aClass293Array9432)!!.size + 1)
+                Class9.aRenderer171!!.method3659(0)
                 for (i_6_ in Class348_Sub40_Sub34.aClass293Array9432!!.indices) {
-                    Class348_Sub40_Sub34.aClass293Array9432!![i_6_] = Class293(i_6_ + 1, Class9.aHa171!!)
+                    Class348_Sub40_Sub34.aClass293Array9432!![i_6_] = Class293(i_6_ + 1, Class9.aRenderer171!!)
                     Thread(Class348_Sub40_Sub34.aClass293Array9432!![i_6_], "wr" + i_6_).start()
                 }
                 val i_7_: Int

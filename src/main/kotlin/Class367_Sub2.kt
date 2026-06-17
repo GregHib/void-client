@@ -150,7 +150,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                             }
                             Class285_Sub1.anInt8493++
                             Class126.anInt4985 = Class311.anInt3918
-                            val class348_sub47 = method2148(ha.aClass351_4571, (Class348_Sub23_Sub2.aClass77_9029), -123)
+                            val class348_sub47 = method2148(Renderer.aClass351_4571, (Class348_Sub23_Sub2.aClass77_9029), -123)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                             Class348_Sub42_Sub14.method3243(118, class348_sub47)

@@ -17,7 +17,7 @@ import jaggl.OpenGL.Companion.glVertex2i
 class Class105_Sub2 : Class105 {
     private var aBoolean8427: Boolean
     private var anInt8429 = 0
-    private val aHa_Sub2_8430: ha_Sub2?
+    private val aHa_Sub2_8430: OpenGlRenderer?
     private var aClass258_Sub3_Sub1_8431: Class258_Sub3_Sub1? = null
     private var anInt8432 = 0
     private val aClass258_Sub3_Sub1_8434: Class258_Sub3_Sub1
@@ -495,7 +495,7 @@ class Class105_Sub2 : Class105 {
         }
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, i_105_: Int, bool: Boolean) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, i_105_: Int, bool: Boolean) {
         aBoolean8427 = false
         anInt8446 = 0
         anInt8447 = 0
@@ -504,7 +504,7 @@ class Class105_Sub2 : Class105 {
         aClass258_Sub3_Sub1_8434 = method904(81, var_ha_Sub2, if (bool) 6408 else 6407, i, i_105_)
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_106_: Int, i_107_: Int, i_108_: Int) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_106_: Int, i_107_: Int, i_108_: Int) {
         aBoolean8427 = false
         anInt8446 = 0
         anInt8447 = 0
@@ -513,7 +513,7 @@ class Class105_Sub2 : Class105 {
         aClass258_Sub3_Sub1_8434 = method1401(var_ha_Sub2, i, 34037, i_107_, i_106_, i_108_)
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, i_109_: Int, `is`: IntArray?, i_110_: Int, i_111_: Int) {
+    internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, i_109_: Int, `is`: IntArray?, i_110_: Int, i_111_: Int) {
         aBoolean8427 = false
         anInt8446 = 0
         anInt8447 = 0

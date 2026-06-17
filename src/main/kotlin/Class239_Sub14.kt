@@ -67,7 +67,7 @@ class Class239_Sub14 : Class239 {
             anInt5985++
             Class364.method3517(73)
             Class262.aClass190ArrayArray3335 = null
-            Class60.aHa1098 = null
+            Class60.aRenderer1098 = null
             if (i <= 89) anInt5994 = -75
             Class239_Sub24.aClass299_6098 = null
             Class158.aClass299_4938 = null
@@ -95,21 +95,21 @@ class Class239_Sub14 : Class239 {
             }
             try {
                 val dimension = Class305.aCanvas3869!!.getSize()
-                Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3496!!.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654)
+                Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3496!!.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aRenderer6654)
                 val class124 = Class300.method2277(0, RasterSprite.aClass45_5207!!, Class348_Sub31.anInt6923, -1)
                 val l = Class62.method599(-88)
-                Class348_Sub8.aHa6654!!.la()
+                Class348_Sub8.aRenderer6654!!.la()
                 Class157.aClass101_2123!!.method894(0, Class348_Sub23_Sub2.anInt9037, 0)
-                Class348_Sub8.aHa6654!!.method3638(Class157.aClass101_2123)
-                Class348_Sub8.aHa6654!!.DA(dimension.width / 2, dimension.height / 2, 512, 512)
-                Class348_Sub8.aHa6654!!.xa(1.0f)
+                Class348_Sub8.aRenderer6654!!.method3638(Class157.aClass101_2123)
+                Class348_Sub8.aRenderer6654!!.DA(dimension.width / 2, dimension.height / 2, 512, 512)
+                Class348_Sub8.aRenderer6654!!.xa(1.0f)
                 if (i_1_ >= -66) aClass190_5990 = null
-                Class348_Sub8.aHa6654!!.ZA(16777215, 0.5f, 0.5f, 20.0f, -50.0f, 30.0f)
-                val class64 = Class348_Sub8.aHa6654!!.method3625(class124, 2048, 64, 64, 768)
+                Class348_Sub8.aRenderer6654!!.ZA(16777215, 0.5f, 0.5f, 20.0f, -50.0f, 30.0f)
+                val class64 = Class348_Sub8.aRenderer6654!!.method3625(class124, 2048, 64, 64, 768)
                 var i_3_ = 0
                 while_80_@ for (i_4_ in 0..499) {
-                    Class348_Sub8.aHa6654!!.GA(0)
-                    Class348_Sub8.aHa6654!!.ya()
+                    Class348_Sub8.aRenderer6654!!.GA(0)
+                    Class348_Sub8.aRenderer6654!!.ya()
                     for (i_5_ in 15 downTo 0) {
                         for (i_6_ in 0..i_5_) {
                             Class50_Sub1.aClass101_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * Class270.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * Class270.anInt3465)
@@ -119,10 +119,10 @@ class Class239_Sub14 : Class239 {
                         }
                     }
                 }
-                Class348_Sub8.aHa6654!!.method3633()
+                Class348_Sub8.aRenderer6654!!.method3633()
                 val l_7_ = (1000 * i_3_).toLong() / (Class62.method599(-86) + -l)
-                Class348_Sub8.aHa6654!!.GA(0)
-                Class348_Sub8.aHa6654!!.ya()
+                Class348_Sub8.aRenderer6654!!.GA(0)
+                Class348_Sub8.aRenderer6654!!.ya()
                 return l_7_.toInt()
             } catch (throwable: Throwable) {
                 throwable.printStackTrace()

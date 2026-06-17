@@ -29,7 +29,7 @@ import r_Sub2.Companion.method3297
 */
 class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool: Boolean) : Class237(i, i_114_, i_115_, bool, Class229.aClass268_2979, Class362.aClass183_4460) {
     var anInt5824: Int = 99
-    fun method1689(i: Int, i_0_: Int, i_1_: Int, var_ha: ha?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, class361: Class361?) {
+    fun method1689(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, class361: Class361?) {
         try {
             anInt5823++
             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i_3_ xor 0x7e6f.inv()) != 0 || method536(i_5_, false, i, Class167.anInt2204, i_2_)) {
@@ -76,10 +76,10 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             if ((Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0) || (class51.anInt874 != 0) || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 val class318_sub1_sub1: Class318_Sub1_Sub1?
                                 if (bool_17_) {
-                                    val class318_sub1_sub1_sub2 = (Class318_Sub1_Sub1_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, bool))
+                                    val class318_sub1_sub1_sub2 = (Class318_Sub1_Sub1_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, bool))
                                     class318_sub1_sub1 = class318_sub1_sub1_sub2
-                                    if (class318_sub1_sub1_sub2.method38(-18443)) class318_sub1_sub1_sub2.method44(836, var_ha)
-                                } else class318_sub1_sub1 = (Class318_Sub1_Sub1_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, i_6_))
+                                    if (class318_sub1_sub1_sub2.method38(-18443)) class318_sub1_sub1_sub2.method44(836, var_renderer)
+                                } else class318_sub1_sub1 = (Class318_Sub1_Sub1_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, i_6_))
                                 method770(i_0_, i, i_5_, class318_sub1_sub1)
                                 if (class51.anInt920 == 1 && class361 != null) class361.method3496(i_5_, i, 1)
                             }
@@ -88,16 +88,16 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             val class318_sub1_sub3: Class318_Sub1_Sub3?
                             var i_18_: Int
                             if (bool_17_) {
-                                val class318_sub1_sub3_sub1_19_ = (Class318_Sub1_Sub3_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i_9_ + (i + -1), i_5_, -1 + (i_8_ + i_5_), i_4_, i_7_, bool))
+                                val class318_sub1_sub3_sub1_19_ = (Class318_Sub1_Sub3_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i_9_ + (i + -1), i_5_, -1 + (i_8_ + i_5_), i_4_, i_7_, bool))
                                 class318_sub1_sub3 = class318_sub1_sub3_sub1_19_
                                 class318_sub1_sub3_sub1 = class318_sub1_sub3_sub1_19_
                                 i_18_ = class318_sub1_sub3_sub1_19_.method2416(15)
                             } else {
                                 i_18_ = 15
-                                class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i_9_ + (i + -1), i_5_, -1 + (i_5_ + i_8_), i_4_, i_7_, i_6_))
+                                class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i_9_ + (i + -1), i_5_, -1 + (i_5_ + i_8_), i_4_, i_7_, i_6_))
                             }
                             if (method850(class318_sub1_sub3, false)) {
-                                if (class318_sub1_sub3_sub1 != null && class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(836, var_ha)
+                                if (class318_sub1_sub3_sub1 != null && class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(836, var_renderer)
                                 if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
                                     if (i_18_ > 30) i_18_ = 30
                                     var i_20_ = 0
@@ -115,10 +115,10 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                         } else if (i_4_ >= 12 && i_4_ <= 17 || (i_4_ >= 18 && i_4_ <= 21)) {
                             val class318_sub1_sub3: Class318_Sub1_Sub3?
                             if (bool_17_) {
-                                val class318_sub1_sub3_sub1 = (Class318_Sub1_Sub3_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, -1 + (i_9_ + i), i_5_, -1 + i_5_ + i_8_, i_4_, i_7_, bool))
+                                val class318_sub1_sub3_sub1 = (Class318_Sub1_Sub3_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, -1 + (i_9_ + i), i_5_, -1 + i_5_ + i_8_, i_4_, i_7_, bool))
                                 class318_sub1_sub3 = class318_sub1_sub3_sub1
-                                if (class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(i_3_ + 786, var_ha)
-                            } else class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i + (i_9_ - 1), i_5_, i_5_ - (-i_8_ - -1), i_4_, i_7_, i_6_))
+                                if (class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(i_3_ + 786, var_renderer)
+                            } else class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i + (i_9_ - 1), i_5_, i_5_ - (-i_8_ - -1), i_4_, i_7_, i_6_))
                             method850(class318_sub1_sub3, false)
                             if (Class348_Sub42_Sub3.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (Class273.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_)
@@ -127,10 +127,10 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             if (Class348_Sub40_Sub10.aBoolean9184 && (class51.anInt955 == -1)) i_22_ = 1
                             val class318_sub1_sub4: Class318_Sub1_Sub4?
                             if (bool_17_) {
-                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
-                                if (class318_sub1_sub4_sub1.method38(-18443)) class318_sub1_sub4_sub1.method44(836, var_ha)
+                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
+                                if (class318_sub1_sub4_sub1.method38(-18443)) class318_sub1_sub4_sub1.method44(836, var_renderer)
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
-                            } else class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
                             if (i_7_ == 0) {
                                 if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
@@ -162,10 +162,10 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                         } else if (i_4_ == 1) {
                             val class318_sub1_sub4: Class318_Sub1_Sub4?
                             if (bool_17_) {
-                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
-                                if (class318_sub1_sub4_sub1.method38(-18443)) class318_sub1_sub4_sub1.method44(836, var_ha)
+                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
+                                if (class318_sub1_sub4_sub1.method38(-18443)) class318_sub1_sub4_sub1.method44(836, var_renderer)
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
-                            } else class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
                             if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
                                 if (i_7_ == 0) var_s.ka(i, i_5_ + 1, 50)
@@ -181,15 +181,15 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             val class318_sub1_sub4: Class318_Sub1_Sub4?
                             val class318_sub1_sub4_24_: Class318_Sub1_Sub4?
                             if (bool_17_) {
-                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, 4 + i_7_, bool))
-                                val class318_sub1_sub4_sub1_25_ = (Class318_Sub1_Sub4_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_23_, bool))
-                                if (class318_sub1_sub4_sub1.method38(-18443)) class318_sub1_sub4_sub1.method44(836, var_ha)
+                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, 4 + i_7_, bool))
+                                val class318_sub1_sub4_sub1_25_ = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_23_, bool))
+                                if (class318_sub1_sub4_sub1.method38(-18443)) class318_sub1_sub4_sub1.method44(836, var_renderer)
                                 class318_sub1_sub4_24_ = class318_sub1_sub4_sub1_25_
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
-                                if (class318_sub1_sub4_sub1_25_.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub4_sub1_25_.method44(836, var_ha)
+                                if (class318_sub1_sub4_sub1_25_.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub4_sub1_25_.method44(836, var_renderer)
                             } else {
-                                class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_ + 4, i_6_))
-                                class318_sub1_sub4_24_ = (Class318_Sub1_Sub4_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_23_, i_6_))
+                                class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_ + 4, i_6_))
+                                class318_sub1_sub4_24_ = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_23_, i_6_))
                             }
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, class318_sub1_sub4_24_)
                             if (((class51.anInt955 == 1) || (Class348_Sub40_Sub10.aBoolean9184 && class51.anInt955 == -1)) && !this.aBoolean3109) {
@@ -212,10 +212,10 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                         } else if (i_4_ == 3) {
                             val class318_sub1_sub4: Class318_Sub1_Sub4?
                             if (bool_17_) {
-                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
-                                if (class318_sub1_sub4_sub1.method38(i_3_ + -18493)) class318_sub1_sub4_sub1.method44(836, var_ha)
+                                val class318_sub1_sub4_sub1 = (Class318_Sub1_Sub4_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, bool))
+                                if (class318_sub1_sub4_sub1.method38(i_3_ + -18493)) class318_sub1_sub4_sub1.method44(836, var_renderer)
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
-                            } else class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub4 = (Class318_Sub1_Sub4_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
                             if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
                                 if (i_7_ == 0) var_s.ka(i, 1 + i_5_, 50)
@@ -228,10 +228,10 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                         } else if (i_4_ == 9) {
                             val class318_sub1_sub3: Class318_Sub1_Sub3?
                             if (bool_17_) {
-                                val class318_sub1_sub3_sub1 = (Class318_Sub1_Sub3_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i, i_5_, i_5_, i_4_, i_7_, bool))
-                                if (class318_sub1_sub3_sub1.method38(i_3_ + -18493)) class318_sub1_sub3_sub1.method44(836, var_ha)
+                                val class318_sub1_sub3_sub1 = (Class318_Sub1_Sub3_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i, i_5_, i_5_, i_4_, i_7_, bool))
+                                if (class318_sub1_sub3_sub1.method38(i_3_ + -18493)) class318_sub1_sub3_sub1.method44(836, var_renderer)
                                 class318_sub1_sub3 = class318_sub1_sub3_sub1
-                            } else class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, -1 + i + i_9_, i_5_, i_5_ + (i_8_ - 1), i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub3 = (Class318_Sub1_Sub3_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, -1 + i + i_9_, i_5_, i_5_ + (i_8_ - 1), i_4_, i_7_, i_6_))
                             method850(class318_sub1_sub3, false)
                             if ((class51.anInt955 == 1) && !this.aBoolean3109) {
                                 val i_26_: Int
@@ -244,10 +244,10 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                         } else if (i_4_ == 4) {
                             val class318_sub1_sub5: Class318_Sub1_Sub5?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_7_))
-                                if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(i_3_ + 786, var_ha)
+                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_7_))
+                                if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(i_3_ + 786, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 5) {
                             var i_27_ = 65
@@ -255,10 +255,10 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             if (interface10 != null) i_27_ = 1 + (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-93)).anInt883)
                             val class318_sub1_sub5: Class318_Sub1_Sub5?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * Class148.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
-                                if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_ha)
+                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * Class148.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
+                                if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, Class148.anIntArray2039!![i_7_] * i_27_, i_27_ * (Class348_Sub40_Sub16.anIntArray9230!![i_7_]), i_4_, i_7_, i_6_))
+                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, Class148.anIntArray2039!![i_7_] * i_27_, i_27_ * (Class348_Sub40_Sub16.anIntArray9230!![i_7_]), i_4_, i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 6) {
                             var i_28_ = 33
@@ -266,19 +266,19 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             if (interface10 != null) i_28_ = 1 + (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-117)).anInt883) / 2
                             val class318_sub1_sub5: Class318_Sub1_Sub5?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * Class148.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
-                                if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_ha)
+                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * Class148.anIntArray2039!![i_7_], (Class348_Sub40_Sub16.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
+                                if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (OutputStream_Sub1.anIntArray99!![i_7_] * i_28_), i_28_ * Class273.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))
+                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (OutputStream_Sub1.anIntArray99!![i_7_] * i_28_), i_28_ * Class273.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 7) {
                             val i_29_ = 0x3 and 2 + i_7_
                             val class318_sub1_sub5: Class318_Sub1_Sub5?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_29_))
-                                if (class318_sub1_sub5_sub1.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub5_sub1.method44(836, var_ha)
+                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_29_))
+                                if (class318_sub1_sub5_sub1.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_29_, i_6_))
+                            } else class318_sub1_sub5 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_29_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 8) {
                             val i_30_ = 2 + i_7_ and 0x3
@@ -288,15 +288,15 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             val class318_sub1_sub5: Class318_Sub1_Sub5?
                             val class318_sub1_sub5_32_: Class318_Sub1_Sub5?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), Class273.anIntArray5165!![i_7_] * i_31_, i_4_, 4 + i_7_))
-                                val class318_sub1_sub5_sub1_34_ = (Class318_Sub1_Sub5_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_30_))
-                                if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_ha)
-                                if (class318_sub1_sub5_sub1_34_.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub5_sub1_34_.method44(836, var_ha)
+                                val class318_sub1_sub5_sub1 = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), Class273.anIntArray5165!![i_7_] * i_31_, i_4_, 4 + i_7_))
+                                val class318_sub1_sub5_sub1_34_ = (Class318_Sub1_Sub5_Sub1(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_30_))
+                                if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
+                                if (class318_sub1_sub5_sub1_34_.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub5_sub1_34_.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1_34_
                                 class318_sub1_sub5_32_ = class318_sub1_sub5_sub1
                             } else {
-                                val class318_sub1_sub5_sub2 = (Class318_Sub1_Sub5_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), i_31_ * Class273.anIntArray5165!![i_7_], i_4_, i_7_ - -4, i_6_))
-                                val class318_sub1_sub5_sub2_33_ = (Class318_Sub1_Sub5_Sub2(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_30_ + 4, i_6_))
+                                val class318_sub1_sub5_sub2 = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (OutputStream_Sub1.anIntArray99!![i_7_]), i_31_ * Class273.anIntArray5165!![i_7_], i_4_, i_7_ - -4, i_6_))
+                                val class318_sub1_sub5_sub2_33_ = (Class318_Sub1_Sub5_Sub2(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_30_ + 4, i_6_))
                                 class318_sub1_sub5_32_ = class318_sub1_sub5_sub2
                                 class318_sub1_sub5 = class318_sub1_sub5_sub2_33_
                             }
@@ -306,7 +306,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vaa.W(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class361 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("vaa.W(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class361 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -321,7 +321,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
         return interface10
     }
 
-    fun method1691(i: Int, var_ha: ha?, class348_sub49: Class348_Sub49?, `is`: IntArray?, i_39_: Int, i_40_: Byte) {
+    fun method1691(i: Int, var_renderer: Renderer?, class348_sub49: Class348_Sub49?, `is`: IntArray?, i_39_: Int, i_40_: Byte) {
         do {
             try {
                 anInt5818++
@@ -338,12 +338,12 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             if (i_58_ > 0) {
                                 var i_59_ = 0
                                 while (i_58_ > i_59_) {
-                                    val class211 = Class211(var_ha, class348_sub49, 2)
+                                    val class211 = Class211(var_renderer, class348_sub49, 2)
                                     if (class211.anInt2734 == 31) {
                                         val class253 = (Class348_Sub1.aClass185_6559!!.method1391((-1).toByte(), class348_sub49.readUnsignedShort(842397944)))
                                         class211.method1539(class253.anInt3251, 115.toByte(), class253.anInt3249, class253.anInt3245, class253.anInt3244)
                                     }
-                                    if (var_ha!!.method3704() > 0) {
+                                    if (var_renderer!!.method3704() > 0) {
                                         val class348_sub1 = (class211.aClass348_Sub1_2745)
                                         val i_60_ = ((i_39_ shl 9) + class348_sub1!!.method2724(-1))
                                         val i_61_ = (class348_sub1.method2717(93.toByte()) + (i shl 9))
@@ -469,13 +469,13 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vaa.AA(" + i + ',' + (if (var_ha != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("vaa.AA(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ')'))
             }
             break
         } while (false)
     }
 
-    fun method1692(i: Int, i_73_: Int, `is`: ByteArray?, i_74_: Int, i_75_: Int, var_ha: ha?, i_76_: Int, i_77_: Int, i_78_: Int, class361s: Array<Class361?>?, i_79_: Int) {
+    fun method1692(i: Int, i_73_: Int, `is`: ByteArray?, i_74_: Int, i_75_: Int, var_renderer: Renderer?, i_76_: Int, i_77_: Int, i_78_: Int, class361s: Array<Class361?>?, i_79_: Int) {
         try {
             anInt5826++
             if (i_78_ != 7) method1693('\uffb8', -54)
@@ -507,17 +507,17 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                                 if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_90_]!![i_91_]).toInt()) == 2) i_92_--
                                 if (i_92_ >= 0) class361 = class361s!![i_92_]
                             }
-                            method1689(i_90_, i_79_, i_80_, var_ha, i_79_, 50, i_88_, i_91_, -1, i_89_ - -i_73_ and 0x3, class361)
+                            method1689(i_90_, i_79_, i_80_, var_renderer, i_79_, 50, i_88_, i_91_, -1, i_89_ - -i_73_ and 0x3, class361)
                         }
                     }
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vaa.S(" + i + ',' + i_73_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_74_ + ',' + i_75_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + (if (class361s != null) "{...}" else "null") + ',' + i_79_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("vaa.S(" + i + ',' + i_73_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_74_ + ',' + i_75_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + (if (class361s != null) "{...}" else "null") + ',' + i_79_ + ')'))
         }
     }
 
-    fun method1694(class361: Class361?, i: Int, i_93_: Int, var_ha: ha?, i_94_: Int, i_95_: Int, i_96_: Byte) {
+    fun method1694(class361: Class361?, i: Int, i_93_: Int, var_renderer: Renderer?, i_94_: Int, i_95_: Int, i_96_: Byte) {
         while_77_@ do {
             do {
                 try {
@@ -529,7 +529,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                     val i_97_ = interface10.method39(-128)
                     val i_98_ = interface10.method41(-32228)
                     if (class51.method474((-50).toByte())) method2336(class51, i_94_, i_95_, i_93_, -128)
-                    if (interface10.method38(-18443)) interface10.method43(var_ha, -14218)
+                    if (interface10.method38(-18443)) interface10.method43(var_renderer, -14218)
                     if (i == 0) {
                         method3058(i_93_, i_94_, i_95_)
                         if (class51.anInt920 != 0) class361!!.method3506((class51.aBoolean896), i_98_, i_94_, i_97_, i_95_, !(class51.aBoolean876), 29216)
@@ -561,14 +561,14 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                         method2168(i_93_, i_94_, i_95_)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("vaa.U(" + (if (class361 != null) "{...}" else "null") + ',' + i + ',' + i_93_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("vaa.U(" + (if (class361 != null) "{...}" else "null") + ',' + i + ',' + i_93_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ')'))
                 }
             } while (false)
             break
         } while (false)
     }
 
-    fun method1695(`is`: ByteArray?, class361s: Array<Class361?>?, i: Int, var_ha: ha?, i_99_: Int, i_100_: Int) {
+    fun method1695(`is`: ByteArray?, class361s: Array<Class361?>?, i: Int, var_renderer: Renderer?, i_99_: Int, i_100_: Int) {
         try {
             anInt5820++
             if (i_100_ == 1359) {
@@ -598,17 +598,17 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                                 if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_111_]!![i_112_]).toInt()) == 2) i_113_--
                                 if (i_113_ >= 0) class361 = class361s!![i_113_]
                             }
-                            method1689(i_111_, i_107_, i_101_, var_ha, i_107_, i_100_ xor 0x57d, i_109_, i_112_, -1, i_110_, class361)
+                            method1689(i_111_, i_107_, i_101_, var_renderer, i_107_, i_100_ xor 0x57d, i_109_, i_112_, -1, i_110_, class361)
                         }
                     }
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vaa.R(" + (if (`is` != null) "{...}" else "null") + ',' + (if (class361s != null) "{...}" else "null") + ',' + i + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_99_ + ',' + i_100_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("vaa.R(" + (if (`is` != null) "{...}" else "null") + ',' + (if (class361s != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_99_ + ',' + i_100_ + ')'))
         }
     }
 
-    fun method1696(class348_sub49: Class348_Sub49?, bool: Boolean, i: Int, i_116_: Int, i_117_: Int, i_118_: Int, i_119_: Int, i_120_: Int, var_ha: ha?, `is`: IntArray?, i_121_: Int) {
+    fun method1696(class348_sub49: Class348_Sub49?, bool: Boolean, i: Int, i_116_: Int, i_117_: Int, i_118_: Int, i_119_: Int, i_120_: Int, var_renderer: Renderer?, `is`: IntArray?, i_121_: Int) {
         do {
             try {
                 anInt5825++
@@ -626,12 +626,12 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                                 if (i_126_ > 0) {
                                     var i_127_ = 0
                                     while ((i_126_ > i_127_)) {
-                                        val class211 = Class211(var_ha, class348_sub49, 2)
+                                        val class211 = Class211(var_renderer, class348_sub49, 2)
                                         if (class211.anInt2734 == 31) {
                                             val class253 = (Class348_Sub1.aClass185_6559!!.method1391(111.toByte(), (class348_sub49.readUnsignedShort(842397944))))
                                             class211.method1539((class253.anInt3251), 124.toByte(), (class253.anInt3249), (class253.anInt3245), (class253.anInt3244))
                                         }
-                                        if (var_ha!!.method3704() > 0) {
+                                        if (var_renderer!!.method3704() > 0) {
                                             val class348_sub1 = (class211.aClass348_Sub1_2745)
                                             var i_128_ = (class348_sub1!!.method2724(-1) shr 9)
                                             var i_129_ = (class348_sub1.method2717(79.toByte()) shr 9)
@@ -730,13 +730,13 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vaa.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + i_119_ + ',' + i_120_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_121_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("vaa.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + i_119_ + ',' + i_120_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_121_ + ')'))
             }
             break
         } while (false)
     }
 
-    fun method1697(bool: Boolean, var_ha: ha?, i: Int) {
+    fun method1697(bool: Boolean, var_renderer: Renderer?, i: Int) {
         try {
             Class342.method2686()
             anInt5816++
@@ -812,7 +812,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
             }
             if (i < -6) this.aByteArrayArrayArray3108 = null
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vaa.T(" + bool + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("vaa.T(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

@@ -14,7 +14,7 @@ import kotlin.math.max
 import kotlin.math.sin
 import kotlin.math.sqrt
 
-abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_renderConfig: RenderConfig?, class45: Class45?, i: Int, i_289_: Int) : ha(var_renderConfig) {
+abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig: RenderConfig?, class45: Class45?, i: Int, i_289_: Int) : Renderer(var_renderConfig) {
     var aNativeHeap7891: NativeHeap? = null
     var aLong7905: Long = 0
     private var aCanvas7910: Canvas? = null

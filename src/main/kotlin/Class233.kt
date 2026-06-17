@@ -20,7 +20,7 @@ class Class233 internal constructor() {
     private var anInt3034: Int
     private val anIntArray3035: IntArray
 
-    private fun method1649(var_ha_Sub2: ha_Sub2, i: Int, i_0_: Int) {
+    private fun method1649(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_: Int) {
         anInt3019++
         Class86.aFloat1478 = var_ha_Sub2.aFloat7768
         var_ha_Sub2.method3789((-119).toByte(), i.toFloat())
@@ -31,7 +31,7 @@ class Class233 internal constructor() {
         glNormal3f(0.0f, -1.0f, 0.0f)
     }
 
-    private fun method1650(var_ha_Sub2: ha_Sub2, i: Byte) {
+    private fun method1650(var_ha_Sub2: OpenGlRenderer, i: Byte) {
         var_ha_Sub2.method3748(0, true)
         anInt3016++
         glEnable(16384)
@@ -40,7 +40,7 @@ class Class233 internal constructor() {
         if (Class86.aFloat1478 != var_ha_Sub2.aFloat7768) var_ha_Sub2.xa(Class86.aFloat1478)
     }
 
-    fun method1651(var_ha_Sub2: ha_Sub2?, i: Byte, i_1_: Int, class98: Class98?) {
+    fun method1651(var_ha_Sub2: OpenGlRenderer?, i: Byte, i_1_: Int, class98: Class98?) {
         try {
             anInt3017++
             if (var_ha_Sub2!!.aClass101_Sub3_7760 != null) {
@@ -131,7 +131,7 @@ class Class233 internal constructor() {
         }
     }
 
-    private fun method1652(bool: Boolean, var_ha_Sub2: ha_Sub2) {
+    private fun method1652(bool: Boolean, var_ha_Sub2: OpenGlRenderer) {
         Class86.aFloat1478 = var_ha_Sub2.aFloat7768
         anInt3021++
         var_ha_Sub2.method3784((-62).toByte())
@@ -141,7 +141,7 @@ class Class233 internal constructor() {
         glNormal3f(0.0f, -1.0f, 0.0f)
     }
 
-    fun method1654(i: Int, var_ha_Sub2: ha_Sub2) {
+    fun method1654(i: Int, var_ha_Sub2: OpenGlRenderer) {
         if (i == 643267468) {
             anInt3023++
             anInterface2_3027 = var_ha_Sub2.method3731(2, true, 24, null, 196584)
@@ -151,7 +151,7 @@ class Class233 internal constructor() {
         }
     }
 
-    private fun method1655(var_ha_Sub2: ha_Sub2, i: Int, i_18_: Int) {
+    private fun method1655(var_ha_Sub2: OpenGlRenderer, i: Int, i_18_: Int) {
         anInt3018++
         if (i_18_ == 785980556) {
             glGetFloatv(2982, aFloatArray3024, 0)

@@ -9,14 +9,14 @@ import jaggl.OpenGL.Companion.glGetInfoLogARB
 import jaggl.OpenGL.Companion.glGetObjectParameterivARB
 import jaggl.OpenGL.Companion.glLinkProgramARB
 
-class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int) : Class318_Sub1_Sub5(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_), Interface10 {
+class Class318_Sub1_Sub5_Sub2 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int) : Class318_Sub1_Sub5(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_), Interface10 {
     private var aBoolean10148 = false
     private var aClass30_10150: Class30? = null
     private var aBoolean10153 = false
     var aClass235_10155: Class235? = null
-    override fun method43(var_ha: ha?, i: Int) {
+    override fun method43(var_renderer: Renderer?, i: Int) {
         anInt10151++
-        this.aClass235_10155!!.method1674(i + 14217, var_ha)
+        this.aClass235_10155!!.method1674(i + 14217, var_renderer)
         if (i != -14218) method40(127)
     }
 
@@ -38,9 +38,9 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51
         return this.aClass235_10155!!.method1665(i + 18445)
     }
 
-    override fun method44(i: Int, var_ha: ha?) {
+    override fun method44(i: Int, var_renderer: Renderer?) {
         if (i == 836) {
-            this.aClass235_10155!!.method1667(116.toByte(), var_ha)
+            this.aClass235_10155!!.method1667(116.toByte(), var_renderer)
             anInt10165++
         }
     }
@@ -51,16 +51,16 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51
         return (this.aClass235_10155!!.anInt3063)
     }
 
-    public override fun method2387(var_ha: ha?, i: Int) {
+    public override fun method2387(var_renderer: Renderer?, i: Int) {
         if (i >= -125) aBoolean10148 = false
         anInt10154++
-        val class64 = this.aClass235_10155!!.method1668(false, true, -127, 262144, var_ha)
+        val class64 = this.aClass235_10155!!.method1668(false, true, -127, 262144, var_renderer)
         if (class64 != null) {
             val i_0_ = this.x shr 9
             val i_1_ = this.y shr 9
-            val class101 = var_ha!!.method3705()
+            val class101 = var_renderer!!.method3705()
             class101.method894(this.x, this.anInt6382, this.y)
-            this.aClass235_10155!!.method1670(i_0_, class101, i_1_, var_ha, i_0_, class64, false, (-73).toByte(), i_1_)
+            this.aClass235_10155!!.method1670(i_0_, class101, i_1_, var_renderer, i_0_, class64, false, (-73).toByte(), i_1_)
         }
     }
 
@@ -76,22 +76,22 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51
         return false
     }
 
-    public override fun method2386(i: Int, var_ha: ha?): Class318_Sub4? {
+    public override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
         anInt10159++
-        val class64 = this.aClass235_10155!!.method1668(false, true, -127, 2048, var_ha)
+        val class64 = this.aClass235_10155!!.method1668(false, true, -127, 2048, var_renderer)
         if (class64 == null) return null
-        val class101 = var_ha!!.method3705()
+        val class101 = var_renderer!!.method3705()
         class101.method894((this.x + this.aShort8781), this.anInt6382, (this.y + this.aShort8769))
         val class318_sub4 = method136(i, aBoolean10153, false)
         val i_3_ = this.x shr 9
         val i_4_ = this.y shr 9
-        this.aClass235_10155!!.method1670(i_3_, class101, i_4_, var_ha, i_3_, class64, true, (-73).toByte(), i_4_)
+        this.aClass235_10155!!.method1670(i_3_, class101, i_4_, var_renderer, i_3_, class64, true, (-73).toByte(), i_4_)
         if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), Class132.anInt1906, 0)
         if ((this.aClass235_10155!!.aClass318_Sub10_3081) != null) {
             val class98 = this.aClass235_10155!!.aClass318_Sub10_3081!!.method2525()
-            if (!Class305.aBoolean3870) var_ha.method3684(class98)
-            else var_ha.method3685(class98, Class132.anInt1906)
+            if (!Class305.aBoolean3870) var_renderer.method3684(class98)
+            else var_renderer.method3685(class98, Class132.anInt1906)
         }
         aBoolean10148 = class64.F() || (this.aClass235_10155!!.aClass318_Sub10_3081) != null
         if (aClass30_10150 == null) aClass30_10150 = (method2967(this.x, class64, this.y, this.anInt6382, 2))
@@ -99,7 +99,7 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51
         return class318_sub4
     }
 
-    public override fun method2381(var_ha: ha?, i: Int): Class30? {
+    public override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
         anInt10169++
         if (i != 7) return null
         return aClass30_10150
@@ -111,12 +111,12 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51
         return aBoolean10148
     }
 
-    public override fun method2391(var_ha: ha?, i: Int, i_14_: Int, i_15_: Int): Boolean {
+    public override fun method2391(var_renderer: Renderer?, i: Int, i_14_: Int, i_15_: Int): Boolean {
         anInt10152++
-        val class64 = this.aClass235_10155!!.method1668(false, false, -128, 131072, var_ha)
+        val class64 = this.aClass235_10155!!.method1668(false, false, -128, 131072, var_renderer)
         if (class64 == null) return false
         if (i_15_ != 0) return true
-        val class101 = var_ha!!.method3705()
+        val class101 = var_renderer!!.method3705()
         class101.method894((this.aShort8781 + this.x), this.anInt6382, (this.aShort8769 + this.y))
         if (Class305.aBoolean3870) return class64.method623(i_14_, i, class101, false, 0, Class132.anInt1906)
         return class64.method628(i_14_, i, class101, false, 0)
@@ -134,10 +134,10 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51
 
     init {
         try {
-            this.aClass235_10155 = Class235(var_ha, class51, i_11_, i_12_, this.plane.toInt(), i_5_, this, bool, i_13_)
+            this.aClass235_10155 = Class235(var_renderer, class51, i_11_, i_12_, this.plane.toInt(), i_5_, this, bool, i_13_)
             aBoolean10153 = class51!!.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pw.<init>(" + (if (var_ha != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("pw.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
         }
     }
 
@@ -175,7 +175,7 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51
             anIntArray10172 = null
         }
 
-        fun method2493(var_ha_Sub2: ha_Sub2?, i: Int, class242s: Array<Class242?>?): Class337? {
+        fun method2493(var_ha_Sub2: OpenGlRenderer?, i: Int, class242s: Array<Class242?>?): Class337? {
             try {
                 anInt10167++
                 for (i_16_ in class242s!!.indices) {

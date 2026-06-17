@@ -368,7 +368,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         } while (false)
     }
 
-    fun method2432(var_ha: ha?, i: Int, class101: Class101?, bool: Boolean, class64s: Array<Class64?>?) {
+    fun method2432(var_renderer: Renderer?, i: Int, class101: Class101?, bool: Boolean, class64s: Array<Class64?>?) {
         do {
             try {
                 if (i == -15074) {
@@ -461,7 +461,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                                     }
                                     if (class342s_74_ != null) Class214.method1575(class342s_74_, 0, class342s_78_, i_79_, class342s_74_.size)
                                 }
-                                this.aClass318_Sub10_10327!!.method2536(var_ha, Class367_Sub11.anInt7396.toLong(), class129s_75_, class342s_78_, false)
+                                this.aClass318_Sub10_10327!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s_75_, class342s_78_, false)
                             }
                             this.aBoolean10318 = true
                         }
@@ -470,7 +470,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                     this.aClass318_Sub10_10327!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + (if (class101 != null) "{...}" else "null") + ',' + bool + ',' + (if (class64s != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (class101 != null) "{...}" else "null") + ',' + bool + ',' + (if (class64s != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -808,7 +808,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         }
 
         @JvmStatic
-        fun method2431(i: Int, i_56_: Int, class348_sub42_sub13: Class348_Sub42_Sub13?, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, var_ha: ha?, i_61_: Int, i_62_: Int, i_63_: Int, i_64_: Int) {
+        fun method2431(i: Int, i_56_: Int, class348_sub42_sub13: Class348_Sub42_Sub13?, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, var_renderer: Renderer?, i_61_: Int, i_62_: Int, i_63_: Int, i_64_: Int) {
             var i = i
             try {
                 if (i_62_ < 111) aShortArrayArray10246 = null
@@ -817,7 +817,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 val string = Class348_Sub15.method2812(-44, class348_sub42_sub13!!)
                 Class262.aClass324_3326!!.method2567(i_56_, string, 120.toByte(), i, 0, i_63_ - -3, Class341.aClass105Array4234, Class175.anIntArray2330)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kda.VA(" + i + ',' + i_56_ + ',' + (if (class348_sub42_sub13 != null) "{...}" else "null") + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ',' + i_64_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("kda.VA(" + i + ',' + i_56_ + ',' + (if (class348_sub42_sub13 != null) "{...}" else "null") + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ',' + i_64_ + ')'))
             }
         }
 
@@ -887,11 +887,11 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class239_Sub1.aShortArrayArray5847 = null
             if (Class348_Sub40_Sub34.aClass293Array9432 != null) {
                 Class260.method1978()
-                Class9.aHa171!!.method3631(1)
-                Class9.aHa171!!.method3659(0)
+                Class9.aRenderer171!!.method3631(1)
+                Class9.aRenderer171!!.method3659(0)
             }
             if (Class319.aClass315Array3982 != null) Class319.aClass315Array3982 = null
-            Class9.aHa171 = null
+            Class9.aRenderer171 = null
         }
 
         init {

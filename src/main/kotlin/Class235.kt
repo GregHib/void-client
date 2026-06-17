@@ -4,7 +4,7 @@ import Class169.Companion.method1301
 /* Class235 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, class318_sub1: Class318_Sub1?, bool: Boolean, i_18_: Int) {
+class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, class318_sub1: Class318_Sub1?, bool: Boolean, i_18_: Int) {
     private val aClass318_Sub1_3051: Class318_Sub1?
     @JvmField
     var anInt3052: Int = 0
@@ -103,20 +103,20 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
         }
     }
 
-    fun method1667(i: Byte, var_ha: ha?) {
+    fun method1667(i: Byte, var_renderer: Renderer?) {
         anInt3061++
-        method1668(true, true, i + -244, 262144, var_ha)
+        method1668(true, true, i + -244, 262144, var_renderer)
         if (i.toInt() != 116) this.anInt3063 = 99
     }
 
-    fun method1668(bool: Boolean, bool_3_: Boolean, i: Int, i_4_: Int, var_ha: ha?): Class64? {
+    fun method1668(bool: Boolean, bool_3_: Boolean, i: Int, i_4_: Int, var_renderer: Renderer?): Class64? {
         var bool_3_ = bool_3_
         var i_4_ = i_4_
         anInt3082++
         var class51: Class51? = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, this.anInt3063)
         if (class51!!.anIntArray945 != null) class51 = class51.method480(Class318_Sub1_Sub3_Sub3.aClass170_10209!!, 47.toByte())
         if (class51 == null) {
-            method1674(-1, var_ha)
+            method1674(-1, var_renderer)
             anInt3073 = -1
             anInt3056 = -1
             anInt3053 = -1
@@ -149,7 +149,7 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
         if (aClass17_3057 == null) {
             if (aClass64_3059 == null || i_4_ != (i_4_ and aClass64_3059!!.ua()) || (anInt3053 != class51.anInt941)) {
                 if (aClass64_3059 != null) i_4_ = i_4_ or aClass64_3059!!.ua()
-                val class2 = (class51.method476(var_ha, var_s_5_, (if (this.anInt3079 != 11) this.anInt3079 else 10), i_4_, aClass318_Sub1_3051!!.x, bool_3_, var_s, var_s!!.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (-114).toByte()), aClass318_Sub1_3051.y, (if (this.anInt3079 == 11) 4 + this.anInt3052 else this.anInt3052), 128))
+                val class2 = (class51.method476(var_renderer, var_s_5_, (if (this.anInt3079 != 11) this.anInt3079 else 10), i_4_, aClass318_Sub1_3051!!.x, bool_3_, var_s, var_s!!.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (-114).toByte()), aClass318_Sub1_3051.y, (if (this.anInt3079 == 11) 4 + this.anInt3052 else this.anInt3052), 128))
                 if (class2 == null) {
                     anInt3055 = 0
                     aBooleanArray3072 = null
@@ -172,7 +172,7 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
             } else class64 = aClass64_3059
         } else {
             if (bool_3_) i_4_ = i_4_ or 0x40000
-            class64 = (class51.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_ha, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_s_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aClass17_3057, var_s))
+            class64 = (class51.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_renderer, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_s_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aClass17_3057, var_s))
             if (class64 == null) {
                 anInt3055 = 0
                 aBooleanArray3072 = null
@@ -195,7 +195,7 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
         return class64
     }
 
-    fun method1670(i: Int, class101: Class101?, i_7_: Int, var_ha: ha?, i_8_: Int, class64: Class64?, bool: Boolean, i_9_: Byte, i_10_: Int) {
+    fun method1670(i: Int, class101: Class101?, i_7_: Int, var_renderer: Renderer?, i_8_: Int, class64: Class64?, bool: Boolean, i_9_: Byte, i_10_: Int) {
         do {
             try {
                 anInt3058++
@@ -209,11 +209,11 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
                 }
                 if (this.aClass318_Sub10_3081 == null) break
                 class64.method620(class101)
-                if (bool) this.aClass318_Sub10_3081!!.method2536(var_ha, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
+                if (bool) this.aClass318_Sub10_3081!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
                 else this.aClass318_Sub10_3081!!.method2540(Class367_Sub11.anInt7396.toLong())
                 this.aClass318_Sub10_3081!!.method2533(aByte3085.toInt(), i_8_, i, i_10_, i_7_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (class101 != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (class101 != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
             }
             break
         } while (false)
@@ -299,15 +299,15 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
             aByte3067 = i_17_.toByte()
             aBoolean3069 = bool
             this.anInt3052 = i_15_
-            aBoolean3065 = (var_ha!!.method3682() && class51.aBoolean894 && !aBoolean3069)
+            aBoolean3065 = (var_renderer!!.method3682() && class51.aBoolean894 && !aBoolean3069)
             if (i_18_ != -1) aBoolean3064 = true
             method1666(69.toByte(), i_18_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bv.<init>(" + (if (var_ha != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bv.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
         }
     }
 
-    fun method1674(i: Int, var_ha: ha?) {
+    fun method1674(i: Int, var_renderer: Renderer?) {
         if (i != -1) aBoolean3064 = false
         if (aR3071 != null) {
             method1301(aR3071, aByte3067.toInt(), (aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), aBooleanArray3072)

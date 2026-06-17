@@ -447,7 +447,7 @@ class Class88 {
                                 Class14_Sub4.method254(2, (-124).toByte())
                                 Class130_Sub1.method1135(0)
                                 Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
-                                ha.anInt4581 = -1
+                                Renderer.anInt4581 = -1
                                 if (Class348_Sub3.aClass114_6584 != Class19.aClass114_304) method3120(-92)
                                 else Class90.method853(99.toByte())
                                 if (i_13_ != Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("lswp pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_13_)

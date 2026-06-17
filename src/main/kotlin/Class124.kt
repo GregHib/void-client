@@ -1107,8 +1107,8 @@ class Class124 {
             val dimension = canvas.getSize()
             if (i.toInt() != -99) method1096(57)
             method828(38.toByte(), dimension.height, dimension.width)
-            if (Class348_Sub49.anInt7207 != 1) Class21.aHa326!!.method3643(canvas, Class59_Sub1.anInt5283, Class107.anInt1651)
-            else Class21.aHa326!!.method3643(canvas, Class348_Sub16_Sub1.anInt8854, Class239_Sub16.anInt6008)
+            if (Class348_Sub49.anInt7207 != 1) Class21.aRenderer326!!.method3643(canvas, Class59_Sub1.anInt5283, Class107.anInt1651)
+            else Class21.aRenderer326!!.method3643(canvas, Class348_Sub16_Sub1.anInt8854, Class239_Sub16.anInt6008)
         }
     }
 }

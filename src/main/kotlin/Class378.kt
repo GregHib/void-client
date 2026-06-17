@@ -5,7 +5,7 @@ import jagdx.ue.a
 import java.awt.Canvas
 import java.awt.Rectangle
 
-class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, class53: Class53?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_renderConfig: RenderConfig?, class45: Class45?, i_39_: Int) : ha_Sub3(canvas, class53, var_renderConfig, class45, i_39_, 0) {
+class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, class53: Class53?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_renderConfig: RenderConfig?, class45: Class45?, i_39_: Int) : NativeRenderer(canvas, class53, var_renderConfig, class45, i_39_, 0) {
     private val aBooleanArray9784: BooleanArray
     private var anInt9785 = 0
     private var aBooleanArray9786: BooleanArray?
@@ -791,7 +791,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         }
 
         @JvmStatic
-        fun createToolkit(canvas: Canvas?, var_renderConfig: RenderConfig?, class45: Class45?, integer: Int): ha {
+        fun createToolkit(canvas: Canvas?, var_renderConfig: RenderConfig?, class45: Class45?, integer: Int): Renderer {
             var class378: Class378? = null
             val class378_19_: Class378?
             try {

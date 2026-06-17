@@ -40,7 +40,7 @@ class Class290 internal constructor(var aBoolean3709: Boolean) {
             anInt3716++
             if (i.toInt() == -9) {
                 Class239_Sub19.anInt6043 = Class239_Sub19.anInt6043 shl 2
-                if (Class348_Sub8.aHa6654!!.method3670()) Class239_Sub19.anInt6043 += 512
+                if (Class348_Sub8.aRenderer6654!!.method3670()) Class239_Sub19.anInt6043 += 512
                 method1626(1, false)
             }
         }

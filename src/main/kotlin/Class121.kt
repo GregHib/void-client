@@ -46,12 +46,12 @@ object Class121 {
     }
 
     @JvmStatic
-    fun method1083(var_ha: ha?, i: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {
+    fun method1083(var_renderer: Renderer?, i: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {
         anInt1798++
-        Class21.aHa326 = var_ha
-        Class51.aClass101_905 = Class21.aHa326!!.method3654()
-        Class44.aClass101_624 = Class21.aHa326!!.method3654()
-        r.aClass101_9720 = Class21.aHa326!!.method3654()
+        Class21.aRenderer326 = var_renderer
+        Class51.aClass101_905 = Class21.aRenderer326!!.method3654()
+        Class44.aClass101_624 = Class21.aRenderer326!!.method3654()
+        r.aClass101_9720 = Class21.aRenderer326!!.method3654()
         Class348_Sub42_Sub9_Sub1.anInt10444 = i_4_
         Class348_Sub49.anInt7207 = 0
         Class211.anInt2747 = i

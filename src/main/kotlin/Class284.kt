@@ -42,7 +42,7 @@ class Class284 {
         var anIntArrayArray3677: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(2, 4, 6, 0), intArrayOf(0, 2, 4, 6), intArrayOf(0, 2, 4), intArrayOf(4, 0, 2), intArrayOf(2, 4, 0), intArrayOf(0, 2, 4), intArrayOf(6, 0, 1, 2, 4, 5), intArrayOf(0, 4, 7, 6), intArrayOf(4, 7, 6, 0), intArrayOf(0, 8, 6, 2, 9, 4), intArrayOf(2, 9, 4, 0, 8, 6), intArrayOf(2, 11, 4, 6, 10, 0), intArrayOf(2, 4, 6, 0))
         fun method2116(i: Int): Int {
             anInt3665++
-            var var_ha = Class348_Sub8.aHa6654
+            var var_ha = Class348_Sub8.aRenderer6654
             var bool = false
             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -5766) != 0) {
                 val canvas = Canvas()

@@ -2,7 +2,7 @@ import Class299.Companion.method2253
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.min
 
-class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
+class Class280 internal constructor(var_ha_Sub3: NativeRenderer) {
     private var anInt3626 = 0
     private val anIntArray3627 = IntArray(64)
     private val anInterface5_Impl1_3630: Interface5_Impl1
@@ -13,7 +13,7 @@ class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
     private val aClass130_3637: Class130
     private val anInterface5_Impl1_3638: Interface5_Impl1
     private var aClass318_Sub9_Sub2ArrayArray3642: Array<Array<Class318_Sub9_Sub2?>?>?
-    private fun method2098(var_ha_Sub3: ha_Sub3, i: Int, i_0_: Int) {
+    private fun method2098(var_ha_Sub3: NativeRenderer, i: Int, i_0_: Int) {
         anInt3629++
         Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093
         val i_1_ = 75 % ((2 - i) / 34)
@@ -24,7 +24,7 @@ class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
         var_ha_Sub3.method3942(5)
     }
 
-    private fun method2099(i: Int, var_ha_Sub3: ha_Sub3) {
+    private fun method2099(i: Int, var_ha_Sub3: NativeRenderer) {
         anInt3628++
         var_ha_Sub3.method3946(i + -26358, true)
         var_ha_Sub3.method3865(true, 54)
@@ -32,13 +32,13 @@ class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
         if (Class59_Sub1.aFloat5299 != var_ha_Sub3.aFloat8093) var_ha_Sub3.xa(Class59_Sub1.aFloat5299)
     }
 
-    fun method2100(i: Byte, var_ha_Sub3: ha_Sub3?) {
+    fun method2100(i: Byte, var_ha_Sub3: NativeRenderer?) {
         anInterface5_Impl1_3638.method20(786336, 123.toByte(), 24)
         val i_2_ = -125 / ((i - 65) / 49)
         anInt3625++
     }
 
-    fun method2101(var_ha_Sub3: ha_Sub3?, class98: Class98?, i: Int, i_3_: Int) {
+    fun method2101(var_ha_Sub3: NativeRenderer?, class98: Class98?, i: Int, i_3_: Int) {
         try {
             anInt3633++
             if (var_ha_Sub3!!.aClass101_Sub2_8080 != null) {
@@ -126,7 +126,7 @@ class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
         }
     }
 
-    private fun method2102(bool: Boolean, var_ha_Sub3: ha_Sub3, i: Int) {
+    private fun method2102(bool: Boolean, var_ha_Sub3: NativeRenderer, i: Int) {
         anInt3640++
         var i_20_ = 0
         val class101_sub2 = var_ha_Sub3.method3948(-22036)
@@ -341,7 +341,7 @@ class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
         }
     }
 
-    private fun method2103(i: Byte, var_ha_Sub3: ha_Sub3) {
+    private fun method2103(i: Byte, var_ha_Sub3: NativeRenderer) {
         if (i.toInt() != -33) aClass318_Sub9_Sub2ArrayArray3642 = null
         anInt3639++
         Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093

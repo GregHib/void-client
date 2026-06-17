@@ -32,9 +32,9 @@ class Class211 {
         anInt2740 = i_29_
     }
 
-    private fun method1541(i: Int, var_ha: ha, i_33_: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int) {
+    private fun method1541(i: Int, var_renderer: Renderer, i_33_: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int) {
         anInt2736++
-        if (i_35_ == 3) this.aClass348_Sub1_2745 = var_ha.method3690(i_34_, i, i_33_, i_37_, i_36_, 1.0f)
+        if (i_35_ == 3) this.aClass348_Sub1_2745 = var_renderer.method3690(i_34_, i, i_33_, i_37_, i_36_, 1.0f)
     }
 
     private fun method1542(i: Int) {
@@ -234,7 +234,7 @@ class Class211 {
         method1542(32402)
     }
 
-    internal constructor(var_ha: ha?, class348_sub49: Class348_Sub49?, i: Int) {
+    internal constructor(var_renderer: Renderer?, class348_sub49: Class348_Sub49?, i: Int) {
         try {
             if (Class291.anIntArray3726 == null) method1177(122.toByte())
             this.anInt2731 = class348_sub49!!.readUnsignedByte(255)
@@ -263,9 +263,9 @@ class Class211 {
             anInt2739 = (0xe0 and i_53_) shl 3
             this.anInt2734 = 0x1f and i_53_
             if (this.anInt2734 != 31) method1542(32402)
-            method1541(i_45_, var_ha!!, i_44_, i_43_, 3, i_52_, i_46_)
+            method1541(i_45_, var_renderer!!, i_44_, i_43_, 3, i_52_, i_46_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ro.<init>(" + (if (var_ha != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ro.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

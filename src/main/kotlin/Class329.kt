@@ -43,12 +43,12 @@ object Class329 {
         }
     }
 
-    fun method2619(var_ha: ha, `is`: IntArray, i: Int, is_9_: IntArray?, is_10_: IntArray) {
-        method2623(var_ha, `is`, 0, `is`.size, i, is_9_, is_10_)
+    fun method2619(var_renderer: Renderer, `is`: IntArray, i: Int, is_9_: IntArray?, is_10_: IntArray) {
+        method2623(var_renderer, `is`, 0, `is`.size, i, is_9_, is_10_)
     }
 
-    fun method2620(var_ha: ha, `is`: IntArray, i: Int) {
-        Class329.method2623(var_ha, `is`, 0, `is`.size, i, null, null)
+    fun method2620(var_renderer: Renderer, `is`: IntArray, i: Int) {
+        Class329.method2623(var_renderer, `is`, 0, `is`.size, i, null, null)
     }
 
     @JvmStatic
@@ -86,9 +86,9 @@ object Class329 {
         }
     }
 
-    private fun method2623(var_ha: ha, `is`: IntArray, i: Int, i_19_: Int, i_20_: Int, is_21_: IntArray?, is_22_: IntArray?) {
+    private fun method2623(var_renderer: Renderer, `is`: IntArray, i: Int, i_19_: Int, i_20_: Int, is_21_: IntArray?, is_22_: IntArray?) {
         val is_23_ = IntArray(4)
-        var_ha.K(is_23_)
+        var_renderer.K(is_23_)
         check(!(is_21_ != null && is_23_[3] - is_23_[1] != is_21_.size))
         method2624()
         method2622(`is`, i, i_19_)
@@ -103,7 +103,7 @@ object Class329 {
                 if (i_25_ > is_21_[i_27_] + is_22_!![i_27_] + is_23_[0]) i_25_ = is_21_[i_27_] + is_22_[i_27_] + is_23_[0]
                 if (i_25_ - i_24_ <= 0) continue
             }
-            var_ha.U(i_24_, i_26_, i_25_ - i_24_, i_20_, 1)
+            var_renderer.U(i_24_, i_26_, i_25_ - i_24_, i_20_, 1)
         }
     }
 

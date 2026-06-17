@@ -32,22 +32,22 @@ object Class245 {
         val i = 10
         val i_1_ = 30
         if (Class348_Sub18.anInt6818 != 0 && Class362.aClass324_4456 != null) {
-            Class9.aHa171!!.K(Class348_Sub40_Sub10.anIntArray9183)
-            for (i_2_ in Class17.anIntArray256!!.indices) Class9.aHa171!!.method3660((Class17.anIntArray256!![i_2_] + Class345.anIntArray4271!![i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183!![3] - Class348_Sub40_Sub10.anIntArray9183!![1]), Class348_Sub40_Sub10.anIntArray9183!![1], true)
+            Class9.aRenderer171!!.K(Class348_Sub40_Sub10.anIntArray9183)
+            for (i_2_ in Class17.anIntArray256!!.indices) Class9.aRenderer171!!.method3660((Class17.anIntArray256!![i_2_] + Class345.anIntArray4271!![i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183!![3] - Class348_Sub40_Sub10.anIntArray9183!![1]), Class348_Sub40_Sub10.anIntArray9183!![1], true)
             for (i_3_ in 0..<Class348_Sub42_Sub10.anInt9577) {
                 val class338 = Class348_Sub42_Sub19.aClass338Array9700!![i_3_]!!
-                Class9.aHa171!!.H(class338.anIntArray4187!![0], class338.anIntArray4191[0], class338.anIntArray4184[0], Class177.anIntArray4670)
-                Class9.aHa171!!.H(class338.anIntArray4187!![1], class338.anIntArray4191[1], class338.anIntArray4184[1], Class13.anIntArray222)
-                Class9.aHa171!!.H(class338.anIntArray4187!![2], class338.anIntArray4191[2], class338.anIntArray4184[2], anIntArray3169)
-                Class9.aHa171!!.H(class338.anIntArray4187!![3], class338.anIntArray4191[3], class338.anIntArray4184[3], Class99.anIntArray1574)
+                Class9.aRenderer171!!.H(class338.anIntArray4187!![0], class338.anIntArray4191[0], class338.anIntArray4184[0], Class177.anIntArray4670)
+                Class9.aRenderer171!!.H(class338.anIntArray4187!![1], class338.anIntArray4191[1], class338.anIntArray4184[1], Class13.anIntArray222)
+                Class9.aRenderer171!!.H(class338.anIntArray4187!![2], class338.anIntArray4191[2], class338.anIntArray4184[2], anIntArray3169)
+                Class9.aRenderer171!!.H(class338.anIntArray4187!![3], class338.anIntArray4191[3], class338.anIntArray4184[3], Class99.anIntArray1574)
                 if (Class177.anIntArray4670!![2] != -1 && Class13.anIntArray222!![2] != -1 && anIntArray3169!![2] != -1 && Class99.anIntArray1574!![2] != -1) {
                     var i_4_ = -65536
                     if (class338.aByte4192.toInt() == 4) i_4_ = -16776961
-                    Class9.aHa171!!.method3645(Class177.anIntArray4670!![1], Class177.anIntArray4670!![0], Class13.anIntArray222!![0], -8003, i_4_, Class13.anIntArray222!![1])
-                    Class9.aHa171!!.method3645(Class13.anIntArray222!![1], Class13.anIntArray222!![0], anIntArray3169!![0], -8003, i_4_, anIntArray3169!![1])
-                    Class9.aHa171!!.method3645(anIntArray3169!![1], anIntArray3169!![0], Class99.anIntArray1574!![0], -8003, i_4_, Class99.anIntArray1574!![1])
-                    Class9.aHa171!!.method3645(Class99.anIntArray1574!![1], Class99.anIntArray1574!![0], Class177.anIntArray4670!![0], -8003, i_4_, Class177.anIntArray4670!![1])
-                    Class9.aHa171!!.method3645(Class177.anIntArray4670!![1], Class177.anIntArray4670!![0], anIntArray3169!![0], -8003, i_4_, anIntArray3169!![1])
+                    Class9.aRenderer171!!.method3645(Class177.anIntArray4670!![1], Class177.anIntArray4670!![0], Class13.anIntArray222!![0], -8003, i_4_, Class13.anIntArray222!![1])
+                    Class9.aRenderer171!!.method3645(Class13.anIntArray222!![1], Class13.anIntArray222!![0], anIntArray3169!![0], -8003, i_4_, anIntArray3169!![1])
+                    Class9.aRenderer171!!.method3645(anIntArray3169!![1], anIntArray3169!![0], Class99.anIntArray1574!![0], -8003, i_4_, Class99.anIntArray1574!![1])
+                    Class9.aRenderer171!!.method3645(Class99.anIntArray1574!![1], Class99.anIntArray1574!![0], Class177.anIntArray4670!![0], -8003, i_4_, Class177.anIntArray4670!![1])
+                    Class9.aRenderer171!!.method3645(Class177.anIntArray4670!![1], Class177.anIntArray4670!![0], anIntArray3169!![0], -8003, i_4_, anIntArray3169!![1])
                 }
             }
             Class362.aClass324_4456!!.method2576(("Dynamic: " + Class86.anInt1477 + "/" + 5000), -256, i_1_ + 45, i, -16777216, -120)
@@ -66,7 +66,7 @@ object Class245 {
                     val i_6_ = f.toInt()
                     Class14.anIntArray5091!![i_5_] = i_6_ or (i_6_ shl 8) or (i_6_ shl 16) or 0xffffff.inv()
                 }
-                val class105 = Class9.aHa171!!.method3662(Class306.anInt3872, Class14.anIntArray5091, 94.toByte(), 0, Class306.anInt3872, Class86.anInt1480)
+                val class105 = Class9.aRenderer171!!.method3662(Class306.anInt3872, Class14.anIntArray5091, 94.toByte(), 0, Class306.anInt3872, Class86.anInt1480)
                 class105.method964(i, 170, 1, 0, 0)
             }
         }

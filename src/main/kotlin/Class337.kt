@@ -5,8 +5,8 @@ import Class348.Companion.method2709
 /* Class337 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class337 internal constructor(var_ha_Sub2: ha_Sub2?, l: Long, class242s: Array<Class242?>?) {
-    private val aHa_Sub2_4173: ha_Sub2?
+class Class337 internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, class242s: Array<Class242?>?) {
+    private val aHa_Sub2_4173: OpenGlRenderer?
     var aLong4178: Long = 0
 
     @Throws(Throwable::class)

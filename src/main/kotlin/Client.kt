@@ -523,9 +523,9 @@ import Player.Companion.method2458
 import RuntimeException_Sub1.Companion.method4010
 import NativeSprite.Companion.method161
 import RasterSprite.Companion.method167
-import ha.Companion.method3680
-import ha_Sub2.Companion.method3736
-import ha_Sub3.Companion.method3870
+import Renderer.Companion.method3680
+import OpenGlRenderer.Companion.method3736
+import NativeRenderer.Companion.method3870
 import r.Companion.method3285
 import r_Sub1.Companion.method3288
 import r_Sub2.Companion.method3295
@@ -1264,7 +1264,7 @@ class Client : Applet_Sub1() {
         if (Class184.aBoolean2469) method2405(i + -110)
         anInt5170++
         method556(false)
-        if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654!!.method3635(89.toByte())
+        if (Class348_Sub8.aRenderer6654 != null) Class348_Sub8.aRenderer6654!!.method3635(89.toByte())
         if (Class34.aFrame476 != null) {
             method527(Class34.aFrame476, Class348_Sub23_Sub1.aClass297_8992, false)
             Class34.aFrame476 = null
@@ -1355,9 +1355,9 @@ class Client : Applet_Sub1() {
             val string_27_ = this.getParameter("country")
             if (string_27_ != null) {
                 try {
-                    ha.anInt4583 = string_27_.toInt()
+                    Renderer.anInt4583 = string_27_.toInt()
                 } catch (exception: Exception) {
-                    ha.anInt4583 = 0
+                    Renderer.anInt4583 = 0
                 }
             }
             Class222.anInt2884 = this.getParameter("colourid")!!.toInt()
@@ -1391,14 +1391,14 @@ class Client : Applet_Sub1() {
             Class14_Sub1.aString8605 = this.getParameter("additionalInfo")
             if (Class14_Sub1.aString8605 != null && Class14_Sub1.aString8605!!.length > 50) Class14_Sub1.aString8605 = null
             if (Class10.aClass230_186 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
-                ha_Sub2.anInt7666 = 503
+                OpenGlRenderer.anInt7666 = 503
                 Class92.anInt1524 = 765
             } else if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class14_Sub4.aClass230_8638) {
                 Class92.anInt1524 = 640
-                ha_Sub2.anInt7666 = 480
+                OpenGlRenderer.anInt7666 = 480
             }
             Class79.aClient1367 = this
-            this.method95(Class92.anInt1524, 634, ha_Sub2.anInt7666, Class11.aClass231_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985, 50)
+            this.method95(Class92.anInt1524, 634, OpenGlRenderer.anInt7666, Class11.aClass231_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985, 50)
         }
     }
 
@@ -1574,7 +1574,7 @@ class Client : Applet_Sub1() {
             method3260(66)
             Class182.aClass346_2449!!.method2695(67)
             Class258_Sub4.aClass373_8552!!.method3589(0)
-            if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654!!.method3646(method599(-74).toInt())
+            if (Class348_Sub8.aRenderer6654 != null) Class348_Sub8.aRenderer6654!!.method3646(method599(-74).toInt())
             method1315(93)
             Class253.anInt3246 = 0
             Class348_Sub42_Sub19.anInt9699 = 0
@@ -1631,7 +1631,7 @@ class Client : Applet_Sub1() {
                 method113(112.toByte())
                 method843(67.toByte())
             }
-            method294(Class348_Sub8.aHa6654, 0)
+            method294(Class348_Sub8.aRenderer6654, 0)
             Class318_Sub1_Sub3.aClass262_8744!!.method1997(8)
         }
     }
@@ -1665,7 +1665,7 @@ class Client : Applet_Sub1() {
             if (bool_118_ && Class74.aBoolean1236 && Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042!!.method2087(-115)
             if (Class260.method1977((-79).toByte(), Class240.anInt4674)) {
                 if ((Class348_Sub16_Sub2.aLong8866 != 0L) && method599(-98) > Class348_Sub16_Sub2.aLong8866) method830(method3229(-128), Class321.anInt4005, 102.toByte(), false, Class348_Sub40_Sub25.anInt9335)
-                else if (!Class348_Sub8.aHa6654!!.method3655() && Class203.aBoolean2674) method3327(1406)
+                else if (!Class348_Sub8.aRenderer6654!!.method3655() && Class203.aBoolean2674) method3327(1406)
             }
             if (Class34.aFrame476 == null) {
                 val container: Container?
@@ -1681,7 +1681,7 @@ class Client : Applet_Sub1() {
                     i_119_ -= insets.top - -insets.bottom
                 }
                 if (i != Class272.anInt3473 || i_119_ != Class348_Sub22.anInt6857 || RuntimeException_Sub1.aBoolean4604) {
-                    if (Class348_Sub8.aHa6654 == null || Class348_Sub8.aHa6654!!.method3695()) method3556(false)
+                    if (Class348_Sub8.aRenderer6654 == null || Class348_Sub8.aRenderer6654!!.method3695()) method3556(false)
                     else {
                         Class348_Sub22.anInt6857 = i_119_
                         Class272.anInt3473 = i
@@ -1697,7 +1697,7 @@ class Client : Applet_Sub1() {
                 Class49.aBoolean4726 = false
             }
             if (bool_120_) Class140.method1170((-116).toByte())
-            if ((Class348_Sub8.aHa6654 != null && Class348_Sub8.aHa6654!!.method3655()) || method3229(-91) != 1) method3466(-77)
+            if ((Class348_Sub8.aRenderer6654 != null && Class348_Sub8.aRenderer6654!!.method3655()) || method3229(-91) != 1) method3466(-77)
             if (Class139.method1167(Class240.anInt4674, (-113).toByte())) method1309(bool_120_, 117)
             else if (!method2114(Class240.anInt4674, bool)) {
                 if (!method3197(Class240.anInt4674, 56.toByte())) {
@@ -1705,29 +1705,29 @@ class Client : Applet_Sub1() {
                         if (Class36.anInt489 == 1) {
                             if (Class268.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = Class268.anInt3441
                             val i = ((-Class268.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115)
-                            method3511(true, aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654)
+                            method3511(true, aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
                         } else if (Class36.anInt489 == 2) {
                             if (Class31.anInt443 < Class154.anInt2101) Class31.anInt443 = Class154.anInt2101
                             val i = (((Class31.anInt443 - Class154.anInt2101) * 50 / Class31.anInt443) + 50)
-                            method3511(true, aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654)
-                        } else method3511(true, aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654)
+                            method3511(true, aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
+                        } else method3511(true, aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
                     } else if (Class240.anInt4674 != 10) {
-                        if (Class240.anInt4674 == 13) method3511(false, aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3497!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498!!.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aHa6654)
+                        if (Class240.anInt4674 == 13) method3511(false, aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3497!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498!!.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aRenderer6654)
                     } else Class302.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)
-            if (ha_Sub3.anInt8045 == 3) {
+            if (NativeRenderer.anInt8045 == 3) {
                 var i = 0
                 while (Class348_Sub38.anInt7008 > i) {
                     val rectangle = Class180.aRectangleArray2371!![i]
-                    if (Class175.aBooleanArray2326!![i]) Class348_Sub8.aHa6654!!.method3668(rectangle!!.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46)
-                    else if (!Class268.aBooleanArray3438!![i]) Class348_Sub8.aHa6654!!.method3668(rectangle!!.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66)
-                    else Class348_Sub8.aHa6654!!.method3668(rectangle!!.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40)
+                    if (Class175.aBooleanArray2326!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46)
+                    else if (!Class268.aBooleanArray3438!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66)
+                    else Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40)
                     i++
                 }
             }
-            if (method3263(bool)) method207(Class348_Sub8.aHa6654, 124.toByte())
-            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794 && Class260.method1977((-79).toByte(), Class240.anInt4674) && ha_Sub3.anInt8045 == 0 && method3229(-85) == 1 && !bool_120_) {
+            if (method3263(bool)) method207(Class348_Sub8.aRenderer6654, 124.toByte())
+            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794 && Class260.method1977((-79).toByte(), Class240.anInt4674) && NativeRenderer.anInt8045 == 0 && method3229(-85) == 1 && !bool_120_) {
                 var i = 0
                 var i_121_ = 0
                 while ((Class348_Sub38.anInt7008 > i_121_)) {
@@ -1738,7 +1738,7 @@ class Client : Applet_Sub1() {
                     i_121_++
                 }
                 try {
-                    if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aHa6654!!.method3657(Class190.aRectangleArray2554, i, 66)
+                    if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aRenderer6654!!.method3657(Class190.aRectangleArray2554, i, 66)
                     else method1168(i, 0, Class190.aRectangleArray2554)
                 } catch (exception_sub1: Exception_Sub1) {
                     /* empty */
@@ -1751,7 +1751,7 @@ class Client : Applet_Sub1() {
                 }
                 try {
                     if (Class59_Sub1.aBoolean5300) method395(107)
-                    else Class348_Sub8.aHa6654!!.method3689(104.toByte())
+                    else Class348_Sub8.aRenderer6654!!.method3689(104.toByte())
                 } catch (exception_sub1: Exception_Sub1) {
                     method1242((exception_sub1.message + " (Recovered) " + method81(79.toByte())), exception_sub1, 15004)
                     method3553(false, 113.toByte(), 0)
@@ -2010,7 +2010,7 @@ class Client : Applet_Sub1() {
                     Class375.aBoolean4540 = false
                     Class251.anInt3234 = 0
                     Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987)
-                    ha.anInt4583 = 0
+                    Renderer.anInt4583 = 0
                     Class14_Sub1.aString8605 = null
                     val var_client = Client()
                     Class79.aClient1367 = var_client
@@ -2063,7 +2063,7 @@ class Client : Applet_Sub1() {
                         }
                         if (class46 == Class289.aClass46_3701 && Exception_Sub1.method141(Class289.aClass46_3701!!, 125.toByte()) != null) {
                             Class50_Sub1.aBoolean5221 = true
-                            ha_Sub3.anInt8001 = i_43_
+                            NativeRenderer.anInt8001 = i_43_
                             Class348_Sub40_Sub13.anInt9203 = i_44_
                         }
                         if (class46.aBoolean676 || i_45_ < i_47_ && i_46_ < i_48_) {
@@ -2151,10 +2151,10 @@ class Client : Applet_Sub1() {
                                 if (class46.anInt765 != 0) {
                                     if ((class46.anInt765 == Class239_Sub10.anInt5943) || (class46.anInt765 == Class312.anInt3932)) {
                                         Class348_Sub1.aClass46_6561 = class46
-                                        if (Class259.aClass305_3304 != null) Class259.aClass305_3304!!.method2292(123, Class348_Sub8.aHa6654!!, class46.anInt789)
+                                        if (Class259.aClass305_3304 != null) Class259.aClass305_3304!!.method2292(123, Class348_Sub8.aRenderer6654!!, class46.anInt789)
                                         if (class46.anInt765 == Class239_Sub10.anInt5943) {
                                             if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
-                                                Class239_Sub24.method1823(Class348_Sub8.aHa6654!!, i_38_, i_39_, (-50).toByte())
+                                                Class239_Sub24.method1823(Class348_Sub8.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
                                                 var class318_sub6 = (InputStream_Sub2.aClass243_83!!.method1872(8) as Class318_Sub6?)
                                                 while (class318_sub6 != null) {
                                                     if (i_40_ >= (class318_sub6.anInt6429) && (i_40_ < (class318_sub6.anInt6426)) && (i_41_ >= (class318_sub6.anInt6427)) && (i_41_ < (class318_sub6.anInt6425))) {
@@ -2168,7 +2168,7 @@ class Client : Applet_Sub1() {
                                         }
                                     }
                                     if (class46.anInt765 == Class290.anInt3717) {
-                                        if (class46.method425((Class348_Sub8.aHa6654!!), 3.toByte()) != null && (Class259.anInt3306 == 0 || Class259.anInt3306 == 3) && !Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
+                                        if (class46.method425((Class348_Sub8.aRenderer6654!!), 3.toByte()) != null && (Class259.anInt3306 == 0 || Class259.anInt3306 == 3) && !Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                             var i_58_ = i_40_ - i_43_
                                             var i_59_ = i_41_ - i_44_
                                             val i_60_ = (class46.anIntArray677!![i_59_])
@@ -2505,7 +2505,7 @@ class Client : Applet_Sub1() {
                                     Class348_Sub1_Sub2.aClass262_8810!!.method1999(class348_sub36, -20180)
                                 }
                             }
-                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, Class123.aClass25_1813, Class30.aClass84_413)!!.method2292(84, Class348_Sub8.aHa6654!!, class46.anInt789)
+                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, Class123.aClass25_1813, Class30.aClass84_413)!!.method2292(84, Class348_Sub8.aRenderer6654!!, class46.anInt789)
                             method273(class46, -2835)
                             if (class46.anInt774 == 0) {
                                 method107(class46s, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)

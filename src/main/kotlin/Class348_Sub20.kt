@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glPushMatrix
 import jaggl.OpenGL.Companion.glScalef
 
 class Class348_Sub20 internal constructor(private val aS_Sub2_6839: s_Sub2, var anInt6841: Int, i_38_: Int, var anInt6825: Int, var anInt6833: Int, var anInt6826: Int) : Class348() {
-    private var aHa_Sub2_6831: ha_Sub2?
+    private var aHa_Sub2_6831: OpenGlRenderer?
     var aFloat6832: Float
     private var aNativeHeapBuffer6840: NativeHeapBuffer? = null
     private val anIntArray6842: IntArray

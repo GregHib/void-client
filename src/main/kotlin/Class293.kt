@@ -5,7 +5,7 @@ import kotlin.concurrent.Volatile
 /* Class293 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class293 internal constructor(private val anInt3749: Int, private val aHa3746: ha) : Runnable {
+class Class293 internal constructor(private val anInt3749: Int, private val aRenderer3746: Renderer) : Runnable {
     private var aLong3742: Long = 0
     private var aClass315_3743: Class315? = null
 
@@ -43,7 +43,7 @@ class Class293 internal constructor(private val anInt3749: Int, private val aHa3
     }
 
     private fun method2207() {
-        aHa3746.method3659(anInt3749)
+        aRenderer3746.method3659(anInt3749)
         while (!aBoolean3750 && aBoolean3745) {
             if (aClass315_3743 == null || aClass315_3743!!.method2360(-112)) {
                 aBoolean3744 = false
@@ -60,7 +60,7 @@ class Class293 internal constructor(private val anInt3749: Int, private val aHa3
                 val class318 = aClass315_3743!!.method2362(25061)
                 if (class318 is Class318_Sub1) {
                     val class318_sub1 = class318
-                    if (class318_sub1.aBoolean6387) class318_sub1.method2387(Class9.aHa171, -127)
+                    if (class318_sub1.aBoolean6387) class318_sub1.method2387(Class9.aRenderer171, -127)
                     else {
                         method365(class318_sub1, aClass348_Sub1Array3748)
                         if (Class362.aClass324_4456 != null) Class362.aClass324_4456!!.method2576(aClass315_3743!!.aString3953, -256, class318_sub1.anInt6380, class318_sub1.anInt6386, -16777216, -114)
@@ -75,7 +75,7 @@ class Class293 internal constructor(private val anInt3749: Int, private val aHa3
                                     val i_2_ = (Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_0_)
                                     val i_3_ = (Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_1_)
                                     if (i_2_ >= 0 && i_2_ < var_s!!.anInt4587 && i_3_ >= 0 && i_3_ < var_s.anInt4590) {
-                                        Class9.aHa171!!.H(i_2_ shl Class362.anInt4459, var_s.method3982((-86).toByte(), i_3_, i_2_), i_3_ shl Class362.anInt4459, anIntArray3747)
+                                        Class9.aRenderer171!!.H(i_2_ shl Class362.anInt4459, var_s.method3982((-86).toByte(), i_3_, i_2_), i_3_ shl Class362.anInt4459, anIntArray3747)
                                         if (method2154(anIntArray3747[0]) == anInt3749 - 1) var_s.method3979(i_2_, i_3_)
                                     }
                                 }
@@ -85,7 +85,7 @@ class Class293 internal constructor(private val anInt3749: Int, private val aHa3
                 }
             }
         }
-        aHa3746.method3678(anInt3749)
+        aRenderer3746.method3678(anInt3749)
         while (aBoolean3750 && aBoolean3745) {
             synchronized(this) {
                 try {

@@ -31,7 +31,7 @@ class Class348_Sub47 : Class348() {
             aClass114_7124 = null
         }
 
-        fun method3324(var_ha: ha?, i: Byte, l: Long) {
+        fun method3324(var_renderer: Renderer?, i: Byte, l: Long) {
             do {
                 try {
                     Class122.anInt1803 = 0
@@ -43,7 +43,7 @@ class Class348_Sub47 : Class348() {
                     var class318_sub10 = Class152.aClass243_2077!!.method1872(8) as Class318_Sub10?
                     if (i > 40) {
                         while ( /**/class318_sub10 != null) {
-                            if (class318_sub10.method2535(var_ha, l)) Class318_Sub1_Sub5.anInt8780++
+                            if (class318_sub10.method2535(var_renderer, l)) Class318_Sub1_Sub5.anInt8780++
                             class318_sub10 = Class152.aClass243_2077!!.method1878((-64).toByte()) as Class318_Sub10?
                         }
                         if (!Class348_Sub16_Sub2.aBoolean8874 || l % 100L != 0L) break
@@ -51,7 +51,7 @@ class Class348_Sub47 : Class348() {
                         println("Emitters: " + Class122.anInt1803 + " Particles: " + Class313.anInt3936 + ". Time taken: " + (-l_1_ + method599(-112)) + "ms")
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw method2929(runtimeexception, ("wm.A(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + l + ')'))
+                    throw method2929(runtimeexception, ("wm.A(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ')'))
                 }
                 break
             } while (false)
@@ -66,14 +66,14 @@ class Class348_Sub47 : Class348() {
         @JvmStatic
         fun method3327(i: Int) {
             if (i == 1406) {
-                if (Class348_Sub8.aHa6654!!.method3694()) {
-                    Class348_Sub8.aHa6654!!.method3701(Class305.aCanvas3869)
+                if (Class348_Sub8.aRenderer6654!!.method3694()) {
+                    Class348_Sub8.aRenderer6654!!.method3701(Class305.aCanvas3869)
                     method2959(-1)
                     if (!Class59_Sub1.aBoolean5300) {
                         val dimension = Class305.aCanvas3869!!.getSize()
-                        Class348_Sub8.aHa6654!!.method3643(Class305.aCanvas3869, dimension.width, dimension.height)
+                        Class348_Sub8.aRenderer6654!!.method3643(Class305.aCanvas3869, dimension.width, dimension.height)
                     } else Class124.method1108((-99).toByte(), Class305.aCanvas3869!!)
-                    Class348_Sub8.aHa6654!!.method3677(Class305.aCanvas3869)
+                    Class348_Sub8.aRenderer6654!!.method3677(Class305.aCanvas3869)
                 } else method3553(false, 100.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
                 anInt7123++
                 Class354.method3466(i + -1347)

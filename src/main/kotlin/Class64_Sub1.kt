@@ -48,7 +48,7 @@ class Class64_Sub1 : Class64 {
     private var anInt5349 = 0
     private var anInt5351: Int
     private var aShort5352: Short = 0
-    private val aHa_Sub1_5353: ha_Sub1
+    private val aHa_Sub1_5353: SoftwareRenderer
     private var anInt5354: Int
     private lateinit var anIntArray5355: IntArray
     private var anIntArray5356: IntArray? = null
@@ -3317,7 +3317,7 @@ class Class64_Sub1 : Class64 {
         }
     }
 
-    internal constructor(var_ha_Sub1: ha_Sub1) {
+    internal constructor(var_ha_Sub1: SoftwareRenderer) {
         anInt5354 = 0
         aBoolean5369 = false
         anInt5351 = 0
@@ -3328,7 +3328,7 @@ class Class64_Sub1 : Class64 {
         aHa_Sub1_5353 = var_ha_Sub1
     }
 
-    internal constructor(var_ha_Sub1: ha_Sub1, class124: Class124, i: Int, i_785_: Int, i_786_: Int, i_787_: Int) {
+    internal constructor(var_ha_Sub1: SoftwareRenderer, class124: Class124, i: Int, i_785_: Int, i_786_: Int, i_787_: Int) {
         anInt5354 = 0
         aBoolean5369 = false
         anInt5351 = 0

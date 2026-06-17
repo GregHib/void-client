@@ -1,10 +1,10 @@
 import Class369_Sub3_Sub1.Companion.method3575
 import Class58.Companion.method535
 import Class89.Companion.method849
-import ha_Sub3.Companion.method3936
+import NativeRenderer.Companion.method3936
 import jaclib.memory.Stream.Companion.c
 
-class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, var_s_Sub3: s_Sub3?, i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
+class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, class330: Class330?, var_s_Sub3: s_Sub3?, i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
     private val anInt1544: Int
     private var anInt1546 = 0
     private var anInt1547 = 0
@@ -13,7 +13,7 @@ class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, v
     private var anInt1558 = -1
     private val anInt1559: Int
     private val aClass330_1560: Class330?
-    private val aHa_Sub3_1561: ha_Sub3?
+    private val aHa_Sub3_1561: NativeRenderer?
     @JvmField
     var aBoolean1562: Boolean = true
     @JvmField
@@ -214,8 +214,8 @@ class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, v
             if (i_0_ != 1) method873(47, 5, null, 1)
         }
 
-        fun method873(i: Int, i_6_: Int, var_ha: ha?, i_7_: Int) {
-            Class60.aHa1098 = var_ha
+        fun method873(i: Int, i_6_: Int, var_renderer: Renderer?, i_7_: Int) {
+            Class60.aRenderer1098 = var_renderer
             Class262.aClass190ArrayArray3335 = Array(i) { arrayOfNulls(i_7_) }
             if (i_6_ == 21719) {
                 anInt1549++

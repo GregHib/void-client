@@ -54,14 +54,14 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     var anInt10561: Int
     @JvmField
     var anInt10564: Int = 0
-    override fun method2387(var_ha: ha?, i: Int) {
+    override fun method2387(var_renderer: Renderer?, i: Int) {
         anInt10533++
-        if (this.aClass154_10536 != null && (this.aBoolean10318 || method2459(0, var_ha, -123))) {
-            val class101 = var_ha!!.method3705()!!
+        if (this.aClass154_10536 != null && (this.aBoolean10318 || method2459(0, var_renderer, -123))) {
+            val class101 = var_renderer!!.method3705()!!
             if (i >= -125) method2457((-106).toByte())
             class101.method895(this.aClass264_10217.method2019((-116).toByte()))
             class101.method891(this.x, -5 + this.anInt6382, this.y)
-            this.method2432(var_ha, -15074, class101, this.aBoolean10318, (this.aClass64Array10323))
+            this.method2432(var_renderer, -15074, class101, this.aBoolean10318, (this.aClass64Array10323))
             this.aClass64Array10323!![2] = null
             this.aClass64Array10323!![1] = this.aClass64Array10323!![2]
             this.aClass64Array10323!![0] = this.aClass64Array10323!![1]
@@ -104,10 +104,10 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         this.anIntArray10317!![0] = i_5_
     }
 
-    override fun method2391(var_ha: ha?, i: Int, i_7_: Int, i_8_: Int): Boolean {
+    override fun method2391(var_renderer: Renderer?, i: Int, i_7_: Int, i_8_: Int): Boolean {
         anInt10562++
-        if (this.aClass154_10536 == null || !method2459(131072, var_ha, 113)) return false
-        val class101 = var_ha!!.method3705()
+        if (this.aClass154_10536 == null || !method2459(131072, var_renderer, 113)) return false
+        val class101 = var_renderer!!.method3705()
         val i_9_ = this.aClass264_10217.method2019((-31).toByte())
         class101.method895(i_9_)
         class101.method891(this.x, this.anInt6382, this.y)
@@ -231,7 +231,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         }
     }
 
-    private fun method2453(i: Int, var_ha: ha?, i_32_: Int, class64: Class64?, i_33_: Int, i_34_: Int, class101: Class101?, i_35_: Int) {
+    private fun method2453(i: Int, var_renderer: Renderer?, i_32_: Int, class64: Class64?, i_33_: Int, i_34_: Int, class101: Class101?, i_35_: Int) {
         do {
             try {
                 anInt10548++
@@ -239,21 +239,21 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     val i_36_ = i * i + i_34_ * i_34_
                     if (i_36_ >= 262144 && i_32_ >= i_36_) {
                         val i_37_ = 0x3fff and (atan2(i.toDouble(), i_34_.toDouble()) * 2607.5945876176133).toInt()
-                        val class64_38_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (-35).toByte(), var_ha!!))
+                        val class64_38_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (-35).toByte(), var_renderer!!))
                         if (class64_38_ == null) break
-                        var_ha!!.C(false)
+                        var_renderer!!.C(false)
                         class64_38_.method615(class101, null, 0)
-                        var_ha.C(true)
+                        var_renderer.C(true)
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + i_35_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + i_35_ + ')'))
             }
             break
         } while (false)
     }
 
-    private fun method2454(i: Int, i_39_: Int, i_40_: Int, i_41_: Int, class64: Class64?, i_42_: Int, class101: Class101?, var_ha: ha?, i_43_: Int) {
+    private fun method2454(i: Int, i_39_: Int, i_40_: Int, i_41_: Int, class64: Class64?, i_42_: Int, class101: Class101?, var_renderer: Renderer?, i_43_: Int) {
         do {
             try {
                 if (i != 6253) this.aString10544 = null
@@ -261,20 +261,20 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                 val i_44_ = i_43_ * i_43_ + i_39_ * i_39_
                 if (i_44_ >= 262144 && i_44_ <= i_42_) {
                     val i_45_ = ((2607.5945876176133 * atan2(i_39_.toDouble(), i_43_.toDouble())).toInt() and 0x3fff)
-                    val class64_46_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (-35).toByte(), var_ha!!))
+                    val class64_46_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (-35).toByte(), var_renderer!!))
                     if (class64_46_ == null) break
-                    var_ha!!.C(false)
+                    var_renderer!!.C(false)
                     class64_46_.method608(class101, null, i_40_, 0)
-                    var_ha.C(true)
+                    var_renderer.C(true)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_43_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (class101 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
             }
             break
         } while (false)
     }
 
-    override fun method2381(var_ha: ha?, i: Int): Class30? {
+    override fun method2381(var_renderer: Renderer?, i: Int): Class30? {
         if (i != 7) this.aString10544 = null
         anInt10518++
         return null
@@ -286,13 +286,13 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         throw IllegalStateException()
     }
 
-    override fun method2380(var_ha: ha?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_47_: Int, i_48_: Byte, i_49_: Int) {
+    override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: Class318_Sub1?, i_47_: Int, i_48_: Byte, i_49_: Int) {
         try {
             if (i_48_ >= -106) anInt10520 = 116
             anInt10545++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ke.N(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ke.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'))
         }
     }
 
@@ -320,10 +320,10 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         } else method2449(i, i_52_, 112.toByte())
     }
 
-    override fun method2386(i: Int, var_ha: ha?): Class318_Sub4? {
+    override fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4? {
         anInt10527++
-        if (this.aClass154_10536 == null || !method2459(2048, var_ha, -95)) return null
-        val class101 = var_ha!!.method3705()
+        if (this.aClass154_10536 == null || !method2459(2048, var_renderer, -95)) return null
+        val class101 = var_renderer!!.method3705()
         val i_53_ = this.aClass264_10217.method2019((-126).toByte())
         class101.method895(i_53_)
         val class357 = (Class147.aClass357ArrayArrayArray2029!![this.plane.toInt()]!![this.x shr Class362.anInt4459]!![this.y shr Class362.anInt4459])
@@ -340,14 +340,14 @@ class Player : Class318_Sub1_Sub3_Sub3() {
             if (class225.aBoolean2913 && (this.aClass154_10536!!.anInt2093 == -1 || Class189.aClass278_2529!!.method2079(this.aClass154_10536!!.anInt2093, i + -2).aBoolean1369)) {
                 val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (Class10.aClass87_191!!.method835(this.anInt10286, 7)) else null)
                 val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (Class10.aClass87_191!!.method835(this.anInt10268, 7)))
-                val class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_ha, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
+                val class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
                 if (class64 != null) {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).size, true, false))
                     this.aBoolean10324 = true
-                    var_ha.C(false)
+                    var_renderer.C(false)
                     if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), Class132.anInt1906, 0)
                     else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), 0)
-                    var_ha.C(true)
+                    var_renderer.C(true)
                 }
             }
         }
@@ -362,8 +362,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                             val npc = (class348_sub22.aNpc_6859)!!
                             val i_57_ = (-(Class132.aPlayer_1907!!.x) + npc.x)
                             val i_58_ = (-(Class132.aPlayer_1907!!.y) + npc.y)
-                            if (Class305.aBoolean3870) method2454(6253, i_57_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_ha, i_58_)
-                            else method2453(i_57_, var_ha, 92160000, (this.aClass64Array10323[0]), 0, i_58_, class101, class302.anInt3834)
+                            if (Class305.aBoolean3870) method2454(6253, i_57_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_renderer, i_58_)
+                            else method2453(i_57_, var_renderer, 92160000, (this.aClass64Array10323[0]), 0, i_58_, class101, class302.anInt3834)
                         }
                     }
                     if (class302.anInt3840 == 2) {
@@ -371,16 +371,16 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                         val i_60_ = (-(Class132.aPlayer_1907!!.y) + 256 + class302.anInt3832)
                         var i_61_ = class302.anInt3837 shl 9
                         i_61_ *= i_61_
-                        if (Class305.aBoolean3870) method2454(6253, i_59_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), i_61_, class101, var_ha, i_60_)
-                        else method2453(i_59_, var_ha, i_61_, (this.aClass64Array10323[0]), 0, i_60_, class101, class302.anInt3834)
+                        if (Class305.aBoolean3870) method2454(6253, i_59_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), i_61_, class101, var_renderer, i_60_)
+                        else method2453(i_59_, var_renderer, i_61_, (this.aClass64Array10323[0]), 0, i_60_, class101, class302.anInt3834)
                     }
                     if (class302.anInt3840 == 10 && class302.anInt3833 >= 0 && (class302.anInt3833 < (Class294.aPlayerArray5058)!!.size)) {
                         val player_62_ = (Class294.aPlayerArray5058!![class302.anInt3833])
                         if (player_62_ != null) {
                             val i_63_ = (-(Class132.aPlayer_1907!!.x) + (player_62_.x))
                             val i_64_ = (-(Class132.aPlayer_1907!!.y) + (player_62_.y))
-                            if (Class305.aBoolean3870) method2454(6253, i_63_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_ha, i_64_)
-                            else method2453(i_63_, var_ha, 92160000, (this.aClass64Array10323[0]), i xor 0x1, i_64_, class101, class302.anInt3834)
+                            if (Class305.aBoolean3870) method2454(6253, i_63_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_renderer, i_64_)
+                            else method2453(i_63_, var_renderer, 92160000, (this.aClass64Array10323[0]), i xor 0x1, i_64_, class101, class302.anInt3834)
                         }
                     }
                 }
@@ -391,7 +391,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         class101.method895(i_53_)
         class101.method891(this.x, (this.anInt6382 + (-5 + -(this.anInt10274))), this.y)
         if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aClass64Array10323).size, true, false)
-        this.method2432(var_ha, -15074, class101, false, this.aClass64Array10323)
+        this.method2432(var_renderer, -15074, class101, false, this.aClass64Array10323)
         if (Class305.aBoolean3870) {
             for (i_65_ in (this.aClass64Array10323).indices) {
                 if (this.aClass64Array10323[i_65_] != null) this.aClass64Array10323[i_65_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![i_65_]), Class132.anInt1906, (if (this != Class132.aPlayer_1907) 0 else 1))
@@ -403,8 +403,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         }
         if (this.aClass318_Sub10_10327 != null) {
             val class98 = this.aClass318_Sub10_10327!!.method2525()
-            if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906)
-            else var_ha.method3684(class98)
+            if (Class305.aBoolean3870) var_renderer.method3685(class98, Class132.anInt1906)
+            else var_renderer.method3684(class98)
         }
         var i_67_ = 0
         while ((i_67_ < this.aClass64Array10323.size)) {
@@ -464,7 +464,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         return super.method2436(72.toByte())
     }
 
-    private fun method2459(i: Int, var_ha: ha?, i_69_: Int): Boolean {
+    private fun method2459(i: Int, var_renderer: Renderer?, i_69_: Int): Boolean {
         var i = i
         anInt10525++
         val i_70_ = i
@@ -478,7 +478,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =
-            (this.aClass154_10536!!.method1226(aClass170_10209, class17_71_, this.aClass182Array10308, true, Exception_Sub1.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aClass150_9342, this.anInt10232, var_ha, Class189.aClass278_2529, Class10.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558).also { this.aClass64Array10323[0] = it })
+            (this.aClass154_10536!!.method1226(aClass170_10209, class17_71_, this.aClass182Array10308, true, Exception_Sub1.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aClass150_9342, this.anInt10232, var_renderer, Class189.aClass278_2529, Class10.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558).also { this.aClass64Array10323[0] = it })
         val i_75_ = Class292.method2201(2121)
         if (Class226.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)
@@ -517,7 +517,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                 if (this.anInt10220 != 0) i_79_ = i_79_ or 0x2
                 if (this.anInt10278 >= 0) i_79_ = i_79_ or 0x7
             } else i_79_ = i_79_ or 0x7
-            val class64_80_ = (class368.method3562(this.anInt10240, var_ha, this.anInt10243, i_79_, this.anInt10283, Class10.aClass87_191, 46.toByte()).also { this.aClass64Array10323[1] = it })
+            val class64_80_ = (class368.method3562(this.anInt10240, var_renderer, this.anInt10243, i_79_, this.anInt10283, Class10.aClass87_191, 46.toByte()).also { this.aClass64Array10323[1] = it })
             if (class64_80_ != null) {
                 if (this.anInt10278 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939!![this.anInt10278]) != null)) {
                     var i_81_ = 0
@@ -565,7 +565,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                 if (this.anInt10260 != 0) i_90_ = i_90_ or 0x2
                 if (this.anInt10289 >= 0) i_90_ = i_90_ or 0x7
             }
-            val class64_91_ = (class368.method3558(this.anInt10273, this.anInt10276, var_ha, i_90_, 3172, Class10.aClass87_191, this.anInt10224).also { this.aClass64Array10323[2] = it })
+            val class64_91_ = (class368.method3558(this.anInt10273, this.anInt10276, var_renderer, i_90_, 3172, Class10.aClass87_191, this.anInt10224).also { this.aClass64Array10323[2] = it })
             if (class64_91_ != null) {
                 if (this.anInt10289 < 0 || class225.anIntArrayArray2939 == null || ((class225.anIntArrayArray2939!![this.anInt10289]) == null)) {
                     if (this.anInt10202 != 0) class64_91_.a(2048 * (this.anInt10202))

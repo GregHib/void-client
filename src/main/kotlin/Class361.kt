@@ -769,14 +769,14 @@ class Class361 {
         var anInt4454: Int = 0
         var aFloat4455: Float = 0f
 
-        fun method3498(i: Int, var_ha: ha?, i_39_: Int, i_40_: Int, bool: Boolean, i_41_: Int) {
+        fun method3498(i: Int, var_renderer: Renderer?, i_39_: Int, i_40_: Int, bool: Boolean, i_41_: Int) {
             var i_39_ = i_39_
             var i_41_ = i_41_
             do {
                 try {
                     anInt4442++
-                    var_ha!!.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i)
-                    var_ha.method3675(i_40_, (-125).toByte(), i_39_, i_41_, i, -16777216)
+                    var_renderer!!.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i)
+                    var_renderer.method3675(i_40_, (-125).toByte(), i_39_, i_41_, i, -16777216)
                     if (Class348.anInt4290 >= 100) {
                         val f = (Class75.anInt1267.toFloat() / Class75.anInt1259.toFloat())
                         var i_42_ = i_40_
@@ -787,8 +787,8 @@ class Class361 {
                         i_39_ += (i_40_ + -i_42_) / 2
                         if (Class67.aClass105_4643 == null || i_40_ != Class67.aClass105_4643!!.method971() || (Class67.aClass105_4643!!.method969() != i)) {
                             method751(Class75.anInt1266, (Class75.anInt1267 + Class75.anInt1263), (Class75.anInt1266 - -Class75.anInt1259), Class75.anInt1263, i_39_, i_41_, i_42_ + i_39_, i_43_ + i_41_)
-                            Class75.method748(var_ha)
-                            Class67.aClass105_4643 = var_ha.method3683(i_39_, i_41_, i_42_, i_43_, false)
+                            Class75.method748(var_renderer)
+                            Class67.aClass105_4643 = var_renderer.method3683(i_39_, i_41_, i_42_, i_43_, false)
                         }
                         Class67.aClass105_4643!!.method974(i_39_, i_41_)
                         val i_44_ = Class25.anInt370 * i_42_ / Class75.anInt1259
@@ -798,8 +798,8 @@ class Class361 {
                         val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * Class59_Sub1_Sub2.anInt8665 / Class75.anInt1267)))
                         var i_48_ = -1996554240
                         if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) i_48_ = -1996488705
-                        var_ha.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1)
-                        var_ha.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0)
+                        var_renderer.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1)
+                        var_renderer.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0)
                         if (Class367_Sub9.anInt7379 <= 0) break
                         val i_49_: Int
                         if (Class164.anInt2173 <= 50) i_49_ = Class164.anInt2173 * 5
@@ -811,18 +811,18 @@ class Class361 {
                                 if (Class348_Sub40_Sub30.anInt9399 == (class348_sub21.anInt6847)) {
                                     val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259))
                                     val i_51_ = (((Class75.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / Class75.anInt1267) + i_41_)
-                                    var_ha.method3675(4, (-125).toByte(), i_50_ - 2, -2 + i_51_, 4, (i_49_ shl 24 or 0xffff00))
+                                    var_renderer.method3675(4, (-125).toByte(), i_50_ - 2, -2 + i_51_, 4, (i_49_ shl 24 or 0xffff00))
                                 } else if (Class34.anInt481 != -1 && (class42!!.anInt596 == Class34.anInt481)) {
                                     val i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / Class75.anInt1259))
                                     val i_53_ = i_41_ - -(i_43_ * (Class75.anInt1267 + -(class348_sub21.anInt6851)) / Class75.anInt1267)
-                                    var_ha.method3675(4, (-125).toByte(), i_52_ + -2, -2 + i_53_, 4, (i_49_ shl 24 or 0xffff00))
+                                    var_renderer.method3675(4, (-125).toByte(), i_52_ + -2, -2 + i_53_, 4, (i_49_ shl 24 or 0xffff00))
                                 }
                             }
                             class348_sub21 = Class75.aClass262_1254!!.method1990(126.toByte()) as Class348_Sub21?
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw method2929(runtimeexception, ("fe.E(" + i + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + bool + ',' + i_41_ + ')'))
+                    throw method2929(runtimeexception, ("fe.E(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + bool + ',' + i_41_ + ')'))
                 }
                 break
             } while (false)

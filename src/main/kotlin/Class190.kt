@@ -43,7 +43,7 @@ class Class190 {
 
     internal constructor(class348_sub49: Class348_Sub49) {
         val i = class348_sub49.readUnsignedByte(255)
-        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) != 1 || Class60.aHa1098!!.method3704() <= 0) {
+        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) != 1 || Class60.aRenderer1098!!.method3704() <= 0) {
             if ((0x1 and i) != 0) class348_sub49.readInt((-126).toByte())
             if ((0x2 and i) != 0) class348_sub49.readUnsignedShort(842397944)
             if ((i and 0x4) != 0) class348_sub49.readUnsignedShort(842397944)
@@ -112,7 +112,7 @@ class Class190 {
         }
 
         @JvmStatic
-        fun method1425(i: Byte, class42: Class42?, class348_sub21: Class348_Sub21?, i_5_: Int, var_ha: ha?, i_6_: Int): Boolean {
+        fun method1425(i: Byte, class42: Class42?, class348_sub21: Class348_Sub21?, i_5_: Int, var_renderer: Renderer?, i_6_: Int): Boolean {
             try {
                 anInt2537++
                 var i_7_ = 2147483647
@@ -132,8 +132,8 @@ class Class190 {
                 var i_13_ = 0
                 var i_14_ = 0
                 if (class42.anInt578 != -1) {
-                    if (class348_sub21!!.aBoolean6848 && class42.anInt605 != -1) class105 = class42.method374(true, var_ha!!, 127.toByte())
-                    else class105 = class42.method374(false, var_ha!!, 127.toByte())
+                    if (class348_sub21!!.aBoolean6848 && class42.anInt605 != -1) class105 = class42.method374(true, var_renderer!!, 127.toByte())
+                    else class105 = class42.method374(false, var_renderer!!, 127.toByte())
                     if (class105 != null) {
                         i_11_ = (class348_sub21.anInt6853 + -(class105.method966() - -1 shr 1))
                         i_12_ = (class348_sub21.anInt6853 + (1 + class105.method966() shr 1))
@@ -157,14 +157,14 @@ class Class190 {
                 if (class42.aString597 != null) {
                     class323 = method1782(class42.anInt576, 10144)
                     if (class323 != null) {
-                        i_15_ = (Class258_Sub1.aClass143_8527!!.method1188(class42.aString597, null, ha_Sub3.aStringArray8019, 87.toByte(), null))
+                        i_15_ = (Class258_Sub1.aClass143_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
                         i_17_ = (class348_sub21!!.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)))
                         i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * class42.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)))
                         if (class105 == null) i_17_ -= i_15_ * class323.method2560() / 2
                         else i_17_ -= ((class105.method980() shr 1) - -(i_15_ * class323.method2565()))
                         var i_23_ = 0
                         while (i_15_ > i_23_) {
-                            var string = ha_Sub3.aStringArray8019!![i_23_]!!
+                            var string = NativeRenderer.aStringArray8019!![i_23_]!!
                             if (i_23_ < -1 + i_15_) string = string.substring(0, -4 + string.length)
                             val i_24_ = class323.method2564(string)
                             if (i_18_ < i_24_) i_18_ = i_24_
@@ -181,22 +181,22 @@ class Class190 {
                     }
                 }
                 if (Class75.anInt1272 > i_8_ || i_7_ > Class75.anInt1276 || i_10_ < Class75.anInt1262 || i_9_ > Class75.anInt1268) return true
-                Class75.method745(var_ha!!, class348_sub21!!, class42)
+                Class75.method745(var_renderer!!, class348_sub21!!, class42)
                 if (class105 != null) {
                     if (Class367_Sub9.anInt7379 > 0 && ((Class348_Sub40_Sub30.anInt9399 != -1 && (Class348_Sub40_Sub30.anInt9399 == class348_sub21.anInt6847)) || (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)))) {
                         val i_25_: Int
                         if (Class164.anInt2173 <= 50) i_25_ = 2 * Class164.anInt2173
                         else i_25_ = -(Class164.anInt2173 * 2) + 200
                         val i_26_ = 0xffff00 or (i_25_ shl 24)
-                        var_ha.method3656((-105).toByte(), i_26_, class105.method971() / 2 - -7, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
-                        var_ha.method3656((-120).toByte(), i_26_, class105.method971() / 2 - -5, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
-                        var_ha.method3656((-126).toByte(), i_26_, 3 + class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
-                        var_ha.method3656((-112).toByte(), i_26_, 1 + class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
-                        var_ha.method3656((-123).toByte(), i_26_, class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-105).toByte(), i_26_, class105.method971() / 2 - -7, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-120).toByte(), i_26_, class105.method971() / 2 - -5, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-126).toByte(), i_26_, 3 + class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-112).toByte(), i_26_, 1 + class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-123).toByte(), i_26_, class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
                     }
                     class105.method974((class348_sub21.anInt6853 + -(class105.method966() shr 1)), (class348_sub21.anInt6855 + -(class105.method980() shr 1)))
                 }
-                if (class42.aString597 != null && class323 != null) Class342.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_ha, i_17_, i_18_, class42)
+                if (class42.aString597 != null && class323 != null) Class342.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, class42)
                 if (class42.anInt578 != -1 || class42.aString597 != null) {
                     val class348_sub12 = Class348_Sub12(class348_sub21)
                     class348_sub12.anInt6746 = i_13_
@@ -211,7 +211,7 @@ class Class190 {
                 }
                 return false
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (class42 != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_6_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (class42 != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_6_ + ')'))
             }
         }
 

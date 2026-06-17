@@ -26,10 +26,10 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         anInt3275++
     }
 
-    fun method1932(var_ha: ha?, i: Int, i_0_: Int, class324: Class324?, class154: Class154?, i_1_: Int, bool: Boolean, i_2_: Byte, var_ha_3_: ha?, i_4_: Int, bool_5_: Boolean, i_6_: Int): Class105? {
+    fun method1932(var_renderer: Renderer?, i: Int, i_0_: Int, class324: Class324?, class154: Class154?, i_1_: Int, bool: Boolean, i_2_: Byte, var_renderer_3_: Renderer?, i_4_: Int, bool_5_: Boolean, i_6_: Int): Class105? {
         try {
             anInt3266++
-            val class105 = method1941(i_6_, (-74).toByte(), i_4_, i_0_, i, i_1_, var_ha_3_, class154)
+            val class105 = method1941(i_6_, (-74).toByte(), i_4_, i_0_, i, i_1_, var_renderer_3_, class154)
             if (class105 != null) return class105
             var class213 = method1940(90, i_4_)
             if (i_0_ > 1 && class213.anIntArray2762 != null) {
@@ -40,11 +40,11 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 if (i_7_ != -1) class213 = method1940(127, i_7_)
             }
             if (i_2_.toInt() != 83) method1935(-83, -37, null, null, false, -49)
-            val `is` = class213.method1562(i_0_, bool_5_, i, var_ha_3_, var_ha, class324, class154, i_1_, (-102).toByte(), i_6_)
+            val `is` = class213.method1562(i_0_, bool_5_, i, var_renderer_3_, var_renderer, class324, class154, i_1_, (-102).toByte(), i_6_)
             if (`is` == null) return null
             val class105_9_: Class105?
-            if (bool) class105_9_ = var_ha!!.method3662(36, `is`, 94.toByte(), 0, 36, 32)
-            else class105_9_ = var_ha_3_!!.method3662(36, `is`, 94.toByte(), 0, 36, 32)
+            if (bool) class105_9_ = var_renderer!!.method3662(36, `is`, 94.toByte(), 0, 36, 32)
+            else class105_9_ = var_renderer_3_!!.method3662(36, `is`, 94.toByte(), 0, 36, 32)
             if (!bool) {
                 val class126 = Class126()
                 class126.anInt4982 = i
@@ -52,13 +52,13 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 class126.anInt4989 = i_0_
                 class126.anInt4992 = i_4_
                 class126.anInt4981 = i_1_
-                class126.anInt4991 = var_ha_3_!!.anInt4567
+                class126.anInt4991 = var_renderer_3_!!.anInt4567
                 class126.anInt4993 = i_6_
                 this.aClass175_3288.method1348(70, class105_9_, class126)
             }
             return class105_9_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_ha_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -167,11 +167,11 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         return class213
     }
 
-    fun method1941(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, var_ha: ha?, class154: Class154?): Class105? {
+    fun method1941(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, var_renderer: Renderer?, class154: Class154?): Class105? {
         try {
             aClass126_3289!!.anInt4992 = i_16_
             aClass126_3289!!.anInt4989 = i_17_
-            aClass126_3289!!.anInt4991 = var_ha!!.anInt4567
+            aClass126_3289!!.anInt4991 = var_renderer!!.anInt4567
             aClass126_3289!!.anInt4981 = i_19_
             if (i_15_.toInt() != -74) aClass126_3289 = null
             aClass126_3289!!.aBoolean4990 = class154 != null
@@ -180,7 +180,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             aClass126_3289!!.anInt4993 = i
             return this.aClass175_3288.method1340(123, aClass126_3289!!) as Class105?
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class154 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -244,7 +244,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             aClass161_3285 = null
         }
 
-        fun method1933(class45: Class45?, var_ha: ha?, bool: Boolean) {
+        fun method1933(class45: Class45?, var_renderer: Renderer?, bool: Boolean) {
             try {
                 anInt3279++
                 var class207s: Array<Class207>? = Class207.method1519(class45!!, Class348_Sub22.anInt6862, 0)
@@ -252,7 +252,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class169.aClass105Array2260!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class169.aClass105Array2260!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }
@@ -261,7 +261,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class348_Sub45.aClass105Array7107!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class348_Sub45.aClass105Array7107!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }
@@ -270,16 +270,16 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class239_Sub2.aClass105Array5857!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class239_Sub2.aClass105Array5857!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, ha.anInt4562, 0)
+                class207s = Class207.method1519(class45, Renderer.anInt4562, 0)
                 Class318_Sub1_Sub1_Sub1.aClass105Array9959 = arrayOfNulls<Class105>(class207s!!.size)
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class318_Sub1_Sub1_Sub1.aClass105Array9959!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class318_Sub1_Sub1_Sub1.aClass105Array9959!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }
@@ -288,19 +288,19 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class264.aClass105Array3378!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class264.aClass105Array3378!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }
                 class207s = Class207.method1519(class45, Class115.anInt1756, 0)
                 Class239_Sub9.aClass105Array5933 = arrayOfNulls<Class105>(class207s!!.size)
-                for (i in class207s.indices) Class239_Sub9.aClass105Array5933!![i] = var_ha!!.method3691(class207s[i], true)
+                for (i in class207s.indices) Class239_Sub9.aClass105Array5933!![i] = var_renderer!!.method3691(class207s[i], true)
                 class207s = Class207.method1519(class45, Class291.anInt3739, 0)
                 Class59_Sub1.aClass105Array5294 = arrayOfNulls<Class105>(class207s!!.size)
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class59_Sub1.aClass105Array5294!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class59_Sub1.aClass105Array5294!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }
@@ -309,41 +309,41 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class25.aClass105Array367!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class25.aClass105Array367!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }
                 class207s = Class207.method1519(class45, Class239_Sub10.anInt5948, 0)
                 Class348_Sub40_Sub37.aClass105Array9467 = arrayOfNulls<Class105>(class207s!!.size)
-                for (i in class207s.indices) Class348_Sub40_Sub37.aClass105Array9467!![i] = var_ha!!.method3691(class207s[i], true)
+                for (i in class207s.indices) Class348_Sub40_Sub37.aClass105Array9467!![i] = var_renderer!!.method3691(class207s[i], true)
                 class207s = Class207.method1519(class45, Class113.anInt1742, 0)
                 Class348_Sub12.aClass105Array6742 = arrayOfNulls<Class105>(class207s!!.size)
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class348_Sub12.aClass105Array6742!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class348_Sub12.aClass105Array6742!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }
                 class207s = Class207.method1519(class45, Class364.anInt4469, 0)
                 Class240.aClass105Array4679 = arrayOfNulls<Class105>(class207s!!.size)
-                for (i in class207s.indices) Class240.aClass105Array4679!![i] = var_ha!!.method3691(class207s[i], true)
+                for (i in class207s.indices) Class240.aClass105Array4679!![i] = var_renderer!!.method3691(class207s[i], true)
                 class207s = Class207.method1519(class45, Class348_Sub40_Sub38.anInt9473, 0)
                 Class113.aClass105Array1744 = arrayOfNulls<Class105>(class207s!!.size)
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class113.aClass105Array1744!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class113.aClass105Array1744!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }
-                Class79.aClass105_1365 = var_ha!!.method3691(Class207.method1521(class45, Class52.anInt4895, 0), bool)
-                Class239_Sub24.aClass105_6097 = var_ha.method3691(Class207.method1521(class45, (Class186_Sub1.anInt5814), 0), true)
+                Class79.aClass105_1365 = var_renderer!!.method3691(Class207.method1521(class45, Class52.anInt4895, 0), bool)
+                Class239_Sub24.aClass105_6097 = var_renderer.method3691(Class207.method1521(class45, (Class186_Sub1.anInt5814), 0), true)
                 class207s = Class207.method1519(class45, Class5_Sub3.anInt8370, 0)
                 Class200.aClass105Array2640 = arrayOfNulls<Class105>(class207s!!.size)
-                for (i in class207s.indices) Class200.aClass105Array2640!![i] = var_ha.method3691(class207s[i], true)
+                for (i in class207s.indices) Class200.aClass105Array2640!![i] = var_renderer.method3691(class207s[i], true)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ub.N(" + (if (class45 != null) "{...}" else "null") + ',' + (if (var_ha != null) "{...}" else "null") + ',' + bool + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("ub.N(" + (if (class45 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
 

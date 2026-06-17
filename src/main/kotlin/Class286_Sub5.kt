@@ -4,7 +4,7 @@ import jaggl.OpenGL.Companion.glTexGenfv
 import jaggl.OpenGL.Companion.glTexGeni
 import kotlin.math.min
 
-class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?) : Class286(var_ha_Sub2) {
+class Class286_Sub5 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : Class286(var_ha_Sub2) {
     private val aClass61_6254: Class61
     private val aClass83_6259: Class83?
     override fun method2136(i: Int, i_5_: Int, i_6_: Byte) {
@@ -173,7 +173,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             anInt6258++
             Class106.anInt1639 = class45.method417("hitbar_default", 0)
             Class373_Sub2.anInt7429 = class45.method417("timerbar_default", 0)
-            ha.anInt4562 = class45.method417("headicons_pk", 0)
+            Renderer.anInt4562 = class45.method417("headicons_pk", 0)
             Class82.anInt1435 = class45.method417("headicons_prayer", 0)
             Class115.anInt1756 = class45.method417("hint_headicons", 0)
             Class291.anInt3739 = class45.method417("hint_mapmarkers", 0)

@@ -484,7 +484,7 @@ class Class101_Sub3 : Class101() {
                                     val i_60_ = i_59_ / 8 + (i_58_ / 8 shl 8)
                                     for (i_61_ in Class348_Sub23_Sub3.anIntArray9042!!.indices) {
                                         if (i_60_ == (Class348_Sub23_Sub3.anIntArray9042!![i_61_]) && `is`!![i_61_] != null) {
-                                            class237_sub1.method1692((i_58_ and 0x7) * 8, i_57_, `is`[i_61_], i_56_, (i_59_ and 0x7) * 8, Class348_Sub8.aHa6654, 8 * i_54_, 8 * i_53_, i + 8219, Class348_Sub45.aClass361Array7108, i_52_)
+                                            class237_sub1.method1692((i_58_ and 0x7) * 8, i_57_, `is`[i_61_], i_56_, (i_59_ and 0x7) * 8, Class348_Sub8.aRenderer6654, 8 * i_54_, 8 * i_53_, i + 8219, Class348_Sub45.aClass361Array7108, i_52_)
                                             break
                                         }
                                     }

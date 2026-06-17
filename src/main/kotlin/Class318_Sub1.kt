@@ -32,17 +32,17 @@ abstract class Class318_Sub1 : Class318() {
 
     abstract fun method2379(i: Int): Int
 
-    abstract fun method2380(var_ha: ha?, i: Int, bool: Boolean, class318_sub1_0_: Class318_Sub1?, i_1_: Int, i_2_: Byte, i_3_: Int)
+    abstract fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1_0_: Class318_Sub1?, i_1_: Int, i_2_: Byte, i_3_: Int)
 
-    abstract fun method2381(var_ha: ha?, i: Int): Class30?
+    abstract fun method2381(var_renderer: Renderer?, i: Int): Class30?
 
     abstract fun method2382(i: Byte): Boolean
 
     abstract fun method2384(class348_sub1s: Array<Class348_Sub1?>?, i: Int): Int
 
-    abstract fun method2386(i: Int, var_ha: ha?): Class318_Sub4?
+    abstract fun method2386(i: Int, var_renderer: Renderer?): Class318_Sub4?
 
-    abstract fun method2387(var_ha: ha?, i: Int)
+    abstract fun method2387(var_renderer: Renderer?, i: Int)
 
     abstract fun method2388(i: Int): Boolean
 
@@ -62,7 +62,7 @@ abstract class Class318_Sub1 : Class318() {
         return i_33_
     }
 
-    abstract fun method2391(var_ha: ha?, i: Int, i_36_: Int, i_37_: Int): Boolean
+    abstract fun method2391(var_renderer: Renderer?, i: Int, i_36_: Int, i_37_: Int): Boolean
 
     abstract fun method2392(bool: Boolean)
 
@@ -89,24 +89,24 @@ abstract class Class318_Sub1 : Class318() {
         var anInt6392: Int = 0
 
         @JvmStatic
-        fun method2383(var_ha: ha?, i: Int, class46: Class46?) {
+        fun method2383(var_renderer: Renderer?, i: Int, class46: Class46?) {
             do {
                 try {
                     if (i != -2) method2383(null, -63, null)
                     anInt6385++
-                    val bool = ((Exception_Sub1.aClass255_112!!.method1941(class46!!.anInt672, (-74).toByte(), class46.anInt812, class46.anInt781, 0xffffff.inv() or class46.anInt809, class46.anInt678, var_ha, (if (!class46.aBoolean720) null else (Class132.aPlayer_1907!!.aClass154_10536)))) == null)
+                    val bool = ((Exception_Sub1.aClass255_112!!.method1941(class46!!.anInt672, (-74).toByte(), class46.anInt812, class46.anInt781, 0xffffff.inv() or class46.anInt809, class46.anInt678, var_renderer, (if (!class46.aBoolean720) null else (Class132.aPlayer_1907!!.aClass154_10536)))) == null)
                     if (!bool) break
                     Class5_Sub1_Sub1.aClass262_9931!!.method1999(Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (0xffffff.inv() or class46.anInt809), class46.anInt678, class46.aBoolean720), i xor 0x4ed2)
                     Class251.method1916(-9343, class46)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("ga.QA(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + (if (class46 != null) "{...}" else "null") + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("ga.QA(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (class46 != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)
         }
 
         @JvmStatic
-        fun method2385(class46: Class46?, i: Int, var_sprite: Sprite?, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Byte, i_8_: Int, var_ha: ha?) {
+        fun method2385(class46: Class46?, i: Int, var_sprite: Sprite?, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Byte, i_8_: Int, var_renderer: Renderer?) {
             do {
                 try {
                     anInt6390++
@@ -130,7 +130,7 @@ abstract class Class318_Sub1 : Class318() {
                                 `is`[i_9_ * 2 - -1] = (-((((class42.anIntArray591!![1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591!![i_9_ * 2]) * 4)) * i_11_) shr 14) + i + class46.anInt789 / 2)
                                 i_9_++
                             }
-                            Class329.method2619(var_ha!!, `is`, class42.anInt582, class46!!.anIntArray677, class46.anIntArray772!!)
+                            Class329.method2619(var_renderer!!, `is`, class42.anInt582, class46!!.anIntArray677, class46.anIntArray772!!)
                             if (class42.anInt584 > 0) {
                                 var i_13_ = 0
                                 while ((i_13_ < -1 + `is`.size / 2)) {
@@ -152,7 +152,7 @@ abstract class Class318_Sub1 : Class318() {
                                         i_16_ = i_19_
                                         i_17_ = i_20_
                                     }
-                                    var_ha!!.method3703(i_14_, i_15_, i_16_, i_17_, (class42.anIntArray572[((class42.aByteArray564[i_13_]).toInt() and 0xff)]), 1, var_sprite, i_6_, i, class42.anInt584, class42.anInt575, (class42.anInt601))
+                                    var_renderer!!.method3703(i_14_, i_15_, i_16_, i_17_, (class42.anIntArray572[((class42.aByteArray564[i_13_]).toInt() and 0xff)]), 1, var_sprite, i_6_, i, class42.anInt584, class42.anInt575, (class42.anInt601))
                                     i_13_++
                                 }
                                 var i_21_ = `is`[-2 + `is`.size]
@@ -171,19 +171,19 @@ abstract class Class318_Sub1 : Class318() {
                                     i_22_ = i_24_
                                     i_24_ = i_27_
                                 }
-                                var_ha!!.method3703(i_21_, i_22_, i_23_, i_24_, (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size - 1)]).toInt() and 0xff]), 1, var_sprite, i_6_, i, class42.anInt584, class42.anInt575, class42.anInt601)
+                                var_renderer!!.method3703(i_21_, i_22_, i_23_, i_24_, (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size - 1)]).toInt() and 0xff]), 1, var_sprite, i_6_, i, class42.anInt584, class42.anInt575, class42.anInt601)
                             } else {
                                 var i_28_ = 0
                                 while (-1 + `is`.size / 2 > i_28_) {
-                                    var_ha!!.method3636(`is`[i_28_ * 2], `is`[2 * i_28_ + 1], `is`[2 * (i_28_ - -1)], `is`[2 * i_28_ + 3], (class42.anIntArray572[((class42.aByteArray564[i_28_]).toInt() and 0xff)]), 1, var_sprite, i_6_, i)
+                                    var_renderer!!.method3636(`is`[i_28_ * 2], `is`[2 * i_28_ + 1], `is`[2 * (i_28_ - -1)], `is`[2 * i_28_ + 3], (class42.anIntArray572[((class42.aByteArray564[i_28_]).toInt() and 0xff)]), 1, var_sprite, i_6_, i)
                                     i_28_++
                                 }
-                                var_ha!!.method3636(`is`[`is`.size + -2], `is`[-1 + `is`.size], `is`[0], `is`[1], (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size + -1)]).toInt() and 0xff]), 1, var_sprite, i_6_, i)
+                                var_renderer!!.method3636(`is`[`is`.size + -2], `is`[-1 + `is`.size], `is`[0], `is`[1], (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size + -1)]).toInt() and 0xff]), 1, var_sprite, i_6_, i)
                             }
                         }
                         var class105: Class105? = null
                         if (class42.anInt578 != -1) {
-                            class105 = class42.method374(false, var_ha!!, 127.toByte())
+                            class105 = class42.method374(false, var_renderer!!, 127.toByte())
                             if (class105 != null) Class151.method1211(i, class105, i_6_, class46, var_sprite, i_8_, 2, i_5_)
                         }
                         if (class42.aString597 == null) break
@@ -202,7 +202,7 @@ abstract class Class318_Sub1 : Class318() {
                         Class334.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, class46, i_5_, 100)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("ga.KA(" + (if (class46 != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_ha != null) "{...}" else "null") + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("ga.KA(" + (if (class46 != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

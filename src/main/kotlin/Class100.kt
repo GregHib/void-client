@@ -3,7 +3,7 @@ import Exception_Sub1.Companion.method141
 /* Class100 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class100 internal constructor(private val aHa_Sub2_1581: ha_Sub2) {
+class Class100 internal constructor(private val aHa_Sub2_1581: OpenGlRenderer) {
     private var anInt1578 = 0
     private var aClass83_1582: Class83?
     private var anInt1584 = 0

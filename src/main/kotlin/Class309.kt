@@ -114,7 +114,7 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
         }
 
         @JvmStatic
-        fun method2312(i: Int, i_14_: Int, class262: Class262?, i_15_: Int, var_ha: ha?) {
+        fun method2312(i: Int, i_14_: Int, class262: Class262?, i_15_: Int, var_renderer: Renderer?) {
             do {
                 try {
                     anInt4811++
@@ -124,8 +124,8 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
                         while (class348_sub21 != null) {
                             val class42 = (Class75.aClass153_1238!!.method1225(class348_sub21.anInt6847, 82.toByte()))
                             if (method589(class42, -4)) {
-                                val bool = Class190.method1425((-31).toByte(), class42, class348_sub21, i_14_, var_ha, i_15_)
-                                if (bool) Class59.method549((-43).toByte(), class348_sub21, var_ha!!, class42)
+                                val bool = Class190.method1425((-31).toByte(), class42, class348_sub21, i_14_, var_renderer, i_15_)
+                                if (bool) Class59.method549((-43).toByte(), class348_sub21, var_renderer!!, class42)
                             }
                             class348_sub21 = (class262.method1990(104.toByte()) as Class348_Sub21?)
                         }
@@ -133,7 +133,7 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
                         aStringArray4818 = null
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (if (class262 != null) "{...}" else "null") + ',' + i_15_ + ',' + (if (var_ha != null) "{...}" else "null") + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (if (class262 != null) "{...}" else "null") + ',' + i_15_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

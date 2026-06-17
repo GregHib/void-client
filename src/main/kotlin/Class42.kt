@@ -108,31 +108,31 @@ class Class42 {
         return i_2_ >= anInt587 && i_2_ <= anInt586
     }
 
-    fun method374(bool: Boolean, var_ha: ha, i: Byte): Class105? {
+    fun method374(bool: Boolean, var_renderer: Renderer, i: Byte): Class105? {
         anInt579++
         val i_3_ = if (bool) this.anInt605 else this.anInt578
         if (i.toInt() != 127) return null
-        val i_4_ = i_3_ or (var_ha.anInt4567 shl 29)
+        val i_4_ = i_3_ or (var_renderer.anInt4567 shl 29)
         var class105 = this.aClass153_593!!.aClass60_2089.method583(i_4_.toLong(), 64) as Class105?
         if (class105 != null) return class105
         if (!this.aClass153_593!!.aClass45_2087!!.method421(false, i_3_)) return null
         val class207 = Class207.method1521((this.aClass153_593!!.aClass45_2087!!), i_3_, 0)
         if (class207 != null) {
-            class105 = var_ha.method3691(class207, true)
+            class105 = var_renderer.method3691(class207, true)
             this.aClass153_593!!.aClass60_2089.method582(class105, i_4_.toLong(), (-111).toByte())
         }
         return class105
     }
 
-    fun method375(var_ha: ha, bool: Boolean): Class105? {
+    fun method375(var_renderer: Renderer, bool: Boolean): Class105? {
         anInt563++
-        var class105 = (this.aClass153_593!!.aClass60_2089.method583((anInt598 or 0x20000 or (var_ha.anInt4567 shl 29)).toLong(), -75)) as Class105?
+        var class105 = (this.aClass153_593!!.aClass60_2089.method583((anInt598 or 0x20000 or (var_renderer.anInt4567 shl 29)).toLong(), -75)) as Class105?
         if (class105 != null) return class105
         this.aClass153_593!!.aClass45_2087!!.method421(bool, anInt598)
         val class207 = Class207.method1521((this.aClass153_593!!.aClass45_2087!!), anInt598, 0)
         if (class207 != null) {
-            class105 = var_ha.method3691(class207, true)
-            this.aClass153_593!!.aClass60_2089.method582(class105, (var_ha.anInt4567 shl 29 or (anInt598 or 0x20000)).toLong(), (-121).toByte())
+            class105 = var_renderer.method3691(class207, true)
+            this.aClass153_593!!.aClass60_2089.method582(class105, (var_renderer.anInt4567 shl 29 or (anInt598 or 0x20000)).toLong(), (-121).toByte())
         }
         return class105
     }

@@ -160,7 +160,7 @@ class Class170 : Interface17 {
             if (bool == true) aClass237_Sub1_5067 = null
         }
 
-        fun method1311(i: Int, var_ha: ha) {
+        fun method1311(i: Int, var_renderer: Renderer) {
             Class199.aClass352Array2636 = arrayOfNulls<Class352>(Class348_Sub1.anIntArray6547!!.size)
             anInt5064++
             if (i != 5139) anInt5065 = 62
@@ -168,7 +168,7 @@ class Class170 : Interface17 {
             while ((i_21_ < Class348_Sub1.anIntArray6547!!.size)) {
                 val i_22_ = Class348_Sub1.anIntArray6547!![i_21_]
                 val class143 = Class239_Sub10.method1766((-86).toByte(), i_22_, s.aClass45_4585!!)
-                val class324 = var_ha.method3686(class143, Class207.method1523(Class39.aClass45_518!!, i_22_), true)
+                val class324 = var_renderer.method3686(class143, Class207.method1523(Class39.aClass45_518!!, i_22_), true)
                 Class199.aClass352Array2636!![i_21_] = Class352(class324, class143)
                 i_21_++
             }

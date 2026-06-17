@@ -3,7 +3,7 @@ import Class50_Sub1.Companion.method461
 /* Class83 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class83 internal constructor(var_ha_Sub2: ha_Sub2) {
+class Class83 internal constructor(var_ha_Sub2: OpenGlRenderer) {
     var aClass258_Sub1_1440: Class258_Sub1? = null
     var aBoolean1442: Boolean
     var aClass258_Sub1_1443: Class258_Sub1? = null

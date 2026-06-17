@@ -5,16 +5,16 @@ import Class62.method599
 */
 class Class195 internal constructor(class287: Class287?, class106: Class106?) : Interface16 {
     private val aClass287_5006: Class287?
-    private var aHa5010: ha? = null
+    private var aRenderer5010: Renderer? = null
     private var aBoolean5011 = false
     private val anInterface1Array5012: Array<Interface1?>
     override fun method57(i: Int) {
         anInt5004++
-        if (aHa5010 !== Class348_Sub8.aHa6654) {
-            aHa5010 = Class348_Sub8.aHa6654
+        if (aRenderer5010 !== Class348_Sub8.aRenderer6654) {
+            aRenderer5010 = Class348_Sub8.aRenderer6654
             aBoolean5011 = true
         }
-        aHa5010!!.GA(0)
+        aRenderer5010!!.GA(0)
         val interface1s = anInterface1Array5012
         var i_0_ = 0
         while (interface1s.size > i_0_) {

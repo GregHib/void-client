@@ -17,11 +17,11 @@ import Class368.Companion.method3563
 import Class59_Sub2_Sub1.Companion.method565
 import OutputStream_Sub2.Companion.method135
 import OutputStream_Sub2.Companion.method137
-import ha_Sub2.Companion.method3743
+import OpenGlRenderer.Companion.method3743
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt
 
-class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: Int, bool: Boolean, bool_765_: Boolean) : Class64() {
+class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_764_: Int, bool: Boolean, bool_765_: Boolean) : Class64() {
     private var anInt5401 = 0
     private var aBoolean5402 = true
     private var anIntArray5404: IntArray? = null
@@ -31,7 +31,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
     private var anIntArray5415: IntArray? = null
     private var aShortArray5416: ShortArray? = null
     private var anInt5418 = 0
-    private var aHa_Sub3_5419: ha_Sub3? = null
+    private var aHa_Sub3_5419: NativeRenderer? = null
     private var aShortArray5423: ShortArray? = null
     private var aClass290_5424: Class290? = null
     private var aShort5427: Short = 0
@@ -99,7 +99,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     val f_2_ = (0.3333333f * ((anIntArray5429!![class353.anInt4339]) + (anIntArray5429!![class353.anInt4344]) + (anIntArray5429!![class353.anInt4349])).toFloat())
                     val f_3_ = (f_2_ * Class348_Sub42_Sub4.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * Class318_Sub1_Sub2_Sub1.aFloat10199) + Class345.aFloat4268)
                     val f_4_ = (Class348_Sub12.aFloat6752 + (Class318_Sub6.aFloat6430 * f_2_ + (Class348_Sub20.aFloat6835 * f + f_1_ * Class290.aFloat3710)))
-                    val f_5_ = Class240.aFloat4673 + (Class353.aFloat4338 * f_1_ + f * Class328_Sub3.aFloat6523 + f_2_ * ha.aFloat4582)
+                    val f_5_ = Class240.aFloat4673 + (Class353.aFloat4338 * f_1_ + f * Class328_Sub3.aFloat6523 + f_2_ * Renderer.aFloat4582)
                     val f_6_ = ((1.0 / sqrt((f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_)).toDouble())).toFloat() * class353.anInt4347.toFloat())
                     val class101_sub2 = aHa_Sub3_5419!!.method3934(-96)
                     class101_sub2.method936(class334.anInt4151, 0, (class353.aShort4340 * class334.anInt4162) shr 7, (-(f_3_ * f_6_) + (class334.anInt4158.toFloat() + f_3_)), -(f_6_ * f_5_) + f_5_, (class334.anInt4154.toFloat() + f_4_ - f_4_ * f_6_), (class334.anInt4165 * class353.aShort4341) shr 7)
@@ -350,7 +350,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
             Class348_Sub42_Sub4.aFloat9516 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5711) + (class101_sub2.aFloat5732 * class101_sub2_34_.aFloat5700)))
             Class328_Sub3.aFloat6523 = ((class101_sub2.aFloat5736 * class101_sub2_34_.aFloat5716) + ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5736)))
             Class290.aFloat3710 = ((class101_sub2.aFloat5722 * class101_sub2_34_.aFloat5722) + (class101_sub2_34_.aFloat5708 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5691))
-            ha.aFloat4582 = ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5736) + (class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5716))
+            Renderer.aFloat4582 = ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5736) + (class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5716))
             Class318_Sub1_Sub2_Sub1.aFloat10199 = ((class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5704) + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5722)))
             Class348_Sub20.aFloat6835 = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5736) + ((class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5708 * class101_sub2_34_.aFloat5722)))
             Class55.aFloat1010 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5736) + ((class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5711)))
@@ -408,7 +408,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 val f_59_ = Class348_Sub42_Sub12.anIntArray9612!![i_56_].toFloat()
                 val f_60_ = (f_57_ * Class348_Sub20.aFloat6835 + f_59_ * Class290.aFloat3710 + Class318_Sub6.aFloat6430 * f_58_ + f_35_)
                 val f_61_ = (Class55.aFloat1010 * f_57_ + f_59_ * Class318_Sub1_Sub2_Sub1.aFloat10199 + f_58_ * Class348_Sub42_Sub4.aFloat9516 + f)
-                var f_62_ = f_36_ + (f_58_ * ha.aFloat4582 + (Class353.aFloat4338 * f_59_ + Class328_Sub3.aFloat6523 * f_57_))
+                var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (Class353.aFloat4338 * f_59_ + Class328_Sub3.aFloat6523 * f_57_))
                 if (f_62_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                     if (i_31_ > 0) f_62_ = i_31_.toFloat()
                     val f_63_ = (f_61_ * i_42_.toFloat() / f_62_ + aHa_Sub3_5419!!.anInt8094.toFloat())
@@ -430,7 +430,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     val f_66_ = anIntArray5429!![i_65_].toFloat()
                     val f_67_ = anIntArray5519!![i_65_].toFloat()
                     val f_68_ = anIntArray5511!![i_65_].toFloat()
-                    var f_69_ = (ha.aFloat4582 * f_66_ + (f_68_ * Class328_Sub3.aFloat6523 + Class353.aFloat4338 * f_67_) + f_36_)
+                    var f_69_ = (Renderer.aFloat4582 * f_66_ + (f_68_ * Class328_Sub3.aFloat6523 + Class353.aFloat4338 * f_67_) + f_36_)
                     val f_70_ = f + (Class318_Sub1_Sub2_Sub1.aFloat10199 * f_67_ + Class55.aFloat1010 * f_68_ + f_66_ * Class348_Sub42_Sub4.aFloat9516)
                     val f_71_ = (Class318_Sub6.aFloat6430 * f_66_ + (f_68_ * Class348_Sub20.aFloat6835 + Class290.aFloat3710 * f_67_) + f_35_)
                     if (f_69_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
@@ -1294,21 +1294,21 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                 Class318_Sub6.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
                                 Class328_Sub3.aFloat6523 = (((class101_sub2_180_.aFloat5736) * (class101_sub2.aFloat5716)) + (((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5708) + ((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5711))))
                                 Class348_Sub20.aFloat6835 = (((class101_sub2_180_.aFloat5711) * (class101_sub2.aFloat5708)) + ((class101_sub2_180_.aFloat5708) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5736))
-                                ha.aFloat4582 = (((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5732) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5716)))
+                                Renderer.aFloat4582 = (((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5732) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5716)))
                             }
                             if (class318_sub3 != null) {
                                 val i_192_ = anInt5467 + anInt5507 shr 1
                                 val i_193_ = anInt5418 + anInt5443 shr 1
                                 val i_194_ = (Class345.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((Class318_Sub1_Sub2_Sub1.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
                                 val i_195_ = (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * Class290.aFloat3710) + (Class318_Sub6.aFloat6430 * i_193_.toFloat())).toInt()
-                                val i_196_ = ((anInt5461.toFloat() * Class353.aFloat4338) + ((Class328_Sub3.aFloat6523 * i_192_.toFloat()) + Class240.aFloat4673) + i_193_.toFloat() * ha.aFloat4582).toInt()
+                                val i_196_ = ((anInt5461.toFloat() * Class353.aFloat4338) + ((Class328_Sub3.aFloat6523 * i_192_.toFloat()) + Class240.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
                                 val i_197_ = ((anInt5509.toFloat() * (Class318_Sub1_Sub2_Sub1.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_193_.toFloat())).toInt()
                                 val i_198_ = ((Class318_Sub6.aFloat6430 * i_193_.toFloat()) + (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * i_192_.toFloat()) + (Class290.aFloat3710 * anInt5509.toFloat()))).toInt()
                                 class318_sub3.anInt6402 = ((i_195_ * aHa_Sub3_5419!!.anInt8134 / i) + aHa_Sub3_5419!!.anInt8130)
                                 class318_sub3.anInt6405 = (aHa_Sub3_5419!!.anInt8094 - -(i_194_ * (aHa_Sub3_5419!!.anInt8129) / i))
                                 class318_sub3.anInt6404 = (aHa_Sub3_5419!!.anInt8130 - -(aHa_Sub3_5419!!.anInt8134 * i_198_ / i))
                                 class318_sub3.anInt6406 = ((i_197_ * aHa_Sub3_5419!!.anInt8129 / i) + aHa_Sub3_5419!!.anInt8094)
-                                val i_199_ = (ha.aFloat4582 * i_193_.toFloat() + ((anInt5509.toFloat() * Class353.aFloat4338) + ((Class328_Sub3.aFloat6523 * i_192_.toFloat()) + Class240.aFloat4673))).toInt()
+                                val i_199_ = (Renderer.aFloat4582 * i_193_.toFloat() + ((anInt5509.toFloat() * Class353.aFloat4338) + ((Class328_Sub3.aFloat6523 * i_192_.toFloat()) + Class240.aFloat4673))).toInt()
                                 if (i_196_ >= aHa_Sub3_5419!!.anInt8095 || (aHa_Sub3_5419!!.anInt8095 <= i_199_)) {
                                     class318_sub3.anInt6403 = (aHa_Sub3_5419!!.anInt8094 + (((anInt5510 + i_194_) * (aHa_Sub3_5419!!.anInt8129) / i) + -class318_sub3.anInt6405))
                                     class318_sub3.aBoolean6401 = true
@@ -1769,7 +1769,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                 Class55.aFloat1010 = (((class101_sub2.aFloat5704) * (class101_sub2_307_.aFloat5736)) + (((class101_sub2.aFloat5700) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5711))))
                                 Class348_Sub42_Sub4.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2.aFloat5704) * class101_sub2_307_.aFloat5716))
                                 Class348_Sub20.aFloat6835 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5711)) + ((class101_sub2.aFloat5722) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5736))
-                                ha.aFloat4582 = (((class101_sub2_307_.aFloat5716) * (class101_sub2.aFloat5716)) + ((class101_sub2_307_.aFloat5704 * (class101_sub2.aFloat5736)) + (class101_sub2_307_.aFloat5732 * (class101_sub2.aFloat5691))))
+                                Renderer.aFloat4582 = (((class101_sub2_307_.aFloat5716) * (class101_sub2.aFloat5716)) + ((class101_sub2_307_.aFloat5704 * (class101_sub2.aFloat5736)) + (class101_sub2_307_.aFloat5732 * (class101_sub2.aFloat5691))))
                             }
                             if (class318_sub3 != null) {
                                 var bool = false
@@ -1778,7 +1778,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                 val i_321_ = anInt5418 + anInt5443 shr 1
                                 val i_322_ = ((anInt5461.toFloat() * (Class318_Sub1_Sub2_Sub1.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (Class348_Sub42_Sub4.aFloat9516 * i_321_.toFloat())).toInt()
                                 val i_323_ = ((Class318_Sub6.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * Class348_Sub20.aFloat6835) + Class348_Sub12.aFloat6752 + (Class290.aFloat3710 * anInt5461.toFloat()))).toInt()
-                                val i_324_ = (Class240.aFloat4673 + (i_320_.toFloat() * Class328_Sub3.aFloat6523) + (anInt5461.toFloat() * Class353.aFloat4338) + i_321_.toFloat() * ha.aFloat4582).toInt()
+                                val i_324_ = (Class240.aFloat4673 + (i_320_.toFloat() * Class328_Sub3.aFloat6523) + (anInt5461.toFloat() * Class353.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_324_) bool = true
                                 else {
                                     class318_sub3.anInt6402 = (aHa_Sub3_5419!!.anInt8130 - -(i_323_ * (aHa_Sub3_5419!!.anInt8134) / i_324_))
@@ -1786,7 +1786,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                 }
                                 val i_325_ = ((Class318_Sub1_Sub2_Sub1.aFloat10199) * anInt5509.toFloat() + (Class345.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (Class348_Sub42_Sub4.aFloat9516))).toInt()
                                 val i_326_ = ((Class290.aFloat3710 * anInt5509.toFloat()) + (Class348_Sub12.aFloat6752 + (i_320_.toFloat() * (Class348_Sub20.aFloat6835))) + (i_321_.toFloat() * Class318_Sub6.aFloat6430)).toInt()
-                                val i_327_ = ((anInt5509.toFloat() * Class353.aFloat4338) + (Class240.aFloat4673 + (i_320_.toFloat() * Class328_Sub3.aFloat6523)) + ha.aFloat4582 * i_321_.toFloat()).toInt()
+                                val i_327_ = ((anInt5509.toFloat() * Class353.aFloat4338) + (Class240.aFloat4673 + (i_320_.toFloat() * Class328_Sub3.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_327_) bool = true
                                 else {
                                     class318_sub3.anInt6406 = (aHa_Sub3_5419!!.anInt8094 + (i_325_ * (aHa_Sub3_5419!!.anInt8129) / i_327_))
@@ -1862,7 +1862,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
         return true
     }
 
-    internal constructor(var_ha_Sub3: ha_Sub3?, class124: Class124?, i: Int, i_334_: Int, i_335_: Int, i_336_: Int) : this(var_ha_Sub3, i, i_336_, true, false) {
+    internal constructor(var_ha_Sub3: NativeRenderer?, class124: Class124?, i: Int, i_334_: Int, i_335_: Int, i_336_: Int) : this(var_ha_Sub3, i, i_336_, true, false) {
         do {
             try {
                 val var_renderConfig: RenderConfig = var_ha_Sub3!!.aRenderConfig4579!!

@@ -3,12 +3,12 @@ import jaclib.memory.Stream
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt
 
-class Class348_Sub38 internal constructor(var_ha_Sub3: ha_Sub3?, var_s_Sub3: s_Sub3?, class348_sub1: Class348_Sub1?, `is`: IntArray?) : Class348() {
+class Class348_Sub38 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: s_Sub3?, class348_sub1: Class348_Sub1?, `is`: IntArray?) : Class348() {
     private var aFloatArrayArray7001: Array<FloatArray?>?
     private val anInterface5_Impl2_7002: Interface5_Impl2?
     private val aClass348_Sub1_7004: Class348_Sub1?
     private var aFloatArrayArray7005: Array<FloatArray?>?
-    private val aHa_Sub3_7007: ha_Sub3?
+    private val aHa_Sub3_7007: NativeRenderer?
     private val anInt7010: Int
     private var aClass356_7011: Class356? = null
     private var anInt7013 = 0

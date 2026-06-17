@@ -583,7 +583,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
             if (i.toInt() != 42) anInt9645 = -112
         }
 
-        fun method3241(i: Int, i_7_: Byte, var_ha: ha) {
+        fun method3241(i: Int, i_7_: Byte, var_renderer: Renderer) {
             anInt9637++
             if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) Class348_Sub42_Sub10.Companion.anInt9577 = 0
             else {
@@ -591,10 +591,10 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                 Class42.anInt562 = 0
                 Class348_Sub23_Sub2.anInt9039 = 0
                 Class348_Sub40_Sub4.anInt9112 = 0
-                val `is` = var_ha.Y()
+                val `is` = var_renderer.Y()
                 Class285_Sub2.anInt8498 = (`is`[3].toFloat() / 3.0f).toInt()
                 Class140.anInt1962 = (`is`[2].toFloat() / 3.0f).toInt()
-                var_ha.method3632(Class348_Sub40_Sub34.anIntArray9436)
+                var_renderer.method3632(Class348_Sub40_Sub34.anIntArray9436)
                 if ((Class306.anInt3872 != (Class348_Sub40_Sub34.anIntArray9436!![0].toFloat() / 3.0f).toInt()) || Class86.anInt1480 != (Class348_Sub40_Sub34.anIntArray9436!![1].toFloat() / 3.0f).toInt()) {
                     Class86.anInt1480 = (Class348_Sub40_Sub34.anIntArray9436!![1].toFloat() / 3.0f).toInt()
                     Class306.anInt3872 = (Class348_Sub40_Sub34.anIntArray9436!![0].toFloat() / 3.0f).toInt()
@@ -602,15 +602,15 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                     Class14.anIntArray5091 = IntArray(Class86.anInt1480 * Class306.anInt3872)
                     Class69.anInt1202 = Class306.anInt3872 shr 1
                 }
-                Class348_Sub40_Sub4.aClass101_9114 = var_ha.method3640()
+                Class348_Sub40_Sub4.aClass101_9114 = var_renderer.method3640()
                 Class348_Sub42_Sub10.Companion.anInt9577 = 0
                 var i_8_ = 0
                 while ( /**/Class239_Sub26.anInt6115 > i_8_) {
-                    Class318_Sub2.method2498(Class147.aClass338Array2034!![i_8_], var_ha, (-112).toByte(), i)
+                    Class318_Sub2.method2498(Class147.aClass338Array2034!![i_8_], var_renderer, (-112).toByte(), i)
                     i_8_++
                 }
-                for (i_9_ in 0..<Class69.anInt1200) Class318_Sub2.method2498((Class318_Sub1_Sub3_Sub4.aClass338Array10330!![i_9_]), var_ha, (-127).toByte(), i)
-                for (i_10_ in 0..<Class348_Sub44.anInt7101) Class318_Sub2.method2498(Class294.aClass338Array5060!![i_10_], var_ha, (-128).toByte(), i)
+                for (i_9_ in 0..<Class69.anInt1200) Class318_Sub2.method2498((Class318_Sub1_Sub3_Sub4.aClass338Array10330!![i_9_]), var_renderer, (-127).toByte(), i)
+                for (i_10_ in 0..<Class348_Sub44.anInt7101) Class318_Sub2.method2498(Class294.aClass338Array5060!![i_10_], var_renderer, (-128).toByte(), i)
                 Class225.anInt2946 = 0
                 if (Class348_Sub42_Sub10.Companion.anInt9577 > 0) {
                     val i_11_ = Class14.anIntArray5091!!.size

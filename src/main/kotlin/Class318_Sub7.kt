@@ -10,7 +10,7 @@ import kotlin.math.sqrt
 /* Class318_Sub7 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class318_sub10: Class318_Sub10?, l: Long) : Class318() {
+class Class318_Sub7 internal constructor(var_renderer: Renderer?, class129: Class129?, class318_sub10: Class318_Sub10?, l: Long) : Class318() {
     var aClass243_6433: Class243? = null
     private var anInt6434 = 0
     private val aLong6435: Long
@@ -59,21 +59,21 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
         }
     }
 
-    fun method2511(bool: Boolean, var_ha: ha?, l: Long) {
+    fun method2511(bool: Boolean, var_renderer: Renderer?, l: Long) {
         try {
             anInt6437++
             if (bool != true) this.aClass243_6433 = null
             var class318_sub9_sub2_sub1 = (this.aClass243_6433!!.method1872(8) as Class318_Sub9_Sub2_Sub1?)
             while (class318_sub9_sub2_sub1 != null) {
-                class318_sub9_sub2_sub1.method2522(var_ha, l)
+                class318_sub9_sub2_sub1.method2522(var_renderer, l)
                 class318_sub9_sub2_sub1 = this.aClass243_6433!!.method1878(126.toByte()) as Class318_Sub9_Sub2_Sub1?
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_ha != null) "{...}" else "null") + ',' + l + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 
-    fun method2513(var_ha: ha?, i: Int, l: Long, i_9_: Int, bool: Boolean) {
+    fun method2513(var_renderer: Renderer?, i: Int, l: Long, i_9_: Int, bool: Boolean) {
         var bool = bool
         do {
             try {
@@ -185,7 +185,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                             } else i_52_ =
                                 (((((this.aClass181_6441!!.anInt2410).toDouble() * Math.random()) + (this.aClass181_6441!!.anInt2413).toDouble()).toInt() shl 24) or ((((Math.random() * (this.aClass181_6441!!.anInt2433).toDouble()) + (this.aClass181_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((Math.random() * (this.aClass181_6441!!.anInt2403).toDouble()) + (this.aClass181_6441!!.anInt2390).toDouble()).toInt() shl 8) or (((this.aClass181_6441!!.anInt2408).toDouble() * Math.random()) + (this.aClass181_6441!!.anInt2399).toDouble()).toInt()))
                             var i_53_ = (this.aClass181_6441!!.anInt2414)
-                            if (!var_ha!!.method3644() && !(this.aClass181_6441!!.aBoolean2382)) i_53_ = -1
+                            if (!var_renderer!!.method3644() && !(this.aClass181_6441!!.aBoolean2382)) i_53_ = -1
                             if (Client.anInt5171 == Class348_Sub1_Sub1.anInt8808) {
                                 val class318_sub9_sub2_sub1 = (Class318_Sub9_Sub2_Sub1(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aClass181_6441!!.aBoolean2435), (this.aClass181_6441!!.aBoolean2430)))
                             } else {
@@ -224,7 +224,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                 if (i_9_ == 3) break
                 method2508(124)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rba.C(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("rba.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'))
             }
             break
         } while (false)
@@ -239,7 +239,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
             this.aClass129_6436 = class129
             this.aClass318_Sub10_6439 = class318_sub10
             this.aClass181_6441 = this.aClass129_6436!!.method1125(59.toByte())
-            if (!var_ha!!.method3644() && (this.aClass181_6441!!.anInt2387) != -1) this.aClass181_6441 = method3591((this.aClass181_6441!!.anInt2387), 0)
+            if (!var_renderer!!.method3644() && (this.aClass181_6441!!.anInt2387) != -1) this.aClass181_6441 = method3591((this.aClass181_6441!!.anInt2387), 0)
             this.aClass243_6433 = Class243()
             anInt6434 = (anInt6434 + 64.0 * Math.random()).toInt()
             method2507(true)
@@ -253,7 +253,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
             aClass284_6449.anInt3672 = this.aClass284_6444.anInt3672
             aClass284_6449.anInt3679 = this.aClass284_6444.anInt3679
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (if (var_ha != null) "{...}" else "null") + ',' + (if (class129 != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class129 != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 
@@ -275,12 +275,12 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
             aClass351_6443 = null
         }
 
-        fun method2509(i: Int, i_0_: Int, var_ha: ha, i_1_: Int, i_2_: Int, bool: Boolean, i_3_: Int, i_4_: Int) {
+        fun method2509(i: Int, i_0_: Int, var_renderer: Renderer, i_1_: Int, i_2_: Int, bool: Boolean, i_3_: Int, i_4_: Int) {
             anInt6438++
             if (bool != true) anInt6451 = -14
-            var_ha.method3675(i, (-125).toByte(), i_1_, i_0_, i_3_, i_2_)
-            var_ha.method3675(i - 2, (-125).toByte(), 1 + i_1_, 1 + i_0_, 16, i_4_)
-            var_ha.method3668(-2 + i, 18 + i_0_, i_4_, 1 + i_1_, -19 + i_3_, 115)
+            var_renderer.method3675(i, (-125).toByte(), i_1_, i_0_, i_3_, i_2_)
+            var_renderer.method3675(i - 2, (-125).toByte(), 1 + i_1_, 1 + i_0_, 16, i_4_)
+            var_renderer.method3668(-2 + i, 18 + i_0_, i_4_, 1 + i_1_, -19 + i_3_, 115)
         }
 
         @JvmStatic
@@ -301,7 +301,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
             }
         }
 
-        fun method2512(var_renderConfig: RenderConfig?, var_ha: ha?, i: Int) {
+        fun method2512(var_renderConfig: RenderConfig?, var_renderer: Renderer?, i: Int) {
             try {
                 anInt6440++
                 if (Class75.aClass348_Sub42_Sub14_1243 != null) {
@@ -390,7 +390,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                         Class348.anInt4290 = 20
                     } else if (Class348.anInt4290 == 20) {
                         Class289.method2193(true, (-123).toByte())
-                        method756(var_ha, Class75.anInt1250, Class75.anInt1253)
+                        method756(var_renderer, Class75.anInt1250, Class75.anInt1253)
                         Class348.anInt4290 = 60
                         Class289.method2193(true, (-122).toByte())
                         method867(true)
@@ -405,42 +405,42 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                             Class289.method2193(true, (-127).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 70) {
-                            Class125.aClass323_4921 = Class323(var_ha!!, 11, true, Class305.aCanvas3869!!)
+                            Class125.aClass323_4921 = Class323(var_renderer!!, 11, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 73
                             Class289.method2193(true, (-123).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 73) {
-                            Class14_Sub4.aClass323_8644 = Class323(var_ha!!, 12, true, Class305.aCanvas3869!!)
+                            Class14_Sub4.aClass323_8644 = Class323(var_renderer!!, 12, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 76
                             Class289.method2193(true, (-125).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 76) {
-                            Class39.aClass323_521 = Class323(var_ha!!, 14, true, Class305.aCanvas3869!!)
+                            Class39.aClass323_521 = Class323(var_renderer!!, 14, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 79
                             Class289.method2193(true, (-123).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 79) {
-                            Class168.aClass323_2252 = Class323(var_ha!!, 17, true, Class305.aCanvas3869!!)
+                            Class168.aClass323_2252 = Class323(var_renderer!!, 17, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 82
                             Class289.method2193(true, (-124).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 82) {
-                            Class176.aClass323_2333 = Class323(var_ha!!, 19, true, Class305.aCanvas3869!!)
+                            Class176.aClass323_2333 = Class323(var_renderer!!, 19, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 85
                             Class289.method2193(true, (-128).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 85) {
-                            Class285.aClass323_4754 = Class323(var_ha!!, 22, true, Class305.aCanvas3869!!)
+                            Class285.aClass323_4754 = Class323(var_renderer!!, 22, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 88
                             Class289.method2193(true, (-124).toByte())
                             method867(true)
                         } else if (Class348.anInt4290 == 88) {
-                            Class348_Sub3.aClass323_6581 = Class323(var_ha!!, 26, true, Class305.aCanvas3869!!)
+                            Class348_Sub3.aClass323_6581 = Class323(var_renderer!!, 26, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 91
                             Class289.method2193(true, (-125).toByte())
                             method867(true)
                         } else {
-                            Class240.aClass323_4672 = Class323(var_ha!!, 30, true, Class305.aCanvas3869!!)
+                            Class240.aClass323_4672 = Class323(var_renderer!!, 30, true, Class305.aCanvas3869!!)
                             Class348.anInt4290 = 100
                             Class289.method2193(true, (-119).toByte())
                             method867(true)
@@ -449,7 +449,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rba.A(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (var_ha!! != null) "{...}" else "null") + ',' + i + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("rba.A(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (var_renderer!! != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

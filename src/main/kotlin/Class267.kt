@@ -108,7 +108,7 @@ class Class267 private constructor(private val aClass69_3392: Class69?) {
         }
 
         @JvmStatic
-        fun method2028(i: Int, class51: Class51?, i_0_: Int, var_ha: ha?, i_1_: Int, i_2_: Int) {
+        fun method2028(i: Int, class51: Class51?, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int) {
             var i_1_ = i_1_
             try {
                 anInt3395++
@@ -118,7 +118,7 @@ class Class267 private constructor(private val aClass69_3392: Class69?) {
                         i_1_ += class51.anInt923
                         i_1_ = i_1_ and 0x3
                     } else i_1_ = 0
-                    val class105 = class218.method1596(i_1_, class51.aBoolean925, 82, var_ha!!)
+                    val class105 = class218.method1596(i_1_, class51.aBoolean925, 82, var_renderer!!)
                     if (class105 != null) {
                         var i_3_ = class51.anInt961
                         var i_4_ = class51.anInt926
@@ -138,7 +138,7 @@ class Class267 private constructor(private val aClass69_3392: Class69?) {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("up.C(" + i + ',' + (if (class51 != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("up.C(" + i + ',' + (if (class51 != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
             }
         }
 

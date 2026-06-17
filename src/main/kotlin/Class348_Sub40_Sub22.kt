@@ -201,7 +201,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
                 for (i_24_ in 0..3) Class348_Sub45.aClass361Array7108!![i_24_] = Class105_Sub1.method988(Class348_Sub40_Sub3.Companion.anInt9109, 1, Class367_Sub4.anInt7319)
                 Class289.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(Class367_Sub4.anInt7319) { ByteArray(Class348_Sub40_Sub3.Companion.anInt9109) } })
                 method1717(19278, Class348_Sub40_Sub3.Companion.anInt9109, Class367_Sub4.anInt7319, 4)
-                Class97.method873(Class367_Sub4.anInt7319 shr 3, 21719, Class348_Sub8.aHa6654, Class348_Sub40_Sub3.Companion.anInt9109 shr 3)
+                Class97.method873(Class367_Sub4.anInt7319 shr 3, 21719, Class348_Sub8.aRenderer6654, Class348_Sub40_Sub3.Companion.anInt9109 shr 3)
                 Class348_Sub15.anInt6769 = i_23_
             }
         }

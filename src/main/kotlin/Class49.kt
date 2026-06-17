@@ -6,12 +6,12 @@ import kotlin.concurrent.Volatile
 /* Class49 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class49 internal constructor(var_ha_Sub1: ha_Sub1?, class105: Class105?, class216: Class216?) : Interface4 {
+class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, class105: Class105?, class216: Class216?) : Interface4 {
     var aFloatArray4719: FloatArray? = null
     var anInt4722: Int = 0
     private var aClass216_4724: Class216? = null
     var anInt4725: Int = 0
-    private val aHa_Sub1_4729: ha_Sub1?
+    private val aHa_Sub1_4729: SoftwareRenderer?
     var anIntArray4731: IntArray?
 
     override fun method14(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, bool: Boolean, bool_8_: Boolean) {
