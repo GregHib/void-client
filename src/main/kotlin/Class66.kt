@@ -618,7 +618,7 @@ object Class66 {
             }
             if (i == 5209) {
                 anIntArray1149!![anInt1173++] = Class348_Sub36.anInt6992 + Class75.anInt1266
-                anIntArray1149!![anInt1173++] = Class245.anInt3170 + Class75.anInt1263
+                anIntArray1149!![anInt1173++] = DebugOverlayRenderer.anInt3170 + Class75.anInt1263
                 return
             }
             if (i == 5210) {
@@ -729,7 +729,7 @@ object Class66 {
                     anIntArray1149!![anInt1173++] = -1
                     return
                 } else {
-                    val bool_76_ = (class348_sub42_sub14.method3239(true, Class245.anInt3170 + Class75.anInt1263, Class348_Sub36.anInt6992 + Class75.anInt1266, anIntArray1175!!))
+                    val bool_76_ = (class348_sub42_sub14.method3239(true, DebugOverlayRenderer.anInt3170 + Class75.anInt1263, Class348_Sub36.anInt6992 + Class75.anInt1266, anIntArray1175!!))
                     if (bool_76_) {
                         anIntArray1149!![anInt1173++] = anIntArray1175!![1]
                         anIntArray1149!![anInt1173++] = anIntArray1175!![2]

@@ -328,7 +328,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                         if (Class88.aBoolean1500 || i_7_ < 0 || Class75.anInt1259 <= i_7_ || i_8_ < 0 || Class75.anInt1267 <= i_8_) {
                             if (IdleAnimationsOptionState.anInt5909 == -1 || Class339.anInt4202 == -1) {
                                 Class75.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 123, 0x3fff and (Class75.aClass348_Sub42_Sub14_1243!!.anInt9640), (Class75.aClass348_Sub42_Sub14_1243!!.anInt9640) shr 14 and 0x3fff)
-                                Class245.anInt3170 = `is`[2] - Class75.anInt1263
+                                DebugOverlayRenderer.anInt3170 = `is`[2] - Class75.anInt1263
                                 Class348_Sub36.anInt6992 = `is`[1] - Class75.anInt1266
                             } else {
                                 Class75.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 88, Class339.anInt4202, IdleAnimationsOptionState.anInt5909)
@@ -336,7 +336,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                                 IdleAnimationsOptionState.anInt5909 = Class339.anInt4202
                                 if (`is` != null) {
                                     Class348_Sub36.anInt6992 = -Class75.anInt1266 + `is`[1]
-                                    Class245.anInt3170 = -Class75.anInt1263 + `is`[2]
+                                    DebugOverlayRenderer.anInt3170 = -Class75.anInt1263 + `is`[2]
                                 }
                                 Class88.aBoolean1500 = false
                             }
@@ -344,7 +344,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             i_7_ += (10.0 * Math.random()).toInt() + -5
                             i_8_ += (Math.random() * 10.0).toInt() + -5
                             Class348_Sub36.anInt6992 = i_7_
-                            Class245.anInt3170 = i_8_
+                            DebugOverlayRenderer.anInt3170 = i_8_
                         }
                         if (Class75.aClass348_Sub42_Sub14_1243!!.anInt9631 != 37) {
                             if (Class75.aClass348_Sub42_Sub14_1243!!.anInt9631 != 50) {

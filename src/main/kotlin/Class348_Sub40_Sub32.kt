@@ -113,7 +113,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
                     TextureMetadataProvider.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544) - Class64.aFloat1136))
                     LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
                     Class361.aFloat4455 = (Class246.aFloat3177 + f_6_ * (-Class246.aFloat3177 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536)))
-                    Class269.aFloat3462 = (Class245.aFloat3172 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542 - Class245.aFloat3172) * f_6_)
+                    Class269.aFloat3462 = (DebugOverlayRenderer.aFloat3172 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542 - DebugOverlayRenderer.aFloat3172) * f_6_)
                     if (SceneryDetailOptionState.aClass299_6098 !== (WaterDetailOptionState.aModelLightingConfig_5990!!.aClass299_2541)) HeapInfoRecord.aClass299_4938 = (Class60.aRenderer1098!!.method3706(SceneryDetailOptionState.aClass299_6098, (WaterDetailOptionState.aModelLightingConfig_5990!!.aClass299_2541), f_6_, HeapInfoRecord.aClass299_4938))
                 } else {
                     HeapInfoRecord.aClass299_4938 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aClass299_2541)

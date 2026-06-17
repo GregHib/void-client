@@ -125,7 +125,7 @@ class Class286_Sub8 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
             Class48.anInt859 = -1
             anInt6300++
             if (i_0_.toInt() != 3) method2170(-109, 7.toByte())
-            Class245.anInt3170 = i
+            DebugOverlayRenderer.anInt3170 = i
             Class48.anInt859 = -1
             Class348_Sub15.method2811(false)
         }

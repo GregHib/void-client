@@ -776,7 +776,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class286_Sub3.anInt6230 = 0
             Class314_Sub1.anInt6359 = 0
             NativeTerrainTile.anInt8289 = 0
-            Class245.anInt3171 = 0
+            DebugOverlayRenderer.anInt3171 = 0
             Class268.anInt3436 = 0
             NativeRenderer.anInt7935 = 0
             Class318_Sub1_Sub5_Sub2.anInt10156 = 0

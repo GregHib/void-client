@@ -192,7 +192,7 @@ class Class258_Sub1 : Class258 {
                 Class99.aBooleanArrayArray1572 = bools
                 Class348_Sub8.aBooleanArrayArray6656 = bools_28_
             }
-            Class245.method1884()
+            DebugOverlayRenderer.method1884()
         }
     }
 }

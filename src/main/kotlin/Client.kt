@@ -158,7 +158,7 @@ import CustomCursorsOptionState.Companion.method1758
 import WorldMapRenderer.Companion.method1853
 import ManagedGlResource.Companion.method1866
 import TextureMetadataProvider.Companion.method1880
-import Class245.method1882
+import DebugOverlayRenderer.method1882
 import Class246.Companion.method1886
 import Class247.method1889
 import Class248.Companion.method1897
@@ -2215,7 +2215,7 @@ class Client : GameAppletFrame() {
                                             val i_70_ = ((i_51_ + (class348_sub45!!.method3308((-127).toByte())) - i_43_ - ((class46.anInt709) / 2)).toDouble() * 2.0 / (Class75.aFloat1247).toDouble()).toInt()
                                             val i_71_ = -((i_52_ + (class348_sub45.method3311(-111)) - i_44_ - ((class46.anInt789) / 2)).toDouble() * 2.0 / (Class75.aFloat1247).toDouble()).toInt()
                                             val i_72_ = (Class348_Sub36.anInt6992 + i_70_ + Class75.anInt1266)
-                                            val i_73_ = (Class245.anInt3170 + i_71_ + Class75.anInt1263)
+                                            val i_73_ = (DebugOverlayRenderer.anInt3170 + i_71_ + Class75.anInt1263)
                                             val class348_sub42_sub14 = method1269(-17096)
                                             if (class348_sub42_sub14 != null) {
                                                 val `is`: IntArray? = IntArray(3)
@@ -2238,7 +2238,7 @@ class Client : GameAppletFrame() {
                                         } else if (bool_53_ && (Class348_Sub42.anInt7059 > 0)) {
                                             if (Class348_Sub42.anInt7059 == 1 && ((Class318_Sub4.anInt6411 != Class258_Sub4.aClass373_8552!!.method3597(true)) || (ModelDefinitionCache.anInt2872 != (Class258_Sub4.aClass373_8552!!.method3594(117.toByte()))))) {
                                                 ParticleDefLoader.anInt2464 = Class348_Sub36.anInt6992
-                                                OpenGlTerrainTile.anInt8237 = Class245.anInt3170
+                                                OpenGlTerrainTile.anInt8237 = DebugOverlayRenderer.anInt3170
                                                 Class348_Sub42.anInt7059 = 2
                                             }
                                             if (Class348_Sub42.anInt7059 == 2) {

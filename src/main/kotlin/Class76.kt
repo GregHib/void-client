@@ -34,7 +34,7 @@ class Class76 internal constructor(bool: Boolean) {
             var class318_sub4_8_ = (this.aDoublyLinkedNodeList_1282.method1872(8) as? Class318_Sub4?)
             while (class318_sub4_8_ != null) {
                 if (class318_sub1!!.anInt6389 >= class318_sub4_8_.aClass318_Sub1_6410!!.anInt6389) {
-                    Class245.method1883(class318_sub4_8_, class318_sub4, true)
+                    DebugOverlayRenderer.method1883(class318_sub4_8_, class318_sub4, true)
                     return
                 }
                 class318_sub4_8_ = this.aDoublyLinkedNodeList_1282.method1878((-44).toByte()) as? Class318_Sub4?

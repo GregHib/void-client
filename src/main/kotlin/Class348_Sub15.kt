@@ -39,13 +39,13 @@ class Class348_Sub15 internal constructor(var anInt6773: Int, var aClass55_Sub1_
                 Class48.anInt859 = -1
                 TextureMetadataProvider.anInt4609 = -1
             }
-            if (Class245.anInt3170 < 0) {
+            if (DebugOverlayRenderer.anInt3170 < 0) {
                 Class48.anInt859 = -1
-                Class245.anInt3170 = 0
+                DebugOverlayRenderer.anInt3170 = 0
                 TextureMetadataProvider.anInt4609 = -1
             }
-            if (Class75.anInt1267 < Class245.anInt3170) {
-                Class245.anInt3170 = Class75.anInt1267
+            if (Class75.anInt1267 < DebugOverlayRenderer.anInt3170) {
+                DebugOverlayRenderer.anInt3170 = Class75.anInt1267
                 TextureMetadataProvider.anInt4609 = -1
                 Class48.anInt859 = -1
             }

@@ -1,7 +1,7 @@
 /* Class245 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class245 {
+object DebugOverlayRenderer {
     private var anIntArray3169: IntArray? = IntArray(3)
     @JvmField
     var anInt3170: Int = 0
