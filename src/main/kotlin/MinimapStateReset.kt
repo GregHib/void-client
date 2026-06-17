@@ -1,7 +1,7 @@
 /* Class128 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class128 {
+object MinimapStateReset {
     @JvmField
     var anInt1870: Int = 0
     var aIntRange_1871: IntRange? = IntRange(52, -1)

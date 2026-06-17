@@ -1278,7 +1278,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub3_Sub4.anInt10337 = 0
             Class179.anInt2369 = 0
             Class286_Sub8.anInt6297 = 0
-            Class128.anInt1870 = 0
+            MinimapStateReset.anInt1870 = 0
             Player.anInt10527 = 0
             Class69.anInt1193 = 0
             Class239_Sub27.anInt6130 = 0

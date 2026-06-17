@@ -1184,7 +1184,7 @@ object Class66 {
                 return
             }
             if (i == 5503) {
-                Class128.method1122(0)
+                MinimapStateReset.method1122(0)
                 return
             }
             if (i == 5504) {
@@ -3991,7 +3991,7 @@ object Class66 {
                     return
                 }
                 if (i == 3322) {
-                    anIntArray1149!![anInt1173++] = Class128.anInt1872
+                    anIntArray1149!![anInt1173++] = MinimapStateReset.anInt1872
                     return
                 }
                 if (i == 3323) {

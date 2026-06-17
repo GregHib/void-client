@@ -126,7 +126,7 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
                 Class228.aIntRange_2972,
                 InputSettingsState.aIntRange_1762,
                 Class15.aIntRange_229,
-                Class128.aIntRange_1871,
+                MinimapStateReset.aIntRange_1871,
                 Class63.aIntRange_1120,
                 Class74.aIntRange_1234,
                 Class296.aIntRange_3773,
