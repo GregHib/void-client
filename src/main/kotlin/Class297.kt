@@ -393,7 +393,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
             }
             if (this.aBoolean3794) {
                 try {
-                    anObject3787 = Class1()
+                    anObject3787 = DirectSoundAudioChannel()
                 } catch (throwable: Throwable) {
                     /* empty */
                 }
