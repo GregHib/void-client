@@ -202,7 +202,7 @@ object ClientLoadStateMachine {
             Class348_Sub40_Sub18.aClass319_9245 = Class319(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class78.aClass45_1322, RasterSprite.aClass45_5207)
             SpriteLoadValidator.aClass65_4787 = Class65(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class91.aClass82_1523 = Class82(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            WaterDetailOptionState.aClass259_5995 = Class259(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
             Class269.aParticleAmountCache_3453 = ParticleAmountCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class65.method699(SoftwareSpriteRaster.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, CameraRotationStub.aClass45_322, RasterSprite.aClass45_5207)
@@ -233,12 +233,12 @@ object ClientLoadStateMachine {
         if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, RenderConfigFactory.aClass268_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
-            Class77.anIntArray1303 = (IntArray(WaterDetailOptionState.aClass259_5995!!.anInt3305 + 1000))
-            Class286_Sub6.aBooleanArray6270 = (BooleanArray(WaterDetailOptionState.aClass259_5995!!.anInt3305 + 1000))
+            Class77.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
+            Class286_Sub6.aBooleanArray6270 = (BooleanArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
             GlTextureCubeMap.aStringArray8532 = arrayOfNulls<String>(Class91.aClass82_1523!!.anInt1439)
             var i_13_ = 0
-            while (WaterDetailOptionState.aClass259_5995!!.anInt3305 + 1000 > i_13_) {
-                if (WaterDetailOptionState.aClass259_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
+            while (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000 > i_13_) {
+                if (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
                     Class286_Sub6.aBooleanArray6270!![i_13_] = true
                     Class335.anInt4168++
                 }

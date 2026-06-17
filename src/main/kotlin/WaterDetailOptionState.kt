@@ -60,7 +60,7 @@ class WaterDetailOptionState : GraphicsOptionState {
         @JvmField
         var anInt5994: Int = 0
         @JvmField
-        var aClass259_5995: Class259? = null
+        var aKeyboardLayoutCache_5995: KeyboardLayoutCache? = null
 
         @JvmStatic
         fun method1779(i: Byte) {
@@ -80,7 +80,7 @@ class WaterDetailOptionState : GraphicsOptionState {
             val i_0_ = 108 % ((-24 - i) / 54)
             aConfigFlagUtil_5989 = null
             anIntArrayArray5991 = null
-            aClass259_5995 = null
+            aKeyboardLayoutCache_5995 = null
             aSoundEnvelopeArray5993 = null
             aModelLightingConfig_5990 = null
         }

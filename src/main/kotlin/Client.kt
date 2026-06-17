@@ -760,7 +760,7 @@ class Client : GameAppletFrame() {
         method2545(true)
         method698(i + -106)
         Class82.method811((-123).toByte())
-        Class259.method1975((-15).toByte())
+        KeyboardLayoutCache.method1975((-15).toByte())
         method1441(18.toByte())
         method1585(-1)
         method1624(28962)
@@ -2151,7 +2151,7 @@ class Client : GameAppletFrame() {
                                 if (class46.anInt765 != 0) {
                                     if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == Class312.anInt3932)) {
                                         Class348_Sub1.aClass46_6561 = class46
-                                        if (Class259.aClass305_3304 != null) Class259.aClass305_3304!!.method2292(123, Class348_Sub8.aRenderer6654!!, class46.anInt789)
+                                        if (KeyboardLayoutCache.aClass305_3304 != null) KeyboardLayoutCache.aClass305_3304!!.method2292(123, Class348_Sub8.aRenderer6654!!, class46.anInt789)
                                         if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {
                                             if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                                 SceneryDetailOptionState.method1823(Class348_Sub8.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
@@ -2168,7 +2168,7 @@ class Client : GameAppletFrame() {
                                         }
                                     }
                                     if (class46.anInt765 == Class290.anInt3717) {
-                                        if (class46.method425((Class348_Sub8.aRenderer6654!!), 3.toByte()) != null && (Class259.anInt3306 == 0 || Class259.anInt3306 == 3) && !Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
+                                        if (class46.method425((Class348_Sub8.aRenderer6654!!), 3.toByte()) != null && (KeyboardLayoutCache.anInt3306 == 0 || KeyboardLayoutCache.anInt3306 == 3) && !Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                             var i_58_ = i_40_ - i_43_
                                             var i_59_ = i_41_ - i_44_
                                             val i_60_ = (class46.anIntArray677!![i_59_])

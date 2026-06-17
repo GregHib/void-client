@@ -411,7 +411,7 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
             Class97.anInt1548 = -1
             Class334.anInt4155 = -1
             anInt9222++
-            Class259.anInt3306 = 0
+            KeyboardLayoutCache.anInt3306 = 0
             val i_67_ = -95 % ((i - -46) / 52)
         }
 

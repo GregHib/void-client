@@ -40,7 +40,7 @@ class Class348_Sub42_Sub13 internal constructor(var aString9617: String?) : Clas
             this.method2715(112.toByte())
             this.method3162(true)
             Class8.anInt166--
-            Class259.aClass60_3301!!.method582(this, class348_sub42_sub12.aLong9600, (-128).toByte())
+            KeyboardLayoutCache.aClass60_3301!!.method582(this, class348_sub42_sub12.aLong9600, (-128).toByte())
             return false
         }
         return i_5_ != method3235(-17937)

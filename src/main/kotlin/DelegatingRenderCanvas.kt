@@ -251,7 +251,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class52.method491((-86).toByte())
                     FloatCameraTransform.method921(99.toByte(), false)
                     method3936(i + i)
-                    Class259.aClass305_3304 = null
+                    KeyboardLayoutCache.aClass305_3304 = null
                     Class55_Sub1.aBoolean5265 = false
                     method3570(false)
                     System.gc()

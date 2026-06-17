@@ -43,7 +43,7 @@ open class Class348_Sub42 : Class348() {
             if (i.toInt() == -114) {
                 for (i_0_ in 0..2047) {
                     CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_0_] = null
-                    Class259.aByteArray3300!![i_0_] = 1.toByte()
+                    KeyboardLayoutCache.aByteArray3300!![i_0_] = 1.toByte()
                     Class348_Sub17.aClass359Array6802!![i_0_] = null
                 }
             }

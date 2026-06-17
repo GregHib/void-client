@@ -147,7 +147,7 @@ class LinkedNodeListIterator {
                 if (var_aa != null) {
                     if (i_2_ != 22960) anIntArray1650 = null
                     var_renderer.KA(i, i_1_, i + class46.anInt709, class46.anInt789 + i_1_)
-                    if (Class259.anInt3306 != 2 && Class259.anInt3306 != 5 && GroundItemRenderState.aAbstractModelRenderer_1664 != null) {
+                    if (KeyboardLayoutCache.anInt3306 != 2 && KeyboardLayoutCache.anInt3306 != 5 && GroundItemRenderState.aAbstractModelRenderer_1664 != null) {
                         val i_3_: Int
                         val i_4_: Int
                         val i_5_: Int

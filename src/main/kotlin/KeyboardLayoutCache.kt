@@ -1,7 +1,7 @@
 /* Class259 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class259 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_3299: Class45?
     private val aClass60_3303 = Class60(64)
     var anInt3305: Int = 0

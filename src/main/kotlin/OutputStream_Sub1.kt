@@ -104,7 +104,7 @@ class OutputStream_Sub1 : OutputStream() {
                 } else {
                     Class348_Sub8.aRenderer6654!!.ya()
                     val i_15_ = LocTypeDefLoader.anInt2500
-                    if (Class259.aClass305_3304 != null) Class259.aClass305_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, Class348_Sub8.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, Class5.anInt4638, Class348_Sub42_Sub19.anInt9701, i_15_, i_2_)
+                    if (KeyboardLayoutCache.aClass305_3304 != null) KeyboardLayoutCache.aClass305_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, Class348_Sub8.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, Class5.anInt4638, Class348_Sub42_Sub19.anInt9701, i_15_, i_2_)
                     else Class348_Sub8.aRenderer6654!!.GA(i_15_)
                 }
                 Class369_Sub1.method3570(false)

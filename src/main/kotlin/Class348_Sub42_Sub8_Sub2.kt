@@ -1480,7 +1480,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub40_Sub22.aIntRange_9285) {
-                Class259.anInt3306 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                KeyboardLayoutCache.anInt3306 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
