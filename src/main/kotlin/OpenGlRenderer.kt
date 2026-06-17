@@ -100,7 +100,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var anInt7713: Int = 0
     private val aGlFramebufferBlitter_7720: GlFramebufferBlitter?
     private var aClass348_Sub5_Sub1_7721: GlBloomEffect? = null
-    private val aClass354_7723: Class354
+    private val aTextureCache_7723: TextureCache
     private val aClass101_Sub3_7725: ProjectionCameraTransform
     @JvmField
     var aClass101_Sub3_7729: ProjectionCameraTransform?
@@ -649,7 +649,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             var i_50_ = 0
             var i_51_ = if (!this.aBoolean7846) 0.toByte() else 3.toByte()
             if (i >= 0) {
-                class258_sub3 = aClass354_7723.method3467(i, 256)
+                class258_sub3 = aTextureCache_7723.method3467(i, 256)
                 val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                 if (class12!!.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) {
                     val i_52_ = if (class12.aBoolean199) 64 else 128
@@ -1042,7 +1042,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7635++
         require(!(i < 128 || i > 1024))
         this.anInt7712 = i
-        aClass354_7723.method3463((-110).toByte())
+        aTextureCache_7723.method3463((-110).toByte())
     }
 
     override fun xa(f: Float) {
@@ -1162,7 +1162,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             val class348_sub35 = aNodeDeque_7749.method1997(8) as IntKeyNode?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
-        aClass354_7723.method3469(8218)
+        aTextureCache_7723.method3469(8218)
         if (E() > 100663296 && 60000L + aLong7757 < Class62.method599(-96)) {
             System.gc()
             aLong7757 = Class62.method599(-91)
@@ -1512,7 +1512,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     override fun method3710() {
         if (aClass348_Sub5_Sub1_7721 != null && aClass348_Sub5_Sub1_7721!!.method2760(1.toByte())) {
             aGlFramebufferBlitter_7720!!.method278(aClass348_Sub5_Sub1_7721!!, true)
-            aClass354_7723.method3463((-110).toByte())
+            aTextureCache_7723.method3463((-110).toByte())
         }
         anInt7612++
     }
@@ -2103,7 +2103,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (aClass348_Sub5_Sub1_7721 != null) {
             if (!aClass348_Sub5_Sub1_7721!!.method2760(1.toByte())) {
                 if (!aGlFramebufferBlitter_7720!!.method274(aClass348_Sub5_Sub1_7721!!, true)) return false
-                aClass354_7723.method3463((-110).toByte())
+                aTextureCache_7723.method3463((-110).toByte())
             }
             return true
         }
@@ -3076,7 +3076,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 }
                 Class59_Sub2_Sub1.method566(false, true, (-128).toByte())
                 aBoolean7734 = true
-                aClass354_7723 = Class354(this, this.aRenderConfig4579)
+                aTextureCache_7723 = TextureCache(this, this.aRenderConfig4579)
                 method3786(false)
                 this.aGlowPostProcessor_7736 = GlowPostProcessor(this)
                 aGlFramebufferBlitter_7720 = GlFramebufferBlitter(this)

@@ -237,7 +237,7 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
                 for (i_5_ in 0..<PackedFlagsAccessor.anInt7101) LoadingBarRenderer.aMapTileShapeArray5060!![i_5_] = null
                 LoadingBarRenderer.aMapTileShapeArray5060 = null
             }
-            Class354.anIntArrayArrayArray4356 = null
+            TextureCache.anIntArrayArrayArray4356 = null
             val i_6_ = 36 % ((-81 - i) / 38)
             GlTextureBase.anIntArray5091 = null
             MinimapAreaMarkerNode.aMapTileShapeArray9700 = null

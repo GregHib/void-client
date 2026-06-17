@@ -144,7 +144,7 @@ class GlTexture2DRegion : GlTexture2D {
             ModelHeaderCache.method1933(CameraRotationStub.aClass45_322, FacingDirectionNode.aRenderer6654, true)
             LocalizedText.method2061(-128)
             method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
-            Class354.method3466(i xor 0x4f.inv())
+            TextureCache.method3466(i xor 0x4f.inv())
             AbstractProceduralTextureNode.method3038(-1)
             if (WorldMapRenderer.anInt4674 == 3) Buffer.method3379(2, 4)
             else if (WorldMapRenderer.anInt4674 == 7) Buffer.method3379(2, 8)

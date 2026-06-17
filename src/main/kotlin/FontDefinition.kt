@@ -59,7 +59,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
                         } else c = '<'
                     }
                     if (i_1_ == -1) {
-                        i_3_ += 0xff and (aByteArray1986[Class354.method3464(c, false).toInt() and 0xff]).toInt()
+                        i_3_ += 0xff and (aByteArray1986[TextureCache.method3464(c, false).toInt() and 0xff]).toInt()
                         if (aByteArrayArray1979 != null && i_2_ != -1) i_3_ += aByteArrayArray1979!![i_2_]!![c.code].toInt()
                         i_2_ = c.code
                         var i_9_ = i_3_
@@ -151,7 +151,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
                         } else c = '>'
                     }
                     if (i == -1) {
-                        i_17_ += 0xff and (aByteArray1986[Class354.method3464(c, false).toInt() and 0xff]).toInt()
+                        i_17_ += 0xff and (aByteArray1986[TextureCache.method3464(c, false).toInt() and 0xff]).toInt()
                         if (aByteArrayArray1979 != null && i_16_ != -1) i_17_ += aByteArrayArray1979!![i_16_]!![c.code].toInt()
                         i_16_ = c.code
                     }
@@ -197,7 +197,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             val i_34_ = string.length
             var i_35_ = 0
             while (i_34_ > i_35_) {
-                var i_36_ = Class354.method3464(string.get(i_35_), false).toInt() and 0xff
+                var i_36_ = TextureCache.method3464(string.get(i_35_), false).toInt() and 0xff
                 var i_37_ = 0
                 if (i_36_ == 60) i_31_ = i_35_
                 else {

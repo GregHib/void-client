@@ -51,7 +51,7 @@ object ClanChatRequestSender {
         var i_3_ = 0
         var i_4_ = 0
         while (i_2_ > i_4_) {
-            i_3_ = (Class354.method3464(string.get(i_4_), false) + ((i_3_ shl 5) - i_3_))
+            i_3_ = (TextureCache.method3464(string.get(i_4_), false) + ((i_3_ shl 5) - i_3_))
             i_4_++
         }
         if (i != -29286) return 0

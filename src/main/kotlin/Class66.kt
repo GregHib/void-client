@@ -968,7 +968,7 @@ object Class66 {
                 Exception_Sub1.aModelHeaderCache_112!!.method1930(-21804)
                 Exception_Sub1.aModelHeaderCache_112!!.method1936(-71)
                 MapAreaDefinition.aBufferedMessageQueue_2529!!.method2074(-118)
-                Class354.method3466(125)
+                TextureCache.method3466(125)
                 return
             }
             if (i == 5405) {

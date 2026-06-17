@@ -76,7 +76,7 @@ class OutgoingPacketNode : LinkedListNode() {
                     FacingDirectionNode.aRenderer6654!!.method3677(ParticleSystemRenderer.aCanvas3869)
                 } else method3553(false, 100.toByte(), IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
                 anInt7123++
-                Class354.method3466(i + -1347)
+                TextureCache.method3466(i + -1347)
                 PcmStreamBuffer.aBoolean8870 = true
             }
         }

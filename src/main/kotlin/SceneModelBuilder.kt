@@ -137,7 +137,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                         if (bool) {
                             var f = (TextureDefinitionLoader.anInt1974 - (mapTileShape.anIntArray4187!![0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
-                            if (!(f < SceneRegionState.anInt194.toFloat()) && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                            if (!(f < SceneRegionState.anInt194.toFloat()) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                         }
                     }
                 } else if (mapTileShape.aByte4192.toInt() == 2) {
@@ -161,7 +161,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                         if (bool) {
                             var f = (BlendTextureNode.anInt9360 - (mapTileShape.anIntArray4184[0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
-                            if (!(f < SceneRegionState.anInt194.toFloat()) && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                            if (!(f < SceneRegionState.anInt194.toFloat()) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                         }
                     }
                 } else if (mapTileShape.aByte4192.toInt() == 16 || mapTileShape.aByte4192.toInt() == 8) {
@@ -173,7 +173,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                             if (f < 0.0f) f *= -1.0f
                             var f_28_ = (BlendTextureNode.anInt9360 + -(mapTileShape.anIntArray4184[0])).toFloat()
                             if (f_28_ < 0.0f) f_28_ *= -1.0f
-                            if ((!(f < SceneRegionState.anInt194.toFloat()) || !(SceneRegionState.anInt194.toFloat() > f_28_)) && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                            if ((!(f < SceneRegionState.anInt194.toFloat()) || !(SceneRegionState.anInt194.toFloat() > f_28_)) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                         }
                     }
                 } else if (mapTileShape.aByte4192.toInt() == 4) {
@@ -204,7 +204,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                                 i_34_++
                             }
                         }
-                        if (bool && Class354.method3465(0, 1, mapTileShape) && Class354.method3465(1, 1, mapTileShape) && Class354.method3465(2, 1, mapTileShape) && Class354.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                        if (bool && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
@@ -229,7 +229,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
             if (i_39_ <= 101) method2499(66, -39, -55, 105, 96, 114.toByte(), -44)
             for (i_43_ in i_38_..i_40_) {
                 for (i_44_ in i_36_..i_35_) {
-                    if (Class354.anIntArrayArrayArray4356!![i]!![i_43_]!![i_44_] == -RandomAccessFileOnDisk.anInt3049) return false
+                    if (TextureCache.anIntArrayArrayArray4356!![i]!![i_43_]!![i_44_] == -RandomAccessFileOnDisk.anInt3049) return false
                 }
             }
             val i_45_ = (i_38_ shl Class362.anInt4459) + 1

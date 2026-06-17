@@ -54,7 +54,7 @@ class IndexedSprite : Sprite {
             anInt5195++
             if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
-            val i_3_ = Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
+            val i_3_ = TextureCache.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
             if (i_3_ == -RandomAccessFileOnDisk.anInt3049) return false
             if (RandomAccessFileOnDisk.anInt3049 == i_3_) return true
             if (SoundCacheState.aTerrainTileArray4142 == NativeSprite.Companion.aTerrainTileArray5191) return false
@@ -75,10 +75,10 @@ class IndexedSprite : Sprite {
                 ))
             ) {
                 TheoraVideoStream.anInt9039++
-                Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = RandomAccessFileOnDisk.anInt3049
+                TextureCache.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = RandomAccessFileOnDisk.anInt3049
                 return true
             }
-            Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = -RandomAccessFileOnDisk.anInt3049
+            TextureCache.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = -RandomAccessFileOnDisk.anInt3049
             return false
         }
 

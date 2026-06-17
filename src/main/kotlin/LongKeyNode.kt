@@ -188,7 +188,7 @@ class LongKeyNode : LinkedListNode {
                 }
                 var_renderer.la()
                 var_renderer.GA(-16777215)
-                Class354.method3466(-86)
+                TextureCache.method3466(-86)
                 ClampTextureNode.anInt9479 = 0
                 ModelWallEntity.aNodeDeque_10125!!.method1996(116)
                 if (!Class375.aBoolean4542) {

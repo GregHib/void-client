@@ -358,7 +358,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             anInt7309++
             if (i.toInt() == -89) {
                 FontMetaRef.aBoolean4328 = false
-                Class354.method3466(i + 6)
+                TextureCache.method3466(i + 6)
             }
         }
 

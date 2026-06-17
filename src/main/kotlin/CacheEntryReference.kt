@@ -71,7 +71,7 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
                 Class99.method882(11.toByte())
                 RenderNode.anInt9721 = GlBufferObject.anInt4737
                 method1713(false, 520)
-                Class354.method3466(100)
+                TextureCache.method3466(100)
                 Class66.method703(RenderNode.anInt9721)
             }
             ProjectileFactory.aBoolean2895 = false

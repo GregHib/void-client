@@ -116,7 +116,7 @@ class HslColorConfig {
                         class348_sub7.method2715(29.toByte())
                         class348_sub7 = Class5_Sub1_Sub1.aNodeDeque_9931!!.method1990(31.toByte()) as RegionTileNode?
                     }
-                    Class354.method3466(i + -113)
+                    TextureCache.method3466(i + -113)
                 } else {
                     if (IntPair.aRenderer6968 == null) {
                         val canvas = Canvas()

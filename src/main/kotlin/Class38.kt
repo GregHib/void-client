@@ -272,7 +272,7 @@ class Class38 {
                 }
                 MinimapAreaMarkerNode.anInt9699 = 0
                 CameraConfigDefinition.anInt3246 = 0
-                Class354.method3466(89)
+                TextureCache.method3466(89)
             }
         }
 

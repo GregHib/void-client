@@ -4,7 +4,7 @@ import SoundBankPatch.Companion.method2929
 /* Class354 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class354 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_renderConfig: RenderConfig?) {
+class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_renderConfig: RenderConfig?) {
     private val aHa_Sub2_4355: OpenGlRenderer?
     private val aRenderConfig4359: RenderConfig?
     private var aClass60_4361: Class60? = Class60(256)

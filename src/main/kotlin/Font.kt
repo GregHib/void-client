@@ -27,7 +27,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 val i_7_ = string!!.length
                 var i_8_ = 0
                 while ( /**/i_7_ > i_8_) {
-                    var c = (Class354.method3464(string.get(i_8_), false).toInt() and 0xff).toChar()
+                    var c = (TextureCache.method3464(string.get(i_8_), false).toInt() and 0xff).toChar()
                     if (c.code == 60) i_4_ = i_8_
                     else {
                         if (c.code == 62 && i_4_ != -1) {
@@ -343,7 +343,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             if (i_105_ == 25625) {
                 var i_110_ = 0
                 while ( /**/i_110_ < i_109_) {
-                    var c = (Class354.method3464(string.get(i_110_), false).toInt() and 0xff).toChar()
+                    var c = (TextureCache.method3464(string.get(i_110_), false).toInt() and 0xff).toChar()
                     if (c.code == 60) i_107_ = i_110_
                     else {
                         if (c.code == 62 && i_107_ != -1) {

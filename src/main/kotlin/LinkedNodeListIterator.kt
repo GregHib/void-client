@@ -133,7 +133,7 @@ class LinkedNodeListIterator {
                 method882(11.toByte())
                 RenderNode.anInt9721 = Class54.anInt970
                 method1713(false, 520)
-                Class354.method3466(-119)
+                TextureCache.method3466(-119)
                 method703(RenderNode.anInt9721)
             }
             ProjectileFactory.aBoolean2895 = true

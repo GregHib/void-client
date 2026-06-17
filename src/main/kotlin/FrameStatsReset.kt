@@ -82,7 +82,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CircleRasterizer.anInt3814 = 0
             NpcEntityUpdater.anInt3653 = 0
             Class64_Sub2.anInt5488 = 0
-            Class354.anInt4354 = 0
+            TextureCache.anInt4354 = 0
             FogOptionState.anInt6055 = 0
             Class377.anInt9897 = 0
             DisplaceTextureNode.anInt9137 = 0
@@ -142,7 +142,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9842 = 0
             NativeRenderer.anInt7914 = 0
             FrameBufferObject.anInt4876 = 0
-            Class354.anInt4357 = 0
+            TextureCache.anInt4357 = 0
             Class367_Sub8.anInt7360 = 0
             FloatBuffer.anInt9744 = 0
             SoundChannelMixer.anInt3609 = 0
@@ -1089,7 +1089,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class67.anInt4647 = 0
             ParticleDefLoader.anInt2457 = 0
             InvertTextureNode.anInt9420 = 0
-            Class354.anInt4358 = 0
+            TextureCache.anInt4358 = 0
             OpenGlTerrainTile.anInt8259 = 0
             SkeletalAnimFrameLoader.anInt466 = 0
             InterfaceComponentGroup.anInt9624 = 0
@@ -1162,7 +1162,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GroundDecorSceneEntity.anInt9998 = 0
             ModelHeaderCache.anInt3279 = 0
             ModelVertexColorBuffer.anInt6588 = 0
-            Class354.anInt4360 = 0
+            TextureCache.anInt4360 = 0
             Class64_Sub2.anInt5456 = 0
             NpcActorEntity.anInt10078 = 0
             Class64_Sub2.anInt5445 = 0
@@ -1480,7 +1480,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class91.anInt1522 = 0
             TerrainShadowBuilderGl2.anInt6941 = 0
             Class82.anInt1437 = 0
-            Class354.anInt4353 = 0
+            TextureCache.anInt4353 = 0
             NodeDeque.anInt3340 = 0
             Class50_Sub1.anInt5215 = 0
             NativeRenderer.anInt7951 = 0
@@ -2253,7 +2253,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Gl2dTexture.anInt8615 = 0
             SpriteTextureNode.anInt9239 = 0
             WeaveTextureNode.anInt9268 = 0
-            Class354.anInt4352 = 0
+            TextureCache.anInt4352 = 0
             RegionTileNode.anInt6646 = 0
             GameAppletFrame.anInt22 = 0
             BinaryGraphicsOptionState.anInt5953 = 0
