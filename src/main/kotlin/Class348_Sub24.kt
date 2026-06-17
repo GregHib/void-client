@@ -50,7 +50,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
             } else {
                 if (!Class5_Sub1.aBoolean8335) method661(95.toByte())
                 for (i_0_ in 0..99) {
-                    if (!Class292.method2203((-52).toByte())) break
+                    if (!MapArchiveSource.method2203((-52).toByte())) break
                 }
                 if (WorldMapRenderer.anInt4674 == 10) {
                     while (method2138(i xor 0x2ca2)) {

@@ -7,7 +7,7 @@ import java.io.IOException
 /* Class292 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class292 internal constructor(private val aClass45_4804: Class45) : Interface7 {
+class MapArchiveSource internal constructor(private val aClass45_4804: Class45) : Interface7 {
     override fun method31(i: Int): Int {
         anInt4801++
         val i_0_ = 16 / ((i - -43) / 62)

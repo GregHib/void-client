@@ -1174,9 +1174,9 @@ object Class66 {
                 Class331.anInt4133 = anIntArray1149!![anInt1173 + 3]
                 val i_134_ = anIntArray1149!![anInt1173 + 4]
                 if (i_134_ >= 2) throw RuntimeException()
-                Class292.anInt4803 = i_134_
+                MapArchiveSource.anInt4803 = i_134_
                 val i_135_ = anIntArray1149!![anInt1173 + 5]
-                if (i_135_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![Class292.anInt4803]!!).size shr 1) throw RuntimeException()
+                if (i_135_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![MapArchiveSource.anInt4803]!!).size shr 1) throw RuntimeException()
                 CompassSmoother.anInt3373 = i_135_
                 Class348_Sub40_Sub21.anInt9282 = 3
                 Class318_Sub1_Sub5_Sub2.anInt10163 = -1

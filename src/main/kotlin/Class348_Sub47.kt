@@ -35,7 +35,7 @@ class Class348_Sub47 : Class348() {
             do {
                 try {
                     ObjectSpawnDecoder.anInt1803 = 0
-                    Class292.anInt4797 = Class313.anInt3936
+                    MapArchiveSource.anInt4797 = Class313.anInt3936
                     Class318_Sub1_Sub5.anInt8780 = 0
                     anInt7120++
                     Class313.anInt3936 = 0

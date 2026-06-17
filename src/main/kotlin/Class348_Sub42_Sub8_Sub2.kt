@@ -1037,7 +1037,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class292.aIntRange_4798) {
+            if (Class348_Sub3.aIntRange_6584 == MapArchiveSource.aIntRange_4798) {
                 var i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-107)
                 if (i == 65535) i = -1
                 val i_125_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-121).toByte())

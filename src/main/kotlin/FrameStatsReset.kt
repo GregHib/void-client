@@ -591,7 +591,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ModelDefinitionLoader.anInt2053 = 0
             Class315.anInt3954 = 0
             MinimapDrawController.anInt1609 = 0
-            Class292.anInt4802 = 0
+            MapArchiveSource.anInt4802 = 0
             MapSceneIconDef.anInt2850 = 0
             Class377.anInt9864 = 0
             IntRange.anInt1746 = 0
@@ -833,7 +833,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8920 = 0
             Class64_Sub2.anInt5505 = 0
             ModelHeaderCache.anInt3276 = 0
-            Class292.anInt4800 = 0
+            MapArchiveSource.anInt4800 = 0
             HslColorConfig.anInt333 = 0
             Class348_Sub42_Sub1.anInt9497 = 0
             Class60.anInt1088 = 0
@@ -1202,7 +1202,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class332.anInt4138 = 0
             Class59_Sub2_Sub1.anInt8673 = 0
             Class318_Sub4.anInt6412 = 0
-            Class292.anInt4799 = 0
+            MapArchiveSource.anInt4799 = 0
             RemoveRoofsOptionState.anInt6065 = 0
             Class348_Sub11.anInt4762 = 0
             OpenGlRenderer.anInt7595 = 0
@@ -2433,7 +2433,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class51.anInt870 = 0
             CompassSmoother.anInt3369 = 0
             Class59_Sub1.anInt5282 = 0
-            Class292.anInt4805 = 0
+            MapArchiveSource.anInt4805 = 0
             MediaStreamClient.anInt3189 = 0
             LoadProgressCounters.anInt2452 = 0
             Class367_Sub3.anInt7307 = 0
@@ -3846,7 +3846,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class326.anInt4083 = 0
             WorldMapScene.anInt3111 = 0
             ClickFeedbackTask.anInt4665 = 0
-            Class292.anInt4801 = 0
+            MapArchiveSource.anInt4801 = 0
             SceneObjectAnimator.anInt3078 = 0
             Class59_Sub1_Sub1.anInt8652 = 0
             FrameBufferObject.anInt4869 = 0

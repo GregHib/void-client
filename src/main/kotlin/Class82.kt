@@ -685,7 +685,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                     }
                 }
                 if (WorldMapRenderer.anInt4674 == 10) {
-                    Class292.anInt4799++
+                    MapArchiveSource.anInt4799++
                     val class348_sub47 = method2148((FloatCameraTransform.aClass351_5699), (Class348_Sub23_Sub2.aClass77_9029), i.toInt() xor 0x24)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string!!.length + 3)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (bool) 1 else 0)

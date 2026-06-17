@@ -105,7 +105,7 @@ class MultiLevelOptionState : GraphicsOptionState {
             Class367_Sub11.anInt7403 = 0
             Class348_Sub40_Sub21.anInt9282 = 5
             NativeShaderProgram.anInt9775 = -1
-            Class292.anInt4803 = -1
+            MapArchiveSource.anInt4803 = -1
         }
     }
 }

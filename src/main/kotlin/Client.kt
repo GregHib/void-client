@@ -217,7 +217,7 @@ import ParticleEmitterDef.Companion.method2185
 import ParticleEmitterDefExt.Companion.method2190
 import RegionSceneLoader.method2191
 import CutsceneSequenceData.Companion.method2199
-import Class292.Companion.method2202
+import MapArchiveSource.Companion.method2202
 import Class294.Companion.method2214
 import Class295.Companion.method2223
 import Class296.Companion.method2225
@@ -1424,7 +1424,7 @@ class Client : GameAppletFrame() {
             }
             if (!Class5_Sub1.aBoolean8335) method661(111.toByte())
             for (i_95_ in 0..99) {
-                if (!Class292.method2203((-85).toByte())) break
+                if (!MapArchiveSource.method2203((-85).toByte())) break
             }
         }
         anInt5174++
