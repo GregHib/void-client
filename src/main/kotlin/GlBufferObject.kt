@@ -177,7 +177,7 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
         fun method2119(f: Float, i: Int, f_0_: Float, i_1_: Int, f_2_: Float): Float {
             anInt4738++
             if (i_1_ >= -59) method2119(1.299765f, 45, -0.43444797f, -35, 0.059617087f)
-            val fs = Class337.aFloatArrayArray4174!![i]!!
+            val fs = GlShaderProgramHandle.aFloatArrayArray4174!![i]!!
             return fs[1] * f + f_2_ * fs[0] + fs[2] * f_0_
         }
 

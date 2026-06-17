@@ -5,7 +5,7 @@ import Class348.Companion.method2709
 /* Class337 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class337 internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, managedGlResources: Array<ManagedGlResource?>?) {
+class GlShaderProgramHandle internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, managedGlResources: Array<ManagedGlResource?>?) {
     private val aHa_Sub2_4173: OpenGlRenderer?
     var aLong4178: Long = 0
 

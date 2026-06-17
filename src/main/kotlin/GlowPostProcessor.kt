@@ -25,7 +25,7 @@ import jaggl.OpenGL.Companion.glViewport
  * Class188
  */
 class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRenderer) {
-    private var aClass337_2513: Class337? = null
+    private var aGlShaderProgramHandle_2513: GlShaderProgramHandle? = null
     fun method1413(class258_sub1: GlTexture3D?, class258_sub1_2_: GlTexture3D?, i: Int, f: Float): Boolean {
         try {
             anInt2517++
@@ -45,10 +45,10 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
                 glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, 1.0)
                 glPushAttrib(2048)
                 glViewport(0, 0, class258_sub1.anInt8523, class258_sub1.anInt8529)
-                glUseProgramObjectARB(aClass337_2513!!.aLong4178)
-                glUniform1iARB((glGetUniformLocationARB(aClass337_2513!!.aLong4178, "heightMap")), 0)
-                glUniform1fARB((glGetUniformLocationARB(aClass337_2513!!.aLong4178, "rcpRelief")), 1.0f / f)
-                glUniform2fARB(glGetUniformLocationARB(aClass337_2513!!.aLong4178, "sampleSize"), (1.0f / class258_sub1_2_!!.anInt8523.toFloat()), (1.0f / class258_sub1_2_.anInt8529.toFloat()))
+                glUseProgramObjectARB(aGlShaderProgramHandle_2513!!.aLong4178)
+                glUniform1iARB((glGetUniformLocationARB(aGlShaderProgramHandle_2513!!.aLong4178, "heightMap")), 0)
+                glUniform1fARB((glGetUniformLocationARB(aGlShaderProgramHandle_2513!!.aLong4178, "rcpRelief")), 1.0f / f)
+                glUniform2fARB(glGetUniformLocationARB(aGlShaderProgramHandle_2513!!.aLong4178, "sampleSize"), (1.0f / class258_sub1_2_!!.anInt8523.toFloat()), (1.0f / class258_sub1_2_.anInt8529.toFloat()))
                 for (i_4_ in 0..<class258_sub1.anInt8522) {
                     val f_5_ = (i_4_.toFloat() / (class258_sub1.anInt8522).toFloat())
                     aHa_Sub2_2511.method3771((-118).toByte(), class258_sub1_2_)
@@ -80,18 +80,18 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
     }
 
     fun method1414(i: Int): Boolean {
-        if (aHa_Sub2_2511.aBoolean7820 && aHa_Sub2_2511.aBoolean7783 && aClass337_2513 == null) {
+        if (aHa_Sub2_2511.aBoolean7820 && aHa_Sub2_2511.aBoolean7783 && aGlShaderProgramHandle_2513 == null) {
             val class242 = (Class348_Sub42_Sub15.method3249(
                 35632,
                 121,
                 aHa_Sub2_2511,
                 "uniform float rcpRelief;\nuniform vec2 sampleSize;\nuniform sampler3D heightMap;\nvoid main() {\nfloat dx = texture3D(heightMap, vec3(-sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r;\nfloat dy = texture3D(heightMap, vec3(0.0, -sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(0.0, sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r;\ngl_FragColor = vec4(0.5+normalize(vec3(dx, dy, rcpRelief))*0.5, texture3D(heightMap, gl_TexCoord[0].xyz).r);\n}\n"
             ))
-            if (class242 != null) aClass337_2513 = SequencedWallEntity.method2493(aHa_Sub2_2511, i + -35633, (arrayOf<ManagedGlResource?>(class242)))
+            if (class242 != null) aGlShaderProgramHandle_2513 = SequencedWallEntity.method2493(aHa_Sub2_2511, i + -35633, (arrayOf<ManagedGlResource?>(class242)))
         }
         anInt2518++
         if (i != 35632) method1413(null, null, 102, 0.17865802f)
-        return aClass337_2513 != null
+        return aGlShaderProgramHandle_2513 != null
     }
 
     companion object {

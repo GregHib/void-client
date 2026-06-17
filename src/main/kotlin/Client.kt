@@ -280,7 +280,7 @@ import MapElementLookup.Companion.method2645
 import CameraOrModelTransform.Companion.method2653
 import CameraOrModelTransform.Companion.method2654
 import HslPaletteState.method2657
-import Class337.Companion.method2658
+import GlShaderProgramHandle.Companion.method2658
 import Class338.Companion.method2662
 import Class339.Companion.method2664
 import Class339.Companion.method2666

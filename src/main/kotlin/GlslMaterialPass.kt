@@ -9,7 +9,7 @@ import kotlin.math.abs
 
 class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
     private var aBoolean6233 = false
-    private var aClass337_6234: Class337? = null
+    private var aGlShaderProgramHandle_6234: GlShaderProgramHandle? = null
     private var aBoolean6237 = false
     private val aClass83_6242: Class83?
     override fun method2140(glTexture: GlTexture?, i: Byte, i_0_: Int) {
@@ -44,7 +44,7 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83
             this.aHa_Sub2_3684.method3771((-114).toByte(), class258_sub2)
             this.aHa_Sub2_3684.method3738(-15039, 0)
             this.aHa_Sub2_3684.method3771((-87).toByte(), (aClass83_6242!!.aClass258_Sub1_1443))
-            val l = aClass337_6234!!.aLong4178
+            val l = aGlShaderProgramHandle_6234!!.aLong4178
             glUseProgramObjectARB(l)
             glUniform1iARB(glGetUniformLocationARB(l, "normalSampler"), 0)
             glUniform1iARB(glGetUniformLocationARB(l, "envMapSampler"), 1)
@@ -77,8 +77,8 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83
                     this.aHa_Sub2_3684,
                     "varying vec3 wvVertex;\nvarying float waterDepth;\nuniform vec3 sunDir;\nuniform vec4 sunColour;\nuniform float sunExponent;\nuniform vec2 waveIntensity;\nuniform float waveExponent;\nuniform float breakWaterDepth;\nuniform float breakWaterOffset;\nuniform sampler3D normalSampler;\nuniform samplerCube envMapSampler;\nvoid main() {\nvec4 wnNormal = texture3D(normalSampler, gl_TexCoord[0].xyz).rbga;\nwnNormal.xyz = 2.0*wnNormal.xyz-1.0;\nvec3 wnVector = normalize(wvVertex);\nvec3 wnReflection = reflect(wnVector, wnNormal.xyz);\nvec3 envColour = textureCube(envMapSampler, wnReflection).rgb;\nvec4 specularColour = sunColour*pow(clamp(-dot(sunDir, wnReflection), 0.0, 1.0), sunExponent);\nfloat shoreFactor = clamp(waterDepth/breakWaterDepth-breakWaterOffset*wnNormal.w, 0.0, 1.0);\nfloat waveFactor = pow(1.0-shoreFactor, waveExponent)-0.5;\nwaveFactor = -4.0*waveFactor*waveFactor+1.0;\nfloat ndote = dot(wnVector, wnNormal.xyz);\nfloat fresnel = pow(1.0-abs(ndote), 1.0);\nvec4 surfaceColour = mix(vec4(envColour, fresnel*shoreFactor), (waveIntensity.x*wnNormal.wwww)+waveIntensity.y, waveFactor)+specularColour*shoreFactor;\ngl_FragColor = vec4(mix(surfaceColour.rgb, gl_Fog.color.rgb, gl_FogFragCoord), surfaceColour.a);\n}\n"
                 ))
-                aClass337_6234 = SequencedWallEntity.method2493((this.aHa_Sub2_3684), -1, (arrayOf<ManagedGlResource?>(class242, class242_6_)))
-                aBoolean6237 = aClass337_6234 != null
+                aGlShaderProgramHandle_6234 = SequencedWallEntity.method2493((this.aHa_Sub2_3684), -1, (arrayOf<ManagedGlResource?>(class242, class242_6_)))
+                aBoolean6237 = aGlShaderProgramHandle_6234 != null
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("er.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
             }
@@ -95,7 +95,7 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83
             val f_12_ = ((i_7_ and 0x7c05fa) shr 19).toFloat() / 16.0f
             val f_13_ = ((0x784c903 and i_7_) shr 23).toFloat() / 16.0f
             val i_14_ = (0x79631502 and i_7_) shr 27
-            val l = aClass337_6234!!.aLong4178
+            val l = aGlShaderProgramHandle_6234!!.aLong4178
             glUniform1fARB(glGetUniformLocationARB(l, "time"), (i_9_ * (this.aHa_Sub2_3684.anInt7735) % 40000).toFloat() / 40000.0f)
             glUniform1fARB(glGetUniformLocationARB(l, "scale"), f)
             glUniform1fARB(glGetUniformLocationARB(l, "breakWaterDepth"), i_10_.toFloat())

@@ -53,19 +53,19 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
             var i_0_ = i_0_
             if (i == IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub22_7253!!.method1815(-32350)) i_0_ = -1
             anInt456++
-            if (i_0_ != Class337.anInt4179) {
+            if (i_0_ != GlShaderProgramHandle.anInt4179) {
                 if (i_0_ != -1) {
                     val class222 = GraphicsOptionState.aItemDefinitionLoader_3147!!.method1287((-104).toByte(), i_0_)
                     val class207 = class222.method1610(71.toByte())
                     if (class207 == null) i_0_ = -1
                     else {
                         Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2238(class207.method1522(), class207.method1516(), 17, Point(class222.anInt2883, class222.anInt2890), ParticleSystemRenderer.aCanvas3869, class207.method1510())
-                        Class337.anInt4179 = i_0_
+                        GlShaderProgramHandle.anInt4179 = i_0_
                     }
                 }
-                if (i_0_ == -1 && Class337.anInt4179 != -1) {
+                if (i_0_ == -1 && GlShaderProgramHandle.anInt4179 != -1) {
                     Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2238(-1, null, i + 17, Point(), (ParticleSystemRenderer.aCanvas3869), -1)
-                    Class337.anInt4179 = -1
+                    GlShaderProgramHandle.anInt4179 = -1
                 }
             }
         }

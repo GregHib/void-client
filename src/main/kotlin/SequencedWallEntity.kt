@@ -175,7 +175,7 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, class51:
             anIntArray10172 = null
         }
 
-        fun method2493(var_ha_Sub2: OpenGlRenderer?, i: Int, managedGlResources: Array<ManagedGlResource?>?): Class337? {
+        fun method2493(var_ha_Sub2: OpenGlRenderer?, i: Int, managedGlResources: Array<ManagedGlResource?>?): GlShaderProgramHandle? {
             try {
                 anInt10167++
                 for (i_16_ in managedGlResources!!.indices) {
@@ -207,7 +207,7 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, class51:
                         return null
                     }
                 }
-                return Class337(var_ha_Sub2, l, managedGlResources)
+                return GlShaderProgramHandle(var_ha_Sub2, l, managedGlResources)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("pw.D(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
             }

@@ -17,18 +17,18 @@ import jaggl.OpenGL.Companion.glViewport
 import java.io.*
 
 class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class348_Sub5(var_ha_Sub2) {
-    private var aClass337_8822: Class337? = null
-    private var aClass337_8824: Class337? = null
+    private var aGlShaderProgramHandle_8822: GlShaderProgramHandle? = null
+    private var aGlShaderProgramHandle_8824: GlShaderProgramHandle? = null
     private var aFrameBufferObject_8825: FrameBufferObject? = null
     private var anInt8826 = 0
     private var aClass258_Sub3_8830: GlTexture2D? = null
     private var anInt8833 = 0
     private var aClass258_Sub3_8835: GlTexture2D? = null
-    private var aClass337_8836: Class337? = null
+    private var aGlShaderProgramHandle_8836: GlShaderProgramHandle? = null
     private var aClass258_Sub3Array8837: Array<GlTexture2D?>? = null
     private var anInt8838 = 0
     private var anInt8841 = 0
-    private var aClass337_8842: Class337? = null
+    private var aGlShaderProgramHandle_8842: GlShaderProgramHandle? = null
     private var aFrameBufferObject_8844: FrameBufferObject? = null
 
     override fun method2756(i: Byte, i_0_: Int) {
@@ -53,7 +53,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                 this.aHa_Sub2_6618.method3773(-1, aFrameBufferObject_8825)
                 aFrameBufferObject_8825!!.method1503(0, 3.toByte())
                 glViewport(0, 0, 256, 256)
-                val l = aClass337_8842!!.aLong4178
+                val l = aGlShaderProgramHandle_8842!!.aLong4178
                 glUseProgramObjectARB(l)
                 glUniform1iARB(glGetUniformLocationARB(l, "sceneTex"), 0)
                 glUniform3fARB(glGetUniformLocationARB(l, "params"), Class75_Sub1.aFloat5654, 0.0f, 0.0f)
@@ -109,7 +109,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                 this.aHa_Sub2_6618.method3773(-1, aFrameBufferObject_8825)
                 aFrameBufferObject_8825!!.method1503(0, 3.toByte())
                 glViewport(0, 0, 256, 256)
-                val l = aClass337_8824!!.aLong4178
+                val l = aGlShaderProgramHandle_8824!!.aLong4178
                 glUseProgramObjectARB(l)
                 glUniform1iARB(glGetUniformLocationARB(l, "sceneTex"), 0)
                 glUniform3fARB(glGetUniformLocationARB(l, "params"), Class75_Sub1.aFloat5654, 0.0f, 0.0f)
@@ -126,7 +126,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
             }
             aFrameBufferObject_8825!!.method1503(1, 3.toByte())
             this.aHa_Sub2_6618.method3771((-100).toByte(), aClass258_Sub3_8835)
-            val l = aClass337_8822!!.aLong4178
+            val l = aGlShaderProgramHandle_8822!!.aLong4178
             glUseProgramObjectARB(l)
             glUniform1iARB(glGetUniformLocationARB(l, "baseTex"), 0)
             glUniform3fARB(glGetUniformLocationARB(l, "step"), 0.00390625f, 0.0f, 0.0f)
@@ -158,7 +158,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
             glPopMatrix()
             glMatrixMode(5888)
             this.aHa_Sub2_6618.method3770(-422613672, aFrameBufferObject_8825)
-            val l_7_ = aClass337_8836!!.aLong4178
+            val l_7_ = aGlShaderProgramHandle_8836!!.aLong4178
             glUseProgramObjectARB(l_7_)
             glUniform1iARB(glGetUniformLocationARB(l_7_, "sceneTex"), 0)
             glUniform1iARB(glGetUniformLocationARB(l_7_, "bloomTex"), 1)
@@ -215,15 +215,15 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
     }
 
     override fun method2763(i: Byte) {
-        aClass337_8822 = null
+        aGlShaderProgramHandle_8822 = null
         aClass258_Sub3_8835 = null
         aFrameBufferObject_8844 = null
         aFrameBufferObject_8825 = null
-        aClass337_8842 = null
+        aGlShaderProgramHandle_8842 = null
         anInt8839++
         aClass258_Sub3Array8837 = null
-        aClass337_8824 = null
-        aClass337_8836 = null
+        aGlShaderProgramHandle_8824 = null
+        aGlShaderProgramHandle_8836 = null
         if (i > -123) method2756((-56).toByte(), -105)
         aClass258_Sub3_8830 = null
     }
@@ -264,13 +264,13 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                 return false
             }
             this.aHa_Sub2_6618.method3770(-422613672, aFrameBufferObject_8825)
-            aClass337_8842 = (SequencedWallEntity.method2493(
+            aGlShaderProgramHandle_8842 = (SequencedWallEntity.method2493(
                 this.aHa_Sub2_6618,
                 -1,
                 (arrayOf<ManagedGlResource?>(Class348_Sub42_Sub15.method3249(35632, 80, this.aHa_Sub2_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))
             ))
-            aClass337_8824 = (SequencedWallEntity.method2493(this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(Class348_Sub42_Sub15.method3249(35632, -45, this.aHa_Sub2_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))))
-            aClass337_8836 = (SequencedWallEntity.method2493(
+            aGlShaderProgramHandle_8824 = (SequencedWallEntity.method2493(this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(Class348_Sub42_Sub15.method3249(35632, -45, this.aHa_Sub2_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))))
+            aGlShaderProgramHandle_8836 = (SequencedWallEntity.method2493(
                 this.aHa_Sub2_6618,
                 -1,
                 (arrayOf<ManagedGlResource?>(
@@ -282,7 +282,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                     )
                 ))
             ))
-            aClass337_8822 = (SequencedWallEntity.method2493(
+            aGlShaderProgramHandle_8822 = (SequencedWallEntity.method2493(
                 this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(
                     Class348_Sub42_Sub15.method3249(
                         35632,
@@ -292,7 +292,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                     )
                 ))
             ))
-            return aClass337_8824 != null && aClass337_8842 != null && aClass337_8836 != null && aClass337_8822 != null
+            return aGlShaderProgramHandle_8824 != null && aGlShaderProgramHandle_8842 != null && aGlShaderProgramHandle_8836 != null && aGlShaderProgramHandle_8822 != null
         }
         return false
     }

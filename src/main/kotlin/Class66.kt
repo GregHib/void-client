@@ -4106,7 +4106,7 @@ object Class66 {
                     return
                 }
                 if (i == 3347) {
-                    anIntArray1149!![anInt1173++] = Class337.anInt4179
+                    anIntArray1149!![anInt1173++] = GlShaderProgramHandle.anInt4179
                     return
                 }
                 if (i == 3349) {

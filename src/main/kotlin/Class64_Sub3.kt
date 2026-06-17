@@ -1717,7 +1717,7 @@ class Class64_Sub3 : Class64 {
         if (aBoolean5555) {
             aBoolean5555 = false
             if (aModelFacePriorityNodeArray5640 == null && aClass342Array5541 == null && aMapSceneTileDefinitionArray5621 == null) {
-                if (anIntArray5543 != null && !Class337.method2659(123.toByte(), anInt5648, anInt5556)) {
+                if (anIntArray5543 != null && !GlShaderProgramHandle.method2659(123.toByte(), anInt5648, anInt5556)) {
                     if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anInterface2_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5543 = null

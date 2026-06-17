@@ -16,10 +16,10 @@ class Class348_Sub37 : Class348() {
 
         fun method3030(i: Int, var_ha_Sub2: OpenGlRenderer) {
             anInt6999++
-            if (Class337.anObject4177 == null) {
+            if (GlShaderProgramHandle.anObject4177 == null) {
                 val class59_sub1_sub2 = Class59_Sub1_Sub2()
                 val `is` = class59_sub1_sub2.method562(128, 128, 121.toByte(), 16)
-                Class337.anObject4177 = method1357(`is`, false, 81.toByte())
+                GlShaderProgramHandle.anObject4177 = method1357(`is`, false, 81.toByte())
             }
             if (MapElementDefinitionCache.anObject3985 == null) {
                 val class59_sub2_sub1 = Class59_Sub2_Sub1()

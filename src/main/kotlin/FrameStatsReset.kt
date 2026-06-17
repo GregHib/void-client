@@ -1237,7 +1237,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7657 = 0
             Class348_Sub45_Sub2.anInt9740 = 0
             Class348_Sub40_Sub22.anInt9289 = 0
-            Class337.anInt4176 = 0
+            GlShaderProgramHandle.anInt4176 = 0
             Class348_Sub40.anInt7043 = 0
             Class348_Sub5_Sub1.anInt8829 = 0
             MinimapRenderer.anInt1580 = 0
@@ -1382,7 +1382,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub4.anInt7314 = 0
             SeqDefinitionCache.anInt3354 = 0
             PlayerUpdateDecoder.anInt1913 = 0
-            Class337.anInt4175 = 0
+            GlShaderProgramHandle.anInt4175 = 0
             SpotAnimVector.anInt2293 = 0
             GroundDecorOptionState.anInt5979 = 0
             Class34.anInt479 = 0
@@ -1890,7 +1890,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class5_Sub1.anInt8346 = 0
             MapSceneDefLoader.anInt2487 = 0
             Class348_Sub42_Sub5.anInt9522 = 0
-            Class337.anInt4180 = 0
+            GlShaderProgramHandle.anInt4180 = 0
             Class348_Sub49.anInt7165 = 0
             NamedTimedNode.anInt8782 = 0
             Class348_Sub16_Sub2.anInt8864 = 0
