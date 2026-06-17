@@ -623,7 +623,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub1_Sub2.anInt9979 = 0
             Class286_Sub2.anInt6203 = 0
             Class328.anInt4099 = 0
-            Class193.anInt2583 = 0
+            TextureHandle.anInt2583 = 0
             Class327.anInt4092 = 0
             Class17.anInt257 = 0
             Gl2dTexture.anInt8606 = 0
@@ -923,7 +923,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5734 = 0
             Class64_Sub3.anInt5547 = 0
             Class348_Sub16_Sub3.anInt8950 = 0
-            Class193.anInt2588 = 0
+            TextureHandle.anInt2588 = 0
             Class287.anInt3693 = 0
             ConfigDefinitionLoader.anInt2080 = 0
             Class59.anInt1073 = 0
@@ -1655,7 +1655,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class45.anInt663 = 0
             Class348_Sub42_Sub16_Sub2.anInt10464 = 0
             Class239_Sub26.anInt6126 = 0
-            Class193.anInt2586 = 0
+            TextureHandle.anInt2586 = 0
             Class87.anInt1484 = 0
             anInt1898 = 0
             Class239_Sub5.anInt5890 = 0

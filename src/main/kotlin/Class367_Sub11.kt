@@ -11,12 +11,12 @@ import java.awt.Container
 class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?) : Class367(class377) {
     private var anInterface18_Impl3_7390: Interface18_Impl3? = null
     private val aBoolean7391: Boolean
-    private var aClass193_7392: Class193? = null
-    private var aClass193_7395: Class193? = null
+    private var aTextureHandle_7392: TextureHandle? = null
+    private var aTextureHandle_7395: TextureHandle? = null
     private var aBoolean7399 = false
-    private var aClass193_7404: Class193? = null
+    private var aTextureHandle_7404: TextureHandle? = null
     private var aBoolean7406 = false
-    private var aClass193_7407: Class193? = null
+    private var aTextureHandle_7407: TextureHandle? = null
     private var aBoolean7411 = false
     private val aFloatArray7413 = FloatArray(4)
     override fun method3528(i: Int) {
@@ -24,8 +24,8 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         anInt7401++
         val i_0_ = this.aHa_Sub3_4479.method3941(102)
         val class101_sub2 = this.aHa_Sub3_4479.method3887(98.toByte())
-        if (!aBoolean7411) glBindProgramARB(34336, (if (i_0_ != 2147483647) aClass193_7404!!.anInt2584 else aClass193_7395!!.anInt2584))
-        else glBindProgramARB(34336, (if (i_0_ == 2147483647) aClass193_7392!!.anInt2584 else aClass193_7407!!.anInt2584))
+        if (!aBoolean7411) glBindProgramARB(34336, (if (i_0_ != 2147483647) aTextureHandle_7404!!.anInt2584 else aTextureHandle_7395!!.anInt2584))
+        else glBindProgramARB(34336, (if (i_0_ == 2147483647) aTextureHandle_7392!!.anInt2584 else aTextureHandle_7407!!.anInt2584))
         glEnable(34336)
         aBoolean7406 = true
         class101_sub2.method919(0.0f, aFloatArray7413, -1.0f, 0.0f, i_0_.toFloat(), (-120).toByte())
@@ -105,11 +105,11 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
     init {
         try {
             if (class45 != null && class377!!.aBoolean9923) {
-                aClass193_7395 = method3442(34336, class45.method391("gl", "uw_ground_unlit", -29832), class377, 4)
-                aClass193_7392 = method3442(34336, class45.method391("gl", "uw_ground_lit", -29832), class377, 4)
-                aClass193_7404 = method3442(34336, class45.method391("gl", "uw_model_unlit", -29832), class377, 4)
-                aClass193_7407 = method3442(34336, class45.method391("gl", "uw_model_lit", -29832), class377, 4)
-                if ((aClass193_7395 != null) and (aClass193_7392 != null) and (aClass193_7404 != null) and (aClass193_7407 != null)) {
+                aTextureHandle_7395 = method3442(34336, class45.method391("gl", "uw_ground_unlit", -29832), class377, 4)
+                aTextureHandle_7392 = method3442(34336, class45.method391("gl", "uw_ground_lit", -29832), class377, 4)
+                aTextureHandle_7404 = method3442(34336, class45.method391("gl", "uw_model_unlit", -29832), class377, 4)
+                aTextureHandle_7407 = method3442(34336, class45.method391("gl", "uw_model_lit", -29832), class377, 4)
+                if ((aTextureHandle_7395 != null) and (aTextureHandle_7392 != null) and (aTextureHandle_7404 != null) and (aTextureHandle_7407 != null)) {
                     anInterface18_Impl3_7390 = this.aHa_Sub3_4479.method3839(1, 2, -15137, false, (intArrayOf(0, -1)))
                     anInterface18_Impl3_7390!!.method66(false, false, 25688)
                     aBoolean7391 = true
@@ -137,7 +137,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
 
     override fun method3521(bool: Boolean, i: Byte) {
         anInt7393++
-        if (i.toInt() != -103) aClass193_7392 = null
+        if (i.toInt() != -103) aTextureHandle_7392 = null
     }
 
     companion object {

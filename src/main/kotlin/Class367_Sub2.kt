@@ -8,7 +8,7 @@ import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 
 class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, class269: Class269?) : Class367(class377) {
-    private val aClass193_7293: Class193?
+    private val aTextureHandle_7293: TextureHandle?
     private val aClass269_7294: Class269?
     private var aClass377_7296: Class377? = null
     override fun method3527(i: Int, interface18: Interface18?, i_4_: Int) {
@@ -19,7 +19,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
     override fun method3525(i: Int, bool: Boolean) {
         if (i == 15192) {
             anInt7287++
-            glBindProgramARB(34336, aClass193_7293!!.anInt2584)
+            glBindProgramARB(34336, aTextureHandle_7293!!.anInt2584)
             glEnable(34336)
             this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class318_Sub1_Sub2.aClass70_8737)
         }
@@ -29,8 +29,8 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
         try {
             aClass377_7296 = class377
             aClass269_7294 = class269
-            if (class45 == null || !aClass269_7294!!.method2039(100) || !aClass377_7296!!.aBoolean9923) aClass193_7293 = null
-            else aClass193_7293 = method3442(34336, class45.method391("gl", "transparent_water", -29832), aClass377_7296, 4)
+            if (class45 == null || !aClass269_7294!!.method2039(100) || !aClass377_7296!!.aBoolean9923) aTextureHandle_7293 = null
+            else aTextureHandle_7293 = method3442(34336, class45.method391("gl", "transparent_water", -29832), aClass377_7296, 4)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ov.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class269 != null) "{...}" else "null") + ')'))
         }
@@ -70,7 +70,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
     override fun method3530(i: Int): Boolean {
         anInt7289++
         if (i >= -57) return true
-        return aClass193_7293 != null
+        return aTextureHandle_7293 != null
     }
 
     companion object {

@@ -1,6 +1,9 @@
 import java.awt.Component
 
-class Class193 internal constructor(private val aClass377_2585: Class377, i: Int, var anInt2584: Int) {
+/*
+ * Class193
+ */
+class TextureHandle internal constructor(private val aClass377_2585: Class377, i: Int, var anInt2584: Int) {
     @Throws(Throwable::class)
     protected fun finalize() {
         anInt2588++

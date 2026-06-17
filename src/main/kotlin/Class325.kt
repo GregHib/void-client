@@ -684,7 +684,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class26.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             Class93.anInt1534 = i_72_
-                            val class348_sub47 = method2148(Class193.aClass351_2587, (Class348_Sub23_Sub2.aClass77_9029), -112)
+                            val class348_sub47 = method2148(TextureHandle.aClass351_2587, (Class348_Sub23_Sub2.aClass77_9029), -112)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class90.regionTileY + i_75_, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-96).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -125)) 1 else 0))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, ArbVertexProgram.regionTileX + i_74_)

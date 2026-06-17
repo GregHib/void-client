@@ -313,7 +313,7 @@ class LinkedNodeListIterator {
             Class27.anInt394 = `is`[3]
             Class239_Sub5.anInt5886 = `is`[1]
             if (bool_42_) {
-                Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelFacePriorityNode.anInt1879)
+                Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                 method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120)
             } else {
                 Class21.aRenderer326!!.DA(ConfigValueProvider.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95)

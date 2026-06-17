@@ -298,17 +298,17 @@ class Class230 internal constructor(string: String?, i: Int) {
                                 Class21.aRenderer326!!.GA(Class77.anInt1290)
                                 Class21.aRenderer326!!.ya()
                             }
-                            Class193.anInt2590 = i_20_
+                            TextureHandle.anInt2590 = i_20_
                             ModelFacePriorityNode.anInt1879 = i_21_
                             Class94.anInt1537 = (-Class339.anInt4211 + -Class328.anInt4100 + (i_16_ + Class211.anInt2747))
                             Class318_Sub5.anInt6417 = (-Class348_Sub40_Sub8.anInt9157 + (i_17_ + Class348_Sub42_Sub9_Sub1.anInt10444 + -Class348_Sub3.anInt6568))
-                            Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelFacePriorityNode.anInt1879)
+                            Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                         } else if (Class348_Sub49.anInt7207 == 1) {
-                            Class193.anInt2590 = i_20_
+                            TextureHandle.anInt2590 = i_20_
                             Class94.anInt1537 = i_16_ + -Class328.anInt4100
                             Class318_Sub5.anInt6417 = -Class348_Sub3.anInt6568 + i_17_
                             ModelFacePriorityNode.anInt1879 = i_21_
-                            Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelFacePriorityNode.anInt1879)
+                            Class21.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                             Class21.aRenderer326!!.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (LinkedNodeListIterator.anInt1651 + Class348_Sub40_Sub8.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (Class348_Sub49.anInt7207 != 2) 2 else 0, Class348_Sub49.anInt7207 == 1)

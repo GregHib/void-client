@@ -33,7 +33,7 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
         var aBoolean9783: Boolean = false
 
         @JvmStatic
-        fun method3442(i: Int, `is`: ByteArray?, class377: Class377?, i_0_: Int): Class193? {
+        fun method3442(i: Int, `is`: ByteArray?, class377: Class377?, i_0_: Int): TextureHandle? {
             try {
                 anInt9779++
                 if (`is` == null) return null
@@ -47,7 +47,7 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
                 }
                 glBindProgramARB(i, 0)
                 if (i_0_ != 4) return null
-                return Class193(class377!!, i, i_1_)
+                return TextureHandle(class377!!, i, i_1_)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("cu.A(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class377 != null) "{...}" else "null") + ',' + i_0_ + ')'))
             }
