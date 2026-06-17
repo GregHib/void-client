@@ -222,7 +222,7 @@ import LoadingBarRenderer.Companion.method2214
 import LocalizedTextTriple.Companion.method2223
 import HuffmanCodec.Companion.method2225
 import HuffmanCodec.Companion.method2228
-import Class298.method2251
+import PixelBlender.method2251
 import Class299.Companion.method2254
 import Class299_Sub1_Sub2.Companion.method2265
 import Class299_Sub2.Companion.method2268
@@ -706,7 +706,7 @@ class Client : GameAppletFrame() {
 //            Class374.aClass78_4538 = null;
 //            Class277.aClass137_3568 = null;
 //        }
-        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class298.aBoolean3811 = true
+        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) PixelBlender.aBoolean3811 = true
         Class348_Sub42_Sub16.aString9665 = LocalizedText.aLocalizedText_3495!!.method2063(Class348_Sub33.anInt6967, 544)
     }
 

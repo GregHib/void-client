@@ -56,7 +56,7 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
                 val i_2_ = l.toInt() shr 14 and 0x1f
                 val i_3_ = (0x37d8b0 and l.toInt()) shr 20
                 val i_4_ = 0x7fffffff and (l ushr 32).toInt()
-                if (i_2_ != 10 && i_2_ != 11 && i_2_ != 22) Class298.method2252(true, i_0_, i, (-119).toByte(), 0, 0, 0, i_2_, i_3_)
+                if (i_2_ != 10 && i_2_ != 11 && i_2_ != 22) PixelBlender.method2252(true, i_0_, i, (-119).toByte(), 0, 0, 0, i_2_, i_3_)
                 else {
                     val class51 = Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2005(0, i_4_)
                     val i_5_: Int
@@ -70,7 +70,7 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
                     }
                     var i_7_ = class51.anInt914
                     if (i_3_ != 0) i_7_ = (0xf and (i_7_ shl i_3_)) + (i_7_ shr 4 + -i_3_)
-                    Class298.method2252(true, i_0_, i, (-99).toByte(), i_5_, i_7_, i_6_, 0, 0)
+                    PixelBlender.method2252(true, i_0_, i, (-99).toByte(), i_5_, i_7_, i_6_, 0, 0)
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("cf.B(" + i + ',' + l + ',' + i_0_ + ',' + i_1_ + ')'))

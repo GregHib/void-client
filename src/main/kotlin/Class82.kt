@@ -75,8 +75,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         return
                     }
                     if (string.equals("displayfps", ignoreCase = true)) {
-                        Class298.aBoolean3811 = !Class298.aBoolean3811
-                        if (Class298.aBoolean3811) method94("FPS on", 83)
+                        PixelBlender.aBoolean3811 = !PixelBlender.aBoolean3811
+                        if (PixelBlender.aBoolean3811) method94("FPS on", 83)
                         else {
                             method94("FPS off", -69)
                             return
@@ -117,12 +117,12 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("fpson", ignoreCase = true)) {
-                            Class298.aBoolean3811 = true
+                            PixelBlender.aBoolean3811 = true
                             method94("fps debug enabled", -115)
                             return
                         }
                         if (string.equals("fpsoff", ignoreCase = true)) {
-                            Class298.aBoolean3811 = false
+                            PixelBlender.aBoolean3811 = false
                             method94("fps debug disabled", 125)
                             return
                         }

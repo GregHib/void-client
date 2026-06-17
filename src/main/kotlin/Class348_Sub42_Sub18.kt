@@ -29,8 +29,8 @@ class Class348_Sub42_Sub18 internal constructor(var aClass318_Sub1_Sub3_Sub5_968
             anInt9683++
             if (i != 1) aClass351_9684 = null
             if (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 != GlRectangleTexture.aSceneProjector_8638) {
-                if (!Class298.method2252(false, i_1_, i_0_, (-108).toByte(), 1, 0, 1, -3, 0)) Class298.method2252(false, i_1_, i_0_, (-99).toByte(), 1, 0, 1, -2, 0)
-            } else if (!Class298.method2252(false, i_1_, i_0_, (-128).toByte(), 1, 0, 1, -2, 0)) Class298.method2252(false, i_1_, i_0_, (-115).toByte(), 1, 0, 1, -3, 0)
+                if (!PixelBlender.method2252(false, i_1_, i_0_, (-108).toByte(), 1, 0, 1, -3, 0)) PixelBlender.method2252(false, i_1_, i_0_, (-99).toByte(), 1, 0, 1, -2, 0)
+            } else if (!PixelBlender.method2252(false, i_1_, i_0_, (-128).toByte(), 1, 0, 1, -2, 0)) PixelBlender.method2252(false, i_1_, i_0_, (-115).toByte(), 1, 0, 1, -3, 0)
         }
     }
 }

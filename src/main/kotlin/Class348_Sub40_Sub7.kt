@@ -234,14 +234,14 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             continue
                                         }
                                         if (SpriteLoadValidator.anInt4793 == class46.anInt765) {
-                                            if (Class298.aBoolean3811 || GlowPostProcessor.aBoolean2514) {
+                                            if (PixelBlender.aBoolean3811 || GlowPostProcessor.aBoolean2514) {
                                                 val i_37_ = (class46.anInt709 + i_24_)
                                                 var i_38_ = 15 + i_25_
                                                 if (Class59_Sub1.aBoolean5300) {
                                                     if (!bool) Class54.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
                                                     else Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                 }
-                                                if (Class298.aBoolean3811) {
+                                                if (PixelBlender.aBoolean3811) {
                                                     var i_39_ = -256
                                                     if (SimpleToggleOptionState.anInt5891 < 20) i_39_ = -65536
                                                     GameAppletFrame.aClass324_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_38_, i_39_, i_37_, -128, -1)

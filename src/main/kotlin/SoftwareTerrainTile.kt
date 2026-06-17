@@ -94,7 +94,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                         }
                         var i_25_ = -16777216
                         if (is_6_[i_14_] != -1 && method3997(aHa_Sub1_8217.aRenderConfig4579!!.method3(is_6_[i_14_], -6662)!!.aByte213.toInt())) i_25_ = -1694498816
-                        spriteTextureData.anIntArray2623!![i_14_] = (i_25_ or Class298.method2250(method3991((is_4_[i_14_] shr 8), i_18_), 118, i_23_, i_8_))
+                        spriteTextureData.anIntArray2623!![i_14_] = (i_25_ or PixelBlender.method2250(method3991((is_4_[i_14_] shr 8), i_18_), 118, i_23_, i_8_))
                         if (is_5_ != null) spriteTextureData.aByteArray2617!![i_14_] = i_18_.toByte()
                     }
                     spriteTextureData.aShortArray2616!![i_14_] = is_6_[i_14_].toShort()
@@ -180,28 +180,28 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        modelVertexNormal.anInt3389 = (Class298.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 88, i_38_, i_8_))
+                        modelVertexNormal.anInt3389 = (PixelBlender.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 88, i_38_, i_8_))
                         if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3389 = modelVertexNormal.anInt3389 or (255 - (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_30_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        modelVertexNormal.anInt3387 = (Class298.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 97, i_38_, i_8_))
+                        modelVertexNormal.anInt3387 = (PixelBlender.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 97, i_38_, i_8_))
                         if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3387 = modelVertexNormal.anInt3387 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_] - aByteArrayArray8232!![i + 1]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_31_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        modelVertexNormal.anInt3380 = (Class298.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 103, i_38_, i_8_))
+                        modelVertexNormal.anInt3380 = (PixelBlender.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 103, i_38_, i_8_))
                         if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3380 = modelVertexNormal.anInt3380 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_ + 1] - (aByteArrayArray8232!![i + 1]!![i_0_ + 1])) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_32_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        modelVertexNormal.anInt3381 = (Class298.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 42, i_38_, i_8_))
+                        modelVertexNormal.anInt3381 = (PixelBlender.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 42, i_38_, i_8_))
                         modelVertexNormal.aShort3379 = i_37_.toShort()
                     } else {
                         var i_39_: Int
@@ -210,28 +210,28 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        modelVertexNormal.anInt3389 = (Class298.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 68, i_39_, i_8_))
+                        modelVertexNormal.anInt3389 = (PixelBlender.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 68, i_39_, i_8_))
                         if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3389 = modelVertexNormal.anInt3389 or (255 - (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_39_ = 255 * is_3_[i_30_] / i_9_
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        modelVertexNormal.anInt3387 = (Class298.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 112, i_39_, i_8_))
+                        modelVertexNormal.anInt3387 = (PixelBlender.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 112, i_39_, i_8_))
                         if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3387 = modelVertexNormal.anInt3387 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_] - aByteArrayArray8232!![i + 1]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_39_ = 255 * is_3_[i_31_] / i_9_
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        modelVertexNormal.anInt3380 = (Class298.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 62, i_39_, i_8_))
+                        modelVertexNormal.anInt3380 = (PixelBlender.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 62, i_39_, i_8_))
                         if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3380 = modelVertexNormal.anInt3380 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_ + 1] - (aByteArrayArray8232!![i + 1]!![i_0_ + 1])) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_39_ = 255 * is_3_[i_32_] / i_9_
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        modelVertexNormal.anInt3381 = (Class298.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 84, i_39_, i_8_))
+                        modelVertexNormal.anInt3381 = (PixelBlender.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 84, i_39_, i_8_))
                         if (modelVertexNormal.anInt3388 != 0) modelVertexNormal.anInt3381 = modelVertexNormal.anInt3381 or (255 - (aByteArrayArray8220!![i]!![i_0_ + 1] - aByteArrayArray8232!![i]!![i_0_ + 1]) shl 25)
                         modelVertexNormal.aShort3379 = (-1).toShort()
                     }
@@ -284,7 +284,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     else if (i_49_ > 255) i_49_ = 255
                                 }
                             }
-                            terrainTileData.anIntArray2001!![i_40_] = Class298.method2250(method3991((is_4_[i_40_] shr 8), i_44_), 40, i_49_, i_8_)
+                            terrainTileData.anIntArray2001!![i_40_] = PixelBlender.method2250(method3991((is_4_[i_40_] shr 8), i_44_), 40, i_49_, i_8_)
                             if (is_5_ != null) terrainTileData.anIntArray2001!![i_40_] = terrainTileData.anIntArray2001!![i_40_] or (i_44_ shl 25)
                         }
                     }
@@ -578,9 +578,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                         is_107_[i_234_].toFloat(),
                                         is_107_[i_235_].toFloat(),
                                         is_107_[i_236_].toFloat(),
-                                        (Class298.method2250((class145.anIntArray2001!![i_234_]), 117, is_108_[i_234_], (particleSystemState.anInt2192))),
-                                        (Class298.method2250((class145.anIntArray2001!![i_235_]), 60, is_108_[i_235_], (particleSystemState.anInt2192))),
-                                        (Class298.method2250((class145.anIntArray2001!![i_236_]), 95, is_108_[i_236_], (particleSystemState.anInt2192)))
+                                        (PixelBlender.method2250((class145.anIntArray2001!![i_234_]), 117, is_108_[i_234_], (particleSystemState.anInt2192))),
+                                        (PixelBlender.method2250((class145.anIntArray2001!![i_235_]), 60, is_108_[i_235_], (particleSystemState.anInt2192))),
+                                        (PixelBlender.method2250((class145.anIntArray2001!![i_236_]), 95, is_108_[i_236_], (particleSystemState.anInt2192)))
                                     )
                                 } else if (((class145.anIntArray2001!![i_234_]) and 0xffffff) != 0) shadowProjector.method1027(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (class145.anIntArray2001!![i_234_]), (class145.anIntArray2001!![i_235_]), (class145.anIntArray2001!![i_236_]))
                             } else shadowProjector.method1018(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (particleSystemState.anInt2192))

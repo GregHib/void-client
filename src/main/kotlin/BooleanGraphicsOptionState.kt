@@ -90,7 +90,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-64).toByte(), 0)
                         Class348_Sub42_Sub14.method3243(116, class348_sub47)
                         bool = true
-                        Class298.method2252(true, player.anIntArray10320!![0], player.anIntArray10317!![0], (-99).toByte(), player.method2436(54.toByte()), 0, player.method2436(91.toByte()), -2, 0)
+                        PixelBlender.method2252(true, player.anIntArray10320!![0], player.anIntArray10317!![0], (-99).toByte(), player.method2436(54.toByte()), 0, player.method2436(91.toByte()), -2, 0)
                         break
                     }
                     i_4_++

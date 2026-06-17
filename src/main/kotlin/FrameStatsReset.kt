@@ -3676,7 +3676,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub2.anInt10050 = 0
             Class64_Sub2.anInt5471 = 0
             Class356.anInt4379 = 0
-            Class298.anInt3810 = 0
+            PixelBlender.anInt3810 = 0
             Class348_Sub23_Sub2.anInt9012 = 0
             BrightnessOptionState.anInt5903 = 0
             OpenGlRenderer.anInt7612 = 0
@@ -4081,7 +4081,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class46.anInt684 = 0
             Class318_Sub1_Sub3_Sub3.anInt10281 = 0
             TextureMetadataProvider.anInt4621 = 0
-            Class298.anInt3808 = 0
+            PixelBlender.anInt3808 = 0
             ConfigDefinitionLoader.anInt2079 = 0
             GlCubeMapTexture.anInt8622 = 0
             WorldMapScene.anInt3131 = 0

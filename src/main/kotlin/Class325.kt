@@ -472,7 +472,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     FogOptionState.anInt6048 = 1
                                 }
                                 Class348_Sub42_Sub14.method3243(123, class348_sub47)
-                                Class298.method2252(true, i_74_, i_75_, (-120).toByte(), 1, 0, 1, -4, 0)
+                                PixelBlender.method2252(true, i_74_, i_75_, (-120).toByte(), 1, 0, 1, -4, 0)
                             } else Class361.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
                         }
                         if (i_76_ == 4) {
@@ -519,7 +519,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(81, i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 0 else 1))
                                 Class348_Sub42_Sub14.method3243(116, class348_sub47)
-                                Class298.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-89).toByte(), player.method2436(106.toByte()), 0, player.method2436(43.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-89).toByte(), player.method2436(106.toByte()), 0, player.method2436(43.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 49) {
@@ -570,7 +570,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(124.toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -121)) 1 else 0))
                                 Class348_Sub42_Sub14.method3243(117, class348_sub47)
-                                Class298.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-100).toByte(), npc.method2436(68.toByte()), 0, npc.method2436(106.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-100).toByte(), npc.method2436(68.toByte()), 0, npc.method2436(106.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 11) {
@@ -585,7 +585,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-108).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -124)) 1 else 0))
                                 Class348_Sub42_Sub14.method3243(119, class348_sub47)
-                                Class298.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-128).toByte(), player.method2436(53.toByte()), 0, player.method2436(110.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-128).toByte(), player.method2436(53.toByte()), 0, player.method2436(110.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 59) {
@@ -618,7 +618,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-89).toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -127)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-116, Class301.anInt3829)
                                 Class348_Sub42_Sub14.method3243(122, class348_sub47)
-                                Class298.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-107).toByte(), npc.method2436(88.toByte()), 0, npc.method2436(108.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-107).toByte(), npc.method2436(88.toByte()), 0, npc.method2436(108.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 12) {
@@ -660,7 +660,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-89).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -127)) 1 else 0))
                                 Class348_Sub42_Sub14.method3243(-33, class348_sub47)
-                                Class298.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-88).toByte(), player.method2436(44.toByte()), 0, player.method2436(110.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-88).toByte(), player.method2436(44.toByte()), 0, player.method2436(110.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 45) {
@@ -675,7 +675,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-125).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 1 else 0))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                 Class348_Sub42_Sub14.method3243(30, class348_sub47)
-                                Class298.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-91).toByte(), player.method2436(70.toByte()), 0, player.method2436(125.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-91).toByte(), player.method2436(70.toByte()), 0, player.method2436(125.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 1007) {
@@ -704,7 +704,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(60.toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -121)) 0 else 1))
                                 Class348_Sub42_Sub14.method3243(118, class348_sub47)
-                                Class298.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-106).toByte(), player.method2436(45.toByte()), 0, player.method2436(63.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-106).toByte(), player.method2436(45.toByte()), 0, player.method2436(63.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 16 && Class49.aClass46_4730 == null) {
@@ -724,7 +724,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -128)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-99, i_77_)
                                 Class348_Sub42_Sub14.method3243(127, class348_sub47)
-                                Class298.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-106).toByte(), player.method2436(100.toByte()), 0, player.method2436(99.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-106).toByte(), player.method2436(100.toByte()), 0, player.method2436(99.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 21) {
@@ -754,7 +754,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(127.toByte(), OrientationRotator.anInt2046)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-84, Class90.regionTileY + i_75_)
                             Class348_Sub42_Sub14.method3243(-62, class348_sub47)
-                            Class298.method2252(true, i_74_, i_75_, (-91).toByte(), 1, 0, 1, -4, 0)
+                            PixelBlender.method2252(true, i_74_, i_75_, (-91).toByte(), 1, 0, 1, -4, 0)
                         }
                         if (i_76_ == 60) {
                             val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
@@ -769,7 +769,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-67).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -122)) 1 else 0))
                                 Class348_Sub42_Sub14.method3243(119, class348_sub47)
-                                Class298.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-111).toByte(), npc.method2436(65.toByte()), 0, npc.method2436(42.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-111).toByte(), npc.method2436(65.toByte()), 0, npc.method2436(42.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 2) {
@@ -801,7 +801,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -121)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(52, i_77_)
                                 Class348_Sub42_Sub14.method3243(-127, class348_sub47)
-                                Class298.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-93).toByte(), player.method2436(119.toByte()), 0, player.method2436(54.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-93).toByte(), player.method2436(119.toByte()), 0, player.method2436(54.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 17) {
@@ -816,7 +816,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 Class348_Sub42_Sub14.method3243(121, class348_sub47)
-                                Class298.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-123).toByte(), player.method2436(96.toByte()), 0, player.method2436(97.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-123).toByte(), player.method2436(96.toByte()), 0, player.method2436(97.toByte()), -2, 0)
                             }
                         }
                         if (i_76_ == 47) {
@@ -860,7 +860,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-119).toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -123)) 0 else 1))
                                 Class348_Sub42_Sub14.method3243(-85, class348_sub47)
-                                Class298.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-121).toByte(), npc.method2436(99.toByte()), 0, npc.method2436(99.toByte()), -2, 0)
+                                PixelBlender.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-121).toByte(), npc.method2436(99.toByte()), 0, npc.method2436(99.toByte()), -2, 0)
                             }
                         }
                         if (i > 97) {
@@ -928,7 +928,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -125)) 0 else 1)
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                         Class348_Sub42_Sub14.method3243(-37, class348_sub47)
-                                        Class298.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-85).toByte(), npc.method2436(124.toByte()), 0, npc.method2436(84.toByte()), -2, 0)
+                                        PixelBlender.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-85).toByte(), npc.method2436(124.toByte()), 0, npc.method2436(84.toByte()), -2, 0)
                                     }
                                 }
                                 if (i_76_ == 57) {
@@ -943,7 +943,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-88, i_77_)
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-111).toByte(), if (LoadProgressCounters.aClass346_2449!!.method2696(82, -127)) 1 else 0)
                                         Class348_Sub42_Sub14.method3243(125, class348_sub47)
-                                        Class298.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-98).toByte(), player.method2436(83.toByte()), 0, player.method2436(91.toByte()), -2, 0)
+                                        PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-98).toByte(), player.method2436(83.toByte()), 0, player.method2436(91.toByte()), -2, 0)
                                     }
                                 }
                                 if (i_76_ == 9) {
@@ -973,7 +973,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (LoadProgressCounters.aClass346_2449!!.method2696(82, -124)) 1 else 0)
                                         Class348_Sub42_Sub14.method3243(-25, class348_sub47)
-                                        Class298.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-107).toByte(), npc.method2436(104.toByte()), 0, npc.method2436(50.toByte()), -2, 0)
+                                        PixelBlender.method2252(true, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), (-107).toByte(), npc.method2436(104.toByte()), 0, npc.method2436(50.toByte()), -2, 0)
                                     }
                                 }
                                 if (i_76_ == 10) {
