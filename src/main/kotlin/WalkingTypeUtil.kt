@@ -1,7 +1,7 @@
 /* Class260 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class260 {
+object WalkingTypeUtil {
     var aIntRange_3307: IntRange? = IntRange(56, 2)
     var anInt3308: Int = 0
     @JvmField

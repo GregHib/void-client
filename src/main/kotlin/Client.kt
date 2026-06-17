@@ -174,7 +174,7 @@ import GlTexture3D.Companion.method1959
 import GlTextureCubeMap.Companion.method1962
 import GlTexture1D.Companion.method1973
 import SpriteArchiveLoader.Companion.method306
-import Class260.method1979
+import WalkingTypeUtil.method1979
 import Class261.Companion.method1980
 import Class261.Companion.method1987
 import Class262.Companion.method1994
@@ -1663,7 +1663,7 @@ class Client : GameAppletFrame() {
             Class348_Sub42_Sub2.aLong8573 = BufferPositionTracker.method1857((-45).toByte()) / 1000000L
             val bool_118_ = method2163(!bool)
             if (bool_118_ && Class74.aBoolean1236 && Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042!!.method2087(-115)
-            if (Class260.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {
+            if (WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {
                 if ((Class348_Sub16_Sub2.aLong8866 != 0L) && method599(-98) > Class348_Sub16_Sub2.aLong8866) method830(method3229(-128), Class321.anInt4005, 102.toByte(), false, Class348_Sub40_Sub25.anInt9335)
                 else if (!Class348_Sub8.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
             }
@@ -1690,7 +1690,7 @@ class Client : GameAppletFrame() {
                     RuntimeException_Sub1.aBoolean4604 = false
                 }
             }
-            if (Class34.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && Class260.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+            if (Class34.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             var bool_120_ = false
             if (Class49.aBoolean4726) {
                 bool_120_ = true
@@ -1727,7 +1727,7 @@ class Client : GameAppletFrame() {
                 }
             }
             if (method3263(bool)) method207(Class348_Sub8.aRenderer6654, 124.toByte())
-            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794 && Class260.method1977((-79).toByte(), WorldMapRenderer.anInt4674) && NativeRenderer.anInt8045 == 0 && method3229(-85) == 1 && !bool_120_) {
+            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674) && NativeRenderer.anInt8045 == 0 && method3229(-85) == 1 && !bool_120_) {
                 var i = 0
                 var i_121_ = 0
                 while ((Class348_Sub38.anInt7008 > i_121_)) {

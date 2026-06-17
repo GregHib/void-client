@@ -22,7 +22,7 @@ class Class348_Sub29 : Class348 {
         fun method3004(class45: Class45?, bool: Boolean, var_renderConfig: RenderConfig?) {
             do {
                 try {
-                    Class260.aClass45_3309 = class45
+                    WalkingTypeUtil.aClass45_3309 = class45
                     anInt6910++
                     MatrixCameraTransform.aRenderConfig5684 = var_renderConfig
                     if (bool == false) break

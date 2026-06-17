@@ -221,9 +221,9 @@ class Class38 {
                                         }
                                     } else if (i_7_ == 102) Class348_Sub38.anInt7006 = 0
                                     else if (i_7_ == 103) Class348_Sub38.anInt7006 = Class363.aString4461!!.length
-                                    else if (i_7_ != 104 || (Class260.anInt3312 >= (Class286_Sub1.aStringArray6200)!!.size)) {
-                                        if (i_7_ == 105 && Class260.anInt3312 > 0) {
-                                            Class260.anInt3312--
+                                    else if (i_7_ != 104 || (WalkingTypeUtil.anInt3312 >= (Class286_Sub1.aStringArray6200)!!.size)) {
+                                        if (i_7_ == 105 && WalkingTypeUtil.anInt3312 > 0) {
+                                            WalkingTypeUtil.anInt3312--
                                             method159(-615751774)
                                             Class348_Sub38.anInt7006 = Class363.aString4461!!.length
                                         } else if (Npc.method2446(c, 105.toByte()) || c.code == 92 || c.code == 47 || c.code == 46 || c.code == 58 || c.code == 44 || c.code == 32 || c.code == 95 || c.code == 45 || c.code == 43 || c.code == 91 || c.code == 93) {
@@ -231,7 +231,7 @@ class Class38 {
                                             Class348_Sub38.anInt7006++
                                         }
                                     } else {
-                                        Class260.anInt3312++
+                                        WalkingTypeUtil.anInt3312++
                                         method159(-615751774)
                                         Class348_Sub38.anInt7006 = Class363.aString4461!!.length
                                     }

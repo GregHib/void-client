@@ -3194,7 +3194,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class319.anInt3984 = 0
             Class330.anInt4115 = 0
             Class42.anInt600 = 0
-            Class260.anInt3308 = 0
+            WalkingTypeUtil.anInt3308 = 0
             ParticleAmountConfig.anInt2128 = 0
             NativeRenderer.anInt7886 = 0
             Class318_Sub1_Sub3_Sub5.anInt10370 = 0
@@ -4111,7 +4111,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RenderNode.aBoolean9722 = false
             Class348_Sub17.method2928(true)
             OpenGlRenderNode.anInt10483 = -60 + (Math.random() * 120.0).toInt()
-            Class260.anInt3310 = -55 + (Math.random() * 110.0).toInt()
+            WalkingTypeUtil.anInt3310 = -55 + (Math.random() * 110.0).toInt()
             Class314.aFloat3938 = (0x3fff and -80 + (160.0 * Math.random()).toInt()).toFloat()
             Class348_Sub49_Sub1.anInt9750 = (30.0 * Math.random()).toInt() + -20
             RenderableGroup.anInt5016 = (80.0 * Math.random()).toInt() - 40

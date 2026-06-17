@@ -51,7 +51,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             try {
                 anInt66++
                 val i_0_ = (ConnectionStateRefs.anInt319 + LocalPlayerState.aPlayer_1907!!.x)
-                val i_1_ = (Class260.anInt3310 + LocalPlayerState.aPlayer_1907!!.y)
+                val i_1_ = (WalkingTypeUtil.anInt3310 + LocalPlayerState.aPlayer_1907!!.y)
                 if (-i_0_ + FrameStatsReset.anInt5799 < -2000 || -i_0_ + FrameStatsReset.anInt5799 > 2000 || AsyncTaskHandle.anInt2578 - i_1_ < -2000 || -i_1_ + AsyncTaskHandle.anInt2578 > 2000) {
                     AsyncTaskHandle.anInt2578 = i_1_
                     FrameStatsReset.anInt5799 = i_0_

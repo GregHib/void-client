@@ -18,11 +18,11 @@ abstract class Sprite {
 
         @JvmStatic
         fun method159(i: Int) {
-            if (Class260.anInt3312 > 0) {
+            if (WalkingTypeUtil.anInt3312 > 0) {
                 var i_1_ = 0
                 var i_2_ = 0
                 while (Class286_Sub1.aStringArray6200!!.size > i_2_) {
-                    if (Class286_Sub1.aStringArray6200!![i_2_]!!.indexOf("--> ") != -1 && ++i_1_ == Class260.anInt3312) {
+                    if (Class286_Sub1.aStringArray6200!![i_2_]!!.indexOf("--> ") != -1 && ++i_1_ == WalkingTypeUtil.anInt3312) {
                         Class363.aString4461 = (Class286_Sub1.aStringArray6200!![i_2_]!!.substring(2 + Class286_Sub1.aStringArray6200!![i_2_]!!.indexOf(">")))
                         break
                     }

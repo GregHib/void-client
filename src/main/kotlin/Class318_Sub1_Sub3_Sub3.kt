@@ -886,7 +886,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class342.anIntArrayArray4253 = null
             BooleanGraphicsOptionState.aShortArrayArray5847 = null
             if (Class348_Sub40_Sub34.aClass293Array9432 != null) {
-                Class260.method1978()
+                WalkingTypeUtil.method1978()
                 Class9.aRenderer171!!.method3631(1)
                 Class9.aRenderer171!!.method3659(0)
             }

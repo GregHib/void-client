@@ -196,7 +196,7 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
                     method94("--> " + Class363.aString4461, 110)
                     Class348_Sub38.anInt7006 = 0
                     Class363.aString4461 = ""
-                    Class260.anInt3312 = 0
+                    WalkingTypeUtil.anInt3312 = 0
                 }
             }
         }
