@@ -918,7 +918,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class189.aIntRange_2527 == Class348_Sub3.aIntRange_6584) {
+            if (MapAreaDefinition.aIntRange_2527 == Class348_Sub3.aIntRange_6584) {
                 val bool_108_ = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val `is` = ByteArray(Class348_Sub40_Sub25.anInt9341 - 1)
                 Class299.aClass348_Sub49_Sub2_3813!!.method3389(2147483647, 0, (Class348_Sub40_Sub25.anInt9341) + -1, `is`)
@@ -1167,7 +1167,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class239_Sub26.aClass54Array6114!![i] = Class54(Class299.aClass348_Sub49_Sub2_3813!!)
                 }
                 Class348_Sub3.aIntRange_6584 = null
-                Class189.anInt2523 = Class311.anInt3918
+                MapAreaDefinition.anInt2523 = Class311.anInt3918
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == AbstractMenuEntry.aIntRange_1702) {

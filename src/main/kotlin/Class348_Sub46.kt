@@ -77,7 +77,7 @@ class Class348_Sub46 : Class348 {
         fun method3321(i: Int, i_2_: Int, i_3_: Int): Class357? {
             if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_] == null) {
                 val bool = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_2_]!![i_3_] != null && HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_2_]!![i_3_]!!.aClass357_4400 != null)
-                if (bool && i >= Class189.anInt2524 - 1) return null
+                if (bool && i >= MapAreaDefinition.anInt2524 - 1) return null
                 method1394(i, i_2_, i_3_)
             }
             return HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_]

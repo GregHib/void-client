@@ -130,7 +130,7 @@ class Class243 {
                 HintArrowOrMessage.aClass357ArrayArrayArray2029 = Class65.aClass357ArrayArrayArray1148
                 NativeSprite.aTerrainTileArray5191 = Class348_Sub1_Sub1.aTerrainTileArray8801
             }
-            Class189.anInt2524 = HintArrowOrMessage.aClass357ArrayArrayArray2029!!.size
+            MapAreaDefinition.anInt2524 = HintArrowOrMessage.aClass357ArrayArrayArray2029!!.size
         }
     }
 }

@@ -214,7 +214,7 @@ class VarpStore : Interface17 {
                 if ((0x10 and i_40_) != 0) i_40_ += Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i xor 0xff00.inv()) shl 8
                 if ((0x2 and i_40_) != 0) {
                     if (npc.aClass79_10505!!.method793(i xor 0xffff.inv())) method181(true, npc)
-                    npc.method2448((Class189.aClass278_2529!!.method2079(Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-1), -1)), -2)
+                    npc.method2448((MapAreaDefinition.aClass278_2529!!.method2079(Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-1), -1)), -2)
                     npc.method2434(95.toByte(), npc.aClass79_10505!!.anInt1399)
                     npc.anInt10310 = npc.aClass79_10505!!.anInt1329 shl 3
                     if (npc.aClass79_10505!!.method793(0)) Class223.method1614(979190089, npc, (npc.plane).toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)

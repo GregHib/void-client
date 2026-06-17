@@ -193,7 +193,7 @@ object ClientLoadStateMachine {
             Class348_Sub40_Sub12.aClass263_9195 = Class263(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class94.aClass45_1538, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             Class2.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
-            Class189.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.aClass45_4975, RasterSprite.aClass45_5207)
+            MapAreaDefinition.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.aClass45_4975, RasterSprite.aClass45_5207)
             Exception_Sub1.aClass255_112 = Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, ProjectionCameraTransform.aClass326_5764, SpotAnimVector.aClass45_2306, RasterSprite.aClass45_5207)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036 = LocTypeDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             ParticleEmitterNode.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, OpenGlRenderNode.aClass45_10480, Class348_Sub29.aClass45_6909, TextureGenerator.aClass45_2490)

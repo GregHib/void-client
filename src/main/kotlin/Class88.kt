@@ -350,7 +350,7 @@ class Class88 {
                                 ModelBatchBase.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class348_Sub40_Sub12.aClass263_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
                                 Exception_Sub1.aClass255_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
-                                Class189.aClass278_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
+                                MapAreaDefinition.aClass278_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
                             } else {
                                 if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class76.Companion.anInt1288, 107)) return
                                 Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class76.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))

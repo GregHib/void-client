@@ -143,7 +143,7 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
             method2420(i_0_, i)
             Class348_Sub40_Sub12.aClass263_9195!!.method2009(i_0_, 109.toByte())
             Exception_Sub1.aClass255_112!!.method1942(i_0_, (-125).toByte())
-            Class189.aClass278_2529!!.method2073(-25032, i_0_)
+            MapAreaDefinition.aClass278_2529!!.method2073(-25032, i_0_)
             Class348_Sub40_Sub18.aClass319_9245!!.method2541(119, i_0_)
             method3535(i_0_, i.inv())
             Class269.method2040(i_0_, true)

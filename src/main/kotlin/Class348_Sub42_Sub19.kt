@@ -32,7 +32,7 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
                 var i = class211.anInt2731
                 if (class211.aBoolean2749) i = 0
                 var i_0_ = class211.anInt2731
-                if (class211.aBoolean2737) i_0_ = Class189.anInt2524 - 1
+                if (class211.aBoolean2737) i_0_ = MapAreaDefinition.anInt2524 - 1
                 for (i_1_ in i..i_0_) {
                     var i_2_ = 0
                     var i_3_ = ((class348_sub1!!.method2717(89.toByte()) - class348_sub1.method2723(-1) + Class348_Sub23_Sub2.anInt9037) shr Class362.anInt4459)

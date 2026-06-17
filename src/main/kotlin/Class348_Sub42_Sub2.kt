@@ -99,7 +99,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             Class270.anInt3465 = 1 shl Class362.anInt4459
             Class348_Sub23_Sub2.anInt9037 = Class270.anInt3465 shr 1
             sqrt(((Class348_Sub23_Sub2.anInt9037 * Class348_Sub23_Sub2.anInt9037) + (Class348_Sub23_Sub2.anInt9037 * Class348_Sub23_Sub2.anInt9037)).toDouble())
-            Class189.anInt2524 = i_1_
+            MapAreaDefinition.anInt2524 = i_1_
             Class318_Sub7.anInt6451 = i_2_
             Class348_Sub41.anInt7054 = i_3_
             Class318_Sub1_Sub4_Sub1.anInt10084 = i_4_

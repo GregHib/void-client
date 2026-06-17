@@ -45,7 +45,7 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
             if (class357 != null) i_2_ = class357.aByte4399.toInt()
             val i_3_ = var_ses!![i_2_]!!.method3982((-86).toByte(), i_0_, i)
             val i_4_: Int
-            if (i_2_ < Class189.anInt2524 - 1) i_4_ = var_ses[i_2_ + 1]!!.method3982((-86).toByte(), i_0_, i)
+            if (i_2_ < MapAreaDefinition.anInt2524 - 1) i_4_ = var_ses[i_2_ + 1]!!.method3982((-86).toByte(), i_0_, i)
             else i_4_ = i_3_ - (8 shl Class362.anInt4459)
             if (class181.aBoolean2397) {
                 if (class181.anInt2384 == -1 && i_1_ > i_3_) {
@@ -66,12 +66,12 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
                 }
             }
             var i_5_: Int
-            i_5_ = Class189.anInt2524 - 1
+            i_5_ = MapAreaDefinition.anInt2524 - 1
             while ((i_5_ > 0 && i_1_ > var_ses[i_5_]!!.method3982((-86).toByte(), i_0_, i))) {
                 i_5_--
             }
             if (class181.aBoolean2376 && i_5_ == 0 && i_1_ > var_ses[0]!!.method3982((-86).toByte(), i_0_, i)) method2520()
-            else if (i_5_ == Class189.anInt2524 - 1 && (var_ses[i_5_]!!.method3982((-86).toByte(), i_0_, i) - i_1_ > 8 shl Class362.anInt4459)) method2520()
+            else if (i_5_ == MapAreaDefinition.anInt2524 - 1 && (var_ses[i_5_]!!.method3982((-86).toByte(), i_0_, i) - i_1_ > 8 shl Class362.anInt4459)) method2520()
             else {
                 class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_5_]!![i]!![i_0_]
                 if (class357 == null) {

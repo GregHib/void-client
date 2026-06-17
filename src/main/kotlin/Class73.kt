@@ -58,16 +58,16 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
             aClass219_4782 = null
         }
 
-        fun method742(i: Int, i_0_: Int): Class189 {
+        fun method742(i: Int, i_0_: Int): MapAreaDefinition {
             anInt4777++
-            var class189 = Class217.aClass60_2844!!.method583(i_0_.toLong(), -104) as Class189?
-            if (class189 != null) return class189
+            var mapAreaDefinition = Class217.aClass60_2844!!.method583(i_0_.toLong(), -104) as MapAreaDefinition?
+            if (mapAreaDefinition != null) return mapAreaDefinition
             val `is` = Class369_Sub3.aClass45_8601!!.method410(-1860, 0, i_0_)
             if (i != 104) method741(98.toByte())
-            class189 = Class189()
-            if (`is` != null) class189.method1419(i_0_, Class348_Sub49(`is`), 64.toByte())
-            Class217.aClass60_2844!!.method582(class189, i_0_.toLong(), (-114).toByte())
-            return class189
+            mapAreaDefinition = MapAreaDefinition()
+            if (`is` != null) mapAreaDefinition.method1419(i_0_, Class348_Sub49(`is`), 64.toByte())
+            Class217.aClass60_2844!!.method582(mapAreaDefinition, i_0_.toLong(), (-114).toByte())
+            return mapAreaDefinition
         }
 
         fun method743(i: Int, i_2_: Int) {

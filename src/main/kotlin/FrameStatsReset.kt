@@ -2038,7 +2038,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub26.anInt6886 = 0
             Class367_Sub2.anInt7286 = 0
             Class231.anInt2994 = 0
-            Class189.anInt2532 = 0
+            MapAreaDefinition.anInt2532 = 0
             Npc.anInt10514 = 0
             Class296.anInt3765 = 0
             Class348_Sub40.anInt7029 = 0
@@ -3097,7 +3097,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub2.anInt10057 = 0
             Class318_Sub1_Sub1_Sub1.anInt9961 = 0
             LoadProgressCounters.anInt2453 = 0
-            Class189.anInt2528 = 0
+            MapAreaDefinition.anInt2528 = 0
             Class239_Sub15.anInt5998 = 0
             Class239_Sub3.anInt5867 = 0
             Class258_Sub2.anInt8533 = 0
@@ -4041,7 +4041,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ProjectionCameraTransform.anInt5758 = 0
             MinimapDrawController.anInt1608 = 0
             Class348_Sub49.anInt7142 = 0
-            Class189.anInt2521 = 0
+            MapAreaDefinition.anInt2521 = 0
             Class258_Sub1.anInt8526 = 0
             OpenGlRenderer.anInt7532 = 0
             Class250.anInt3224 = 0

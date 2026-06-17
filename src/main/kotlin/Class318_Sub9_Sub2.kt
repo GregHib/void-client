@@ -27,7 +27,7 @@ open class Class318_Sub9_Sub2 : Class318_Sub9() {
             val i_6_ = i_1_ - 1
             val i_7_ = i_1_ + i_3_
             for (i_8_ in i..i + 1) {
-                if (i_8_ != Class189.anInt2524) {
+                if (i_8_ != MapAreaDefinition.anInt2524) {
                     for (i_9_ in i_4_..i_5_) {
                         if (i_9_ >= 0 && i_9_ < Class318_Sub7.Companion.anInt6451) {
                             for (i_10_ in i_6_..i_7_) {

@@ -981,7 +981,7 @@ class Client : GameAppletFrame() {
         method2664(i.toInt() xor 0x6f)
         Class348_Sub42_Sub5.method3187((-52).toByte())
         method1064(-3)
-        Class189.method1421((-85).toByte())
+        MapAreaDefinition.method1421((-85).toByte())
         method3220(102.toByte())
         if (i.toInt() != 108) anInt5171 = -60
         method2962(-31055)
@@ -2475,7 +2475,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray761
                                     Class348_Sub1_Sub2.aClass262_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                if ((Class189.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
+                                if ((MapAreaDefinition.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
                                     val class348_sub36 = Class348_Sub36()
                                     class348_sub36.aClass46_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray807

@@ -299,7 +299,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             Class69.anInt1200 = 0
             run {
                 var i = 0
-                while (Class189.anInt2524 > i) {
+                while (MapAreaDefinition.anInt2524 > i) {
                     for (i_20_ in 0..<Class318_Sub7.anInt6451) {
                         var i_21_ = 0
                         while ((i_21_ < Class348_Sub41.anInt7054)) {
@@ -316,7 +316,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             }
             if (bool != false) anIntArray6228 = null
             var i = 0
-            while (Class189.anInt2524 > i) {
+            while (MapAreaDefinition.anInt2524 > i) {
                 for (i_22_ in 0..<Class318_Sub7.anInt6451) {
                     var i_23_ = 0
                     while (Class348_Sub41.anInt7054 > i_23_) {
