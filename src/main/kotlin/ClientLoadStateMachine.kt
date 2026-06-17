@@ -36,7 +36,7 @@ object ClientLoadStateMachine {
         anInt2175++
         Class351.aClass60_4327!!.method590(i + -62)
         Class358.aClass60_4417!!.method590(0)
-        Class239_Sub24.aClass60_6096!!.method590(0)
+        SceneryDetailOptionState.aClass60_6096!!.method590(0)
         if (i.toInt() != 62) method1277(43.toByte())
         Class348_Sub40_Sub9.aClass60_9171!!.method590(0)
     }
@@ -132,7 +132,7 @@ object ClientLoadStateMachine {
             SceneTilePlaneManager.aClass45_233 = Class369_Sub2.method3571(false, 10, (-23).toByte(), 1)
             Class348_Sub23_Sub2.aClass45_9033 = Class369_Sub2.method3571(false, 11, (-23).toByte(), 1)
             CameraNodeList.aClass45_1743 = Class369_Sub2.method3571(false, 12, (-23).toByte(), 1)
-            Class239_Sub4.aClass45_5878 = Class369_Sub2.method3571(false, 14, (-23).toByte(), 1)
+            LightingOptionState.aClass45_5878 = Class369_Sub2.method3571(false, 14, (-23).toByte(), 1)
             HoverActionEntry.aClass45_1815 = Class369_Sub2.method3571(false, 15, (-23).toByte(), 1)
             Class94.aClass45_1538 = Class369_Sub2.method3571(false, 16, (-23).toByte(), 1)
             Class247.aClass45_3183 = Class369_Sub2.method3571(false, 17, (-23).toByte(), 1)
@@ -145,7 +145,7 @@ object ClientLoadStateMachine {
             ModelBatchBase.aClass45_1897 = Class369_Sub2.method3571(false, 24, (-23).toByte(), 1)
             Class82.aClass45_1434 = Class369_Sub2.method3571(false, 25, (-23).toByte(), 1)
             Class348_Sub11.aClass45_4770 = Class369_Sub2.method3571(true, 26, (-23).toByte(), 1)
-            Class239.aClass45_3146 = Class369_Sub2.method3571(false, 27, (-23).toByte(), 1)
+            GraphicsOptionState.aClass45_3146 = Class369_Sub2.method3571(false, 27, (-23).toByte(), 1)
             Class367_Sub8.aClass45_7362 = Class369_Sub2.method3571(true, 28, (-23).toByte(), 1)
             Class262.aClass45_3323 = Class369_Sub2.method3571(false, 29, (-23).toByte(), 1)
             Crc64Hashable.aClass45_4984 = Class369_Sub2.method3571(true, 30, (-23).toByte(), 1)
@@ -171,7 +171,7 @@ object ClientLoadStateMachine {
         }
         if (Class56.aClass56_1033 == Class348_Sub42_Sub15.aClass56_9660) method323(Crc64Hashable.aClass45_4984, Class348_Sub23_Sub1.aClass297_8992, 95.toByte())
         if (Class56.aClass56_1034 == Class348_Sub42_Sub15.aClass56_9660) {
-            val i_10_ = Class239_Sub11.method1770((-25).toByte())
+            val i_10_ = BinaryGraphicsOptionState.method1770((-25).toByte())
             if (i_10_ < 100) return i_10_
             Class263.method2013(Class367_Sub8.aClass45_7362!!.method415(73.toByte(), 1), 112.toByte())
             RuntimeException_Sub1.method4012(Class367_Sub8.aClass45_7362!!.method415(73.toByte(), 3), (-111).toByte())
@@ -182,7 +182,7 @@ object ClientLoadStateMachine {
             Class348_Sub40_Sub4.aRenderConfig9113 = TextureMetadataProvider(Class348_Sub11.aClass45_4770, Class369_Sub2.aClass45_8589, CameraRotationStub.aClass45_322)
             ProjectionCameraTransform.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class239.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
+            GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class247.aClass45_3183)
             RenderConfigFactory.aClass268_2979 = Class268(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class362.aParticleDefLoader_4460 = ParticleDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
@@ -202,18 +202,18 @@ object ClientLoadStateMachine {
             Class348_Sub40_Sub18.aClass319_9245 = Class319(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class78.aClass45_1322, RasterSprite.aClass45_5207)
             SpriteLoadValidator.aClass65_4787 = Class65(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class91.aClass82_1523 = Class82(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class239_Sub14.aClass259_5995 = Class259(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            WaterDetailOptionState.aClass259_5995 = Class259(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
             Class269.aParticleAmountCache_3453 = ParticleAmountCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class65.method699(SoftwareSpriteRaster.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, CameraRotationStub.aClass45_322, RasterSprite.aClass45_5207)
             method85(0, Class262.aClass45_3323)
             ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434)
-            Class239_Sub6.aClass355_5900 = Class355(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, Class28())
+            BrightnessOptionState.aClass355_5900 = Class355(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, Class28())
             method1202(0)
             Class348_Sub40_Sub12.aClass263_9195!!.method2008(i + 28539, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
             Class318_Sub1_Sub3_Sub3.aVarpStore_10209 = VarpStore()
             method3038(-1)
-            method4011(i + 29684, Class239.aClass45_3146)
+            method4011(i + 29684, GraphicsOptionState.aClass45_3146)
             Class348_Sub29.method3004(RasterSprite.aClass45_5207, false, Class348_Sub40_Sub4.aRenderConfig9113)
             val class296 = Class296(SceneTilePlaneManager.aClass45_233!!.method391("huffman", "", -29832)!!)
             method3896(class296, 13.toByte())
@@ -233,12 +233,12 @@ object ClientLoadStateMachine {
         if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, RenderConfigFactory.aClass268_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
-            Class77.anIntArray1303 = (IntArray(Class239_Sub14.aClass259_5995!!.anInt3305 + 1000))
-            Class286_Sub6.aBooleanArray6270 = (BooleanArray(Class239_Sub14.aClass259_5995!!.anInt3305 + 1000))
+            Class77.anIntArray1303 = (IntArray(WaterDetailOptionState.aClass259_5995!!.anInt3305 + 1000))
+            Class286_Sub6.aBooleanArray6270 = (BooleanArray(WaterDetailOptionState.aClass259_5995!!.anInt3305 + 1000))
             Class258_Sub2.aStringArray8532 = arrayOfNulls<String>(Class91.aClass82_1523!!.anInt1439)
             var i_13_ = 0
-            while (Class239_Sub14.aClass259_5995!!.anInt3305 + 1000 > i_13_) {
-                if (Class239_Sub14.aClass259_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
+            while (WaterDetailOptionState.aClass259_5995!!.anInt3305 + 1000 > i_13_) {
+                if (WaterDetailOptionState.aClass259_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
                     Class286_Sub6.aBooleanArray6270!![i_13_] = true
                     Class335.anInt4168++
                 }

@@ -1,4 +1,4 @@
-import Class239_Sub15.Companion.method1782
+import TextureQualityOptionState.Companion.method1782
 import java.awt.Rectangle
 
 /*

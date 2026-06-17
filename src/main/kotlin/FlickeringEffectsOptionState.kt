@@ -1,7 +1,7 @@
 /* Class239_Sub8 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub8 : Class239 {
+class FlickeringEffectsOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         if (i != 20014) Companion.method1749(null, null, false, 94, (-39).toByte())
         anInt5914++
@@ -80,7 +80,7 @@ class Class239_Sub8 : Class239 {
                     }
                     return -i_3_ + i_2_
                 }
-                if (i == 2) return (Class239_Sub21.method1811(9152, (class110_sub1_0_!!.method1038(false).aString3663), Class348_Sub33.anInt6967, (class110_sub1!!.method1038(false).aString3663)))
+                if (i == 2) return (RemoveRoofsOptionState.method1811(9152, (class110_sub1_0_!!.method1038(false).aString3663), Class348_Sub33.anInt6967, (class110_sub1!!.method1038(false).aString3663)))
                 if (i == 3) {
                     if (class110_sub1!!.aString5787 == "-") {
                         if (class110_sub1_0_!!.aString5787 == "-") return 0
@@ -90,7 +90,7 @@ class Class239_Sub8 : Class239 {
                         if (!bool) return -1
                         return 1
                     }
-                    return (Class239_Sub21.method1811(9152, class110_sub1_0_.aString5787, Class348_Sub33.anInt6967, class110_sub1.aString5787))
+                    return (RemoveRoofsOptionState.method1811(9152, class110_sub1_0_.aString5787, Class348_Sub33.anInt6967, class110_sub1.aString5787))
                 }
                 if (i == 4) {
                     if (!class110_sub1!!.method1033(-85)) {
@@ -157,18 +157,18 @@ class Class239_Sub8 : Class239 {
             LinkedNodeListIterator.anInt1651 = i_10_
             if (i == -1) {
                 if (Class348_Sub49.anInt7207 == 0) {
-                    Class239_Sub16.anInt6008 = (2 * Class348_Sub42_Sub9_Sub1.anInt10444 + LinkedNodeListIterator.anInt1651)
+                    ShadowQualityOptionState.anInt6008 = (2 * Class348_Sub42_Sub9_Sub1.anInt10444 + LinkedNodeListIterator.anInt1651)
                     Class348_Sub16_Sub1.anInt8854 = SoundEnvelope.anInt2747 * 2 + Class59_Sub1.anInt5283
                 } else if (Class348_Sub49.anInt7207 == 1) {
-                    Class31.anInt425 = (Class239_Sub12.anInt5965 + Class59_Sub1.anInt5283 / Class58.anInt1067 - -2)
+                    Class31.anInt425 = (BloomGraphicsOptionState.anInt5965 + Class59_Sub1.anInt5283 / Class58.anInt1067 - -2)
                     Class250.anInt3225 = (Class73.anInt4784 + LinkedNodeListIterator.anInt1651 / Class344.anInt4267 - -2)
                     Class348_Sub16_Sub1.anInt8854 = Class58.anInt1067 * Class31.anInt425
-                    Class239_Sub16.anInt6008 = Class344.anInt4267 * Class250.anInt3225
+                    ShadowQualityOptionState.anInt6008 = Class344.anInt4267 * Class250.anInt3225
                     SoundEnvelope.anInt2747 = (-Class59_Sub1.anInt5283 + Class348_Sub16_Sub1.anInt8854 shr 1)
-                    Class348_Sub42_Sub9_Sub1.anInt10444 = (Class239_Sub16.anInt6008 - LinkedNodeListIterator.anInt1651 shr 1)
+                    Class348_Sub42_Sub9_Sub1.anInt10444 = (ShadowQualityOptionState.anInt6008 - LinkedNodeListIterator.anInt1651 shr 1)
                 } else if (Class348_Sub49.anInt7207 == 2) {
                     Class348_Sub16_Sub1.anInt8854 = Class59_Sub1.anInt5283
-                    Class239_Sub16.anInt6008 = LinkedNodeListIterator.anInt1651
+                    ShadowQualityOptionState.anInt6008 = LinkedNodeListIterator.anInt1651
                 }
             }
         }

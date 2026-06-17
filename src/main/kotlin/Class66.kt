@@ -8,16 +8,16 @@ import GlCubeMapTexture.Companion.method244
 import SceneTilePlaneManager.method259
 import SceneTilePlaneManager.method262
 import ModelOrSpriteHolder.Companion.method170
-import Class239_Sub1.Companion.method1719
-import Class239_Sub14.Companion.method1781
-import Class239_Sub15.Companion.method1787
-import Class239_Sub21.Companion.method1811
-import Class239_Sub23.Companion.method1819
-import Class239_Sub28.Companion.method1844
-import Class239_Sub29.Companion.method1851
-import Class239_Sub5.Companion.method1742
-import Class239_Sub6.Companion.method1745
-import Class239_Sub8.Companion.method1754
+import BooleanGraphicsOptionState.Companion.method1719
+import WaterDetailOptionState.Companion.method1781
+import TextureQualityOptionState.Companion.method1787
+import RemoveRoofsOptionState.Companion.method1811
+import AntialiasOptionState.Companion.method1819
+import TwoStateOptionState.Companion.method1844
+import MultiLevelOptionState.Companion.method1851
+import SimpleToggleOptionState.Companion.method1742
+import BrightnessOptionState.Companion.method1745
+import FlickeringEffectsOptionState.Companion.method1754
 import Class24.method298
 import Class27.method312
 import Class27.method317
@@ -398,12 +398,12 @@ object Class66 {
             }
             if (i == 5055) {
                 val i_37_ = anIntArray1149!![--anInt1173]
-                aStringArray1152!![anInt1170++] = Class239_Sub6.aClass355_5900!!.method3471(i_37_, (-112).toByte()).method3219(127)
+                aStringArray1152!![anInt1170++] = BrightnessOptionState.aClass355_5900!!.method3471(i_37_, (-112).toByte()).method3219(127)
                 return
             }
             if (i == 5056) {
                 val i_38_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub10 = Class239_Sub6.aClass355_5900!!.method3471(i_38_, (-125).toByte())
+                val class348_sub42_sub10 = BrightnessOptionState.aClass355_5900!!.method3471(i_38_, (-125).toByte())
                 if ((class348_sub42_sub10.anIntArray9566) == null) anIntArray1149!![anInt1173++] = 0
                 else {
                     anIntArray1149!![anInt1173++] = (class348_sub42_sub10.anIntArray9566!!).size
@@ -415,13 +415,13 @@ object Class66 {
                 anInt1173 -= 2
                 val i_39_ = anIntArray1149!![anInt1173]
                 val i_40_ = anIntArray1149!![anInt1173 + 1]
-                anIntArray1149!![anInt1173++] = (Class239_Sub6.aClass355_5900!!.method3471(i_39_, (-126).toByte()).anIntArray9566!![i_40_])
+                anIntArray1149!![anInt1173++] = (BrightnessOptionState.aClass355_5900!!.method3471(i_39_, (-126).toByte()).anIntArray9566!![i_40_])
                 return
             }
             if (i == 5058) {
                 aClass43_1151 = Class43()
                 aClass43_1151!!.anInt615 = anIntArray1149!![--anInt1173]
-                aClass43_1151!!.aClass348_Sub42_Sub10_614 = Class239_Sub6.aClass355_5900!!.method3471((aClass43_1151!!.anInt615), (-87).toByte())
+                aClass43_1151!!.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aClass355_5900!!.method3471((aClass43_1151!!.anInt615), (-87).toByte())
                 aClass43_1151!!.anIntArray617 = IntArray(aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3215((-48).toByte()))
                 return
             }
@@ -500,14 +500,14 @@ object Class66 {
             }
             if (i == 5066) {
                 val i_52_ = anIntArray1149!![--anInt1173]
-                anIntArray1149!![anInt1173++] = Class239_Sub6.aClass355_5900!!.method3471(i_52_, (-123).toByte()).method3215((-127).toByte())
+                anIntArray1149!![anInt1173++] = BrightnessOptionState.aClass355_5900!!.method3471(i_52_, (-123).toByte()).method3215((-127).toByte())
                 return
             }
             if (i == 5067) {
                 anInt1173 -= 2
                 val i_53_ = anIntArray1149!![anInt1173]
                 val i_54_ = anIntArray1149!![anInt1173 + 1]
-                val i_55_ = Class239_Sub6.aClass355_5900!!.method3471(i_53_, (-127).toByte()).method3212(0, i_54_)!!.anInt1941
+                val i_55_ = BrightnessOptionState.aClass355_5900!!.method3471(i_53_, (-127).toByte()).method3212(0, i_54_)!!.anInt1941
                 anIntArray1149!![anInt1173++] = i_55_
                 return
             }
@@ -530,7 +530,7 @@ object Class66 {
                 val i_60_ = anIntArray1149!![anInt1173]
                 val i_61_ = anIntArray1149!![anInt1173 + 1]
                 val i_62_ = anIntArray1149!![anInt1173 + 2]
-                val class348_sub42_sub10 = Class239_Sub6.aClass355_5900!!.method3471(i_60_, (-127).toByte())
+                val class348_sub42_sub10 = BrightnessOptionState.aClass355_5900!!.method3471(i_60_, (-127).toByte())
                 if ((class348_sub42_sub10.method3212(0, i_61_)!!.anInt1941) != 0) throw RuntimeException("bad command")
                 anIntArray1149!![anInt1173++] = class348_sub42_sub10.method3213(i_62_, i_61_, true)
                 return
@@ -908,7 +908,7 @@ object Class66 {
             }
             if (i == 5305) {
                 val i_100_ = Class346.anInt4276
-                val i_101_ = Class239_Sub8.anInt5911
+                val i_101_ = FlickeringEffectsOptionState.anInt5911
                 var i_102_ = -1
                 val class57s = Class318_Sub9_Sub1.method2515(1494)!!
                 for (i_103_ in class57s.indices) {
@@ -2841,7 +2841,7 @@ object Class66 {
                 class46.aByte681 = i_268_.toByte()
                 Class251.method1916(-9343, class46)
                 CollisionMapRegion.method1048(class46, 50)
-                if (class46.anInt704 == -1) Class239_Sub3.method1733((-78).toByte(), class46.anInt830)
+                if (class46.anInt704 == -1) ChatEffectsOptionState.method1733((-78).toByte(), class46.anInt830)
                 return
             }
             if (i == 1001) {
@@ -3809,7 +3809,7 @@ object Class66 {
                     return
                 }
                 if (i == 3113) {
-                    Class239_Sub1.method1721(aStringArray1152!![--anInt1170], (-70).toByte())
+                    BooleanGraphicsOptionState.method1721(aStringArray1152!![--anInt1170], (-70).toByte())
                     return
                 }
                 if (i == 3114) {
@@ -4419,55 +4419,55 @@ object Class66 {
             } else if (i < 4000) {
                 if (i == 3903) {
                     val i_374_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class239_Sub26.aClass54Array6114!![i_374_]!!.method499(21110)
+                    anIntArray1149!![anInt1173++] = DetailLevelOptionState.aClass54Array6114!![i_374_]!!.method499(21110)
                     return
                 }
                 if (i == 3904) {
                     val i_375_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (Class239_Sub26.aClass54Array6114!![i_375_]!!.anInt969)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_375_]!!.anInt969)
                     return
                 }
                 if (i == 3905) {
                     val i_376_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (Class239_Sub26.aClass54Array6114!![i_376_]!!.anInt976)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_376_]!!.anInt976)
                     return
                 }
                 if (i == 3906) {
                     val i_377_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (Class239_Sub26.aClass54Array6114!![i_377_]!!.anInt967)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_377_]!!.anInt967)
                     return
                 }
                 if (i == 3907) {
                     val i_378_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (Class239_Sub26.aClass54Array6114!![i_378_]!!.anInt977)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_378_]!!.anInt977)
                     return
                 }
                 if (i == 3908) {
                     val i_379_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (Class239_Sub26.aClass54Array6114!![i_379_]!!.anInt973)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_379_]!!.anInt973)
                     return
                 }
                 if (i == 3910) {
                     val i_380_ = anIntArray1149!![--anInt1173]
-                    val i_381_ = Class239_Sub26.aClass54Array6114!![i_380_]!!.method502(100.toByte())
+                    val i_381_ = DetailLevelOptionState.aClass54Array6114!![i_380_]!!.method502(100.toByte())
                     anIntArray1149!![anInt1173++] = if (i_381_ == 0) 1 else 0
                     return
                 }
                 if (i == 3911) {
                     val i_382_ = anIntArray1149!![--anInt1173]
-                    val i_383_ = Class239_Sub26.aClass54Array6114!![i_382_]!!.method502(118.toByte())
+                    val i_383_ = DetailLevelOptionState.aClass54Array6114!![i_382_]!!.method502(118.toByte())
                     anIntArray1149!![anInt1173++] = if (i_383_ == 2) 1 else 0
                     return
                 }
                 if (i == 3912) {
                     val i_384_ = anIntArray1149!![--anInt1173]
-                    val i_385_ = Class239_Sub26.aClass54Array6114!![i_384_]!!.method502((-100).toByte())
+                    val i_385_ = DetailLevelOptionState.aClass54Array6114!![i_384_]!!.method502((-100).toByte())
                     anIntArray1149!![anInt1173++] = if (i_385_ == 5) 1 else 0
                     return
                 }
                 if (i == 3913) {
                     val i_386_ = anIntArray1149!![--anInt1173]
-                    val i_387_ = Class239_Sub26.aClass54Array6114!![i_386_]!!.method502(55.toByte())
+                    val i_387_ = DetailLevelOptionState.aClass54Array6114!![i_386_]!!.method502(55.toByte())
                     anIntArray1149!![anInt1173++] = if (i_387_ == 1) 1 else 0
                     return
                 }

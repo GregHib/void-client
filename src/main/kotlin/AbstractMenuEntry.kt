@@ -78,7 +78,7 @@ abstract class AbstractMenuEntry {
             var i_3_ = 0
             while (fields_2_.size > i_3_) {
                 val field = fields_2_[i_3_]
-                if ((if (aClass1714 != null) aClass1714 else (Class239::class.java.also { aClass1714 = it }))!!.isAssignableFrom(field.getType())) i_1_++
+                if ((if (aClass1714 != null) aClass1714 else (GraphicsOptionState::class.java.also { aClass1714 = it }))!!.isAssignableFrom(field.getType())) i_1_++
                 i_3_++
             }
             return i_1_ - -1

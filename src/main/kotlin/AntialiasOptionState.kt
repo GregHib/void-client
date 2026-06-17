@@ -1,7 +1,7 @@
 /* Class239_Sub23 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub23 : Class239 {
+class AntialiasOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         anInt6077++
         if (i != 20014) return -71

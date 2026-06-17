@@ -1,4 +1,4 @@
-import Class239_Sub10.Companion.method1762
+import RangedGraphicsOptionState.Companion.method1762
 
 /* Class58 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

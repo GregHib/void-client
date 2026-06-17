@@ -66,7 +66,7 @@ class Class312 {
                 Class348_Sub40_Sub36.aIntRange_9456 = null
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 AbstractGameSocket.aIntRange_3133 = null
-                Class239.aIntRange_3145 = null
+                GraphicsOptionState.aIntRange_3145 = null
                 Class348_Sub50.anInt7213 = 0
                 Class348_Sub3.aIntRange_6584 = null
                 Class289.anInt3699 = 0
@@ -87,7 +87,7 @@ class Class312 {
                 Class348_Sub49.method3379(2, 10)
                 for (i_2_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_2_] = true
                 method2145(-24498)
-                Class239_Sub4.aClass348_Sub26_5881 = null
+                LightingOptionState.aClass348_Sub26_5881 = null
                 FloatCameraTransform.aLong5745 = 0L
             }
         }

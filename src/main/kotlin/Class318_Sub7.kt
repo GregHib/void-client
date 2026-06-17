@@ -189,7 +189,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             if (Client.anInt5171 == Class348_Sub1_Sub1.anInt8808) {
                                 val class318_sub9_sub2_sub1 = (Class318_Sub9_Sub2_Sub1(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430)))
                             } else {
-                                val class318_sub9_sub2_sub1 = (Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103!![Class348_Sub1_Sub1.anInt8808])
+                                val class318_sub9_sub2_sub1 = (DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103!![Class348_Sub1_Sub1.anInt8808])
                                 Class348_Sub1_Sub1.anInt8808 = 0x3ff and 1 + Class348_Sub1_Sub1.anInt8808
                                 class318_sub9_sub2_sub1!!.method2523(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430))
                             }
@@ -326,14 +326,14 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                             i_8_ = -Class75.anInt1263 + `is`[2]
                         }
                         if (Class88.aBoolean1500 || i_7_ < 0 || Class75.anInt1259 <= i_7_ || i_8_ < 0 || Class75.anInt1267 <= i_8_) {
-                            if (Class239_Sub7.anInt5909 == -1 || Class339.anInt4202 == -1) {
+                            if (IdleAnimationsOptionState.anInt5909 == -1 || Class339.anInt4202 == -1) {
                                 Class75.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 123, 0x3fff and (Class75.aClass348_Sub42_Sub14_1243!!.anInt9640), (Class75.aClass348_Sub42_Sub14_1243!!.anInt9640) shr 14 and 0x3fff)
                                 Class245.anInt3170 = `is`[2] - Class75.anInt1263
                                 Class348_Sub36.anInt6992 = `is`[1] - Class75.anInt1266
                             } else {
-                                Class75.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 88, Class339.anInt4202, Class239_Sub7.anInt5909)
+                                Class75.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 88, Class339.anInt4202, IdleAnimationsOptionState.anInt5909)
                                 Class339.anInt4202 = -1
-                                Class239_Sub7.anInt5909 = Class339.anInt4202
+                                IdleAnimationsOptionState.anInt5909 = Class339.anInt4202
                                 if (`is` != null) {
                                     Class348_Sub36.anInt6992 = -Class75.anInt1266 + `is`[1]
                                     Class245.anInt3170 = -Class75.anInt1263 + `is`[2]

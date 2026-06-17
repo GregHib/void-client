@@ -54,7 +54,7 @@ class Class348_Sub44 internal constructor(@JvmField var anInt7098: Int, @JvmFiel
         fun method3306(i: Byte): Int {
             if (i >= -90) anInt7101 = -7
             anInt7097++
-            if (Class348_Sub49.Companion.anInt7207 == 1) return Class239_Sub16.anInt6008
+            if (Class348_Sub49.Companion.anInt7207 == 1) return ShadowQualityOptionState.anInt6008
             return LinkedNodeListIterator.anInt1651
         }
     }

@@ -1,7 +1,7 @@
 /* Class239_Sub11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub11 : Class239 {
+class BinaryGraphicsOptionState : GraphicsOptionState {
     fun method1768(i: Int): Int {
         if (i != -32350) method1767(true, -55)
         anInt5958++

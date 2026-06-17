@@ -1,7 +1,7 @@
 /* Class239_Sub9 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub9 : Class239 {
+class CustomCursorsOptionState : GraphicsOptionState {
     internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     override fun method1712(i: Int, i_0_: Int) {

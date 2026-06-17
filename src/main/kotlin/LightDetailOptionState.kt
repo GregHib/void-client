@@ -1,6 +1,6 @@
 import java.io.IOException
 
-class Class239_Sub18 : Class239 {
+class LightDetailOptionState : GraphicsOptionState {
     internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     override fun method1714(i: Int, i_1_: Int): Int {

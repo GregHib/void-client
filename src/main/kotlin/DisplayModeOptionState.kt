@@ -4,7 +4,7 @@ import kotlin.math.pow
 /* Class239_Sub25 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub25 : Class239 {
+class DisplayModeOptionState : GraphicsOptionState {
     private var aBoolean6110 = true
     @JvmField
     var aBoolean6113: Boolean = false

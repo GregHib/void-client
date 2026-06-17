@@ -35,12 +35,12 @@ class Class290 internal constructor(var aBoolean3709: Boolean) {
 
         @JvmStatic
         fun method2196(i: Byte) {
-            Class239_Sub19.anInt6043 = (Class367_Sub4.anInt7319.toDouble() * 34.46).toInt()
+            NoOpGraphicsOptionState.anInt6043 = (Class367_Sub4.anInt7319.toDouble() * 34.46).toInt()
             Class348_Sub33.anInt6964 = 200
             anInt3716++
             if (i.toInt() == -9) {
-                Class239_Sub19.anInt6043 = Class239_Sub19.anInt6043 shl 2
-                if (Class348_Sub8.aRenderer6654!!.method3670()) Class239_Sub19.anInt6043 += 512
+                NoOpGraphicsOptionState.anInt6043 = NoOpGraphicsOptionState.anInt6043 shl 2
+                if (Class348_Sub8.aRenderer6654!!.method3670()) NoOpGraphicsOptionState.anInt6043 += 512
                 method1626(1, false)
             }
         }

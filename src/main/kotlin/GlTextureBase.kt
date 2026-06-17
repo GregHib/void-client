@@ -357,7 +357,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, class304: Class304?, c
         fun method232(var_renderer: Renderer?, i: Byte, bool: Boolean, i_22_: Int): Class324? {
             if (i.toInt() != -53) method237(true)
             anInt5094++
-            val class352 = Class239_Sub3.method1734(i_22_, var_renderer, 55.toByte(), bool)
+            val class352 = ChatEffectsOptionState.method1734(i_22_, var_renderer, 55.toByte(), bool)
             if (class352 == null) return null
             return class352.aClass324_4332
         }

@@ -1,6 +1,6 @@
 import ParticleEmitterNode.Companion.method219
-import Class239_Sub26.Companion.method1837
-import Class239_Sub5.Companion.method1740
+import DetailLevelOptionState.Companion.method1837
+import SimpleToggleOptionState.Companion.method1740
 import Class246.Companion.method1885
 import Class246.Companion.method1887
 import Class348_Sub16_Sub2.Companion.method2832
@@ -977,7 +977,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 class64_sub2_154_.aClass290_5520!!.aBoolean3709 = true
             } else if (!ServerConnectionInfo.method1258(i, -9301, anInt5472)) class64_sub2_154_.aClass290_5520 = null
             else class64_sub2_154_.aClass290_5520 = aClass290_5520
-            if (Class239_Sub26.method1833((-122).toByte(), i, anInt5472)) {
+            if (DetailLevelOptionState.method1833((-122).toByte(), i, anInt5472)) {
                 if (class64_sub2_153_!!.aShortArray5486 != null && (anInt5478 <= class64_sub2_153_.aShortArray5486!!.size)) class64_sub2_154_.aShortArray5486 = class64_sub2_153_.aShortArray5486
                 else {
                     class64_sub2_153_.aShortArray5486 = ShortArray(anInt5478)

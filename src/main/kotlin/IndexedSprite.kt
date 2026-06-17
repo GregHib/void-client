@@ -86,8 +86,8 @@ class IndexedSprite : Sprite {
         fun method165(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Byte, i_13_: Int, i_14_: Int) {
             anInt5194++
             if (i_9_ < 512 || i_11_ < 512 || (-2 + Class367_Sub4.anInt7319) * 512 < i_9_ || (-2 + Class348_Sub40_Sub3.anInt9109) * 512 < i_11_) {
-                Class239_Sub21.anIntArray6062!![1] = -1
-                Class239_Sub21.anIntArray6062!![0] = Class239_Sub21.anIntArray6062!![1]
+                RemoveRoofsOptionState.anIntArray6062!![1] = -1
+                RemoveRoofsOptionState.anIntArray6062!![0] = RemoveRoofsOptionState.anIntArray6062!![1]
             } else if (i_12_ >= 22) {
                 val i_15_ = Class275.method2064(i_9_, i, 11219, i_11_) - i_7_
                 if (Class59_Sub1.aBoolean5300) LinkedNodeListIterator.method1010(false, true)
@@ -95,8 +95,8 @@ class IndexedSprite : Sprite {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(i_10_, 0, 0)
                     Class348_Sub8.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                 }
-                if (!Class305.aBoolean3870) Class348_Sub8.aRenderer6654!!.da(i_9_, i_15_, i_11_, Class239_Sub21.anIntArray6062)
-                else Class348_Sub8.aRenderer6654!!.HA(i_9_, i_15_, i_11_, LocalPlayerState.anInt1906, Class239_Sub21.anIntArray6062)
+                if (!Class305.aBoolean3870) Class348_Sub8.aRenderer6654!!.da(i_9_, i_15_, i_11_, RemoveRoofsOptionState.anIntArray6062)
+                else Class348_Sub8.aRenderer6654!!.HA(i_9_, i_15_, i_11_, LocalPlayerState.anInt1906, RemoveRoofsOptionState.anIntArray6062)
                 if (Class59_Sub1.aBoolean5300) Class285_Sub1.method2129(60.toByte())
                 else {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(-i_10_, 0, 0)

@@ -1,4 +1,4 @@
-import Class239_Sub14.Companion.method1781
+import WaterDetailOptionState.Companion.method1781
 import Class314_Sub1.Companion.method2348
 import InputStream_Sub1.Companion.method125
 import java.math.BigInteger
@@ -11,8 +11,8 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
         val i_1_ = this.y shr Class362.anInt4459
         val i_2_ = -103 / ((i - -14) / 61)
         var i_3_ = 0
-        if (Class239_Sub25.anInt6111 == i_0_) i_3_++
-        else if (Class239_Sub25.anInt6111 < i_0_) i_3_ += 2
+        if (DisplayModeOptionState.anInt6111 == i_0_) i_3_++
+        else if (DisplayModeOptionState.anInt6111 < i_0_) i_3_ += 2
         if (i_1_ == Class285_Sub2.anInt8502) i_3_ += 3
         else if (i_1_ < Class285_Sub2.anInt8502) i_3_ += 6
         val i_4_ = Class318_Sub9_Sub2.anIntArray8797!![i_3_]
@@ -46,7 +46,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
     override fun method2378(i: Int): Boolean {
         anInt8757++
         if (i != 0) method2378(-104)
-        return (Class99.aBooleanArrayArray1572!![(-Class239_Sub25.anInt6111 + (this.x shr Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + (this.y shr Class362.anInt4459))])
+        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + (this.y shr Class362.anInt4459))])
     }
 
     companion object {

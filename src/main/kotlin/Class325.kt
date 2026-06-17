@@ -1,5 +1,5 @@
 import ItemActionPacketSender.method1237
-import Class239_Sub8.Companion.method1753
+import FlickeringEffectsOptionState.Companion.method1753
 import Class286_Sub3.Companion.method2148
 import Class299.Companion.method2253
 import Class309.Companion.method2307
@@ -469,7 +469,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     Class93.anInt1534 = i_72_
                                     Class26.anInt385 = i_73_
                                     Class348.anInt4292 = 0
-                                    Class239_Sub20.anInt6048 = 1
+                                    FogOptionState.anInt6048 = 1
                                 }
                                 Class348_Sub42_Sub14.method3243(123, class348_sub47)
                                 Class298.method2252(true, i_74_, i_75_, (-120).toByte(), 1, 0, 1, -4, 0)
@@ -477,7 +477,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i_76_ == 4) {
                             Class93.anInt1534 = i_72_
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             Class26.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             CameraRotationStub.anInt321++
@@ -490,7 +490,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             method2307(i_75_, l, i_74_, 51)
                         }
                         if (i_76_ == 1008) {
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             Class26.anInt385 = i_73_
                             Class348.anInt4292 = 0
@@ -514,7 +514,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
                                 FloatGrid.anInt4979++
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 val class348_sub47 = (method2148(Class348_Sub42_Sub18.aClass351_9684, Class348_Sub23_Sub2.aClass77_9029, -126))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(81, i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 0 else 1))
@@ -525,7 +525,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 49) {
                             Class26.anInt385 = i_73_
                             Class348.anInt4292 = 0
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             CircleDrawer.anInt2689++
                             val class348_sub47 = method2148(Class344.aClass351_4262, (Class348_Sub23_Sub2.aClass77_9029), -107)
@@ -547,7 +547,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348.anInt4292 = 0
                             CharCountUtil.anInt226++
                             Class26.anInt385 = i_73_
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148(ModelLightingConfig.aClass351_2539, (Class348_Sub23_Sub2.aClass77_9029), -110)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY + i_75_)
@@ -563,7 +563,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348.anInt4292 = 0
                                 LocTypeDefLoader.anInt2499++
                                 Class26.anInt385 = i_73_
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 val class348_sub47 = (method2148(Class318_Sub1_Sub5_Sub1.aClass351_10134, Class348_Sub23_Sub2.aClass77_9029, -96))
@@ -579,9 +579,9 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348.anInt4292 = 0
                                 WidgetComponentNode.anInt4657++
                                 Class93.anInt1534 = i_72_
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class26.anInt385 = i_73_
-                                val class348_sub47 = method2148((Class239_Sub9.aClass351_5929), (Class348_Sub23_Sub2.aClass77_9029), -94)
+                                val class348_sub47 = method2148((CustomCursorsOptionState.aClass351_5929), (Class348_Sub23_Sub2.aClass77_9029), -94)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-108).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -124)) 1 else 0))
                                 Class348_Sub42_Sub14.method3243(119, class348_sub47)
@@ -593,7 +593,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             Class348.anInt4292 = 0
                             ScriptOpcodeHolder.anInt2336++
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             val class348_sub47 = method2148((MatrixCameraTransform.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(86.toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -121)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(31, (l ushr 32).toInt() and 0x7fffffff)
@@ -609,7 +609,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
                                 val npc = (class348_sub22.aNpc_6859)!!
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class348_Sub7.anInt6646++
                                 val class348_sub47 = method2148((ParserSpecialCharsHolder.aClass351_1904), (Class348_Sub23_Sub2.aClass77_9029), -119)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
@@ -628,7 +628,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class26.anInt385 = i_73_
                                 Class55.anInt994++
                                 Class348.anInt4292 = 0
-                                Class239_Sub20.anInt6048 = 1
+                                FogOptionState.anInt6048 = 1
                                 val class348_sub47 = method2148((RenderableGroup.aClass351_5015), (Class348_Sub23_Sub2.aClass77_9029), -123)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(101, ArbVertexProgram.regionTileX + i_74_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY - -i_75_)
@@ -638,7 +638,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 1001) {
                             Class93.anInt1534 = i_72_
                             Class35.anInt484++
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             Class348.anInt4292 = 0
                             Class26.anInt385 = i_73_
                             val class348_sub47 = method2148(CircleDrawer.aClass351_2691, (Class348_Sub23_Sub2.aClass77_9029), -115)
@@ -649,7 +649,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 Class26.anInt385 = i_73_
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 NativeLibraryUnloader.anInt2975++
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
@@ -669,7 +669,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 AbstractCameraTransform.anInt1596++
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class26.anInt385 = i_73_
                                 val class348_sub47 = method2148((Class299_Sub1_Sub2.aClass351_8706), (Class348_Sub23_Sub2.aClass77_9029), -84)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-125).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 1 else 0))
@@ -679,7 +679,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 1007) {
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             Class318_Sub1_Sub5_Sub2.anInt10164++
                             Class26.anInt385 = i_73_
                             Class348.anInt4292 = 0
@@ -695,7 +695,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 23) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class318_Sub1_Sub4_Sub1.anInt10073++
                                 Class348.anInt4292 = 0
                                 Class26.anInt385 = i_73_
@@ -717,7 +717,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (player != null) {
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class296.anInt3768++
                                 Class348.anInt4292 = 0
                                 val class348_sub47 = method2148((Class251.aClass351_3232), (Class348_Sub23_Sub2.aClass77_9029), -84)
@@ -729,9 +729,9 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i_76_ == 21) {
                             Class93.anInt1534 = i_72_
-                            Class239_Sub8.anInt5919++
+                            FlickeringEffectsOptionState.anInt5919++
                             Class348.anInt4292 = 0
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             Class26.anInt385 = i_73_
                             val class348_sub47 = method2148(NativeRenderNode.aClass351_10477, (Class348_Sub23_Sub2.aClass77_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
@@ -742,7 +742,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)
                         }
                         if (i_76_ == 15) {
-                            Class239_Sub20.anInt6048 = 1
+                            FogOptionState.anInt6048 = 1
                             Class26.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             Class93.anInt1534 = i_72_
@@ -764,7 +764,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class26.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 val class348_sub47 = (method2148(RuntimeException_Sub1.aClass351_4601, Class348_Sub23_Sub2.aClass77_9029, -123))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-67).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -122)) 1 else 0))
@@ -774,7 +774,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i_76_ == 2) {
                             Class348.anInt4292 = 0
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             NativeRenderNode.anInt10476++
                             Class26.anInt385 = i_73_
                             Class93.anInt1534 = i_72_
@@ -795,7 +795,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class98.anInt1570++
                                 val class348_sub47 = method2148((SizeBoundedSoftCache.aClass351_2315), (Class348_Sub23_Sub2.aClass77_9029), -90)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -121)) 0 else 1))
@@ -807,7 +807,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 17) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class93.anInt1534 = i_72_
                                 Gl3dTexture.anInt8625++
                                 Class26.anInt385 = i_73_
@@ -821,7 +821,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i_76_ == 47) {
                             Class26.anInt385 = i_73_
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             Class348.anInt4292 = 0
                             Class316.anInt3966++
                             Class93.anInt1534 = i_72_
@@ -837,7 +837,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             HeadIconRenderer.anInt2065++
                             Class26.anInt385 = i_73_
                             Class348.anInt4292 = 0
-                            Class239_Sub20.anInt6048 = 2
+                            FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub42_Sub17.aClass351_9679), (Class348_Sub23_Sub2.aClass77_9029), -98)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-83).toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -128)) 0 else 1))
@@ -850,7 +850,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 20) {
                             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class26.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
@@ -865,7 +865,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i > 97) {
                             if (i_76_ == 1010) {
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class348_Sub42_Sub18.anInt9686++
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
@@ -875,7 +875,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348_Sub42_Sub14.method3243(125, class348_sub47)
                             }
                             if (i_76_ == 22) {
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
@@ -890,7 +890,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                             if (i_76_ == 50) {
                                 Class26.anInt385 = i_73_
-                                Class239_Sub20.anInt6048 = 2
+                                FogOptionState.anInt6048 = 2
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 NativeLibraryUnloader.anInt2975++
@@ -918,7 +918,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 if (i_76_ == 25) {
                                     val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                                     if (class348_sub22 != null) {
-                                        Class239_Sub20.anInt6048 = 2
+                                        FogOptionState.anInt6048 = 2
                                         Class93.anInt1534 = i_72_
                                         Class299_Sub1_Sub2.anInt8702++
                                         val npc = (class348_sub22.aNpc_6859)!!
@@ -934,7 +934,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 if (i_76_ == 57) {
                                     val player = (Class294.aPlayerArray5058!![i_77_])
                                     if (player != null) {
-                                        Class239_Sub20.anInt6048 = 2
+                                        FogOptionState.anInt6048 = 2
                                         Class93.anInt1534 = i_72_
                                         Class369_Sub2.anInt8588++
                                         Class348.anInt4292 = 0
@@ -950,7 +950,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     Class318_Sub1_Sub3_Sub4.anInt10364++
                                     Class26.anInt385 = i_73_
                                     Class348.anInt4292 = 0
-                                    Class239_Sub20.anInt6048 = 2
+                                    FogOptionState.anInt6048 = 2
                                     Class93.anInt1534 = i_72_
                                     val class348_sub47 = (method2148(Class252.aClass351_3237, Class348_Sub23_Sub2.aClass77_9029, -125))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-96, Class90.regionTileY + i_75_)
@@ -967,7 +967,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         Class93.anInt1534 = i_72_
                                         Class348.anInt4292 = 0
                                         Class26.anInt385 = i_73_
-                                        Class239_Sub20.anInt6048 = 2
+                                        FogOptionState.anInt6048 = 2
                                         Class73.anInt4773++
                                         val class348_sub47 = (method2148(Class43.aClass351_618, Class348_Sub23_Sub2.aClass77_9029, -117))
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
@@ -977,7 +977,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     }
                                 }
                                 if (i_76_ == 10) {
-                                    Class239_Sub20.anInt6048 = 2
+                                    FogOptionState.anInt6048 = 2
                                     Class26.anInt385 = i_73_
                                     Class348.anInt4292 = 0
                                     Class300.anInt3820++

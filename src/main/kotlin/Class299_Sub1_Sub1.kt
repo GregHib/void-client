@@ -43,7 +43,7 @@ class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: OpenGlR
         fun method2260(i: Int, i_4_: Int, l: Long, i_5_: Int, bool: Boolean, class45: Class45?, i_6_: Byte, i_7_: Int) {
             do {
                 try {
-                    Class239_Sub14.anInt5994 = 10000
+                    WaterDetailOptionState.anInt5994 = 10000
                     ModelDefinition.aClass45_1848 = class45
                     Class58.anInt1059 = i_7_
                     Class318_Sub1_Sub4_Sub1.anInt10074 = i
@@ -51,7 +51,7 @@ class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: OpenGlR
                     Class285.aClass348_Sub16_Sub3_4743 = null
                     Class318.anInt3971 = i_4_
                     anInt8687++
-                    Class239_Sub12.aLong5971 = l
+                    BloomGraphicsOptionState.aLong5971 = l
                     Class348_Sub43.anInt7068 = 1
                     Class348_Sub40_Sub35.anInt9444 = i_5_
                     if (i_6_ >= 54) break

@@ -160,7 +160,7 @@ class Class348_Sub9 : Class348() {
                 for (i_6_ in i_3_..i_4_) {
                     if ((class318_sub1.aByte6376 < MapAreaDefinition.anInt2524) && i_5_ >= Class37.anInt492 && i_5_ < Class27.anInt387 && i_6_ >= Class348_Sub34.anInt6974 && i_6_ < Class59_Sub1.anInt5293) {
                         if ((`is` != null && class318_sub1.plane >= i && (`is`[class318_sub1.plane.toInt()]!![i_5_]!![i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((-79).toByte())) {
-                            if (!bool && i_5_ >= Class239_Sub25.anInt6111 - 16 && i_5_ <= Class239_Sub25.anInt6111 + 16 && i_6_ >= Class285_Sub2.anInt8502 - 16 && i_6_ <= Class285_Sub2.anInt8502 + 16) {
+                            if (!bool && i_5_ >= DisplayModeOptionState.anInt6111 - 16 && i_5_ <= DisplayModeOptionState.anInt6111 + 16 && i_6_ >= Class285_Sub2.anInt8502 - 16 && i_6_ <= Class285_Sub2.anInt8502 + 16) {
                                 if (Class348_Sub40_Sub5.aBoolean9121) {
                                     Class319.aClass315Array3982!![NpcSummaryDefinition.anInt1949++]!!.method2361(-15481, class318_sub1)
                                     NpcSummaryDefinition.anInt1949 %= Class75_Sub1.anInt5652

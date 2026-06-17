@@ -1,4 +1,4 @@
-class Class239_Sub14 : Class239 {
+class WaterDetailOptionState : GraphicsOptionState {
     fun method1778(i: Int): Int {
         if (i != -32350) aModelLightingConfig_5990 = null
         anInt5984++
@@ -69,7 +69,7 @@ class Class239_Sub14 : Class239 {
             Class262.aModelLightingConfigArrayArray3335 = null
             Class60.aRenderer1098 = null
             if (i <= 89) anInt5994 = -75
-            Class239_Sub24.aClass299_6098 = null
+            SceneryDetailOptionState.aClass299_6098 = null
             HeapInfoRecord.aClass299_4938 = null
             Class348_Sub42_Sub10.aClass299_9571 = null
         }

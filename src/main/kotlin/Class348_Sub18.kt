@@ -1,7 +1,7 @@
 import ClientLoadStateMachine.method1277
 import PerlinTextureProvider.Companion.method1402
 import SocketGameConnection.Companion.method1707
-import Class239_Sub25.Companion.method1828
+import DisplayModeOptionState.Companion.method1828
 import Class24.method297
 import Class264.Companion.method2017
 import Class316.Companion.method2368
@@ -87,7 +87,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             Class30.aClass84_413!!.method822((-120).toByte())
             HoverActionEntry.aClass25_1813!!.method300((-123).toByte())
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1393((-13).toByte())
-            Class239.aItemDefinitionLoader_3147!!.method1290(-8)
+            GraphicsOptionState.aItemDefinitionLoader_3147!!.method1290(-8)
             SpriteLoadValidator.aClass65_4787!!.method695(true)
             Class73.aModelDefinitionCache_4782!!.method1602(0)
             method3573(-15326)
@@ -126,7 +126,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class348_Sub23_Sub2.aClass45_9033!!.method412(89.toByte())
                 CameraNodeList.aClass45_1743!!.method412((-125).toByte())
                 SoftwareSpriteRaster.aClass45_1627!!.method412((-117).toByte())
-                Class239_Sub4.aClass45_5878!!.method412(29.toByte())
+                LightingOptionState.aClass45_5878!!.method412(29.toByte())
                 HoverActionEntry.aClass45_1815!!.method412(80.toByte())
                 Class94.aClass45_1538!!.method412(34.toByte())
                 Class247.aClass45_3183!!.method412((-116).toByte())
@@ -139,7 +139,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 ModelBatchBase.aClass45_1897!!.method412((-114).toByte())
                 Class82.aClass45_1434!!.method412((-117).toByte())
                 Class348_Sub11.Companion.aClass45_4770!!.method412(78.toByte())
-                Class239.aClass45_3146!!.method412(88.toByte())
+                GraphicsOptionState.aClass45_3146!!.method412(88.toByte())
                 Class367_Sub8.aClass45_7362!!.method412((-109).toByte())
                 Class262.aClass45_3323!!.method412(112.toByte())
                 Crc64Hashable.aClass45_4984!!.method412(85.toByte())

@@ -77,7 +77,7 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
             Class348_Sub42_Sub17.method3270(120.toByte())
             if (class46 != null) method1913(!bool, i_2_ + -104, class46)
             if (!bool) method703(i)
-            if (!bool && RenderNode.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), RenderNode.anInt9721, 1)
+            if (!bool && RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 1)
             return class348_sub41
         }
 
@@ -104,7 +104,7 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
                         val i_12_ = (Class350.method3452(i_11_ + Class286.anInt3682, (-15).toByte(), Class250.anInt3225) * Class31.anInt425)
                         var i_13_ = i_7_
                         while (i_8_ >= i_13_) {
-                            val i_14_ = (i_12_ + Class350.method3452((Class239_Sub24.anInt6095 + i_13_), (-15).toByte(), Class31.anInt425))
+                            val i_14_ = (i_12_ + Class350.method3452((SceneryDetailOptionState.anInt6095 + i_13_), (-15).toByte(), Class31.anInt425))
                             LocalPlayerState.anIntArray1909!![i_14_] = Class318_Sub1_Sub1_Sub2.anInt9997
                             i_13_++
                         }

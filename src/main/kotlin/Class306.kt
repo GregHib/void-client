@@ -1,4 +1,4 @@
-import Class239_Sub6.Companion.method1745
+import BrightnessOptionState.Companion.method1745
 import Class286_Sub3.Companion.method2148
 import java.awt.Canvas
 

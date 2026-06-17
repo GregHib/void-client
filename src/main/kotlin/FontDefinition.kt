@@ -363,7 +363,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             for (i_55_ in 0..255) {
                 if (i_55_ != 32 && i_55_ != 160) {
                     for (i_56_ in 0..255) {
-                        if (i_56_ != 32 && i_56_ != 160) aByteArrayArray1979!![i_55_]!![i_56_] = (Class239_Sub8.method1756(aByteArray1986, -34, i_56_, i_55_, is_47_, is_51_, is_44_, is_43_)).toByte()
+                        if (i_56_ != 32 && i_56_ != 160) aByteArrayArray1979!![i_55_]!![i_56_] = (FlickeringEffectsOptionState.method1756(aByteArray1986, -34, i_56_, i_55_, is_47_, is_51_, is_44_, is_43_)).toByte()
                     }
                 }
             }

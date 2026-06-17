@@ -414,7 +414,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         this.aClass64Array10323[2] = null
         this.aClass64Array10323[i] = this.aClass64Array10323[2]
         this.aClass64Array10323[0] = this.aClass64Array10323[i]
-        this.anInt10301 = Class239_Sub15.anInt6006
+        this.anInt10301 = TextureQualityOptionState.anInt6006
         return class318_sub4
     }
 
@@ -423,8 +423,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         var string: String? = ""
         if (Class367_Sub9.aStringArray7378 != null) string += Class367_Sub9.aStringArray7378!![aByte10552.toInt()]
         val `is`: IntArray?
-        if (aByte10538.toInt() != 1 || Class239_Sub17.anIntArray6021 == null) `is` = RuntimeException_Sub1.anIntArray4603
-        else `is` = Class239_Sub17.anIntArray6021
+        if (aByte10538.toInt() != 1 || ParticleDetailOptionState.anIntArray6021 == null) `is` = RuntimeException_Sub1.anIntArray4603
+        else `is` = ParticleDetailOptionState.anIntArray6021
         if (i != 255) anInt10567 = 81
         if (`is` != null && `is`[aByte10552.toInt()] != -1) {
             val class117 = Class348_Sub7.aClass33_6653!!.method337(true, `is`[aByte10552.toInt()])

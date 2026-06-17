@@ -40,7 +40,7 @@ class Class348_Sub40_Sub35 : Class348_Sub40(1, true) {
             var i_9_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_9_) {
                 val i_10_ = i_5_ * (is_8_[i_9_] - is_6_[i_9_]) shr 12
-                val i_11_ = (i_5_ * (-is_7_[Class239_Sub22.anInt6076 and i_9_ - -1] + is_7_[-1 + i_9_ and Class239_Sub22.anInt6076]) shr 12)
+                val i_11_ = (i_5_ * (-is_7_[SimpleBinaryOptionState.anInt6076 and i_9_ - -1] + is_7_[-1 + i_9_ and SimpleBinaryOptionState.anInt6076]) shr 12)
                 var i_12_ = i_11_ shr 4
                 var i_13_ = i_10_ shr 4
                 if (i_12_ < 0) i_12_ = -i_12_

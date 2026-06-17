@@ -27,9 +27,9 @@ class FloatCameraTransform : AbstractCameraTransform() {
     override fun method902(i: Int) {
         this.aFloat5716 = 1.0f
         anInt5712++
-        this.aFloat5722 = Class239_Sub4.aFloatArray5876!![0x3fff and i]
+        this.aFloat5722 = LightingOptionState.aFloatArray5876!![0x3fff and i]
         this.aFloat5711 = this.aFloat5722
-        this.aFloat5708 = Class239_Sub4.aFloatArray5874!![i and 0x3fff]
+        this.aFloat5708 = LightingOptionState.aFloatArray5874!![i and 0x3fff]
         this.aFloat5700 = -this.aFloat5708
         this.aFloat5724 = 0.0f
         this.aFloat5691 = this.aFloat5724
@@ -105,12 +105,12 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
     override fun method903(i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
         anInt5733++
-        val f = Class239_Sub4.aFloatArray5876!![i_6_ and 0x3fff]
-        val f_9_ = Class239_Sub4.aFloatArray5874!![i_6_ and 0x3fff]
-        val f_10_ = Class239_Sub4.aFloatArray5876!![0x3fff and i_7_]
-        val f_11_ = Class239_Sub4.aFloatArray5874!![0x3fff and i_7_]
-        val f_12_ = Class239_Sub4.aFloatArray5876!![0x3fff and i_8_]
-        val f_13_ = Class239_Sub4.aFloatArray5874!![i_8_ and 0x3fff]
+        val f = LightingOptionState.aFloatArray5876!![i_6_ and 0x3fff]
+        val f_9_ = LightingOptionState.aFloatArray5874!![i_6_ and 0x3fff]
+        val f_10_ = LightingOptionState.aFloatArray5876!![0x3fff and i_7_]
+        val f_11_ = LightingOptionState.aFloatArray5874!![0x3fff and i_7_]
+        val f_12_ = LightingOptionState.aFloatArray5876!![0x3fff and i_8_]
+        val f_13_ = LightingOptionState.aFloatArray5874!![i_8_ and 0x3fff]
         val f_14_ = f_12_ * f_9_
         val f_15_ = f_9_ * f_13_
         this.aFloat5700 = f_13_ * f
@@ -130,9 +130,9 @@ class FloatCameraTransform : AbstractCameraTransform() {
     override fun method895(i: Int) {
         this.aFloat5722 = 1.0f
         anInt5738++
-        this.aFloat5716 = Class239_Sub4.aFloatArray5876!![0x3fff and i]
+        this.aFloat5716 = LightingOptionState.aFloatArray5876!![0x3fff and i]
         this.aFloat5711 = this.aFloat5716
-        this.aFloat5704 = Class239_Sub4.aFloatArray5874!![i and 0x3fff]
+        this.aFloat5704 = LightingOptionState.aFloatArray5874!![i and 0x3fff]
         this.aFloat5736 = -this.aFloat5704
         this.aFloat5724 = 0.0f
         this.aFloat5691 = this.aFloat5724
@@ -146,9 +146,9 @@ class FloatCameraTransform : AbstractCameraTransform() {
     override fun method899(i: Int) {
         this.aFloat5711 = 1.0f
         anInt5721++
-        this.aFloat5716 = Class239_Sub4.aFloatArray5876!![0x3fff and i]
+        this.aFloat5716 = LightingOptionState.aFloatArray5876!![0x3fff and i]
         this.aFloat5722 = this.aFloat5716
-        this.aFloat5691 = Class239_Sub4.aFloatArray5874!![0x3fff and i]
+        this.aFloat5691 = LightingOptionState.aFloatArray5874!![0x3fff and i]
         this.aFloat5724 = 0.0f
         this.aFloat5736 = this.aFloat5724
         this.aFloat5710 = this.aFloat5736
@@ -274,8 +274,8 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
     override fun method900(i: Int) {
         anInt5734++
-        val f = Class239_Sub4.aFloatArray5876!![0x3fff and i]
-        val f_39_ = Class239_Sub4.aFloatArray5874!![0x3fff and i]
+        val f = LightingOptionState.aFloatArray5876!![0x3fff and i]
+        val f_39_ = LightingOptionState.aFloatArray5874!![0x3fff and i]
         val f_40_ = this.aFloat5708
         val f_41_ = this.aFloat5722
         val f_42_ = this.aFloat5732
@@ -418,8 +418,8 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
     override fun method908(i: Int) {
         anInt5702++
-        val f = Class239_Sub4.aFloatArray5876!![i and 0x3fff]
-        val f_57_ = Class239_Sub4.aFloatArray5874!![i and 0x3fff]
+        val f = LightingOptionState.aFloatArray5876!![i and 0x3fff]
+        val f_57_ = LightingOptionState.aFloatArray5874!![i and 0x3fff]
         val f_58_ = this.aFloat5711
         val f_59_ = this.aFloat5700
         val f_60_ = this.aFloat5704
@@ -499,8 +499,8 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
     override fun method896(i: Int) {
         anInt5725++
-        val f = Class239_Sub4.aFloatArray5876!![i and 0x3fff]
-        val f_69_ = Class239_Sub4.aFloatArray5874!![i and 0x3fff]
+        val f = LightingOptionState.aFloatArray5876!![i and 0x3fff]
+        val f_69_ = LightingOptionState.aFloatArray5874!![i and 0x3fff]
         val f_70_ = this.aFloat5711
         val f_71_ = this.aFloat5700
         val f_72_ = this.aFloat5704
@@ -601,8 +601,8 @@ class FloatCameraTransform : AbstractCameraTransform() {
             this.aFloat5722 = (2 * i_88_).toFloat()
             this.aFloat5724 = f_89_
         } else {
-            val f_92_ = Class239_Sub4.aFloatArray5876!![i and 0x3fff]
-            val f_93_ = Class239_Sub4.aFloatArray5874!![0x3fff and i]
+            val f_92_ = LightingOptionState.aFloatArray5876!![i and 0x3fff]
+            val f_93_ = LightingOptionState.aFloatArray5874!![0x3fff and i]
             this.aFloat5711 = 2.0f * f_92_ * i_91_.toFloat()
             this.aFloat5710 = (-0.5f * f_93_ - f_92_ * 0.5f) * (2 * i_88_).toFloat() + f_90_
             this.aFloat5722 = i_88_.toFloat() * (f_92_ * 2.0f)

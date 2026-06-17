@@ -99,7 +99,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         @JvmStatic
         fun method1157(i: Int, i_7_: Byte) {
             if (i_7_ < -77) {
-                Class239_Sub12.anInt5969 = 2
+                BloomGraphicsOptionState.anInt5969 = 2
                 anInt4834++
                 RuntimeException_Sub1.anInt4596 = i
                 var l = 0L

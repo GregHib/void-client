@@ -14,7 +14,7 @@ class Class348_Sub40_Sub21 : Class348_Sub40(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (i_0_ != 255) method3108(-114, -119, -89)
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_1_ = -2048 + Class239_Sub18.anIntArray6035!![i]
+            val i_1_ = -2048 + LightDetailOptionState.anIntArray6035!![i]
             var i_2_ = 0
             while ((i_2_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
                 val i_3_ = -2048 + Class318_Sub6.anIntArray6432!![i_2_]

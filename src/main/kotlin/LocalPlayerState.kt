@@ -31,7 +31,7 @@ object LocalPlayerState {
             if (!Class318_Sub1_Sub3_Sub3.aBoolean10238 && (Class64_Sub3.aString5600 == "" || TextureGenerator.aString2496 == "")) GlRectangleTexture.method254(3, (-100).toByte())
             else {
                 val i_1_ = 34 % ((16 - i) / 55)
-                if (Class239_Sub12.anInt5969 != 1) {
+                if (BloomGraphicsOptionState.anInt5969 != 1) {
                     Class63.anInt1121 = 0
                     Class348_Sub42_Sub7.anInt9541 = -1
                 }

@@ -466,9 +466,9 @@ public abstract class Class64 {
             var `is` = ShortArray(16)
             var i_52_ = i
             val i_53_ = if (bool) 32768 else 0
-            val i_54_ = ((if (!bool) Class239_Sub6.aClass355_5900!!.anInt4365 else Class239_Sub6.aClass355_5900!!.anInt4364) + i_53_)
+            val i_54_ = ((if (!bool) BrightnessOptionState.aClass355_5900!!.anInt4365 else BrightnessOptionState.aClass355_5900!!.anInt4364) + i_53_)
             for (i_55_ in i_53_..<i_54_) {
-                val class348_sub42_sub10 = Class239_Sub6.aClass355_5900!!.method3471(i_55_, (-102).toByte())
+                val class348_sub42_sub10 = BrightnessOptionState.aClass355_5900!!.method3471(i_55_, (-102).toByte())
                 if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase(Locale.getDefault()).indexOf(string) != -1) {
                     if (i_52_ >= 50) {
                         AsyncTaskHandle.aShortArray2579 = null
@@ -493,7 +493,7 @@ public abstract class Class64 {
             val strings = arrayOfNulls<String>(Class76.anInt1285)
             var i_58_ = 0
             while (Class76.anInt1285 > i_58_) {
-                strings[i_58_] = Class239_Sub6.aClass355_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(Class348_Sub21.method2955(i, 81))
+                strings[i_58_] = BrightnessOptionState.aClass355_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(Class348_Sub21.method2955(i, 81))
                 i_58_++
             }
             SpotAnimVector.method1333(AsyncTaskHandle.aShortArray2579, i + 26073, strings)

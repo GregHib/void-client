@@ -1,5 +1,5 @@
-import Class239_Sub3.Companion.method1731
-import Class239_Sub6.Companion.method1745
+import ChatEffectsOptionState.Companion.method1731
+import BrightnessOptionState.Companion.method1745
 import Class286_Sub2.Companion.method2146
 import Class286_Sub3.Companion.method2148
 import Class318_Sub1_Sub5.Companion.method2485

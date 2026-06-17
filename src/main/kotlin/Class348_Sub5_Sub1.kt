@@ -162,7 +162,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
             glUseProgramObjectARB(l_7_)
             glUniform1iARB(glGetUniformLocationARB(l_7_, "sceneTex"), 0)
             glUniform1iARB(glGetUniformLocationARB(l_7_, "bloomTex"), 1)
-            glUniform3fARB(glGetUniformLocationARB(l_7_, "params"), Class348_Sub40_Sub13.aFloat9204, Class239_Sub26.aFloat6120, 0.0f)
+            glUniform3fARB(glGetUniformLocationARB(l_7_, "params"), Class348_Sub40_Sub13.aFloat9204, DetailLevelOptionState.aFloat6120, 0.0f)
             this.aHa_Sub2_6618.method3738(-15039, 1)
             this.aHa_Sub2_6618.method3771((-99).toByte(), aClass258_Sub3_8835)
             this.aHa_Sub2_6618.method3738(-15039, 0)

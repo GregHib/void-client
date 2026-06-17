@@ -1,7 +1,7 @@
 /* Class239_Sub27 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub27 : Class239 {
+class DefaultGraphicsOptionState : GraphicsOptionState {
     fun method1840(i: Int): Int {
         anInt6127++
         if (i != -32350) aClass341_6128 = null

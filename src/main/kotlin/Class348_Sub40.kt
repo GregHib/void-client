@@ -1,4 +1,4 @@
-import Class239_Sub8.Companion.method1750
+import FlickeringEffectsOptionState.Companion.method1750
 import Class318_Sub1_Sub3_Sub3.Companion.method2420
 import Class367_Sub1.Companion.method3535
 

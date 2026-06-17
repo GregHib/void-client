@@ -1,5 +1,5 @@
 import LocTypeDefLoader.Companion.method1406
-import Class239_Sub14.Companion.method1779
+import WaterDetailOptionState.Companion.method1779
 import Class251.Companion.method1916
 import Class274.Companion.method2061
 import Class299_Sub2.Companion.method2269

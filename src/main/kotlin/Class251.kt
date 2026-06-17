@@ -1,4 +1,4 @@
-import Class239_Sub3.Companion.method1728
+import ChatEffectsOptionState.Companion.method1728
 
 /* Class251 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

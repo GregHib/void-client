@@ -117,7 +117,7 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
 
     fun method3069(i: Int, `is`: IntArray, i_8_: Byte) {
         anInt9161++
-        val i_9_ = (Class239_Sub18.anIntArray6035!![i] * this.anInt9164)
+        val i_9_ = (LightDetailOptionState.anIntArray6035!![i] * this.anInt9164)
         if (i_8_ > 91) {
             if (this.anInt9150 == 1) {
                 val i_39_ = aShortArray9162[0].toInt() shl 12

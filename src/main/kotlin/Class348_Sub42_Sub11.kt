@@ -121,8 +121,8 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
         fun method3225(i: Int) {
             anInt9589++
             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) == 2) {
-                val i_5_ = (0xff and -4 + Class239_Sub15.anInt6006).toByte()
-                val i_6_ = Class239_Sub15.anInt6006 % Class367_Sub4.anInt7319
+                val i_5_ = (0xff and -4 + TextureQualityOptionState.anInt6006).toByte()
+                val i_6_ = TextureQualityOptionState.anInt6006 % Class367_Sub4.anInt7319
                 for (i_7_ in 0..3) {
                     var i_8_ = 0
                     while (Class348_Sub40_Sub3.anInt9109 > i_8_) {

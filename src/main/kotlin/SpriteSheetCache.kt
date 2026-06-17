@@ -113,8 +113,8 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
                         Class348_Sub1_Sub1.aClass60_8807!!.method582(abstractModelRenderer, i_9_.toLong(), (-115).toByte())
                     }
                     method165(class318_sub1_sub3_sub3_8_!!.plane.toInt(), i_5_, 0, i_3_ shr 1, class318_sub1_sub3_sub3_8_.x, class318_sub1_sub3_sub3_8_.method2436(126.toByte()) * 256, class318_sub1_sub3_sub3_8_.y, 92.toByte(), i_6_ shr 1, i_2_)
-                    var i_10_ = i_7_ + (Class239_Sub21.anIntArray6062!![0] + -18)
-                    var i_11_ = -54 + (Class239_Sub21.anIntArray6062!![1] + i_4_) - 16
+                    var i_10_ = i_7_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -18)
+                    var i_11_ = -54 + (RemoveRoofsOptionState.anIntArray6062!![1] + i_4_) - 16
                     i_10_ += i / 4 * 18
                     i_11_ += 18 * (i % 4)
                     val i_12_ = -76 / ((i_1_ - 3) / 38)

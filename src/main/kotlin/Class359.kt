@@ -29,7 +29,7 @@ class Class359 {
                 else ScriptCompilerThread.aSpriteImage_1727 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, Class295.anInt3762)
             }
             if (Class281.aFontDefinition_3649 == null) {
-                if (SoftwareSpriteRaster.aClass45_1627!!.method421(false, ConnectionStateRefs.anInt317)) Class281.aFontDefinition_3649 = Class239_Sub10.method1766((-89).toByte(), ConnectionStateRefs.anInt317, SoftwareSpriteRaster.aClass45_1627!!)
+                if (SoftwareSpriteRaster.aClass45_1627!!.method421(false, ConnectionStateRefs.anInt317)) Class281.aFontDefinition_3649 = RangedGraphicsOptionState.method1766((-89).toByte(), ConnectionStateRefs.anInt317, SoftwareSpriteRaster.aClass45_1627!!)
                 else bool_0_ = false
             }
             if (Class5_Sub1_Sub1.aSpriteImageArray9929 == null) {

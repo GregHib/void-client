@@ -1,7 +1,7 @@
 /* Class239_Sub13 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub13 : Class239 {
+class GroundDecorOptionState : GraphicsOptionState {
     fun method1776(i: Int): Int {
         if (i != -32350) anInt5980 = 42
         anInt5978++

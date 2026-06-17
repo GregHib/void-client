@@ -11,7 +11,7 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
         val i_0_: Int = Class348_Sub40_Sub6.Companion.anInt9139
         val i_1_ = Class286_Sub2.anInt6212
         NpcAppearanceFlags.method224((-40).toByte(), `is`)
-        Class348_Sub27.method3000(Class239_Sub22.anInt6076, 0, Class299_Sub2.anInt6325, 0, i.toInt() xor 0x28)
+        Class348_Sub27.method3000(SimpleBinaryOptionState.anInt6076, 0, Class299_Sub2.anInt6325, 0, i.toInt() xor 0x28)
         if (aClass50Array9481 != null) {
             var i_2_ = 0
             while (aClass50Array9481!!.size > i_2_) {

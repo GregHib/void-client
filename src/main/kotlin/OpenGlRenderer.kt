@@ -1287,7 +1287,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         Class348_Sub40_Sub13.aFloat9204 = f_139_
         Class75_Sub1.aFloat5654 = f
         anInt7685++
-        Class239_Sub26.aFloat6120 = f_138_
+        DetailLevelOptionState.aFloat6120 = f_138_
     }
 
     override fun method3701(canvas: Canvas?) {
@@ -3564,20 +3564,20 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         }
                     }
                 }
-                if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == Class239_Sub15.anInt6006) || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub1_sub3_sub3.plane))) {
+                if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == TextureQualityOptionState.anInt6006) || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub1_sub3_sub3.plane))) {
                     Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, 100.toByte())
-                    if (Class239_Sub21.anIntArray6062!![0] >= 0) {
+                    if (RemoveRoofsOptionState.anIntArray6062!![0] >= 0) {
                         if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (Class348_Sub11.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < Class309.anInt4814) {
                             Class309.anIntArray4819!![Class88.anInt1497] = ((Class369.aFontDefinition_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
-                            Class309.anIntArray4822!![Class88.anInt1497] = Class239_Sub21.anIntArray6062!![0]
-                            Class309.anIntArray4813!![Class88.anInt1497] = Class239_Sub21.anIntArray6062!![1]
+                            Class309.anIntArray4822!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![0]
+                            Class309.anIntArray4813!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![1]
                             Class309.anIntArray4817!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10201
                             Class309.anIntArray4806!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10234
                             Class309.anIntArray4812!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10264
                             Class309.aStringArray4818!![Class88.anInt1497] = class318_sub1_sub3_sub3.aString10292
                             Class88.anInt1497++
                         }
-                        var i_323_ = Class239_Sub21.anIntArray6062!![1] + i
+                        var i_323_ = RemoveRoofsOptionState.anIntArray6062!![1] + i
                         if (!(class318_sub1_sub3_sub3.aBoolean10309) && (Class367_Sub11.anInt7396 < class318_sub1_sub3_sub3.anInt10223)) {
                             var i_324_ = -1
                             var i_325_ = 1
@@ -3610,7 +3610,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             val class105 = class105s[0]!!
                             val class105_328_ = class105s[i_325_]!!
                             i_323_ -= max((Class369.aFontDefinition_4962!!.anInt1988), class105.method969())
-                            val i_329_ = (Class239_Sub21.anIntArray6062!![0] + (i_317_ + -(class105.method971() shr 1)))
+                            val i_329_ = (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ + -(class105.method971() shr 1)))
                             var i_330_ = (class105.method971() * class318_sub1_sub3_sub3.anInt10295 / 255)
                             val i_331_ = class105.method969()
                             if (class318_sub1_sub3_sub3.anInt10295 > 0 && i_330_ < 2) i_330_ = 2
@@ -3623,8 +3623,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
                             if (class318_sub1_sub3_sub3.anInt10287 > Class367_Sub11.anInt7396) {
-                                var class105 = (Class239_Sub2.aAbstractModelRendererArray5857!![(if (class318_sub1_sub3_sub3.aBoolean10226) 2 else 0)]!!)
-                                var class105_332_ = (Class239_Sub2.aAbstractModelRendererArray5857!![(if (!class318_sub1_sub3_sub3.aBoolean10226) 1 else 3)]!!)
+                                var class105 = (CameraDistanceOptionState.aAbstractModelRendererArray5857!![(if (class318_sub1_sub3_sub3.aBoolean10226) 2 else 0)]!!)
+                                var class105_332_ = (CameraDistanceOptionState.aAbstractModelRendererArray5857!![(if (!class318_sub1_sub3_sub3.aBoolean10226) 1 else 3)]!!)
                                 var i_333_ = -1
                                 if (class318_sub1_sub3_sub3 is Npc) {
                                     i_333_ = class79!!.anInt1382
@@ -3658,7 +3658,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 } else i_336_ = class105.method971()
                                 val i_338_ = class105.method969()
                                 i_323_ -= i_338_
-                                val i_339_ = (Class239_Sub21.anIntArray6062!![0] + (i_317_ + -(class105.method971() shr 1)))
+                                val i_339_ = (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ + -(class105.method971() shr 1)))
                                 class105.method974(i_339_, i_323_)
                                 Class348_Sub8.aRenderer6654!!.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_)
                                 class105_332_.method974(i_339_, i_323_)
@@ -3671,22 +3671,22 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 if (player.anInt10540 != -1) {
                                     i_323_ -= 25
                                     val class105 = (Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959!![(player.anInt10540)])!!
-                                    class105.method974((-12 + i_317_ + (Class239_Sub21.anIntArray6062!![0])), i_323_)
-                                    Class338.method2663(-5590, i_317_ + (Class239_Sub21.anIntArray6062!![0] + -12), (i_317_ - -Class239_Sub21.anIntArray6062!![0] + (-12 + class105.method966())), i_323_, i_323_ + class105.method980())
+                                    class105.method974((-12 + i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0])), i_323_)
+                                    Class338.method2663(-5590, i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -12), (i_317_ - -RemoveRoofsOptionState.anIntArray6062!![0] + (-12 + class105.method966())), i_323_, i_323_ + class105.method980())
                                     i_323_ -= 2
                                 }
                                 if (player.anInt10522 != -1) {
                                     i_323_ -= 25
                                     val class105 = (Class264.aAbstractModelRendererArray3378!![(player.anInt10522)])!!
-                                    class105.method974((-12 + i_317_ + (Class239_Sub21.anIntArray6062!![0])), i_323_)
-                                    Class338.method2663(-5590, (-12 + Class239_Sub21.anIntArray6062!![0] + i_317_), (Class239_Sub21.anIntArray6062!![0] + i_317_ - (12 + -class105.method966())), i_323_, i_323_ - -class105.method980())
+                                    class105.method974((-12 + i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0])), i_323_)
+                                    Class338.method2663(-5590, (-12 + RemoveRoofsOptionState.anIntArray6062!![0] + i_317_), (RemoveRoofsOptionState.anIntArray6062!![0] + i_317_ - (12 + -class105.method966())), i_323_, i_323_ - -class105.method980())
                                     i_323_ -= 2
                                 }
                             } else if (class79!!.anInt1375 >= 0 && (class79.anInt1375 < Class264.aAbstractModelRendererArray3378!!.size)) {
                                 val class105 = (Class264.aAbstractModelRendererArray3378!![class79.anInt1375])!!
                                 i_323_ -= 25
-                                class105.method974((i_317_ + (Class239_Sub21.anIntArray6062!![0]) + -(class105.method971() shr 1)), i_323_)
-                                Class338.method2663(-5590, (Class239_Sub21.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1))), (Class239_Sub21.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1)) + class105.method966()), i_323_, class105.method980() + i_323_)
+                                class105.method974((i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0]) + -(class105.method971() shr 1)), i_323_)
+                                Class338.method2663(-5590, (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1))), (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1)) + class105.method966()), i_323_, class105.method980() + i_323_)
                                 i_323_ -= 2
                             }
                         }
@@ -3698,10 +3698,10 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 while ((i_341_ < class302s.size)) {
                                     val class302 = class302s[i_341_]
                                     if (class302 != null && class302.anInt3840 == 10 && (`is`[i_322_] == class302.anInt3833)) {
-                                        val class105 = (Class239_Sub9.aAbstractModelRendererArray5933!![class302.anInt3831])!!
+                                        val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])!!
                                         if (i_340_ < class105.method969()) i_340_ = class105.method969()
-                                        class105.method974(-12 + ((Class239_Sub21.anIntArray6062!![0]) + i_317_), (i_323_ + -class105.method969()))
-                                        Class338.method2663(-5590, -12 + (i_317_ - -(Class239_Sub21.anIntArray6062!![0])), (i_317_ + (Class239_Sub21.anIntArray6062!![0] + -12 - -class105.method966())), -class105.method969() + i_323_, (i_323_ + -class105.method969() - -class105.method980()))
+                                        class105.method974(-12 + ((RemoveRoofsOptionState.anIntArray6062!![0]) + i_317_), (i_323_ + -class105.method969()))
+                                        Class338.method2663(-5590, -12 + (i_317_ - -(RemoveRoofsOptionState.anIntArray6062!![0])), (i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -12 - -class105.method966())), -class105.method969() + i_323_, (i_323_ + -class105.method969() - -class105.method980()))
                                     }
                                     i_341_++
                                 }
@@ -3714,11 +3714,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             while (class302s.size > i_343_) {
                                 val class302 = class302s[i_343_]
                                 if (class302 != null && class302.anInt3840 == 1 && (class302.anInt3833 == Class74.anIntArray1233!![i_322_ - i_321_])) {
-                                    val class105 = (Class239_Sub9.aAbstractModelRendererArray5933!![class302.anInt3831])!!
+                                    val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])!!
                                     if (class105.method969() > i_342_) i_342_ = class105.method969()
                                     if (Class367_Sub11.anInt7396 % 20 < 10) {
-                                        class105.method974((-12 + i_317_ + Class239_Sub21.anIntArray6062!![0]), i_323_ + -class105.method969())
-                                        Class338.method2663(-5590, (-12 + i_317_ - -Class239_Sub21.anIntArray6062!![0]), (Class239_Sub21.anIntArray6062!![0] + (i_317_ + -12) - -class105.method966()), -class105.method969() + i_323_, (-class105.method969() + (i_323_ - -class105.method980())))
+                                        class105.method974((-12 + i_317_ + RemoveRoofsOptionState.anIntArray6062!![0]), i_323_ + -class105.method969())
+                                        Class338.method2663(-5590, (-12 + i_317_ - -RemoveRoofsOptionState.anIntArray6062!![0]), (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ + -12) - -class105.method966()), -class105.method969() + i_323_, (-class105.method969() + (i_323_ - -class105.method980())))
                                     }
                                 }
                                 i_343_++
@@ -3756,9 +3756,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 else {
                                     val i_351_ = (class318_sub1_sub3_sub3.method2426(200) / 2)
                                     Class348_Sub13.method2801(i_351_, i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, (-107).toByte())
-                                    if (Class239_Sub21.anIntArray6062!![0] > -1) {
-                                        Class239_Sub21.anIntArray6062!![0] += MapSceneTileDefinition.anIntArray1786!![i_344_]
-                                        Class239_Sub21.anIntArray6062!![1] += DualMaterialContainer.anIntArray1636!![i_344_]
+                                    if (RemoveRoofsOptionState.anIntArray6062!![0] > -1) {
+                                        RemoveRoofsOptionState.anIntArray6062!![0] += MapSceneTileDefinition.anIntArray1786!![i_344_]
+                                        RemoveRoofsOptionState.anIntArray6062!![1] += DualMaterialContainer.anIntArray1636!![i_344_]
                                         val `object`: Any? = null
                                         val object_352_: Any? = null
                                         val object_353_: Any? = null
@@ -3929,8 +3929,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         val i_413_ = (-Class367_Sub11.anInt7396 + (class318_sub1_sub3_sub3.anIntArray10219[i_344_]))
                                         val i_414_ = (-(class31.anInt424 * i_413_ / class31.anInt434) + class31.anInt424)
                                         val i_415_ = (-class31.anInt422 + (class31.anInt422 * i_413_ / class31.anInt434))
-                                        val i_416_ = (i_317_ + Class239_Sub21.anIntArray6062!![0] + -(i_400_ shr 1) - -i_414_)
-                                        val i_417_ = -12 + (i + ((Class239_Sub21.anIntArray6062!![1]) - -i_415_))
+                                        val i_416_ = (i_317_ + RemoveRoofsOptionState.anIntArray6062!![0] + -(i_400_ shr 1) - -i_414_)
+                                        val i_417_ = -12 + (i + ((RemoveRoofsOptionState.anIntArray6062!![1]) - -i_415_))
                                         var i_418_ = i_417_
                                         var i_419_ = i_417_ + i_374_
                                         val i_420_ = 15 + (i_417_ - -(class31.anInt420))
@@ -4041,9 +4041,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (Class348_Sub40_Sub31.anInt9408 == 0) {
                     var i_448_ = 16776960
                     if (Class309.anIntArray4817!![i_438_] < 6) i_448_ = (OverlayColorTable.anIntArray1757!![Class309.anIntArray4817!![i_438_]])
-                    if (Class309.anIntArray4817!![i_438_] == 6) i_448_ = (if (Class239_Sub15.anInt6006 % 20 >= 10) 16776960 else 16711680)
-                    if (Class309.anIntArray4817!![i_438_] == 7) i_448_ = if (Class239_Sub15.anInt6006 % 20 < 10) 255 else 65535
-                    if (Class309.anIntArray4817!![i_438_] == 8) i_448_ = (if (Class239_Sub15.anInt6006 % 20 >= 10) 8454016 else 45056)
+                    if (Class309.anIntArray4817!![i_438_] == 6) i_448_ = (if (TextureQualityOptionState.anInt6006 % 20 >= 10) 16776960 else 16711680)
+                    if (Class309.anIntArray4817!![i_438_] == 7) i_448_ = if (TextureQualityOptionState.anInt6006 % 20 < 10) 255 else 65535
+                    if (Class309.anIntArray4817!![i_438_] == 8) i_448_ = (if (TextureQualityOptionState.anInt6006 % 20 >= 10) 8454016 else 45056)
                     if (Class309.anIntArray4817!![i_438_] == 9) {
                         val i_449_ = -Class309.anIntArray4812!![i_438_] + 150
                         if (i_449_ < 50) i_448_ = 1280 * i_449_ + 16711680
@@ -4074,14 +4074,14 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     if (Class309.anIntArray4806!![i_438_] == 1) {
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
-                        Class262.aClass324_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, Class239_Sub15.anInt6006, false)
+                        Class262.aClass324_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, TextureQualityOptionState.anInt6006, false)
                         i_447_ += 5
                         i_445_ -= 5
                     }
                     if (Class309.anIntArray4806!![i_438_] == 2) {
                         i_447_ += 5
                         i_446_ -= -5 + (i_443_ shr 1)
-                        Class262.aClass324_3326!!.method2581(string, i_452_, (Class239_Sub15.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
+                        Class262.aClass324_3326!!.method2581(string, i_452_, (TextureQualityOptionState.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
                         i_445_ -= 5
                         i_444_ -= (i_443_ shr 1) - -5
                     }
@@ -4089,7 +4089,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
                         i_447_ += 7
-                        Class262.aClass324_3326!!.method2577(Class239_Sub15.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
+                        Class262.aClass324_3326!!.method2577(TextureQualityOptionState.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
                         i_445_ -= 7
                     }
                     if (Class309.anIntArray4806!![i_438_] == 4) {

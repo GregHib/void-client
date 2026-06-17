@@ -49,11 +49,11 @@ object Class90 {
         }
         Class299.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
         var i_7_ = (-Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 + Class348_Sub40_Sub25.anInt9341) / 16
-        Class239_Sub6.anIntArrayArray5894 = Array<IntArray?>(i_7_) { IntArray(4) }
+        BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_7_) { IntArray(4) }
         var i_8_ = 0
         if (i.toInt() != 99) method852(-55)
         while ( /**/i_8_ < i_7_) {
-            for (i_9_ in 0..3) Class239_Sub6.anIntArrayArray5894!![i_8_]!![i_9_] = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+            for (i_9_ in 0..3) BrightnessOptionState.anIntArrayArray5894!![i_8_]!![i_9_] = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             i_8_++
         }
         Class322.anIntArray4031 = null

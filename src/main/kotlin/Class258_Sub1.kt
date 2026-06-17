@@ -73,12 +73,12 @@ class Class258_Sub1 : Class258 {
             SkeletalAnimFrameData.aBoolean351 = true
             Class318_Sub1_Sub3_Sub3.aBoolean10221 = Class9.aRenderer171!!.method3704() > 0
             Class348_Sub40_Sub17.aBoolean9242 = bool_24_
-            Class239_Sub25.anInt6111 = i_12_ shr Class362.anInt4459
+            DisplayModeOptionState.anInt6111 = i_12_ shr Class362.anInt4459
             Class285_Sub2.anInt8502 = i_14_ shr Class362.anInt4459
             TextureDefinitionLoader.anInt1974 = i_12_
             Class348_Sub40_Sub27.anInt9360 = i_14_
             TerrainTileGeometry.anInt3006 = i_13_
-            Class37.anInt492 = Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084
+            Class37.anInt492 = DisplayModeOptionState.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084
             if (Class37.anInt492 < 0) {
                 AnimatedModelRenderer.anInt8412 = -Class37.anInt492
                 Class37.anInt492 = 0
@@ -88,7 +88,7 @@ class Class258_Sub1 : Class258 {
                 Class240.anInt4686 = -Class348_Sub34.anInt6974
                 Class348_Sub34.anInt6974 = 0
             } else Class240.anInt4686 = 0
-            Class27.anInt387 = Class239_Sub25.anInt6111 + Class318_Sub1_Sub4_Sub1.anInt10084
+            Class27.anInt387 = DisplayModeOptionState.anInt6111 + Class318_Sub1_Sub4_Sub1.anInt10084
             if (Class27.anInt387 > Class318_Sub7.anInt6451) Class27.anInt387 = Class318_Sub7.anInt6451
             Class59_Sub1.anInt5293 = Class285_Sub2.anInt8502 + Class318_Sub1_Sub4_Sub1.anInt10084
             if (Class59_Sub1.anInt5293 > Class348_Sub41.anInt7054) Class59_Sub1.anInt5293 = Class348_Sub41.anInt7054
@@ -101,7 +101,7 @@ class Class258_Sub1 : Class258 {
                     for (i_32_ in 0..<(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2)) {
                         if (i_32_ > 1) RefCountedHandle.anIntArray2272!![i_32_ - 2] = i_30_
                         i_30_ = i_31_
-                        val i_33_ = (Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_29_)
+                        val i_33_ = (DisplayModeOptionState.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_29_)
                         val i_34_ = (Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_32_)
                         if (i_33_ >= 0 && i_34_ >= 0 && i_33_ < Class318_Sub7.anInt6451 && i_34_ < Class348_Sub41.anInt7054) {
                             val i_35_ = i_33_ shl Class362.anInt4459
@@ -155,7 +155,7 @@ class Class258_Sub1 : Class258 {
                 }
             }
             if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
-                for (i_42_ in 0..<Class331.anInt4135) Class239_Sub14.aSoundEnvelopeArray5993!![i_42_]!!.method1544(8688, bool, i)
+                for (i_42_ in 0..<Class331.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i_42_]!!.method1544(8688, bool, i)
             }
             if (Class348_Sub40_Sub5.aBoolean9121) {
                 Class52.anIntArray4906 = Class9.aRenderer171!!.Y()

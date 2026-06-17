@@ -1,4 +1,4 @@
-import Class239_Sub6.Companion.method1745
+import BrightnessOptionState.Companion.method1745
 import Class255.Companion.method1935
 import Class286_Sub3.Companion.method2148
 import Class348_Sub23_Sub1.Companion.method2967
@@ -185,7 +185,7 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
 
         fun method2397(i: Byte): Boolean {
             GlArrayBufferObject.anInt4718++
-            Class239_Sub29.aBoolean6147 = true
+            MultiLevelOptionState.aBoolean6147 = true
             if (i > -123) anIntArray9949 = null
             anInt9967++
             return true

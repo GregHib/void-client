@@ -51,8 +51,8 @@ abstract class Class272 {
         fun method2051(i: Int, i_0_: Int, screenAnchorAlignment: ScreenAnchorAlignment?, class341: Class341?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
             try {
                 Class95.aScreenAnchorAlignment_1542 = screenAnchorAlignment
-                Class239_Sub3.anInt5871 = i_7_
-                Class239_Sub27.aClass341_6128 = class341
+                ChatEffectsOptionState.anInt5871 = i_7_
+                DefaultGraphicsOptionState.aClass341_6128 = class341
                 Class86.anInt1479 = i
                 Class348_Sub7.aSpriteImage_6643 = null
                 Class295.anInt3762 = i_8_

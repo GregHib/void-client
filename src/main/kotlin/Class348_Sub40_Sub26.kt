@@ -110,9 +110,9 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             Class322.method2554((-45).toByte())
             Class348_Sub40_Sub22.Companion.method3111(111, i_15_)
             var i_18_: Int = (-Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 + Class348_Sub40_Sub25.Companion.anInt9341) / 16
-            Class239_Sub6.anIntArrayArray5894 = Array<IntArray?>(i_18_) { IntArray(4) }
+            BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_18_) { IntArray(4) }
             for (i_19_ in 0..<i_18_) {
-                for (i_20_ in 0..3) Class239_Sub6.anIntArrayArray5894!![i_19_]!![i_20_] = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                for (i_20_ in 0..3) BrightnessOptionState.anIntArrayArray5894!![i_19_]!![i_20_] = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             }
             Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
             ModelFacePriorityNode.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)

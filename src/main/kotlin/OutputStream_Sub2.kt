@@ -81,7 +81,7 @@ class OutputStream_Sub2 : OutputStream() {
                             if (class79!!.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1)
                             if (class79 != null) `is` = class79.anIntArray1342
                         }
-                    } else if (Class239_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
+                    } else if (RemoveRoofsOptionState.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                         val `object`: Any? = null
                         var class51: Class51?
                         if ((class348_sub42_sub12.anInt9608) == 1001) class51 = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
@@ -93,7 +93,7 @@ class OutputStream_Sub2 : OutputStream() {
             } else `is` = (Exception_Sub1.aClass255_112!!.method1940(-115, class348_sub42_sub12.aLong9605.toInt()).anIntArray2772)
             if (`is` != null) string += AudioResampler.method1273(`is`, true)
             var i = Class369.aFontDefinition_4962!!.method1186(string, Class341.aAbstractModelRendererArray4234, bool)
-            if (class348_sub42_sub12.aBoolean9597) i += Class239_Sub24.aAbstractModelRenderer_6097!!.method971() + 4
+            if (class348_sub42_sub12.aBoolean9597) i += SceneryDetailOptionState.aAbstractModelRenderer_6097!!.method971() + 4
             return i
         }
 

@@ -24,7 +24,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
     override fun method7(i: Int) {
         anInt4639++
         if (i == 10286) {
-            val class143 = Class239_Sub10.method1766((-85).toByte(), (this.aClass369_4635!!.anInt4965), aClass45_4631)
+            val class143 = RangedGraphicsOptionState.method1766((-85).toByte(), (this.aClass369_4635!!.anInt4965), aClass45_4631)
             aClass324_4637 = (Class348_Sub8.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aClass45_4632!!, (this.aClass369_4635!!.anInt4965)), true))
         }
     }

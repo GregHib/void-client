@@ -1,4 +1,4 @@
-import Class239_Sub16.Companion.method1791
+import ShadowQualityOptionState.Companion.method1791
 
 /* Class11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

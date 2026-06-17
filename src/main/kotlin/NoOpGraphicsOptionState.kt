@@ -1,7 +1,7 @@
 /* Class239_Sub19 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub19 : Class239 {
+class NoOpGraphicsOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         anInt6041++
         if (i != 20014) return -14

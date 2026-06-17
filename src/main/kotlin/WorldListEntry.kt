@@ -33,7 +33,7 @@ class WorldListEntry {
                 if (class318_sub5.anInt6421 <= Class367_Sub11.anInt7396) class318_sub5.method2373(false)
                 else {
                     Class318_Sub5.method2505(i_0_ shr 1, class318_sub5.anInt6420 * 2, 0, i_5_, i_2_ shr 1, class318_sub5.anInt6418, 256 + (class318_sub5.anInt6422 shl 9), i_1_, (class318_sub5.anInt6419 shl 9) + 256)
-                    Class262.aClass324_3326!!.method2575(122.toByte(), i_3_ - -Class239_Sub21.anIntArray6062!![0], 0xffffff.inv() or class318_sub5.anInt6415, class318_sub5.aString6416, 0, i_4_ - -Class239_Sub21.anIntArray6062!![1])
+                    Class262.aClass324_3326!!.method2575(122.toByte(), i_3_ - -RemoveRoofsOptionState.anIntArray6062!![0], 0xffffff.inv() or class318_sub5.anInt6415, class318_sub5.aString6416, 0, i_4_ - -RemoveRoofsOptionState.anIntArray6062!![1])
                 }
                 class318_sub5 = (NpcDefinition.aClass243_2957!!.method1878(0.toByte()) as Class318_Sub5?)
             }

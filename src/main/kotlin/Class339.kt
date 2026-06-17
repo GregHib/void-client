@@ -1,4 +1,4 @@
-import Class239_Sub15.Companion.method1783
+import TextureQualityOptionState.Companion.method1783
 import Class251.Companion.method1916
 import Class43.Companion.method381
 import Class5_Sub2.Companion.method196

@@ -213,7 +213,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, class297: Class29
         fun method1469(i: Int) {
             anInt2662++
             Class286.anInt3682 = 0
-            Class239_Sub24.anInt6095 = 0
+            SceneryDetailOptionState.anInt6095 = 0
             val i_0_ = 29 % ((-42 - i) / 63)
             var i_1_ = 0
             while (Class250.anInt3225 > i_1_) {

@@ -1,7 +1,7 @@
 /* Class239_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub10 : Class239 {
+class RangedGraphicsOptionState : GraphicsOptionState {
     internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     override fun method1716(bool: Boolean) {

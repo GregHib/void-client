@@ -1,4 +1,4 @@
-import Class239_Sub23.Companion.method1819
+import AntialiasOptionState.Companion.method1819
 import java.awt.Canvas
 
 /*

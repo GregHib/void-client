@@ -303,7 +303,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                         if (!Class298.aBoolean3811) break
                         val i_22_ = -5 + i_11_ + i_12_
                         var i_23_ = -8 + i_13_ + i_14_
-                        GameAppletFrame.aClass324_20!!.method2569("Fps:" + (Class239_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1)
+                        GameAppletFrame.aClass324_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_23_, 16776960, i_22_, i + -116, -1)
                         i_23_ -= 15
                         val runtime = Runtime.getRuntime()
                         val i_24_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()

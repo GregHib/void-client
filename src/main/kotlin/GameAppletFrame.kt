@@ -166,7 +166,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         Class348_Sub49.aLongArray7206!![GzipDecompressor.anInt2071] = l
         if (l_2_ != 0L && l_2_ < l) {
             val i_3_ = (l - l_2_).toInt()
-            Class239_Sub5.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
+            SimpleToggleOptionState.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
         }
         GzipDecompressor.anInt2071 = GzipDecompressor.anInt2071 - -1 and 0x1f
         if (ParticleAmountConfig.anInt2127++ > 50) {

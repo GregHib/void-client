@@ -81,7 +81,7 @@ class HeadIconRenderer {
                 if (i > -48) aIntRange_2068 = null
                 anInt2063++
                 RuntimeException_Sub1.anInt4596 = -1
-                Class239_Sub12.anInt5969 = if (Loader.skipLobby) 2 else 1
+                BloomGraphicsOptionState.anInt5969 = if (Loader.skipLobby) 2 else 1
                 LocalPlayerState.method1138(string, false, string_16_, (-95).toByte())
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ok.E(" + (if (string != null) "{...}" else "null") + ',' + (if (string_16_ != null) "{...}" else "null") + ',' + i + ')'))

@@ -1,4 +1,4 @@
-import Class239.Companion.method1713
+import GraphicsOptionState.Companion.method1713
 
 /* Class348_Sub42_Sub8 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -1,4 +1,4 @@
-import Class239_Sub15.Companion.method1783
+import TextureQualityOptionState.Companion.method1783
 import java.awt.Canvas
 import java.awt.Graphics
 import java.math.BigInteger
@@ -46,7 +46,7 @@ abstract class Class348_Sub31 : Class348() {
             Class346.aBoolean4275 = false
             ModelDefinition.aClass45_1848 = null
             Class318.anInt3971 = -1
-            Class239_Sub14.anInt5994 = i
+            WaterDetailOptionState.anInt5994 = i
             Class348_Sub43.anInt7068 = 1
             Class58.anInt1059 = 0
         }
@@ -219,7 +219,7 @@ abstract class Class348_Sub31 : Class348() {
                         for (i_91_ in 0..<i_90_) {
                             val i_92_ = class348_sub49.readUnsignedShort(842397944)
                             val i_93_ = class348_sub49.readInt((-126).toByte())
-                            if ((Class77.anIntArray1303!!.size > i_92_) && Class286_Sub6.aBooleanArray6270!![i_92_] && ((Class239_Sub14.aClass259_5995!!.method1976(i_92_, -107).aChar2132) != '1' || i_93_ >= -1 && i_93_ <= 1)) Class77.anIntArray1303!![i_92_] = i_93_
+                            if ((Class77.anIntArray1303!!.size > i_92_) && Class286_Sub6.aBooleanArray6270!![i_92_] && ((WaterDetailOptionState.aClass259_5995!!.method1976(i_92_, -107).aChar2132) != '1' || i_93_ >= -1 && i_93_ <= 1)) Class77.anIntArray1303!![i_92_] = i_93_
                         }
                     }
                 }

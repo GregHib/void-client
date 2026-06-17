@@ -22,7 +22,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         for (i_0_ in this.aShort8743..this.aShort8751) {
             var i_1_ = this.aShort8750.toInt()
             while ((i_1_ <= this.aShort8747)) {
-                val i_2_ = (-Class239_Sub25.anInt6111 + i_0_ + Class318_Sub1_Sub4_Sub1.anInt10084)
+                val i_2_ = (-DisplayModeOptionState.anInt6111 + i_0_ + Class318_Sub1_Sub4_Sub1.anInt10084)
                 if (i_2_ >= 0 && (Class99.aBooleanArrayArray1572!!.size > i_2_)) {
                     val i_3_ = (Class318_Sub1_Sub4_Sub1.anInt10084 + (i_1_ - Class285_Sub2.anInt8502))
                     if (i_3_ >= 0 && (Class99.aBooleanArrayArray1572!!.size > i_3_) && Class99.aBooleanArrayArray1572!![i_2_]!![i_3_]) return true
@@ -69,7 +69,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
                 while_103_@ while (l_22_ <= 48L) {
                     val i_23_ = (l ushr l_22_.toInt() and 0xffffL).toInt()
                     if (i_23_ <= 0) break
-                    val class211 = Class239_Sub14.aSoundEnvelopeArray5993!![-1 + i_23_]
+                    val class211 = WaterDetailOptionState.aSoundEnvelopeArray5993!![-1 + i_23_]
                     var i_24_ = 0
                     while (i_19_ > i_24_) {
                         if (class211!!.aClass348_Sub1_2745 === class348_sub1s!![i_24_]) {
@@ -89,7 +89,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         val i_25_ = 17 % ((i - -14) / 61)
         for (i_26_ in i_19_..3) class348_sub1s!![i_26_] = null
         if (this.aByte8745.toInt() != 0) {
-            val i_27_ = (this.aShort8743 + -Class239_Sub25.anInt6111)
+            val i_27_ = (this.aShort8743 + -DisplayModeOptionState.anInt6111)
             val i_28_ = (-Class285_Sub2.anInt8502 + this.aShort8750)
             val i_29_: Int
             val i_30_: Short
@@ -122,7 +122,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
             while_106_@ while ( /**/i_19_ > i_33_) {
                 var l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_32_.toInt()]!![i_31_])
                 while (l != 0L) {
-                    val class211 = (Class239_Sub14.aSoundEnvelopeArray5993!![(-1L + (l and 0xffffL)).toInt()])
+                    val class211 = (WaterDetailOptionState.aSoundEnvelopeArray5993!![(-1L + (l and 0xffffL)).toInt()])
                     l = l ushr 16
                     if (class211!!.aClass348_Sub1_2745 === class348_sub1s!![i_33_]) {
                         i_33_++
@@ -131,7 +131,7 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
                 }
                 l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_29_]!![i_30_.toInt()])
                 while (l != 0L) {
-                    val class211 = (Class239_Sub14.aSoundEnvelopeArray5993!![(-1L + (0xffffL and l)).toInt()])
+                    val class211 = (WaterDetailOptionState.aSoundEnvelopeArray5993!![(-1L + (0xffffL and l)).toInt()])
                     l = l ushr 16
                     if (class348_sub1s!![i_33_] === class211!!.aClass348_Sub1_2745) {
                         i_33_++

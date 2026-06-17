@@ -32,7 +32,7 @@ object NpcCountAccessor {
         Class351.aClass60_4327!!.method587(-118)
         anInt2281++
         Class358.aClass60_4417!!.method587(-89)
-        Class239_Sub24.aClass60_6096!!.method587(-87)
+        SceneryDetailOptionState.aClass60_6096!!.method587(-87)
         Class348_Sub40_Sub9.aClass60_9171!!.method587(-95)
     }
 }

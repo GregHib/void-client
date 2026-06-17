@@ -110,24 +110,24 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             if (bool) {
                 Class342.anIntArrayArray4253 = Array<IntArray?>(Class318_Sub7.anInt6451) { IntArray(Class348_Sub41.anInt7054) }
                 Class348_Sub1_Sub2.aByteArrayArray8816 = Array<ByteArray?>(Class318_Sub7.anInt6451) { ByteArray(Class348_Sub41.anInt7054) }
-                Class239_Sub1.aShortArrayArray5847 = Array<ShortArray?>(Class318_Sub7.anInt6451) { ShortArray(Class348_Sub41.anInt7054) }
+                BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(Class318_Sub7.anInt6451) { ShortArray(Class348_Sub41.anInt7054) }
                 Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = (Array<Array<Array<Class357?>?>?>(1) { Array<Array<Class357?>?>(Class318_Sub7.anInt6451) { arrayOfNulls<Class357>(Class348_Sub41.anInt7054) } })
                 Class332.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
             } else {
                 Class342.anIntArrayArray4253 = null
                 Class348_Sub1_Sub2.aByteArrayArray8816 = null
-                Class239_Sub1.aShortArrayArray5847 = null
+                BooleanGraphicsOptionState.aShortArrayArray5847 = null
                 Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null
                 Class332.aTerrainTileArray4142 = null
             }
             if (bool_5_) {
                 Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = Array<Array<LongArray?>?>(i_1_) { Array<LongArray?>(i_2_) { LongArray(i_3_) } }
-                Class239_Sub14.aSoundEnvelopeArray5993 = arrayOfNulls<SoundEnvelope>(65535)
+                WaterDetailOptionState.aSoundEnvelopeArray5993 = arrayOfNulls<SoundEnvelope>(65535)
                 RenderNode.aBooleanArray9718 = BooleanArray(65535)
                 Class331.anInt4135 = 0
             } else {
                 Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = null
-                Class239_Sub14.aSoundEnvelopeArray5993 = null
+                WaterDetailOptionState.aSoundEnvelopeArray5993 = null
                 RenderNode.aBooleanArray9718 = null
                 Class331.anInt4135 = 0
             }
@@ -135,7 +135,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             aClass318_Sub1Array4293 = arrayOfNulls<Class318_Sub1>(2)
             Class250.aClass318_Sub1Array3226 = arrayOfNulls<Class318_Sub1>(2)
             OverlayColorTable.aClass318_Sub1Array1754 = arrayOfNulls<Class318_Sub1>(2)
-            Class239_Sub21.aClass318_Sub1Array6066 = arrayOfNulls<Class318_Sub1>(10000)
+            RemoveRoofsOptionState.aClass318_Sub1Array6066 = arrayOfNulls<Class318_Sub1>(10000)
             Class5_Sub1_Sub1.anInt9930 = 0
             Class291.aClass318_Sub1Array3737 = arrayOfNulls<Class318_Sub1>(5000)
             Class348_Sub42_Sub3.Companion.anInt9504 = 0
@@ -168,7 +168,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
                     Class75_Sub1.anInt5652 = 4
                 }
                 Class319.aClass315Array3982 = arrayOfNulls<Class315>(i_7_)
-                for (i_8_ in 0..<i_7_) Class319.aClass315Array3982!![i_8_] = Class315(Class239_Sub24.aStringArrayArray6093!![(Npc.anInt10503 - 2)]!![i_8_])
+                for (i_8_ in 0..<i_7_) Class319.aClass315Array3982!![i_8_] = Class315(SceneryDetailOptionState.aStringArrayArray6093!![(Npc.anInt10503 - 2)]!![i_8_])
             } else Class75_Sub1.anInt5652 = 1
             WidgetDefinition.anIntArray256 = IntArray(Class75_Sub1.anInt5652 - 1)
             Class345.anIntArray4271 = IntArray(Class75_Sub1.anInt5652 - 1)

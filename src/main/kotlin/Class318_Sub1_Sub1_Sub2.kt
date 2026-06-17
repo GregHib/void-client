@@ -273,10 +273,10 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_renderer: Renderer?, clas
                 val class302 = class302s[i_13_]
                 if (class302 != null && class302.anInt3840 == 2) {
                     Class318_Sub5.Companion.method2505(i_9_ shr 1, 2 * class302.anInt3839, 0, i_12_, i_11_ shr 1, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835)
-                    if (Class239_Sub21.anIntArray6062!![0] > -1 && Class367_Sub11.anInt7396 % 20 < 10) {
-                        val class105 = (Class239_Sub9.aAbstractModelRendererArray5933!![class302.anInt3831])
-                        val i_14_ = -12 + (i - -Class239_Sub21.anIntArray6062!![0])
-                        val i_15_ = i_8_ - -Class239_Sub21.anIntArray6062!![1] - 28
+                    if (RemoveRoofsOptionState.anIntArray6062!![0] > -1 && Class367_Sub11.anInt7396 % 20 < 10) {
+                        val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])
+                        val i_14_ = -12 + (i - -RemoveRoofsOptionState.anIntArray6062!![0])
+                        val i_15_ = i_8_ - -RemoveRoofsOptionState.anIntArray6062!![1] - 28
                         class105!!.method974(i_14_, i_15_)
                         Class338.method2663(-5590, i_14_, i_14_ - -class105.method966(), i_15_, class105.method980() + i_15_)
                     }

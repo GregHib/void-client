@@ -1,7 +1,7 @@
 /* Class239_Sub3 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-class Class239_Sub3 : Class239 {
+class ChatEffectsOptionState : GraphicsOptionState {
     override fun method1712(i: Int, i_0_: Int) {
         this.anInt3138 = i_0_
         anInt5862++
@@ -157,7 +157,7 @@ class Class239_Sub3 : Class239 {
                 var class352 = Class332.aClass60_4139!!.method583(i.toLong(), -92) as? Class352?
                 if (class352 != null) {
                     if (bool && class352.aFontDefinition_4333 == null) {
-                        val class143 = Class239_Sub10.method1766((-76).toByte(), i, TerrainTile.aClass45_4585!!)
+                        val class143 = RangedGraphicsOptionState.method1766((-76).toByte(), i, TerrainTile.aClass45_4585!!)
                         if (class143 == null) return null
                         class352.aFontDefinition_4333 = class143
                     }
@@ -166,7 +166,7 @@ class Class239_Sub3 : Class239 {
                 val i_27_ = -118 / ((-33 - i_25_) / 44)
                 val spriteImages = SpriteImage.method1523(Class39.aClass45_518!!, i)
                 if (spriteImages == null) return null
-                val class143 = Class239_Sub10.method1766((-39).toByte(), i, TerrainTile.aClass45_4585!!)
+                val class143 = RangedGraphicsOptionState.method1766((-39).toByte(), i, TerrainTile.aClass45_4585!!)
                 if (class143 == null) return null
                 if (!bool) class352 = Class352(var_renderer!!.method3686(class143, spriteImages, true))
                 else class352 = Class352(var_renderer!!.method3686(class143, spriteImages, true), class143)

@@ -1,4 +1,4 @@
-import Class239_Sub3.Companion.method1730
+import ChatEffectsOptionState.Companion.method1730
 import Class348_Sub16_Sub3.Companion.method2862
 import Class367_Sub8.Companion.method3548
 import Class5.Companion.method181
@@ -167,7 +167,7 @@ class VarpStore : Interface17 {
             var i_21_ = 0
             while ((i_21_ < Class348_Sub1.anIntArray6547!!.size)) {
                 val i_22_ = Class348_Sub1.anIntArray6547!![i_21_]
-                val class143 = Class239_Sub10.method1766((-86).toByte(), i_22_, TerrainTile.aClass45_4585!!)
+                val class143 = RangedGraphicsOptionState.method1766((-86).toByte(), i_22_, TerrainTile.aClass45_4585!!)
                 val class324 = var_renderer.method3686(class143, SpriteImage.method1523(Class39.aClass45_518!!, i_22_), true)
                 LoadingScreenState.aClass352Array2636!![i_21_] = Class352(class324, class143)
                 i_21_++

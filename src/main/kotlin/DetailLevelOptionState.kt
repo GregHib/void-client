@@ -1,7 +1,7 @@
 /* Class239_Sub26 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub26 : Class239 {
+class DetailLevelOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         if (i != 20014) return 112
         anInt6116++

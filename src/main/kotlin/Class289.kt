@@ -1,4 +1,4 @@
-import Class239_Sub18.Companion.method1802
+import LightDetailOptionState.Companion.method1802
 import Class286_Sub3.Companion.method2148
 import Class369_Sub1.Companion.method3570
 import java.io.IOException
@@ -53,7 +53,7 @@ object Class289 {
                 SceneRegionState.anInt193 = 0
                 if (!AbstractMenuEntry.aBoolean1712 && Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
                     IOException_Sub1.anInt88++
-                    val class348_sub47 = method2148((Class239_Sub10.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -106)
+                    val class348_sub47 = method2148((RangedGraphicsOptionState.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -106)
                     Class348_Sub42_Sub14.method3243(122, class348_sub47)
                     try {
                         method1802(0)

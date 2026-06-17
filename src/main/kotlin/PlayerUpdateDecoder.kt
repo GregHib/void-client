@@ -1,4 +1,4 @@
-import Class239_Sub16.Companion.method1791
+import ShadowQualityOptionState.Companion.method1791
 import Class348_Sub40.Companion.method3038
 import Class76.Companion.method773
 

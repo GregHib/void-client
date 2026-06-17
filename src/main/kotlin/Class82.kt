@@ -1,10 +1,10 @@
 import GameAppletFrame.Companion.method94
 import GlCubeMapTexture.Companion.method243
-import Class239_Sub14.Companion.method1781
-import Class239_Sub17.Companion.method1795
-import Class239_Sub2.Companion.method1725
-import Class239_Sub24.Companion.method1821
-import Class239_Sub5.Companion.method1742
+import WaterDetailOptionState.Companion.method1781
+import ParticleDetailOptionState.Companion.method1795
+import CameraDistanceOptionState.Companion.method1725
+import SceneryDetailOptionState.Companion.method1821
+import SimpleToggleOptionState.Companion.method1742
 import Class272.Companion.method2049
 import Class286_Sub3.Companion.method2148
 import Class299_Sub2_Sub1.Companion.method2271
@@ -105,7 +105,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                     if (string == "nativememerror") throw OutOfMemoryError("native(MPR")
                     try {
                         if (string.equals("printfps", ignoreCase = true)) {
-                            method94(("FPS: " + Class239_Sub5.anInt5891), -58)
+                            method94(("FPS: " + SimpleToggleOptionState.anInt5891), -58)
                             return
                         }
                         if (string.equals("occlude", ignoreCase = true)) {
@@ -385,9 +385,9 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                                 if (i_8_ >= 1) {
                                     if (i_8_ > 4) i_8_ = 4
                                 } else i_8_ = 1
-                                Class239_Sub16.anInt6012 = i_8_
+                                ShadowQualityOptionState.anInt6012 = i_8_
                                 Class348_Sub20.method2953((-128).toByte())
-                                method94(("Render cores now: " + (Class239_Sub16.anInt6012)), -77)
+                                method94(("Render cores now: " + (ShadowQualityOptionState.anInt6012)), -77)
                             } else {
                                 method94("Current toolkit doesn't support multiple cores", i + 138)
                                 return

@@ -1,5 +1,5 @@
 import GlCubeMapTexture.Companion.method243
-import Class239.Companion.method1713
+import GraphicsOptionState.Companion.method1713
 import Class286_Sub2.Companion.method2145
 import Class286_Sub5.Companion.method2158
 import Class56.Companion.method527
@@ -19,7 +19,7 @@ object GameDisplayManager {
     var anInt2839: Int = 0
 
     fun method1580(i: Byte, bool: Boolean, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
-        if (Class34.aFrame476 != null && (i_2_ != 3 || i_0_ != Class346.anInt4276 || i_3_ != Class239_Sub8.anInt5911)) {
+        if (Class34.aFrame476 != null && (i_2_ != 3 || i_0_ != Class346.anInt4276 || i_3_ != FlickeringEffectsOptionState.anInt5911)) {
             method527(Class34.aFrame476, Class348_Sub23_Sub1.aClass297_8992, false)
             Class34.aFrame476 = null
         }
@@ -29,7 +29,7 @@ object GameDisplayManager {
             Class34.aFrame476 = Class318_Sub1_Sub3_Sub4.method2463(i_3_, i_0_, (Class348_Sub23_Sub1.aClass297_8992!!), 0, 14199, 0)
             if (Class34.aFrame476 != null) {
                 Class346.anInt4276 = i_0_
-                Class239_Sub8.anInt5911 = i_3_
+                FlickeringEffectsOptionState.anInt5911 = i_3_
                 method243(37)
             }
         }
@@ -95,7 +95,7 @@ object GameDisplayManager {
                     if (Class348_Sub43.anInt7068 == 1) {
                         var i_6_ = Class98.aClass348_Sub16_Sub3_1564!!.method2844(123.toByte())
                         if (i_6_ > 0 && Class98.aClass348_Sub16_Sub3_1564!!.method2860(124)) {
-                            i_6_ -= Class239_Sub14.anInt5994
+                            i_6_ -= WaterDetailOptionState.anInt5994
                             if (i_6_ < 0) i_6_ = 0
                             Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, i_6_)
                             break

@@ -1,6 +1,6 @@
 import GameAppletFrame.Companion.method94
-import Class239_Sub12.Companion.method1772
-import Class239_Sub2.Companion.method1725
+import BloomGraphicsOptionState.Companion.method1772
+import CameraDistanceOptionState.Companion.method1725
 import Class286_Sub3.Companion.method2148
 import Class299_Sub2_Sub1.Companion.method2271
 import Class348_Sub1.Companion.method2718
@@ -160,7 +160,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (GameAppletFrame.anIntArray38!![i_19_] != -1 && GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
-                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
+                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
                         Class268.anInt3441++
                         bool = false
@@ -181,7 +181,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (Class322.anIntArray4031 != null && Class348_Sub50.aByteArrayArray7212!![i_19_] == null && Class322.anIntArray4031!![i_19_] != -1) {
-                    Class348_Sub50.aByteArrayArray7212!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(Class322.anIntArray4031!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
+                    Class348_Sub50.aByteArrayArray7212!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(Class322.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (Class348_Sub50.aByteArrayArray7212!![i_19_] == null) {
                         bool = false
                         Class268.anInt3441++
@@ -243,7 +243,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) i_27_ = Class9.anIntArray168!![Class348_Sub15.anInt6769]
                     else i_27_ = (Class286_Sub8.anIntArray6296!![Class348_Sub15.anInt6769])
                     if (Class348_Sub8.aRenderer6654!!.method3670()) i_27_++
-                    Class348_Sub42_Sub2.method3171(Class348_Sub8.aRenderer6654, Class239_Sub16.anInt6012, 9, 4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, i_27_, bool_25_, Class348_Sub8.aRenderer6654!!.method3704() > 0)
+                    Class348_Sub42_Sub2.method3171(Class348_Sub8.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, i_27_, bool_25_, Class348_Sub8.aRenderer6654!!.method3704() > 0)
                     Class348_Sub32.method3018(Class318_Sub1_Sub4_Sub2.anInt10096)
                     if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(Class240.aClass324_4684)
                     else Class348_Sub48.method3328(null)

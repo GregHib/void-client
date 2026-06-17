@@ -1,10 +1,10 @@
-import Class239_Sub8.Companion.method1753
+import FlickeringEffectsOptionState.Companion.method1753
 import Class368.Companion.method3561
 
 /* Class239_Sub17 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub17 : Class239 {
+class ParticleDetailOptionState : GraphicsOptionState {
     override fun method1714(i: Int, i_7_: Int): Int {
         anInt6023++
         if (i != 3) return 49

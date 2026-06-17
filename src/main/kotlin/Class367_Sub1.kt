@@ -1,4 +1,4 @@
-import Class239_Sub28.Companion.method1843
+import TwoStateOptionState.Companion.method1843
 
 /* Class367_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

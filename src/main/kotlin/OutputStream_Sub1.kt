@@ -41,7 +41,7 @@ class OutputStream_Sub1 : OutputStream() {
             if (HintArrowOrMessage.aClass357ArrayArrayArray2029 == null) Class348_Sub8.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
             else if (LocalPlayerState.aPlayer_1907!!.x < 0 || (LocalPlayerState.aPlayer_1907!!.x >= Class367_Sub4.anInt7319 * 512) || LocalPlayerState.aPlayer_1907!!.y < 0 || (512 * Class348_Sub40_Sub3.anInt9109 <= LocalPlayerState.aPlayer_1907!!.y)) Class348_Sub8.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
             else {
-                Class239_Sub15.anInt6006++
+                TextureQualityOptionState.anInt6006++
                 if (LocalPlayerState.aPlayer_1907 != null && Class248.anInt3203 == (LocalPlayerState.aPlayer_1907!!.x + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(90.toByte())) - -256) shr 9 && Class97.anInt1548 == (LocalPlayerState.aPlayer_1907!!.y + 256 + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(112.toByte()))) shr 9) {
                     Class97.anInt1548 = -1
                     Class248.anInt3203 = -1
@@ -114,7 +114,7 @@ class OutputStream_Sub1 : OutputStream() {
                     Class348_Sub8.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 shl 1, Class97.anInt1550 shl 1)
                     Class30.method319(Class97.anInt1550 shl 1, Class97.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
                     Class348_Sub42_Sub20.method3282(0x3fff and -(Class348_Sub42_Sub19.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 and 0x3fff, Class286_Sub4.anInt6246, -Class338.anInt4186 and 0x3fff)
-                    val i_16_ = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else Class239_Sub15.anInt6006.toByte())
+                    val i_16_ = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (Class59_Sub1.aBoolean5300) {
                         CameraRotationStub.method289(-15902, 0x3fff and -Class5.anInt4638, -Class338.anInt4186 and 0x3fff, (-Class348_Sub42_Sub19.anInt9701 and 0x3fff))
                         SceneProjector.method1634(

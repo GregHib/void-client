@@ -1,7 +1,7 @@
 import Gl3dTexture.Companion.method248
 import SceneTilePlaneManager.method260
-import Class239_Sub18.Companion.method1802
-import Class239_Sub19.Companion.method1804
+import LightDetailOptionState.Companion.method1802
+import NoOpGraphicsOptionState.Companion.method1804
 import Class348_Sub3.Companion.method2739
 import Class348_Sub40_Sub26.Companion.method3120
 import Class348_Sub40_Sub31.Companion.method3131
@@ -148,14 +148,14 @@ class Class88 {
                             GlRectangleTexture.method254(-5, (-111).toByte())
                             return
                         }
-                        if (Class239_Sub12.anInt5969 != 2) Class255.aServerConnectionInfo_3285!!.method1259(0)
+                        if (BloomGraphicsOptionState.anInt5969 != 2) Class255.aServerConnectionInfo_3285!!.method1259(0)
                         else Class3.aServerConnectionInfo_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         NpcDefinition.anInt2955 = 1
                         SceneRegionState.anInt197 = 0
                     }
                     if (NpcDefinition.anInt2955 == 1) {
-                        if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (Class3.aServerConnectionInfo_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        if (BloomGraphicsOptionState.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (Class3.aServerConnectionInfo_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
                         else FrameStatsReset.aLinkedQueueNode_5800 = (Class255.aServerConnectionInfo_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
                         NpcDefinition.anInt2955 = 2
                     }
@@ -203,7 +203,7 @@ class Class88 {
                         method2739(0)
                         val class348_sub47 = ProjectileSpawner.method1478(true)
                         val class348_sub49_sub2 = (class348_sub47!!.aClass348_Sub49_Sub2_7116)!!
-                        if (Class239_Sub12.anInt5969 == 2) {
+                        if (BloomGraphicsOptionState.anInt5969 == 2) {
                             if (Class240.anInt4674 != 13) class348_sub49_sub2.writeByte(false, ScriptOpcodeHolder.aClass29_2342!!.anInt400)
                             else class348_sub49_sub2.writeByte(false, ScriptOpcodeHolder.aClass29_2344!!.anInt400)
                             class348_sub49_sub2.writeShort(107.toByte(), 0)
@@ -218,7 +218,7 @@ class Class88 {
                             class348_sub49_sub2.writeShort(107.toByte(), Class348_Sub42_Sub8_Sub2.anInt10432)
                             class348_sub49_sub2.writeByte(false, Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350))
                             method4002(class348_sub49_sub2, 55.toByte())
-                            class348_sub49_sub2.writeString((-5).toByte(), Class239_Sub12.aString5966!!)
+                            class348_sub49_sub2.writeString((-5).toByte(), BloomGraphicsOptionState.aString5966!!)
                             class348_sub49_sub2.writeInt(120.toByte(), SocketStreamWorker.anInt2670)
                             val class348_sub49_8_ = Class316.aClass348_Sub51_3959!!.method3427(24)
                             class348_sub49_sub2.writeByte(false, (class348_sub49_8_.anInt7197))
@@ -246,7 +246,7 @@ class Class88 {
                             class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987)
                             class348_sub49_sub2.writeByte(false, Class348_Sub33.anInt6967)
                             method4002(class348_sub49_sub2, 55.toByte())
-                            class348_sub49_sub2.writeString((-5).toByte(), Class239_Sub12.aString5966!!)
+                            class348_sub49_sub2.writeString((-5).toByte(), BloomGraphicsOptionState.aString5966!!)
                             class348_sub49_sub2.writeInt(106.toByte(), SocketStreamWorker.anInt2670)
                             SettingsCrcWriter.method1244(92, class348_sub49_sub2)
                             class348_sub49_sub2.method3350(i_5_, true, `is`, (class348_sub49_sub2.anInt7197))
@@ -334,7 +334,7 @@ class Class88 {
                     } else {
                         if (NpcDefinition.anInt2955 == 9) {
                             val class348_sub49_sub2 = Class299.aClass348_Sub49_Sub2_3813
-                            if (Class239_Sub12.anInt5969 == 2) {
+                            if (BloomGraphicsOptionState.anInt5969 == 2) {
                                 if (!Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1705(Class76.Companion.anInt1288, 93)) return
                                 Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1701(Class76.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
                                 class348_sub49_sub2.anInt7197 = 0
@@ -412,7 +412,7 @@ class Class88 {
                                     /* empty */
                                 }
                             }
-                            if (Class239_Sub12.anInt5969 == 2) NpcDefinition.anInt2955 = 11
+                            if (BloomGraphicsOptionState.anInt5969 == 2) NpcDefinition.anInt2955 = 11
                             else {
                                 NpcDefinition.anInt2955 = 0
                                 GlRectangleTexture.method254(2, (-92).toByte())
@@ -446,7 +446,7 @@ class Class88 {
                                 val i_13_ = Class348_Sub40_Sub25.anInt9341
                                 GlRectangleTexture.method254(2, (-124).toByte())
                                 FrameStatsReset.method1135(0)
-                                Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
+                                SimpleToggleOptionState.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 Renderer.anInt4581 = -1
                                 if (Class348_Sub3.aIntRange_6584 != WorldListEntry.aIntRange_304) method3120(-92)
                                 else Class90.method853(99.toByte())
@@ -469,7 +469,7 @@ class Class88 {
                                     NpcDefinition.anInt2955 = 0
                                     GlRectangleTexture.method254(15, (-120).toByte())
                                     Class312.method2330(86.toByte())
-                                    Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
+                                    SimpleToggleOptionState.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                     if (i_15_ != (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
                                     Class348_Sub3.aIntRange_6584 = null
                                 }
@@ -486,7 +486,7 @@ class Class88 {
                         GlRectangleTexture.method254(-4, (-87).toByte())
                         GzipDecompressor.method1215(3.toByte())
                     } else {
-                        if (Class239_Sub12.anInt5969 != 2) Class255.aServerConnectionInfo_3285!!.method1259(0)
+                        if (BloomGraphicsOptionState.anInt5969 != 2) Class255.aServerConnectionInfo_3285!!.method1259(0)
                         else Class3.aServerConnectionInfo_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         SceneRegionState.anInt197 = 0

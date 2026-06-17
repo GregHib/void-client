@@ -178,7 +178,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             OverlayColorTable.anInt1756 = class45.method417("hint_headicons", 0)
             Class291.anInt3739 = class45.method417("hint_mapmarkers", 0)
             Class86.anInt1481 = class45.method417("mapflag", 0)
-            Class239_Sub10.anInt5948 = class45.method417("cross", 0)
+            RangedGraphicsOptionState.anInt5948 = class45.method417("cross", 0)
             CameraNodeList.anInt1742 = class45.method417("mapdots", 0)
             Class364.anInt4469 = class45.method417("scrollbar", 0)
             Class348_Sub40_Sub38.anInt9473 = class45.method417("name_icons", 0)

@@ -52,7 +52,7 @@ class TextureDefinitionCache internal constructor(i: Int, class45: Class45?, cla
         @JvmStatic
         fun method1626(i: Int, bool: Boolean) {
             anInt2962++
-            var i_1_ = Class239_Sub19.anInt6043
+            var i_1_ = NoOpGraphicsOptionState.anInt6043
             var i_2_ = Class348_Sub33.anInt6964
             if (i == 1) {
                 if (bool && Class305.aBoolean3870) {

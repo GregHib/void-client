@@ -72,7 +72,7 @@ class Class293 internal constructor(private val anInt3749: Int, private val aRen
                         for (i_0_ in 0..<(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084)) {
                             for (i_1_ in 0..<(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084)) {
                                 if (OverlayColorTable.aBooleanArrayArrayArray1751!![i - 1]!![i_0_]!![i_1_]) {
-                                    val i_2_ = (Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_0_)
+                                    val i_2_ = (DisplayModeOptionState.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_0_)
                                     val i_3_ = (Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_1_)
                                     if (i_2_ >= 0 && i_2_ < var_s!!.anInt4587 && i_3_ >= 0 && i_3_ < var_s.anInt4590) {
                                         Class9.aRenderer171!!.H(i_2_ shl Class362.anInt4459, var_s.method3982((-86).toByte(), i_3_, i_2_), i_3_ shl Class362.anInt4459, anIntArray3747)

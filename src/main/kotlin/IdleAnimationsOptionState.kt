@@ -1,7 +1,7 @@
 /* Class239_Sub7 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub7 : Class239 {
+class IdleAnimationsOptionState : GraphicsOptionState {
     override fun method1714(i: Int, i_0_: Int): Int {
         anInt5905++
         if (this.aClass348_Sub51_3136.method3425(-93)) return 3

@@ -144,7 +144,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                 } else string = "www-wtqa"
             } else string = "www-wtrc"
             var string_2_ = ""
-            if (Class239_Sub12.aString5966 != null) string_2_ = "/p=" + Class239_Sub12.aString5966
+            if (BloomGraphicsOptionState.aString5966 != null) string_2_ = "/p=" + BloomGraphicsOptionState.aString5966
             return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434?.aString2985) + ".com/l=" + Class348_Sub33.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
         }
 
@@ -181,13 +181,13 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                             }
                         }
                         if (Class285.aClass348_Sub16_Sub3_4743 == null) {
-                            if (Class239_Sub12.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564!!.method2869(Class286.Companion.aClass348_Sub2_3683, Class346.aBoolean4275, false)
-                            else Class98.aClass348_Sub16_Sub3_1564!!.method2870(Class286.Companion.aClass348_Sub2_3683, Class239_Sub12.aLong5971, Class346.aBoolean4275, true, 24.toByte())
+                            if (BloomGraphicsOptionState.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564!!.method2869(Class286.Companion.aClass348_Sub2_3683, Class346.aBoolean4275, false)
+                            else Class98.aClass348_Sub16_Sub3_1564!!.method2870(Class286.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, Class346.aBoolean4275, true, 24.toByte())
                         }
                         if (Class318_Sub1_Sub4.aClass279_8764 != null) Class318_Sub1_Sub4.aClass279_8764!!.method2088(bool, Class98.aClass348_Sub16_Sub3_1564)
                         ModelDefinition.aClass45_1848 = null
                         Class286.Companion.aClass348_Sub2_3683 = null
-                        Class239_Sub12.aLong5971 = 0L
+                        BloomGraphicsOptionState.aLong5971 = 0L
                         TextureDefinitionLoader.aClass26_1977 = null
                         Class285.aClass348_Sub16_Sub3_4743 = null
                         return true

@@ -1,6 +1,6 @@
 import GlElementArrayBuffer.Companion.method1156
 import ClickFeedbackTask.Companion.method1353
-import Class239_Sub5.Companion.method1742
+import SimpleToggleOptionState.Companion.method1742
 import Class348_Sub16_Sub3.Companion.method2878
 import Class348_Sub40_Sub32.Companion.method3135
 import Class62.method599
@@ -47,7 +47,7 @@ class ScanlineRasterFiller {
                 Class65.aClass110_Sub1Array1146 = arrayOfNulls<MapLabelMenuEntry>(NpcDefinition.anInt2956)
                 var i_2_ = 0
                 var i_3_ = Class318_Sub1_Sub2.anInt8731
-                while ((Class239_Sub29.anInt6151 >= i_3_)) {
+                while ((MultiLevelOptionState.anInt6151 >= i_3_)) {
                     val class110_sub1 = method1742(false, i_3_)
                     if (class110_sub1 != null) Class65.aClass110_Sub1Array1146!![i_2_++] = class110_sub1
                     i_3_++

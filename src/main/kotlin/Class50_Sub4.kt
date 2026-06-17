@@ -63,14 +63,14 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
         fun method473(i: Byte, i_25_: Int, class110_sub1: MapLabelMenuEntry?, i_26_: Int, bool: Boolean, bool_27_: Boolean, class110_sub1_28_: MapLabelMenuEntry?): Int {
             try {
                 anInt5257++
-                val i_29_ = Class239_Sub8.method1749(class110_sub1_28_, class110_sub1, bool, i_25_, (-30).toByte())
+                val i_29_ = FlickeringEffectsOptionState.method1749(class110_sub1_28_, class110_sub1, bool, i_25_, (-30).toByte())
                 if (i_29_ != 0) {
                     if (!bool) return i_29_
                     return -i_29_
                 }
                 if (i_26_ == -1) return 0
                 if (i >= -42) return -65
-                val i_30_ = Class239_Sub8.method1749(class110_sub1_28_, class110_sub1, bool_27_, i_26_, (-30).toByte())
+                val i_30_ = FlickeringEffectsOptionState.method1749(class110_sub1_28_, class110_sub1, bool_27_, i_26_, (-30).toByte())
                 if (bool_27_) return -i_30_
                 return i_30_
             } catch (runtimeexception: RuntimeException) {

@@ -1,7 +1,7 @@
 /* Class239_Sub12 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub12 : Class239 {
+class BloomGraphicsOptionState : GraphicsOptionState {
     override fun method1714(i: Int, i_0_: Int): Int {
         anInt5972++
         if (i != 3) return 121

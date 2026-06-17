@@ -26,7 +26,7 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
         fun method3276(soundEnvelope: SoundEnvelope) {
             if (Class331.anInt4135 < 65535) {
                 val class348_sub1 = soundEnvelope.aClass348_Sub1_2745
-                Class239_Sub14.aSoundEnvelopeArray5993!![Class331.anInt4135] = soundEnvelope
+                WaterDetailOptionState.aSoundEnvelopeArray5993!![Class331.anInt4135] = soundEnvelope
                 RenderNode.aBooleanArray9718!![Class331.anInt4135] = false
                 Class331.anInt4135++
                 var i = soundEnvelope.anInt2731

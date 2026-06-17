@@ -1,7 +1,7 @@
 /* Class239_Sub16 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub16 : Class239 {
+class ShadowQualityOptionState : GraphicsOptionState {
     override fun method1714(i: Int, i_5_: Int): Int {
         if (i != 3) anInt6012 = -22
         anInt6014++

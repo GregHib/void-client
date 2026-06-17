@@ -1,4 +1,4 @@
-import Class239.Companion.method1713
+import GraphicsOptionState.Companion.method1713
 import Class286_Sub5.Companion.method2158
 import Class299_Sub1_Sub1.Companion.method2260
 import jaggl.OpenGL.Companion.glBindProgramARB

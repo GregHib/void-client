@@ -1,4 +1,4 @@
-import Class239.Companion.method1717
+import GraphicsOptionState.Companion.method1717
 import java.util.*
 
 class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
@@ -112,7 +112,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             var i_11_ = 0
             var i_12_: Int
-            i_12_ = anInt9293 + Class239_Sub18.anIntArray6035!![i]
+            i_12_ = anInt9293 + LightDetailOptionState.anIntArray6035!![i]
             while (i_12_ < 0) {
                 i_12_ += 4096
             }
@@ -196,7 +196,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
                 Class367_Sub4.anInt7319 = Class348_Sub40_Sub3.Companion.anInt9109
                 Class290.method2196((-9).toByte())
                 Class62.anIntArrayArrayArray1116 = (Array<Array<IntArray?>?>(4) { Array<IntArray?>(Class367_Sub4.anInt7319 shr 3) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109 shr 3) } })
-                Class239_Sub8.anIntArrayArray5921 = (Array<IntArray?>(Class367_Sub4.anInt7319) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109) })
+                FlickeringEffectsOptionState.anIntArrayArray5921 = (Array<IntArray?>(Class367_Sub4.anInt7319) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109) })
                 Class348_Sub42_Sub17.anIntArrayArray9678 = (Array<IntArray?>(Class367_Sub4.anInt7319) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109) })
                 for (i_24_ in 0..3) Class348_Sub45.aClass361Array7108!![i_24_] = AnimatedModelRenderer.method988(Class348_Sub40_Sub3.Companion.anInt9109, 1, Class367_Sub4.anInt7319)
                 Class289.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(Class367_Sub4.anInt7319) { ByteArray(Class348_Sub40_Sub3.Companion.anInt9109) } })

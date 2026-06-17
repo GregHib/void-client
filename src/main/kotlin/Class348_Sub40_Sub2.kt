@@ -32,7 +32,7 @@ class Class348_Sub40_Sub2 : Class348_Sub40(0, true) {
             var i_3_ = 0
             while ( /**/i_3_ < Class348_Sub40_Sub6.Companion.anInt9139) {
                 val i_4_ = Class318_Sub6.anIntArray6432!![i_3_]
-                val i_5_ = Class239_Sub18.anIntArray6035!![i]
+                val i_5_ = LightDetailOptionState.anIntArray6035!![i]
                 var i_6_ = anInt9099 * i_4_ shr 12
                 val i_7_ = anInt9095 * i_5_ shr 12
                 val i_8_ = i_4_ % (4096 / anInt9099) * anInt9099

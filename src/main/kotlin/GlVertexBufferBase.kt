@@ -95,7 +95,7 @@ abstract class GlVertexBufferBase {
         fun method1151(i: Int, var_renderer: Renderer?, i_3_: Int): FontDefinition? {
             anInt1924++
             if (i != -25411) return null
-            val class352 = Class239_Sub3.method1734(i_3_, var_renderer, (-81).toByte(), true)
+            val class352 = ChatEffectsOptionState.method1734(i_3_, var_renderer, (-81).toByte(), true)
             if (class352 == null) return null
             return class352.aFontDefinition_4333
         }

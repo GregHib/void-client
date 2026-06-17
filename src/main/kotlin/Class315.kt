@@ -104,7 +104,7 @@ class Class315 internal constructor(var aString3953: String?) {
             Class346.aBoolean4275 = bool
             Class285.aClass348_Sub16_Sub3_4743 = null
             Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_
-            Class239_Sub14.anInt5994 = i_3_
+            WaterDetailOptionState.anInt5994 = i_3_
             Class348_Sub43.anInt7068 = 1
             Class318.anInt3971 = i_2_
             ModelDefinition.aClass45_1848 = class45

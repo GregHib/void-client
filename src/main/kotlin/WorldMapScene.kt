@@ -2,7 +2,7 @@ import NpcSummaryDefinition.Companion.method1166
 import RefCountedHandle.Companion.method1320
 import MapSceneDefLoader.Companion.method1394
 import LoadingScreenState.Companion.method1457
-import Class239.Companion.method1709
+import GraphicsOptionState.Companion.method1709
 import Class258_Sub3.Companion.method1968
 import Class318_Sub1_Sub5.Companion.method2483
 import Class324.Companion.method2570
@@ -422,7 +422,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class2
                                 i_98_ = (if (class22 == null) 0 else Class246.anIntArray3173!![i_76_.toInt()])
                                 i_100_ = (if (class277 == null) 0 else Class334.anIntArray4152!![i_76_.toInt()])
                                 is_97_ = Class284.anIntArrayArray3677!![i_76_.toInt()]!!
-                                is_99_ = (Class239_Sub20.anIntArrayArray6054!![i_76_.toInt()]!!)
+                                is_99_ = (FogOptionState.anIntArrayArray6054!![i_76_.toInt()]!!)
                                 is_96_ = (Exception_Sub1.anIntArrayArray111!![i_76_.toInt()]!!)
                                 is_95_ = (Class348_Sub16_Sub3.anIntArrayArray8910!![i_76_.toInt()])
                             }

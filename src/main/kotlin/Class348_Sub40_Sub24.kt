@@ -13,7 +13,7 @@ class Class348_Sub40_Sub24 : Class348_Sub40(0, true) {
         anInt9328++
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_1_ = Class239_Sub18.anIntArray6035!![i]
+            val i_1_ = LightDetailOptionState.anIntArray6035!![i]
             if (anInt9325 == 0) {
                 var i_7_ = 0
                 for (i_8_ in 0..<anInt9329) {

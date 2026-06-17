@@ -187,7 +187,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
         @JvmStatic
         fun method3542(i: Int, class357s: Array<Array<Array<Class357?>?>?>?, i_13_: Int, i_14_: Int, i_15_: Int, bool: Boolean): Boolean {
             anInt7310++
-            val i_16_ = if (bool) 1.toByte() else (Class239_Sub15.anInt6006 and 0xff).toByte()
+            val i_16_ = if (bool) 1.toByte() else (TextureQualityOptionState.anInt6006 and 0xff).toByte()
             if (i_16_ == Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_13_]!![i]) return false
             if (((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_13_]!![i]).toInt() and 0x4) == 0) return false
             var i_17_ = i_14_

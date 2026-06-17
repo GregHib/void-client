@@ -1,4 +1,4 @@
-import Class239_Sub28.Companion.method1846
+import TwoStateOptionState.Companion.method1846
 import Class246.Companion.method1885
 import Class286_Sub9.Companion.method2174
 import Class299_Sub1.Companion.method2259

@@ -42,7 +42,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             var i_14_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_14_) {
                 val i_15_ = (-is_8_[i_14_] + is_10_[i_14_]) * anInt9438
-                val i_16_ = (anInt9438 * (is_9_[1 + i_14_ and Class239_Sub22.anInt6076] - is_9_[Class239_Sub22.anInt6076 and -1 + i_14_]))
+                val i_16_ = (anInt9438 * (is_9_[1 + i_14_ and SimpleBinaryOptionState.anInt6076] - is_9_[SimpleBinaryOptionState.anInt6076 and -1 + i_14_]))
                 val i_17_ = i_16_ shr 12
                 val i_18_ = i_15_ shr 12
                 val i_19_ = i_17_ * i_17_ shr 12
@@ -139,7 +139,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             Class301.method2282(-12648)
             Class50_Sub3.method465(i + -1636518175)
             FloatCameraTransform.aLong5745 = 0L
-            Class239_Sub4.aClass348_Sub26_5881 = null
+            LightingOptionState.aClass348_Sub26_5881 = null
             if (bool) Class348_Sub49.method3379(2, 12)
             else {
                 Class348_Sub49.method3379(i + -9, 3)

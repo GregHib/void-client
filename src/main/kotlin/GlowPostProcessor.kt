@@ -144,7 +144,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             Class30.aClass84_413!!.method819(74.toByte(), 5)
             HoverActionEntry.aClass25_1813!!.method299(5, 16)
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1392(88, 5)
-            Class239.aItemDefinitionLoader_3147!!.method1285(i, 8)
+            GraphicsOptionState.aItemDefinitionLoader_3147!!.method1285(i, 8)
             SpriteLoadValidator.aClass65_4787!!.method697(5, 26)
             Class73.aModelDefinitionCache_4782!!.method1603(5, -66)
             method876(5, 0)

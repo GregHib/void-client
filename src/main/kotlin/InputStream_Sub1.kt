@@ -103,7 +103,7 @@ class InputStream_Sub1 : InputStream() {
             if (i != -16203) Companion.method125(125, -95, 109, null, (-52).toByte())
             Class50_Sub2.method464(-1)
             Class348_Sub18.method2938(98.toByte())
-            Class239_Sub12.method1772(28)
+            BloomGraphicsOptionState.method1772(28)
             System.gc()
             Class348_Sub8.aRenderer6654!!.ya()
         }

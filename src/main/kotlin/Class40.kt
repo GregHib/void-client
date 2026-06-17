@@ -108,25 +108,25 @@ class Class40 internal constructor() {
                 Class285.aClass348_Sub16_Sub3_4743 = null
                 Class318.anInt3971 = i_2_
                 Class58.anInt1059 = i
-                Class239_Sub14.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564!!.method2844(103.toByte()) / i_3_)
-                if (Class239_Sub14.anInt5994 < 1) Class239_Sub14.anInt5994 = 1
+                WaterDetailOptionState.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564!!.method2844(103.toByte()) / i_3_)
+                if (WaterDetailOptionState.anInt5994 < 1) WaterDetailOptionState.anInt5994 = 1
             } else method2732(i_2_, i_1_, bool, 123, class45, i)
         }
 
         @JvmStatic
         fun method369(i: Int) {
             Class348_Sub45.aAbstractModelRendererArray7107 = null
-            Class239_Sub2.aAbstractModelRendererArray5857 = null
+            CameraDistanceOptionState.aAbstractModelRendererArray5857 = null
             Class348_Sub12.aAbstractModelRendererArray6742 = null
             Class240.aAbstractModelRendererArray4679 = null
             if (i != -29776) method370(true)
             Class79.aAbstractModelRenderer_1365 = null
             Class25.aAbstractModelRendererArray367 = null
-            Class239_Sub9.aAbstractModelRendererArray5933 = null
+            CustomCursorsOptionState.aAbstractModelRendererArray5933 = null
             ScriptResources.aAbstractModelRendererArray2640 = null
             Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = null
             Class262.aClass324_3326 = null
-            Class239_Sub24.aAbstractModelRenderer_6097 = null
+            SceneryDetailOptionState.aAbstractModelRenderer_6097 = null
             GameAppletFrame.aClass324_20 = null
             Class240.aClass324_4684 = null
             HostPingThread.aAbstractModelRendererArray2260 = null

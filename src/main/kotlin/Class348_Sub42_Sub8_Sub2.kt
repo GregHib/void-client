@@ -2,12 +2,12 @@ import GameAppletFrame.Companion.method94
 import GameAppletFrame.Companion.set
 import AbstractMenuEntry.Companion.method1034
 import AbstractGameSocket.Companion.method1703
-import Class239.Companion.method1713
-import Class239_Sub16.Companion.method1788
-import Class239_Sub19.Companion.method1803
-import Class239_Sub25.Companion.method1825
-import Class239_Sub28.Companion.method1844
-import Class239_Sub29.Companion.method1851
+import GraphicsOptionState.Companion.method1713
+import ShadowQualityOptionState.Companion.method1788
+import NoOpGraphicsOptionState.Companion.method1803
+import DisplayModeOptionState.Companion.method1825
+import TwoStateOptionState.Companion.method1844
+import MultiLevelOptionState.Companion.method1851
 import Class285_Sub1.Companion.method2127
 import Class318_Sub1_Sub1.Companion.method2396
 import Class324.Companion.method2570
@@ -55,7 +55,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             anInt10433++
             val i_2_ = 18 / ((i_1_ - 30) / 42)
             if (!Class296.method2224(i, (-118).toByte(), i_0_)) return false
-            if (Class239_Sub26.method1833((-118).toByte(), i, i_0_) or ((0x9000 and i) != 0) or Class348_Sub23_Sub4.method2985(-31735, i_0_, i)) return true
+            if (DetailLevelOptionState.method1833((-118).toByte(), i, i_0_) or ((0x9000 and i) != 0) or Class348_Sub23_Sub4.method2985(-31735, i_0_, i)) return true
             return (((0x37 and i_0_) == 0) and (((0x2000 and i) != 0) or Class274.method2058(i, i_0_, 88) or method3203(i_0_, 127.toByte(), i)))
         }
 
@@ -111,8 +111,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 MinimapRectClipper.anInt221 += Class348_Sub40_Sub25.anInt9341
                 Class348_Sub50.anInt7213 = 0
             }
-            Class348_Sub40_Sub36.aIntRange_9456 = Class239.aIntRange_3145
-            Class239.aIntRange_3145 = AbstractGameSocket.aIntRange_3133
+            Class348_Sub40_Sub36.aIntRange_9456 = GraphicsOptionState.aIntRange_3145
+            GraphicsOptionState.aIntRange_3145 = AbstractGameSocket.aIntRange_3133
             AbstractGameSocket.aIntRange_3133 = Class348_Sub3.aIntRange_6584
             if (IOException_Sub1.aIntRange_90 == Class348_Sub3.aIntRange_6584) {
                 Class43.method382(Class299.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
@@ -183,19 +183,19 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class251.method1916(-9343, class46)
                     Class251.method1913(true, -123, class46)
                 }
-                if (RenderNode.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), RenderNode.anInt9721, 1)
+                if (RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 1)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
             if (bool != true) aSceneProjector_10434 = null
             if (Class348_Sub3.aIntRange_6584 == InputSettingsState.aIntRange_1762) {
-                Class239_Sub4.aString5882 = (if (Class348_Sub40_Sub25.anInt9341 > 2) Class299.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else Class274.aClass274_3509!!.method2063(Class348_Sub33.anInt6967, 544))
+                LightingOptionState.aString5882 = (if (Class348_Sub40_Sub25.anInt9341 > 2) Class299.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else Class274.aClass274_3509!!.method2063(Class348_Sub33.anInt6967, 544))
                 Class333.anInt4144 = (if (Class348_Sub40_Sub25.anInt9341 <= 0) -1 else Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
                 if (Class333.anInt4144 == 65535) Class333.anInt4144 = -1
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class239.aIntRange_3135 == Class348_Sub3.aIntRange_6584) {
+            if (GraphicsOptionState.aIntRange_3135 == Class348_Sub3.aIntRange_6584) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(62.toByte())
                 val i_11_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
@@ -258,9 +258,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class357.aLongArray4410!![Class79.anInt1359] = l_19_
                     Class79.anInt1359 = (1 + Class79.anInt1359) % 100
                     val string_22_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
-                    if (i == 2 || i == 3) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_16_, string_22_, (-126).toByte(), -1, "<img=1>" + string, Class239_Sub16.method1788((-76).toByte(), l), 9, 0, string)
-                    else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_16_, string_22_, (-125).toByte(), -1, string, Class239_Sub16.method1788((-83).toByte(), l), 9, 0, string)
-                    else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_16_, string_22_, (-126).toByte(), -1, "<img=0>" + string, Class239_Sub16.method1788((-75).toByte(), l), 9, 0, string)
+                    if (i == 2 || i == 3) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_16_, string_22_, (-126).toByte(), -1, "<img=1>" + string, ShadowQualityOptionState.method1788((-76).toByte(), l), 9, 0, string)
+                    else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_16_, string_22_, (-125).toByte(), -1, string, ShadowQualityOptionState.method1788((-83).toByte(), l), 9, 0, string)
+                    else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_16_, string_22_, (-126).toByte(), -1, "<img=0>" + string, ShadowQualityOptionState.method1788((-75).toByte(), l), 9, 0, string)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -292,7 +292,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class239_Sub24.aIntRange_6089) {
+            if (Class348_Sub3.aIntRange_6584 == SceneryDetailOptionState.aIntRange_6089) {
                 Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 Class348_Sub40_Sub12.anInt9200 = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-84).toByte())
                 Class278.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813!!.method3341(-8679).toInt() shl 3)
@@ -369,7 +369,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class239_Sub20.aIntRange_6056) {
+            if (Class348_Sub3.aIntRange_6584 == FogOptionState.aIntRange_6056) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(75.toByte())
                 val i_37_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 var i_38_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
@@ -615,7 +615,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class239_Sub11.aIntRange_5949 == Class348_Sub3.aIntRange_6584) {
+            if (BinaryGraphicsOptionState.aIntRange_5949 == Class348_Sub3.aIntRange_6584) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_76_ = i shr 5
                 val i_77_ = 0x1f and i
@@ -627,7 +627,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val class302 = Class302()
                 class302.anInt3840 = i_77_
                 class302.anInt3831 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                if (class302.anInt3831 >= 0 && (class302.anInt3831 < Class239_Sub9.aAbstractModelRendererArray5933!!.size)) {
+                if (class302.anInt3831 >= 0 && (class302.anInt3831 < CustomCursorsOptionState.aAbstractModelRendererArray5933!!.size)) {
                     if (class302.anInt3840 == 1 || class302.anInt3840 == 10) {
                         class302.anInt3833 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 += 6
@@ -677,7 +677,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class239_Sub26.aIntRange_6121) {
+            if (Class348_Sub3.aIntRange_6584 == DetailLevelOptionState.aIntRange_6121) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 val i_78_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
@@ -770,7 +770,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class239_Sub22.aIntRange_6075 == Class348_Sub3.aIntRange_6584) {
+            if (SimpleBinaryOptionState.aIntRange_6075 == Class348_Sub3.aIntRange_6584) {
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 method1851(125.toByte())
                 Class348_Sub3.aIntRange_6584 = null
@@ -893,7 +893,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub42_Sub8.Companion.aIntRange_9552 == Class348_Sub3.aIntRange_6584) {
-                if (RenderNode.anInt9721 != -1) Class239_Sub12.method1775((-8).toByte(), RenderNode.anInt9721, 0)
+                if (RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 0)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -994,10 +994,10 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (!bool_119_ && Class250.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_118_
                     Class79.anInt1359 = (Class79.anInt1359 + 1) % 100
-                    val string_121_ = (Class239_Sub6.aClass355_5900!!.method3471(i_117_, (-106).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
+                    val string_121_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_117_, (-106).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_114_, string_121_, (-120).toByte(), i_117_, "<img=1>" + string, method1788(87.toByte(), l), 20, 0, string)
                     else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_114_, string_121_, (-111).toByte(), i_117_, string, method1788(80.toByte(), l), 20, 0, string)
-                    else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_114_, string_121_, (-116).toByte(), i_117_, "<img=0>" + string, Class239_Sub16.method1788((-98).toByte(), l), 20, 0, string)
+                    else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_114_, string_121_, (-116).toByte(), i_117_, "<img=0>" + string, ShadowQualityOptionState.method1788((-98).toByte(), l), 20, 0, string)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1057,7 +1057,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub3.aIntRange_6584 == HeapDiagnosticsHolder.aIntRange_2255) {
                 val string = Class299.aClass348_Sub49_Sub2_3813!!.readString((-104).toByte())
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val string_133_ = (Class239_Sub6.aClass355_5900!!.method3471(i, (-98).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
+                val string_133_ = (BrightnessOptionState.aClass355_5900!!.method3471(i, (-98).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
                 Class318_Sub1_Sub3_Sub5.method2477(string, string_133_, (-122).toByte(), i, string, null, 19, 0, string)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1098,7 +1098,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class239_Sub21.aIntRange_6058 == Class348_Sub3.aIntRange_6584) {
+            if (RemoveRoofsOptionState.aIntRange_6058 == Class348_Sub3.aIntRange_6584) {
                 method128(TextureGenerator.aClass74_2491, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1161,10 +1161,10 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub3.aIntRange_6584 == Class348_Sub45.aIntRange_7105) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                if (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) Class239_Sub26.aClass54Array6114!![i] = Class54()
+                if (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) DetailLevelOptionState.aClass54Array6114!![i] = Class54()
                 else {
                     Class299.aClass348_Sub49_Sub2_3813!!.anInt7197--
-                    Class239_Sub26.aClass54Array6114!![i] = Class54(Class299.aClass348_Sub49_Sub2_3813!!)
+                    DetailLevelOptionState.aClass54Array6114!![i] = Class54(Class299.aClass348_Sub49_Sub2_3813!!)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 MapAreaDefinition.anInt2523 = Class311.anInt3918
@@ -1323,7 +1323,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class239.aIntRange_3143) {
+            if (Class348_Sub3.aIntRange_6584 == GraphicsOptionState.aIntRange_3143) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_167_ = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-83)
                 Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.method1313(42.toByte(), i_167_.toInt(), i)
@@ -1392,7 +1392,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (!bool_179_ && Class250.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_178_
                     Class79.anInt1359 = (Class79.anInt1359 - -1) % 100
-                    val string_181_ = (Class239_Sub6.aClass355_5900!!.method3471(i_177_, (-93).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 62.toByte()))
+                    val string_181_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_177_, (-93).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 62.toByte()))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_175_, string_181_, (-110).toByte(), i_177_, "<img=1>" + string, null, 18, 0, string)
                     else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_175_, string_181_, (-112).toByte(), i_177_, "<img=0>" + string, null, 18, 0, string)
                     else Class318_Sub1_Sub3_Sub5.method2477(string_175_, string_181_, (-118).toByte(), i_177_, string, null, 18, 0, string)
@@ -1439,7 +1439,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class239_Sub14.aIntRange_5992) {
+            if (Class348_Sub3.aIntRange_6584 == WaterDetailOptionState.aIntRange_5992) {
                 method128(Class265.aClass74_4689, 8.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return true
@@ -1469,7 +1469,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class239_Sub15.aIntRange_5997) {
+            if (Class348_Sub3.aIntRange_6584 == TextureQualityOptionState.aIntRange_5997) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val `is` = IntArray(4)
                 for (i_192_ in 0..3) `is`[i_192_] = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -1588,7 +1588,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class239_Sub4.aIntRange_5883) {
+            if (Class348_Sub3.aIntRange_6584 == LightingOptionState.aIntRange_5883) {
                 var i = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 if (i == 65535) i = -1
                 var i_208_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
@@ -1678,7 +1678,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class239_Sub11.aIntRange_5950 == Class348_Sub3.aIntRange_6584) {
+            if (BinaryGraphicsOptionState.aIntRange_5950 == Class348_Sub3.aIntRange_6584) {
                 var i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-113).toByte())
                 var i_225_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(127.toByte())
                 if (i == 255) {
@@ -1712,7 +1712,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 var bool_230_ = false
                 if (i <= 1 && Class351.method3455(string_228_, 28280)) bool_230_ = true
                 if (!bool_230_ && Class250.anInt3227 == 0) {
-                    val string_231_ = (Class239_Sub6.aClass355_5900!!.method3471(i_229_, (-108).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
+                    val string_231_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_229_, (-108).toByte()).method3216(Class299.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
                     if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_228_, string_231_, (-127).toByte(), i_229_, "<img=1>" + string, null, 25, 0, string)
                     else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_228_, string_231_, (-119).toByte(), i_229_, string, null, 25, 0, string)
                     else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_228_, string_231_, (-125).toByte(), i_229_, "<img=0>" + string, null, 25, 0, string)
@@ -1786,7 +1786,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            LinkedListIterator.method1242(("T1 - " + (if (Class348_Sub3.aIntRange_6584 == null) -1 else Class348_Sub3.aIntRange_6584!!.method1058(110.toByte())) + "," + (if (Class239.aIntRange_3145 == null) -1 else Class239.aIntRange_3145!!.method1058(127.toByte())) + "," + (if (Class348_Sub40_Sub36.aIntRange_9456 == null) -1 else Class348_Sub40_Sub36.aIntRange_9456!!.method1058(125.toByte())) + " - " + Class348_Sub40_Sub25.anInt9341), null, 15004)
+            LinkedListIterator.method1242(("T1 - " + (if (Class348_Sub3.aIntRange_6584 == null) -1 else Class348_Sub3.aIntRange_6584!!.method1058(110.toByte())) + "," + (if (GraphicsOptionState.aIntRange_3145 == null) -1 else GraphicsOptionState.aIntRange_3145!!.method1058(127.toByte())) + "," + (if (Class348_Sub40_Sub36.aIntRange_9456 == null) -1 else Class348_Sub40_Sub36.aIntRange_9456!!.method1058(125.toByte())) + " - " + Class348_Sub40_Sub25.anInt9341), null, 15004)
             Class348_Sub40_Sub34.method3141(false, 11.toByte())
             return true
         }

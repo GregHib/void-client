@@ -14,7 +14,7 @@ object MinimapStateReset {
         Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163
         Class348_Sub40_Sub21.anInt9282 = 1
         NativeShaderProgram.anInt9775 = -1
-        Class239_Sub12.anInt5973 = 0
+        BloomGraphicsOptionState.anInt5973 = 0
         Class292.anInt4803 = -1
         Class367_Sub11.anInt7403 = 0
     }

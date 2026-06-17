@@ -39,7 +39,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
             anInt4897++
             val class43 = Class43()
             class43.anInt615 = class348_sub49.readUnsignedShort(842397944)
-            class43.aClass348_Sub42_Sub10_614 = Class239_Sub6.aClass355_5900!!.method3471(class43.anInt615, (-90).toByte())
+            class43.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aClass355_5900!!.method3471(class43.anInt615, (-90).toByte())
             val i_0_ = -91 / ((9 - i) / 54)
             return class43
         }

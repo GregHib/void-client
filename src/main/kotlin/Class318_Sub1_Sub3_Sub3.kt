@@ -862,16 +862,16 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class348.aClass318_Sub1Array4293 = null
             Class250.aClass318_Sub1Array3226 = null
             OverlayColorTable.aClass318_Sub1Array1754 = null
-            if (Class239_Sub21.aClass318_Sub1Array6066 != null) {
-                for (i in Class239_Sub21.aClass318_Sub1Array6066!!.indices) Class239_Sub21.aClass318_Sub1Array6066!![i] = null
+            if (RemoveRoofsOptionState.aClass318_Sub1Array6066 != null) {
+                for (i in RemoveRoofsOptionState.aClass318_Sub1Array6066!!.indices) RemoveRoofsOptionState.aClass318_Sub1Array6066!![i] = null
                 Class5_Sub1_Sub1.anInt9930 = 0
             }
             if (Class291.aClass318_Sub1Array3737 != null) {
                 for (i in Class291.aClass318_Sub1Array3737!!.indices) Class291.aClass318_Sub1Array3737!![i] = null
                 Class348_Sub42_Sub3.anInt9504 = 0
             }
-            if (Class239_Sub14.aSoundEnvelopeArray5993 != null) {
-                for (i in 0..<Class331.anInt4135) Class239_Sub14.aSoundEnvelopeArray5993!![i] = null
+            if (WaterDetailOptionState.aSoundEnvelopeArray5993 != null) {
+                for (i in 0..<Class331.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i] = null
                 for (i in 0..<MapAreaDefinition.anInt2524) {
                     for (i_84_ in 0..<Class318_Sub7.anInt6451) {
                         for (i_85_ in 0..<Class348_Sub41.anInt7054) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
@@ -884,7 +884,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class71.aClass76_1208!!.method775(69.toByte())
             Class348_Sub1_Sub2.aByteArrayArray8816 = null
             Class342.anIntArrayArray4253 = null
-            Class239_Sub1.aShortArrayArray5847 = null
+            BooleanGraphicsOptionState.aShortArrayArray5847 = null
             if (Class348_Sub40_Sub34.aClass293Array9432 != null) {
                 Class260.method1978()
                 Class9.aRenderer171!!.method3631(1)

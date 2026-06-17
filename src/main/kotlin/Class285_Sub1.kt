@@ -1,4 +1,4 @@
-import Class239_Sub29.Companion.method1849
+import MultiLevelOptionState.Companion.method1849
 import jaclib.memory.Buffer
 import jaclib.memory.Source
 
@@ -118,7 +118,7 @@ class Class285_Sub1 internal constructor(class377: Class377, bool: Boolean) : Cl
             anInt8494++
             CameraRotationStub.aRenderer326!!.method3638(RenderNode.aAbstractCameraTransform_9720)
             if (i < 9) anInt8492 = -40
-            CameraRotationStub.aRenderer326!!.DA(Class248.anInt3202, Class239_Sub5.anInt5886, Gl3dTexture.anInt8630, Class27.anInt394)
+            CameraRotationStub.aRenderer326!!.DA(Class248.anInt3202, SimpleToggleOptionState.anInt5886, Gl3dTexture.anInt8630, Class27.anInt394)
         }
 
         @JvmStatic

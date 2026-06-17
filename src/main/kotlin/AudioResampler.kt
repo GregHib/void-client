@@ -150,7 +150,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
         fun method1273(`is`: IntArray, bool: Boolean): String {
             anInt2161++
             val stringbuffer = StringBuffer()
-            var i = Class239_Sub1.anInt5850
+            var i = BooleanGraphicsOptionState.anInt5850
             var i_24_ = 0
             while (`is`.size > i_24_) {
                 val class321 = Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1408(-12637, `is`[i_24_])

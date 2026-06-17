@@ -1,7 +1,7 @@
 /* Class239_Sub5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub5 : Class239 {
+class SimpleToggleOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         anInt5892++
         if (i != 20014) return 98
@@ -62,7 +62,7 @@ class Class239_Sub5 : Class239 {
         fun method1740(i: Int, i_2_: Int, bool: Boolean): Boolean {
             if (bool != false) return true
             anInt5890++
-            return Class239_Sub26.method1833((-128).toByte(), i_2_, i) || Class348_Sub42_Sub8_Sub2.method3200(i_2_, i, 96.toByte())
+            return DetailLevelOptionState.method1833((-128).toByte(), i_2_, i) || Class348_Sub42_Sub8_Sub2.method3200(i_2_, i, 96.toByte())
         }
 
         @JvmStatic
@@ -113,7 +113,7 @@ class Class239_Sub5 : Class239 {
         fun method1742(bool: Boolean, i: Int): MapLabelMenuEntry? {
             if (bool != false) method1740(35, -126, false)
             anInt5885++
-            if (!RenderableGroup.aBoolean5013 || Class318_Sub1_Sub2.anInt8731 > i || Class239_Sub29.anInt6151 < i) return null
+            if (!RenderableGroup.aBoolean5013 || Class318_Sub1_Sub2.anInt8731 > i || MultiLevelOptionState.anInt6151 < i) return null
             return (OutputStream_Sub1.aClass110_Sub1Array97!![i + -Class318_Sub1_Sub2.anInt8731])
         }
     }

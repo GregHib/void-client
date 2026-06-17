@@ -51,8 +51,8 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                         var i_20_ = i_18_
                         var i_21_ = i_19_
                         if (Class348_Sub49.anInt7207 == 1) {
-                            i_20_ = (i_18_.toDouble() * LinkedNodeListIterator.anInt1651.toDouble() / Class239_Sub16.anInt6008.toDouble()).toInt()
-                            i_21_ = (LinkedNodeListIterator.anInt1651.toDouble() * i_19_.toDouble() / Class239_Sub16.anInt6008.toDouble()).toInt()
+                            i_20_ = (i_18_.toDouble() * LinkedNodeListIterator.anInt1651.toDouble() / ShadowQualityOptionState.anInt6008.toDouble()).toInt()
+                            i_21_ = (LinkedNodeListIterator.anInt1651.toDouble() * i_19_.toDouble() / ShadowQualityOptionState.anInt6008.toDouble()).toInt()
                         }
                         if (!Class348_Sub16_Sub2.aBoolean8870) {
                             if (Class348_Sub49.anInt7207 == 1) method383(0)
@@ -66,8 +66,8 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             val i_28_ = (Class348_Sub42_Sub9_Sub1.anInt10444 + i_26_ + -Class348_Sub3.anInt6568)
                             val i_29_ = Class59_Sub1.anInt5283 + i_27_
                             val i_30_ = LinkedNodeListIterator.anInt1651 + i_28_
-                            if ((i_27_ < 0 || i_28_ < 0 || i_29_ > Class348_Sub16_Sub1.anInt8854 || (i_30_ > Class239_Sub16.anInt6008)) && Class348_Sub49.anInt7207 != 2) {
-                                if (i_29_ <= 0 || i_30_ <= 0 || (Class348_Sub16_Sub1.anInt8854 <= i_27_) || (i_28_ >= Class239_Sub16.anInt6008)) Class348_Sub16_Sub2.aBoolean8870 = true
+                            if ((i_27_ < 0 || i_28_ < 0 || i_29_ > Class348_Sub16_Sub1.anInt8854 || (i_30_ > ShadowQualityOptionState.anInt6008)) && Class348_Sub49.anInt7207 != 2) {
+                                if (i_29_ <= 0 || i_30_ <= 0 || (Class348_Sub16_Sub1.anInt8854 <= i_27_) || (i_28_ >= ShadowQualityOptionState.anInt6008)) Class348_Sub16_Sub2.aBoolean8870 = true
                                 else {
                                     val i_31_ = i_27_ - SoundEnvelope.anInt2747
                                     val i_32_ = (i_28_ - Class348_Sub42_Sub9_Sub1.anInt10444)
@@ -124,7 +124,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     val i_52_: Int
                                     val i_53_: Int
                                     if (i_34_ >= 0) {
-                                        i_50_ = Class239_Sub16.anInt6008 + -i_34_
+                                        i_50_ = ShadowQualityOptionState.anInt6008 + -i_34_
                                         i_48_ = 0
                                         i_49_ = i_50_
                                         i_51_ = i_34_
@@ -139,7 +139,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     } else {
                                         i_48_ = -i_34_
                                         i_49_ = 0
-                                        i_50_ = Class239_Sub16.anInt6008 + i_34_
+                                        i_50_ = ShadowQualityOptionState.anInt6008 + i_34_
                                         i_51_ = i_48_
                                         i_52_ = i_50_
                                         i_53_ = i_51_
@@ -175,7 +175,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                                 val i_61_ = -i_60_ + (min(i_58_, i_56_))
                                                 if (i_61_ <= Class348_Sub16_Sub1.anInt8854) {
                                                     val i_62_ = (-i_60_ + (min(i_59_, i_57_)))
-                                                    if (Class239_Sub16.anInt6008 >= i_62_) {
+                                                    if (ShadowQualityOptionState.anInt6008 >= i_62_) {
                                                         val i_63_ = ((max(i_58_, i_56_)) - -i_60_)
                                                         if (i_63_ >= 0) {
                                                             val i_64_ = ((max(i_59_, i_57_)) + i_60_)
@@ -232,13 +232,13 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     Class348_Sub40_Sub8.anInt9157 = (-Class348_Sub3.anInt6568 + i_26_ + Class348_Sub42_Sub9_Sub1.anInt10444)
                                     Class339.anInt4211 = (-Class328.anInt4100 + SoundEnvelope.anInt2747 + i_25_)
                                     if (Class348_Sub49.anInt7207 == 1) {
-                                        Class239_Sub24.anInt6095 += i_35_
+                                        SceneryDetailOptionState.anInt6095 += i_35_
                                         Class286.anInt3682 += i_36_
                                         for (i_65_ in 0..<Class250.anInt3225) {
                                             val i_66_ = ((Class350.method3452(i_65_ - -Class286.anInt3682, (-15).toByte(), Class250.anInt3225)) * Class31.anInt425)
                                             var i_67_ = 0
                                             while ((Class31.anInt425 > i_67_)) {
-                                                val i_68_ = ((Class350.method3452(i_67_ + (Class239_Sub24.anInt6095), (-15).toByte(), Class31.anInt425)) + i_66_)
+                                                val i_68_ = ((Class350.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), Class31.anInt425)) + i_66_)
                                                 val bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)))
                                                 Class92.anInterface4Array1525!![i_68_]!!.method15(Class58.anInt1067 * i_67_, i_65_ * Class344.anInt4267, Class58.anInt1067, Class344.anInt4267, 0, 0, bool_69_, true)
                                                 i_67_++

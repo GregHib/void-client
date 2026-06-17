@@ -266,11 +266,11 @@ class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
                     }
                 }
                 spriteImages = SpriteImage.method1519(class45, Class373_Sub2.anInt7429, 0)
-                Class239_Sub2.aAbstractModelRendererArray5857 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                CameraDistanceOptionState.aAbstractModelRendererArray5857 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
                     while (spriteImages.size > i) {
-                        Class239_Sub2.aAbstractModelRendererArray5857!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                        CameraDistanceOptionState.aAbstractModelRendererArray5857!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }
@@ -293,8 +293,8 @@ class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
                     }
                 }
                 spriteImages = SpriteImage.method1519(class45, OverlayColorTable.anInt1756, 0)
-                Class239_Sub9.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                for (i in spriteImages.indices) Class239_Sub9.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                CustomCursorsOptionState.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                for (i in spriteImages.indices) CustomCursorsOptionState.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(spriteImages[i], true)
                 spriteImages = SpriteImage.method1519(class45, Class291.anInt3739, 0)
                 Class59_Sub1.aAbstractModelRendererArray5294 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
@@ -313,7 +313,7 @@ class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, Class239_Sub10.anInt5948, 0)
+                spriteImages = SpriteImage.method1519(class45, RangedGraphicsOptionState.anInt5948, 0)
                 Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) Class348_Sub40_Sub37.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(spriteImages[i], true)
                 spriteImages = SpriteImage.method1519(class45, CameraNodeList.anInt1742, 0)
@@ -338,7 +338,7 @@ class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
                     }
                 }
                 Class79.aAbstractModelRenderer_1365 = var_renderer!!.method3691(SpriteImage.method1521(class45, Class52.anInt4895, 0), bool)
-                Class239_Sub24.aAbstractModelRenderer_6097 = var_renderer.method3691(SpriteImage.method1521(class45, (PerlinTextureProvider.anInt5814), 0), true)
+                SceneryDetailOptionState.aAbstractModelRenderer_6097 = var_renderer.method3691(SpriteImage.method1521(class45, (PerlinTextureProvider.anInt5814), 0), true)
                 spriteImages = SpriteImage.method1519(class45, Class5_Sub3.anInt8370, 0)
                 ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) ScriptResources.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(spriteImages[i], true)

@@ -605,7 +605,7 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
                 Class348_Sub40_Sub4.aAbstractCameraTransform_9114 = var_renderer.method3640()
                 Class348_Sub42_Sub10.Companion.anInt9577 = 0
                 var i_8_ = 0
-                while ( /**/Class239_Sub26.anInt6115 > i_8_) {
+                while ( /**/DetailLevelOptionState.anInt6115 > i_8_) {
                     Class318_Sub2.method2498(HintArrowOrMessage.aClass338Array2034!![i_8_], var_renderer, (-112).toByte(), i)
                     i_8_++
                 }

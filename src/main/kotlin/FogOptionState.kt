@@ -1,7 +1,7 @@
 /* Class239_Sub20 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub20 : Class239 {
+class FogOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         if (i != 20014) return -9
         anInt6055++

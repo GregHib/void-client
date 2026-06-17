@@ -1,5 +1,5 @@
 import CharCountUtil.method256
-import Class239.Companion.method1711
+import GraphicsOptionState.Companion.method1711
 import Class52.Companion.method494
 
 /* Class87 - Decompiled by JODE

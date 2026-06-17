@@ -70,7 +70,7 @@ class Class253 {
                 if (bool == true) {
                     anInt3247++
                     RuntimeException_Sub1.anInt4596 = i
-                    Class239_Sub12.anInt5969 = 2
+                    BloomGraphicsOptionState.anInt5969 = 2
                     LocalPlayerState.method1138(string_12_, false, string, (-45).toByte())
                 }
             } catch (runtimeexception: RuntimeException) {

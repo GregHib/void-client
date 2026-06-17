@@ -71,8 +71,8 @@ class ServerConnectionInfo {
                 i = 0
             }
             anInt2140++
-            if (Class239_Sub14.aModelLightingConfig_5990 == null || !Class239_Sub14.aModelLightingConfig_5990!!.method1424(modelLightingConfig!!, 84.toByte())) {
-                Class239_Sub14.aModelLightingConfig_5990 = modelLightingConfig
+            if (WaterDetailOptionState.aModelLightingConfig_5990 == null || !WaterDetailOptionState.aModelLightingConfig_5990!!.method1424(modelLightingConfig!!, 84.toByte())) {
+                WaterDetailOptionState.aModelLightingConfig_5990 = modelLightingConfig
                 Class348_Sub33.aLong6963 = method599(-78)
                 Class286_Sub5.anInt6248 = i
                 FrameBufferObject.anInt4889 = Class286_Sub5.anInt6248
@@ -80,14 +80,14 @@ class ServerConnectionInfo {
                 else {
                     Class318_Sub1_Sub1.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137
                     DelegatingRenderCanvas.anInt70 = LocTypeDefLoader.anInt2500
-                    Class239_Sub24.aClass299_6098 = HeapInfoRecord.aClass299_4938
+                    SceneryDetailOptionState.aClass299_6098 = HeapInfoRecord.aClass299_4938
                     Class64.aFloat1136 = TextureMetadataProvider.aFloat4626
                     Class245.aFloat3172 = Class269.aFloat3462
                     Class45.aFloat670 = Class348_Sub3.aFloat6586
-                    Class258_Sub4.aFloat8560 = Class239_Sub10.aFloat5945
+                    Class258_Sub4.aFloat8560 = RangedGraphicsOptionState.aFloat5945
                     Class246.aFloat3177 = Class361.aFloat4455
                     Class318_Sub1_Sub3.anInt8739 = NativeIndexBuffer.anInt4703
-                    Class239_Sub19.anInt6042 = Class36.anInt486
+                    NoOpGraphicsOptionState.anInt6042 = Class36.anInt486
                 }
             }
             if (bool != false) aBoolean2151 = true

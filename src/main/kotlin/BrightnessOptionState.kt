@@ -1,7 +1,7 @@
 /* Class239_Sub6 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-class Class239_Sub6 : Class239 {
+class BrightnessOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         if (i != 20014) method1712(-15, 91)
         anInt5898++

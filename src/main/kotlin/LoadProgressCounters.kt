@@ -30,7 +30,7 @@ class LoadProgressCounters {
         @JvmStatic
         fun method1372(i: Int) {
             RuntimeException_Sub1.anInt4596 = i
-            Class239_Sub12.anInt5969 = 1
+            BloomGraphicsOptionState.anInt5969 = 1
             anInt2452++
             var l = 0L
             if (Class348_Sub23_Sub3.aString9043 == null) {

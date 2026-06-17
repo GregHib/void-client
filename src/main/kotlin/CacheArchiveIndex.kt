@@ -141,7 +141,7 @@ class CacheArchiveIndex {
 
         fun method1072(class45: Class45?, i: Byte) {
             if (i >= -91) method1070(((-93).toByte()).toByte(), 92)
-            Class239_Sub12.aClass45_5964 = class45
+            BloomGraphicsOptionState.aClass45_5964 = class45
             anInt1771++
         }
     }

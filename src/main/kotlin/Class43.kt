@@ -43,7 +43,7 @@ class Class43 {
 
         fun method382(string: String, bool: Boolean) {
             anInt613++
-            Class239_Sub12.aString5966 = string
+            BloomGraphicsOptionState.aString5966 = string
             if (bool != true) Companion.method381((-48).toByte())
             if (Class93.anApplet1530 != null) {
                 try {
@@ -66,7 +66,7 @@ class Class43 {
                 val i_4_ = (Class350.method3452(Class286.anInt3682 + i_3_, (-15).toByte(), Class250.anInt3225) * Class31.anInt425)
                 var i_5_ = 0
                 while (Class31.anInt425 > i_5_) {
-                    val i_6_ = (Class350.method3452(i_5_ - -Class239_Sub24.anInt6095, (-15).toByte(), Class31.anInt425) + i_4_)
+                    val i_6_ = (Class350.method3452(i_5_ - -SceneryDetailOptionState.anInt6095, (-15).toByte(), Class31.anInt425) + i_4_)
                     if (LocalPlayerState.anIntArray1909!![i_6_] == Class318_Sub1_Sub1_Sub2.anInt9997) Class92.anInterface4Array1525!![i_6_]!!.method14(0, 0, Class58.anInt1067, Class344.anInt4267, i_5_ * Class58.anInt1067, Class344.anInt4267 * i_3_, true, true)
                     i_5_++
                 }

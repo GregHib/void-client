@@ -47,8 +47,8 @@ class Class300 {
         fun method2273(i: Byte): Class348_Sub47? {
             anInt3824++
             if (i.toInt() != -103) return null
-            if (Class239_Sub13.anInt5980 == 0) return Class348_Sub47()
-            return PingHostListHolder.aClass348_Sub47Array2334!![--Class239_Sub13.anInt5980]
+            if (GroundDecorOptionState.anInt5980 == 0) return Class348_Sub47()
+            return PingHostListHolder.aClass348_Sub47Array2334!![--GroundDecorOptionState.anInt5980]
         }
 
         fun method2274(string: String?, i: Int): Int {

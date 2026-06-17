@@ -1,7 +1,7 @@
 /* Class239_Sub28 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub28 : Class239 {
+class TwoStateOptionState : GraphicsOptionState {
     internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     override fun method1714(i: Int, i_17_: Int): Int {
@@ -92,7 +92,7 @@ class Class239_Sub28 : Class239 {
                     if (class46.anInt709 <= 0) class46.anInt709 = 5
                 }
             }
-            if (Class239_Sub10.anInt5943 == class46.anInt765) Class348_Sub1.aClass46_6561 = class46
+            if (RangedGraphicsOptionState.anInt5943 == class46.anInt765) Class348_Sub1.aClass46_6561 = class46
             if (bool && class46.anObjectArray727 != null && (i_10_ != class46.anInt709 || (i_11_ != class46.anInt789))) {
                 val class348_sub36 = Class348_Sub36()
                 class348_sub36.aClass46_6989 = class46

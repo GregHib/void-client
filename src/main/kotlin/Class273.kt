@@ -1,7 +1,7 @@
 import ObjectSpawnDecoder.method1087
 import HitsplatDefinition.Companion.method1193
 import LinkedListIterator.Companion.method1241
-import Class239_Sub1.Companion.method1722
+import BooleanGraphicsOptionState.Companion.method1722
 
 /* Class273 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

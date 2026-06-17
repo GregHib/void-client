@@ -1,4 +1,4 @@
-import Class239_Sub25.Companion.method1827
+import DisplayModeOptionState.Companion.method1827
 import Class348_Sub6.Companion.method2770
 
 /* Class59_Sub2_Sub1 - Decompiled by JODE

@@ -1,5 +1,5 @@
 import NpcSummaryDefinition.Companion.method1166
-import Class239_Sub28.Companion.method1842
+import TwoStateOptionState.Companion.method1842
 import Class273.Companion.method2057
 import Class348_Sub17.Companion.method2929
 import Class60.Companion.method589

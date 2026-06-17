@@ -27,7 +27,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heap
 
     override fun method7(i: Int) {
         anInt4647++
-        val class143 = Class239_Sub10.method1766((-45).toByte(), aHeapInfoRecord_4646!!.anInt4944, aClass45_4651!!)
+        val class143 = RangedGraphicsOptionState.method1766((-45).toByte(), aHeapInfoRecord_4646!!.anInt4944, aClass45_4651!!)
         if (i == 10286) aClass324_4649 = (Class348_Sub8.aRenderer6654!!.method3686(class143, SpriteImage.method1523(aClass45_4650!!, aHeapInfoRecord_4646.anInt4944), true))
     }
 

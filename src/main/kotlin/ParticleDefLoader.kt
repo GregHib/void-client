@@ -1,4 +1,4 @@
-import Class239_Sub26.Companion.method1837
+import DetailLevelOptionState.Companion.method1837
 import Class348_Sub42_Sub8.Companion.method3194
 
 /* Class183 - Decompiled by JODE

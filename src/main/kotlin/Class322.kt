@@ -131,7 +131,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             anInt4028++
             var i_3_ = -1
             var i_4_ = 0
-            if (Class367_Sub11.anInt7396 < class318_sub1_sub3_sub3.anInt10239) Class239_Sub26.method1834(class318_sub1_sub3_sub3, (-16).toByte())
+            if (Class367_Sub11.anInt7396 < class318_sub1_sub3_sub3.anInt10239) DetailLevelOptionState.method1834(class318_sub1_sub3_sub3, (-16).toByte())
             else if (Class367_Sub11.anInt7396 <= (class318_sub1_sub3_sub3.anInt10300)) method1041(-1, class318_sub1_sub3_sub3)
             else {
                 method1600(false, 0, class318_sub1_sub3_sub3)

@@ -304,7 +304,7 @@ class Class46 {
 
     fun method425(var_renderer: Renderer, i: Byte): Sprite? {
         anInt767++
-        var var_sprite = Class239_Sub24.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
+        var var_sprite = SceneryDetailOptionState.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
         if (var_sprite != null) return var_sprite
         val spriteImage = SpriteImage.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
         if (spriteImage == null) return null
@@ -337,7 +337,7 @@ class Class46 {
             i_12_++
         }
         var_sprite = var_renderer.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772)
-        Class239_Sub24.aClass60_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
+        SceneryDetailOptionState.aClass60_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
         return var_sprite
     }
 
@@ -961,7 +961,7 @@ class Class46 {
             Class30.aClass84_413!!.method816(false)
             HoverActionEntry.aClass25_1813!!.method302(-797644856)
             Class348_Sub1.aMapSceneDefLoader_6559!!.method1390(23)
-            Class239.aItemDefinitionLoader_3147!!.method1283(1)
+            GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)
             SpriteLoadValidator.aClass65_4787!!.method694(-1007)
             Class73.aModelDefinitionCache_4782!!.method1598(111)
             Class331.method2638(-4631)

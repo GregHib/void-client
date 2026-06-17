@@ -1,10 +1,10 @@
-import Class239_Sub10.Companion.method1765
+import RangedGraphicsOptionState.Companion.method1765
 import kotlin.math.min
 
 /* Class239_Sub21 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub21 : Class239 {
+class RemoveRoofsOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         anInt6065++
         if (i != 20014) return -81

@@ -1,7 +1,7 @@
 /* Class239_Sub2 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-class Class239_Sub2 : Class239 {
+class CameraDistanceOptionState : GraphicsOptionState {
     override fun method1714(i: Int, i_0_: Int): Int {
         anInt5851++
         if (i != 3) return -26

@@ -1,5 +1,5 @@
-import Class239_Sub28.Companion.method1842
-import Class239_Sub29.Companion.method1850
+import TwoStateOptionState.Companion.method1842
+import MultiLevelOptionState.Companion.method1850
 
 /* Class263 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -346,10 +346,10 @@ class Class263 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
                     }
                 } else if (i_23_ == 5) {
                     val i_26_ = class348_sub49.readUnsignedByte(255)
-                    Class239_Sub17.anIntArray6021 = IntArray(i_26_)
+                    ParticleDetailOptionState.anIntArray6021 = IntArray(i_26_)
                     for (i_27_ in 0..<i_26_) {
-                        Class239_Sub17.anIntArray6021!![i_27_] = class348_sub49.readUnsignedShort(842397944)
-                        if (Class239_Sub17.anIntArray6021!![i_27_] == 65535) Class239_Sub17.anIntArray6021!![i_27_] = -1
+                        ParticleDetailOptionState.anIntArray6021!![i_27_] = class348_sub49.readUnsignedShort(842397944)
+                        if (ParticleDetailOptionState.anIntArray6021!![i_27_] == 65535) ParticleDetailOptionState.anIntArray6021!![i_27_] = -1
                     }
                 }
             }

@@ -125,12 +125,12 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
                 i_7_ += NativeTerrainTile.method4008((-126).toByte())
                 i_8_ += method260(false)
             }
-            if (Class239_Sub20.anInt6048 == 1) {
+            if (FogOptionState.anInt6048 == 1) {
                 val class105 = (Class348_Sub40_Sub37.aAbstractModelRendererArray9467!![Class348.anInt4292 / 100])
                 class105!!.method974(i_7_ - 8, i_8_ + -8)
                 Class338.method2663(-5590, -8 + i_7_, -8 + (i_7_ - -class105.method966()), -8 + i_8_, class105.method980() + -8 + i_8_)
             }
-            if (Class239_Sub20.anInt6048 == 2) {
+            if (FogOptionState.anInt6048 == 2) {
                 val class105 = (Class348_Sub40_Sub37.aAbstractModelRendererArray9467!![Class348.anInt4292 / 100 + 4])
                 class105!!.method974(i_7_ + -8, -8 + i_8_)
                 Class338.method2663(-5590, i_7_ - 8, class105.method966() + i_7_ + -8, -8 + i_8_, class105.method980() + -8 + i_8_)

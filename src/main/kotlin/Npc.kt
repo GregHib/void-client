@@ -179,7 +179,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
             if (this.aClass64Array10323[i_25_] != null) this.aBoolean10324 = this.aBoolean10324 or this.aClass64Array10323[i_25_]!!.F()
             i_25_++
         }
-        this.anInt10301 = Class239_Sub15.anInt6006
+        this.anInt10301 = TextureQualityOptionState.anInt6006
         this.aClass64Array10323[2] = null
         this.aClass64Array10323[1] = this.aClass64Array10323[2]
         this.aClass64Array10323[0] = this.aClass64Array10323[1]

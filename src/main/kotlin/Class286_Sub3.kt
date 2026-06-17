@@ -1,4 +1,4 @@
-import Class239_Sub28.Companion.method1847
+import TwoStateOptionState.Companion.method1847
 import Class50.Companion.method459
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable

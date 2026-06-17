@@ -132,29 +132,29 @@ import ParticleSortRenderer.Companion.method1653
 import SceneObjectAnimator.Companion.method1673
 import WorldMapScene.Companion.method1677
 import WorldMapSceneSoftware.Companion.method1698
-import Class239.Companion.method1715
-import Class239_Sub1.Companion.method1723
-import Class239_Sub10.Companion.method1761
-import Class239_Sub10.Companion.method1763
-import Class239_Sub11.Companion.method1769
-import Class239_Sub12.Companion.method1773
-import Class239_Sub13.Companion.method1777
-import Class239_Sub14.Companion.method1780
-import Class239_Sub15.Companion.method1785
-import Class239_Sub17.Companion.method1794
-import Class239_Sub18.Companion.method1799
-import Class239_Sub18.Companion.method1802
-import Class239_Sub2.Companion.method1724
-import Class239_Sub22.Companion.method1816
-import Class239_Sub24.Companion.method1822
-import Class239_Sub25.Companion.method1832
-import Class239_Sub26.Companion.method1835
-import Class239_Sub27.Companion.method1841
-import Class239_Sub4.Companion.method1738
-import Class239_Sub6.Companion.method1746
-import Class239_Sub8.Companion.method1753
-import Class239_Sub8.Companion.method1755
-import Class239_Sub9.Companion.method1758
+import GraphicsOptionState.Companion.method1715
+import BooleanGraphicsOptionState.Companion.method1723
+import RangedGraphicsOptionState.Companion.method1761
+import RangedGraphicsOptionState.Companion.method1763
+import BinaryGraphicsOptionState.Companion.method1769
+import BloomGraphicsOptionState.Companion.method1773
+import GroundDecorOptionState.Companion.method1777
+import WaterDetailOptionState.Companion.method1780
+import TextureQualityOptionState.Companion.method1785
+import ParticleDetailOptionState.Companion.method1794
+import LightDetailOptionState.Companion.method1799
+import LightDetailOptionState.Companion.method1802
+import CameraDistanceOptionState.Companion.method1724
+import SimpleBinaryOptionState.Companion.method1816
+import SceneryDetailOptionState.Companion.method1822
+import DisplayModeOptionState.Companion.method1832
+import DetailLevelOptionState.Companion.method1835
+import DefaultGraphicsOptionState.Companion.method1841
+import LightingOptionState.Companion.method1738
+import BrightnessOptionState.Companion.method1746
+import FlickeringEffectsOptionState.Companion.method1753
+import FlickeringEffectsOptionState.Companion.method1755
+import CustomCursorsOptionState.Companion.method1758
 import Class240.Companion.method1853
 import Class242.Companion.method1866
 import TextureMetadataProvider.Companion.method1880
@@ -550,7 +550,7 @@ import kotlin.math.min
 class Client : GameAppletFrame() {
     private fun method101(i: Byte) {
         anInt5179++
-        if (Class348_Sub4.aClass248_6601!!.anInt3213 > Class239_Sub11.anInt5959) {
+        if (Class348_Sub4.aClass248_6601!!.anInt3213 > BinaryGraphicsOptionState.anInt5959) {
             Class3.aServerConnectionInfo_125!!.method1259(0)
             Class341.anInt4235 = (Class348_Sub4.aClass248_6601!!.anInt3213 * 50 + -50) * 5
             if (Class341.anInt4235 > 3000) Class341.anInt4235 = 3000
@@ -574,7 +574,7 @@ class Client : GameAppletFrame() {
                 return
             }
         }
-        Class239_Sub11.anInt5959 = Class348_Sub4.aClass248_6601!!.anInt3213
+        BinaryGraphicsOptionState.anInt5959 = Class348_Sub4.aClass248_6601!!.anInt3213
         if (Class341.anInt4235 > 0) Class341.anInt4235--
         else {
             try {
@@ -673,7 +673,7 @@ class Client : GameAppletFrame() {
             Class268.anInt3439 = 16777215
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub51.aShortArrayArrayArray7262
             Class268.anInt3444 = 0
-        } else if (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == Class239_Sub9.aSceneProjector_5932) {
+        } else if (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == CustomCursorsOptionState.aSceneProjector_5932) {
             SpriteLoadValidator.aShortArrayArray4791 = Class268.aShortArrayArray3443
             Class367_Sub2.aShortArrayArrayArray7290 = Class318_Sub1_Sub3_Sub3.aShortArrayArrayArray10253
         } else {
@@ -824,7 +824,7 @@ class Client : GameAppletFrame() {
         method2572(23.toByte())
         RandomAccessFileOnDisk.method1659((-71).toByte())
         method1461(112.toByte())
-        Class239_Sub20.method1807((-121).toByte())
+        FogOptionState.method1807((-121).toByte())
         method1773(120.toByte())
         method1763(-15596)
         method1746(-15628)
@@ -833,7 +833,7 @@ class Client : GameAppletFrame() {
         method1738(i + 21813)
         method1785(i.toInt() xor 0x64)
         method1780(i + -48)
-        Class239_Sub21.method1814((-70).toByte())
+        RemoveRoofsOptionState.method1814((-70).toByte())
         method1724(-4)
         method1822(110.toByte())
         method1832(1)
@@ -1340,7 +1340,7 @@ class Client : GameAppletFrame() {
                 if (string_26_ == "0") Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = ParticleEmitterNode.aSceneProjector_186
                 else if (string_26_ == "1") Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = GlRectangleTexture.aSceneProjector_8638
                 else if (string_26_ != "2") {
-                    if (string_26_ == "3") Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class239_Sub9.aSceneProjector_5932
+                    if (string_26_ == "3") Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = CustomCursorsOptionState.aSceneProjector_5932
                 } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class286_Sub6.aSceneProjector_6262
             }
             try {
@@ -1349,8 +1349,8 @@ class Client : GameAppletFrame() {
                 SocketStreamWorker.anInt2670 = 0
             }
             InputSettingsState.aString1761 = this.getParameter("quiturl")
-            Class239_Sub12.aString5966 = this.getParameter("settings")
-            if (Class239_Sub12.aString5966 == null) Class239_Sub12.aString5966 = ""
+            BloomGraphicsOptionState.aString5966 = this.getParameter("settings")
+            if (BloomGraphicsOptionState.aString5966 == null) BloomGraphicsOptionState.aString5966 = ""
             Class330.aBoolean4127 = "1" == this.getParameter("under")
             val string_27_ = this.getParameter("country")
             if (string_27_ != null) {
@@ -1537,7 +1537,7 @@ class Client : GameAppletFrame() {
                     SceneRegionState.anInt193++
                     if (SceneRegionState.anInt193 > 50) {
                         IOException_Sub1.anInt88++
-                        val class348_sub47 = method2148((Class239_Sub10.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -104)
+                        val class348_sub47 = method2148((RangedGraphicsOptionState.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -104)
                         method3243(-49, class348_sub47)
                     }
                     try {
@@ -1903,8 +1903,8 @@ class Client : GameAppletFrame() {
                                 class318_sub1_sub3_sub3.aBoolean10309 = true
                                 continue
                             }
-                            if (Class239_Sub8.anIntArrayArray5921!![i_11_]!![i_12_] > 1) {
-                                Class239_Sub8.anIntArrayArray5921!![i_11_]!![i_12_] = Class239_Sub8.anIntArrayArray5921!![i_11_]!![i_12_] - 1
+                            if (FlickeringEffectsOptionState.anIntArrayArray5921!![i_11_]!![i_12_] > 1) {
+                                FlickeringEffectsOptionState.anIntArrayArray5921!![i_11_]!![i_12_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_11_]!![i_12_] - 1
                                 class318_sub1_sub3_sub3.aBoolean10309 = true
                                 continue
                             }
@@ -1917,7 +1917,7 @@ class Client : GameAppletFrame() {
                             if (!method949(i_15_, i_16_, (class318_sub1_sub3_sub3.anInt10285), 124.toByte(), i_14_, i_17_)) {
                                 for (i_18_ in i_14_..i_16_) {
                                     for (i_19_ in i_15_..i_17_) {
-                                        if (class318_sub1_sub3_sub3.anInt10285 == (Class348_Sub42_Sub17.anIntArrayArray9678!![i_18_]!![i_19_])) Class239_Sub8.anIntArrayArray5921!![i_18_]!![i_19_] = Class239_Sub8.anIntArrayArray5921!![i_18_]!![i_19_] - 1
+                                        if (class318_sub1_sub3_sub3.anInt10285 == (Class348_Sub42_Sub17.anIntArrayArray9678!![i_18_]!![i_19_])) FlickeringEffectsOptionState.anIntArrayArray5921!![i_18_]!![i_19_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_18_]!![i_19_] - 1
                                     }
                                 }
                                 class318_sub1_sub3_sub3.aBoolean10309 = true
@@ -1996,12 +1996,12 @@ class Client : GameAppletFrame() {
                         if (strings[5] != "game1") {
                             if (strings[5] != "game2") {
                                 if (strings[5] != "game3") Class55.method518("game", (-124).toByte())
-                                else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class239_Sub9.aSceneProjector_5932
+                                else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = CustomCursorsOptionState.aSceneProjector_5932
                             } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class286_Sub6.aSceneProjector_6262
                         } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = GlRectangleTexture.aSceneProjector_8638
                     } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = ParticleEmitterNode.aSceneProjector_186
                     ServerConnectionInfo.aBoolean2151 = false
-                    Class239_Sub12.aString5966 = ""
+                    BloomGraphicsOptionState.aString5966 = ""
                     TextureMetadataProvider.aLong4615 = 0L
                     Class348_Sub23_Sub3.aString9043 = null
                     SocketStreamWorker.anInt2670 = 0
@@ -2091,7 +2091,7 @@ class Client : GameAppletFrame() {
                                 if (class46.anInt719 >= 0) Class362.anInt4458 = class46.anInt719
                                 else if (class46.aBoolean776) Class362.anInt4458 = -1
                             }
-                            if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) Class239_Sub17.method1797(i_41_ - i_44_, i_40_ - i_43_, class46, (-95).toByte())
+                            if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) ParticleDetailOptionState.method1797(i_41_ - i_44_, i_40_ - i_43_, class46, (-95).toByte())
                             var bool_53_ = false
                             if (Class258_Sub4.aClass373_8552!!.method3595(-91) && bool) bool_53_ = true
                             var bool_54_ = false
@@ -2149,12 +2149,12 @@ class Client : GameAppletFrame() {
                                     bool = false
                                 }
                                 if (class46.anInt765 != 0) {
-                                    if ((class46.anInt765 == Class239_Sub10.anInt5943) || (class46.anInt765 == Class312.anInt3932)) {
+                                    if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == Class312.anInt3932)) {
                                         Class348_Sub1.aClass46_6561 = class46
                                         if (Class259.aClass305_3304 != null) Class259.aClass305_3304!!.method2292(123, Class348_Sub8.aRenderer6654!!, class46.anInt789)
-                                        if (class46.anInt765 == Class239_Sub10.anInt5943) {
+                                        if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {
                                             if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
-                                                Class239_Sub24.method1823(Class348_Sub8.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
+                                                SceneryDetailOptionState.method1823(Class348_Sub8.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
                                                 var class318_sub6 = (InputStream_Sub2.aClass243_83!!.method1872(8) as Class318_Sub6?)
                                                 while (class318_sub6 != null) {
                                                     if (i_40_ >= (class318_sub6.anInt6429) && (i_40_ < (class318_sub6.anInt6426)) && (i_41_ >= (class318_sub6.anInt6427)) && (i_41_ < (class318_sub6.anInt6425))) {
@@ -2202,7 +2202,7 @@ class Client : GameAppletFrame() {
                                                     else method2678(-2049)
                                                 } else {
                                                     if ((Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) Class50_Sub3.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (Class274.aClass274_3510!!.method2063((Class348_Sub33.anInt6967), 544)), 1L, -1)
-                                                    Class50_Sub3.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, Class239_Sub4.aString5882, 1L, Class333.anInt4144)
+                                                    Class50_Sub3.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, LightingOptionState.aString5882, 1L, Class333.anInt4144)
                                                 }
                                             }
                                         }
@@ -2376,7 +2376,7 @@ class Client : GameAppletFrame() {
                                     } else {
                                         var i_77_ = class46.anInt814
                                         while_225_@ while ((i_77_ < Class348_Sub40_Sub30.anInt9385)) {
-                                            val i_78_ = (Class239_Sub21.anIntArray6061!![i_77_ and 0x1f])
+                                            val i_78_ = (RemoveRoofsOptionState.anIntArray6061!![i_77_ and 0x1f])
                                             for (i_79_ in (class46.anIntArray831!!).indices) {
                                                 if ((class46.anIntArray831!![i_79_]) == i_78_) {
                                                     val class348_sub36 = Class348_Sub36()
@@ -2661,8 +2661,8 @@ class Client : GameAppletFrame() {
                         val i_126_ = (class318_sub1_sub3_sub3.y shr 9)
                         if ((class318_sub1_sub3_sub3.anInt10285) > (Class348_Sub42_Sub17.anIntArrayArray9678!![i_125_]!![i_126_])) {
                             Class348_Sub42_Sub17.anIntArrayArray9678!![i_125_]!![i_126_] = class318_sub1_sub3_sub3.anInt10285
-                            Class239_Sub8.anIntArrayArray5921!![i_125_]!![i_126_] = 1
-                        } else if (class318_sub1_sub3_sub3.anInt10285 == (Class348_Sub42_Sub17.anIntArrayArray9678!![i_125_]!![i_126_])) Class239_Sub8.anIntArrayArray5921!![i_125_]!![i_126_] = Class239_Sub8.anIntArrayArray5921!![i_125_]!![i_126_] + 1
+                            FlickeringEffectsOptionState.anIntArrayArray5921!![i_125_]!![i_126_] = 1
+                        } else if (class318_sub1_sub3_sub3.anInt10285 == (Class348_Sub42_Sub17.anIntArrayArray9678!![i_125_]!![i_126_])) FlickeringEffectsOptionState.anIntArrayArray5921!![i_125_]!![i_126_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_125_]!![i_126_] + 1
                     } else {
                         val i_127_ = (i_124_ - 1) * 256 + 60
                         val i_128_ = ((class318_sub1_sub3_sub3.x - i_127_) shr 9)
@@ -2673,8 +2673,8 @@ class Client : GameAppletFrame() {
                             for (i_133_ in i_129_..i_131_) {
                                 if (class318_sub1_sub3_sub3.anInt10285 > (Class348_Sub42_Sub17.anIntArrayArray9678!![i_132_]!![i_133_])) {
                                     Class348_Sub42_Sub17.anIntArrayArray9678!![i_132_]!![i_133_] = class318_sub1_sub3_sub3.anInt10285
-                                    Class239_Sub8.anIntArrayArray5921!![i_132_]!![i_133_] = 1
-                                } else if (class318_sub1_sub3_sub3.anInt10285 == (Class348_Sub42_Sub17.anIntArrayArray9678!![i_132_]!![i_133_])) Class239_Sub8.anIntArrayArray5921!![i_132_]!![i_133_] = Class239_Sub8.anIntArrayArray5921!![i_132_]!![i_133_] + 1
+                                    FlickeringEffectsOptionState.anIntArrayArray5921!![i_132_]!![i_133_] = 1
+                                } else if (class318_sub1_sub3_sub3.anInt10285 == (Class348_Sub42_Sub17.anIntArrayArray9678!![i_132_]!![i_133_])) FlickeringEffectsOptionState.anIntArrayArray5921!![i_132_]!![i_133_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_132_]!![i_133_] + 1
                             }
                         }
                     }

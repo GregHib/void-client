@@ -14,7 +14,7 @@ class Class348_Sub40_Sub6 : Class348_Sub40(3, false) {
                 val i_5_ = anInt9133 * is_2_[i_3_] shr 12
                 val i_6_ = WidgetComponentNode.anIntArray4654!![i_4_] * i_5_ shr 12
                 val i_7_ = SceneObjectAnimator.anIntArray3068!![i_4_] * i_5_ shr 12
-                val i_8_ = i_3_ - -(i_6_ shr 12) and Class239_Sub22.anInt6076
+                val i_8_ = i_3_ - -(i_6_ shr 12) and SimpleBinaryOptionState.anInt6076
                 val i_9_ = i - -(i_7_ shr 12) and Class299_Sub2.anInt6325
                 val is_10_ = this.method3048(i_9_, 633706337, 0)!!
                 `is`[i_3_] = is_10_[i_8_]
@@ -58,7 +58,7 @@ class Class348_Sub40_Sub6 : Class348_Sub40(3, false) {
                 val i_21_ = anInt9133 * is_15_[i_19_] shr 12
                 val i_22_ = i_21_ * WidgetComponentNode.anIntArray4654!![i_20_] shr 12
                 val i_23_ = i_21_ * SceneObjectAnimator.anIntArray3068!![i_20_] shr 12
-                val i_24_ = i_19_ + (i_22_ shr 12) and Class239_Sub22.anInt6076
+                val i_24_ = i_19_ + (i_22_ shr 12) and SimpleBinaryOptionState.anInt6076
                 val i_25_ = (i_23_ shr 12) + i and Class299_Sub2.anInt6325
                 val is_26_ = this.method3039((-57).toByte(), i_25_, 0)!!
                 is_16_[i_19_] = is_26_[0]!![i_24_]

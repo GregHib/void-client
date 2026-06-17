@@ -72,7 +72,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_27_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
                     if (i_19_ >= 0 && i_20_ >= 0 && i_19_ < Class367_Sub4.anInt7319 && (i_20_ < Class348_Sub40_Sub3.anInt9109)) {
                         val i_28_ = 1 + i_23_
-                        if (((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_19_ + -i_28_) && i_28_ + i_19_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_28_ + i_20_) && i_20_ + i_28_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) Class239_Sub10.method1760(
+                        if (((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_19_ + -i_28_) && i_28_ + i_19_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_28_ + i_20_) && i_20_ + i_28_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) RangedGraphicsOptionState.method1760(
                             i_21_,
                             i_26_,
                             false,

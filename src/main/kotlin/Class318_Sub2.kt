@@ -3,7 +3,7 @@ import NpcSummaryDefinition.Companion.method1166
 import WidgetNodeLink.Companion.method1197
 import AudioResampler.Companion.method1273
 import PerlinTextureProvider.Companion.method1399
-import Class239_Sub21.Companion.method1813
+import RemoveRoofsOptionState.Companion.method1813
 import Class273.Companion.method2057
 import Class309.Companion.method2308
 
@@ -52,7 +52,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                     if (`is` != null) string += method1273(`is`, true)
                     Class262.aClass324_3326!!.method2567(i_1_, string, 116.toByte(), i_4_, 0, i_7_ - -3, Class341.aAbstractModelRendererArray4234, SizeBoundedSoftCache.anIntArray2330)
                     if (!class348_sub42_sub12.aBoolean9597) break
-                    Class239_Sub24.aAbstractModelRenderer_6097!!.method974(Class369.aFontDefinition_4962!!.method1183(true, string) + (i_7_ - -5), -12 + i_1_)
+                    SceneryDetailOptionState.aAbstractModelRenderer_6097!!.method974(Class369.aFontDefinition_4962!!.method1183(true, string) + (i_7_ - -5), -12 + i_1_)
                 } catch (runtimeexception: RuntimeException) {
                     throw Class348_Sub17.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
                 }
@@ -119,7 +119,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                     }
                 }
                 if (class338!!.aByte4192.toInt() == 1) {
-                    val i_20_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (-Class239_Sub25.anInt6111 + class338.aShort4185))
+                    val i_20_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (-DisplayModeOptionState.anInt6111 + class338.aShort4185))
                     if (i_20_ >= 0 && i_20_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
                         var i_21_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + class338.aShort4193 - Class285_Sub2.anInt8502)
                         if (i_21_ < 0) i_21_ = 0
@@ -143,11 +143,11 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                 } else if (class338.aByte4192.toInt() == 2) {
                     val i_23_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (class338.aShort4193 - Class285_Sub2.anInt8502))
                     if (i_23_ >= 0 && i_23_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
-                        var i_24_: Int = (class338.aShort4185 + (-Class239_Sub25.anInt6111 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
+                        var i_24_: Int = (class338.aShort4185 + (-DisplayModeOptionState.anInt6111 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
                         if (i_24_ >= 0) {
                             if (i_24_ > (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) return
                         } else i_24_ = 0
-                        var i_25_: Int = (-Class239_Sub25.anInt6111 + (class338.aShort4182 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
+                        var i_25_: Int = (-DisplayModeOptionState.anInt6111 + (class338.aShort4182 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
                         if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084) >= i_25_) {
                             if (i_25_ < 0) return
                         } else i_25_ = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)
@@ -165,7 +165,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                         }
                     }
                 } else if (class338.aByte4192.toInt() == 16 || class338.aByte4192.toInt() == 8) {
-                    val i_26_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (-Class239_Sub25.anInt6111 + class338.aShort4185))
+                    val i_26_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + (-DisplayModeOptionState.anInt6111 + class338.aShort4185))
                     if (i_26_ >= 0 && i_26_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
                         val i_27_: Int = (class338.aShort4193 + (-Class285_Sub2.anInt8502 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
                         if (i_27_ >= 0 && ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084) >= i_27_) && Class99.aBooleanArrayArray1572!![i_26_]!![i_27_]) {
@@ -187,10 +187,10 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                         if (i_30_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
                             if (i_30_ < 0) return
                         } else i_30_ = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084)
-                        var i_31_: Int = (-Class239_Sub25.anInt6111 + (class338.aShort4185 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
+                        var i_31_: Int = (-DisplayModeOptionState.anInt6111 + (class338.aShort4185 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
                         if (i_31_ < 0) i_31_ = 0
                         else if (i_31_ > (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) return
-                        var i_32_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + class338.aShort4182 - Class239_Sub25.anInt6111)
+                        var i_32_: Int = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + class338.aShort4182 - DisplayModeOptionState.anInt6111)
                         if ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084) < i_32_) i_32_ = (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 + Class318_Sub1_Sub4_Sub1.Companion.anInt10084)
                         else if (i_32_ < 0) return
                         var bool = false

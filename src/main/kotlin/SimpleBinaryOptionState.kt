@@ -1,7 +1,7 @@
 /* Class239_Sub22 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub22 : Class239 {
+class SimpleBinaryOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         anInt6072++
         if (i != 20014) return 63

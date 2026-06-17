@@ -1,4 +1,4 @@
-import Class239_Sub26.Companion.method1836
+import DetailLevelOptionState.Companion.method1836
 import Class286_Sub8.Companion.method2172
 import OpenGlTerrainTile.Companion.method4002
 

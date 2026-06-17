@@ -1,5 +1,5 @@
 import GlTextureBase.Companion.method235
-import Class239.Companion.method1713
+import GraphicsOptionState.Companion.method1713
 import Class318_Sub1.Companion.method2385
 import Class66.method703
 import Class99.method882
@@ -311,7 +311,7 @@ class LinkedNodeListIterator {
             Gl3dTexture.anInt8630 = `is`[2]
             Class248.anInt3202 = `is`[0]
             Class27.anInt394 = `is`[3]
-            Class239_Sub5.anInt5886 = `is`[1]
+            SimpleToggleOptionState.anInt5886 = `is`[1]
             if (bool_42_) {
                 CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                 method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120)

@@ -21,7 +21,7 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
             var i_9_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_9_) {
                 val i_10_ = anInt9167 * (-is_6_[i_9_] + is_8_[i_9_])
-                val i_11_ = (anInt9167 * (-is_7_[Class239_Sub22.anInt6076 and -1 + i_9_] + is_7_[Class239_Sub22.anInt6076 and i_9_ - -1]))
+                val i_11_ = (anInt9167 * (-is_7_[SimpleBinaryOptionState.anInt6076 and -1 + i_9_] + is_7_[SimpleBinaryOptionState.anInt6076 and i_9_ - -1]))
                 val i_12_ = i_11_ shr 12
                 val i_13_ = i_10_ shr 12
                 val i_14_ = i_12_ * i_12_ shr 12
@@ -71,7 +71,7 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
                 Class46.method440(512, (-61).toByte())
                 if (Class348_Sub33.aByteArrayArrayArray6962 != null) Class318_Sub1_Sub3_Sub4.method2468(3613)
             } else {
-                Class301.method2280((-4 + Class239_Sub15.anInt6006 and 0xff).toByte(), 28587)
+                Class301.method2280((-4 + TextureQualityOptionState.anInt6006 and 0xff).toByte(), 28587)
                 Class46.method440(2, (-61).toByte())
             }
             Class318_Sub1_Sub3_Sub5.anInt10395 = Class355.anInt4372

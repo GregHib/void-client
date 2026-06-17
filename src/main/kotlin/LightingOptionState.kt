@@ -4,7 +4,7 @@ import kotlin.math.sin
 /* Class239_Sub4 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-class Class239_Sub4 : Class239 {
+class LightingOptionState : GraphicsOptionState {
     override fun method1716(bool: Boolean) {
         if (bool != false) method1736(-57)
         anInt5880++

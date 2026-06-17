@@ -1,7 +1,7 @@
 /* Class239_Sub15 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub15 : Class239 {
+class TextureQualityOptionState : GraphicsOptionState {
     override fun method1716(bool: Boolean) {
         if (bool != false) method1783(115, -122, -59, 41, -49, 92)
         anInt5999++

@@ -74,9 +74,9 @@ abstract class Class348_Sub1 internal constructor(var anInt6562: Int, var anInt6
         fun method2718(i: Int) {
             if (i >= -95) method2719(90)
             anInt6560++
-            if (Class239_Sub13.anInt5976 != -1) {
-                Class24.method298(false, -1, -1, Class239_Sub13.anInt5976, -67)
-                Class239_Sub13.anInt5976 = -1
+            if (GroundDecorOptionState.anInt5976 != -1) {
+                Class24.method298(false, -1, -1, GroundDecorOptionState.anInt5976, -67)
+                GroundDecorOptionState.anInt5976 = -1
             }
         }
 

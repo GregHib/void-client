@@ -1,8 +1,8 @@
 import ModelBatchBase.Companion.method1130
 import WidgetNodeLink.Companion.method1197
 import HostPingThread.Companion.method1301
-import Class239_Sub17.Companion.method1796
-import Class239_Sub21.Companion.method1813
+import ParticleDetailOptionState.Companion.method1796
+import RemoveRoofsOptionState.Companion.method1813
 import Class348_Sub23_Sub1.Companion.method2967
 import Class367_Sub8.Companion.method3549
 import OutputStream_Sub2.Companion.method136

@@ -3,7 +3,7 @@ import Class59.Companion.method544
 /* Class239_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class239_Sub1 : Class239 {
+class BooleanGraphicsOptionState : GraphicsOptionState {
     fun method1720(i: Int): Int {
         anInt5843++
         if (i != -32350) method1714(82, -89)

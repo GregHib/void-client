@@ -1,5 +1,5 @@
 import LinkedListIterator.Companion.method1241
-import Class239_Sub1.Companion.method1722
+import BooleanGraphicsOptionState.Companion.method1722
 import Class348_Sub17.Companion.method2929
 import Class348_Sub22.Companion.method2959
 import Class367_Sub10.Companion.method3553
@@ -13,7 +13,7 @@ class Class348_Sub47 : Class348() {
     var anInt7122: Int = 0
     fun method3326(i: Byte) {
         anInt7117++
-        if (PingHostListHolder.aClass348_Sub47Array2334!!.size > Class239_Sub13.anInt5980 && i.toInt() == -45) PingHostListHolder.aClass348_Sub47Array2334!![Class239_Sub13.anInt5980++] = this
+        if (PingHostListHolder.aClass348_Sub47Array2334!!.size > GroundDecorOptionState.anInt5980 && i.toInt() == -45) PingHostListHolder.aClass348_Sub47Array2334!![GroundDecorOptionState.anInt5980++] = this
     }
 
     companion object {

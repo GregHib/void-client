@@ -1,4 +1,4 @@
-import Class239_Sub18.Companion.method1802
+import LightDetailOptionState.Companion.method1802
 import java.awt.Canvas
 import java.io.IOException
 import java.net.Socket

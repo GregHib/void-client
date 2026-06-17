@@ -3,8 +3,8 @@ import Gl2dTexture.Companion.method241
 import SizeBoundedSoftCache.Companion.method1343
 import TextureGenerator.Companion.method1397
 import FrameBufferObject.Companion.method1501
-import Class239_Sub11.Companion.method1767
-import Class239_Sub18.Companion.method1802
+import BinaryGraphicsOptionState.Companion.method1767
+import LightDetailOptionState.Companion.method1802
 import Class251.Companion.method1916
 import Class261.Companion.method1987
 import Class264.Companion.method2017
@@ -61,15 +61,15 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(113, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_1_)
                         Class348_Sub42_Sub14.method3243(119, class348_sub47)
                     }
-                    if (Class239_Sub4.aClass348_Sub26_5881 != null) {
-                        if ((Class239_Sub4.aClass348_Sub26_5881!!.anInt6887) != -1) {
+                    if (LightingOptionState.aClass348_Sub26_5881 != null) {
+                        if ((LightingOptionState.aClass348_Sub26_5881!!.anInt6887) != -1) {
                             val class348_sub47 = method2148((Class367_Sub4.aClass351_7318), (Class348_Sub23_Sub2.aClass77_9029), -81)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class239_Sub4.aClass348_Sub26_5881!!.anInt6887)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), LightingOptionState.aClass348_Sub26_5881!!.anInt6887)
                             Class348_Sub42_Sub14.method3243(122, class348_sub47)
-                            Class239_Sub4.aClass348_Sub26_5881 = null
+                            LightingOptionState.aClass348_Sub26_5881 = null
                             FloatCameraTransform.aLong5745 = method599(-106) + 30000L
                         }
-                    } else if (FloatCameraTransform.aLong5745 <= method599(-121)) Class239_Sub4.aClass348_Sub26_5881 = Class76.aHostPingThread_1286!!.method1302(-5255, (Class3.aServerConnectionInfo_125!!.aString2147!!))
+                    } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = Class76.aHostPingThread_1286!!.method1302(-5255, (Class3.aServerConnectionInfo_125!!.aString2147!!))
                     val class348_sub45 = (Class318_Sub1_Sub3.aClass262_8744!!.method1995(4) as Class348_Sub45?)
                     if (class348_sub45 != null || (Class355.aLong4367 < -2000L + method599(-97))) {
                         var class348_sub47: Class348_Sub47? = null
@@ -165,7 +165,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                     }
                     if (HintArrowOrMessage.anInt2035 > 0) HintArrowOrMessage.anInt2035--
                     if (Class369_Sub3_Sub1.aBoolean10174 && HintArrowOrMessage.anInt2035 <= 0) {
-                        Class239_Sub18.anInt6033++
+                        LightDetailOptionState.anInt6033++
                         Class369_Sub3_Sub1.aBoolean10174 = false
                         HintArrowOrMessage.anInt2035 = 20
                         val class348_sub47 = method2148(Class281.aClass351_3648, (Class348_Sub23_Sub2.aClass77_9029), i + -11549)
@@ -226,7 +226,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     Class348_Sub26.Companion.anIntArray6890!![method1166(31, Class5_Sub1.anInt8352++)] = i_17_
                                 } else if (i_16_ == 2) {
                                     Class258_Sub2.aStringArray8532!![i_17_] = class348_sub42_sub15.aString9654
-                                    Class239_Sub21.anIntArray6061!![method1166(Class348_Sub40_Sub30.anInt9385++, 31)] = i_17_
+                                    RemoveRoofsOptionState.anIntArray6061!![method1166(Class348_Sub40_Sub30.anInt9385++, 31)] = i_17_
                                 } else if (i_16_ == 3) {
                                     val class46 = method2570(1512932720, i_17_)
                                     if (class348_sub42_sub15.aString9654 != class46!!.aString792) {
@@ -338,9 +338,9 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 class348_sub42_sub15 = method3127(2681)
                             }
                             Class348_Sub51.anInt7267++
-                            if (Class239_Sub20.anInt6048 != 0) {
+                            if (FogOptionState.anInt6048 != 0) {
                                 anInt4292 += 20
-                                if (anInt4292 >= 400) Class239_Sub20.anInt6048 = 0
+                                if (anInt4292 >= 400) FogOptionState.anInt6048 = 0
                             }
                             if (Class311.aClass46_3913 != null) {
                                 GroundItemRenderState.anInt1656++
@@ -455,12 +455,12 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 SceneRegionState.anInt193++
                                 if (SceneRegionState.anInt193 > 50) {
                                     IOException_Sub1.anInt88++
-                                    val class348_sub47 = (method2148(Class239_Sub10.aClass351_5938, Class348_Sub23_Sub2.aClass77_9029, -125))
+                                    val class348_sub47 = (method2148(RangedGraphicsOptionState.aClass351_5938, Class348_Sub23_Sub2.aClass77_9029, -125))
                                     Class348_Sub42_Sub14.method3243(i xor 0x2cc0.inv(), class348_sub47)
                                 }
-                                if (Class239_Sub29.aBoolean6147) {
+                                if (MultiLevelOptionState.aBoolean6147) {
                                     method2334(0)
-                                    Class239_Sub29.aBoolean6147 = false
+                                    MultiLevelOptionState.aBoolean6147 = false
                                 }
                                 try {
                                     method1802(0)

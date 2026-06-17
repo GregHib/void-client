@@ -85,7 +85,7 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                 else if (i != 1012) {
                     if (i == 1002) Class66.method701(Class348_Sub40_Sub32.aClass273_9415!!, i_1_, i_0_)
                     else if (i == 1003) Class66.method701(Class348_Sub12.aClass273_6743!!, i_1_, i_0_)
-                    else if (i == 1006) Class66.method701(Class239_Sub17.aClass273_6018!!, i_1_, i_0_)
+                    else if (i == 1006) Class66.method701(ParticleDetailOptionState.aClass273_6018!!, i_1_, i_0_)
                 } else Class66.method701(Class5_Sub2.aClass273_8356!!, i_1_, i_0_)
                 anInt1138++
             }

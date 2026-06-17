@@ -1,5 +1,5 @@
 import MatrixCameraTransform.Companion.method912
-import Class239_Sub16.Companion.method1788
+import ShadowQualityOptionState.Companion.method1788
 
 /* Class157 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -27,7 +27,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(94.toByte(), Class348_Sub23_Sub2.aClass45_9033!!.method389(-113))
         class348_sub49_sub2.writeInt(121.toByte(), CameraNodeList.aClass45_1743!!.method389(-110))
         class348_sub49_sub2.writeInt(123.toByte(), SoftwareSpriteRaster.aClass45_1627!!.method389(72))
-        class348_sub49_sub2.writeInt(120.toByte(), Class239_Sub4.aClass45_5878!!.method389(37))
+        class348_sub49_sub2.writeInt(120.toByte(), LightingOptionState.aClass45_5878!!.method389(37))
         class348_sub49_sub2.writeInt(115.toByte(), HoverActionEntry.aClass45_1815!!.method389(-115))
         class348_sub49_sub2.writeInt(126.toByte(), Class94.aClass45_1538!!.method389(104))
         class348_sub49_sub2.writeInt(93.toByte(), Class247.aClass45_3183!!.method389(28))
@@ -40,7 +40,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(108.toByte(), ModelBatchBase.aClass45_1897!!.method389(-106))
         class348_sub49_sub2.writeInt(102.toByte(), Class82.aClass45_1434!!.method389(102))
         class348_sub49_sub2.writeInt(113.toByte(), Class348_Sub11.aClass45_4770!!.method389(-122))
-        class348_sub49_sub2.writeInt(86.toByte(), Class239.aClass45_3146!!.method389(97))
+        class348_sub49_sub2.writeInt(86.toByte(), GraphicsOptionState.aClass45_3146!!.method389(97))
         class348_sub49_sub2.writeInt(96.toByte(), Class367_Sub8.aClass45_7362!!.method389(-6))
         class348_sub49_sub2.writeInt(96.toByte(), Class262.aClass45_3323!!.method389(-122))
         class348_sub49_sub2.writeInt(107.toByte(), Crc64Hashable.aClass45_4984!!.method389(-107))

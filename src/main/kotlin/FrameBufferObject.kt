@@ -219,7 +219,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                             }
                             class10.anInt188 += class10.aClass317_183!!.method2370()
                         } else if (class10.method220((-39).toByte()) && ((class10.aClass348_Sub10_192 == null) || (class10.aClass348_Sub19_Sub1_189) == null)) {
-                            if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = Class348_Sub10.method2793((Class239_Sub4.aClass45_5878!!), (class10.anInt185))
+                            if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = Class348_Sub10.method2793((LightingOptionState.aClass45_5878!!), (class10.anInt185))
                             if (class10.aClass348_Sub10_192 == null) {
                                 i_4_++
                                 continue

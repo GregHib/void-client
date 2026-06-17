@@ -50,7 +50,7 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
     private fun method3139(i: Int, i_12_: Int, i_13_: Byte) {
         anInt9425++
         val i_14_ = Class318_Sub6.anIntArray6432!![i]
-        val i_15_ = Class239_Sub18.anIntArray6035!![i_12_]
+        val i_15_ = LightDetailOptionState.anIntArray6035!![i_12_]
         if (i_13_.toInt() != -31) method3139(-44, -111, 48.toByte())
         val f = atan2((i_14_ + -2048).toDouble(), (i_15_ + -2048).toDouble()).toFloat()
         if (f.toDouble() >= -3.141592653589793 && f.toDouble() <= -2.356194490192345) {
@@ -89,7 +89,7 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
             MinimapFlagRenderer.anInt1796 = i_12_
         }
         Class344.anInt4265 = Class344.anInt4265 and Class299_Sub2.anInt6325
-        MinimapFlagRenderer.anInt1796 = MinimapFlagRenderer.anInt1796 and Class239_Sub22.anInt6076
+        MinimapFlagRenderer.anInt1796 = MinimapFlagRenderer.anInt1796 and SimpleBinaryOptionState.anInt6076
     }
 
     companion object {

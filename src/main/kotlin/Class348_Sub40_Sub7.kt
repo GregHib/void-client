@@ -28,9 +28,9 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
             val is_7_ = `is`[2]!!
             if (aBoolean9140) {
                 for (i_8_ in 0..<Class348_Sub40_Sub6.Companion.anInt9139) {
-                    is_5_[i_8_] = is_2_[Class239_Sub22.anInt6076 + -i_8_]
-                    is_6_[i_8_] = is_3_[Class239_Sub22.anInt6076 - i_8_]
-                    is_7_[i_8_] = is_4_[-i_8_ + Class239_Sub22.anInt6076]
+                    is_5_[i_8_] = is_2_[SimpleBinaryOptionState.anInt6076 + -i_8_]
+                    is_6_[i_8_] = is_3_[SimpleBinaryOptionState.anInt6076 - i_8_]
+                    is_7_[i_8_] = is_4_[-i_8_ + SimpleBinaryOptionState.anInt6076]
                 }
             } else {
                 var i_9_ = 0
@@ -82,7 +82,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
             if (aBoolean9140) {
                 var i_77_ = 0
                 while ((i_77_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
-                    `is`[i_77_] = is_76_[Class239_Sub22.anInt6076 + -i_77_]
+                    `is`[i_77_] = is_76_[SimpleBinaryOptionState.anInt6076 + -i_77_]
                     i_77_++
                 }
             } else ArrayCopyUtil.method1578(is_76_, 0, `is`, 0, Class348_Sub40_Sub6.Companion.anInt9139)
@@ -182,7 +182,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                 }
                                 if (i_31_ < i_34_ && i_32_ < i_33_) {
                                     if (class46.anInt765 != 0) {
-                                        if ((Class239_Sub10.anInt5943 == class46.anInt765) || (class46.anInt765 == Class312.anInt3932)) {
+                                        if ((RangedGraphicsOptionState.anInt5943 == class46.anInt765) || (class46.anInt765 == Class312.anInt3932)) {
                                             Class5_Sub2.method198(class46, false, i_25_, i_24_)
                                             if (!Class59_Sub1.aBoolean5300) {
                                                 method132(124, (Class312.anInt3932 == (class46.anInt765)), class46.anInt709, i_24_, class46.anInt789, i_25_)
@@ -206,7 +206,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             i_18_++
                                             continue
                                         }
-                                        if (class46.anInt765 == Class239_Sub11.anInt5951) {
+                                        if (class46.anInt765 == BinaryGraphicsOptionState.anInt5951) {
                                             if (class46.method425((Class348_Sub8.aRenderer6654!!), 26.toByte()) != null) {
                                                 GlFramebufferBlitter.method271(i_25_, class46, (-98).toByte(), i_24_)
                                                 Class268.aBooleanArray3438!![i_23_] = true
@@ -243,8 +243,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 }
                                                 if (Class298.aBoolean3811) {
                                                     var i_39_ = -256
-                                                    if (Class239_Sub5.anInt5891 < 20) i_39_ = -65536
-                                                    GameAppletFrame.aClass324_20!!.method2569("Fps:" + (Class239_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1)
+                                                    if (SimpleToggleOptionState.anInt5891 < 20) i_39_ = -65536
+                                                    GameAppletFrame.aClass324_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_38_, i_39_, i_37_, -128, -1)
                                                     i_38_ += 15
                                                     val runtime = Runtime.getRuntime()
                                                     var i_40_ = (((runtime.totalMemory()) + -(runtime.freeMemory())) / 1024L).toInt()

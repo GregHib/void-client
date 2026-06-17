@@ -1,4 +1,4 @@
-import Class239_Sub17.Companion.method1793
+import ParticleDetailOptionState.Companion.method1793
 import Class286_Sub3.Companion.method2152
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState

@@ -1,9 +1,9 @@
-import Class239_Sub3.Companion.method1728
+import ChatEffectsOptionState.Companion.method1728
 
 /* Class239 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class239 {
+abstract class GraphicsOptionState {
     var aClass348_Sub51_3136: Class348_Sub51
     var anInt3138: Int
     abstract fun method1710(i: Int): Int

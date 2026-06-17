@@ -1,4 +1,4 @@
-import Class239_Sub6.Companion.method1745
+import BrightnessOptionState.Companion.method1745
 import Class285_Sub1.Companion.method2127
 import Class286_Sub3.Companion.method2148
 import jaggl.OpenGL.Companion.glBindProgramARB

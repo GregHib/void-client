@@ -63,7 +63,7 @@ public abstract class AbstractCameraTransform {
             var i_6_ = 18
             Class322.anIntArray4031 = IntArray(i_6_)
             Class348_Sub50.aByteArrayArray7212 = arrayOfNulls<ByteArray>(i_6_)
-            Class239_Sub6.anIntArrayArray5894 = Array<IntArray?>(i_6_) { IntArray(4) }
+            BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_6_) { IntArray(4) }
             NativeSprite.anIntArray5192 = IntArray(i_6_)
             GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)
             Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_6_)
@@ -115,17 +115,17 @@ public abstract class AbstractCameraTransform {
         fun method901(abstractModelRenderers: Array<AbstractModelRenderer?>?, i: Int) {
             try {
                 anInt1599++
-                Class239_Sub1.anInt5850 = abstractModelRenderers!!.size
-                SizeBoundedSoftCache.anIntArray2330 = IntArray(Class239_Sub1.anInt5850 + 10)
-                Class341.aAbstractModelRendererArray4234 = arrayOfNulls<AbstractModelRenderer>(Class239_Sub1.anInt5850 + 10)
-                ArrayCopyUtil.method1575(abstractModelRenderers, 0, Class341.aAbstractModelRendererArray4234!!, 0, Class239_Sub1.anInt5850)
+                BooleanGraphicsOptionState.anInt5850 = abstractModelRenderers!!.size
+                SizeBoundedSoftCache.anIntArray2330 = IntArray(BooleanGraphicsOptionState.anInt5850 + 10)
+                Class341.aAbstractModelRendererArray4234 = arrayOfNulls<AbstractModelRenderer>(BooleanGraphicsOptionState.anInt5850 + 10)
+                ArrayCopyUtil.method1575(abstractModelRenderers, 0, Class341.aAbstractModelRendererArray4234!!, 0, BooleanGraphicsOptionState.anInt5850)
                 var i_17_ = 0
-                while (Class239_Sub1.anInt5850 > i_17_) {
+                while (BooleanGraphicsOptionState.anInt5850 > i_17_) {
                     SizeBoundedSoftCache.anIntArray2330!![i_17_] = Class341.aAbstractModelRendererArray4234!![i_17_]!!.method980()
                     i_17_++
                 }
                 if (i != 515880227) anInt1597 = 49
-                var i_18_ = Class239_Sub1.anInt5850
+                var i_18_ = BooleanGraphicsOptionState.anInt5850
                 while ((i_18_ < Class341.aAbstractModelRendererArray4234!!.size)) {
                     SizeBoundedSoftCache.anIntArray2330!![i_18_] = 12
                     i_18_++
