@@ -4,7 +4,7 @@ import Class348_Sub10.Companion.method2789
 /* Class276 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class276 internal constructor() {
+class VorbisCommentHeader internal constructor() {
     var anIntArray3554: IntArray?
     var anInt3555: Int
     var anIntArray3556: IntArray?
