@@ -299,7 +299,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     Class240.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aRenderer6654!!.I() + " Models: " + Class348_Sub8.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     Class240.aClass324_4684!!.method2569(("Ls: " + Class177.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + Class227.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
-                                                    Class110_Sub1.method1042((-123).toByte())
+                                                    MapLabelMenuEntry.method1042((-123).toByte())
                                                     i_38_ += 12
                                                 }
                                                 Class152.aBooleanArray2076!![i_23_] = true

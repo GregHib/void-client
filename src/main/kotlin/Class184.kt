@@ -44,7 +44,7 @@ class Class184 {
             Class299_Sub1_Sub2.aClass348_Sub49_8698!!.writeBytes(`is`.size, 0, `is`, 97)
             if (bool) {
                 Class167.method1294((-113).toByte(), (Class299_Sub1_Sub2.aClass348_Sub49_8698!!.aByteArray7154))
-                Class65.aClass110_Sub1Array1146 = arrayOfNulls<Class110_Sub1>(Class225.anInt2956)
+                Class65.aClass110_Sub1Array1146 = arrayOfNulls<MapLabelMenuEntry>(Class225.anInt2956)
                 var i_2_ = 0
                 var i_3_ = Class318_Sub1_Sub2.anInt8731
                 while ((Class239_Sub29.anInt6151 >= i_3_)) {

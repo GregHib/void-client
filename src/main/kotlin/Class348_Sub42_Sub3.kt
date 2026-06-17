@@ -41,7 +41,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             var i_4_ = i_3_ - 334
             if (i_4_ < 0) i_4_ = 0
             else if (i_4_ > 100) i_4_ = 100
-            var i_5_ = ((-Class110.aShort1700 + Class168.aShort2250) * i_4_ / 100 + Class110.aShort1700)
+            var i_5_ = ((-AbstractMenuEntry.aShort1700 + Class168.aShort2250) * i_4_ / 100 + AbstractMenuEntry.aShort1700)
             if (i_5_ < Class348_Sub42_Sub8.aShort9555) i_5_ = Class348_Sub42_Sub8.aShort9555.toInt()
             else if (Class48.aShort851 < i_5_) i_5_ = Class48.aShort851.toInt()
             var i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334)

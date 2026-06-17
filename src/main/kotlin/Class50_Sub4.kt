@@ -60,7 +60,7 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
         }
 
         @JvmStatic
-        fun method473(i: Byte, i_25_: Int, class110_sub1: Class110_Sub1?, i_26_: Int, bool: Boolean, bool_27_: Boolean, class110_sub1_28_: Class110_Sub1?): Int {
+        fun method473(i: Byte, i_25_: Int, class110_sub1: MapLabelMenuEntry?, i_26_: Int, bool: Boolean, bool_27_: Boolean, class110_sub1_28_: MapLabelMenuEntry?): Int {
             try {
                 anInt5257++
                 val i_29_ = Class239_Sub8.method1749(class110_sub1_28_, class110_sub1, bool, i_25_, (-30).toByte())

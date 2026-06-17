@@ -4,7 +4,7 @@ import Class50_Sub1.Companion.method462
 /* Class110_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class110_Sub1 : Class110() {
+class MapLabelMenuEntry : AbstractMenuEntry() {
     var anInt5786: Int = 0
     var aString5787: String? = null
     var anInt5788: Int = -1

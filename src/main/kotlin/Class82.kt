@@ -168,7 +168,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             method94("Dropped client connection", -119)
                             if (Class240.anInt4674 == 10) method2049(105)
                             else {
-                                if (Class240.anInt4674 == 11) Class110.aBoolean1712 = true
+                                if (Class240.anInt4674 == 11) AbstractMenuEntry.aBoolean1712 = true
                                 return
                             }
                             return
@@ -422,7 +422,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         if (string == "renderprofile" || string == "rp") {
                             Class188.aBoolean2514 = !Class188.aBoolean2514
                             Class348_Sub8.aRenderer6654!!.method3647(Class188.aBoolean2514)
-                            Class110_Sub1.method1042(23.toByte())
+                            MapLabelMenuEntry.method1042(23.toByte())
                             method94(("showprofiling=" + Class188.aBoolean2514), 106)
                             return
                         }

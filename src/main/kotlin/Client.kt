@@ -16,8 +16,8 @@ import DualMaterialContainer.Companion.method999
 import LinkedNodeListIterator.Companion.method1004
 import GroundItemRenderState.method1013
 import SceneRegionState.method221
-import Class110.Companion.method1030
-import Class110_Sub1.Companion.method1040
+import AbstractMenuEntry.Companion.method1030
+import MapLabelMenuEntry.Companion.method1040
 import Class111.Companion.method1047
 import Class113.Companion.method1057
 import Class115.method1061

@@ -44,8 +44,8 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                 Class289.anInt3699--
             }
             anInt6874++
-            if (Class110.aBoolean1712) {
-                Class110.aBoolean1712 = false
+            if (AbstractMenuEntry.aBoolean1712) {
+                AbstractMenuEntry.aBoolean1712 = false
                 method2049(67)
             } else {
                 if (!Class5_Sub1.aBoolean8335) method661(95.toByte())

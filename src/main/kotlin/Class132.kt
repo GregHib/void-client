@@ -35,7 +35,7 @@ object Class132 {
                     Class63.anInt1121 = 0
                     Class348_Sub42_Sub7.anInt9541 = -1
                 }
-                Class110.aBoolean1712 = false
+                AbstractMenuEntry.aBoolean1712 = false
                 Class14_Sub4.method254(-3, (-94).toByte())
                 Class225.anInt2955 = 1
                 SceneRegionState.anInt197 = 0

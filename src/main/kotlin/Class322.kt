@@ -1,4 +1,4 @@
-import Class110_Sub1.Companion.method1041
+import MapLabelMenuEntry.Companion.method1041
 import Class219.Companion.method1600
 import Class230.Companion.method1635
 import Class258_Sub4.Companion.method1974

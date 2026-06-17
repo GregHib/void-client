@@ -1,4 +1,4 @@
-import Class110.Companion.method1032
+import AbstractMenuEntry.Companion.method1032
 import Class348_Sub17.Companion.method2929
 import java.util.*
 import kotlin.math.max

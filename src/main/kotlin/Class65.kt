@@ -72,7 +72,7 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
         @JvmField
         var aClass351_1144: Class351?
         @JvmField
-        var aClass110_Sub1Array1146: Array<Class110_Sub1?>? = arrayOfNulls<Class110_Sub1>(0)
+        var aClass110_Sub1Array1146: Array<MapLabelMenuEntry?>? = arrayOfNulls<MapLabelMenuEntry>(0)
         @JvmField
         var anInt1147: Int = 0
         @JvmField

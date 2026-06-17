@@ -1069,8 +1069,8 @@ object Class66 {
                 Class21.aClass45_322!!.method421(false, Class313.anInt3937)
                 Class21.aClass45_322!!.method421(false, Class79.anInt1387)
                 Class174.aAbstractModelRenderer_2309 = null
-                Class110.aAbstractModelRenderer_1706 = Class174.aAbstractModelRenderer_2309
-                Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = Class110.aAbstractModelRenderer_1706
+                AbstractMenuEntry.aAbstractModelRenderer_1706 = Class174.aAbstractModelRenderer_2309
+                Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = AbstractMenuEntry.aAbstractModelRenderer_1706
                 Class348_Sub5.aAbstractModelRenderer_6627 = null
                 Class121.aAbstractModelRenderer_1800 = Class348_Sub5.aAbstractModelRenderer_6627
                 OutputStream_Sub2.aAbstractModelRenderer_106 = Class121.aAbstractModelRenderer_1800
@@ -1824,8 +1824,8 @@ object Class66 {
         } else if (i < 6300) {
             if (i == 6200) {
                 anInt1173 -= 2
-                Class110.aShort1700 = anIntArray1149!![anInt1173].toShort()
-                if (Class110.aShort1700 <= 0) Class110.aShort1700 = 256.toShort()
+                AbstractMenuEntry.aShort1700 = anIntArray1149!![anInt1173].toShort()
+                if (AbstractMenuEntry.aShort1700 <= 0) AbstractMenuEntry.aShort1700 = 256.toShort()
                 Class168.aShort2250 = anIntArray1149!![anInt1173 + 1].toShort()
                 if (Class168.aShort2250 <= 0) Class168.aShort2250 = 205.toShort()
                 return
@@ -1867,7 +1867,7 @@ object Class66 {
                 return
             }
             if (i == 6205) {
-                anIntArray1149!![anInt1173++] = Class110.aShort1700.toInt()
+                anIntArray1149!![anInt1173++] = AbstractMenuEntry.aShort1700.toInt()
                 anIntArray1149!![anInt1173++] = Class168.aShort2250.toInt()
                 return
             }

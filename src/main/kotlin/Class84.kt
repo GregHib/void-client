@@ -170,7 +170,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
                 val class207_29_ = Class207.method1521(Class21.aClass45_322!!, Class79.Companion.anInt1387, 0)
                 Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = var_renderer.method3691(class207_29_, true)
                 class207_29_!!.method1518()
-                Class110.aAbstractModelRenderer_1706 = var_renderer.method3691(class207_29_, true)
+                AbstractMenuEntry.aAbstractModelRenderer_1706 = var_renderer.method3691(class207_29_, true)
             }
             anInt1454++
             if (Class174.aAbstractModelRenderer_2309 != null && Class348_Sub42_Sub15.aAbstractModelRenderer_9658 != null && Class348_Sub42_Sub15.aAbstractModelRenderer_9659 != null) {
@@ -182,7 +182,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
                     Class309.aAbstractModelRenderer_4808!!.method974(-Class309.aAbstractModelRenderer_4808!!.method971() + i_25_ + i_24_, (Class348_Sub42_Sub15.aAbstractModelRenderer_9658!!.method969() * i_33_ + i + i_28_))
                 }
                 Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method974(i_24_, (-Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method969() + i_28_ + i_26_))
-                Class110.aAbstractModelRenderer_1706!!.method974(i_24_ + (i_25_ + -Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method971()), i_28_ - (-i_26_ + Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method969()))
+                AbstractMenuEntry.aAbstractModelRenderer_1706!!.method974(i_24_ + (i_25_ + -Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method971()), i_28_ - (-i_26_ + Class348_Sub42_Sub15.aAbstractModelRenderer_9659!!.method969()))
             }
             val i_34_ = -24 % ((i_27_ - 85) / 35)
         }

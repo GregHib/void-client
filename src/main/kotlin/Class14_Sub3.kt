@@ -98,7 +98,7 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
                 Class367_Sub3.aClass114_7301,
                 Class361.aClass114_4433,
                 Class318_Sub1_Sub5_Sub2.aClass114_10149,
-                Class110.aClass114_1702,
+                AbstractMenuEntry.aClass114_1702,
                 Class168.aClass114_2248,
                 Class239_Sub20.aClass114_6056,
                 Class312.aClass114_3925,

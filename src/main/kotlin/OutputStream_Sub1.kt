@@ -23,7 +23,7 @@ class OutputStream_Sub1 : OutputStream() {
         @JvmField
         var anInt96: Int = 0
         @JvmField
-        var aClass110_Sub1Array97: Array<Class110_Sub1?>? = null
+        var aClass110_Sub1Array97: Array<MapLabelMenuEntry?>? = null
         @JvmField
         var anInt98: Int = 0
         @JvmField

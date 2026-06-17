@@ -834,7 +834,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     override fun method3643(canvas: Canvas?, i: Int, i_232_: Int) {
         var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 == null) {
-            class348_sub31 = Class110.method1035(9029, i_232_, canvas, i)
+            class348_sub31 = AbstractMenuEntry.method1035(9029, i_232_, canvas, i)
             aClass356_7467!!.method3483(21.toByte(), canvas.hashCode().toLong(), class348_sub31)
         } else if (class348_sub31.anInt6917 != i || class348_sub31.anInt6920 != i_232_) method3669(canvas, i, i_232_)
     }
@@ -2072,7 +2072,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 != null) {
             class348_sub31.method2715(95.toByte())
-            class348_sub31 = Class110.method1035(9029, i_578_, canvas, i)!!
+            class348_sub31 = AbstractMenuEntry.method1035(9029, i_578_, canvas, i)!!
             aClass356_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
             if (aCanvas7468 === canvas && aClass49_7475 == null) {
                 val dimension = canvas!!.getSize()

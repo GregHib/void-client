@@ -117,7 +117,7 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
         }
 
         @JvmStatic
-        fun method2487(i: Int): Class110_Sub1? {
+        fun method2487(i: Int): MapLabelMenuEntry? {
             anInt8778++
             Class348_Sub36.anInt6985 = 0
             if (i >= -91) anInt8775 = -63

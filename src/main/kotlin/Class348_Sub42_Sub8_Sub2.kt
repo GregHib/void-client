@@ -1,6 +1,6 @@
 import GameAppletFrame.Companion.method94
 import GameAppletFrame.Companion.set
-import Class110.Companion.method1034
+import AbstractMenuEntry.Companion.method1034
 import Class238.Companion.method1703
 import Class239.Companion.method1713
 import Class239_Sub16.Companion.method1788
@@ -1170,7 +1170,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class189.anInt2523 = Class311.anInt3918
                 return true
             }
-            if (Class348_Sub3.aClass114_6584 == Class110.aClass114_1702) {
+            if (Class348_Sub3.aClass114_6584 == AbstractMenuEntry.aClass114_1702) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 val i_143_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())

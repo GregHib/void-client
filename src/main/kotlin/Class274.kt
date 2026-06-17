@@ -220,7 +220,7 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
             Class348_Sub5.aAbstractModelRenderer_6627 = null
             OutputStream_Sub2.aAbstractModelRenderer_106 = null
             Class309.aAbstractModelRenderer_4808 = null
-            Class110.aAbstractModelRenderer_1706 = null
+            AbstractMenuEntry.aAbstractModelRenderer_1706 = null
         }
 
         fun method2062(i: Byte) {

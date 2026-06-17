@@ -68,7 +68,7 @@ class Class239_Sub8 : Class239 {
         var anInt5924: Int = 0
 
         @JvmStatic
-        fun method1749(class110_sub1: Class110_Sub1?, class110_sub1_0_: Class110_Sub1?, bool: Boolean, i: Int, i_1_: Byte): Int {
+        fun method1749(class110_sub1: MapLabelMenuEntry?, class110_sub1_0_: MapLabelMenuEntry?, bool: Boolean, i: Int, i_1_: Byte): Int {
             try {
                 anInt5916++
                 if (i == 1) {

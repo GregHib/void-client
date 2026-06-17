@@ -329,7 +329,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub9.anInt9166 = 0
             Class318_Sub1_Sub3_Sub1.anInt10012 = 0
             Class309.anInt4821 = 0
-            Class110.anInt1699 = 0
+            AbstractMenuEntry.anInt1699 = 0
             Class64_Sub2.anInt5453 = 0
             Class64_Sub2.anInt5526 = 0
             Class127.anInt4653 = 0
@@ -1256,7 +1256,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class199.anInt2624 = 0
             OpenGlRenderer.anInt7562 = 0
             Class124.anInt1831 = 0
-            Class110.anInt1703 = 0
+            AbstractMenuEntry.anInt1703 = 0
             Class239_Sub3.anInt5865 = 0
             Class314_Sub1.anInt6363 = 0
             Class37.anInt493 = 0
@@ -2244,7 +2244,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class30.anInt411 = 0
             Player.anInt10555 = 0
             Class377.anInt9884 = 0
-            Class110.anInt1707 = 0
+            AbstractMenuEntry.anInt1707 = 0
             Class239_Sub22.anInt6070 = 0
             Class348_Sub42_Sub17.anInt9680 = 0
             Class2.anInt121 = 0
@@ -2315,7 +2315,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class248.anInt3193 = 0
             Class239_Sub29.anInt6153 = 0
             Class348_Sub49.anInt7198 = 0
-            Class110.anInt1705 = 0
+            AbstractMenuEntry.anInt1705 = 0
             Class373_Sub2.anInt7455 = 0
             Class218.anInt2857 = 0
             Class84.anInt1459 = 0
@@ -2616,7 +2616,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class139.anInt1950 = 0
             Class65.anInt1139 = 0
             Class348_Sub47.anInt7123 = 0
-            Class110_Sub1.anInt5789 = 0
+            MapLabelMenuEntry.anInt5789 = 0
             Class50_Sub3.anInt5238 = 0
             Class348_Sub51.anInt7239 = 0
             Class60.anInt1101 = 0
@@ -2711,7 +2711,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class38.anInt505 = 0
             Class287.anInt3694 = 0
             Class213.anInt2754 = 0
-            Class110_Sub1.anInt5792 = 0
+            MapLabelMenuEntry.anInt5792 = 0
             OpenGlRenderer.anInt7591 = 0
             OpenGlTerrainTile.anInt8247 = 0
             Class299_Sub1_Sub2.anInt8699 = 0
@@ -2930,7 +2930,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub24.anInt6086 = 0
             Class267.anInt3390 = 0
             OpenGlRenderer.anInt7540 = 0
-            Class110.anInt1709 = 0
+            AbstractMenuEntry.anInt1709 = 0
             Class348_Sub40_Sub32.anInt9414 = 0
             Class239_Sub21.anInt6057 = 0
             Class348_Sub40.anInt7030 = 0
@@ -3200,7 +3200,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub3_Sub5.anInt10370 = 0
             Class65.anInt1142 = 0
             Class156.anInt2119 = 0
-            Class110_Sub1.anInt5790 = 0
+            MapLabelMenuEntry.anInt5790 = 0
             NativeRenderer.anInt7926 = 0
             NativeRenderer.anInt7989 = 0
             Class240.anInt4678 = 0
@@ -3321,7 +3321,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class69.anInt1194 = 0
             Class239_Sub8.anInt5914 = 0
             Class348_Sub49.anInt7192 = 0
-            Class110_Sub1.anInt5793 = 0
+            MapLabelMenuEntry.anInt5793 = 0
             Class32.anInt447 = 0
             Class161.anInt2144 = 0
             Class348_Sub1_Sub1.anInt8802 = 0
@@ -3394,7 +3394,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             OpenGlRenderer.anInt7588 = 0
             Class59_Sub2_Sub2.anInt8682 = 0
             Class318_Sub1_Sub3_Sub2.anInt10058 = 0
-            Class110.anInt1710 = 0
+            AbstractMenuEntry.anInt1710 = 0
             GameAppletFrame.anInt35 = 0
             Class348_Sub32.anInt6933 = 0
             Class135.anInt1925 = 0
@@ -3818,7 +3818,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             NativeRenderer.anInt8032 = 0
             Class125.anInt4916 = 0
             Class42.anInt571 = 0
-            Class110.anInt1701 = 0
+            AbstractMenuEntry.anInt1701 = 0
             Class348_Sub42_Sub14.anInt9636 = 0
             Class83.anInt1445 = 0
             OpenGlRenderer.anInt7521 = 0
