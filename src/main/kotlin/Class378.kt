@@ -96,7 +96,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i != 0) method3910((-110).toByte(), 113)
     }
 
-    fun method3954(i: Int, class310_sub2: Class310_Sub2) {
+    fun method3954(i: Int, class310_sub2: D3DTexture2D) {
         method3956((-56).toByte(), class310_sub2)
         if (aBooleanArray9786!![this.anInt8175] == !class310_sub2.aBoolean6334) {
             this.anIDirect3DDevice9810!!.SetSamplerState(this.anInt8175, 1, if (!class310_sub2.aBoolean6334) 3 else 1)
@@ -121,7 +121,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3872(i: Int, i_10_: Int, textureFormatInfo: TextureFormatInfo?, bool: Boolean, i_11_: Int, `is`: ByteArray?): Interface18_Impl1? {
         if (bool != true) return null
-        return Class310_Sub3(this, textureFormatInfo!!, i_10_, i_11_, i, `is`)
+        return D3DVolumeTexture(this, textureFormatInfo!!, i_10_, i_11_, i, `is`)
     }
 
     override fun method3827(i: Byte) {
@@ -196,22 +196,22 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i != 1) anIDirect3D9793 = null
     }
 
-    fun method3956(i: Byte, class310: Class310) {
-        this.anIDirect3DDevice9810!!.SetTexture(this.anInt8175, class310.method2314(17723))
+    fun method3956(i: Byte, d3DBaseTexture: D3DBaseTexture) {
+        this.anIDirect3DDevice9810!!.SetTexture(this.anInt8175, d3DBaseTexture.method2314(17723))
         if (i <= -53) {
-            if (aClass209Array9795!![this.anInt8175] == class310.aClass209_3894) {
-                if (aBooleanArray9804[this.anInt8175] == !class310.aBoolean3892) {
-                    this.anIDirect3DDevice9810!!.SetSamplerState(this.anInt8175, 7, (if (class310.aBoolean3892) method3952(class310.aClass209_3894, 86.toByte()) else 0))
-                    aBooleanArray9804[this.anInt8175] = class310.aBoolean3892
+            if (aClass209Array9795!![this.anInt8175] == d3DBaseTexture.aClass209_3894) {
+                if (aBooleanArray9804[this.anInt8175] == !d3DBaseTexture.aBoolean3892) {
+                    this.anIDirect3DDevice9810!!.SetSamplerState(this.anInt8175, 7, (if (d3DBaseTexture.aBoolean3892) method3952(d3DBaseTexture.aClass209_3894, 86.toByte()) else 0))
+                    aBooleanArray9804[this.anInt8175] = d3DBaseTexture.aBoolean3892
                 }
             } else {
-                val i_22_: Int = method3952(class310.aClass209_3894, 82.toByte())
+                val i_22_: Int = method3952(d3DBaseTexture.aClass209_3894, 82.toByte())
                 this.anIDirect3DDevice9810!!.SetSamplerState(this.anInt8175, 6, i_22_)
                 this.anIDirect3DDevice9810!!.SetSamplerState(this.anInt8175, 5, i_22_)
-                aClass209Array9795!![this.anInt8175] = class310.aClass209_3894
-                if (aBooleanArray9804[this.anInt8175] != class310.aBoolean3892) {
-                    this.anIDirect3DDevice9810!!.SetSamplerState(this.anInt8175, 7, (if (!class310.aBoolean3892) 0 else method3952(class310.aClass209_3894, 68.toByte())))
-                    aBooleanArray9804[this.anInt8175] = class310.aBoolean3892
+                aClass209Array9795!![this.anInt8175] = d3DBaseTexture.aClass209_3894
+                if (aBooleanArray9804[this.anInt8175] != d3DBaseTexture.aBoolean3892) {
+                    this.anIDirect3DDevice9810!!.SetSamplerState(this.anInt8175, 7, (if (!d3DBaseTexture.aBoolean3892) 0 else method3952(d3DBaseTexture.aClass209_3894, 68.toByte())))
+                    aBooleanArray9804[this.anInt8175] = d3DBaseTexture.aBoolean3892
                 }
             }
             if (!aBooleanArray9784[this.anInt8175]) {
@@ -467,7 +467,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         this.anIDirect3DDevice9810!!.SetViewport(this.anInt8181, this.anInt8109, this.anInt7931, this.anInt7962, 0.0f, 1.0f)
     }
 
-    fun method3959(i: Int, class310_sub3: Class310_Sub3) {
+    fun method3959(i: Int, class310_sub3: D3DVolumeTexture) {
         method3956((-73).toByte(), class310_sub3)
         if (!aBooleanArray9786!![this.anInt8175]) {
             this.anIDirect3DDevice9810!!.SetSamplerState(this.anInt8175, 1, 1)
@@ -510,7 +510,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3843(i: Int, i_49_: Int, i_50_: Int, i_51_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_52_: Int, bool: Boolean): Interface18_Impl3 {
         if (i_52_ != 32) anInt9785 = 94
-        return Class310_Sub2(this, textureFormatInfo!!, i_50_, i, bool, `is`, i_49_, i_51_)
+        return D3DTexture2D(this, textureFormatInfo!!, i_50_, i, bool, `is`, i_49_, i_51_)
     }
 
     @Synchronized
@@ -559,7 +559,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3830(i: Int, `is`: IntArray?, bool: Boolean, i_55_: Byte, i_56_: Int, i_57_: Int, i_58_: Int): Interface18_Impl3 {
         val i_59_ = -31 % ((-21 - i_55_) / 46)
-        return Class310_Sub2(this, i, i_58_, bool, `is`, i_56_, i_57_)
+        return D3DTexture2D(this, i, i_58_, bool, `is`, i_56_, i_57_)
     }
 
     override fun method3687(interface4: Interface4?) {
@@ -568,7 +568,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3900(`is`: Array<IntArray?>?, bool: Boolean, i: Int, i_60_: Int): Interface18_Impl2 {
         if (i <= 1) aFloatArray9797 = null
-        return Class310_Sub1(this, i_60_, bool, `is`)
+        return D3DCubeTexture(this, i_60_, bool, `is`)
     }
 
     override fun method3939(i: Byte) {
@@ -698,7 +698,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
     }
 
     override fun method3861(i: Int, i_73_: Byte, i_74_: Int, class68: Class68?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3 {
-        return Class310_Sub2(this, textureFormatInfo!!, class68!!, i_74_, i)
+        return D3DTexture2D(this, textureFormatInfo!!, class68!!, i_74_, i)
     }
 
     override fun method3844(i: Int, canvas: Canvas?, `object`: Any?) {

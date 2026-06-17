@@ -3,7 +3,7 @@ import jagdx.IDirect3DBaseTexture
 import jagdx.IDirect3DTexture
 import jagdx.ue.a
 
-class Class310_Sub2 : Class310, Interface18_Impl3 {
+class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
     private val anInt6331: Int
     private val anIDirect3DTexture6332: IDirect3DTexture
     private val anInt6333: Int
