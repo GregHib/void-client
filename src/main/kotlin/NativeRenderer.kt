@@ -899,12 +899,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3625(class124: Class124?, i: Int, i_87_: Int, i_88_: Int, i_89_: Int): Class64 {
+    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_87_: Int, i_88_: Int, i_89_: Int): Class64 {
         try {
             anInt8016++
-            return Class64_Sub2(this, class124, i, i_88_, i_89_, i_87_)
+            return Class64_Sub2(this, modelDefinition, i, i_88_, i_89_, i_87_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.EG(" + (if (class124 != null) "{...}" else "null") + ',' + i + ',' + i_87_ + ',' + i_88_ + ',' + i_89_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_87_ + ',' + i_88_ + ',' + i_89_ + ')'))
         }
     }
 

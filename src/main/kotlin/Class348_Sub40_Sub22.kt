@@ -33,7 +33,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
         for (i_2_ in 0..<anInt9301) {
             if (i_2_ > 0) {
                 var i_3_ = anInt9300
-                val i_4_ = ((Class124.method1097(90.toByte(), 4096, random) - 2048) * anInt9305 shr 12)
+                val i_4_ = ((ModelDefinition.method1097(90.toByte(), 4096, random) - 2048) * anInt9305 shr 12)
                 i_3_ += i_4_ * i_1_ shr 12
                 anIntArray9297[i_2_] = i_3_ + anIntArray9297[-1 + i_2_]
             }
@@ -42,11 +42,11 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
             while (anInt9299 > i_5_) {
                 if (i_5_ > 0) {
                     var i_6_ = anInt9291
-                    val i_7_ = ((Class124.method1097(117.toByte(), 4096, random) - 2048) * anInt9302 shr 12)
+                    val i_7_ = ((ModelDefinition.method1097(117.toByte(), 4096, random) - 2048) * anInt9302 shr 12)
                     i_6_ += i_0_ * i_7_ shr 12
                     anIntArrayArray9287[i_2_]!![i_5_] = anIntArrayArray9287[i_2_]!![i_5_ + -1] + i_6_
                 }
-                anIntArrayArray9286[i_2_]!![i_5_] = (if (anInt9284 <= 0) 4096 else (-Class124.method1097(124.toByte(), anInt9284, random) + 4096))
+                anIntArrayArray9286[i_2_]!![i_5_] = (if (anInt9284 <= 0) 4096 else (-ModelDefinition.method1097(124.toByte(), anInt9284, random) + 4096))
                 i_5_++
             }
             anIntArrayArray9287[i_2_]!![anInt9299] = 4096

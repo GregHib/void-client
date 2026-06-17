@@ -260,19 +260,19 @@ class Class51 {
             if (class64 == null || var_renderer.method3667(class64.ua(), i_17_) != 0) {
                 var i_25_ = i_17_ or 0x1f01f
                 if (class64 != null) i_25_ = var_renderer.method3679(i_25_, class64.ua())
-                var class124: Class124? = null
-                synchronized(Class341.aClass124Array4236!!) {
+                var modelDefinition: ModelDefinition? = null
+                synchronized(Class341.aModelDefinitionArray4236s!!) {
                     for (i_26_ in 0..<i_23_) {
                         synchronized(this.aClass263_933!!.aClass45_3345!!) {
-                            class124 = Class300.method2277(0, (this.aClass263_933!!.aClass45_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
+                            modelDefinition = Class300.method2277(0, (this.aClass263_933!!.aClass45_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
-                        if (class124 == null) return null
-                        if (class124.anInt1830 < 13) class124.method1092(2, 96)
-                        if (i_23_ > 1) Class341.aClass124Array4236!![i_26_] = class124
+                        if (modelDefinition == null) return null
+                        if (modelDefinition.anInt1830 < 13) modelDefinition.method1092(2, 96)
+                        if (i_23_ > 1) Class341.aModelDefinitionArray4236s!![i_26_] = modelDefinition
                     }
-                    if (i_23_ > 1) class124 = Class124(Class341.aClass124Array4236!!, i_23_)
+                    if (i_23_ > 1) modelDefinition = ModelDefinition(Class341.aModelDefinitionArray4236s!!, i_23_)
                 }
-                class64 = var_renderer.method3625(class124, i_25_, (this.aClass263_933!!.anInt3363), i_18_, i_19_)
+                class64 = var_renderer.method3625(modelDefinition, i_25_, (this.aClass263_933!!.anInt3363), i_18_, i_19_)
                 synchronized(this.aClass263_933!!.aClass60_3360) {
                     this.aClass263_933!!.aClass60_3360.method582(class64, l, (-95).toByte())
                 }

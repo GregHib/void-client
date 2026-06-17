@@ -171,23 +171,23 @@ class Class154 {
                     }
                     if (class64 == null || var_renderer!!.method3667(class64.ua(), i_9_) != 0) return null
                 } else {
-                    val class124s = arrayOfNulls<Class124>(12)
+                    val modelDefinitions = arrayOfNulls<ModelDefinition>(12)
                     for (i_40_ in 0..11) {
                         val i_41_ = is_10_!![i_40_]
                         if ((0x40000000 and i_41_) == 0) {
                             if ((0x7fffffff.inv() and i_41_) != 0) {
                                 val class124 = class150!!.method1203(33.toByte(), i_41_ and 0x3fffffff).method341(91)
-                                if (class124 != null) class124s[i_40_] = class124
+                                if (class124 != null) modelDefinitions[i_40_] = class124
                             }
                         } else {
                             val class124 = (class255!!.method1940(104, i_41_ and 0x3fffffff).method1558(this.aBoolean2100, !bool_2_))
-                            if (class124 != null) class124s[i_40_] = class124
+                            if (class124 != null) modelDefinitions[i_40_] = class124
                         }
                     }
                     if (class225 != null && class225.anIntArrayArray2939 != null) {
                         var i_42_ = 0
                         while (((class225.anIntArrayArray2939!!).size > i_42_)) {
-                            if (class124s[i_42_] != null) {
+                            if (modelDefinitions[i_42_] != null) {
                                 var i_43_ = 0
                                 var i_44_ = 0
                                 var i_45_ = 0
@@ -202,15 +202,15 @@ class Class154 {
                                     i_46_ = ((class225.anIntArrayArray2939!![i_42_]!![3]) shl 3)
                                     i_45_ = (class225.anIntArrayArray2939!![i_42_]!![2])
                                 }
-                                if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) class124s[i_42_]!!.method1107(6875, i_47_, i_48_, i_46_)
-                                if (i_43_ != 0 || i_44_ != 0 || i_45_ != 0) class124s[i_42_]!!.method1099((-82).toByte(), i_45_, i_43_, i_44_)
+                                if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) modelDefinitions[i_42_]!!.method1107(6875, i_47_, i_48_, i_46_)
+                                if (i_43_ != 0 || i_44_ != 0 || i_45_ != 0) modelDefinitions[i_42_]!!.method1099((-82).toByte(), i_45_, i_43_, i_44_)
                             }
                             i_42_++
                         }
                     }
-                    val class124 = Class124(class124s, class124s.size)
+                    val modelDefinition = ModelDefinition(modelDefinitions, modelDefinitions.size)
                     i_36_ = i_36_ or 0x4000
-                    class64 = var_renderer!!.method3625(class124, i_36_, Class168.anInt2251, 64, 850)
+                    class64 = var_renderer!!.method3625(modelDefinition, i_36_, Class168.anInt2251, 64, 850)
                     for (i_49_ in 0..4) {
                         var i_50_ = 0
                         while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_50_)) {
@@ -378,23 +378,23 @@ class Class154 {
                     } else if ((0x7fffffff.inv() and i_82_) != 0 && !class150!!.method1203(33.toByte(), i_82_ and 0x3fffffff).method342(110.toByte())) bool = true
                 }
                 if (bool) return null
-                val class124s = arrayOfNulls<Class124>(12)
+                val modelDefinitions = arrayOfNulls<ModelDefinition>(12)
                 var i_83_ = 0
                 for (i_84_ in 0..11) {
                     val i_85_ = anIntArray2092!![i_84_]
                     if ((i_85_ and 0x40000000) == 0) {
                         if ((i_85_ and 0x7fffffff.inv()) != 0) {
                             val class124 = class150!!.method1203(33.toByte(), i_85_ and 0x3fffffff).method343((-73).toByte())
-                            if (class124 != null) class124s[i_83_++] = class124
+                            if (class124 != null) modelDefinitions[i_83_++] = class124
                         }
                     } else {
                         val class124 = (class255!!.method1940(-107, i_85_ and 0x3fffffff).method1554(this.aBoolean2100, -14))
-                        if (class124 != null) class124s[i_83_++] = class124
+                        if (class124 != null) modelDefinitions[i_83_++] = class124
                     }
                 }
                 i_80_ = i_80_ or 0x4000
-                val class124 = Class124(class124s, i_83_)
-                class64 = var_renderer!!.method3625(class124, i_80_, Class168.anInt2251, 64, 768)
+                val modelDefinition = ModelDefinition(modelDefinitions, i_83_)
+                class64 = var_renderer!!.method3625(modelDefinition, i_80_, Class168.anInt2251, 64, 768)
                 for (i_86_ in 0..4) {
                     var i_87_ = 0
                     while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_87_)) {
@@ -477,16 +477,16 @@ class Class154 {
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_98_) != 0) {
                 if (class64 != null) i_98_ = var_renderer!!.method3679(i_98_, class64.ua())
                 var i_108_ = i_98_
-                val class124s = arrayOfNulls<Class124>(3)
+                val modelDefinitions = arrayOfNulls<ModelDefinition>(3)
                 var i_109_ = 0
                 if (!class150!!.method1203(33.toByte(), i_95_).method342(114.toByte()) || !class150.method1203(33.toByte(), i_93_).method342(102.toByte()) || !class150.method1203(33.toByte(), i_92_).method342(94.toByte())) return null
                 var class124 = class150.method1203(33.toByte(), i_95_).method343((-50).toByte())
-                if (class124 != null) class124s[i_109_++] = class124
+                if (class124 != null) modelDefinitions[i_109_++] = class124
                 class124 = class150.method1203(33.toByte(), i_93_).method343((-105).toByte())
-                if (class124 != null) class124s[i_109_++] = class124
+                if (class124 != null) modelDefinitions[i_109_++] = class124
                 class124 = class150.method1203(33.toByte(), i_92_).method343((-30).toByte())
-                if (class124 != null) class124s[i_109_++] = class124
-                class124 = Class124(class124s, i_109_)
+                if (class124 != null) modelDefinitions[i_109_++] = class124
+                class124 = ModelDefinition(modelDefinitions, i_109_)
                 i_108_ = i_108_ or 0x4000
                 class64 = var_renderer!!.method3625(class124, i_108_, Class168.anInt2251, 64, 768)
                 for (i_110_ in 0..4) {

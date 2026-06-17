@@ -154,7 +154,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             try {
                 if (Class348_Sub43.anInt7068 == 2) {
                     if (Class286.Companion.aClass348_Sub2_3683 == null) {
-                        Class286.Companion.aClass348_Sub2_3683 = Class348_Sub2.method2734(Class124.aClass45_1848!!, (Class318_Sub1_Sub4_Sub1.anInt10074), Class318.anInt3971)
+                        Class286.Companion.aClass348_Sub2_3683 = Class348_Sub2.method2734(ModelDefinition.aClass45_1848!!, (Class318_Sub1_Sub4_Sub1.anInt10074), Class318.anInt3971)
                         if (Class286.Companion.aClass348_Sub2_3683 == null) return false
                     }
                     if (Class141.aClass26_1977 == null) Class141.aClass26_1977 = Class26(Class43.aClass45_611, Class333.aClass45_4147)
@@ -185,7 +185,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                             else Class98.aClass348_Sub16_Sub3_1564!!.method2870(Class286.Companion.aClass348_Sub2_3683, Class239_Sub12.aLong5971, Class346.aBoolean4275, true, 24.toByte())
                         }
                         if (Class318_Sub1_Sub4.aClass279_8764 != null) Class318_Sub1_Sub4.aClass279_8764!!.method2088(bool, Class98.aClass348_Sub16_Sub3_1564)
-                        Class124.aClass45_1848 = null
+                        ModelDefinition.aClass45_1848 = null
                         Class286.Companion.aClass348_Sub2_3683 = null
                         Class239_Sub12.aLong5971 = 0L
                         Class141.aClass26_1977 = null
@@ -200,7 +200,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                 Class285.aClass348_Sub16_Sub3_4743 = null
                 Class141.aClass26_1977 = null
                 Class286.Companion.aClass348_Sub2_3683 = null
-                Class124.aClass45_1848 = null
+                ModelDefinition.aClass45_1848 = null
                 Class348_Sub43.anInt7068 = 0
             }
             return false

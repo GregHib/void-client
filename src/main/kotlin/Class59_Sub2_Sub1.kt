@@ -42,7 +42,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         @JvmField
         var anInt8673: Int = 0
         @JvmStatic
-        fun method565(i: Int, i_0_: Int, class124: Class124?, `is`: IntArray?): Class358 {
+        fun method565(i: Int, i_0_: Int, modelDefinition: ModelDefinition?, `is`: IntArray?): Class358 {
             try {
                 anInt8673++
                 var is_1_: IntArray? = null
@@ -50,8 +50,8 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 var is_2_: IntArray? = null
                 var is_3_: IntArray? = null
                 var fs: Array<FloatArray?>? = null
-                if (class124!!.aByteArray1820 != null) {
-                    val i_4_ = class124.anInt1818
+                if (modelDefinition!!.aByteArray1820 != null) {
+                    val i_4_ = modelDefinition.anInt1818
                     val is_5_ = IntArray(i_4_)
                     val is_6_ = IntArray(i_4_)
                     val is_7_ = IntArray(i_4_)
@@ -71,17 +71,17 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                     is_2_ = IntArray(i_4_)
                     for (i_12_ in 0..<i_0_) {
                         val i_13_ = `is`!![i_12_]
-                        if (class124.aByteArray1820!![i_13_].toInt() != -1) {
-                            val i_14_ = (class124.aByteArray1820!![i_13_].toInt() and 0xff)
+                        if (modelDefinition.aByteArray1820!![i_13_].toInt() != -1) {
+                            val i_14_ = (modelDefinition.aByteArray1820!![i_13_].toInt() and 0xff)
                             for (i_15_ in 0..2) {
                                 val i_16_: Short
                                 if (i_15_ != 0) {
-                                    if (i_15_ == 1) i_16_ = (class124.aShortArray1835!![i_13_])
-                                    else i_16_ = (class124.aShortArray1855[i_13_])
-                                } else i_16_ = (class124.aShortArray1863[i_13_])
-                                val i_17_ = class124.anIntArray1841[i_16_.toInt()]
-                                val i_18_ = class124.anIntArray1847[i_16_.toInt()]
-                                val i_19_ = class124.anIntArray1852[i_16_.toInt()]
+                                    if (i_15_ == 1) i_16_ = (modelDefinition.aShortArray1835!![i_13_])
+                                    else i_16_ = (modelDefinition.aShortArray1855[i_13_])
+                                } else i_16_ = (modelDefinition.aShortArray1863[i_13_])
+                                val i_17_ = modelDefinition.anIntArray1841[i_16_.toInt()]
+                                val i_18_ = modelDefinition.anIntArray1847[i_16_.toInt()]
+                                val i_19_ = modelDefinition.anIntArray1852[i_16_.toInt()]
                                 if (i_17_ < is_5_[i_14_]) is_5_[i_14_] = i_17_
                                 if (is_6_[i_14_] < i_17_) is_6_[i_14_] = i_17_
                                 if (is_7_[i_14_] > i_18_) is_7_[i_14_] = i_18_
@@ -94,7 +94,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                     is_1_ = IntArray(i_4_)
                     var i_20_ = 0
                     while (i_4_ > i_20_) {
-                        val i_21_ = class124.aByteArray1823[i_20_]
+                        val i_21_ = modelDefinition.aByteArray1823[i_20_]
                         if (i_21_ > 0) {
                             is_1_[i_20_] = (is_6_[i_20_] + is_5_[i_20_]) / 2
                             is_2_[i_20_] = (is_8_[i_20_] + is_7_[i_20_]) / 2
@@ -103,7 +103,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                             val f_22_: Float
                             val f_23_: Float
                             if (i_21_.toInt() == 1) {
-                                val i_24_ = class124.anIntArray1859!![i_20_]
+                                val i_24_ = modelDefinition.anIntArray1859!![i_20_]
                                 if (i_24_ == 0) {
                                     f_22_ = 1.0f
                                     f_23_ = 1.0f
@@ -114,24 +114,24 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                                     f_23_ = 1.0f
                                     f_22_ = i_24_.toFloat() / 1024.0f
                                 }
-                                f = 64.0f / (class124.anIntArray1816[i_20_]).toFloat()
+                                f = 64.0f / (modelDefinition.anIntArray1816[i_20_]).toFloat()
                             } else if (i_21_.toInt() == 2) {
-                                f = 64.0f / (class124.anIntArray1816[i_20_]).toFloat()
-                                f_22_ = 64.0f / (class124.anIntArray1844[i_20_]).toFloat()
-                                f_23_ = 64.0f / (class124.anIntArray1859!![i_20_]).toFloat()
+                                f = 64.0f / (modelDefinition.anIntArray1816[i_20_]).toFloat()
+                                f_22_ = 64.0f / (modelDefinition.anIntArray1844[i_20_]).toFloat()
+                                f_23_ = 64.0f / (modelDefinition.anIntArray1859!![i_20_]).toFloat()
                             } else {
-                                f = (class124.anIntArray1816[i_20_]).toFloat() / 1024.0f
-                                f_22_ = (class124.anIntArray1844[i_20_]).toFloat() / 1024.0f
-                                f_23_ = (class124.anIntArray1859!![i_20_]).toFloat() / 1024.0f
+                                f = (modelDefinition.anIntArray1816[i_20_]).toFloat() / 1024.0f
+                                f_22_ = (modelDefinition.anIntArray1844[i_20_]).toFloat() / 1024.0f
+                                f_23_ = (modelDefinition.anIntArray1859!![i_20_]).toFloat() / 1024.0f
                             }
-                            fs[i_20_] = (Class175.method1347(class124.aShortArray1825[i_20_].toInt(), class124.aShortArray1849[i_20_].toInt(), f_22_, f_23_, 126, f, class124.aShortArray1829[i_20_].toInt(), Class139.method1166(255, (class124.aByteArray1833[i_20_]).toInt())))
+                            fs[i_20_] = (Class175.method1347(modelDefinition.aShortArray1825[i_20_].toInt(), modelDefinition.aShortArray1849[i_20_].toInt(), f_22_, f_23_, 126, f, modelDefinition.aShortArray1829[i_20_].toInt(), Class139.method1166(255, (modelDefinition.aByteArray1833[i_20_]).toInt())))
                         }
                         i_20_++
                     }
                 }
                 return Class358(is_1_, is_2_, is_3_, fs)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (if (class124 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
             }
         }
 

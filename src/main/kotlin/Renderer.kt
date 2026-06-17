@@ -12,7 +12,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun b(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, d: Double)
 
-    abstract fun method3625(class124: Class124?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int): Class64
+    abstract fun method3625(modelDefinition: ModelDefinition?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int): Class64
 
     abstract fun F(i: Int, i_7_: Int)
 
@@ -374,7 +374,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
                 for (i_89_ in 0..254) `is`[i_89_] = i_89_.toByte()
                 for (i_90_ in 0..254) {
                     val i_91_ = -i_90_ + 255
-                    val i_92_ = Class124.method1097(95.toByte(), i_91_, random)
+                    val i_92_ = ModelDefinition.method1097(95.toByte(), i_91_, random)
                     val i_93_ = `is`[i_92_]
                     `is`[i_92_] = `is`[i_91_]
                     `is`[511 + -i_90_] = i_93_

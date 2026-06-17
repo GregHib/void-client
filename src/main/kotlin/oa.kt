@@ -336,8 +336,8 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun X(i: Int)
 
-    override fun method3625(class124: Class124?, i: Int, i_131_: Int, i_132_: Int, i_133_: Int): Class64 {
-        return i(this, aYa5121, class124!!, i, i_131_, i_132_, i_133_)
+    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_131_: Int, i_132_: Int, i_133_: Int): Class64 {
+        return i(this, aYa5121, modelDefinition!!, i, i_131_, i_132_, i_133_)
     }
 
     override fun c(): Class365 { //

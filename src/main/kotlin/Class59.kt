@@ -18,7 +18,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
         for (i_0_ in 0..254) aShortArray1082[i_0_] = i_0_.toShort()
         for (i_1_ in 0..254) {
             val i_2_ = -i_1_ + 255
-            val i_3_ = Class124.method1097(106.toByte(), i_2_, random)
+            val i_3_ = ModelDefinition.method1097(106.toByte(), i_2_, random)
             val i_4_ = aShortArray1082[i_3_]
             aShortArray1082[i_3_] = aShortArray1082[i_2_]
             aShortArray1082[256 + i_2_] = i_4_

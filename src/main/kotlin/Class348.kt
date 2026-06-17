@@ -94,8 +94,8 @@ open class Class348 {
                     } else i_14_ = 9
                     val i_15_ = 3
                     val `is` = intArrayOf(64, 96, 128)
-                    val class124 = Class124(1 + i_14_ * i_15_, 2 * i_14_ * i_15_ + -i_14_, 0)
-                    val i_16_ = class124.method1101(0, 0, 0, -44)
+                    val modelDefinition = ModelDefinition(1 + i_14_ * i_15_, 2 * i_14_ * i_15_ + -i_14_, 0)
+                    val i_16_ = modelDefinition.method1101(0, 0, 0, -44)
                     val is_17_ = Array<IntArray?>(i_15_) { IntArray(i_14_) }
                     for (i_18_ in 0..<i_15_) {
                         val i_19_ = `is`[i_18_]
@@ -105,7 +105,7 @@ open class Class348 {
                             val i_22_ = (i_21_ shl 14) / i_14_
                             val i_23_ = (Class70.anIntArray1207!![i_22_] * i_19_ shr 14)
                             val i_24_ = (Class70.anIntArray1204!![i_22_] * i_20_ shr 14)
-                            is_17_[i_18_]!![i_21_] = class124.method1101(0, i_24_, i_23_, 123)
+                            is_17_[i_18_]!![i_21_] = modelDefinition.method1101(0, i_24_, i_23_, 123)
                             i_21_++
                         }
                     }
@@ -116,15 +116,15 @@ open class Class348 {
                         val i_28_ = (i_26_ * i_11_ + i_9_ * i_27_ shr 8).toByte()
                         val i_29_ = (((0xfc0000 and ((i_10_ and 0xfc00) * i_26_ + i_27_ * (0xfc00 and i_6_))) + (((i_10_ and 0x380) * i_26_ + i_27_ * (0x380 and i_6_)) and 0x38000) + ((i_26_ * (i_10_ and 0x7f) + (0x7f and i_6_) * i_27_) and 0x7f00)) shr 8).toShort()
                         for (i_30_ in 0..<i_14_) {
-                            if (i_25_ == 0) class124.method1102(i_16_, 1.toByte(), (-1).toByte(), (-1).toShort(), 45.toByte(), i_29_, is_17_[0]!![(1 + i_30_) % i_14_], i_28_, is_17_[0]!![i_30_])
+                            if (i_25_ == 0) modelDefinition.method1102(i_16_, 1.toByte(), (-1).toByte(), (-1).toShort(), 45.toByte(), i_29_, is_17_[0]!![(1 + i_30_) % i_14_], i_28_, is_17_[0]!![i_30_])
                             else {
-                                class124.method1102(is_17_[i_25_ - 1]!![i_30_], 1.toByte(), (-1).toByte(), (-1).toShort(), 48.toByte(), i_29_, is_17_[i_25_ + -1]!![(1 + i_30_) % i_14_], i_28_, is_17_[i_25_]!![(1 + i_30_) % i_14_])
-                                class124.method1102(is_17_[-1 + i_25_]!![i_30_], 1.toByte(), (-1).toByte(), (-1).toShort(), 100.toByte(), i_29_, (is_17_[i_25_]!![(1 + i_30_) % i_14_]), i_28_, is_17_[i_25_]!![i_30_])
+                                modelDefinition.method1102(is_17_[i_25_ - 1]!![i_30_], 1.toByte(), (-1).toByte(), (-1).toShort(), 48.toByte(), i_29_, is_17_[i_25_ + -1]!![(1 + i_30_) % i_14_], i_28_, is_17_[i_25_]!![(1 + i_30_) % i_14_])
+                                modelDefinition.method1102(is_17_[-1 + i_25_]!![i_30_], 1.toByte(), (-1).toByte(), (-1).toShort(), 100.toByte(), i_29_, (is_17_[i_25_]!![(1 + i_30_) % i_14_]), i_28_, is_17_[i_25_]!![i_30_])
                             }
                         }
                         i_25_++
                     }
-                    class64_13_ = var_renderer!!.method3625(class124, i_12_, Class185.anInt2482, 64, 768)
+                    class64_13_ = var_renderer!!.method3625(modelDefinition, i_12_, Class185.anInt2482, 64, 768)
                     synchronized(Class342.aClass60_4254!!) {
                         Class342.aClass60_4254!!.method582(class64_13_, l, (-103).toByte())
                     }

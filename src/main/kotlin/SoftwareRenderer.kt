@@ -1367,8 +1367,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         method3713()
     }
 
-    override fun method3625(class124: Class124?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64 {
-        return Class64_Sub1(this, class124!!, i, i_367_, i_368_, i_366_)
+    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64 {
+        return Class64_Sub1(this, modelDefinition!!, i, i_367_, i_368_, i_366_)
     }
 
     override fun method3624(i: Int, i_369_: Int): Interface13 {

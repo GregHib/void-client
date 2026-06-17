@@ -3328,7 +3328,7 @@ class Class64_Sub1 : Class64 {
         aHa_Sub1_5353 = var_ha_Sub1
     }
 
-    internal constructor(var_ha_Sub1: SoftwareRenderer, class124: Class124, i: Int, i_785_: Int, i_786_: Int, i_787_: Int) {
+    internal constructor(var_ha_Sub1: SoftwareRenderer, modelDefinition: ModelDefinition, i: Int, i_785_: Int, i_786_: Int, i_787_: Int) {
         anInt5354 = 0
         aBoolean5369 = false
         anInt5351 = 0
@@ -3341,23 +3341,23 @@ class Class64_Sub1 : Class64 {
         anInt5344 = i_785_
         anInt5349 = i_786_
         val var_d = aHa_Sub1_5353.aRenderConfig4579
-        anInt5340 = class124.anInt1836
-        anInt5387 = class124.anInt1821
-        anIntArray5356 = class124.anIntArray1841
-        anIntArray5332 = class124.anIntArray1847
-        anIntArray5312 = class124.anIntArray1852
-        anInt5351 = class124.anInt1817
-        aShortArray5317 = class124.aShortArray1863
-        aShortArray5394 = class124.aShortArray1835!!
-        aShortArray5364 = class124.aShortArray1855
-        aByteArray5358 = class124.aByteArray1839
-        aShortArray5311 = class124.aShortArray1862
-        aByteArray5325 = class124.aByteArray1834
-        aShortArray5370 = class124.aShortArray1856
-        aByteArray5386 = class124.aByteArray1843
-        aClass129Array5322 = class124.aClass129Array1846
-        aClass342Array5335 = class124.aClass342Array1866
-        aShortArray5333 = class124.aShortArray1842
+        anInt5340 = modelDefinition.anInt1836
+        anInt5387 = modelDefinition.anInt1821
+        anIntArray5356 = modelDefinition.anIntArray1841
+        anIntArray5332 = modelDefinition.anIntArray1847
+        anIntArray5312 = modelDefinition.anIntArray1852
+        anInt5351 = modelDefinition.anInt1817
+        aShortArray5317 = modelDefinition.aShortArray1863
+        aShortArray5394 = modelDefinition.aShortArray1835!!
+        aShortArray5364 = modelDefinition.aShortArray1855
+        aByteArray5358 = modelDefinition.aByteArray1839
+        aShortArray5311 = modelDefinition.aShortArray1862
+        aByteArray5325 = modelDefinition.aByteArray1834
+        aShortArray5370 = modelDefinition.aShortArray1856
+        aByteArray5386 = modelDefinition.aByteArray1843
+        aClass129Array5322 = modelDefinition.aClass129Array1846
+        aClass342Array5335 = modelDefinition.aClass342Array1866
+        aShortArray5333 = modelDefinition.aShortArray1842
         val `is` = IntArray(anInt5351)
         for (i_788_ in 0..<anInt5351) `is`[i_788_] = i_788_
         val ls = LongArray(anInt5351)
@@ -3369,10 +3369,10 @@ class Class64_Sub1 : Class64 {
             var i_792_ = 0
             var i_793_ = 0
             var i_794_ = 0
-            if (class124.aClass162Array1832 != null) {
+            if (modelDefinition.aClass162Array1832 != null) {
                 var bool_795_ = false
-                for (i_796_ in class124.aClass162Array1832!!.indices) {
-                    val class162 = class124.aClass162Array1832!![i_796_]!!
+                for (i_796_ in modelDefinition.aClass162Array1832!!.indices) {
+                    val class162 = modelDefinition.aClass162Array1832!![i_796_]!!
                     if (i_790_ == class162.anInt2155) {
                         val class189 = Class73.method742(104, (class162.anInt2153))
                         if (class189.aBoolean2531) bool_795_ = true
@@ -3385,8 +3385,8 @@ class Class64_Sub1 : Class64 {
                 if (bool_795_) ls[i_789_] = 9223372036854775807L
             }
             var i_798_ = -1
-            if (class124.aShortArray1822 != null) {
-                i_798_ = class124.aShortArray1822!![i_790_].toInt()
+            if (modelDefinition.aShortArray1822 != null) {
+                i_798_ = modelDefinition.aShortArray1822!![i_790_].toInt()
                 if (i_798_ != -1) {
                     npcAppearanceFlags = var_d!!.method3(i_798_ and 0xffff, -6662)
                     if ((i_787_ and 0x40) == 0 || !npcAppearanceFlags!!.aBoolean209) {
@@ -3406,31 +3406,31 @@ class Class64_Sub1 : Class64 {
             aBoolean5382 = aBoolean5382 or bool_799_
         }
         method2832(`is`, ls, 0)
-        if (class124.aClass162Array1832 != null) {
-            anInt5389 = class124.aClass162Array1832!!.size
+        if (modelDefinition.aClass162Array1832 != null) {
+            anInt5389 = modelDefinition.aClass162Array1832!!.size
             aClass6Array5361 = arrayOfNulls<Class6>(anInt5389)
             aClass350Array5363 = arrayOfNulls<Class350>(anInt5389)
-            for (i_800_ in class124.aClass162Array1832!!.indices) {
-                val class162 = class124.aClass162Array1832!![i_800_]!!
+            for (i_800_ in modelDefinition.aClass162Array1832!!.indices) {
+                val class162 = modelDefinition.aClass162Array1832!![i_800_]!!
                 val class189 = Class73.method742(104, class162.anInt2153)
-                var i_801_ = ((Class126.anIntArray4983!![(class124.aShortArray1862[class162.anInt2155]).toInt() and 0xffff]) and 0xffffff)
-                i_801_ = (i_801_ or (255 - (if (class124.aByteArray1834 != null) (class124.aByteArray1834!![class162.anInt2155]).toInt() and 0xff else 0) shl 24))
-                aClass6Array5361!![i_800_] = Class6(class162.anInt2155, (class124.aShortArray1863[class162.anInt2155]).toInt(), (class124.aShortArray1835!![class162.anInt2155]).toInt(), (class124.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class162.anInt2158)
+                var i_801_ = ((Class126.anIntArray4983!![(modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff]) and 0xffffff)
+                i_801_ = (i_801_ or (255 - (if (modelDefinition.aByteArray1834 != null) (modelDefinition.aByteArray1834!![class162.anInt2155]).toInt() and 0xff else 0) shl 24))
+                aClass6Array5361!![i_800_] = Class6(class162.anInt2155, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class162.anInt2158)
                 aClass350Array5363!![i_800_] = Class350(i_801_)
             }
         }
         aFloatArrayArray5314 = arrayOfNulls<FloatArray>(anInt5351)
         aFloatArrayArray5345 = arrayOfNulls<FloatArray>(anInt5351)
-        val class358 = method565(255, anInt5351, class124, `is`)!!
+        val class358 = method565(255, anInt5351, modelDefinition, `is`)!!
         val class167: Class167 = aHa_Sub1_5353.method3724(Thread.currentThread())!!
         val fs = class167.aFloatArray2226!!
         var bool_802_ = false
         for (i_803_ in 0..<anInt5351) {
             val i_804_ = `is`[i_803_]
             var i_805_: Int
-            if (class124.aByteArray1820 == null) i_805_ = -1
-            else i_805_ = class124.aByteArray1820!![i_804_].toInt()
-            var i_806_ = (if (class124.aShortArray1822 == null) -1 else class124.aShortArray1822!![i_804_]).toInt()
+            if (modelDefinition.aByteArray1820 == null) i_805_ = -1
+            else i_805_ = modelDefinition.aByteArray1820!![i_804_].toInt()
+            var i_806_ = (if (modelDefinition.aShortArray1822 == null) -1 else modelDefinition.aShortArray1822!![i_804_]).toInt()
             if (i_806_ != -1 && (i_787_ and 0x40) != 0) {
                 val class12 = var_d!!.method3(i_806_ and 0xffff, -6662)
                 if (class12!!.aBoolean209) i_806_ = -1
@@ -3451,14 +3451,14 @@ class Class64_Sub1 : Class64 {
                     fs_808_[2] = 0.0f
                 } else {
                     i_805_ = i_805_ and 0xff
-                    val i_810_ = class124.aByteArray1823[i_805_]
+                    val i_810_ = modelDefinition.aByteArray1823[i_805_]
                     if (i_810_.toInt() == 0) {
                         val i_811_ = aShortArray5317[i_804_]
                         val i_812_ = aShortArray5394[i_804_]
                         val i_813_ = aShortArray5364[i_804_]
-                        val i_814_ = class124.aShortArray1829[i_805_]
-                        val i_815_ = class124.aShortArray1849[i_805_]
-                        val i_816_ = class124.aShortArray1825[i_805_]
+                        val i_814_ = modelDefinition.aShortArray1829[i_805_]
+                        val i_815_ = modelDefinition.aShortArray1849[i_805_]
+                        val i_816_ = modelDefinition.aShortArray1825[i_805_]
                         val f = anIntArray5356!![i_814_.toInt()].toFloat()
                         val f_817_ = anIntArray5332!![i_814_.toInt()].toFloat()
                         val f_818_ = anIntArray5312!![i_814_.toInt()].toFloat()
@@ -3502,10 +3502,10 @@ class Class64_Sub1 : Class64 {
                         val i_845_ = class358.anIntArray4415!![i_805_]
                         val i_846_ = class358.anIntArray4414!![i_805_]
                         val fs_847_ = (class358.aFloatArrayArray4412!![i_805_])!!
-                        val i_848_ = class124.aByteArray1853[i_805_]
-                        val f = ((class124.anIntArray1867[i_805_]).toFloat() / 256.0f)
+                        val i_848_ = modelDefinition.aByteArray1853[i_805_]
+                        val f = ((modelDefinition.anIntArray1867[i_805_]).toFloat() / 256.0f)
                         if (i_810_.toInt() == 1) {
-                            val f_849_ = ((class124.anIntArray1844[i_805_]).toFloat() / 1024.0f)
+                            val f_849_ = ((modelDefinition.anIntArray1844[i_805_]).toFloat() / 1024.0f)
                             method1885(i_846_, anIntArray5312!![i_841_.toInt()], i_848_.toInt(), 8, anIntArray5356!![i_841_.toInt()], fs, anIntArray5332!![i_841_.toInt()], f, i_845_, i_844_, f_849_, fs_847_)
                             fs_807_[0] = fs[0]
                             fs_808_[0] = fs[1]
@@ -3528,8 +3528,8 @@ class Class64_Sub1 : Class64 {
                                 else if (fs_808_[0] - fs_808_[2] > f_850_) fs_808_[2] += f_849_
                             }
                         } else if (i_810_.toInt() == 2) {
-                            val f_851_ = ((class124.anIntArray1857[i_805_]).toFloat() / 256.0f)
-                            val f_852_ = ((class124.anIntArray1865[i_805_]).toFloat() / 256.0f)
+                            val f_851_ = ((modelDefinition.anIntArray1857[i_805_]).toFloat() / 256.0f)
+                            val f_852_ = ((modelDefinition.anIntArray1865[i_805_]).toFloat() / 256.0f)
                             val i_853_ = (anIntArray5356!![i_842_.toInt()] - anIntArray5356!![i_841_.toInt()])
                             val i_854_ = (anIntArray5332!![i_842_.toInt()] - anIntArray5332!![i_841_.toInt()])
                             val i_855_ = (anIntArray5312!![i_842_.toInt()] - anIntArray5312!![i_841_.toInt()])
@@ -3539,9 +3539,9 @@ class Class64_Sub1 : Class64 {
                             val i_859_ = i_854_ * i_858_ - i_857_ * i_855_
                             val i_860_ = i_855_ * i_856_ - i_858_ * i_853_
                             val i_861_ = i_853_ * i_857_ - i_856_ * i_854_
-                            val f_862_ = 64.0f / (class124.anIntArray1859!![i_805_]).toFloat()
-                            val f_863_ = 64.0f / (class124.anIntArray1816[i_805_]).toFloat()
-                            val f_864_ = 64.0f / (class124.anIntArray1844[i_805_]).toFloat()
+                            val f_862_ = 64.0f / (modelDefinition.anIntArray1859!![i_805_]).toFloat()
+                            val f_863_ = 64.0f / (modelDefinition.anIntArray1816[i_805_]).toFloat()
+                            val f_864_ = 64.0f / (modelDefinition.anIntArray1844[i_805_]).toFloat()
                             val f_865_ = ((i_859_.toFloat() * fs_847_[0] + i_860_.toFloat() * fs_847_[1] + i_861_.toFloat() * fs_847_[2]) / f_862_)
                             val f_866_ = ((i_859_.toFloat() * fs_847_[3] + i_860_.toFloat() * fs_847_[4] + i_861_.toFloat() * fs_847_[5]) / f_863_)
                             val f_867_ = ((i_859_.toFloat() * fs_847_[6] + i_860_.toFloat() * fs_847_[7] + i_861_.toFloat() * fs_847_[8]) / f_864_)
@@ -3585,14 +3585,14 @@ class Class64_Sub1 : Class64 {
             aFloatArrayArray5345 = null
             aFloatArrayArray5314 = aFloatArrayArray5345
         }
-        if (class124.anIntArray1868 != null && (anInt5316 and 0x20) != 0) anIntArrayArray5334 = class124.method1100(true, -122)
-        if (class124.anIntArray1824 != null && (anInt5316 and 0x180) != 0) anIntArrayArray5330 = class124.method1094(30.toByte())
-        if (class124.aClass162Array1832 != null && (anInt5316 and 0x400) != 0) anIntArrayArray5379 = class124.method1093((-75).toByte())
-        if (class124.aShortArray1822 != null) {
+        if (modelDefinition.anIntArray1868 != null && (anInt5316 and 0x20) != 0) anIntArrayArray5334 = modelDefinition.method1100(true, -122)
+        if (modelDefinition.anIntArray1824 != null && (anInt5316 and 0x180) != 0) anIntArrayArray5330 = modelDefinition.method1094(30.toByte())
+        if (modelDefinition.aClass162Array1832 != null && (anInt5316 and 0x400) != 0) anIntArrayArray5379 = modelDefinition.method1093((-75).toByte())
+        if (modelDefinition.aShortArray1822 != null) {
             aShortArray5388 = ShortArray(anInt5351)
             var bool_869_ = false
             for (i_870_ in 0..<anInt5351) {
-                val i_871_ = class124.aShortArray1822!![i_870_]
+                val i_871_ = modelDefinition.aShortArray1822!![i_870_]
                 if (i_871_.toInt() != -1) {
                     val class12 = aHa_Sub1_5353.aRenderConfig4579!!.method3(i_871_.toInt(), -6662)
                     if ((i_787_ and 0x40) == 0 || !class12!!.aBoolean209) {

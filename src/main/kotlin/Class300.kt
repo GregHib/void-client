@@ -63,12 +63,12 @@ class Class300 {
             return -1
         }
 
-        fun method2277(i: Int, class45: Class45, i_5_: Int, i_6_: Int): Class124? {
+        fun method2277(i: Int, class45: Class45, i_5_: Int, i_6_: Int): ModelDefinition? {
             if (i_6_ != -1) aBoolean3819 = true
             anInt3815++
             val `is` = class45.method410(-1860, i_5_, i)
             if (`is` == null) return null
-            return Class124(`is`)
+            return ModelDefinition(`is`)
         }
     }
 }

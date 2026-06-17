@@ -251,10 +251,10 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
 
         private fun method738(var_renderer: Renderer) {
             if (aClass64_1227 == null) {
-                val class124 = Class124(580, 1104, 1)
-                class124.method1105(109, 0.toByte(), 0.toByte(), 0.toShort(), 1024.toShort(), 0.toByte(), 0.toShort(), 32767.toShort(), 1024.toShort(), 1024.toShort())
-                class124.method1101(128, 0, 0, -93)
-                class124.method1101(-128, 0, 0, 108)
+                val modelDefinition = ModelDefinition(580, 1104, 1)
+                modelDefinition.method1105(109, 0.toByte(), 0.toByte(), 0.toShort(), 1024.toShort(), 0.toByte(), 0.toShort(), 32767.toShort(), 1024.toShort(), 1024.toShort())
+                modelDefinition.method1101(128, 0, 0, -93)
+                modelDefinition.method1101(-128, 0, 0, 108)
                 for (i in 0..24) {
                     val i_41_ = i * 8192 / 24
                     val i_42_: Int = Class70.Companion.anIntArray1207!![i_41_]
@@ -264,28 +264,28 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
                         val i_46_: Int = Class70.Companion.anIntArray1204!![i_45_] shr 7
                         val i_47_: Int = Class70.Companion.anIntArray1207!![i_45_] * i_42_ shr 21
                         val i_48_: Int = Class70.Companion.anIntArray1207!![i_45_] * i_43_ shr 21
-                        class124.method1101(i_46_, -i_47_, i_48_, 127)
+                        modelDefinition.method1101(i_46_, -i_47_, i_48_, 127)
                     }
                     if (i > 0) {
                         var i_49_ = i * 23 + 2
                         var i_50_ = i_49_ - 23
-                        class124.method1102(0, 0.toByte(), 0.toByte(), 0.toShort(), 52.toByte(), 127.toShort(), i_50_, 0.toByte(), i_49_)
+                        modelDefinition.method1102(0, 0.toByte(), 0.toByte(), 0.toShort(), 52.toByte(), 127.toShort(), i_50_, 0.toByte(), i_49_)
                         for (i_51_ in 1..22) {
                             val i_52_ = i_50_ + 1
                             val i_53_ = i_49_ + 1
-                            class124.method1102(i_50_, 0.toByte(), 0.toByte(), 0.toShort(), 41.toByte(), 127.toShort(), i_52_, 0.toByte(), i_49_)
-                            class124.method1102(i_52_, 0.toByte(), 0.toByte(), 0.toShort(), 67.toByte(), 127.toShort(), i_53_, 0.toByte(), i_49_)
+                            modelDefinition.method1102(i_50_, 0.toByte(), 0.toByte(), 0.toShort(), 41.toByte(), 127.toShort(), i_52_, 0.toByte(), i_49_)
+                            modelDefinition.method1102(i_52_, 0.toByte(), 0.toByte(), 0.toShort(), 67.toByte(), 127.toShort(), i_53_, 0.toByte(), i_49_)
                             i_50_ = i_52_
                             i_49_ = i_53_
                         }
-                        class124.method1102(i_49_, 0.toByte(), 0.toByte(), 0.toShort(), 98.toByte(), 127.toShort(), i_50_, 0.toByte(), 1)
+                        modelDefinition.method1102(i_49_, 0.toByte(), 0.toByte(), 0.toShort(), 98.toByte(), 127.toShort(), i_50_, 0.toByte(), 1)
                     }
                 }
-                class124.anInt1821 = class124.anInt1836
-                class124.anIntArray1824 = null
-                class124.anIntArray1868 = null
-                class124.aByteArray1839 = null
-                aClass64_1227 = var_renderer.method3625(class124, 51200, 33, 64, 768)
+                modelDefinition.anInt1821 = modelDefinition.anInt1836
+                modelDefinition.anIntArray1824 = null
+                modelDefinition.anIntArray1868 = null
+                modelDefinition.aByteArray1839 = null
+                aClass64_1227 = var_renderer.method3625(modelDefinition, 51200, 33, 64, 768)
             }
         }
 

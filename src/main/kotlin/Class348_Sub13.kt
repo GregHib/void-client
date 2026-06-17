@@ -101,29 +101,29 @@ class Class348_Sub13 : Class348() {
                     i_30_++
                 }
                 if (bool_29_) return null
-                val class124s = arrayOfNulls<Class124>(`is`.size)
+                val modelDefinitions = arrayOfNulls<ModelDefinition>(`is`.size)
                 for (i_31_ in `is`.indices) {
-                    if (`is`[i_31_] != -1) class124s[i_31_] = Exception_Sub1.aClass255_112!!.method1940(Class348_Sub21.Companion.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
+                    if (`is`[i_31_] != -1) modelDefinitions[i_31_] = Exception_Sub1.aClass255_112!!.method1940(Class348_Sub21.Companion.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
                 }
                 if (class225 != null && class225.anIntArrayArray2939 != null) {
                     var i_32_ = 0
                     while ((class225.anIntArrayArray2939!!.size > i_32_)) {
-                        if ((class225.anIntArrayArray2939!![i_32_] != null) && class124s[i_32_] != null) {
+                        if ((class225.anIntArrayArray2939!![i_32_] != null) && modelDefinitions[i_32_] != null) {
                             val i_33_ = (class225.anIntArrayArray2939!![i_32_]!![0])
                             val i_34_ = (class225.anIntArrayArray2939!![i_32_]!![1])
                             val i_35_ = (class225.anIntArrayArray2939!![i_32_]!![2])
                             val i_36_ = (class225.anIntArrayArray2939!![i_32_]!![3])
                             val i_37_ = (class225.anIntArrayArray2939!![i_32_]!![4])
                             val i_38_ = (class225.anIntArrayArray2939!![i_32_]!![5])
-                            if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) class124s[i_32_]!!.method1107(6875, i_37_, i_38_, i_36_)
-                            if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0) class124s[i_32_]!!.method1099((-91).toByte(), i_35_, i_33_, i_34_)
+                            if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) modelDefinitions[i_32_]!!.method1107(6875, i_37_, i_38_, i_36_)
+                            if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0) modelDefinitions[i_32_]!!.method1099((-91).toByte(), i_35_, i_33_, i_34_)
                         }
                         i_32_++
                     }
                 }
                 if (class154 != null) i_28_ = i_28_ or 0x4000
-                val class124 = Class124(class124s, class124s.size)
-                class64 = var_renderer!!.method3625(class124, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850)
+                val modelDefinition = ModelDefinition(modelDefinitions, modelDefinitions.size)
+                class64 = var_renderer!!.method3625(modelDefinition, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850)
                 if (class154 != null) {
                     for (i_39_ in 0..4) {
                         for (i_40_ in (Class367_Sub2.aShortArrayArrayArray7290)!!.indices) {

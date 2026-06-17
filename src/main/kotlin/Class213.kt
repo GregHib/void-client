@@ -86,7 +86,7 @@ class Class213 {
     @JvmField
     var anInt2833: Int
 
-    fun method1554(bool: Boolean, i: Int): Class124? {
+    fun method1554(bool: Boolean, i: Int): ModelDefinition? {
         anInt2796++
         var i_0_ = anInt2792
         var i_1_ = anInt2767
@@ -100,8 +100,8 @@ class Class213 {
         if (i_1_ != -1) {
             val class124_2_ = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), i_1_, -1)
             if (class124_2_!!.anInt1830 < 13) class124_2_.method1092(2, i xor 0x78.inv())
-            val class124s = arrayOf<Class124?>(class124, class124_2_)
-            class124 = Class124(class124s, 2)
+            val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_2_)
+            class124 = ModelDefinition(modelDefinitions, 2)
         }
         if (aShortArray2777 != null) {
             for (i_3_ in aShortArray2777!!.indices) class124.method1098(aShortArray2777!![i_3_], 126.toByte(), aShortArray2771[i_3_])
@@ -184,7 +184,7 @@ class Class213 {
         return ("<col=00ff80>" + i / 1000000 + Class274.aClass274_3517!!.method2063((this.aClass255_2761!!.anInt3286), 544) + "</col>")
     }
 
-    fun method1558(bool: Boolean, bool_13_: Boolean): Class124? {
+    fun method1558(bool: Boolean, bool_13_: Boolean): ModelDefinition? {
         anInt2809++
         var i = this.anInt2815
         var i_14_ = anInt2804
@@ -202,13 +202,13 @@ class Class213 {
             val class124_16_ = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), i_14_, -1)
             if (class124_16_!!.anInt1830 < 13) class124_16_.method1092(2, 89)
             if (i_15_ == -1) {
-                val class124s = arrayOf<Class124?>(class124, class124_16_)
-                class124 = Class124(class124s, 2)
+                val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_)
+                class124 = ModelDefinition(modelDefinitions, 2)
             } else {
                 val class124_17_ = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), i_15_, -1)
                 if (class124_17_!!.anInt1830 < 13) class124_17_.method1092(2, 109)
-                val class124s = arrayOf<Class124?>(class124, class124_16_, class124_17_)
-                class124 = Class124(class124s, 3)
+                val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_, class124_17_)
+                class124 = ModelDefinition(modelDefinitions, 3)
             }
         }
         if (class124 == null) return null

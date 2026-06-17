@@ -103,7 +103,7 @@ class Class40 internal constructor() {
             if (i_3_ > 0) {
                 Class346.aBoolean4275 = bool
                 Class348_Sub43.anInt7068 = 1
-                Class124.aClass45_1848 = class45
+                ModelDefinition.aClass45_1848 = class45
                 Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_
                 Class285.aClass348_Sub16_Sub3_4743 = null
                 Class318.anInt3971 = i_2_

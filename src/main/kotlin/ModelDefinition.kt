@@ -2,7 +2,7 @@ import Class85.Companion.method828
 import java.awt.Canvas
 import java.util.*
 
-class Class124 {
+class ModelDefinition {
     var anIntArray1816: IntArray = intArrayOf()
     var anInt1817: Int
     var anInt1818: Int
@@ -400,11 +400,11 @@ class Class124 {
         if (!bool_52_) this.aShortArray1822 = null
     }
 
-    private fun method1104(class124_101_: Class124, i: Int, i_102_: Int, i_103_: Short): Int {
+    private fun method1104(modelDefinition_101_: ModelDefinition, i: Int, i_102_: Int, i_103_: Short): Int {
         anInt1858++
-        val i_104_ = class124_101_.anIntArray1841[i_102_]
-        val i_105_ = class124_101_.anIntArray1847[i_102_]
-        val i_106_ = class124_101_.anIntArray1852[i_102_]
+        val i_104_ = modelDefinition_101_.anIntArray1841[i_102_]
+        val i_105_ = modelDefinition_101_.anIntArray1847[i_102_]
+        val i_106_ = modelDefinition_101_.anIntArray1852[i_102_]
         for (i_107_ in i..<this.anInt1836) {
             if (this.anIntArray1841[i_107_] == i_104_ && i_105_ == this.anIntArray1847[i_107_] && (i_106_ == this.anIntArray1852[i_107_])) {
                 this.aShortArray1842[i_107_] = Class273.method2057((this.aShortArray1842[i_107_]).toInt(), i_103_.toInt()).toShort()
@@ -415,7 +415,7 @@ class Class124 {
         this.anIntArray1847[this.anInt1836] = i_105_
         this.anIntArray1852[this.anInt1836] = i_106_
         this.aShortArray1842[this.anInt1836] = i_103_
-        this.anIntArray1868!![this.anInt1836] = (if (class124_101_.anIntArray1868 != null) class124_101_.anIntArray1868!![i_102_] else -1)
+        this.anIntArray1868!![this.anInt1836] = (if (modelDefinition_101_.anIntArray1868 != null) modelDefinition_101_.anIntArray1868!![i_102_] else -1)
         return this.anInt1836++
     }
 
@@ -867,7 +867,7 @@ class Class124 {
         this.aByteArray1834 = ByteArray(i_214_)
     }
 
-    internal constructor(class124s: Array<Class124?>, i: Int) {
+    internal constructor(modelDefinitions: Array<ModelDefinition?>, i: Int) {
         this.anInt1817 = 0
         this.aByte1851 = 0.toByte()
         this.anInt1821 = 0
@@ -887,7 +887,7 @@ class Class124 {
         var bool_223_ = false
         var i_224_ = 0
         while (i > i_224_) {
-            val class124_225_ = class124s[i_224_]
+            val class124_225_ = modelDefinitions[i_224_]
             if (class124_225_ != null) {
                 this.anInt1817 += class124_225_.anInt1817
                 this.anInt1836 += class124_225_.anInt1836
@@ -949,7 +949,7 @@ class Class124 {
         var i_226_ = 0
         while (i > i_226_) {
             val i_227_ = (1 shl i_226_).toShort()
-            val class124_228_ = class124s[i_226_]
+            val class124_228_ = modelDefinitions[i_226_]
             if (class124_228_ != null) {
                 if (class124_228_.aClass162Array1832 != null) {
                     var i_229_ = 0
@@ -1011,7 +1011,7 @@ class Class124 {
         var i_238_ = 0
         while (i > i_238_) {
             val i_239_ = (1 shl i_238_).toShort()
-            val class124_240_ = class124s[i_238_]
+            val class124_240_ = modelDefinitions[i_238_]
             if (class124_240_ != null) {
                 var i_241_ = 0
                 while (class124_240_.anInt1817 > i_241_) {

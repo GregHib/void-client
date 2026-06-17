@@ -350,12 +350,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7683++
     }
 
-    override fun method3625(class124: Class124?, i: Int, i_2_: Int, i_3_: Int, i_4_: Int): Class64 {
+    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_2_: Int, i_3_: Int, i_4_: Int): Class64 {
         try {
             anInt7579++
-            return Class64_Sub3(this, class124, i, i_3_, i_4_, i_2_)
+            return Class64_Sub3(this, modelDefinition, i, i_3_, i_4_, i_2_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.EG(" + (if (class124 != null) "{...}" else "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
         }
     }
 

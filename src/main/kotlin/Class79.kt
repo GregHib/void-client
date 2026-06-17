@@ -483,22 +483,22 @@ class Class79 {
                     }
                 }
                 if (bool_70_) return null
-                val class124s = arrayOfNulls<Class124>(anIntArray1402!!.size)
+                val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1402!!.size)
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
                         synchronized(this.aClass278_1348!!.aClass45_3576!!) {
-                            class124s[i_72_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1402!![i_72_], -1)
+                            modelDefinitions[i_72_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1402!![i_72_], -1)
                         }
-                        if (class124s[i_72_] != null) {
-                            if (class124s[i_72_]!!.anInt1830 < 13) class124s[i_72_]!!.method1092(2, 115)
-                            if (anIntArrayArray1388 != null && anIntArrayArray1388!![i_72_] != null) class124s[i_72_]!!.method1099(44.toByte(), anIntArrayArray1388!![i_72_]!![2], anIntArrayArray1388!![i_72_]!![0], anIntArrayArray1388!![i_72_]!![1])
+                        if (modelDefinitions[i_72_] != null) {
+                            if (modelDefinitions[i_72_]!!.anInt1830 < 13) modelDefinitions[i_72_]!!.method1092(2, 115)
+                            if (anIntArrayArray1388 != null && anIntArrayArray1388!![i_72_] != null) modelDefinitions[i_72_]!!.method1099(44.toByte(), anIntArrayArray1388!![i_72_]!![2], anIntArrayArray1388!![i_72_]!![0], anIntArrayArray1388!![i_72_]!![1])
                         }
                     }
                 }
                 if (class225 != null && class225.anIntArrayArray2939 != null) {
                     var i_73_ = 0
                     while ((i_73_ < class225.anIntArrayArray2939!!.size)) {
-                        if (class124s.size > i_73_ && class124s[i_73_] != null) {
+                        if (modelDefinitions.size > i_73_ && modelDefinitions[i_73_] != null) {
                             var i_74_ = 0
                             var i_75_ = 0
                             var i_76_ = 0
@@ -513,19 +513,19 @@ class Class79 {
                                 i_77_ = ((class225.anIntArrayArray2939!![i_73_]!![3]) shl 3)
                                 i_74_ = (class225.anIntArrayArray2939!![i_73_]!![0])
                             }
-                            if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) class124s[i_73_]!!.method1107(6875, i_78_, i_79_, i_77_)
-                            if (i_74_ != 0 || i_75_ != 0 || i_76_ != 0) class124s[i_73_]!!.method1099(93.toByte(), i_76_, i_74_, i_75_)
+                            if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) modelDefinitions[i_73_]!!.method1107(6875, i_78_, i_79_, i_77_)
+                            if (i_74_ != 0 || i_75_ != 0 || i_76_ != 0) modelDefinitions[i_73_]!!.method1099(93.toByte(), i_76_, i_74_, i_75_)
                         }
                         i_73_++
                     }
                 }
-                val class124: Class124?
-                if (class124s.size == 1) class124 = class124s[0]
-                else class124 = Class124(class124s, class124s.size)
+                val modelDefinition: ModelDefinition?
+                if (modelDefinitions.size == 1) modelDefinition = modelDefinitions[0]
+                else modelDefinition = ModelDefinition(modelDefinitions, modelDefinitions.size)
                 if (aShortArray1328 != null) i_69_ = i_69_ or 0x4000
                 if (aShortArray1393 != null) i_69_ = i_69_ or 0x8000
                 if (aByte1405.toInt() != 0) i_69_ = i_69_ or 0x80000
-                class64 = var_renderer.method3625(class124, i_69_, (this.aClass278_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406)
+                class64 = var_renderer.method3625(modelDefinition, i_69_, (this.aClass278_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406)
                 if (aShortArray1328 != null) {
                     var i_80_ = 0
                     while ((i_80_ < aShortArray1328!!.size)) {
@@ -654,26 +654,26 @@ class Class79 {
                     }
                 }
                 if (bool) return null
-                val class124s = arrayOfNulls<Class124>(anIntArray1380!!.size)
+                val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1380!!.size)
                 synchronized(this.aClass278_1348!!.aClass45_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
-                        class124s[i_102_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1380!![i_102_], -1)
+                        modelDefinitions[i_102_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1380!![i_102_], -1)
                         i_102_++
                     }
                 }
                 var i_103_ = 0
                 while ((i_103_ < anIntArray1380!!.size)) {
-                    if (class124s[i_103_] != null && class124s[i_103_]!!.anInt1830 < 13) class124s[i_103_]!!.method1092(2, 66)
+                    if (modelDefinitions[i_103_] != null && modelDefinitions[i_103_]!!.anInt1830 < 13) modelDefinitions[i_103_]!!.method1092(2, 66)
                     i_103_++
                 }
-                val class124: Class124?
-                if (class124s.size == 1) class124 = class124s[0]
-                else class124 = Class124(class124s, class124s.size)
+                val modelDefinition: ModelDefinition?
+                if (modelDefinitions.size == 1) modelDefinition = modelDefinitions[0]
+                else modelDefinition = ModelDefinition(modelDefinitions, modelDefinitions.size)
                 if (aShortArray1328 != null) i_100_ = i_100_ or 0x4000
                 if (aShortArray1393 != null) i_100_ = i_100_ or 0x8000
                 if (aByte1405.toInt() != 0) i_100_ = i_100_ or 0x80000
-                class64 = var_renderer!!.method3625(class124, i_100_, (this.aClass278_1348!!.anInt3593), 64, 768)
+                class64 = var_renderer!!.method3625(modelDefinition, i_100_, (this.aClass278_1348!!.anInt3593), 64, 768)
                 if (aShortArray1328 != null) {
                     var i_104_ = 0
                     while ((aShortArray1328!!.size > i_104_)) {

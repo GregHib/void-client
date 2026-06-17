@@ -27,7 +27,7 @@ import MapSceneTileDefinition.Companion.method1075
 import MinimapFlagRenderer.method1081
 import ObjectSpawnDecoder.method1086
 import HoverActionEntry.Companion.method1091
-import Class124.Companion.method1096
+import ModelDefinition.Companion.method1096
 import Class126.Companion.method1112
 import Class127.Companion.method1117
 import Class127_Sub1.Companion.method1120

@@ -10,30 +10,30 @@ class Class34 {
     private lateinit var aShortArray477: ShortArray
     private lateinit var aShortArray480: ShortArray
 
-    fun method341(i: Int): Class124? {
+    fun method341(i: Int): ModelDefinition? {
         anInt468++
         if (anIntArray472 == null) return null
-        val class124s = arrayOfNulls<Class124>(anIntArray472!!.size)
+        val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray472!!.size)
         synchronized(this.aClass150_475!!.aClass45_2054!!) {
-            for (i_0_ in anIntArray472!!.indices) class124s[i_0_] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray472!![i_0_], -1)
+            for (i_0_ in anIntArray472!!.indices) modelDefinitions[i_0_] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray472!![i_0_], -1)
         }
         var i_1_ = 0
         while (anIntArray472!!.size > i_1_) {
-            if (class124s[i_1_]!!.anInt1830 < 13) class124s[i_1_]!!.method1092(2, 113)
+            if (modelDefinitions[i_1_]!!.anInt1830 < 13) modelDefinitions[i_1_]!!.method1092(2, 113)
             i_1_++
         }
-        val class124: Class124?
-        if (class124s.size != 1) class124 = Class124(class124s, class124s.size)
-        else class124 = class124s[0]
-        if (class124 == null) return null
+        val modelDefinition: ModelDefinition?
+        if (modelDefinitions.size != 1) modelDefinition = ModelDefinition(modelDefinitions, modelDefinitions.size)
+        else modelDefinition = modelDefinitions[0]
+        if (modelDefinition == null) return null
         if (i < 53) method341(-22)
         if (aShortArray474 != null) {
-            for (i_2_ in aShortArray474!!.indices) class124.method1098(aShortArray474!![i_2_], 126.toByte(), aShortArray480[i_2_])
+            for (i_2_ in aShortArray474!!.indices) modelDefinition.method1098(aShortArray474!![i_2_], 126.toByte(), aShortArray480[i_2_])
         }
         if (aShortArray465 != null) {
-            for (i_3_ in aShortArray465!!.indices) class124.method1095(aShortArray465!![i_3_], 0, aShortArray477[i_3_])
+            for (i_3_ in aShortArray465!!.indices) modelDefinition.method1095(aShortArray465!![i_3_], 0, aShortArray477[i_3_])
         }
-        return class124
+        return modelDefinition
     }
 
     fun method342(i: Byte): Boolean {
@@ -48,35 +48,35 @@ class Class34 {
         return bool
     }
 
-    fun method343(i: Byte): Class124? {
+    fun method343(i: Byte): ModelDefinition? {
         anInt471++
-        val class124s = arrayOfNulls<Class124>(5)
+        val modelDefinitions = arrayOfNulls<ModelDefinition>(5)
         var i_5_ = 0
         synchronized(this.aClass150_475!!.aClass45_2054!!) {
             for (i_6_ in 0..4) {
-                if (anIntArray464[i_6_] != -1) class124s[i_5_++] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray464[i_6_], -1)
+                if (anIntArray464[i_6_] != -1) modelDefinitions[i_5_++] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray464[i_6_], -1)
             }
         }
         for (i_7_ in 0..4) {
-            if (class124s[i_7_] != null && class124s[i_7_]!!.anInt1830 < 13) class124s[i_7_]!!.method1092(2, 99)
+            if (modelDefinitions[i_7_] != null && modelDefinitions[i_7_]!!.anInt1830 < 13) modelDefinitions[i_7_]!!.method1092(2, 99)
         }
         if (i > -27) return null
-        val class124 = Class124(class124s, i_5_)
+        val modelDefinition = ModelDefinition(modelDefinitions, i_5_)
         if (aShortArray474 != null) {
             var i_8_ = 0
             while (aShortArray474!!.size > i_8_) {
-                class124.method1098(aShortArray474!![i_8_], 126.toByte(), aShortArray480[i_8_])
+                modelDefinition.method1098(aShortArray474!![i_8_], 126.toByte(), aShortArray480[i_8_])
                 i_8_++
             }
         }
         if (aShortArray465 != null) {
             var i_9_ = 0
             while (aShortArray465!!.size > i_9_) {
-                class124.method1095(aShortArray465!![i_9_], 0, aShortArray477[i_9_])
+                modelDefinition.method1095(aShortArray465!![i_9_], 0, aShortArray477[i_9_])
                 i_9_++
             }
         }
-        return class124
+        return modelDefinition
     }
 
     private fun method344(i: Int, class348_sub49: Class348_Sub49, i_10_: Byte) {
