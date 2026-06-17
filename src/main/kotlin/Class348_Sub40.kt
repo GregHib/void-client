@@ -144,7 +144,7 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
             Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2009(i_0_, 109.toByte())
             Exception_Sub1.aModelHeaderCache_112!!.method1942(i_0_, (-125).toByte())
             MapAreaDefinition.aBufferedMessageQueue_2529!!.method2073(-25032, i_0_)
-            Class348_Sub40_Sub18.aClass319_9245!!.method2541(119, i_0_)
+            Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2541(119, i_0_)
             method3535(i_0_, i.inv())
             NormalMapGenerator.method2040(i_0_, true)
             Class69.method720(i_0_, i + 1227)

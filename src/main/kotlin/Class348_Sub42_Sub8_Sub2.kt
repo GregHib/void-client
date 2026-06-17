@@ -390,7 +390,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             val i_46_ = (if (!bool_41_) npc.anInt10269 else npc.anInt10291)
                             if (i_38_ != -1 && i_46_ != -1) {
                                 if (i_46_ == i_38_) {
-                                    val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(55.toByte(), i_38_)
+                                    val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(55.toByte(), i_38_)
                                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                                         val class17 = (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7))
                                         val i_47_ = class17.anInt248
@@ -399,8 +399,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                         } else bool_45_ = false
                                     }
                                 } else {
-                                    val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(105.toByte(), i_38_)
-                                    val class368_48_ = Class348_Sub40_Sub18.aClass319_9245!!.method2543(56.toByte(), i_46_)
+                                    val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(105.toByte(), i_38_)
+                                    val class368_48_ = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(56.toByte(), i_46_)
                                     if (class368.anInt4503 != -1 && (class368_48_.anInt4503 != -1)) {
                                         val class17 = (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7))
                                         val class17_49_ = (ParticleEmitterNode.aClass87_191!!.method835((class368_48_.anInt4503), 7))
@@ -420,7 +420,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     npc.anInt10224 = 0
                                     if (npc.anInt10211 > Class367_Sub11.anInt7396) npc.anInt10224 = -1
                                     if (npc.anInt10291 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10211))) {
-                                        val i_51_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(103.toByte(), (npc.anInt10291)).anInt4503)
+                                        val i_51_ = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(103.toByte(), (npc.anInt10291)).anInt4503)
                                         if (i_51_ != -1) {
                                             val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_51_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) TypedRecordTable.method2178(npc, 0, class17, -17)
@@ -437,7 +437,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     npc.anInt10283 = 1
                                     if (npc.anInt10225 > Class367_Sub11.anInt7396) npc.anInt10240 = -1
                                     if (npc.anInt10269 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10225))) {
-                                        val i_50_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(87.toByte(), (npc.anInt10269)).anInt4503)
+                                        val i_50_ = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(87.toByte(), (npc.anInt10269)).anInt4503)
                                         if (i_50_ != -1) {
                                             val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_50_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) TypedRecordTable.method2178(npc, 0, class17, -44)
@@ -457,7 +457,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             val i_54_ = (if (!bool_41_) player.anInt10269 else player.anInt10291)
                             if (i_38_ != -1 && i_54_ != -1) {
                                 if (i_38_ == i_54_) {
-                                    val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(111.toByte(), i_38_)
+                                    val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(111.toByte(), i_38_)
                                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                                         val class17 = (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7))
                                         val i_57_ = class17.anInt248
@@ -466,8 +466,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                         } else bool_53_ = false
                                     }
                                 } else {
-                                    val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(105.toByte(), i_38_)
-                                    val class368_55_ = Class348_Sub40_Sub18.aClass319_9245!!.method2543(118.toByte(), i_54_)
+                                    val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(105.toByte(), i_38_)
+                                    val class368_55_ = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(118.toByte(), i_54_)
                                     if (class368.anInt4503 != -1 && class368_55_.anInt4503 != -1) {
                                         val class17 = (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7))
                                         val class17_56_ = (ParticleEmitterNode.aClass87_191!!.method835((class368_55_.anInt4503), 7))
@@ -488,7 +488,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     if (player.anInt10211 > Class367_Sub11.anInt7396) player.anInt10224 = -1
                                     if (player.anInt10291 == 65535) player.anInt10291 = -1
                                     if ((player.anInt10291 != -1) && ((player.anInt10211) == Class367_Sub11.anInt7396)) {
-                                        val i_58_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(45.toByte(), (player.anInt10291)).anInt4503)
+                                        val i_58_ = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(45.toByte(), (player.anInt10291)).anInt4503)
                                         if (i_58_ != -1) {
                                             val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_58_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) TypedRecordTable.method2178(player, 0, class17, -120)
@@ -506,7 +506,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     if (player.anInt10269 == 65535) player.anInt10269 = -1
                                     if (Class367_Sub11.anInt7396 < (player.anInt10225)) player.anInt10240 = -1
                                     if ((player.anInt10269 != -1) && (Class367_Sub11.anInt7396 == (player.anInt10225))) {
-                                        val i_59_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(81.toByte(), (player.anInt10269)).anInt4503)
+                                        val i_59_ = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(81.toByte(), (player.anInt10269)).anInt4503)
                                         if (i_59_ != -1) {
                                             val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_59_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) TypedRecordTable.method2178(player, 0, class17, -101)

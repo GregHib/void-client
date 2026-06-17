@@ -261,7 +261,7 @@ import SceneModelBuilder.Companion.method2495
 import SpotAnimEntity.Companion.method2508
 import NamedTimedNode.Companion.method2517
 import PositionedSceneNode.Companion.method2518
-import Class319.Companion.method2545
+import MapElementDefinitionCache.Companion.method2545
 import Class322.Companion.method2555
 import Class323.Companion.method2562
 import Class324.Companion.method2570
@@ -1765,7 +1765,7 @@ class Client : GameAppletFrame() {
                     if (i == 3) TexGenMaterialPass.method2161((-102).toByte(), 2L)
                 } else TexGenMaterialPass.method2161((-97).toByte(), 5L)
             } else TexGenMaterialPass.method2161((-104).toByte(), 10L)
-            if (Class319.aBoolean3988) method1416(5)
+            if (MapElementDefinitionCache.aBoolean3988) method1416(5)
             if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1 && WorldMapRenderer.anInt4674 == 3 && RenderNode.anInt9721 != -1) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 0)
                 method243(37)

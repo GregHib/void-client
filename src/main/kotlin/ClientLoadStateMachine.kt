@@ -199,7 +199,7 @@ object ClientLoadStateMachine {
             ParticleEmitterNode.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, OpenGlRenderNode.aClass45_10480, Class348_Sub29.aClass45_6909, TextureGenerator.aClass45_2490)
             CircleHitbox.aClass84_413 = Class84(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             HoverActionEntry.aSpriteStore_1813 = SpriteStore(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class348_Sub40_Sub18.aClass319_9245 = Class319(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class78.aClass45_1322, RasterSprite.aClass45_5207)
+            Class348_Sub40_Sub18.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class78.aClass45_1322, RasterSprite.aClass45_5207)
             SpriteLoadValidator.aClass65_4787 = Class65(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class91.aClass82_1523 = Class82(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
@@ -255,7 +255,7 @@ object ClientLoadStateMachine {
             SceneTilePlaneManager.aClass45_233!!.method404(0, true, true)
             Class348_Sub35.aClass45_6980!!.method404(0, true, true)
             Class95.aClass45_1541!!.anInt634 = 2
-            Class319.aBoolean3988 = true
+            MapElementDefinitionCache.aBoolean3988 = true
             VideoAdChecker.aClass45_3183!!.anInt634 = 2
             Class94.aClass45_1538!!.anInt634 = 2
             FloatGrid.aClass45_4975!!.anInt634 = 2

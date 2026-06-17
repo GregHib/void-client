@@ -532,7 +532,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         val i_92_ = (if (!bool) this.anInt10269 else this.anInt10291)
         if (i_88_ != -1 && i_92_ != -1) {
             if (i_92_ == i_88_) {
-                val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(65.toByte(), i_88_)
+                val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(65.toByte(), i_88_)
                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7)
                     val i_95_ = class17.anInt248
@@ -546,8 +546,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                     }
                 }
             } else {
-                val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(109.toByte(), i_88_)
-                val class368_93_ = Class348_Sub40_Sub18.aClass319_9245!!.method2543(99.toByte(), i_92_)
+                val class368 = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(109.toByte(), i_88_)
+                val class368_93_ = Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(99.toByte(), i_92_)
                 if (class368.anInt4503 != -1 && class368_93_.anInt4503 != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7)
                     val class17_94_ = ParticleEmitterNode.aClass87_191!!.method835((class368_93_.anInt4503), i_89_ xor 0x3c5664d6.inv())
@@ -568,7 +568,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             this.anInt10273 = 0
             if (i_96_ < this.anInt10211) this.anInt10224 = -1
             if (this.anInt10291 != -1 && (this.anInt10211 == i_96_)) {
-                val i_97_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(98.toByte(), this.anInt10291).anInt4503)
+                val i_97_ = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), this.anInt10291).anInt4503)
                 if (i_97_ != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_97_, 7)
                     if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTable.method2178(this, 0, class17, i_89_ + 1012294835)
@@ -585,7 +585,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             this.anInt10220 = i_91_ shr 16
             if (i_96_ < this.anInt10225) this.anInt10240 = -1
             if (this.anInt10269 != -1 && this.anInt10225 == i_96_) {
-                val i_98_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(103.toByte(), this.anInt10269).anInt4503)
+                val i_98_ = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(103.toByte(), this.anInt10269).anInt4503)
                 if (i_98_ != -1) {
                     val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_98_, 7)
                     if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTable.method2178(this, 0, class17, -128)
@@ -890,7 +890,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 Class9.aRenderer171!!.method3631(1)
                 Class9.aRenderer171!!.method3659(0)
             }
-            if (Class319.aCacheIndexManagerArray3982 != null) Class319.aCacheIndexManagerArray3982 = null
+            if (MapElementDefinitionCache.aCacheIndexManagerArray3982 != null) MapElementDefinitionCache.aCacheIndexManagerArray3982 = null
             Class9.aRenderer171 = null
         }
 

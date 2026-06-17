@@ -22,7 +22,7 @@ class Class368 {
     private var anInt4508 = 0
     private var anInt4512 = 0
     @JvmField
-    var aClass319_4513: Class319? = null
+    var aMapElementDefinitionCache_4513: MapElementDefinitionCache? = null
 
     fun method3558(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, class87: Class87?, i_3_: Int): Class64? {
         try {
@@ -140,18 +140,18 @@ class Class368 {
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ = i_33_ or 0x5
             var class64: Class64?
             this.anInt4501 = this.anInt4501 or (var_renderer!!.anInt4567 shl 29)
-            synchronized(this.aClass319_4513!!.aClass60_3990) {
-                class64 = ((this.aClass319_4513!!.aClass60_3990.method583(this.anInt4501.toLong(), -122)) as Class64?)
+            synchronized(this.aMapElementDefinitionCache_4513!!.aClass60_3990) {
+                class64 = ((this.aMapElementDefinitionCache_4513!!.aClass60_3990.method583(this.anInt4501.toLong(), -122)) as Class64?)
             }
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_33_) != 0) {
                 if (class64 != null) i_33_ = var_renderer!!.method3679(i_33_, class64.ua())
                 var i_34_ = i_33_
                 if (aShortArray4490 != null) i_34_ = i_34_ or 0x4000
                 if (aShortArray4499 != null) i_34_ = i_34_ or 0x8000
-                val class124 = ParticleConfigParser.method2277(0, (this.aClass319_4513!!.aClass45_3981!!), anInt4506, -1)
+                val class124 = ParticleConfigParser.method2277(0, (this.aMapElementDefinitionCache_4513!!.aClass45_3981!!), anInt4506, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 114)
-                class64 = var_renderer!!.method3625(class124, i_34_, (this.aClass319_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850)
+                class64 = var_renderer!!.method3625(class124, i_34_, (this.aMapElementDefinitionCache_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850)
                 if (aShortArray4490 != null) {
                     var i_35_ = 0
                     while ((i_35_ < aShortArray4490!!.size)) {
@@ -167,8 +167,8 @@ class Class368 {
                     }
                 }
                 class64.s(i_33_)
-                synchronized(this.aClass319_4513!!.aClass60_3990) {
-                    this.aClass319_4513!!.aClass60_3990.method582(class64, this.anInt4501.toLong(), (-113).toByte())
+                synchronized(this.aMapElementDefinitionCache_4513!!.aClass60_3990) {
+                    this.aMapElementDefinitionCache_4513!!.aClass60_3990.method582(class64, this.anInt4501.toLong(), (-113).toByte())
                 }
             }
             if (i_31_.toInt() != -68) return null

@@ -21,10 +21,10 @@ class Class348_Sub37 : Class348() {
                 val `is` = class59_sub1_sub2.method562(128, 128, 121.toByte(), 16)
                 Class337.anObject4177 = method1357(`is`, false, 81.toByte())
             }
-            if (Class319.anObject3985 == null) {
+            if (MapElementDefinitionCache.anObject3985 == null) {
                 val class59_sub2_sub1 = Class59_Sub2_Sub1()
                 val `is` = class59_sub2_sub1.method567(128, 111.toByte(), 16, 128)
-                Class319.anObject3985 = method1357(`is`, false, 103.toByte())
+                MapElementDefinitionCache.anObject3985 = method1357(`is`, false, 103.toByte())
             }
             val class188 = var_ha_Sub2.aGlowPostProcessor_7736
             if (class188!!.method1414(35632) && Class369_Sub2.anObject8592 == null) {

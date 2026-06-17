@@ -49,7 +49,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
 
     companion object {
         @JvmField
-        var aClass319_9245: Class319? = null
+        var aMapElementDefinitionCache_9245: MapElementDefinitionCache? = null
         @JvmField
         var anInt9246: Int = 0
         @JvmField
@@ -156,8 +156,8 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
         @JvmStatic
         fun method3096(i: Int) {
             anIntArray9249 = null
-            aClass319_9245 = null
-            if (i != 32462) aClass319_9245 = null
+            aMapElementDefinitionCache_9245 = null
+            if (i != 32462) aMapElementDefinitionCache_9245 = null
         }
     }
 }

@@ -43,15 +43,15 @@ object MinimapRectClipper {
     fun method227(class318_sub1: SceneEntity, bool: Boolean, bool_5_: Boolean) {
         class318_sub1.aBoolean6391 = bool_5_
         if (Class348_Sub40_Sub5.aBoolean9121) {
-            if (bool) Class319.aCacheIndexManagerArray3982!![Class319.aCacheIndexManagerArray3982!!.size - 1]!!.method2353(class318_sub1, false)
+            if (bool) MapElementDefinitionCache.aCacheIndexManagerArray3982!![MapElementDefinitionCache.aCacheIndexManagerArray3982!!.size - 1]!!.method2353(class318_sub1, false)
             else {
                 val i = method2154(class318_sub1.anInt6386)
                 val i_6_ = (Class52.anIntArray4906!![2] * class318_sub1.method2379(-25675) / class318_sub1.anInt6389)
                 val i_7_ = method2154((class318_sub1.anInt6386) - i_6_)
                 val i_8_ = method2154((class318_sub1.anInt6386) + i_6_)
-                if (i_7_ == i_8_) Class319.aCacheIndexManagerArray3982!![i]!!.method2353(class318_sub1, false)
-                else if (i_8_ - i_7_ == 1) Class319.aCacheIndexManagerArray3982!![Class75_Sub1.anInt5652 + i_7_]!!.method2353(class318_sub1, false)
-                else Class319.aCacheIndexManagerArray3982!![Class319.aCacheIndexManagerArray3982!!.size - 1]!!.method2353(class318_sub1, false)
+                if (i_7_ == i_8_) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i]!!.method2353(class318_sub1, false)
+                else if (i_8_ - i_7_ == 1) MapElementDefinitionCache.aCacheIndexManagerArray3982!![Class75_Sub1.anInt5652 + i_7_]!!.method2353(class318_sub1, false)
+                else MapElementDefinitionCache.aCacheIndexManagerArray3982!![MapElementDefinitionCache.aCacheIndexManagerArray3982!!.size - 1]!!.method2353(class318_sub1, false)
             }
         } else Class38.method365(class318_sub1, OverlayColorTable.aClass348_Sub1Array1752)
     }

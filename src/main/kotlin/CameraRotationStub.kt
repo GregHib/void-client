@@ -55,7 +55,7 @@ class CameraRotationStub {
                 if (i != -15902) Companion.method288((-120).toByte())
                 Class348_Sub42_Sub5.aDouble9531 = d_7_ * -d_4_
                 Class357.aDouble4404 = d_5_
-                Class319.aDouble3980 = 0.0
+                MapElementDefinitionCache.aDouble3980 = 0.0
                 Class59.aDouble1083 = d_6_ * -d_5_
                 Class348_Sub23_Sub2.aDouble9023 = d_5_ * d_7_
             }

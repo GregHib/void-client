@@ -4,7 +4,7 @@ import Class348_Sub1_Sub2.Companion.method2729
 /* Class319 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class319 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_3_: Class45?) {
+class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_3_: Class45?) {
     private val aClass45_3979: Class45?
     var aClass45_3981: Class45? = null
     private val aClass60_3989 = Class60(64)
@@ -44,7 +44,7 @@ class Class319 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
             `is` = aClass45_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
         }
         class368 = Class368()
-        class368.aClass319_4513 = this
+        class368.aMapElementDefinitionCache_4513 = this
         class368.anInt4501 = i_1_
         if (`is` != null) class368.method3559(28105, Class348_Sub49(`is`))
         synchronized(aClass60_3989) {

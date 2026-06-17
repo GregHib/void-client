@@ -162,7 +162,7 @@ class Class348_Sub9 : Class348() {
                         if ((`is` != null && class318_sub1.plane >= i && (`is`[class318_sub1.plane.toInt()]!![i_5_]!![i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((-79).toByte())) {
                             if (!bool && i_5_ >= DisplayModeOptionState.anInt6111 - 16 && i_5_ <= DisplayModeOptionState.anInt6111 + 16 && i_6_ >= GlIndexBufferArb.anInt8502 - 16 && i_6_ <= GlIndexBufferArb.anInt8502 + 16) {
                                 if (Class348_Sub40_Sub5.aBoolean9121) {
-                                    Class319.aCacheIndexManagerArray3982!![NpcSummaryDefinition.anInt1949++]!!.method2361(-15481, class318_sub1)
+                                    MapElementDefinitionCache.aCacheIndexManagerArray3982!![NpcSummaryDefinition.anInt1949++]!!.method2361(-15481, class318_sub1)
                                     NpcSummaryDefinition.anInt1949 %= Class75_Sub1.anInt5652
                                 } else class318_sub1.method2387(Class9.aRenderer171, -128)
                             }

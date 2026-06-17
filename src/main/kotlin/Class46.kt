@@ -950,7 +950,7 @@ class Class46 {
             MapAreaDefinition.aBufferedMessageQueue_2529!!.method2080(127)
             Exception_Sub1.aModelHeaderCache_112!!.method1938(126)
             ParticleEmitterNode.aClass87_191!!.method838(7)
-            Class348_Sub40_Sub18.aClass319_9245!!.method2542(-101)
+            Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2542(-101)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
             Class64_Sub3.aNpcDefinitionCache_5558!!.method1986((-91).toByte())

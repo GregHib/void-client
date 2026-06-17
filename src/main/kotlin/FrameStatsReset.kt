@@ -1685,7 +1685,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class60.anInt1092 = 0
             GlTexture1D.anInt8555 = 0
             SceneryDetailOptionState.anInt6091 = 0
-            Class319.anInt3983 = 0
+            MapElementDefinitionCache.anInt3983 = 0
             ModelWallEntity.anInt10136 = 0
             Class348_Sub40.anInt7038 = 0
             ArchiveResourceProvider.anInt6367 = 0
@@ -3191,7 +3191,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SocketStreamWorker.anInt2662 = 0
             Class66.anInt1157 = 0
             ConfigFlagUtil.anInt3235 = 0
-            Class319.anInt3984 = 0
+            MapElementDefinitionCache.anInt3984 = 0
             Class330.anInt4115 = 0
             Class42.anInt600 = 0
             WalkingTypeUtil.anInt3308 = 0
@@ -3465,7 +3465,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class355.anInt4363 = 0
             Npc.anInt10497 = 0
             Class348_Sub33.anInt6956 = 0
-            Class319.anInt3987 = 0
+            MapElementDefinitionCache.anInt3987 = 0
             NativeRenderer.anInt7981 = 0
             Class348_Sub49.anInt7173 = 0
             Class348_Sub40_Sub5.anInt9120 = 0
@@ -3507,7 +3507,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5737 = 0
             Class348_Sub49_Sub2.anInt9762 = 0
             Class50_Sub3.anInt5248 = 0
-            Class319.anInt3986 = 0
+            MapElementDefinitionCache.anInt3986 = 0
             TextureDefinitionLoader.anInt1972 = 0
             ArchiveResourceProvider.anInt6358 = 0
             FontDefinition.anInt1980 = 0
@@ -3929,7 +3929,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WidgetComponentNode.anInt4658 = 0
             DoublyLinkedNodeList.anInt3161 = 0
             Class346_Sub1.anInt6540 = 0
-            Class319.anInt3978 = 0
+            MapElementDefinitionCache.anInt3978 = 0
             Class369_Sub3_Sub1.anInt10175 = 0
             Class34.anInt468 = 0
             Class348_Sub20.anInt6834 = 0

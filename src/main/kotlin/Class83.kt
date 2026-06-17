@@ -17,7 +17,7 @@ class Class83 internal constructor(var_ha_Sub2: OpenGlRenderer) {
         if (this.aBoolean1442) {
             var `is` = method461(false, Class337.anObject4177, 53146732)
             this.aClass258_Sub1_1440 = GlTexture3D(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
-            `is` = method461(false, Class319.anObject3985, 53146732)
+            `is` = method461(false, MapElementDefinitionCache.anObject3985, 53146732)
             this.aClass258_Sub1_1446 = GlTexture3D(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
             val class188 = var_ha_Sub2.aGlowPostProcessor_7736
             if (class188!!.method1414(35632)) {
@@ -38,7 +38,7 @@ class Class83 internal constructor(var_ha_Sub2: OpenGlRenderer) {
             }
             this.aClass258_Sub3Array1448 = arrayOfNulls<GlTexture2D>(16)
             for (i in 0..15) {
-                val `is` = ObjectByteSerializerHolder.method1331(110.toByte(), Class319.anObject3985, 2 * i * 16384, 32768)
+                val `is` = ObjectByteSerializerHolder.method1331(110.toByte(), MapElementDefinitionCache.anObject3985, 2 * i * 16384, 32768)
                 this.aClass258_Sub3Array1448!![i] = GlTexture2D(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
             }
         }

@@ -304,11 +304,11 @@ class Player : ProjectedGroundDecor() {
             this.anIntArray10236 = null
         }
         if (this.anInt10269 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(59.toByte(), this.anInt10269))
+            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(59.toByte(), this.anInt10269))
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && ParticleEmitterNode.aClass87_191!!.method835((class368.anInt4503), i_50_ xor 0x674d.inv()).anInt245 == 1) this.anInt10269 = -1
         }
         if (this.anInt10291 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(124.toByte(), this.anInt10291))
+            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(124.toByte(), this.anInt10291))
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         this.anInt10524 = -1
@@ -509,7 +509,7 @@ class Player : ProjectedGroundDecor() {
         } else this.method2424(i_74_, method2436(124.toByte()) shl 9, 0, method2436(58.toByte()) shl 9, 65.toByte(), 0)
         if (bool) class64.method624(this.aByte10255.toInt(), this.aByte10206.toInt(), this.aByte10270.toInt(), (this.aByte10279.toInt() and 0xff))
         if (!this.aBoolean10521 && this.anInt10269 != -1 && this.anInt10240 != -1) {
-            val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(76.toByte(), this.anInt10269))
+            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10269))
             val bool_78_ = (class368.aByte4488.toInt() == 3 && (i_72_ != 0 || i_73_ != 0))
             var i_79_ = i_70_
             if (!bool_78_) {
@@ -556,7 +556,7 @@ class Player : ProjectedGroundDecor() {
         } else this.aClass64Array10323[1] = null
         if (this.aBoolean10521 || this.anInt10291 == -1 || this.anInt10224 == -1) this.aClass64Array10323[2] = null
         else {
-            val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(76.toByte(), this.anInt10291))
+            val class368 = (Class348_Sub40_Sub18.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10291))
             val bool_89_ = (class368.aByte4488.toInt() == 3 && (i_72_ != 0 || i_73_ != 0))
             var i_90_ = i_70_
             if (bool_89_) i_90_ = i_90_ or 0x7
