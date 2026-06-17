@@ -42,7 +42,7 @@ open class Class328 {
 
         fun method2609(i: Int, i_2_: Int): Class348_Sub42_Sub19? {
             anInt4101++
-            var class348_sub42_sub19 = (Class322.aCacheLruCache_4036!!.method2302(i_2_.toLong(), (-68).toByte()) as Class348_Sub42_Sub19?)
+            var class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_2_.toLong(), (-68).toByte()) as Class348_Sub42_Sub19?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
             val `is` = CameraNodeList.aClass45_1743!!.method410(-1860, i_2_, 0)
             if (`is` == null || `is`.size <= 1) return null
@@ -52,7 +52,7 @@ open class Class328 {
                 throw RuntimeException(exception.message + " S: " + i_2_)
             }
             if (i > -103) return null
-            Class322.aCacheLruCache_4036!!.method2305(i_2_.toLong(), class348_sub42_sub19, -1)
+            ImageFrameCache.aCacheLruCache_4036!!.method2305(i_2_.toLong(), class348_sub42_sub19, -1)
             return class348_sub42_sub19
         }
     }

@@ -17,8 +17,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
 
     override fun method3047(i: Int, i_0_: Int): Array<IntArray?>? {
         anInt9141++
-        val `is` = this.aClass322_7033!!.method2557(-119, i)!!
-        if (this.aClass322_7033!!.aBoolean4035) {
+        val `is` = this.aImageFrameCache_7033!!.method2557(-119, i)!!
+        if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_1_ = this.method3039(120.toByte(), (if (aBoolean9147) -i + TextureCubeProvider.anInt6325 else i), 0)!!
             val is_2_ = is_1_[0]!!
             val is_3_ = is_1_[1]!!

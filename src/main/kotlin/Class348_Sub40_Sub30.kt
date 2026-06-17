@@ -20,8 +20,8 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
     private var anInt9402 = 0
     override fun method3047(i: Int, i_8_: Int): Array<IntArray?>? {
         anInt9393++
-        val `is` = this.aClass322_7033!!.method2557(-105, i)!!
-        if (this.aClass322_7033!!.aBoolean4035) {
+        val `is` = this.aImageFrameCache_7033!!.method2557(-105, i)!!
+        if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_9_ = this.method3039(50.toByte(), i, 0)!!
             val is_10_ = is_9_[0]!!
             val is_11_ = is_9_[1]!!

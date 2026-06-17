@@ -46,8 +46,8 @@ open class Class348_Sub40_Sub17 : Class348_Sub40(0, false) {
     override fun method3047(i: Int, i_1_: Int): Array<IntArray?>? {
         anInt9239++
         if (i_1_ != -1564599039) method3047(8, -86)
-        val `is` = this.aClass322_7033!!.method2557(-108, i)!!
-        if (this.aClass322_7033!!.aBoolean4035 && method3090(true)) {
+        val `is` = this.aImageFrameCache_7033!!.method2557(-108, i)!!
+        if (this.aImageFrameCache_7033!!.aBoolean4035 && method3090(true)) {
             val is_2_ = `is`[0]!!
             val is_3_ = `is`[1]!!
             val is_4_ = `is`[2]!!

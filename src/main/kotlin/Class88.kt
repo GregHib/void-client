@@ -363,7 +363,7 @@ class Class88 {
                                 InputSettingsState.anInt1758 = class348_sub49_sub2.readShort(13638)
                                 FrameBufferObject.aBoolean4888 = InputSettingsState.anInt1758 > 0
                                 GlArrayBufferObject.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944)
-                                Class322.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944)
+                                ImageFrameCache.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 FrameBufferObject.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 VarpStore.anInt5065 = class348_sub49_sub2.readInt((-126).toByte())
                                 Class348_Sub42_Sub6.aLinkedQueueNode_9536 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2232(116, VarpStore.anInt5065)

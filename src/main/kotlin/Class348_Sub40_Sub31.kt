@@ -7,8 +7,8 @@ class Class348_Sub40_Sub31 : Class348_Sub40(1, false) {
     override fun method3047(i: Int, i_0_: Int): Array<IntArray?>? {
         anInt9407++
         if (i_0_ != -1564599039) return null
-        val `is` = this.aClass322_7033!!.method2557(-111, i)!!
-        if (this.aClass322_7033!!.aBoolean4035) {
+        val `is` = this.aImageFrameCache_7033!!.method2557(-111, i)!!
+        if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val i_1_: Int = Class348_Sub40_Sub6.Companion.anInt9139 / anInt9405
             val i_2_ = FixedFunctionMaterialPass.anInt6212 / anInt9410
             val is_3_: Array<IntArray?>?

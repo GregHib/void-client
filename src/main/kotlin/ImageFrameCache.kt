@@ -10,7 +10,7 @@ import ArbVertexProgram.Companion.method3443
 /* Class322 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
+class ImageFrameCache internal constructor(i: Int, i_9_: Int, i_10_: Int) {
     private val anInt4020: Int
     private var aNodeDeque_4021: NodeDeque?
     private var anInt4022: Int

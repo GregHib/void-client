@@ -324,7 +324,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class322.aIntRange_4027 == Class348_Sub3.aIntRange_6584) {
+            if (ImageFrameCache.aIntRange_4027 == Class348_Sub3.aIntRange_6584) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 if (i == 65535) i = -1
                 val i_28_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)

@@ -29,8 +29,8 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
     override fun method3047(i: Int, i_2_: Int): Array<IntArray?>? {
         if (i_2_ != -1564599039) method3150(true)
         anInt9468++
-        val `is` = this.aClass322_7033!!.method2557(-117, i)!!
-        if (this.aClass322_7033!!.aBoolean4035) {
+        val `is` = this.aImageFrameCache_7033!!.method2557(-117, i)!!
+        if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_3_ = this.method3039((-88).toByte(), i, 0)!!
             val is_4_ = is_3_[0]!!
             val is_5_ = is_3_[1]!!
@@ -113,7 +113,7 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
                 val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_14_.toLong(), -6008) as Class348_Sub22?)
                 if (class348_sub22 != null) {
                     val npc = (class348_sub22.aNpc_6859)!!
-                    Class322.method2556(false, npc.aClass79_10505!!.anInt1399, npc)
+                    ImageFrameCache.method2556(false, npc.aClass79_10505!!.anInt1399, npc)
                 }
                 i++
             }

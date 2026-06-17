@@ -6,9 +6,9 @@ import kotlin.math.atan2
 class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
     override fun method3047(i: Int, i_2_: Int): Array<IntArray?>? {
         anInt9429++
-        val `is` = this.aClass322_7033!!.method2557(-97, i)!!
+        val `is` = this.aImageFrameCache_7033!!.method2557(-97, i)!!
         if (i_2_ != -1564599039) aClass46ArrayArray9427 = null
-        if (this.aClass322_7033!!.aBoolean4035) {
+        if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_3_ = `is`[0]!!
             val is_4_ = `is`[1]!!
             val is_5_ = `is`[2]!!

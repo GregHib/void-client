@@ -8,8 +8,8 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
     override fun method3047(i: Int, i_3_: Int): Array<IntArray?>? {
         if (i_3_ != -1564599039) return null
         anInt9353++
-        val `is` = this.aClass322_7033!!.method2557(i_3_ + 1564598957, i)!!
-        if (this.aClass322_7033!!.aBoolean4035) {
+        val `is` = this.aImageFrameCache_7033!!.method2557(i_3_ + 1564598957, i)!!
+        if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_4_ = this.method3039((-60).toByte(), i, 0)!!
             val is_5_ = is_4_[0]!!
             val is_6_ = is_4_[1]!!
@@ -107,7 +107,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             val i_17_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
             val bool = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
 
-            Class322.method2554((-45).toByte())
+            ImageFrameCache.method2554((-45).toByte())
             Class348_Sub40_Sub22.Companion.method3111(111, i_15_)
             var i_18_: Int = (-CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 + Class348_Sub40_Sub25.Companion.anInt9341) / 16
             BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_18_) { IntArray(4) }
@@ -121,7 +121,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             GameAppletFrame.anIntArray38 = IntArray(i_18_)
             Class348_Sub50.aByteArrayArray7212 = null
             RenderNode.anIntArray9724 = IntArray(i_18_)
-            Class322.anIntArray4031 = null
+            ImageFrameCache.anIntArray4031 = null
             Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
             if (i >= -47) anInt9349 = -54
             LocalizedTextTriple.anIntArray3759 = IntArray(i_18_)

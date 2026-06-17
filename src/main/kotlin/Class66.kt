@@ -2267,7 +2267,7 @@ object Class66 {
                     return
                 }
                 if (i == 6903) {
-                    anIntArray1149!![anInt1173++] = Class322.anInt4026
+                    anIntArray1149!![anInt1173++] = ImageFrameCache.anInt4026
                     return
                 }
                 if (i == 6904) {
@@ -3886,7 +3886,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_317_ = anIntArray1149!![anInt1173]
                     val i_318_ = anIntArray1149!![anInt1173 + 1]
-                    anIntArray1149!![anInt1173++] = Class322.method2552(false, i_317_, i_318_, -24667)
+                    anIntArray1149!![anInt1173++] = ImageFrameCache.method2552(false, i_317_, i_318_, -24667)
                     return
                 }
                 if (i == 3302) {
@@ -3953,7 +3953,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_333_ = anIntArray1149!![anInt1173]
                     val i_334_ = anIntArray1149!![anInt1173 + 1]
-                    anIntArray1149!![anInt1173++] = Class322.method2552(true, i_333_, i_334_, -24667)
+                    anIntArray1149!![anInt1173++] = ImageFrameCache.method2552(true, i_333_, i_334_, -24667)
                     return
                 }
                 if (i == 3314) {

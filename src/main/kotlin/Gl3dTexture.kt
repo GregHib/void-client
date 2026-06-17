@@ -164,7 +164,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 Class345.aIntRange_4269,
                 Class365.aIntRange_4477,
                 SimpleBinaryOptionState.aIntRange_6075,
-                Class322.aIntRange_4027,
+                ImageFrameCache.aIntRange_4027,
                 Class348_Sub40_Sub15.aIntRange_9216,
                 ScriptOpcodeHolder.aIntRange_2338,
                 SlotBinding.aIntRange_3427,

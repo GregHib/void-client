@@ -61,7 +61,7 @@ public abstract class AbstractCameraTransform {
             LocalPlayerState.aPlayer_1907!!.method2449(8, 8, 118.toByte())
             if (i.toInt() != -49) anInt1597 = 115
             var i_6_ = 18
-            Class322.anIntArray4031 = IntArray(i_6_)
+            ImageFrameCache.anIntArray4031 = IntArray(i_6_)
             Class348_Sub50.aByteArrayArray7212 = arrayOfNulls<ByteArray>(i_6_)
             BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_6_) { IntArray(4) }
             NativeSprite.anIntArray5192 = IntArray(i_6_)
@@ -82,10 +82,10 @@ public abstract class AbstractCameraTransform {
                     Class348_Sub23_Sub3.anIntArray9042!![i_6_] = i_9_
                     NativeSprite.anIntArray5192!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
                     GameAppletFrame.anIntArray38!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
-                    Class322.anIntArray4031!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
+                    ImageFrameCache.anIntArray4031!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
                     LocalizedTextTriple.anIntArray3759!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
                     RenderNode.anIntArray9724!![i_6_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i.toInt(), -49)))
-                    if (Class322.anIntArray4031!![i_6_] == -1) {
+                    if (ImageFrameCache.anIntArray4031!![i_6_] == -1) {
                         NativeSprite.anIntArray5192!![i_6_] = -1
                         GameAppletFrame.anIntArray38!![i_6_] = -1
                         LocalizedTextTriple.anIntArray3759!![i_6_] = -1
@@ -97,8 +97,8 @@ public abstract class AbstractCameraTransform {
                 i_7_++
             }
             var i_10_ = i_6_
-            while (Class322.anIntArray4031!!.size > i_10_) {
-                Class322.anIntArray4031!![i_10_] = -1
+            while (ImageFrameCache.anIntArray4031!!.size > i_10_) {
+                ImageFrameCache.anIntArray4031!![i_10_] = -1
                 NativeSprite.anIntArray5192!![i_10_] = -1
                 GameAppletFrame.anIntArray38!![i_10_] = -1
                 LocalizedTextTriple.anIntArray3759!![i_10_] = -1

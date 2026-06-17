@@ -44,9 +44,9 @@ class Class348_Sub40_Sub6 : Class348_Sub40(3, false) {
 
     override fun method3047(i: Int, i_13_: Int): Array<IntArray?>? {
         anInt9131++
-        val `is` = this.aClass322_7033!!.method2557(i_13_ xor 0x5d41e284, i)!!
+        val `is` = this.aImageFrameCache_7033!!.method2557(i_13_ xor 0x5d41e284, i)!!
         if (i_13_ != -1564599039) aByteArrayArrayArray9134 = null
-        if (this.aClass322_7033!!.aBoolean4035) {
+        if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_14_ = this.method3048(i, 633706337, 1)!!
             val is_15_ = this.method3048(i, 633706337, 2)!!
             val is_16_ = `is`[0]!!

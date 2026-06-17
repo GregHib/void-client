@@ -15,8 +15,8 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
 
     override fun method3047(i: Int, i_14_: Int): Array<IntArray?>? {
         anInt9246++
-        val `is` = this.aClass322_7033!!.method2557(i_14_ xor 0x5d41e2b0, i)!!
-        if (this.aClass322_7033!!.aBoolean4035) {
+        val `is` = this.aImageFrameCache_7033!!.method2557(i_14_ xor 0x5d41e2b0, i)!!
+        if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_15_ = `is`[0]!!
             val is_16_ = `is`[1]!!
             val is_17_ = `is`[2]!!

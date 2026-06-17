@@ -7,8 +7,8 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
     override fun method3047(i: Int, i_9_: Int): Array<IntArray?>? {
         if (i_9_ != -1564599039) method3133(4.toByte())
         anInt9417++
-        val `is` = this.aClass322_7033!!.method2557(-78, i)!!
-        if (this.aClass322_7033!!.aBoolean4035) {
+        val `is` = this.aImageFrameCache_7033!!.method2557(-78, i)!!
+        if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_10_ = this.method3039((-104).toByte(), i, 0)!!
             val is_11_ = is_10_[0]!!
             val is_12_ = is_10_[1]!!

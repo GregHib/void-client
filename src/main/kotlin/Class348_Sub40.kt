@@ -9,7 +9,7 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
     @JvmField
     var aClass348_Sub40Array7031: Array<Class348_Sub40?>
     var aSpriteSheetCache_7032: SpriteSheetCache? = null
-    var aClass322_7033: Class322? = null
+    var aImageFrameCache_7033: ImageFrameCache? = null
     @JvmField
     var anInt7036: Int = 0
 
@@ -41,7 +41,7 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
 
     open fun method3043(i: Int): Int {
         anInt7037++
-        if (i != -1) this.aClass322_7033 = null
+        if (i != -1) this.aImageFrameCache_7033 = null
         return -1
     }
 
@@ -54,7 +54,7 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
         anInt7043++
         val i_56_ = (if (i_55_ != (this.anInt7036.inv())) this.anInt7036 else i_54_)
         if (this.aBoolean7045) this.aSpriteSheetCache_7032 = SpriteSheetCache(i_56_, i_54_, i)
-        else this.aClass322_7033 = Class322(i_56_, i_54_, i)
+        else this.aImageFrameCache_7033 = ImageFrameCache(i_56_, i_54_, i)
     }
 
     open fun method3046(i: Byte) {
@@ -64,8 +64,8 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
             this.aSpriteSheetCache_7032!!.method1432(124.toByte())
             this.aSpriteSheetCache_7032 = null
         } else {
-            this.aClass322_7033!!.method2558(6144)
-            this.aClass322_7033 = null
+            this.aImageFrameCache_7033!!.method2558(6144)
+            this.aImageFrameCache_7033 = null
         }
     }
 
