@@ -352,12 +352,12 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string.equals("shiftclick", ignoreCase = true)) {
-                            if (Class116.shiftClick) {
+                            if (InputSettingsState.shiftClick) {
                                 method94("Shift-click disabled.", i.toInt() xor 0x24.inv())
-                                Class116.shiftClick = false
+                                InputSettingsState.shiftClick = false
                             } else {
                                 method94("Shift-click ENABLED!", 106)
-                                Class116.shiftClick = true
+                                InputSettingsState.shiftClick = true
                                 return
                             }
                             return

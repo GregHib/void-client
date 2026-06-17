@@ -1,7 +1,7 @@
 import GameAppletFrame.Companion.method85
 import AbstractCameraTransform.Companion.method901
 import AnimatedModelRenderer.Companion.method988
-import Class116.method1063
+import InputSettingsState.method1063
 import Class14_Sub2.Companion.method243
 import Class150.Companion.method1202
 import Class30.Companion.method323

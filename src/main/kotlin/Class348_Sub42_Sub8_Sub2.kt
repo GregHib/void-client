@@ -188,7 +188,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (bool != true) aClass230_10434 = null
-            if (Class348_Sub3.aIntRange_6584 == Class116.aIntRange_1762) {
+            if (Class348_Sub3.aIntRange_6584 == InputSettingsState.aIntRange_1762) {
                 Class239_Sub4.aString5882 = (if (Class348_Sub40_Sub25.anInt9341 > 2) Class299.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else Class274.aClass274_3509!!.method2063(Class348_Sub33.anInt6967, 544))
                 Class333.anInt4144 = (if (Class348_Sub40_Sub25.anInt9341 <= 0) -1 else Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
                 if (Class333.anInt4144 == 65535) Class333.anInt4144 = -1

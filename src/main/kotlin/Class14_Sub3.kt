@@ -124,7 +124,7 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
                 Class185.aIntRange_2483,
                 Class255.aIntRange_3265,
                 Class228.aIntRange_2972,
-                Class116.aIntRange_1762,
+                InputSettingsState.aIntRange_1762,
                 Class15.aIntRange_229,
                 Class128.aIntRange_1871,
                 Class63.aIntRange_1120,

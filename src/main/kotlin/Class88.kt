@@ -360,8 +360,8 @@ class Class88 {
                                 Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                Class116.anInt1758 = class348_sub49_sub2.readShort(13638)
-                                Class206.aBoolean4888 = Class116.anInt1758 > 0
+                                InputSettingsState.anInt1758 = class348_sub49_sub2.readShort(13638)
+                                Class206.aBoolean4888 = InputSettingsState.anInt1758 > 0
                                 Class135_Sub1.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class322.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class206.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)

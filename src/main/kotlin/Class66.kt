@@ -1001,7 +1001,7 @@ object Class66 {
             if (i == 5411) {
                 if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 if (Class52.aFrame4904 == null) {
-                    val string = (if (Class116.aString1761 != null) Class116.aString1761 else method2162(false))
+                    val string = (if (InputSettingsState.aString1761 != null) InputSettingsState.aString1761 else method2162(false))
                     Class179.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
                     return
                 } else {
@@ -2259,7 +2259,7 @@ object Class66 {
                     return
                 }
                 if (i == 6901) {
-                    anIntArray1149!![anInt1173++] = Class116.anInt1758
+                    anIntArray1149!![anInt1173++] = InputSettingsState.anInt1758
                     return
                 }
                 if (i == 6902) {

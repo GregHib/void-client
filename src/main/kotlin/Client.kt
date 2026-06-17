@@ -21,7 +21,7 @@ import MapLabelMenuEntry.Companion.method1040
 import CollisionMapRegion.Companion.method1047
 import CameraNodeList.Companion.method1057
 import OverlayColorTable.method1061
-import Class116.method1062
+import InputSettingsState.method1062
 import Class117.Companion.method1064
 import Class118.Companion.method1075
 import Class121.method1081
@@ -668,7 +668,7 @@ class Client : GameAppletFrame() {
         Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889
         if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == ParticleEmitterNode.aClass230_186) RuntimeException_Sub1.aBoolean4599 = false
         if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
-            Class116.shiftClick = true
+            InputSettingsState.shiftClick = true
             Class136.aShortArrayArray4791 = Class348_Sub8.aShortArrayArray6664
             Class268.anInt3439 = 16777215
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub51.aShortArrayArrayArray7262
@@ -1348,7 +1348,7 @@ class Client : GameAppletFrame() {
             } catch (exception: Exception) {
                 Class202.anInt2670 = 0
             }
-            Class116.aString1761 = this.getParameter("quiturl")
+            InputSettingsState.aString1761 = this.getParameter("quiturl")
             Class239_Sub12.aString5966 = this.getParameter("settings")
             if (Class239_Sub12.aString5966 == null) Class239_Sub12.aString5966 = ""
             Class330.aBoolean4127 = "1" == this.getParameter("under")
