@@ -4,7 +4,7 @@ import Class348_Sub10.Companion.method2789
 /* Class343 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class343 internal constructor() {
+class BinaryBitReader internal constructor() {
     private val anInt4255: Int
     private val anInt4256: Int
     private val anInt4257 = method2789(16)
