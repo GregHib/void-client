@@ -1,7 +1,7 @@
 /* Class197 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class197 {
+class EnvelopeInterpolator {
     private var anIntArray2602: IntArray
     var anInt2603: Int = 0
     private var anInt2604 = 2

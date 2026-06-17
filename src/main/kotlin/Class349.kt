@@ -9,7 +9,7 @@ class Class349 {
     private val anIntArrayArrayArray4300: Array<Array<IntArray?>?>
     private val anIntArrayArrayArray4302: Array<Array<IntArray?>?>
     private val anIntArray4304 = IntArray(2)
-    fun method3446(class348_sub49: Class348_Sub49, class197: Class197) {
+    fun method3446(class348_sub49: Class348_Sub49, envelopeInterpolator: EnvelopeInterpolator) {
         val i = class348_sub49.readUnsignedByte(255)
         this.anIntArray4299[0] = i shr 4
         this.anIntArray4299[1] = i and 0xf
@@ -34,7 +34,7 @@ class Class349 {
                     }
                 }
             }
-            if (i_0_ != 0 || anIntArray4304[1] != anIntArray4304[0]) class197.method1454(class348_sub49)
+            if (i_0_ != 0 || anIntArray4304[1] != anIntArray4304[0]) envelopeInterpolator.method1454(class348_sub49)
         } else {
             anIntArray4304[1] = 0
             anIntArray4304[0] = anIntArray4304[1]

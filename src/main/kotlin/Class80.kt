@@ -5,21 +5,21 @@ import kotlin.math.sin
 class Class80 {
     @JvmField
     var anInt1407: Int = 0
-    private var aClass197_1408: Class197? = null
+    private var aEnvelopeInterpolator_1408: EnvelopeInterpolator? = null
     private val anIntArray1410 = IntArray(5)
     private val anIntArray1411 = IntArray(5)
-    private var aClass197_1413: Class197? = null
-    private var aClass197_1414: Class197? = null
-    private var aClass197_1415: Class197? = null
-    private var aClass197_1417: Class197? = null
-    private var aClass197_1418: Class197? = null
+    private var aEnvelopeInterpolator_1413: EnvelopeInterpolator? = null
+    private var aEnvelopeInterpolator_1414: EnvelopeInterpolator? = null
+    private var aEnvelopeInterpolator_1415: EnvelopeInterpolator? = null
+    private var aEnvelopeInterpolator_1417: EnvelopeInterpolator? = null
+    private var aEnvelopeInterpolator_1418: EnvelopeInterpolator? = null
     private var aClass349_1419: Class349? = null
-    private var aClass197_1420: Class197? = null
+    private var aEnvelopeInterpolator_1420: EnvelopeInterpolator? = null
     @JvmField
     var anInt1421: Int = 500
     private var anInt1422 = 100
-    private var aClass197_1423: Class197? = null
-    private var aClass197_1425: Class197? = null
+    private var aEnvelopeInterpolator_1423: EnvelopeInterpolator? = null
+    private var aEnvelopeInterpolator_1425: EnvelopeInterpolator? = null
     private var anInt1427 = 0
     private val anIntArray1428: IntArray
     private fun method806(i: Int, i_0_: Int, i_1_: Int): Int {
@@ -34,33 +34,33 @@ class Class80 {
     }
 
     fun method807(class348_sub49: Class348_Sub49) {
-        aClass197_1418 = Class197()
-        aClass197_1418!!.method1452(class348_sub49)
-        aClass197_1408 = Class197()
-        aClass197_1408!!.method1452(class348_sub49)
+        aEnvelopeInterpolator_1418 = EnvelopeInterpolator()
+        aEnvelopeInterpolator_1418!!.method1452(class348_sub49)
+        aEnvelopeInterpolator_1408 = EnvelopeInterpolator()
+        aEnvelopeInterpolator_1408!!.method1452(class348_sub49)
         var i = class348_sub49.readUnsignedByte(255)
         if (i != 0) {
             class348_sub49.anInt7197--
-            aClass197_1415 = Class197()
-            aClass197_1415!!.method1452(class348_sub49)
-            aClass197_1425 = Class197()
-            aClass197_1425!!.method1452(class348_sub49)
+            aEnvelopeInterpolator_1415 = EnvelopeInterpolator()
+            aEnvelopeInterpolator_1415!!.method1452(class348_sub49)
+            aEnvelopeInterpolator_1425 = EnvelopeInterpolator()
+            aEnvelopeInterpolator_1425!!.method1452(class348_sub49)
         }
         i = class348_sub49.readUnsignedByte(255)
         if (i != 0) {
             class348_sub49.anInt7197--
-            aClass197_1413 = Class197()
-            aClass197_1413!!.method1452(class348_sub49)
-            aClass197_1423 = Class197()
-            aClass197_1423!!.method1452(class348_sub49)
+            aEnvelopeInterpolator_1413 = EnvelopeInterpolator()
+            aEnvelopeInterpolator_1413!!.method1452(class348_sub49)
+            aEnvelopeInterpolator_1423 = EnvelopeInterpolator()
+            aEnvelopeInterpolator_1423!!.method1452(class348_sub49)
         }
         i = class348_sub49.readUnsignedByte(255)
         if (i != 0) {
             class348_sub49.anInt7197--
-            aClass197_1414 = Class197()
-            aClass197_1414!!.method1452(class348_sub49)
-            aClass197_1420 = Class197()
-            aClass197_1420!!.method1452(class348_sub49)
+            aEnvelopeInterpolator_1414 = EnvelopeInterpolator()
+            aEnvelopeInterpolator_1414!!.method1452(class348_sub49)
+            aEnvelopeInterpolator_1420 = EnvelopeInterpolator()
+            aEnvelopeInterpolator_1420!!.method1452(class348_sub49)
         }
         for (i_2_ in 0..9) {
             val i_3_ = class348_sub49.readSmart(-118)
@@ -74,80 +74,80 @@ class Class80 {
         this.anInt1421 = class348_sub49.readUnsignedShort(842397944)
         this.anInt1407 = class348_sub49.readUnsignedShort(842397944)
         aClass349_1419 = Class349()
-        aClass197_1417 = Class197()
-        aClass349_1419!!.method3446(class348_sub49, aClass197_1417!!)
+        aEnvelopeInterpolator_1417 = EnvelopeInterpolator()
+        aClass349_1419!!.method3446(class348_sub49, aEnvelopeInterpolator_1417!!)
     }
 
     fun method809(i: Int, i_4_: Int): IntArray? {
         Class214.method1573(anIntArray1409!!, 0, i)
         if (i_4_ < 10) return anIntArray1409
         val d = i.toDouble() / (i_4_.toDouble() + 0.0)
-        aClass197_1418!!.method1453()
-        aClass197_1408!!.method1453()
+        aEnvelopeInterpolator_1418!!.method1453()
+        aEnvelopeInterpolator_1408!!.method1453()
         var i_5_ = 0
         var i_6_ = 0
         var i_7_ = 0
-        if (aClass197_1415 != null) {
-            aClass197_1415!!.method1453()
-            aClass197_1425!!.method1453()
-            i_5_ = ((aClass197_1415!!.anInt2606 - aClass197_1415!!.anInt2607).toDouble() * 32.768 / d).toInt()
-            i_6_ = (aClass197_1415!!.anInt2607.toDouble() * 32.768 / d).toInt()
+        if (aEnvelopeInterpolator_1415 != null) {
+            aEnvelopeInterpolator_1415!!.method1453()
+            aEnvelopeInterpolator_1425!!.method1453()
+            i_5_ = ((aEnvelopeInterpolator_1415!!.anInt2606 - aEnvelopeInterpolator_1415!!.anInt2607).toDouble() * 32.768 / d).toInt()
+            i_6_ = (aEnvelopeInterpolator_1415!!.anInt2607.toDouble() * 32.768 / d).toInt()
         }
         var i_8_ = 0
         var i_9_ = 0
         var i_10_ = 0
-        if (aClass197_1413 != null) {
-            aClass197_1413!!.method1453()
-            aClass197_1423!!.method1453()
-            i_8_ = ((aClass197_1413!!.anInt2606 - aClass197_1413!!.anInt2607).toDouble() * 32.768 / d).toInt()
-            i_9_ = (aClass197_1413!!.anInt2607.toDouble() * 32.768 / d).toInt()
+        if (aEnvelopeInterpolator_1413 != null) {
+            aEnvelopeInterpolator_1413!!.method1453()
+            aEnvelopeInterpolator_1423!!.method1453()
+            i_8_ = ((aEnvelopeInterpolator_1413!!.anInt2606 - aEnvelopeInterpolator_1413!!.anInt2607).toDouble() * 32.768 / d).toInt()
+            i_9_ = (aEnvelopeInterpolator_1413!!.anInt2607.toDouble() * 32.768 / d).toInt()
         }
         for (i_11_ in 0..4) {
             if (anIntArray1410[i_11_] != 0) {
                 anIntArray1431!![i_11_] = 0
                 anIntArray1424!![i_11_] = (anIntArray1428[i_11_].toDouble() * d).toInt()
                 anIntArray1430!![i_11_] = (anIntArray1410[i_11_] shl 14) / 100
-                anIntArray1429!![i_11_] = ((aClass197_1418!!.anInt2606 - aClass197_1418!!.anInt2607).toDouble() * 32.768 * 1.0057929410678534.pow(anIntArray1411[i_11_].toDouble()) / d).toInt()
-                anIntArray1426!![i_11_] = (aClass197_1418!!.anInt2607.toDouble() * 32.768 / d).toInt()
+                anIntArray1429!![i_11_] = ((aEnvelopeInterpolator_1418!!.anInt2606 - aEnvelopeInterpolator_1418!!.anInt2607).toDouble() * 32.768 * 1.0057929410678534.pow(anIntArray1411[i_11_].toDouble()) / d).toInt()
+                anIntArray1426!![i_11_] = (aEnvelopeInterpolator_1418!!.anInt2607.toDouble() * 32.768 / d).toInt()
             }
         }
         for (i_12_ in 0..<i) {
-            var i_13_ = aClass197_1418!!.method1451(i)
-            var i_14_ = aClass197_1408!!.method1451(i)
-            if (aClass197_1415 != null) {
-                val i_15_ = aClass197_1415!!.method1451(i)
-                val i_16_ = aClass197_1425!!.method1451(i)
-                i_13_ += method806(i_7_, i_16_, aClass197_1415!!.anInt2603) shr 1
+            var i_13_ = aEnvelopeInterpolator_1418!!.method1451(i)
+            var i_14_ = aEnvelopeInterpolator_1408!!.method1451(i)
+            if (aEnvelopeInterpolator_1415 != null) {
+                val i_15_ = aEnvelopeInterpolator_1415!!.method1451(i)
+                val i_16_ = aEnvelopeInterpolator_1425!!.method1451(i)
+                i_13_ += method806(i_7_, i_16_, aEnvelopeInterpolator_1415!!.anInt2603) shr 1
                 i_7_ += (i_15_ * i_5_ shr 16) + i_6_
             }
-            if (aClass197_1413 != null) {
-                val i_17_ = aClass197_1413!!.method1451(i)
-                val i_18_ = aClass197_1423!!.method1451(i)
-                i_14_ = (i_14_ * ((method806(i_10_, i_18_, aClass197_1413!!.anInt2603) shr 1) + 32768)) shr 15
+            if (aEnvelopeInterpolator_1413 != null) {
+                val i_17_ = aEnvelopeInterpolator_1413!!.method1451(i)
+                val i_18_ = aEnvelopeInterpolator_1423!!.method1451(i)
+                i_14_ = (i_14_ * ((method806(i_10_, i_18_, aEnvelopeInterpolator_1413!!.anInt2603) shr 1) + 32768)) shr 15
                 i_10_ += (i_17_ * i_8_ shr 16) + i_9_
             }
             for (i_19_ in 0..4) {
                 if (anIntArray1410[i_19_] != 0) {
                     val i_20_: Int = i_12_ + anIntArray1424!![i_19_]
                     if (i_20_ < i) {
-                        anIntArray1409!![i_20_] += method806(anIntArray1431!![i_19_], i_14_ * anIntArray1430!![i_19_] shr 15, (aClass197_1418!!.anInt2603))
+                        anIntArray1409!![i_20_] += method806(anIntArray1431!![i_19_], i_14_ * anIntArray1430!![i_19_] shr 15, (aEnvelopeInterpolator_1418!!.anInt2603))
                         anIntArray1431!![i_19_] += ((i_13_ * anIntArray1429!![i_19_] shr 16) + anIntArray1426!![i_19_])
                     }
                 }
             }
         }
-        if (aClass197_1414 != null) {
-            aClass197_1414!!.method1453()
-            aClass197_1420!!.method1453()
+        if (aEnvelopeInterpolator_1414 != null) {
+            aEnvelopeInterpolator_1414!!.method1453()
+            aEnvelopeInterpolator_1420!!.method1453()
             var i_21_ = 0
             val bool = false
             var bool_22_ = true
             for (i_23_ in 0..<i) {
-                val i_24_ = aClass197_1414!!.method1451(i)
-                val i_25_ = aClass197_1420!!.method1451(i)
+                val i_24_ = aEnvelopeInterpolator_1414!!.method1451(i)
+                val i_25_ = aEnvelopeInterpolator_1420!!.method1451(i)
                 val i_26_: Int
-                if (bool_22_) i_26_ = (aClass197_1414!!.anInt2607 + ((aClass197_1414!!.anInt2606 - aClass197_1414!!.anInt2607) * i_24_ shr 8))
-                else i_26_ = (aClass197_1414!!.anInt2607 + ((aClass197_1414!!.anInt2606 - aClass197_1414!!.anInt2607) * i_25_ shr 8))
+                if (bool_22_) i_26_ = (aEnvelopeInterpolator_1414!!.anInt2607 + ((aEnvelopeInterpolator_1414!!.anInt2606 - aEnvelopeInterpolator_1414!!.anInt2607) * i_24_ shr 8))
+                else i_26_ = (aEnvelopeInterpolator_1414!!.anInt2607 + ((aEnvelopeInterpolator_1414!!.anInt2606 - aEnvelopeInterpolator_1414!!.anInt2607) * i_25_ shr 8))
                 i_21_ += 256
                 if (i_21_ >= i_26_) {
                     i_21_ = 0
@@ -161,8 +161,8 @@ class Class80 {
             for (i_28_ in i_27_..<i) anIntArray1409!![i_28_] += anIntArray1409!![i_28_ - i_27_] * anInt1422 / 100
         }
         if (aClass349_1419!!.anIntArray4299[0] > 0 || aClass349_1419!!.anIntArray4299[1] > 0) {
-            aClass197_1417!!.method1453()
-            var i_29_ = aClass197_1417!!.method1451(i + 1)
+            aEnvelopeInterpolator_1417!!.method1453()
+            var i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
             var i_30_ = aClass349_1419!!.method3451(0, i_29_.toFloat() / 65536.0f)
             var i_31_ = aClass349_1419!!.method3451(1, i_29_.toFloat() / 65536.0f)
             if (i >= i_30_ + i_31_) {
@@ -174,7 +174,7 @@ class Class80 {
                     for (i_35_ in 0..<i_30_) i_34_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_35_]).toLong() * (Class349.anIntArrayArray4301!![0]!![i_35_]).toLong()) shr 16).toInt()
                     for (i_36_ in 0..<i_32_) i_34_ -= ((anIntArray1409!![i_32_ - 1 - i_36_].toLong() * (Class349.anIntArrayArray4301!![1]!![i_36_]).toLong()) shr 16).toInt()
                     anIntArray1409!![i_32_] = i_34_
-                    i_29_ = aClass197_1417!!.method1451(i + 1)
+                    i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
                     i_32_++
                 }
                 i_33_ = 128
@@ -185,7 +185,7 @@ class Class80 {
                         for (i_38_ in 0..<i_30_) i_37_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_38_]).toLong() * (Class349.anIntArrayArray4301!![0]!![i_38_]).toLong()) shr 16).toInt()
                         for (i_39_ in 0..<i_31_) i_37_ -= (((anIntArray1409!![i_32_ - 1 - i_39_]).toLong() * (Class349.anIntArrayArray4301!![1]!![i_39_]).toLong()) shr 16).toInt()
                         anIntArray1409!![i_32_] = i_37_
-                        i_29_ = aClass197_1417!!.method1451(i + 1)
+                        i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
                         i_32_++
                     }
                     if (i_32_ >= i - i_30_) break
@@ -198,7 +198,7 @@ class Class80 {
                     for (i_41_ in i_32_ + i_30_ - i..<i_30_) i_40_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_41_]).toLong() * (Class349.anIntArrayArray4301!![0]!![i_41_]).toLong()) shr 16).toInt()
                     for (i_42_ in 0..<i_31_) i_40_ -= ((anIntArray1409!![i_32_ - 1 - i_42_].toLong() * (Class349.anIntArrayArray4301!![1]!![i_42_]).toLong()) shr 16).toInt()
                     anIntArray1409!![i_32_] = i_40_
-                    i_29_ = aClass197_1417!!.method1451(i + 1)
+                    i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
                     i_32_++
                 }
             }
