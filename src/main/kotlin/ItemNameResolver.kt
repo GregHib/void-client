@@ -6,7 +6,7 @@ class ItemNameResolver : Interface15 {
         try {
             anInt4996++
             if (RandomAccessFileOnDisk.aRectangleRegion_3044 == rectangleRegion) {
-                val class117 = Class348_Sub7.aClass33_6653!!.method337(true, `is`!![0])
+                val class117 = Class348_Sub7.aCacheArchiveIndexLoader_6653!!.method337(true, `is`!![0])
                 return class117.method1074(l.toInt(), 91)
             }
             if (Texture2DProvider.aRectangleRegion_6321 == rectangleRegion || ShaderProgram.aRectangleRegion_7274 == rectangleRegion) {
@@ -14,7 +14,7 @@ class ItemNameResolver : Interface15 {
                 return class213.aString2795
             }
             if (i != 1) method54(85, -41L, null, null)
-            if (rectangleRegion == Class348_Sub42_Sub5.aRectangleRegion_9530 || rectangleRegion == Class348_Sub49_Sub1.aRectangleRegion_9748 || Class71.aRectangleRegion_1213 == rectangleRegion) return Class348_Sub7.aClass33_6653!!.method337(true, `is`!![0]).method1074(l.toInt(), i xor 0x48)
+            if (rectangleRegion == Class348_Sub42_Sub5.aRectangleRegion_9530 || rectangleRegion == Class348_Sub49_Sub1.aRectangleRegion_9748 || Class71.aRectangleRegion_1213 == rectangleRegion) return Class348_Sub7.aCacheArchiveIndexLoader_6653!!.method337(true, `is`!![0]).method1074(l.toInt(), i xor 0x48)
             return null
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("hu.A(" + i + ',' + l + ',' + (if (rectangleRegion != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))

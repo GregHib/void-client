@@ -183,7 +183,7 @@ object ClientLoadStateMachine {
             ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aNpcDefinitionCache_5558 = NpcDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
-            Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, VideoAdChecker.aClass45_3183)
+            Class348_Sub7.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, VideoAdChecker.aClass45_3183)
             RenderConfigFactory.aLocDefinitionCache_2979 = LocDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class362.aParticleDefLoader_4460 = ParticleDefLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class73.aModelDefinitionCache_4782 = ModelDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)

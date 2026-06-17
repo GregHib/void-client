@@ -16,8 +16,8 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
             anInt6331 = i_0_
             anInt6333 = i
         } else {
-            anInt6333 = Class33.method340(i, 108.toByte())
-            anInt6331 = Class33.method340(i_0_, 108.toByte())
+            anInt6333 = CacheArchiveIndexLoader.method340(i, 108.toByte())
+            anInt6331 = CacheArchiveIndexLoader.method340(i_0_, 108.toByte())
         }
         if (!bool) anIDirect3DTexture6332 = this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 1, 0, 21, 1)
         else anIDirect3DTexture6332 = this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 0, 1024, 21, 1)
@@ -43,8 +43,8 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
             anInt6333 = i
             anInt6331 = i_6_
         } else {
-            anInt6333 = Class33.method340(i, 108.toByte())
-            anInt6331 = Class33.method340(i_6_, 108.toByte())
+            anInt6333 = CacheArchiveIndexLoader.method340(i, 108.toByte())
+            anInt6331 = CacheArchiveIndexLoader.method340(i_6_, 108.toByte())
         }
         anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(i, i_6_, 1, 0, method3958(22, this.aClass68_3895, this.aTextureFormatInfo_3896), 1))
     }
@@ -89,8 +89,8 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
             anInt6333 = i
             anInt6331 = i_16_
         } else {
-            anInt6333 = Class33.method340(i, 108.toByte())
-            anInt6331 = Class33.method340(i_16_, 108.toByte())
+            anInt6333 = CacheArchiveIndexLoader.method340(i, 108.toByte())
+            anInt6331 = CacheArchiveIndexLoader.method340(i_16_, 108.toByte())
         }
         if (bool) anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 0, 1024, method3958(22, Class68.aClass68_1183, this.aTextureFormatInfo_3896), 1))
         else anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 1, 0, method3958(22, Class68.aClass68_1183, this.aTextureFormatInfo_3896), 1))

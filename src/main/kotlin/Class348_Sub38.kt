@@ -1,4 +1,4 @@
-import Class33.Companion.method340
+import CacheArchiveIndexLoader.Companion.method340
 import jaclib.memory.Stream
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt

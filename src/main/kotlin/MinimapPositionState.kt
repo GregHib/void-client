@@ -2,7 +2,7 @@ import DelegatingRenderCanvas.Companion.method119
 import MinimapDrawController.method950
 import ScriptCompilerThread.Companion.method1053
 import SizeBoundedSoftCache.Companion.method1343
-import Class33.Companion.method338
+import CacheArchiveIndexLoader.Companion.method338
 import Class5_Sub2.Companion.method198
 import Class75_Sub1.method769
 import Class82.Companion.method814

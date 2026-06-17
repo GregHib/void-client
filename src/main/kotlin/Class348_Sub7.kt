@@ -16,7 +16,7 @@ class Class348_Sub7 internal constructor(@JvmField var anInt6649: Int, @JvmField
         @JvmField
         var anInt6652: Int = 0
         @JvmField
-        var aClass33_6653: Class33? = null
+        var aCacheArchiveIndexLoader_6653: CacheArchiveIndexLoader? = null
 
         @JvmStatic
         fun method2772(i: Int, i_0_: Byte) {
@@ -38,7 +38,7 @@ class Class348_Sub7 internal constructor(@JvmField var anInt6649: Int, @JvmField
         fun method2773(i: Int) {
             aSpriteImage_6643 = null
             aRenderConfigFactory_6644 = null
-            if (i == 0) aClass33_6653 = null
+            if (i == 0) aCacheArchiveIndexLoader_6653 = null
         }
     }
 }

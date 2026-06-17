@@ -75,7 +75,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
                 if (i_3_.toInt() != 12) method3134(9)
                 anInt9418++
                 if (!var_ha_Sub2!!.aBoolean7793 && (!AsyncTaskHandle.method1436(-74, i_2_) || !AsyncTaskHandle.method1436(127, i_1_))) {
-                    if (!var_ha_Sub2.aBoolean7837) return (GlTexture2DRegion(var_ha_Sub2, i_2_, i_1_, Class33.method340(i_2_, 108.toByte()), Class33.method340(i_1_, 108.toByte()), `is`))
+                    if (!var_ha_Sub2.aBoolean7837) return (GlTexture2DRegion(var_ha_Sub2, i_2_, i_1_, CacheArchiveIndexLoader.method340(i_2_, 108.toByte()), CacheArchiveIndexLoader.method340(i_1_, 108.toByte()), `is`))
                     return GlTexture2DRegion(var_ha_Sub2, 34037, i_2_, i_1_, bool, `is`, i_0_, i)
                 }
                 return GlTexture2DRegion(var_ha_Sub2, 3553, i_2_, i_1_, bool, `is`, i_0_, i)

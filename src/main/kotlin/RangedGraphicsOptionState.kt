@@ -95,7 +95,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
             var i_7_ = ScriptCompilerThread.method1053(3112)
             if (i_7_ == -1) i_7_ = Class362.anInt4458
             if (i_7_ == -1) i_7_ = Class348_Sub42_Sub16_Sub1.anInt10447
-            Class33.method338(0, i_7_)
+            CacheArchiveIndexLoader.method338(0, i_7_)
             Class348_Sub51.anInt7267 = 0
         }
 

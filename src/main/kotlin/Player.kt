@@ -427,7 +427,7 @@ class Player : ProjectedGroundDecor() {
         else `is` = ParticleDetailOptionState.anIntArray6021
         if (i != 255) anInt10567 = 81
         if (`is` != null && `is`[aByte10552.toInt()] != -1) {
-            val class117 = Class348_Sub7.aClass33_6653!!.method337(true, `is`[aByte10552.toInt()])
+            val class117 = Class348_Sub7.aCacheArchiveIndexLoader_6653!!.method337(true, `is`[aByte10552.toInt()])
             if (class117.aChar1779.code != 115) {
                 LinkedListIterator.method1242("gdn1", Throwable(), 15004)
                 `is`[aByte10552.toInt()] = -1

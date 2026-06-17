@@ -124,7 +124,7 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
             anInt5809++
             if (i_37_ != 34037) aClass341_5808 = null
             if (var_ha_Sub2.aBoolean7793 || AsyncTaskHandle.method1436(-20, i_38_) && AsyncTaskHandle.method1436(-119, i_40_)) return GlTexture2DRegion(var_ha_Sub2, 3553, i, i_39_, i_38_, i_40_, true)
-            if (!var_ha_Sub2.aBoolean7837) return GlTexture2DRegion(var_ha_Sub2, i, i_39_, i_38_, i_40_, Class33.method340(i_38_, 108.toByte()), Class33.method340(i_40_, 108.toByte()), true)
+            if (!var_ha_Sub2.aBoolean7837) return GlTexture2DRegion(var_ha_Sub2, i, i_39_, i_38_, i_40_, CacheArchiveIndexLoader.method340(i_38_, 108.toByte()), CacheArchiveIndexLoader.method340(i_40_, 108.toByte()), true)
             return GlTexture2DRegion(var_ha_Sub2, 34037, i, i_39_, i_38_, i_40_, true)
         }
 

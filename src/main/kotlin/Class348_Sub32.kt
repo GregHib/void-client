@@ -1,4 +1,4 @@
-import Class33.Companion.method340
+import CacheArchiveIndexLoader.Companion.method340
 import kotlin.math.sqrt
 
 /* Class348_Sub32 - Decompiled by JODE

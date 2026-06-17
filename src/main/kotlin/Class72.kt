@@ -1,4 +1,4 @@
-import Class33.Companion.method340
+import CacheArchiveIndexLoader.Companion.method340
 import Class348_Sub40_Sub1.Companion.method3051
 import kotlin.math.asin
 import kotlin.math.atan2

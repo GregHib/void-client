@@ -1,4 +1,4 @@
-import Class33.Companion.method340
+import CacheArchiveIndexLoader.Companion.method340
 
 /* Class79 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

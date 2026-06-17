@@ -224,7 +224,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7633 = 0
             ProjectionCameraTransform.anInt5773 = 0
             Class348_Sub40_Sub26.anInt9350 = 0
-            Class33.anInt461 = 0
+            CacheArchiveIndexLoader.anInt461 = 0
             Class5_Sub3.anInt8377 = 0
             NodeDeque.anInt3330 = 0
             Class348_Sub40_Sub26.anInt9353 = 0
@@ -383,7 +383,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LocalizedText.anInt3482 = 0
             Class60.anInt1097 = 0
             LocTypeDefinition.anInt4013 = 0
-            Class33.anInt457 = 0
+            CacheArchiveIndexLoader.anInt457 = 0
             Class59_Sub2_Sub2.anInt8677 = 0
             Class85.anInt1466 = 0
             Class373_Sub2.anInt7439 = 0
@@ -1315,7 +1315,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CompositeNpcModelBuilder.anInt2090 = 0
             Class367_Sub11.anInt7393 = 0
             NativeRenderer.anInt8027 = 0
-            Class33.anInt456 = 0
+            CacheArchiveIndexLoader.anInt456 = 0
             Class348_Sub49_Sub2.anInt9758 = 0
             NativeRenderer.anInt8037 = 0
             Class348_Sub49.anInt7145 = 0
@@ -1953,7 +1953,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class373_Sub2.anInt7447 = 0
             Class6.anInt153 = 0
             Class64_Sub3.anInt5651 = 0
-            Class33.anInt459 = 0
+            CacheArchiveIndexLoader.anInt459 = 0
             DynamicSceneObjectEntity.anInt10197 = 0
             Class64_Sub3.anInt5631 = 0
             ArchiveResourceProvider.anInt6353 = 0
