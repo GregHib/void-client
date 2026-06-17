@@ -40,7 +40,7 @@ object GroundItemRenderState {
             val i_16_ = f_13_.toInt() shr 9
             val i_17_ = f_15_.toInt() shr 9
             if (i_16_ > 0 && i_17_ > 0 && Class367_Sub4.anInt7319 > i_16_ && (i_17_ < Class348_Sub40_Sub3.anInt9109)) {
-                var i_18_ = (Class132.aPlayer_1907!!.plane).toInt()
+                var i_18_ = (LocalPlayerState.aPlayer_1907!!.plane).toInt()
                 if (i_18_ < 3 && ((Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_16_]!![i_17_]).toInt() and 0x2) != 0) i_18_++
                 val i_19_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i_18_]!!.method3986(f_13_.toInt(), f_15_.toInt(), 109.toByte())
                 if (f_14_ > i_19_.toFloat()) {

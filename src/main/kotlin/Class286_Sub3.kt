@@ -230,7 +230,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                     var string = class79.aString1372
                     if (class79.anInt1361 != 0) {
                         val string_15_ = (if (Class14_Sub4.aClass230_8638 != Class348_Sub42_Sub8_Sub2.aClass230_10434) Class274.aClass274_3511!!.method2063(Class348_Sub33.anInt6967, 544) else Class274.aClass274_3513!!.method2063(Class348_Sub33.anInt6967, 544))
-                        string += ((Class14_Sub4.method250((Class132.aPlayer_1907!!.anInt10516), true, class79.anInt1361)) + " (" + string_15_ + class79.anInt1361 + ")")
+                        string += ((Class14_Sub4.method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, class79.anInt1361)) + " (" + string_15_ + class79.anInt1361 + ")")
                     }
                     if (RenderNode.aBoolean9722 && !bool) {
                         val class254 = (if (Class246.anInt3176 == -1) null else ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364))
@@ -263,7 +263,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                             for (i in 4 downTo 0) {
                                 if (strings[i] != null && (strings[i].equals(Class274.aClass274_3506!!.method2063(Class348_Sub33.anInt6967, 544), ignoreCase = true))) {
                                     var i_18_: Short = 0
-                                    if ((Class132.aPlayer_1907!!.anInt10516) < class79.anInt1361) i_18_ = 2000.toShort()
+                                    if ((LocalPlayerState.aPlayer_1907!!.anInt10516) < class79.anInt1361) i_18_ = 2000.toShort()
                                     var i_19_: Short = 0
                                     if (i == 0) i_19_ = 25.toShort()
                                     if (i == 1) i_19_ = 20.toShort()
