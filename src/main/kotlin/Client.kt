@@ -192,7 +192,7 @@ import CollisionMapAccessor.method2064
 import CollisionMapAccessor.method2065
 import CollisionMapAccessor.method2066
 import LocTypeConfig.Companion.method2071
-import Class279_Sub2.Companion.method2097
+import NativeSoundOutput.Companion.method2097
 import Class28.Companion.method318
 import Class280.Companion.method2104
 import Class281.method2107
@@ -1662,7 +1662,7 @@ class Client : GameAppletFrame() {
             val l = (BufferPositionTracker.method1857((-45).toByte()) / 1000000L + -Class348_Sub42_Sub2.aLong8573)
             Class348_Sub42_Sub2.aLong8573 = BufferPositionTracker.method1857((-45).toByte()) / 1000000L
             val bool_118_ = method2163(!bool)
-            if (bool_118_ && Class74.aBoolean1236 && Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042!!.method2087(-115)
+            if (bool_118_ && Class74.aBoolean1236 && Class348_Sub40.aSoundChannelMixer_7042 != null) Class348_Sub40.aSoundChannelMixer_7042!!.method2087(-115)
             if (WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {
                 if ((Class348_Sub16_Sub2.aLong8866 != 0L) && method599(-98) > Class348_Sub16_Sub2.aLong8866) method830(method3229(-128), Class321.anInt4005, 102.toByte(), false, Class348_Sub40_Sub25.anInt9335)
                 else if (!Class348_Sub8.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)

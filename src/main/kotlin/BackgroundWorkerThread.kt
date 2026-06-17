@@ -7,7 +7,7 @@ import kotlin.concurrent.Volatile
 class BackgroundWorkerThread : Runnable {
     @JvmField
     @Volatile
-    var aClass279Array3218: Array<Class279?> = arrayOfNulls<Class279>(2)
+    var aSoundChannelMixerArray3218s: Array<SoundChannelMixer?> = arrayOfNulls<SoundChannelMixer>(2)
 
     @JvmField
     @Volatile
@@ -24,7 +24,7 @@ class BackgroundWorkerThread : Runnable {
         try {
             while (!this.aBoolean3221) {
                 for (i in 0..1) {
-                    val class279 = this.aClass279Array3218[i]
+                    val class279 = this.aSoundChannelMixerArray3218s[i]
                     if (class279 != null) class279.method2084(-6858)
                 }
                 Class286_Sub5.method2161((-107).toByte(), 10L)

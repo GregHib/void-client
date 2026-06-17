@@ -4,7 +4,10 @@ import Class62.method599
 import java.awt.Component
 import kotlin.math.min
 
-open class Class279 {
+/*
+ * Class279
+ */
+open class SoundChannelMixer {
     private val anInt3601 = 32
     private var aLong3602: Long
     var anIntArray3603: IntArray? = null
@@ -234,8 +237,8 @@ open class Class279 {
         if (ParticleDefLoader.aBackgroundWorkerThread_2462 != null) {
             var bool_35_ = true
             for (i in 0..1) {
-                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i] === this) ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i] = null
-                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i] != null) bool_35_ = false
+                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] === this) ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] = null
+                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] != null) bool_35_ = false
             }
             if (bool_35_) {
                 ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3221 = true

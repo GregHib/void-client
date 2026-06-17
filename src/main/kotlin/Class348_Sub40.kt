@@ -117,7 +117,7 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
         @JvmField
         var aClass356_7041: Class356? = Class356(32)
         @JvmField
-        var aClass279_7042: Class279? = null
+        var aSoundChannelMixer_7042: SoundChannelMixer? = null
         @JvmField
         var anInt7043: Int = 0
         @JvmField
@@ -154,7 +154,7 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
 
         @JvmStatic
         fun method3040(bool: Boolean) {
-            aClass279_7042 = null
+            aSoundChannelMixer_7042 = null
             aClass356_7041 = null
         }
 

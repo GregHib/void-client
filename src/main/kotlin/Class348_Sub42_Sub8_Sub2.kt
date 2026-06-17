@@ -1351,7 +1351,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_170_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_171_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_172_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                Class279.method2090(i_169_, i_172_, false, (-35).toByte(), i_171_, i_170_, i)
+                SoundChannelMixer.method2090(i_169_, i_172_, false, (-35).toByte(), i_171_, i_170_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1570,7 +1570,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_204_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_205_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_206_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                Class279.method2090(i_204_, 256, true, (-35).toByte(), i_206_, i_205_, i)
+                SoundChannelMixer.method2090(i_204_, 256, true, (-35).toByte(), i_206_, i_205_, i)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

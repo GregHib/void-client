@@ -3859,12 +3859,12 @@ object Class66 {
                 }
                 if (i == 3206) {
                     anInt1173 -= 4
-                    Class279.method2090(anIntArray1149!![anInt1173 + 1], 256, false, (-35).toByte(), anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173])
+                    SoundChannelMixer.method2090(anIntArray1149!![anInt1173 + 1], 256, false, (-35).toByte(), anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173])
                     return
                 }
                 if (i == 3207) {
                     anInt1173 -= 4
-                    Class279.method2090(anIntArray1149!![anInt1173 + 1], 256, true, (-35).toByte(), anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173])
+                    SoundChannelMixer.method2090(anIntArray1149!![anInt1173 + 1], 256, true, (-35).toByte(), anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173])
                     return
                 }
                 if (i == 3208) {
@@ -3874,7 +3874,7 @@ object Class66 {
                 }
                 if (i == 3209) {
                     anInt1173 -= 5
-                    Class279.method2090(anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173 + 4], false, (-35).toByte(), anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173])
+                    SoundChannelMixer.method2090(anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173 + 4], false, (-35).toByte(), anIntArray1149!![anInt1173 + 3], anIntArray1149!![anInt1173 + 2], anIntArray1149!![anInt1173])
                     return
                 }
             } else if (i < 3400) {

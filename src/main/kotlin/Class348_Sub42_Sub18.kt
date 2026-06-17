@@ -13,9 +13,9 @@ class Class348_Sub42_Sub18 internal constructor(var aClass318_Sub1_Sub3_Sub5_968
 
         fun method3273(bool: Boolean, i: Int, class348_sub16_sub3: Class348_Sub16_Sub3?) {
             if (i > -55) method3275(117, -54, 56)
-            Class348_Sub40.aClass279_7042!!.method2088(false, class348_sub16_sub3)
+            Class348_Sub40.aSoundChannelMixer_7042!!.method2088(false, class348_sub16_sub3)
             anInt9681++
-            if (bool) method2510(ModelFacePriorityNode.aClass45_1878, class348_sub16_sub3, LightingOptionState.aClass45_5878, false, Class348_Sub40.aClass279_7042, HoverActionEntry.aClass45_1815)
+            if (bool) method2510(ModelFacePriorityNode.aClass45_1878, class348_sub16_sub3, LightingOptionState.aClass45_5878, false, Class348_Sub40.aSoundChannelMixer_7042, HoverActionEntry.aClass45_1815)
         }
 
         @JvmStatic

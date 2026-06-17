@@ -22,7 +22,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
         @JvmField
         var anInt2590: Int = 0
 
-        fun method1439(i: Int, class297: Class297?, component: Component?, i_0_: Int, i_1_: Int): Class279 {
+        fun method1439(i: Int, class297: Class297?, component: Component?, i_0_: Int, i_1_: Int): SoundChannelMixer {
             var i = i
             try {
                 anInt2583++
@@ -30,27 +30,27 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
                 require(!(i_0_ < 0 || i_0_ >= 2))
                 if (i < 256) i = 256
                 try {
-                    val class279: Class279 = Class279_Sub1()
-                    class279.anInt3620 = i
-                    class279.anIntArray3603 = IntArray((if (Class282.aBoolean3652) 2 else 1) * 256)
-                    class279.method2095(component)
-                    class279.anInt3613 = (i and 0x3ff.inv()) + 1024
-                    if (class279.anInt3613 > 16384) class279.anInt3613 = 16384
-                    class279.method2082(class279.anInt3613)
+                    val soundChannelMixer: SoundChannelMixer = JavaSoundOutput()
+                    soundChannelMixer.anInt3620 = i
+                    soundChannelMixer.anIntArray3603 = IntArray((if (Class282.aBoolean3652) 2 else 1) * 256)
+                    soundChannelMixer.method2095(component)
+                    soundChannelMixer.anInt3613 = (i and 0x3ff.inv()) + 1024
+                    if (soundChannelMixer.anInt3613 > 16384) soundChannelMixer.anInt3613 = 16384
+                    soundChannelMixer.method2082(soundChannelMixer.anInt3613)
                     if (CameraConfigDefinition.anInt3248 > 0 && ParticleDefLoader.aBackgroundWorkerThread_2462 == null) {
                         ParticleDefLoader.aBackgroundWorkerThread_2462 = BackgroundWorkerThread()
                         ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass297_3228 = class297
                         class297!!.method2236(ParticleDefLoader.aBackgroundWorkerThread_2462, -10240, CameraConfigDefinition.anInt3248)
                     }
                     if (ParticleDefLoader.aBackgroundWorkerThread_2462 != null) {
-                        require((ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i_0_]) == null)
-                        ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i_0_] = class279
+                        require((ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i_0_]) == null)
+                        ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i_0_] = soundChannelMixer
                     }
                     if (i_1_ != 7) method1440(107)
-                    return class279
+                    return soundChannelMixer
                 } catch (throwable: Throwable) {
                     try {
-                        val class279_sub2 = Class279_Sub2(class297!!, i_0_)
+                        val class279_sub2 = NativeSoundOutput(class297!!, i_0_)
                         class279_sub2.anInt3620 = i
                         class279_sub2.anIntArray3603 = IntArray((if (!Class282.aBoolean3652) 1 else 2) * 256)
                         class279_sub2.method2095(component)
@@ -62,12 +62,12 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
                             class297!!.method2236(ParticleDefLoader.aBackgroundWorkerThread_2462, -10240, CameraConfigDefinition.anInt3248)
                         }
                         if (ParticleDefLoader.aBackgroundWorkerThread_2462 != null) {
-                            require((ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i_0_]) == null)
-                            ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass279Array3218[i_0_] = class279_sub2
+                            require((ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i_0_]) == null)
+                            ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i_0_] = class279_sub2
                         }
                         return class279_sub2
                     } catch (throwable_2_: Throwable) {
-                        return Class279()
+                        return SoundChannelMixer()
                     }
                 }
             } catch (runtimeexception: RuntimeException) {

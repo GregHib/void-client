@@ -32,7 +32,7 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
                     }
                     i_2_++
                 }
-                Class279.method2092(-1 + anInt3852, 0, `is`, -120, aClass72Array3865 as? Array<Any?>)
+                SoundChannelMixer.method2092(-1 + anInt3852, 0, `is`, -120, aClass72Array3865 as? Array<Any?>)
             }
             aBoolean3857 = true
         }

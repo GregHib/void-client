@@ -4,7 +4,7 @@ import java.awt.Component
 import java.util.*
 import javax.sound.sampled.*
 
-class Class279_Sub1 : Class279() {
+class JavaSoundOutput : SoundChannelMixer() {
     private var anInt6175 = 0
     private var aByteArray6176: ByteArray = byteArrayOf()
     private var aSourceDataLine6177: SourceDataLine? = null

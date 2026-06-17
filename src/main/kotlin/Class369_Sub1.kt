@@ -31,9 +31,9 @@ class Class369_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, class341: Cla
 
         @JvmStatic
         fun method3570(bool: Boolean) {
-            if (Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042!!.method2084(-6858)
+            if (Class348_Sub40.aSoundChannelMixer_7042 != null) Class348_Sub40.aSoundChannelMixer_7042!!.method2084(-6858)
             anInt8579++
-            if (VarbitDefLoader.aClass279_2596 != null) VarbitDefLoader.aClass279_2596!!.method2084(-6858)
+            if (VarbitDefLoader.aSoundChannelMixer_2596 != null) VarbitDefLoader.aSoundChannelMixer_2596!!.method2084(-6858)
             if (bool != false) anInt8583 = 30
         }
     }

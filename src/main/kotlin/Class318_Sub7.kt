@@ -284,9 +284,9 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
         }
 
         @JvmStatic
-        fun method2510(class45: Class45?, class348_sub16_sub3: Class348_Sub16_Sub3?, class45_5_: Class45?, bool: Boolean, class279: Class279?, class45_6_: Class45?): Boolean {
+        fun method2510(class45: Class45?, class348_sub16_sub3: Class348_Sub16_Sub3?, class45_5_: Class45?, bool: Boolean, soundChannelMixer: SoundChannelMixer?, class45_6_: Class45?): Boolean {
             try {
-                Class318_Sub1_Sub4.aClass279_8764 = class279
+                Class318_Sub1_Sub4.aSoundChannelMixer_8764 = soundChannelMixer
                 Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                 Class43.aClass45_611 = class45
                 Class367_Sub9.aClass45_7371 = class45_6_
@@ -297,7 +297,7 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                 for (i in 0..15) Class367_Sub3.anIntArray7299!![i] = 255
                 return true
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rba.G(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (class45_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (class279 != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("rba.G(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (class45_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (soundChannelMixer != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ')'))
             }
         }
 

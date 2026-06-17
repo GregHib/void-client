@@ -145,7 +145,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class354.anInt4357 = 0
             Class367_Sub8.anInt7360 = 0
             Class348_Sub49_Sub1.anInt9744 = 0
-            Class279.anInt3609 = 0
+            SoundChannelMixer.anInt3609 = 0
             GlSpriteRenderer.anInt8426 = 0
             ParticleDefLoader.anInt2460 = 0
             Class88.anInt1493 = 0
@@ -395,7 +395,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7603 = 0
             Class377.anInt9822 = 0
             OpenGlRenderer.anInt7536 = 0
-            Class279.anInt3611 = 0
+            SoundChannelMixer.anInt3611 = 0
             NativeVertexBuffer.anInt4826 = 0
             ParticleSortRenderer.anInt3017 = 0
             NativeRenderer.anInt7904 = 0
@@ -458,7 +458,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             DoublyLinkedNodeList.anInt3158 = 0
             Class88.anInt1492 = 0
             VarpStore.anInt5073 = 0
-            Class279.anInt3608 = 0
+            SoundChannelMixer.anInt3608 = 0
             Class346_Sub1.anInt6532 = 0
             OpenGlTerrainTile.anInt8238 = 0
             Class315.anInt3951 = 0
@@ -772,7 +772,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SeqDefinitionCache.anInt3346 = 0
             Class5.anInt4628 = 0
             Gl2dTexture.anInt8610 = 0
-            Class279.anInt3600 = 0
+            SoundChannelMixer.anInt3600 = 0
             Class286_Sub3.anInt6230 = 0
             Class314_Sub1.anInt6359 = 0
             NativeTerrainTile.anInt8289 = 0
@@ -792,7 +792,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class45.anInt639 = 0
             Class78.anInt1313 = 0
             Class309.anInt4810 = 0
-            Class279.anInt3605 = 0
+            SoundChannelMixer.anInt3605 = 0
             NoOpGraphicsOptionState.anInt6041 = 0
             GameAppletFrame.anInt1 = 0
             Class64.anInt1135 = 0
@@ -848,7 +848,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ProjectileFactory.anInt2898 = 0
             Class348_Sub49.anInt7201 = 0
             SeqDefinitionCache.anInt3358 = 0
-            Class279.anInt3597 = 0
+            SoundChannelMixer.anInt3597 = 0
             Class286_Sub6.anInt6267 = 0
             DetailLevelOptionState.anInt6124 = 0
             CircleDrawer.anInt2685 = 0
@@ -1534,7 +1534,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub4_Sub1.anInt10075 = 0
             GlElementArrayBuffer.anInt4840 = 0
             RandomAccessFileOnDisk.anInt3043 = 0
-            Class279.anInt3594 = 0
+            SoundChannelMixer.anInt3594 = 0
             Class348_Sub40_Sub33.anInt9426 = 0
             NativeTerrainTile.anInt8288 = 0
             OpenGlRenderNode.anInt10491 = 0
@@ -1620,7 +1620,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub16.anInt9228 = 0
             ObjectSpawnDecoder.anInt1805 = 0
             Class68.anInt1180 = 0
-            Class279.anInt3606 = 0
+            SoundChannelMixer.anInt3606 = 0
             InputSettingsState.anInt1760 = 0
             Class280.anInt3633 = 0
             Class318_Sub1_Sub5_Sub1.anInt10135 = 0
@@ -1855,7 +1855,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CameraNodeList.anInt1740 = 0
             Class64_Sub2.anInt5469 = 0
             NativeRenderer.anInt7929 = 0
-            Class279.anInt3598 = 0
+            SoundChannelMixer.anInt3598 = 0
             Class42.anInt579 = 0
             DoublyLinkedNodeList.anInt3164 = 0
             ModelDefinitionLoader.anInt2055 = 0
@@ -2019,7 +2019,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub8.anInt9547 = 0
             OpenGlRenderer.anInt7582 = 0
             NativeRenderer.anInt7988 = 0
-            Class279.anInt3596 = 0
+            SoundChannelMixer.anInt3596 = 0
             Class342.anInt4241 = 0
             FloatCameraTransform.anInt5741 = 0
             Class318_Sub1_Sub5.anInt8779 = 0
@@ -2356,7 +2356,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class59_Sub1.anInt5292 = 0
             SocketStreamWorker.anInt2651 = 0
             Class348_Sub40_Sub26.anInt9348 = 0
-            Class279.anInt3595 = 0
+            SoundChannelMixer.anInt3595 = 0
             Class348_Sub5.anInt6626 = 0
             TerrainTileGeometry.anInt3007 = 0
             SpriteStore.anInt372 = 0
@@ -2810,7 +2810,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             VarpStore.anInt5075 = 0
             Class5_Sub1.anInt8340 = 0
             Class369_Sub3.anInt8594 = 0
-            Class279.anInt3599 = 0
+            SoundChannelMixer.anInt3599 = 0
             Class50_Sub1.anInt5210 = 0
             NativeIndexBuffer.anInt4700 = 0
             BackgroundWorkerThread.anInt3219 = 0
@@ -3113,7 +3113,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class331.anInt4137 = 0
             WorldMapScene.anInt3110 = 0
             Class348_Sub40_Sub31.anInt9409 = 0
-            Class279.anInt3612 = 0
+            SoundChannelMixer.anInt3612 = 0
             Class348_Sub16_Sub2.anInt8867 = 0
             Class367_Sub9.anInt7372 = 0
             Class318_Sub1_Sub5.anInt8777 = 0
@@ -3948,7 +3948,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class361.anInt4450 = 0
             Class318_Sub1_Sub3_Sub3.anInt10256 = 0
             Class299_Sub1_Sub2.anInt8703 = 0
-            Class279.anInt3607 = 0
+            SoundChannelMixer.anInt3607 = 0
             WidgetDefinition.anInt246 = 0
             CollisionMapRegion.anInt1723 = 0
             Class348_Sub40_Sub35.anInt9440 = 0

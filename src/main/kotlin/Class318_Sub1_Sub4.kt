@@ -63,7 +63,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
         @JvmField
         var anInt8763: Int = 0
         @JvmField
-        var aClass279_8764: Class279? = null
+        var aSoundChannelMixer_8764: SoundChannelMixer? = null
         @JvmField
         var anInt8765: Int = 0
 
@@ -133,7 +133,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
         fun method2479(i: Int) {
             if (i == 19424) {
                 aBigInteger8762 = null
-                aClass279_8764 = null
+                aSoundChannelMixer_8764 = null
             }
         }
 

@@ -110,7 +110,7 @@ class CompassSmoother {
                 if (i_3_ > 8) {
                     var i_8_ = 256
                     if (widgetDefinition.anIntArray236 != null && widgetDefinition.anIntArray265 != null) i_8_ = Class299_Sub1.method2257((widgetDefinition.anIntArray265!![i]), (widgetDefinition.anIntArray236!![i]), (-125).toByte())
-                    if (widgetDefinition.aBoolean268) Class279.method2090(i_7_, i_8_, false, (-35).toByte(), 255, 0, i_5_)
+                    if (widgetDefinition.aBoolean268) SoundChannelMixer.method2090(i_7_, i_8_, false, (-35).toByte(), 255, 0, i_5_)
                     else Class348_Sub20.method2947(true, 255, i_5_, i_7_, 0, i_8_)
                 }
             }

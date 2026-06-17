@@ -39,7 +39,7 @@ class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
         fun method366(objects: Array<Any?>?, i: Byte, `is`: IntArray?) {
             do {
                 try {
-                    Class279.method2092(`is`!!.size - 1, 0, `is`, -119, objects)
+                    SoundChannelMixer.method2092(`is`!!.size - 1, 0, `is`, -119, objects)
                     anInt514++
                     if (i <= -97) break
                     method367(-67)

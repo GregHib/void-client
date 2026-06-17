@@ -1,6 +1,6 @@
 import java.awt.Component
 
-class Class279_Sub2 internal constructor(class297: Class297, private val anInt6181: Int) : Class279() {
+class NativeSoundOutput internal constructor(class297: Class297, private val anInt6181: Int) : SoundChannelMixer() {
     override fun method2083() {
         anInterface20_6182!!.method77(98.toByte(), anInt6181)
     }
