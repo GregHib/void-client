@@ -240,7 +240,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             ModelDefinition.anInt1861 = 0
             Class348_Sub18.anInt6822 = 0
             Class219.anInt2865 = 0
-            Class13.anInt219 = 0
+            MinimapRectClipper.anInt219 = 0
             Class55.anInt994 = 0
             NativeTerrainTile.anInt8290 = 0
             Class64_Sub3.anInt5577 = 0

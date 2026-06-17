@@ -270,10 +270,10 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     var i_46_ = 0
                                                     var i_47_ = 0
                                                     while ((i_47_ < 37)) {
-                                                        if ((Class13.aClass314_Sub1Array223!![i_47_]) != null) {
-                                                            i_44_ += (Class13.aClass314_Sub1Array223!![i_47_]!!.method2345(0))
-                                                            i_45_ += (Class13.aClass314_Sub1Array223!![i_47_]!!.method2351(0))
-                                                            i_46_ += (Class13.aClass314_Sub1Array223!![i_47_]!!.method2341(24940))
+                                                        if ((MinimapRectClipper.aClass314_Sub1Array223!![i_47_]) != null) {
+                                                            i_44_ += (MinimapRectClipper.aClass314_Sub1Array223!![i_47_]!!.method2345(0))
+                                                            i_45_ += (MinimapRectClipper.aClass314_Sub1Array223!![i_47_]!!.method2351(0))
+                                                            i_46_ += (MinimapRectClipper.aClass314_Sub1Array223!![i_47_]!!.method2341(24940))
                                                         }
                                                         i_47_++
                                                     }

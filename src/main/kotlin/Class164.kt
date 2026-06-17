@@ -75,9 +75,9 @@ object Class164 {
         }
         if (Class56.aClass56_1024 == Class348_Sub42_Sub15.aClass56_9660) {
             val bool = Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method401(89)
-            var i_2_ = Class13.aClass314_Sub1Array223!![33]!!.method2349(1)
-            i_2_ = i_2_ + Class13.aClass314_Sub1Array223!![if (!Class286_Sub7.aBoolean6289) 32 else 34]!!.method2349(1)
-            i_2_ += Class13.aClass314_Sub1Array223!![13]!!.method2349(1)
+            var i_2_ = MinimapRectClipper.aClass314_Sub1Array223!![33]!!.method2349(1)
+            i_2_ = i_2_ + MinimapRectClipper.aClass314_Sub1Array223!![if (!Class286_Sub7.aBoolean6289) 32 else 34]!!.method2349(1)
+            i_2_ += MinimapRectClipper.aClass314_Sub1Array223!![13]!!.method2349(1)
             i_2_ = i_2_ + (if (!bool) Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method398((-31).toByte()) else 100)
             if (i_2_ != 400) return i_2_ / 4
             Class348_Sub31.anInt6924 = Class286_Sub7.aClass45_6277!!.method389(77)
@@ -152,7 +152,7 @@ object Class164 {
         if (Class56.aClass56_1031 == Class348_Sub42_Sub15.aClass56_9660) {
             var i_8_ = 0
             for (i_9_ in 0..36) {
-                if (Class13.aClass314_Sub1Array223!![i_9_] != null) i_8_ += (Class13.aClass314_Sub1Array223!![i_9_]!!.method2349(i + 28661) * Class8.anIntArray164!![i_9_] / 100)
+                if (MinimapRectClipper.aClass314_Sub1Array223!![i_9_] != null) i_8_ += (MinimapRectClipper.aClass314_Sub1Array223!![i_9_]!!.method2349(i + 28661) * Class8.anIntArray164!![i_9_] / 100)
             }
             if (i_8_ != 100) {
                 if (Class268.anInt3435 < 0) Class268.anInt3435 = i_8_

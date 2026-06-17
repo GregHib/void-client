@@ -114,7 +114,7 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
                 Class367_Sub9.aIntRange_7367,
                 Class131.aIntRange_1901,
                 Class135_Sub1.aIntRange_4707,
-                Class13.aIntRange_220,
+                MinimapRectClipper.aIntRange_220,
                 Class239_Sub24.aIntRange_6089,
                 IOException_Sub1.aIntRange_90,
                 Class252.aIntRange_3240,

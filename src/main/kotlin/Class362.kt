@@ -1,4 +1,4 @@
-import Class13.method226
+import MinimapRectClipper.method226
 import Class16.method260
 import Class348_Sub17.Companion.method2929
 import Class359.Companion.method3490

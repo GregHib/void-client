@@ -33,7 +33,7 @@ import WidgetComponentNode.Companion.method1117
 import ScrollingWidgetComponentNode.Companion.method1120
 import MinimapStateReset.method1123
 import ModelFacePriorityNode.Companion.method1126
-import Class13.method225
+import MinimapRectClipper.method225
 import Class130.Companion.method1127
 import Class130_Sub1.Companion.method1133
 import Class132.method1137
@@ -1565,8 +1565,8 @@ class Client : GameAppletFrame() {
             if (Class367_Sub11.anInt7396 % 50 == 0) {
                 Class348_Sub48.anInt7134 = Class81.anInt1433
                 Class81.anInt1433 = 0
-                Class264.anInt3372 = Class13.anInt221
-                Class13.anInt221 = 0
+                Class264.anInt3372 = MinimapRectClipper.anInt221
+                MinimapRectClipper.anInt221 = 0
             }
             method102(61.toByte())
             if (Class175.aClass340_2327 != null) Class175.aClass340_2327!!.method2670(0)

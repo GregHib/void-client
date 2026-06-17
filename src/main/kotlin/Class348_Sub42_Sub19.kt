@@ -1,4 +1,4 @@
-import Class13.method226
+import MinimapRectClipper.method226
 
 /* Class348_Sub42_Sub19 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

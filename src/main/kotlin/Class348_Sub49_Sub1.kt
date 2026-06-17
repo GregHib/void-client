@@ -92,7 +92,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
             }
             if (Class5_Sub1_Sub1.anInt9930 > 0) {
                 Class167.method1295(Class239_Sub21.aClass318_Sub1Array6066!!, 0, Class5_Sub1_Sub1.anInt9930 - 1)
-                for (i_6_ in 0..<Class5_Sub1_Sub1.anInt9930) Class13.method227(Class239_Sub21.aClass318_Sub1Array6066!![i_6_]!!, true, bool_3_)
+                for (i_6_ in 0..<Class5_Sub1_Sub1.anInt9930) MinimapRectClipper.method227(Class239_Sub21.aClass318_Sub1Array6066!![i_6_]!!, true, bool_3_)
             }
             if (Class318_Sub1_Sub3_Sub3.aBoolean10221) Class9.aRenderer171!!.method3642(0, null)
             if ((i_2_ and 0x2) == 0) {
@@ -153,7 +153,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
             }
             if (Class348_Sub42_Sub3.anInt9504 > 0) {
                 Class67.method718(Class291.aClass318_Sub1Array3737!!, 0, Class348_Sub42_Sub3.anInt9504 - 1)
-                for (i_22_ in 0..<Class348_Sub42_Sub3.anInt9504) Class13.method227(Class291.aClass318_Sub1Array3737!![i_22_]!!, true, bool_3_)
+                for (i_22_ in 0..<Class348_Sub42_Sub3.anInt9504) MinimapRectClipper.method227(Class291.aClass318_Sub1Array3737!![i_22_]!!, true, bool_3_)
             }
         }
 

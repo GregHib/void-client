@@ -1,6 +1,9 @@
 import Class286_Sub4.Companion.method2154
 
-object Class13 {
+/*
+ * Class13
+ */
+object MinimapRectClipper {
     @JvmField
     var anInt219: Int = 0
     @JvmField

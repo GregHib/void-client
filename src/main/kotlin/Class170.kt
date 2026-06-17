@@ -208,7 +208,7 @@ class Class170 : Interface17 {
         fun method1318(i: Int) {
             if (i != -65536) method1310(false)
             for (i_38_ in 0..<AbstractCameraTransform.anInt1597) {
-                val i_39_ = Class13.anIntArray224!![i_38_]
+                val i_39_ = MinimapRectClipper.anIntArray224!![i_38_]
                 val npc = ((Class282.aClass356_3654!!.method3480(i_39_.toLong(), -6008) as Class348_Sub22).aNpc_6859)!!
                 var i_40_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if ((0x10 and i_40_) != 0) i_40_ += Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i xor 0xff00.inv()) shl 8
