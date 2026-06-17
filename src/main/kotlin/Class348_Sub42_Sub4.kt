@@ -1,4 +1,4 @@
-import Class251.Companion.method1916
+import ConfigFlagUtil.Companion.method1916
 import Class264.Companion.method2017
 import Class75_Sub1.method769
 

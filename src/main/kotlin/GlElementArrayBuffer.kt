@@ -33,7 +33,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
     }
 
     override fun method36(i: Byte): Long {
-        if (i < 76) aClass251_4835 = null
+        if (i < 76) aConfigFlagUtil_4835 = null
         anInt4842++
         return 0L
     }
@@ -49,7 +49,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
     companion object {
         var anInt4833: Int = 0
         var anInt4834: Int = 0
-        var aClass251_4835: Class251? = Class251()
+        var aConfigFlagUtil_4835: ConfigFlagUtil? = ConfigFlagUtil()
         var anInt4836: Int = 0
         var anInt4838: Int = 0
         @JvmField
@@ -66,7 +66,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
 
         @JvmStatic
         fun method1155(i: Byte) {
-            aClass251_4835 = null
+            aConfigFlagUtil_4835 = null
             aServerConnectionInfo_4839 = null
             val i_2_ = -29 / ((i - -49) / 43)
             aClass45_4843 = null

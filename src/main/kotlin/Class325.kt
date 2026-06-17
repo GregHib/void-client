@@ -710,7 +710,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 16 && Class49.aClass46_4730 == null) {
                             method3065(i_75_, false, i_74_)
                             Class49.aClass46_4730 = Class348_Sub22.method2957(i_74_, (-54).toByte(), i_75_)
-                            Class251.method1916(-9343, Class49.aClass46_4730!!)
+                            ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
                         }
                         if (i_76_ == 8) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
@@ -720,7 +720,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 FogOptionState.anInt6048 = 2
                                 Class296.anInt3768++
                                 Class348.anInt4292 = 0
-                                val class348_sub47 = method2148((Class251.aClass351_3232), (Class348_Sub23_Sub2.aClass77_9029), -84)
+                                val class348_sub47 = method2148((ConfigFlagUtil.aClass351_3232), (Class348_Sub23_Sub2.aClass77_9029), -84)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -128)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-99, i_77_)
                                 Class348_Sub42_Sub14.method3243(127, class348_sub47)
@@ -992,7 +992,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 }
                                 if (RenderNode.aBoolean9722) Class341.method2678(-2049)
                                 if (Class311.aClass46_3913 == null || GroundItemRenderState.anInt1656 != 0) break
-                                Class251.method1916(-9343, Class311.aClass46_3913!!)
+                                ConfigFlagUtil.method1916(-9343, Class311.aClass46_3913!!)
                             }
                         }
                     }

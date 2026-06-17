@@ -682,10 +682,10 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
     }
 
     override fun method3940(i: Int) {
-        if (anIDirect3DVertexShader9794 == null && ((this.aClass251Array8113[this.anInt8175]) != Class348_Sub42_Sub18.aClass251_9685)) {
-            if (LightDetailOptionState.aClass251_6030 == (this.aClass251Array8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797!!, i))
+        if (anIDirect3DVertexShader9794 == null && ((this.aConfigFlagUtilArray8113[this.anInt8175]) != Class348_Sub42_Sub18.aConfigFlagUtil_9685)) {
+            if (LightDetailOptionState.aConfigFlagUtil_6030 == (this.aConfigFlagUtilArray8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797!!, i))
             else this.anIDirect3DDevice9810!!.SetTransform(16 - -this.anInt8175, this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(aFloatArray9797!!, i xor 0x1))
-            val i_72_: Int = method3963(594, (this.aClass251Array8113[this.anInt8175]))
+            val i_72_: Int = method3963(594, (this.aConfigFlagUtilArray8113[this.anInt8175]))
             if (anIntArray9805!![this.anInt8175] != i_72_) {
                 this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 24, i_72_)
                 anIntArray9805!![this.anInt8175] = i_72_
@@ -862,13 +862,13 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             throw IllegalArgumentException()
         }
 
-        private fun method3963(i: Int, class251: Class251?): Int {
+        private fun method3963(i: Int, configFlagUtil: ConfigFlagUtil?): Int {
             if (i != 594) return 7
-            if (class251 == GlElementArrayBuffer.aClass251_4835) return 1
-            if (class251 != LightDetailOptionState.aClass251_6030) {
-                if (class251 != Class348_Sub40_Sub38.aClass251_9477) {
-                    if (Class57.aClass251_1051 == class251) return 4
-                    if (class251 == WaterDetailOptionState.aClass251_5989) return 256
+            if (configFlagUtil == GlElementArrayBuffer.aConfigFlagUtil_4835) return 1
+            if (configFlagUtil != LightDetailOptionState.aConfigFlagUtil_6030) {
+                if (configFlagUtil != Class348_Sub40_Sub38.aConfigFlagUtil_9477) {
+                    if (Class57.aConfigFlagUtil_1051 == configFlagUtil) return 4
+                    if (configFlagUtil == WaterDetailOptionState.aConfigFlagUtil_5989) return 256
                 } else return 3
             } else return 2
             return 0

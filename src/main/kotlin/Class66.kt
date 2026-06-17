@@ -2045,7 +2045,7 @@ object Class66 {
                 return
             }
             if (i == 6510) {
-                anIntArray1149!![anInt1173++] = Class251.anInt3234
+                anIntArray1149!![anInt1173++] = ConfigFlagUtil.anInt3234
                 return
             }
         } else if (i >= 6700) {
@@ -2713,7 +2713,7 @@ object Class66 {
                 class46.aClass46Array798!![i_249_] = class46_251_
                 if (bool) aClass46_1169 = class46_251_
                 else aClass46_1150 = class46_251_
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 101) {
@@ -2724,13 +2724,13 @@ object Class66 {
                 }
                 val class46_252_ = method2570(1512932720, class46.anInt830)
                 class46_252_!!.aClass46Array798!![(class46.anInt704)] = null
-                Class251.method1916(-9343, class46_252_)
+                ConfigFlagUtil.method1916(-9343, class46_252_)
                 return
             }
             if (i == 102) {
                 val class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
                 class46!!.aClass46Array798 = null
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 200) {
@@ -2839,7 +2839,7 @@ object Class66 {
                 else if (i_268_ > 5) i_268_ = 5
                 class46.aByte817 = i_267_.toByte()
                 class46.aByte681 = i_268_.toByte()
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 CollisionMapRegion.method1048(class46, 50)
                 if (class46.anInt704 == -1) ChatEffectsOptionState.method1733((-78).toByte(), class46.anInt830)
                 return
@@ -2858,16 +2858,16 @@ object Class66 {
                 else if (i_270_ > 4) i_270_ = 4
                 class46.aByte778 = i_269_.toByte()
                 class46.aByte724 = i_270_.toByte()
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 CollisionMapRegion.method1048(class46, 62)
-                if (class46.anInt774 == 0) Class251.method1913(false, 36, class46)
+                if (class46.anInt774 == 0) ConfigFlagUtil.method1913(false, 36, class46)
                 return
             }
             if (i == 1003) {
                 val bool_271_ = anIntArray1149!![--anInt1173] == 1
                 if (class46!!.aBoolean813 != bool_271_) {
                     class46.aBoolean813 = bool_271_
-                    Class251.method1916(-9343, class46)
+                    ConfigFlagUtil.method1916(-9343, class46)
                 }
                 if (class46.anInt704 == -1) Class348_Sub26.method2999(90.toByte(), class46.anInt830)
                 return
@@ -2876,9 +2876,9 @@ object Class66 {
                 anInt1173 -= 2
                 class46!!.anInt710 = anIntArray1149!![anInt1173]
                 class46.anInt775 = anIntArray1149!![anInt1173 + 1]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 CollisionMapRegion.method1048(class46, 59)
-                if (class46.anInt774 == 0) Class251.method1913(false, 49, class46)
+                if (class46.anInt774 == 0) ConfigFlagUtil.method1913(false, 49, class46)
                 return
             }
             if (i == 1005) {
@@ -2899,54 +2899,54 @@ object Class66 {
                 class46.anInt755 = anIntArray1149!![anInt1173 + 1]
                 if (class46.anInt755 > (class46.anInt791 - class46.anInt789)) class46.anInt755 = (class46.anInt791 - class46.anInt789)
                 if (class46.anInt755 < 0) class46.anInt755 = 0
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 if (class46.anInt704 == -1) Class328_Sub3.method2615(-91, class46.anInt830)
                 return
             }
             if (i == 1101) {
                 class46!!.anInt749 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 if (class46.anInt704 == -1) method1148(class46.anInt830, 6)
                 return
             }
             if (i == 1102) {
                 class46!!.aBoolean810 = anIntArray1149!![--anInt1173] == 1
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1103) {
                 class46!!.anInt696 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1104) {
                 class46!!.anInt690 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1105) {
                 val i_272_ = anIntArray1149!![--anInt1173]
                 if (class46!!.anInt756 != i_272_) {
                     class46.anInt756 = i_272_
-                    Class251.method1916(-9343, class46)
+                    ConfigFlagUtil.method1916(-9343, class46)
                 }
                 if (class46.anInt704 == -1) ProjectileSpawner.method1477(class46.anInt830, 14)
                 return
             }
             if (i == 1106) {
                 class46!!.anInt828 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1107) {
                 class46!!.aBoolean697 = anIntArray1149!![--anInt1173] == 1
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1108) {
                 class46!!.anInt770 = 1
                 class46.anInt753 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 if (class46.anInt704 == -1) method3569(class46.anInt830, -125)
                 return
             }
@@ -2958,7 +2958,7 @@ object Class66 {
                 class46.anInt675 = anIntArray1149!![anInt1173 + 3]
                 class46.anInt717 = anIntArray1149!![anInt1173 + 4]
                 class46.anInt716 = anIntArray1149!![anInt1173 + 5]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 if (class46.anInt704 == -1) {
                     method1787(class46.anInt830, 8)
                     LoadingScreenState.method1459(class46.anInt830, 2)
@@ -2974,28 +2974,28 @@ object Class66 {
                     class46.anInt841 = 0
                     val class17 = (if (class46.anInt699 == -1) null else ParticleEmitterNode.aClass87_191!!.method835(class46.anInt699, 7))
                     if (class17 != null) Class264.method2017(class46.anInt795, class17, 46)
-                    Class251.method1916(-9343, class46)
+                    ConfigFlagUtil.method1916(-9343, class46)
                 }
                 if (class46.anInt704 == -1) Class64_Sub3.method687((-117).toByte(), class46.anInt830)
                 return
             }
             if (i == 1111) {
                 class46!!.aBoolean689 = anIntArray1149!![--anInt1173] == 1
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1112) {
                 val string = aStringArray1152!![--anInt1170]
                 if (string != class46!!.aString792) {
                     class46.aString792 = string
-                    Class251.method1916(-9343, class46)
+                    ConfigFlagUtil.method1916(-9343, class46)
                 }
                 if (class46.anInt704 == -1) method3316(121, class46.anInt830)
                 return
             }
             if (i == 1113) {
                 class46!!.anInt702 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 if (class46.anInt704 == -1) Class309.method2311((-109).toByte(), class46.anInt830)
                 return
             }
@@ -3004,69 +3004,69 @@ object Class66 {
                 class46!!.anInt762 = anIntArray1149!![anInt1173]
                 class46.anInt700 = anIntArray1149!![anInt1173 + 1]
                 class46.anInt673 = anIntArray1149!![anInt1173 + 2]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1115) {
                 class46!!.aBoolean769 = anIntArray1149!![--anInt1173] == 1
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1116) {
                 class46!!.anInt672 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1117) {
                 class46!!.anInt809 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1118) {
                 class46!!.aBoolean790 = anIntArray1149!![--anInt1173] == 1
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1119) {
                 class46!!.aBoolean735 = anIntArray1149!![--anInt1173] == 1
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1120) {
                 anInt1173 -= 2
                 class46!!.anInt698 = anIntArray1149!![anInt1173]
                 class46.anInt791 = anIntArray1149!![anInt1173 + 1]
-                Class251.method1916(-9343, class46)
-                if (class46.anInt774 == 0) Class251.method1913(false, 62, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
+                if (class46.anInt774 == 0) ConfigFlagUtil.method1913(false, 62, class46)
                 return
             }
             if (i == 1122) {
                 class46!!.aBoolean745 = anIntArray1149!![--anInt1173] == 1
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1123) {
                 class46!!.anInt716 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 if (class46.anInt704 == -1) method1787(class46.anInt830, 8)
                 return
             }
             if (i == 1124) {
                 val i_274_ = anIntArray1149!![--anInt1173]
                 class46!!.aBoolean744 = i_274_ == 1
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1125) {
                 anInt1173 -= 2
                 class46!!.anInt688 = anIntArray1149!![anInt1173]
                 class46.anInt799 = anIntArray1149!![anInt1173 + 1]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1126) {
                 class46!!.anInt773 = anIntArray1149!![--anInt1173]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1127) {
@@ -3095,7 +3095,7 @@ object Class66 {
                 if ((class46!!.anInt774 == 5 || i != 1129) && (class46.anInt774 == 4 || i != 1130)) {
                     if (class46.anInt806 != i_278_) {
                         class46.anInt806 = i_278_
-                        Class251.method1916(-9343, class46)
+                        ConfigFlagUtil.method1916(-9343, class46)
                     }
                     if (class46.anInt704 == -1) GlowPostProcessor.method1415(class46.anInt830, 117)
                     return
@@ -3108,7 +3108,7 @@ object Class66 {
                 i -= 1000
                 class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
             } else class46 = if (bool) aClass46_1169 else aClass46_1150
-            Class251.method1916(-9343, class46!!)
+            ConfigFlagUtil.method1916(-9343, class46!!)
             if (i == 1200 || i == 1205 || i == 1208 || i == 1209 || i == 1212 || i == 1213) {
                 anInt1173 -= 2
                 val i_279_ = anIntArray1149!![anInt1173]
@@ -3175,14 +3175,14 @@ object Class66 {
                 class46.anInt674 = anIntArray1149!![anInt1173 + 1]
                 class46.anInt733 = anIntArray1149!![anInt1173 + 2]
                 class46.anInt693 = anIntArray1149!![anInt1173 + 3]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1207) {
                 anInt1173 -= 2
                 class46!!.anInt759 = anIntArray1149!![anInt1173]
                 class46.anInt835 = anIntArray1149!![anInt1173 + 1]
-                Class251.method1916(-9343, class46)
+                ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 1210) {

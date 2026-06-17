@@ -165,7 +165,7 @@ import MediaStreamClient.Companion.method1897
 import TileTransform.method1907
 import SpriteStore.Companion.method305
 import BackgroundWorkerThread.Companion.method1910
-import Class251.Companion.method1912
+import ConfigFlagUtil.Companion.method1912
 import Class252.Companion.method1917
 import Class254.Companion.method1926
 import Class255.Companion.method1931
@@ -1375,7 +1375,7 @@ class Client : GameAppletFrame() {
             val string_30_ = this.getParameter("worldflags")
             if (string_30_ != null) {
                 try {
-                    Class251.anInt3234 = string_30_.toInt()
+                    ConfigFlagUtil.anInt3234 = string_30_.toInt()
                 } catch (exception: Exception) {
                     /* empty */
                 }
@@ -2008,7 +2008,7 @@ class Client : GameAppletFrame() {
                     ItemActionPacketSender.aBoolean2110 = true
                     FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
                     Class375.aBoolean4540 = false
-                    Class251.anInt3234 = 0
+                    ConfigFlagUtil.anInt3234 = 0
                     UnderlayDefinition.anInt2884 = (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987)
                     Renderer.anInt4583 = 0
                     Gl2dTexture.aString8605 = null

@@ -73,7 +73,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             this.aHa_Sub3_4479.method3871(Class31.aCameraNodeList_430, 0)
             val class101_sub2 = this.aHa_Sub3_4479.method3820(false)
             class101_sub2.method899(1024)
-            this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aClass251_9477)
+            this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aConfigFlagUtil_9477)
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), 113, (Class348_Sub23_Sub2.aRenderConfigFactory_9011))
                 this.aHa_Sub3_4479.method3924(true, false, 0, Class342.aClass70_4247, false)

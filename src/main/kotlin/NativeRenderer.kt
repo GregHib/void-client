@@ -77,7 +77,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aBoolean8110: Boolean = true
     private val aFloatArray8111: FloatArray
     private var aBoolean8112 = false
-    lateinit var aClass251Array8113: Array<Class251?>
+    lateinit var aConfigFlagUtilArray8113: Array<ConfigFlagUtil?>
     @JvmField
     var anInt8114: Int = 0
     var aFloat8115: Float = 0f
@@ -313,7 +313,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                         val i_27_ = i_26_ * 50
                         val class101_sub2 = method3820(false)
                         class101_sub2.method916(((this.anInt8146 % i_27_ * class12.aByte211).toFloat() / i_27_.toFloat()), true, 0.0f, ((class12.aByte198 * (this.anInt8146 % i_27_)).toFloat() / i_27_.toFloat()))
-                        method3853(-32, LightDetailOptionState.aClass251_6030)
+                        method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
                     }
                     i_22_ = class12.anInt203
                     if (!this.aBoolean8160) {
@@ -889,7 +889,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3915(0)
             this.aClass101_Sub2Array8131[0]!!.method932(1.0f, interface18_impl3!!.method71((-46).toByte(), this.anInt7962.toFloat()), interface18_impl3.method67(this.anInt7931.toFloat(), 109), (-37).toByte())
             this.aClass101_Sub2Array8131[0]!!.method920(interface18_impl3.method71((-52).toByte(), -i_86_.toFloat()), false, 0.0f, interface18_impl3.method67(-i_85_.toFloat(), 94))
-            this.aClass251Array8113[0] = LightDetailOptionState.aClass251_6030
+            this.aConfigFlagUtilArray8113[0] = LightDetailOptionState.aConfigFlagUtil_6030
             method3905(127.toByte())
             method3933(-127)
             method3879(-8629)
@@ -942,14 +942,14 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         if (i != 9) aFloatArray8140 = null
     }
 
-    fun method3853(i: Int, class251: Class251?) {
+    fun method3853(i: Int, configFlagUtil: ConfigFlagUtil?) {
         try {
             anInt8057++
             if (i != -32) aFloatArray8142 = null
-            this.aClass251Array8113[this.anInt8175] = class251
+            this.aConfigFlagUtilArray8113[this.anInt8175] = configFlagUtil
             method3905(111.toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.HI(" + i + ',' + (if (class251 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.HI(" + i + ',' + (if (configFlagUtil != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1298,8 +1298,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     }
 
     fun method3879(i: Int) {
-        if (this.aClass251Array8113[this.anInt8175] != Class348_Sub42_Sub18.aClass251_9685) {
-            this.aClass251Array8113[this.anInt8175] = Class348_Sub42_Sub18.aClass251_9685
+        if (this.aConfigFlagUtilArray8113[this.anInt8175] != Class348_Sub42_Sub18.aConfigFlagUtil_9685) {
+            this.aConfigFlagUtilArray8113[this.anInt8175] = Class348_Sub42_Sub18.aConfigFlagUtil_9685
             this.aClass101_Sub2Array8131[this.anInt8175]!!.method910()
             method3905(95.toByte())
         }
@@ -2157,13 +2157,13 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInterface18Array8098 = arrayOfNulls<Interface18>(this.anInt8090)
         this.aRenderConfigFactoryArray8086 = arrayOfNulls<RenderConfigFactory>(this.anInt8090)
         this.aRenderConfigFactoryArray8092 = arrayOfNulls<RenderConfigFactory>(this.anInt8090)
-        this.aClass251Array8113 = arrayOfNulls<Class251>(this.anInt8090)
+        this.aConfigFlagUtilArray8113 = arrayOfNulls<ConfigFlagUtil>(this.anInt8090)
         anInt7889++
         var i_263_ = 0
         while (this.anInt8090 > i_263_) {
             this.aRenderConfigFactoryArray8092[i_263_] = ParticleSystemState.aRenderConfigFactory_2207
             this.aRenderConfigFactoryArray8086[i_263_] = ParticleSystemState.aRenderConfigFactory_2207
-            this.aClass251Array8113[i_263_] = Class348_Sub42_Sub18.aClass251_9685
+            this.aConfigFlagUtilArray8113[i_263_] = Class348_Sub42_Sub18.aConfigFlagUtil_9685
             this.aClass101_Sub2Array8131[i_263_] = FloatCameraTransform()
             i_263_++
         }

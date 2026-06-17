@@ -97,7 +97,7 @@ abstract class Class318_Sub1 : Class318() {
                     val bool = ((Exception_Sub1.aClass255_112!!.method1941(class46!!.anInt672, (-74).toByte(), class46.anInt812, class46.anInt781, 0xffffff.inv() or class46.anInt809, class46.anInt678, var_renderer, (if (!class46.aBoolean720) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)))) == null)
                     if (!bool) break
                     Class5_Sub1_Sub1.aClass262_9931!!.method1999(Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (0xffffff.inv() or class46.anInt809), class46.anInt678, class46.aBoolean720), i xor 0x4ed2)
-                    Class251.method1916(-9343, class46)
+                    ConfigFlagUtil.method1916(-9343, class46)
                 } catch (runtimeexception: RuntimeException) {
                     throw Class348_Sub17.method2929(runtimeexception, ("ga.QA(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (class46 != null) "{...}" else "null") + ')'))
                 }

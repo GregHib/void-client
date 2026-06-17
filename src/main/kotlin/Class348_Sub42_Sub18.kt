@@ -8,7 +8,7 @@ class Class348_Sub42_Sub18 internal constructor(var aClass318_Sub1_Sub3_Sub5_968
         var anInt9681: Int = 0
         var anInt9683: Int = 0
         var aClass351_9684: Class351? = Class351(81, 3)
-        var aClass251_9685: Class251? = Class251()
+        var aConfigFlagUtil_9685: ConfigFlagUtil? = ConfigFlagUtil()
         var anInt9686: Int = 0
 
         fun method3273(bool: Boolean, i: Int, class348_sub16_sub3: Class348_Sub16_Sub3?) {
@@ -22,7 +22,7 @@ class Class348_Sub42_Sub18 internal constructor(var aClass318_Sub1_Sub3_Sub5_968
         fun method3274(bool: Boolean) {
             if (bool != true) method3273(true, -84, null)
             aClass351_9684 = null
-            aClass251_9685 = null
+            aConfigFlagUtil_9685 = null
         }
 
         fun method3275(i: Int, i_0_: Int, i_1_: Int) {

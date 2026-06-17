@@ -117,7 +117,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                                     Class348_Sub42_Sub14.method3243(-112, class348_sub47)
                                 } else if (i == 6) {
                                     Class296.anInt3768++
-                                    val class348_sub47 = (method2148(Class251.aClass351_3232, Class348_Sub23_Sub2.aClass77_9029, -83))
+                                    val class348_sub47 = (method2148(ConfigFlagUtil.aClass351_3232, Class348_Sub23_Sub2.aClass77_9029, -83))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-119, `is`[i_7_])
                                     Class348_Sub42_Sub14.method3243(i_5_ + 7281, class348_sub47)

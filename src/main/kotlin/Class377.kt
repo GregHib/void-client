@@ -375,7 +375,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     override fun method3940(i: Int) {
         glMatrixMode(5890)
         anInt9888++
-        if (Class348_Sub42_Sub18.aClass251_9685 != this.aClass251Array8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
+        if (Class348_Sub42_Sub18.aConfigFlagUtil_9685 != this.aConfigFlagUtilArray8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
         else glLoadIdentity()
         if (i != 1) method3862(37, null)
         glMatrixMode(5888)

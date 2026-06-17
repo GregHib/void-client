@@ -85,7 +85,7 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
         var aClass74_9475: Class74? = Class74(12, 7)
         @JvmField
         var anInt9476: Int = 0
-        var aClass251_9477: Class251? = Class251()
+        var aConfigFlagUtil_9477: ConfigFlagUtil? = ConfigFlagUtil()
         @JvmField
         var aClass262_9478: Class262? = Class262()
         @JvmField
@@ -98,7 +98,7 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
             aClass74_9475 = null
             anIntArray9480 = null
             aClass304_9471 = null
-            aClass251_9477 = null
+            aConfigFlagUtil_9477 = null
             aClass262_9478 = null
             if (i < 32) method3149(58)
         }

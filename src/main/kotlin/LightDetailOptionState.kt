@@ -49,7 +49,7 @@ class LightDetailOptionState : GraphicsOptionState {
         @JvmField
         var anInt6029: Int = 0
         @JvmField
-        var aClass251_6030: Class251? = Class251()
+        var aConfigFlagUtil_6030: ConfigFlagUtil? = ConfigFlagUtil()
         @JvmField
         var anInt6031: Int = 0
         @JvmField
@@ -71,7 +71,7 @@ class LightDetailOptionState : GraphicsOptionState {
         fun method1799(i: Int) {
             val i_0_ = 51 / ((i - 33) / 40)
             anIntArray6035 = null
-            aClass251_6030 = null
+            aConfigFlagUtil_6030 = null
         }
 
         @JvmStatic

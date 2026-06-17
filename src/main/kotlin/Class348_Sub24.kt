@@ -5,7 +5,7 @@ import TextureGenerator.Companion.method1397
 import FrameBufferObject.Companion.method1501
 import BinaryGraphicsOptionState.Companion.method1767
 import LightDetailOptionState.Companion.method1802
-import Class251.Companion.method1916
+import ConfigFlagUtil.Companion.method1916
 import Class261.Companion.method1987
 import Class264.Companion.method2017
 import Class272.Companion.method2049
@@ -231,7 +231,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     val class46 = method2570(1512932720, i_17_)
                                     if (class348_sub42_sub15.aString9654 != class46!!.aString792) {
                                         class46.aString792 = class348_sub42_sub15.aString9654
-                                        Class251.method1916(-9343, class46)
+                                        ConfigFlagUtil.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 4) {
                                     val class46 = method2570(1512932720, i_17_)
@@ -242,7 +242,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                         class46.anInt753 = i_19_
                                         class46.anInt770 = i_18_
                                         class46.anInt779 = i_20_
-                                        Class251.method1916(-9343, class46)
+                                        ConfigFlagUtil.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 5) {
                                     val class46 = method2570(i xor 0x5a2da9d8, i_17_)
@@ -253,7 +253,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                         class46.anInt730 = 1
                                         val class17 = (if (class46.anInt699 == -1) null else (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7)))
                                         if (class17 != null) method2017((class46.anInt795), class17, 30)
-                                        Class251.method1916(-9343, class46)
+                                        ConfigFlagUtil.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 6) {
                                     val i_21_ = (class348_sub42_sub15.anInt9652)
@@ -264,14 +264,14 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     val class46 = method2570(1512932720, i_17_)
                                     if (class46!!.anInt749 != i_25_) {
                                         class46.anInt749 = i_25_
-                                        Class251.method1916(-9343, class46)
+                                        ConfigFlagUtil.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 7) {
                                     val class46 = method2570(1512932720, i_17_)
                                     val bool = (class348_sub42_sub15.anInt9652 == 1)
                                     if (!class46!!.aBoolean813 == bool) {
                                         class46.aBoolean813 = bool
-                                        Class251.method1916(-9343, class46)
+                                        ConfigFlagUtil.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 8) {
                                     val class46 = method2570(1512932720, i_17_)
@@ -284,14 +284,14 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                                 if ((class46.anInt842) > 0) class46.anInt716 = (32 * class46.anInt716 / (class46.anInt842))
                                             } else class46.anInt716 = ((class46.anInt716) * 32 / (class46.anInt796))
                                         }
-                                        Class251.method1916(-9343, class46)
+                                        ConfigFlagUtil.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 9) {
                                     val class46 = method2570(1512932720, i_17_)
                                     if ((class348_sub42_sub15.anInt9652 != class46!!.anInt812) || (class348_sub42_sub15.anInt9651 != class46.anInt781)) {
                                         class46.anInt781 = class348_sub42_sub15.anInt9651
                                         class46.anInt812 = class348_sub42_sub15.anInt9652
-                                        Class251.method1916(-9343, class46)
+                                        ConfigFlagUtil.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 10) {
                                     val class46 = method2570(1512932720, i_17_)
@@ -299,7 +299,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                         class46.anInt786 = (class348_sub42_sub15.anInt9651)
                                         class46.anInt808 = (class348_sub42_sub15.anInt9652)
                                         class46.anInt717 = (class348_sub42_sub15.anInt9650)
-                                        Class251.method1916(-9343, class46)
+                                        ConfigFlagUtil.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 11) {
                                     val class46 = (method2570(1512932720, i_17_))
@@ -309,7 +309,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     class46.aByte681 = 0.toByte()
                                     class46.anInt788 = (class348_sub42_sub15.anInt9652)
                                     class46.anInt800 = class46.anInt788
-                                    Class251.method1916(-9343, class46)
+                                    ConfigFlagUtil.method1916(-9343, class46)
                                 } else if (i_16_ == 12) {
                                     val class46 = (method2570(1512932720, i_17_))
                                     var i_26_ = (class348_sub42_sub15.anInt9652)
@@ -345,7 +345,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             if (Class311.aClass46_3913 != null) {
                                 GroundItemRenderState.anInt1656++
                                 if (GroundItemRenderState.anInt1656 >= 15) {
-                                    Class251.method1916(-9343, Class311.aClass46_3913!!)
+                                    ConfigFlagUtil.method1916(-9343, Class311.aClass46_3913!!)
                                     Class311.aClass46_3913 = null
                                 }
                             }

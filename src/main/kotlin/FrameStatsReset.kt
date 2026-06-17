@@ -2422,7 +2422,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class346_Sub1.anInt6525 = 0
             Class58.anInt1062 = 0
             Class35.anInt485 = 0
-            Class251.anInt3230 = 0
+            ConfigFlagUtil.anInt3230 = 0
             Class348_Sub42_Sub14.anInt9630 = 0
             Class348_Sub31.anInt6919 = 0
             Class318_Sub1_Sub5_Sub2.anInt10169 = 0
@@ -2981,7 +2981,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ChatEffectsOptionState.anInt5864 = 0
             Class300.anInt3816 = 0
             Class311.anInt3904 = 0
-            Class251.anInt3231 = 0
+            ConfigFlagUtil.anInt3231 = 0
             Class348_Sub42_Sub19.anInt9698 = 0
             Class318_Sub1_Sub2.anInt8733 = 0
             ParticleSystemState.anInt2193 = 0
@@ -3029,7 +3029,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub7.anInt9142 = 0
             Class356.anInt4384 = 0
             Class330.anInt4119 = 0
-            Class251.anInt3233 = 0
+            ConfigFlagUtil.anInt3233 = 0
             GameAppletFrame.anInt9 = 0
             VarpStore.anInt5072 = 0
             Class62.anInt1112 = 0
@@ -3190,7 +3190,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SingletonMarker.anInt2600 = 0
             SocketStreamWorker.anInt2662 = 0
             Class66.anInt1157 = 0
-            Class251.anInt3235 = 0
+            ConfigFlagUtil.anInt3235 = 0
             Class319.anInt3984 = 0
             Class330.anInt4115 = 0
             Class42.anInt600 = 0
@@ -3284,7 +3284,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5730 = 0
             Class79.anInt1326 = 0
             SceneObjectAnimator.anInt3087 = 0
-            Class251.anInt3229 = 0
+            ConfigFlagUtil.anInt3229 = 0
             NativeRenderer.anInt8030 = 0
             Class5.anInt4641 = 0
             Class307.anInt3877 = 0

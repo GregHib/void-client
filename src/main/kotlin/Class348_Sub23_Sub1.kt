@@ -137,7 +137,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
                     Class3.aServerConnectionInfo_125!!.anInt2138 = 50000 - -Class3.aServerConnectionInfo_125!!.anInt2143
                     Class3.aServerConnectionInfo_125!!.anInt2148 = 40000 - -Class3.aServerConnectionInfo_125!!.anInt2143
                 }
-                if (i < Class65.aClass110_Sub1Array1146!!.size && Class65.aClass110_Sub1Array1146!![i] != null) Class251.anInt3234 = (Class65.aClass110_Sub1Array1146!![i]!!.anInt1708)
+                if (i < Class65.aClass110_Sub1Array1146!!.size && Class65.aClass110_Sub1Array1146!![i] != null) ConfigFlagUtil.anInt3234 = (Class65.aClass110_Sub1Array1146!![i]!!.anInt1708)
                 return true
             }
             var string_4_ = ""

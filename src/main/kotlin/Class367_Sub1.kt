@@ -94,7 +94,7 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
                         if (class46.anInt747 < 0) class46.anInt747 = 0
                         if ((class46.anInt791 - class46.anInt789) < class46.anInt755) class46.anInt755 = (class46.anInt791 - class46.anInt789)
                         if (class46.anInt755 < 0) class46.anInt755 = 0
-                        if (class46.anInt774 == 0) Class251.method1913(bool_6_, -116, class46)
+                        if (class46.anInt774 == 0) ConfigFlagUtil.method1913(bool_6_, -116, class46)
                     }
                 }
             }

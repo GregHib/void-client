@@ -130,7 +130,7 @@ class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, boo
         if (itemDefinition != null) return itemDefinition
         val `is`: ByteArray?
         synchronized(aClass45_3267!!) {
-            `is` = aClass45_3267.method410(-1860, method500(7, i_13_), Class251.Companion.method1914(-23590, i_13_))
+            `is` = aClass45_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
         }
         itemDefinition = ItemDefinition()
         itemDefinition.aClass255_2761 = this

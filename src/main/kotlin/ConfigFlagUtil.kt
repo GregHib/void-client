@@ -3,7 +3,7 @@ import ChatEffectsOptionState.Companion.method1728
 /* Class251 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class251 {
+class ConfigFlagUtil {
     override fun toString(): String {
         anInt3230++
         throw IllegalStateException()

@@ -1,5 +1,5 @@
-import Class251.Companion.method1913
-import Class251.Companion.method1916
+import ConfigFlagUtil.Companion.method1913
+import ConfigFlagUtil.Companion.method1916
 import Class324.Companion.method2570
 import Class348_Sub7.Companion.method2772
 import Class66.method703
@@ -71,7 +71,7 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
             val class46 = method2570(i_2_ + 1512932718, i_0_)
             if (class46 != null) method1916(-9343, class46)
             if (Class49.aClass46_4730 != null) {
-                Class251.method1916(-9343, Class49.aClass46_4730!!)
+                ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
                 Class49.aClass46_4730 = null
             }
             Class348_Sub42_Sub17.method3270(120.toByte())

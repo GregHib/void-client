@@ -50,7 +50,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: 
             class101_sub2_21_.method898(class101_sub2)
             class101_sub2_21_.method914(0.125f, 1.0f, 0, 0.125f)
             class101_sub2_21_.method920(0.0f, false, aFloat7350, 0.0f)
-            this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aClass251_9477)
+            this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aConfigFlagUtil_9477)
             this.aHa_Sub3_4479.method3897(0, -4382)
         }
         anInt7352++

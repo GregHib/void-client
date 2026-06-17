@@ -29,7 +29,7 @@ class Class347 {
 
         @JvmStatic
         fun method2708(i: Int) {
-            Class251.method1916(-9343, Class289.aClass46_3701!!)
+            ConfigFlagUtil.method1916(-9343, Class289.aClass46_3701!!)
             anInt4280++
             Class318_Sub1.anInt6392++
             if (!Class50_Sub1.aBoolean5221 || !ScrollingWidgetComponentNode.aBoolean8386) {

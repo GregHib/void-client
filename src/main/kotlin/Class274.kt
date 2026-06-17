@@ -203,7 +203,7 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
                 class348_sub41 = MinimapSpriteRenderer.aClass356_4915!!.method3482(0) as Class348_Sub41?
             }
             if (Class49.aClass46_4730 != null) {
-                Class251.method1916(-9343, Class49.aClass46_4730!!)
+                ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
                 Class49.aClass46_4730 = null
             }
         }

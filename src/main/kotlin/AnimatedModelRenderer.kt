@@ -89,7 +89,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         class101_sub2.method935(1.0f, f_14_ - f_12_, -f + f_15_, 0.0f, 0.0f, -f_12_ + f_16_, 0.0f, 0.0f, f_13_ - f, 0)
         class101_sub2.method920(f_12_, false, 0.0f, f)
         class101_sub2_20_.method932(1.0f, anInterface18_Impl3_8403.method71(((-47).toByte()).toByte(), anInt8417.toFloat()), anInterface18_Impl3_8403.method67(anInt8411.toFloat(), 123), ((-66).toByte()).toByte())
-        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-44)
         aHa_Sub3_8407.method3879(-8629)
@@ -115,14 +115,14 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             class101_sub2_41_.method932(1.0f, anInterface18_Impl3_8403.method71(((-26).toByte()).toByte(), i_37_.toFloat()), anInterface18_Impl3_8403.method67(i_36_.toFloat(), 118), ((-75).toByte()).toByte())
             class101_sub2.method932(0.0f, i_37_.toFloat(), i_36_.toFloat(), ((-83).toByte()).toByte())
             class101_sub2.method891(i, i_35_, 0)
-            aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+            aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
             aHa_Sub3_8407.method3915(0)
             aHa_Sub3_8407.method3933(-63)
         } else if (bool_42_) {
             val i_43_ = i_37_ + i_35_
             val i_44_ = method980()
             class101_sub2_41_.method932(1.0f, anInterface18_Impl3_8403.method71(((-99).toByte()).toByte(), anInt8417.toFloat()), anInterface18_Impl3_8403.method67(i_36_.toFloat(), 110), ((-120).toByte()).toByte())
-            aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+            aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
             var i_45_ = anInt8419 + i_35_
             var i_46_ = i_45_ - -anInt8417
             while (i_46_ <= i_43_) {
@@ -136,7 +136,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             if (i_43_ > i_45_) {
                 val i_47_ = i_43_ - i_45_
                 class101_sub2_41_.method932(1.0f, anInterface18_Impl3_8403.method71(((-81).toByte()).toByte(), i_47_.toFloat()), anInterface18_Impl3_8403.method67(i_36_.toFloat(), 127), ((-16).toByte()).toByte())
-                aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+                aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
                 class101_sub2.method932(0.0f, i_47_.toFloat(), i_36_.toFloat(), ((-101).toByte()).toByte())
                 class101_sub2.method891(i, i_45_, 0)
                 aHa_Sub3_8407.method3915(0)
@@ -146,7 +146,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             val i_61_ = i - -i_36_
             val i_62_ = method966()
             class101_sub2_41_.method932(1.0f, anInterface18_Impl3_8403.method71(((-121).toByte()).toByte(), i_37_.toFloat()), anInterface18_Impl3_8403.method67(anInt8411.toFloat(), 77), ((-27).toByte()).toByte())
-            aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+            aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
             var i_63_ = i - -anInt8400
             var i_64_ = anInt8411 + i_63_
             while (i_64_ <= i_61_) {
@@ -160,7 +160,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             if (i_63_ < i_61_) {
                 val i_65_ = -i_63_ + i_61_
                 class101_sub2_41_.method932(1.0f, anInterface18_Impl3_8403.method71(((-62).toByte()).toByte(), i_37_.toFloat()), anInterface18_Impl3_8403.method67(i_65_.toFloat(), 119), ((-10).toByte()).toByte())
-                aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+                aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
                 class101_sub2.method932(0.0f, i_37_.toFloat(), i_65_.toFloat(), ((-120).toByte()).toByte())
                 class101_sub2.method891(i_63_, i_35_, 0)
                 aHa_Sub3_8407.method3915(0)
@@ -175,7 +175,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             var i_53_ = i_52_ + anInt8417
             while (i_48_ >= i_53_) {
                 class101_sub2_41_.method932(1.0f, anInterface18_Impl3_8403.method71(((-89).toByte()).toByte(), anInt8417.toFloat()), anInterface18_Impl3_8403.method67(anInt8411.toFloat(), 88), ((-16).toByte()).toByte())
-                aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+                aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
                 var i_54_ = anInt8400 + i
                 var i_55_ = i_54_ - -anInt8411
                 while (i_55_ <= i_49_) {
@@ -189,7 +189,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
                 if (i_49_ > i_54_) {
                     val i_56_ = -i_54_ + i_49_
                     class101_sub2_41_.method932(1.0f, anInterface18_Impl3_8403.method71(((-82).toByte()).toByte(), anInt8417.toFloat()), anInterface18_Impl3_8403.method67(i_56_.toFloat(), 86), ((-35).toByte()).toByte())
-                    aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+                    aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
                     class101_sub2.method932(0.0f, anInt8417.toFloat(), i_56_.toFloat(), ((-26).toByte()).toByte())
                     class101_sub2.method891(i_54_, i_52_, 0)
                     aHa_Sub3_8407.method3915(0)
@@ -201,7 +201,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             if (i_52_ < i_48_) {
                 val i_57_ = i_48_ + -i_52_
                 class101_sub2_41_.method932(1.0f, anInterface18_Impl3_8403.method71(((-121).toByte()).toByte(), i_57_.toFloat()), anInterface18_Impl3_8403.method67(anInt8411.toFloat(), 102), ((-59).toByte()).toByte())
-                aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+                aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
                 var i_58_ = anInt8400 + i
                 var i_59_ = anInt8411 + i_58_
                 while (i_49_ >= i_59_) {
@@ -215,7 +215,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
                 if (i_49_ > i_58_) {
                     val i_60_ = i_49_ - i_58_
                     class101_sub2_41_.method932(1.0f, anInterface18_Impl3_8403.method71(((-102).toByte()).toByte(), i_57_.toFloat()), anInterface18_Impl3_8403.method67(i_60_.toFloat(), 115), ((-90).toByte()).toByte())
-                    aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+                    aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
                     class101_sub2.method932(0.0f, i_57_.toFloat(), i_60_.toFloat(), ((-95).toByte()).toByte())
                     class101_sub2.method891(i_58_, i_52_, 0)
                     aHa_Sub3_8407.method3915(0)
@@ -249,7 +249,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             class101_sub2.method920(f_66_, false, 0.0f, f)
         }
         class101_sub2_73_.method932(1.0f, anInterface18_Impl3_8403.method71(((-87).toByte()).toByte(), anInt8417.toFloat()), anInterface18_Impl3_8403.method67(anInt8411.toFloat(), 75), ((-60).toByte()).toByte())
-        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
         aHa_Sub3_8407.method3897(1, -4382)
         aHa_Sub3_8407.method3850(((-31).toByte()).toByte(), interface18_impl3)
         aHa_Sub3_8407.method3874(ParticleSystemState.aRenderConfigFactory_2207, 127, Class328_Sub3.aRenderConfigFactory_6519)
@@ -258,7 +258,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         class101_sub2_76_.method898(class101_sub2)
         class101_sub2_76_.method891(-i_71_, -i_72_, 0)
         class101_sub2_76_.method914(interface18_impl3!!.method71(((-32).toByte()).toByte(), 1.0f), 1.0f, 0, interface18_impl3.method67(1.0f, 71))
-        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-109)
         aHa_Sub3_8407.method3879(-8629)
@@ -335,7 +335,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         }
         class101_sub2.method932(0.0f, i_96_.toFloat(), i_95_.toFloat(), ((-100).toByte()).toByte())
         class101_sub2.method891(i, i_94_, 0)
-        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-118)
         aHa_Sub3_8407.method3879(-8629)
@@ -370,7 +370,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         class101_sub2.method932(0.0f, anInt8417.toFloat(), anInt8411.toFloat(), ((-44).toByte()).toByte())
         class101_sub2.method891(i, i_102_, 0)
         class101_sub2_106_.method932(1.0f, anInterface18_Impl3_8403.method71(((-125).toByte()).toByte(), anInt8417.toFloat()), anInterface18_Impl3_8403.method67(anInt8411.toFloat(), 111), ((-19).toByte()).toByte())
-        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-41)
         aHa_Sub3_8407.method3879(-8629)
@@ -411,7 +411,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3915(0)
         val class101_sub2_116_ = aHa_Sub3_8407.method3820(false)
         class101_sub2_116_.method932(1.0f, anInterface18_Impl3_8403.method71(((-102).toByte()).toByte(), anInt8417.toFloat()), anInterface18_Impl3_8403.method67(anInt8411.toFloat(), 106), ((-33).toByte()).toByte())
-        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
         aHa_Sub3_8407.method3897(1, -4382)
         aHa_Sub3_8407.method3850(101.toByte(), interface18_impl3)
         aHa_Sub3_8407.method3874(ParticleSystemState.aRenderConfigFactory_2207, 110, Class328_Sub3.aRenderConfigFactory_6519)
@@ -419,7 +419,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         val class101_sub2_117_ = aHa_Sub3_8407.method3820(false)
         class101_sub2_117_.method932(1.0f, interface18_impl3!!.method71(((-108).toByte()).toByte(), anInt8417.toFloat()), interface18_impl3.method67(anInt8411.toFloat(), 95), ((-81).toByte()).toByte())
         class101_sub2_117_.method920(interface18_impl3.method71(((-27).toByte()).toByte(), (i_113_ + -i_115_).toFloat()), false, 0.0f, interface18_impl3.method67((i - i_114_).toFloat(), 122))
-        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aClass251_6030)
+        aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
         aHa_Sub3_8407.method3933(-81)
         aHa_Sub3_8407.method3879(-8629)
         aHa_Sub3_8407.method3849(47.toByte(), 0, Class342.aClass70_4247)

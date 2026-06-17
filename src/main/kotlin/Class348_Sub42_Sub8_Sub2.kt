@@ -177,11 +177,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     MinimapSpriteRenderer.aClass356_4915!!.method3483(102.toByte(), i.toLong(), class348_sub41)
                 }
                 var class46 = method2570(1512932720, i_9_)
-                if (class46 != null) Class251.method1916(-9343, class46)
+                if (class46 != null) ConfigFlagUtil.method1916(-9343, class46)
                 class46 = method2570(1512932720, i)
                 if (class46 != null) {
-                    Class251.method1916(-9343, class46)
-                    Class251.method1913(true, -123, class46)
+                    ConfigFlagUtil.method1916(-9343, class46)
+                    ConfigFlagUtil.method1913(true, -123, class46)
                 }
                 if (RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 1)
                 Class348_Sub3.aIntRange_6584 = null
@@ -791,7 +791,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val class348_sub41 = (MinimapSpriteRenderer.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
                 if (Class49.aClass46_4730 != null) {
-                    Class251.method1916(-9343, Class49.aClass46_4730!!)
+                    ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
                     Class49.aClass46_4730 = null
                 }
                 Class348_Sub3.aIntRange_6584 = null

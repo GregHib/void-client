@@ -123,7 +123,7 @@ class Class330 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: Na
                                         val class101_sub2 = aHa_Sub3_4111.method3820(false)
                                         class101_sub2.method932(1.0f, f, f, (-65).toByte())
                                         class101_sub2.method891(-i_30_, -i_27_, 0)
-                                        aHa_Sub3_4111.method3853(i xor 0x9f.inv(), LightDetailOptionState.aClass251_6030)
+                                        aHa_Sub3_4111.method3853(i xor 0x9f.inv(), LightDetailOptionState.aConfigFlagUtil_6030)
                                         aClass97ArrayArray4122!![i_30_]!![i_27_]!!.method871(116.toByte())
                                         break@while_119_
                                     }
@@ -186,7 +186,7 @@ class Class330 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: Na
                                 val class101_sub2 = aHa_Sub3_4111.method3820(false)
                                 class101_sub2.method932(1.0f, f, f, (-62).toByte())
                                 class101_sub2.method891(-i_38_, -i_35_, 0)
-                                aHa_Sub3_4111.method3853(i xor 0x9f.inv(), (LightDetailOptionState.aClass251_6030))
+                                aHa_Sub3_4111.method3853(i xor 0x9f.inv(), (LightDetailOptionState.aConfigFlagUtil_6030))
                                 class97.method875(-82, interface5_impl2, i_39_ / 3)
                             }
                         }

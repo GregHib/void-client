@@ -18,7 +18,7 @@ class Class57 {
         var anInt1049: Int = 0
         @JvmField
         var aAudioResampler_1050: AudioResampler? = null
-        var aClass251_1051: Class251? = Class251()
+        var aConfigFlagUtil_1051: ConfigFlagUtil? = ConfigFlagUtil()
         @JvmField
         var anInt1053: Int = 0
         @JvmField
@@ -37,8 +37,8 @@ class Class57 {
             aWidgetDefinitionArray1048s = null
             aBoxedIntHolder_1055 = null
             aAudioResampler_1050 = null
-            aClass251_1051 = null
-            if (i != 14) aClass251_1051 = null
+            aConfigFlagUtil_1051 = null
+            if (i != 14) aConfigFlagUtil_1051 = null
         }
 
         fun method531(i: Byte, class70: Class70?): Int {

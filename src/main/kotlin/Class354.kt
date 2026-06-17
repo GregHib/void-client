@@ -1,4 +1,4 @@
-import Class251.Companion.method1915
+import ConfigFlagUtil.Companion.method1915
 import Class348_Sub17.Companion.method2929
 
 /* Class354 - Decompiled by JODE

@@ -331,7 +331,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         } else if (class46.anInt774 == 4) {
                                             val class324 = class46.method426((Class348_Sub8.aRenderer6654), 68.toByte())
                                             if (class324 == null) {
-                                                if (Class348_Sub42_Sub13.aBoolean9616) Class251.method1916(-9343, class46)
+                                                if (Class348_Sub42_Sub13.aBoolean9616) ConfigFlagUtil.method1916(-9343, class46)
                                             } else {
                                                 var i_50_ = class46.anInt749
                                                 var string = (class46.aString792)
@@ -379,7 +379,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 } else if ((class46.anInt806) == -1) abstractModelRenderer = (class46.method443(Class348_Sub8.aRenderer6654!!, (-57).toByte()))
                                                 else abstractModelRenderer = (method2263(Class348_Sub8.aRenderer6654, 0, (class46.anInt806)))
                                                 if (abstractModelRenderer == null) {
-                                                    if (Class348_Sub42_Sub13.aBoolean9616) Class251.method1916(-9343, class46)
+                                                    if (Class348_Sub42_Sub13.aBoolean9616) ConfigFlagUtil.method1916(-9343, class46)
                                                 } else {
                                                     val i_53_ = abstractModelRenderer.method966()
                                                     val i_54_ = abstractModelRenderer.method980()
@@ -423,7 +423,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     val class154 = (if (!(class46.aBoolean720)) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536))
                                                     class64 = (class213.method1559(class154, class17, Class348_Sub8.aRenderer6654, 2048, (class46.anInt841), 1, (class46.anInt795), 88.toByte(), (class46.anInt730)))
                                                     if (class64 != null) i_60_ = (-class64.fa() shr 1)
-                                                    else Class251.method1916(-9343, class46)
+                                                    else ConfigFlagUtil.method1916(-9343, class46)
                                                 }
                                             } else if ((class46.anInt770) == 5) {
                                                 val i_61_ = class46.anInt753
@@ -442,11 +442,11 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 }
                                             } else if (class46.anInt699 == -1) {
                                                 class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, -1, 0, (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), null, (Class64_Sub3.aClass261_5558), (MapAreaDefinition.aClass278_2529), -1))
-                                                if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46)
+                                                if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) ConfigFlagUtil.method1916(-9343, class46)
                                             } else {
                                                 val class17 = (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7))
                                                 class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aClass87_191, 2048, Class348_Sub8.aRenderer6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), class17, (Class64_Sub3.aClass261_5558), (MapAreaDefinition.aClass278_2529), (class46.anInt730)))
-                                                if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46)
+                                                if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) ConfigFlagUtil.method1916(-9343, class46)
                                             }
                                             if (class64 != null) {
                                                 val i_62_: Int

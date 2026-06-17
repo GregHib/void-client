@@ -48,7 +48,7 @@ class WaterDetailOptionState : GraphicsOptionState {
         var anInt5987: Int = 0
         @JvmField
         var anInt5988: Int = 0
-        var aClass251_5989: Class251? = Class251()
+        var aConfigFlagUtil_5989: ConfigFlagUtil? = ConfigFlagUtil()
         @JvmField
         var aModelLightingConfig_5990: ModelLightingConfig? = null
         @JvmField
@@ -78,7 +78,7 @@ class WaterDetailOptionState : GraphicsOptionState {
         fun method1780(i: Int) {
             aIntRange_5992 = null
             val i_0_ = 108 % ((-24 - i) / 54)
-            aClass251_5989 = null
+            aConfigFlagUtil_5989 = null
             anIntArrayArray5991 = null
             aClass259_5995 = null
             aSoundEnvelopeArray5993 = null
