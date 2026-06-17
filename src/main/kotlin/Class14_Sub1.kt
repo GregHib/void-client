@@ -258,7 +258,7 @@ class Class14_Sub1 : Class14, Interface18_Impl3 {
             }
             i_17_ = 256 + Class281.anInt3647 * 512
             i_16_ = 256 + 512 * Class352.anInt4336
-            i_18_ = (Class275.method2064(i_16_, Class355.anInt4372, 11219, i_17_) - Class121.anInt1797)
+            i_18_ = (Class275.method2064(i_16_, Class355.anInt4372, 11219, i_17_) - MinimapFlagRenderer.anInt1797)
             val i_19_ = -Class286_Sub4.anInt6246 + i_16_
             val i_20_ = -Class305.anInt3855 + i_18_
             val i_21_ = -Class59_Sub2_Sub2.anInt8685 + i_17_

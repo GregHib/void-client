@@ -90,7 +90,7 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
         fun method3231(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
             if (i_7_ > -123) method3229(14)
             Class239_Sub12.anInt5973 = i_5_
-            Class121.anInt1797 = i_4_
+            MinimapFlagRenderer.anInt1797 = i_4_
             Class352.anInt4336 = i_3_
             Class367_Sub11.anInt7403 = i_6_
             anInt9598++
@@ -98,7 +98,7 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
             if (Class239_Sub12.anInt5973 >= 100) {
                 val i_8_ = Class352.anInt4336 * 512 - -256
                 val i_9_ = Class281.anInt3647 * 512 - -256
-                val i_10_ = (method2064(i_8_, Class355.anInt4372, 11219, i_9_) + -Class121.anInt1797)
+                val i_10_ = (method2064(i_8_, Class355.anInt4372, 11219, i_9_) + -MinimapFlagRenderer.anInt1797)
                 val i_11_ = i_8_ - Class286_Sub4.anInt6246
                 val i_12_ = -Class305.anInt3855 + i_10_
                 val i_13_ = i_9_ - Class59_Sub2_Sub2.anInt8685

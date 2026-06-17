@@ -1134,7 +1134,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             NativeRenderer.anInt8007 = 0
             Class304.anInt3848 = 0
             Class286_Sub3.anInt6215 = 0
-            Class121.anInt1798 = 0
+            MinimapFlagRenderer.anInt1798 = 0
             Class312.anInt3926 = 0
             Class175.anInt2321 = 0
             Class288.anInt4956 = 0
@@ -1947,7 +1947,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class261.anInt3315 = 0
             Class124.anInt1860 = 0
             Class318_Sub1_Sub3_Sub1.anInt10022 = 0
-            Class121.anInt1799 = 0
+            MinimapFlagRenderer.anInt1799 = 0
             Class238_Sub1.anInt5833 = 0
             Class348_Sub16_Sub3.anInt8907 = 0
             Class373_Sub2.anInt7447 = 0
@@ -3598,7 +3598,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             NativeRenderer.anInt7887 = 0
             NativeRenderer.anInt7984 = 0
             AnimatedModelRenderer.anInt8393 = 0
-            Class121.anInt1795 = 0
+            MinimapFlagRenderer.anInt1795 = 0
             Class348_Sub40_Sub22.anInt9292 = 0
             Class348_Sub40_Sub24.anInt9331 = 0
             Class367_Sub1.anInt7284 = 0
@@ -4133,7 +4133,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class275.anInt3550 = 0
             Class281.anInt3647 = 0
             Class258_Sub2.anInt8537 = 0
-            Class121.anInt1797 = 0
+            MinimapFlagRenderer.anInt1797 = 0
             Class348_Sub42_Sub4.anInt9515 = 0
             Class352.anInt4336 = 0
             Class348_Sub40_Sub31.anInt9406 = 0

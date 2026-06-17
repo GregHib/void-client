@@ -119,7 +119,7 @@ class Class239_Sub24 : Class239 {
                     i_8_ = `is`[1]
                     i_9_ = `is`[3]
                     i_10_ = `is`[2]
-                    i_11_ = i + Class121.method1082(-81, false)
+                    i_11_ = i + MinimapFlagRenderer.method1082(-81, false)
                     i_12_ = Class348_Sub23.method2960(false, -52) + i_4_
                 } else {
                     var_renderer.DA(Class336.anInt4171, Class205.anInt2688, Class18.anInt282, Class305.anInt3861)
@@ -193,7 +193,7 @@ class Class239_Sub24 : Class239 {
                     var i_29_ = i_4_
                     if (Class59_Sub1.aBoolean5300) {
                         LinkedNodeListIterator.method1010(false, bool)
-                        i_28_ += Class121.method1082(-92, bool)
+                        i_28_ += MinimapFlagRenderer.method1082(-92, bool)
                         i_29_ += Class348_Sub23.method2960(bool, -48)
                     }
                     val class243 = class76!!.aClass243_1282

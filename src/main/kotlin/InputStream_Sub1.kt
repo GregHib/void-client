@@ -73,22 +73,22 @@ class InputStream_Sub1 : InputStream() {
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 16) {
-                if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, Class348_Sub23_Sub2.anInt9037 + i_4_, i_3_, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
+                if (!MinimapFlagRenderer.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, Class348_Sub23_Sub2.anInt9037 + i_4_, i_3_, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
                 Class42.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 32) {
-                if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, Class348_Sub23_Sub2.anInt9037 + i_4_, i_3_ + Class348_Sub23_Sub2.anInt9037, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
+                if (!MinimapFlagRenderer.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, Class348_Sub23_Sub2.anInt9037 + i_4_, i_3_ + Class348_Sub23_Sub2.anInt9037, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
                 Class42.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 64) {
-                if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, i_4_, Class348_Sub23_Sub2.anInt9037 + i_3_, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
+                if (!MinimapFlagRenderer.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, i_4_, Class348_Sub23_Sub2.anInt9037 + i_3_, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
                 Class42.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 128) {
-                if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, i_4_, i_3_, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
+                if (!MinimapFlagRenderer.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, i_4_, i_3_, i_5_, Class348_Sub23_Sub2.anInt9037, 18507)) return false
                 Class42.anInt562++
                 return true
             }

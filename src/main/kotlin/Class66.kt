@@ -1072,8 +1072,8 @@ object Class66 {
                 AbstractMenuEntry.aAbstractModelRenderer_1706 = Class174.aAbstractModelRenderer_2309
                 Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = AbstractMenuEntry.aAbstractModelRenderer_1706
                 Class348_Sub5.aAbstractModelRenderer_6627 = null
-                Class121.aAbstractModelRenderer_1800 = Class348_Sub5.aAbstractModelRenderer_6627
-                OutputStream_Sub2.aAbstractModelRenderer_106 = Class121.aAbstractModelRenderer_1800
+                MinimapFlagRenderer.aAbstractModelRenderer_1800 = Class348_Sub5.aAbstractModelRenderer_6627
+                OutputStream_Sub2.aAbstractModelRenderer_106 = MinimapFlagRenderer.aAbstractModelRenderer_1800
                 Class309.aAbstractModelRenderer_4808 = null
                 Class348_Sub42_Sub15.aAbstractModelRenderer_9658 = Class309.aAbstractModelRenderer_4808
                 Class71.aBoolean1211 = true

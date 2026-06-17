@@ -415,7 +415,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                     (Class132.aPlayer_1907!!.plane).toInt(),
                                     11219,
                                     Class281.anInt3647
-                                )) - Class121.anInt1797)), -90
+                                )) - MinimapFlagRenderer.anInt1797)), -90
                             )
                             return
                         }

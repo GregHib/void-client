@@ -16,9 +16,9 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
             while ((Class348_Sub40_Sub6.Companion.anInt9139 > i_6_)) {
                 method3139(i_6_, i, (-31).toByte())
                 val is_7_ = this.method3039(43.toByte(), Class344.anInt4265, 0)!!
-                is_3_[i_6_] = is_7_[0]!![Class121.anInt1796]
-                is_4_[i_6_] = is_7_[1]!![Class121.anInt1796]
-                is_5_[i_6_] = is_7_[2]!![Class121.anInt1796]
+                is_3_[i_6_] = is_7_[0]!![MinimapFlagRenderer.anInt1796]
+                is_4_[i_6_] = is_7_[1]!![MinimapFlagRenderer.anInt1796]
+                is_5_[i_6_] = is_7_[2]!![MinimapFlagRenderer.anInt1796]
                 i_6_++
             }
         }
@@ -34,7 +34,7 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
             while ((i_9_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
                 method3139(i_9_, i, (-31).toByte())
                 val is_10_ = this.method3048(Class344.anInt4265, i_8_ xor 0x25c5979e, 0)!!
-                `is`[i_9_] = is_10_[Class121.anInt1796]
+                `is`[i_9_] = is_10_[MinimapFlagRenderer.anInt1796]
                 i_9_++
             }
         }
@@ -55,7 +55,7 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
         val f = atan2((i_14_ + -2048).toDouble(), (i_15_ + -2048).toDouble()).toFloat()
         if (f.toDouble() >= -3.141592653589793 && f.toDouble() <= -2.356194490192345) {
             Class344.anInt4265 = i_12_
-            Class121.anInt1796 = i
+            MinimapFlagRenderer.anInt1796 = i
         } else if (!(f.toDouble() <= -1.5707963267948966) || !(f.toDouble() >= -2.356194490192345)) {
             if (!(f.toDouble() <= -0.7853981633974483) || !(f.toDouble() >= -1.5707963267948966)) {
                 if (!(f <= 0.0f) || !(f.toDouble() >= -0.7853981633974483)) {
@@ -63,33 +63,33 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
                         if (!(f.toDouble() >= 0.7853981633974483) || !(f.toDouble() <= 1.5707963267948966)) {
                             if (f.toDouble() >= 1.5707963267948966 && f.toDouble() <= 2.356194490192345) {
                                 Class344.anInt4265 = Class286_Sub2.anInt6212 + -i
-                                Class121.anInt1796 = i_12_
+                                MinimapFlagRenderer.anInt1796 = i_12_
                             } else if (f.toDouble() >= 2.356194490192345 && f.toDouble() <= 3.141592653589793) {
                                 Class344.anInt4265 = i_12_
-                                Class121.anInt1796 = -i + Class348_Sub40_Sub6.Companion.anInt9139
+                                MinimapFlagRenderer.anInt1796 = -i + Class348_Sub40_Sub6.Companion.anInt9139
                             }
                         } else {
-                            Class121.anInt1796 = -i_12_ + Class348_Sub40_Sub6.Companion.anInt9139
+                            MinimapFlagRenderer.anInt1796 = -i_12_ + Class348_Sub40_Sub6.Companion.anInt9139
                             Class344.anInt4265 = -i + Class286_Sub2.anInt6212
                         }
                     } else {
-                        Class121.anInt1796 = -i + Class348_Sub40_Sub6.Companion.anInt9139
+                        MinimapFlagRenderer.anInt1796 = -i + Class348_Sub40_Sub6.Companion.anInt9139
                         Class344.anInt4265 = -i_12_ + Class286_Sub2.anInt6212
                     }
                 } else {
-                    Class121.anInt1796 = i
+                    MinimapFlagRenderer.anInt1796 = i
                     Class344.anInt4265 = Class286_Sub2.anInt6212 - i_12_
                 }
             } else {
-                Class121.anInt1796 = Class348_Sub40_Sub6.Companion.anInt9139 - i_12_
+                MinimapFlagRenderer.anInt1796 = Class348_Sub40_Sub6.Companion.anInt9139 - i_12_
                 Class344.anInt4265 = i
             }
         } else {
             Class344.anInt4265 = i
-            Class121.anInt1796 = i_12_
+            MinimapFlagRenderer.anInt1796 = i_12_
         }
         Class344.anInt4265 = Class344.anInt4265 and Class299_Sub2.anInt6325
-        Class121.anInt1796 = Class121.anInt1796 and Class239_Sub22.anInt6076
+        MinimapFlagRenderer.anInt1796 = MinimapFlagRenderer.anInt1796 and Class239_Sub22.anInt6076
     }
 
     companion object {

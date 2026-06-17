@@ -1,4 +1,4 @@
-import Class121.method1084
+import MinimapFlagRenderer.method1084
 
 /* Class125 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

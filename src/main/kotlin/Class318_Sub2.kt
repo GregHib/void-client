@@ -1,4 +1,4 @@
-import Class121.method1084
+import MinimapFlagRenderer.method1084
 import Class139.Companion.method1166
 import Class148.Companion.method1197
 import Class163.Companion.method1273

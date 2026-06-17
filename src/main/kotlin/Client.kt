@@ -24,7 +24,7 @@ import OverlayColorTable.method1061
 import InputSettingsState.method1062
 import CacheArchiveIndex.Companion.method1064
 import MapSceneTileDefinition.Companion.method1075
-import Class121.method1081
+import MinimapFlagRenderer.method1081
 import Class122.method1086
 import Class123.Companion.method1091
 import Class124.Companion.method1096

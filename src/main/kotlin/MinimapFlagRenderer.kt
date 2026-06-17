@@ -4,7 +4,7 @@ import Class85.Companion.method828
 /* Class121 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class121 {
+object MinimapFlagRenderer {
     @JvmField
     var anInt1794: Int
     @JvmField

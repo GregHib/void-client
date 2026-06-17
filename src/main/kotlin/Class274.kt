@@ -214,7 +214,7 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
             Class348_Sub42_Sub15.aAbstractModelRenderer_9659 = null
             Class174.aAbstractModelRenderer_2309 = null
             Class341.aAbstractModelRendererArray4234 = null
-            Class121.aAbstractModelRenderer_1800 = null
+            MinimapFlagRenderer.aAbstractModelRenderer_1800 = null
             anInt3477++
             val i_2_ = 89 / ((-74 - i) / 42)
             Class348_Sub5.aAbstractModelRenderer_6627 = null
