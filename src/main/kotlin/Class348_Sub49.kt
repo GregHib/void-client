@@ -108,7 +108,7 @@ open class Class348_Sub49 : Class348 {
     }
 
     fun method3341(i: Int): Byte {
-        if (i != -8679) aClass223_7175 = null
+        if (i != -8679) aProjectileFactory_7175 = null
         anInt7195++
         return (-128 + (this.aByteArray7154!![this.anInt7197++])).toByte()
     }
@@ -274,7 +274,7 @@ open class Class348_Sub49 : Class348 {
 
     fun readByteInverse(i: Int): Byte {
         anInt7150++
-        if (i != -622951480) aClass223_7175 = null
+        if (i != -622951480) aProjectileFactory_7175 = null
         return (-this.aByteArray7154!![this.anInt7197++]).toByte()
     }
 
@@ -589,7 +589,7 @@ open class Class348_Sub49 : Class348 {
     }
 
     fun method3396(i: Int, i_96_: Int) {
-        if (i_96_ > -5) aClass223_7175 = null
+        if (i_96_ > -5) aProjectileFactory_7175 = null
         anInt7146++
         if ((i and 0x7f.inv()) != 0) {
             if ((i and 0x3fff.inv()) != 0) {
@@ -654,7 +654,7 @@ open class Class348_Sub49 : Class348 {
         var anInt7172: Int = 0
         var anInt7173: Int = 0
         var anInt7174: Int = 0
-        var aClass223_7175: Class223? = Class223(1, 2)
+        var aProjectileFactory_7175: ProjectileFactory? = ProjectileFactory(1, 2)
         var anInt7176: Int = 0
         var anInt7177: Int = 0
         var anInt7178: Int = 0
@@ -717,7 +717,7 @@ open class Class348_Sub49 : Class348 {
         @JvmStatic
         fun method3376(i: Int) {
             aLongArray7206 = null
-            aClass223_7175 = null
+            aProjectileFactory_7175 = null
             if (i != -2) method3376(-87)
         }
 

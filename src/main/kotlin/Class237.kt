@@ -49,7 +49,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_11_.toInt()]!![i_12_]) {
                                     Class348_Sub15.anIntArray6775!![0] = class277_10_.anInt3563
                                     Class348_Sub40_Sub38.anIntArray9480!![0] = i_13_
-                                    Class223.anIntArray2899!![0] = class277_10_.anInt3575
+                                    ProjectileFactory.anIntArray2899!![0] = class277_10_.anInt3575
                                     Class348_Sub6.anIntArray6631!![0] = class277_10_.anInt3570
                                     Class306.anIntArray3873!![0] = class277_10_.anInt3564
                                     HintIconState.anIntArray2370!![0] = 256
@@ -68,7 +68,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_16_.toInt()]!![i_17_]) {
                                     Class348_Sub15.anIntArray6775!![2] = class277_15_.anInt3563
                                     Class348_Sub40_Sub38.anIntArray9480!![2] = i_18_
-                                    Class223.anIntArray2899!![2] = class277_15_.anInt3575
+                                    ProjectileFactory.anIntArray2899!![2] = class277_15_.anInt3575
                                     Class348_Sub6.anIntArray6631!![2] = class277_15_.anInt3570
                                     Class306.anIntArray3873!![2] = class277_15_.anInt3564
                                     HintIconState.anIntArray2370!![2] = 512
@@ -89,7 +89,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_21_.toInt()]!![i_22_]) {
                                     Class348_Sub15.anIntArray6775!![6] = class277_20_.anInt3563
                                     Class348_Sub40_Sub38.anIntArray9480!![6] = i_23_
-                                    Class223.anIntArray2899!![6] = class277_20_.anInt3575
+                                    ProjectileFactory.anIntArray2899!![6] = class277_20_.anInt3575
                                     Class348_Sub6.anIntArray6631!![6] = class277_20_.anInt3570
                                     Class306.anIntArray3873!![6] = class277_20_.anInt3564
                                     HintIconState.anIntArray2370!![6] = 64
@@ -108,7 +108,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_26_.toInt()]!![i_27_]) {
                                     Class348_Sub15.anIntArray6775!![4] = class277_25_.anInt3563
                                     Class348_Sub40_Sub38.anIntArray9480!![4] = i_28_
-                                    Class223.anIntArray2899!![4] = class277_25_.anInt3575
+                                    ProjectileFactory.anIntArray2899!![4] = class277_25_.anInt3575
                                     Class348_Sub6.anIntArray6631!![4] = class277_25_.anInt3570
                                     Class306.anIntArray3873!![4] = class277_25_.anInt3564
                                     HintIconState.anIntArray2370!![4] = 128
@@ -134,7 +134,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_31_.toInt()]!![i_34_]) && (Class306.anIntArray3873!![i_33_] <= (class277_30_.anInt3564))) {
                                         Class348_Sub15.anIntArray6775!![i_33_] = (class277_30_.anInt3563)
                                         Class348_Sub40_Sub38.anIntArray9480!![i_33_] = i_35_
-                                        Class223.anIntArray2899!![i_33_] = (class277_30_.anInt3575)
+                                        ProjectileFactory.anIntArray2899!![i_33_] = (class277_30_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_33_] = (class277_30_.anInt3570)
                                         if (Class306.anIntArray3873!![i_33_] != (class277_30_.anInt3564)) HintIconState.anIntArray2370!![i_33_] = 32
                                         else HintIconState.anIntArray2370!![i_33_] = (Class273.method2057((HintIconState.anIntArray2370!![i_33_]), 32))
@@ -165,7 +165,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_39_.toInt()]!![i_42_]) && ((class277_38_.anInt3564) >= Class306.anIntArray3873!![i_41_])) {
                                         Class348_Sub15.anIntArray6775!![i_41_] = (class277_38_.anInt3563)
                                         Class348_Sub40_Sub38.anIntArray9480!![i_41_] = i_43_
-                                        Class223.anIntArray2899!![i_41_] = (class277_38_.anInt3575)
+                                        ProjectileFactory.anIntArray2899!![i_41_] = (class277_38_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_41_] = (class277_38_.anInt3570)
                                         if (Class306.anIntArray3873!![i_41_] != (class277_38_.anInt3564)) HintIconState.anIntArray2370!![i_41_] = 16
                                         else HintIconState.anIntArray2370!![i_41_] = (Class273.method2057((HintIconState.anIntArray2370!![i_41_]), 16))
@@ -196,7 +196,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_47_.toInt()]!![i_50_]) && (Class306.anIntArray3873!![i_49_] <= (class277_46_.anInt3564))) {
                                         Class348_Sub15.anIntArray6775!![i_49_] = (class277_46_.anInt3563)
                                         Class348_Sub40_Sub38.anIntArray9480!![i_49_] = i_51_
-                                        Class223.anIntArray2899!![i_49_] = (class277_46_.anInt3575)
+                                        ProjectileFactory.anIntArray2899!![i_49_] = (class277_46_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_49_] = (class277_46_.anInt3570)
                                         if (Class306.anIntArray3873!![i_49_] != (class277_46_.anInt3564)) HintIconState.anIntArray2370!![i_49_] = 8
                                         else HintIconState.anIntArray2370!![i_49_] = (Class273.method2057((HintIconState.anIntArray2370!![i_49_]), 8))
@@ -227,7 +227,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_55_.toInt()]!![i_58_]) && (Class306.anIntArray3873!![i_57_] <= (class277_54_.anInt3564))) {
                                         Class348_Sub15.anIntArray6775!![i_57_] = (class277_54_.anInt3563)
                                         Class348_Sub40_Sub38.anIntArray9480!![i_57_] = i_59_
-                                        Class223.anIntArray2899!![i_57_] = (class277_54_.anInt3575)
+                                        ProjectileFactory.anIntArray2899!![i_57_] = (class277_54_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_57_] = (class277_54_.anInt3570)
                                         if (class277_54_.anInt3564 == Class306.anIntArray3873!![i_57_]) HintIconState.anIntArray2370!![i_57_] = (Class273.method2057((HintIconState.anIntArray2370!![i_57_]), 4))
                                         else HintIconState.anIntArray2370!![i_57_] = 4
@@ -249,7 +249,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                     if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_7_]!![i_62_] && (Class306.anIntArray3873!![i_63_] <= class277.anInt3564)) {
                         Class348_Sub15.anIntArray6775!![i_63_] = class277.anInt3563
                         Class348_Sub40_Sub38.anIntArray9480!![i_63_] = i_61_
-                        Class223.anIntArray2899!![i_63_] = class277.anInt3575
+                        ProjectileFactory.anIntArray2899!![i_63_] = class277.anInt3575
                         Class348_Sub6.anIntArray6631!![i_63_] = class277.anInt3570
                         if (Class306.anIntArray3873!![i_63_] != class277.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
                         else HintIconState.anIntArray2370!![i_63_] = Class273.method2057((HintIconState.anIntArray2370!![i_63_]), 2)
@@ -543,7 +543,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                             if (i_121_ < 8 && ((Class306.anIntArray3873!![i_122_]) > (class277.anInt3564))) {
                                                 if (is_105_ != null) is_105_[i_103_] = (Class348_Sub40_Sub38.anIntArray9480!![i_122_])
                                                 is_110_[i_103_] = (Class348_Sub6.anIntArray6631!![i_122_])
-                                                is_109_[i_103_] = (Class223.anIntArray2899!![i_122_])
+                                                is_109_[i_103_] = (ProjectileFactory.anIntArray2899!![i_122_])
                                                 is_108_[i_103_] = (Class348_Sub15.anIntArray6775!![i_122_])
                                             } else {
                                                 if (is_105_ != null) is_105_[i_103_] = i_116_
@@ -660,7 +660,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                             if (i_141_ < 8 && (Class306.anIntArray3873!![i_142_]) >= 0) {
                                                 if (is_105_ != null) is_105_[i_103_] = (Class348_Sub40_Sub38.anIntArray9480!![i_142_])
                                                 is_110_[i_103_] = (Class348_Sub6.anIntArray6631!![i_142_])
-                                                is_109_[i_103_] = (Class223.anIntArray2899!![i_142_])
+                                                is_109_[i_103_] = (ProjectileFactory.anIntArray2899!![i_142_])
                                                 is_108_[i_103_] = (Class348_Sub15.anIntArray6775!![i_142_])
                                             } else {
                                                 if (!bool_75_ || !(KeyboardLayoutConfig.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {

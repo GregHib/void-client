@@ -26,10 +26,10 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
     var anInt4928: Int = 0
     @JvmField
     var anInt4929: Int = 0
-    override fun method51(i: Byte): Class223? {
+    override fun method51(i: Byte): ProjectileFactory? {
         if (i <= 116) return null
         anInt4927++
-        return MatrixCameraTransform.aClass223_5689
+        return MatrixCameraTransform.aProjectileFactory_5689
     }
 
     init {

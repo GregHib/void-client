@@ -121,7 +121,7 @@ class MapSceneDefLoader internal constructor(class230: Class230?, i: Int, class4
             '\u00df'
         )
         @JvmField
-        var aClass223_2489: Class223?
+        var aProjectileFactory_2489: ProjectileFactory?
 
         @JvmStatic
         fun method1394(i: Int, i_5_: Int, i_6_: Int) {
@@ -138,13 +138,13 @@ class MapSceneDefLoader internal constructor(class230: Class230?, i: Int, class4
         fun method1395(i: Byte) {
             aIntRange_2483 = null
             aCharArray2488 = null
-            aClass223_2489 = null
+            aProjectileFactory_2489 = null
             if (i.toInt() != 82) method1394(120, -36, -100)
         }
 
         init {
             aIntRange_2483 = IntRange(47, 6)
-            aClass223_2489 = Class223(3, 2)
+            aProjectileFactory_2489 = ProjectileFactory(3, 2)
         }
     }
 }

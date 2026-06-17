@@ -125,7 +125,7 @@ class Class348_Sub40_Sub21 : Class348_Sub40(0, true) {
         @JvmField
         var anInt9273: Int = 0
         @JvmField
-        var aClass223_9274: Class223?
+        var aProjectileFactory_9274: ProjectileFactory?
         @JvmField
         var aStringArray9275: Array<String?>? = arrayOfNulls<String>(100)
         @JvmField
@@ -139,7 +139,7 @@ class Class348_Sub40_Sub21 : Class348_Sub40(0, true) {
         fun method3106(i: Byte) {
             aLongArray9283 = null
             aStringArray9275 = null
-            aClass223_9274 = null
+            aProjectileFactory_9274 = null
             val i_12_ = 69 % ((19 - i) / 41)
         }
 
@@ -157,7 +157,7 @@ class Class348_Sub40_Sub21 : Class348_Sub40(0, true) {
         }
 
         init {
-            aClass223_9274 = Class223(5, 1)
+            aProjectileFactory_9274 = ProjectileFactory(5, 1)
             anInt9280 = 0
             aLongArray9283 = LongArray(256)
             for (i in 0..255) {

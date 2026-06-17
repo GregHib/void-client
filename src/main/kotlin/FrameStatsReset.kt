@@ -845,7 +845,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8948 = 0
             NativeRenderer.anInt7986 = 0
             Class286_Sub9.anInt6319 = 0
-            Class223.anInt2898 = 0
+            ProjectileFactory.anInt2898 = 0
             Class348_Sub49.anInt7201 = 0
             Class263.anInt3358 = 0
             Class279.anInt3597 = 0
@@ -1570,7 +1570,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class60.anInt1099 = 0
             Crc64Hashable.anInt4995 = 0
             IndexedFileCache.anInt1937 = 0
-            Class223.anInt2894 = 0
+            ProjectileFactory.anInt2894 = 0
             Class64_Sub3.anInt5531 = 0
             NpcCountAccessor.anInt2278 = 0
             Class239.anInt3139 = 0
@@ -1733,7 +1733,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub1.anInt10006 = 0
             Class64_Sub3.anInt5607 = 0
             Class258_Sub3_Sub1.anInt9942 = 0
-            Class223.anInt2897 = 0
+            ProjectileFactory.anInt2897 = 0
             NativeRenderer.anInt8009 = 0
             Crc64Hashable.anInt4986 = 0
             Class318_Sub1_Sub3.anInt8753 = 0

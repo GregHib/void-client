@@ -136,7 +136,7 @@ class LinkedNodeListIterator {
                 Class354.method3466(-119)
                 method703(RenderNode.anInt9721)
             }
-            Class223.aBoolean2895 = true
+            ProjectileFactory.aBoolean2895 = true
             if (i < 49) anInt1651 = 10
         }
 

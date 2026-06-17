@@ -74,7 +74,7 @@ class LocTypeDefLoader internal constructor(class230: Class230?, i: Int, class45
         var anInt2505: Int = 0
         var anInt2506: Int = 0
         @JvmField
-        var aClass223_2507: Class223? = Class223(9, 2)
+        var aProjectileFactory_2507: ProjectileFactory? = ProjectileFactory(9, 2)
         var anInt2508: Int = 0
         @JvmField
         var anIntArray2509: IntArray? = IntArray(2)
@@ -107,7 +107,7 @@ class LocTypeDefLoader internal constructor(class230: Class230?, i: Int, class45
         fun method1407(i: Byte) {
             val i_2_ = 92 / ((-3 - i) / 60)
             anIntArray2509 = null
-            aClass223_2507 = null
+            aProjectileFactory_2507 = null
         }
     }
 }

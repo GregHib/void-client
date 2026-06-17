@@ -74,7 +74,7 @@ abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545:
                 Class354.method3466(100)
                 Class66.method703(RenderNode.anInt9721)
             }
-            Class223.aBoolean2895 = false
+            ProjectileFactory.aBoolean2895 = false
             TextureGenerator.aString2496 = ""
             Class64_Sub3.aString5600 = TextureGenerator.aString2496
             RenderableGroup.method1448(-56)

@@ -180,7 +180,7 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             val i_15_ = -i_13_ + i_4_
             RenderNode.anIntArrayArray9723!![i_12_]!![i_13_] = 99
             if (i_1_ >= -27) method2011(103.toByte())
-            Class223.anIntArrayArray2900!![i_12_]!![i_13_] = 0
+            ProjectileFactory.anIntArrayArray2900!![i_12_]!![i_13_] = 0
             var i_16_ = 0
             Class367_Sub11.anIntArray7397!![i_16_] = i_10_
             var i_17_ = 0
@@ -250,62 +250,62 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                         return true
                     }
                 } while (false)
-                i_20_ = Class223.anIntArrayArray2900!![i_12_]!![i_13_] + 1
+                i_20_ = ProjectileFactory.anIntArrayArray2900!![i_12_]!![i_13_] + 1
                 if (i_12_ > 0 && RenderNode.anIntArrayArray9723!![i_12_ + -1]!![i_13_] == 0 && (0x43a40000 and `is`[i_18_ - 1]!![i_19_]) == 0 && (0x4e240000 and `is`[i_18_ - 1]!![1 + i_19_]) == 0) {
                     Class367_Sub11.anIntArray7397!![i_16_] = -1 + i_10_
                     CircleDrawer.anIntArray2694!![i_16_] = i_11_
                     RenderNode.anIntArrayArray9723!![-1 + i_12_]!![i_13_] = 2
                     i_16_ = i_16_ + 1 and 0xfff
-                    Class223.anIntArrayArray2900!![i_12_ + -1]!![i_13_] = i_20_
+                    ProjectileFactory.anIntArrayArray2900!![i_12_ + -1]!![i_13_] = i_20_
                 }
                 if (i_12_ < 126 && (RenderNode.anIntArrayArray9723!![i_12_ - -1]!![i_13_] == 0) && (0x60e40000 and `is`[2 + i_18_]!![i_19_]) == 0 && (`is`[i_18_ + 2]!![i_19_ + 1] and 0x78240000) == 0) {
                     Class367_Sub11.anIntArray7397!![i_16_] = 1 + i_10_
                     CircleDrawer.anIntArray2694!![i_16_] = i_11_
                     RenderNode.anIntArrayArray9723!![1 + i_12_]!![i_13_] = 8
                     i_16_ = i_16_ + 1 and 0xfff
-                    Class223.anIntArrayArray2900!![1 + i_12_]!![i_13_] = i_20_
+                    ProjectileFactory.anIntArrayArray2900!![1 + i_12_]!![i_13_] = i_20_
                 }
                 if (i_13_ > 0 && RenderNode.anIntArrayArray9723!![i_12_]!![-1 + i_13_] == 0 && (0x43a40000 and `is`[i_18_]!![i_19_ - 1]) == 0 && ((`is`[i_18_ + 1]!![-1 + i_19_] and 0x60e40000) == 0)) {
                     Class367_Sub11.anIntArray7397!![i_16_] = i_10_
                     CircleDrawer.anIntArray2694!![i_16_] = i_11_ - 1
                     RenderNode.anIntArrayArray9723!![i_12_]!![i_13_ + -1] = 1
                     i_16_ = 1 + i_16_ and 0xfff
-                    Class223.anIntArrayArray2900!![i_12_]!![i_13_ + -1] = i_20_
+                    ProjectileFactory.anIntArrayArray2900!![i_12_]!![i_13_ + -1] = i_20_
                 }
                 if (i_13_ < 126 && RenderNode.anIntArrayArray9723!![i_12_]!![i_13_ + 1] == 0 && (`is`[i_18_]!![2 + i_19_] and 0x4e240000) == 0 && ((0x78240000 and `is`[1 + i_18_]!![2 + i_19_]) == 0)) {
                     Class367_Sub11.anIntArray7397!![i_16_] = i_10_
                     CircleDrawer.anIntArray2694!![i_16_] = 1 + i_11_
                     i_16_ = 1 + i_16_ and 0xfff
                     RenderNode.anIntArrayArray9723!![i_12_]!![1 + i_13_] = 4
-                    Class223.anIntArrayArray2900!![i_12_]!![i_13_ - -1] = i_20_
+                    ProjectileFactory.anIntArrayArray2900!![i_12_]!![i_13_ - -1] = i_20_
                 }
                 if (i_12_ > 0 && i_13_ > 0 && RenderNode.anIntArrayArray9723!![-1 + i_12_]!![i_13_ + -1] == 0 && (`is`[i_18_ + -1]!![i_19_] and 0x4fa40000) == 0 && (`is`[i_18_ - 1]!![i_19_ - 1] and 0x43a40000) == 0 && (`is`[i_18_]!![i_19_ - 1] and 0x63e40000) == 0) {
                     Class367_Sub11.anIntArray7397!![i_16_] = -1 + i_10_
                     CircleDrawer.anIntArray2694!![i_16_] = i_11_ - 1
                     i_16_ = 0xfff and 1 + i_16_
                     RenderNode.anIntArrayArray9723!![i_12_ - 1]!![i_13_ - 1] = 3
-                    Class223.anIntArrayArray2900!![-1 + i_12_]!![-1 + i_13_] = i_20_
+                    ProjectileFactory.anIntArrayArray2900!![-1 + i_12_]!![-1 + i_13_] = i_20_
                 }
                 if (i_12_ < 126 && i_13_ > 0 && (RenderNode.anIntArrayArray9723!![i_12_ + 1]!![-1 + i_13_] == 0) && (`is`[i_18_ - -1]!![i_19_ + -1] and 0x63e40000) == 0 && (0x60e40000 and `is`[2 + i_18_]!![-1 + i_19_]) == 0 && (`is`[i_18_ - -2]!![i_19_] and 0x78e40000) == 0) {
                     Class367_Sub11.anIntArray7397!![i_16_] = 1 + i_10_
                     CircleDrawer.anIntArray2694!![i_16_] = i_11_ + -1
                     RenderNode.anIntArrayArray9723!![1 + i_12_]!![-1 + i_13_] = 9
                     i_16_ = 0xfff and i_16_ - -1
-                    Class223.anIntArrayArray2900!![i_12_ - -1]!![i_13_ - 1] = i_20_
+                    ProjectileFactory.anIntArrayArray2900!![i_12_ - -1]!![i_13_ - 1] = i_20_
                 }
                 if (i_12_ > 0 && i_13_ < 126 && RenderNode.anIntArrayArray9723!![i_12_ - 1]!![1 + i_13_] == 0 && (`is`[i_18_ - 1]!![1 + i_19_] and 0x4fa40000) == 0 && (0x4e240000 and `is`[i_18_ - 1]!![2 + i_19_]) == 0 && (`is`[i_18_]!![i_19_ - -2] and 0x7e240000) == 0) {
                     Class367_Sub11.anIntArray7397!![i_16_] = i_10_ - 1
                     CircleDrawer.anIntArray2694!![i_16_] = i_11_ + 1
                     RenderNode.anIntArrayArray9723!![i_12_ + -1]!![1 + i_13_] = 6
                     i_16_ = 1 + i_16_ and 0xfff
-                    Class223.anIntArrayArray2900!![-1 + i_12_]!![1 + i_13_] = i_20_
+                    ProjectileFactory.anIntArrayArray2900!![-1 + i_12_]!![1 + i_13_] = i_20_
                 }
                 if (i_12_ < 126 && i_13_ < 126 && RenderNode.anIntArrayArray9723!![i_12_ + 1]!![1 + i_13_] == 0 && (`is`[i_18_ - -1]!![i_19_ + 2] and 0x7e240000) == 0 && (`is`[i_18_ + 2]!![i_19_ - -2] and 0x78240000) == 0 && ((0x78e40000 and `is`[i_18_ + 2]!![1 + i_19_]) == 0)) {
                     Class367_Sub11.anIntArray7397!![i_16_] = i_10_ - -1
                     CircleDrawer.anIntArray2694!![i_16_] = 1 + i_11_
                     i_16_ = 1 + i_16_ and 0xfff
                     RenderNode.anIntArrayArray9723!![1 + i_12_]!![i_13_ - -1] = 12
-                    Class223.anIntArrayArray2900!![1 + i_12_]!![1 + i_13_] = i_20_
+                    ProjectileFactory.anIntArrayArray2900!![1 + i_12_]!![1 + i_13_] = i_20_
                 }
             }
             Class348_Sub40_Sub30.anInt9388 = i_10_

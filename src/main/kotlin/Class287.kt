@@ -10,23 +10,23 @@ class Class287 {
     var anInt3687: Int = 0
     var anInterface12Array3688: Array<Interface12?> = emptyArray()
     var anInt3690: Int = 0
-    private fun method2182(bool: Boolean, class223: Class223?, class348_sub49: Class348_Sub49?): Interface12? {
+    private fun method2182(bool: Boolean, projectileFactory: ProjectileFactory?, class348_sub49: Class348_Sub49?): Interface12? {
         try {
             anInt3692++
-            if (ModelDefinitionCache.aClass223_2868 == class223) return VarpStore.method1312(64.toByte(), class348_sub49!!)
-            if (Class348_Sub49.aClass223_7175 == class223) return AnimatedModelRenderer.method987(743571200, class348_sub49!!)
-            if (MatrixCameraTransform.aClass223_5689 == class223) return Class303.method2287(class348_sub49!!, (-112).toByte())
-            if (class223 == Class28.aClass223_4997) return Class337.method2660(26.toByte(), class348_sub49!!)
+            if (ModelDefinitionCache.aProjectileFactory_2868 == projectileFactory) return VarpStore.method1312(64.toByte(), class348_sub49!!)
+            if (Class348_Sub49.aProjectileFactory_7175 == projectileFactory) return AnimatedModelRenderer.method987(743571200, class348_sub49!!)
+            if (MatrixCameraTransform.aProjectileFactory_5689 == projectileFactory) return Class303.method2287(class348_sub49!!, (-112).toByte())
+            if (projectileFactory == Class28.aProjectileFactory_4997) return Class337.method2660(26.toByte(), class348_sub49!!)
             if (bool != true) Companion.method2180((-104).toByte())
-            if (class223 == Class348_Sub40_Sub21.aClass223_9274) return Class288_Sub1.Companion.method2189(class348_sub49!!, 86)
-            if (class223 == Class313.aClass223_3934) return Class5.method179(16533, class348_sub49!!)
-            if (MapSceneDefLoader.aClass223_2489 == class223) return Class348_Sub46.method3322(0, class348_sub49!!)
-            if (class223 == SpotAnimVector.aClass223_2307) return Class50_Sub4.method472(-27794, class348_sub49!!)
-            if (OrientationRotator.aClass223_2045 == class223) return Class328_Sub2.method2612(class348_sub49!!, true)
-            if (LocTypeDefLoader.aClass223_2507 == class223) return Class285_Sub1.method2128(-1730, class348_sub49!!)
+            if (projectileFactory == Class348_Sub40_Sub21.aProjectileFactory_9274) return Class288_Sub1.Companion.method2189(class348_sub49!!, 86)
+            if (projectileFactory == Class313.aProjectileFactory_3934) return Class5.method179(16533, class348_sub49!!)
+            if (MapSceneDefLoader.aProjectileFactory_2489 == projectileFactory) return Class348_Sub46.method3322(0, class348_sub49!!)
+            if (projectileFactory == SpotAnimVector.aProjectileFactory_2307) return Class50_Sub4.method472(-27794, class348_sub49!!)
+            if (OrientationRotator.aProjectileFactory_2045 == projectileFactory) return Class328_Sub2.method2612(class348_sub49!!, true)
+            if (LocTypeDefLoader.aProjectileFactory_2507 == projectileFactory) return Class285_Sub1.method2128(-1730, class348_sub49!!)
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vp.F(" + bool + ',' + (if (class223 != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("vp.F(" + bool + ',' + (if (projectileFactory != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 

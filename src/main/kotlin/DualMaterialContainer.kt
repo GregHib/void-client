@@ -16,17 +16,17 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
         anInt1640++
         if (interface12 == null) return null
         val class223 = interface12.method51(120.toByte())
-        if (ModelDefinitionCache.aClass223_2868 == class223) return ClickFeedbackTask(interface12 as Class52)
-        if (MatrixCameraTransform.aClass223_5689 == class223) return Class240(method998(-107), interface12 as MinimapSpriteRenderer)
-        if (class223 == Class348_Sub40_Sub21.aClass223_9274) return WidgetComponentNode(aClass45_1637, interface12 as Class288)
-        if (class223 == Class28.aClass223_4997) return ScrollingWidgetComponentNode(aClass45_1637, interface12 as Class288_Sub1)
-        if (class223 == Class348_Sub49.aClass223_7175) return Class5_Sub2(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub2)
-        if (class223 == Class313.aClass223_3934) return Class5_Sub3(aClass45_1637, aClass45_1641!!, interface12 as Class369_Sub1)
-        if (class223 == MapSceneDefLoader.aClass223_2489) return Class5_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3)
-        if (class223 == SpotAnimVector.aClass223_2307) return Class67(aClass45_1637, aClass45_1641, interface12 as HeapInfoRecord)
+        if (ModelDefinitionCache.aProjectileFactory_2868 == class223) return ClickFeedbackTask(interface12 as Class52)
+        if (MatrixCameraTransform.aProjectileFactory_5689 == class223) return Class240(method998(-107), interface12 as MinimapSpriteRenderer)
+        if (class223 == Class348_Sub40_Sub21.aProjectileFactory_9274) return WidgetComponentNode(aClass45_1637, interface12 as Class288)
+        if (class223 == Class28.aProjectileFactory_4997) return ScrollingWidgetComponentNode(aClass45_1637, interface12 as Class288_Sub1)
+        if (class223 == Class348_Sub49.aProjectileFactory_7175) return Class5_Sub2(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub2)
+        if (class223 == Class313.aProjectileFactory_3934) return Class5_Sub3(aClass45_1637, aClass45_1641!!, interface12 as Class369_Sub1)
+        if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return Class5_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3)
+        if (class223 == SpotAnimVector.aProjectileFactory_2307) return Class67(aClass45_1637, aClass45_1641, interface12 as HeapInfoRecord)
         if (bool != true) anIntArray1636 = null
-        if (OrientationRotator.aClass223_2045 == class223) return Class265(aClass45_1637, interface12 as ConfigValueProvider)
-        if (LocTypeDefLoader.aClass223_2507 == class223) return Class5_Sub1_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3_Sub1)
+        if (OrientationRotator.aProjectileFactory_2045 == class223) return Class265(aClass45_1637, interface12 as ConfigValueProvider)
+        if (LocTypeDefLoader.aProjectileFactory_2507 == class223) return Class5_Sub1_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3_Sub1)
         return null
     }
 

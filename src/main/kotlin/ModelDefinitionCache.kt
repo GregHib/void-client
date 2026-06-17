@@ -77,7 +77,7 @@ class ModelDefinitionCache internal constructor(class230: Class230?, i: Int, cla
         var anInt2865: Int = 0
         var anInt2867: Int = 0
         @JvmField
-        var aClass223_2868: Class223? = Class223(0, 1)
+        var aProjectileFactory_2868: ProjectileFactory? = ProjectileFactory(0, 1)
         var anInt2869: Int = 0
         var anInt2870: Int = 0
         var aByte2871: Byte = 0
@@ -258,7 +258,7 @@ class ModelDefinitionCache internal constructor(class230: Class230?, i: Int, cla
         @JvmStatic
         fun method1604(i: Int) {
             aSingletonMarker_2864 = null
-            aClass223_2868 = null
+            aProjectileFactory_2868 = null
             if (i != 11868) anInt2872 = -94
         }
     }

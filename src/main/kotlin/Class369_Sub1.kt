@@ -6,10 +6,10 @@ class Class369_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, class341: Cla
     var anInt8580: Int = 0
     @JvmField
     var anInt8582: Int = 0
-    override fun method51(i: Byte): Class223? {
+    override fun method51(i: Byte): ProjectileFactory? {
         if (i <= 116) method51((-95).toByte())
         anInt8581++
-        return Class313.aClass223_3934
+        return Class313.aProjectileFactory_3934
     }
 
     init {

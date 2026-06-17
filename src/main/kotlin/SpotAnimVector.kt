@@ -87,7 +87,7 @@ class SpotAnimVector {
         @JvmField
         var aClass45_2306: Class45? = null
         @JvmField
-        var aClass223_2307: Class223? = Class223(7, 2)
+        var aProjectileFactory_2307: ProjectileFactory? = ProjectileFactory(7, 2)
         @JvmField
         var aAbstractModelRenderer_2309: AbstractModelRenderer? = null
 
@@ -136,7 +136,7 @@ class SpotAnimVector {
 
         @JvmStatic
         fun method1334(i: Byte) {
-            aClass223_2307 = null
+            aProjectileFactory_2307 = null
             if (i.toInt() != -110) method1333(null, -51, null)
             aIntRange_2305 = null
             aAbstractModelRenderer_2309 = null

@@ -18,10 +18,10 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
     var anInt4946: Int = 0
     var anInt4947: Int = 0
     var aScreenAnchorAlignment_4948: ScreenAnchorAlignment? = null
-    override fun method51(i: Byte): Class223? {
+    override fun method51(i: Byte): ProjectileFactory? {
         anInt4941++
         if (i <= 116) aClass299_4938 = null
-        return SpotAnimVector.aClass223_2307
+        return SpotAnimVector.aProjectileFactory_2307
     }
 
     init {
@@ -72,7 +72,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
         fun method1248(i: Int): Array<ScreenAnchorAlignment?> {
             anInt4933++
             if (i < 11) aClass299_4938 = null
-            return (arrayOf<ScreenAnchorAlignment?>(Class5_Sub1.aScreenAnchorAlignment_8344, SoftwareSpriteRaster.aScreenAnchorAlignment_1620, Class223.aScreenAnchorAlignment_2893))
+            return (arrayOf<ScreenAnchorAlignment?>(Class5_Sub1.aScreenAnchorAlignment_8344, SoftwareSpriteRaster.aScreenAnchorAlignment_1620, ProjectileFactory.aScreenAnchorAlignment_2893))
         }
 
         @JvmStatic

@@ -4,13 +4,13 @@
 object OrientationRotator {
     var anInt2044: Int = 0
     @JvmField
-    var aClass223_2045: Class223? = Class223(8, 1)
+    var aProjectileFactory_2045: ProjectileFactory? = ProjectileFactory(8, 1)
     @JvmField
     var anInt2046: Int = 0
 
     @JvmStatic
     fun method1200(bool: Boolean) {
-        aClass223_2045 = null
+        aProjectileFactory_2045 = null
         if (bool != false) anInt2046 = 37
     }
 

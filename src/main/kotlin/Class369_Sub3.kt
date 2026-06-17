@@ -15,10 +15,10 @@ public open class Class369_Sub3(screenAnchorAlignment: ScreenAnchorAlignment?, c
     @JvmField
     var anInt8603: Int = 0
 
-    override fun method51(i: Byte): Class223? {
+    override fun method51(i: Byte): ProjectileFactory? {
         anInt8594++
         if (i <= 116) return null
-        return MapSceneDefLoader.aClass223_2489
+        return MapSceneDefLoader.aProjectileFactory_2489
     }
 
     init {

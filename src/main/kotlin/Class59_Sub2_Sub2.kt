@@ -125,7 +125,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 for (i_27_ in 0..127) {
                     for (i_28_ in 0..127) {
                         RenderNode.anIntArrayArray9723!![i_27_]!![i_28_] = 0
-                        Class223.anIntArrayArray2900!![i_27_]!![i_28_] = 99999999
+                        ProjectileFactory.anIntArrayArray2900!![i_27_]!![i_28_] = 99999999
                     }
                 }
                 anInt8676++
@@ -148,7 +148,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                         for (i_38_ in i_23_ - i_36_..i_23_ - -i_36_) {
                             val i_39_ = i_37_ - i_30_
                             val i_40_ = -i_31_ + i_38_
-                            if (i_39_ >= 0 && i_40_ >= 0 && i_39_ < 128 && i_40_ < 128 && (Class223.anIntArrayArray2900!![i_39_]!![i_40_] < 100)) {
+                            if (i_39_ >= 0 && i_40_ >= 0 && i_39_ < 128 && i_40_ < 128 && (ProjectileFactory.anIntArrayArray2900!![i_39_]!![i_40_] < 100)) {
                                 var i_41_ = 0
                                 if (i <= i_37_) {
                                     if (-1 + i_24_ + i < i_37_) i_41_ = i_37_ - -1 - (i + i_24_)
@@ -158,10 +158,10 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                                     if (i_17_ + (i_23_ - 1) < i_38_) i_42_ = -i_17_ - i_23_ - (-1 - i_38_)
                                 } else i_42_ = -i_38_ + i_23_
                                 val i_43_ = i_41_ * i_41_ + i_42_ * i_42_
-                                if (i_43_ < i_34_ || i_34_ == i_43_ && ((Class223.anIntArrayArray2900!![i_39_]!![i_40_]) < i_35_)) {
+                                if (i_43_ < i_34_ || i_34_ == i_43_ && ((ProjectileFactory.anIntArrayArray2900!![i_39_]!![i_40_]) < i_35_)) {
                                     i_34_ = i_43_
                                     i_32_ = i_37_
-                                    i_35_ = (Class223.anIntArrayArray2900!![i_39_]!![i_40_])
+                                    i_35_ = (ProjectileFactory.anIntArrayArray2900!![i_39_]!![i_40_])
                                     i_33_ = i_38_
                                 }
                             }

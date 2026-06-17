@@ -21,7 +21,7 @@ public open class Class369(screenAnchorAlignment: ScreenAnchorAlignment?, class3
     @JvmField
     var aClass341_4973: Class341? = null
 
-    override fun method51(i: Byte): Class223? {
+    override fun method51(i: Byte): ProjectileFactory? {
         if (i < 116) return null
         anInt4967++
         return null

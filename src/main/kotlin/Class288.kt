@@ -1,4 +1,4 @@
-import Class223.Companion.method1613
+import ProjectileFactory.Companion.method1613
 import Class299_Sub1.Companion.method2259
 import Class348.Companion.method2709
 import Class64.Companion.method616
@@ -18,9 +18,9 @@ open class Class288 internal constructor(i: Int, screenAnchorAlignment: ScreenAn
     @JvmField
     var anInt4958: Int = 0
 
-    override fun method51(i: Byte): Class223? {
+    override fun method51(i: Byte): ProjectileFactory? {
         anInt4957++
-        return Class348_Sub40_Sub21.aClass223_9274
+        return Class348_Sub40_Sub21.aProjectileFactory_9274
     }
 
     init {

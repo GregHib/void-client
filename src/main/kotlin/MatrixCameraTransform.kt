@@ -299,12 +299,12 @@ class MatrixCameraTransform : AbstractCameraTransform() {
         @JvmField
         var anInt5688: Int = 0
         @JvmField
-        var aClass223_5689: Class223? = Class223(4, 1)
+        var aProjectileFactory_5689: ProjectileFactory? = ProjectileFactory(4, 1)
 
         @JvmStatic
         fun method911(i: Int) {
             if (i != 0) method911(-121)
-            aClass223_5689 = null
+            aProjectileFactory_5689 = null
             aRenderConfig5684 = null
             aClass246_5675 = null
             aClass351_5677 = null

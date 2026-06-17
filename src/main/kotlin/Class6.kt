@@ -107,7 +107,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 npc.anInt10310 = (npc.aClass79_10505!!.anInt1329) shl 3
                 if (bool) npc.method2435((-108).toByte(), i_23_, true)
                 npc.method2444((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) - -i_21_, i_20_ == 1, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + i_22_, i + 724138125, npc.method2436(50.toByte()), i_19_)
-                if (npc.aClass79_10505!!.method793(0)) Class223.method1614(979190089, npc, npc.plane.toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
+                if (npc.aClass79_10505!!.method793(0)) ProjectileFactory.method1614(979190089, npc, npc.plane.toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
             }
             if (i == -724138005) Class299.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
         }

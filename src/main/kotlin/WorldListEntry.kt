@@ -49,9 +49,9 @@ class WorldListEntry {
         }
 
         @JvmStatic
-        fun method285(i: Int): Array<Class223?> {
+        fun method285(i: Int): Array<ProjectileFactory?> {
             anInt309++
-            return (arrayOf<Class223?>(ModelDefinitionCache.aClass223_2868, Class348_Sub49.aClass223_7175, Class313.aClass223_3934, MapSceneDefLoader.aClass223_2489, MatrixCameraTransform.aClass223_5689, Class348_Sub40_Sub21.aClass223_9274, Class28.aClass223_4997, SpotAnimVector.aClass223_2307, OrientationRotator.aClass223_2045, LocTypeDefLoader.aClass223_2507))
+            return (arrayOf<ProjectileFactory?>(ModelDefinitionCache.aProjectileFactory_2868, Class348_Sub49.aProjectileFactory_7175, Class313.aProjectileFactory_3934, MapSceneDefLoader.aProjectileFactory_2489, MatrixCameraTransform.aProjectileFactory_5689, Class348_Sub40_Sub21.aProjectileFactory_9274, Class28.aProjectileFactory_4997, SpotAnimVector.aProjectileFactory_2307, OrientationRotator.aProjectileFactory_2045, LocTypeDefLoader.aProjectileFactory_2507))
         }
 
         @JvmStatic

@@ -667,7 +667,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (NpcCountAccessor.aIntRange_2279 == Class348_Sub3.aIntRange_6584) {
-                Class348_Sub40_Sub34.method3141(Class223.aBoolean2895, 11.toByte())
+                Class348_Sub40_Sub34.method3141(ProjectileFactory.aBoolean2895, 11.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return false
             }

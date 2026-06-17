@@ -5,7 +5,7 @@ import Class286_Sub3.Companion.method2148
 */
 object Class313 {
     var anInt3933: Int = 0
-    var aClass223_3934: Class223? = Class223(2, 2)
+    var aProjectileFactory_3934: ProjectileFactory? = ProjectileFactory(2, 2)
     var aFloat3935: Float = 0f
     @JvmField
     var anInt3936: Int = 0
@@ -13,7 +13,7 @@ object Class313 {
 
     @JvmStatic
     fun method2333(bool: Boolean) {
-        if (bool == false) aClass223_3934 = null
+        if (bool == false) aProjectileFactory_3934 = null
     }
 
     @JvmStatic

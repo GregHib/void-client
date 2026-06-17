@@ -64,7 +64,7 @@ class MapAreaDefinition {
             val i_19_ = i_10_ - i_17_
             RenderNode.anIntArrayArray9723!![i_17_]!![i_18_] = 99
             val i_20_ = i_7_ + -i_18_
-            Class223.anIntArrayArray2900!![i_17_]!![i_18_] = 0
+            ProjectileFactory.anIntArrayArray2900!![i_17_]!![i_18_] = 0
             var i_21_ = 0
             Class367_Sub11.anIntArray7397!![i_21_] = i_15_
             var i_22_ = 0
@@ -134,7 +134,7 @@ class MapAreaDefinition {
                         return true
                     }
                 } while (false)
-                i_25_ = Class223.anIntArrayArray2900!![i_17_]!![i_18_] + 1
+                i_25_ = ProjectileFactory.anIntArrayArray2900!![i_17_]!![i_18_] + 1
                 while_49_@ do {
                     if (i_17_ > 0 && RenderNode.anIntArrayArray9723!![-1 + i_17_]!![i_18_] == 0 && (`is`[-1 + i_23_]!![i_24_] and 0x43a40000) == 0 && ((`is`[-1 + i_23_]!![-1 + i_12_ + i_24_] and 0x4e240000) == 0)) {
                         var i_26_ = 1
@@ -146,7 +146,7 @@ class MapAreaDefinition {
                         CircleDrawer.anIntArray2694!![i_21_] = i_16_
                         i_21_ = i_21_ - -1 and 0xfff
                         RenderNode.anIntArrayArray9723!![i_17_ - 1]!![i_18_] = 2
-                        Class223.anIntArrayArray2900!![-1 + i_17_]!![i_18_] = i_25_
+                        ProjectileFactory.anIntArrayArray2900!![-1 + i_17_]!![i_18_] = i_25_
                     }
                 } while (false)
                 while_50_@ do {
@@ -160,7 +160,7 @@ class MapAreaDefinition {
                         CircleDrawer.anIntArray2694!![i_21_] = i_16_
                         RenderNode.anIntArrayArray9723!![1 + i_17_]!![i_18_] = 8
                         i_21_ = 0xfff and i_21_ - -1
-                        Class223.anIntArrayArray2900!![i_17_ + 1]!![i_18_] = i_25_
+                        ProjectileFactory.anIntArrayArray2900!![i_17_ + 1]!![i_18_] = i_25_
                     }
                 } while (false)
                 while_51_@ do {
@@ -174,7 +174,7 @@ class MapAreaDefinition {
                         CircleDrawer.anIntArray2694!![i_21_] = -1 + i_16_
                         RenderNode.anIntArrayArray9723!![i_17_]!![-1 + i_18_] = 1
                         i_21_ = 0xfff and 1 + i_21_
-                        Class223.anIntArrayArray2900!![i_17_]!![-1 + i_18_] = i_25_
+                        ProjectileFactory.anIntArrayArray2900!![i_17_]!![-1 + i_18_] = i_25_
                     }
                 } while (false)
                 while_52_@ do {
@@ -188,7 +188,7 @@ class MapAreaDefinition {
                         CircleDrawer.anIntArray2694!![i_21_] = i_16_ - -1
                         RenderNode.anIntArrayArray9723!![i_17_]!![1 + i_18_] = 4
                         i_21_ = i_21_ - -1 and 0xfff
-                        Class223.anIntArrayArray2900!![i_17_]!![i_18_ + 1] = i_25_
+                        ProjectileFactory.anIntArrayArray2900!![i_17_]!![i_18_ + 1] = i_25_
                     }
                 } while (false)
                 while_53_@ do {
@@ -202,7 +202,7 @@ class MapAreaDefinition {
                         CircleDrawer.anIntArray2694!![i_21_] = -1 + i_16_
                         i_21_ = 1 + i_21_ and 0xfff
                         RenderNode.anIntArrayArray9723!![i_17_ - 1]!![-1 + i_18_] = 3
-                        Class223.anIntArrayArray2900!![i_17_ + -1]!![-1 + i_18_] = i_25_
+                        ProjectileFactory.anIntArrayArray2900!![i_17_ + -1]!![-1 + i_18_] = i_25_
                     }
                 } while (false)
                 while_54_@ do {
@@ -216,7 +216,7 @@ class MapAreaDefinition {
                         CircleDrawer.anIntArray2694!![i_21_] = -1 + i_16_
                         RenderNode.anIntArrayArray9723!![1 + i_17_]!![-1 + i_18_] = 9
                         i_21_ = 0xfff and i_21_ - -1
-                        Class223.anIntArrayArray2900!![1 + i_17_]!![-1 + i_18_] = i_25_
+                        ProjectileFactory.anIntArrayArray2900!![1 + i_17_]!![-1 + i_18_] = i_25_
                     }
                 } while (false)
                 while_55_@ do {
@@ -228,7 +228,7 @@ class MapAreaDefinition {
                         CircleDrawer.anIntArray2694!![i_21_] = i_16_ - -1
                         RenderNode.anIntArrayArray9723!![i_17_ - 1]!![i_18_ - -1] = 6
                         i_21_ = i_21_ - -1 and 0xfff
-                        Class223.anIntArrayArray2900!![-1 + i_17_]!![i_18_ - -1] = i_25_
+                        ProjectileFactory.anIntArrayArray2900!![-1 + i_17_]!![i_18_ - -1] = i_25_
                     }
                 } while (false)
                 if (i_17_ < 128 + -i_12_ && i_18_ < 128 + -i_12_ && (RenderNode.anIntArrayArray9723!![i_17_ + 1]!![1 + i_18_] == 0) && (0x78240000 and `is`[i_12_ + i_23_]!![i_24_ + i_12_]) == 0) {
@@ -241,7 +241,7 @@ class MapAreaDefinition {
                     CircleDrawer.anIntArray2694!![i_21_] = i_16_ - -1
                     i_21_ = 0xfff and 1 + i_21_
                     RenderNode.anIntArrayArray9723!![i_17_ - -1]!![1 + i_18_] = 12
-                    Class223.anIntArrayArray2900!![i_17_ + 1]!![i_18_ - -1] = i_25_
+                    ProjectileFactory.anIntArrayArray2900!![i_17_ + 1]!![i_18_ - -1] = i_25_
                 }
             }
             OverlayColorTable.anInt1753 = i_16_

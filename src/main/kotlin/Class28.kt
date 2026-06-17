@@ -25,7 +25,7 @@ class Class28 : Interface15 {
         @JvmField
         var anInt4996: Int = 0
         @JvmField
-        var aClass223_4997: Class223? = Class223(6, 1)
+        var aProjectileFactory_4997: ProjectileFactory? = ProjectileFactory(6, 1)
         var aIntRange_4998: IntRange?
         @JvmField
         var anInt4999: Int = 0
@@ -41,7 +41,7 @@ class Class28 : Interface15 {
             aString5001 = null
             aString5000 = null
             val i_0_ = 74 / ((i - 58) / 49)
-            aClass223_4997 = null
+            aProjectileFactory_4997 = null
             aIntRange_4998 = null
         }
 

@@ -2,10 +2,10 @@
 * Visit http://jode.sourceforge.net/
 */
 class ConfigValueProvider internal constructor(@JvmField var anInt4912: Int) : Interface12 {
-    override fun method51(i: Byte): Class223? {
+    override fun method51(i: Byte): ProjectileFactory? {
         if (i < 116) method1080(81, 13, -51, -26)
         anInt4909++
-        return OrientationRotator.aClass223_2045
+        return OrientationRotator.aProjectileFactory_2045
     }
 
     companion object {
