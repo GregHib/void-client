@@ -4008,7 +4008,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((Class282.aClass356_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? Class348_Sub22)?.aNpc_6859)
                 else class318_sub1_sub3_sub3 = Class294.aPlayerArray5058!![i_434_]
-                val i_435_ = Class268.anIntArray3432!![i_433_]
+                val i_435_ = LocDefinitionCache.anIntArray3432!![i_433_]
                 val class318_sub1_sub3_sub3_436_: Class318_Sub1_Sub3_Sub3?
                 if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((Class282.aClass356_3654!!.method3480((-2048 + i_435_).toLong(), -6008) as? Class348_Sub22)?.aNpc_6859)
                 else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058!![i_435_]

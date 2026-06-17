@@ -52,7 +52,7 @@ object SettingsCrcWriter {
 
     fun method1245(string: String, bool: Boolean): String {
         anInt2122++
-        var string_0_ = method1788(115.toByte(), Class268.method2031(-1994, string))
+        var string_0_ = method1788(115.toByte(), LocDefinitionCache.method2031(-1994, string))
         if (string_0_ == null) string_0_ = ""
         return string_0_
     }

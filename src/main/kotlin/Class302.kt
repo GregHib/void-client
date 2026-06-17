@@ -52,7 +52,7 @@ class Class302 {
                 Class348_Sub47.method3324(Class348_Sub8.aRenderer6654, 83.toByte(), Class367_Sub11.anInt7396.toLong())
                 if (RenderNode.anInt9721 != -1) method769(RenderNode.anInt9721, 118.toByte())
                 for (i_3_ in 0..<Class348_Sub38.anInt7008) {
-                    if (GzipDecompressor.aBooleanArray2076!![i_3_]) Class268.aBooleanArray3438!![i_3_] = true
+                    if (GzipDecompressor.aBooleanArray2076!![i_3_]) LocDefinitionCache.aBooleanArray3438!![i_3_] = true
                     SizeBoundedSoftCache.aBooleanArray2326!![i_3_] = GzipDecompressor.aBooleanArray2076!![i_3_]
                     GzipDecompressor.aBooleanArray2076!![i_3_] = false
                 }

@@ -181,7 +181,7 @@ import NodeDeque.Companion.method1994
 import CompassSmoother.Companion.method2018
 import SlotBinding.Companion.method2026
 import SlotBinding.Companion.method2029
-import Class268.Companion.method2036
+import LocDefinitionCache.Companion.method2036
 import Class27.method315
 import Class270.Companion.method2043
 import Class271.Companion.method2045
@@ -670,11 +670,11 @@ class Client : GameAppletFrame() {
         if (GlRectangleTexture.aSceneProjector_8638 == Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) {
             InputSettingsState.shiftClick = true
             SpriteLoadValidator.aShortArrayArray4791 = Class348_Sub8.aShortArrayArray6664
-            Class268.anInt3439 = 16777215
+            LocDefinitionCache.anInt3439 = 16777215
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub51.aShortArrayArrayArray7262
-            Class268.anInt3444 = 0
+            LocDefinitionCache.anInt3444 = 0
         } else if (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == CustomCursorsOptionState.aSceneProjector_5932) {
-            SpriteLoadValidator.aShortArrayArray4791 = Class268.aShortArrayArray3443
+            SpriteLoadValidator.aShortArrayArray4791 = LocDefinitionCache.aShortArrayArray3443
             Class367_Sub2.aShortArrayArrayArray7290 = Class318_Sub1_Sub3_Sub3.aShortArrayArrayArray10253
         } else {
             SpriteLoadValidator.aShortArrayArray4791 = Class348_Sub40_Sub32.aShortArrayArray9424
@@ -1703,8 +1703,8 @@ class Client : GameAppletFrame() {
                 if (!method3197(WorldMapRenderer.anInt4674, 56.toByte())) {
                     if (Class318_Sub1_Sub1_Sub2.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
                         if (Class36.anInt489 == 1) {
-                            if (Class268.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = Class268.anInt3441
-                            val i = ((-Class268.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115)
+                            if (LocDefinitionCache.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = LocDefinitionCache.anInt3441
+                            val i = ((-LocDefinitionCache.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115)
                             method3511(true, aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aRenderer6654)
                         } else if (Class36.anInt489 == 2) {
                             if (Class31.anInt443 < CompositeNpcModelBuilder.anInt2101) Class31.anInt443 = CompositeNpcModelBuilder.anInt2101
@@ -1721,7 +1721,7 @@ class Client : GameAppletFrame() {
                 while (Class348_Sub38.anInt7008 > i) {
                     val rectangle = HintIconState.aRectangleArray2371!![i]
                     if (SizeBoundedSoftCache.aBooleanArray2326!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46)
-                    else if (!Class268.aBooleanArray3438!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66)
+                    else if (!LocDefinitionCache.aBooleanArray3438!![i]) Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66)
                     else Class348_Sub8.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40)
                     i++
                 }
@@ -1731,8 +1731,8 @@ class Client : GameAppletFrame() {
                 var i = 0
                 var i_121_ = 0
                 while ((Class348_Sub38.anInt7008 > i_121_)) {
-                    if (Class268.aBooleanArray3438!![i_121_]) {
-                        Class268.aBooleanArray3438!![i_121_] = false
+                    if (LocDefinitionCache.aBooleanArray3438!![i_121_]) {
+                        LocDefinitionCache.aBooleanArray3438!![i_121_] = false
                         ModelLightingConfig.aRectangleArray2554!![i++] = HintIconState.aRectangleArray2371!![i_121_]
                     }
                     i_121_++
@@ -1746,7 +1746,7 @@ class Client : GameAppletFrame() {
             } else if (!NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-59).toByte())) {
                 var i = 0
                 while (Class348_Sub38.anInt7008 > i) {
-                    Class268.aBooleanArray3438!![i] = false
+                    LocDefinitionCache.aBooleanArray3438!![i] = false
                     i++
                 }
                 try {
@@ -1952,18 +1952,18 @@ class Client : GameAppletFrame() {
                         if (class318_sub1_sub3_sub3 is Npc) i_23_ += 2048
                         if ((class318_sub1_sub3_sub3.anInt10261) == 0 && class318_sub1_sub3_sub3.method2425(-1) != -1) {
                             GlTexture1D.anIntArray8557!![Class45.anInt669] = i_23_
-                            Class268.anIntArray3432!![Class45.anInt669] = i_23_
+                            LocDefinitionCache.anIntArray3432!![Class45.anInt669] = i_23_
                             Class45.anInt669++
                             class318_sub1_sub3_sub3.anInt10261++
                         }
                         GlTexture1D.anIntArray8557!![Class45.anInt669] = i_23_
-                        Class268.anIntArray3432!![Class45.anInt669] = npc.anInt10290 + 2048
+                        LocDefinitionCache.anIntArray3432!![Class45.anInt669] = npc.anInt10290 + 2048
                         Class45.anInt669++
                         class318_sub1_sub3_sub3.anInt10261++
                     }
                 }
             }
-            method347(Class268.anIntArray3432, GlTexture1D.anIntArray8557, 0, -22222, Class45.anInt669 - 1)
+            method347(LocDefinitionCache.anIntArray3432, GlTexture1D.anIntArray8557, 0, -22222, Class45.anInt669 - 1)
         }
 
         @JvmStatic

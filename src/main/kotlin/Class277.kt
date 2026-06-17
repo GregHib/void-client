@@ -8,7 +8,7 @@ class Class277 {
     var anInt3559: Int = 1190717
     var aBoolean3560: Boolean = false
     var aBoolean3561: Boolean = true
-    var aClass268_3562: Class268? = null
+    var aLocDefinitionCache_3562: LocDefinitionCache? = null
     @JvmField
     var anInt3563: Int = 0
     var anInt3564: Int = 8
@@ -37,7 +37,7 @@ class Class277 {
                     if (this.anInt3575 == 65535) this.anInt3575 = -1
                 } else if (i_1_ != 5) {
                     if (i_1_ != 7) {
-                        if (i_1_ == 8) this.aClass268_3562!!.anInt3447 = this.anInt3573
+                        if (i_1_ == 8) this.aLocDefinitionCache_3562!!.anInt3447 = this.anInt3573
                         else if (i_1_ == 9) this.anInt3570 = (class348_sub49.readUnsignedShort(842397944) shl 2)
                         else if (i_1_ == 10) this.aBoolean3566 = false
                         else if (i_1_ == 11) this.anInt3564 = class348_sub49.readUnsignedByte(255)

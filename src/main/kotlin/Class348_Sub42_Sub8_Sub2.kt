@@ -1534,7 +1534,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class59.aIntRange_1068) {
-                Class268.method2038(-103)
+                LocDefinitionCache.method2038(-103)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

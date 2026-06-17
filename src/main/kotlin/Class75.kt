@@ -12,7 +12,7 @@ open class Class75 {
         var aClass45_1237: Class45? = null
         @JvmField
         var aConfigDefinitionLoader_1238: ConfigDefinitionLoader? = null
-        private var aClass268_1239: Class268? = null
+        private var aLocDefinitionCache_1239: LocDefinitionCache? = null
         private var aParticleDefLoader_1240: ParticleDefLoader? = null
         private var aClass356_1241: Class356? = Class356(16)
         @JvmField
@@ -133,7 +133,7 @@ open class Class75 {
 
         @JvmStatic
         fun method746() {
-            aClass268_1239 = null
+            aLocDefinitionCache_1239 = null
             aParticleDefLoader_1240 = null
             aSeqDefinitionCache_1245 = null
             aConfigDefinitionLoader_1238 = null
@@ -268,9 +268,9 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method752(class45: Class45?, class268: Class268?, particleDefLoader: ParticleDefLoader?, seqDefinitionCache: SeqDefinitionCache?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
+        fun method752(class45: Class45?, locDefinitionCache: LocDefinitionCache?, particleDefLoader: ParticleDefLoader?, seqDefinitionCache: SeqDefinitionCache?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
             aClass45_1237 = class45
-            aClass268_1239 = class268
+            aLocDefinitionCache_1239 = locDefinitionCache
             aParticleDefLoader_1240 = particleDefLoader
             aSeqDefinitionCache_1245 = seqDefinitionCache
             aConfigDefinitionLoader_1238 = configDefinitionLoader
@@ -515,7 +515,7 @@ open class Class75 {
         }
 
         private fun method759(var_renderConfig: RenderConfig, i: Int, i_105_: Int, i_106_: Int): Int {
-            val class277: Class277 = aClass268_1239!!.method2034(i, false)
+            val class277: Class277 = aLocDefinitionCache_1239!!.method2034(i, false)
             if (class277 == null) return 0
             var i_107_ = class277.anInt3575
             if (i_107_ >= 0 && var_renderConfig.method3(i_107_, -6662)!!.aBoolean209) i_107_ = -1
@@ -549,7 +549,7 @@ open class Class75 {
             aByteArray1258 = ByteArray(anInt1259 * anInt1267)
             aClass356_1271 = Class356(1024)
             aDoublyLinkedNodeListArrayArrayArray1269 = Array<Array<Array<DoublyLinkedNodeList?>?>?>(3) { Array<Array<DoublyLinkedNodeList?>?>(anInt1259 shr 6) { arrayOfNulls<DoublyLinkedNodeList>(anInt1267 shr 6) } }
-            anIntArray1260 = IntArray(aClass268_1239!!.anInt3429 + 1)
+            anIntArray1260 = IntArray(aLocDefinitionCache_1239!!.anInt3429 + 1)
         }
 
         @JvmStatic
@@ -609,7 +609,7 @@ open class Class75 {
 
         @JvmStatic
         fun method764(var_renderConfig: RenderConfig, i: Int, i_129_: Int) {
-            for (i_130_ in 0..<aClass268_1239!!.anInt3429) anIntArray1260!![i_130_ + 1] = method759(var_renderConfig, i_130_, i, i_129_)
+            for (i_130_ in 0..<aLocDefinitionCache_1239!!.anInt3429) anIntArray1260!![i_130_ + 1] = method759(var_renderConfig, i_130_, i, i_129_)
         }
 
         private fun method765(var_renderer: Renderer, i: Int, i_131_: Int, i_132_: Int, i_133_: Int) {
@@ -643,7 +643,7 @@ open class Class75 {
                                 if (i_152_ == 0 && i_153_ == 0 && i_154_ == 0) {
                                     if (aClass348_Sub42_Sub14_1243!!.anInt9634 != -1) i_152_ = (0xffffff.inv() or (aClass348_Sub42_Sub14_1243!!.anInt9634))
                                     else if ((i_136_ + anInt1274 and 0x4) != (i_146_ + anInt1277 and 0x4)) i_152_ = -11840664
-                                    else i_152_ = (anIntArray1260!![(aClass268_1239!!.anInt3447) + 1])
+                                    else i_152_ = (anIntArray1260!![(aLocDefinitionCache_1239!!.anInt3447) + 1])
                                     if (i_152_ == 0) i_152_ = -16777216
                                     var_renderer.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0)
                                 } else if (i_154_ > 0) {
@@ -666,7 +666,7 @@ open class Class75 {
                             var i_145_: Int
                             if (aClass348_Sub42_Sub14_1243!!.anInt9634 != -1) i_145_ = 0xffffff.inv() or (aClass348_Sub42_Sub14_1243!!.anInt9634)
                             else if ((i_136_ + anInt1274 and 0x4) != (i_141_ + anInt1277 and 0x4)) i_145_ = -11840664
-                            else i_145_ = anIntArray1260!![(aClass268_1239!!.anInt3447) + 1]
+                            else i_145_ = anIntArray1260!![(aLocDefinitionCache_1239!!.anInt3447) + 1]
                             if (i_145_ == 0) i_145_ = -16777216
                             var_renderer.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0)
                         }

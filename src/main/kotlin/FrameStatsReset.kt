@@ -155,7 +155,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class79.anInt1341 = 0
             Class318_Sub1_Sub3_Sub3.anInt10311 = 0
             NativeRenderer.anInt8026 = 0
-            Class268.anInt3431 = 0
+            LocDefinitionCache.anInt3431 = 0
             Class348_Sub45.anInt7104 = 0
             Class283.anInt3656 = 0
             Class348_Sub40_Sub22.anInt9295 = 0
@@ -777,7 +777,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class314_Sub1.anInt6359 = 0
             NativeTerrainTile.anInt8289 = 0
             DebugOverlayRenderer.anInt3171 = 0
-            Class268.anInt3436 = 0
+            LocDefinitionCache.anInt3436 = 0
             NativeRenderer.anInt7935 = 0
             Class318_Sub1_Sub5_Sub2.anInt10156 = 0
             Class84.anInt1458 = 0
@@ -1521,7 +1521,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7932 = 0
             TextureQualityOptionState.anInt6005 = 0
             Class286_Sub4.anInt6243 = 0
-            Class268.anInt3440 = 0
+            LocDefinitionCache.anInt3440 = 0
             Class285_Sub2.anInt8501 = 0
             Class286_Sub6.anInt6264 = 0
             Class316.anInt3966 = 0
@@ -2073,7 +2073,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7944 = 0
             AbstractCameraTransform.anInt1596 = 0
             Class40.anInt551 = 0
-            Class268.anInt3445 = 0
+            LocDefinitionCache.anInt3445 = 0
             Class66.anInt1171 = 0
             Class318_Sub1_Sub3_Sub3.anInt10235 = 0
             Class294.anInt5052 = 0
@@ -2148,7 +2148,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlTerrainTile.anInt8251 = 0
             Class309.anInt4825 = 0
             Class45.anInt645 = 0
-            Class268.anInt3448 = 0
+            LocDefinitionCache.anInt3448 = 0
             Class5_Sub1.anInt8341 = 0
             GlSpriteRenderer.anInt8435 = 0
             Class45.anInt630 = 0
@@ -2179,7 +2179,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TerrainTileGeometry.anInt3013 = 0
             NativeRenderer.anInt8000 = 0
             SizeBoundedSoftCache.anInt2313 = 0
-            Class268.anInt3434 = 0
+            LocDefinitionCache.anInt3434 = 0
             MatrixCameraTransform.anInt5661 = 0
             OpenGlRenderer.anInt7618 = 0
             BinaryGraphicsOptionState.anInt5956 = 0
@@ -3763,7 +3763,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub7.anInt6438 = 0
             Class348_Sub7.anInt6641 = 0
             Class377.anInt9871 = 0
-            Class268.anInt3446 = 0
+            LocDefinitionCache.anInt3446 = 0
             Class376.anInt4549 = 0
             Class377.anInt9876 = 0
             OpenGlTerrainTile.anInt8261 = 0

@@ -125,7 +125,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
 
         @JvmStatic
         fun method1416(i: Int) {
-            RenderConfigFactory.aClass268_2979!!.method2032(5, -101)
+            RenderConfigFactory.aLocDefinitionCache_2979!!.method2032(5, -101)
             anInt2515++
             Class362.aParticleDefLoader_4460!!.method1383(i xor 0x804c, 5)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342!!.method1207(-17452, 5)

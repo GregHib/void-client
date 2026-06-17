@@ -148,7 +148,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
         fun method123(i: Int) {
             anInt63++
             Class289.method2193(false, (-125).toByte())
-            Class268.anInt3441 = 0
+            LocDefinitionCache.anInt3441 = 0
             var bool = true
             var i_19_ = 0
             while (Class347.aByteArrayArray4281!!.size > i_19_) {
@@ -156,20 +156,20 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class347.aByteArrayArray4281!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
                     if (Class347.aByteArrayArray4281!![i_19_] == null) {
                         bool = false
-                        Class268.anInt3441++
+                        LocDefinitionCache.anInt3441++
                     }
                 }
                 if (GameAppletFrame.anIntArray38!![i_19_] != -1 && GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
                     GlRectangleTexture.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
-                        Class268.anInt3441++
+                        LocDefinitionCache.anInt3441++
                         bool = false
                     }
                 }
                 if (Class295.anIntArray3759!![i_19_] != -1 && ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
                     ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, Class295.anIntArray3759!![i_19_], 0)
                     if (ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
-                        Class268.anInt3441++
+                        LocDefinitionCache.anInt3441++
                         bool = false
                     }
                 }
@@ -177,14 +177,14 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class348_Sub23_Sub1.aByteArrayArray8996!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, RenderNode.anIntArray9724!![i_19_], 0)
                     if (Class348_Sub23_Sub1.aByteArrayArray8996!![i_19_] == null) {
                         bool = false
-                        Class268.anInt3441++
+                        LocDefinitionCache.anInt3441++
                     }
                 }
                 if (Class322.anIntArray4031 != null && Class348_Sub50.aByteArrayArray7212!![i_19_] == null && Class322.anIntArray4031!![i_19_] != -1) {
                     Class348_Sub50.aByteArrayArray7212!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(Class322.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (Class348_Sub50.aByteArrayArray7212!![i_19_] == null) {
                         bool = false
-                        Class268.anInt3441++
+                        LocDefinitionCache.anInt3441++
                     }
                 }
                 i_19_++
@@ -194,7 +194,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (Class348_Sub32.aClass45_6950!!.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aSmoothingBuffer_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBase.aBoolean1900, (-91).toByte())
                     else {
                         bool = false
-                        Class268.anInt3441++
+                        LocDefinitionCache.anInt3441++
                     }
                 } else OpenGlRenderNode.aSmoothingBuffer_10488 = SmoothingBuffer(0)
             }

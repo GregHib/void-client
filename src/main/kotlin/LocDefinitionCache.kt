@@ -3,7 +3,7 @@ import WidgetDefinition.Companion.method268
 /* Class268 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class268 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     var anInt3429: Int = 0
     private val aClass60_3433 = Class60(64)
     private val aClass45_3442: Class45?
@@ -39,7 +39,7 @@ class Class268 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
         }
         class277 = Class277()
         class277.anInt3573 = i
-        class277.aClass268_3562 = this
+        class277.aLocDefinitionCache_3562 = this
         if (`is` != null) class277.method2070(true, Class348_Sub49(`is`))
         class277.method2067(-4860)
         synchronized(aClass60_3433) {

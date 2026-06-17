@@ -68,7 +68,7 @@ class OutputStream_Sub1 : OutputStream() {
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && (i_6_ < ModelHeaderCache.anIntArray3273!![4] + 128)) i_6_ = 128 + ModelHeaderCache.anIntArray3273!![4]
                     val i_7_ = Class314.aFloat3938.toInt() and 0x3fff
                     WidgetDefinition.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, Class355.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
-                } else if (Class348_Sub40_Sub21.anInt9282 == 5) Class268.method2035(i_2_, 0)
+                } else if (Class348_Sub40_Sub21.anInt9282 == 5) LocDefinitionCache.method2035(i_2_, 0)
                 val i_8_ = Class286_Sub4.anInt6246
                 val i_9_ = Class305.anInt3855
                 val i_10_ = Class59_Sub2_Sub2.anInt8685

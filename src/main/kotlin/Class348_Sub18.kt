@@ -69,7 +69,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
 
         fun method2938(i: Byte) {
             anInt6804++
-            RenderConfigFactory.aClass268_2979!!.method2037(10205)
+            RenderConfigFactory.aLocDefinitionCache_2979!!.method2037(10205)
             Class362.aParticleDefLoader_4460!!.method1381(true)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342!!.method1206((-37).toByte())
             Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2012(-23828)

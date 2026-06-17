@@ -37,7 +37,7 @@ object Class332 {
         var i_9_ = 0
         while (Class348_Sub38.anInt7008 > i_9_) {
             val rectangle = HintIconState.aRectangleArray2371!![i_9_]
-            if (rectangle!!.width + rectangle.x > i_7_ && rectangle.x < i + i_7_ && rectangle.height + rectangle.y > i_6_ && rectangle.y < i_8_ + i_6_) Class268.aBooleanArray3438!![i_9_] = true
+            if (rectangle!!.width + rectangle.x > i_7_ && rectangle.x < i + i_7_ && rectangle.height + rectangle.y > i_6_ && rectangle.y < i_8_ + i_6_) LocDefinitionCache.aBooleanArray3438!![i_9_] = true
             i_9_++
         }
         Class338.Companion.method2663(-5590, i_7_, i_7_ + i, i_6_, i_6_ - -i_8_)

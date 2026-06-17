@@ -196,7 +196,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             if (class46.method425((Class348_Sub8.aRenderer6654!!), 8.toByte()) != null) {
                                                 method3570(false)
                                                 LinkedNodeListIterator.method1007(class46, (Class348_Sub8.aRenderer6654), i_24_, i_25_, 22960)
-                                                Class268.aBooleanArray3438!![i_23_] = true
+                                                LocDefinitionCache.aBooleanArray3438!![i_23_] = true
                                                 Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (Class59_Sub1.aBoolean5300) {
                                                     if (bool) Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
@@ -209,7 +209,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         if (class46.anInt765 == BinaryGraphicsOptionState.anInt5951) {
                                             if (class46.method425((Class348_Sub8.aRenderer6654!!), 26.toByte()) != null) {
                                                 GlFramebufferBlitter.method271(i_25_, class46, (-98).toByte(), i_24_)
-                                                Class268.aBooleanArray3438!![i_23_] = true
+                                                LocDefinitionCache.aBooleanArray3438!![i_23_] = true
                                                 Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (Class59_Sub1.aBoolean5300) {
                                                     if (!bool) Class54.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)

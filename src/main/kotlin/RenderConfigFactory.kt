@@ -8,7 +8,7 @@ class RenderConfigFactory {
         @JvmField
         var aClass45_2978: Class45? = null
         @JvmField
-        var aClass268_2979: Class268? = null
+        var aLocDefinitionCache_2979: LocDefinitionCache? = null
         var anInt2980: Int = 0
         @JvmField
         var aVarbitDefLoader_2981: VarbitDefLoader? = null
@@ -32,7 +32,7 @@ class RenderConfigFactory {
             aClass45_2978 = null
             val i_1_ = -20 / ((-87 - i) / 34)
             aVarbitDefLoader_2981 = null
-            aClass268_2979 = null
+            aLocDefinitionCache_2979 = null
         }
 
         fun method1633(bool: Boolean, i: Int, i_2_: Int): Boolean {

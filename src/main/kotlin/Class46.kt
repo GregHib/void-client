@@ -943,7 +943,7 @@ class Class46 {
         @JvmStatic
         fun method427(i: Int) {
             anInt837++
-            RenderConfigFactory.aClass268_2979!!.method2033(46.toByte())
+            RenderConfigFactory.aLocDefinitionCache_2979!!.method2033(46.toByte())
             Class362.aParticleDefLoader_4460!!.method1377(2)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342!!.method1204(0)
             Class348_Sub40_Sub12.aSeqDefinitionCache_9195!!.method2006(88)

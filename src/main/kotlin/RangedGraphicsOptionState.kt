@@ -80,7 +80,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
             if (RenderNode.anInt9721 != -1) Class75_Sub1.method769(RenderNode.anInt9721, 118.toByte())
             var i_6_ = 0
             while (Class348_Sub38.anInt7008 > i_6_) {
-                if (GzipDecompressor.aBooleanArray2076!![i_6_]) Class268.aBooleanArray3438!![i_6_] = true
+                if (GzipDecompressor.aBooleanArray2076!![i_6_]) LocDefinitionCache.aBooleanArray3438!![i_6_] = true
                 SizeBoundedSoftCache.aBooleanArray2326!![i_6_] = GzipDecompressor.aBooleanArray2076!![i_6_]
                 GzipDecompressor.aBooleanArray2076!![i_6_] = false
                 i_6_++

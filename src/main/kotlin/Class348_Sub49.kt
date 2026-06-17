@@ -761,7 +761,7 @@ open class Class348_Sub49 : Class348 {
                     Class36.anInt489 = 0
                     Class348_Sub46.Companion.anInt7115 = 1
                     CompositeNpcModelBuilder.anInt2101 = 0
-                    Class268.anInt3441 = 0
+                    LocDefinitionCache.anInt3441 = 0
                     method3177(-111, true)
                     Class95.aClass45_1541!!.anInt634 = 1
                     VideoAdChecker.aClass45_3183!!.anInt634 = 1
