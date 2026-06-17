@@ -1696,7 +1696,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7888++
         method3925(-128, anInterface5_Impl1_8203, 0)
         method3862(0, aModelBatchBase_8205)
-        method3899(1, 0, Class249.aCameraRotationStub_3217, bool)
+        method3899(1, 0, TileTransform.aCameraRotationStub_3217, bool)
     }
 
     override fun Y(): IntArray {

@@ -1,7 +1,7 @@
 /* Class249 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class249 {
+object TileTransform {
     var anInt3216: Int = 0
     var aCameraRotationStub_3217: CameraRotationStub? = CameraRotationStub()
 

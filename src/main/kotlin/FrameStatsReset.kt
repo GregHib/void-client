@@ -785,7 +785,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub3.anInt8932 = 0
             Class25.anInt371 = 0
             MapSceneDefLoader.anInt2486 = 0
-            Class249.anInt3216 = 0
+            TileTransform.anInt3216 = 0
             OpenGlRenderer.anInt7675 = 0
             GraphicsOptionState.anInt3141 = 0
             ItemDefinition.anInt2814 = 0

@@ -769,7 +769,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
         private fun method3953(cameraRotationStub: CameraRotationStub?, i: Byte): Int {
             if (i.toInt() != -111) Companion.method3952(null, (-118).toByte())
-            if (cameraRotationStub == Class249.aCameraRotationStub_3217) return 2
+            if (cameraRotationStub == TileTransform.aCameraRotationStub_3217) return 2
             if (Class348_Sub5_Sub1.aCameraRotationStub_8832 == cameraRotationStub) return 3
             if (Class277.aCameraRotationStub_3572 == cameraRotationStub) return 1
             if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) return 4

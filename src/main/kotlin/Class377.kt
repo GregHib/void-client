@@ -703,7 +703,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9867++
             val i_44_: Int
             val i_45_: Int
-            if (Class249.aCameraRotationStub_3217 == cameraRotationStub) {
+            if (TileTransform.aCameraRotationStub_3217 == cameraRotationStub) {
                 i_44_ = 1
                 i_45_ = i * 2
             } else if (cameraRotationStub == Class348_Sub5_Sub1.aCameraRotationStub_8832) {
@@ -795,7 +795,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             if (bool != true) this.aBoolean9921 = true
             val i_51_: Int
             val i_52_: Int
-            if (cameraRotationStub == Class249.aCameraRotationStub_3217) {
+            if (cameraRotationStub == TileTransform.aCameraRotationStub_3217) {
                 i_51_ = 2 * i
                 i_52_ = 1
             } else if (Class348_Sub5_Sub1.aCameraRotationStub_8832 == cameraRotationStub) {

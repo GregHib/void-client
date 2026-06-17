@@ -498,7 +498,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val i_89_ = i_87_ and 0x3
                     if (i_74_ == i_86_ && i <= i_85_ && i - -8 > i_85_ && i_75_ <= i_84_ && i_75_ - -8 > i_84_) {
                         val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_80_)
-                        val i_90_ = Class249.method1908(0x7 and i_84_, i_85_ and 0x7, i_73_, true, class51.anInt926, class51.anInt961, i_89_) + i_77_
+                        val i_90_ = TileTransform.method1908(0x7 and i_84_, i_85_ and 0x7, i_73_, true, class51.anInt926, class51.anInt961, i_89_) + i_77_
                         val i_91_ = i_76_ + method1045(0x7 and i_85_, (class51.anInt926), i_89_, (class51.anInt961), i_84_ and 0x7, i_73_, 16.toByte())
                         if (i_90_ > 0 && i_91_ > 0 && i_90_ < -1 + this.anInt3117 && -1 + this.anInt3114 > i_91_) {
                             var class361: Class361? = null
