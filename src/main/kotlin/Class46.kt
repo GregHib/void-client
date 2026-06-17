@@ -367,7 +367,7 @@ class Class46 {
         return class348_sub50.aString7211
     }
 
-    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, modelHeaderCache: ModelHeaderCache?, interface17: Interface17?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, class261: Class261?, class278: Class278?, i_24_: Int): Class64? {
+    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, modelHeaderCache: ModelHeaderCache?, interface17: Interface17?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, npcDefinitionCache: NpcDefinitionCache?, class278: Class278?, i_24_: Int): Class64? {
         var i = i
         try {
             anInt684++
@@ -421,7 +421,7 @@ class Class46 {
                 return class64
             }
             if (this.anInt770 == 6) {
-                val class64 = (class278!!.method2079(this.anInt753, -1).method800(0, null, class87, false, null, 0, class261, i_21_, widgetDefinition, interface17, var_renderer, 0, null, i_24_, 0, i, i_22_))
+                val class64 = (class278!!.method2079(this.anInt753, -1).method800(0, null, class87, false, null, 0, npcDefinitionCache, i_21_, widgetDefinition, interface17, var_renderer, 0, null, i_24_, 0, i, i_22_))
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true
                     return null
@@ -444,7 +444,7 @@ class Class46 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (class261 != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_24_ + ')')
+                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
         }
     }
@@ -953,7 +953,7 @@ class Class46 {
             Class348_Sub40_Sub18.aClass319_9245!!.method2542(-101)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
             Class269.aParticleAmountCache_3453!!.method1590(0)
-            Class64_Sub3.aClass261_5558!!.method1986((-91).toByte())
+            Class64_Sub3.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1222(true)
             Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1410(-27995)

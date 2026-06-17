@@ -4216,7 +4216,7 @@ object Class66 {
                 if (i == 3604) {
                     val string = aStringArray1152!![--anInt1170]!!
                     val i_362_ = anIntArray1149!![--anInt1173]
-                    Class261.method1982(16, i_362_, string)
+                    NpcDefinitionCache.method1982(16, i_362_, string)
                     return
                 }
                 if (i == 3605) {
@@ -4984,7 +4984,7 @@ object Class66 {
                 }
             } else if (i < 4700 && i == 4600) {
                 val i_484_ = anIntArray1149!![--anInt1173]
-                val class225 = Class64_Sub3.aClass261_5558!!.method1983(i_484_, 32)
+                val class225 = Class64_Sub3.aNpcDefinitionCache_5558!!.method1983(i_484_, 32)
                 if (class225.anIntArray2915 != null && class225.anIntArray2915!!.size > 0) {
                     var i_485_ = 0
                     var i_486_ = class225.anIntArray2929!![0]

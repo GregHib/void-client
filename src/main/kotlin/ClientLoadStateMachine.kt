@@ -181,7 +181,7 @@ object ClientLoadStateMachine {
             if (Class348_Sub31.anInt6923 != -1 && !RasterSprite.aClass45_5207!!.method420(-10499, Class348_Sub31.anInt6923, 0)) return 99
             Class348_Sub40_Sub4.aRenderConfig9113 = TextureMetadataProvider(Class348_Sub11.aClass45_4770, Class369_Sub2.aClass45_8589, CameraRotationStub.aClass45_322)
             ProjectionCameraTransform.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            Class64_Sub3.aNpcDefinitionCache_5558 = NpcDefinitionCache(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, VideoAdChecker.aClass45_3183)
             RenderConfigFactory.aClass268_2979 = Class268(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)

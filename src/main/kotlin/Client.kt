@@ -175,8 +175,8 @@ import GlTextureCubeMap.Companion.method1962
 import GlTexture1D.Companion.method1973
 import SpriteArchiveLoader.Companion.method306
 import WalkingTypeUtil.method1979
-import Class261.Companion.method1980
-import Class261.Companion.method1987
+import NpcDefinitionCache.Companion.method1980
+import NpcDefinitionCache.Companion.method1987
 import Class262.Companion.method1994
 import Class264.Companion.method2018
 import Class267.Companion.method2026

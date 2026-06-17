@@ -10,10 +10,10 @@ class CompositeNpcModelBuilder {
     var aBoolean2100: Boolean = false
     private var aLong2102: Long = 0
     private var anInt2103 = 0
-    fun method1226(interface17: Interface17?, widgetDefinition: WidgetDefinition?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, modelHeaderCache: ModelHeaderCache?, i: Int, widgetDefinition_0_: WidgetDefinition?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, class261: Class261?): Class64? {
+    fun method1226(interface17: Interface17?, widgetDefinition: WidgetDefinition?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, modelHeaderCache: ModelHeaderCache?, i: Int, widgetDefinition_0_: WidgetDefinition?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, npcDefinitionCache: NpcDefinitionCache?): Class64? {
         try {
             anInt2097++
-            if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method800(i, loadProgressCounters, class87, !bool_2_, widgetDefinition, i_8_, class261, i_7_, widgetDefinition_0_, interface17, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
+            if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method800(i, loadProgressCounters, class87, !bool_2_, widgetDefinition, i_8_, npcDefinitionCache, i_7_, widgetDefinition_0_, interface17, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
             var i_9_ = i_4_
             var l = aLong2102
             var is_10_ = anIntArray2092
@@ -152,7 +152,7 @@ class CompositeNpcModelBuilder {
                 class64 = ModelDataCache.aClass60_355!!.method583(l, -47) as Class64?
             }
             var npcDefinition: NpcDefinition? = null
-            if (anInt2103 != -1) npcDefinition = class261!!.method1983(anInt2103, 32)
+            if (anInt2103 != -1) npcDefinition = npcDefinitionCache!!.method1983(anInt2103, 32)
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_9_) != 0) {
                 if (class64 != null) i_9_ = var_renderer!!.method3679(i_9_, class64.ua())
                 var i_36_ = i_9_
@@ -279,7 +279,7 @@ class CompositeNpcModelBuilder {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (class261 != null) "{...}" else "null") + ')')
+                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ')')
             )
         }
     }

@@ -191,7 +191,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         if (i.toInt() != 72) method2438(-88, 93, -127, 68, 7, -76, 116, 122.toByte())
         anInt10249++
         val i_1_ = method2421(127.toByte())
-        if (i_1_ != -1) return Class64_Sub3.aClass261_5558!!.method1983(i_1_, 32)
+        if (i_1_ != -1) return Class64_Sub3.aNpcDefinitionCache_5558!!.method1983(i_1_, 32)
         return NpcDefinition.aNpcDefinition_2931!!
     }
 

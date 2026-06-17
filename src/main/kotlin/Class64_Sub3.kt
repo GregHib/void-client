@@ -3486,7 +3486,7 @@ class Class64_Sub3 : Class64 {
         @JvmField
         var anInt5551: Int = 0
         @JvmField
-        var aClass261_5558: Class261? = null
+        var aNpcDefinitionCache_5558: NpcDefinitionCache? = null
         @JvmField
         var anInt5560: Int = 0
         @JvmField
@@ -3591,7 +3591,7 @@ class Class64_Sub3 : Class64 {
 
         @JvmStatic
         fun method681(i: Int) {
-            aClass261_5558 = null
+            aNpcDefinitionCache_5558 = null
             if (i <= 75) aString5600 = null
             aString5600 = null
         }

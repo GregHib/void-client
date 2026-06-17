@@ -570,7 +570,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub5_Sub1.anInt10132 = 0
             Class348_Sub16_Sub3.anInt8919 = 0
             Class348_Sub23_Sub4.anInt9049 = 0
-            Class261.anInt3313 = 0
+            NpcDefinitionCache.anInt3313 = 0
             Class274.anInt3480 = 0
             Class296.anInt3770 = 0
             Class42.anInt608 = 0
@@ -1944,7 +1944,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Gl2dTexture.anInt8607 = 0
             Class280.anInt3639 = 0
             Class326.anInt4084 = 0
-            Class261.anInt3315 = 0
+            NpcDefinitionCache.anInt3315 = 0
             ModelDefinition.anInt1860 = 0
             Class318_Sub1_Sub3_Sub1.anInt10022 = 0
             MinimapFlagRenderer.anInt1799 = 0
@@ -2575,7 +2575,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class334.anInt4163 = 0
             OpenGlRenderer.anInt7570 = 0
             Class348_Sub1_Sub3.anInt8820 = 0
-            Class261.anInt3322 = 0
+            NpcDefinitionCache.anInt3322 = 0
             IntRange.anInt1750 = 0
             Class64_Sub2.anInt5448 = 0
             Class58.anInt1061 = 0
@@ -3037,7 +3037,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WorldListEntry.anInt309 = 0
             WorldMapScene.anInt3107 = 0
             OpenGlRenderer.anInt7539 = 0
-            Class261.anInt3316 = 0
+            NpcDefinitionCache.anInt3316 = 0
             Class376.anInt4552 = 0
             MediaStreamClient.anInt3194 = 0
             Class367_Sub9.anInt7374 = 0
@@ -3053,7 +3053,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class324.anInt4047 = 0
             Class377.anInt9891 = 0
             OutputStream_Sub2.anInt104 = 0
-            Class261.anInt3317 = 0
+            NpcDefinitionCache.anInt3317 = 0
             Class377.anInt9883 = 0
             Class99.anInt1575 = 0
             Gl2dTexture.anInt8616 = 0
@@ -3656,7 +3656,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TextureDefinitionCache.anInt2962 = 0
             OpenGlRenderer.anInt7619 = 0
             CollisionMapRegion.anInt1721 = 0
-            Class261.anInt3320 = 0
+            NpcDefinitionCache.anInt3320 = 0
             Class348_Sub49.anInt7200 = 0
             NativeRenderer.anInt8005 = 0
             NativeLibraryUnloader.anInt2975 = 0
@@ -3890,7 +3890,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub8_Sub2.anInt10435 = 0
             Class326.anInt4089 = 0
             Class5_Sub1.anInt8348 = 0
-            Class261.anInt3318 = 0
+            NpcDefinitionCache.anInt3318 = 0
             Class331.anInt4136 = 0
             Class348_Sub49.anInt7138 = 0
             Class318_Sub1_Sub5_Sub2.anInt10151 = 0

@@ -8,7 +8,7 @@ import Class99.method881
 /* Class261 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class261 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_3319: Class45?
     private val aClass60_3321 = Class60(64)
     fun method1983(i: Int, i_9_: Int): NpcDefinition {

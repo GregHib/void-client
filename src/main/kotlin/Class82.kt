@@ -667,7 +667,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                                 method94("Failed to read file", 119)
                                 return
                             }
-                            val strings = (method3113('\n', true, (Class261.method1981(method1795(`is`, true), (-89).toByte(), '\r', ""))!!))
+                            val strings = (method3113('\n', true, (NpcDefinitionCache.method1981(method1795(`is`, true), (-89).toByte(), '\r', ""))!!))
                             Class348_Sub42_Sub6.method3189(0, strings)
                         }
                         if (string.startsWith("zoom ")) {

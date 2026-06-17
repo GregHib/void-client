@@ -340,13 +340,13 @@ class Class79 {
         }
     }
 
-    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, class87: Class87?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, class261: Class261?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): Class64? {
+    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, class87: Class87?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): Class64? {
         try {
             anInt1341++
             if (this.anIntArray1377 != null) {
                 val class79_42_ = method794(interface17!!, -1)
                 if (class79_42_ == null) return null
-                return class79_42_.method800(i, loadProgressCounters, class87, false, widgetDefinition, i_34_, class261, i_35_, widgetDefinition_36_, interface17, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
+                return class79_42_.method800(i, loadProgressCounters, class87, false, widgetDefinition, i_34_, npcDefinitionCache, i_35_, widgetDefinition_36_, interface17, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
             }
             var i_43_ = i_40_
             if (anInt1358 != 128) i_43_ = i_43_ or 0x2
@@ -470,7 +470,7 @@ class Class79 {
                 class64 = this.aClass278_1348!!.aClass60_3590!!.method583(l, 80) as Class64?
             }
             var npcDefinition: NpcDefinition? = null
-            if (this.anInt1366 != -1) npcDefinition = class261!!.method1983(this.anInt1366, 32)
+            if (this.anInt1366 != -1) npcDefinition = npcDefinitionCache!!.method1983(this.anInt1366, 32)
             if (class64 == null || i_43_ != (i_43_ and class64.ua())) {
                 if (class64 != null) i_43_ = i_43_ or class64.ua()
                 var i_69_ = i_43_
@@ -613,7 +613,7 @@ class Class79 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (class261 != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
+                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
             )
         }
     }

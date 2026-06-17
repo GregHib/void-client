@@ -136,7 +136,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             Class348_Sub40_Sub18.aClass319_9245!!.method2544(5, (-41).toByte())
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1442(5, 1.toByte())
             Class269.aParticleAmountCache_3453!!.method1587(5, i xor 0xeab)
-            Class64_Sub3.aClass261_5558!!.method1984(119.toByte(), 5)
+            Class64_Sub3.aNpcDefinitionCache_5558!!.method1984(119.toByte(), 5)
             Class348_Sub23_Sub2.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
             ProjectionCameraTransform.aClass326_5764!!.method2603(5, 11)
