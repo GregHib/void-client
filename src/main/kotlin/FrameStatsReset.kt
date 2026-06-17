@@ -1506,7 +1506,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MediaStreamClient.anInt3190 = 0
             HudTabPanel.anInt2992 = 0
             CubeMapMaterialPass.anInt6295 = 0
-            Class3.anInt124 = 0
+            CacheStateResetter.anInt124 = 0
             FloatCameraTransform.anInt5709 = 0
             GlBufferObject.anInt4738 = 0
             Class52.anInt4900 = 0

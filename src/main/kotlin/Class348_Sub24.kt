@@ -69,7 +69,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             LightingOptionState.aClass348_Sub26_5881 = null
                             FloatCameraTransform.aLong5745 = method599(-106) + 30000L
                         }
-                    } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = Class76.aHostPingThread_1286!!.method1302(-5255, (Class3.aServerConnectionInfo_125!!.aString2147!!))
+                    } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = Class76.aHostPingThread_1286!!.method1302(-5255, (CacheStateResetter.aServerConnectionInfo_125!!.aString2147!!))
                     val class348_sub45 = (Class318_Sub1_Sub3.aNodeDeque_8744!!.method1995(4) as Class348_Sub45?)
                     if (class348_sub45 != null || (Class355.aLong4367 < -2000L + method599(-97))) {
                         var class348_sub47: Class348_Sub47? = null

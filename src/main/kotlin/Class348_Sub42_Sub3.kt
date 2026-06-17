@@ -156,7 +156,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
         }
 
         fun method3179(i: Int) {
-            Class3.method175((-50).toByte())
+            CacheStateResetter.method175((-50).toByte())
             anInt9508++
             val i_16_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
             do {

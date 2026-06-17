@@ -227,7 +227,7 @@ import CircleRasterizer.Companion.method2254
 import CubemapTextureGlSource.Companion.method2265
 import TextureCubeProvider.Companion.method2268
 import CubemapTextureImplSource.Companion.method2272
-import Class3.method176
+import CacheStateResetter.method176
 import Class30.Companion.method322
 import Class301.method2281
 import Class303.method2286
@@ -551,7 +551,7 @@ class Client : GameAppletFrame() {
     private fun method101(i: Byte) {
         anInt5179++
         if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 > BinaryGraphicsOptionState.anInt5959) {
-            Class3.aServerConnectionInfo_125!!.method1259(0)
+            CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
             Class341.anInt4235 = (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 * 50 + -50) * 5
             if (Class341.anInt4235 > 3000) Class341.anInt4235 = 3000
             if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 >= 2 && Class348_Sub4.aMediaStreamClient_6601!!.anInt3214 == 6) {
@@ -579,7 +579,7 @@ class Client : GameAppletFrame() {
         else {
             try {
                 if (Class47.anInt846 == 0) {
-                    Sprite.aLinkedQueueNode_114 = Class3.aServerConnectionInfo_125!!.method1262((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!), 36.toByte())
+                    Sprite.aLinkedQueueNode_114 = CacheStateResetter.aServerConnectionInfo_125!!.method1262((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!), 36.toByte())
                     Class47.anInt846++
                 }
                 if (Class47.anInt846 == 1) {
@@ -680,7 +680,7 @@ class Client : GameAppletFrame() {
             SpriteLoadValidator.aShortArrayArray4791 = Class348_Sub40_Sub32.aShortArrayArray9424
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub12.aShortArrayArrayArray6736
         }
-        Class3.aServerConnectionInfo_125 = GlElementArrayBuffer.aServerConnectionInfo_4839
+        CacheStateResetter.aServerConnectionInfo_125 = GlElementArrayBuffer.aServerConnectionInfo_4839
         try {
             Class348_Sub40_Sub27.aClipboard9357 = Class79.aClient1367!!.getToolkit().getSystemClipboard()
         } catch (exception: Exception) {

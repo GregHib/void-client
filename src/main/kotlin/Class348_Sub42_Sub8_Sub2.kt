@@ -1178,7 +1178,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class3.aIntRange_123) {
+            if (Class348_Sub3.aIntRange_6584 == CacheStateResetter.aIntRange_123) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 val i_144_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 var i_145_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -1275,7 +1275,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     bool_156_ = true
                     var i_157_ = 0
                     while (i > i_157_) {
-                        if (((Class3.aServerConnectionInfo_125!!.anInt2143 != Renderer.anIntArray4578!![i_157_]) && (Renderer.anIntArray4578!![i_157_ - -1] == Class3.aServerConnectionInfo_125!!.anInt2143)) || (Renderer.anIntArray4578!![i_157_] == 0 && (Renderer.anIntArray4578!![1 + i_157_] != 0))) {
+                        if (((CacheStateResetter.aServerConnectionInfo_125!!.anInt2143 != Renderer.anIntArray4578!![i_157_]) && (Renderer.anIntArray4578!![i_157_ - -1] == CacheStateResetter.aServerConnectionInfo_125!!.anInt2143)) || (Renderer.anIntArray4578!![i_157_] == 0 && (Renderer.anIntArray4578!![1 + i_157_] != 0))) {
                             val i_158_ = Renderer.anIntArray4578!![i_157_]
                             Renderer.anIntArray4578!![i_157_] = Renderer.anIntArray4578!![1 + i_157_]
                             Renderer.anIntArray4578!![i_157_ - -1] = i_158_

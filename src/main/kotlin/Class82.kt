@@ -174,7 +174,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("rotateconnectmethods", ignoreCase = true)) {
-                            Class3.aServerConnectionInfo_125!!.method1259(0)
+                            CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
                             method94("Rotated connection methods", i.toInt() xor 0x13.inv())
                             return
                         }
@@ -469,7 +469,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string == "getworld") {
-                            method94(("w: " + (Class3.aServerConnectionInfo_125!!.anInt2143)), -120)
+                            method94(("w: " + (CacheStateResetter.aServerConnectionInfo_125!!.anInt2143)), -120)
                             return
                         }
                         if (string.startsWith("pc")) {

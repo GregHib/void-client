@@ -97,7 +97,7 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
         @JvmStatic
         fun method1406(bool: Boolean) {
             if (bool == true) {
-                Class3.method175((-6).toByte())
+                CacheStateResetter.method175((-6).toByte())
                 anInt2505++
                 Class59_Sub1.aBoolean5300 = false
             }

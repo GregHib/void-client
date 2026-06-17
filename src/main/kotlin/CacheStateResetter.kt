@@ -1,7 +1,7 @@
 /* Class3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class3 {
+object CacheStateResetter {
     @JvmField
     var aIntRange_123: IntRange? = IntRange(110, 10)
     @JvmField

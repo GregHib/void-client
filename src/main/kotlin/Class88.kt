@@ -149,13 +149,13 @@ class Class88 {
                             return
                         }
                         if (BloomGraphicsOptionState.anInt5969 != 2) ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
-                        else Class3.aServerConnectionInfo_125!!.method1259(0)
+                        else CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         NpcDefinition.anInt2955 = 1
                         SceneRegionState.anInt197 = 0
                     }
                     if (NpcDefinition.anInt2955 == 1) {
-                        if (BloomGraphicsOptionState.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (Class3.aServerConnectionInfo_125!!.method1262(Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!, 36.toByte()))
+                        if (BloomGraphicsOptionState.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (CacheStateResetter.aServerConnectionInfo_125!!.method1262(Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!, 36.toByte()))
                         else FrameStatsReset.aLinkedQueueNode_5800 = (ModelHeaderCache.aServerConnectionInfo_3285!!.method1262(Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!, 36.toByte()))
                         NpcDefinition.anInt2955 = 2
                     }
@@ -384,7 +384,7 @@ class Class88 {
                                     IndexedSprite.aServerConnectionInfo_5199!!.anInt2138 = (50000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
                                     IndexedSprite.aServerConnectionInfo_5199!!.anInt2148 = (40000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
                                 }
-                                if (Class8.aClass364_165 != Class76.Companion.aClass364_1279 && ((Class3.aServerConnectionInfo_125!!.method1264(94.toByte(), GlElementArrayBuffer.aServerConnectionInfo_4839)) || (Class3.aServerConnectionInfo_125!!.method1264(112.toByte(), (Class348_Sub40_Sub35.aServerConnectionInfo_9443))))) Class348_Sub42_Sub20.method3283(114)
+                                if (Class8.aClass364_165 != Class76.Companion.aClass364_1279 && ((CacheStateResetter.aServerConnectionInfo_125!!.method1264(94.toByte(), GlElementArrayBuffer.aServerConnectionInfo_4839)) || (CacheStateResetter.aServerConnectionInfo_125!!.method1264(112.toByte(), (Class348_Sub40_Sub35.aServerConnectionInfo_9443))))) Class348_Sub42_Sub20.method3283(114)
                             }
                             if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !FrameBufferObject.aBoolean4888) {
                                 try {
@@ -487,7 +487,7 @@ class Class88 {
                         GzipDecompressor.method1215(3.toByte())
                     } else {
                         if (BloomGraphicsOptionState.anInt5969 != 2) ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
-                        else Class3.aServerConnectionInfo_125!!.method1259(0)
+                        else CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         SceneRegionState.anInt197 = 0
                         NpcDefinition.anInt2955 = 1

@@ -3983,7 +3983,7 @@ object Class66 {
                     return
                 }
                 if (i == 3318) {
-                    anIntArray1149!![anInt1173++] = Class3.aServerConnectionInfo_125!!.anInt2143
+                    anIntArray1149!![anInt1173++] = CacheStateResetter.aServerConnectionInfo_125!!.anInt2143
                     return
                 }
                 if (i == 3321) {
