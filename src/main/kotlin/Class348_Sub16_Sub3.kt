@@ -610,7 +610,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
     }
 
     @Synchronized
-    fun method2866(class348_sub2: Class348_Sub2?, i: Int, class26: Class26?, class45: Class45?, i_77_: Int): Boolean {
+    fun method2866(class348_sub2: Class348_Sub2?, i: Int, spriteArchiveLoader: SpriteArchiveLoader?, class45: Class45?, i_77_: Int): Boolean {
         try {
             class348_sub2!!.method2733()
             anInt8954++
@@ -630,14 +630,14 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     }
                     aClass356_8891.method3483(69.toByte(), i_78_.toLong(), class348_sub17)
                 }
-                if (!class348_sub17.method2932(class26, `is`, (class348_sub8.aByteArray6657), 0)) bool = false
+                if (!class348_sub17.method2932(spriteArchiveLoader, `is`, (class348_sub8.aByteArray6657), 0)) bool = false
                 class348_sub8 = class348_sub2.aClass356_6565!!.method3482(0) as Class348_Sub8?
             }
             if (i_77_ >= -13) return true
             if (bool) class348_sub2.method2735()
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ma.CA(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (class26 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_77_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ma.CA(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_77_ + ')'))
         }
     }
 

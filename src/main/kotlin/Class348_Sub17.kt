@@ -14,7 +14,7 @@ class Class348_Sub17 : Class348 {
     var aByteArray6798: ByteArray? = null
     lateinit var aByteArray6799: ByteArray
     lateinit var aClass348_Sub19_Sub1Array6800: Array<Class348_Sub19_Sub1?>
-    fun method2932(class26: Class26?, `is`: IntArray?, is_5_: ByteArray?, i: Int): Boolean {
+    fun method2932(spriteArchiveLoader: SpriteArchiveLoader?, `is`: IntArray?, is_5_: ByteArray?, i: Int): Boolean {
         try {
             anInt6803++
             var bool = true
@@ -26,8 +26,8 @@ class Class348_Sub17 : Class348 {
                     if (i_8_ != 0) {
                         if (i_8_ != i_6_) {
                             i_6_ = i_8_
-                            if ((--i_8_ and 0x1) == 0) class348_sub19_sub1 = class26!!.method308(i_8_ shr 2, `is`, -2)
-                            else class348_sub19_sub1 = class26!!.method309(`is`, i_8_ shr 2, -1)
+                            if ((--i_8_ and 0x1) == 0) class348_sub19_sub1 = spriteArchiveLoader!!.method308(i_8_ shr 2, `is`, -2)
+                            else class348_sub19_sub1 = spriteArchiveLoader!!.method309(`is`, i_8_ shr 2, -1)
                             if (class348_sub19_sub1 == null) bool = false
                         }
                         if (class348_sub19_sub1 != null) {
@@ -39,7 +39,7 @@ class Class348_Sub17 : Class348 {
             }
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("jf.B(" + (if (class26 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i + ')'))
+            throw method2929(runtimeexception, ("jf.B(" + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

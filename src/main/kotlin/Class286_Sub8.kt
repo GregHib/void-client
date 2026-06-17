@@ -157,8 +157,8 @@ class Class286_Sub8 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
             val i_7_ = 111 % ((i - -62) / 38)
             anInt6292++
             if (bool) {
-                Class26.anInt383--
-                if (Class26.anInt383 == 0) ParticleEmitterNode.anIntArray179 = null
+                SpriteArchiveLoader.anInt383--
+                if (SpriteArchiveLoader.anInt383 == 0) ParticleEmitterNode.anIntArray179 = null
             }
             if (bool_6_) {
                 Class348_Sub40_Sub26.anInt9346--

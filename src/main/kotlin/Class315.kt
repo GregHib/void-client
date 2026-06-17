@@ -94,7 +94,7 @@ class Class315 internal constructor(var aString3953: String?) {
         fun method2354(class364: Class364?, i: Int): Boolean {
             anInt3954++
             if (i != -1) method2355(-93, 115.toByte(), true, null, -92, -67, 6)
-            return Class367_Sub8.aClass364_7361 == class364 || Class26.aClass364_382 == class364 || GroundItemRenderState.aClass364_1657 == class364 || class364 == Class342.aClass364_4246
+            return Class367_Sub8.aClass364_7361 == class364 || SpriteArchiveLoader.aClass364_382 == class364 || GroundItemRenderState.aClass364_1657 == class364 || class364 == Class342.aClass364_4246
         }
 
         @JvmStatic

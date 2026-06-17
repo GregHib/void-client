@@ -97,7 +97,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
         var anInt1974: Int = 0
         var anIntArray1975: IntArray?
         @JvmField
-        var aClass26_1977: Class26? = null
+        var aSpriteArchiveLoader_1977: SpriteArchiveLoader? = null
 
         @JvmStatic
         fun method1177(i: Byte) {
@@ -108,7 +108,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
         @JvmStatic
         fun method1179(i: Byte) {
             anIntArray1975 = null
-            aClass26_1977 = null
+            aSpriteArchiveLoader_1977 = null
             anIntArray1973 = null
             aClass273_1966 = null
             if (i >= -111) method1177(47.toByte())

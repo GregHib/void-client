@@ -84,10 +84,10 @@ class Class285_Sub1 internal constructor(class377: Class377, bool: Boolean) : Cl
             var i_1_: Int
             i_1_ = string.length
             while (i_1_ > i_0_) {
-                if (!Class26.method311(113.toByte(), string.get(i_0_))) break
+                if (!SpriteArchiveLoader.method311(113.toByte(), string.get(i_0_))) break
                 i_0_++
             }
-            while ( /**/(i_0_ < i_1_ && Class26.method311(104.toByte(), string.get(i_1_ + -1)))) {
+            while ( /**/(i_0_ < i_1_ && SpriteArchiveLoader.method311(104.toByte(), string.get(i_1_ + -1)))) {
                 i_1_--
             }
             val i_2_ = i_1_ + -i_0_

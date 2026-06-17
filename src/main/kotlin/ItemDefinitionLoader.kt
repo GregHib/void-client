@@ -118,7 +118,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
 
         fun method1289(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             anInt2179++
-            var i_7_ = Class26.anInt385
+            var i_7_ = SpriteArchiveLoader.anInt385
             if (i_5_ != 8) method1284(-59)
             var i_8_ = Class93.anInt1534
             if (Class59_Sub1.aBoolean5300) {

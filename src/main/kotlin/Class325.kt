@@ -467,7 +467,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 63)
                                 } else {
                                     Class93.anInt1534 = i_72_
-                                    Class26.anInt385 = i_73_
+                                    SpriteArchiveLoader.anInt385 = i_73_
                                     Class348.anInt4292 = 0
                                     FogOptionState.anInt6048 = 1
                                 }
@@ -478,7 +478,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 4) {
                             Class93.anInt1534 = i_72_
                             FogOptionState.anInt6048 = 2
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             CameraRotationStub.anInt321++
                             val class348_sub47 = method2148((Class348_Sub42_Sub8.aClass351_9553), (Class348_Sub23_Sub2.aClass77_9029), -113)
@@ -492,7 +492,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 1008) {
                             FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
@@ -512,7 +512,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (player != null) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 FloatGrid.anInt4979++
                                 FogOptionState.anInt6048 = 2
                                 val class348_sub47 = (method2148(Class348_Sub42_Sub18.aClass351_9684, Class348_Sub23_Sub2.aClass77_9029, -126))
@@ -523,7 +523,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 49) {
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
@@ -546,7 +546,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 5) {
                             Class348.anInt4292 = 0
                             CharCountUtil.anInt226++
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148(ModelLightingConfig.aClass351_2539, (Class348_Sub23_Sub2.aClass77_9029), -110)
@@ -562,7 +562,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (class348_sub22 != null) {
                                 Class348.anInt4292 = 0
                                 LocTypeDefLoader.anInt2499++
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
@@ -580,7 +580,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 WidgetComponentNode.anInt4657++
                                 Class93.anInt1534 = i_72_
                                 FogOptionState.anInt6048 = 2
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 val class348_sub47 = method2148((CustomCursorsOptionState.aClass351_5929), (Class348_Sub23_Sub2.aClass77_9029), -94)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-108).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -124)) 1 else 0))
@@ -589,7 +589,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 59) {
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             Class93.anInt1534 = i_72_
                             Class348.anInt4292 = 0
                             ScriptOpcodeHolder.anInt2336++
@@ -607,7 +607,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (class348_sub22 != null) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 FogOptionState.anInt6048 = 2
                                 Class348_Sub7.anInt6646++
@@ -625,7 +625,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aClass346_2449!!.method2696(82, -127) && LoadProgressCounters.aClass346_2449!!.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
                             else {
                                 Class93.anInt1534 = i_72_
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 Class55.anInt994++
                                 Class348.anInt4292 = 0
                                 FogOptionState.anInt6048 = 1
@@ -640,7 +640,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class35.anInt484++
                             FogOptionState.anInt6048 = 2
                             Class348.anInt4292 = 0
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             val class348_sub47 = method2148(CircleDrawer.aClass351_2691, (Class348_Sub23_Sub2.aClass77_9029), -115)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                             Class348_Sub42_Sub14.method3243(-60, class348_sub47)
@@ -648,7 +648,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 51) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
                                 NativeLibraryUnloader.anInt2975++
                                 Class348.anInt4292 = 0
@@ -670,7 +670,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class93.anInt1534 = i_72_
                                 AbstractCameraTransform.anInt1596++
                                 FogOptionState.anInt6048 = 2
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 val class348_sub47 = method2148((Class299_Sub1_Sub2.aClass351_8706), (Class348_Sub23_Sub2.aClass77_9029), -84)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-125).toByte(), (if (LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 1 else 0))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
@@ -681,7 +681,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 1007) {
                             FogOptionState.anInt6048 = 2
                             Class318_Sub1_Sub5_Sub2.anInt10164++
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148(TextureHandle.aClass351_2587, (Class348_Sub23_Sub2.aClass77_9029), -112)
@@ -698,7 +698,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 FogOptionState.anInt6048 = 2
                                 Class318_Sub1_Sub4_Sub1.anInt10073++
                                 Class348.anInt4292 = 0
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
                                 val class348_sub47 = method2148((Class52.aClass351_4905), (Class348_Sub23_Sub2.aClass77_9029), -113)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
@@ -716,7 +716,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 Class93.anInt1534 = i_72_
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
                                 Class296.anInt3768++
                                 Class348.anInt4292 = 0
@@ -732,7 +732,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             FlickeringEffectsOptionState.anInt5919++
                             Class348.anInt4292 = 0
                             FogOptionState.anInt6048 = 2
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             val class348_sub47 = method2148(NativeRenderNode.aClass351_10477, (Class348_Sub23_Sub2.aClass77_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), ArbVertexProgram.regionTileX + i_74_)
@@ -743,7 +743,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i_76_ == 15) {
                             FogOptionState.anInt6048 = 1
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             Class93.anInt1534 = i_72_
                             Client.anInt5187++
@@ -761,7 +761,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (class348_sub22 != null) {
                                 Class290.anInt3707++
                                 Class348.anInt4292 = 0
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 FogOptionState.anInt6048 = 2
@@ -776,7 +776,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348.anInt4292 = 0
                             FogOptionState.anInt6048 = 2
                             NativeRenderNode.anInt10476++
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub16_Sub1.aClass351_8857), (Class348_Sub23_Sub2.aClass77_9029), -105)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class301.anInt3829)
@@ -794,7 +794,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (player != null) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
                                 Class98.anInt1570++
                                 val class348_sub47 = method2148((SizeBoundedSoftCache.aClass351_2315), (Class348_Sub23_Sub2.aClass77_9029), -90)
@@ -810,7 +810,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 FogOptionState.anInt6048 = 2
                                 Class93.anInt1534 = i_72_
                                 Gl3dTexture.anInt8625++
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 Class348.anInt4292 = 0
                                 val class348_sub47 = method2148((SpriteStore.aClass351_364), (Class348_Sub23_Sub2.aClass77_9029), -113)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) 0 else 1))
@@ -820,7 +820,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 47) {
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             FogOptionState.anInt6048 = 2
                             Class348.anInt4292 = 0
                             Class316.anInt3966++
@@ -835,7 +835,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i_76_ == 3) {
                             HeadIconRenderer.anInt2065++
-                            Class26.anInt385 = i_73_
+                            SpriteArchiveLoader.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
@@ -851,7 +851,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 FogOptionState.anInt6048 = 2
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 Class348.anInt4292 = 0
@@ -868,7 +868,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 FogOptionState.anInt6048 = 2
                                 Class348_Sub42_Sub18.anInt9686++
                                 Class93.anInt1534 = i_72_
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 Class348.anInt4292 = 0
                                 val class348_sub47 = method2148((Class65.aClass351_1144), (Class348_Sub23_Sub2.aClass77_9029), -96)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
@@ -878,7 +878,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 FogOptionState.anInt6048 = 2
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 Class348_Sub42_Sub13.anInt9620++
                                 val class348_sub47 = method2148((SocketStreamWorker.aClass351_2661), (Class348_Sub23_Sub2.aClass77_9029), -117)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-101).toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -125)) 0 else 1))
@@ -889,7 +889,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)
                             }
                             if (i_76_ == 50) {
-                                Class26.anInt385 = i_73_
+                                SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
@@ -922,7 +922,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         Class93.anInt1534 = i_72_
                                         Class299_Sub1_Sub2.anInt8702++
                                         val npc = (class348_sub22.aNpc_6859)!!
-                                        Class26.anInt385 = i_73_
+                                        SpriteArchiveLoader.anInt385 = i_73_
                                         Class348.anInt4292 = 0
                                         val class348_sub47 = (method2148(Class348_Sub18.aClass351_6814, Class348_Sub23_Sub2.aClass77_9029, -125))
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -125)) 0 else 1)
@@ -938,7 +938,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         Class93.anInt1534 = i_72_
                                         Class369_Sub2.anInt8588++
                                         Class348.anInt4292 = 0
-                                        Class26.anInt385 = i_73_
+                                        SpriteArchiveLoader.anInt385 = i_73_
                                         val class348_sub47 = (method2148(Class348_Sub42_Sub5.aClass351_9533, Class348_Sub23_Sub2.aClass77_9029, -115))
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-88, i_77_)
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-111).toByte(), if (LoadProgressCounters.aClass346_2449!!.method2696(82, -127)) 1 else 0)
@@ -948,7 +948,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 }
                                 if (i_76_ == 9) {
                                     Class318_Sub1_Sub3_Sub4.anInt10364++
-                                    Class26.anInt385 = i_73_
+                                    SpriteArchiveLoader.anInt385 = i_73_
                                     Class348.anInt4292 = 0
                                     FogOptionState.anInt6048 = 2
                                     Class93.anInt1534 = i_72_
@@ -966,7 +966,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         Class93.anInt1534 = i_72_
                                         Class348.anInt4292 = 0
-                                        Class26.anInt385 = i_73_
+                                        SpriteArchiveLoader.anInt385 = i_73_
                                         FogOptionState.anInt6048 = 2
                                         Class73.anInt4773++
                                         val class348_sub47 = (method2148(Class43.aClass351_618, Class348_Sub23_Sub2.aClass77_9029, -117))
@@ -978,7 +978,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 }
                                 if (i_76_ == 10) {
                                     FogOptionState.anInt6048 = 2
-                                    Class26.anInt385 = i_73_
+                                    SpriteArchiveLoader.anInt385 = i_73_
                                     Class348.anInt4292 = 0
                                     Class300.anInt3820++
                                     Class93.anInt1534 = i_72_

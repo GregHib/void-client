@@ -1,7 +1,7 @@
 /* Class26 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class26 internal constructor(class45: Class45?, class45_9_: Class45?) {
+class SpriteArchiveLoader internal constructor(class45: Class45?, class45_9_: Class45?) {
     private val aClass356_374 = Class356(256)
     private val aClass45_377: Class45?
     private val aClass45_379: Class45?

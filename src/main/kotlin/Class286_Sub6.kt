@@ -139,7 +139,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             anInt6271++
             var string = "www"
             if (Class367_Sub8.aClass364_7361 != Class8.aClass364_165) {
-                if (Class8.aClass364_165 != Class26.aClass364_382) {
+                if (Class8.aClass364_165 != SpriteArchiveLoader.aClass364_382) {
                     if (Class8.aClass364_165 == GroundItemRenderState.aClass364_1657) string = "www-wtwip"
                 } else string = "www-wtqa"
             } else string = "www-wtrc"
@@ -157,10 +157,10 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                         Class286.Companion.aClass348_Sub2_3683 = Class348_Sub2.method2734(ModelDefinition.aClass45_1848!!, (Class318_Sub1_Sub4_Sub1.anInt10074), Class318.anInt3971)
                         if (Class286.Companion.aClass348_Sub2_3683 == null) return false
                     }
-                    if (TextureDefinitionLoader.aClass26_1977 == null) TextureDefinitionLoader.aClass26_1977 = Class26(Class43.aClass45_611, Class333.aClass45_4147)
+                    if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(Class43.aClass45_611, Class333.aClass45_4147)
                     var class348_sub16_sub3 = Class98.aClass348_Sub16_Sub3_1564!!
                     if (Class285.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = Class285.aClass348_Sub16_Sub3_4743!!
-                    if (class348_sub16_sub3.method2866((Class286.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aClass26_1977, Class367_Sub9.aClass45_7371, -35)) {
+                    if (class348_sub16_sub3.method2866((Class286.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, Class367_Sub9.aClass45_7371, -35)) {
                         Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                         Class98.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
                         if (Class348_Sub40_Sub35.anInt9444 <= 0) {
@@ -188,7 +188,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                         ModelDefinition.aClass45_1848 = null
                         Class286.Companion.aClass348_Sub2_3683 = null
                         BloomGraphicsOptionState.aLong5971 = 0L
-                        TextureDefinitionLoader.aClass26_1977 = null
+                        TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                         Class285.aClass348_Sub16_Sub3_4743 = null
                         return true
                     }
@@ -198,7 +198,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
                 exception.printStackTrace()
                 Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                 Class285.aClass348_Sub16_Sub3_4743 = null
-                TextureDefinitionLoader.aClass26_1977 = null
+                TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                 Class286.Companion.aClass348_Sub2_3683 = null
                 ModelDefinition.aClass45_1848 = null
                 Class348_Sub43.anInt7068 = 0

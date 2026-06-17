@@ -22,7 +22,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     fun stop() {
         anInt24++
-        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) CameraNodeList.aLong1739 = Class62.method599(-73) - -4000L
+        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = Class62.method599(-73) - -4000L
     }
 
     override fun getParameter(string: String?): String? {
@@ -150,7 +150,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     @Synchronized
     override fun paint(graphics: Graphics?) {
         anInt18++
-        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) {
+        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) {
             Class49.aBoolean4726 = true
             if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
                 val rectangle = graphics?.getClipBounds()
@@ -220,8 +220,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     private fun method90(bool: Boolean, bool_4_: Boolean) {
         anInt26++
         synchronized(this) {
-            if (Class26.aBoolean384) return
-            Class26.aBoolean384 = true
+            if (SpriteArchiveLoader.aBoolean384) return
+            SpriteArchiveLoader.aBoolean384 = true
         }
         println("Shutdown start - clean:" + bool)
         if (Class93.anApplet1530 != null) Class93.anApplet1530!!.destroy()
@@ -278,7 +278,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     override fun destroy() {
         anInt21++
-        if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 === this && !Class26.aBoolean384) {
+        if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 === this && !SpriteArchiveLoader.aBoolean384) {
             CameraNodeList.aLong1739 = Class62.method599(-108)
             Class286_Sub5.method2161(77.toByte(), 5000L)
             HudTabPanel.aClass297_2993 = null
@@ -428,7 +428,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     fun start() {
         anInt36++
-        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) CameraNodeList.aLong1739 = 0L
+        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = 0L
     }
 
     abstract fun method99(i: Byte)

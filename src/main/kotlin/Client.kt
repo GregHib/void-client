@@ -173,7 +173,7 @@ import SpotAnimDefCache.method1944
 import GlTexture3D.Companion.method1959
 import GlTextureCubeMap.Companion.method1962
 import GlTexture1D.Companion.method1973
-import Class26.Companion.method306
+import SpriteArchiveLoader.Companion.method306
 import Class260.method1979
 import Class261.Companion.method1980
 import Class261.Companion.method1987

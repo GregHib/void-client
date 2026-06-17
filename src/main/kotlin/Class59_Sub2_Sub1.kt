@@ -144,7 +144,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 method1827(1415665776)
             }
             if (bool_25_) {
-                Class26.anInt383++
+                SpriteArchiveLoader.anInt383++
                 method2770(2)
             }
         }

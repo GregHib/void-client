@@ -997,7 +997,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub2.anInt10042 = 0
             Class77.anInt1300 = 0
             Class348_Sub3.anInt6576 = 0
-            Class26.anInt378 = 0
+            SpriteArchiveLoader.anInt378 = 0
             Class377.anInt9827 = 0
             HeadIconRenderer.anInt2063 = 0
             FlickeringEffectsOptionState.anInt5918 = 0
@@ -1513,7 +1513,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8078 = 0
             Class361.anInt4444 = 0
             Class348_Sub40_Sub21.anInt9271 = 0
-            Class26.anInt373 = 0
+            SpriteArchiveLoader.anInt373 = 0
             OpenGlRenderer.anInt7526 = 0
             Class85.anInt1462 = 0
             Class348_Sub40_Sub9.anInt9170 = 0
@@ -1631,7 +1631,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7541 = 0
             Class65.anInt1140 = 0
             NativeRenderer.anInt7885 = 0
-            Class26.anInt380 = 0
+            SpriteArchiveLoader.anInt380 = 0
             InputStream_Sub2.anInt81 = 0
             Class294.anInt5043 = 0
             Class348_Sub5.anInt6629 = 0
@@ -2447,7 +2447,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ConfigDefinitionLoader.anInt2088 = 0
             Class318_Sub1_Sub1_Sub2.anInt10000 = 0
             Class64_Sub2.anInt5434 = 0
-            Class26.anInt375 = 0
+            SpriteArchiveLoader.anInt375 = 0
             Class42.anInt589 = 0
             Class348_Sub31_Sub2.anInt9072 = 0
             MinimapSpriteRenderer.anInt4926 = 0
@@ -3789,7 +3789,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9867 = 0
             AudioResampler.anInt2168 = 0
             GroundItemRenderState.anInt1659 = 0
-            Class26.anInt376 = 0
+            SpriteArchiveLoader.anInt376 = 0
             Class348_Sub18.anInt6816 = 0
             Class318_Sub1_Sub3_Sub5.anInt10377 = 0
             NativeRenderer.anInt7994 = 0
