@@ -8,7 +8,7 @@ class Class239_Sub4 : Class239 {
     override fun method1716(bool: Boolean) {
         if (bool != false) method1736(-57)
         anInt5880++
-        if (this.aClass348_Sub51_3136.method3422(674) != ParticleEmitterNode.aClass230_186) this.anInt3138 = 1
+        if (this.aClass348_Sub51_3136.method3422(674) != ParticleEmitterNode.aSceneProjector_186) this.anInt3138 = 1
         else if (this.aClass348_Sub51_3136.method3425(-95)) this.anInt3138 = 0
         if (this.anInt3138 != 0 && this.anInt3138 != 1) this.anInt3138 = method1710(20014)
     }
@@ -23,7 +23,7 @@ class Class239_Sub4 : Class239 {
         anInt5873++
         if (this.aClass348_Sub51_3136.method3425(-80)) return false
         if (i < 85) method1716(true)
-        return this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aClass230_186
+        return this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186
     }
 
     internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
@@ -44,7 +44,7 @@ class Class239_Sub4 : Class239 {
         if (i != 3) aString5882 = null
         anInt5872++
         if (this.aClass348_Sub51_3136.method3425(-63)) return 3
-        if (this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aClass230_186) return 1
+        if (this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186) return 1
         return 3
     }
 

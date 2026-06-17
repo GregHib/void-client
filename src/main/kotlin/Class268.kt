@@ -3,7 +3,7 @@ import WidgetDefinition.Companion.method268
 /* Class268 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class268 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class Class268 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     var anInt3429: Int = 0
     private val aClass60_3433 = Class60(64)
     private val aClass45_3442: Class45?
@@ -60,7 +60,7 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
             aClass45_3442 = class45
             this.anInt3429 = aClass45_3442!!.method407(0, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cb.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("cb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -4,10 +4,10 @@ import Class253.Companion.method1920
 /* Class278 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class278 internal constructor(class230: Class230?, i: Int, bool: Boolean, class45: Class45?, class45_7_: Class45?) {
+class Class278 internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class45: Class45?, class45_7_: Class45?) {
     var aClass45_3576: Class45? = null
     private var aClass60_3577: Class60? = Class60(64)
-    var aClass230_3578: Class230? = null
+    var aSceneProjector_3578: SceneProjector? = null
     var aBoolean3583: Boolean = false
     private val aClass45_3585: Class45?
     var aClass60_3590: Class60? = Class60(50)
@@ -119,12 +119,12 @@ class Class278 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 this.aBoolean3583 = bool
                 aClass45_3585 = class45
                 this.aClass45_3576 = class45_7_
-                this.aClass230_3578 = class230
+                this.aSceneProjector_3578 = sceneProjector
                 if (aClass45_3585 == null) break
                 val i_8_ = aClass45_3585.method414(-1) + -1
                 aClass45_3585.method407(0, i_8_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vda.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("vda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

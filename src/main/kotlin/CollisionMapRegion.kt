@@ -6,7 +6,7 @@ import java.util.*
 /*
  * Class111
  */
-class CollisionMapRegion internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val anInt1715: Int
     private val aClass45_1718: Class45?
     private var anIntArrayArray1724: Array<IntArray?>?
@@ -119,7 +119,7 @@ class CollisionMapRegion internal constructor(class230: Class230?, i: Int, class
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mt.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("mt.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

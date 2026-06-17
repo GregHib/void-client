@@ -3,7 +3,7 @@ import kotlin.math.max
 /* Class219 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelDefinitionCache internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_17_: Class45?) {
+class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_17_: Class45?) {
     var aClass60_2862: Class60 = Class60(20)
     private val aClass45_2866: Class45?
     var aClass45_2873: Class45? = null
@@ -67,7 +67,7 @@ class ModelDefinitionCache internal constructor(class230: Class230?, i: Int, cla
             aClass45_2866 = class45
             aClass45_2866!!.method407(0, 46)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sb.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_17_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("sb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_17_ != null) "{...}" else "null") + ')'))
         }
     }
 

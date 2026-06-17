@@ -3,7 +3,7 @@ import GrowableStringList.Companion.method1359
 /* Class194 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class VarbitDefLoader internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private var aClass60_2594: Class60? = Class60(64)
     private val aClass45_2597: Class45?
     fun method1442(i: Int, i_0_: Byte) {
@@ -68,7 +68,7 @@ class VarbitDefLoader internal constructor(class230: Class230?, i: Int, class45:
                 val i_5_ = aClass45_2597.method414(-1) + -1
                 aClass45_2597.method407(0, i_5_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qs.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("qs.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

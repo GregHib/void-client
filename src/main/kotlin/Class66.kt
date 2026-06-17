@@ -1037,11 +1037,11 @@ object Class66 {
                 val string_120_ = aStringArray1152!![anInt1170 + 1]!!
                 val i_121_ = anIntArray1149!![--anInt1173]
                 if (string.length > 0) {
-                    if (Class367_Sub9.aStringArray7378 == null) Class367_Sub9.aStringArray7378 = arrayOfNulls<String>((Class272.anIntArray3475!![Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987]))
+                    if (Class367_Sub9.aStringArray7378 == null) Class367_Sub9.aStringArray7378 = arrayOfNulls<String>((Class272.anIntArray3475!![Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987]))
                     Class367_Sub9.aStringArray7378!![i_121_] = string
                 }
                 if (string_120_.length > 0) {
-                    if (Class54.aStringArray974 == null) Class54.aStringArray974 = arrayOfNulls<String>((Class272.anIntArray3475!![Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987]))
+                    if (Class54.aStringArray974 == null) Class54.aStringArray974 = arrayOfNulls<String>((Class272.anIntArray3475!![Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987]))
                     Class54.aStringArray974!![i_121_] = string_120_
                 }
                 return

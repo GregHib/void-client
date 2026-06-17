@@ -5,7 +5,7 @@ import Class52.Companion.method494
 /* Class87 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class87 internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_6_: Class45?, class45_7_: Class45?) {
+class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_6_: Class45?, class45_7_: Class45?) {
     private var aClass60_1487: Class60? = Class60(64)
     private val aClass45_1488: Class45?
     private var aClass60_1491: Class60? = Class60(100)
@@ -90,7 +90,7 @@ class Class87 internal constructor(class230: Class230?, i: Int, class45: Class45
             }
             method1711(7, class45_6_, 2, class45_7_)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lfa.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("lfa.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
         }
     }
 

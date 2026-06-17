@@ -1,7 +1,7 @@
 /* Class150 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelDefinitionLoader internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_9_: Class45?) {
+class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_9_: Class45?) {
     private var aClass45_2048: Class45? = null
     private val aClass60_2050 = Class60(64)
     var aClass45_2054: Class45? = null
@@ -57,7 +57,7 @@ class ModelDefinitionLoader internal constructor(class230: Class230?, i: Int, cl
             aClass45_2048 = class45
             aClass45_2048!!.method407(0, 3)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oha.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
         }
     }
 

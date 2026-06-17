@@ -3,7 +3,7 @@ import SceneTilePlaneManager.method259
 /* Class217 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleAmountCache internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_2842: Class45?
     var anInt2845: Int = 0
     private var aClass60_2848: Class60? = Class60(64)
@@ -58,7 +58,7 @@ class ParticleAmountCache internal constructor(class230: Class230?, i: Int, clas
             if (aClass45_2842 != null) this.anInt2845 = aClass45_2842.method407(0, 16)
             else this.anInt2845 = 0
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rv.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("rv.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

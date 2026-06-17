@@ -3,7 +3,7 @@ import Class299_Sub1.Companion.method2259
 /* Class153 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ConfigDefinitionLoader internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_10_: Class45?) {
+class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_10_: Class45?) {
     private var aClass60_2083 = Class60(128)
     private val aClass45_2084: Class45?
     var aClass45_2087: Class45? = null
@@ -79,7 +79,7 @@ class ConfigDefinitionLoader internal constructor(class230: Class230?, i: Int, c
             this.aClass45_2087 = class45_10_
             aClass45_2084!!.method407(0, 36)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("on.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_10_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("on.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_10_ != null) "{...}" else "null") + ')'))
         }
     }
 

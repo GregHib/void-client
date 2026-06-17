@@ -4,7 +4,7 @@ import java.io.File
 /*
  * Class166
  */
-class ItemDefinitionLoader internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_9_: Class45?) {
+class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_9_: Class45?) {
     @JvmField
     var aClass45_2180: Class45? = null
     private val aClass60_2185 = Class60(64)
@@ -72,7 +72,7 @@ class ItemDefinitionLoader internal constructor(class230: Class230?, i: Int, cla
             this.aClass45_2180 = class45_9_
             aClass45_2188!!.method407(0, 33)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pg.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("pg.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
         }
     }
 

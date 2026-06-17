@@ -41,7 +41,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
         fun method247(i: Int): Class348_Sub51? {
             anInt8632++
             var class234: Class234? = null
-            var class348_sub51 = Class348_Sub51(Class348_Sub42_Sub8_Sub2.aClass230_10434, 0)
+            var class348_sub51 = Class348_Sub51(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, 0)
             try {
                 val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233((-46).toByte(), "", true)
                 while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-85).toByte(), 1L)
@@ -55,7 +55,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
                         if (i_2_ == -1) throw IOException("EOF")
                         i_3_ += i_2_
                     }
-                    class348_sub51 = Class348_Sub51(Class348_Sub49(`is`), (Class348_Sub42_Sub8_Sub2.aClass230_10434), 0)
+                    class348_sub51 = Class348_Sub51(Class348_Sub49(`is`), (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434), 0)
                 }
             } catch (exception: Exception) {
                 /* empty */

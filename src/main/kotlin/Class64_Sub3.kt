@@ -1018,7 +1018,7 @@ class Class64_Sub3 : Class64 {
                 class64_sub3_211_.aClass270_5575!!.anInterface8_3463 = aClass270_5575!!.anInterface8_3463
             } else if (!LinkedListIterator.method1238(i, anInt5556, -93)) class64_sub3_211_.aClass270_5575 = null
             else class64_sub3_211_.aClass270_5575 = aClass270_5575
-            if (Class230.method1637(anInt5556, 32768, i)) {
+            if (SceneProjector.method1637(anInt5556, 32768, i)) {
                 if (class64_sub3_213_!!.aShortArray5601 == null || class64_sub3_213_.aShortArray5601!!.size < anInt5632) {
                     val i_230_ = anInt5632
                     class64_sub3_213_.aShortArray5601 = ShortArray(i_230_)

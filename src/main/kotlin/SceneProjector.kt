@@ -10,7 +10,7 @@ import kotlin.math.min
 /* Class230 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class230 internal constructor(string: String?, i: Int) {
+class SceneProjector internal constructor(string: String?, i: Int) {
     @JvmField
     var aString2985: String? = null
     @JvmField

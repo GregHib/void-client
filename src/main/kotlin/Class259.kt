@@ -1,7 +1,7 @@
 /* Class259 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class259 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class Class259 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_3299: Class45?
     private val aClass60_3303 = Class60(64)
     var anInt3305: Int = 0
@@ -30,7 +30,7 @@ class Class259 internal constructor(class230: Class230?, i: Int, class45: Class4
             aClass45_3299 = class45
             this.anInt3305 = aClass45_3299!!.method407(0, 19)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uea.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("uea.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

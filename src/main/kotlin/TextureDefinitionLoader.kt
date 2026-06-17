@@ -3,7 +3,7 @@ import Class367_Sub1.Companion.method3533
 /* Class141 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class TextureDefinitionLoader internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_4_: Class45?) {
+class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_4_: Class45?) {
     private var aClass60_1963 = Class60(64)
     @JvmField
     var aClass45_1965: Class45? = null
@@ -79,7 +79,7 @@ class TextureDefinitionLoader internal constructor(class230: Class230?, i: Int, 
             aClass45_1971 = class45
             aClass45_1971!!.method407(0, 34)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oda.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_4_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_4_ != null) "{...}" else "null") + ')'))
         }
     }
 

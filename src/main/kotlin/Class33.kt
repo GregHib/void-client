@@ -2,7 +2,7 @@ import Class348_Sub31.Companion.method3013
 import Class5_Sub3.Companion.method200
 import java.awt.Point
 
-class Class33 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class Class33 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_458: Class45?
     private val aClass60_460 = Class60(128)
     fun method337(bool: Boolean, i: Int): CacheArchiveIndex {
@@ -29,7 +29,7 @@ class Class33 internal constructor(class230: Class230?, i: Int, class45: Class45
                 val i_6_ = -1 + aClass45_458.method414(-1)
                 aClass45_458.method407(0, i_6_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("iba.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("iba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

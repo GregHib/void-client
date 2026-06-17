@@ -1,7 +1,7 @@
 /* Class84 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass60_1449 = Class60(16)
     private val aClass45_1460: Class45?
 
@@ -69,7 +69,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
             aClass45_1460 = class45
             aClass45_1460!!.method407(0, 29)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lca.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("lca.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

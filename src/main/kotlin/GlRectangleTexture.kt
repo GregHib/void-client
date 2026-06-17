@@ -149,7 +149,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         @JvmField
         var anInt8637: Int = 0
         @JvmField
-        var aClass230_8638: Class230? = Class230("stellardawn", 1)
+        var aSceneProjector_8638: SceneProjector? = SceneProjector("stellardawn", 1)
         @JvmField
         var anInt8639: Int = 0
         @JvmField
@@ -195,7 +195,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         fun method251(i: Byte) {
             if (i.toInt() != 2) method250(-45, false, -102)
             aClass323_8644 = null
-            aClass230_8638 = null
+            aSceneProjector_8638 = null
             aByteArrayArray8642 = null
         }
 

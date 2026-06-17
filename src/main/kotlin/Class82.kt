@@ -25,7 +25,7 @@ import java.io.File
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
 
-class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_1436: Class45?
     @JvmField
     var anInt1439: Int = 0
@@ -36,7 +36,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
             aClass45_1436 = class45
             this.anInt1439 = aClass45_1436!!.method407(0, 15)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lba.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("lba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

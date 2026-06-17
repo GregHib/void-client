@@ -125,7 +125,7 @@ import TextureDefinitionCache.Companion.method1624
 import BoxedIntHolder.Companion.method1627
 import NativeLibraryUnloader.method1628
 import RenderConfigFactory.Companion.method1632
-import Class230.Companion.method1635
+import SceneProjector.Companion.method1635
 import Class231.Companion.method1641
 import Class232.Companion.method1645
 import Class233.Companion.method1653
@@ -666,14 +666,14 @@ class Client : GameAppletFrame() {
         Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172
         Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502
         Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889
-        if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == ParticleEmitterNode.aClass230_186) RuntimeException_Sub1.aBoolean4599 = false
-        if (GlRectangleTexture.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
+        if (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) RuntimeException_Sub1.aBoolean4599 = false
+        if (GlRectangleTexture.aSceneProjector_8638 == Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) {
             InputSettingsState.shiftClick = true
             SpriteLoadValidator.aShortArrayArray4791 = Class348_Sub8.aShortArrayArray6664
             Class268.anInt3439 = 16777215
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub51.aShortArrayArrayArray7262
             Class268.anInt3444 = 0
-        } else if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class239_Sub9.aClass230_5932) {
+        } else if (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == Class239_Sub9.aSceneProjector_5932) {
             SpriteLoadValidator.aShortArrayArray4791 = Class268.aShortArrayArray3443
             Class367_Sub2.aShortArrayArrayArray7290 = Class318_Sub1_Sub3_Sub3.aShortArrayArrayArray10253
         } else {
@@ -1337,11 +1337,11 @@ class Client : GameAppletFrame() {
             Class318_Sub1_Sub5.aBoolean8773 = string_25_ != null && string_25_ == "1"
             val string_26_ = this.getParameter("game")
             if (string_26_ != null) {
-                if (string_26_ == "0") Class348_Sub42_Sub8_Sub2.aClass230_10434 = ParticleEmitterNode.aClass230_186
-                else if (string_26_ == "1") Class348_Sub42_Sub8_Sub2.aClass230_10434 = GlRectangleTexture.aClass230_8638
+                if (string_26_ == "0") Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = ParticleEmitterNode.aSceneProjector_186
+                else if (string_26_ == "1") Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = GlRectangleTexture.aSceneProjector_8638
                 else if (string_26_ != "2") {
-                    if (string_26_ == "3") Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class239_Sub9.aClass230_5932
-                } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class286_Sub6.aClass230_6262
+                    if (string_26_ == "3") Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class239_Sub9.aSceneProjector_5932
+                } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class286_Sub6.aSceneProjector_6262
             }
             try {
                 SocketStreamWorker.anInt2670 = this.getParameter("affid")!!.toInt()
@@ -1390,15 +1390,15 @@ class Client : GameAppletFrame() {
             }
             Gl2dTexture.aString8605 = this.getParameter("additionalInfo")
             if (Gl2dTexture.aString8605 != null && Gl2dTexture.aString8605!!.length > 50) Gl2dTexture.aString8605 = null
-            if (ParticleEmitterNode.aClass230_186 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
+            if (ParticleEmitterNode.aSceneProjector_186 == Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) {
                 OpenGlRenderer.anInt7666 = 503
                 Class92.anInt1524 = 765
-            } else if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == GlRectangleTexture.aClass230_8638) {
+            } else if (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == GlRectangleTexture.aSceneProjector_8638) {
                 Class92.anInt1524 = 640
                 OpenGlRenderer.anInt7666 = 480
             }
             Class79.aClient1367 = this
-            this.method95(Class92.anInt1524, 634, OpenGlRenderer.anInt7666, SceneRegionState.aClass231_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985, 50)
+            this.method95(Class92.anInt1524, 634, OpenGlRenderer.anInt7666, SceneRegionState.aClass231_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.aString2985, 50)
         }
     }
 
@@ -1996,10 +1996,10 @@ class Client : GameAppletFrame() {
                         if (strings[5] != "game1") {
                             if (strings[5] != "game2") {
                                 if (strings[5] != "game3") Class55.method518("game", (-124).toByte())
-                                else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class239_Sub9.aClass230_5932
-                            } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class286_Sub6.aClass230_6262
-                        } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = GlRectangleTexture.aClass230_8638
-                    } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = ParticleEmitterNode.aClass230_186
+                                else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class239_Sub9.aSceneProjector_5932
+                            } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = Class286_Sub6.aSceneProjector_6262
+                        } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = GlRectangleTexture.aSceneProjector_8638
+                    } else Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 = ParticleEmitterNode.aSceneProjector_186
                     ServerConnectionInfo.aBoolean2151 = false
                     Class239_Sub12.aString5966 = ""
                     TextureMetadataProvider.aLong4615 = 0L
@@ -2009,12 +2009,12 @@ class Client : GameAppletFrame() {
                     FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
                     Class375.aBoolean4540 = false
                     Class251.anInt3234 = 0
-                    UnderlayDefinition.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987)
+                    UnderlayDefinition.anInt2884 = (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987)
                     Renderer.anInt4583 = 0
                     Gl2dTexture.aString8605 = null
                     val var_client = Client()
                     Class79.aClient1367 = var_client
-                    var_client.method96(SceneRegionState.aClass231_196!!.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985), 23499, 768)
+                    var_client.method96(SceneRegionState.aClass231_196!!.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.aString2985), 23499, 768)
                     Class52.aFrame4904!!.setLocation(40, 40)
                 } catch (exception: Exception) {
                     method1242(null, exception, 15004)
@@ -2201,7 +2201,7 @@ class Client : GameAppletFrame() {
                                                     if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), Class28.aString5001, 1L, (Class348_Sub49_Sub1.anInt9747))
                                                     else method2678(-2049)
                                                 } else {
-                                                    if ((Class348_Sub42_Sub8_Sub2.aClass230_10434) == (GlRectangleTexture.aClass230_8638)) Class50_Sub3.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (Class274.aClass274_3510!!.method2063((Class348_Sub33.anInt6967), 544)), 1L, -1)
+                                                    if ((Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) Class50_Sub3.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (Class274.aClass274_3510!!.method2063((Class348_Sub33.anInt6967), 544)), 1L, -1)
                                                     Class50_Sub3.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, Class239_Sub4.aString5882, 1L, Class333.anInt4144)
                                                 }
                                             }
@@ -2469,7 +2469,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray734
                                     Class348_Sub1_Sub2.aClass262_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                if ((Class230.anInt2986 > class46.anInt726) && (class46.anObjectArray761 != null)) {
+                                if ((SceneProjector.anInt2986 > class46.anInt726) && (class46.anObjectArray761 != null)) {
                                     val class348_sub36 = Class348_Sub36()
                                     class348_sub36.aClass46_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray761
@@ -2512,7 +2512,7 @@ class Client : GameAppletFrame() {
                                 if (class46.aClass46Array798 != null) Companion.method107(class46.aClass46Array798!!, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
                                 val class348_sub41 = ((MinimapSpriteRenderer.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as Class348_Sub41?)
                                 if (class348_sub41 != null) {
-                                    if ((Class348_Sub42_Sub8_Sub2.aClass230_10434 == ParticleEmitterNode.aClass230_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !Class299_Sub2.aBoolean6327) method661(105.toByte())
+                                    if ((Class348_Sub42_Sub8_Sub2.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !Class299_Sub2.aBoolean6327) method661(105.toByte())
                                     method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_)
                                 }
                             }

@@ -1,7 +1,7 @@
 /* Class185 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MapSceneDefLoader internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass60_2479 = Class60(64)
     private val aClass45_2480: Class45?
     fun method1390(i: Int) {
@@ -52,7 +52,7 @@ class MapSceneDefLoader internal constructor(class230: Class230?, i: Int, class4
             aClass45_2480 = class45
             aClass45_2480!!.method407(0, 31)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qf.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qf.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -40,7 +40,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
         @JvmField
         var anInt10433: Int = 0
         @JvmField
-        var aClass230_10434: Class230? = null
+        var aSceneProjector_10434: SceneProjector? = null
         @JvmField
         var anInt10435: Int = 0
         @JvmField
@@ -187,7 +187,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (bool != true) aClass230_10434 = null
+            if (bool != true) aSceneProjector_10434 = null
             if (Class348_Sub3.aIntRange_6584 == InputSettingsState.aIntRange_1762) {
                 Class239_Sub4.aString5882 = (if (Class348_Sub40_Sub25.anInt9341 > 2) Class299.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else Class274.aClass274_3509!!.method2063(Class348_Sub33.anInt6967, 544))
                 Class333.anInt4144 = (if (Class348_Sub40_Sub25.anInt9341 <= 0) -1 else Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
@@ -594,7 +594,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aByte310 = i_68_
                             HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aString313 = string_72_
                             if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
-                            Class230.anInt2986 = Class311.anInt3918
+                            SceneProjector.anInt2986 = Class311.anInt3918
                             Class348_Sub3.aIntRange_6584 = null
                             return true
                         }
@@ -611,7 +611,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class37.anInt496++
                     if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                 }
-                Class230.anInt2986 = Class311.anInt3918
+                SceneProjector.anInt2986 = Class311.anInt3918
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1729,7 +1729,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class348_Sub3.aIntRange_6584 == Class359.aIntRange_4421) {
-                Class230.anInt2986 = Class311.anInt3918
+                SceneProjector.anInt2986 = Class311.anInt3918
                 if (Class348_Sub40_Sub25.anInt9341 == 0) {
                     Class37.anInt496 = 0
                     Class50.aString863 = null
@@ -1793,7 +1793,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
 
         @JvmStatic
         fun method3202(i: Byte) {
-            aClass230_10434 = null
+            aSceneProjector_10434 = null
             if (i > 38) {
                 aLongArrayArrayArray10431 = null
                 aClass76_10436 = null

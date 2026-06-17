@@ -27,7 +27,7 @@ class Class239_Sub27 : Class239 {
     override fun method1710(i: Int): Int {
         anInt6133++
         if (i != 20014) method1716(true)
-        if ((this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aClass230_186) && this.aClass348_Sub51_3136.method3425(-111)) return 0
+        if ((this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186) && this.aClass348_Sub51_3136.method3425(-111)) return 0
         return 1
     }
 

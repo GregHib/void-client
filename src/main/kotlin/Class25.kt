@@ -1,7 +1,7 @@
 /* Class25 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class Class25 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private var aClass60_360: Class60? = Class60(16)
     private var aClass45_366: Class45? = null
     fun method299(i: Int, i_0_: Int) {
@@ -53,7 +53,7 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
             aClass45_366 = class45
             aClass45_366!!.method407(0, 30)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("hq.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("hq.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

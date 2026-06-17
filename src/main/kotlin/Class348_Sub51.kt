@@ -52,7 +52,7 @@ class Class348_Sub51 : Class348 {
     var aClass239_Sub14_7264: Class239_Sub14? = null
     @JvmField
     var aClass239_Sub11_7265: Class239_Sub11? = null
-    private val aClass230_7269: Class230?
+    private val aSceneProjector_7269: SceneProjector?
     @JvmField
     var aClass239_Sub21_7270: Class239_Sub21? = null
     @JvmField
@@ -126,10 +126,10 @@ class Class348_Sub51 : Class348 {
         } while (false)
     }
 
-    fun method3422(i: Int): Class230? {
+    fun method3422(i: Int): SceneProjector? {
         anInt7258++
         if (i != 674) method3425(45)
-        return aClass230_7269
+        return aSceneProjector_7269
     }
 
     private fun method3423(bool: Boolean, i: Int) {
@@ -326,25 +326,25 @@ class Class348_Sub51 : Class348 {
         }
     }
 
-    internal constructor(class230: Class230?, i: Int) {
+    internal constructor(sceneProjector: SceneProjector?, i: Int) {
         try {
-            aClass230_7269 = class230
+            aSceneProjector_7269 = sceneProjector
             aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.lowercase(Locale.getDefault()).indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = Class239_Sub25(i, this)
             method3423(true, 31286)
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("dh.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ')'))
+            throw method2929(runtimeexception, ("dh.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
-    internal constructor(class348_sub49: Class348_Sub49?, class230: Class230?, i: Int) {
+    internal constructor(class348_sub49: Class348_Sub49?, sceneProjector: SceneProjector?, i: Int) {
         try {
-            aClass230_7269 = class230
+            aSceneProjector_7269 = sceneProjector
             aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = Class239_Sub25(i, this)
             method3424(925, class348_sub49)
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("dh.<init>(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (class230 != null) "{...}" else "null") + ',' + i + ')'))
+            throw method2929(runtimeexception, ("dh.<init>(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

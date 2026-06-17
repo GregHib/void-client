@@ -1,7 +1,7 @@
 /* Class65 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_1141: Class45?
     private val aClass60_1145 = Class60(256)
     fun method694(i: Int) {
@@ -54,7 +54,7 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
             aClass45_1141 = class45
             aClass45_1141!!.method407(0, 26)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kb.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("kb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

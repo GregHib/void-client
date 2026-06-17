@@ -89,7 +89,7 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
         fun method3100(i: Int, bool: Boolean, i_4_: Int): Boolean {
             anInt9253++
             if (bool != false) anIntArray9259 = null
-            return Class230.method1637(i, 32768, i_4_) or ((0x800 and i_4_) != 0) || Class273.method2056(i_4_, 86, i)
+            return SceneProjector.method1637(i, 32768, i_4_) or ((0x800 and i_4_) != 0) || Class273.method2056(i_4_, 86, i)
         }
 
         init {

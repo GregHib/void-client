@@ -1,7 +1,7 @@
 /* Class326 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class326 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class Class326 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
     private val aClass45_4085: Class45?
     private var aClass60_4087: Class60? = Class60(64)
     fun method2600(i: Int, i_0_: Int): Class254 {
@@ -55,7 +55,7 @@ class Class326 internal constructor(class230: Class230?, i: Int, class45: Class4
                 if (aClass45_4085 == null) break
                 aClass45_4085.method407(0, 11)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dc.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("dc.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

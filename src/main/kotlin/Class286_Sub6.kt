@@ -111,7 +111,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
 
     companion object {
         @JvmField
-        var aClass230_6262: Class230? = Class230("game3", 2)
+        var aSceneProjector_6262: SceneProjector? = SceneProjector("game3", 2)
         @JvmField
         var anInt6263: Int = 0
         @JvmField
@@ -145,7 +145,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             } else string = "www-wtrc"
             var string_2_ = ""
             if (Class239_Sub12.aString5966 != null) string_2_ = "/p=" + Class239_Sub12.aString5966
-            return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.aClass230_10434?.aString2985) + ".com/l=" + Class348_Sub33.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
+            return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434?.aString2985) + ".com/l=" + Class348_Sub33.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
         }
 
         @JvmStatic
@@ -209,7 +209,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
         @JvmStatic
         fun method2164(bool: Boolean) {
             if (bool == true) {
-                aClass230_6262 = null
+                aSceneProjector_6262 = null
                 aBooleanArray6270 = null
             }
         }

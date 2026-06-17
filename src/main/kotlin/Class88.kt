@@ -243,7 +243,7 @@ class Class88 {
                             class348_sub49_sub2.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, -109)
                             val i_5_ = class348_sub49_sub2.anInt7197
                             class348_sub49_sub2.writeString((-5).toByte(), Class64_Sub3.aString5600!!)
-                            class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987)
+                            class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987)
                             class348_sub49_sub2.writeByte(false, Class348_Sub33.anInt6967)
                             method4002(class348_sub49_sub2, 55.toByte())
                             class348_sub49_sub2.writeString((-5).toByte(), Class239_Sub12.aString5966!!)

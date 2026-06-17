@@ -335,7 +335,7 @@ class Class79 {
         if (i >= -75) aByte1376 = 102.toByte()
         anInt1334++
         if (this.aByte1384.toInt() == -1) {
-            if (ParticleEmitterNode.aClass230_186 == this.aClass278_1348!!.aClass230_3578) this.aByte1384 = 1.toByte()
+            if (ParticleEmitterNode.aSceneProjector_186 == this.aClass278_1348!!.aSceneProjector_3578) this.aByte1384 = 1.toByte()
             else this.aByte1384 = 0.toByte()
         }
     }

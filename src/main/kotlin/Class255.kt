@@ -3,7 +3,7 @@ import Class54.Companion.method500
 /* Class255 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, class326: Class326?, class45: Class45?, class45_22_: Class45?) {
+class Class255 internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class326: Class326?, class45: Class45?, class45_22_: Class45?) {
     private val aClass45_3267: Class45?
     var aClass45_3268: Class45? = null
     private var aBoolean3269 = false
@@ -207,7 +207,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             aStringArray3290 = (arrayOf<String?>(null, null, Class274.aClass274_3490!!.method2063(this.anInt3286, 544), null, null))
             aStringArray3293 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491!!.method2063(this.anInt3286, 544)))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class326 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_22_ != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class326 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_22_ != null) "{...}" else "null") + ')'))
         }
     }
 

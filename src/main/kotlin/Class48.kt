@@ -91,7 +91,7 @@ class Class48 {
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeLong(TextureMetadataProvider.aLong4615, 104.toByte())
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, Class348_Sub33.anInt6967)
-                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987))
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, (Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987))
                     method4002((class348_sub47.aClass348_Sub49_Sub2_7116!!), 55.toByte())
                     val string_5_ = Gl2dTexture.aString8605
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (string_5_ == null) 0 else 1)

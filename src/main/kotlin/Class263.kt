@@ -4,7 +4,7 @@ import Class239_Sub29.Companion.method1850
 /* Class263 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, class45: Class45?, class45_29_: Class45?) {
+class Class263 internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class45: Class45?, class45_29_: Class45?) {
     private val aClass45_3343: Class45?
     var aClass45_3345: Class45? = null
     private var aClass60_3350: Class60?
@@ -150,7 +150,7 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 val i_30_ = aClass45_3343.method414(-1) + -1
                 aClass45_3343.method407(0, i_30_)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uha.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_29_ != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("uha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_29_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

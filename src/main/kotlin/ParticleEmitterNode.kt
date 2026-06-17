@@ -31,7 +31,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
         @JvmField
         var anInt182: Int = 0
         @JvmField
-        var aClass230_186: Class230?
+        var aSceneProjector_186: SceneProjector?
         @JvmField
         var anIntArray187: IntArray? = intArrayOf(-1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048)
         @JvmField
@@ -51,7 +51,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
             if (i < 101) Companion.method218((-85).toByte())
             anIntArray187 = null
             anIntArray179 = null
-            aClass230_186 = null
+            aSceneProjector_186 = null
             aClass87_191 = null
             anIntArrayArray174 = null
         }
@@ -64,7 +64,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
         }
 
         init {
-            aClass230_186 = Class230("runescape", 0)
+            aSceneProjector_186 = SceneProjector("runescape", 0)
         }
     }
 }

@@ -216,7 +216,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8054 = 0
             Class59_Sub1.anInt5286 = 0
             GlFramebufferBlitter.anInt288 = 0
-            Class230.anInt2982 = 0
+            SceneProjector.anInt2982 = 0
             Class61.anInt1105 = 0
             Class318_Sub1_Sub4_Sub1.anInt10091 = 0
             GlVertexBufferBase.anInt1922 = 0
@@ -1987,7 +1987,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub8.anInt5916 = 0
             Class318_Sub1_Sub1_Sub2.anInt9969 = 0
             Class318_Sub1_Sub3_Sub4.anInt10328 = 0
-            Class230.anInt2983 = 0
+            SceneProjector.anInt2983 = 0
             Class348_Sub20.anInt6837 = 0
             Class64_Sub2.anInt5426 = 0
             OpenGlRenderer.anInt7642 = 0
@@ -3573,7 +3573,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class46.anInt718 = 0
             OpenGlRenderer.anInt7653 = 0
             Class348_Sub49.anInt7137 = 0
-            Class230.anInt2989 = 0
+            SceneProjector.anInt2989 = 0
             Class318_Sub1_Sub3_Sub1.anInt10018 = 0
             Class377.anInt9877 = 0
             Class237.anInt3102 = 0
@@ -3956,7 +3956,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub1.anInt6549 = 0
             Class31.anInt436 = 0
             Class315.anInt3948 = 0
-            Class230.anInt2988 = 0
+            SceneProjector.anInt2988 = 0
             Renderer.anInt4574 = 0
             Class46.anInt819 = 0
             Class318_Sub1_Sub5_Sub1.anInt10119 = 0
@@ -4068,7 +4068,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ScreenBorderFiller.anInt1958 = 0
             Class286_Sub3.anInt6232 = 0
             Class348_Sub42_Sub1.anInt9496 = 0
-            Class230.anInt2984 = 0
+            SceneProjector.anInt2984 = 0
             ParticleAmountConfig.anInt2124 = 0
             OpenGlRenderer.anInt7572 = 0
             IOException_Sub1.anInt89 = 0
