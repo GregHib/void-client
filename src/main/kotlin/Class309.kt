@@ -124,7 +124,7 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
                         while (class348_sub21 != null) {
                             val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 82.toByte()))
                             if (method589(class42, -4)) {
-                                val bool = Class190.method1425((-31).toByte(), class42, class348_sub21, i_14_, var_renderer, i_15_)
+                                val bool = ModelLightingConfig.method1425((-31).toByte(), class42, class348_sub21, i_14_, var_renderer, i_15_)
                                 if (bool) Class59.method549((-43).toByte(), class348_sub21, var_renderer!!, class42)
                             }
                             class348_sub21 = (class262.method1990(104.toByte()) as Class348_Sub21?)

@@ -327,12 +327,12 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                 anInt5818++
                 if (!this.aBoolean3109) {
                     var bool = false
-                    var class190: Class190? = null
+                    var modelLightingConfig: ModelLightingConfig? = null
                     val i_41_ = -112 / ((-71 - i_40_) / 38)
                     if (`is` != null) `is`[0] = -1
                     while (class348_sub49!!.anInt7197 < (class348_sub49.aByteArray7154)!!.size) {
                         val i_42_ = class348_sub49.readUnsignedByte(255)
-                        if (i_42_ == 0) class190 = Class190(class348_sub49)
+                        if (i_42_ == 0) modelLightingConfig = ModelLightingConfig(class348_sub49)
                         else if (i_42_ == 1) {
                             val i_58_ = class348_sub49.readUnsignedByte(255)
                             if (i_58_ > 0) {
@@ -358,8 +358,8 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                                 }
                             }
                         } else if (i_42_ == 2) {
-                            if (class190 == null) class190 = Class190()
-                            class190.method1423(8, class348_sub49)
+                            if (modelLightingConfig == null) modelLightingConfig = ModelLightingConfig()
+                            modelLightingConfig.method1423(8, class348_sub49)
                         } else if (i_42_ != 128) {
                             if (i_42_ == 129) {
                                 if ((this.aByteArrayArrayArray3104) == null) this.aByteArrayArrayArray3104 = arrayOfNulls<Array<ByteArray?>>(4)
@@ -446,12 +446,12 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             `is`[4] = class348_sub49.readUnsignedShort(842397944)
                         } else class348_sub49.anInt7197 += 10
                     }
-                    if (class190 != null) {
+                    if (modelLightingConfig != null) {
                         for (i_64_ in 0..7) {
                             for (i_65_ in 0..7) {
                                 val i_66_ = i_64_ + (i_39_ shr 3)
                                 val i_67_ = (i shr 3) - -i_65_
-                                if (i_66_ >= 0 && ((this.anInt3117 shr 3) > i_66_) && i_67_ >= 0 && i_67_ < (this.anInt3114 shr 3)) method192(class190, 10000, i_66_, i_67_)
+                                if (i_66_ >= 0 && ((this.anInt3117 shr 3) > i_66_) && i_67_ >= 0 && i_67_ < (this.anInt3114 shr 3)) method192(modelLightingConfig, 10000, i_66_, i_67_)
                             }
                         }
                     }
@@ -614,7 +614,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                 anInt5825++
                 if (!this.aBoolean3109) {
                     val bool_122_ = bool
-                    var class190: Class190? = null
+                    var modelLightingConfig: ModelLightingConfig? = null
                     if (`is` != null) `is`[0] = -1
                     val i_123_ = 8 * (0x7 and i_116_)
                     val i_124_ = (i and 0x7) * 8
@@ -650,8 +650,8 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                                     }
                                 }
                             } else if (i_125_ == 2) {
-                                if (class190 == null) class190 = Class190()
-                                class190.method1423(8, class348_sub49)
+                                if (modelLightingConfig == null) modelLightingConfig = ModelLightingConfig()
+                                modelLightingConfig.method1423(8, class348_sub49)
                             } else if (i_125_ == 128) {
                                 if (`is` != null) {
                                     `is`[0] = class348_sub49.readUnsignedShort(842397944)
@@ -717,9 +717,9 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                                     }
                                 }
                             } else throw IllegalStateException("")
-                        } else class190 = Class190(class348_sub49)
+                        } else modelLightingConfig = ModelLightingConfig(class348_sub49)
                     }
-                    if (class190 != null) method192(class190, 10000, i_117_ shr 3, i_120_ shr 3)
+                    if (modelLightingConfig != null) method192(modelLightingConfig, 10000, i_117_ shr 3, i_120_ shr 3)
                     if (bool_122_ || this.aByteArrayArrayArray3104 == null || (this.aByteArrayArrayArray3104!![i_118_] == null)) break
                     val i_145_ = 7 + i_117_
                     val i_146_ = 7 + i_120_

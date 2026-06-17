@@ -64,15 +64,15 @@ class ServerConnectionInfo {
             return (0x800 and i) != 0
         }
 
-        fun method1260(bool: Boolean, i: Int, class190: Class190?) {
+        fun method1260(bool: Boolean, i: Int, modelLightingConfig: ModelLightingConfig?) {
             var i = i
             if (Class348_Sub40_Sub10.aBoolean9181) {
                 Class348_Sub40_Sub10.aBoolean9181 = false
                 i = 0
             }
             anInt2140++
-            if (Class239_Sub14.aClass190_5990 == null || !Class239_Sub14.aClass190_5990!!.method1424(class190!!, 84.toByte())) {
-                Class239_Sub14.aClass190_5990 = class190
+            if (Class239_Sub14.aModelLightingConfig_5990 == null || !Class239_Sub14.aModelLightingConfig_5990!!.method1424(modelLightingConfig!!, 84.toByte())) {
+                Class239_Sub14.aModelLightingConfig_5990 = modelLightingConfig
                 Class348_Sub33.aLong6963 = method599(-78)
                 Class286_Sub5.anInt6248 = i
                 Class206.anInt4889 = Class286_Sub5.anInt6248

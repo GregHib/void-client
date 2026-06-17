@@ -82,7 +82,7 @@ class Class262 {
 
     fun method1997(i: Int): Class348? {
         anInt3341++
-        if (i != 8) aClass190ArrayArray3335 = null
+        if (i != 8) aModelLightingConfigArrayArray3335 = null
         val class348 = this.aClass348_3334.aClass348_4294
         if (this.aClass348_3334 === class348) return null
         class348!!.method2715(114.toByte())
@@ -120,7 +120,7 @@ class Class262 {
     }
 
     fun method2002(i: Byte): Boolean {
-        if (i.toInt() != 18) aClass190ArrayArray3335 = null
+        if (i.toInt() != 18) aModelLightingConfigArrayArray3335 = null
         anInt3327++
         return this.aClass348_3334 === this.aClass348_3334.aClass348_4294
     }
@@ -156,7 +156,7 @@ class Class262 {
         var anObject3331: Any? = null
         var anInt3332: Int = 0
         var anInt3333: Int = 0
-        var aClass190ArrayArray3335: Array<Array<Class190?>?>? = null
+        var aModelLightingConfigArrayArray3335: Array<Array<ModelLightingConfig?>?>? = null
         var anInt3336: Int = 0
         var anInt3337: Int = 0
         var anInt3338: Int = 0
@@ -242,7 +242,7 @@ class Class262 {
 
         @JvmStatic
         fun method1994(i: Int) {
-            aClass190ArrayArray3335 = null
+            aModelLightingConfigArrayArray3335 = null
             anObject3331 = null
             if (i != -13722) method2000(-104, 106, null, null)
             aClass45_3323 = null

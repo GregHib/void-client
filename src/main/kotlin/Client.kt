@@ -94,7 +94,7 @@ import LocTypeDefLoader.Companion.method1407
 import GlowPostProcessor.Companion.method1411
 import GlowPostProcessor.Companion.method1416
 import WorldListEntry.Companion.method284
-import Class190.Companion.method1426
+import ModelLightingConfig.Companion.method1426
 import Class191.Companion.method1431
 import Class192.Companion.method1438
 import Class193.Companion.method1440
@@ -1733,13 +1733,13 @@ class Client : GameAppletFrame() {
                 while ((Class348_Sub38.anInt7008 > i_121_)) {
                     if (Class268.aBooleanArray3438!![i_121_]) {
                         Class268.aBooleanArray3438!![i_121_] = false
-                        Class190.aRectangleArray2554!![i++] = HintIconState.aRectangleArray2371!![i_121_]
+                        ModelLightingConfig.aRectangleArray2554!![i++] = HintIconState.aRectangleArray2371!![i_121_]
                     }
                     i_121_++
                 }
                 try {
-                    if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aRenderer6654!!.method3657(Class190.aRectangleArray2554, i, 66)
-                    else method1168(i, 0, Class190.aRectangleArray2554)
+                    if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aRenderer6654!!.method3657(ModelLightingConfig.aRectangleArray2554, i, 66)
+                    else method1168(i, 0, ModelLightingConfig.aRectangleArray2554)
                 } catch (exception_sub1: Exception_Sub1) {
                     /* empty */
                 }

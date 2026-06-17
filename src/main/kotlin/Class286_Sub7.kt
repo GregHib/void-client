@@ -238,15 +238,15 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             var i_16_ = i_16_
             var i_17_ = i_17_
             anInt6281++
-            if (!Class190.method1422(i_16_, i_11_, i, -7596)) return false
+            if (!ModelLightingConfig.method1422(i_16_, i_11_, i, -7596)) return false
             i_16_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![1]
             i = Class318_Sub1_Sub5_Sub2.anIntArray10172!![0]
             i_11_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![2]
-            if (!Class190.method1422(i_15_, i_17_, i_10_, -7596)) return false
+            if (!ModelLightingConfig.method1422(i_15_, i_17_, i_10_, -7596)) return false
             i_10_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![0]
             i_17_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![2]
             i_15_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![1]
-            if (!Class190.method1422(i_14_, i_13_, i_12_, -7596)) return false
+            if (!ModelLightingConfig.method1422(i_14_, i_13_, i_12_, -7596)) return false
             i_13_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![2]
             if (bool != false) return false
             i_14_ = Class318_Sub1_Sub5_Sub2.anIntArray10172!![1]

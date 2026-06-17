@@ -84,7 +84,7 @@ object GroundItemRenderState {
 
     fun method1015(i: Int, i_20_: Int, bool: Boolean) {
         anInt1658++
-        val class190 = Class262.aClass190ArrayArray3335!![i]!![i_20_]
+        val class190 = Class262.aModelLightingConfigArrayArray3335!![i]!![i_20_]
         if (class190 != null) {
             Class196.anInt2601 = class190.anInt2535
             Class21.anInt325 = class190.anInt2538

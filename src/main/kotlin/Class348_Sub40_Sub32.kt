@@ -105,28 +105,28 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
                     val i_5_ = -i_4_ + 255
                     val f = i_4_.toFloat() / 255.0f
                     val f_6_ = 1.0f - f
-                    NativeIndexBuffer.anInt4703 = (((i_5_ * ((Class239_Sub14.aClass190_5990!!.anInt2540) and 0xff00ff) + (Class318_Sub1_Sub3.anInt8739 and 0xff00ff) * i_4_) and 0xff00ff.inv()) - -(0xff0000 and (i_4_ * (0xff00 and Class318_Sub1_Sub3.anInt8739) + (0xff00 and (Class239_Sub14.aClass190_5990!!.anInt2540)) * i_5_))) ushr 8
-                    Class239_Sub10.aFloat5945 = (Class258_Sub4.aFloat8560 + f_6_ * ((Class239_Sub14.aClass190_5990!!.aFloat2551) - Class258_Sub4.aFloat8560))
-                    Class348_Sub3.aFloat6586 = (Class239_Sub14.aClass190_5990!!.aFloat2545 - Class45.aFloat670) * f_6_ + Class45.aFloat670
-                    Class36.anInt486 = (i_4_ * Class239_Sub19.anInt6042 + (Class239_Sub14.aClass190_5990!!.anInt2546 * i_5_)) shr 8
-                    KeyboardLayoutConfig.aFloat2137 = (Class318_Sub1_Sub1.aFloat8725 + (-Class318_Sub1_Sub1.aFloat8725 + (Class239_Sub14.aClass190_5990!!.aFloat2547)) * f_6_)
-                    TextureMetadataProvider.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((Class239_Sub14.aClass190_5990!!.aFloat2544) - Class64.aFloat1136))
-                    LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (Class239_Sub14.aClass190_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (Class239_Sub14.aClass190_5990!!.anInt2549)))))) ushr 8
-                    Class361.aFloat4455 = (Class246.aFloat3177 + f_6_ * (-Class246.aFloat3177 + (Class239_Sub14.aClass190_5990!!.aFloat2536)))
-                    Class269.aFloat3462 = (Class245.aFloat3172 + (Class239_Sub14.aClass190_5990!!.aFloat2542 - Class245.aFloat3172) * f_6_)
-                    if (Class239_Sub24.aClass299_6098 !== (Class239_Sub14.aClass190_5990!!.aClass299_2541)) HeapInfoRecord.aClass299_4938 = (Class60.aRenderer1098!!.method3706(Class239_Sub24.aClass299_6098, (Class239_Sub14.aClass190_5990!!.aClass299_2541), f_6_, HeapInfoRecord.aClass299_4938))
+                    NativeIndexBuffer.anInt4703 = (((i_5_ * ((Class239_Sub14.aModelLightingConfig_5990!!.anInt2540) and 0xff00ff) + (Class318_Sub1_Sub3.anInt8739 and 0xff00ff) * i_4_) and 0xff00ff.inv()) - -(0xff0000 and (i_4_ * (0xff00 and Class318_Sub1_Sub3.anInt8739) + (0xff00 and (Class239_Sub14.aModelLightingConfig_5990!!.anInt2540)) * i_5_))) ushr 8
+                    Class239_Sub10.aFloat5945 = (Class258_Sub4.aFloat8560 + f_6_ * ((Class239_Sub14.aModelLightingConfig_5990!!.aFloat2551) - Class258_Sub4.aFloat8560))
+                    Class348_Sub3.aFloat6586 = (Class239_Sub14.aModelLightingConfig_5990!!.aFloat2545 - Class45.aFloat670) * f_6_ + Class45.aFloat670
+                    Class36.anInt486 = (i_4_ * Class239_Sub19.anInt6042 + (Class239_Sub14.aModelLightingConfig_5990!!.anInt2546 * i_5_)) shr 8
+                    KeyboardLayoutConfig.aFloat2137 = (Class318_Sub1_Sub1.aFloat8725 + (-Class318_Sub1_Sub1.aFloat8725 + (Class239_Sub14.aModelLightingConfig_5990!!.aFloat2547)) * f_6_)
+                    TextureMetadataProvider.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((Class239_Sub14.aModelLightingConfig_5990!!.aFloat2544) - Class64.aFloat1136))
+                    LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (Class239_Sub14.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (Class239_Sub14.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
+                    Class361.aFloat4455 = (Class246.aFloat3177 + f_6_ * (-Class246.aFloat3177 + (Class239_Sub14.aModelLightingConfig_5990!!.aFloat2536)))
+                    Class269.aFloat3462 = (Class245.aFloat3172 + (Class239_Sub14.aModelLightingConfig_5990!!.aFloat2542 - Class245.aFloat3172) * f_6_)
+                    if (Class239_Sub24.aClass299_6098 !== (Class239_Sub14.aModelLightingConfig_5990!!.aClass299_2541)) HeapInfoRecord.aClass299_4938 = (Class60.aRenderer1098!!.method3706(Class239_Sub24.aClass299_6098, (Class239_Sub14.aModelLightingConfig_5990!!.aClass299_2541), f_6_, HeapInfoRecord.aClass299_4938))
                 } else {
-                    HeapInfoRecord.aClass299_4938 = (Class239_Sub14.aClass190_5990!!.aClass299_2541)
-                    TextureMetadataProvider.aFloat4626 = Class239_Sub14.aClass190_5990!!.aFloat2544
-                    Class348_Sub3.aFloat6586 = Class239_Sub14.aClass190_5990!!.aFloat2545
-                    Class239_Sub10.aFloat5945 = Class239_Sub14.aClass190_5990!!.aFloat2551
-                    Class36.anInt486 = Class239_Sub14.aClass190_5990!!.anInt2546
-                    Class269.aFloat3462 = Class239_Sub14.aClass190_5990!!.aFloat2542
-                    Class361.aFloat4455 = Class239_Sub14.aClass190_5990!!.aFloat2536
+                    HeapInfoRecord.aClass299_4938 = (Class239_Sub14.aModelLightingConfig_5990!!.aClass299_2541)
+                    TextureMetadataProvider.aFloat4626 = Class239_Sub14.aModelLightingConfig_5990!!.aFloat2544
+                    Class348_Sub3.aFloat6586 = Class239_Sub14.aModelLightingConfig_5990!!.aFloat2545
+                    Class239_Sub10.aFloat5945 = Class239_Sub14.aModelLightingConfig_5990!!.aFloat2551
+                    Class36.anInt486 = Class239_Sub14.aModelLightingConfig_5990!!.anInt2546
+                    Class269.aFloat3462 = Class239_Sub14.aModelLightingConfig_5990!!.aFloat2542
+                    Class361.aFloat4455 = Class239_Sub14.aModelLightingConfig_5990!!.aFloat2536
                     Class286_Sub5.anInt6248 = -1
-                    LocTypeDefLoader.anInt2500 = Class239_Sub14.aClass190_5990!!.anInt2549
-                    NativeIndexBuffer.anInt4703 = Class239_Sub14.aClass190_5990!!.anInt2540
-                    KeyboardLayoutConfig.aFloat2137 = Class239_Sub14.aClass190_5990!!.aFloat2547
+                    LocTypeDefLoader.anInt2500 = Class239_Sub14.aModelLightingConfig_5990!!.anInt2549
+                    NativeIndexBuffer.anInt4703 = Class239_Sub14.aModelLightingConfig_5990!!.anInt2540
+                    KeyboardLayoutConfig.aFloat2137 = Class239_Sub14.aModelLightingConfig_5990!!.aFloat2547
                 }
                 Class348_Sub33.aLong6963 = l
             }

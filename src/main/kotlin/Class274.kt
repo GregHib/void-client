@@ -110,7 +110,7 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
         var aClass274_3544: Class274?
         var aClass274_3545: Class274?
         var aClass274_3546: Class274?
-        var aClass190_3547: Class190? = null
+        var aModelLightingConfig_3547: ModelLightingConfig? = null
 
         fun method2058(i: Int, i_0_: Int, i_1_: Int): Boolean {
             if (i_1_ <= 28) method2059(108)
@@ -178,7 +178,7 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
             aClass274_3534 = null
             aClass274_3536 = null
             aClass274_3539 = null
-            aClass190_3547 = null
+            aModelLightingConfig_3547 = null
             aClass274_3545 = null
             aClass274_3535 = null
             aClass274_3506 = null

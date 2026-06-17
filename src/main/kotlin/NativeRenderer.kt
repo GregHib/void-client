@@ -2983,12 +2983,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         @JvmStatic
         fun method3936(i: Int) {
             anInt7990++
-            if (Class262.aClass190ArrayArray3335 != null) {
+            if (Class262.aModelLightingConfigArrayArray3335 != null) {
                 var i_274_ = 0
-                while ((i_274_ < Class262.aClass190ArrayArray3335!!.size)) {
+                while ((i_274_ < Class262.aModelLightingConfigArrayArray3335!!.size)) {
                     var i_275_ = 0
-                    while ((Class262.aClass190ArrayArray3335!![i_274_]!!.size > i_275_)) {
-                        Class262.aClass190ArrayArray3335!![i_274_]!![i_275_] = Class274.aClass190_3547
+                    while ((Class262.aModelLightingConfigArrayArray3335!![i_274_]!!.size > i_275_)) {
+                        Class262.aModelLightingConfigArrayArray3335!![i_274_]!![i_275_] = Class274.aModelLightingConfig_3547
                         i_275_++
                     }
                     i_274_++

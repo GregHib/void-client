@@ -1,6 +1,6 @@
 class Class239_Sub14 : Class239 {
     fun method1778(i: Int): Int {
-        if (i != -32350) aClass190_5990 = null
+        if (i != -32350) aModelLightingConfig_5990 = null
         anInt5984++
         return this.anInt3138
     }
@@ -50,7 +50,7 @@ class Class239_Sub14 : Class239 {
         var anInt5988: Int = 0
         var aClass251_5989: Class251? = Class251()
         @JvmField
-        var aClass190_5990: Class190? = null
+        var aModelLightingConfig_5990: ModelLightingConfig? = null
         @JvmField
         var anIntArrayArray5991: Array<IntArray?>? = arrayOfNulls<IntArray>(6)
         @JvmField
@@ -66,7 +66,7 @@ class Class239_Sub14 : Class239 {
         fun method1779(i: Byte) {
             anInt5985++
             Class364.method3517(73)
-            Class262.aClass190ArrayArray3335 = null
+            Class262.aModelLightingConfigArrayArray3335 = null
             Class60.aRenderer1098 = null
             if (i <= 89) anInt5994 = -75
             Class239_Sub24.aClass299_6098 = null
@@ -82,7 +82,7 @@ class Class239_Sub14 : Class239 {
             anIntArrayArray5991 = null
             aClass259_5995 = null
             aClass211Array5993 = null
-            aClass190_5990 = null
+            aModelLightingConfig_5990 = null
         }
 
         @JvmStatic
@@ -103,7 +103,7 @@ class Class239_Sub14 : Class239 {
                 Class348_Sub8.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                 Class348_Sub8.aRenderer6654!!.DA(dimension.width / 2, dimension.height / 2, 512, 512)
                 Class348_Sub8.aRenderer6654!!.xa(1.0f)
-                if (i_1_ >= -66) aClass190_5990 = null
+                if (i_1_ >= -66) aModelLightingConfig_5990 = null
                 Class348_Sub8.aRenderer6654!!.ZA(16777215, 0.5f, 0.5f, 20.0f, -50.0f, 30.0f)
                 val class64 = Class348_Sub8.aRenderer6654!!.method3625(class124, 2048, 64, 64, 768)
                 var i_3_ = 0

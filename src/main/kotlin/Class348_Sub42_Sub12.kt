@@ -74,11 +74,11 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
                 anInt9606++
                 if (`is` == null || is_1_ == null) {
                     Class348_Sub40_Sub6.aByteArrayArrayArray9134 = null
-                    Class190.anIntArray2552 = null
+                    ModelLightingConfig.anIntArray2552 = null
                     Class59_Sub2_Sub2.anIntArray8684 = null
                 } else {
                     Class59_Sub2_Sub2.anIntArray8684 = `is`
-                    Class190.anIntArray2552 = IntArray(`is`.size)
+                    ModelLightingConfig.anIntArray2552 = IntArray(`is`.size)
                     Class348_Sub40_Sub6.aByteArrayArrayArray9134 = arrayOfNulls<Array<ByteArray?>>(`is`.size)
                     for (i_2_ in i..<Class59_Sub2_Sub2.anIntArray8684!!.size) Class348_Sub40_Sub6.aByteArrayArrayArray9134!![i_2_] = arrayOfNulls<ByteArray>(is_1_[i_2_])
                 }

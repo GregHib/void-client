@@ -549,7 +549,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class26.anInt385 = i_73_
                             Class239_Sub20.anInt6048 = 2
                             Class93.anInt1534 = i_72_
-                            val class348_sub47 = method2148(Class190.aClass351_2539, (Class348_Sub23_Sub2.aClass77_9029), -110)
+                            val class348_sub47 = method2148(ModelLightingConfig.aClass351_2539, (Class348_Sub23_Sub2.aClass77_9029), -110)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-110, i_74_ + ArbVertexProgram.regionTileX)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-44).toByte(), (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -122)) 0 else 1))

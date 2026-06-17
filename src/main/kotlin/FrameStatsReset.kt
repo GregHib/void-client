@@ -668,7 +668,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub44.anInt7091 = 0
             Class324.anInt4052 = 0
             Class348_Sub18.anInt6808 = 0
-            Class190.anInt2543 = 0
+            ModelLightingConfig.anInt2543 = 0
             Class229.anInt2977 = 0
             Class367.anInt4478 = 0
             Class367_Sub8.anInt7356 = 0
@@ -1094,7 +1094,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class34.anInt466 = 0
             Class348_Sub42_Sub14.anInt9624 = 0
             Class327.anInt4090 = 0
-            Class190.anInt2553 = 0
+            ModelLightingConfig.anInt2553 = 0
             Class278.anInt3587 = 0
             Class286_Sub4.anInt6241 = 0
             Class286_Sub2.anInt6208 = 0
@@ -2024,7 +2024,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5741 = 0
             Class318_Sub1_Sub5.anInt8779 = 0
             Renderer.anInt4580 = 0
-            Class190.anInt2537 = 0
+            ModelLightingConfig.anInt2537 = 0
             Class348_Sub33.anInt6961 = 0
             Class348_Sub40_Sub11.anInt9188 = 0
             Class64_Sub3.anInt5630 = 0
@@ -2764,7 +2764,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class377.anInt9886 = 0
             Class55.anInt1002 = 0
             Class286_Sub6.anInt6273 = 0
-            Class190.anInt2550 = 0
+            ModelLightingConfig.anInt2550 = 0
             MatrixCameraTransform.anInt5658 = 0
             Class239_Sub1.anInt5848 = 0
             NativeVertexBuffer.anInt4831 = 0

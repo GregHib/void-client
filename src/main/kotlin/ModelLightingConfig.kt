@@ -1,7 +1,10 @@
 import Class239_Sub15.Companion.method1782
 import java.awt.Rectangle
 
-class Class190 {
+/*
+ * Class190
+ */
+class ModelLightingConfig {
     var anInt2535: Int = 0
     var aFloat2536: Float = 0f
     var anInt2538: Int = 0
@@ -22,10 +25,10 @@ class Class190 {
         this.aFloat2551 = (i * class348_sub49.readUnsignedByte(i + 247)).toFloat() / 255.0f
     }
 
-    fun method1424(class190_4_: Class190, i: Byte): Boolean {
+    fun method1424(modelLightingConfig_4_: ModelLightingConfig, i: Byte): Boolean {
         anInt2543++
         if (i.toInt() != 84) return false
-        return (this.anInt2540 == class190_4_.anInt2540) && (this.aFloat2547 == class190_4_.aFloat2547) && (class190_4_.aFloat2544 == this.aFloat2544) && (this.aFloat2536 == class190_4_.aFloat2536) && (class190_4_.aFloat2542 == this.aFloat2542) && (class190_4_.aFloat2545 == this.aFloat2545) && (class190_4_.aFloat2551 == this.aFloat2551) && (class190_4_.anInt2549 == this.anInt2549) && (class190_4_.anInt2546 == this.anInt2546) && (class190_4_.aClass299_2541 === this.aClass299_2541)
+        return (this.anInt2540 == modelLightingConfig_4_.anInt2540) && (this.aFloat2547 == modelLightingConfig_4_.aFloat2547) && (modelLightingConfig_4_.aFloat2544 == this.aFloat2544) && (this.aFloat2536 == modelLightingConfig_4_.aFloat2536) && (modelLightingConfig_4_.aFloat2542 == this.aFloat2542) && (modelLightingConfig_4_.aFloat2545 == this.aFloat2545) && (modelLightingConfig_4_.aFloat2551 == this.aFloat2551) && (modelLightingConfig_4_.anInt2549 == this.anInt2549) && (modelLightingConfig_4_.anInt2546 == this.anInt2546) && (modelLightingConfig_4_.aClass299_2541 === this.aClass299_2541)
     }
 
     constructor() {
