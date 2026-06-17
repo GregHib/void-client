@@ -53,7 +53,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
                         try {
                             val runtime = Runtime.getRuntime()
                             val var_long = runtime.maxMemory()
-                            Class226.anInt2964 = 1 + (var_long / 1048576L).toInt()
+                            TextureDefinitionCache.anInt2964 = 1 + (var_long / 1048576L).toInt()
                         } catch (throwable: Throwable) {
                             /* empty */
                         }
@@ -62,7 +62,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
                         break
                     }
                 }
-                Class226.anInt2964 = 96
+                TextureDefinitionCache.anInt2964 = 96
             } while (false)
             val i_2_ = 15 % (i / 51)
             anInt5205++

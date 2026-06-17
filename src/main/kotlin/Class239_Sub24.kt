@@ -134,7 +134,7 @@ class Class239_Sub24 : Class239 {
                     i_12_ = i_4_
                     i_11_ = i
                 }
-                Class226.method1626(1, true)
+                TextureDefinitionCache.method1626(1, true)
                 if (i_10_ == 0) i_10_ = 1
                 if (i_9_ == 0) i_9_ = 1
                 if (Class348_Sub1_Sub1.aTerrainTileArray8801 != null && (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) != 0)) {
@@ -399,7 +399,7 @@ class Class239_Sub24 : Class239 {
                     if (Class59_Sub1.aBoolean5300) Class285_Sub1.method2129(86.toByte())
                     i_27_++
                 }
-                Class226.method1626(1, false)
+                TextureDefinitionCache.method1626(1, false)
             }
         }
     }

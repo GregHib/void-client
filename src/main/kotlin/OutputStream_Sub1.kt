@@ -96,7 +96,7 @@ class OutputStream_Sub1 : OutputStream() {
                 Class348_Sub42_Sub11.method3225(114)
                 Class348_Sub42_Sub3.method3175((-107).toByte())
                 Class348_Sub8.aRenderer6654!!.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_)
-                Class226.method1626(1, true)
+                TextureDefinitionCache.method1626(1, true)
                 if (Class59_Sub1.aBoolean5300) {
                     ProjectionCameraTransform.method941(124, LocTypeDefLoader.anInt2500)
                     if (LocalPlayerState.anInt1906 != Class375.anInt4545) Class348_Sub16_Sub2.aBoolean8870 = true
@@ -176,7 +176,7 @@ class OutputStream_Sub1 : OutputStream() {
                         Class348_Sub8.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
                         Class362.method3511(false, GameAppletFrame.aClass324_20, Class246.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)
                     }
-                    Class226.method1626(1, false)
+                    TextureDefinitionCache.method1626(1, false)
                 }
             }
         }

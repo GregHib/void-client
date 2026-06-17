@@ -1,7 +1,7 @@
 /* Class226 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class226 internal constructor(i: Int, class45: Class45?, class45_3_: Class45?) {
+class TextureDefinitionCache internal constructor(i: Int, class45: Class45?, class45_3_: Class45?) {
     private val aClass60_2960 = Class60(64)
     private val aClass45_2961: Class45?
     private var aClass45_2965: Class45? = null

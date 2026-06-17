@@ -329,7 +329,7 @@ class Class348_Sub51 : Class348 {
     internal constructor(class230: Class230?, i: Int) {
         try {
             aClass230_7269 = class230
-            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.lowercase(Locale.getDefault()).indexOf("arm") != -1)
+            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.lowercase(Locale.getDefault()).indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = Class239_Sub25(i, this)
             method3423(true, 31286)
         } catch (runtimeexception: RuntimeException) {
@@ -340,7 +340,7 @@ class Class348_Sub51 : Class348 {
     internal constructor(class348_sub49: Class348_Sub49?, class230: Class230?, i: Int) {
         try {
             aClass230_7269 = class230
-            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.indexOf("arm") != -1)
+            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = Class239_Sub25(i, this)
             method3424(925, class348_sub49)
         } catch (runtimeexception: RuntimeException) {

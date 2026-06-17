@@ -357,12 +357,12 @@ object Class66 {
             }
             if (i == 5050) {
                 val i_29_ = anIntArray1149!![--anInt1173]
-                aStringArray1152!![anInt1170++] = (ScriptResources.aClass226_2639!!.method1625(0, i_29_).aString9587)
+                aStringArray1152!![anInt1170++] = (ScriptResources.aTextureDefinitionCache_2639!!.method1625(0, i_29_).aString9587)
                 return
             }
             if (i == 5051) {
                 val i_30_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub11 = ScriptResources.aClass226_2639!!.method1625(0, i_30_)
+                val class348_sub42_sub11 = ScriptResources.aTextureDefinitionCache_2639!!.method1625(0, i_30_)
                 if ((class348_sub42_sub11.anIntArray9592) == null) anIntArray1149!![anInt1173++] = 0
                 else {
                     anIntArray1149!![anInt1173++] = (class348_sub42_sub11!!.anIntArray9592!!).size
@@ -374,14 +374,14 @@ object Class66 {
                 anInt1173 -= 2
                 val i_31_ = anIntArray1149!![anInt1173]
                 val i_32_ = anIntArray1149!![anInt1173 + 1]
-                val class348_sub42_sub11 = ScriptResources.aClass226_2639!!.method1625(0, i_31_)
+                val class348_sub42_sub11 = ScriptResources.aTextureDefinitionCache_2639!!.method1625(0, i_31_)
                 val i_33_ = (class348_sub42_sub11.anIntArray9592!![i_32_])
                 anIntArray1149!![anInt1173++] = i_33_
                 return
             }
             if (i == 5053) {
                 val i_34_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub11 = ScriptResources.aClass226_2639!!.method1625(0, i_34_)
+                val class348_sub42_sub11 = ScriptResources.aTextureDefinitionCache_2639!!.method1625(0, i_34_)
                 if ((class348_sub42_sub11.anIntArray9580) == null) anIntArray1149!![anInt1173++] = 0
                 else {
                     anIntArray1149!![anInt1173++] = (class348_sub42_sub11!!.anIntArray9580!!).size
@@ -393,7 +393,7 @@ object Class66 {
                 anInt1173 -= 2
                 val i_35_ = anIntArray1149!![anInt1173]
                 val i_36_ = anIntArray1149!![anInt1173 + 1]
-                anIntArray1149!![anInt1173++] = (ScriptResources.aClass226_2639!!.method1625(0, i_35_).anIntArray9580!![i_36_]!!)
+                anIntArray1149!![anInt1173++] = (ScriptResources.aTextureDefinitionCache_2639!!.method1625(0, i_35_).anIntArray9580!![i_36_]!!)
                 return
             }
             if (i == 5055) {
@@ -466,14 +466,14 @@ object Class66 {
                 anInt1173 -= 2
                 val i_44_ = anIntArray1149!![anInt1173]
                 val i_45_ = anIntArray1149!![anInt1173 + 1]
-                anIntArray1149!![anInt1173++] = (ScriptResources.aClass226_2639!!.method1625(0, i_44_).aCharArray9588[i_45_]).code
+                anIntArray1149!![anInt1173++] = (ScriptResources.aTextureDefinitionCache_2639!!.method1625(0, i_44_).aCharArray9588[i_45_]).code
                 return
             }
             if (i == 5063) {
                 anInt1173 -= 2
                 val i_46_ = anIntArray1149!![anInt1173]
                 val i_47_ = anIntArray1149!![anInt1173 + 1]
-                anIntArray1149!![anInt1173++] = (ScriptResources.aClass226_2639!!.method1625(0, i_46_).aCharArray9582[i_47_]).code
+                anIntArray1149!![anInt1173++] = (ScriptResources.aTextureDefinitionCache_2639!!.method1625(0, i_46_).aCharArray9582[i_47_]).code
                 return
             }
             if (i == 5064) {
@@ -482,7 +482,7 @@ object Class66 {
                 val i_49_ = anIntArray1149!![anInt1173 + 1]
                 if (i_49_ == -1) anIntArray1149!![anInt1173++] = -1
                 else {
-                    anIntArray1149!![anInt1173++] = ScriptResources.aClass226_2639!!.method1625(0, i_48_).method3226(i_49_.toChar(), 57249897)
+                    anIntArray1149!![anInt1173++] = ScriptResources.aTextureDefinitionCache_2639!!.method1625(0, i_48_).method3226(i_49_.toChar(), 57249897)
                     return
                 }
                 return
@@ -493,7 +493,7 @@ object Class66 {
                 val i_51_ = anIntArray1149!![anInt1173 + 1]
                 if (i_51_ == -1) anIntArray1149!![anInt1173++] = -1
                 else {
-                    anIntArray1149!![anInt1173++] = ScriptResources.aClass226_2639!!.method1625(0, i_50_).method3222((-122).toByte(), i_51_.toChar())
+                    anIntArray1149!![anInt1173++] = ScriptResources.aTextureDefinitionCache_2639!!.method1625(0, i_50_).method3222((-122).toByte(), i_51_.toChar())
                     return
                 }
                 return

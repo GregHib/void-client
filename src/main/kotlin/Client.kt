@@ -121,7 +121,7 @@ import ModelDefinitionCache.Companion.method1600
 import ModelDefinitionCache.Companion.method1604
 import HslColorConfig.Companion.method294
 import NpcDefinition.Companion.method1619
-import Class226.Companion.method1624
+import TextureDefinitionCache.Companion.method1624
 import Class227.Companion.method1627
 import Class228.method1628
 import Class229.Companion.method1632
@@ -631,7 +631,7 @@ class Client : GameAppletFrame() {
     }
 
     public override fun method92(i: Int) {
-        if (ServerConnectionInfo.aBoolean2151) Class226.anInt2964 = 64
+        if (ServerConnectionInfo.aBoolean2151) TextureDefinitionCache.anInt2964 = 64
         anInt5177++
         val frame = Frame("Jagex")
         frame.pack()
@@ -1787,7 +1787,7 @@ class Client : GameAppletFrame() {
             string += "10)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350) + "|"
             string += "11)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) + "|"
             string += "12)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) + "|"
-            string += "13)" + Class226.anInt2964 + "|"
+            string += "13)" + TextureDefinitionCache.anInt2964 + "|"
             string += "14)" + Class240.anInt4674
             if (Class348_Sub40_Sub20.aClass348_Sub4_9264 != null) string += "|15)" + (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609)
             try {
@@ -1933,7 +1933,7 @@ class Client : GameAppletFrame() {
         }
 
         fun method105(class46: Class46): Class348_Sub44? {
-            val class348_sub44 = (Class226.aClass356_2959!!.method3480(((class46.anInt830.toLong() shl 32) + class46.anInt704.toLong()), -6008)) as Class348_Sub44?
+            val class348_sub44 = (TextureDefinitionCache.aClass356_2959!!.method3480(((class46.anInt830.toLong() shl 32) + class46.anInt704.toLong()), -6008)) as Class348_Sub44?
             if (class348_sub44 != null) return class348_sub44
             return class46.aClass348_Sub44_748
         }

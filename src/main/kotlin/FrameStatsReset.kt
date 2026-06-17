@@ -663,7 +663,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub2.anInt6396 = 0
             Class377.anInt9852 = 0
             Class318_Sub1_Sub1_Sub1.anInt9951 = 0
-            Class226.anInt2963 = 0
+            TextureDefinitionCache.anInt2963 = 0
             OpenGlRenderer.anInt7534 = 0
             Class348_Sub44.anInt7091 = 0
             Class324.anInt4052 = 0
@@ -3653,7 +3653,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub16_Sub2.anInt8860 = 0
             Class309.anInt4815 = 0
             Class318_Sub1_Sub3_Sub2.anInt10060 = 0
-            Class226.anInt2962 = 0
+            TextureDefinitionCache.anInt2962 = 0
             OpenGlRenderer.anInt7619 = 0
             CollisionMapRegion.anInt1721 = 0
             Class261.anInt3320 = 0

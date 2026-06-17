@@ -426,7 +426,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
             anInt6353++
             if (i != -8454) method2352(44, -11, 126)
             val i_6_: Int
-            if (Class226.anInt2964 < 96) {
+            if (TextureDefinitionCache.anInt2964 < 96) {
                 Class348_Sub40_Sub12.method3076(0, true)
                 i_6_ = 1
             } else {

@@ -145,7 +145,7 @@ class Class348_Sub4 : Class348 {
             }
             aBoolean6607 = !class297.aBoolean3777
             anInt6612 = i_3_
-            anInt6592 = Class226.anInt2964
+            anInt6592 = TextureDefinitionCache.anInt2964
             if (anInt6616 <= 3) anInt6599 = 0
             else anInt6599 = Class348_Sub40_Sub29.anInt9372
             try {

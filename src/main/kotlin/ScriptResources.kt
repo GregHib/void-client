@@ -3,7 +3,7 @@
 */
 object ScriptResources {
     var aClass351_2638: Class351? = Class351(59, 8)
-    var aClass226_2639: Class226? = null
+    var aTextureDefinitionCache_2639: TextureDefinitionCache? = null
     @JvmField
     var aAbstractModelRendererArray2640: Array<AbstractModelRenderer?>? = null
 
@@ -12,6 +12,6 @@ object ScriptResources {
         aClass351_2638 = null
         aAbstractModelRendererArray2640 = null
         if (i.toInt() != 25) aAbstractModelRendererArray2640 = null
-        aClass226_2639 = null
+        aTextureDefinitionCache_2639 = null
     }
 }

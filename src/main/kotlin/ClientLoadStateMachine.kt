@@ -207,7 +207,7 @@ object ClientLoadStateMachine {
             Class269.aParticleAmountCache_3453 = ParticleAmountCache(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class65.method699(SoftwareSpriteRaster.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, CameraRotationStub.aClass45_322, RasterSprite.aClass45_5207)
             method85(0, Class262.aClass45_3323)
-            ScriptResources.aClass226_2639 = Class226(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434)
+            ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434)
             Class239_Sub6.aClass355_5900 = Class355(Class348_Sub33.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, Class28())
             method1202(0)
             Class348_Sub40_Sub12.aClass263_9195!!.method2008(i + 28539, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)

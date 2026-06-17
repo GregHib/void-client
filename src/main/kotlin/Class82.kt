@@ -93,7 +93,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         return
                     }
                     if (string == "heap") {
-                        method94(("Heap: " + Class226.anInt2964 + "MB"), 69)
+                        method94(("Heap: " + TextureDefinitionCache.anInt2964 + "MB"), 69)
                         return
                     }
                 } catch (exception: Exception) {
@@ -298,7 +298,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             if (string.length < 6) method94("Invalid buildarea value", i + -36)
                             else {
                                 val i_6_ = (Class348_Sub41.method3156(true, string.substring(6)))
-                                if (i_6_ < 0 || (method2710(-126, Class226.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
+                                if (i_6_ < 0 || (method2710(-126, TextureDefinitionCache.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
                                 else {
                                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
                                     method243(37)

@@ -480,7 +480,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         val class64 =
             (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, Exception_Sub1.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aClass278_2529, ParticleEmitterNode.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558).also { this.aClass64Array10323[0] = it })
         val i_75_ = Class292.method2201(2121)
-        if (Class226.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268)
+        if (TextureDefinitionCache.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)
         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165 && i_75_ < 50) {
             val i_77_: Int

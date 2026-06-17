@@ -258,7 +258,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class289.method2193(true, (-128).toByte())
                     Class36.method354(2)
                     Class291.anInt3720 = Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
-                    Class296.aBoolean3767 = Class226.anInt2964 >= 96
+                    Class296.aBoolean3767 = TextureDefinitionCache.anInt2964 >= 96
                     Class369.aBoolean4972 = Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
                     TextureGenerator.aBoolean2492 = Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1
                     OutputStream_Sub2.anInt101 = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
@@ -293,7 +293,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         ProjectionCameraTransform.method944(i + -8212, GlRectangleTexture.aByteArrayArray8642, Class338.aClass237_Sub1_4197)
                     }
                     Class348_Sub18.method2938(66.toByte())
-                    if (Class226.anInt2964 < 96) method2271(31268)
+                    if (TextureDefinitionCache.anInt2964 < 96) method2271(31268)
                     Class289.method2193(true, (-119).toByte())
                     Class338.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (Class332.aTerrainTileArray4142!![0])), Class348_Sub8.aRenderer6654)
                     Class338.aClass237_Sub1_4197!!.method1697(false, Class348_Sub8.aRenderer6654, -36)

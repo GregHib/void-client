@@ -1,4 +1,4 @@
-import Class226.Companion.method1626
+import TextureDefinitionCache.Companion.method1626
 
 /* Class290 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

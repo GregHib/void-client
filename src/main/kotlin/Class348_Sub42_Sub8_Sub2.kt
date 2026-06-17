@@ -1189,7 +1189,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 var i_147_ = i_146_
                 while (i_145_ >= i_147_) {
                     val l = (i.toLong() shl 32) - -i_147_.toLong()
-                    val class348_sub44 = (Class226.aClass356_2959!!.method3480(l, -6008) as Class348_Sub44?)
+                    val class348_sub44 = (TextureDefinitionCache.aClass356_2959!!.method3480(l, -6008) as Class348_Sub44?)
                     val class348_sub44_148_: Class348_Sub44?
                     if (class348_sub44 == null) {
                         if (i_147_ == -1) class348_sub44_148_ = (Class348_Sub44(method2570(1512932720, i)!!.aClass348_Sub44_748!!.anInt7098, i_144_))
@@ -1198,7 +1198,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         class348_sub44_148_ = Class348_Sub44((class348_sub44.anInt7098), i_144_)
                         class348_sub44.method2715(91.toByte())
                     }
-                    Class226.aClass356_2959!!.method3483(125.toByte(), l, class348_sub44_148_)
+                    TextureDefinitionCache.aClass356_2959!!.method3483(125.toByte(), l, class348_sub44_148_)
                     i_147_++
                 }
                 Class348_Sub3.aIntRange_6584 = null
@@ -1598,14 +1598,14 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 for (i_211_ in i_208_..i) {
                     val l = i_211_.toLong() + (i_209_.toLong() shl 32)
-                    val class348_sub44 = (Class226.aClass356_2959!!.method3480(l, -6008) as Class348_Sub44?)
+                    val class348_sub44 = (TextureDefinitionCache.aClass356_2959!!.method3480(l, -6008) as Class348_Sub44?)
                     val class348_sub44_212_: Class348_Sub44?
                     if (class348_sub44 != null) {
                         class348_sub44_212_ = Class348_Sub44(i_210_, (class348_sub44.anInt7093))
                         class348_sub44.method2715(80.toByte())
                     } else if (i_211_ == -1) class348_sub44_212_ = (Class348_Sub44(i_210_, method2570(1512932720, i_209_)!!.aClass348_Sub44_748!!.anInt7093))
                     else class348_sub44_212_ = Class348_Sub44(i_210_, -1)
-                    Class226.aClass356_2959!!.method3483(114.toByte(), l, class348_sub44_212_)
+                    TextureDefinitionCache.aClass356_2959!!.method3483(114.toByte(), l, class348_sub44_212_)
                 }
                 Class348_Sub3.aIntRange_6584 = null
                 return true
