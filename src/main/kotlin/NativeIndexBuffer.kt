@@ -114,7 +114,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                         LongHashTable.anInt451,
                         Class356.anInt4383,
                         -33,
-                        Class332.anInt4141,
+                        SoundCacheState.anInt4141,
                         string,
                         RenderableGroup.anIntArray5007
                     )

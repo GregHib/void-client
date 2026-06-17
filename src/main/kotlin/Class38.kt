@@ -282,7 +282,7 @@ class Class38 {
                 val i = class318_sub1.method2384(class348_sub1s, 49)
                 Class9.aRenderer171!!.method3642(i, class348_sub1s)
             }
-            if (Class332.aTerrainTileArray4142 == NativeSprite.aTerrainTileArray5191) {
+            if (SoundCacheState.aTerrainTileArray4142 == NativeSprite.aTerrainTileArray5191) {
                 val bool = false
                 val bool_11_ = false
                 val i: Int

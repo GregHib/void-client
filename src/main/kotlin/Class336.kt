@@ -17,7 +17,7 @@ object Class336 {
         if (i_0_ >= Class369.anInt4960 && CameraNodeList.anInt1745 >= i_0_) {
             i = method831(Class38.anInt513, i, LocalPlayerState.anInt1910, -123)
             i_3_ = method831(Class38.anInt513, i_3_, LocalPlayerState.anInt1910, 123)
-            Class332.method2641(i_3_, i, -76, i_0_, i_2_)
+            SoundCacheState.method2641(i_3_, i, -76, i_0_, i_2_)
         }
     }
 

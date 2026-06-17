@@ -107,7 +107,7 @@ class TextureQualityOptionState : GraphicsOptionState {
             var i_7_ = -i_3_ + i_4_
             var i_8_ = i_5_ + -i
             if ((i_8_.inv()) == i_2_) {
-                if (i_7_ != 0) Class332.method2641(i_4_, i_3_, -117, i, i_6_)
+                if (i_7_ != 0) SoundCacheState.method2641(i_4_, i_3_, -117, i, i_6_)
                 return
             } else if (i_7_ == 0) {
                 NpcAppearanceFlags.method223(i_5_, i_6_, i_3_, i, 47.toByte())

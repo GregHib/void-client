@@ -41,7 +41,7 @@ class Class348_Sub40_Sub20 : Class348_Sub40(0, true) {
         fun method3102(i: Int) {
             if (i != 22385) aClass348_Sub4_9264 = null
             anInt9265++
-            Class332.aClass60_4139!!.method587(-110)
+            SoundCacheState.aClass60_4139!!.method587(-110)
         }
 
         @JvmStatic

@@ -275,7 +275,7 @@ import RenderQueueState.method2617
 import PolygonFiller.method2621
 import VideoStreamDecoder.Companion.method2631
 import CalendarUtil.method2637
-import Class332.method2640
+import SoundCacheState.method2640
 import Class333.Companion.method2645
 import Class334.Companion.method2653
 import Class334.Companion.method2654

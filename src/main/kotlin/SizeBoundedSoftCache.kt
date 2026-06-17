@@ -196,7 +196,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
         fun method1343(i: Int, class46: Class46?, i_1_: Int, i_2_: Int) {
             LongHashTable.anInt451 = i
             Class348_Sub36.aClass46_6990 = class46
-            Class332.anInt4141 = i_2_
+            SoundCacheState.anInt4141 = i_2_
             anInt2328++
             if (i_1_ != 1) method1349(119.toByte())
         }

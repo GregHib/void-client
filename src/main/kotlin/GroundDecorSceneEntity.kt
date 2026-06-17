@@ -59,7 +59,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, class
         val var_terrainTile: TerrainTile?
         val var_terrainTile_5_: TerrainTile?
         if (aBoolean9983) {
-            var_terrainTile = Class332.aTerrainTileArray4142!![this.aByte6376.toInt()]
+            var_terrainTile = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
             var_terrainTile_5_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![0]
         } else {
             var_terrainTile = (Class348_Sub1_Sub1.aTerrainTileArray8801!![this.aByte6376.toInt()])

@@ -82,7 +82,7 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
                             SceneModelBuilder.method2494(Class373.anInt4534, -256, i_10_, var_renderer, class348_sub42_sub12, Class348_Sub1_Sub1.anInt8806, i_7_, -1, 125.toByte(), ClickFeedbackTask.anInt4669, Class50_Sub3.anInt5252, i_6_)
                             class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(73.toByte()) as? Class348_Sub42_Sub12?)
                         }
-                        Class332.method2642(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, true, Class50_Sub3.anInt5252, ClickFeedbackTask.anInt4669)
+                        SoundCacheState.method2642(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, true, Class50_Sub3.anInt5252, ClickFeedbackTask.anInt4669)
                     }
                 } else {
                     var i_11_ = 0
@@ -94,7 +94,7 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
                         class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(55.toByte()) as? Class348_Sub42_Sub12?
                     }
                 }
-                Class332.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, true, GlArrayBufferObject.anInt4717 + i_3_, WorldMapSceneSoftware.anInt5819)
+                SoundCacheState.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, true, GlArrayBufferObject.anInt4717 + i_3_, WorldMapSceneSoftware.anInt5819)
             }
         }
     }

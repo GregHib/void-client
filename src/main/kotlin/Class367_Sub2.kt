@@ -101,7 +101,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                 class318_sub1_sub2.anInt6382 = i_2_
                 class318_sub1_sub2.y = (i_1_ shl Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037
                 class357.aClass318_Sub1_Sub2_4408 = class318_sub1_sub2
-                val i_3_ = if (NativeSprite.aTerrainTileArray5191 == Class332.aTerrainTileArray4142) 1 else 0
+                val i_3_ = if (NativeSprite.aTerrainTileArray5191 == SoundCacheState.aTerrainTileArray4142) 1 else 0
                 if (class318_sub1_sub2.method2376(-52)) {
                     if (class318_sub1_sub2.method2377(122.toByte())) {
                         class318_sub1_sub2.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_]

@@ -154,7 +154,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, class51: Clas
         val var_terrainTile_16_: TerrainTile?
         if (aBoolean10066) {
             var_terrainTile = Class348_Sub1_Sub1.aTerrainTileArray8801!![0]
-            var_terrainTile_16_ = Class332.aTerrainTileArray4142!![this.aByte6376.toInt()]
+            var_terrainTile_16_ = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
         } else {
             var_terrainTile_16_ = (Class348_Sub1_Sub1.aTerrainTileArray8801!![this.aByte6376.toInt()])
             if (this.aByte6376 < 3) var_terrainTile = (Class348_Sub1_Sub1.aTerrainTileArray8801!![1 + this.aByte6376])

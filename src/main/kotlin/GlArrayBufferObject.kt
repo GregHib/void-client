@@ -138,7 +138,7 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                         SceneModelBuilder.method2494(Class373.anInt4534, Class5_Sub2.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, Class348_Sub1_Sub1.anInt8806, i_12_, (Class348_Sub42_Sub11.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, Class50_Sub3.anInt5252, i_11_)
                         class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(111.toByte()) as? Class348_Sub42_Sub12?)
                     }
-                    Class332.method2642(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, true, Class50_Sub3.anInt5252, ClickFeedbackTask.anInt4669)
+                    SoundCacheState.method2642(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, true, Class50_Sub3.anInt5252, ClickFeedbackTask.anInt4669)
                 }
             } else {
                 var i_18_ = 0
@@ -150,7 +150,7 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                     class348_sub42_sub12 = Class348_Sub40_Sub4.aNodeDeque_9111!!.method1990(71.toByte()) as? Class348_Sub42_Sub12?
                 }
             }
-            Class332.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_5_, true, i_4_ + anInt4717, WorldMapSceneSoftware.anInt5819)
+            SoundCacheState.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_5_, true, i_4_ + anInt4717, WorldMapSceneSoftware.anInt5819)
         }
 
         @JvmStatic

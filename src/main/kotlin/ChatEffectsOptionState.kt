@@ -154,7 +154,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                         if (Class348_Sub1.anIntArray6547!![i_26_] == i) return LoadingScreenState.aClass352Array2636!![i_26_]
                     }
                 }
-                var class352 = Class332.aClass60_4139!!.method583(i.toLong(), -92) as? Class352?
+                var class352 = SoundCacheState.aClass60_4139!!.method583(i.toLong(), -92) as? Class352?
                 if (class352 != null) {
                     if (bool && class352.aFontDefinition_4333 == null) {
                         val class143 = RangedGraphicsOptionState.method1766((-76).toByte(), i, TerrainTile.aClass45_4585!!)
@@ -170,7 +170,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                 if (class143 == null) return null
                 if (!bool) class352 = Class352(var_renderer!!.method3686(class143, spriteImages, true))
                 else class352 = Class352(var_renderer!!.method3686(class143, spriteImages, true), class143)
-                Class332.aClass60_4139!!.method582(class352, i.toLong(), (-109).toByte())
+                SoundCacheState.aClass60_4139!!.method582(class352, i.toLong(), (-109).toByte())
                 return class352
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("jaa.K(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))

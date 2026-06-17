@@ -295,7 +295,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class348_Sub18.method2938(66.toByte())
                     if (TextureDefinitionCache.anInt2964 < 96) method2271(31268)
                     RegionSceneLoader.method2193(true, (-119).toByte())
-                    Class338.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (Class332.aTerrainTileArray4142!![0])), Class348_Sub8.aRenderer6654)
+                    Class338.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (SoundCacheState.aTerrainTileArray4142!![0])), Class348_Sub8.aRenderer6654)
                     Class338.aClass237_Sub1_4197!!.method1697(false, Class348_Sub8.aRenderer6654, -36)
                     RegionSceneLoader.method2193(true, (-122).toByte())
                     if (bool_25_) {

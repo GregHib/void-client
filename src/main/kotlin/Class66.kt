@@ -1139,7 +1139,7 @@ object Class66 {
                 return
             }
             if (i == 5433) {
-                Class332.anInt4143 = anIntArray1149!![--anInt1173]
+                SoundCacheState.anInt4143 = anIntArray1149!![--anInt1173]
                 return
             }
         } else if (i < 5600) {

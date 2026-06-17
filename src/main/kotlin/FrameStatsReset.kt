@@ -1199,7 +1199,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SequencedWallEntity.anInt10165 = 0
             MediaStreamClient.anInt3192 = 0
             InputStream_Sub2.anInt80 = 0
-            Class332.anInt4138 = 0
+            SoundCacheState.anInt4138 = 0
             Class59_Sub2_Sub1.anInt8673 = 0
             SceneEntityModel.anInt6412 = 0
             MapArchiveSource.anInt4799 = 0
@@ -1456,7 +1456,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class361.anInt4454 = 0
             SceneObjectAnimator.anInt3050 = 0
             Sprite.anInt113 = 0
-            Class332.anInt4140 = 0
+            SoundCacheState.anInt4140 = 0
             Class64_Sub3.anInt5567 = 0
             BooleanGraphicsOptionState.anInt5842 = 0
             FloatCameraTransform.anInt5701 = 0

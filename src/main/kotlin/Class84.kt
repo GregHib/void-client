@@ -139,7 +139,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
         @JvmStatic
         fun method821(i: Int) {
-            Class332.aClass60_4139!!.method590(0)
+            SoundCacheState.aClass60_4139!!.method590(0)
             val i_16_ = -67 / ((i - 39) / 33)
             anInt1459++
         }

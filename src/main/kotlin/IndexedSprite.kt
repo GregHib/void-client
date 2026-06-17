@@ -57,7 +57,7 @@ class IndexedSprite : Sprite {
             val i_3_ = Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
             if (i_3_ == -RandomAccessFileOnDisk.anInt3049) return false
             if (RandomAccessFileOnDisk.anInt3049 == i_3_) return true
-            if (Class332.aTerrainTileArray4142 == NativeSprite.Companion.aTerrainTileArray5191) return false
+            if (SoundCacheState.aTerrainTileArray4142 == NativeSprite.Companion.aTerrainTileArray5191) return false
             val i_4_ = i_0_ shl Class362.anInt4459
             val i_5_ = i_2_ shl Class362.anInt4459
             if (i_1_.toInt() != -97) method163(-4)

@@ -104,7 +104,7 @@ class HostPingThread : Runnable {
 
         @JvmStatic
         fun method1301(var_renderNode: RenderNode?, i: Int, i_0_: Int, i_1_: Int, bools: BooleanArray?) {
-            if (NativeSprite.aTerrainTileArray5191 != Class332.aTerrainTileArray4142) {
+            if (NativeSprite.aTerrainTileArray5191 != SoundCacheState.aTerrainTileArray4142) {
                 val i_2_ = Class348_Sub1_Sub1.aTerrainTileArray8801!![i]!!.method3986(i_0_, i_1_, (-93).toByte())
                 for (i_3_ in 0..i) {
                     if (bools == null || bools[i_3_]) {

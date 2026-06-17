@@ -1,4 +1,7 @@
-object Class332 {
+/*
+ * Class332
+ */
+object SoundCacheState {
     var anInt4138: Int = 0
     var aClass60_4139: Class60?
     var anInt4140: Int = 0
