@@ -1126,7 +1126,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class285.anInt4756 = 0
             ScreenBorderFiller.anInt1956 = 0
             Class255.anInt3275 = 0
-            Class215.anInt2838 = 0
+            GameDisplayManager.anInt2838 = 0
             NpcAppearanceFlags.anInt214 = 0
             Class258_Sub3.anInt8542 = 0
             FloatCameraTransform.anInt5717 = 0
@@ -1266,7 +1266,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class286_Sub7.anInt6282 = 0
             Class315.anInt3949 = 0
             Class45.anInt644 = 0
-            Class215.anInt2837 = 0
+            GameDisplayManager.anInt2837 = 0
             NativeRenderer.anInt8031 = 0
             Class348_Sub16_Sub2.anInt8871 = 0
             Class312.anInt3928 = 0
@@ -2438,7 +2438,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LoadProgressCounters.anInt2452 = 0
             Class367_Sub3.anInt7307 = 0
             Class318_Sub1_Sub3_Sub2.anInt10043 = 0
-            Class215.anInt2839 = 0
+            GameDisplayManager.anInt2839 = 0
             Class227.anInt2966 = 0
             Class318_Sub1_Sub4_Sub1.anInt10063 = 0
             Class5.anInt4627 = 0

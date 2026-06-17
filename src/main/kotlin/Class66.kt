@@ -4729,7 +4729,7 @@ object Class66 {
                 }
                 if (i == 4115) {
                     val i_441_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = if (Class215.method1581(-93, i_441_.toChar())) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (GameDisplayManager.method1581(-93, i_441_.toChar())) 1 else 0
                     return
                 }
                 if (i == 4116) {

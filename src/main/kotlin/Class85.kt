@@ -216,7 +216,7 @@ class Class85 {
             if (i_22_.toInt() == 102) {
                 if (i == 3 || i_24_ == 3) bool = true
                 if (!Class348_Sub8.aRenderer6654!!.method3695()) bool = true
-                Class215.method1580((-125).toByte(), bool, i_21_, i_24_, i, i_23_)
+                GameDisplayManager.method1580((-125).toByte(), bool, i_21_, i_24_, i, i_23_)
             }
         }
 

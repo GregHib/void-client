@@ -36,7 +36,7 @@ class Class302 {
         fun method2283(bool: Boolean, i: Int, i_0_: Int, i_1_: Int, bool_2_: Boolean) {
             method950(i_0_, 0, Class65.aClass110_Sub1Array1146!!.size + -1, bool, 56.toByte(), i_1_, bool_2_)
             anInt3836++
-            Class215.anInt2834 = i
+            GameDisplayManager.anInt2834 = i
             PingHostListHolder.aClass348_Sub26_2332 = null
         }
 

@@ -42,8 +42,8 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
             while_140_@ while ( /**/Class348_Sub40_Sub6.Companion.anInt9139 > i_4_) {
                 GlArrayBufferObject.anInt4715 = 2147483647
                 HintArrowOrMessage.anInt2023 = GlArrayBufferObject.anInt4715
-                Class215.anInt2835 = HintArrowOrMessage.anInt2023
-                Class348_Sub42_Sub20.anInt9715 = Class215.anInt2835
+                GameDisplayManager.anInt2835 = HintArrowOrMessage.anInt2023
+                Class348_Sub42_Sub20.anInt9715 = GameDisplayManager.anInt2835
                 val i_5_ = 2048 - -(Class318_Sub6.anIntArray6432!![i_4_] * anInt9129)
                 val i_6_ = i_5_ shr 12
                 val i_7_ = i_6_ + 1
@@ -95,20 +95,20 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
                             i_15_ = (4096.0 * (sqrt(((i_12_ * i_12_ - -(i_13_ * i_13_)).toFloat() / 1.6777216E7f).toDouble()))).toInt()
                         } while (false)
                         if (Class348_Sub42_Sub20.anInt9715 <= i_15_) {
-                            if (i_15_ >= Class215.anInt2835) {
+                            if (i_15_ >= GameDisplayManager.anInt2835) {
                                 if (i_15_ < HintArrowOrMessage.anInt2023) {
                                     GlArrayBufferObject.anInt4715 = HintArrowOrMessage.anInt2023
                                     HintArrowOrMessage.anInt2023 = i_15_
                                 } else if (i_15_ < GlArrayBufferObject.anInt4715) GlArrayBufferObject.anInt4715 = i_15_
                             } else {
                                 GlArrayBufferObject.anInt4715 = HintArrowOrMessage.anInt2023
-                                HintArrowOrMessage.anInt2023 = Class215.anInt2835
-                                Class215.anInt2835 = i_15_
+                                HintArrowOrMessage.anInt2023 = GameDisplayManager.anInt2835
+                                GameDisplayManager.anInt2835 = i_15_
                             }
                         } else {
                             GlArrayBufferObject.anInt4715 = HintArrowOrMessage.anInt2023
-                            HintArrowOrMessage.anInt2023 = Class215.anInt2835
-                            Class215.anInt2835 = Class348_Sub42_Sub20.anInt9715
+                            HintArrowOrMessage.anInt2023 = GameDisplayManager.anInt2835
+                            GameDisplayManager.anInt2835 = Class348_Sub42_Sub20.anInt9715
                             Class348_Sub42_Sub20.anInt9715 = i_15_
                         }
                         i_10_++
@@ -132,7 +132,7 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
                                 } else break
                                 break@while_137_
                             }
-                            `is`[i_4_] = Class215.anInt2835
+                            `is`[i_4_] = GameDisplayManager.anInt2835
                             i_4_++
                             continue@while_140_
                         } while (false)
@@ -144,7 +144,7 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
                     i_4_++
                     continue@while_140_
                 } while (false)
-                `is`[i_4_] = Class215.anInt2835 + -Class348_Sub42_Sub20.anInt9715
+                `is`[i_4_] = GameDisplayManager.anInt2835 + -Class348_Sub42_Sub20.anInt9715
                 i_4_++
             }
         }

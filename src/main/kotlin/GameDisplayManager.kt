@@ -6,7 +6,10 @@ import Class56.Companion.method527
 import TerrainTile.Companion.method3980
 import java.awt.Container
 
-object Class215 {
+/*
+ * Class215
+ */
+object GameDisplayManager {
     @JvmField
     var anInt2834: Int = 0
     var anInt2835: Int = 0
@@ -30,7 +33,7 @@ object Class215 {
                 method243(37)
             }
         }
-        if (i_2_ == 3 && Class34.aFrame476 == null) Class215.method1580((-126).toByte(), true, -1, i_1_, Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1)
+        if (i_2_ == 3 && Class34.aFrame476 == null) GameDisplayManager.method1580((-126).toByte(), true, -1, i_1_, Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1)
         else {
             val container: Container?
             if (Class34.aFrame476 != null) {
