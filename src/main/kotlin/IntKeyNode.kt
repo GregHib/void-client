@@ -21,11 +21,11 @@ class IntKeyNode : LinkedListNode {
 
         fun method3027(i: Byte) {
             anInt6975++
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && Class355.anInt4372 != ParticleSystemState.anInt2204) RegionSceneShifter.Companion.method3157(FileIoUtil.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204) RegionSceneShifter.Companion.method3157(FileIoUtil.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
             else {
                 StringValueNode.method3319(FacingDirectionNode.aRenderer6654, (-121).toByte())
                 if (i.toInt() != 33) method3028(-79)
-                if (TrackedGroundDecor.anInt10395 != Class355.anInt4372) EdgeDetectTextureNode.method3072((-96).toByte())
+                if (TrackedGroundDecor.anInt10395 != CompiledScriptCache.anInt4372) EdgeDetectTextureNode.method3072((-96).toByte())
             }
         }
 

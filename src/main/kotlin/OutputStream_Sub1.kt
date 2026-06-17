@@ -61,13 +61,13 @@ class OutputStream_Sub1 : OutputStream() {
                     if (IntKeyNode.anInt6979 shr 8 > i_4_) i_4_ = IntKeyNode.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && ModelHeaderCache.anIntArray3273!![4] + 128 > i_4_) i_4_ = ModelHeaderCache.anIntArray3273!![4] + 128
                     val i_5_ = ResourceProvider.aFloat3938.toInt() + RenderableGroup.anInt5016 and 0x3fff
-                    WidgetDefinition.method268(i_4_, -200 + (CollisionMapAccessor.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
+                    WidgetDefinition.method268(i_4_, -200 + (CollisionMapAccessor.method2064((LocalPlayerState.aPlayer_1907!!.x), CompiledScriptCache.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
                 } else if (WeaveTextureNode.anInt9282 == 4) {
                     var i_6_ = Class76.aFloat1287.toInt()
                     if (i_6_ < IntKeyNode.anInt6979 shr 8) i_6_ = IntKeyNode.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && (i_6_ < ModelHeaderCache.anIntArray3273!![4] + 128)) i_6_ = 128 + ModelHeaderCache.anIntArray3273!![4]
                     val i_7_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
-                    WidgetDefinition.method268(i_6_, -200 + CollisionMapAccessor.method2064(HslColorTableNode.anInt6633, Class355.anInt4372, 11219, RegionTileNode.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
+                    WidgetDefinition.method268(i_6_, -200 + CollisionMapAccessor.method2064(HslColorTableNode.anInt6633, CompiledScriptCache.anInt4372, 11219, RegionTileNode.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
                 } else if (WeaveTextureNode.anInt9282 == 5) LocDefinitionCache.method2035(i_2_, 0)
                 val i_8_ = GlslMaterialPass.anInt6246
                 val i_9_ = ParticleSystemRenderer.anInt3855
@@ -193,10 +193,10 @@ class OutputStream_Sub1 : OutputStream() {
         @JvmStatic
         fun method134(i: Byte) {
             if (i.toInt() != -126) method132(-95, true, 10, 28, 45, 100)
-            if (Class355.anObject4366 == null) {
+            if (CompiledScriptCache.anObject4366 == null) {
                 val class59_sub1_sub1 = Class59_Sub1_Sub1()
                 val `is` = class59_sub1_sub1.method559(128, 128, 106.toByte(), 16)
-                Class355.anObject4366 = GrowableStringList.method1357(`is`, false, 111.toByte())
+                CompiledScriptCache.anObject4366 = GrowableStringList.method1357(`is`, false, 111.toByte())
             }
             anInt92++
             if (BoxedIntHolder.anObject2969 == null) {

@@ -449,7 +449,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class69.anInt1191 = 0
             WallSceneEntity.anInt9964 = 0
             CubeMapMaterialPass.anInt6303 = 0
-            Class355.anInt4370 = 0
+            CompiledScriptCache.anInt4370 = 0
             Class8.anInt163 = 0
             ParticleEmitterNode.anInt175 = 0
             NativeRenderer.anInt8066 = 0
@@ -686,7 +686,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             HuffmanCodec.anInt3771 = 0
             GlTexture.anInt4853 = 0
             Npc.anInt10513 = 0
-            Class355.anInt4371 = 0
+            CompiledScriptCache.anInt4371 = 0
             SocketGameConnection.anInt5828 = 0
             NativeRenderer.anInt7945 = 0
             CacheLruCache.anInt3885 = 0
@@ -3462,7 +3462,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlFramebufferBlitter.anInt280 = 0
             ActorEntity.anInt8760 = 0
             Class64_Sub2.anInt5465 = 0
-            Class355.anInt4363 = 0
+            CompiledScriptCache.anInt4363 = 0
             Npc.anInt10497 = 0
             AnimationFrameDefinition.anInt6956 = 0
             MapElementDefinitionCache.anInt3987 = 0

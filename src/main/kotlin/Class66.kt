@@ -398,12 +398,12 @@ object Class66 {
             }
             if (i == 5055) {
                 val i_37_ = anIntArray1149!![--anInt1173]
-                aStringArray1152!![anInt1170++] = BrightnessOptionState.aClass355_5900!!.method3471(i_37_, (-112).toByte()).method3219(127)
+                aStringArray1152!![anInt1170++] = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_37_, (-112).toByte()).method3219(127)
                 return
             }
             if (i == 5056) {
                 val i_38_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub10 = BrightnessOptionState.aClass355_5900!!.method3471(i_38_, (-125).toByte())
+                val class348_sub42_sub10 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_38_, (-125).toByte())
                 if ((class348_sub42_sub10.anIntArray9566) == null) anIntArray1149!![anInt1173++] = 0
                 else {
                     anIntArray1149!![anInt1173++] = (class348_sub42_sub10.anIntArray9566!!).size
@@ -415,13 +415,13 @@ object Class66 {
                 anInt1173 -= 2
                 val i_39_ = anIntArray1149!![anInt1173]
                 val i_40_ = anIntArray1149!![anInt1173 + 1]
-                anIntArray1149!![anInt1173++] = (BrightnessOptionState.aClass355_5900!!.method3471(i_39_, (-126).toByte()).anIntArray9566!![i_40_])
+                anIntArray1149!![anInt1173++] = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_39_, (-126).toByte()).anIntArray9566!![i_40_])
                 return
             }
             if (i == 5058) {
                 aClass43_1151 = Class43()
                 aClass43_1151!!.anInt615 = anIntArray1149!![--anInt1173]
-                aClass43_1151!!.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aClass355_5900!!.method3471((aClass43_1151!!.anInt615), (-87).toByte())
+                aClass43_1151!!.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471((aClass43_1151!!.anInt615), (-87).toByte())
                 aClass43_1151!!.anIntArray617 = IntArray(aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3215((-48).toByte()))
                 return
             }
@@ -500,14 +500,14 @@ object Class66 {
             }
             if (i == 5066) {
                 val i_52_ = anIntArray1149!![--anInt1173]
-                anIntArray1149!![anInt1173++] = BrightnessOptionState.aClass355_5900!!.method3471(i_52_, (-123).toByte()).method3215((-127).toByte())
+                anIntArray1149!![anInt1173++] = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_52_, (-123).toByte()).method3215((-127).toByte())
                 return
             }
             if (i == 5067) {
                 anInt1173 -= 2
                 val i_53_ = anIntArray1149!![anInt1173]
                 val i_54_ = anIntArray1149!![anInt1173 + 1]
-                val i_55_ = BrightnessOptionState.aClass355_5900!!.method3471(i_53_, (-127).toByte()).method3212(0, i_54_)!!.anInt1941
+                val i_55_ = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_53_, (-127).toByte()).method3212(0, i_54_)!!.anInt1941
                 anIntArray1149!![anInt1173++] = i_55_
                 return
             }
@@ -530,7 +530,7 @@ object Class66 {
                 val i_60_ = anIntArray1149!![anInt1173]
                 val i_61_ = anIntArray1149!![anInt1173 + 1]
                 val i_62_ = anIntArray1149!![anInt1173 + 2]
-                val class348_sub42_sub10 = BrightnessOptionState.aClass355_5900!!.method3471(i_60_, (-127).toByte())
+                val class348_sub42_sub10 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_60_, (-127).toByte())
                 if ((class348_sub42_sub10.method3212(0, i_61_)!!.anInt1941) != 0) throw RuntimeException("bad command")
                 anIntArray1149!![anInt1173++] = class348_sub42_sub10.method3213(i_62_, i_61_, true)
                 return
@@ -1205,7 +1205,7 @@ object Class66 {
                 return
             }
             if (i == 5508) {
-                Class355.method3470(1)
+                CompiledScriptCache.method3470(1)
                 return
             }
             if (i == 5509) {

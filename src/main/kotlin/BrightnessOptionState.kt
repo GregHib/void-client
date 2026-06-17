@@ -25,7 +25,7 @@ class BrightnessOptionState : GraphicsOptionState {
         anInt5897++
         val i = this.aClass348_Sub51_3136.method3428((-105).toByte())!!.method1458(-23688)
         if (i < 96) this.anInt3138 = 0
-        if (bool != false) aClass355_5900 = null
+        if (bool != false) aCompiledScriptCache_5900 = null
         if (this.anInt3138 > 1 && i < 128) this.anInt3138 = 1
         if (this.anInt3138 > 2 && i < 192) this.anInt3138 = 2
         if (this.anInt3138 < 0 || this.anInt3138 > 3) this.anInt3138 = method1710(20014)
@@ -64,7 +64,7 @@ class BrightnessOptionState : GraphicsOptionState {
         @JvmField
         var anInt5899: Int = 0
         @JvmField
-        var aClass355_5900: Class355? = null
+        var aCompiledScriptCache_5900: CompiledScriptCache? = null
         @JvmField
         var anInt5901: Int = 0
         @JvmField
@@ -81,8 +81,8 @@ class BrightnessOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1746(i: Int) {
             anIntArray5902 = null
-            if (i != -15628) aClass355_5900 = null
-            aClass355_5900 = null
+            if (i != -15628) aCompiledScriptCache_5900 = null
+            aCompiledScriptCache_5900 = null
             anIntArrayArray5894 = null
         }
 

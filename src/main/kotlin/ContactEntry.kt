@@ -98,7 +98,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
             if (BloomGraphicsOptionState.anInt5973 >= 100) {
                 val i_8_ = RenderableEntry.anInt4336 * 512 - -256
                 val i_9_ = ClanChatRequestSender.anInt3647 * 512 - -256
-                val i_10_ = (method2064(i_8_, Class355.anInt4372, 11219, i_9_) + -MinimapFlagRenderer.anInt1797)
+                val i_10_ = (method2064(i_8_, CompiledScriptCache.anInt4372, 11219, i_9_) + -MinimapFlagRenderer.anInt1797)
                 val i_11_ = i_8_ - GlslMaterialPass.anInt6246
                 val i_12_ = -ParticleSystemRenderer.anInt3855 + i_10_
                 val i_13_ = i_9_ - Class59_Sub2_Sub2.anInt8685

@@ -78,13 +78,13 @@ class CameraDistanceOptionState : GraphicsOptionState {
             }
             val i_3_ = FrameStatsReset.anInt5799 shr 9
             val i_4_ = AsyncTaskHandle.anInt2578 shr 9
-            val i_5_ = CollisionMapAccessor.method2064(FrameStatsReset.anInt5799, Class355.anInt4372, 11219, AsyncTaskHandle.anInt2578)
+            val i_5_ = CollisionMapAccessor.method2064(FrameStatsReset.anInt5799, CompiledScriptCache.anInt4372, 11219, AsyncTaskHandle.anInt2578)
             var i_6_ = 0
             if (i_3_ > 3 && i_4_ > 3 && -4 + Class367_Sub4.anInt7319 > i_3_ && RangeThresholdTextureNode.anInt9109 - 4 > i_4_) {
                 var i_7_ = i_3_ - 4
                 while (i_3_ - -4 >= i_7_) {
                     for (i_8_ in -4 + i_4_..4 + i_4_) {
-                        var i_9_ = Class355.anInt4372
+                        var i_9_ = CompiledScriptCache.anInt4372
                         if (i_9_ < 3 && Class79.method802(i_8_, i_7_, true)) i_9_++
                         var i_10_ = 0
                         if ((MapTileShape.aClass237_Sub1_4197!!.aByteArrayArrayArray3104) != null && (MapTileShape.aClass237_Sub1_4197!!.aByteArrayArrayArray3104!![i_9_]) != null) i_10_ = 8 * ((MapTileShape.aClass237_Sub1_4197!!.aByteArrayArrayArray3104!![i_9_]!![i_7_]!![i_8_]).toInt() and 0xff) shl 2

@@ -57,7 +57,7 @@ public abstract class AbstractCameraTransform {
             val i_4_ = ((GlslMaterialPass.anInt6246 shr 12) - -(ArbVertexProgram.regionTileX shr 3))
             val i_5_ = ((Class90.regionTileY shr 3) + (Class59_Sub2_Sub2.anInt8685 shr 12))
             LocalPlayerState.aPlayer_1907!!.plane = 0.toByte()
-            Class355.anInt4372 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
+            CompiledScriptCache.anInt4372 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
             LocalPlayerState.aPlayer_1907!!.method2449(8, 8, 118.toByte())
             if (i.toInt() != -49) anInt1597 = 115
             var i_6_ = 18

@@ -411,7 +411,7 @@ import RenderableEntry.Companion.method3458
 import TextureMipDescriptor.Companion.method3462
 import TextureCache.Companion.method3466
 import TextureCache.Companion.method3468
-import Class355.Companion.method3473
+import CompiledScriptCache.Companion.method3473
 import Class356.Companion.method3478
 import Class357.Companion.method3487
 import Class358.Companion.method3488
@@ -1779,7 +1779,7 @@ class Client : GameAppletFrame() {
         try {
             string = ("[1)" + ArbVertexProgram.regionTileX + "," + Class90.regionTileY + "," + Class367_Sub4.anInt7319 + "," + RangeThresholdTextureNode.anInt9109 + "|")
             if (i < 40) aNodeDeque_5185 = null
-            if (LocalPlayerState.aPlayer_1907 != null) string += ("2)" + Class355.anInt4372 + "," + (ArbVertexProgram.regionTileX + (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + "|")
+            if (LocalPlayerState.aPlayer_1907 != null) string += ("2)" + CompiledScriptCache.anInt4372 + "," + (ArbVertexProgram.regionTileX + (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + "|")
             string += ("3)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + LocTypeDefinition.anInt4017 + "," + HardCacheEntryReference.anInt10432 + "|")
             string += "7)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
             string += "8)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"

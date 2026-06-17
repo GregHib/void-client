@@ -91,10 +91,10 @@ class RegionSceneShifter : LinkedListNode() {
 
         fun method3157(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, bool: Boolean) {
             anInt7049++
-            if (bool || i_16_ != Renderer.anInt4581 || FileIoUtil.anInt4095 != i || (Class355.anInt4372 != ParticleSystemState.anInt2204 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
+            if (bool || i_16_ != Renderer.anInt4581 || FileIoUtil.anInt4095 != i || (CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
                 Renderer.anInt4581 = i_16_
                 FileIoUtil.anInt4095 = i
-                ParticleSystemState.anInt2204 = Class355.anInt4372
+                ParticleSystemState.anInt2204 = CompiledScriptCache.anInt4372
                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) ParticleSystemState.anInt2204 = 0
                 Buffer.method3379(2, i_17_)
                 Class362.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.Companion.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)

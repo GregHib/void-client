@@ -994,7 +994,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 if (!bool_119_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_118_
                     Class79.anInt1359 = (Class79.anInt1359 + 1) % 100
-                    val string_121_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_117_, (-106).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
+                    val string_121_ = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_117_, (-106).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_114_, string_121_, (-120).toByte(), i_117_, "<img=1>" + string, method1788(87.toByte(), l), 20, 0, string)
                     else if (i != 1) TrackedGroundDecor.method2477(string_114_, string_121_, (-111).toByte(), i_117_, string, method1788(80.toByte(), l), 20, 0, string)
                     else TrackedGroundDecor.method2477("<img=0>" + string_114_, string_121_, (-116).toByte(), i_117_, "<img=0>" + string, ShadowQualityOptionState.method1788((-98).toByte(), l), 20, 0, string)
@@ -1057,7 +1057,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             if (ModelVertexColorBuffer.aIntRange_6584 == HeapDiagnosticsHolder.aIntRange_2255) {
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-104).toByte())
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                val string_133_ = (BrightnessOptionState.aClass355_5900!!.method3471(i, (-98).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
+                val string_133_ = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i, (-98).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
                 TrackedGroundDecor.method2477(string, string_133_, (-122).toByte(), i, string, null, 19, 0, string)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
@@ -1392,7 +1392,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 if (!bool_179_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_178_
                     Class79.anInt1359 = (Class79.anInt1359 - -1) % 100
-                    val string_181_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_177_, (-93).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 62.toByte()))
+                    val string_181_ = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_177_, (-93).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 62.toByte()))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_175_, string_181_, (-110).toByte(), i_177_, "<img=1>" + string, null, 18, 0, string)
                     else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_175_, string_181_, (-112).toByte(), i_177_, "<img=0>" + string, null, 18, 0, string)
                     else TrackedGroundDecor.method2477(string_175_, string_181_, (-118).toByte(), i_177_, string, null, 18, 0, string)
@@ -1712,7 +1712,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 var bool_230_ = false
                 if (i <= 1 && FontMetaRef.method3455(string_228_, 28280)) bool_230_ = true
                 if (!bool_230_ && BackgroundWorkerThread.anInt3227 == 0) {
-                    val string_231_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_229_, (-108).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
+                    val string_231_ = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_229_, (-108).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_228_, string_231_, (-127).toByte(), i_229_, "<img=1>" + string, null, 25, 0, string)
                     else if (i != 1) TrackedGroundDecor.method2477(string_228_, string_231_, (-119).toByte(), i_229_, string, null, 25, 0, string)
                     else TrackedGroundDecor.method2477("<img=0>" + string_228_, string_231_, (-125).toByte(), i_229_, "<img=0>" + string, null, 25, 0, string)

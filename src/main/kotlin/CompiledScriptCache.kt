@@ -3,7 +3,7 @@ import SoundBankPatch.Companion.method2929
 /* Class355 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class355 internal constructor(i: Int, class45: Class45?, class45_1_: Class45?, interface15: Interface15?) {
+class CompiledScriptCache internal constructor(i: Int, class45: Class45?, class45_1_: Class45?, interface15: Interface15?) {
     private val aClass60_4362: Class60
     var anInt4364: Int = 0
     var anInt4365: Int = 0
@@ -19,7 +19,7 @@ class Class355 internal constructor(i: Int, class45: Class45?, class45_1_: Class
         if (i >= 32768) `is` = aClass45_4369!!.method410(-1860, 1, 0x7fff and i)
         else `is` = aClass45_4368!!.method410(-1860, 1, i)
         class348_sub42_sub10 = ParameterizedText()
-        class348_sub42_sub10.aClass355_9567 = this
+        class348_sub42_sub10.aCompiledScriptCache_9567 = this
         if (`is` != null) class348_sub42_sub10.method3218(Buffer(`is`), 0)
         if (i_0_ >= -86) method3473(-12)
         if (i >= 32768) class348_sub42_sub10.method3209(false)

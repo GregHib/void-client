@@ -71,7 +71,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         }
                     } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = Class76.aHostPingThread_1286!!.method1302(-5255, (CacheStateResetter.aServerConnectionInfo_125!!.aString2147!!))
                     val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?)
-                    if (class348_sub45 != null || (Class355.aLong4367 < -2000L + method599(-97))) {
+                    if (class348_sub45 != null || (CompiledScriptCache.aLong4367 < -2000L + method599(-97))) {
                         var class348_sub47: OutgoingPacketNode? = null
                         var i_2_ = 0
                         var class348_sub45_3_ = (NativeRenderNode.aNodeDeque_10479!!.method1995(4) as TimedRecordAccessor?)
@@ -97,7 +97,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                 OpenGlTerrainTile.anInt8270 = i_5_
                                 var i_7_ = i_4_ - ImageFrameCache.anInt4032
                                 ImageFrameCache.anInt4032 = i_4_
-                                val i_8_ = ((class348_sub45_3_.method3312((-107).toByte()) + -Class355.aLong4367) / 20L).toInt()
+                                val i_8_ = ((class348_sub45_3_.method3312((-107).toByte()) + -CompiledScriptCache.aLong4367) / 20L).toInt()
                                 if (i_8_ >= 8 || i_6_ < -32 || i_6_ > 31 || i_7_ < -32 || i_7_ > 31) {
                                     if (i_8_ < 32 && i_6_ >= -128 && i_6_ <= 127 && i_7_ >= -128 && i_7_ <= 127) {
                                         i_6_ += 128
@@ -118,7 +118,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                     i_7_ += 32
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (i_7_ + (i_6_ shl 6) + (i_8_ shl 12)))
                                 }
-                                Class355.aLong4367 = class348_sub45_3_.method3312((-109).toByte())
+                                CompiledScriptCache.aLong4367 = class348_sub45_3_.method3312((-109).toByte())
                             }
                             class348_sub45_3_ = NativeRenderNode.aNodeDeque_10479!!.method1990(79.toByte()) as TimedRecordAccessor?
                         }

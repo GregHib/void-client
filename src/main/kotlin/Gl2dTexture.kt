@@ -225,11 +225,11 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             anInt8617++
             var i_16_ = IntKeyNode.anInt6981 * 512 + 256
             var i_17_ = 512 * CollisionMapAccessor.anInt3550 + 256
-            var i_18_ = (CollisionMapAccessor.method2064(i_16_, Class355.anInt4372, 11219, i_17_) + -ShortMatrixNode.anInt9515)
+            var i_18_ = (CollisionMapAccessor.method2064(i_16_, CompiledScriptCache.anInt4372, 11219, i_17_) + -ShortMatrixNode.anInt9515)
             if (GlTextureCubeMap.anInt8537 >= 100) {
                 Class59_Sub2_Sub2.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
                 GlslMaterialPass.anInt6246 = IntKeyNode.anInt6981 * 512 + 256
-                ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -ShortMatrixNode.anInt9515)
+                ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -ShortMatrixNode.anInt9515)
             } else {
                 if (GlslMaterialPass.anInt6246 < i_16_) {
                     GlslMaterialPass.anInt6246 += (TileTextureNode.anInt9406 + (GlTextureCubeMap.anInt8537 * (i_16_ + -GlslMaterialPass.anInt6246) / 1000))
@@ -258,7 +258,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             }
             i_17_ = 256 + ClanChatRequestSender.anInt3647 * 512
             i_16_ = 256 + 512 * RenderableEntry.anInt4336
-            i_18_ = (CollisionMapAccessor.method2064(i_16_, Class355.anInt4372, 11219, i_17_) - MinimapFlagRenderer.anInt1797)
+            i_18_ = (CollisionMapAccessor.method2064(i_16_, CompiledScriptCache.anInt4372, 11219, i_17_) - MinimapFlagRenderer.anInt1797)
             val i_19_ = -GlslMaterialPass.anInt6246 + i_16_
             val i_20_ = -ParticleSystemRenderer.anInt3855 + i_18_
             val i_21_ = -Class59_Sub2_Sub2.anInt8685 + i_17_

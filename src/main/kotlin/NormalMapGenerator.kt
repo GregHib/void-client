@@ -62,14 +62,14 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
         if (this.aBoolean3458 || aHa_Sub3_3457.method3880(Class68.aClass68_1183, SpriteSheetCache.aTextureFormatInfo_2571, 123.toByte())) {
             OutputStream_Sub1.method134((-126).toByte())
             if (this.aBoolean3458) {
-                var `is` = method461(false, Class355.anObject4366, 53146732)
+                var `is` = method461(false, CompiledScriptCache.anObject4366, 53146732)
                 this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aTextureFormatInfo_2571, true, 128, `is`)
                 `is` = method461(false, BoxedIntHolder.anObject2969, 53146732)
                 aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aTextureFormatInfo_2571, true, 128, `is`)
             } else {
                 this.anInterface18_Impl3Array3459 = arrayOfNulls<Interface18_Impl3>(16)
                 for (i in 0..15) {
-                    val `is` = method1331(100.toByte(), Class355.anObject4366, 128 * (i * 128 * 2), 32768)
+                    val `is` = method1331(100.toByte(), CompiledScriptCache.anObject4366, 128 * (i * 128 * 2), 32768)
                     this.anInterface18_Impl3Array3459!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCache.aTextureFormatInfo_2571, 2, true, 128)
                 }
                 anInterface18_Impl3Array3454 = arrayOfNulls<Interface18_Impl3>(16)

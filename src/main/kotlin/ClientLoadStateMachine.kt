@@ -208,7 +208,7 @@ object ClientLoadStateMachine {
             Class65.method699(SoftwareSpriteRaster.aClass45_1627, (-100).toByte(), IntKeyNode.aClass45_6980, CameraRotationStub.aClass45_322, RasterSprite.aClass45_5207)
             method85(0, NodeDeque.aClass45_3323)
             ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(AnimationFrameDefinition.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434)
-            BrightnessOptionState.aClass355_5900 = Class355(AnimationFrameDefinition.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, ItemNameResolver())
+            BrightnessOptionState.aCompiledScriptCache_5900 = CompiledScriptCache(AnimationFrameDefinition.anInt6967, ModelBatchBase.aClass45_1897, Class82.aClass45_1434, ItemNameResolver())
             method1202(0)
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2008(i + 28539, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
             ProjectedGroundDecor.aVarpStore_10209 = VarpStore()

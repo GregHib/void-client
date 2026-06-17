@@ -74,7 +74,7 @@ class EdgeDetectTextureNode : AbstractProceduralTextureNode(1, true) {
                 HeightMapNoise.method2280((-4 + TextureQualityOptionState.anInt6006 and 0xff).toByte(), 28587)
                 Class46.method440(2, (-61).toByte())
             }
-            TrackedGroundDecor.anInt10395 = Class355.anInt4372
+            TrackedGroundDecor.anInt10395 = CompiledScriptCache.anInt4372
         }
 
         @JvmStatic
