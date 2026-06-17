@@ -1635,11 +1635,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_215_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 TextureGenerator.anIntArray2497!![i_214_] = i_215_
                 ServerConnectionInfo.anIntArray2145!![i_214_] = i
-                Class256.anIntArray3295!![i_214_] = 1
+                SpotAnimDefCache.anIntArray3295!![i_214_] = 1
                 val i_216_ = OutputStream_Sub1.anIntArray100!![i_214_] + -1
                 var i_217_ = 0
                 while (i_216_ > i_217_) {
-                    if (Class59_Sub1_Sub2.anIntArray8663!![i_217_] <= i_215_) Class256.anIntArray3295!![i_214_] = i_217_ - -2
+                    if (Class59_Sub1_Sub2.anIntArray8663!![i_217_] <= i_215_) SpotAnimDefCache.anIntArray3295!![i_214_] = i_217_ - -2
                     i_217_++
                 }
                 LoadingScreenState.anIntArray2632!![NpcSummaryDefinition.method1166(31, Class326.anInt4086++)] = i_214_

@@ -1,4 +1,4 @@
-import Class256.method1943
+import SpotAnimDefCache.method1943
 import kotlin.math.sqrt
 
 /* Class318_Sub9_Sub2_Sub1 - Decompiled by JODE

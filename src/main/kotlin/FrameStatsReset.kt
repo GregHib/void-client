@@ -1445,7 +1445,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             VarbitDefLoader.anInt2595 = 0
             Class348_Sub40_Sub30.anInt9387 = 0
             Class367_Sub2.anInt7288 = 0
-            Class256.anInt3294 = 0
+            SpotAnimDefCache.anInt3294 = 0
             Class348_Sub51.anInt7225 = 0
             GlTextureBase.anInt5083 = 0
             ObjectByteSerializerHolder.anInt2282 = 0
@@ -4170,7 +4170,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
 
             for (l1 in 0..24) {
                 ServerConnectionInfo.anIntArray2145!![l1] = 0
-                Class256.anIntArray3295!![l1] = 0
+                SpotAnimDefCache.anIntArray3295!![l1] = 0
                 TextureGenerator.anIntArray2497!![l1] = 0
             }
 

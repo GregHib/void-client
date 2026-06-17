@@ -169,7 +169,7 @@ import ConfigFlagUtil.Companion.method1912
 import SmoothingBuffer.Companion.method1917
 import EmoteDefinition.Companion.method1926
 import ModelHeaderCache.Companion.method1931
-import Class256.method1944
+import SpotAnimDefCache.method1944
 import Class258_Sub1.Companion.method1959
 import Class258_Sub2.Companion.method1962
 import Class258_Sub4.Companion.method1973

@@ -1,7 +1,7 @@
 /* Class256 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class256 {
+object SpotAnimDefCache {
     var anInt3294: Int = 0
     var anIntArray3295: IntArray? = IntArray(25)
 

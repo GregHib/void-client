@@ -1,4 +1,4 @@
-import Class256.method1943
+import SpotAnimDefCache.method1943
 import Class262.Companion.method1992
 import Class318_Sub9_Sub2.Companion.method2519
 import java.awt.Image

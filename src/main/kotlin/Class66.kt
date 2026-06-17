@@ -3915,7 +3915,7 @@ object Class66 {
                 }
                 if (i == 3306) {
                     val i_325_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class256.anIntArray3295!![i_325_]
+                    anIntArray1149!![anInt1173++] = SpotAnimDefCache.anIntArray3295!![i_325_]
                     return
                 }
                 if (i == 3307) {
