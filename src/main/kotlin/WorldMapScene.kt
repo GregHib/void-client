@@ -51,7 +51,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     Class348_Sub40_Sub38.anIntArray9480!![0] = i_13_
                                     ProjectileFactory.anIntArray2899!![0] = class277_10_.anInt3575
                                     Class348_Sub6.anIntArray6631!![0] = class277_10_.anInt3570
-                                    Class306.anIntArray3873!![0] = class277_10_.anInt3564
+                                    WorldMapToggle.anIntArray3873!![0] = class277_10_.anInt3564
                                     HintIconState.anIntArray2370!![0] = 256
                                 }
                             }
@@ -70,7 +70,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     Class348_Sub40_Sub38.anIntArray9480!![2] = i_18_
                                     ProjectileFactory.anIntArray2899!![2] = class277_15_.anInt3575
                                     Class348_Sub6.anIntArray6631!![2] = class277_15_.anInt3570
-                                    Class306.anIntArray3873!![2] = class277_15_.anInt3564
+                                    WorldMapToggle.anIntArray3873!![2] = class277_15_.anInt3564
                                     HintIconState.anIntArray2370!![2] = 512
                                 }
                             }
@@ -91,7 +91,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     Class348_Sub40_Sub38.anIntArray9480!![6] = i_23_
                                     ProjectileFactory.anIntArray2899!![6] = class277_20_.anInt3575
                                     Class348_Sub6.anIntArray6631!![6] = class277_20_.anInt3570
-                                    Class306.anIntArray3873!![6] = class277_20_.anInt3564
+                                    WorldMapToggle.anIntArray3873!![6] = class277_20_.anInt3564
                                     HintIconState.anIntArray2370!![6] = 64
                                 }
                             }
@@ -110,7 +110,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     Class348_Sub40_Sub38.anIntArray9480!![4] = i_28_
                                     ProjectileFactory.anIntArray2899!![4] = class277_25_.anInt3575
                                     Class348_Sub6.anIntArray6631!![4] = class277_25_.anInt3570
-                                    Class306.anIntArray3873!![4] = class277_25_.anInt3564
+                                    WorldMapToggle.anIntArray3873!![4] = class277_25_.anInt3564
                                     HintIconState.anIntArray2370!![4] = 128
                                 }
                             }
@@ -131,14 +131,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 for (i_36_ in 0..2) {
                                     i_33_ = i_33_ and 0x7
                                     i_34_ = 0x7 and i_34_
-                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_31_.toInt()]!![i_34_]) && (Class306.anIntArray3873!![i_33_] <= (class277_30_.anInt3564))) {
+                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_31_.toInt()]!![i_34_]) && (WorldMapToggle.anIntArray3873!![i_33_] <= (class277_30_.anInt3564))) {
                                         Class348_Sub15.anIntArray6775!![i_33_] = (class277_30_.anInt3563)
                                         Class348_Sub40_Sub38.anIntArray9480!![i_33_] = i_35_
                                         ProjectileFactory.anIntArray2899!![i_33_] = (class277_30_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_33_] = (class277_30_.anInt3570)
-                                        if (Class306.anIntArray3873!![i_33_] != (class277_30_.anInt3564)) HintIconState.anIntArray2370!![i_33_] = 32
+                                        if (WorldMapToggle.anIntArray3873!![i_33_] != (class277_30_.anInt3564)) HintIconState.anIntArray2370!![i_33_] = 32
                                         else HintIconState.anIntArray2370!![i_33_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_33_]), 32))
-                                        Class306.anIntArray3873!![i_33_] = (class277_30_.anInt3564)
+                                        WorldMapToggle.anIntArray3873!![i_33_] = (class277_30_.anInt3564)
                                     }
                                     i_34_++
                                     i_33_--
@@ -162,14 +162,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 for (i_44_ in 0..2) {
                                     i_41_ = i_41_ and 0x7
                                     i_42_ = 0x7 and i_42_
-                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_39_.toInt()]!![i_42_]) && ((class277_38_.anInt3564) >= Class306.anIntArray3873!![i_41_])) {
+                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_39_.toInt()]!![i_42_]) && ((class277_38_.anInt3564) >= WorldMapToggle.anIntArray3873!![i_41_])) {
                                         Class348_Sub15.anIntArray6775!![i_41_] = (class277_38_.anInt3563)
                                         Class348_Sub40_Sub38.anIntArray9480!![i_41_] = i_43_
                                         ProjectileFactory.anIntArray2899!![i_41_] = (class277_38_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_41_] = (class277_38_.anInt3570)
-                                        if (Class306.anIntArray3873!![i_41_] != (class277_38_.anInt3564)) HintIconState.anIntArray2370!![i_41_] = 16
+                                        if (WorldMapToggle.anIntArray3873!![i_41_] != (class277_38_.anInt3564)) HintIconState.anIntArray2370!![i_41_] = 16
                                         else HintIconState.anIntArray2370!![i_41_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_41_]), 16))
-                                        Class306.anIntArray3873!![i_41_] = (class277_38_.anInt3564)
+                                        WorldMapToggle.anIntArray3873!![i_41_] = (class277_38_.anInt3564)
                                     }
                                     i_42_--
                                     i_41_++
@@ -193,14 +193,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 for (i_52_ in 0..2) {
                                     i_50_ = i_50_ and 0x7
                                     i_49_ = 0x7 and i_49_
-                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_47_.toInt()]!![i_50_]) && (Class306.anIntArray3873!![i_49_] <= (class277_46_.anInt3564))) {
+                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_47_.toInt()]!![i_50_]) && (WorldMapToggle.anIntArray3873!![i_49_] <= (class277_46_.anInt3564))) {
                                         Class348_Sub15.anIntArray6775!![i_49_] = (class277_46_.anInt3563)
                                         Class348_Sub40_Sub38.anIntArray9480!![i_49_] = i_51_
                                         ProjectileFactory.anIntArray2899!![i_49_] = (class277_46_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_49_] = (class277_46_.anInt3570)
-                                        if (Class306.anIntArray3873!![i_49_] != (class277_46_.anInt3564)) HintIconState.anIntArray2370!![i_49_] = 8
+                                        if (WorldMapToggle.anIntArray3873!![i_49_] != (class277_46_.anInt3564)) HintIconState.anIntArray2370!![i_49_] = 8
                                         else HintIconState.anIntArray2370!![i_49_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_49_]), 8))
-                                        Class306.anIntArray3873!![i_49_] = (class277_46_.anInt3564)
+                                        WorldMapToggle.anIntArray3873!![i_49_] = (class277_46_.anInt3564)
                                     }
                                     i_49_++
                                     i_50_--
@@ -224,14 +224,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 for (i_60_ in 0..2) {
                                     i_57_ = 0x7 and i_57_
                                     i_58_ = 0x7 and i_58_
-                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_55_.toInt()]!![i_58_]) && (Class306.anIntArray3873!![i_57_] <= (class277_54_.anInt3564))) {
+                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_55_.toInt()]!![i_58_]) && (WorldMapToggle.anIntArray3873!![i_57_] <= (class277_54_.anInt3564))) {
                                         Class348_Sub15.anIntArray6775!![i_57_] = (class277_54_.anInt3563)
                                         Class348_Sub40_Sub38.anIntArray9480!![i_57_] = i_59_
                                         ProjectileFactory.anIntArray2899!![i_57_] = (class277_54_.anInt3575)
                                         Class348_Sub6.anIntArray6631!![i_57_] = (class277_54_.anInt3570)
-                                        if (class277_54_.anInt3564 == Class306.anIntArray3873!![i_57_]) HintIconState.anIntArray2370!![i_57_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_57_]), 4))
+                                        if (class277_54_.anInt3564 == WorldMapToggle.anIntArray3873!![i_57_]) HintIconState.anIntArray2370!![i_57_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_57_]), 4))
                                         else HintIconState.anIntArray2370!![i_57_] = 4
-                                        Class306.anIntArray3873!![i_57_] = (class277_54_.anInt3564)
+                                        WorldMapToggle.anIntArray3873!![i_57_] = (class277_54_.anInt3564)
                                     }
                                     i_58_++
                                     i_57_--
@@ -246,14 +246,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 if (!locTypeConfig.aBoolean3560) break
                 for (i_62_ in 0..7) {
                     val i_63_ = -(i_4_ * 2) + i_62_ and 0x7
-                    if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_7_]!![i_62_] && (Class306.anIntArray3873!![i_63_] <= locTypeConfig.anInt3564)) {
+                    if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_7_]!![i_62_] && (WorldMapToggle.anIntArray3873!![i_63_] <= locTypeConfig.anInt3564)) {
                         Class348_Sub15.anIntArray6775!![i_63_] = locTypeConfig.anInt3563
                         Class348_Sub40_Sub38.anIntArray9480!![i_63_] = i_61_
                         ProjectileFactory.anIntArray2899!![i_63_] = locTypeConfig.anInt3575
                         Class348_Sub6.anIntArray6631!![i_63_] = locTypeConfig.anInt3570
-                        if (Class306.anIntArray3873!![i_63_] != locTypeConfig.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
+                        if (WorldMapToggle.anIntArray3873!![i_63_] != locTypeConfig.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
                         else HintIconState.anIntArray2370!![i_63_] = BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_63_]), 2)
-                        Class306.anIntArray3873!![i_63_] = locTypeConfig.anInt3564
+                        WorldMapToggle.anIntArray3873!![i_63_] = locTypeConfig.anInt3564
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
@@ -353,7 +353,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 i_77_ = (if (i_89_ <= i_88_) 0 else 1)
                             }
                             for (i_90_ in 0..12) {
-                                Class306.anIntArray3873!![i_90_] = -1
+                                WorldMapToggle.anIntArray3873!![i_90_] = -1
                                 HintIconState.anIntArray2370!![i_90_] = 1
                             }
                             val bools_91_: BooleanArray = (if (class277 == null || !class277.aBoolean3560) SplashImageLoadable.aBooleanArrayArray4693!![i_76_.toInt()] else (Class50_Sub1.aBooleanArrayArray5225!![i_76_.toInt()]))!!
@@ -361,7 +361,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                             var bool_92_ = (class277 != null && (class277.anInt3563 != class277.anInt3569))
                             if (!bool_92_) {
                                 for (i_93_ in 0..7) {
-                                    if (Class306.anIntArray3873!![i_93_] >= 0 && ((Class348_Sub15.anIntArray6775!![i_93_]) != (Class348_Sub40_Sub38.anIntArray9480!![i_93_]))) {
+                                    if (WorldMapToggle.anIntArray3873!![i_93_] >= 0 && ((Class348_Sub15.anIntArray6775!![i_93_]) != (Class348_Sub40_Sub38.anIntArray9480!![i_93_]))) {
                                         bool_92_ = true
                                         break
                                     }
@@ -540,7 +540,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                                     is_112_[i_103_] = ((var_terrainTile_64_!!.method3986(i_131_, i_132_, (-4).toByte())) - (var_terrainTile.method3986(i_131_, i_132_, 73.toByte())))
                                                 }
                                             }
-                                            if (i_121_ < 8 && ((Class306.anIntArray3873!![i_122_]) > (class277.anInt3564))) {
+                                            if (i_121_ < 8 && ((WorldMapToggle.anIntArray3873!![i_122_]) > (class277.anInt3564))) {
                                                 if (is_105_ != null) is_105_[i_103_] = (Class348_Sub40_Sub38.anIntArray9480!![i_122_])
                                                 is_110_[i_103_] = (Class348_Sub6.anIntArray6631!![i_122_])
                                                 is_109_[i_103_] = (ProjectileFactory.anIntArray2899!![i_122_])
@@ -657,7 +657,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                                     is_112_[i_103_] = ((var_terrainTile_64_!!.method3986(i_151_, i_152_, (-102).toByte())) - (var_terrainTile.method3986(i_151_, i_152_, 106.toByte())))
                                                 }
                                             }
-                                            if (i_141_ < 8 && (Class306.anIntArray3873!![i_142_]) >= 0) {
+                                            if (i_141_ < 8 && (WorldMapToggle.anIntArray3873!![i_142_]) >= 0) {
                                                 if (is_105_ != null) is_105_[i_103_] = (Class348_Sub40_Sub38.anIntArray9480!![i_142_])
                                                 is_110_[i_103_] = (Class348_Sub6.anIntArray6631!![i_142_])
                                                 is_109_[i_103_] = (ProjectileFactory.anIntArray2899!![i_142_])

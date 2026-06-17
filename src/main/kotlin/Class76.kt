@@ -85,7 +85,7 @@ class Class76 internal constructor(bool: Boolean) {
             var i_4_ = i_4_
             var i_5_ = i_5_
             anInt1281++
-            if (i_3_ > Class306.anInt3872) i_3_ = Class306.anInt3872
+            if (i_3_ > WorldMapToggle.anInt3872) i_3_ = WorldMapToggle.anInt3872
             if (i_4_ < 0) i_4_ = 0
             if (i_0_.toInt() != -25) anInt1288 = -32
             if (i_4_ >= i_3_) return true

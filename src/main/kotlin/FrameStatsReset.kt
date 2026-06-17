@@ -1473,7 +1473,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5450 = 0
             ScrollTexMaterialPass.anInt6279 = 0
             Class44.anInt623 = 0
-            Class306.anInt3875 = 0
+            WorldMapToggle.anInt3875 = 0
             Class318_Sub1_Sub5.anInt8776 = 0
             Class348_Sub40_Sub30.anInt9384 = 0
             Class50_Sub4.anInt5256 = 0
@@ -2124,7 +2124,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub49.anInt7143 = 0
             Class318_Sub1_Sub1_Sub2.anInt9995 = 0
             Client.anInt5172 = 0
-            Class306.anInt3874 = 0
+            WorldMapToggle.anInt3874 = 0
             Class97.anInt1557 = 0
             GlTextureBase.anInt5100 = 0
             OpenGlRenderNode.anInt10490 = 0
@@ -3542,7 +3542,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub36.anInt9454 = 0
             Class311.anInt3905 = 0
             Class348_Sub1_Sub1.anInt8804 = 0
-            Class306.anInt3876 = 0
+            WorldMapToggle.anInt3876 = 0
             NativeRenderer.anInt7928 = 0
             ScriptCompilerThread.anInt1736 = 0
             Class348_Sub23.anInt6864 = 0

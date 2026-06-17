@@ -66,7 +66,7 @@ object DebugOverlayRenderer {
                     val i_6_ = f.toInt()
                     GlTextureBase.anIntArray5091!![i_5_] = i_6_ or (i_6_ shl 8) or (i_6_ shl 16) or 0xffffff.inv()
                 }
-                val class105 = Class9.aRenderer171!!.method3662(Class306.anInt3872, GlTextureBase.anIntArray5091, 94.toByte(), 0, Class306.anInt3872, Class86.anInt1480)
+                val class105 = Class9.aRenderer171!!.method3662(WorldMapToggle.anInt3872, GlTextureBase.anIntArray5091, 94.toByte(), 0, WorldMapToggle.anInt3872, Class86.anInt1480)
                 class105.method964(i, 170, 1, 0, 0)
             }
         }

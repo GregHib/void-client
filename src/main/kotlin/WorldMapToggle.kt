@@ -2,7 +2,10 @@ import BrightnessOptionState.Companion.method1745
 import WaterMaterialPass.Companion.method2148
 import java.awt.Canvas
 
-object Class306 {
+/*
+ * Class306
+ */
+object WorldMapToggle {
     @JvmField
     var anInt3872: Int = -1
     var anIntArray3873: IntArray? = IntArray(13)

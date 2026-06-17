@@ -801,7 +801,7 @@ class Client : GameAppletFrame() {
         method1040(i + 404)
         method2251(16711680)
         method1261(108.toByte())
-        Class306.method2299((-128).toByte())
+        WorldMapToggle.method2299((-128).toByte())
         method4010(-3)
         method883(66.toByte())
         Class348_Sub42_Sub16_Sub2.method3264((-24).toByte())

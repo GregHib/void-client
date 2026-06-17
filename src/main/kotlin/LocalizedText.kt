@@ -242,7 +242,7 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
             GlTextureBase.anIntArray5091 = null
             Class348_Sub42_Sub19.aClass338Array9700 = null
             Class86.anInt1480 = -1
-            Class306.anInt3872 = Class86.anInt1480
+            WorldMapToggle.anInt3872 = Class86.anInt1480
         }
 
         init {

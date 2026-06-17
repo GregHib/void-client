@@ -500,7 +500,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 var class79 = (npc.aClass79_10505)
                                 if (class79!!.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!), -1))
                                 if (class79 != null) {
-                                    Class306.anInt3874++
+                                    WorldMapToggle.anInt3874++
                                     val class348_sub47 = (method2148(Class318_Sub7.aClass351_6443, Class348_Sub23_Sub2.aClass77_9029, -111))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), class79.anInt1344)
                                     Class348_Sub42_Sub14.method3243(-99, class348_sub47)

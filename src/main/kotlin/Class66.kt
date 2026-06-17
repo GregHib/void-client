@@ -4301,7 +4301,7 @@ object Class66 {
                 }
                 if (i == 3617) {
                     val string = aStringArray1152!![--anInt1170]!!
-                    Class306.method2298((-117).toByte(), string)
+                    WorldMapToggle.method2298((-117).toByte(), string)
                     return
                 }
                 if (i == 3618) {
