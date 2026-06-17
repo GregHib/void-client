@@ -175,7 +175,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             Class373_Sub2.anInt7429 = class45.method417("timerbar_default", 0)
             Renderer.anInt4562 = class45.method417("headicons_pk", 0)
             Class82.anInt1435 = class45.method417("headicons_prayer", 0)
-            Class115.anInt1756 = class45.method417("hint_headicons", 0)
+            OverlayColorTable.anInt1756 = class45.method417("hint_headicons", 0)
             Class291.anInt3739 = class45.method417("hint_mapmarkers", 0)
             Class86.anInt1481 = class45.method417("mapflag", 0)
             Class239_Sub10.anInt5948 = class45.method417("cross", 0)

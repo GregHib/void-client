@@ -203,7 +203,7 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                                     if (i_20_ == -4) {
                                         if (i_10_ == i_3_ && i_2_ == i_11_) {
                                             Class348_Sub40_Sub30.anInt9388 = i_10_
-                                            Class115.anInt1753 = i_11_
+                                            OverlayColorTable.anInt1753 = i_11_
                                             return true
                                         }
                                         break@while_85_
@@ -217,7 +217,7 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                                         break@while_82_
                                     }
                                     if (method1842(i_5_, i_2_, -1, 2, i_10_, i_11_, i_3_, 2, i_6_)) {
-                                        Class115.anInt1753 = i_11_
+                                        OverlayColorTable.anInt1753 = i_11_
                                         Class348_Sub40_Sub30.anInt9388 = i_10_
                                         return true
                                     }
@@ -225,28 +225,28 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                                 } while (false)
                                 if (class361.method3497(-28388, i_3_, i_7_, 2, i_6_, i_10_, 2, i_11_, i_2_, i_5_)) {
                                     Class348_Sub40_Sub30.anInt9388 = i_10_
-                                    Class115.anInt1753 = i_11_
+                                    OverlayColorTable.anInt1753 = i_11_
                                     return true
                                 }
                                 break@while_85_
                             } while (false)
                             if (class361.method3503(i_10_, (-82).toByte(), i_2_, 2, i_6_, i_5_, i_7_, i_11_, i_3_)) {
                                 Class348_Sub40_Sub30.anInt9388 = i_10_
-                                Class115.anInt1753 = i_11_
+                                OverlayColorTable.anInt1753 = i_11_
                                 return true
                             }
                             break@while_85_
                         } while (false)
                         if (class361.method3495(i_3_, i_11_, 2, i_9_, i_10_, i_2_, i, -53)) {
                             Class348_Sub40_Sub30.anInt9388 = i_10_
-                            Class115.anInt1753 = i_11_
+                            OverlayColorTable.anInt1753 = i_11_
                             return true
                         }
                         break@while_85_
                     } while (false)
                     if (class361.method3504(i_2_, i_11_, i_3_, i_10_, i, 1, i_9_, 2)) {
                         Class348_Sub40_Sub30.anInt9388 = i_10_
-                        Class115.anInt1753 = i_11_
+                        OverlayColorTable.anInt1753 = i_11_
                         return true
                     }
                 } while (false)
@@ -309,7 +309,7 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 }
             }
             Class348_Sub40_Sub30.anInt9388 = i_10_
-            Class115.anInt1753 = i_11_
+            OverlayColorTable.anInt1753 = i_11_
             return false
         }
 

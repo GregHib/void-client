@@ -4040,7 +4040,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 var i_447_ = i_440_ + i - -Class369.aClass143_4962!!.anInt1993
                 if (Class348_Sub40_Sub31.anInt9408 == 0) {
                     var i_448_ = 16776960
-                    if (Class309.anIntArray4817!![i_438_] < 6) i_448_ = (Class115.anIntArray1757!![Class309.anIntArray4817!![i_438_]])
+                    if (Class309.anIntArray4817!![i_438_] < 6) i_448_ = (OverlayColorTable.anIntArray1757!![Class309.anIntArray4817!![i_438_]])
                     if (Class309.anIntArray4817!![i_438_] == 6) i_448_ = (if (Class239_Sub15.anInt6006 % 20 >= 10) 16776960 else 16711680)
                     if (Class309.anIntArray4817!![i_438_] == 7) i_448_ = if (Class239_Sub15.anInt6006 % 20 < 10) 255 else 65535
                     if (Class309.anIntArray4817!![i_438_] == 8) i_448_ = (if (Class239_Sub15.anInt6006 % 20 >= 10) 8454016 else 45056)

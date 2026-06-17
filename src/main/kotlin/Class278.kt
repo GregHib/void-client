@@ -1,4 +1,4 @@
-import Class115.method1060
+import OverlayColorTable.method1060
 import Class253.Companion.method1920
 
 /* Class278 - Decompiled by JODE

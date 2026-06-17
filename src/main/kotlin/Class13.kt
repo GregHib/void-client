@@ -50,7 +50,7 @@ object Class13 {
                 else if (i_8_ - i_7_ == 1) Class319.aClass315Array3982!![Class75_Sub1.anInt5652 + i_7_]!!.method2353(class318_sub1, false)
                 else Class319.aClass315Array3982!![Class319.aClass315Array3982!!.size - 1]!!.method2353(class318_sub1, false)
             }
-        } else Class38.method365(class318_sub1, Class115.aClass348_Sub1Array1752)
+        } else Class38.method365(class318_sub1, OverlayColorTable.aClass348_Sub1Array1752)
     }
 
     init {

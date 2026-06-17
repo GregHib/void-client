@@ -112,8 +112,8 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                         Class348_Sub16_Sub2.aBoolean8870 = true
                     }
                 } else {
-                    class318_sub1_sub2.aClass318_Sub1_6379 = Class115.aClass318_Sub1Array1754!![i_3_]
-                    Class115.aClass318_Sub1Array1754!![i_3_] = class318_sub1_sub2
+                    class318_sub1_sub2.aClass318_Sub1_6379 = OverlayColorTable.aClass318_Sub1Array1754!![i_3_]
+                    OverlayColorTable.aClass318_Sub1Array1754!![i_3_] = class318_sub1_sub2
                 }
             }
         }

@@ -134,7 +134,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             method1879(false)
             aClass318_Sub1Array4293 = arrayOfNulls<Class318_Sub1>(2)
             Class250.aClass318_Sub1Array3226 = arrayOfNulls<Class318_Sub1>(2)
-            Class115.aClass318_Sub1Array1754 = arrayOfNulls<Class318_Sub1>(2)
+            OverlayColorTable.aClass318_Sub1Array1754 = arrayOfNulls<Class318_Sub1>(2)
             Class239_Sub21.aClass318_Sub1Array6066 = arrayOfNulls<Class318_Sub1>(10000)
             Class5_Sub1_Sub1.anInt9930 = 0
             Class291.aClass318_Sub1Array3737 = arrayOfNulls<Class318_Sub1>(5000)
@@ -146,7 +146,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
             Class171.anIntArray2272 = IntArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2))
             Class71.aClass76_1208 = Class71.aClass76_1210
             if (Class348_Sub40_Sub5.aBoolean9121) {
-                Class115.aBooleanArrayArrayArray1751 = (Array<Array<BooleanArray?>?>(i_1_) { Array<BooleanArray?>((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) { BooleanArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) } })
+                OverlayColorTable.aBooleanArrayArrayArray1751 = (Array<Array<BooleanArray?>?>(i_1_) { Array<BooleanArray?>((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) { BooleanArray((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)) } })
                 Class5_Sub2.aBooleanArrayArrayArray8361 = arrayOfNulls<Array<BooleanArray?>>(i_1_)
                 if (Class348_Sub40_Sub34.aClass293Array9432 != null) method1978()
                 Class348_Sub40_Sub34.aClass293Array9432 = arrayOfNulls<Class293>(Npc.anInt10503)

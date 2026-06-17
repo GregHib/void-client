@@ -292,7 +292,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                         i++
                     }
                 }
-                class207s = Class207.method1519(class45, Class115.anInt1756, 0)
+                class207s = Class207.method1519(class45, OverlayColorTable.anInt1756, 0)
                 Class239_Sub9.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
                 for (i in class207s.indices) Class239_Sub9.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(class207s[i], true)
                 class207s = Class207.method1519(class45, Class291.anInt3739, 0)

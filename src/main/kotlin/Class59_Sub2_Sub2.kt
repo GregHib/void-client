@@ -137,7 +137,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 val i_30_ = i_20_ - 64
                 val i_31_ = i_21_ + -64
                 var i_32_ = Class348_Sub40_Sub30.anInt9388
-                var i_33_ = Class115.anInt1753
+                var i_33_ = OverlayColorTable.anInt1753
                 if (!bool_29_) {
                     if (!bool) return -1
                     var i_34_ = 2147483647

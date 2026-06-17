@@ -102,11 +102,11 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
                         class318_sub1_2_ = (class318_sub1_2_.aClass318_Sub1_6379)
                     }
                     class318_sub1_0_ = null
-                    var class318_sub1_3_: Class318_Sub1? = Class115.aClass318_Sub1Array1754!![i]
+                    var class318_sub1_3_: Class318_Sub1? = OverlayColorTable.aClass318_Sub1Array1754!![i]
                     while (class318_sub1_3_ != null) {
                         if (class318_sub1_3_ === class318_sub1) {
                             if (class318_sub1_0_ != null) class318_sub1_0_.aClass318_Sub1_6379 = (class318_sub1_3_.aClass318_Sub1_6379)
-                            else Class115.aClass318_Sub1Array1754!![i] = (class318_sub1_3_.aClass318_Sub1_6379!!)
+                            else OverlayColorTable.aClass318_Sub1Array1754!![i] = (class318_sub1_3_.aClass318_Sub1_6379!!)
                             Class348_Sub16_Sub2.aBoolean8870 = true
                             return
                         }

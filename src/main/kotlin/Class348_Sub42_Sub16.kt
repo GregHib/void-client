@@ -67,8 +67,8 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
                         Class348_Sub16_Sub2.aBoolean8870 = true
                     }
                 } else {
-                    class318_sub1_sub4.aClass318_Sub1_6379 = Class115.aClass318_Sub1Array1754!![i_5_]
-                    Class115.aClass318_Sub1Array1754!![i_5_] = class318_sub1_sub4
+                    class318_sub1_sub4.aClass318_Sub1_6379 = OverlayColorTable.aClass318_Sub1Array1754!![i_5_]
+                    OverlayColorTable.aClass318_Sub1Array1754!![i_5_] = class318_sub1_sub4
                 }
                 if (class318_sub1_sub4_4_ != null) {
                     if (class318_sub1_sub4_4_.method2376(-118)) {
@@ -81,8 +81,8 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
                             Class348_Sub16_Sub2.aBoolean8870 = true
                         }
                     } else {
-                        class318_sub1_sub4_4_.aClass318_Sub1_6379 = Class115.aClass318_Sub1Array1754!![i_5_]
-                        Class115.aClass318_Sub1Array1754!![i_5_] = class318_sub1_sub4_4_
+                        class318_sub1_sub4_4_.aClass318_Sub1_6379 = OverlayColorTable.aClass318_Sub1Array1754!![i_5_]
+                        OverlayColorTable.aClass318_Sub1Array1754!![i_5_] = class318_sub1_sub4_4_
                     }
                 }
             }

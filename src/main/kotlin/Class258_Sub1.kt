@@ -175,13 +175,13 @@ class Class258_Sub1 : Class258 {
             }
             Class348_Sub49_Sub1.method3398(false, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)
             if (Class348_Sub40_Sub5.aBoolean9121) {
-                for (i_46_ in 0..<Class189.anInt2524) Class5_Sub2.aBooleanArrayArrayArray8361!![i_46_] = Class115.aBooleanArrayArrayArray1751!![i_46_]
+                for (i_46_ in 0..<Class189.anInt2524) Class5_Sub2.aBooleanArrayArrayArray8361!![i_46_] = OverlayColorTable.aBooleanArrayArrayArray1751!![i_46_]
                 method2131(0)
                 for (i_47_ in Class348_Sub40_Sub34.aClass293Array9432!!.indices) Class348_Sub40_Sub34.aClass293Array9432!![i_47_]!!.method2209()
             }
             if (Class348_Sub40_Sub5.aBoolean9121) {
                 Class304.method2290()
-                for (i_48_ in 0..<Class189.anInt2524) Class115.aBooleanArrayArrayArray1751!![i_48_] = Class5_Sub2.aBooleanArrayArrayArray8361!![i_48_]!!
+                for (i_48_ in 0..<Class189.anInt2524) OverlayColorTable.aBooleanArrayArrayArray1751!![i_48_] = Class5_Sub2.aBooleanArrayArrayArray8361!![i_48_]!!
                 if (Npc.anInt10503 == 2) {
                     if (Class146.aLongArray2013!![0] < Class146.aLongArray2013!![1]) {
                         if (Class17.anIntArray256!![0] + Class345.anIntArray4271!![0] > Class348_Sub40_Sub10.anIntArray9183!![0]) Class345.anIntArray4271!![0]++

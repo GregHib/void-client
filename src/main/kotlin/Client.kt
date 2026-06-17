@@ -20,7 +20,7 @@ import AbstractMenuEntry.Companion.method1030
 import MapLabelMenuEntry.Companion.method1040
 import CollisionMapRegion.Companion.method1047
 import CameraNodeList.Companion.method1057
-import Class115.method1061
+import OverlayColorTable.method1061
 import Class116.method1062
 import Class117.Companion.method1064
 import Class118.Companion.method1075

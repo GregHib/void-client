@@ -3212,7 +3212,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class64_Sub2.anInt5479 = 0
             Class318_Sub1_Sub3_Sub1.anInt10020 = 0
             Class208.anInt2710 = 0
-            Class115.anInt1755 = 0
+            OverlayColorTable.anInt1755 = 0
             Class348_Sub6.anInt6639 = 0
             Class181.anInt2409 = 0
             Class239_Sub21.anInt6068 = 0

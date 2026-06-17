@@ -87,7 +87,7 @@ class Class189 {
                                     if (i_25_ == -4) {
                                         if (i_15_ == i_9_ && (i_16_ == i_14_)) {
                                             Class348_Sub40_Sub30.anInt9388 = i_15_
-                                            Class115.anInt1753 = i_16_
+                                            OverlayColorTable.anInt1753 = i_16_
                                             return true
                                         }
                                         break@while_48_
@@ -101,7 +101,7 @@ class Class189 {
                                         break@while_45_
                                     }
                                     if (method1842(i, i_14_, -1, i_12_, i_15_, i_16_, i_9_, i_12_, i_8_)) {
-                                        Class115.anInt1753 = i_16_
+                                        OverlayColorTable.anInt1753 = i_16_
                                         Class348_Sub40_Sub30.anInt9388 = i_15_
                                         return true
                                     }
@@ -109,27 +109,27 @@ class Class189 {
                                 } while (false)
                                 if (class361.method3497(-28388, i_9_, i_11_, i_12_, i_8_, i_15_, i_12_, i_16_, i_14_, i)) {
                                     Class348_Sub40_Sub30.anInt9388 = i_15_
-                                    Class115.anInt1753 = i_16_
+                                    OverlayColorTable.anInt1753 = i_16_
                                     return true
                                 }
                                 break@while_48_
                             } while (false)
                             if (class361.method3503(i_15_, (-98).toByte(), i_14_, i_12_, i_8_, i, i_11_, i_16_, i_9_)) {
                                 Class348_Sub40_Sub30.anInt9388 = i_15_
-                                Class115.anInt1753 = i_16_
+                                OverlayColorTable.anInt1753 = i_16_
                                 return true
                             }
                             break@while_48_
                         } while (false)
                         if (class361.method3495(i_9_, i_16_, i_12_, i_5_, i_15_, i_14_, i_13_, -71)) {
                             Class348_Sub40_Sub30.anInt9388 = i_15_
-                            Class115.anInt1753 = i_16_
+                            OverlayColorTable.anInt1753 = i_16_
                             return true
                         }
                         break@while_48_
                     } while (false)
                     if (class361.method3504(i_14_, i_16_, i_9_, i_15_, i_13_, 1, i_5_, i_12_)) {
-                        Class115.anInt1753 = i_16_
+                        OverlayColorTable.anInt1753 = i_16_
                         Class348_Sub40_Sub30.anInt9388 = i_15_
                         return true
                     }
@@ -244,7 +244,7 @@ class Class189 {
                     Class223.anIntArrayArray2900!![i_17_ + 1]!![i_18_ - -1] = i_25_
                 }
             }
-            Class115.anInt1753 = i_16_
+            OverlayColorTable.anInt1753 = i_16_
             Class348_Sub40_Sub30.anInt9388 = i_15_
             return false
         }

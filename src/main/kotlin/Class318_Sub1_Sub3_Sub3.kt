@@ -852,7 +852,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class99.aBooleanArrayArray1572 = null
             Class348_Sub8.aBooleanArrayArray6656 = null
             Class171.anIntArray2272 = null
-            Class115.aBooleanArrayArrayArray1751 = null
+            OverlayColorTable.aBooleanArrayArrayArray1751 = null
             Class5_Sub2.aBooleanArrayArrayArray8361 = null
             Class274.method2062(89.toByte())
             if (Class24.aClass318_Sub1_Sub3Array357 != null) {
@@ -861,7 +861,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             }
             Class348.aClass318_Sub1Array4293 = null
             Class250.aClass318_Sub1Array3226 = null
-            Class115.aClass318_Sub1Array1754 = null
+            OverlayColorTable.aClass318_Sub1Array1754 = null
             if (Class239_Sub21.aClass318_Sub1Array6066 != null) {
                 for (i in Class239_Sub21.aClass318_Sub1Array6066!!.indices) Class239_Sub21.aClass318_Sub1Array6066!![i] = null
                 Class5_Sub1_Sub1.anInt9930 = 0

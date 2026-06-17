@@ -109,8 +109,8 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                         Class348_Sub16_Sub2.aBoolean8870 = true
                     }
                 } else {
-                    class318_sub1_sub3.aClass318_Sub1_6379 = Class115.aClass318_Sub1Array1754!![i_22_]
-                    Class115.aClass318_Sub1Array1754!![i_22_] = class318_sub1_sub3
+                    class318_sub1_sub3.aClass318_Sub1_6379 = OverlayColorTable.aClass318_Sub1Array1754!![i_22_]
+                    OverlayColorTable.aClass318_Sub1Array1754!![i_22_] = class318_sub1_sub3
                 }
             }
             if (bool) class318_sub1_sub3.anInt6382 -= i_16_.toInt()
