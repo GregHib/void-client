@@ -176,7 +176,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         if (!RenderNode.aBoolean9722 || (0x40 and Class38.anInt500) == 0) {
                             if (ObjectSpawnDecoder.aBoolean1801) Class50_Sub3.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(Class348_Sub33.anInt6967, 544)), 0L, -1)
                             Class352.anInt4334++
-                            Class50_Sub3.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, Class333.anInt4144)
+                            Class50_Sub3.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, MapElementLookup.anInt4144)
                         } else {
                             val class46 = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                             if (class46 == null) Class341.method2678(-2049)

@@ -1,7 +1,7 @@
 /* Class333 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class333 {
+class MapElementLookup {
     private var aClass356_4146: Class356? = null
     private var anInt4148 = 0
     private var aClass348_4150: Class348? = null

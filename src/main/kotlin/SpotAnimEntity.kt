@@ -290,7 +290,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                 Class43.aClass45_611 = class45
                 Class367_Sub9.aClass45_7371 = class45_6_
-                Class333.aClass45_4147 = class45_5_
+                MapElementLookup.aClass45_4147 = class45_5_
                 Class367_Sub3.anIntArray7299 = IntArray(16)
                 if (bool != false) anInt6451 = 71
                 anInt6442++

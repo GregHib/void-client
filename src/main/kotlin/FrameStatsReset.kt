@@ -1413,7 +1413,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TypedRecordTable.anInt3692 = 0
             Font.anInt4045 = 0
             Class348_Sub49.anInt7178 = 0
-            Class333.anInt4149 = 0
+            MapElementLookup.anInt4149 = 0
             Client.anInt5173 = 0
             ItemNameResolver.anInt4996 = 0
             NpcSummaryDefinition.anInt1955 = 0
@@ -1601,7 +1601,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub8.anInt7351 = 0
             Class367_Sub4.anInt7322 = 0
             Class348_Sub40_Sub16.anInt9222 = 0
-            Class333.anInt4145 = 0
+            MapElementLookup.anInt4145 = 0
             Class90.anInt1515 = 0
             GlElementArrayBuffer.anInt4836 = 0
             ScreenBorderFiller.anInt1957 = 0

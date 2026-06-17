@@ -47,18 +47,18 @@ class ScrollingWidgetComponentNode internal constructor(class45: Class45?, class
                 if (class46 != null) ConfigFlagUtil.method1916(-9343, class46)
                 Class348_Sub42_Sub17.method3270(119.toByte())
                 if (!bool_2_ && RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 1)
-                val class333 = Class333(MinimapSpriteRenderer.Companion.aClass356_4915!!)
-                var class348_sub41_5_ = class333.method2644(123.toByte()) as? Class348_Sub41?
+                val mapElementLookup = MapElementLookup(MinimapSpriteRenderer.Companion.aClass356_4915!!)
+                var class348_sub41_5_ = mapElementLookup.method2644(123.toByte()) as? Class348_Sub41?
                 while (class348_sub41_5_ != null) {
                     if (!class348_sub41_5_.method2712(4.toByte())) {
-                        class348_sub41_5_ = class333.method2644(123.toByte()) as? Class348_Sub41?
+                        class348_sub41_5_ = mapElementLookup.method2644(123.toByte()) as? Class348_Sub41?
                         if (class348_sub41_5_ == null) break
                     }
                     if (class348_sub41_5_.anInt7053 == 3) {
                         val i_6_ = class348_sub41_5_.aLong4291.toInt()
                         if (i_3_ == i_6_ ushr 16) method1118(true, bool_2_, class348_sub41_5_, 2533)
                     }
-                    class348_sub41_5_ = class333.method2646(99.toByte()) as? Class348_Sub41?
+                    class348_sub41_5_ = mapElementLookup.method2646(99.toByte()) as? Class348_Sub41?
                 }
             }
         }

@@ -556,7 +556,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         }
                                         i_102_++
                                     }
-                                    if (!this.aBoolean3109 && i_66_ == 0) Class333.method2643(i_71_, i_73_, class277.anInt3559, 8 * (class277.anInt3558), class277.anInt3574)
+                                    if (!this.aBoolean3109 && i_66_ == 0) MapElementLookup.method2643(i_71_, i_73_, class277.anInt3559, 8 * (class277.anInt3558), class277.anInt3574)
                                     if (i_76_.toInt() != 12 && (class277.anInt3563 != -1) && class277.aBoolean3566) bool = true
                                 } else if (bool_94_) i_102_ += (Class348_Sub40_Sub18.anIntArray9249!![i_76_.toInt()])
                                 else if (!bool_75_) i_102_ += Class334.anIntArray4152!![i_76_.toInt()]
@@ -1042,7 +1042,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         i_235_++
                                         i_244_++
                                     }
-                                    if (!this.aBoolean3109 && i == 0) Class333.method2643(i_226_, i_227_, class277.anInt3559, (class277.anInt3558 * 8), class277.anInt3574)
+                                    if (!this.aBoolean3109 && i == 0) MapElementLookup.method2643(i_226_, i_227_, class277.anInt3559, (class277.anInt3558 * 8), class277.anInt3574)
                                 }
                                 if (!bool) is_239_ = null
                                 if (class22 == null) {
@@ -1356,11 +1356,11 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
             anInt3110++
             if (class46.anInt834 != -1) return method2570(1512932720, class46.anInt834)
             val i_309_ = class46.anInt830 ushr 16
-            val class333 = Class333(MinimapSpriteRenderer.aClass356_4915!!)
-            var class348_sub41 = class333.method2644(123.toByte()) as Class348_Sub41?
+            val mapElementLookup = MapElementLookup(MinimapSpriteRenderer.aClass356_4915!!)
+            var class348_sub41 = mapElementLookup.method2644(123.toByte()) as Class348_Sub41?
             while (class348_sub41 != null) {
                 if (i_309_ == class348_sub41.anInt7050) return method2570(1512932720, (class348_sub41.aLong4291).toInt())
-                class348_sub41 = class333.method2646(117.toByte()) as Class348_Sub41?
+                class348_sub41 = mapElementLookup.method2646(117.toByte()) as Class348_Sub41?
             }
             return null
         }

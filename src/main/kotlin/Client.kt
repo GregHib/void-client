@@ -276,7 +276,7 @@ import PolygonFiller.method2621
 import VideoStreamDecoder.Companion.method2631
 import CalendarUtil.method2637
 import SoundCacheState.method2640
-import Class333.Companion.method2645
+import MapElementLookup.Companion.method2645
 import Class334.Companion.method2653
 import Class334.Companion.method2654
 import Class336.method2657
@@ -2202,7 +2202,7 @@ class Client : GameAppletFrame() {
                                                     else method2678(-2049)
                                                 } else {
                                                     if ((Class348_Sub42_Sub8_Sub2.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) Class50_Sub3.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (LocalizedText.aLocalizedText_3510!!.method2063((Class348_Sub33.anInt6967), 544)), 1L, -1)
-                                                    Class50_Sub3.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, LightingOptionState.aString5882, 1L, Class333.anInt4144)
+                                                    Class50_Sub3.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, LightingOptionState.aString5882, 1L, MapElementLookup.anInt4144)
                                                 }
                                             }
                                         }
