@@ -567,7 +567,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 }
                 if (-1 + Class286_Sub1.aStringArray6200!!.size > Class369_Sub2.anInt8587) {
                     Class369_Sub2.anInt8587++
-                    if (Class284.anInt3676 > 0) Class284.anInt3676++
+                    if (ViewportTransform.anInt3676 > 0) ViewportTransform.anInt3676++
                 }
             }
         }

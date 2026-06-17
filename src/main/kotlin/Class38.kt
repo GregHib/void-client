@@ -136,10 +136,10 @@ class Class38 {
                 MinimapFlagRenderer.anInt1794 = -1
             }
             if (Class98.anInt1565 != 0) {
-                Class284.anInt3676 -= Class98.anInt1565 * 5
-                if (Class284.anInt3676 >= Class369_Sub2.anInt8587) Class284.anInt3676 = -1 + Class369_Sub2.anInt8587
+                ViewportTransform.anInt3676 -= Class98.anInt1565 * 5
+                if (ViewportTransform.anInt3676 >= Class369_Sub2.anInt8587) ViewportTransform.anInt3676 = -1 + Class369_Sub2.anInt8587
                 Class98.anInt1565 = 0
-                if (Class284.anInt3676 < 0) Class284.anInt3676 = 0
+                if (ViewportTransform.anInt3676 < 0) ViewportTransform.anInt3676 = 0
             }
             if (i >= 124) {
                 var i_6_ = 0

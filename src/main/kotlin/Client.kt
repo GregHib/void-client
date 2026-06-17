@@ -199,7 +199,7 @@ import ClanChatRequestSender.method2107
 import NpcEntityUpdater.method2111
 import DataHolder.Companion.method2113
 import DataHolder.Companion.method2114
-import Class284.Companion.method2117
+import ViewportTransform.Companion.method2117
 import Class285.Companion.method2124
 import Class285_Sub2.Companion.method2132
 import Class286.Companion.method2135

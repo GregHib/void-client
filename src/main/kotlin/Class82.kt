@@ -70,7 +70,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         return
                     }
                     if (string.equals("cls", ignoreCase = true)) {
-                        Class284.anInt3676 = 0
+                        ViewportTransform.anInt3676 = 0
                         Class369_Sub2.anInt8587 = 0
                         return
                     }
@@ -519,7 +519,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string == "profilecpu") {
-                            method94((Class284.method2116(-26584).toString() + "ms"), 87)
+                            method94((ViewportTransform.method2116(-26584).toString() + "ms"), 87)
                             return
                         }
                         if (string.startsWith("getclientvarpbit")) {

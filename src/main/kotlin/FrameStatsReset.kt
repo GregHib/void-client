@@ -933,7 +933,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7950 = 0
             Class346_Sub1.anInt6535 = 0
             FrameBufferObject.anInt4892 = 0
-            Class284.anInt3674 = 0
+            ViewportTransform.anInt3674 = 0
             Class318_Sub1_Sub1_Sub1.anInt9968 = 0
             CollisionMapRegion.anInt1716 = 0
             Class348_Sub49_Sub2.anInt9753 = 0
@@ -1913,7 +1913,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BufferPositionTracker.anInt3148 = 0
             Npc.anInt10502 = 0
             Class348_Sub46.anInt7109 = 0
-            Class284.anInt3665 = 0
+            ViewportTransform.anInt3665 = 0
             FontDefinition.anInt1984 = 0
             BrightnessOptionState.anInt5896 = 0
             NativeRenderer.anInt8015 = 0
@@ -2584,7 +2584,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RemoveRoofsOptionState.anInt6067 = 0
             Class318_Sub1_Sub3_Sub3.anInt10298 = 0
             Class318.anInt3973 = 0
-            Class284.anInt3664 = 0
+            ViewportTransform.anInt3664 = 0
             Client.anInt5179 = 0
             Class88.anInt1498 = 0
             Class348_Sub40_Sub21.anInt9272 = 0

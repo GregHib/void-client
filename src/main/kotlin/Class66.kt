@@ -4070,7 +4070,7 @@ object Class66 {
                     return
                 }
                 if (i == 3338) {
-                    anIntArray1149!![anInt1173++] = Class284.method2116(-26584)
+                    anIntArray1149!![anInt1173++] = ViewportTransform.method2116(-26584)
                     return
                 }
                 if (i == 3339) {

@@ -160,16 +160,16 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                         val i_38_ = 342 + -Class68.anInt1188
                         val i_39_ = (i_37_ * i_38_ / (-1 + (i_37_ - -Class369_Sub2.anInt8587)))
                         var i_40_ = 4
-                        if (Class369_Sub2.anInt8587 > 1) i_40_ += ((Class369_Sub2.anInt8587 + (-1 + -Class284.anInt3676)) * (i_38_ - i_39_) / (Class369_Sub2.anInt8587 + -1))
+                        if (Class369_Sub2.anInt8587 > 1) i_40_ += ((Class369_Sub2.anInt8587 + (-1 + -ViewportTransform.anInt3676)) * (i_38_ - i_39_) / (Class369_Sub2.anInt8587 + -1))
                         var_renderer.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 2)
-                        var i_41_ = Class284.anInt3676
-                        while (((i_41_ < i_37_ + Class284.anInt3676) && Class369_Sub2.anInt8587 > i_41_)) {
+                        var i_41_ = ViewportTransform.anInt3676
+                        while (((i_41_ < i_37_ + ViewportTransform.anInt3676) && Class369_Sub2.anInt8587 > i_41_)) {
                             val strings = (Class348_Sub40_Sub23.method3113('\u0008', true, Class286_Sub1.aStringArray6200!![i_41_]!!))
                             val i_42_ = (-16 + Class321.anInt4017 + -8) / strings.size
                             for (i_43_ in strings.indices) {
                                 val i_44_ = i_42_ * i_43_ + 8
                                 var_renderer.KA(i_35_ + i_44_, i_36_, i_42_ + i_35_ - (-i_44_ - -8), i_36_ + 350)
-                                GameAppletFrame.aClass324_20!!.method2576(BackgroundWorkerThread.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-Class284.anInt3676 + i_41_) * Class68.anInt1188) + (-Class348_Sub31_Sub2.anInt9077 + i_36_ - (-350 - (-2 + -(ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
+                                GameAppletFrame.aClass324_20!!.method2576(BackgroundWorkerThread.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-ViewportTransform.anInt3676 + i_41_) * Class68.anInt1188) + (-Class348_Sub31_Sub2.anInt9077 + i_36_ - (-350 - (-2 + -(ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
                             }
                             i_41_++
                         }

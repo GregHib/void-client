@@ -430,7 +430,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                 Class348_Sub40_Sub12.method3076(0, true)
                 i_6_ = 1
             } else {
-                val i_7_ = Class284.method2116(-26584)
+                val i_7_ = ViewportTransform.method2116(-26584)
                 if (i_7_ > 100) {
                     if (i_7_ <= 500) {
                         i_6_ = 3

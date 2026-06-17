@@ -192,16 +192,16 @@ class Class318_Sub9_Sub2_Sub1 internal constructor(var aClass318_Sub7_10419: Cla
             var d_28_ = aShort10422.toDouble()
             var bool = false
             if (class181.anInt2436 == 1) {
-                val i_29_ = i_20_ - this.aClass318_Sub7_10419.aClass284_6444.anInt3673
-                val i_30_ = i_21_ - this.aClass318_Sub7_10419.aClass284_6444.anInt3667
-                val i_31_ = i_22_ - this.aClass318_Sub7_10419.aClass284_6444.anInt3671
+                val i_29_ = i_20_ - this.aClass318_Sub7_10419.aViewportTransform_6444.anInt3673
+                val i_30_ = i_21_ - this.aClass318_Sub7_10419.aViewportTransform_6444.anInt3667
+                val i_31_ = i_22_ - this.aClass318_Sub7_10419.aViewportTransform_6444.anInt3671
                 val i_32_ = (sqrt((i_29_ * i_29_ + i_30_ * i_30_ + i_31_ * i_31_).toDouble()).toInt() shr 2)
                 val l_33_ = (class181.anInt2437 * i_32_ * i).toLong()
                 anInt10421 -= (anInt10421.toLong() * l_33_ shr 18).toInt()
             } else if (class181.anInt2436 == 2) {
-                val i_34_ = i_20_ - this.aClass318_Sub7_10419.aClass284_6444.anInt3673
-                val i_35_ = i_21_ - this.aClass318_Sub7_10419.aClass284_6444.anInt3667
-                val i_36_ = i_22_ - this.aClass318_Sub7_10419.aClass284_6444.anInt3671
+                val i_34_ = i_20_ - this.aClass318_Sub7_10419.aViewportTransform_6444.anInt3673
+                val i_35_ = i_21_ - this.aClass318_Sub7_10419.aViewportTransform_6444.anInt3667
+                val i_36_ = i_22_ - this.aClass318_Sub7_10419.aViewportTransform_6444.anInt3671
                 val i_37_ = i_34_ * i_34_ + i_35_ * i_35_ + i_36_ * i_36_
                 val l_38_ = (class181.anInt2437 * i_37_ * i).toLong()
                 anInt10421 -= (anInt10421.toLong() * l_38_ shr 28).toInt()

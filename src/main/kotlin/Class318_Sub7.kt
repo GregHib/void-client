@@ -17,10 +17,10 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
     var aModelFacePriorityNode_6436: ModelFacePriorityNode? = null
     var aClass318_Sub10_6439: Class318_Sub10? = null
     var aSpotAnimDefinition_6441: SpotAnimDefinition? = null
-    var aClass284_6444: Class284
+    var aViewportTransform_6444: ViewportTransform
     var aBoolean6446: Boolean = false
     var anInt6447: Int = 0
-    private var aClass284_6449: Class284
+    private var aViewportTransform_6449: ViewportTransform
     private var anInt6452 = 0
     private var aBoolean6453: Boolean
     private var anInt6454 = 0
@@ -31,30 +31,30 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
     private var anInt6459 = 0
 
     fun method2507(bool: Boolean) {
-        this.aClass284_6444.anInt3670 = this.aModelFacePriorityNode_6436!!.anInt1890
+        this.aViewportTransform_6444.anInt3670 = this.aModelFacePriorityNode_6436!!.anInt1890
         anInt6448++
-        this.aClass284_6444.anInt3666 = this.aModelFacePriorityNode_6436!!.anInt1889
-        this.aClass284_6444.anInt3668 = this.aModelFacePriorityNode_6436!!.anInt1883
-        this.aClass284_6444.anInt3669 = this.aModelFacePriorityNode_6436!!.anInt1874
-        this.aClass284_6444.anInt3680 = this.aModelFacePriorityNode_6436!!.anInt1876
-        this.aClass284_6444.anInt3679 = this.aModelFacePriorityNode_6436!!.anInt1880
-        this.aClass284_6444.anInt3678 = this.aModelFacePriorityNode_6436!!.anInt1891
-        this.aClass284_6444.anInt3672 = this.aModelFacePriorityNode_6436!!.anInt1884
+        this.aViewportTransform_6444.anInt3666 = this.aModelFacePriorityNode_6436!!.anInt1889
+        this.aViewportTransform_6444.anInt3668 = this.aModelFacePriorityNode_6436!!.anInt1883
+        this.aViewportTransform_6444.anInt3669 = this.aModelFacePriorityNode_6436!!.anInt1874
+        this.aViewportTransform_6444.anInt3680 = this.aModelFacePriorityNode_6436!!.anInt1876
+        this.aViewportTransform_6444.anInt3679 = this.aModelFacePriorityNode_6436!!.anInt1880
+        this.aViewportTransform_6444.anInt3678 = this.aModelFacePriorityNode_6436!!.anInt1891
+        this.aViewportTransform_6444.anInt3672 = this.aModelFacePriorityNode_6436!!.anInt1884
         if (bool == true) {
-            this.aClass284_6444.anInt3675 = this.aModelFacePriorityNode_6436!!.anInt1882
-            if ((this.aClass284_6444.anInt3675 == (this.aClass284_6444.anInt3668)) && ((this.aClass284_6444.anInt3680) == (this.aClass284_6444.anInt3668)) && ((this.aClass284_6444.anInt3670) == (this.aClass284_6444.anInt3678)) && ((this.aClass284_6444.anInt3669) == (this.aClass284_6444.anInt3670)) && ((this.aClass284_6444.anInt3679) == (this.aClass284_6444.anInt3666)) && ((this.aClass284_6444.anInt3679) == (this.aClass284_6444.anInt3672))) aBoolean6453 =
+            this.aViewportTransform_6444.anInt3675 = this.aModelFacePriorityNode_6436!!.anInt1882
+            if ((this.aViewportTransform_6444.anInt3675 == (this.aViewportTransform_6444.anInt3668)) && ((this.aViewportTransform_6444.anInt3680) == (this.aViewportTransform_6444.anInt3668)) && ((this.aViewportTransform_6444.anInt3670) == (this.aViewportTransform_6444.anInt3678)) && ((this.aViewportTransform_6444.anInt3669) == (this.aViewportTransform_6444.anInt3670)) && ((this.aViewportTransform_6444.anInt3679) == (this.aViewportTransform_6444.anInt3666)) && ((this.aViewportTransform_6444.anInt3679) == (this.aViewportTransform_6444.anInt3672))) aBoolean6453 =
                 true
             else if (aBoolean6453) {
-                aClass284_6449.anInt3678 = (this.aClass284_6444.anInt3678)
+                aViewportTransform_6449.anInt3678 = (this.aViewportTransform_6444.anInt3678)
                 aBoolean6453 = false
-                aClass284_6449.anInt3672 = (this.aClass284_6444.anInt3672)
-                aClass284_6449.anInt3666 = (this.aClass284_6444.anInt3666)
-                aClass284_6449.anInt3670 = (this.aClass284_6444.anInt3670)
-                aClass284_6449.anInt3668 = (this.aClass284_6444.anInt3668)
-                aClass284_6449.anInt3679 = (this.aClass284_6444.anInt3679)
-                aClass284_6449.anInt3675 = (this.aClass284_6444.anInt3675)
-                aClass284_6449.anInt3669 = (this.aClass284_6444.anInt3669)
-                aClass284_6449.anInt3680 = (this.aClass284_6444.anInt3680)
+                aViewportTransform_6449.anInt3672 = (this.aViewportTransform_6444.anInt3672)
+                aViewportTransform_6449.anInt3666 = (this.aViewportTransform_6444.anInt3666)
+                aViewportTransform_6449.anInt3670 = (this.aViewportTransform_6444.anInt3670)
+                aViewportTransform_6449.anInt3668 = (this.aViewportTransform_6444.anInt3668)
+                aViewportTransform_6449.anInt3679 = (this.aViewportTransform_6444.anInt3679)
+                aViewportTransform_6449.anInt3675 = (this.aViewportTransform_6444.anInt3675)
+                aViewportTransform_6449.anInt3669 = (this.aViewportTransform_6444.anInt3669)
+                aViewportTransform_6449.anInt3680 = (this.aViewportTransform_6444.anInt3680)
             }
         }
     }
@@ -94,19 +94,19 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                 anInt6445++
                 if (bool) {
                     ObjectSpawnDecoder.anInt1803++
-                    val i_11_ = (((this.aClass284_6444.anInt3675) + this.aClass284_6444.anInt3668 + this.aClass284_6444.anInt3680) / 3)
-                    val i_12_ = (((this.aClass284_6444.anInt3669) + this.aClass284_6444.anInt3678 + this.aClass284_6444.anInt3670) / 3)
-                    val i_13_ = (((this.aClass284_6444.anInt3672) + this.aClass284_6444.anInt3679 + this.aClass284_6444.anInt3666) / 3)
-                    if (i_11_ != (this.aClass284_6444.anInt3673) || i_12_ != this.aClass284_6444.anInt3667 || i_13_ != (this.aClass284_6444.anInt3671)) {
-                        this.aClass284_6444.anInt3667 = i_12_
-                        this.aClass284_6444.anInt3673 = i_11_
-                        this.aClass284_6444.anInt3671 = i_13_
-                        val i_14_ = (-this.aClass284_6444.anInt3675 + this.aClass284_6444.anInt3668)
-                        val i_15_ = (-this.aClass284_6444.anInt3678 + this.aClass284_6444.anInt3670)
-                        val i_16_ = (-this.aClass284_6444.anInt3666 + this.aClass284_6444.anInt3679)
-                        val i_17_ = (this.aClass284_6444.anInt3680 - this.aClass284_6444.anInt3675)
-                        val i_18_ = (this.aClass284_6444.anInt3669 - this.aClass284_6444.anInt3678)
-                        val i_19_ = (-this.aClass284_6444.anInt3666 + this.aClass284_6444.anInt3672)
+                    val i_11_ = (((this.aViewportTransform_6444.anInt3675) + this.aViewportTransform_6444.anInt3668 + this.aViewportTransform_6444.anInt3680) / 3)
+                    val i_12_ = (((this.aViewportTransform_6444.anInt3669) + this.aViewportTransform_6444.anInt3678 + this.aViewportTransform_6444.anInt3670) / 3)
+                    val i_13_ = (((this.aViewportTransform_6444.anInt3672) + this.aViewportTransform_6444.anInt3679 + this.aViewportTransform_6444.anInt3666) / 3)
+                    if (i_11_ != (this.aViewportTransform_6444.anInt3673) || i_12_ != this.aViewportTransform_6444.anInt3667 || i_13_ != (this.aViewportTransform_6444.anInt3671)) {
+                        this.aViewportTransform_6444.anInt3667 = i_12_
+                        this.aViewportTransform_6444.anInt3673 = i_11_
+                        this.aViewportTransform_6444.anInt3671 = i_13_
+                        val i_14_ = (-this.aViewportTransform_6444.anInt3675 + this.aViewportTransform_6444.anInt3668)
+                        val i_15_ = (-this.aViewportTransform_6444.anInt3678 + this.aViewportTransform_6444.anInt3670)
+                        val i_16_ = (-this.aViewportTransform_6444.anInt3666 + this.aViewportTransform_6444.anInt3679)
+                        val i_17_ = (this.aViewportTransform_6444.anInt3680 - this.aViewportTransform_6444.anInt3675)
+                        val i_18_ = (this.aViewportTransform_6444.anInt3669 - this.aViewportTransform_6444.anInt3678)
+                        val i_19_ = (-this.aViewportTransform_6444.anInt3666 + this.aViewportTransform_6444.anInt3672)
                         anInt6457 = i_17_ * i_16_ + -(i_14_ * i_19_)
                         anInt6455 = i_15_ * i_19_ + -(i_18_ * i_16_)
                         anInt6458 = -(i_17_ * i_15_) + i_18_ * i_14_
@@ -162,12 +162,12 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                                 f = -f + 1.0f
                             }
                             val f_36_ = 1.0f - (f + f_35_)
-                            val i_37_ = ((this.aClass284_6444.anInt3680.toFloat() * f_36_) + (f * (this.aClass284_6444.anInt3675).toFloat() + (f_35_ * (this.aClass284_6444.anInt3668).toFloat()))).toInt()
-                            val i_38_ = (f * (this.aClass284_6444.anInt3678).toFloat() + (this.aClass284_6444.anInt3670).toFloat() * f_35_ + (this.aClass284_6444.anInt3669).toFloat() * f_36_).toInt()
-                            val i_39_ = ((this.aClass284_6444.anInt3666.toFloat() * f) + (this.aClass284_6444.anInt3679).toFloat() * f_35_ + (f_36_ * (this.aClass284_6444.anInt3672).toFloat())).toInt()
-                            val i_40_ = ((aClass284_6449.anInt3680).toFloat() * f_36_ + (f_35_ * (aClass284_6449.anInt3668).toFloat() + f * (aClass284_6449.anInt3675).toFloat())).toInt()
-                            val i_41_ = ((aClass284_6449.anInt3670).toFloat() * f_35_ + (aClass284_6449.anInt3678).toFloat() * f + (aClass284_6449.anInt3669).toFloat() * f_36_).toInt()
-                            val i_42_ = ((aClass284_6449.anInt3672).toFloat() * f_36_ + ((aClass284_6449.anInt3666.toFloat() * f) + (aClass284_6449.anInt3679).toFloat() * f_35_)).toInt()
+                            val i_37_ = ((this.aViewportTransform_6444.anInt3680.toFloat() * f_36_) + (f * (this.aViewportTransform_6444.anInt3675).toFloat() + (f_35_ * (this.aViewportTransform_6444.anInt3668).toFloat()))).toInt()
+                            val i_38_ = (f * (this.aViewportTransform_6444.anInt3678).toFloat() + (this.aViewportTransform_6444.anInt3670).toFloat() * f_35_ + (this.aViewportTransform_6444.anInt3669).toFloat() * f_36_).toInt()
+                            val i_39_ = ((this.aViewportTransform_6444.anInt3666.toFloat() * f) + (this.aViewportTransform_6444.anInt3679).toFloat() * f_35_ + (f_36_ * (this.aViewportTransform_6444.anInt3672).toFloat())).toInt()
+                            val i_40_ = ((aViewportTransform_6449.anInt3680).toFloat() * f_36_ + (f_35_ * (aViewportTransform_6449.anInt3668).toFloat() + f * (aViewportTransform_6449.anInt3675).toFloat())).toInt()
+                            val i_41_ = ((aViewportTransform_6449.anInt3670).toFloat() * f_35_ + (aViewportTransform_6449.anInt3678).toFloat() * f + (aViewportTransform_6449.anInt3669).toFloat() * f_36_).toInt()
+                            val i_42_ = ((aViewportTransform_6449.anInt3672).toFloat() * f_36_ + ((aViewportTransform_6449.anInt3666.toFloat() * f) + (aViewportTransform_6449.anInt3679).toFloat() * f_35_)).toInt()
                             val i_43_ = i_37_ - i_40_
                             val i_44_ = -i_41_ + i_38_
                             val i_45_ = i_39_ + -i_42_
@@ -196,22 +196,22 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
                         }
                     }
                 }
-                if (!this.aClass284_6444.method2115(aClass284_6449, true)) {
-                    val class284 = aClass284_6449
-                    aClass284_6449 = this.aClass284_6444
-                    this.aClass284_6444 = class284
-                    this.aClass284_6444.anInt3678 = (this.aModelFacePriorityNode_6436!!.anInt1891)
-                    this.aClass284_6444.anInt3675 = (this.aModelFacePriorityNode_6436!!.anInt1882)
-                    this.aClass284_6444.anInt3670 = (this.aModelFacePriorityNode_6436!!.anInt1890)
-                    this.aClass284_6444.anInt3672 = (this.aModelFacePriorityNode_6436!!.anInt1884)
-                    this.aClass284_6444.anInt3680 = (this.aModelFacePriorityNode_6436!!.anInt1876)
-                    this.aClass284_6444.anInt3679 = (this.aModelFacePriorityNode_6436!!.anInt1880)
-                    this.aClass284_6444.anInt3666 = (this.aModelFacePriorityNode_6436!!.anInt1889)
-                    this.aClass284_6444.anInt3673 = aClass284_6449.anInt3673
-                    this.aClass284_6444.anInt3669 = (this.aModelFacePriorityNode_6436!!.anInt1874)
-                    this.aClass284_6444.anInt3671 = aClass284_6449.anInt3671
-                    this.aClass284_6444.anInt3667 = aClass284_6449.anInt3667
-                    this.aClass284_6444.anInt3668 = (this.aModelFacePriorityNode_6436!!.anInt1883)
+                if (!this.aViewportTransform_6444.method2115(aViewportTransform_6449, true)) {
+                    val class284 = aViewportTransform_6449
+                    aViewportTransform_6449 = this.aViewportTransform_6444
+                    this.aViewportTransform_6444 = class284
+                    this.aViewportTransform_6444.anInt3678 = (this.aModelFacePriorityNode_6436!!.anInt1891)
+                    this.aViewportTransform_6444.anInt3675 = (this.aModelFacePriorityNode_6436!!.anInt1882)
+                    this.aViewportTransform_6444.anInt3670 = (this.aModelFacePriorityNode_6436!!.anInt1890)
+                    this.aViewportTransform_6444.anInt3672 = (this.aModelFacePriorityNode_6436!!.anInt1884)
+                    this.aViewportTransform_6444.anInt3680 = (this.aModelFacePriorityNode_6436!!.anInt1876)
+                    this.aViewportTransform_6444.anInt3679 = (this.aModelFacePriorityNode_6436!!.anInt1880)
+                    this.aViewportTransform_6444.anInt3666 = (this.aModelFacePriorityNode_6436!!.anInt1889)
+                    this.aViewportTransform_6444.anInt3673 = aViewportTransform_6449.anInt3673
+                    this.aViewportTransform_6444.anInt3669 = (this.aModelFacePriorityNode_6436!!.anInt1874)
+                    this.aViewportTransform_6444.anInt3671 = aViewportTransform_6449.anInt3671
+                    this.aViewportTransform_6444.anInt3667 = aViewportTransform_6449.anInt3667
+                    this.aViewportTransform_6444.anInt3668 = (this.aModelFacePriorityNode_6436!!.anInt1883)
                 }
                 this.anInt6447 = 0
                 var class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1872(i_9_ + 5) as Class318_Sub9_Sub2_Sub1?
@@ -231,8 +231,8 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
     }
 
     init {
-        this.aClass284_6444 = Class284()
-        aClass284_6449 = Class284()
+        this.aViewportTransform_6444 = ViewportTransform()
+        aViewportTransform_6449 = ViewportTransform()
         aBoolean6453 = false
         try {
             aLong6435 = l
@@ -243,15 +243,15 @@ class Class318_Sub7 internal constructor(var_renderer: Renderer?, modelFacePrior
             this.aDoublyLinkedNodeList_6433 = DoublyLinkedNodeList()
             anInt6434 = (anInt6434 + 64.0 * Math.random()).toInt()
             method2507(true)
-            aClass284_6449.anInt3680 = this.aClass284_6444.anInt3680
-            aClass284_6449.anInt3669 = this.aClass284_6444.anInt3669
-            aClass284_6449.anInt3668 = this.aClass284_6444.anInt3668
-            aClass284_6449.anInt3675 = this.aClass284_6444.anInt3675
-            aClass284_6449.anInt3670 = this.aClass284_6444.anInt3670
-            aClass284_6449.anInt3678 = this.aClass284_6444.anInt3678
-            aClass284_6449.anInt3666 = this.aClass284_6444.anInt3666
-            aClass284_6449.anInt3672 = this.aClass284_6444.anInt3672
-            aClass284_6449.anInt3679 = this.aClass284_6444.anInt3679
+            aViewportTransform_6449.anInt3680 = this.aViewportTransform_6444.anInt3680
+            aViewportTransform_6449.anInt3669 = this.aViewportTransform_6444.anInt3669
+            aViewportTransform_6449.anInt3668 = this.aViewportTransform_6444.anInt3668
+            aViewportTransform_6449.anInt3675 = this.aViewportTransform_6444.anInt3675
+            aViewportTransform_6449.anInt3670 = this.aViewportTransform_6444.anInt3670
+            aViewportTransform_6449.anInt3678 = this.aViewportTransform_6444.anInt3678
+            aViewportTransform_6449.anInt3666 = this.aViewportTransform_6444.anInt3666
+            aViewportTransform_6449.anInt3672 = this.aViewportTransform_6444.anInt3672
+            aViewportTransform_6449.anInt3679 = this.aViewportTransform_6444.anInt3679
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (modelFacePriorityNode != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
         }

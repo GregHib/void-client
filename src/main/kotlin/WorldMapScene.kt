@@ -421,7 +421,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                             } else {
                                 i_98_ = (if (class22 == null) 0 else ParticleEmitterFactory.anIntArray3173!![i_76_.toInt()])
                                 i_100_ = (if (class277 == null) 0 else Class334.anIntArray4152!![i_76_.toInt()])
-                                is_97_ = Class284.anIntArrayArray3677!![i_76_.toInt()]!!
+                                is_97_ = ViewportTransform.anIntArrayArray3677!![i_76_.toInt()]!!
                                 is_99_ = (FogOptionState.anIntArrayArray6054!![i_76_.toInt()]!!)
                                 is_96_ = (Exception_Sub1.anIntArrayArray111!![i_76_.toInt()]!!)
                                 is_95_ = (Class348_Sub16_Sub3.anIntArrayArray8910!![i_76_.toInt()])

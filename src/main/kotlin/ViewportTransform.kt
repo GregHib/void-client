@@ -2,7 +2,10 @@ import SoftwareSpriteRaster.Companion.method958
 import Class62.method599
 import java.awt.Canvas
 
-class Class284 {
+/*
+ * Class284
+ */
+class ViewportTransform {
     @JvmField
     var anInt3666: Int = 0
     @JvmField
@@ -28,10 +31,10 @@ class Class284 {
     @JvmField
     var anInt3680: Int = 0
 
-    fun method2115(class284_0_: Class284, bool: Boolean): Boolean {
+    fun method2115(viewportTransform_0_: ViewportTransform, bool: Boolean): Boolean {
         if (bool != true) return true
         anInt3664++
-        return class284_0_.anInt3673 == this.anInt3673 && (this.anInt3667 == class284_0_.anInt3667) && (this.anInt3671 == class284_0_.anInt3671)
+        return viewportTransform_0_.anInt3673 == this.anInt3673 && (this.anInt3667 == viewportTransform_0_.anInt3667) && (this.anInt3671 == viewportTransform_0_.anInt3671)
     }
 
     companion object {
