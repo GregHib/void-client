@@ -63,7 +63,7 @@ class Class239_Sub29 : Class239 {
             anInt6149++
             if (Character.isISOControl(c)) return false
             if (Npc.method2446(c, 105.toByte())) return true
-            val cs = Class185.aCharArray2488!!
+            val cs = MapSceneDefLoader.aCharArray2488!!
             var i_2_ = 0
             while (cs.size > i_2_) {
                 val i_3_ = cs[i_2_].code

@@ -1,6 +1,6 @@
 import NpcSummaryDefinition.Companion.method1166
 import RefCountedHandle.Companion.method1320
-import Class185.Companion.method1394
+import MapSceneDefLoader.Companion.method1394
 import Class199.Companion.method1457
 import Class239.Companion.method1709
 import Class258_Sub3.Companion.method1968

@@ -18,7 +18,7 @@ public open class Class369_Sub3(class221: Class221?, class341: Class341?, i: Int
     override fun method51(i: Byte): Class223? {
         anInt8594++
         if (i <= 116) return null
-        return Class185.aClass223_2489
+        return MapSceneDefLoader.aClass223_2489
     }
 
     init {

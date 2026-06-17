@@ -22,7 +22,7 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
         if (class223 == Class28.aClass223_4997) return ScrollingWidgetComponentNode(aClass45_1637, interface12 as Class288_Sub1)
         if (class223 == Class348_Sub49.aClass223_7175) return Class5_Sub2(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub2)
         if (class223 == Class313.aClass223_3934) return Class5_Sub3(aClass45_1637, aClass45_1641!!, interface12 as Class369_Sub1)
-        if (class223 == Class185.aClass223_2489) return Class5_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3)
+        if (class223 == MapSceneDefLoader.aClass223_2489) return Class5_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3)
         if (class223 == SpotAnimVector.aClass223_2307) return Class67(aClass45_1637, aClass45_1641, interface12 as HeapInfoRecord)
         if (bool != true) anIntArray1636 = null
         if (OrientationRotator.aClass223_2045 == class223) return Class265(aClass45_1637, interface12 as ConfigValueProvider)

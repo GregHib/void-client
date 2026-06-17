@@ -1629,7 +1629,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class185.aIntRange_2483 == Class348_Sub3.aIntRange_6584) {
+            if (MapSceneDefLoader.aIntRange_2483 == Class348_Sub3.aIntRange_6584) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(20.toByte())
                 val i_214_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_215_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())

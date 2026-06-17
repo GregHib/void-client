@@ -124,7 +124,7 @@ open class Class348 {
                         }
                         i_25_++
                     }
-                    class64_13_ = var_renderer!!.method3625(modelDefinition, i_12_, Class185.anInt2482, 64, 768)
+                    class64_13_ = var_renderer!!.method3625(modelDefinition, i_12_, MapSceneDefLoader.anInt2482, 64, 768)
                     synchronized(Class342.aClass60_4254!!) {
                         Class342.aClass60_4254!!.method582(class64_13_, l, (-103).toByte())
                     }

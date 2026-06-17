@@ -94,7 +94,7 @@ class Class269 internal constructor(private val aHa_Sub3_3457: NativeRenderer) {
         var aFloat3462: Float = 0f
 
         fun method2040(i: Int, bool: Boolean) {
-            Class185.anInt2482 = i
+            MapSceneDefLoader.anInt2482 = i
             if (bool != true) aFloat3462 = -0.54794437f
             anInt3450++
             synchronized(Class342.aClass60_4254!!) {

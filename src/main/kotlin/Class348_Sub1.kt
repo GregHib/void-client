@@ -62,7 +62,7 @@ abstract class Class348_Sub1 internal constructor(var anInt6562: Int, var anInt6
         @JvmField
         var aBoolean6558: Boolean = false
         @JvmField
-        var aClass185_6559: Class185? = null
+        var aMapSceneDefLoader_6559: MapSceneDefLoader? = null
         @JvmField
         var anInt6560: Int = 0
         @JvmField
@@ -85,7 +85,7 @@ abstract class Class348_Sub1 internal constructor(var anInt6562: Int, var anInt6
             if (i != 11339) method2719(87)
             aClass46_6561 = null
             anIntArray6547 = null
-            aClass185_6559 = null
+            aMapSceneDefLoader_6559 = null
         }
     }
 }

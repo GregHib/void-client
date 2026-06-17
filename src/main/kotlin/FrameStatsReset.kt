@@ -636,7 +636,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GameAppletFrame.anInt13 = 0
             GlElementArrayBuffer.anInt4841 = 0
             Class348_Sub42_Sub2.anInt8566 = 0
-            Class185.anInt2485 = 0
+            MapSceneDefLoader.anInt2485 = 0
             OpenGlRenderer.anInt7531 = 0
             Class85.anInt1476 = 0
             Gl2dTexture.anInt8618 = 0
@@ -784,7 +784,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub9.anInt5930 = 0
             Class348_Sub16_Sub3.anInt8932 = 0
             Class25.anInt371 = 0
-            Class185.anInt2486 = 0
+            MapSceneDefLoader.anInt2486 = 0
             Class249.anInt3216 = 0
             OpenGlRenderer.anInt7675 = 0
             Class239.anInt3141 = 0
@@ -1888,7 +1888,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8071 = 0
             NativeRenderer.anInt7899 = 0
             Class5_Sub1.anInt8346 = 0
-            Class185.anInt2487 = 0
+            MapSceneDefLoader.anInt2487 = 0
             Class348_Sub42_Sub5.anInt9522 = 0
             Class337.anInt4180 = 0
             Class348_Sub49.anInt7165 = 0
@@ -3934,7 +3934,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class34.anInt468 = 0
             Class348_Sub20.anInt6834 = 0
             NativeRenderer.anInt8048 = 0
-            Class185.anInt2484 = 0
+            MapSceneDefLoader.anInt2484 = 0
             Class318_Sub1_Sub5_Sub2.anInt10164 = 0
             Class278.anInt3588 = 0
             Class59.anInt1070 = 0
