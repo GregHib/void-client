@@ -158,7 +158,7 @@ class Class286_Sub8 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
             anInt6292++
             if (bool) {
                 Class26.anInt383--
-                if (Class26.anInt383 == 0) Class10.anIntArray179 = null
+                if (Class26.anInt383 == 0) ParticleEmitterNode.anIntArray179 = null
             }
             if (bool_6_) {
                 Class348_Sub40_Sub26.anInt9346--

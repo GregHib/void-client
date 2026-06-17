@@ -160,12 +160,12 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: 
                     while (i_11_ != 0 && ((npc!!.aClass182Array10308)!!.size > i_13_)) {
                         if ((0x1 and i_11_) != 0) {
                             if (i_10_ != -1) {
-                                val class17 = Class10.aClass87_191!!.method835(i_10_, i + 7394)
+                                val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_10_, i + 7394)
                                 val i_14_ = class17.anInt248
                                 var class182 = (npc.aClass182Array10308!![i_13_])
                                 if (class182 != null) {
                                     if (i_10_ != class182.anInt2454) {
-                                        if (Class10.aClass87_191!!.method835(class182.anInt2454, 7).anInt239 <= class17.anInt239) {
+                                        if (ParticleEmitterNode.aClass87_191!!.method835(class182.anInt2454, 7).anInt239 <= class17.anInt239) {
                                             npc.aClass182Array10308!![i_13_] = null
                                             class182 = npc.aClass182Array10308!![i_13_]
                                         }

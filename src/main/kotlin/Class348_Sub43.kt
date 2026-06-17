@@ -78,7 +78,7 @@ class Class348_Sub43 : Class348() {
                         for (i_6_ in 7 downTo 0) {
                             if (Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_6_] != null) {
                                 var i_7_: Short = 0
-                                if ((Class348_Sub42_Sub8_Sub2.aClass230_10434 != Class10.aClass230_186) || !(Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_6_].equals(Class274.aClass274_3506!!.method2063(Class348_Sub33.anInt6967, 544), ignoreCase = true))) {
+                                if ((Class348_Sub42_Sub8_Sub2.aClass230_10434 != ParticleEmitterNode.aClass230_186) || !(Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_6_].equals(Class274.aClass274_3506!!.method2063(Class348_Sub33.anInt6967, 544), ignoreCase = true))) {
                                     if (Class71.aBooleanArray1214!![i_6_]) i_7_ = 2000.toShort()
                                 } else {
                                     if ((Class132.aPlayer_1907!!.anInt10516) < (player.anInt10516)) i_7_ = 2000.toShort()

@@ -299,17 +299,17 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     fun method2455(i: Int, i_50_: Int, i_51_: Byte, i_52_: Int) {
         anInt10529++
         if (i_50_ != -26443) method2451((-35).toByte(), 9, 26, 87)
-        if (this.anInt10286 != -1 && Class10.aClass87_191!!.method835(this.anInt10286, 7).anInt245 == 1) {
+        if (this.anInt10286 != -1 && ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7).anInt245 == 1) {
             this.anInt10286 = -1
             this.anIntArray10236 = null
         }
         if (this.anInt10269 != -1) {
             val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(59.toByte(), this.anInt10269))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && Class10.aClass87_191!!.method835((class368.anInt4503), i_50_ xor 0x674d.inv()).anInt245 == 1) this.anInt10269 = -1
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && ParticleEmitterNode.aClass87_191!!.method835((class368.anInt4503), i_50_ xor 0x674d.inv()).anInt245 == 1) this.anInt10269 = -1
         }
         if (this.anInt10291 != -1) {
             val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(124.toByte(), this.anInt10291))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         this.anInt10524 = -1
         if (i_52_ >= 0 && Class367_Sub4.anInt7319 > i_52_ && i >= 0 && Class348_Sub40_Sub3.anInt9109 > i) {
@@ -338,8 +338,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         if (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) {
             val class225 = this.method2422(72.toByte())
             if (class225.aBoolean2913 && (this.aClass154_10536!!.anInt2093 == -1 || Class189.aClass278_2529!!.method2079(this.aClass154_10536!!.anInt2093, i + -2).aBoolean1369)) {
-                val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (Class10.aClass87_191!!.method835(this.anInt10286, 7)) else null)
-                val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (Class10.aClass87_191!!.method835(this.anInt10268, 7)))
+                val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7)) else null)
+                val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (ParticleEmitterNode.aClass87_191!!.method835(this.anInt10268, 7)))
                 val class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
                 if (class64 != null) {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).size, true, false))
@@ -469,8 +469,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         anInt10525++
         val i_70_ = i
         val class225 = this.method2422(72.toByte())
-        val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else Class10.aClass87_191!!.method835(this.anInt10286, 7))
-        val class17_71_ = (if (this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || class17 == null)) Class10.aClass87_191!!.method835(this.anInt10268, 7) else null)
+        val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7))
+        val class17_71_ = (if (this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || class17 == null)) ParticleEmitterNode.aClass87_191!!.method835(this.anInt10268, 7) else null)
         val i_72_ = class225.anInt2932
         val i_73_ = class225.anInt2941
         if (i_72_ != 0 || i_73_ != 0 || class225.anInt2950 != 0 || class225.anInt2926 != 0) i = i or 0x7
@@ -478,7 +478,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =
-            (this.aClass154_10536!!.method1226(aClass170_10209, class17_71_, this.aClass182Array10308, true, Exception_Sub1.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aClass150_9342, this.anInt10232, var_renderer, Class189.aClass278_2529, Class10.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558).also { this.aClass64Array10323[0] = it })
+            (this.aClass154_10536!!.method1226(aClass170_10209, class17_71_, this.aClass182Array10308, true, Exception_Sub1.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aClass150_9342, this.anInt10232, var_renderer, Class189.aClass278_2529, ParticleEmitterNode.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558).also { this.aClass64Array10323[0] = it })
         val i_75_ = Class292.method2201(2121)
         if (Class226.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)
@@ -517,7 +517,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                 if (this.anInt10220 != 0) i_79_ = i_79_ or 0x2
                 if (this.anInt10278 >= 0) i_79_ = i_79_ or 0x7
             } else i_79_ = i_79_ or 0x7
-            val class64_80_ = (class368.method3562(this.anInt10240, var_renderer, this.anInt10243, i_79_, this.anInt10283, Class10.aClass87_191, 46.toByte()).also { this.aClass64Array10323[1] = it })
+            val class64_80_ = (class368.method3562(this.anInt10240, var_renderer, this.anInt10243, i_79_, this.anInt10283, ParticleEmitterNode.aClass87_191, 46.toByte()).also { this.aClass64Array10323[1] = it })
             if (class64_80_ != null) {
                 if (this.anInt10278 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939!![this.anInt10278]) != null)) {
                     var i_81_ = 0
@@ -565,7 +565,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                 if (this.anInt10260 != 0) i_90_ = i_90_ or 0x2
                 if (this.anInt10289 >= 0) i_90_ = i_90_ or 0x7
             }
-            val class64_91_ = (class368.method3558(this.anInt10273, this.anInt10276, var_renderer, i_90_, 3172, Class10.aClass87_191, this.anInt10224).also { this.aClass64Array10323[2] = it })
+            val class64_91_ = (class368.method3558(this.anInt10273, this.anInt10276, var_renderer, i_90_, 3172, ParticleEmitterNode.aClass87_191, this.anInt10224).also { this.aClass64Array10323[2] = it })
             if (class64_91_ != null) {
                 if (this.anInt10289 < 0 || class225.anIntArrayArray2939 == null || ((class225.anIntArrayArray2939!![this.anInt10289]) == null)) {
                     if (this.anInt10202 != 0) class64_91_.a(2048 * (this.anInt10202))

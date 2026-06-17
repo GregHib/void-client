@@ -258,7 +258,7 @@ class Class211 {
                 i_48_++
             }
             i_46_ = ((i_46_ shl Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037)
-            val i_52_ = (if (Class10.anIntArray179 == null) (Class126.anIntArray4983!![method303(class348_sub49.readUnsignedShort(842397944), 30).toInt() and 0xffff]) else (Class10.anIntArray179!![class348_sub49.readUnsignedShort(842397944)]))
+            val i_52_ = (if (ParticleEmitterNode.anIntArray179 == null) (Class126.anIntArray4983!![method303(class348_sub49.readUnsignedShort(842397944), 30).toInt() and 0xffff]) else (ParticleEmitterNode.anIntArray179!![class348_sub49.readUnsignedShort(842397944)]))
             val i_53_ = class348_sub49.readUnsignedByte(255)
             anInt2739 = (0xe0 and i_53_) shl 3
             this.anInt2734 = 0x1f and i_53_

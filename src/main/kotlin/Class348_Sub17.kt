@@ -407,7 +407,7 @@ class Class348_Sub17 : Class348 {
 
         fun method2928(bool: Boolean) {
             if (bool == true) {
-                Class258_Sub2.aClass10Array8531 = arrayOfNulls<Class10>(50)
+                Class258_Sub2.aParticleEmitterNodeArray8531s = arrayOfNulls<ParticleEmitterNode>(50)
                 anInt6790++
                 Class147.anInt2021 = 0
             }
@@ -446,7 +446,7 @@ class Class348_Sub17 : Class348 {
                             }
                         }
                         if (bool && npc.anInt10286 != -1) {
-                            val class17 = (Class10.aClass87_191!!.method835(npc.anInt10286, 7))
+                            val class17 = (ParticleEmitterNode.aClass87_191!!.method835(npc.anInt10286, 7))
                             val i_3_ = class17.anInt248
                             if (i_3_ == 1) {
                                 npc.anInt10232 = 0
@@ -463,7 +463,7 @@ class Class348_Sub17 : Class348 {
                     var i_4_ = 0
                     while (`is`!!.size > i_4_) {
                         if (`is`[i_4_] != -1) bool = false
-                        if (npc.anIntArray10236 == null || (npc.anIntArray10236!![i_4_]) == -1 || (Class10.aClass87_191!!.method835(`is`[i_4_], 7).anInt239 >= Class10.aClass87_191!!.method835((npc.anIntArray10236!![i_4_]), 7).anInt239)) {
+                        if (npc.anIntArray10236 == null || (npc.anIntArray10236!![i_4_]) == -1 || (ParticleEmitterNode.aClass87_191!!.method835(`is`[i_4_], 7).anInt239 >= ParticleEmitterNode.aClass87_191!!.method835((npc.anIntArray10236!![i_4_]), 7).anInt239)) {
                             npc.anInt10218 = i
                             npc.anInt10322 = npc.anInt10319
                             npc.anIntArray10236 = `is`

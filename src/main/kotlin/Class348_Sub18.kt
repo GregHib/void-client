@@ -75,7 +75,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             Class348_Sub40_Sub12.aClass263_9195!!.method2012(-23828)
             Class189.aClass278_2529!!.method2078(-6080)
             Exception_Sub1.aClass255_112!!.method1939(-110)
-            Class10.aClass87_191!!.method834((-116).toByte())
+            ParticleEmitterNode.aClass87_191!!.method834((-116).toByte())
             Class348_Sub40_Sub18.aClass319_9245!!.method2546(60)
             Class229.aClass194_2981!!.method1445(64)
             Class269.aClass217_3453!!.method1589(127.toByte())
@@ -180,7 +180,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                     class46.anInt841 = 0
                     class46.anInt730 = Class132.aPlayer_1907!!.anInt10312
                     class46.anInt795 = Class132.aPlayer_1907!!.anInt10245
-                    val class17 = (if (class46.anInt699 != -1) Class10.aClass87_191!!.method835(class46.anInt699, 7) else null)
+                    val class17 = (if (class46.anInt699 != -1) ParticleEmitterNode.aClass87_191!!.method835(class46.anInt699, 7) else null)
                     if (class17 != null) method2017(class46.anInt795, class17, 50)
                 }
             } else {

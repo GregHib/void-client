@@ -949,7 +949,7 @@ class Class46 {
             Class348_Sub40_Sub12.aClass263_9195!!.method2006(88)
             Class189.aClass278_2529!!.method2080(127)
             Exception_Sub1.aClass255_112!!.method1938(126)
-            Class10.aClass87_191!!.method838(7)
+            ParticleEmitterNode.aClass87_191!!.method838(7)
             Class348_Sub40_Sub18.aClass319_9245!!.method2542(-101)
             Class229.aClass194_2981!!.method1443(83)
             Class269.aClass217_3453!!.method1590(0)

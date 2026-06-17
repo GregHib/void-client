@@ -1,4 +1,4 @@
-import Class10.Companion.method219
+import ParticleEmitterNode.Companion.method219
 import Class239_Sub26.Companion.method1837
 import Class239_Sub5.Companion.method1740
 import Class246.Companion.method1885
@@ -733,7 +733,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 for (i_116_ in 0..<anInt5406) {
                     val class353 = aClass353Array5524!![i_116_]!!
                     val class334 = aClass334Array5442!![i_116_]!!
-                    class334.anInt4156 = ((Class10.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class334.anInt4156))
+                    class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class334.anInt4156))
                 }
             }
             method670(-109)
@@ -1650,7 +1650,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             while (anInt5406 > i_294_) {
                                 val class353 = aClass353Array5524!![i_294_]!!
                                 val class334 = aClass334Array5442!![i_294_]!!
-                                class334.anInt4156 = (0xffffff and (Class10.anIntArray179!![(aShortArray5486!![(class353.anInt4342)]).toInt() and 0xffff]) or (0xffffff.inv() and class334.anInt4156))
+                                class334.anInt4156 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5486!![(class353.anInt4342)]).toInt() and 0xffff]) or (0xffffff.inv() and class334.anInt4156))
                                 i_294_++
                             }
                         }
@@ -1961,7 +1961,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             }
                         }
                         if (i_351_ == -1) throw RuntimeException()
-                        var i_353_ = (0xffffff and (Class10.anIntArray179!![((class124.aShortArray1862[class162.anInt2155]).toInt() and 0xffff)]))
+                        var i_353_ = (0xffffff and (ParticleEmitterNode.anIntArray179!![((class124.aShortArray1862[class162.anInt2155]).toInt() and 0xffff)]))
                         i_353_ = (i_353_ or (-(if (class124.aByteArray1834 == null) 0 else (class124.aByteArray1834!![(class162.anInt2155)])) + 255 shl 24))
                         aClass353Array5524!![i_350_] = Class353(i_351_, (class124.aShortArray1863[class162.anInt2155]).toInt(), (class124.aShortArray1835!![class162.anInt2155]).toInt(), (class124.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
                         aClass334Array5442!![i_350_] = Class334(i_353_)
@@ -2609,7 +2609,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             for (i_530_ in 0..<anInt5406) {
                 val class353 = aClass353Array5524!![i_530_]!!
                 val class334 = aClass334Array5442!![i_530_]!!
-                class334.anInt4156 = ((Class10.anIntArray179!![0xffff and aShortArray5486!![(class353.anInt4342)].toInt()]) and 0xffffff or (class334.anInt4156 and 0xffffff.inv()))
+                class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![0xffff and aShortArray5486!![(class353.anInt4342)].toInt()]) and 0xffffff or (class334.anInt4156 and 0xffffff.inv()))
             }
         }
         method670(-119)
@@ -2735,7 +2735,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             while (anInt5406 > i_568_) {
                 val class353 = aClass353Array5524!![i_568_]!!
                 val class334 = aClass334Array5442!![i_568_]!!
-                class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((Class10.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff))
+                class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff))
                 i_568_++
             }
         }
@@ -2793,7 +2793,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 for (i_576_ in 0..<anInt5406) {
                     val class353 = aClass353Array5524!![i_576_]!!
                     val class334 = aClass334Array5442!![i_576_]!!
-                    class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((Class10.anIntArray179!![(aShortArray5486!![class353.anInt4342]).toInt() and 0xffff]) and 0xffffff))
+                    class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342]).toInt() and 0xffff]) and 0xffffff))
                 }
             }
             method670(-109)
@@ -3275,7 +3275,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             while (anInt5406 > i_751_) {
                                 val class353 = aClass353Array5524!![i_751_]!!
                                 val class334 = aClass334Array5442!![i_751_]!!
-                                class334.anInt4156 = ((class334.anInt4156 and 0xffffff.inv()) or (0xffffff and (Class10.anIntArray179!![0xffff and (aShortArray5486!![(class353.anInt4342)]).toInt()])))
+                                class334.anInt4156 = ((class334.anInt4156 and 0xffffff.inv()) or (0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5486!![(class353.anInt4342)]).toInt()])))
                                 i_751_++
                             }
                         }

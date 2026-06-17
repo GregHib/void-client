@@ -81,8 +81,8 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(122.toByte(), i)
         val var_s = Class348_Sub1_Sub1.aTerrainTileArray8801!![this.plane.toInt()]
         val var_s_28_ = (if (this.aByte6376 < 3) (Class348_Sub1_Sub1.aTerrainTileArray8801!![1 + this.aByte6376]) else null)
-        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_renderer, anInt10350, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s)
-        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_renderer, -1, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s)
+        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_renderer, anInt10350, this.x, -129, ParticleEmitterNode.aClass87_191, var_s_28_, this.y, var_s)
+        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_renderer, -1, this.x, -129, ParticleEmitterNode.aClass87_191, var_s_28_, this.y, var_s)
     }
 
     fun method2466(bool: Boolean) {
@@ -161,7 +161,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         val i_46_ = class368.anInt4503
         if (i_46_ == -1) this.aBoolean10345 = true
         else {
-            aClass17_10332 = Class10.aClass87_191!!.method835(i_46_, 7)
+            aClass17_10332 = ParticleEmitterNode.aClass87_191!!.method835(i_46_, 7)
             this.aBoolean10345 = false
         }
         if (this.anInt10349 == i_35_) method2178(this, anInt10335, aClass17_10332, -99)

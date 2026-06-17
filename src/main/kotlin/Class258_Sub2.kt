@@ -61,7 +61,7 @@ class Class258_Sub2 : Class258 {
         @JvmField
         var aLongArray8530: LongArray? = null
         @JvmField
-        var aClass10Array8531: Array<Class10?>? = arrayOfNulls<Class10>(50)
+        var aParticleEmitterNodeArray8531s: Array<ParticleEmitterNode?>? = arrayOfNulls<ParticleEmitterNode>(50)
         @JvmField
         var aStringArray8532: Array<String?>? = null
         @JvmField
@@ -74,7 +74,7 @@ class Class258_Sub2 : Class258 {
         fun method1962(i: Int) {
             aStringArray8532 = null
             aLongArray8530 = null
-            aClass10Array8531 = null
+            aParticleEmitterNodeArray8531s = null
             if (i != -1) aStringArray8532 = null
         }
     }

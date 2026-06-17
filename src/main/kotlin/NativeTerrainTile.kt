@@ -228,7 +228,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                                 var i_104_ = i_88_ * (i_83_ and 0x7f) shr 7
                                 if (i_104_ < 2) i_104_ = 2
                                 else if (i_104_ > 126) i_104_ = 126
-                                i_89_ = (Class10.anIntArray179!![i_104_ or (i_83_ and 0xff80)])
+                                i_89_ = (ParticleEmitterNode.anIntArray179!![i_104_ or (i_83_ and 0xff80)])
                                 if ((this.anInt8294 and 0x7) == 0) {
                                     f_103_ = ((f_91_ * (this.aHa_Sub3_8322!!.aFloatArray8170[0])) + f_90_ * (this.aHa_Sub3_8322!!.aFloatArray8170[1]) + (this.aHa_Sub3_8322!!.aFloatArray8170[2]) * f_92_)
                                     f_103_ = ((f_103_ * (if (!(f_103_ > 0.0f)) (this.aHa_Sub3_8322!!.aFloat8186) else (this.aHa_Sub3_8322!!.aFloat8174))) + (this.aHa_Sub3_8322!!.aFloat8093))
@@ -244,7 +244,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                                     if (i_107_ >= 2) {
                                         if (i_107_ > 126) i_107_ = 126
                                     } else i_107_ = 2
-                                    i_106_ = (Class10.anIntArray179!![i_107_ or (i_84_ and 0xff80)])
+                                    i_106_ = (ParticleEmitterNode.anIntArray179!![i_107_ or (i_84_ and 0xff80)])
                                     if ((0x7 and this.anInt8294) == 0) {
                                         var f_108_ = ((this.aHa_Sub3_8322!!.aFloatArray8170[2]) * f_92_ + (f_90_ * (this.aHa_Sub3_8322!!.aFloatArray8170[1]) + ((this.aHa_Sub3_8322!!.aFloatArray8170[0]) * f_91_)))
                                         f_108_ = ((this.aHa_Sub3_8322!!.aFloat8093) + (if (f_103_ > 0.0f) (this.aHa_Sub3_8322!!.aFloat8174) else (this.aHa_Sub3_8322!!.aFloat8186)) * f_103_)

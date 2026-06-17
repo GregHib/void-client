@@ -203,7 +203,7 @@ class Class206 internal constructor(var_ha_Sub2: OpenGlRenderer) : Interface11 {
             val i_3_ = 56 / ((i - -56) / 42)
             var i_4_ = 0
             while (i_4_ < Class147.anInt2021) {
-                val class10 = Class258_Sub2.aClass10Array8531!![i_4_]
+                val class10 = Class258_Sub2.aParticleEmitterNodeArray8531s!![i_4_]
                 var bool = false
                 if (class10!!.aClass348_Sub16_Sub5_176 == null) {
                     class10.anInt188--
@@ -282,7 +282,7 @@ class Class206 internal constructor(var_ha_Sub2: OpenGlRenderer) : Interface11 {
                     Class147.anInt2021--
                     var i_19_ = i_4_
                     while (Class147.anInt2021 > i_19_) {
-                        Class258_Sub2.aClass10Array8531!![i_19_] = Class258_Sub2.aClass10Array8531!![i_19_ - -1]
+                        Class258_Sub2.aParticleEmitterNodeArray8531s!![i_19_] = Class258_Sub2.aParticleEmitterNodeArray8531s!![i_19_ - -1]
                         i_19_++
                     }
                     i_4_--

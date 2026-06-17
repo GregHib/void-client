@@ -333,7 +333,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                 anInt2983++
                 do {
                     if ((class318_sub1_sub3_sub3!!.anInt10268) != -1) {
-                        var class17 = (Class10.aClass87_191!!.method835(class318_sub1_sub3_sub3.anInt10268, 7))
+                        var class17 = (ParticleEmitterNode.aClass87_191!!.method835(class318_sub1_sub3_sub3.anInt10268, 7))
                         if (class17 == null || class17.anIntArray237 == null) {
                             class318_sub1_sub3_sub3.aBoolean10213 = false
                             class318_sub1_sub3_sub3.anInt10268 = -1
@@ -354,7 +354,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                                         class318_sub1_sub3_sub3.aBoolean10213 = false
                                         break
                                     }
-                                    class17 = (Class10.aClass87_191!!.method835(class318_sub1_sub3_sub3.anInt10268, 7))
+                                    class17 = (ParticleEmitterNode.aClass87_191!!.method835(class318_sub1_sub3_sub3.anInt10268, 7))
                                 }
                                 if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10245), class17, -23)
                             }
@@ -371,7 +371,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                         val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(90.toByte(), class318_sub1_sub3_sub3.anInt10269))
                         val i_70_ = class368.anInt4503
                         if (i_70_ != -1) {
-                            val class17 = Class10.aClass87_191!!.method835(i_70_, 7)
+                            val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_70_, 7)
                             if (class368.aBoolean4487) {
                                 if (class17.anInt262 == 3) {
                                     if (class318_sub1_sub3_sub3.anInt10322 > 0 && (class318_sub1_sub3_sub3.anInt10239 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 > (class318_sub1_sub3_sub3.anInt10300))) {
@@ -421,7 +421,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                         val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(93.toByte(), class318_sub1_sub3_sub3.anInt10291))
                         val i_71_ = class368.anInt4503
                         if (i_71_ != -1) {
-                            val class17 = Class10.aClass87_191!!.method835(i_71_, 7)
+                            val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_71_, 7)
                             if (class368.aBoolean4487) {
                                 if (class17.anInt262 != 3) {
                                     if (class17.anInt262 == 1 && class318_sub1_sub3_sub3.anInt10322 > 0 && (Class367_Sub11.anInt7396 >= (class318_sub1_sub3_sub3.anInt10239)) && (class318_sub1_sub3_sub3.anInt10300 < Class367_Sub11.anInt7396)) {
@@ -469,7 +469,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                     }
                 } while (false)
                 if ((class318_sub1_sub3_sub3.anInt10286 != -1) && (class318_sub1_sub3_sub3.anInt10218) <= 1) {
-                    val class17 = (Class10.aClass87_191!!.method835((class318_sub1_sub3_sub3.anInt10286), 7))
+                    val class17 = (ParticleEmitterNode.aClass87_191!!.method835((class318_sub1_sub3_sub3.anInt10286), 7))
                     if (class17.anInt262 != 3) {
                         if (class17.anInt262 == 1 && class318_sub1_sub3_sub3.anInt10322 > 0 && (class318_sub1_sub3_sub3.anInt10239) <= Class367_Sub11.anInt7396 && (class318_sub1_sub3_sub3.anInt10300) < Class367_Sub11.anInt7396) class318_sub1_sub3_sub3.anInt10218 = 2
                     } else if ((class318_sub1_sub3_sub3.anInt10322) > 0 && (class318_sub1_sub3_sub3.anInt10239 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 > class318_sub1_sub3_sub3.anInt10300)) {
@@ -478,7 +478,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                     }
                 }
                 if ((class318_sub1_sub3_sub3.anInt10286 != -1) && (class318_sub1_sub3_sub3.anInt10218) == 0) {
-                    val class17 = (Class10.aClass87_191!!.method835((class318_sub1_sub3_sub3.anInt10286), 7))
+                    val class17 = (ParticleEmitterNode.aClass87_191!!.method835((class318_sub1_sub3_sub3.anInt10286), 7))
                     if (class17 == null || class17.anIntArray237 == null) {
                         class318_sub1_sub3_sub3.anInt10286 = -1
                         class318_sub1_sub3_sub3.anIntArray10236 = null
@@ -516,7 +516,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                     if (class182 != null) {
                         if (class182.anInt2448 > 0) class182.anInt2448--
                         else {
-                            val class17 = Class10.aClass87_191!!.method835((class182.anInt2454), 7)
+                            val class17 = ParticleEmitterNode.aClass87_191!!.method835((class182.anInt2454), 7)
                             if (class17 == null || class17.anIntArray237 == null) class318_sub1_sub3_sub3.aClass182Array10308!![i_73_] = null
                             else {
                                 class182.anInt2456++

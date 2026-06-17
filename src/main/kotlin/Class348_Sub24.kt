@@ -141,7 +141,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         var i_11_ = 0
                         if (class348_sub45.method3310(i xor 0x2cee) == 2) i_11_ = 1
                         val i_12_ = l.toInt()
-                        Class10.anInt182++
+                        ParticleEmitterNode.anInt182++
                         val class348_sub47 = method2148(Class27.aClass351_395, (Class348_Sub23_Sub2.aClass77_9029), i + -11525)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_12_ or (i_11_ shl 15))
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(121.toByte(), i_9_ shl 16 or i_10_)
@@ -251,7 +251,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                         class46.anInt795 = 0
                                         class46.anInt841 = 0
                                         class46.anInt730 = 1
-                                        val class17 = (if (class46.anInt699 == -1) null else (Class10.aClass87_191!!.method835((class46.anInt699), 7)))
+                                        val class17 = (if (class46.anInt699 == -1) null else (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7)))
                                         if (class17 != null) method2017((class46.anInt795), class17, 30)
                                         Class251.method1916(-9343, class46)
                                     }

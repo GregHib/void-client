@@ -451,7 +451,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class286_Sub8.anInt6303 = 0
             Class355.anInt4370 = 0
             Class8.anInt163 = 0
-            Class10.anInt175 = 0
+            ParticleEmitterNode.anInt175 = 0
             NativeRenderer.anInt8066 = 0
             Class55.anInt978 = 0
             Class318_Sub1_Sub3_Sub5.anInt10406 = 0
@@ -2693,7 +2693,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class188.anInt2520 = 0
             Class318_Sub1_Sub3_Sub1.anInt10013 = 0
             Class127_Sub1.anInt8379 = 0
-            Class10.anInt181 = 0
+            ParticleEmitterNode.anInt181 = 0
             Class348_Sub40_Sub6.anInt9136 = 0
             Class294.anInt5039 = 0
             Class377.anInt9894 = 0
@@ -3537,7 +3537,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class64_Sub3.anInt5578 = 0
             Class280.anInt3640 = 0
             Class258_Sub3.anInt8548 = 0
-            Class10.anInt182 = 0
+            ParticleEmitterNode.anInt182 = 0
             Class324.anInt4056 = 0
             Class348_Sub40_Sub36.anInt9454 = 0
             Class311.anInt3905 = 0
@@ -4025,7 +4025,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class206.anInt4879 = 0
             Class64_Sub2.anInt5490 = 0
             NativeRenderer.anInt7998 = 0
-            Class10.anInt190 = 0
+            ParticleEmitterNode.anInt190 = 0
             NativeRenderer.anInt8047 = 0
             OpenGlRenderer.anInt7684 = 0
             Class177.anInt4663 = 0

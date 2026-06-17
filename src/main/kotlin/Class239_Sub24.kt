@@ -23,7 +23,7 @@ class Class239_Sub24 : Class239 {
 
     override fun method1714(i: Int, i_3_: Int): Int {
         anInt6092++
-        if (this.aClass348_Sub51_3136.method3422(674) == Class10.aClass230_186) {
+        if (this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aClass230_186) {
             if (this.aClass348_Sub51_3136.method3425(i + -70)) return 3
             if (i_3_ == 0 || this.aClass348_Sub51_3136.aClass239_Sub9_7256!!.method1759(-32350) == 1) return 1
             return 2
@@ -33,7 +33,7 @@ class Class239_Sub24 : Class239 {
     }
 
     override fun method1716(bool: Boolean) {
-        if (this.aClass348_Sub51_3136.method3422(674) != Class10.aClass230_186) this.anInt3138 = 1
+        if (this.aClass348_Sub51_3136.method3422(674) != ParticleEmitterNode.aClass230_186) this.anInt3138 = 1
         else if (this.aClass348_Sub51_3136.method3425(-95)) this.anInt3138 = 0
         anInt6090++
         if (this.anInt3138 != 0 && this.anInt3138 != 1) this.anInt3138 = method1710(20014)
@@ -42,7 +42,7 @@ class Class239_Sub24 : Class239 {
 
     fun method1824(i: Int): Boolean {
         anInt6087++
-        if (this.aClass348_Sub51_3136.method3422(674) == Class10.aClass230_186) {
+        if (this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aClass230_186) {
             return !this.aClass348_Sub51_3136.method3425(-96)
         }
         return false

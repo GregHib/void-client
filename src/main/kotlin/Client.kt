@@ -1,6 +1,6 @@
 import DelegatingRenderCanvas.Companion.method120
 import DelegatingRenderCanvas.Companion.method123
-import Class10.Companion.method218
+import ParticleEmitterNode.Companion.method218
 import Class100.Companion.method886
 import Class100.Companion.method887
 import Class101.Companion.method906
@@ -666,7 +666,7 @@ class Client : GameAppletFrame() {
         Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172
         Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502
         Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889
-        if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class10.aClass230_186) RuntimeException_Sub1.aBoolean4599 = false
+        if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == ParticleEmitterNode.aClass230_186) RuntimeException_Sub1.aBoolean4599 = false
         if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
             Class116.shiftClick = true
             Class136.aShortArrayArray4791 = Class348_Sub8.aShortArrayArray6664
@@ -1337,7 +1337,7 @@ class Client : GameAppletFrame() {
             Class318_Sub1_Sub5.aBoolean8773 = string_25_ != null && string_25_ == "1"
             val string_26_ = this.getParameter("game")
             if (string_26_ != null) {
-                if (string_26_ == "0") Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class10.aClass230_186
+                if (string_26_ == "0") Class348_Sub42_Sub8_Sub2.aClass230_10434 = ParticleEmitterNode.aClass230_186
                 else if (string_26_ == "1") Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class14_Sub4.aClass230_8638
                 else if (string_26_ != "2") {
                     if (string_26_ == "3") Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class239_Sub9.aClass230_5932
@@ -1390,7 +1390,7 @@ class Client : GameAppletFrame() {
             }
             Class14_Sub1.aString8605 = this.getParameter("additionalInfo")
             if (Class14_Sub1.aString8605 != null && Class14_Sub1.aString8605!!.length > 50) Class14_Sub1.aString8605 = null
-            if (Class10.aClass230_186 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
+            if (ParticleEmitterNode.aClass230_186 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
                 OpenGlRenderer.anInt7666 = 503
                 Class92.anInt1524 = 765
             } else if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class14_Sub4.aClass230_8638) {
@@ -1999,7 +1999,7 @@ class Client : GameAppletFrame() {
                                 else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class239_Sub9.aClass230_5932
                             } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class286_Sub6.aClass230_6262
                         } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class14_Sub4.aClass230_8638
-                    } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class10.aClass230_186
+                    } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = ParticleEmitterNode.aClass230_186
                     Class161.aBoolean2151 = false
                     Class239_Sub12.aString5966 = ""
                     TextureMetadataProvider.aLong4615 = 0L
@@ -2512,7 +2512,7 @@ class Client : GameAppletFrame() {
                                 if (class46.aClass46Array798 != null) Companion.method107(class46.aClass46Array798!!, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
                                 val class348_sub41 = ((Class125.aClass356_4915!!.method3480(class46.anInt830.toLong(), -6008)) as Class348_Sub41?)
                                 if (class348_sub41 != null) {
-                                    if ((Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class10.aClass230_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !Class299_Sub2.aBoolean6327) method661(105.toByte())
+                                    if ((Class348_Sub42_Sub8_Sub2.aClass230_10434 == ParticleEmitterNode.aClass230_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !Class299_Sub2.aBoolean6327) method661(105.toByte())
                                     method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_)
                                 }
                             }

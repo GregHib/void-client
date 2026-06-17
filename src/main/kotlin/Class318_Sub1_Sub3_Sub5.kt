@@ -264,7 +264,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         this.anInt10411 = i_27_
         anInt10387 = i_31_
         val i_35_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(72.toByte(), anInt10391).anInt4503)
-        if (i_35_ != -1) aClass17_10375 = Class10.aClass87_191!!.method835(i_35_, 7)
+        if (i_35_ != -1) aClass17_10375 = ParticleEmitterNode.aClass87_191!!.method835(i_35_, 7)
         else aClass17_10375 = null
     }
 
@@ -287,7 +287,7 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         anInt10377++
         val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(75.toByte(), anInt10391)
         if (i_36_ < 126) aClass318_Sub10_10378 = null
-        return class368.method3562(anInt10365, var_renderer, anInt10403, i, anInt10369, Class10.aClass87_191, 121.toByte())
+        return class368.method3562(anInt10365, var_renderer, anInt10403, i, anInt10369, ParticleEmitterNode.aClass87_191, 121.toByte())
     }
 
     public override fun method2377(i: Byte): Boolean {

@@ -1402,7 +1402,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method642(i: Int, i_305_: Short, i_306_: Int): Int {
-        var i_307_ = Class10.anIntArray179!![method637(i, i_306_)]
+        var i_307_ = ParticleEmitterNode.anIntArray179!![method637(i, i_306_)]
         val class12 = aHa_Sub1_5353.aRenderConfig4579!!.method3(i_305_.toInt() and 0xffff, -6662)
         val i_308_ = class12!!.aByte201.toInt() and 0xff
         if (i_308_ != 0) {

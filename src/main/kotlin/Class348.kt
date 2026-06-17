@@ -136,7 +136,7 @@ open class Class348 {
                 var class348_sub42_sub17: Class348_Sub42_Sub17? = null
                 if (class17 != null) {
                     i_5_ = class17.anIntArray237[i_5_]
-                    class348_sub42_sub17 = Class10.aClass87_191!!.method839(i_5_ shr 16, 3)
+                    class348_sub42_sub17 = ParticleEmitterNode.aClass87_191!!.method839(i_5_ shr 16, 3)
                     i_5_ = i_5_ and 0xffff
                 }
                 if (class348_sub42_sub17 == null) {

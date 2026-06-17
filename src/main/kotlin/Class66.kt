@@ -1,5 +1,5 @@
 import GameAppletFrame.Companion.method94
-import Class10.Companion.method217
+import ParticleEmitterNode.Companion.method217
 import Class11.method222
 import Class130.Companion.method1129
 import Class135.Companion.method1148
@@ -2972,7 +2972,7 @@ object Class66 {
                     class46.anInt795 = 0
                     class46.anInt730 = 1
                     class46.anInt841 = 0
-                    val class17 = (if (class46.anInt699 == -1) null else Class10.aClass87_191!!.method835(class46.anInt699, 7))
+                    val class17 = (if (class46.anInt699 == -1) null else ParticleEmitterNode.aClass87_191!!.method835(class46.anInt699, 7))
                     if (class17 != null) Class264.method2017(class46.anInt795, class17, 46)
                     Class251.method1916(-9343, class46)
                 }

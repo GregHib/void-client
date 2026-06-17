@@ -86,7 +86,7 @@ class Class235 internal constructor(var_renderer: Renderer?, class51: Class51?, 
             aClass64_3059 = null
             if (aClass17_3057 != null && i_1_ == aClass17_3057!!.anInt269) {
                 if (aClass17_3057!!.anInt248 == 0) return
-            } else aClass17_3057 = Class10.aClass87_191!!.method835(i_1_, i + -62)
+            } else aClass17_3057 = ParticleEmitterNode.aClass87_191!!.method835(i_1_, i + -62)
             if (aClass17_3057!!.anIntArray237 == null) aClass17_3057 = null
             else {
                 if (bool) {
