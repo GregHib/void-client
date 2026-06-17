@@ -83,8 +83,8 @@ class Class58 {
             val i_13_ = Class85.method831(Class38.anInt513, i_11_, Class132.anInt1910, 111)
             val i_14_ = Class85.method831(Class38.anInt513, i_7_, Class132.anInt1910, -104)
             if (i_12_ >= -62) Companion.method535(80, -63, -10, 41, -65, 39, (-89).toByte())
-            val i_15_ = Class85.method831(Class113.anInt1745, i, Class369.anInt4960, -79)
-            val i_16_ = Class85.method831(Class113.anInt1745, i_9_, Class369.anInt4960, 92)
+            val i_15_ = Class85.method831(CameraNodeList.anInt1745, i, Class369.anInt4960, -79)
+            val i_16_ = Class85.method831(CameraNodeList.anInt1745, i_9_, Class369.anInt4960, 92)
             val i_17_ = Class85.method831(Class38.anInt513, i_11_ + i_8_, Class132.anInt1910, 32)
             val i_18_ = Class85.method831(Class38.anInt513, -i_8_ + i_7_, Class132.anInt1910, 41)
             var i_19_ = i_13_
@@ -97,8 +97,8 @@ class Class58 {
                 Class135_Sub2.method1156(-27, i_16_, Class17.anIntArrayArray255!![i_20_]!!, i_15_, i_10_)
                 i_20_--
             }
-            val i_21_ = Class85.method831(Class113.anInt1745, i_8_ + i, Class369.anInt4960, 121)
-            val i_22_ = Class85.method831(Class113.anInt1745, -i_8_ + i_9_, Class369.anInt4960, -101)
+            val i_21_ = Class85.method831(CameraNodeList.anInt1745, i_8_ + i, Class369.anInt4960, 121)
+            val i_22_ = Class85.method831(CameraNodeList.anInt1745, -i_8_ + i_9_, Class369.anInt4960, -101)
             for (i_23_ in i_17_..i_18_) {
                 val `is`: IntArray = Class17.anIntArrayArray255!![i_23_]!!
                 Class135_Sub2.method1156(-27, i_21_, `is`, i_15_, i_10_)

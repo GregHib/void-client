@@ -130,7 +130,7 @@ class Class40 internal constructor() {
             GameAppletFrame.aClass324_20 = null
             Class240.aClass324_4684 = null
             Class169.aAbstractModelRendererArray2260 = null
-            Class113.aAbstractModelRendererArray1744 = null
+            CameraNodeList.aAbstractModelRendererArray1744 = null
             Class264.aAbstractModelRendererArray3378 = null
             Class59_Sub1.aAbstractModelRendererArray5294 = null
             Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959 = null

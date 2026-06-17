@@ -38,10 +38,10 @@ class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_
             if (i_3_ <= Class38.anInt513 && i_2_ >= Class132.anInt1910) {
                 val bool: Boolean
                 if (Class369.Companion.anInt4960 <= i_4_) {
-                    if (i_4_ <= Class113.anInt1745) bool = true
+                    if (i_4_ <= CameraNodeList.anInt1745) bool = true
                     else {
                         bool = false
-                        i_4_ = Class113.anInt1745
+                        i_4_ = CameraNodeList.anInt1745
                     }
                 } else {
                     i_4_ = Class369.Companion.anInt4960
@@ -51,8 +51,8 @@ class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_
                 if (Class369.Companion.anInt4960 > i_0_) {
                     i_0_ = Class369.Companion.anInt4960
                     bool_5_ = false
-                } else if (Class113.anInt1745 < i_0_) {
-                    i_0_ = Class113.anInt1745
+                } else if (CameraNodeList.anInt1745 < i_0_) {
+                    i_0_ = CameraNodeList.anInt1745
                     bool_5_ = false
                 } else bool_5_ = true
                 if (i_3_ < Class132.anInt1910) i_3_ = Class132.anInt1910

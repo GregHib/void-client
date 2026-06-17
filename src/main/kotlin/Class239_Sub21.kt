@@ -144,7 +144,7 @@ class Class239_Sub21 : Class239 {
                             if (c_25_ != c_26_) break
                         }
                     }
-                    return (Class113.method1056(i_18_, 30316, c_25_) + -Class113.method1056(i_18_, i xor 0x55ac, c_26_))
+                    return (CameraNodeList.method1056(i_18_, 30316, c_25_) + -CameraNodeList.method1056(i_18_, i xor 0x55ac, c_26_))
                 } while (false)
                 val i_27_ = min(i_20_, i_21_)
                 var i_28_ = 0
@@ -161,7 +161,7 @@ class Class239_Sub21 : Class239 {
                     if (c_29_ != c_30_ && (c_29_.uppercaseChar() != c_30_.uppercaseChar())) {
                         c_29_ = c_29_.lowercaseChar()
                         c_30_ = c_30_.lowercaseChar()
-                        if (c_30_ != c_29_) return (Class113.method1056(i_18_, 30316, c_29_) + -Class113.method1056(i_18_, 30316, c_30_))
+                        if (c_30_ != c_29_) return (CameraNodeList.method1056(i_18_, 30316, c_29_) + -CameraNodeList.method1056(i_18_, 30316, c_30_))
                     }
                     i_28_++
                 }
@@ -172,7 +172,7 @@ class Class239_Sub21 : Class239 {
                 while (i_27_ > i_32_) {
                     val c_33_ = string_19_.get(i_32_)
                     val c_34_ = string.get(i_32_)
-                    if (c_34_ != c_33_) return (Class113.method1056(i_18_, 30316, c_33_) - Class113.method1056(i_18_, 30316, c_34_))
+                    if (c_34_ != c_33_) return (CameraNodeList.method1056(i_18_, 30316, c_33_) - CameraNodeList.method1056(i_18_, 30316, c_34_))
                     i_32_++
                 }
                 return 0

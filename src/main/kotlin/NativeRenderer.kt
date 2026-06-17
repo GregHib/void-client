@@ -1106,7 +1106,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         return (this.anInt8079 + this.anInt8062 + this.anInt8063)
     }
 
-    abstract fun method3871(class113: Class113?, i: Int)
+    abstract fun method3871(cameraNodeList: CameraNodeList?, i: Int)
 
     abstract fun method3872(i: Int, i_117_: Int, class304: Class304?, bool: Boolean, i_118_: Int, `is`: ByteArray?): Interface18_Impl1?
 

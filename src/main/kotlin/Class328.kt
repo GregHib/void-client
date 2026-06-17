@@ -44,7 +44,7 @@ open class Class328 {
             anInt4101++
             var class348_sub42_sub19 = (Class322.aClass308_4036!!.method2302(i_2_.toLong(), (-68).toByte()) as Class348_Sub42_Sub19?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
-            val `is` = Class113.aClass45_1743!!.method410(-1860, i_2_, 0)
+            val `is` = CameraNodeList.aClass45_1743!!.method410(-1860, i_2_, 0)
             if (`is` == null || `is`.size <= 1) return null
             try {
                 class348_sub42_sub19 = method2502(`is`, -104)

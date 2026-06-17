@@ -128,7 +128,7 @@ object Class164 {
             Class369_Sub2.aClass45_8589 = Class369_Sub2.method3571(false, 9, (-23).toByte(), 1)
             Class16.aClass45_233 = Class369_Sub2.method3571(false, 10, (-23).toByte(), 1)
             Class348_Sub23_Sub2.aClass45_9033 = Class369_Sub2.method3571(false, 11, (-23).toByte(), 1)
-            Class113.aClass45_1743 = Class369_Sub2.method3571(false, 12, (-23).toByte(), 1)
+            CameraNodeList.aClass45_1743 = Class369_Sub2.method3571(false, 12, (-23).toByte(), 1)
             Class239_Sub4.aClass45_5878 = Class369_Sub2.method3571(false, 14, (-23).toByte(), 1)
             Class123.aClass45_1815 = Class369_Sub2.method3571(false, 15, (-23).toByte(), 1)
             Class94.aClass45_1538 = Class369_Sub2.method3571(false, 16, (-23).toByte(), 1)
@@ -295,7 +295,7 @@ object Class164 {
             Class170.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, i xor 0x6ff7.inv())
             Class255.method1933(Class21.aClass45_322, Class348_Sub8.aRenderer6654, true)
-            method901(Class113.aAbstractModelRendererArray1744, 515880227)
+            method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
         }
         return method3063(false)
     }

@@ -150,7 +150,7 @@ class Class31 {
         var anInt427: Int = 0
         @JvmField
         var anInt428: Int = 0
-        var aClass113_430: Class113?
+        var aCameraNodeList_430: CameraNodeList?
         @JvmField
         var anInt432: Int = 0
         @JvmField
@@ -177,18 +177,18 @@ class Class31 {
                 Class369_Sub3_Sub1.aBoolean10174 = true
                 Class348_Sub27.aFloat6898 += (12.0f - Class348_Sub27.aFloat6898) / 2.0f
                 Class50_Sub1.aBoolean5224 = true
-                if (i.toInt() != 68) aClass113_430 = null
+                if (i.toInt() != 68) aCameraNodeList_430 = null
             }
         }
 
         @JvmStatic
         fun method328(i: Int) {
             if (i != 0) anInt425 = -128
-            aClass113_430 = null
+            aCameraNodeList_430 = null
         }
 
         init {
-            aClass113_430 = Class113()
+            aCameraNodeList_430 = CameraNodeList()
         }
     }
 }

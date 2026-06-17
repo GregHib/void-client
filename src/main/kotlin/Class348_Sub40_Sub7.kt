@@ -350,7 +350,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     i_50_ = (class46.anInt749)
                                                 }
                                                 if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (class46.anInt789) + i_25_)
-                                                class324.method2568(null, class46.anInt789, (-77).toByte(), null, 0, Class113.aAbstractModelRendererArray1744, (-(i_28_ and 0xff) + 255 shl 24) or i_50_, i_25_, class46.anInt709, class46.anInt700, string, 0, i_24_, class46.anInt762, (if (!(class46.aBoolean769)) -1 else (-(0xff and i_28_) + 255 shl 24)), class46.anInt773, class46.anInt673)
+                                                class324.method2568(null, class46.anInt789, (-77).toByte(), null, 0, CameraNodeList.aAbstractModelRendererArray1744, (-(i_28_ and 0xff) + 255 shl 24) or i_50_, i_25_, class46.anInt709, class46.anInt700, string, 0, i_24_, class46.anInt762, (if (!(class46.aBoolean769)) -1 else (-(0xff and i_28_) + 255 shl 24)), class46.anInt773, class46.anInt673)
                                                 if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (string!!.trim { it <= ' ' }.length > 0) {
                                                     if (Class318_Sub1_Sub3_Sub2.aBoolean10046) {
@@ -360,8 +360,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                         }
                                                     } else {
                                                         val class143 = (method1151(-25411, (Class348_Sub8.aRenderer6654), (class46.anInt702)))
-                                                        val i_51_ = (class143!!.method1187(string, bool_15_, class46.anInt709, (Class113.aAbstractModelRendererArray1744)))
-                                                        val i_52_ = (class143.method1185((Class113.aAbstractModelRendererArray1744), 0, class46.anInt673, class46.anInt709, string))
+                                                        val i_51_ = (class143!!.method1187(string, bool_15_, class46.anInt709, (CameraNodeList.aAbstractModelRendererArray1744)))
+                                                        val i_52_ = (class143.method1185((CameraNodeList.aAbstractModelRendererArray1744), 0, class46.anInt673, class46.anInt709, string))
                                                         if (Class59_Sub1.aBoolean5300) {
                                                             if (!bool) Class54.method503(i_25_ + i_52_, i_24_, (-74).toByte(), (i_24_ - -i_51_), i_25_)
                                                             else Class338.method2663(-5590, i_24_, i_51_ + i_24_, i_25_, (i_25_ + i_52_))

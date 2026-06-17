@@ -64,7 +64,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     companion object {
         var anInt3313: Int = 0
-        var aClass113_3314: Class113? = Class113()
+        var aCameraNodeList_3314: CameraNodeList? = CameraNodeList()
         var anInt3315: Int = 0
         var anInt3316: Int = 0
         var anInt3317: Int = 0
@@ -74,7 +74,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
 
         @JvmStatic
         fun method1980(i: Int) {
-            if (i > 92) aClass113_3314 = null
+            if (i > 92) aCameraNodeList_3314 = null
         }
 
         fun method1981(string: String?, i: Byte, c: Char, string_0_: String?): String? {

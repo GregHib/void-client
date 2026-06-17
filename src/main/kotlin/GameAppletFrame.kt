@@ -22,7 +22,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     fun stop() {
         anInt24++
-        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L
+        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) CameraNodeList.aLong1739 = Class62.method599(-73) - -4000L
     }
 
     override fun getParameter(string: String?): String? {
@@ -279,7 +279,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     override fun destroy() {
         anInt21++
         if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 === this && !Class26.aBoolean384) {
-            Class113.aLong1739 = Class62.method599(-108)
+            CameraNodeList.aLong1739 = Class62.method599(-108)
             Class286_Sub5.method2161(77.toByte(), 5000L)
             Class231.aClass297_2993 = null
             method90(false, false)
@@ -334,7 +334,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 method87((-97).toByte())
                 method92(28740)
                 Class348_Sub8.aClass241_6660 = Class229.method1631(false)
-                while (Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739)) {
+                while (CameraNodeList.aLong1739 == 0L || (Class62.method599(-124) < CameraNodeList.aLong1739)) {
                     FloatCameraTransform.anInt5744 = Class348_Sub8.aClass241_6660!!.method1861(0, Class73.aLong4783)
                     var i = 0
                     while (FloatCameraTransform.anInt5744 > i) {
@@ -428,7 +428,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     fun start() {
         anInt36++
-        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L
+        if (this === Class348_Sub40_Sub9.anGameApplet_Frame_9169 && !Class26.aBoolean384) CameraNodeList.aLong1739 = 0L
     }
 
     abstract fun method99(i: Byte)

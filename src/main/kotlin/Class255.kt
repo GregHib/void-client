@@ -316,7 +316,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 class207s = Class207.method1519(class45, Class239_Sub10.anInt5948, 0)
                 Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
                 for (i in class207s.indices) Class348_Sub40_Sub37.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(class207s[i], true)
-                class207s = Class207.method1519(class45, Class113.anInt1742, 0)
+                class207s = Class207.method1519(class45, CameraNodeList.anInt1742, 0)
                 Class348_Sub12.aAbstractModelRendererArray6742 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
                 run {
                     var i = 0
@@ -329,11 +329,11 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 Class240.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
                 for (i in class207s.indices) Class240.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(class207s[i], true)
                 class207s = Class207.method1519(class45, Class348_Sub40_Sub38.anInt9473, 0)
-                Class113.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
+                CameraNodeList.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(class207s!!.size)
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class113.aAbstractModelRendererArray1744!![i] = var_renderer!!.method3691(class207s[i], true)
+                        CameraNodeList.aAbstractModelRendererArray1744!![i] = var_renderer!!.method3691(class207s[i], true)
                         i++
                     }
                 }

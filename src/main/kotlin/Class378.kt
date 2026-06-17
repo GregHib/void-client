@@ -625,11 +625,11 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         /* empty */
     }
 
-    override fun method3871(class113: Class113?, i: Int) {
+    override fun method3871(cameraNodeList: CameraNodeList?, i: Int) {
         var i_68_ = i
-        if (Class31.aClass113_430 == class113) i_68_ = 65536
-        else if (NativeShaderProgram.aClass113_9773 == class113) i_68_ = 131072
-        else if (class113 == Class261.aClass113_3314) i_68_ = 196608
+        if (Class31.aCameraNodeList_430 == cameraNodeList) i_68_ = 65536
+        else if (NativeShaderProgram.aCameraNodeList_9773 == cameraNodeList) i_68_ = 131072
+        else if (cameraNodeList == Class261.aCameraNodeList_3314) i_68_ = 196608
         this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 11, this.anInt8175 or i_68_)
     }
 

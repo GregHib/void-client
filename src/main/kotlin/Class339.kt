@@ -105,9 +105,9 @@ class Class339 : Runnable {
             if (i < Class369.anInt4960) {
                 i_9_ = (i_7_ * Class369.anInt4960 shr 12) + i_8_
                 i_10_ = Class369.anInt4960
-            } else if (i > Class113.anInt1745) {
-                i_9_ = i_8_ - -(Class113.anInt1745 * i_7_ shr 12)
-                i_10_ = Class113.anInt1745
+            } else if (i > CameraNodeList.anInt1745) {
+                i_9_ = i_8_ - -(CameraNodeList.anInt1745 * i_7_ shr 12)
+                i_10_ = CameraNodeList.anInt1745
             } else {
                 i_10_ = i
                 i_9_ = i_2_
@@ -116,12 +116,12 @@ class Class339 : Runnable {
             var i_11_: Int
             var i_12_: Int
             if (Class369.anInt4960 <= i_4_) {
-                if (Class113.anInt1745 >= i_4_) {
+                if (CameraNodeList.anInt1745 >= i_4_) {
                     i_11_ = i_4_
                     i_12_ = i_3_
                 } else {
-                    i_11_ = Class113.anInt1745
-                    i_12_ = i_8_ + (Class113.anInt1745 * i_7_ shr 12)
+                    i_11_ = CameraNodeList.anInt1745
+                    i_12_ = i_8_ + (CameraNodeList.anInt1745 * i_7_ shr 12)
                 }
             } else {
                 i_11_ = Class369.anInt4960

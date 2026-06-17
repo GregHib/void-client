@@ -342,16 +342,16 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         if (i.toInt() == -26) anInt9834++
     }
 
-    override fun method3871(class113: Class113?, i: Int) {
+    override fun method3871(cameraNodeList: CameraNodeList?, i: Int) {
         try {
             if (i == 0) {
                 anInt9836++
-                if (class113 == Class150.aClass113_2047) {
+                if (cameraNodeList == Class150.aCameraNodeList_2047) {
                     glDisable(3168)
                     glDisable(3169)
                     glDisable(3170)
                 } else {
-                    val i_16_ = Class318_Sub1_Sub3.method2411(class113, 25602)
+                    val i_16_ = Class318_Sub1_Sub3.method2411(cameraNodeList, 25602)
                     glTexGeni(8192, 9472, i_16_)
                     glEnable(3168)
                     glTexGeni(8193, 9472, i_16_)
@@ -361,7 +361,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.CD(" + (if (class113 != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.CD(" + (if (cameraNodeList != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

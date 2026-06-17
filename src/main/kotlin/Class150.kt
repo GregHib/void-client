@@ -62,7 +62,7 @@ class Class150 internal constructor(class230: Class230?, i: Int, class45: Class4
     }
 
     companion object {
-        var aClass113_2047: Class113?
+        var aCameraNodeList_2047: CameraNodeList?
         var anInt2049: Int = 0
         var anInt2051: Int = 0
         var anInt2052: Int = 0
@@ -112,12 +112,12 @@ class Class150 internal constructor(class230: Class230?, i: Int, class45: Class4
 
         @JvmStatic
         fun method1208(i: Int) {
-            aClass113_2047 = null
+            aCameraNodeList_2047 = null
             val i_8_ = -65 / ((i - -58) / 57)
         }
 
         init {
-            aClass113_2047 = Class113()
+            aCameraNodeList_2047 = CameraNodeList()
         }
     }
 }

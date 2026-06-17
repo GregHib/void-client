@@ -1852,7 +1852,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub32.anInt9417 = 0
             Class308.anInt3881 = 0
             Class239_Sub23.anInt6079 = 0
-            Class113.anInt1740 = 0
+            CameraNodeList.anInt1740 = 0
             Class64_Sub2.anInt5469 = 0
             NativeRenderer.anInt7929 = 0
             Class279.anInt3598 = 0
@@ -3251,7 +3251,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class286_Sub2.anInt6206 = 0
             Class318_Sub1_Sub3_Sub3.anInt10249 = 0
             MinimapRenderer.anInt1587 = 0
-            Class113.anInt1741 = 0
+            CameraNodeList.anInt1741 = 0
             OpenGlTerrainTile.anInt8271 = 0
             Class124.anInt1858 = 0
             Class348_Sub49.anInt7199 = 0

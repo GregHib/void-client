@@ -4682,7 +4682,7 @@ object Class66 {
                     val i_433_ = anIntArray1149!![anInt1173]
                     val i_434_ = anIntArray1149!![anInt1173 + 1]
                     val class143 = method1819(i_434_, 0, -123, SoftwareSpriteRaster.aClass45_1627!!)
-                    anIntArray1149!![anInt1173++] = class143!!.method1190(Class113.aAbstractModelRendererArray1744, 1, string, i_433_)
+                    anIntArray1149!![anInt1173++] = class143!!.method1190(CameraNodeList.aAbstractModelRendererArray1744, 1, string, i_433_)
                     return
                 }
                 if (i == 4109) {
@@ -4691,7 +4691,7 @@ object Class66 {
                     val i_435_ = anIntArray1149!![anInt1173]
                     val i_436_ = anIntArray1149!![anInt1173 + 1]
                     val class143 = method1819(i_436_, 0, -79, SoftwareSpriteRaster.aClass45_1627!!)
-                    anIntArray1149!![anInt1173++] = class143!!.method1187(string, false, i_435_, Class113.aAbstractModelRendererArray1744)
+                    anIntArray1149!![anInt1173++] = class143!!.method1187(string, false, i_435_, CameraNodeList.aAbstractModelRendererArray1744)
                     return
                 }
                 if (i == 4110) {
@@ -4802,7 +4802,7 @@ object Class66 {
                     val string = aStringArray1152!![--anInt1170]
                     val i_455_ = anIntArray1149!![--anInt1173]
                     val class143 = method1819(i_455_, 0, -114, SoftwareSpriteRaster.aClass45_1627!!)
-                    anIntArray1149!![anInt1173++] = class143!!.method1186(string, Class113.aAbstractModelRendererArray1744, false)
+                    anIntArray1149!![anInt1173++] = class143!!.method1186(string, CameraNodeList.aAbstractModelRendererArray1744, false)
                     return
                 }
             } else if (i < 4300) {

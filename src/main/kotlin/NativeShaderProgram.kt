@@ -20,7 +20,7 @@ class NativeShaderProgram(i: Int) : ShaderProgram() {
         @JvmField
         var anInt9772: Int = 0
         @JvmField
-        var aClass113_9773: Class113? = Class113()
+        var aCameraNodeList_9773: CameraNodeList? = CameraNodeList()
         @JvmField
         var anInt9774: Int = 0
         @JvmField
@@ -38,7 +38,7 @@ class NativeShaderProgram(i: Int) : ShaderProgram() {
 
         @JvmStatic
         fun method3441(i: Int) {
-            aClass113_9773 = null
+            aCameraNodeList_9773 = null
             if (i != 1) method3439(-118)
         }
     }

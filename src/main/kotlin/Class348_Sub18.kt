@@ -124,7 +124,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class369_Sub2.aClass45_8589!!.method412(43.toByte())
                 Class16.aClass45_233!!.method412(20.toByte())
                 Class348_Sub23_Sub2.aClass45_9033!!.method412(89.toByte())
-                Class113.aClass45_1743!!.method412((-125).toByte())
+                CameraNodeList.aClass45_1743!!.method412((-125).toByte())
                 SoftwareSpriteRaster.aClass45_1627!!.method412((-117).toByte())
                 Class239_Sub4.aClass45_5878!!.method412(29.toByte())
                 Class123.aClass45_1815!!.method412(80.toByte())

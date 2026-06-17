@@ -102,7 +102,7 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
             var i_7_ = class273.anInt5167 or (i shl 10)
             var class348_sub42_sub19 = (Class322.aClass308_4036!!.method2302(i_7_.toLong() shl 16, (-91).toByte()) as Class348_Sub42_Sub19?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
-            var `is` = (Class113.aClass45_1743!!.method415(73.toByte(), Class113.aClass45_1743!!.method423(i_7_, (-90).toByte())))
+            var `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, (-90).toByte())))
             if (`is` != null) {
                 if (`is`.size <= 1) return null
                 try {
@@ -117,7 +117,7 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
             i_7_ = class273.anInt5167 or (65536 + i_5_ shl 10)
             class348_sub42_sub19 = (Class322.aClass308_4036!!.method2302(i_7_.toLong() shl 16, (-31).toByte()) as Class348_Sub42_Sub19?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
-            `is` = (Class113.aClass45_1743!!.method415(73.toByte(), Class113.aClass45_1743!!.method423(i_7_, (-107).toByte())))
+            `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, (-107).toByte())))
             if (`is` != null) {
                 if (`is`.size <= 1) return null
                 try {
@@ -132,7 +132,7 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
             i_7_ = class273.anInt5167 or 0x3fffc00
             class348_sub42_sub19 = (Class322.aClass308_4036!!.method2302(i_7_.toLong() shl 16, (-107).toByte()) as Class348_Sub42_Sub19?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
-            `is` = (Class113.aClass45_1743!!.method415(73.toByte(), Class113.aClass45_1743!!.method423(i_7_, 104.toByte())))
+            `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, 104.toByte())))
             if (`is` != null) {
                 if (`is`.size <= 1) return null
                 try {
