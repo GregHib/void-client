@@ -5,8 +5,8 @@ import ModelBatchBase.Companion.method1129
 import GlVertexBufferBase.Companion.method1148
 import GlCubeMapTexture.Companion.method243
 import GlCubeMapTexture.Companion.method244
-import Class16.method259
-import Class16.method262
+import SceneTilePlaneManager.method259
+import SceneTilePlaneManager.method262
 import Class2.Companion.method170
 import Class239_Sub1.Companion.method1719
 import Class239_Sub14.Companion.method1781

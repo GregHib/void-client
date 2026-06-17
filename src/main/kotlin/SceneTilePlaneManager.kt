@@ -1,7 +1,7 @@
 /* Class16 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class16 {
+object SceneTilePlaneManager {
     @JvmField
     var anInt230: Int = 0
     @JvmField

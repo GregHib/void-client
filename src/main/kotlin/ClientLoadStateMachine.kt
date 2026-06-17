@@ -129,7 +129,7 @@ object ClientLoadStateMachine {
             Class59_Sub2_Sub1.aClass45_8667 = Class369_Sub2.method3571(true, 6, (-23).toByte(), 1)
             RasterSprite.aClass45_5207 = Class369_Sub2.method3571(false, 7, (-23).toByte(), 1)
             Class369_Sub2.aClass45_8589 = Class369_Sub2.method3571(false, 9, (-23).toByte(), 1)
-            Class16.aClass45_233 = Class369_Sub2.method3571(false, 10, (-23).toByte(), 1)
+            SceneTilePlaneManager.aClass45_233 = Class369_Sub2.method3571(false, 10, (-23).toByte(), 1)
             Class348_Sub23_Sub2.aClass45_9033 = Class369_Sub2.method3571(false, 11, (-23).toByte(), 1)
             CameraNodeList.aClass45_1743 = Class369_Sub2.method3571(false, 12, (-23).toByte(), 1)
             Class239_Sub4.aClass45_5878 = Class369_Sub2.method3571(false, 14, (-23).toByte(), 1)
@@ -215,7 +215,7 @@ object ClientLoadStateMachine {
             method3038(-1)
             method4011(i + 29684, Class239.aClass45_3146)
             Class348_Sub29.method3004(RasterSprite.aClass45_5207, false, Class348_Sub40_Sub4.aRenderConfig9113)
-            val class296 = Class296(Class16.aClass45_233!!.method391("huffman", "", -29832)!!)
+            val class296 = Class296(SceneTilePlaneManager.aClass45_233!!.method391("huffman", "", -29832)!!)
             method3896(class296, 13.toByte())
             try {
                 init()
@@ -252,7 +252,7 @@ object ClientLoadStateMachine {
             Class59_Sub2_Sub1.aClass45_8667!!.method404(0, true, true)
             Class21.aClass45_322!!.method404(i + 28660, true, true)
             SoftwareSpriteRaster.aClass45_1627!!.method404(0, true, true)
-            Class16.aClass45_233!!.method404(0, true, true)
+            SceneTilePlaneManager.aClass45_233!!.method404(0, true, true)
             Class348_Sub35.aClass45_6980!!.method404(0, true, true)
             Class95.aClass45_1541!!.anInt634 = 2
             Class319.aBoolean3988 = true

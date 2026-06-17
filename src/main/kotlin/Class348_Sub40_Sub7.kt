@@ -133,7 +133,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                 var i_27_ = 0
                                 if (Class59_Sub1.aBoolean5300) {
                                     i_26_ = NativeTerrainTile.method4008((-124).toByte())
-                                    i_27_ = Class16.method260(bool_15_)
+                                    i_27_ = SceneTilePlaneManager.method260(bool_15_)
                                 }
                                 var i_28_ = class46.anInt696
                                 if (Class299_Sub2.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127

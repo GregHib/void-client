@@ -1,5 +1,5 @@
 import MinimapRectClipper.method226
-import Class16.method260
+import SceneTilePlaneManager.method260
 import Class348_Sub17.Companion.method2929
 import Class359.Companion.method3490
 import Class45.Companion.method395

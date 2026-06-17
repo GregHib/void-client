@@ -50,7 +50,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             if (Class282.anInt3655 != 1) {
                 if (Class282.anInt3655 == 2) {
                     if (!Class59_Sub1.aBoolean5300) Class304.method2291((-127).toByte(), i, i_0_)
-                    else Class304.method2291((-122).toByte(), i + NativeTerrainTile.method4008((-128).toByte()), Class16.method260(!bool) + i_0_)
+                    else Class304.method2291((-122).toByte(), i + NativeTerrainTile.method4008((-128).toByte()), SceneTilePlaneManager.method260(!bool) + i_0_)
                 }
             } else Class325.method2599(101.toByte(), RectangleRegion.aClass348_Sub42_Sub12_1946, i_0_, i)
             anInt8354++

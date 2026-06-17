@@ -10,8 +10,8 @@ class WidgetNodeLink {
         anInt2043++
         if (i.toInt() == -106 && OpenGlRenderer.anInt7722 < 500) {
             this.aClass318_Sub1_Sub3_2040 = null
-            this.aWidgetNodeLink_2038 = Class16.aWidgetNodeLink_231
-            Class16.aWidgetNodeLink_231 = this
+            this.aWidgetNodeLink_2038 = SceneTilePlaneManager.aWidgetNodeLink_231
+            SceneTilePlaneManager.aWidgetNodeLink_231 = this
             OpenGlRenderer.anInt7722++
         }
     }

@@ -61,7 +61,7 @@ import LinkedListIterator.Companion.method1239
 import LinkedListIterator.Companion.method1242
 import SettingsCrcWriter.method1246
 import HeapInfoRecord.Companion.method1249
-import Class16.method260
+import SceneTilePlaneManager.method260
 import KeyboardLayoutConfig.Companion.method1254
 import ServerConnectionInfo.Companion.method1261
 import RectangleBounds.Companion.method1265
@@ -871,7 +871,7 @@ class Client : GameAppletFrame() {
         method287(51)
         method526(85)
         method2657(124.toByte())
-        Class16.method261((-120).toByte())
+        SceneTilePlaneManager.method261((-120).toByte())
         method1880(i + -221)
         method2225(i + -76)
         ParserSpecialCharsHolder.method1136((-98).toByte())

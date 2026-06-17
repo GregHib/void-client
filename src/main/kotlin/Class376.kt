@@ -146,9 +146,9 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
             if (i < 9) anInt4559 = -27
             anInt4547++
             val widgetNodeLink: WidgetNodeLink
-            if (Class16.aWidgetNodeLink_231 != null) {
-                widgetNodeLink = Class16.aWidgetNodeLink_231!!
-                Class16.aWidgetNodeLink_231 = Class16.aWidgetNodeLink_231!!.aWidgetNodeLink_2038
+            if (SceneTilePlaneManager.aWidgetNodeLink_231 != null) {
+                widgetNodeLink = SceneTilePlaneManager.aWidgetNodeLink_231!!
+                SceneTilePlaneManager.aWidgetNodeLink_231 = SceneTilePlaneManager.aWidgetNodeLink_231!!.aWidgetNodeLink_2038
                 widgetNodeLink.aWidgetNodeLink_2038 = null
                 OpenGlRenderer.anInt7722--
             } else widgetNodeLink = WidgetNodeLink()

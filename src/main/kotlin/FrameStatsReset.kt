@@ -1963,7 +1963,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RenderableGroup.anInt5003 = 0
             Class234.anInt3045 = 0
             Class348_Sub49_Sub2.anInt9760 = 0
-            Class16.anInt234 = 0
+            SceneTilePlaneManager.anInt234 = 0
             Class299_Sub1.anInt6320 = 0
             Class348_Sub49.anInt7155 = 0
             OpenGlTerrainTile.anInt8263 = 0
@@ -2755,7 +2755,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub3.anInt5861 = 0
             Class318_Sub1_Sub3_Sub1.anInt10011 = 0
             Class367_Sub11.anInt7400 = 0
-            Class16.anInt230 = 0
+            SceneTilePlaneManager.anInt230 = 0
             Class59_Sub2.anInt5301 = 0
             Class318_Sub1_Sub2.anInt8735 = 0
             Player.anInt10525 = 0
@@ -2806,7 +2806,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatCameraTransform.anInt5718 = 0
             MatrixCameraTransform.anInt5659 = 0
             Class51.anInt866 = 0
-            Class16.anInt232 = 0
+            SceneTilePlaneManager.anInt232 = 0
             VarpStore.anInt5075 = 0
             Class5_Sub1.anInt8340 = 0
             Class369_Sub3.anInt8594 = 0

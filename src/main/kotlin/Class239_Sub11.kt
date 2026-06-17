@@ -112,7 +112,7 @@ class Class239_Sub11 : Class239 {
                 Class267.aClass267_3419!!.method2025(Class292(Class82.aClass45_1434!!), false)
                 Class267.aClass267_3420!!.method2025(Class292(aClass45_3146!!), false)
                 Class267.aClass267_3421!!.method2025(Class292(Class262.aClass45_3323!!), false)
-                Class267.aClass267_3422!!.method2025(Class73((Class16.aClass45_233), "huffman"), false)
+                Class267.aClass267_3422!!.method2025(Class73((SceneTilePlaneManager.aClass45_233), "huffman"), false)
                 Class267.aClass267_3423!!.method2025(Class292(Class348_Sub35.aClass45_6980!!), false)
                 Class267.aClass267_3424!!.method2025(Class292(CameraNodeList.aClass45_1743!!), false)
                 Class267.aClass267_3425!!.method2025(Class292(SoftwareSpriteRaster.aClass45_1627!!), false)

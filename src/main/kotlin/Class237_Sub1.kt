@@ -2,7 +2,7 @@ import CollisionMapRegion.Companion.method1045
 import NativeVertexBuffer.Companion.method1079
 import NpcSummaryDefinition.Companion.method1166
 import OrientationRotator.method1201
-import Class16.method258
+import SceneTilePlaneManager.method258
 import ClickFeedbackTask.Companion.method1353
 import Class223.Companion.method1614
 import Class231.Companion.method1639

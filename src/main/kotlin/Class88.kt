@@ -1,5 +1,5 @@
 import Gl3dTexture.Companion.method248
-import Class16.method260
+import SceneTilePlaneManager.method260
 import Class239_Sub18.Companion.method1802
 import Class239_Sub19.Companion.method1804
 import Class348_Sub3.Companion.method2739
