@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glFramebufferTexture3DEXT
 import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage3Dub
 
-class Class258_Sub1 : Class258 {
+class GlTexture3D : GlTexture {
     @JvmField
     var anInt8522: Int = 0
     @JvmField

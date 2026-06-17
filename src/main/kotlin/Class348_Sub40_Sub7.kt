@@ -146,8 +146,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         continue
                                     }
                                     if (Class300.aBoolean3819 && ScrollingWidgetComponentNode.aBoolean8386) {
-                                        var i_29_ = (Class258_Sub4.aClass373_8552!!.method3597(true) - -i_26_)
-                                        var i_30_ = (Class258_Sub4.aClass373_8552!!.method3594(101.toByte()) + i_27_)
+                                        var i_29_ = (GlTexture1D.aClass373_8552!!.method3597(true) - -i_26_)
+                                        var i_30_ = (GlTexture1D.aClass373_8552!!.method3594(101.toByte()) + i_27_)
                                         i_29_ -= Class318_Sub4.anInt6411
                                         i_30_ -= ModelDefinitionCache.anInt2872
                                         if (Class348_Sub40_Sub37.Companion.anInt9461 > i_29_) i_29_ = Class348_Sub40_Sub37.Companion.anInt9461
@@ -434,7 +434,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                         (player.aCompositeNpcModelBuilder_10536!!.method1226((Class318_Sub1_Sub3_Sub3.aVarpStore_10209), null, null, true, (Exception_Sub1.aModelHeaderCache_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.Companion.aModelDefinitionLoader_9342), class46.anInt841, (Class348_Sub8.aRenderer6654), (MapAreaDefinition.aClass278_2529), (ParticleEmitterNode.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aClass261_5558)))
                                                 }
                                             } else if ((class46.anInt770) == 8 || (class46.anInt770) == 9) {
-                                                val class348_sub13 = (Class258_Sub4.method1974((-123).toByte(), (class46.anInt753), false))
+                                                val class348_sub13 = (GlTexture1D.method1974((-123).toByte(), (class46.anInt753), false))
                                                 val class17 = (if ((class46.anInt699) == -1) null else (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7)))
                                                 if (class348_sub13 != null) {
                                                     val class154 = (if (class46.aBoolean720) (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) else null)

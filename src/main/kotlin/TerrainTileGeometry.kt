@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, softwareSpriteRaster: SoftwareSpriteRaster?, var_s_Sub2: OpenGlTerrainTile?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
-    private var aClass258_Sub3_2998: Class258_Sub3? = null
+    private var aClass258_Sub3_2998: GlTexture2D? = null
     private val aSoftwareSpriteRaster_2999: SoftwareSpriteRaster?
     private val aHa_Sub2_3000: OpenGlRenderer?
     private var anInterface8_3001: Interface8? = null
@@ -140,7 +140,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
                         i_26_ += aSoftwareSpriteRaster_2999.anInt1624 - 128
                     }
                     if (aClass258_Sub3_2998 == null) {
-                        aClass258_Sub3_2998 = Class258_Sub3(aHa_Sub2_3000, 3553, 6406, 128, 128, false, (aHa_Sub2_3000.aByteArray7879), 6406, false)
+                        aClass258_Sub3_2998 = GlTexture2D(aHa_Sub2_3000, 3553, 6406, 128, 128, false, (aHa_Sub2_3000.aByteArray7879), 6406, false)
                         aClass258_Sub3_2998!!.method1965(false, false, 10243)
                         aClass258_Sub3_2998!!.method1957(9728, true)
                     } else aClass258_Sub3_2998!!.method1970(0, 0, 128, false, 0, 128, 6406, -69, aHa_Sub2_3000.aByteArray7879, 0)

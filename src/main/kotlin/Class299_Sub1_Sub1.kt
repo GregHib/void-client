@@ -2,9 +2,9 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: OpenGlRenderer, private val anInt8689: Int, private val anInt8695: Int, private val anInt8691: Int, private val anInt8690: Int, private val anInt8686: Int, private val anInt8697: Int) : Class299_Sub1() {
-    private var aClass258_Sub2_8688: Class258_Sub2? = null
+    private var aClass258_Sub2_8688: GlTextureCubeMap? = null
 
-    override fun method2256(i: Byte): Class258_Sub2? {
+    override fun method2256(i: Byte): GlTextureCubeMap? {
         anInt8692++
         if (i.toInt() != -121) method2256(33.toByte())
         if (aClass258_Sub2_8688 == null) {
@@ -25,7 +25,7 @@ class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: OpenGlR
                 if (class12.aByte205 > 0) bool = true
             }
             for (i_3_ in 0..5) Class341.anIntArrayArray4233!![i_3_] = var_d.method5(false, Class308.anIntArray3883!![i_3_], 1.0f, i_0_, i_0_, i + 192)
-            aClass258_Sub2_8688 = Class258_Sub2(aHa_Sub2_8693, 6407, i_0_, bool, Class341.anIntArrayArray4233)
+            aClass258_Sub2_8688 = GlTextureCubeMap(aHa_Sub2_8693, 6407, i_0_, bool, Class341.anIntArrayArray4233)
         }
         return aClass258_Sub2_8688
     }

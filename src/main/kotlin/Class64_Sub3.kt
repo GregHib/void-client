@@ -460,11 +460,11 @@ class Class64_Sub3 : Class64 {
                     i_105_ = i_106_
                     break
                 }
-                if (l == Class258_Sub2.aLongArray8530!![i_106_]) return (i_107_ - 1).toShort()
+                if (l == GlTextureCubeMap.aLongArray8530!![i_106_]) return (i_107_ - 1).toShort()
                 i_106_++
             }
             aShortArray5649!![i_105_] = (anInt5529 + 1).toShort()
-            Class258_Sub2.aLongArray8530!![i_105_] = l
+            GlTextureCubeMap.aLongArray8530!![i_105_] = l
             aShortArray5564!![anInt5529] = i_98_.toShort()
             aShortArray5583!![anInt5529] = i.toShort()
             aShortArray5576!![anInt5529] = i_97_.toShort()
@@ -3088,7 +3088,7 @@ class Class64_Sub3 : Class64 {
                 }
                 val i_715_ = anInt5632 * 3
                 aShortArray5649 = ShortArray(i_715_)
-                Class258_Sub2.aLongArray8530 = LongArray(i_715_)
+                GlTextureCubeMap.aLongArray8530 = LongArray(i_715_)
                 aShortArray5601 = ShortArray(anInt5632)
                 aFloatArray5571 = FloatArray(i_715_)
                 aShortArray5564 = ShortArray(i_715_)
@@ -3419,7 +3419,7 @@ class Class64_Sub3 : Class64 {
                     i_815_++
                 }
                 anIntArray5626!![i_811_] = anInt5537
-                Class258_Sub2.aLongArray8530 = null
+                GlTextureCubeMap.aLongArray8530 = null
                 aShortArray5564 = NativeVertexBuffer.method1078(aShortArray5564, anInt5529, 114)
                 aShortArray5583 = NativeVertexBuffer.method1078(aShortArray5583, anInt5529, 126)
                 aShortArray5576 = NativeVertexBuffer.method1078(aShortArray5576, anInt5529, 100)

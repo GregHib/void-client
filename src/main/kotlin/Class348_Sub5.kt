@@ -6,7 +6,7 @@ import java.net.Socket
 abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRenderer) : Class348() {
     @JvmField
     var aBoolean6621: Boolean = false
-    abstract fun method2750(class258_sub3: Class258_Sub3?, class258_sub3_0_: Class258_Sub3?, i: Int, i_1_: Byte)
+    abstract fun method2750(class258_sub3: GlTexture2D?, class258_sub3_0_: GlTexture2D?, i: Int, i_1_: Byte)
 
     abstract fun method2751(bool: Boolean): Boolean
 

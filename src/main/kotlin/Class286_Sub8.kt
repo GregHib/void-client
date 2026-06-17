@@ -22,9 +22,9 @@ class Class286_Sub8 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
         }
     }
 
-    override fun method2140(class258: Class258?, i: Byte, i_1_: Int) {
+    override fun method2140(glTexture: GlTexture?, i: Byte, i_1_: Int) {
         anInt6303++
-        this.aHa_Sub2_3684.method3771((-86).toByte(), class258)
+        this.aHa_Sub2_3684.method3771((-86).toByte(), glTexture)
         this.aHa_Sub2_3684.method3761(0, i_1_)
         if (i >= -89) method2172(12)
     }

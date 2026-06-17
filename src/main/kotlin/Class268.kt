@@ -150,7 +150,7 @@ class Class268 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
         fun method2038(i: Int) {
             if (i <= -47) {
                 for (i_9_ in 0..<HintArrowOrMessage.anInt2021) {
-                    val class10 = Class258_Sub2.aParticleEmitterNodeArray8531s!![i_9_]
+                    val class10 = GlTextureCubeMap.aParticleEmitterNodeArray8531s!![i_9_]
                     if (class10!!.aByte180.toInt() == 3) {
                         if (class10.aClass348_Sub16_Sub5_176 == null) class10.anInt188 = -2147483648
                         else Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class10.aClass348_Sub16_Sub5_176!!)

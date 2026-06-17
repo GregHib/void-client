@@ -18,9 +18,9 @@ class GlSpriteRenderer : AbstractModelRenderer {
     private var aBoolean8427: Boolean
     private var anInt8429 = 0
     private val aHa_Sub2_8430: OpenGlRenderer?
-    private var aClass258_Sub3_Sub1_8431: Class258_Sub3_Sub1? = null
+    private var aClass258_Sub3_Sub1_8431: GlTexture2DRegion? = null
     private var anInt8432 = 0
-    private val aClass258_Sub3_Sub1_8434: Class258_Sub3_Sub1
+    private val aClass258_Sub3_Sub1_8434: GlTexture2DRegion
     private var anInt8446: Int
     private var anInt8447: Int
     private var anInt8449: Int

@@ -3,7 +3,7 @@
 */
 class NativeSprite(var_ha_Sub2: OpenGlRenderer?, i: Int, i_1_: Int, `is`: ByteArray?) : Sprite() {
     @JvmField
-    var aClass258_Sub3_Sub1_5193: Class258_Sub3_Sub1? = null
+    var aClass258_Sub3_Sub1_5193: GlTexture2DRegion? = null
 
     init {
         try {

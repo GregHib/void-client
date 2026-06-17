@@ -225,7 +225,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or Class286_Sub6.aBooleanArray6270!![i_17_]
                                     Class348_Sub26.Companion.anIntArray6890!![method1166(31, Class5_Sub1.anInt8352++)] = i_17_
                                 } else if (i_16_ == 2) {
-                                    Class258_Sub2.aStringArray8532!![i_17_] = class348_sub42_sub15.aString9654
+                                    GlTextureCubeMap.aStringArray8532!![i_17_] = class348_sub42_sub15.aString9654
                                     RemoveRoofsOptionState.anIntArray6061!![method1166(Class348_Sub40_Sub30.anInt9385++, 31)] = i_17_
                                 } else if (i_16_ == 3) {
                                     val class46 = method2570(1512932720, i_17_)

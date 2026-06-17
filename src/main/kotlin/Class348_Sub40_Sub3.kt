@@ -52,7 +52,7 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
         fun method3054(bool: Boolean, i: Int, i_2_: Int) {
             anInt9105++
             if (i_2_ < -127) {
-                val class348_sub13 = Class258_Sub4.method1974((-122).toByte(), i, bool)
+                val class348_sub13 = GlTexture1D.method1974((-122).toByte(), i, bool)
                 if (class348_sub13 != null) class348_sub13.method2715(97.toByte())
             }
         }

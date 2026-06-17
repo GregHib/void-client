@@ -84,9 +84,9 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
             val i_9_ = -3 + WorldMapSceneSoftware.anInt5819
             val i_10_ = 20
             method2270(Class63.anInt1117, i_4_ + anInt4717, var_renderer, Class274.aClass274_3507!!.method2063(Class348_Sub33.anInt6967, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, WorldMapSceneSoftware.anInt5819, i_10_)
-            val i_11_ = i_4_ + Class258_Sub4.aClass373_8552!!.method3597(true)
+            val i_11_ = i_4_ + GlTexture1D.aClass373_8552!!.method3597(true)
             if (i != 16) method1154(9.toByte())
-            val i_12_ = i_5_ + Class258_Sub4.aClass373_8552!!.method3594(95.toByte())
+            val i_12_ = i_5_ + GlTexture1D.aClass373_8552!!.method3594(95.toByte())
             if (Class348_Sub42_Sub6.aBoolean9535) {
                 var i_15_ = 0
                 var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-73) as? Class348_Sub42_Sub13?)

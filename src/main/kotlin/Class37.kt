@@ -55,7 +55,7 @@ object Class37 {
 
     fun method358(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
         if (i_8_ != -29494) anInt496 = 32
-        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350) != 0 && i != 0 && HintArrowOrMessage.anInt2021 < 50 && i_7_ != -1) Class258_Sub2.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(1.toByte(), i_7_, i, i_4_, i_5_, i_3_, i_6_, null)
+        if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350) != 0 && i != 0 && HintArrowOrMessage.anInt2021 < 50 && i_7_ != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(1.toByte(), i_7_, i, i_4_, i_5_, i_3_, i_6_, null)
         anInt490++
     }
 

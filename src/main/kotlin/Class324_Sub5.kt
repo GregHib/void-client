@@ -13,7 +13,7 @@ import jaggl.OpenGL.Companion.glVertex2i
 
 class Class324_Sub5 internal constructor(private val aHa_Sub2_6509: OpenGlRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : Class324(aHa_Sub2_6509, fontDefinition) {
     private val aClass61_6510: Class61
-    private val aClass258_Sub3_Sub1_6511: Class258_Sub3_Sub1?
+    private val aClass258_Sub3_Sub1_6511: GlTexture2DRegion?
     private val aBoolean6512: Boolean
 
     init {

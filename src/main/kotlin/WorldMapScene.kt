@@ -3,7 +3,7 @@ import RefCountedHandle.Companion.method1320
 import MapSceneDefLoader.Companion.method1394
 import LoadingScreenState.Companion.method1457
 import GraphicsOptionState.Companion.method1709
-import Class258_Sub3.Companion.method1968
+import GlTexture2D.Companion.method1968
 import Class318_Sub1_Sub5.Companion.method2483
 import Class324.Companion.method2570
 import Class348_Sub45.Companion.method3313

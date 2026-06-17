@@ -64,7 +64,7 @@ class Class58 {
         @JvmStatic
         fun method532(i: Int, i_0_: Int, bool: Boolean, i_1_: Int): Int {
             anInt1061++
-            val class348_sub13 = Class258_Sub4.method1974((-120).toByte(), i_0_, bool)
+            val class348_sub13 = GlTexture1D.method1974((-120).toByte(), i_0_, bool)
             if (class348_sub13 == null) return 0
             if (i == -1) return 0
             var i_2_ = 0

@@ -12,9 +12,9 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
     private val aClass83_6268: Class83?
     private var aBoolean6272 = false
     private var aClass337_6274: Class337? = null
-    override fun method2140(class258: Class258?, i: Byte, i_0_: Int) {
+    override fun method2140(glTexture: GlTexture?, i: Byte, i_0_: Int) {
         if (!aBoolean6266) {
-            this.aHa_Sub2_3684.method3771((-128).toByte(), class258)
+            this.aHa_Sub2_3684.method3771((-128).toByte(), glTexture)
             this.aHa_Sub2_3684.method3761(0, i_0_)
         }
         anInt6269++

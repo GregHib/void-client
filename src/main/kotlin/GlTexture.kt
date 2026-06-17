@@ -2,7 +2,10 @@ import jaggl.OpenGL.Companion.glGenTextures
 import jaggl.OpenGL.Companion.glGenerateMipmapEXT
 import jaggl.OpenGL.Companion.glTexParameteri
 
-abstract class Class258 internal constructor(var aHa_Sub2_4851: OpenGlRenderer, var anInt4849: Int, var anInt4858: Int, private var anInt4847: Int, private var aBoolean4860: Boolean) : Interface9 {
+/*
+ * Class258
+ */
+abstract class GlTexture internal constructor(var aHa_Sub2_4851: OpenGlRenderer, var anInt4849: Int, var anInt4858: Int, private var anInt4847: Int, private var aBoolean4860: Boolean) : Interface9 {
     private var aBoolean4856 = false
     var anInt4859: Int
     fun method1950(i: Int): Boolean {

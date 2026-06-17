@@ -43,11 +43,11 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         if (i_2_ <= 9) aClass83_1582 = null
     }
 
-    fun method885(i: Int, i_4_: Byte, class258: Class258?): Boolean {
+    fun method885(i: Int, i_4_: Byte, glTexture: GlTexture?): Boolean {
         anInt1590++
         if (anInt1578 == 0) return false
         if (i_4_.toInt() != -124) method889(99.toByte(), 7)
-        aClass286Array1588[0x7fffffff and anInt1578]!!.method2140(class258, ((-98).toByte()).toByte(), i)
+        aClass286Array1588[0x7fffffff and anInt1578]!!.method2140(glTexture, ((-98).toByte()).toByte(), i)
         return true
     }
 

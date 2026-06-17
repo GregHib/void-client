@@ -81,7 +81,7 @@ class Class287 {
                         val i_8_ = (class318_sub1!!.x + -256 shr 9)
                         val i_9_ = (class318_sub1.y - 256 shr 9)
                         val i_10_ = (if (LocalPlayerState.aPlayer_1907 != class318_sub1) ((class318_sub1.plane.toInt() shl 24) + ((i_8_ shl 16) + (i_9_ shl 8)) + i_5_) else 0)
-                        Class258_Sub2.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode((if (widgetDefinition.aBoolean268) 2.toByte() else 1.toByte()), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1)
+                        GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode((if (widgetDefinition.aBoolean268) 2.toByte() else 1.toByte()), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1)
                     }
                 }
             } catch (runtimeexception: RuntimeException) {

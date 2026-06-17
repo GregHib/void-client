@@ -31,7 +31,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
         }
     }
 
-    fun method1498(i: Int, i_0_: Int, i_1_: Int, class258_sub2: Class258_Sub2) {
+    fun method1498(i: Int, i_0_: Int, i_1_: Int, class258_sub2: GlTextureCubeMap) {
         method1502(0, (-38).toByte(), class258_sub2, i, i_1_)
         if (i_0_ < -49) anInt4887++
     }
@@ -52,7 +52,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
         anInterface9Array4875[i_2_] = null
     }
 
-    private fun method1502(i: Int, i_20_: Byte, class258_sub2: Class258_Sub2, i_21_: Int, i_22_: Int) {
+    private fun method1502(i: Int, i_20_: Byte, class258_sub2: GlTextureCubeMap, i_21_: Int, i_22_: Int) {
         anInt4876++
         if (anInt4873 == -1) throw RuntimeException()
         val i_23_ = 1 shl i_21_
@@ -102,7 +102,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
         glReadBuffer(Class59_Sub2.anIntArray5306!![i_26_])
     }
 
-    private fun method1506(i: Int, class258_sub3: Class258_Sub3, i_27_: Int, i_28_: Int) {
+    private fun method1506(i: Int, class258_sub3: GlTexture2D, i_27_: Int, i_28_: Int) {
         anInt4892++
         if (anInt4873 == -1) throw RuntimeException()
         val i_29_ = 1 shl i_27_
@@ -143,7 +143,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
         anInt4884 = anInt4884 or i_33_
     }
 
-    fun method1509(class258_sub3: Class258_Sub3, i: Int, i_35_: Int) {
+    fun method1509(class258_sub3: GlTexture2D, i: Int, i_35_: Int) {
         method1506(i, class258_sub3, i_35_, -1)
         anInt4879++
     }
@@ -206,7 +206,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
             val i_3_ = 56 / ((i - -56) / 42)
             var i_4_ = 0
             while (i_4_ < HintArrowOrMessage.anInt2021) {
-                val class10 = Class258_Sub2.aParticleEmitterNodeArray8531s!![i_4_]
+                val class10 = GlTextureCubeMap.aParticleEmitterNodeArray8531s!![i_4_]
                 var bool = false
                 if (class10!!.aClass348_Sub16_Sub5_176 == null) {
                     class10.anInt188--
@@ -285,7 +285,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                     HintArrowOrMessage.anInt2021--
                     var i_19_ = i_4_
                     while (HintArrowOrMessage.anInt2021 > i_19_) {
-                        Class258_Sub2.aParticleEmitterNodeArray8531s!![i_19_] = Class258_Sub2.aParticleEmitterNodeArray8531s!![i_19_ - -1]
+                        GlTextureCubeMap.aParticleEmitterNodeArray8531s!![i_19_] = GlTextureCubeMap.aParticleEmitterNodeArray8531s!![i_19_ - -1]
                         i_19_++
                     }
                     i_4_--

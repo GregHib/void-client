@@ -41,8 +41,8 @@ class Class347 {
                     i_0_ = NativeTerrainTile.method4008((-124).toByte())
                     i_1_ = method260(false)
                 }
-                var i_2_ = i_0_ + Class258_Sub4.aClass373_8552!!.method3597(true)
-                var i_3_ = i_1_ + Class258_Sub4.aClass373_8552!!.method3594(80.toByte())
+                var i_2_ = i_0_ + GlTexture1D.aClass373_8552!!.method3597(true)
+                var i_3_ = i_1_ + GlTexture1D.aClass373_8552!!.method3594(80.toByte())
                 i_3_ -= ModelDefinitionCache.anInt2872
                 i_2_ -= Class318_Sub4.anInt6411
                 if (i_2_ < Class348_Sub40_Sub37.anInt9461) i_2_ = Class348_Sub40_Sub37.anInt9461
@@ -52,7 +52,7 @@ class Class347 {
                     if (Class289.aClass46_3701!!.anInt789 + i_3_ > (Class40.anInt558 - -Class331.aClass46_4130!!.anInt789)) i_3_ = (-Class289.aClass46_3701!!.anInt789 + (Class40.anInt558 - -Class331.aClass46_4130!!.anInt789))
                     val i_4_ = (-Class348_Sub40_Sub37.anInt9461 + (i_2_ - -Class331.aClass46_4130!!.anInt747))
                     val i_5_ = (-Class40.anInt558 + (i_3_ + Class331.aClass46_4130!!.anInt755))
-                    if (Class258_Sub4.aClass373_8552!!.method3593(94)) {
+                    if (GlTexture1D.aClass373_8552!!.method3593(94)) {
                         if (Class289.aClass46_3701!!.anInt703 < Class318_Sub1.anInt6392) {
                             val i_6_ = i_2_ + -NativeRenderer.anInt8001
                             val i_7_ = -Class348_Sub40_Sub13.anInt9203 + i_3_

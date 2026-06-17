@@ -5,7 +5,7 @@ import Class376.Companion.method3616
 /* Class258_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class258_Sub3_Sub1 : Class258_Sub3 {
+class GlTexture2DRegion : GlTexture2D {
     @JvmField
     var aFloat9937: Float = 0f
     @JvmField

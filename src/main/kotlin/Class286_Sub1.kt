@@ -9,7 +9,7 @@ class Class286_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
     private var aRefCountedHandle_6187: RefCountedHandle? = null
     private var aRefCountedHandle_6188: RefCountedHandle? = null
     private var aBoolean6193 = false
-    private var aClass258_Sub3_6194: Class258_Sub3? = null
+    private var aClass258_Sub3_6194: GlTexture2D? = null
     private var aRefCountedHandle_6196: RefCountedHandle? = null
     private var aBoolean6197 = false
     private val aBoolean6198: Boolean
@@ -95,7 +95,7 @@ class Class286_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
                 false
             ))
             if ((aRefCountedHandle_6187 != null) and ((aRefCountedHandle_6188 != null) and (aRefCountedHandle_6196 != null) and (aRefCountedHandle_6199 != null))) {
-                aClass258_Sub3_6194 = Class258_Sub3(var_ha_Sub2, 3553, 6406, 2, 1, false, byteArrayOf(0, -1), 6406, false)
+                aClass258_Sub3_6194 = GlTexture2D(var_ha_Sub2, 3553, 6406, 2, 1, false, byteArrayOf(0, -1), 6406, false)
                 aClass258_Sub3_6194!!.method1965(false, false, 10243)
                 aBoolean6198 = true
             } else aBoolean6198 = false
@@ -130,8 +130,8 @@ class Class286_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
         if (i_7_ > -42) method2139(true, (-81).toByte())
     }
 
-    override fun method2140(class258: Class258?, i: Byte, i_8_: Int) {
-        if (class258 == null) {
+    override fun method2140(glTexture: GlTexture?, i: Byte, i_8_: Int) {
+        if (glTexture == null) {
             if (!aBoolean6183) {
                 this.aHa_Sub2_3684.method3771((-114).toByte(), (this.aHa_Sub2_3684.aClass258_Sub3_7827))
                 this.aHa_Sub2_3684.method3761(0, 1)
@@ -145,7 +145,7 @@ class Class286_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
                 this.aHa_Sub2_3684.method3775(false, 0, 770, 5890)
                 aBoolean6183 = false
             }
-            this.aHa_Sub2_3684.method3771((-105).toByte(), class258)
+            this.aHa_Sub2_3684.method3771((-105).toByte(), glTexture)
             this.aHa_Sub2_3684.method3761(0, i_8_)
         }
         if (i < -89) anInt6185++

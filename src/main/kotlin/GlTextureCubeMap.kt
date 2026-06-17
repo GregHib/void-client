@@ -2,7 +2,7 @@ import jaggl.OpenGL.Companion.glFramebufferTexture2DEXT
 import jaggl.OpenGL.Companion.glTexImage2Di
 import jaggl.OpenGL.Companion.glTexImage2Dub
 
-class Class258_Sub2 : Class258 {
+class GlTextureCubeMap : GlTexture {
     private var anInt8535 = -1
     private var anInt8536 = -1
     @JvmField

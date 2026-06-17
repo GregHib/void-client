@@ -44,7 +44,7 @@ class Class348_Sub27 : Class348() {
         fun method3002(i: Byte): Array<RectangleRegion?> {
             if (i.toInt() != -97) aClass302Array6897 = null
             anInt6901++
-            return (arrayOf<RectangleRegion?>(RandomAccessFileOnDisk.aRectangleRegion_3044, Class299_Sub1.aRectangleRegion_6321, Class324.aRectangleRegion_4062, UnderlayDefinition.aRectangleRegion_2885, Class348_Sub42_Sub5.aRectangleRegion_9530, Class348_Sub49_Sub1.aRectangleRegion_9748, Class325.aRectangleRegion_4082, Class258_Sub4.aRectangleRegion_8553, ShaderProgram.aRectangleRegion_7274, Class71.aRectangleRegion_1213, Class52.aRectangleRegion_4901, Class318_Sub1_Sub2_Sub1.aRectangleRegion_10194, ArbVertexProgram.aRectangleRegion_9781, Class377.aRectangleRegion_9860))
+            return (arrayOf<RectangleRegion?>(RandomAccessFileOnDisk.aRectangleRegion_3044, Class299_Sub1.aRectangleRegion_6321, Class324.aRectangleRegion_4062, UnderlayDefinition.aRectangleRegion_2885, Class348_Sub42_Sub5.aRectangleRegion_9530, Class348_Sub49_Sub1.aRectangleRegion_9748, Class325.aRectangleRegion_4082, GlTexture1D.aRectangleRegion_8553, ShaderProgram.aRectangleRegion_7274, Class71.aRectangleRegion_1213, Class52.aRectangleRegion_4901, Class318_Sub1_Sub2_Sub1.aRectangleRegion_10194, ArbVertexProgram.aRectangleRegion_9781, Class377.aRectangleRegion_9860))
         }
     }
 }

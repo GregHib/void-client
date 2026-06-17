@@ -13,7 +13,7 @@ import java.awt.MediaTracker
 import java.awt.Toolkit
 import java.awt.image.PixelGrabber
 
-open class Class258_Sub3 : Class258 {
+open class GlTexture2D : GlTexture {
     private var anInt8545: Int
     @JvmField
     var anInt8547: Int = 0

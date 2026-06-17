@@ -21,11 +21,11 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
     private var aClass337_8824: Class337? = null
     private var aFrameBufferObject_8825: FrameBufferObject? = null
     private var anInt8826 = 0
-    private var aClass258_Sub3_8830: Class258_Sub3? = null
+    private var aClass258_Sub3_8830: GlTexture2D? = null
     private var anInt8833 = 0
-    private var aClass258_Sub3_8835: Class258_Sub3? = null
+    private var aClass258_Sub3_8835: GlTexture2D? = null
     private var aClass337_8836: Class337? = null
-    private var aClass258_Sub3Array8837: Array<Class258_Sub3?>? = null
+    private var aClass258_Sub3Array8837: Array<GlTexture2D?>? = null
     private var anInt8838 = 0
     private var anInt8841 = 0
     private var aClass337_8842: Class337? = null
@@ -40,7 +40,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
         this.aHa_Sub2_6618.method3738(-15039, 0)
     }
 
-    override fun method2750(class258_sub3: Class258_Sub3?, class258_sub3_2_: Class258_Sub3?, i: Int, i_3_: Byte) {
+    override fun method2750(class258_sub3: GlTexture2D?, class258_sub3_2_: GlTexture2D?, i: Int, i_3_: Byte) {
         try {
             anInt8828++
             glPushAttrib(2048)
@@ -199,11 +199,11 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
                     }
                     if (aFrameBufferObject_8844 == null) aFrameBufferObject_8844 = FrameBufferObject(this.aHa_Sub2_6618)
                     i_19_ = i_16_
-                    aClass258_Sub3Array8837 = arrayOfNulls<Class258_Sub3>(i_21_)
+                    aClass258_Sub3Array8837 = arrayOfNulls<GlTexture2D>(i_21_)
                     i_20_ = i_17_
                     i_21_ = 0
                     while (i_19_ > 256 || i_20_ > 256) {
-                        aClass258_Sub3Array8837!![i_21_++] = Class258_Sub3((this.aHa_Sub2_6618), 3553, 34842, i_19_, i_20_)
+                        aClass258_Sub3Array8837!![i_21_++] = GlTexture2D((this.aHa_Sub2_6618), 3553, 34842, i_19_, i_20_)
                         if (i_20_ > 256) i_20_ = i_20_ shr 1
                         if (i_19_ > 256) i_19_ = i_19_ shr 1
                     }
@@ -251,9 +251,9 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: OpenGlRenderer) : Cla
         anInt8834++
         if (this.aHa_Sub2_6618.aBoolean7820 && this.aHa_Sub2_6618.aBoolean7783 && this.aHa_Sub2_6618.aBoolean7818) {
             aFrameBufferObject_8825 = FrameBufferObject(this.aHa_Sub2_6618)
-            aClass258_Sub3_8835 = Class258_Sub3(this.aHa_Sub2_6618, 3553, 34842, 256, 256)
+            aClass258_Sub3_8835 = GlTexture2D(this.aHa_Sub2_6618, 3553, 34842, 256, 256)
             aClass258_Sub3_8835!!.method1965(false, false, 10243)
-            aClass258_Sub3_8830 = Class258_Sub3(this.aHa_Sub2_6618, 3553, 34842, 256, 256)
+            aClass258_Sub3_8830 = GlTexture2D(this.aHa_Sub2_6618, 3553, 34842, 256, 256)
             aClass258_Sub3_8830!!.method1965(false, false, 10243)
             this.aHa_Sub2_6618.method3773(-1, aFrameBufferObject_8825)
             aFrameBufferObject_8825!!.method1509(aClass258_Sub3_8835!!, 0, 0)

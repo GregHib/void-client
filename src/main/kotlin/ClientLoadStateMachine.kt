@@ -235,7 +235,7 @@ object ClientLoadStateMachine {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(WaterDetailOptionState.aClass259_5995!!.anInt3305 + 1000))
             Class286_Sub6.aBooleanArray6270 = (BooleanArray(WaterDetailOptionState.aClass259_5995!!.anInt3305 + 1000))
-            Class258_Sub2.aStringArray8532 = arrayOfNulls<String>(Class91.aClass82_1523!!.anInt1439)
+            GlTextureCubeMap.aStringArray8532 = arrayOfNulls<String>(Class91.aClass82_1523!!.anInt1439)
             var i_13_ = 0
             while (WaterDetailOptionState.aClass259_5995!!.anInt3305 + 1000 > i_13_) {
                 if (WaterDetailOptionState.aClass259_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {

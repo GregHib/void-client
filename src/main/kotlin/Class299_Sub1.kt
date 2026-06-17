@@ -3,7 +3,7 @@ import kotlin.math.ln
 import kotlin.math.pow
 
 abstract class Class299_Sub1 : Class299() {
-    abstract fun method2256(i: Byte): Class258_Sub2?
+    abstract fun method2256(i: Byte): GlTextureCubeMap?
 
     companion object {
         @JvmField

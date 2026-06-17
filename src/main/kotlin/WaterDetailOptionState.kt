@@ -90,7 +90,7 @@ class WaterDetailOptionState : GraphicsOptionState {
             anInt5983++
             if (Class348_Sub31.anInt6923 == -1) return 1
             if (i != Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {
-                Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3496!!.method2063(Class348_Sub33.anInt6967, 544), true, i)
+                GlTexture2DRegion.method1971(-2, Class274.aClass274_3496!!.method2063(Class348_Sub33.anInt6967, 544), true, i)
                 if (i != Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) return -1
             }
             try {

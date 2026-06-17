@@ -2,7 +2,7 @@ import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage1Dub
 import jaggl.OpenGL.Companion.glTexParameteri
 
-class Class258_Sub4 internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_: Int, `is`: ByteArray?, i_1_: Int) : Class258(var_ha_Sub2, 3552, i, i_0_, false) {
+class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_: Int, `is`: ByteArray?, i_1_: Int) : GlTexture(var_ha_Sub2, 3552, i, i_0_, false) {
     private val anInt8556: Int
     override fun method37(i: Int) {
         if (i == -3022) anInt8554++

@@ -4,26 +4,26 @@ import Class50_Sub1.Companion.method461
 * Visit http://jode.sourceforge.net/
 */
 class Class83 internal constructor(var_ha_Sub2: OpenGlRenderer) {
-    var aClass258_Sub1_1440: Class258_Sub1? = null
+    var aClass258_Sub1_1440: GlTexture3D? = null
     var aBoolean1442: Boolean
-    var aClass258_Sub1_1443: Class258_Sub1? = null
-    var aClass258_Sub3Array1444: Array<Class258_Sub3?>? = null
-    var aClass258_Sub1_1446: Class258_Sub1? = null
-    var aClass258_Sub3Array1448: Array<Class258_Sub3?>? = null
+    var aClass258_Sub1_1443: GlTexture3D? = null
+    var aClass258_Sub3Array1444: Array<GlTexture2D?>? = null
+    var aClass258_Sub1_1446: GlTexture3D? = null
+    var aClass258_Sub3Array1448: Array<GlTexture2D?>? = null
 
     init {
         this.aBoolean1442 = var_ha_Sub2.aBoolean7831
         Class348_Sub37.method3030(8, var_ha_Sub2)
         if (this.aBoolean1442) {
             var `is` = method461(false, Class337.anObject4177, 53146732)
-            this.aClass258_Sub1_1440 = Class258_Sub1(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
+            this.aClass258_Sub1_1440 = GlTexture3D(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
             `is` = method461(false, Class319.anObject3985, 53146732)
-            this.aClass258_Sub1_1446 = Class258_Sub1(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
+            this.aClass258_Sub1_1446 = GlTexture3D(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
             val class188 = var_ha_Sub2.aGlowPostProcessor_7736
             if (class188!!.method1414(35632)) {
                 `is` = method461(false, Class369_Sub2.anObject8592, 53146732)
-                this.aClass258_Sub1_1443 = Class258_Sub1(var_ha_Sub2, 6408, 128, 128, 16)
-                val class258_sub1 = Class258_Sub1(var_ha_Sub2, 6409, 128, 128, 16, `is`, 6409)
+                this.aClass258_Sub1_1443 = GlTexture3D(var_ha_Sub2, 6408, 128, 128, 16)
+                val class258_sub1 = GlTexture3D(var_ha_Sub2, 6409, 128, 128, 16, `is`, 6409)
                 if (!class188.method1413(this.aClass258_Sub1_1443, class258_sub1, -114, 2.0f)) {
                     this.aClass258_Sub1_1443!!.method1952(-19948)
                     this.aClass258_Sub1_1443 = null
@@ -31,15 +31,15 @@ class Class83 internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 class258_sub1.method1952(-19948)
             }
         } else {
-            this.aClass258_Sub3Array1444 = arrayOfNulls<Class258_Sub3>(16)
+            this.aClass258_Sub3Array1444 = arrayOfNulls<GlTexture2D>(16)
             for (i in 0..15) {
                 val `is` = ObjectByteSerializerHolder.method1331(97.toByte(), Class337.anObject4177, 2 * (128 * i) * 128, 32768)
-                this.aClass258_Sub3Array1444!![i] = Class258_Sub3(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
+                this.aClass258_Sub3Array1444!![i] = GlTexture2D(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
             }
-            this.aClass258_Sub3Array1448 = arrayOfNulls<Class258_Sub3>(16)
+            this.aClass258_Sub3Array1448 = arrayOfNulls<GlTexture2D>(16)
             for (i in 0..15) {
                 val `is` = ObjectByteSerializerHolder.method1331(110.toByte(), Class319.anObject3985, 2 * i * 16384, 32768)
-                this.aClass258_Sub3Array1448!![i] = Class258_Sub3(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
+                this.aClass258_Sub3Array1448!![i] = GlTexture2D(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
             }
         }
     }

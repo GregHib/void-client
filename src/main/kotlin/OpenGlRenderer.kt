@@ -164,7 +164,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private val aBoolean7774: Boolean
     @JvmField
     var aBoolean7775: Boolean = false
-    private var aClass258_Sub3_Sub1_7776: Class258_Sub3_Sub1? = null
+    private var aClass258_Sub3_Sub1_7776: GlTexture2DRegion? = null
     @JvmField
     var anInt7777: Int = 0
     @JvmField
@@ -245,8 +245,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var anInt7826: Int
     @JvmField
-    var aClass258_Sub3_7827: Class258_Sub3? = null
-    private var aClass258Array7828: Array<Class258?>? = null
+    var aClass258_Sub3_7827: GlTexture2D? = null
+    private var aGlTextureArray7828: Array<GlTexture?>? = null
     private var aFloat7829: Float
     @JvmField
     var aFloat7830: Float = 0f
@@ -514,7 +514,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     fun method3738(i: Int, i_34_: Int) {
-        if (i != -15039) aClass258Array7828 = null
+        if (i != -15039) aGlTextureArray7828 = null
         if (i_34_ != anInt7876) {
             glActiveTexture(33984 + i_34_)
             anInt7876 = i_34_
@@ -549,7 +549,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return true
     }
 
-    fun method3741(i: Int): Class258_Sub2? {
+    fun method3741(i: Int): GlTextureCubeMap? {
         anInt7581++
         if (i != 444720536) this.aFloat7823 = 0.28610376f
         if (aClass299_Sub1_7769 != null) return aClass299_Sub1_7769!!.method2256((-121).toByte())
@@ -643,7 +643,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     fun method3746(bool: Boolean, i: Int, bool_46_: Boolean, i_47_: Int) {
         anInt7631++
         if (anInt7796 != i || aBoolean7859 == !this.aBoolean7846) {
-            var class258_sub3: Class258_Sub3? = null
+            var class258_sub3: GlTexture2D? = null
             var i_48_ = 0
             var i_49_: Byte = 0
             var i_50_ = 0
@@ -1485,27 +1485,27 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         } while (false)
     }
 
-    fun method3771(i: Byte, class258: Class258?) {
+    fun method3771(i: Byte, glTexture: GlTexture?) {
         try {
             anInt7673++
             if (i > -74) A(38, null, 4, -3)
-            val class258_156_ = aClass258Array7828!![anInt7876]
-            if (class258_156_ !== class258) {
-                if (class258 == null) glDisable(class258_156_!!.anInt4849)
+            val class258_156_ = aGlTextureArray7828!![anInt7876]
+            if (class258_156_ !== glTexture) {
+                if (glTexture == null) glDisable(class258_156_!!.anInt4849)
                 else {
                     if (class258_156_ != null) {
-                        if (class258_156_.anInt4849 != class258.anInt4849) {
+                        if (class258_156_.anInt4849 != glTexture.anInt4849) {
                             glDisable(class258_156_.anInt4849)
-                            glEnable(class258.anInt4849)
+                            glEnable(glTexture.anInt4849)
                         }
-                    } else glEnable(class258.anInt4849)
-                    glBindTexture(class258.anInt4849, class258.method1953(41))
+                    } else glEnable(glTexture.anInt4849)
+                    glBindTexture(glTexture.anInt4849, glTexture.method1953(41))
                 }
-                aClass258Array7828!![anInt7876] = class258
+                aGlTextureArray7828!![anInt7876] = glTexture
             }
             anInt7765 = anInt7765 and 0x1.inv()
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.VA(" + i + ',' + (if (class258 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.VA(" + i + ',' + (if (glTexture != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2172,10 +2172,10 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
     private fun method3786(bool: Boolean) {
         anInt7630++
-        aClass258Array7828 = arrayOfNulls<Class258>(this.anInt7795)
-        this.aClass258_Sub3_7827 = Class258_Sub3(this, 3553, 6408, 1, 1)
-        Class258_Sub3(this, 3553, 6408, 1, 1)
-        Class258_Sub3(this, 3553, 6408, 1, 1)
+        aGlTextureArray7828 = arrayOfNulls<GlTexture>(this.anInt7795)
+        this.aClass258_Sub3_7827 = GlTexture2D(this, 3553, 6408, 1, 1)
+        GlTexture2D(this, 3553, 6408, 1, 1)
+        GlTexture2D(this, 3553, 6408, 1, 1)
         this.aClass64_Sub3_7864 = Class64_Sub3(this)
         this.aClass64_Sub3_7838 = Class64_Sub3(this)
         this.aClass64_Sub3_7803 = Class64_Sub3(this)
@@ -3852,9 +3852,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         }
                                         var class324 = WorldMapRenderer.aClass324_4684
                                         var class324_387_ = WorldMapRenderer.aClass324_4684
-                                        var class143 = Class258_Sub1.aFontDefinition_8527
+                                        var class143 = GlTexture3D.aFontDefinition_8527
                                         var i_388_ = class31.anInt435
-                                        var class143_389_ = Class258_Sub1.aFontDefinition_8527
+                                        var class143_389_ = GlTexture3D.aFontDefinition_8527
                                         if (i_388_ >= 0) {
                                             val class324_390_ = GlTextureBase.method232((Class348_Sub8.aRenderer6654), (-53).toByte(), true, i_388_)
                                             val class143_391_ = (GlVertexBufferBase.method1151(-25411, Class348_Sub8.aRenderer6654, i_388_))
@@ -4004,7 +4004,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 i_322_++
             }
             for (i_433_ in 0..<Class45.anInt669) {
-                val i_434_ = Class258_Sub4.anIntArray8557!![i_433_]
+                val i_434_ = GlTexture1D.anIntArray8557!![i_433_]
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((Class282.aClass356_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? Class348_Sub22)?.aNpc_6859)
                 else class318_sub1_sub3_sub3 = Class294.aPlayerArray5058!![i_434_]

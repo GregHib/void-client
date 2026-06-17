@@ -203,7 +203,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.equals("rebuildprofile", ignoreCase = true)) {
                             Class90.aLong1516 = method599(-75)
-                            Class258_Sub4.aBoolean8558 = true
+                            GlTexture1D.aBoolean8558 = true
                             Class348_Sub20.method2953((-114).toByte())
                             method464(-1)
                             method94("Rebuilding map (with profiling)", -117)

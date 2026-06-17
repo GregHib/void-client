@@ -23,12 +23,12 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     private val aClass262_292: Class262
     private var aBoolean293: Boolean
     private var aBoolean294: Boolean
-    private var aClass258_Sub3Array295: Array<Class258_Sub3?>?
+    private var aClass258_Sub3Array295: Array<GlTexture2D?>?
     private var aClass348_Sub42_Sub2_296: Class348_Sub42_Sub2? = null
     private var aBoolean297: Boolean
     private var aClass348_Sub42_Sub2_298: Class348_Sub42_Sub2? = null
     private var aBoolean299: Boolean
-    private var aClass258_Sub3_300: Class258_Sub3? = null
+    private var aClass258_Sub3_300: GlTexture2D? = null
     private var anInt301: Int
     private var anInt302: Int
     private var aBoolean303: Boolean
@@ -162,7 +162,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 aClass258_Sub3_300 = null
             }
             if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_298 = Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
-            if (aBoolean303) aClass258_Sub3_300 = Class258_Sub3(aHa_Sub2_290, 34037, 6402, anInt286, anInt275)
+            if (aBoolean303) aClass258_Sub3_300 = GlTexture2D(aHa_Sub2_290, 34037, 6402, anInt286, anInt275)
             else if (aClass348_Sub42_Sub2_298 == null) aClass348_Sub42_Sub2_298 = Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286, anInt275)
             aBoolean293 = false
             aBoolean294 = true
@@ -183,8 +183,8 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 aClass258_Sub3Array295!![1] = null
             }
             if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_296 = Class348_Sub42_Sub2(aHa_Sub2_290, anInt301, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
-            aClass258_Sub3Array295!![0] = Class258_Sub3(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275)
-            aClass258_Sub3Array295!![1] = if (anInt302 > 1) Class258_Sub3(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275) else null
+            aClass258_Sub3Array295!![0] = GlTexture2D(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275)
+            aClass258_Sub3Array295!![1] = if (anInt302 > 1) GlTexture2D(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275) else null
             aBoolean294 = true
             aBoolean299 = true
             aBoolean297 = false
@@ -304,7 +304,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     init {
         aClass262_292 = Class262()
         aBoolean293 = true
-        aClass258_Sub3Array295 = arrayOfNulls<Class258_Sub3>(2)
+        aClass258_Sub3Array295 = arrayOfNulls<GlTexture2D>(2)
         aBoolean297 = true
         aBoolean294 = true
         aBoolean299 = true

@@ -109,8 +109,8 @@ class TwoStateOptionState : GraphicsOptionState {
                 Class348_Sub40_Sub31.anInt9406 = i
                 anInt6136++
                 Class348_Sub35.anInt6981 = i_12_
-                Class258_Sub2.anInt8537 = i_15_
-                if (bool && Class258_Sub2.anInt8537 >= 100) {
+                GlTextureCubeMap.anInt8537 = i_15_
+                if (bool && GlTextureCubeMap.anInt8537 >= 100) {
                     Class59_Sub2_Sub2.anInt8685 = 256 + 512 * Class275.anInt3550
                     Class286_Sub4.anInt6246 = 256 + Class348_Sub35.anInt6981 * 512
                     Class305.anInt3855 = (Class275.method2064(Class286_Sub4.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)

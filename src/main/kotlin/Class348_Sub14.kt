@@ -1,6 +1,6 @@
 import GlCubeMapTexture.Companion.method245
 import ClickFeedbackTask.Companion.method1353
-import Class258_Sub3.Companion.method1969
+import GlTexture2D.Companion.method1969
 import Class286_Sub3.Companion.method2148
 import Class299_Sub1_Sub2.Companion.method2264
 import Class348_Sub16_Sub3.Companion.method2878

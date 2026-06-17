@@ -70,15 +70,15 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
         var aShortArrayArray9424: Array<ShortArray?>? = arrayOf<ShortArray?>(aShortArray9423, aShortArray9421, aShortArray9422)
 
         @JvmStatic
-        fun method3132(`is`: IntArray?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, var_ha_Sub2: OpenGlRenderer?, bool: Boolean, i_3_: Byte): Class258_Sub3_Sub1 {
+        fun method3132(`is`: IntArray?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, var_ha_Sub2: OpenGlRenderer?, bool: Boolean, i_3_: Byte): GlTexture2DRegion {
             try {
                 if (i_3_.toInt() != 12) method3134(9)
                 anInt9418++
                 if (!var_ha_Sub2!!.aBoolean7793 && (!AsyncTaskHandle.method1436(-74, i_2_) || !AsyncTaskHandle.method1436(127, i_1_))) {
-                    if (!var_ha_Sub2.aBoolean7837) return (Class258_Sub3_Sub1(var_ha_Sub2, i_2_, i_1_, Class33.method340(i_2_, 108.toByte()), Class33.method340(i_1_, 108.toByte()), `is`))
-                    return Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_2_, i_1_, bool, `is`, i_0_, i)
+                    if (!var_ha_Sub2.aBoolean7837) return (GlTexture2DRegion(var_ha_Sub2, i_2_, i_1_, Class33.method340(i_2_, 108.toByte()), Class33.method340(i_1_, 108.toByte()), `is`))
+                    return GlTexture2DRegion(var_ha_Sub2, 34037, i_2_, i_1_, bool, `is`, i_0_, i)
                 }
-                return Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_2_, i_1_, bool, `is`, i_0_, i)
+                return GlTexture2DRegion(var_ha_Sub2, 3553, i_2_, i_1_, bool, `is`, i_0_, i)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("wi.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + bool + ',' + i_3_ + ')'))
             }
@@ -106,7 +106,7 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
                     val f = i_4_.toFloat() / 255.0f
                     val f_6_ = 1.0f - f
                     NativeIndexBuffer.anInt4703 = (((i_5_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540) and 0xff00ff) + (Class318_Sub1_Sub3.anInt8739 and 0xff00ff) * i_4_) and 0xff00ff.inv()) - -(0xff0000 and (i_4_ * (0xff00 and Class318_Sub1_Sub3.anInt8739) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540)) * i_5_))) ushr 8
-                    RangedGraphicsOptionState.aFloat5945 = (Class258_Sub4.aFloat8560 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2551) - Class258_Sub4.aFloat8560))
+                    RangedGraphicsOptionState.aFloat5945 = (GlTexture1D.aFloat8560 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2551) - GlTexture1D.aFloat8560))
                     Class348_Sub3.aFloat6586 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2545 - Class45.aFloat670) * f_6_ + Class45.aFloat670
                     Class36.anInt486 = (i_4_ * NoOpGraphicsOptionState.anInt6042 + (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546 * i_5_)) shr 8
                     KeyboardLayoutConfig.aFloat2137 = (Class318_Sub1_Sub1.aFloat8725 + (-Class318_Sub1_Sub1.aFloat8725 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2547)) * f_6_)

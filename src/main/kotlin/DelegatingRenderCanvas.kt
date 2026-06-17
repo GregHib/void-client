@@ -365,9 +365,9 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     method3570(false)
                     Class94.method867(true)
                     Class348_Sub16_Sub2.aBoolean8870 = true
-                    if (Class258_Sub4.aBoolean8558) {
+                    if (GlTexture1D.aBoolean8558) {
                         method94(("Took: " + (Class62.method599(-117) + -Class90.aLong1516) + "ms"), i + 52)
-                        Class258_Sub4.aBoolean8558 = false
+                        GlTexture1D.aBoolean8558 = false
                     }
                 } else Class36.anInt489 = 2
             } else Class36.anInt489 = 1

@@ -77,9 +77,9 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                                 if ((ConnectionStateRefs.anInt320 and 0xffffff.inv()) != 0) fa(c, 1 + i - -i_14_, i_2_ - -1 + i_15_, ConnectionStateRefs.anInt320, true)
                                 fa(c, i + i_14_, i_2_ + i_15_, Class348_Sub42_Sub1.anInt9492, false)
                             } else if (ParserSpecialCharsHolder.anInt1902 > 0) {
-                                Class258.anInt4848 += ParserSpecialCharsHolder.anInt1902
-                                i += Class258.anInt4848 shr 8
-                                Class258.anInt4848 = Class258.anInt4848 and 0xff
+                                GlTexture.anInt4848 += ParserSpecialCharsHolder.anInt1902
+                                i += GlTexture.anInt4848 shr 8
+                                GlTexture.anInt4848 = GlTexture.anInt4848 and 0xff
                             }
                             i_6_++
                             val i_16_ = aFontDefinition_4063!!.method1184((-48).toByte(), c.code)
@@ -287,7 +287,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
         if (i == -1) i = 0
         PerlinTextureProvider.anInt5807 = i_86_
         Class348_Sub42_Sub1.anInt9492 = PerlinTextureProvider.anInt5807
-        Class258.anInt4848 = 0
+        GlTexture.anInt4848 = 0
         ParserSpecialCharsHolder.anInt1902 = 0
         val i_87_ = -28 / ((56 - i_85_) / 49)
         anInt4053++
@@ -386,9 +386,9 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                                     method2578(c, i_106_, i_103_, Class348_Sub42_Sub1.anInt9492, false, var_sprite, i_104_, i)
                                 }
                             } else if (ParserSpecialCharsHolder.anInt1902 > 0) {
-                                Class258.anInt4848 += ParserSpecialCharsHolder.anInt1902
-                                i_106_ += Class258.anInt4848 shr 8
-                                Class258.anInt4848 = Class258.anInt4848 and 0xff
+                                GlTexture.anInt4848 += ParserSpecialCharsHolder.anInt1902
+                                i_106_ += GlTexture.anInt4848 shr 8
+                                GlTexture.anInt4848 = GlTexture.anInt4848 and 0xff
                             }
                             val i_114_ = aFontDefinition_4063!!.method1184((-48).toByte(), c.code)
                             if (Player.anInt10567 != -1) aRenderer4048!!.method3649((-119).toByte(), i_114_, (aFontDefinition_4063!!.anInt1992.toDouble() * 0.7).toInt() + i_103_, Player.anInt10567, i_106_)

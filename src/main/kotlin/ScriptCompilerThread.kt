@@ -153,8 +153,8 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
             if (i != 3112) method1052(121.toByte())
             if (Class289.aClass46_3701 == null) {
                 if (!Class5_Sub1.aBoolean8335 && Class316.aClass348_Sub42_Sub12_3963 != null) return (Class316.aClass348_Sub42_Sub12_3963!!.anInt9609)
-                val i_2_ = Class258_Sub4.aClass373_8552!!.method3597(true)
-                val i_3_ = Class258_Sub4.aClass373_8552!!.method3594(81.toByte())
+                val i_2_ = GlTexture1D.aClass373_8552!!.method3597(true)
+                val i_3_ = GlTexture1D.aClass373_8552!!.method3594(81.toByte())
                 if (Class348_Sub42_Sub6.aBoolean9535) {
                     if (i_2_ > GlArrayBufferObject.anInt4717 && i_2_ < Class63.anInt1117 + GlArrayBufferObject.anInt4717) {
                         var i_9_ = -1

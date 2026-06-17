@@ -1,7 +1,7 @@
 import MapLabelMenuEntry.Companion.method1041
 import ModelDefinitionCache.Companion.method1600
 import SceneProjector.Companion.method1635
-import Class258_Sub4.Companion.method1974
+import GlTexture1D.Companion.method1974
 import Class348_Sub42_Sub9_Sub1.Companion.method3208
 import Class348_Sub8.Companion.method2774
 import Class71.method729

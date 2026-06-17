@@ -154,8 +154,8 @@ class Class261 internal constructor(sceneProjector: SceneProjector?, i: Int, cla
             if (class348_sub45 != null) i_14_ = class348_sub45.method3310(58)
             if (Class5_Sub1.aBoolean8335) {
                 if (i_14_ == -1) {
-                    val i_15_ = Class258_Sub4.aClass373_8552!!.method3597(true)
-                    val i_16_ = Class258_Sub4.aClass373_8552!!.method3594(116.toByte())
+                    val i_15_ = GlTexture1D.aClass373_8552!!.method3597(true)
+                    val i_16_ = GlTexture1D.aClass373_8552!!.method3594(116.toByte())
                     var bool = false
                     if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
                         if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -Class348_Sub1_Sub1.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + Class373.anInt4534 + 10 < i_16_)) Class348_Sub42_Sub19.method3277((-48).toByte())

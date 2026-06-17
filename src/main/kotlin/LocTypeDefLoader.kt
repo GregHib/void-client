@@ -1,4 +1,4 @@
-import Class258_Sub4.Companion.method1974
+import GlTexture1D.Companion.method1974
 
 /* Class187 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

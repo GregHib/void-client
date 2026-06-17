@@ -53,8 +53,8 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         this.aClass262_6479 = Class262()
         anInt6485 = 0
         this.method2373(false)
-        Class348_Sub51.aClass318_Sub10Array7249!![Class258_Sub3.anInt8550] = this
-        Class258_Sub3.anInt8550 = (Class258_Sub3.anInt8550 + 1 and Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637])
+        Class348_Sub51.aClass318_Sub10Array7249!![GlTexture2D.anInt8550] = this
+        GlTexture2D.anInt8550 = (GlTexture2D.anInt8550 + 1 and Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637])
     }
 
     private fun method2531(i: Int, bool: Boolean) {
@@ -217,7 +217,7 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
         private var aBooleanArray6474: BooleanArray? = BooleanArray(32)
         private var aBooleanArray6477: BooleanArray? = BooleanArray(8)
         fun method2526(i: Int, bool: Boolean): Class318_Sub10 {
-            if (Class258_Sub3.anInt8550 != Class376.anInt4559) {
+            if (GlTexture2D.anInt8550 != Class376.anInt4559) {
                 val class318_sub10 = Class348_Sub51.aClass318_Sub10Array7249!![Class376.anInt4559]!!
                 Class376.anInt4559 = Class376.anInt4559 + 1 and (Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637])
                 class318_sub10.method2531(i, bool)

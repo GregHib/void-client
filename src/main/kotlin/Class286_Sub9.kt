@@ -11,7 +11,7 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
     private var aBoolean6308 = false
     private var aClass61_6310: Class61? = null
     private var aBoolean6316 = false
-    private var aClass258_Sub2Array6317: Array<Class258_Sub2?>? = null
+    private var aClass258_Sub2Array6317: Array<GlTextureCubeMap?>? = null
     override fun method2133(i: Int) {
         anInt6318++
         if (aBoolean6316) {
@@ -28,9 +28,9 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
         if (i < -75) this.aHa_Sub2_3684.method3729(8448, (-75).toByte(), 8448)
     }
 
-    override fun method2140(class258: Class258?, i: Byte, i_5_: Int) {
+    override fun method2140(glTexture: GlTexture?, i: Byte, i_5_: Int) {
         if (i >= -89) aClass258_Sub2Array6317 = null
-        this.aHa_Sub2_3684.method3771((-115).toByte(), class258)
+        this.aHa_Sub2_3684.method3771((-115).toByte(), glTexture)
         anInt6312++
         this.aHa_Sub2_3684.method3761(0, i_5_)
     }
@@ -172,10 +172,10 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: OpenGlRenderer) : Class286
                     i_12_++
                 }
             }
-            aClass258_Sub2Array6317 = arrayOfNulls<Class258_Sub2>(3)
-            aClass258_Sub2Array6317!![0] = Class258_Sub2(this.aHa_Sub2_3684, 6406, 64, false, is_10_, 6406)
-            aClass258_Sub2Array6317!![1] = Class258_Sub2(this.aHa_Sub2_3684, 6406, 64, false, is_11_, 6406)
-            aClass258_Sub2Array6317!![2] = Class258_Sub2(this.aHa_Sub2_3684, 6406, 64, false, `is`, 6406)
+            aClass258_Sub2Array6317 = arrayOfNulls<GlTextureCubeMap>(3)
+            aClass258_Sub2Array6317!![0] = GlTextureCubeMap(this.aHa_Sub2_3684, 6406, 64, false, is_10_, 6406)
+            aClass258_Sub2Array6317!![1] = GlTextureCubeMap(this.aHa_Sub2_3684, 6406, 64, false, is_11_, 6406)
+            aClass258_Sub2Array6317!![2] = GlTextureCubeMap(this.aHa_Sub2_3684, 6406, 64, false, `is`, 6406)
             method2176(-88)
         }
     }

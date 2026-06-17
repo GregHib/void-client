@@ -226,33 +226,33 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             var i_16_ = Class348_Sub35.anInt6981 * 512 + 256
             var i_17_ = 512 * Class275.anInt3550 + 256
             var i_18_ = (Class275.method2064(i_16_, Class355.anInt4372, 11219, i_17_) + -Class348_Sub42_Sub4.anInt9515)
-            if (Class258_Sub2.anInt8537 >= 100) {
+            if (GlTextureCubeMap.anInt8537 >= 100) {
                 Class59_Sub2_Sub2.anInt8685 = 256 + 512 * Class275.anInt3550
                 Class286_Sub4.anInt6246 = Class348_Sub35.anInt6981 * 512 + 256
                 Class305.anInt3855 = (Class275.method2064(Class286_Sub4.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515)
             } else {
                 if (Class286_Sub4.anInt6246 < i_16_) {
-                    Class286_Sub4.anInt6246 += (Class348_Sub40_Sub31.anInt9406 + (Class258_Sub2.anInt8537 * (i_16_ + -Class286_Sub4.anInt6246) / 1000))
+                    Class286_Sub4.anInt6246 += (Class348_Sub40_Sub31.anInt9406 + (GlTextureCubeMap.anInt8537 * (i_16_ + -Class286_Sub4.anInt6246) / 1000))
                     if (i_16_ < Class286_Sub4.anInt6246) Class286_Sub4.anInt6246 = i_16_
                 }
                 if (Class286_Sub4.anInt6246 > i_16_) {
-                    Class286_Sub4.anInt6246 -= (Class348_Sub40_Sub31.anInt9406 - -(Class258_Sub2.anInt8537 * (-i_16_ + Class286_Sub4.anInt6246) / 1000))
+                    Class286_Sub4.anInt6246 -= (Class348_Sub40_Sub31.anInt9406 - -(GlTextureCubeMap.anInt8537 * (-i_16_ + Class286_Sub4.anInt6246) / 1000))
                     if (Class286_Sub4.anInt6246 < i_16_) Class286_Sub4.anInt6246 = i_16_
                 }
                 if (Class305.anInt3855 < i_18_) {
-                    Class305.anInt3855 += ((-Class305.anInt3855 + i_18_) * Class258_Sub2.anInt8537 / 1000) + Class348_Sub40_Sub31.anInt9406
+                    Class305.anInt3855 += ((-Class305.anInt3855 + i_18_) * GlTextureCubeMap.anInt8537 / 1000) + Class348_Sub40_Sub31.anInt9406
                     if (i_18_ < Class305.anInt3855) Class305.anInt3855 = i_18_
                 }
                 if (Class59_Sub2_Sub2.anInt8685 < i_17_) {
-                    Class59_Sub2_Sub2.anInt8685 += (Class348_Sub40_Sub31.anInt9406 - -((i_17_ + -Class59_Sub2_Sub2.anInt8685) * Class258_Sub2.anInt8537 / 1000))
+                    Class59_Sub2_Sub2.anInt8685 += (Class348_Sub40_Sub31.anInt9406 - -((i_17_ + -Class59_Sub2_Sub2.anInt8685) * GlTextureCubeMap.anInt8537 / 1000))
                     if (Class59_Sub2_Sub2.anInt8685 > i_17_) Class59_Sub2_Sub2.anInt8685 = i_17_
                 }
                 if (i_18_ < Class305.anInt3855) {
-                    Class305.anInt3855 -= ((Class305.anInt3855 - i_18_) * Class258_Sub2.anInt8537 / 1000) + Class348_Sub40_Sub31.anInt9406
+                    Class305.anInt3855 -= ((Class305.anInt3855 - i_18_) * GlTextureCubeMap.anInt8537 / 1000) + Class348_Sub40_Sub31.anInt9406
                     if (i_18_ > Class305.anInt3855) Class305.anInt3855 = i_18_
                 }
                 if (Class59_Sub2_Sub2.anInt8685 > i_17_) {
-                    Class59_Sub2_Sub2.anInt8685 -= (Class348_Sub40_Sub31.anInt9406 + ((Class59_Sub2_Sub2.anInt8685 - i_17_) * Class258_Sub2.anInt8537 / 1000))
+                    Class59_Sub2_Sub2.anInt8685 -= (Class348_Sub40_Sub31.anInt9406 + ((Class59_Sub2_Sub2.anInt8685 - i_17_) * GlTextureCubeMap.anInt8537 / 1000))
                     if (i_17_ > Class59_Sub2_Sub2.anInt8685) Class59_Sub2_Sub2.anInt8685 = i_17_
                 }
             }

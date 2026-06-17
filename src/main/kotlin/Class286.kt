@@ -12,7 +12,7 @@ abstract class Class286 internal constructor(var aHa_Sub2_3684: OpenGlRenderer) 
 
     abstract fun method2139(bool: Boolean, i: Byte)
 
-    abstract fun method2140(class258: Class258?, i: Byte, i_5_: Int)
+    abstract fun method2140(glTexture: GlTexture?, i: Byte, i_5_: Int)
 
     companion object {
         @JvmField

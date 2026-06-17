@@ -11,10 +11,10 @@ import jaggl.OpenGL.Companion.glVertex2f
 import jaggl.OpenGL.Companion.glViewport
 
 class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int) : Class299_Sub1() {
-    private val aClass258_Sub2_8701: Class258_Sub2
+    private val aClass258_Sub2_8701: GlTextureCubeMap
     private var aHa_Sub2_8707: OpenGlRenderer
 
-    fun method2261(class258_sub2: Class258_Sub2?, f: Float, i: Int, class258_sub2_0_: Class258_Sub2?): Boolean {
+    fun method2261(class258_sub2: GlTextureCubeMap?, f: Float, i: Int, class258_sub2_0_: GlTextureCubeMap?): Boolean {
         try {
             anInt8703++
             var bool = true
@@ -171,7 +171,7 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer, i: In
         }
     }
 
-    override fun method2256(i: Byte): Class258_Sub2? {
+    override fun method2256(i: Byte): GlTextureCubeMap? {
         anInt8700++
         if (i.toInt() != -121) return null
         return aClass258_Sub2_8701
@@ -184,7 +184,7 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer, i: In
 
     init {
         aHa_Sub2_8707 = var_ha_Sub2
-        aClass258_Sub2_8701 = Class258_Sub2(var_ha_Sub2, 6408, i)
+        aClass258_Sub2_8701 = GlTextureCubeMap(var_ha_Sub2, 6408, i)
     }
 
     companion object {

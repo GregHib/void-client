@@ -281,7 +281,7 @@ open class Class279 {
         var anInt3612: Int = 0
         @JvmStatic
         fun method2090(i: Int, i_20_: Int, bool: Boolean, i_21_: Byte, i_22_: Int, i_23_: Int, i_24_: Int) {
-            if ((if (bool) Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)) != 0 && i != 0 && HintArrowOrMessage.anInt2021 < 50 && i_24_ != -1) Class258_Sub2.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(if (!bool) 2.toByte() else 3.toByte(), i_24_, i, i_23_, i_22_, 0, i_20_, null)
+            if ((if (bool) Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)) != 0 && i != 0 && HintArrowOrMessage.anInt2021 < 50 && i_24_ != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(if (!bool) 2.toByte() else 3.toByte(), i_24_, i, i_23_, i_22_, 0, i_20_, null)
             if (i_21_.toInt() == -35) anInt3608++
         }
 

@@ -1,4 +1,4 @@
-import Class258_Sub3_Sub1.Companion.method1971
+import GlTexture2DRegion.Companion.method1971
 
 /* Class367_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

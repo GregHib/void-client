@@ -137,7 +137,7 @@ class OutputStream_Sub1 : OutputStream() {
                             true,
                             LocalPlayerState.anInt1906
                         )
-                    } else Class258_Sub1.method1960(
+                    } else GlTexture3D.method1960(
                         Class367_Sub11.anInt7396,
                         Class286_Sub4.anInt6246,
                         Class305.anInt3855,

@@ -43,7 +43,7 @@ class Class61 internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int) {
         fun method592(bool: Boolean, i: Byte, bool_0_: Boolean, i_1_: Int, i_2_: Int): Int {
             anInt1105++
             if (i.toInt() != -128) return -20
-            val class348_sub13 = Class258_Sub4.method1974((-1).toByte(), i_1_, bool_0_)
+            val class348_sub13 = GlTexture1D.method1974((-1).toByte(), i_1_, bool_0_)
             if (class348_sub13 == null) return 0
             var i_3_ = 0
             var i_4_ = 0

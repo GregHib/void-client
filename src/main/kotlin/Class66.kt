@@ -129,8 +129,8 @@ object Class66 {
                     i_1_ = HeapDiagnosticsHolder.aClass46_2249!!.anInt800
                     i_2_ = HeapDiagnosticsHolder.aClass46_2249!!.anInt750
                 }
-                anIntArray1164!![0] = Class258_Sub4.aClass373_8552!!.method3597(true) - i_1_
-                anIntArray1164!![1] = (Class258_Sub4.aClass373_8552!!.method3594(80.toByte()) - i_2_)
+                anIntArray1164!![0] = GlTexture1D.aClass373_8552!!.method3597(true) - i_1_
+                anIntArray1164!![1] = (GlTexture1D.aClass373_8552!!.method3594(80.toByte()) - i_2_)
             }
             method711(class348_sub42_sub19, 200000)
         }
@@ -4086,11 +4086,11 @@ object Class66 {
                     return
                 }
                 if (i == 3342) {
-                    anIntArray1149!![anInt1173++] = Class258_Sub4.aClass373_8552!!.method3597(true)
+                    anIntArray1149!![anInt1173++] = GlTexture1D.aClass373_8552!!.method3597(true)
                     return
                 }
                 if (i == 3343) {
-                    anIntArray1149!![anInt1173++] = Class258_Sub4.aClass373_8552!!.method3594(127.toByte())
+                    anIntArray1149!![anInt1173++] = GlTexture1D.aClass373_8552!!.method3594(127.toByte())
                     return
                 }
                 if (i == 3344) {
@@ -4114,9 +4114,9 @@ object Class66 {
                     return
                 }
                 if (i == 3351) {
-                    anIntArray1149!![anInt1173++] = if (Class258_Sub4.aClass373_8552!!.method3595(-83)) 1 else 0
-                    anIntArray1149!![anInt1173++] = if (Class258_Sub4.aClass373_8552!!.method3588(-121)) 1 else 0
-                    anIntArray1149!![anInt1173++] = if (Class258_Sub4.aClass373_8552!!.method3590(125.toByte())) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (GlTexture1D.aClass373_8552!!.method3595(-83)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (GlTexture1D.aClass373_8552!!.method3588(-121)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (GlTexture1D.aClass373_8552!!.method3590(125.toByte())) 1 else 0
                     return
                 }
             } else if (i < 3500) {
@@ -5123,12 +5123,12 @@ object Class66 {
                         if (i_511_ < 0 || i_511_ >= anIntArray1172!![i_510_]) throw RuntimeException()
                         anIntArrayArray1161!![i_510_]!![i_511_] = anIntArray1149!![anInt1173 + 1]
                     } else if (i_490_ == 47) {
-                        var string = Class258_Sub2.aStringArray8532!![is_489_[i_488_]]
+                        var string = GlTextureCubeMap.aStringArray8532!![is_489_[i_488_]]
                         if (string == null) string = "null"
                         aStringArray1152!![anInt1170++] = string
                     } else if (i_490_ == 48) {
                         val i_512_ = is_489_[i_488_]
-                        Class258_Sub2.aStringArray8532!![i_512_] = aStringArray1152!![--anInt1170]
+                        GlTextureCubeMap.aStringArray8532!![i_512_] = aStringArray1152!![--anInt1170]
                         method529(i_512_, true)
                     } else if (i_490_ == 51) {
                         val class356 = (class348_sub42_sub19.aClass356Array9693!![is_489_[i_488_]]!!)

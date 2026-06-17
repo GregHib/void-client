@@ -14,7 +14,7 @@ import jaggl.OpenGL.Companion.glTexGeni
 class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : Class286(var_ha_Sub2) {
     private val aClass83_6278: Class83?
     private var aClass61_6284: Class61? = null
-    private var aClass258_Sub4_6285: Class258_Sub4? = null
+    private var aClass258_Sub4_6285: GlTexture1D? = null
     override fun method2136(i: Int, i_3_: Int, i_4_: Byte) {
         if (i_4_ >= -42) aClass258_Sub4_6285 = null
         if ((0x1 and i) == 1) {
@@ -104,7 +104,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
         try {
             aClass83_6278 = class83
             method2167(-21405)
-            aClass258_Sub4_6285 = Class258_Sub4(this.aHa_Sub2_3684, 6406, 2, byteArrayOf(0, -1), 6406)
+            aClass258_Sub4_6285 = GlTexture1D(this.aHa_Sub2_3684, 6406, 2, byteArrayOf(0, -1), 6406)
             aClass258_Sub4_6285!!.method1972((-91).toByte(), false)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("tn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
@@ -133,7 +133,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
         glMatrixMode(5888)
     }
 
-    override fun method2140(class258: Class258?, i: Byte, i_9_: Int) {
+    override fun method2140(glTexture: GlTexture?, i: Byte, i_9_: Int) {
         if (i < -89) anInt6280++
     }
 

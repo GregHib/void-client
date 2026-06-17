@@ -57,7 +57,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
             GzipDecompressor.aDoublyLinkedNodeList_2077 = DoublyLinkedNodeList()
             DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103 = arrayOfNulls<Class318_Sub9_Sub2_Sub1>(1024)
             Class348_Sub51.aClass318_Sub10Array7249 = arrayOfNulls<Class318_Sub10>((Class348_Sub42_Sub9.anIntArray9558!![Class348_Sub6.anInt6637]) + 1)
-            Class258_Sub3.anInt8550 = 0
+            GlTexture2D.anInt8550 = 0
             Class376.anInt4559 = 0
             CacheArchiveIndex.method1072(class45, (-107).toByte())
             ModelOrSpriteHolder.method172(30284, class45)

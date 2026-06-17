@@ -26,7 +26,7 @@ import jaggl.OpenGL.Companion.glViewport
  */
 class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRenderer) {
     private var aClass337_2513: Class337? = null
-    fun method1413(class258_sub1: Class258_Sub1?, class258_sub1_2_: Class258_Sub1?, i: Int, f: Float): Boolean {
+    fun method1413(class258_sub1: GlTexture3D?, class258_sub1_2_: GlTexture3D?, i: Int, f: Float): Boolean {
         try {
             anInt2517++
             if (!method1414(35632)) return false

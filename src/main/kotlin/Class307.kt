@@ -37,7 +37,7 @@ object Class307 {
     fun method2301(i: Byte, i_6_: Int, bool: Boolean): Int {
         anInt3878++
         if (bool) return 0
-        val class348_sub13 = Class258_Sub4.method1974((-9).toByte(), i_6_, bool)
+        val class348_sub13 = GlTexture1D.method1974((-9).toByte(), i_6_, bool)
         if (class348_sub13 == null) return (ScrollingWidgetComponentNode.aClass271_8378!!.method2044(109, i_6_).anInt9542)
         var i_7_ = 0
         var i_8_ = 0
