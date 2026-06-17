@@ -62,7 +62,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
                 }
             } else {
                 var i_3_ = i - -i_2_
-                if (Class282.aBoolean3652) i_3_ = i_3_ shl 1
+                if (NpcEntityUpdater.aBoolean3652) i_3_ = i_3_ shl 1
                 val i_4_ = 0
                 var i_5_ = 0
                 if (anInt8879 == 2) i_5_ = 1
@@ -72,7 +72,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
                     val is_6_: Array<ShortArray?>
                     is_6_ = (class348_sub42_sub4.aShortArrayArray9518)
                     while (i < i_3_ && anInt8883 < is_6_[0]!!.size) {
-                        if (Class282.aBoolean3652) {
+                        if (NpcEntityUpdater.aBoolean3652) {
                             `is`[i++] = anInt8885 * is_6_[i_4_]!![anInt8883]
                             `is`[i++] = is_6_[i_5_]!![anInt8883] * anInt8887
                         } else `is`[i++] += (is_6_[i_5_]!![anInt8883] * anInt8887 + anInt8885 * is_6_[i_4_]!![anInt8883])

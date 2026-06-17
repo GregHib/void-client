@@ -80,7 +80,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub4_Sub2.anInt10111 = 0
             Class318_Sub1_Sub1_Sub2.anInt9987 = 0
             Class299.anInt3814 = 0
-            Class282.anInt3653 = 0
+            NpcEntityUpdater.anInt3653 = 0
             Class64_Sub2.anInt5488 = 0
             Class354.anInt4354 = 0
             FogOptionState.anInt6055 = 0
@@ -2962,7 +2962,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub4_Sub1.anInt10085 = 0
             FogOptionState.anInt6053 = 0
             Class348_Sub37.anInt6996 = 0
-            Class282.anInt3651 = 0
+            NpcEntityUpdater.anInt3651 = 0
             Class305.anInt3860 = 0
             Class64_Sub2.anInt5522 = 0
             GlTextureBase.anInt5097 = 0
@@ -4121,7 +4121,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
 
             ModelDefinitionLoader.anInt2057 = 0
             Class348_Sub32.anInt6930 = 0
-            Class282.aClass356_3654!!.method3481(0)
+            NpcEntityUpdater.aClass356_3654!!.method3481(0)
             Class348_Sub40_Sub17.aNodeDeque_9240!!.method1996(112)
             OpenGlRenderNode.aNodeDeque_10492!!.method1996(109)
             NpcDefinition.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())

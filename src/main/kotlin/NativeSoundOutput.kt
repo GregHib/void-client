@@ -15,7 +15,7 @@ class NativeSoundOutput internal constructor(class297: Class297, private val anI
 
     @Throws(Exception::class)
     override fun method2095(component: Component?) {
-        anInterface20_6182!!.method78(HslColorConfig.anInt339, Class282.aBoolean3652, component, 27929)
+        anInterface20_6182!!.method78(HslColorConfig.anInt339, NpcEntityUpdater.aBoolean3652, component, 27929)
     }
 
     override fun method2094() {

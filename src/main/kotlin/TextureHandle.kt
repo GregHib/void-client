@@ -32,7 +32,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
                 try {
                     val soundChannelMixer: SoundChannelMixer = JavaSoundOutput()
                     soundChannelMixer.anInt3620 = i
-                    soundChannelMixer.anIntArray3603 = IntArray((if (Class282.aBoolean3652) 2 else 1) * 256)
+                    soundChannelMixer.anIntArray3603 = IntArray((if (NpcEntityUpdater.aBoolean3652) 2 else 1) * 256)
                     soundChannelMixer.method2095(component)
                     soundChannelMixer.anInt3613 = (i and 0x3ff.inv()) + 1024
                     if (soundChannelMixer.anInt3613 > 16384) soundChannelMixer.anInt3613 = 16384
@@ -52,7 +52,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
                     try {
                         val class279_sub2 = NativeSoundOutput(class297!!, i_0_)
                         class279_sub2.anInt3620 = i
-                        class279_sub2.anIntArray3603 = IntArray((if (!Class282.aBoolean3652) 1 else 2) * 256)
+                        class279_sub2.anIntArray3603 = IntArray((if (!NpcEntityUpdater.aBoolean3652) 1 else 2) * 256)
                         class279_sub2.method2095(component)
                         class279_sub2.anInt3613 = 16384
                         class279_sub2.method2082(class279_sub2.anInt3613)

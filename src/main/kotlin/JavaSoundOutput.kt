@@ -20,7 +20,7 @@ class JavaSoundOutput : SoundChannelMixer() {
     @Throws(LineUnavailableException::class)
     override fun method2082(i: Int) {
         try {
-            val info = (DataLine.Info((if (aClass6180 == null) (SourceDataLine::class.java.also { aClass6180 = it }) else aClass6180), anAudioFormat6179, i shl (if (Class282.aBoolean3652) 2 else 1)))
+            val info = (DataLine.Info((if (aClass6180 == null) (SourceDataLine::class.java.also { aClass6180 = it }) else aClass6180), anAudioFormat6179, i shl (if (NpcEntityUpdater.aBoolean3652) 2 else 1)))
             aSourceDataLine6177 = AudioSystem.getLine(info) as SourceDataLine?
             aSourceDataLine6177!!.open()
             aSourceDataLine6177!!.start()
@@ -45,12 +45,12 @@ class JavaSoundOutput : SoundChannelMixer() {
                 }
             }
         }
-        anAudioFormat6179 = AudioFormat(HslColorConfig.anInt339.toFloat(), 16, if (Class282.aBoolean3652) 2 else 1, true, false)
-        aByteArray6176 = ByteArray(256 shl (if (!Class282.aBoolean3652) 1 else 2))
+        anAudioFormat6179 = AudioFormat(HslColorConfig.anInt339.toFloat(), 16, if (NpcEntityUpdater.aBoolean3652) 2 else 1, true, false)
+        aByteArray6176 = ByteArray(256 shl (if (!NpcEntityUpdater.aBoolean3652) 1 else 2))
     }
 
     override fun method2081(): Int {
-        return anInt6175 - (aSourceDataLine6177!!.available() shr (if (Class282.aBoolean3652) 2 else 1))
+        return anInt6175 - (aSourceDataLine6177!!.available() shr (if (NpcEntityUpdater.aBoolean3652) 2 else 1))
     }
 
     @Throws(LineUnavailableException::class)
@@ -59,7 +59,7 @@ class JavaSoundOutput : SoundChannelMixer() {
         if (aBoolean6178) {
             aSourceDataLine6177!!.close()
             aSourceDataLine6177 = null
-            val info = (DataLine.Info((if (aClass6180 == null) (SourceDataLine::class.java.also { aClass6180 = it }) else aClass6180), anAudioFormat6179, anInt6175 shl (if (!Class282.aBoolean3652) 1 else 2)))
+            val info = (DataLine.Info((if (aClass6180 == null) (SourceDataLine::class.java.also { aClass6180 = it }) else aClass6180), anAudioFormat6179, anInt6175 shl (if (!NpcEntityUpdater.aBoolean3652) 1 else 2)))
             aSourceDataLine6177 = AudioSystem.getLine(info) as SourceDataLine?
             aSourceDataLine6177!!.open()
             aSourceDataLine6177!!.start()
@@ -68,7 +68,7 @@ class JavaSoundOutput : SoundChannelMixer() {
 
     override fun method2094() {
         var i = 256
-        if (Class282.aBoolean3652) i = i shl 1
+        if (NpcEntityUpdater.aBoolean3652) i = i shl 1
         for (i_1_ in 0..<i) {
             var i_2_ = this.anIntArray3603!![i_1_]
             if ((i_2_ + 8388608 and 0xffffff.inv()) != 0) i_2_ = 0x7fffff xor (i_2_ shr 31)

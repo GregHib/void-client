@@ -219,7 +219,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     val i_36_ = (player.y + -(-1 + player.method2436(105.toByte()) shl 8))
                                     var i_37_ = 0
                                     while ((ModelDefinitionLoader.anInt2057 > i_37_)) {
-                                        val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as? Class348_Sub22?)
+                                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as? Class348_Sub22?)
                                         if (class348_sub22 != null) {
                                             val npc = (class348_sub22.aNpc_6859)!!
                                             if ((Class367_Sub11.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
@@ -263,7 +263,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val i_45_ = ((npc.x) - ((-1 + npc.aClass79_10505!!.anInt1399) shl 8))
                                         val i_46_ = ((npc.y) - (npc.aClass79_10505!!.anInt1399 - 1 shl 8))
                                         for (i_47_ in 0..<ModelDefinitionLoader.anInt2057) {
-                                            val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_47_].toLong(), -6008)) as Class348_Sub22?)
+                                            val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_47_].toLong(), -6008)) as Class348_Sub22?)
                                             if (class348_sub22 != null) {
                                                 val npc_48_ = (class348_sub22.aNpc_6859)!!
                                                 if (((npc_48_.anInt10215) != Class367_Sub11.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {

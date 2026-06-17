@@ -51,12 +51,12 @@ object Class92 {
                         val i_10_ = (i_8_ + (-ArbVertexProgram.regionTileX + (Class348_Sub23_Sub3.anIntArray9042!![i_1_] shr 8) * 64))
                         val i_11_ = (-Class90.regionTileY + (64 * (0xff and (Class348_Sub23_Sub3.anIntArray9042!![i_1_])) - -i_9_))
                         val class79 = (MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(class348_sub49.readUnsignedShort(842397944), -1))
-                        val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_5_.toLong(), -6008) as? Class348_Sub22)
+                        val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_5_.toLong(), -6008) as? Class348_Sub22)
                         if (class348_sub22 == null && (class79.aByte1325.toInt() and 0x1) > 0 && i_7_ == ParticleSystemState.anInt2204 && i_10_ >= 0 && (Class367_Sub4.anInt7319 > i_10_ - -class79.anInt1399) && i_11_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_11_ + class79.anInt1399)) {
                             val npc = Npc()
                             npc.anInt10290 = i_5_
                             val class348_sub22_12_ = (Class348_Sub22(npc))
-                            Class282.aClass356_3654!!.method3483(91.toByte(), i_5_.toLong(), class348_sub22_12_)
+                            NpcEntityUpdater.aClass356_3654!!.method3483(91.toByte(), i_5_.toLong(), class348_sub22_12_)
                             Class348_Sub40_Sub23.aClass348_Sub22Array9319!![Class348_Sub32.anInt6930++] = class348_sub22_12_
                             Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_5_
                             npc.anInt10306 = Class367_Sub11.anInt7396

@@ -123,7 +123,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
             val bool = (Class289.aClass46_3701 != null || Class348_Sub42.anInt7059 > 0)
             val i_19_ = class348_sub45!!.method3308((-128).toByte())
             val i_20_ = class348_sub45.method3311(119)
-            if (bool) Class282.anInt3655 = 1
+            if (bool) NpcEntityUpdater.anInt3655 = 1
             if (!bool) Class325.method2599(109.toByte(), Class316.aClass348_Sub42_Sub12_3963, i_20_, i_19_)
             else RectangleRegion.aClass348_Sub42_Sub12_1946 = Class316.aClass348_Sub42_Sub12_3963
             if (i != 1) Companion.method1734(-88, null, (-126).toByte(), false)

@@ -218,19 +218,19 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             if (i_128_ > i_126_) i_128_ = i_126_
             anInt8972 += i
             if (anInt8979 == 256 && (anInt8983 and 0xff) == 0) {
-                if (Class282.aBoolean3652) i = method2893(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_128_, i_125_, this)
+                if (NpcEntityUpdater.aBoolean3652) i = method2893(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_128_, i_125_, this)
                 else i = method2913((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8976, anInt8973, 0, i_128_, i_125_, this)
-            } else if (Class282.aBoolean3652) i = method2899(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_128_, i_125_, this, anInt8979, i_127_)
+            } else if (NpcEntityUpdater.aBoolean3652) i = method2899(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_128_, i_125_, this, anInt8979, i_127_)
             else i = method2903(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, anInt8973, 0, i_128_, i_125_, this, anInt8979, i_127_)
             anInt8972 -= i
             if (anInt8972 != 0) return i
             if (method2898()) return i_126_
         }
         if (anInt8979 == 256 && (anInt8983 and 0xff) == 0) {
-            if (Class282.aBoolean3652) return method2910(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, 0, i_126_, i_125_, this)
+            if (NpcEntityUpdater.aBoolean3652) return method2910(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, 0, i_126_, i_125_, this)
             return method2905(((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_126_, i_125_, this)
         }
-        if (Class282.aBoolean3652) return method2922(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, 0, i_126_, i_125_, this, anInt8979, i_127_)
+        if (NpcEntityUpdater.aBoolean3652) return method2922(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, 0, i_126_, i_125_, this, anInt8979, i_127_)
         return method2925(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_126_, i_125_, this, anInt8979, i_127_)
     }
 
@@ -529,19 +529,19 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             if (i_190_ > i_188_) i_190_ = i_188_
             anInt8972 += i
             if (anInt8979 == -256 && (anInt8983 and 0xff) == 0) {
-                if (Class282.aBoolean3652) i = method2900(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_190_, i_187_, this)
+                if (NpcEntityUpdater.aBoolean3652) i = method2900(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_190_, i_187_, this)
                 else i = method2908((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8976, anInt8973, 0, i_190_, i_187_, this)
-            } else if (Class282.aBoolean3652) i = method2920(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_190_, i_187_, this, anInt8979, i_189_)
+            } else if (NpcEntityUpdater.aBoolean3652) i = method2920(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_190_, i_187_, this, anInt8979, i_189_)
             else i = method2912(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, anInt8973, 0, i_190_, i_187_, this, anInt8979, i_189_)
             anInt8972 -= i
             if (anInt8972 != 0) return i
             if (method2898()) return i_188_
         }
         if (anInt8979 == -256 && (anInt8983 and 0xff) == 0) {
-            if (Class282.aBoolean3652) return method2897(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, 0, i_188_, i_187_, this)
+            if (NpcEntityUpdater.aBoolean3652) return method2897(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, 0, i_188_, i_187_, this)
             return method2921(((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_188_, i_187_, this)
         }
-        if (Class282.aBoolean3652) return method2894(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, 0, i_188_, i_187_, this, anInt8979, i_189_)
+        if (NpcEntityUpdater.aBoolean3652) return method2894(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, 0, i_188_, i_187_, this, anInt8979, i_189_)
         return method2907(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_188_, i_187_, this, anInt8979, i_189_)
     }
 

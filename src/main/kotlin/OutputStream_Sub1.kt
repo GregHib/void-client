@@ -48,7 +48,7 @@ class OutputStream_Sub1 : OutputStream() {
                     Class299_Sub1_Sub2.method2264(false)
                 }
                 AsyncTaskHandle.method1434(-14988)
-                if (!bool) Class282.method2109(512)
+                if (!bool) NpcEntityUpdater.method2109(512)
                 GroundItemRenderState.method1014(-4)
                 Class348_Sub42_Sub3.method3174(i_1_, i_3_, i_0_, true, (-82).toByte(), i_2_)
                 i_3_ = RandomAccessFileOnDisk.anInt3047

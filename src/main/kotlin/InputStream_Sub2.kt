@@ -41,7 +41,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_5_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(65.toByte())
                     val i_6_ = BufferedMessageQueue.anInt3581 + (0x7 and (i_5_ shr 4))
                     val i_7_ = Class73.anInt4786 - -(i_5_ and 0x7)
-                    if (Class282.method2112(126, Class312.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && Class367_Sub4.anInt7319 > i_6_ && (i_7_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
+                    if (NpcEntityUpdater.method2112(126, Class312.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && Class367_Sub4.anInt7319 > i_6_ && (i_7_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
                 } else if (class74 == Class348_Sub40_Sub38.aClass74_9475) {
                     val i_8_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_9_ = BufferedMessageQueue.anInt3581 + ((0x7a and i_8_) shr 4)
@@ -152,7 +152,7 @@ class InputStream_Sub2 : InputStream() {
                                 else class318_sub1_sub3_sub3 = (LocalPlayerState.aPlayer_1907)
                             } else {
                                 val i_68_ = i_58_ + -1
-                                val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_68_.toLong(), -6008) as? Class348_Sub22?)
+                                val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_68_.toLong(), -6008) as? Class348_Sub22?)
                                 if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aNpc_6859)
                             }
                             if (class318_sub1_sub3_sub3 != null) {
@@ -194,7 +194,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_80_ = BufferedMessageQueue.anInt3581 - -((i_77_ and 0x79) shr 4)
                     val i_81_ = ArbVertexProgram.regionTileX - -i_80_
                     val bool = (i_80_ >= 0 && i_78_ >= 0 && Class367_Sub4.anInt7319 > i_80_ && Class348_Sub40_Sub3.anInt9109 > i_78_)
-                    if (bool || Class282.method2112(124, Class312.anInt3931)) {
+                    if (bool || NpcEntityUpdater.method2112(124, Class312.anInt3931)) {
                         Class352.method3459(Class348_Sub34(i_76_, i_75_), Class348_Sub40_Sub12.anInt9200, i_79_, i_81_, -2)
                         if (bool) ProjectileSpawner.method1479(i_78_, (-124).toByte(), i_80_, Class348_Sub40_Sub12.anInt9200)
                     }
@@ -206,7 +206,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_86_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     val i_87_ = BufferedMessageQueue.anInt3581 + (i_86_ shr 4 and 0x7)
                     val i_88_ = Class73.anInt4786 - -(0x7 and i_86_)
-                    if (Class282.method2112(i.toInt() xor 0x73, Class312.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367_Sub4.anInt7319 > i_87_ && (i_88_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
+                    if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, Class312.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367_Sub4.anInt7319 > i_87_ && (i_88_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
                     if (i.toInt() != 8) aIntRange_82 = null
                     if (Class39.aClass74_515 == class74) {
@@ -245,7 +245,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_104_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(123)
                         if (i_104_ != Class348_Sub42_Sub11.anInt9591) {
                             val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < Class367_Sub4.anInt7319) && (i_99_ < Class348_Sub40_Sub3.anInt9109))
-                            if (bool || Class282.method2112(122, Class312.anInt3931)) {
+                            if (bool || NpcEntityUpdater.method2112(122, Class312.anInt3931)) {
                                 Class352.method3459(Class348_Sub34(i_103_, i_97_), Class348_Sub40_Sub12.anInt9200, i_100_, i_102_, i + -10)
                                 if (bool) ProjectileSpawner.method1479(i_99_, (-120).toByte(), i_101_, (Class348_Sub40_Sub12.anInt9200))
                             }

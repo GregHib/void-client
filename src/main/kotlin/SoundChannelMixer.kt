@@ -122,7 +122,7 @@ open class SoundChannelMixer {
 
     private fun method2086(`is`: IntArray, i: Int) {
         var i_5_ = i
-        if (Class282.aBoolean3652) i_5_ = i_5_ shl 1
+        if (NpcEntityUpdater.aBoolean3652) i_5_ = i_5_ shl 1
         method1573(`is`, 0, i_5_)
         anInt3615 -= i
         if (aClass348_Sub16_3604 != null && anInt3615 <= 0) {

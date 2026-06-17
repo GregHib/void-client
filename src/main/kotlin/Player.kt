@@ -357,7 +357,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                 val class302 = Class348_Sub27.aClass302Array6897!![i_56_]
                 if (class302 != null && class302.anInt3834 != -1) {
                     if (class302.anInt3840 == 1) {
-                        val class348_sub22 = ((Class282.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? Class348_Sub22?)
+                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? Class348_Sub22?)
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)!!
                             val i_57_ = (-(LocalPlayerState.aPlayer_1907!!.x) + npc.x)

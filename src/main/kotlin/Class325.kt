@@ -494,7 +494,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             SpriteArchiveLoader.anInt385 = i_73_
                             Class348.anInt4292 = 0
-                            val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
+                            val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 var class79 = (npc.aClass79_10505)
@@ -558,7 +558,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)
                         }
                         if (i_76_ == 46) {
-                            val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
+                            val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 Class348.anInt4292 = 0
                                 LocTypeDefLoader.anInt2499++
@@ -603,7 +603,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             method2307(i_75_, l, i_74_, 93)
                         }
                         if (i_76_ == 30) {
-                            val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
+                            val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
@@ -757,7 +757,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class298.method2252(true, i_74_, i_75_, (-91).toByte(), 1, 0, 1, -4, 0)
                         }
                         if (i_76_ == 60) {
-                            val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
+                            val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 Class290.anInt3707++
                                 Class348.anInt4292 = 0
@@ -848,7 +848,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             method2307(i_75_, l, i_74_, 63)
                         }
                         if (i_76_ == 20) {
-                            val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
+                            val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 FogOptionState.anInt6048 = 2
                                 SpriteArchiveLoader.anInt385 = i_73_
@@ -916,7 +916,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             } else {
                                 if (i_76_ == 1009 || i_76_ == 1012 || i_76_ == 1002 || i_76_ == 1003 || i_76_ == 1006) method696(i_76_, i_74_, i_77_, -1007)
                                 if (i_76_ == 25) {
-                                    val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
+                                    val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                                     if (class348_sub22 != null) {
                                         FogOptionState.anInt6048 = 2
                                         Class93.anInt1534 = i_72_
@@ -961,7 +961,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     method2307(i_75_, l, i_74_, 24)
                                 }
                                 if (i_76_ == 44) {
-                                    val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
+                                    val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                                     if (class348_sub22 != null) {
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         Class93.anInt1534 = i_72_

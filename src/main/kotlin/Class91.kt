@@ -34,7 +34,7 @@ object Class91 {
         var bool = false
         for (i_2_ in 0..<Class358.anInt4411) {
             val i_3_ = Class5_Sub1_Sub1.anIntArray9932!![i_2_]
-            val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as Class348_Sub22)
+            val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as Class348_Sub22)
             val npc = (class348_sub22.aNpc_6859)!!
             if (Class5_Sub1.aBoolean8335 && Class348_Sub42_Sub1.method3169(i_3_, 0)) method2146(84.toByte())
             if (Class348_Sub23_Sub3.anInt9041 != (npc.anInt10306)) {
@@ -45,14 +45,14 @@ object Class91 {
             }
         }
         if (bool) {
-            Class348_Sub32.anInt6930 = Class282.aClass356_3654!!.method3474(1)
-            Class282.aClass356_3654!!.method3477(3, Class348_Sub40_Sub23.aClass348_Sub22Array9319!! as Array<Class348?>)
+            Class348_Sub32.anInt6930 = NpcEntityUpdater.aClass356_3654!!.method3474(1)
+            NpcEntityUpdater.aClass356_3654!!.method3477(3, Class348_Sub40_Sub23.aClass348_Sub22Array9319!! as Array<Class348?>)
         }
         if (Class348_Sub40_Sub25.anInt9341 != Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + Class348_Sub40_Sub25.anInt9341)
         if (i <= 47) aClass74_1519 = null
         var i_4_ = 0
         while (ModelDefinitionLoader.anInt2057 > i_4_) {
-            if (Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + ModelDefinitionLoader.anInt2057)
+            if (NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + ModelDefinitionLoader.anInt2057)
             i_4_++
         }
         if (Class348_Sub32.anInt6930 - ModelDefinitionLoader.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930 - ModelDefinitionLoader.anInt2057))

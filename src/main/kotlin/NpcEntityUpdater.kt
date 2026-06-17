@@ -5,7 +5,7 @@ import Class89.Companion.method850
 /* Class282 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class282 {
+object NpcEntityUpdater {
     var anInt3651: Int = 0
     var aBoolean3652: Boolean = false
     var anInt3653: Int = 0
@@ -57,7 +57,7 @@ object Class282 {
     @JvmStatic
     fun method2111(i: Byte) {
         aClass356_3654 = null
-        if (i <= 56) Class282.method2111((-49).toByte())
+        if (i <= 56) NpcEntityUpdater.method2111((-49).toByte())
     }
 
     fun method2112(i: Int, i_3_: Int): Boolean {

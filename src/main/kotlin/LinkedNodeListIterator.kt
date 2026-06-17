@@ -205,7 +205,7 @@ class LinkedNodeListIterator {
                         }
                         var i_22_ = 0
                         while ((i_22_ < ModelDefinitionLoader.anInt2057)) {
-                            val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_22_].toLong(), -6008)) as? Class348_Sub22)
+                            val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_22_].toLong(), -6008)) as? Class348_Sub22)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (LocalPlayerState.aPlayer_1907!!.plane))) {
@@ -263,7 +263,7 @@ class LinkedNodeListIterator {
                             val class302 = class302s[i_33_]
                             if (class302 != null && (class302.anInt3840 != 0) && Class367_Sub11.anInt7396 % 20 < 10) {
                                 if (class302.anInt3840 == 1) {
-                                    val class348_sub22 = ((Class282.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? Class348_Sub22)
+                                    val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? Class348_Sub22)
                                     if (class348_sub22 != null) {
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         val i_34_ = (-(i_4_ / 128) + (npc.x) / 128)

@@ -382,7 +382,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (i_40_ shr 30 == 0) {
                     if (i_40_ shr 29 != 0) {
                         val i_44_ = i_40_ and 0xffff
-                        val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_44_.toLong(), -6008) as Class348_Sub22?)
+                        val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_44_.toLong(), -6008) as Class348_Sub22?)
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)!!
                             if (i_38_ == 65535) i_38_ = -1
@@ -1474,7 +1474,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val `is` = IntArray(4)
                 for (i_192_ in 0..3) `is`[i_192_] = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_193_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_193_.toLong(), -6008) as Class348_Sub22?)
+                val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(i_193_.toLong(), -6008) as Class348_Sub22?)
                 if (class348_sub22 != null) Class348_Sub17.method2931(i, 110.toByte(), `is`, (class348_sub22.aNpc_6859))
                 Class348_Sub3.aIntRange_6584 = null
                 return true

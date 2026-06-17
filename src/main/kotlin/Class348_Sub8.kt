@@ -35,7 +35,7 @@ class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray
                 if (class318_sub1_sub3_sub3.anInt10275 >= 32768) {
                     if ((class318_sub1_sub3_sub3.anInt10275) >= 32768) class318_sub1_sub3_sub3_0_ = (Class294.aPlayerArray5058!![class318_sub1_sub3_sub3.anInt10275 + -32768])
                 } else {
-                    val class348_sub22 = ((Class282.aClass356_3654!!.method3480(class318_sub1_sub3_sub3.anInt10275.toLong(), -6008)) as Class348_Sub22?)
+                    val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class318_sub1_sub3_sub3.anInt10275.toLong(), -6008)) as Class348_Sub22?)
                     if (class348_sub22 != null) class318_sub1_sub3_sub3_0_ = (class348_sub22.aNpc_6859)
                 }
                 if (class318_sub1_sub3_sub3_0_ != null) {

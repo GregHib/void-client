@@ -196,7 +196,7 @@ import NativeSoundOutput.Companion.method2097
 import ItemNameResolver.Companion.method318
 import GroundDecorRenderer.Companion.method2104
 import ClanChatRequestSender.method2107
-import Class282.method2111
+import NpcEntityUpdater.method2111
 import Class283.Companion.method2113
 import Class283.Companion.method2114
 import Class284.Companion.method2117
@@ -1881,7 +1881,7 @@ class Client : GameAppletFrame() {
             for (i_9_ in 0..<i_8_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_9_]])
-                else class318_sub1_sub3_sub3 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_9_ - i_7_].toLong(), -6008) as Class348_Sub22).aNpc_6859)
+                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_9_ - i_7_].toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i) {
                     class318_sub1_sub3_sub3.anInt10261 = 0
                     if ((class318_sub1_sub3_sub3.anInt10285) < 0) class318_sub1_sub3_sub3.aBoolean10309 = false
@@ -1941,7 +1941,7 @@ class Client : GameAppletFrame() {
         fun method106() {
             Class45.anInt669 = 0
             for (i in 0..<ModelDefinitionLoader.anInt2057) {
-                val npc = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i].toLong(), -6008) as Class348_Sub22).aNpc_6859)
+                val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i].toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 if ((npc!!.aBoolean10309) && npc.method2425(-1) != -1) {
                     val i_20_ = ((npc.method2436(119.toByte()) - 1) * 256 + 252)
                     val i_21_ = (npc.x - i_20_) shr 9
@@ -2560,7 +2560,7 @@ class Client : GameAppletFrame() {
             for (i_93_ in 0..<i_92_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_93_ < i) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_93_]])
-                else class318_sub1_sub3_sub3 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_93_ - i].toLong(), -6008) as Class348_Sub22).aNpc_6859)
+                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_93_ - i].toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.anInt10285 >= 0) {
                     val i_94_ = class318_sub1_sub3_sub3.method2436(74.toByte())
                     if ((i_94_ and 0x1) == 0) {
@@ -2604,7 +2604,7 @@ class Client : GameAppletFrame() {
                 }
             }
             for (i_115_ in 0..<ModelDefinitionLoader.anInt2057) {
-                val npc = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_115_].toLong(), -6008) as Class348_Sub22).aNpc_6859)
+                val npc = ((NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_115_].toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 if (!npc!!.method2445((-4).toByte()) || !(npc.aClass79_10505!!.method796(Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!, 18627))) npc.anInt10285 = -1
                 else {
                     npc.method2409((-118).toByte())
@@ -2631,7 +2631,7 @@ class Client : GameAppletFrame() {
                 val class302 = Class348_Sub27.aClass302Array6897!![i_117_]
                 if (class302 != null) {
                     if (class302.anInt3840 == 1) {
-                        val class348_sub22 = ((Class282.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as Class348_Sub22?)
+                        val class348_sub22 = ((NpcEntityUpdater.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as Class348_Sub22?)
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)
                             if (npc!!.anInt10285 >= 0) npc.anInt10285 += 2048
@@ -2650,7 +2650,7 @@ class Client : GameAppletFrame() {
             for (i_123_ in 0..<i_122_ + ModelDefinitionLoader.anInt2057) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_123_]])
-                else class318_sub1_sub3_sub3 = (Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as Class348_Sub22).aNpc_6859
+                else class318_sub1_sub3_sub3 = (NpcEntityUpdater.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as Class348_Sub22).aNpc_6859
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i && (class318_sub1_sub3_sub3.anInt10285) >= 0) {
                     val i_124_ = class318_sub1_sub3_sub3.method2436(114.toByte())
                     if ((i_124_ and 0x1) == 0) {

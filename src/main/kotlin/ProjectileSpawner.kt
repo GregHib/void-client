@@ -38,12 +38,12 @@ object ProjectileSpawner {
         if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null && i_2_ >= 0 && i >= 0 && Class367_Sub4.anInt7319 > i_2_ && Class348_Sub40_Sub3.anInt9109 > i && (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 0 || i_3_ == (LocalPlayerState.aPlayer_1907!!.plane).toInt())) {
             val l = (i_5_ shl 14 or (i_3_ shl 28) or i_4_).toLong()
             val class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3480(l, -6008) as? Class348_Sub37?)
-            if (class348_sub37 == null) Class282.method2110(i_3_, i_2_, i)
+            if (class348_sub37 == null) NpcEntityUpdater.method2110(i_3_, i_2_, i)
             else {
                 val class348_sub34 = class348_sub37.aNodeDeque_6998.method1995(4) as? Class348_Sub34?
-                if (class348_sub34 == null) Class282.method2110(i_3_, i_2_, i)
+                if (class348_sub34 == null) NpcEntityUpdater.method2110(i_3_, i_2_, i)
                 else {
-                    var class318_sub1_sub2_sub1 = (Class282.method2110(i_3_, i_2_, i) as? Class318_Sub1_Sub2_Sub1?)
+                    var class318_sub1_sub2_sub1 = (NpcEntityUpdater.method2110(i_3_, i_2_, i) as? Class318_Sub1_Sub2_Sub1?)
                     if (class318_sub1_sub2_sub1 == null) class318_sub1_sub2_sub1 = (Class318_Sub1_Sub2_Sub1(i_2_ shl 9, NativeSprite.aTerrainTileArray5191!![i_3_]!!.method3982((-86).toByte(), i, i_2_), i shl 9, i_3_, i_3_))
                     else {
                         class318_sub1_sub2_sub1.anInt10180 = -1

@@ -47,7 +47,7 @@ abstract class TextureGenerator {
             }
             for (i_2_ in i..<ModelDefinitionLoader.anInt2057) {
                 val l = Class74.anIntArray1233!![i_2_].toLong()
-                val class348_sub22 = (Class282.aClass356_3654!!.method3480(l, -6008) as? Class348_Sub22?)
+                val class348_sub22 = (NpcEntityUpdater.aClass356_3654!!.method3480(l, -6008) as? Class348_Sub22?)
                 if (class348_sub22 != null) {
                     val npc = (class348_sub22.aNpc_6859)!!
                     if ((npc.anInt10264) > 0) {
