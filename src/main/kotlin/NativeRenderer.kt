@@ -136,7 +136,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aBoolean8160: Boolean = false
     private var anInt8161 = 0
     private var anInt8162 = 0
-    var aClass173_8163: Class173?
+    var aObjectByteSerializerHolder_8163: ObjectByteSerializerHolder?
     var aBoolean8164: Boolean = false
     var anInt8165: Int = 0
     private var aFloat8166 = 0f
@@ -358,23 +358,23 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         if (i <= 53) method3878(-0.15425435f, 84, -0.11598543f, 0.9862154f, -1.0921319f, -1.1620088f, -1.5202727f)
         if (anInt8167 != i_29_) {
             val bool: Boolean
-            val class173: Class173?
+            val objectByteSerializerHolder: ObjectByteSerializerHolder?
             val bool_30_: Boolean
             if (i_29_ == 1) {
                 bool = true
-                class173 = Class348_Sub4.aClass173_6602
+                objectByteSerializerHolder = Class348_Sub4.aObjectByteSerializerHolder_6602
                 bool_30_ = true
             } else if (i_29_ == 2) {
-                class173 = Class69.aClass173_1201
+                objectByteSerializerHolder = Class69.aObjectByteSerializerHolder_1201
                 bool_30_ = true
                 bool = false
             } else if (i_29_ == 128) {
                 bool = true
-                class173 = Class273.aClass173_5169
+                objectByteSerializerHolder = Class273.aObjectByteSerializerHolder_5169
                 bool_30_ = true
             } else {
                 bool_30_ = false
-                class173 = Class225.aClass173_2944
+                objectByteSerializerHolder = Class225.aObjectByteSerializerHolder_2944
                 bool = false
             }
             if (bool != this.aBoolean8141) {
@@ -385,8 +385,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 this.aBoolean8116 = bool_30_
                 method3947(4)
             }
-            if (class173 != this.aClass173_8163) {
-                this.aClass173_8163 = class173
+            if (objectByteSerializerHolder != this.aObjectByteSerializerHolder_8163) {
+                this.aObjectByteSerializerHolder_8163 = objectByteSerializerHolder
                 method3950(0)
             }
             anInt8100 = anInt8100 and 0x1c.inv()
@@ -2475,7 +2475,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.anInt8144 = -1
         aClass367Array8139 = arrayOfNulls<Class367>(10)
         aFloatArray8140 = floatArrayOf(0.0f, 0.0f, 1.0f, 0.0f)
-        this.aClass173_8163 = Class348_Sub4.aClass173_6602
+        this.aObjectByteSerializerHolder_8163 = Class348_Sub4.aObjectByteSerializerHolder_6602
         aFloatArray8152 = FloatArray(16)
         this.aFloatArray8135 = aFloatArray8111
         anInt8167 = 1

@@ -224,7 +224,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class173.aIntRange_2285) {
+            if (Class348_Sub3.aIntRange_6584 == ObjectByteSerializerHolder.aIntRange_2285) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
                 method1703(3, i, -1, 4, -1)
@@ -1174,7 +1174,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 val i_143_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-126).toByte())
-                Class173.method1330(i, -19906, i_143_)
+                ObjectByteSerializerHolder.method1330(i, -19906, i_143_)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }

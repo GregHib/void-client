@@ -1,4 +1,4 @@
-import Class173.Companion.method1331
+import ObjectByteSerializerHolder.Companion.method1331
 import Class179.Companion.method1357
 import Class50_Sub1.Companion.method461
 import Class5_Sub2.Companion.method194

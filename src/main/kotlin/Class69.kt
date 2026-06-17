@@ -30,7 +30,7 @@ class Class69 {
         var aClass69_1199: Class69? = Class69()
         @JvmField
         var anInt1200: Int = 0
-        var aClass173_1201: Class173? = Class173()
+        var aObjectByteSerializerHolder_1201: ObjectByteSerializerHolder? = ObjectByteSerializerHolder()
         @JvmField
         var anInt1202: Int = 0
 
@@ -38,7 +38,7 @@ class Class69 {
             anInt1193++
             HeapDiagnosticsHolder.anInt2251 = i
             synchronized(ModelBatchBase.aClass60_1894!!) {
-                if (i_0_ != 1226) aClass173_1201 = null
+                if (i_0_ != 1226) aObjectByteSerializerHolder_1201 = null
                 ModelBatchBase.aClass60_1894!!.method590(0)
             }
             synchronized(Class24.aClass60_355!!) {
@@ -72,7 +72,7 @@ class Class69 {
             aClass69_1197 = null
             aClass69_1195 = null
             aClass69_1199 = null
-            aClass173_1201 = null
+            aObjectByteSerializerHolder_1201 = null
         }
 
         fun method723(i: Int, i_2_: Int, i_3_: Byte): Boolean {

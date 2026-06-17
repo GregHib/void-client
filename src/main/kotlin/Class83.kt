@@ -33,12 +33,12 @@ class Class83 internal constructor(var_ha_Sub2: OpenGlRenderer) {
         } else {
             this.aClass258_Sub3Array1444 = arrayOfNulls<Class258_Sub3>(16)
             for (i in 0..15) {
-                val `is` = Class173.method1331(97.toByte(), Class337.anObject4177, 2 * (128 * i) * 128, 32768)
+                val `is` = ObjectByteSerializerHolder.method1331(97.toByte(), Class337.anObject4177, 2 * (128 * i) * 128, 32768)
                 this.aClass258_Sub3Array1444!![i] = Class258_Sub3(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
             }
             this.aClass258_Sub3Array1448 = arrayOfNulls<Class258_Sub3>(16)
             for (i in 0..15) {
-                val `is` = Class173.method1331(110.toByte(), Class319.anObject3985, 2 * i * 16384, 32768)
+                val `is` = ObjectByteSerializerHolder.method1331(110.toByte(), Class319.anObject3985, 2 * i * 16384, 32768)
                 this.aClass258_Sub3Array1448!![i] = Class258_Sub3(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
             }
         }

@@ -16,12 +16,12 @@ class Class273 internal constructor(string: String?, var anInt5167: Int) : Inter
         var anIntArray5165: IntArray? = intArrayOf(-1, -1, 1, 1)
         var anInt5166: Int = 0
         var anInt5168: Int = 0
-        var aClass173_5169: Class173? = Class173()
+        var aObjectByteSerializerHolder_5169: ObjectByteSerializerHolder? = ObjectByteSerializerHolder()
 
         @JvmStatic
         fun method2055(i: Int) {
             anIntArray5165 = null
-            aClass173_5169 = null
+            aObjectByteSerializerHolder_5169 = null
             if (i != 1) anIntArray5165 = null
         }
 

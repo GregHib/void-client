@@ -273,7 +273,7 @@ class Class225 {
         var anInt2921: Int = 0
         var aClass225_2931: Class225? = Class225()
         var anInt2933: Int = 0
-        var aClass173_2944: Class173?
+        var aObjectByteSerializerHolder_2944: ObjectByteSerializerHolder?
         @JvmField
         var anInt2946: Int = 0
         var anInt2952: Int = 0
@@ -286,13 +286,13 @@ class Class225 {
         @JvmStatic
         fun method1619(i: Byte) {
             aClass225_2931 = null
-            aClass173_2944 = null
+            aObjectByteSerializerHolder_2944 = null
             val i_7_ = 86 / ((i - 41) / 40)
             aClass243_2957 = null
         }
 
         init {
-            aClass173_2944 = Class173()
+            aObjectByteSerializerHolder_2944 = ObjectByteSerializerHolder()
             anInt2955 = 0
             aClass243_2957 = Class243()
         }

@@ -720,13 +720,13 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3950(i: Int) {
         if (i != 0) anIntArray9809 = null
-        if (Class348_Sub4.aClass173_6602 == this.aClass173_8163) {
+        if (Class348_Sub4.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 5)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 6)
-        } else if (this.aClass173_8163 == Class69.aClass173_1201) {
+        } else if (this.aObjectByteSerializerHolder_8163 == Class69.aObjectByteSerializerHolder_1201) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 2)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 2)
-        } else if (Class273.aClass173_5169 == this.aClass173_8163) {
+        } else if (Class273.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 9)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 2)
         }

@@ -60,9 +60,9 @@ object ClientLoadStateMachine {
             val l = method599(i + 28559)
             if (Class348_Sub17.aLong6791 == 0L) Class348_Sub17.aLong6791 = l
             if (i_1_ > 16384 && -Class348_Sub17.aLong6791 + l < 5000) {
-                if (-Class173.aLong2286 + l > 1000L) {
+                if (-ObjectByteSerializerHolder.aLong2286 + l > 1000L) {
                     System.gc()
-                    Class173.aLong2286 = l
+                    ObjectByteSerializerHolder.aLong2286 = l
                 }
                 return 0
             }

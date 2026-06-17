@@ -76,7 +76,7 @@ import VarpStore.Companion.method1309
 import VarpStore.Companion.method1310
 import VarpStore.Companion.method1315
 import NpcCountAccessor.method1325
-import Class173.Companion.method1329
+import ObjectByteSerializerHolder.Companion.method1329
 import Class175.Companion.method1343
 import Class176.method1351
 import Class178.method1355

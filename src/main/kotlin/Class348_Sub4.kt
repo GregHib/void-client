@@ -176,7 +176,7 @@ class Class348_Sub4 : Class348 {
         @JvmField
         var aClass248_6601: Class248? = null
         @JvmField
-        var aClass173_6602: Class173? = Class173()
+        var aObjectByteSerializerHolder_6602: ObjectByteSerializerHolder? = ObjectByteSerializerHolder()
         @JvmField
         var anInt6611: Int = 0
         @JvmField
@@ -184,7 +184,7 @@ class Class348_Sub4 : Class348 {
         @JvmStatic
         fun method2748(i: Int) {
             val i_2_ = 80 / ((52 - i) / 57)
-            aClass173_6602 = null
+            aObjectByteSerializerHolder_6602 = null
             aClass248_6601 = null
         }
 
