@@ -86,7 +86,7 @@ class Class269 internal constructor(private val aHa_Sub3_3457: NativeRenderer) {
         @JvmField
         var anInt3451: Int = 0
         @JvmField
-        var aClass217_3453: Class217? = null
+        var aParticleAmountCache_3453: ParticleAmountCache? = null
         var anInt3456: Int = 0
         @JvmField
         var anInt3460: Int = 0
@@ -104,7 +104,7 @@ class Class269 internal constructor(private val aHa_Sub3_3457: NativeRenderer) {
 
         @JvmStatic
         fun method2042(i: Byte) {
-            if (i.toInt() == -67) aClass217_3453 = null
+            if (i.toInt() == -67) aParticleAmountCache_3453 = null
         }
     }
 }

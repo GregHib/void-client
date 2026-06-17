@@ -82,8 +82,8 @@ class VarpStore : Interface17 {
 
     fun method1314(i: Byte) {
         var i_26_ = 0
-        while ((i_26_ < Class269.aClass217_3453!!.anInt2845)) {
-            val class159 = Class269.aClass217_3453!!.method1588(-105, i_26_)
+        while ((i_26_ < Class269.aParticleAmountCache_3453!!.anInt2845)) {
+            val class159 = Class269.aParticleAmountCache_3453!!.method1588(-105, i_26_)
             if (class159 != null && class159.anInt2125 == 0) {
                 anIntArray5078[i_26_] = 0
                 this.anIntArray5063[i_26_] = 0
@@ -117,8 +117,8 @@ class VarpStore : Interface17 {
     }
 
     init {
-        this.anIntArray5063 = IntArray(Class269.aClass217_3453!!.anInt2845)
-        anIntArray5078 = IntArray(Class269.aClass217_3453!!.anInt2845)
+        this.anIntArray5063 = IntArray(Class269.aParticleAmountCache_3453!!.anInt2845)
+        anIntArray5078 = IntArray(Class269.aParticleAmountCache_3453!!.anInt2845)
     }
 
     companion object {

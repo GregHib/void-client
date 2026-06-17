@@ -602,7 +602,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub3.anInt7302 = 0
             Client.anInt5184 = 0
             Class348_Sub49.anInt7139 = 0
-            Class217.anInt2843 = 0
+            ParticleAmountCache.anInt2843 = 0
             Class318_Sub1_Sub5_Sub1.anInt10146 = 0
             Class66.anInt1162 = 0
             RenderableGroup.anInt5009 = 0
@@ -1051,7 +1051,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class87.anInt1483 = 0
             Class322.anInt4028 = 0
             Class84.anInt1456 = 0
-            Class217.anInt2846 = 0
+            ParticleAmountCache.anInt2846 = 0
             Class348_Sub40_Sub39.anInt9482 = 0
             Class318_Sub1.anInt6378 = 0
             Class348_Sub16_Sub3.anInt8954 = 0
@@ -1362,7 +1362,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class363.anInt4462 = 0
             Class285.anInt4757 = 0
             Class59_Sub2_Sub1.anInt8671 = 0
-            Class217.anInt2847 = 0
+            ParticleAmountCache.anInt2847 = 0
             Class239_Sub3.anInt5868 = 0
             GlFramebufferBlitter.anInt291 = 0
             SpriteSheetCache.anInt2556 = 0
@@ -3124,7 +3124,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub8.anInt5924 = 0
             Class348_Sub40_Sub25.anInt9337 = 0
             Class348_Sub40_Sub23.anInt9321 = 0
-            Class217.anInt2840 = 0
+            ParticleAmountCache.anInt2840 = 0
             FloatGrid.anInt4979 = 0
             NativeTerrainTile.anInt8297 = 0
             Class288_Sub1.anInt8576 = 0
@@ -3728,7 +3728,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5517 = 0
             Class348_Sub42_Sub9_Sub1.anInt10441 = 0
             Class348_Sub40_Sub12.anInt9190 = 0
-            Class217.anInt2841 = 0
+            ParticleAmountCache.anInt2841 = 0
             Class25.anInt363 = 0
             Class348_Sub16_Sub1.anInt8856 = 0
             Class348_Sub49.anInt7168 = 0

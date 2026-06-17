@@ -64,7 +64,7 @@ class Class239_Sub11 : Class239 {
         fun method1767(bool: Boolean, i: Int) {
             anInt5953++
             ProjectionCameraTransform.method947(41.toByte())
-            val i_0_ = (Class269.aClass217_3453!!.method1588(-51, i).anInt2125)
+            val i_0_ = (Class269.aParticleAmountCache_3453!!.method1588(-51, i).anInt2125)
             if (i_0_ != 0) {
                 if (bool != true) method1769(-43)
                 val i_1_ = (Class318_Sub1_Sub3_Sub3.aVarpStore_10209!!.anIntArray5063[i])

@@ -4901,7 +4901,7 @@ object Class66 {
                 if (i == 4210) {
                     val string = aStringArray1152!![--anInt1170]
                     val i_470_ = anIntArray1149!![--anInt1173]
-                    Class217.method1586(i_470_ == 1, (-108).toByte(), string)
+                    ParticleAmountCache.method1586(i_470_ == 1, (-108).toByte(), string)
                     anIntArray1149!![anInt1173++] = Class76.anInt1285
                     return
                 }

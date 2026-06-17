@@ -115,7 +115,7 @@ import VorbisFloorDecoder.Companion.method1536
 import SoundEnvelope.Companion.method1543
 import CompressedBlockDecoder.method1551
 import ItemDefinition.Companion.method1564
-import Class217.Companion.method1585
+import ParticleAmountCache.Companion.method1585
 import Class218.Companion.method1594
 import Class219.Companion.method1600
 import Class219.Companion.method1604

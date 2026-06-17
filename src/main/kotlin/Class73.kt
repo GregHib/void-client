@@ -60,13 +60,13 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
 
         fun method742(i: Int, i_0_: Int): MapAreaDefinition {
             anInt4777++
-            var mapAreaDefinition = Class217.aClass60_2844!!.method583(i_0_.toLong(), -104) as MapAreaDefinition?
+            var mapAreaDefinition = ParticleAmountCache.aClass60_2844!!.method583(i_0_.toLong(), -104) as MapAreaDefinition?
             if (mapAreaDefinition != null) return mapAreaDefinition
             val `is` = Class369_Sub3.aClass45_8601!!.method410(-1860, 0, i_0_)
             if (i != 104) method741(98.toByte())
             mapAreaDefinition = MapAreaDefinition()
             if (`is` != null) mapAreaDefinition.method1419(i_0_, Class348_Sub49(`is`), 64.toByte())
-            Class217.aClass60_2844!!.method582(mapAreaDefinition, i_0_.toLong(), (-114).toByte())
+            ParticleAmountCache.aClass60_2844!!.method582(mapAreaDefinition, i_0_.toLong(), (-114).toByte())
             return mapAreaDefinition
         }
 

@@ -3,7 +3,7 @@ import SceneTilePlaneManager.method259
 /* Class217 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class217 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class ParticleAmountCache internal constructor(class230: Class230?, i: Int, class45: Class45?) {
     private val aClass45_2842: Class45?
     var anInt2845: Int = 0
     private var aClass60_2848: Class60? = Class60(64)
